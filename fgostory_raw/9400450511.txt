@@ -1,0 +1,149 @@
+＄94-00-45-05-1-1
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+
+[charaSet A 8001001 1 玛修]
+[charaSet B 98003003 1 Dr.罗曼]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 4014001 1 牛若丸]
+[charaSet E 6019000 1 风魔小太郎]
+[charaSet F 4023001 1 坂田金时]
+[charaSet G 6001001 1 小次郎]
+
+[scene 28220]
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠小次郎
+呜……干得漂亮。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛修
+成……成功了。虽然这鬼的体力惊人，[r]但总算是全部耗完了……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠坂田金时
+你掉以轻心了吧，糊涂武士？
+[k]
+
+＠坂田金时
+这熊号可不光有速度。[r]力量和技巧也是Golden级的哦！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠小次郎
+哼……居然败给了机械马和忍者鸟……
+[k]
+
+[charaTalk D]
+
+＠牛若丸
+还有别忘了刹车坏掉的忠犬！
+[k]
+
+[charaTalk B]
+
+＠Dr.罗曼
+（终于自己说出口了！）
+[k]
+
+[charaTalk G]
+[charaFace G 3]
+
+＠小次郎
+果然沉迷于美色才是我失败的原因啊……[r]不，山顶茶馆的团子太好吃了……
+[k]
+
+＠小次郎
+在此朗诵一句。[r]『夏之青　海滨娇羞　玛尔达阁下』
+[k]
+
+[charaFace G 1]
+
+＠小次郎
+……哼哼……不可能……不可能啊……
+[k]
+
+[messageOff]
+[se ad52]
+[charaSpecialEffect G flashErasure 0 0 1]
+[wait charaSpecialEffect G]
+[charaFadeout G 0.4]
+[wt 1.0]
+[seStop ad52 1.5]
+
+[wt 0.2]
+
+
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 3]
+
+
+＠Dr.罗曼
+保镖死于此处……[r]最后一刻还那么风流呢……
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk C]
+[charaFadein C 0.1 1]
+
+＠芙芙
+芙，芙呜。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠玛修
+不管怎么说，总算是拿到钥匙了。[r]这样就能穿过第一扇大门了吧。
+[k]
+
+[charaFace A 1]
+
+＠玛修
+算是前进了一大步。[r]让我们继续加油吧，御主！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_2 0.4]
+[wait fade]
+[wt 0.1]
+[soundStopAll]
+[end]

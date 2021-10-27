@@ -1,0 +1,176 @@
+
+
+＄91-20-06-01-2-0
+
+[soundStopAll]
+
+[charaSet A 2006001 1 大卫]
+[charaSet B 8001002 1 玛修]
+[charaSet C 98003003 1 Dr.罗曼]
+
+[bgm BGM_EVENT_2 0.1]
+[scene 28400]
+[fadein black 1.5]
+[wait fade]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+＠玛修
+战斗结束。[r]所有守护者均被击溃。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠大卫
+……真是些贫瘠的坏巨人……[r]我还指望他们能多囤积一些宝物呢……
+[k]
+
+[charaFace A 3]
+＠大卫
+从这点来说，消灭龙的英灵真好……[r]因为龙根本就是会囤积财宝的大型银行……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+你完全可以把那个大叔的话当耳边风哦，[r][%1]！
+[k]
+
+[bgmStop BGM_EVENT_2 0.3]
+[wt 0.4]
+[bgm BGM_EVENT_3 0.1]
+＠Dr.罗曼
+第二阵正在靠近你们！[r]注意，比刚才的数量更多！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 5]
+[communicationCharaLoop 98003003 0 5 0 2]
+[charaFadein A 0.1 2]
+＠大卫
+大叔这个称呼未免太失礼了吧！[r]应该叫大哥哥，或者老爷爷！
+[k]
+
+[communicationCharaFace 4]
+＠Dr.罗曼
+知道啦，大哥哥，大哥哥对吧。[r]那你起码应该表现得更像个年轻人才对吧！
+[k]
+
+[charaFace A 1]
+＠大卫
+嗯，那当然啦。[r]无论年龄多大，我都为自己充满朝气而感到骄傲哦。
+[k]
+
+[charaFace A 0]
+＠大卫
+……不过，数量确实很多呢。[r]已经可以算是巨人军队了。是神话的重现吗？
+[k]
+
+[communicationCharaFace 5]
+＠Dr.罗曼
+确实。有种刻意的感觉。[r]大卫王，你知道些什么吗？
+[k]
+
+[charaFadeout A 0.1]
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠大卫
+唔。这就是所谓的破锅自有破锅盖吗？[r]不，微妙地不太对。是以牙还牙以眼还眼？
+[k]
+
+＠大卫
+总之就是说两者都是合理价格。[r]因为我是『打倒巨人之人』。
+[k]
+
+＠大卫
+那么，『被视为巨人的存在』[r]就不可能不聚集在这个世界。
+[k]
+
+[charaFace A 1]
+＠大卫
+他们是为了被我打倒才聚集在这里的，[r]而我则要为了打倒他们而努力奋斗！
+[k]
+
+？1：也就是说[line 3]巨人扎堆！
+？2：你还真受巨人欢迎呢～！
+
+？！
+
+[charaFace A 4]
+＠大卫
+就是说啦。[r]但和巨人有缘有什么用啦。
+[k]
+
+＠大卫
+我对比自己高的女孩子有点……[r]说实话，完全不是我喜欢的类……
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_3 0.4 0.4]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.4]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[se ad23]
+[seVolume ad23 0.7 0.4]
+[wt 0.7]
+[se ad23]
+[seVolume ad23 0.4 0.4]
+[wt 0.5]
+[se ad23]
+[wt 0.4]
+[wt 1.5]
+[bgm BGM_EVENT_3 1.0]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠玛修
+来了，复数魔偶！[r]数量比刚才要多！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠大卫
+哎哟。看来现在没空阐述我的美学观念了呀。[r]但单方面发动袭击不太值得称道吧。
+[k]
+
+＠大卫
+我听说巨人也是有智力的啊。[r]那你们也拥有改邪归正的权利。
+[k]
+
+[charaFace A 0]
+＠大卫
+在我扔完4次石头前，我们还有商谈的余地。[r]一次，[se ad28][wt 0.7]两次，[se ad28][wt 0.7]三次，[se ad28][wt 0.7]四次[se ad28][line 3]
+[k]
+
+[charaFace A 1]
+＠大卫
+这样啊，那就没办法了！[r]虽说力不如人，但打倒巨人乃正确的诉求。
+[k]
+
+＠大卫
+我会用这小小的石块证明给你看！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

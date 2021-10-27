@@ -1,0 +1,206 @@
+
+＄94-01-56-54-1-0
+
+
+
+[soundStopAll]
+
+
+
+[messageOff]
+
+
+[branch _PlayEffect_1st PM4 1]
+
+
+[label _PlayEffect_etc]
+
+[tapSkip _from_TapSkip_etc]
+
+[scene 10001]
+
+[effectPause bit_talk_goal2_5]
+[wait effectStart bit_talk_goal2_5]
+
+[fadein white 0.5]
+[wait fade]
+
+[effectStart bit_talk_goal2_5]
+[wait effect bit_talk_goal2_5]
+
+[label _from_TapSkip_etc]
+
+[effectDestroy bit_talk_goal2_5]
+[fadein black 0]
+[wait fade]
+
+[branch _PlayEffect_End]
+
+
+[label _PlayEffect_1st]
+
+[bgm BGM_EVENT_3 0.1]
+
+[tapSkip _from_TapSkip_1st]
+
+[effectPause bit_talk_winner2_5]
+[wait effectStart bit_talk_winner2_5]
+
+[scene 10001]
+
+[fadein white 0.5]
+[wait fade]
+
+[effectStart bit_talk_winner2_5]
+
+[bgmStop BGM_EVENT_3 3.7]
+
+[wt 3.9]
+[se ad251]
+[seVolume ad251 0 0.7]
+
+[wt 0.6]
+
+[voice 402600_0_M810]
+
+[scene 10000]
+
+[wait effect bit_talk_winner2_5]
+[wt 1.4]
+
+[label _from_TapSkip_1st]
+
+[voiceStop]
+[scene 10000]
+[effectDestroy bit_talk_winner2_5]
+[fadein black 0]
+[wait fade]
+
+
+[label _PlayEffect_End]
+
+[branch _PlayVoice_Start PM4 1]
+
+[branch _PlayVoice_End]
+
+
+
+
+[label _PlayVoice_Start]
+
+[charaSet A 7029000 1 织田信长]
+[charaSet B 6018000 1 谜之赛车手X]
+
+[bgm BGM_EVENT_64 0.1]
+
+[scene 45201 1.0]
+[wt 1.0]
+
+[flagRandom _PlayVoiceNo 1 3]
+
+
+[branch _PlayVoice_3rd _PlayVoiceNo 3]
+[branch _PlayVoice_2nd _PlayVoiceNo 2]
+[branch _PlayVoice_1st _PlayVoiceNo 1]
+
+
+
+[label _PlayVoice_1st]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 0]
+[charaFadein A 0.4 2]
+[charaFadein B 0.4 0]
+[wt 0.7]
+
+＠织田信长
+[tVoice ChrVoice_9010003 0_M700]
+距越狱又近了一步的我。[twt 3.0][charaFace A 1][r]离成为越狱天魔王的日子已经不远了吧！[wait tVoice]
+[k]
+
+
+[charaFace B 1]
+＠谜之赛车手X
+[tVoice ChrVoice_9010003 0_M701]
+越狱天，简直就像乌冬面的浇头名字呢。[wait tVoice]
+[k]
+
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_2nd]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFace B 0]
+[charaFadein A 0.4 2]
+[charaFadein B 0.4 0]
+[wt 0.7]
+
+＠织田信长
+[tVoice ChrVoice_9010003 0_M710]
+尽管遭到了收监，但我还很精神！　[wait tVoice]
+[k]
+[tVoice ChrVoice_9010003 0_M711]
+啊，探监的时候麻烦带上慰问品哦。[wait tVoice]
+[k]
+
+
+＠谜之赛车手X
+[tVoice ChrVoice_9010003 0_M712]
+麻烦带上甜品！　[wait tVoice]
+[k]
+[tVoice ChrVoice_9010003 0_M713]
+[charaFace B 5]
+这里的伙食太不宽裕了！[wait tVoice]
+[k]
+
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_3rd]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFace B 0]
+[charaFadein A 0.4 2]
+[charaFadein B 0.4 0]
+[wt 0.7]
+
+＠织田信长
+[tVoice ChrVoice_9010003 0_M720]
+事已至此，干脆放弃越狱，直接占据这所监狱如何？　[wait tVoice]
+[k]
+[tVoice ChrVoice_9010003 0_M721]
+[charaFace A 1]
+我就是信狱长吧。[wait tVoice]
+[k]
+
+
+＠谜之赛车手X
+[tVoice ChrVoice_9010003 0_M722]
+那我就是谜之刽子手X。[wait tVoice]
+[k]
+
+
+[charaFace A 12]
+＠织田信长
+[tVoice ChrVoice_9010003 0_M723]
+和现在完全没什么差别吧！[wait tVoice]
+[k]
+
+
+
+
+[label _PlayVoice_End]
+
+
+[messageOff]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_64 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,1073 @@
+
+
+＄03-00-01-06-1-0
+
+[soundStopAll]
+
+[charaSet A 1098128000 1 玛修]
+[charaSet B 5036001 1 阿维斯布隆]
+[charaSet C 7030001 1 阿塔兰忒·Alter]
+[charaSet D 1098128400 1 雅嘎反叛军]
+[charaSet E 1098126400 1 帕茨西]
+[charaSet F 1098126800 1 雅嘎（孩童）]
+[charaSet G 98115300 1 福尔摩斯]
+[charaSet H 98115000 1 特效用]
+
+
+
+[scene 55001]
+
+[fadein black 1.0]
+[charaPut H 1]
+[charaEffect H bit_talk_snowstorm_01]
+[se ad555]
+[seVolume ad555 0 0.5]
+[se ad5 1.0]
+[seVolume ad5 0 0.7]
+[wait fade]
+
+[wt 2.0]
+[charaEffectStop H bit_talk_snowstorm_01]
+[seStop ad5 1.5]
+[seStop ad555 1.5]
+[wt 1.5]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠玛修
+因为魔兽的肉，雅嘎们现在好热闹呀。[r]我们也分到了一些呢。
+[k]
+
+＠玛修
+虽说在戈尔德鲁夫新所长的建议下祛除了毒素……
+[k]
+
+＠玛修
+御主，味道如何？
+[k]
+
+？1：挺不错的。
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 2000,2000]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿维斯布隆
+我的御主还真坚韧不拔呢。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？2：味道稍微有些古怪……
+
+[charaFace A 12]
+
+＠玛修
+确实有些刺鼻的肉腥味。[r]是因为切好以后直接撒盐烤熟大口撕咬的缘故吗。
+[k]
+
+[charaFace A 7]
+
+＠玛修
+话虽如此，还是不能浪费食物。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠帕茨西
+哼，真是挑剔。[r]只要能填饱肚子，我吃什么都可以。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠雅嘎（孩童）
+……[r]……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠帕茨西
+唔，干嘛？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠雅嘎（孩童）
+那边那个光溜溜的雅嘎是谁啊
+[k]
+
+？1：……我吗？
+？！
+
+[charaFace F 1]
+
+＠雅嘎（孩童）
+嗯！
+[k]
+
+[charaFace F 0]
+
+＠雅嘎（孩童）
+难道是幽灵？[r]这么光溜溜的，脸不痛吗？
+[k]
+
+？1：我在忍着哦。
+
+＠雅嘎（孩童）
+好厉害呀～！
+[k]
+
+？2：我～是～妖～怪～哦～！
+
+[charaFace F 1]
+
+[charaMoveReturn F 0,10 0.25]
+＠雅嘎（孩童）
+呀啊！
+[k]
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠帕茨西
+好啦小鬼头，上那边去玩儿去。[r]……这么说来，反叛军的近一成……
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[cameraMove 0.1 -50,0 1.2]
+
+[wt 0.5]
+
+[charaSet A 1098126500 1 雅嘎市民_男]
+[charaSet B 1098126600 1 雅嘎市民_女]
+
+[charaScale A 0.8]
+[charaScale B 0.8]
+[charaScale F 0.8]
+
+[charaTalk off]
+[charaFace A 1]
+[charaFace B 0]
+[charaFace F 1]
+[charaFadein A 0.1 -256,-30]
+[charaFadein B 0.1 0,-30]
+[charaFadein F 0.1 256,-30]
+
+[wipein rectangleStripRightToLeft 0.7 1]
+[se ad5 1.0]
+[seVolume ad5 0 0.5]
+[cameraMove 3.4 50,0 1.2]
+[wait wipe]
+[wt 2.7]
+
+
+
+
+
+[wipeout rectangleStripRightToLeft 0.7 1]
+[seStop ad5 0.7]
+[wait wipe]
+
+[charaTalk on]
+
+[charaScale A 1.0]
+[charaScale B 1.0]
+[charaScale F 1.0]
+
+[charaFadeout B 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaSet A 1098128000 1 玛修]
+[charaSet B 5036001 1 阿维斯布隆]
+[charaSet D 1098123210 1 戈尔德鲁夫·穆吉克]
+[charaSet F 1098124510 1 达·芬奇]
+
+[cameraHome 0.1]
+
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠帕茨西
+都是些小鬼头和老头老太啊……[r]严格说来，说他们是难民更为准确吧？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿维斯布隆
+正如帕茨西所言。
+[k]
+
+＠阿维斯布隆
+据我所见，适合战斗的雅嘎[r]只有整体的六成左右。
+[k]
+
+＠阿维斯布隆
+剩下的四成最多只能在后方支援，[r]而且还不能抱多大期待。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.5]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[se ad173]
+[wt 1.5]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[seStop ad173 0.5]
+[wt 0.4]
+
+＠阿塔兰忒·Alter
+……你在这儿啊，[%1]。[bgm BGM_EVENT_76 0.1][r]还有志愿者。
+[k]
+
+[charaFace C 5]
+
+＠阿塔兰忒·Alter
+首先，我们的目的。[r]是打倒伊凡雷帝[line 3]
+[k]
+
+＠阿塔兰忒·Alter
+这点我们双方是一致的。[r]但别以为我就会因此服从汝的指挥。
+[k]
+
+？1：我并没有这个打算。
+？！
+
+[charaFace C 4]
+
+＠阿塔兰忒·Alter
+再说了，假如只有个体实力突出，[r]是无法对抗[#杀戮猎兵:亲卫队]的。
+[k]
+
+＠阿塔兰忒·Alter
+毕竟他们犹如猛烈的风暴，已经算一种灾害了。
+[k]
+
+[charaFace C 5]
+
+＠阿塔兰忒·Alter
+但另一方面，汝等的力量令人惜才。[r]实在令人惜才。
+[k]
+
+[charaFace C 6]
+
+＠阿塔兰忒·Alter
+……所以我先将汝等视为机动部队观望情况。[r]也就是希望汝等证明自身的价值。
+[k]
+
+[charaFace C 5]
+
+＠阿塔兰忒·Alter
+我这里有个只能由少数精锐[r]去完成的任务一直被搁置着。
+[k]
+
+＠阿塔兰忒·Alter
+迄今为止都只能由我直接出马才能完成，[r]但我是这支军队的领袖。
+[k]
+
+[charaFace C 4]
+
+＠阿塔兰忒·Alter
+我并不恐惧死亡，[r]只是担心这样做会拖慢军队整体的行动。
+[k]
+
+[charaFace C 6]
+
+＠阿塔兰忒·Alter
+……你们愿意接受这个任务吗？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.3]
+
+＠福尔摩斯
+失礼。恕我只能隔着通讯对话，Miss阿塔兰忒。[r]恐怕你在途中已经听到了，但我还是重新自我介绍一遍吧。
+[k]
+
+＠福尔摩斯
+我是夏洛克·福尔摩斯。[r]和你一样是从者。而这位是，
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠达·芬奇
+在～。我是莱昂纳多·达·芬奇。[r]目前因故处于节能灵基的状态，还请谅解。
+[k]
+
+[charaFace F 8]
+
+＠达·芬奇
+阿塔兰忒。我和你一样，也是泛人类史的从者。[r]而且还是位天才。有什么困扰的事情可以找我商量哦。
+[k]
+
+[charaFace F 14]
+
+＠达·芬奇
+话虽如此，我们也只是初来乍到，[r]情报还不足呢。
+[k]
+
+[charaFace F 0]
+
+＠达·芬奇
+所以我有个问题想问你，可以吗？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠阿塔兰忒·Alter
+孩童英雄？[r]你也反转了吗？
+[k]
+
+[charaFace C 0]
+
+＠阿塔兰忒·Alter
+……不过算了。[r]既然是孩子的请求，我也不能视而不见。什么事？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠达·芬奇
+是关于那棵大树的事哦。[r]别说俄罗斯了，放眼整个地球都不存在那种树才对吧。
+[k]
+
+＠达·芬奇
+你知道那到底是什么吗？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠阿塔兰忒·Alter
+……那就像是支撑着世界的大树。[r]尽管在我们的神话体系中有一个符合的存在……
+[k]
+
+[charaFace C 4]
+
+＠阿塔兰忒·Alter
+不，这与那棵树应该无关吧。[r]我也不清楚那究竟是什么。
+[k]
+
+[charaFace C 0]
+
+＠阿塔兰忒·Alter
+但潜入了雅嘎·莫斯科的间谍[r]带回了这么一个情报。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠福尔摩斯
+哦，究竟是什么呢？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠阿塔兰忒·Alter
+唔……
+[k]
+
+＠阿塔兰忒·Alter
+……如果将这作为交换条件，让汝等无谓期待也不太好。[charaFace C 0][r]我们知道的只有那个的名字。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+名字……吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿塔兰忒·Alter
+没错。[r]那棵树的名字是“空想树”。
+[k]
+
+[charaFace C 6]
+
+＠阿塔兰忒·Alter
+据说是从有着[#旧种:人类]模样的宫廷魔术师[r]在街道上散步时喃喃自语中听到的。
+[k]
+
+＠阿塔兰忒·Alter
+说『空想树还没有扎根』。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠福尔摩斯
+唔嗯。空想之树，[r]应该是Cloud Tree吧。
+[k]
+
+＠福尔摩斯
+我们姑且在数据库内[r]查找一下有关空想树的资料好了。
+[k]
+
+[charaFace G 4]
+
+＠福尔摩斯
+尽管我觉得会一无所获。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿塔兰忒·Alter
+随你的便吧。[wt 0.5][charaFace C 6][r]那汝等决定了吗。
+[k]
+
+＠阿塔兰忒·Alter
+愿意接受这个任务吗？
+[k]
+
+？1：明白了！
+
+[charaFace C 1]
+
+＠阿塔兰忒·Alter
+十分感谢。
+[k]
+
+？2：如果我们能做得到。
+
+[charaFace C 0]
+
+＠阿塔兰忒·Alter
+我是不会下达无法完成的命令的。
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFace E 0]
+[charaFadein C 0.1 0]
+[charaFadein E 0.1 2]
+
+＠阿塔兰忒·Alter
+帕茨西。汝也与他们同行吧。
+[k]
+
+[charaFace C 0]
+
+＠阿塔兰忒·Alter
+他们还不熟悉这片土地。[r]既然汝是猎人，应该会用枪吧。
+[k]
+
+[charaFace E 1]
+
+＠帕茨西
+啊～，也就是说你同意我加入了吧？
+[k]
+
+[charaFace C 6]
+
+＠阿塔兰忒·Alter
+只要汝想加入。
+[k]
+
+＠帕茨西
+……这个嘛，我也与[#杀戮猎兵:亲卫队]有仇。
+[k]
+
+[charaFace C 4]
+
+＠阿塔兰忒·Alter
+仇吗……[charaFace C 5][r]光凭仇恨，是很难战斗到最后的啊。
+[k]
+
+＠阿塔兰忒·Alter
+必须紧紧抱着自己思考得出的结论，[r]拼死战斗才行。
+[k]
+
+＠阿塔兰忒·Alter
+如若不然，[r]眨眼间就会被俄罗斯的暴风雪吞没。
+[k]
+
+[charaFace E 0]
+
+＠帕茨西
+……我知道啦。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠阿塔兰忒·Alter
+那事不宜迟，赶紧给汝等分配第一个任务吧。[r]希望汝等能巡回各个村子，将檄文分发给他们。
+[k]
+
+？1：檄文？
+？！
+
+＠阿塔兰忒·Alter
+就是告诉他们，吾等反叛军的目标，[r]就是打倒伊凡雷帝，歼灭[#杀戮猎兵:亲卫队]。
+[k]
+
+＠阿塔兰忒·Alter
+如果可能的话，希望他们能提供食物或药材。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠帕茨西
+喂，这风险很高啊。[r]如果村民想告密，我们不就完蛋了吗。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿塔兰忒·Alter
+临机应变地解决吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿维斯布隆
+真够随便的。
+[k]
+
+＠阿维斯布隆
+话虽如此，若想遍历幅员辽阔的俄罗斯，[r]必须得到散布在各地的村庄的协助才行。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠福尔摩斯
+那接下来轮到我们提要求了。[r]这是我们迦勒底需求的东西，怎么样？
+[k]
+
+[messageOff]
+[se ad15]
+[wt 0.5]
+[se ad1]
+[wt 0.5]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠阿塔兰忒·Alter
+……如果是魔兽之牙与魔偶核心的话，[r]我能够马上准备。
+[k]
+
+[charaFace C 0]
+
+＠阿塔兰忒·Alter
+这次就当作事前报酬，[r]把刚才从魔兽身上剥下来的东西让给汝等吧。
+[k]
+
+[messageOff]
+[charaMoveScale C 1.05 0.3]
+[wt 0.3]
+[se ad27]
+[wt 0.5]
+[charaMoveScale C 1.0 0.3]
+[wt 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠戈尔德鲁夫
+只有这么丁点吗！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠阿塔兰忒·Alter
+汝当吾等是什么人，吾等可是反叛军。[r]物资短缺是家常便饭。
+[k]
+
+[charaFace C 0]
+＠阿塔兰忒·Alter
+牙与核心都算不上必需品，[r]所以会同意提供啊。
+[k]
+
+[charaFace C 4]
+
+＠阿塔兰忒·Alter
+……不过，我也盘算好了，[r]我想攻陷几座宣誓完全顺从伊凡雷帝的都市。
+[k]
+
+[charaFace C 1]
+
+＠阿塔兰忒·Alter
+届时汝等若能派上用场，我也愿意考虑。[r]如何？
+[k]
+
+？1：新所长，怎么办？
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠戈尔德鲁夫
+唔，唔嗯！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠阿塔兰忒·Alter
+想拒绝也无妨。[r]我只会将汝等赶出这里。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠戈尔德鲁夫
+咕咿咿咿咿。[r]……好吧。
+[k]
+
+＠戈尔德鲁夫
+[%1]、玛修，[r]迅速完成这个跑腿的任务！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+？2：我知道了，那就按你说的办吧。
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠戈尔德鲁夫
+拥有决定权的可是我啊！
+[k]
+
+[charaFace D 5]
+
+＠戈尔德鲁夫
+总之有事就该报告给我！[r]你们别根据现场情况轻举妄动啊！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠阿塔兰忒·Alter
+那么你意下如何？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠戈尔德鲁夫
+唔嗯。
+[k]
+
+＠戈尔德鲁夫
+……那就先这么办吧。[r]由你去做，[%1]。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠帕茨西
+结论完全没变……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿塔兰忒·Alter
+……好。我已经在地图上做好了标记。[r]逐一将这些村庄巡回一遍。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠福尔摩斯
+最短路线就由我们来计算吧。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠玛修
+非常感谢，福尔摩斯先生。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠福尔摩斯
+（很好，地盘正在逐渐稳固。[r]　我们终于向前迈出一步了。）
+[k]
+
+＠福尔摩斯
+（你们能先回来和我们会合一趟吗？[r]　想麻烦你们将目前得到的食物带回来。）
+[k]
+
+＠福尔摩斯
+（此外，在修复Shadow Border之前，[r]　似乎还有件必须完成的事。）
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛修
+来吧，御主。[r]我们出发吧！
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_76 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 54100]
+
+[fadein black 1.0]
+[se ad603 1.0]
+[seVolume ad603 0 0.8]
+[effect bit_talk_snowstorm_03]
+[wait fade]
+
+
+[wt 2.0]
+
+[seVolume ad603 1.0 0.3]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠帕茨西
+好快！？[bgm BGM_EVENT_77 0.1]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿维斯布隆
+因为变化为高机动型了。[r]速度差不多就这样吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠帕茨西
+这就是真正的魔术吗……[r]啊啊，该死。如果我也是魔术师就好了！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[seVolume ad603 1.0 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+不，帕茨西先生。
+[k]
+
+＠玛修
+阿维斯布隆先生是足以留名于历史的[r]著名卡巴拉主义者……
+[k]
+
+[charaFace A 12]
+
+＠玛修
+普通魔术师若想到达这个领域，[r]只能寄望于十代以后的世代……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿维斯布隆
+我只是通过实验来铸造我所追求的事物而已……
+[k]
+
+？1：追求的事物？
+？！
+
+＠阿维斯布隆
+我将被称作『起源人类』的魔偶[r]定为自己的最终目标。
+[k]
+
+＠阿维斯布隆
+想要铸造出引导受难民众，[r]构筑真正乐园的魔偶。
+[k]
+
+＠阿维斯布隆
+生前的我没能达成这一愿望。[r]嗯。
+[k]
+
+＠阿维斯布隆
+……不过，在这过程中获得的技术[r]能为保护人理贡献出一份力量也是好事。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[seVolume ad603 1.0 0.3]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠帕茨西
+啊～，快要到村子了。[r]如果坐着这玩意进去，想必会引起恐慌吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿维斯布隆
+说得没错。[r]那就暂时先解除吧。
+[k]
+[messageOff]
+[effectStop bit_talk_snowstorm_03]
+[seStop ad603]
+[cueSe Servants_103200 bac512]
+[cueSeVolume bac512 0 0.4]
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

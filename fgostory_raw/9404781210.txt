@@ -1,0 +1,168 @@
+
+
+
+＄94-04-78-12-1-0
+
+[soundStopAll]
+
+[skip false]
+
+[maskout black 0]
+[wait mask]
+
+[charaSet A 3043000 1 绘里濑]
+[charaSet B 9008001 1 阿斯特赖亚]
+[charaSet C 11006001 1 萨列里]
+[imageSet D cut171_token_203 1]
+[charaSet T 5009000 1 特效用dummy]
+[imageSet K cut174_9th 1]
+[imageSet L cut174_9th 1]
+
+[scene 20730]
+
+[pictureFrameTop cut170_gameframe_bright]
+
+[skip true]
+
+[fadein black 0]
+[wait fade]
+[maskin black 1.5]
+[wait mask]
+
+[bgm BGM_EVENT_3 0.1]
+[wt 0.5]
+
+[charaTalk depthOff]
+[charaTalk off]
+
+[charaDepth T 1]
+[charaDepth D 2]
+[charaDepth C 3]
+
+[charaPut T 0,-10]
+[charaEffect T bit_talk_token_materialization]
+[cueSe NoblePhantasm_603800 NP_603800_1]
+[wt 2.5]
+[cueSeStop NP_603800_1 0.5]
+
+[charaFadein D 0.4 0,-210]
+[wt 1.2]
+
+[se ad29]
+[fadeout white 0.5]
+[wait fade]
+[charaEffectDestroy T bit_talk_token_materialization]
+[charaFace C 6]
+[charaFadein C 0.7 0,-50]
+[wt 0.2]
+[fadein white 0.5]
+[charaFadeout D 0.4]
+[wait fade]
+[wt 0.8]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+＠萨列里
+这是正义的裁决？　太好笑了。[r]你演奏的想必是完美而和谐的[#断罪:旋律]吧？
+[k]
+
+[charaFace C 5]
+
+＠萨列里
+那[messageShake 0.05 4 4 0.4]我！　要反抗！　挣扎！　欺骗！[r]嘲笑！　你奉行的所谓正义！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 0,-50]
+[charaShake A 0.05 3 3 0.3]
+
+＠绘里濑
+呜……！
+[k]
+
+
+[charaFace A 4]
+
+＠绘里濑
+这不是我一个人的战斗。[r]问题在于是否该允许[#游戏界:这个世界]的存在。
+[k]
+
+[charaFace A 5]
+
+＠绘里濑
+拜托了。[r]女神啊，请给予正确的制裁。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-50]
+
+＠阿斯特赖亚
+我明白。我向这双手、双脚、腰部、腹肌、[r]全身的弹性及燃烧的斗志起誓[line 3]
+[k]
+
+[charaFace B 2]
+
+＠阿斯特赖亚
+[#来吧:Luctor]！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.7]
+
+[charaDepth K 2]
+[charaDepth L 1]
+[charaScale L 1.4]
+
+[effect bit_talk_x_slash01]
+[se ad470]
+[seVolume ad470 0 0.9]
+[wt 0.1]
+[seStop ad470 0.2]
+[wt 0.1]
+
+[effect bit_talk_x_slash02]
+[se ad470]
+[seVolume ad470 0 0.9]
+[wt 0.2]
+[seStop ad470 0.3]
+[wt 0.3]
+
+[backEffect bit_talk_sparks]
+
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[se ad471]
+[charaFadein L 0.2 0,-270]
+[wt 0.1]
+
+[charaFadein K 0.2 0,-200]
+
+[charaMove L 0,-200 0.2]
+[charaMoveScale L 1.0 0.2]
+[wt 0.5]
+[effectStop bit_talk_fire]
+
+[wt 2.0]
+
+[maskout black 0.5]
+[seStop ad471 0.4]
+[bgmStop BGM_EVENT_3 0.4]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[soundStopAll]
+[end]
+
+
+
+

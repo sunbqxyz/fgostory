@@ -1,0 +1,988 @@
+
+＄94-04-91-04-2-0
+
+
+[soundStopAll]
+
+[branchQuestNotClear lblNotClear 3000320]
+
+
+[charaSet A 8001410 1 玛修]
+[branch lblConf]
+
+[label lblNotClear]
+[charaSet A 8001000 1 玛修]
+
+[label lblConf]
+
+
+[charaSet B 1098196100 1 埴轮]
+[charaSet C 9010000 1 卑弥呼]
+[charaSet D 1098194300 1 卑弥呼_第一_放下手]
+[charaSet E 6033000 1 冈田以藏]
+[charaSet F 1027001 1 冲田总司]
+[charaSet G 1044000 1 斋藤一]
+[charaSet H 1098195000 1 山南敬助]
+[charaSet I 1098196100 1 埴轮]
+[charaSet J 1098196100 1 埴轮]
+[charaSet K 1098196100 1 埴轮]
+[charaSet L 1098196100 1 埴轮]
+
+[charaSet S 5009040 1 特效用dummy]
+[charaSet T 5009040 1 特效用dummy]
+
+
+[scene 20808]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad527]
+[wt 1.0]
+[seStop ad527 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠玛修
+应该就快到那座神殿了……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠埴轮
+[voice 9942480_0_B140]
+HA[messageShake 0.02 3 3 0.4]，HANYOBU！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠卑弥呼
+啊！　找到了！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠埴轮
+[voice 9942480_0_B410]
+HA，HANYOHANYO！？
+[k]
+
+
+[messageOff]
+
+[se ad443]
+[charaMove B -150,0 0.4]
+[charaFadeout B 0.4]
+[wt 0.4]
+[seStop ad443 0.4]
+[wt 0.8]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠冈田以藏
+休想逃跑哦！
+[k]
+
+
+[messageOff]
+
+[se ad443]
+[charaMove E -150,0 0.4]
+[charaFadeout E 0.4]
+[wt 0.4]
+[seStop ad443 0.4]
+[wt 0.8]
+
+
+
+[skip false]
+
+[input selectBranch]
+
+[seStop ad443]
+[seStop ad527]
+[soundStopAllFade 0.1]
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+
+[branchQuestNotClear lblNotClear2 3000320]
+[charaSet A 8001410 1 玛修]
+[branch lblConf2]
+
+[label lblNotClear2]
+[charaSet A 8001000 1 玛修]
+
+[label lblConf2]
+
+[charaSet B 1098196100 1 埴轮]
+[charaSet C 9010000 1 卑弥呼]
+[charaSet D 1098194300 1 卑弥呼_第一_放下手]
+[charaSet E 6033000 1 冈田以藏]
+[charaSet F 1027001 1 冲田总司]
+[charaSet G 1044000 1 斋藤一]
+[charaSet H 1098195000 1 山南敬助]
+[charaSet I 1098196100 1 埴轮]
+[charaSet J 1098196100 1 埴轮]
+[charaSet K 1098196100 1 埴轮]
+[charaSet L 1098196100 1 埴轮]
+
+[charaSet S 5009040 1 特效用dummy]
+[charaSet T 5009040 1 特效用dummy]
+
+
+[scene 20808]
+
+[bgm BGM_EVENT_5 0.1]
+
+[messageOff]
+[maskin black 1.0]
+[wait mask]
+[label selectBranch]
+
+
+？1：追上去吧！
+
+？2：稍微等一下。
+
+
+？！
+
+[skip true]
+
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 1]
+
+
+
+[label INPUT_SELECT_BRANCH_1]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠玛修
+是，玛修·基列莱特，开始追踪！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠冲田总司
+竟然抛下一番队队长冲在第一，[r]区区田冈太狂妄了！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠卑弥呼
+啊，慢着慢着～！　我也去～！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+＠斋藤一
+没办法，我们也跟上吧。
+[k]
+
+
+[messageOff]
+
+[se ad769]
+[charaFadeout G 0.4]
+[wt 0.4]
+[seStop ad769 0.8]
+[wt 1.4]
+
+
+[charaTalk H]
+[charaFace H 16]
+[charaFadein H 0.1 1]
+＠山南敬助
+……稍微等一下。
+[k]
+
+[charaFace H 10]
+＠山南敬助
+呃，已经走了啊……[r]算了，没办法。
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_5 1.0 0.4]
+[wait wipe]
+
+[charaFadeout H 0.1]
+[wt 1.0]
+
+[bgm BGM_EVENT_5 1.0 1.0]
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠埴轮
+[voice 9942480_0_B170]
+HA，HANYOBUBU……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+
+＠冈田以藏
+哇哈哈哈哈！　你这土偶已经逃不掉了哦！[r]长着一张令人恼火的脸。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠卑弥呼
+田冈直到不久前还是那种埴轮呢。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+
+＠冈田以藏
+给[messageShake 0.02 3 3 0.4]我闭嘴！　再说了，谁是田冈啊！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠冲田总司
+田冈只能是田冈吧。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+＠冈田以藏
+是你给她灌输的吗！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠卑弥呼
+哎～，田冈不是挺好的嘛。
+[k]
+
+＠卑弥呼
+很可爱吧，未来亲？
+[k]
+
+
+？1：叫起来很方便呢。
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+
+＠冲田总司
+把田冈叫成田冈就够了啦。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+？2：一点也不可爱。
+
+[charaFace C 0]
+＠卑弥呼
+哎～，是吗～。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？！
+
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+
+＠冈田以藏
+给我闭嘴！　总之先解决这家伙然后赶紧……
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_5 1.0]
+[se ade308]
+[charaTalk S]
+[charaFace E 11]
+[wt 2.2]
+
+[charaFace E 10]
+
+
+＠冈田以藏
+怎么了？　什么声音？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 16]
+[charaFadein H 0.1 1]
+＠山南敬助
+果然，看来我们彻底跳进了对方的陷阱呢。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.2]
+
+
+[charaTalk off]
+[charaDepth B 3]
+[charaDepth I 4]
+[charaDepth J 6]
+[charaDepth K 5]
+[charaDepth L 7]
+
+[se ade255]
+[wt 0.2]
+
+[charaFace B 0]
+[charaFace I 0]
+[charaFace J 0]
+[charaFace K 0]
+[charaFace L 0]
+[charaFadein B 0.4 350,5]
+[charaFadein I 0.4 -350,5]
+[charaFadein J 0.4 175,0]
+[charaFadein K 0.4 -175,0]
+[charaFadein L 0.4 0,-5]
+[wt 0.4]
+
+＠埴轮
+[voice 9942480_0_B140]
+HANYOHANYOHANYOBU！
+[k]
+
+
+[charaFadeout B 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠玛修
+御主！　我们的背后突然出现了埴轮大军！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠斋藤一
+埴轮居然有伏兵……不，是我们太小看对方了呢。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth B 6]
+[charaDepth T 4]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[charaPut T 0,0]
+[charaEffect T bit_talk_radiallight01]
+[wt 0.4]
+＠B：光辉灿烂的埴轮
+HANIHANI，HANIHANIHU！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠D：卑弥呼
+啊～！？　有个感觉比我更神圣的埴轮！！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+那光辉加上埋伏的配置，难道那是……！
+[k]
+
+？1：难道是景虎小姐？
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaPut T 0,0]
+＠B：光辉灿烂的埴轮
+HANYOHAHANYOHU！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠卑弥呼
+啊，看上去好像很高兴。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？2：武田信玄！？
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[charaPut T 0,0]
+＠B：光辉灿烂的埴轮
+HA[messageShake 0.02 3 3 0.4]NYA[line 4]！？！？！？？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠卑弥呼
+啊，感觉很生气。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaShake B 0.03 4 4 0.4]
+[charaPut T 0,0]
+[charaShake T 0.03 4 4 0.4]
+＠B：光辉灿烂的埴轮
+HANYOHA，NYA[line 6]！！！！
+[k]
+
+
+
+
+
+
+[branch INPUT_SELECT_BRANCH_3]
+
+
+
+
+
+
+
+
+[label INPUT_SELECT_BRANCH_2]
+
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+＠山南敬助
+虽然刚见面，[r]但拔腿就跑显得非常可疑。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠斋藤一
+也就是说，那是诱饵或是别的什么？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+＠山南敬助
+这种时候还是做好准备以防万一为好，[r]斋藤从右侧，冲田从左侧绕过去。
+[k]
+
+＠山南敬助
+虽然有些对不起冈田先生，但只能让他当诱饵了。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠冲田总司
+原来如此，这是个好主意。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠卑弥呼
+哎～，这样田冈不是很可怜吗？
+[k]
+
+？1：相信以藏先生一定能办到。
+
+？2：但他也已经走了……
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+
+
+＠山南敬助
+总之抓紧时间吧，趁冈田吸引敌人注意力的机会，[r]由我们一决胜负吧。
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_5 1.0]
+[wait wipe]
+
+[charaFadeout H 0.1]
+
+[charaTalk off]
+[charaDepth B 3]
+[charaDepth I 4]
+[charaDepth J 6]
+[charaDepth K 5]
+[charaDepth L 7]
+[charaDepth T 2]
+
+[charaPut T 1200,1200]
+[charaEffect T bit_talk_radiallight01]
+
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaPut T 0,0]
+＠B：光辉灿烂的埴轮
+HANYOHANYOBUHU！
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk off]
+[charaFace B 0]
+[charaFace I 0]
+[charaFace J 0]
+[charaFace K 0]
+[charaFace L 0]
+[charaFadein B 0.1 350,5]
+[charaFadein I 0.1 -350,5]
+[charaFadein J 0.1 175,0]
+[charaFadein K 0.1 -175,0]
+[charaFadein L 0.1 0,-5]
+＠埴轮们
+[voice 9942480_0_B020]
+HANYOBUHANYOBUBU！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+＠田冈
+你们是什么情况啊啊啊啊啊！
+[k]
+
+＠田冈
+数量也太多了吧！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth B 6]
+[charaDepth T 4]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaPut T 0,0]
+＠B：光辉灿烂的埴轮
+HANYOHU，HANYOHU，NYA！！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+＠田冈
+可恶！　其他人上哪儿去了！？
+[k]
+
+
+[charaTalk F]
+＠冲田总司
+到此为止了，莫名发光的埴轮！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[cueSe Battle bac136]
+[charaPut S 1]
+[charaEffect S bit_talk_v_slash01]
+[wt 0.6]
+
+[charaTalk off]
+[charaDepth B 4]
+[charaDepth I 5]
+[charaDepth J 6]
+
+[charaFace B 1]
+[charaFace I 1]
+[charaFace J 1]
+[charaFadein B 0 0]
+[charaFadein I 0 2]
+[charaFadein J 0 1]
+[charaShake B 0.03 4 4 0.4]
+[charaShake I 0.03 4 4 0.4]
+[charaShake J 0.03 4 4 0.4]
+[wt 0.8]
+
+[charaMove B -256,-50 0.4]
+[charaMove I 256,-50 0.4]
+[charaMove J 0,-50 0.4]
+[charaFadeout B 0.4]
+[charaFadeout I 0.4]
+[charaFadeout J 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+[charaDepth B 6]
+[charaDepth T 4]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[charaPut T 0,0]
+＠B：光辉灿烂的埴轮
+HANYO！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+＠斋藤一
+好啦好啦，抱歉从后面……嘿！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[cueSe Battle bac137]
+[charaPut S 1]
+[charaEffect S bit_talk_h_slash01]
+[wt 0.5]
+
+
+[charaDepth B 4]
+[charaDepth I 5]
+[charaDepth J 6]
+
+[charaFace B 1]
+[charaFace I 1]
+[charaFace J 1]
+[charaFadein B 0 0]
+[charaFadein I 0 2]
+[charaFadein J 0 1]
+[charaShake B 0.03 4 4 0.4]
+[charaShake I 0.03 4 4 0.4]
+[charaShake J 0.03 4 4 0.4]
+[wt 0.6]
+
+＠埴轮
+[voice 9942480_0_B140]
+HANYOBU！？！？
+[k]
+
+
+[messageOff]
+
+[charaMove B -256,-50 0.4]
+[charaMove I 256,-50 0.4]
+[charaMove J 0,-50 0.4]
+[charaFadeout B 0.4]
+[charaFadeout I 0.4]
+[charaFadeout J 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+[charaDepth B 6]
+[charaDepth T 4]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[charaPut T 0,0]
+＠B：光辉灿烂的埴轮
+HA，HANYOHU……！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠玛修
+以藏先生，让您久等了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠卑弥呼
+我们来救你了哦，田冈！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+＠冈田以藏
+慢死了！　呃，谁是田冈啦！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠冲田总司
+自己一个人冲出去田冈还那么啰嗦。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+＠山南敬助
+好，周围埴轮已经全都解决掉了，[r]接下来只剩那个发光的埴轮了吧？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[charaPut T 0,0]
+＠B：光辉灿烂的埴轮
+HANYOHU……HANYOHANYO……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+似乎遭受了打击……
+[k]
+
+？1：或许是因为作战被识破，有些不甘心吧。
+
+？2：不，那是……
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaShake B 0.03 4 4 0.4]
+[charaPut T 0,0]
+[charaShake T 0.03 4 4 0.4]
+＠B：光辉灿烂的埴轮
+HANYOHU！　NYA[line 3]！！！
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠卑弥呼
+破罐子破摔朝我们突击来了！？
+[k]
+
+
+
+
+
+
+
+
+
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_3]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

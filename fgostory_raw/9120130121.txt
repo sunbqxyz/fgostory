@@ -1,0 +1,112 @@
+＄91-20-13-01-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[charaSet A 99502600 1 玛修]
+[charaSet B 2013001 1 阿拉什]
+[charaSet C 98003003 1 Dr.罗曼]
+[charaSet E 98006000 1 敌A]
+
+[scene 20802]
+[fadein black 2.0]
+[wait fade]
+
+[charaPut E 0,0]
+[charaEffect E bit_talk_10]
+[wt 0.05]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠玛修
+确认敌对存在消灭。[r]是前辈胜利了！
+[k]
+
+[charaFace A 1]
+＠玛修
+没想到居然能在如此短时间内打倒敌人……[r]好厉害啊，前辈，还有阿拉什先生！
+[k]
+
+[charaFadeout A 0]
+[wt 0.05]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-150]
+＠Dr.罗曼
+咦，难道是数据调整失误吗？[r]应该不会有这种事才对啊。
+[k]
+
+[charaFace C 1]
+＠Dr.罗曼
+不管怎么说，辛苦啦！ 虽然解析要[r]接下来才能进行，不过我觉得这次应该收集了很不错的数据！
+[k]
+
+[charaFadeout C 0]
+[charaPut E -1000,0]
+[charaEffectStop E bit_talk_10]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠阿拉什
+呼，还好一切平安无事结束了。
+[k]
+
+？1：辛苦了，阿拉什。
+
+[charaFace B 1]
+＠阿拉什
+哦。彼此彼此。
+[k]
+
+？2：下次到灵子转移目的地一起战斗吧。
+
+[charaFace B 1]
+＠阿拉什
+哦，如果你希望的话！
+[k]
+
+？！
+
+[charaFace B 0]
+＠阿拉什
+……不过，为什么呢。感觉真奇妙。
+[k]
+
+[charaFace B 3]
+＠阿拉什
+要算赌上世界命运之战的话，大概这已经是第三次了吧。[r]不，第四次了吗。
+[k]
+
+[charaFace B 0]
+＠阿拉什
+和圣杯相关的也已经经历了好几次了吧，[r]不过，那啥啦。
+[k]
+
+＠阿拉什
+我有一种切实的感受。[r]看来我每次的御主运都非常好。
+[k]
+
+＠阿拉什
+今后也请多指教啦。[r]只要你希望，我随时会为你全力以赴。
+[k]
+
+[charaFace B 1]
+＠阿拉什
+当然，会比我活着的时候更全力以赴！
+[k]
+
+＠阿拉什
+[line 3]去拯救世界吧！　御主！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 1.9]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

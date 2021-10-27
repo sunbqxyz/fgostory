@@ -1,0 +1,194 @@
+
+
+＄94-04-49-01-2-1
+
+[soundStopAll]
+
+[skip false]
+
+[branchQuestNotClear lblNotClear1 3000320 4]
+[label lblClear1]
+[flag IsGirl true]
+[branch lblIsClearConf1]
+[label lblNotClear1]
+[flag IsGirl false]
+[label lblIsClearConf1]
+
+[skip true]
+
+[charaSet A 6031001 1 刑部姬]
+[charaSet B 7027300 1 Amazones CEO_普通]
+[charaSet C 1098119600 1 Amazones CEO_轱辘]
+[charaSet E 99502600 1 玛修]
+[charaSet J 5009000 1 特效用]
+
+[branch lblNotGirl1 IsGirl false]
+[label lblGirl1]
+[charaSet D 1098124510 1 达·芬奇]
+[branch lblIsGirlConf1]
+[label lblNotGirl1]
+[charaSet D 98111500 1 达·芬奇]
+[label lblIsGirlConf1]
+
+[scene 90100]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠刑部姬
+累～死～我～了～。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠玛修
+辛苦了……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠B：Amazones CEO
+很好，合格。[r]做到这个地步都没四分五裂，真是太棒了。
+[k]
+
+[charaFace B 11]
+
+＠B：Amazones CEO
+你们的公司名是叫迦勒底吗？
+[k]
+
+＠B：Amazones CEO
+你们是我们Amazones.com首次外包业务的合作对象。[r]我会将你们的名字写入我们主页合作企业名单上。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 0]
+[branch lblNotGirl2 IsGirl false]
+[label lblGirl2]
+[charaFadein D 0.1 1]
+[branch lblIsGirlConf2]
+[label lblNotGirl2]
+[charaFadein D 0.1 0,-90]
+[label lblIsGirlConf2]
+
+＠达·芬奇
+然后呢，我们具体要以什么样的形式工作？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠B：Amazones CEO
+呵呵呵……不用担心。[r]需要在意的只有我们双方是否能……
+[k]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth C 1]
+[charaDepth B 2]
+[charaFadeout B 0.2]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[charaEffect C bit_talk_41]
+[se ad186]
+
+＠C：Amazones CEO
+达成双赢关系！
+[k]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth C 2]
+[charaEffectDestroy C]
+[charaFadeout C 0.2]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠B：Amazones CEO
+的可能性吧？[r]没问题啦。
+[k]
+
+[charaFace B 12]
+
+＠B：Amazones CEO
+外包公司与我们是同生共死的命运共同体，[r]甚至可以说我们已经是家人或战友了。
+[k]
+
+＠B：Amazones CEO
+你们的劳动环境当然也应该配合我们[r]Amazones.com引以为傲的高[#觉悟:力量]工作形式才行。
+[k]
+
+[charaFace B 1]
+
+＠B：Amazones CEO
+我自信能为各位员工提供安心、安全、快乐，[r]且能让大家找到工作价值的极致环境。真棒。
+[k]
+
+[charaFace B 11]
+
+＠B：Amazones CEO
+让我想想。[r]现在的话[line 3]
+[k]
+
+＠B：Amazones CEO
+反正已经没人在用了，[r]就把这里当做我们Amazones.com的新分店吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[bgmStop BGM_EVENT_2 2.0]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠刑部姬
+原来如此……………………
+[k]
+
+[charaFace A 8]
+
+＠刑部姬
+慢着！？
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

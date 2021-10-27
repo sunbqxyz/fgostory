@@ -1,0 +1,289 @@
+
+＄94-01-56-05-1-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[scene 20822]
+
+[charaSet A 98001000 1 玛修]
+[charaSet B 5016001 1 杰罗尼莫]
+[charaSet C 6005001 1 杰克]
+[charaSet D 5004001 1 童谣]
+[charaSet E 7028000 1 班扬]
+[charaSet F 1018002 1 阿蒂拉]
+[charaSet G 1018002 1 阿蒂拉（剪影）]
+[charaFilter G silhouette 00000080]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk E]
+[charaScale E 2.2]
+[charaPut E 0,760]
+[charaFace E 5]
+[charaFadein E 0.1]
+
+[fowardEffect bit_talk_13]
+[charaShake E 0.05 3 3 0.5]
+[flashin once 0.2 0.1 FFFFFF80 00000000]
+[se bac10]
+[wt 0.5]
+[seStop bac10 1.0]
+[wait fowardEffect bit_talk_13]
+
+[se ad32]
+[fowardEffect bit_talk_14]
+[charaShake E 0.05 3 3 0.4]
+[flashin once 0.2 0.1 FFFFFF80 0000000]
+[wait fowardEffect bit_talk_14]
+
+[wipeout rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+[charaFadeout E 0]
+[wipein rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.4 1]
+
+＠玛修
+不行[line 3]明明就差一点了[line 3]！
+[k]
+
+？1：班扬的巨大化无法停止……！
+
+？！
+
+
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[charaEffect C bit_talk_06]
+
+＠杰克
+啊……身体……！
+[k]
+
+[charaPut C 1200,1200]
+[charaFadeout C 0.1]
+[charaEffectStop C]
+
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[charaEffect B bit_talk_06]
+
+＠杰罗尼莫
+原来如此……班扬通过扩展世界及巨大化，[r]最终我们将无法被班扬所认识……！
+[k]
+
+[charaPut B 1200,1200]
+
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[charaEffect A bit_talk_06]
+
+＠玛修
+就像我们无法认识到我们体表的细菌一样……
+[k]
+
+[charaPut A 1200,1200]
+
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 5]
+[charaPut B 1]
+
+＠杰罗尼莫
+而在这个世界里，无法被认知的东西，是不存在的！[r]御主，再这样下去[line 3]！
+[k]
+
+？1：一定要想办法把圣杯[line 3]！
+
+？！
+
+＠F：？？？
+……我本打算旁观。但既然对方是[r]为自身巨大哀叹的存在，那我也不能保持沉默了。
+[k]
+
+＠F：？？？
+[line 3]我来助你一臂之力，迦勒底的御主。
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.6 1]
+[wait wipe]
+[charaPut B 1200,1200]
+[charaFadeout B 0]
+[charaEffectStop B]
+[wipein leftToRight 0.6 1]
+[wait wipe]
+
+？1：阿蒂拉[line 3]！？
+？2：这次是什么角色！？
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[wt 0.7]
+[bgm BGM_EVENT_4 0.1]
+
+[charaTalk off]
+[charaDepth F 1]
+[charaDepth G 2]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein G 0.7 1]
+[wt 1.0]
+[charaFadein F 0.1 1]
+[charaFadeout G 2.0]
+[wt 2.0]
+[charaTalk on]
+
+＠阿蒂拉
+我是阿蒂拉。除此以外谁都不是，[r]但也不是你们所认识的那个阿蒂拉。
+[k]
+
+＠阿蒂拉
+……只不过，我听到了声音。[r]听到了大家想拯救那少女的声音。
+[k]
+
+＠阿蒂拉
+将那个少女逼入绝境的是坏文明。[r]绝不可能是什么好文明。
+[k]
+
+[charaFace F 4]
+
+＠阿蒂拉
+哪怕付出1个牺牲才能让100亿存活[r]是基于这世界冷酷的系统。
+[k]
+
+＠阿蒂拉
+哪怕继续发展下去会对旧世界发动攻击，[r]会让你们的未来面临更为危险的抉择[line 3]
+[k]
+
+[charaFace F 2]
+
+＠阿蒂拉
+即便如此，唯有不断抵抗，[r]才能发现美好的文明！
+[k]
+
+＠阿蒂拉
+拉起我的手吧，迦勒底的御主！[r]与我缔结契约，这一刻，请赐予我魔力[line 3]！
+[k]
+
+？1：明白了！　玛修，支援！
+
+？！
+
+[charaFadeout F 0.1]
+
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaPut A 1]
+
+＠玛修
+是！[r]我会用我的宝具维持前辈的认识到极限的那刻！
+[k]
+
+[charaPut A 1200,1200]
+[charaFadeout A 0.1]
+[charaEffectStop A]
+
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[wt 0.2]
+
+[se ad51]
+[wt 0.4]
+
+[se ad61]
+[flashin once 0.7 0.4 F80606FF F8060600]
+[seStop ad61 1.0]
+
+[shake 0.05 2 2 0]
+[se ad14]
+[seVolume ad14 0 0.7]
+＠阿蒂拉
+确认连接。[r][#火神现象:Mars Effect]，超负荷使用。
+[k]
+
+＠阿蒂拉
+[line 3]游星之纹章，复刻。[r]巨大的巨神可不止你一个人。
+[k]
+
+[se ad39]
+[charaEffect F bit_talk_36]
+[charaFace F 2]
+
+＠阿蒂拉
+此乃觉醒之刻，开拓之梦！[r]『[#泪之星，军神之剑:Teardrop Photon Ray]』！
+[k]
+
+[charaEffectStop F bit_talk_36]
+[seStop ad14 1.0]
+
+[messageOff]
+[wt 0.2]
+[se ad276]
+[shakeStop]
+[shake 0.05 7 7 7.0]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[charaFadeout F 0.1]
+[charaTalk off]
+[charaScale E 2.3]
+[charaPut E 0,800]
+[charaFace E 4]
+[charaFadein E 0]
+[wt 0.7]
+[fadeout white 2.0]
+[flashOff]
+[wait fade]
+[charaFadeout E 0.1]
+[scene 10001]
+[shakeStop]
+[fadein white 2.0]
+[seStop ad276 3.0]
+[wait fade]
+
+[effect bit_talk_20]
+[se bas2]
+
+[wt 1.5]
+
+？1：那是，圣杯[line 3]！
+？！
+
+[fadeout white 1.0]
+[wait fade]
+[effectStop bit_talk_20]
+[wait effect bit_talk_20]
+[scene 10001]
+[fadein white 0.1]
+[wait fade]
+
+[bgmStop BGM_EVENT_4 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

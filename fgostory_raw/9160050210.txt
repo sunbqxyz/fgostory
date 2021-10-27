@@ -1,0 +1,741 @@
+
+＄91-60-05-02-1-0
+
+[soundStopAll]
+
+
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 6005001 1 杰克]
+[charaSet C 9002001 1 天草四郎]
+[charaSet D 98006200 1 敌人1]
+
+[charaSet F 8001000 1 dummy特效1]
+[charaSet G 8001000 1 dummy特效2]
+[charaSet H 8001000 1 通讯特效]
+[imageSet I cut128_text 1]
+[imageSet J 37101 1]
+
+[charaScale J 1.01]
+[charaFilter J silhouette e4e4e4FF]
+
+[charaDepth B 1]
+[charaDepth J 5]
+[charaDepth F 9]
+
+
+[scene 10000]
+[cameraMove 0 0,0 1.01]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1]
+
+
+
+[charaFadein I 1.4 -20,-200]
+
+[wait touch]
+
+[fadeout black 1.2]
+[wait fade]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[scene 10902]
+[cameraFilter gray]
+
+[fadein black 1.2]
+[wait fade]
+
+＠
+繁荣的时代到来。
+[k]
+
+＠
+第二次工业革命。[r]伟大的英国称霸世界。
+[k]
+
+＠
+如坏掉录音机一样循环不断的技术革新。[r]金钱在世界上不停流通不断膨胀。
+[k]
+
+＠
+富裕之人、骄傲之人、贪婪之人、[r]堕落之人、掠夺之人、嘲讽之人[line 3]
+[k]
+
+＠
+黑暗时代到来了。
+[k]
+
+＠
+弱者成了食物，[r][#结构:系统]半自动地生产贫穷。
+[k]
+
+＠
+人们接连死去。[r]男人死去女人死去孩子死去老人死去。
+[k]
+
+＠
+而最后，只有富人活了下来。[r]活下来，笑到了最后。
+[k]
+
+＠
+[#笑容:Smile]。
+[k]
+
+＠
+总是能笑容满面。[r]度过幸福的人生。
+[k]
+
+＠
+然而这些少女们却拒绝这人类习以为常的思路。
+[k]
+
+＠
+[#笑容:Smile]。
+[k]
+
+＠
+[line 3]但愿责怪、惩罚、赎罪之类的向我们涌来。
+[k]
+
+＠
+话说，那边的你。
+[k]
+
+＠
+[#你其实早就已经发现]，[r][#她的精神已经不正常了吧]？
+[k]
+
+？1：……！
+？！
+
+
+[messageOff]
+[se ad240]
+[fowardEffect bit_talk_35]
+[wt 1.8]
+
+[se ad144]
+[cameraMove 0.3 0,10 1.01]
+[wt 0.6]
+
+[fadeout black 0.8]
+[wait fade]
+
+[scene 10000]
+[wt 0.8]
+
+[se ade103]
+[seVolume ade103 0 0.7]
+
+[fadein black 0.8]
+[wait fade]
+[wt 0.6]
+
+＠C：？？？
+请振作一点。[r]这里有手帕。请用这个呼吸。
+[k]
+
+[messageOff]
+[wipeout openEye 1.0 1.0]
+[wait wipe]
+
+[scene 10902]
+[cameraFilter normal]
+
+[seStop ade103 1.0]
+
+[wipein openEye 1.0 1.0]
+[wait wipe]
+
+[se ad7]
+[cameraMove 0.3 0,0 1.01]
+[wt 0.6]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.6]
+
+？1：这里是……？
+
+＠C：？？？
+看来这里是伦敦呢。[r]我的名字是天草四郎，认得出来吗？
+[k]
+
+[charaFace C 1]
+
+＠天草四郎
+哎呀，能认出来。[r]这非常好。
+[k]
+
+？2：天草四郎……？
+
+＠天草四郎
+看来出了些麻烦事。[r]这里……好像是伦敦。
+[k]
+
+？！
+
+[charaFace C 4]
+
+＠天草四郎
+好，既然御主平安苏醒了，[r]我本想立刻返回迦勒底……
+[k]
+
+＠天草四郎
+但看来我正在被[#有些事非做不可]的感觉所驱使。
+[k]
+
+[charaFace C 0]
+
+＠天草四郎
+……整件事的原因应该就藏在这里的某处。[r]御主，你能回想起什么吗？
+[k]
+
+？1：这么说来，我记得……
+？！
+
+
+[messageOff]
+[wipeout circleIn 1.4 1.0]
+[bgmStop BGM_EVENT_5 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[scene 11112]
+[pictureFrame cut063_cinema]
+[wt 0.3]
+
+[wipein circleIn 1.4 1.0]
+[wait wipe]
+[wt 0.6]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-50]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠杰克
+嘿！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+[wt 0.2]
+
+[se bac6]
+[fowardEffect bit_talk_ichimon01wh 0,-50]
+[charaShake D 0.03 2 3 0.3]
+[wt 0.6]
+
+[se ad42]
+[charaSpecialEffect D enemyErasure 0,-50 1.2]
+[wt 0.4]
+
+[wait charaSpecialEffect D]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_3 0.9]
+[wt 1.2]
+
+[fowardEffectDestroy bit_talk_ichimon01wh]
+
+[charaPut H 0,0]
+[charaEffect H bit_talk_10_MiddleLevel]
+[wt 0.2]
+
+[se ad13]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+[wt 0.2]
+
+＠玛修
+辛苦了，杰克小姐。[bgm BGM_EVENT_2 0.1][r]战斗数据测算结束。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-50]
+
+＠杰克
+哎～，已经结束了？
+[k]
+
+[charaFace B 2]
+
+＠杰克
+真无聊～！[r]我们还想继续啦～！
+[k]
+
+[charaPut H 0,0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 0,-50]
+
+＠玛修
+呃……如果能再积攒一些数据的话，[r]确实能帮上很多忙。
+[k]
+
+[charaFace A 0]
+
+＠玛修
+御主意见如何？
+[k]
+
+？1：没问题啦。
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠杰克
+太棒了。[r]那我们换个地方吧！
+[k]
+
+？2：真的还能继续吗？
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-50]
+
+＠杰克
+真的啦。
+[k]
+
+
+[charaPut H 0,0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 0,-50]
+
+＠玛修
+那请稍微等一下。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠杰克
+啊，顺便换个地方吧，换个地方！
+[k]
+
+？！
+
+[charaPut H 0,0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 0,-50]
+
+[se ad172]
+
+＠玛修
+明白了。[wt 1.0][seStop ad172 0.2][se ad15][charaFace A 1][r]那请从这里进行选择。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠杰克
+唔，哪里比较好呢……
+[k]
+
+＠杰克
+唔，唔，唔。[wt 0.4][charaFace B 0][r]……咦？
+[k]
+
+＠杰克
+新宿……是哪里？
+[k]
+
+[charaPut H 0,0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠玛修
+新宿位于日本这一国家的首都东京，[r]是东京的一个区域。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠杰克
+那就选这里吧。[r]我们隐约觉得这里会很好玩。
+[k]
+
+[charaPut H 0,0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠玛修
+明白了。[r]那就变更地点吧。
+[k]
+
+[messageOff]
+[se ad172]
+[wt 0.3]
+
+＠玛修
+同时配合地点一并进行敌方调整[line 3][seStop ad172 0.4]
+[k]
+
+[messageOff]
+[wipeout cutSide 0.4 1.0]
+[se ad15]
+[wait wipe]
+
+
+[scene 38300]
+[wt 0.6]
+
+[se ad1]
+[wipein cutSide 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+＠玛修
+设定成这样。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠杰克
+噢……噢噢。
+[k]
+
+[charaFace B 1]
+
+＠杰克
+真好，真不错，[r]我们感觉很喜欢这里！
+[k]
+
+[charaPut H 0,0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠玛修
+是……是吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠杰克
+[#杂乱]、肮脏。[r]不是很棒吗？
+[k]
+
+[bgmStop BGM_EVENT_2 0.9]
+
+＠杰克
+肯定会死很多人，[r]有很多[#可怜]的人，
+[k]
+
+＠杰克
+还有，还有[line 3]
+[k]
+
+？1：……杰克？
+？！
+
+[charaFace B 0]
+
+＠杰克
+……[r]……咦？
+[k]
+
+[charaFace B 4]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠杰克
+咦？　咦咦？[r]奇怪，真奇怪。
+[k]
+
+＠杰克
+我们，没见过，这座城市。[r]明明没见过。
+[k]
+
+＠杰克
+却为何……会如此，[r]了解呢？
+[k]
+
+[charaPut H 0,0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 0,-50]
+
+＠玛修
+杰克小姐……！？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-50]
+[charaShake B 0.06 2 2 0.6]
+[wt 0.6]
+
+？1：冷静点！
+
+[charaShakeStop B]
+
+＠杰克
+不行。[r]不行不行不行。
+[k]
+
+＠杰克
+现在的我们……不一样，[r]是不一样的……！
+[k]
+
+？2：没事吧？　发生了什么？
+
+[charaShakeStop B]
+＠杰克
+没……什么，没什么啦。[r]不用担心，[#妈妈:御主]！
+[k]
+
+＠杰克
+……唔，唔，咕……唔唔……！
+[k]
+
+？！
+
+[messageOff]
+[se ad626]
+[seVolume ad626 0 0.2]
+[charaEffect F bit_talk_restraint 0,-50]
+[wt 1.4]
+
+＠杰克
+……不行。
+[k]
+
+＠杰克
+……得回去，得回去，[r]得赶紧回去才行……！
+[k]
+
+[seStop ad626 0.3]
+[charaPut H 0,0]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+
+＠玛修
+高密度魔力反应……！？[r]请离开那里，御主！
+[k]
+
+＠玛修
+御主，赶快……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut F 0,-150]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-50]
+
+＠杰克
+[line 3]呜！
+[k]
+
+[messageOff]
+[se ade153]
+[wt 0.2]
+
+
+
+[charaTalk off]
+[bgmStop BGM_EVENT_5 1.0]
+[charaEffect G bit_talk_snowstorm_03 0,-50]
+[charaMove F 0,-250 1.3]
+[wt 1.3]
+
+[se ad574]
+[seVolume ad574 0 0.9]
+[charaFadeout B 0.8]
+[charaFadein J 0.8 0,-200]
+[wt 0.2]
+
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_restraint]
+[wt 0.2]
+
+[se ade310]
+[wt 0.4]
+
+？1：杰克！？
+？！
+
+
+[messageOff]
+[fadeout black 1.2]
+[wait fade]
+
+[scene 10000]
+
+[charaFadeout J 0.1]
+[charaFadeout B 0.1]
+[charaPut G 1200,1200]
+
+[pictureFrame]
+[wt 0.1]
+
+[fadein black 0.4]
+[wait fade]
+
+[wipeout circleOut 0.4 1.0]
+[wait wipe]
+
+[scene 10902]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+[wipein circleIn 1.2 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠天草四郎
+原来如此。[r]然后当您回过神来时，发现已经在这里了。
+[k]
+
+＠天草四郎
+……我想起来了。[r]我本来也打算使用战斗模拟装置。
+[k]
+
+＠天草四郎
+就在我们交替前，模拟装置发生了异常，[r]回过神来时就已经在这里了。
+[k]
+
+[charaFace C 0]
+
+＠天草四郎
+根据您的说法，[r]这件事的起因很有可能和杰克有关。
+[k]
+
+[bgmStop BGM_EVENT_5 0.9]
+＠天草四郎
+那我们先去找人吧。[r]对了，在此之前[line 3]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+[se ad25]
+[wt 1.5]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠天草四郎
+先从消灭他们开始做起吧。[bgm BGM_EVENT_3 0.1][r]模拟战斗，开始。
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

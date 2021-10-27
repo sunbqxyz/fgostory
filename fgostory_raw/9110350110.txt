@@ -1,0 +1,982 @@
+
+
+
+＄91-10-35-01-1-0
+
+[soundStopAll]
+[charaSet A 3002001 1 迪尔姆德]
+[charaSet B 98001000 1 玛修]
+[charaSet C 7013001 1 清姬]
+[charaSet D 1032000 1 柳生但马守]
+[charaSet E 98111500 1 通讯用杂音]
+[charaSet F 5009001 1 达·芬奇]
+[charaSet G 98025100 1 谜之剑鬼]
+[charaSet H 98025100 1 剪影用dummy]
+[charaFilter H silhouette 00000080]
+
+[scene 60300]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.4 1]
+
+＠清姬
+杀人魔[line 3]吗？[bgm BGM_EVENT_5 0.1]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+＠柳生但马守
+没错。
+[k]
+
+＠柳生但马守
+尽管我不清楚模拟装置的原理是什么样的，[r]但最近里面似乎出现了杀人魔。
+[k]
+
+＠柳生但马守
+万幸的是这件事发生在主公不在的时候，[r]但对方实力颇为不凡……
+[k]
+
+＠柳生但马守
+所以还请您转告主公，[r]今后务必要小心。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠清姬
+啊，好。
+[k]
+
+[charaFace C 4]
+＠清姬
+但是，请问但马大人。[r]为什么要告诉我这些呢……？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.7]
+[charaFace D 1]
+[wt 1.25]
+[charaFace D 0]
+＠柳生但马守
+那我先告辞了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠清姬
+啊，啊，那个……！[r]对不起，请留步，但马大人！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+
+[charaFace C 4]
+[charaFadein C 0.1 2]
+
+＠柳生但马守
+有什么事吗？
+[k]
+
+[charaFace C 5]
+＠清姬
+呃，那个……
+[k]
+
+＠清姬
+您说的杀人魔……
+[k]
+
+＠清姬
+并不是模拟装置设定出现的敌人NPC[line 3]
+[k]
+
+＠清姬
+我这么理解没错吧？
+[k]
+
+＠柳生但马守
+正是。
+[k]
+
+＠柳生但马守
+那无疑是散发剑气之辈。[r]非同寻常，没错……
+[k]
+
+＠柳生但马守
+这件事发生在昨天。
+[k]
+
+＠柳生但马守
+正当我在模拟装置中独自享受散步时光[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.0]
+[wipeout circleIn 2.0 1]
+[wait wipe]
+[effect bit_sepia01]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+
+[scene 46100]
+[wt 0.7]
+[wipein circleIn 2.0 1]
+
+[wt 0.4]
+[se ad173]
+[seVolume ad173 0 0.1]
+[wait wipe]
+[wt 0.7]
+[seVolume ad173 0.3 1.0]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+[seStop ad173 0.1]
+[wt 0.9]
+
+＠柳生但马守
+…………什么人。
+[k]
+
+＠柳生但马守
+现出真面目来。[r]这气息，并不是NPC之流。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.4]
+
+[se ad596]
+[charaTalk off]
+
+[charaFace H 0]
+[charaFilter H silhouette 00000080]
+[charaFadein H 0.7 1]
+[wt 1.0]
+
+[charaDepth G 0]
+[charaDepth H 1]
+[charaFace H 0]
+
+[wt 1.0]
+
+[charaFace G 0]
+[charaFadein G 0 1]
+[wt 0.1]
+
+[charaFadeout H 0.7]
+
+[bgm BGM_EVENT_3 0.1]
+[wt 0.8]
+
+[charaTalk on]
+
+＠谜之剑鬼
+[line 20]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠柳生但马守
+无话可说吗。[r]还是说，天生就没有长嘴巴呢。
+[k]
+
+[messageOff]
+[charaFace D 4]
+[wt 1.0]
+
+[charaFace D 0]
+＠柳生但马守
+尽管吾习得的剑术乃御留流。[r]并非可随便向他人展示之技……
+[k]
+
+＠柳生但马守
+但当今世上已无德川将军家，[r]如今的我也已是亡故的但马之影，那么，
+[k]
+
+＠柳生但马守
+执着御留流云云未免有些无聊。[r]连不拔剑就解决问题的想法也已淡化[line 3]
+[k]
+
+[messageOff]
+[charaFace D 5]
+[se ad446]
+[charaMove D 0,-5 0.5]
+[wait charaMove]
+[seVolume ad446 0 0]
+[wt 0.3]
+[seVolume ad446 0 1.0]
+＠柳生但马守
+[line 3]因此，只要你敢靠近，我就会斩杀。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[wt 0.5]
+
+[se ad302]
+[charaEffect G bit_talk_charge_red]
+[wt 1.5]
+[charaEffectStop G bit_talk_charge_red]
+[wt 1.5]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0,-5]
+＠柳生但马守
+[line 8]唔。
+[k]
+
+[messageOff]
+[se ad442]
+[wt 0.8]
+
+[se ad73]
+[charaMove D -40,0 0.2]
+[charaFadeout D 0.1]
+[wt 0.3]
+
+[effect bit_talk_kengekiall02]
+[wt 0.1]
+[se ad33]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 1.0]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.05 3 3 0.4]
+[wt 0.4]
+
+
+[charaFace D 0]
+[se ad446]
+[charaFadein D 0.5 -80,0]
+[charaMove D 1 0.2]
+
+[wt 0.5]
+
+[charaTalk D]
+
+＠柳生但马守
+哦。
+[k]
+
+＠柳生但马守
+你……
+[k]
+
+＠柳生但马守
+这剑术相当有意思。[r]并非人类之技啊。
+[k]
+
+＠柳生但马守
+是化生、妖物、怪异类吗。
+[k]
+
+＠柳生但马守
+不[line 3]啊啊，是[#化为诅咒的念想]那类吗。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.1]
+
+[se ad171]
+[charaEffect G bit_talk_h_slash01]
+[wt 0.2]
+
+[se ad618]
+
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[fowardEffect bit_talk_14]
+[wt 0.1]
+[charaShake G 0.05 2 2 1.0]
+[wt 1.5]
+
+[se ad73]
+[charaMove G 0,10 0.4]
+[charaMoveScale G 1.2 0.4]
+[charaFadeout G 0.1]
+[wt 0.3]
+
+[charaMoveScale G 1.0 0.1]
+[se ad170]
+[effect bit_talk_h_slash01]
+[se ad32]
+[effect bit_talk_v_slash02]
+[wt 1.0]
+
+[charaTalk off]
+
+[se ad51]
+[charaFadein G 0.1 -400,0]
+
+[se ad442]
+[charaFace D 5]
+[charaFadein D 0.1 400,0]
+
+[wt 1.2]
+[charaMove G 100,0 0.2]
+[charaMove D 100,0 0.2]
+
+[se ad471]
+
+[messageOff]
+[fadeout white 0.1]
+[bgmStop BGM_EVENT_3 2.0]
+[wait fade]
+
+[charaTalk on]
+
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+
+[effectStop bit_sepia01]
+
+[wt 2.0]
+
+[scene 60300]
+
+[fadein white 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.4 1]
+
+＠柳生但马守
+[line 3]但是，胜负尚未决出，那家伙就离去了。
+[k]
+
+＠柳生但马守
+看来是对我的剑有何不满吧。
+[k]
+
+[charaFace D 0]
+＠柳生但马守
+那是……没错……[r]从其招数中能看出来，区区一刀是无法令其满足的。
+[k]
+
+＠柳生但马守
+就像是在寻求二刀使。
+[k]
+
+＠柳生但马守
+和被称作英灵的我们非常相似，[r]属于死者的念想类吧。不过何其悲哀，
+[k]
+
+＠柳生但马守
+那已经迷失了自我。[r]因此，才会攻击持剑的我吧。
+[k]
+
+＠柳生但马守
+[line 3]最终，沦落为模拟装置中的杀人魔。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠清姬
+……就像是……与英灵相似的失控数据吧。[r]我明白了！
+[k]
+
+[charaFace C 0]
+＠清姬
+我立刻转告御主！[r]也会转告达·芬奇与玛修小姐！
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_11 1.5]
+[wait fade]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 1.5]
+
+[scene 10200]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠清姬
+…………以上就是但马大人说的内容！
+[k]
+
+？1：原来如此。
+
+[charaFace C 1]
+＠清姬
+嗯！　御主！
+[k]
+
+？2：他怎么不直接来对我说啦[line 3]
+
+[charaFace C 4]
+＠清姬
+好像是因为他不熟悉模拟装置……
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.4 1]
+＠玛修
+也就是说，呃……[r]模拟装置出现了Bug……？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+＠达·芬奇
+尽管定期扫描没发现任何问题，[r]但毕竟是投影英灵灵基的模拟装置。
+[k]
+
+＠达·芬奇
+假如细微数据碎片积蓄在注册表内，[r]确实可能引起一些问题。
+[k]
+
+＠达·芬奇
+而且，柳生但马守是超一流的剑士吧？[r]既然他认为对方和普通敌方NPC不一样，
+[k]
+
+＠达·芬奇
+那肯定是发生了什么事。
+[k]
+
+[messageOff]
+[charaFace F 4]
+[wt 1.5]
+
+[charaFace F 1]
+＠达·芬奇
+嗯。没错！[r]看来只能对系统进行紧急大诊断啦！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ade74]
+[wt 1.0]
+[seStop ade74 0.5]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠迪尔姆德
+[line 3]御主。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠清姬
+哎呀，迪尔姆德大人。[r]怎么了？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠迪尔姆德
+请恕在下无礼。[r]请将我也带去模拟装置。
+[k]
+
+＠迪尔姆德
+在下对模拟装置中的杀人魔……[r]对那个行为不端的人有些线索。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_70 1.5]
+
+[wait fade]
+[charaFadeout A 0.1]
+
+[charaSet B 99502600 1 玛修]
+[charaSet C 1098157100 1 清姬]
+
+[wt 2.0]
+
+[scene 20602]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_71 0.1]
+
+[wt 0.5]
+[charaPut E 1]
+
+[se ad13]
+[charaEffect E bit_talk_10_LowLevel]
+[wt 0.2]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.3]
+＠玛修
+前辈。迪尔姆德先生。[r]模拟装置毫无问题地顺利启动了。
+[k]
+
+＠玛修
+我们会实时对整个系统进行运转监控，[r]如果发现了什么异常，请随时告诉我。
+[k]
+
+＠玛修
+现在，该区域没有配置任何NPC。[r]应该是[#不会发生任何事]的空间。
+[k]
+
+？1：明白了。
+？2：谢谢你，玛修。
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut E 0,-2000]
+[wt 0.3]
+
+[se ade74]
+[wt 1.0]
+[seStop ade74 0.5]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠迪尔姆德
+……如果我的预感没有错。
+[k]
+
+＠迪尔姆德
+那个杀人魔应该很快就会出现。[r]哪怕是在这被设定为无人的区域内。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut E 1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠玛修
+现在，前辈和迪尔姆德先生所在的区域[r]与外部做了连接隔断措施啊[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut E 0,-2000]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠迪尔姆德
+即便如此，也一样。
+[k]
+
+＠迪尔姆德
+那个彷徨的杀人魔恐怕是在寻找。[r]所以他是不会放过这个好机会的。
+[k]
+
+？1：……寻找？
+？2：寻找什么？
+
+？！
+[charaFace A 5]
+＠迪尔姆德
+[line 6]寻找我。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut E 1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+[wt 1.0]
+[charaFace B 7]
+＠玛修
+这究竟……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut E 0,-2000]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠迪尔姆德
+但马阁下没有来见御主这件事，[r]究竟意味着什么。
+[k]
+
+＠迪尔姆德
+我已经明白了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut E 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠玛修
+……[r]……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut E 0,-2000]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠迪尔姆德
+杀人魔的真面目，没错。[r]无疑是一种诅咒。
+[k]
+
+＠迪尔姆德
+是化为诅咒的某种感情。[r]没想到居然会通过模拟装置追踪缘分，
+[k]
+
+[charaFace A 0]
+＠迪尔姆德
+从而寻找我。[r][line 3]清姬阁下。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaPut E 1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠清姬
+是！　我在这里！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut E 0,-2000]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠迪尔姆德
+刚才清姬阁下的肩上，留着些许……[r]诅咒残渣的气味。
+[k]
+
+＠迪尔姆德
+这是因为您与遭遇了杀人魔的但马守谈话的缘故。
+[k]
+
+＠迪尔姆德
+但马阁下一定是想让这种缘分远离御主吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut E 1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+！？
+[k]
+
+＠玛修
+管制室内的自动检查没有检测到任何东西……怎么会……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠清姬
+这么说来……[r]肩膀确实有点重呢……
+[k]
+
+[charaFace C 0]
+＠清姬
+啊，为了以防万一，稍后我去把那个诅咒烧掉吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut E 0,-2000]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠迪尔姆德
+名不虚传。
+[k]
+
+＠迪尔姆德
+但马阁下也一定是觉得凭您的能力，[r]应该能轻易应对诅咒，才会这么做的吧。
+[k]
+
+
+？1：原来如此，确实。
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut E 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠清姬
+[FFFFFF]？？[-]
+[k]
+
+？2：说起诅咒……就会想起清姬……
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut E 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠清姬
+御主？
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut E 0,-2000]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠迪尔姆德
+那个诅咒[line 3]
+[k]
+
+＠迪尔姆德
+不，那份感情是冲着我来的。
+[k]
+
+＠迪尔姆德
+令人怀念的达南的气味。[r]不会错。杀人魔在寻找我。
+[k]
+
+[charaFace A 4]
+＠迪尔姆德
+我本想不给大家添麻烦，[r]自己悄悄处理这件事，但是[line 3]
+[k]
+
+[charaFace A 0]
+＠迪尔姆德
+[line 3]现在的我是侍奉御主之身。
+[k]
+
+＠迪尔姆德
+在没有命令的情况下是不能用枪的。[r]因此……
+[k]
+
+？1：才会自己主动说出来吧。
+？2：谢谢你，迪尔姆德。
+
+？！
+
+＠迪尔姆德
+愧不敢当。
+[k]
+
+[bgmStop BGM_EVENT_71 0.5]
+
+[charaFace A 5]
+＠迪尔姆德
+请小心，御主。[r]这气味。[line3]那个杀人魔正在靠近！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut E 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠玛修
+这里的观测情报没有发现任何……
+[k]
+
+
+[messageOff]
+[charaFace B 6]
+[wt 0.5]
+[bgm BGM_EVENT_3 0.1]
+[charaFace B 2]
+＠玛修
+不！　前方检测到敌对反应！[r]这是……！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut E 0,-2000]
+[wt 0.3]
+
+[se ad596]
+[charaTalk off]
+
+[charaFace H 0]
+[charaFilter H silhouette 00000080]
+[charaFadein H 0.7 1]
+[wt 1.0]
+
+[charaDepth G 0]
+[charaDepth H 1]
+[charaFace H 0]
+
+[wt 1.0]
+
+[charaFace G 0]
+[charaFadein G 0 1]
+[wt 0.1]
+
+[charaFadeout H 0.7]
+[wt 0.8]
+
+[charaTalk on]
+
+＠谜之剑鬼
+[line 20]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut E 1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠清姬
+哎呀，多么凶险不祥！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaPut E 1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠玛修
+是异常的NPC数据！[r]这里跳出了不可能的数值！　前辈！
+[k]
+
+？1：总之先试试看。
+？2：不要太乱来！
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut E 0,-2000]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠迪尔姆德
+哪怕在假想空间！[r]我也不会让你碰御主一根汗毛！
+[k]
+
+[charaFace A 2]
+＠迪尔姆德
+迪尔姆德·奥迪那！　出击！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

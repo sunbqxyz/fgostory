@@ -1,0 +1,1143 @@
+
+
+＄94-04-19-11-1-0
+
+[soundStopAll]
+
+
+[charaSet A 1098185800 1 S伊什塔尔_通信]
+[charaSet B 1098185300 1 优雅的绅士]
+[charaSet C 1098185400 1 优雅的绅士_鲜血淋漓]
+[charaSet D 1032002 1 ？？？]
+[charaSet E 1033000 1 太空神阴流门徒]
+[charaSet F 11009001 1 S伊什塔尔]
+[charaSet G 2037000 1 简]
+[charaSet H 6018002 1 X]
+[charaSet I 7032002 1 机械校长]
+[charaSet J 5009000 1 特效用]
+
+[charaFilter D silhouette 00000080]
+[charaFilter E silhouette 00000080]
+
+[scene 44500]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[wt 0.5]
+
+[charaEffect J bit_talk_10_space]
+[se ad13]
+[wt 0.2]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.3]
+
+＠A：S伊什塔尔
+抱歉～，[r]你在那边吗，[%1]～？
+[k]
+
+＠A：S伊什塔尔
+我这边正好忙得脱不开手～！[r]能帮我去家里把太空炉灶的火关掉吗～？
+[k]
+
+？1：明～白～啦。
+
+？！
+
+[messageOff]
+[wipeout rightToLeft 1.2 1.0]
+[bgm BGM_EVENT_2 1.2 0.4]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaEffectStop J bit_talk_10_space]
+[charaPut J 1200,1200]
+[scene 49910]
+[wt 1.5]
+[wipein leftToRight 1.2 1.0]
+[bgm BGM_EVENT_2 1.2 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+？1：炉灶……炉灶……？
+？2：太空炉灶是什么？
+
+？！
+
+[cameraMove 1.5 -32,0 1.1]
+[wt 1.5]
+[cameraMove 1.5 16,0 1.1]
+[wt 1.5]
+[cameraHome 1.0]
+[wt 1.3]
+
+[se ade377]
+[wt 0.3]
+[seStop ade377 0.1]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[se ad1]
+[fowardEffect bit_talk_security]
+[scene 49911 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+＠优雅的绅士
+对不起，伊什塔尔。[r]原本应该是值得庆祝的日子，但我必须先向你道歉。
+[k]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaFace B 6]
+
+＠优雅的绅士
+既然你看到了这个，[r]说明我已经不在那里了吧。
+[k]
+
+＠优雅的绅士
+我一直向你保证，[r]说“到你14岁生日那天，有个秘密要告诉你”。
+[k]
+
+＠优雅的绅士
+迎接这一天的到来是我的责任，[r]我也非常期待，但看来没能实现呢。
+[k]
+
+？1：这是……
+？2：S伊什塔尔父亲的影像……？
+
+？！
+
+[charaFace B 10]
+
+＠优雅的绅士
+没时间了。那个男人正在逐渐逼近这里。
+[k]
+
+＠优雅的绅士
+他是援助我研究资金的人，[r]但他的帮助果然不是因为对学术上的兴趣。
+[k]
+
+[charaFace B 4]
+
+＠优雅的绅士
+我的女儿啊。希望你不要产生黑历史[r]或是青春期常见的妄想，认真仔细地听我说。
+[k]
+
+[charaFace B 10]
+
+＠优雅的绅士
+我一直向你保密的事，就是我并不是你的父亲。[r]还有，你也不是普通的从者。
+[k]
+
+＠优雅的绅士
+所谓的神灵系从者也不过是杜撰出来的伪证。
+[k]
+
+＠优雅的绅士
+你深信自己是个人类，[r]但你是个货真价实的女神啊……神啊……啊……
+[k]
+
+＠优雅的绅士
+那男人的目的就是你，伊什塔尔。[r]不，是被分成善与恶的女神半身。
+[k]
+
+＠优雅的绅士
+希望你能离开这颗行星，隐姓埋名，[r]小心低调地生活。
+[k]
+
+[charaFace B 1]
+
+＠优雅的绅士
+另外[line 3][r]祝你14岁生日快乐，凛。
+[k]
+
+[charaFace B 0]
+
+＠优雅的绅士
+你一直想要的马安娜号从今天起将属于你。
+[k]
+
+＠优雅的绅士
+正如你冷静下来时对我宣言的那样，[r]成为一名学者去游历宇宙吧。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 0.3]
+[se ad438]
+[seVolume ad438 0 0.0]
+[wt 0.1]
+[effect bit_talk_noise_gr]
+[scene 10000]
+[charaFadeout B 0]
+[wt 0.1]
+[seVolume ad438 0.2 0.5]
+[wt 0.5]
+[scene 49911 0.1]
+[seStop ad438 0.1]
+[effectStop bit_talk_noise_gr]
+
+[wt 0.5]
+
+[charaTalk depthOn]
+
+[bgm BGM_EVENT_5 0.1]
+
+[se ad459]
+[wt 0.9]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[seStop ad459 0.1]
+
+[wt 0.5]
+[cueSe Battle bac304]
+[wt 0.7]
+
+[effect bit_talk_h_slash01]
+[cueSe Battle bac508]
+[wt 0.2]
+[fadeout white 0.1]
+[wait fade]
+[charaFadeout D 0]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0 1]
+[charaShake C 0.05 3 1 0.4]
+[fadein white 0.1]
+[wait fade]
+
+＠C：优雅的绅士
+咕啊[line 3]！？[r]呜……果然是你，ZONGJU……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠？？？
+这和说好的不一样，时臣教授。
+[k]
+
+＠？？？
+将你在古代神殿发现的全部都交给我们……[r]这是我向你融资的条件才对。
+[k]
+
+＠？？？
+而你不仅隐瞒了那个，[r]甚至还像那样浪费了我们的时间。
+[k]
+
+＠？？？
+违反契约必须以死来偿还。[r][line 3]女神的遗产将由我们收下。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：优雅的绅士
+呜……那可不是你们想象中的东西……
+[k]
+
+＠C：优雅的绅士
+不能让那个觉醒……[r]否则一切都将回归原始啊……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠？？？
+荒谬。[#让她觉醒到现在的你有什么资格这么说]。
+[k]
+
+＠？？？
+没什么。倘若传说是真实的，也未尝不是一件乐事。[r]是[#文艺:摇滚]。
+[k]
+
+＠？？？
+吾等太空神阴流一万年的夙愿。[r]抵达无之境地[line 3]
+[k]
+
+＠？？？
+倘若无法到达，还不如让宇宙回归无。[r]或许在那片荒野上还能发现些什么。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：优雅的绅士
+丑陋……居然用这种手段掩盖自己力量不足……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠？？？
+说得太对了。[r]这世间反正都在推卸自身的丑陋。
+[k]
+
+[messageOff]
+[cueSe Battle bac509]
+[charaPut J 1]
+[charaEffect J bit_talk_v_slash01]
+[wt 0.3]
+[fadeout white 0.1]
+[wait fade]
+[charaEffectDestroy J]
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth J 2]
+[charaFadeout D 0]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0 1]
+[fadein white 0.1]
+[wait fade]
+[charaPut J -256,0]
+[charaEffect J bit_talk_blood_splash]
+[se ad464]
+[wt 1.6]
+
+[charaFace C 2]
+[charaMove C 0,-25 0.4]
+[charaFadeout C 0.4]
+[wt 0.6]
+[se ad144]
+[wt 1.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠太空神阴流门徒
+总统帅。在隐藏地下室发现了那个的[#原型:物件]。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠？？？
+小心仔细地搬运。[r]那位大人迟早会成为超越我的吾等总统帅。
+[k]
+
+＠？？？
+……哼。必须实现才行。[r]因为人之剑是无法劈开宇宙的。
+[k]
+
+[messageOff]
+[se ad452]
+[seStop ad452 2.2]
+[charaFadeout D 0.4]
+[wt 0.4]
+
+[wt 2.0]
+
+[bgmStop BGM_EVENT_5 0.3]
+
+[se ad438]
+[seVolume ad438 0 0.0]
+[wt 0.1]
+[effect bit_talk_noise_gr]
+[scene 10000 0.1]
+[wt 0.1]
+[seVolume ad438 0.2 0.5]
+[wt 1.0]
+[scene 49910 0.1]
+[seStop ad438 0.1]
+[effectStop bit_talk_noise_gr]
+[fowardEffectStop bit_talk_security]
+
+[wt 1.0]
+
+？1：………………
+？2：（我好像发现了不得了的东西……）
+
+？！
+
+[wt 0.7]
+
+[messageOff]
+[wipeout leftToRight 1.2 1.0]
+[wait wipe]
+[scene 44500]
+[charaSet B 3028000 1 豹人]
+[wt 1.5]
+[wipein rightToLeft 1.2 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠S伊什塔尔
+欢迎回来～☆[r]抱歉让你做这种跑腿的事☆
+[k]
+
+＠S伊什塔尔
+多亏了你，[r]马安娜号的新引擎更换工作也完美收工了。
+[k]
+
+＠S伊什塔尔
+这样一来我们就能随时出发追赶太空神阴流的要塞了……
+[k]
+
+[charaFace F 1]
+
+＠S伊什塔尔
+但在此之前，先得把本地的问题解决才行！
+[k]
+
+＠S伊什塔尔
+你愿意奉陪吧，[r][%1]？
+[k]
+
+？1：啊……嗯。当然。
+
+[charaFace F 11]
+
+＠S伊什塔尔
+啊。那毫无气势的回答是什么意思？[r]有什么关系嘛，反正很快就能搞定。
+[k]
+
+[charaFace F 12]
+
+＠S伊什塔尔
+啊，还是说你对贵族千金小姐学院的印象幻灭了～？[r]抱歉啦，我不是什么孱弱的大小姐～♡
+[k]
+
+？2：（尴尬地移开了视线。）
+
+[charaFace F 31]
+
+＠S伊什塔尔
+怎……怎么了，身体不舒服？[r]没事吧？　难受的话一定要去休息哦！？
+[k]
+
+？！
+
+？1：…………呃。
+
+？！
+
+[charaFace F 0]
+
+＠S伊什塔尔
+唔？　什么？
+[k]
+
+？1：S伊什塔尔的爸爸是个什么样的人？
+
+？！
+
+[charaFace F 23]
+
+＠S伊什塔尔
+爸爸是指我父亲吗？[r]怎么突然问这个问题。
+[k]
+
+[charaFace F 0]
+
+＠S伊什塔尔
+啊，对哦。[r]你去过好几次我家后，开始产生兴趣了？
+[k]
+
+[charaFace F 1]
+
+＠S伊什塔尔
+父亲的名字叫时臣，[r]好像在学会被人评价说是个古怪的教授。
+[k]
+
+＠S伊什塔尔
+最喜欢实地考察，[r]人生有一半时间都在探索遗迹，
+[k]
+
+＠S伊什塔尔
+对自己和他人都很严格，实力主义者，[r]无论对谁都很冷酷无情……
+[k]
+
+[charaFace F 30]
+
+＠S伊什塔尔
+但实际上，本性是个老好人，[r]是个比起利益更爱调和的单身绅士。
+[k]
+
+？1：单身难道意味着……
+？2：……S伊什塔尔是养子？
+
+？！
+
+[messageOff]
+[charaFace F 3]
+[wt 0.9]
+[charaFace F 19]
+[wt 1.2]
+[charaFace F 18]
+
+＠S伊什塔尔
+不。我是时臣教授的独生女。[r]无论何时何地，无论发生了什么。
+[k]
+
+[messageOff]
+[wt 0.7]
+[charaFace F 12]
+
+＠S伊什塔尔
+呃，怎么，难不成你想向我父亲打个招呼～？
+[k]
+
+＠S伊什塔尔
+比方说，[r][&请把伊什塔尔小姐交给我:请让伊什塔尔成为我的特别保镖]之类的～？
+[k]
+
+？1：只……只是作为太空朋友有些介意而已！
+
+[charaFace F 6]
+
+＠S伊什塔尔
+哎哟，真遗憾～☆
+[k]
+
+[charaFace F 0]
+
+＠S伊什塔尔
+不过如果是你的话，[r]一定会得到父亲的喜爱吧。
+[k]
+
+＠S伊什塔尔
+虽说已经没有这个机会了。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ade354]
+[seVolume ade354 0 0.6]
+[wt 0.8]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠简
+啊哟？　怎么，在聊时臣？[r]我也想参加～！　啊，但是，
+[k]
+
+[bgmStop BGM_EVENT_2 0.7]
+
+[charaFace G 1]
+
+＠简
+X发来消息了，这件事一会儿再说吧！[r]她说『找到校长室了』！
+[k]
+
+？2：哎。我可以这样向他问候吗？
+
+[charaFace F 9]
+
+＠S伊什塔尔
+哎，恢复冷静了！？[r]喂，你的眼神很认真啊，是演技吧！？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ade354]
+[seVolume ade354 0 0.6]
+[wt 0.8]
+
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠简
+咦？　你们俩都在这里休息啊。[r]还四目相对，好～可疑～☆
+[k]
+
+[charaFace G 1]
+
+[bgmStop BGM_EVENT_2 0.7]
+
+＠简
+但抱歉啦，X发来消息了～！[r]她说『找到校长室了』！
+[k]
+
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout G 0]
+[scene 10000]
+[fadeout black 0.1]
+[wait fade]
+[wipeout leftToRight 0.1 1.0]
+[wait wipe]
+[scene 84000]
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_EVENT_72 0.1]
+[cameraMove 0.1 0,0 1.01]
+[effect bit_talk_41]
+[se ad55]
+[se ad59]
+[cueSe Battle bac343]
+[shake 0.05 4 4 0]
+[wipein rightToLeft 0.3 1.0]
+[wait wipe]
+
+[wt 2.0]
+
+[fadeout black 0.3]
+[wait fade]
+[effectDestroy]
+[shakeStop]
+[cameraHome 0.1]
+[seVolume ad55 0.5 0.2]
+[seVolume ad59 0.5 0.2]
+[cueSeVolume bac343 0.5 0.2]
+[wt 0.1]
+[fadein black 0.3]
+[wait fade]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠X
+真是个过分的学院。
+[k]
+
+＠X
+配合我佯动的[%1]应该已经发现了，
+[k]
+
+＠X
+这里若无其事地将教师全都替换成了[r]拟态成从者的机械啦！
+[k]
+
+？1：啊……
+？2：所以才说『没有心』啊！
+
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 29]
+[charaFadein F 0.1 1]
+
+＠S伊什塔尔
+原来如此。不愧是豹老师，[r]应该是凭着本能发现的吧。
+[k]
+
+[charaFace F 0]
+
+＠S伊什塔尔
+她当真就是我们学院最后的堡垒了。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠简
+那现在的校长老师也是机器人？[r]比方说巴贝奇大师之类的。
+[k]
+
+＠简
+“根据　我　的　计算　可以　被称为　Saber的存在[r][f small]  [f -]只能是　天生的　Saber职阶”
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠X
+巴贝奇可不会说这种话哦！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠S伊什塔尔
+总之快去校长室吧！[r]直接质问那家伙应该就能解决了吧！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[seVolume ad55 0.3 1.0]
+[seVolume ad59 0.3 1.0]
+[cueSeVolume bac343 0.3 1.0]
+[wt 0.3]
+
+[fadeout black 0.7]
+[wait fade]
+[wt 1.0]
+[scene 74200]
+[bgmStop BGM_EVENT_72 0.3]
+[seStop ad55 0.3]
+[seStop ad59 0.3]
+[cueSeStop bac343 0.5 0.3]
+[se ad38]
+[shake 0.05 5 2 0.5]
+[fadein black 0.2]
+[wait fade]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_90 0.1]
+
+？1：好厉害的校长室！
+？2：原来如此，没有心啊。
+
+？！
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠S伊什塔尔
+嗨，你好，校长老师！[r]我能和您聊聊教育方针吗！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.3]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.4 1]
+[wt 0.4]
+
+＠机械校长
+明白了。尽管不在今天的日程预定内，[r]但吾已预测到了汝等的到来。
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaDepth H 2]
+[charaDepth F 3]
+
+[charaTalk off]
+[charaFace G 6]
+[charaFadein G 0.1 -320,0]
+[charaFace F 31]
+[charaFadein F 0.1 1]
+[charaFace H 3]
+[charaFadein H 0.1 320,0]
+[wt 2.2]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+[wt 0.7]
+
+？1：这真的是机械呀！
+
+？！
+
+＠机械校长
+学生ID：XXXX-XXXXX-XXXX，伊什塔尔。[r]长期缺席中，大量未提交作业。
+[k]
+
+＠机械校长
+是个问题儿童，但仍然注册在校。[r]可承认为本学院的学生。早上好。
+[k]
+
+＠机械校长
+未查询到唤汝前来的记录。[r]阐述此次无预约来访的用意。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 28]
+[charaFadein F 0.1 1]
+
+＠S伊什塔尔
+嗯。[r]我是为了向校长老师提问而来的。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠机械校长
+允许提问。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 28]
+[charaFadein F 0.1 1]
+
+＠S伊什塔尔
+为什么要突然改变这所学院的传统？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+＠机械校长
+推测汝定义的传统，
+[k]
+
+＠机械校长
+乃是『一切交由年轻气盛放纵地运动』，
+[k]
+
+＠机械校长
+与『靠[#武力:运动]宣泄多余的精力』这种习惯。
+[k]
+
+＠机械校长
+认定此乃不合理的恶习，因而排除。[r]过去的教师对此表示同情，因而解雇。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 28]
+[charaFadein F 0.1 1]
+
+＠S伊什塔尔
+那么，以夏季课程为名义，[r]被带走的后辈们究竟在哪儿？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠机械校长
+学生们是赞同了本学院的教育方针，才会入学。
+[k]
+
+＠机械校长
+然而一部分学生在入学后，拒绝履行同意契约。[r]不服从指定的[#着装要求:剑士徽章]。
+[k]
+
+＠机械校长
+故认定这些学生需要可进行短暂精神教育的场所，[r]因而强行带他们前往修炼场了。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠S伊什塔尔
+也就是说到底在哪儿！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠机械校长
+吾等的修炼场为数众多，[r]回答需要一定时间。
+[k]
+
+[bgmStop BGM_EVENT_90 1.0]
+
+＠机械校长
+另外，关于修炼场内的教育方针，[r]全部交由慈善组织『太空☆神阴流』处理。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠X
+这果然也是太空神阴流的勾当啊！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 28]
+[charaFadein F 0.1 1]
+
+＠S伊什塔尔
+那还有最后一个问题。[r]你也是太空神阴流的成员吗？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠机械校长
+正是。我乃太空神阴流六剑客之一，[r]也是教育的齿轮。
+[k]
+
+[charaFace I 0]
+
+＠机械校长
+拔山盖世，奇怪剑项羽是也。
+[k]
+
+[charaFace I 2]
+
+＠项羽
+学生ID：XXXX-XXXXX-XXXX，伊什塔尔。[r]吾已收到抓捕并护送汝之同行者的命令。
+[k]
+
+＠项羽
+作为本学院的负责人，[r]吾希望汝立刻交出汝之同行者。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠S伊什塔尔
+这我同样不能提交哦，校长老师。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠项羽
+很遗憾，学生ID：XXXX-XXXXX-XXXX，伊什塔尔。[r]由于汝不服从校长命令，被予以无限期停学处分。
+[k]
+
+＠项羽
+追加提交作业：反省文章20页　同行者（『触媒』）
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠S伊什塔尔
+求之不得。[r]尽管暴揍校长老师一顿再退学稍微些丢人！
+[k]
+
+[bgmStop BGM_EVENT_5 0.5]
+
+[charaTalk B]
+
+＠？？？
+慢着！！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace G 6]
+[charaFadein G 0.1 -320,0]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+[charaFace H 6]
+[charaFadein H 0.1 320,0]
+
+＠S伊什塔尔＆简＆X
+！？
+[k]
+
+？1：这……这声音是！
+
+？！
+
+[charaFadeout F 0.1]
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠豹人
+我全都听到了！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠S伊什塔尔
+豹……老师！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠项羽
+汝乃职员ID……
+[k]
+
+[bgmStop BGM_EVENT_62 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠豹人
+[f medium][messageShake 0.05 7 5 0.3]闭嘴，你这效率厨金属校长！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠项羽
+效率厨。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠豹人
+假如是严格的教育方针，[r]或许我还能认可，觉得“这也可以”，
+[k]
+
+＠豹人
+但我坚决不同意把自己组里重要的小崽子们[r]交给其他人进行斯巴达式教育！
+[k]
+
+＠豹人
+哪怕给出三颗星全场一致同意，[r]我豹师也决不允许！
+[k]
+
+[charaFace B 0]
+
+＠豹人
+换言之，我想说的是[line 3]
+[k]
+
+[charaFace B 2]
+
+＠豹人
+你这家伙不是人！[r]暴打KILL！！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

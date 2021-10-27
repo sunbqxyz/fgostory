@@ -1,0 +1,440 @@
+
+
+＄03-00-02-16-2-0
+
+
+[soundStopAll]
+
+
+[charaSet A 8001400 1 玛修]
+[charaSet B 98002000 1 芙芙]
+[charaSet C 2031001 1 拿破仑]
+[charaSet D 1033002 1 齐格鲁德]
+[charaSet E 1098124510 1 达·芬奇]
+[charaSet F 3012001 1 布伦希尔德]
+
+[charaSet H 98115000 1 特效用]
+
+[scene 51600]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[se ad629]
+[se ad553]
+[seVolume ad553 0 0.4]
+
+[fadein black 1.0]
+[shake 0.05 0 2 0]
+[wait fade]
+
+
+[wt 1.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 60703]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+[seStop ad553 1.0]
+[seStop ad629 1.0]
+[wt 0.5]
+
+[bgm BGM_EVENT_82 0.1]
+
+＠穆尼尔
+Shadow Border全力疾驰！[r]小心咬到舌头，英灵以外的人都系上安全带！
+[k]
+
+＠戈尔德鲁夫
+噢噢噢噢噢噢噢噢，在摇晃，在摇晃！[r]我不要求安全驾驶但不准你翻车哦嫩煎肉片！
+[k]
+
+[shakeStop]
+
+＠穆尼尔
+谁是嫩煎肉片啊，我是穆尼尔！[r]可恶，我都快习惯握操纵杆了！
+[k]
+
+＠穆尼尔
+……慢着，[r]话说福尔摩斯去哪儿了！
+[k]
+
+＠达·芬奇
+嘴上念叨着自己说得太多了，然后回回复舱了。[r]那个名侦探只是为了确认和交涉才起床的嘛！
+[k]
+
+＠斯卡哈·斯卡蒂
+真是个让人没想法的男人。[r]刚才那般侃侃而谈，实际上却遍体鳞伤吗。
+[k]
+
+＠斯卡哈·斯卡蒂
+所谓的回复舱是在那边吧？[r]就让那家伙感受一下我赐予的治愈卢恩的光悦吧。
+[k]
+
+＠斯卡哈·斯卡蒂
+芙蕾雅、奥特琳德。[r]跟我来。
+[k]
+
+＠志度内
+真是的，都说了多少遍了，我叫伊莉雅。[r]不过我还是会跟你去啦。
+[k]
+
+＠奥特琳德
+明白了。
+[k]
+
+＠穆尼尔
+哎，女神大人亲自看护啊[line 3]
+[k]
+
+＠穆尼尔
+哎呀哎呀福尔摩斯真是太逞强了！[r]不过，潜航艇上尽是些那样的人啦！
+[k]
+
+＠戈尔德鲁夫
+哼。实力不足也就没办法了，[r]毕竟他不像我那么优秀啊。
+[k]
+
+＠戈尔德鲁夫
+然后我要断言我和你们是不同的，各位。[r]我可不会去冒险，绝对不会。
+[k]
+
+＠戈尔德鲁夫
+最高负责人必须始终冷静地掌握情况、配置人员，[r]让组织能正确而顺畅地运作[wt 0.5][messageShake 0.05 3 2 1.0]噗噫～。
+[k]
+
+[messageShakeStop]
+
+＠穆尼尔
+啊真是的！　我都说了小心咬到舌头了！[r][%1]，那边情况怎么样！？
+[k]
+
+？1：（呼叫拿破仑。）
+？2：（确认车顶的状况。）
+
+？！
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1]
+[bgmStop BGM_EVENT_82 0.7]
+[wait wipe]
+
+
+[scene 60603]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.5 1]
+[se ad207]
+[seVolume ad207 0 0.5]
+[wait wipe]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠拿破仑
+哎呀，是[%1]啊？[r]我这边！　当然是！！
+[k]
+
+[charaFace C 2]
+[messageOff]
+[charaMoveReturn C 6,0 0.4]
+[flashin once 0.2 0.8 FFFFFF80 FFFFFF00]
+[cueSe Battle bac423]
+[wt 1.5]
+[charaFace C 5]
+
+＠拿破仑
+根据各自的判断分别自行迎击中啦！[r]我想你们应该也掌握情况了，敌人正接连不断地攻过来！
+[k]
+
+[messageOff]
+[seStop ad207 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+[se ad201]
+[wt 0.4]
+[seStop ad201 0.3]
+[wt 0.5]
+
+[cueSe Battle bac428]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+尽管和巨人种的遭遇率并没有什么变化，[r]但是飞来的种子数量正在增加！
+[k]
+
+[charaFace A 15]
+
+＠玛修
+不，不只是从空中飞来的个体，[r]还有在地上奔跑，攀附在车体上的个体！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+[wt 0.3]
+＠达·芬奇
+尽管一次次的联络已经频繁到令我感到抱歉了，[r]但你们还是耐心点听我说！
+[k]
+
+[charaFace E 25]
+
+＠达·芬奇
+这次是更为乱来的情况。[r]疑似苏鲁特的庞大魔力体[#正在南下]！
+[k]
+
+＠达·芬奇
+原本位于原瑞典北部的反应[r]正在急速南下。也就是说！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠拿破仑
+……来迎击我们了吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠齐格鲁德
+不。他不可能把我们视作值得迎击的大敌。[r]换言之……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠布伦希尔德
+他打算接近[#什么]吧。[r]不在火焰领域中的某个事物……
+[k]
+
+＠布伦希尔德
+比如说，位于原维纳恩湖上的[line 3]
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+[wt 0.8]
+[charaFace C 2]
+[wt 0.4]
+
+＠拿破仑
+村落吗！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠达·芬奇
+Bingo！
+[k]
+
+＠达·芬奇
+苏鲁特的路线就是前往那里！[r]朝着村落所在的原维纳恩湖笔直南下！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠拿破仑
+和空想树的连接已经完成了吗。[r]可恶，这样我们也只能调头往南了啊！
+[k]
+
+[charaFace C 2]
+
+＠拿破仑
+现在可不是抱怨麻烦的时候！[r]只要最终能接近他，嗯，就已经谢天谢地了！
+[k]
+
+[charaFace C 4]
+
+＠拿破仑
+毕竟我想避免[line 3]
+[k]
+
+＠拿破仑
+因为实在追不上而不得不[r]连发[#超长距离炮击]的情况啊。
+[k]
+
+[charaFace C 6]
+
+＠拿破仑
+就当是天赐良机吧！[r]呼！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+
+＠达·芬奇
+不过理由还不明确……[r]炎之剑那么强大，明明想挥向哪里都可以。
+[k]
+
+＠达·芬奇
+为什么还要刻意前往村落呢？[r]唔～，是想让我们目睹村落被烧毁的景象吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠拿破仑
+让我们目睹也没什么意义吧。
+[k]
+
+＠拿破仑
+正如齐格鲁德所言，[r]他对英灵和神明都没什么兴趣哦。
+[k]
+
+＠拿破仑
+让我想想。说不定我倒是[r]有一点线索[line 3]但现在说太不识趣了！
+[k]
+
+
+[charaFace C 1]
+＠拿破仑
+毕竟这对我们[#宏伟军团:Grande Armee]来说是个天赐良机！[r]我差不多也该动真格了！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠芙芙
+芙芙芙，芙！[r]嘎呜！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠拿破仑
+哈哈！　你在替我加油吗！[r]不过嘛，虽说我确实一直是拿出全力作战的……
+[k]
+
+[charaFace C 10]
+
+＠拿破仑
+……但也是时候了。[r]必须真真正正地动真格了。
+[k]
+
+[charaFace C 3]
+
+＠拿破仑
+而且我还有王牌！[r]不，在打正主之前用这个开路未免太浪费了！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad201]
+[wt 0.4]
+[seStop ad201 0.3]
+[wt 0.5]
+[cueSe Battle bac428]
+[shake 0.05 3 2 1.5]
+[wt 2.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+种子和巨人种涌过来了！[r]攀附在车上的个体中，也有几只快爬上来了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠拿破仑
+果然来了！[r]该怎么办呢，新兵！
+[k]
+
+？1：迎击！
+？2：边冲散它们边硬闯过去！
+
+？！
+
+[charaFace C 5]
+
+＠拿破仑
+好嘞！　[#明白了: D'accord] ！[r]神人混编[#宏伟军团:Grande Armee][line 3]维持速度，硬闯过去！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

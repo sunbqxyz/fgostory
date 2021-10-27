@@ -1,0 +1,325 @@
+
+＄94-02-75-16-1-1
+
+[soundStopAll]
+
+[charaSet A 98100400 1 玛修]
+[charaSet B 7031000 1 贞德·Alter]
+[charaSet C 1098156400 1 梅芙]
+[charaSet D 25003000 1 ？？？]
+[charaSet E 6034000 1 牛若丸]
+[charaSet F 1001000 1 特效用dummy]
+[charaSet G 1001000 1 特效用dummy]
+
+[charaScale F 0.6]
+
+[scene 63700]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+[se ade39]
+[wt 2.0]
+
+＠D：XX
+上午工作时间　超时。[r]处刑　中断。
+[k]
+
+[messageOff]
+[messageOff]
+[se ad270]
+[charaShake D 0.02 2 2 1]
+[wt 0.7]
+[se ade157]
+[charaPut G 0,-200]
+[charaEffect G bit_talk_40]
+[wt 0.4]
+
+[charaPut F 0,0]
+[charaEffect F bit_talk_43l]
+[charaMove D 0,150 2.0]
+[charaFadeout D 2.0]
+[wt 1.0]
+
+[charaEffectDestroy G bit_talk_40]
+[charaEffectDestroy F bit_talk_43l]
+
+[seStop ade157 0.4]
+[wipeout rectangleStripUpToDown 0.3 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[charaPut F 1200,1200]
+[charaPut G 1200,1200]
+[scene 28300]
+[wt 0.1]
+
+[wipein rectangleStripDownToUp 0.2 1.0]
+[wait wipe]
+
+[effect bit_talk_arrow01br]
+[wt 0.2]
+[se ade90]
+[wt 1.3]
+[seStop ade90 1.5]
+[wt 0.2]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 63700]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1 1.0]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠玛修
+……Foreigner反应再次丢失……[r]以那种速度在空中飞行的话，根本无法追踪……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠梅芙
+啊～，已经溜了！[r]那家伙到底是什么啦。玛修，给我说清楚。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠玛修
+啊，好。[r]其实……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+＠梅芙
+唔。Foreigner啊……
+[k]
+
+[bgm BGM_EVENT_28 0.1]
+
+[charaFace C 0]
+＠梅芙
+算了，反正和我没什么关系，[r]无关紧要！
+[k]
+
+＠梅芙
+活动了下身体，舒畅多了，[r]回酒店的泳池边休息一会儿吧！
+[k]
+
+[charaFace C 8]
+＠梅芙
+再见啦，[%1]。
+[k]
+
+＠梅芙
+如果成了我美貌的俘虏，[r]我倒是可以允许你成为我社团的一员哦☆
+[k]
+
+[messageOff]
+[se ad173]
+[seStop ad173 1.0]
+[charaFadeout C 0.4]
+[wt 1.4]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠牛若丸
+谁要加入蜂蜜女的社团啦。[r]我说得没错吧，主人！
+[k]
+
+？1：毕竟我没有自己的相机……
+？2：等我找黑胡子氏商量一下再说……
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaSet F 98002000 1 芙芙]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠玛修
+尽管梅芙小姐完全符合Alter小姐要求的条件……
+[k]
+
+[charaFace A 0]
+＠玛修
+但没办法，我们先回一趟酒店吧。[wt 0.6][charaFace A 5][r]万……万不得已时由我自己上吧！
+[k]
+
+[charaFace A 3]
+＠玛修
+尽管和Alter小姐要求的形象差距甚远……
+[k]
+
+[charaFace A 16]
+＠玛修
+但我会努力将自己塑造成傲慢且[r]自信满满地认为自己是世界上最美的人！
+[k]
+
+？1：玛修是世界上最可爱的啦！
+
+[charaFace A 3]
+
+＠玛修
+[messageShake 0.01 4 4 0.4]
+[charaShake A 0.03 4 4 0.4]
+[f large]嘎！
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.4]
+[charaMove A 0,-30 0.4]
+[wt 0.4]
+[se ad144]
+[seVolume ad144 0 0.4]
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠芙芙
+芙。芙？[r]（特别意译：你想杀了玛修吗？）
+[k]
+
+
+？2：我很期待哦！
+
+[charaFace A 5]
+＠玛修
+玛……玛玛修·基列莱特……[r]定将不负您的期待！
+[k]
+
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_28 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaFadeout A 0.1]
+
+[scene 63410]
+[wt 1.0]
+
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠贞德·Alter
+唔？[r]啊，回来了啊。
+[k]
+
+＠贞德·Alter
+那结果如[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 0.2]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠玛修
+我我我我是世界上最美貌的淑女！
+[k]
+
+[charaFace A 16]
+[charaMoveReturn A 0,20 0.2]
+＠玛修
+[f large][#Je t'aime:我爱你]！
+[k]
+
+[messageOff]
+[wt 1.2]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_2 0.1 1.0]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠贞德·Alter
+啊，是吗。[r]你是不是中了什么奇怪的诅咒？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠玛修
+前辈，我被击坠了[line 3]！[r]呜哇[line 3]！
+[k]
+
+[messageShakeStop]
+[charaShakeStop A]
+[messageOff]
+
+？1：没事了，没事了。
+？2：你已经很努力了。
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠贞德·Alter
+这是在干吗啦！？
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[soundStopAll]
+[end]

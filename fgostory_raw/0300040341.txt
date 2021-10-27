@@ -1,0 +1,554 @@
+
+＄03-00-04-03-4-1
+
+[soundStopAll]
+
+[charaSet A 8001400 1 装甲·玛修_有风镜]
+[charaSet B 8001410 1 玛修]
+[charaSet C 98115300 1 福尔摩斯]
+[charaSet D 1019001 1 罗摩]
+[charaSet E 1098166900 1 阿贾伊]
+[charaSet F 3004001 1 迦尔纳]
+[charaSet G 1098166700 1 爱夏]
+[charaSet H 1098166800 1 维翰]
+[charaSet I 98002000 1 芙芙]
+[charaSet J 5009000 1 特效用dummy]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[scene 75004]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠A：玛修
+呼、呼……
+[k]
+
+＠A：玛修
+周围的敌对反应[line 3]消失。
+[k]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaFace A 13]
+
+＠A：玛修
+我们……成功了。无论是被称作迦利的疑似魔物的存在，[r]还是后来出现的白色兽群……总算都解决掉了。
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth A 0]
+[charaDepth B 1]
+
+[charaTalk off]
+
+[wt 1.0]
+[se ade18]
+[seVolume ade18 0.0 0.5]
+[wt 0.5]
+[seStop ade18 0.8]
+[wt 1.0]
+
+[se ade57]
+[seStop ade57 0.14]
+[wt 0.1]
+
+[charaFace B 13]
+[charaFadein B 0.3 1]
+[wt 0.3]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk on]
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+看来认为那些野兽与迦利是敌对关系比较合理吧。[r]毕竟它们会相互攻击。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠罗摩
+唔嗯。而且那些野兽也没有破坏城镇。[r]可以说多亏有它们，才阻止了迦利的损害吧[line 3]
+[k]
+
+＠罗摩
+但既然同样会袭击吾等，[r]那也只能解决掉了。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[bgmStop BGM_EVENT_77 0.5]
+[wt 1.5]
+
+[se ad525]
+[wt 0.6]
+[seStop ad525 0.1]
+
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠阿贾伊
+…………
+[k]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaFace E 0]
+
+＠阿贾伊
+这是……你们干的吗。[r]竟然做出这种事。
+[k]
+
+？1：啊，爸爸。
+
+[charaFace E 5]
+
+＠阿贾伊
+我可不是你的老爸。
+[k]
+
+？2：阿贾伊先生，您平安无事吗。太好了。
+
+＠阿贾伊
+……哼。
+[k]
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠迦尔纳
+我们有事想问。[r]它们究竟是什么？
+[k]
+
+[messageOff]
+[fadeout black 0.7]
+[bgm BGM_EVENT_81 0.7 0.4]
+[wait fade]
+[charaFadeout F 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 -100,-50]
+[wt 0.1]
+[wipeFilter cinema 0.5 0]
+[fadein black 0.7]
+[wait fade]
+
+＠阿贾伊
+（他们不祈祷，我本以为他们是[r]　山那头那些家伙的同伴……）
+[k]
+
+＠阿贾伊
+（竟然真的只是不知迦利为何物的[#呆瓜:猫头鹰]吗？）
+[k]
+
+＠阿贾伊
+（…………反正无关紧要。[r]　总之，我可不想惹麻烦。）
+[k]
+
+[messageOff]
+[fadeout black 0.7]
+[wait fade]
+[charaPut E 1]
+[wipeOff]
+[charaSet A 1098167000 1 普拉喀什]
+[fadein black 0.7]
+[bgm BGM_EVENT_81 0.7 1.0]
+[wait fade]
+
+[charaFace E 5]
+
+＠阿贾伊
+我有必要告诉你们吗？[r]听我说一句。赶紧[line 3]
+[k]
+
+[charaFadeout E 0.1]
+
+[se ad7]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+
+＠爱夏
+[&大哥哥:大姐姐]！　没事吧！？[r]……哎，真的平安无事到吓我一跳呢！？
+[k]
+
+[charaFace G 1]
+
+＠爱夏
+太好了……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaDepth G 10]
+[charaTalk B]
+[charaFace G 1]
+[charaFadein G 0.1 0]
+[charaFace B 1]
+[charaFadein B 0.1 2]
+
+＠玛修
+爱夏小姐也平安无事啊。[r]看起来也没受伤，真是太好了。
+[k]
+
+[charaFace G 4]
+
+＠爱夏
+嗯。但是，维翰它稍微……
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.4 1]
+[wt 1.2]
+
+＠维翰
+呜[se ad314][seVolume ad314 0 0.5]，呜。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠玛修
+这包扎的痕迹……[r]它的脚瘸了呢。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace H 1]
+[charaFadein H 0.1 0]
+[charaFace G 4]
+[charaFadein G 0.1 2]
+
+＠爱夏
+嗯，屋子摇摇晃晃的，它被当时倒下来的架子夹到了。[r]对不起啊，维翰。
+[k]
+
+＠维翰
+呜[se ad314][seVolume ad314 0 0.5]……
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠芙芙
+芙……
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠阿贾伊
+…………
+[k]
+
+[charaFace E 4]
+
+＠阿贾伊
+无法奔跑的狗……还有价值吗，神明啊……
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠？？？
+[charaTalk A]
+这……这究竟是怎么回事！？[r]不只是迦利，连圣兽……也死了！？
+[k]
+
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaSet C 3031001 1 枪兵193]
+[charaSet H 1098167100 1 印度民众_男]
+[charaSet I 1098167200 1 印度民众_女]
+
+[charaFace A 3]
+[charaFadein A 0.4 1]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠玛修
+……您是？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠A：？？？
+没错，我就是这座城镇的镇长，[r]我叫普拉喀什。
+[k]
+
+＠普拉喀什
+你们是旅行者吗？[r]对这惨剧，你们知道些什么吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠罗摩
+唔嗯。因为遭受袭击，所以把它们杀了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠普拉喀什
+……[twt 0.5]……[twt 0.5]……[twt 0.5]……[twt 0.5][charaFace A 3]哈？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠罗摩
+还需要其他说明吗？[r]那就将史诗的撰写者带来吧。
+[k]
+
+＠罗摩
+光顾着倾听余的精彩事迹，却不写成故事未免太可惜了吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠普拉喀什
+噢，噢噢，噢噢噢……
+[k]
+
+＠普拉喀什
+啊啊，你们……你们都干了什么好事啊！[r]竟然将守护我们的[#神之使者]……杀，杀，杀掉了！
+[k]
+
+？1：毕竟遭到了袭击，我们也是被逼无奈。
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠枪兵193
+同意　除此之外　别无他法。[r]而且　我们所杀的　并非只有　其中一方。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛修
+对。我们也与被各位称为迦利的存在战斗了。
+[k]
+
+＠玛修
+我们的行动都是为了保护城镇，还请您理解……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠普拉喀什
+什么，你说的都是些什么话！[r]不行，这肯定不行吧。
+[k]
+
+＠普拉喀什
+这是决不能饶恕的野蛮行径。[r]是违背这世间法则的大逆不道之举！
+[k]
+
+＠普拉喀什
+再说神之使者的圣兽怎可能无缘无故袭击人类嘛！[r]啊啊，太可怕了。
+[k]
+
+＠普拉喀什
+假如触怒了神明，认为整座城镇都放任[r]或煽动这种行为的话，我们就完蛋了……！
+[k]
+
+[charaFace A 5]
+
+＠普拉喀什
+离开这座比丘镇，赶紧出去！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad4]
+[seVolume ad4 0 0.4]
+[wt 2.0]
+[seStop ad4 0.5]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 0]
+[charaFace I 3]
+[charaFadein I 0.1 2]
+
+＠H：镇民
+没错没错！
+[k]
+
+＠H：镇民
+你们这群不虔诚的家伙！[r]看看你们都干了些什么好事啊！
+[k]
+
+＠I：镇民
+还记得吗，就是那个啦。最近传闻中的……[r]会不会降下天罚啊，太可怕了……
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠罗摩
+竟一副要向我们扔石头的样子。[r]该怎么办，御主。
+[k]
+
+？1：……先离开这座城镇吧。
+？2：好，撤退！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠玛修
+是。收集情报固然重要，[r]但在这种情况下应该难以继续了。
+[k]
+
+＠玛修
+我认为应该避免与这里的居民发生无谓的争执。
+[k]
+
+＠玛修
+总之先离开这座城镇，[r]在附近做野营的准备吧……
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgm BGM_EVENT_48 1.5 0.4]
+[wait fade]
+[charaFadeout B 0.1]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 0,-50]
+[wt 1.0]
+[wipeFilter cinema 0.5 0]
+[fadein black 1.0]
+[wait fade]
+
+＠爱夏
+[&大哥哥:大姐姐]们……
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_48 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

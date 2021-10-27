@@ -1,0 +1,87 @@
+
+
+
+＄01-00-07-21-6-1
+
+[soundStopAll]
+[bgm BGM_EVENT_24 0.1]
+[charaSet A 8001002 1 玛修]
+[charaSet B 98003000 1 Dr.罗曼]
+[charaSet C 98002000 1 芙芙]
+
+[scene 35500]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠玛修
+BeastⅡ由墙面剥离！[r]向冥界底部坠落！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr.罗曼
+确认灵基崩溃，11座魔力炉心全都确认达到临界点！
+[k]
+
+[communicationCharaFace 2]
+＠Dr.罗曼
+大家，赶快飞往上空，逃到乌鲁克去！[r]BeastⅡ要爆炸了[line 5]！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠芙芙
+芙，芙[line 3]呜！
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠玛修
+御主，把手给我……！
+[k]
+
+？1：玛修……！
+
+？！
+
+[messageOff]
+[charaShake A 0.05 1 1 0.8]
+[wt 0.8]
+[charaFadeout A 0.2]
+[wt 0.1]
+[se ad215]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_24 2.0]
+[fadeout white 1.5]
+[wait fade]
+[se bac60]
+[wt 1.0]
+[se bac61]
+
+[scene 10001]
+[wt 0.1]
+[fadein white 0.1]
+[wait fade]
+
+[wt 2.0]
+[wt 1.0]
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+[wt 0.4]
+[soundStopAll]
+[end]

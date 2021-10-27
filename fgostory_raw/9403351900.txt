@@ -1,0 +1,282 @@
+
+＄94-03-35-19-0-0
+
+[charaSet A 7008001 1 贝奥武夫]
+[charaSet B 98006000 1 广播语音]
+[charaSet C 98006000 1 敌人]
+[charaSet D 98002000 1 芙芙]
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[scene 20800]
+
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+＠贝奥武夫
+[tVoice ValVoice_700800 0_V010]
+嘿呀！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.5]
+
+[se bac10]
+[effect bit_talk_13]
+[wt 0.1]
+[charaShake C 0.01 2 2 0.5]
+[wt 0.3]
+
+[charaSpecialEffect C enemyErasure]
+[wt 0.5]
+[se ad18]
+[wt 1.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wt 0.5]
+
+＠[51d4ff]广播语音[-]
+[tVoice ValVoice_700800 0_V020]
+[51d4ff]敌人击破。[-][r][51d4ff]全目标讨伐完成。[-][wait tVoice]
+[k]
+
+[charaFadeout C 0.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠贝奥武夫
+[tVoice ValVoice_700800 0_V030]
+嘿，搞定啦。[r]御主，很快就要到开饭时间了吧。[wait tVoice]
+[k]
+
+＠贝奥武夫
+[tVoice ValVoice_700800 0_V040]
+差不多该收工了吧？[wait tVoice]
+[k]
+
+？1：就这么办吧。
+？2：辛苦啦～！
+？！
+
+[charaFace A 1]
+
+＠贝奥武夫
+[tVoice ValVoice_700800 0_V050]
+噢，你也辛苦了。[wait tVoice]
+[k]
+
+？1：这个姑且不论，
+？2：给你巧克力。
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+[charaFace A 0]
+
+＠贝奥武夫
+[tVoice ValVoice_700800 0_V060]
+唔？　这是什么？[r]巧克力？　为什么要送巧克力？[wait tVoice]
+[k]
+
+＠贝奥武夫
+[tVoice ValVoice_700800 0_V070]
+……[r]……[wait tVoice]
+[k]
+
+[charaFace A 2]
+＠贝奥武夫
+[tVoice ValVoice_700800 0_V080]
+啊！[r]是那个啊！　其他人叽叽喳喳闹个不停的那件事！[wait tVoice]
+[k]
+
+＠贝奥武夫
+[tVoice ValVoice_700800 0_V090]
+Bu……Bul……[r]Bullet die（因子弹而死）节吧！[wait tVoice]
+[k]
+
+？1：完全不对。
+？！
+
+[charaFace A 0]
+＠贝奥武夫
+[tVoice ValVoice_700800 0_V100]
+唔，不是啊。[r]那算了，总之巧克力就是巧克力！[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠贝奥武夫
+[tVoice ValVoice_700800 0_V110]
+哈哈哈，我收下了！[wait tVoice]
+[k]
+
+
+[se ad217]
+[seStop ad217 0.5]
+
+＠贝奥武夫
+[tVoice ValVoice_700800 0_V120]
+好甜！[r]这个好甜！　多谢款待！[wait tVoice]
+[k]
+
+＠贝奥武夫
+[tVoice ValVoice_700800 0_V130]
+唔？　不能吃吗？[r]没关系吧？　哈哈哈哈哈，对啦。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠贝奥武夫
+[tVoice ValVoice_700800 0_V140]
+机会难得，我也送你一份礼物吧。[r]让我想想……你在房间里稍微等一会儿！[wait tVoice]
+[k]
+
+[messageOff]
+
+[wipeout leftToRight 1.0 1.0]
+[wait wipe]
+
+[charaFadeout A 0.4]
+
+[wt 1.0]
+
+[scene 10400]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+＠芙芙
+[tVoice ValVoice_700800 0_V150]
+芙……[wait tVoice]
+[k]
+
+？1：肚子好饿……
+？！
+
+＠芙芙
+[tVoice ValVoice_700800 0_V160]
+……！[r]芙，芙，芙！[wait tVoice]
+[k]
+
+[charaFadeout D 0.1]
+[messageOff]
+
+[se ad8]
+[wait se ad8]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠贝奥武夫
+[tVoice ValVoice_700800 0_V170]
+哎哟抱歉抱歉，让你久等了。[r]给！[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+
+？1：烤肉！？
+？！
+
+＠贝奥武夫
+[tVoice ValVoice_700800 0_V180]
+对，装盘是卫宫小哥弄的，[r]但肉是我烤的。[wait tVoice]
+[k]
+
+[wt 0.3]
+
+？1：好好吃！
+
+[charaFace A 1]
+
+＠贝奥武夫
+[tVoice ValVoice_700800 0_V190]
+噢，吃吧吃吧尽情吃吧。[r]这样我猎杀得也有价值了！[wait tVoice]
+[k]
+
+？2：这味道太令人振奋了！
+
+[charaFace A 1]
+
+＠贝奥武夫
+[tVoice ValVoice_700800 0_V200]
+不，我只是烤了肉，[r]酱料是布狄卡大姐做的！[wait tVoice]
+[k]
+
+？！
+
+＠贝奥武夫
+[tVoice ValVoice_700800 0_V210]
+哦，吃相真是痛快。[wait tVoice]
+[k]
+
+？1：话说这是哪个部位？
+？！
+
+
+＠贝奥武夫
+[tVoice ValVoice_700800 0_V220]
+喉咙的部位吧。[r]那些家伙会吐龙息，所以喉咙部分的肉锻炼得最结实最好吃。[wait tVoice]
+[k]
+
+？1：……你刚才……说什么？
+
+？2：……这是……什么的……肉？
+？！
+
+[charaFace A 0]
+＠贝奥武夫
+[tVoice ValVoice_700800 0_V230]
+唔？[wait tVoice]
+[k]
+
+＠贝奥武夫
+[tVoice ValVoice_700800 0_V240]
+龙会吐龙息吧？[r]所以我说它们喉咙部分的肉锻炼得最结实最好吃。[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠贝奥武夫
+[tVoice ValVoice_700800 0_V250]
+你能那么高兴，那我做得也就值啦！[wait tVoice]
+[k]
+
+？1：算了，
+？2：反正很好吃，无所谓啦！
+？！
+
+＠贝奥武夫
+[tVoice ValVoice_700800 0_V260]
+噢～，吃吧吃吧！[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]
+

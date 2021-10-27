@@ -1,0 +1,858 @@
+
+
+
+
+＄94-04-30-07-1-0
+
+[soundStopAll]
+
+[charaSet A 1041002 1 阿斯托尔福]
+[charaSet B 3036001 1 布拉达曼特]
+[charaSet C 2039000 1 南丁格尔·圣诞]
+[charaSet D 5004001 1 童谣]
+[charaSet E 1098120600 1 少女]
+[charaSet F 99502600 1 玛修]
+[charaSet I 1098120900 1 通讯用杂音]
+[charaSet J 1098120900 1 特效用]
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_10_LowLevel]
+
+[charaFilter D silhouette 00000080]
+[charaFilter E silhouette 00000080]
+
+[scene 21803]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+喂喂，布拉亲。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠布拉达曼特
+怎么了，小阿。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 2]
+[charaDepth B 1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 1]
+[charaFadein A 0.1 0]
+[charaFadein B 0.1 2]
+
+＠阿斯托尔福
+我是Saber吧。
+[k]
+
+[charaFace B 4]
+
+＠布拉达曼特
+……是啊。[r]感觉有些难以置信……
+[k]
+
+[charaFace A 2]
+
+＠阿斯托尔福
+太敷衍了！
+[k]
+
+[charaFace A 1]
+
+＠阿斯托尔福
+然后啦，然后啦，[r]既然事已至此，
+[k]
+
+＠阿斯托尔福
+那就算变成圣诞老人也挺好吧！
+[k]
+
+[bgmStop BGM_EVENT_2 0.1]
+[charaFace B 5]
+
+＠布拉达曼特
+哎。
+[k]
+
+＠布拉达曼特
+……慢……慢着。[bgm BGM_EVENT_7 0.1]
+[k]
+
+＠布拉达曼特
+为了成为真正的圣诞老人，[r]必须在圣诞岛和圣诞老人们战斗吧？
+[k]
+
+＠阿斯托尔福
+嗯！
+[k]
+
+＠阿斯托尔福
+但是啦，当我在这里干等时，[r]我不禁想，我不就是圣诞老人吗？
+[k]
+
+[charaFace B 4]
+
+＠布拉达曼特
+啊[line 5]！
+[k]
+
+＠布拉达曼特
+这孩子就是这种死脑筋[line 3]！[r]不行，不行，这绝对不行！
+[k]
+
+＠布拉达曼特
+刚成了Saber就想做圣诞老人什么的，[r]绝对不行！
+[k]
+
+[charaFace A 26]
+
+＠阿斯托尔福
+没关系没关系！
+[k]
+
+＠阿斯托尔福
+Saber和Rider，再加上圣诞老人！[r]这就是我，阿斯托尔福！
+[k]
+
+[charaFace B 5]
+
+＠布拉达曼特
+哇～，太贪得无厌了！
+[k]
+
+[charaFace B 4]
+
+＠布拉达曼特
+我说，小阿。[r]不是有句话叫鱼与熊掌不可兼得吗？
+[k]
+
+＠布拉达曼特
+你这样可不会有什么好结果哦？
+[k]
+
+[charaFace A 16]
+
+＠阿斯托尔福
+为什么啦！
+[k]
+
+＠阿斯托尔福
+我都已经成为Saber了，[r]再追加当个圣诞老人也不会遭报应啦！
+[k]
+
+[charaFace B 2]
+
+＠布拉达曼特
+但现在的小阿一身黑啊！
+[k]
+
+[charaFace A 1]
+
+＠阿斯托尔福
+但头发是粉红的，勉强可以算吧！
+[k]
+
+[charaFace A 2]
+
+＠阿斯托尔福
+而且初代圣诞老人不就是一身黑的嘛！
+[k]
+
+[charaFace B 4]
+
+＠布拉达曼特
+这话说的是没错啦，真是的！
+[k]
+
+[charaFace A 6]
+
+＠阿斯托尔福
+有什么关系嘛，[r]我要做圣诞老人，我要做圣诞老人～！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[fowardEffect bit_talk_41]
+[se ad139]
+
+＠阿斯托尔福
+[f large]我是圣诞老人啦！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[fowardEffectDestroy bit_talk_41]
+[seStop ad139 0.3]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠布拉达曼特
+[f large]你才不是！！
+[k]
+
+[charaFace B 4]
+
+＠布拉达曼特
+真是的，拜托来个人阻止他啦！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[bgm BGM_EVENT_7 0.4 0.5]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[scene 54405]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.4 1.0]
+[bgm BGM_EVENT_7 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+？1：我们来阻止他啦！
+？！
+
+
+[messageOff]
+[wt 0.2]
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[bgm BGM_EVENT_7 0.4 0.5]
+[wait wipe]
+
+[scene 21803]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.4 1.0]
+[bgm BGM_EVENT_7 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠布拉达曼特
+啊，这声音是御主！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+哎，御主！？[r]在哪在哪，第几页？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠布拉达曼特
+小阿的语言表达功能还是有故障啊……
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[bgm BGM_EVENT_7 0.4 0.5]
+[wait wipe]
+[charaFadeout B 0.1]
+[scene 54405]
+[wt 0.5]
+[wipein rectangleStripDownToUp 0.4 1.0]
+[bgm BGM_EVENT_7 0.4 1.0]
+[wait wipe]
+[wt 1.3]
+
+[wipeout downToUp 0.7 1.0]
+[bgmStop BGM_EVENT_7 0.7]
+[se ad75]
+[wait wipe]
+[scene 21803]
+[wt 0.1]
+[wipein upToDown 0.7 1.0]
+[seStop ad75 1.0]
+[wait wipe]
+[wt 0.5]
+
+[shake 0.1 0 3 0.3]
+[se ad601]
+[wt 0.4]
+[seStop ad601]
+
+？1：呀嗬～。
+？！
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+御主！[bgm BGM_EVENT_2 0.1]
+[k]
+
+[charaFace A 0]
+
+＠阿斯托尔福
+……以及，咦？[r]南丁格尔？
+[k]
+
+＠阿斯托尔福
+你不是不当圣诞老人了吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠南丁格尔·圣诞
+嗯。
+[k]
+
+[charaFace C 1]
+
+＠南丁格尔·圣诞
+我曾是这么打算的……[r]但看来我比我想得更为任性。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+唔唔。
+[k]
+
+＠阿斯托尔福
+呃，但我记得，[r]当你成为圣诞老人之后[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠南丁格尔·圣诞
+没错。
+[k]
+
+＠南丁格尔·圣诞
+我打算分发吃起来像甜甜点心一样的……药。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+不行啦～！[r]药这种东西太没有梦想了吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠南丁格尔·圣诞
+嗯，我也是这么想的。
+[k]
+
+＠南丁格尔·圣诞
+所以我一度拒绝成为圣诞老人。
+[k]
+
+＠南丁格尔·圣诞
+但在这座圣诞岛上，[r]我改变了想法。
+[k]
+
+[charaFace C 0]
+
+＠南丁格尔·圣诞
+[#我觉得没有梦想也无妨]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+哎，这未免太……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠南丁格尔·圣诞
+不。[r]我要赠送的，是名为药的爱。
+[k]
+
+＠南丁格尔·圣诞
+虽然我会因遭到拒绝而悲伤，[r]但我不打算强人所难。
+[k]
+
+＠南丁格尔·圣诞
+至于如何处理得到的礼物，[r]就由孩子们自己决定吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+可你不擅长应付孩子吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠南丁格尔·圣诞
+这个嘛[line 3]
+[k]
+
+？1：南丁格尔并不讨厌孩子哦。
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+哎？[r]什么意思？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠南丁格尔·圣诞
+嗯……说得对。[bgm BGM_EVENT_11 0.1]
+[k]
+
+＠南丁格尔·圣诞
+虽然我不擅长应付孩子，[r]但我并不讨厌孩子。
+[k]
+
+[charaFace C 8]
+
+＠南丁格尔·圣诞
+我只是……害怕孩子。[r]因为在我生活的时代，孩子很容易夭折。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠布拉达曼特
+无论哪个时代都是这样的哦。
+[k]
+
+＠布拉达曼特
+所以无论何时何地，[r]战士们都必须保护孩子。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠南丁格尔·圣诞
+我害怕孩子。[r]因为他们太弱小，太脆弱了。
+[k]
+
+[charaFace C 8]
+
+＠南丁格尔·圣诞
+我想用药让他们恢复活力。[r]我想为他们挡下名为死亡的蛮横。
+[k]
+
+＠南丁格尔·圣诞
+这样一来[line 3]
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgm BGM_EVENT_11 0.5 0.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 10903]
+
+[wipeFilter cinema 0.5 0]
+
+[effect bit_talk_40 0,-50]
+[charaTalk off]
+[charaFace D 0]
+[charaFace E 0]
+[charaFadein D 0.1 -140,-50]
+[charaFadein E 0.1 140,-50]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+[wt 0.5]
+
+＠
+总有一天，我就能将礼物送到[r]那个被我抛弃的，名为『我』的少女手中。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[wipeOff]
+[effectStop bit_talk_40]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+
+[scene 21803]
+[wt 0.5]
+
+[fadein black 0.5]
+[bgm BGM_EVENT_11 0.5 1.0]
+[wait fade]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+唔……虽然我听不懂，[r]但我感受到了你的认真和热情！
+[k]
+
+＠阿斯托尔福
+可是我希望再来一个令我让步的理由！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠布拉达曼特
+真是的，你早点放弃啦。[r]话说你们不如打一场吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 1.2]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+就是嘛！[r]好嘞～，开始吧～！
+[k]
+
+[charaFace A 0]
+
+＠阿斯托尔福
+……唔？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠南丁格尔·圣诞（Archer）
+……[r]……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福（Saber）
+[f large]没胜算吧！？[bgm BGM_EVENT_7 0.1]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠布拉达曼特
+我～不～早～说～了～嘛～。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 1.2]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+呜哇～，看来我只能使出最后的手段了！
+[k]
+
+[messageOff]
+[se ade381]
+
+[charaDepth J 10]
+[charaPut J -20,-20]
+[charaEffect J bit_talk_20]
+[wt 1.5]
+[charaEffectStop J bit_talk_20]
+[wt 0.5]
+[charaEffect J bit_talk_radiallight02]
+[se ad39]
+[wt 1.5]
+[seStop ad39 0.5]
+[wt 0.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaPut I 1]
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠玛修
+……！[bgm BGM_EVENT_24 0.1]
+[k]
+
+＠玛修
+魔力正在向阿斯托尔福先生集中。[r]这是……！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaPut J 0,0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.5]
+[charaEffectStop J bit_talk_radiallight02]
+[charaEffect A bit_talk_attack_buf]
+[se bas10]
+[wt 0.7]
+[charaEffect A bit_talk_charge_red]
+
+[charaFace A 26]
+
+＠阿斯托尔福
+摇响这个铃铛后，我就会变得更强，[r]变得更像圣诞老人（大概）！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠南丁格尔·圣诞
+……真铃铛的力量好厉害啊。[r]摇动我的铃铛也只会响而已。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+我也不知道是怎么回事，[r]但这个铃铛真的很厉害哦～！
+[k]
+
+？1：那个铃铛……
+？2：好像在哪里……？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠南丁格尔·圣诞
+……但我决不能输。
+[k]
+
+[charaFace C 2]
+
+＠南丁格尔·圣诞
+既然已经决定要成为圣诞老人，[r]那我唯有奋勇前进！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+气势十足！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠布拉达曼特
+……呃，那我先告辞……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+布拉亲也来参加啦[line 4]！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠布拉达曼特
+唔，好吧，真拿你没办法！
+[k]
+
+＠布拉达曼特
+布拉达曼特，[r]出于道义助小阿一臂之力！
+[k]
+
+＠布拉达曼特
+对不起啦，御主！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠南丁格尔·圣诞
+……圣诞老人最终决战，开始！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+究竟我是圣诞老人，还是你是圣诞老人……[r]决一胜负吧！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

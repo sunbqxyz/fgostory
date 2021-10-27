@@ -1,0 +1,794 @@
+
+
+＄94-04-19-15-2-0
+
+[soundStopAll]
+
+[charaSet A 1032002 1 暗黑武者ZONGJU]
+[charaSet B 11009001 1 S伊什塔尔]
+[charaSet C 2037000 1 简]
+[charaSet D 11009000 1 阿斯塔蒂]
+[charaSet E 11009300 1 阿斯塔蒂·起源]
+[charaSet F 1098185610 1 阿斯塔蒂·起源_叫喊]
+[charaSet I 5009000 1 特效用1]
+[charaSet J 5009000 1 特效用2]
+
+[scene 10000]
+
+[bgm BGM_EVENT_24 0.1]
+
+[fadein black 0.3]
+[wait fade]
+
+[effect bit_talk_kengekiall02 0,0 F]
+[wt 0.2]
+[cueSe Battle bac526]
+[wt 0.2]
+[cueSeStop bac526 0.3]
+[cueSe Battle bac508]
+[wt 0.3]
+[cueSeStop bac508 0.3]
+[effect bit_talk_h_slash01]
+[cueSe Battle bac511]
+[wt 0.3]
+
+[fadeout black 0.1]
+[wait fade]
+[effectDestroy]
+[charaScale J 1.0]
+[scene 83900]
+[cameraMove 0 0,0 1.005]
+[shake 0.06 1 1 0]
+[cameraMove 0 0,0 1.01]
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth J 2]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0 1]
+[se ad14]
+[seVolume ad14 0 0.1]
+[fadein black 0.2]
+[bgmStop BGM_EVENT_24 1.0]
+[wait fade]
+[wt 0.2]
+
+[charaEffect J bit_talk_35]
+[se ad240]
+[wt 2.0]
+
+[charaFace A 4]
+
+＠暗黑武者ZONGJU
+……到此为止了吗。
+[k]
+
+＠暗黑武者ZONGJU
+即便是怨恨的仇敌，[r]也不能让这祭坛沾满女神之血。
+[k]
+
+＠暗黑武者ZONGJU
+将这条性命，献给吾之『原始女神』的苏醒。[r][line 3][charaFace A 1]唔。这着实[#痛快:摇滚]。
+[k]
+
+[messageOff]
+[wt 0.7]
+[charaFace A 4]
+[charaMove A 0,-50 0.4]
+[charaShake A 0.05 4 4 0.4]
+[charaFadeout A 0.4]
+[wt 0.2]
+[se ad144]
+[wt 0.5]
+[seStop ad144 0.2]
+[se ad528]
+[wt 2.0]
+
+[seVolume ad14 0.3 0.2]
+[wt 0.5]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+……虽说总算……为父亲报仇了…………
+[k]
+
+[charaFace B 10]
+
+＠S伊什塔尔
+…………但这是为什么。我一点都高兴不起来……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠简
+伊什塔凛！[r]我理解你的心情，但振作一点！　祭坛啦，祭坛！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[cameraMove 0.7 0,0 1.1]
+[wt 1.0]
+
+＠躺着的阿斯塔蒂
+…………
+[k]
+
+？1：阿斯塔蒂！
+？2：被祭坛吞噬了！？
+
+？！
+[messageOff]
+[cameraMove 0.5 0,0 1.01]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+啊啊真是的，真给人添麻烦！
+[k]
+
+＠S伊什塔尔
+[%1]，拜托了！[r]把那家伙从祭坛上拖下来！
+[k]
+
+＠S伊什塔尔
+我无法继续靠近祭坛了！[r]本能告诉我，一靠近就会出大问题！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠简
+我也不行了～～～！　从刚才起，[r]脑海中就不停重复着“不准碍事”这句话～～！
+[k]
+
+？1：没问题，交给我吧！
+
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[effect bit_talk_pressure]
+[cueSe Servants_703000 bac702]
+
+[shake 0.1 2 2 0]
+[seVolume ad14 0.3 0.3]
+[wt 0.5]
+[se ad59]
+[cameraMove 1.2 0,-30 1.15]
+[wt 1.2]
+[seStop ad59]
+[wt 0.5]
+
+？1：阿斯塔蒂！
+？2：女神大人，振作！
+
+？！
+
+＠躺着的阿斯塔蒂
+…………唔…………[r]……………………啊…………
+[k]
+
+？1：不行，叫不醒……！
+？2：没办法，只能硬来了！
+
+？！
+
+[messageOff]
+[wt 0.5]
+[cameraMove 0.3 0,-50 1.15]
+[wt 0.5]
+[se ad7]
+[seVolume ad7 0 0.6]
+[wt 0.4]
+[cameraMove 0.6 0,-30 1.15]
+[wt 0.8]
+[effectStop bit_talk_pressure]
+[cueSeStop bac702 0.3]
+[se ad59]
+[cameraMove 1.2 0,0 1.01]
+[wt 1.2]
+[seStop ad59]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+居然直接公主抱着她过来了！？[r]也是，你其实挺有力气嘛！
+[k]
+
+[charaFace B 7]
+
+＠S伊什塔尔
+这件事我就当没看到好了，好啦，恶之我！[r]你打算睡懒觉到什么时候！？
+[k]
+
+＠S伊什塔尔
+精神振作点！　你应该不想[r]照这样下去变成什么『原始女神』吧！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠简
+唔……还是不醒呢。[r]要不要试着炸一下她？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 28]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+如果你当真打算弄死她的话，这倒是个好主意！[r]但是否决，那是最终手段！
+[k]
+
+＠S伊什塔尔
+总之先离开神殿吧！
+[k]
+
+[charaFace B 5]
+
+＠S伊什塔尔
+只要我和这家伙不在这里，[r]『原始女神』的复活也就……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 0.7]
+
+＠阿斯塔蒂
+……没用的。[r]为时已晚了。
+[k]
+
+？1：阿斯塔蒂！
+？2：终于醒了！
+
+？！
+
+[messageOff]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.2 0,-40]
+[charaMove D 1 0.4]
+[charaShake D 0.09 3 0 0.3]
+[wt 0.5]
+
+＠阿斯塔蒂
+……放开我。[r]我可以自己站起来。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+啊啊，是么，有精神就好！[r]但为时已晚是什么意思啊！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠阿斯塔蒂
+因为巴耳·马安娜要来了。[r]『原始女神』将会复活。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+巴耳·马安娜要来了？[r]你在说什么呢，古代神殿指的就是这里吧？
+[k]
+
+＠S伊什塔尔
+而且，我和你，[r]我俩就是『原始女神』吧？
+[k]
+
+＠S伊什塔尔
+既然如此，只要我们离开了这里[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠阿斯塔蒂
+并不是这样。[r]我们和『原始女神』是不同的存在。
+[k]
+
+＠阿斯塔蒂
+当在祭坛上沉睡时，我才明白。[r]肉体与灵魂的关系。
+[k]
+
+＠阿斯塔蒂
+在这原始宇宙中沉睡的，[r]是被人类们打倒的肉体。
+[k]
+
+[charaFace D 4]
+
+＠阿斯塔蒂
+我们是『女神被人类打倒前，[r]从肉体上分离出去的心脏』……也就是灵魂。
+[k]
+
+＠阿斯塔蒂
+失去了灵魂的『原始女神』灵基四散，[r]看似是消灭了。
+[k]
+
+＠阿斯塔蒂
+然而我们人类的常识对『神』并不适用。
+[k]
+
+[charaFace D 5]
+
+＠阿斯塔蒂
+[#没有心脏的神也能生存]。[r]换言之，这原始宇宙[line 3]
+[k]
+
+[messageOff]
+[fadeout black 0.4]
+[seStop ad14 0.3]
+[wait fade]
+[shakeStop]
+[charaFadeout D 0]
+[verticalImageSet A back84500 1]
+[imageSet B cut141_jne06 1]
+[imageSet C cut141_ast05 1]
+[imageSet D cut141_sist03 1]
+[imageSet E cut141_jne07 1]
+[imageSet F cut141_sist02 1]
+[sceneSet G 84400 1]
+[sceneSet H 84401 1]
+[imageSet I cut141_trio 1]
+
+[charaScale A 1.01]
+[charaScale B 1.01]
+[charaScale C 1.01]
+[charaScale D 1.01]
+[charaScale E 1.01]
+[charaScale F 1.01]
+[charaScale G 1.01]
+[charaScale H 1.01]
+[charaScale I 1.01]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth B 2]
+[charaDepth C 2]
+[charaDepth D 2]
+[charaDepth E 2]
+[charaDepth F 2]
+[charaDepth I 2]
+[charaDepth G 5]
+[charaDepth H 6]
+
+[charaFadein A 0 0,160]
+[fadein black 0.4]
+[wait fade]
+
+[wt 1.0]
+
+[charaFadein B 0.1 308,-200]
+
+＠简
+快看天空！[r]星星……逐渐集中在一起了！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？1：看上去像人形……
+？2：S伊什塔尔……？
+
+？！
+
+[charaFadein C 0.1 0,-200]
+
+＠阿斯塔蒂
+……被分离的我们，是女神的灵核。
+[k]
+
+＠阿斯塔蒂
+这原始宇宙……是『原始女神』分离了心脏之后，[r]分解而成的[#女神躯体的残骸]。
+[k]
+
+[charaFadein B 0.1 308,-200]
+
+＠简
+所以即便没有灵核也不会消失……！
+[k]
+
+＠简
+啊，但是等一下，也就是说，[r]这银河全都是伊什塔凛吗！？
+[k]
+
+[charaFadein D 0.1 -308,-200]
+
+＠S伊什塔尔
+多余部分是不是太多了！？[r]身为心脏的我们才比较重要吧！？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_48 0.7]
+
+＠？？？
+这是每个细胞都不会独立思考的[r]你们这些人类的常识。
+[k]
+
+＠？？？
+对神来说，心脏不过是部件之一。[r]长到这么大，连这种事都没理解吗，我的分身啊。
+[k]
+
+[messageOff]
+[wt 0.5]
+[charaMove A 0,-142 2.6]
+[wt 3.0]
+
+？1：那是[line 3]
+？2：赤红的宇宙，聚集在一起[line 3]
+
+？！
+
+[fadeout ff0000 0.15]
+[wait fade]
+[fadein ff0000 0.15]
+[wait fade]
+
+[wt 0.1]
+
+[fadeout ff0000 0.15]
+[wait fade]
+[fadein ff0000 0.15]
+[wait fade]
+
+[se ad476]
+[seVolume ad476 0 0.1]
+[seVolume ad476 1.0 1.0]
+[wt 0.5]
+[fadeout ff0000 1.5]
+[wait fade]
+[verticalImageSet A back84501 1]
+[charaScale A 1.01]
+[charaDepth A 1]
+[charaFadein A 0.1 0,-142]
+[wt 0.5]
+[fadein ff0000 0.5]
+[seStop ad476 0.5]
+[wait fade]
+
+[wt 1.0]
+
+＠阿斯塔蒂·起源
+[line 3]但是，这心脏的跳动会令[#肉体:我]苏醒。[bgm BGM_EVENT_71 0.1][r]因此我原谅。我是对我自己很宽容的女神。
+[k]
+
+[charaFadein E 0.1 308,-200]
+
+＠简
+唔，我理解了！[r]虽然很可怕，但有种伊什塔凛系列的感觉！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaFadein F 0.1 -308,-200]
+
+＠S伊什塔尔
+那是什么意思啦，[r]其实这是故意让你掉以轻心，去死吧[line 3]！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[cueSe Battle bac161]
+[wt 0.1]
+[cueSe Battle bac161]
+[wt 0.1]
+[cueSe Battle bac161]
+
+
+[wt 0.7]
+
+[charaFadein G 0.4 0,-200]
+[wt 0.4]
+
+＠阿斯塔蒂·起源
+偷袭吗。你难道还不明白这种极端微小[r]对我是不起作用的吗，愚蠢的[#心:存在]啊。
+[k]
+
+＠阿斯塔蒂·起源
+不……你是在『这个时代』被发掘出来的，[r]是不了解过去真相的我吧。
+[k]
+
+[charaFadein H 0.1 0,-200]
+
+＠阿斯塔蒂·起源
+既然如此，[r]就让我来清洗你被苍辉银河荼毒了的认知。
+[k]
+
+[bgmStop BGM_EVENT_71 1.2]
+
+＠阿斯塔蒂·起源
+『原始女神』究竟是什么样的存在。[r]破例让你见识一下自己真正的形象吧。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[fadeout white 0.6]
+[cueSe NoblePhantasm_900600 NP_900600_7]
+[wt 0.3]
+[se ade391]
+[seVolume ade391 0 0.0]
+[seVolume ade391 0.4 1.0]
+[wait fade]
+[charaFadeout G 0]
+[charaFadeout H 0]
+[verticalImageSet A back84502 1]
+[charaScale A 1.01]
+[charaDepth A 1]
+[cueSeStop NP_900600_7 1.0]
+[charaPut J 1]
+[charaEffect J bit_talk_event_84501]
+[se ade393]
+[se ade392]
+[scene 84501]
+
+[fadein white 0.1]
+[wait fade]
+
+
+[wt 18]
+[bgm BGM_EVENT_84 0.1]
+[seStop ade393 2.0]
+[seStop ade392 2.0]
+[wt 2.0]
+
+[sceneSet G 84402 1]
+[sceneSet H 84403 1]
+[imageSet I cut141_sist09 1]
+[imageSet C cut141_sist25 1]
+[charaScale G 1.01]
+[charaScale H 1.01]
+[charaScale I 1.01]
+[charaScale C 1.01]
+[charaDepth J 1]
+[charaDepth I 2]
+[charaDepth C 2]
+[charaDepth G 5]
+[charaDepth H 6]
+
+[effectDestroy]
+[charaEffectStop J bit_talk_event_84501]
+
+？1：[line 6]
+？2：S伊什塔尔？　……不，有些不对……？
+
+？！
+
+[charaFadein I 0.1 -308,-200]
+
+＠S伊什塔尔
+喂，那是什么，是某种影像吗！？[r]为什么我会巨大化啊！？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+＠阿斯塔蒂·起源
+并非如此。[r]这是[#神殿]。
+[k]
+
+＠阿斯塔蒂·起源
+原始宇宙中的神殿即为神的形象。[r]是管理生命、点燃文化、守护生命圏的存在。
+[k]
+
+＠阿斯塔蒂·起源
+换言之，这才是『原始女神』的证明。[r]女神神殿，巴耳·马安娜。
+[k]
+
+[charaFadein B 0.1 308,-200]
+
+＠简
+上次可没这种玩意儿吧[line 3]！？[r]巨大机器人什么的是不是太卑鄙了！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaFadein G 0.3 0,-200]
+[wt 0.3]
+
+＠阿斯塔蒂·起源
+不是机器人。是神殿。[r]你就是当时的Archer啊。
+[k]
+
+＠阿斯塔蒂·起源
+居然能维持精神不崩溃活到现在。[r]作为将心脏带来这里的奖励，我为你解开诅咒吧。
+[k]
+
+＠阿斯塔蒂·起源
+漫长的[#赎罪:生存]就此结束。[r]我允许你在这里化为尘土而死。
+[k]
+
+[charaFadein H 0.1 0,-200]
+
+＠阿斯塔蒂·起源
+[line 3]好了。[r]回到我这里来吧，心脏们。
+[k]
+
+＠阿斯塔蒂·起源
+尽管[#肉体:我]的运作时间远超你们，[r]但你们才是我的本体。
+[k]
+
+＠阿斯塔蒂·起源
+何不让我们在此和合，[r]不断扩大完全的宇宙呢。
+[k]
+
+＠阿斯塔蒂·起源
+赤红荒野的原始宇宙[line 3][r]只有称颂我的存在才能生存的伊甸园。
+[k]
+
+[messageOff]
+[charaFadein A 0 0,-142]
+[charaFadeout G 0.4]
+[charaFadeout H 0.4]
+[wt 0.4]
+
+[charaFadein F 0.1 -308,-200]
+
+＠S伊什塔尔
+[line 3][r][%1]，能行吗？
+[k]
+
+＠S伊什塔尔
+……不能放任那家伙不管。
+[k]
+
+＠S伊什塔尔
+那家伙是认真的，[r]而且她能轻易破坏当前的宇宙。
+[k]
+
+＠S伊什塔尔
+那家伙就是人类的威胁。[r]虽说毫无理由，但唯独这点我很清楚。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.3]
+
+？1：毕竟那就是你自己嘛！
+
+[charaFadein C 0.3 -308,-200]
+
+＠S伊什塔尔
+没错没错，正因为是我……慢着，[r]你给我严肃一点啦，严肃一点！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？2：（正如女神经典所说的……）
+
+？！
+
+＠阿斯塔蒂·起源
+[line 3]原来如此。[r]也就是说，你打算站在人类那方吧？
+[k]
+
+[charaFadein F 0.1 -308,-200]
+
+＠S伊什塔尔
+那当然啦，[r]否则你以为我为何来这里啊！？
+[k]
+
+＠S伊什塔尔
+我啊，是为了将这个老好人，[r]送回原来的宇宙，才会开始这趟旅行！
+[k]
+
+＠S伊什塔尔
+『原始女神』这种传说故事恕我敬谢不敏！[r]赶紧给我回归忘却的深渊去吧！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaFadein H 0.3 0,-200]
+[wt 0.3]
+
+＠阿斯塔蒂·起源
+你是说，忘却[line 3]？[r]我，被我[line 3]？
+[k]
+
+
+[charaDepth H 5]
+[charaDepth G 6]
+
+[charaFadein G 0.1 0,-200]
+
+＠阿斯塔蒂·起源
+哪怕是我，也不能原谅这种发言。[r]决不能，决不能。
+[k]
+
+[charaFadeout G 0.1]
+
+＠阿斯塔蒂·起源
+忘却乃是罪，改宗乃是恶。[r]移居到新天地乃是对女神的侮辱。
+[k]
+
+＠阿斯塔蒂·起源
+[line 3]毁灭吧，新的我。[r]区区心脏，今后再创造就行了。
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_84 0.4]
+[wait fade]
+[soundStopAll]
+[end]

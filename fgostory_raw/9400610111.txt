@@ -1,0 +1,334 @@
+＄94-00-61-01-1-1
+
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+[charaSet A 6024000 1 斯卡哈]
+[charaSet B 3024000 1 玉藻前]
+[charaSet C 4024000 1 莫德雷德]
+[charaSet D 98100400 1 玛修]
+[charaSet E 98025100 1 影从者]
+[charaSet F 98101600 1 魔猪]
+[charaSet G 98101200 1 野猪崽]
+[charaSet H 1001002 1 ？？？]
+[charaFilter H silhouette 00000080]
+
+[scene 20700]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk E]
+[charaFadein E 0.1 1]
+
+
+[se bac14]
+[effect bit_bolg_01]
+
+[wt 0.1]
+[charaShake E 0.05 3 3 0.4]
+[wt 0.9]
+
+[se ad24]
+[wt 1.4]
+[charaFadeout E 0.1]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠斯卡哈
+太弱了！
+[k]
+
+[bgm BGM_EVENT_5 0.7 0.1]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠莫德雷德
+唔？[r]等一下……这是什么！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFadein E 0.1 1]
+
+
+[messageOff]
+[charaSpecialEffect E enemyErasure 1 1.7]
+[se ad42]
+[wait charaSpecialEffect E]
+
+[bgm BGM_EVENT_5 0.5]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠魔猪
+……[r]……
+[k]
+
+[charaFadeout F 0.4]
+
+[wt 0.2]
+[se ad144]
+[shake 0.05 0 4 0.3]
+[wait se ad144]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+[charaSet E 5027000 1 玛丽]
+
+＠玛修
+影从者的真面目……居然是魔猪！？
+[k]
+
+[charaFadeout D 0.1]
+[bgmStop BGM_EVENT_5 0.3]
+[wt 0.4]
+[bgm BGM_EVENT_2 0.3]
+
+[charaTalk E]
+[charaFace G 2]
+[charaFadein G 0.1 0]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+
+＠玛丽
+没事吧？　没受伤吧？
+[k]
+
+＠野猪崽
+……[r]……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+
+＠玛修
+因为震惊而说不出话来了吧？[r]话说这个花纹，很像眼镜呢。
+[k]
+
+？1：眼镜真可爱。
+
+[charaFace D 1]
+
+＠玛修
+嗯，有知性的感觉，很可爱。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+？2：野猪崽戴眼镜……
+
+[charaFace D 7]
+
+＠玛修
+应该……不是恶作剧导致的吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 2]
+
+＠莫德雷德
+不是恶作剧吗？[r]该不会是自己戴上去的吧。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠野猪崽
+[line 12]女，
+[k]
+
+[charaTalk E]
+
+＠玛丽
+女？
+[k]
+
+[bgmStop BGM_EVENT_2 0.3]
+[wt 0.4]
+[bgm BGM_EVENT_7 0.3]
+
+[cameraMove 0.5 0,0 1.5]
+[wait camera]
+[effect bit_talk_41]
+
+＠野猪崽
+女神大人[line 6]！！
+[k]
+
+[effectStop bit_talk_41]
+[wt 0.3]
+[charaFadeout G 0.1]
+[cameraMove 0.5 0,0 1.0]
+[wait camera]
+
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠玛丽
+……女神大人？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玉藻前
+哎呀，你叫我？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+[charaFace C 4]
+[charaFadein C 0.1 2]
+
+＠莫德雷德
+应该不是吧……
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠野猪崽
+女神大人光临！　光临的说！[r]不肖在下野猪崽这就有个不情之请！
+[k]
+
+＠野猪崽
+请务必[line 6]。
+[k]
+
+[charaSet E 5027000 1 全体]
+
+＠野猪崽
+拯救这个世界！　的说！
+[k]
+
+[charaTalk E]
+
+[charaSet C 98002000 1 芙芙]
+
+＠全体
+[fontSize large]……啊？[fontSize -]
+[k]
+
+[charaTalk C]
+
+＠芙芙
+……芙？
+[k]
+
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout G 0.1]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_1 0.1]
+
+
+[charaTalk H]
+[charaFadein H 0.1 1]
+
+＠？？？
+该来的终于来了啊。
+[k]
+
+＠？？？
+迟早会前来修正这个世界的人……
+[k]
+
+[charaTalk F]
+
+＠魔猪
+[FFFFFFFF]？[-]
+[k]
+
+[charaTalk H]
+
+＠？？？
+你不用明白。[r]我对你的知性不抱什么期待。
+[k]
+
+＠？？？
+你是暴虐，是破坏。
+[k]
+
+＠？？？
+是将这世界几度扯回原点的狂暴之雷。
+[k]
+
+＠？？？
+[line 3]去破坏吧。[r]将胆敢抵抗的野猪统统杀光。
+[k]
+
+＠？？？
+漫长的时间是站在我这边的，从者们。[r]这次一定是我获得胜利！
+[k]
+
+[se ad109]
+[wt 0.2]
+[se ad20]
+[wt 0.4]
+[se ad23]
+[wt 0.2]
+[seStop ad23 0.4]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_1 1.4]
+[wait fade]
+[wt 0.4]
+[soundStopAll]
+[end]

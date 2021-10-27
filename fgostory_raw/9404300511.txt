@@ -1,0 +1,206 @@
+
+
+
+＄94-04-30-05-1-1
+
+[soundStopAll]
+
+[charaSet A 1041002 1 阿斯托尔福]
+[charaSet B 3036001 1 布拉达曼特]
+
+[scene 21803]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+好嘞，都搞定了！
+[k]
+
+＠阿斯托尔福
+接下来只剩完成她的愿望了。
+[k]
+
+＠阿斯托尔福
+谁是下一任圣诞老人呢！[r]来吧，跨过我的尸体吧！
+[k]
+
+＠阿斯托尔福
+虽说其实我完全没打算死！[wt 0.8][charaFace A 8][r]咦，那究竟该怎么办呢？
+[k]
+
+＠阿斯托尔福
+……[r]……
+[k]
+
+[charaFace A 1]
+
+＠阿斯托尔福
+算了！
+[k]
+
+＠阿斯托尔福
+等圣诞老人人选确定后，就由我来进行面试，[r]不够格的话直接打飞重新选！
+[k]
+
+＠阿斯托尔福
+毕竟这是赐予孩子们梦想的职阶，[r]必须选靠谱的从者才行！
+[k]
+
+[charaFace A 3]
+
+＠阿斯托尔福
+御主会表扬我吗？[r]会表扬我做的事吗？
+[k]
+
+[messageOff]
+[wipeout loveHeartIn 2.0 1.0]
+[se ade84]
+[bgmStop BGM_EVENT_4 2.0]
+[wait wipe]
+
+[branchQuestNotClear lblNotClear 3000320 4]
+[scene 66800]
+[branch lblConf]
+[label lblNotClear]
+[scene 10400]
+[label lblConf]
+
+[charaFace A 1]
+[effect bit_talk_valentine_brilliant]
+[wt 0.5]
+
+[fadeout black 0.1]
+[wait fade]
+[wipein loveHeartIn 0.1 1.0]
+[wait wipe]
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_28 0.1 0.7]
+[wt 1.0]
+
+？1：『不愧是我的从者！』
+
+[charaFace A 3]
+
+＠阿斯托尔福
+哎呀～，这不算什么啦～。[r]因为阿斯托尔福很优秀嘛。
+[k]
+
+＠阿斯托尔福
+开玩笑的，开玩笑的！
+[k]
+
+？2：『了不起了不起，真是个好孩子。』
+
+[charaFace A 3]
+
+＠阿斯托尔福
+唔！
+[k]
+
+[charaFace A 17]
+
+＠阿斯托尔福
+因为我就是你的剑啊！[r]啊，这话终于要变成现实了！
+[k]
+
+？！
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_28 2.0]
+[wait fade]
+
+[wipeout loveHeartIn 0.1 1.0]
+[wait wipe]
+[fadein black 0.1]
+[wait fade]
+
+[effectStop bit_talk_valentine_brilliant]
+
+[charaFace A 3]
+
+[scene 21803]
+[wt 0.5]
+
+[wipein loveHeartIn 2.0 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠阿斯托尔福
+哼。
+[k]
+
+＠阿斯托尔福
+查理曼十二圣骑士的各位，[r]都看到了吗～！
+[k]
+
+＠阿斯托尔福
+现在的我帅得非常完美哦～！
+[k]
+
+＠阿斯托尔福
+～♪
+[k]
+
+[messageOff]
+[se ad586]
+[charaMove A -250,0 0.7]
+[wt 0.3]
+[charaFadeout A 0.4]
+[wt 1.0]
+[seStop ad586 1.0]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 1.0 0,-50]
+[charaMove B 0,0 1.0]
+[wt 1.0]
+
+＠布拉达曼特
+唔……
+[k]
+
+＠布拉达曼特
+小阿好像确实变强了……
+[k]
+
+[charaFace B 2]
+
+＠布拉达曼特
+[f large]小阿！
+[k]
+
+＠布拉达曼特
+[f large]得意忘形时！
+[k]
+
+＠布拉达曼特
+[f large]往往会出事！
+[k]
+
+[charaFace B 0]
+
+＠布拉达曼特
+……嗯。[r]还是再观望一阵子吧！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,322 @@
+
+
+＄91-10-36-01-3-1
+
+[soundStopAll]
+
+[charaSet A 1036001 1 兰陵王]
+[charaSet B 1098155400 1 黑胡子]
+[charaSet C 1098160000 1 陈宫]
+[charaSet D 11003001 1 贞德·Alter]
+[charaSet E 2023001 1 莫里亚蒂]
+[charaSet F 7023001 1 源赖光]
+[charaSet G 6021001 1 酒吞童子]
+[charaSet H 7034001 1 莎乐美]
+
+[charaSet I 98002000 1 dummy特效1]
+[imageSet J back10001 1]
+[charaScale J 1.01]
+
+[charaDepth A 1]
+[charaDepth B 5]
+
+
+[branchQuestNotClear lblNotClear1 3000303]
+[flag IsClear true]
+[branch lblConf1]
+[label lblNotClear1]
+[flag IsClear false]
+[label lblConf1]
+
+
+[scene 21230]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠陈宫
+在各位询问之前，我就先回答好了。[bgm BGM_EVENT_27 0.1][r]这是必要的牺牲。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠兰陵王
+是吗……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+[charaShake B 0.04 2 2 0]
+
+＠黑胡子
+老子还以为自己要死了！！[r]咿，咿，咿……
+[k]
+
+＠黑胡子
+在下的毅力用起来可是很累的啊……
+[k]
+
+[messageOff]
+[charaShakeStop B]
+[wt 0.1]
+
+[charaFace A 0]
+[charaFadein A 0.4 -120,0]
+[charaMove B 0,-60 0.4]
+[charaMove A -70,0 0.4]
+[wt 0.2]
+
+[se ad144]
+[seVolume ad144 0 0.6]
+[wt 0.2]
+
+[fadeout white 1.0]
+[bgmStop BGM_EVENT_27 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[scene 10001]
+
+[fadein white 0.8]
+[wait fade]
+
+＠兰陵王
+哎呀。[r]没事吧，黑胡子阁下。
+[k]
+
+＠黑胡子
+……[r]……
+[k]
+
+[messageOff]
+[fadeout white 0.8]
+[bgm BGM_EVENT_45 0.8]
+[wait fade]
+
+[scene 21230]
+[pictureFrame cut063_cinema]
+
+[charaPut J 0,-200]
+[charaFadeTime J 0 0.5]
+[charaEffect I bit_talk_yume01]
+[wt 0.4]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFace B 9]
+[charaRoll B -20]
+[charaScale A 1.4]
+[charaScale B 1.4]
+[charaFadein A 0.1 -40,-50]
+[charaFadein B 0.1 320,-140]
+
+[fadein white 1.4]
+[wait fade]
+[wt 0.6]
+
+
+？1：这背景音乐是啥情况！？
+？！
+
+＠黑胡子
+讨厌啦……这次你是打算把偶做成过场CG吧……
+[k]
+
+[charaFace B 7]
+
+＠黑胡子
+心跳回路开始运转了……[r]高速运转到偶黑胡子要变成回天迷宫啦……
+[k]
+
+[charaFace A 4]
+＠兰陵王
+（完全不知道这家伙在说什么……[r]　的表情。）
+[k]
+
+[messageOff]
+[fadeout black 1.4]
+[bgmStop BGM_EVENT_45 1.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaEffectStop I bit_talk_yume01]
+[charaPut I 2000,2000]
+[charaPut J 2000,2000]
+
+[charaSet B 7013001 1 清姬]
+[charaSet C 2009001 1 俄里翁个＆阿耳忒弥斯]
+
+[charaDepth D 1]
+[charaDepth G 1]
+[charaDepth H 1]
+[charaDepth C 5]
+[charaDepth E 9]
+[charaDepth F 9]
+[charaDepth B 9]
+
+[branch lblNotClear2 IsClear false]
+[scene 66800]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10400]
+[label lblConf2]
+
+[pictureFrame]
+[wt 0.6]
+
+[fadein black 1.4]
+[wait fade]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 4]
+[charaScale A 1.0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠兰陵王
+今天真的累惨了……[bgm BGM_EVENT_2 0.1]
+[k]
+
+？1：就是！！
+
+[charaFace A 0]
+
+＠兰陵王
+黑胡子阁下不要紧吧。
+[k]
+
+＠兰陵王
+那之后他垂头丧气地回去了。
+[k]
+
+？2：能看到不知所措的兰陵王还是很稀罕的。
+
+[charaFace A 3]
+
+＠兰陵王
+御主也够坏心眼的了。
+[k]
+
+？！
+
+[charaFace A 1]
+
+＠兰陵王
+……只不过，这倒是一段令人怀念的体验。[r]我得向黑胡子阁下道谢才行。
+[k]
+
+＠兰陵王
+被意料之外的人折腾的体验……
+[k]
+
+＠兰陵王
+在旁人看来或许都是无谓之举，[r]但其实还是挺有趣的。
+[k]
+
+？1：我每天都有这种感受哦。
+？！
+
+[messageOff]
+[charaFadeout A 0.2]
+[wt 0.4]
+
+
+[charaTalk off]
+[charaFace E 1]
+[charaFace D 1]
+[charaFadein E 0.4 -256,0]
+[charaFadein D 0.4 256,0]
+[charaFadeTime E 0.4 0.8]
+[charaFadeTime D 0.4 0.8]
+[wt 1.5]
+
+[charaFadeout E 0.4]
+[charaFadeout D 0.4]
+[wt 0.6]
+
+[charaFace F 1]
+[charaFace G 1]
+[charaFadein F 0.4 -256,0]
+[charaFadein G 0.4 256,0]
+[charaFadeTime F 0.4 0.8]
+[charaFadeTime G 0.4 0.8]
+[wt 1.5]
+
+[charaFadeout F 0.4]
+[charaFadeout G 0.4]
+[wt 0.6]
+
+[charaFace H 1]
+[charaFace B 1]
+[charaFace C 8]
+[charaFadein H 0.4 -320,0]
+[charaFadein B 0.4 0,0]
+[charaFadein C 0.4 320,0]
+[charaFadeTime H 0.4 0.8]
+[charaFadeTime B 0.4 0.8]
+[charaFadeTime C 0.4 0.8]
+[wt 2.0]
+
+[charaFadeout H 0.4]
+[charaFadeout B 0.4]
+[charaFadeout C 0.4]
+[wt 0.8]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 4]
+[charaScale A 1.0]
+[charaFadein A 0.1 1]
+
+＠兰陵王
+……这……这倒是……！
+[k]
+
+[charaFace A 0]
+
+＠兰陵王
+……[r]……
+[k]
+
+[charaFace A 1]
+
+＠兰陵王
+那同为被折腾的人，[r]今晚我们要不要好好聊聊呢？
+[k]
+
+＠兰陵王
+我总觉得，御主和我都不缺这方面的辛苦经历。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

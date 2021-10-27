@@ -1,0 +1,238 @@
+＄91-60-01-01-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[scene 10800]
+[charaSet A 8001000 0 玛修]
+[charaSet B 98003000 0 Dr.罗曼]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 6001001 2 小次郎]
+[charaSet E 98014000 1 司仪]
+[charaSet F 98006100 0 恶魔之剑]
+[charaSet G 5009001 1 达·芬奇]
+[charaTalk D]
+[charaFace F 0]
+[charaFadein F 0]
+[charaFace D 5]
+[charaFadein D 0]
+[fadein black 1]
+[wait fade]
+＠小次郎
+唔。Berserker般的不死之身。[r]这不是普通的野兽吧？
+[k]
+
+＠司仪
+难以置信，受到如此攻击居然依然屹立不倒！！[r]不愧是我们的冠军『恶魔之剑』！！
+[k]
+
+[charaFadeout D 0]
+[charaFadeout F 0]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+还坚持那货是人类士兵吗！[r]回头我要向尼禄陛下严正抗议！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+[charaFace F 0]
+[charaFadein F 0.1 0]
+＠恶魔之剑
+呜吼啊啊啊啊啊——！！
+[k]
+
+[charaFadeout D 0]
+[charaFace A 6]
+[charaFadein A 0.1 2]
+＠玛修
+御主，危险！！
+[k]
+
+[charaFadeout A 0]
+[charaFace D 5]
+[charaFadein D 0.1]
+[se bac5]
+[effect bit_talk_12 0]
+＠小次郎
+秘剑[line 2]燕返！！
+[k]
+
+＠恶魔之剑
+吼啊啊啊啊啊啊啊啊啊……！！
+[k]
+
+[messageOff]
+[se ad24]
+[charaSpecialEffect F enemyErasure 0 2]
+[wait charaSpecialEffect F]
+＠司仪
+…………！！[r]什么，怎么会这样！！
+[k]
+
+＠司仪
+那位百战不败的恶魔之剑，[r]终于被击败了！！
+[k]
+
+[charaFadeout D 0]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠小次郎
+备用的性命已经用完了吗。[r]……唉。
+[k]
+
+＠小次郎
+我还期待这将是个强敌呢，[r]仅凭这种水平，要让我的秘剑开眼还差得远啊。
+[k]
+
+＠小次郎
+真是的。[r]在下何时才能遇到比那日的飞燕更难对付的强敌啊。
+[k]
+
+[charaFadeout D 0]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+不不不不，你们那儿的燕子绝对有问题吧！[r]幻想种？是幻想种吗？
+[k]
+
+[bgmStop BGM_EVENT_3 0.4]
+[bgm BGM_EVENT_2 0.1]
+[se ad6]
+[wt 1]
+[seStop ad6 3]
+＠司仪
+新冠军诞生！！[r]其名为东洋战士『ＳＡＭＵＲＡＩ』！！
+[k]
+
+＠司仪
+会场内的各位，[r]请为新冠军的诞生报以热烈的掌声！！
+[k]
+
+[se ad6]
+[wt 1]
+[seStop ad6 3]
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 12]
+[charaFadein A 0.1 2]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+＠玛修
+事情好像闹大了呢，前辈。
+[k]
+
+？1：SAMURAI真厉害。
+
+？2：对，不愧是SAMURAI。
+
+？！
+
+[charaFace D 3]
+＠小次郎
+不过这欢呼声倒不赖。[r]虽缺少了一份风雅，但雷鸣般的喝彩也不错。
+[k]
+
+[charaFace D 1]
+＠小次郎
+给[%1]阁下添麻烦了。[r]如何，为庆祝胜利，一起去喝一杯吧。
+[k]
+
+＠小次郎
+奖励估计有一袋米吧？[r]哎呀，能靠武艺赚得钱财，这真是一座出色的城市啊！
+[k]
+
+[messageOff]
+[charaFadeout A 0.5]
+[charaFadeout D 0.5]
+[fadeout black 0.5]
+[wait fade]
+[wt 0.5]
+[scene 10400]
+[charaFace G 4]
+[charaFadein G 0 1]
+[fadein black 0.5]
+[wait fade]
+＠达·芬奇
+[line 2]以后，连战连胜的东方剑士，[r]作为闪耀于罗马历史上的伟大剑斗士，
+[k]
+
+＠达·芬奇
+长时间为民众们口口相传……
+[k]
+
+[charaFace G 0]
+＠达·芬奇
+[line 2]于是，[r]这一段被明确地记载在了罗马剑斗士的历史中，
+[k]
+
+＠达·芬奇
+你还有什么要辩解的吗，小次郎君？
+[k]
+
+[charaFadeout G 0.1]
+[charaTalk D]
+[charaFadein G 0.1 0]
+[charaFace D 4]
+[charaFadein D 0.1 2]
+＠小次郎
+哎呀，不知不觉兴致就上来了。请原谅我。
+[k]
+
+？1：真厉害呢，用燕返连斩100人。
+
+？2：陛下也无比满足呢。
+
+？！
+
+[charaFadeout D 0.1]
+[charaFace A 1]
+[charaFadein A 0.1 2]
+＠玛修
+小次郎人气鼎沸啊。[r]周边产品也销量惊人。
+[k]
+
+＠玛修
+尼禄陛下也激动万分。[r]甚至还说什么余也要出场，第一百个人是余！
+[k]
+
+[charaFace A 13]
+＠玛修
+不过还好对历史的变更只有这种程度的误差呢。
+[k]
+
+[charaFace G 2]
+＠达·芬奇
+不好，一点都不好。[r]罗玛尼，这修正要怎么处理？
+[k]
+
+[charaFadeout G 0.1]
+[charaFace B 4]
+[charaFadein B 0.1 0]
+＠Dr.罗曼
+啊啊……原本是去恢复历史的，[r]结果却改变了历史……怎么办，芙芙？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadein C 0.1 2]
+＠芙芙
+芙！！
+[k]
+
+[charaFadeout C 0.1]
+[charaFace A 1]
+[charaFadein A 0.1 2]
+＠玛修
+芙芙说『拼尽全力，加班』。[r]医生，优胜奖品是蒲烧鳗鱼，要吃吗？
+[k]
+
+[charaFace B 2]
+＠Dr.罗曼
+不要啦，快去还给罗马！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_2 0.4]
+[wait fade]
+[soundStopAll]
+[end]

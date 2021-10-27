@@ -1,0 +1,1351 @@
+
+
+
+＄03-00-06-19-1-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 1017002 1 武藏]
+[charaSet B 8001400 1 玛修]
+[charaSet C 3041001 1 凯妮斯]
+[charaSet D 4040002 1 欧罗巴]
+[charaSet E 9005001 1 福尔摩斯]
+[charaSet F 1098189810 1 宙斯]
+[sceneSet G 94200 1]
+
+[sceneSet H 10000 1]
+[charaScale H 1.01]
+
+[charaSet R 5009000 1 特效用dummy]
+[charaSet S 5009000 1 特效用dummy]
+[charaSet T 5009000 1 特效用dummy]
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 10000]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk depthOff]
+[charaDepth R 0]
+[charaDepth S 1]
+
+[charaPut R 1]
+[charaEffect R bit_talk_kengekiall02]
+[charaPut S -70,50]
+[charaScale S 1.2]
+[charaEffect S bit_talk_14]
+[se ad32]
+[wt 0.3]
+[charaScale S 1.1]
+[charaPut S 60,10]
+[charaEffect S bit_talk_14]
+[se ad32]
+[wt 0.2]
+[charaScale S 1.4]
+[charaPut S -50,-20]
+[charaEffect S bit_talk_14]
+[se ad32]
+[wt 0.1]
+[charaScale S 1.0]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 91500]
+
+[fadein black 0.7]
+[wait fade]
+
+
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+[se ad399]
+[charaEffect B bit_talk_shield_mash_atn]
+[wt 0.6]
+
+[se ade344]
+[charaPut R -50,10]
+[charaEffect R bit_talk_impactlanding]
+[shake 0.03 7 7 1.5]
+[wt 1.6]
+[se ade345]
+[charaPut S 100,0]
+[charaEffect S bit_talk_impactlanding]
+[shake 0.03 7 7 1.5]
+[charaShake B 0.05 2 2 0.6]
+[charaMove B 0,-20 1.0]
+[se ad468]
+[wt 1.4]
+[seStop ad57 0.2]
+
+＠玛修
+承受住……踩踏……！
+[k]
+
+[charaFace B 2]
+＠玛修
+就这样往上弹跳，凯妮斯小姐！
+[k]
+
+[messageOff]
+[se ad880]
+[se ad876]
+[fadeout white 0.2]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_shield_mash_atn]
+
+[shake 0.03 0 5 1.5]
+[fadein white 0.2]
+
+[wt 0.2]
+[se ad898]
+[seVolume ad898 0 0.6]
+[se ad882]
+[wait fade]
+[wt 0.6]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠凯妮斯
+哈！　居然顶住了大块头的脚跟啊！[r]你还挺有蛮力的嘛，玛修·基列莱特！
+[k]
+
+[charaFace C 2]
+
+＠凯妮斯
+那我也[line 3]！[r]喝啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊！
+[k]
+
+[messageOff]
+[messageOff]
+[se ad678]
+[seVolume ad678 0 0.4]
+[charaMoveScale C 1.1 0.2]
+[charaMove C 0,15 0.2]
+[charaFadeout C 0.2]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[wt 0.2]
+[blurOff motion 0.3]
+[wt 0.3]
+[charaScale C 1.0]
+[wt 0.2]
+[cueSe Battle bac169]
+[se ad878]
+[fowardEffect bit_talk_v_slash01]
+[wt 0.8]
+[se ad881]
+[se ad880]
+
+[se ad625]
+[shake 0.05 2 3 1.5]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠武藏
+好机会！
+[k]
+
+[messageOff]
+[effect bit_talk_quickmove]
+[charaFadeout A 0.2]
+[se ad73]
+[wt 0.6]
+
+[effect bit_talk_kengekiall02 0,0 F]
+[wt 0.2]
+[se ad687]
+[seVolume ad687 0 0.6]
+[wt 0.2]
+[se ad686]
+[seVolume ad686 0 0.6]
+[wt 0.2]
+[se ad686]
+[seVolume ad686 0 0.6]
+[wt 0.05]
+[fowardEffect bit_talk_kengekiall02 0,0 V]
+[wt 0.2]
+[se ad686]
+[seVolume ad686 0 0.6]
+[wt 0.2]
+[se ad687]
+[seVolume ad687 0 0.6]
+[wt 0.4]
+
+[charaPut R 1]
+[charaEffect R bit_talk_x_slash03]
+[cueSe Battle bac509]
+[wt 0.3]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.2]
+
+[bgmStop BGM_EVENT_24 2.5]
+
+[charaPut R 1200,1200]
+[charaEffectDestroy S]
+
+[se ad625]
+[se ad886]
+[seVolume ad886 0 0.6]
+[wt 1.5]
+[seStop ad886 2.0]
+[wt 0.5]
+[se ad619]
+[seVolume ad619 0 0.6]
+
+[wt 1.6]
+
+[seStop ad619 2.0]
+
+[se ad628]
+[effect bit_talk_impactlanding]
+[shake 0.05 1 6 1.5]
+[wt 3.5]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠欧罗巴
+啊[line 6]
+[k]
+
+＠欧罗巴
+啊，啊啊……啊啊啊……
+[k]
+
+＠欧罗巴
+我的……塔罗斯、塔罗斯、塔罗斯……！
+[k]
+
+[charaFace D 10]
+
+＠欧罗巴
+我心爱的……那位大人，[r]赐予我的……珍贵的……
+[k]
+
+＠欧罗巴
+塔罗斯……！
+[k]
+
+[charaDepth D 5]
+[charaDepth E 4]
+
+[se ad73]
+
+[charaPut E 200,0]
+
+[charaEffect E bit_talk_quickmove]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 200,0]
+
+＠福尔摩斯
+恕我失礼。Your Majesty。
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[se bac148]
+[charaEffect D bit_talk_13 0,30]
+[charaShake D 0.05 2 2 0.8]
+[wt 0.8]
+[charaMove D 0,-15 0.4]
+[charaFadeout D 0.4]
+[wt 0.2]
+[se ad775]
+[wt 0.5]
+
+？1：福尔摩斯！
+
+？！
+
+[charaFace E 6]
+
+＠福尔摩斯
+没事，我只是击中要害让她晕了过去而已。[r]我怎么可能会对妇女出手呢？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad632]
+[seVolume ad632 0 0.6]
+[wt 1.8]
+
+
+[effect bit_talk_thunder_01]
+[se ade346]
+[flashin once 0.2 0.2 FFFFFFAF FFFFFF00]
+[wt 2.0]
+
+[seStop ad632 2.0]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠福尔摩斯
+…………不过。
+[k]
+
+＠福尔摩斯
+就算是绅士行为，[r]也会惹怒全能神吗。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 1.0]
+
+[bgm BGM_EVENT_114 0.1]
+
+＠宙斯
+为何。
+[k]
+
+＠宙斯
+为何不杀。[r]你们忘了吗。
+[k]
+
+＠宙斯
+我已命令你们处决神妃欧罗巴。[r]你们自当视为恩宠并迅速执行。
+[k]
+
+＠宙斯
+为何……[r]不杀？
+[k]
+
+＠宙斯
+难道即便在这种局面下，[r]你还打算[#希求:声称]人类是拯救人类的生命吗？
+[k]
+
+？1：[line 6]
+？2：…………这……
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 21]
+[charaFadein C 0.1 1]
+＠凯妮斯
+不啊？
+[k]
+
+＠凯妮斯
+我非常想杀哦！[r]奥林波斯诸神，我要将你们统统杀光！
+[k]
+
+＠凯妮斯
+虽然波塞冬那混账早就翘辫子了，[r]但宙斯，你也让我相当火大[line 3]
+[k]
+
+[charaFace C 2]
+
+＠凯妮斯
+给我！　去死吧！
+[k]
+
+＠凯妮斯
+消融于天，消融于雷，从[#世界:星球]上消失吧！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠宙斯
+凯妮斯。获赐波塞冬权能的女人啊。
+[k]
+
+＠宙斯
+你身为基尔什塔利亚的从者，[r]却不服从诸神，不悔改自身之愚昧，
+[k]
+
+＠宙斯
+因傲慢而败于迦勒底之手，[r]遭到狄俄斯库里肃清。
+[k]
+
+＠宙斯
+到这里为止都在余的预测之内。[r]然而之后的行动实在是匪夷所思。
+[k]
+
+＠宙斯
+你为何没有消灭。[r]为何会站在迦勒底那边。
+[k]
+
+＠宙斯
+为何[line 3]不。[r]是被安排了如此前行的道路吗。
+[k]
+
+[charaFace F 3]
+
+＠宙斯
+挺能干的嘛，沃戴姆。[r]这样一来，确实不能说是你的过失。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠凯妮斯
+噢。我之所以帮助迦勒底，[r]都是因为你们这群奥林波斯笨蛋太笨了！
+[k]
+
+＠凯妮斯
+以牙还牙是天经地义吧？[r]全都是我的独断专行啦！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠宙斯
+你想说一切都是诸神的傲慢所致吧。[r]包括你自身的命运在内。
+[k]
+
+[charaFace F 0]
+
+＠宙斯
+[line 3]那你又如何呢，宫本武藏。[r]你并非泛人类史的英灵。
+[k]
+
+＠宙斯
+你是从等同于异闻带、与奥林波斯[r]同样“遭废弃”的历史中零落之物。
+[k]
+
+＠宙斯
+你为何要对神明兵刃相向。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠武藏
+问我为何，因为你是迦勒底的敌人啊？[r]除此以外没有其他理由了。
+[k]
+
+＠武藏
+泛人类史是否正确，[r]异闻带是否也有留存的权利，
+[k]
+
+＠武藏
+哪边是正确的，而哪边又是错误的。[r]这些问题我根本无法认真思考。
+[k]
+
+＠武藏
+为他人而战时，自然要为[r]自己打从心底信赖的人而挥剑啊。
+[k]
+
+[charaFace A 6]
+
+＠武藏
+我就是这样的人类。[r]毕竟我骨子里就是个恶徒。
+[k]
+
+[charaFace A 0]
+
+＠武藏
+而现在，我是为了我自己而挥剑。
+[k]
+
+＠武藏
+为了到达费尽一生所追求的境界，[r]并痛快地跨越那个境界。
+[k]
+
+[charaFace A 12]
+
+＠武藏
+[line 3]大神宙斯。[r]我本以为你或许就是我的目的地，但看来并非如此。
+[k]
+
+＠武藏
+我的剑所指的目标并不是你。[r]你不过是途中的巨大障碍罢了。
+[k]
+
+＠武藏
+不先扑灭身边危险的火苗，就无法前进。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠宙斯
+火苗[line 3]
+[k]
+
+＠宙斯
+不断旅行，丧失了旅途终点的剑士。[r]竟这么比喻既是天空亦为全能神的余吗。
+[k]
+
+＠宙斯
+那么你会怎样做？
+[k]
+
+＠宙斯
+你在这奥林波斯中，[r]面对将要焚尽自身的火焰，
+[k]
+
+＠宙斯
+又该如何保护自己，[r]如何贯彻自己的道路呢。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+[wt 1.2]
+[se bac306]
+[charaFace A 5]
+
+＠武藏
+[line 3]当然是蛮干到底啦！
+[k]
+
+＠武藏
+管你是天空还是雷电，统统斩于刀下，[r]我身自当行于我道！
+[k]
+
+＠武藏
+将高悬头上的空想树！[r]不，是将如今名为阿特拉斯世界树的空想之根，全部！
+[k]
+
+[charaFace A 2]
+
+＠武藏
+迅速果断！[r]斩于刀下！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_114 2.0]
+
+[se ad61]
+[seVolume ad61 0 0.4]
+[effect bit_talk_lightning_02t]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+[wt 1.5]
+
+＠宙斯
+哦。
+[k]
+
+[charaFace F 1]
+
+＠宙斯
+真有意思。
+[k]
+
+[charaFace F 0]
+
+＠宙斯
+人类。[r]以及人类沦落而成的英灵们啊。
+[k]
+
+＠宙斯
+你们懂得思考。在那渺小的身躯内，[r]各自怀着截然不同的愿望与苦恼。
+[k]
+
+[effectStop bit_talk_lightning_02t]
+
+＠宙斯
+分明如此渺小，[r]如此脆弱[line 3]
+[k]
+
+[messageOff]
+[charaFaceFade F 6 0.2]
+[wt 1.5]
+[charaFaceFade F 0 0.2]
+[wt 0.2]
+
+[bgm BGM_EVENT_71 0.1]
+＠宙斯
+…………曾经，在约一万四千个周期以前。
+[k]
+
+＠宙斯
+历经名为[#白色:Leukos]战争的大战，[r]吾，吾等甚至粉碎了身为白色毁灭的[#巨影:赛法卢]。
+[k]
+
+＠宙斯
+没错。吾等竭尽全力，[r]令本应毁灭的[#史前文明:这个世界]得以存续。
+[k]
+
+＠宙斯
+然而这次的你们，泛人类史。[r]你们绝非毁灭，绝非神明，
+[k]
+
+＠宙斯
+甚至连毁灭的化身，[r]或是其分灵的[#巨人:癸干忒斯]都算不上。
+[k]
+
+[charaFaceFade F 6 0.2]
+
+＠宙斯
+实在……[r]实在过于渺小。
+[k]
+
+＠宙斯
+渺小之辈啊。[r]弱小之辈啊。
+[k]
+
+＠宙斯
+吾再度向你们发问。
+[k]
+
+[charaFaceFade F 0 0.2]
+
+＠宙斯
+[line 5][#为何]。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+…………………………？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠福尔摩斯
+身为全能的你问题倒挺多的。[r]宙斯神，难道这算你对我们的慈悲吗？
+[k]
+
+＠福尔摩斯
+又或者，你只是想[r]重新确认一遍已经获悉的情报呢。
+[k]
+
+[charaFace E 5]
+
+＠福尔摩斯
+不过，当前情况应该属于后者吧……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠宙斯
+为何。
+[k]
+
+＠宙斯
+你们为何要踏上旅程。[r]你们为何要残杀[#异闻带:吾等]。
+[k]
+
+＠宙斯
+这颗行星上的所谓人理，[r]刻印的人类史早已全部化作白纸。
+[k]
+
+？1：……答案我已经告诉过你了。
+
+[charaFaceFade F 6 0.2]
+
+＠宙斯
+为了夺回世界。[r]是吧。
+[k]
+
+？2：为了夺回世界。
+
+[charaFaceFade F 6 0.2]
+
+＠宙斯
+为了，夺回世界
+[k]
+
+？！
+
+＠宙斯
+…………你想要拯救这[#行星:世界]，拯救泛人类史？
+[k]
+
+[charaFaceFade F 1 0.2]
+
+[bgmStop BGM_EVENT_71 2.0]
+
+＠宙斯
+哈哈。
+[k]
+
+＠宙斯
+哈哈，哈哈哈哈哈。哈哈哈。
+[k]
+
+[charaFace F 2]
+
+＠宙斯
+哈[messageShake 0.05 3 3 0.6]哈，哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈！[r]哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad875]
+[se ad14]
+[seVolume ad14 0 0.4]
+[shake 0.05 0 2 1.2]
+[effect bit_talk_pressure]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+[charaShake B 0.05 2 2 0.4]
+
+＠玛修
+呜……！[r]又是那种重压……！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[effectStop bit_talk_pressure]
+[wt 0.8]
+[seStop ad14 2.0]
+
+[bgm BGM_MAP_58 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠宙斯
+[f large]有意思！
+[k]
+
+[messageOff]
+[effect bit_talk_thunder_01]
+[se ade346]
+[flashin once 0.2 0.2 FFFFFFAF FFFFFF00]
+[wt 2.0]
+
+＠宙斯
+你们果然很有意思。[r]若要将一切都委托给全能的我倒也罢了！
+[k]
+
+＠宙斯
+然而你们这些渺小之辈却说要凭自身力量去实现！[r]就在吾之轨道大神殿奥林匹亚·多多那的祭坛上！
+[k]
+
+＠宙斯
+愉快。着实愉快。
+[k]
+
+＠宙斯
+啊啊……[r]是这样啊。你们原来是这么回事。
+[k]
+
+＠宙斯
+[#我的女儿:阿耳忒弥斯]！　[#我的弟弟:波塞冬]！　[#我的妹妹:得墨忒耳]！　[#我的女儿:阿佛洛狄忒]！[r]难怪没有灵魂的虚无钢铁终究赢不了你们！
+[k]
+
+＠宙斯
+这愚直、这炫目的光辉该如何形容！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad875]
+[se ad14]
+[seVolume ad14 0 0.4]
+[shake 0.05 0 2 1.2]
+[effect bit_talk_pressure]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+[charaShake C 0.05 2 2 0.4]
+
+＠凯妮斯
+混账……！[r]每次，每次都只会耍同一招……呜！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaShake A 0.05 2 2 0.4]
+
+＠武藏
+这种……重压……！[r]已经在……挤压骨头了……！
+[k]
+
+[charaFace A 2]
+
+＠武藏
+玛修！[r]待在[%1]身边！
+[k]
+
+＠武藏
+只要有你持有的加护，肯定，[r]多少能缓和一些……我抱着这种期待啦！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠玛修
+啊，好的！[r]御主，请待在我身旁！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[effectStop bit_talk_pressure]
+[seStop ad14 2.0]
+[wt 0.5]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠宙斯
+迦勒底的人们。[r]泛人类史的我或许会将你们升上天空，化作星座吧。
+[k]
+
+＠宙斯
+然而[line 3]
+[k]
+
+＠宙斯
+我不一样。
+[k]
+
+＠宙斯
+我虽宽宏，却非慈悲之神，[r]吾乃以雷电征服人类的神明。
+[k]
+
+[charaFaceFade F 6 0.2]
+
+＠宙斯
+[#真体:Alithia]啊。[r]降临此处。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad632]
+[seVolume ad632 0 0.5]
+[effect bit_talk_lightning_02t]
+[wt 1.5]
+
+[se ade130]
+[se ad630]
+[scene 91501 3.0]
+[wt 3.0]
+
+[se ad842]
+[se ade346]
+[effect bit_talk_thunder_02]
+[se ad879]
+[skip false]
+[wt 2.0]
+
+＠神殿语音
+[line 3]大带电，确认。
+[k]
+
+＠神殿语音
+[line 3]大主神，承认。
+[k]
+
+＠神殿语音
+[line 3]与神器克洛诺斯·王冠的同步，完毕。[r][line 3]即刻解除[#真体:Alithia]的空间伪装。
+[k]
+
+＠神殿语音
+[line 3]空间展开，设定于大祭坛领域正上方。[r][line 3]神格真体名，宙斯。
+[k]
+
+＠神殿语音
+[line 3]指定灵基：Ancient God／Ruler。
+[k]
+
+＠神殿语音
+[line 3]展开、展开、展开。[r][line 3]请周围智慧生命迅速离去。
+[k]
+
+[messageOff]
+[se ade393]
+[shake 0.05 3 3 1.5]
+
+[bgmStop BGM_MAP_58 1.0]
+[wipeout rectangleStripUpToDown 0.8 1.0]
+[wait wipe]
+
+[effectStop bit_talk_lightning_02t]
+
+[scene 10000]
+[wt 1.0]
+
+[wipein rectangleStripUpToDown 0.1 1.0]
+[wait wipe]
+[seStop ade48 1.5]
+[seStop ad632 1.5]
+
+[se ade346]
+[effect bit_talk_thunder_01]
+
+[wt 1.5]
+
+[se ade346]
+[se ad842]
+[seVolume ad842 0 0.6]
+[effect bit_talk_thunder_02]
+
+[fadeout white 1.2]
+[wait fade]
+
+
+[wt 2.0]
+
+[scene 94200]
+
+[fadein white 3.0]
+[bgm BGM_EVENT_114 0.1]
+[criMovie talk_mov052 bgmPlay false]
+[wait fade]
+[wt 5.0]
+[overlayFadein G 1.5 0,-200]
+[wt 2.5]
+
+？1：天空中，出现了……！
+
+？！
+
+？1：巨大的，神的……脸庞……！
+
+？！
+
+[skip true]
+
+[charaFadeout G 1.0]
+
+＠
+超大。
+[k]
+
+＠
+神颜。
+[k]
+
+
+[messageOff]
+[se ad895]
+[seVolume ad895 0 0.1]
+[seVolume ad895 1.0 1.0]
+[seStop ade393 2.0]
+
+[wt 2.0]
+
+
+＠
+几乎要延伸到遥远苍穹的神钢巨大构造体。[r]这就是神之[#象:形体]。
+[k]
+
+＠
+坐镇于星间都市山脉奥林波斯的诸神之主，[r]兼横渡星海舰队的旗舰。
+[k]
+
+＠
+司掌天空与雷的[#真体:Alithia]。[r][line 3]作为神之名讳，是全能之大主神宙斯。
+[k]
+
+＠
+名讳的含义是“闪耀”。[r]支配天空中一切自然现象的大神。
+[k]
+
+＠
+凭借各种权能与众多机能引导人类的大要塞。
+[k]
+
+
+＠
+[line 3]乃是庇护人类的神。然而。
+[k]
+
+
+[clear]
+
+[se ad875]
+
+＠
+[f large][align center]『　跪伏吧　』[align]
+[k]
+
+＠
+[f large][align center]『　崇拜吧　』[align]
+[k]
+
+＠
+[f large][align center]『　吾乃全能神宙斯　』[align]
+[k]
+
+[messageOff]
+[se ade346]
+[se ad842]
+[seVolume ad842 0 0.6]
+[effect bit_talk_thunder_02]
+[wt 3.0]
+
+
+
+[charaPut H 1]
+[charaFadeTime H 0 0.6]
+[wt 0.1]
+
+＠阿黛勒
+……星际战斗用歼灭型机动要塞，旗舰宙斯！
+[k]
+
+＠马卡里俄斯
+通过掌控神器克洛诺斯·王冠，[r]拥有了十二神的全部权能……
+[k]
+
+＠马卡里俄斯
+那家伙是无敌的要塞！
+[k]
+
+＠马卡里俄斯
+不要去考虑如何攻击！[r]先想办法贯彻防御，保住性命！
+[k]
+
+＠马卡里俄斯
+一直撑到埃忒耳启动为止……！
+[k]
+
+
+[charaFadeout H 0]
+[wt 0.1]
+
+＠
+[align center]『　吾乃　天空　』[align]
+[k]
+
+＠
+[align center]『　吾乃　雷霆　』[align]
+[k]
+
+＠
+[align center]『　既是自苍穹支配万象的全能之神　』[align]
+[k]
+
+＠
+[align center]『　地球　亦当由吾来拯救　』[align]
+[k]
+
+＠
+[f large][align center]『　此乃神话复权　』[align]
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.6 1.0]
+[wait wipe]
+
+[scene 91501]
+[wt 0.1]
+
+[wipein rectangleStripUpToDown 0.6 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠福尔摩斯
+那么宙斯！[r]这次换我来问你了！
+[k]
+
+＠福尔摩斯
+空想树麦哲伦！[r][line 3]按照你取的名字，则是阿特拉斯的世界树！
+[k]
+
+＠福尔摩斯
+你打算如何处理这[r]已经在地球上盘根错节的空想之根呢！
+[k]
+
+＠福尔摩斯
+那虽是产生及维持异闻带的关键，[r]但同时也应该是『异星之神』用于降临的触媒！
+[k]
+
+[charaFace E 5]
+
+＠福尔摩斯
+你打算与终将降临的『异星之神』……[r]共同支配这个地球吗？
+[k]
+
+＠福尔摩斯
+你可谓全能之神。[r]这样的你，会与『异星之神』[line 3]
+[k]
+
+[charaFace E 2]
+
+＠福尔摩斯
+会与恐怕都不算同一神话体系的家伙共同统治吗？[r]不，绝对不可能！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.6 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[scene 94200]
+[wt 0.1]
+
+[wipein rectangleStripDownToUp 0.6 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠
+[align center]『　……　』[align]
+[k]
+
+＠
+[align center]『　果然　』[align]
+[k]
+
+＠
+[align center]『　你是个危险的存在　贤者啊　』[align]
+[k]
+
+＠
+[align center]『　你　不可注视吾　』[align]
+[k]
+
+＠
+[align center]『　你　不可注视神　』[align]
+[k]
+
+＠
+[align center]『　你的眼眸　乃世界之敌　』[align]
+[k]
+
+[charaPut H 1]
+[charaFadeTime H 0 0.6]
+
+＠福尔摩斯
+不要转移话题！
+[k]
+
+＠福尔摩斯
+而且，我现在……[r][#还在承受着你的诅咒]！
+[k]
+
+[charaFadeout H 0]
+[wt 0.1]
+
+＠
+[align center]『　……　』[align]
+[k]
+
+[charaPut H 1]
+[charaFadeTime H 0 0.6]
+
+＠福尔摩斯
+你究竟在想些什么，全能神。[r]对于『异星之神』……
+[k]
+
+＠福尔摩斯
+你[#究竟打算如何应对]！
+[k]
+
+[messageOff]
+[charaFadeout H 0]
+
+[se ade346]
+[se ad842]
+[seVolume ad842 0 0.6]
+[effect bit_talk_thunder_02]
+[wt 2.0]
+
+＠
+[align center]『　呜呼　渺小之辈　』[align]
+[k]
+
+＠
+[align center]『　你们的存在令我注意到了许多　』[align]
+[k]
+
+＠
+[align center]『　背负世界的苦恼　』[align]
+[k]
+
+＠
+[align center]『　让那渺小的身躯背负的残酷　』[align]
+[k]
+
+＠
+[align center]『　决不能　让吾之子民承受的东西　』[align]
+[k]
+
+[se ad875]
+
+＠
+[align center]『　人类啊　』[align]
+[k]
+
+＠
+[align center]『　成为不苦恼　不反抗　不思考　顺从的芦苇吧　』[align]
+[k]
+
+＠
+[align center]『　只由吾来思考　』[align]
+[k]
+
+＠
+[align center]『　只由吾来苦恼　』[align]
+[k]
+
+＠
+[align center]『　你们只需存在下去　』[align]
+[k]
+
+＠
+[align center]『　只需展露微笑　』[align]
+[k]
+
+
+＠
+[align center]『　只需献上对神明的崇敬　即可　』[align]
+[k]
+
+[messageOff]
+[se ade282]
+[se ad489]
+[se ade393]
+[se ad911]
+[scene 94201 0.3]
+
+[se ade346]
+[se ad842]
+[seVolume ad842 0 0.6]
+
+[wt 1.5]
+
+＠
+[align center]『　泛人类史　』[align]
+[k]
+
+＠
+[align center]『　会思考的芦苇们啊　』[align]
+[k]
+
+＠
+[align center]『　触碰黑色光芒的愚者啊　』[align]
+[k]
+
+＠
+[align center]『　[#可怖的存在啊]　』[align]
+[k]
+
+＠
+[align center]『　暂且入眠吧　』[align]
+[k]
+
+＠
+[align center]『　当你们　再度苏醒时　』[align]
+[k]
+
+＠
+[align center]『　你们的双眼　将仰望实现神话复权的我　』[align]
+[k]
+
+
+[messageOff]
+[effect bit_talk_thunder_01]
+[shake 0.05 3 3 0.9]
+[se ade346]
+[flashin once 0.2 0.2 FFFFFFAF FFFFFF00]
+[wt 1.4]
+
+
+[se ade346]
+[se ad842]
+[seVolume ad842 0 0.8]
+[effect bit_talk_thunder_02]
+[shake 0.05 3 5 1.0]
+[fadeout white 0.6]
+[wait fade]
+
+[wt 0.8]
+[scene 10000]
+[seStop ade393 2.5]
+[fadein white 2.0]
+[wait fade]
+
+
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_114 0.4]
+[wait fade]
+[soundStopAll]
+[end]

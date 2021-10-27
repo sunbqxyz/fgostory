@@ -1,0 +1,319 @@
+
+
+
+
+
+
+
+＄94-03-50-09-1-1
+
+[soundStopAll]
+
+
+[charaSet A 1098164200 1 巨大鬼魂女官1]
+[charaSet B 99502600 1 玛修]
+[charaSet C 1098158220 1 希翁]
+[charaSet D 1098158230 1 希翁_举手_通讯]
+[charaSet E 10003000 1 杀生院祈荒]
+[charaSet F 1098163800 1 春日局]
+
+[imageSet G cut103_item01 1]
+
+[charaSet I 98115000 1 特效用2]
+[charaSet J 98115000 1 特效用1]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[scene 72000]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[se bac30]
+[fowardEffect bit_talk_14]
+[wt 0.4]
+[seStop bac30 0.4]
+[wt 0.2]
+
+[se bac18]
+[flashin once 0.1 0.1 FFFFFF50 FFFFFF00]
+[charaShake A 0.02 5 5 0.4]
+[wt 0.8]
+
+[charaSpecialEffect A enemyErasure 1 2.0]
+[cueSe Battle ba6]
+[wt 1.6]
+[bgmStop BGM_EVENT_80 0.8]
+[wt 1.0]
+[cueSeStop ba6 0.3]
+
+[bgm BGM_EVENT_77 0.1]
+
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠玛修
+巨大鬼魂类型，消灭。[r]辛苦了！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠希翁
+这里居然也有。[r]说明这个类型果然代表了门卫吧。
+[k]
+
+[charaFace C 15]
+＠希翁
+……唔？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[wt 0.1]
+
+[cueSe Battle bas2]
+[wt 0.2]
+[charaFadein G 0.7 0,-200]
+[wt 2.2]
+
+[se ad592]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_77 0.5]
+[wait fade]
+
+[charaFadeout G 0.1]
+[scene 10001]
+[wt 1.5]
+
+[fadein white 0.1]
+[wait fade]
+
+？1：（又来了……！）
+？！
+
+[fadeout white 0.1]
+[wait fade]
+
+[charaPut I 1]
+[charaEffect I bit_talk_noise02]
+[wt 1.0]
+
+[fadein white 0.5]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_EVENT_1 0.1]
+
+＠混杂的呢喃
+……尽管在战乱之世常有这种事……[r]……但未免太年幼了……
+[k]
+
+＠混杂的呢喃
+……这样一来，幕府只会任凭新井白石和间部诠房的摆布……[r]……不过是个摆设。什么将军啊……
+[k]
+
+＠
+[line 3][r][line 6]
+[k]
+
+＠
+啊～。啊～啊～。[r]呜呜，呜哇啊啊……
+[k]
+
+＠甜美的女人声音
+啊啊，怎么了，怎么了？[r]是不是有人说你的坏话了？
+[k]
+
+＠甜美的女人声音
+年轻又有什么办法。[r]会嘲笑这点的人才是愚蠢之辈。
+[k]
+
+＠甜美的女人声音
+只有我，只有我能爱这份年轻。
+[k]
+
+＠甜美的女人声音
+来吧，我们来玩些什么。[r]无论是什么，我都愿意奉陪哦[line 3]
+[k]
+
+[messageOff]
+[se ad592]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_1 0.5]
+[wait fade]
+
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_noise02]
+
+[scene 72000]
+[wt 1.5]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+？1：（又是只有我一个人……能听到吗。）
+？2：（没有什么讨厌的感觉，这是什么啊。）
+？！
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠杀生院祈荒
+又是印笼啊。[r]里面，唔……刻着『家继』。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠希翁
+数据库中搜索到了七代将军德川家继。[r]仍然是未来将军的名字。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠春日局
+七代是家继大人啊。是家光大人的曾孙？[r]是吗是吗！
+[k]
+
+＠春日局
+顺便问一下，他是个如何统治天下的将军呀？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠玛修
+（这……说不出口……不敢说他是个才几岁就成了将军，[r]　而且仅在位数年，就去世了的人物。）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+＠D：希翁
+咳咳！　作为女神一派的人，[r]可不能轻易将后世的事情透露给他人。
+[k]
+
+＠D：希翁
+所以我们无法回答您。[r]请务必给予理解。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠春日局
+哎呀。原来如此，因为如果知道了将来的事，[r]就会[#搅乱整体的预定]吧？
+[k]
+
+＠春日局
+我明白了，不用告诉我详情了。[r]我只要知道德川将来能安泰就足够了。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+＠杀生院祈荒
+（……居然用整体的预定这个词……[r]　明明没有魔术知识或是近代知识，）
+[k]
+
+＠杀生院祈荒
+（就感受到过去现在与未来是一条带上的存在……[r]　简直可以说具备了俯瞰整体的观察力。）
+[k]
+
+＠杀生院祈荒
+（若是这种水准的人物，原来如此[line 3][r]　难怪会成为在历史上留名的女杰。）
+[k]
+
+[charaFace E 7]
+＠杀生院祈荒
+（但是，又令人无比悲伤。[r]　这位的临终时刻，一定非常痛苦吧……）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠希翁
+总之，和第一个一样，[r]这个或许也可以用在追加限定功能方面。
+[k]
+
+[charaFace C 6]
+＠希翁
+让我们马上试试看吧！
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[charaPut J 1200,1200]
+[charaFadeout C 0.1]
+[wt 0.5]
+[soundStopAll]
+
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+
+[cueSe Battle bas2]
+[charaFace G 0]
+[charaFadein G 0.5 0,-200]
+[wt 1.4]
+
+＠
+[s 1000]
+　　　　[s 16]获得了第七代将军『德川家继的印笼』。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[wait fade]
+[end]

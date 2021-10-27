@@ -1,0 +1,331 @@
+
+
+＄94-01-19-18-1-0
+[soundStopAll]
+[charaSet A 10002000 1 Meltryllis]
+[charaSet B 1030000 1 铃鹿御前]
+[charaSet C 10001000 1 Passionlip]
+[charaSet D 2008001 1 崔斯坦]
+[charaSet E 7016001 1 玉藻猫]
+[charaSet F 7016001 1 特效用]
+
+
+[scene 10000]
+[fadein black 1.5]
+[wait fade]
+[charaDepth F 0]
+[charaDepth A 1]
+[charaDepth B 2]
+[charaDepth C 3]
+[charaDepth D 4]
+[charaDepth E 5]
+
+[charaPut F 0,0]
+[charaEffect F bit_talk_43h]
+
+[se ad75]
+[wt 1.5]
+[charaEffectStop F bit_talk_43h]
+[charaPut F 0,-1000]
+[scene 41000 0.7]
+[wt 2.0]
+[se ad74]
+[shake 0.01 5 5 0.7]
+[wt 0.7]
+
+？1：好痛！？
+
+？！
+
+[messageOff]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[scene 10000]
+[charaEffect F bit_talk_43h]
+[charaPut F 0,0]
+[wt 0.4]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+[se ad75]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.4 1]
+＠崔斯坦
+……这不算什么！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+＠铃鹿御前
+我说Melt，你好重啊！？[r]为什么要贴着我不放啦！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Meltryllis
+没办法吧，只能用排除法！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠玉藻猫
+呜哇，该死的BB[line 3]！[r]别以为我们会永远掉入你的陷阱[line 2]！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠Passionlip
+让让让……让开啦[line 3]！[r]万一成了我的垫子可不是闹着玩的[line 2]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[messageOff]
+[charaEffectStop F bit_talk_43h]
+[charaPut F 0,-1000]
+[scene 41000 0.7]
+[se ad74]
+[shake 0.01 5 10 1.0]
+[wt 1.5]
+
+？1：Lip！？
+[bgm BGM_EVENT_2 0.1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+[se ad7]
+[charaMove C 0,0 0.4]
+＠Passionlip
+嗯！　你没事就好，[r][%1]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？2：猫！？
+[bgm BGM_EVENT_2 0.1]
+[se ad7]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠玉藻猫
+哈哈哈，我终于追上你了哦，主人！[r]看来在坠落过程中，我无谓的旋转还是有价值的！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Meltryllis
+这样啊。全员到齐了吧。[r]虽然对采取这种强硬行为多少有些介意，但一定有其用意吧。
+[k]
+
+[charaFace A 6]
+＠Meltryllis
+那我们尽快解决问题吧。
+[k]
+
+＠Meltryllis
+这里是[#残酷之掌:Cruel Thenar]。[r]是被赐予我的卫士用特区。
+[k]
+
+＠Meltryllis
+塞拉菲克斯装成在挖掘石油……[r]实际是为探索[#灵脉:Ley line]的隐秘设施。
+[k]
+
+＠Meltryllis
+简单来说，就像是在调查地球的脑波。[r]类似用脚踩踏葡萄酿制红酒的方法。
+[k]
+
+[charaFace A 1]
+＠Meltryllis
+不过这个问题无关紧要。[r]时间也所剩无几了。
+[k]
+
+[bgmStop BGM_EVENT_2 0.7]
+＠Meltryllis
+单刀直入地说[line 3][r]进入我的体内吧，[%1]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+＠玉藻猫
+什喵！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠崔斯坦
+……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠铃鹿御前
+（这也太直接了吧……[r]　简直就像鲨鱼……）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠Passionlip
+M……Melt好大胆……[r]但是，你本来应该更为端庄一些吧？
+[k]
+
+？1：呃……
+？2：……这是什么意思？
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[bgm BGM_EVENT_1 0.1]
+
+＠Meltryllis
+哎呀。你对其他女人不是做过很多次了嘛，[r]对象是我反而萎缩了？
+[k]
+
+[charaFace A 0]
+＠Meltryllis
+这种事不用我说你应该也很明白吧。[r]因为你已经获得了我的『钥匙』。
+[k]
+
+＠Meltryllis
+这里是我的神殿，而你有BB特制的钥匙。[r]那应该能进入我的内心才对。
+[k]
+
+＠Meltryllis
+在那个地方和我战斗，将我击败。[r]因为这是直到最后，你也决不会做的事。
+[k]
+
+？1：…………这样啊。
+？2：…………既然Melt这么说，那好吧。
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠崔斯坦
+好吗！？[r]不，仅凭刚才的对话，你到底明白了什么！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠Meltryllis
+我说你，别打岔。[r][%1]没有明白，什么都没明白。
+[k]
+
+[charaFace A 0]
+＠Meltryllis
+……这家伙只是相信我而已。[r]所以必须由我来说明。
+[k]
+
+[charaFace A 1]
+＠Meltryllis
+好了，让我们尽快开始吧。[r]但是一定要小心？
+[k]
+
+＠Meltryllis
+虽然我的身体如你所见，早已伤痕累累，[r]但心中的我还健在哦？
+[k]
+
+＠Meltryllis
+身为月之背面的快乐Alterego，[r]能随心所欲行动的我还健在。
+[k]
+
+＠Meltryllis
+我可是强大到不讲道理的强敌哦？[r]小心不要因为轻敌而被我吞噬了。
+[k]
+
+？1：……明白了。
+
+？2：我没有小看过Melt。
+
+[charaFace A 6]
+＠Meltryllis
+什么嘛。那真是遗憾。
+[k]
+
+＠Meltryllis
+我好歹也是蜜之女王，[r]还希望你偶尔能被甜美之水所诱惑呢。
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+＠Passionlip
+……[%1]，
+[k]
+
+
+＠Passionlip
+只要打倒心中的Melt，留给Melt的KP也会消失，[r]这个特区的锁就会被解开。
+[k]
+
+
+＠Passionlip
+这是最后的钥匙了。[r]所以，Melt就拜托你了。
+[k]
+
+？1：没问题！
+？2：深层坠落，开始……！
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[messageOff]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[messageOff]
+[bgmStop BGM_EVENT_1 2.0]
+[fadeout white 2.0]
+[wait fade]
+[wt 1.5]
+[soundStopAll]
+[end]
+

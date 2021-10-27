@@ -1,0 +1,302 @@
+
+
+＄94-03-88-02-1-0
+
+[soundStopAll]
+
+[charaSet A 1007000 1 北条高文白]
+[charaSet B 1020000 1 北条兰斯洛特紫]
+[charaSet C 1012000 1 北条贝德维尔绿]
+[charaSet D 2008000 1 北条崔斯坦红]
+[charaSet E 1009001 1 北条莫德雷德红]
+[charaSet F 98001000 1 家老玛修]
+[charaSet G 3019001 1 北条阿尔托莉雅·Alter]
+[charaSet H 3038000 1 长尾景虎]
+[charaSet J 98115000 1 特效用]
+
+[charaDepth A 5]
+[charaDepth B 4]
+[charaDepth C 3]
+[charaDepth D 2]
+[charaDepth E 1]
+
+[scene 20901]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_1 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠北条高文白
+太阳武士，北条高文白！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠北条兰斯洛特紫
+湖之武士，北条兰斯洛特紫！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠北条贝德维尔绿
+银臂武士，北……北条贝德维尔绿！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠北条崔斯坦红
+悲伤武士，北条崔斯坦红……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+
+＠北条莫德雷德红
+而我则是叛逆武士，北条莫德雷德红！
+[k]
+
+[charaFace E 2]
+
+＠北条莫德雷德红
+话[messageShake 0.05 4 4 0.4]说，红色重复了吧！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠北条高文白
+[line 3]我们五个在一起，就是……
+[k]
+
+[messageOff]
+
+[charaTalk off]
+
+[charaFace B 2]
+[charaFace C 2]
+[charaFace D 4]
+[charaFace E 2]
+
+[charaFadein B 0.4 -180,0]
+[wt 0.2]
+[charaFadein C 0.4 200,0]
+[wt 0.2]
+[charaFadein D 0.4 -400,0]
+[wt 0.2]
+[charaFadein E 0.4 400,0]
+[wt 1.2]
+
+＠北条高文白
+『北条五色备不列颠五人众』！！
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_1 0.5]
+
+[charaEffect J bit_talk_fire_storm]
+[wt 0.1]
+[se bac33]
+[seStop bac33 0.7]
+[wt 0.7]
+
+[fowardEffect bit_talk_fire]
+
+[se bac33]
+[seStop bac33 0.7]
+[wt 0.7]
+[charaEffectDestroy J bit_talk_fire_storm]
+
+[wt 0.1]
+
+
+
+[backEffect bit_talk_explosion]
+[se bac37]
+
+[wt 1.0]
+[fowardEffectStop bit_talk_fire]
+[wt 1.5]
+
+[backEffectStop bit_talk_explosion]
+[backEffectDestroy bit_talk_explosion]
+[fowardEffectDestroy bit_talk_fire]
+
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠家老玛修
+[#前辈:殿下]，战国时代的北条家，[bgm BGM_EVENT_7 0.1][r]好像确实存在那样被分成五色的部队呢。
+[k]
+
+？1：但总觉得颜色有点不太一样。
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠北条崔斯坦红
+看来还是应该强迫其中之一去喜欢咖喱呢……[r]我好悲伤……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？2：红色好像重复了吧。
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠北条莫德雷德红
+对吧？　你果然也这么想吧！[r]好，让我们用圆桌议定来分出个黑白来！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+？！
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+
+＠北条阿尔托莉雅·Alter
+太吵了，北条五色备不列颠五人众……
+[k]
+
+＠北条阿尔托莉雅·Alter
+哦……是上杉家和迦勒底家啊……
+[k]
+
+[charaFace G 2]
+
+＠北条阿尔托莉雅·Alter
+你们这群不怕死的蛮族，[r]竟然胆敢进攻我卡美洛小田原城，觉悟吧！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠长尾景虎
+这是我的台词！
+[k]
+
+＠长尾景虎
+居然不在我长尾景虎面前下马，[r]北条果然不可饶恕！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+＠北条阿尔托莉雅·Alter
+不，这都是由于各种原因。[r]其实我也很想偶尔下个马……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠长尾景虎
+不要再狡辩了！　再说身为Lancer居然有马常驻，[r]羡慕嫉妒……不对，太卑鄙了吧！
+[k]
+
+？1：景虎你身为Lancer不也有剑和其他各种……
+
+？2：你不是能用宝具召唤马吗？
+
+？！
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaFace H 14]
+
+＠长尾景虎
+啊～啊～！　我什么都听不见！
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠长尾景虎
+那么关东管领，长尾景虎出击！　一决胜负！
+[k]
+
+
+[messageOff]
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

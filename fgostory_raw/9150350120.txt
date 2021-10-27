@@ -1,0 +1,727 @@
+
+
+＄91-50-35-01-2-0
+
+[soundStopAll]
+
+[charaSet A 5035000 1 阿纳斯塔西娅]
+[charaSet B 1038000 1 伊阿宋]
+[charaSet C 5017001 1 美狄亚·Lily]
+[charaSet D 7001001 1 赫拉克勒斯]
+
+[charaSet J 7001001 1 dummy特效1]
+
+[charaPut J 3000,3000]
+[charaEffect J bit_talk_frozen_cam]
+
+[charaDepth D 1]
+[charaDepth C 5]
+[charaDepth B 9]
+
+
+[scene 31900]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_94 0.1]
+
+＠阿纳斯塔西娅
+……[r]……
+[k]
+
+[charaFace A 4]
+
+＠阿纳斯塔西娅
+……好热……
+[k]
+
+？1：毕竟是在熔岩地带行动嘛……
+？！
+
+[charaFace A 5]
+
+＠阿纳斯塔西娅
+真是的！
+[k]
+
+＠阿纳斯塔西娅
+到底是谁把模拟战斗设置在这种地方的啦！
+[k]
+
+[messageOff]
+[charaFace A 2]
+
+＠阿纳斯塔西娅
+[f large][messageShake 0.04 3 3 0.2]是维哦！！
+[k]
+
+[messageShakeStop]
+[charaFace A 4]
+
+＠阿纳斯塔西娅
+这倒是给我上了一课，[r]不能让维随便设定。
+[k]
+
+＠阿纳斯塔西娅
+好了，总之我们先回去一趟吧。[r]我受不了这种炎热。
+[k]
+
+？1：说得对……
+？2：总之先暂停模拟装置吧。
+？！
+
+[charaFace A 1]
+
+＠阿纳斯塔西娅
+谢谢你，御主
+[k]
+
+[messageOff]
+[se ad15]
+[wt 0.5]
+
+[se ad172]
+[wt 0.8]
+
+[charaFace A 0]
+
+＠阿纳斯塔西娅
+……[r]……
+[k]
+
+[charaFace A 4]
+
+＠阿纳斯塔西娅
+……还没好吗？[seStop ad172 0.5]
+[k]
+
+？1：再稍微等一会儿。
+？！
+
+[messageOff]
+[se ad172]
+[wt 2.2]
+
+[charaFace A 2]
+
+＠阿纳斯塔西娅
+[f large]还没好吗！？[seStop ad172 0.3]
+[k]
+
+？1：奇怪了……
+？！
+
+＠阿纳斯塔西娅
+热[charaMoveReturn A -6,0 0.3][line 2][wt 0.25][charaMoveReturn A 6,0 0.3]死[line 2][wt 0.25][charaMoveReturn A -6,0 0.3]啦[line 2]！[wt 0.25][charaMoveReturn A 6,0 0.3]
+[k]
+
+？1：你这么手舞足蹈的反而会更热啦！
+？！
+
+[charaFace A 4]
+＠阿纳斯塔西娅
+唔唔唔……但站着不动也很热……
+[k]
+
+＠阿纳斯塔西娅
+为了分散注意力，[r]要不要聊一会儿。
+[k]
+
+[charaFace A 0]
+＠阿纳斯塔西娅
+让我想想……话题……[bgm BGM_EVENT_94 1.4 0.6][r]你对我了解多少？
+[k]
+
+？1：还算了解吧……
+
+[charaFace A 1]
+＠阿纳斯塔西娅
+是吗。[r]你认真学习过了呢，我很高兴。
+[k]
+
+[charaFace A 0]
+
+＠阿纳斯塔西娅
+那我就跳过这部分说明了哦。
+[k]
+
+[branch sel01b]
+
+？2：完全不了解。
+
+
+[charaFace A 4]
+
+＠阿纳斯塔西娅
+哎呀，这可不行哦。
+[k]
+
+＠阿纳斯塔西娅
+身为御主，理应具备关于从者的一定知识才行。
+[k]
+
+[charaFace A 1]
+
+＠阿纳斯塔西娅
+好吧。
+[k]
+
+＠阿纳斯塔西娅
+那我就将我的经历都告诉你吧。
+[k]
+
+＠阿纳斯塔西娅
+……因为太热，我会概括在五分钟内。
+[k]
+
+[branch sel01a]
+
+？！
+
+[label sel01a]
+
+？1：好短！
+
+[charaFace A 0]
+
+＠阿纳斯塔西娅
+没办法吧，太热了。
+[k]
+
+＠阿纳斯塔西娅
+听好了哦？[r]首先，我生来就是罗曼诺夫王朝的皇女……
+[k]
+
+？！
+
+[label sel01b]
+
+[messageOff]
+[fadeout black 1.4]
+[bgmStop BGM_EVENT_94 1.2]
+[wait fade]
+
+[cameraMove 0 0,0 1.01]
+[wt 0.4]
+
+[fadein black 1.4]
+[wait fade]
+[wt 0.4]
+
+＠阿纳斯塔西娅
+……于是，[r]我死了。
+[k]
+
+[charaFace A 5]
+＠阿纳斯塔西娅
+嗯，嗯，真是……[bgm BGM_EVENT_11 0.1][r]粗暴而残酷地死。
+[k]
+
+＠阿纳斯塔西娅
+无论多怨多恨都不足惜。[r]真想唾弃践踏士兵们的坟墓。
+[k]
+
+[charaFace A 0]
+
+＠阿纳斯塔西娅
+……但是，真奇妙。
+[k]
+
+＠阿纳斯塔西娅
+来到迦勒底之后，[r]那仿佛成了一段遥远而令人怀念的梦。
+[k]
+
+？1：以至于你甚至想干脆毁灭人类？
+
+[charaFace A 4]
+
+＠阿纳斯塔西娅
+唔。
+[k]
+
+＠阿纳斯塔西娅
+呃……或许有这种想法，[r]或许没有……
+[k]
+
+？2：这会令人悲伤吗？
+
+[charaFace A 4]
+
+＠阿纳斯塔西娅
+是啊……
+[k]
+
+＠阿纳斯塔西娅
+会悲伤，但也有一丝喜悦。[r]就好像自己……成了真正的人类。
+[k]
+
+？！
+
+[charaFace A 0]
+
+＠阿纳斯塔西娅
+这确实不太好说……
+[k]
+
+＠阿纳斯塔西娅
+或许在我根基的部分，[r]还是相信着人类的吧。
+[k]
+
+＠阿纳斯塔西娅
+不是对那些鄙俗的士兵们，[r]而是对宛若我家人的人类。
+[k]
+
+[charaFace A 4]
+
+＠阿纳斯塔西娅
+……不，从历史的角度来看，[r]我的家人也算添了不少麻烦吧。
+[k]
+
+＠阿纳斯塔西娅
+生存、成长、学习、进食。[r]做的都是人类该做的事。
+[k]
+
+＠阿纳斯塔西娅
+自以为是这样。
+[k]
+
+＠阿纳斯塔西娅
+民众的饿死是我的责任吗？[r]还是父亲的责任呢？
+[k]
+
+＠阿纳斯塔西娅
+抑或是父亲与侍奉父亲的政治家和官僚的责任？
+[k]
+
+＠阿纳斯塔西娅
+……即便考虑到这些要素，[r]我和我的家人……
+[k]
+
+＠阿纳斯塔西娅
+欧嘉、塔季扬娜、玛丽亚、[#阿纳斯塔西娅:我]……
+[k]
+
+＠阿纳斯塔西娅
+是不是仍然非得遭受分尸、[r]硫酸溶解程度的悲惨待遇呢？
+[k]
+
+？1：这[line 3]
+？！
+
+＠阿纳斯塔西娅
+……唉。
+[k]
+
+[charaFace A 0]
+
+＠阿纳斯塔西娅
+对不起，原本我没打算说这种悲惨的事。
+[k]
+
+＠阿纳斯塔西娅
+更重要的是，这是永远不会有答案的问题。
+[k]
+
+＠阿纳斯塔西娅
+必须永远烦恼、永远痛苦、永远回顾过去才行。
+[k]
+
+＠阿纳斯塔西娅
+原本就不应该要求御主回答这个问题。
+[k]
+
+[charaFace A 4]
+
+＠阿纳斯塔西娅
+不行呢。[r]再这样下去，我或许会作为Avenger被召唤吧。
+[k]
+
+？1：我……不是很想看到这样。
+？！
+
+[charaFace A 1]
+
+＠阿纳斯塔西娅
+哎呀。[r]……呵呵呵。
+[k]
+
+＠阿纳斯塔西娅
+这样啊，如果御主这么说，那就没办法了。[r]呃……这种时候日本习惯怎么做来着？
+[k]
+
+＠阿纳斯塔西娅
+来，伸出小指。[r]拉钩上吊。
+[k]
+
+[messageOff]
+[charaMoveReturn A 0,-10 0.4]
+[wt 0.4]
+[charaMoveReturn A 0,-10 0.4]
+[wt 1.0]
+
+＠阿纳斯塔西娅
+如果成了Avenger……我就会吞下一千根针。
+[k]
+
+[charaFace A 4]
+
+＠阿纳斯塔西娅
+……本是令人高兴的约定，[r]实际上却相当猎奇呢。
+[k]
+
+＠阿纳斯塔西娅
+吞下一千根针会怎么样呢。
+[k]
+
+？1：会死吧。
+
+＠阿纳斯塔西娅
+的确会死。
+[k]
+
+？2：我不愿想象……
+
+＠阿纳斯塔西娅
+说得对。[r]一定会非常痛苦吧。
+[k]
+
+？！
+
+[messageOff]
+[se ad14]
+[bgmStop BGM_EVENT_11 1.2]
+[shake 0.04 2 3 1.2]
+[wt 0.3]
+
+[charaFace A 0]
+[wt 1.2]
+[seStop ad14 0.5]
+
+＠阿纳斯塔西娅
+哎呀，地震……好像不是。[r]是总算能回去了吗？
+[k]
+
+[charaFace A 4]
+＠阿纳斯塔西娅
+之所以会变成这样，难不成是因为[r]我让维随意摆弄模拟装置导致的吗……？
+[k]
+
+＠阿纳斯塔西娅
+虽说我觉得应该不是……
+[k]
+
+[charaFace A 1]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠阿纳斯塔西娅
+哎呀，你露出了『除此以外还能是什么？』的表情呢。[r]但是维很可爱哦，非常可爱。
+[k]
+
+＠阿纳斯塔西娅
+尤其是睁开眼睑时的眼睛特别可爱。
+[k]
+
+＠阿纳斯塔西娅
+虽说有人说『可怕』、『感觉会让人做噩梦』、
+[k]
+
+＠阿纳斯塔西娅
+『能别揪着我的后脑勺不放吗？』之类的话。
+[k]
+
+？1：这些基本都是我的抱怨吧！
+？！
+
+[charaFace A 6]
+
+＠阿纳斯塔西娅
+呵呵呵，没错没错。
+[k]
+
+＠阿纳斯塔西娅
+但是，其实维对你的评价[r]也相当不错哦[line 6]
+[k]
+
+[messageOff]
+[se ad14]
+[shake 0.04 2 2 0.9]
+[wt 0.9]
+[seStop ad14 0.8]
+
+[wipeout gunya 1.4 1.0]
+[se ad434]
+[seVolume ad434 0 0.5]
+[bgm BGM_EVENT_7 1.4 0.4]
+[wait wipe]
+
+[cameraMove 0 0,0 1.0]
+
+[scene 61300]
+[wt 0.4]
+
+[wipein gunya 1.4 1.0]
+[wait wipe]
+[wt 1.4]
+[seStop ad434 0.7]
+
+[charaFace A 2]
+
+＠阿纳斯塔西娅
+[f large][messageShake 0.04 3 3 0.3]冷死了。[bgm BGM_EVENT_7 0.1 1.0]
+[k]
+
+？1：太极端了吧！？
+？！
+
+[charaFace A 4]
+
+＠阿纳斯塔西娅
+这里是什么地方啊。[r]冰之牢房……？
+[k]
+
+[charaFace A 0]
+
+＠阿纳斯塔西娅
+我毫无印象，是出错了吗。[r]……总之先尝试离开这里吧。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+
+？1：该如何打开牢房的门呢……
+
+
+？！
+
+[wipeout circleIn 0.4 1.0]
+[se ad685]
+[charaPut J 0,0]
+[wait wipe]
+
+[scene 10000]
+
+[wipein circleOut 0.4 1.0]
+[wait wipe]
+[wt 1.4]
+
+[se ad148]
+[wt 0.9]
+[effect bit_talk_break]
+[wt 0.9]
+
+[se ade187]
+[fadeout white 0.8]
+[wait fade]
+
+[effectStop bit_talk_break]
+[charaEffectStop J bit_talk_frozen_cam]
+[wt 0.5]
+
+[scene 61300]
+
+[fadein white 0.8]
+[wait fade]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠阿纳斯塔西娅
+这样就行了。
+[k]
+
+[charaFace A 5]
+
+＠阿纳斯塔西娅
+……唔。[r]你那『居然蛮干啊』的表情是什么意思？
+[k]
+
+[charaFace A 1]
+
+＠阿纳斯塔西娅
+我可是神圣的罗曼诺夫王朝皇女。[r]所以基本都能通过蛮干解决问题。
+[k]
+
+＠阿纳斯塔西娅
+好了，出发吧！
+[k]
+
+[messageOff]
+[wipeout rightToLeft 1.0 1.0]
+[se ad95]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 39100]
+
+[wipein leftToRight 1.0 1.0]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠阿纳斯塔西娅
+哎呀，这里是……
+[k]
+
+＠阿纳斯塔西娅
+是宴会厅吗？[r]一个接一个令人惊讶呢。
+[k]
+
+？1：姑且还有食物……
+？！
+
+[messageOff]
+[se ade161]
+[charaMoveReturn A 0,-10 0.4]
+[wt 0.4]
+[charaMoveReturn A 0,-10 0.4]
+[wt 0.4]
+[seStop ade161 0.2]
+[wt 0.4]
+
+[charaFace A 4]
+
+＠阿纳斯塔西娅
+唔……味道还可以呢。[r]只是没有魔力补给的感觉。
+[k]
+
+[charaFace A 0]
+＠阿纳斯塔西娅
+毕竟是在模拟装置内，这很正常。[r]……也就是说，这等同于餐风饮露吧。
+[k]
+
+[charaFace A 4]
+
+＠阿纳斯塔西娅
+难道我成了日本传说中的[#Thousand:仙] [#people:人]？
+[k]
+
+？1：不是千，是仙。
+？！
+
+＠阿纳斯塔西娅
+……日语真难懂……[r]唔？　你说有仙人的地方是中国？
+[k]
+
+[charaFace A 2]
+
+＠阿纳斯塔西娅
+……为什么你们的文化和语言那么混乱复杂啦！
+[k]
+
+？1：依我看来，
+？2：你那儿也半斤八两吧！
+？！
+
+[charaFace A 4]
+
+＠阿纳斯塔西娅
+……这个嘛，说得也是。
+[k]
+
+[charaFace A 0]
+
+＠阿纳斯塔西娅
+你知道吗？[r]那个叫伊阿宋先生的，就是那个英雄。
+[k]
+
+[charaFace A 1]
+
+＠阿纳斯塔西娅
+那个人的名字在英语圈读作杰森哦。[r]没错，是杰森哦，[#杰森:Jason]。
+[k]
+
+＠阿纳斯塔西娅
+感觉像是会戴上面具，[r]剃个光头发疯似的冲过来[line 3]
+[k]
+
+[charaFace A 6]
+
+＠阿纳斯塔西娅
+一想到冲过来的伊阿宋先生，我就不禁捧腹大笑。[r]太好笑了，笑死人了。
+[k]
+
+＠阿纳斯塔西娅
+如果被伊阿宋先生知道了，[r]他一定会勃然大怒吧……
+[k]
+
+＠阿纳斯塔西娅
+但我觉得想象是每个人的自由。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[bgmStop BGM_EVENT_7 1.2]
+[wt 0.1]
+
+[se ad60]
+[se ad58]
+[seVolume ad58 0 0.5]
+[wt 0.6]
+
+[charaTalk off]
+
+[charaFace B 5]
+[charaFace D 0]
+[charaFace C 0]
+[charaFadein B 0.8 1]
+[charaFadein D 0.8 -286,0]
+[charaFadein C 0.8 256,0]
+[wt 0.6]
+
+[seStop ad58 0.4]
+[seStop ad60 0.5]
+[wt 1.6]
+
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠阿纳斯塔西娅
+……刚说完这些，[bgm BGM_EVENT_3 0.1][r]维就体贴地帮我们实现了呢。
+[k]
+
+[charaFace A 1]
+
+＠阿纳斯塔西娅
+哎？　这根本不叫什么体贴？[r]或许吧。
+[k]
+
+＠阿纳斯塔西娅
+总之，反正是模拟战斗，[r]我会一边道歉，一边毫不客气地干掉他们。
+[k]
+
+[charaFace A 2]
+
+＠阿纳斯塔西娅
+我们上，御主！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,236 @@
+
+＄94-00-77-05-1-1
+
+[soundStopAll]
+
+[se ad2]
+[seVolume ad2 0 0.5]
+
+[charaSet A 8001001 1 玛修]
+[charaSet C 2003001 1 罗宾汉]
+[charaSet D 1010001 1 伊丽莎白]
+[charaSet E 98003003 1 Dr.罗曼]
+[charaSet F 7022001 1 茨木童子]
+
+[scene 21804]
+[fadein black 2.0]
+[wait fade]
+
+[seStop ad2 5.0]
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 1]
+＠茨木童子
+绿色的人啊！[r]绿色好消息、绿色行者、绿色仙人、森林贤者啊！
+[k]
+
+＠茨木童子
+正如你所见，碍事的家伙已经没了！[r]来吧！　快来驱逐吾吧！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+＠罗宾汉
+知道啦知道啦，辛苦了。但今后不准叫我什么森林贤者。[r]你敢再叫一次，我就再也不给你巧克力了。
+[k]
+
+[wt 0.2]
+
+[se ad27]
+[seVolume ad27 0 0.3]
+[charaShake C 0.05 2 2 0.4]
+[wt 0.7]
+
+[charaMoveReturn C -10,0 0.3]
+[se ad28]
+[seVolume ad28 0 0.4]
+[wait se ad28]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠茨木童子
+唔，一定牢记。吾在这方面很聪明哦。[r]只不过……[se ad182][seVolume ad182 0 0.4][charaShake F 0.05 4 4 0.4]唔。[charaChange F 98105300 0 normal 0][wait charaMove F][charaFace F 0]咀嚼咀嚼咀嚼。
+[k]
+
+[se ad182]
+[seVolume ad182 0 0.2]
+[charaMove F 0,-4 0.3]
+[wait charaMove F]
+
+[charaChange F 7022001 0 normal 0]
+[wait charaChange F]
+[charaMove F 1 0.1]
+[wait charaMove F]
+
+[se ad182]
+[seVolume ad182 0 0.2]
+[charaChange F 98105300 0 normal 0]
+[wait charaMove F]
+[charaMove F 0,-4 0.3]
+[wait charaMove F]
+
+[charaChange F 7022001 0 normal 0]
+[wait charaChange F]
+[charaMove F 1 0.1]
+[wait charaMove F]
+
+[wt 0.4]
+
+[charaFace F 1]
+＠茨木童子
+只不过巧克力虽然会融化，[r]真是个没有嚼头的敌人呢！
+[k]
+
+[charaFace F 0]
+＠茨木童子
+如此看来，巧克力作为报酬未免太少了。[r]吾可以断定！　这个国家已经没有什么看点了！
+[k]
+
+＠茨木童子
+再见了！　再见了！
+[k]
+
+[se ad132]
+[charaMove F 1024,0 1.5]
+[wait charaMove F]
+[seStop ad132 1.0]
+[charaFadeout F 0.1]
+[messageOff]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠罗宾汉
+是吗？　只要能打倒金字塔的女王陛下，[r]就能吃到堆积如山的点心糖果了哦～。[charaFace C 1]哎呀呀，真是遗憾。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1024,0]
+[charaEffect F bit_talk_42]
+[charaMove F 1 0.2]
+[se bac122]
+[wait charaMove F]
+[charaEffectStop F bit_talk_42]
+＠茨木童子
+果然是金字塔啊。[r]何时出发？
+[k]
+
+？1：茨木院……
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaTalk E]
+[communicationCharaLoop 98003003 0 5 0 0]
+[communicationCharaFace 0]
+＠Dr.罗曼
+唔。虽然是个预料外的同伴，[r]但茨木童子的战斗力是货真价实的。而且……
+[k]
+
+＠玛修
+而且什么，医生？
+[k]
+
+＠Dr.罗曼
+我觉得她对人类文化产生兴趣是一件好事。
+[k]
+
+＠Dr.罗曼
+就算本质对人类的攻击性无法改变，[r]但彼此能拥有共通的“喜好”是一件好事。
+[k]
+
+[charaFace A 1]
+＠玛修
+这话倒是没错。[r]这确实能增加相互理解。
+[k]
+
+＠Dr.罗曼
+嗯，综上所述，[%1]。[r]虽然你会很辛苦，但茨木童子就拜托你了。
+[k]
+
+？1：嗯，我会努力的！
+？2：小菜一碟。
+
+？！
+
+[bgmStop BGM_EVENT_2 1.5]
+[charaFadeout A 0.1]
+[communicationCharaClear]
+[wait communicationChara]
+[wt 0.3]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠茨木童子
+好了，接下来应该去哪儿？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠伊丽莎白
+接下来……是熔岩地带吧！[r]……[bgm BGM_EVENT_5 0.1][charaFace D 7]熔岩究竟是什么情况啊……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠玛修
+总……总之先去看看吧。[r]不到现场确认什么都不好说……！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_5 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[scene 31900]
+[seLoop ad14]
+[fadein black 2.0]
+[wait fade]
+
+＠全体
+[messageShake 0.05 4 4 0.7]
+[f large]好热！！
+[k]
+
+[seStop ad14 2.0]
+[wt 0.4]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+
+[soundStopAll]
+[end]

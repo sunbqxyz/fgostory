@@ -1,0 +1,241 @@
+
+＄94-00-98-49-1-0
+
+[charaSet A 4008002 1 黑胡子]
+[charaSet B 1018001 1 阿蒂拉]
+[charaSet C 1026001 1 迪昂]
+[charaSet D 5012001 1 尼托克丽丝]
+
+[soundStopAll]
+
+[scene 10310]
+
+[fadein black 2]
+[wait fade]
+
+＠？？？
+黑。
+[k]
+
+？1：胡子。
+？！
+
+[messageOff]
+
+[fadeout black 2]
+[wait fade]
+
+[scene 10400]
+
+[se ad8]
+[wait se ad8]
+
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[fadein black 0.3]
+[wait fade]
+
+[charaTalk A]
+＠黑胡子
+御主，没有被人发现吧？
+[k]
+
+？1：嗯，算是吧……
+？！
+
+＠黑胡子
+听说您要给我巧克力，[r]在下也决定怀着真心送上一份礼物。
+[k]
+
+[charaFace A 3]
+
+＠黑胡子
+来吧，首先是巧克力！　巧克力，巧克力，巧克力！
+[k]
+
+？1：知道啦知道啦。
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[charaShake A 0.01 3 3 0.5]
+
+[charaFace A 1]
+＠黑胡子
+呀嗬噢噢噢噢噢噢噢噢噢噢噢噢噢！！[r]黑胡子太棒了！
+[k]
+
+[charaFace A 4]
+
+＠黑胡子
+一块巧克力相当于一颗宝石的价值啊，[r]所以请给我宝石。
+[k]
+
+＠黑胡子
+……以前曾有女孩子对我这么说过……[charaFace A 3][r]然而御主阁下却不求回礼无偿送给在下！
+[k]
+
+[charaFace A 1]
+
+＠黑胡子
+在下一定会感激涕零五体投地地品尝的！
+[k]
+
+？1：不不，吃的时候正常点。
+？！
+
+＠黑胡子
+嗯嗯，当然当然当了个然啦！[charaFace A 0][r]……好了，那接下来。
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+
+？1：呃……这是？
+？！
+
+[charaFace A 3]
+
+＠黑胡子
+咕呼。[r]咕呼呼。
+[k]
+
+＠黑胡子
+咕呼呼呼呼。
+[k]
+
+[charaFace A 1]
+
+＠黑胡子
+就是这个。[r]是在下辛苦而凄惨地拍摄的秘藏中秘藏[line 3]
+[k]
+
+[bgmStop BGM_EVENT_7 0.2]
+
+
+[messageOff]
+[charaFace A 2]
+[se bac5]
+[wait se bac5]
+[capture]
+[specialEffect cutting]
+[charaFadeout A 0]
+[charaEffect B bit_talk_35]
+[charaTalk off]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaFace C 5]
+[charaFadein C 0.1 -352,0]
+[charaFace D 9]
+[charaFadein D 0.1 352,0]
+[wait specialEffect]
+[wt 1]
+[effectStop]
+[wait effect]
+
+[bgm BGM_EVENT_24 0.1]
+
+？1：雷夫教授[line 3]！？
+？2：这已经不是千钧一发，而是直接一刀两断了[line 3]！！
+？！
+
+[charaTalk on]
+[charaTalk B]
+＠阿蒂拉
+……坏文明已经消灭了。
+[k]
+
+＠迪昂
+很好，御主。[r]御主什么都没有看到，明白了吗？
+[k]
+
+＠迪昂
+全部都忘记了。[r]OK～？
+[k]
+
+？1：好！
+？2：Yes，Sir！
+？！
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠尼托克丽丝
+那为了以防万一，我再用埃及魔术……[wt 0.3][charaFace D 2][r]法～老～啊～！
+[k]
+
+[bgmStop BGM_EVENT_24 0.2]
+
+[messageOff]
+
+[se ad65]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.4]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.7]
+[fadeout white 1.0]
+[wait fade]
+[charaFadeout D 0.1]
+
+[wt 1.0]
+
+[scene 10000 0]
+[fadein white 0.7]
+[wait fade]
+
+？1：……
+？！
+
+[wt 2.0]
+
+？1：…………
+？！
+
+[scene 10400]
+[fadein black 0.3]
+[wait fade]
+
+？1：……到底什么情况……？
+？！
+
+[equipSet E 9805570 2 ]
+[wait equipSet E]
+[charaFace E 0]
+[charaFadein E 0.4 0,-70]
+
+[wt 1.0]
+
+[charaFace B 0]
+[charaFadein B 0.4 -600,0]
+[charaMove B -521,0 0.6]
+
+[wt 1.0]
+
+？1：这个……还是收起来吧……
+？！
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_24 0.9]
+[wait fade]
+[soundStopAll]
+[end]

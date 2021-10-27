@@ -1,0 +1,116 @@
+
+
+
+＄91-40-04-01-3-1
+
+[soundStopAll]
+[bgm BGM_EVENT_6 0.1]
+[charaSet A 4004001 1 阿斯托尔福]
+[charaSet B 99502600 1 玛修]
+[charaSet D 98115700 1 类似罗兰的某种东西]
+[charaSet H 99502600 1 特效用]
+
+[scene 20705]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠类似罗兰的某种东西
+不甘……！[r]太不甘心了……！
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠阿斯托尔福
+罗兰……
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠类似罗兰的某种东西
+唔哦……[r]在死之前……至少想……把一切都……
+[k]
+
+[bgmStop BGM_EVENT_6 1.0]
+＠类似罗兰的某种东西
+暴露出来……
+[k]
+
+[messageOff]
+[charaSpecialEffect D enemyErasure 1 1.7]
+[se ad42]
+[wait charaSpecialEffect D]
+[wt 1.5]
+
+[bgm BGM_EVENT_27 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[charaShake A 0.03 3 3 0.7]
+[wt 0.7]
+＠阿斯托尔福
+连恶灵都这个德行吗！　最后还是满脑子这件事！[r]啊哈哈哈哈，所以罗兰才有意思啊！
+[k]
+
+＠阿斯托尔福
+连国王陛下见到你也一定会大爆笑的！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+国王陛下是指……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠阿斯托尔福
+那当然是查理曼啦！[r]这么说来，[charaFace A 0]那个人为什么到现在还没被召唤呢。
+[k]
+
+＠阿斯托尔福
+我、罗兰、国王陛下……[r]真希望有一天，我们能够并肩战斗呢～！
+[k]
+
+[charaFace A 1]
+＠阿斯托尔福
+好，总是先考虑罗兰的问题！[r]没关系，既然被召唤了，那说明我们迟早能见到！
+[k]
+
+＠阿斯托尔福
+根据我的直觉……[r]我们的见面应该不会有什么好事！
+[k]
+
+[charaFace A 0]
+＠阿斯托尔福
+抱歉把事情闹得那么大哦，御主。[r]那我们现在返回吧！
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_27 1.4]
+[wait fade]
+[wt 0.4]
+[soundStopAll]
+[end]

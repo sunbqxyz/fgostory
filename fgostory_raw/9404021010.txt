@@ -1,0 +1,629 @@
+
+＄94-04-02-10-1-0
+
+[soundStopAll]
+
+
+[charaSet A 98100400 1 玛修]
+[charaSet B 6019001 1 风魔小太郎]
+[charaSet C 6030000 1 段藏]
+[charaSet D 3028001 1 豹人]
+[charaSet E 10008001 1 志度内]
+[charaSet F 6033000 1 冈田以藏]
+[charaSet G 6007003 1 海德]
+[charaSet H 1098176810 1 刑部姬]
+
+[charaDepth G 1]
+[charaDepth F 2]
+
+[branchQuestNotClear lblNotClear1 3000303]
+[flag IsClear true]
+[branch lblConf1]
+[label lblNotClear1]
+[flag IsClear false]
+[label lblConf1]
+
+
+
+[scene 80900]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_25 0.1]
+[wt 1.2]
+
+？1：来人啊。
+？！
+
+[wt 0.1]
+[se ade274]
+[wt 0.3]
+[se ade274]
+[wt 0.7]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.3]
+
+＠风魔小太郎
+是。[r]风魔小太郎，在此。
+[k]
+
+[messageOff]
+[wt 0.8]
+
+[charaFace B 1]
+[wt 0.6]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠刑部姬
+……古装主公扮演？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠风魔小太郎
+感觉很有意思，所以忍不住……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+咦？[r]小太郎先生，您的衣服换回平时那件了……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠风魔小太郎
+也许是因为玩得太疯了，[r]衣服有一些破损……
+[k]
+
+＠风魔小太郎
+尽管还有些舍不得，[r]但夏天过去后也只能收纳起来了。
+[k]
+
+[charaFace B 1]
+
+＠风魔小太郎
+先不提这个了，主公，有何吩咐？
+[k]
+
+？1：想让你陪我去购物……
+？！
+
+＠风魔小太郎
+明白了。
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgm BGM_EVENT_25 1.5 0.2]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 80500]
+[wt 1.0]
+
+[bgm BGM_EVENT_25 1.5 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠风魔小太郎
+选了很多不错的特产呢。
+[k]
+
+[branch lblClear2 IsClear true]
+
+[label lblNotClear2]
+
+＠风魔小太郎
+达·芬奇阁下和迦勒底的各位一定会高兴的。
+[k]
+
+[branch lblConf2]
+
+[label lblClear2]
+
+＠风魔小太郎
+达·芬奇阁下和戈尔德鲁夫阁下一定会高兴的、。
+[k]
+
+[label lblConf2]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+？1：啊，我记得这附近……
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠风魔小太郎
+怎么了？[r]……啊啊，是HIMEJI赌场啊。
+[k]
+
+？2：噢，是HIMEJI赌场。
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠风魔小太郎
+哎呀，是刑部姬阁下运营的赌场吧。
+[k]
+
+？！
+
+[charaFace B 0]
+
+＠风魔小太郎
+……[r]……嗯，主公。
+[k]
+
+＠风魔小太郎
+如果接下来您没有什么安排的话，[r]要不要去一趟HIMEJI赌场？
+[k]
+
+＠风魔小太郎
+尽管这次周游各大赌场也是修正特异点的一部分……
+[k]
+
+[charaFace B 1]
+
+＠风魔小太郎
+但既然现在已经没有这个必要了，[r]那不妨愉快地享受赌场的乐趣吧。
+[k]
+
+？1：说得对，我们去看看吧！
+
+＠风魔小太郎
+是，在下愿意陪同。
+[k]
+
+？2：小太郎也想玩吗？
+
+[charaFace B 3]
+
+＠风魔小太郎
+这……这我倒不否定……
+[k]
+
+[charaFace B 1]
+
+＠风魔小太郎
+不管怎么样，既然主公也赞同，[r]那我们走吧！
+[k]
+
+？！
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_25 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 81200]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠豹人
+嘿！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 22]
+[charaFadein E 0.1 1]
+
+＠志度内
+呀！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace E 22]
+[charaFace D 2]
+[charaFadein E 0.1 2]
+[charaFadein D 0.1 0]
+
+[wt 0.1]
+
+[se ad33]
+[seVolume ad33 0 0.6]
+[wt 0.1]
+[charaMoveReturn E 220,0 0.3]
+[charaMoveReturn D -220,0 0.3]
+[fowardEffect bit_talk_kengekiall02]
+[wt 0.3]
+[charaMoveReturn E 220,0 0.3]
+[charaMoveReturn D -220,0 0.3]
+[wt 0.3]
+[charaMove E 0 0.3]
+[charaMove D 2 0.3]
+[flashin once 0.1 0.5 FFFFFFFF FFFFFF80]
+[wt 1.0]
+
+？1：怎么还在打！？
+？！
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 2]
+
+＠志度内
+中途间隔了几次休息，慢慢地继续！[r]来吧，这次一定是我赢！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠风魔小太郎
+我认为还是不要理睬她们比较好。
+[k]
+
+[charaFace B 0]
+
+＠风魔小太郎
+……唔，这HIMEJI赌场果然有很多日式赌博呢。
+[k]
+
+＠风魔小太郎
+花牌、抽画帖、还有单双骰子。
+[k]
+
+[charaFace B 1]
+
+＠风魔小太郎
+并不光是老虎机和轮盘赌，[r]这些似乎也很有意思。
+[k]
+
+？1：试试单双骰子吧。
+？！
+
+＠风魔小太郎
+说得对，看似简单，实际非常深奥。
+[k]
+
+＠风魔小太郎
+我也不是什么外行人，[r]可以教您一些窍门。
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[scene 79001]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[bgm BGM_EVENT_50 0.1]
+[wt 0.6]
+
+[se ade353]
+[wt 1.6]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠冈田以藏
+[f large]双！！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠海德
+[f large]双！！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠段藏
+都没问题了吧？[r]筹码都放好了。
+[k]
+
+[charaFace C 2]
+
+＠段藏
+……一决胜负！
+[k]
+
+[messageOff]
+[se ad478]
+[seVolume ad478 0 0.6]
+[wt 0.6]
+
+[charaFace C 0]
+
+＠段藏
+[line 3]三四单。[r]三四单。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace G 2]
+[charaFace F 5]
+[charaFadein G 0.1 0]
+[charaFadein F 0.1 2]
+
+＠以藏＆海德
+[f large]啥（什么）！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠风魔小太郎
+……母亲……段藏阁下负责庄家啊，[r]不过这就算了。
+[k]
+
+＠风魔小太郎
+那两位……
+[k]
+
+？1：看着都觉得很可怜……
+
+＠风魔小太郎
+嗯。
+[k]
+
+＠风魔小太郎
+那是典型的沉迷状态。[r]头脑明明十分兴奋，却一直在冒冷汗。
+[k]
+
+＠风魔小太郎
+连能赢的都赢不了了。[r]这样下去的话，只会一败涂地输得精光。
+[k]
+
+？2：感觉完全赢不了啊。
+
+＠风魔小太郎
+嗯。[r]那已经不行了。
+[k]
+
+＠风魔小太郎
+用大阪方言来说，就是『废了』。[r]建议主公在赌博时也要适可而止。
+[k]
+
+？！
+
+＠风魔小太郎
+但是……
+[k]
+
+[messageOff]
+[wipeout rollRight 0.8 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[wipein rollLeft 0.8 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠段藏
+四六双。
+[k]
+
+[messageOff]
+[wipeout rollRight 0.8 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[wipein rollLeft 0.8 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠段藏
+一六单。
+[k]
+
+[messageOff]
+[wipeout rollRight 0.8 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[wipein rollLeft 0.8 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠段藏
+六六双。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace G 2]
+[charaFace F 11]
+[charaFadein G 0.1 0]
+[charaFadein F 0.1 2]
+
+＠以藏＆海德
+[f large]唔[messageShake 0.03 3 5 0.4]噢噢噢噢噢噢噢！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠风魔小太郎
+简直就像被宝具击中时的惨叫呢。
+[k]
+
+＠风魔小太郎
+这……
+[k]
+
+？1：制止他们吧……
+？！
+
+[charaFace B 0]
+
+＠风魔小太郎
+说得对。
+[k]
+
+＠风魔小太郎
+尽管有些对不起两位，[r]但总比输得精光身无分文要好吧。
+[k]
+
+[bgmStop BGM_EVENT_50 1.0]
+
+＠风魔小太郎
+以藏阁下、海德阁下，[r]两位该收手了吧[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace G 1]
+[charaFace F 5]
+[charaFadein G 0.1 0]
+[charaFadein F 0.1 2]
+
+[bgm BGM_EVENT_80 0.1]
+
+＠冈田以藏
+不不，还没完！[r]我们还能起死回生！（※不可能。）
+[k]
+
+[charaFace G 2]
+
+＠海德
+没错没错没错没错说得对！[r]刚才虽然输了，但下次一定能赢！（※赢不了。）
+[k]
+
+＠冈田以藏
+就是啊！[r]我们才刚刚开始[line 4]！（※早完了。）
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠风魔小太郎
+这……这可不行！
+[k]
+
+？1：没办法，强制让他们老实下来吧！
+
+[charaFace B 2]
+
+＠风魔小太郎
+是，准备战斗！
+[k]
+
+？2：事已至此，只能采取最后的手段了！
+
+[charaFace B 2]
+
+＠风魔小太郎
+是，那就用暴力让他们老实下来吧！
+[k]
+
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

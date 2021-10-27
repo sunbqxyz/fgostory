@@ -1,0 +1,1488 @@
+
+
+
+＄02-00-03-02-1-1
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[charaSet A 1017001 1 武藏]
+[charaSet B 3014001 1 胤舜]
+[charaSet C 1098118600 1 阿缝]
+[charaSet D 98006200 1 烟状杂兵敌人]
+[charaSet E 98006200 1 烟状杂兵敌人]
+[charaSet F 6029000 1 Assassin Paraiso]
+[charaSet G 1098118400 1 Caster Limbo]
+[charaSet H 5009000 1 特效用dummy]
+
+[scene 37312]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk off]
+[se ad42]
+[charaFace D 0]
+[charaFadein D 0.1 -256,0]
+[charaFace E 0]
+[charaFadein E 0.1 256,0]
+[wt 0.1]
+
+[wt 0.2]
+[se bac136]
+[charaPut H 256,60]
+[charaEffect H bit_talk_Slash_white_01]
+[wt 0.1]
+[charaShake E 0.05 5 5 0.7]
+[charaEffectStop H bit_talk_Slash_white_01]
+[se ad42]
+[charaSpecialEffect E enemyErasure 1 0.5]
+[seStop ad42 0.5]
+
+[wt 0.2]
+
+[se bac136]
+[charaPut H -256,60]
+[charaEffect H bit_talk_Slash_white_01_L]
+[wt 0.1]
+[charaShake D 0.05 5 5 0.7]
+[charaEffectStop H bit_talk_Slash_white_01_L]
+[charaSpecialEffect D enemyErasure 1 0.5]
+[wait charaSpecialEffect D]
+[seStop ad42 0.5]
+
+[bgmStop BGM_EVENT_3 1.2]
+[wt 1.5]
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠武藏
+……搞定。
+[k]
+
+＠武藏
+那个，[%1]，能问你一句吗？[r]之所以能比起刚才更轻松地打倒对手，全是因为那个吧？
+[k]
+
+＠武藏
+并非恶灵手下留情，[r]而是因为有了援助，我这么理解没错吧？
+[k]
+
+＠武藏
+不是我看错了，[r]而是你的同伴们赶过来了吧。
+[k]
+
+？1：……是迦勒底的从者们呢。
+？2：直至刚才为止还完全召唤不了呢。
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠胤舜
+虽然不知详情，或许这有可能是因贫僧的存在所导致的。[r]虽说这只是我随口胡诌的，
+[k]
+
+＠胤舜
+但身为从者的贫僧成为了诱因，[r]或者通过与武藏阁下交锋引发了什么。
+[k]
+
+＠胤舜
+不管怎么说，[%1]。[r]贫僧感觉到你的术式活性化了吧？
+[k]
+
+？1：你是指令咒吧？
+？2：嗯，这样一来应该就能像平时那样战斗了！
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠武藏
+这甚好。[r]嗯，这些话真令人放心。
+[k]
+
+[charaFace A 0]
+
+＠武藏
+再加上还有胤舜阁下助阵，[r]看来那种恶灵之辈也能轻松斩杀了。
+[k]
+
+[charaFace A 5]
+
+＠武藏
+但也不能掉以轻心。[r]在能确保安全前，都要保持警惕[line 3]。
+[k]
+
+[messageOff]
+[wt 0.5]
+[bgmStop BGM_EVENT_2 0.4]
+[wt 0.5]
+[bgm BGM_EVENT_3 0.1]
+[charaFace A 2]
+
+＠武藏
+[line 6]妖气！　话音未落就来了！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+＠？？？
+正是。正是。[r]无论何等剑豪都万不可掉以轻心。
+[k]
+
+＠？？？
+吾等乃英灵剑豪。可别把吾等与区区恶灵混为一谈。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.6]
+[wipeout rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+[wt 0.2]
+
+[charaSet D 2021001 1 Archer Inferno]
+[charaSet E 7023001 1 Rider 黑绳地狱]
+
+[wipein rectangleStripRightToLeft 0.2 1]
+[wait wipe]
+
+[bgm BGM_BATTLE_65 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠阿缝
+是……是谁……？[r]好可怕，什么……好可怕啊……非常……
+[k]
+
+＠阿缝
+可怕……！
+[k]
+
+[charaFace C 11]
+
+＠C：田助
+咿，咿啊！　咿啊啊啊啊！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠武藏
+快躲到[%1]身后去！[r]这感觉，与刚才的恶灵不可同日而语！
+[k]
+
+[charaFace A 5]
+
+＠武藏
+最重要的是有肉身，还有股味道。[r]这沾染全身的味道正是确凿的证据。
+[k]
+
+＠武藏
+……没错。宽永十六年。[r]岛原之乱都已结束的太平盛世中，不该有这种存在。
+[k]
+
+＠武藏
+简直就像[#刚刚结束了杀戮]一般。[r]该不会是被满满一桶鲜血从头淋到脚了吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠胤舜
+唔哼！！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[effect bit_bolg_03y]
+[se bac10]
+[wt 0.1]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.05 3 3 0.4]
+[wt 0.2]
+
+[se bac10]
+[charaPut H 120,60]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaEffect H bit_talk_14]
+[wt 0.1]
+[charaEffectStop H bit_talk_14]
+[charaPut H -210,-10]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaEffect H bit_talk_14]
+[wt 0.1]
+[se bac10]
+[wt 0.2]
+[charaEffectStop H bit_talk_14]
+
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFilter D silhouette 00000080]
+[charaFadein D 0.7 1]
+[wt 0.5]
+
+＠女弓手
+…………多么可怕的人啊。简直就像枪之鬼。[r]若是普通英灵，灵核或许早已被贯穿了。
+[k]
+
+＠女弓手
+各位都多加小心。[r]此人打算将我等歼灭。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠胤舜
+哈哈，怎么。居然[#用箭弹开了]贫僧的枪吗。[r]看来下总这地方聚集了不少强大的女性呢。
+[k]
+
+[charaFace B 0]
+
+＠胤舜
+还是说此处乃是怪异聚集的魔境呢？[r]一、二、三[line 3]哈哈，这就是[#英灵:从者]的感觉啊。
+[k]
+
+＠胤舜
+原来非人之物的气息就是这样的，[r]切身感受起来可没那么惬意呢！
+[k]
+
+？1：从者！？
+？2：除胤舜以外被召唤出来的其他从者……！
+
+？！
+
+＠G：？？？
+……正是。正是。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk G]
+[charaFace G 0]
+[charaFilter G silhouette 00000080]
+[charaFadein G 0.7 1]
+[wt 1.0]
+
+＠G：肉食猛兽般的男人
+吾等，英灵剑豪六骑。
+[k]
+
+＠G：肉食猛兽般的男人
+名震天下的二天一流新免武藏阁下，[r]以及被誉为枪术可达神佛境界的宝藏院胤舜阁下。
+[k]
+
+＠G：肉食猛兽般的男人
+还有，来自迦勒底的御主阁下。[r]呵呵，呵呵。呵呵呵呵呵呵呵呵。
+[k]
+
+＠G：肉食猛兽般的男人
+初次见面，请多关照。吾等六骑，[r]乃是为了让此世化为地狱而现界之六骑。
+[k]
+
+＠G：肉食猛兽般的男人
+[line 3]吾之忌名，乃 Caster Limbo。
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[se bac24]
+[fowardEffect bit_talk_15]
+[wt 1.2]
+[fowardEffectStop bit_talk_15]
+[charaPut H 1]
+[charaEffect H bit_talk_32]
+[wt 0.8]
+[charaEffectStop H bit_talk_15]
+[seStop bac24 1.5]
+[wt 0.2]
+[charaPut H 1200,1200]
+[wt 0.1]
+[charaPut H 1]
+[se ad11]
+[wt 1.5]
+[seStop ad11 0.5]
+
+[fadeout black 0.2]
+[wait fade]
+[charaFadeout G 0.1]
+[charaPut H 1200,1200]
+[wt 0.1]
+[fadein black 0.1]
+[wait fade]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠武藏
+……不算什么！
+[k]
+
+[maskout black 0.1]
+[wait mask]
+[messageOff]
+[charaFadeout A 0]
+[scene 10000]
+[maskin black 0.1]
+[wait mask]
+
+[charaPut H 1]
+[charaEffectStop H bit_talk_32]
+[wt 0.2]
+[se bac264]
+[fowardEffect bit_talk_Slash_white_01]
+[wt 0.2]
+
+[charaPut H 1200,1200]
+
+[wipeout rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+[scene 37312]
+
+[charaSet C 1098118700 1 Saber Empireo]
+[charaSet G 6021001 1 Berserker 众合地狱]
+
+[wipein rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+
+
+
+？1：武藏亲！
+？2：背后！
+
+？！
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠武藏
+没问题，交给我吧……！
+[k]
+
+[messageOff]
+[wipeout rightToLeft 0.1 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaFace F 0]
+[charaFilter F silhouette 00000080]
+[charaFadein F 0.1 1]
+[wt 0.1]
+[wipein leftToRight 0.1 1]
+[wait wipe]
+
+
+[charaEffect F bit_talk_Slash_white_01]
+[shake 0.05 3 3 0.2]
+[se bac142]
+[wt 0.3]
+[charaEffect F bit_talk_Slash_white_01_L]
+[shake 0.05 3 3 0.2]
+[se bac386]
+[wt 0.3]
+
+
+[charaFadeout F 0.4]
+[wt 0.7]
+
+？1：成功了[line 3]
+
+？！
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠胤舜
+不，那是影子。没能砍中！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.7 1]
+[wt 0.5]
+
+＠F：如影之女
+[line 3]吾之忌名，乃 Assassin Paraiso。
+[k]
+
+＠Assassin Paraiso
+有如划破黑夜般的精妙一闪，[r]这就是名闻天下的二天一流之技吗。
+[k]
+
+＠Assassin Paraiso
+略有点失望是也。
+[k]
+
+＠Assassin Paraiso
+对知晓染血乱世的此身而言，实属差强人意。[r]……失礼了。新免武藏姑且也算经历过乱世的。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠武藏
+其实不算吧？
+[k]
+
+＠武藏
+虽然不知道这个世界的武藏如何，[r]我自己可没在乱世战场上出过风头哦，
+[k]
+
+＠武藏
+你是擅长隐身的忍者吧？[r]居然在战斗中现出身形，还挺好心的，
+[k]
+
+[messageOff]
+[wt 0.4]
+[charaFace A 5]
+
+＠武藏
+[line 8]哼！！
+[k]
+
+[maskout black 0.1]
+[wait mask]
+[messageOff]
+[charaFadeout A 0]
+[scene 10000]
+[maskin black 0.1]
+[wait mask]
+
+[charaTalk off]
+[charaPut H 1]
+[charaScale H 1.5]
+[charaEffect H bit_talk_ichimon01wh]
+[se ad171]
+[wt 0.1]
+[flashin once 0.1 0.1 FFFFFFD0 FFFFFF00]
+[fowardEffect bit_talk_14]
+[shake 0.05 2 4 0.5]
+[se ad170]
+[wt 0.2]
+
+[fadeout black 0.3]
+[wait fade]
+[scene 37312]
+[fadein black 0.2]
+[wait fade]
+
+？1：居然话说到一半就砍过去了……！？
+？2：但还是被防住了……！？
+
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠胤舜
+……这就是所谓的天眼吧。
+[k]
+
+＠胤舜
+一旦瞄准的猎物就决不会放过，犹如宿命的一击。[r]必中的斩击，新免武藏可怕的天赋啊。
+[k]
+
+[charaFace B 5]
+
+＠胤舜
+但是，居然将这招都挡了下来。[r]…………你这家伙，究竟是怎么[#挡下]的？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk E]
+[charaFace E 0]
+[charaFilter E silhouette 00000080]
+[charaFadein E 0.7 1]
+[wt 1.0]
+
+＠E：身配太刀之女
+[line 3]吾之忌名，乃 Rider 黑绳地狱。
+[k]
+
+＠Rider 黑绳地狱
+不，不。我并没有做什么特别的事。[r]我只是顺势挥舞这把太刀而已。
+[k]
+
+＠Rider 黑绳地狱
+只需将刀刃插入此处即可。敌人之刃就能被制止。[r]只需将刀刃挥至此处即可。敌人首级就会被斩飞。
+[k]
+
+＠Rider 黑绳地狱
+会知道这些事乃是理所当然的吧。
+[k]
+
+＠Rider 黑绳地狱
+如若不然，[r]又怎能枭获鬼之首级？
+[k]
+
+＠Rider 黑绳地狱
+呵呵。呵呵呵呵呵呵。[r]这和尚说的话还真是奇怪呢。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠武藏
+（真是个可怕的女人。刚才那招可是我拼劲全力的暗藏王牌，[r]　却被轻描淡写地拨开了……）
+[k]
+
+[charaFace A 5]
+
+＠武藏
+（本应用刚才那招至少解决一个才行。[r]　[line 3][#但他们的水平，全都在我之上啊]。）
+[k]
+
+[charaFace A 4]
+
+＠武藏
+啊～啊，这下没辙了。
+[k]
+
+[charaFace A 0]
+
+＠武藏
+不，我不是说要投降。[r]只是觉得你们比外表看起来强那么一点点呢。
+[k]
+
+＠武藏
+要将这些悉数击败会很麻烦，[r]若想刀下留命就更难上加难了。
+[k]
+
+＠武藏
+虽说你们似乎认识我们，[r]但不凑巧的是，我们正在旅行中途。
+[k]
+
+＠武藏
+麻烦的问题想改日再处理，[r]所以今天我可以先放你们一马哦？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Rider 黑绳地狱
+哎呀，哎呀。呵呵呵。
+[k]
+
+＠Rider 黑绳地狱
+你这人还真是善良呢。[r]我们可是打算来取你们性命的哦，
+[k]
+
+＠Rider 黑绳地狱
+而你既不打算取我们性命，[r]又不打算保护自己。
+[k]
+
+＠Rider 黑绳地狱
+虽说敌不过我们，[r]却鼓起勇气打算让身后的孩子逃跑。
+[k]
+
+＠Rider 黑绳地狱
+啊啊，多么善良啊。真是太美妙了。
+[k]
+
+＠Rider 黑绳地狱
+…………但是很遗憾。[r]若是人类，内心定会深受感动。
+[k]
+
+＠Rider 黑绳地狱
+但吾等乃英灵剑豪。并不是人。[r]所以，对杀死善良的你不会心存半分踌躇。
+[k]
+
+＠Rider 黑绳地狱
+最好就是先从你身后的三人开始杀起吧？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠武藏
+………………
+[k]
+
+？1：………………这身影好像在哪里见过……
+
+？！
+
+[se ad192]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠G：娇艳的少女声音
+了不起，了不起。[r]宛若传说故事中英雄般的言行！
+[k]
+
+＠G：娇艳的少女声音
+跟黑绳交手后居然还能活着说话，[r]看来德川之世也并非一无可取呐。
+[k]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Rider 黑绳地狱
+真是的，我还以为你要说什么呢，唉。[r]在德川之世还能身端影正的，
+[k]
+
+＠Rider 黑绳地狱
+也就只有那种孩童与婴儿之类的存在了吧。[r]说话真不讲道理。你应该羞愧到自尽，虫子。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+＠G：娇艳的少女声音
+啊哈哈哈哈哈哈。饶了妾身吧，黑绳小姐！
+[k]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠武藏
+（在树上……虽然看不到身影，但这个也相当[line 3][r]　不，论妖气，甚至在刚才那个女人之上……）
+[k]
+
+[charaFace A 4]
+
+＠武藏
+（呜哇，我都想哭了……[r]　不对，如果胤舜阁下不在的话，我肯定早就哭出来啦。）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠G：娇艳的少女声音
+不过嘛，这些小事都无妨啦。[r]非英雄豪杰的英灵或是别的什么的都可以。
+[k]
+
+＠G：娇艳的少女声音
+妾身并不讨厌这种哟。[r]不，严格说来或许还挺喜欢的呐。
+[k]
+
+＠G：娇艳的少女声音
+但是……
+[k]
+
+＠G：娇艳的少女声音
+与是否喜欢无关呐。[r]毕竟妾身，已经彻底痴狂了哦。呵呵呵呵呵。
+[k]
+
+＠G：娇艳的少女声音
+妾身什么都不要了。金钱名声月光风雅，全都不要了。
+[k]
+
+＠G：娇艳的少女声音
+[line 3]融化溶解，消失吧。
+[k]
+
+[se bac41]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠胤舜
+！！
+[k]
+
+[charaFace B 2]
+
+＠胤舜
+武藏快退后！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad211]
+[se bac69]
+[se ad14]
+[seVolume ad14 0 0.5]
+[wt 0.7]
+[shake 0.05 3 3 0]
+[se bac69]
+[se bac196]
+[seStop ad14 0.4]
+[fowardEffect bit_talk_water]
+[flashin once 0.1 0.1 4c98ff8F 4c98ff00]
+[wt 0.2]
+[flashin once 0.1 0.1 4c98ff8F 4c98ff00]
+[wt 0.1]
+[se ad176]
+[wt 0.2]
+[flashin once 0.7 0.7 4c98ffAF 4c98ff00]
+[wt 1.0]
+[fowardEffectStop bit_talk_water]
+[seStop ad176 2.0]
+[se ad36]
+[se ad14]
+[seVolume ad14 0 0.5]
+
+[seStop ad211 1.0]
+[seStop bac69 1.0]
+[seStop bac69 1.0]
+[seStop bac196 1.0]
+[seStop ad36 1.0]
+[seStop ad14 1.0]
+[wt 2.0]
+[shakeStop]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠武藏
+这……这奔流是什么！　不，不对[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠G：娇艳的少女声音
+好好品味妾身这无论什么都能融化的[r][#秘藏]一滴吧。只要接触到，就会融化消失哦？
+[k]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠胤舜
+是妖术那类吗！
+[k]
+
+？1：从者的宝具！？
+？2：没有真名解放也能释放出来！？
+
+？！
+
+＠胤舜
+从者就应该由从者来对付！[r]武藏阁下快去保护[%1]他们！
+[k]
+
+＠胤舜
+这里就交给贫僧好了！[r]让你们好好见识一下我宝藏院流的绝技吧！！
+[k]
+
+[se bac304]
+[wt 0.4]
+
+[charaFace B 2]
+
+＠胤舜
+此乃枪之究极。确立一生无败的十一式！[r]胧里月，接招吧[line 6]！！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+
+[flashin once 0.6 0.4 FFFFFF80 0000000]
+[flashout 0.4]
+[se ad267]
+[shake 0.1 0 6 1.5]
+[wt 1.0]
+[se ad266]
+[wt 1.0]
+[se ad211]
+[fadeout white 2.0]
+[wait fade]
+[wt 0.5]
+[scene 37312]
+[fadein white 1.5]
+[wait fade]
+
+？1：大家都平安无事吧……！
+？2：胤舜用枪弹开了刚才的怒涛吗！？
+
+？！
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠胤舜
+…………差不多就是如此。
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace B 5]
+
+＠胤舜
+没错，没有吾之十文字枪无法贯穿之物！[r]英灵剑豪六骑，不怕死的就快快上前应战！
+[k]
+
+＠胤舜
+接下来我要拿出真本事了。[r]管你是鬼是神还是佛，我都会用枪把你刺穿。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠武藏
+…………！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,60]
+[charaFilter G silhouette 00000080]
+[charaMove G 1 0.1]
+[se ad223]
+[seVolume ad223 0 0.4]
+
+＠G：娇艳的少女
+[line 3]吾之忌名，乃 Berserker 众合地狱。
+[k]
+
+＠Berserker 众合地狱
+哎，不愧是枪之宝藏院。真有男子汉气概呐？[r]虽说没有真名解放，好歹也是妾身宝具的[#一滴]……
+[k]
+
+＠Berserker 众合地狱
+居然能被抵挡住。[r]哎。明明连[#鏖杀之宿业]都没有，还真能干呐。
+[k]
+
+？1：[line 3]这声音……
+？2：[line 3]好像在哪里听过……
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Rider 黑绳地狱
+哎呀，哎呀。话说，Berserker 众合地狱小姐？[r]那边那个孩子好像对你有印象呢。
+[k]
+
+＠Rider 黑绳地狱
+你还真是不容小觑呢。[r]就像是到处爬来爬去的碍眼虫子一般。
+[k]
+
+？1：这声音也……
+？2：好像很耳熟……
+
+？！
+
+＠Rider 黑绳地狱
+哎呀。哎呀？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：冷淡的剑鬼
+黑绳，众合。
+[k]
+
+＠C：冷淡的剑鬼
+玩闹就到此为止吧。[r]难道你们忘了身为英灵剑豪的伟大主命了吗。
+[k]
+
+＠C：冷淡的剑鬼
+Limbo。既然你也跟来了，[r]为何此处仍有生者留存。
+[k]
+
+＠C：冷淡的剑鬼
+Paraiso 和 Inferno 也是。[r]要知道在猎物面前舔舌垂涎是何等愚蠢的举止。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Assassin Paraiso
+是。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Archer Inferno
+……非常……抱歉……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Rider 黑绳地狱
+是我失礼了。[r]您说的确实没错。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠Berserker 众合地狱
+妾身可没打算当你的走狗哦？[r]不是说可以随心所欲的吗？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠冷淡的剑鬼
+你这家伙。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠武藏
+……很抱歉打扰你们聊天的兴致，[r]但既然你们忙着内讧，那说明我们现在可以走了吧。
+[k]
+
+＠武藏
+好吧，我知道这是不可能的。[r]我只是说说而已，不用回答我。
+[k]
+
+＠武藏
+戴着兜帽的男人。看来你就是首领呢。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：冷淡的剑鬼
+………………
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠武藏
+按照这个情况来看，就算询问你们的目的，[r]寻找妥协方案，也无法得到答案吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：冷淡的剑鬼
+目的，目的吗。这极为简单明了。
+[k]
+
+＠C：冷淡的剑鬼
+首先，将那个枪兵交给我们。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠胤舜
+……[#我]吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：冷淡的剑鬼
+正是。然后，将生者全部杀死。[r][#见到英灵剑豪的生者必须杀死]。无一例外。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠武藏
+有本事就来试[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：冷淡的剑鬼
+嗯。当然，我有本事做到。
+[k]
+
+＠C：冷淡的剑鬼
+[#难道你认为吾等六骑做不到吗]，女人。
+[k]
+
+[charaSet B 1098118400 1 Caster Limbo]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[wt 0.5]
+
+[charaTalk off]
+
+[charaFilter B silhouette 00000080]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 1.2]
+[charaFadeout B 0.2]
+[wt 0.4]
+
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 1.2]
+[charaFadeout F 0.2]
+[wt 0.4]
+
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 1.2]
+[charaFadeout D 0.2]
+[wt 0.4]
+
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 1.2]
+[charaFadeout E 0.2]
+[wt 0.4]
+
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 1.2]
+[charaFadeout G 0.2]
+[wt 0.4]
+
+[charaSet B 3014001 1 胤舜]
+[charaSet D 1098118600 1 阿缝]
+
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠武藏
+……………………
+[k]
+
+＠武藏
+（老狐狸。何需六骑，只用一骑就能做到了吧。[r]　但就算我们投降，结果依然不会改变……）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠胤舜
+（[%1]、[%1]。）
+[k]
+
+＠胤舜
+（现在已经免不了与他们一战了。[r]　若与六骑陷入混战，就无法保护阿缝他们了。）
+[k]
+
+＠胤舜
+（那些家伙与普通从者不同。[r]　怎么说呢，太异样了。完全捉摸不透。）
+[k]
+
+＠胤舜
+（从这点来看，贫僧与他们倒是挺搭的。）
+[k]
+
+＠胤舜
+（原因之一是对方指名道姓要求贫僧，[r]　除此以外当然还有其他理由。）
+[k]
+
+＠胤舜
+（无论是不是初次见面的对手，吾之宝具都能应对！[r]　因此。唔，怎么说呢。应该能争取点时间吧。）
+[k]
+
+＠胤舜
+（明白了吗，这里就交给贫僧好了。）
+[k]
+
+？1：是让我们把胤舜当作诱饵自己逃跑吗？
+
+＠胤舜
+（没错。正是！）
+[k]
+
+？2：但是，这样一来……
+
+＠胤舜
+（不。……贫僧认为已经别无他法了。）
+[k]
+
+？！
+
+＠胤舜
+（只要你能成功逃离，[r]　武藏自然就会追上你吧。这样就行了。）
+[k]
+
+＠胤舜
+（阿缝和田助就由你背着跑。明白了吗？）
+[k]
+
+？1：………………明白了。
+
+？！
+
+[charaFace B 1]
+
+＠胤舜
+（答得好，拜托你啦。）
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠胤舜
+[line 3]哈哈哈！　[charaFace B 2]听好了，自称是英灵剑豪的恶鬼们！
+[k]
+
+＠胤舜
+臭死了臭死了，好一股血腥味！　确实如武藏阁下所言，[r]都是些跟太平之世沾不上边的家伙！
+[k]
+
+＠胤舜
+既然你们这种家伙想找贫僧，那来得正好！[r]就让尊崇佛法之身好好教诲你们一番吧！
+[k]
+
+[charaFace B 0]
+
+＠胤舜
+综上所述，武藏阁下！　接下来就拜托你了！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠武藏
+胤舜阁下！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠胤舜
+[%1]，快跑！
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+
+？1：阿缝，抓紧了！
+？2：千万别松开田助哦！
+
+？！
+
+＠阿缝
+好可怕，好可……抽泣……哎，哎！？
+[k]
+
+[messageOff]
+[se ad7]
+[wt 0.2]
+[se ad443]
+[wipeout leftToRight 0.3 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[wt 0.1]
+[seStop ad443 0.5]
+[wipein rightToLeft 0.3 1]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠武藏
+！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠胤舜
+快走啊，武藏！　快去保护[%1]和孩子们！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠武藏
+…………抱歉！[r]大恩大德定将相报，胤舜阁下！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[se ad73]
+
+[fadeout black 2.0]
+[bgmStop BGM_BATTLE_65 2.5]
+[wait fade]
+
+[wt 2.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠胤舜
+[line 3]嗯。这下就可以放开手脚大战一场了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：冷淡的剑鬼
+自愿当诱饵吗，宝藏院胤舜。
+[k]
+
+＠C：冷淡的剑鬼
+但你是不会如愿的。[r]放弃吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠胤舜
+你身上缠绕的剑气确实强烈。[r]甚至能轻易颠覆魔力的多寡。
+[k]
+
+[charaFace B 0]
+
+＠胤舜
+跟武藏一样都是化生般的人吧，[r]一定是位相当难对付的人物吧，不过一事归一事。
+[k]
+
+＠胤舜
+我背后还有着孩子们跟年轻人在奔跑。[r]还有位美丽而卓越的女剑士也在奔跑。
+[k]
+
+[charaFace B 5]
+
+＠胤舜
+那贫僧唯有阻挡在此。[r]绝不退让。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：冷淡的剑鬼
+这样啊。[r][line 3]那就去死吧，宝藏院。
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaFadein C 0.3 1]
+[charaFadeout C 0.15]
+[charaMoveScale C 1.2 0.15]
+[charaMove C 0,20 0.15]
+[se ad73]
+[wt 0.2]
+
+[fadeout black 0.2]
+[wait fade]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[fadein black 0.1]
+[wait fade]
+[charaFadein B 0.3 1]
+[charaFadeout B 0.15]
+[charaMoveScale B 1.2 0.15]
+[charaMove B 0,20 0.15]
+[se ad73]
+[wt 0.2]
+
+[effect bit_talk_kengekiall01]
+[se ad32]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[shake 0.03 4 4 0.3]
+[wt 0.4]
+[se ad171]
+[wt 0.2]
+[se ad110]
+[wt 0.1]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[shake 0.03 4 4 0.3]
+[wt 0.1]
+[se ad32]
+[wt 0.5]
+[flashOff]
+[wt 1.5]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_24 1.4]
+[wait fade]
+[soundStopAll]
+[end]

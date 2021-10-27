@@ -1,0 +1,289 @@
+
+＄03-00-01-10-2-0
+[soundStopAll]
+
+[charaSet A 1098126400 1 帕茨西]
+[charaSet B 7030001 1 阿塔兰忒·Alter]
+[charaSet C 99502600 1 玛修]
+[charaSet D 2010001 1 比利]
+[charaSet G 5009000 1 特效用dummy2]
+[charaSet H 5009000 1 特效用dummy]
+
+[charaFilter D silhouette 00000080]
+
+[scene 54100]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10]
+
+[effect bit_talk_snowstorm_02]
+[se ad555]
+[seVolume ad555 0 0.1]
+
+[wt 0.7]
+
+[fadein black 1.5]
+[seVolume ad555 1.5 0.6]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠帕茨西
+根据地图，前方只有遭毁坏的村庄。[r]是那边没错吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+对！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+
+＠玛修
+今天的暴风雪愈发猛烈了……[r]受此影响，通讯也变得断断续续。
+[k]
+
+[charaFace C 8]
+
+＠玛修
+要是在迦勒底，[r]就能跳跃到任何时空发送通讯了……
+[k]
+
+[charaFace C 12]
+
+＠玛修
+御主，您没事吧？
+[k]
+
+？1：呼吸都要冻上了！
+
+[charaFace C 0]
+
+＠玛修
+原本应该非常艰难才对，[r]但多亏了极地用魔术礼装，才能平安无事。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+？2：勉强能坚持！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠帕茨西
+好厉害啊，连像我这种雅嘎[r]都不太受得了今天这天气。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[wt 1.2]
+
+[se bac21]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+！
+[k]
+
+[messageOff]
+[seVolume ad555 0.3 0.3]
+[bgm BGM_EVENT_80 0.1]
+
+[messageOff]
+[se ad73]
+[charaMoveScale B 1.1 0.1]
+[charaMove B 0,-10 0.1]
+[wt 0.15]
+[charaShake B 0.05 3 3 0.3]
+
+[charaDepth G 10]
+[charaPut G 1]
+[charaEffect G bit_talk_14]
+[charaMoveScale G 1.1 0.3]
+[wt 0.1]
+[se bac179]
+[wt 0.7]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaScale B 1.0]
+
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠帕茨西
+！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+来者何人！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.4 1]
+[wt 0.2]
+
+
+＠D：？？？
+这应该是我要问的！
+[k]
+
+[charaFace D 5]
+
+＠D：？？？
+你们来到这种边境中的边境，[r]被人遗弃的村庄究竟有何贵干？
+[k]
+
+[charaFace D 2]
+
+＠D：？？？
+真不凑巧，在这种暴风雪的环境下，[r]我也只能随便开枪了！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠玛修
+……对面刚才似乎打算彻底瞄准我们！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+吾乃希腊猎人，名为阿塔兰忒！[r]我有话要对你们的首领说！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠D：？？？
+我们可没有什么话想和你们说！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+我有话要说！
+[k]
+
+[charaMoveReturn B 0,-5 0.2]
+[se ad581]
+[wt 0.3]
+[charaMoveReturn B 0,-5 0.2]
+[se ad581]
+
+[wt 0.7]
+[charaFace B 2]
+
+＠阿塔兰忒·Alter
+多说无益，[r]……我们直接过去吧！
+[k]
+
+[charaSet G 2010001 1 比利演出用]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠D：？？？
+……真没办法！[wt 0.3][charaFace D 5][r]知道了，要是能过得来，就尽管来吧！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace D 2]
+
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+
+＠比利
+但在此之前，我要先试试你们的本领！[r]我的名字是比利小子！
+[k]
+
+[charaFilter D normal 00000080]
+[charaFadeout G 0.1]
+
+[charaTalk on]
+[charaTalk D]
+
+＠比利
+来吧，从我这闯过去吧！
+[k]
+
+
+[messageOff]
+[seStop ad555 0.4]
+[bgmStop BGM_EVENT_80 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

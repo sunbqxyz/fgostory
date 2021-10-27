@@ -1,0 +1,496 @@
+
+
+＄03-00-03-04-1-0
+
+[soundStopAll]
+
+[charaSet A 1098123000 1 穆尼尔]
+[charaSet B 1098123200 1 戈尔德鲁夫]
+[charaSet C 9005001 1 福尔摩斯]
+[charaSet D 98001000 1 玛修]
+[charaSet E 1098124510 1 达·芬奇]
+[charaSet F 98002000 1 芙芙]
+[charaSet G 3031001 1 枪兵193]
+[charaSet H 98115000 1 特效用]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_zero_sail2]
+[wt 0.5]
+[scene 10001]
+[wait effect bit_talk_zero_sail2]
+[fadeout white 1.5]
+[wait fade]
+
+[scene 53801]
+
+[effect bit_talk_41]
+
+[shake 0.05 0 2 3.0]
+
+[se ad607]
+[fadein white 2.0]
+[se ad629]
+[cameraMove 1.5 0,0 1.1]
+[wait fade]
+
+[wt 0.5]
+
+[fadeout black 1.0]
+[wait fade]
+
+[effectStop bit_talk_41]
+[scene 51600]
+
+[cameraHome 0.1]
+[wt 1.0]
+
+[shake 0.05 0 2 2.0]
+
+[fadein black 0.7]
+[seStop ad629 2.0]
+[wait fade]
+
+
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠穆尼尔
+自起始于彷徨海的长距离潜航中上浮[line 3][wt 0.7][charaFace A 2][bgm BGM_EVENT_80 0.1][r]呜哇，与预测完全一致！
+[k]
+
+[charaFace A 0]
+
+＠穆尼尔
+前方1000米处有大规模[#超积雨云:超级单体]！[r]是之前那种包围着异闻带的风暴！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠芙芙
+芙呜！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+嗯，精准度着实了得。[r]尽管受限于只能从彷徨海出发的条件，但确实可靠。
+[k]
+
+＠福尔摩斯
+根据Miss希翁的说法，除极点[line 3][r]南极和北极以外，都比较容易成功。
+[k]
+
+[charaFace C 5]
+
+＠福尔摩斯
+然而过于准确的这次反倒造成了麻烦呢。[r]这点距离也只能冲进去了。
+[k]
+
+＠福尔摩斯
+Mr.戈尔德鲁夫他[line 3]
+[k]
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+[charaShake B 0.05 2 2 1.5]
+[wt 1.5]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+看来紧张与对中毒的恐惧又复发了。[r]多半派不上什么用处了。
+[k]
+
+＠福尔摩斯
+你的情况如何，[&Mr.:Miss][%1]。[r]已经做好心理准备了吗？
+[k]
+
+？1：[line 3]嗯。勉强还行吧。
+？2：（勉强点头回应。）
+
+？！
+
+[charaFace C 0]
+
+＠福尔摩斯
+很好。你现在穿着的礼装[r]在Miss希翁的帮助下提升了性能。
+[k]
+
+＠福尔摩斯
+对御主而言，[r]生存机能原本就是最为重要的。
+[k]
+
+＠福尔摩斯
+详情就等抵达当地后再说吧……[r]Miss基列莱特？　怎么了？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠玛修
+啊，不……[r]没事，我也准备妥当了！
+[k]
+
+[charaFace D 12]
+
+＠玛修
+（……刚才虚数潜航时，[r]　好像又感到了北欧那时的温暖……）
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_80 1.0 0.5]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[wt 0.3]
+
+＠[51ffff]达·芬奇[-]
+[51ffff]好啦，到此为止～！[-][r][51ffff]要开始不间断地连续潜航了哦！[-]
+[k]
+
+＠[51ffff]达·芬奇[-]
+[51ffff]潜航艇的燃料是不能浪费的，[-][r][51ffff]直接利用从彷徨海中被推出来的惯性！[-]
+[k]
+
+＠[51ffff]达·芬奇[-]
+[51ffff]与北欧那时一样，这次也是在毫无线索的[-][r][51ffff]情况下上浮到异闻带内部[line 3][-]
+[k]
+
+[charaFace E 23]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+＠[51ffff]达·芬奇[-]
+[51ffff]哎呀？　哎呀哎呀哎呀哎呀哎呀？[-]
+[k]
+
+[charaFace E 0]
+
+＠[51ffff]达·芬奇[-]
+[51ffff]好消息，戈尔德鲁夫！[-][r][51ffff]中国异闻带里有高扬斯卡娅的反应！[-]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+什……什么！？[bgm BGM_EVENT_82 0.1][r]这是真的吗，莱昂纳多技术顾问！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 27]
+[charaFadein E 0.1 1]
+
+＠[51ffff]达·芬奇[-]
+[51ffff]嗯，这是半天前采集到的，绝对没错！[-][r][51ffff]这真是一石二鸟啊！[-]
+[k]
+
+＠[51ffff]达·芬奇[-]
+[51ffff]从虚数空间上浮的概率一下子提升了，[-][r][51ffff]而且只要捉住她，就能问出解药的事了！[-]
+[k]
+
+＠[51ffff]达·芬奇[-]
+[51ffff]穆尼尔，把锚点从『假设／生存中的人类』[-][r][51ffff]切换成高扬斯卡娅，麻烦你了！[-]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠穆尼尔
+明白！　咿，光驾驶就忙得不可开交了！[r]可恶，害我开始期待大叔身体健康的状况啦！
+[k]
+
+？1：高扬斯卡娅也在中国异闻带……
+？2：（……她会随身携带……解药吗……？）
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+好了。尽管是最后关头冒出来的新情报，[r]但达·芬奇的报告值得信赖。
+[k]
+
+＠福尔摩斯
+放弃搜索名为仙衰冥脉的毒物，[r]最优先目标变更为捕捉高扬斯卡娅。
+[k]
+
+＠福尔摩斯
+为了给戈尔德鲁夫氏和[%1]解毒，[r]这种方法比较切实际。
+[k]
+
+＠福尔摩斯
+而且，还能减少今后的威胁。
+[k]
+
+＠福尔摩斯
+同时要搜索[#隐匿者:Crypter]，并进行捕捉。[r]最终目的是切除扎根于中国的空想树。
+[k]
+
+＠福尔摩斯
+以上就是这次作战的内容。[r]没问题吧？　所长。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+唔，嗯！　我也鼓起干劲了！[r]现在可不是畏惧死亡的时候！
+[k]
+
+[charaFace B 5]
+
+＠戈尔德鲁夫
+绅士的时间到此结束！[r]TV·高扬斯卡娅……！
+[k]
+
+＠戈尔德鲁夫
+新仇旧恨一起算，[r]这次一定要让那名毒妇尝尝制裁的铁锤！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠芙芙
+芙，芙呜！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 17]
+[charaFadein E 0.1 1]
+
+＠[51ffff]达·芬奇[-]
+[51ffff]喂喂。[-][r][51ffff]先得想办法活捉她哦？[-]
+[k]
+
+＠[51ffff]达·芬奇[-]
+[51ffff]如果不能逼问出解药的所在，[-][r][51ffff]或是调配方法的话，可就毫无意义了。[-]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠枪兵193
+明白。要放水。但无需手下留情。[r]抓捕，即刻拷问便可。
+[k]
+
+＠枪兵193
+往死里打　直到她站不住脚，[r]无法耍阴谋诡计为佳。
+[k]
+
+＠枪兵193
+中华乃我的故乡。哪怕是异闻带，[r]苍穹与大地的模样依然亘古不变。
+[k]
+
+＠枪兵193
+既然如此，此处，乃我的领域。[r]消灭恶鬼，交给我吧。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠玛修
+嗯，拜托您了，枪兵193小姐！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.7]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+[line 3]好。距离风暴之壁还有400米！[r]达·芬奇，开始吧！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠[51ffff]广播语音[-]
+[51ffff]于Shadow Border外部装甲展开逻辑术式。[-][r][51ffff]实数空间中的[#存在证明:Haken]，[#卸下:脱落]！[-]
+[k]
+
+＠[51ffff]广播语音[-]
+[51ffff]未来预测·于20秒后证明边界面假说。[-][r][51ffff]时空摩擦减压，在0.4秒内缓和。[-]
+[k]
+
+＠[51ffff]广播语音[-]
+[51ffff]出航工程，一切良好。[-][r][51ffff]虚数海面，已按上次观测结果完成固定。[-]
+[k]
+
+＠[51ffff]广播语音[-]
+[51ffff]Shadow Border ，[#离境现实:Seil Cut]。[-][r][51ffff]毅然连续实行虚数潜航[line 3]Zero Sail～～～！[-]
+[k]
+
+
+
+
+[messageOff]
+
+[shake 0.05 0 5 1.5]
+[se ad14]
+[seVolume ad14 0 0.7]
+[wt 0.8]
+[seStop ad14 0.3]
+[se ade8]
+[seVolume ade8 0 0.7]
+
+
+[cameraMove 0.3 0,-10 1.01]
+[wt 0.4]
+[cameraMove 0.2 0,10 1.01]
+
+[wipeout rectangleStripDownToUp 0.3 1]
+[bgmStop BGM_EVENT_82 1.0]
+[wait wipe]
+
+[scene 10000]
+[wt 1.0]
+
+[wipein rectangleStripUpToDown 0.1 1]
+[wait wipe]
+
+[cameraHome 0.1]
+[wt 0.8]
+
+[effect bit_talk_zero_sail2]
+[wt 0.5]
+[scene 10001]
+
+[wait effect bit_talk_zero_sail2]
+[fadeout white 1.5]
+[wait fade]
+[scene 10000]
+
+[fadein white 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[bgmStop BGM_EVENT_80 0.4]
+[bgmStop BGM_EVENT_81 0.4]
+
+[charaSet A 1098123000 1 穆尼尔]
+[charaSet B 1098123200 1 戈尔德鲁夫]
+[charaSet C 9005001 1 福尔摩斯]
+[charaSet D 98001000 1 玛修]
+[charaSet E 1098124510 1 达·芬奇]
+[charaSet F 98002000 1 芙芙]
+[charaSet G 3031001 1 枪兵193]
+[charaSet H 98115000 1 特效用]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+
+[scene 10000]
+[wt 0.4]
+[soundStopAll]
+
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+
+[skip false]
+
+[wt 1.0]
+
+[fowardEffect bit_chapterstart303]
+[wait fowardEffect]
+
+[scene 10000]
+
+[fadeout black 1.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

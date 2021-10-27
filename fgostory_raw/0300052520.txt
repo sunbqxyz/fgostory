@@ -1,0 +1,151 @@
+
+＄03-00-05-25-2-0
+
+[soundStopAll]
+
+[charaSet A 4039002 1 曼迪卡尔多]
+[charaSet B 8001400 1 玛修]
+[charaSet C 1098182700 1 亚特兰蒂斯防卫兵]
+[charaSet D 1038000 1 伊阿宋]
+
+[charaSet J 5009000 1 特效用dummy]
+
+
+[cameraMove 0 0,0 1.01]
+
+[scene 86000]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠曼迪卡尔多
+玛修！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠玛修
+是！　掩体雷弹发射，[r]藉由贯通机能破坏引擎！
+[k]
+
+[charaFace B 2]
+＠玛修
+呀啊啊啊啊啊啊[line 2]！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[se ad171]
+[cueSe Battle bac153]
+[effect bit_talk_14]
+[wt 0.4]
+
+
+[se ad709]
+[cueSe Battle bac98]
+[fowardEffect bit_talk_impactlanding]
+[shake 0.02 3 3 0.8]
+[wt 2.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠曼迪卡尔多
+紧接着[line 3][r]嘿哟！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[cueSe Battle bac14]
+[effect bit_talk_v_slash01]
+[wt 0.4]
+
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[charaFadeout A 0]
+[shake 0.02 3 3 0.8]
+[wt 1.6]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0 1]
+＠亚特兰蒂斯防卫兵
+光束之帆，破损！[r]可恶，赶紧修缮……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠曼迪卡尔多
+要逃了，抓紧我！
+[k]
+
+
+[messageOff]
+[wt 0.1]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[wipeout rightToLeft 0.4 1.0]
+[wait wipe]
+
+[scene 85800]
+[wt 0.5]
+
+[wipein leftToRight 0.4 1.0]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,80]
+[charaMove A 0,-10 0.2]
+[wt 0.2]
+[se ad223]
+[shake 0.05 2 2 0.2]
+[wt 0.2]
+[charaMove A 0,0 0.2]
+[wt 0.7]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠伊阿宋
+很好，回来了啊！[r]剩余九十艘，还差得远呢！
+[k]
+
+＠伊阿宋
+而且，这种事恐怕再做[r]一两次就到极限了吧！
+[k]
+
+＠伊阿宋
+不过能减少一点也好！[r]好，去下一艘，下一艘！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

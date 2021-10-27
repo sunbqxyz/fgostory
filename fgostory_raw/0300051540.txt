@@ -1,0 +1,328 @@
+
+＄03-00-05-15-4-0
+
+[soundStopAll]
+
+[charaSet A 1098123210 1 戈尔德鲁夫]
+[charaSet B 8001410 1 玛修]
+[charaSet C 4039002 1 曼迪卡尔多]
+[charaSet D 1098181610 1 穿斗篷的人物_背中]
+[charaSet E 6038002 1 夏洛特·科黛]
+[charaSet F 1098124510 1 达·芬奇]
+[charaSet G 1098181620 1 穿斗篷的人物]
+
+[charaSet J 98115000 1 特效用]
+
+[scene 84900]
+
+[se ad37]
+[seVolume ad37 0 0.1]
+[seVolume ad37 1.2 1.0]
+[fadein black 1.2]
+[wait fade]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 2.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[seStop ad37 3.0]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠玛修
+[line 6]
+[k]
+
+？1：[line 6]
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠曼迪卡尔多
+（站在眼前的这家伙……[r]　应该是……从者吧？）
+[k]
+
+＠曼迪卡尔多
+（不，不是吗？[r]　并不是……从者吗？）
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠玛修
+[line 3]医……
+[k]
+
+？1：[line 3]医生！！！！
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se adm18]
+[wt 1.2]
+[seStop adm18 0.3]
+[wt 0.3]
+
+[charaTalk off]
+
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.6]
+[charaFadeout D 0.5]
+[wt 0.1]
+
+[charaFace G 1]
+[charaFadein G 0.6 1]
+[wt 0.6]
+
+
+＠穿斗篷的人物
+[line 3]别靠近我。[r]会害我头痛。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+[charaFace B 4]
+＠玛修
+[line 6]
+[k]
+
+？1：（……果然……）
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠穿斗篷的人物
+……这次只是凑巧而已。[r]忘记发生在这里的事吧。
+[k]
+
+＠穿斗篷的人物
+也不要告诉留在船上的迦勒底那伙人。[r]他们中有不能相信的人。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠玛修
+……这是，什么意思[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠穿斗篷的人物
+我不会照顾你们到那种地步。自己去思考。
+[k]
+
+＠穿斗篷的人物
+阿耳忒弥斯、奥德修斯、波塞冬。[r]你们的工作就是跨越这三重防壁。
+[k]
+
+[charaFace G 1]
+
+＠穿斗篷的人物
+凭自己的力量突破这片海域吧。
+[k]
+
+[messageOff]
+[se adm20]
+
+[charaEffect G bit_talk_17_bl]
+[charaFadeTime G 1.0 0.7]
+[wt 1.0]
+
+＠穿斗篷的人物
+唯有这样，你们才算获得了[r]站到这[#异闻带:Lostbelt]之王面前的资格。
+[k]
+
+？1：[line 3]请等一下！
+
+？！
+
+[charaFace G 0]
+
+＠穿斗篷的人物
+这异闻带已没有值得一看的东西了。[r]我对你们的战斗也不感兴趣。
+[k]
+
+＠穿斗篷的人物
+如果不想死的话[line 3][r]不，如果想活下去的话，就努力挣扎吧。
+[k]
+
+[charaFadeTime G 1.0 0.4]
+
+＠穿斗篷的人物
+虽说结果应该无法改变。[r]无论如何，这颗星球都没救了。
+[k]
+
+[messageOff]
+[se ad598]
+[charaEffectStop G bit_talk_17_bl]
+[charaFadeout G 1.5]
+[bgmStop BGM_EVENT_81 3.0]
+[wt 2.2]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠玛修
+啊……热量反应完全消失了。[r]似乎是单独……转移走了……
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠夏洛特·科黛
+刚才那位……究竟是……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠玛修
+…………
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠曼迪卡尔多
+冷静点。[r]总之先恢复，然后撤退。
+[k]
+
+＠曼迪卡尔多
+……基尔什塔利亚在此现身，[r]意味着奥德修斯也很可能掌握到我们的行踪了。
+[k]
+
+？1：对了，通讯……！
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠戈尔德鲁夫
+[f large]发[messageShake 0.05 3 3 0.4]生了什么事啊！？
+[k]
+
+＠戈尔德鲁夫
+刚……刚才你们所有人的生命体征都突然消失了啊！！
+[k]
+
+＠戈尔德鲁夫
+吓得我心脏差点停摆！[r]不，已经停摆了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 31]
+[charaFadein F 0.1 1]
+
+＠达·芬奇
+冷静点，戈尔德鲁夫！[r]有话要说的可不只你一个！
+[k]
+
+[charaFace F 33]
+
+＠达·芬奇
+啊啊，太好了……！[r]嗯，看来你们全都平安无事吧！？
+[k]
+
+？1：勉强吧……
+？！
+
+＠达·芬奇
+这样啊。
+[k]
+
+[charaFace F 24]
+
+＠达·芬奇
+之后再慢慢告诉我们究竟发生了什么吧。
+[k]
+
+
+[charaFace F 34]
+＠达·芬奇
+总之现在先撤退。[r]抓紧时间！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+[soundStopAll]
+[end]

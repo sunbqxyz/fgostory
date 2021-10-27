@@ -1,0 +1,832 @@
+
+
+＄94-03-50-23-1-1
+[soundStopAll]
+
+
+[charaSet A 3030000 1 帕尔瓦蒂]
+[charaSet B 6014001 1 玛塔·哈丽]
+[charaSet C 98110000 1 柳生但马守]
+[charaSet D 5030001 1 山鲁佐德]
+[charaSet E 1098163800 1 春日局]
+[charaSet F 10003000 1 杀生院祈荒]
+[charaSet G 1098164100 1 女官1]
+[charaSet H 1098164100 1 女官2]
+[charaSet J 5009000 1 特效用dummy]
+
+[charaDepth G 4]
+[charaDepth H 6]
+
+[scene 71702]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFadein G 0 0]
+[charaFace H 0]
+[charaFadein H 0 2]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut J 1]
+[charaEffect J bit_talk_kengekiall01]
+[wt 0.1]
+[se bac6]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaShake G 0.05 3 3 0.5]
+[wt 0.2]
+[seStop bac6 0.2]
+[charaMove G -256,-30 0.5]
+[wt 0.1]
+[charaFadeout G 0.4]
+[se bac6]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaShake H 0.05 3 3 0.5]
+[wt 0.2]
+[charaPut J 1024,1024]
+[seStop bac6 0.3]
+[charaMove H 256,-30 0.5]
+[wt 0.2]
+[bgmStop BGM_EVENT_3 1.0]
+[se ade41]
+[wt 0.4]
+[se ad144]
+[charaFadeout H 0.4]
+[charaEffectStop J bit_talk_kengekiall01]
+[charaFadeout J 0.1]
+[se ade41]
+[wt 0.4]
+[se ad144]
+[wt 1.2]
+
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠帕尔瓦蒂
+掉钥匙了！[r]这样就能打开这扇门了吧。
+[k]
+
+？1：这层楼上锁的门是不是太多了……？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠玛塔·哈丽
+就是啊。而且还有故意将钥匙挂在腰间[r]显摆的女官们，简明易懂固然是件好事。
+[k]
+
+＠玛塔·哈丽
+但每次都这样未免太麻烦了～。
+[k]
+
+[charaFace B 1]
+
+＠玛塔·哈丽
+算了，总之先前进吧？
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[scene 71702]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.5]
+
+？1：又来了啊。
+？！
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠柳生但马守
+等一下。请看侧面的房间……[r]看一下床之间。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[scene 71800]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+[charaFace H 0]
+[charaFadein H 0.1 2]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[wt 1.2]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+[scene 71702]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠帕尔瓦蒂
+女官们似乎在工作呢。[r]完全没有发现我们。而且……
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[scene 71800]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+
+[cameraMove 2.0 -80,15 1.2]
+[wt 3.0]
+
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[scene 71702]
+[cameraHome 0.1]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠山鲁佐德
+钥匙……就在那里吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠玛塔·哈丽
+如果能偷偷拿过来，[r]或许就可以回避战斗继续前进了？
+[k]
+
+[charaFace B 3]
+
+＠玛塔·哈丽
+……但是，从剑士先生的角度来说，[r]是不是讨厌这种玩策略的方法？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠柳生但马守
+剑并非只能斩杀。[r]不用拔出就获胜同样好。
+[k]
+
+＠柳生但马守
+而现在，并没到斩下她们首级的时候。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[wt 0.1]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth A 0]
+[charaDepth E 1]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+[wt 0.3]
+
+[charaSpecialEffect A erasureReverse 1 0.3]
+[charaFace E 17]
+[charaFadein E 0.2 1]
+[wt 0.1]
+[seStop ad80 0.3]
+
+[wt 0.5]
+
+＠春日局
+也就是说，您完全不在意吧。[r]好了，那么该怎么办呢。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛塔·哈丽
+要我用我的『谍报』技能想办法吗？
+[k]
+
+＠玛塔·哈丽
+如果不试试看，[r]也不知道这个技能对那些人偶有多大的效果。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠杀生院祈荒
+在做之前，请稍微等一下。按照此前的发展……[r]这里应该是围绕不偷盗戒为主题的楼层。
+[k]
+
+？1：果然……
+？2：是五戒之一吧。
+？！
+
+[charaFace F 11]
+
+＠杀生院祈荒
+对。[r]是不可偷盗他人的物品。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠春日局
+唔，这确实理所当然。
+[k]
+
+[charaFace E 7]
+
+＠春日局
+我在教育他人的时候，[r]也会严格地让他们记住这些规范！
+[k]
+
+＠春日局
+如果轻视这些，还谈何培养出色的将军，[r]谈何培养出色的武士啊！
+[k]
+
+[charaFace E 11]
+＠春日局
+但是……拿走那些女官们的钥匙，[r]也等同于偷走他人的东西吧？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠杀生院祈荒
+从迄今为止的反应来看，对方希望[r]“我们能破戒”的事恐怕是确凿无疑的。
+[k]
+
+＠杀生院祈荒
+尽管还不知道这与对方的目的有什么关系。
+[k]
+
+[charaFace F 7]
+
+＠杀生院祈荒
+刚才的楼层也一样。
+[k]
+
+＠杀生院祈荒
+既然我们已经发现了，[r]那我觉得任凭对方的摆布不是什么好事……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠玛塔·哈丽
+但是，构造还是和以往没什么变化吧。[r][#不破戒就无法前进]，[#遵守戒律就会寸步难行]。
+[k]
+
+＠玛塔·哈丽
+这里似乎是这种机制。[r]为了前进，就不得不被强迫破戒。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠山鲁佐德
+就像用玛塔·哈丽小姐的宝具让御主喝醉一样……
+[k]
+
+＠山鲁佐德
+我看只有……[r]尽可能用对方想不到的方法来前进了。
+[k]
+
+[charaFace D 6]
+
+＠山鲁佐德
+因为我们……不得不继续前进这点是无法改变的。
+[k]
+
+＠山鲁佐德
+为了拯救必须拯救的人。
+[k]
+
+？1：说得……对。
+？2：只能狠下决心了吧。
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛塔·哈丽
+但是……超出对方想象的前进方式，[r]我现在还想不到什么方法。
+[k]
+
+＠玛塔·哈丽
+只有不战去偷，或是战后去抢这两种。[r]这两种应该都算偷盗吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠山鲁佐德
+不。让思考进一步脱离框架吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛塔·哈丽
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠山鲁佐德
+究竟谁负责偷盗，谁是破戒的主体。[r]御主负责偷盗恐怕是最危险的。
+[k]
+
+＠山鲁佐德
+御主的从者前去偷盗则次之。[r]然后，再提升一阶段……
+[k]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+＠山鲁佐德
+如果是[#从者操纵的东西进行偷盗]的话，[r]或许就能一定程度偏离对方的意图吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠杀生院祈荒
+原来如此。也就是实际破戒的究竟是谁的问题吧？
+[k]
+
+＠杀生院祈荒
+这倒是，关系越远越安全吧。
+[k]
+
+？1：难不成……！？
+？2：接下来能听到那个有名的故事了！？
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠山鲁佐德
+对。接下来我会讲述，[r]我所知晓的盗贼的“故事”。
+[k]
+
+[charaFace D 7]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠山鲁佐德
+在很久～很久以前，波斯国有兄弟两人。[r]哥哥叫卡西姆，弟弟叫阿里巴巴[line 3]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[cueSe Battle bac441]
+[cueSeVolume bac441 0 0.5]
+[wt 0.3]
+[cueSeStop bac441 0.5]
+[wt 1.0]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠玛塔·哈丽
+哎呀，有什么出现了呢。好小好可爱，[r]就像……女孩子一样……？　这就是阿里巴巴？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠山鲁佐德
+不。这是敌人。[r]来吧，盗贼首领啊，做你该做的事……
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[scene 71800]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 65,0]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[cameraMove 0.5 -22,-10 1.03]
+[wt 0.5]
+[cameraMove 1.2 -10,-20 1.15]
+[wt 1.2]
+[cameraMove 0.7 -15,-30 1.2]
+[wt 2.0]
+
+[fadeout black 0.5]
+[wait fade]
+[charaFadeout G 0.1]
+[scene 71702]
+[cameraHome 0.1]
+[wt 0.5]
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠柳生但马守
+身手敏捷，隐藏气息的水准也相当了得。
+[k]
+
+＠柳生但马守
+但接下来的路都是没有死角的。[r]想不被发现未免有些困难吧。
+[k]
+
+？1：没关系啦。
+？2：因为盗贼有四十个！
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+[wt 0.4]
+[charaMoveReturn D 0,-10 0.5]
+[wt 0.2]
+[cueSe Battle bac441]
+[cueSeVolume bac441 0 0.5]
+[wt 0.3]
+[cueSeStop bac441 0.5]
+[wt 1.0]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠春日局
+哎呀，这次居然又出现了更小更可爱的呀。[r]喀嗒喀嗒地向着隔壁房间的隔扇……
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+[scene 71800]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 65,0]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+＠G：女官
+……？　刚才的声音，是什么。[r]我去看看……
+[k]
+
+[messageOff]
+[charaMove G 95,0 0.4]
+[charaFadeout G 0.4]
+[wt 1.0]
+
+[cameraMove 2.0 -80,15 1.2]
+[wt 2.0]
+[cameraHome 2.0]
+[wt 1.5]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+
+[scene 71702]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade281]
+[wt 1.0]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠山鲁佐德
+[line 3]就是这么一个故事。[r]可喜可贺，可喜可贺……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠玛塔·哈丽
+终于顺利拿到了呢。太棒了！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠杀生院祈荒
+不管怎么说，如果拿不到钥匙就无法前进。[r]这算是中上之策吧。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠春日局
+趁那些人偶们还没发现，赶快……
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ade278]
+[wt 0.6]
+[seStop ade278 0.1]
+[wt 0.3]
+
+[se ade279]
+[wt 0.8]
+
+[se ade295]
+[cameraMove 3.0 0,10 1.2]
+[wt 1.5]
+
+[fadeout black 1.5]
+[bgm BGM_EVENT_77 1.5 0.4]
+[seStop ade295 1.5]
+[wait fade]
+
+[scene 71900]
+[cameraHome 0.1]
+[wt 1.0]
+
+[fadein black 1.5]
+[bgm BGM_EVENT_77 1.5 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠玛塔·哈丽
+呵呵呵。话说回来，我居然有幸亲耳听到[r]一千零一夜的故事，真是太美妙了啊～。
+[k]
+
+＠玛塔·哈丽
+尽管我还很想听后续或是别的故事。[r]但不到明晚就没法继续听了吧～？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠山鲁佐德
+呵呵。多谢夸奖。
+[k]
+
+＠山鲁佐德
+现在并非为延续一千个夜晚，[r]而是为了让这特异点的故事尽早结束而讲述。
+[k]
+
+[charaFace D 0]
+
+＠山鲁佐德
+如果有必要的话，要说多少都可以[line 3][wt 0.6]哎呀？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+
+＠春日局
+唔，阻挡道路的没有钥匙孔的门！[r]然而却有一个意味深长的镂空底座！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠柳生但马守
+看那边的房间。[r]尽管和此前一样，也有很多女官……
+[k]
+
+＠柳生但马守
+但格窗上有个明显可以卸下来的装饰。[r]……形状似乎与底座上的镂空完全一致。
+[k]
+
+？1：不是用钥匙，而是用关键道具吧！
+？2：多么拐弯抹角的机关！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠玛塔·哈丽
+尽管总是劳烦您未免有些过意不去，[r]但令人高兴的是不需要等到明晚了。
+[k]
+
+[charaFace B 0]
+
+＠玛塔·哈丽
+看来，接下来也能听到很多你说的故事了～？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠山鲁佐德
+[line 3]就交给我吧。
+[k]
+
+[charaFace D 5]
+
+＠山鲁佐德
+逃过了四十大盗的阿里巴巴，[r]盗神阿里·扎依巴克、魔神的迷惑之术。
+[k]
+
+＠山鲁佐德
+阿夫玛多·阿达纳夫、哈桑·舒麦、[r]达丽雅与扎伊纳布母子……能够用的还有很多。
+[k]
+
+＠山鲁佐德
+如果为了前进，需要我的故事。[r]如果为了救出什么人，需要我的故事。
+[k]
+
+[charaFace D 7]
+
+＠山鲁佐德
+哪怕喉咙嘶哑，[r]我也会将我所说的故事继续讲述下去[line 3]
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

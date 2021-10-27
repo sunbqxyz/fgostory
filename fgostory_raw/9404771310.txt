@@ -1,0 +1,113 @@
+
+
+
+＄94-04-77-13-1-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 98001000 1 玛修]
+[charaSet B 3039000 1 加雷斯]
+[charaSet C 1098193100 1 『秋叶原』的御主]
+[charaSet D 98006000 1 兽人敌人]
+[charaSet E 98006000 1 特效用dummy]
+
+[pictureFrame cut170_gameframe_bright]
+
+
+[branchMaterial lblMaterial]
+
+
+[branch lblBranchMaterialEnd]
+
+[label lblMaterial]
+[scene 95500]
+
+[label lblBranchMaterialEnd]
+
+
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk off]
+[charaFace C 0]
+[charaFace B 0]
+[charaFadein C 0.4 -236,-50]
+[charaFadein B 0.4 236,-50]
+[wt 0.8]
+[charaTalk on]
+[charaTalk C]
+＠『秋叶原』的御主
+欢迎来到宠物店·[#马铃薯:potato]！
+[k]
+
+？1：[#马铃薯:potato]？
+
+？2：不是『[#小狗:pooch]』吗？
+
+？！
+
+[charaFace B 1]
+＠加雷斯
+是根据我的哥哥大人最爱吃的食物取的。[r]据说这是他成为从者后的主食。
+[k]
+
+[charaFace B 0]
+＠加雷斯
+话说回来，各位想要什么样的宠物？[r]每一只都很可爱亲人哦！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+＠玛修
+这家店是放养的啊。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale E 0.95]
+[charaPut E 1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+[charaEffect E bit_talk_41]
+[se ad25]
+[wt 1.4]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaEffectDestroy E bit_talk_41]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-50]
+＠玛修
+……竟然朝这里扑来了！？[bgm BGM_EVENT_3 0.1]
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[wt 0.4]
+[soundStopAll]
+[end]
+
+

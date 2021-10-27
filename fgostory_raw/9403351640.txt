@@ -1,0 +1,221 @@
+
+
+
+＄94-03-35-16-4-0
+
+[charaSet A 5027001 1 玛丽]
+[charaSet C 98002000 1 芙芙]
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+
+[scene 10204]
+
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+[wt 0.4]
+
+＠玛丽
+[tVoice ValVoice_502700 0_V010]
+哎呀[line 3]？[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFadein C 0.1 2]
+
+[charaFace A 0]
+[charaFadein A 0.1 0]
+
+＠芙芙
+[tVoice ValVoice_502700 0_V020]
+芙，芙芙。[wait tVoice]
+[k]
+
+＠玛丽
+[tVoice ValVoice_502700 0_V030]
+你既然在这里……[r]说明一定没错，那个人就在附近吧？[wait tVoice]
+[k]
+
+＠芙芙
+[tVoice ValVoice_502700 0_V040]
+芙[line 3]呜。[wait tVoice]
+[k]
+
+？1：啊，芙芙你在这里啊！
+？2：您好，王妃殿下。
+
+？！
+
+[charaFace A 1]
+
+＠玛丽
+[tVoice ValVoice_502700 0_V050]
+哎呀！　果然！[r]太好了，我刚想见你，就立刻见到了呀！[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠玛丽
+[tVoice ValVoice_502700 0_V060]
+这也多亏了这孩子呢……[r]呵呵呵，谢谢。下次我会好好向你道谢的。[wait tVoice]
+[k]
+
+[charaMoveReturn C 256,20 0.2]
+
+＠芙芙
+[tVoice ValVoice_502700 0_V070]
+芙，啾呜！[wait tVoice]
+[k]
+
+＠玛丽
+[tVoice ValVoice_502700 0_V080]
+现在有些对不起哦。我在忙其他事……[r]有件东西必须送给[%1]才行。[wait tVoice]
+[k]
+
+？1：东西？
+？2：难道是……？
+
+？！
+
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛丽
+[tVoice ValVoice_502700 0_V090]
+呵呵。对，没错，为了这美妙日子准备的礼物。[r]赠送给重要对象的甜美无比的情感表现。[wait tVoice]
+[k]
+
+＠玛丽
+[tVoice ValVoice_502700 0_V100]
+给，请收下吧。[r][#法兰西万岁:Vive La France]！[wait tVoice]
+[k]
+
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[equipSet B 9805680 1 ]
+[wait equipSet B]
+[charaFace B 0]
+[charaFadein B 0.5 0,-70]
+[wt 2.0]
+[charaFadeout B 0.4]
+[wt 0.5]
+
+？1：白巧克力与冰的竞演……！
+？2：纯白的山岭！
+
+？！
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛丽
+[tVoice ValVoice_502700 0_V110]
+呵呵，如何。[r]因为太大了，你一定吓了一跳吧！[wait tVoice]
+[k]
+
+
+[messageOff]
+[charaFace A 4]
+[wt 0.6]
+[charaFace A 0]
+
+＠玛丽
+[tVoice ValVoice_502700 0_V120]
+我本来为阿马德乌斯和桑松也准备了相同的东西。[r]但是呀……[wait tVoice]
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.7]
+[se ad95]
+[wt 1.0]
+[seStop ad95 0.1]
+[wt 0.1]
+[charaScale A 1.4]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.4 0,40]
+
+[wt 0.4]
+
+＠玛丽
+[tVoice ValVoice_502700 0_V130]
+…………您想啊。他们肯定会……对吧？[wait tVoice]
+[k]
+
+＠玛丽
+[tVoice ValVoice_502700 0_V140]
+冰这种东西。[r]非常。[wait tVoice]
+[k]
+
+＠玛丽
+[tVoice ValVoice_502700 0_V150]
+……非常……容易融化吧？[wait tVoice]
+[k]
+
+[messageOff]
+
+
+[charaFadeout A 0.7]
+[se ad95]
+[seStop ad95 1.0]
+[wt 1.3]
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+[wt 0.4]
+
+＠玛丽
+[tVoice ValVoice_502700 0_V160]
+如果一次做太多的话，就会逐渐融化，[r]变得根本无法收拾。[wait tVoice]
+[k]
+
+＠玛丽
+[tVoice ValVoice_502700 0_V170]
+所以，这是只送给你的礼物。[r]我会为其他人准备不一样的东西。[wait tVoice]
+[k]
+
+＠玛丽
+[tVoice ValVoice_502700 0_V180]
+呃，话说，御主。[r]综上所述，所以拜托你[line 3][wait tVoice]
+[k]
+
+＠玛丽
+[tVoice ValVoice_502700 0_V190]
+关于我制作的这座白朗峰，[r]今年也要向那两位保密哦。麻烦你了哦？[wait tVoice]
+[k]
+
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+[soundStopAll]
+[end]

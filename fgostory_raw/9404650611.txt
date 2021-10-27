@@ -1,0 +1,653 @@
+
+＄94-04-65-06-1-1
+
+[soundStopAll]
+
+[charaSet A 5033001 1 喀耳刻]
+[charaSet B 2009102 1 俄里翁]
+[charaSet C 99502600 1 玛修]
+[charaSet D 98111500 1 通讯用杂音]
+[charaSet F 1038000 1 伊阿宋]
+[charaSet H 1098181810 1 奥德修斯]
+[charaSet J 2012000 1 尤瑞艾莉]
+[charaSet K 7009001 1 阿斯忒里俄斯]
+[charaSet L 5017001 1 美狄亚·Lily]
+
+[charaDepth B 8]
+[charaDepth F 6]
+
+[charaSet E 1001000 1 特效用]
+[charaSet I 1001000 1 特效用]
+[charaSet G 1098181810 1 奥德修斯_演出用]
+
+[scene 20210]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaEffect E bit_talk_magic_circle]
+
+[charaPut E 1200,1200]
+[charaPut I 1]
+
+[fadein black 1.5]
+[wait fade]
+
+[effect bit_talk_kengekiall02]
+[wt 0.2]
+[se ad470]
+[seStop ad470 0.7]
+[wt 0.2]
+[se ad170]
+[charaEffect I bit_talk_kengekiall02 0,0 V]
+[wt 0.2]
+[se ad170]
+[wt 0.2]
+[se ad170]
+[wt 0.2]
+[se ad170]
+[wt 0.3]
+
+
+[charaPut E 1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[se ad39]
+[wt 1.3]
+
+[se bac68]
+[charaEffectStop E bit_talk_magic_circle]
+[wt 0.7]
+
+[fadeout white 0.3]
+[seStop ad39 0.3]
+[wait fade]
+
+[charaEffectDestroy E bit_talk_magic_circle]
+[charaFadeout A 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.1]
+
+[seStop bac68 0.5]
+
+[fadein white 0.5]
+[wait fade]
+
+[effect bit_talk_attack_buf]
+[se bas10]
+[wt 1.3]
+[effectDestroy]
+
+[charaMoveScale H 1.2 0.2]
+[charaMove H 0,10 0.2]
+[se bac2]
+[effect bit_talk_41]
+[charaFadeout H 0.2]
+[wt 0.2]
+[effectStop bit_talk_41]
+[effectDestroy]
+[wt 0.1]
+
+[charaEffect I bit_talk_shot_02]
+[se bac149]
+[wt 0.2]
+[se bac149]
+[wt 0.2]
+[se bac149]
+[wt 0.4]
+[effect bit_talk_14]
+[se bac151]
+[wt 0.2]
+
+[charaEffectDestroy I bit_talk_shot_02]
+
+[charaScale K 1.1]
+[charaTalk K]
+[charaFace K 5]
+[charaFadein K 0.1 1]
+[se ad671]
+[charaMoveScale K 1.0 0.3]
+[wt 1.3]
+
+[charaMove K 0,-10 0.3]
+[wt 0.2]
+[charaFace K 4]
+[se ad54]
+[seVolume ad54 0 0.8]
+[wt 1.3]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaScale H 1.0]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+[bgmStop BGM_EVENT_24 1.5]
+
+＠尤瑞艾莉
+到此为止了吧。[r]阿斯忒里俄斯，可以了。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠阿斯忒里俄斯
+嗯。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 1]
+[charaFadein L 0.1 1]
+
+＠美狄亚·Lily
+谢谢你们两位。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace K 0]
+[charaFadein K 0.1 0]
+[charaFace J 1]
+[charaFadein J 0.1 2]
+
+＠尤瑞艾莉
+没关系啦。[r]而且构思陷阱还挺有意思的。
+[k]
+
+＠尤瑞艾莉
+阿斯忒里俄斯，我们回去吧。[r]让我坐在你肩上。
+[k]
+
+
+＠阿斯忒里俄斯
+明白了。
+[k]
+
+[charaFace K 3]
+
+
+＠阿斯忒里俄斯
+那么，御主。[r]拜拜～！
+[k]
+
+？1：拜拜～！
+？！
+
+
+[messageOff]
+[charaTalk off]
+[wt 0.3]
+[charaMove J 206,0 0.5]
+[charaMove K -306,0 0.5]
+[charaFadeout J 0.4]
+[charaFadeout K 0.4]
+[se ad60]
+[seStop ad60 2.0]
+[wt 2.0]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠奥德修斯
+好了，麻烦你解释一下吧。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 1]
+[charaFadein L 0.1 1]
+
+＠美狄亚·Lily
+好的！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠喀耳刻
+……我有种不祥的预感……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 1]
+[charaFadein L 0.1 1]
+
+＠美狄亚·Lily
+当然，是为了让你和喀耳刻姑妈变得亲密！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+
+[bgmStop BGM_EVENT_2 0.1]
+
+＠奥德修斯
+……[r]……
+[k]
+
+[charaFace H 4]
+
+＠奥德修斯
+……不好意思。[r]请问你刚才说什么？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 1]
+[charaFadein L 0.1 1]
+
+＠美狄亚·Lily
+所以我说啦。
+[k]
+
+[messageOff]
+[cameraMove 0.2 0,-60 1.2]
+[wt 0.2]
+
+[effect bit_talk_41 0,60]
+[se ade242]
+
+[charaFace L 2]
+
+＠美狄亚·Lily
+我希望奥德修斯先生[r]和姑妈关系变得亲密啦！
+[k]
+
+[messageOff]
+[effectStop bit_talk_41]
+[effectDestroy]
+[cameraHome 0.4]
+[wt 0.5]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_27 0.1]
+
+＠喀耳刻
+这[messageShake 0.01 5 5 0.7]，这，这……这算什么[line 3]！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 5]
+[charaFadein L 0.1 1]
+
+＠美狄亚·Lily
+喀耳刻姑妈。
+[k]
+
+＠美狄亚·Lily
+喀耳刻姑妈或许已经不记得了。
+[k]
+
+
+＠美狄亚·Lily
+但每当发酒疯人事不省的时候，[r]姑妈总会唠叨奥德修斯先生的事。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠喀耳刻
+呜哎！（完全不记得。）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠美狄亚·Lily
+生前，[r]你们的地位成了你们关系的障碍。
+[k]
+
+＠美狄亚·Lily
+英雄、魔女、王、女神……
+[k]
+
+＠美狄亚·Lily
+但是，既然成了从者，[r]就可以毫不在意地变得亲密了吧？
+[k]
+
+[charaFace L 1]
+
+
+＠美狄亚·Lily
+就像我和伊阿宋大人那样！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 16]
+[charaFadein F 0.1 1]
+
+
+＠伊阿宋
+哎，我倒是（觉得我俩关系并不好，[r]而且也没打算和你变得亲密。）
+[k]
+
+[messageOff]
+
+[charaTalk B]
+[charaFace B 2]
+
+[charaFadein B 0.1 150,10]
+[charaMove B 0,75 0.2]
+[se ad7]
+[wt 0.4]
+
+＠俄里翁
+你只会让问题变得更为复杂，[r]稍微安静点！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠奥德修斯
+……[r]……原来如此。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[bgmStop BGM_EVENT_27 1.5]
+
+＠喀耳刻
+只……只为了这种理由，[r]就搞出如此夸张的事件吗！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠美狄亚·Lily
+是的。
+[k]
+
+
+＠美狄亚·Lily
+因为，如果不这么做，[r]您在迦勒底期间可能会一辈子抱怨个不停嘛。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠喀耳刻
+噢噢……我完全不记得……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠奥德修斯
+只不过，我还是觉得夺走我的记忆[r]未免做过头了吧，你怎么看？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠美狄亚·Lily
+关于这件事，[r]请容我表示歉意。
+[k]
+
+[charaFace L 4]
+
+＠美狄亚·Lily
+因为无论我模拟多少次……
+[k]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+＠美狄亚·Lily
+假如在拥有记忆的状态下开始，[r]两位的关系一定会破裂。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠喀耳刻
+破裂……[r]……难道！
+[k]
+
+
+＠喀耳刻
+美狄亚，你该不会……[r][#没有将那段记忆还给他]？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 4]
+[charaFadein L 0.1 1]
+
+＠美狄亚·Lily
+这[line 3]
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠喀耳刻
+……[r]……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠奥德修斯
+怎么回事？[r]我还欠缺了什么记忆吗？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 4]
+[charaFadein L 0.1 1]
+
+＠美狄亚·Lily
+但是，只要那个人存在……
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠喀耳刻
+美狄亚。
+[k]
+
+[charaFace A 4]
+
+＠喀耳刻
+……虽然我也很喜欢魔女特有的[r]简单且毒辣的手段。
+[k]
+
+[charaFace A 5]
+
+＠喀耳刻
+但这是他和我的问题。[r]把他的记忆还给他。
+[k]
+
+＠喀耳刻
+如果将这视为刚才战斗的胜利报酬，[r]应该没什么问题吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 4]
+[charaFadein L 0.1 1]
+
+＠美狄亚·Lily
+是……
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠喀耳刻
+再说，再说了。[r][#我执着的并不是这件事啦]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+＠美狄亚·Lily
+那我将记忆还给您吧。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+[charaPut G 1]
+[charaFace G 4]
+[charaFadeTime G 0 0.5]
+
+＠奥德修斯
+啊，嗯。[r]我收下了。
+[k]
+
+[messageOff]
+
+[charaFace H 0]
+[effect bit_talk_gold_kamui 35,-15]
+[se bas2]
+[wt 3.0]
+[charaFace H 8]
+[charaFace G 8]
+[effectStop bit_talk_gold_kamui]
+[se bas6]
+[wt 1.8]
+[effectDestroy]
+
+[charaDepth H 6]
+[charaDepth G 9]
+
+[charaMoveScale G 1.2 0.4]
+[charaMove G 0,10 0.4]
+[wt 0.4]
+[charaFadeout G 0.3]
+[wt 0.6]
+
+[charaFace H 5]
+
+＠奥德修斯
+……这……
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

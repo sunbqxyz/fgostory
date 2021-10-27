@@ -1,0 +1,1040 @@
+
+
+
+
+＄94-03-13-05-2-0
+
+[soundStopAll]
+
+
+[charaSet A 1098159700 1 魁札尔假面]
+[charaSet B 99502600 1 玛修]
+[charaSet C 98111500 1 通讯用杂音]
+[charaSet D 3036000 1 布拉达曼特]
+[charaSet E 98002000 1 芙芙]
+[charaSet F 3028001 1 豹人]
+[charaSet G 5025001 1 狮子人]
+[charaSet H 7028000 1 班扬]
+
+
+
+[scene 68900]
+
+
+[charaPut C 0,-2000]
+[charaEffect C bit_talk_10_LowLevel]
+
+[charaDepth A 1]
+[charaDepth D 2]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk off]
+
+[charaFace G 1]
+[charaFadein G 0.1 2]
+
+[charaFace H 1]
+[charaFadein H 0.1 0]
+
+[wt 1.2]
+
+[charaFadeout H 0.4]
+[charaFadeout G 0.4]
+[wt 0.5]
+
+[charaFace D 2]
+[charaFadein D 0.4 2]
+
+[charaFace A 5]
+[charaFadein A 0.4 0]
+
+[wt 1.5]
+
+[charaFadeout A 0.4]
+[charaFadeout D 0.4]
+[wt 0.5]
+
+
+[charaDepth G 0]
+[charaDepth H 1]
+
+[charaScale H 1.2]
+[charaFace H 1]
+[charaFadein H 0.1 0,30]
+
+[wt 1.0]
+
+[se ad628]
+[effect bit_talk_41]
+
+[charaMove H 0,65 0.2]
+[charaMoveScale H 1.5 0.2]
+
+[wt 0.2]
+
+[seStop ad628 0.5]
+[charaFadeout H 0.1]
+[effectStop bit_talk_41]
+[wt 0.7]
+
+[se ad249]
+[seVolume ad249 0 0.7]
+[shake 0.05 3 3 0]
+
+[charaFace D 2]
+[charaFadein D 0.1 2]
+
+[charaFace A 5]
+[charaFadein A 0.1 0]
+
+[wt 0.7]
+
+[se ad73]
+[charaMove A -300,0 0.5]
+[charaFadeout A 0.1]
+
+[charaMove D 300,0 0.5]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[charaFace G 4]
+[charaFadein G 0.1 1]
+[wt 0.4]
+
+[charaFace H 2]
+[charaFadein H 0.1 400,65]
+[charaMove H 150,65 0.3]
+[wt 0.3]
+
+[se bac11]
+[charaFace G 2]
+[fowardEffect bit_talk_13]
+[charaShake G 0.05 4 4 0.2]
+[wt 0.1]
+
+[charaMove H -130,65 0.4]
+[charaMove G -390,0 0.4]
+[wait charaMove]
+[seStop ad249]
+[shakeStop]
+
+[se ad626]
+[effect bit_talk_lightning_04t]
+[effect bit_talk_lightning_02t]
+
+[charaFace H 9]
+[charaShake H 0.05 4 4 1.5]
+
+[charaFace G 2]
+[charaShake G 0.05 4 4 1.5]
+
+[wt 1.5]
+
+[seStop ad626 0.5]
+[effectStop bit_talk_lightning_02t]
+
+[wt 0.5]
+
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+
+[wt 0.5]
+
+[charaTalk on]
+[charaPut C 1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠玛修
+对方是打算给我们致命一击吗……
+[k]
+
+＠玛修
+为了回避不知不觉变得更大的班扬小姐……
+[k]
+
+＠玛修
+狮子人先生反被卷了进去[line 3][r]撞上围绳的两人被电麻了……！？
+[k]
+
+[charaScale H 1.0]
+[charaFadeout B 0.1]
+[charaPut C 0,-2000]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+＠班扬
+好麻啊！　但是，用来按摩因开拓而僵硬的肩膀，[r]或许还挺舒服的……？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠狮子人
+不……不可能。我的衣服可是做过绝对直流防御措施的啊？[r]是不可能被外部电流击中的！
+[k]
+
+＠狮子人
+唯一的可能性……就是围绳上的电流被不知不觉[r]切成了邪恶的交流……该死的，居然做出这种勾当……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaPut C 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠玛修
+尽管我不明白这变化和绝缘方法有什么关系……[r]但总之，趁现在！
+[k]
+
+[charaFadeout B 0.1]
+[charaPut C 0,-2000]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠魁札尔假面
+你们太小看我了哦～！　就算用不了围绳，[r]真正的摔角手也是能用空中杀法进行绝杀的～！
+[k]
+
+＠魁札尔假面
+布拉达人，弯下腰双手交叉～！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠布拉达曼特
+原来如此，用我代替角柱与围绳吧！[wt 0.8][charaMove D 0,-10 0.5][r]来吧！
+[k]
+
+[messageOff]
+
+[charaTalk off]
+
+[charaDepth D 0]
+[charaDepth A 1]
+
+[charaFace A 5]
+[charaFadein A 0.1 -600,0]
+[charaMove A 1 0.3]
+
+[wt 0.5]
+
+[charaMoveReturn D 0,15 0.2]
+
+[se ad73]
+[charaMove A 0,200 0.3]
+[charaFadeout A 0.1]
+[wt 0.8]
+
+[charaFadeout D 0.1]
+[wt 0.8]
+
+[bgmStop BGM_EVENT_3 0.5]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[wt 0.6]
+
+
+[se bac11]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[fowardEffect bit_talk_13]
+[wt 0.2]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+[charaShake G 0.05 4 4 0.5]
+＠狮子人
+迪嘻。（痛苦）[r]不可能……
+[k]
+
+[messageOff]
+
+[charaMove G 0,-50 0.4]
+[charaFadeout G 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.2]
+
+[se ade175]
+[wt 2.0]
+[seStop ade175]
+
+[fadeout black 1.5]
+[wait fade]
+[wt 0.5]
+
+[scene 30440]
+
+[charaTalk on]
+
+[wt 1.5]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_25 0.1]
+
+？1：还好这次也获胜了呢。
+？！
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠布拉达曼特
+说得对。尽管我觉得对方的自我毁灭[r]多多少少帮了我们。
+[k]
+
+[charaFace D 0]
+＠布拉达曼特
+……？　魁札尔假面，怎么了？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠魁札尔假面
+……唔。刚才有一瞬，我似乎发现了[r]某件非常重要的事……究竟是什么呢……？
+[k]
+
+[charaFace A 0]
+＠魁札尔假面
+啊啊，对不起，我只是在思考一些事。[r]没什么啦～。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠布拉达曼特
+总之，比赛一场比一场严峻。[r]大家不愧都是一路赢到现在的强者。
+[k]
+
+＠布拉达曼特
+这次的胜利也有幸运的成分。不能掉以轻心，[r]我认为必须更努力地强化锻炼才行。
+[k]
+
+？1：好认真啊，了不起。
+？2：你真努力呢。
+？！
+
+[charaFace D 3]
+＠布拉达曼特
+不，没什么，对骑士来说，为胜利而倾尽全力[r]努力奋斗乃是理所当然的，没什么可夸奖的……
+[k]
+
+＠布拉达曼特
+倒不如说我很清楚自己还不成熟，还有很多[r]做得不够的地方，所以根本不容得我松懈。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut C 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠玛修
+还不成熟啊，同为盾使，[r]我也有很多需要学习的地方……
+[k]
+
+＠玛修
+布拉达曼特小姐真是位非常有上进心的人呢。
+[k]
+
+[charaFadeout B 0.1]
+[charaPut C 0,-2000]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_25 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠布拉达曼特
+我只是因为无法接受始终处于这[r]不成熟样子的自己，而在不断挣扎罢了。
+[k]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaFace D 4]
+＠布拉达曼特
+比方说……[r]被打个措手不及遭怪物抓住的时候……
+[k]
+
+＠布拉达曼特
+真正的骑士一定不会甘于沦为囚徒受辱，[r]而是主动寻求死亡吧。
+[k]
+
+＠布拉达曼特
+我还差得远呢。嘴上说『杀了我吧』，[r]内心却一直在思考着翻盘的机会……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut C 1]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠玛修
+我觉得……[r]这不是什么坏事啊[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[charaPut C 0,-2000]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠布拉达曼特
+…………是吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠芙芙
+……芙？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 1.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠魁札尔假面
+哎呀？[r]等一下，刚才有没有听到什么声音
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠布拉达曼特
+您这么一说。似乎是……小孩子的声音呢。[r]或许是迷路了。我们去看看吧！
+[k]
+
+[messageOff]
+[se ad443]
+[seStop ad443 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[scene 30530]
+
+[charaSet E 3026000 1 贞德·Alter·Santa·Lily]
+[charaSet G 6012000 1 桑松]
+[charaSet H 4017000 1 玛丽]
+
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.4 1]
+[wt 0.2]
+＠贞德·Alter·Santa·Lily
+真是的。真是的！
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.2]
+＠桑松
+我理解你的心情，但冷静点啦。
+[k]
+
+
+＠桑松
+尽管遗憾地输了比赛，[r]但我们也以自己的方式公平地战斗了。
+[k]
+
+＠桑松
+光这点就足以令人问心无愧。[r]更何况对方使用的是不公平的手段。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠贞德·Alter·Santa·Lily
+话……话虽如此……[r]桑松先生真成熟，真聪明呢！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠桑松
+这不算什么，我只是比较擅长寻找遗漏要素而已。[r]不过……玛丽大概会感到失望吧……呼。
+[k]
+
+？1：你们好。
+？2：应该是法兰西的代表吧。
+？！
+
+[charaFace G 1]
+＠桑松
+哎呀，御主。你们也参加了吗。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut C 1]
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠玛修
+圣诞老人的Lily小姐会在姑且不论，[r]没想到桑松先生居然也来参加了啊。
+[k]
+
+[charaFadeout B 0.1]
+[charaPut C 0,-2000]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠桑松
+嗯，当然了，[r]队伍的主体还是这位小小的圣诞老人啦。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout G 0.1]
+
+[wipeFilter cinema 0.5 0]
+[cameraFilter gray]
+
+[scene 10310]
+
+[wt 0.5]
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.4 256,-40]
+
+[charaFace E 6]
+[charaFadein E 0.4 -256,-40]
+[wt 0.2]
+
+＠玛丽
+感谢您的邀请！　扮演驯鹿？[r]听上去挺有意思的，能用玻璃马代替吗？
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[cameraFilter normal]
+
+[charaFadeout H 0.1]
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[wipeOff]
+
+[scene 30530]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+[fadein black 0.5]
+[wait fade]
+
+＠桑松
+……就是这样，她差点就直接参加了。[r]因此我才慌慌张张地代替她参加了比赛。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+＠贞德·Alter·Santa·Lily
+驯鹿！
+[k]
+
+？1：你参赛了啊。
+？！
+
+[charaFace E 0]
+＠贞德·Alter·Santa·Lily
+嗯，当然啦！　毕竟我是圣诞老人嘛！
+[k]
+
+＠贞德·Alter·Santa·Lily
+我可不能将真正的圣诞力量交给那种来路不明的家伙。
+[k]
+
+＠贞德·Alter·Santa·Lily
+师傅肯定也会这么说。[r]只有正式的圣诞老人才应该在圣诞节出现！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠魁札尔假面
+我……我可是从阿蒂拉那里正式继承来的哦～？[r]是正式的哦，是真的哦～？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠贞德·Alter·Santa·Lily
+这我已经听说了……但真的能相信你吗。[r]如此暴露……而且还跳着桑巴……盯……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut C 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠玛修
+话……话说回来，刚才您似乎在生什么气。[r]发生了什么事呢？
+[k]
+
+[charaFadeout B 0.1]
+[charaPut C 0,-2000]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠桑松
+啊啊。当然，一个原因自然是[r]因为输了比赛，心有不甘[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠贞德·Alter·Santa·Lily
+如果只是普通的输，我是不会有意见的！
+[k]
+
+＠贞德·Alter·Santa·Lily
+该怎么说呢，太卑鄙了啦！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠布拉达曼特
+卑鄙？　那可不好，会生气是理所当然的！[r]那是有损骑士道的败类！
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠贞德·Alter·Santa·Lily
+非常感谢，配色似乎和法兰西有关系的大姐姐！
+[k]
+
+？1：卑鄙是怎么个卑鄙法？
+？2：是哪个国家的哪支队伍？
+？！
+
+[charaFace E 2]
+＠贞德·Alter·Santa·Lily
+嗯，那是[line 3]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad224]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 -600,0]
+[charaMove F 0,0 0.8]
+[wt 1.5]
+＠豹人
+嗨嗨嗨～！　你们到底在做什么！
+[k]
+
+[charaFace F 5]
+＠豹人
+我只是碰巧经过……[#危险危险:Danger Danger]。[r]我可不能允许还有比赛要打的队伍……
+[k]
+
+＠豹人
+从已经败北的队伍那里直接[r]获得情报的违法剧情发生哦！
+[k]
+
+[charaFace F 2]
+＠豹人
+只要我豹子还有一口气，就不允许你们做这种事！[r]好啦好啦，都解散啦解散！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+＠贞德·Alter·Santa·Lily
+唔。既然你说这是违法或者违规的，[r]那干嘛不在我们比赛时好好执法啦……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠桑松
+说到底，这场淘汰赛的规则[r]完全取决于运营者的个人意志吧。
+[k]
+
+＠桑松
+尽管心怀不满，但我们也不是签订[r]契约书来参加的，对此也无能为力。
+[k]
+
+＠桑松
+既然输了，就只能老老实实地收手了。[r]……话说，我们有办法知道淘汰赛的结果吗？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠豹人
+决胜战预计会盛大地通过所有大屏幕进行现场直播喵。[r]毕竟届时也谈不上什么情报了。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠桑松
+这样啊。那么声援也算有意义了。
+[k]
+
+＠桑松
+[line 3]那我们就此告辞。[r]我们会祈祷你们获得胜利的。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠贞德·Alter·Santa·Lily
+（气鼓鼓。）
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[wt 0.8]
+
+[charaFace G 1]
+＠桑松
+话说，你知道这种玩法吗？[r]只要将这块表面平坦的石头，像这样扔向水面……
+[k]
+
+[messageOff]
+[charaMoveReturn G 20,0 0.2]
+
+[se adm16]
+[wt 0.4]
+[se adm16]
+[wt 0.2]
+[se adm16]
+[seVolume adm16 0.1 0.7]
+[wt 0.2]
+[se adm16]
+[seVolume adm16 0.1 0.5]
+[wt 0.2]
+[se adm16]
+[seVolume adm16 0.1 0.3]
+[wt 0.8]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+＠贞德·Alter·Santa·Lily
+呜哇！　这是什么，是魔术吗？[r]哎，每个人都能做到？　教我怎么弄啦！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠魁札尔假面
+呵呵，看来你还挺擅长应对小孩子呢～。
+[k]
+
+[charaFace A 0]
+＠魁札尔假面
+[line 3]你们的这份感情我收下了。
+[k]
+
+＠魁札尔假面
+我保证会连同你们的份一起，[r]全速冲到淘汰赛的巅峰～！
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_7 1.5]
+[wait fade]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[scene 30440]
+
+[charaSet E 98002000 1 芙芙]
+[charaSet F 98115200 1 人型敌人1]
+[charaSet G 98109900 1 人型敌人2]
+[charaSet H 98109900 1 人型敌人3]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaPut C 1]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠玛修
+还是很令人在意呢。会让Lily小姐如此[r]心不甘情不愿的卑鄙队伍究竟是……？
+[k]
+
+[charaFadeout B 0.1]
+[charaPut C 0,-2000]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠魁札尔假面
+如果总是思考输掉的比赛，[r]只会一味在意负面问题啦～。
+[k]
+
+＠魁札尔假面
+若想要打一场即便输掉也能100％尊重对手的[r]飒爽的摔角较量，唯有认真地练习才行[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[se ad221]
+[wt 0.8]
+[seStop ad221 0.5]
+
+[wt 0.8]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFadein G 0.4 300,0]
+[charaFace H 0]
+[charaFadein H 0.4 -300,0]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[wt 1.5]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaShake E 0.05 4 4 0.5]
+＠芙芙
+芙！？
+[k]
+
+？1：请……请问你们是谁呀？
+
+？2：怎么突然来了一大堆人！　是粉丝吗？
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠布拉达曼特
+从杀气来看应该不是。[r]快退后，[%1]！
+[k]
+
+？！
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠F：？？？
+你们是『魁札尔姐妹』吧？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠魁札尔假面
+说得没错～。[r]要一起跳桑巴吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠F：？？？
+别怪我们。这是命令。
+[k]
+
+[turnPageOff]
+＠F：？？？
+我们不会取你们的性命。[r]不过是带走一条手臂而已！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[turnPageOn]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠布拉达曼特
+命令……？　这是谁的指示？[r]恬不知耻！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠魁札尔假面
+尽管有些出人意料，但作为比赛后的休息而言[r]来得正好～！　将他们彻底击溃吧！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

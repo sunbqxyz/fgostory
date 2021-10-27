@@ -1,0 +1,133 @@
+＄91-70-01-02-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+[scene 20110]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98003000 2 Dr.罗曼]
+[charaSet C 98002000 2 芙芙]
+[charaSet D 7001001 1 赫拉克勒斯]
+[charaSet E 98013000 1 龙]
+[charaFace A 4]
+[charaFadein A 0]
+[fadein black 1]
+[wait fade]
+＠玛修
+对不起，御主。[r]没想到居然陷入这种境地……
+[k]
+
+？1：这不是玛修的错。
+
+？2：反击这才要开始！！
+
+？！
+
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 4]
+＠Dr.罗曼
+本来只是去消灭怪物的，[r]没想到居然成了拼上性命的生存者游戏……
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFadeout A 0.1]
+[charaFadein A 0.1 2]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+＠赫拉克勒斯
+…………
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr.罗曼
+就算是赫拉克勒斯，[r]大闹个三天三夜后也会没力气吗……
+[k]
+
+[messageOff]
+[communicationCharaClear]
+[wait communicationChara]
+[wipeout rollFlashRight 1.5 1]
+[wait wipe]
+[wt 0.5]
+[bgmStop BGM_EVENT_5 0.4]
+[bgm BGM_EVENT_2 0.1]
+[scene 10202]
+[charaTalk A]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[wipein rollFlashRight 1 1]
+[wait wipe]
+＠玛修
+迷宫……吗？
+[k]
+
+＠Dr.罗曼
+嗯，冬木的地下迷宫……大空洞所在的场所。[r]我从这迷宫深处观测到了奇妙的反应。
+[k]
+
+[charaFace B 5]
+＠Dr.罗曼
+不知道是特异点的残渣，还是时空的紊乱。[r]无论是什么，都不能放着不管。
+[k]
+
+[charaFace A 7]
+＠玛修
+祸根就得尽早铲除。[r]我们这就出发吧，前辈。
+[k]
+
+[messageOff]
+[se ad12]
+[effect bit_talk_07]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 4]
+[fadeout white 1]
+[effectStop]
+[wait effect]
+[bgmStop BGM_EVENT_2 0.4]
+[bgm BGM_EVENT_3 0.1]
+[wait fade]
+[scene 20110]
+[communicationCharaLoop 98003003 1 5 0 4]
+[fadein white 0.5]
+[wait fade]
+＠Dr.罗曼
+结果却落入了圈套……[r]那一定是雷夫教授留下的麻烦吧，该死的。
+[k]
+
+[communicationCharaFace 5]
+＠Dr.罗曼
+别说什么特异点了，压根什么都没有。[r]就算想逃，回程也一路都是障碍。
+[k]
+
+＠Dr.罗曼
+而且那里貌似是被魔术封闭的空间，从外部根本无法干涉。[r]能通信已经算极限了。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[se ad23]
+[wait se ad23]
+[charaFace A 2]
+[charaFadein A 0.1 2]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+＠玛修
+……！！　又来了！！[r]我们上，赫拉克勒斯先生！！
+[k]
+
+[charaFace D 2]
+＠赫拉克勒斯
+[image berserker_language_1][line 2]！！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

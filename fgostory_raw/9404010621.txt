@@ -1,0 +1,797 @@
+
+＄94-04-01-06-2-1
+
+
+[soundStopAll]
+
+
+[charaSet A 98100400 1 玛修]
+[charaSet B 1008300 1 齐格飞]
+[charaSet C 6019300 1 小太郎]
+[charaSet D 1040000 1 葛饰北斋]
+[charaSet E 7036001 1 宫本伊织]
+[charaSet F 6028000 1 目慈恵怒]
+[charaSet G 6008002 1 克娄巴特拉]
+[charaSet H 5030001 1 山鲁佐德]
+[charaSet I 1098180000 1 目慈恵怒（远光灯）]
+[charaSet J 98115000 1 特效用]
+
+[branchQuestNotClear lblNotClear1 3000303]
+[flag IsClear true]
+[branch lblConf1]
+[label lblNotClear1]
+[flag IsClear false]
+[label lblConf1]
+
+
+
+[scene 10000]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad171]
+[wt 0.3]
+
+[effect bit_talk_kengekiall02]
+[wt 0.1]
+[se ad170]
+[wt 0.2]
+[se ad618]
+[se ad686]
+[wt 0.6]
+
+
+[se ad32]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 0.1]
+[scene 81400]
+
+
+
+[charaScale D 1.2]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0 0,20]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[charaMove D 0,0 0.2]
+[charaMoveScale D 1.0 0.2]
+[charaShake D 0.02 3 3 0.6]
+[wt 1.2]
+
+＠葛饰北斋
+怎么回事！　攻击不起作用！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠齐格飞
+恐怕是那位Ruler的力量吧。[r]没有挑战书果然就无法挑战泳装剑豪。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+[se ad164]
+[wt 1.2]
+[charaFace D 23]
+[se bac246]
+[wt 0.5]
+[se ad7]
+[charaMove D 150,0 0.4]
+[charaFadeout D 0.4]
+[wt 0.4]
+[charaPut J 1]
+[se ad628]
+[shake 0.05 0 3 1.8]
+[charaEffect J bit_talk_impactlanding]
+[wt 2.0]
+[charaEffectStop J bit_talk_impactlanding]
+[seStop ad628 1.0]
+
+[charaTalk D]
+[charaFace D 23]
+[charaFadein D 0.1 1]
+
+＠葛饰北斋
+嘁，又是吊顶机关！[r]明明是个赌场，却暗藏如此多陷阱！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠宫本伊织
+咻，[#雷山:Thunder Mountain]！[r]感觉每一步都是陷阱！
+[k]
+
+[charaFace E 8]
+＠宫本伊织
+哎呀，枪阵，嘿哟。
+[k]
+
+[messageOff]
+[se bac1]
+[charaMove E 260,0 0.3]
+[wt 0.2]
+[se bac307]
+[fowardEffect bit_talk_14]
+[wt 1.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠风魔小太郎
+确实……忍者屋也不过如此！[r]太危险了，主公千万别动！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠克娄巴特拉
+有什么好惊讶的？[r]这是为了狠狠地打击企图盗掘神圣之墓的品行不端者，
+[k]
+
+＠克娄巴特拉
+法老是很擅长设置陷阱、施加诅咒的哦？
+[k]
+
+＠克娄巴特拉
+这里形同目慈惠怒大人的居所，[r]有一、两百个陷阱也不足为奇吧！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠I：目慈恵怒
+还没　投降吗　蠢货。[r]乖乖地　束手　就擒吧。
+[k]
+
+[charaFace I 2]
+＠I：目慈恵怒
+抵抗意味着　[wt 0.5]不敬　[wt 0.5][charaShake I 0.05 2 2 0]不敬　不敬不敬[r]不敬敬敬敬敬敬敬[line 3]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaShakeStop F]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠山鲁佐德
+啊，不好！
+[k]
+
+＠山鲁佐德
+认真努力过头导致出现急性梅杰德中毒（暂用名）[r]的征兆！　快想办法让她冷静下来！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠宫本伊织
+唔，有破绽了。
+[k]
+
+＠宫本伊织
+反正任何攻击都没有效果，[r]而且我们也不占地利，不如先撤退吧？
+[k]
+
+？1：我同意！　先撤退吧！
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠葛饰北斋
+嘁，没办法了！[r]只能回去重整旗鼓了！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.5]
+[se ade235]
+[charaMove D 100,0 0.6]
+[wt 0.2]
+[charaFadeout D 0.4]
+[wt 0.3]
+[seStop ade235 0.5]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠克娄巴特拉
+慢着！
+[k]
+
+[se ade160]
+
+＠克娄巴特拉
+警卫斯芬克斯们，总动员！[r]绝对不能给目慈恵怒大人丢脸！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaSet B 1008300 1 齐格飞]
+[charaSet H 1098178800 1 员工A]
+[charaSet I 1098178800 1 员工B]
+[charaSet J 1098178800 1 员工C]
+
+[scene 81300]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 1.0 1.0]
+[wait wipe]
+
+[charaTalk off]
+
+[se ade210]
+
+[charaTalk depthOff]
+[charaDepth H 3]
+[charaDepth I 2]
+[charaDepth J 1]
+
+[charaFace H 2]
+[charaFadein H 0.4 1]
+[wt 0.2]
+
+[charaFace I 2]
+[charaFadein I 0.4 356,0]
+[charaMove I 300,0 0.3]
+
+[wt 0.2]
+
+[charaFace J 2]
+[charaFadein J 0.4 -356,0]
+[charaMove J -300,0 0.3]
+
+[wt 0.2]
+[seStop ade210 0.5]
+[wt 2.0]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+呃……被层层包围了！[r]这样恐怕会难以突破……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠克娄巴特拉
+呵呵呵！　认命吧！
+[k]
+
+[charaFace G 1]
+
+＠克娄巴特拉
+放心，妾身不会取你们性命。[r]只是会将你们关进禁闭室，在夏天结束前，
+[k]
+
+＠克娄巴特拉
+不断教导你们，直到你们将目慈惠怒大人的伟大，[r]尤其是将其美丽深深刻进骨子里为止！！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 24]
+[charaFadein D 0.1 1]
+
+＠葛饰北斋
+我不要。我要……成为天下第一剑豪。[r]我可不能在那种地方虚度整个夏天……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+
+＠宫本伊织
+…………
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠齐格飞
+连续战斗已经令人非常疲劳了。[r]如果能有什么办法就好了……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+[branch lblNotClear2 IsClear false]
+
+[label lblClear2]
+
+＠风魔小太郎
+最近好像在彷徨海中见过又好像没见过的军师阁下似乎说过。
+[k]
+
+[branch lblConf2]
+
+[label lblNotClear2]
+
+＠风魔小太郎
+最近好像在迦勒底中见过又好像没见过的军师阁下似乎说过。
+[k]
+
+[label lblConf2]
+
+＠风魔小太郎
+没错。在穷途末路时也不必焦虑。[r]一定能找到解决方法的。
+[k]
+
+[charaFace C 0]
+＠风魔小太郎
+不知如何是好的时候只要那样做，[r]基本上都能打开活路[line 3]
+[k]
+
+？1：不可以自爆！
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[se ade210]
+
+[charaFace H 2]
+[charaFadein H 0.4 1]
+
+[charaFace I 2]
+[charaFadein I 0.4 300,0]
+
+[charaFace J 2]
+[charaFadein J 0.4 -300,0]
+
+[wt 0.3]
+
+[charaMoveScale H 1.1 0.5]
+[charaMoveScale I 1.1 0.5]
+[charaMoveScale J 1.1 0.5]
+
+[charaMove H 0,15 0.5]
+[charaMove I 300,15 0.5]
+[charaMove J -300,15 0.5]
+
+[wt 1.0]
+[charaMoveScale H 1.2 0.5]
+[charaMoveScale I 1.2 0.5]
+[charaMoveScale J 1.2 0.5]
+
+[charaMove H 0,30 0.5]
+[charaMove I 300,30 0.5]
+[charaMove J -300,30 0.5]
+
+[wt 0.6]
+[seStop ade210 0.2]
+[wt 1.5]
+
+[charaTalk A]
+
+
+[bgmStop BGM_EVENT_24 0.6]
+[se ade328]
+[seVolume ade328 0 0.5]
+[wt 0.9]
+[se ade327]
+[seVolume ade327 0 0]
+[seVolume ade327 1.0 1.0]
+[wt 1.6]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.2]
+
+[charaSet H 5030001 1 山鲁佐德]
+[charaSet I 1098177300 1 卡米拉]
+
+
+[seStop ade327 0.4]
+[se ade329]
+[wt 2.0]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+您……您是！？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.4 1]
+[wt 0.8]
+
+＠卡米拉
+看来你们遇到了麻烦呢。[r][line 3]坐上来吧，小家伙们。
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 1.2]
+[charaFace A 7]
+[wt 0.4]
+
+＠玛修
+御主！[bgm BGM_EVENT_82 0.1]
+[k]
+
+？1：拜托了！
+？2：车上坐不下所有人吧？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+＠宫本伊织
+（哇，超跑[line 2]！[r]　糟了，我差点忘记维加斯还有这玩意儿了！）
+[k]
+
+[charaFace E 8]
+
+＠宫本伊织
+不过现在不是羡慕的时候。[r]这样算超载了吧？
+[k]
+
+＠宫本伊织
+我自己会想办法，[r]稍后在酒店会合吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠齐格飞
+我也是。我这魁梧的身躯会碍到你们。
+[k]
+
+[charaFace B 1]
+
+＠齐格飞
+我一个人的话，应该能想出从这里逃脱的办法。[r]当然是除自爆以外。
+[k]
+
+[messageOff]
+[charaPut J 34,265]
+[charaEffect J bit_talk_starshine]
+[wt 0.2]
+[se ade126]
+[wt 0.9]
+[charaPut J 1200,1200]
+[charaEffectDestroy J]
+[wt 0.9]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠风魔小太郎
+我坐在车体上就行了。[r]不用在意我，尽管飚车吧。
+[k]
+
+＠风魔小太郎
+主公阁下、玛修阁下、北斋阁下……[r]客席应该坐得下三个人吧。
+[k]
+
+[charaFace C 12]
+
+＠风魔小太郎
+不过说起来这辆车为什么只有两个座位啊！[r]是因为过于吝啬吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠卡米拉
+高……高级跑车就是这样的，[r]你给我记清楚了！
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[wt 0.4]
+
+[se ade330]
+[wt 0.8]
+
+[se ade328]
+[wt 0.9]
+[se ade327]
+[wt 0.2]
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+
+[bgmStop BGM_EVENT_82 2.0]
+
+[wt 0.5]
+
+[wt 2.0]
+
+[scene 10000]
+
+[wipein rectangleStripLeftToRight 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+
+[scene 81400]
+
+[wipeFilter cinema 0.5 0]
+[wt 1.0]
+
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 0,-50]
+
+＠山鲁佐德
+[line 3]就这样，[r]伟大的法老开始永远守护起了这个国家。
+[k]
+
+＠山鲁佐德
+可喜可贺，可喜可贺。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 0,-50]
+[charaMove F 0,-35 0.4]
+＠目慈恵怒
+嘶……哈……[wt 0.6][charaMove F 0,-50 0.4]
+[k]
+
+[messageOff]
+[wait charaMove F]
+[wt 0.5]
+
+[charaShake F 0.05 2 2 0.2]
+[charaFace F 0]
+
+＠目慈恵怒
+啊？　我　怎么了？[bgm BGM_EVENT_90 0.1]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+
+＠山鲁佐德
+不，没什么。[r]来，我们回去正常工作吧。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+
+＠目慈恵怒
+是么。那么　我就　回　VIP室[r]向胜利者　发射　祝福光波。
+[k]
+
+＠目慈恵怒
+法老　赌场　啊　永存……
+[k]
+
+[messageOff]
+[se bac166]
+[charaMove F 0,20 0.8]
+[charaFadeout F 0.7]
+[wt 1.0]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠克娄巴特拉
+感谢您为目慈恵怒大人进行治疗。[r]如此重要的任务也只有您能胜任。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 -256,-50]
+
+[charaFace G 0]
+[charaFadein G 0.1 256,-50]
+
+＠山鲁佐德
+谢谢……御主他们呢？
+[k]
+
+[charaFace G 4]
+
+＠克娄巴特拉
+被他们逃跑了。[r]坐着一辆奇怪的红色跑车。
+[k]
+
+[charaFace G 0]
+
+＠克娄巴特拉
+胆敢蒙蔽目慈惠怒大人者，[r]哪怕对方是御主，也必须让其悔过。
+[k]
+
+＠克娄巴特拉
+下次再敢来，定要把他们绑起来彻底教育一番。
+[k]
+
+[charaFace H 4]
+
+＠山鲁佐德
+（我只希望……能和她俩好好活着，[r]　平安无事地度过这个夏天……）
+[k]
+
+
+[charaTalk G]
+[charaFace G 1]
+＠克娄巴特拉
+呵呵，不必担心啦。
+[k]
+
+[charaFace G 0]
+＠克娄巴特拉
+因为这座法老赌场是超高级赌场，[r]宝物库中保管着各式各样的宝物。
+[k]
+
+＠克娄巴特拉
+为此我们建立了最高级的警备体制。[r]法老式的陷阱也是为此而设置的，而且……
+[k]
+
+[charaFace G 1]
+＠克娄巴特拉
+反正宝物库的事和御主他们没什么关系吧。
+[k]
+
+＠克娄巴特拉
+总之您就安心照顾[r]目慈惠怒大人的精神就行了。
+[k]
+
+＠克娄巴特拉
+妾身非常期待您今后的表现哦。
+[k]
+
+[messageOff]
+
+[wt 0.1]
+[charaTalk H]
+[charaFace H 6]
+[wt 0.2]
+[charaMove H -256,-60 0.5]
+[wt 0.8]
+[charaMove H -256,-50 0.5]
+[wt 1.0]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_90 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

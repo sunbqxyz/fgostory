@@ -1,0 +1,410 @@
+
+
+＄03-00-04-17-2-0
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 玛修]
+[charaSet B 98115300 1 福尔摩斯]
+[charaSet C 1098176200 1 马嘶]
+[charaSet D 1098127610 1 佩佩隆奇诺]
+[charaSet E 1019001 1 罗摩]
+[charaSet F 1039001 1 拉克什米]
+[charaSet G 1098124510 1 达·芬奇]
+[charaSet H 23003001 1 伽内什]
+[charaSet I 1098158310 1 船长]
+[charaSet J 98115000 1 特效用]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+
+[bgm BGM_EVENT_24 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad715]
+[effect bit_talk_h_slash01]
+[se ad85]
+[effect bit_talk_v_slash02]
+[wt 0.4]
+[se ad618]
+[effect bit_talk_14]
+[wt 0.6]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 27710]
+
+[fadein black 0.7]
+[wait fade]
+
+[se ad671]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 65,0]
+[charaMove C 15,0 0.2]
+[wt 0.2]
+[charaMove C 1 0.3]
+[wt 0.4]
+
+＠马嘶
+呜[line 3]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+成功了！　但是……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-10]
+[charaEffect C bit_talk_lightning_01r]
+[se ad137]
+[se ad61]
+[wt 1.5]
+[charaFace C 6]
+
+[se ad238]
+[seVolume ad238 0 0.6]
+[charaMove C 1 0.8]
+[wt 1.2]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut C 1200,1200]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠伽内什
+果然又痊愈了啊！　你是不死之身吗！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut C 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠马嘶
+怎么了。没完，还没[line 3]呜，[wt 0.8][charaFace C 2][charaShake C 0.05 3 2 0.3]咕，噢噢……！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut C 1200,1200]
+[charaEffectStop C bit_talk_lightning_01r]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠拉克什米
+唔。那模样……看起来像是混入了其他东西似的，[r]是我的错觉吗。
+[k]
+
+＠拉克什米
+不只是再生的痛苦。[r]似乎还有其他痛苦在抓挠着他的心口……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠罗摩
+啊啊[line 3]果然。[r]果然如此啊，马嘶。
+[k]
+
+[bgm BGM_EVENT_24 1.5 0.5]
+
+＠罗摩
+你……[#被诅咒了吧]？
+[k]
+
+？1：咦！？
+？2：……你刚才说什么？
+？！
+
+＠罗摩
+就是诅咒。当然，诅咒的种类千差万别。[r]但可以根据状况来进行推测。
+[k]
+
+＠罗摩
+名震天下的勇士马嘶的身体，[r]他身为从者的灵基，
+[k]
+
+＠罗摩
+正在遭受着折磨[line 3]
+[k]
+
+＠罗摩
+也就是说，是强度高到连马嘶本人也无法破解的诅咒。
+[k]
+
+＠罗摩
+[#恐怕是扎根于因果之中的诅咒吧]。
+[k]
+
+＠罗摩
+与你这名英雄本身紧密相连，[r]被视作你的身体理应承受的诅咒。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠佩佩隆奇诺
+怎么会这样[line 3]我知道了。[r][#是奎师那的诅咒吗]！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠马嘶
+呜…………！
+[k]
+
+？1：请教教我吧，老师！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠福尔摩斯
+这里既没有老师也没有教授。
+[k]
+
+＠福尔摩斯
+我和达·芬奇可以展示我们从书籍中获得的知识，[r]但现在还是把这个问题交给熟悉印度的[#船长:Captain]吧
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+？2：请教教我吧，[#船长:Captain]！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+？！
+
+＠船长
+……那是发生在『摩诃婆罗多』大战末期的事。
+[k]
+
+＠船长
+因父亲遭杀害而被愤怒吞没的他，[r]采取被视作卑鄙行径的夜间偷袭，将敌人全部杀光了。
+[k]
+
+＠船长
+在那之后，他甚至还向某位孕妇腹中[r]俱卢部族最后的孩子射出了箭[line 3]
+[k]
+
+＠船长
+但最后被奎师那的力量抵御了下来，[r]还反过来赋予了他骇人的诅咒，事情就是这样。
+[k]
+
+＠船长
+有一种说法称，[r]那是在三千年间不断承受所有病痛的诅咒。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠佩佩隆奇诺
+如果在刚召唤出来时就这样，[r]身为御主的我是不可能没注意到的。
+[k]
+
+＠佩佩隆奇诺
+也就是说[line 3]这是在御主权被夺走之后，[r]那个阿周那赋予你的吧。
+[k]
+
+＠佩佩隆奇诺
+吸收了奎师那神性的他能做到这种事也没什么好奇怪的。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 25]
+[charaFadein G 0.1 1]
+
+＠达·芬奇
+原来如此。我知道了。
+[k]
+
+＠达·芬奇
+与生俱来的阎摩与湿婆的力量所带来的不死性，[r]以及靠自身力量绝对无法解除的诅咒……
+[k]
+
+＠达·芬奇
+嗯。你被囚禁在[#因无法死亡而永远持续的痛苦]中了吧。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠伽内什
+那么，难不成……
+[k]
+
+＠伽内什
+他威胁你说，如果不帮忙，你的诅咒[r]就无法解除吗？　这确实很难受呢。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠马嘶
+……闭嘴……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠佩佩隆奇诺
+要不然，就是觉得只要他最终抵达自己所追求的[r]“完美世界”，就会删除掉不完美的诅咒吧。
+[k]
+
+＠佩佩隆奇诺
+不管怎么说，除了服从他的命令，为他的目的行动以外，[r]你已经没有其他选项了吧……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 1.0 1.0]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+[se ad429]
+[flashin once 0.2 1.0 8F000080 FF000000]
+[charaEffect C bit_talk_fire 0,-150]
+[se ad14]
+[se bac279]
+
+＠马嘶
+闭[shake 0.05 3 3 0.8]嘴[line 3]！
+[k]
+
+[charaFace C 5]
+[shake 0.05 0 2 0]
+
+＠马嘶
+我对被愤怒囚禁的我！　感到愤怒！[r]对被诅咒的我！　感到愤怒！　我很愤怒！
+[k]
+
+＠马嘶
+对为了逃离这永恒的痛苦，不惜服从[#仇敌:阿周那]的[line 3][r][#我自身的软弱]！　[#我唯有不断地愤怒下去啊][line 3]！
+[k]
+
+[messageOff]
+[se bac268]
+[effect bit_talk_29 0,-100]
+[wt 0.3]
+[flashin once 0.2 1.0 8F000080 FF000000]
+[charaChange C 1098176210 5 fade 0.5]
+[wt 2.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut C 2000,2000]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+马嘶进入了更为激昂的状态！[r]御主，请多加小心！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[seStop ad14 0.5]
+[seStop ad429 0.5]
+[bgmStop BGM_EVENT_24 0.5]
+[wait fade]
+[soundStopAll]
+[end]

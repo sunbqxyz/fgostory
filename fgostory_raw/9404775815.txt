@@ -1,0 +1,145 @@
+
+
+
+
+＄94-04-77-58-1-5
+
+[soundStopAll]
+
+[skip false]
+
+[maskout black 0]
+[wait mask]
+
+[charaSet A 2005001 1 阿塔兰忒]
+[charaSet B 1038000 1 伊阿宋]
+[charaSet K 6038002 1 夏洛特·科黛]
+[imageSet L cut171_token_202 1]
+[charaSet T 5009000 1 特效用dummy]
+
+[scene 20730]
+
+[pictureFrameTop cut170_gameframe_bright]
+
+[skip true]
+
+[fadein black 0]
+[wait fade]
+[maskin black 1.0]
+[wait mask]
+
+[bgm BGM_EVENT_2 0.1]
+
+
+[charaTalk depthOff]
+[charaDepth T 3]
+[charaDepth L 4]
+[charaDepth K 1]
+
+[charaTalk K]
+[charaFace K 4]
+[charaFadein K 0.1 0,-50]
+
+[charaEffect K bit_talk_token_change01]
+[wt 1.0]
+
+＠夏洛特·科黛
+对不起，御主。[r]我……要听从胜利者了……！
+[k]
+
+[messageOff]
+[charaEffectStop K bit_talk_token_change01]
+[charaPut T 0,-10]
+[charaEffect T bit_talk_token_change02]
+[se ad39]
+[wt 3.2]
+
+[se ad29]
+[seStop ad29 1.5]
+[wt 0.5]
+[charaFadeout K 0.4]
+
+[charaTalk L]
+[charaFadein L 0.4 0,-210]
+[wt 0.5]
+
+[charaMove T 0,10 1.2]
+[wt 1.2]
+
+[charaFadeout L 0.4]
+[wt 0.5]
+
+[se adm19]
+[seVolume adm19 0 0.3]
+[seVolume adm19 1.0 1.0]
+[wt 0.5]
+
+[seStop adm19 1.7]
+[charaMove T 0,700 2.2]
+[wt 2.2]
+
+[charaEffectStop T bit_talk_token_change02]
+[wt 0.1]
+[charaEffectDestroy T bit_talk_token_change02]
+
+
+[charaTalk depthOn]
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+[charaEffect A bit_talk_06]
+
+＠阿塔兰忒
+我在这个世界的任务完成了。[r]这下……总算能去为孩子们做些事了……
+[k]
+
+[messageOff]
+[wt 0.3]
+
+[se ade406]
+[wt 0.2]
+[flashin once 0.1 0.6 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout A 0.1]
+[wt 0.2]
+[charaEffectStop A bit_talk_06]
+[wt 0.1]
+[seStop ade406 0.6]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 0,-50]
+[charaEffect B bit_talk_06]
+
+＠伊阿宋
+哼。值得称赞。随你的便吧。[r]我要去休息了。
+[k]
+
+[messageOff]
+[wt 0.3]
+
+[se ade406]
+[wt 0.2]
+[flashin once 0.1 0.6 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout B 0.1]
+[wt 0.2]
+[charaEffectStop B bit_talk_06]
+[wt 0.1]
+[seStop ade406 0.6]
+[wt 1.0]
+
+[messageOff]
+[maskout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

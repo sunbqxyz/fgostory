@@ -1,0 +1,376 @@
+
+
+＄94-02-00-02-1-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 2021001 1 节分大将]
+[charaSet C 98111500 1 达·芬奇]
+[charaSet D 2021000 1 节分老板娘]
+
+[charaSet G 98115000 1 特效用]
+[charaSet H 98115000 1 特效用]
+
+[scene 37300]
+[se ad173]
+[wt 0.2]
+[se ad60]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+
+[seStop ad60 1.0]
+[seStop ad173 1.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+？1：塔只攻略到中途，
+？2：为什么就跑到这里来了？
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+
+＠节分大将
+嗯。我认为身为大将，[r]也必须关心其他从者的疲劳度才行。
+[k]
+
+＠节分大将
+正当我考虑减轻疲劳的方法时……
+[k]
+
+＠节分大将
+突然想到了一个主意，[r]因此才劳烦各位移步此处。
+[k]
+
+[charaFace B 1]
+＠节分大将
+……这附近应该很合适。[r]那么，让您见笑了[line 3]
+[k]
+
+[messageOff]
+[charaDepth H 10]
+[se ad39]
+[imageSet E back10001 1]
+
+[charaScale E 1.01]
+
+[charaDepth E 10]
+
+[charaPut E 0,-200]
+[charaFadeTime E 1.5 0.5]
+[wt 0.4]
+[wt 1.5]
+[charaFadeout B 0.1]
+[wt 0.05]
+[charaPut H 1200,1200]
+[wt 0.5]
+
+？1：哎？
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.05]
+[charaPut H 1]
+[charaEffect H bit_talk_36]
+[se bas1]
+[charaPut H 1]
+[wt 0.5]
+[fadeout white 1.0]
+[wait fade]
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop H bit_talk_36]
+[wt 0.5]
+
+[fadein white 0.1]
+[wait fade]
+
+[charaFace B 2]
+
+＠节分大将
+哈[line 6]！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad226]
+[shake 0.05 5 4 0.3]
+[effect bit_talk_explosion_triple]
+[wt 0.5]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[wt 1.0]
+
+[effect bit_talk_rain01]
+[wt 0.5]
+
+[effectStop bit_talk_rain01]
+
+[wt 2.0]
+
+？1：好烫！？
+？！
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠节分大将
+啊！？　失……失礼了，御主！[r]尽管我很小心了，但岩盘比想象的还要坚硬……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+……岩盘？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠节分大将
+嗯，玛修阁下、御主。[r]请看。差不多快涌出来了。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[scene 53100]
+
+[charaPut H 0,-100]
+[charaEffect H bit_talk_40]
+
+[cameraMove 0 20,0 1.5]
+
+[fadein black 1.0]
+[cameraMove 3.0 -20,0 1.5]
+[wait fade]
+
+[se ade150]
+[wt 0.5]
+
+[se ade151]
+[seVolume ade151 0 0]
+
+[wt 1.0]
+[seVolume ade151 0 1.0]
+
+[wt 0.5]
+[fadeout black 0.5]
+[wait fade]
+
+[cameraHome 0]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaPut G 1]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 0,-90]
+
+＠达·芬奇
+哎呀，这是……
+[k]
+
+？1：是……是温泉！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠节分大将
+我把被堵塞的泉脉[#打通了]。[r]说起消除疲劳，就会想起温泉，说起温泉，就会想起消除疲劳。
+[k]
+
+＠节分大将
+由于这是灵泉，[r]所以对从者应该也有一定的效果。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-90]
+
+＠达·芬奇
+唔。[r]在塔内战斗中累积了[#疲劳:酩酊]的从者，
+[k]
+
+＠达·芬奇
+只要浸泡这个，或许就能加速身心恢复，[r]是这个意思吧……真不错！
+[k]
+
+[charaFace C 2]
+
+＠达·芬奇
+话说我也好想将工作交给福尔摩斯，[r]现在就跑去你们那边舒缓身心啊！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠节分大将
+没错……为了让大家能尽早恢复活力，[r]尽心尽力照顾大家也是我的职责。
+[k]
+
+＠节分大将
+为应对水温过凉、过热等诸多问题，[r]在这里，我先改变自己的装束吧。
+[k]
+[messageOff]
+
+[charaMove B 0,-30 0.3]
+[charaFadeout B 0.3]
+[wt 0.5]
+[se ad77]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-30]
+[charaMove D 1 0.3]
+[wt 1.0]
+
+
+[charaFace D 1]
+
+＠节分老板娘
+在这里的我是节分老板娘。[r]负责管理这灵泉。也会制作温泉蛋。
+[k]
+
+＠节分老板娘
+御主也请务必尝试泡这温泉。[r]需要我为您洗背吗。
+[k]
+
+＠节分老板娘
+……不，我很明白。
+[k]
+
+＠节分老板娘
+非常明白当今世上的贞操观念及其他各种规矩。[r]所以男浴池与女浴池肯定会分开，请不用担心。
+[k]
+
+[charaFace D 0]
+
+＠节分老板娘
+至于哪边都不算的，和不想分清到底属于哪边的，[r]以及阿斯托尔福阁下，
+[k]
+
+＠节分老板娘
+我会在距这里稍远的地方[r]另行准备一个带帐篷的桶浴处。
+[k]
+
+＠节分老板娘
+我并非强制大家去哪边，[r]但如果大家用得上，还请尽管使用。
+[k]
+
+＠节分老板娘
+啊啊，还需要为有坐骑的各位准备一个浴池吗……？[r]需要准备的事似乎还有很多呢。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-90]
+
+＠达·芬奇
+唔[se ad172]～，[wt 0.3]这里就这么弄，[wt 0.3][seStop ad172][wt 0.2][se ad15]好了。[r]不愧是我，还是那么天才。
+[k]
+
+＠达·芬奇
+我对影像做了过滤设定。[r]就算由于什么意外让那边的景象传到了迦勒底，
+[k]
+
+＠达·芬奇
+我们这里的监视屏上也会自动进行图像处理，[r]转换成穿着服装的假想模样。
+[k]
+
+＠达·芬奇
+尽管没什么情调，[r]但也是为了伦理道德，没办法[line 3]
+[k]
+
+[charaFace C 2]
+
+＠达·芬奇
+哎哟，Mr.穆尼尔，快把你滴在操控台上的眼泪擦干。[r]回头都要有心理阴影了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠玛修
+呃，背后传来了悲伤的痛哭声，[r]但我就当没听到好了。
+[k]
+
+[charaFace A 1]
+
+＠玛修
+不管怎么说，能在当地找到[r]养精蓄锐的地点是一个非常大的进步。
+[k]
+
+＠玛修
+一边考量大家的疲劳程度与休息时机，[r]一边慢慢攻略这座塔吧，御主！
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[soundStopAll]
+[end]

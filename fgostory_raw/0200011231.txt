@@ -1,0 +1,779 @@
+
+＄02-00-01-12-3-1
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 1002001 1 阿尔托莉雅·Alter]
+[charaSet C 11003001 1 贞德·Alter]
+[charaSet D 2023000 1 莫里亚蒂]
+[charaSet E 6026000 1 燕青]
+[charaSet F 98111500 1 通讯用杂音]
+[charaSet G 98086000 1 福尔摩斯]
+
+[soundStopAll]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 39100]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaEffect E bit_bolg_01]
+[charaFadein E 0.1 1]
+
+[se bac139]
+[charaShake E 0.05 4 0 1.0]
+[wt 0.7]
+＠燕青
+呜……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠阿尔托莉雅·Alter
+得手了……！
+[k]
+
+[se ad51]
+[seStop ad51 0.7]
+[charaMove B 0,-20 0.1]
+[charaScale B 1.2]
+[wt 0.2]
+[charaMove B 1 0.1]
+[wt 0.4]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaScale B 1.0]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠燕青
+可恶，不行吗……！[r]事已至此，也没办法了……！
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad15]
+[wt 0.4]
+
+[se bac36]
+[seVolume bac36 0 0.5]
+[seStop bac36 1.0]
+[wt 0.1]
+[se bac37]
+[seVolume bac37 0 0.5]
+[shake 0.05 7 7 1.4]
+[wt 1.4]
+
+[shake 0.05 0 4 4.0]
+[se ad14]
+[seVolume ad14 0 0.5]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[se ad13]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠玛修
+……大楼下层探测到冲击！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠阿尔托莉雅·Alter
+是炸弹吗……！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠玛修
+距大楼崩塌预估时间二十三秒！[r]御主就拜托两位了！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace B 2]
+[charaFace C 2]
+[charaDepth B 9]
+[charaDepth C 1]
+[charaFadein B 0.1 0]
+[charaFadein C 0.1 2]
+＠贞德·Alter
+抓住我，御主！
+[k]
+
+＠阿尔托莉雅·Alter
+要跳了！
+[k]
+
+[charaTalk off]
+[messageOff]
+[charaMove B -256,-20 0.1]
+[charaMove C 256,-20 0.1]
+[wt 0.1]
+
+[se bac1]
+[charaSpecialEffect B erasureReverse -256,-20 0.1]
+[charaSpecialEffect C erasureReverse 256,-20 0.1]
+[charaMove B -256,96 0.1]
+[charaMove C 256,96 0.1]
+
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait charaSpecialEffect B]
+[wait charaSpecialEffect C]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.4]
+[wait wipe]
+
+[seStop ad14 0.1]
+[charaTalk on]
+
+[scene 10000]
+[effect bit_talk_43h]
+[se ad2]
+[seVolume ad2 0 0.5]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[shake 0.05 4 4 2.0]
+
+？1：呀啊！
+？2：救命[line 10]！！
+？！
+
+[wipeout rectangleStripUpToDown 0.2 1.0]
+[wait wipe]
+
+[effectStop bit_talk_43h]
+
+[scene 28302]
+
+[seVolume ad2 0 0.3]
+[shake 0.05 4 4 4.0]
+
+[wipein rectangleStripUpToDown 0.2 1.0]
+[wait wipe]
+
+
+＠阿尔托莉雅·Alter
+别叫，会咬舌头的，而且吵死了！！
+[k]
+
+[se ad14]
+[seVolume ad14 0 0.3]
+[seStop ad14 2.0]
+[se ad10]
+[seVolume ad10 0 0.5]
+[wt 1.0]
+[se ad242]
+[seVolume ad242 0 0.7]
+[se ad228]
+[seStop ad242 3.0]
+[seStop ad228 3.0]
+[wt 1.4]
+
+＠贞德·Alter
+啊啊～，看来全灭了啊。
+[k]
+
+＠贞德·Alter
+不过会在这种新宿开宴会的家伙，[r]就算毁灭也没什么大不了的。
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripUpToDown 0.2 1.0]
+[wait wipe]
+
+[scene 39110]
+
+[seStop ad2 0.2]
+[wt 0.2]
+
+[wipein rectangleStripDownToUp 0.2 1.0]
+[wait wipe]
+
+[effect bit_talk_43h]
+[wt 0.4]
+[effectStop bit_talk_43h]
+[charaTalk off]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.1 0]
+[charaFadein C 0.1 2]
+[charaMove B -256,-40 0.1]
+[charaMove C 256,-40 0.1]
+[wait charaMove C]
+[se bac123]
+[seVolume bac123 0 0.5]
+[charaMove B 0 0.1]
+[charaMove C 2 0.1]
+[wait charaMove C]
+[charaTalk on]
+
+[charaFace B 5]
+＠阿尔托莉雅·Alter
+……那莫里亚蒂和福尔摩斯怎么样了。[r]死了吗？　死了啊……
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠莫里亚蒂
+还活着啦！[r]生龙活虎呢！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠福尔摩斯
+哈哈哈哈哈！[r]对不起啦，我还不能死呢。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[charaSet H 98109000 1 小混混]
+[wt 0.1]
+
+[se ad10]
+[seVolume ad10 0 0.3]
+[seStop ad10 0.7]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.7 0,-96]
+[charaShake H 0.05 4 0 2.0]
+[charaMove H 1 2.0]
+＠小混混
+咿，咿，咿……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[charaSet H 98109100 1 雀蜂]
+[wt 0.1]
+
+[se ad10]
+[seVolume ad10 0 0.3]
+[seStop ad10 0.7]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.7 0,-96]
+[charaShake H 0.05 4 0 1.0]
+[charaMove H 1 1.0]
+＠雀蜂
+……[r]……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[charaSet H 98108900 1 市民]
+[wt 0.1]
+
+[se ad10]
+[seVolume ad10 0 0.5]
+[seStop ad10 1.0]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.4 0,-96]
+[charaShake H 0.05 2 0 1.0]
+[charaMove H 1 1.0]
+＠市民
+怎……怎么了……[r]究竟，发生了……呜呜……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace D 1]
+[charaFace G 3]
+[charaFadein D 0.1 0]
+[charaFadein G 0.1 2]
+＠福尔摩斯
+莫里亚蒂，说说你的推理吧。
+[k]
+
+[charaFace D 0]
+＠莫里亚蒂
+我觉得是他。
+[k]
+
+[charaFace G 0]
+＠福尔摩斯
+意见一致。[r]那我们就指出来吧。
+[k]
+
+[charaFace G 5]
+＠福尔摩斯
+好了，新宿的Assassin燕青。[r]不好意思，事到如今我们可不能放跑你。
+[k]
+
+
+[charaFace D 1]
+＠莫里亚蒂
+没错……！
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[effect bit_shot_01]
+[se bac21]
+[wt 0.4]
+[se bac22]
+[wt 0.2]
+
+[effect bit_talk_35]
+[wt 1.7]
+
+[se ad328]
+[wt 2.4]
+
+[bgm BGM_EVENT_5 0.1]
+
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+[charaShake H 0.05 4 0 1.0]
+＠市民
+……[r]……为什么……？
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaFace E 8]
+[charaSpecialEffect H enemyErasure]
+[se ad193]
+[seStop ad193 2.0]
+[wt 0.4]
+[charaSpecialEffect E appearanceReverse]
+[wait charaSpecialEffect E]
+[wait charaSpecialEffect H]
+
+[wt 1.4]
+[charaFadeout E 0.7]
+[wt 1.4]
+
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFace G 3]
+[charaFadein D 0.1 0]
+[charaFadein G 0.1 2]
+＠莫里亚蒂
+我和福尔摩斯啊，[r]总是像这样相互扮装着战斗的哦。
+[k]
+
+＠莫里亚蒂
+只要观察个十秒，[r]就能知道濒死之人是否真的快死了。
+[k]
+
+＠福尔摩斯
+你踉跄着走路过程中失败的细节[r]我大致能列个十三条出来，但太浪费时间了。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.7 0,-64]
+[charaMove E 1 0.7]
+[charaShake E 0.05 4 0 1.0]
+＠燕青
+……哈哈。[r]不用了。就算听了也没法参考。
+[k]
+
+＠燕青
+作为骄傲的梁山泊侠客，[r]我会死在这里。
+[k]
+
+[charaFace E 4]
+＠燕青
+……不，我应该早就舍弃了荣誉了吧。[r]真没办法。
+[k]
+
+[charaFace E 0]
+＠燕青
+哎哟！[r]让我解释两句！
+[k]
+
+[charaFace E 6]
+＠燕青
+由于作为二重身一次又一次化身成他人，[r]以至于自我逐渐变得模糊。
+[k]
+
+[charaFace E 8]
+＠燕青
+你知道吗？[r]二重身的记忆会留存下来哦。
+[k]
+
+＠燕青
+无论是因为无聊原因死去的小混混的人生，[r]还是通过践踏他人得以活下去的暴发户的人生，
+[k]
+
+[charaFace E 9]
+＠燕青
+以及在这新宿孤独地战斗，[r]最终被我杀害的哈桑的人生。
+[k]
+
+[charaFace E 7]
+＠燕青
+都还留在我的脑海中。[r]啊啊，该死的。该死的，该死的……！
+[k]
+
+[charaFace E 5]
+＠燕青
+阻止我的主人，我明明阻止了我的主人。[r]然而那个无可救药的傻瓜却这么说。
+[k]
+
+＠燕青
+没关系，我定能获得荣华富贵！
+[k]
+
+＠燕青
+[line 3]真是个愚蠢的主人。[r]而我也是个愚蠢的佣人。
+[k]
+
+[charaFace E 0]
+＠燕青
+我应该不惜杀了他也该阻止他才对。[r]这样一来，老爷就不会遭到背叛而死了。
+[k]
+
+[charaEffect E bit_talk_06]
+
+[charaFace E 4]
+＠燕青
+原本可以骄傲地赴死……[r]荣誉……尊严……
+[k]
+
+＠燕青
+啊啊[line 3]。[r]我的骄傲究竟去哪儿了呢……
+[k]
+
+[bgmStop BGM_EVENT_5 0.4]
+[messageOff]
+[charaSpecialEffect E flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect E]
+[charaEffectStop E bit_talk_06]
+[wt 0.3]
+
+[wt 0.7]
+[bgm BGM_EVENT_4 0.1]
+
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0 1]
+[wt 0.3]
+＠玛修
+……确认新宿的Assassin灵基消灭。
+[k]
+
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠莫里亚蒂
+荣誉啊。[r]没有荣誉感，人类难道就活不下去了吗。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace B 0]
+[charaFace C 5]
+[charaFadein B 0.1 0]
+[charaFadein C 0.1 2]
+＠贞德·Alter
+不要询问身为赝作的我关于生存的问题。[r]那种东西还是扔去喂狗吧。
+[k]
+
+＠阿尔托莉雅·Alter
+原来如此，简直就像[r]毫无荣誉感的熊猫会说的话呢。
+[k]
+
+[charaFace C 2]
+＠贞德·Alter
+没有荣誉感有什么……[charaShake C 0.05 7 4 0.4]熊猫！？
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+＠福尔摩斯
+噢噢，白色和黑色……
+[k]
+
+？1：抱着竹子滚来滚去……
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠贞德·Alter
+[messageShake 0.05 4 4 1.0]
+[font large]那是旗！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace D 1]
+[charaFace G 1]
+[charaFadein D 0.1 0]
+[charaFadein G 0.1 2]
+＠福尔摩斯
+好了，既然解决了新宿的Assassin[line 3]。
+[k]
+
+＠莫里亚蒂
+何不让我们去黄金街喝到天亮吧！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.1 0]
+[charaFadein C 0.1 2]
+＠阿尔托莉雅·Alter
+我累了。[r]我们回去吧，御主。
+[k]
+
+＠贞德·Alter
+我死也不要和你一起喝。[r]就这样，我回去了。
+[k]
+
+[messageOff]
+
+[se ad60]
+[charaFadeout C 0.7]
+[charaFadeout B 0.7]
+[seStop ad60 2.0]
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+＠福尔摩斯
+如果只有你我两个人喝，[r]估计最后肯定有一个人要滚莱辛巴赫了哦。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠莫里亚蒂
+……御主。怎么说呢。
+[k]
+
+[charaFace D 0]
+＠莫里亚蒂
+对年轻人来说，[r]和五十大叔喝酒难道是一种痛苦吗……？
+[k]
+
+[charaFace D 4]
+＠莫里亚蒂
+这算所谓的强行劝酒吗……
+[k]
+
+＠贞德·Alter
+话说，你这话听起来像是终于意识到[r]被部下冷落的中年工薪族会说的话哦。
+[k]
+
+？1：何况我还是未成年。
+？！
+
+[charaFace D 0]
+＠莫里亚蒂
+……这样啊～，喝不了啊～。[r]唔……那就没办法了呢～。
+[k]
+
+[charaFace D 1]
+＠莫里亚蒂
+本打算作为混沌·恶[r]邀请[%1]走向酒之路的……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaFace B 5]
+[charaFace C 5]
+[charaFadein B 0.7 0]
+[charaFadein C 0.7 2]
+[wt 2.0]
+
+[charaTalk on]
+＠莫里亚蒂
+但监护人有点可怕，还是放弃吧……
+[k]
+
+＠阿尔托莉雅·Alter
+你好像有话要说呢，莫里亚蒂。[r]我允许你发言，但根据发言的内容，可能需要你交出首级来。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠莫里亚蒂
+什么都没有哦～。
+[k]
+
+
+[se ad229]
+[seVolume ad229 0 0.01]
+[wt 0.1]
+[seVolume ad229 0.7 0.2]
+[wt 0.7]
+[bgmStop BGM_EVENT_4 0.1]
+[messageOff]
+
+[wt 1.4]
+[seStop ad229 2.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠贞德·Alter
+[line 3]等一下。[r]好像听到了什么。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[voice 1100500_0_S010]
+[wt 3.7]
+
+＠全体
+[shake 0.05 4 4 0.7]
+！！
+[k]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠玛修
+这咆哮是……！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[messageOff]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠贞德·Alter
+……原来如此，是那家伙……[r]苏醒了吧。
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

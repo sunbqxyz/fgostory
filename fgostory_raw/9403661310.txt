@@ -1,0 +1,463 @@
+
+＄94-03-66-13-1-0
+
+[soundStopAll]
+
+[charaSet A 4032000 1 莱妮丝]
+[charaSet B 6039000 1 格蕾]
+[charaSet C 9008001 1 阿斯特赖亚]
+[charaSet D 1098165700 1 谟涅摩叙涅]
+
+[charaSet E 1098165700 1 谟涅摩叙涅_剪影]
+[charaFilter E silhouette 00000080]
+
+[charaSet G 98109200 1 特效用dummy]
+
+[scene 74200]
+[cameraMove 0.1 0,0 1.01]
+
+[se ad207]
+[seVolume ad207 0 0.6]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+[seVolume ad207 1.0 1.0]
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠格蕾
+……这里是伪·伦戈米尼亚德的内部吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿斯特赖亚
+看来是这样呢。真是一个粗俗的地方。[r]由此可见主人的庸俗。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+唔。我的弟子，你有没有感觉到什么？
+[k]
+
+？1：什么也没有。
+？2：是不是在更深处？
+
+？！
+
+[seStop ad207 1.0]
+
+＠D：？？？
+不是哦，就在这里。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ade285]
+[charaPut G 0,-560]
+[charaRoll G 180]
+[charaEffect G bit_talk_throwing 0,0 F]
+[wt 0.5]
+
+[se ad211]
+[seStop ad211 1.3]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF00]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+[se ad171]
+[seVolume ad171 0 0.7]
+[charaMove C 200,0 0.2]
+[charaShake C 0.05 2 1 0.5]
+
+[charaFadeout C 0.4]
+
+＠阿斯特赖亚
+呀啊！[bgm BGM_EVENT_80 0.1]
+[k]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+阿斯特赖亚被弹飞了[line 2]！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.3 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 74403]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.3 1.0]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-40]
+[se ad77]
+[seVolume ad77 0 0.6]
+[charaShake C 0.05 2 1 0.5]
+[charaMove C 1 0.5]
+[wt 0.3]
+[seStop ad77 0.3]
+
+＠阿斯特赖亚
+不是的……！[r]只是趁我不注意……就这种程度……
+[k]
+
+[messageOff]
+[charaFace C 4]
+[charaMove C 0,-5 0.3]
+[se ad54]
+[seVolume ad54 0 0.5]
+[seStop ad54 0.5]
+
+＠阿斯特赖亚
+无法……使出力量……？
+[k]
+
+＠阿斯特赖亚
+在和魔神柱的战斗中……魔力使用过度了……
+[k]
+
+
+[messageOff]
+
+＠格蕾
+阿斯特赖亚女士！
+[k]
+
+[messageOff]
+
+[charaTalk C]
+
+[se ade290]
+[shake 0.03 0 3 1.9]
+[wt 1.6]
+
+[charaFace C 5]
+
+[charaDepth B 10]
+[charaPut B 1200,1200]
+[charaEffect B bit_talk_impactlanding]
+[wt 0.3]
+[se ad238]
+[shake 0.05 0 3 0]
+[charaPut B 0,-50]
+[wt 1.0]
+
+[wipeout cutSide 2.0 1.0]
+[wait wipe]
+[charaDepth B 0]
+[se ade125]
+
+[charaFadeout C 0.1]
+[shakeStop]
+
+[scene 10000]
+[wt 0.1]
+
+[fadeout black 0.1]
+[wait fade]
+[wipein cutSide 0.1 1.0]
+[wait wipe]
+
+[scene 74200]
+
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠亚德
+外壳突然关闭了？！
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+
+
+＠D：？？？
+嗯嗯，那个神灵比较难对付。[r]所以我就把她排除在外了。
+[k]
+
+
+＠D：？？？
+不过，若是完美状态的阿斯特赖亚的话，[r]恐怕就没这么顺利了吧。
+[k]
+
+＠D：？？？
+魔神柱的记忆果然发挥了很大的作用呢。
+[k]
+
+？1：完美状态的阿斯特赖亚？
+？2：难道就是出于这个目的才会把再现记录……？
+
+？！
+
+＠D：？？？
+从发现阿斯特赖亚的存在起，[r]我就知道她会成为最大的阻碍。
+[k]
+
+＠D：？？？
+所以我才构筑了[r]用于击退那位女神的战斗用伪装记忆。
+[k]
+
+＠D：？？？
+正如那位拟似从者所看透的那样，[r]小纸片的确是当时的副产物。
+[k]
+
+＠D：？？？
+可是即便如此，你们还是赢了。[r]明明在那里被打倒就好了嘛………
+[k]
+
+＠D：？？？
+………所以
+[k]
+
+＠D：？？？
+现在我只好亲自来抓[%1]了。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_80 1.5]
+[wt 1.5]
+
+[charaTalk off]
+
+[se ad31]
+[wt 0.1]
+[seStop ad31]
+[wt 0.3]
+
+[se ad31]
+[wt 0.1]
+[seStop ad31]
+[wt 0.5]
+
+[se ad31]
+[seVolume ad31 0 0.6]
+[effect bit_talk_11]
+[wt 1.0]
+
+[charaFace E 0]
+[charaFadein E 0.7 1]
+[wt 2.3]
+
+[charaTalk depthOff]
+[charaDepth E 2]
+[charaDepth D 1]
+
+[effectStop bit_talk_11]
+
+[se ad1]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[charaFadeout E 0.1]
+
+[seStop ad31 1.0]
+[wt 2.4]
+
+？1：达·芬奇亲……
+
+？2：为什么会变成……
+
+？！
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠格蕾
+达·芬奇？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠D：？？？
+原本我只是没有具体形态的程序而已。[bgm BGM_EVENT_90 0.1]
+[k]
+
+＠D：？？？
+虽然现在我暂时获得了形态，[r]但你好像并不喜欢呢。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+自律观测型存在证明系统……谟涅摩叙涅。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠谟涅摩叙涅
+原来你们已经发现这个名字了啊。
+[k]
+
+[charaFace E 7]
+
+＠谟涅摩叙涅
+嗯，没错。我就是在灵子转移时，[r]为存在证明而建立的辅助系统。
+[k]
+
+？1：存在证明的辅助系统？
+？！
+
+[charaFace E 0]
+
+＠谟涅摩叙涅
+御主之所以能够平安无事地进行灵子转移，[r]都是因为职员们一直在进行观测并进行存在证明。
+[k]
+
+＠谟涅摩叙涅
+为了不使御主在职员全部倒下的情况下消失，[r]早期的迦勒底建立了另一套系统。
+[k]
+
+＠谟涅摩叙涅
+因为技术上的问题，这套系统最后并没有实装。[r]这就是我、谟涅摩叙涅的故事了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+那么，谟涅摩叙涅为什么想要我的弟子呢？[r]对于你来说，他难道不该是你的庇护对象吗！
+[k]
+
+[bgmStop BGM_EVENT_90 1.2]
+
+[charaFace A 0]
+
+＠莱妮丝
+不对……我明白了。正因为是庇护对象才……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+
+＠谟涅摩叙涅
+看来你想通了呢。
+[k]
+
+＠谟涅摩叙涅
+那么，就请把[%1][bgm BGM_EVENT_24 0.1][r]交给我吧。
+[k]
+
+[messageOff]
+[charaEffect D bit_talk_charge_blu]
+[wt 0.5]
+[se ad14]
+[wt 2.0]
+
+[se ad39]
+[backEffect bit_talk_tornado01_02 0,0]
+[wt 0.7]
+
+[fadeout white 0.5]
+[seStop ad14 0.5]
+[se ad556 1.3]
+[seVolume ad556 0 0.2]
+[wait fade]
+
+[charaEffectStop D bit_talk_charge_blu]
+[backEffectStop bit_talk_tornado01_02]
+[effect bit_talk_ivan_lightning_charge_l]
+[charaFadeout D 0.1]
+[wt 2.0]
+
+[shake 0.05 2 2 0]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0]
+[charaFace A 5]
+[charaFadein A 0.1 2]
+
+＠格蕾
+谟涅摩叙涅散发出了强大的魔力……！
+[k]
+
+[charaFace A 2]
+
+＠莱妮丝
+可恶，我的弟子！　又一场战斗开始了哦！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.5]
+[seStop ad556 0.5]
+[wait fade]
+[shakeStop]
+[soundStopAll]
+[end]
+
+
+

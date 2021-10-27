@@ -1,0 +1,286 @@
+
+＄94-05-24-01-1-1
+
+[soundStopAll]
+
+[charaSet A 98001000 1 玛修]
+[charaSet H 98115000 1 特效用]
+
+
+[fadein black 1.0]
+[wait fade]
+
+
+＠
+“Dear　[%1]大人、[r][f small]  [f -]玛修·基列莱特大人”
+[k]
+
+＠
+“很抱歉让两位久等了。[r][f small]  [f -]依照约定，舞台已经准备好了。”
+[k]
+
+＠
+“如果两位能听到这声音，希望两位[line 3][r][f small]  [f -]今夜能光临月光舞会。”
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[scene 10310]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+[bgm BGM_EVENT_2 0.1]
+
+＠玛修
+……就是这样。
+[k]
+
+[charaFace A 12]
+
+＠玛修
+邮件上提到的应该就是前面的仓库吧？
+[k]
+
+＠玛修
+那里位于管制室背后的区域，[r]长期以来都是空仓库。
+[k]
+
+[charaFace A 7]
+
+＠玛修
+房间名是MOONLIGHT。
+[k]
+
+＠玛修
+是迦勒底唯一有天窗的房间，[r]好像因此才被人这么命名……
+[k]
+
+[charaFace A 12]
+
+＠玛修
+……前辈知道迦勒底的怪谈吗？
+[k]
+
+？1：知道。
+？2：那里会出现幽灵吧？
+
+？！
+
+
+[charaFace A 7]
+
+＠玛修
+对。不是在通过灵子转移前往的特异点，[r]而是这迦勒底内据说唯一会发生灵障的房间。
+[k]
+
+＠玛修
+那就是MOONLIGHT……现在被工作人员们[r]称为『LOSTROOM』的区域。
+[k]
+
+[charaFace A 12]
+
+＠玛修
+在那种地方举办舞会究竟是什么意思呢？
+[k]
+
+？1：总之去看看就知道了。
+？2：不知为何，我并没有感受到恶意。
+
+？！
+
+
+[charaFace A 13]
+
+＠玛修
+既然御主这么说，那就这么办吧。
+[k]
+
+＠玛修
+……其实，我也没感到不安。
+[k]
+
+＠玛修
+虽说发件人不明，我对邮件提到的内容也毫无印象，[r]但总觉得有过非常重要的约定[line 3]
+[k]
+
+[messageOff]
+[se ade422]
+[wt 0.2]
+[se ad95]
+
+
+[wipeout leftToRight 1.0 1]
+[wait wipe]
+
+[wt 1.0]
+
+
+[wipein rightToLeft 1.0 1]
+[seStop ad95 1.0]
+[seStop ade422 1.0]
+[wait wipe]
+[wt 0.5]
+
+＠玛修
+啊，这里就是MOONLIGHT。[r]要开门吗，前辈？
+[k]
+
+？1：当然。
+
+？！
+
+
+[messageOff]
+[skip false]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[input selectBranch]
+[messageOff]
+[charaFadeout A 0.1]
+[soundStopAllFade 0.4]
+[scene 10000]
+[wt 0.4]
+[soundStopAll]
+[skip false]
+[maskin black 0.1]
+[fadein black 1.0]
+[wait mask]
+[wait fade]
+[label selectBranch]
+
+[se ad832]
+[effect bit_talk_door_open]
+[scene 10001]
+[wt 1.0]
+
+
+[wt 4.5]
+[se ade422]
+[wt 2.5]
+[seStop ade422 0.5]
+[wt 1.0]
+
+？1：好厉害～～！
+？2：感觉和平时的氛围截然不同？
+
+？！
+
+[fadeout white 1.0 withFrameFadeout]
+[wait fade]
+
+[messageOff]
+[bgm BGM_EVENT_128 0.1]
+
+[advSet 1000000]
+[advSoundSet CampaignVoice_800100]
+
+[advPrepare RootObject]
+[advActorHide タブレット]
+[wt 0.3]
+[fadein white 1.0]
+[wait fade]
+
+
+[advPlayAnimator マシュ 001]
+[advPlayAnimator カメラ 001]
+[wait advPlayAnimator マシュ]
+
+
+？1：玛修也是，这礼裙很适合你。
+
+？！
+
+[advPlayAnimator マシュ 002]
+[advPlayAnimator カメラ 002]
+[wt 8.5]
+[se ade518]
+[wt 1.5]
+[advActorShow タブレット]
+
+[wait advPlayAnimator マシュ]
+
+[advActorHide タブレット]
+
+//[messageOn]
+//＠
+//“还请两位登上舞台吧。[r][f small]  [f -]请唱出你们旅途的记忆。”
+//[k]
+
+//＠
+//“虽然我在言语与心情都无法传递到的远方，[r][f small]  [f -]但唯独这些影像一定能够传达[line 3]”
+//[k]
+//[messageOff]
+
+？1：虽然不明白含义，但应该不是什么坏事。
+
+？！
+
+[advPlayAnimator マシュ 003]
+[advPlayAnimator カメラ 003]
+[wait advPlayAnimator マシュ]
+
+？1：总之，我们试试看吧？
+
+？！
+
+[advPlayAnimator マシュ 004]
+[advPlayAnimator カメラ 004]
+[wait advPlayAnimator マシュ]
+
+[wt 1.0]
+？1：[line 3]当然可以。
+？2：请握住我的手，我的女士。
+
+？！
+
+[advPlayAnimator マシュ 005]
+[advPlayAnimator マスター 005]
+[advPlayAnimator カメラ 005]
+[wait advPlayAnimator マシュ]
+
+[fadeout white 1.0]
+[wait fade]
+[advRelease]
+
+[scene 10001]
+
+[fadein white 1.0 withFrameFadein]
+[wait fade]
+
+[skip true]
+
+[wt 1.0]
+
+＠
+“将失去之物，传达给遗失的存在。[r][f small]  [f -]将闪耀之物，传达给远方的存在。”
+[k]
+
+＠
+“只愿这奇迹的一夜，[r][f small]  [f -]能成为一段欢乐的时光。”
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_128 2.0]
+
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

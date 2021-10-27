@@ -1,0 +1,605 @@
+
+
+
+＄01-00-07-20-1-0
+
+[soundStopAll]
+[charaSet A 5018001 1 吉尔伽美什]
+[charaSet B 4018001 1 魁札尔·科亚特尔]
+[charaSet C 98003000 1 Dr.罗曼]
+[charaSet D 98107500 1 乌鲁克士兵]
+[charaSet E 3028000 1 豹人]
+[charaSet F 2020001 1 伊什塔尔]
+[charaSet G 8001002 1 玛修]
+[imageSet H cut005_data 1]
+
+[scene 33100]
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_40 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠吉尔伽美什
+天亮了！　大家充分休息够了吧？[r]那这就来宣布昨晚的调查结果吧！　看这个！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[messageOff]
+[se ad1]
+[charaPut H 0,-200]
+[charaFadeTime H 1.0 0.8]
+[wt 3.5]
+
+＠魁札尔·科亚特尔
+哎呀。是提亚马特神真身的全身图呢？[r]做得真不错，怎么做出来的呀？
+[k]
+
+
+＠Dr.罗曼
+嘿嘿，是我和乌鲁克的神官们共同制作的！[r]以你们那里提供的情报为基础，在这边完成的！
+[k]
+
+
+＠吉尔伽美什
+唔，那件事辛苦了。[r]但现在先注意这家伙的脚。
+[k]
+
+＠吉尔伽美什
+从昨晚到黎明这段时间内，[r]收到了数份从海岸线幸存学舍发来的报告。
+[k]
+
+＠吉尔伽美什
+“提亚马特神正走在海水上”，[r]“看起来无法控制自己的重量”，
+[k]
+
+＠吉尔伽美什
+“虽然是假设，但为了支撑那庞大的躯体，那双脚未免太细了。[r][f small]  [f -]提亚马特神或许只能在海水上步行”。
+[k]
+
+[charaFadeout H 0.4]
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠吉尔伽美什
+这就是最后的报告。[r]本王和迦勒底都认同这个假设。
+[k]
+
+＠吉尔伽美什
+若非如此，像那样侵蚀大地的理由就太薄弱了。
+[k]
+
+＠吉尔伽美什
+那个虽然是为了吞噬大地，[r]但同时也是为提亚马特神铺设道路[line 3]
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr.罗曼
+没错，推测那个类似火车的铁轨，[r]是移动用的滑行通道。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠吉尔伽美什
+就算无法在地表杀死提亚马特神，[r]只要消除那海洋，就能制止那家伙的移动。
+[k]
+
+＠吉尔伽美什
+因此，吾等的攻击目标将从提亚马特神，[r]变更为那些黑泥。用物理方式去除！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr.罗曼
+迦勒底将那些黑泥称为侵蚀海洋[#混沌之潮:Chaos Tide]。[r]现在正十万火急分析将其变回原本海水的方法。
+[k]
+
+＠Dr.罗曼
+如果能赶上的话，[r]就能延后提亚马特神抵达乌鲁克的时间，但是……
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[bgmStop BGM_EVENT_40 0.7]
+[se ad55]
+[seStop ad55 0.7]
+[wt 0.4]
+[se ad54]
+[seVolume ad54 0 0.7]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 64,0]
+[charaMove D 0,0 0.4]
+＠乌鲁克士兵
+吉尔伽美什王！　来自南部观测所的报告！[r]提亚马特神[bgm BGM_EVENT_3 0.1]，再度开始前进！
+[k]
+
+＠乌鲁克士兵
+距抵达吉尔苏市遗迹还剩三小时！[r]距抵达乌鲁克市，推测还剩八小时！
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+这比预期的还要快半天啊！？[r]这样一来，就算分析能赶得上，也来不及做出分解药啊！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠吉尔伽美什
+唔，块头那么大，醒得倒是挺早嘛。[r]既然如此，就算不可能，也只能破坏那双腿了！
+[k]
+
+[charaFace A 2]
+＠吉尔伽美什
+战士长，从城墙抽调五十人，集结精锐！[r]要出城迎战了！
+[k]
+
+[charaFadeout A 0.1]
+
+[bgmStop BGM_EVENT_3 0.7]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠魁札尔·科亚特尔
+不，没有这个必要，吉尔伽美什。
+[k]
+
+＠魁札尔·科亚特尔
+战士们的任务是在城墙上射击提亚马特神吧？
+[k]
+
+[bgm BGM_EVENT_5 0.1]
+＠魁札尔·科亚特尔
+除去那些黑泥……[r]除去混沌之潮的任务就由我来吧。
+[k]
+
+＠魁札尔·科亚特尔
+虽然不可能清除全部海洋，但若只是登陆的[r]提亚马特神的周围，用我的宝具还是完全可能办到的。
+[k]
+
+＠魁札尔·科亚特尔
+用我的太阳遍历[#太阳石:Piedra Del Sol]，[r]将提亚马特神脚下的泥蒸发掉吧。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠豹人
+噢噢，是那个啊！[r]灼热之女，魁札尔·科亚特尔终于要认真起来了喵！
+[k]
+
+？1：Piedra Del Sol……？
+？2：那个该不会是……
+
+？！
+
+[charaFadeout E 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠魁札尔·科亚特尔
+YES～！　就是放在埃里都祭坛上的我的宝具哦～！
+[k]
+
+＠魁札尔·科亚特尔
+要是[%1]那时候把那块太阳石[r]敲碎的话，可就没办法用了哦～！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠伊什塔尔
+是啊。真是的，好个狗屎运。[r][%1]的作风真的是祸福难料呢。
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk G]
+[charaFace F 7]
+[charaFadein F 0.1 0]
+[charaFace G 13]
+[charaFadein G 0.1 2]
+＠玛修
+嗯！　当时“比起破坏不如飞扑攻击”的作战成果[r]竟然会以这种形式得到回报！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠吉尔伽美什
+[line 3]办得到吗，魁札尔·科亚特尔啊。[r]可以交给你吧？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠魁札尔·科亚特尔
+是啊。但依然是十分危险的事。[r]太阳遍历相当消耗体力。
+[k]
+
+＠魁札尔·科亚特尔
+所以要让[%1][r]将我带到提亚马特神的脚下，
+[k]
+
+＠魁札尔·科亚特尔
+随后，在使用宝具时，[r]也必须提供魔力给我才行。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+＠伊什塔尔
+一边想办法应付在周围盘旋的拉赫穆们，[r]一边接近母亲的脚下……
+[k]
+
+＠伊什塔尔
+随后在魁札尔·科亚特尔在发动宝具的期间，[r]这家伙也要一直待在现场吧？
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠魁札尔·科亚特尔
+具体说来就是这样～！[r]超级危险的哟～！
+[k]
+
+[bgmStop BGM_EVENT_5 0.7]
+
+？1：好，动手吧！
+？2：我们走，魁札尔·科亚特尔！
+
+？！
+
+[messageOff]
+[charaFace B 3]
+[wt 1.0]
+
+[bgm BGM_EVENT_4 0.1]
+[charaFadeout B 0.1]
+[charaSet H 98002000 1 芙芙]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠吉尔伽美什
+好吧。就以刚才[%1]的回答[r]作为提亚马特迎击作战开始的号炮！
+[k]
+
+＠吉尔伽美什
+全体士兵，回到岗位上！
+[k]
+
+＠吉尔伽美什
+留在神塔的只有王一人！[r]无论发生什么都不允许离开城墙！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠乌鲁克士兵
+遵命！　愿您武运昌隆，吉尔伽美什王！
+[k]
+
+＠乌鲁克士兵
+请允许我等一同，向您迄今为止的威望与功绩[r]呈上至高的感谢与敬意！[se ad7][charaShake D 0.05 0 3 0.25]
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠吉尔伽美什
+你们也是。为本王奋斗到最后一刻吧。
+[k]
+
+[charaFace A 0]
+＠吉尔伽美什
+那么去吧，迦勒底的御主。
+[k]
+
+＠吉尔伽美什
+事成之后，[r]再次回到本王这儿。
+[k]
+
+＠吉尔伽美什
+本王愿意听你的胜利报告用来打发时间。[r]可[charaFace A 1]别让本王久等哦？
+[k]
+
+？1：我们出发了，吉尔伽美什王！
+
+？！
+
+[charaFadeout A 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠芙芙
+芙，芙呜！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_4 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout H 0.1]
+[scene 33000]
+[wt 2.0]
+[se ad59]
+[wipeout leftToRight 0.1 1]
+[wait wipe]
+[fadein black 0.1]
+[wait fade]
+[wipein rightToLeft 0.5 1]
+[wait wipe]
+[wt 0.4]
+
+[wipeout leftToRight 0.5 1]
+[wait wipe]
+[scene 32900]
+[wt 0.4]
+[wipein rightToLeft 0.5 1]
+[wait wipe]
+[wt 0.4]
+
+[wipeout leftToRight 0.5 1]
+[wait wipe]
+[scene 32800]
+[wt 0.4]
+[seStop ad59 1.5]
+[wipein rightToLeft 0.5 1]
+[wait wipe]
+[wt 0.4]
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.4 1]
+＠玛修
+离开乌鲁克了！
+[k]
+
+＠玛修
+医生，接下来我们会将魁札尔·科亚特尔小姐[r]护送到提亚马特神的脚边。
+[k]
+
+＠玛修
+这样就行了吧！？
+[k]
+
+[charaFadeout G 0.1]
+
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr.罗曼
+对。现在我们正在十万火急计算[r]提亚马特神的移动速度与索敌范围。
+[k]
+
+＠Dr.罗曼
+从提亚马特神的正面接近十分危险。[r]既然有眼睛，就很难说她会对进入视野的敌人做什么。
+[k]
+
+＠Dr.罗曼
+提亚马特神的周围盘旋着大量拉赫穆。[r]跟这些家伙的战斗是难以避免的吧。
+[k]
+
+＠Dr.罗曼
+我们还正在检索既不进入提亚马特神的视野，[r]又要是拉赫穆分布较薄的路线。
+[k]
+
+＠Dr.罗曼
+再等两分钟左右[line 3]怎么了？
+[k]
+
+[bgmStop BGM_EVENT_3 0.7]
+[communicationCharaClear]
+[wait communicationChara]
+
+[messageOff]
+[wipeout rightToLeft 0.5 1]
+[wait wipe]
+[scene 33000]
+[wt 0.1]
+[wipein leftToRight 0.5 1]
+[wait wipe]
+[wt 0.1]
+[cameraMove 3.0 20,-70 1.3]
+[wt 2.5]
+[wipeout circleIn 0.5 0.5]
+[wait wipe]
+[cameraHome 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[scene 35310]
+[wt 0.4]
+[wipein circleIn 0.5 0.5]
+[wait wipe]
+[wt 1.0]
+[charaFadeout A 0.4]
+[wt 0.4]
+[wt 1.0]
+[bgm BGM_EVENT_40 0.1 0.7]
+
+＠吉尔伽美什
+[line 3]向留在乌鲁克的所有人民宣告。
+[k]
+
+＠吉尔伽美什
+辛苦你们能活到今天。[r]本王对这点感到无上喜悦。
+[k]
+
+＠吉尔伽美什
+自半年前，建造魔兽战线之时。[r]本王对你们这么说过。
+[k]
+
+＠吉尔伽美什
+无论如何挣扎，乌鲁克都会毁灭。[r]该如何迎接终焉，本王不会强制你们。
+[k]
+
+＠吉尔伽美什
+可以逃跑。可以沉溺于享乐。[r]可以悲叹着投身冥界。
+[k]
+
+＠吉尔伽美什
+但你们表示要战斗。[r]在知悉这个结局的前提下，依然决定与之抗争。
+[k]
+
+＠吉尔伽美什
+毫无疑问[line 3]乌鲁克是座幸福的都市。[r]包括其历史、生活、民众[line 3]以及本王在内。
+[k]
+
+＠玛修
+吉尔伽美什王……
+[k]
+
+＠吉尔伽美什
+人世已不再需要诸神的庇护。[r]为了证明这点，本王筑起了城塞，你们也回应了本王。
+[k]
+
+＠吉尔伽美什
+本王并不认为这是错的。[r]而最后的考验以最为极致的姿态显现了。
+[k]
+
+＠吉尔伽美什
+现在正是否定起源之神，开启吾等人类时代的时候！[r]听清楚了，本王的精锐们啊！
+[k]
+
+＠吉尔伽美什
+这是与神真正的诀别之战！[r]将你们的性命，献给[#王:我]吧！
+[k]
+
+＠吉尔伽美什
+哪怕只剩最后一条生命，[r]都将用于向后世传达吾等乌鲁克的荣耀！
+[k]
+
+[se ad6]
+[wt 0.5]
+[messageOff]
+[wt 2.5]
+[seStop ad6 2.0]
+
+[messageOff]
+[bgmStop BGM_EVENT_40 0.5]
+[wipeout leftToRight 0.5 1]
+[wait wipe]
+[scene 32800]
+[wt 1.0]
+[wipein rightToLeft 0.5 1]
+[wait wipe]
+[bgm BGM_EVENT_4 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠伊什塔尔
+……真是服了他。[r]竟然准备得如此周到。
+[k]
+
+＠伊什塔尔
+我还以为他在神塔顶端盖了座观景台呢，[r]结果竟然是为演说使用。真蠢。
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.1 1]
+＠玛修
+对。英雄王在此归来了。
+[k]
+
+[charaFadeout G 0.1]
+
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr.罗曼
+嗯。我也不得不承认。[r]那个令人头疼的王，无疑是伟大的先贤之一。
+[k]
+
+[communicationCharaFace 5]
+＠Dr.罗曼
+另外验证完成了！[r]找出通往提亚马特神最合适的路线了！
+[k]
+
+＠Dr.罗曼
+[%1]、玛修[line 3]
+[k]
+
+＠Dr.罗曼
+女神伊什塔尔、女神魁札尔·科亚特尔、[r]还有豹人！
+[k]
+
+＠Dr.罗曼
+前方就是不能回头的一仗了。[r]想必会有激烈的连续战斗，准备好了吗？
+[k]
+
+？1：当然！
+？2：最后的圣杯探索，开始！
+
+？！
+
+[communicationCharaFace 5]
+＠Dr.罗曼
+很好。[r]那我作为迦勒底的司令官宣布作战。
+[k]
+
+＠Dr.罗曼
+目标，接近提亚马特神[line 3]BeastⅡ，[r]以及用宝具阻止其前进！
+[k]
+
+＠Dr.罗曼
+一旦烧尽混沌之潮，即刻结束作战！[r]各自全力以赴吧！
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_4 1.4]
+[wait fade]
+[communicationCharaClear]
+[wait communicationChara]
+[soundStopAll]
+[end]

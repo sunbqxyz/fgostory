@@ -1,0 +1,592 @@
+
+
+＄03-00-02-13-4-0
+[soundStopAll]
+
+
+[charaSet A 8001400 1 玛修]
+[charaSet B 98002000 1 芙芙]
+[charaSet C 1033001 1 齐格鲁德]
+[charaSet D 2031001 1 拿破仑]
+[charaSet E 3012001 1 布伦希尔德]
+[charaSet F 3033000 1 奥特琳德]
+[charaSet H 5009000 1 特效用dummy]
+
+[scene 10000]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.7]
+
+[effect bit_talk_kengekiall02]
+[wt 0.1]
+[se ad32]
+[wt 0.4]
+[se ad32]
+[wt 0.1]
+[se ad32]
+
+[wt 0.2]
+
+[wipeout leftToRight 0.1 1]
+[wait wipe]
+[scene 60900]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[wipein rightToLeft 0.4 1]
+[charaScale H 1.4]
+[charaEffect H bit_talk_rarrow01or 1 F]
+[charaPut H 1200,1200]
+[wait wipe]
+
+[charaFace D 2]
+[charaPut H -50,-100]
+[wt 0.3]
+[cueSe Battle bac423]
+[wt 0.3]
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.5]
+[charaMove A -15,0 0.2]
+[charaFadeout A 0.2]
+[se ad73]
+[wt 0.6]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaPut H 0,200]
+[charaEffect H bit_talk_explosion]
+[se ad609]
+[seVolume ad609 0 0.7]
+[charaEffect H bit_talk_14]
+
+[se ad708]
+[wt 0.6]
+[seStop ad708 0.2]
+
+[wt 0.4]
+
+[cueSe Battle bac234]
+[shake 0.05 1 4 1.0]
+[effect bit_talk_impactlanding]
+[wt 3.0]
+
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+[se ade18]
+[seVolume ade18 0.0 0.7]
+[wt 0.5]
+[seStop ade18 0.8]
+[wt 1.5]
+
+[charaFace A 2]
+
+＠玛修
+击败穆斯贝尔巨人种以及冰兽！[r]这样一来，从地底现身的敌对存在就全部解决了！
+[k]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+＠玛修
+同时，可以目视到……[r]有一骑新的敌对存在正由大桥另一侧向这里接近。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠芙芙
+芙[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ade74]
+[seVolume ade74 0 0.4]
+[wt 0.1]
+[seVolume ade74 1.0 1.0]
+[wt 1.2]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.4 1]
+[wt 0.2]
+[seStop ade74 0.1]
+
+＠齐格鲁德
+呵。呵呵。很好。[bgm BGM_EVENT_90 0.1]
+[k]
+
+＠齐格鲁德
+和以前相比气势足了不少呢。[r]明明每个单体都没发生急剧变化。
+[k]
+
+＠齐格鲁德
+竟能变得如此不同吗。[r]人类之子，人类的英灵们。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠拿破仑
+哈！[r]你我彼此都是英灵吧，大英雄？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠齐格鲁德
+哼。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠布伦希尔德
+齐格鲁德……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠齐格鲁德
+唔[line 3]
+[k]
+
+＠齐格鲁德
+好久不见。[r]尽管最后一次见你是在你刚被封印之后。
+[k]
+
+＠齐格鲁德
+你也是来自泛人类史的英灵吧。[r]所以才会有和我战斗的意义。
+[k]
+
+[charaFace C 1]
+
+＠齐格鲁德
+女武神的长姊，大神的女儿布伦希尔德。[r]来吧。半神倒也有杀的价值。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠布伦希尔德
+…………完全是一副……外人的态度呢。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠齐格鲁德
+对我来说，[r]你就是外人啊。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠布伦希尔德
+难不成你想表示自己是[#异闻带:Lostbelt]的从者？[r]区区瞳孔颜色的差异，是不会让我……弄错我的猎物的。
+[k]
+
+＠布伦希尔德
+你是齐格鲁德，齐格蒙德之子。[r]是所有能力都远超常人的战士之王。
+[k]
+
+[charaFace E 9]
+
+＠布伦希尔德
+我的存在在向我诉说。[r]你是我该[#爱:杀]的对象。
+[k]
+
+[charaFace E 10]
+
+＠布伦希尔德
+……这种事情原本是不可能发生的。[r]……我的行为，我的疯狂，竟是为了正义。
+[k]
+
+＠布伦希尔德
+但是，你站在了[#异闻带:Lostbelt]一侧。[r]选择走上与人理为敌的道路。
+[k]
+
+[messageOff]
+[wt 0.8]
+[charaFace E 5]
+[wt 0.4]
+
+＠布伦希尔德
+所以[line 3][r]…………你会……受死吧，齐格鲁德。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 0,400]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠齐格鲁德
+会死的是你。[r]女武神。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[cueSe Battle bac166]
+[charaEffect H bit_talk_17]
+[charaMove H 1 1.5]
+[wt 2.0]
+[cueSeStop bac166 0.3]
+
+[fadeout white 1.5]
+[se ad606]
+[wait fade]
+
+[charaEffectStop H bit_talk_17]
+[charaPut H 2000,2000]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.1]
+
+[fadein white 2.0]
+[wait fade]
+
+[wt 1.0]
+
+＠奥特琳德
+……[r]……
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠玛修
+又飞来了一骑……！[r]她是瓦尔基里最后的统率个体！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠芙芙
+芙芙，芙！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠拿破仑
+终于来了啊。[r]不过也难怪。毕竟她那样子就像是还心存留恋啊！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_90 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠布伦希尔德
+瓦尔基里·奥特琳德。[r]退下吧。你应该听到姊妹们的愿望了。
+[k]
+
+＠布伦希尔德
+既然如此，和我战斗就是没有意义，也没有必要的，[r]你不该阻碍我与齐格鲁德的[#幽会:厮杀]。
+[k]
+
+[charaFace E 8]
+
+＠布伦希尔德
+拜托了。[r]退下吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠奥特琳德
+姐姐大人[line 3]
+[k]
+
+[messageOff]
+[se ad706]
+[wt 0.2]
+[seStop ad706 0.3]
+[wt 0.7]
+[charaFace F 8]
+
+＠奥特琳德
+我思考过。尝试着思考过了。[r]思考斯露德和希露德临终遗言的意义。
+[k]
+
+[charaFace F 8]
+
+＠奥特琳德
+但是，我还是无法理解。[r]尽管略有所感，却无法述诸言语。
+[k]
+
+＠奥特琳德
+所以我要挥舞光枪。[r]就像斯露德和希露德曾经做过的那样……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.0]
+[charaFace F 0]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth H 2]
+[charaDepth F 1]
+[charaFace F 5]
+
+[charaPut H 1]
+[charaEffect H bit_talk_charge_red]
+
+[se ad61]
+[se ad556]
+[seVolume ad556 0 0.6]
+
+[wt 1.0]
+
+＠奥特琳德
+强制扩大战斗机能。[r]将机体性能及输出提升到过剩失控状态。
+[k]
+
+[messageOff]
+[seStop ad61 0.5]
+[seStop ad556 0.5]
+[se ad574]
+
+[flashin once 0.2 0.5 FFFFFFFF FFFFFF00]
+[charaPut H 2400,2400]
+[charaEffectStop H bit_talk_charge_red]
+
+[charaTalk depthOn]
+[wt 1.0]
+
+[charaFace F 2]
+
+[bgm BGM_EVENT_80 0.1]
+
+＠奥特琳德
+过剩失控。过剩失控。[r]与魔剑格拉墨的魔力同调[line 3]开始配合作战！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠齐格鲁德
+打算跟着我吗。[r]不知天高地厚。但很有趣。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[cueSe Battle bac170]
+
+[wt 0.7]
+
+[charaFace D 5]
+
+＠拿破仑
+不，不对，魔剑使，这种应该叫勇敢无畏！[r]你这家伙实力虽强，却是个不懂女人心的木头人呢！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠齐格鲁德
+…………哼。看来增长的不只有气势呢。[r]连吵闹的废话也变多了啊，该死的弓兵。
+[k]
+
+[charaFace C 12]
+
+＠齐格鲁德
+近代的男人怎么会懂女武神？[r]你们应该根本无法理解神秘吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠拿破仑
+不是哦？　别看我这样，我可喜欢神话了。[r]甚至还在远征途中溜进了金字塔。
+[k]
+
+[charaFace D 5]
+
+＠拿破仑
+所以啊，这光景令我雀跃不已。[r]魔剑使和女武神的配合是何等的神秘啊！
+[k]
+
+＠拿破仑
+而且啊，尽管非我所愿……[r]但身为英灵，我可是最擅长破坏神秘了哦！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠齐格鲁德
+那你就试试看吧。[r]你的炮击已经连续两次没能对我奏效了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠拿破仑
+噢啦啦！　一次两次又算什么！[r]最后能赢就行！　第三次一定要给你轰个大洞出来！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠玛修
+我们这已经是第五次了！[r]而且，这次一定要彻底挡下那把魔剑！
+[k]
+
+？1：准备战斗！
+？2：放手一搏吧，玛修！
+
+？！
+
+[messageOff]
+[se ad672]
+[wt 1.0]
+
+[charaFace A 2]
+
+＠玛修
+[#灵基外骨骼:奥特瑙斯]输出提升。战斗模式持续中[line 3][r]各式装备待机。可以战斗！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠芙芙
+芙芙！　芙[line 3]！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠布伦希尔德
+齐格鲁德……[r]齐格鲁德……
+[k]
+
+[charaFace E 2]
+
+＠布伦希尔德
+…………既然你我重逢，我就要在此处……杀死你！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

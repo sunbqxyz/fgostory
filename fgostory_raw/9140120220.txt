@@ -1,0 +1,274 @@
+＄91-40-12-02-2-0
+
+[soundStopAll]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaSet A 5012001 1 尼托克丽丝]
+[charaSet B 2013001 1 阿拉什]
+
+[charaSet C 98006200 1 敌人1]
+[charaSet D 98006200 1 敌人2]
+[charaSet E 98006200 1 敌人3]
+
+[charaSet F 98006200 1 敌人剪影]
+[charaFilter F silhouette 00000080]
+
+[charaSet H 5009000 1 特效用dummy]
+
+[charaDepth A 5]
+[charaDepth B 5]
+[charaDepth C 5]
+[charaDepth D 5]
+[charaDepth E 5]
+
+[charaDepth H 3]
+[charaDepth F 1]
+
+[scene 28800]
+
+
+
+[se ad134]
+[se ad135]
+[seVolume ad135 0 0.2]
+
+[charaPut H 1]
+
+[charaEffect H bit_talk_haboob_02]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+[seStop ad134 2.0]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠尼托克丽丝
+这里是……
+[k]
+
+＠尼托克丽丝
+这沙漠的样子真令人怀念。[r]第二位勇者就在这里？
+[k]
+
+[seStop ad135 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace A 6]
+[charaFadein A 0.1 2]
+[charaFace B 1]
+[charaFadein B 0.1 0]
+
+＠阿拉什
+大概吧。以前看到的时候，他在沙尘的另一侧行走。
+[k]
+
+[charaFace B 0]
+＠阿拉什
+那样子犹如一幅画。[r]明明穿着那身铠甲，看上去居然还那么神清气爽。
+[k]
+
+＠阿拉什
+不，他上身还是披着外套的哦？[r]头上也没有戴头盔，而是披着别的什么，唔。
+[k]
+
+[charaFace A 0]
+＠尼托克丽丝
+唔嗯唔嗯……[r]就是说他可能会出现在沙尘的另一侧……
+[k]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠尼托克丽丝
+……（凝视。）
+[k]
+
+＠尼托克丽丝
+………………（凝视。）[r]………………（凝视。）
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 1.0 1]
+[wait wipe]
+
+[charaDepth H 10]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+
+[wipein rectangleStripLeftToRight 1.0 1]
+[wait wipe]
+
+[se ad134]
+[wt 3.0]
+[seStop ad134 0.2]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 2.0 1]
+
+[se ad135]
+[seStop ad135 2.0]
+[wt 2.0]
+
+
+[wipeout rectangleStripLeftToRight 1.0 1]
+[wait wipe]
+
+[charaDepth H 3]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 1.0 1]
+[wait wipe]
+
+
+＠尼托克丽丝
+…………啊。好像看见了什么，而且也有魔力反应！
+[k]
+
+＠尼托克丽丝
+一个……
+[k]
+
+[bgmStop BGM_EVENT_7 0.5]
+
+[charaFace A 7]
+＠尼托克丽丝
+两个……[r]三[charaFace A 8]个……？
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[wt 0.5]
+[se ad25]
+[wt 1.0]
+[bgm BGM_EVENT_3 0.1]
+
+[wipeout rectangleStripLeftToRight 0.2 1]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[wipein rectangleStripRightToLeft 0.2 1]
+[wait wipe]
+
+＠尼托克丽丝
+哇哇！　叫了！？
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace A 2]
+[charaFadein A 0.1 2]
+[charaFace B 5]
+[charaFadein B 0.1 0]
+＠阿拉什
+抱歉！　不是它们！
+[k]
+
+＠阿拉什
+那是敌人AI。和从者的气息不一样。[r]看来得先把它们解决掉才行。
+[k]
+
+＠尼托克丽丝
+怎么又来了，阿拉什阁下！
+[k]
+
+[charaFace B 4]
+＠阿拉什
+是又来了。抱歉，法老小[charaFace A 9]妹妹。[r]或许这无法作为赔礼道歉，但这次我也出马吧。御主！
+[k]
+
+？1：OK～！
+？2：尽快解决对手继续搜索吧！
+
+？！
+
+[charaFace B 5]
+＠阿拉什
+好！！
+[k]
+
+[charaFace A 5]
+＠尼托克丽丝
+请等一下，阿拉什·卡曼戈！[r]刚才你叫我什么。小妹妹。居然叫我小妹妹！
+[k]
+
+＠阿拉什
+对，小妹妹就休息一会儿吧！
+[k]
+
+[charaFace A 4]
+＠尼托克丽丝
+啊，好[line 3]
+[k]
+
+[charaFace A 5]
+＠尼托克丽丝
+不对！[r]不是这样！
+[k]
+
+＠尼托克丽丝
+不敬！　太不敬了！[r]唔[charaFace A 9]唔唔，一会儿可有您好看的，阿拉什阁下！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

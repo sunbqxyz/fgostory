@@ -1,0 +1,1179 @@
+
+
+＄94-02-49-05-1-0
+
+[soundStopAll]
+
+
+[charaSet A 10007000 1 冲田Alter]
+[charaSet C 1098139000 1 阿龙小姐]
+[charaSet B 1098138000 1 龙马]
+[charaSet D 6033000 1 以藏]
+[charaSet E 1098135000 1 织田信长]
+[charaSet F 9940030 1 斥候迷你信]
+[charaSet G 98111600 1 织田信胜]
+[charaSet H 98002000 1 特效用dummy]
+
+[charaDepth B 9]
+[charaDepth C 1]
+[charaDepth H 10]
+
+[bgm BGM_EVENT_5 0.1]
+
+[scene 59700]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+＠织田信长
+………哦，[r]Rider和Assassin吗。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠斥候迷你信
+No[voice 9940030_0_B030]bu！
+[k]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠织田信长
+哼，不过是一群乌合之众，[r]就算联合起来也不可能打赢我。
+[k]
+
+[charaFace E 5]
+＠织田信长
+你们继续搜集情报。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠斥候迷你信
+No[voice 9940030_0_B010]bu！
+[k]
+
+[messageOff]
+[se ad132]
+[charaFadeout F 0.7]
+[wt 1.5]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFilter G silhouette 00000080]
+[charaFadein G 0.4 1]
+[wt 0.4]
+＠E：？？？
+信长大人……
+[k]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠织田信长
+………怎么了？
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠E：？？？
+Caster派来了使者。
+[k]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠织田信长
+哦……Caster吗。[r]我不觉得那家伙真的想缔结同盟……
+[k]
+
+
+
+[charaFace E 0]
+＠织田信长
+算了，好歹听听对方的来意好了，信胜。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFilter G normal 00000080]
+[charaFadein G 0.4 1]
+[wt 0.4]
+＠织田信胜
+[line 3]是！[r]我明白了，姐姐大人。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_5 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+
+[wt 1.5]
+
+[fadeout white 2.0]
+[wait fade]
+
+[skip false]
+[scene 10001]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[fadein white 0.1]
+[wait fade]
+
+
+
+[input selectBranch]
+[messageOff]
+[skip false]
+[charaSet A 10007000 1 冲田Alter]
+[charaSet C 1098139000 1 阿龙小姐]
+[charaSet B 1098138000 1 龙马]
+[charaSet D 6033000 1 以藏]
+[charaSet E 1098135000 1 织田信长]
+[charaSet F 9940030 1 斥候迷你信]
+[charaSet G 98111600 1 织田信胜]
+[charaSet H 98002000 1 特效用dummy]
+
+[bgmStop BGM_EVENT_5 0.4]
+
+[charaDepth B 9]
+[charaDepth C 1]
+[charaDepth H 10]
+
+[bgmStop BGM_EVENT_5 0.4]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+
+[scene 10001]
+[wt 0.4]
+[soundStopAll]
+[maskin white 1]
+[wait mask]
+[label selectBranch]
+
+[wt 0.4]
+
+[revivalBranch lblNormal lblRevival]
+
+[label lblNormal]
+
+[fowardEffect bit_queststart80107]
+[wait fowardEffect]
+
+[branch lblConf]
+[label lblRevival]
+
+[fowardEffect bit_queststart80242]
+
+[wait fowardEffect]
+
+[label lblConf]
+
+[fadeout white 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[fadein white 0.1]
+[wait fade]
+[wt 0.1]
+
+[fadeout black 2.0]
+[wait fade]
+
+[skip true]
+[wt 0.1]
+
+
+[scene 59300]
+
+[charaSet E 3017001 1 李书文]
+[charaSet F 1098150000 1 土方]
+[charaSet G 98025100 1 落单从者]
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1 1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠落单从者
+[image berserker_language_1][line 3]！！！！
+[k]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠以藏
+你太碍事了！　下三滥的家伙！！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.3]
+
+[se bac6]
+[charaEffect G bit_talk_ichimon01wh]
+[wt 0.15]
+[charaShake G 0.01 4 4 0.4]
+[wt 0.4]
+
+＠落单从者
+[i berserker_language_2][line 3]！？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.5]
+[charaFadeout G 0.4]
+[wt 0.4]
+
+[se ad144]
+[wt 1.2]
+
+[bgm BGM_EVENT_2 0.1 1.0]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠以藏
+哼……杂兵。[r]喂，路开辟出来了，走啦。
+[k]
+
+？1：真是蛮不讲理呢……
+？2：该怎么说呢……
+
+？！
+
+[charaFace D 13]
+＠以藏
+怎么？　有什么意见吗？
+[k]
+
+＠以藏
+如果我真的想砍，[r]你的项上人头早就不保了哦。
+[k]
+
+＠以藏
+还是说，你想找死？
+[k]
+
+？1：尽……尽管这话确实没错……
+？2：令人难以反驳。
+
+？！
+
+[charaFace D 8]
+＠以藏
+哼，谁让你的从者完全是个新手嘛。
+[k]
+
+＠以藏
+若不是我，事情哪有那么顺利。
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠冲田Alter
+……唔，虽说是事实，但这话也太见外了。[r]不过御主，这样真的好吗？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.5]
+[wipeout circleOut 1.5 1]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[wipein circleIn 0.1 1]
+[wait wipe]
+
+[charaFace A 6]
+
+[cameraFilter gray]
+[wipeFilter cinema 0.1 0]
+[cameraMove 0.1 0,-50 1.0]
+
+[scene 59400]
+
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1 1.0]
+
+＠冲田Alter
+这家伙可是打算杀掉御主啊。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠龙马
+没关系啦，以藏先生在对待工作方面还是很认真的。[r]胜老师那会儿也做得很漂亮。
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+＠以藏
+[#对待工作方面]这话是多余的啦！
+[k]
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[wipeOff]
+[cameraFilter normal]
+[cameraHome 0.1]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[scene 59300]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+[wt 0.5]
+
+[wipeout circleOut 0.1 1]
+[wait wipe]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipein circleIn 1.5 1]
+[wait wipe]
+
+[bgm BGM_EVENT_2 0.1 1.0]
+
+＠以藏
+放心吧，我会遵守承诺。
+[k]
+
+＠以藏
+……和那个大骗子……龙马可不一样。
+[k]
+
+？1：话说您和坂本先生之间究竟发生了什么事？
+
+[charaFace D 13]
+＠以藏
+……我和那家伙是老乡。以前还和他一起钓钓鱼什么的，[r]像死党一样到处玩。
+[k]
+
+？2：你意外是个好人呢。
+
+[charaFace D 2]
+＠以藏
+哈？　你也和龙马一样是个笨蛋吗？[r]我只有现在才帮你们，只限现在！
+[k]
+
+？！
+
+[charaFace D 2]
+＠以藏
+等这些问题搞定之后，[r]我会将你们一并解决掉！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.5]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+
+[scene 59900]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1 1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠以藏
+……是这里吧。
+[k]
+
+？1：这里就是Lancer的……
+？2：为什么知道是这里？
+
+？！
+
+[charaFace D 7]
+＠以藏
+身为Assassin的我能大致把握[r][#战线:Red line]内的从者位置。
+[k]
+
+＠以藏
+也就是说，[r]没有人能逃出我的手掌。
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠冲田Alter
+原来如此，所以我们的所在位置才会暴露啊。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠以藏
+……安静一点。
+[k]
+
+
+[charaFace D 13]
+＠以藏
+奇怪了……[r]刚才还在的Lancer的气息消失了。
+[k]
+
+？1：是吗？
+
+＠以藏
+直到刚才为止，[r]Lancer的气息确实还在这里……
+[k]
+
+？2：难道是搞错了？
+
+[charaFace D 12]
+
+＠以藏
+身为天诛名人的我怎么可能搞错！
+[k]
+
+？！
+
+[charaFace D 6]
+
+＠以藏
+……不，原来是这样。
+[k]
+
+[charaFace D 8]
+
+＠以藏
+看来有人比我们先到了一步。
+[k]
+
+[charaFace D 0]
+
+＠以藏
+……在里面，跟我来。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.5]
+
+[wipeout leftToRight 1.5 1]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[scene 59700]
+[wt 0.5]
+
+[wipein rightToLeft 1.5 1]
+[wait wipe]
+
+[bgm BGM_EVENT_90 0.1 1.0]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+＠李书文
+……欢迎光临，远东的客人。[r]我应该这么说吧。
+[k]
+
+＠李书文
+不过，我也是刚来。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠以藏
+……你就是这里的Lancer吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠李书文
+哈哈，不要那么戒备啦！
+[k]
+
+
+[charaFace E 1]
+＠李书文
+搬出圣杯战争这个名分，[r]却都是些杂七杂八的家伙到处乱晃，太无聊了。
+[k]
+
+[charaFace E 4]
+＠李书文
+好不容易找到像这样拥有阵地的[r]正规从者来试试身手，结果如你们所见。
+[k]
+
+＠李书文
+听说圣杯战争乃是古今东西英雄豪杰[r]齐聚一堂一较高下的比试。
+[k]
+
+
+[charaFace E 1]
+＠李书文
+既然如此，想试试身手也是无可厚非的事。
+[k]
+
+[charaFace E 4]
+＠李书文
+虽说我号称『只需一击便足矣』，
+[k]
+
+＠李书文
+但事实上若真的靠一击就击倒了对手，[r]也未免太没意思了吧。
+[k]
+
+？1：一击就干掉了这里的Lancer！？
+？2：以藏先生，这个Lancer是……！
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+＠以藏
+……你给我闭嘴。
+[k]
+
+[charaFace D 9]
+＠以藏
+哼，反正你肯定是那种什么武术家吧？[r]道场剑法有什么了不起的……
+[k]
+
+[charaFace D 12]
+＠以藏
+不过是打倒了那些个杂兵从者，[r]你就自以为了不起了啊，
+[k]
+
+＠以藏
+遇到我算你气数已尽。
+[k]
+
+[charaFace D 5]
+＠以藏
+我会当场斩杀你，觉悟吧！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠李书文
+不错不错。这声音不错。[r]犹如狂犬啊。发泄无需手下留情。
+[k]
+
+[charaFace E 0]
+＠李书文
+然后呢，从哪个开始。[r]你们一起上我也不介意哦。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠以藏
+啊啊？　这些家伙只是顺带的。
+[k]
+
+＠以藏
+区区你这样的枪使，[r]根本不是我这剑的对手。
+[k]
+
+[bgmStop BGM_EVENT_90 0.3]
+[wt 0.4]
+[bgm BGM_EVENT_24 0.1 1.0]
+[charaFace D 5]
+＠以藏
+[line 3]去死吧[line 4]！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+
+
+[effect bit_talk_ichimon01wh]
+[se ade23]
+[wt 0.2]
+
+[fowardEffect bit_talk_41]
+[wt 0.1]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[se ad170]
+[shake 0.03 3 3 0.7]
+[fowardEffectStop bit_talk_41]
+[wt 1.0]
+
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠李书文
+哈哈，就该这样才行嘛！
+[k]
+
+[charaFace E 0]
+＠李书文
+让我好好感受一下远东的剑术吧！
+[k]
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_24 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[scene 59800]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1 1.0]
+
+[charaTalk depthOff]
+[charaTalk B]
+[charaFace B 4]
+[charaFace C 0]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 1]
+＠龙马
+……这景象太惨了。[r]漂亮的花朵都毁于一旦。
+[k]
+
+＠龙马
+以Berserker而言也显得过于胡来了。
+[k]
+
+＠龙马
+这里好歹是大家的公园啊。
+[k]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace B 0]
+＠阿龙小姐
+见一个砍一个，完全是格杀勿论的狂热状态。[r]哪怕阿龙小姐我，也能做得更为潇洒一点呢。
+[k]
+
+[charaTalk B]
+[charaFace B 11]
+＠龙马
+哎呀，其实你们有的一拼呢。[r]好了……问题是Berserker。
+[k]
+
+[charaTalk F]
+＠F：？？？
+……喂，你。
+[k]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFace B 0]
+＠阿龙小姐
+啊，龙马，背后。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.4 1]
+[wt 0.4]
+＠F：？？？
+喂，你……是萨摩的？　还是长州的？
+[k]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 6]
+[charaFace C 0]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 1]
+＠龙马
+哎哟……被发现了啊。
+[k]
+
+[charaFace B 10]
+＠龙马
+咦？　虽说打扮和平时不太一样，[r]但你难不成是……
+[k]
+
+＠龙马
+[line 3]不，看来这次的邂逅[r]都是些罪业深重的宿命呢。
+[k]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+＠F：？？？
+回答我……你是萨摩的？　还是长州的？
+[k]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+＠F：？？？
+既然你不回答，
+[k]
+
+[bgm BGM_EVENT_3 0.1 1.0]
+
+＠F：？？？
+就说明我说的没错吧……！
+[k]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFace C 5]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 1]
+＠龙马
+没想到居然会在这里和鬼副长喝赏花酒。
+[k]
+
+＠龙马
+阿龙小姐，看来不需要手下留情了！
+[k]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+＠F：？？？
+怎么，你果然是敌人啊。
+[k]
+
+[charaFace F 6]
+＠F：？？？
+[line 3]这里是新选组的阵地。[r]谁都别想活着回去！！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[scene 59700]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_24 0.1 1.0]
+
+
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[se ad32]
+[shake 0.03 3 3 0.7]
+[wt 0.6]
+[se ad44]
+[wt 0.8]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+＠以藏
+……怎……怎么可能！
+[k]
+
+[charaFace D 11]
+＠以藏
+我……我居然会输！？
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠李书文
+……垂头丧气到这个程度，小心肩胛骨脱臼哦。[r]吼叫声倒是挺不错，没想到只有这种程度的实力。
+[k]
+
+[charaFace E 0]
+＠李书文
+我已经摸透你的路数了。[r]接下来你也只能去死了。
+[k]
+
+＠李书文
+来吧，使出你最后一招吧。[r]我会刺穿你的首级，结束一切。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠以藏
+……怎……怎么可能！
+[k]
+
+＠以藏
+我，我的剑，是无敌的！
+[k]
+
+
+
+[charaFace D 10]
+＠以藏
+……没……没错！　是[#战线:Red line]！
+[k]
+
+＠以藏
+你刚和正规Lancer交替吧！？
+[k]
+
+＠以藏
+我知道！　三骑士拥有比我们更强的圣杯支援！
+[k]
+
+＠以藏
+居……居然用如此卑鄙的手段！
+[k]
+
+？1：……不，以藏先生。
+？2：Lancer他……
+
+？！
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠冲田Alter
+……什么都没用。[r]……这家伙只是[#强大]而已。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠李书文
+……唔，天生的急性子让一切都徒劳无功了呢。
+[k]
+
+＠李书文
+太可惜了。身怀如此剑术才华，[r]若想成长，明明有的是成长的空间才对。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠以藏
+你……你说什么！？
+[k]
+
+[charaFace D 5]
+＠以藏
+我的剑可是没有输给任何人过！
+[k]
+
+＠以藏
+谁都赢不了我！[r]无论什么样的剑术，我只要看一眼就能学会！
+[k]
+
+＠以藏
+我……我是剑术天才！
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠李书文
+无需多言。这是天生的观察力。[r]若论才华，应该比我更胜一筹吧。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+＠以藏
+……什么！？
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠李书文
+但仅此而已。武术才华种类繁多。[r]若只想通过锻炼其一而到达巅峰，实在是……
+[k]
+
+＠李书文
+这种自以为是还是趁年轻的时候早点抛弃为好。[r]……但是，你似乎没有武运。
+[k]
+
+[charaFace E 0]
+＠李书文
+看来你生前[#英年早逝]。[r]真是太可惜了。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+＠以藏
+你说什么……
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠李书文
+好了，话都说完了。[r]我是以一战一杀为宗旨的。
+[k]
+
+＠李书文
+我会在此杀了Assassin，[r]但我会暂时放过那边的[&小家伙:小丫头]。
+[k]
+
+＠李书文
+没什么，每次都杀光可就无法维持将来的生计了。[r]总得让猎物活得久一些才行。
+[k]
+
+？1：不会让你得逞。
+？2：以藏先生，快退下，上，Alter！
+
+？！
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠冲田Alter
+……我明白了。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+＠以藏
+你傻吗！　你们到底要我说多少次！[r]连我都赢不了这家伙啊！
+[k]
+
+＠以藏
+像她这样的剑法外行的从者[r]怎么可能是他的对手嘛！
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠冲田Alter
+…………
+[k]
+
+[messageOff]
+[se bac305]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠李书文
+……哦。[r]看来这个才是正戏啊。
+[k]
+
+＠李书文
+好吧，这次的一杀就选你好了。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠冲田Alter
+……御主，这家伙很强。
+[k]
+
+＠冲田Alter
+但我不会让他杀害御主。
+[k]
+
+？1：嗯，靠你了，Alter！
+？2：我相信你。
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠李书文
+[line 3]唯有忠，才能委以极致信任吗。[r]好吧。我已经很久没有杀[#人]了！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,623 @@
+
+
+
+
+＄91-10-35-01-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 3002001 1 迪尔姆德]
+[charaSet B 99502600 1 玛修]
+[charaSet C 1098157100 1 清姬]
+[charaSet D 98111500 1 通讯用杂音]
+[charaSet E 98025100 1 谜之剑鬼]
+[charaSet F 98015000 1 影之声]
+[charaSet H 3002002 1 特效用dummy]
+
+[scene 20602]
+[fadein black 0.5]
+[wait fade]
+
+
+[effect bit_talk_kengekiall01]
+[wt 0.1]
+[se ad33]
+[wt 1.0]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.05 3 3 0.4]
+[wt 0.5]
+
+[charaPut D 0,-2000]
+[charaEffect D bit_talk_10_LowLevel]
+
+[charaTalk A]
+[charaFace A 5]
+[se ad73]
+[charaFadein A 0.5 -80,0]
+[charaMove A 1 0.2]
+
+＠迪尔姆德
+呜！　凭这灵基……无法解决对方……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠玛修
+前辈！　迪尔姆德先生！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠清姬
+御主！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠玛修
+敌对反应没有消失的倾向……！[r]难以通过战斗来应对！
+[k]
+
+＠玛修
+现在应该……
+[k]
+
+？1：等一下。
+？2：咦，对方似乎想说什么[line 3]
+
+？！
+
+[charaFace B 6]
+＠玛修
+！？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut D 0,-2000]
+[wt 0.3]
+
+[bgm BGM_EVENT_3 0.5 0.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠谜之剑鬼
+……………………不是你。
+[k]
+
+＠谜之剑鬼
+不是你。[r]不是你。
+[k]
+
+＠谜之剑鬼
+只有枪还不够。[r]只有枪还不够。
+[k]
+
+＠谜之剑鬼
+让我见识，真正的力量。[r]让我见识，被[#海与异界之神:马纳南]抚养长大的骑士的力量。
+[k]
+
+[bgm BGM_EVENT_3 0.5]
+
+
+[se ad678]
+[seVolume ad678 0 0.7]
+[wt 0.1]
+[effect bit_talk_41]
+
+[charaMove E 0,15 0.2]
+[charaMoveScale E 1.2 0.2]
+
+＠谜之剑鬼
+[font large]让我见识马纳南的剑！
+[k]
+
+[messageOff]
+[effectStop bit_talk_41]
+[wt 0.3]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaMoveScale E 1.0 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠迪尔姆德
+御主，请退后！
+[k]
+
+[charaFace A 2]
+[se ad442]
+＠迪尔姆德
+[font large][messageShake 0.05 4 7 1.0]噢噢噢噢噢噢噢噢噢……！
+[k]
+
+[messageOff]
+[se ad73]
+[charaMove A -50,0 0.5]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[se ad170]
+[charaEffect E bit_talk_ichimon01wh]
+[wt 0.2]
+[effect bit_talk_14]
+[wt 0.1]
+
+[se ad32]
+[effect bit_talk_Slash_red_01]
+[wt 0.3]
+[effect bit_talk_14]
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.3]
+
+[se ad39]
+[charaEffect A bit_talk_36]
+
+＠迪尔姆德
+[line 3]『[#必灭的黄蔷薇:Gae Buidhe]』！
+[k]
+
+[messageOff]
+[charaEffectStop A bit_talk_36]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.3]
+
+[se ad471]
+[effect bit_bolg_03y]
+[wt 0.2]
+
+[charaEffect E bit_talk_12_red_R]
+[charaEffect E bit_talk_14]
+[wt 0.4]
+[charaShake E 0.05 3 3 0.3]
+[wt 1.0]
+
+[seStop ad471 0.5]
+＠谜之剑鬼
+……………………不是，你。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠迪尔姆德
+（我的魔枪不起作用？）
+[k]
+
+[charaFace A 0]
+＠迪尔姆德
+（不。不对。…………这是！！）
+[k]
+
+＠D：声音
+[line 3]没错，他渴望[#用剑的战斗]。
+[k]
+
+＠D：声音
+[line 3]因此，剑以外的兵器是无法杀死他的。
+[k]
+
+[charaFace A 5]
+＠迪尔姆德
+！！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[se ad42]
+[charaTalk F]
+[charaSpecialEffect F wipeTimeRe 1 1.5]
+[wait charaSpecialEffect F]
+[wt 0.5]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠玛修
+强大的魔力反应！[r]尽管没有检测到敌对反应，但这究竟是[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut D 0,-2000]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠迪尔姆德
+是新敌人吗？　不，这感觉倒不如说是……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠影之声
+[line 3]抱歉，给你添麻烦了。[r]他渴望的是你，但也是我。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠迪尔姆德
+你是……
+[k]
+
+[charaFace A 1]
+＠迪尔姆德
+是这样啊……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.8]
+[se ad51]
+[wt 0.8]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠玛修
+迪尔姆德先生！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠清姬
+哎呀，居然放下了枪……[r]在敌人面前这样做难道不危险吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut D 0,-2000]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠迪尔姆德
+嗯，这影子并不是。[r]这是[line 3]
+[k]
+
+＠迪尔姆德
+没错，打比方来说，这是[#援军]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_1 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠影之声
+没错。
+[k]
+
+＠影之声
+但现在的我连临时的肉体都不具备。[r]因此，我想要借用你的灵基。
+[k]
+
+＠影之声
+而御主。[r]我希望能得到你的同意。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠迪尔姆德
+……御主。我也恳求您！[r]为了打倒那个杀人魔，这是必不可少的。
+[k]
+
+？1：我相信迪尔姆德。
+？2：（点头。）
+
+？！
+
+[messageOff]
+[charaFace A 1]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠影之声
+明白了！
+[k]
+
+[messageOff]
+[se ad39]
+[charaPut H 1]
+[charaEffect H bit_talk_summon]
+[wt 0.2]
+[effect bit_talk_blight_02]
+[wt 2.5]
+[effectStop bit_talk_blight_02]
+[wt 0.5]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wt 0.5]
+
+[se ad39]
+[wt 0.2]
+[effect bit_talk_blight_02]
+[wt 2.5]
+[effectStop bit_talk_blight_02]
+[wt 0.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 0,-2000]
+[wt 0.5]
+
+[charaPut D 1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+灵基同调……！？[wt 0.5][charaFace B 7][r]迪尔姆德先生的灵基发生了变化……！！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut D 0,-2000]
+[wt 0.3]
+
+[charaPut H 1]
+[charaTalk off]
+[charaFace F 0]
+[charaFadein F 0.1 0]
+
+[charaFace A 0]
+[charaFadein A 0.1 2]
+
+[se ad39]
+[wt 2.5]
+
+[se bas7]
+[effectStop bit_talk_summon]
+[effectStop bit_talk_blight_02]
+[fadeout white 1.5]
+[bgmStop BGM_EVENT_1 1.5]
+[wait fade]
+[charaFadeout H 0.1]
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[wt 1.5]
+
+
+[charaSet A 1035001 1 迪尔姆德]
+[charaSet H 1035001 1 迪尔姆德_剪影]
+[charaFilter H silhouette 00000080]
+
+[charaDepth A 0]
+[charaDepth H 1]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.1]
+[charaFadein A 0.1 1]
+
+[charaTalk on]
+[scene 20602]
+
+[fadein white 1.5]
+
+[charaTalk off]
+
+[wait fade]
+[wt 1.0]
+
+
+[charaFadeout H 0.7]
+[wt 0.7]
+[bgm BGM_EVENT_4 0.1]
+＠迪尔姆德
+[line 3]从者，Saber。[r]费奥纳骑士团迪尔姆德·奥迪那。
+[k]
+
+＠迪尔姆德
+手持两把魔剑来此报道！
+[k]
+
+[charaFace A 2]
+＠迪尔姆德
+出现在模拟装置中的杀人魔啊！
+[k]
+
+＠迪尔姆德
+不，纯洁的巨人吉拉·达克！[r]其真面目就是达南的妖精王阿瓦塔！
+[k]
+
+[charaFace A 5]
+＠迪尔姆德
+为何你会来到迦勒底……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+达南的妖精王阿瓦塔！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠清姬
+是……是哪位！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠玛修
+是支配曾经存在于[#爱林:爱尔兰]的[r]妖精乡之一的王的名字！
+[k]
+
+＠玛修
+在凯尔特神话、芬尼亚传奇中，[r]曾与费奥纳骑士团缔结同盟并肩战斗……
+[k]
+
+＠玛修
+根据传说中缔结同盟前发生的故事，[r]迪尔姆德先生曾与妖精王的骑士战斗过……
+[k]
+
+[charaFace B 7]
+＠玛修
+或者！[r]可以说是与[#妖精王本人]战斗过！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut D 0,-2000]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠谜之剑鬼
+噢噢，噢噢……噢噢噢噢噢噢噢噢噢噢噢噢噢……
+[k]
+
+＠谜之剑鬼
+这模样正是手持魔剑的费奥纳骑士。[r]终于出现在我面前了啊。
+[k]
+
+＠谜之剑鬼
+我在梦中看到了你的剑。[r]看到了你的剑再次在地表熠熠生辉的样子。
+[k]
+
+＠谜之剑鬼
+因此我的感情穿越了时空，[r]抵达了这个电子领域……
+[k]
+
+＠谜之剑鬼
+…………啊啊，终于见到你了，迪尔姆德！
+[k]
+
+＠谜之剑鬼
+不是手持魔剑[#巨大的愤怒:Mor-alltach]与魔枪[#红色标枪:Gae Dearg]的[r]战无不胜的芬恩的骑士！
+[k]
+
+＠谜之剑鬼
+不是手持两把魔枪的Lancer的样子！[r]而是手持两把魔剑的Saber的样子，终于！
+[k]
+
+＠谜之剑鬼
+那天，那刻……[r]只有你被允许到达的断崖的边缘！
+[k]
+
+＠谜之剑鬼
+在泉边邂逅时未能得见的模样！　双剑的……！
+[k]
+
+＠谜之剑鬼
+双剑的骑士迪尔姆德！[r]你！　啊啊，我想打倒你！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠迪尔姆德
+…………你真是个任性的王啊。
+[k]
+
+[charaFace A 5]
+＠迪尔姆德
+但我感受到了你的这份感情！[r]而我必将回应！
+[k]
+
+＠迪尔姆德
+费奥纳骑士团的首席骑士，迪尔姆德·奥迪那！[r]现作为双剑的骑士[line 3]
+[k]
+
+[charaFace A 2]
+＠迪尔姆德
+[line 3]这次！　一定要击溃你的剑！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_4 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

@@ -1,0 +1,749 @@
+
+
+＄94-04-09-02-1-1
+
+[soundStopAll]
+[bgm BGM_EVENT_24 0.1]
+[charaSet A 98001000 1 玛修]
+[charaSet B 1006000 1 尼禄]
+[charaSet C 2002001 1 吉尔伽美什]
+[charaSet D 1098179100 1 S伊什塔尔]
+[charaSet E 1098122400 1 特效用]
+
+
+[branchQuestNotClear lblFlagNotClear 3000303]
+[label lblFlagClear]
+[flag IsClear true]
+[branch lblFlagConf]
+[label lblFlagNotClear]
+[flag IsClear false]
+[label lblFlagConf]
+
+[scene 64400]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[wt 0.4]
+
+[charaEffect C bit_talk_kengekiall02]
+[wt 0.2]
+[se ad32]
+[charaShake C 0.04 2 2 1.0]
+[wt 0.2]
+[se ad170]
+[wt 0.4]
+[se ad686]
+[fowardEffect bit_talk_14]
+[wt 1.0]
+
+[charaFace C 8]
+＠吉尔伽美什
+怎么了，就这点水平吗！[r]虽然让本王挨了几下，但完全不起作用！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠尼禄·新娘
+唔，死鸭子嘴硬！[r]明明已经被逼到绝境了，态度还那么高傲……
+[k]
+
+＠尼禄·新娘
+那男人绝对是『自己赢得胜利前决不罢休所以最强』系的王！[r]余很清楚！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠吉尔伽美什
+哼。不愧是曾以无限毅力闻名的王者。[r]不过那都是过去的事了，现在已经轮不到你出场了！
+[k]
+
+[messageOff]
+[se ad39]
+[flashin once 0.4 1.0 FFFFFFAF FFFFFF00]
+[charaBackEffect C bit_talk_charge_aura]
+[wt 0.4]
+[se ad153]
+[seVolume ad153 0 0]
+[seVolume ad153 1.0 0.4]
+[wt 0.5]
+[seStop ad39 1.0]
+[wt 1.0]
+
+？1：糟了……！
+？2：宝具要来了……！
+
+？！
+
+[charaFace C 2]
+＠吉尔伽美什
+既然无计可施，也只能给予裁决。[r]在本王的乖离剑面前乖乖还回优胜腰带吧！
+[k]
+
+＠吉尔伽美什
+尽管结果心知肚明，[r]但获得最终胜利的果然还是本王啊！
+[k]
+
+[charaFace C 6]
+＠吉尔伽美什
+呼哈哈，在这地表！　能打倒本王的人！[r]究竟在何处！
+[k]
+
+＠吉尔伽美什
+『谁能打倒本王！』[r]『谁能打倒本王！』
+[k]
+
+
+＠吉尔伽美什
+再说一次！
+[k]
+
+＠吉尔伽美什
+[font large]『谁能打倒本王！』
+[k]
+
+[bgmStop BGM_EVENT_24 1.0]
+
+[messageOff]
+[charaEffect C bit_talk_thunderbolt]
+[se ad626]
+[wt 0.1]
+[charaFace C 5]
+[seStop ad153 0.1]
+[charaBackEffectDestroy C bit_talk_charge_aura]
+[charaShake C 0.05 5 5 2.0]
+[wt 0.3]
+[wt 0.2]
+[se ad226]
+[seVolume ad226 0 0.6]
+[seStop ad626 1.0]
+[wt 1.0]
+[charaEffectStop C bit_talk_thunderbolt]
+
+[charaFace C 2]
+＠吉尔伽美什
+呜哇啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊[line 3]！！！！？
+[k]
+
+[messageOff]
+[charaMove C 0,-10 0.4]
+[charaFadeout C 0.4]
+[wt 0.3]
+[se ad144]
+[wait charaEffect C bit_talk_thunderbolt]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠玛修
+吉尔伽美什王[line 5]！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠尼禄·新娘
+怎么了！？　刚刚一道形似闪电的东西[r]带着明显的敌意从天而降击中了英雄王！？
+[k]
+
+＠吉尔伽美什
+咕，呜……噢噢……[r]轰炸竟然不是来自背后，而是来自头顶……
+[k]
+
+＠吉尔伽美什
+可究竟用了什么手段……？[r]竟然可以比占据了摩天大楼的本王站得还高……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ade350]
+[seVolume ade350 0 0]
+[seVolume ade350 2.0 0.4]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠玛修
+这声音究竟是……？[r]好像是从空中传来的……
+[k]
+
+＠D：？？？
+呵呵呵呵……呵呵呵呵呵……
+[k]
+
+＠D：？？？
+啊[line 3]哈哈哈哈！[r]晚上好，众多平凡的英灵们！
+[k]
+
+＠D：？？？
+是不是打扰到您娱乐了呢，[r]被凄惨打倒的地球金闪闪英雄王大人！
+[k]
+
+？1：（……咦，这声音是……？）
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠尼禄·新娘
+上面，[%1]！[r]看空中！
+[k]
+
+[messageOff]
+[seStop ade350 0.7]
+[wipeout rectangleStripUpToDown 0.4 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[scene 82600]
+[se ad14]
+[seVolume ad14 0 0]
+[seVolume ad14 0.7 0.7]
+[wt 0.3]
+[wipein rectangleStripDownToUp 0.4 1]
+[wait wipe]
+
+[wt 0.5]
+[se ade31]
+[seVolume ade31 0 0]
+[seVolume ade31 0.4 1.0]
+[wt 2.5]
+
+[seStop ad14 0.7]
+[wipeout rectangleStripDownToUp 0.4 1]
+[wait wipe]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[scene 64400]
+[wt 0.3]
+[wipein rectangleStripUpToDown 0.4 1]
+[wait wipe]
+
+＠玛修
+[line 3]什么？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠尼禄·新娘
+[line 3]啊？
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.3 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[scene 28302]
+[wt 0.1]
+[wipein rectangleStripDownToUp 0.3 1]
+[wait wipe]
+
+[wt 0.7]
+
+[charaPut E 1]
+[charaEffect E bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad1]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+＠？？？
+哎，测试测试。[r][#精神干涉:麦克风]调音情况如何？　合适吗？　OK，正合适！
+[k]
+
+＠D：？？？
+[line 3]咳咳。[r]仔细听好了，地球的生命们。
+[k]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠D：？？？
+我知道这有些突然，不过这座城市已经被我占领了。[r]你们的衣食住已全部落入我手。
+[k]
+
+＠D：？？？
+我乃苍辉银河的支配者，[r]自初始宇宙而来的金星女神。
+[k]
+
+＠D：？？？
+我的名字是太空伊什塔尔！
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.3 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[charaPut E 1200,1200]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[scene 64400]
+[wt 0.1]
+[wipein rectangleStripUpToDown 0.3 1]
+[wait wipe]
+
+＠玛修
+太空。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠尼禄·新娘
+伊什塔尔。
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.3 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaPut E 1]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+[scene 28302]
+[wt 0.1]
+[wipein rectangleStripDownToUp 0.3 1]
+[wait wipe]
+
+＠S伊什塔尔
+“决出这行星最强英灵[line 3]”
+[k]
+
+＠S伊什塔尔
+难道你们觉得我听到这种话会默不作声吗？
+[k]
+
+＠S伊什塔尔
+我无疑才是最强英灵。[r]现在我就要让你们知道这一点。
+[k]
+
+＠S伊什塔尔
+好了，去吧，迷你·马安娜！
+[k]
+
+＠S伊什塔尔
+作为压制地球的第一步，[r]先把这座城市彻底变成宝石吧！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.4]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+
+[effect bit_talk_fly_light 0,50]
+[se ade90]
+[seVolume ade90 0 0.2]
+[wt 0.4]
+[se ade351]
+[seVolume ade351 0 0]
+[seVolume ade351 1.5 0.3]
+[wt 2.5]
+[effect bit_talk_diremond_dust]
+[wt 1.0]
+
+[seStop ade351 0.7]
+[wipeout rectangleStripDownToUp 0.3 1]
+[wait wipe]
+[effectDestroy bit_talk_fly_light]
+[effectDestroy bit_talk_diremond_dust]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[scene 64400]
+[wt 0.1]
+[wipein rectangleStripUpToDown 0.3 1]
+[wait wipe]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠玛修
+理……理解速度有些跟不上，[r]陆续有小型宇宙飞船从巨大宇宙飞船中飞出！
+[k]
+
+＠玛修
+小型宇宙飞船正向纽约各处发射谜之光线[line 3][r]御主！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad213]
+[seVolume ad213 0 0]
+[seVolume ad213 1.0 0.2]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠尼禄·新娘
+危险，[%1]！
+[k]
+
+[messageOff]
+[charaMoveScale B 1.1 0.2]
+[charaMove B 0,10 0.2]
+[charaFadeout B 0.2]
+[wt 0.15]
+[se ad7]
+[shake 0.03 3 3 0.4]
+[wt 0.3]
+[seStop ad213 0.4]
+[wt 0.1]
+
+[wipeout rectangleStripRightToLeft 0.2 1]
+[wait wipe]
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.1]
+[se ad213]
+[seVolume ad213 0 0]
+[seVolume ad213 0.4 0.7]
+[wipein rectangleStripLeftToRight 0.2 1]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.1]
+[charaEffect B bit_talk_30]
+[wt 0.6]
+[seStop ad213 0.4]
+[se ad488]
+[charaEffectStop B bit_talk_30]
+[charaEffect B bit_talk_magical_pon]
+[wt 0.1]
+[charaFadeout B 0.1]
+[bgm BGM_EVENT_24 1.5 0.4]
+[wt 1.5]
+
+[charaEffect B bit_talk_blight_02]
+[se ad216]
+[wt 1.5]
+
+[charaEffect B bit_talk_blight_01]
+[charaAttack B normal 0,512 3.0]
+[wt 1.0]
+[wt 2.5]
+[charaEffectStop B bit_talk_blight_02]
+[charaEffectStop B bit_talk_blight_01]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+尼禄陛下……尼禄陛下变成宝石，[r]飞向了巨大宇宙飞船！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.3 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaPut E 1]
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+[scene 28302]
+[wt 0.1]
+[bgm BGM_EVENT_24 0.3 1.0]
+[wipein rectangleStripDownToUp 0.3 1]
+[wait wipe]
+
+＠S伊什塔尔
+呵呵。没错。[r]反抗者会被毫不留情地变成我的收藏品。
+[k]
+
+＠S伊什塔尔
+大会中，我悄悄地在这座城市里散布了女神粒子，[r]这里已经作为我的领地被登记在神殿中了。
+[k]
+
+＠S伊什塔尔
+模因污染已经完成。[r]其语言、嗜好、感性已经完全变成了我（的东西）。
+[k]
+
+＠S伊什塔尔
+美丽的东西会以美丽的形式成为我的东西。[r]丑陋的东西会以丑陋的形式成为我的东西。
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.3 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[charaPut E 1200,1200]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[scene 64400]
+[wt 0.1]
+[wipein rectangleStripUpToDown 0.3 1]
+[wait wipe]
+
+＠玛修
+啊，嗯。[r]呃……这是什么意思啊？
+[k]
+
+？1：就是说她全部都要。
+
+？！
+
+[charaFace A 7]
+＠玛修
+原来如此。[r]那她无疑就是伊什塔尔小姐没错了！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 0,-10]
+[charaShake C 0.04 3 3 0.4]
+[charaMove C 0,0 0.4]
+[wt 0.2]
+＠吉尔伽美什
+可恶……竟然是……太空伊什塔尔……！
+[k]
+
+＠吉尔伽美什
+本王并不想知道这是从哪儿来的无能女神，[r]搞偷袭还自称最强，真让人笑掉大牙！
+[k]
+
+＠吉尔伽美什
+给本王滚下来，伊什塔尔！[r]既然你自称最强，那就堂堂正正地一决胜负！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.3 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[charaPut E 1]
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+[scene 28302]
+[wt 0.1]
+[wipein rectangleStripDownToUp 0.3 1]
+[wait wipe]
+
+＠S伊什塔尔
+不会吧，中了马安娜的天罚炮竟然还能活着！？[r]既没变成宝石也没变成羊，这自我究竟有多强大啊。
+[k]
+
+[charaFace D 7]
+＠S伊什塔尔
+不过很不巧，身为女神的我[r]怎么可能特意去和下等人对决呢？
+[k]
+
+＠S伊什塔尔
+我只是个来地球观光的女神♡[r]想玩玩你们用来打发时间而已。
+[k]
+
+[charaFace D 6]
+＠S伊什塔尔
+但是……也对。[r]既然要玩，就在游戏中给你们一个机会吧。
+[k]
+
+＠S伊什塔尔
+你们的武斗大会还挺有意思的。[r]我也举办一次一样的吧。
+[k]
+
+
+＠S伊什塔尔
+只有在我运营的大会中获胜的人，[r]才可以获得一次与我对战的机会，作为对其功绩的奖赏。
+[k]
+
+＠S伊什塔尔
+如果我输了，我就会离开地球。[r]但如果没人能赢我，『御主』可就归我啦。
+[k]
+
+＠S伊什塔尔
+隐藏于宇宙古代神话中的传说的财宝『御主』。[r]就在这颗星球上吧？　我都知道。
+[k]
+
+[charaFace D 10]
+＠S伊什塔尔
+尽管我检索了世界各地也没有发现传说中的高能量体，
+[k]
+
+＠S伊什塔尔
+是你们整颗星球勾结一气把那个藏起来了吧？[r]乖乖交出来。
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.3 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[charaPut E 1200,1200]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[scene 64400]
+[wt 0.1]
+[wipein rectangleStripUpToDown 0.3 1]
+[wait wipe]
+
+＠玛修
+把御主……交出来？[r]可是……那个……
+[k]
+
+？1：要装作……若无其事……
+？2：很好。她还是老样子，又误会了什么。
+
+？！
+
+[charaFace A 3]
+＠玛修
+（说……说得对……[r]　要尽量避免说出『御主』这个词，）
+[k]
+
+[charaFace A 7]
+＠玛修
+您说也要举办相同的活动，[r]是指在宇宙飞船中战斗吗？
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.3 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaPut E 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[scene 28302]
+[wt 0.1]
+[wipein rectangleStripDownToUp 0.3 1]
+[wait wipe]
+
+＠S伊什塔尔
+不，游戏会在地面上进行。[r]利用现有的东西不是可以避免浪费嘛？
+[k]
+
+[charaFace D 1]
+＠S伊什塔尔
+英雄王准备的运营系统、员工……[r]就由我全部拿来利用吧。
+[k]
+
+＠吉尔伽美什
+什……什么……！[r]『全部』的意思难道还包括收入！？
+[k]
+
+＠S伊什塔尔
+当然啦☆　不管是商店收入、[#好色羊:杜木兹]，[r]还是作为优胜奖品的圣杯，全都会被我收入囊中。
+[k]
+
+＠S伊什塔尔
+这是因果报应，出来混迟早要还的。[r]对英雄王说声抱歉啦～☆
+[k]
+
+＠吉尔伽美什
+本王可没夺走过别人的收入！[r]只是扣押了别人的企划而已……
+[k]
+
+[charaFace D 5]
+＠S伊什塔尔
+好，宣告到此为止。[r]我是冷酷的女神，但不会做单方面侵略的事。
+[k]
+
+[charaFace D 6]
+＠S伊什塔尔
+若想夺回纽约，[r]就一路取胜来到我的跟前吧。
+[k]
+
+＠S伊什塔尔
+我很期待哦，地球的英灵们。
+[k]
+
+[charaFace D 10]
+＠S伊什塔尔
+一事归一事，你们还是要[r]乖乖把『御主』给我准备好！回见！
+[k]
+
+[messageOff]
+[charaFadeout D 0.4]
+[wt 0.3]
+[se ad1]
+[wt 0.1]
+[charaPut E 1200,1200]
+[charaEffectStop E bit_talk_10_LowLevel]
+[bgmStop BGM_EVENT_24 0.7]
+[wt 1.5]
+
+[wipeout rectangleStripDownToUp 0.5 1]
+[wait wipe]
+[scene 64400]
+[wt 0.4]
+[wipein rectangleStripUpToDown 0.5 1]
+[wait wipe]
+
+[wt 2.0]
+
+[fadeout black 1.5]
+[wait fade]
+
+[branch lblNotClear IsClear false]
+[scene 66700]
+[branch lblConf]
+[label lblNotClear]
+[scene 60300]
+[label lblConf]
+
+[wt 2.0]
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠吉尔伽美什
+可[line 3][r]可[line 3]
+[k]
+
+
+＠吉尔伽美什
+可恶的伊[line 2]什[line 3]塔[line 3]尔[line 3]！[messageShake 0.05 5 5 1.2][r]太空是什么啊，太空是什么[line 3]！
+[k]
+
+
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+[wt 0.4]
+[soundStopAll]
+[end]

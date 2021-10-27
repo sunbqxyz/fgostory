@@ -1,0 +1,752 @@
+
+＄03-00-05-13-2-1
+
+
+[soundStopAll]
+
+[charaSet A 8001410 1 玛修]
+[charaSet B 1098182100 1 尼莫教授]
+[charaSet C 1038000 1 伊阿宋]
+[charaSet D 6038002 1 夏洛特·科黛]
+[charaSet E 4039002 1 曼迪卡尔多]
+[charaSet F 5017000 1 美狄亚·Lily]
+
+[charaSet J 5009000 1 特效用dummy]
+
+
+[scene 84700]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[wipeout leftToRight 1.0 1.0]
+[wait wipe]
+
+[scene 85500]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[bgm BGM_EVENT_79 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+这里的内部构造与“神殿”一样呢……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠尼莫教授
+准确地说，[r]这里并不是作为“神殿”受祭拜的地方，
+[k]
+
+＠尼莫教授
+应该是……[r]忒俄斯·克利洛诺弥亚的补给装置吧。
+[k]
+
+＠尼莫教授
+内部装置也还在运作。
+[k]
+
+[charaFace B 3]
+＠尼莫教授
+……我们能够进入这里，[r]但为什么它们进不来呢？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+嗯。在进来的瞬间，[r]我感知到了某种魔力……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠伊阿宋
+……是美狄亚吧。
+[k]
+
+＠伊阿宋
+为了不让麻烦的家伙闯进来，[r]她似乎设下了结界。
+[k]
+
+＠伊阿宋
+不过她应该设定成只要是我[r]或者迦勒底的人来到就会解除。
+[k]
+
+？1：这是……信纸？
+？！
+
+[charaFace C 1]
+＠伊阿宋
+嗯。[r]……你们先出去回避一下。
+[k]
+
+＠伊阿宋
+我要阅读这封信。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠夏洛特·科黛
+知道了。[r]那各位，我们先出去吧！
+[k]
+
+[charaFace D 7]
+＠夏洛特·科黛
+走啦走啦，[r]走啦走啦走啦！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth A 4]
+[charaDepth D 5]
+
+[charaFace A 14]
+[charaFace D 7]
+[charaFadein A 0.1 150,0]
+[charaFadein D 0.1 -150,0]
+[wt 0.2]
+[se ad7]
+[se ad666]
+[charaMove D -100,0 0.4]
+[wt 0.1]
+[charaMove A 200,0 0.4]
+[wt 0.4]
+[seStop ad666 0.1]
+[wt 0.2]
+
+[se ad7]
+[se ad666]
+[charaMove D -50,0 0.4]
+[wt 0.1]
+[charaMove A 250,0 0.4]
+[wt 0.4]
+[seStop ad666 0.1]
+[wt 0.4]
+
+[charaTalk on]
+＠玛修
+啊，科黛小姐！[r]请等一下啦！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠曼迪卡尔多
+……没问题吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠伊阿宋
+没问题，完全没问题。[r]快点快点，你也赶紧出去。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠曼迪卡尔多
+……好。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_79 1.0]
+[se ad60]
+[wt 0.1]
+[charaMove E 50,0 0.4]
+[charaFadeout E 0.4]
+[wt 0.4]
+[seStop ad60 0.4]
+[wt 1.4]
+
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+＠伊阿宋
+好了……
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ade96]
+[wt 1.2]
+
+
+[se ad1]
+[charaScale F 1.1]
+[charaPut F 0,10]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadeTime F 0.1 0.8]
+[wt 1.4]
+
+[charaFace F 1]
+＠美狄亚·Lily
+你好！[r]请多指教！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 2]
+
+[charaPut F -256,10]
+[charaFace F 1]
+[charaFadeTime F 0.1 0.8]
+
+＠伊阿宋
+[f large]吓[messageShake 0.02 3 3 0.5]死我了！！
+[k]
+
+＠伊阿宋
+呜哇，[r]这是什么？　全息投影之类的吗？
+[k]
+
+
+[charaTalk F]
+[charaFace F 0]
+＠美狄亚·Lily
+我为这封信加了锁，[r]只能由伊阿宋大人阅览。
+[k]
+
+＠美狄亚·Lily
+你已经把外人都赶走了吧？
+[k]
+
+
+[charaTalk C]
+[charaFace C 5]
+＠伊阿宋
+是啊，赶走了赶走了。[r]怎么，是要抱怨吗？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_94 0.8]
+[wt 1.0]
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+＠美狄亚·Lily
+[line 3]那么，伊阿宋大人。
+[k]
+
+＠美狄亚·Lily
+我爱你。[r]我由衷爱着你的一切。
+[k]
+
+[charaFace F 1]
+＠美狄亚·Lily
+开玩笑啦，[r]这些话根本没必要说吧？
+[k]
+
+
+[charaTalk C]
+[charaFace C 4]
+＠伊阿宋
+好啦好啦，知道了知道了。
+[k]
+
+
+[charaTalk F]
+[charaFace F 0]
+＠美狄亚·Lily
+这封信我是在伊阿宋大人离队后写下的。
+[k]
+
+＠美狄亚·Lily
+……嗯，我想想。
+[k]
+
+[charaFace F 4]
+＠美狄亚·Lily
+当您看到这封信的时候，[r]我不是已经顺利抵达奥林波斯[line 3]
+[k]
+
+
+[charaTalk C]
+[charaFace C 10]
+＠伊阿宋
+就是已经死了吗？
+[k]
+
+
+[charaTalk F]
+[charaFace F 4]
+＠美狄亚·Lily
+就是已经死了吧。
+[k]
+
+[charaFace F 0]
+＠美狄亚·Lily
+无论如何，我都不会后悔。[r]恐怕赫拉克勒斯也一样。
+[k]
+
+[charaFace F 4]
+
+＠美狄亚·Lily
+若没有他的献身，我们……
+[k]
+
+[charaFace F 0]
+
+＠美狄亚·Lily
+不……每个人都为这场战斗奉献了全部，[r]自己、自己的武器，自己的意志。
+[k]
+
+＠美狄亚·Lily
+虽然还不清楚有多少人能抵达奥林波斯……
+[k]
+
+[charaFace F 1]
+＠美狄亚·Lily
+但为了拯救世界，[r]我会努力加油的。
+[k]
+
+＠美狄亚·Lily
+而伊阿宋大人。
+[k]
+
+[charaFace F 1]
+＠美狄亚·Lily
+我好歹也是打从心底里[r]相信伊阿宋大人的哦？
+[k]
+
+
+[charaTalk C]
+[charaFace C 13]
+＠伊阿宋
+你骗鬼啊。
+[k]
+
+
+[charaTalk F]
+[charaFace F 4]
+＠美狄亚·Lily
+不，我并不相信您在[r]女性问题上的花心部分……
+[k]
+
+[charaFace F 0]
+＠美狄亚·Lily
+我由衷相信的，[r]是身为英雄的伊阿宋大人。
+[k]
+
+
+[charaTalk C]
+[charaFace C 20]
+＠伊阿宋
+……哼。
+[k]
+
+
+[charaTalk F]
+[charaFace F 1]
+＠美狄亚·Lily
+因此我为伊阿宋大人[r]准备了一份非常棒的礼物！
+[k]
+
+
+[charaTalk C]
+[charaFace C 10]
+＠伊阿宋
+唔？
+[k]
+
+
+[charaTalk F]
+[charaFace F 1]
+＠美狄亚·Lily
+就是我美狄亚使尽浑身解数[r]制造出来的魔术礼装！
+[k]
+
+
+[charaTalk C]
+[charaFace C 0]
+＠伊阿宋
+哦，哦哦。
+[k]
+
+[charaFace C 6]
+＠伊阿宋
+……你在魔术方面确实具备[r]令人望尘莫及的可怕才能嘛。
+[k]
+
+[charaFace C 1]
+＠伊阿宋
+好吧，那我就收下了！
+[k]
+
+
+[charaTalk F]
+[charaFace F 0]
+＠美狄亚·Lily
+嗯，这是随信附上的护身符！[r]它的效果是[line 3]
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_11 1.0]
+[wait fade]
+
+
+[charaTalk off]
+[charaFace C 13]
+[wt 1.0]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk on]
+[charaTalk C]
+＠伊阿宋
+[f large]毫无用处！！
+[k]
+
+[charaFace C 9]
+＠伊阿宋
+怎么偏偏是这种蠢效果！[r]你倒是赋予一些更有用的魔术啊！
+[k]
+
+[charaFace C 8]
+＠伊阿宋
+可恶，有总比没有好吗……[r]不，真的比没有好吗……？
+[k]
+
+[charaTalk F]
+[charaFace F 4]
+＠美狄亚·Lily
+想必您会感到不满吧，[r]对不起。
+[k]
+
+＠美狄亚·Lily
+光是制作这个礼装，[r]我就已经费尽全力了……
+[k]
+
+[charaFace C 4]
+[charaTalk C]
+＠伊阿宋
+（……仔细看来，即便隔着全息投影，[r]　也能看出这家伙脸色很糟……）
+[k]
+
+[charaTalk F]
+[charaFace F 0]
+＠美狄亚·Lily
+对了，还有。
+[k]
+
+＠美狄亚·Lily
+我给您留下了接下来[r]各座岛屿的[#情报:数据]。
+[k]
+
+＠美狄亚·Lily
+肯定可以派上用处。
+[k]
+
+[charaTalk C]
+[charaFace C 4]
+＠伊阿宋
+啊，嗯。[r]这确实是最有用的。
+[k]
+
+＠伊阿宋
+我还担心如果没有该怎么办呢……
+[k]
+
+
+[charaTalk F]
+[charaFace F 1]
+＠美狄亚·Lily
+再见了。[r]我心爱的伊阿宋大人。
+[k]
+
+[charaFace F 0]
+＠美狄亚·Lily
+……还有，[r]但愿您的旅途充满祝福。
+[k]
+
+
+[charaTalk C]
+[charaFace C 6]
+＠伊阿宋
+呵。[r]祝福个屁啊。
+[k]
+
+＠伊阿宋
+这可是与神为敌，[r]谁会来祝福我啊。
+[k]
+
+
+[charaTalk F]
+[charaFace F 1]
+＠美狄亚·Lily
+因为我和赫拉克勒斯都会祝福您！
+[k]
+
+
+[charaTalk C]
+[charaFace C 20]
+＠伊阿宋
+……唔，既然这样……
+[k]
+
+
+[charaTalk F]
+[charaFace F 3]
+＠美狄亚·Lily
+啊，还有，那个……[r]唔……
+[k]
+
+
+＠美狄亚·Lily
+还要加上我对您的爱。[r]嘿～！
+[k]
+
+
+[messageOff]
+[wt 0.1]
+
+[charaFace C 14]
+[se ad30]
+[fowardEffect bit_talk_28 -256,0]
+[wt 2.4]
+
+
+[charaTalk C]
+＠伊阿宋
+……[r]……
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_7 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+
+[scene 84700]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠伊阿宋
+……唔。
+[k]
+
+？1：欢迎回来，伊阿宋。
+？！
+
+[charaFace C 1]
+＠伊阿宋
+啊，你们来得正好。[r]仔细打量我。
+[k]
+
+
+＠全员
+[charaTalk J]
+[FFFFFF]？[-]
+[k]
+
+[charaTalk C]
+[charaFace C 14]
+＠伊阿宋
+我身上没有被赋予什么诅咒吧？
+[k]
+
+＠伊阿宋
+其实最后我被扔了一颗特大号炸弹！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠曼迪卡尔多
+不，外观看起来没什么变化。
+[k]
+
+＠曼迪卡尔多
+不过我并不是Caster，[r]所以不是很清楚。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠尼莫教授
+根据我的分析，并没有什么变化。
+[k]
+
+？1：我看着也没什么……
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠伊阿宋
+是……是吗。[r]这样就好……
+[k]
+
+？2：美狄亚小姐就在你肩上！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠伊阿宋
+咿[messageShake 0.02 3 3 0.5]呀啊啊啊[line 3]！（惨叫。）
+[k]
+
+＠伊阿宋
+[%1]……你这家伙，[r]这种玩笑开不得啊！！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth F 1]
+[charaDepth C 2]
+
+[charaScale F 1.0]
+[charaPut F 200,0]
+[charaFace F 1]
+[charaFadeTime F 0.4 0.8]
+[wt 1.4]
+
+[charaFadeout F 0.4]
+[wt 0.8]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 21]
+＠伊阿宋
+真是的……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠曼迪卡尔多
+（我可……什么都没看见……！）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+？！
+
+＠伊阿宋
+先别管这个了，[r]下一个目的地确定了，小的们。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+这是怎么回事？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠伊阿宋
+美狄亚那家伙[r]给我留下了各座岛屿的情报哦。
+[k]
+
+[charaFace C 1]
+＠伊阿宋
+总而言之，我们要寻找同伴吧？[r]那接下来就去这座岛吧！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

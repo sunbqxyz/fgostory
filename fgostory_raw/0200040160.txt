@@ -1,0 +1,775 @@
+
+
+＄02-00-04-01-6-0
+[soundStopAll]
+
+[charaSet A 1098120500 1 霍普金斯]
+[charaSet B 98018100 1 船员]
+[charaSet C 1098120900 1 老年男性]
+[charaSet D 1098120400 1 卡特]
+[charaSet E 1098120700 1 中年男性（村民）]
+[charaSet F 25001000 1 阿比盖尔]
+[charaSet G 1098120100 1 提图芭]
+[imageSet H cut048_doll 1]
+
+[scene 49401]
+
+[fadein black 1.5]
+[wt 0.8]
+[se ad37]
+[seVolume ad37 0 0.1]
+[seVolume ad37 2.0 0.3]
+[wait fade]
+
+[wt 1.0]
+
+[se ad520]
+[wt 2.0]
+[seStop ad520 0.6]
+[wt 0.7]
+
+[se ade74]
+[seVolume ade74 0 0.1]
+[seVolume ade74 2.0 0.4]
+[wt 2.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.6]
+[seStop ade74 0.1]
+
+＠A：？？？
+…………
+[k]
+
+＠A：？？？
+……塞勒姆。[r]清教徒们开拓的殖民地啊。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠船员
+请等一下，这位老爷！
+[k]
+
+＠船员
+唉……总算成功入港了。[r]要在这里卸下的就只有老爷您的货物。
+[k]
+
+＠船员
+不过老爷您给的运费十分慷慨，[r]我们也并不介意啦！
+[k]
+
+＠船员
+只是经历了那么猛烈的暴风雨，[r]您感觉还好吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠A：？？？
+已经踏上了陆地。[r]人们居住的土地就是我的工作场地。
+[k]
+
+＠A：？？？
+只要是人的土地，就必定有罪的存在。[r]无一例外。哪怕[#神之乐园:伊甸]也一样。
+[k]
+
+[messageOff]
+[charaFadeout A 0.7]
+[se ad311]
+[wt 0.5]
+
+[fadeout black 2.0]
+[seStop ad37 1.0]
+[wt 0.5]
+[seStop ad311 1.5]
+[wait fade]
+[scene 49601]
+[wt 1.2]
+[se ad310]
+[wt 0.5]
+[seStop ad310 0.1]
+[wt 0.4]
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+
+＠C：村民
+卡特老师。[r]村里有人找你。
+[k]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠C：村民
+感觉现场火药味十足。[r]人们也都聚集起来了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠卡特
+[line 3]哦。[r]知道了，我这就过去。
+[k]
+
+＠卡特
+[&Mr.:Miss][%1]，[r]很抱歉，请允许我先告辞了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠村民
+法官先生。[r]您也过去吧。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.0]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[scene 49502]
+
+[charaSet A 1098121900 1 牧师]
+[charaSet B 1098121100 1 法官]
+[wt 0.5]
+
+[wipein rightToLeft 0.5 1]
+[se ad525]
+[wt 0.8]
+[se ad4]
+[seVolume ad4 0 0.1]
+[seVolume ad4 0.5 0.4]
+[wt 0.2]
+[seStop ad525 0.2]
+[wait wipe]
+
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+
+＠卡特
+这是在闹什么啊。
+[k]
+
+[seStop ad4 1.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_71 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠村民
+卡特先生，[r]你还真是干了件不得了的事啊。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠阿比盖尔
+舅父……[r]提图芭她……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠卡特
+阿比盖尔。[r]提图芭也在吗。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠提图芭
+……老……老爷……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠卡特
+是你把她们带来的？[r]出于什么理由？
+[k]
+
+[charaFace D 0]
+
+＠卡特
+……她是我家的佣人。[r]你这么肆意妄为可是会给我添麻烦的。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠村民
+……呜……[r]那么，你就给我好好听清楚。
+[k]
+
+＠村民
+我家女儿从今早起就觉得不舒服，[r]一直躺在床上。
+[k]
+
+＠村民
+今天早上卡特先生来访的时候，[r]还回答说是因昨晚的骚动累到了，有些疲倦，嗯。
+[k]
+
+＠村民
+我也觉得只要睡一觉就没问题了，[r]但我真是太天真了。
+[k]
+
+＠村民
+我女儿一会儿梦呓一会儿苦闷，就像患了热病。[r]我想让她镇静下来，但无论是面包还是水，她都不碰。
+[k]
+
+＠村民
+束手无策，只能将牧师请到家中。
+[k]
+
+＠村民
+结果我女儿反而更为痛苦了，[r]样子也变得很奇怪。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠卡特
+唔……怎么个奇怪法？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠村民
+……这……这个……那是……[r]牧师大人……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.2]
+
+＠牧师
+嗯，那个啊，没错……就像是……[r]被恶魔附身了一样……！
+[k]
+
+＠牧师
+发出怪声，还想掐住我的脖子。[r]用难以想象是孩子会有的力气！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠村民
+我们只好拼命按住她。[r]然后她就晕了过去，终于瘫倒了下来。
+[k]
+
+＠村民
+我让内人把弄脏的床单拿去换了。[r]结果[line 3]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad7]
+[charaFadein H 0.4 0,-180]
+[wt 0.7]
+
+[se ad4]
+[seVolume ad4 0 0.4]
+[wt 0.5]
+[seStop ad4 0.7]
+
+[wt 1.0]
+
+＠村民
+居然从床铺的稻草中发现了这个！[r]这来历不明的咒术道具！
+[k]
+
+
+[se ad519]
+[seVolume ad519 0 0.7]
+[wt 0.3]
+[seStop ad519 0.2]
+[wt 0.7]
+
+＠村民
+我从[#邻居家:普特南]的女儿那儿听说了。[r]这玩意是提图芭制作的！
+[k]
+
+
+[se ad4]
+[seVolume ad4 0 0.1]
+[seVolume ad4 0.3 0.4]
+
+＠村民们
+噢噢……
+[k]
+
+[seStop ad4 1.0]
+
+[charaFadeout H 0.2]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠法官
+多么可怕的木雕人偶啊……[r]……我要当作证据扣押。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠卡特
+…………
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth D 10]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace G 6]
+[charaFadein G 0.1 2]
+
+＠卡特
+……提图芭，他说得对吗？[r]这东西是你制作的吗？
+[k]
+
+[charaFace G 4]
+
+＠提图芭
+…………啊……老……老爷……
+[k]
+
+＠提图芭
+这个是……那个……
+[k]
+
+[charaSet A 98001000 1 玛修]
+
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠阿比盖尔
+…………不……不对！[r]这不是提图芭的错……！
+[k]
+
+＠阿比盖尔
+这是[#那孩子:安妮]擅自带走的……！
+[k]
+
+[se ad525]
+[seVolume ad525 0 0.4]
+[wt 0.7]
+[seStop ad525 0.3]
+[wt 0.5]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaSet C 6012001 1 桑松]
+[charaSet D 5001001 1 美狄亚]
+[charaSet F 1098120800 1 中年女性（村民）]
+[charaSet G 1098120900 1 老年男性]
+[charaSet H 1098120500 1 霍普金斯]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.4 1]
+
+＠玛修
+吵闹声都传到里面来了，[r]忍不住出来看看，这究竟是……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠桑松
+居然聚集了这么多村民。[r]被围在中心遭到盘问的女人……是提图芭吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠美狄亚
+………………
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠村民
+我以前就觉得她是个奇怪的家伙！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠村民
+多么可怕……啊啊，难道……
+[k]
+
+＠村民
+难道威廉姆斯会遭原住民杀害，[r]也是你干的好事吗？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠村民
+住口，别当着孩子面前说。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠村民
+你这[line 3]可恨的魔女！
+[k]
+
+
+[se ad54]
+[seVolume ad54 0 0.25]
+[wt 0.1]
+[seStop ad54 0.4]
+[wt 0.5]
+
+＠H：？？？
+这是异教咒术所使用的道具。[r]这个人有异端的嫌疑。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠法官
+…………！？
+[k]
+
+＠法官
+……你……你是谁。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.2]
+
+＠霍普金斯
+我的名字，[r]是玛窦·霍普金斯。
+[k]
+
+＠霍普金斯
+是刚从波士顿坐船抵达的。[r]从今晚起，前来这塞勒姆村赴任。
+[k]
+
+＠霍普金斯
+我被马萨诸塞州总督[r]任命为村子的主审法官。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠法官
+怎么如此唐突……！
+[k]
+
+[messageOff]
+[se ade96]
+[wt 1.4]
+
+＠法官
+这是？……噢噢……[r]确实是正式的任命书！
+[k]
+
+＠法官
+而且还是上级法官大人……[r]是……是属下失礼了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠霍普金斯
+无妨。毕竟是异常事态。
+[k]
+
+＠霍普金斯
+塞勒姆的各位居民。[r]请先恢复冷静。
+[k]
+
+＠霍普金斯
+夜晚是恶魔猖獗的时间。[r]不能被恐慌左右，导致判断失误。
+[k]
+
+＠霍普金斯
+我作为法官下令。[r]拘留这个奴隶，进行审问。
+[k]
+
+＠霍普金斯
+明天早上我会来听取情况。
+[k]
+
+？1：我可不能默不作声。
+？2：提图芭陷入危机了。
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠美狄亚
+[line 3]不行，[%1]。
+[k]
+
+＠美狄亚
+不，御主。[r]请等一下。现在不能干涉。
+[k]
+
+＠美狄亚
+当前请继续当个旁观者。[r][#不然连你也会被卷进去的]。
+[k]
+
+？1：……美狄亚？
+？2：这话是什么意思……？
+？！
+
+[charaSet B 1098120400 1 卡特]
+[charaSet C 1098120100 1 提图芭]
+[charaSet F 25001000 1 阿比盖尔]
+
+[charaFace D 4]
+
+＠美狄亚
+不明白吗……？[r][#已经开始了]哦。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠提图芭
+………………
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠霍普金斯
+看来是不打算反抗啊。[r]很好。
+[k]
+
+＠霍普金斯
+麻烦奴隶的所有者卡特氏[r]也跟着来一趟拘留所。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠卡特
+……明白了。我听你的。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠玛修
+卡特先生！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠卡特
+Miss玛修，[r]还有[&Mr.:Miss][%1]，
+[k]
+
+＠卡特
+很抱歉，麻烦你们带我外甥女回家。
+[k]
+
+＠卡特
+你们是值得信任的。[r]刚才的戏剧已经足以证明了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠霍普金斯
+…………
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠玛修
+阿比小姐……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠阿比盖尔
+……怎么会……
+[k]
+
+＠阿比盖尔
+啊啊……[r]……提图芭……
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_71 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

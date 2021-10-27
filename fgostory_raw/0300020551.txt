@@ -1,0 +1,375 @@
+
+
+＄03-00-02-05-5-1
+[soundStopAll]
+
+[charaSet A 2031000 1 火焰的好男儿]
+[charaSet B 8001410 1 玛修]
+[charaSet C 1098153600 1 格尔达]
+[charaSet D 1098153900 1 少年]
+[charaSet E 1098154100 1 少女]
+[charaSet F 1098153700 1 村里的大人_男]
+[charaSet G 1098153800 1 村里的大人_女]
+[charaSet H 8001400 1 玛修_护目镜]
+
+[scene 61800]
+
+[bgm BGM_EVENT_80]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.6]
+
+＠火焰的好男儿
+嘿呀！
+[k]
+
+[messageOff]
+[charaScale B 1.4]
+[charaEffect B bit_talk_rarrow01br 1 F]
+[charaPut B 1200,1200]
+[wt 0.3]
+[charaPut B -50,-100]
+[wt 0.3]
+[cueSe Battle bac423]
+
+[wt 1.5]
+
+＠火焰的好男儿
+吃我这招！
+[k]
+
+[messageOff]
+[charaEffect B bit_talk_rarrow01br 1 F]
+[charaPut B 1200,1200]
+[wt 0.4]
+[charaPut B -50,-100]
+[wt 0.3]
+[cueSe Battle bac423]
+
+[wt 1.5]
+[charaScale A 1.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠火焰的好男儿
+嘿[line 18]呀！[r][line 3]贯穿！　粉碎！　硬推过去！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaEffect B bit_talk_rarrow01br 1 F]
+[charaPut B 1200,1200]
+[wt 0.4]
+[charaPut B -50,-100]
+[wt 0.3]
+[cueSe Battle bac422]
+
+[wt 2.0]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠H：玛修
+上空的御使群中被打出了一个大空档！[r]然后[line 3]御使们全都散开了！
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+[charaScale B 1.0]
+[charaEffectStop B bit_talk_rarrow01br]
+[charaFadeout H 0.1]
+[scene 45810]
+[wt 0.1]
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+＠御使们
+……状况恶化。[r]……无法理解。
+[k]
+
+＠御使们
+……他并没有无穷无尽的魔力。[r]经过了如此大规模的连续炮击，应该[line 3]
+[k]
+
+＠御使们
+残存魔力早就耗尽了吧，为何，还能行动。[r]亚从者也是，为何能动，为何能战斗。
+[k]
+
+＠御使们
+无法理解，无法理解。[r]无法判断继续战斗是否会造成损耗，因此，
+[k]
+
+＠御使们
+我等将返回，请示神的判断。[r]返回吧，返回吧。
+[k]
+
+[messageOff]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[cueSe Battle bac109]
+[wt 0.5]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[cueSe Battle bac109]
+[wt 0.5]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[cueSe Battle bac109]
+
+[wt 2.0]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+[scene 61800]
+[charaTalk depthOff]
+[charaDepth H 2]
+[charaDepth B 1]
+[charaTalk off]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[wt 0.1]
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+＠玛修
+…………全部个体，似乎都已脱离附近领域。[r]魔力反应消失了。
+[k]
+
+[bgmStop BGM_EVENT_80 0.5]
+
+[messageOff]
+[wt 1.0]
+[se ade18]
+[seVolume ade18 0.0 0.5]
+[wt 0.5]
+[seStop ade18 0.8]
+[wt 1.5]
+
+[charaFadeout H 0.4]
+[wt 0.2]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+
+[wt 1.0]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaTalk B]
+[charaFace B 15]
+
+[bgm BGM_EVENT_77]
+
+＠玛修
+战……战斗[line 3]结束，前……辈……
+[k]
+
+
+＠玛修
+……………………呼，哈啊，哈啊……哈……[charaFace B 8][r]又……
+[k]
+
+＠玛修
+……我们又乱来了呢。[r]肯定会被达·芬奇亲骂的[line 3]
+[k]
+
+？1：这是逃不掉的，做好思想准备吧。
+？2：村落的人们呢……？
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠格尔达
+哇，啊……[r]看见了……好几次……闪光的，好厉害的东西……
+[k]
+
+＠格尔达
+好……厉害……[r]大叔……
+[k]
+
+[charaFace C 5]
+
+＠格尔达
+我……吓了，一跳呢[line 3]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[wt 0.5]
+
+[messageOff]
+[charaTalk off]
+
+[charaFace G 0]
+[charaFadein G 0.1 0]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+
+＠大人们
+……………………？
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaFace E 0]
+[charaFadein E 0.1 0]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+
+＠孩子们
+哎？　哎？？？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[se ad60]
+[seVolume ad60 0 0.1]
+[seVolume ad60 0.5 1.0]
+[wt 1.0]
+[charaTalk on]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.4 1]
+[wt 0.5]
+[seStop ad60 0.1]
+
+＠火焰的好男儿
+哈哈。干得漂亮，[&少年少女:小姐们]！
+[k]
+
+＠火焰的好男儿
+看似一副精疲力竭的样子，[r]但你们的全部力量可不只如此吧！
+[k]
+
+＠火焰的好男儿
+尽管不能一上来就封你做元帅，[r]但给你颁一枚勋章还是可以的，[&小子:小姑娘]！
+[k]
+
+[messageOff]
+[charaFace A 3]
+
+[se ad660]
+[wt 0.2]
+[shake 0.05 4 3 0.2]
+[wt 0.3]
+[shake 0.05 4 3 0.2]
+
+[wt 0.3]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠玛修
+那……那……那个！[r]能够得到您的帮助，我们真的……真的感激不尽。
+[k]
+
+＠玛修
+但能否请您不要这么用力地拍前辈的背……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠火焰的好男儿
+噢。这样啊？[r]那真是失礼啦，这算是现在我的一个坏毛病。抱歉！
+[k]
+
+？1：（剧烈咳嗽）。
+
+？！
+
+[charaFace A 0]
+
+＠火焰的好男儿
+抱歉抱歉。[r]没事了没事了，要我帮你捋捋背吗。不，没问题了吧？
+[k]
+
+？1：（边咳嗽）你是[line 3]
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_77 2.0]
+[wt 0.8]
+[charaFace A 6]
+[wt 0.4]
+
+＠火焰的好男儿
+噢，来自泛人类史的迦勒底[#御主:Maitre]！[r][line 3]这么说来我还没做自我介绍呢！
+[k]
+
+[messageOff]
+[cueSe Battle bac375]
+[wt 1.0]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaFace A 2]
+
+＠火焰的好男儿
+那就听清楚了！[r]人民啊，你们的愿望终将在天空架起彩虹！
+[k]
+
+＠火焰的好男儿
+那是因为你们有我在。[r]无论是[#异闻带:Lostbelt]还是什么地方，欧洲万民都由我来守护！
+[k]
+
+＠火焰的好男儿
+正是如此！　这是因为！
+[k]
+
+[messageOff]
+[charaFace A 10]
+[wt 1.0]
+
+[charaFace A 7]
+
+＠火焰的好男儿
+我是Archer，拿破仑。[r]是可能性的男人，释放彩虹的男人。是北欧唯一的[line 3]人理的英雄！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

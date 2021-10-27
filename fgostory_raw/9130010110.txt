@@ -1,0 +1,95 @@
+＄91-30-01-01-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 20800 0]
+[charaSet A 8001001 1 玛修]
+[charaSet B 98003000 2 Dr.罗曼]
+[charaSet C 98002000 2 芙芙]
+[charaSet D 3001001 0 库·丘林]
+[charaFace A 6]
+[charaFadein A 0]
+[fadein black 1]
+[wait fade]
+＠玛修
+森林里出现了野猪魔物……吗？
+[k]
+
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr.罗曼
+嗯，好像最近确实有人在这附近的森林里看到过。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFadeout A 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+＠库·丘林
+于是就找我出马吗？[r]我可不是什么猎人啊。
+[k]
+
+[charaFace D 5]
+＠库·丘林
+还有更适合这工作的家伙吧。[r]比如芬恩那边的首席之类的，你该不会不认识吧？
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 4]
+＠Dr.罗曼
+不，他估计不会高兴的，野猪……[r]在为数众多的英雄传说中，他最深的心理阴影……
+[k]
+
+？1：那是说迪尔[line 2]
+
+？2：那就让阿塔[line 2]
+
+？！
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 7]
+[charaFadein A 0.1 2]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+＠玛修
+暂停，前辈。[r]每个人都有不擅长的事。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadein C 0.1 2]
+＠芙芙
+芙呜……
+[k]
+
+[charaFace D 5]
+＠库·丘林
+真拿你们没办法……[r]好吧，反正[#这家伙:Gae Bolg]也闲得快钝了。
+[k]
+
+[se ad58]
+[bgmStop BGM_EVENT_2 0.5]
+[bgm BGM_EVENT_3 0]
+[wt 2]
+[charaFace D 1]
+＠库·丘林
+哎哟，刚说完就出现了啊。真没耐性。
+[k]
+
+[seStop ad58 2]
+[charaFadeout C 0.1]
+[charaFace A 2]
+[charaFadein A 0.1 2]
+＠玛修
+这不是野猪，是离群的人工生命体。[r]御主，准备战斗……！
+[k]
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

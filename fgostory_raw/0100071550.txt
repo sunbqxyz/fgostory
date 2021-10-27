@@ -1,0 +1,604 @@
+
+
+
+＄01-00-07-15-5-0
+[soundStopAll]
+[charaSet A 98106200 1 梅林]
+[charaSet B 8001002 1 玛修]
+[charaSet C 2020001 1 伊什塔尔]
+[charaSet D 98003000 1 Dr.罗曼]
+[charaSet F 3027001 1 安娜]
+[charaSet G 98106900 1 戈耳工]
+
+
+[bgm BGM_EVENT_5 0.1]
+[scene 32610]
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.7]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[scene 32500]
+[wt 0.1]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+
+[wt 0.7]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+
+＠玛修
+这就是女神戈耳工的神殿……[r]整面墙上都布满了像茧一样的东西……
+[k]
+
+＠玛修
+里面……好像有什么影子……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+
+＠安娜
+…………
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠梅林
+还是不要看为好。[r]那可不是什么令人愉快的东西。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠玛修
+等等[line 3]请等一下！[r]这是……这……影子是[line 3]！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠伊什塔尔
+……要杀了戈耳工。[r]虽然我也没资格评论其他女神[line 3]
+[k]
+
+＠伊什塔尔
+但这太过分了。为了向人类复仇，[r]反而追求比人类更强的生产力，真是本末倒置。
+[k]
+
+？1：……我们走吧，玛修。
+？2：……去找戈耳工。
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+
+＠玛修
+但是，但是……！
+[k]
+
+＠玛修
+他们都活着！　就算发生了改变，[r]但他们，大家都还活着……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[se ad13]
+[charaTalk D]
+[communicationChara 98003003 1 5 0 5]
+[wt 0.3]
+
+＠Dr.罗曼
+……玛修、[%1]，抓紧时间。
+[k]
+
+＠Dr.罗曼
+金固脱离战线了，[r]他正在高速向这边赶来。
+[k]
+
+＠Dr.罗曼
+照这样下去，会与戈耳工和金固两者同时为敌。[r]那样就没胜算了吧。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠安娜
+[line 3]我来带路。[r]我知道戈耳工的寝室。
+[k]
+
+＠安娜
+……对不起，玛修。[r]但我还是要拜托你。
+[k]
+
+＠安娜
+现在是战斗的时候。为了打倒戈耳工，[r]请用你的力量，助我一臂之力
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout F 0.1]
+[scene 32400]
+[wt 4.0]
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.5]
+
+？1：这里就是……鲜血神殿的最深处……
+？2：彷佛在生物的肚子里……
+
+？！
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠梅林
+她在。[r]那长长的尾巴卷曲环绕于这洞穴的墙边。
+[k]
+
+[charaFace A 2]
+＠梅林
+魔兽之母，提亚马特神。[r]不，是复合神性戈耳工！
+[k]
+
+＠梅林
+你的神性已经坠入谷底了！[r]该认命露面啦！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[messageOff]
+
+
+[se ad14]
+[shake 0.05 2 4 2.0]
+[wt 1.0]
+[charaScale G 1.01]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.7 0,-50]
+[charaMove G 0,0 0.4]
+[seStop ad14 1.0]
+
+＠戈耳工
+……还当是什么呢。[r]这不是我曾经放过的蝼蚁们吗。
+[k]
+
+＠戈耳工
+真吵闹，人类啊。[r]明知这里是提亚马特的寝室，还敢如此撒野？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+
+＠玛修
+……！[r]就是你[line 3]就是你，做出那种事……！
+[k]
+
+[charaFace B 18]
+＠玛修
+为什么，女神戈耳工！[r]你说了要向人类复仇！
+[k]
+
+＠玛修
+要成为土地被夺走的野兽们的女神！[r]但是，这会导致那种行为吗！？
+[k]
+
+[charaFace B 7]
+＠玛修
+若你与人类战斗、征服土地、建立王国的话，[r]我们没有否定你的权利。
+[k]
+
+[charaFace B 19]
+＠玛修
+但那种混合的作法[line 3][r]那样一来，无论哪边……无论哪边都无药可救！
+[k]
+
+[charaFace B 18]
+＠玛修
+你到底，想向什么复仇！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+
+＠戈耳工
+我还以为你要说什么。[r]竟然不明白复仇是不分手段，也不存在结果的吗？
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+[wt 1.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠戈耳工
+无论是给予救赎，还是付出代价……[r]都是些还能“站起来”的人会思考的事。
+[k]
+
+＠戈耳工
+而所有一切都被夺走的人所追求的，[r]只有更为凄惨的赎罪。
+[k]
+
+＠戈耳工
+就算夺回财富、夺回土地，又能怎样。[r]我们已经“什么都没有”了。
+[k]
+
+[charaFace G 2]
+＠戈耳工
+所爱之物已经全部从手中滑落。[r]一路守护而来的事物已经全部从地表上消逝了。
+[k]
+
+＠戈耳工
+就连我自己，也早就从这世上燃烧殆尽了。
+[k]
+
+＠戈耳工
+现在我已经毫无所求。[r]剩下的只有对你们的复仇心。
+[k]
+
+＠戈耳工
+杀尽一切，踏平万物，[r]将这世界赶尽杀绝，也将自己杀死。
+[k]
+
+[charaFace G 0]
+＠戈耳工
+这就是复仇者。[r]这就是我所追求的东西。
+[k]
+
+[charaFace G 2]
+＠戈耳工
+毁灭乌鲁克。毁灭人类。[r][#我这份强烈的憎恨，就是被你们赐予的]。
+[k]
+
+＠戈耳工
+这个小姑娘看来并不懂人世间的丑陋。[r]平时的生活一定非常幸福吧。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+
+[charaFace B 8]
+＠玛修
+这……我……确实……[r]是在备受眷顾的环境下……成长起来的……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠戈耳工
+我和那种女孩无话可说。但[%1]啊。[r]你应该能明白吧？
+[k]
+
+＠戈耳工
+我的创造主。创造复仇者的人类之一啊。[r]如果你觉得我的话语尚有道理，那就点头吧。
+[k]
+
+＠戈耳工
+若愿意服从我的意思，[r]我会把你当御主来饲养。
+[k]
+
+＠戈耳工
+不是什么坏事吧？[r]只要这个时代消失，人类的世界就会终结。
+[k]
+
+＠戈耳工
+不，是已经终结了吧？
+[k]
+
+＠戈耳工
+你早就是最后的人类[line 3][r]没理由为这个时代的人类战斗吧。
+[k]
+
+＠戈耳工
+哈哈哈，正可谓女神的心血来潮！
+[k]
+
+＠戈耳工
+何不在毁灭一切之后，[r]将一只人类流放到无人的荒野上去呢！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠玛修
+前辈……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠安娜
+…………
+[k]
+
+[bgmStop BGM_EVENT_5 1.0]
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 1.0]
+
+？1：你的仇恨根本没有道理。
+？2：我完全不明白你在说些什么。
+
+？！
+
+[charaFace G 2]
+
+＠戈耳工
+[line 6]什么？
+[k]
+
+[charaFadeout G 0.1]
+[bgm BGM_EVENT_24 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠玛修
+对，说得没错，御主！[r]对女神戈耳工的想法，我没有任何共鸣！
+[k]
+
+[charaFace B 7]
+＠玛修
+就算你是人类孕育出来的存在，[r]就算那复仇有正当的权利[line 3]
+[k]
+
+＠玛修
+我也不会认同你！[r]你那姿态就是你内心的写照！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠戈耳工
+[line 6]。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[messageOff]
+[se ad14]
+[shake 0.05 2 4 1.5]
+[wt 1.5]
+[seStop ad14 1.0]
+
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.1 1]
+
+＠伊什塔尔
+哈！　连句讽刺都说不出来了，[r]辩论彻底输了呢，戈耳工！
+[k]
+
+＠伊什塔尔
+你只不过是借圣杯之力才成为女神的冒牌货[line 3][r]想自称提亚马特神，你还早一千年啦！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠戈耳工
+……不靠人类的容器就无法现界的小丫头。[r]竟敢污蔑我是提亚马特神的冒牌货……？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠伊什塔尔
+当然啦。就算获得了百兽母胎，[r]你也远不及提亚马特神。
+[k]
+
+＠伊什塔尔
+再说了，母亲产魔兽并不需要其他的生物。[r]那个人凭自己就能创造世界。
+[k]
+
+＠伊什塔尔
+为了复仇，居然会利用复仇对象什么的，[r]她才不是会做出这种半吊子行为的神啊。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+
+＠安娜
+……伊什塔尔说得没错。
+[k]
+
+＠安娜
+戈耳工。你并不是什么提亚马特神。[r]是连自己的模样都看不到的普通怪物而已。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠戈耳工
+[line 6]你。[r]你是[line 3]什么，这股寒气是[line 3]
+[k]
+
+＠戈耳工
+全身都在颤抖。复合神性维持不住了。[r]理性……理性仿佛快要[#回来:发疯]了……！
+[k]
+
+＠戈耳工
+这是怎么回事，金固！[r]金固，你在哪里……！
+[k]
+
+＠戈耳工
+那个从者是什么！[r]我从未见过那么丑陋的从者！
+[k]
+
+＠戈耳工
+把她带走，不要让那种东西进入我的视野！
+[k]
+
+＠戈耳工
+谁都可以，杀了她！[r]把那头怪物从这座神殿里排除出去……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠安娜
+……果然。[r]你看不到我啊，戈耳工。
+[k]
+
+＠安娜
+……如果，你还愿意看我的话。[r]也许还有一些……挽救的机会。
+[k]
+
+？1：……安娜。
+？2：……真的可以吗，美杜莎。
+
+？！
+
+[charaFace F 0]
+＠安娜
+……嗯。[r]我自始至终都在这样告诫自己。
+[k]
+
+＠安娜
+我不能活下去。[r]不能待在这里。不能笑。
+[k]
+
+＠安娜
+……但是，大家都反对。
+[k]
+
+＠安娜
+我想活下去，[r]想待在这里，想笑。
+[k]
+
+＠安娜
+其结果就是她，也是我。
+[k]
+
+＠安娜
+……谢谢你让我意识到这点，[r][%1]。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠梅林
+是嘛。那已经足够了吗，安娜？[r]需要解放你压抑至今的神性吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠安娜
+嗯，我允许了，梅林！[r]将那份答案，给予听信了你的谗言的我吧！
+[k]
+
+＠安娜
+[%1]、玛修！　请助我一臂之力！[r]我会用我的魔眼抵消她的魔眼！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠戈耳工
+不认识……不认识，不认识，不认识！[r]我不认识你这种家伙！
+[k]
+
+＠戈耳工
+去死，去死吧，怪物！[r]不要用那副肤浅的容貌出现在我的面前……！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_24 0.5]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

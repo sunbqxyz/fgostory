@@ -1,0 +1,129 @@
+
+＄94-00-98-89-1-0
+
+[charaSet A 6001001 1 佐佐木小次郎]
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+
+[scene 10310]
+
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠佐佐木小次郎
+佐佐木小次郎应召唤前来。[r]有何贵干呢，[%1]阁下。
+[k]
+
+[charaFace A 1]
+＠佐佐木小次郎
+呵。这样装傻未免太不知趣了。[r]从那犹如[&蜻蜓:兔子]般的脚步，已能推测出详情。
+[k]
+
+＠佐佐木小次郎
+这个时期，向感情深厚的对象赠送礼物的风俗[r]十分兴盛。人们称之为情人节。
+[k]
+
+＠佐佐木小次郎
+哈哈哈。别看在下这样，其实在下当从者[r]也已经有些时日了。还是比较了解世俗情况的。
+[k]
+
+＠佐佐木小次郎
+既然如此，那在下自然愿意为您排忧解难。[r]所以您究竟打算送哪位从者巧克力呢？
+[k]
+
+＠佐佐木小次郎
+果然是那位吗？[r]身技流丽犹如闪耀星辰，水灵灵的芬[line 3]
+[k]
+
+？1：不，是佐佐木。
+？2：不，是小次郎。
+
+？！
+
+[charaFace A 3]
+＠佐佐木小次郎
+[line 3]什么。
+[k]
+
+＠佐佐木小次郎
+……看来是在下太造次了，十分抱歉。[r]无聊的猜忌反而自取其辱，哎呀呀[line 3]
+[k]
+
+[charaFace A 0]
+＠佐佐木小次郎
+嘴上说什么风流，实际修行还远远不够呢。[r]那在下就高兴地收下了。
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[charaFace A 1]
+＠佐佐木小次郎
+收下了。本打算将这作为胜利的证明，[r]向其他英灵们夸耀的，看来还是自重为好。
+[k]
+
+[charaFace A 0]
+＠佐佐木小次郎
+那么您之后还有时间吗，[%1]？
+[k]
+
+＠佐佐木小次郎
+在下并不是个富有的男人，因此没什么可以回报的东西。
+[k]
+
+＠佐佐木小次郎
+然而这样下去只会心生愧疚，[r]令在下的剑迟钝。
+[k]
+
+＠佐佐木小次郎
+若说能做到的回礼，在下只想到一个可能性。[r]希望您能为贫穷剑士竭尽全力的虚荣赏点光。
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[equipSet B 9805930 1]
+[wait equipSet B]
+[charaFace B 0]
+[charaFadein B 0.5 0,-70]
+[wt 2.0]
+[charaFadeout B 0.4]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+？1：当然，我很荣幸！
+？2：茶会！　是茶会吧！
+
+？！
+
+
+[charaFace A 1]
+
+[wt 0.5]
+
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]

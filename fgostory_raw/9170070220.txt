@@ -1,0 +1,241 @@
+
+＄91-70-07-02-2-0
+[charaSet A 7007001 1 弗拉德三世]
+[charaSet B 99502600 1 玛修]
+[charaSet C 98021000 1 男性]
+[charaSet D 98021100 1 女性]
+[charaSet E 98006200 1 魔物]
+[charaSet F 98006100 1 魔物2]
+
+[scene 10952]
+[fadein black 1.5]
+[wait fade]
+
+
+[se ad42]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaSpecialEffect E enemyErasure 1 2.0]
+[wt 2.4]
+[charaPut E 0,-10000]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[bgm BGM_EVENT_2 0.1]
+
+＠弗拉德三世
+云消雾散了，不值一提。
+[k]
+
+[charaFace A 4]
+＠弗拉德三世
+不过，尽管特异点已然消失，[r]却依然出现这等幽灵骚动……
+[k]
+
+＠弗拉德三世
+真不愧是魔都伦敦。
+[k]
+
+＠女性
+那……那个……[r]非常……感谢。
+[k]
+
+？1：回去时路上小心点哦。
+？！
+
+＠女性
+非常感谢……！
+[k]
+
+[charaFace A 2]
+[bgmStop BGM_EVENT_2 0.7]
+
+＠弗拉德三世
+[line 2]等一下。
+[k]
+
+＠女性
+啊……嗯？
+[k]
+
+
+[bgm BGM_EVENT_1 0.1]
+[charaFace A 0]
+
+＠弗拉德三世
+余乃弗拉德三世。[r]将余的名字烙印在心中，今后健康地生活下去吧。
+[k]
+
+＠弗拉德三世
+另外听好了。
+[k]
+
+＠弗拉德三世
+余虽然会运用一些特殊的技能，[r]但这和名为吸血鬼的存在毫无关系。
+[k]
+
+[bgmStop BGM_EVENT_1 0.7]
+[charaFace A 2]
+＠弗拉德三世
+明白了吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaScale A 1.2]
+[charaFadein A 0.1 1]
+[bgm BGM_EVENT_7 0.1]
+＠弗拉德三世
+[f large]明白了吗？
+[k]
+
+
+＠女性
+嗯，是！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.0]
+[se ad59]
+[seVolume ad59 2.0 0.1]
+[wt 2.0]
+[seStop ad59 0.1]
+[charaFadeout A 0.1]
+[wt 0.4]
+[charaScale A 1.0]
+[charaTalk A]
+[charaFadein A 0.1 1]
+[charaFace A 1]
+＠弗拉德三世
+……唔嗯。这样一来，[r]至少她就不会认为余是吸血鬼了。
+[k]
+
+[bgm BGM_EVENT_5 0.1]
+[charaFace A 0]
+＠弗拉德三世
+好了，继续吧。[r]玛修·基列莱特，发现了什么吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 7]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+
+＠玛修
+啊，是的……在伦敦的北侧，[r]发现了酷似上次恶魔的反应。
+[k]
+
+＠玛修
+只不过，和上次反应相比略显微弱。
+[k]
+
+＠玛修
+……这是我的推测，恐怕只是有名无实的恶魔……[r]是魔兽的可能性比较高。
+[k]
+
+＠玛修
+或许是受了残留魔雾的影响才出现的吧。
+[k]
+
+[bgmStop BGM_EVENT_5 1.5]
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[scene 10912]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠弗拉德三世
+若非如此。[r]就是被[#某种魔术的存在]召唤出来的吧。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.4]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.4]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[se ad23]
+[wt 2.0]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 6]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+
+＠玛修
+这[line 3]难道是某种召唤阵。
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+
+
+＠男性
+怪物！[r]怪物出现了！
+[k]
+
+＠男性
+赶快去避难！[r]喂，你们也快点……！
+[k]
+
+＠男性
+那一定是恶魔！
+[k]
+
+[messageOff]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[se ad23]
+[wt 2.0]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠弗拉德三世
+哦。你说这是恶魔？[r]可笑，简直和疯狂的野兽没什么区别。
+[k]
+
+＠男性
+喂……喂，我说你！？
+[k]
+
+[charaFace A 2]
+
+＠弗拉德三世
+余会将你碾得粉碎，正如字面意思！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

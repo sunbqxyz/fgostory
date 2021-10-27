@@ -1,0 +1,425 @@
+
+＄02-00-01-04-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[charaSet A 99502600 1 玛修]
+[charaSet C 98111500 1 达·芬奇]
+[charaSet E 98111500 1 通讯用杂音]
+[charaSet F 98109400 1 阿尔托莉雅·Alter]
+[charaSet G 98102900 1 芙芙]
+[charaSet H 98109800 1 卡瓦斯二世]
+[charaScale H 0.85]
+
+[scene 38600]
+[fadein black 2.0]
+[wait fade]
+
+[charaPut E 1]
+[charaEffect E bit_talk_10_LowLevel]
+[se ad13]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0 1]
+＠玛修
+早上好，前辈。[r]还睡得好……[charaFace A 12]好像不太好吧。
+[k]
+
+？1：背好痛……
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0 0,-90]
+＠达·芬奇
+毕竟是水泥地板嘛，在所难免的。
+[k]
+
+[charaFace C 0]
+＠达·芬奇
+为了以防万一，我在你行李里放了[r]达·芬奇亲特制湿敷膏，拿去用吧。
+[k]
+
+？2：肌肉……
+
+[charaFace A 1]
+＠玛修
+没关系啦，前辈。[r]等你回来以后，我会好好为你按摩的！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0 0,-90]
+＠达·芬奇
+哎。
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+[charaPut E 1200,1200]
+[charaEffectStop E bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0]
+[charaFace H 1]
+[charaFadein H 0.1 2]
+＠阿尔托莉雅·Alter
+趴下。
+[k]
+
+[charaTalk H]
+[se ad316]
+[wt 1.0]
+
+＠阿尔托莉雅·Alter
+伸手。
+[k]
+
+[charaTalk H]
+[se ad316]
+[wt 1.0]
+
+＠阿尔托莉雅·Alter
+好！
+[k]
+
+[charaTalk H]
+[se ad316]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[charaFadeout H 0.1]
+[wt 0.2]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 1]
+＠阿尔托莉雅·Alter
+呼，卡瓦斯Ⅱ世今天也状态绝佳。
+[k]
+
+＠阿尔托莉雅·Alter
+御主，早饭的汉堡包吃完了吗？[r]那我们就出发吧。前往新宿站。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.7]
+[wipeout rightToLeft 0.7 1]
+[wait wipe]
+[charaFadeout F 0.1]
+[scene 38300]
+[wt 0.7]
+[wipein leftToRight 0.7 1]
+[wait wipe]
+[bgm BGM_EVENT_5 0.1]
+
+[wt 0.2]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.4 1]
+＠阿尔托莉雅·Alter
+……为什么用那么难以置信的眼神。[r]啊，你不知道吗？
+[k]
+
+[charaFace F 0]
+＠阿尔托莉雅·Alter
+这新宿始终处于夜晚。[r]白昼的炫目早就被所有人所遗忘了。
+[k]
+
+＠阿尔托莉雅·Alter
+好了，那去新宿站吧……[r]或许你也会为那个而感到吃惊的。
+[k]
+
+[charaFace F 5]
+＠阿尔托莉雅·Alter
+卡瓦斯Ⅱ世负责看家，[r]这次可不准跑出去了哦？
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+[se ad316]
+[wt 1.0]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.7]
+[wipeout rightToLeft 0.7 1]
+[wait wipe]
+[charaFadeout H 0.1]
+[scene 21520]
+[wt 0.7]
+[wipein leftToRight 0.7 1]
+[wait wipe]
+
+[bgm BGM_EVENT_1 0.1]
+
+[wt 1.0]
+
+？1：这是迷宫！？
+？2：这是哪儿？
+？！
+
+[charaPut E 1]
+[charaEffect E bit_talk_10_LowLevel]
+[se ad13]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0 1]
+＠玛修
+原来如此，新宿站还真是个大迷宫呢……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_1 0.7]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0 0,-90]
+＠达·芬奇
+不对不对。
+[k]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaFace C 4]
+＠达·芬奇
+……这究竟是怎么一回事？
+[k]
+
+[charaFadeout C 0.1]
+[charaPut E 1200,1200]
+[charaEffectStop E bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠阿尔托莉雅·Alter
+谁知道呢。不知是哪个从者使用了这种力量，[r]或是逐渐受到“新宿”影响导致的下场[line 3]。
+[k]
+
+[charaFace F 0]
+＠阿尔托莉雅·Alter
+千万小心。虽然是新宿站，但受到这种变质的影响，[r]出口变得比原来少了。
+[k]
+
+＠阿尔托莉雅·Alter
+一旦迷路，不是开玩笑，可能会平白死在站内。[r]好了，前进吧。
+[k]
+
+[messageOff]
+[se ad311]
+[wt 0.5]
+
+[charaFadeout F 1.0]
+[seStop ad311 4.0]
+[fadeout black 1.5]
+[wait fade]
+
+
+[wt 2.25]
+[charaTalk C]
+[se bac182]
+[seVolume bac182 0 0.4]
+[wt 1.75]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+＠阿尔托莉雅·Alter
+……真奇怪。
+[k]
+
+[charaFadeout F 0.1]
+
+[charaPut E 256,0]
+[charaEffect E bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace F 0]
+[charaFadein F 0.1 0]
+[charaFace A 0]
+[charaFadein A 0 2]
+＠玛修
+阿尔托莉雅小姐，怎么了？
+[k]
+
+[charaFace F 5]
+＠阿尔托莉雅·Alter
+将这座车站占为根据地的小混混们都不见了。
+[k]
+
+
+＠阿尔托莉雅·Alter
+虽然小混混们消失不见是很常见的事……
+[k]
+
+＠阿尔托莉雅·Alter
+但我不能理解的是，[r]本应在通道里的营地都被清理得干干净净。
+[k]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0 256,-90]
+＠达·芬奇
+不会是看错了吧？
+[k]
+
+？1：这里有人生活过的痕迹。
+？！
+
+[charaFadeout F 0.1]
+[charaFadeout C 0.1]
+[charaPut E 1200,1200]
+[charaEffectStop E bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠阿尔托莉雅·Alter
+哼。[r]你的鼻子简直像驯鹿一样灵敏啊。
+[k]
+
+[charaFace F 0]
+＠阿尔托莉雅·Alter
+不好好观察是看不出来的，[r]这里确实有人生活过的痕迹。
+[k]
+
+[charaFadeout F 0.1]
+
+[charaPut E 1]
+[charaEffect E bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0 1]
+＠玛修
+是新宿的Archer先一步在这里战斗过了吗……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0 0,-90]
+＠达·芬奇
+但有必要把这里收拾干净吗？
+[k]
+
+[charaFadeout C 0.1]
+[charaPut E 1200,1200]
+[charaEffectStop E bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠阿尔托莉雅·Alter
+对。
+[k]
+
+＠阿尔托莉雅·Alter
+既然这里被收拾过了，[r]说明这里发生了不想让别人知道的事。
+[k]
+
+[charaFace F 0]
+＠阿尔托莉雅·Alter
+……御主。
+[k]
+
+＠阿尔托莉雅·Alter
+假设你一个人来到这里，看到空空如也的营地，[r]或是散落一地的弹壳，以及血迹，你会怎么想？
+[k]
+
+？1：会警戒。
+？2：会逃跑。
+？！
+
+[charaFace F 4]
+＠阿尔托莉雅·Alter
+对，[#所以有人不希望发生这种事]。
+[k]
+
+[charaFadeout F 0.1]
+
+[charaPut E 1]
+[charaEffect E bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0 1]
+＠玛修
+……！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut E 1200,1200]
+[charaEffectStop E bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠阿尔托莉雅·Alter
+对方的预估之所以显得天真，[r]是因为他们没想到这里有个来过这迷宫的人。
+[k]
+
+＠阿尔托莉雅·Alter
+更没有想到这个来过的人[r]居然还若无其事地记住了营地的所在位置。
+[k]
+
+[bgmStop BGM_EVENT_5 0.7]
+
+[charaTalk A]
+[se ad184]
+[seVolume ad184 0 0.4]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+＠阿尔托莉雅·Alter
+……看来被对方发现了。
+[k]
+
+＠阿尔托莉雅·Alter
+恐怕他们一开始打算滴水不漏地把我们包围起来解决掉。[r]所以这次偷袭在他们的预料之外。
+[k]
+
+＠阿尔托莉雅·Alter
+一定能找到破绽。[r]看准破绽突破，[charaFace F 2]御主！
+[k]
+
+？1：明白了！
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

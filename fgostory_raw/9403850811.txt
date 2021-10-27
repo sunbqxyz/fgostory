@@ -1,0 +1,183 @@
+
+
+＄94-03-85-08-1-1
+
+[soundStopAll]
+
+[charaSet A 98001000 1 家老玛修]
+[charaSet B 5001001 1 美狄亚店长]
+[charaSet C 1098118800 1 店员]
+[charaSet D 3038000 1 长尾景虎]
+
+[scene 40600]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[fowardEffect bit_talk_kengekiall02]
+[se ad470]
+[seStop ad470 0.5]
+[wt 0.3]
+
+[charaShake B 0.02 3 3 1.1]
+
+[se ad470]
+[seStop ad470 0.5]
+[wt 0.2]
+[se ad471]
+[seStop ad471 0.5]
+[wt 0.4]
+[fowardEffect bit_talk_ichimon01wh]
+[fowardEffect bit_talk_14]
+[se ad471]
+[wt 1.0]
+[bgmStop BGM_EVENT_3 1.0]
+[seStop ad471 0.5]
+
+[fowardEffectDestroy bit_talk_ichimon01wh]
+
+[se ad144]
+[charaFace B 4]
+[charaShake B 0.02 3 3 0.7]
+[charaMove B 0,-30 0.5]
+[charaFadeout B 0.4]
+
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 0,-30]
+[charaMove B 1 0.4]
+[wt 0.4]
+
+＠美狄亚店长
+输……输掉了……[r]再这样下去会因为休刻翁的库存而破产……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠长尾景虎
+哎，这就是休刻翁啊，[bgm BGM_EVENT_2 0.1][r]还挺好吃的嘛。
+[k]
+
+[charaFace D 1]
+
+＠长尾景虎
+怎么样？　看上去营养价值也很高，[r]要不要将这个用作迦勒底家的部队饮食呢？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠美狄亚店长
+那边那个……谁来着？[r]不过无妨，你的眼光还真不错。
+[k]
+
+＠美狄亚店长
+休刻翁也能作为药用，我十分推荐哦？[r]你们最近连日征战吧？
+[k]
+
+？1：既然景虎喜欢的话……
+
+？2：那就拜托你啦。
+
+？！
+
+[charaFace B 0]
+
+＠美狄亚店长
+……呼，这下总算能处理这个月的库存了。[r]看来可以暂时轻松一阵子了……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠店员
+店长，刚才本店的追加休刻翁送到了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠美狄亚店长
+给[messageShake 0.01 4 4 0.8]我拒绝签收啦！[bgm BGM_EVENT_7 0.1][r]姑妈她还真是不懂得分寸！
+[k]
+
+
+
+
+
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_7 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 82500]
+[wt 2.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_MEIJI 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠美狄亚店长
+我是美狄亚店长。[r]今后迦勒底家厨房的采购就交给我吧。
+[k]
+
+＠美狄亚店长
+那快把库存的休刻翁搬进来……
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[wt 0.7]
+
+美狄亚店长加入麾下。[r]（可作为助战NPC进行选择了。）
+[k]
+
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_MEIJI 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

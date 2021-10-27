@@ -1,0 +1,572 @@
+
+＄94-03-50-25-1-1
+[soundStopAll]
+
+
+[charaSet A 6037001 1 迦摩]
+[charaSet B 1098164200 1 巨大鬼魂女官]
+[charaSet C 3030000 1 帕尔瓦蒂]
+[charaSet D 6014001 1 玛塔·哈丽]
+[charaSet E 98110000 1 柳生但马守]
+[charaSet F 5030001 1 山鲁佐德]
+[charaSet G 10003000 1 杀生院祈荒]
+[charaSet H 1098163800 1 春日局]
+[imageSet I cut103_item01 1]
+[charaSet J 5009000 1 特效用dummy]
+
+
+[scene 72000]
+
+[bgm BGM_EVENT_80 0.1]
+
+[effect bit_talk_06]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+
+＠迦摩
+啊啊～。考虑到低耗与对因陀罗的讥讽才选择的这个，[r]果然和原本的弓箭完全不能比呢。
+[k]
+
+＠迦摩
+不过，想保留实力的结果也就只能这样了……
+[k]
+
+[messageOff]
+[wt 0.2]
+
+[effectStop bit_talk_06]
+[wt 0.4]
+[charaSpecialEffect A flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect A]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠帕尔瓦蒂
+打倒了……？[r]怎么感觉那么轻松……！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_80 0.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.8]
+
+
+[charaSpecialEffect B enemyErasure 1 2.0]
+[cueSe Battle ba6]
+[wt 3.0]
+[cueSeStop ba6 0.3]
+
+
+[cueSe Battle bas2]
+[wt 0.2]
+[charaFadein I 0.7 0,-200]
+[wt 2.2]
+
+[se ad592]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout I 0.1]
+[charaPut J 1]
+[charaEffect J bit_talk_noise02]
+[scene 10001]
+[wt 1.5]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_EVENT_1 0.1]
+
+＠混杂的呢喃
+……居然将幕政全部交给田沼……[r]……尽管还算有才能……
+[k]
+
+＠混杂的呢喃
+……竟如此没有霸气……[r]……比起民众与天下，更关心棋子……
+[k]
+
+＠
+[line 3][r][line 6]
+[k]
+
+＠
+棋子落盘的声音。啪嗒。[r]然后[line 3]无声。
+[k]
+
+＠
+只有，棋子落盘的声音……啪嗒、啪嗒。[r]然后[line 6]无声。
+[k]
+
+＠
+这样就够了，这样就够了。说话声，怒吼声，呢喃声。[r]不需要杂音，全都消失吧。
+[k]
+
+＠
+已经得到了满足，天下过于广阔。[r]我只要有这八十一格就行了。
+[k]
+
+＠甜美的女人声音
+呵呵。喜欢的东西就尽情钻研到极致吧。
+[k]
+
+＠甜美的女人声音
+将军明明是天下最有权力的人，[r]却要被俯瞰天下所束缚，这也太奇怪了吧。
+[k]
+
+＠甜美的女人声音
+看什么，不看什么，全都由自己决定。[r]我决不会加以否定。
+[k]
+
+＠甜美的女人声音
+我能爱这棋子落盘之声。
+[k]
+
+＠甜美的女人声音
+……设计了新的诘将棋谜题？[r]哎呀，那太令人期待了[line 3]
+[k]
+
+
+[messageOff]
+[se ad592]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_1 0.5]
+[wait fade]
+
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_noise02]
+[scene 72000]
+[wt 1.5]
+
+[charaSet B 6037001 1 迦摩2]
+[charaFilter B silhouette 00000080]
+
+[charaSet I 6037001 1 迦摩３]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠玛塔·哈丽
+这里也掉落了和此前一样的印笼哦～？[r]应该算是打赢了吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠柳生但马守
+不，还没结束。[r][line 3]在那边。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[charaTalk depthOff]
+[charaDepth B 0]
+[charaDepth A 1]
+
+[charaTalk off]
+[charaFace B 13]
+[charaFadein B 0.7 1]
+[wt 1.5]
+
+[charaFace A 13]
+[charaFadein A 0.7 1]
+[wt 1.0]
+[charaFadeout B 0.1]
+
+
+[bgm BGM_EVENT_71 0.1]
+
+＠迦摩
+你们好。是我哦。
+[k]
+
+＠迦摩
+啊啊，不，我可不能像某个帕尔瓦蒂那样[r]自信满满地说这种话呢。
+[k]
+
+＠迦摩
+应该更有我的风格，更卑躬屈膝才行。[r]请恕我重新问候一次。
+[k]
+
+[charaFace A 15]
+
+＠迦摩
+对不起，是我哦，或许你们并不想见我。[r]没关系啦，因为我很想见你们。
+[k]
+
+？1：我们明明打倒了迦摩啊！？
+
+[charaFace A 1]
+
+？2：分身！？
+
+[charaFace A 1]
+
+＠迦摩
+分身？　呵呵…[r]如果当真如此，那我或许就是忍者吧？
+[k]
+
+？！
+
+＠迦摩
+总而言之，恭喜各位了。[r]你们成功地窃走了我的钥匙。
+[k]
+
+＠迦摩
+唔～，哎～，这样啊～，你们就那么想深入我的奥啊，[r]那我就笑眯眯地返回最深处啦。
+[k]
+
+＠迦摩
+我得好好准备最后的招待才行。
+[k]
+
+[charaFace A 15]
+
+＠迦摩
+啊啊，还有，下一层将是最后的楼层，[r]话说在前面，那里和此前的楼层略有不同哦。
+[k]
+
+＠迦摩
+毕竟是最后一层，所以要更为有冲劲地前进，[r]更为听任欲望地前进，更为单纯。
+[k]
+
+[messageOff]
+[charaFilter B NORMAL FFFFFF00]
+[charaFace B 0]
+[charaFadein B 0.7 -320,0]
+[wt 1.0]
+[charaTalk on]
+
+＠B：迦摩
+没错，[#我们]会，更为单纯地……
+[k]
+
+[charaTalk depthOff]
+[charaDepth B 0]
+[charaDepth A 1]
+[charaDepth I 2]
+
+[messageOff]
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.7 320,0]
+[wt 1.0]
+
+＠I：迦摩
+让大家幸福地堕落[line 3]
+[k]
+
+？1：！！？？？
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_71 1.0]
+[se ade282]
+[wt 0.05]
+[charaSpecialEffect A wipeTime 0,0 0.7]
+[charaSpecialEffect B wipeTime 0,0 0.7]
+[charaSpecialEffect I wipeTime 0,0 0.7]
+[wt 2.4]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠山鲁佐德
+刚才那个……究竟是……？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+
+＠杀生院祈荒
+如果只是单纯的真假之分，那倒是好办了。[r]但从刚才的状态来看，事情没那么简单。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠帕尔瓦蒂
+……至少，我从未听说过迦摩像那样擅长使用力量。
+[k]
+
+[charaFace C 7]
+
+＠帕尔瓦蒂
+但是，我们是神灵。只要稍微动下脑筋，[r]增加数量这种事应该还是办得到的。
+[k]
+
+＠帕尔瓦蒂
+我在释放宝具时也会做类似的事。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠玛塔·哈丽
+也是，毕竟那些忍者也会分身。[r]小太郎表演给我看的时候，还吓了我一跳呢～。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠山鲁佐德
+我还听说过有个冠位人偶师[r]可以创造和自己分毫不差的人偶。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠柳生但马守
+换言之[line 3][r]我们仍不知道那家伙为何有那么多个吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠玛塔·哈丽
+很遗憾～。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[wt 0.1]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth C 0]
+[charaDepth H 1]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+[wt 0.3]
+
+[charaSpecialEffect C erasureReverse 1 0.3]
+[charaFace H 13]
+[charaFadein H 0.2 1]
+[wt 0.1]
+[seStop ad80 0.3]
+
+[wt 0.5]
+
+＠春日局
+搞不明白的事想破脑袋也没用。[r]总之先前进吧？
+[k]
+
+＠春日局
+无论那家伙有多少个，被抓走的主上也只有一位。
+[k]
+
+[charaFace H 5]
+
+＠春日局
+只要先救出主上，再考虑如何熏出[r]在这大奥中蔓延的害虫就行了。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠山鲁佐德
+说得对。[r]我们确实应该优先救出人质。
+[k]
+
+[charaFace F 5]
+
+＠山鲁佐德
+可不能……死去……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠杀生院祈荒
+那我们前进吧。[r]终于要面对最后的楼层了。
+[k]
+
+？1：五戒最后一戒是什么啊，祈荒？
+？！
+
+[charaFace G 7]
+
+＠杀生院祈荒
+这个啊，非常单纯。
+[k]
+
+＠杀生院祈荒
+会将这个留到最后，嗯，确实理所当然……[r]或许是故意拿来当压轴的……
+[k]
+
+[charaFace G 3]
+
+＠杀生院祈荒
+麻烦了。真的很麻烦。[r]正因为在忍耐，我才是现在的我。
+[k]
+
+[charaFace G 7]
+
+＠杀生院祈荒
+不，但是，应该不要紧吧。[r]反过来想，迄今为止都这么忍过来了。
+[k]
+
+＠杀生院祈荒
+哪怕眼前有多么美味的[#御主:美食]，[r]我应该也能忍耐。
+[k]
+
+＠杀生院祈荒
+现在就算再怎么追加盘子……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠玛塔·哈丽
+请问～，能不能回个神？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+＠杀生院祈荒
+啊啊，对不起。[r]那我就告诉各位吧。
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace G 0]
+
+＠杀生院祈荒
+最后的戒[line 3][r]叫不邪淫戒。
+[k]
+
+[charaFace G 1]
+
+＠杀生院祈荒
+至于劝戒的是什么，我不说应该也能明白吧？
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[charaFadeout G 0.1]
+[imageSet I cut103_item01 1]
+[wt 0.5]
+[soundStopAll]
+
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+
+[cueSe Battle bas2]
+[charaFace I 0]
+[charaFadein I 0.5 0,-200]
+[wt 1.4]
+
+＠
+[s 1000]
+　　　　[s 16]获得了第十代将军『德川家治的印笼』。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[wait fade]
+[end]
+
+
+
+
+
+
+
+
+
+
+
+

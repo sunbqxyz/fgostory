@@ -1,0 +1,203 @@
+
+
+
+＄94-04-78-20-1-1
+
+
+[soundStopAll]
+
+
+
+[charaSet A 98001000 1 玛修]
+[charaSet B 25005000 1 旅行者]
+[charaSet C 3043000 1 绘里濑]
+[charaSet D 7006001 1 坂田金时]
+[charaSet F 98115000 1 特效用]
+
+[scene 47001]
+
+[pictureFrame cut170_gameframe_dark]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[pictureFrame]
+[pictureFrameTop cut170_gameframe_dark]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 0,-50]
+
+＠坂田金时
+我的出场到此为止了。再见啦，老大。[r]愿你有golden的运气。
+[k]
+
+[charaFace D 0]
+＠坂田金时
+啊，还有，关于那个叫绘里濑的女孩子哦？[r]你可别把她弄哭了哦？
+[k]
+
+？1：我不会做那种事的。
+
+？2：旅行者也不会允许的。
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+＠旅行者
+有些困难呢……[r]绘里濑，可是个，爱哭鬼。
+[k]
+
+[charaFace B 1]
+＠旅行者
+不过，我会努力的。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 0,-50]
+
+＠坂田金时
+好嘞～，那就拜托你啦，小家伙，不对，应该叫兄弟。[r]毕竟你也是拥有golden之魂的存在。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 0,-50]
+＠旅行者
+对了。[r]你的golden也相当了得哦。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠坂田金时
+你像星星一样闪耀，[r]但绘里濑就有些黑暗了。
+[k]
+
+＠坂田金时
+不过，那家伙就是背负着这种[r]黑暗不知名的东西独自战斗着吧？
+[k]
+
+[charaFace D 1]
+＠坂田金时
+是个了不起的人物，对吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+＠旅行者
+嗯。绘里濑是个，[r]了不起的，[#人物]。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_62 1.0 0.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_62 1.0 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+[wt 1.2]
+
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[effect bit_talk_dice24]
+[wt 0.15]
+[voice 304300_0_X090]
+[wt 5.85]
+[wait voice 304300_0_X090]
+
+
+
+[charaTalk depthOff]
+[charaDepth F 2]
+[charaDepth C 1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+[wt 0.5]
+
+[charaPut F 0,0]
+[charaEffect F bit_talk_quickmove]
+[charaFadein C 0.1 0,-50]
+[charaMove C 0,-44 0.3]
+[se ad27]
+[se ad399]
+[seVolume ad399 0 0.7]
+[wt 0.1]
+[charaSpecialEffect C erasureReverse 1 0.3]
+[wt 0.5]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_62 0.7 0.5]
+[wait wipe]
+[wt 0.5]
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_62 0.7 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaEffect F bit_talk_quickmove]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-44]
+[charaMove C 0,-50 0.2]
+[wt 0.1]
+[se ad27]
+[wt 1.5]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠玛修
+确认绘里濑小姐掷出骰子了。[r]移动目标为前方约300米处。
+[k]
+
+[messageOff]
+[maskout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+

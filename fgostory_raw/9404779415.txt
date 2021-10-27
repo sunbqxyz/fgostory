@@ -1,0 +1,180 @@
+
+
+
+
+＄94-04-77-94-1-5
+
+[soundStopAll]
+
+[skip false]
+
+[maskout black 0]
+[wait mask]
+
+[charaSet A 5001001 1 美狄亚]
+[charaSet B 3043000 1 绘里濑]
+[charaSet C 5033001 1 喀耳刻]
+[charaSet G 1026001 1 迪昂]
+[imageSet H cut171_token_206 1]
+[charaSet S 5009000 1 特效用dummy１]
+
+[scene 20730]
+
+[pictureFrameTop cut170_gameframe_bright]
+
+[skip true]
+
+[fadein black 0]
+[wait fade]
+[maskin black 1.0]
+[wait mask]
+
+[bgm BGM_EVENT_5 0.1]
+
+
+[charaTalk depthOff]
+[charaDepth S 3]
+[charaDepth H 4]
+[charaDepth G 1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 0,-50]
+
+[charaEffect G bit_talk_token_change01]
+[wt 1.0]
+
+＠迪昂
+白百合被折下了吗……
+[k]
+
+[messageOff]
+[charaEffectStop G bit_talk_token_change01]
+[charaPut S 0,-10]
+[charaEffect S bit_talk_token_change02]
+[se ad39]
+[wt 3.2]
+
+[se ad29]
+[seStop ad29 1.5]
+[wt 0.5]
+[charaFadeout G 0.4]
+
+[charaTalk H]
+[charaFadein H 0.4 0,-210]
+[wt 0.5]
+
+[charaMove S 0,10 1.2]
+[wt 1.2]
+
+[charaFadeout H 0.4]
+[wt 0.5]
+
+[se adm19]
+[seVolume adm19 0 0.3]
+[seVolume adm19 1.0 1.0]
+[wt 0.5]
+
+[seStop adm19 1.7]
+[charaMove S 0,700 2.2]
+[wt 2.2]
+
+[charaEffectStop S bit_talk_token_change02]
+[wt 0.1]
+[charaEffectDestroy T bit_talk_token_change02]
+
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+[charaEffect A bit_talk_06]
+
+＠美狄亚
+这下你满足了吗，[r]傲慢自大的游戏界御主小姐？
+[k]
+
+[messageOff]
+[se ade406]
+[wt 0.2]
+[flashin once 0.1 0.6 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout A 0.1]
+[wt 0.2]
+[charaEffectStop A bit_talk_06]
+[wt 0.1]
+[seStop ade406 0.6]
+[wt 1.2]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠绘里濑
+嗯，闪耀于神话中令人敬畏的魔女啊。感谢您。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+[charaEffect C bit_talk_06]
+
+＠喀耳刻
+看在我们短暂主从交情的份上，[r]作为大魔女，我要给你一个建议。
+[k]
+
+[charaFace C 5]
+
+＠喀耳刻
+你想要返回的地方没有光。[r]千万别输给这种窒息感，弄错了上浮地点哦。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut C 1200,1200]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 0,-50]
+
+＠绘里濑
+……！？[r]这是什么意思……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠喀耳刻
+我不能告诉你答案。[r]这需要你自己去获取。
+[k]
+
+[messageOff]
+[se ade406]
+[wt 0.2]
+[flashin once 0.1 0.6 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout C 0.1]
+[wt 0.2]
+[charaEffectStop C bit_talk_06]
+[wt 0.1]
+[seStop ade406 0.6]
+[wt 1.2]
+
+[maskout black 2.0]
+[bgmStop BGM_EVENT_5 2.0]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+

@@ -1,0 +1,941 @@
+
+＄91-20-10-01-1-0
+[soundStopAll]
+[charaSet A 99502600 1 玛修]
+[charaSet B 98111500 1 达·芬奇]
+[charaSet C 2010002 1 比利]
+[charaSet D 98025000 1 ？？？]
+[charaSet E 98018100 1 无赖]
+[charaSet F 99360000 1 凯尔特士兵]
+[charaSet G 99360000 1 凯尔特士兵]
+[charaSet H 99360000 1 凯尔特士兵]
+
+
+[messageOff]
+[scene 28300]
+[bgm BGM_EVENT_11 0.1]
+[fadein black 1.5]
+[wait fade]
+[wt 1.0]
+＠比利
+总之，这只是打个比方。
+[k]
+
+＠比利
+假如有人委托你保护一座城市。[r]而且这是场连存活都会无比困难的战斗。
+[k]
+
+＠比利
+对方人多势众。拥有多种武器，和强大的力量。[r]己方势单力薄。缺乏武器，且没有什么力量。
+[k]
+
+＠比利
+就算没有报酬，你也会选择战斗吗？[r]还是说，不战斗？
+[k]
+
+？1：战斗。
+
+＠比利
+你的勇气果然令人钦佩。
+[k]
+
+？2：保护。
+
+＠比利
+嗯，你的回答总是那么出色。
+[k]
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.5]
+[scene 10000 1.5]
+[wait scene]
+[wt 1.0]
+[effect bit_talk_haboob_01 -80,-350]
+[se ad2]
+[seVolume ad2 0 0.01]
+[seVolume ad2 3.0 0.90]
+
+[scene 11110 1.5]
+[wait scene]
+[wt 1.5]
+
+[scene 11210 1.5]
+[wait scene]
+
+[seStop ad2 6.0]
+[effectStop bit_talk_haboob_01]
+[wt 2.0]
+[bgm BGM_EVENT_3 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+＠比利
+[line 3]你先吧。
+[k]
+
+[seStop ad2 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠无赖
+你这家伙……！[se ad346][seStop ad346 0.5]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.7]
+[se bac22]
+[fowardEffect bit_talk_14]
+[charaShake E 0.05 3 3 0.25]
+[wt 0.5]
+
+[se ad144]
+[shake 0.05 1 4 0.5]
+[charaFadeout E 0.2]
+[charaMove E 0,-256 0.2]
+[wait charaMove E]
+[wt 1.5]
+[bgm BGM_EVENT_5 0.1]
+[charaTalk E]
+[charaFadein E 0.8 0,-256]
+[charaMove E 0,-50 0.8]
+＠无赖
+啊，好痛……！[r]该……死的……混蛋……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠比利
+以你这手现在的状态，看来是当不了枪手了。[r]总之，老老实实工作或许也会遇到好事哦？
+[k]
+
+[charaFadeout C 0.1]
+[messageOff]
+[bgmStop BGM_EVENT_5 0.4]
+[wt 0.7]
+
+[charaEffect A bit_talk_10]
+[se ad13]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[bgm BGM_EVENT_2 0.1]
+＠玛修
+这动作太惊人了。[r]人体居然能行动得那么迅速啊……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 0,-90]
+＠达·芬奇
+不愧是西部第一[#快枪手:Quick Draw]。[r]神技果然名不虚传。
+[k]
+
+[charaFace B 0]
+＠达·芬奇
+有机会真想好好观察这活生生的手臂呀。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠比利
+……唔。[r]御主，御主，能打扰一下吗？
+[k]
+
+？1：怎么了？
+
+[charaFace C 4]
+＠比利
+其实我刚才在酒吧里听说了一件事。[r]说是这座城市被盯上了。
+[k]
+
+？2：OK～！
+
+[charaFace C 1]
+＠比利
+啊哈哈哈哈，我的御主还真是干劲十足呢！
+[k]
+
+[charaFace C 5]
+＠比利
+这个先不谈了。[r]这座城市好像被盯上了。
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+被盯上了……[r]究竟是被谁？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠比利
+盗贼、无赖，也就是刚才那些不法之徒。[r]这里的[#治安官:Sheriff]被吓得直哆嗦，根本派不上用处。
+[k]
+
+＠比利
+然后，城里的人也因为无处可去而不知所措呢。[r]想要帮助他们难道有错吗？
+[k]
+
+？1：我觉得这很对啊。
+
+[charaFace C 1]
+＠比利
+嗯，OK～！[r]好嘞，那就开始动手吧！
+[k]
+
+？2：那些人不可饶恕！
+
+[charaFace C 1]
+＠比利
+噢噢，御主兴致勃勃的！[r]真好真好，我太喜欢了！
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠玛修
+前辈，过于轻率地答应未免不太好吧。[r]至少应该打听一下敌人的数量才行……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠比利
+啊，我也忘记问这件事过。[r]等一下，我现在就去问。
+[k]
+
+[se ad59]
+[seStop ad59 1.0]
+[charaFadeout C 0.3]
+[charaMove C 0 0.3]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠玛修
+从无赖手中保护城市……[charaFace A 6][r]……啊！？　这不就是西部片的惯例吗！？
+[k]
+
+[charaFace A 1]
+＠玛修
+这是何等……[r]这是何等西部牛仔风的展开啊，御主！
+[k]
+
+？1：难道你喜欢西部片？
+
+[charaFace A 3]
+＠玛修
+不，没，我不是这个意思……[r]只是在资料库里有，我一不小心看入迷了……
+[k]
+
+？2：你挺熟悉的嘛。
+
+[charaFace A 13]
+＠玛修
+嗯，因为资料库里有西部片。[r]我将其视作古典作品之一学习过。
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[se ad59]
+[seVolume ad59 0.6 0.99]
+[wt 0.3]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.3 0]
+[charaMove C 1 0.3]
+[wt 0.3]
+[seStop ad59]
+＠比利
+啊，御主，御主！[r]我去问了对手大概有多少人。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠玛修
+嗯，大概多少人啊。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠比利
+大致1,000人左右吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠玛修
+原来如此，1,000人。确实很像西部片的[line 3][charaFace A 6][r]哎哎，[messageShake 0.02 3 3 0.5]1,000人！？
+[k]
+
+[bgmStop BGM_EVENT_2 1.5]
+[messageOff]
+[wipeout rollRight 1.5 0.5]
+[wait wipe]
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[charaPut A 1200,1200]
+[wt 1.0]
+[scene 20720]
+[wipein rollLeft 1.5 0.5]
+[wait wipe]
+[bgm BGM_EVENT_1 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+＠比利
+御主，这里有望远镜。[r]……好，看到了……[charaFace C 2]哎，那是……！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[messageOff]
+[wt 0.5]
+[bgm BGM_EVENT_1 1.0 0.4]
+[cameraMove 1.0 100,-50 2.0]
+[wipeout diaOut 1.0 0.5]
+[wait wipe]
+[cameraHome 0.1]
+[messageOff]
+[charaFadein F 0.1 1]
+[charaFadein G 0.1 0]
+[charaFadein H 0.1 2]
+[charaShake F 0.2 3 3 5.0]
+[charaShake G 0.2 3 3 5.0]
+[charaShake H 0.2 3 3 5.0]
+[wt 0.3]
+[se ad173]
+[seVolume ad173 0 0.1]
+[seVolume ad173 1.0 0.6]
+[se ad166]
+[seVolume ad166 0 0.1]
+[seVolume ad166 1.0 0.2]
+[wipein diaOut 1.0 0.5]
+[wait wipe]
+[wt 1.5]
+[seStop ad173 1.0]
+[seStop ad166 1.0]
+[wipeout diaOut 1.0 0.5]
+[wait wipe]
+[charaShakeStop F]
+[charaShakeStop G]
+[charaShakeStop H]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.3]
+[bgm BGM_EVENT_1 1.0]
+[wipein diaOut 1.0 0.5]
+[wait wipe]
+[wt 0.3]
+[charaPut A 0,0]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 0,-90]
+＠达·芬奇
+嗯嗯。看来对方[r]雇佣了大量幸存的凯尔特战士呢。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠玛修
+怎么会……随着女王梅芙的死亡，[r]他们应该都消失了吧！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-90]
+＠达·芬奇
+他们曾被召唤到这个世界。[r]再加上现阶段各次元的时空都极为不安定。
+[k]
+
+＠达·芬奇
+在偶然和幸运的帮助下，只要能确立技术，[r]召唤他们就不是什么不可能的事。
+[k]
+
+＠达·芬奇
+话虽如此，也不是什么不知晓魔术深渊的外行人[r]能偶然召唤的存在。也就是说[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠比利
+对方也有魔术师[line 2][r]或是除此以外的某种存在？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut A 0,0]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-90]
+＠达·芬奇
+肯定是这样。[r]我倒是觉得这更成问题。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠比利
+凯尔特士兵1,000人啊……[r]数量未免太多了吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.3]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+……御主！[r]快看这边！
+[k]
+
+？1：这难道是……
+？2：从者反应？
+？！
+
+[charaFace A 7]
+＠玛修
+对！　似乎有大量从者作为反击者被召唤出来了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 0,-90]
+＠达·芬奇
+这还真是……有些英灵还真方便呢。[r]是还没有闹够？　还是纯粹的英雄体质？
+[k]
+
+[charaFace B 5]
+
+＠达·芬奇
+反正哪种都行。[r]但凡能借助的，什么都要借。
+[k]
+
+＠达·芬奇
+这就是特异点修正的要领，[%1]。[r]说出理由，请求那些从者们协助吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠比利
+啊哈哈，御主！[r]总觉得有点像西部片呢！
+[k]
+
+？1：团结一致！
+
+[charaFace C 0]
+
+＠比利
+明白了，御主！[r]好嘞，开始干吧！
+[k]
+
+？2：在牧场决斗！
+
+[charaFace C 0]
+
+＠比利
+啊哈哈，OK，御主！[r]就让你好好见识一下我的枪法吧！
+[k]
+
+？！
+
+[messageOff]
+
+[bgmStop BGM_EVENT_1 1.5]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[wt 1.0]
+
+
+[scene 20720]
+
+[bgm BGM_EVENT_5 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+
+＠D：？？？
+你们……给我听好了……[r]这座城市里有大量人类、食物、和金钱。
+[k]
+
+＠D：？？？
+……抢夺一切。[r]……蹂躏一切。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk off]
+
+[charaFadein F 0.1 1]
+[charaFadein G 0.1 0]
+[charaFadein H 0.1 2]
+
+[shake 0.05 2 1 0.7]
+
+＠凯尔特士兵
+噢！！
+[k]
+
+[shakeStop]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠D：？？？
+我们是饿狼。[r]是只知道战斗，只知道吞噬的野兽。
+[k]
+
+＠D：？？？
+这样就行了。[r]若做不到，是无法在这片大陆上扎根的。
+[k]
+
+＠D：？？？
+夺取灵脉，将这广阔的大陆纳入我的掌中。[r]枪与刃根本无法与你们对抗。
+[k]
+
+＠D：？？？
+好了，去吧！
+[k]
+
+[messageOff]
+[se ad16]
+[seVolume ad16 0 0.7]
+[wt 0.5]
+
+＠D：？？？
+好了，将这里作为据点，重现吾等一族的繁荣……！
+[k]
+
+[seStop ad16 0.4]
+[messageOff]
+[se ad55]
+[seVolume ad55 0.7 0.99]
+
+[wt 0.3]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace F 0]
+[charaFadein F 0.4 5]
+[charaMove F 2 0.4]
+
+[wt 0.4]
+
+[seStop ad55]
+
+＠凯尔特士兵
+报告。[r]先遣队100名人员全灭。
+[k]
+
+＠D：？？？
+哦，敌人还挺能干的嘛。
+[k]
+
+＠D：？？？
+……[r]……
+[k]
+
+[messageShake 0.05 6 6 0.5]
+
+＠D：？？？
+什么！？
+[k]
+
+[messageShakeStop]
+
+＠凯尔特士兵
+敌方[line 3]有从者。
+[k]
+
+＠D：？？？
+……[r]……
+[k]
+
+＠D：？？？
+从者……该死的……！
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_5 1.4]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+
+[wt 0.5]
+
+[charaSet B 3009001 1 列奥尼达]
+[charaSet C 3016001 1 赫克托耳]
+[charaSet D 7005001 1 斯巴达克斯]
+[charaSet E 5014001 1 梅菲斯托费勒斯]
+[charaSet F 6003001 1 百貌哈桑]
+[charaSet G 3002001 1 迪尔姆德]
+[charaSet H 2010002 1 比利]
+
+[fadein black 1.5]
+[wait fade]
+
+＠
+稍微回溯一点时间[line 3]
+[k]
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.4 1]
+
+＠比利
+综上所述，为了保卫这座城市免受1,000人的大盗贼凯尔特团入侵，[r]希望诸位能助我们一臂之力！
+[k]
+
+[charaFadeout H 0.1]
+
+＠B：？？？
+哈哈哈！　原来如此原来如此温泉关！[r]确实令人热血沸腾！
+[k]
+
+[charaFadeout H 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 1]
+
+＠列奥尼达
+列奥尼达一世，[r]将为了守护这座城市全力以赴！
+[k]
+
+＠列奥尼达
+没事，这里有七骑一骑当千的从者。[r]根本无所畏惧！
+[k]
+
+[charaFadeout B 0.1]
+
+＠C：？？？
+难怪。[r]所以才会召唤擅长防守的从者啊。
+[k]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.4 1]
+
+＠赫克托耳
+但是大叔我[r]在这样的近代能派上用处吗？
+[k]
+
+[charaFace C 0]
+
+＠赫克托耳
+总之，我明白了。[r]我是特洛伊的赫克托耳。可别太折腾我哦？
+[k]
+
+[charaFadeout C 0.1]
+
+＠D：？？？
+盗贼即为压迫。[r]也就是说，这座城市遭到了压迫。
+[k]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+
+＠斯巴达克斯
+我有打倒所有压迫者的义务。
+[k]
+
+[charaFadeout D 0.1]
+
+＠E：？？？
+理解、同感、大盛况！[r]若非防守，而是偷袭与搅乱，就都交给我吧！
+[k]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.4 1]
+
+＠梅菲斯托费勒斯
+我梅菲斯托费勒斯，[r]一定会尽力在他们之间播撒混乱！
+[k]
+
+[charaFace E 1]
+
+＠梅菲斯托费勒斯
+唔嗯～，绝望如此美味！
+[k]
+
+[charaFadeout E 0.1]
+
+＠F：？？？
+明白了。[r]以少对多，难怪会把我们叫来。
+[k]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+
+＠百貌哈桑
+哼。只要有我们百貌哈桑在，[r]这种程度的战力差距瞬间就能弥补。
+[k]
+
+[charaFace F 4]
+
+＠百貌哈桑
+……虽然城市的防卫偏离了暗杀者之路。[r]但我们并没有那么不擅长“守卫村庄”。
+[k]
+
+[charaFadeout F 0.1]
+
+＠G：？？？
+……我会被召唤也很合理。
+[k]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.4 1]
+
+＠迪尔姆德
+我迪尔姆德·奥迪那，[r]似乎在这片大地上大闹过。
+[k]
+
+[charaFace G 0]
+
+＠迪尔姆德
+但那是作为敌方。[r]那这次，我会作为己方挥动这两杆枪。
+[k]
+
+[charaFace G 1]
+
+＠迪尔姆德
+……太棒了。凭借仅有的数名勇者，[r]对抗压倒性数量的大军[line 3]这正是求之不得的好机会！
+[k]
+
+[charaFace G 2]
+
+＠迪尔姆德
+御主，请指示！[r]为战场染上蔷薇色吧！
+[k]
+
+[charaFadeout G 0.1]
+
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠比利
+哎呀，没想到大家居然全都答应了！
+[k]
+
+？1：太好了。
+
+[charaFace H 1]
+
+＠比利
+不管怎么说，他们还真是些好人。[r]从这件事中明明得不到任何好处。
+[k]
+
+？2：多亏了比利四处奔走哦。
+
+[charaFace H 1]
+
+＠比利
+是吗？[r]呵呵，如果真是这样，我就太高兴了。
+[k]
+
+？！
+
+[charaFadeout H 0.1]
+
+[messageOff]
+[se ad13]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+玛修·基列莱特。[r]负责向导的工作。
+[k]
+
+＠玛修
+倘若城市出现异常情况，[r]我会立刻通知各位。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠比利
+好，那先让城里的人撤出这座城市吧。
+[k]
+
+
+＠比利
+撤离地点是距城市较近的林中洞窟。[r]我和[#治安官:Sheriff]已经说好了。
+[k]
+
+[charaFadeout H 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein F 0.1 0]
+[charaFadein G 0.1 2]
+
+＠百貌哈桑
+那我们就负责引导市民吧。[r]我们中有擅长列队整理的[#人格:哈桑]。
+[k]
+
+[charaFace G 5]
+
+＠迪尔姆德
+……确实，在前线奋战并不是战斗的全部。[r]哈桑阁下还有构筑联络网的职责。
+[k]
+
+＠迪尔姆德
+虽说有些不尽兴，但我也会与哈桑阁下同行。[r]我们必须避免遭敌方夹击。
+[k]
+
+？1：那就拜托两位了！
+？！
+
+[charaTalk off]
+
+＠两人
+明白了！
+[k]
+
+[se ad73]
+[charaFadeout F 0.2]
+[charaFadeout G 0.2]
+[charaMove F 4 0.2]
+[charaMove G 1 0.2]
+
+[charaTalk on]
+
+[wt 1.0]
+
+[seStop ad73]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠比利
+不管怎么说，御主，[r]现在凑齐了七骑可靠的从者。
+[k]
+
+[charaFace H 2]
+
+＠比利
+来吧，先把所谓的先遣队消灭掉吧！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_4 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

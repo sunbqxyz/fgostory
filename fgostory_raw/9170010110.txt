@@ -1,0 +1,92 @@
+＄91-70-01-01-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[scene 21000]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98003000 2 Dr.罗曼]
+[charaSet C 98002000 2 芙芙]
+[charaSet D 7001001 1 赫拉克勒斯]
+[charaSet E 98013000 1 龙]
+[charaFace A 2]
+[charaFadein A 0]
+[fadein black 1]
+[wait fade]
+＠玛修
+出大事了，御主！！[r]附近的村子好像遭到了猛兽的袭击！！
+[k]
+
+[charaFadeout A 0.1]
+[communicationChara 98003003 1 5 0 5]
+＠Dr.罗曼
+这还真是突然呢。[r][%1]醒了吗？
+[k]
+
+？1：我们快赶去那个村子吧！！
+
+？2：我们走，Berserker！！
+
+？！
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠赫拉克勒斯
+[image berserker_language_2][line 3]！
+[k]
+
+[charaFadeout D 0.1]
+[communicationCharaLoop 98003003 1 5 0 4]
+＠Dr.罗曼
+我怎么觉得Berserker不太适合负责救援，[r]村子……不要紧吧……
+[k]
+
+[messageOff]
+[communicationCharaClear]
+[fadeout black 0.5]
+[wait fade]
+[wt 0.5]
+[scene 20523]
+[charaFace A 2]
+[charaFadein A 0 1]
+[fadein black 0.5]
+[wait fade]
+＠玛修
+农田和建筑物居然都被毁坏了……[r]医生！！　请告诉我们敌人的信息！！
+[k]
+
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+已经在查了啦，哇！？[r]好厉害的数量反应，你们被彻底包围了！！
+[k]
+
+[communicationCharaFace 1]
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠玛修
+御主，总之只能见一个打一个了！！
+[k]
+
+？1：好！！　我们上！！
+
+？2：拜托你了，Berserker！！
+
+？！
+
+[charaFadeout A 0.1]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠赫拉克勒斯
+[image berserker_language_2][line 2]！！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

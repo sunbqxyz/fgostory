@@ -1,0 +1,798 @@
+
+
+
+＄94-04-01-01-1-0
+
+
+[soundStopAll]
+
+
+[charaSet A 1040000 1 葛饰北斋]
+[charaSet B 1040000 1 葛饰北斋（剪影）]
+[charaSet C 98001000 1 玛修]
+[charaSet D 98111500 1 达·芬奇]
+[charaSet E 98115300 1 福尔摩斯]
+[charaSet F 1098124510 1 达·芬奇（萝莉）]
+[charaSet G 98002000 1 芙芙]
+
+[charaSet J 98115000 1 特效用]
+
+[cameraMove 0 0,0 1.01]
+
+[charaDepth B 6]
+[charaDepth A 4]
+[charaDepth J 9]
+
+[branchQuestNotClear lblNotClear1 3000303]
+[flag IsClear true]
+[branch lblConf1]
+[label lblNotClear1]
+[flag IsClear false]
+[label lblConf1]
+
+
+
+
+
+[scene 10000]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_79 0.1]
+
+
+＠
+[line 6]这是无可奈何的。
+[k]
+
+＠
+凄惨的是自己，[r]烦恼的也是自己。
+[k]
+
+＠
+事到如今再怎么挣扎都已经为时已晚。
+[k]
+
+＠
+人类如同沧海之中的一尾小鱼。[r]所以才会陷入走投无路的境地。
+[k]
+
+＠
+人类生来幼小。[r]所以才会做什么都力不从心。
+[k]
+
+[messageOff]
+[wt 1.5]
+
+＠
+也就是说……
+[k]
+
+＠
+不论是谁[line 3][r]在极度不成熟时都会不可避免地经历失败。
+[k]
+
+＠
+无论是我。[r]还是你。
+[k]
+
+＠
+这是每个人都会经历的。
+[k]
+
+[messageOff]
+[wt 1.5]
+
+＠
+　　　　　　　　　　　　　　　　　　　[line 3]时间不详[r]　　　　　　　　　　　　　             葛饰北斋，写于迦勒底
+[k]
+
+[messageOff]
+[wt 1.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_79 2.0]
+[wait fade]
+
+
+[branch lblNotClear2 IsClear false]
+[scene 66600]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10310]
+[label lblConf2]
+
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+
+[se bac303]
+[seVolume bac303 0 0.6]
+[wt 0.4]
+[shake 0.02 3 3 1.4]
+[wt 3.8]
+
+[se ad608]
+[shake 0.03 4 4 1.6]
+[flashin once 0.1 0.5 FFFFFFFF FFFFFF80]
+
+[fowardEffect bit_talk_40]
+[charaPut J 0,200]
+[charaEffect J bit_talk_40]
+[wt 3.6]
+
+[se ad95]
+[seVolume ad95 0 0]
+[seVolume ad95 0.8 1.0]
+[wt 2.0]
+[seStop ad95 0.4]
+[wt 0.8]
+
+＠？？？
+…………哈。唔。
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ad95]
+[wt 0.4]
+[seStop ad95 0.8]
+[wt 0.4]
+
+[charaFilter B silhouette 00000080]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.8]
+＠？？？
+真是的，也太无聊了。
+[k]
+
+＠？？？
+没想到我只是稍微挥了一下，[r]就被轻易击破了。这墙壁还真脆弱。
+[k]
+
+＠？？？
+这些墙壁应该被妖术魔术强化过了吧？
+[k]
+
+[messageOff]
+[fadeout white 1.0]
+[wait fade]
+
+[fowardEffectStop bit_talk_40]
+[charaEffectStop J bit_talk_40]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaFadeout B 0.1]
+[wt 1.5]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.3]
+
+[charaTalk on]
+＠葛饰北斋
+[line 3]你说是吧？ 那边那位[&小哥哥:小姐姐]？
+[k]
+
+[messageOff]
+[wt 1.2]
+
+？1：……北斋小姐？
+
+？！
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaFace A 1]
+＠葛饰北斋
+是啊！[r]原来你认识我啊，我太高兴了！
+[k]
+
+[charaFace A 8]
+＠葛饰北斋
+也就是说你就是『御主』吗？[r]这么说来，我确实感觉到了一丝羁绊。
+[k]
+
+＠葛饰北斋
+[line 3]既然如此，那我必须自报家门才行！
+[k]
+
+[charaFace A 6]
+＠葛饰北斋
+我是Saber葛饰应为……不对！　是葛饰北斋！[r]是继承了吉良家家臣剑客之血的少女剑客画师！
+[k]
+
+＠葛饰北斋
+要说奢望的话，[r]我早晚会成为仙女剑客画师！
+[k]
+
+＠葛饰北斋
+总之！　首先！[r]我要成为这里排名第一的大剑豪[line 3]
+[k]
+
+[charaFace A 7]
+＠葛饰北斋
+还请你多多关照啦！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠芙芙
+…………芙呜？
+[k]
+
+？1：咦？
+？2：难道这是我们第一次见面？
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠玛修
+嗯……对，前辈。[r]从言行来看……
+[k]
+
+＠玛修
+应为小姐[line 3]这位葛饰北斋小姐，[r]不仅灵基发生了变化，甚至连记忆都产生了变质！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[branch lblClear3 IsClear true]
+
+[label lblNotClear3]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[se ad13]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-90]
+[wt 0.3]
+
+＠达·芬奇
+没错没错，我这边也观测到了哦。[r]哎～，也就是说今年夏天轮到这孩子了啊。原来如此。
+[k]
+
+＠达·芬奇
+从变动的数值来看，[r]应该是惯例的那个吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠玛修
+惯例的？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-90]
+＠达·芬奇
+对对，惯例的。[r]是每年一到夏天就会频发的那种之一啦。
+[k]
+
+＠达·芬奇
+就是由于从者之间的相互干涉，[r]或是因从者自身问题自发产生的灵基变化啦。
+[k]
+
+[charaFace D 2]
+＠达·芬奇
+也就是说……没错！　换上泳装！
+[k]
+
+？1：每年惯例！
+？2：灵基变换！
+
+？！
+
+[charaFace D 0]
+＠达·芬奇
+就是这样。
+[k]
+
+＠达·芬奇
+虽说与本来意义上的灵基变换相距甚远，[r]但姑且就这么理解吧。
+[k]
+
+＠达·芬奇
+只有外表发生了改变，内在几乎完全没变。[r]这就是迦勒底式的夏日灵基变换（暂用名）。
+[k]
+
+＠达·芬奇
+只是这次的情况似乎有些特殊。[r]或许是因为她原本是名为Foreigner的EXTRA职阶吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠葛饰北斋
+噢？　怎么回事怎么回事。[r]这里居然有个脸色如此之差的幽灵呢。
+[k]
+
+＠葛饰北斋
+不过，幽灵脸色差也在情理之中。
+[k]
+
+[charaFace A 13]
+＠葛饰北斋
+……不。不对不对不对。
+[k]
+
+＠葛饰北斋
+你真的是幽灵吗？[r]感觉很单薄地飘在空中……是吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-90]
+＠达·芬奇
+原来如此，连数据通信也不记得了啊。[r]记忆果然发生了混乱呢。
+[k]
+
+[charaFace D 4]
+＠达·芬奇
+既然如此……
+[k]
+
+＠达·芬奇
+那现阶段或许无法弄清这身泳装[r]究竟是她自己换上的还是被别人换上的了。
+[k]
+
+＠达·芬奇
+尽管这次灵基变换十分粗糙，[r]但我们还是无法掌握具体细节。
+[k]
+
+[charaFace D 0]
+＠达·芬奇
+总之，她是灵基变化后的葛饰北斋本人哦。[r]准确地说，应该是章鱼型的葛饰北斋及其女儿葛饰应为。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠玛修
+北斋小姐的泳装版本[line 3]
+[k]
+
+＠玛修
+是本人换的，[r]还是别人让她换的呢……唔唔……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠芙芙
+芙呜……芙呜芙……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠葛饰北斋
+反正幽灵的意见不重要啦。[r]重要的是我作为我现界了的事实！
+[k]
+
+＠葛饰北斋
+我是画师剑豪！[r]我要与强者们战斗、战斗、战斗战斗不断战斗，
+[k]
+
+＠葛饰北斋
+要钻研出剑的精髓！[r]这样一来，无论多么华丽的画我也一定能画出来！
+[k]
+
+[charaFace A 26]
+＠葛饰北斋
+喂，御主！[r]快把强者召集起来，最好是剑士剑客剑豪！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠玛修
+前……前辈！[r]北斋小姐非常好战……！
+[k]
+
+？1：明明外表没有任何改变。
+？2：却如此　斗志昂扬！
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 26]
+[charaFadein A 0.1 1]
+＠葛饰北斋
+嗯哼！[charaMoveReturn A 0,10 0.3]
+[k]
+
+[messageOff]
+[wt 0.5]
+
+
+
+
+[branch lblConf3]
+
+[label lblClear3]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[se ad13]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.3]
+
+＠F：达·芬奇
+没错，我这边也观测到了哦。[r]哎～，也就是说今年夏天轮到这孩子了啊。嗯嗯。
+[k]
+
+＠F：达·芬奇
+从变动的数值来看，[r]应该是惯例的那个吧。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠玛修
+惯例的？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠福尔摩斯
+没错，这应该是你们每年都熟悉的事件。[r]每当到夏天总是能看见。
+[k]
+
+＠福尔摩斯
+是由于从者之间的相互干涉[line 3][r]或是因从者自身问题自发产生的灵基变化。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠F：达·芬奇
+也就是夏日时光！[r]具体来说，就是换上泳装！
+[k]
+
+？1：每年惯例！
+
+[charaFace F 10]
+＠F：达·芬奇
+对对！
+[k]
+
+？2：灵基变换！
+
+[charaFace F 10]
+＠F：达·芬奇
+说得没错！
+[k]
+
+？！
+
+[charaFace F 0]
+＠F：达·芬奇
+虽说与本来意义上的灵基变换相距甚远，[r]但姑且就这么理解吧。
+[k]
+
+＠F：达·芬奇
+只有外表发生了改变，内在几乎完全没变。[r]这就是迦勒底式的夏日灵基变换（暂用名）……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠福尔摩斯
+但她的情况稍微有些特殊。[r]或许是因为她原本的灵基是EXTRA职阶吧？
+[k]
+
+＠福尔摩斯
+真是有趣的现象……[r]但不管怎么样，万事万物都是有原因的。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠葛饰北斋
+噢？　怎么回事怎么回事。[r]这里居然会有脸色如此之差的幽灵呢。
+[k]
+
+[charaFace A 6]
+＠葛饰北斋
+不过，幽灵脸色差也在情理之中。[r]管他呢。
+[k]
+
+＠葛饰北斋
+男人的幽灵加上小姑娘的幽灵飘在半空。[r]不太像父女呢……[wt 0.8][charaFace A 7]哈，不过我也没资格评论别人呢！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 17]
+[charaFadein F 0.1 1]
+＠F：达·芬奇
+人家这么说哦，爸爸·福尔摩斯？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠福尔摩斯
+别这样。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠葛饰北斋
+哎，你们感情真融洽呢！[r]幽灵是与英灵不一样的存在吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠F：达·芬奇
+唔。看来她连数据通信都不记得了呢。[r]记忆果然发生了混乱呢。
+[k]
+
+[charaFace F 24]
+＠F：达·芬奇
+既然如此……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠福尔摩斯
+看来现阶段无法断定这身泳装[r]究竟是她自己换上的还是被别人换上的了。
+[k]
+
+＠福尔摩斯
+既然她忘了数据通信，[r]只能说明这次的灵基变换非常粗糙。
+[k]
+
+＠福尔摩斯
+现在就说出我的推理推测当然简单[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+＠F：达·芬奇
+但你不会说吧？[r]结论。
+[k]
+
+＠F：达·芬奇
+你又发动了时候未到的技能吧？[r]被我说中了吧？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+[wt 1.2]
+
+？1：不要一言不发地挑眉啦！
+？2：是一如既往的福尔摩斯……
+
+？！
+
+[charaFace E 1]
+＠福尔摩斯
+哈哈哈。
+[k]
+
+[charaFace E 7]
+＠福尔摩斯
+现在只能确定，[r]她是灵基变化了的葛饰北斋本人。
+[k]
+
+＠福尔摩斯
+并不是别人假冒的哦。[r]这点我进行了充分的观察，肯定不会错。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠F：达·芬奇
+准确地说，应该是章鱼型的葛饰北斋及其女儿葛饰应为。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠玛修
+北斋小姐的泳装版本[line 3]
+[k]
+
+＠玛修
+是本人换的，[r]还是别人让她换的呢……唔唔……
+[k]
+
+[charaFace C 2]
+＠玛修
+真是个谜！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠芙芙
+芙呜……芙呜芙……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠葛饰北斋
+反正这些都无关紧要啦。[r]重要的是我作为我现界了的事实！
+[k]
+
+＠葛饰北斋
+我是画师剑豪！[r]我要与强者们战斗、战斗、战斗战斗不断战斗，
+[k]
+
+＠葛饰北斋
+要钻研出剑的精髓！[r]这样一来，无论多么华丽的画我也一定能画出来！
+[k]
+
+[charaFace A 26]
+＠葛饰北斋
+喂，御主！[r]快把强者召集起来，最好是剑士剑客剑豪！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠玛修
+前……前辈！[r]北斋小姐非常好战……！
+[k]
+
+？1：明明外表没有任何改变。
+？2：却如此　斗志昂扬！
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 26]
+[charaFadein A 0.1 1]
+＠葛饰北斋
+嗯哼！[charaMoveReturn A 0,10 0.3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+
+
+
+[label lblConf3]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_94 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

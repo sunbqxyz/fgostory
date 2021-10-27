@@ -1,0 +1,355 @@
+
+＄94-03-35-22-7-0
+
+[charaSet A 1007001 1 高文]
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+
+[scene 10310]
+
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+[wt 0.4]
+
+＠高文
+[tVoice ValVoice_100700 0_V010]
+早上好，[%1]。[r]问我今天是否也是来自主训练吗？[wait tVoice]
+[k]
+
+＠高文
+[tVoice ValVoice_100700 0_V020]
+不，我是确认了管制室没有下达指令，[r]才刚来这里而已。[wait tVoice]
+[k]
+
+＠高文
+[tVoice ValVoice_100700 0_V030]
+今天您一定能享受一个十分悠闲的休假。[wait tVoice]
+[k]
+
+？1：享受才刚刚开始呢。
+？2：休假……也就是巧克力假期！
+
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[charaFace A 4]
+＠高文
+[tVoice ValVoice_100700 0_V040]
+什么……这是给我的……？[r]不，我并非没有考虑过这个可能性……[wait tVoice]
+[k]
+
+
+[charaFace A 1]
+＠高文
+[tVoiceUser ValVoice_100700 0_V050 ValVoice_100700 0_V060]
+非常感谢。[r]真是令人喜出望外，[%1]。[wait tVoice]
+[k]
+
+＠高文
+[tVoice ValVoice_100700 0_V070]
+哎呀呀。我本想表现得更为欢呼雀跃一点，[r]但令人不甘的是我做不到。[wait tVoice]
+[k]
+
+
+＠高文
+[tVoiceUser ValVoice_100700 0_V080 ValVoice_100700 0_V090]
+因为在迦勒底还有其他数位圆桌骑士。[r]如果没有他们的话，我真想[&击掌庆贺:把你抱起来]。[wait tVoice]
+[k]
+
+[flag MALE false]
+[flag FEMALE false]
+
+[selectionUse masterMale]
+？1：用不着吧，你太夸张了啦。
+[flag MALE true]
+？！
+
+[selectionUse masterFemale]
+？1：用不着吧，你太夸张了啦。
+[flag FEMALE true]
+？！
+
+
+[charaFace A 5]
+＠高文
+[tVoiceUser ValVoice_100700 0_V100 ValVoice_100700 0_V110]
+一点没有夸张。[r]只有能够用[&友情:亲爱]回应[&友情:亲爱]之人，才配当一名绅士。[wait tVoice]
+[k]
+
+[charaFace A 4]
+＠高文
+[tVoice ValVoice_100700 0_V120]
+不过……真令人头疼。[wait tVoice]
+[k]
+
+＠高文
+[tVoice ValVoice_100700 0_V130]
+如果[%1]是骑士，[r]那我有很多方法可以回馈您，但您是魔术师。[wait tVoice]
+[k]
+
+＠高文
+[tVoice ValVoice_100700 0_V140]
+……唔。不，等一下，不用急着气馁啊，高文。[r]只要把这看做加雷斯的生日[line 3]唔。[wait tVoice]
+[k]
+
+[charaFace A 5]
+＠高文
+[tVoice ValVoice_100700 0_V150]
+失礼了。请稍等片刻。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad59]
+[seStop ad59 1.2]
+
+[charaFadeout A 0.4]
+[wt 0.6]
+
+
+
+[fadeout black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[scene 10310]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+[wt 0.4]
+
+＠高文
+[tVoice ValVoice_100700 0_V160]
+让您久等了。[r]小小薄礼，不成敬意，还请您收下。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[equipSet B 9805060 1 ]
+[wait equipSet B]
+[charaFace B 0]
+[charaFadein B 0.5 0,-70]
+[wt 2.0]
+[charaFadeout B 0.4]
+[wt 0.5]
+
+[branch _isMale MALE 1]
+[branch _isFemale FEMALE 1]
+
+[label _isMale]
+
+？1：这是……化妆品……？
+？2：化妆品的……魔法？
+
+？！
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠高文
+[tVoice ValVoice_100700 0_V170]
+对。虽说这本是我为了妹妹找人置办的东西，[r]但这就送给您吧，御主[%1]。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠高文
+[tVoice ValVoice_100700 0_V180]
+不要以为是男人就与化妆品无缘哦。[r]不如说应该将这些视为日常生活中的铠甲、武器。[wait tVoice]
+[k]
+
+＠高文
+[tVoice ValVoice_100700 0_V190]
+因为当中意的对象出现时，战斗就开始了。[r]只有将外表装饰得美丽，才能更为凸显心灵之美。[wait tVoice]
+[k]
+
+＠高文
+[tVoice ValVoice_100700 0_V200]
+虽说这是女性用的，但一事归一事。[wait tVoice]
+[k]
+
+＠高文
+[tVoice ValVoice_100700 0_V210]
+您大可漫不经心且大胆地[r]将其中之一赠送给心仪的女性。[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠高文
+[tVoice ValVoice_100700 0_V220]
+假如事情一切顺利，请务必告诉我。[r]届时让我们共同庆祝胜利，热烈地讨论恋爱问题吧！[wait tVoice]
+[k]
+
+？1：谢谢。但是。
+
+？！
+
+＠高文
+[tVoice ValVoice_100700 0_V230]
+嗯，但是什么？[wait tVoice]
+[k]
+
+？1：你真是太多管闲事了！
+
+？！
+
+[charaFace A 2]
+＠高文
+[tVoice ValVoice_100700 0_V240]
+您……您说什么！？[wait tVoice]
+[k]
+
+[charaFace A 4]
+＠高文
+[tVoice ValVoice_100700 0_V250]
+……是这样啊。[r]原来您也误会我是个死板的人物了啊……[wait tVoice]
+[k]
+
+＠高文
+[tVoice ValVoice_100700 0_V260]
+能与兰斯洛特或是崔斯坦商量恋爱问题，[r]却不能找我聊……一如既往的展开呢……[wait tVoice]
+[k]
+
+＠高文
+[tVoice ValVoice_100700 0_V270]
+……啊啊，我好悲伤……[r]我明明也是圆桌骑士之一啊……[wait tVoice]
+[k]
+
+＠高文
+[tVoice ValVoice_100700 0_V280]
+只要有与美丽妇人发生浪漫关系的机会，[r]我也是会骑上格林嘉莱特如风般驰骋的呀……[wait tVoice]
+[k]
+
+＠高文
+[tVoice ValVoice_100700 0_V290]
+早知如此，我也应该学个竖琴什么的，[r]并把这当宝具才对啊……[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠高文
+[tVoice ValVoice_100700 0_V300]
+不过这个问题先搁置一边，[r]御主还是去好好享受情人节吧。[wait tVoice]
+[k]
+
+＠高文
+[tVoice ValVoice_100700 0_V310]
+吾之契约者的胜利等同于我的胜利。[r]若能赢得丰硕战果就好了！[wait tVoice]
+[k]
+
+[branch _branchEnd]
+
+
+[label _isFemale]
+
+？1：化妆品套装…………？
+？2：你从哪儿搞来这些的……？
+
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠高文
+[tVoice ValVoice_100700 0_V320]
+是拜托达·芬奇女士置办的东西。[wait tVoice]
+[k]
+
+＠高文
+[tVoice ValVoice_100700 0_V330]
+迦勒底内的空调设备虽然万无一失，[r]但只要踏出这里一步，外面就是标高6000米的极寒地带。[wait tVoice]
+[k]
+
+＠高文
+[tVoice ValVoice_100700 0_V340]
+对女性来说算不上是什么良好的环境。[r]所以，还请务必使用这个。[wait tVoice]
+[k]
+
+
+＠高文
+[tVoice ValVoice_100700 0_V350]
+虽说您现在已经算是久经沙场的御主了，[r]但您毕竟还是成长中的惹人怜爱的淑女。[wait tVoice]
+[k]
+
+＠高文
+[tVoice ValVoice_100700 0_V360]
+犹如为花朵浇水一般，希望您能给自己的心灵一丝滋润。[r]可不能忘记装扮自己的这份心情。[wait tVoice]
+[k]
+
+＠高文
+[tVoice ValVoice_100700 0_V370]
+只要能这样，您无疑将成为怒放的鲜花。[r]在这种问题上，我是十分有眼光的。[wait tVoice]
+[k]
+
+？1：谢谢。但是。
+
+？！
+
+＠高文
+[tVoice ValVoice_100700 0_V380]
+嗯，但是什么？[wait tVoice]
+[k]
+
+？1：这是何等多管闲事！
+
+？！
+
+[charaFace A 1]
+＠高文
+[tVoice ValVoice_100700 0_V390]
+哈哈哈。嗯，我知道您一定会愤慨。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠高文
+[tVoice ValVoice_100700 0_V400]
+但是，[r]还请务必手下留情，[%1]。[wait tVoice]
+[k]
+
+＠高文
+[tVoice ValVoice_100700 0_V410]
+您越是健康精神，[r]我的剑也会越有力量。[wait tVoice]
+[k]
+
+＠高文
+[tVoice ValVoice_100700 0_V420]
+虽说是短暂的契约，但我发誓此身乃是您的骑士。[r]那为了保护主人，我自然会不惜使用任何手段。[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠高文
+[tVoice ValVoice_100700 0_V430]
+所以还请认命，收下这份礼物吧。[r]今后也请多指教哦，御主。[wait tVoice]
+[k]
+
+[label _branchEnd]
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]

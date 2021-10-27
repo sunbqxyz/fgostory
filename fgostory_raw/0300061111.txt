@@ -1,0 +1,194 @@
+
+
+
+＄03-00-06-10-1-1
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 武装玛修（有护目镜）]
+[charaSet B 8001410 1 玛修]
+[charaSet C 1017001 1 武藏]
+[charaSet D 98002000 1 芙芙]
+[charaSet E 3041001 1 凯妮斯]
+[charaSet F 1098191200 1 阿黛勒]
+[charaSet G 1098191300 1 马卡里俄斯]
+[charaSet S 5009000 1 特效用dummy1]
+[charaSet T 5009000 1 特效用dummy2]
+
+[scene 92501]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk off]
+[charaFace A 7]
+[charaFadein A 0.1 0,10]
+[charaMove A 0,0 1.0]
+[se ade18]
+[seVolume ade18 0.0 0.5]
+[wt 0.5]
+[seStop ade18 0.8]
+[wt 1.0]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth A 2]
+
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[wt 0.1]
+[charaFadeout A 0.4]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[wt 1.2]
+
+＠玛修
+排除敌对存在。[r]……[#灵基外骨骼:奥特瑙斯]各部位没有问题，战斗结束！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠武藏
+哎呀，大家辛苦啦～！
+[k]
+
+[charaFace C 1]
+
+＠武藏
+骚动没有预想的那么大，[r]幸好陷入混乱的市民们没有你推我搡呢。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛修
+说起这件事……[r]各位市民的身影转瞬间就……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠武藏
+应该是日常训练的成果吧？[r]看来诸神的[#教育]相当到位呢。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 0.7]
+[se ad821]
+[seVolume ad821 0 0]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+[charaFadeout C 0.1]
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+
+[se ad39]
+[seVolume ad821 1.0 1.0]
+[charaEffect F bit_talk_spell_b]
+[wt 2.5]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠芙芙
+芙呜呜呜……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠阿黛勒
+…………完成了。[r]赶紧前往下一个地点吧。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠凯妮斯
+成功了吗？　嗯？[r]魔术不是会发出些光亮或声音的吗。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠阿黛勒
+哎。倒不如说为了将声音和光亮抑制到最小，[r]布拉瓦茨基小姐进行了改良与调整……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠马卡里俄斯
+别再说了，抓紧时间，姐姐！[r][line 3]正规兵就要来了，我们边突破边前进！
+[k]
+
+？1：明白了！
+？2：我们走，玛修！
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠玛修
+明白了，开始朝下一个目标移动！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[wt 1.2]
+[soundStopAll]
+[end]

@@ -1,0 +1,475 @@
+＄01-00-06-31-3-0
+
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+[charaSet A 8001002 1 玛修]
+[charaSet B 5009001 1 达·芬奇]
+[charaSet C 1012001 1 贝德维尔]
+[charaSet D 98003000 1 Dr.罗曼]
+[charaSet F 98093000 1 狮子王]
+
+[scene 29400]
+
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 5]
+
+[fadein black 2.0]
+[wait fade]
+
+＠Dr.罗曼
+……终于快到了呢。[r]有很强大的魔力反应。
+[k]
+
+＠Dr.罗曼
+前面就是圣都最高的位置。[r]一定是王座。
+[k]
+
+＠Dr.罗曼
+……狮子王究竟是什么。[r]为什么第六特异点会变成这样。
+[k]
+
+＠Dr.罗曼
+所有的答案，都在这扇门的后面。[r]……准备好了吗，[%1]。
+[k]
+
+
+？1：……走吧。去狮子王的王座！
+
+？！
+
+[communicationCharaClear]
+[wait communicationChara]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+……是！[r]第六冠位指定，最终工程[line 3]开始！
+[k]
+
+
+[bgmStop BGM_EVENT_5 0.3]
+[messageOff]
+[charaFadeout A 0.2]
+[scene 10000 0.3]
+[wait scene]
+[se ad91]
+[wt 0.5]
+
+[fadeout white 3.0]
+[wait fade]
+
+[scene 29600]
+
+[fadein white 3.0]
+[wait fade]
+
+[bgm BGM_EVENT_23 0.1]
+
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+……这里就是王城最上层。[r]圆桌骑士们聚集的誓约之地。
+[k]
+
+＠达·芬奇
+而坐在那宝座上的[r]就是狮子王[line 3]阿尔托莉雅·潘德拉贡！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.5]
+
+＠狮子王
+[line 3]回答我。
+[k]
+
+＠狮子王
+[line 3]回答我。[r]你们是什么人。
+[k]
+
+＠狮子王
+为何来我的城堡。[r]为何出现在我面前。
+[k]
+
+＠狮子王
+我乃狮子王。风暴之王，也是尽头之主。[r]掌管圣枪伦戈米尼亚德的，英灵残渣。
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠玛修
+……仅凭声音就能令人退缩……[r]这简直就像[#强制:Geass]……！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠贝德维尔
+（那就是狮子王[line 3][r]　一直拿着圣枪的亚瑟王……）
+[k]
+
+＠贝德维尔
+（……明明已经有觉悟了，[r]　可没想到还是如此可怕……但是，）
+[k]
+
+＠贝德维尔
+（即便如此[line 3]我也，应该正视那位大人才行……！）
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠狮子王
+[line 3]回答我。
+[k]
+
+＠狮子王
+你们就是呼唤我的人吗。[r]你们就是违抗我的人吗。
+[k]
+
+＠狮子王
+[%1]。[r]从遥远迦勒底而来的最后御主啊。
+[k]
+
+＠狮子王
+你为何要造访这世界的尽头。
+[k]
+
+
+？1：为了端正人理而来！
+？2：为了打倒你而来！
+
+？！
+
+[charaFace F 0]
+＠狮子王
+这两者都是一样的。[r]端正人理，等同于结束我的性命。
+[k]
+
+[charaFace F 0]
+＠狮子王
+你是来杀我的吧。[r]很遗憾。你不会被圣枪选中。
+[k]
+
+＠狮子王
+你的灵魂深知善为何物，却依旧为恶。[r]虽为善，却允许恶。
+[k]
+
+＠狮子王
+这和恶同义。[r]虽然我曾对到达我足下的最新人类有所期待[line 3]
+[k]
+
+＠狮子王
+受死吧。[r]我创造的理想都市中，不需要你的灵魂。
+[k]
+
+
+[charaScale D 1.5]
+
+[bgmStop BGM_EVENT_23 0.1]
+[messageOff]
+[se bas1]
+[charaEffect D bit_talk_tornado01]
+[wt 0.8]
+[charaChange F 98094000 5 fade 0.5]
+[wait charaChange F]
+[bgm BGM_BATTLE_5 0.1]
+[wt 1.5]
+
+＠狮子王
+[line 3]那么，解放圆桌。
+[k]
+
+＠狮子王
+看着吧。这就是尽头之浪。[r]剥开世界表面后，这颗星球的真正模样。
+[k]
+
+[se ad29]
+[messageOff]
+[charaFadeout F 0.7]
+[scene 10001 1.5]
+[wait scene]
+
+[seLoop ad153]
+
+[scene 29700 1.5]
+[wait scene]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+玉座后出现的怒涛是…………！[r]狮子王从一开始就已经在世界尽头等着吗……！
+[k]
+
+
+[seStop ad153 2.0]
+
+[charaFadeout B 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠玛修
+狮子王，从王座起身了……！[r]进入战斗态势……！
+[k]
+
+＠玛修
+御主……！[r]我们该怎么办……！？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+？1：我不明白，为什么要关闭世界！
+？2：放屁，什么理想都市啊！
+
+？！
+
+[charaFadeout F 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+前辈……！？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+哇哦，胆大包天耶！[r]连从者见到那神格都被吓得不敢动呢！
+[k]
+
+[charaFace B 2]
+＠达·芬奇
+但说得好，继续说！[r]这是只有人类的你才能做到的事！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠狮子王
+……理由吗。[r]无论在哪个时代，你们人类都喜欢问这个。
+[k]
+
+＠狮子王
+我之所以关闭世界，是为了留下[#人类:你们]。
+[k]
+
+[charaFace F 0]
+＠狮子王
+因为某一个人的大伟业，[r]这颗星球的历史终结了。
+[k]
+
+[charaFace F 0]
+＠狮子王
+人理被烧却，人类史回归于无。[r]但是，这与我存在的意义相背。
+[k]
+
+＠狮子王
+我们是由[#人类:你们]创造出来的东西。[r]没有人类，神是无法存在的。
+[k]
+
+[charaFace F 0]
+＠狮子王
+所以才要留下你们。[r]不惜牺牲任何代价，都要保护。
+[k]
+
+＠狮子王
+[line 3]这就是我的意志。[r]如果魔术王那么任意妄为，那我决定自己也要任意妄为。
+[k]
+
+＠狮子王
+……没错。坦白说，[r]我，早就想这样做了。
+[k]
+
+[charaFace F 0]
+＠狮子王
+我爱着你们。[r]你们十分重要。
+[k]
+
+[charaFace F 0]
+＠狮子王
+所以，我无法忍受失去你们。
+[k]
+
+[charaFace F 0]
+＠狮子王
+我决定把永远赐予[#人类:你们]。[r]适合留存后世的灵魂们[line 3]
+[k]
+
+＠狮子王
+不作恶，触恶却仍不知恶，[r]永不厌倦行善，且没有行善自觉的人们。
+[k]
+
+＠狮子王
+搜集这些纯洁的灵魂，固定，并做成资料。
+[k]
+
+＠狮子王
+今后，不管经历多么漫长的时间，[r]他们都会作为价值不变之物，永远收存于我的枪中。
+[k]
+
+[charaFace F 0]
+＠狮子王
+这[line 3]有什么错吗？我的伟业，全是为了你们人类。[r]我的伟业，全是为了[#人类:你们]。
+[k]
+
+
+？1：这只不过是标本啊！
+
+？！
+
+[charaFace F 0]
+＠狮子王
+[line 3]你这样认为吗？
+[k]
+
+＠狮子王
+你是这样认为的吗，盾之骑士啊。
+[k]
+
+＠狮子王
+人虽有寿命，[r]但在其中寿命更为限定之人啊……
+[k]
+
+＠狮子王
+玛修·基列莱特。[r]若是你，应该能明白我的理想吧？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 2]
+
+＠Dr.罗曼
+……！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠玛修
+这……
+[k]
+
+＠玛修
+…………这个。
+[k]
+
+？1：玛修……？
+？2：难道……你知道了……？
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 2]
+
+＠Dr.罗曼
+[%1]，不用再说了！[r]狮子王的精神构造已经完全神灵化了！
+[k]
+
+＠Dr.罗曼
+她已经失去作为人类的价值观！[r]靠对话是解决不了的！
+[k]
+
+＠Dr.罗曼
+用战斗，破坏那把圣枪！[r]这样一来这个时代就能恢复原貌！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠狮子王
+[line 3]真性急啊，罗玛尼·阿其曼。[r]很有你的作风。但是我的结论也一样。
+[k]
+
+＠狮子王
+我已经回答了问题。[r]若要否定我，那我也会否定你们。
+[k]
+
+＠狮子王
+终将逝去之物。早已逝去之物。[r]感叹生命有限的人们啊。
+[k]
+
+＠狮子王
+知晓汝等的极限，接受我的庇护吧。
+[k]
+
+[charaFace F 0]
+＠狮子王
+盾之骑士啊。[r]想要保护生命[line 3]就不要与我为敌。
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+要来了……！[r]御主，准备战斗！
+[k]
+
+＠达·芬奇
+敌人是狮子王阿尔托莉雅[line 3][r]不，那已经不是英灵了！
+[k]
+
+＠达·芬奇
+若要给她个称呼的话，对……！[r]圣枪的化身，女神伦戈米尼亚德……！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_5 0.4]
+[wait fade]
+[soundStopAll]
+[end]

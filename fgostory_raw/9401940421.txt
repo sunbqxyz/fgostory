@@ -1,0 +1,650 @@
+
+＄94-01-94-04-2-1
+[soundStopAll]
+
+
+[scene 52600]
+
+[charaSet A 25002001 1 阿荣]
+[charaSet B 25002002 1 葛饰北斋]
+[charaSet C 5009000 1 特效用dummy2]
+[charaSet D 1030000 1 铃鹿御前]
+[charaSet E 1098125100 1 “公方大人”]
+[charaSet F 1030002 1 铃鹿御前第三]
+[charaSet H 5009000 1 特效用dummy]
+
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaPut C 0,0]
+
+[charaEffect C bit_talk_marblebg]
+[charaEffect H bit_talk_11]
+
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+[se adm20]
+[charaFadeout E 2.0]
+[wt 0.5]
+[charaMoveScale H 0.0 2.0]
+[wt 1.0]
+
+[wipeout moya 0.5 2]
+[wait wipe]
+
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_11]
+[charaScale H 1.0]
+
+[charaEffectStop C bit_talk_marblebg]
+[charaPut C 1200,1200]
+[charaSet E 1098120400 1 ？？？]
+[charaFilter E silhouette 00000080]
+
+
+[se ad451]
+[seVolume ad451 0.0 0.7]
+
+[wipein moya 1.5 2]
+[wait wipe]
+
+[wt 1.0]
+[bgm BGM_EVENT_4 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+＠F：铃鹿御前
+邪神的气息……消失了……！
+[k]
+
+[messageOff]
+[seStop ad451 0.5]
+[se ad39]
+[fadeout white 0.5]
+[wait fade]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaFadeout F 0.1]
+[wt 0.5]
+[fadein white 0.5]
+[wait fade]
+
+
+＠铃鹿御前
+呼……
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠葛饰北斋
+[line 3]好啦，愉快的初梦要结束了。
+[k]
+
+＠葛饰北斋
+来，我为你们画出返回之路。[r]也就是所谓的梦之阶梯。
+[k]
+
+＠葛饰北斋
+回到你们那个迦勒底吧。
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+[wt 0.5]
+[se bac41]
+[charaPut H 220,-80]
+[charaScale H 0.08]
+[charaBackEffect H bit_talk_17]
+[wt 2.0]
+
+？1：……北斋先生。
+？！
+
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠葛饰北斋
+正月才刚开始，就那么多灾多难。[r]我也给你们添了不少麻烦。
+[k]
+
+＠葛饰北斋
+不能继续到处闲晃迷茫不前了。[r][#过于完美的故事]的诱惑也到此为止了。
+[k]
+
+[charaFace B 14]
+＠葛饰北斋
+我得去妙见菩萨那里打个招呼才行。[r]总是绕远路会惹菩萨生气的。
+[k]
+
+？1：阿荣小姐她……会怎么样？
+？！
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠铃鹿御前
+…………
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠葛饰北斋
+唔，[r]这个嘛，当然要取决于妙见菩萨了……
+[k]
+
+[charaFace B 6]
+＠葛饰北斋
+但是啊，我刚才不也说过了吗？
+[k]
+
+[charaFace B 14]
+＠葛饰北斋
+阿荣是我的一部分。[r]只要我继续画画，她就会在我的身边。
+[k]
+
+[charaFace B 9]
+＠葛饰北斋
+直到阿荣腻烦了留在我身边，自己离开我为止哦！[r]啊哈哈哈！
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+＠铃鹿御前
+够了啦，北斋！　快恢复章鱼的模样！[r]把阿荣还回来！
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠葛饰北斋
+真是的，你简直像我老婆一样啰嗦。
+[k]
+
+[charaFace B 14]
+＠葛饰北斋
+算了，总之，[r]承蒙你俩照顾了，再见啦。
+[k]
+
+[bgmStop BGM_EVENT_4 0.5]
+
+[messageOff]
+[se ad39]
+[fadeout white 0.5]
+[wait fade]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+[charaFadeout B 0.1]
+[wt 0.5]
+[fadein white 0.5]
+[wait fade]
+
+＠阿荣
+…………
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+＠铃鹿御前
+……恢……恢复了……
+[k]
+
+＠铃鹿御前
+…………阿荣？　还认识我们吗？[r]这位是御主？
+[k]
+[bgm BGM_EVENT_11 0.1]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠阿荣
+嗯……我知道。[r]铃鹿、[%1]。
+[k]
+
+＠阿荣
+连变化期间的事我也记得很清晰。
+[k]
+
+[charaFace A 15]
+＠阿荣
+话说回来……[r]爹爹……
+[k]
+
+＠阿荣
+居然变成这么难看的章鱼……[r]尽管您原来就长得不咋样。
+[k]
+
+[charaFace A 9]
+＠阿荣
+哎哟，不要喷墨啦。[r]哈哈！
+[k]
+
+＠阿荣
+我们不仅身在梦中，[r]甚至还是如梦似幻的存在吧。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[messageOff]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠铃鹿御前
+阿荣……
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠阿荣
+哈哈哈，别这样！[r]我最不擅长应对这种感伤的气氛了。
+[k]
+
+[charaFace A 1]
+＠阿荣
+好啦，[%1]！[r]你要回迦勒底了吧？　别露出那种表情来！
+[k]
+
+[charaFace A 6]
+＠阿荣
+如果懒懒散散地混过了正月，[r]可就算不上初梦了哦？
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 0.5]
+
+[charaTalk D]
+[charaFace D 16]
+[charaFadein D 0.1 1]
+＠铃鹿御前
+……我也不喜欢感伤的氛围。[r]那我们就此告别吧。
+[k]
+
+[charaFace D 13]
+
+[bgm BGM_EVENT_6 0.1]
+
+＠铃鹿御前
+我很高兴能认识你。我过得非常愉快。
+[k]
+
+
+＠铃鹿御前
+因为我不会画画，所以要用[#手机:这个]，[r]拍下我们是闺蜜的纪念！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 -220,0]
+[charaFace D 13]
+[charaFadein D 0.1 2]
+＠阿荣
+闺蜜？[r]你说话还是那么奇怪[line 3]
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[wt 0.7]
+[flashin once 0.1 0.1 FFFFFFFF 2D2D2D80]
+[wt 0.1]
+[se ad41]
+[charaFace A 7]
+[charaFace D 1]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk D]
+
+＠铃鹿御前
+完美拍下来啦！
+[k]
+
+[charaFace D 13]
+＠铃鹿御前
+拍得非常清爽，背景也很衬照片！[r]你至少该好好打扫一下自己的房间啦！
+[k]
+
+[charaFace A 10]
+＠阿荣
+烦死了。[r]不用你多管闲事。
+[k]
+
+？1：再见了，阿荣小姐。
+？2：非常感谢！
+？！
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠阿荣
+嗯。我也要感谢你……[r][&帅气仙人的:漂亮仙女的][%1]。
+[k]
+
+[charaFace A 1]
+＠阿荣
+能再次见到爹爹。[r]既感到怀念……也非常高兴……
+[k]
+
+[charaFace A 3]
+＠阿荣
+再……再见了……[r][line 3]多保重哦！
+[k]
+
+[messageOff]
+[fadeout white 1.5]
+[wt 0.5]
+[bgmStop BGM_EVENT_6 1.5]
+[charaFace A 9]
+[wait fade]
+[charaEffectStop H bit_talk_17]
+[wt 0.5]
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[charaSet C 25002002 1 葛饰北斋剪影]
+[charaFilter C silhouette 00000080]
+
+[scene 34900]
+[se ade54]
+[seVolume ade54 0.0 0.3]
+
+[fadein white 2.0]
+[wait fade]
+
+＠葛饰北斋
+………………
+[k]
+
+[messageOff]
+[seStop ade54 0.5]
+[bgm BGM_EVENT_1 0.1]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.7 1]
+[wt 1.0]
+＠？？？
+我要感谢你，Mr.北斋。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[messageOff]
+[charaTalk off]
+[charaDepth B 10]
+[charaDepth C 8]
+
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.5]
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 1.5 1]
+[wt 1.5]
+[charaTalk on]
+
+＠葛饰北斋
+啊啊？[r]怎么，又是你啊。
+[k]
+
+[charaFace B 11]
+＠葛饰北斋
+你跑哪儿闲晃去了。[r]还是说一直在事不关己地旁观？
+[k]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠？？？
+我好歹也在暗中尽自己的力帮了你一把哦？
+[k]
+
+＠？？？
+为了抵达这深远之渊，[r]不得不将肉体抛在别的地方。
+[k]
+
+＠？？？
+没错[line 3]某位[#魔神]追求这迷信。[r]企图让深渊之神降临……
+[k]
+
+＠？？？
+尽管那次尝试已经失败，[r]但对虚空的存在而言，瞬间的机会就足够了。
+[k]
+
+＠？？？
+足够认知这地球，与Mr.北斋的灵魂混合，[r]并将您作为时空的路标哦。
+[k]
+
+＠？？？
+魔神并未放弃，正企图实现[#下一次尝试]。[r]……若非潜到这个深度，我是无法得知这一切的。
+[k]
+
+＠？？？
+必须阻止才行[line 3]看来[r]这对迦勒底来说并不是[#未来]的事象……
+[k]
+
+＠？？？
+不，总而言之[line 3]
+[k]
+
+＠？？？
+Mr.北斋，没想到你[r]居然成了魔神企图的先锋……
+[k]
+
+＠？？？
+真亏你能遏制住失控与侵蚀。
+[k]
+
+＠？？？
+我要向您表示深深的谢意。[r]当然也要对阿荣，以及现实的魔术师道谢。
+[k]
+
+＠？？？
+……这真令人惊讶。[r]不是魔术师，也不是堕落圣人之人，
+[k]
+
+＠？？？
+居然能将巨大邪神力量的一部分[r]化为自己所有并进行使用[line 3]
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠葛饰北斋
+哈，说什么魔神啊，时空啊……[r]我倒觉得你的行为举止更不像人类吧。
+[k]
+
+[charaFace B 15]
+＠葛饰北斋
+……不……是这样啊……
+[k]
+
+[charaFace B 14]
+＠葛饰北斋
+你这家伙误以为自己是人类吧？
+[k]
+
+[charaFace B 16]
+＠葛饰北斋
+这谈不上什么迷信。倒是你[r]是世界的机关本身，还是自然之理……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠？？？
+…………唔……？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠葛饰北斋
+好吧，算了。
+[k]
+
+[charaFace B 4]
+＠葛饰北斋
+话说啊……
+[k]
+
+＠葛饰北斋
+你觉得我还能……和他们一起……[r]见识新奇的东西，或是消灭怪物吗？
+[k]
+
+[charaFace B 6]
+＠葛饰北斋
+感觉那里不会缺绘画的题材，让我非常心动。[r]是叫……从者来着吧？
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠？？？
+你不是说不想借助圣杯的力量吗？
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+＠葛饰北斋
+哎，别老是抓住别人的话柄不放。[r]若非为欠债所苦，我也不会选择低头啦。
+[k]
+
+[charaFace B 6]
+＠葛饰北斋
+我的身体里啊，小颏那家伙也……[r]似乎想这样做……
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠？？？
+……对我来说，[r]这并不是什么值得高兴的事，但是……
+[k]
+
+[messageOff]
+[se ade54]
+[seVolume ade54 0.0 0.3]
+[wt 1.0]
+
+＠？？？
+未来是未知的。[r]或许也存在这种奇迹吧。
+[k]
+
+[messageOff]
+[charaFadeout E 1.5]
+[seStop ade54 1.0]
+[wt 1.5]
+
+＠葛饰北斋
+是这样啊……唔……
+[k]
+
+＠葛饰北斋
+那就把这作为令人高兴的压岁钱好啦……
+[k]
+
+[messageOff]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.7 1]
+[wt 1.0]
+＠葛饰北斋
+……Ph’nglui……[r]………………ph’nglui…………
+[k]
+
+＠葛饰北斋
+……啊啊……融入创作的神话中这种事，[r]简[charaFace B 6]直[line 3]棒透了！
+[k]
+
+＠葛饰北斋
+荒诞的虚构正是我的范畴，是浮世画师求之不得的！
+[k]
+
+＠葛饰北斋
+葛饰北斋一门，只要被呼唤，[r]随便让我们干多少白活儿都行！
+[k]
+
+[charaFace B 14]
+＠葛饰北斋
+……对吧……小颏啊。
+[k]
+
+[messageOff]
+[charaFadeout B 0.7]
+[wt 1.0]
+
+＠葛饰北斋
+…………Fhtagn…………fhtagn………………
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_1 2.0]
+[wait fade]
+[soundStopAll]
+[end]

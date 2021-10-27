@@ -1,0 +1,2202 @@
+
+＄02-00-01-11-1-0
+
+
+[charaSet A 2023000 1 新宿的Archer]
+[charaSet B 98086000 1 福尔摩斯]
+[charaSet C 98109400 1 阿尔托莉雅·Alter]
+[charaSet D 98109500 1 贞德·Alter]
+[charaSet E 99502600 1 玛修]
+[charaSet F 98111500 1 达·芬奇]
+[charaSet G 98111500 1 通讯用杂音]
+
+[soundStopAll]
+
+[bgm BGM_EVENT_2 0.1]
+
+[scene 38300]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+……好，就是这里。[r]同时启动通讯装置。
+[k]
+
+[se ad31]
+[seStop ad31 2.0]
+
+[messageOff]
+[wt 2.0]
+
+[charaFadeout B 0.7]
+[wt 1.0]
+
+[se ad59]
+[wt 0.4]
+[seStop ad59 2.0]
+
+
+[charaTalk off]
+[charaFace C 2]
+[charaFace D 2]
+[charaScale C 1.3]
+[charaScale D 1.3]
+[charaFadein C 0.7 -192,0]
+[charaFadein D 0.7 192,0]
+[wt 0.1]
+[effect bit_talk_41]
+[wt 1.0]
+[effectStop bit_talk_41]
+[charaTalk on]
+
+＠阿尔托莉雅·Alter
+御主，没事吧！？
+[k]
+
+＠贞德·Alter
+我说你，不要紧吧！？
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaScale C 1.0]
+[charaScale D 1.0]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[se ad13]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0 1]
+[wt 0.3]
+＠玛修
+御主！！[charaFace E 1][r]太好了，你平安无事啊！
+[k]
+
+[wt 0.4]
+
+[charaFace E 14]
+＠玛修
+不，虽说我确实通过监控掌握着御主的状态，[r]能够确认您肯定平安无事……！
+[k]
+
+＠玛修
+但是，通讯一直无法恢复……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0 0,-90]
+＠达·芬奇
+嗨～，没事吧～？[charaFace F 2][r]……呃，夏洛克·福尔摩斯！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaFace E 6]
+[charaFadein E 0 1]
+＠玛修
+……啊！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.4]
+[wt 0.7]
+[bgm BGM_EVENT_7 0.1]
+
+[charaFace E 1]
+＠玛修
+真的，是真的呀，福尔摩斯先生！
+[k]
+
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+哟，好久不见。[r]Miss基列莱特。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0 1]
+[wt 0.3]
+＠玛修
+嗯，很高兴福尔摩斯先生也那么精神……[r]但为……[charaFace E 6]为什么福尔摩斯先生会和御主在一起！？
+[k]
+
+？1：我被他救了。
+
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠阿尔托莉雅·Alter
+哦。[r]那太好了。
+[k]
+
+[charaFace C 5]
+＠阿尔托莉雅·Alter
+也就是说，你在返回这里的路上本可以联系我们，[r]却丝毫没有联系，直接走回来了。
+[k]
+
+＠阿尔托莉雅·Alter
+和这个形迹可疑的男人一起。[r]……哦。
+[k]
+
+？2：我没事。
+
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠贞德·Alter
+哼，哼[line 4]！[r]算了！　反正！　无关！　紧要！
+[k]
+
+[charaFace D 5]
+＠贞德·Alter
+话说这家伙谁啊？[r]福尔摩斯？　侦探在新宿有什么用？
+[k]
+
+？！
+
+[messageOff]
+
+[bgmStop BGM_EVENT_7 1.0]
+[wipeout rollFlashRight 2.0 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+
+[scene 38600]
+
+[wipein rollFlashRight 2.0 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_2 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+容我重新自我介绍。[r]我的名字是夏洛克·福尔摩斯。
+[k]
+
+＠福尔摩斯
+职阶是Caster，但很遗憾，无法成为你们的战力。[r]还请谅解。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠贞德·Alter
+哼～，既然没用，那就无所谓了。[r]不过嘛，还是感谢你救了[#这个傻瓜:御主]好啦。
+[k]
+
+＠贞德·Alter
+好啦，那再见。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+不巧的是我并不能就此告别。[charaFace B 5][r]那么……新宿的Archer，你能出来一下吗。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.7 1]
+[wt 1.0]
+＠新宿的Archer
+哟，福尔摩斯。我大概和你已经很久不见了吧。[r]那就这样，再见！
+[k]
+
+[messageOff]
+
+[se ad60]
+[seStop ad60 2.0]
+[charaFadeout A 2.0]
+[charaMove A -1024,0 2.4]
+[wait charaMove A]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+……你在做什么啊。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠新宿的Archer
+那啥……当时我觉得那应该是最好的方法，[r]才会这么计划……
+[k]
+
+＠新宿的Archer
+但仔细想来，即便对手是『我』，[r]还是多少会有一些风险……
+[k]
+
+＠新宿的Archer
+而且知道一定会吓到[&他:她]，[r]这么一想，突然觉得很抱歉……那个……
+[k]
+
+[charaFace A 3]
+＠新宿的Archer
+该怎么说呢……对不起……。
+[k]
+
+？1：不可饶恕。
+
+[charaFace A 1]
+＠新宿的Archer
+我就知道！
+[k]
+
+＠新宿的Archer
+那啥，真的对不起啦。
+[k]
+
+＠新宿的Archer
+就因为这样，直到刚才为止，[r]我都一直在被那两位胖揍呢。
+[k]
+
+＠新宿的Archer
+具体来说，就是脸部，和胸部之类的。
+[k]
+
+？2：就算你道歉……
+
+[charaFace A 2]
+＠新宿的Archer
+唔，看来只能以这新宿、东京，[r]也就是日本的地理条件为参考……
+[k]
+
+＠新宿的Archer
+切腹！　要切腹吗！[r]我听说那个会很痛的啊！
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+哈哈哈哈哈！[r]这位犯罪绅士还真有意思！
+[k]
+
+[charaFace B 3]
+＠福尔摩斯
+不过不用担心，[&Mr.:Miss][%1][r]似乎已经原谅你了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠新宿的Archer
+真的吗！？
+[k]
+
+？1：这个嘛……姑且吧。
+？！
+
+[charaFace A 1]
+＠新宿的Archer
+心灵挚友啊！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFace D 5]
+[charaFadein C 0.1 0]
+[charaFadein D 0.1 2]
+＠阿尔托莉雅·Alter
+喂，御主。[r]纵容他也该有个限度。
+[k]
+
+＠阿尔托莉雅·Alter
+越是纵容混沌·恶，[r]他们越是会得意忘形。
+[k]
+
+[charaFace D 1]
+＠贞德·Alter
+……吃醋的样子未免有点难看吧？
+[k]
+
+[charaFace C 0]
+＠阿尔托莉雅·Alter
+哦，真是只会叫唤的小猫咪。[r]但调教是很重要的。
+[k]
+
+[charaFace D 0]
+＠贞德·Alter
+……哼？
+[k]
+
+？1：感谢你们俩这么为我担心。
+？！
+
+[charaFace C 3]
+[charaFace D 3]
+
+＠阿尔托莉雅·Alter
+……哼，没什么。
+[k]
+
+＠贞德·Alter
+……我才没担心你呢。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.4]
+[wt 0.7]
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+好啦，总而言之……[r]新宿的Archer，你的记忆似乎有欠缺吧。
+[k]
+
+＠福尔摩斯
+即便如此，你还是隐约察觉到了吧？[r]自己究竟是谁，以及发生了什么。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠新宿的Archer
+差不多吧。
+[k]
+
+[charaFace A 1]
+＠新宿的Archer
+被做了那么多铺垫，而且遭到夏洛克·福尔摩斯[r]如此戒备的存在，世上只有一个。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0 1]
+[wt 0.3]
+＠玛修
+福尔摩斯先生的戒备……[r]Archer先生，难道……！
+[k]
+
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+哎哟，Miss基列莱特。[r]到此为止。
+[k]
+
+[charaFace B 0]
+＠福尔摩斯
+让我们先等他自己的告白吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠新宿的Archer
+……啊～，但是啊。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+正如你的推测，我掌握了你的真名，[r]也告诉了[&Mr.:Miss][%1]。
+[k]
+
+[charaFace B 0]
+＠福尔摩斯
+在此基础上，[&他:她]依然在等待。[r]等待你报上自己的真名。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠新宿的Archer
+……这样啊。[r]你在等我啊？
+[k]
+
+？1：……
+？2：我在等。
+
+？！
+
+[bgmStop BGM_EVENT_5 1.0]
+[charaFace A 1]
+[wt 1.0]
+
+[bgm BGM_EVENT_4 0.1]
+[charaFace A 2]
+＠新宿的Archer
+既然如此，御主。[r]不，御主[%1]啊。
+[k]
+
+＠新宿的Archer
+倘若你愿意原谅我的失德，[r]那我自然希望将自己的真名托付给你。
+[k]
+
+[charaFace A 0]
+＠新宿的Archer
+……或许你已经从福尔摩斯那里得知了我的真名，[r]或许这并没有意义。
+[k]
+
+
+[charaFace A 1]
+＠新宿的Archer
+但这种仪式似乎还是需要的吧！
+[k]
+
+[messageOff]
+[charaFace A 0]
+[wt 0.7]
+[cameraMove 0.2 0,8 1.0]
+[wait camera]
+[cameraHome 0.3]
+[wait camera]
+[wt 0.7]
+
+[charaFace A 1]
+＠新宿的Archer
+……原来是这样，既然如此。
+[k]
+
+[charaFace A 0]
+＠A：莫里亚蒂
+我的名字乃是詹姆斯·莫里亚蒂。[r]作为与幻灵融合的复合从者，在此现界。
+[k]
+
+[charaFace A 2]
+＠A：莫里亚蒂
+我的身躯，我的力量皆为我的御主而存在。[r]我希望能作为一名从者再次与您缔结契约……！
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_4 2.0]
+[wipeout circleIn 2.0 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaSet A 2023000 1 莫里亚蒂]
+[wt 1.0]
+
+[wipein circleIn 2.0 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_7 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠莫里亚蒂
+综上所述我是莫里亚蒂，多指教啦～！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein C 0.1 0]
+[charaFadein D 0.1 2]
+＠阿尔托莉雅·Alter
+……居然能把形迹可疑发扬光大到如此境地。[r]御主，还是早点流放了他比较好。
+[k]
+
+＠贞德·Alter
+说得对。该怎么说呢，那啥吧。[r]一副童话中会出现的狡猾狐狸的嘴脸。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+那还算好的。[r]他属于性质更为恶劣的狐狸。
+[k]
+
+[charaFace B 0]
+＠福尔摩斯
+毕竟他只负责计划。[r]危险的部分则全部交给部下去办。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠阿尔托莉雅·Alter
+不愧是邪恶的领袖。[r]太差劲了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0 1]
+[wt 0.3]
+＠玛修
+没错，在华生博士的著作中，[r]莫里亚蒂……先生也是以首屈一指的大恶人著称的。
+[k]
+
+[charaFace E 2]
+＠玛修
+以及在那莱辛巴赫！[r]莫里亚蒂教授与福尔摩斯先生决斗！
+[k]
+
+[charaFace E 4]
+＠玛修
+终于，两人一同坠入瀑布……
+[k]
+
+[charaFace E 2]
+＠玛修
+御主，请小心。[r]您附近有没有瀑布！？
+[k]
+
+？1：没啦没啦。
+？！
+
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠莫里亚蒂
+噢噢……连玛修都这么戒备我。[r]我好悲伤啊，呜呜呜。
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.7]
+[wt 1.0]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0 1]
+[wt 0.3]
+＠玛修
+啊……那个，怎么说……刚才那些只不过是[r]我基于华生博士的著作对您抱有的印象……
+[k]
+
+[charaFace E 0]
+＠玛修
+新宿的Archer先生……那个……[r]是好人吗？　我确实正逐渐产生这种想法……
+[k]
+
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace A 4]
+[charaDepth B 1]
+[charaDepth A 9]
+[charaFadein B 0.1 2]
+[charaFadein A 0.1 0]
+＠福尔摩斯
+不用介意啦，Miss基列莱特。[r]那是假哭。
+[k]
+
+[charaFace A 2]
+＠莫里亚蒂
+你难道就不会手下留情，没一点怜悯之心吗！？
+[k]
+
+[charaFace B 1]
+＠福尔摩斯
+哈哈哈哈哈。[r]唯独对你，没有。
+[k]
+
+[charaFace B 0]
+＠福尔摩斯
+我只会想着该如何毫不留情地暗算你。
+[k]
+
+[charaFace A 0]
+＠莫里亚蒂
+确实会是这样呢！[r]好了，福尔摩斯，重要的是那个啦。
+[k]
+
+＠莫里亚蒂
+你带来了情报吧？[r]恐怕是[line 3]。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 0.4]
+[wt 0.7]
+[bgm BGM_EVENT_5 0.1]
+
+[charaFace B 5]
+＠福尔摩斯
+嗯，关于破坏这颗星球的说法。[r]……直接说结论吧，完全有可能。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0 0,-90]
+[wt 0.3]
+＠达·芬奇
+等……等一下等一下！[r]这是不可能的！
+[k]
+
+＠达·芬奇
+这颗星球上有好几种安全装置。[r]想绕过全部这些并破坏星球是不可能的。
+[k]
+
+[charaFadeout F 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+说得没错。
+[k]
+
+[charaFace B 3]
+＠福尔摩斯
+拥有漫长连绵历史的这颗星球曾数次奋力克服了难关。
+[k]
+
+[charaFace B 0]
+＠福尔摩斯
+由[#宇宙:外部]而来的非人之物姑且不论。
+[k]
+
+[charaFace B 5]
+＠福尔摩斯
+生于内侧的我们若想破坏这颗星球，[r]嗯，近乎于不可能。
+[k]
+
+＠福尔摩斯
+因此，为了破坏这颗星球，[r]只能从根本上颠覆原来的思路。
+[k]
+
+[charaFace B 3]
+＠福尔摩斯
+……这是狮子王打算在圣都做的事。[r]也是那个爱迪生借助圣杯之力打算做的事。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0 1]
+[wt 0.3]
+＠玛修
+狮子王和……爱迪生先生！？
+[k]
+
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠莫里亚蒂
+……[wt 0.7]原来如此，是这样啊！！[charaFace A 2][r]我居然企图做这种无聊的事啊！
+[k]
+
+[charaFace A 0]
+＠莫里亚蒂
+不，虽说确实很无聊[line 3]。[r]啊啊，确实很有我的风格！
+[k]
+
+＠莫里亚蒂
+明白了！　我明白了哦，[r]明白了那种心理！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠贞德·Alter
+别一个人在那自说自话地明白，快给我说明啦！[r]狮子王和爱迪生他们究竟企图做什么！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0 1]
+[wt 0.3]
+＠玛修
+……嗯。
+[k]
+
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+
+[charaSet H 98094000 1 狮子王剪影]
+
+[charaPut G 2]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaDepth E 9]
+[charaFadein E 0 2]
+[wt 0.3]
+
+[charaFace H 0]
+[charaDepth H 1]
+[charaFilter H silhouette 00000080]
+[charaFadein H 0.7 -160,0]
+[charaMove H -192,0 1.0]
+
+[charaFace E 0]
+＠玛修
+狮子王将自己的圣枪化为『塔』。[r]并打算将没被选上的人类全部消灭。
+[k]
+
+[charaFace E 4]
+＠玛修
+虽说是打算消灭，但因为那时候人理正在被烧却[line 3][r]所以那种救济本来预计是可以成立的。
+[k]
+
+[charaFadeout H 0.7]
+[wt 0.4]
+
+[charaFadeout E 0.3]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[messageOff]
+
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFace D 0]
+[charaFadein C 0.1 0]
+[charaFadein D 0.1 2]
+＠阿尔托莉雅·Alter
+虽然是种肤浅的想法，[r]但也是在经过了苦闷的烦恼后选择的道路。
+[k]
+
+＠贞德·Alter
+什么嘛，太蠢了。[r]与其那样，还不如选择大家一起毁灭的道路呢。
+[k]
+
+[charaFace D 5]
+＠贞德·Alter
+所以我才讨厌只想着独自突击的王啦。[r]虽然消极的王更讨厌。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0 1]
+[wt 0.3]
+＠玛修
+而爱迪生先生……
+[k]
+
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+
+[charaSet H 5025001 1 爱迪生剪影]
+
+[charaPut G 2]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaDepth E 9]
+[charaFadein E 0 2]
+[wt 0.3]
+
+[charaFace H 0]
+[charaDepth H 1]
+[charaFilter H silhouette 00000080]
+[charaFadein H 0.7 -160,0]
+[charaMove H -192,0 1.0]
+
+[charaFace E 0]
+＠玛修
+并没有采取具体的行动，[r]只是作为一个话题谈论了一下……
+[k]
+
+＠玛修
+根据他的说法，似乎打算在获得圣杯后，[r]将美利坚从世界分离出去，作为浮游于历史外的存在。
+[k]
+
+[charaFadeout H 0.7]
+[wt 0.4]
+
+[charaFadeout E 0.3]
+[charaPut G 1200,1200]
+[wt 0.3]
+
+[wt 0.4]
+
+[charaPut G 1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0 0,-90]
+[wt 0.3]
+＠达·芬奇
+打算在外面世界毁灭的情况下，[r]也要保护一些人的狮子王[line 3]
+[k]
+
+＠达·芬奇
+以及打算将本国和外部世界分割，[r]成为永远的爱迪生啊……
+[k]
+
+[charaFace F 2]
+＠达·芬奇
+唔，唔唔？[r]咦？　也就是说……哎？
+[k]
+
+[charaFace F 6]
+＠达·芬奇
+原来是这样啊！！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0 1]
+＠玛修
+达·芬奇亲！？
+[k]
+
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠莫里亚蒂
+不愧是稀世的天才艺术家。[r]直觉真是敏锐呢。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0 0,-90]
+[wt 0.3]
+＠达·芬奇
+稍……稍微等一下！[r]我现在就去调查！
+[k]
+
+[se ad59]
+[seStop ad59 1.4]
+[charaFadeout F 0.7]
+[wt 1.0]
+
+
+＠达·芬奇
+喂～，工作人员集合[line 2]！[r]紧急～调～查[line 8]！！
+[k]
+
+[messageOff]
+
+[se ad3]
+[seVolume ad3 0 0.5]
+[seStop ad3 2.0]
+[wt 1.4]
+[se ad192]
+[seStop ad192 0.7]
+[wt 1.0]
+
+[wt 0.4]
+
+[se ad3]
+[seVolume ad3 0 0.3]
+[seStop ad3 2.0]
+[se ad184]
+[seVolume ad184 0 0.7]
+[seStop ad184 2.0]
+[wt 1.0]
+
+[se ad172]
+[seStop ad172 2.0]
+[wt 1.0]
+
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[charaShake D 0.05 0 4 0.4]
+＠贞德·Alter
+喂。[r]我完全没搞懂啊。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+……毁灭世界是做不到的。
+[k]
+
+[charaFace B 0]
+＠福尔摩斯
+虽然毁灭世界并不是盖提亚的目的，[r]但最后他还是需要3000年的时光。
+[k]
+
+[charaFace B 5]
+＠福尔摩斯
+但是，将这世界从历史中剪下来是可能的。[r]也就是说……
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.7]
+[wt 1.0]
+
+？1：从历史中被剪下来的世界……
+？2：是可以毁灭的？
+？！
+
+[charaTalk off]
+[charaFace B 2]
+[charaFace A 2]
+[charaFadein B 0.1 2]
+[charaFadein A 0.1 0]
+＠两人
+[f large]太正确了！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0 0,-90]
+[wt 0.3]
+＠达·芬奇
+对，没错！[r]怎么会这样，这个世界毫无意义！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0 1]
+＠玛修
+达·芬奇亲！[r]这……这是什么意思！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0 0,-90]
+＠达·芬奇
+这世界已经从历史中被分离出去了！
+[k]
+
+＠达·芬奇
+也就是说，无论那个新宿发生了什么，[r][#都对人理毫无影响]！
+[k]
+
+[charaFace F 2]
+＠达·芬奇
+不，当然也可能会出现些微不安定，[r]但这种最多也就是轻微震荡的程度。
+[k]
+
+[charaFace F 0]
+＠达·芬奇
+虽说目前人理还处于不安定的状况，[r]这种程度也造不成什么坏影响。
+[k]
+
+[charaFace F 2]
+＠达·芬奇
+最糟的情况下，也不过是那边的新宿毁灭而已……[r]对迦勒底也不会有什么影响！
+[k]
+
+？1：这边的世界毁灭？
+
+[charaFace F 4]
+＠达·芬奇
+……前提是如果毁灭无法回避。
+[k]
+
+？2：从者们呢……？
+
+[charaFace F 4]
+＠达·芬奇
+当然，只要世界毁灭，他们只能消失……
+[k]
+
+[charaFace F 0]
+＠达·芬奇
+不过灵基情报并不会失去，[r]所以还是可以重新召唤的。
+[k]
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0 1]
+＠玛修
+请等一下，你们忘了最重要的事啊。[r]御主会怎么样啊？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0 0,-90]
+＠达·芬奇
+……问题就在这里。
+[k]
+
+[charaFace F 2]
+＠达·芬奇
+也就是说，接下来的时间[r]都要花在如何让[%1]返回方面。
+[k]
+
+[charaFace F 6]
+＠达·芬奇
+不，但是！
+[k]
+
+[charaFace F 0]
+＠达·芬奇
+既然已经脱离了历史，[r]那或许可以进行强行灵子转移！
+[k]
+
+[charaFace F 2]
+＠达·芬奇
+只要能这样，就能全都解决了！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0 1]
+＠玛修
+……虽说确实是这样……
+[k]
+
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace A 0]
+[charaFadein B 0.1 2]
+[charaFadein A 0.1 0]
+＠福尔摩斯
+……唔。
+[k]
+
+＠莫里亚蒂
+确实是这样啊。
+[k]
+
+[charaFace A 1]
+＠莫里亚蒂
+新宿已经化作邪恶之都，[r]会被另一个我破坏[line 3]连同星球一起。
+[k]
+
+？1：怎么能这样……！
+？！
+
+[charaFace A 2]
+＠莫里亚蒂
+不过请等一下。[r]新宿会毁灭，世界会毁灭，从者也会毁灭。
+[k]
+
+[charaFace A 0]
+＠莫里亚蒂
+但只要你能平安回到迦勒底，[r]我们就不会损失任何东西。
+[k]
+
+[charaFace A 0]
+＠莫里亚蒂
+不，虽然我们会死哦！[r]这个姑且不论，只是这新宿归为虚无而已。
+[k]
+
+？1：我觉得这样不对！
+？！
+
+[charaFace B 3]
+＠福尔摩斯
+我就猜到[&Mr.:Miss][%1]一定会这么说。[r]Miss基列莱特。你怎么看？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0 1]
+[wt 0.3]
+＠玛修
+……[wt 0.7][charaFace E 8]作为一名从者，[r]御主的生命对我来说是比什么都重要的存在。
+[k]
+
+[charaFace E 12]
+＠玛修
+但是，该怎么说呢……或许这种说法非常傲慢。
+[k]
+
+[charaFace E 14]
+＠玛修
+但因此感到安全，就放任新宿不管，[r]而独自归还的御主……呃……
+[k]
+
+[charaFace E 13]
+＠玛修
+[#非常不像御主的风格]，这是我的看法。
+[k]
+
+？1：不愧是玛修！
+
+[charaFace E 6]
+＠玛修
+不，没有！[r]请忘了我刚才说的话。
+[k]
+
+[charaFace E 5]
+＠玛修
+还是不能让御主置身危险中，[r]安全第一，我这就去搜索通过灵子转移的返回手段。
+[k]
+
+？2：不愧是我的从者！
+
+[charaFace E 3]
+＠玛修
+啊……您现在居然还这么看待我，[r]御主，万分感谢。
+[k]
+
+？！
+
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+
+[charaTalk C]
+[charaFace C 5]
+[charaFace D 5]
+[charaFadein C 0.1 0]
+[charaFadein D 0.1 2]
+＠阿尔托莉雅·Alter
+……唔。
+[k]
+
+＠贞德·Alter
+哼。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠莫里亚蒂
+……人家在和前女友调情，[r]你们嫉妒了？
+[k]
+
+[charaFace A 2]
+
+[messageOff]
+
+[se bac10]
+[effect bit_talk_13 -96,64]
+[se bac27]
+[effect bit_talk_27 96,-64]
+
+[charaShake A 0.05 7 4 2.0]
+[wt 0.4]
+[effectStop bit_talk_27]
+[wt 1.0]
+[effectStop bit_talk_13]
+
+[wt 0.4]
+[charaShake A 0.05 4 0 0.7]
+[wt 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFace A 2]
+[charaFadein B 0.1 2]
+[charaFadein A 0.1 0]
+＠福尔摩斯
+我说你啊，摸老虎屁股也要适可而止。
+[k]
+
+＠莫里亚蒂
+我会照办……好吓人……吓死我了……
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.4]
+[wt 0.5]
+[bgm BGM_EVENT_4 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0 0,-90]
+[wt 0.3]
+＠达·芬奇
+好了……从迦勒底的立场来看，[r]我们是不能接受[%1]与新宿生死与共的。
+[k]
+
+[charaFace F 1]
+＠达·芬奇
+作为和你共同战斗了一年的战友。[r]我打算全力阻止你。
+[k]
+
+[charaFace F 0]
+＠达·芬奇
+但我还是想尊重御主依然想拯救新宿的意志。
+[k]
+
+＠达·芬奇
+所以，[%1]。[r]我最后再问你一次。
+[k]
+
+[charaFace F 2]
+＠达·芬奇
+……拯救这个新宿是没有[#报酬:意义]的。
+[k]
+
+＠达·芬奇
+如果对人类史起不到什么作用，[r]就算有人能从保护中找到什么价值，也没有意义。
+[k]
+
+＠达·芬奇
+就连和你一起行动的从者在这里消失也毫无问题。
+[k]
+
+[charaFace F 0]
+＠达·芬奇
+嗯，这种说法或许有些过分。[r]但从人理修复的角度来说，真的完全没有问题。
+[k]
+
+＠达·芬奇
+而正在你周围的从者们[r]应该也不会因为你的选择而责备你。
+[k]
+
+[charaFace F 1]
+＠达·芬奇
+即便如此[line 3]还要这么做吗，即便如此。
+[k]
+
+[charaFace F 0]
+＠达·芬奇
+你真的觉得这[#新宿:城市][r]有值得拯救的价值吗？
+[k]
+
+？1：是的。
+
+[charaFace F 1]
+＠达·芬奇
+……这样啊。[r]嗯，这或许才像你的风格吧。
+[k]
+
+？2：我不知道。
+
+[charaFace F 2]
+＠达·芬奇
+虽然不知道，但还是想拯救。[r]真难办……虽然让人很难办，嗯，但确实很像你的风格！
+[k]
+
+？！
+
+[charaFace F 1]
+＠达·芬奇
+但我放心了！
+[k]
+
+[charaFace F 2]
+＠达·芬奇
+就算拯救个一两次世界，[r]你也一点都没变，还是那个怀着不屈斗志一心向前的老好人！
+[k]
+
+[charaFace F 0]
+＠达·芬奇
+那就没办法了。[r]迦勒底会全力支援你哦。
+[k]
+
+＠达·芬奇
+不过我们还是会做好灵子转移强制返回的准备。
+[k]
+
+[charaFadeout F 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+好，既然你已经下定了决心，[r]那我也不能不说出来了！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠贞德·Alter
+这就是你从刚才起一直坐立不安的理由？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+因为如果你返回，我说出真相就没有意义了。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_4 0.4]
+[wt 0.5]
+[bgm BGM_EVENT_5 0.1]
+
+[charaFace B 5]
+＠福尔摩斯
+这次要说的，是真犯人[line 3]也就是邪恶的[r]莫里亚蒂教授究竟打算用什么方法破坏这颗星球。
+[k]
+
+[charaFace B 0]
+＠福尔摩斯
+如果是被分割的世界，确实安全装置……[r]类似抑止力那种存在也就不起作用了。
+[k]
+
+＠福尔摩斯
+但说到底，破坏星球这种事，[r]原本就是不该发生的。
+[k]
+
+[charaFace B 3]
+＠福尔摩斯
+就算再怎么支配这新宿，[r]仅凭这样也是无法破坏星球的。
+[k]
+
+[charaFace B 5]
+＠福尔摩斯
+……因此，莫里亚蒂，[r]你觉得破坏星球需要什么？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠莫里亚蒂
+唔。
+[k]
+
+＠莫里亚蒂
+想要破坏星球……[r]唯独不能缺少用于破坏的能量。
+[k]
+
+＠莫里亚蒂
+要把能量，集中在地球的核……[r]也可以称之为崩溃的“点”。
+[k]
+
+[charaFace A 0]
+＠莫里亚蒂
+……虽然说起来很简单，[r]但实际需要的能量大到难以想象。
+[k]
+
+[charaFace A 1]
+＠莫里亚蒂
+对，打个比方[line 3]。
+[k]
+
+[charaFace A 0]
+＠莫里亚蒂
+陨石，假如是飞向地球的陨石，[r]应该可以完全提供这份能量吧。
+[k]
+
+[charaFace A 1]
+＠莫里亚蒂
+但理所当然，所谓的陨石，[r][#是不知道会坠落在哪里的]。
+[k]
+
+＠莫里亚蒂
+陨石或许确实拥有庞大的能量，[r]但却无法击中目标。
+[k]
+
+＠莫里亚蒂
+……既然如此，接下来需要的就是能够命中的装置了。[r]吸引陨石，让陨石能正确击中那点的[line 3]
+[k]
+
+＠莫里亚蒂
+……[wt 1.0][charaFace A 2][#枪身:Barrel]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0 1]
+[wt 0.3]
+＠玛修
+呃，也就是说……[r][#为了让陨石直接击中星球的枪身]吗？
+[k]
+
+
+？1：枪身……？
+？！
+
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+没错，他也对御主说过了吧？[r]耸立于新宿区西端的那座神秘的塔。
+[k]
+
+[charaFace B 3]
+＠福尔摩斯
+那座仿佛与时间赛跑般急速向天建造的高塔……
+[k]
+
+[charaFace B 5]
+＠福尔摩斯
+正是[#莫里亚蒂所追求]的[#枪身:Barrel]。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0 0,-90]
+[wt 0.3]
+＠达·芬奇
+啊……哈！？[r]你说那座大楼……就是[#枪身:Barrel]！？
+[k]
+
+＠达·芬奇
+不，但是……那可动不了哦！[r]就算真的是枪身，又该怎么装入陨石啊！？
+[k]
+
+[charaFadeout F 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+幻灵[line 3]。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠阿尔托莉雅·Alter
+幻灵……？[r]未能到达英灵境地的存在怎么了？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+嗯，我一直不明白为什么[r][#那个]莫里亚蒂会如此拘泥于幻灵。
+[k]
+
+[charaFace B 0]
+＠福尔摩斯
+但当我重新阅读了一遍他的著作『小行星力学』之后，[r]才终于把握了他的想法，
+[k]
+
+[charaFace B 5]
+＠福尔摩斯
+他打算[#用从者的能力]操纵陨石。
+[k]
+
+＠福尔摩斯
+为此就需要幻灵的力量。[r][#无论在何种状况下]，[#都能让子弹命中的能力]。
+[k]
+
+[charaFace B 2]
+＠福尔摩斯
+没错！[r]附属于莫里亚蒂的幻灵正是[#魔弹射手:Der Freischutz]。
+[k]
+
+[charaFace B 0]
+＠福尔摩斯
+与恶魔交易，获得了七发魔弹的猎人[line 3][r]马克斯，被莫里亚蒂吸收了！
+[k]
+
+[charaFace B 5]
+＠福尔摩斯
+六发，只要在六发子弹内，[r]他就能克服所有因果，必定命中靶心。
+[k]
+
+
+＠福尔摩斯
+但反过来说，以他的能力只能击中六发。[r]他甚至无法操作最后的第七发子弹。
+[k]
+
+
+[charaFace B 3]
+＠福尔摩斯
+而且……
+[k]
+
+[charaFace B 0]
+＠福尔摩斯
+这能力倾向于『能够命中』，[r]并不擅长『伤害』。
+[k]
+
+[charaFace B 5]
+＠福尔摩斯
+原本是只作为[#普通]歌剧的登场人物被传颂的幻灵。
+[k]
+
+＠福尔摩斯
+却被那个莫里亚蒂利用了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠莫里亚蒂
+原来是这样……[r]难怪……
+[k]
+
+＠莫里亚蒂
+不是作为Caster，而是作为Archer被召唤啊……
+[k]
+
+
+[charaFace A 0]
+＠莫里亚蒂
+我就奇怪自己生前从未使用过的这棺材，[r]居然能砰砰地射出子弹导弹什么的……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠贞德·Alter
+你倒是早点意识到啊！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaFace F 0]
+[charaFadein F 0 0,-90]
+
+＠达·芬奇
+贞德·Alter的吐槽非常在理……
+[k]
+
+[charaFadeout F 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace B 5]
+[charaFace A 0]
+[charaFadein B 0.1 2]
+[charaFadein A 0.1 0]
+＠莫里亚蒂
+哈哈哈哈哈，对不起啦！
+[k]
+
+[charaFace A 1]
+＠莫里亚蒂
+恐怕是我被分离出去的时候，[r]这部分知识也剥落了吧。
+[k]
+
+[charaFace A 0]
+[charaFace B 0]
+＠福尔摩斯
+我曾和你说过时间有限吧。[r][&Mr.:Miss][%1]。
+[k]
+
+[charaFace B 5]
+＠福尔摩斯
+那座塔一旦完成，[r]恐怕不用多久陨石就会飞来。
+[k]
+
+＠福尔摩斯
+飞来的陨石会进入那座“枪身”[line 3][r]作为魔弹，击入星球。
+[k]
+
+[charaFace B 3]
+＠福尔摩斯
+如果莫里亚蒂的理论是正确的，[r]这颗星球就会被[#杀掉]。
+[k]
+
+[charaFace B 0]
+＠福尔摩斯
+究极大屠杀，不是杀人而是杀害世界，[r]杀害星球[line 3]真是史上最恶劣的犯罪。
+[k]
+
+＠莫里亚蒂
+真不好意思……
+[k]
+
+？1：这不是夸奖你。
+？！
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠阿尔托莉雅·Alter
+蠢货。
+[k]
+
+[charaFace C 0]
+＠阿尔托莉雅·Alter
+……总之，先不管这些能否实现，[r]幻影魔人同盟[#是以此为目标行动]的吧？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+没错。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠贞德·Alter
+……虽然曾打算破坏法兰西的我说这话未免有些不妥，[r]但有些可怕啊。超可怕的。
+[k]
+
+[charaFace D 5]
+＠贞德·Alter
+因为这样一来，自己人也会死吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+嗯，会死吧。[r]虽然从理论上来说从者是不会死的。
+[k]
+
+[charaFace B 3]
+＠福尔摩斯
+但即便如此，也要协助他破坏星球的话，[r]基于享乐、复仇、还是其他的什么。
+[k]
+
+[charaFace B 5]
+＠福尔摩斯
+总之他们在作为强大的墙壁蹂躏新宿的同时，[r]也背负着守护“枪身”的职责。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.4]
+[wt 0.7]
+[bgm BGM_EVENT_4 0.1]
+
+＠福尔摩斯
+那我们保护新宿该做的第一步。[r]就是让新宿的Assassin无力化。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein C 0.1 0]
+[charaFadein D 0.1 2]
+＠阿尔托莉雅·Alter
+对。[r]那变身实在是出色。
+[k]
+
+[charaFace C 1]
+＠阿尔托莉雅·Alter
+照这样下去，贞德·Alter[r]毫无疑问会被斩杀的。
+[k]
+
+[charaFace D 5]
+＠贞德·Alter
+别说得我肯定会被砍啊，你这白痴。[r]不过那家伙确实很让人火大，还是尽快收拾掉比较好。
+[k]
+
+[charaFace D 0]
+＠贞德·Alter
+所以该怎么做？
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFace A 0]
+[charaFadein B 0.1 2]
+[charaFadein A 0.1 0]
+＠福尔摩斯
+那莫里亚蒂。
+[k]
+
+[charaFace A 2]
+＠莫里亚蒂
+嗯，把解说这个极为重要的职务[r]轻易从我这里夺走的可恨的福尔摩斯，有事吗？
+[k]
+
+[charaFace B 0]
+＠福尔摩斯
+憎恨的点是那个吗……
+[k]
+
+＠福尔摩斯
+制定计划吧。[r]你比较擅长搞这类阴谋诡计吧？
+[k]
+
+[charaFace B 3]
+＠福尔摩斯
+我虽然很擅长粉碎这类计划，[r]但我不认为自己在设计方面能够凌驾于你。
+[k]
+
+[charaFace A 0]
+＠莫里亚蒂
+原来如此，既然是这样，[r]给我情报。
+[k]
+
+
+＠莫里亚蒂
+我要关于对手的一切。[r]我会将外部交易包括在内全部联动起来。
+[k]
+
+[charaFace B 0]
+＠福尔摩斯
+给，资料。[se ad7][seVolume ad7 0 0.7]
+[k]
+
+[charaFace A 1]
+＠莫里亚蒂
+哦，嗯嗯……[r]原来如此……
+[k]
+
+＠莫里亚蒂
+唔……把这里这样弄，如此一来……[r]但是……
+[k]
+
+[charaFace A 0]
+＠莫里亚蒂
+总之重要的是……性感……
+[k]
+
+？1：喂，你刚才是不是说了性感？
+
+＠莫里亚蒂
+说了啊！[r]这是很重要的！
+[k]
+
+？2：我怎么听到了个奇怪的词汇。
+
+＠莫里亚蒂
+唔？[r]是你想多了！　我的计划很完美！
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠阿尔托莉雅·Alter
+……真的没问题吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+虽然这男人的计划会很莫名其妙，[r]但最后看来基本都能顺利进行。
+[k]
+
+[charaFace B 3]
+＠福尔摩斯
+我知道难免会产生不安的心情，[r]就当是下个赌注好了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaFace A 2]
+＠莫里亚蒂
+那各位，我们上街[line 3]买衣服吧！[r]不不对，应该是抢衣服吧。
+[k]
+
+[bgmStop BGM_EVENT_4 1.0]
+
+？1：……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaFace C 2]
+[charaFace D 2]
+[charaFadein C 0.1 0]
+[charaFadein D 0.1 2]
+＠三人
+[shake 0.05 4 4 0.7]
+哈？
+[k]
+
+[messageOff]
+
+[wipeout rollRight 2.0 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[scene 38300]
+
+[wipein rollLeft 2.0 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_7 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠阿尔托莉雅·Alter
+……这计划真的能成功吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 3]
+[charaFadein A 0.1 0]
+[charaFadein B 0.1 2]
+＠莫里亚蒂
+当然能，毫无疑问能。[r]那福尔摩斯，最后一击就交给你吧。
+[k]
+
+＠福尔摩斯
+哎哟哟。[r]没什么交不交给我的，你的计划也太乱来了。
+[k]
+
+[charaFace A 1]
+＠莫里亚蒂
+御主，为了以防万一，我再问一句。[r]同意让我执行我的计划吗？
+[k]
+
+？1：虽然有些不安……
+
+[charaFace A 0]
+＠莫里亚蒂
+当然，计划会需要临机应变。[r]但重要的部分决不会出现差错。
+[k]
+
+＠莫里亚蒂
+暗杀新宿的Assassin。[r]一定要达成目标。
+[k]
+
+？2：但只能这么做了。
+
+[charaFace B 5]
+＠福尔摩斯
+说得没错。
+[k]
+
+[charaFace B 0]
+＠福尔摩斯
+没事，虽然确实很乱来[line 3][r]但确实灵活地运用了我和她们的特性。
+[k]
+
+[charaFace B 1]
+＠福尔摩斯
+顺其自然吧。
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_7 0.4]
+[wt 0.4]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠莫里亚蒂
+那我们开始吧。[r]首先是打扮的时间！
+[k]
+
+[charaFace A 2]
+＠莫里亚蒂
+综上所述，我们先请各位小混混和被[#洗脑:入侵]的花腔歌手[r]速速退场吧。
+[k]
+
+[charaFace A 0]
+＠莫里亚蒂
+不想走？[r]我想也是！　那就战斗吧！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

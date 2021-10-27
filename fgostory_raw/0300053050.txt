@@ -1,0 +1,1228 @@
+
+＄03-00-05-30-4-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 8001410 1 玛修]
+[charaSet B 1098123200 1 戈尔德鲁夫]
+[charaSet C 1098124510 1 达·芬奇]
+[charaSet D 1098158300 1 尼莫]
+[charaSet E 9005001 1 福尔摩斯]
+[sceneSet F 87900 1]
+[sceneSet G 88000 1]
+[charaSet H 1098182310 1 尼莫烘焙坊]
+[charaSet I 98115000 1 特效用dummy]
+[charaSet J 98115000 1 特效用dummy]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+
+[cameraMove 0 0,0 1.01]
+
+[scene 51601]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_62 0.1]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+玛修·基列莱特。[r]与[%1]一同返回。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+＠戈尔德鲁夫
+很好，出发吧！　[wt 0.4][charaFace B 7]啊不，慢着。[r]伊阿宋怎么了？　没跟你们一起回来吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠玛修
+伊阿宋先生他[line 3]
+[k]
+
+？1：就让伊阿宋好好休息吧。
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[wt 1.0]
+[charaFace B 4]
+[wt 1.0]
+
+[charaFace B 0]
+＠戈尔德鲁夫
+[line 3]这样啊。[r]毕竟他工作得太累了。
+[k]
+
+＠戈尔德鲁夫
+而且还是个灵基不怎么样的三流从者。[r]既然想休息，那我也拿他没辙。
+[k]
+
+[charaFace B 16]
+＠戈尔德鲁夫
+好吧，我允许他休假！[r]那我们回Storm Border吧！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 86500]
+[wt 1.0]
+
+[se ad14]
+[seVolume ad14 0 0]
+[se ad629]
+[seVolume ad629 0 0]
+[shake 0.02 2 2 0]
+
+[seVolume ad14 1.0 0.8]
+[seVolume ad629 1.0 0.8]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+[se ad10]
+[se ad228]
+[wt 2.0]
+
+
+[fadeout black 1.0]
+[seStop ad228 1.0]
+[seStop ad14 1.0]
+[seVolume ad629 1.0 0.4]
+[wait fade]
+
+[shakeStop]
+
+[scene 51601]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+＠戈尔德鲁夫
+赶快赶快赶快！[r]很好，看到了！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠[51ffff]达·芬奇[-]
+[51ffff]我来导航哦。[-][r][51ffff]就这样直接驶入Storm Border！[-]
+[k]
+
+
+[messageOff]
+[wt 0.1]
+
+[seVolume ad629 0.4 1.0]
+[wt 1.2]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_62 1.0 0.2]
+[seStop ad629 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaPut J 1200,1200]
+
+[scene 34901]
+[wt 1.0]
+
+
+[shake 0.02 2 2 0]
+[se ad14]
+[seVolume ad14 0 0]
+[seVolume ad14 1.0 0.6]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[se ad10]
+[se ad640]
+[shake 0.02 3 3 0]
+[wt 1.4]
+
+＠[9bb9ff]广播语音[-]
+[9bb9ff]……德雷……克……[-][r][9bb9ff]……可恨的……人类……[-]
+[k]
+
+＠[9bb9ff]广播语音[-]
+[9bb9ff]……绝海……被突破……[-][r][9bb9ff]宙斯啊……虽然可恨，但之后，就交给你了……[-]
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[shake 0.03 4 4 0]
+[se ad619]
+[seVolume ad619 0 0]
+
+[seVolume ad14 1.0 1.0]
+[seVolume ad619 1.0 1.0]
+[wt 1.6]
+
+[se ad10]
+[se ad640]
+[se ad228]
+[wt 1.8]
+
+[seStop ad228 0.4]
+[wt 1.2]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[seStop ad14 2.0]
+[seStop ad619 2.0]
+[seStop ad10 2.0]
+[seStop ad640 2.0]
+[seStop ad228 2.0]
+[wait fade]
+
+[shakeStop]
+
+
+
+
+
+[scene 86200]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠尼莫
+好了，我们出发吧。
+[k]
+
+＠尼莫
+虽然失去了许多人，[r]但却留下了重要的东西。
+[k]
+
+＠尼莫
+那就是我们抵达了这里的事实。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠福尔摩斯
+说得很对。
+[k]
+
+＠福尔摩斯
+在来这里的途中，[r]所有英雄都付出了自己的生命。
+[k]
+
+＠福尔摩斯
+他们替我们抹去了一起葬身这个选项。
+[k]
+
+？1：……出发吧！
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠玛修
+是！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_82 1.0]
+
+[se ad619]
+[seVolume ad619 0 0]
+[se ade54]
+[seVolume ade54 0 0]
+[seVolume ad619 1.0 0.1]
+[seVolume ade55 1.0 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠戈尔德鲁夫
+唔？
+[k]
+
+＠戈尔德鲁夫
+话说怎么不只是地面在摇晃，[r]连天花板也传来了声音呢？
+[k]
+
+＠戈尔德鲁夫
+……我有种不祥的预感……
+[k]
+
+[charaFace B 12]
+＠戈尔德鲁夫
+（偷瞄。）
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[charaFadein F 0.1 0,-200]
+[wt 1.0]
+
+[shake 0.03 4 4 0]
+[seVolume ad619 0.5 0.6]
+[seVolume ade55 0.5 1.0]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wt 0.3]
+[se adm11]
+[wait wipe]
+[wt 2.0]
+
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[seVolume ad619 0.5 0.2]
+[seVolume ade55 0.5 0.1]
+[wait wipe]
+
+[shakeStop]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[scene 86200]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[seStop adm11 0.5]
+[wait wipe]
+[wt 0.3]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠戈尔德鲁夫
+[f large]上面！！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 22]
+[charaFadein C 0.1 1]
+＠[51ffff]达·芬奇[-]
+[51ffff]水！！[-]
+[k]
+
+？1：好厉害！！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+＠福尔摩斯
+恕我在你们词汇量显著匮乏时说明一下。
+[k]
+
+＠福尔摩斯
+似乎由于波塞冬被打倒，[r]用来抵御海水的魔力障壁也消失了。
+[k]
+
+[charaFace E 8]
+＠福尔摩斯
+船长，这样下去舰艇顶部就会遭到水流猛烈冲击。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠尼莫
+……好。[r]对舰导弹准备发射，开始输入数据！
+[k]
+
+＠尼莫
+目标为波塞冬船体。[r]也就是说，尽快破坏那个看守，进入降落态势！
+[k]
+
+[charaFace D 2]
+＠尼莫
+必须瞄准不会波及舰艇的位置！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad817]
+[wt 1.0]
+
+[se ad609]
+[shake 0.03 4 4 1.0]
+[wt 2.4]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+＠戈尔德鲁夫
+噢噢噢噢噢噢！？[r]在震动在震动我的肚子也在震动在震动！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 21]
+[charaFadein C 0.1 1]
+＠[51ffff]达·芬奇[-]
+[51ffff]这……这样真的没问题吗！？[-]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠福尔摩斯
+哈哈哈，接下来也只能祈祷了！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠尼莫
+很好，崩塌[line 3]开始降落！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+御主！[r]请握紧我的手！
+[k]
+
+？1：玛修！
+？！
+
+[messageOff]
+[wt 0.1]
+
+[se ad215]
+[charaShake A 0.02 2 2 0.4]
+[wt 1.0]
+
+[charaFace A 2]
+＠玛修
+来，我们出发吧！[r]前往目的地，奥林波斯！
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,20 1.01]
+[wt 0.5]
+[cameraMove 0.4 0,0 1.01]
+[wt 0.8]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[cameraMove 0 0,0 1.01]
+
+[charaFadein G 0.1 0,-200]
+[wt 1.0]
+
+[se ad609]
+[se ad14]
+[seVolume ad14 0 0]
+[shake 0.02 3 3 0]
+
+
+[seVolume ad619 1.0 0.6]
+[seVolume ade55 1.0 0.6]
+[seVolume ad14 1.0 0.6]
+
+[fadein black 1.0]
+[wait fade]
+[wt 3.0]
+
+
+＠戈尔德鲁夫
+掉下去啦[line 3]！！[r]要死啦[line 5]！！
+[k]
+
+
+＠尼莫
+不会死啦，我也不会让你们死。[r]不过也许会痛得要死就是了。
+[k]
+
+
+＠戈尔德鲁夫
+根本起不到任何安慰作用[line 3]！
+[k]
+
+
+[messageOff]
+[wt 0.1]
+
+[se ad226]
+[seVolume ad226 0 0.6]
+[se ad609]
+[seVolume ad609 0 0.6]
+[shake 0.03 4 5 1.6]
+[wt 1.6]
+[shake 0.02 3 3 0]
+[wt 1.2]
+
+
+
+[messageOff]
+[wt 0.1]
+
+[cameraMove 4.0 0,0 1.2]
+[seVolume ad619 0.6 1.0]
+[seVolume ad14 0.6 1.0]
+[seVolume ade55 0.6 1.0]
+[wt 2.0]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_80 2.0]
+[seStop ad619 2.0]
+[seStop ad14 2.0]
+[seStop ade55 2.0]
+[wait fade]
+
+[cameraMove 0 0,0 1.01]
+[charaFadeout G 0.1]
+
+[shakeStop]
+
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 0.1]
+[wait fade]
+
+
+[wt 2.5]
+
+
+？1：大家都没事吧？
+？！
+
+
+[fadeout black 0.1]
+[wait fade]
+
+[charaSet C 1098124510 1 达·芬奇]
+[charaSet F 1098182210 1 尼莫引擎]
+[charaSet G 1098182110 1 尼莫教授]
+[charaSet I 98002000 1 芙芙]
+[wt 0.5]
+
+[scene 86200]
+[wt 0.5]
+
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠尼莫
+没事……[r]各区域，请回答。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠尼莫引擎
+这里是发动机室，有人家在这里，[r]当然平安无事啦。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠尼莫教授
+在，我来回复。[r]这里是第二区域，全员平安无事～。
+[k]
+
+＠尼莫教授
+不过我撞到了脑袋，肿了个包……[r]……呜呜。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+＠尼莫烘焙坊
+在～，这里是食堂大姐姐～♡[r]大家的美味饭菜都还在哦～。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠福尔摩斯
+我……我也没事。[r]哎呀，好久没体验这种酒醉感了……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠[51ffff]达·芬奇[-]
+[51ffff]我在我在，这里是电脑室。[-][r][51ffff]目前……还算马马虎虎吧？[-]
+[k]
+
+[charaFace C 14]
+＠[51ffff]达·芬奇[-]
+[51ffff]应该没有陷入丧失机能的状态。[-][r][51ffff]但是，唉，有点累……[-]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+玛修·基列莱特，[r]以及芙芙，都平安无事。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[charaMoveReturn I 0,30 0.5]
+＠芙芙
+芙呜！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 0.8]
+[charaFadeout I 0.1]
+[wt 1.0]
+[bgm BGM_EVENT_79 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠福尔摩斯
+总之，我们总算是抵达了。
+[k]
+
+＠福尔摩斯
+抵达了身为[#隐匿者:Crypter]队长的基尔什塔利亚[r]所在的第五个[#异闻带:Lostbelt]根据地。
+[k]
+
+[charaFace E 6]
+＠福尔摩斯
+快看。[r]……眼前这难以置信的光景。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠戈尔德鲁夫
+……[r]……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠尼莫
+……受惊过度昏厥过去了吗……[r]这也在所难免……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[imageSet B scene88100 1]
+[charaScale B 2.01]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 22]
+[charaFadein C 0.1 1]
+＠[51ffff]达·芬奇[-]
+[51ffff]简直就像……闯入了神之世界。[-]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+这里就是星间都市山脉[line 3]
+[k]
+
+？1：奥林波斯……！
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[scene 10000]
+[charaFadeout A 0.1]
+[charaFadein B 0.1 519,-100]
+
+[wt 1.0]
+
+[fadein black 2.5]
+[wait fade]
+[charaMove B 519,-720 8.0]
+[wt 10.5]
+
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_79 1.5]
+[wait fade]
+
+
+[charaSet A 1098183000 1 德雷克]
+[charaSet B 6029001 1 望月千代女]
+[charaSet C 6038002 1 夏洛特·科黛]
+[charaSet D 4034000 1 巴沙洛缪]
+[charaSet E 4029001 1 阿喀琉斯]
+[charaSet F 3016002 1 赫克托耳]
+[charaSet G 4039002 1 曼迪卡尔多]
+[charaSet H 2035000 1 帕里斯]
+[charaSet I 2038000 1 俄里翁]
+[charaSet J 1038000 1 伊阿宋]
+
+[wt 0.5]
+
+[scene 84900]
+
+[fowardEffect bit_talk_noise02]
+
+[cameraFilter gray]
+
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_91 0.1]
+
+
+[charaTalk off]
+
+[charaScale A 1.5]
+[charaFace A 0]
+[charaPut A -200,-30]
+[charaFadeTime A 0.7 0.7]
+[charaMove A -200,30 3.5]
+[wt 0.7]
+
+＠
+作为最初的引导者，[r]那女人将他们的性命托付给了海洋。
+[k]
+
+[messageOff]
+
+[charaScale B 1.5]
+[charaFace B 0]
+[charaPut B 200,-30]
+[charaFadeTime B 0.7 0.7]
+[charaMove B 200,30 3.5]
+[charaFadeout A 0.7]
+[wt 0.7]
+＠
+甚至不惜利用身上的诅咒，[r]那女人大闹了一场。
+[k]
+
+[messageOff]
+[charaScale C 1.5]
+[charaFace C 0]
+[charaPut C -200,-30]
+[charaFadeTime C 0.7 0.7]
+[charaMove C -200,30 3.5]
+[charaFadeout B 0.7]
+[wt 0.7]
+＠
+不惜舍弃掉杀戮以外的一切，[r]那女人也要垂死挣扎。
+[k]
+
+[messageOff]
+
+[charaScale D 1.5]
+[charaFace D 0]
+[charaPut D 200,-30]
+[charaFadeTime D 0.7 0.7]
+[charaMove D 200,30 3.5]
+[charaFadeout C 0.7]
+[wt 0.7]
+＠
+实现了生前未竟之事[line 3][r]顺利地将希望送达目的地。
+[k]
+
+[messageOff]
+
+[charaScale E 1.5]
+[charaFace E 0]
+[charaPut E -200,-30]
+[charaFadeTime E 0.7 0.7]
+[charaMove E -200,30 3.5]
+[charaFadeout D 0.7]
+[wt 0.7]
+＠
+纵使弱点被射穿，[r]那男人依然不停疾驰。
+[k]
+
+[messageOff]
+
+[charaScale F 1.5]
+[charaFace F 0]
+[charaPut F 200,-30]
+[charaFadeTime F 0.7 0.7]
+[charaMove F 200,30 3.5]
+[charaFadeout E 0.7]
+[wt 0.7]
+＠
+只为争取些许时间，[r]回应了[#那次召唤:那个愿望]。
+[k]
+
+[messageOff]
+
+[charaScale G 1.5]
+[charaFace G 0]
+[charaPut G -200,-30]
+[charaFadeTime G 0.7 0.7]
+[charaMove G -200,30 3.5]
+[charaFadeout F 0.7]
+[wt 0.7]
+＠
+发誓要作为唯一的朋友，[r]站在[&他:她]的身边。
+[k]
+
+[messageOff]
+
+[charaScale H 1.5]
+[charaFace H 0]
+[charaPut H 200,-30]
+[charaFadeTime H 0.7 0.7]
+[charaMove H 200,30 3.5]
+[charaFadeout G 0.7]
+[wt 0.7]
+＠
+毫不犹豫选择成为[#活祭的山羊:替罪羊]。[r]认定这是正确的道路，甘心承受。
+[k]
+
+[messageOff]
+
+[charaScale I 1.5]
+[charaFace I 0]
+[charaPut I -200,-30]
+[charaFadeTime I 0.7 0.7]
+[charaMove I -200,30 3.5]
+[charaFadeout H 0.7]
+[wt 0.7]
+＠
+深爱着月亮，又击坠了月亮。
+[k]
+
+[messageOff]
+[charaScale J 1.5]
+[charaFace J 0]
+[charaPut J 200,-30]
+[charaFadeTime J 0.7 0.7]
+[charaMove J 200,30 3.5]
+[charaFadeout I 0.7]
+[wt 0.7]
+＠
+见证了一切，与一切战斗，[r]并且目送走一切。
+[k]
+
+[messageOff]
+[charaFadeout J 0.7]
+[wt 1.5]
+
+＠
+[line 3]所有人都拼命鞭策自己前进，[r]没有在这片海洋留下任何东西。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[wait fade]
+[fowardEffectStop bit_talk_noise02]
+[cameraFilter normal]
+[imageSet B scene88100 1]
+[charaSet J 98115000 1 特效用dummy]
+[charaScale B 2.01]
+
+[scene 10000]
+[wt 0.5]
+
+[fadein black 0.1]
+[wait fade]
+[bgmStop BGM_EVENT_91 2.0]
+
+[charaTalk B]
+[charaFadein B 1.5 519,-100]
+
+
+[wt 2.0]
+
+＠
+于是乎，他们突破了绝海。[r]而等待他们的，则是绚烂的地底都市。
+[k]
+
+[messageOff]
+[wt 2.5]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+
+
+[wt 1.0]
+
+[scene 10000]
+[skip false]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[bgmStop BGM_EVENT_62 0.4]
+[bgmStop BGM_EVENT_70 0.4]
+[bgmStop BGM_EVENT_79 0.4]
+[bgmStop BGM_EVENT_80 0.4]
+[bgmStop BGM_EVENT_82 0.4]
+[bgmStop BGM_EVENT_91 0.4]
+
+[charaFadeout J 0.1]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+
+[charaSet A 1098183000 1 德雷克]
+[charaSet B 6029001 1 望月千代女]
+[charaSet C 6038002 1 夏洛特·科黛]
+[charaSet D 4034000 1 巴沙洛缪]
+[charaSet E 4029001 1 阿喀琉斯]
+[charaSet F 3016002 1 赫克托耳]
+[charaSet G 4039002 1 曼迪卡尔多]
+[charaSet H 2035000 1 帕里斯]
+[charaSet I 2038000 1 俄里翁]
+[charaSet J 98115000 1 特效用dummy]
+
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[charaPut J 1200,1200]
+
+[soundStopAllFade 0.4]
+
+[wt 0.4]
+[soundStopAll]
+[maskout black 1.0]
+[wait mask]
+[scene 10000]
+[wt 0.1]
+[maskin black 0.1]
+[wait mask]
+[label selectBranch]
+
+[fowardEffect bit_chapterclear305]
+[wait fowardEffect]
+
+[fadeout black 1.0]
+[wait fade]
+[wt 0.5]
+
+[skip true]
+
+[fadein black 2.0]
+[wait fade]
+
+
+[bgm BGM_EVENT_79 0.1]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[charaTalk on]
+＠武藏
+唔，那颗闪耀在夜空中的星辰……！[r]不会错，是迦勒底他们的船吧！
+[k]
+
+＠武藏
+呵呵～！[r]我就说嘛，他们果然成功突破了吧？
+[k]
+
+＠武藏
+虽然很担心，但我更相信他们！[r]我也感到非常自豪呢！
+[k]
+
+＠武藏
+……开玩笑啦，独自一人逞强的我，[r]似乎有些过于强打精神了。
+[k]
+
+＠武藏
+虽然想尽快与他们会合，[r]但事情真的能那么顺利吗……
+[k]
+
+＠武藏
+毕竟比起那片海，这边更危险嘛。[r]虽说寡不敌众，但没想到[line 3]
+[k]
+
+
+＠武藏
+话虽如此，我也只能去做该做的事了！
+[k]
+
+＠武藏
+好啦～，这里也已经人去楼空了啊。[r]去下一个基地看看好啦！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+
+
+[charaPut J 0,-200]
+[charaEffect J bit_talk_sparks]
+[wt 1.0]
+
+[se ad439]
+[seVolume ad439 0 0]
+
+[seVolume ad439 2.0 0.1]
+
+[fadein black 2.0]
+[wait fade]
+[wt 0.5]
+
+[se ad432]
+[seVolume ad432 0 0.6]
+[wt 1.4]
+
+[se ad432]
+[seVolume ad432 0 0.6]
+[wt 1.4]
+
+[se ad432]
+[seVolume ad432 0 0.6]
+[wt 1.4]
+
+
+
+＠千子村正
+……[r]……
+[k]
+
+＠？？？
+干得漂亮。
+[k]
+
+＠千子村正
+哈，别这样别这样。
+[k]
+
+＠千子村正
+虽说是异国，但你毕竟是锻造神。[r]你这样让人怪不好意思的。
+[k]
+
+＠赫淮斯托斯
+你这性情才更值得称道。
+[k]
+
+＠赫淮斯托斯
+铁匠乃是超越善恶，[r]仅为[#锻造:制造]所求之物的存在。
+[k]
+
+＠千子村正
+谁知道呢。
+[k]
+
+＠千子村正
+只是[line 3][#既然被召唤了]，[r]就得打造客人所求之物才行吧。
+[k]
+
+＠千子村正
+哪怕那是用来毁灭自己世界的东西。
+[k]
+
+
+＠赫淮斯托斯
+心怀不满？
+[k]
+
+＠千子村正
+谁知道呢。
+[k]
+
+＠千子村正
+[#老夫:我]只是在完成从者的工作而已。
+[k]
+
+＠千子村正
+你也真够倒霉的。
+[k]
+
+＠千子村正
+都因为被[#老夫:我]砍了一刀，[r]反倒害你[#能够正常运转了吧]？
+[k]
+
+＠赫淮斯托斯
+将本应被破坏的我保护起来的，[r]就是村正……你啊。
+[k]
+
+＠赫淮斯托斯
+亚特兰蒂斯那边的我，[r]基于自身逻辑站在了泛人类史那边。
+[k]
+
+＠赫淮斯托斯
+但现在的我，却站在奥林波斯这边。[r]即便如此[line 3]我还是希望你能协助。
+[k]
+
+＠千子村正
+……嗯，只要是[#老夫:我]力所能及之事。
+[k]
+
+[messageOff]
+[wt 0.4]
+
+[se ad432]
+[seVolume ad432 0 0.6]
+[wt 1.4]
+
+[se ad432]
+[seVolume ad432 0 0.6]
+[wt 1.4]
+
+[se ad432]
+[seVolume ad432 0 0.6]
+[wt 1.4]
+
+[fadeout black 3.0]
+[charaEffectStop J bit_talk_sparks]
+[wt 1.0]
+[se ad432]
+[seVolume ad432 2.0 0]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_79 2.0]
+[seStop ad439 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

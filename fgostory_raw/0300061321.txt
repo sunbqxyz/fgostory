@@ -1,0 +1,821 @@
+
+
+
+＄03-00-06-12-2-1
+
+
+
+[soundStopAll]
+
+[charaSet A 1017001 1 武藏]
+[charaSet B 8001400 1 玛修]
+[charaSet C 9005001 1 福尔摩斯]
+[charaSet D 1098128200 1 凯妮斯]
+[charaSet E 7010001 1 卡利古拉]
+[charaSet F 3009001 1 列奥尼达]
+[imageSet G back10000 1]
+
+[charaSet S 5009000 1 特效用dummy]
+[charaSet T 5009000 1 特效用dummy]
+[charaSet R 5009000 1 特效用dummy]
+[cameraMove 0 0,0 1.01]
+[charaEffect R bit_talk_mind_poll_02]
+[scene 92501]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0 1]
+
+[se ade280]
+[seVolume ade280 0 0]
+[seVolume ade280 1.0 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_24 0.1]
+
+[se ad171]
+[effect bit_talk_h_slash01]
+[wt 0.4]
+
+[se ad171]
+[fowardEffect bit_talk_v_slash01]
+[wt 0.4]
+
+[se ad170]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+
+[charaFadeout A 0]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0 1]
+[charaShake B 0.02 3 3 0.6]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.3]
+
+[cueSe Battle bac449]
+[wt 0.4]
+[cueSeStop bac449 0.4]
+[cueSe Battle bac450]
+[charaRoll S 205]
+[charaPut S 50,-550]
+[charaEffect S bit_talk_gram_slash_03]
+[wt 0.3]
+
+[cueSeStop bac450 0.4]
+[se ad609]
+[flashin once 0.1 0.1 9effffFA 9effff80]
+[fowardEffect bit_talk_explosion]
+[shake 0.02 3 3 0.8]
+[wt 0.1]
+[charaFadeout C 0]
+[wt 0.8]
+
+[se ad671]
+[charaScale B 1.2]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 0,30]
+[charaMove B 1 0.2]
+[charaMoveScale B 1.0 0.2]
+[charaShake B 0.02 3 3 0.6]
+[wt 1.6]
+
+
+＠玛修
+武藏，小姐！[r]福尔摩斯先生……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[fowardEffectDestroy bit_talk_explosion]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠武藏
+[line 6]呜！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[se bac139]
+[effect bit_talk_x_slash01]
+[effect bit_talk_x_slash02]
+[wt 0.3]
+[fowardEffect bit_talk_14]
+
+[se ad170]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0 1]
+[charaShake B 0.03 4 4 0.6]
+[wt 1.4]
+
+[effectStop bit_talk_x_slash01]
+[fowardEffectStop bit_talk_x_slash02]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[bgm BGM_EVENT_24 0.4 0.4]
+[charaTalk depthOff]
+[charaDepth R 1]
+[charaDepth G 2]
+[charaDepth A 3]
+[charaFadeTime G 0.2 0.6]
+[wt 0.2]
+
+
+＠武藏
+（怎么回事！？[r]　身体擅自……不，这是……！）
+[k]
+
+＠武藏
+（就算将思考从遭受污染的精神中分离出来，[r]　也无法夺回肉体！　刀停不下来！）
+[k]
+
+[charaFace A 2]
+＠武藏
+（[#杀意正在自动地膨胀]！）
+[k]
+
+[charaFace A 4]
+＠武藏
+（这是诱发同伴相残的精神攻击吗！[r]　身为神明，手段却如此卑鄙不堪！）
+[k]
+
+[charaFace A 5]
+＠武藏
+（玛修！　[%1]！）
+[k]
+
+＠武藏
+（快逃！[r]　倘若连思考都被这杀意淹没，我就[line 3]）
+[k]
+
+＠武藏
+（不得不杀死你们了！）
+[k]
+
+[bgm BGM_EVENT_24 0.4 1.0]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaFace A 2]
+
+＠武藏
+啊啊啊啊啊啊啊啊啊啊啊！
+[k]
+
+＠武藏
+不要……！[r]在我的脑海中……唱歌啊！！
+[k]
+
+
+[messageOff]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaFadeout A 0.1]
+[wt 0.6]
+
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+武藏小姐的身影，消失了……！？
+[k]
+
+？1：背后！
+？2：玛修……！
+
+？！
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth B 6]
+[charaDepth T 5]
+[charaDepth A 4]
+[charaDepth G 2]
+
+[se ad73]
+[charaPut T 300,0]
+[charaEffect T bit_talk_quickmove]
+[charaFace A 5]
+[charaFadein A 0.1 300,0]
+[wt 0.5]
+
+[se ad51]
+[charaMove A 300,-10 0.1]
+[wt 0.8]
+
+[bgm BGM_EVENT_24 0.3 0.4]
+
+[charaTalk depthOff]
+[charaTalk on]
+[charaTalk A]
+[charaFadeTime G 0.2 0.6]
+[wt 0.2]
+
+
+＠武藏
+（不行！）
+[k]
+
+＠武藏
+（颈项空门大开！[r]　我的手、我的刀，已经停不下来了[line 2]）
+[k]
+
+[messageOff]
+[seStop ade280 1.0]
+[fadeout black 0.4]
+[bgm BGM_EVENT_24 0.4 0.1]
+[wait fade]
+
+[charaFadeout G 0.1]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaEffectDestroy R bit_talk_mind_poll_02]
+
+[scene 10000]
+[pictureFrame]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[se bac210]
+[effect bit_talk_x_slash03]
+[wt 0.5]
+
+[fadeout black 0.4]
+[wait fade]
+
+[se ad775]
+
+[charaTalk depthOn]
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+
+[scene 92501]
+
+[wt 0.1]
+
+[se ad618]
+[effect bit_talk_14]
+[wt 0.5]
+
+[se ad240]
+[fowardEffect bit_talk_35]
+[charaShake D 0.05 3 3 1.2]
+
+[fadein black 0.6]
+[charaEffect R bit_talk_mind_poll_02]
+[bgm BGM_EVENT_24 1.0 1.0]
+[wait fade]
+
+＠凯妮斯
+嘁！
+[k]
+
+？1：凯妮斯！
+
+[charaFace D 6]
+
+＠凯妮斯
+真不错真不错！[r]这才是你原本的战斗方式吗，武士！
+[k]
+
+[charaFace D 7]
+＠凯妮斯
+贪婪执着求生欲强[line 3][r]而且，连杀人手段都如此贪婪！　哈哈哈！
+[k]
+
+＠凯妮斯
+一介女流居然挥舞这么多把剑！[r]就该这样才对！
+[k]
+
+？2：（她保护了玛修……！）
+
+[charaFace D 2]
+＠凯妮斯
+你们傻吗！
+[k]
+
+＠凯妮斯
+我可不想看到你们死在同伴相残这种蠢事上！[r]我说过吧！　你们得死在我手上！
+[k]
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad51]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠武藏
+………………
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠凯妮斯
+……虽说阿佛洛狄忒的权能很棘手，[r]但这样倒也不赖。
+[k]
+
+[charaFace D 5]
+＠凯妮斯
+面对这种对决，我可是一秒钟都不能松懈啊。[r]相应的，[#歌声也变得很遥远]！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad671]
+[seVolume ad671 0 0.4]
+[seStop ad671 0.4]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[charaMove A 0,-10 0.3]
+＠武藏
+[line 10]呜！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaFace A 2]
+[se ad7]
+[charaMoveScale A 1.2 0.2]
+[charaMove A 0,20 0.2]
+[charaFadeout A 0.2]
+[wt 0.4]
+
+[charaScale A 1.0]
+
+[se bac137]
+[effect bit_talk_v_slash01]
+[wt 0.3]
+
+[se ad170]
+[fowardEffect bit_talk_14]
+
+[charaFadeout E 0]
+[charaTalk E]
+[charaFace E 0]
+[charaFace A 5]
+[charaFadein A 0 -150,0]
+[charaFadein E 0 150,0]
+[charaShake E 0.02 3 3 0.8]
+[wt 1.2]
+
+＠卡利古拉
+…………干得漂亮，宫本武藏。[r]幸亏你能撑过美神维纳斯的猛攻。
+[k]
+
+＠卡利古拉
+看来[#抑制了相当一部分呢]。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠玛修
+卡利古拉先生！[r]竟然空手抓住了……武藏小姐的剑……！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠凯妮斯
+干嘛啦，别碍事啊，卡利古拉！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFace A 5]
+[charaFadein E 0.1 150,0]
+[charaFadein A 0.1 -150,0]
+
+＠卡利古拉
+倘若刚才那一刀是武藏认真挥下的，[r]你的手臂会被砍飞，盾之少女也早就脑袋搬家了。
+[k]
+
+＠卡利古拉
+这你应该不至于不清楚吧。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+＠凯妮斯
+……啧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFace A 5]
+[charaFadein E 0.1 150,0]
+[charaFadein A 0.1 -150,0]
+＠卡利古拉
+接下来就是余的任务了。[wt 0.5][charaFace E 5][messageShake 0.02 3 3 0.3][r]哼！
+[k]
+
+[messageOff]
+
+[se ad7]
+[wt 0.5]
+
+[se ad863]
+[seVolume ad863 0 0.6]
+[wt 0.4]
+[seStop ad863 0.6]
+
+[charaFace A 2]
+[charaShake A 0.02 3 3 0.4]
+[wt 0.5]
+
+[charaFace A 5]
+[se ad44]
+[wt 0.8]
+[se ad7]
+[charaEffect A bit_talk_quickmove]
+[charaFadeout A 0.2]
+[wt 1.0]
+
+[charaFace E 0]
+
+＠卡利古拉
+余的手掌被撕裂了……[r]但先卸下了一把刀。
+[k]
+
+＠卡利古拉
+虽说不清楚卸下四刀流中的[r]一把能起到多大的作用。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠玛修
+非常……感谢……[r]卡利古拉先生！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠卡利古拉
+宫本武藏、夏洛克·福尔摩斯。[r]两位都没有使出自己身为英灵的全力。
+[k]
+
+＠卡利古拉
+因此才有机可乘。
+[k]
+
+＠卡利古拉
+好比那边的宫本武藏。[r]倘若她状态万全，是很难追上她的剑速的……
+[k]
+
+＠卡利古拉
+但在精神与肉体产生背离的现在，[r]只需加以观察，即可洞悉无限破绽。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠玛修
+原……原来……是这样吗……
+[k]
+
+[charaFace B 4]
+＠玛修
+我……连……[r]想站着，都非常……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_24 1.0]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠卡利古拉
+[f large]不[messageShake 0.02 3 3 0.4]可屈膝跪地！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠卡利古拉
+余说过！[r]你，唯独你，决不可屈膝。
+[k]
+
+[charaFace E 5]
+＠卡利古拉
+你的存在方式令余感到耀眼。[r]盾之少女，玛修·基列莱特。
+[k]
+
+＠卡利古拉
+将一切都押在[#盾牌:守护]上的人，[r]想必是面对千军万马亦不断战斗的英雄后裔吧。
+[k]
+
+＠卡利古拉
+这才是守护我等罗马的[#军神:玛尔斯]所期望的存在方式！[r]也是受玛尔斯加护的先烈们的存在方式！
+[k]
+
+[messageOff]
+[fadeout white 0.5]
+[bgm BGM_EVENT_82 0.5 0.4]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+
+[scene 34600]
+
+[pictureFrame cut063_cinema]
+[cameraFilter gray]
+
+[wt 0.5]
+
+[fadein white 0.5]
+[wait fade]
+[wt 1.2]
+
+
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+[scene 92501]
+
+[pictureFrame]
+[cameraFilter normal]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_82 0.5 1.0]
+[fadein white 0.5]
+[wait fade]
+
+
+＠玛修
+…………是！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth A 5]
+[charaDepth C 4]
+
+
+[charaFace A 5]
+[charaFace C 5]
+[charaFadein A 0.1 0]
+[charaFadein C 0.1 2]
+[wt 1.0]
+[se ad671]
+[seVolume ad671 0 0.6]
+[seStop ad671 0.2]
+[charaMoveScale A 1.05 0.2]
+[charaMoveScale C 1.05 0.2]
+[wt 1.2]
+
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠卡利古拉
+……好了。时机终于成熟了。
+[k]
+
+＠卡利古拉
+余的力量定能触及[r]不断抵抗女神歌谣的灵魂。
+[k]
+
+[charaFace E 2]
+＠卡利古拉
+争取时间，不用很久。[r]玛修·基列莱特！　[%1]！
+[k]
+
+＠卡利古拉
+余要使用宝具！
+[k]
+
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠玛修
+啊，好！
+[k]
+
+[bgm BGM_EVENT_82 1.0 0.4]
+
+
+
+？1：我……知道了……
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_82 1.0]
+[wt 1.0]
+
+？1：咦？
+？！
+
+[charaFace B 4]
+＠玛修
+前辈？
+[k]
+
+
+？1：有人……在……唱歌……？
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠凯妮斯
+唔。喂，你怎么了[line 3]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+
+
+
+[blur lens 2.0 3 20]
+[cameraMove 0.8 2,-2 1.02]
+[wt 0.8]
+[cameraMove 0.4 -1,1 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.00]
+[wt 1.0]
+
+
+[wipeout openEye 1.0 1.0]
+[wt 0.6]
+
+[wipein openEye 1.0 1.0]
+[wait wipe]
+[wt 0.4]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+御主！？
+[k]
+
+[charaFace B 2]
+＠玛修
+卡利古拉先生，请等一下！[r]前辈……！
+[k]
+
+？1：玛修……！
+
+？！
+
+[messageOff]
+[wt 0.1]
+
+[wipeout openEye 0.3 1.0]
+[wait wipe]
+
+[wipein openEye 0.3 1.0]
+[wait wipe]
+[wt 0.4]
+
+[wipeout openEye 0.5 1.0]
+[wait wipe]
+
+[wipein openEye 0.5 1.0]
+[wait wipe]
+[wt 1.0]
+
+[wipeout openEye 1.0 1.0]
+[wait wipe]
+
+[blurOff lens 0.1]
+[charaFadeout B 0.1]
+
+[charaEffectDestroy R bit_talk_mind_poll_02]
+[scene 10000]
+[wt 1.0]
+
+[wipein openEye 0.1 1.0]
+[wait wipe]
+
+＠玛修
+前辈……！
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

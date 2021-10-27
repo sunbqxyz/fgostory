@@ -1,0 +1,330 @@
+
+＄03-00-05-06-3-1
+
+[soundStopAll]
+
+[charaSet A 2038000 1 俄里翁]
+[charaSet B 6038002 1 夏洛特·科黛]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 98006000 1 魔兽]
+
+[charaSet J 5009000 1 特效用dummy]
+
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 84700]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠俄里翁
+看招！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.0]
+[wt 0.2]
+
+[cueSe Battle bac169]
+[charaScale J 1.05]
+[charaPut J -20,0]
+[charaRoll J 25]
+[charaEffect J bit_talk_h_slash01]
+[wt 0.3]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF50]
+[wt 0.1]
+[charaFadeout A 0]
+
+[cueSe Battle bac98]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0 1]
+[charaShake D 0.03 4 4 0.8]
+[se ad569]
+[wt 1.4]
+
+[charaScale J 1.0]
+
+[charaMove D 0,-50 0.4]
+[charaFadeout D 0.4]
+[wt 0.4]
+
+[se ad144]
+[wt 1.6]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠俄里翁
+好嘞，赢了赢了！
+[k]
+
+＠俄里翁
+果然有御主在，[r]效率就是不一样啊。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠夏洛特·科黛
+我也是！[r]不知为何状态突然变好了！
+[k]
+
+？1：能帮上你们的忙就好。
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠俄里翁
+不必在意啦。
+[k]
+
+＠俄里翁
+耶～！
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaMoveScale A 1.1 0.3]
+[charaMoveReturn A 0,10 0.6]
+[wt 0.2]
+[se ade124]
+[wt 0.1]
+[charaMoveScale A 1.0 0.3]
+[wt 1.0]
+
+？2：击掌！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠俄里翁
+嗯？
+[k]
+
+[charaFace A 0]
+＠俄里翁
+啊，这样啊。[r]是这样做吗？
+[k]
+
+[charaFace A 1]
+＠俄里翁
+耶～！
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaMoveScale A 1.1 0.3]
+[charaMoveReturn A 0,10 0.6]
+[wt 0.2]
+[se ade124]
+[wt 0.1]
+[charaMoveScale A 1.0 0.3]
+[wt 1.0]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+＠夏洛特·科黛
+……！
+[k]
+
+[charaFace B 9]
+＠夏洛特·科黛
+那……那个！[r]那个……
+[k]
+
+？1：击掌？
+
+[charaFace B 7]
+＠夏洛特·科黛
+啊，对！[r]可是我并没有帮上什么忙！
+[k]
+
+＠夏洛特·科黛
+所以小小拍一下就行了！
+[k]
+
+？2：怎么了？
+
+[charaFace B 8]
+＠夏洛特·科黛
+没……没事。[r]什么事都没有……什么事都……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠俄里翁
+想要击掌吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠夏洛特·科黛
+是的！
+[k]
+
+[charaFace B 8]
+＠夏洛特·科黛
+不！[r]……那个……请忘了吧……
+[k]
+
+？！
+
+？1：那就这样吧……
+？！
+
+[messageOff]
+[wt 0.1]
+
+[charaFace B 9]
+[charaMoveReturn B 0,10 1.0]
+[charaMoveScale B 1.1 0.5]
+[wt 0.4]
+[se ad500]
+[wt 0.1]
+[charaMoveScale B 1.0 0.5]
+[seStop ad500 0.1]
+[wt 1.4]
+
+[charaFace B 7]
+＠夏洛特·科黛
+成功了～。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠俄里翁
+那也和我来一下吧。[r]来吧！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠夏洛特·科黛
+咦？[r]呃，那就……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth B 4]
+[charaDepth A 3]
+
+[charaFace A 1]
+[charaFace B 0]
+[charaFadein A 0.1 -200,0]
+[charaFadein B 0.1 200,0]
+[wt 0.4]
+
+[charaMoveReturn B 150,0 0.8]
+[wt 0.3]
+[se ad673]
+[seVolume ad673 0 0.3]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 11]
+＠俄里翁
+只有指尖！？
+[k]
+
+
+[charaTalk B]
+[charaFace B 0]
+＠夏洛特·科黛
+嗯。毕竟我和你的接触[r]不能超过和[%1][&先生:小姐]的。
+[k]
+
+
+[charaTalk A]
+[charaFace A 0]
+＠俄里翁
+这是你作为从者的规则之类的吗？
+[k]
+
+
+[charaTalk B]
+[charaFace B 10]
+＠夏洛特·科黛
+……呃……算是……这样吧……？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠芙芙
+芙呜，芙芙。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠俄里翁
+算了，先不管这个了。
+[k]
+
+[charaFace A 1]
+
+＠俄里翁
+好嘞。[r]我们到了，赫斯提亚村！
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

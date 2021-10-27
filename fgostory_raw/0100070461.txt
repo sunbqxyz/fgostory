@@ -1,0 +1,504 @@
+
+
+
+＄01-00-07-04-6-1
+[soundStopAll]
+[charaSet A 8001002 1 玛修]
+[charaSet B 98002000 1 芙芙]
+
+[charaSet C 3027000 1 安娜]
+[charaSet D 98003000 1 Dr.罗曼]
+[charaSet E 98024000 1 乌鲁克市民A]
+[charaSet F 98024100 1 乌鲁克市民B]
+[charaSet G 98024000 1 乌鲁克市民C]
+[charaSet H 98024100 1 乌鲁克市民D]
+
+[bgm BGM_EVENT_2 0.1]
+[scene 32900]
+[flashin once 0.1 0.1 000000FF 000000AF]
+[wt 0.2]
+[fadein black 1.5]
+[wait fade]
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.4 1]
+
+
+＠安娜
+……辛苦了。[r]这样一来，盘据在这附近的恶灵应该都被消灭了……
+[k]
+
+＠安娜
+因为只有我一个人的话，会让它们逃跑……[r]所以[charaMoveReturn C 0,-5 0.4]，谢谢。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠玛修
+虽说乌鲁克地下居然有这么多空洞这点令人吃惊，[r]但刚才的亡灵也十分惊人。
+[k]
+
+＠玛修
+安娜小姐知道那些亡灵们是什么吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠安娜
+……虽然不知道，[r]但感觉点像……死神之类的存在。
+[k]
+
+＠安娜
+虽然两位可能没有注意到，[r]但致死的疾病正在这乌鲁克蔓延。
+[k]
+
+＠安娜
+从体力衰弱的人先开始发病，会让人陷入永远的沉睡。[r]那些亡灵想必跟这件事有关系吧。
+[k]
+
+＠安娜
+所以我觉得，只要清除那些亡灵，[r]因衰弱而死的人或许也能减少吧……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[se ad13]
+[charaTalk D]
+[communicationChara 98003003 1 5 0 5]
+[wt 0.3]
+
+＠Dr.罗曼
+原来如此。[r]在神代里，肉体之死和精神之死是不同的吧。
+[k]
+
+＠Dr.罗曼
+就算肉体平安无事，灵魂被死神带走的话，[r]那个人就会死亡。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+
+＠安娜
+对。……还有，灵魂被带走的状态[r]不是“死”。而是“睡眠”。
+[k]
+
+＠安娜
+倘若肉体没事，那只要夺回被带走的灵魂，[r]就能从睡眠中苏醒过来。
+[k]
+
+＠安娜
+在神代，“从冥府将死者带回来”[r]不过是一种治疗行为。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠玛修
+……就算心跳停止，只要能保存好肉体，[r]就有办法起死回生……是这个意思吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠安娜
+对。……不过，如果灵魂在掉入冥府前，[r]灵魂本身被粉碎的话，就无法复生了。
+[k]
+
+＠安娜
+这种情况下，肉体就会走上与灵魂相同的命运。[r]生命活动将会停止，最后化成土块。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 3]
+
+
+＠Dr.罗曼
+嗯唔。很像是『存在死后世界』的神代会有的现象。[r]想必玛那质量不同也是原因之一吧。
+[k]
+
+＠Dr.罗曼
+落入地狱，并不等于『死』吧。[r]死指的是冥府，是比地狱更进一步的『无』吧。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+
+＠安娜
+……乌鲁克似乎将其称为深渊。
+[k]
+
+＠安娜
+无论如何，[r]冥府的亡灵就像是带走活人的绑架犯一样。
+[k]
+
+＠安娜
+而且数量好像还不少，所以，那个……[r]我才打算帮忙消灭这些。
+[k]
+
+？1：为什么你会发现这些亡灵呢？
+
+[charaFace C 3]
+＠安娜
+那是因为……在大道的花店上，[r]聚集了特别多只……
+[k]
+
+？2：是为了乌鲁克的人民吗？
+
+[charaFace C 0]
+＠安娜
+………不是。[r]只是纯粹……有些碍眼而已。
+[k]
+
+？！
+
+[charaFace C 0]
+＠安娜
+……不管怎么说，亡灵扫荡总算完成了。[r]我还要去向西杜丽报告，先失陪了。
+[k]
+
+
+[messageOff]
+[charaFadeout C 0.4]
+[se ad60]
+[seVolume ad60 0 0.7]
+[wt 1.5]
+[seStop ad60 1.0]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+啊，安娜小姐，稍等一下！[r]我也一起去！
+[k]
+
+[charaFace A 13]
+＠玛修
+前辈，请您先回去吧。
+[k]
+
+＠玛修
+我担心安娜小姐一个人没法好好说明清楚！
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.4]
+[se ad59]
+[wt 1.5]
+[seStop ad59 1.0]
+[wt 0.1]
+[charaTalk B]
+[charaFadein B 0.1 1]
+
+＠芙芙
+芙呜……
+[k]
+
+？1：只留下我一个人了呢。
+？2：回大使馆吧。
+
+？！
+
+＠芙芙
+芙，芙呜！
+[k]
+
+[wt 0.4]
+[se ad60]
+[seVolume ad60 0 0.7]
+[messageOff]
+[bgmStop BGM_EVENT_2 0.4]
+[wipeout rightToLeft 0.7 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[seStop ad60 1.5]
+[wt 1.0]
+[charaSet C 98107700 1 老人]
+[bgm BGM_EVENT_11 0.1]
+[wipein leftToRight 0.7 1]
+[wait wipe]
+
+[se ad4]
+[seVolume ad4 0 0.3]
+[charaTalk E]
+[charaFace E 1]
+[charaFace F 1]
+[charaFadein E 0.1 2]
+[charaFadein F 0.1 0]
+
+＠乌鲁克市民A
+……那是哪来的老爷子啊。[r]不是这一带的人吧？
+[k]
+
+＠乌鲁克市民B
+讨厌啦，竟然乞讨……[r]一只脚还那样子……又不是什么伤兵……
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.2]
+[charaTalk G]
+[charaFace G 1]
+[charaFace H 1]
+[charaFadein G 0.1 2]
+[charaFadein H 0.1 0]
+
+＠乌鲁克市民C
+别管闲事，负责看护的人会管的吧。[r]巫女所也有为这种情况准备的预算。
+[k]
+
+＠乌鲁克市民D
+话是这么说啦……但那个人，[r]在那个地方一动不动已经很久了……有整整两天什么都没吃了吧？
+[k]
+
+[messageOff]
+[seStop ad4 1.5]
+[charaFadeout G 0.4]
+[charaFadeout H 0.4]
+[wt 1.5]
+[charaTalk C]
+[charaFadein C 0.4 1]
+
+＠老人
+………………
+[k]
+
+[messageOff]
+[wt 0.2]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[wt 0.4]
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+[wt 0.1]
+[charaTalk B]
+[charaFadein B 0.1 1]
+
+＠芙芙
+…………芙。[r]芙，芙呜……
+[k]
+
+？1：我知道了啦。等一下，芙芙。
+？2：……我记得小麦之银还有剩……
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[messageOff]
+[se ad77]
+[wait se ad77]
+[se ad60]
+[seVolume ad60 0 0.7]
+[wipeout rightToLeft 0.7 1]
+[wait wipe]
+[seStop ad60 1.0]
+[wt 2.0]
+[wipein leftToRight 0.7 1]
+[wait wipe]
+
+[charaTalk C]
+[charaFadein C 0.4 1]
+
+＠老人
+………………
+[k]
+
+？1：（悄悄放下面包。）
+？2：这是多余的面包，请用吧。
+
+？！
+
+[se ad78]
+[wt 0.7]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFadein B 0.1 1]
+
+＠芙芙
+芙，芙。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[messageOff]
+[se ad60]
+[seVolume ad60 0 0.7]
+[bgmStop BGM_EVENT_11 1.5]
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+
+
+＠老人
+且慢[seStop ad60 0.4]。
+[k]
+
+＠芙芙
+芙！？
+[k]
+
+[messageOff]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[charaTalk C]
+[charaFadein C 0.1 1]
+
+＠老人
+………………
+[k]
+
+？1：……呃……那个……
+？2：……是我……多管闲事了吗？
+
+？！
+
+＠老人
+……是啊。确实如此。
+[k]
+
+＠老人
+年轻人啊。[r]怜悯有时会成为侮辱。好好记住。
+[k]
+
+＠老人
+无谓的怜悯是一种恶。[r]无谓的惭愧亦是一种恶。
+[k]
+
+＠老人
+……但是。不该连小小的关心也逐一挑刺，[r]这种才算是老年痴呆的诽谤。
+[k]
+
+＠老人
+没有给钱，而是给予现在老夫需要的东西，[r]这判断倒值得嘉许。
+[k]
+
+＠老人
+老夫就感激地收下了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFadein B 0.1 1]
+
+＠芙芙
+芙芙！？[r]（特别意译：但你还是不吃啊！？）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFadein C 0.1 1]
+
+
+＠老人
+……唔。既然受人之物，[r]不报答可不行。
+[k]
+
+＠老人
+我叫朱苏德拉。[r]如你所见，是一个旦夕不保的老人。
+[k]
+
+＠老人
+但你乃是拥有未来的年轻人。[r]那对你来说，忠告应该才是最有价值的东西吧。
+[k]
+
+＠老人
+听好了。[r]乌鲁克今后会遭遇三度风暴。
+[k]
+
+＠老人
+对心怀憎恨之人，不可表示理解。[r]对心怀愉悦之人，不可表示赞同。
+[k]
+
+＠老人
+……另外，[r]对于心怀痛苦之人，不可表示赞赏。
+[k]
+
+＠老人
+切莫忘记。尽管她们看似违反人道，[r]但究其根源，想对神高谈人道才是愚蠢之举。
+[k]
+
+？1：您究竟是……
+？2：三度风暴……？
+
+？！
+
+[messageOff]
+[flashin once 1.0 1.0 000000FF 000000AF]
+[wt 1.0]
+[wipeout sideBlind 0.1 1]
+[wait wipe]
+[wipein sideBlind 0.1 1]
+[wait wipe]
+[flashin once 0.7 0.7 000000FF 000000AF]
+[wt 0.7]
+[wipeout sideBlind 0.1 1]
+[wait wipe]
+[wipein sideBlind 0.1 1]
+[wait wipe]
+[flashin once 0.5 0.5 000000FF 000000AF]
+[wipeout sideBlind 0.1 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[wipein sideBlind 0.1 1]
+[wait wipe]
+[wipeout openEye 0.4 1]
+[wait wipe]
+[wt 1.0]
+[wipein openEye 1.5 1]
+[wait wipe]
+
+[wt 0.4]
+[bgm BGM_EVENT_11 0.1]
+
+
+？1：不见了……
+？2：刚才那个人究竟是……
+
+？！
+
+[charaTalk B]
+[charaFadein B 0.1 1]
+＠芙芙
+芙，芙呜……
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,224 @@
+＄91-20-20-01-3-1
+
+[soundStopAll]
+
+[charaSet A 2020001 1 伊什塔尔]
+[charaSet B 8001002 1 玛修]
+[charaSet C 5018001 1 吉尔伽美什]
+[charaSet D 98002000 1 特效用dummy]
+
+[scene 21411]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠伊什塔尔
+好了，你快给我坦白究竟将宝物藏哪儿去了。[r]还有快把陷阱全部解除。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut D 0,0]
+[charaEffect D bit_talk_06]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠吉尔伽美什
+哼，蠢货。[r]本王怎可能将巴比伦的宝物库交给你啊。
+[k]
+
+＠吉尔伽美什
+宝物库早就转移到你可望而不可及的地方了。[r]这里不过是本王的第三存折仓库罢了。
+[k]
+
+[charaFadeout C 0.1]
+[charaPut D 1200,1200]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠伊什塔尔
+不会吧！？[r]第三存折仓库居然能充斥着如此浓郁的财宝味道！？
+[k]
+
+＠伊什塔尔
+你的黄金律到底有多厉害啊！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut D 0,0]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠吉尔伽美什
+哼。到死都用不完的财宝确实不值得推崇。[r]不过，本王这些财宝不是用的，而是收集的。
+[k]
+
+＠吉尔伽美什
+本王打从一开始就以收集为目的。[r]正因为成不了真正的使用者，所以才是无限的财宝。
+[k]
+
+＠吉尔伽美什
+[line 3]但是！[r]你这家伙则是哪种都不是的放荡女神！
+[k]
+
+＠吉尔伽美什
+不爱财宝，也不被财宝所爱，[r]只会如流星般消失的女人！
+[k]
+
+[charaFace C 1]
+
+＠吉尔伽美什
+你还是把自己不配拥有的那些财宝给忘了吧。[r]不被地上的财宝束缚，在天空自由驰骋才适合你。
+[k]
+
+[messageOff]
+[wt 0.5]
+[charaSpecialEffect C flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect C]
+[charaEffectStop D bit_talk_06]
+[bgmStop BGM_EVENT_3 1.0]
+[wt 1.5]
+
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠玛修
+吉尔伽美什王消灭了……[r]虽然再次见到了他……真遗憾。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠伊什塔尔
+………………
+[k]
+
+？1：伊什塔尔，打起精神来。
+？2：……流星其实也很美丽哦。
+
+？！
+
+[charaFace A 8]
+
+＠伊什塔尔
+……哼。[r]没关系，不用介意。
+[k]
+
+＠伊什塔尔
+比试是我赢了，[r]他也不会再来妨碍我了。
+[k]
+
+[charaFace A 13]
+
+＠伊什塔尔
+但是，谢谢你。[r]那么关心我。我稍微有点精神了。
+[k]
+
+[wt 0.5]
+[bgmStop BGM_EVENT_11 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_7 0.1]
+
+[charaFace A 12]
+
+＠伊什塔尔
+但是……问题才刚刚开始。[r]这里居然不是巴比伦的宝库……
+[k]
+
+＠伊什塔尔
+我耗费数月时光的搜查全都化为了泡影……[r]以获得财宝为前提的[#计划:比赛]也得重新设计了……
+[k]
+
+？1：就算没钱，伊什塔尔还是胜利者哦。
+？2：一贫如洗的女神大人也很美丽哦。
+
+？！
+
+
+[charaFace A 5]
+
+＠伊什塔尔
+这算安慰！？　还是在嘲笑！？[r]到底是哪种！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠玛修
+当然只是前辈真正的感想。
+[k]
+
+＠玛修
+而且，吉尔伽美什王最后的那句话，[r]我并不认为那是批判。
+[k]
+
+＠玛修
+王还是对伊什塔尔小姐有正确评价的吧？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠伊什塔尔
+哼，谁知道呢。[r]不是光评价正确就没问题了。
+[k]
+
+＠伊什塔尔
+哪怕退一千步说，他那是在夸奖我，[r]我也不想听这种话，我想知道的是宝物库的位置！
+[k]
+
+？1：这次简直就是徒劳无功。
+
+？！
+
+[charaFace A 12]
+
+＠伊什塔尔
+呜呜，我唯独不想听到这句话[line 4]！[r]你这笨蛋[line 2]！　给我自重一点啦，[%1]！
+[k]
+
+＠伊什塔尔
+听好了，我是绝[line 4]对不会放弃的！[r]一定要一雪魔兽战线时的耻辱！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[soundStopAll]
+[end]
+

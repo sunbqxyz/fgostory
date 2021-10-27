@@ -1,0 +1,722 @@
+
+
+＄91-20-34-01-4-1
+
+[soundStopAll]
+
+[charaSet A 2034000 1 退尔]
+[charaSet C 2038000 1 俄里翁]
+[charaSet D 2009201 1 阿耳忒弥斯]
+[charaSet E 2009201 1 阿耳忒弥斯（剪影）]
+[charaSet F 1098183600 1 敌人]
+
+[charaSet I 8001000 1 dummy特效1]
+[charaSet J 8001000 1 dummy特效2]
+[charaSet K 8001000 1 dummy特效3]
+[charaSet L 8001000 1 dummy特效4]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[flag IsClear true]
+[branch lblConf]
+[label lblNotClear]
+[flag IsClear false]
+[label lblConf]
+
+
+[branch lblNotClear1 IsClear false]
+
+[charaSet B 1098124510 1 达·芬奇]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[charaSet B 98111500 1 达·芬奇]
+
+[label lblConf1]
+
+
+[charaDepth L 1]
+[charaDepth C 5]
+[charaDepth J 9]
+[charaDepth K 9]
+
+[charaRoll J 90]
+[charaRoll K 90]
+
+[charaPut E 2000,2000]
+[charaPut L 2000,2000]
+[charaEffect L bit_talk_41]
+
+[bgm BGM_EVENT_82 0.1]
+
+[scene 10000]
+[wt 0.3]
+
+[effect bit_talk_arrow01or 0,0 F]
+[wt 0.2]
+
+[fadein black 0.8]
+[wait fade]
+
+[se bac368]
+[wt 0.6]
+
+[fadeout black 0.4]
+[wait fade]
+
+[scene 20820]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[fadein black 0.4]
+[wait fade]
+[wt 0.2]
+
+[se bac16]
+[fowardEffect bit_talk_14 -110,-20]
+[charaShake F 0.04 3 3 0.3]
+[wt 0.4]
+[se ad19]
+[charaShake F 0.04 2 2 0.9]
+[wt 1.4]
+
+[se ad42]
+[charaSpecialEffect F enemyErasure 0,0 1.5]
+[wt 0.7]
+
+[wait charaSpecialEffect F]
+[bgmStop BGM_EVENT_82 1.2]
+[charaFadeout F 0.1]
+[wt 1.6]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 1]
+[wt 0.6]
+
+＠退尔
+哎呀呀。把我吓出一身冷汗来。[bgm BGM_EVENT_77 0.1]
+[k]
+
+？1：但是，真了不起。
+？2：我相信你一定能行。
+？！
+
+[charaFace A 1]
+
+＠退尔
+……嘿嘿。[r]说实话，我也很害怕。
+[k]
+
+[charaFace A 0]
+
+＠退尔
+双手颤抖，心脏激烈得跳个不停，喉咙干渴……
+[k]
+
+＠退尔
+嗯，脑海中，是可能的话真不想做[r]这种丢人的想法。
+[k]
+
+＠退尔
+没错。和瞄准儿子头顶苹果那时一样。
+[k]
+
+[charaFace A 4]
+
+＠退尔
+……这是个好机会，我重申一遍吧。[r]我就是这么个弱小的从者。
+[k]
+
+[charaFace A 0]
+
+＠退尔
+并没有继承什么神之血。[r]也没有什么传说中的装备。
+[k]
+
+＠退尔
+死拽着平凡技术尽头之物不放，[r]只是勉强射杀了一个恶人的……普通人。
+[k]
+
+＠退尔
+作为人类很正常地弱小，作为人类很正常地害怕破灭……[r]只是普通的人父，普通的猎人。那就是我。
+[k]
+
+[charaFace A 3]
+
+＠退尔
+所以，该怎么说呢。
+[k]
+
+＠退尔
+如果你过于……用那种仰望英雄的目光看我，[r]我也是会害羞的。
+[k]
+
+[messageOff]
+[wt 0.9]
+
+？1：但我觉得，你之所以能身居人类的弱小射出重要的箭，
+？2：[line 3]正是由于你很强大。
+？！
+
+[messageOff]
+[wt 0.4]
+[charaFace A 0]
+[wt 0.9]
+
+？1：所以，你就是英雄。
+？！
+
+[messageOff]
+[wt 0.4]
+[charaFaceFade A 3 0.7]
+[wt 1.4]
+
+＠退尔
+……不好办啊。咱们的御主[r]似乎非常喜欢让我害羞呢。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad539]
+[wt 0.4]
+[seStop ad539 0.5]
+[wt 0.4]
+
+[charaPut I 0,0]
+[charaEffect I bit_talk_10_MiddleLevel]
+[wt 0.2]
+
+[se ad13]
+
+
+
+[branch lblNotClear2 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 22]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+＠达·芬奇
+两位没事吗？　没事吧？[wt 0.55][charaFace B 33][r]呼，太好了～。
+[k]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-90]
+[wt 0.5]
+
+＠达·芬奇
+两位没事吗？　没事吧？[wt 0.55][charaFace B 4][r]呼，太好了～。
+[k]
+
+[label lblConf2]
+
+
+＠达·芬奇
+哎呀，真是太好了。[r]刚才由于发生系统错误，
+[k]
+
+＠达·芬奇
+设定成Boss用的强敌猎物数据[r]被以更为危险的形式输出了。
+[k]
+
+＠达·芬奇
+哎呀，为了不发生这种事，[r]我应该已经检查过了啊……？
+[k]
+
+[branch lblNotClear3 IsClear false]
+
+
+[charaFace B 32]
+
+[branch lblConf3]
+[label lblNotClear3]
+
+
+[label lblConf3]
+
+
+＠达·芬奇
+唔……是因为什么不确定要素进入模拟装置内，[r]造成了计算之外的影响吗？
+[k]
+
+＠达·芬奇
+比方说强大神性的魔力操作对系统进行的干涉之类……
+[k]
+
+[messageOff]
+[wt 0.9]
+
+[wipeout rectangleStripUpToDown 1.4 1.0]
+[bgmStop BGM_EVENT_77 1.4]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 2000,2000]
+
+[scene 28300]
+[pictureFrame cut063_cinema]
+[wt 0.2]
+
+[wipein rectangleStripDownToUp 1.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 0,-50]
+[wt 0.6]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠阿耳忒弥斯
+亲·[wt 0.3]爱·[wt 0.3]的[wt 0.3]～！[wt 0.4][r]认真狩猎的亲爱的果然好棒呀！
+[k]
+
+[charaFace D 5]
+
+＠阿耳忒弥斯
+[line 3]以及。[r]认真猎艳的亲爱完全不行呢。
+[k]
+
+[messageOff]
+[wipeout leftDownToRightUp 0.6 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[scene 20803]
+
+
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaFace C 15]
+[charaFadein C 0.1 -256,-50]
+[charaShake C 0.04 0 3 0]
+
+[charaEffect J bit_talk_43l 430,0]
+[charaEffect K bit_talk_43l -810,0]
+[wt 0.2]
+
+[se ad443]
+[seVolume ad443 0 0.5]
+[wipein rightUpToLeftDown 0.6 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠俄里翁
+可恶，钓到了！　居然钓到了，[r]而且偏偏还是那条哪怕我什么都不做似乎都会上钩的鱼！
+[k]
+
+＠俄里翁
+是会自己主动跳进鱼篓的那种！
+[k]
+
+[messageOff]
+[charaFace E 1]
+[charaScale E 1.2]
+[charaPut E 360,-30]
+[charaFadeTime E 0.4 0.6]
+[charaMove E 380,-30 0.4]
+[wt 0.6]
+
+＠E：阿耳忒弥斯
+为什么要说得那么垂头丧气呢？[r]为什么要逃跑呢？
+[k]
+
+＠E：阿耳忒弥斯
+呵呵呵，看来只能仔细审问你的身体[r]确认你究竟想干什么了呢！
+[k]
+
+
+＠俄里翁
+这话若非从你嘴里说出来，我一定会联想到香艳的场景，[r]但被你这么一说，除了拷问之外肯定不做他想吧！
+[k]
+
+[charaFace E 5]
+
+＠E：阿耳忒弥斯
+当然啦。[r]因为亲爱的，你正在谋划出轨吧？
+[k]
+
+＠俄里翁
+什[messageShake 0.04 3 3 0.3]么谋划啊。
+[k]
+
+[messageShakeStop]
+[charaFace C 11]
+
+＠俄里翁
+但是啊，抓捕＆放生是钓鱼人的权利吧？
+[k]
+
+[charaFace C 15]
+
+
+＠俄里翁
+话说我偶尔也想钓点其他鱼回家～！[r]或者说熊也想吃红大马哈鱼以外的鱼啊～！
+[k]
+
+[charaFace E 2]
+
+
+＠E：阿耳忒弥斯
+不回应想被吃的鱼儿的感情，[r]已经算是极重的罪孽了吧！
+[k]
+
+＠E：阿耳忒弥斯
+[f large]嘿[messageShake 0.04 3 2 0.5]～，要传递到哦，我的爱（混沌）！
+[k]
+
+[messageOff]
+[wipeout rightUpToLeftDown 0.5 1.0]
+[seStop ad443 0.5]
+[wait wipe]
+
+[charaPut J 2000,2000]
+[charaPut K 2000,2000]
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaEffectStop J bit_talk_43l]
+[charaEffectStop K bit_talk_43l]
+
+[scene 10000]
+[wt 0.2]
+
+[wipein leftDownToRightUp 0.5 1.0]
+[wait wipe]
+
+[effect bit_talk_ereshki02 0,0 H]
+[se ad246]
+[seVolume ad246 0 0.5]
+[wt 1.0]
+[se ad247]
+[seVolume ad247 0 0.5]
+[wt 1.0]
+[se ad248]
+[seVolume ad248 0 0.5]
+[wt 1.0]
+[seStop ad246 0.5]
+[seStop ad247 1.0]
+[seStop ad248 1.5]
+[wt 0.5]
+[effectStop bit_talk_ereshki02]
+[wt 0.6]
+
+[wipeout leftDownToRightUp 0.5 1.0]
+[wait wipe]
+
+[scene 20803]
+[cameraMove 0.1 0,0 1.02]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 0,-50]
+[charaShake C 0.04 0 1 0]
+
+[charaPut L 0,0]
+
+[wipein rightUpToLeftDown 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+[charaMove C -76,-50 0.2]
+[wt 0.1]
+[backEffect bit_talk_explosion 326,-50]
+[se ad609]
+[seVolume ad609 0 0.3]
+[wt 0.5]
+[charaMove C 66,-50 0.2]
+[wt 0.1]
+[backEffect bit_talk_explosion -296,0]
+[se ad609]
+[seVolume ad609 0 0.3]
+[wt 0.4]
+[charaMove C 0,-50 0.1]
+[wt 0.3]
+
+[charaShakeStop C]
+
+[shake 0.04 3 3 0.5]
+[backEffect bit_talk_explosion 26,-50]
+[se ad609]
+[seVolume ad609 0 0.3]
+[wt 0.1]
+
+[charaFadeout C 0.4]
+[charaMoveScale C 1.4 0.2]
+[wt 0.2]
+[shakeStop]
+[charaPut L 2000,2000]
+[charaEffectStop L bit_talk_41]
+[wt 0.4]
+
+＠俄里翁
+呀[messageShake 0.04 3 3 1.2]啊啊啊啊啊啊都是因为肌肉[r]表面积太大了啊啊啊啊啊！
+[k]
+
+[messageOff]
+[wt 0.6]
+[fadeout black 1.6]
+[bgmStop BGM_EVENT_3 1.6]
+[wait fade]
+
+
+[scene 20820]
+[pictureFrame]
+[cameraHome 0.1]
+[wt 0.1]
+
+[charaPut I 0,0]
+[wt 0.1]
+
+[branch lblNotClear4 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[branch lblConf4]
+[label lblNotClear4]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf4]
+
+[fadein black 1.6]
+[wait fade]
+[wt 0.2]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠达·芬奇
+算了，反正我也强化了安全措施，[r]并进行了锁定。应该不会再发生这种事了吧。
+[k]
+
+[charaFace B 4]
+
+＠达·芬奇
+太抱歉了哦～。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 2000,2000]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠退尔
+没事，不要紧。在做好思想准备前出现[r]的确吓了我一跳，但万幸的是没有伤到御主。
+[k]
+
+[charaFace A 0]
+
+＠退尔
+而能够解决那种山主……
+[k]
+
+＠退尔
+虽然不常见，[r]但也可以说是表现猎人实力的机会。
+[k]
+
+[charaFace A 1]
+
+＠退尔
+作为事情的收尾算恰到好处吧。
+[k]
+
+[charaPut I 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch lblNotClear5 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[branch lblConf5]
+[label lblNotClear5]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf5]
+
+＠达·芬奇
+那也就是说，你满意了吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 2000,2000]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠退尔
+嗯。状态已经恢复了。
+[k]
+
+＠退尔
+这让我回忆起了真正的我[line 3][r]也成功让御主认识到了这点。
+[k]
+
+＠退尔
+虽说如何看待这个问题，存在各种不同的解释，[r]但我这个基础得到了进一步加固。
+[k]
+
+[charaFace A 3]
+
+＠退尔
+……虽然一直让我很不好意思。
+[k]
+
+[charaPut I 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch lblNotClear6 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 32]
+[charaFadein B 0.1 1]
+
+[branch lblConf6]
+[label lblNotClear6]
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf6]
+
+＠达·芬奇
+唔唔。感觉在我不知道的时候[r]发生了什么重要的事件呢～。
+[k]
+
+[branch lblNotClear7 IsClear false]
+
+
+[charaFace B 31]
+
+[branch lblConf7]
+[label lblNotClear7]
+
+
+[charaFace B 2]
+
+[label lblConf7]
+
+＠达·芬奇
+大概是可以拿来骄傲的那种事吧！　太狡猾了！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 2000,2000]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠退尔
+不不，放过我吧。对我来说，[r]那已经接近[#恶梦:心理阴影]了哦？
+[k]
+
+[messageOff]
+[charaPut I 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch lblNotClear8 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 32]
+[charaFadein B 0.1 1]
+[wt 0.4]
+
+[branch lblConf8]
+[label lblNotClear8]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+[wt 0.4]
+
+[label lblConf8]
+
+
+？1：综上所述，我会保持沉默。
+？2：这是我们俩的秘密。
+？！
+
+
+
+[branch lblNotClear9 IsClear false]
+
+
+[charaFace B 22]
+
+＠达·芬奇
+难道是苹果？[r]难道和苹果有关吗？[wt 1.0]　[charaFace B 31][messageShake 0.04 3 3 0.6]好～[wt 0.2]狡～[wt 0.2]猾～！
+[k]
+
+
+[branch lblConf9]
+[label lblNotClear9]
+
+
+[charaFace B 1]
+
+＠达·芬奇
+难道是苹果？[r]难道和苹果有关吗？[wt 1.0]　[charaFace B 2][messageShake 0.04 3 3 0.6]好～[wt 0.2]狡～[wt 0.2]猾～！
+[k]
+
+[label lblConf9]
+
+
+
+
+[messageOff]
+[wt 0.6]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

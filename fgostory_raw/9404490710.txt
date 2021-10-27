@@ -1,0 +1,2231 @@
+
+
+＄94-04-49-07-1-0
+
+[soundStopAll]
+
+[skip false]
+
+[branchQuestNotClear lblNotClear1 3000320 4]
+[label lblClear1]
+[flag IsGirl true]
+[branch lblIsClearConf1]
+[label lblNotClear1]
+[flag IsGirl false]
+[label lblIsClearConf1]
+
+[skip true]
+
+[branch lblNotGirl IsGirl false]
+
+[label lblGirl]
+
+[charaSet B 7033002 1 阿周那·Alter]
+[charaSet C 7035001 1 森长可]
+[charaSet D 4039002 1 曼迪卡尔多]
+[charaSet E 7031000 1 泳装贞德·Alter]
+[charaSet F 5032000 1 泳装尼禄]
+[charaSet G 1040000 1 泳装葛饰北斋]
+[charaSet H 2001000 1 卫宫]
+[charaSet I 1001000 1 阿尔托莉雅]
+[charaSet J 5009000 1 特效用]
+
+
+[scene 10000]
+
+
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_71 0.1]
+
+＠女人的声音
+[line 3]这样啊。[r]那进入下一个作战阶段吧。
+[k]
+
+
+＠
+向她发问，这样真的没问题吗。[r]尽管回答不言自明。
+[k]
+
+
+＠女人的声音
+当然。必须让他们消失才行。
+[k]
+
+＠女人的声音
+[line 3]不惜任何代价。
+[k]
+
+＠女人的声音
+按预定计划行动，[r]■■■■■■■■■。
+[k]
+
+
+＠
+点头，表示明白了。[r]她不会想听多余的话。
+[k]
+
+＠
+认识到对话已经结束，[r]转身从她面前离开。
+[k]
+
+＠
+待周围一个人都没有的时候[line 3][r]不禁叹了口气。
+[k]
+
+＠
+好了，接下来又要辛苦了。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_71 2.0]
+[wait fade]
+[scene 90100]
+[wt 1.5]
+[fadein black 2.0]
+[wait fade]
+
+[wt 2.0]
+
+[messageOff]
+[scene 89703 1.4]
+[wt 3.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+[flag IsSauna false]
+[flag IsMeal false]
+[flag IsReading false]
+
+＠
+（那么……该去哪儿休息呢……）
+[k]
+
+？1：去洗澡和桑拿振奋一下精神吧。
+
+[flag IsSauna true]
+
+？2：去吃点好吃的东西吧。
+
+[flag IsMeal true]
+
+？3：去读书角悠闲地消磨时光吧。
+
+[flag IsReading true]
+
+？！
+
+[branch lblReading1 IsReading true]
+[branch lblMeal1 IsMeal true]
+[branch lblSauna1 IsSauna true]
+
+[label lblSauna1]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_2 1.5]
+[wt 0.5]
+[se ade151]
+[seVolume ade151 0 0.0]
+[wait fade]
+[scene 10000]
+[wt 0.6]
+[seVolume ade151 0.2 1.0]
+[scene 89800]
+[effect bit_talk_yuge]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[masterBranch lblBoy1_1 lblGirl1_1]
+
+[label lblBoy1_1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth D 2]
+[charaDepth B 3]
+
+[charaTalk off]
+[charaFace B 12]
+[charaFadein B 0.7 -384,0]
+[charaFace C 9]
+[charaFadein C 0.7 1]
+[charaFace D 1]
+[charaFadein D 0.7 384,0]
+
+[branch lblIsSexConf1_1]
+
+[label lblGirl1_1]
+
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaDepth E 2]
+[charaDepth F 3]
+
+[charaTalk off]
+[charaFace E 3]
+[charaFadein E 0.7 -384,0]
+[charaFace G 27]
+[charaFadein G 0.7 1]
+[charaFace F 7]
+[charaFadein F 0.7 384,0]
+
+[label lblIsSexConf1_1]
+
+[wt 3.0]
+
+＠
+……边与在一起的从者们谈笑风生，[r]边在惬意的温暖中悠闲地消除疲劳。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_7 1.5]
+[wait fade]
+
+[masterBranch lblBoy1_2 lblGirl1_2]
+
+[label lblBoy1_2]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+
+[branch lblIsSexConf1_2]
+
+[label lblGirl1_2]
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+
+[label lblIsSexConf1_2]
+
+[effectDestroy bit_talk_yuge]
+
+[branch lblSelectConf1]
+
+[label lblMeal1]
+
+[messageOff]
+[fadeout black 1.2]
+[bgm BGM_EVENT_2 1.2 0.4]
+[wait fade]
+[wt 1.0]
+[charaSet E 3028001 1 豹人]
+[charaSet F 10008000 1 志度内]
+[fadein black 1.2]
+[bgm BGM_EVENT_2 1.2 1.0]
+[wait fade]
+
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+[wt 2.0]
+
+[charaFadeout H 0.1]
+[wt 0.5]
+
+[se ade396]
+[seVolume ade396 0 0.7]
+[wt 1.5]
+[seStop ade396 0.5]
+[wt 0.6]
+[se ade400]
+[seVolume ade400 0 0]
+[seVolume ade400 0.3 1.0]
+[wt 1.4]
+[seStop ade400 0.5]
+
+[wt 1.2]
+
+[se ad519]
+[wt 0.1]
+[seStop ad519 0.1]
+[wt 0.7]
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth I 2]
+[charaDepth F 3]
+
+[charaTalk off]
+[charaFace I 1]
+[charaFadein I 0.4 320,0]
+[charaFace E 1]
+[charaFadein E 0.4 1]
+[charaFace F 1]
+[charaFadein F 0.4 -320,0]
+[wt 2.5]
+
+＠
+……边与在一起的从者们谈笑风生，[r]边吃着美味的饭菜补充能量。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgm BGM_EVENT_2 1.5 0.4]
+[wait fade]
+[charaFadeout I 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+
+[branch lblSelectConf1]
+
+[label lblReading1]
+
+[messageOff]
+[fadeout black 1.2]
+[bgm BGM_EVENT_2 1.2 0.4]
+[wait fade]
+[wt 1.0]
+[charaSet E 1030000 1 铃鹿御前]
+[charaSet F 3039000 1 加雷斯]
+[charaSet G 5028000 1 伊莉雅]
+[fadein black 1.2]
+[bgm BGM_EVENT_2 1.2 1.0]
+[wait fade]
+
+[flag IsSauna false]
+
+[se ade277]
+[seVolume ade277 0 0.5]
+[wt 0.3]
+[seStop ade277 0.5]
+[wt 1.5]
+[se ade277]
+[seVolume ade277 0 0.5]
+[wt 0.3]
+[seStop ade277 0.5]
+[wt 2.0]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth E 2]
+[charaDepth G 3]
+
+[charaTalk off]
+[charaFace E 3]
+[charaFadein E 0.4 -384,0]
+[charaFace G 3]
+[charaFadein G 0.4 1]
+[charaFace F 11]
+[charaFadein F 0.4 384,0]
+[wt 2.5]
+
+
+＠
+……边与在一起的从者们谈笑风生，[r]边享受美妙的故事感受幸福。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgm BGM_EVENT_2 1.5 0.4]
+[wait fade]
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+
+[label lblSelectConf1]
+
+[charaTalk depthOn]
+
+
+[scene 89703]
+[wt 1.2]
+[charaSet A 7027300 1 Amazones CEO_普通]
+[charaSet B 1098119600 1 Amazones CEO_轱辘]
+[charaSet C 1098124510 1 达·芬奇]
+[charaSet D 99502600 1 玛修]
+[charaSet E 6008000 1 Cosmotic Beauty夫人]
+[charaSet F 98002000 1 芙芙]
+[imageSet G back89900 1]
+[charaScale G 1.01]
+[fadein black 1.5]
+[branch lblNoVolChg1 IsSauna true]
+[bgm BGM_EVENT_2 1.5 1.0]
+[label lblNoVolChg1]
+[wait fade]
+
+[branch lblNoChgBGM1 IsSauna false]
+[bgm BGM_EVENT_2 0.1]
+[label lblNoChgBGM1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+噢噢，是你啊。[r]怎么样，好好休息过了吗？
+[k]
+
+？1：没问题！
+？！
+
+[charaFace A 1]
+
+＠A：Amazones CEO
+那就好。
+[k]
+
+＠A：Amazones CEO
+我对你身为我助理的工作，以及身为[r]外包公司代表的工作……都感到非常满意。
+[k]
+
+＠A：Amazones CEO
+我必须给与你相应的奖励才行。
+[k]
+
+＠A：Amazones CEO
+正式的奖励会在今后奉上，总之，[r]先在这里好好享受这大Amazones温泉物语吧。
+[k]
+
+？1：话说，调查有进展吗？
+？2：接下来有什么计划？
+？！
+
+[charaFace A 8]
+
+＠A：Amazones CEO
+『秘密公司　Assassin』还没有消息。[r]再着急也没用，我可不会着急哦。
+[k]
+
+＠A：Amazones CEO
+多亏了你们的努力，[r]需要抓紧配送的囤积订单已经处理完毕了。
+[k]
+
+[charaFace A 11]
+
+＠A：Amazones CEO
+今后将以正常的节奏来处理即将到来的新订单，[r]这些应该也会拜托你们这些外包配送员继续努力应对。
+[k]
+
+＠A：Amazones CEO
+而在此期间手头有空的人员则负责调查事件。
+[k]
+
+＠A：Amazones CEO
+以前只能用在配送上的人力资源可以用作调查了，
+[k]
+
+＠A：Amazones CEO
+所以肯定能找到一些线索吧。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 0.5]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[se ad13]
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+[wt 0.3]
+
+＠达·芬奇
+说得对～。我也这么想。[r]然而哦。
+[k]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaFace C 2]
+
+＠达·芬奇
+出问题啦！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠玛修
+出问题了！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠芙芙
+芙！？
+[k]
+
+？1：怎么两个人异口同声，发生什么事了！？
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+其实，我和玛修说的是两个问题。[r]只不过结论是有关联的。
+[k]
+
+[charaFace C 25]
+
+＠达·芬奇
+那玛修，先从你的问题开始说。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠玛修
+是。我是作为Amazones.com的临时办事员前来报告问题的，
+[k]
+
+＠玛修
+就在刚才，接到了Premium的加急订单。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+哦，这不是挺好的嘛。[r]既然客人愿意使用我们的服务，我们当然应该表示感谢……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+[wt 1.0]
+[charaFace D 7]
+
+＠玛修
+有[#五十件]。
+[k]
+
+[charaFace D 14]
+
+＠玛修
+一次性就接到了五十件必须[r]最优先配送的Premium加急订单啊！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+什么！？
+[k]
+
+＠A：Amazones CEO
+这下糟了。[r]现在可没空说什么还有宽裕了。
+[k]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth B 1]
+[charaDepth A 2]
+[charaFadeout A 0.2]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠B：Amazones CEO
+我们还有一般配送业务。[r]只能将剩余战力全部投入那边，
+[k]
+
+＠B：Amazones CEO
+想办法灵活应对了……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaPut J 1]
+[charaTalk on]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠玛修
+但不知道该说幸运还是不幸，[r]这些订单都有一个共通的特征。
+[k]
+
+＠玛修
+这五十件订单全都是[#从一栋建筑物]发出的。
+[k]
+
+[bgmStop BGM_EVENT_48 1.0]
+
+？1：这是什么意思？
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_90 0.1]
+
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+接下来就由我继续说吧。[r]这个问题必须先说明我负责的问题才行。
+[k]
+
+＠达·芬奇
+下订单的坐标，是新发现的微小特异点。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠芙芙
+芙！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 32]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+只不过，事情稍微有些奇怪。
+[k]
+
+＠达·芬奇
+说是新发现，但从适应程度来看，[r]我认为这个特异点并非刚才突然发生的。
+[k]
+
+＠达·芬奇
+应该是不久以前已经发生了，[r]但我们现在才发现[line 3]类似这种感觉吧。
+[k]
+
+[charaFace C 14]
+
+＠达·芬奇
+唔，本不该看漏才对啊。[r]是我们比自己想象中的更为松懈，还是说……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+从特异点发出的，[r]仿佛看准了时机般的不自然大宗订单。
+[k]
+
+＠A：Amazones CEO
+仿佛能从中窥得想看到我们[r]手忙脚乱样子的恶作剧想法。
+[k]
+
+[charaFace A 5]
+
+＠A：Amazones CEO
+看来这个订单[line 3]是掳走了部下们的[r]黑幕对我们的追加攻击吧！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 25]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+有这个可能性。这订单实在是太不自然了。[r]不得不说里面必然包含着某种意图。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_90 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠玛修
+……您打算怎么办？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+那还用说吗。[r]只要是攻击，就抵挡、反击、击溃敌人！
+[k]
+
+[charaFace A 2]
+
+＠A：Amazones CEO
+这就是我们Amazones的作风！[r]休息结束，我们走！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠玛修
+那个，这未免太明显了，我觉得有必要[r]警惕陷阱之类[se ad59][line 3][seVolume ad59 1.0 0.0]请等一下啦，CEO小姐！？
+[k]
+
+[seStop ad59 0.3]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+这是完全没有头绪的黑幕总算直接接触我们的机会。
+[k]
+
+＠达·芬奇
+Amazones中的Amazones必然无法忍受吧～。
+[k]
+
+[charaFace C 0]
+
+＠达·芬奇
+没办法，[%1]也抓紧做好准备追上她。
+[k]
+
+＠达·芬奇
+但千万不要勉强自己。先顺便侦查，[r]类似于打探一下特异点的状况。
+[k]
+
+＠达·芬奇
+总之一定要小心哦！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[charaFadeout C 0.1]
+[charaPut J 1200,1200]
+[scene 20700]
+[wt 1.0]
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+呼。在哪里……在哪里……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.6 0.4]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠Cosmotic Beauty夫人
+简直就是头野兽呢……
+[k]
+
+＠Cosmotic Beauty夫人
+姑且还是小心地抱着第一件需要配送的商品，[r]然而这看上去反而显得更为莫名其妙。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+坐标应该就在这附近才对……[r]唔，就是那边的那个吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgm BGM_EVENT_3 0.4 1.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+那是什么……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[se ad132]
+[wt 0.2]
+[wipeout rightToLeft 0.7 1]
+[bgmStop BGM_EVENT_3 0.7]
+[wait wipe]
+[seStop ad132 1.0]
+[scene 10000]
+[wt 1.5]
+[wipein leftToRight 0.1 1]
+[wait wipe]
+[fadeout black 0.1]
+[wait fade]
+[charaFadein G 0.1 0,200]
+[wt 0.5]
+[fadein black 1.0]
+[wait fade]
+[wt 0.7]
+[charaAttack G normal 0,-160 4.0]
+[wt 6.5]
+
+[fadeout black 0.3]
+[wait fade]
+[charaFadeout G 0.1]
+[scene 89900]
+[wt 0.2]
+[fadein black 0.3]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+
+＠玛修
+这外观异样的建筑物……究竟是什么！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 33]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+哎呀呀，多么古怪的塔啊。
+[k]
+
+＠达·芬奇
+我好像在过去的事件数据里[r]见过和这个感觉类似的和风建筑。
+[k]
+
+＠达·芬奇
+面对这种品味，身为天才美少女发明家的我[r]也只能一脸无奈的保持沉默了……
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[wt 0.3]
+
+[se ad172]
+[wt 1.2]
+[seStop ad172 0.1]
+
+[wt 0.6]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠玛修
+总之仅通过外观进行的简易测定已经得出结果了。[r]这座塔估计全高50层。
+[k]
+
+＠玛修
+Amazones.com收到的订单坐标的最后，[r]分别注明了1层到50层，
+[k]
+
+＠玛修
+所以分别送到这座塔每层楼的房间……[r]应该可以这么解释……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Cosmotic Beauty夫人
+这究竟算省事还是麻烦啊，[r]不实际去配送是不会知道的。
+[k]
+
+[charaFace E 3]
+
+＠Cosmotic Beauty夫人
+不过这座塔未免太直接太强行了，[r]有种建立在视觉错觉上的奇怪平衡感。
+[k]
+
+＠Cosmotic Beauty夫人
+妾身并不讨厌这种哦？[wt 0.6][charaFace E 2][r]给你BT点评价！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+…………
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth A 2]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+
+[charaMove E -288,0 0.2]
+[wt 0.3]
+
+＠Cosmotic Beauty夫人
+怎……怎么了？[r]应该不至于连BT点也不能说吧？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+这是……神殿吧。[r]是用神殿一层层堆积起来的塔。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+嗯，看来是古希腊的建筑风格呢。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠玛修
+既然是神殿，[r]难道祭祀着神明大人吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+是啊。这恐怕[line 3][r]是女神阿耳忒弥斯的神殿。
+[k]
+
+？1：那这就是阿耳忒弥斯神殿塔……！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠芙芙
+芙，芙呜。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+这么说来，当我向全员传达配送任务的时候，[r]好像有几个从者联系不上呢。
+[k]
+
+[charaFace C 4]
+
+＠达·芬奇
+顺便刚才提到的阿耳忒弥斯也包含在内。
+[k]
+
+＠达·芬奇
+我本以为是『我才不愿意做这种事』系的抵制行为呢，[r]难不成……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+不管怎么样，先进去看看再说吧。[r]假如这座塔的各层都有客人，就更不用说了。
+[k]
+
+[charaFace A 12]
+
+＠A：Amazones CEO
+无论是攻击、恶作剧、还是陷阱，[r]只要有配送货物，就必须送达。
+[k]
+
+＠A：Amazones CEO
+击溃敌人的问题等工作完成之后再说！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 1.2]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Cosmotic Beauty夫人
+说到底，要做的事和迄今为止并无差别吧？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+唔。光是从外部看，[r]也能明白这座塔并不简单。
+[k]
+
+＠A：Amazones CEO
+或许我们要做好每一层配送的艰辛[r]都相当于过去一件订单水准的思想准备呢。
+[k]
+
+＠A：Amazones CEO
+和普通业务一样，一定要严格注意[r]配送关键人员的疲劳管理。都明白了吧。
+[k]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth B 1]
+[charaDepth A 2]
+[charaFadeout A 0.2]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：Amazones CEO
+那我们走吧。目前制定的短期目标，[r]就是突破这座神殿塔！　当然要做到[#越快越好:ASAP]！
+[k]
+
+
+[branch lblIsGirlConf]
+
+[label lblNotGirl]
+
+[charaSet B 7033002 1 阿周那·Alter]
+[charaSet C 7035001 1 森长可]
+[charaSet D 4039002 1 曼迪卡尔多]
+[charaSet E 7031000 1 泳装贞德·Alter]
+[charaSet F 5032000 1 泳装尼禄]
+[charaSet G 1040000 1 泳装葛饰北斋]
+[charaSet H 2001000 1 卫宫]
+[charaSet I 1001000 1 阿尔托莉雅]
+[charaSet J 5009000 1 特效用]
+
+
+[scene 10000]
+
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_71 0.1]
+
+＠女人的声音
+[line 3]这样啊。[r]那进入下一个作战阶段吧。
+[k]
+
+
+＠
+向她发问，这样真的没问题吗。[r]尽管回答不言自明。
+[k]
+
+
+＠女人的声音
+当然。必须让他们消失才行。
+[k]
+
+＠女人的声音
+[line 3]不惜任何代价。
+[k]
+
+＠女人的声音
+按预定计划行动，[r]■■■■■■■■■。
+[k]
+
+
+＠
+点头，表示明白了。[r]她不会想听多余的话。
+[k]
+
+＠
+认识到对话已经结束，[r]转身从她面前离开。
+[k]
+
+＠
+待周围一个人都没有的时候[line 3][r]不禁叹了口气。
+[k]
+
+＠
+好了，接下来又要辛苦了。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_71 2.0]
+[wait fade]
+[scene 90100]
+[wt 1.5]
+[fadein black 2.0]
+[wait fade]
+
+[wt 2.0]
+
+[messageOff]
+[scene 89703 1.4]
+[wt 3.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+[flag IsSauna false]
+[flag IsMeal false]
+[flag IsReading false]
+
+＠
+（那么……该去哪儿休息呢……）
+[k]
+
+？1：去洗澡和桑拿振奋一下精神吧。
+
+[flag IsSauna true]
+
+？2：去吃点好吃的东西吧。
+
+[flag IsMeal true]
+
+？3：去读书角悠闲地消磨时光吧。
+
+[flag IsReading true]
+
+？！
+
+[branch lblReading2 IsReading true]
+[branch lblMeal2 IsMeal true]
+[branch lblSauna2 IsSauna true]
+
+[label lblSauna2]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_2 1.5]
+[wt 0.5]
+[se ade151]
+[seVolume ade151 0 0.0]
+[wait fade]
+[scene 10000]
+[wt 0.6]
+[seVolume ade151 0.2 1.0]
+[scene 89800]
+[effect bit_talk_yuge]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[masterBranch lblBoy2_1 lblGirl2_1]
+
+[label lblBoy2_1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth D 2]
+[charaDepth B 3]
+
+[charaTalk off]
+[charaFace B 12]
+[charaFadein B 0.7 -384,0]
+[charaFace C 9]
+[charaFadein C 0.7 1]
+[charaFace D 1]
+[charaFadein D 0.7 384,0]
+
+[branch lblIsSexConf2_1]
+
+[label lblGirl2_1]
+
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaDepth E 2]
+[charaDepth F 3]
+
+[charaTalk off]
+[charaFace E 3]
+[charaFadein E 0.7 -384,0]
+[charaFace G 27]
+[charaFadein G 0.7 1]
+[charaFace F 7]
+[charaFadein F 0.7 384,0]
+
+[label lblIsSexConf2_1]
+
+[wt 3.0]
+
+＠
+……边与在一起的从者们谈笑风生，[r]边在惬意的温暖中悠闲地消除疲劳。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_7 1.5]
+[wait fade]
+
+[masterBranch lblBoy2_2 lblGirl2_2]
+
+[label lblBoy2_2]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+
+[branch lblIsSexConf2_2]
+
+[label lblGirl2_2]
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+
+[label lblIsSexConf2_2]
+
+[effectDestroy bit_talk_yuge]
+
+[branch lblSelectConf2]
+
+[label lblMeal2]
+
+[messageOff]
+[fadeout black 1.2]
+[bgm BGM_EVENT_2 1.2 0.4]
+[wait fade]
+[wt 1.0]
+[charaSet E 3028001 1 豹人]
+[charaSet F 10008000 1 志度内]
+[fadein black 1.2]
+[bgm BGM_EVENT_2 1.2 1.0]
+[wait fade]
+
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+[wt 2.0]
+
+[charaFadeout H 0.1]
+[wt 0.5]
+
+[se ade396]
+[seVolume ade396 0 0.7]
+[wt 1.5]
+[seStop ade396 0.5]
+[wt 0.6]
+[se ade400]
+[seVolume ade400 0 0]
+[seVolume ade400 0.3 1.0]
+[wt 1.4]
+[seStop ade400 0.5]
+
+[wt 1.2]
+
+[se ad519]
+[wt 0.1]
+[seStop ad519 0.1]
+[wt 0.7]
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth I 2]
+[charaDepth F 3]
+
+[charaTalk off]
+[charaFace I 1]
+[charaFadein I 0.4 320,0]
+[charaFace E 1]
+[charaFadein E 0.4 1]
+[charaFace F 1]
+[charaFadein F 0.4 -320,0]
+[wt 2.5]
+
+＠
+……边与在一起的从者们谈笑风生，[r]边吃着美味的饭菜补充能量。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgm BGM_EVENT_2 1.5 0.4]
+[wait fade]
+[charaFadeout I 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+
+[branch lblSelectConf2]
+
+[label lblReading2]
+
+[messageOff]
+[fadeout black 1.2]
+[bgm BGM_EVENT_2 1.2 0.4]
+[wait fade]
+[wt 1.0]
+[charaSet E 1030000 1 铃鹿御前]
+[charaSet F 3039000 1 加雷斯]
+[charaSet G 5028000 1 伊莉雅]
+[fadein black 1.2]
+[bgm BGM_EVENT_2 1.2 1.0]
+[wait fade]
+
+[flag IsSauna false]
+
+[se ade277]
+[seVolume ade277 0 0.5]
+[wt 0.3]
+[seStop ade277 0.5]
+[wt 1.5]
+[se ade277]
+[seVolume ade277 0 0.5]
+[wt 0.3]
+[seStop ade277 0.5]
+[wt 2.0]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth E 2]
+[charaDepth G 3]
+
+[charaTalk off]
+[charaFace E 3]
+[charaFadein E 0.4 -384,0]
+[charaFace G 3]
+[charaFadein G 0.4 1]
+[charaFace F 11]
+[charaFadein F 0.4 384,0]
+[wt 2.5]
+
+
+＠
+……边与在一起的从者们谈笑风生，[r]边享受美妙的故事感受幸福。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgm BGM_EVENT_2 1.5 0.4]
+[wait fade]
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+
+[label lblSelectConf2]
+
+[charaTalk depthOn]
+
+
+[scene 89703]
+[wt 1.2]
+[charaSet A 7027300 1 Amazones CEO_普通]
+[charaSet B 1098119600 1 Amazones CEO_轱辘]
+[charaSet C 98111500 1 达·芬奇]
+[charaSet D 99502600 1 玛修]
+[charaSet E 6008000 1 Cosmotic Beauty夫人]
+[charaSet F 98002000 1 芙芙]
+[imageSet G back89900 1]
+[charaScale G 1.01]
+[fadein black 1.5]
+[branch lblNoVolChg2 IsSauna true]
+[bgm BGM_EVENT_2 1.5 1.0]
+[label lblNoVolChg2]
+[wait fade]
+
+[branch lblNoChgBGM2 IsSauna false]
+[bgm BGM_EVENT_2 0.1]
+[label lblNoChgBGM2]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+噢噢，是你啊。[r]怎么样，好好休息过了吗？
+[k]
+
+？1：没问题！
+？！
+
+[charaFace A 1]
+
+＠A：Amazones CEO
+那就好。
+[k]
+
+＠A：Amazones CEO
+我对你身为我助理的工作，以及身为[r]外包公司代表的工作……都感到非常满意。
+[k]
+
+＠A：Amazones CEO
+我必须给与你相应的奖励才行。
+[k]
+
+＠A：Amazones CEO
+正式的奖励会在今后奉上，总之，[r]先在这里好好享受这大Amazones温泉物语吧。
+[k]
+
+？1：话说，调查有进展吗？
+？2：接下来有什么计划？
+？！
+
+[charaFace A 8]
+
+＠A：Amazones CEO
+『秘密公司　Assassin』还没有消息。[r]再着急也没用，我可不会着急哦。
+[k]
+
+＠A：Amazones CEO
+多亏了你们的努力，[r]需要抓紧配送的囤积订单已经处理完毕了。
+[k]
+
+[charaFace A 11]
+
+＠A：Amazones CEO
+今后将以正常的节奏来处理即将到来的新订单，[r]这些应该也会拜托你们这些外包配送员继续努力应对。
+[k]
+
+＠A：Amazones CEO
+而在此期间手头有空的人员则负责调查事件。
+[k]
+
+＠A：Amazones CEO
+以前只能用在配送上的人力资源可以用作调查了，
+[k]
+
+＠A：Amazones CEO
+所以肯定能找到一些线索吧。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 0.5]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[se ad13]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-90]
+[wt 0.3]
+
+＠达·芬奇
+说得对～。我也这么想。[r]然而哦。
+[k]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaFace C 2]
+
+＠达·芬奇
+出问题啦！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠玛修
+出问题了！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠芙芙
+芙！？
+[k]
+
+？1：怎么两个人异口同声，发生什么事了！？
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-90]
+
+＠达·芬奇
+其实，我和玛修说的是两个问题。[r]只不过结论是有关联的。
+[k]
+
+[charaFace C 0]
+
+＠达·芬奇
+那玛修，先从你的问题开始说。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠玛修
+是。我是作为Amazones.com的临时办事员前来报告问题的，
+[k]
+
+＠玛修
+就在刚才，接到了Premium的加急订单。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+哦，这不是挺好的嘛。[r]既然客人愿意使用我们的服务，我们当然应该表示感谢……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+[wt 1.0]
+[charaFace D 7]
+
+＠玛修
+有[#五十件]。
+[k]
+
+[charaFace D 14]
+
+＠玛修
+一次性就接到了五十件必须[r]最优先配送的Premium加急订单啊！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+なにっ！？
+[k]
+
+＠A：Amazones CEO
+这下糟了。[r]现在可没空说什么还有宽裕了。
+[k]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth B 1]
+[charaDepth A 2]
+[charaFadeout A 0.2]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠B：Amazones CEO
+我们还有一般配送业务。[r]只能将剩余战力全部投入那边，
+[k]
+
+＠B：Amazones CEO
+想办法灵活应对了……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaPut J 1]
+[charaTalk on]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠玛修
+但不知道该说幸运还是不幸，[r]这些订单都有一个共通的特征。
+[k]
+
+＠玛修
+这五十件订单全都是[#从一栋建筑物]发出的。
+[k]
+
+[bgmStop BGM_EVENT_48 1.0]
+
+？1：这是什么意思？
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_90 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-90]
+
+＠达·芬奇
+接下来就由我继续说吧。[r]这个问题必须先说明我负责的问题才行。
+[k]
+
+＠达·芬奇
+下订单的坐标，是新发现的微小特异点。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠芙芙
+芙！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-90]
+
+＠达·芬奇
+只不过，事情稍微有些奇怪。
+[k]
+
+＠达·芬奇
+说是新发现，但从适应程度来看，[r]我认为这个特异点并非刚才突然发生的。
+[k]
+
+＠达·芬奇
+应该是不久以前已经发生了，[r]但我们现在才发现[line 3]类似这种感觉吧。
+[k]
+
+[charaFace C 4]
+
+＠达·芬奇
+唔，本不该看漏才对啊。[r]是我们比自己想象中的更为松懈，还是说……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+从特异点发出的，[r]仿佛看准了时机般的不自然大宗订单。
+[k]
+
+＠A：Amazones CEO
+仿佛能从中窥得想看到我们[r]手忙脚乱样子的恶作剧想法。
+[k]
+
+[charaFace A 5]
+
+＠A：Amazones CEO
+看来这个订单[line 3]是掳走了部下们的[r]黑幕对我们的追加攻击吧！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-90]
+
+＠达·芬奇
+有这个可能性。这订单实在是太不自然了。[r]不得不说里面必然包含着某种意图。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_90 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠玛修
+……您打算怎么办？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+那还用说吗。[r]只要是攻击，就抵挡、反击、击溃敌人！
+[k]
+
+[charaFace A 2]
+
+＠A：Amazones CEO
+这就是我们Amazones的作风！[r]休息结束，我们走！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠玛修
+那个，这未免太明显了，我觉得有必要[r]警惕陷阱之类[se ad59][line 3][seVolume ad59 1.0 0.0]请等一下啦，CEO小姐！？
+[k]
+
+[seStop ad59 0.3]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-90]
+
+＠达·芬奇
+这是完全没有头绪的黑幕总算直接接触我们的机会。
+[k]
+
+＠达·芬奇
+Amazones中的Amazones必然无法忍受吧～。
+[k]
+
+[charaFace C 0]
+
+＠达·芬奇
+没办法，[%1]也抓紧做好准备追上她。
+[k]
+
+＠达·芬奇
+但千万不要勉强自己。先顺便侦查，[r]类似于打探一下特异点的状况。
+[k]
+
+＠达·芬奇
+总之一定要小心哦！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[charaFadeout C 0.1]
+[charaPut J 1200,1200]
+[scene 20700]
+[wt 1.0]
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+呼。在哪里……在哪里……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.6 0.4]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠Cosmotic Beauty夫人
+简直就是头野兽呢……
+[k]
+
+＠Cosmotic Beauty夫人
+姑且还是小心地抱着第一件需要配送的商品，[r]然而这看上去反而显得更为莫名其妙。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-90]
+
+＠达·芬奇
+坐标应该就在这附近才对……[r]唔，就是那边的那个吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgm BGM_EVENT_3 0.4 1.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+那是什么……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[se ad132]
+[wt 0.2]
+[wipeout rightToLeft 0.7 1]
+[bgmStop BGM_EVENT_3 0.7]
+[wait wipe]
+[seStop ad132 1.0]
+[scene 10000]
+[wt 1.5]
+[wipein leftToRight 0.1 1]
+[wait wipe]
+[fadeout black 0.1]
+[wait fade]
+[charaFadein G 0.1 0,200]
+[wt 0.5]
+[fadein black 1.0]
+[wait fade]
+[wt 0.7]
+[charaAttack G normal 0,-160 4.0]
+[wt 6.5]
+
+[fadeout black 0.3]
+[wait fade]
+[charaFadeout G 0.1]
+[scene 89900]
+[wt 0.2]
+[fadein black 0.3]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+
+＠玛修
+这外观异样的建筑物……究竟是什么！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-90]
+
+＠达·芬奇
+哎呀呀，多么古怪的塔啊。
+[k]
+
+＠达·芬奇
+我好像在过去的事件数据里[r]见过和这个感觉类似的和风建筑。
+[k]
+
+＠达·芬奇
+面对这种品味，身为天才发明家的我[r]也只能一脸无奈的保持沉默了……
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[wt 0.3]
+
+[se ad172]
+[wt 1.2]
+[seStop ad172 0.1]
+
+[wt 0.6]
+
+[charaSet C 1098177800 1 达·芬奇]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠玛修
+总之仅通过外观进行的简易测定已经得出结果了。[r]这座塔估计全高50层。
+[k]
+
+＠玛修
+Amazones.com收到的订单坐标的最后，[r]分别注明了1层到50层，
+[k]
+
+＠玛修
+所以分别送到这座塔每层楼的房间……[r]应该可以这么解释……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Cosmotic Beauty夫人
+这究竟算省事还是麻烦啊，[r]不实际去配送是不会知道的。
+[k]
+
+[charaFace E 3]
+
+＠Cosmotic Beauty夫人
+不过这座塔未免太直接太强行了，[r]有种建立在视觉错觉上的奇怪平衡感。
+[k]
+
+＠Cosmotic Beauty夫人
+妾身并不讨厌这种哦？[wt 0.6][charaFace E 2][r]给你BT点评价！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+…………
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth A 2]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+
+[charaMove E -288,0 0.2]
+[wt 0.3]
+
+＠Cosmotic Beauty夫人
+怎……怎么了？[r]应该不至于连BT点也不能说吧？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+这是……神殿吧。[r]是用神殿一层层堆积起来的塔。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-90]
+
+＠达·芬奇
+嗯，看来是古希腊的建筑风格呢。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠玛修
+既然是神殿，[r]难道祭祀着神明大人吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+是啊。这恐怕[line 3][r]是女神阿耳忒弥斯的神殿。
+[k]
+
+？1：那这就是阿耳忒弥斯神殿塔……！
+？！
+
+[charaSet C 98111500 1 达·芬奇]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠芙芙
+芙，芙呜。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-90]
+
+＠达·芬奇
+这么说来，当我向全员传达配送任务的时候，[r]好像有几个从者联系不上呢。
+[k]
+
+＠达·芬奇
+顺便刚才提到的阿耳忒弥斯也包含在内。
+[k]
+
+＠达·芬奇
+我本以为是『我才不愿意做这种事』系的抵制行为呢，[r]难不成……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+不管怎么样，先进去看看再说吧。[r]假如这座塔的各层都有客人，就更不用说了。
+[k]
+
+[charaFace A 12]
+
+＠A：Amazones CEO
+无论是攻击、恶作剧、还是陷阱，[r]只要有配送货物，就必须送达。
+[k]
+
+＠A：Amazones CEO
+击溃敌人的问题等工作完成之后再说！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 1.2]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Cosmotic Beauty夫人
+说到底，要做的事和迄今为止并无差别吧？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+唔。光是从外部看，[r]也能明白这座塔并不简单。
+[k]
+
+＠A：Amazones CEO
+或许我们要做好每一层配送的艰辛[r]都相当于过去一件订单水准的思想准备呢。
+[k]
+
+＠A：Amazones CEO
+和普通业务一样，一定要严格注意[r]配送关键人员的疲劳管理。都明白了吧。
+[k]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth B 1]
+[charaDepth A 2]
+[charaFadeout A 0.2]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：Amazones CEO
+那我们走吧。目前制定的短期目标，[r]就是突破这座神殿塔！　当然要做到[#越快越好:ASAP]！
+[k]
+
+
+[label lblIsGirlConf]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

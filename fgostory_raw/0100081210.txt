@@ -1,0 +1,409 @@
+
+
+＄01-00-08-12-1-0
+
+
+
+[soundStopAll]
+
+[bgm BGM_EVENT_42 0.1]
+
+[scene 36301]
+[charaSet A 5022001 1 三藏]
+[charaSet B 1007002 1 高文]
+
+[charaSet C 9938600 1 魔神亚蒙]
+[charaSet D 4012002 1 奥斯曼狄斯]
+[charaSet E 3020000 1 狮子面骑士]
+[charaSet F 1012001 1 银骑士]
+
+[charaSet G 9938600 1 魔神亚蒙2]
+[charaSet H 9938600 1 魔神亚蒙3]
+
+[charaDepth C 10]
+
+[fadein black 2.0]
+[wait fade]
+
+
+
+[effect bit_talk_kengekiall01]
+[wt 0.2]
+[se bac11]
+[wt 0.2]
+[se bac6]
+[wt 0.2]
+[se bac10]
+[wt 0.7]
+
+
+＠魔神亚蒙
+噢噢……噢噢噢噢噢噢噢……！
+[k]
+
+＠魔神亚蒙
+吾等窥觉星，七十二柱魔神，[r]司掌思考与伦理！
+[k]
+
+＠魔神亚蒙
+无论对手是何等英灵，[r]都不可能烧尽吾等的知性……！
+[k]
+
+＠魔神亚蒙
+苏醒吧，显现吧，新生吧！[r]没有吾等九柱，是无法成就伟业的……！
+[k]
+
+
+[messageOff]
+[charaTalk off]
+
+
+[wt 0.4]
+[se ad63]
+[flashin loop 0.2 0.2 FFFFFFFF FFFFFF00]
+
+[charaFadein G 0.4 512,0]
+[wt 0.4]
+[charaFadein H 0.4 -512,0]
+[wt 0.5]
+
+[charaFadein C 0.4 1]
+
+[wt 0.4]
+[flashOff]
+
+[wt 0.8]
+[charaFadeout C 0.4]
+[charaFadeout G 0.4]
+[charaFadeout H 0.4]
+[wt 0.3]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠三藏
+哇，一下子增加了！？[r]又不是悟空的分身，这未免太多了点吧！？
+[k]
+
+[charaFadeout A 0.1]
+[charaSet A 6002001 1 咒腕哈桑]
+
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠咒腕哈桑
+呜，被压制回来了……！[r]光凭我们的力量，想对抗如此大规模数量……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+
+＠E：？？？
+……不。[r]汝等已经战斗得十分出色了。这是魔神们最后的惨叫。
+[k]
+
+＠E：？？？
+没有意志的暴力根本不值得害怕。[r]难道不是吗。遥远的圆桌骑士们啊。
+[k]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+
+＠高文
+[line 3]您是[line 3]
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.7 1]
+[wt 0.7]
+
+＠狮子面骑士
+……缘分在光芒中散去，因果被打断了。[r]然而吾之枪没有忘却诸位的战斗。
+[k]
+
+＠狮子面骑士
+最后的一击就交给我吧，[%1]。[r]吾乃暴风之王。被赋予了伦戈米尼亚德之人。
+[k]
+
+＠狮子面骑士
+由尽头前来此处，为将星辰之锚打入宇宙之外而来。[r][line 3]追随我的左右吧，堇色的银骑士啊。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+
+＠银骑士
+[line 3]是。[r][#紧握其剑:Switch On]，[#白银:Agate][line 3]
+[k]
+
+[messageOff]
+
+[flashin loop 4.0 1.0 F0E68C F0E68C]
+
+[charaFadeout F 0.1]
+
+[voice NP_101200_1]
+[voice NP_302000_1]
+
+[wt 4.5]
+[flashin loop 0.1 0.2 F5F5F5 FFFFFF00]
+[voice NP_302000_4]
+
+[charaTalk off]
+[charaFadein C 0.4 1]
+[charaFadein G 0.4 -512,0]
+[charaFadein H 0.4 512,0]
+
+[shake 0.05 7 7 0]
+[charaSpecialEffect C enemyErasure]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[se ba6]
+[wt 0.7]
+[flashOff]
+[wait charaSpecialEffect C]
+[charaFadeout C 0.1]
+[shakeStop]
+[wt 0.3]
+
+[shake 0.05 7 7 0]
+[charaSpecialEffect G enemyErasure]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[se ba6]
+[wt 0.7]
+[flashOff]
+[wait charaSpecialEffect G]
+[charaFadeout G 0.1]
+[shakeStop]
+[wt 0.3]
+
+[shake 0.05 7 7 0]
+[charaSpecialEffect H enemyErasure]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[se ba6]
+[wt 0.7]
+[flashOff]
+[wait charaSpecialEffect H]
+[charaFadeout H 0.1]
+[shakeStop]
+[wt 0.3]
+
+[charaFadeout C 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+
+[shakeStop]
+[charaTalk on]
+
+
+＠魔神亚蒙
+确认，末端单元，消灭[line 3][r]与玉座的连接切断[line 3]无法，重生回归[line 3]
+[k]
+
+＠魔神亚蒙
+阿加雷斯。瓦沙克。加麦基。玛巴斯[line 3]复原。[r]华利弗。安洛先。欧若博司。[line 3]融合复原。
+[k]
+
+[charaSet E 98003000 1 Dr.罗曼]
+
+＠魔神亚蒙
+窥觉星亚蒙，距重新启动，还剩两分钟[line 3]。[r]专注，驱逐敌方从者[line 3]
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+[scene 36100]
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+
+[communicationChara 98003003 1 5 0 2]
+
+＠Dr.罗曼
+好，这个据点的机能下降了二成！[r]向玉座供应的魔力也断了！
+[k]
+
+[charaSet A 5022001 1 三藏]
+[communicationCharaClear]
+[wait communicationChara]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠三藏
+嘿嘿～！　不过是怪物的集合体！
+[k]
+
+＠三藏
+只会呱呱乱叫的井底之蛙，[r]夜郎自大，马耳东风！
+[k]
+
+[charaFace A 1]
+
+[charaSet H 6003001 1 百貌哈桑]
+
+＠三藏
+到这个份上，靠我们应该足以遏制对手了！[r][%1]，你先走！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠百貌哈桑
+啥，又要让我们战斗了吗……！？[r]不行，已经不可能了吧！？　脑袋都要炸了！
+[k]
+
+[charaSet G 6002001 1 咒腕哈桑]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠咒腕哈桑
+哈哈哈。[r]大家就把百貌的丧气话当耳边风吧。
+[k]
+
+[charaFace G 0]
+
+＠咒腕哈桑
+三藏阁下说得没错，[r]抓紧时间继续前进吧，[%1]阁下。
+[k]
+
+＠咒腕哈桑
+吾等虽是力量微薄的从者，[r]但在求生及迷惑敌人方面，可谓久经沙场的老江湖了。
+[k]
+
+[charaSet H 6002001 1 咒腕哈桑2]
+
+＠咒腕哈桑
+还剩几分钟，我们不惜任何代价都会压制住那只怪物。[r]所以，请您务必继续前进。
+[k]
+
+
+[charaDepth G 1]
+[charaDepth H 0]
+
+？1：[line 3]谢谢！　拜托各位了！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠奥斯曼狄斯
+当然啦，交给我们吧！[r]余才不会把甜头都让给圆桌众呢！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？2：哈桑先生才不是什么弱小的英灵呢。
+
+[messageOff]
+[charaTalk off]
+[charaFadein H 0 1]
+[charaChange G 6002001 2 fade 0.6]
+[wt 0.6]
+
+＠咒腕哈桑
+[line 3]愧不敢当。[r]奇妙的是您这么一说，我甚至都开始相信了。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+？！
+
+[communicationCharaLoop 98003003 1 5 0 5]
+
+＠Dr.罗曼
+[%1]、玛修，赶快！[r]没有时间了！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaPut D 1]
+
+[charaSet G 8001002 1 玛修]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠玛修
+是！　御主，我们走！[r]距下个据点只剩没多远了！
+[k]
+
+
+[charaSet A 5022001 1 三藏]
+
+[se ad73]
+[charaEffect D bit_talk_41]
+
+
+
+
+[charaFadeout G 0.4]
+[wt 0.3]
+[messageOff]
+[charaPut D -1200,-1200]
+
+[charaEffectStop D bit_talk_41]
+[seStop ad73 0.3]
+
+[wt 0.6]
+
+[charaFadeout G 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠三藏
+再见啦～！　一定要坚强哦，[%1]！[r]我已经见证了你修行的成果[line 3]！
+[k]
+
+＠三藏
+我很快就会追上你的～！[r]在那之前，佛祖必将保佑你[line 3]！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_42 2.0]
+[wait fade]
+[soundStopAll]
+[end]

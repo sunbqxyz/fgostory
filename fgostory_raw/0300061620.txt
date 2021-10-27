@@ -1,0 +1,114 @@
+
+
+
+＄03-00-06-15-2-0
+
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 玛修]
+[charaSet B 1017001 1 武藏]
+[charaSet C 1098128200 1 凯妮斯]
+[charaSet D 1098192100 1 广域型歼灭机械]
+
+[charaSet S 5009000 1 特效用dummy]
+[charaSet T 5009000 1 特效用dummy]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 92400]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.2]
+
+[se ad668]
+[charaFace A 2]
+[charaMoveScale A 1.1 0.4]
+[charaMove A 0,12 0.2]
+[wt 0.2]
+[seStop ad668 0.1]
+
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[se ad171]
+[wt 0.4]
+[charaShake D 0.05 3 3 0.2]
+[effect bit_talk_14 -200,180]
+[se bac10]
+[wt 0.2]
+[se bac10]
+[effect bit_talk_14 200,-180]
+[wt 0.7]
+[se ba6]
+[charaSpecialEffect D erasure 1 1.0]
+[bgm BGM_EVENT_80 2.5 0.1]
+[wt 1.5]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠玛修
+敌对存在陷入沉默[line 3]
+[k]
+
+[messageOff]
+[wt 0.4]
+[charaFace A 7]
+[wt 0.7]
+
+[bgm BGM_EVENT_80 1.0 1.0]
+
+[charaFace A 2]
+＠玛修
+不对！　距离100的地点再度出现魔力反应！[r]移动速度提升，正在逼近我们！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠武藏
+与其说是增援，感觉更像是遇到新的敌人！[r]我没问题，各位情况如何呢！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠凯妮斯
+啊！　什么如何啊！[r]这种程度的玩意儿再来个一两百也不在话下！
+[k]
+
+[messageOff]
+[se ade321]
+[wt 0.4]
+
+[charaFace C 2]
+＠凯妮斯
+[line 3]上吧！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,314 @@
+
+
+＄94-03-50-29-1-0
+[soundStopAll]
+
+
+[charaSet A 1098164100 1 大奥女官]
+[charaSet B 98110000 1 柳生但马守]
+[charaSet C 6014001 1 玛塔·哈丽]
+[charaSet D 10003000 1 杀生院祈荒]
+[charaSet E 1098163800 1 春日局]
+[charaSet F 5030001 1 山鲁佐德]
+[charaSet G 6037001 1 迦摩]
+[charaSet H 6037001 1 迦摩2]
+[charaSet I 3030000 1 帕尔瓦蒂]
+[charaSet J 5009000 1 特效用dummy]
+
+[charaDepth H 1]
+[charaDepth G 2]
+
+[scene 71700]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠大奥女官
+哦呵呵……请……请给予我们恩赐吧……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[cueSe Battle bac6]
+[effect bit_talk_h_slash01]
+[wt 0.2]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaFadeout B 0]
+[fowardEffect bit_talk_14]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0 1]
+[charaShake A 0.04 4 4 0.5]
+[wt 0.3]
+[charaMove A 0,-30 0.5]
+[charaFadeout A 0.4]
+[wt 0.3]
+[se ade41]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠玛塔·哈丽
+唔。一看到我们，[r]就边脱和服边靠过来。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+
+＠春日局
+不邪淫戒[line 3]是除夫妻以外不可行淫事。
+[k]
+
+[charaFace E 7]
+＠春日局
+无需担心，面对这种奇怪的人偶，[r]任凭谁都不会起那种邪念啦！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠山鲁佐德
+！　不……各位，看那边！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_71 0.1]
+
+＠迦摩
+呵呵呵。呵呵呵呵……
+[k]
+
+？1：迦摩！
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠玛塔·哈丽
+不止一个人哦～！？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace G 1]
+[charaFadein G 0.1 0]
+[charaFace H 1]
+[charaFadein H 0.1 2]
+[wt 1.5]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠春日局
+尽管什么话也没说，[r]只是在笑[line 3]
+[k]
+
+[messageOff]
+[charaDepth E 0]
+[charaDepth I 1]
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+
+[wt 0.35]
+
+[charaSpecialEffect E erasureReverse 1 0.3]
+[charaFace I 5]
+[charaFadein I 0.15 1]
+[wt 0.05]
+[seStop ad80 0.3]
+
+[wt 0.5]
+
+＠帕尔瓦蒂
+靠过来了。[r]难道和女官们一样打算色诱吗？
+[k]
+
+[charaFace I 2]
+
+＠帕尔瓦蒂
+用和我长得一样的面庞来淫荡地诱惑，[r]如果被我丈夫误会了可就麻烦了，能别这样吗！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠山鲁佐德
+先不论是本人还是冒牌货[line 3]在这层，[r]她本人似乎会为了让我们破五戒而主动出动吧。
+[k]
+
+＠山鲁佐德
+毕竟光靠人偶女官来诱惑还是有限度的。
+[k]
+
+[charaFace F 4]
+
+＠山鲁佐德
+假如我们还处于被操控的状态下，[r]或许也会被要求在这里帮忙吧。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠玛塔·哈丽
+我也觉得会是这样～。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠杀生院祈荒
+呵呵呵。如果真是如此，[r]光靠我和柳生大人可是无法应对的。
+[k]
+
+＠杀生院祈荒
+[%1]大人的身心[r]或许会被爱神迦摩所囚禁吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+＠帕尔瓦蒂
+各位，一会儿再聊吧！[r]看来这一层已经不需要什么麻烦的钥匙了。
+[k]
+
+＠帕尔瓦蒂
+击溃她们应该不至于导致无法前进吧。
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.2]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+[wt 1.5]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 11]
+[charaFadein I 0.1 1]
+
+＠帕尔瓦蒂
+话说，那容貌，那视线……[r]我似乎能够明白。
+[k]
+
+＠帕尔瓦蒂
+相互厮杀相互伤害从某种角度来说，[r]也是放荡的交合。所以不用客气尽情来吧[line 3]
+[k]
+
+[charaFace I 2]
+
+＠帕尔瓦蒂
+那家伙打的一定是这种算盘！
+[k]
+
+？1：最后的楼层[line 3]不能在这里止步不前！
+？2：突破这里！
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠杀生院祈荒
+好了……是苦是乐皆相同。[r]虽说我承认这确实算是一种交欢。
+[k]
+
+[charaFace D 8]
+
+＠杀生院祈荒
+但为什么不独自一人享受呢？[r]如果是我的话，一定会因为[#感到浪费]而不这么做哦。
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_71 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,165 @@
+
+
+＄02-00-04-05-5-0
+
+[soundStopAll]
+
+
+[charaSet A 98018000 1 船员“眼带”]
+[charaSet B 98018100 1 船员B]
+[charaSet C 98018100 1 船员C]
+[charaSet D 1098120700 1 中年男性（村民）]
+
+[charaSet E 2003001 1 罗宾汉]
+
+[charaSet F 98115000 1 特效用]
+
+[charaSet G 5033001 1 喀耳刻]
+
+[charaSet H 98006200 1 鬼魂]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 49502]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠D：村民
+咿，咿[line 3]！　救救我[line 3]！[r]这里还有怪物啊！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.1]
+[se ad21]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_3 0.1]
+[charaDepth F 10]
+
+[se ade64]
+[wt 0.2]
+[se ade64]
+[charaPut F 1]
+[wt 0.2]
+[charaEffect F bit_shot_01]
+[se bac15]
+[wt 0.3]
+[se bac16]
+[charaShake H 0.05 3 3 0.7]
+[wt 1.0]
+[se ad22]
+[charaSpecialEffect H enemyErasure 1 1.0]
+[wt 2.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein A 0.4 1]
+[wt 0.1]
+[charaFadein B 0.4 2]
+[wt 0.1]
+[charaFadein C 0.4 0]
+[wt 0.4]
+[bgm BGM_EVENT_4 0.1]
+＠船员“眼带”
+哟，[%1]！[r]你们是不是遇到了麻烦！？
+[k]
+
+？1：码头的各位水手？
+？！
+
+＠船员“眼带”
+尽管白天的那场戏很糟糕，[r]但看在小家伙那么可爱的份上，我们来支援你们啦！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaSet D 1098120900 1 老人]
+[charaSet F 3031001 1 哪吒]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠喀耳刻
+别叫我小家伙！[r]小心我把你们全部变成猪！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[bgmStop BGM_EVENT_4 0.4]
+[wt 0.7]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.2]
+[se ad21]
+[effect bit_talk_41]
+[wt 0.7]
+[effectStop bit_talk_41]
+[wt 0.2]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.3 -100,0]
+[charaMove D 1 0.3]
+[wt 0.3]
+[charaShake D 0.05 3 3 0.5]
+
+＠D：村民
+村子已经不行了，完蛋了！
+[k]
+
+[messageOff]
+[charaFadeout D 0.3]
+[charaMove D 100,0 0.3]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠罗宾汉
+老爷子，危险啦！[r]啊啊，还真是麻烦！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠哪吒
+依然　劣势！[r]敌人　特殊　难以应对！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

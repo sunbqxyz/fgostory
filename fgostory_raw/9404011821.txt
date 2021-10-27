@@ -1,0 +1,288 @@
+
+
+
+＄94-04-01-18-2-1
+
+[soundStopAll]
+
+[charaSet A 3029001 1 源赖光]
+[charaSet B 98100400 1 玛修]
+[charaSet C 1040000 1 葛饰北斋]
+[charaSet D 3024000 1 玉藻前]
+[charaSet J 5009000 1 特效用]
+
+[scene 80500]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠源赖光
+啊[messageShake 0.02 3 3 0.3]！
+[k]
+
+[charaFace A 0]
+
+＠源赖光
+……哎呀呀，你们看我真是的，[r]好像有些过于兴奋了……
+[k]
+
+？1：不，我们也有不对的地方。
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFace A 0]
+＠源赖光
+没有，怎么会呢……[r]……
+[k]
+
+？2：赖光小姐没事吧？
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFace A 0]
+＠源赖光
+嗯，已经彻底没事了。
+[k]
+
+[charaFace A 7]
+＠源赖光
+……看来被玉藻小姐摆了一道呢，[r]但这件事暂时不计较了。
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠玛修
+那么……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠源赖光
+嗯。这次我不会以风纪委员的身份，[r]而是以一个母亲的身份施展自己的力量。
+[k]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaFace A 7]
+
+＠源赖光
+但决不会失去理性[line 3]
+[k]
+
+[messageOff]
+[charaPut J 0,-100]
+[charaScale J 0.7]
+
+[se ad29]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaEffect J bit_talk_30]
+[cameraMove 1.0 0,-20 1.2]
+
+[fadeout white 0.5]
+[wait fade]
+
+[charaPut J 1200,1200]
+[charaScale J 1.0]
+[charaChange A 3029002 2 fade 0]
+[wait charaChange A]
+
+[cameraHome 0.1]
+[wt 1.0]
+
+[fadein white 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_62 0.1]
+
+＠源赖光
+由我来协助你们对抗泳装剑豪吧！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 26]
+[charaFadein C 0.1 1]
+
+＠葛饰北斋
+唔[line 5]
+[k]
+
+＠葛饰北斋
+没想到竟能与清和源氏的大将、[r]以讨伐大蜘蛛闻名天下的赖光小姐并肩作战！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth C 2]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0]
+[charaFace C 0]
+[charaFadein C 0.1 2]
+
+＠源赖光
+唔。[r]你莫非是Saber职阶的？
+[k]
+
+[charaFace C 8]
+
+＠葛饰北斋
+对。虽说资历尚浅，但得益于强大的对手，[r]现在我也算得上是名剑士了。
+[k]
+
+[charaFace A 7]
+
+＠源赖光
+那你真是被缘分眷顾呢。[wt 0.5][charaFace A 6]但是……
+[k]
+
+[charaFace A 5]
+
+＠源赖光
+我能从刚才的战斗中感觉到，[r]你的剑法中尚有诸多冗余。
+[k]
+
+[charaFace A 0]
+
+＠源赖光
+如果你不在意的话，[r]不如在去酒店路上由我指导你几招吧？
+[k]
+
+[charaFace C 19]
+
+＠葛饰北斋
+哎，真的可以吗？
+[k]
+
+＠源赖光
+嗯，当然。
+[k]
+
+[charaFace A 7]
+
+＠源赖光
+[line 3]我会仔细教你斩杀鬼怪妖魔的[#诀窍]。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_62 0.6 0.4]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠玉藻前
+哎哟，我有种非常不祥的预感，[r]小玉藻先行告辞啦～！
+[k]
+
+[messageOff]
+[charaMove D 0,40 0.3]
+[charaMoveScale D 1.4 0.3]
+[se ad173]
+[seVolume ad173 0 0.8]
+[wt 0.25]
+[seStop ad173 0.1]
+
+＠玉藻前
+[f small]累了的话，[r]可以随时[f small]来我房间哦♡
+[k]
+
+[messageOff]
+[charaMove D 1 0.3]
+[charaMoveScale D 1.0 0.3]
+[wt 0.2]
+[wt 0.5]
+
+[charaFace D 1]
+
+＠玉藻前
+那就再见啦♡
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠玛修
+前辈、前辈。[r]……玉藻小姐对您说了什么？
+[k]
+
+[charaFace B 14]
+
+＠玛修
+啊，前辈的眼神飘忽躲闪！[r]前辈[line 2]，前辈[line 2]！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_62 0.6 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠源赖光
+啊，对了对了。
+[k]
+
+＠源赖光
+在正式对决中，也要注重规矩与正确的步骤。[r]这些也属于风纪的范畴内。
+[k]
+
+[charaFace A 6]
+
+＠源赖光
+如果类似有这样的规定……[r]有吗？　唔，『挑战书』啊，原来如此。
+[k]
+
+[charaFace A 5]
+
+＠源赖光
+即便对方毫不在意，[r]我们也必须准备好挑战书再去。
+[k]
+
+[charaFace A 7]
+
+＠源赖光
+这才是正确的决胜之道。[wt 0.8][charaFace A 0][r]明白了吗？
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

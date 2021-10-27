@@ -1,0 +1,1189 @@
+＄94-05-15-05-1-0
+
+[soundStopAll]
+
+
+
+
+
+[charaSet A 2022000 1 阿蒂拉·Santa]
+[charaSet B 7038000 1 布伦希尔德]
+[charaSet C 3033001 1 希露德]
+[charaSet D 3033002 1 斯露德]
+[charaSet E 3033000 1 奥特琳德]
+[charaSet F 1033300 1 齐格鲁德]
+
+[charaSet G 7038000 1 布伦希尔德_剪影]
+[charaFilter G silhouette 00000080]
+[charaSet H 7038000 1 布伦希尔德_演出用]
+[charaSet I 1098197210 1 布伦希尔德引擎_剪影]
+[charaFilter I silhouette 00000080]
+[charaSet J 1098197210 1 布伦希尔德]
+[charaSet K 1098199400 1 布伦希尔德_血淋淋]
+
+[charaDepth A 8]
+[charaDepth G 7]
+[charaDepth B 5]
+[charaDepth H 6]
+[charaDepth I 7]
+[charaDepth J 5]
+
+
+[branchQuestNotClear lblNotClear 3000320]
+
+[scene 66700]
+[branch lblConf]
+
+[label lblNotClear]
+[scene 60300]
+[label lblConf]
+
+
+[flag IsLoop false]
+
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+
+＠阿蒂拉·Santa
+嗯嗯。[r]今年夏天竟然发生了这种事啊。
+[k]
+
+[charaFace A 1]
+
+＠阿蒂拉·Santa
+不过你成功地克服了难关。[r]是吧？
+[k]
+
+？1：这都是多亏了大家。
+？！
+
+[charaFace A 7]
+
+＠阿蒂拉·Santa
+嗯。有这份觉悟是好事。
+[k]
+
+＠阿蒂拉·Santa
+不过这件事不太好说。[r]那个叫徐福的人经历一定非常坎坷吧。
+[k]
+
+＠阿蒂拉·Santa
+先去好好休息吧，轻飘飘的……[r]不，顽皮的御主。
+[k]
+
+＠阿蒂拉·Santa
+是叫童子军吗？[r]这套礼装非常适合你。
+[k]
+
+＠阿蒂拉·Santa
+或许本应在湖畔悠闲地度过吧，[r]总之夏天剩下的时光就好好休养生息吧。
+[k]
+
+
+[label lblLoop1]
+
+
+？1：谢谢你，阿蒂拉。
+
+[charaFace A 6]
+
+＠阿蒂拉·Santa
+唔～～？
+[k]
+
+[flag IsLoop true]
+
+
+？2：谢谢你，圣诞老人小姐。
+
+[charaFace A 13]
+
+＠阿蒂拉·Santa
+没错，我是圣诞老人。[r]很遗憾夏天没有我出场的机会。
+[k]
+
+[flag IsLoop false]
+
+？！
+
+[branch lblLoop1 IsLoop true]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaTalk depthOff]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 530,0]
+[charaMove B 480,0 0.4]
+[wt 0.9]
+
+？1：唔？
+？！
+
+＠布伦希尔德
+那个……
+[k]
+
+＠布伦希尔德
+御主，打扰一下。
+[k]
+
+＠布伦希尔德
+能稍微……[r]占用您一点时间吗……？
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.4]
+[charaMove B 530,0 0.4]
+[wt 0.8]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_77 1.0 0.4]
+[wait fade]
+
+[charaTalk depthOn]
+
+[branchQuestNotClear lblNotClear1 3000320]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[scene 10310]
+
+[branch lblNotClear_out1]
+[label lblConf1]
+
+[scene 66600]
+
+[label lblNotClear_out1]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_77 1.0 1.0]
+[wait fade]
+
+[wt 1.0]
+
+？1：咦？　布伦希尔德上哪儿去了[line 3]
+
+？！
+
+[messageOff]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 530,0]
+[charaMove B 480,0 0.4]
+[wt 0.4]
+
+＠布伦希尔德
+……[r]……
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[charaMove B 530,0 0.4]
+[wt 0.8]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[scene 70400]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+
+？1：应该下到这里来了……
+？！
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth G 7]
+[charaDepth B 5]
+
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[se ade74]
+[seStop ade74 1.3]
+[wt 1.4]
+
+[charaFace B 8]
+[charaFadein B 0 1]
+[charaFadeout G 0.8]
+[wt 1.5]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+＠布伦希尔德
+……十分感谢，御主。
+[k]
+
+＠布伦希尔德
+其实。[r]那个。
+[k]
+
+＠布伦希尔德
+我有件事，必须对您坦白才行。[r]是这个夏天，我一直在隐瞒的事……
+[k]
+
+[messageOff]
+
+[charaFace B 16]
+[wt 1.0]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaFace B 17]
+＠布伦希尔德
+御主知道吗？
+[k]
+
+
+＠布伦希尔德
+关于齐格鲁德在公寓和洋房内[r]遭到什么人袭击的事。
+[k]
+
+[messageOff]
+[fadeout white 0.6]
+[bgm BGM_EVENT_70 0.6 0.4]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[effect bit_sepia01]
+
+[scene 22140]
+
+[charaTalk off]
+[charaDepth F 6]
+[charaDepth B 4]
+
+[charaFace K 4]
+[charaFace F 14]
+[charaFadein K 0.1 150,0]
+[charaFadein F 0.1 -150,-50]
+[wt 0.4]
+
+[fadein white 0.6]
+[wait fade]
+
+[wt 1.5]
+
+[messageOff]
+[fadeout white 0.6]
+[bgm BGM_EVENT_70 0.6 0.4]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaFadeout K 0.1]
+[effectDestroy bit_sepia01]
+
+[scene 70400]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_70 0.6 1.0]
+[fadein white 0.6]
+[wait fade]
+[wt 0.3]
+
+
+？1：好像的确发生过几次这样的事呢。
+？！
+
+[charaFace B 19]
+
+
+＠布伦希尔德
+……嗯。不仅如此……
+[k]
+
+＠布伦希尔德
+其实一次次地……
+[k]
+
+
+＠布伦希尔德
+每天晚上都会发生相同的事。[r]而御主知晓的只是其中极少一部分。
+[k]
+
+
+＠布伦希尔德
+齐格鲁德他，啊啊……[r]那个人，[#每晚都会被杀害]。
+[k]
+
+＠布伦希尔德
+和发生在那个湖畔的[#一连串事件毫无关系]。
+[k]
+
+[charaFace B 16]
+
+＠布伦希尔德
+……[r]……
+[k]
+
+
+＠布伦希尔德
+………………那卑鄙的犯人，每天晚上都会……
+[k]
+
+＠布伦希尔德
+企图杀害，并最终杀害那个人。
+[k]
+
+[charaFace B 8]
+
+＠布伦希尔德
+我必须坦白才行。
+[k]
+
+[messageOff]
+[charaFace B 20]
+[wt 1.0]
+[charaFace B 19]
+
+＠布伦希尔德
+[#就是我]。
+[k]
+
+＠布伦希尔德
+就是我。[r]每天晚上都会杀害齐格鲁德的卑鄙犯人……
+[k]
+
+[charaFace B 6]
+
+＠布伦希尔德
+就是我！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.6 1]
+[bgm BGM_EVENT_70 0.6 0.4]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.6 1]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+
+＠斯露德
+！？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.4 0,-50]
+[wt 0.4]
+
+＠奥特琳德
+怎……怎么会……怎么会是姐姐大人……
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 0,-50]
+[wt 0.4]
+＠希露德
+慢着慢着，这次发生的事[r]全都是徐福那个东洋的存在做的吧！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+
+＠奥特琳德
+但是，伤痕……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠斯露德
+嗯。勇士齐格鲁德肉体上留下的伤痕，[r]的确与姐姐大人的新宝具非常符合。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 0,-50]
+
+
+＠希露德
+啊，是锯齿的那个吧。
+[k]
+
+[charaFace C 4]
+
+＠希露德
+不，这么说的话或许确实没错，[r]但……但是，为什么会这样……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 0,-50]
+
+＠斯露德
+……[r]……
+[k]
+
+[charaFace D 0]
+
+＠斯露德
+平时灵基状态下的姐姐大人[r]无论怎么忍耐，都会杀害齐格鲁德。
+[k]
+
+＠斯露德
+就算能在短暂时间内忍住，[r]只要长时间待在一起，至少也会产生杀心。
+[k]
+
+[charaFace D 4]
+
+＠斯露德
+但是……[r]灵基变化后的姐姐大人并没有这种情况。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+
+＠奥特琳德
+……是的。我也觉得……非常奇妙。
+[k]
+
+[charaFace E 8]
+
+＠奥特琳德
+为什么如此长时间待在一起[r]姐姐却没有透露出任何杀意呢。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 0,-50]
+
+＠希露德
+难不成。
+[k]
+
+[charaFace C 8]
+
+＠希露德
+是通过定期杀害对方，[r]来维持灵基安定……之类的……情况……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 0,-50]
+
+＠奥特琳德
+！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.6 1]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[pictureFrame]
+[wt 0.5]
+
+[bgm BGM_EVENT_70 0.6 1.0]
+[wipein rectangleStripLeftToRight 0.6 1]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠布伦希尔德
+…………是使用了卢恩。
+[k]
+
+＠布伦希尔德
+通过叠加原初的卢恩。[r]实行强力的魔术。
+[k]
+
+＠布伦希尔德
+[#我这英灵:布伦希尔德]被注定的行动原理，[r]也就是“杀害所爱之人”的性质是绝对不变的。
+[k]
+
+[charaFace B 16]
+
+＠布伦希尔德
+所以，我尝试做了细微的[#偏移]。[r]用卢恩强行扭曲……
+[k]
+
+＠布伦希尔德
+只能在白天维持亲密，[r]可一到夜晚[line 3]就会杀。
+[k]
+
+＠布伦希尔德
+夜晚的我会带着超越平时灵基的杀意，[r]必定会杀死[#所爱之人:齐格鲁德]。
+[k]
+
+＠布伦希尔德
+每晚，每晚，都会不断杀戮。
+[k]
+
+[charaFace B 19]
+
+＠布伦希尔德
+我这个夏天……[r]就以这种灵基存在。
+[k]
+
+＠布伦希尔德
+…………给您……添麻烦了。[r]也扰乱了一系列事件的探究过程。
+[k]
+
+[charaFace B 4]
+
+＠布伦希尔德
+实在是……[r]太对不起了，御主。
+[k]
+
+？1：没事啦，布伦希尔德。
+？！
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaFace B 7]
+＠布伦希尔德
+……？
+[k]
+
+？1：我已经隐约猜到会是这么一回事了。
+？！
+
+[charaFace B 16]
+
+＠布伦希尔德
+啊啊……
+[k]
+
+＠布伦希尔德
+御主……[r]您已经知道……是我做的……
+[k]
+
+[bgm BGM_EVENT_6 0.1]
+
+＠布伦希尔德
+即便如此……[r]您还是什么都没有说……
+[k]
+
+？1：你并没有给我添什么麻烦哦。
+？2：（倒不如说齐格鲁德太厉害了。）
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[charaTalk F]
+[charaFace F 0]
+[charaPut F 0,0]
+[se ad595]
+[charaSpecialEffect F appearanceReverse 1 0.7]
+[seStop ad42 1.2]
+[wait charaSpecialEffect F]
+[wt 1.0]
+
+＠齐格鲁德
+[line 3]果然被发现了啊。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠布伦希尔德
+亲爱的……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠齐格鲁德
+吾爱的话稍微有些谬误。[r]不，准确地说，是没有告诉您全部真相。
+[k]
+
+＠齐格鲁德
+御主。是在下。
+[k]
+
+＠齐格鲁德
+这次改造了布伦希尔德灵基的主谋，[r]是在下。是在下主动希望使用卢恩。
+[k]
+
+
+[charaFace F 10]
+＠齐格鲁德
+哪怕整个夏天中只有短短几天也无妨。[r]希望能与所爱之人相伴过上平静的日子。
+[k]
+
+＠齐格鲁德
+了解了吾爱这份心情的在下，[r]开始着手策划这个方案。
+[k]
+
+[charaFace F 4]
+
+＠齐格鲁德
+当然，一旦开始执行，在下想必每晚都会被鲜血染红。[r]甚至有可能会丧失灵基……
+[k]
+
+＠齐格鲁德
+并给御主及其他英灵们带去毫无意义的混乱。
+[k]
+
+[charaFace F 10]
+
+＠齐格鲁德
+在下充分理解了这种可能性。[r]在理解的基础上，在下依然策划并付诸实施。
+[k]
+
+[charaFace F 0]
+
+＠齐格鲁德
+因为假如我们事先知会周围的人，[r]御主暂且不论，从组织判断的角度来说，
+[k]
+
+＠齐格鲁德
+必然不会允许我们一同前去度假。
+[k]
+
+[charaFace F 10]
+＠齐格鲁德
+也就是说[line 3]在下，[r]才是此次的黑幕、大罪人、真凶！！
+[k]
+
+[effect bit_talk_41]
+[se ad938]
+[charaFace F 2]
+
+＠齐格鲁德
+吾爱，是无罪的！！！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[effectDestroy]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+[charaShake B 0.03 3 3 0.4]
+[wt 0.8]
+
+＠布伦希尔德
+～～～！
+[k]
+
+[charaFace B 12]
+＠布伦希尔德
+…………谢谢你，齐格鲁德。我的齐格鲁德。
+[k]
+
+＠布伦希尔德
+但是，提出这个愿望的是我。[r]挥舞剑刃的依然是我。
+[k]
+
+＠布伦希尔德
+这是我的罪。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠齐格鲁德
+这是在下的罪。[r]不，就算做出最大让步[line 3]
+[k]
+
+[charaFace F 7]
+
+＠齐格鲁德
+也是我们二人的罪，是我们二人共同实施的。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠布伦希尔德
+……不……不行啊，齐格鲁德。[r]不行。
+[k]
+
+＠布伦希尔德
+如果你这么说，我……[r]都不知道该怎么面对你了[line 3]
+[k]
+
+
+？1：没关系，谁都没有错。
+？！
+
+？1：虽然有些惊讶，但反正齐格鲁德也接受了……
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠布伦希尔德
+御主…………
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.6 1]
+[bgm BGM_EVENT_6 0.6 0.4]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[pictureFrame cut063_cinema]
+
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.6 1]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠希露德
+……每晚都会杀害所爱之人，[r]但在那之前能够相依相偎的灵基。
+[k]
+
+＠希露德
+这就是……姐姐大人的……[r]夏日灵基……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+
+＠奥特琳德
+……………………
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠希露德
+……本以为……两位看上去非常快乐……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+
+＠奥特琳德
+……但两位……其实只能限时地相依偎……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 0,-50]
+
+＠斯露德
+姐姐大人[line 3]
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.6 1]
+[bgmStop BGM_EVENT_6 0.6]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[pictureFrame]
+
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.6 1]
+[wait wipe]
+[wt 0.3]
+
+[se ade103]
+[seStop ade103 0.6]
+[wt 1.4]
+
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+[charaPut H 1]
+[charaFace H 6]
+[charaFadeTime H 0 0.3]
+[wt 0.3]
+
+[charaDepth B 9]
+[charaDepth H 6]
+
+[charaMoveScale H 1.15 0.4]
+[charaMove H 0,15 0.4]
+[se ade103]
+[seStop ade103 0.6]
+[wt 0.4]
+[charaFadeout H 0.3]
+[wt 0.6]
+
+[charaScale H 1.0]
+
+[charaTalk on]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠布伦希尔德
+…[messageShake 0.02 3 3 0.4]……………！！！
+[k]
+
+＠布伦希尔德
+这……是[line 3]
+[k]
+
+＠布伦希尔德
+魔力……[r]逐渐……提升……为什么……[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠齐格鲁德
+布伦希尔德！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+[charaPut H 1]
+[charaFace H 6]
+[charaFadeTime H 0 0.3]
+[wt 0.3]
+
+[charaMoveScale H 1.15 0.4]
+[charaMove H 0,15 0.4]
+[se ade103]
+[seStop ade103 0.6]
+[wt 0.4]
+[charaFadeout H 0.3]
+[wt 0.3]
+
+[se ad39]
+[se ad153 1.8]
+[seVolume ad153 0 0.2]
+[charaEffect B bit_talk_charge_blu]
+[wt 2.0]
+[seVolume ad153 0.8 0.4]
+[wt 0.8]
+[seStop ad39 0.7]
+
+
+[charaEffectStop B bit_talk_charge_blu]
+[seStop ad153 1.0]
+
+[charaCrossFade B 7038001 6 1.0]
+[charaEffect G bit_talk_release]
+[se co9]
+[seVolume co9 0 0.7]
+[wait charaCrossFade B]
+[wt 3.0]
+[seStop co9 2.0]
+[seVolume co9 0.5 0.3]
+
+？1：灵基再临！？
+？！
+
+[bgmStop BGM_EVENT_81 1.0]
+[charaFace B 5]
+
+＠布伦希尔德
+不好……[r]御主、齐格鲁德……
+[k]
+
+[charaFace B 16]
+
+＠布伦希尔德
+我、我……
+[k]
+
+＠布伦希尔德
+好高兴、深爱着、深爱着……深爱着……！！
+[k]
+
+[charaFace B 2]
+[bgm BGM_EVENT_80 0.1]
+
+＠布伦希尔德
+渴望[#爱:杀]！！！
+[k]
+
+＠布伦希尔德
+现在就想！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠齐格鲁德
+……原来如此。
+[k]
+
+
+＠齐格鲁德
+本以为每晚的利刃足以宣泄情感了。[r]但看来是在下错了。
+[k]
+
+[charaFace F 2]
+
+＠齐格鲁德
+想必是在下的男人味太卓越了吧！[r]令吾爱心目中的感情旋涡过度提升！
+[k]
+
+[charaFace F 0]
+
+＠齐格鲁德
+再加上御主的包容力给了她最终一击吗？[r]总而言之[line 3]
+[k]
+
+＠布伦希尔德
+啊啊……！
+[k]
+
+＠布伦希尔德
+啊，啊，啊，啊，啊啊，啊啊啊啊啊啊啊啊[line 4]
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 1.0]
+
+＠I：布伦希尔德
+我[line 3]
+[k]
+
+＠I：布伦希尔德
+我好　困　扰。
+[k]
+
+[messageOff]
+[se ade509]
+
+[wt 1.5]
+
+[se ade510]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[wt 1.0]
+[charaFace J 0]
+[charaFadein J 0 1]
+
+[charaFadeout I 0.8]
+[wt 1.5]
+
+[charaTalk on]
+
+＠J：布伦希尔德
+我……我……我……！
+[k]
+
+＠J：布伦希尔德
+非常……困……扰……[line 4]！！！
+[k]
+
+[seStop ade510 0.4]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠齐格鲁德
+御主躲到我背后来！[r]那把剑刃[#就是吾爱的爱本身]！
+[k]
+
+＠齐格鲁德
+不仅会斩杀在下的灵基，[r]甚至会夺去所有吾爱珍视之人的生命！
+[k]
+
+？1：明白了！
+？！
+
+[charaFace F 0]
+
+＠齐格鲁德
+居然引发了这般事态。[r]原来如此，吾爱竟如此深爱着在下啊。
+[k]
+
+[charaFace F 2]
+
+＠齐格鲁德
+……或许……应该事先使用睿智才对！[r]但在下决不允许吾爱彻底暴露于视线之下！
+[k]
+
+[messageOff]
+[charaCrossFade F 1098197100 0 0.4]
+[wait charaCrossFade F]
+[wt 0.4]
+
+＠齐格鲁德
+原谅我，御主！
+[k]
+
+？1：（虽然觉得被塞了一嘴狗粮但）总之我原谅！
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ade510]
+[seVolume ade510 0 0.3]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠J：布伦希尔德
+[fontSize x-large]非常困扰！
+[k]
+
+[messageOff]
+[charaMoveScale J 1.15 0.25]
+[charaMove J 0,20 0.25]
+[se bac1]
+[effect bit_talk_41]
+[charaFadeout J 0.25]
+[wt 0.25]
+[effectDestroy bit_talk_41]
+
+
+[messageOff]
+[fadeout black 0.5]
+[seStop ade510 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

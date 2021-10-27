@@ -1,0 +1,488 @@
+＄94-00-64-31-1-1
+
+
+[soundStopAll]
+[bgm BGM_EVENT_24 0.1]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98102500 1 伊莉雅]
+[charaSet C 5023000 1 海伦娜]
+[charaSet D 98103600 1 ？？？]
+[charaSet E 98103600 1 ？？？]
+[charaSet F 98103600 1 ？？？]
+[charaSet G 98103600 1 ？？？]
+[charaSet H 98103600 1 ？？？]
+
+
+[charaFilter D silhouette 00000080]
+[charaFilter E silhouette 00000080]
+[charaFilter F silhouette 00000080]
+[charaFilter G silhouette 00000080]
+[charaFilter H silhouette 00000080]
+
+
+[scene 31100]
+
+[charaDepth B 3]
+[charaDepth C 1]
+
+[charaTalk depthOff]
+[charaTalk off]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaFadein D 0.1 200,-900]
+[charaFadein E 0.1 -200,-900]
+[charaFadein F 0.1 0,-900]
+[charaFadein G 0.1 -400,-900]
+[charaFadein H 0.1 400,-900]
+
+[se bac1]
+[charaMove D 200,0 0.2]
+[wt 0.2]
+[seStop bac1]
+
+[se bac1]
+[charaMove E -200,0 0.2]
+[wt 0.2]
+[seStop bac1]
+
+[se bac1]
+[charaMove F 0,0 0.2]
+[wt 0.2]
+[seStop bac1]
+
+[se bac1]
+[charaMove G -400,0 0.2]
+[wt 0.2]
+[seStop bac1]
+
+[se bac1]
+[charaMove H 400,0 0.2]
+[wt 0.5]
+
+[wait charaMove]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+
+[se ad54]
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+[charaMove B 0,-100 0.2]
+[wait charaMove]
+
+＠伊莉雅
+……呼……哈……[r]还有……那么多……呜……
+[k]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.4 -100,0]
+[wt 0.5]
+
+＠海伦娜
+振作一点，伊莉雅[charaMove B 0,0 0.15][charaShake B 0.05 3 3 0.5][charaFace B 3][se ad111]（摸）。
+[k]
+
+[wt 0.5]
+[wait charaMove]
+
+[charaTalk depthOn]
+
+[charaMove B 2 0.5]
+[charaMove C 0 0.5]
+[wait charaMove]
+
+＠伊莉雅
+呀啊……屁股……[r]……海伦娜小姐！？
+[k]
+
+[charaFace B 5]
+[charaFace C 3]
+＠海伦娜
+我向你坦白[line 3]伊莉雅。
+[k]
+
+[charaFace C 4]
+＠海伦娜
+你居然能表现出如此气概，实在令我惊讶。[r]我本来小看你了，觉得你不过是个魔法少女的模仿品而已。
+[k]
+
+[charaFace C 0]
+＠海伦娜
+我现在才真正发现……[r]你隐藏着与传统、经验、知识等魔术奥义截然不同的力量。
+[k]
+
+[charaFace B 3]
+＠伊莉雅
+……啊……哎？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+[effect bit_talk_06p]
+＠海伦娜
+来临[line 3]
+[k]
+
+
+[se bas1]
+[effectStop bit_talk_06p]
+
+[charaChange C 98103000 5 fade 1.0]
+[wait charaChange]
+[wt 1.0]
+
+[charaFace C 2]
+＠海伦娜
+[fontSize x-large][line 3]塞拉比斯的智慧啊！！
+[k]
+
+[messageOff]
+[se ad39]
+[fadeout white 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[charaTalk off]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+[charaFadein F 0.1 1]
+[charaFadein G 0.1 3]
+[charaFadein H 0.1 5]
+
+[scene 10001]
+
+[fadein white 0.5]
+[wait fade]
+
+[se bac159]
+[charaEffect C bit_talk_gouka]
+[charaEffect D bit_talk_13]
+[charaShake D 0.05 3 3 0.5]
+[charaEffect E bit_talk_13]
+[charaShake E 0.05 3 3 0.5]
+[charaEffect F bit_talk_13]
+[charaShake F 0.05 3 3 0.5]
+[charaEffect G bit_talk_13]
+[charaShake G 0.05 3 3 0.5]
+[charaEffect H bit_talk_13]
+[charaShake H 0.05 3 3 0.5]
+[wt 1.0]
+
+[charaMove C 0,-300 0.5]
+[charaEffectStop C bit_talk_gouka]
+
+[se ad42]
+[scene 31100 1.0]
+[charaFadeout D 1.0]
+[charaFadeout E 1.0]
+[charaFadeout F 1.0]
+[charaFadeout G 1.0]
+[charaFadeout H 1.0]
+[wt 1.5]
+
+[charaSet D 98103200 1 蓝宝石]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+敌对个体被……呜……[r]海伦娜小姐，您的模样[line 3]。
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠伊莉雅
+好帅啊！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠海伦娜
+我本来就很帅啦。[r]只是有点低血压。
+[k]
+
+[charaFace C 0]
+＠海伦娜
+好了，去吧，[%1]。[r]带着伊莉雅，去找淑女[line 3]
+[k]
+
+[charaFace C 5]
+＠海伦娜
+那些使魔们的目标是魔法少女。[r]既然如此，那就由我来……！
+[k]
+
+？1：……我明白了。请一定要平安无事。
+
+[charaFace C 0]
+＠海伦娜
+谢谢，[%1]。
+[k]
+
+[charaFace C 1]
+＠海伦娜
+如果有机会，[r]我会将我的故事告诉你的。
+[k]
+
+
+？2：海伦娜，那你呢……？
+
+[charaFace C 0]
+＠海伦娜
+在你看来，[r]是否觉得我是一位从者呢？
+[k]
+
+[charaFace C 4]
+＠海伦娜
+但我只是某个平行世界的魔法少女的幻象而已。
+[k]
+
+＠海伦娜
+没能成为别人的希望，甚至没能成为[#亡灵:余音]的[#悲惨残渣]。
+[k]
+
+[charaFace C 5]
+＠海伦娜
+既然如此……就该像你说的，[r]至少在现在这种场合下，请给我聚光灯。
+[k]
+
+？！
+
+
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 2]
+[charaFadein C 0.1 0]
+
+＠伊莉雅
+海伦娜小姐……呜！
+[k]
+
+[charaFace C 2]
+＠海伦娜
+不要白白浪费我送给你们的时间，[r]快走。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaShake D 0.07 0 16 1.0]
+＠蓝宝石
+……由衷感谢您的这份恩情，海伦娜大人。[r]来吧，伊莉雅大人[line 3]各位也赶快！
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠玛修
+…………！……
+[k]
+
+
+
+[messageOff]
+[charaFadeout A 0.4]
+[se ad59]
+[wt 1.0]
+[seStop ad59 1.0]
+[wt 1.0]
+
+[charaSet C 98104100 1 爱迪生君]
+[charaSet D 98103600 1 ？？？]
+[charaSet E 98103600 1 ？？？]
+[charaSet F 98103600 1 ？？？]
+[charaSet G 98103600 1 ？？？]
+[charaSet H 98103600 1 ？？？]
+[charaSet A 98103000 1 海伦娜]
+
+[charaFilter D silhouette 00000080]
+[charaFilter E silhouette 00000080]
+[charaFilter F silhouette 00000080]
+[charaFilter G silhouette 00000080]
+[charaFilter H silhouette 00000080]
+
+
+[se ad60]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.5]
+[seStop ad60]
+
+＠海伦娜
+……终于把他们赶跑了。
+[k]
+
+[charaFace A 4]
+＠海伦娜
+啊啊，我忘了说了……[r]不过说实话，其实我不是很想告诉她们这件事。
+[k]
+
+＠海伦娜
+伊莉雅她们若想回自己的世界，[r]也是需要宝石的。
+[k]
+
+[charaFace A 0]
+＠海伦娜
+虽然我的宝石已经无法给她们了，[r]但伊莉雅和美游她们只要有两颗宝石就够了吧。
+[k]
+
+[charaFace A 5]
+＠海伦娜
+没想到是由梅芙证明了这点。[r]我终于明白了这令人憎恶的石头的意义……
+[k]
+
+[bgmStop BGM_EVENT_24 1.5]
+[messageOff]
+[charaFadeout A 0.1]
+
+＠？？？
+这是自言自语呢？[r]还是祈祷呢？[line 3]海伦娜君。
+[k]
+
+[messageOff]
+[se bas1]
+[effect bit_talk_21]
+[wt 0.5]
+[effectStop bit_talk_21]
+
+[bgm BGM_EVENT_12 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFace C 0]
+[charaFadein A 0.1 2]
+[charaFadein C 0.1 0]
+
+＠海伦娜
+……阿尔。[r]我本来不打算叫你的。
+[k]
+
+[charaShake C 0.07 0 8 1.0]
+＠爱迪生君
+对不抛弃探求之心，不断战斗的你，我会留在你的身边。[r][line 3]我曾经这么说过才对。
+[k]
+
+[charaFace A 0]
+＠海伦娜
+……说得也是。
+[k]
+
+[charaFace A 1]
+＠海伦娜
+[#Xa:哈]～[#Xa:哈][#Xa:哈]，[r]我们彼此都是老年人了，不能这么逞强啊。
+[k]
+
+[charaFace A 0]
+＠海伦娜
+你自以为傲的直流早就生锈了吧。
+[k]
+
+[charaFace C 3]
+[charaShake C 0.07 0 16 1.0]
+＠爱迪生君
+别把我和某个交流混蛋相提并论！[r]直流，就是永恒！
+[k]
+
+[charaShake C 0.07 0 16 1.0]
+＠爱迪生君
+支援、投资你的活动，并为之喜悦才是我的职责！[r]走吧，解开神秘的书简吧！
+[k]
+
+[charaFace A 1]
+＠海伦娜
+嗯。做吧。[r][line 3][charaFace A 2]来吧，淑女的使魔们！
+[k]
+
+[bgmStop BGM_EVENT_12 0.5]
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠海伦娜
+海有雷姆利亚！[wt 0.7]　天有灵魂阶级！[wt 0.7][r][line 3]而大地有我！
+[k]
+
+[messageOff]
+[flashin loop 0.7 0.7 FFFFFFFF 00000000]
+[voice NP_502300_1]
+[wt 3.0]
+[voiceStop NP_502300_1 1.0]
+
+[charaFace A 2]
+＠海伦娜
+魔法少女导师[r][#伟大灵魂:Mahatma]♀海伦娜[line 3]没问题哦！
+[k]
+
+[messageOff]
+[flashout 0.7]
+[bgmStop BGM_EVENT_4 0.1]
+[scene 10001 4.0]
+[voice NP_502300_3]
+[wt 4.0]
+[voiceStop NP_502300_3]
+[se bac74]
+
+[fadeout white 2.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[scene 10000]
+
+
+
+[wt 2.0]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

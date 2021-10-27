@@ -1,0 +1,289 @@
+
+
+＄03-00-01-21-3-0
+[soundStopAll]
+
+[charaSet A 1098128300 1 弥诺陶洛斯]
+[charaSet B 98115300 1 福尔摩斯]
+[charaSet C 7030001 1 阿塔兰忒·Alter]
+[charaSet D 1017001 1 武藏]
+[charaSet E 7008001 1 贝奥武夫]
+[charaSet F 1098128400 1 雅嘎反叛军]
+[charaSet H 5009000 1 特效用dummy]
+
+[scene 55400]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠弥诺陶洛斯
+嘻嘻，嘻嘻嘻嘻嘻！[r]吃掉你们……吃掉你们！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠福尔摩斯
+确认魔力量上升，[r]宝具要来了。
+[k]
+
+[charaFace B 2]
+
+＠福尔摩斯
+[#就是现在]！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+？1：阿塔兰忒！
+？！
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠阿塔兰忒·Alter
+我不是叫汝别过来了吗……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠弥诺陶洛斯
+『[#万古不变的迷宫·邪:Chaos Labyrinthos]』[line 3]！
+[k]
+
+[messageOff]
+[charaEffect A bit_talk_36]
+[voice NP_700900_1]
+
+[wt 1.5]
+[fadeout white 1.0]
+
+[wait fade]
+[charaFadeout A 0.1]
+[charaEffectStop A bit_talk_36]
+
+
+＠阿塔兰忒·Alter
+汝到底想干什[line 3]！？汝到底想干什么
+[k]
+
+[messageOff]
+[voice NP_700900_2]
+[wt 1.2]
+
+[scene 21500]
+
+[fadein white 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠武藏
+好，成功了！
+[k]
+
+？1：趁现在……！
+？！
+
+[charaFace D 5]
+
+＠武藏
+老实点别乱动哦，[r]不然会失手砍伤你的……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace C 6]
+[charaFadein C 0.1 0]
+[charaFace D 5]
+[charaFadein D 0.1 2]
+
+[messageOff]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[se ad618]
+[wt 0.7]
+
+＠阿塔兰忒·Alter
+把枷锁砍断了吗。[r]实力真卓越。
+[k]
+
+[charaFace D 6]
+
+＠武藏
+还好能顺利砍断！[r]毕竟天气太冷，我的手指都有点冻僵了！
+[k]
+
+＠阿塔兰忒·Alter
+但原来是这么回事啊。
+[k]
+
+＠阿塔兰忒·Alter
+汝是想借助迷宫宝具的发动，[r]来救出吾等吧。
+[k]
+
+[charaFace D 1]
+
+＠武藏
+对。最重要的就是先和你会合。[r]然后再击垮敌人。
+[k]
+
+
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠雅嘎反叛军
+……[r]……
+[k]
+
+？1：大家都在这儿了？
+？！
+
+[charaFace F 2]
+
+＠雅嘎反叛军
+不……在这里的只是一小部分。[r]还有孩子留在外面……孩子……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+[charaFace C 2]
+[charaFadein C 0.1 0]
+
+＠阿塔兰忒·Alter
+冷静点！
+[k]
+
+＠阿塔兰忒·Alter
+欲速则不达。[r]先解决掉弥诺陶洛斯。
+[k]
+
+＠阿塔兰忒·Alter
+在那之前，汝等就地待命。[r]保护好[%1]！
+[k]
+
+＠雅嘎反叛军
+是！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠贝奥武夫
+好了，接下来才是问题所在。[r]现在已经进入虎口了[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[messageOff]
+[wt 0.1]
+
+[se ad57]
+[seVolume ad57 0 0.1]
+[wt 0.1]
+[seVolume ad57 2.0 1.0]
+[shake 0.05 3 3 2.0]
+[bgmStop BGM_EVENT_81 0.1]
+[wt 2.0]
+[seStop ad57 0.5]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.7 1]
+[wt 0.9]
+
+＠弥诺陶洛斯
+嘻嘻……嘻嘻嘻……你们在这里啊……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠武藏
+除从者以外的人都退后！[r]那家伙可不得了啊。
+[k]
+
+＠武藏
+开战之后就无暇顾及你们了！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠贝奥武夫
+……该死！　果然[#比刚才更强了啊]！[r]迷宫可以说是你的地盘吗！
+[k]
+
+[charaFace E 0]
+
+＠贝奥武夫
+但是啊，我们是做好了这种觉悟才会来这里的。[r]迷宫魔人。
+[k]
+
+[charaFace E 2]
+
+＠贝奥武夫
+你与哥伦多究竟谁更强大[line 3][r]这次就让我用这拳头来确认吧！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_80 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

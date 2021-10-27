@@ -1,0 +1,590 @@
+
+
+＄03-00-02-13-5-0
+[soundStopAll]
+
+
+[charaSet A 1033001 1 齐格鲁德]
+[charaSet B 8001410 1 玛修]
+[charaSet C 3012001 1 布伦希尔德]
+[charaSet D 1098123820 1 奥菲莉娅]
+[charaSet E 2031001 1 拿破仑]
+[charaSet F 3033000 1 奥特琳德]
+[charaSet H 5009000 1 特效用dummy]
+
+[scene 60900]
+
+[bgm BGM_EVENT_81 0.1]
+
+[wt 0.5]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth C 3]
+[charaDepth E 2]
+[charaDepth B 1]
+
+[charaFace C 4]
+[charaFadein C 0.1 0]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[charaFace B 14]
+[charaFadein B 0.1 2]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.8]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaFace F 6]
+[charaFadein F 0.1 0]
+[charaFace D 12]
+[charaFadein D 0.1 2]
+
+[wt 1.8]
+
+[charaFadeout F 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+[line 3]因为我，[#并不是英灵齐格鲁德]。[r]甚至不是女武神喜欢的英雄。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠玛修
+！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠布伦希尔德
+你说……[r]什么……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+奥菲莉娅。[r]解除限制，第二重的。
+[k]
+
+＠齐格鲁德
+赶快。[r]这灵基撑不了多久。
+[k]
+
+[charaFace A 1]
+
+＠齐格鲁德
+尽管我并不是很在意[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠奥菲莉娅
+……不。不行！
+[k]
+
+[charaFace D 7]
+
+＠奥菲莉娅
+不能让这具肉体被破坏。[r]在[#异闻带:Lostbelt]里，你必须一直当我的骑士。
+[k]
+
+[messageOff]
+[wt 0.8]
+[charaFace D 14]
+[wt 0.4]
+
+＠奥菲莉娅
+[line 3]灵基强制再临·最终限制解除。[r]把阻碍我们的敌人全部歼灭，我的骑士。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.0]
+
+
+[fowardEffect bit_talk_easy_spell_r]
+[cueSe Battle bac32]
+[wt 2.0]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaPut H 1]
+[charaEffect H bit_talk_charge_red]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth H 2]
+[charaDepth A 1]
+
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+[se ad61]
+[se ad556]
+[seVolume ad556 0 0.6]
+
+[wt 2.0]
+[seStop ad61 0.5]
+[seStop ad556 0.5]
+[se ad574]
+
+
+
+[fadeout white 0.2]
+[wait fade]
+
+[charaChange A 1033002 12 fade 0.1]
+[wait charaChange A]
+
+[charaPut H 2400,2400]
+[charaEffectStop H bit_talk_charge_red]
+
+[charaTalk depthOn]
+
+[fadein white 1.0]
+[wait fade]
+
+
+[wt 1.5]
+
+＠齐格鲁德
+限制解除。最终阶段。[bgm BGM_EVENT_24 0.1][r]利用英灵齐格鲁德的全部性能，开始歼灭敌人。
+[k]
+
+[messageOff]
+[cueSe Battle bac375]
+
+[wt 1.0]
+
+＠齐格鲁德
+啊啊，身轻体盈。[r]烦人的面具终于摘下来了。
+[k]
+
+＠齐格鲁德
+竟然喜欢戴这种玩意，[r]呵呵。真是个品味奇特的家伙。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠拿破仑
+……哎。这才是你的真面貌吗，美男子！
+[k]
+
+＠拿破仑
+魔剑格拉墨发出的光变色了。[r]看来释放的魔力是跃升了一两个阶段吧！
+[k]
+
+[charaFace E 7]
+
+＠拿破仑
+哈哈！　看来又变得有意思了！[r]这副眼镜真是个不错的主意！
+[k]
+
+＠拿破仑
+无论多么凶暴的魔剑使，戴上它都会显得很知性！[r]害我也想模仿一下了！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+这玩意吗。好像是所谓诸神的睿智。[r]哼。你这张脸和这根本不搭。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠拿破仑
+这可不好说吧？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+你尽管试试吧。[r]如果你真的能杀死我，取下这玩意儿的话。
+[k]
+
+[messageOff]
+
+[cueSe Battle bac66]
+
+[wt 1.0]
+
+＠齐格鲁德
+[line 3]魔剑，一闪。
+[k]
+
+[messageOff]
+[charaPut H -80,0]
+[charaScale H 1.4]
+[charaEffect H bit_talk_gram_slash_05]
+[cueSe Battle bac265]
+[wt 0.5]
+
+
+[se ad32]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaFadeout A 0.1]
+[fowardEffect bit_talk_14]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+[charaShake B 0.05 3 3 0.3]
+[wt 0.3]
+
+＠玛修
+呜……！[r]魔剑的斩击……和火焰！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠拿破仑
+抱歉！　我本想回避的，结果错失时机了！[r]看来不能挑衅过度啊！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠玛修
+没事！　幸好及时防御住了！[r]御主，刚才那是……
+[k]
+
+？1：用卢恩释放的火焰？
+？2：但是，我没看到他在比划什么。
+
+？！
+
+[charaFace B 7]
+
+＠玛修
+啊，对。[r]卢恩魔术是通过描画文字、花纹，
+[k]
+
+＠玛修
+从而缩短咏唱过程进行发动的魔术。[r]但是刚才，英灵齐格鲁德[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠奥特琳德
+并没有……[r]描画的动作……？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[messageOff]
+[se ad51]
+[wt 0.7]
+
+＠布伦希尔德
+……………………
+[k]
+
+[charaFace C 10]
+
+＠布伦希尔德
+……你是，齐格鲁德。齐格鲁德……
+[k]
+
+[charaFace C 0]
+
+＠布伦希尔德
+不。[r]你是……[line 3]
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_24 1.5]
+[wait fade]
+[charaFadeout C 0.1]
+[charaFilter A silhouette 00000080]
+[scene 61900]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaPut H 1]
+[charaEffect H bit_sepia01]
+[fadein black 1.5]
+[wt 1.2]
+[bgm BGM_EVENT_79 0.1]
+[wait fade]
+
+＠
+『雪与冰有时会冻结生命。』
+[k]
+
+＠
+『人类不得不忍耐严寒熬过冬天。』
+[k]
+
+＠
+『然而，这是为春天的到来所必须的要素。[r]　因为大地会渴望短暂的睡眠。』
+[k]
+
+＠
+『不可以憎恨雪与冰。[r]　祝福与和煦阳光的日子终将到来。』
+[k]
+
+[messageOff]
+[wt 0.7]
+
+＠
+[line 3]说得没错。[r][line 3]嗯，我也这么想，齐格鲁德。
+[k]
+
+＠
+[line 3]人们，我们可以等待。[r][line 3]怀着对春天萌芽的期盼。
+[k]
+
+[messageOff]
+[wt 0.7]
+
+＠
+『没错。』
+[k]
+
+＠
+『许多自然存在的事物，[r]　不会只拥有一种面貌吧。』
+[k]
+
+＠
+『有时会表现得正确。[r]　有时，也会表现出邪恶的一面。』
+[k]
+
+＠
+『但是……』
+[k]
+
+[messageOff]
+[wt 0.7]
+
+＠
+[line 3]但是，什么？
+[k]
+
+[messageOff]
+[wt 0.7]
+
+＠
+『唯独火焰不可以。』
+[k]
+
+＠
+『火焰有着帮助人类熬过凛冬的温柔面貌。[r]　火焰有着将人类的生活带向繁荣昌盛的力量。』
+[k]
+
+＠
+『但是……[r]　在下肯定不会使用火焰的卢恩吧。』
+[k]
+
+[messageOff]
+[wt 0.7]
+
+＠
+[line 3]我赐予了你许多卢恩。
+[k]
+
+＠
+[line 3]你能用这些做到很多事吧。[r][line 3]能比普通人更有效率地使用火焰。
+[k]
+
+＠
+[line 3]然而，你却不打算使用吗？
+[k]
+
+[messageOff]
+[wt 0.7]
+
+＠
+『嗯，没错。[r]　身为半神的你恐怕难以理解吧。』
+[k]
+
+＠
+『人类必须对火焰心怀敬畏。[r]　因为火焰会烧尽一切。』
+[k]
+
+＠
+『无论是剑、生命、还是情感。[r]　有时甚至连命运都能烧尽。』
+[k]
+
+＠
+『所以，在下唯独不会使用火焰的卢恩。』
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_79 1.5]
+[wait fade]
+[charaEffectStop H bit_sepia01]
+[charaFilter A normal 00000080]
+[charaFadeout A 0.1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 1.0]
+[scene 60900]
+[fadein black 2.0]
+[wt 1.5]
+[bgm BGM_EVENT_24 0.1]
+[wait fade]
+
+[wt 0.5]
+
+[charaFace C 2]
+
+＠布伦希尔德
+齐格鲁德……！
+[k]
+
+＠布伦希尔德
+齐格鲁德、齐格鲁德、齐格鲁德！[r]不，不对！　你不是他，你绝对不是他！
+[k]
+
+＠布伦希尔德
+你到底！　是谁！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+[line 3]不对哦？[r][line 3]我可是货真价实的齐格鲁德啊。布伦希尔德。
+[k]
+
+[messageOff]
+[charaFace A 12]
+[se ad683]
+[seVolume ad683 0 0.4]
+[wt 1.0]
+
+＠齐格鲁德
+呵。呵呵呵。[r]人类是多么可悲的存在啊！
+[k]
+
+＠齐格鲁德
+如若是神！[r]好歹会知道我的灵魂火焰究竟为何物！
+[k]
+
+
+＠齐格鲁德
+可悲！　可悲！　可悲！
+[k]
+
+＠齐格鲁德
+呵呵！　这丑陋[line 3]真是不堪入目！！
+[k]
+
+[messageOff]
+[se ad678]
+[seVolume ad678 0 0.7]
+[wt 0.2]
+
+[se ade8]
+[seVolume ade8 0 0.4]
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,15 0.2]
+[charaPut H 1]
+[charaScale H 1.1]
+[charaEffect H bit_talk_41]
+[charaPut H -30,90]
+[shake 0.05 2 4 1.0]
+
+
+[messageOff]
+[fadeout white 1.0]
+[wait fade]
+
+[charaEffectStop H bit_talk_41]
+[charaFadeout A 0.1]
+[wt 0.1]
+[scene 10000]
+
+[fadein white 1.0]
+[wait fade]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_24 1.0]
+[wait fade]
+[soundStopAll]
+[end]

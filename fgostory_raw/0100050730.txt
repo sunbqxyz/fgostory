@@ -1,0 +1,89 @@
+
+＄01-00-05-07-3-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[charaSet A 8001001 1 玛修]
+[charaSet B 7014001 1 南丁格尔]
+[charaSet C 1019001 1 罗摩]
+
+[scene 11213]
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠玛修
+大部分凯尔特战士都已被消灭了[line 2]
+[k]
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+强烈敌性反应！[r]大型……！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠玛修
+难道又是龙吗！？
+[k]
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr.罗曼
+不是。这[line 2]是新型的魔兽。[r]多加注意！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[se ad19]
+[wait se ad19]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠南丁格尔
+啊啊，这种地方竟然有动物，[r]何等不卫生……！
+[k]
+
+＠南丁格尔
+而且混得这么复杂，啊啊[line 3][r]简直是细菌的温床，要准备三倍浓度消毒药才行！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠罗摩
+唔。看到这东西后的第一感想竟然是这种？[r]南丁格尔真厉害！
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠玛修
+[line 2]御主，我们上！
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_3 1.0]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,529 @@
+
+
+
+＄03-00-06-02-2-1
+
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 武装玛修（有护目镜）]
+[charaSet B 1098191900 1 奥林波斯士兵]
+[charaSet C 9005001 1 福尔摩斯]
+[charaSet D 98002000 1 芙芙]
+[charaSet E 1017001 1 武藏]
+[charaSet F 8001410 1 玛修]
+[charaSet G 1098191900 1 奥林波斯士兵]
+[charaSet H 1098191900 1 奥林波斯士兵]
+[charaSet S 5009000 1 特效用dummy1]
+[charaSet T 5009000 1 特效用dummy2]
+
+[scene 91800]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth E 2]
+[charaDepth S 3]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.3]
+[se ad688]
+[charaFace A 5]
+[cueSe Battle bac122]
+[wt 0.1]
+[charaMove A -50,0 0.2]
+[wt 0.1]
+[charaFadeout A 0.1]
+[wt 0.3]
+[se ad171]
+[cueSe Battle bac153]
+[se ad686]
+[charaPut S 1]
+[charaEffect S bit_talk_14]
+[shake 0.02 3 3 0.8]
+[wt 1.0]
+
+[effectDestroy]
+[charaEffectDestroy S]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[se bac304]
+[wt 0.3]
+
+[se ad678]
+[charaFace E 2]
+[charaMove E 0,20 0.2]
+[charaFadeout E 0.1]
+[effect bit_talk_quickmove]
+[wt 0.6]
+[charaPut S 1]
+[charaEffect S bit_talk_x_slash01]
+[charaEffect S bit_talk_x_slash01 0,0 H]
+[se bac308]
+[wt 0.4]
+[charaPut S 1200,1200]
+[charaEffectDestroy S]
+
+[charaTalk B]
+[charaFace B 0]
+[charaScale B 1.1]
+[charaFadein B 0.1 1]
+[fowardEffect bit_talk_14]
+[se ad32]
+[charaShake B 0.08 6 2 0.3]
+[wt 0.1]
+[charaMoveScale B 1.0 0.4]
+[se ad671]
+[seVolume ad671 0 0.6]
+[wt 0.1]
+[seStop ad671 0.4]
+[wt 0.4]
+
+＠B：奥林波斯士兵
+被压制了……！？[r]区区人类[#英灵:从者]……竟然将我……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠武藏
+（……真遗憾。他的才能与锻炼水准都在我之上。[r]　然而战斗经验实在是太少了……！）
+[k]
+
+[bgmStop BGM_EVENT_80 2.0]
+
+[cueSe Battle bac305]
+[charaFace E 2]
+
+＠武藏
+[line 3]抱歉！
+[k]
+
+[messageOff]
+[se ad678]
+[seVolume ad678 0 0.4]
+[charaMoveScale E 1.1 0.2]
+[charaMove E 0,15 0.2]
+[charaFadeout E 0.2]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[wt 0.2]
+[blurOff motion 0.2]
+[charaScale E 1.0]
+[wt 0.2]
+[cueSe Battle bac169]
+[fowardEffect bit_talk_v_slash01]
+[fadeout white 0.3]
+[wait fade]
+[charaFadeout E 0.1]
+[scene 10001]
+[wt 0.3]
+
+[fadein white 0.1]
+[wait fade]
+[wt 1.0]
+
+[se ad878]
+[fowardEffect bit_talk_35]
+[se ad464]
+[wt 1.5]
+[fadeout white 0.2]
+[wait fade]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[scene 91800]
+[wt 0.1]
+[charaShake B 0.05 3 3 1.2]
+[fadein white 1.0]
+[wait fade]
+[wt 0.5]
+[charaMove B 0,-15 0.3]
+[wt 0.3]
+[se ad881]
+[seVolume ad881 0 0.4]
+[wt 0.5]
+
+＠B：奥林波斯士兵
+精彩。[r]啊啊，太精彩了。
+[k]
+
+＠奥林波斯士兵
+…………再告诉我一次你们的名字吧。[r]迦勒底的各位。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠武藏
+二天一流，宫本武藏。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠A：玛修
+……玛修·基列莱特。[r]我是亚从者。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+？1：[%1]。
+
+？！
+
+＠B：奥林波斯士兵
+……武藏、玛修、[%1]。
+[k]
+
+＠B：奥林波斯士兵
+我们奥林波斯决不会放过你们。[r]定会，杀死你们。
+[k]
+
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+[wt 0.3]
+[se bac305]
+[wt 0.6]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad171]
+[effect bit_talk_x_slash01]
+
+[wt 0.5]
+[effect bit_talk_blood_splash 0,0 H]
+[se ad161]
+[se ad464]
+[wt 2.0]
+[se ade75]
+[wt 1.0]
+
+？1：[line 6]
+
+？！
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠芙芙
+芙，芙呜……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[se ade18]
+[seVolume ade18 0.0 0.5]
+[wt 0.5]
+[seStop ade18 0.8]
+[wt 1.5]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth A 2]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.1]
+[charaFadeout A 0.4]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[wt 1.2]
+
+＠玛修
+敌对个体，彻底沉默。[r]战斗结束。
+[k]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaFace F 4]
+
+＠玛修
+……[r]……
+[k]
+
+＠玛修
+……我原本并不打算夺走他的生命……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠武藏
+我想也是。所以由我来下手了。[r]有什么问题吗，[%1]？
+[k]
+
+？1：……不。虽然有，但没有。
+？！
+
+＠武藏
+没错，这样就对了。[r]那你应该清楚接下来该做什么吧？
+[k]
+
+？1：『尽快离开这里』……对吧？
+
+？！
+
+[charaFace E 0]
+
+＠武藏
+嗯，说得好。这里是敌人的大本营，[r]你接下来也要保持这种状态哦。
+[k]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaFace E 11]
+
+＠武藏
+[f small]……对不起啦。
+[k]
+[messageOff]
+[wt 1.0]
+[bgm BGM_EVENT_77 0.1]
+[charaFace E 1]
+
+＠武藏
+不过大家平安无事就好，这样就好！[r]这次总算在一开始就会合了！
+[k]
+
+？1：那当然。谢谢你，武藏亲。
+？2：谢谢你赶来。
+
+？！
+
+[charaFace E 7]
+＠武藏
+嗯，迦勒底陷入危机，我当然要赶来！[r]我还欠你们一饭一宿之恩呢！
+[k]
+
+[charaFace E 0]
+
+＠武藏
+哎哟，虽然囤了好多话想对你们说，[r]但现在先撤退吧。
+[k]
+
+＠武藏
+这里是敌人的腹地。[r]玛修小姐，你知道离开城镇的路线吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠玛修
+[line 3]啊，是！[r]我已经拟好撤退路线了！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠武藏
+真了不起，眼神真好。[wt 0.5][charaFace E 0][r]另外，站得起来吗？　名侦探先生？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ade170]
+[seVolume ade170 0 0.4]
+[wt 2.0]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠福尔摩斯
+……谢谢你，Ms.宫本。[r]看来我的出血已经止住了。感谢你在危机中救了我们。
+[k]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaFace C 0]
+
+＠福尔摩斯
+而且，正如你所言。[r]快看。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[charaFadeout C 0.1]
+[wt 0.2]
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[se ade210]
+[seVolume ade210 0 0.1]
+[seVolume ade210 0.8 1.0]
+[wt 1.2]
+
+[charaTalk off]
+
+[charaDepth B 4]
+[charaDepth G 5]
+[charaDepth H 3]
+
+[charaFace B 0]
+[charaFadein B 0.1 300,0]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[charaFace H 0]
+[charaFadein H 0.1 -300,0]
+[seStop ade210 2.0]
+
+[wt 3.0]
+
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaTalk on]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠芙芙
+芙[line 4]呜！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠玛修
+肉眼确认众多奥林波斯士兵！[r]御主！
+[k]
+
+？1：……来时的路不能走了吗……！
+？2：玛修，变更路线！
+
+？！
+
+[charaFace F 7]
+
+＠玛修
+说……说得对！[wt 0.5][charaFace F 15][r]但是三条大道全都被堵住了[line 3]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠武藏
+那就走小路吧！[r]那些小路刚好错综复杂，很适合逃跑！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+确实比走繁华街更合理……[r]然而对方更加熟悉地形哦？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠武藏
+会不会遭遇取决于运气！
+[k]
+
+＠武藏
+万一遭遇也没办法。[r]……不惜杀光他们也要前进！
+[k]
+
+？1：[line 3]走吧！
+
+？！
+
+[charaFace E 5]
+
+＠武藏
+嗯！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 1.2]
+[soundStopAll]
+[end]

@@ -1,0 +1,225 @@
+
+
+
+＄94-04-77-50-4-0
+
+[soundStopAll]
+
+[charaSet A 25005000 1 旅行者]
+[charaSet B 98001000 1 玛修]
+[imageSet C cut171_token_301 1]
+[charaSet D 5025001 1 爱迪生]
+[charaSet E 1098192800 1 玛丽]
+[charaSet T 5009000 1 特效用dummy]
+
+[scene 96301]
+
+[charaPut T 1200,1200]
+[charaEffect T bit_talk_warp_starry_sky]
+
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk depthOff]
+[charaDepth T 1]
+[charaDepth A 2]
+
+[charaTalk A]
+[charaFace A 0]
+
+[charaPut A 1]
+[charaSpecialEffect A wipeTimeRe 0 1.2]
+[wt 0.3]
+[charaPut T 1]
+[se ade410]
+[charaEffectStop T bit_talk_warp_starry_sky]
+[wt 2.0]
+
+[charaSpecialEffectStop A wipeTimeRe]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaFadein A 0.1 1]
+
+＠旅行者
+喂，快看。我捡到了这个。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠玛修
+这是……代币吧？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠旅行者
+你拿着吧。
+[k]
+
+？1：可以吗？
+
+？2：谢谢。
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 0,-200]
+[wt 0.2]
+[se ade459]
+[wt 2.3]
+[charaFadeout C 0.4]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠旅行者
+这个人，也有自己的职责。[r]你应该可以，善用他的力量。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace A 0]
+[charaFadein A 0.1 0]
+[charaFace B 12]
+[charaFadein B 0.1 2]
+
+＠玛修
+……旅行者先生没有责备[#迦勒底:我们]呢。
+[k]
+
+[charaFace A 11]
+
+＠旅行者
+你很在意，绘里濑说的话吗？
+[k]
+
+[charaFace B 8]
+
+＠玛修
+说实话，我受到了打击。[r]把从者比作玩具军队什么的……
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠爱迪生
+可是绘里濑她也在操纵代币使役从者啊！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠旅行者
+绘里濑她，最喜欢从者了。[r]很仰慕从者。
+[k]
+
+＠旅行者
+但是，她又孤零零一个人了，[r]一定很寂寞吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠玛丽
+能说说绘里濑小姐的事吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠旅行者
+……嗯。可是，不知道能否说清。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠爱迪生
+这里是危险与机会并存的空间。[r]做好防备，各位！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut T 1]
+[charaEffect T bit_talk_warp_starry_sky]
+[wt 0.4]
+[se ade410]
+[wt 1.7]
+[seStop ade410 0.3]
+[cameraMove 0.2 0,0 1.5]
+[cueSe Battle bac110]
+[wt 0.1]
+
+[fadeout white 0.2]
+[wait fade]
+
+[charaEffectDestroy T]
+[cameraHome 0]
+[scene 10000]
+[wt 1.5]
+
+[fadein white 1.0]
+[wait fade]
+
+[fadeout black 0.1]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+

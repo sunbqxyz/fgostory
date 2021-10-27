@@ -1,0 +1,148 @@
+
+
+＄03-00-04-05-3-0
+
+[soundStopAll]
+
+[charaSet A 23003001 1 伽内什]
+[charaSet B 98002000 1 芙芙]
+[charaSet C 3004001 1 迦尔纳]
+[charaSet D 1019001 1 罗摩]
+[charaSet E 8001400 1 玛修]
+[charaSet F 1098167700 1 圣兽]
+[charaSet J 5009000 1 特效用dummy]
+
+[scene 75007]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠伽内什
+呼咿～。太多了，累死了！[wt 0.7][charaFace A 4][r]我可以去休息了吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠芙芙
+芙呜，芙芙！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 0]
+[charaDepth B 1]
+
+[charaTalk off]
+[charaFace A 4]
+[charaFadein A 0.1 -100,0]
+[charaFace B 0]
+[charaFadein B 0.1 150,0]
+
+[charaMove B 90,0 0.3]
+[wt 0.2]
+[se ad111]
+[charaShake A 0.05 3 0 0.3]
+[wt 0.1]
+[charaMove B 130,0 0.3]
+[wt 0.3]
+[charaMove B 90,0 0.3]
+[wt 0.2]
+[se ad111]
+[charaShake A 0.05 3 0 0.3]
+[wt 0.1]
+[charaMove B 150,0 0.3]
+[wt 0.4]
+[charaTalk on]
+[charaFace A 7]
+
+＠伽内什
+呜呜，这小动物的擒抱攻击就像在说[r]『你这团[#储备:脂肪]到底是为何而存在的』！
+[k]
+
+
+[charaFace A 5]
+
+＠伽内什
+我知道了啦，我还会再努力一会儿啦～！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠迦尔纳
+……那边也出现了。[r]会变得更加应接不暇哦。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.2]
+[se ade246]
+[wt 1.8]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠罗摩
+圣兽也来了吗。尽可能让它们只和迦利战斗，[r]但要是盯上了吾等，也只能解决掉了。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+[se ade18]
+[seVolume ade18 0.0 0.5]
+[wt 0.5]
+[seStop ade18 0.8]
+
+＠玛修
+是。尽管需要连续运作[#灵基外骨骼:奥特瑙斯]，[r]但输出没有问题。
+[k]
+
+＠玛修
+我还能行[line 3][r]继续战斗，御主！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

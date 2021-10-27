@@ -1,0 +1,166 @@
+
+＄94-04-65-01-1-0
+
+[soundStopAll]
+
+[scene 84906]
+
+[wipeFilter cinema 0.5 0]
+
+[se ad37]
+[seVolume ad37 0 0.3]
+[wt 2.0]
+
+[fadein black 1.5]
+[seVolume ad37 1.5 0.6]
+[wait fade]
+
+[wt 1.0]
+
+[scene 21101 2.0]
+[wt 3.0]
+
+[seVolume ad37 1.0 1.0]
+[wt 1.0]
+
+
+＠
+鲜红色的夕阳与海浪的声音。[r]我和他正面相对。
+[k]
+
+＠？？？
+我有话想对你说。
+[k]
+
+
+＠
+他点了点头，[r]无言地等待着我开口。
+[k]
+
+
+＠
+我们是毋庸置疑的冒牌货，是赝作，[r]是会消失无踪的纸气球。
+[k]
+
+＠
+但是，即便如此。[r]我现在，仍站在这里。
+[k]
+
+＠
+且正打算开战。
+[k]
+
+[messageOff]
+[seStop ad37 2.7]
+[seVolume ad37 2.0 0.5]
+[wt 0.5]
+
+[bgm BGM_EVENT_106 1.0]
+
+
+＠？？？
+[line 3]我要上了哦。
+[k]
+
+[clear]
+
+
+＠？？？
+嗯，来吧……！
+[k]
+
+＠
+听到这句话，我挥起了魔杖，[r]高声叫喊。
+[k]
+
+＠？？？
+天有女神守护的辉煌，[r]古代[#巨神族:提坦]的灵气在吾血脉中流淌。
+[k]
+
+[messageOff]
+[se ad39]
+[se ad153 1.8]
+[seVolume ad153 0 0.2]
+[effect bit_talk_magic_circle 0,50]
+[wt 1.0]
+[seVolume ad153 0.8 0.4]
+[wt 1.0]
+
+
+＠？？？
+来吧，伟大睿智将成为吾之翼振翅高飞！
+[k]
+
+[messageOff]
+[effectStop bit_talk_magic_circle]
+[wt 0.4]
+[se bas1]
+[wt 0.3]
+
+[fadeout white 0.3]
+[se ad132]
+[seStop ad39 1.0]
+[seStop ad153 0.3]
+[wait fade]
+
+[scene 10000]
+[wt 0.3]
+
+[seStop ad132 0.5]
+[seStop bas1 0.5]
+
+[fadein white 0.5]
+[wait fade]
+
+＠
+[line 3]这，是我，[r]为了给长年的后悔做个了断的故事。
+[k]
+
+＠
+……虽然，是通过拒绝。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_106 2.0]
+[wait fade]
+
+[skip false]
+
+[effectDestroy]
+[wipeOff]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[soundStopAllFade 0.4]
+
+[maskout black 1.0]
+[wait mask]
+[scene 10000]
+[wt 0.1]
+[maskin black 0.1]
+[wait mask]
+
+[label selectBranch]
+
+[questMessageOverwrite 80278]
+
+[fowardEffect bit_queststart80278]
+[wait fowardEffect]
+
+[wt 1.0]
+
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

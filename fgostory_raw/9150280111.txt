@@ -1,0 +1,901 @@
+
+＄91-50-28-01-1-1
+[soundStopAll]
+
+
+
+
+[charaSet A 5028002 1 伊莉雅変身用]
+[charaSet B 2027000 1 克洛伊]
+[charaSet C 8001001 1 玛修]
+[charaSet D 6013001 1 绅士魅影]
+[charaSet E 3002001 1 绅士姆德]
+[charaSet F 5002002 1 绅·士·雷]
+[charaSet G 4008002 1 绅士胡子]
+[charaSet H 5009000 1 特效用dummy]
+
+[scene 20300]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_3 0.1]
+[wait fade]
+
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.7 -500,0]
+
+[se ad85]
+[seVolume ad85 0 0.3]
+[charaEffect H bit_talk_42]
+[wt 0.1]
+[charaMove A 1 0.2]
+[wait charaMove]
+[charaEffectStop H bit_talk_42]
+[charaPut H 1200,1200]
+
+[wt 0.3]
+
+[charaBackEffect A bit_talk_41_black_out]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[se bac25]
+[effect bit_talk_magic]
+
+＠伊莉雅
+[f large][#多元重奏饱和炮击:Quintett Feuer][line 3]！！
+[k]
+
+[wait effect bit_talk_magic]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+[charaBackEffectStop A]
+
+[messageOff]
+
+[effect bit_talk_rarrow01br]
+[se bac71]
+[wt 1.2]
+[shake 0.05 0 4 1.5]
+[se bac325]
+[seVolume bac325 0 0.3]
+
+[charaTalk off]
+
+[charaEffect D bit_talk_11 -105,0]
+[charaEffect E bit_talk_11 20,0]
+[charaEffect F bit_talk_11 70,0]
+[charaEffect F bit_talk_11 -80,0]
+
+[charaFace D 3]
+[charaFace E 3]
+[charaFace F 3]
+[charaFace G 3]
+
+[charaFadein D 0.7 -105,0]
+[charaFadein E 0.7 20,0]
+[charaFadein F 0.7 70,0]
+[charaFadein G 0.7 -80,0]
+
+＠绅士合体魔法☆绅士
+[f large]呜哇啊啊啊啊啊[line 3]！！
+[k]
+
+[messageOff]
+
+[charaMove D 0,-600 1.2]
+[charaMove E 0,-600 1.2]
+[charaMove F 0,-600 1.2]
+[charaMove G 0,-600 1.2]
+
+[charaFadeout D 1.2]
+[charaFadeout E 1.2]
+[charaFadeout F 1.2]
+[charaFadeout G 1.2]
+
+[wt 1.2]
+[se ad144]
+[wt 0.2]
+[se ad58]
+[seStop ad58 0.5]
+
+[charaEffectStop D bit_talk_11]
+[charaEffectStop E bit_talk_11]
+[charaEffectStop F bit_talk_11]
+[charaEffectStop F bit_talk_11]
+
+[wt 1.5]
+
+[bgmStop BGM_EVENT_3 0.5]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+[wt 0.3]
+
+[charaSet D 5028001 1 伊莉雅]
+
+[charaDepth D 2]
+[charaDepth A 1]
+
+[charaTalk off]
+[charaPut H 1]
+[charaEffect H bit_talk_magicalchange_front]
+[charaSpecialEffect A enemyErasure]
+[wt 0.2]
+[se ad39]
+[charaFace D 4]
+[charaSpecialEffect D appearanceReverse]
+[wait charaSpecialEffect A]
+[wait charaSpecialEffect D]
+[charaEffectStop H bit_talk_magicalchange_front]
+[charaPut H 1200,1200]
+[charaFadeout A 0.1]
+[bgm BGM_EVENT_2 0.1]
+[wt 0.2]
+
+＠伊莉雅
+呼……呼……[wt 0.2][charaFace D 1][r]成……成功了……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.4 1]
+[wt 0.2]
+
+＠玛修
+……敌方·妨碍对象确认完全击破。
+[k]
+
+[charaFace C 13]
+
+＠玛修
+辛苦了。伊莉雅小姐、前辈。[r]这样一来……就彻底结束了。
+[k]
+
+[charaFace C 12]
+
+＠玛修
+没想到本应打倒了的魔法绅士的执迷不悟[r]居然会进行绅士合体再次攻击我们……
+[k]
+
+？1：感谢你简洁明了的说明，玛修。
+？2：这是一场令人厌恶但可悲的战斗。
+？！
+
+[charaFace C 8]
+
+＠玛修
+嗯。这话说起来就长了……[r]反正我也不想说，还是忘掉吧。
+[k]
+
+[charaFadeout C 0.1]
+
+[wt 0.1]
+[charaSet D 98102500 1 伊莉雅]
+[charaSet A 98103600 1 红宝石]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+[charaShake D 0.07 2 0 0.4]
+
+＠伊莉雅
+……………………（颤抖颤抖。）
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠玛修
+……？[r]怎么了，伊莉雅小姐
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠伊莉雅
+…………很……
+[k]
+
+[charaFace D 2]
+[charaShake D 0.05 2 0 0.2]
+
+＠伊莉雅
+[f large]身体各处都好痛啊！！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠玛修
+不……不要紧吧！？[r]难道在刚才的战斗中受伤了……！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+
+＠红宝石
+没有没有，这点不必担心～。[r]我们可不会犯被绅士触碰的错误哦。
+[k]
+
+[charaMoveReturn A 0,32 0.1]
+[wait charaMove A]
+[charaMoveReturn A 0,32 0.1]
+[wait charaMove A]
+
+＠红宝石
+这是大招的反弹……或者可以说是代价。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠伊莉雅
+一使用[#多元重奏饱和炮击:Quintett Feuer]就会这样……[r]话说红宝石，就不能在使这招的时候不痛吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0]
+[charaFace D 4]
+[charaFadein D 0.1 2]
+
+[charaMoveReturn A -256,32 0.1]
+[wait charaMove A]
+[charaMoveReturn A -256,32 0.1]
+[wait charaMove A]
+
+＠红宝石
+你这么说也没用啊。原本就是强行使用[r]魔力不该通过的那类，以便得到瞬间火力的[#秘技:作弊]行为。
+[k]
+
+[charaMoveReturn A -256,32 0.1]
+[wait charaMove A]
+[charaMoveReturn A -256,32 0.1]
+[wait charaMove A]
+
+＠红宝石
+本来的代价可不仅限这种程度哦？[r]伊莉雅应该最清楚这点了。
+[k]
+
+[charaMoveReturn A -256,20 0.1]
+[wait charaMove A]
+[charaMoveReturn A -256,20 0.1]
+[wait charaMove A]
+
+＠红宝石
+正因为这是比肉身还要强大的灵基之躯，[r]才会仅限于辛勤种田后大妈感想的程度！
+[k]
+
+[charaFace D 4]
+
+＠伊莉雅
+大妈……
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠玛修
+是……是这么悲壮的技能吗。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠伊莉雅
+唔……但我总觉得，和[#那时]使用时相比，[r]威力好像降低了不少呢。
+[k]
+
+？1：那时？
+？2：哪时？
+？！
+
+[charaFace D 4]
+
+＠伊莉雅
+啊，呃……这话说起来就长了……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+
+＠红宝石
+是变小变大的吉尔伽美什使用[r][#天地乖离开辟之星:Enuma Elish]时正面与他对轰并打赢时候的事吧～。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠玛修
+哎……？
+[k]
+
+？1：哎哎哎哎哎哎哎真的吗！？
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaSet A 98103700 1 红宝石]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+
+＠红宝石
+我红宝石亲以这妖艳的身姿起誓，[r]刚才那些话都是真的！
+[k]
+
+[charaChange A 98103600 0 fade 0.1]
+
+？2：我知道，是魔法少女☆伊莉雅2wei！5卷的剧情吧！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+
+＠红宝石
+说得没错～！　对你这媲美教科书级的大胆宣传，[r]我红宝石亲也禁不住脱帽致意啦！
+[k]
+
+？！
+
+[charaMoveReturn A 0,32 0.1]
+[wait charaMove A]
+[charaMoveReturn A 0,32 0.1]
+[wait charaMove A]
+
+＠红宝石
+不过嘛～，那是因为对方放水了……[r]或者说那只是在和我们玩玩，我们才会逃过一劫。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠玛修
+不，那个，就算真的是这样……也是非常了不起的事！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠伊莉雅
+那个时候……我已经浑然忘我了，嗯……
+[k]
+
+[charaFace D 2]
+
+＠伊莉雅
+总……总之！[r]我想要变得更强！　应该能变得更强才对！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace A 0]
+[charaFadein A 0.1 0]
+[charaFace D 5]
+[charaFadein D 0.1 2]
+
+＠伊莉雅
+话说红宝石。既然你说这身躯比肉身还要坚强，[r]难道就不能提升输出力吗？
+[k]
+
+[charaTalk A]
+
+[charaMoveReturn A -256,20 0.1]
+[wait charaMove A]
+[charaMoveReturn A -256,20 0.1]
+[wait charaMove A]
+
+＠红宝石
+纯粹追求火力的少女，真不错！
+[k]
+
+[charaMoveReturn A -256,32 0.1]
+[wait charaMove A]
+[charaMoveReturn A -256,32 0.1]
+[wait charaMove A]
+
+＠红宝石
+然·而……从结论来说，[r]问题出在伊莉雅身上～。
+[k]
+
+＠伊莉雅
+哎，到底是怎么一回事？
+[k]
+
+[charaTalk A]
+
+[charaMoveReturn A -256,32 0.1]
+[wait charaMove A]
+[charaMoveReturn A -256,32 0.1]
+[wait charaMove A]
+
+＠红宝石
+我的任务仅限于将4个系统[r]作为拟似魔术回路进行整备。
+[k]
+
+[charaMoveReturn A -256,32 0.1]
+[wait charaMove A]
+[charaMoveReturn A -256,32 0.1]
+[wait charaMove A]
+
+＠红宝石
+而让多少魔力在里面流通，[r]结果还是取决于伊莉雅本人的意志。
+[k]
+
+[charaFace D 4]
+
+＠伊莉雅
+意志……？[r]我觉得自己应该尽了全力啊……
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠玛修
+……难道。
+[k]
+
+？1：自己给内心加了制动？
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+
+＠红宝石
+噢，不愧是伟大的御主！
+[k]
+
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+
+＠红宝石
+平时一直在偷窥小学女生纯洁无瑕[r]光滑的内心啊，所以反应速度那么快！
+[k]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠伊莉雅
+为什么要用这种可疑的表现方式！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaMoveReturn A 0,32 0.1]
+[wait charaMove A]
+[charaMoveReturn A 0,32 0.1]
+[wait charaMove A]
+
+＠红宝石
+欺负开始学会委婉表达方式的伊莉雅[r]是件非常有意思的事，不过这件事先不谈了。
+[k]
+
+[charaMoveReturn A 0,12 0.1]
+[wait charaMove A]
+[charaMoveReturn A 0,12 0.1]
+[wait charaMove A]
+
+＠红宝石
+伊莉雅还是肉身的时候使用这招的代价极大，[r]可以说会受到超难以忍受～疼痛的煎熬。
+[k]
+
+[charaMoveReturn A 0,12 0.1]
+[wait charaMove A]
+[charaMoveReturn A 0,12 0.1]
+[wait charaMove A]
+
+＠红宝石
+或许是由于那段记忆，[r]她内心本能地降低了输出吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠玛修
+这……
+[k]
+
+？1：这也是没办法的。
+？2：不用拼命努力到会给自己留下不好的回忆啦。
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠伊莉雅
+您在为我担心吧。[r]谢谢，[%1][&大哥哥:大姐姐]。
+[k]
+
+[charaFace D 5]
+
+＠伊莉雅
+……但是，[r]我还是想要变强。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 2]
+[charaFace D 5]
+[charaFadein D 0.1 0]
+
+＠玛修
+这种心情……嗯，我能切身体会。
+[k]
+
+[charaFace C 7]
+
+＠玛修
+但是，伊莉雅小姐还是小学生啊。[r]为什么要如此追求强大呢？
+[k]
+
+[charaFace D 4]
+
+＠伊莉雅
+因为……因为……[r]如果不能变强……
+[k]
+
+＠玛修
+如果不能变强……？
+[k]
+
+[charaFace D 2]
+
+＠伊莉雅
+就会被人说比小黑弱了啊！
+[k]
+
+[bgmStop BGM_EVENT_2 0.2]
+[wt 0.5]
+[bgm BGM_EVENT_7 0.1]
+
+[charaFace C 11]
+
+＠玛修
+………………啊？
+[k]
+
+[charaFace D 7]
+[charaShake D 0.03 2 2 0.4]
+
+＠伊莉雅
+大家都在说『还是小黑更好用』，[r]以及『宝具威力也是小黑比较强』之类的话啦～！
+[k]
+
+[charaFace D 4]
+
+＠伊莉雅
+我知道……我知道，我很清楚自己很弱。[r]魔力本来就很低，在战斗中做判断速度也很慢……
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠伊莉雅
+但是啊，就算我再怎么不成熟，[r]也是绝对，只有这个是绝不能退让的战斗。
+[k]
+
+＠伊莉雅
+我可以输给其他任何人……但是！[r]我！　作为姐姐！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaScale D 1.4]
+[charaFadein D 0.1 0,30]
+[charaPut H 1]
+[charaScale H 1.1]
+[charaEffect H bit_talk_41]
+[charaPut H -30,120]
+[shake 0.05 2 4 0.5]
+
+＠伊莉雅
+[f large]唯独不能输给[#妹妹:小黑]！！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠玛修
+[line 9]……
+[k]
+
+[charaFace C 8]
+
+＠玛修
+呃，那个……我差点就为这前所未有最大量级的[r]认真主张给说得感动了……
+[k]
+
+[charaFace C 13]
+
+＠玛修
+但我并不觉得伊莉雅小姐比克洛伊小姐弱啊。
+[k]
+
+[charaFace C 12]
+
+＠玛修
+所以还请冷静……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaScale D 1.0]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+[charaMoveReturn D 0,15 0.2]
+
+＠伊莉雅
+当然有啦～！[r]红宝石说大家都这么说啦～！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠玛修
+红宝石小姐！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+
+＠红宝石
+啊哈哈哈哈[line 2]！[charaMove A -30,100 0.2][wt 0.2][charaMove A -82,0 0.2][wt 0.2][charaMove A -132,90 0.2][wt 0.2][charaMove A -184,0 0.2][wt 0.2][charaMove A -236,120 0.2][wt 0.2][charaMove A -288,0 0.2][se ade97][wt 0.2][charaMove A -700,0 0.4][wt 0.3][charaFadeout A 0.4]
+[k]
+
+[messageOff]
+
+？1：尽管我很想协助……
+？2：唔唔唔唔唔唔……
+？！
+
+＠？？？
+呵呵呵……看来你们有烦恼呢。
+[k]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠伊莉雅
+哎……！[r]是……是谁……！？
+[k]
+
+[messageOff]
+
+[fadeout black 0.3]
+[wait fade]
+[charaFadeout D 0.1]
+[wt 0.1]
+[scene 28300]
+[fadein black 0.3]
+[wait fade]
+
+＠？？？
+嘿！
+[k]
+
+[messageOff]
+
+[wipeout upToDown 0.5 1]
+[se ad73]
+[se ad242]
+[seVolume ad242 0 0.05]
+[wt 0.05]
+[seVolume ad242 0.5 0.7]
+[wait wipe]
+[wt 0.3]
+[scene 20300]
+[wipein downToUp 0.5 1]
+[wt 0.4]
+[charaFadein B 0.1 0,60]
+[charaFilter B silhouette 00000080]
+[charaMove B 1 0.2]
+[wait wipe]
+
+[seStop ad242 0.4]
+[se ad223]
+[shake 0.05 0 4 0.25]
+[wt 0.25]
+
+[bgmStop BGM_EVENT_7 0.2]
+[wt 0.5]
+[bgm BGM_EVENT_4 0.5]
+
+＠？？？
+你们说的话我都听到了！！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠玛修
+那……那个[#黑色:克洛伊]的黑影是……！？
+[k]
+
+？1：究竟是什么人……！？
+？！
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠红宝石
+………………
+[k]
+
+[charaMoveReturn A 0,32 0.1]
+[wait charaMove A]
+[charaMoveReturn A 0,32 0.1]
+[wait charaMove A]
+
+＠红宝石
+啊，下回待续。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_4 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

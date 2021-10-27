@@ -1,0 +1,1232 @@
+
+
+
+
+
+
+＄94-04-49-01-1-0
+
+
+[soundStopAll]
+
+[skip false]
+
+[branchQuestNotClear lblNotClear1 3000320 4]
+[label lblClear1]
+[flag IsGirl true]
+[branch lblIsClearConf1]
+[label lblNotClear1]
+[flag IsGirl false]
+[label lblIsClearConf1]
+
+[skip true]
+
+[branch lblNotGirl IsGirl false]
+
+[label lblGirl]
+
+[charaSet A 1098124500 1 达·芬奇]
+[charaSet B 6031001 1 刑部姬]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 98001000 1 玛修]
+[charaSet E 98110000 1 柳生但马守]
+[charaSet F 7027300 1 Amazones CEO_普通]
+[charaSet G 1098119600 1 Amazones CEO_轱辘]
+[verticalImageSet H cut045_bg 1]
+[charaSet J 5009000 1 特效用]
+
+[charaScale H 1.01]
+
+[scene 66400]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ade74]
+[seVolume ade74 0 0.6]
+[seVolume ade74 0.7 1.0]
+[wt 1.7]
+
+[charaTalk A]
+[charaFace A 28]
+[charaFadein A 0.4 1]
+[seStop ade74 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠达·芬奇
+好，让我们开始审讯吧。[r]反正你迟早要说，还不如早点坦白为好哦～？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.4 1]
+[wt 0.5]
+[charaFace B 2]
+
+＠刑部姬
+不是啦，这是个误会，[#公主:我]是无～辜～的～！[r][#公主:我]真的什么都没有做啦！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 35]
+[charaFadein A 0.1 1]
+
+＠达·芬奇
+啊，这种情况，我是不是可以说那句[r]曾经有一段时间非常流行的台词了？　太棒了！
+[k]
+
+[charaFace A 0]
+
+＠达·芬奇
+稍微等一下哦。[wt 0.4][charaFace A 13][r]……咳咳。
+[k]
+
+[charaFace A 17]
+
+＠达·芬奇
+此话当真～？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠芙芙
+芙芙芙，芙芙芙～？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+？1：（盯。）
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠刑部姬
+御亲？　你那是什么眼神啦！？[r]不要用梅杰德大人那种眼神看[#公主:我]啦！？
+[k]
+
+？2：看这慌张的样子，反而不像是在撒谎。
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠刑部姬
+哎，你愿意相信我吗？　[wt 0.3][charaFace B 6][charaMove B 0,15 0.2][charaMoveScale B 1.2 0.3][wt 0.4]太[se ad478][seVolume ad478 0 0.5]棒了～，[charaMoveReturn B 0,55 0.4]不愧是御亲！[r]吾的心之友啊！
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaScale B 1.0]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+
+＠玛修
+但是……倘若真是如此，[r]那这异变的原因究竟又会是什么呢？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 25]
+[charaFadein A 0.1 1]
+
+＠达·芬奇
+嗯。这规模本身虽然非常小，[r]但依然不是我们可以无视的威胁。
+[k]
+
+＠达·芬奇
+或许也可以说是来自过去的刺客。[r]我再把数据调出来看一次吧。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[se ad15]
+[wt 0.3]
+[se ad172]
+[wt 1.2]
+[seStop ad172 0.1]
+
+[fadeout black 0.3]
+[wait fade]
+[charaPut J 1]
+[charaEffect J bit_talk_security]
+[scene 48700]
+[se ad1]
+[fadein black 0.5]
+[wait fade]
+
+[wt 3.2]
+
+[fadeout black 0.5]
+[wait fade]
+[charaEffectDestroy J]
+[scene 66400]
+[fadein black 0.3]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠玛修
+没想到居然还能再次看到这个景象……
+[k]
+
+？1：出现了，恰赫季斯金字塔姬路城……！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠刑部姬
+……不是啦说真的，为什么那玩意儿还在啦！？[r]不是早就应该消失了吗？
+[k]
+
+？2：自去年的生存赌场之后，就没再见过呢。
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠刑部姬
+你这么一说，倒是让[#公主:我]产生了一种亲近感呢，[r]真不可思议～♪
+[k]
+
+[charaFace B 5]
+
+＠刑部姬
+……但是，为什么还在啊？[r]本体的那个早就消失了吧？
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠达·芬奇
+本应如此才对……[r]但不知为何又复活了。
+[k]
+
+[charaFace A 25]
+
+＠达·芬奇
+但正如刚才我所说的，[r]只是个规模真的很小的特异点。
+[k]
+
+＠达·芬奇
+我觉得或许是以前的特异点恰赫季斯[r]的残渣出现了些许的来回摇晃而已，
+[k]
+
+[charaFace A 24]
+
+＠达·芬奇
+但不清楚为何在这种时机重现。[r]也考虑过或许是人为导致的[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠刑部姬
+[#公主:我]说过很多遍了，不是啦！？[r][#公主:我]什么都没做哦！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 34]
+[charaFadein A 0.1 1]
+
+＠达·芬奇
+可我们也对伊丽莎白与克娄巴特拉[r]进行了审讯调查，她们是清白的。
+[k]
+
+[charaFace A 14]
+
+＠达·芬奇
+如果连你也不清楚的话……唔，这下麻烦了。
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth B 2]
+
+[se ad452]
+[seVolume ad452 0 0.1]
+[seVolume ad452 1.2 1.0]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 352,0]
+[wt 0.2]
+[charaMove E 256,0 1.0]
+[wt 0.8]
+[seStop ad452 0.1]
+
+＠柳生但马守
+……要不先这样吧。[r]先设定一个临时嫌犯如何。
+[k]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 0]
+
+＠刑部姬
+就是指[#公主:我]吧！？[r]怎么想都是指[#公主:我]吧！？
+[k]
+
+[charaFace E 1]
+
+＠柳生但马守
+哈哈哈。
+[k]
+
+[charaMove E 144,0 1.5]
+[se ad452]
+[wt 1.3]
+[seStop ad452 1.0]
+[charaFadeout E 0.4]
+[wt 1.0]
+
+[charaFace B 2]
+
+＠刑部姬
+好可怕！[r]明知是在开玩笑，但还是好可怕！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+？1：既然如此……
+？2：要不要实际去现场调查一下呢？
+？！
+
+[charaFace A 0]
+
+＠达·芬奇
+能麻烦你跑一趟吗？
+[k]
+
+＠达·芬奇
+只是玛修的[#灵基外骨骼:奥特瑙斯]还在调整，[r]所以这边就由我负责支援啦～。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠玛修
+是的。[r]很抱歉帮不上您的忙，前辈……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠刑部姬
+真拿你们没办法，尽管[#公主:我]很想家里蹲，[r]但这次[#公主:我]就陪你一起去吧～。
+[k]
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaFace B 5]
+
+＠刑部姬
+那玩意儿居然在不为[#公主:我]所知的地方显现，[r]未免有些……[wt 0.4][charaFace B 2]不，是相当令人毛骨悚然！
+[k]
+
+[charaFace B 4]
+
+＠刑部姬
+哎呀，到底是怎么一回事啊。
+[k]
+
+＠刑部姬
+就算是别人干的好事，[r]应该也没有比[#公主:我]更了解那个的人了吧……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠玛修
+刑部姬小姐愿意同行我就放心了。[r]非常感谢！
+[k]
+
+[charaFace D 0]
+
+＠玛修
+啊，话说联系过戈尔德鲁夫所长[r]和希翁小姐了吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠达·芬奇
+唔，总之这件事应该可以先斩后奏吧。
+[k]
+
+＠达·芬奇
+他们俩正在休息，感觉一旦和这个扯上关系，[r]就会失去某种重要的东西。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠刑部姬
+我懂。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠达·芬奇
+反正这特异点的水准让我断定这次不会有太大的危险。[r]执行灵子转移的责任就由我来承担好啦。
+[k]
+
+[charaFace A 8]
+
+＠达·芬奇
+那振作起精神，一路走好～。[r]拜托了哦！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_4 1.2]
+[wait fade]
+[charaFadeout A 0.1]
+[scene 10000]
+[wt 0.8]
+[fadein black 0.1]
+[wait fade]
+
+[effect bit_talk_07]
+[se ad12]
+[wt 4.0]
+[fadeout white 1.0]
+[wait fade]
+[wt 1.5]
+
+[charaFadein H 0 0,260]
+
+[charaSet A 1098124510 1 达·芬奇]
+[charaSet D 99502600 1 玛修]
+[fadein white 1.0]
+[wait fade]
+
+[wt 0.7]
+[charaAttack H normal 0,-220 5.0]
+[wt 7.5]
+
+[wipeout rectangleStripDownToUp 0.4 1]
+[wait wipe]
+[charaFadeout H 0.1]
+[scene 90100]
+[wt 0.4]
+[wipein rectangleStripUpToDown 0.4 1]
+[wait wipe]
+
+[wt 0.7]
+
+[bgm BGM_MAP_4 0.1]
+
+？1：我们又来了……
+？2：好怀念啊。
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠刑部姬
+……是吗？[r][#公主:我]倒还记忆犹新呢。
+[k]
+
+＠刑部姬
+虽说当时的确发生了不少事，[r]但算是[#公主:我]和御亲初次见面的地方嘛……哎嘿嘿。
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[se ad13]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.3]
+
+＠达·芬奇
+灵子转移顺利完成了吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠玛修
+刑部姬小姐，周围有什么异常吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠刑部姬
+唔？　就算你这么说，周围也没什么特别……
+[k]
+
+[charaFace B 2]
+
+＠刑部姬
+呃，御亲，那里那里！　有人！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_MAP_4 1.0]
+
+[se ad27]
+[seStop ad27 0.2]
+[wt 0.15]
+[se ad27]
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠F：？？？
+……唔。你们是……
+[k]
+
+？1：你是……
+？2：……并不是……彭忒西勒亚！？
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠芙芙
+芙芙！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠F：？？？
+呵。
+[k]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth G 1]
+[charaDepth F 2]
+[charaFadeout F 0.2]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠G：？？？
+客人的样子我当然都记得。[r]好久不见。
+[k]
+
+＠G：？？？
+你不记得了吗？[r]无论在宇宙的何处，只要一键就能迅速送达，
+[k]
+
+＠G：？？？
+始终在开创新时代的跨宇宙太空电商公司……
+[k]
+
+[charaEffect G bit_talk_41]
+
+＠G：？？？
+[f large]Amazones.com！！
+[k]
+
+＠G：？？？
+[f large]的CEO！
+[k]
+
+
+[branch lblIsGirlConf]
+
+[label lblNotGirl]
+
+[charaSet A 5009001 1 达·芬奇]
+[charaSet B 6031001 1 刑部姬]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 98001000 1 玛修]
+[charaSet E 98110000 1 柳生但马守]
+[charaSet F 7027300 1 Amazones CEO_普通]
+[charaSet G 1098119600 1 Amazones CEO_轱辘]
+[verticalImageSet H cut045_bg 1]
+[charaSet J 5009000 1 特效用]
+
+[charaScale H 1.01]
+
+[scene 10204]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ade74]
+[seVolume ade74 0 0.6]
+[seVolume ade74 0.7 1.0]
+[wt 1.7]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[seStop ade74 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠达·芬奇
+好，让我们开始审讯吧。[r]反正你迟早要说，还不如早点坦白为好哦～？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.4 1]
+[wt 0.5]
+[charaFace B 2]
+
+＠刑部姬
+不是啦，这是个误会，[#公主:我]是无～辜～的～！[r][#公主:我]真的什么都没有做啦！
+[k]
+
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？1：（盯。）
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠刑部姬
+御亲？　你那是什么眼神啦！？[r]不要用梅杰德大人那种眼神看[#公主:我]啦！？
+[k]
+
+？2：看这慌张的样子，反而不像是在撒谎。
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠刑部姬
+哎，你愿意相信我吗？　[wt 0.3][charaFace B 6][charaMove B 0,15 0.2][charaMoveScale B 1.2 0.3][wt 0.4]太[se ad478][seVolume ad478 0 0.5]棒了～，[charaMoveReturn B 0,55 0.4]不愧是御亲！[r]吾的心之友啊！
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaScale B 1.0]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+
+＠玛修
+但是……倘若真是如此，[r]那这异变的原因究竟又会是什么呢？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠达·芬奇
+嗯。这规模本身虽然非常小，[r]但依然不是我们可以无视的威胁。
+[k]
+
+＠达·芬奇
+或许也可以说是来自过去的刺客。[r]我再把数据调出来看一次吧。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[se ad15]
+[wt 0.3]
+[se ad172]
+[wt 1.2]
+[seStop ad172 0.1]
+
+[fadeout black 0.3]
+[wait fade]
+[charaPut J 1]
+[charaEffect J bit_talk_security]
+[scene 48700]
+[se ad1]
+[fadein black 0.5]
+[wait fade]
+
+[wt 3.2]
+
+[fadeout black 0.5]
+[wait fade]
+[charaEffectDestroy J]
+[scene 10204]
+[fadein black 0.3]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠玛修
+没想到居然还能再次看到这个景象……
+[k]
+
+？1：出现了，恰赫季斯金字塔姬路城……！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠刑部姬
+……不是啦说真的，为什么那玩意儿还在啦！？[r]不是早就应该消失了吗？
+[k]
+
+？2：自去年的生存赌场之后，就没再见过呢。
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠刑部姬
+你这么一说，倒是让[#公主:我]产生了一种亲近感呢，[r]真不可思议～♪
+[k]
+
+[charaFace B 5]
+
+＠刑部姬
+……但是，为什么还在啊？[r]本体的那个早就消失了吧？
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠达·芬奇
+本应如此才对……[r]但不知为何又复活了。
+[k]
+
+[charaFace A 0]
+
+＠达·芬奇
+但正如刚才我所说的，[r]只是个规模真的很小的特异点。
+[k]
+
+＠达·芬奇
+我觉得或许是以前的特异点恰赫季斯[r]的残渣出现了些许的来回摇晃而已，
+[k]
+
+＠达·芬奇
+但不清楚为何在这种时机重现。[r]也考虑或许是人为导致的[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠刑部姬
+[#公主:我]说过很多遍了，不是啦！？[r][#公主:我]什么都没做哦！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠达·芬奇
+可我们也对伊丽莎白与克娄巴特拉[r]进行了审讯调查，她们是清白的。
+[k]
+
+[charaFace A 4]
+
+＠达·芬奇
+如果连你也不清楚的话……唔，这下麻烦了。
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth B 2]
+
+[se ad452]
+[seVolume ad452 0 0.1]
+[seVolume ad452 1.2 1.0]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 352,0]
+[wt 0.2]
+[charaMove E 256,0 1.0]
+[wt 0.8]
+[seStop ad452 0.1]
+
+＠柳生但马守
+……要不先这样吧。[r]先设定一个临时嫌犯如何。
+[k]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 0]
+
+＠刑部姬
+就是指[#公主:我]吧！？[r]怎么想都是指[#公主:我]吧！？
+[k]
+
+[charaFace E 1]
+
+＠柳生但马守
+哈哈哈。
+[k]
+
+[charaMove E 144,0 1.5]
+[se ad452]
+[wt 1.3]
+[seStop ad452 1.0]
+[charaFadeout E 0.4]
+[wt 1.0]
+
+[charaFace B 2]
+
+＠刑部姬
+好可怕！[r]明知是在开玩笑，但还是好可怕！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+？1：既然如此……
+？2：要不要实际去现场调查一下呢？
+？！
+
+＠达·芬奇
+能麻烦你跑一趟吗？
+[k]
+
+＠达·芬奇
+只是玛修还有一个诊断必须要完成，
+[k]
+
+＠达·芬奇
+这次她只能留守了。[r]所以这边就由我负责支援啦。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠玛修
+是的。[r]很抱歉帮不上您的忙，前辈……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠刑部姬
+真拿你们没办法，尽管[#公主:我]很想家里蹲，[r]但这次[#公主:我]就陪你一起去吧～。
+[k]
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaFace B 5]
+
+＠刑部姬
+那玩意儿居然在不为[#公主:我]所知的地方显现，[r]未免有些……[wt 0.4][charaFace B 2]不，是相当令人毛骨悚然！
+[k]
+
+[charaFace B 4]
+
+＠刑部姬
+哎呀，到底是怎么一回事啊。
+[k]
+
+＠刑部姬
+就算是别人干的好事，[r]应该也没有比[#公主:我]更了解那个的人了吧……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠玛修
+刑部姬小姐愿意同行我就放心了。[r]非常感谢！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠达·芬奇
+那振作起精神，一路走好～。[r]拜托了哦！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_4 1.2]
+[wait fade]
+[charaFadeout A 0.1]
+[scene 10000]
+[wt 0.8]
+[fadein black 0.1]
+[wait fade]
+
+[effect bit_talk_07]
+[se ad12]
+[wt 4.0]
+[fadeout white 1.0]
+[wait fade]
+[wt 1.5]
+
+[charaFadein H 0 0,260]
+
+[charaSet A 98111500 1 达·芬奇]
+[charaSet D 99502600 1 玛修]
+[fadein white 1.0]
+[wait fade]
+
+[wt 0.7]
+[charaAttack H normal 0,-220 5.0]
+[wt 7.5]
+
+[wipeout rectangleStripDownToUp 0.4 1]
+[wait wipe]
+[charaFadeout H 0.1]
+[scene 90100]
+[wt 0.4]
+[wipein rectangleStripUpToDown 0.4 1]
+[wait wipe]
+
+[wt 0.7]
+
+[bgm BGM_MAP_4 0.1]
+
+？1：我们又来了……
+？2：好怀念啊。
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠刑部姬
+……是吗？[r][#公主:我]倒还记忆犹新呢。
+[k]
+
+＠刑部姬
+虽说当时的确发生了不少事，[r]但算是[#公主:我]和御亲初次见面的地方嘛……哎嘿嘿。
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[se ad13]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+[wt 0.3]
+
+＠达·芬奇
+灵子转移顺利完成了吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠玛修
+刑部姬小姐，周围有什么异常吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠刑部姬
+唔？　就算你这么说，周围也没什么特别……
+[k]
+
+[charaFace B 2]
+
+＠刑部姬
+呃，御亲，那里那里！　有人！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_MAP_4 1.0]
+
+[se ad27]
+[seStop ad27 0.2]
+[wt 0.15]
+[se ad27]
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠F：？？？
+……唔。你们是……
+[k]
+
+？1：你是……
+？2：……并不是……彭忒西勒亚！？
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠芙芙
+芙芙！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠F：？？？
+呵。
+[k]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth G 1]
+[charaDepth F 2]
+[charaFadeout F 0.2]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠G：？？？
+客人的样子我当然都记得。[r]好久不见。
+[k]
+
+＠G：？？？
+你不记得了吗？[r]无论在宇宙的何处，只要一键就能迅速送达，
+[k]
+
+＠G：？？？
+始终在开创新时代的跨宇宙太空电商公司……
+[k]
+
+[charaEffect G bit_talk_41]
+
+＠G：？？？
+[f large]Amazones.com！！
+[k]
+
+＠G：？？？
+[f large]的CEO！
+[k]
+
+
+[label lblIsGirlConf]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

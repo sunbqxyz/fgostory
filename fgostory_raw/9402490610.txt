@@ -1,0 +1,931 @@
+
+
+＄94-02-49-06-1-0
+
+[soundStopAll]
+
+
+[charaSet A 10007000 1 冲田Alter]
+[charaSet B 1098138000 1 龙马]
+[charaSet C 1098139000 1 阿龙小姐]
+[charaSet D 99502600 1 玛修]
+[charaSet E 98111500 1 达·芬奇亲]
+[charaSet F 1098133000 1 士官]
+[charaSet G 1098141000 1 奄美少将]
+[charaSet H 98111500 1 通讯杂音]
+
+[charaDepth B 9]
+[charaDepth C 1]
+[charaDepth H 10]
+
+[bgm BGM_EVENT_90 0.1]
+
+[scene 60000]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+＠奄美少将
+……Lancer的[#战线:Red line]消灭了吗。
+[k]
+
+＠奄美少将
+出乎意料之外，攻陷的人是谁？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠士官
+由于在敌方战线内，所以详细不明，[r]但似乎和Assassin有关。
+[k]
+
+＠士官
+Assassin也在受了伤之后，消失了踪影。
+[k]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠奄美少将
+Assassin……是从背后暗算了对方吗，[r]真是与无名小辈相符的战术呢。
+[k]
+
+＠奄美少将
+随他去吧……[r]区区受伤的Assassin，今后是活不下来的。
+[k]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠士官
+是！
+[k]
+
+[messageOff]
+[charaFadeout F 0.7]
+[se ad93]
+[wt 2.0]
+[se ad94]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠奄美少将
+那我也差不多该行动了。
+[k]
+
+[charaFace G 1]
+＠奄美少将
+……信长公，[r]这次的设宴招待已准备周全了哦。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_90 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[wt 1.5]
+
+[fadeout white 2.0]
+[wait fade]
+
+[scene 10001]
+
+[skip false]
+
+[fadein white 0.1]
+[wait fade]
+
+
+
+[input selectBranch]
+[messageOff]
+[skip false]
+[charaSet A 10007000 1 冲田Alter]
+[charaSet B 1098138000 1 龙马]
+[charaSet C 1098139000 1 阿龙小姐]
+[charaSet D 99502600 1 玛修]
+[charaSet E 98111500 1 达·芬奇亲]
+[charaSet F 1098133000 1 士官]
+[charaSet G 1098141000 1 奄美少将]
+[charaSet H 98111500 1 通讯杂音]
+
+[charaDepth B 9]
+[charaDepth C 1]
+[charaDepth H 10]
+
+[bgmStop BGM_EVENT_90 0.4]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+
+[scene 10001]
+[wt 0.4]
+[soundStopAll]
+[maskin white 1]
+[wait mask]
+[label selectBranch]
+
+[wt 0.4]
+
+[revivalBranch lblNormal lblRevival]
+
+[label lblNormal]
+
+[fowardEffect bit_queststart80107]
+[wait fowardEffect]
+
+[branch lblConf]
+[label lblRevival]
+
+[fowardEffect bit_queststart80242]
+
+[wait fowardEffect]
+
+[label lblConf]
+
+[fadeout white 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[fadeout white 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[fadein white 0.1]
+[wait fade]
+[wt 0.1]
+
+[fadeout black 2.0]
+[wait fade]
+
+[skip true]
+[wt 0.1]
+
+[scene 59400]
+
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1 1.0]
+
+[se ad93]
+[wt 2.0]
+[se ad94]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.7 1]
+[wt 0.7]
+＠冲田Alter
+………回来了。
+[k]
+
+？1：我们回来啦。
+？2：……累……累死我了。
+
+？！
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 11]
+[charaFace C 0]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 1]
+＠龙马
+[line 3]哟，辛苦了。
+[k]
+
+＠龙马
+看来你们那边也顺利解决了呢。
+[k]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠冲田Alter
+倒是你们伤痕累累呢？
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace B 0]
+[charaFace C 5]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 1]
+＠阿龙小姐
+我们可是遭大罪了啊。[r]当然，阿龙小姐我还很从容哦。
+[k]
+
+[charaTalk B]
+[charaFace B 11]
+＠龙马
+知道啦知道啦，对不起拖你后腿啦。
+[k]
+
+[charaFace B 0]
+＠龙马
+其实我们遇到Berserker了。
+[k]
+
+＠龙马
+虽说苦战了一通，[r]但总算是平安回来了。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaPut H 1]
+[charaEffect H bit_talk_10]
+[wt 0.1]
+[se ad13]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-90]
+[wt 0.3]
+
+＠达·芬奇亲
+辛苦了，[%1]。[r]还好一切顺利。
+[k]
+
+＠达·芬奇亲
+我们确认了位于Lancer支配区域的楔子已经消灭。
+[k]
+
+？1：咦？　Berserker的楔子呢？
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+
+[charaTalk B]
+[charaFace B 11]
+[charaFace C 0]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 1]
+＠龙马
+抱歉，他是个棘手的对手。
+[k]
+
+＠龙马
+我的消耗十分巨大，[r]根本无暇顾及这些……
+[k]
+
+＠龙马
+楔子的问题我明天还会去一趟。
+[k]
+
+[charaTalk C]
+[charaFace C 5]
+＠阿龙小姐
+那是发生在芝公园的激战24小时。
+[k]
+
+[charaFace C 4]
+＠阿龙小姐
+连抓青蛙的闲暇都没有，不甘心。
+[k]
+
+？1：辛苦了。
+？2：青蛙就算了吧。
+
+？！
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-90]
+
+＠达·芬奇亲
+总之只要破坏了楔子，[r]对外部干涉的抵抗似乎就会相应减弱。
+[k]
+
+[charaFace E 0]
+＠达·芬奇亲
+对通讯的干扰也有所减少，这下通讯应该能稳定了吧。[r]你们就继续破坏其他的楔子吧。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[se ad31]
+[wt 1.0]
+[seStop ad31 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-90]
+
+＠达·芬奇亲
+呃，话刚说完就这样……
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠玛修
+前辈，恕我直截了当地问了！[r]您与那位酷似冲田小姐的人究竟是什么关[line 2]
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ad539]
+[wt 0.8]
+[charaPut D 1200,1200]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10]
+[wt 1.5]
+[charaFadeout D 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠阿龙小姐
+一点都没稳定嘛。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠龙马
+话说怎么不见以藏先生？
+[k]
+
+？1：因为……
+？2：其实……
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFace B 4]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1 1.0]
+
+＠龙马
+……是吗，原来是这样。
+[k]
+
+＠龙马
+但只要他还活着就好。
+[k]
+
+＠龙马
+人不可貌相，以藏先生其实挺敏感的。[r]暂时还是不要管他为好。
+[k]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠阿龙小姐
+喂，不要担心那种混蛋杂兵鼻涕虫啦，[r]有空还不如多关心一下阿龙小姐我呢。
+[k]
+
+[charaTalk B]
+[charaFace B 11]
+＠龙马
+知道啦知道啦，我一直很关心你。
+[k]
+
+[charaTalk C]
+[charaFace C 1]
+＠阿龙小姐
+好乖好乖，这样就行了。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠冲田Alter
+……这样就行了吗。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+
+[charaSet E 1098135000 1 织田信长]
+[charaSet F 1098134000 1 兵卒]
+[charaSet G 98111600 1 织田信胜]
+
+[scene 59700]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1 1.0]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.4 1]
+[wt 0.4]
+＠织田信长
+……你就是Caster的使者吗。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠兵卒
+失礼了。这是我方的协助条件。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠织田信长
+……信胜，读出来。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠织田信胜
+是，姐姐大人！
+[k]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠织田信长
+喂，在这里要叫我信长大人。[r]不要让我再重复这句话了。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+＠织田信胜
+十……十分抱歉！[r]姐……信长大人！
+[k]
+
+[messageOff]
+[se ade11]
+[wt 0.4]
+[seStop ade11 1.0]
+[wt 1.0]
+
+[charaFace G 4]
+＠织田信胜
+呃……怎么说来着？
+[k]
+
+＠织田信胜
+在讨伐除我们以外的所有从者前，[r]签订不可侵犯条约。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠织田信长
+哼，和我猜想的一样。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠织田信胜
+……还有……哎！？[wt 0.4][charaFace G 9]
+[k]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠织田信长
+怎么了？[r]难道对方让我们交出火枪吗？
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+＠织田信胜
+不，不是，那个……
+[k]
+
+＠织田信胜
+说是，待讨伐了除我们以外的从者之后，[r]会将圣杯让给我们。
+[k]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠织田信长
+……什么？
+[k]
+
+＠织田信长
+喂，难道Caster想要退出圣杯战争吗？
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠兵卒
+是……上面是这么吩咐的。
+[k]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠织田信胜
+姐姐大人……[r]这情况有些奇怪啊。
+[k]
+
+＠织田信胜
+那么，Caster为什么要参加圣杯战争呢？
+[k]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠织田信长
+我不是说让你叫信长大人吗。
+[k]
+
+[charaFace E 0]
+＠织田信长
+……唔。
+[k]
+
+[charaFace E 7]
+＠织田信长
+……你要说的我都明白了。[r]就这么转告Caster吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠兵卒
+是，那在下告辞了！
+[k]
+
+[messageOff]
+[se ad60]
+[wt 0.2]
+[seStop ad60 1.0]
+[charaFadeout F 0.4]
+[wt 2.0]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠织田信长
+……哼，不管那家伙想些什么，[r]既然要杀，反正都一样。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠织田信胜
+……确实没错。[r]哎呀，姐姐大人你还真坏呢～！
+[k]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠织田信长
+喂，下次再犯我可真的不会原谅你了哦。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[scene 59400]
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_90 0.1 1.0]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFace C 0]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 1]
+＠龙马
+那么，我们来谈谈今后的问题吧。
+[k]
+
+＠龙马
+排除Lancer、Berserker，[r]剩下的是Saber、Archer、Caster。
+[k]
+
+＠龙马
+根据迦勒底和我的调查，[r]基本已经掌握Saber和Archer的所在位置了。
+[k]
+
+＠龙马
+而Caster虽然展开了[#战线:Red line]，[r]但大本营的位置至今不明。
+[k]
+
+＠龙马
+毕竟这本来就是个擅长建筑己方阵营的职阶，
+[k]
+
+＠龙马
+倘若对方没有任何行动，[r]我们也束手无策。
+[k]
+
+[charaTalk C]
+[charaFace C 5]
+＠阿龙小姐
+那么，先对付Saber和Archer吧。
+[k]
+
+＠阿龙小姐
+你去哪边？[r]如果害怕得睡不着觉的话，双方都由阿龙小姐来负责也行哦。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠冲田Alter
+……Saber。
+[k]
+
+？1：Alter……
+？2：冲田小姐很难对付哦。
+
+
+？！
+
+[charaFace A 6]
+＠冲田Alter
+御主，我觉得自己必须再见一次Saber才行。
+[k]
+
+＠冲田Alter
+尽管不知道为什么，但总有这种感觉。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFace C 0]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 1]
+＠龙马
+这个嘛……
+[k]
+
+＠龙马
+如果你真的是冲田的另一个侧面，[r]那你确实应该再去见她一次为好。
+[k]
+
+[charaFace B 6]
+＠龙马
+但是，希望你务必小心。
+[k]
+
+＠龙马
+说起冲田总司，[r]在令幕末京都为之颤抖的剑豪集团[line 3]
+[k]
+
+＠龙马
+『新选组』中也算最强者之一的剑士。
+[k]
+
+？1：我非常清楚。
+？2：像冲田小姐这样的剑士还有……
+
+？！
+
+[charaFace B 0]
+
+＠龙马
+我在京都城内行走的时候也需要提高警惕。[r]浅葱色的阶梯纹，尤其在转角处哦。
+[k]
+
+[charaTalk C]
+[charaFace C 1]
+＠阿龙小姐
+那么，阿龙小姐负责干掉Archer就行了吧。
+[k]
+
+[charaTalk B]
+[charaFace B 11]
+＠龙马
+女孩子不要随便说什么干掉这种词哦。[r]不过嘛，确实如此。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠冲田Alter
+倒是你们要小心一点哦。[r]那个Archer强得十分可怕。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 1]
+＠阿龙小姐
+那种蹩脚Archer的攻击[r]对阿龙小姐根本没用。
+[k]
+
+[charaFace C 1]
+＠阿龙小姐
+你们就放一百个心好好等着吧。[r]这次我一定会抓住青蛙的。
+[k]
+
+？1：大家都要小心哦。
+？2：你喜欢青蛙吗？
+
+？！
+
+＠阿龙小姐
+好嘞～，出发啦～。[r]为了讨个吉利，要不要升起『狼烟』呢？
+[k]
+
+[charaTalk B]
+[charaFace B 11]
+＠龙马
+好啦好啦，这种就不用啦。
+[k]
+
+[charaFace B 0]
+[charaFace C 0]
+＠龙马
+那你们也要小心哦。
+[k]
+
+[charaFace B 5]
+[charaFace C 0]
+＠龙马
+[line 3]冲田很强。
+[k]
+
+[messageOff]
+[charaFadeout B 0.7]
+[charaFadeout C 0.7]
+[se ad93]
+[wt 2.0]
+[se ad94]
+[wt 1.0]
+
+？1：我们也出发啦！
+？2：去见冲田小姐吧。
+
+？！
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠冲田Alter
+……嗯，御主，我们走吧。
+[k]
+
+＠冲田Alter
+去见另一个我。
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_90 2.0]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,410 @@
+
+
+
+＄01-00-07-05-3-0
+[soundStopAll]
+[charaSet A 8001002 1 玛修]
+[charaSet B 98106200 1 梅林]
+[charaSet C 3027000 1 安娜]
+[charaSet D 98003000 1 Dr.罗曼]
+[charaSet E 5009001 1 达·芬奇]
+[charaSet F 3028001 1 豹人]
+
+
+
+[se ad220]
+[seVolume ad220 0 0.05]
+[scene 30400]
+[fadein black 1.5]
+[seVolume ad220 2.0 0.3]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.4 1]
+
+
+＠玛修
+…………
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠梅林
+…………
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+
+＠安娜
+…………
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[se ad13]
+[charaTalk D]
+[communicationChara 98003003 1 5 0 0]
+[wt 0.3]
+
+
+＠Dr.罗曼
+[FFFFFF]？　怎么一进森林就变得沉默寡言了，[-][r]大家都怎么了？
+[k]
+
+＠Dr.罗曼
+虽然一眼望去全是树海，[r]会产生要迷路的感觉也能理解……
+[k]
+
+
+？1：是因为我快要热死了啦[line 6]！
+
+？！
+
+[seStop ad220 1.5]
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk C]
+[bgm BGM_EVENT_5 0.1]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+
+＠安娜
+……深有同感。这热气也太强烈了……[r]我还以为所谓的森林，应该是更为……凉爽……安静的……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+
+＠玛修
+我能理解安娜小姐的心情……[r]我也太小看这里了……
+[k]
+
+＠玛修
+从地表蒸腾上来的热气，浓厚的泥土味，[r]简直快要令人失去意识的动物们的声音……
+[k]
+
+＠玛修
+这就是……名为丛林的自然环境……
+[k]
+
+＠玛修
+六千五百万年前，[r]小陨石坠落以前的地球就是这样的吗……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 0]
+
+＠Dr.罗曼
+哈哈哈，是在说大灭绝的事吗？[r]小陨石落在尤卡坦半岛导致恐龙灭绝的那个。
+[k]
+
+＠Dr.罗曼
+虽然我只能透过画面看，[r]不过再怎么说也太夸张了吧～？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠梅林
+哪里夸张了，这里实在太糟了！[r]既闷热，苍蝇又多，还很难走路！
+[k]
+
+＠梅林
+而且还弥漫着强烈的以太！[r]不列颠岛和这里比，简直是小巫见大巫！
+[k]
+
+＠梅林
+罗玛尼，你到底有没有在测量魔力浓度啊！？[r]这已经是固有结界等级的异世界了！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 4]
+
+
+＠Dr.罗曼
+啊……这个问题嘛，[r]虽然很不好意思，但测量器很不稳定……
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[communicationCharaLoop 5009003 1 5 0 0]
+
+
+＠达·芬奇
+和在埃及领土时一样呢。[r]那个领域已经处于完全不同的世界，不，是不同的神话体系了。
+[k]
+
+＠达·芬奇
+用调到与乌鲁克角度一致的示巴进行观测也存在限度。[r]热源尚且不论，但周围的细节是无法判别的。
+[k]
+
+＠达·芬奇
+现在只能靠你们的五感了。[r]只有全力动员你们的眼睛和鼻子感知危机了。
+[k]
+
+？1：……也就是说，现在雷达无法使用吧……
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 4]
+
+＠Dr.罗曼
+不好意思……原因是来自那些过度繁殖的树海，[r]如果树少一点的话，我们还能帮上点忙……
+[k]
+
+？2：……眼睛先不论，鼻子……？
+[communicationCharaFace 1]
+
+＠达·芬奇
+嗯。在密林中，嗅觉是重要的情报来源。[r]能比粗糙的回声测定更能探查过去。
+[k]
+
+＠达·芬奇
+因为动物的体味会留在原地。如果能将气味作为数值视觉化，[r]就能简单回溯出究竟是什么，何时，向哪里去了。
+[k]
+
+＠达·芬奇
+依靠嗅觉狩猎乃是动物的特权呀。
+[k]
+
+＠达·芬奇
+人类只要稍微练习一下大脑的使用方法，[r]就能办到类似的事。
+[k]
+
+？！
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+从地图上看，再往南走一公里左右，就是乌尔市。[r]这种闷热的状况只要再坚持二十分钟左右就行了，御主。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠梅林
+嗯，我由衷祈祷这事能这样解决！[r]然后下次一定要雇个导游或是骆驼！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+＠F：？？？
+哼[line 3]真是了不起的决心！[r]你们这些平原来的菜鸟们，没有导游就没有明日！
+[k]
+
+＠F：？？？
+倘若吸取教训，就一定要在进丛林前给当地人塞[#小费:Money]，[r]并用头摩擦地面这么说！
+[k]
+
+＠F：？？？
+“[#晚上好:Buenas noches]！　[#小姐:Senorita]！[r][f small]  [f -][#先生先生:Senor Senor]，要来点乌羽玉吗？”
+[k]
+
+[messageOff]
+[se ad221]
+[seVolume ad221 0 0.05]
+[seVolume ad221 0.5 0.5]
+[wt 1.5]
+[seStop ad221 1.5]
+
+[bgm BGM_EVENT_3 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+御主！　虽然看不见，但是有什么东西在！[r]好像在树木上高速移动着！
+[k]
+
+[messageOff]
+[wipeout downToUp 0.3 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.1]
+[se ad221]
+[seVolume ad221 0 0.05]
+[seVolume ad221 0.5 0.3]
+[effect bit_talk_42]
+[wipein upToDown 0.3 1]
+[wait wipe]
+
+＠F：？？？
+哈哈哈哈哈！[r]哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈！
+[k]
+
+＠F：？？？
+喵哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈！[r]不是什么东西！　我[line 3]我是……[effectStop bit_talk_42][seStop ad221 0.7]唔～，是啥啊？
+[k]
+
+＠F：？？？
+等一下，真的具体问我是谁，其实也挺头疼的喵……[r]虽然毫无疑问是个美女……
+[k]
+
+[se ad221]
+[seStop ad221 0.4]
+
+＠F：？？？
+啊！？　惨了，光顾着思考，[r]忘记傻子陷阱（意译:有趣的陷阱）设在哪儿了！
+[k]
+
+＠F：？？？
+呜，真可恨……！　竟然对素未谋面的人发动头脑战，[r]你这不知廉耻的理科系的！
+[k]
+
+
+＠梅林
+很好我懂了！　这是个笨蛋！
+[k]
+
+[messageOff]
+[se ad221]
+[seStop ad221 0.4]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[charaShake F 0.05 5 5 0.4]
+
+＠F：？？？
+才不是什么[#河马:蛋笨]呢！[r]我就不明白了，为什么大家总用河马来比喻我～！
+[k]
+
+[messageOff]
+[charaMoveReturn F 0,20 0.3]
+[wait charaMove F]
+[charaMove F 0,-256 0.1]
+[wait charaMove F]
+[charaFadeout F 0.1]
+[wt 0.1]
+[wipeout upToDown 0.1 1]
+[wait wipe]
+[wt 0.1]
+[wipein downToUp 0.1 1]
+[wait wipe]
+
+[se ad223]
+[wt 0.4]
+
+？1：从上面掉下来了！？
+？2：唔哇！？
+
+？！
+
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 2]
+
+＠Dr.罗曼
+这奇怪的生物是啥[line 3]！？[r]UMA！？　是UMA吗！？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+
+＠F：？？？
+No！　我谁也不是！[r]一定要说的话，就是丛林的化身，伟大战士们的体现！
+[k]
+
+[charaEffect F bit_talk_41]
+[se ad139]
+
+＠F：？？？
+其名为豹人！[r]从者·豹人在此登场！
+[k]
+
+[charaEffectStop F bit_talk_41]
+[wt 0.4]
+
+
+[charaFace F 5]
+＠豹人
+来吧，都看过来，这里要上广告标语啦～[r]会成为大红大紫整整一年的梗哦～
+[k]
+
+＠豹人
+『最强之虎，健在于此！[r]　不会让任何人再叫我Tiger！』
+[k]
+
+[charaFace F 0]
+＠豹人
+哼[line 3]！[r]（一脸得意洋洋的表情。）
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+
+＠安娜
+[%1]，请快下指示。[r]乌尔市的冰凉清水正在等着我们。
+[k]
+
+？1：好，边击退当地动物边突击吧！
+[charaFace C 2]
+
+＠安娜
+明白了。[r]Tiger必须死！
+[k]
+
+
+？2：莫非……那就是南方的女……
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+
+＠玛修
+御主，不能在意这个问题！[r]现在请当做无事发生地战斗吧！
+[k]
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.5]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+
+
+

@@ -1,0 +1,171 @@
+
+＄94-04-01-13-2-1
+
+[soundStopAll]
+
+
+[charaSet A 98100400 1 玛修]
+[charaSet B 1008300 1 齐格飞]
+[charaSet C 1098117301 1 尼禄]
+[charaSet D 6019300 1 小太郎]
+[charaSet E 1098181300 1 Kingprotea]
+[charaSet F 1040000 1 葛饰北斋]
+[charaSet G 10001002 1 Passionlip]
+
+[charaSet I 98115000 1 特效用]
+[charaSet J 98115000 1 特效用]
+
+[charaPut I 2000,2000]
+[charaPut J 2000,2000]
+[charaEffect I bit_talk_fire]
+[charaEffect J bit_talk_sparks]
+
+[scene 10000]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[se bac108]
+[effect bit_talk_14]
+[wt 0.8]
+[cueSe Servants_603000 bac521]
+
+
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 0.1]
+
+[scene 81700]
+
+[charaPut I 0,-200]
+[charaPut J 1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0 1]
+[charaShake E 0.02 3 3 0.8]
+[bgmStop BGM_EVENT_80 1.0]
+
+[wt 1.4]
+
+＠Kingprotea
+我[line 2]被[line 2]干[line 2]掉[line 2]了[line 2]！[wt 0.9][charaFace E 6][r]不过玩得很开心，所以我能够接受！
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ad619]
+[seVolume ad619 0 0.5]
+[charaMove E 0,-30 0.9]
+[charaFadeout E 0.7]
+[wt 1.0]
+[seStop ad619 1.0]
+[se ad226]
+[shake 0.05 0 3 1.5]
+[wt 3.0]
+
+[se ad9]
+[seVolume ad9 0 0.7]
+
+＠工厂广播
+紧急情况。[r]紧急情况。
+[k]
+
+＠工厂广播
+『[#S系统:Sadistem]·MeltPurge』发生异常。[r]无法压缩容器内的经验值。
+[k]
+
+＠工厂广播
+90秒后　释放存储的紫色硬币。[r]届时　硬币将返还给原来的所有者。
+[k]
+
+[seStop ad9 1.0]
+
+＠工厂广播
+当前输出功率难以执行『最终表演』。[r]当前输出功率难以执行『最终表演』。
+[k]
+
+＠工厂广播
+请Lambdaryllis大人重新制定计划。
+[k]
+
+＠工厂广播
+重复一遍。[r]90秒后[line 3]
+[k]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠Passionlip
+成功了[line 3]！[bgm BGM_EVENT_82 0.1][r]我尝试着破坏工厂，
+[k]
+
+＠Passionlip
+结果真的成功了呢，[r][%1]！
+[k]
+
+？1：唔……嗯。是啊。
+？2：毫无调查就进行破坏活动可不好哦。
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠齐格飞
+呵。齐格鲁德大人也曾说过，[r]恋爱中的少女就是这样的。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠尼禄
+余明白了，这就是所谓的浪漫吧！[r]不过也得考虑一下时间和场合吧！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛修
+御主，由于我们打败了Protea小姐，[r]电梯开放了！
+[k]
+
+＠玛修
+抓紧返回水天宫，[r]和Λ小姐进行对决吧！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 26]
+[charaFadein F 0.1 1]
+
+＠葛饰北斋
+噢！　我要好好回报那个小黑帽！[r]这次一定要做个了结！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

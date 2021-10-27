@@ -1,0 +1,276 @@
+
+＄91-70-07-02-3-1
+[charaSet A 7007001 1 弗拉德三世]
+[charaSet B 99502600 1 玛修]
+[charaSet C 99502600 1 男性]
+
+[bgm BGM_EVENT_2 0.1]
+[scene 10912]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠弗拉德三世
+[line 3]不愧是龙种。[r]不愧为冠以余之名的存在，名不虚传。
+[k]
+
+？1：说反了啊，王。
+？！
+
+[charaFace A 4]
+＠弗拉德三世
+……咳咳。
+[k]
+
+[charaFace A 1]
+＠弗拉德三世
+好了，这样一来余在伦敦的恶名也被洗刷了。
+[k]
+
+＠弗拉德三世
+……从龙种手中拯救了伦敦的谜之英雄啊。[r]不赖，确实不赖……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 11]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+
+＠玛修
+（既然成谜，反而不会对弗拉德先生造成任何影响吧……）
+[k]
+
+[messageOff]
+[charaPut B 0,-10000]
+[charaFadeout B 0.1]
+[se ad6]
+[seVolume ad6 0 0.1]
+[wt 0.1]
+[seVolume ad6 0.9 0.9]
+
+[wt 1.0]
+
+
+[seStop ad6 0.7]
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+＠玛修
+……！[r]不好了，人群聚集过来了。
+[k]
+
+＠玛修
+赶快离开这里吧，御主、弗拉德先生。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[wt 0.1]
+[se ad59]
+[seVolume ad59 2.0 0.1]
+[wt 2.0]
+[seStop ad59 0.7]
+[fadein black 0.4]
+[wait fade]
+
+＠男性
+请……请问……
+[k]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠弗拉德三世
+唔，有何贵干？
+[k]
+
+
+
+＠男性
+如果您允许的话……[r]能否让我……拍一张照片呢？
+[k]
+
+
+[bgm BGM_EVENT_7 0.1]
+[charaFace A 1]
+＠弗拉德三世
+照片啊。唔，好吧，余准了。[r]御主，一起拍吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 6]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+
+＠玛修
+哎！？
+[k]
+
+？1：真……真的可以吗？
+[charaPut B 0,-10000]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠弗拉德三世
+无妨。
+[k]
+
+[charaFace A 1]
+＠弗拉德三世
+既然那位圣乔治……乔尔乔斯阁下也以此为兴趣，[r]那这就绝不是什么玷污神明的无礼之举。
+[k]
+
+[charaFace A 3]
+[charaMoveReturn A 0,-10 0.3]
+＠弗拉德三世
+御主，余的衣襟没有[charaMoveReturn A 0,-10 0.3]歪吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：不……不要紧吗？
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠弗拉德三世
+哼，余拥有现代的知识。[r]不会介意那些说照相会吸收灵魂的胡言乱语的。
+[k]
+
+[charaFace A 4]
+＠弗拉德三世
+虽然遗憾的是现在只能拍黑白照片……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 4]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+
+＠玛修
+（我觉得御主指的应该不是这个问题吧……）
+[k]
+[charaPut B 0,-10000]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+？！
+
+＠男性
+那我就开拍了～！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth A 0]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 1.5]
+[se ad41]
+[fadeout white 0.4]
+[wait fade]
+[wipeFilter cinema 0.5 0]
+[charaScale A 0.8]
+[charaFadein A 0.1 0,-65]
+
+[effect bit_sepia01]
+[wt 0.2]
+[fadein white 0.7]
+[wait fade]
+[wt 2.0]
+
+[bgmStop BGM_EVENT_7 1.5]
+[fadeout black 1.5]
+[wait fade]
+[wipeOff]
+[charaScale B 1.0]
+[charaScale A 1.0]
+[charaPut B 0,-10000]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[effectStop bit_sepia01]
+
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+[bgm BGM_EVENT_6 0.1]
+
+＠玛修
+照……照片应该不会留存后世吧……
+[k]
+
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠弗拉德三世
+放心吧，就算留存后世，[r]也没人知道这是什么照片。
+[k]
+
+[charaFace A 0]
+＠弗拉德三世
+迟早终将回归尘土。[r]与刚才的龙种一样。
+[k]
+
+＠弗拉德三世
+那我们返回迦勒底吧，御主。[r]……感谢你陪伴余为这永无尽头的梦想而努力。
+[k]
+
+[charaFace A 4]
+＠弗拉德三世
+这或许都毫无意义，这或许都是徒劳。[r]这或许只是戏言，这或许是趟滑稽之旅。
+[k]
+
+＠弗拉德三世
+何况，这力量就是[#这种力量]。[r]余本不应引以为耻。
+[k]
+
+＠弗拉德三世
+然而，[r]在玩味了这一切之后[line 3]。
+[k]
+
+[charaFace A 0]
+＠弗拉德三世
+余依然无法以身为吸血鬼为傲。[r]永远不能。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_6 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]
+

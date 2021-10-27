@@ -1,0 +1,256 @@
+
+
+＄94-01-19-17-3-1
+[soundStopAll]
+[charaSet A 98113100 1 阿诺尔德]
+[charaSet B 2016000 1 卫宫·Alter]
+[charaSet C 98113200 1 崔斯坦]
+[charaSet D 1030000 1 铃鹿御前]
+[charaSet E 10001000 1 Passionlip]
+[charaSet F 7016001 1 玉藻猫]
+[charaSet G 98113100 1 通讯特效]
+
+[bgm BGM_EVENT_24 0.1]
+[scene 41000]
+[shake 0.1 0 1 0]
+[fadein black 1.5]
+[wait fade]
+[se ad13]
+[charaPut G 0,0]
+[charaEffect G bit_talk_10]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-80]
+＠阿诺尔德
+让你们久等了！[r]终于计算出来了！
+[k]
+
+＠阿诺尔德
+已经没有时间了，还剩5分钟！[r]SE.RA.PH时间就是8小时后就会到达海底！
+[k]
+
+＠阿诺尔德
+既然SE.RA.PH的下潜速度在提升，[r]那我们的计划也不得不加快！
+[k]
+
+＠阿诺尔德
+[%1]，[r]卫士的攻略情况如何！？
+[k]
+
+＠阿诺尔德
+还在浪费时间吗！？[r]快报告状况！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 1.5]
+[fadeout black 1.5]
+[wait fade]
+[shakeStop]
+[wt 2.0]
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_EVENT_1 0.1]
+
+
+＠阿诺尔德
+好，我明白情况了。[r]干得漂亮，[%1]。
+[k]
+
+＠阿诺尔德
+既然已经确保了通往中央的通路，[r]就先回一趟教会。
+[k]
+
+＠阿诺尔德
+我会和你们一起去那个叫天体室的地方。我有这个义务。[r]抓紧时间。8小时转瞬即逝。
+[k]
+
+？1：不。
+？2：我要去救Melt。
+
+？！
+
+[charaPut G 0,-1000]
+[charaFadeout A 0.1]
+[wt 0.1]
+[messageOff]
+[charaTalk off]
+[charaFace E 3]
+[charaFace F 1]
+[charaFadein E 0.1 2]
+[charaFadein F 0.1 0]
+[wt 1.0]
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[charaTalk on]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠卫宫·Alter
+你是认真的吗？　根据铃鹿御前的说法，那里是没有通道的地洞……[r]一旦掉下去，可就没法爬上来了哦？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaFace C 0]
+[charaTalk C]
+[charaPut G 0,0]
+[charaFadein C 0.1 0,-75]
+＠崔斯坦
+……也就是说救援行动是不可能的吧。[r]………………没办法了。
+[k]
+
+[charaFadeout C 0.1]
+[charaTalk A]
+[charaFadein A 0.1 0,-80]
+＠阿诺尔德
+[line 3]失礼。我刚才走开了一下。
+[k]
+
+＠阿诺尔德
+由于突发的情况，以至于我有些失控。[r]抱歉对你动粗了，玛布尔。
+[k]
+
+＠阿诺尔德
+……好了，[%1]。[r]你大概没有听清楚吧。我再说一次。
+[k]
+
+＠阿诺尔德
+你是光荣的迦勒底御主。[r]你有拯救塞拉菲克斯，拯救我们的义务。
+[k]
+
+＠阿诺尔德
+在此基础上，我重复一遍我的命令。[r]返回教会，我们一起去天体室。明白了吗？
+[k]
+
+？1：我要去救Meltryllis！
+
+？！
+
+＠阿诺尔德
+不要再说那种蠢话了。[r]Alterego掉进下层了？　要去救她？
+[k]
+
+＠阿诺尔德
+这不是很好吗，省事多了！[r]那可是最后必须处理掉的怪物啊！
+[k]
+
+＠阿诺尔德
+那种事根本无关紧要。无关紧要啦。[r]别废话了，服从我的判断。
+[k]
+
+＠阿诺尔德
+只要仔细想想就能明白了吧？　无论你建立了多少功勋，[r]等回到外面之后，都是由我向上报告的。
+[k]
+
+＠阿诺尔德
+你都拼死战斗到现在了，应该不希望[r]为了一个错误，而被贴上没用的标签吧？
+[k]
+
+＠阿诺尔德
+你刚才的发言我就当没听到好了。[r]知道了吗，你现在应该立刻[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_1 0.7]
+[se ad1]
+[charaPut G 0,-1000]
+[charaFadeout A 0.1]
+[wt 1.2]
+
+？1：铃鹿御前，该怎么才能下去呢？
+
+？！
+
+[bgm BGM_EVENT_4 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠铃鹿御前
+那当然是直接下去啦。[r]那边的黑手党，你带着绳子或是梯子之类的吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0]
+[charaFadein D 0.1 2]
+＠卫宫·Alter
+……我可以炼成仰卧起坐用的钢索。[r]虽说能用魔力进行延长，但极限只能到5km。
+[k]
+
+[charaFace D 0]
+＠铃鹿御前
+只能说勉强够吧。[r]那黑手党就留在这里负责放钢索，明白？
+[k]
+
+[charaFace B 0]
+＠卫宫·Alter
+是负责拉人吧。[r]你们下去？
+[k]
+
+＠铃鹿御前
+[%1]和我下去。
+[k]
+
+[charaFace D 1]
+＠铃鹿御前
+Passionlip……嗯，很遗憾不行！[r]钢索会断的！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠Passionlip
+刚才那话好像是在对我的体重指手画脚吧！[r]不过是事实，也没办法……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠铃鹿御前
+笨猫……唉。你也在这里待机。[r]一眼就能看出因为刚才乱来的咒术，你早就伤痕累累了。
+[k]
+
+＠铃鹿御前
+再加上黑手党应该需要护卫吧。[r]你就老老实实待在这里。明白？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠玉藻猫
+唔，咕……明白啦。虽然很悲伤，但这是事实。[r]主人，我会等您回来的！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠铃鹿御前
+那事情就是这样，我们走吧，[r][%1]。
+[k]
+
+＠铃鹿御前
+Meltryllis是你的从者吧？[r]那身为御主，你得负责到底才行！
+[k]
+
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_4 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

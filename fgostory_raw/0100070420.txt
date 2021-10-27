@@ -1,0 +1,214 @@
+
+
+
+＄01-00-07-04-2-0
+[soundStopAll]
+[charaSet A 8001002 1 玛修]
+[charaSet B 98002000 1 芙芙]
+[charaSet C 3027000 1 安娜]
+[charaSet D 98107600 1 祭祀长西杜丽]
+[charaSet E 98003000 1 Dr.罗曼]
+
+
+[bgm BGM_EVENT_2 0.1]
+[scene 33200]
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠玛修
+早上好，前辈。[r]昨晚睡得非常沉吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 128,0]
+[se ad60]
+[seVolume ad60 0 0.4]
+[seStop ad60 1.5]
+[charaMove C 1 1.0]
+[charaShake C 0.1 0 3 1.0]
+[wait charaMove C]
+
+＠安娜
+……早上……好……[r]你们两位……起得真早啊……好厉害。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[se ad13]
+[charaTalk E]
+[communicationChara 98003003 1 5 0 0]
+[wt 0.3]
+
+＠Dr.罗曼
+我们这儿的工作人员也换班了。[r]早上好，[%1]。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk B]
+[charaFadein B 0.1 1]
+
+＠芙芙
+芙，芙呜！
+[k]
+
+？1：各位，早上好。
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠祭祀长西杜丽
+大家都到齐了吧。[r]那我这就给[%1]交待工作。
+[k]
+
+＠祭祀长西杜丽
+今天的委托是来自农场的利马特氏。[r]希望各位能帮他剃羊毛。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk E]
+[communicationCharaLoop 98003003 1 5 0 2]
+
+
+＠Dr.罗曼
+啊？　剃羊毛……要剃羊毛……[r]为什么要干那种杂活啊！？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+
+＠祭祀长西杜丽
+并不是什么杂活。羊毛值千金，[r]在交易上是重要的商品。
+[k]
+
+＠祭祀长西杜丽
+虽然每年只会剃两三次羊毛，[r]但周期越短，越关系到下次收益。
+[k]
+
+＠祭祀长西杜丽
+利马特氏财产中的羊有一百八十头。[r]给一头羊剃毛要耗费约四小时，一天最多也就剃四头了。
+[k]
+
+＠祭祀长西杜丽
+也就是说，如果只靠利马特氏一个人，[r]剃光所有羊毛就要耗费一个月以上。
+[k]
+
+＠祭祀长西杜丽
+你们明白如果一个月能缩短到十天的话，[r]能够产生多大的利润差吗？
+[k]
+
+？1：就像商品进货推迟一个月一样吧……
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk E]
+[communicationCharaLoop 98003003 1 5 0 8]
+[wt 0.3]
+
+＠Dr.罗曼
+虽然比喻反了，但我知道你想表达什么意思……[r]这种不叫雁过拔毛，而是羊过拔毛吧……
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+？2：不工作的话就没办法生存？
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠安娜
+看来是这样……[r]但能触摸羊……还是有些开心的。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠玛修
+我明白了，包在我们身上！[r]我们一定要接下这个任务，御主！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠祭祀长西杜丽
+答得好。这是介绍信。[r]羊可是好东西哦，玛修。这个季节可是非常软绵绵的。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+果然是软绵绵的吗……（咽口水。）[r]看来会是一次艰辛的任务呢……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFadein B 0.1 1]
+[charaShake B 0.01 1 1 0]
+
+＠芙芙
+芙呜呜呜……
+[k]
+
+
+
+？1：又有新对手登场了啊……
+？2：你还是认命吧，芙芙。
+
+？！
+[charaFadeout B 0.1]
+[charaShakeStop B]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠祭祀长西杜丽
+啊，对了对了。[r]我忘记说了，牧场位于乌鲁克的郊外。
+[k]
+
+＠祭祀长西杜丽
+报告说那里附近有从未见过的魔兽出没。[r]请各位千万小心。
+[k]
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.5]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

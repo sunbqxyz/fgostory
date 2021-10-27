@@ -1,0 +1,1390 @@
+
+
+
+＄01-00-07-04-1-0
+[soundStopAll]
+[charaSet A 8001002 1 玛修]
+[charaSet B 98106200 1 梅林]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 3027000 1 安娜]
+[charaSet E 98107600 1 祭祀长西杜丽]
+[charaSet F 5009001 1 达·芬奇]
+[charaSet G 98003000 1 Dr.罗曼]
+[charaSet H 4014000 1 牛若丸]
+
+
+
+[bgm BGM_EVENT_2 0.1]
+[scene 32900]
+[wt 0.7]
+[cameraMove 0.1 50,0 1.2]
+[wait camera]
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.2]
+[cameraMove 1.5 -20,0 1.2]
+[wait camera]
+[wt 0.2]
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+[cameraHome 0.3]
+[wait camera]
+[wt 0.2]
+[scene 33200]
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+
+
+＠祭祀长西杜丽
+这里就是提供给各位的宿舍。[r]虽然老旧，但是空间应该相当宽裕。
+[k]
+
+＠祭祀长西杜丽
+原本是用作酒馆的地方。[r]一楼是公共空间，二楼和三楼是起居空间。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠安娜
+………………
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛修
+没想到竟然直接将整栋屋子借给我们……！[r]谢谢您，西杜丽小姐！
+[k]
+
+＠玛修
+太好了，御主！　没想到才灵子转移到这里的[r]第三天晚上，我们就能拥有独门独户了！
+[k]
+
+
+？1：嗯……看来得好好赚房租钱才行呢……
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠祭祀长西杜丽
+放心吧，不会收你们房租的。[r]虽然只能保证最低限度，但生活用品我们也会为你们送来。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+？2：我的梦想是一栋带游泳池的白色甜蜜小屋。
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠梅林
+什么，这品味不错。[r]实不相瞒，我也有相同的梦想。
+[k]
+
+[charaFace B 1]
+＠梅林
+只不过当独栋房超过五十栋的话，[r]就已经谈不上什么甜蜜了！
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFadein C 0.1 1]
+
+＠芙芙
+芙，咚芙呜！
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+？！
+
+[se ad13]
+[charaTalk G]
+[communicationChara 98003003 1 5 0 0]
+[wt 0.3]
+
+＠Dr.罗曼
+而且也是设置召唤阵的理想地点呢。[r]看来这里会成为[%1]这次的据点了吧。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+
+＠玛修
+也就是迦勒底大使馆吧！[r]前辈、梅林先生、安娜小姐、芙芙……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠梅林
+以及玛修小姐，四人加一只的根据地啊。
+[k]
+
+
+＠梅林
+唔。虽然我在神塔内有自己的房间，[r]但好像这边比较有意思。
+[k]
+
+＠梅林
+快去看看二楼的样子吧。[r]就算只是短期滞留，挑房间还是很重要的。
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[se ad60]
+[seVolume ad60 0 0.4]
+[wt 1.5]
+[seStop ad60 1.0]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠安娜
+…………
+[k]
+
+？1：安娜也去看看吧？
+
+[charaFace D 0]
+＠安娜
+……不，我无所谓……[r]只要能睡得着，哪儿都行……
+[k]
+
+[charaFace D 3]
+＠安娜
+…………我知道了。[r]总被你这么这么盯着，我也挺头疼的，那我就去看看吧。
+[k]
+
+[charaFace D 0]
+＠安娜
+……而且还需要监视梅林。[r]毕竟那家伙有太多见不得人的事了……
+[k]
+
+
+
+？2：表情不太开心呢？
+
+[charaFace D 4]
+＠安娜
+……没什么。只是事态不断偏离我的目的，[r]觉得有些提不起精神来罢了。
+[k]
+
+＠安娜
+……我去看一下梅林的样子。[r]为了监视他，以防他搞什么不良企图……
+[k]
+
+
+？！
+[messageOff]
+[charaFadeout D 0.4]
+[se ad60]
+[seVolume ad60 0 0.4]
+[wt 1.5]
+[seStop ad60 1.0]
+[wt 0.1]
+
+[charaTalk G]
+[communicationCharaLoop 98003003 1 5 0 0]
+
+＠Dr.罗曼
+那两个都上二楼去了吗。[r]那我们就来解决我们自己的事吧。
+[k]
+
+＠Dr.罗曼
+玛修，准备设置召唤阵。[r]这样一来，引导工作也能轻松一点。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛修
+好。圆桌，展开。[r]灵子线坐标，投锚！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_2 0.5]
+[wait fade]
+[charaFadeout A 0.1]
+[wt 0.5]
+[scene 10500 0]
+[fadein black 0.5]
+[wait fade]
+[se ad13]
+[communicationChara 5009003 1 5 0 0]
+[wt 0.3]
+[bgm BGM_EVENT_1 0.1]
+
+＠达·芬奇
+好啦，该我出场了吗？
+[k]
+
+[communicationCharaFace 1]
+＠达·芬奇
+设置召唤阵时的迷你教室，[r]魔术世界的小知识讲座，这次是[line 3]
+[k]
+
+＠达·芬奇
+关于神代和神灵。难得来到号称神代终点的公元前，[r]这真可谓极其贴切的内容呢。
+[k]
+
+[communicationCharaFace 0]
+＠达·芬奇
+虽然想必你们以前也听过神灵的故事了，[r]所谓神代，简单概括来说就是『诸神的时代』。
+[k]
+
+＠达·芬奇
+在魔术的世界里，大气中的魔力被称为[#大源:玛那]。[r]据说越是回溯到过去，这种东西就越多。
+[k]
+
+＠达·芬奇
+换言之，就是地球本身拥有的魔力吧。[r]对人类来说，就像是免费畅用的汽油一样。
+[k]
+
+＠达·芬奇
+与之相对，魔术师或是英灵所拥有的[r]个人魔力被称为[#小源:奥多]。
+[k]
+
+＠达·芬奇
+虽然是由被称作魔术回路的特殊神经组织所生成的魔力，[r]但人类和地球的[#存在规模:规格]大不相同。
+[k]
+
+[communicationCharaFace 4]
+＠达·芬奇
+玛那是极为可观的魔力量，[r]奥多则只是微弱的魔力量。
+[k]
+
+＠达·芬奇
+公元以后，玛那走向不断减少的命运。[r]结果，二十一世纪的魔术师不得不只靠从生命体汲取的魔力……
+[k]
+
+[communicationCharaFace 0]
+＠达·芬奇
+也就是[#小源:奥多]来实践神秘学了。[r]而[#大源:玛那]为何会减少的问题，这次先暂且不谈。
+[k]
+
+[communicationCharaFace 1]
+＠达·芬奇
+毕竟这个问题与不列颠岛也有关系，[r]想必迟早会成为谈论的主题吧。
+[k]
+
+＠达·芬奇
+总而言之，神代充满了大源的魔力。[r]不只有量，连质也截然不同。
+[k]
+
+＠达·芬奇
+公元以后[#大源:玛那]被称为[#第五架空元素:以太]，[r]属于人工魔力。
+[k]
+
+＠达·芬奇
+而公元前，在人类文明还未发达时的魔力[r]被这样称呼，
+[k]
+
+[communicationCharaFace 5]
+＠达·芬奇
+真以太。孕育行星的力量，构成天体的物质。[r]叫第五真实元素。
+[k]
+
+＠达·芬奇
+而这个真以太才是令神明成立的根源。
+[k]
+
+[communicationCharaFace 0]
+＠达·芬奇
+统治这个时代的不是人类。[r]而是诸神。替换成自然或是概念应该也可以吧？
+[k]
+
+＠达·芬奇
+天空有神、地上有神、海中有神。[r]爱为神、恨为神、战争与死也是神。
+[k]
+
+[communicationCharaFace 4]
+＠达·芬奇
+自然法则就是诸神施展的权能。
+[k]
+
+＠达·芬奇
+可以说是世界乃诸神所有，[r]也是诸神本身。
+[k]
+
+＠达·芬奇
+虽然这与现代流传于世界各地的传说、信仰和宗教中的神[r]是否为同一种存在的问题，尚诸说纷纭[line 2]
+[k]
+
+[communicationCharaFace 0]
+＠达·芬奇
+至少现代的魔术师们[r]将大多数的传说视为是神代的[#解释]。
+[k]
+
+＠达·芬奇
+诸神确实存在过。[r]但是[line 2]
+[k]
+
+[communicationCharaFace 4]
+＠达·芬奇
+随着人类时代的来临，神也销声匿迹了。
+[k]
+
+[communicationCharaFace 0]
+＠达·芬奇
+这个销声匿迹被分为三个阶段，[r]分别是衰退、诀别、契机。
+[k]
+
+＠达·芬奇
+契机是在公元前七世纪左右被观测到的。
+[k]
+
+[communicationCharaFace 4]
+＠达·芬奇
+衰退是在一万四千年前发生了大规模灾害，[r]在那之后，史前神话文明就衰退了。
+[k]
+
+[communicationCharaFace 0]
+＠达·芬奇
+你们身处的公元前2600年就是这种神代的终结、[r]诸神消失的诀别之时。
+[k]
+
+＠达·芬奇
+这点美索不达米亚也不例外。[r]不，虽然美索不达米亚的诸神企图用自己的方法延续神的时代，
+[k]
+
+＠达·芬奇
+但却因一位王而付之一炬。
+[k]
+
+[communicationCharaFace 4]
+＠达·芬奇
+为了维系人类与神而被制作出来的王。[r]神与人的混血。被期待成为天之楔的男人。
+[k]
+
+＠达·芬奇
+[line 3]英雄王吉尔伽美什。
+[k]
+
+[communicationCharaFace 5]
+＠达·芬奇
+然而万万想不到的是，他却走上了与诸神赋予的使命[r]背道相驰的道路。也就是，脱离了神明。
+[k]
+
+[communicationCharaFace 0]
+＠达·芬奇
+由于吉尔伽美什的反抗，美索不达米亚的诸神[r]逐渐失去了力量，从地上失去了踪影。
+[k]
+
+＠达·芬奇
+哪怕在那个时代，诸神也已经不见了。[r]结束了使命，从这个世界消失了。
+[k]
+
+＠达·芬奇
+回到了不在此处的高次元，作为虚幻的神灵，[r]继续守望着世界……这是现在的定论。
+[k]
+
+＠达·芬奇
+主神们从地上消失，[r]只剩他们的余韵。
+[k]
+
+＠达·芬奇
+而且这些余韵也会在1000年后完全淡去，[r]终将在人们意识中被替换成“传说”。
+[k]
+
+[communicationCharaFace 1]
+＠达·芬奇
+所以我还以为这次不会遇上“活生生”的神，[r]没想到，居然会遇到女神同盟。
+[k]
+
+＠达·芬奇
+从刚才的资料来看，[r]女神伊什塔尔似乎拥有无限接近“本体”的灵基。
+[k]
+
+[communicationCharaFace 4]
+＠达·芬奇
+……神的“权能”是凌驾魔术的神秘。[r]甚至可以说是全知全能的体现。
+[k]
+
+[communicationCharaFace 0]
+＠达·芬奇
+虽然还不清楚那个时代的“敌人”究竟是什么来历，[r]但女神是敌对势力这点可以确定。
+[k]
+
+[communicationCharaFace 5]
+＠达·芬奇
+千万要小心，[%1]。
+[k]
+
+＠达·芬奇
+尽管很清楚事情不可能那么顺利，[r]但务必不要过于逞强哦！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[bgmStop BGM_EVENT_1 0.5]
+[communicationCharaClear]
+[wait communicationChara]
+[wt 0.4]
+[scene 10500 0]
+[fadein black 0.5]
+[wait fade]
+[se ad29]
+[flashin once 0.7 0.5 FFFFFFBF 00000000]
+[wait flash]
+[wt 1.5]
+[fadeout black 0.5]
+[wait fade]
+[charaSet C 3006001 1 弁庆3]
+[wt 2.0]
+[scene 33202]
+
+[fadein black 1]
+[wait fade]
+[bgm BGM_EVENT_7 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+
+＠祭祀长西杜丽
+各位，都拿到麦酒了吗？[r][%1]和玛修还未成年，所以给你们果汁。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠安娜
+……不好意思。我喝水就行了……[r]麦酒太苦了……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠祭祀长西杜丽
+哎呀，是我考虑不周到。[r]因为听说安娜也是从者，所以下意识就给你酒了。
+[k]
+
+＠祭祀长西杜丽
+那这边的牛奶如何？[r]加了蜂蜜，很甜哦。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠安娜
+……虽然我不太爱喝甜的……[r]嗯，[charaMoveReturn D 0,-5 0.4]那我不客气了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠祭祀长西杜丽
+那么……为了庆祝[%1]到乌鲁克赴任，[r]我们在此举办一个小小的欢迎宴席吧。
+[k]
+
+
+＠祭祀长西杜丽
+准备好了吗？　那么各位……干杯～！[r]（[se ad217]咕嘟咕嘟咕嘟。）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠梅林
+干杯～！（[se ad217]咕嘟[charaMoveReturn B 0,-10 0.4]咕嘟咕嘟[charaMoveReturn B 0,-10 0.4]）[r]哎呀，真好喝！　耗费半天大扫除后喝这个更赞了！
+[k]
+
+＠梅林
+劳动果然是最好的下酒菜！[r]我就是为了这一杯酒而活着的！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠安娜
+……好喝……我不太爱喝甜的……
+[k]
+
+＠安娜
+……梅林居然独占了角落房间，真卑鄙……[r]看来还是要看准破绽杀他一次比较好……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛修
+干杯～！[r]前辈，这鱼烧得超好吃！
+[k]
+
+＠玛修
+虽然好像是河鱼，但是没有土腥味，[r]鱼肉十分肥厚[line 3]
+[k]
+
+＠玛修
+啊啊，这羊肉也是美味多汁！
+[k]
+
+＠玛修
+明明没有放香辛料，到底是怎么调味的，[r]真是充满神秘，乐趣无穷啊！
+[k]
+
+？1：你好像很开心呀，玛修。
+
+？！
+
+[charaFace A 13]
+＠玛修
+嗯！　这正可谓，
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[messageOff]
+[wipeout rightToLeft 0.7 1]
+[wait wipe]
+[charaSet F 98106700 1 弁庆]
+[charaSet G 98106600 1 弁庆2]
+[wt 0.1]
+[wipein leftToRight 0.7 1]
+[wait wipe]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+
+＠牛若丸
+萍水相逢也是缘吧。[r][%1]阁下，[charaMoveReturn H 0,-5 0.2]我敬您一杯。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk off]
+[charaDepth F 0]
+[charaDepth G 1]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+
+＠弁庆
+牛若丸大人，这可不行。[r]不能给[%1]倒酒啊。
+[k]
+
+＠弁庆
+另外牛若丸大人喝酒时也请注意节制。[r]您的酒量和您的味觉一样，都不怎么强啊。
+[k]
+
+＠弁庆
+您应该没有忘记几天前，您因为喝醉[r]以至于在乌鲁克桥上犯下的失态吧。哈哈哈。
+[k]
+
+＠弁庆
+没凑够八艘船的六艘跳跃。不，是五艘吧？
+[k]
+
+＠弁庆
+翻筋斗后的大跳跃，收不住势头以至于把桥拆成两半，[r]哈哈哈。真是的，哈哈哈。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠牛若丸
+很好，给我端坐好，然后背对我垂下脑袋，弁庆。[r]我听到你的忠告了。
+[k]
+
+＠牛若丸
+不过你总是爱多嘴，[r]看来是已经意识到自己的死期了吗？
+[k]
+
+[charaFace H 0]
+＠牛若丸
+因为今晚就注定会死所以才尽可能多说两句……[r]你难道打这种主意吗？
+[k]
+
+[charaFace H 1]
+＠牛若丸
+唔，痛快。就让我为你介错吧。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk off]
+[charaTalk depthOff]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaFadein G 0.1 1]
+
+[charaPut A 0,100]
+[charaEffect A bit_bolg_02y]
+[wt 0.1]
+[charaMove F 0,-170 0.1]
+[wait charaMove]
+[se ad171]
+[wt 1.0]
+[charaMove F 0,0 0.7]
+[wait charaMove F]
+[wt 0.7]
+[charaFadein F 0.1 1]
+[charaFace F 2]
+＠弁庆
+哇，千钧一发！　我就是为了这一天才练习的宴席表演，[r]命名为弁庆千钧一发！
+[k]
+
+[charaFace F 1]
+＠弁庆
+哈哈哈，您是否喜欢呢，义经大人！[r]诀窍就是要彻底扮成乌龟的样子，乌龟！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠牛若丸
+该死的，你这家伙居然在这种不痛不痒的地方技艺超群！[r]但引我发笑了，还是原谅你吧！
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+[charaTalk on]
+[charaTalk depthOn]
+[charaSet G 98003000 1 Dr.罗曼]
+[charaSet F 3006001 1 弁庆]
+[charaFadeout H 0.1]
+[wt 0.1]
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛修
+嗯。[r]如您所见，还遇见了可靠的伙伴。
+[k]
+
+？1：确实挺可靠的。
+？2：……应该是很有趣才对吧……
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk G]
+[communicationCharaLoop 98003003 1 5 0 3]
+
+＠Dr.罗曼
+嗯嗯。没想到吉尔伽美什王还召唤了其他从者呢。
+[k]
+
+
+[communicationCharaFace 0]
+＠Dr.罗曼
+但这样就合理了。[r]魔兽战线之所以能维持住也能理解了。
+[k]
+
+＠Dr.罗曼
+负责击退盘踞在乌鲁克周边的魔兽们的，[r]是Rider的牛若丸和Lancer的武藏坊弁庆。
+[k]
+
+＠Dr.罗曼
+而被任命去指挥魔兽战线的，[r]又是谁呢[line 3]
+[k]
+
+[messageOff]
+[communicationCharaClear]
+[wait communicationChara]
+[wipeout rightToLeft 0.7 1]
+[wait wipe]
+[charaSet C 3009000 1 列奥尼达]
+[wt 0.1]
+[wipein leftToRight 0.7 1]
+[wait wipe]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+
+＠列奥尼达
+西杜丽阁下，我只需补充营养就够了！[r]品尝美酒要等将魔兽们全部消灭以后再说！
+[k]
+
+＠列奥尼达
+因为本人列奥尼达至今仍心系战线！[r]与连日作战的乌鲁克士兵一样！
+[k]
+
+＠列奥尼达
+但是，睡眠还是需要的。[r]肉体需要的是能量，
+[k]
+
+＠列奥尼达
+而头脑却需要糖分和睡眠。因为在战斗过程中，[r]我等士兵一直不停做惊人的计算。
+[k]
+
+＠列奥尼达
+战斗对头脑造成的负担媲美四天份的税金计算。[r]战士就是数学家。
+[k]
+
+＠列奥尼达
+所以从体感上来说，参加约两小时的战斗后，[r]就必须得！　小睡十五分钟才行！
+[k]
+
+＠列奥尼达
+话虽如此……但那些年轻士兵真让人没办法，[r]在魔兽群中能果断入睡果断清醒的就只有我一人……
+[k]
+
+＠列奥尼达
+累了就睡！　然后觉得啊，糟了，的时候，[r]就马上醒来，把枪头捅进眼前的魔兽嘴里！
+[k]
+
+＠列奥尼达
+在斯巴达，这可是一开始就被教会的事……[r]但看来战斗到死这种事对乌鲁克的士兵太难了。
+[k]
+
+＠列奥尼达
+还问我什么如果战斗到死，不就没办法击退敌军了吗。[r]这不只是在浪费年轻的生命而已吗。
+[k]
+
+＠列奥尼达
+听好了。我认为让我谈诀窍的话，[r]那就是『在赢之前不能输』，这就是据点防卫的诀窍！
+[k]
+
+＠列奥尼达
+唔咿～[charaMoveReturn C 0,-10 0.4]嗝。[r]（[se ad217]咕嘟[charaMoveReturn C 0,-10 0.4]咕嘟咕嘟。）
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠祭祀长西杜丽
+什么[line 3]！[r]到底是谁，给列奥尼达将军的杯里添酒的人！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+
+＠牛若丸
+谁知道啊？　毕竟是冒失的列奥尼达，[r]应该是他自己搞错倒进杯里的吧？
+[k]
+
+[charaFace H 1]
+＠牛若丸
+不管怎么说，这对列奥尼达也是一帖良药。[r]毕竟这人也没有像自己说的那样充分休息。
+[k]
+
+＠牛若丸
+夜晚魔兽们的活动也会较平静。[r]至少今晚让他稍微放松一点吧。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠祭祀长西杜丽
+这……这样啊……也是……[r]既然牛若丸大人这么说了，那好吧……
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+[charaFadeout E 0.1]
+[wt 0.2]
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+[charaTalk G]
+[communicationCharaLoop 98003003 1 5 0 3]
+
+
+＠Dr.罗曼
+唔。虽然只旁听了一些对话内容，[r]但从对话中基本可以判断他们的力量关系。
+[k]
+
+[communicationCharaFace 0]
+＠Dr.罗曼
+迄今为止统帅英灵们的是牛若丸吧？[r]毕竟梅林会回避这种麻烦事。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[bgmStop BGM_EVENT_7 0.3]
+[wt 0.4]
+[bgm BGM_EVENT_2 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠牛若丸
+您是……罗曼阁下吧。[r]现在我确实是英灵们的代表。
+[k]
+
+[charaFace H 4]
+＠牛若丸
+我等是被这片土地的王召唤而来的。[r]也不清楚你们迦勒底的事。
+[k]
+
+＠牛若丸
+说不定，您那边也会有另一个与我不同的我，[r]但请不要将我们混为一谈。
+[k]
+
+[charaFace H 5]
+＠牛若丸
+与我、弁庆，以及列奥尼达[r]缔结契约的是吉尔伽美什王。
+[k]
+
+＠牛若丸
+如果有朝一日要将那位王与[%1]阁下放在天平上衡量，[r]我会毫不犹豫地选择王。
+[k]
+
+＠牛若丸
+但是[line 3]
+[k]
+
+[charaFace H 1]
+＠牛若丸
+但是，在守护这个时代、这座城市的问题上，[r]我们的目的是一致的。
+[k]
+
+＠牛若丸
+从遥远的世界造访这片灾厄之地的[r]人类最后御主，[%1]。
+[k]
+
+＠牛若丸
+倘若连您这份气魄都不领情，还配当什么英灵。
+[k]
+
+＠牛若丸
+我们会在自己的容许范围内助您一臂之力。
+[k]
+
+？1：[line 3]谢谢你，牛若丸。
+
+[charaFace H 0]
+＠牛若丸
+无需道谢。[r]这是身为英灵的义务。
+[k]
+
+？2：[line 3]初次见面，牛若丸。
+
+[charaFace H 3]
+＠牛若丸
+……初次见面啊。[r]也就是说那个叫迦勒底的地方没有我吧。
+[k]
+
+[charaFace H 4]
+＠牛若丸
+…………莫名觉得有些不甘心。[r]难道在你们的时代，我没有那么有名吗……
+[k]
+
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk G]
+[communicationCharaLoop 98003003 1 5 0 0]
+
+
+＠Dr.罗曼
+……嗯，太好了。[r]虽然作法不同，但我们是拥有相同目标的同志吧。
+[k]
+
+＠Dr.罗曼
+但是那个……我可以提一个问题吗？[r]召唤你们的是吉尔伽美什王吧？
+[k]
+
+[bgmStop BGM_EVENT_2 0.7]
+＠Dr.罗曼
+那提供维持你们魔力的人，[r]只有他一个人吗？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[bgm BGM_EVENT_11 0.1]
+
+＠弁庆
+正是。继梅林殿下之后，[r]我等七名英灵都是由吉尔伽美什王召唤到这片土地上来的。
+[k]
+
+＠弁庆
+……虽然现在已经变成四名了，[r]不过这个问题暂且搁置一边吧。
+[k]
+
+＠弁庆
+我等是在被召唤时，[r]由吉尔伽美什王的魔力构成了灵基，
+[k]
+
+＠弁庆
+但那之后的魔力维持都是由各自自行承担的。[r]就像人一样进食、睡觉、自主生成魔力。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk G]
+[communicationCharaLoop 98003003 1 5 0 5]
+
+
+＠Dr.罗曼
+……也就是说，你们获得肉体了吧？[r]唔，那我就能理解了。
+[k]
+
+＠Dr.罗曼
+毕竟不可能只靠一人[r]维持四名英灵的灵基啊。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+
+＠梅林
+嗯。他这件事确实非常胡来。[r]看来是我不该不小心提到圣杯战争的事呢。
+[k]
+
+＠梅林
+光是叫我出来，他就已经快要枯竭而死了，[r]居然还说什么“那么本王再叫七个人出来吧”这种话。
+[k]
+
+＠梅林
+吉尔伽美什王没上前线的理由，也是因为……[r]当时的魔力消费还没有回复。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠列奥尼达
+好像是这样。听说把我们叫出来之前，[r]他连敌人是什么都还不清楚。
+[k]
+
+＠列奥尼达
+北部的都市遭到魔兽的袭击，[r]各地发生多种异变，库撒市一夜之间就被消灭了。
+[k]
+
+＠列奥尼达
+这时，吉尔伽美什王说他“看到”了未来。[r]看到了乌鲁克化为乌有、被吞入地狱的未来。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+……是吉尔伽美什王的千里眼吧。[r]所以王才会如此胡来地召唤英灵……
+[k]
+
+＠玛修
+王为了应对各种事态的发生，[r]不只需要一个，而是复数英灵……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFadein A 0.1 2]
+
+＠列奥尼达
+没错。真是卓越的分析能力。[r]玛修·基列莱特……可以称您为玛修阁下吗？
+[k]
+
+[charaFace A 3]
+＠玛修
+啊，好，我是玛修·基列莱特。[r]虽然是个亚从者，还请您多多指教！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFadein C 0.1 1]
+
+＠列奥尼达
+不，我才应该请您多指教。[r]那我们沿着时间线再整理一下吧。
+[k]
+
+＠列奥尼达
+当这个时代成为特异点，人理被烧却之后，[r]吉尔伽美什王召唤了我等。
+[k]
+
+＠列奥尼达
+从那时到现在整整半年。乌鲁克如你所见，[r]重生成为一座卓越的战斗都市。
+[k]
+
+＠列奥尼达
+在要塞都市中栽培谷物、训练士兵、[r]大兴土木[line 3]
+[k]
+
+＠列奥尼达
+作为应对灾害的紧急手段，导入了货币制度，[r]不断抵抗来路不明的敌人。
+[k]
+
+？1：……原来是这样……
+？2：好像很厉害呢……
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+我也这么认为……虽然美国的时候群众也在战斗，[r]但那是在一度遭到彻底毁灭后的奋起之战。
+[k]
+
+＠玛修
+而这乌鲁克好像截然相反。是为了[r]不让自己的世界遭到破坏，至今还在拼死奋战[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠梅林
+这个问题嘛，是因为时机选得好。
+[k]
+
+＠梅林
+倘若美国处于更晚一点的时代，[r]应该就会与凯尔特军队正面交锋了吧。
+[k]
+
+＠梅林
+对乌鲁克市来说，幸运的是，[r]吉尔伽美什王已经“成长”并回来了。
+[k]
+
+＠梅林
+结束了对不老不死探索的他，[r]在精神方面发生了一些变化。
+[k]
+
+？1：对了。说到对不老不死的探索……
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+指成为探索契机的王的好友，恩奇都吧。[r]发生了太多事，我都把这给忘了……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：那个恩奇都究竟是何方神圣？
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠祭祀长西杜丽
+……是吗。[r]各位已经遇到过那位恩奇都了啊。
+[k]
+
+＠祭祀长西杜丽
+吉尔伽美什王的友人，也是与王对等的勇者。[r]如今却成了人类的敌人。
+[k]
+
+＠祭祀长西杜丽
+……但是，我们却不认为那是恩奇都。[r]乌鲁克的百姓认识以前的恩奇都。
+[k]
+
+＠祭祀长西杜丽
+勇于劝戒吉尔伽美什王，[r]让注定到死都是独自一人的王体会到了与人欢谈的喜悦。
+[k]
+
+＠祭祀长西杜丽
+恩奇都虽然很顽固地将自己视为道具，严于律己，[r]但在我看来，他只是个温柔善良的人。
+[k]
+
+＠祭祀长西杜丽
+……这样的恩奇都是不可能露出那种邪恶笑容的。
+[k]
+
+＠祭祀长西杜丽
+现在威胁着苏美尔的那个人，[r]一定是顶着恩奇都之名的冒牌货……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk G]
+[communicationCharaLoop 98003003 1 5 0 5]
+
+＠Dr.罗曼
+……冒牌货啊。那恩奇都果然如传言所说的，[r]早已经死了吗？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+
+＠祭祀长西杜丽
+……对。是在王的看护下死去的，[r]遗体被埋葬在了冥界。
+[k]
+
+＠祭祀长西杜丽
+……现在想来，我从未见过[r]像他那样美丽而又悲伤的人了。
+[k]
+
+＠祭祀长西杜丽
+虽说是由诸神制作的人偶，但他却在得到心之后，[r]连人带心都被粉碎了……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠玛修
+明明得到了心，却连心一起粉碎了……[r]这话究竟是什么……
+[k]
+
+[charaFace A 0]
+＠玛修
+……不，现在比起我自己，[r]更重要的是吉尔伽美什王。
+[k]
+
+＠玛修
+吉尔伽美什王知道那个恩奇都的事吗？
+[k]
+
+＠玛修
+……那个。[r]知道逝去朋友的冒牌货成了敌人这件事吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠梅林
+嗯，当然知道。[r]虽说王一直待在神塔里，并没有直接见过面。
+[k]
+
+[charaFace B 4]
+＠梅林
+但他的反应却极为平淡。
+[k]
+
+[charaFace B 0]
+＠梅林
+“出现了冒名恩奇都的人？”[r]“这样啊。算了，这种事也并非不可能。”
+[k]
+
+[charaFace B 4]
+＠梅林
+嘴里说的只有这些话而已。[r]既没有震怒，也没有悲伤……
+[k]
+
+＠梅林
+那个反应究竟是什么意思呢？[r]虽说我在人界居住的时间也挺久了，但依然无法琢磨透那个反应。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+
+＠祭祀长西杜丽
+……说得对。[r]也不像是为了我们着想才忍着的样子。
+[k]
+
+[charaFadeout E 0.1]
+[bgmStop BGM_EVENT_11 0.3]
+[wt 0.4]
+[bgm BGM_EVENT_2 0.1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠梅林
+哈哈哈！[r]就算天地逆转，他也不会替别人着想啦！
+[k]
+
+[charaFace B 0]
+＠梅林
+不过嘛，不管吉尔伽美什王的心境如何，[r]我还是很庆幸他能冷静应对。
+[k]
+
+＠梅林
+乌鲁克之所以能勉强存活下来，[r]都是多亏了吉尔伽美什王完成了如此繁重的工作。
+[k]
+
+＠梅林
+倘若他抛弃了贤王的立场，作为英雄王跑到外头的话，[r]乌鲁克就会毁灭。这种结果我也很想避免。
+[k]
+
+[charaFace B 3]
+＠梅林
+毕竟要是乌鲁克毁灭的话，[r]就尝不到麦酒，也去不了娼馆啦。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaSet C 98002000 1 芙芙]
+[charaTalk C]
+[charaFadein C 0.1 1]
+
+＠芙芙
+芙，芙呜！
+[k]
+
+？1：……我明白了。
+？2：……但是，一定要揭露他的真面目才行。
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠梅林
+嗯。我也没让你忘记一切。[r]我们一定要查出那个少年究竟是何人。
+[k]
+
+＠梅林
+但那都是明天之后的事了。[r]从灵子转移到现在，你们根本没好好休息过吧？
+[k]
+
+＠梅林
+今晚就好好休息身体吧。[r]不管是有话没说完，还是新的生活，都明天再说。
+[k]
+
+＠梅林
+我还有事要调查，会离开一阵子，[r]这期间有事就拜托西杜丽阁下或是牛若丸他们吧。
+[k]
+
+＠梅林
+[line 3]看吧，连安娜也已经睡着了。[r]她也拜托你们了哦。
+[k]
+
+＠梅林
+虽然她说自己讨厌人类，[r]但并没有到憎恨的程度。
+[k]
+
+＠梅林
+反倒是因为害怕人类，才会想保持距离。[r]你应该能理解我的意思吧？
+[k]
+
+？1：害怕人类……？
+？2：……我明白了。交给我吧。
+
+？！
+
+[charaFace B 3]
+＠梅林
+好。那么我就先走一步告辞啦。[r]还有个很熟的姑娘正在等我呢。
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[se ad60]
+[seVolume ad60 0 0.4]
+[wt 1.5]
+[seStop ad60 1.0]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠玛修
+梅林先生说得没错，前辈。[r]您的脸色不太好看。身体指数也很低。
+[k]
+
+＠玛修
+虽说有些不舍，但还是向牛若丸他们打个招呼，[r]先去就寝休息吧。
+[k]
+
+？1：说得对。晚安，玛修。
+
+？！
+
+＠玛修
+嗯，晚安，御主。[r]明天在这迦勒底大使馆的大厅再见吧！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

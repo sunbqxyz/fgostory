@@ -1,0 +1,185 @@
+
+
+
+＄94-03-66-06-1-0
+
+[soundStopAll]
+
+[charaSet A 98094000 1 狮子王]
+[charaSet B 8001002 1 玛修]
+[charaSet C 98003000 1 Dr.罗曼]
+[charaSet H 98115000 1 特效用]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth H 2]
+
+
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout noise 0.1 1.0]
+[wait wipe]
+
+[effect bit_sepia01]
+[pictureFrame cut063_cinema]
+
+[scene 29700]
+
+[wt 0.3]
+
+[se ad31]
+[wt 0.2]
+[seStop ad31]
+
+[se ad31]
+[wt 0.3]
+[seStop ad31]
+
+[bgm BGM_BATTLE_5 0.1]
+
+[se ad31]
+[wt 0.5]
+
+[wipein noise 2.0 1.0]
+[seStop ad31 1.0]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 0,-50]
+[wt 0.4]
+
+＠狮子王
+不作恶，触恶却仍不知恶，[r]永不厌倦行善，且没有行善自觉的人们。
+[k]
+
+＠狮子王
+搜集这些纯洁的灵魂，固定，并做成资料。
+[k]
+
+＠狮子王
+今后，不管经历多么漫长的时间，[r]他们都会作为价值不变之物，永远收存于我的枪中。
+[k]
+
+＠狮子王
+这[line 3]有什么错吗？我的伟业，全是为了你们人类。[r]我的伟业，全是为了[#人类:你们]。
+[k]
+
+？1：这只不过是标本啊！
+
+？！
+
+＠狮子王
+[line 3]你这样认为吗？
+[k]
+
+＠狮子王
+你是这样认为的吗，盾之骑士啊。
+[k]
+
+＠狮子王
+人虽有寿命，[r]但在其中寿命更为限定之人啊……
+[k]
+
+＠狮子王
+玛修·基列莱特。[r]若是你，应该能明白我的理想吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[communicationCharaLoop 98003003 0,-50 5 0 2]
+
+＠Dr.罗曼
+……！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-50]
+
+＠玛修
+这……
+[k]
+
+＠玛修
+…………这个。
+[k]
+
+？1：玛修……？
+？2：难道……你知道了……？
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[communicationCharaLoop 98003003 0,-50 5 0 2]
+
+＠Dr.罗曼
+[%1]，不用再说了！[r]狮子王的精神构造已经完全神灵化了！
+[k]
+
+＠Dr.罗曼
+她已经失去作为人类的价值观！[r]靠对话是解决不了的！
+[k]
+
+＠Dr.罗曼
+用战斗，破坏那把圣枪！[r]这样一来这个时代就能恢复原貌！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠狮子王
+[line 3]真性急啊，罗玛尼·阿其曼。[r]很有你的作风。但是我的结论也一样。
+[k]
+
+＠狮子王
+我已经回答了问题。[r]若要否定我，那我也会否定你们。
+[k]
+
+＠狮子王
+终将逝去之物。早已逝去之物。[r]感叹生命有限的人们啊。
+[k]
+
+＠狮子王
+知晓汝等的极限，接受我的庇护吧。
+[k]
+
+＠狮子王
+盾之骑士啊。[r]想要保护生命[line 3]就不要与我为敌。
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[communicationCharaLoop 98003003 0,-50 5 0 2]
+
+＠Dr.罗曼
+要来了……！[r][%1]，准备战斗！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_5 0.5]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

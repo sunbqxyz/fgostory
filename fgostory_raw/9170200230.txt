@@ -1,0 +1,947 @@
+
+＄91-70-20-02-3-0
+
+
+
+[soundStopAll]
+
+[charaSet A 7020001 1 库·丘林·Alter]
+[charaSet B 5005001 1 安徒生]
+[charaSet C 4013001 1 梅芙]
+[charaSet D 3004001 1 迦尔纳]
+[charaSet E 1002001 1 阿尔托莉雅·Alter]
+[charaSet F 7001001 1 赫拉克勒斯]
+
+
+
+[cameraFilter gray]
+
+[scene 27800]
+
+[bgm BGM_EVENT_41 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+
+
+＠
+每呼吸一次，就会一阵钝痛。[r]思维模糊不定。甚至不清楚自己该做什么。
+[k]
+
+＠
+所以，只需一心执着于咬碎眼前的敌人即可。
+[k]
+
+[bgmStop BGM_EVENT_41 0.7]
+
+＠
+战士原本就是这样的存在。[r]更不用说狂战士了。
+[k]
+
+[cameraFilter normal]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_3 0.1]
+
+
+＠迦尔纳
+真正的英雄[line 3]用眼睛杀人！
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_41]
+[charaScale D 1.1]
+[se ad73]
+[wt 0.3]
+[fowardEffectStop bit_talk_41]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[charaScale D 1.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠库·丘林·Alter
+嘁……！
+[k]
+
+[messageOff]
+
+[se ad7]
+[charaMoveReturn A 0,5 0.2]
+[charaMoveScale A 0.95 0.2]
+[wt 0.2]
+[charaFadeout A 0.4]
+
+[se ad171]
+[fowardEffect bit_talk_ichimon01wh]
+[wt 0.2]
+[se ad98]
+[wt 0.7]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+[charaEffect C bit_talk_36]
+[se ad39]
+[wt 1.5]
+
+[fadeout white 1.0]
+[wait fade]
+[charaFadeout C 0.1]
+[charaEffectStop C bit_talk_36]
+
+[scene 10001]
+[wt 0.1]
+
+[fadein white 0.1]
+[wait fade]
+
+＠梅芙
+来吧！[r]『[#我心爱的钢铁战车:Chariot My Love]』！
+[k]
+
+[se adm32]
+
+＠库·丘林·Alter
+别[messageShake 0.05 5 5 0.5]小看我，梅芙！
+[k]
+
+[se ad34]
+
+[seStop adm32 0.1]
+[se ad211]
+
+[wt 0.5]
+
+[messageOff]
+[fadeout white 0.1]
+[wait fade]
+
+[seStop ad211 0.5]
+[wt 0.5]
+[scene 27800]
+
+[fadein white 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠梅芙
+居然正面挡了下来……！
+[k]
+
+[charaScale A 1.0]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠库·丘林·Alter
+这是我的回礼，迦尔纳。[r][#吃我这招]……！
+[k]
+
+
+[charaFadeout A 0.1]
+[se ad85]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠迦尔纳
+……呜！
+[k]
+
+[messageOff]
+[charaFace D 4]
+
+[se ad34]
+
+[se ad211]
+[charaEffect D bit_talk_14]
+[wt 0.5]
+[seStop ad211 1.5]
+[charaShake D 0.04 4 4 0.7]
+
+[wt 1.5]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠梅芙
+迦尔纳！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[charaEffect D bit_talk_06]
+
+＠迦尔纳
+……看来，只能到此为止了……
+[k]
+
+[messageOff]
+[se ad52]
+[charaSpecialEffect D flashErasure 1 1.7]
+[wait charaSpecialEffect D]
+[charaEffectStop D bit_talk_06]
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠库·丘林·Alter
+露出破绽了吧，梅芙。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠梅芙
+！[r]糟[line 3]
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[wt 0.3]
+
+[charaEffect A bit_talk_36]
+[se ad39]
+[wt 1.5]
+
+＠库·丘林·Alter
+『[#剜穿鏖杀之枪:Gae Bolg]』[line 3]！
+[k]
+
+
+[messageOff]
+[charaEffectStop A bit_talk_36]
+[wipeout rectangleStripRightToLeft 0.2 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[scene 10000]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.1 1]
+[wait wipe]
+
+
+[se ad80]
+[charaEffect C bit_bolg_01]
+[wt 0.5]
+
+[wipeout rectangleStripRightToLeft 0 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[scene 27800]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.2 1]
+[wait wipe]
+
+[charaEffect C bit_talk_14]
+[charaShake C 0.03 3 3 0.7]
+
+[wt 0.7]
+
+[charaEffect C bit_talk_35]
+[se ad466]
+[wt 1.5]
+
+＠梅芙
+嘎，啊……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠库·丘林·Alter
+结束了，一起去死吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+[charaEffect C bit_talk_06]
+
+＠梅芙
+呵，呵呵……好痛啊……[r]没事，我收下啦……
+[k]
+
+[charaFace C 9]
+
+＠梅芙
+这次我输了。但是……还剩三骑，[r]仅靠那种身体，你真的能赢吗？
+[k]
+
+[charaFadeout C 0.1]
+[charaPut C 0,-1200]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠库·丘林·Alter
+少啰嗦。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut C 1]
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠梅芙
+呵呵……[r]那我先走一步……等你啦……
+[k]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+[messageOff]
+[se ad52]
+[charaSpecialEffect C flashErasure 1 1.7]
+[wait charaSpecialEffect C]
+[charaEffectStop C bit_talk_06]
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.3]
+
+[charaShake A 0.05 5 4 0.3]
+[charaFace A 4]
+[fowardEffect bit_talk_35]
+[se ad46]
+[wt 1.0]
+
+[charaMove A 0,-10 0.3]
+[wt 0.2]
+[se ad54]
+[seVolume ad54 0 0.4]
+[wt 0.3]
+
+？1：库·丘林！
+？2：Alter！
+？！
+
+[bgm BGM_EVENT_70 0.1]
+
+＠库·丘林·Alter
+……下一个……去下一个地方……
+[k]
+
+？1：稍微休息一会儿吧，。
+？！
+
+＠库·丘林·Alter
+[FFFFFF]？[-]
+[k]
+
+＠库·丘林·Alter
+……嗯，说得对。[r]你留在这里。
+[k]
+
+＠库·丘林·Alter
+我去……和剩下的三骑……[r]决一胜负。
+[k]
+
+？1：你就那么信不过我吗？
+？！
+
+[charaFace A 0]
+＠库·丘林·Alter
+……不，如果信不过，[r]我早就把你杀了。
+[k]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+＠库·丘林·Alter
+……[r]……
+[k]
+
+
+[bgm BGM_EVENT_11 0.1]
+
+＠库·丘林·Alter
+……迦尔纳说我的存在方式，[r]对你来说是个负担……
+[k]
+
+＠库·丘林·Alter
+恐怕，他说得没错。
+[k]
+
+＠库·丘林·Alter
+无论怎么样，不管发生什么……[r][#独自解决都是我的风格]。
+[k]
+
+
+＠库·丘林·Alter
+同伴、同志、战友……
+[k]
+
+
+＠库·丘林·Alter
+我打从心底觉得，原本可以[r]共同负重的这些存在就是种负担。
+[k]
+
+[charaFace A 4]
+
+＠库·丘林·Alter
+御主，你也一样。
+[k]
+
+
+＠库·丘林·Alter
+就像对你来说，我是个负担一样，[r][#对我来说]，[#你也是负担]。
+[k]
+
+[charaFace A 0]
+
+＠库·丘林·Alter
+所以你就在洞窟内等着。[r]我去做个了结。
+[k]
+
+[messageOff]
+[charaMove A 0,0 0.3]
+[se ad78]
+[seVolume ad78 0 0.2]
+[seStop ad78 0.4]
+[wt 0.8]
+
+[bgmStop BGM_EVENT_11 0.7]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout A 0.1]
+
+[scene 20800]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+？1：说完这些话，他就把我扔在这儿了，
+？2：但我总觉得难以接受……
+？！
+
+＠？？？
+哎呀，怎么。[r]你就是所谓迦勒底的御主吗？
+[k]
+
+[messageOff]
+
+[se ad27]
+[wt 0.7]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+
+[wt 1.5]
+
+？1：安徒生……！？
+？！
+
+
+＠安徒生
+没错。
+[k]
+
+[charaFace B 1]
+
+＠安徒生
+我就是这次圣杯战争中，[bgm BGM_EVENT_2 0.1][r]唯一自主退出的三流从者，安徒生。
+[k]
+
+[charaFace B 0]
+
+＠安徒生
+既然你认识我，那我就不用自我介绍了。[r]然后呢，你在这种地方干什么。
+[k]
+
+
+＠安徒生
+你的从者没有参加圣杯战争吗？
+[k]
+
+？1：虽说是圣杯战争……
+？！
+
+＠安徒生
+确实，和惯例的淘汰赛形式不太一样。
+[k]
+
+＠安徒生
+我们七骑不过是守护圣杯的存在。[r]攻方必须单骑闯过所有人才行。
+[k]
+
+＠安徒生
+不过嘛。像我这样的在不在[r]都不会影响战局。所以我才会在这里旁观。
+[k]
+
+＠安徒生
+再说了，就算打倒再多的人，也会倒在最后一骑那儿吧。[r]面对希腊神话最强的英雄，赫拉克勒斯。
+[k]
+
+？1：赫拉克勒斯……！
+？！
+
+[charaFace B 1]
+
+＠安徒生
+没错。如果说普通从者是发情的猩猩，[r]那他就是饥饿的恐龙。和他战斗未免太蠢了。
+[k]
+
+[charaFace B 0]
+
+＠安徒生
+然后呢。你为什么会在这里？[r]迦勒底的御主。
+[k]
+
+？1：其实……
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[bgmStop BGM_EVENT_2 1.0]
+
+[wt 2.0]
+
+[fadein black 1.0]
+[wait fade]
+
+＠安徒生
+唔。单枪匹马比较好吗。
+[k]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠安徒生
+这话确实很有库·丘林·Alter的风格。
+[k]
+
+＠安徒生
+那家伙原本就很像凯尔特的战士，[r]是个无论敌我，交朋友全凭心情的男人[line 3]
+[k]
+
+
+＠安徒生
+而排除了所有这些要素的存在，[r]就是库·丘林·Alter。
+[k]
+
+[charaFace B 4]
+
+＠安徒生
+他人脆弱是理所当然的，[r]只需自己一个人强韧就行了。
+[k]
+
+＠安徒生
+疏远该保护的对象，[r]不惜自己伤痕累累。
+[k]
+
+[charaFace B 2]
+
+＠安徒生
+简直就是个笑柄！
+[k]
+
+＠安徒生
+因为这样做，[r]才会让被守护方受到伤害啊！
+[k]
+
+[bgmStop BGM_EVENT_11 1.5]
+[charaFace B 0]
+
+
+＠安徒生
+所以说，受到创伤的你，[r]才会蹲在这里吧。
+[k]
+
+？1：原来如此。
+
+＠安徒生
+喂，既然明白了，还不快去。
+[k]
+
+？2：这感情原来是这样啊……
+
+＠安徒生
+懂了吗？[r]懂了的话，你该做的事只有一件。
+[k]
+
+？！
+
+
+[bgm BGM_EVENT_63 0.1]
+
+＠安徒生
+你应该赶快去他的身边。[r]地点是穿过这座森林，向左侧笔直走。
+[k]
+
+＠安徒生
+那里有个洞窟。[r]那就是决战之地。
+[k]
+
+？1：谢谢。
+？！
+
+
+[charaFace B 1]
+＠安徒生
+不要什么口头的谢礼。[r]反正你也不像是能付钱买书的人。
+[k]
+
+＠安徒生
+快去吧。[r]然后，[#履行御主的职责]。
+[k]
+
+＠安徒生
+只要打倒剩下的两骑从者，[r]这个特异点就会立刻消失吧。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+
+[bgmStop BGM_EVENT_63 1.0]
+[charaFadeout B 0.1]
+
+[scene 20210]
+
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_41]
+
+[se ad59]
+[wt 1.0]
+
+[bgm BGM_EVENT_24 0.1]
+
+[se adm24]
+
+[wt 1.0]
+
+[seStop ad59 1.5]
+[effectStop bit_talk_41]
+
+？1：有声音……！
+？！
+
+[voice 700100_0_B100]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠库·丘林·Alter
+杀[line 12]！！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+
+[se ad33]
+[effect bit_talk_kengekiall03]
+[wt 1.0]
+
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.03 3 3 0.4]
+[wt 0.6]
+
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠赫拉克勒斯
+[voice 700100_0_B100]
+[shake 0.05 3 4 1.2]
+[image berserker_language_2][wt 0.7]
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠库·丘林·Alter
+呼，呼，呼……！
+[k]
+
+[charaFace A 0]
+
+＠库·丘林·Alter
+……[r]……
+[k]
+
+[charaFace A 5]
+
+＠库·丘林·Alter
+是御主吗，你……为什么，会在这里。
+[k]
+
+？1：我是来战斗的。
+？2：为了我个人方便。
+？！
+
+[charaFace A 0]
+
+＠库·丘林·Alter
+……嘁。[r]随你的便。
+[k]
+
+？1：彼此彼此。
+？！
+
+[charaFadeout A 0.1]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.4 1]
+[wt 0.4]
+＠阿尔托莉雅·Alter
+[line 3]御主登场了吗。
+[k]
+
+[charaFace E 0]
+
+
+＠阿尔托莉雅·Alter
+但是，为时已晚。[r]攻击无法碰到我。
+[k]
+
+＠阿尔托莉雅·Alter
+是我方Berserker获得了胜利。
+[k]
+
+[charaFadeout E 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠赫拉克勒斯
+[voice 700100_0_B100]
+[shake 0.05 3 4 1.2]
+[image berserker_language_2][wt 0.7]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠库·丘林·Alter
+……呜！
+[k]
+
+
+[messageOff]
+[se ad32]
+[charaEffect A bit_talk_13]
+[charaShake A 0.04 4 4 0.7]
+[wt 0.5]
+
+[charaFace A 2]
+＠库·丘林·Alter
+还没完。[r]还没……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[cameraFilter gray]
+[bgm BGM_EVENT_24 0.4 0.3]
+
+＠
+崩溃的肉体。[r]崩溃的精神。
+[k]
+
+＠
+希腊神话最强的英雄。[r]通过了十二试炼，获得了不死的怪物。
+[k]
+
+＠
+明明已经杀了他好几次了，[r]但每次都能复生，将我破坏。
+[k]
+
+
+＠
+骨头吱嘎作响。[r]身体血肉模糊。
+[k]
+
+＠
+但是，这又怎样。
+[k]
+
+＠
+我来这里是为了胜利，[r]是为了不断胜利下去。
+[k]
+
+＠
+……这里不需要什么御主。[r]本应不需要。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[cameraFilter normal]
+[bgm BGM_EVENT_24 0.3]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠库·丘林·Alter
+嘁……！
+[k]
+
+[messageOff]
+
+？1：回复！
+
+[effect bit_talk_cure]
+[wt 0.2]
+[cueSe Battle bas2]
+[wt 1.0]
+
+？2：强化！
+
+[effect bit_talk_attack_buf]
+[wt 0.2]
+[se bas10]
+[wt 1.0]
+
+？！
+
+[charaFace A 0]
+＠库·丘林·Alter
+感激不尽，但你给我退下。[r]……呆在那边就行了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[cameraFilter gray]
+[bgm BGM_EVENT_24 0.4 0.3]
+
+＠
+[line 3]啊啊，多么可恨。
+[k]
+
+＠
+只要这家伙在这里，[r]我的力量，我的枪的力量就会提升……！
+[k]
+
+[cameraFilter normal]
+[bgm BGM_EVENT_24 0.3]
+
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠阿尔托莉雅·Alter
+[line 3]哦。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+
+[se ad32]
+[effect bit_bolg_03]
+[shake 0.04 4 4 0.7]
+[wt 0.7]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+
+＠阿尔托莉雅·Alter
+没打倒赫拉克勒斯，[r]却还能用枪触碰到我啊。
+[k]
+
+＠阿尔托莉雅·Alter
+……好吧。[r]那我也会拔出剑来。
+[k]
+
+[charaFace E 2]
+
+＠阿尔托莉雅·Alter
+[line 3]我要上了，阿尔斯特的战士。[r]在你的身上烙下圣剑的印记吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠库·丘林·Alter
+我才不要呢。
+[k]
+
+＠库·丘林·Alter
+御主，别发呆了。[r][#要赢哦]。
+[k]
+
+？1：嗯……！
+？！
+
+[charaFace A 2]
+
+＠库·丘林·Alter
+全咒解放，决不手下留情。
+[k]
+
+[messageOff]
+
+
+[se ad632]
+[charaEffect A bit_talk_charge_red]
+[wt 1.5]
+
+
+＠库·丘林·Alter
+[line 3]大开杀戒。[r]『[#噬碎死牙之兽:Curruid Coinchenn]』……！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[seStop ad632]
+[bgmStop BGM_EVENT_24 0.5]
+[wait fade]
+
+[charaEffectStop A bit_talk_charge_red]
+
+[soundStopAll]
+[end]

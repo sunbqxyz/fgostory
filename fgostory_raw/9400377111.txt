@@ -1,0 +1,285 @@
+
+＄94-00-37-71-1-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[charaSet A 8001001 1 玛修]
+[charaSet B 7006000 1 坂田金时]
+[charaSet C 98071000 1 茨木童子]
+[charaSet D 98003003 1 Dr.罗曼]
+
+
+
+[scene 27600]
+
+[fadein black 2]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠茨木童子
+哈哈，哇哈哈哈哈！[r]愉快，愉快！
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠坂田金时
+愉快个屁啊！[r]你的眼神根本没在笑吧！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠茨木童子
+[line 3]唔。[r]不要侮辱吾，吾只是不习惯笑而已。
+[k]
+
+
+
+＠茨木童子
+由衷地笑吗……[r]还是没法做到酒吞那样呢。
+[k]
+
+[messageOff]
+[se ad73]
+[charaSpecialEffect C erasureReverse 1 0.3]
+[wait charaSpecialEffect C]
+[charaFadeout C 0.1]
+
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+又被她逃跑了……
+[k]
+
+＠玛修
+但感觉攻击有作用了。[r]我们应该确实在削减对方的体力。
+[k]
+
+＠玛修
+就这样不要操之过急，继续慎重地战斗吧。
+[k]
+
+？1：还好玛修总是那么冷静。
+
+[charaFace A 3]
+
+＠玛修
+是……是吗？[r]如果真这样就好了。
+[k]
+
+？2：虽然我们也快累趴了……
+
+[charaFace A 13]
+
+＠玛修
+嗯。我们也该好好恢复体力才行呢。
+[k]
+
+？！
+
+＠玛修
+那我们稍微后撤一点露营吧。[r]那个地方和医生的通信应该也已经恢复了。
+[k]
+
+[messageOff]
+[wipeout rightToLeft 1.0 1.2]
+
+
+[bgmStop BGM_EVENT_3 2.0]
+
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+
+[scene 27000]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+
+[wipein leftToRight 1.0 1.2]
+
+[wait wipe]
+
+[wt 0.3]
+
+[seLoop ad31]
+
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 5]
+
+＠Dr.罗曼
+唔唔……明白了，谢谢你们的报告。[r]希望你们不要掉以轻心，继续这么战斗。
+[k]
+
+＠Dr.罗曼
+抱歉哦，门的附近干扰总是特别多，[r]根本无法进行通信或是分析。
+[k]
+
+＠Dr.罗曼
+话说……[%1]。
+[k]
+
+[communicationCharaFace 4]
+
+
+
+＠Dr.罗曼
+玛修的情况如何？[r]那个……我指醉酒程度……（小声）。
+[k]
+
+？1：战斗中还挺正常的。
+
+＠Dr.罗曼
+是吗？　但是……
+[k]
+
+？2：（无言地指指身旁）
+
+？！
+
+[seStop ad31 0.3]
+
+[communicationCharaClear]
+[wait communicationChara]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛修
+饭菜准备好了，前辈！[r]是Golden先生点的黄金饭团。
+[k]
+
+
+＠玛修
+毕竟身在战场，所以做了大家最喜欢的咖喱味！[r]只不过，[charaFace A 0]有点麻烦的是吃起来会让手黏糊糊的……
+[k]
+
+
+[charaFace A 16]
+
+＠玛修
+应对方法只有一种。[r]来，前辈。张嘴～啊～。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[seLoop ad31]
+
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 4]
+
+＠Dr.罗曼
+唔，嗯……还是老样子呢。
+[k]
+
+[communicationCharaFace 3]
+
+＠Dr.罗曼
+根据在门的附近以及战斗中是正常的来看。
+[k]
+
+
+
+＠Dr.罗曼
+是因为在接近危险地方时比较紧张，[r]所以勉强没表现在表面……之类的情况吧……
+[k]
+
+？1：感觉她在战斗中比平时还要强大。
+
+？！
+
+[communicationCharaFace 5]
+
+＠Dr.罗曼
+唔。金时也感到力量涌现。[r]是一样的道理吗……？
+[k]
+
+[seStop ad31 0.3]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠玛修
+前辈……不愿意吃吗？[r]不愿意张口啊～吗……？
+[k]
+
+？1：愿……愿意愿意～！
+？2：抱歉，由于过于感动以至于都忘了！
+？！
+
+[charaFace A 16]
+
+＠玛修
+太好了。来，啊～。
+[k]
+
+＠玛修
+好吃吗？　还有很多哦？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[seLoop ad31]
+
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 5]
+
+＠Dr.罗曼
+反……反正只要不对战斗造成影响就好。
+[k]
+
+＠Dr.罗曼
+虽然不知道是什么原理，[r]但这片区域确实弥漫着可疑的酒气。
+[k]
+
+＠Dr.罗曼
+只要不能解决元凶，[r]这酒气就不会消散吧。
+[k]
+
+＠Dr.罗曼
+只能在当前状况下继续努力了。
+[k]
+
+
+
+＠Dr.罗曼
+……啊，对了对了，我还有一个提案，[r]如果有空的话，希望你们能试一下……
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+
+[seStop ad31 0.3]
+
+[bgmStop BGM_EVENT_2 0.5]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

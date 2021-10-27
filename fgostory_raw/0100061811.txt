@@ -1,0 +1,276 @@
+＄01-00-06-18-1-1
+
+[soundStopAll]
+[bgm BGM_EVENT_1 0.1]
+[charaSet A 8001001 1 玛修]
+[charaSet B 98003000 1 Dr.罗曼]
+[charaSet C 98079000 1 ？？？]
+[charaSet D 6002001 1 咒腕哈桑]
+[charaSet E 6009002 1 静谧哈桑]
+[charaSet F 1012001 1 贝德维尔]
+[charaSet G 5022001 1 三藏]
+[charaSet H 2014000 1 俵藤太]
+
+[scene 29300]
+[fadein black 2.0]
+[wait fade]
+
+[wt 1.0]
+
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr.罗曼
+这里就是亚兹拉尔庙啊……[r]倒是没有什么特殊反应……
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠玛修
+不，医生……[r]这是不在现场就无法感觉到的沉重压力……
+[k]
+
+＠玛修
+没有魔力反应和从者反应，[r]也没有任何声响和生命反应。可是……
+[k]
+
+＠玛修
+可是，禁不住全身颤抖。
+[k]
+
+＠玛修
+不是精神而是灵魂，[r]灵魂在全力拒绝逗留于这座寺庙里……！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠咒腕哈桑
+……我们前进吧，[%1]阁下。[r]前方是连我等都不知晓的初代大人的领域。
+[k]
+
+＠咒腕哈桑
+无法预测会发生什么。[r]请保持最大限度的警戒[line 3]
+[k]
+
+[bgmStop BGM_EVENT_1 0.3]
+[charaFadeout D 0.1]
+[wt 0.1]
+[se ad28]
+[charaPut E -120,0]
+[charaEffect E bit_talk_37]
+[wait charaEffect E bit_talk_37]
+
+[bgm BGM_EVENT_3 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠玛修
+御主！
+[k]
+
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[se ad32]
+[charaFace A 15]
+[charaShake A 0.05 3 3 0.25]
+＠玛修
+呜……！[r]无法观测敌影！
+[k]
+
+＠玛修
+医生，有从者反应吗！？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+什么都没有！[r]那里除了你们以外，没有任何动态反应。
+[k]
+
+＠Dr.罗曼
+不，应该说[line 3]刚才那一瞬间，[r][%1]的反应消失了啊！？
+[k]
+
+＠Dr.罗曼
+玛修明明防御住了攻击，[r]这到底怎么回事……！？
+[k]
+
+＠Dr.罗曼
+根据我这里的观测，[r][%1]已经死了啊！
+[k]
+
+？1：……哎？
+？2：什么意思，好吓人！？
+
+？！
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[bgmStop BGM_EVENT_3 0.7]
+[wt 0.4]
+＠？？？
+[line 3]魔术之徒啊。
+[k]
+
+[charaTalk off]
+[charaFace D 2]
+[charaFadein D 0.1 0]
+[charaFace E 2]
+[charaFadein E 0.1 2]
+[wt 0.2]
+[bgm BGM_EVENT_1 0.1]
+[charaMove D -250,-50 0.5]
+[charaMove E 250,-50 0.5]
+[charaFadeout D 0.4]
+[charaFadeout E 0.4]
+[wt 0.2]
+[se ad54]
+[seStop ad54 0.5]
+＠咒腕哈桑
+在[line 3]！
+[k]
+
+[charaTalk on]
+＠静谧哈桑
+……！
+[k]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠三藏
+喂，怎么了！？[r]两个人忽然伏倒在地！？
+[k]
+
+＠三藏
+还什么都没出现啊！？
+[k]
+
+[charaFadeout G 0.1]
+
+[charaTalk F]
+[charaFace G 2]
+[charaFadein G 0.1 0]
+[charaFace F 8]
+[charaFadein F 0.1 2]
+＠贝德维尔
+……不。请安静，三藏阁下。[r]……已经有人出现在我们的面前了。
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 2]
+＠俵藤太
+……唔。闭嘴吧，三藏。可能的话把呼吸也停了。[r]若被这位攻击，我们可经受不住……
+[k]
+
+＠俵藤太
+这位的武艺已经精湛到在下哪怕再修炼三十……[r]不四十年，这一射是否能射中都是个未知数的境界……
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+＠？？？
+[line 3]魔术之徒啊。[r]以及，早已非人的存在啊。
+[k]
+
+＠？？？
+汝等的声音已经传达。[r]渴望拯救时代的意义，已被吾之剑所认同。
+[k]
+
+＠？？？
+然而[line 3][r]胆敢踏入吾之灵庙者，必须先面对死亡。
+[k]
+
+＠？？？
+作为死者战斗，抢夺生的权利。[r]经此仪式，方能赦免令吾现身之魔。
+[k]
+
+＠？？？
+静谧之翁啊，至此。[r]祭祀之事交由汝。[line 3]完美地完成这仪式吧。
+[k]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[wt 0.1]
+
+[se ad42]
+[charaEffect E bit_talk_06b]
+＠静谧哈桑
+啊[line 3]啊啊，啊啊啊啊！？[r]咿，[charaShake E 0.05 3 3 0.4]不要…………！？
+[k]
+
+[charaFadeout E 0.1]
+[charaEffectStop E bit_talk_06b]
+[wt 0.4]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠贝德维尔
+静谧阁下……！[r]这气息……是意识被劫持了吗……！
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠咒腕哈桑
+初代大人！　若想使用，请务必由我来代替……！[r]对静谧来说负担实在太大了！
+[k]
+
+＠？？？
+愚蠢。斩落你的首级的便是吾之剑。[r]并非能在仪式上使用之物。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaFace E 4]
+[charaFadein E 0.1 1]
+[charaBackEffect E bit_talk_11]
+＠？？？
+静谧之翁的首级，将成为这群人的供品。[r]只需上交天秤一侧即可。
+[k]
+
+？1：你是说让我们杀掉静谧哈桑……！？
+？2：这种事我做不到……！
+
+？！
+
+＠？？？
+不问过程。只看结果。[r]开始死亡之舞吧，静谧之翁啊。
+[k]
+
+[bgmStop BGM_EVENT_1 0.3]
+[wt 0.4]
+[bgm BGM_EVENT_24 0.1]
+
+[charaFace E 5]
+＠？？？
+哪方首级会被晚钟选中[line 3][r]此乃尔等的选择。
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_24 0.9]
+[wait fade]
+[charaBackEffectStop E bit_talk_11]
+[wait charaBackEffect E bit_talk_11]
+[soundStopAll]
+[end]

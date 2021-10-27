@@ -1,0 +1,308 @@
+
+
+
+＄94-04-78-17-3-0
+
+
+[soundStopAll]
+
+
+
+[charaSet A 98001000 1 玛修]
+[charaSet B 25005000 1 旅行者]
+[charaSet C 3043000 1 绘里濑]
+[charaSet D 5025001 1 爱迪生]
+[charaSet E 2016000 1 卫宫·Alter]
+[charaSet F 1098192800 1 玛丽]
+[charaSet G 98025100 1 ？？？]
+
+[scene 47001]
+
+[pictureFrame cut170_gameframe_dark]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[pictureFrame]
+[pictureFrameTop cut170_gameframe_dark]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠玛修
+绘里濑小姐出现在前方100米处！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaPut G 0,-50]
+[se ad42]
+[charaSpecialEffect G appearanceReverse 1 0.7]
+[seStop ad42 1.2]
+[wait charaSpecialEffect G]
+
+＠？？？
+[image berserker_language_2]
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+[wt 0.5]
+[se ad442]
+[wt 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠玛修
+绘里濑小姐面前出现了敌人！[r]这是守卫的埋伏吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠爱迪生
+看起来是这样，但是……有些奇怪呢。[r]以从者而言，那家伙的存在感似乎有些弱……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠卫宫·Alter
+应该是幻影吧。[r]就是没能成为从者的存在。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+＠绘里濑
+意思是用这种水平就能对付我了吗？
+[k]
+
+[charaFace C 13]
+＠绘里濑
+还是说……因为[#对象是我]，所以才被吸引？[r]邪灵凭依体会引诱来灵体吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+＠玛修
+邪灵凭依体……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-50]
+＠绘里濑
+这是不祥之力！
+[k]
+
+[messageOff]
+[wt 0.1]
+[effect bit_talk_v_slash01]
+[se ad471]
+[charaFadeout C 0.1]
+
+[wt 0.7]
+[seStop ad471 0.5]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+[wt 0.1]
+[charaShake G 0.05 3 3 0.4]
+[wt 0.5]
+
+＠？？？
+[image berserker_language_2]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 1.0]
+[se ad42]
+[charaSpecialEffect G enemyErasure 1 1.5]
+[wt 0.5]
+[seStop ad42 1.0]
+[wait charaSpecialEffect G]
+[charaFadeout G 0.1]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠玛修
+好强……！[bgm BGM_EVENT_62 0.1][r]绘里濑小姐轻易击败了影从者！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+＠玛丽
+就用这种诀窍向终点冲刺吧。[r]不过山顶是有点来历的神域……
+[k]
+
+＠玛丽
+那里到底有什么呢？[r]比方说埋藏着宝物之类的……？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 0,-50]
+＠绘里濑
+不，玛丽王后。那里并没有您眼中的宝物。[r]而且……您应该知道才对。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 0,-50]
+＠玛丽
+我？　应该知道什么？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+＠绘里濑
+真可怜。落入迦勒底之手的您已经失去了。[r]失去了意志、记忆、霸气、尊严。
+[k]
+
+[charaFace C 5]
+＠绘里濑
+但我不一样。我还有意志，和力量。虽然是不祥之力。[r]但是我仍能战斗，哪怕孤身一人。
+[k]
+
+＠绘里濑
+我一定会夺回重要的东西。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.6 1.0]
+[bgm BGM_EVENT_62 0.6 0.5]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[scene 95900]
+[wt 1.0]
+
+[wipein rectangleStripUpToDown 0.6 1.0]
+[bgm BGM_EVENT_62 0.6 1.0]
+[wait wipe]
+[wt 0.4]
+
+＠绘里濑
+我的伙伴应该就在那里。
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.6 1.0]
+[bgm BGM_EVENT_62 0.6 0.5]
+[wait wipe]
+
+[scene 47001]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.6 1.0]
+[bgm BGM_EVENT_62 0.6 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 0,-50]
+＠旅行者
+伙伴……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+＠绘里濑
+来吧，[%1]。游戏继续。[r]掷骰子吧。
+[k]
+
+？1：我倒是没意见啦……
+？2：你不是还有话想说吗？
+
+？！
+
+[charaFace C 2]
+
+＠绘里濑
+反正也没用。[r]来，赶紧继续游戏吧！
+[k]
+
+？1：……明白了。
+？2：旅行者，拜托了。
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-50]
+＠旅行者
+嗯。
+[k]
+
+[messageOff]
+[maskout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

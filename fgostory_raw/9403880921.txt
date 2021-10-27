@@ -1,0 +1,176 @@
+
+
+
+＄94-03-88-09-2-1
+
+[soundStopAll]
+
+[charaSet A 7026000 1 茶茶]
+[charaSet B 11007002 1 魔王信长]
+[charaSet C 1027000 1 冲田总司]
+[charaSet D 10007001 1 冲田Alter]
+[charaSet E 3038000 1 长尾景虎]
+[charaSet F 98001000 1 玛修]
+
+[charaSet H 98115000 1 炼狱剑]
+
+
+
+
+
+
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66700]
+[branch lblConf]
+[label lblNotClear]
+[scene 60300]
+[label lblConf]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠茶茶
+哎，那之后的事挺麻烦的吧。
+[k]
+
+＠茶茶
+茶茶一直在野兽公园玩耍，[r]完全没有意识到呢。
+[k]
+
+[charaFace A 0]
+＠茶茶
+啊，这是特产的阿塔兰饼。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠魔王信长
+居然卖这种廉价的土特产……
+[k]
+
+[charaFace B 19]
+＠魔王信长
+不过我还奇怪怎么没见到你的人影，[r]没想到你居然在我都进不去的公园里愉快地玩耍。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠茶茶
+反正只要冲田亲平安无事，一切就算万事大吉嘛！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠冲田总司
+饶了我吧，下次别在特异点迷路了啦，我的Alter。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠冲田Alter
+但是，我很高兴大家来接我。开心。
+[k]
+
+？1：还好找到你了。
+
+＠冲田Alter
+下次我会认真调查目的地之后制作旅行指南。
+[k]
+
+？2：没想到炼狱居然自带GPS……
+
+＠H：炼狱剑
+喂，别说了，自带GPS的魔剑什么的也太不严肃了吧。
+[k]
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 21]
+[charaFadein B 0.1 1]
+＠魔王信长
+哎哟哟，真是个给人添麻烦的箱子呢。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+＠长尾景虎
+小小的箱子居然能展开如此巨大的世界，[r]那是何等可怕的箱子啊。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 0.6]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad59]
+[seVolume ad59 0 0.1]
+[seVolume ad59 0.8 1.0]
+[wt 1.0]
+[seStop ad59]
+
+[se ad8]
+[wt 0.4]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.4 50,0]
+[charaMove F 1 0.4]
+[wt 0.5]
+[bgm BGM_EVENT_27 0.1]
+
+＠玛修
+不……不好了！　这次是留在那个箱子里的森先生[r]生成了一个聚集了所有Berserker的特异点！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 20]
+[charaFadein B 0.1 1]
+
+＠魔王信长
+哇[messageShake 0.05 5 5 0.4]哈哈哈哈哈哈！　别再搞这种事了啦！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_27 2.0]
+[wait fade]
+[soundStopAll]
+[end]
+

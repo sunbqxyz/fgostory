@@ -1,0 +1,251 @@
+
+
+
+
+
+＄03-00-04-04-1-0
+
+[soundStopAll]
+[skip false]
+
+[charaSet A 8001410 1 玛修]
+[charaSet B 1019001 1 罗摩]
+[charaSet C 98115300 1 福尔摩斯]
+[charaSet D 3004001 1 迦尔纳]
+[charaSet E 98002000 1 芙芙]
+[charaSet F 3031001 1 枪兵193]
+[charaSet G 1098124510 1 达·芬奇]
+[charaSet J 5009000 1 特效用dummy]
+
+[scene 10000]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad761]
+[seVolume ad761 0 0.6]
+[effect bit_talk_yuga_clock_01]
+[wt 6.5]
+
+[fadeout black 1.0]
+[seStop ad761 1.0]
+[wait fade]
+[effectStop bit_talk_yuga_clock_01]
+[effectDestroy bit_talk_yuga_clock_01]
+
+[scene 27710]
+[wt 0.5]
+
+[skip true]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+爱夏小姐告诉我们的山就在这附近吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠罗摩
+乍一看…………没有呢。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+我们这边也没能检测到从者反应。[r]你们那边有什么感觉。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠迦尔纳
+似乎能感觉到……些微神气，[r]但无法断言。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠罗摩
+同意。看来并非完全搞错了地方。[r]再稍微调查一下周围吧。
+[k]
+
+[charaFace B 2]
+
+＠罗摩
+喂～！　有人吗～！[r]悉多在不在啊～！？　是余哦～！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+？1：有没有人啊～！
+？！
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠芙芙
+芙芙呜，芙芙？
+[k]
+
+[messageOff]
+[wipeout rollRight 1.5 1.0]
+[bgm BGM_EVENT_77 1.5 0.4]
+[wait wipe]
+[charaFadeout E 0.1]
+[wt 1.0]
+[wipein rollLeft 1.5 1.0]
+[bgm BGM_EVENT_77 1.5 1.0]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠罗摩
+真是的，这样找起来没个头啊。[r]还是分头调查吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠枪兵193
+明白。我能用　风火轮　飞行。[r]从空中　进行搜索。
+[k]
+
+[messageOff]
+[charaPut J 1]
+[charaEffect J bit_talk_43l]
+[charaMove F 0,64 1.1]
+[cueSe NoblePhantasm_303100 NP_303100_3]
+[cueSeVolume NP_303100_3 0 0.5]
+[wt 0.7]
+[wipeout rectangleStripUpToDown 0.3 1.0]
+[wait wipe]
+
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_43l]
+[charaFadeout F 0.1]
+[cueSeStop NP_303100_3 1.0]
+[wt 1.0]
+[wipein rectangleStripDownToUp 0.2 1.0]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠玛修
+啊，请……请多加小心，枪兵193小姐！[r]不知道会发生些什么，可不要走得太远啊～！
+[k]
+
+[charaFace A 12]
+
+＠玛修
+……会不会出什么问题呢……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaEffect J bit_talk_10_LowLevel]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠罗摩
+放心，那家伙也是在故事中被讴歌的英雄。[r]应该不用担心吧。
+[k]
+
+＠罗摩
+而且正如她自己所言，[r]从她身上能隐约感觉到与吾等相似的[#背景:氛围]。
+[k]
+
+＠罗摩
+尽管她那种专心致志一心朝目标前进的[r]耿直而死板的性格偶尔会令人担心……
+[k]
+
+＠罗摩
+但无论如何，没多少人能与[r]那家伙在空中的机动力相匹敌。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 0.5]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠迦尔纳
+更重要的是，[r]我们看来有了自己该做的工作了。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[charaTalk B]
+[se ad564]
+[wt 1.0]
+[seStop ad564 0.5]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠达·芬奇
+既然是神明潜居的山，自然会有那么一两只魔物吧。[r]麻烦你们尽快解决，然后继续搜索吧～☆
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

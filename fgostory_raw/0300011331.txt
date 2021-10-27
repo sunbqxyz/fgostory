@@ -1,0 +1,1122 @@
+
+
+＄03-00-01-13-3-1
+[soundStopAll]
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 5036001 1 阿维斯布隆]
+[charaSet C 7030001 1 阿塔兰忒·Alter]
+[charaSet D 1098127000 1 魔偶]
+[charaSet E 1098128400 1 雅嘎反叛军]
+[charaSet F 1098126500 1 雅嘎市民_男]
+[charaSet H 98115000 1 特效用]
+
+[bgm BGM_EVENT_82 0.1]
+
+[scene 54201]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿维斯布隆
+……好，这样就差不多了吧。[r]那么就慢慢后退吧。
+[k]
+
+＠阿维斯布隆
+其他地方也用魔偶渗透了。[r]伤者姑且不论，应该不会再出现死者了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠雅嘎市民
+咿……！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[flashin once 0.2 0.2 FFFFFF90 FFFFFF90]
+[se ad563]
+[wt 0.3]
+[se ad563]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[charaPut H -100,-50]
+[charaEffect H bit_shot_01]
+[se ad432]
+[wt 0.3]
+[charaPut H 50,20]
+[charaEffect H bit_shot_01]
+[se ad432]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠雅嘎市民
+呜，呜哇啊啊啊啊！[r]这下完了…………哎？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaDepth E 10]
+
+[charaTalk off]
+[charaFace E 2]
+[charaFace D 0]
+[charaFadein E 0.1 1]
+[charaFadein D 0.1 500,0]
+
+
+[se ad57]
+[charaMove D 1 2.0]
+[charaShake D 0.5 0 5 2.0]
+[wt 2.0]
+[se ad7]
+[charaFadeout E 0.4]
+[wt 0.1]
+
+[seStop ad57]
+
+[messageShake 0.05 5 5 0.5]
+＠E：雅嘎反叛军
+啊，喂！[r]那是我的武器！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad57]
+[charaMove D -500,0 2.0]
+[charaShake D 0.5 0 5 2.0]
+[wt 1.6]
+[charaFadeout D 0.4]
+[wt 0.4]
+[seStop ad57]
+
+＠E：雅嘎反叛军
+直……直接拿走了……
+[k]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠阿塔兰忒·Alter
+……好！[charaFace C 2][r]食物的搬运进行得怎么样了！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠雅嘎反叛军
+多亏了魔偶的辅助，[r]基本都搬完了！
+[k]
+
+＠雅嘎反叛军
+只不过，现阶段只有当初预计的70%……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠阿塔兰忒·Alter
+……也就视作已经足够了吧。[wt 0.3][charaFace C 2][r]好，反叛军撤退！！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[se ad588]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 1.0]
+
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+！[r]是撤退的信号，御主！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿维斯布隆
+好了，[#杀戮猎兵:亲卫队]应该会优先对付魔偶吧。[r]我们也趁现在撤退吧。
+[k]
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_82 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[charaSet C 1098126400 1 帕茨西]
+
+[wipeFilter cinema 0.5 0]
+
+[fadein black 1.0]
+[se ad586]
+[seVolume ad586 0 0.1]
+[seVolume ad586 1.0 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 50,-50]
+[charaMove C 0,-50 0,4]
+[wt 0.4]
+[seStop ad586 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠帕茨西
+呼、呼、呼……！
+[k]
+
+[charaFace C 0]
+
+＠帕茨西
+（不要紧，不要紧……[r]　不，要紧又如何。）
+[k]
+
+＠帕茨西
+（事到如今，我又没有脸面再出现。[r]　说到底，是我放弃了这座城镇。我才是抛弃的一方。）
+[k]
+
+[charaFace C 3]
+
+＠帕茨西
+（……再说了，仅凭我最后交给她的粮食，[r]　是无法维持很长……）
+[k]
+
+[messageOff]
+[charaMove C -50,-50 0.4]
+[se ad586]
+[charaFadeout C 0.4]
+[wt 0.4]
+[fadeout black 1.0]
+[wait fade]
+
+[wipeOff]
+
+[fadein black 1.0]
+[seVolume ad586 0.5 0.0]
+[wait fade]
+[seStop ad586]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠F：雅嘎市民
+咿咿咿，咿咿咿咿……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFace F 2]
+[charaFadein C 0.1 2]
+[charaFadein F 0.1 0]
+
+＠帕茨西
+喂，那边的！
+[k]
+
+[charaFace F 3]
+
+＠F：雅嘎市民
+你……你不是帕茨西吗！[r]你这叛徒！　果然加入了反叛[line 3]
+[k]
+
+[charaFace C 2]
+
+＠帕茨西
+这种事不重要啦！[r]我母亲呢！　我母亲还好吗！
+[k]
+
+＠F：雅嘎市民
+你的母亲！？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaShake F 0.05 0 1 3.0]
+[wt 0.8]
+
+＠F：雅嘎市民
+嘻，嘻嘻嘻[charaFace F 1][wt 0.5]……嘻嘻嘻嘻！[charaFace F 3][charaShakeStop F][wt 0.5][r]你是白痴吗！
+[k]
+
+＠F：雅嘎市民
+因为你加入了反叛军，[r]你的母亲已经被杀掉了啦！[bgmStop BGM_EVENT_81 1.0]
+[k]
+
+＠F：雅嘎市民
+我们把所有石头都往她身上扔去，[r]把她杀死了啊！
+[k]
+
+＠F：雅嘎市民
+你，都是你！　都是你害的！[r]都是你这胆小鬼害的！
+[k]
+
+＠F：雅嘎市民
+我要把你也杀[line 3]
+[k]
+
+[messageOff]
+[se ad563]
+[charaShake F 0.05 3 3 0.3]
+[effect bit_shot_01]
+[wt 0.5]
+[fowardEffect bit_talk_35]
+[se ad161]
+
+＠F：雅嘎市民
+嘎噗……
+[k]
+
+[messageOff]
+[charaMove F 0,-50 0.4]
+[charaFadeout F 0.4]
+[wt 0.4]
+[se ad144]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.4 1]
+
+＠帕茨西
+怎么……可能……[r]没错……撒谎……你撒谎……
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[bgmStop BGM_EVENT_81 0.3]
+[wt 0.5]
+
+[bgm BGM_EVENT_41 0.1]
+
+＠
+[line 3]不，这不是撒谎。
+[k]
+
+＠
+我早就明白会发生这种事。[r]这座城镇，绝不会原谅叛徒与其家人。
+[k]
+
+＠
+在我抛弃这座城镇的时候，[r]母亲就注定会死了……！
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1]
+[se ad586]
+[wait wipe]
+[wt 1.0]
+[wipein rightToLeft 1.0 1]
+[seStop ad586]
+[wait wipe]
+
+＠帕茨西
+（不对！　不对不对不对！[r]　这不是我的错，这不是我的错！！）
+[k]
+
+＠帕茨西
+（这反抗是正当的！[r]　那些家伙是罪人！　谁让他们住在这座城镇里！）
+[k]
+
+＠帕茨西
+（我从小就恐惧这座城市！[r]　恐惧这座弱者会被迅速淘汰的城镇！）
+[k]
+
+＠帕茨西
+（父亲曾经是镇上的警卫队长……他代表城镇，[r]　为粮食问题向[#杀戮猎兵:亲卫队]请愿时，被不由分说地杀掉了！）
+[k]
+
+＠帕茨西
+（这座城镇就是一坨屎！[r]　母亲为什么不抛弃这里呢……！）
+[k]
+
+[bgmStop BGM_EVENT_41 2.0]
+
+＠帕茨西
+（杀死母亲的……是我……是我害的……[r]　不对……不对，不对，不对！）
+[k]
+
+[messageOff]
+[se ad588]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠帕茨西
+该死……[r]我……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠雅嘎反叛军
+帕茨西，你在干嘛！[bgm BGM_EVENT_81 0.1][r]撤退啦！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠帕茨西
+……[r]……啊？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠雅嘎反叛军
+该死，是[#杀戮猎兵:亲卫队]的余党！[r]这是最后的了，赶紧撤！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠帕茨西
+……[r]……
+[k]
+
+[charaFace C 3]
+
+＠帕茨西
+……对不起。
+[k]
+
+？1：帕茨西[&:先生]？
+？！
+
+＠帕茨西
+……我……！
+[k]
+
+[messageOff]
+[se ad586]
+[charaMove C -50,0 0.4]
+[charaFadeout C 0.4]
+[wt 0.5]
+[seStop ad586 0.5]
+[wt 0.5]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+究竟去哪儿……！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿维斯布隆
+……走吧，御主。[r]看来要和他分别了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+怎么会这样……！？
+[k]
+
+？1：帕茨西[&:先生]……
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[wait fade]
+
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[charaSet A 1098124400 1 皇女]
+[charaSet B 1098127900 1 卡多克]
+[charaSet C 1098128200 1 凯妮斯]
+[charaSet D 1098123600 1 亲卫队1]
+[charaSet E 1098123600 1 亲卫队2]
+[charaSet F 1098123600 1 亲卫队3]
+[charaSet G 1098128200 1 凯妮斯_表情变更用]
+
+
+[scene 54500]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_76 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠卡多克
+……都要喘不过气来了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace B 4]
+[charaFace A 0]
+[charaFadein B 0.1 0]
+[charaFadein A 0.1 2]
+
+＠皇女
+怎么了？
+[k]
+
+＠卡多克
+就快到约好的时间了。[r]就像是定期考核一样。
+[k]
+
+[charaFace A 11]
+
+＠皇女
+啊啊，是他啊。[r]……是叫，基尔……基尔什塔利亚……
+[k]
+
+[charaFace B 0]
+
+＠卡多克
+沃戴姆。
+[k]
+
+[charaFace A 10]
+
+＠皇女
+对对，沃戴姆。[r]他作为魔术师的历史似乎相当悠久呢。
+[k]
+
+[charaFace B 0]
+
+＠卡多克
+魔术师这种存在若只论历史悠久，[r]那可是比比皆是啊。
+[k]
+
+[charaFace B 10]
+
+＠卡多克
+沃戴姆在那些人中属于具备家世、能力[line 3][r]以及自信的[#货真价实的存在]啊。
+[k]
+
+[charaFace B 4]
+
+＠卡多克
+……尽管我很不愿意承认，但没有比[r]那家伙更适合当队长的人了。
+[k]
+
+＠卡多克
+虽然[#隐匿者:Crypter]间正进行着类似[r]竞争[#异闻带:Lostbelt]成果的竞赛……
+[k]
+
+[charaFace B 9]
+
+＠卡多克
+……哼。[r]但最终胜者基本可以确定是那家伙了。
+[k]
+
+[charaFace A 8]
+
+＠皇女
+现阶段而言吗？
+[k]
+
+[charaFace B 1]
+
+＠卡多克
+是现阶段而言。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_76 0.5 0.4]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+
+
+
+
+
+＠？？？
+[line 3]怎么，不错呀。[r]看来你还有斗志嘛。
+[k]
+
+[charaTalk off]
+
+[charaFace B 10]
+[charaFace A 5]
+[wt 0.1]
+
+[messageOff]
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠二人
+！
+[k]
+
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[se ad311]
+[wt 1.2]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.7 1]
+[wt 0.4]
+[seStop ad311 0.3]
+[wt 0.3]
+[charaFace C 7]
+[wt 0.5]
+
+＠凯妮斯
+这不是挺好的吗。[bgm BGM_EVENT_76 1.5 1.0][r]你还打算与我们对抗！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk off]
+[se ad58]
+[wt 0.8]
+[charaFace D 0]
+[charaFace E 0]
+[charaFace F 0]
+[charaFadein D 0.2 1]
+[wt 0.2]
+[charaFadein E 0.2 2]
+[wt 0.2]
+[se ad58]
+[charaFadein F 0.2 0]
+[seStop ad58 1.0]
+
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠皇女
+……退下吧，[#杀戮猎兵:亲卫队]。[r]这位是我们的客人。
+[k]
+
+＠皇女
+并非妄图加害[#皇帝:沙皇]之人。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠凯妮斯
+哈。这可就要看你们的表现了。
+[k]
+
+[charaFace C 7]
+
+＠凯妮斯
+如果都是些派不上用处的废物，[r]那我打算把这里连同这里的王一起干掉后再回去！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠卡多克
+请不要过度挑衅。[r]我承认你特意渡过海洋与风暴来到这里很辛苦。
+[k]
+
+＠卡多克
+不过，我可不欣赏这种无端挑起争端的行为。[r]这是无益的争执，而且[line 3]
+[k]
+
+[charaFace B 1]
+
+＠卡多克
+如果贵重的神灵从者由三骑减少为二骑，[r]我就太对不住沃戴姆了吧。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaDepth G 10]
+
+[charaTalk off]
+[charaPut H 1]
+
+[charaFace C 16]
+[charaFadein C 0.1 1]
+[wt 0.8]
+[charaFace G 18]
+[charaFadein G 0.4 1]
+
+＠凯妮斯
+[line 3]你还真敢说啊。[r]还以为你是个软脚虾，没想到还挺有本事的。
+[k]
+
+
+[charaFadeout C 0.1]
+
+＠凯妮斯
+喂，皇女小姐。[r]是因为在你的面前，这家伙才会这么耍帅吗？
+[k]
+
+＠凯妮斯
+还是说，他迄今为止始终不露锋芒？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠皇女
+这还用说吗。[r]自然是两者皆有啊，神灵凯妮斯。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠凯妮斯
+是吗。恐惧与蛮勇啊。[r]这敢情好。还有成长的余地。
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠卡多克
+……所以到底什么事。[r]我可没有什么事要报告。
+[k]
+
+＠卡多克
+一切都很顺利。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.1 1]
+
+＠凯妮斯
+就这惨状还说一切顺利？[r]只剩你这边还没有扎根了。
+[k]
+
+＠凯妮斯
+空想树还没有发芽。[r]我的御主可没法不在意吧。
+[k]
+
+[charaFace C 6]
+
+＠凯妮斯
+他可是一直在担心胆小鬼卡多克还好吗？[r]对他来说是不是负重过重了啊？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠卡多克
+……一切都很顺利，[r]虽说进度确实慢了些，但我原本就落于人后。
+[k]
+
+[charaFace B 10]
+
+＠卡多克
+最终获胜的，[r]会是我和Caster。这点不会变。
+[k]
+
+＠卡多克
+空想树确实尚未扎根。[r]因为[#皇帝:沙皇]还没认同其必要性。
+[k]
+
+＠卡多克
+不过，他迟早会认为这是有必要的吧。
+[k]
+
+[charaFace B 0]
+
+＠卡多克
+在此之前都只是布局的时间。[r]就像翻转棋……不过我这么说你也不懂吧。
+[k]
+
+＠卡多克
+总之，我在为逆转做准备。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠凯妮斯
+眼神真严厉。[r]这是边奉承王，边伺机逆转的野心家的眼神。
+[k]
+
+[charaFace C 1]
+
+＠凯妮斯
+[line 3]那就好。如果你能让沃戴姆那混蛋[r]大吃一惊的话，那可就是一出好戏了！
+[k]
+
+[charaFace C 6]
+
+＠凯妮斯
+可以，我就向沃戴姆汇报说[r]俄罗斯没有问题好了。
+[k]
+
+＠凯妮斯
+这个[#异闻带:Lostbelt]的根基虽差，[r]但坐镇国家中央的『王』可是最顶级的怪物。
+[k]
+
+[charaFace C 1]
+
+＠凯妮斯
+……嗯。我只是偷偷瞄了一眼，太可怕了。[r]说不定就算和我们那儿的主神们互殴也能赢呢。
+[k]
+
+[charaFace C 7]
+
+＠凯妮斯
+一定要出奇制胜哦，卡多克·泽姆露普斯。[r]你肯定想让女人看到自己帅气的一面吧？
+[k]
+
+＠凯妮斯
+御主和从者凑一对不是挺好的嘛！
+[k]
+
+＠凯妮斯
+如果变成那样，就轮到我出马了。[r]我要当着你的面，让皇女殿下成为我的女人！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠皇女
+…………下流。[r]我对没教养的男人敬谢不敏。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠凯妮斯
+太巧了。我和你意见相同。我也不喜欢那种[r]连捕鱼都不会，整天只会被捧在掌心上的娇惯女人。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠皇女
+…………
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFace C 0]
+[charaFadein B 0.1 0]
+[charaFadein C 0.1 2]
+
+＠卡多克
+凯妮斯。你难道找不到人和自己聊吗？[r]若想参加茶会，我会帮你准备座位的。
+[k]
+
+[charaFace C 7]
+
+＠凯妮斯
+好啊，等皇女不在的时候，我会欣然赴约。
+[k]
+
+[charaFace C 1]
+
+＠凯妮斯
+话说卡多克，你这家伙口齿还挺伶俐的嘛！[r]平时说话也该这么尖刻才行啊，喂！
+[k]
+
+[charaFace B 0]
+
+＠卡多克
+见人说人话，见鬼说鬼话。[r]然后呢。还有什么想说的吗？
+[k]
+
+[charaFace C 0]
+
+＠凯妮斯
+没有了。啊啊，[r]对了，泛人类史的那群人在吗？
+[k]
+
+＠凯妮斯
+听戴比特的说法，[r]他们应该会出现在俄罗斯吧？
+[k]
+
+[charaFace B 10]
+
+＠卡多克
+……目前正在应付他们。[r]这件事我也能很快解决。
+[k]
+
+[charaFace C 5]
+
+＠凯妮斯
+哈？　还没杀掉他们啊。[r]好嘞，那我就顺便帮你收拾掉他们吧。
+[k]
+
+＠卡多克
+这我不能允许。[r]他们造访了俄罗斯。
+[k]
+
+＠卡多克
+既然如此，那他们就是我们的猎物。[r][#该如何处理]，[#又该如何利用]，都是我的特权。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠凯妮斯
+[line 3]这样啊。有些得意忘形了吧，人类。[r]对，就像看到了以前的你。
+[k]
+
+[charaFace C 7]
+
+＠凯妮斯
+我会期待你的这份自负，卡多克。[r]嗯，俄罗斯就是你这家伙的[#胜负:游戏]盘。
+[k]
+
+＠凯妮斯
+你就尽全力想办法赢得一等奖吧。[r]千万要小心别被人钻空子了哦。
+[k]
+
+＠凯妮斯
+如果进展顺利，届时再叫我来参加[r]那个叫什么茶会的活动吧。
+[k]
+
+[messageOff]
+[charaEffect C bit_talk_kaineus]
+[wt 0.8]
+[charaEffectStop C bit_talk_kaineus]
+[se ad153]
+[seVolume ad153 0 0.5]
+[wt 0.4]
+[charaFadeout C 1.2]
+[seStop ad153 2.0]
+[wt 3.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFace B 0]
+[charaFadein A 0.1 2]
+[charaFadein B 0.1 0]
+
+＠皇女
+……真是个不可理喻的从者啊。
+[k]
+
+＠皇女
+若非是有你的制止，[r]我已经动手杀人了。
+[k]
+
+[charaFace B 4]
+
+＠卡多克
+我想避免麻烦的状况。[r]否则会劳烦[#皇帝:沙皇]出马。
+[k]
+
+＠皇女
+所谓的神代英雄，[r]难道都那么不懂礼数吗？
+[k]
+
+＠皇女
+……遭人轻蔑实在令人气愤。
+[k]
+
+[charaFace B 9]
+
+＠卡多克
+好了好了，都是我的错。
+[k]
+
+＠皇女
+嗯，没错。但若说你有错，[r][#那我也一样有错]。
+[k]
+
+＠皇女
+正因为明白这点，所以才更令我气愤。
+[k]
+
+[charaFace B 0]
+
+＠卡多克
+……佩佩给了我一些茶叶。
+[k]
+
+＠卡多克
+虽说从者不需要喝茶，[r]但喝点茶消消气吧。
+[k]
+
+[charaFace A 1]
+＠皇女
+……是呢，那就取决于这茶好不好喝了。
+[k]
+
+[charaFace B 4]
+
+＠卡多克
+真没办法……
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_76 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

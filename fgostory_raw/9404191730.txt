@@ -1,0 +1,564 @@
+
+
+＄94-04-19-17-3-0
+
+[soundStopAll]
+
+[charaSet A 11009300 1 阿斯塔蒂·起源]
+[charaSet B 11009001 1 S伊什塔尔]
+[charaSet C 11009000 1 阿斯塔蒂]
+[charaSet D 2037000 1 简]
+[charaSet E 7024002 1 黑暗小艾]
+[charaSet I 98115000 1 特效用1]
+[charaSet J 98115000 1 特效用2]
+
+
+[scene 83901]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 0.1]
+
+[fadein black 0.5]
+[wt 0.1]
+[effect bit_talk_rarrow01br]
+[se ade372]
+[wait fade]
+
+[wt 1.0]
+[seStop ade372 0.7]
+[se ad34]
+[se ad64]
+[effectDestroy]
+[shake 0.05 5 5 1.5]
+[effect bit_talk_explosion_triple02 80,-140]
+[wt 2.5]
+[effectStop bit_talk_explosion_triple02]
+[wt 0.7]
+
+[fadeout black 0.3]
+[wait fade]
+[scene 83701]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[fadein black 0.3]
+[wait fade]
+
+＠阿斯塔蒂·起源
+消失吧，新的我，愚蠢的我。[r]与丑陋的苍辉银河一起，全部，消失吧。
+[k]
+
+[messageOff]
+[fadeout black 0.3]
+[wait fade]
+[charaFadeout A 0.1]
+[scene 83901]
+[wt 0.1]
+[fadein black 0.3]
+[wait fade]
+
+[charaTalk depthOff]
+[charaDepth I 1]
+[charaDepth J 2]
+
+[charaPut I 100,-50]
+[charaRoll I -45 0,0]
+[charaEffect I bit_talk_rarrow01br]
+[wt 0.2]
+[se ade372]
+[wt 0.5]
+[charaEffectStop I bit_talk_rarrow01br]
+[seStop ade372 0.7]
+[wt 0.4]
+[se ad34]
+[se ad64]
+[shake 0.05 5 5 0.5]
+[effect bit_talk_explosion_triple02 -120,-140]
+
+[wt 0.3]
+
+[charaPut J 600,-100]
+[charaRoll J -45 0,0]
+[charaEffect J bit_talk_rarrow01br]
+[wt 0.2]
+[se ade372]
+[wt 0.5]
+[charaEffectStop J bit_talk_rarrow01br]
+[seStop ade372 0.7]
+[wt 0.4]
+[se ad34]
+[se ad64]
+[shake 0.05 5 5 2.5]
+[effect bit_talk_explosion_triple02 120,-100]
+[wt 3.0]
+[effectDestroy]
+
+
+？1：太不讲道理了……！
+？2：完全无法对抗……！
+
+？！
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+说得对，太有同感了！[r]再说我们的攻击真的打中她了吗！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠简
+嗯，命中了！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+但完全是在砍空气的感觉啊！？[r]怎么回事！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_24 0.7]
+
+[charaTalk C]
+[charaFace C 22]
+[charaFadein C 0.1 1]
+
+＠阿斯塔蒂
+那当然啦。[r]因为这就是在攻击『宇宙』本身啊。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_72 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+你说什么！？　这是什么意思？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠阿斯塔蒂
+……没想法。[r]你连初级『女神经典』都没读过吧。
+[k]
+
+＠阿斯塔蒂
+『原始女神』是拥有银河级魔力的女神……[r]这说法并不对，应该是[#以女神形态存在的银河这种生命]。
+[k]
+
+＠阿斯塔蒂
+哪怕形式与人类相同，[r]也只是『外表如此』而已。
+[k]
+
+＠阿斯塔蒂
+我不是说了吗。这原始宇宙就是女神的残骸。[r]也就是说，整个原始宇宙都是她。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+不会吧[line 3]这样根本无法对付啊！[r]……我说得没错吧，[%1]！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿斯塔蒂
+……只是看上去星云集合在一起，[r]实际上并没有集合……至少现阶段是这样。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠简
+嗯。如果星云中的星星真的全都集中在一起，[r]就会形成超巨大的黑洞。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿斯塔蒂
+所以现在，我们眼前的那个只是『影子』。[r]实体比肉眼所见的更为『巨大且间隙庞大』。
+[k]
+
+＠阿斯塔蒂
+想打倒她必须获得『能大到打中她的子弹』。[r]需要行星……不，是银河程度的规模。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠简
+原来如此！　是实际距自己几万光年的星球[r]看上去连在一起的『星座』那种概念灵基啊！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+原来如此，完全听不懂！
+[k]
+
+？1：嗯！
+
+？！
+
+[charaFace B 5]
+
+＠S伊什塔尔
+但是，也就是说我们的攻击打不中，[r]而对方随便怎么打都行吧！？
+[k]
+
+＠S伊什塔尔
+这太[#犯规:作弊]了吧！？[r]还好她的攻击比较粗糙！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠阿斯塔蒂
+那也只是时间的问题。[r]一旦这个祭坛崩塌，我们就无路可逃了。
+[k]
+
+＠阿斯塔蒂
+……你能看见巴耳·马安娜吧。[r]那就是真正女神的证明。
+[k]
+
+＠阿斯塔蒂
+我们……不，身为恶之女神的我[r]打从一开始就没有任何存在价值。
+[k]
+
+＠阿斯塔蒂
+打从一开始……就注定在这里消失。
+[k]
+
+＠阿斯塔蒂
+无论是人类，还是[#女神:自己]自身，[r]谁都不需要我。
+[k]
+
+[bgmStop BGM_EVENT_72 0.7]
+
+＠阿斯塔蒂
+所以[line 3]
+[k]
+
+[messageOff]
+[se ad39]
+[charaFace C 0]
+[charaEffect C bit_talk_charge_red]
+
+[wt 2.0]
+
+[charaEffectStop C bit_talk_charge_red]
+[seStop ad39 1.0]
+[wt 1.0]
+
+
+[charaFace C 5]
+
+＠阿斯塔蒂
+所以，这里由我来挡下。[r]反正我是无论死在哪里都没有价值的生命。
+[k]
+
+＠阿斯塔蒂
+伊什塔尔。[r]趁此机会，你带着御主快逃。
+[k]
+
+[charaFace C 0]
+
+＠阿斯塔蒂
+……苍辉银河的毁灭是我们从者宇宙的问题。[r]是因果报应。但是，你不一样。
+[k]
+
+＠阿斯塔蒂
+你是我带来的异乡人。[r]不需要与我们命运与共。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+阿斯塔蒂……你……
+[k]
+
+？1：…………（因为是恶之女神，所以不需要……？）
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠阿斯塔蒂
+好了，快点！[r]趁我还没有改变主意！
+[k]
+
+[messageOff]
+[fadeout black 0.3]
+[wait fade]
+[charaFadeout C 0.1]
+[scene 83701]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[fadein black 0.3]
+[wait fade]
+
+＠阿斯塔蒂·起源
+……不愉快。[r]没想到竟连另一个部件都去帮助人类。
+[k]
+
+＠阿斯塔蒂·起源
+看来不需要手下留情了。[r]你们连同那个台座一同化为原子尘土吧。
+[k]
+
+[input selectBranch]
+
+[messageOff]
+
+[fowardEffectDestroy]
+[effectDestroy]
+
+[charaSet A 11009300 1 阿斯塔蒂·起源]
+[charaSet B 11009001 1 S伊什塔尔]
+[charaSet C 11009000 1 阿斯塔蒂]
+[charaSet D 2037000 1 简]
+[charaSet E 7024002 1 黑暗小艾]
+[charaSet I 98115000 1 特效用1]
+[charaSet J 98115000 1 特效用2]
+
+
+[soundStopAllFade 0.4]
+
+[scene 83701]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0 1]
+
+[skip true]
+
+[maskin black 1.0]
+[wait mask]
+[label selectBranch]
+
+[skip true]
+
+＠阿斯塔蒂·起源
+灵基银河，开放。巴耳·马安娜开门。[r]将这片宙域的生命体全部化为乌有。
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.5]
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[charaTalk depthOff]
+[charaDepth I 1]
+[charaDepth J 2]
+
+[charaPut I 1]
+[charaRoll I 0]
+[charaPut J 1]
+[charaRoll J 0]
+
+[fadeout white 0.5]
+[cueSe NoblePhantasm_900600 NP_900600_7]
+[wait fade]
+[scene 83701]
+[fadein white 0.5]
+[cueSeStop NP_900600_7 0.5]
+[wait fade]
+
+[charaEffect I bit_talk_light_rain1]
+[cueSe NoblePhantasm_300400 NP_300400_9]
+[wt 1.4]
+[cueSeStop NP_300400_9 0.4]
+[cueSe NoblePhantasm_300400 NP_300400_8]
+[wt 1.5]
+
+[wipeout rectangleStripDownToUp 0.3 1.0]
+[cueSeStop NP_300400_8 0.4]
+[wait wipe]
+[charaEffectDestroy I]
+[wt 0.2]
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[charaEffect I bit_talk_light_rain2]
+[wt 0.5]
+[cueSe Servants_200200 bac1327]
+[wt 0.6]
+[se ade387]
+[seVolume ade387 0 0.0]
+[wt 0.6]
+[seVolume ade387 0.3 1.0]
+[wt 0.3]
+[cueSeStop bac1327 0.3]
+
+
+[fadeout white 2.2]
+[wait fade]
+
+[charaEffectStop I bit_talk_light_rain2]
+[wt 0.3]
+
+[cueSeStop bac1327 0.3]
+
+[wt 0.3]
+
+[effectDestroy]
+[scene 59200]
+[wt 4.0]
+[fadein white 2.0]
+[wait fade]
+
+[wt 1.0]
+
+？1：咦，这里是哪儿？
+
+？！
+
+[se ade74]
+[seVolume ade74 0 0.1]
+[seVolume ade74 2.0 0.4]
+[wt 2.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+[seStop ade74 0.1]
+
+＠黑暗小艾
+这里是事象地平的彼方。[bgm BGM_EVENT_1 0.1][r]说得直白一些，就是死后的世界。
+[k]
+
+＠黑暗小艾
+你好，御主。[r]啊，不认识我吗？　那样也不错。
+[k]
+
+[charaFace E 4]
+
+＠黑暗小艾
+好了。[r]看来你被卷入了非常残酷的命运。
+[k]
+
+＠黑暗小艾
+我也为这种事困扰不已，[r]所以能理解你的心情。
+[k]
+
+[charaFace E 1]
+
+＠黑暗小艾
+比起宇宙存亡的危机，[r]还是新产品点心的发表更令人激动不已。
+[k]
+
+[charaFace E 0]
+
+＠黑暗小艾
+不过嘛，毕竟有宇宙才能有甜点。[r]所以我会在这里用不可思议的力量帮助你。
+[k]
+
+＠黑暗小艾
+我会将你扔回稍早一些的时间轴，[r]去满足条件之后再重新来过吧。
+[k]
+
+＠黑暗小艾
+其实，胜利的关键已经凑齐了。[r]接下来完全取决于本人的想法。
+[k]
+
+＠黑暗小艾
+有一个人选择了自暴自弃，[r]但那只是青春期特有的误会。
+[k]
+
+＠黑暗小艾
+一旦知晓了『真实情况』，[r]她也定会选择应走的道路吧。
+[k]
+
+[charaFace E 1]
+
+＠黑暗小艾
+那么，后会有期，在世界的某个角落。
+[k]
+
+＠黑暗小艾
+……加油哦，黑骑士君。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

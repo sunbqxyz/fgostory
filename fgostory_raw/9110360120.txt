@@ -1,0 +1,830 @@
+
+
+＄91-10-36-01-2-0
+
+[soundStopAll]
+
+[charaSet A 1036001 1 兰陵王]
+[charaSet B 5042001 1 紫式部]
+[charaSet C 5042001 1 紫式部（投影）]
+[charaSet D 1038000 1 伊阿宋]
+[charaSet E 2035000 1 帕里斯]
+[charaSet F 7027001 1 彭忒西勒亚]
+
+[charaSet G 8001000 1 dummy特效1]
+[charaSet I 8001000 1 dummy特效2]
+[imageSet J back10001 1]
+[charaScale J 1.01]
+
+[charaDepth G 1]
+[charaDepth A 5]
+[charaDepth B 9]
+
+
+
+[branchQuestNotClear lblNotClear1 91402801 1]
+[flag IsClear true]
+[branch lblConf1]
+[label lblNotClear1]
+[flag IsClear false]
+[label lblConf1]
+
+
+[scene 10000]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.4]
+＠
+中午十二点。[bgm BGM_EVENT_5 0.1 0.7][r]午饭时。
+[k]
+
+＠
+目标对象没有去食堂，[r]而是前往了地下图书馆。
+[k]
+
+[branch lblClear2 IsClear true]
+
+[label lblNotClear2]
+
+[messageOff]
+[wipeFilter cinema 0.5 0]
+
+[branch lblConf2]
+
+
+[label lblClear2]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_5 1.4 0.5]
+[wait fade]
+
+[scene 70600]
+[wipeFilter cinema 0.5 0]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+[charaFadeTime C 0 0.8]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.4]
+＠
+另外，为以防万一，先事先注明。
+[k]
+
+＠
+地下图书馆最近……
+[k]
+
+[charaFace C 0]
+
+＠
+改名为『伟大而恐怖且惹人怜爱的紫式部图书馆』。
+[k]
+
+[messageOff]
+[charaFace C 6]
+[wt 1.4]
+
+[label lblConf2]
+
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_5 1.2]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[scene 70300]
+
+[fadein black 1.2]
+[wait fade]
+[wt 0.8]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.2 0,-50]
+
+＠紫式部
+哎呀呀，兰陵王大人。[bgm BGM_EVENT_2 0.1][r]今天您想找什么样的书呢？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠兰陵王
+让我想想……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+＠紫式部
+基于一些原因，[r]我进了几本魔道书与珍贵的古书……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠兰陵王
+原来如此。
+[k]
+
+[charaFace A 4]
+
+＠兰陵王
+（但是，莫名露出了无奈的眼神呢……）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠紫式部
+很遗憾，还没有进到新的兵法书……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠兰陵王
+啊，那有没有御主会喜欢的书籍呢？
+[k]
+
+＠兰陵王
+我打算下次拜访御主时为[&他:她]带去……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠紫式部
+哎呀……
+[k]
+
+＠紫式部
+这样的话，还请您稍等片刻。
+[k]
+
+[messageOff]
+[se ade74]
+[charaFadeout B 0.4]
+[charaMove B -30,-50 0.4]
+[wt 0.7]
+
+[fadeout black 1.0]
+[seStop ade74 1.0]
+[wait fade]
+
+[scene 70500]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade74]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.4 -170,-50]
+[charaMove B -200,-50 0.4]
+[wt 0.4]
+[seStop ade74 0.2]
+
+＠紫式部
+让我找找……[r]我记得应该在这个书架上……
+[k]
+
+[messageOff]
+[se ad95]
+[charaMove B -200,-40 0.2]
+[wt 0.4]
+[seStop ad95]
+
+[charaMove B -200,-30 0.2]
+[wt 0.8]
+
+[charaShake B 0.06 1 0 0]
+[wt 0.6]
+[se ade46]
+[charaFace B 4]
+[wt 0.8]
+
+[charaFadeout B 0.1]
+[charaShakeStop B]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠兰陵王
+唔。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 -200,-30]
+[charaShake B 0.06 1 0 0]
+[wt 0.4]
+
+[se ade183]
+[seVolume ade183 0 0.7]
+[charaFace B 6]
+[charaShakeStop B]
+[charaMove B -195,-40 0.2]
+
+＠紫式部
+呀啊！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMove B 30,-140 0.4]
+
+[charaFace A 2]
+[charaFadein A 0.2 250,-50]
+[charaMove A -70,-50 0.4]
+[wt 0.35]
+[se ade32]
+
+[fadeout white 1.0]
+[seStop ade32 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[charaPut J 0,-200]
+[charaFadeTime J 0 0.5]
+
+[se adm19]
+[seVolume adm19 0 0.4]
+[charaEffect G bit_talk_yume01]
+[wt 0.8]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaScale A 1.4]
+[charaFadein A 0.1 0,-50]
+
+[fadein white 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_45 0.1 0.8]
+
+＠兰陵王
+事态紧急，恕我失礼。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaScale B 1.4]
+[charaFadein B 0.3 0,-50]
+[wt 0.2]
+
+＠紫式部
+非非非非非常抱歉！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.3 0,-50]
+[wt 0.2]
+
+＠兰陵王
+没事没事，您没受伤就好。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.3 0,-50]
+[wt 0.2]
+
+＠紫式部
+这……嗯。[r]都是我不小心……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.3 0,-50]
+[wt 0.2]
+
+＠兰陵王
+摔倒不过是不凑巧罢了。[r]您不要介意。
+[k]
+
+[messageOff]
+[fadeout white 1.2]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaScale A 1.0]
+[charaScale B 1.0]
+[wt 0.1]
+
+[wipeOff]
+[pictureFrame cut063_cinema]
+
+[charaPut J 3000,3000]
+[charaPut G 3000,3000]
+[charaEffectStop G bit_talk_yume01]
+[wt 1.0]
+
+[fadein white 1.2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.3 0,-50]
+[wt 0.2]
+
+＠兰陵王
+然后呢，您说的是哪本书？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 0,-50]
+
+＠紫式部
+啊，嗯。[r]是这本。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠兰陵王
+非常感谢。[r]那我就借走这本吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠紫式部
+嗯，我很高兴。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+[wt 0.3]
+
+[charaMoveReturn A 0,-60 0.4]
+[wt 0.7]
+
+[se ade74]
+[charaFadeout A 0.4]
+[charaMove A -20,-50 0.4]
+[wt 1.5]
+
+[seStop ade74 0.7]
+[wt 0.7]
+
+＠
+……就这样，他面带爽朗的笑容，[r]温柔地放开了紫式部的身体，并表以歉意。
+[k]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 0,-50]
+
+＠紫式部
+啊……
+[k]
+
+＠紫式部
+该怎么说呢，[r]真是位与端丽一词相称的人呢。
+[k]
+
+＠紫式部
+尽管佩戴着面具，[r]却仍会令人禁不住心怦怦乱跳……
+[k]
+
+[charaFace B 2]
+＠紫式部
+……这……这种感慨或许能用在什么地方。[wt 1.1][charaFace B 1][r]赶快记录进作品素材备忘手册里吧。
+[k]
+
+[messageOff]
+[wipeout rollRight 1.4 1.0]
+[bgmStop BGM_EVENT_45 1.4]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaSet G 8001000 1 dummy特效3]
+
+[scene 10000]
+
+[wipein rollLeft 1.2 1.0]
+[wait wipe]
+
+＠
+下午四点。
+[k]
+
+＠
+目标对象与偶遇的两位开始闲聊。
+[k]
+
+[messageOff]
+[wipeout rollRight 1.2 1.0]
+[wait wipe]
+
+[branchQuestNotClear lblNotClear3 3000303]
+[scene 66600]
+[branch lblConf3]
+[label lblNotClear3]
+[scene 10310]
+[label lblConf3]
+
+[cameraMove 0 0,0 1.02]
+
+[wipein rollLeft 1.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk off]
+[charaFace E 4]
+[charaFace D 4]
+[charaFadein E 0.4 -256,-50]
+[charaFadein D 0.4 256,-50]
+[wt 0.6]
+[charaTalk on]
+[charaTalk E]
+
+＠帕里斯
+原来如此……[bgm BGM_EVENT_2 0.1][r]所以才要佩戴面具啊……
+[k]
+
+[charaFace D 0]
+＠伊阿宋
+哈，你应该庆幸自己没有生在希腊。
+[k]
+
+[charaFace D 1]
+
+＠伊阿宋
+如果生在希腊，你会由于这美貌，[r]不是遭诅咒就是被祝福，两种都会下地狱。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠兰陵王
+被诅咒……姑且不论，[r]被祝福难道不是好事吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace E 4]
+[charaFace D 4]
+[charaFadein E 0.1 -256,-50]
+[charaFadein D 0.1 256,-50]
+＠伊阿宋
+祝福的确会令人走上人生巅峰，[r]但最终会因为口出狂言而遭到神的天罚。
+[k]
+
+[charaFace D 5]
+＠伊阿宋
+或是因为兴奋过度招人不爽……[r]之类的理由遭到天罚。
+[k]
+
+[charaFace D 12]
+
+＠伊阿宋
+换言之，无论如何都是凄惨的下场！
+[k]
+
+[charaFace E 2]
+
+＠帕里斯
+啊～，确实常有这种事，常有这种事！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+＠兰陵王
+希腊也不好过呢……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace E 0]
+[charaFace D 0]
+[charaFadein E 0.1 -256,-50]
+[charaFadein D 0.1 256,-50]
+
+＠伊阿宋
+说起用面具遮住脸，[r]彭彭猪也是那类的吧。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠兰陵王
+彭彭……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace E 0]
+[charaFace D 0]
+[charaFadein E 0.1 -256,-50]
+[charaFadein D 0.1 256,-50]
+
+＠伊阿宋
+就是那家伙啦，那家伙。[r]Berserker里经常发飙的那家伙……
+[k]
+
+[charaFace D 6]
+＠伊阿宋
+身材矮小……[r]腹肌一块块的……
+[k]
+
+[charaFace E 2]
+
+＠帕里斯
+（阿波罗大人的神谕！[r]　有种不祥的预感！）
+[k]
+
+[messageOff]
+[se ad337]
+[charaFadeout E 0.4]
+[charaMove E -300,-50 0.4]
+[wt 1.3]
+[seStop ad337 0.2]
+[wt 0.4]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 0,-50]
+
+＠伊阿宋
+没错没错，就是那家伙！
+[k]
+
+＠伊阿宋
+[f large]彭特死了呀！！
+[k]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+＠彭忒西勒亚
+[f large]错别字中充满了恶意去死吧！！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaPut I 2400,2400]
+[charaRoll I 270]
+
+[se ad608]
+[se ad609]
+
+[shake 0.03 5 5 0.6]
+
+[charaEffect I bit_talk_impactlanding]
+
+[shake 0.05 7 3 0.5]
+[seStop ad609 1.0]
+[wt 0.2]
+[charaPut I -100,-75]
+[wt 0.3]
+
+[charaFace D 16]
+[seStop ad608 1.5]
+[wt 0.7]
+
+[se bac134]
+[wt 0.3]
+[se ad195]
+[charaEffect G bit_talk_42 0,0 H]
+[wt 0.6]
+[charaEffectStop G bit_talk_42]
+[wt 0.2]
+[charaPut G 2000,2000]
+
+[se bac432]
+[charaFace D 15]
+[fowardEffect bit_talk_14]
+[charaShake D 0.04 5 4 0.6]
+[wt 0.3]
+[charaTalk on]
+
+＠伊阿宋
+呜[messageShake 0.04 3 3 0.5]噗哇！？[wt 0.2][charaMove D 800,0 0.25][wt 0.2][se ad608][shake 0.04 2 3 0.6][wt 0.6]
+[k]
+
+[messageOff]
+[se ad671]
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.4 -250,-50]
+[charaMove F -20,-50 0.3]
+[wt 0.3]
+
+[messageShakeStop]
+
+[charaMove F 0,-50 0.3]
+[wt 1.0]
+
+＠彭忒西勒亚
+呼，呼……
+[k]
+
+[charaFace F 5]
+
+＠彭忒西勒亚
+（狠瞪。）
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠兰陵王
+为了自己的名誉，我要先声明，[bgm BGM_EVENT_3 0.1][r]我发誓绝对没有说您的坏话。
+[k]
+
+[charaFace A 4]
+
+＠兰陵王
+但是，我应该在伊阿宋阁下[r]大叫之前阻止他才对，非常抱歉。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+
+＠彭忒西勒亚
+……好。
+[k]
+
+＠彭忒西勒亚
+我不想留下祸根。[r]跟我来模拟装置。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠兰陵王
+要打算和我……战斗吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+
+＠彭忒西勒亚
+如果你是Caster，我倒可以放你一马，[r]但毕竟你是Saber。
+[k]
+
+＠彭忒西勒亚
+你的剑应该不是什么装饰品吧？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+＠兰陵王
+……说得对。
+[k]
+
+＠兰陵王
+看来我应该体验一下希腊粗暴的战斗方式。
+[k]
+
+[charaFace A 5]
+
+＠兰陵王
+好，战斗吧。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+[wt 1.1]
+
+[charaFace F 1]
+[wt 1.2]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

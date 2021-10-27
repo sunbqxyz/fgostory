@@ -1,0 +1,229 @@
+
+
+＄94-03-88-05-1-0
+
+[soundStopAll]
+
+[charaSet A 98001000 1 家老玛修]
+[charaSet B 4014000 1 源义经]
+[charaSet C 11007000 1 信]
+[charaSet D 7035001 1 森长可]
+[charaSet E 3038000 1 长尾景虎]
+[charaSet F 1001000 1 特效用]
+
+[scene 79900]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠源义经
+好了，由于兄长大人不在，[r]总之我就[#创建美好国家:1192年]地重建了镰仓幕府，
+[k]
+
+＠源义经
+出乎意料地简单呢，毕竟我是天才。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠家老玛修
+关于这个问题，其实根据最近课本上的说法，[r]应该是[#创建美好箱子:1185年]地建立镰仓幕府哦。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠源义经
+什[messageShake 0.03 4 4 0.3]么！？
+[k]
+
+[charaFace B 3]
+
+＠源义经
+也就是说建立的时间提早了7年吗，不愧是兄长大人。[r]这就是所谓的骄傲源氏也久违吧。
+[k]
+
+？1：话说你好像不是Alter吧。
+
+？2：Alter上哪儿去了？
+
+？！
+
+[charaFace B 4]
+
+＠源义经
+哎哟，失礼了。请稍等片刻。
+[k]
+
+[messageOff]
+
+[se ad77]
+[charaMove B 0,-50 0.5]
+[charaFadeout B 0.5]
+[wt 0.5]
+
+＠源义经
+涂抹涂抹涂抹……好了，这样就行了吧？
+[k]
+
+[messageOff]
+[charaSet B 98107400 1 源义经Alter风]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[se ad500]
+[seVolume ad500 0 0.3]
+[wt 0.5]
+[se ad500]
+[seVolume ad500 0 0.3]
+[wt 1.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 0,-50]
+[charaMove B 0,0 0.5]
+[charaPut F 1200,1200]
+[charaEffect F bit_talk_41]
+[wt 0.6]
+[charaPut F 0,0]
+[se ade211]
+[wt 1.4]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_41]
+
+[charaFace B 2]
+
+＠源义经Alter风
+那么，让我们赌上源氏与平氏的存亡，[bgm BGM_EVENT_3 0.1]
+[k]
+
+＠源义经Alter风
+开启全体源氏总进击，[r]最终源平合战2020吧！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+
+＠信
+话说我是平氏，还有其他平氏吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠长尾景虎
+我也是平氏，你的经历是不是有些可疑啊？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠森长可
+啊，我家是清和源氏。
+[k]
+
+＠森长可
+抱歉啦，大殿下，我要站她那边。
+[k]
+
+[charaFace D 1]
+
+＠森长可
+啊，但我没有背叛主公哦，放心吧。
+[k]
+
+[messageOff]
+[se ad60]
+[seStop ad60 1.5]
+[charaMove D -50,0 0.5]
+[charaFadeout D 0.4]
+[wt 1.2]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠信
+没想到我的平氏属性会在这里起到反效果……
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 1.0]
+
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠森长可
+好嘞！　和大殿下对抗的话，我也会打起精神来！[r]尽管我不是很明白Alter是啥，但我会动真格哦！
+[k]
+
+[messageOff]
+[se ad474]
+[charaEffect D bit_talk_charge_red]
+[wt 1.5]
+
+[charaChange D 7035002 2 fade 1.0]
+[wait charaChange D]
+[charaEffectStop D bit_talk_charge_red]
+[charaEffect D bit_talk_attack_buf]
+[se ade43]
+[se ad270]
+[seStop ad474 0.5]
+[wt 1.8]
+
+＠森长可
+哇哈哈哈哈哈哈！　这乃是森家的最终决战模式！[r]觉悟吧，大殿下！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠源义经Alter风
+哎呀，你还颇有那种会令人联想起平安时期[r]粗野鬼武者的风度嘛！　那我们上吧！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

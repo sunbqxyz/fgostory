@@ -1,0 +1,555 @@
+
+＄02-00-01-15-1-1
+
+[charaSet A 2016000 1 卫宫·Alter]
+[charaSet B 1002001 1 阿尔托莉雅·Alter]
+[charaSet C 98109100 1 雀蜂]
+[charaSet D 2023000 1 莫里亚蒂]
+[charaSet E 98086000 1 福尔摩斯]
+[charaSet F 98109200 1 花腔歌手]
+[charaSet G 98109200 1 花腔歌手]
+[charaSet H 98109200 1 花腔歌手]
+
+[soundStopAll]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 38300]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠卫宫·Alter
+……！[r]刚才那是……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠阿尔托莉雅·Alter
+哦，不愧是Archer。[r]你那敏锐的眼神还健在呢。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠雀蜂
+队长！[r]花腔歌手冲过来了！　他们失控了！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[shake 0.05 4 4 2.0]
+[se ad69]
+[seStop ad69 2.0]
+[wt 1.4]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠卫宫·Alter
+是夏洛克·福尔摩斯吗……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[se ad59]
+[seStop ad59 2.0]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.7 1]
+[wt 1.0]
+＠福尔摩斯
+哈哈哈哈哈！　哎呀，好危险好危险。[r]但辛苦还是有价值的，收下吧！
+[k]
+
+
+[messageOff]
+[charaMove E 0,-20 0.1]
+[wt 0.1]
+[charaSpecialEffect E erasureReverse 0,-20 0.1]
+[charaMove E 0,96 0.1]
+[se bac1]
+[wait charaSpecialEffect E]
+[charaFadeout E 0.1]
+[wt 0.4]
+
+[charaTalk off]
+[se ad69]
+[seStop ad69 2.0]
+[charaFace H 0]
+[charaFadein H 0.7 0]
+[wt 0.3]
+[charaFace G 0]
+[charaFadein G 0.7 2]
+[wt 0.3]
+[charaFace F 0]
+[charaFadein F 0.7 1]
+[wt 0.3]
+
+[wt 0.7]
+
+[se ad69]
+[seStop ad69 1.0]
+[charaMove F 0,-20 0.1]
+[charaScale F 1.2]
+[wt 0.2]
+[charaMove F 1 0.1]
+[wt 0.4]
+[charaFadeout F 0.1]
+
+[se ad69]
+[seStop ad69 1.0]
+[charaMove G 256,-20 0.1]
+[charaScale G 1.2]
+[wt 0.2]
+[charaMove G 2 0.1]
+[wt 0.4]
+[charaFadeout G 0.1]
+
+[se ad69]
+[seStop ad69 1.0]
+[charaMove H -256,-20 0.1]
+[charaScale H 1.2]
+[wt 0.2]
+[charaMove H 0 0.1]
+[wt 0.4]
+[charaFadeout H 0.1]
+
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠雀蜂
+糟了……花腔歌手将我们设定为目标了！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠卫宫·Alter
+该死的……现在Berserker死了之后，[r]已经没人能支配那些家伙了！
+[k]
+
+＠卫宫·Alter
+别磨磨蹭蹭的，消灭他们！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠雀蜂
+明白了！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[se ad96]
+[seStop ad96 2.0]
+[flashin loop 0.1 0.1 FFFFFFFF 2D2D2D80]
+[wt 0.7]
+[flashOff]
+[wt 0.7]
+
+[wt 0.4]
+[se bac26]
+[wt 0.7]
+[se bac26]
+[wt 1.4]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠卫宫·Alter
+刚才的声音是……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[se ad266]
+[charaPut F 1]
+[charaEffect H bit_talk_40 0,64]
+[wt 1.4]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠阿尔托莉雅·Alter
+好，干得漂亮，莫里亚蒂！
+[k]
+
+[messageOff]
+
+[se ad59]
+[seStop ad59 2.0]
+[charaFadeout B 0.7]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠雀蜂
+队长！　请指示，应付不过来了！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠卫宫·Alter
+不要惊慌失措！　一边处理烟雾一边逐个击破！[r]瞄准花腔歌手的腿！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠雀蜂
+队长，背后……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠卫宫·Alter
+……！
+[k]
+
+[messageOff]
+
+[se ad7]
+[wipeout rectangleStripLeftToRight 0.2 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[wipein rectangleStripRightToLeft 0.2 1.0]
+[wait wipe]
+
+＠雀蜂
+[FFFFFF]？[-]
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[wt 0.4]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠卫宫·Alter
+什么都没[line 3]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace C 0]
+[charaDepth C 9]
+[charaFadein C 0.1 1]
+
+
+[charaFace B 1]
+[charaDepth B 1]
+[charaFadein B 0.1 2]
+[wt 0.2]
+[charaFace B 0]
+[charaFadeout B 0.7]
+[charaMove B 1024,0 0.2]
+
+[charaTalk on]
+
+＠雀蜂
+啊，对不起。[r]是我看错了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.4]
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠卫宫·Alter
+……哦。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[se bac22]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaEffect C bit_shot_01]
+＠雀蜂
+喂喂，你也太粗暴了吧，卫宫！
+[k]
+
+[messageOff]
+[charaSet G 2023000 1 莫里亚蒂的剪影]
+
+[charaTalk off]
+[charaDepth C 1]
+[charaDepth G 2]
+[charaFace C 0]
+[charaFace G 1]
+[charaFilter G silhouette 00000080]
+[se ad7]
+[charaFadein G 0.7 1]
+[charaFadeout C 0.7]
+[wt 0.7]
+[se bac168]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[charaFadeout G 0.7]
+[wt 1.0]
+
+[charaTalk on]
+
+[charaFace D 2]
+＠莫里亚蒂
+变化自如的无赖汉……虽然到不了他那种程度，[r]但身为邪恶的首领，总不能不学一些变装术吧！
+[k]
+
+[charaFace D 0]
+＠莫里亚蒂
+哎呀呀～，不过也多亏了福尔摩斯的协助！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠卫宫·Alter
+是善的莫里亚蒂吗。[r]……为什么就不能有点残滓的样子，管好自己别出来呢。
+[k]
+
+[charaFace A 1]
+＠卫宫·Alter
+或者说，是你这家伙？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠莫里亚蒂
+唔？[r]你指什么啊？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠卫宫·Alter
+算了，无关紧要。[r]想见新宿的Archer吗，那去吧。
+[k]
+
+[charaFace A 0]
+＠卫宫·Alter
+一开始就预测到[r]无论我采取什么措施，最终都会这样。
+[k]
+
+[charaFace A 1]
+＠卫宫·Alter
+你们就好好在枪身里折腾吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠莫里亚蒂
+……那就恕我们恭敬不如从命了，[r]我要去摧毁我的梦！
+[k]
+
+[messageOff]
+
+[se ad59]
+[seStop ad59 2.0]
+[charaFadeout D 0.7]
+[wt 1.0]
+
+[charaMove H 0,-1024 16.0]
+[wt 1.4]
+
+[se ad69]
+[seStop ad69 2.0]
+[charaScale F 1.0]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.7 1]
+[wt 0.3]
+
+[wt 0.7]
+
+[charaMove F 0,-20 0.1]
+[charaScale F 1.2]
+[wt 0.2]
+[charaMove F 1 0.1]
+[wt 0.4]
+[charaFadeout F 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠卫宫·Alter
+吵死了。
+[k]
+
+[se bac22]
+[wt 0.7]
+
+[charaFace A 0]
+＠卫宫·Alter
+这里就交给你们了。[r]我会去追那些家伙。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠雀蜂
+明白了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠卫宫·Alter
+毕竟不能放他们逃跑。[r]等我进去以后，用爆炸堵住入口。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠雀蜂
+是！[r]……但这样一来，塔内部的防卫……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠卫宫·Alter
+除了我以外还有人能派得上用处吗？[r]负责挡子弹？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠雀蜂
+……明白了！
+[k]
+
+[messageOff]
+
+[se ad59]
+[seStop ad59 2.0]
+[charaFadeout C 0.7]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠卫宫·Alter
+（如果继续任由你们这些杂兵干涉，[r]　可能会导致无法预期的情况。）
+[k]
+
+＠卫宫·Alter
+（你们就和人偶们一起死在这里吧。）
+[k]
+
+
+[charaFace A 5]
+＠卫宫·Alter
+好了，这世界的崩溃即将到来。[r]让我来撬开刹那的间隙，来一场乾坤一掷的比拼吧。
+[k]
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 2.0]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

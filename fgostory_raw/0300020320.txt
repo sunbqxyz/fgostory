@@ -1,0 +1,394 @@
+
+
+＄03-00-02-03-2-0
+
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 玛修]
+[charaSet C 1033000 1 齐格鲁德（剪影）]
+[charaFilter C silhouette 00000080]
+[charaSet D 1098123000 1 穆尼尔]
+[charaSet F 1098123200 1 戈尔德鲁夫]
+[charaSet G 1033000 1 齐格鲁德]
+[charaSet H 98115000 1 特效用]
+[charaSet B 98115000 1 特效用]
+
+[scene 55700]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_41]
+[se ad667]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+[seStop ad667 0.5]
+
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_41]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+玛修·基列莱特，追上了！
+[k]
+
+＠玛修
+对象仍在船内通道中移动[line 3][r]或许已经入侵驾驶舱了！
+[k]
+
+？1：趁福尔摩斯的宝具还有效。
+？2：打倒齐格鲁德！
+
+？！
+
+＠玛修
+是！
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[wt 0.7]
+[se ad8]
+[wt 0.2]
+
+[scene 51600]
+
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+[wt 0.8]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠玛修
+！？　驾驶舱里空无一人！[r]也没有打斗的形迹，到底是[line 3]
+[k]
+
+？1：旁边的舱门敞开着……？
+？2：玛修，在甲板上！
+
+？！
+
+[messageOff]
+[charaFace A 6]
+[wt 0.5]
+
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+
+[charaDepth B 10]
+
+[charaPut B 1]
+[charaEffect B bit_talk_celebro]
+[charaEffect B bit_talk_celebro_back]
+
+[se ad548]
+[seVolume ad548 0 0.7]
+[wt 0.5]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+[scene 60601]
+
+[se ad546]
+
+[wipein rightToLeft 0.7 1]
+[bgmStop BGM_EVENT_80 1.0]
+[wait wipe]
+
+＠穆尼尔
+真的好吗，大叔！[r]把这玩意交出去的话，这艘船就……
+[k]
+
+＠戈尔德鲁夫
+哎哎，吵死了！　给我闭嘴，我们会被杀的啊！[r]这种时候只能这样了，交给我来办吧！
+[k]
+
+＠戈尔德鲁夫
+拿去！　这就是你在找的[#平面之月:Paper Moon]！[r]快拿去！
+[k]
+
+＠戈尔德鲁夫
+原本我是打算藏起来的，[r]但你的强大确实了得！　就当作奖励给你好啦！
+[k]
+
+
+[bgm BGM_EVENT_81 0.1]
+[messageOff]
+[charaTalk off]
+[charaDepth G 10]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 1.0 1]
+[wt 1.0]
+[charaFadeout C 0.1]
+[charaTalk on]
+
+＠齐格鲁德
+…………出乎意料。[r]以人类而言太好说话了。
+[k]
+
+＠齐格鲁德
+并没有想象中那般重视呢。[r]我听说这东西可是你们的生命线啊？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+[charaShake F 0.05 1 1 0]
+
+＠戈尔德鲁夫
+说说说……说得没错，但毕竟不是生命本身啊！[r]就算留着这种东西也不能填饱肚子嘛！
+[k]
+
+＠戈尔德鲁夫
+行了，你你……你的目的已经达成了吧？[r]已经不需要纠缠我们了吧？　不需要了吧？
+[k]
+
+＠戈尔德鲁夫
+这样一来，我们就沦为可怜的漂流者了，[r]是就算放着不管也会自取灭亡的失败者！
+[k]
+
+＠戈尔德鲁夫
+你也不想多费工夫吧？[r]那为何不赶紧转身离开呢！？
+[k]
+
+[charaShakeStop F]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+
+＠齐格鲁德
+……确实。[r]这把剑也并非用来砍无谓肉块的廉价品。
+[k]
+
+[messageOff]
+[charaFadeout G 0.4]
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠戈尔德鲁夫
+（好嘞！　这次也活下来了！）
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[bgmStop BGM_EVENT_81 1.0]
+[wt 0.5]
+
+？1：给我等一下[line 3]！
+？2：我是不会让你得逞的……！
+
+？！
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+没错！　请把指南针还给我们，[r]英灵齐格鲁德！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+＠戈尔德鲁夫
+（哎……稍微等会儿，刚才的发展不是很顺利吗？[r]　为什么要挑衅这种火爆脾气的持刀杀人犯啦？）
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠齐格鲁德
+…………哦？
+[k]
+
+＠齐格鲁德
+人类与，混杂品。[r]还没理解实力的差距吗。
+[k]
+
+＠齐格鲁德
+啊，是这样啊。接受了那个半死不活[r]英灵的某种加护，所以突然自我膨胀了吗。
+[k]
+
+[messageOff]
+[se ad51]
+[wt 0.5]
+
+＠齐格鲁德
+……有击溃的价值呢。[r]这种无可救药，简直就像劣质的铁块。
+[k]
+
+＠齐格鲁德
+好吧。[r]我也想再稍微确认一下肉体的运作情况。
+[k]
+
+＠齐格鲁德
+[line 3]放马过来吧。[r]尽管只是嬉戏的程度，但我还是会认真对付你们的。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+用不着你说。[r]既然你还没从我们的船上撤退[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+
+＠齐格鲁德
+哼。居然胆敢让我撤退。
+[k]
+
+＠齐格鲁德
+女孩，还有[&小子:另一个女孩]。报上名来。[r]所谓的人类英雄通常都会这么做吧。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+[line 3]我是玛修·基列莱特。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+？1：我是[%1]！
+
+？！
+
+＠齐格鲁德
+听到了。[r]但我很快就会忘记。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+嗯。这样无妨。
+[k]
+
+[charaFace A 2]
+
+＠玛修
+……御主。要从敌对从者，[r]齐格鲁德手中夺回[#平面之月:Paper Moon]！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+
+＠齐格鲁德
+膨胀、自负、傲慢、自满。
+[k]
+
+＠齐格鲁德
+人类总是一成不变啊。[r]哼。简直就像诸神一样。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+（诸神……？）
+[k]
+
+[charaFace A 7]
+
+＠玛修
+随便你怎么说。[r]说不定事实正如你所言。
+[k]
+
+＠玛修
+但是，即便如此……
+[k]
+
+[charaFace A 2]
+
+＠玛修
+我和前辈也不会退缩！[r]这次有福尔摩斯先生在背后推了我们一把！
+[k]
+
+＠玛修
+[line 3]该撤退的！[r][line 3]是你！英灵齐格鲁德！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,202 @@
+＄01-00-03-04-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 20300 0]
+[charaSet A 8001001 1 玛修]
+[charaSet B 98003003 1 罗曼医生]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 4003001 1 德雷克]
+[charaSet E 98018100 1 海盗]
+[charaSet F 5009003 1 达·芬奇]
+[charaFace A 0]
+[charaFadein A 0 1]
+[fadein black 1]
+[wait fade]
+＠玛修
+战斗结束了，御主。[r]我来设置终端点。
+[k]
+
+[se ad31]
+[wt 1]
+[seStop ad31]
+＠罗曼医生
+……嗯？[r]刚才好像……
+[k]
+
+＠玛修
+怎么了？
+[k]
+
+＠罗曼医生
+不，大概是我的错觉。[r]你可以像平时那样开始设置了。
+[k]
+
+[charaFace A 13]
+＠玛修
+我明白了。[r]那么[line 2]。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[charaFadeout A 0.4]
+[wait fade]
+[wt 0.5]
+[scene 10000 0]
+[fadein black 0.5]
+[wait fade]
+[se ad13]
+[wait se ad13]
+[communicationChara 5009003 1 5 0 1]
+[wt 0.3]
+＠达·芬奇
+[line 2]那么各位，[r]达芬奇亲的简明扼要小课程开始了。
+[k]
+
+[communicationCharaFace 0]
+＠达·芬奇
+你们现在处于大航海时代的全盛时期。
+[k]
+
+＠达·芬奇
+许多事物从东方流入，[r]欧洲也开始竞相朝新大陆发展。
+[k]
+
+＠达·芬奇
+他们在这期间得到的物品之一就是香料。[r]肉豆蔻、丁香、还有黑川……也就是胡椒。
+[k]
+
+＠达·芬奇
+胡椒是食用腐坏肉类时的必需品，[r]在这个时代，它的价值比黄金还要珍贵。
+[k]
+
+＠达·芬奇
+如果试着把我传送给你们的胡椒瓶交给德雷克船长，[r]你们觉得会发生什么？
+[k]
+
+＠达·芬奇
+去试试看吧。
+[k]
+
+＠德雷克
+不会吧啊啊啊啊啊啊啊啊啊！？
+[k]
+
+[wt 0.5]
+[se bac11]
+[wait se bac11]
+？1：她倒下了。
+
+？2：她昏过去了。
+
+？！
+
+[communicationCharaFace 1]
+＠达·芬奇
+很有趣吧。啊，记得把胡椒瓶收回来。[r]可不能因为一时的恶作剧扰乱市场行情。
+[k]
+
+＠达·芬奇
+看样子召唤阵也建立完毕了。[r]你们要尽情使用哦。
+[k]
+
+[fadeout black 0.5]
+[messageOff]
+[wait fade]
+[communicationCharaClear]
+[wait communicationChara]
+[scene 10500 0]
+[charaFace A 0]
+[charaFadein A 0 1]
+[se ad29]
+[fadein black 0.5]
+[wait fade]
+＠玛修
+召唤阵确立。[r]灵子点生成完毕。
+[k]
+
+[charaFadeout A 0]
+[charaTalk B]
+[charaFadein A 0.1 2]
+[communicationCharaLoop 98003003 0 5 0 0]
+＠罗曼医生
+啊，对了对了。[r]之前的那面海盗旗也查到结果了[line 2]
+[k]
+
+[se ad31]
+[wt 1]
+＠罗曼医生
+那面旗帜是传说中的大■盗「■■■」的■■。[r]也就是说，那群海盗是被称为■■■■■■的■■……
+[k]
+
+[charaFace A 14]
+＠玛修
+医生？　医生，信号似乎有点[line 2][r]医生！？
+[k]
+
+[communicationCharaStop]
+[seStop ad31]
+＠罗曼医生
+[line 6]
+[k]
+
+[charaFadeout A 0.1]
+[charaFadein A 0.1 1]
+[scene 20300 0]
+[charaFace A 7]
+＠玛修
+通讯中断了。[r]到底发生了什么……
+[k]
+
+[bgmStop BGM_EVENT_2 0.1]
+[se ad14]
+[messageOff]
+[shake 0.05 0 5 0]
+[charaFace A 6]
+＠玛修
+呀啊，地震……！？
+[k]
+
+[charaFadeout A 0.1]
+[charaTalk D]
+[charaFadein A 0.1 2]
+[charaFace D 2]
+[charaFadein D 0.1 0]
+＠德雷克
+快趴下，震得相当厉害！
+[k]
+
+[wt 1]
+[shakeStop]
+[seStop ad14 2]
+[charaFace A 0]
+＠玛修
+……好像……停下来了。[r]御主，你没事吧？
+[k]
+
+？1：没事。
+
+？2：没受伤。
+
+？！
+
+[charaFace A 13]
+＠玛修
+好像是，真是万幸。[r]德雷克小姐也没事吧？
+[k]
+
+[charaFace D 0]
+＠德雷克
+和狂暴的海浪比起来可以算是微风了。[r]不过我很担心船和部下。你们不介意回去一趟吧？
+[k]
+
+[charaFace A 0]
+＠玛修
+就这么办吧。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

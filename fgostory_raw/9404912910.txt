@@ -1,0 +1,530 @@
+
+＄94-04-91-29-1-0
+
+[soundStopAll]
+
+[charaSet A 11007000 1 信]
+[charaSet B 2041000 1 织田信胜]
+[charaSet C 1027001 1 冲田总司]
+[charaSet D 98001000 1 玛修]
+[charaSet F 1098195600 1 村落里的大人]
+[charaSet G 1098195500 1 村落里的大人]
+[charaSet H 9010000 1 卑弥呼]
+[charaSet I 1098194300 1 卑弥呼_第一_放下手]
+[charaSet J 1044001 1 斋藤一]
+[charaSet K 10007001 1 冲田Alter]
+[charaSet L 1098138000 1 坂本龙马]
+[charaSet M 1098139000 1 阿龙小姐]
+[charaSet N 6036002 1 李书文]
+
+
+[charaSet S 5009040 1 特效用dummy]
+[charaSet T 5009040 1 特效用dummy]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 96702]
+
+[se ad663]
+[seVolume ad663 0 0]
+[seVolume ad663 1.5 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.5]
+
+[scene 96600 1.5]
+[seStop ad663 1.5]
+[wt 1.9]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_YAMA 0.1]
+
+＠信
+呵～欠……[r]今天还是割稻啊……
+[k]
+
+＠信
+真的已经干腻了。
+[k]
+
+＠信
+话说让我去割稻是不是有些奇怪？[r]我可是正一位的大名啊。
+[k]
+
+[charaFace A 17]
+＠信
+虽说我的正一位还是在[r]本能寺翘辫子之后才获得的。
+[k]
+
+[charaFace A 16]
+＠信
+哎？　猴子也获得了？　太狂妄了～。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠织田信胜
+不愧是姐姐大人！[r]死后还在持续受到日本民众的仰慕呢！
+[k]
+
+[charaFace B 3]
+＠织田信胜
+当然信胜我非常仰慕您！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠信
+这家伙每天早上都烦得要死，烦得要死！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+＠冲田总司
+好啦好啦，少废话快去洗脸。
+[k]
+
+[charaFace C 0]
+＠冲田总司
+御主也该起床啦。
+[k]
+
+[messageOff]
+[bgmStop BGM_YAMA 0.6]
+[charaFadeout C 0.1]
+
+[se ad14]
+[shake 0.02 3 3 0]
+[wt 1.2]
+
+？1：什么声音啊？
+
+？2：再……再让我睡五分钟……！
+
+？！
+
+[seStop ad14 0.4]
+[shakeStop]
+
+[se ad132]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.4 1]
+[wt 0.4]
+[seStop ad132 0.2]
+[wt 0.4]
+
+＠玛修
+不……不好了，前辈！
+[k]
+
+
+＠玛修
+[line 3]那个『凶神』复活了！
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+
+[scene 97700]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠凶神
+HANYOHANYOHANYO～BU！！
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[scene 96700 1.0]
+[charaFace F 3]
+[charaFace G 3]
+[charaFadein F 1.0 2]
+[charaFadein G 1.0 0]
+
+[wt 1.4]
+
+＠村落民众
+呜……呜哇啊啊啊啊啊啊！？
+[k]
+
+＠村落民众
+又是那个怪物啊啊啊啊！！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+
+＠卑弥呼
+怎么可能……[r]『凶神』应该回归光明了……！
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[scene 97700 1.0]
+[charaFadeout H 1.0]
+[wt 1.4]
+
+＠凶神
+HANYOBUHANYOBUHANYOBU！（大口大口。）
+[k]
+
+[messageOff]
+
+[scene 96700 1.0]
+[charaFace D 2]
+[charaFadein D 1.0 1]
+
+[wt 1.4]
+
+
+[charaTalk on]
+
+
+＠玛修
+埴轮……不对，[r]是『凶神』正在吃大家搜集的大米！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+＠卑弥呼
+我们好不容易搜集来的大米啊！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠信
+哎哎，总之只能再次破坏那玩意儿了！
+[k]
+
+[charaFace A 13]
+＠信
+信胜，安排所有民众避难，[r]方法全权交给你了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠织田信胜
+明白了，姐姐大人！
+[k]
+
+＠织田信胜
+避难完成后我会立刻回来帮您！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠冲田总司
+我们负责对付那个埴轮！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 7]
+[charaFadein J 0.1 1]
+＠斋藤一
+与之为敌时，就算长相那样还是相当有压迫感呢。
+[k]
+
+＠斋藤一
+说真的，真亏冲田亲你们能与那种对手战斗啊。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠冲田总司
+总之唯有打倒它才行！[r]斋藤先生，这次你可得帮忙哦！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 11]
+[charaFadein J 0.1 1]
+＠斋藤一
+知道啦知道啦，既然一番队队长这么说就没办法了。
+[k]
+
+
+[charaFace J 2]
+＠斋藤一
+好了，觉悟吧，叫『凶神』的家伙！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 1.0]
+[charaFadeout J 0.1]
+[wt 0.2]
+
+[se ad60]
+[charaTalk K]
+[charaFace K 6]
+[charaFadein K 0.4 1]
+[wt 0.4]
+[seStop ad60 0.1]
+[wt 0.4]
+
+＠冲田Alter
+……这样可不行。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk J]
+[charaFace J 6]
+[charaFadein J 0.1 1]
+＠斋藤一
+你是……冲田亲的……
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠玛修
+冲田Alter小姐！？
+[k]
+
+？1：你之前上哪儿去了？
+
+？2：你能平安无事就好。
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 1]
+[charaFadein K 0.1 1]
+＠冲田Alter
+嗯，我一直在精神地吃着米饭哦。
+[k]
+
+[charaFace K 6]
+＠冲田Alter
+这点暂且不论，我不会允许你们妨碍那个埴轮。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠冲田总司
+你在说什么呢，我的Alter！
+[k]
+
+＠冲田总司
+不能放任那种东西不管吧！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 6]
+[charaFadein L 0.4 1]
+[wt 0.4]
+＠坂本龙马
+嗯，但还是不行。[r]对不起啦，冲田。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠玛修
+连坂本先生也……！？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth L 6]
+[charaDepth M 4]
+
+[charaFace L 6]
+[charaFadein L 0.1 1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 5]
+[charaFadein M 0.4 1]
+[wt 0.4]
+
+＠阿龙小姐
+阿龙小姐当然也在哦。
+[k]
+
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+＠信
+可恶，你们到底打算……
+[k]
+
+＠信
+该不会经典的被洗脑了吧？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.4 1]
+[wt 0.4]
+＠李书文
+放心吧，我们的神志都很清醒。
+[k]
+
+[charaFace N 5]
+＠李书文
+就是不能让你们妨碍那个，仅此而已。
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠冲田总司
+书文老师也是吗？　究竟发生了什么！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+[charaTalk J]
+[charaFace J 8]
+[charaFadein J 0.1 1]
+＠斋藤一
+…………
+[k]
+
+[charaFace J 9]
+＠斋藤一
+既然要妨碍我们，那就没办法了吧，[r]只能让你们老实一点了。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk K]
+[charaFace K 6]
+[charaFadein K 0.1 1]
+＠冲田Alter
+嗯，放马过来吧，令人有些怀念的家伙。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠I：卑弥呼
+…………
+[k]
+
+[charaCrossFade I 9010000 5 0.1]
+＠I：卑弥呼
+……我知道了，我们上吧，未来亲！[wait charaCrossFade I]
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

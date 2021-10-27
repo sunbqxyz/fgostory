@@ -1,0 +1,188 @@
+
+
+
+
+＄94-04-77-77-1-5
+
+
+[soundStopAll]
+
+[skip false]
+
+[maskout black 0]
+[wait mask]
+
+[charaSet A 7011001 1 大流士三世]
+[imageSet B cut171_token_302 1]
+[charaSet C 4002001 1 伊斯坎达尔]
+[charaSet D 5019002 1 埃尔梅罗Ⅱ世（少年）]
+[charaSet E 3043000 1 绘里濑]
+[charaSet T 5009000 1 特效用dummy]
+
+[scene 20730]
+
+[pictureFrameTop cut170_gameframe_bright]
+
+[skip true]
+
+[fadein black 0]
+[wait fade]
+[maskin black 1.0]
+[wait mask]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaTalk depthOff]
+[charaDepth T 4]
+[charaDepth B 5]
+[charaDepth A 1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-50]
+
+[charaEffect A bit_talk_token_change01]
+[wt 1.0]
+
+＠大流士三世
+[image berserker_language_2]
+[k]
+
+[messageOff]
+[charaEffectStop A bit_talk_token_change01]
+[charaPut T 0,-10]
+[charaEffect T bit_talk_token_change02]
+[se ad39]
+[wt 3.2]
+
+[se ad29]
+[seStop ad29 1.5]
+[wt 0.5]
+[charaFadeout A 0.4]
+
+[charaTalk B]
+[charaFadein B 0.4 0,-210]
+[wt 0.5]
+
+[charaMove T 0,10 1.2]
+[wt 1.2]
+
+[charaFadeout B 0.4]
+[wt 0.5]
+
+[se adm19]
+[seVolume adm19 0 0.3]
+[seVolume adm19 1.0 1.0]
+[wt 0.5]
+
+[seStop adm19 1.7]
+[charaMove T 0,700 2.2]
+[wt 2.2]
+
+[charaEffectStop T bit_talk_token_change02]
+[wt 0.1]
+[charaEffectDestroy T bit_talk_token_change02]
+
+[charaTalk depthOn]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠伊斯坎达尔
+余又赢了哦。和那时一样。[r]不过这次是在激战中。
+[k]
+
+[charaFace C 0]
+[charaEffect C bit_talk_06]
+
+＠伊斯坎达尔
+喂，大流士。这下你应该心悦诚服了吧。[r]怀着武人的荣耀长眠吧。
+[k]
+
+
+[messageOff]
+[se ade406]
+[wt 0.2]
+[flashin once 0.1 0.6 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout C 0.1]
+[wt 0.2]
+[charaEffectStop C bit_talk_06]
+[wt 0.1]
+[seStop ade406 0.6]
+[wt 1.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠埃尔梅罗Ⅱ世（少年）
+虽然是在耍帅……不过也罢。[r]反正本人也能接受。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 0,-50]
+
+＠绘里濑
+哎？　你们在说什么？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 0,-50]
+
+＠埃尔梅罗Ⅱ世（少年）
+哎？　怎么，难道你没察觉到吗？
+[k]
+
+[charaFace D 0]
+[charaEffect D bit_talk_06]
+
+＠埃尔梅罗Ⅱ世（少年）
+无论是我还是Rider，都只是[#游戏的棋子]。[r]而且，不只是我们[line 3]
+[k]
+
+[messageOff]
+[se ade406]
+[wt 0.2]
+[flashin once 0.1 0.6 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout D 0.1]
+[wt 0.2]
+[charaEffectStop D bit_talk_06]
+[wt 0.1]
+[seStop ade406 0.6]
+[wt 1.2]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 0,-50]
+
+＠绘里濑
+等等！　这是什么意思？[r]难道说[line 3]
+[k]
+
+＠绘里濑
+……我也……[#和你们一样]？
+[k]
+
+[messageOff]
+[maskout black 2.0]
+[bgmStop BGM_EVENT_48 2.0]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+

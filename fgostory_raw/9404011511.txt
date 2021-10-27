@@ -1,0 +1,1948 @@
+
+
+
+＄94-04-01-15-1-1
+
+[soundStopAll]
+
+
+[charaSet A 1098180700 1 冲田·J·总司]
+[charaSet B 1040000 1 葛饰北斋]
+[charaSet C 1098180700 1 残像特效1]
+[charaSet D 1098180700 1 残像特效2]
+[charaSet E 98115000 1 dummy特效1]
+[charaSet F 98115000 1 dummy特效2]
+[charaSet G 98115000 1 dummy特效3]
+[charaSet H 98115000 1 dummy特效4]
+[charaSet I 98115000 1 dummy特效5]
+
+[charaDepth D 1]
+[charaDepth B 1]
+[charaDepth C 7]
+[charaDepth F 8]
+[charaDepth A 9]
+
+[bgm BGM_EVENT_24 0.1]
+
+[branchQuestNotClear lblNotClear1 3000303]
+[flag IsClear true]
+[branch lblConf1]
+[label lblNotClear1]
+[flag IsClear false]
+[label lblConf1]
+
+
+
+[scene 10000]
+
+[se ade208]
+[seVolume ade208 0 0]
+[seVolume ade208 0.5 0.8]
+
+[charaPut F 1]
+[charaEffect F bit_talk_41]
+
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk depthOff]
+
+[se ad704]
+[seVolume ad704 0 0.6]
+
+
+[charaFace A 2]
+[charaPut A 1]
+[charaFadeTime A 0 0.8]
+[wt 0.1]
+
+[shake 0.03 4 4 0]
+[charaFace C 2]
+[charaPut C 1]
+[charaFadeTime C 0 0.6]
+
+[charaMoveScale A 1.3 0.2]
+[charaMove A 0,50 0.2]
+[wt 0.1]
+[charaFadeout A 0.1]
+[wt 0.05]
+
+
+[charaFace D 2]
+[charaPut D 1]
+[charaFadeTime D 0 0.3]
+
+[charaMoveScale C 1.3 0.2]
+[charaMove C 0,50 0.2]
+[wt 0.1]
+[charaFadeout C 0.1]
+[wt 0.05]
+
+[charaMoveScale D 1.3 0.2]
+[charaMove D 0,50 0.2]
+[wt 0.1]
+[charaFadeout D 0.1]
+[wt 0.05]
+
+[charaTalk depthOn]
+[shakeStop]
+[charaPut F 2000,2000]
+[wt 0.3]
+
+[se ad32]
+[effect bit_talk_14 40,0]
+
+[charaFace B 9]
+[charaScale B 1.08]
+[charaFadein B 0.1 1]
+
+[charaMoveReturn B 15,10 0.3]
+[charaShake B 0.04 2 3 0.3]
+[wt 0.4]
+
+[se ad32]
+[effect bit_talk_14 -50,-20]
+
+[charaMoveReturn B -20,-10 0.2]
+[charaShake B 0.04 3 2 0.2]
+[wt 0.4]
+
+[se ad32]
+[effect bit_talk_14 40,20]
+
+[charaMoveScale B 1.0 0.2]
+[charaMoveReturn B 0,20 0.1]
+[charaShake B 0.04 3 3 0.1]
+[wt 0.8]
+
+
+[se bac1]
+[charaFace B 2]
+[charaMoveScale B 1.2 0.2]
+[charaMove B 0,30 0.2]
+[charaFadeout B 0.2]
+[wt 0.4]
+
+[charaPut F 1]
+
+[charaFace A 5]
+[charaFace C 5]
+[charaFace D 5]
+[charaScale A 1.0]
+[charaScale C 1.0]
+[charaScale D 1.0]
+[charaFadein A 0.1 1]
+[charaFadein C 0.1 1]
+[charaFadein D 0.1 1]
+[wt 0.3]
+
+[se bac7]
+[effect bit_talk_Slash_white_01_L 0,0 H]
+[wt 0.15]
+[charaMove A -280,0 0.1]
+[charaMove C -140,0 0.1]
+[wt 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaFadein C 0.1 -280,0]
+[charaFadein D 0.1 -280,0]
+
+[se bac7]
+[effect bit_talk_Slash_white_01 -280,0 H]
+[wt 0.15]
+[charaMove A 280,0 0.1]
+[charaMove C 0,0 0.1]
+[wt 0.1]
+[charaFadeout C 0.2]
+[charaFadeout D 0.2]
+[wt 0.1]
+[charaFadein C 0.1 280,0]
+[charaFadein D 0.1 280,0]
+
+[se bac7]
+[effect bit_talk_Slash_white_01_L 280,0 F]
+[wt 0.15]
+[charaMove A 0,0 0.1]
+[charaMove C 0,0 0.1]
+[wt 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaFace A 2]
+[wt 0.15]
+[fowardEffect bit_talk_quickmove]
+[charaFadeout A 0.1]
+
+[se bac136]
+[effect bit_talk_h_slash01 0,0 H]
+[wt 0.15]
+
+[fadeout white 0.3]
+[wait fade]
+
+[charaFadeout A 0.25]
+[wt 0.1]
+[charaPut F 2000,2000]
+[charaEffectStop F bit_talk_41]
+
+[scene 10721]
+
+[fadein white 0.3]
+[wait fade]
+
+[se ad223]
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,30]
+[charaMove B 1 0.2]
+[wt 0.4]
+
+
+＠葛饰北斋
+……好快！　怎么会如此之快！[r]单论突击速度的话，在泳装剑豪里也能排第一了！
+[k]
+
+
+＠葛饰北斋
+但我这通过笔法练出来的剑法也不会输给你！
+[k]
+
+＠葛饰北斋
+还差一点就能逮到你了……！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.2 0,30]
+
+[se ad223]
+[charaMove A 1 0.2]
+[wt 0.8]
+
+＠冲田·J·总司
+原来如此……我还以为你的剑术很外行呢，[r]原来那四把刀并不只是摆摆样子啊。
+[k]
+
+＠冲田·J·总司
+看来我也得拿出我的真本事了。
+[k]
+
+[charaFace A 2]
+
+＠冲田·J·总司
+限制器解除！
+[k]
+
+[messageOff]
+[se ad270]
+[wt 0.15]
+
+[se ad370]
+[seStop ad270 0.9]
+[effect bit_talk_starshine 47,157]
+[effect bit_talk_starshine -8,151]
+[wt 1.6]
+
+[charaFace A 5]
+
+＠冲田·J·总司
+我要上了哦，这是最后一击！
+[k]
+
+[charaFace A 2]
+
+＠冲田·J·总司
+坚持住啊，我的身体……！
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ad39]
+[charaPut E 1]
+[charaEffect E bit_talk_36]
+[wt 2.4]
+[seStop ad39 0.5]
+
+＠冲田·J·总司
+M·DRIVE FULL BURST！！
+[k]
+
+＠冲田·J·总司
+[f large][line 3]『喷射三段突』！！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut E 2000,2000]
+[charaEffectStop E bit_talk_36]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠葛饰北斋
+这不算什么！　现在退却岂不颜面尽失！
+[k]
+
+＠葛饰北斋
+来吧！　雾降、观音、葵、良辩、[r]义经、养老、小野、阿弥陀！
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ad39]
+[charaPut F 1]
+[charaEffect F bit_talk_36]
+[wt 2.4]
+[seStop ad39 0.5]
+
+＠葛饰北斋
+[fontSize large][line 3]『诸国瀑布揽胜』！！！
+[k]
+
+[messageOff]
+[fadeout black 0.4]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_36]
+
+
+[charaSet C 11007002 1 赌场魔王]
+[charaSet D 98100400 1 玛修]
+
+[imageSet J cut063_cinema 1]
+[charaScale J 1.01]
+
+[charaDepth J 10]
+
+[scene 10000]
+[wt 0.5]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad32]
+[effect bit_bolg_03b]
+[wt 0.45]
+
+[se bac18]
+[effect bit_talk_14 30,0]
+[wt 0.2]
+[se bac18]
+[effect bit_talk_14 -80,50]
+[wt 0.25]
+[se bac18]
+[effect bit_talk_14 60,40]
+[wt 0.2]
+
+[fadeout white 0.5]
+[wait fade]
+
+[effectDestroy bit_bolg_03b]
+[effectDestroy bit_talk_14]
+
+[scene 10721]
+[wt 1.0]
+
+[fadein white 0.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 4]
+[charaScale B 1.0]
+[charaFadein B 0.2 30,50]
+[charaMove B 10,30 1.0]
+[wt 0.2]
+
+[se ad223]
+[charaMove B 1 0.1]
+[wt 0.8]
+
+＠葛饰北斋
+……呜！？　好强大的威力。[r]那个叫喷射什么的真是可怕的机关啊。
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaMove B 0,-30 0.3]
+[wt 0.2]
+[se ad54]
+[wt 0.8]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaScale A 1.1]
+[charaFadein A 0.2 -30,50]
+[charaMove A -10,30 1.0]
+[wt 0.2]
+
+[se ad223]
+[charaMove A 1 0.1]
+[wt 0.8]
+
+＠冲田·J·总司
+不，你的剑法才是真的出色……
+[k]
+
+[charaFace A 9]
+
+＠冲田·J·总司
+……呢。
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaFadeout A 0.4]
+[charaMove A 0,-50 0.4]
+[wt 0.3]
+[se ad144]
+[wt 1.4]
+
+？1：冲田小姐……！？
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 0,-50]
+[charaMove A 1 0.4]
+[charaShake A 0.02 3 3 0.6]
+[wt 0.8]
+
+＠冲田·J·总司
+御……御主……。
+[k]
+
+
+？2：冲田·J·总司……！？
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 0,-50]
+[charaMove A 1 0.4]
+[charaShake A 0.02 3 3 0.6]
+[wt 0.8]
+
+＠冲田·J·总司
+对不起，我还是不习惯这个称呼……
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠玛修
+话说冲田小姐为什么会成为泳装剑豪……[r]您应该还在迦勒底吧……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠冲田·J·总司
+其……其实原因非常复杂，[r]说来话长……
+[k]
+
+
+[charaFace A 4]
+＠冲田·J·总司
+呼哇呼哇呼哇壬生狼～……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 19]
+[charaFadein C 0.1 1]
+
+＠赌场魔王
+哎？　现在开始回忆？
+[k]
+
+[messageOff]
+[se ade84]
+[wt 0.2]
+[wipeout circleIn 2.0 1.0]
+[bgmStop BGM_EVENT_11 2.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[charaSet A 1098180800 1 泳装冲田小姐]
+[charaSet B 7029000 1 泳装信]
+[charaSet C 7026000 1 茶茶]
+[charaSet D 10007001 1 冲田Alter]
+[charaSet E 3038000 1 长尾景虎]
+[charaSet F 7035001 1 森长可]
+[charaSet G 7025001 1 土方岁三]
+[charaSet H 1098138000 1 坂本龙马]
+[charaSet I 1098139000 1 阿龙小姐]
+
+[charaDepth I 1]
+[charaDepth H 9]
+
+[branch lblNotClear2 IsClear false]
+[scene 66600]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10310]
+[label lblConf2]
+
+[pictureFrame cut063_cinema]
+[wt 1.5]
+
+[seStop ade84 1.5]
+
+[wipein circleIn 1.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 0,-50]
+[wt 0.4]
+
+[bgm BGM_EVENT_94 0.1]
+
+＠泳装冲田小姐
+哼哼哼～♪
+[k]
+
+＠泳装冲田小姐
+耶！　泳装冲田小姐大胜利～！！
+[k]
+
+[charaFace A 0]
+＠泳装冲田小姐
+哎呀～，我苦苦追求泳装已经多少年了啊……
+[k]
+
+＠泳装冲田小姐
+那是饱受信刺激的岁月，[r]是漫长而严苛的积累时期。
+[k]
+
+[charaFace A 18]
+＠泳装冲田小姐
+不过，事到如今这些都已经无所谓了！
+[k]
+
+＠泳装冲田小姐
+没错，终于……！
+[k]
+
+[charaFace A 1]
+＠泳装冲田小姐
+那位冲田小姐终于能以泳装形态登场啦！
+[k]
+
+＠泳装冲田小姐
+实际上，连我也觉得自己是不是太美妙了！[r]这身泳装的大半！　胸口的丝带着实可爱！
+[k]
+
+[charaFace A 18]
+＠泳装冲田小姐
+呵呵呵呵呵……！[r]御主和信他们对此也肯定会[line 3]
+[k]
+
+[messageOff]
+[fadeout white 0.8]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 39900]
+
+[wipeFilter circleIn 0.5 0.5]
+
+
+[pictureFrame]
+[wt 1.0]
+
+
+[fadein white 0.8]
+[wait fade]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠泳装信
+呜哎！？　这是怎么了，冲田！？[r]那超级美丽的泳装打扮[line 3]！？
+[k]
+
+＠泳装信
+太可爱了，我可要大败北啦！？！？？？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+＠泳装冲田小姐
+呵呵呵……[r]是吧，是吧？
+[k]
+
+＠泳装冲田小姐
+连愚钝的信都发现了呢。
+[k]
+
+[charaFace A 1]
+＠泳装冲田小姐
+只要我冲田小姐换上了泳装，其魅力已经[r]足以被称作幕末最强新选组☆少女也不为过了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠泳装信
+可恶，我本以为你充其量只配穿俗气的QuickT恤，[r]现在才发觉自己的想法是多么浅薄啊！
+[k]
+
+＠泳装信
+这简直是本世纪最可爱的泳装！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠茶茶
+确实出奇地合适！[r]茶茶也不得不[#摘下头盔:感到折服啦]！
+[k]
+
+[charaFace C 4]
+
+＠茶茶
+殿下的这个头盔在夏天未免闷热得太那啥了啦。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠冲田Alter
+不愧是本体的我，这身泳装打扮太好看了。
+[k]
+
+＠冲田Alter
+这种可爱级别搞不好会成为抑止的对象呢。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaSet C 6033000 1 冈田以藏]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠长尾景虎
+如此神圣，即便被誉为毗沙门天，[r]不，被誉为弁天大人化身也没问题呢。
+[k]
+
+＠长尾景虎
+具体形容起来就像随便混入了神性A+之类[r]神话级被动技能于一体吧，大概！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+＠森长可
+哇呀哈哈哈哈哈哈！　这身打扮是啥啊！[r]太古怪了！
+[k]
+
+＠森长可
+利休居士甚至都要赤脚跳踢踏舞了吧！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 1]
+
+＠土方岁三
+呵……我此前一直没有发现，[r]原来你身上隐藏着如此惊人的魅力。
+[k]
+
+＠土方岁三
+你击中了我的心。[r]难道是因为你平日里都绑着束胸吗？
+[k]
+
+＠土方岁三
+不愧是新选组一番队队长，冲田总司。[r]不如就趁现在改名叫爆炸性☆冲田吧？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFace I 5]
+[charaFadein H 0.1 1]
+[charaFadein I 0.1 1]
+
+＠坂本龙马
+我确实不得不说你的魅力超凡绝伦。[r]日本的新时代无疑是由冲田你开创的。
+[k]
+
+[charaFace H 0]
+
+＠坂本龙马
+阿龙小姐也这么认为吧？
+[k]
+
+＠阿龙小姐
+嗯，人类中怎会有如此美丽的女剑士，[r]莫非你是从天而降的[#超级:ULTRA]仙女？
+[k]
+
+[charaFace I 1]
+
+＠阿龙小姐
+让我送你一盒青蛙以表祝贺吧。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠冈田以藏
+哟！　不愧是幕末最强的美少女剑士大人！[r]我这垃圾杂兵人斩以藏也深感钦佩！
+[k]
+
+＠冈田以藏
+需要我给您揉揉脚吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠泳装冲田小姐
+哎呀～，不要这样啦，各位。
+[k]
+
+[charaFace A 18]
+
+＠泳装冲田小姐
+都被大家夸得都不好意思了，[r]不过各位说得都没错！
+[k]
+
+＠泳装冲田小姐
+不管怎么说，我冲田小姐的泳装打扮，[r]就是超级好看！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaSet C 7026000 1 茶茶]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠泳装信
+没错沖田。我再次认识到，[r]穿着俗气T恤的我永远比不上你分毫。
+[k]
+
+＠泳装信
+让我们大家一起称颂天才美少女泳装剑士冲田大人吧！
+[k]
+
+＠泳装信
+恭喜获得泳装！　恭喜！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+
+[charaTalk off]
+[charaDepth D 5]
+[charaDepth C 6]
+
+[charaFace C 1]
+[charaFace D 1]
+[charaFadein C 0.1 -230,0]
+[charaFadein D 0.1 230,0]
+
+＠众人
+恭喜！　恭喜！　恭喜！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaSet C 6033000 1 冈田以藏]
+
+[charaDepth E 2]
+[charaDepth F 3]
+[charaDepth G 4]
+[charaFace E 14]
+[charaFace F 1]
+[charaFace G 1]
+[charaFadein E 0.1 1]
+[charaFadein F 0.1 260,0]
+[charaFadein G 0.1 -290,0]
+
+
+＠众人
+恭喜！　恭喜！　恭喜！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaDepth H 6]
+[charaDepth I 5]
+[charaDepth C 7]
+[charaFace H 1]
+[charaFace I 1]
+[charaFace C 1]
+[charaFadein H 0.1 -220,0]
+[charaFadein I 0.1 -220,0]
+[charaFadein C 0.1 250,0]
+
+＠众人
+恭喜！　恭喜！　恭喜！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+[se ad6]
+[seVolume ad6 0 0]
+[seVolume ad6 0.6 1.0]
+[wt 2.0]
+
+[seStop ad6 1.0]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 7]
+＠泳装冲田小姐
+谢谢大家！　谢谢！
+[k]
+
+＠泳装冲田小姐
+感谢此前我生活过的幕府与全体新选组的各位！
+[k]
+
+[charaFace A 1]
+＠泳装冲田小姐
+泳装冲田小姐，[wt 0.4]大、[wt 0.4]大、[wt 0.4]大胜利～！！
+[k]
+
+[messageOff]
+[fadeout white 0.8]
+[wait fade]
+
+[wipeOff]
+
+[branch lblNotClear3 IsClear false]
+[scene 66600]
+[branch lblConf3]
+[label lblNotClear3]
+[scene 10310]
+[label lblConf3]
+
+[pictureFrame cut063_cinema]
+
+[charaSet D 25003002 1 女主角XX]
+
+[charaDepth A 1]
+[charaDepth D 2]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+[wt 1.0]
+
+
+[fadein white 0.8]
+[wait fade]
+
+＠泳装冲田小姐
+[line 3]一定会是这样的发展！
+[k]
+
+[charaFace A 1]
+
+＠泳装冲田小姐
+哼哼哼～♪
+[k]
+
+＠泳装冲田小姐
+赶紧去向大家炫耀一下吧！
+[k]
+
+[messageOff]
+[se ad59]
+[charaFadeout A 0.7]
+[charaMove A 206,-50 0.7]
+[wipeout rectangleStripRightToLeft 1.0 1.0]
+[seStop ad59 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[se ad95]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 50,-50]
+[charaMove D 0,-50 0.4]
+[wt 0.4]
+[seStop ad95 0.4]
+[wt 0.4]
+
+＠女主角XX
+呜！　没想到在我刚泡下杯面后，[r]就需要出动，我太倒霉了！
+[k]
+
+
+＠女主角XX
+不过我毕竟是精明强干的宇宙刑警，[r]出击后仅需3分钟就可歼灭目标！
+[k]
+
+＠女主角XX
+又解决了一个宇宙危机。[r]今年的奖金审查看来可以期待一下了！
+[k]
+
+[charaFace D 2]
+
+＠女主角XX
+而且这点时间的话，[r]刚泡下的杯面应该还没有坨吧！
+[k]
+
+＠女主角XX
+一定要等我！　我本月最后一碗杯面！
+[k]
+
+[messageOff]
+[se ad59]
+[charaFadeout D 0.7]
+[charaMove D -206,-50 0.7]
+[wipeout rectangleStripLeftToRight 1.0 1.0]
+[seStop ad59 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+
+[se ad59]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 -256,-50]
+[charaMove A 0,-50 0.4]
+[wt 0.4]
+
+＠泳装冲田小姐
+哼哼哼～♪
+[k]
+
+[seStop ad59 0.1]
+[charaFace A 6]
+＠泳装冲田小姐
+啊[messageShake 0.04 3 3 0.4]！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[se ad59]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 256,-50]
+[charaMove D 0,-50 0.4]
+[wt 0.4]
+
+＠女主角XX
+我～的～杯面～♪
+[k]
+
+[seStop ad59 0.1]
+[charaFace D 2]
+＠女主角XX
+哎[messageShake 0.04 3 3 0.4]！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+
+[charaTalk off]
+
+[charaFace D 2]
+[charaFadein D 0.4 460,-50]
+
+[charaFace A 6]
+[charaFadein A 0.4 -460,-50]
+[wt 0.3]
+
+
+[se ad59]
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wt 0.1]
+[charaMove A -100,-50 0.6]
+[charaMove D 100,-50 0.6]
+[wt 0.5]
+
+[seStop ad59 0.4]
+[se ad322]
+[seVolume ad322 0 0.5]
+[charaShake A 0.03 4 4 0.5]
+[charaShake D 0.03 4 4 0.5]
+
+
+
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_94 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+
+[effect bit_talk_celebro 0,75]
+[backEffect bit_talk_celebro_back 0,75]
+
+[charaSet E 1098177600 1 泳装冲田小姐（剪影）]
+[wt 1.0]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.4 0,-100]
+[charaMove D 0,-50 0.4]
+[wt 0.8]
+
+[effectStop bit_talk_celebro]
+[backEffectStop bit_talk_celebro_back]
+
+＠女主角XX
+好痛好痛……抱……抱歉。[r]因为我太着急了……
+[k]
+
+＠女主角XX
+我记得你好像是以前在锅炉房旁[r]和我打过照面的……冲田小姐吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+＠E：泳装冲田小姐
+…………
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+
+＠女主角XX
+没事吧？　只是轻轻撞了一下，[r]看上去似乎没有受什么伤……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠E：泳装冲田小姐
+…………
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠女主角XX
+那个……怎么没有反应啊，喂喂～？
+[k]
+
+＠女主角XX
+CQ？　CQ？　请回答？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠E：泳装冲田小姐
+…………
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,-50]
+＠女主角XX
+…………难……难道……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠E：泳装冲田小姐
+…………（效果音：铛[line 2]）
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,-50]
+＠女主角XX
+…[messageShake 0.02 3 3 0.4]…死……死掉了！？[se ad119]
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[scene 49000]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+＠女主角XX
+这……这下可出大问题了……
+[k]
+
+＠女主角XX
+一旦杀害了非好战原生生物的话，[r]今年的奖金肯定会被扣，
+[k]
+
+＠女主角XX
+说不好会全部扣除！？
+[k]
+
+＠女主角XX
+这样一来，我都买不起下个月的杯面了……！
+[k]
+
+[charaFace D 2]
+＠女主角XX
+事已至此，[r]只能用宇宙科学的力量拯救她了！
+[k]
+
+[charaFace D 4]
+＠女主角XX
+幸好有这个被我不知不觉中发现的谜之工房，[r]以及我装甲的剩余零件，或许可以……
+[k]
+
+[charaFace D 2]
+＠女主角XX
+不，是一定要做！　加油！[r]奖金之神在看着我！
+[k]
+
+＠女主角XX
+这是一场只许胜不许败的战斗！
+[k]
+
+[messageOff]
+[wipeout rollRight 0.7 0.5]
+[wait wipe]
+
+[charaSet I 98115000 1 dummy特效5]
+
+[charaScale I 0.55]
+[charaRoll I 30]
+[wt 0.5]
+
+[wipein rollLeft 0.7 0.5]
+[wait wipe]
+[wt 0.3]
+
+＠女主角XX
+那现在就开始改造手术吧！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[se ad712]
+[seVolume ad712 0 0.8]
+[se ade318]
+[wt 1.0]
+[scene 10001 0.1]
+[wt 0.1]
+[scene 49000 0.1]
+[wt 0.1]
+[scene 10001 0.1]
+[wt 0.1]
+[scene 49000 0.1]
+[wt 1.4]
+
+[seVolume ad712 1.0 0.1]
+[seVolume ade318 1.0 0.4]
+
+＠女主角XX
+唔，这个零件应该放在这里……
+[k]
+
+＠女主角XX
+总之先设置这个银河细胞驱动装置[r]代替生命维持装置，
+[k]
+
+＠女主角XX
+把当时在原始宇宙中捡到的[r]莫名其妙的能源宝石设置在这里。
+[k]
+
+＠女主角XX
+接下来就在这从宇宙角度来看[r]未免有些过时的喷射背包上安装反应器……
+[k]
+
+[messageOff]
+[se ad516]
+[wt 1.0]
+
+[se ad516]
+[wt 1.0]
+
+[fadeout black 1.5]
+[seStop ad712 1.5]
+[seStop ade318 1.5]
+[wait fade]
+
+
+[charaSet A 1098180700 1 泳装冲田小姐]
+[charaSet E 1098180700 1 泳装冲田小姐（剪影）]
+[charaSet H 98115000 1 dummy特效6]
+[charaFilter E silhouette 000000FF]
+
+[charaDepth E 1]
+[charaDepth D 1]
+[charaDepth H 9]
+[charaDepth A 9]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 0,-50]
+
+＠女主角XX
+[line 3]完……完成了！
+[k]
+
+＠女主角XX
+理论上来说应该是完美的！
+[k]
+
+[charaFace D 2]
+＠女主角XX
+来吧，复活吧！　我的奖金！
+[k]
+
+＠女主角XX
+……不对，复活吧，新战士啊！
+[k]
+
+＠女主角XX
+开关打开！　进化！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[se ad1]
+[wt 1.0]
+[se ad270]
+[seVolume ad270 0 0.6]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 0,-50]
+[wt 0.8]
+＠B：？？？
+……唔……唔。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠女主角XX
+成功了，我成功了！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+[charaShake E 0.02 3 3 0.5]
+＠B：？？？
+哈？！　这里究竟是……？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠女主角XX
+你能醒过来真是太好了。我是无辜的。[r]是我救了倒在走廊里的你。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠B：？？？
+那……那真是太感谢了……
+[k]
+
+＠B：？？？
+对不起，我以前就很虚弱，[r]一点小事就会让我晕倒。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠女主角XX
+难怪。我越来越觉得这不是我的错了呢。[r]不过，从此以后你就可以放心了。
+[k]
+
+＠女主角XX
+今后这个喷射背包会保护你的身体。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠A：？？？
+您……您真是太客气了……
+[k]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+＠B：？？？
+原来如此……哎？　喷射？
+[k]
+
+[messageOff]
+[wt 0.2]
+
+[charaTalk off]
+[charaDepth A 4]
+[charaDepth E 6]
+
+[charaFace A 4]
+[charaFadein A 0.4 0,-50]
+[wt 0.5]
+
+[charaFadeout E 0.7]
+[wt 1.5]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk on]
+[charaFace A 2]
+＠A：？？？
+哎[messageShake 0.02 3 3 0.6]！？　这……这是什么啊！？
+[k]
+
+＠A：？？？
+喷……喷射！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠女主角XX
+这是生命维持装置内置的空间战斗配件，[r]有什么问题吗？
+[k]
+
+＠女主角XX
+虽然型号有些旧，但是以这个星球的[r]文明程度来看，绝对称得上[#欧帕兹:OOPArt]，
+[k]
+
+＠女主角XX
+只要加把劲，[r]说不定还能进行宇宙间战斗。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-50]
+
+＠A：？？？
+不是不是，为什么偏偏是喷射？
+[k]
+
+＠A：？？？
+冲田小姐无论怎么看都是幕末正统美少女剑士吧？
+[k]
+
+＠A：？？？
+喷射难道不奇怪吗！？　幕末喷射！？
+[k]
+
+[messageOff]
+[se ade102]
+[seVolume ade102 0 0.4]
+[charaMove A 0,-30 2.0]
+[wt 2.4]
+[seStop ade102 0.5]
+[wt 0.4]
+
+[charaFace A 6]
+＠A：？？？
+哇！？　飞……飞起来了！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠女主角XX
+哈哈哈。[r]当然会飞啦，毕竟是喷射嘛。
+[k]
+
+
+＠女主角XX
+你重生了，冲田总司小姐。[r]没错，作为翱翔于苍穹的喷射剑士，
+[k]
+
+[charaEffect H bit_talk_41]
+[charaFace D 2]
+＠女主角XX
+[line 3]冲田·J·总司重生了！（敷衍。）[se ad186]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-30]
+
+＠冲田·J·总司
+冲……冲田·J·总司！？
+[k]
+
+[charaFace A 2]
+
+＠冲田·J·总司
+话说J是什么意思！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠女主角XX
+是[#喷射:Jet]的J啦。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-30]
+
+＠冲田·J·总司
+不是这个问题吧！？[r]这身打扮根本没法出门啊，还给你！
+[k]
+
+[messageOff]
+[se ad156]
+[charaShake A 0.05 2 2 0.9]
+[wt 1.2]
+[seStop ad156 0.1]
+[wt 0.4]
+
+[charaFace A 4]
+
+＠冲田·J·总司
+哎，咦？　这个怎么脱不掉……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠女主角XX
+对。毕竟它兼具了生命维持装置的功能。
+[k]
+
+
+＠女主角XX
+呃，炉心M·DRIVE说明书……[se ade96]
+[k]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+＠女主角XX
+我看看哦，运转时间是………………[wt 0.8][messageShake 0.02 3 3 0.4][charaFace D 2]啊[line 5]？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-30]
+
+＠冲田·J·总司
+怎……怎么了？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+
+＠女主角XX
+非……非常抱歉。因为刚才因为太着急了，[r]以致于我没有仔细看说明书，
+[k]
+
+＠女主角XX
+生命维持装置的运转时间还剩72小时，[r]也就是地球时间的还剩3天……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-30]
+
+＠冲田·J·总司
+又不是不看说明书就做出来的塑料模型，[r]要是左右脚装反了该怎么办啊？
+[k]
+
+[charaFace A 2]
+
+＠冲田·J·总司
+…[messageShake 0.02 3 3 0.4]…你说什么，3天！？
+[k]
+
+＠冲田·J·总司
+我的生命还剩3天！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+
+＠女主角XX
+说明书上是这么写的……
+[k]
+
+＠女主角XX
+对……对不起，我本想救你，[r]没想到会是这种结果……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-30]
+
+＠冲田·J·总司
+那现在该怎么办啦！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,-50]
+
+＠女主角XX
+别……别慌！
+[k]
+
+＠女主角XX
+这种时候就应该冷静下来泡一碗杯面。
+[k]
+
+[messageOff]
+[se ade256]
+[seVolume ade256 0 0]
+[seVolume ade256 0.6 1.0]
+[charaFace D 5]
+[charaMove D 0,-60 0.6]
+[wt 0.8]
+
+[charaMove D 0,-50 0.4]
+[seStop ade256 0.4]
+[wt 1.8]
+
+[se ade116]
+[charaFace D 2]
+[charaMoveReturn D 0,-40 0.2]
+[wt 0.8]
+
+＠女主角XX
+……对了，我突然想到一个点子！
+[k]
+
+＠女主角XX
+圣杯！　没错，这种时候就需要圣杯！[r]只要有圣杯在，一切都不成问题！
+[k]
+
+＠女主角XX
+听说在现在拉斯维加斯举办的泳装剑豪七色决胜中，[r]只要获得最终胜利，就可以得到圣杯什么的！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-30]
+
+＠冲田·J·总司
+泳……泳装剑豪七色决胜……！
+[k]
+
+[messageOff]
+[se ade84]
+[wt 0.2]
+[bgmStop BGM_EVENT_81 2.0]
+[wipeout circleIn 2.0 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[pictureFrame]
+
+[charaSet B 11007002 1 赌场魔王]
+[charaSet F 1040000 1 葛饰北斋]
+
+[scene 10721]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 1.5]
+
+[seStop ade84 1.5]
+[wipein circleIn 1.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠冲田·J·总司
+[line 3]就是这样，[r]我要在泳装剑豪七色决胜中获胜并取得圣杯，
+[k]
+
+＠冲田·J·总司
+然后治好我的身体……
+[k]
+
+？1：只剩下三天生命……！？
+？2：怎……怎么会这样……
+
+？！
+
+＠冲田·J·总司
+顺便一提，由于我在赶来的路上迷路，[r]还稀里糊涂地在路边摊买了份炒面吃，
+[k]
+
+＠冲田·J·总司
+现在时间只剩10分钟左右了……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠赌场魔王
+宝[messageShake 0.02 3 3 0.6]贵的时间就这么被你浪费了！？
+[k]
+
+＠赌场魔王
+为什么要去路边买吃的啦！
+[k]
+
+[charaFace B 19]
+
+＠赌场魔王
+唔？　话说这好像无法构成你破坏我的赌场的理由吧？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠冲田·J·总司
+不，一事归一事，[r]因为新选组不容许未经许可的赌场存在。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 19]
+[charaFadein B 0.1 1]
+
+＠赌场魔王
+呜哇～，所以我才讨厌刽子手社团。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠葛饰北斋
+怎么会这样，如果真是如此，[r]只要你早点，那我也会……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠冲田·J·总司
+不，剑士一旦对峙，剩下的只有你死我亡。
+[k]
+
+＠冲田·J·总司
+这无关善恶和主义主张，[r]更与我的身体无关。
+[k]
+
+[charaFace A 0]
+
+＠冲田·J·总司
+记住，北斋小姐，[r]这就是所谓的为剑而活。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠葛饰北斋
+冲田·J·总司……你……
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 0.3]
+
+[se ade128]
+[charaMove A 0,-10 0.7]
+[wt 2.0]
+
+＠冲田·J·总司
+对不起，反应器功率开始下降了。
+[k]
+
+＠冲田·J·总司
+眼睛也逐渐看不清了……
+[k]
+
+＠冲田·J·总司
+御主……我还有最后一个愿望，[r]您能够答应我吗？
+[k]
+
+？1：冲田小姐的心愿……？
+
+？2：冲田·J·总司的心愿……？
+
+？！
+
+＠冲田·J·总司
+……嗯，能最后再让我看一眼，[r]拉斯维加斯的夕阳吗？
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_11 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

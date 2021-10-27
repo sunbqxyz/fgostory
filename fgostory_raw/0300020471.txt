@@ -1,0 +1,845 @@
+
+
+＄03-00-02-04-7-1
+
+
+
+
+[soundStopAll]
+
+
+[charaSet A 8001410 1 玛修]
+[charaSet B 1098153600 1 格尔达]
+[charaSet C 8001400 1 玛修]
+[imageSet D cut068_srt_spk 2]
+[charaSet E 98002000 1 芙芙]
+[charaSet F 1098123810 1 奥菲莉娅]
+[charaSet G 1098123320 1 高扬斯卡娅]
+[charaSet H 98115000 1 特效用]
+
+[scene 61500]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_ichimon01wh]
+[se bac9]
+[wt 0.5]
+[effect bit_talk_Slash_white_01_L]
+[se bac10]
+[wt 0.7]
+
+[effect bit_talk_14]
+[se ad687]
+[wt 1.0]
+
+[effectStop bit_talk_ichimon01wh]
+
+[se ad10]
+[shake 0.05 0 2 1.0]
+[effect bit_talk_impactlanding]
+[wt 2.5]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+……第二波也迎击结束了。[wt 0.6][charaFace A 1][r]真不愧是达·芬奇亲，还能继续战斗！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠芙芙
+芙呜，芙芙！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛修
+呃，没错。应该还没到勉强的地步！[r]尽管外骨骼的输出降低了大概20%，
+[k]
+
+[charaFace A 7]
+
+＠玛修
+但再连续战斗一次应该还绰绰有余。[r]前辈，请不必在意我，根据情况做出判断……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[se ad57]
+[shake 0.05 0 2 0.3]
+[wt 0.8]
+[se ad57]
+[shake 0.05 0 2 0.3]
+[wt 0.8]
+[seStop ad57]
+
+[cueSe Battle bac428]
+[wt 1.5]
+
+
+？1：源源不断地聚过来了！
+？2：我看不该再继续战斗了！
+
+？！
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠芙芙
+芙……芙芙芙，芙！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+哎……
+[k]
+
+
+[charaFace A 15]
+
+＠玛修
+芙芙！　快阻止格尔达小姐！[r]她想冲出去[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠格尔达
+我马上就回来！[r]不能只有我一个人待着不行动！
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[charaMove B -30,0 0.4]
+[se ad443]
+[wt 1.0]
+[seStop ad443]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+格尔达小姐！
+[k]
+
+[messageOff]
+[charaTalk E]
+[cueSe Battle bac428]
+[wt 1.5]
+
+[charaFace A 15]
+
+＠玛修
+呜……此路，不通！！
+[k]
+
+[messageOff]
+[se ad628]
+[charaShake A 0.05 3 3 0.5]
+[fowardEffect bit_talk_14]
+[wt 1.5]
+[seStop ad628 1.0]
+[wt 0.3]
+
+[charaDepth H 10]
+[charaPut H 1]
+[charaShake A 0.05 3 3 0.3]
+[se ade18]
+[wt 1.0]
+
+[charaFace A 2]
+＠玛修
+[#灵基外骨骼:奥特瑙斯]·机能扩大！[r]输出暂时提升！　[line 6][#软银替身:Amalgam Goad]！
+[k]
+
+[messageOff]
+[wt 0.5]
+[charaPut H 1]
+[charaEffect H bit_talk_np_buf]
+
+[cueSe Battle bac171]
+[cueSeVolume bac171 0 0.3]
+[wt 0.4]
+[cueSeStop bac171 0.3]
+[cueSe Battle bas1]
+[cueSeVolume bas1 0 0.6]
+[wt 0.5]
+[cueSeStop bas1 0.2]
+[cueSe Battle bas7]
+[cueSeVolume bas7 0 0.5]
+[wt 1.0]
+[charaPut H 1200,1200]
+
+[se ad170]
+[charaFace A 15]
+[charaShake A 0.05 3 3 0.5]
+[fowardEffect bit_talk_14]
+[wt 1.0]
+
+？1：玛修，再撑一会儿！
+
+[charaFace A 2]
+
+＠玛修
+是！　没问题！
+[k]
+
+？2：快回来，格尔达！
+
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad443]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+[wt 0.2]
+[seStop ad443]
+
+＠格尔达
+[f large]我摘到了！　是药草！
+[k]
+
+＠格尔达
+哈，哈，哈……呼，哈啊……！[r]成功了，我成功了！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+？1：玛修！
+？2：开始沿西侧斜坡往下移动！
+
+？！
+
+[charaFace A 2]
+
+＠玛修
+明白了！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[se ad687]
+[effect bit_talk_14]
+[wt 1.0]
+
+[se ad10]
+[effect bit_talk_impactlanding]
+[shake 0.05 0 2 1.0]
+[wt 3.5]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠格尔达
+哇啊啊啊啊啊啊啊啊……！[r]好厉害，好厉害，明明巨人那么庞大……
+[k]
+
+＠格尔达
+就算被压制，玛修大人也处之泰然呢……[r]没想到还能这样……好厉害……
+[k]
+
+[charaFace B 1]
+
+＠格尔达
+御使果然是不会害怕什么巨人的！
+[k]
+
+＠格尔达
+明明大人们全都在被巨人捉住后[r]被踩得扁扁的[line 3]
+[k]
+
+？1：大人们全都？
+？2：这是什么意思……
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+前辈，请抓紧我的身体！[r]格尔达小姐和芙芙也是……呃，嘿咻！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠格尔达
+咿呀！
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[se ad7]
+[wt 0.4]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠芙芙
+芙芙，嘎呜！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+[#灵基外骨骼:奥特瑙斯]追加装备[#欧雷尔斯雪板:Ollerus Board][line 3][r]推进器紧急启动！
+[k]
+
+＠玛修
+风压应该会很猛烈，所以请闭上眼睛！[r]我会戴上护目镜！
+[k]
+
+[charaFace A 7]
+[messageOff]
+[charaTalk off]
+[charaDepth C 10]
+[charaFace C 7]
+[charaFadein C 0.4 1]
+
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+
+
+＠玛修
+喷射模式自第三加速起紧急启动。[r][#欧雷尔斯雪板:Ollerus Board]，预备。3、2、1[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFace C 2]
+
+＠玛修
+[line 6]开始推进！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[se ade122]
+[effect bit_talk_41]
+[wt 1.5]
+
+[fadeout white 1.0]
+[bgmStop BGM_EVENT_80 1.0]
+[wait fade]
+
+[effectStop bit_talk_41]
+
+[wt 2.0]
+[scene 10000]
+
+[fadein white 1.0]
+[wait fade]
+
+
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 61100]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_EVENT_81 0.1]
+
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+＠高扬斯卡娅
+嗨～，奥菲莉娅亲～☆
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠奥菲莉娅
+你是……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠高扬斯卡娅
+欢迎来到公主闺房般的冰雪客房。[r][line 3]不对，应该说今天也欢迎回来。
+[k]
+
+[se ad657]
+
+＠高扬斯卡娅
+我自己先开始了哦？[r]兑了北欧冰块的伏特加口感意外不错呢～☆
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠奥菲莉娅
+……[r]……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.1 1]
+
+＠高扬斯卡娅
+你的表情就像在问“哎呀，工作时喝酒没问题吗？”。[wt 1.2][charaFace G 0][r]是啊，我也完全赞同你的意见。
+[k]
+
+[charaFace G 4]
+
+＠高扬斯卡娅
+不过，这都是这座城的错。[r]我还以为这里会比俄罗斯温暖，没想到居然这样。
+[k]
+
+[charaFace G 20]
+
+＠高扬斯卡娅
+唯独这座冰雪之城是例外中的例外。[r]冷到如果没穿礼装就会结成霜啦。
+[k]
+
+＠高扬斯卡娅
+尽管比酷热要来得好，但冷过头也不行吧？[r]对吧，你不这么认为吗？
+[k]
+
+[charaFace G 17]
+
+＠高扬斯卡娅
+[line 3]北欧出身的奥菲莉娅亲？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠奥菲莉娅
+……我并不这么认为。
+[k]
+
+＠奥菲莉娅
+你还留在这里啊，高扬斯卡娅。[r]我还以为你早就移动到其他[#异闻带:Lostbelt]去了。
+[k]
+
+＠奥菲莉娅
+你也是有任务在身的吧。[r]就像我身负基尔什塔利亚大人的委任一样。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+＠高扬斯卡娅
+没事没事，你不用为我担心。[r]我在这北欧的工作几乎都完成了。
+[k]
+
+[charaFace G 1]
+
+＠高扬斯卡娅
+空想树在顺利地成长，[r][#异闻带:Lostbelt]之王也很配合吧？
+[k]
+
+＠高扬斯卡娅
+我还丰富了我的私人收藏品，[r]也是时候前往下一个[#异闻带:Lostbelt]了。
+[k]
+
+[charaFace G 4]
+
+＠高扬斯卡娅
+我甚至还在反省，早知如此，[r]当初或许该更认真地照料卡多克才对。
+[k]
+
+[charaFace G 16]
+
+＠高扬斯卡娅
+啊啊，但是[line 3]
+[k]
+
+[messageOff]
+[charaFace G 17]
+[wt 1.0]
+[charaFace G 14]
+
+＠高扬斯卡娅
+与其担心已经脱队的他，[r]还不如担心接下来才要大显身手的你吧？
+[k]
+
+[charaFace G 9]
+
+＠高扬斯卡娅
+或者我应该说，同样身为女孩子我[r]无法对你坐视不管呀☆　之类的话吧☆
+[k]
+
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠奥菲莉娅
+我不觉得自己需要劳你操心。[r]高扬斯卡娅。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.1 1]
+
+＠高扬斯卡娅
+哎哎，是吗？　真的吗？[r]真的真的，当真如此吗？
+[k]
+
+[charaFace G 0]
+
+＠高扬斯卡娅
+虽说奥菲莉娅亲老实认真，[r]作为魔术师的性能很优秀，
+[k]
+
+[charaFace G 18]
+
+＠高扬斯卡娅
+但总有一种心不在焉的倦怠感啊。[r]惹得我心中的母性蠢蠢欲动啊。
+[k]
+
+[charaFace G 16]
+
+＠高扬斯卡娅
+但不用过多解释，[r]我当然是不明白身为人母的感受哦？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠奥菲莉娅
+纠缠不清……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 2]
+
+[charaFace G 16]
+[charaFadein G 0.1 0]
+
+＠奥菲莉娅
+我向基尔什塔利亚·沃戴姆大人献上了绝对忠诚。[r]不劳您费心，我是不会迷惘的。
+[k]
+
+＠奥菲莉娅
+也不会受人迷惑。[r]我的礼装编入了心理防御用的护符。
+[k]
+
+＠高扬斯卡娅
+哎～。也就是说你守备森严吧，[r]这难道不正代表了你明白这方面是自己的弱点吗？
+[k]
+
+[messageOff]
+
+[charaTalk F]
+[charaFace F 5]
+[wt 1.0]
+
+[charaFace G 17]
+
+＠高扬斯卡娅
+哎哟，多管闲事，多管闲事。[r]这就是人类社会中所谓的沉默是金吧。
+[k]
+
+[charaFace G 9]
+
+＠高扬斯卡娅
+那就装作没注意到重新来过吧～！
+[k]
+
+＠高扬斯卡娅
+一起喝吧，奥菲莉娅亲！[r]我们一起喝他个通宵达旦吧！
+[k]
+
+[charaFace F 9]
+
+＠奥菲莉娅
+…………唉。
+[k]
+
+[charaFace G 13]
+
+＠高扬斯卡娅
+哎呀呀。叹气？
+[k]
+
+[charaFace F 0]
+
+＠奥菲莉娅
+……看你似乎没明白，那我就直说了吧。
+[k]
+
+＠奥菲莉娅
+北欧[#异闻带:Lostbelt]不需要你。[r]如果你要继续贯彻你的嗜好，就请到其他[#异闻带:Lostbelt]去。
+[k]
+
+[charaFace G 0]
+
+＠高扬斯卡娅
+嗯。等我厌倦了北欧的度假，[r]自然就会立刻告辞。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠高扬斯卡娅
+但在那之前，我们还是友好相处吧？[r]我俩不是同为『讨厌人类』的伙伴吗？
+[k]
+
+[se ad657]
+
+[charaFace G 17]
+
+＠高扬斯卡娅
+呵呵……没关系，没关系啦，[r]奥菲莉娅·法姆索罗涅。可怜的小姐。
+[k]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+＠高扬斯卡娅
+这里并没有逼迫你的人类。[r]在这里，[#星期日永远不会到来]。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+[wt 1.0]
+[charaFace F 5]
+
+＠奥菲莉娅
+哎……？
+[k]
+
+＠奥菲莉娅
+你在……说什么[line 3]
+[k]
+
+[messageOff]
+[se ad437]
+[fadeout white 0.2]
+[wait fade]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[scene 62100]
+
+[charaPut H 1]
+[charaEffect H bit_sepia01]
+[wt 0.1]
+
+[fadein white 0.2]
+[wait fade]
+
+[wt 0.6]
+
+[fadeout white 0.1]
+[wait fade]
+
+[scene 10001]
+
+
+[charaFadein D 0.1 0,-200]
+[wt 0.1]
+
+[fadein white 0.1]
+[wait fade]
+
+[wt 0.2]
+
+[fadeout white 0.3]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaPut H 2000,2000]
+[charaEffectStop H bit_sepia01]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+[wt 0.1]
+
+[scene 61100]
+
+[fadein white 1.0]
+[wait fade]
+
+＠奥菲莉娅
+……………………你知道些什么。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠高扬斯卡娅
+我是你为数不多同为女性的朋友嘛。[r]彼此间可谓知根知底，没错吧？
+[k]
+
+[charaFace G 17]
+
+＠高扬斯卡娅
+没关系啦，奥菲莉娅。[r]你无需担心。
+[k]
+
+＠高扬斯卡娅
+没什么好害怕的，也没什么好后悔的。[r]你只需尽情服从你重要之人的命令即可。
+[k]
+
+＠高扬斯卡娅
+世界消失为一片纯白，[r]就连[#异闻带:Lostbelt]也终将出现破绽。
+[k]
+
+＠高扬斯卡娅
+一切都是『异星之神』降临前的消遣。[r]那么，何不随心所欲地享受呢？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 16]
+[charaFadein F 0.1 1]
+
+＠奥菲莉娅
+…………你[line 3]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠高扬斯卡娅
+所以啦，没什么好在意的哦？
+[k]
+
+[charaFace G 17]
+
+＠高扬斯卡娅
+[line 3]让我们一起享受永恒的[#星期三:Woden's day]吧？
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

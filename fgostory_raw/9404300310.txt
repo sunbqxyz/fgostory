@@ -1,0 +1,786 @@
+
+
+
+
+＄94-04-30-03-1-0
+
+[soundStopAll]
+
+[charaSet A 2039000 1 南丁格尔·圣诞]
+[charaSet B 5004001 1 童谣]
+[charaSet C 3026000 1 贞德·Alter·Santa·Lily]
+[charaSet D 6005001 1 杰克]
+[charaSet E 98105700 1 卫宫]
+[charaSet F 4011001 1 布狄卡]
+[charaSet G 7030001 1 阿塔兰忒·Alter]
+[charaSet H 99502600 1 玛修]
+[sceneSet I 21803 1]
+[charaSet J 1098120900 1 通讯用杂音]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[scene 54405]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad33]
+[seVolume ad33 0 0.4]
+[wt 1.7]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠南丁格尔·圣诞
+战斗已经开始了呢。[bgm BGM_EVENT_3 0.1][r]为了阻止他们，赶紧过去吧。
+[k]
+
+[charaFace A 0]
+
+＠南丁格尔·圣诞
+……我会摇响铃铛。[r]希望声音能引起他们的注意。
+[k]
+
+[messageOff]
+[se ade381]
+[wt 1.5]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_3 1.0 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 21803]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_3 1.0 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠童谣
+嘿！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad28]
+[seStop ad28 0.5]
+[effect bit_talk_throwing]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠贞德·Alter·Santa·Lily
+呀！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[effect bit_talk_ichimon01wh]
+[se ad32]
+[wt 1.0]
+[effectDestroy bit_talk_ichimon01wh]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠杰克
+嘿呀！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[effect bit_talk_Slash_white_01]
+[se bac4]
+[wt 0.2]
+[effect bit_talk_Slash_white_01_L]
+[se bac6]
+[wt 0.7]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[wt 0.1]
+
+[charaShake E 0.05 3 3 0.3]
+[fowardEffect bit_talk_14]
+[se ad82]
+[se ad602]
+[wt 0.3]
+
+＠卫宫
+哼！
+[k]
+
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[wt 0.1]
+
+[charaShake F 0.05 3 3 0.3]
+[fowardEffect bit_talk_14]
+[se ad602]
+[seVolume ad602 0 0.9]
+[se ad170]
+[seVolume ad170 0 0.6]
+[wt 0.3]
+
+＠布狄卡
+呀！
+[k]
+
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+[wt 0.1]
+
+[charaShake G 0.05 3 3 0.3]
+[fowardEffect bit_talk_14]
+[se ad82]
+[wt 0.1]
+[se ad82]
+[wt 0.3]
+
+＠阿塔兰忒·Alter
+抱……抱歉……！
+[k]
+
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠童谣
+真是的！[r]你们三个真是纠缠不休！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠杰克
+就是就是！[r]我们只是吃些点心而已，有什么关系嘛！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠卫宫
+嗯，当然没问题。[r]只不过[line 3]
+[k]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+[charaFace E 5]
+
+＠卫宫
+必须加上不能在晚饭前吃这个前提条件。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠贞德·Alter·Santa·Lily
+话……话是这么说没错啦……[bgm BGM_EVENT_7 0.1]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠童谣
+啊，你竟然想背叛我们自己装乖孩子的样子。[r]不行啦，贞德。
+[k]
+
+＠童谣
+事已至此，我们必须休戚与共！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠贞德·Alter·Santa·Lily
+我……我本来就是乖孩子啊！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠杰克
+可你也喜欢在晚饭前吃点心吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠贞德·Alter·Santa·Lily
+戒不掉这个习惯呢……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠阿塔兰忒·Alter
+十分抱歉，[r]但我不能容许这种妨碍孩子成长的事……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠童谣
+可我们明明是从者啊？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠卫宫
+既然你们选择了那种外形，[r]那么身为大人的我们当然得维持规矩。
+[k]
+
+＠卫宫
+毕竟我们[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠布狄卡
+就是[line 3]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠阿塔兰忒·Alter
+圣诞老人！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠童谣
+不行，不行，不行不行啦！
+[k]
+
+＠童谣
+圣诞老人是监护人这种事，[r]简直是破坏全世界孩子梦想的行径！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠贞德·Alter·Santa·Lily
+没错！
+[k]
+
+＠贞德·Alter·Santa·Lily
+对于我这个圣诞老人来说，[r]当然不乐见破坏圣诞老人这梦想的行径！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠杰克
+好嘞，干掉他们～！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 1]
+
+＠阿塔兰忒·Alter
+唔唔，没办法了。[r]事已至此，只能用礼物来安抚他们了……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 0.3]
+
+＠？？？
+[f large]慢着！！
+[k]
+
+[messageOff]
+[se ad75]
+[wt 1.0]
+[seStop ad75 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaPut A 0,180]
+[charaSpecialEffect A appearanceReverse 1 0.9]
+[charaMove A 0,-10 0.7]
+[wt 0.7]
+
+[charaMove A 0,0 0.2]
+[se ad601]
+[wt 0.4]
+[seStop ad601]
+[wt 0.2]
+
+[charaFadein A 0.0 1]
+
+＠南丁格尔·圣诞
+监护人与孩子争斗，[bgm BGM_EVENT_4 0.1][r]太悲剧了。
+[k]
+
+[charaFace A 0]
+
+＠南丁格尔·圣诞
+先冷静下来好好谈话吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠童谣
+……[r]……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠卫宫
+……[r]……
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.7]
+
+[fowardEffect bit_talk_41]
+
+＠全体
+[f large]圣诞老人！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[fowardEffectDestroy bit_talk_41]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠贞德·Alter·Santa·Lily
+太棒了。[r]竟然撑着伞轻飘飘地从天而降……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠童谣
+好浪漫，好奇幻，[r]好优雅啊！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠杰克
+简直就像波平斯阿姨～！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠卫宫
+唔，据我的观察，[r]圣诞资源应该就是那个铃铛吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠布狄卡
+唔，我总觉得好像在哪儿见过那个铃铛……？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠阿塔兰忒·Alter
+总之先把那个抢过来，[r]补充我们的圣诞能量！
+[k]
+
+[charaFace G 1]
+
+＠阿塔兰忒·Alter
+然后给全世界的孩子送礼物！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠贞德·Alter·Santa·Lily
+唔……唔……[r]这打扮，这配色。
+[k]
+
+＠贞德·Alter·Santa·Lily
+就是今年的圣诞老人……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_4 1.2]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠童谣
+慢着，不行！[r]快看那个人的伞！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠贞德·Alter·Santa·Lily
+哎，伞……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠杰克
+……[r]……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[imageSet A cut143_ncgs 1]
+
+[charaDepth I 1]
+[charaDepth A 2]
+[charaScale I 1.2]
+[charaScale A 1.1]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFadein A 0.4 -50,-260]
+[charaFadein I 0.4 0,-320]
+[wt 2.5]
+
+[charaFadeout I 0.4]
+[charaFadeout A 0.4]
+[wt 0.8]
+[charaScale A 1.0]
+
+[charaSet A 2039000 1 南丁格尔·圣诞]
+
+[charaTalk off]
+[charaDepth D 3]
+[charaDepth B 2]
+[charaDepth C 1]
+[charaFace D 2]
+[charaFace B 2]
+[charaFace C 2]
+[charaFadein D 0.1 -276,0]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 276,0]
+
+＠三人
+[f large]是针[messageShake 0.05 4 4 0.2]筒！！[bgm BGM_EVENT_3 0.1]
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠贞德·Alter·Santa·Lily
+这……这可不行！
+[k]
+
+＠贞德·Alter·Santa·Lily
+对孩子来说，[r]打针是世界上最讨厌的事！
+[k]
+
+＠贞德·Alter·Santa·Lily
+我决不能承认拿着针筒的人是圣诞老人！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠南丁格尔·圣诞
+……不，我并不是圣诞老人。[r]而且有一说一，打针是卫生工作中必不可少的。
+[k]
+
+＠南丁格尔·圣诞
+为了守护大家的健康，[r]我会不厌其烦地进行注射。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠杰克
+[f large]讨厌！
+[k]
+
+＠杰克
+明明不用打针也能活下去吧！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠南丁格尔·圣诞
+唔。[r]看来和你们说不通呢。
+[k]
+
+＠南丁格尔·圣诞
+御主，我打算先进行无力化行动。[r]您意下如何。
+[k]
+
+？1：你的意思是[line 3]
+？！
+
+[charaFace A 0]
+
+＠南丁格尔·圣诞
+战斗。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace D 2]
+[charaFace B 2]
+[charaFace C 2]
+[charaFadein D 0.1 -276,0]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 276,0]
+
+＠孩童组
+[f large]动手吧！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth E 1]
+[charaDepth F 3]
+[charaDepth G 2]
+[charaFace G 2]
+[charaFace F 2]
+[charaFace E 2]
+[charaFadein G 0.1 -300,0]
+[charaFadein F 0.1 15,0]
+[charaFadein E 0.1 310,0]
+
+＠监护人组
+[f large]哎～哎～噢～！
+[k]
+
+？1：话说这几个为什么会拉帮结派啊！
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠南丁格尔·圣诞
+这就是疫苗的立场。[r]好了，开始杀菌、消毒、卫生活动吧！
+[k]
+
+？2：圣诞老人的敌人……也太多了吧……！
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠南丁格尔·圣诞
+我已经说了，我不是圣诞老人。[r]只是一介护士罢了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk H]
+[charaFace H 14]
+[charaFadein H 0.1 1]
+
+＠玛修
+不，我觉得您并不是一般的护士！[r]但这件事先搁置一边，请先战斗吧！
+[k]
+
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

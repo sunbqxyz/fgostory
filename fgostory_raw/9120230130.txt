@@ -1,0 +1,263 @@
+
+
+＄91-20-23-01-3-0
+
+[soundStopAll]
+
+
+[charaSet B 98115300 1 福尔摩斯]
+[charaSet C 2023002 1 莫里亚蒂]
+[charaSet D 6005001 1 杰克]
+[charaSet E 1098124510 1 达·芬奇]
+[charaSet F 2023001 1 莫里亚蒂（？）]
+
+[charaSet H 98115000 1 特效用]
+[charaSet I 98115000 1 特效用2]
+[charaSet J 98115000 1 特效用3]
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_06b2]
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 10950]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10]
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_06b2]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[se adm14]
+[effect bit_talk_Slash_white_01_L]
+[wt 0.1]
+[se adm14]
+[effect bit_talk_Slash_white_01]
+[wt 0.5]
+
+[se ade65]
+[charaPut J -200,100]
+[charaEffect J bit_shot_01]
+[wt 0.2]
+[se ade65]
+[charaPut J 200,-100]
+[charaEffect J bit_shot_01]
+[wt 1.0]
+[charaEffectStop J bit_shot_01]
+
+[charaPut I -50,0]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.2 0,0]
+[se ad671]
+[charaMove F -50,0 0.2]
+[wt 0.4]
+
+＠莫里亚蒂（？）
+咕啊啊啊啊……！
+[k]
+
+＠莫里亚蒂（？）
+可……可恶……嘴上吹嘘着什么善良，[r]战斗时无法发挥魔弹真正力量的懒惰男人……！
+[k]
+
+＠莫里亚蒂（？）
+怎么能将莫里亚蒂交给你呢！[r]交给，你这种……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 50,0]
+
+＠莫里亚蒂
+[line 3]抱歉。聊天到此为止了。
+[k]
+
+[charaFace C 1]
+
+＠莫里亚蒂
+毕竟你快要暴露我这一存在[r]其实是既愚钝又无聊的马脚了哦。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[wt 0.1]
+[scene 10000]
+
+[wipein rectangleStripLeftToRight 0.1 1]
+[wait wipe]
+
+[se bac329]
+[effect bit_talk_ereshki02 0,0 F]
+[wt 0.8]
+[se bac324]
+[wt 1.2]
+[se bac327]
+[wt 1.8]
+
+[seVolume bac327 0.5 0.6]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.5]
+[seStop bac327 1.5]
+[wait fade]
+
+[scene 10950]
+[effectStop bit_talk_ereshki02]
+
+[charaPut I -50,0]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 -50,0]
+[wt 0.1]
+[seStop bac327 1.5]
+[cueSe NoblePhantasm_202300 NP_202300_7]
+[wt 3.0]
+
+[cueSeStop NP_202300_7 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[se ad52]
+[charaSpecialEffect F darkEnemyErasure 1 2.0]
+[wt 1.0]
+[charaEffectStop I bit_talk_06b2]
+[wt 1.5]
+[charaPut I 1200,1200]
+[wt 1.0]
+
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠莫里亚蒂
+好嘞～，赢了！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠杰克
+喂喂，[#妈妈:御主]！[r]还有爷爷！
+[k]
+
+＠杰克
+雾越来越浓了，[r]这可怎么办啊！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠莫里亚蒂
+唔。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad31]
+[seVolume ad31 0 0.4]
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 23]
+[charaFadein E 0.1 1]
+
+＠达·芬奇
+[image berserker_language_2]？
+[k]
+
+[seStop ad31]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠莫里亚蒂
+咦？　这是……
+[k]
+
+[charaFace C 2]
+
+＠莫里亚蒂
+福尔摩斯，喂，怎么了，福尔摩斯！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad31]
+[seVolume ad31 0 0.5]
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+……[r]……是你　伎　吗？
+[k]
+
+？1：听不见啊！
+？！
+
+[messageOff]
+[seStop ad31 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[wt 0.5]
+[scene 10953 2.5]
+[wt 1.5]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠杰克
+敌人来了！[r]小心！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠莫里亚蒂
+哎，竟然挑这种时候！[r]赶紧解决掉，然后逃去雾薄一些的地方吧！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

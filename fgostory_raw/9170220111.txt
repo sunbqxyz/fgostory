@@ -1,0 +1,163 @@
+
+
+＄91-70-22-01-1-1
+
+[soundStopAll]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 32710]
+
+[charaSet A 8001002 1 玛修]
+[charaSet B 98003003 1 Dr.罗曼]
+[charaSet C 7022001 1 茨木童子]
+[charaSet D 98006200 1 巴御前？]
+[charaSet E 98006000 1 通讯用杂音]
+[charaSet F 98006000 1 影从者用泥]
+[charaSet G 98006000 1 影从者用消灭演出]
+
+[charaPut E 1200,1200]
+[charaEffect E bit_talk_10]
+
+[charaPut F 1200,1200]
+[charaEffect F bit_talk_11]
+
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaPut F 1]
+[charaPut G 1]
+[charaEffect G bit_talk_06b2]
+[wt 1.0]
+＠巴御前？
+茨，木[line 3][r]原来如此[line 3]你，回来了啊，茨木[line 3]
+[k]
+
+[charaPut F 1200,1200]
+[charaPut G 1200,1200]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠茨木童子
+……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaPut F 1]
+[charaPut G 1]
+＠巴御前？
+[line 3]那我就放心了[line 3][r]我没有承认你[line 3]本以为[line 3]
+[k]
+
+＠巴御前？
+不可能存在　想要理解我　想要理解人　的鬼[line 3][r]践踏　了　说我　美丽　的　基塔布利尔　之心[line 3]
+[k]
+
+＠巴御前？
+的我　连鬼都不如[line 3][r]你大可　嘲笑　我[line 3]
+[k]
+
+[bgmStop BGM_EVENT_3 0.7]
+
+[messageOff]
+[charaMove F 0,-1200 1.7]
+[charaSpecialEffect D darkEnemyErasure 1 1.7]
+[se ad52]
+[wt 1.7]
+[charaEffectStop F bit_talk_11]
+[charaEffectStop G bit_talk_06b2]
+[wait charaSpecialEffect D]
+[wt 0.7]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaPut E 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0 0,-151]
+[wt 0.3]
+＠Dr.罗曼
+……威胁反应完全消灭。[r]辛苦了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠茨木童子
+这家伙什么情况。[r]……难道她认识吾吗？
+[k]
+
+＠茨木童子
+……不过算了。[r]果然一点都不好玩，也不好吃。
+[k]
+
+＠茨木童子
+万幸的是没让这些事情叨扰酒吞。
+[k]
+
+[charaFadeout C 0.2]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠玛修
+御主，快看。
+[k]
+
+[charaFace A 12]
+＠玛修
+茨木童子小姐……凝视着刚才敌人倒下的附近。[r]总觉得，她的眼神流露出一丝寂寞。
+[k]
+
+？1：难道是因为刚才我们说起了同伴的事吗……
+？！
+
+[charaFace A 4]
+＠玛修
+是啊。嘴上虽然那么说，但毕竟是同族。[r]内心或许还是有一些感慨的吧……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠茨木童子
+……倘若汝非单纯的残渣。
+[k]
+
+＠茨木童子
+倘若汝流淌着货真价实的鬼之血，来大江山吧。[r]吾乃众鬼之魁首，不会亏待汝的。
+[k]
+
+＠茨木童子
+待吾有兴致时，或许还会请汝吃一份人之胆，[r]不，请汝吃一份令人不悦却又美丽的异国点心吧……
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_11 2.0]
+[wait fade]
+[soundStopAll]
+[end]

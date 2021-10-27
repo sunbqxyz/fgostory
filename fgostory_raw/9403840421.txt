@@ -1,0 +1,589 @@
+
+
+＄94-03-84-04-2-1
+
+[soundStopAll]
+
+[charaSet A 11007001 1 织田吉法师]
+[charaSet B 11007000 1 足轻信]
+[charaSet C 1098172300 1 甲斐士兵]
+[charaSet D 6036002 1 李书文]
+[charaSet E 7035001 1 森长可]
+[charaSet F 98001000 1 家老玛修]
+[charaSet G 3038000 1 长尾景虎]
+
+[charaSet J 98115000 1 特效用]
+
+[charaDepth E 1]
+[charaDepth D 2]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 78601]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 80,0]
+[charaShake A 0.05 2 1 0.6]
+[charaMove A 20,0 0.2]
+[wt 0.2]
+[charaMove A 1 0.2]
+[wt 0.2]
+[seStop ad671 0.5]
+
+[charaFace A 4]
+
+＠织田吉法师
+该死的！　只能到此为止了吗……
+[k]
+
+＠织田吉法师
+我果然还没有天真到会被我用[r]和桶狭间相同的手段给干倒啊。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠家老玛修
+总算是打赢了呢，前辈。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+＠足轻信
+呼……都是因为景虎那家伙太慢了，[r]害我吓出一身冷汗来。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 16]
+[charaFadein G 0.1 1]
+＠长尾景虎
+……呜！　还没完！！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[charaFadeout G 0.1]
+[wt 0.6]
+
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,-40]
+[charaMove D 0,0 0.1]
+[wt 0.4]
+＠李书文
+发现的时候为时已晚。[r]至少用一击让你[#退场:终结]吧。
+[k]
+
+＠李书文
+[line 3]尽管是以毒攻毒，但就此解决！
+[k]
+
+[messageOff]
+[se ad7]
+[charaMoveScale D 1.1 0.1]
+[charaMove D 0,15 0.1]
+[charaPut J 1]
+[charaEffect J bit_talk_41]
+[wt 0.2]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_41]
+[wt 0.1]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠家老玛修
+[#前辈:殿下]！？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+[se bac23]
+[effect bit_talk_14]
+[wt 0.3]
+
+[se bac11]
+[se bac13]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0 1]
+[charaShake E 0.02 5 5 0.8]
+[wt 1.2]
+
+＠森长可
+啊……好痛啊……[r]感觉肚子里的肠子在翻江倒海。
+[k]
+
+？1：替我挡住了！？
+
+？2：森！
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaScale D 1.0]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠李书文
+哦。居然挺身护主。[r]你似乎很了解魁梧的身躯该怎么使用呢。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+＠森长可
+老头你可不准对我的主公动手！！[r]小心我杀了你！　知道吗！！
+[k]
+
+[messageOff]
+[se ad7]
+[charaMoveScale E 1.1 0.1]
+[charaMove E 0,10 0.1]
+[charaPut J 1]
+[charaEffect J bit_talk_41]
+[wt 0.2]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_41]
+[wt 0.1]
+
+[charaFadeout E 0.1]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.2]
+
+[se ad170]
+[charaScale J 1.5]
+[charaPut J 1]
+[charaEffect J bit_talk_Slash_red_01]
+[flashin once 0.1 0.1 e60025FF e6002580]
+[wt 0.2]
+[charaFace D 5]
+[charaShake D 0.02 5 5 0.8]
+[wt 1.4]
+
+[charaScale J 1.0]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠足轻信
+干得漂亮，胜藏！　然后接下来只需将甲斐的我……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 0.6]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠织田吉法师
+好！　到此为止了！　喂，越后的我。[r]我投降，大家也不要再打了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠长尾景虎
+这样好吗？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_50 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠织田吉法师
+没事，毕竟对手是名闻天下的越后长尾景虎，[r]以及我非常熟悉的我自己嘛。
+[k]
+
+＠织田吉法师
+偷袭被防御住，打对方个措手不及的机会也消失了。
+[k]
+
+＠织田吉法师
+我不能继续为难士兵们了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+＠足轻信
+以我来说，这家伙还算挺想得开的。
+[k]
+
+＠足轻信
+话说，这个我该怎么说呢，[r]比我更有风云人物的感觉？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+
+[se ad347]
+[fowardEffect bit_talk_kengekiall03]
+[wt 1.0]
+
+[charaTalk off]
+[seStop ad347 0.1]
+[se ad170]
+[flashin once 0.1 0.1 e60025FF e6002580]
+[wt 0.1]
+[charaScale E 1.0]
+[charaFace E 10]
+[charaFace D 5]
+[charaFadein E 0 -75,0]
+[charaFadein D 0 75,0]
+[charaMove E 300,0 0.2]
+[charaMove D -300,0 0.2]
+[charaShake E 0.02 5 5 0.6]
+[charaShake D 0.02 5 5 0.6]
+[wt 1.2]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠家老玛修
+前辈！　森先生和李书文先生他们……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠森长可
+去[messageShake 0.02 3 3 0.8]死吧[line 4]！　臭老头！[r]胆敢对我的主公下手，别以为你能活着回去！！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠李书文
+这可就不好说了哦。
+[k]
+
+＠李书文
+喂，尽管我说这话会有点奇怪，[r]但你难道打算打到死吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+＠森长可
+你[messageShake 0.02 3 3 0.6]说什么痴呆话呢！[r]当然是打到你死为止啦！！
+[k]
+
+？1：到此为止，到此为止！
+
+？2：森，暂停！　暂停！
+
+？！
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_50 1.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[scene 79000]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_66 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠织田吉法师
+哎，这就是你们的城池吗。这座城相当不错嘛。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠长尾景虎
+尽管原本是我的城池啦。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+＠足轻信
+话说为什么身为俘虏的这家伙[r]能冠冕堂皇地到处晃啦？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠织田吉法师
+算啦，不要这么说嘛，我，[r]等我转一圈看够了就会回牢房里啦。
+[k]
+
+＠织田吉法师
+啊，对了对了，[r]给那个老爷子泡杯茶吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠家老玛修
+是李书文先生吧，明白了。
+[k]
+
+＠家老玛修
+话说没想到李书文先生居然在甲斐的信长那里啊。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠织田吉法师
+那个老爷子是你们的同伴吧？
+[k]
+
+[charaFace A 7]
+＠织田吉法师
+他明明不是我的部下，却说要报恩，[r]我才会收他成为我的同伴啦，你们放他一马吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+
+＠足轻信
+明明让人杀了对手却让对手放人家一马，[r]不愧是我，做的事也太乱来了。
+[k]
+
+[charaFace B 11]
+
+＠足轻信
+唔？　话说胜藏上哪儿去了？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_66 1.0]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠家老玛修
+这么说来，刚才他向牢房那边去了……！
+[k]
+
+＠家老玛修
+难不成还在为李书文先生那件事生气吗！？
+[k]
+
+？1：得赶快去阻止他！
+
+？2：他们俩都有危险！
+
+？！
+
+
+[messageOff]
+[se ad459]
+[wipeout leftToRight 1.0 1.0]
+[seStop ad459 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+
+[scene 79100]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.5]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+
+＠森长可
+哟，老爷子！　喝起来气势不错嘛！[r]我的茶也很不错吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠李书文
+哼。没想到这把年纪居然还会震惊到双眼圆睁。[r]我已经好久没有这样惊讶了。
+[k]
+
+＠李书文
+哎呀，你的茶艺水准相当了得。[r]人不可貌相指的就是这种事吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠家老玛修
+……好像正融洽地喝着茶。
+[k]
+
+？1：森会茶道呀……
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠足轻信
+别看他那德行，胜藏这家伙也很擅长书法哦，[r]甚至连利休也夸过他实力不凡。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？2：简直就像爷爷和孙子呢。
+
+[charaFace F 1]
+＠家老玛修
+相处地竟然如此融洽，令人难以相信。[r]不过这景象真让人欣慰呢。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+＠森长可
+好嘞！　既然已经休息过了，那我们继续厮杀吧！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠李书文
+好吧，这次定要至死方休！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠足轻信
+不[messageShake 0.05 4 4 0.2]要再玩这套了啦！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

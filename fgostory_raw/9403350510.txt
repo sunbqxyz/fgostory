@@ -1,0 +1,695 @@
+
+
+
+＄94-03-35-05-1-0
+
+[soundStopAll]
+
+[charaSet A 3033000 1 奥特琳德]
+[charaSet B 3033001 1 希露德]
+[charaSet C 3033002 1 斯露德]
+[charaSet D 99502600 1 玛修]
+[charaSet E 6031000 1 刑部姬]
+[charaSet F 5042000 1 紫式部]
+[charaSet G 5005001 1 安徒生]
+[sceneSet H 10000 1]
+[charaSet I 5009000 1 特效用]
+[charaSet J 98115000 1 特效用]
+
+[charaScale H 1.01]
+
+[scene 70500]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+＠奥特琳德
+…………应该就是……这附近了。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 1]
+[wt 0.4]
+＠希露德
+唔，现在就返还未免有点可惜啊。[r]我要不要再多借一阵子呢。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+＠斯露德
+没有这个必要。[r]这是已经阅读完毕的书籍。
+[k]
+
+＠斯露德
+我们是女武神，[r]记录的情报可以共享，不会消失。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 6]
+[charaDepth A 8]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFace A 0]
+[charaFadein B 0.1 2]
+[charaFadein A 0.1 0]
+＠希露德
+话是这么说没错啦。[r]但纸质书非常奇妙哦。
+[k]
+
+＠希露德
+哪怕知道接下来会发生什么，[r]翻页时的兴奋感也会[#存在]。
+[k]
+
+
+[charaTalk A]
+[charaFace A 7]
+＠奥特琳德
+啊。这倒确实……
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠斯露德
+不。从灵子情报或电子情报中，[r]也可以获得类似的感慨。
+[k]
+
+＠斯露德
+而且[line 3]你们俩。
+[k]
+
+[charaFace C 6]
+＠斯露德
+感伤是属于人类的。[r]感情也是属于人类的。
+[k]
+
+＠斯露德
+我们并不需要。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFace A 0]
+[charaFadein B 0.1 2]
+[charaFadein A 0.1 0]
+＠希露德
+嘁。
+[k]
+
+
+[charaTalk A]
+[charaFace A 0]
+＠奥特琳德
+那么，让我们开始返还行动吧。[r]返还的记录可以稍后向司书传达[line 3]
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_2 0.5 0.3]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[se ad13]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[wt 0.3]
+＠玛修
+发现了！[r]疑似来返还书籍的英灵，三骑！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠刑部姬
+机械姊妹百合萌……[r]或许也不错……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠紫式部
+啊啊，是那三位关系融洽的姊妹吧。我记得。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠安徒生
+瓦尔基里，北欧的女武神啊。[r]唔，但愿能正常沟通。
+[k]
+
+？1：喂，你们三个。
+？2：先别急着返还那些书！
+
+？！
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgmStop BGM_EVENT_2 0.5]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+
+[se ade32]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[charaShake A 0.03 4 4 0.4]
+[wt 0.4]
+[seStop ade32 0.4]
+[wt 0.8]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth C 4]
+
+[charaTalk off]
+[charaFace B 2]
+[charaFace C 2]
+[charaFadein B 0.1 0]
+[charaFadein C 0.1 2]
+[wt 1.2]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠斯露德
+…………御主。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFace A 0]
+[charaFadein B 0.1 2]
+[charaFadein A 0.1 0]
+＠希露德
+……哎。为什么御主会在这里？
+[k]
+
+
+[charaTalk A]
+[charaFace A 0]
+＠奥特琳德
+根据我的推测。[r]或许是御主从我们的行动中发现了某些疑点，
+[k]
+
+＠奥特琳德
+并打算确认我们正要返还的这本书的内容吧。
+[k]
+
+
+[charaTalk B]
+[charaFace B 2]
+＠希露德
+哎，哎哎！？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠斯露德
+……[r]……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+＠希露德
+呃！　御主，你好！[r]我们没有做什么奇怪的事哦！
+[k]
+
+＠希露德
+最近开始造访图书馆纯属偶然，[r]我们三个人怎么可能热衷于搜集恋爱故事[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠斯露德
+希露德。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠希露德
+咿[messageShake 0.03 3 3 0.4]呀。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 4]
+[charaFadein A 0.1 0]
+[charaFadein B 0.1 2]
+＠奥特琳德
+没错。我看的是『伊索普一家物语』，[r]不能将其断定为恋爱故事。
+[k]
+
+
+[charaTalk B]
+[charaFace B 13]
+＠希露德
+哎，是吗？[r]我看的是『小妇人』，所以也算有恋爱情节吧。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠斯露德
+……[r]……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFace C 4]
+[charaFadein B 0.1 0]
+[charaFadein C 0.1 2]
+＠希露德
+斯露德是[line 3]
+[k]
+
+
+[charaTalk C]
+[charaFace C 4]
+＠斯露德
+我，那个……………………[wt 0.9]是『呼啸山庄』。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠安徒生
+哦。品味相当不错。[r]炙热的情爱故事，成人向的选择呢。
+[k]
+
+＠安徒生
+那下一本就阅读『源氏物语』吧。[r]这本也充满了热情。现在开始朗读也行哦？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+＠紫式部
+安……安徒生大人……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠刑部姬
+（没……没人性的眼镜男！[r]　哎，不会吧，是没人性的眼镜正太！？）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠斯露德
+『源氏物语』。
+[k]
+
+＠斯露德
+已经。
+[k]
+
+[charaFace C 6]
+＠斯露德
+阅读完毕了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠希露德
+嗯嗯。斯露德第一本选择的就是那册。[r]而且很快就上传了共享记录。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠斯露德
+对人类精神、情爱的细致描写……[r]相当……难以理解……
+[k]
+
+＠斯露德
+尽管如此，这些故事仍然莫名吸引人。[r]这有什么问题吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠希露德
+哎～，是这样啊。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠斯露德
+没错。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠奥特琳德
+是这样呀。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠斯露德
+没错。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaFace A 1]
+[charaFace B 1]
+[charaFadein A 0.1 0]
+[charaFadein B 0.1 2]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+[wt 1.2]
+
+
+[charaFace C 2]
+＠斯露德
+啊！　我说你们！[r]不是啦[line 3]我并不是对人类的精神感兴趣[line 3]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace A 1]
+[charaFace B 1]
+[charaFadein A 0.1 0]
+[charaFadein B 0.1 2]
+[wt 1.2]
+
+[se ade250]
+[bgm BGM_EVENT_7 0.4 0.5]
+[charaTalk H]
+[charaFadeTime H 0.1 0.4]
+＠J：解说
+莫名感到高兴的妹妹们面带笑容，[r]凝视着彻底为之着迷的姐姐。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.4 1.0]
+[charaTalk depthOn]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+＠斯露德
+！[messageShake 0.03 3 3 0.4]？
+[k]
+
+？1：这……这种时候上解说！？
+？2：或许确实是种可怕的诅咒……
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_7 0.4]
+[charaFadeout C 0.1]
+[wt 0.6]
+
+[se ad39]
+[charaPut I 1]
+[charaEffect I bit_talk_warp]
+[wt 3.5]
+[seStop ad39 0.4]
+[wt 0.4]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠斯露德
+啊……我的『呼啸山庄』……！[r]居然漂浮到了半空！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠玛修
+前辈，是咒本反应！[r]魔力量的反应似乎和上次差不多！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠安徒生
+又不是正主啊。但也不能坐视不理。[r]既然发现了，就只能击溃并回收。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠刑部姬
+好嘞，[#公主:我]也要好好表现一下！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠紫式部
+开始回收！[r]情况一会儿再说明，各位女武神大人！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠奥特琳德
+明白了。[r]图书馆的藏书发生异常。动用战斗来应对。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠希露德
+没问题！　交给我吧！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠斯露德
+…………好吧。我们来帮忙。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[se ad57]
+[shake 0.05 0 4 0.3]
+[wt 0.6]
+[se ad57]
+[shake 0.05 0 4 0.3]
+[wt 1.3]
+[seStop ad57 0.1]
+
+[se ad19]
+[wt 2.0]
+
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠玛修
+咒本变化成大型冰兽形态了！[r]各位请一定要小心！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠紫式部
+…………那么，[wt 0.6][charaFace F 2]出击！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

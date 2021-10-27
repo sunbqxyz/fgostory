@@ -1,0 +1,863 @@
+
+
+
+
+＄94-04-59-01-1-0
+
+[soundStopAll]
+
+[charaSet A 5042000 1 紫式部]
+[charaSet B 5010001 1 帕拉塞尔苏斯]
+[charaSet C 5033001 1 喀耳刻]
+[charaSet D 6032000 1 塞弥拉弥斯]
+[charaSet E 5043000 1 阿斯克勒庇俄斯]
+[charaSet F 4008001 1 盗贼头领_剪影]
+[charaSet G 4008001 1 盗贼头领]
+[charaSet H 98018100 1 盗贼A]
+[charaSet I 98018100 1 盗贼B]
+[charaSet J 1098187800 1 ？？？]
+
+[charaFilter F silhouette 00000080]
+
+[scene 10000]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+
+[se ad77]
+[seVolume ad77 0 0.2]
+
+＠？？？
+……主……御主……
+[k]
+
+？1：唔嗯唔嗯……
+
+？！
+
+[se ad77]
+[seVolume ad77 0 0.5]
+
+＠？？？
+御主……快醒醒……[r]那个，稍微出了点麻烦事……御主？[se ad77][seVolume ad77 0 0.5]
+[k]
+
+？1：让我再睡5分钟，玛修。
+
+？！
+
+＠？？？
+哎……玛修大人！？[r]不，不是，我……不是玛修大人……
+[k]
+
+＠？？？
+两位果然是……那种关系吗……？[r]这事还希望您能详细说一下……
+[k]
+
+＠？？？
+不，不是这个问题！[r]请快点醒醒，御主！
+[k]
+
+[messageOff]
+[fadeout white 1.5]
+[wait fade]
+
+[scene 20305]
+[wt 1.0]
+
+[fadein white 1.5]
+[wait fade]
+
+[wt 0.5]
+
+？1：这里是……哪儿？
+
+？！
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠紫式部
+对不起对不起！[bgm BGM_EVENT_2 0.1][r]我什么都没有听到！
+[k]
+
+[charaFace A 1]
+
+＠紫式部
+比起这种事，[r]您能醒就好。
+[k]
+
+[charaFace A 0]
+
+＠紫式部
+好了，看来这里是在迦勒底的外部。[r]周围除了我们以外没有其他人的身影。
+[k]
+
+＠紫式部
+难道是我们在不知不觉中进行了灵子转移？
+[k]
+
+？1：这是……
+？2：老套路的那个吧。
+
+？！
+
+＠紫式部
+是……是这样吗？[r]您看来已经非常习以为常了呢……
+[k]
+
+[charaFace A 7]
+
+＠紫式部
+哦，哦，原来如此。也就是说，[r]这里是御主的梦境中[line 3]
+[k]
+
+＠紫式部
+虽不知是出于什么样的理由，
+[k]
+
+＠紫式部
+但连我也一起来到了这里……[r]是这样吧。
+[k]
+
+？1：紫式部小姐还记得什么……
+
+？2：我们在这里醒来前的事吗？
+
+？！
+
+[charaFace A 0]
+
+＠紫式部
+记得的事……[r]让我想想……
+[k]
+
+[charaFace A 7]
+
+＠紫式部
+…………[r]…………
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_2 1.0 0.6]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[branchQuestNotClear lblNotClear1 3000303]
+[scene 66600]
+[branch lblConf1]
+[label lblNotClear1]
+[scene 10310]
+[label lblConf1]
+
+[cameraFilter gray]
+[wipeFilter cinema 0.5 0]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+＠紫式部
+我记得，那应该是在晚餐之后。
+[k]
+
+[messageOff]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 0,-50]
+[wt 1.2]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 0,-50]
+[wt 1.2]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-50]
+[wt 1.2]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 0,-50]
+[wt 1.2]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth B 1]
+[charaDepth C 2]
+[charaDepth D 3]
+[charaDepth E 4]
+
+[charaFace B 0]
+[charaFace C 0]
+[charaFace D 0]
+[charaFace E 0]
+[charaFadein B 0.1 -350,-50]
+[charaFadein C 0.1 -150,-50]
+[charaFadein D 0.1 120,-50]
+[charaFadein E 0.1 370,-50]
+
+＠紫式部
+我看到帕拉塞尔苏斯大人、喀耳刻大人、塞弥拉弥斯大人[r]以及阿斯克勒庇俄斯大人聚在一起走。
+[k]
+
+＠紫式部
+说是开发了什么究极巧克力，[r]还说什么要把那个当做情人节主力商品。
+[k]
+
+＠紫式部
+他们希望御主务必试吃一下。[r]而我则负责跑腿，将巧克力带去了您的房间。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_2 1.0 0.3]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 66800]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10400]
+[label lblConf2]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_2 1.0 0.6]
+[wait fade]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 50,-50]
+[charaMove A 0,-50 0.4]
+[wt 1.2]
+
+[charaFace A 7]
+[wt 1.5]
+
+[charaFace A 1]
+[wt 0.7]
+
+[charaMoveReturn A 0,-55 0.5]
+[wt 1.2]
+
+[charaFadeout A 0.4]
+[wt 0.4]
+
+＠紫式部
+我将巧克力交给了御主，[r]本打算立刻告辞。
+[k]
+
+＠紫式部
+但在御主的劝说下，[r]我也陪御主一起品尝了[line 3]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[wipeOff]
+[cameraFilter normal]
+
+[scene 20305]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+[wt 0.4]
+
+？1：不会错了。
+？2：那就是原因……！
+
+？！
+
+[charaFace A 2]
+
+＠紫式部
+哎，光凭刚才那些内容就能断定了吗！？
+[k]
+
+[charaFace A 7]
+
+＠紫式部
+原因是……巧克力吗？[r]那里面放了古今东西的各种灵药秘药？
+[k]
+
+＠紫式部
+最近他们几位附近的危险指数在不断上升……[r]原来如此……
+[k]
+
+＠紫式部
+……[r]……
+[k]
+
+[charaFace A 6]
+
+＠紫式部
+啊啊啊，对不起对不起！[r]我万万没想到那居然是如此危险的东西！
+[k]
+
+？1：不是紫式部的错啦。
+
+？！
+
+[charaFace A 4]
+
+＠紫式部
+御主……[r]感谢您的宽容。
+[k]
+
+＠紫式部
+我今后一定会弥补这次的失态。[r]但现在……
+[k]
+
+[charaFace A 0]
+
+＠紫式部
+不论原因为何，[r]必须尽快寻找离开这里返回的方法才行。
+[k]
+
+＠紫式部
+当前的话……让我想想。
+[k]
+
+[bgmStop BGM_EVENT_7 1.5]
+
+＠紫式部
+先往那边的城镇前进吧。[r]但愿能找到什么线索……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[se ad443]
+[wt 0.4]
+[seStop ad443 0.2]
+[wt 0.2]
+
+＠？？？
+哎哟，等一下，那边两位。[bgm BGM_EVENT_5 0.1][r]你们刚才提到巧克力了吧？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠紫式部
+！？[r]什么人！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠？？？
+我们也非常喜欢甜食哦。[r]能在这里见到你们也算是种缘分。
+[k]
+
+＠？？？
+把能拿出来的东西全部交出来再告别吧。[r]没错……
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[charaDepth F 2]
+[charaDepth G 1]
+
+[charaFace G 2]
+[charaFadein G 0.1 1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 1.0]
+[charaFadeout F 0.7]
+[wt 1.2]
+
+[charaTalk on]
+
+＠盗贼头领
+也就是Give me chocolate啦！！[bgm BGM_EVENT_3 0.1]
+[k]
+
+？1：这还是很老套路呢。
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠紫式部
+这也是老套路的吗！？[r]御主的梦到底都是些什么情况啊！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠盗贼头领
+[FFFFFF]？[-]　这还是很老套路？[r]你在说什么胡话呢。
+[k]
+
+＠盗贼头领
+别再说这种废话了。我们也不是什么菜鸟。[r]是不会取你们性命的。
+[k]
+
+＠盗贼头领
+喂，你们肯定有巧克力吧。[r]老老实实地把东西交出来。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadein H 0.4 0]
+[charaFadein I 0.4 2]
+[se ad443]
+[wt 0.4]
+[seStop ad443 0.2]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk H]
+
+＠盗贼A
+嘿嘿嘿……巧克力，是巧克力！
+[k]
+
+＠盗贼B
+好久没有看到新鲜巧克力了！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠紫式部
+御主……！
+[k]
+
+？1：我身上没有……
+？2：这话在现在有些难以启齿呢……
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠盗贼头领
+你们没有巧克力？
+[k]
+
+[bgmStop BGM_EVENT_3 1.5]
+[charaFace G 5]
+
+＠盗贼头领
+嘁……什么嘛，你们是外来人啊。[r]让人空欢喜了一场。
+[k]
+
+[charaFace G 0]
+
+＠盗贼头领
+嗯，算了啦。[r]你们走吧。
+[k]
+
+[bgm BGM_EVENT_2 0.1]
+[charaFace G 1]
+
+＠盗贼头领
+这附近还挺危险的，一定要小心哦！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadein H 0.1 0]
+[charaFadein I 0.1 2]
+
+＠盗贼A
+附近有怪物之类的出没哦！
+[k]
+
+＠盗贼B
+只要顺着这条路走，就能抵达城镇了！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠紫式部
+看……看来……
+[k]
+
+＠紫式部
+他们把枪收起来了呢。
+[k]
+
+
+＠紫式部
+而且，那位怎么看都是蒂奇大人。[r]或许能从他那里打听到些什么吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠盗贼头领
+唔，你们怎么了？[r]有什么难言之隐吗？
+[k]
+
+[charaFace G 3]
+
+＠盗贼头领
+需要找在下商量吗？[r]人不可貌相，在下其实很擅长倾听哦。
+[k]
+
+＠盗贼头领
+不不，不用那么客气啦。[r]那位小姐的胸相当豪华[line 3]
+[k]
+
+[charaFace G 0]
+
+＠盗贼头领
+哎哟，失礼，说错了。
+[k]
+
+＠盗贼头领
+没错，服饰。在下指的是服饰剪裁。[r]衣服上装点着相当精细的刺绣，是这个意思啦。
+[k]
+
+[charaFace G 3]
+
+＠盗贼头领
+令人不禁产生了文化意义上的兴趣，[r]对眼睛是种了不得的保养呢……呼呼呼。
+[k]
+
+？1：那就稍微聊两句吧……
+
+？！
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+[se ad443]
+[seVolume ad443 0 0.1]
+[seVolume ad443 1.0 1.0]
+[wt 1.5]
+
+[charaEffect J bit_talk_41]
+[charaShake J 0.1 0 5 0]
+[charaTalk J]
+[charaFace J 3]
+[charaFadein J 0.4 1]
+[wt 0.4]
+
+＠？？？
+哇啊哒[line 8]！！！！
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaShakeStop J]
+[charaPut J 1200,1200]
+[charaEffectDestroy J bit_talk_41]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth J 2]
+[charaDepth G 1]
+
+[charaFace G 3]
+[charaFadein G 0.1 1]
+[wt 0.4]
+
+[seStop ad443 0.2]
+[charaFace J 0]
+[charaFadein J 0.2 600,0]
+[charaMove J 200,0 0.2]
+[wt 0.2]
+
+[fowardEffect bit_talk_14]
+[charaFace G 2]
+[charaShake G 0.05 5 5 0.1]
+[se adm50]
+[se ad102]
+[wt 0.05]
+[charaMove G -800,0 0.5]
+
+＠盗贼头领
+唔噢啊哒[line 9]！！？？[se ad348][charaMove J 300,50 0.25][charaFadeout J 0.25][charaFadeout G 0.4][bgm BGM_EVENT_27 0.1]
+[k]
+
+[seStop ad348 0.5]
+
+[charaTalk depthOn]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadein H 0.1 0]
+[charaFadein I 0.1 2]
+
+＠盗贼们
+头……头儿[line 8]！！？？
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+
+＠？？？
+嘿呀！[r]利用踢腿的反作用力空中三翻转！
+[k]
+
+[messageOff]
+[charaTalk on]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.2 -100,50]
+[charaMove J 0,0 0.2]
+[se ad223]
+[seVolume ad223 0 0.7]
+[se ad443]
+[wt 0.2]
+[seStop ad443 0.2]
+
+[charaFace J 2]
+
+＠？？？
+然～后～再～华丽落地10.00！[r]完美……太完美了！
+[k]
+
+
+
+＠？？？
+哎呀～，真是千钧一发呢，[&少年少女:少女们]！[r]既然偶来了，你们就可以放心啦！
+[k]
+
+[charaFace J 3]
+
+＠？？？
+不，或许没法放心？[r]或许可以放心？
+[k]
+
+[charaFace J 2]
+
+＠？？？
+算了，哪种都行啦，哇哈哈哈！
+[k]
+
+
+？1：感觉来了个不得了的……
+
+？！
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠紫式部
+……！！
+[k]
+
+＠紫式部
+这位大人……[r]怎么会……难道……？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad77]
+[seStop ad77 0.7]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.7 0,-50]
+[charaMove G 0,0 0.7]
+[charaShake G 0.05 3 3 0.7]
+[wt 0.7]
+
+＠盗贼头领
+不，不是啦，在下不知道你是谁，[r]但你到底有没有看明白状况？
+[k]
+
+＠盗贼头领
+从对话的内容来看，[r]在下和这两个人正准备和解吧？
+[k]
+
+＠盗贼头领
+距在下用绅士级社交技术成为情侣，[r]已经进入倒计时读秒阶段了吧？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 3]
+[charaFadein J 0.1 1]
+
+＠？？？
+停止你缺德的行为吧！
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+[wt 0.3]
+
+[se ad102]
+[se bac9]
+[charaEffect G bit_talk_13]
+[wt 0.15]
+
+[charaFace G 2]
+[charaMove G 0,-50 0.3]
+[charaShake G 0.05 3 3 0.3]
+
+＠盗贼头领
+啊呜！？[charaFadeout G 0.2]
+[k]
+
+
+[charaTalk J]
+[charaFace J 2]
+[charaFadein J 0.1 1]
+
+＠？？？
+哇哒！　哇哒！[r]你们都放马过来吧～！
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadein H 0.1 0]
+[charaFadein I 0.1 2]
+[wt 0.3]
+
+[se ad102]
+[se bac8]
+[charaEffect H bit_talk_13]
+[wt 0.15]
+
+[charaMove H -256,-50 0.3]
+[charaShake H 0.05 3 3 0.3]
+[charaFadeout H 0.2]
+
+＠盗贼们
+咕哇[line 8]！？[se ad102][se bac11][seVolume bac11 0 0.6][charaEffect I bit_talk_13][wt 0.15][charaMove I 256,-50 0.3][charaFadeout I 0.3]
+[k]
+
+[messageOff]
+[wt 0.1]
+
+？1：啊，总之先出手阻止吧。
+？2：紫式部，能行吗？
+
+？！
+
+[bgmStop BGM_EVENT_27 1.0]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠紫式部
+……[r]……
+[k]
+
+[charaFace A 2]
+
+＠紫式部
+啊，嗯，没问题！[bgm BGM_EVENT_3 0.1]
+[k]
+
+＠紫式部
+请交给我吧。[r]紫式部定会阻止这场纷争！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

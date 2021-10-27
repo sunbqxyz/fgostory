@@ -1,0 +1,880 @@
+
+
+
+＄94-03-66-03-2-0
+
+[soundStopAll]
+
+[charaSet A 4032000 1 莱妮丝]
+[charaSet B 1098165500 1 市民]
+[charaSet C 1098165600 1 市民2]
+[charaSet D 11006001 1 萨列里]
+
+[charaSet E 1098165300 1 莫里亚蒂]
+[charaSet F 9008000 1 阿斯特赖亚]
+[sceneSet G 10000 1]
+[charaScale G 1.01]
+[charaSet J 5009000 1 特效用dummy]
+
+[charaFilter F silhouette 00000080]
+
+[scene 73100]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_102 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+终于到达宫殿了……[r]这里的人也都带着面具啊。
+[k]
+
+？1：轻而易举地就进来了。
+？2：还以为会被警卫拦下呢。
+
+？！
+
+＠莱妮丝
+从构造上来看明明是要塞，却成为了舞会的宫殿，[r]甚至那边还有天文台，对面还有造币局……
+[k]
+
+＠莱妮丝
+看来是把不同时代的伦敦塔拼缀到了一起啊。
+[k]
+
+？1：伦敦塔？
+
+[charaFace A 1]
+
+＠莱妮丝
+这是伦敦有名的世界遗产哦。
+[k]
+
+＠莱妮丝
+是以征服者威廉所建造的白塔为基础，[r]经由理查德一世、亨利三世之手改造而成的要塞哦。
+[k]
+
+[charaFace A 0]
+
+＠莱妮丝
+但是，毕竟伦敦塔有漫长的历史。[r]中途它演变成了关押上层阶级囚犯的监狱。
+[k]
+
+＠莱妮丝
+伦敦塔给人的印象一般都是监狱吧。[r]也就是所谓的回荡着诸多叹息的监狱之塔。
+[k]
+
+？2：指的是作为世界遗产的征服者威廉的要塞吗？
+
+＠莱妮丝
+你还知道这个啊？[r]也是，毕竟这是伦敦有名的建筑物嘛。
+[k]
+
+＠莱妮丝
+虽说伦敦塔作为上层阶级的监狱给人的印象很深刻，[r]但其实最初是宫殿和银行，末了还成为了动物园。
+[k]
+
+？！
+
+[bgmStop BGM_EVENT_102 1.2]
+
+[charaFace A 6]
+
+＠莱妮丝
+好了，要不要更深入地探索一番呢[line 2]嗯？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ade305]
+[wt 1.8]
+
+[bgm BGM_EVENT_29 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠市民
+开始了！　开始啦！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+和着钢琴的声音，其他的乐团……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad5]
+[seVolume ad5 0 0.1]
+[seVolume ad5 0.5 0.7]
+[wt 1.0]
+[charaTalk off]
+
+[charaFace B 0]
+[charaFadein B 0.1 0]
+
+[charaMove B 156,0 2.5]
+[charaShake B 0.3 1 2 1.5]
+[wt 1.5]
+[charaFadeout B 0.4]
+[wt 0.1]
+
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.4 2]
+[charaFadein C 0.4 1]
+
+[charaMove B -156,0 2.5]
+[charaMove C -412,0 2.5]
+[charaShake B 0.1 1 2 1.5]
+[charaShake C 0.1 1 2 1.5]
+
+[wt 1.5]
+[charaFadeout B 0.4]
+[charaFadeout C 0.4]
+
+[seStop ad5 1.0]
+[wt 1.0]
+
+[charaTalk on]
+
+？1：舞会开始了……
+
+？！
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+不过这音乐……明明是以钢琴为主旋律的，[r]但为什么现场却唯独缺了钢琴家呢？
+[k]
+
+[charaFace A 5]
+
+＠莱妮丝
+唔，你怎么了？
+[k]
+
+？1：这个音乐……！
+？2：（发不出声音）
+
+？！
+
+[messageOff]
+
+[wipeout openEye 0.8 0.5]
+[bgm BGM_EVENT_29 1.0 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[charaTalk on]
+
+[wipein openEye 0.1 0.5]
+[wait wipe]
+
+[wipeFilter openEye 0.2 0.7]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 54802]
+[effect bit_sepia01]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠萨列里
+那当然。我只是个音乐家，[r]而且也没作出什么可以留名历史的曲子。
+[k]
+
+[charaFace D 4]
+
+＠萨列里
+平庸，或是愚钝。[r]哼，反正无关紧要。
+[k]
+
+[charaFace D 6]
+
+＠萨列里
+只因一点[line 3]
+[k]
+
+[charaFace D 7]
+
+＠萨列里
+只因[#杀害了阿马德乌斯]这点，[r]让我得以存在于英灵座上。
+[k]
+
+[messageOff]
+
+[fadeout white 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[effectStop bit_sepia01]
+[wt 0.1]
+
+[scene 10000]
+[wipeOff]
+
+[fadein white 1.0]
+[wait fade]
+
+[effectStop bit_sepia01]
+[wipeOff]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[scene 73100]
+[wt 1.5]
+
+[wipein openEye 1.0 1.0]
+[bgm BGM_EVENT_29 1.0 1.0]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+你怎么了？脸色怎么又不好了？[r]是想起什么了吗？
+[k]
+
+？1：要说钢琴家中的……从者的话。
+？2：那个[#复仇者:Avenger]职阶的从者……
+
+？！
+
+＠莱妮丝
+嗯……原来是这样。安东尼奥·萨列里。[r]就是那个一定要杀掉特定对手的从者吗？
+[k]
+
+[messageOff]
+[charaFace A 4]
+[wt 0.7]
+[charaFace A 0]
+
+＠莱妮丝
+虽然有些悲哀，但从从者的角度来看，[r]这种事也是合理的吧。
+[k]
+
+＠莱妮丝
+你说你听过他演奏的音乐，[r]那个音乐与这次的曲子是同一个人演奏的吗？
+[k]
+
+？1：……我不知道。
+？2：……我实在没法分辨是不是同一位钢琴家。
+
+？！
+
+[charaFace A 7]
+
+＠莱妮丝
+也对，毕竟你没有经历过专门的音乐训练嘛。[r]分不清也是正常的。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_29 0.7]
+[wt 1.5]
+
+[charaFace A 0]
+
+＠莱妮丝
+呃，关键的钢琴弹到一半就停了……？
+[k]
+
+[messageOff]
+
+[se ad4]
+[wt 2.0]
+[seStop ad4 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠市民
+……又来了。
+[k]
+
+？1：又？
+？2：以前也发生过同样的事情吗？
+
+？！
+
+＠市民
+舞会中最隆重的就是那架钢琴了！[r]然而最近总是刚开始不久就马上停下了。
+[k]
+
+＠市民
+明明大家都很期待钢琴的音色……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+我明白了，谢谢你。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[wt 0.6]
+[se ad95]
+[charaFadeout B 0.4]
+[charaMove B -30,0 0.4]
+[wt 0.6]
+[seStop ad95 0.4]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+感觉这是明摆着让我们去解决的事件啊。
+[k]
+
+？1：也就是说你打算去解决咯？
+？2：原来你对别人这么亲切啊？
+
+？！
+
+[charaFace A 7]
+
+＠莱妮丝
+哈？[r]我对解决啊亲切啊之类的事情根本没有兴趣哦。
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace A 0]
+
+＠莱妮丝
+其实我对之前童谣的那件事也没有兴趣。[r]但是我能感觉到，这个被称作特异点的地方完完全全是人为的。
+[k]
+
+＠莱妮丝
+这些谜团好像是故意要让我们去解决一般，[r]被设置在了我们要前往的地方。
+[k]
+
+？1：故意要让我们去解决……
+？2：是那个杀害埃尔梅罗先生的犯人做的吗？
+
+？！
+
+＠莱妮丝
+说不定这就是战书。[r]虽说这只是我的直觉，但我觉得这种时候必须重视直觉。
+[k]
+
+[bgmStop BGM_EVENT_70 1.2]
+
+＠莱妮丝
+这之中究竟隐藏着怎样的Whydunit呢……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.4 -300,0]
+[charaMove E 0,0 0.3]
+
+＠？？？
+你们站住！[bgm BGM_EVENT_7 0.1]
+[k]
+
+？1：哇！
+
+？！
+
+＠？？？
+你们两个把面具给我戴好。[r]难道这不是这里的规矩么！？
+[k]
+
+[charaFace E 3]
+
+＠？？？
+什么，你们两个都没带？[r]也不知道自己喜欢什么面具？
+[k]
+
+[charaFace E 2]
+
+＠？？？
+没办法，那就把这个给你们吧。[r]这可是来自五十大叔的好意！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+噢，噢噢。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[imageSet B back10000 1]
+[imageSet C cut108_mask1 1]
+[imageSet D cut108_mask2 1]
+[charaScale B 1.01]
+[charaScale C 1.01]
+[charaScale D 1.01]
+[charaDepth C 10]
+
+[charaFadeTime B 0.3 0.5]
+[wt 0.4]
+[se ade158]
+[charaFadein C 0.7 0,-200]
+[wt 1.5]
+
+[wait touch]
+
+[charaFadeout C 0.3]
+[charaFadeout B 0.3]
+[wt 0.4]
+
+[charaChange A 1098165200 0 fade 0.7]
+
+[se ade158]
+[wt 0.1]
+[se ad442]
+[seVolume ad442 0 0.5]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+……唔，看起来还行吗，我的弟子？
+[k]
+
+？1：很适合。
+？2：好可爱！
+
+？！
+
+[charaFace A 1]
+
+＠莱妮丝
+你还挺会说话的嘛。[r]难得拿到了面具，你也戴上吧。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth D 10]
+
+[charaFadeTime B 0.3 0.5]
+[wt 0.4]
+[se ade158]
+[charaFadein D 0.7 0,-200]
+[wt 1.5]
+
+[wait touch]
+
+[charaFadeout D 0.3]
+[charaFadeout B 0.3]
+[wt 0.4]
+
+[se ade158]
+[wt 0.1]
+[se ad442]
+[seVolume ad442 0 0.5]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[wt 0.5]
+
+[charaMove E 100,0 0.5]
+[wt 0.5]
+[charaMove E -0100,0 0.5]
+[wt 0.5]
+[charaMove E 1 0.5]
+[wt 0.7]
+[charaFace E 1]
+[charaMoveReturn E 0,-5 0.3]
+[wt 0.4]
+[charaMoveReturn E 0,-5 0.3]
+[wt 0.4]
+
+
+＠？？？
+嗯嗯，这个也很合适嘛。[r]不错不错，相当不错！
+[k]
+
+？1：谢谢你。
+？2：把面具给我们真的没关系吗？
+
+？！
+
+＠？？？
+当然没关系啦。
+[k]
+
+＠？？？
+毕竟再也没有比做不适合自己的事更让人悲伤的了[line 1]！
+[k]
+
+？1：那个，你是？
+？！
+
+[charaFace E 0]
+
+＠？？？
+哎呀，这里是不可以问名字的哦。[r]啊，当然没法辨别的话也很难办啊。
+[k]
+
+[bgmStop BGM_EVENT_7 1.5]
+
+＠？？？
+那么就叫我……『M』吧。
+[k]
+
+？1：『M』[line 2]！
+？2：（死亡信息！）
+
+？！
+
+[turnPageOff]
+[charaFace E 4]
+
+＠M
+嗯，怎么了？[bgm BGM_EVENT_48 0.1][r]突然这么大的反应。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[turnPageOn]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+不，没什么。[r]只是觉得字母很独特罢了。
+[k]
+
+[messageOff]
+[wt 0.4]
+[charaMoveScale A 1.1 0.3]
+[charaMove A 0,15 0.3]
+[charaFace A 0]
+[wt 0.5]
+
+＠莱妮丝
+（这是难得的线索。[r]　你给我稍微克制一下）
+[k]
+
+＠莱妮丝
+（万一这个五十大叔[r]　是杀害兄长的犯人的话怎么办）
+[k]
+
+[messageOff]
+
+[charaTalk depthOff]
+
+[charaDepth G 3]
+[charaDepth J 2]
+[charaDepth E 1]
+
+[wipeout circleIn 0.5 1.0]
+[bgm BGM_EVENT_48 1.0 0.5]
+[wait wipe]
+
+[charaScale A 1.0]
+[charaFadeout A 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+
+[wipein circleIn 0.1 1.0]
+[wait wipe]
+
+[charaFadein G 0.1 0,-200]
+[wt 0.1]
+
+[se bac266]
+[effect bit_talk_35]
+[wt 1.2]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+[charaPut J 1]
+[charaEffect J bit_talk_celebro]
+[charaBackEffect J bit_talk_celebro_back]
+
+[charaFadeout G 0.7]
+
+[wt 2.5]
+
+[wipeout circleIn 1.0 1.0]
+[wait wipe]
+
+[charaPut J 2000,2000]
+[charaEffectStop J bit_talk_celebro]
+[charaBackEffectStop J bit_talk_celebro_back]
+[charaFadeout E 0.1]
+
+[scene 73100]
+[wt 1.0]
+
+[wipein circleIn 1.0 1.0]
+[bgmStop BGM_EVENT_48 1.0]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠M
+哎呀哎呀，面具戴着不舒服吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+没，挺舒服的。[bgm BGM_EVENT_81 0.1][r]谢谢。
+[k]
+
+＠莱妮丝
+不过，你能说得更详细一些吗？[r]比如刚才是谁在演奏音乐之类的。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠M
+嗯嗯！　这一点确实令人在意呢！[r]只不过很可惜，没人知道这个问题的答案哦！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+没人知道？　这到底是怎么回事？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠M
+他原本就是一个偏执的钢琴家。[r]除了会在固定时间弹奏钢琴之外，他完全不和其他人产生任何接触。
+[k]
+
+＠M
+因此到头来谁也不知道他的秉性究竟如何。[r]更何况他还住在那座塔里。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+虽然大大缩小了范围，[r]但怎么偏偏就是那座血腥之塔啊！
+[k]
+
+[charaFace A 4]
+
+＠莱妮丝
+真伤脑筋啊。那不会真的是监狱吧？[r]……简直就像是被囚禁起来的公主啊。
+[k]
+
+＠莱妮丝
+被囚禁的钢琴家发生了异常……吗？[r]我倒还挺有兴趣的。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠M
+哎呀哎呀。[r]你们要去看看吗？
+[k]
+
+？1：诶？
+
+？！
+
+＠M
+当然，这么做不太好。[r]但既然你们如此在意，那也没办法。
+[k]
+
+[charaFace E 1]
+
+＠M
+我明白，这就是所谓的人性吧！[r]所以两位要不要和我走一趟呢？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+好。那就跟你去看看。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠M
+太好了！[r]那就出发吧，赶紧出发，出发！
+[k]
+
+[messageOff]
+[se ad60]
+[se adm36]
+[wipeout rightToLeft 1.0 1.0]
+[bgm BGM_EVENT_81 1.0 0.5]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[scene 10000]
+[wt 0.6]
+
+[seStop ad60 1.0]
+[seStop adm36 1.0]
+[wt 1.5]
+
+[wipein rightToLeft 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[wipeFilter cinema 0.5 0]
+
+[scene 73100]
+
+[fadein black 1.5]
+[bgm BGM_EVENT_81 1.0 1.0]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 0,-50]
+
+＠？？？
+……我们也去。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+＠？？？
+是。
+[k]
+
+
+[messageOff]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.2 0,-50]
+[wt 1.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

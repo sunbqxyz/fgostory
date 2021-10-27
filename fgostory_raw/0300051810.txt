@@ -1,0 +1,231 @@
+
+
+＄03-00-05-18-1-0
+
+[soundStopAll]
+
+[charaSet A 1038000 1 伊阿宋]
+[charaSet B 1098158300 1 尼莫]
+[charaSet C 1098182810 1 帕里斯]
+[charaSet D 4029001 1 阿喀琉斯]
+[charaSet E 1098182910 1 阿波罗]
+[charaSet J 98115000 1 特效用]
+
+[scene 84902]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[se ad746]
+[seVolume ad746 0 0.1]
+[seVolume ad746 1.5 1.0]
+
+[fadein black 1.5]
+[wait fade]
+[wt 1.5]
+[seStop ad746 1.0]
+
+[scene 51603 1.5]
+[wt 1.8]
+
+[se ad659]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠尼莫
+声呐探测到反应。[bgm BGM_EVENT_80 0.1][r]是纳米机器强化型[#拉弥亚:蛇女]，数量众多！
+[k]
+
+[seStop ad659 0.5]
+
+＠尼莫
+待命中的从者准备出击！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.6 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[scene 85701]
+[wipein rectangleStripDownToUp 0.6 1.0]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠伊阿宋
+啥？[r]没办法，阿喀琉斯！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠阿喀琉斯
+哦？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠伊阿宋
+帕里斯展现过力量了，[r]但你还没有吧。
+[k]
+
+＠伊阿宋
+我的意思是如果你真的能战斗，[r]不妨展现一下英勇身姿啊。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠阿喀琉斯
+……唔。
+[k]
+
+[charaFace D 0]
+
+＠阿喀琉斯
+御主！
+[k]
+
+？1：怎么了？
+？！
+
+＠阿喀琉斯
+虽然伊阿宋这样说，[r]但我想听听你的意见。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠伊阿宋
+哎，有必要多此一举吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠阿喀琉斯
+那还用说。[r]我可是会选择自己效忠对象的那类人哦。
+[k]
+
+？1：我也想见识一下阿喀琉斯的战斗身姿。
+
+[charaFace D 2]
+
+＠阿喀琉斯
+明白了！[r]既然如此，看我轻松收拾它们！
+[k]
+
+？2：只要脚后跟不碍事……
+
+[charaFace D 1]
+
+＠阿喀琉斯
+噢。
+[k]
+
+＠阿喀琉斯
+对战斗的影响……肯定有，[r]但我还没弱到会输给杂鱼。
+[k]
+
+？！
+
+
+[charaFace D 2]
+
+＠阿喀琉斯
+嘿哟！
+[k]
+
+[messageOff]
+[charaEffect D bit_talk_quickmove]
+[charaSpecialEffect D erasureReverse 1 0.3]
+[se ad7]
+
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[scene 84902]
+
+[se ad36]
+[wt 0.8]
+
+[wipein rectangleStripUpToDown 0.6 1.0]
+[wait wipe]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠阿喀琉斯
+漂浮在海面上的感觉真奇怪……[wt 1.0][charaFace D 1][r]好，对动作没有影响。
+[k]
+
+＠阿喀琉斯
+就让你们好好见识一下[r]特洛伊最强的英雄可不是浪得虚名哦！
+[k]
+
+[charaFace D 2]
+
+＠阿喀琉斯
+要上了！！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk depthOff]
+[charaDepth E 4]
+[charaDepth C 5]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠帕里斯
+特洛伊最强的英雄是赫克托耳哥哥啦！！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

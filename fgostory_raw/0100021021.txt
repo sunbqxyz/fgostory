@@ -1,0 +1,62 @@
+＄01-00-02-10-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+[scene 20700 0]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98003003 1 罗曼医生]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 1005001 1 尼禄]
+[charaSet E 98016000 1 罗马士兵]
+[charaTalk D]
+[charaFace A 0]
+[charaFadein A 0 2]
+[charaFace D 0]
+[charaFadein D 0 0]
+[fadein black 1]
+[wait fade]
+＠尼禄
+刚才的那些士兵怎么回事[line 2][r]和普通的联军士兵有些不太一样？
+[k]
+
+[charaFace D 4]
+＠尼禄
+模样倒是没什么差异，但……
+[k]
+
+[charaFace A 12]
+＠玛修
+……对，与其说是人类的士兵，[r]不如说从他们身上散发出的气息更近似于从者。
+[k]
+
+[charaFace A 7]
+＠玛修
+可他们不是从者吧？[r]医生，他们到底是……？
+[k]
+
+[se ad13]
+[wait se ad13]
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠罗曼医生
+有几种可能性。真伤脑筋。[r]这种情况多半是由宝具造成的。
+[k]
+
+＠罗曼医生
+而且还不是普通的宝具。[r]估计是需要在战场上发挥威力的那种吧。
+[k]
+
+[communicationCharaFace 3]
+＠罗曼医生
+那就是说[line 2]
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_5 0.4]
+[communicationCharaClear]
+[wait communicationChara]
+[wait fade]
+[soundStopAll]
+[end]

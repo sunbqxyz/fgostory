@@ -1,0 +1,351 @@
+
+
+＄91-70-06-02-1-1
+[charaSet A 6021001 1 酒吞童子]
+[charaSet B 7006001 1 坂田金时]
+[charaSet C 99502600 1 玛修]
+[charaSet D 6019001 1 风魔小太郎]
+[charaSet E 7023001 1 源赖光]
+[charaSet F 4011001 1 布狄卡]
+[charaSet G 2001000 1 卫宫]
+[charaSet H 98002000 1 芙芙]
+
+
+[bgm BGM_EVENT_2 0.1]
+[scene 28700]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠酒吞童子
+哎呀呀。[r]明明有三只神明的鬼呀[line 3]
+[k]
+
+[charaFace A 1]
+＠酒吞童子
+真是不堪一击。[r]呵呵。金发碧眼的小家伙，你还是那么强呐。
+[k]
+
+[charaFadeout A 0.1]
+[bgmStop BGM_EVENT_2 0.1]
+[wt 0.1]
+[bgm BGM_EVENT_5 0.1]
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠坂田金时
+……闭嘴。[r]话说你这家伙到底来这儿干嘛啊。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 14]
+[charaEffect C bit_talk_10]
+[charaFadein C 0.1 1]
+
+
+＠玛修
+请等一下，金时先生！[r]酒吞童子小姐真的是为了帮助御主和金时先生，
+[k]
+
+＠玛修
+才会主动要求灵子转移到这里来的。[r]还说就算危险也无妨，只想尽快过来。
+[k]
+
+＠玛修
+就算是强韧的从者，[r]匆忙的灵子转移也伴随着存在上的危险。
+[k]
+
+[charaFace C 8]
+＠玛修
+尽管如此，她还是[line 3]
+[k]
+
+[charaPut C 0,-10000]
+[charaEffectStop C bit_talk_10]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠坂田金时
+哪有那么好的事啦。这家伙是鬼。[r]无论多么像人类，做的事也截然不同。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠酒吞童子
+哎呀，真冷淡呀。你就那么以貌取人吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠坂田金时
+不是以貌取人。不是以外表。[r]而是靠[#内在]来判断的。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠酒吞童子
+……呵呵。小家伙你有认真看人的内在呀……
+[k]
+
+[messageOff]
+[wt 0.4]
+[charaFace A 1]
+[wt 1.0]
+[charaFace A 0]
+
+＠酒吞童子
+然后呢？[r]想在这里战到至死方休？　妾身倒是不介意哦。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠风魔小太郎
+……金时阁下。还是尽量避免不必要的争斗。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠坂田金时
+我明白。这家伙虽然是鬼，但却是老大的从者。[r]最重要的是这次行军的负责人不是我。
+[k]
+
+＠坂田金时
+老大，交给你了。我会服从。
+[k]
+
+[bgmStop BGM_EVENT_5 0.7]
+？1：带上酒吞童子一起走。
+[bgm BGM_EVENT_2 0.1]
+[charaFace B 0]
+＠坂田金时
+[#明白了:All right]。[r]既然老大这么决定，我没什么意见。抓紧时间继续前进。
+[k]
+
+？2：我总觉得酒吞童子会有帮上忙的时候……
+[bgm BGM_EVENT_2 0.1]
+＠坂田金时
+……不会吧，老大你也是啊。[r]看来越来越像是件让人头疼的事了……
+[k]
+
+[charaFace B 4]
+＠坂田金时
+其实，我好像也有这种感觉……[r]看来不是我一个人鬼迷心窍了啊……
+[k]
+
+？！
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 2]
+[charaFadein B 0.1 0]
+[charaMove A 50,0 0.4]
+[wait charaMove A]
+＠酒吞童子
+什么什么？[r]干嘛啦，在那边说什么悄悄话呢？
+[k]
+
+＠酒吞童子
+加妾身一个啦。[charaMoveReturn A 0,0 0.4]妾身也要，妾身也要。[charaMoveReturn A 0,0 0.4]好吗[line 3][charaFace A 1]御主？
+[k]
+
+[charaFace B 2]
+[charaShake B 0.01 0 5 0.7]
+＠坂田金时
+太近了！　不要那么靠近我和老大啦！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad7]
+[charaFadeout B 0.1]
+[charaFace A 4]
+[wt 0.4]
+[charaFadeout A 0.1]
+[wt 0.4]
+[charaFadein B 0.1 0]
+[charaFadein A 0.1 2]
+[charaTalk on]
+＠酒吞童子
+呵呵，干嘛啦。真是坏心眼呐。
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[bgmStop BGM_EVENT_2 0.7]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 1.0]
+[scene 10310]
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.4 1]
+[charaShake E 0.05 10 0 0.7]
+
+＠源赖光
+[line 6]啊。我似乎有种非常不祥的预感！
+[k]
+
+[charaFace E 5]
+＠源赖光
+会让我这位母亲伤心的事，[r]非常非常不好的放荡行为似乎正在某处发生……
+[k]
+
+＠源赖光
+难道又有什么坏虫子……[r]在打扰御主和金时了……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠布狄卡
+好啦好啦，别管啦，别管啦。[r]你还拿着菜刀呢，别三心二意的。
+[k]
+
+＠布狄卡
+说要学习各国各时代料理的不是你嘛。[r]既然都这么说了，就好好干啦。
+[k]
+
+[charaFace F 0]
+＠布狄卡
+明白了吗？　现在，我是老师，你是学生。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠源赖光
+啊，是。[r]对不起，老师。你看我居然会……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠卫宫
+可以了吗？　那我们继续下一个步骤。[r]但话说回来，在刀工方面你的技术无可挑剔。
+[k]
+
+＠卫宫
+虽然技法有些独特，[r]但只要最后能完美地切好，也无所谓啦。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 2]
+[charaFadein G 0.1 0]
+
+＠布狄卡
+不不。应该明确地指出错误才对吧？
+[k]
+
+＠布狄卡
+把素材抛向空中，菜刀一闪什么的，[r]我觉得吧，这种还是不太好啊……
+[k]
+
+＠布狄卡
+唔……不太好呢。还是从头教起吧。
+[k]
+
+
+[charaFace G 4]
+＠卫宫
+唔，也是。那就从怎么拿菜刀开始[line 3]
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1]
+[bgmStop BGM_EVENT_7 0.7]
+[wait wipe]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 1.0]
+[scene 28700]
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+[bgm BGM_EVENT_2 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠风魔小太郎
+…………有种不太好的预感。嗯。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFadein H 0.1 1]
+
+＠芙芙
+芙芙，芙。[r]啾呜。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠风魔小太郎
+我很不愿意思考返回迦勒底之后的事……[r]不，虽然只是一种预感而已。
+[k]
+
+
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]
+

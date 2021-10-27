@@ -1,0 +1,687 @@
+
+
+＄03-00-01-19-2-1
+[soundStopAll]
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 1098126400 1 帕茨西]
+[charaSet C 2010001 1 比利]
+[charaSet D 1098123600 1 亲卫队1]
+[charaSet E 1098123600 1 亲卫队2]
+[charaSet F 1017001 1 武藏]
+[charaSet H 98115000 1 特效用]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 21500]
+
+[fadein black 0.8]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠比利
+开火！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[charaEffect D bit_shot_01 0,180]
+[se ad563]
+[wt 0.1]
+[charaShake D 0.05 4 4 0.6]
+[se ad563]
+[wt 0.1]
+[se ad563]
+[wt 1.2]
+[charaEffectStop D bit_shot_01]
+
+[charaFadeout D 0.7]
+[wt 0.1]
+[charaMove D 0,-30 0.6]
+
+[wt 0.3]
+[se ad144]
+[wt 1.5]
+
+[bgmStop BGM_EVENT_80 2.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠武藏
+好，全部搞定！
+[k]
+
+[flag MALE false]
+[flag FEMALE false]
+
+[selectionUse masterMale]
+？1：武藏亲！
+[flag MALE true]
+？！
+
+[selectionUse masterFemale]
+？1：武藏亲！
+[flag FEMALE true]
+？！
+
+＠武藏
+嗯，嗯。我正是武藏。[bgm BGM_EVENT_77 0.1][r]你也成长得愈发强大了。
+[k]
+
+[charaFace F 7]
+
+＠武藏
+能看到你那么精神就好。[r]而且你果然还在战斗呢。
+[k]
+
+[charaFace F 0]
+
+＠武藏
+既然如此，那我应该也有力所能及的事吧！[r]没事，不必解释，我已经隐约意识到了！
+[k]
+
+[charaFace F 1]
+
+＠武藏
+新免武藏接下来会来担任你的保镖！[r]嗯，综上所述，契约，签订契约吧♪
+[k]
+
+[messageOff]
+
+[charaPut H 1]
+
+[se ad452]
+[charaMoveScale F 1.2 0.4]
+[charaMove F 0,30 0.4]
+[wt 0.3]
+[seStop ad452 0.3]
+[wt 0.5]
+[charaMoveReturn F 0,25 0.4]
+[se ad215]
+[wt 1.0]
+
+[branch play01 MALE 1]
+[branch play02 FEMALE 1]
+
+[label play01]
+[charaEffect H bit_talk_CommandMantra_01 0,64]
+[branch play03]
+
+[label play02]
+[charaEffect H bit_talk_CommandMantra_02 0,64]
+[branch play03]
+
+[label play03]
+
+[se bas16]
+[wait charaEffect H]
+[charaPut H 1200,1200]
+[charaEffectStop H]
+
+[charaFace F 7]
+
+[wt 1.5]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaEffect H bit_talk_10_LowLevel]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠玛修
+噢，真是惊人的契约速度。[r]通过与御主牵手，眨眼间就签订了简易契约。
+[k]
+
+？1：这么草率真的没问题吗……！？
+？2：（这还是第一次由契约对象主动连通路径……）
+
+？！
+
+[charaScale F 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠武藏
+太好了，这样一来就能一直全力战斗啦！[r]啊，报酬是十枚小判与每天一碗乌冬，麻烦你啦！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠比利
+而且还这般世俗地索要回报。[r]这位武士是来自西部的吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠武藏
+嗯，西部是个好地方啊。[r]每天都会有决斗，所以用不着为伙食费发愁。
+[k]
+
+[charaFace F 5]
+
+＠武藏
+话说回来，呃，比利？[r]这里是什么地方？
+[k]
+
+＠武藏
+我在雪原被雅嘎们雇佣，[r]正在追捕盗贼团呢……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠比利
+这里是弥诺陶洛斯的迷宫哦。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠武藏
+弥诺陶洛斯……啊啊，是希腊神话的那个！？[r]这下糟了。难怪会迷路啊。
+[k]
+
+＠武藏
+我就不该以为这里是盗贼团的据点，[r]还直接跳进突然出现的迷宫入口啊……
+[k]
+
+？1：糟透了……
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠玛修
+……听完你们的对话……
+[k]
+
+＠玛修
+我已经能栩栩如生地在脑海内描绘出[r]发生在下总国的事了……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠帕茨西
+好厉害，比[%1]有过之无不及啊。[r]这是啥，穿上了衣服四处溜达的糊涂蛋吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaDepth B 9]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 2]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+
+＠武藏
+唔，雅嘎！[r]稍微给我看下，看一下你的脸！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad7]
+[charaMove F 150,0 0.3]
+[wt 0.3]
+
+[charaMove B -200,0 0.1]
+[wt 0.1]
+[charaShake B 0.1 2 2 1.5]
+[se ad180]
+[charaFace B 2]
+[wt 0.6]
+
+[charaTalk on]
+
+＠帕茨西
+呀！　这女人搞什么！[r]力气好大！
+[k]
+
+[charaShakeStop B]
+＠武藏
+呃……没有通缉令上的特征呢……[r]看来你不是盗贼团的成员。
+[k]
+
+[charaFace F 0]
+
+＠武藏
+抱歉，毕竟我接下了这份工作嘛。[r]我不太擅长分辨雅嘎的长相。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠武藏
+辗转到这个世界之后，[r]我就经常遭雅嘎警惕或攻击……
+[k]
+
+[charaFace F 1]
+
+＠武藏
+最近好不容易才开始能沟通，[r]保持互利互惠的关系了。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠比利
+啊啊！[r]你就是传闻中的那个杀人狂吗！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+＠武藏
+哎，杀人狂？
+[k]
+
+[bgmStop BGM_EVENT_77 1.5]
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFace F 4]
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+＠武藏
+……啊啊，嗯。[bgm BGM_EVENT_7 0.1][r]那就是我，嗯。
+[k]
+
+[charaFace F 5]
+
+＠武藏
+但我可以发誓，我所斩杀的[r]都是袭击村庄的盗贼与[#杀戮猎兵:亲卫队]哦？
+[k]
+
+？1：你有没有自称是迦勒底的人？
+？！
+
+[charaFace F 3]
+
+＠武藏
+应该有这么自称过吧？[r]是在雪原救下快被咆哮兽杀害的人的那时。
+[k]
+
+[charaFace F 8]
+
+＠武藏
+尽管雅嘎们都尊崇弱肉强食，却有不少人莫名知恩图报。[r]因为那人硬要我报上名字，所以……
+[k]
+
+＠武藏
+我就耍帅地说了句，[r]『在下乃迦勒底首屈一指之剑豪是也』……对不起！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace F 8]
+[charaFadein F 0.1 200,0]
+[charaFace B 4]
+[charaFadein B 0.1 -200,0]
+
+[se ad180]
+[charaShake B 0.05 2 2 1.5]
+[wt 1.0]
+[charaTalk on]
+[charaTalk C]
+＠帕茨西
+差不多该放开我了吧！[r]你到底是怎么回事啦！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠比利
+确实到底是怎么回事啊。
+[k]
+
+
+[messageOff]
+[bgm BGM_EVENT_7 1.5 0.5]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[scene 51600]
+[wt 0.5]
+
+[charaSet A 98001000 1 玛修]
+[charaSet D 98086000 1 福尔摩斯]
+
+[wipeFilter cinema 0.5 0]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+[fadein black 0.5]
+[wait fade]
+
+＠福尔摩斯
+（宫本武藏……在特异点之一，[r]　下总国邂逅的“[#异邦人:Stranger]”啊……）
+[k]
+
+＠福尔摩斯
+（她是不借助灵子转移也能在[r]　“平行世界”间来往的特异能力者。）
+[k]
+
+＠福尔摩斯
+（恐怕是在地表被漂白的时刻，[r]　从基本世界“穿越”到这俄罗斯了。）
+[k]
+
+＠福尔摩斯
+（幸亏如此，她才没受这次异常事态的影响，[r]　才得以在俄罗斯领域与我们重逢……）
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠玛修
+福尔摩斯先生？[r]有什么问题吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 0,-50]
+
+＠福尔摩斯
+[&Mr.:Miss][%1]的幸运……[r]不对，应该说这人缘实在令人佩服。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.5]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wipeOff]
+
+[charaSet A 99502600 1 玛修]
+[charaSet D 98115300 1 福尔摩斯]
+[charaSet E 1098124510 1 达·芬奇]
+
+[wt 0.5]
+
+[scene 21500]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠福尔摩斯
+Miss宫本。我们对你愿意协助迦勒底一事[bgm BGM_EVENT_77 0.1][r]没有丝毫怀疑。毕竟过去曾受过您的莫大关照。
+[k]
+
+＠福尔摩斯
+甚至可以说，感谢你这次的不小心。[r]没想到你的特异体质还有这等意义。
+[k]
+
+＠福尔摩斯
+这[#异闻带:Lostbelt]中的一切都是敌人，[r]都是不可信任的存在，唯有你不一样。
+[k]
+
+＠福尔摩斯
+你穿越了诸多世界，且是能评判善恶之人。
+[k]
+
+＠福尔摩斯
+对[&Mr.:Miss][%1]而言，[r]没有比你更合适的帮手了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaDepth F 9]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 2]
+
+[charaPut H 0]
+[charaFace D 5]
+[charaFadein D 0.1 0]
+
+＠武藏
+不小心是啥啊，什么叫不小心啊！[r]我也不是自愿穿越世界[line 3]
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[wt 0.8]
+[charaFace F 9]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 3]
+
+＠武藏
+讨厌，这美男子是怎么回事！[r]虽然年纪有些偏大，但却长着一张会令见者感到幸福的脸蛋～！
+[k]
+
+[charaFace D 6]
+
+＠福尔摩斯
+这……这还真是不敢当。尽管我已习惯被赞美，[r]但还是第一次遇到那么高兴见到我的人。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 17]
+[charaFadein E 0.1 0]
+
+＠达·芬奇
+好啦好啦，福尔摩斯别在那儿对着小镜子照啦。[r]可以称呼你为武藏吗？　Saber的从者。
+[k]
+
+[charaFace F 10]
+
+＠武藏
+（等等，怎么又出现一位超级美少女了！？）
+[k]
+
+[charaFace E 0]
+
+＠达·芬奇
+我是莱昂纳多·达·芬奇。[r]希望你能叫我达·芬奇亲。
+[k]
+
+＠达·芬奇
+你是自己闯入这座迷宫的吧？[r]还记得出去的路吗？
+[k]
+
+[charaFace F 3]
+
+＠武藏
+啊哈哈哈哈。
+[k]
+
+＠武藏
+抱歉，完全找不着北！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠帕茨西
+……算了，反正原本就不抱有期待。[r]也就是说，我们又回到起点了啊。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠福尔摩斯
+战力能增加已经很不错了。
+[k]
+
+＠福尔摩斯
+我们这里会逐一输入坐标数据，[r]想办法制作一幅地图。
+[k]
+
+＠福尔摩斯
+但是据我推测，这座迷宫无法从外部掌握情况，[r]只能靠内部的人进行攻略。
+[k]
+
+＠福尔摩斯
+所以就只能靠你们自己努力前进了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠比利
+总之先往前走吧，[r]继续留在这里情况也不会有任何改变。
+[k]
+
+＠比利
+[%1]，你和武藏许久未见了吧？[r]那就边走边交换迄今为止的情报吧？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠武藏
+说得对。尽管在此待了三个月，[r]但我搞清楚的事也就只有俄罗斯很冷。
+[k]
+
+＠武藏
+凭借[%1]的实力，[r]应该已经掌握状况了吧？
+[k]
+
+[charaFace F 1]
+
+＠武藏
+那就请你不吝赐教啦！[r]我最喜欢的就是你这点了！
+[k]
+
+？1：当然啦！
+？2：我很高兴能够再次见到你，武藏亲。
+？！
+
+[messageOff]
+[charaFace F 7]
+[wt 1.0]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

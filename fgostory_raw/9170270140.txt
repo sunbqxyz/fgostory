@@ -1,0 +1,429 @@
+
+＄91-70-27-01-4-0
+[soundStopAll]
+
+[charaSet A 7027001 1 彭忒西勒亚]
+[charaSet B 3016001 1 赫克托耳]
+[charaSet D 4029001 1 阿喀琉斯1]
+[charaSet E 4029001 1 阿喀琉斯2]
+[charaSet F 4029001 1 阿喀琉斯3]
+[charaSet G 5009000 1 特效用dummy1]
+[charaSet H 5009000 1 特效用dummy2]
+
+[scene 58200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0 1]
+
+[bgm BGM_EVENT_24 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk depthOff]
+[charaDepth D 0]
+[charaDepth G 1]
+[charaDepth H 2]
+
+[charaShake D 0.05 7 4 0.2]
+[charaPut H -70,50]
+[charaEffect H bit_talk_13]
+[se ade37]
+[cueSe Battle bac151]
+[cueSe Battle bac386]
+[wt 0.3]
+[cueSeStop bac151 0.2]
+[charaEffectStop H bit_talk_13]
+
+[charaShake D 0.05 5 4 0.2]
+[charaPut G 60,10]
+[charaPut H 60,10]
+[charaEffect G bit_talk_13]
+[charaEffect H bit_talk_14]
+[se ade37]
+[cueSe Battle bac151]
+[cueSe Battle bac387]
+[wt 0.3]
+[cueSeStop bac151 0.2]
+[charaEffectStop G bit_talk_13]
+[charaEffectStop H bit_talk_14]
+
+[charaShake D 0.05 3 6 0.2]
+[charaPut H -50,-20]
+[charaEffect H bit_talk_13]
+[se ade37]
+[cueSe Battle bac151]
+[cueSe Battle bac388]
+[wt 0.3]
+[cueSeStop bac151 0.2]
+[charaEffectStop H bit_talk_13]
+
+[wt 0.1]
+
+[charaPut G 1]
+[charaPut H 1]
+[charaEffect G bit_talk_13]
+[charaEffect H bit_talk_14]
+[se ade37]
+[cueSe Battle bac151]
+[cueSe Battle bac389]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaShake D 0.05 7 4 0.5]
+
+[wt 0.7]
+
+[se ad161]
+[effect bit_talk_35]
+[wt 1.7]
+
+[charaSpecialEffect D flashErasure 1 1.5]
+[wt 0.2]
+[se ad52]
+[wait charaSpecialEffect D]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠彭忒西勒亚
+啊啊，哈啊，啊啊啊啊啊啊…………！
+[k]
+
+＠彭忒西勒亚
+阿喀琉斯、阿喀琉斯、阿喀琉斯！！[r]杀，杀，杀[line 4]！
+[k]
+
+[charaPut G 2400,-2400]
+[charaPut H 2400,-2400]
+[charaScale G 0.83]
+[charaScale H 0.83]
+[charaEffect G bit_talk_impactlanding]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[cameraMove 0.2 50,70 1.4]
+[wt 0.3]
+[charaPut G 0,-48]
+[cueSe Battle bac315]
+[shake 0.03 7 7 0.3]
+[wt 1.1]
+[charaEffect H bit_talk_impactlanding]
+[wt 0.4]
+[charaEffectStop G bit_talk_impactlanding]
+[charaPut H 0,-48]
+[cueSe Battle bac315]
+[shake 0.03 7 7 0.3]
+
+[wt 1.0]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 0.5]
+[bgm BGM_EVENT_24 0.5 0.4]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaPut G 2400,2400]
+[charaPut H 2400,2400]
+[charaEffectStop H bit_talk_impactlanding]
+[charaScale G 1.0]
+[charaScale H 1.0]
+[cameraHome 0.1]
+[charaSet H 5009000 1 特效用dummy2]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.4 0.5]
+[wait wipe]
+
+＠赫克托耳
+你已经杀掉了啦。[r]连这都没发现啊。
+[k]
+
+＠赫克托耳
+尽管早就猜到了，[r]但看来脑袋和身体都过热了呢。
+[k]
+
+？1：但是，那还不算完。
+？！
+
+[charaFace B 0]
+
+＠赫克托耳
+说得没错。[r]达·芬奇差不多……看，来了。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 0.5]
+[wait wipe]
+[charaFadeout B 0.1]
+[cameraMove 0.1 50,70 1.4]
+[charaTalk A]
+[charaFace A 7]
+[charaScale A 0.71]
+[charaFadein A 0.1 -50,-153]
+[bgm BGM_EVENT_24 0.5 1.0]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.4 0.5]
+[wait wipe]
+
+
+＠彭忒西勒亚
+[cueSe Battle bac315]
+[shake 0.03 7 7 0.3]
+怎么样，[wt 1.0][cueSe Battle bac315][shake 0.03 7 7 0.3]怎么样，[wt 1.0][cueSe Battle bac315][shake 0.03 7 7 0.3]怎么样！[wt 1.2][r]这样一来，你还会，你还会[line 4]！
+[k]
+
+[charaFace A 6]
+
+[bgmStop BGM_EVENT_24 0.3]
+
+＠彭忒西勒亚
+[line 6]
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace A 7]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠彭忒西勒亚
+！？？
+[k]
+
+[messageOff]
+[fadeout black 0.3]
+[wait fade]
+[charaFadeout A 0.1]
+[charaScale A 1.0]
+[cameraHome 0.1]
+[charaTalk depthOff]
+[charaDepth E 0]
+[charaDepth F 1]
+[charaDepth D 2]
+[charaTalk off]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[fadein black 0.3]
+[wait fade]
+
+[wt 1.0]
+
+[charaFace E 0]
+[charaPut E -288,0]
+[se ad42]
+[charaSpecialEffect E appearanceReverse 0 0.7]
+[seStop ad42 0.9]
+[wt 1.2]
+[charaFace F 0]
+[charaPut F 288,0]
+[se ad42]
+[charaSpecialEffect F appearanceReverse 0 0.7]
+[seStop ad42 0.9]
+[wt 2.5]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠彭忒西勒亚
+这是…………！
+[k]
+
+＠彭忒西勒亚
+不。阿喀琉斯。没错。我知道。[r]你……行动迅速。疾速、急速、神速！
+[k]
+
+＠彭忒西勒亚
+是因为这样吗？　所以我才会看到这样的景象吗？[r]号称人类最迅速的英雄，啊啊，到处都是！
+[k]
+
+＠彭忒西勒亚
+……呜，哈，呵哈哈哈哈哈哈哈[line 3]
+[k]
+
+[charaFace A 7]
+
+[bgmStop BGM_EVENT_5 0.3]
+
+＠彭忒西勒亚
+荒谬！
+[k]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠彭忒西勒亚
+那我，就会将这些全部摧毁！[r]无论身在何处的你，无论逃往何方的你，都必定，
+[k]
+
+＠彭忒西勒亚
+必定必定必定被我摧毁，那就是被我杀掉的你！[r]那就是无法从我赐予的死亡命运中逃脱的你！
+[k]
+
+＠彭忒西勒亚
+因此[line 3]我会将视野内所有的你全部摧毁，[r]你的速度根本毫无意义！
+[k]
+
+[messageOff]
+[fadeout black 0.8]
+[bgm BGM_EVENT_24 0.8 0.4]
+[wait fade]
+[charaFadeout A 0.1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 0.7]
+[fadein black 0.8]
+[wait fade]
+
+＠赫克托耳
+唔……语言功能似乎过热了呢。[r]不愧是Berserker。
+[k]
+
+[charaFace B 5]
+
+＠赫克托耳
+……御主，请退后。[r]这样下去很可能被卷进去。
+[k]
+
+＠赫克托耳
+那家伙已经将自己周围的一切都视为阿喀琉斯了吧。
+[k]
+
+＠赫克托耳
+万一不幸向我们发起攻击[line 3][r]我就只能全力使用这[#不毁的极枪:Durindana]了。
+[k]
+
+＠赫克托耳
+如果不这样做，是无法保护你的。[r]但届时那家伙可能会死，也可能是我会死……
+[k]
+
+[charaFace B 0]
+
+＠赫克托耳
+这是无法回避的风险。[r]哎呀，大叔我可不是这种勤劳努力的角色哦。
+[k]
+
+＠赫克托耳
+但我至少会撑到将御主的性命托付给别的什么人为止，[r]所以放心吧。我可不想被玛修小妹妹怨恨。
+[k]
+
+？1：请努力不要死啦！
+？！
+
+[charaFace B 1]
+
+＠赫克托耳
+我会努力的。但是，特洛伊战场就是[r]这么一个努力也无济于事的地方。
+[k]
+
+＠赫克托耳
+神明与英雄，怨念与执着，尊严与傲慢，道德与沦丧。
+[k]
+
+＠赫克托耳
+光一种就够人喝一壶的东西不仅堆积在一起，
+[k]
+
+＠赫克托耳
+还由命运女神之手搅得一团乱。
+[k]
+
+＠赫克托耳
+无论发生什么都没什么好奇怪的，无论是谁，该死的时候都会死。[r]这里就是这么个不好对付的战场。
+[k]
+
+＠赫克托耳
+哎呀，尽管是自己完成的，[r]但我都不禁感慨自己居然能撑住十年。
+[k]
+
+？1：但现在……
+？！
+
+[charaFace B 0]
+
+＠赫克托耳
+哎哟，对哦。[r]这不过是一次模拟。
+[k]
+
+＠赫克托耳
+大叔似乎也不知不觉沉迷其中了。
+[k]
+
+＠赫克托耳
+啊啊，太丢人了。
+[k]
+
+[charaFace B 5]
+
+＠赫克托耳
+但是[line 3][#只有彭忒西勒亚是货真价实的]。[r]那种疯狂，与那种念想。
+[k]
+
+＠赫克托耳
+所以，现在我们做的都是有意义的……[r]同时，也很可怕。
+[k]
+
+[charaFace B 4]
+
+＠赫克托耳
+尽管那家伙的疯狂只要破坏了某件东西就会停止，[r]但她究竟想破坏什么……
+[k]
+
+＠赫克托耳
+我们也只能凭想像了。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 0.5]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.5]
+[wipein rectangleStripRightToLeft 0.4 0.5]
+[bgm BGM_EVENT_24 0.4 1.0]
+[wait wipe]
+
+＠彭忒西勒亚
+啊啊，阿喀琉斯，佩琉斯之子阿喀琉斯啊！
+[k]
+
+＠彭忒西勒亚
+看着我。看着身为亚马逊战士的我！[r]与我战斗，阿喀琉斯，心中仅留着战意来战斗吧！
+[k]
+
+＠彭忒西勒亚
+……我不会再让你说出那句话了。决不会让你说出口。
+[k]
+
+＠彭忒西勒亚
+我已经不是什么美丽之人，也不是什么女人！[r]阿喀琉斯啊，与只是一名的战士我[line 3]
+[k]
+
+＠彭忒西勒亚
+[f large][messageShake 0.05 7 7 0.5]战斗吧[line 3]！！！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+
+
+

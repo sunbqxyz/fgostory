@@ -1,0 +1,197 @@
+＄01-00-06-22-1-1
+
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+
+[charaSet A 8001001 1 玛修]
+[charaSet B 1012001 1 贝德维尔]
+[charaSet E 5022001 1 三藏]
+[charaSet F 2014000 1 俵藤太]
+[charaSet G 98002000 1 芙芙]
+[charaSet H 1020000 1 兰斯洛特]
+[charaSet C 5012001 1 尼托克丽丝]
+
+[scene 28801]
+
+[backEffect bit_talk_haboob_02]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0 1]
+
+[fadein black 2.0]
+[wait fade]
+
+＠三藏
+看来不行[line 6]！
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk F]
+[charaFace E 4]
+[charaFace F 5]
+[charaFadein E 0.1 2]
+[charaFadein F 0.1 0]
+
+＠俵藤太
+都是因为你说了奇怪的话啦！[r]不，话说回来，那男人未免太硬了吧……！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+
+[se ad137]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠贝德维尔
+呜……这种……程度……！[r]和阿拉什阁下的遗憾比起来……！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk G]
+[charaFadein G 0.1 1]
+
+＠芙芙
+芙，芙呜！
+[k]
+
+[charaFadeout G 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+御主，请撤退！[r]虽然由衷感到不甘，但已经难以继续战斗下去了……！
+[k]
+
+？1：有这么不甘心吗……！？
+
+[charaFace A 8]
+＠玛修
+……不，只是下意识……[r]我也是第一次产生如此不想输的感觉……
+[k]
+
+？2：被完全包围了……！
+
+？！
+
+[charaFadeout A 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠兰斯洛特
+放弃吧。这里是奥斯曼狄斯的沙漠。[r]没有能帮助汝等的山之民。
+[k]
+
+[charaFace H 5]
+＠兰斯洛特
+逃进沙漠成了你们的败因。[r]有什么想说的可以在路上慢慢地[line 3]
+[k]
+
+
+[charaFadeout H 0.1]
+
+[bgmStop BGM_EVENT_5 0.1]
+[se bas1]
+
+[charaEffect G bit_talk_41]
+[shake 0.05 0 4 1.0]
+
+＠C：？？？
+你们这群无礼之徒在做什么！[r]明知此处乃太阳王热衷之地还肆意糟蹋吗！
+[k]
+
+[se ba1]
+[messageOff]
+[wipeout downToUp 0.3 1]
+[wait wipe]
+
+[charaEffectStop G bit_talk_41]
+
+[charaScale C 2.2]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0 0,800]
+[charaFadeTime C 0 0.5]
+
+[wipein upToDown 0.5 1]
+[wait wipe]
+
+
+[bgm BGM_EVENT_3 0.1]
+[wt 1.0]
+
+[se ba1]
+[messageOff]
+[wipeout downToUp 0.3 1]
+[wait wipe]
+
+[scene 28300]
+[charaPut C 0,400 0]
+
+
+[wipein upToDown 0.5 1]
+[wait wipe]
+[wt 1.0]
+
+
+[se ba1]
+[wipeout downToUp 0.3 1]
+[wait wipe]
+
+[scene 20320]
+[charaPut C 0,100 0]
+
+[wipein upToDown 0.3 1]
+[wait wipe]
+
+
+[se bac24]
+[charaPut G 1]
+[charaEffect G bit_talk_41]
+[wt 2.0]
+
+
+[charaPut G 1200,1200]
+[scene 28801 0.5]
+[charaFadeout C 0.5]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.5 1]
+
+[wait scene]
+[charaEffectStop G bit_talk_41]
+
+[charaShake H 0.05 3 3 0.5]
+＠兰斯洛特
+什么[line 3]
+[k]
+
+[charaFadeout H 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[charaShake A 0.05 3 3 0.5]
+＠玛修
+发生什么了[line 5]！？
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_3 2.0]
+[wait fade]
+[backEffectStop]
+[soundStopAll]
+[end]
+
+

@@ -1,0 +1,840 @@
+
+
+＄91-60-05-02-3-0
+
+
+[soundStopAll]
+
+
+[charaSet A 6005001 1 杰克]
+[charaSet B 9002001 1 天草四郎]
+[charaSet C 5004001 1 童谣（？）]
+[charaSet D 1098181200 1 伦敦女士]
+[charaSet E 98110300 1 医生]
+[charaSet F 98110400 1 贵族]
+[charaSet G 1098120900 1 老人]
+[charaSet H 1098121000 1 老妇]
+
+[charaSet I 8001000 1 dummy特效1]
+[charaSet J 8001000 1 dummy特效2]
+
+[scene 77800]
+
+[charaPut J 0,0]
+[charaEffect J bit_talk_11]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[fadein black 1.5]
+[wait fade]
+
+＠伦敦女士
+她们是伦敦的牺牲者。[bgm BGM_EVENT_11 0.1]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠天草四郎
+嗯，应该是吧。
+[k]
+
+[charaPut J 0,0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠伦敦女士
+是可悲，理应被怜悯的存在，[r]太遗憾了，[#所以复仇是理所当然的]。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠天草四郎
+哎呀，这话就不对了吧？
+[k]
+
+＠天草四郎
+比方说，如果她想向杀害自己的某个人复仇，[r]那还说得通。
+[k]
+
+＠天草四郎
+当然，如果打算当着我们的面做，[r]我和御主必然会出手阻止。
+[k]
+
+[charaFace B 4]
+
+＠天草四郎
+但是，向[#并非杀了自己的某个人]复仇，[r]这未免不合情理吧。
+[k]
+
+＠天草四郎
+这只能算无缘无故地反恨别人。
+[k]
+
+[charaPut J 0,0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠伦敦女士
+说得对。[r]但是……不知是谁说过这么一句话。
+[k]
+
+＠伦敦女士
+[#受害者这一立场]，[r][#可以将无理的憎恨正当化]。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠天草四郎
+……说得对。
+[k]
+
+＠天草四郎
+你说得确实没错，[r]这种倾向的确存在。
+[k]
+
+[charaPut J 0,0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠伦敦女士
+现在[line 3]那孩子正面对这条界线。
+[k]
+
+＠伦敦女士
+一定要赶在她们跨过这条线之前，[r]阻止她们才行。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_11 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[scene 10000]
+[cameraMove 0 0,0 1.01]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_48 0.1]
+
+＠
+[charaTalk A][line 3]立于断崖绝壁边。
+[k]
+
+＠
+[charaTalk A]
+有人在耳边轻轻呢喃，[r]跳下去就能获得解脱。
+[k]
+
+＠
+[charaTalk A]
+[#我们非常可怜]。[r]因为我们被杀害了。
+[k]
+
+＠
+[charaTalk A]
+被父母、被医生、被社会，[r]被不知名的存在。
+[k]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠童谣（？）
+不能一味逃避哦？
+[k]
+
+＠童谣（？）
+如果无法清算这些罪孽，[r]只会越积越多吧！
+[k]
+
+＠
+[charaTalk A]
+少啰嗦。[r]我们没有罪孽。
+[k]
+
+＠
+[charaTalk A]
+有的只是因果报应。[r]是你们将我们变成了这样。
+[k]
+
+＠童谣（？）
+或许吧，不，一定是这样！[r]所以才可以下杀手吧。
+[k]
+
+＠
+[charaTalk A][line 3]应该可以。
+[k]
+
+＠
+[charaTalk A]
+应该可以报复。[r]应该可以复仇。
+[k]
+
+＠
+[charaTalk A]
+我们，我们，[r]因为，我们是如此地[line 3]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[charaScale C 1.2]
+[wt 0.4]
+
+＠童谣（？）
+[line 3][r][line 3]
+[k]
+
+＠杰克
+杀了……你。
+[k]
+
+[bgmStop BGM_EVENT_48 1.0]
+
+＠？？？
+[charaTalk D][line 3]不行哦。[r]你们[#不该像这样杀人]。
+[k]
+
+＠
+[charaTalk A]
+通透而温柔的声音。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_45 0.1]
+
+＠
+[charaTalk A]
+回首望去。[r]朦胧的身影，朦胧的氛围。
+[k]
+
+＠
+[charaTalk A]
+但是，为何我们会陡然停下脚步呢。
+[k]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠杰克
+……谁……？
+[k]
+
+＠？？？
+[charaTalk D]
+呵呵，谁也不是。
+[k]
+
+＠？？？
+[charaTalk D]
+听好了哦？[r]你们确实是各方面的受害者。
+[k]
+
+＠？？？
+[charaTalk D]
+甚至可以说，[r]所有活着的人都是危害你们的帮凶。
+[k]
+
+＠？？？
+[charaTalk D]
+但是，[r]成为加害者会化作你们的瑕疵。
+[k]
+
+[charaFace A 0]
+
+＠杰克
+瑕疵……？
+[k]
+
+＠？？？
+[charaTalk D]
+因为这会温和地摧毁你们根源的部分，
+[k]
+
+＠？？？
+[charaTalk D]
+一旦成了加害者，[r]一旦觉得自己理应成为加害者的话[line 3]
+[k]
+
+＠？？？
+[charaTalk D]
+那里总有一天会完全粉碎。
+[k]
+
+[charaFace A 4]
+
+＠杰克
+为什么你会知道这些呢？
+[k]
+
+＠？？？
+[charaTalk D]
+究竟是为什么呢。[r]但是，我说中了吧？
+[k]
+
+＠杰克
+……[r]……
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_45 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.8 1]
+[charaScale C 1.0]
+[wt 0.8]
+
+＠童谣（？）
+怎么了？[r]不对他们报以仇恨吗？[bgm BGM_EVENT_72 0.1]
+[k]
+
+[messageOff]
+[se ad178]
+[charaSpecialEffect C darkEnemyErasure 0,0 0.9]
+[wt 1.4]
+
+[se ad177]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[charaSpecialEffect E appearance 0,0 0.9]
+[wt 1.2]
+[seStop ad177 0.2]
+
+＠医者
+哪怕医生杀害你们的数量多到[r]需要用清扫才能丢弃？
+[k]
+
+[messageOff]
+[se ad178]
+[charaSpecialEffect E darkEnemyErasure 0,0 0.9]
+[wt 1.4]
+
+[se ad177]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[charaSpecialEffect F appearance 0,0 0.9]
+[wt 1.2]
+[seStop ad177 0.2]
+＠贵族
+哪怕男人创造了你们，[r]却对你们不屑一顾？
+[k]
+
+
+[messageOff]
+[charaSet E 98110400 1 医生]
+[se ad178]
+[charaSpecialEffect F darkEnemyErasure 0,0 0.9]
+[charaSpecialEffect E darkEnemyErasure 0,0 0.9]
+[wt 1.0]
+[charaMove E -256,0 0.4]
+[charaMove F 256,0 0.4]
+[wt 0.4]
+
+
+[se ad177]
+[charaTalk off]
+[charaFace G 0]
+[charaFace H 0]
+[charaFadein G 0.4 -256,0]
+[charaFadein H 0.4 256,0]
+[charaSpecialEffect G appearance -45,0 0.9]
+[charaSpecialEffect H appearance 60,0 0.9]
+[wt 1.2]
+[seStop ad177 0.2]
+
+＠无名的人们
+哪怕生者彻底对你们置之不理？
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠杰克
+呜，咕……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠
+[charaTalk A]
+烦躁，可恨，[r]恼火到令人觉得必须忍耐。
+[k]
+
+＠
+[charaTalk A]
+因为就是这样啊。[r]我们根本没做什么错事。
+[k]
+
+＠
+[charaTalk A]但是，为什么[line 3][r]所以，当然[line 3]
+[k]
+
+＠？？？
+[charaTalk D]
+但你们错了，杰克。
+[k]
+
+＠？？？
+[charaTalk D]
+你们的不甘，是只需存在于此之物。[r]是生者必须回顾、自省之物。
+[k]
+
+＠？？？
+[charaTalk D]
+……正因心怀不甘，才能知晓一些事物。[r]正因不断追求，才能够立足此地。
+[k]
+
+＠？？？
+[charaTalk D]
+好了，你们追求的存在来了哦。
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠杰克
+[FFFFFF]？[-][bgmStop BGM_EVENT_72 0.9]
+[k]
+
+[messageOff]
+[fadeout black 0.9]
+[wait fade]
+
+[charaSet E 98104300 1 巨大鬼魂]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[fadein black 0.2]
+[wait fade]
+
+[wipeout cutVer 0.2 1.0]
+[wait wipe]
+
+[scene 10001]
+
+[se ad91]
+[wipein cutVer 1.8 1.0]
+[wait wipe]
+
+？1：杰克！
+？！
+
+[fadeout black 0.6]
+[wait fade]
+
+[scene 10000]
+
+[fadein black 0.6]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.4]
+＠杰克
+[#妈妈:御主]！[bgm BGM_EVENT_4 0.1][r]……和……天草四郎？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠天草四郎
+原来如此原来如此。
+[k]
+
+＠天草四郎
+伦敦女士。
+[k]
+
+[charaFace B 1]
+
+＠天草四郎
+你就是名副其实的伦敦本身吧。
+[k]
+
+[charaPut J 0,0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠伦敦女士
+可以说是，也可以说不是。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠杰克
+[FFFFFF]？[-][r]你们那边，也有我这边的人吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠天草四郎
+尽管这话说得有点绕，但的确如此。
+[k]
+
+＠天草四郎
+她看来非常想救你们。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠杰克
+……唔。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[bgmStop BGM_EVENT_4 0.9]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFace H 0]
+[charaFadein G 0.1 0]
+[charaFadein H 0.1 2]
+[wt 0.8]
+
+[se ad178]
+[charaSpecialEffect G darkEnemyErasure -45,-20 0.9]
+[charaSpecialEffect H darkEnemyErasure 60,-20 0.9]
+[wt 1.4]
+[charaMove G 10,0 0.4]
+[charaMove H -10,0 0.4]
+[wt 0.4]
+
+[se ad177]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.4 1]
+[charaSpecialEffect C appearance 0,0 0.9]
+[wt 1.0]
+
+[seStop ad177 0.2]
+[wt 0.9]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠童谣（？）
+又多了几只叽喳的鸟儿呢。[r]但是，没关系。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠天草四郎
+唔。
+[k]
+
+＠天草四郎
+你不是童谣呢。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠杰克
+啊，果然没错。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠天草四郎
+尽管她可以是任何人，也并非任何人，[r]但她唯独不可能变化成丧失梦想的成人。
+[k]
+
+＠天草四郎
+也就是说[line 3]嗯。
+[k]
+
+[charaFace B 1]
+
+＠天草四郎
+只是浏览了杰克的记忆，[r]选择了合适受害者的外形吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠童谣（？）
+好厉害，解明真相的样子简直像名侦探呢！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠天草四郎
+遗憾的是，我和那位小提琴手没什么关系。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠童谣（？）
+但就算解明了真相，也毫无意义。[r]只要我还是这个模样，我就是受害者！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠天草四郎
+唔。
+[k]
+
+＠天草四郎
+尽管我对你的真面目很有兴趣，[r]但现在还是先打倒你为好。
+[k]
+
+[charaFace B 1]
+
+＠天草四郎
+杰克，能打倒她吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠杰克
+但是……[r]那孩子是……
+[k]
+
+？1：杰克。
+？2：那孩子谁都不是。
+？！
+
+[charaFace A 0]
+
+＠杰克
+哎……？
+[k]
+
+？1：不是受害者，也不是加害者。
+？2：为了逃离这个梦境，打倒她吧。
+？！
+
+[bgm BGM_EVENT_5 1.0 0.4]
+
+＠杰克
+啊[line 3]
+[k]
+
+[charaFace A 4]
+＠杰克
+对哦。如果我们无法逃离这里，[r][#妈妈:御主]会很难办吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠天草四郎
+说得对。会非常困扰，[r]真正的童谣她们也会感到悲伤哦。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠杰克
+唔。我们可不希望这样。[r]我们觉得悲伤是不好的。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠天草四郎
+没错吧。[r]那答案只有一个了。
+[k]
+
+[messageOff]
+[se adm37]
+[bgmStop BGM_EVENT_5 1.2]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠杰克
+说得对。[r]………………[wt 0.6][se bac305][charaFace A 2][bgm BGM_EVENT_3 0.1]开始，解体了哦！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[se ade280]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.7]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.7]
+[se adm26]
+[flashin once 0.3 0.3 FFFFFFAF FFFFFF00]
+[charaFadeout C 0.6]
+[wt 0.1]
+[seStop ade280 0.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.5 1]
+[wt 1.2]
+
+[se ad21]
+[shake 0.02 2 2 0.5]
+[wt 1.8]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

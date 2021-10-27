@@ -1,0 +1,394 @@
+
+
+＄94-04-19-14-4-0
+
+[soundStopAll]
+
+
+[charaSet A 1033000 1 齐格鲁德门徒]
+[charaSet B 6018002 1 X]
+[charaSet C 1098161000 1 太空伙计]
+[charaSet D 11009001 1 S伊什塔尔]
+[charaSet E 2037000 1 简]
+[charaSet F 11009000 1 阿斯塔蒂]
+[charaSet G 1098185100 1 阿斯塔蒂_愤怒？]
+[charaSet J 5009000 1 特效用]
+
+[scene 82801]
+
+[wipeFilter cinema 0.5 0]
+
+[se ade371]
+[flashin loop 0.9 0.9 FF000080 FF000000]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 2.2]
+[flashOff]
+
+[se ad55]
+[seVolume ad55 0 0.0]
+[seVolume ad55 0.5 1.0]
+[wt 0.5]
+[seStop ade371 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+[seStop ad55 0.1]
+
+＠齐格鲁德门徒
+Archer职阶、Assassin职阶、[bgm BGM_EVENT_3 0.1][r]以及Extra职阶逃出牢房。
+[k]
+
+＠齐格鲁德门徒
+全体，火速抓住这些犯人。[r]重复一遍，全体[line 3][wt 0.1][cueSe Battle bac221][fowardEffect bit_talk_Slash_white_01_L 0,-50][fowardEffect bit_talk_14 0,-50][charaShake A 0.05 3 3 0.7]咕哇啊！？
+[k]
+
+[messageOff]
+[charaMove A 0,-100 0.4]
+[charaShake A 0.05 4 4 0.4]
+[charaFadeout A 0.4]
+[wt 0.2]
+[se ad144]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-50]
+
+＠X
+应对速度好快！[r]不愧是大本营，果然与众不同！
+[k]
+
+＠X
+然后呢，这通往要塞中枢的通道吗，小麻雀！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠太空伙计
+没错啾。[r]只要乘坐这边的直达电梯上去就能到达宝座啾！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 28]
+[charaFadein D 0.1 0,-50]
+
+＠S伊什塔尔
+谢啦！[r]我们负责宝座，那边就交给你啦，X！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠X
+嗯，只要一发现反应炉就立刻[#破坏:Destroy]，[r]并返回舰船！
+[k]
+
+＠X
+简先返回舰船保住马安娜号，[r]并在那里待机！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-50]
+
+＠简
+没问题！[r]尽管分散战力会很不利，但也能起到佯动作用！
+[k]
+
+＠简
+我会坚持到极限，当我判断无法继续等的时候，[r]我就会操纵马安娜号离开哦！
+[k]
+
+＠简
+你们俩，千万别绕弯路，一定要回来！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 0,-50]
+
+＠S伊什塔尔
+交给我吧！[r]我一定会把[%1]带回来的！
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_3 1.2]
+[wait fade]
+[wipeOff]
+[charaFadeout D 0.1]
+[scene 82701]
+[wt 2.0]
+[fadein black 1.2]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠阿斯塔蒂
+……话说太空神阴流的目的。[bgm BGM_EVENT_90 0.1][r]就是让我变回『原始女神』……
+[k]
+
+＠阿斯塔蒂
+不，是让我作为凭依之躯觉醒，[r]这么说比较准确吧。
+[k]
+
+？1：阿斯塔蒂想支配银河吗？
+？2：但你看上去不是很快乐。
+
+？！
+
+[charaFace F 4]
+
+＠阿斯塔蒂
+……这是我肩负的命运。[r]既然被寄予了这样的期望，自然要实现。仅此而已。
+[k]
+
+＠阿斯塔蒂
+根据ZONGJU的说法，时臣教授带回来的[r]『女神灵核』自动分成了善与恶。
+[k]
+
+＠阿斯塔蒂
+为何『原始女神』会主动一分为二呢。[r]我不了解其中的原因……
+[k]
+
+[charaFace F 0]
+
+＠阿斯塔蒂
+但如果『原始女神』的目的是向人类复仇，[r]那她或许是这么想的吧。
+[k]
+
+＠阿斯塔蒂
+自己正是因为『善』的天真才会输给人类。[r]输给在她看来形同蝼蚁的人类。
+[k]
+
+＠阿斯塔蒂
+那下次决不能失败。既然自己的『善』是缺点，[r]那只要将其切除即可。
+[k]
+
+[charaFace F 5]
+
+＠阿斯塔蒂
+倘若我就是因此诞生的，[r]那我自然要服从这意志。
+[k]
+
+＠阿斯塔蒂
+哪怕我自己没有这种想法，[r]也要让恶之女神完成，向人类报仇。
+[k]
+
+＠阿斯塔蒂
+倘若在过程中能够实现ZONGJU的愿望，[r]岂不是一石二鸟吗。
+[k]
+
+＠阿斯塔蒂
+不是为了不让我觉醒的时臣教授，[r]而是为了养育我长大的ZONGJU，我会[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_90 0.3]
+[se ade371]
+[seVolume ade371 0 0.5]
+[charaFace F 5]
+[wt 1.4]
+[seStop ade371]
+
+[charaFace F 2]
+
+＠阿斯塔蒂
+什么情况！[r]我在谈重要事情的时候……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德门徒
+事态紧急，总统帅！[r]被抓住的囚犯逃跑，开始破坏活动了！
+[k]
+
+[charaTalk depthOff]
+[charaDepth J 1]
+[charaDepth A 2]
+
+＠齐格鲁德门徒
+现在，正在引擎中枢附近与[r]弹射器附近展开交战[line 3][wt 0.1][cueSe Battle bac509][charaEffect J bit_talk_14][charaShake A 0.05 3 3 0.7]唔哇！？
+[k]
+
+[messageOff]
+[charaMove A 0,-50 0.4]
+[charaShake A 0.05 4 4 0.4]
+[charaFadeout A 0.4]
+[wt 0.2]
+[se ad144]
+[wt 0.4]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠S伊什塔尔
+让你久等了，阿斯塔蒂、[bgm BGM_EVENT_62 0.1][r][%1]！
+[k]
+
+＠S伊什塔尔
+『女神的复活』也太落伍了！[r]我可不希望我的脸被拿去这么利用。
+[k]
+
+＠S伊什塔尔
+我是来将这里连同太空神阴流一并击溃的！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_62 0.7]
+
+[charaTalk G]
+[charaFace G 22]
+[charaFadein G 0.1 1]
+
+＠G：阿斯塔蒂
+……你说，我的脸？
+[k]
+
+＠G：阿斯塔蒂
+你难道想说『女神半身』只有自己一个吗？[bgm BGM_EVENT_72 0.1][r]你才是我不中用的半身。
+[k]
+
+＠G：阿斯塔蒂
+父亲被杀害，10年间压根不寻找仇人，[r]一直悠闲度日的半吊子。
+[k]
+
+＠G：阿斯塔蒂
+居然说这种不中用的废物和我一样，[r]我连吐都吐不出来，只想哭。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 28]
+[charaFadein D 0.1 1]
+
+＠S伊什塔尔
+[line 3]很好，我要杀了你。[r]无关宇宙和平什么的，给我去死吧！
+[k]
+
+？1：S伊什塔尔，住手！
+？2：等一下，你们俩先好好谈谈。
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace F 21]
+[charaFadein F 0.1 0]
+[charaFace D 2]
+[charaFadein D 0.1 2]
+
+＠S伊什塔尔＆阿斯塔蒂
+[f large][messageShake 0.05 8 5 0.4]你给我闭嘴！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠S伊什塔尔
+想谈先打倒这家伙再说！[r]如果不这样做，我咽不下这口气！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠阿斯塔蒂
+你究竟有多鲁莽啊。[r]看来你已经忘记在女王女学院的战斗了吧。
+[k]
+
+＠阿斯塔蒂
+对我束手无策的你想打倒我？[r]别逗我笑了。你难道想将我的腹肌锻炼成猩猩吗。
+[k]
+
+[bgmStop BGM_EVENT_72 1.0]
+
+[charaFace F 2]
+
+＠阿斯塔蒂
+该求饶的是你，伊什塔尔。
+[k]
+
+＠阿斯塔蒂
+只不过，要看手脚被砍断之后，[bgm BGM_EVENT_24 0.1][r]你是否还有哭喊大叫的精神……！
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaPut J 1]
+[charaEffect J bit_talk_v_slash01]
+[cueSe Battle bac508]
+[wt 0.2]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[wt 0.1]
+[charaFadeout F 0]
+[charaEffectDestroy I]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0 1]
+
+[se ad467]
+[fowardEffect bit_talk_14 -50,0]
+[charaShake D 0.05 5 2 0.5]
+[wt 0.4]
+
+[charaFace D 28]
+
+＠S伊什塔尔
+求之不得……！[r]你的嘴皮子倒是稍稍利索了一点呢，大小姐！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

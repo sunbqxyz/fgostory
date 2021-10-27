@@ -1,0 +1,644 @@
+
+
+
+＄03-00-06-15-1-0
+
+
+[soundStopAll]
+
+
+[charaSet A 98002000 1 芙芙]
+[charaSet B 1098191200 1 阿黛勒]
+[charaSet C 1098191300 1 马卡里俄斯]
+[charaSet D 1098127610 1 佩佩隆奇诺]
+[charaSet E 8001410 1 玛修]
+[charaSet F 1017001 1 武藏]
+[charaSet G 9005001 1 福尔摩斯]
+[charaSet H 1098190600 1 莫德雷德]
+[charaSet I 1098190700 1 弗兰]
+[charaSet J 1098191000 1 源赖光]
+[charaSet K 1098190800 1 坂田金时]
+[charaSet L 1098128200 1 凯妮斯]
+[charaSet M 8001400 1 武装玛修]
+[imageSet N cut063_cinema 1]
+[charaScale N 1.01]
+[charaDepth N 10]
+
+[charaSet S 5009000 1 特效用dummy]
+[charaSet T 5009000 1 特效用dummy]
+
+[charaPut T 1200,1200]
+[charaEffect T bit_talk_10_red]
+
+
+
+[scene 92100]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade131]
+[seVolume ade131 0 0.0]
+[seVolume ade131 1.2 0.5]
+[wt 2.5]
+
+[seStop ade131 1.0]
+[wt 0.5]
+[shake 0.03 0 4 0.4]
+[se ade56]
+[seVolume ade56 0 0.4]
+[wt 1.5]
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠芙芙
+芙，芙呜！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠阿黛勒
+已抵达指定坐标。[r]……位置在都市中央的祭坛街正下方。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠佩佩隆奇诺
+接下来得徒步走过去哦。[r]快点，赶紧准备一下。
+[k]
+
+[charaFace D 1]
+＠佩佩隆奇诺
+给你们30秒……要不给你们1分钟做准备吧！[twt 1.2][charaFace D 9][r]小玛修已经准备好了呢。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[se ad666]
+[wt 0.4]
+[seStop ad666]
+[wt 0.5]
+
+[charaFace E 7]
+＠玛修
+嗯，是的。[#灵基外骨骼:奥特瑙斯]已着装完毕。
+[k]
+
+？1：我也好了。
+？2：随时都可以出发。
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠武藏
+我也没问题！
+[k]
+
+[charaFace F 7]
+＠武藏
+哼哼，我好歹也是一名剑士嘛。[r]要保持终日钦钦，常在战场的状态。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 2.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠马卡里俄斯
+祭坛街的……地底吗……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠阿黛勒
+……[r]……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+[wipeout rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth B 3]
+[charaDepth C 5]
+[charaFadeout G 0.1]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.1 150,-50]
+[charaFadein C 0.1 -150,-50]
+[charaFadein N 0.1 0,-200]
+[wt 0.2]
+[wipein rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+
+[wt 1.5]
+
+[wipeout rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+[charaTalk on]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout N 0.1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.2]
+[wipein rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+
+[wt 0.4]
+
+＠福尔摩斯
+阿黛勒、马卡里俄斯。[r]这一带是在哪片区域地底呢？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace B 0]
+[charaFadein C 0.1 -150,0]
+[charaFadein B 0.1 150,0]
+＠马卡里俄斯
+……这里就在神的脚下啊。
+[k]
+
+＠阿黛勒
+星间都市山脉奥林波斯中央区，祭坛街。[r]拥握克洛诺斯·王冠的轨道大神殿正下方。
+[k]
+
+＠阿黛勒
+统辖各地分神殿的中央神殿群就坐落于此，[r]而其正上方就是诸神坐镇的大神殿。
+[k]
+
+＠阿黛勒
+这里是离宙斯神最近的街道。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠玛修
+……就在敌阵中枢地底……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠马卡里俄斯
+不仅如此。
+[k]
+
+＠马卡里俄斯
+这个坐标深度太浅了。[r]因此哈得斯神加护的残渣薄弱，而宙斯的加护却很深厚。
+[k]
+
+？1：也就是说……
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠阿黛勒
+可以认为，虽说同样是地下机构带，[r]但这里的危险度远比其他区域更高。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+？2：这里与此前的地底不一样？
+
+＠马卡里俄斯
+嗯。没错。
+[k]
+
+？！
+
+[charaFace C 7]
+＠马卡里俄斯
+再深一点就没问题了……
+[k]
+
+＠马卡里俄斯
+我们非要维持这个深度步行过去吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠佩佩隆奇诺
+非常遗憾，是的。
+[k]
+
+＠佩佩隆奇诺
+虽说这次郊游的路程并不会很长，[r]但深度是无法调整的。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠马卡里俄斯
+那就必须高度小心注意了。[r]自动机械之类的玩意儿有可能在附近徘徊。
+[k]
+
+＠马卡里俄斯
+一旦被发现就麻烦了。[r]能提前发现对方的话[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+＠武藏
+的话？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠马卡里俄斯
+[line 3]就立刻逃跑。[r]毕竟越破坏它们，越会暴露我们的位置。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[scene 92400]
+[wt 1.2]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaPut T 1]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+＠人工智能
+自动战斗机械？
+[k]
+
+[charaFace H 0]
+＠人工智能
+是指阿耳戈斯吗？[r]啊，不是，阿耳戈斯已经被我们打爆了哦。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠人工智能
+唔唔唔，啊唔。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠人工智能
+啊，是啊。对了。[r]还有广域歼灭机械或对人歼灭装置那些啊。
+[k]
+
+＠人工智能
+它们与宙斯的感官相连哦。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+＠人工智能
+虽说那位神无法直接监视地底，[r]但似乎可以感知到机关所见之物。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+＠人工智能
+换言之，那些机械就是宙斯的眼睛啦。[r]同盟基地平时所在的深度肯定不会出现……
+[k]
+
+＠人工智能
+但这附近的深度当然就会出现啦。[r]你们要多加小心哦！　Be careful！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠佩佩隆奇诺
+这真的是人工智能吗？[r]怎么好像人格一直在换个不停。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠芙芙
+芙，芙呜。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠武藏
+他们提供了各式各样的秘密武器和作战计划，[r]算是很可靠的伙伴吧。
+[k]
+
+[bgmStop BGM_EVENT_70 1.5]
+
+＠武藏
+迄今为止已经好几次……[r]唔。[charaFace F 12]
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ade321]
+
+[charaTalk L]
+[charaFace L 7]
+[charaFadein L 0.1 1]
+[wt 0.4]
+＠凯妮斯
+噢，察觉到了吗，武士女。[r]这种情况在东方应该怎样形容呀！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠武藏
+说曹操曹操就到啦！[r][%1]、玛修！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth M 2]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+[se ade57]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[charaTalk off]
+[charaFace M 7]
+[charaFadein M 0.4 1]
+[wt 0.5]
+[charaFace M 2]
+[charaFadeout E 0]
+
+＠M：玛修
+前方距离200处出现魔力反应！[r]目视范围内的地下通道并不存在岔路！
+[k]
+
+＠M：玛修
+是前进，还是后退呢……[r]御主！
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠马卡里俄斯
+可恶，所以我才讨厌这种深度啊！[r]先后退吧！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠阿黛勒
+趁还没被感知到，找出其他通道！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 5]
+[charaFadein L 0.1 1]
+＠凯妮斯
+……啊～啊～啊～啊～，真难办啊！[r]碍事的话只要宰掉再继续前进不就行了吗！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠马卡里俄斯
+如果这样可行的话我也犯不着那么头疼了！[r]可恶，别磨叽了，快退后[line 3]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[se ad922]
+[seVolume ad922 0 0.6]
+[wt 0.4]
+
+＠合成语音
+啊～，没问题。不必担心。
+[k]
+
+＠合成语音
+与宙斯神经网间的连接已经被切断了。[r]按迦勒底风格简单易懂的说法，就是离线状态。
+[k]
+
+＠合成语音
+啊不对，我还加了一些伪装，[r]以免离线状态被发现。
+[k]
+
+＠合成语音
+所以不必担心啦。
+[k]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠武藏
+……………………哎呀，真走运。
+[k]
+
+[messageOff]
+[charaFace F 0]
+[cueSe Battle bac305]
+[wt 0.7]
+
+[charaFace F 1]
+＠武藏
+我还在苦苦思索该躲起来，[r]还是该逃跑的时候，如此好运天降！
+[k]
+
+＠武藏
+虽然不知道是谁的声音，[r]但我就相信这就是上天的指引、观音大士的加护好啦！
+[k]
+
+[charaFace F 5]
+＠武藏
+[line 3][%1]！
+[k]
+
+？1：……相信对方吧！
+？2：击破敌人，继续前进！
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠马卡里俄斯
+你是认真的吗！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠佩佩隆奇诺
+没想到你的决断速度那么快呢。[r]不过答对了。你可以相信对方击破敌人。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 7]
+[charaFadein M 0.1 1]
+[wt 0.2]
+
+[se ad668]
+[charaMoveScale M 1.05 0.2]
+[charaMove M 0,6 0.2]
+[wt 0.2]
+[seStop ad668 0.1]
+
+[charaFace M 2]
+
+＠M：玛修
+[#灵基外骨骼:奥特瑙斯]，战斗机动开始。[r][line 3]敌对存在，距离100。开始战斗！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

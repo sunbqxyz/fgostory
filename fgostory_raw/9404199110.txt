@@ -1,0 +1,665 @@
+
+
+＄94-04-19-91-1-0
+
+[soundStopAll]
+
+
+[charaSet A 7002000 1 兰斯洛特]
+[charaSet B 1033000 1 阿斯塔蒂亲卫队]
+[charaSet C 11009000 1 阿斯塔蒂]
+[charaSet D 1098185100 1 阿斯塔蒂_愤怒？]
+[charaSet E 1032002 1 暗黑武者ZONGJU]
+[charaSet F 1098185200 1 暗黑武者ZONGJU_有头盔]
+[charaSet G 1098185700 1 talkie]
+[charaSet H 2037000 1 简]
+[charaSet I 11009001 1 S伊什塔尔]
+[charaSet J 5009000 1 特效用]
+
+[scene 82701]
+
+[wipeFilter cinema 0.5 0]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+[wt 2.2]
+
+[maskout black 0.2]
+[wait mask]
+[charaFadeout C 0]
+[scene 83501]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 0,-50]
+[fowardEffect bit_talk_security]
+[wt 0.3]
+[maskin black 0.2]
+[wait mask]
+
+[se ade386]
+[charaPut J 0,-50]
+[charaEffect J bit_talk_shot_02 200,0]
+[wt 0.2]
+[charaEffect J bit_talk_shot_02 -300,-50]
+[wt 0.1]
+[charaEffect J bit_talk_shot_02 50,150]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[wt 0.1]
+[charaEffectDestroy J]
+[charaFadeout A 0]
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0 0,-50]
+[seStop ade386 0.5]
+[se ad32]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[charaEffect J bit_talk_14 200,0]
+[wt 0.05]
+[se ad32]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[charaEffect J bit_talk_14 -300,-50]
+[wt 0.05]
+[se ad32]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[charaEffect J bit_talk_14 50,150]
+[wt 0.1]
+[charaEffectDestroy J]
+[charaEffect J bit_talk_v_slash01]
+[wt 0.1]
+[cueSe Battle bac508]
+[wt 1.2]
+
+[maskout black 0.2]
+[cueSeStop bac508 0.2]
+[wait mask]
+[fowardEffectDestroy]
+[charaEffectDestroy J]
+[charaFadeout I 0]
+[scene 82701]
+[wt 0.3]
+[maskin black 0.2]
+[wait mask]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠阿斯塔蒂亲卫队
+无人机传回的影像就是这些。[r]从那之后，就无法与绝暗剑大人联系了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+
+＠阿斯塔蒂
+……ZONGJU。[r]刚才的影像究竟是怎么一回事。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠暗黑武者ZONGJU
+…………
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+
+＠阿斯塔蒂
+ZONGJU。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+
+＠F：暗黑武者ZONGJU
+呼轰。[r]呼轰。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 21]
+[charaFadein C 0.1 0,-50]
+
+＠阿斯塔蒂
+不要在碰到对自己不利情况时就戴上头盔啦！
+[k]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 -256,-50]
+[charaFace C 5]
+[charaFadein C 0.1 256,-50]
+
+＠暗黑武者ZONGJU
+抱歉。[r]看到六剑客过于没出息的样子，我真是无地自容。
+[k]
+
+＠阿斯塔蒂
+不是指六剑客的问题啦。[r]我问的是那个赏金猎人。
+[k]
+
+＠阿斯塔蒂
+[#那个女人]，[#为什么长得和我一模一样]？
+[k]
+
+[charaFace E 1]
+
+＠暗黑武者ZONGJU
+咦。您这么认为吗？[r]ZONGJU我老眼昏花，有些看不清楚……
+[k]
+
+[charaFace C 2]
+
+＠阿斯塔蒂
+连夸克都能看穿的[#吾师:你这家伙]说什么傻话啊！[r]糊弄人也该有点底线吧！
+[k]
+
+[charaFace E 0]
+
+＠暗黑武者ZONGJU
+……恕我失礼了。[r]您的愤怒无可非议。
+[k]
+
+＠暗黑武者ZONGJU
+由于这件事已经与您没有关系了，[r]所以我才会置之不理……
+[k]
+
+＠暗黑武者ZONGJU
+但或许可以作为余兴来聊吧。[r]请将这件事当成一个笑话来听。
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_70 1.2]
+[wait fade]
+[charaFadeout E 0.1]
+[charaFadeout C 0.1]
+[wt 0.7]
+[fadein black 1.2]
+[wait fade]
+
+[bgm BGM_EVENT_90 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠暗黑武者ZONGJU
+……经过就是这样。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠阿斯塔蒂
+[line 6]
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth D 2]
+
+[charaTalk off]
+[charaFace D 22]
+[charaFadein D 0.4 0,-50]
+[cueSe Battle bac66]
+[wt 0.5]
+[cueSeStop bac66 0.2]
+[charaFadeout C 0]
+
+＠D：阿斯塔蒂
+ZONGJU。今天的“踩！”到此结束。[r]我要暂时卸下总统帅的职责。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠暗黑武者ZONGJU
+什么。[r]您究竟打算去哪儿啊？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0,-50]
+
+＠D：阿斯塔蒂
+自不用说。[r]我要亲手解决那个女人。
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_90 1.2]
+[wait fade]
+[charaFadeout D 0.1]
+[scene 83400]
+[charaSet A 6018002 1 X]
+[wt 0.7]
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_space]
+[wipeOff]
+[fadein black 1.2]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk I]
+[charaFace I 28]
+[charaFadein I 0.1 1]
+
+＠S伊什塔尔
+引擎输出测试，开始。
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.3]
+
+[se ad550]
+[wt 1.8]
+[seStop ad550 0.3]
+[se ade128]
+[wt 1.5]
+
+[se ade366]
+[flashin loop 0.2 0.3 FF000080 FF000000]
+[wt 1.4]
+[seStop ade366 0.1]
+[wt 0.1]
+[flashOff]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠talkie
+警告。由于主引擎的损伤，[r]输出降低百分之三十。
+[k]
+
+＠talkie
+当前情况下无法允许航行。[r]必须安定下来，优雅地修理。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠简
+它是这么说得哦。[r]果然只要全力输出就会损坏吧。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 29]
+[charaFadein I 0.1 1]
+
+＠S伊什塔尔
+击中的地方太不巧了～。[r]看来非得正式进入船坞修理才行呢……
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠简
+那我搜索一下最近的宇宙港吧。
+[k]
+
+[bgmStop BGM_EVENT_5 0.7]
+
+[charaFace H 6]
+
+＠简
+……啊！
+[k]
+
+＠简
+由于公转周期，现在或许距伊什塔凛老家的船坞最近呢！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 23]
+[charaFadein I 0.1 1]
+
+＠S伊什塔尔
+我老家？
+[k]
+
+？1：你有家吗！？
+
+？！
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaFace I 11]
+
+＠S伊什塔尔
+我又不是自然产生的从者，[r]当然有家啦！
+[k]
+
+[charaFace I 4]
+
+＠S伊什塔尔
+不过……现在应该一个人也没有。[r]自从我离开那个家之后，已经过去10年了。
+[k]
+
+？1：离开那个家……？
+
+[charaFace I 0]
+
+＠S伊什塔尔
+啊，不是什么悲惨的故事哦。[r]只是为了成为赏金猎人才离开了家。
+[k]
+
+？2：10年……S伊什塔尔究竟几岁啊！？
+
+[charaFace I 23]
+
+＠S伊什塔尔
+几岁？　14岁啊。
+[k]
+
+[charaFace I 0]
+
+＠S伊什塔尔
+从者会在最好的状态停止成长吧。[r]我的话，是14岁时独立的。
+[k]
+
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠X
+返回伊什塔尔老家当然没问题，[r]但你老家的船坞可以进行维修吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠S伊什塔尔
+当然可以。[r]马安娜号就是在我家船坞建造的。
+[k]
+
+[charaFace I 0]
+
+＠S伊什塔尔
+整套维修流程我和简都会，[r]你们俩可以放松地去观光旅行。
+[k]
+
+＠S伊什塔尔
+这样没问题吧，[%1]？
+[k]
+
+？1：OK！
+
+？！
+
+＠S伊什塔尔
+说定了。简，路线变更。[r]麻烦前往行星禅城。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+
+＠简
+好～！[r]不用跳跃一小时左右就能到！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+[charaFadeout H 0.1]
+[wt 0.5]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+[wt 0.5]
+
+？1：……我能问一句吗？
+？2：你为什么要当赏金猎人？
+
+？！
+
+[charaFace I 23]
+[wt 1.0]
+[charaFace I 19]
+
+＠S伊什塔尔
+呃。[r]应该是赏金猎人比较符合我的性子吧？
+[k]
+
+＠S伊什塔尔
+可以旅行，可以赚钱，还可以助人为乐。[r]而且家里也没有等着我的人。
+[k]
+
+[charaFace I 0]
+
+＠S伊什塔尔
+还有，没错，应该是受到了简的影响吧。
+[k]
+
+＠S伊什塔尔
+她说“比起警察，还是赏金猎人比较好。[r][f small]  [f -]伊什塔凛一定能做到”。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0]
+[charaFace I 0]
+[charaFadein I 0.1 2]
+
+＠简
+哎～，我有说过那种话吗。[r]唔……或许说过。我确实可能会说。
+[k]
+
+[charaFace I 5]
+
+＠S伊什塔尔
+喂，你已经不记得了吗！？
+[k]
+
+＠S伊什塔尔
+我当时可是真的站在人生分岔路口上啊！？
+[k]
+
+[charaFace H 7]
+
+＠简
+对不起哦～☆[r]但这样不是挺好的嘛，反正结果好就行了！
+[k]
+
+＠简
+如果你继续像当时那样闭门不出的话，[r]肯定会越来越自卑，
+[k]
+
+＠简
+而且伊什塔凛确实有身为赏金猎人的才能。
+[k]
+
+＠简
+虽说迅速从女学院生转职为猎人，[r]但现在也还活着，就最好地证明了这件事吧？
+[k]
+
+？1：这么说来，你们时不时会提及……
+？2：S伊什塔尔以前是学生吗？
+
+？！
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠S伊什塔尔
+嗯，[%1]应该不知道。
+[k]
+
+[charaFace I 6]
+
+＠S伊什塔尔
+我以前在行星禅城的[#女王女学院:Queen's]就读哦？
+[k]
+
+＠S伊什塔尔
+呵呵呵。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠X
+[f medium][messageShake 0.07 7 5 0.3]什么……[#女王女学院:Queen's]！？[r]这是真的吗，伊什塔尔！？
+[k]
+
+？1：你知道吗，X小姐。
+
+？！
+
+[charaFace A 3]
+
+＠X
+当然啦。那可是从者宇宙中屈指可数的贵族千金小姐学院，
+[k]
+
+＠X
+只有大富豪或王侯贵族的千金才能入学。[r]我也一直很憧憬那里……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠S伊什塔尔
+虽然这种说法有点夸张，[r]但那里的学生确实都是淑女。
+[k]
+
+＠S伊什塔尔
+从外人看来，或许确实是优雅的女校吧……
+[k]
+
+＠S伊什塔尔
+或许正是因为在那所学院上学，[r]我才能迅速习惯赏金猎人这份工作吧。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠X
+[FFFFFF]？？？[-][r]贵族小姐学院和赏金猎人有什么关系吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 19]
+[charaFadein I 0.1 1]
+
+＠S伊什塔尔
+[line 3]
+[k]
+
+[charaFace I 20]
+
+＠S伊什塔尔
+是啊。并没有什么关系。[r]毕竟是名门正统的女王女学院嘛。
+[k]
+
+[charaFace I 0]
+
+＠S伊什塔尔
+好啦好啦，差不多快到行星禅城了。[r]好好坐在座位上哦！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[soundStopAll]
+[end]

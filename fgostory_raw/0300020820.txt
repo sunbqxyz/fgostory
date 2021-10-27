@@ -1,0 +1,131 @@
+
+＄03-00-02-08-2-0
+
+[soundStopAll]
+
+
+[charaSet A 1098154200 1 ？？？]
+[charaSet B 98001000 1 玛修]
+
+
+[scene 10000]
+[fadeMove black 1.5 0.6]
+[wait fade]
+
+[effect bit_talk_noise]
+[wt 2.0]
+
+
+[se ad311]
+[seVolume ad311 0 0.2]
+[wt 1.0]
+[seVolume ad311 3.0 0.9]
+[wt 3.0]
+
+
+[seStop ad311]
+[effectStop bit_talk_noise]
+[wt 1.0]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠？？？
+[line 3]哦，掉下来了一张相当罕见的面孔呢。
+[k]
+
+＠？？？
+应该不是主动下来的吧。[r]肯定是掉下来的。
+[k]
+
+＠？？？
+哈哈。[r]看来，是在缔结临时契约时被趁虚而入了。
+[k]
+
+＠？？？
+虽说对面单方面缔结了缘分，[r]但还没抵达梦境就掉了下来，情况应该是这样吧。
+[k]
+
+
+[messageOff]
+[charaFace A 0]
+[charaPut A 0,0]
+[charaFadeTime A 0.7 0.8]
+
+
+[wt 1.0]
+
+＠？？？
+……哼。这也算缘分吧。
+[k]
+
+？1：你是…………
+
+＠？？？
+别乱来。[r]对。没错，你不认识我。
+[k]
+
+＠？？？
+这样就行了。你不应该认识。忘记吧。[r]无论是残渣，还是经由梦境侵蚀的深渊都是只属于我的猎物。
+[k]
+
+？2：尽管完全摸不着头脑，但我对你的声音有印象。
+
+＠？？？
+…………真拿你没辙。
+[k]
+
+＠？？？
+不。想必你一无所知。[r]也没必要知道。
+[k]
+
+＠？？？
+无论是残渣，还是经由梦境侵蚀的深渊都是只属于我的猎物，[r]不应作为现实留下记录。
+[k]
+
+？！
+
+[messageOff]
+
+
+[charaPut B 0,80]
+
+[se ad312]
+[charaEffect B bit_talk_27_01]
+[wt 0.5]
+
+[charaFadeTime A 0.7 1.0]
+[wt 1.0]
+[charaEffectStop B bit_talk_27_01]
+
+[charaFadeTime A 0.7 0.8]
+
+
+＠？？？
+[line 3]好了。若要把你送回原本的道路[line 3]
+[k]
+
+
+＠？？？
+首先，必须烧尽[#那些家伙]才行呢。[r]虽说我希望你能尽早确立自我，
+[k]
+
+＠？？？
+但也不会强求。[r]退后。
+[k]
+
+？1：等一下。
+？2：虽说我不太明白，但如果有危险，我就会战斗。
+
+？！
+
+＠？？？
+[line 3]哼。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_81 0.5]
+[fadeMove black 0.5 1.0]
+[wait fade]
+[soundStopAll]
+[end]

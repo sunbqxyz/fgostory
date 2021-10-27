@@ -1,0 +1,269 @@
+
+
+＄94-03-22-06-1-0
+[soundStopAll]
+
+
+[charaSet A 1098162000 1 玛修]
+[charaSet B 1098161000 1 麻雀1]
+[charaSet C 1098161100 1 麻雀2]
+[charaSet D 1098161200 1 麻雀3]
+[charaSet E 98006200 1 ？？？]
+[charaSet F 1037001 1 红阎魔]
+[charaSet G 8001410 1 装甲·玛修（无风镜）]
+[imageSet H back10000 1]
+[imageSet I back10000 1]
+[charaSet J 5009000 1 特效用dummy]
+
+[charaScale H 1.01]
+[charaPut H 1200,1200]
+[charaFadeTime H 0.1 0.4]
+[charaScale I 1.01]
+[charaPut I 1200,1200]
+[charaFadeTime I 0.1 0.0]
+
+[scene 69700]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛修
+呼。[r]二楼的窗户擦好了，前辈。
+[k]
+
+＠玛修
+虽然阎魔亭的大窗户视野很好，[r]但打扫起来也很费劲。
+[k]
+
+？1：需要梯子呢。
+？2：这种时候真羡慕麻雀们呢。
+
+？！
+
+[charaFace A 13]
+
+＠玛修
+是啊。麻雀们能飞，[r]所以打扫高的地方……咦？[wt 1.5][bgmStop BGM_EVENT_77 0.3]
+[k]
+
+[messageOff]
+
+[se ad226]
+[shake 0.03 3 3 1.5]
+[wt 1.0]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[scene 45810]
+[wt 0.2]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wt 0.2]
+[wait wipe]
+
+[charaTalk off]
+[charaFace B 0]
+[charaFadein B 0.1 -640,-800]
+[charaRollMoveEx B 3.0 -3600 0,200]
+[charaMove B 1200,300 2.0]
+[wt 0.6]
+[charaFace C 0]
+[charaFadein C 0.1 -512,-200]
+[charaRollMoveEx C 7.0 -3600 0,200]
+[charaMove C 1200,50 1.5]
+[wt 2.0]
+
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[scene 69700]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 0.2]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wt 0.2]
+[bgm BGM_EVENT_81 0.1]
+[wait wipe]
+[wt 0.3]
+
+[charaFace A 2]
+
+＠玛修
+出什么事了！？[r]麻雀们好像从客房里被扔出来了！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠麻雀
+啊，玛修大人！　[%1]大人！[r]来得正好啾！
+[k]
+
+＠麻雀
+拜托了啾，拜托了啾！[r]请快去鸫之间啾！
+[k]
+
+＠麻雀
+虎名主大人又开始大闹了啾！[r]请各位快去协助老板娘啾！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+！　虽然还不知道发生了什么，[r]但这显然是紧急事态！
+[k]
+
+＠玛修
+御主，我们快去吧！[r]鸫之间是二楼最里面的房间！
+[k]
+
+[messageOff]
+[charaFadeout A 0.2]
+[se ad459]
+[wt 0.1]
+[wipeout rightToLeft 0.5 1]
+[wt 0.3]
+[seStop ad459 0.5]
+[wait wipe]
+
+[charaPut H 0,-200]
+[charaTalk depthOff]
+[charaDepth H 0]
+[charaDepth E 1]
+[charaDepth F 2]
+
+[scene 69900]
+[fadeMove black 0.1 0.4]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.2]
+[bgmStop BGM_EVENT_81 0.5]
+[wt 0.6]
+[wipein leftToRight 0.5 1]
+[bgm BGM_EVENT_80 0.1]
+[wt 0.1]
+[seStop ad59 0.2]
+[wait wipe]
+
+＠？？？
+呜呜呜呜……[r]呜　呜　呜　呜　呜　呜　呜　呜　呜！
+[k]
+
+＠？？？
+肚子……好饿……[r]我要吃……我要吃……
+[k]
+
+＠？？？
+[f large]我要吃，人类的，指头嗷嗷嗷！
+[k]
+
+＠？？？
+最好　是　左撇子　的人！[r]最好　是　左撇子　的人　右脚的　指头嗷嗷！
+[k]
+
+[messageOff]
+
+[se ad7]
+[seVolume ad7 0 0.4]
+[se ad85]
+[charaMoveScale E 1.1 0.2]
+[charaMove E 0,7 0.2]
+[wt 0.1]
+[charaFadeout E 0.1]
+[effect bit_talk_claw]
+[wt 0.4]
+[fadeout black 0.2]
+[wait fade]
+[effectStop bit_talk_claw]
+[charaFadeout E 0]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0 1]
+[fadeMove black 0.1 0.4]
+[se bac136]
+[effect bit_talk_h_slash01]
+[wait fade]
+[wt 0.1]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[se ad32]
+[wt 0.4]
+[seStop ad32 0.5]
+[wt 0.5]
+
+[charaFace F 2]
+
+＠红阎魔
+这可不行啾！[r]你忘了自己是为了什么而忍到现在的啾！？
+[k]
+
+？1：我们来帮你了，老板娘！
+？2：真是狂热的要求啊！？
+
+？！
+
+[charaFace F 5]
+
+＠红阎魔
+是[%1]大人啾！[r]你们来得正好啾！
+[k]
+
+＠红阎魔
+来帮我让这位客人老实下来啾！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠？？？
+人类……人类的　气味……[r]果然　有人类　在这里啊！
+[k]
+
+＠？？？
+竟然敢耍我，臭麻雀！[r]我要吃人，我要吃人了嗷嗷嗷嗷嗷！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠G：玛修
+身份不明的客人，正在袭来……！[r]御主，准备应战！
+[k]
+
+
+[messageOff]
+
+[charaTalk depthOff]
+[charaDepth G 0]
+[charaDepth I 1]
+
+[bgmStop BGM_EVENT_80 0.4]
+[charaPut I 0,-200]
+[charaFadeTime I 0.5 1.0]
+[wt 0.5]
+[soundStopAll]
+[end]

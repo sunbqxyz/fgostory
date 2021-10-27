@@ -1,0 +1,670 @@
+
+
+＄91-20-33-01-2-0
+
+[soundStopAll]
+
+[charaSet A 2033000 1 马嘶]
+[charaSet B 99502600 1 玛修]
+[charaSet C 2008001 1 崔斯坦]
+[charaSet D 2030001 1 喀戎]
+[charaSet E 2015001 1 阿周那]
+[charaSet F 23003001 1 伽内什]
+
+[charaSet G 98006100 1 特效dummy1]
+[charaSet H 98006100 1 特效dummy2]
+
+[imageSet I back10001 1]
+[charaScale I 1.01]
+[imageSet J back10000 1]
+[charaScale J 1.01]
+
+
+[charaDepth A 1]
+[charaDepth C 9]
+
+[charaPut G 1200,1200]
+[charaEffect G bit_talk_10_MiddleLevel]
+
+
+[scene 20820]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠崔斯坦
+对啦对啦。[bgm BGM_EVENT_94 0.1][r]就是这种地方，就是这种……
+[k]
+
+＠崔斯坦
+心情好平静啊，太平静了。[r]森林是绿色的，说起绿色就会想到我崔斯坦……
+[k]
+
+？1：说起绿色应该先想到罗宾汉吧。
+
+[charaFace C 3]
+
+＠崔斯坦
+……[r]……
+[k]
+
+[charaFace C 5]
+
+＠崔斯坦
+是先想到我。
+[k]
+
+[charaPut G 0,0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠玛修
+（崔斯坦先生太蛮横了……！）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut G 2000,2000]
+
+？2：严格说来还是应该想到喀戎先生吧。
+
+[messageOff]
+[charaFace C 0]
+[wt 0.9]
+
+[charaFace C 4]
+
+＠崔斯坦
+……[r]……呼。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠马嘶
+别[messageShake 0.04 3 3 0.4]睡啦！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageShakeStop]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠崔斯坦
+没睡着，我只是不甘心哑口无言，[r]就先『呼』了一声。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠马嘶
+噢，噢……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠喀戎
+一旦深入思考崔斯坦的事，[r]就会陷入糟糕的状态哦。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠马嘶
+……是吗……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠喀戎
+看来这里并没有魔兽。[r]不如在森林浴的同时深呼吸一下吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠马嘶
+噢。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠喀戎
+那么大家排好队。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad60]
+[charaFace A 0]
+[charaFace C 0]
+[charaFadein A 0.4 -150,0]
+[charaFadein C 0.4 400,0]
+[charaMove A -300,0 0.8]
+[charaMove C 250,0 0.8]
+[wt 1.2]
+[seStop ad60 0.1]
+
+＠喀戎
+深呼吸。[r]来，吸气[line 3]
+[k]
+
+[charaFace A 4]
+[charaFace C 1]
+[charaMove A -300,5 0.4]
+[charaMove C 250,5 0.4]
+[wt 0.6]
+
+＠喀戎
+呼气[line 3]
+[k]
+
+[charaMove A -300,0 0.4]
+[charaMove C 250,0 0.4]
+[wt 0.6]
+
+＠喀戎
+吸气[line 3]
+[k]
+
+[charaMove A -300,5 0.4]
+[charaMove C 250,5 0.4]
+[wt 0.6]
+
+＠喀戎
+呼气[line 3]
+[k]
+
+[charaMove A -300,0 0.4]
+[charaMove C 250,0 0.4]
+[wt 0.6]
+＠喀戎
+吸气之后迅速将气全部呼出，[r]全身绷紧[line 3]
+[k]
+
+[se ad7]
+[charaFace A 5]
+[charaFace C 5]
+[charaMove A -325,0 0.2]
+[charaMove C 235,0 0.2]
+[charaMoveScale A 0.98 0.2]
+[charaMoveScale C 0.98 0.2]
+[wt 0.4]
+＠喀戎
+用力出拳[line 3]
+[k]
+
+[charaTalk on]
+[charaTalk depthOff]
+
+＠马嘶
+哈！[se bac134][fowardEffect bit_talk_14 -180,0][charaFace A 2][charaMove A -300,0 0.2][charaMoveScale A 1.0 0.2][wt 0.4]
+[k]
+
+＠崔斯坦
+呀！[se bac153][seVolume bac153 0.0 0.6][fowardEffect bit_talk_14 370,0][charaFace C 2][charaMove C 250,0 0.2][charaMoveScale C 1.0 0.2][wt 0.4]
+[k]
+
+
+[messageOff]
+[charaTalk A]
+[charaFace A 4]
+[wt 1.2]
+
+[charaFace A 7]
+
+＠马嘶
+……放松呢？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠喀戎
+抱歉，这是我的条件反射。[wt 0.7][charaFace D 0][r]那让我们开始[#冥想:meditation]吧。
+[k]
+
+[messageOff]
+[fadeout black 0.8]
+[wait fade]
+
+[cameraMove 0 0,0 1.02]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[pictureFrame cut063_cinema]
+[wt 0.4]
+
+[fadein black 0.8]
+[wait fade]
+
+？1：准备好了吗？
+？！
+
+
+＠马嘶
+噢！
+[k]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠喀戎
+用舒服的姿势坐下，闭上眼睛。
+[k]
+
+[messageOff]
+[wt 0.4]
+
+[cameraMove 0.5 0,30 1.02]
+[wt 0.3]
+
+[se ad581]
+[seVolume ad581 0 0.3]
+[wt 0.3]
+[seStop ad581 0.4]
+[wt 0.4]
+
+[wipeout openEye 1.6 1.0]
+[bgmStop BGM_EVENT_94 1.6]
+[wait wipe]
+
+[cameraHome 0.1]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[wipein openEye 0.8 1.0]
+[wait wipe]
+
+＠喀戎
+然后寻找你愤怒的源泉。
+[k]
+
+＠
+这些话令我有些动摇。
+[k]
+
+＠
+愤怒[line 3]愤怒的源泉。
+[k]
+
+＠
+偏离战士之道的偷袭。[r]运用偷袭战术的敌军。
+[k]
+
+＠
+窝囊的自己。[r]倒下的同伴、同伴、同伴。
+[k]
+
+[messageOff]
+[fadeout black 0.8]
+[wait fade]
+
+[pictureFrame]
+[wt 0.1]
+
+[scene 28420]
+[wipeFilter circleIn 0.5 0.5]
+
+[charaEffect H bit_talk_sparks 0,-90]
+
+[fadein black 1.6]
+[wait fade]
+
+＠
+所以才会愤怒地，[bgm BGM_EVENT_11 0.1][r]决定发动被禁止的夜袭。
+[k]
+
+＠喀戎
+不止如此。
+[k]
+
+＠
+这话令我大吃一惊。[r]忍住[line 3]不能反抗。
+[k]
+
+＠喀戎
+这样的愤怒是无法延续的。[r]应该还有其他的，更为不同的存在。
+[k]
+
+？1：是为别的事感到愤怒？
+？！
+
+＠马嘶
+我[line 3]
+[k]
+
+＠
+啊……的确。[r]当时感到的愤怒并不虚假。
+[k]
+
+＠
+但现在则是其他截然不同的愤怒[r]在支配、折磨着这具身体。
+[k]
+
+＠
+这种愤怒，这来历不明的愤怒，[r]究竟是什么？
+[k]
+
+＠喀戎
+这愤怒对你来说并不正确。
+[k]
+
+＠喀戎
+假如是正确的愤怒，[r]你必然能理解。
+[k]
+
+＠
+……这不是正确的愤怒。
+[k]
+
+＠
+[line 6][r][line 6]
+[k]
+
+＠
+这是对于受罚的愤怒……[r]不，不对。
+[k]
+
+＠
+我已经接受了那次惩罚。[r]不，岂止如此。
+[k]
+
+＠
+[#我甚至觉得惩罚还不够]。
+[k]
+
+＠
+对了。[r]不够。对我的惩罚还不够。
+[k]
+
+＠
+我从未认为自己已经完成了赎罪。[r]流浪、磨耗，回过神来时已经成为了英灵。
+[k]
+
+＠
+我认为，[r]我一定还在接受着惩罚。
+[k]
+
+＠
+尽管我这么认为[line 3]
+[k]
+
+[messageOff]
+[fadeout black 1.6]
+[wait fade]
+
+[charaPut H 2000,2000]
+
+[scene 10310]
+[charaPut I 0,-200]
+[charaFadeTime I 0 0.3]
+[wt 0.2]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+[fadein black 1.2]
+[wait fade]
+[wt 1.2]
+
+
+[fadeout black 1.2]
+[wait fade]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[scene 10400]
+
+[charaSet E 3030000 1 帕尔瓦蒂]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+[fadein black 1.2]
+[wait fade]
+[wt 1.0]
+
+
+[fadeout black 1.2]
+[wait fade]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[scene 60300]
+
+[charaSet F 3004001 1 迦尔纳]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+[fadein black 1.2]
+[wait fade]
+[wt 1.0]
+
+
+[fadeout black 1.2]
+[wait fade]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[scene 10204]
+
+[charaSet E 2033000 1 马嘶(影从者)]
+[charaFilter E silhouette 01060eFF]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+[fadein black 1.2]
+[wait fade]
+[wt 1.2]
+
+
+[fadeout black 1.2]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[wipeOff]
+[scene 10001]
+[pictureFrame cut063_cinema]
+
+[charaPut J 0,-200]
+[charaFadeTime J 0 1.0]
+
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+[fadein black 1.6]
+[wait fade]
+＠
+啊，对我这样的罪人来说，[r][#那地方:迦勒底]太光彩夺目了。
+[k]
+
+＠马嘶
+所以。
+[k]
+
+[messageOff]
+[charaFadeout J 0.8]
+[wt 1.0]
+
+＠马嘶
+我愤怒的，[r]是我自己。
+[k]
+
+＠马嘶
+在这乐园中，我是无法赎罪的。
+[k]
+
+[bgmStop BGM_EVENT_11 2.4]
+
+＠喀戎
+[line 3]你错了。
+[k]
+
+＠喀戎
+就是这个。[r]这罪恶感就是无法形容的愤怒源泉。
+[k]
+
+＠喀戎
+你必须战斗。[r]与针对你自己的愤怒战斗！
+[k]
+
+＠喀戎
+集中精神。[r]与自己的战斗[line 3]
+[k]
+
+＠喀戎
+身为战士的你，[r]应该习以为常了吧？
+[k]
+
+＠
+没错。[r]可是……
+[k]
+
+＠
+我并没有取胜的自信。
+[k]
+
+＠
+因为这是积累了数千年的，[r]对于我自己的愤怒。
+[k]
+
+＠喀戎
+哈哈哈哈哈。[r]没问题啦。
+[k]
+
+＠喀戎
+想想有谁在你的身边？
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_91 0.1]
+[charaFadeout E 0.4]
+[wt 0.2]
+
+＠
+[line 3]啊，我明白了。[r]既然如此。
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.7 0,-50]
+[wt 1.2]
+＠马嘶
+抱歉了御主，请助我一臂之力。[r]帮助我与我的愤怒、我的赎罪战斗吧。
+[k]
+
+
+＠马嘶
+吾数千年的愤怒啊。[r]接下来，我将凭吾之使命讨伐汝。
+[k]
+
+[charaFace A 4]
+
+＠马嘶
+拯救人理。匡正人理。[r]对所有不讲理的愤怒是必然的。
+[k]
+
+＠马嘶
+但是，这份愤怒[line 3][r]让我这样一个普通弓兵承担实在过于庞大。
+[k]
+
+[charaFace A 0]
+
+＠马嘶
+……[r]……
+[k]
+
+[charaFace A 2]
+
+＠马嘶
+赌上我所有的生命，[r]在此行离别之礼吧！
+[k]
+
+＠马嘶
+[f large]上[messageShake 0.04 3 3 0.5]吧！！
+[k]
+
+
+
+[messageOff]
+[wt 0.8]
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_91 0.5]
+[wait fade]
+[soundStopAll]
+[end]

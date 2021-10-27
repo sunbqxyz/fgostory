@@ -1,0 +1,186 @@
+＄91-70-03-01-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 21002]
+[charaSet A 8001001 1 玛修]
+[charaSet B 98003000 2 Dr.罗曼]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 7003001 1 狂战士049]
+[charaTalk C]
+[charaFace A 13]
+[charaFadein A 0 2]
+[charaFace C 0]
+[charaFadein C 0 0]
+[fadein black 1]
+[wait fade]
+＠芙芙
+芙呜……
+[k]
+
+＠玛修
+辛苦了，前辈，给，咖啡。
+[k]
+
+？1：总那么麻烦你。
+
+[charaFace A 3]
+＠玛修
+不，哪里的事……[r]啊，医生好像有话要对前辈说。
+[k]
+
+？2：你也该去休息了。
+
+[charaFace A 12]
+＠玛修
+呃……其实，[r]医生好像有话要对前辈说……
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[communicationChara 98003003 1 5 0 0]
+＠Dr.罗曼
+嗯，抱歉那么晚还打扰你。[r]至于我想说的……
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠狂战士049
+…………
+[k]
+
+[charaFadeout D 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+他，就是他啦！！　Berserker！！[r]找Berserker负责守卫未免太奇怪了吧？
+[k]
+
+？1：是吗？
+
+？2：不行吗？
+
+？！
+
+[communicationCharaFace 3]
+＠Dr.罗曼
+不，那个……
+[k]
+
+＠Dr.罗曼
+Berserker是被剥夺了理性的从者，[r]从某种角度来看或许可以说是对御主最为忠诚的存在。
+[k]
+
+[communicationCharaFace 5]
+＠Dr.罗曼
+但是这个Berserker不一样。[r]你肯定听说过他的故事吧？
+[k]
+
+＠Dr.罗曼
+『天下无双』、『飞将军』、『人中狂战士049』，[r]称赞他的词汇虽多，
+[k]
+
+＠Dr.罗曼
+但反复背叛，遭到人们所厌恶的他，[r]也被人们这样称呼。
+[k]
+
+＠Dr.罗曼
+『狂战士049』……
+[k]
+
+[communicationCharaFace 4]
+＠Dr.罗曼
+所以啊，让他负责守卫不太好啦，[r]很危险的，[%1]……
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠狂战士049
+…………
+[k]
+
+[charaFadeout D 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+咿……！？　刚才他有没有瞪我？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠狂战士049
+[image berserker_language_2][line 2]！！
+[k]
+
+[charaFadeout D 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+呀！！？　果然！！！？？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[se ad32]
+[wait se ad32]
+[messageOff]
+[charaEffect D bit_talk_14]
+[wt 0.5]
+[charaEffectStop D]
+[wait charaEffect D]
+[charaFadeout D 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+饶……饶命！！？　……呃，咦？
+[k]
+
+[se ad16]
+[wt 1]
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFace A 7]
+[charaFadein A 0.1 2]
+＠芙芙
+芙！！
+[k]
+
+[bgmStop BGM_EVENT_2 0.4]
+[bgm BGM_EVENT_3 0.1]
+＠玛修
+不，这是……御主，敌人来袭！！
+[k]
+
+[seStop ad16 3]
+？1：他救了我们吧？
+
+？2：不愧是飞将军！！
+
+？！
+
+[charaFadeout C 0.1]
+[charaFace D 2]
+[charaFadein D 0.1 0]
+＠狂战士049
+[image berserker_language_2][line 2]！！
+[k]
+
+[charaFace A 2]
+＠玛修
+来了！！　迎战！！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

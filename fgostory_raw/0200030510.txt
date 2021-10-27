@@ -1,0 +1,947 @@
+
+
+
+＄02-00-03-05-1-0
+[soundStopAll]
+
+
+[charaSet A 1098118800 1 城里女人]
+[charaSet B 98112300 1 城里男人]
+[charaSet C 1017001 1 武藏]
+[charaSet D 1098118600 1 阿缝]
+[charaSet E 5003001 1 小玉]
+[charaSet F 1098119200 1 清姬]
+[charaSet G 1098119000 1 任职城里的武士]
+[charaSet H 5009000 1 特效用dummy]
+
+[scene 46600]
+
+[fadein black 2.0]
+[se ad462]
+[seVolume ad462 0 0.05]
+[wt 0.1]
+[seVolume ad462 2.0 0.9]
+[wait fade]
+
+[wt 2.5]
+[seStop ad462 2.5]
+[wt 2.0]
+
+[scene 46700 1.5]
+[wt 1.0]
+[se ad451]
+[seVolume ad451 0 0.1]
+[wt 0.1]
+[seVolume ad451 1.4 0.95]
+[wt 2.5]
+
+
+[wt 2.5]
+
+[seStop ad451 1.5]
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.2]
+
+＠城里女人
+出现黑色怪物的传闻？
+[k]
+
+＠城里女人
+啊啊嗯，是有听说过这种可怕的传闻呢。[r]说是[#常陆国]附近发生了不得了的大事！
+[k]
+
+＠城里女人
+真可怕真可怕。啊，说起可怕的事，你们知道吗？[r]据说领主那儿的河川里出现了河童！
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout A 0.1]
+[wt 1.0]
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+[wipeout rightToLeft 0.1 1]
+[wait wipe]
+[scene 46700]
+[wipein leftToRight 0.7 1]
+[wt 0.5]
+[se ad451]
+[wait wipe]
+
+
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.2]
+
+＠城里男人
+这我倒是不知道。我们不是经常能听到传闻吗？[r]应该不会演变成那么麻烦的事吧。
+[k]
+
+＠城里男人
+再怎么说，下总可是天领啊！　而且你想，[r]那座城可是由松平下总守大人守着呢。
+[k]
+
+＠城里男人
+如果真出了什么问题，[r]江户迟早会派一大群武艺高强的武士过来吧？
+[k]
+
+[messageOff]
+[wt 0.5]
+[wipeout rightToLeft 0.7 1]
+[seStop ad451 0.3]
+[wait wipe]
+[charaFadeout B 0.1]
+[wt 1.01]
+[scene 10000]
+[wipein leftToRight 0.1 1]
+[wait wipe]
+[fadeout black 0.1]
+[wait fade]
+[scene 46700]
+[fadein black 1.0]
+[se ad451]
+[wait fade]
+
+
+[wt 1.5]
+
+[seStop ad451 0.3]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.4 1]
+
+＠武藏
+…………唔……都是这种反应啊。
+[k]
+
+＠武藏
+看来城市附近基本没出现过怪异，[r]对城里的居民来说，似乎没什么切实感受呢。
+[k]
+
+？1：明明村子都变成了那样……
+？2：难道是消息没有传到这里吗……
+
+？！
+
+＠武藏
+说得对。看来情报的传播相当慢。[r]不过，既然是太平盛世，会这样或许也不奇怪。
+[k]
+
+[charaFace C 4]
+
+＠武藏
+在乱世时期，一个小小的传闻也攸关生死呢……
+[k]
+
+＠武藏
+毕竟现在是远离战争的时代，没办法。
+[k]
+
+[charaFace C 12]
+
+＠武藏
+也有可能是消息被城那边管制住了。[r]虽说只是个毫无根据的假设。其他的可能性嘛……
+[k]
+
+＠武藏
+英灵剑豪与其召唤者[r]为了切断情报而暗中活动之类的？
+[k]
+
+？1：再收集点情报吧。
+？2：再多向各种人打听一下。
+
+？！
+
+[charaFace C 0]
+
+＠武藏
+嗯。我也是这个打算。
+[k]
+
+
+[charaFace C 1]
+
+＠武藏
+……话说回来，还真是座宏伟的城池啊！
+[k]
+
+＠武藏
+虽说在路上已经能瞥见。但没想到，[r]在城下町看来竟然是座这么巨大的城楼啊。
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[wt 0.7]
+[cameraMove 0.8 -4,-10 1.3]
+[wt 3.0]
+[cameraHome 0.5]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠阿缝
+宏伟的城！[r]缝好想上去看一眼呢。
+[k]
+
+＠D：田助
+咿呀咿呀！　哒呜！
+[k]
+
+[charaFace D 1]
+
+＠阿缝
+嗯，嗯。田助也说想上去呢！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠武藏
+这稍微～有点难办呢。不过也是，[r]在那么高的地方眺望，景色一定相当不错吧。[charaFace C 1]
+[k]
+
+[charaFace C 7]
+
+＠武藏
+唔……看来只要稍稍登上草庵的后山，[r]或许就能看到城楼了吧。好大啊！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠阿缝
+好大呀～♪
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠武藏
+在我的世界里，从未听说过土气城竟然是座[r]这么壮观宏伟的城呀……不过先不管这种事了！
+[k]
+
+？1：不管这种事了！
+
+[charaFace C 7]
+
+＠武藏
+对吧！
+[k]
+
+？2：这与我所知的历史也不同。
+
+[charaFace C 9]
+
+＠武藏
+……果然是有偏差的历史吧。[r]还是说，这也是圣杯力量产生的异变之一？
+[k]
+
+[charaFace C 0]
+
+＠武藏
+现在还不能下定论吧。[r]将这件事包括在内，继续搜集情报吧！
+[k]
+
+？！
+
+[messageOff]
+[wipeout rollRight 1.0 0.5]
+[wait wipe]
+[charaFadeout C 0.1]
+[wt 1.5]
+[wipein rollLeft 1.0 0.5]
+[wait wipe]
+
+＠E：？？？
+哎呀？
+[k]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+＠E：？？？
+哎，原来如此，唔嗯，是这样啊[line 3]
+[k]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.2]
+
+[bgm BGM_EVENT_66 0.1]
+
+＠E：优雅的艺妓
+看你们东张西望坐立不安的样子，[r]难道也是从其他地方来的？
+[k]
+
+＠E：优雅的艺妓
+其实我也是呢。从江户长途跋涉，[r]跨江渡河翻山越岭，好不容易才在半年前来到这里。
+[k]
+
+＠E：优雅的艺妓
+然后你们也看到了吧，如此壮观的城楼！[r]简直就像是天皇陛下的城吧？
+[k]
+
+[charaFace E 1]
+
+＠E：优雅的艺妓
+不愧是天领下总的土气城！[r]你应该听说过这座城是由
+[k]
+
+＠E：优雅的艺妓
+将军家血亲的松平大人统治着的吧？[r]但即便如此还是令人吃惊，居然如此壮观。
+[k]
+
+？1：狐狸耳朵！？　不，错觉……这是错觉……？
+？2：难道是被召唤到这个时代的玉藻前！？
+
+？！
+
+[charaFace E 0]
+
+＠E：优雅的艺妓
+哎呀哎呀，您知道我的事？
+[k]
+
+＠E：优雅的艺妓
+但是，玉藻前这个称呼似乎有些过于夸张了。[r]我叫[#玉]，请叫我小玉吧。
+[k]
+
+＠小玉
+是在这被誉为[#第二江户]的著名土气城下町中，[r]做着卖艺小本生意的微不足道的艺妓。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+[charaFace D 3]
+[charaFadein D 0.1 2]
+
+＠阿缝
+哇～，好厉害。好漂亮的人！[r]简直就像江户的人一样！
+[k]
+
+[charaFace E 1]
+
+＠小玉
+哎呀，多么诚实纯真而又可爱的孩子啊！[r]要是孩子们都能像你这样就好了。
+[k]
+
+[charaMoveReturn E -240,0 0.4]
+[se ad110]
+
+＠小玉
+来，给你糖吃。那个小宝宝也有哦。
+[k]
+
+[charaFace D 1]
+
+＠阿缝
+哇～♪
+[k]
+
+＠D：田助
+咿呀咿呀♪
+[k]
+
+？1：小玉小姐。
+？2：真的不是玉藻前吗？
+
+？！
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠小玉
+……难道是在某次酒宴上遇到过吗？[r]如果是的话，那真是抱歉。
+[k]
+
+＠小玉
+但是，应该还是您搞错了吧？[r]我完全没有印象呢……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠武藏
+所以说。你们认识吗？　到底怎么回事？
+[k]
+
+？1：总觉得……
+？2：她和一个我认识的人很像。
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠小玉
+和认识的人很像……这招真妙。[r]我也要记下来才行。
+[k]
+
+[charaFace E 2]
+[charaMoveReturn E 0,10 0.1]
+
+＠小玉
+不对不对！　总而言之！
+[k]
+
+[charaFace E 0]
+
+＠小玉
+仔细打量下来，您居然穿着异国的衣裳，[r]该不会是手头非常阔绰的大财主吧。
+[k]
+
+[charaFace E 1]
+
+＠小玉
+如果不介意的话，务必要到我的店里玩玩哦？[r]呵呵呵呵呵呵呵，咕～咕咕♪
+[k]
+
+？1：咕～咕咕是什么！
+？2：事到如今还要加新属性！？
+
+？！
+
+＠小玉
+咕～咕咕。怎么了？[r]呵呵呵，既然这么想认识我的话，
+[k]
+
+[charaFace E 0]
+
+＠小玉
+让我想想。就让我们认识一下如何？[r]具体事宜接下来到我的店里面再说吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠武藏
+……你打算怎么办？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+
+＠阿缝
+店？　店，是什么？[r]什么样的店？
+[k]
+
+＠小玉
+是在席位上品味佳肴美酒，观赏弹琴跳舞的[r]大人的店哦。也就是苦界的天上乐土。
+[k]
+
+[charaFace D 2]
+
+＠阿缝
+天上乐土……[charaFace D 1][r]虽然不太明白，但听上去很厉害呢！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠武藏
+…………话说，小玉小姐。有没有好吃的团子？
+[k]
+
+？1：尽管不知道武藏亲几岁。
+？2：但这里，还有，未成年的孩子呢。
+
+[charaFace C 8]
+
+＠武藏
+啊哈哈哈。开玩笑开玩笑。真的是开玩笑啦。[r]不过我确实觉得肚子稍微～有点饿了！
+[k]
+
+？！
+
+[bgmStop BGM_EVENT_66 1.5]
+[se ad173]
+[seVolume ad173 0 0.8]
+[wt 0.1]
+[seStop ad173 0.1]
+[wt 0.2]
+
+＠F：？？？
+……劳驾，请问。[r]那边的那位，能打扰一下吗？
+[k]
+
+[charaFace C 9]
+
+＠武藏
+唔。我吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.4 1]
+[wt 0.2]
+
+＠F：端庄的大小姐
+不，那个。不是你。[r]而是那位身着异国服装的大人……
+[k]
+
+？1：[line 3]哎。清姬？
+
+？！
+
+[charaFace F 0]
+[bgm BGM_EVENT_67 0.1]
+
+＠F：端庄的大小姐
+哎呀……[r]哎呀……。
+[k]
+
+＠F：端庄的大小姐
+我明明是第一次遇见您，[r]您居然能叫出我的名字。哎呀……
+[k]
+
+[charaFace F 3]
+
+＠F：端庄的大小姐
+这究竟是怎么一回事呢。[r]我坚信着终会有今天这么一天的。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠阿缝
+哇……又是一位漂亮的人……[r]衣裳好厉害呀。就像公主殿下一样！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠小玉
+干……干嘛突然打扰我们？[r]在人家快要拉到客人的时候横插[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠F：端庄的大小姐
+我，我，我一直坚信！　终有一天，[r]我会遇见将我从城里带出去的命中注定之人！
+[k]
+
+＠F：端庄的大小姐
+那一定就是您吧！
+[k]
+
+[bgmStop BGM_EVENT_67 0.7]
+[charaFace F 7]
+
+＠F：端庄的大小姐
+[f large]我喜欢您！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠武藏
+哇啊。太厉害了！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠小玉
+哎哎！？　在这种大庭广众下说些什么呢！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠阿缝
+[FFFFFF]？？？？[-]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠城中任职的武士
+万……万万不可啊公主殿下！　清姬殿下！[r]不仅溜出城外，还说出这种话来！
+[k]
+
+？1：清姬殿下？
+？2：溜出城外？
+
+？！
+
+＠城中任职的武士
+唔，唔嗯，一不小心我也说溜嘴了，但求各位网开一面！[r]不过下跪未免太引人注目了还请各位别这么做！
+[k]
+
+＠城中任职的武士
+你们可知这位大人是谁！[r]这位正是松平下总守的千金，清姬殿下是也！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaMoveReturn F 0,-10 0.7]
+[wt 1.0]
+
+＠清姬
+初次见面。[r]我叫清姬。今后请多指教，命运之人啊。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠小玉
+竟然是清姬殿下～！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠武藏
+是真正的公主殿下吗！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠阿缝
+哎，哎？　公主殿下？　真的吗？
+[k]
+
+＠D：田助
+咿呀咿呀♪
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace G 0]
+[charaFadein G 0.1 -128,0]
+[charaFace F 0]
+[charaFadein F 0.1 128,0]
+[wt 1.0]
+
+？1：也就是说，和迦勒底的清姬不是同一个！？
+？2：但……但还是很像啊。
+
+？！
+
+[charaFace F 5]
+
+＠清姬
+请不要妨碍我！[r]我……我不仅是松平的公主，更是一个女人！
+[k]
+
+[charaFace F 2]
+
+＠清姬
+终于让我找到了命中命运之人。[r]请您带走我吧，无论去往天涯海角！
+[k]
+
+[charaFace G 1]
+
+＠城中任职的武士
+万万不可啊公主～！！
+[k]
+
+[charaFadeout G 0.1]
+[se ad7]
+[seVolume ad7 0 0.3]
+[wt 0.4]
+[charaFadeout F 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠清姬
+命运之人……来吧，先把我拐去江户！[r]随后无论去上方还是京，或者干脆就从长崎去往异国吧！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠小玉
+给我稍微等一下。就算你是松平的清姬殿下，[r]也不能打扰我做生意。
+[k]
+
+[charaFace E 5]
+
+＠小玉
+想横刀夺爱抢走这位一看就是个大财主，[r]不对，想要抢走如此优秀的客人，未免太缺德了吧？
+[k]
+
+＠小玉
+因此。公主殿下。[r]不对，公主殿下怎么可能会来城下这种地方。
+[k]
+
+＠小玉
+[#尽管不知道你是哪门子武家千金]，[r]但请你至少选明天后再来好吗。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠城中任职的武士
+唔，唔唔，唔唔……！[r]公主殿下在这种大街上确实显得有些，
+[k]
+
+＠城中任职的武士
+这种事传出去了也不太好听。若过度表露[r]身为下总守松平家的威势，或许会给今后带来麻烦[line 3]。
+[k]
+
+[bgmStop BGM_EVENT_7 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_27 0.1]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠清姬
+什么，什么，什么……
+[k]
+
+[charaFace F 2]
+
+＠清姬
+你这狐狸精般的女人到底算什么东西！[r]想要阻碍我与命运之人的相遇吗！
+[k]
+
+＠清姬
+始终被困在城中，只能空虚地仰望天空，历经几度星霜。[r]好不容易迎来了这场邂逅，可你却！
+[k]
+
+[charaFace F 5]
+
+＠清姬
+想要妨碍我吧……[r]一定是这样……
+[k]
+
+＠清姬
+……[r]……
+[k]
+
+＠清姬
+既然如此，那我……我……[r]或许已经忍无可忍了……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0]
+[charaFace F 5]
+[charaFadein F 0.1 2]
+
+＠小玉
+忍无可忍又怎样？[r]咕～咕咕。
+[k]
+
+[charaFace F 11]
+
+＠清姬
+唔唔唔唔唔唔！[r]我……我……我可真的忍无可忍了哦！
+[k]
+
+＠清姬
+别小看我了，我可是一直随身携带着[r]从南蛮舶来的有点危险的可燃水哦。要是烧伤了可别怪我！
+[k]
+
+？1：可燃水……石油……没什么好奇怪的……
+？2：果然是火焰啊……打算什么时候转身？
+
+？！
+
+[charaFace E 1]
+
+＠小玉
+呵呵呵呵呵呵。你可别小看江户的艺妓哦？[r]我可是早就习惯火灾了，尽管放马过来吧！
+[k]
+
+＠小玉
+无论是火还是雷，把你的拿手好戏亮出来吧！[r]咕～咕咕，我都会用这把扇子扑灭的！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠城中任职的武士
+公……公主大人还是快住手吧！[r]这可是在大庭广众之下啊！
+[k]
+
+但如果真的要使用火焰的话，[r]至……至少换上不易燃的衣物！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠阿缝
+打架？　不可以打架哦？[r]爷爷说过，如果遇到打架，就要说不可以哦？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠武藏
+……事情变得麻烦起来了呢。[r]然后呢，客人兼命运之人要怎么解决这个状况？
+[k]
+
+[charaFace C 0]
+
+＠武藏
+坐视不管？[r]还是要做些什么？
+[k]
+
+？1：啊～真让人没办法！
+？2：阻止这两人吧，让她们脑袋冷静一下！
+
+？！
+
+[charaFace C 7]
+
+＠武藏
+那就这么办吧。[r]没关系的，我会用不让任何人受伤的剑气收拾这个场面！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_27 0.4]
+[wait fade]
+[soundStopAll]
+[end]

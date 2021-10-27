@@ -1,0 +1,218 @@
+
+＄94-05-14-21-4-0
+
+[soundStopAll]
+
+
+[charaSet A 1033300 1 齐格鲁德]
+[charaSet B 3044000 1 虞美人]
+[charaSet C 1098199800 1 徐福]
+[charaSet D 1036000 1 兰陵王]
+[charaSet E 1098200400 1 杀人魔]
+[charaSet F 98104300 1 鬼魂]
+
+[scene 100400]
+
+[bgm BGM_EVENT_24 0.1]
+
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.1]
+
+
+[se ad7]
+[charaMoveScale E 1.1 0.3]
+[charaMove E 0,10 0.3]
+[charaFadeout E 0.3]
+[wt 0.3]
+
+[se bac143]
+[charaEffect F bit_talk_v_slash02]
+[wt 0.4]
+
+[flashin once 0.2 0.1 FFFFFFAF FFFFFF00]
+[effect bit_talk_14]
+[wt 0.1]
+[charaFadeout F 0]
+[charaPut F 1200,1200]
+[se ad32]
+[se ad170]
+
+
+[charaScale A 1.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[se ad671]
+[charaShake A 0.04 3 3 0.4]
+[charaMoveScale A 1.0 0.4]
+[charaMove A 0,0 0.4]
+[wt 0.7]
+＠齐格鲁德
+呜……！[r]在下用爱的力量勉强挺住了……！
+[k]
+
+[charaFace A 2]
+＠齐格鲁德
+但下次可不行了。[r]虞美人阁下！　接下来就！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠虞美人
+明白了！[r]应该还来得及……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 19]
+[charaFadein C 0.1 1]
+＠徐福
+噼，噼呀！[r]唔唔，出……出来吧，兰陵王！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠虞美人
+！？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 1.0]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+
+
+[cueSe Battle bac166]
+[charaEffect D bit_talk_shadow_aura01]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 0]
+[charaSpecialEffect D wipeTimeRe 1 0.7]
+[wt 0.7]
+[charaFadein D 0.0 1]
+[wt 0.8]
+[charaEffectDestroy D bit_talk_shadow_aura01]
+[wt 0.2]
+
+[charaFace D 1]
+＠兰陵王
+……哼。[bgm BGM_EVENT_80 0.1]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠虞美人
+兰陵王，你[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠兰陵王
+很遗憾，[r]但现在的我是站在徐福阁下这边的人。
+[k]
+
+＠兰陵王
+坠入黑暗，沦陷为暗黑的男人。[r]没错，比喻来说[line 3]
+[k]
+
+[charaFace D 5]
+＠兰陵王
+比喻来说[line 3][r]是什么来着，徐福阁下。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠徐福
+比，比喻来说，[r]就是黑暗兰！
+[k]
+
+＠徐福
+在黑暗中飞奔的野性＆斩击！[r]将虞大人逼入绝境的恐怖男子！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠D：黑暗兰
+就是这样。[r]所以，觉悟吧！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠虞美人
+呜……后辈，来帮忙！[r]成为敌人的兰陵王可是非常可怕的！
+[k]
+
+[branchQuestNotClear lblNotClear 91603501]
+
+？1：令人不禁想起模拟装置中的战斗呢。
+？！
+
+[charaFace B 4]
+＠虞美人
+不用想起那种多余的事啦。[r]我已经忘得一干二净了。
+[k]
+
+[branch lblConf]
+
+[label lblNotClear]
+[branch lblConf]
+
+[label lblConf]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠D：黑暗兰
+那我上了！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

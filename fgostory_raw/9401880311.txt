@@ -1,0 +1,497 @@
+
+
+＄94-01-88-03-1-1
+
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[charaSet A 2022000 1 阿蒂拉·Santa]
+[charaSet B 11001000 1 黑圣诞老人]
+[charaSet C 11001002 1 黑圣诞老人_剪影]
+[charaSet D 11001002 1 黑圣诞老人_灵基第三]
+[charaSet E 98100800 1 名羊茨尔戈]
+[equipSet F 9402470 2 概念礼装1瓦砾的圣堂]
+[equipSet G 9402050 2 概念礼装2天之逆月]
+
+[scene 50901]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+＠阿蒂拉·Santa
+怎么样……！[r]黑圣诞老人，接受制裁吧！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaEffect B bit_talk_41]
+[charaShake B 0.05 2 2 2.0]
+
+＠黑圣诞老人
+咕哇啊啊啊啊啊啊啊啊啊！[r]羊，天上掉羊啦[line 5]！
+[k]
+
+[messageOff]
+
+[se ade135]
+[seVolume ade135 0 0.5]
+[wt 0.5]
+[se bac10]
+[fowardEffect bit_talk_magical_pon]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaEffectStop B bit_talk_41]
+[charaShake B 0.05 4 4 0.8]
+[wait se bac10]
+
+[wt 0.3]
+[charaFadeout B 0.4]
+[charaMove B 0,-30 0.4]
+[wt 0.4]
+[se ad144]
+[seVolume ad144 0 0.5]
+[wt 1.0]
+[bgmStop BGM_EVENT_3 1.5]
+[wt 1.0]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.7 0,-60]
+[wt 0.4]
+
+[charaMove B 10,-45 0.4]
+[wait charaMove]
+[charaMove B -10,-30 0.4]
+[wait charaMove]
+[charaMove B 0,0 0.4]
+[wait charaMove]
+[wt 0.5]
+
+
+＠黑圣诞老人
+……话说，你还真是一点都不留情。[r]我只是稍微吓唬了你一下而已啊。
+[k]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠黑圣诞老人
+我想要礼物这话是真的哦～[r]怎么能单方面将我定性为坏人呢～
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠阿蒂拉·Santa
+唔……这倒是没错……[r]但是，尽管这话难以启齿，但你[line 3]
+[k]
+
+？1：看上去一点都不像圣诞老人……
+？2：一点都没有圣诞节的感觉……
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠黑圣诞老人
+啊，这个问题？　只要有圣诞节的感觉就行了吧？[r]那我就让你们见识一下我的真本事！
+[k]
+
+＠黑圣诞老人
+变身～！[r]装饰[line 6]开启！
+[k]
+
+
+[messageOff]
+
+[wt 0.5]
+[se ad39]
+[charaEffect B bit_talk_36_bl]
+[wt 0.5]
+
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[fadeout white 1.5]
+[wt 0.3]
+[charaEffectStop B bit_talk_36_bl]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.8]
+[se ade35]
+[wait fade]
+[wt 0.2]
+
+[charaFadeout B 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+[fadein white 1.0]
+[wait fade]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠阿蒂拉·Santa
+……！　这……这光辉是……
+[k]
+
+？1：是平安夜常见的彩灯！
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠黑圣诞老人
+如何，这充满氛围的身体彩绘！[r]我一年大概会发这么一次光哦！
+[k]
+
+＠黑圣诞老人
+综上所述，希望各位可以在[r]约会碰头的时候毫不客气地利用我。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠阿蒂拉·Santa
+你真的是圣诞老人的一种啊……[r]圣诞老人之路还真是深奥……
+[k]
+
+＠阿蒂拉·Santa
+我必须向你谢罪……[r]我不该擅自认为你是个轻浮的从者……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠黑圣诞老人
+算了算了，我已经习惯被冤枉、诽谤、制裁了，[r]所以我不介意。更重要的是……
+[k]
+
+
+[messageOff]
+[wt 0.2]
+
+[se ad77]
+[charaMove D 5,0 0.3]
+[wait charaMove]
+[charaMove D -5,0 0.3]
+[wait charaMove]
+[charaMove D 0,0 0.3]
+[wait charaMove]
+[wt 0.1]
+
+[se ade136]
+[seVolume ade136 0 0.3]
+[charaFadeout D 0.1]
+[wt 0.1]
+[se ad181]
+
+＠名羊茨尔戈
+咩。（好痛）。[r]嘟咩。（以及好痛）[seStop ade136 0.4]。
+[k]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠阿蒂拉·Santa
+你对茨尔戈做什么！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠黑圣诞老人
+唔，在这里吗？[r]嘿。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[se ad183]
+[charaFace F 0]
+[charaFadein F 0.5 0,-70]
+[wt 2.0]
+[charaFadeout F 0.4]
+[wt 0.8]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+[wt 0.8]
+
+＠黑圣诞老人
+唔……不是这个呢。[r]应该是更为没有后顾之忧的东西。
+[k]
+
+[messageOff]
+
+[se ad77]
+[charaMove D 5,0 0.3]
+[wait charaMove]
+[charaMove D -5,0 0.3]
+[wait charaMove]
+[charaMove D 0,0 0.3]
+[wait charaMove]
+
+[wt 0.5]
+
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[se ad183]
+[charaFace G 0]
+[charaFadein G 0.5 0,-70]
+[wt 2.0]
+[charaFadeout G 0.4]
+[wt 0.8]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+[wt 0.3]
+
+＠黑圣诞老人
+…………
+[k]
+
+[charaFace D 0]
+
+＠黑圣诞老人
+好吧，也行！[r]就拿这种妥协好了！
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠阿蒂拉·Santa
+啊哇，哇……！　等一下，礼物只能拿一件！[r]毕竟这都是特别的礼物……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠黑圣诞老人
+你脑袋太死板了啦～[r]谁规定礼物只能给一个的？
+[k]
+
+＠黑圣诞老人
+两三个也没关系啦。[r]只要是真正想要的东西。
+[k]
+
+＠黑圣诞老人
+就算迟早会遗失，[r]那也是拿不下的那个人自己的问题。
+[k]
+
+＠黑圣诞老人
+能拿的时候，就该双手尽力拿个够。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠阿蒂拉·Santa
+是……这样吗？[r]我听说圣诞老人不会出现在贪婪的人面前……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠黑圣诞老人
+哎～，[r]等待圣诞老人的人都是贪婪的家伙吧～？
+[k]
+
+＠黑圣诞老人
+然后呢，会拜访那些不相信圣诞老人的家伙，[r]说明圣诞老人也是很贪婪的。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_2 2.0]
+[charaFadeout D 0.4]
+[wt 0.5]
+[se ad14]
+[shake 0.05 3 3 3.6]
+[scene 50900 2.5]
+[wt 3.0]
+[seStop ad14 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_11 2.0]
+
+
+
+[charaEffect D bit_talk_06]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠黑圣诞老人
+哎哟。这样门就能打开了啊。[r]真行。对即兴而言还真是个不错的主意。
+[k]
+
+＠黑圣诞老人
+这样的话，[#现在]的冥界 Boss 也无从阻止吧。[r]因为你们一直遵守着规矩前进。
+[k]
+
+？1：你知道些什么吗？
+
+[charaFace D 1]
+
+＠黑圣诞老人
+不，没什么，我什么都不知道哦～？[r]我只是一头被当成活祭的羊～。什么都不知道～！
+[k]
+
+？2：请详细告诉我们 Boss 的事。
+
+＠黑圣诞老人
+说起冥界的 Boss，也只有[#一柱:一个]人选了吧。[r]埃列什基伽勒小姐，你们难道不认识？
+[k]
+
+？！
+
+
+[wt 0.3]
+[messageOff]
+
+[charaDepth C 1]
+[charaFilter C silhouette 00000000]
+
+[charaFadein C 0.1 1]
+[wt 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaFadein C 0.1 1]
+[wt 0.1]
+[charaFadeout C 0.1]
+[wt 0.3]
+[charaFadein C 0.4 1]
+[wt 0.2]
+
+[se ad236]
+[flashin once 0.1 0.8 FFFFFFAF FFFFFF00]
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[charaFadein B 0.1 1]
+
+[wt 1.0]
+
+＠黑圣诞老人
+哎哟，差不多到极限了呢。[r]谢谢你的礼物！
+[k]
+
+
+＠黑圣诞老人
+下一扇门是那啥，有个和你有缘的女神。[r]就是那个无谓开朗，还会用摔角攻击的家伙。
+[k]
+
+＠黑圣诞老人
+具体情况应该能从她那儿打听到吧？[r]毕竟那位女神性格自由，应该不会有所保留。
+[k]
+
+[charaFace B 1]
+
+＠黑圣诞老人
+综上所述，总之感到十分满足的我[r]提供完情报后就消失啦。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[charaEffectStop B bit_talk_06]
+[se ad52]
+[charaSpecialEffect B flashErasure 1 2.0]
+[wait charaSpecialEffect B]
+[charaEffectStop D]
+[wt 1.5]
+
+？1：消失了呢……
+？2：自由的……女神……（咽口水。）
+
+？！
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠阿蒂拉·Santa
+……下一个守门人是女神啊……[r]从三层确实传来了一股强大的神气。
+[k]
+
+＠阿蒂拉·Santa
+既然是女神，应该就能顺利交涉了吧。[r]快走吧，[%1]。
+[k]
+
+＠阿蒂拉·Santa
+黑圣诞老人说的『冥界的 Boss』究竟是谁，[r]下次一定就能搞清楚了。
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_11 2.0]
+[wait fade]
+[wt 0.4]
+[soundStopAll]
+[end]

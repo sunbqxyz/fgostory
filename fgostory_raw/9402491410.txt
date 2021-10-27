@@ -1,0 +1,641 @@
+
+＄94-02-49-14-1-0
+
+[soundStopAll]
+
+
+[charaSet A 10007001 1 冲田Alter]
+[charaSet B 1027000 1 冲田小姐]
+[charaSet C 2024000 1 信]
+[charaSet D 7026000 1 茶茶]
+[charaSet E 98001000 1 玛修]
+[charaSet F 98111500 1 达·芬奇亲]
+[charaSet G 98002000 1 特效用dummy]
+[charaSet H 98111500 1 通讯杂音]
+
+
+[scene 10400]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad119]
+[effect bit_talk_41]
+[wt 2.0]
+
+？1：信……！？
+？2：……死了！？
+
+？！
+
+[effectStop bit_talk_41]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[bgm BGM_EVENT_7 0.1 1.0]
+
+[messageOff]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.4 1]
+[wt 0.4]
+＠冲田Alter
+御主，去食堂吃关东煮吧。
+[k]
+
+＠冲田Alter
+……唔？[r]这家伙怎么了？
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠冲田小姐
+不不，现在可不是吃关东煮的季节吧。[r]话说，你怎么了信！？
+[k]
+
+[charaFace B 4]
+＠冲田小姐
+不是啦，虽说你死了也就死了吧，[r]届时如果接受采访，我还是会这么回答的，
+[k]
+
+＠冲田小姐
+总之是个不怎么令人惋惜的战国大名死了而已。
+[k]
+
+
+[se ad7]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-1000]
+[charaMove C 1 0.1]
+[charaMove B 0 0.1]
+＠信
+等下，我还没有死啦，你这笨蛋！
+[k]
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠冲田Alter
+这样啊，没死就好。[r]活下去是十分美妙的。
+[k]
+
+[charaFace A 6]
+＠冲田Alter
+……那御主，关于去食堂吃关东煮的问题。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠信
+怎么给人一种我甚至不如关东煮有魅力的感觉？
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠冲田小姐
+嘁……所以到底什么情况？
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠信
+其……其实啊……[r]呼哇呼哇呼哇，Nobunobu～。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠冲田小姐
+这种梗就算了啦。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_7 2.0]
+[wipeout loveHeartIn 2.0 1]
+[se ade84]
+[wait wipe]
+
+
+
+[cameraFilter gray]
+
+[charaFadeout B 0.1]
+
+[scene 10310]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[seStop ade84 1.5]
+[wt 0.75]
+[wipein loveHeartIn 1.0 1]
+[wt 0.5]
+[wait wipe]
+
+[wt 0.4]
+
+[bgm BGM_EVENT_2 0.1 1.0]
+
+＠信
+哼哼～，厕所，厕所。[r]大卫牌的咖啡牛奶不小心喝多了。
+[k]
+
+＠信
+那个既甜又好喝呢～。以至于肚子……
+[k]
+
+[charaFace C 5]
+＠信
+哎？　美少女战国大名是不会上厕所的？[r]怎么可能嘛，越后之龙也是在厕所翘辫子的。
+[k]
+
+＠信
+尽管我不知道越后之龙是不是美少女……唔？
+[k]
+
+[messageOff]
+[wt 1.5]
+
+＠信
+怎么？　管制室里有人？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.0]
+[wipeout leftToRight 1.0 1]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[scene 10204]
+[wt 0.5]
+[wipein rightToLeft 1.0 1]
+[wait wipe]
+
+[se ad8]
+[seStop ad8 1]
+[wt 0.7]
+
+[bgm BGM_EVENT_5 0.1 1.0]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠D：？？？
+……可恶，就在茶茶去买冰淇淋的这段时间内，[r]一切居然都结束了，这可不能原谅！
+[k]
+
+＠D：？？？
+如果被殿下知道茶茶的戏份只有开头的一点点，[r]一定会火冒三丈到进入真田丸的小田原之战状态！！
+[k]
+
+＠D：？？？
+现在可不是悠闲评判的时候！[r]而且冲田亲算什么嘛？
+[k]
+
+＠D：？？？
+光炮！？　茶茶也想放光炮啦！[r]哎？　说茶茶也能从手里放光炮？
+[k]
+
+＠D：？？？
+那可是从内部烧灼茶茶身体的诅咒火焰啦！[r]和光炮完全不一样！
+[k]
+
+＠D：？？？
+咦？　这设定是不是……是不是非常沉重？
+[k]
+
+＠D：？？？
+总之这种事情，就算姨母大人承认，[r]殿下也是不可能承认的！
+[k]
+
+＠D：？？？
+事已至此，那就用这卡斯特拉斯……[r]呵呵呵呵呵呵……！
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 1.0]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠信
+不，不是什么卡斯特拉而是迦勒底亚斯……
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1 1.0]
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 0,-10]
+＠茶茶
+……你～看～到～了～吧～！[charaMoveScale D 1.1 2.0][charaMove D 0,10 2.0]
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠信
+糟……糟了！？[r]不，我只是想去一趟厕所而已啦！
+[k]
+
+＠信
+喂，住手，茶茶，呜哇啊啊啊啊啊啊啊啊！！！？[wt 0.4][charaShake C 0.04 4 4 0]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaShakeStop C]
+[charaScale D 1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[scene 10400]
+[wt 0.1]
+
+[cameraFilter normal]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1 1.0]
+
+＠信
+就是这么一回事……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠冲田小姐
+茶茶小姐吗！？
+[k]
+
+＠冲田小姐
+说到戏份，其实我也没什么戏份，[r]但确实没看到她呢……
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.1]
+[flashin once 0.7 0.7 FF000080 FF000000]
+[se ad9]
+[wt 1.4]
+[flashin once 0.7 0.7 FF000080 FF000000]
+[wt 1.1]
+[seStop ad9 0.1]
+[wt 0.4]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1 1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 0,-90]
+[wt 0.3]
+
+＠达·芬奇亲
+出大事了，一早上起来发现特里斯墨吉斯忒斯的[r]模拟装置失控，并展开了谜之空间！
+[k]
+
+＠达·芬奇亲
+恐怕是上次骚动分析的数据残骸在作怪吧，
+[k]
+
+[charaFace F 0]
+＠达·芬奇亲
+但我昨晚熬了夜，现在困得很，[r]所以接下来就拜托你们啦！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+
+[se ad8]
+[seStop ad8 1]
+[wt 1.1]
+
+[se ad59]
+[seVolume ad59 0 0.6]
+[wt 0.8]
+[seStop ad59 0.2]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠玛修
+前辈！[r]我也听达·芬奇亲说了！
+[k]
+
+＠玛修
+总之赶快用灵子转移前往出问题的空间吧！
+[k]
+
+
+？1：可以将灵子转移用在这种事上吗？
+？2：又开始乱七八糟了。
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠冲田Alter
+要去玩吗，那我也一起去。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠冲田小姐
+Al田小姐！
+[k]
+
+＠冲田小姐
+话说我为什么要加小姐这个称呼啦。[r]不不，毕竟我是元祖冲田小姐。
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠信
+等……等一下冲田Alter……[r]把你那把装模作样的大太刀给我用一下。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠冲田Alter
+我的刀吗？
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaMoveReturn A 0,-15 0.8]
+[wt 0.3]
+[se bac304]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠信
+没错，这次想必会是唠唠叨叨史上[r]前所未有的激烈战斗。
+[k]
+
+＠信
+由于大卫牌咖啡牛奶喝多了，我肚子痛得去不了，[r]所以我会将自己的力量托付于这把刀上。
+[k]
+
+[charaFace C 5]
+＠信
+唔……！
+[k]
+
+[messageOff]
+[se ad392]
+[fowardEffect bit_talk_29 0,-40]
+[flashin once 0.1 0.1 FF000080 EE000040]
+[wt 0.4]
+[fowardEffectStop bit_talk_29 0,-40]
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠冲田Alter
+……这是！？
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaSet D 1098136000 1 信长（特殊立绘燃烧）]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠信
+哼……[r]我将全魔力的五分之三注入了这把大太刀，
+[k]
+
+＠信
+不，这已经不是普通的大太刀了，[r]而是蕴含着第六天魔王力量的弑神魔剑……
+[k]
+[messageOff]
+[charaFadeout C 0.4]
+[wt 0.6]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+＠D：信
+没错，[line 3]炼狱剑！
+[k]
+
+[messageOff]
+[cueSe Servants_603000 bac519]
+[flashin once 0.1 0 FFFFFF FFFFFF]
+[wt 0.1]
+[flashin once 0.1 0 FFFFFF FFFFFF]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠冲田小姐
+哇……信的取名品味，[r]是不是有点落伍到战国时代了？
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠冲田Alter
+……炼狱……从今往后你就是炼狱了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+[charaShake B 0.05 4 1 0.7]
+＠冲田小姐
+哎哎哎哎哎！？　你很喜欢吗！？[r]话说这把剑变成这样真的没问题吗！？
+[k]
+
+[charaFace B 2]
+＠冲田小姐
+难道不该表现出一点冲田小姐真正力量的那种……
+[k]
+
+？1：好啦～，我们出发啦～。
+？2：乱七八糟进一步加速……
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠玛修
+路……路上小心，前辈！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[effect bit_talk_07]
+[se ad12]
+[wt 4]
+[fadeout white 1.0]
+[wait fade]
+[wt 2.0]
+
+[scene 10001]
+[wt 0.1]
+
+[fadein white 2.0]
+[wait fade]
+
+[input selectBranch]
+[messageOff]
+[skip false]
+[bgmStop BGM_EVENT_2 0.4]
+[bgmStop BGM_EVENT_3 0.4]
+[bgmStop BGM_EVENT_5 0.4]
+[bgmStop BGM_EVENT_7 0.4]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+
+[charaPut H 2000,2000]
+[charaFadeout H 0.1]
+
+[charaEffectStop H bit_talk_10_LowLevel]
+
+[cameraFilter normal]
+
+[scene 10001]
+[wt 0.4]
+[soundStopAll]
+[maskin white 1]
+[wait mask]
+[label selectBranch]
+
+[skip false]
+
+[wt 1.0]
+
+[fowardEffect bit_queststart80107_4]
+
+[wait fowardEffect]
+
+
+
+
+
+[fadeout white 2.0]
+[wait fade]
+[soundStopAll]
+[end]

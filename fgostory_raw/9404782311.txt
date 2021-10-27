@@ -1,0 +1,994 @@
+
+
+
+＄94-04-78-23-1-1
+
+
+
+[soundStopAll]
+
+
+
+
+
+
+[charaSet A 98001000 1 玛修]
+[charaSet B 25005000 1 旅行者]
+[charaSet C 3043000 1 绘里濑]
+[charaSet D 2016000 1 卫宫·Alter]
+[charaSet E 5025001 1 爱迪生]
+[charaSet F 1098192500 1 绘里濑_差分]
+[charaSet G 1098192800 1 玛丽]
+[charaSet H 98025100 1 ？？？]
+[charaSet I 98025100 1 敌人1]
+[charaSet J 98025100 1 敌人2]
+[imageSet L cut169_spaceprobe 1]
+[masterSet M 98108000 98108100 1]
+[masterSet N 1098184400 1098184410 1]
+[charaSet Q 98115000 1 特效用]
+
+[scene 47001]
+
+[pictureFrame cut170_gameframe_dark]
+
+
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[pictureFrame]
+[pictureFrameTop cut170_gameframe_dark]
+
+[charaTalk C]
+[charaFace C 19]
+[charaFadein C 0.1 0,-50]
+
+＠绘里濑
+嘎[messageShake 0.05 3 3 0.3]啊！　呼……呼……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-50]
+＠旅行者
+绘里濑。是我，赢了哦。[r]这很清楚了。
+[k]
+
+＠旅行者
+你也，明白了吧？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-50]
+＠绘里濑
+……烦死了，烦死了，烦死了！
+[k]
+
+[bgmStop BGM_EVENT_3 2.0]
+
+＠绘里濑
+你已经不是我的旅行者了！[r]你已经彻底归属于迦勒底了！
+[k]
+
+？1：你错了。
+
+？2：看看这个吧。
+
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaFadein L 0.4 0,-200]
+[wt 2.2]
+
+[charaFadeout L 0.4]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+＠绘里濑
+……那棋子是什么？[bgm BGM_EVENT_11 0.1]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+＠旅行者
+是我，交给[&他:她]的。[r]我想让[&他:她]，来这个世界。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 0,-50]
+＠绘里濑
+你给的？[r]是你邀请[%1]来的？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 0,-50]
+＠旅行者
+嗯。是我拜托[&他:她]的。[r]我想帮助你，绘里濑。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 0,-50]
+＠绘里濑
+所以……就是说……[r]你并没有归属迦勒底？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-50]
+＠旅行者
+不是出于[#命令]，[r]或是[#召唤]。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 4]
+[charaDepth D 5]
+[charaDepth G 6]
+[charaDepth A 7]
+
+[charaTalk off]
+
+
+[charaFace D 0]
+[charaFadein D 0.1 -350,-50]
+
+[charaFace E 1]
+[charaFadein E 0.1 -200,-50]
+
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+[charaFace A 1]
+[charaFadein A 0.1 200,-50]
+
+[branchQuestNotClear lblNotClear 3000303]
+
+
+[charaDepth N 3]
+
+[charaFace N 0]
+[charaFadein N 0.1 370,-50]
+[wt 2.0]
+
+[charaFadeout A 0.1]
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[charaFadeout N 0.1]
+
+[branch lblConf]
+[label lblNotClear]
+
+[charaDepth M 3]
+
+[charaFace M 0]
+[charaFadein M 0.1 350,-50]
+[wt 2.0]
+
+[charaFadeout A 0.1]
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[charaFadeout M 0.1]
+
+[label lblConf]
+
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+＠旅行者
+这些人，一直陪着我。
+[k]
+
+＠旅行者
+我们一起，乘坐[#电车]旅行[line 3][r]我们一起，玩了许多[#游戏][line 3]
+[k]
+
+[charaFace B 7]
+＠旅行者
+所以，我们已经是[#伙伴]了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 0,-50]
+＠绘里濑
+这么说，是我自作主张误会了……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠玛修
+旅行者先生并不是迦勒底的所有物。[r]其他从者们其实也一样。
+[k]
+
+＠玛修
+大家都凭各自的意志活着。
+[k]
+
+[charaFace A 13]
+＠玛修
+我自己也希望这样。[r]和前辈一起……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+＠绘里濑
+……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠玛修
+……绘里濑小姐也是凭[r]绘里濑小姐自身的意志活着。难道不是吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+＠绘里濑
+……我也说不清。[r]我觉得自己只是在扮演某种角色。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+＠玛修
+角色……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 19]
+[charaFadein C 0.1 0,-50]
+＠绘里濑
+不具备“圣杯”的，被诅咒的体质[line 3]
+[k]
+
+＠绘里濑
+我一直在利用这种诅咒生活。[r]起到可以让我独立的用途。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠卫宫·Alter
+你之前说过。你是邪灵凭依体。[r]是指你战斗时使用的黑色物体吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠绘里濑
+没错。那些不知从何而来，[r]是想侵蚀我的充满怨念的灵魂。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+＠爱迪生
+灵魂？　是某种比喻吗？[r]还是[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠绘里濑
+就是字面意思哦。死者的灵魂。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-50]
+＠爱迪生
+灵魂吗！　这主题真有意思。[r]连我都没能完全弄清。
+[k]
+
+＠爱迪生
+能够自如操控这些的你，[r]已经不能算是普通人类了！
+[k]
+
+＠爱迪生
+正如卫宫所说的，我们可以自然地推断出[r]绘里濑的力量来源应该是幽冥界神灵之类的存在。
+[k]
+
+[charaFace E 0]
+＠爱迪生
+绘里濑。虽然有些失礼，不过你的父母[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-50]
+＠旅行者
+绘里濑，没有父母。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+＠爱迪生
+唔……这样啊，请原谅……我的失礼。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠绘里濑
+没事。反正我也不记得了。[r]父母过世时，我还很小。
+[k]
+
+[charaFace C 4]
+＠绘里濑
+不过，想起来还是很残酷啊。
+[k]
+
+＠绘里濑
+毕竟对我来说，父母和邪灵们一样，[r]都是模糊不清的存在。
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth C 8]
+[charaDepth F 9]
+
+
+[charaTalk off]
+[charaFace F 1]
+[charaFadein F 0.4 0,-50]
+[wt 0.4]
+
+[charaFadeout C 0.4]
+[wt 0.8]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+＠F：绘里濑
+邪灵们[line 3]凭依在我身上的无名灵魂。
+[k]
+
+＠F：绘里濑
+无所作为，成不了任何人，[r]早晚会被忘却的存在。
+[k]
+
+＠F：绘里濑
+我，也不是任何人。[r]但想成为什么人。
+[k]
+
+[charaFace F 5]
+＠F：绘里濑
+所以我驯服并差遣邪灵们，[r]创造了“枝丫”的“指”与“斧”[line 3]
+[k]
+
+＠F：绘里濑
+同时为其取名为“[#魔王:Erlkonig]”。[r]并且扮演了，“死神”。
+[k]
+
+[charaFace F 4]
+＠F：绘里濑
+我能做的，仅此而已。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠玛修
+可是您能凭自身的意志，[r]选择生存方式。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 0,-50]
+[wt 0.4]
+
+[charaTalk depthOff]
+[charaDepth C 9]
+[charaDepth F 8]
+
+[charaTalk off]
+[charaFace C 4]
+[charaFadein C 0.4 0,-50]
+[wt 0.4]
+
+[charaFadeout F 0.4]
+[wt 0.6]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+＠绘里濑
+………………
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-50]
+＠旅行者
+………………
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 1.0]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+＠玛丽
+我说，[%1]，差不多该出发了吧？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠卫宫·Alter
+这样比较好。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+＠爱迪生
+嗯。[%1]，该道别了。
+[k]
+
+？1：哎？
+
+？2：道别是什么意思？
+
+？！
+
+＠爱迪生
+看看我们上来的那条路吧。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[charaTalk depthOff]
+[charaDepth H 3]
+[charaDepth I 2]
+[charaDepth J 1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+[wt 0.4]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk off]
+
+[charaFace H 0]
+[charaFace I 0]
+[charaFace J 0]
+[charaFadein H 0.4 -350,0]
+[charaFadein I 0.4 0,0]
+[charaFadein J 0.4 350,0]
+[wt 2.0]
+
+＠？？？
+[image berserker_language_2]
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_3 0.7 0.5]
+[wait wipe]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_3 0.7 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 0,-50]
+＠玛修
+亡灵们……？　不是本该一动不动吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+＠卫宫·Alter
+应该是规则被改写了吧。[r]恐怕在刚才的战斗中。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠绘里濑
+……我和[%1]的战斗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 0,-50]
+＠玛丽
+也就是作为规则一部分的[#亡灵:它们]拥有了意志，[r]觉醒成为了玩家？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+＠爱迪生
+经过了绘里濑和[%1][r]两位玩家间的直接对决[line 3]
+[k]
+
+＠爱迪生
+有些事发生了改变。[r]倘若连世界的规则都改变了的话[line 3]
+[k]
+
+[charaFace E 1]
+＠爱迪生
+怎么样，各位。[r]人类这种存在是不是相当能干呢？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+＠绘里濑
+……！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_3 0.7 0.5]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[charaTalk depthOff]
+[charaDepth H 3]
+[charaDepth I 2]
+[charaDepth J 1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_3 0.7 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk off]
+
+[charaFace H 0]
+[charaFace I 0]
+[charaFace J 0]
+[charaFadein H 0.1 -350,0]
+[charaFadein I 0.1 0,0]
+[charaFadein J 0.1 350,0]
+[wt 0.1]
+
+＠？？？
+[image berserker_language_2]
+[k]
+
+[messageOff]
+[se ad166]
+[seVolume ad166 0 0.4]
+[seStop ad166 1.5]
+[se ad443]
+[seStop ad443 1.5]
+[charaFadeout H 0.4]
+[charaFadeout I 0.4]
+[charaFadeout J 0.4]
+[wt 1.5]
+
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_3 0.7 0.5]
+[wait wipe]
+
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_3 0.7 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠玛修
+怪物们冲上来了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+＠爱迪生
+这里由我和卫宫来抵挡。[r]走吧，年轻人。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+＠旅行者
+你，打算留在地表啊。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+＠爱迪生
+嗯。这也是追求星辰之人的职责啊。
+[k]
+
+＠爱迪生
+时而国家间会发生纷争、竞争，[r]却还在朝着同一个目标进发……
+[k]
+
+＠爱迪生
+你的存在，是我们点点滴滴培养起来的[r]名为科学的希望结晶。
+[k]
+
+[charaFace E 1]
+＠爱迪生
+我们为你感到自豪！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-50]
+＠旅行者
+我是不会，忘记你的。[r]我会一直一直，记得你。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+＠爱迪生
+嗯。[r]请出发吧。向着你们的星辰。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-50]
+＠旅行者
+是。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠卫宫·Alter
+星辰吗。但愿在专注忘我地抵达后，[r]不会发现目的地只有无尽黑暗就好了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+＠旅行者
+我，不要紧。[r]宇宙本来，就很黑暗。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠卫宫·Alter
+…………是么。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+＠绘里濑
+………………
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠玛修
+前辈？　我们也[line 3]
+[k]
+
+？1：嗯，出发吧。
+
+？2：绘里濑也一起来吧。
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 0,-50]
+＠绘里濑
+哎？　我也？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+＠玛修
+我赞成！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 0,-50]
+＠绘里濑
+慢着。为什么。我输了啊？
+[k]
+
+？1：无关胜负。
+
+？2：你想确认吧？
+
+？！
+
+[charaFace C 0]
+＠绘里濑
+……嗯。我明白了。终于明白了。
+[k]
+
+[charaFace C 1]
+＠绘里濑
+旅行者，关于你……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 0,-50]
+＠旅行者
+你终于，变得坦率了呢。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 0,-50]
+＠绘里濑
+你真是一点都不可爱！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut Q 1200,1200]
+[charaEffect Q bit_talk_41]
+[charaScale Q 0.7]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[effect bit_talk_dice110]
+[voice 2500500_0_X100]
+[wt 6.0]
+[wait voice 2500500_0_X100]
+
+
+[se ad399]
+[charaPut Q 0,-70]
+[cameraMove 0.2 0,0 1.5]
+[wipeout circleOut 0.4 1.0]
+[wait wipe]
+
+[cameraHome 0.1]
+[charaPut Q 1200,1200]
+[charaEffectStop Q bit_talk_41]
+[charaScale Q 1.0]
+
+[scene 10000]
+[wt 1.0]
+
+[scene 10001 0.4]
+
+[wipein circleIn 0.4 1.0]
+[seStop ad399 0.4]
+[wait wipe]
+
+[wt 1.0]
+
+＠玛修
+开始跳跃。移动距离，大约1000米。[r]目标，抵达神社山门！
+[k]
+
+[messageOff]
+[wt 0.5]
+[maskout white 1.5]
+[bgmStop BGM_EVENT_3 1.5]
+[wait mask]
+
+[skip false]
+[pictureFrameTop]
+[scene 10000]
+[wt 1.0]
+
+[maskin white 1.0]
+[wait mask]
+
+[fadeout black 0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+
+

@@ -1,0 +1,443 @@
+
+
+＄94-01-88-02-1-1
+[soundStopAll]
+[charaSet A 2022000 1 阿蒂拉·Santa]
+[charaSet B 3027000 1 守门人]
+[charaSet C 3027001 1 守门人]
+[charaSet D 98100800 1 名羊茨尔戈]
+[equipSet E 9402250 2 概念礼装1]
+[equipSet F 9402480 2 概念礼装2]
+[charaSet H 5009000 1 dummy]
+
+[scene 50901]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_3 0.1]
+[wt 0.5]
+
+[se ad171]
+[wt 0.2]
+[se ad170]
+[wt 0.6]
+
+[fadein black 1.0]
+
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[se ad471]
+[charaShake C 0 1 1 0.2]
+[wt 0.2]
+
+[se ad85]
+[wt 0.2]
+[charaShake C 0 2 2 0.3]
+
+[effect bit_talk_Slash_red_01_L]
+[se ad32]
+[charaEffect C bit_talk_14]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.2]
+[charaShake C 0 2 2 0.4]
+[wt 0.6]
+
+[fowardEffect bit_talk_ichimon01wh]
+[charaEffect C bit_talk_14]
+[se ad467]
+
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaShake C 0 3 3 1.0]
+
+[charaFace C 4]
+
+[wt 1.5]
+[se ad54]
+[charaMove C 0,-15 0.5]
+[charaFadeout C 0.75]
+
+[fowardEffectDestroy bit_talk_ichimon01wh]
+
+[wt 1.75]
+
+[se ad110]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+
+[bgmStop BGM_EVENT_3 1.5]
+[wt 1.5]
+
+＠守门人
+……对不起。[r]事到如今我还有个问题。
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠守门人
+为什么赠送礼物的过程[r]需要进行战斗呢？
+[k]
+
+？1：我也很在意。为什么要战斗？
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠阿蒂拉·Santa
+不……因为，[r]手册上写着要这么做哦……？
+[k]
+
+＠阿蒂拉·Santa
+『身为圣诞老人，[r]　必须通过战斗来赠送礼物。』
+[k]
+
+＠阿蒂拉·Santa
+上面还有一代和二代的盖章。[r]擅长话术的假面男也这么说。
+[k]
+
+？2：哎呀，其实圣诞老人就是这样的存在啦
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠阿蒂拉·Santa
+嚯～嚯～嚯～。[r]老夫是圣诞老人哦。
+[k]
+
+？！
+
+[charaFace A 7]
+
+＠阿蒂拉·Santa
+不管怎么说，这场战斗是我们获得了胜利。[r]老老实实收下这份礼物吧。
+[k]
+
+＠阿蒂拉·Santa
+圣诞老人能看透人们真正渴望的东西。[r]冥界的小黑帽啊。你[line 3]
+[k]
+
+＠阿蒂拉·Santa
+心怀孤独与寂寞吧。[r]我明白，我也一样。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+＠守门人
+（这个人……能看透我的内心……？[r]　那么，会将我真正想要的东西[line 3]）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠阿蒂拉·Santa
+那你的礼物只能是这个。[r]赠送给你的东西，就是『朋友』！
+[k]
+
+
+[messageOff]
+
+[charaPut H 1]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[se ad139]
+[charaEffect H bit_talk_41]
+[charaFace E 0]
+[charaFadein E 0.5 0,-70]
+[wt 0.6]
+
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_41]
+[seStop ad139]
+[se bac7]
+[charaShake E 0 3 3 0.3]
+
+[effect bit_talk_Slash_red_01_L]
+[wait effect bit_talk_Slash_red_01_L]
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠守门人
+不需要。请回。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠阿蒂拉·Santa
+什么……不是这个吗……？[r]但除此以外还有什么……唔唔唔……
+[k]
+
+[messageOff]
+[se ad77]
+[se ade136]
+[seVolume ade136 0 0.0]
+
+[charaMove A 5,0 0.3]
+[wait charaMove]
+[charaMove A -5,0 0.3]
+[wait charaMove]
+[charaMove A 0,0 0.3]
+[wait charaMove]
+
+[wt 0.7]
+
+[charaTalk B]
+
+＠名羊茨尔戈
+咩。（阿蒂拉大人，不要乱摸我肚子。）[seVolume ade136 0 1.0][r]嘟咩。（还有不是这个，阿蒂拉大人。）
+[k]
+
+？1：（那只羊原来还是礼物袋吗……！）
+
+？！
+
+
+[messageOff]
+[charaTalk A]
+
+[se ad77]
+[charaMove A 5,0 0.3]
+[wait charaMove]
+[charaMove A -5,0 0.3]
+[wait charaMove]
+[charaMove A 0,0 0.3]
+[wait charaMove]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+
+＠阿蒂拉·Santa
+好。刚才那个只是试用装，不用介意。[r]这次肯定不会搞错了！
+[k]
+
+[messageOff]
+
+[charaPut H 1]
+[charaFadeout A 0.1]
+
+[se ad139]
+[charaEffect H bit_talk_41]
+[charaFace F 0]
+[charaFadein F 0.5 0,-70]
+[wt 2.0]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_41]
+[charaFadeout F 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠守门人
+………………
+[k]
+
+＠守门人
+……算了，新人圣诞老人也就这点水平了吧。[r]那这个我先收下好了。因为似乎还有点用处。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 2.0]
+[charaFadeout B 0.1]
+[wt 0.5]
+[se ad14]
+[scene 50900 2.5]
+[shake 0.05 3 3 3.6]
+[wt 3.0]
+[seStop ad14 1.0]
+[wt 1.0]
+
+
+
+[bgm BGM_EVENT_11 1.0]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠守门人
+……想前进就随你们的便吧。[r]毕竟我的灵魂还算有所好转。
+[k]
+
+[charaFace B 5]
+
+＠守门人
+但别以为后面的守门人[r]都像我这样好说话。
+[k]
+
+＠守门人
+那个羊圣诞老人从根本上[r]误会了圣诞老人的含义。
+[k]
+
+＠守门人
+[%1]。[r]你一定要好好引导她。
+[k]
+
+[messageOff]
+[charaEffect B bit_talk_06]
+[wt 1.5]
+
+＠守门人
+……我的职责到此结束。[r]总有一天，我们一定还能在地表相见。
+[k]
+
+？1：嗯，也祝安娜一切安康。
+
+[messageOff]
+[charaFace B 1]
+[wt 1.0]
+
+[charaSpecialEffect B flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect B]
+[charaEffectStop B bit_talk_06]
+[wt 2.0]
+
+？2：话说，你为什么要当守门人？
+
+[charaFace B 1]
+
+＠守门人
+虽说这是个秘密，但确实，[r]毕竟是圣诞节，我也很想外出走走。
+[k]
+
+
+[messageOff]
+
+[wt 0.8]
+[charaSpecialEffect B flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect B]
+[charaEffectStop B bit_talk_06]
+[wt 2.0]
+
+？！
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠阿蒂拉·Santa
+……关上的门打开了……[r]这究竟是什么机关啊……
+[k]
+
+＠阿蒂拉·Santa
+冥界之门是审判之门。[r]她刚才说必须有一个人在这里牺牲……
+[k]
+
+？1：或许是她的感情得到了救赎……？
+？2：大概只是解释的问题。
+
+？！
+
+[charaFace A 7]
+
+＠阿蒂拉·Santa
+……这样啊。[r]牺牲这个词并不只代表死亡……
+[k]
+
+＠阿蒂拉·Santa
+用礼物进行的救赎能让灵魂升天。[r]在这个夜晚，这种奇迹是被允许发生的……
+[k]
+
+[charaFace A 1]
+
+＠阿蒂拉·Santa
+不愧是御主。[r]我认为这个看法是准确的。
+[k]
+
+＠阿蒂拉·Santa
+因为，现在我的内心十分温暖。[r]冥界明明如此寒冷，我却热呼呼的。
+[k]
+
+[charaFace A 6]
+
+＠阿蒂拉·Santa
+既然如此，那我们的目的就更明确了。
+[k]
+
+＠阿蒂拉·Santa
+从前面继续往下跳，向下一扇门进发，[r]为守门人配送礼物。
+[k]
+
+＠阿蒂拉·Santa
+只要重复这么做，就能抵达深渊了吧。[r]虽然对第一次工作的我来说稍微有些艰难，但我是不会认输的。
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.4]
+[wt 0.4]
+[se ad77]
+[seVolume ad77 0 0.6]
+[wt 0.8]
+
+
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.4 1]
+
+[wt 0.4]
+
+＠阿蒂拉·Santa
+好了，接下来才是真正的挑战，御主。[r]我们要正式开始下冥界了哦。
+[k]
+
+[bgmStop BGM_EVENT_11 3.0]
+
+＠阿蒂拉·Santa
+迦勒底为何会遭到袭击？[r]冥界为何会发生变化？
+[k]
+
+＠阿蒂拉·Santa
+以及，我为何会成为圣诞老人？[r]一切都会在通往深渊的道路上找到解答。
+[k]
+
+[messageOff]
+
+[charaFace A 3]
+[wt 1.5]
+[charaFace A 13]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠阿蒂拉·Santa
+嚯～嚯～嚯～。[r]老夫可是圣诞老人哦？
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.4]
+[soundStopAll]
+[end]

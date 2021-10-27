@@ -1,0 +1,528 @@
+
+
+＄94-00-91-07-2-0
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 98003000 1 Dr.罗曼]
+[charaSet C 6005001 1 杰克]
+[charaSet D 5004001 1 童谣]
+[charaSet E 3026000 1 贞德·Alter·Santa·Lily]
+[charaSet F 98006000 1 怪物]
+[charaSet G 98105600 1 圣诞岛假面]
+[charaSet H 98105600 1 圣诞岛假面（阴影用）]
+
+[soundStopAll]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 21803]
+
+[fadein black 2.0]
+[wait fade]
+
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠贞德·Alter·Santa·Lily
+[messageShake 0.05 2 2 0.7]
+就算身体被分成两半也会继续前进的东西讨厌死了啦～！！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace C 0]
+[charaFace D 2]
+[charaFadein C 0.1 2]
+[charaFadein D 0.1 0]
+[charaShake D 0.05 4 0 1.0]
+＠童谣
+咯嗒咯嗒追过来的模型人偶什么的一点都不童话风啦！
+[k]
+
+[charaTalk C]
+[charaFace C 1]
+＠杰克
+全部都解体掉吧～！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0 1]
+[wt 0.3]
+＠玛修
+只有杰克小姐一个人兴高采烈的呢……
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10]
+[wt 0.3]
+
+[bgmStop BGM_EVENT_3 0.4]
+[wt 0.4]
+
+[messageOff]
+[cameraMove 0.5 64,-64 1.4]
+[wt 0.3]
+
+[effect bit_talk_rarrow01red]
+[scene 10000 0.2]
+[wt 0.2]
+[se bac20]
+[wt 1.0]
+[effectStop bit_talk_rarrow01red]
+[se bac12]
+[seVolume bac12 0 0.5]
+[effect bit_talk_bara]
+[wt 0.7]
+[effectStop bit_talk_bara]
+[wt 0.8]
+
+[cameraHome 0.1]
+[scene 21803 0.2]
+[wt 0.4]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[wt 0.3]
+[messageOff]
+
+[charaSpecialEffect F enemyErasure 1 1.7]
+[se ad26]
+[wait charaSpecialEffect F]
+[wt 1.2]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠贞德·Alter·Santa·Lily
+蔷薇黑键！[r]也就是说[line 3]。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad188]
+[seVolume ad188 0 0.5]
+[charaTalk H]
+[charaFace H 0]
+[charaFace G 0]
+[charaPut G 1]
+[charaFadeTime G 0 0]
+[charaFilter H silhouette 00000080]
+[charaFadein H 0.7 1]
+[wt 0.7]
+＠圣诞岛假面
+没错，登场台词你们差不多也听腻了吧。[charaFadeTime G 2.0 1.0][r]我也说腻了。
+[k]
+
+[seStop ad188 0.1]
+[bgm BGM_EVENT_7 0.7]
+
+？1：知道啦知道啦那啥假面大人。
+？！
+
+[wait charaFade G]
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠贞德·Alter·Santa·Lily
+谢谢您。[r]师傅……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠圣诞岛假面
+不，无需道谢。[r]贞德·Alter·Santa·Lily。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 0.4]
+[wt 0.4]
+
+[bgm BGM_EVENT_5 0.7]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠贞德·Alter·Santa·Lily
+哎？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠圣诞岛假面
+因为……没错，因为。[r]让你们到这里来都是为了让你们为我开道。
+[k]
+
+[charaFace G 2]
+＠圣诞岛假面
+圣诞老人拥有的希望，[r]掌握万物赠礼的那个袋子，就由我收下了！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein C 0.1 2]
+[charaFadein D 0.1 0]
+＠杰克
+[FFFFFF]？[-]
+[k]
+
+[charaTalk D]
+＠童谣
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠圣诞岛假面
+简单说起来，就是我和你们是敌对的！！
+[k]
+
+？1：你……你说什么！！
+？！
+
+[messageOff]
+[charaFilter G silhouette 00000080]
+[scene 28000 0.2]
+[se ad185]
+[shake 0.05 7 7 2.0]
+[wait se ad185]
+[scene 21803 0.2]
+[charaFadeout G 0.4]
+[wt 0.4]
+[charaFilter G normal FFFFFFFF]
+[wt 0.2]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0 1]
+[wt 0.3]
+＠玛修
+……话说，刚才的雷是从哪儿来的？
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10]
+[wt 0.3]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+[charaShake G 0.05 2 0 0.7]
+＠圣诞岛假面
+不要深究啦。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠贞德·Alter·Santa·Lily
+怎……怎么会……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠圣诞岛假面
+但是，圣诞老人是以孤高与平等为原则的。[r]实现所有的愿望，平等地馈赠礼物……
+[k]
+
+＠圣诞岛假面
+不需要什么个人欲望，[r]必须维持能令名为圣诞老人的机构成立的概念才行。
+[k]
+
+[charaFace G 2]
+＠圣诞岛假面
+然而，你却会迷茫、为难、忧郁[line 3][r]并继续前进。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠贞德·Alter·Santa·Lily
+难道不能迷茫或是为难吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠圣诞岛假面
+不能。[r]既然成了圣诞老人，就应该舍弃这一切。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠贞德·Alter·Santa·Lily
+欲望是不需要的吗？[r]连想实现愿望都不行吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠圣诞岛假面
+对。[r]对圣诞老人来说，这一切都是不需要的。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠贞德·Alter·Santa·Lily
+……是……这样吗……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠杰克
+喂～喂～，[#妈妈:御主]。[r]『欲望』是什么呀？
+[k]
+
+？1：是想去做些什么的感情哦。
+？！
+
+[charaFace C 0]
+＠杰克
+呃……我们想去海边！[r]……这种是欲望吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠圣诞岛假面
+说得对。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFace D 4]
+[charaFadein C 0.1 2]
+[charaFadein D 0.1 0]
+＠杰克
+贞德……难道不想和我们以及童谣[r]一起去海边吗？
+[k]
+
+＠杰克
+我们很想一起去哦？
+[k]
+
+[charaTalk D]
+[charaFace D 0]
+＠童谣
+是啊，我也想和杰克贞德一起去海边呢！
+[k]
+
+[charaFace D 1]
+＠童谣
+当然，御主也一起去！[r]大家一起去海边比较开心！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+[bgmStop BGM_EVENT_5 0.4]
+[wt 0.4]
+
+[charaFace E 8]
+＠贞德·Alter·Santa·Lily
+啊……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠圣诞岛假面
+……小孩子的戏言根本不值得逐一去倾听。
+[k]
+
+[charaFace G 0]
+＠圣诞岛假面
+好了，快把袋子交给我吧。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_4 0.7]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠贞德·Alter·Santa·Lily
+……我不会把这个交给你。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠圣诞岛假面
+哎呀。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[charaShake E 0.05 2 0 1.0]
+＠贞德·Alter·Santa·Lily
+[#我才不要]，我绝对不会交给你！
+[k]
+
+[charaShake E 0.05 4 0 1.0]
+＠贞德·Alter·Santa·Lily
+我才不会将袋子交给看不起小孩子话语的你！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠圣诞岛假面
+那你打算怎么办？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠贞德·Alter·Santa·Lily
+[messageShake 0.05 4 4 0.7]
+我会战斗！
+[k]
+
+＠贞德·Alter·Santa·Lily
+求求您了，[#驯鹿:御主]！[r]请让我获得胜利！
+[k]
+
+[charaFace E 0]
+＠贞德·Alter·Santa·Lily
+我想打赢那个人！[r]不，不对。
+[k]
+
+[charaFace E 2]
+
+＠贞德·Alter·Santa·Lily
+我唯独不想输给这个人！[r]不能输给这个人！
+[k]
+
+？1：明白了，圣诞老人！
+？2：就让我来实现你的愿望吧！
+？！
+
+[charaFace E 0]
+＠贞德·Alter·Santa·Lily
+……！
+[k]
+
+[charaFace E 6]
+＠贞德·Alter·Santa·Lily
+嗯！[r]贞德·Alter·Santa·Lily！
+[k]
+
+[charaFace E 2]
+＠贞德·Alter·Santa·Lily
+我一定会作为圣诞老人，[r]击败圣诞岛假面！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_4 1.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[soundStopAll]
+[end]

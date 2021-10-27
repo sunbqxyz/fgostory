@@ -1,0 +1,72 @@
+＄01-00-02-10-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 20700 0]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98003003 1 罗曼医生]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 1005001 1 尼禄]
+[charaSet E 98016000 1 罗马士兵]
+[charaFace A 0]
+[charaFadein A 0 2]
+[charaFace D 0]
+[charaFadein D 0 0]
+[fadein black 1]
+[wait fade]
+＠玛修
+真是……奇怪啊。[r]敌人出现的频率和先前几乎没有差别。
+[k]
+
+＠尼禄
+是啊。[r]我军明明已经控制了邻壤的高卢地区。
+[k]
+
+[charaFace D 5]
+＠尼禄
+莫非对方是从海上发起的进攻？[r]侦查部队至今没有察觉，也就是说……
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 3]
+＠罗曼医生
+可能有一支具备发现并抹杀侦查兵能力的[r]敌方精锐部队登陆了。
+[k]
+
+[communicationCharaFace 5]
+＠罗曼医生
+那样就说得通了。[r]但如此一来[line 2]
+[k]
+
+[bgmStop BGM_EVENT_2 0.4]
+[bgm BGM_EVENT_3 0.1]
+[communicationCharaFace 2]
+＠罗曼医生
+和我担心的一样。[r]再次探测到敌军，且数量众多！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 2]
+[charaFadein A 0.1 2]
+[charaFadein E 0.1 0]
+＠玛修
+诸位士兵们，请大家一定要平安无事。[r]我也会竭力奋战的。
+[k]
+
+＠罗马士兵
+也祝玛修阁下武运昌盛！
+[k]
+
+[charaFace A 7]
+＠玛修
+请下指令，御主。[r]开始作战。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,55 @@
+＄01-00-04-07-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+[scene 10906 0]
+[charaSet A 8001001 1 玛修]
+[charaSet B 98003003 1 罗曼医生]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 5007001 1 莎士比亚]
+[charaSet E 1009001 1 莫德雷德]
+[charaSet F 7004001 1 弗兰]
+[charaSet G 6007001 1 杰基尔]
+[charaSet H 5005001 1 安徒生]
+[se ad13]
+[wait se ad13]
+[charaTalk B]
+[communicationChara 98003003 1 5 0 5]
+[fadein black 1]
+[wait fade]
+＠罗曼医生
+……有个不太好的消息。[r]非常抱歉，但请听我说。其实这周围啊。
+[k]
+
+[se ad14]
+[wt 1.5]
+[bgmStop BGM_EVENT_5 0.4]
+[bgm BGM_EVENT_3 0.1]
+[communicationCharaFace 4]
+＠罗曼医生
+啊，你们已经听到了？[r]嗯。怎么说呢，反正就是这么回事了。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk E]
+[charaFace E 2]
+[charaFace A 0]
+[charaFadein E 0.1 0]
+[charaFadein A 0.1 2]
+＠莫德雷德
+好啊，不管来多少，都能打得你片甲不留！[r]斩开厚厚的钢铁装甲感觉挺不赖的！
+[k]
+
+[charaFace A 15]
+＠玛修
+对不起，对不起御主……！[r]要连续战斗了。请下指示。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[seStop ad14 0.4]
+[wait fade]
+[soundStopAll]
+[end]

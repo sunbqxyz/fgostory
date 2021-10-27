@@ -1,0 +1,454 @@
+
+
+＄02-00-02-03-1-0
+[soundStopAll]
+[charaSet A 99502600 1 玛修]
+[charaSet B 4004001 1 阿斯托尔福]
+[charaSet C 1026001 1 迪昂]
+[charaSet D 98111500 1 达·芬奇]
+[charaSet E 98113900 1 弗格斯]
+[charaSet F 98114500 1 亚马逊人A]
+[charaSet G 98108900 1 男性A]
+[charaSet H 98114510 1 亚马逊人B]
+
+[se ad3]
+[seVolume ad3 0 0.01]
+[seVolume ad3 2.0 0.5]
+[cameraMove 0 0,0 1.0]
+[wipeFilter downToUp 0.4 1.0]
+
+[scene 20530]
+[fadein black 1.5]
+[wait fade]
+
+
+？1：这是……
+？！
+
+[seStop ad3 2.0]
+[bgm BGM_EVENT_5 1.0]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.4 0,-60]
+＠阿斯托尔福
+御主，头别抬得那么高啦！[r]会被发现的！
+[k]
+
+[messageOff]
+[cameraMove 1.4 0,60 1.0]
+[wt 0.4]
+[fadeout black 1.0]
+[wait fade]
+[wt 0.7]
+[cameraMove 0.1 0,0 1.0]
+[charaFadeout B 0.1]
+[wipeOff]
+[wt 0.7]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠亚马逊人A
+走快点！[r]你真是个垃圾！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+[effect bit_talk_whip02]
+[se bac104]
+[wt 0.4]
+[se bac104]
+[wt 0.6]
+[effect bit_talk_14]
+[se bac105]
+[shake 0.03 3 3 0.7]
+[wt 1.0]
+
+[charaShake G 0.05 3 3 0.7]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.4 1]
+＠男性A
+啊啊，对……对不起……不要鞭子，[r]求您不要用鞭子抽我啊！
+[k]
+
+[charaFadeout G 0.1]
+
+[charaTalk F]
+[charaFace G 1]
+[charaFadein G 0.1 0]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+＠亚马逊人A
+不要？　你是我的所有品……[r]你难道还没明白，你是没资格抗议或提要求的吗？
+[k]
+
+[messageOff]
+[se bac106]
+[wt 0.1]
+[charaEffect G bit_talk_14]
+[wt 0.1]
+[charaShake G 0.05 3 3 0.5]
+[wt 0.5]
+[se bac105]
+[wt 0.1]
+[charaEffect G bit_talk_14]
+[wt 0.1]
+[charaShake G 0.05 3 3 0.5]
+[wt 0.5]
+
+＠男性A
+啊啊，呜，咿，好痛，住手，住手，对不起，[r]求……求求您了，请饶恕我吧，主人啊啊啊！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.4]
+
+[charaSet G 98114600 1 男性A]
+
+[charaTalk H]
+[charaFace G 0]
+[charaFadein G 0.4 0]
+[charaFace H 0]
+[charaFadein H 0.4 2]
+＠亚马逊人B
+哼，太不像话了。有个磨磨蹭蹭的家畜还真辛苦。[r]你难道不这么想吗？
+[k]
+
+＠G：男性B
+啊，是。做什么事都要机灵，不做任何无用功吧。[r]我明白，我很明白。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[wt 0.4]
+
+[se bac148]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.03 3 3 0.4]
+[wt 0.4]
+[se bac149]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.03 3 3 0.4]
+[wt 0.7]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 1]
+＠F：亚马逊人C
+来啊，来啊！[r]哈，[charaFace F 0]空手果然比鞭子更适合体罚。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.2]
+[messageOff]
+[se bac151]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.03 3 3 0.4]
+[wt 0.4]
+[se bac150]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.03 3 3 0.4]
+[wt 0.7]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠F：亚马逊人C
+这手感真是太爽……喂？[r]嘁，不动了。死了啊。
+[k]
+
+＠F：亚马逊人C
+不过算了，从笼子里把预备的男人带出来。[r]总之下次得抓一些强壮点的男人啊……
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout F 0.1]
+[cameraMove 0.1 0,60 1.0]
+[wipeFilter downToUp 0.5 0.5]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-60]
+＠迪昂
+这……这究竟是什么情况！
+[k]
+
+？1：是只有亚马逊人的城镇……
+？2：男性……正在被饲养……？
+？！
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-60]
+＠阿斯托尔福
+……嗯。[r]在路上来往的行人全是亚马逊人。
+[k]
+
+＠阿斯托尔福
+男人都被套上了项圈，用锁链牵着……[r]有种被饲养的感觉呢……
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0,-60]
+＠弗格斯
+……女性居然如此强大，如此可怕……[r]而且还支配着这座城镇。难以置信……
+[k]
+
+[charaFadeout E 0.1]
+
+[charaPut G 0,0]
+[charaEffect G bit_talk_10_LowLevel]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-60]
+＠玛修
+我终于明白刚才那句『野生的男人』的意思了。
+[k]
+
+[charaFace A 12]
+＠玛修
+看来对她们而言，男性就该是带着项圈，[r]被拖着到处溜达的所有品吧……
+[k]
+
+＠玛修
+对她们来说，恐怕连男性在外自由行动[r]都是『难以理喻』的吧……
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-150]
+＠达·芬奇
+哈哈～。所以看到像弗格斯那样的男人[r]自由自在地昂首阔步，自然会慌忙发动攻击呀。
+[k]
+
+[charaFace D 4]
+＠达·芬奇
+不知是觉得自己发现了从牢笼中逃脱猛兽，[r]还是觉得自己发现了一只高级宠物，
+[k]
+
+＠达·芬奇
+想赶在他人发现前为其套上项圈占为己有呢。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-60]
+＠弗格斯
+应该不是猛兽吧。虽然有些丢人，[r]但我不觉得自己会对她们造成什么危害。
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk B]
+[charaFace E 0]
+[charaFadein E 0.1 -256,-60]
+[charaFace B 0]
+[charaFadein B 0.1 256,-60]
+＠阿斯托尔福
+如果是我们所认识的弗格斯，就算面对这些亚马逊人，[r]也丝毫不会胆怯，倒不如说，
+[k]
+
+＠阿斯托尔福
+总觉得他会说，[r]“每位女性都很美丽，有什么问题吗？”
+[k]
+
+[charaFace E 4]
+＠弗格斯
+是……是这样啊……看到这种状况依然不为所动……[r]真是刚毅呢。肉体自不用说，精神也是。
+[k]
+
+[charaFace E 5]
+＠弗格斯
+我也想变成那样。[r]该怎么做才能变成那样呢。
+[k]
+
+＠弗格斯
+还是只能靠天天锻炼吗。[r]把凯尔特式俯卧撑数量加倍吧……嘀嘀咕咕……
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-60]
+＠迪昂
+但不管怎么说，在当前这个状况下，[r]我们明显是格格不入的存在。
+[k]
+
+＠迪昂
+就算再怎么习惯于对付亚马逊人，[r]她们的数量依然可能对我们造成威胁。
+[k]
+
+＠迪昂
+在被发现之前，还是先撤退……
+[k]
+
+[charaTalk depthOff]
+[imageSet D back10000 1]
+[charaDepth D 1]
+[bgmStop BGM_EVENT_5 1.0]
+＠F：亚马逊人C
+[line 2]什么！？[r]喂，是男人！　这里有没戴项圈的男人啊！
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+[messageOff]
+[charaScale D 1.01]
+[charaCutin D upToDown 0.5 0.25]
+[wt 0.25]
+[fadeout black 0.1]
+[wait fade]
+[cameraMove 0.1 0,0 1.0]
+[imageSet D back10000 1]
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wipeOff]
+[wt 0.1]
+[fadein black 0.4]
+[wait fade]
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠阿斯托尔福
+哇～，被发现了！！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk H]
+[charaFace F 0]
+[charaFadein F 0.1 0]
+[charaFace H 0]
+[charaFadein H 0.1 2]
+＠H：亚马逊人Ｄ
+[#是刚降落下来的]野生男人！？
+[k]
+
+＠F：亚马逊人C
+不，这家伙……从旁边人类的打扮来看……[r][#或许是那些家伙的斥候]！　小心点！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout H 0.1]
+
+[charaPut G 1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+……那些家伙的……斥候……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠迪昂
+呜……人越来越多了。
+[k]
+
+＠迪昂
+如果说潜入敌国城市的间谍出现失败，[r]那其中最糟的状况就是指现在这种吧。
+[k]
+
+＠迪昂
+假如我的部下或同事向我请教[r]遇到这种情况时该如何应对，
+[k]
+
+＠迪昂
+那我一定会回答说，要高喊着[#法兰西万岁:Vive La France][r]并喝下自尽用的毒药吧。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0]
+[charaFace C 5]
+[charaFadein C 0.1 2]
+＠阿斯托尔福
+不过嘛，现在我们并不是间谍。[r]而是享誉盛名的[%1]的从者哦。
+[k]
+
+＠阿斯托尔福
+不过是一个城镇的[#女战士:亚马逊人]罢了，[r]只需哼着小曲儿从正面迎击即可！
+[k]
+
+[charaFace C 5]
+＠迪昂
+当然了。这不用你说。
+[k]
+
+[charaFace B 2]
+＠阿斯托尔福
+麻烦弗格斯继续主要负责护卫御主！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠弗格斯
+我……好的。对不起……
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠阿斯托尔福
+好啦～，加油上吧～！　因为一旦输掉，[r]大家都有可能被戴上项圈哦！
+[k]
+
+[charaFace B 1]
+＠阿斯托尔福
+不过嘛，我或许完美地适合那种时尚风格哦！
+[k]
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

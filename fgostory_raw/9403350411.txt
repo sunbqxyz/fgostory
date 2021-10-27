@@ -1,0 +1,375 @@
+
+＄94-03-35-04-1-1
+
+[soundStopAll]
+
+[charaSet A 5005001 1 安徒生]
+[charaSet B 98002000 1 芙芙]
+[charaSet C 5042000 1 紫式部]
+[charaSet D 99502600 1 玛修]
+[charaSet E 6031000 1 刑部姬]
+[sceneSet H 10000 1]
+[charaSet I 5009000 1 特效用]
+[charaSet J 98115000 1 特效用]
+
+[charaScale H 1.01]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 70400]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[se bac30]
+[fowardEffect bit_talk_14]
+[wt 0.6]
+[seStop bac30 0.1]
+[se bac18]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF00]
+[wt 0.8]
+
+
+[se ad7]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 30,0]
+[charaMove C 1 0.2]
+[wt 0.6]
+
+[charaDepth I 10]
+[charaPut I 0,0]
+[charaEffect I bit_talk_pentagram_03]
+[wt 0.1]
+[se ad598]
+[wt 3.5]
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_pentagram_03]
+
+
+[effect bit_talk_shot_02]
+[se bac19]
+[se bac20]
+[wt 0.12]
+[se bac19]
+[se bac20]
+[wt 0.12]
+[se bac19]
+[se bac20]
+[wt 0.12]
+[se bac19]
+[se bac20]
+[wt 0.12]
+[se bac19]
+[se bac20]
+[wt 0.4]
+
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[se bac16]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_3 1.0]
+[se ad22]
+[wt 2.5]
+
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠安徒生
+结束了啊。在漫长的创作活动中，[r]偶尔也会鬼迷心窍个一两次。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠芙芙
+芙。芙呜。[r]（特别意译：真的只有一两次吗？）
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[se ad39]
+[charaPut I 1]
+[charaEffect I bit_talk_warp]
+[wt 3.5]
+[seStop ad39 0.4]
+[wt 0.4]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+＠紫式部
+成功回收了咒本！[r]我不会去看书名的，嗯！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[se adm20]
+[charaPut I 1]
+[charaEffectStop I bit_talk_warp]
+[fowardEffect bit_talk_22]
+[wt 1.5]
+[seStop adm20 1.0]
+[wt 2.5]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠玛修
+确认咒本回收。[r]尽管魔力量非常多，但和被夺走的魔力量比起来……
+[k]
+
+[charaFace D 4]
+＠玛修
+还不到四分之一呢……[r]换言之，这本书也不是『最初的咒本』……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[wt 0.5]
+
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠刑部姬
+呜……[r]呜呜……
+[k]
+
+[messageOff]
+[charaShake E 0.03 4 4 0.4]
+[wt 1.0]
+
+[charaFace E 8]
+＠刑部姬
+呜哇～输掉啦～。[r]丢人地大闹了一场，而且还输得一败涂地……
+[k]
+
+＠刑部姬
+光是角色重合倒也算了，而且还输了……[r]再说[#公主:我]尽管是作家，却只是同人作家……
+[k]
+
+＠刑部姬
+并没有作为一名作家留名于人类史上，[r]也没有写出什么大作……呜呜……
+[k]
+
+＠刑部姬
+这样一来，[#公主:我]不就完全是紫式部前辈的降级版……
+[k]
+
+＠刑部姬
+嘤嘤。
+[k]
+
+？1：没关系。
+
+？！
+
+[charaFace E 9]
+＠刑部姬
+嘤嘤。[r]御亲……？
+[k]
+
+？1：刑部姬就是刑部姬啦。
+？2：角色真的没有重合。
+
+？！
+
+
+[se ade250]
+[bgm BGM_EVENT_2 0.4 0.5]
+[charaTalk H]
+[charaFadeTime H 0.1 0.4]
+＠J：解说
+这是[%1]的真心话。[r]没有丝毫虚伪。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_2 0.4 1.0]
+[charaTalk E]
+[charaFace E 3]
+＠刑部姬
+！[messageShake 0.03 3 3 0.3]
+[k]
+
+＠刑部姬
+[#公主:我]记得那应该是紫式部前辈的半自动解说技能……[r]据说不会撒谎，只会表述真实……？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOff]
+[charaDepth C 4]
+[charaDepth E 6]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace E 3]
+[charaFadein C 0.1 230,0]
+[charaFadein E 0.1 0]
+＠紫式部
+是叫泰山解说祭。[r]刑部姬大人。没关系。我们俩的角色完全没有重合。
+[k]
+
+＠紫式部
+思慕之情就该倾注于纸上撰写下来[line 3]
+[k]
+
+[charaFace C 1]
+＠紫式部
+我认为这不是重合不重合的问题。[r]没错，我们一定是跨越时间的同志。
+[k]
+
+
+[charaTalk E]
+[charaFace E 8]
+＠刑部姬
+呜[messageShake 0.03 3 3 0.8]哇啊，前辈！　御亲！
+[k]
+
+[messageOff]
+[charaMove E -35,0 0.3]
+[wt 0.2]
+[se ad7]
+[charaShake C 0.03 2 2 0.2]
+[wt 0.8]
+
+＠刑部姬
+刚才太对不起你们了！[r]但还好书名没有让御亲知道～！
+[k]
+
+[charaFace E 9]
+＠刑部姬
+如果被看到，[#公主:我]那玻璃少女心[r]一定会被砸得粉碎啦……嘤嘤。
+[k]
+
+
+[charaTalk C]
+[charaFace C 1]
+＠紫式部
+好乖好乖。[r]而且这本来就是我的错，不是你的错。
+[k]
+
+
+[charaTalk E]
+[charaFace E 9]
+＠刑部姬
+呜呜，前辈……
+[k]
+
+
+[charaTalk C]
+[charaFace C 1]
+[charaMoveReturn C 220,0 0.5]
+＠紫式部
+好乖好乖。[wt 0.5][charaMoveReturn C 220,0 0.5]
+[k]
+
+？1：太好了，太好了。
+？2：你们的关系真的很融洽呢。
+
+？！
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠安徒生
+喂。别酝酿出那种大团圆的氛围来，[r]问题还一点都没解决呢。目标至今没发现。
+[k]
+
+[charaFace A 5]
+＠安徒生
+赶快去下一个地方。[r]必须逐一检查来图书馆还书的那些家伙的书！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠玛修
+安徒生先生，[r]您愿意陪我们一起来啊！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠安徒生
+毕竟没有其他可以拜托的人了嘛。[r]用日本的说法来说，就是既然要送货还不如捎你一程。
+[k]
+
+[charaFace A 2]
+＠安徒生
+[line 3]那边的，打算黏糊到什么时候！[r]快走啦！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFace E 0]
+[charaFadein C 0.1 220,0]
+[charaFadein E 0.1 -35,0]
+＠紫式部
+是！
+[k]
+
+[charaTalk E]
+[charaFace E 2]
+＠刑部姬
+啊，呃，什么情况！[r]尽管不是很明白，但[#公主:我]也一起去！
+[k]
+
+
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

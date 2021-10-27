@@ -1,0 +1,339 @@
+
+
+
+＄94-04-78-25-6-1
+
+[soundStopAll]
+
+[charaSet A 98001000 1 玛修]
+[charaSet B 25005000 1 旅行者]
+[charaSet C 3043000 1 绘里濑]
+[charaSet D 1098192500 1 绘里濑]
+[charaSet E 1098193000 1 黑玛丽]
+[charaSet F 2021000 1 巴御前]
+[charaSet G 98104300 1 鬼魂敌人]
+
+[imageSet H cut169_spaceprobe 1]
+
+[scene 96100]
+
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaDepth E 2]
+
+[bgm BGM_EVENT_24 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.5]
+
+[se ad73]
+[charaMoveScale D 1.1 0.2]
+[charaMove D 0,15 0.2]
+[wt 0.15]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaScale D 1.0]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[charaFadein G 0.1 150,0]
+[wt 0.3]
+
+[fowardEffect bit_talk_kengekiall02]
+[wt 0.1]
+[se ad32]
+[charaShake G 0.05 4 4 0.5]
+[charaShake E 0.05 4 4 0.5]
+[charaFace E 2]
+[wt 0.4]
+[se ad32]
+[wt 0.1]
+[se ad32]
+[wt 0.5]
+[effect bit_talk_x_slash01]
+[se ad471]
+[seStop ad471 1.0]
+[wt 0.2]
+[charaShake G 0.05 4 4 0.3]
+[charaShake E 0.05 4 4 0.3]
+[wt 0.6]
+
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[charaFadeTime G 0.5 0.6]
+[wt 0.2]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.2]
+
+＠黑玛丽
+啊[messageShake 0.05 4 4 0.5]啊啊啊啊……啊啊啊啊啊啊啊啊啊…………
+[k]
+
+＠黑玛丽
+丑陋、丑陋、丑陋、丑陋……[r]这样的我……并不是我[line 4]！！
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠D：绘里濑
+呼……呼……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+给黑玛丽·安托瓦内特造成了致命一击！
+[k]
+
+
+[bgmStop BGM_EVENT_24 1.5]
+
+＠玛修
+拟似灵体正在急速崩溃！[r]趁现在彻底了结敌人吧！
+[k]
+
+[messageOff]
+[se adm20]
+[seVolume adm20 0 0.7]
+[seStop adm20 1.0]
+[wt 1.0]
+
+[charaFace A 6]
+＠玛修
+……御主？　御主？[r]怎么了……？　您的脸色……
+[k]
+
+？1：绘里濑的灵基信息在战斗过程中传过来了。
+？2：我知道了……绘里濑究竟是谁……
+？！
+
+[charaFace A 1]
+＠玛修
+…………！　那也就是说……
+[k]
+
+＠玛修
+发挥了实力的绘里濑小姐和御主之间[r]建立了更为紧密的魔力路径吧。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaDepth E 2]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+[charaFadein G 0.1 150,0]
+[charaFadeTime G 0.1 0.6]
+[charaEffect E bit_talk_06b2]
+[wt 1.0]
+
+＠黑玛丽
+呵呵……[r]反正那也是需要扮演的角色吧……？
+[k]
+
+＠黑玛丽
+束缚你的枷锁。圣杯赋予的命运。[r]包围你们的巨大游戏的规则。
+[k]
+
+
+＠黑玛丽
+不要忘记，绘里濑……[r]你是我……我是你……
+[k]
+
+[messageOff]
+[charaEffectStop E bit_talk_06b2]
+[wt 0.2]
+[charaEffect E bit_talk_atomization]
+[charaEffect G bit_talk_atomization]
+[charaFadeout E 0.7]
+[charaFadeout G 0.7]
+[se ad42]
+[wt 4.0]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠D：绘里濑
+……我明白。不过[line 3]
+[k]
+
+[messageOff]
+
+[charaDepth C 1]
+[charaDepth D 2]
+
+[charaTalk off]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[charaFadeout D 0.4]
+[wt 0.6]
+
+[bgm BGM_EVENT_6 0.1]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+＠绘里濑
+我会自己决定生存方式。
+[k]
+
+[charaFace C 1]
+＠绘里濑
+……对吧？　[%1]？[r]玛修小姐？
+[k]
+
+？1：[line 3]嗯。
+？2：哪怕那就是你被赋予的使命。
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠玛修
+……没错，绘里濑小姐。
+[k]
+
+＠玛修
+我相信我们都能选择自己的未来。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠绘里濑
+啊啊，原来如此……没错。[r]……这生存方式并不是我自己找到的。
+[k]
+
+＠绘里濑
+旅行者。是你引导我找到的。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠旅行者
+嗯。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+？1：是这个吧？
+
+？！
+
+[charaFadein H 0.4 0,-200]
+[wt 2.2]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth C 2]
+[charaDepth H 3]
+
+[charaTalk off]
+[charaFace C 1]
+[charaFadein C 0.4 300,0]
+
+[charaFace B 1]
+[charaFadein B 0.4 0]
+
+[charaScale H 0.78]
+[charaFadein H 0.4 -18,-80]
+[wt 1.2]
+
+[charaTalk on]
+
+＠绘里濑
+………………
+[k]
+
+＠旅行者
+………………
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[charaFadeout H 0.2]
+[wt 1.5]
+
+[charaFace C 8]
+[charaFace B 7]
+[wt 1.5]
+
+
+
+[se ad13]
+[wt 0.8]
+
+[charaTalk on]
+＠巴御前
+『这里是黄泉神应对本部。[r]　召唤之门确认消灭。』
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.4]
+[charaFadeout C 0.4]
+[wt 0.8]
+
+
+
+＠巴御前
+『在此宣布状况结束，本部解散。[r]　并对同志们勇敢的奋斗送上由衷的感谢。』
+[k]
+
+＠巴御前
+『重复一遍。在此宣布状况结束，本部解散。[r]　并对同志们勇敢的奋斗送上由衷的感谢。』
+[k]
+
+[messageOff]
+
+[wt 1.0]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_6 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

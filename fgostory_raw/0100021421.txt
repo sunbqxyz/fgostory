@@ -1,0 +1,100 @@
+＄01-00-02-14-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 20900 0]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98003003 1 罗曼医生]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 1005001 1 尼禄]
+[charaSet E 4011001 1 布狄卡]
+[charaSet F 3010001 1 罗穆路斯]
+[charaSet G 7003001 1 吕布]
+[charaSet H 6011001 1 荆轲]
+[charaFace F 1]
+[charaFadein F 0 1]
+[fadein black 1]
+[wait fade]
+＠罗穆路斯
+……何等……耀眼的爱。尼禄。
+[k]
+
+＠罗穆路斯
+永恒的深红与黄金帝国。[r]这一切就交给你与你的后继者了。
+[k]
+
+[charaFace F 0]
+＠罗穆路斯
+切勿忘记。[r]罗马是永恒的。
+[k]
+
+＠罗穆路斯
+因此，世界也必须永存。[r]务必铭记在心……
+[k]
+
+[messageOff]
+[charaSpecialEffect F flashErasure 1 3]
+[wt 1]
+[se ba5]
+[wait charaSpecialEffect F]
+[wt 0.5]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+＠玛修
+敌对从者，枪兵·罗穆路斯已击破。[r]我方获得了胜利。
+[k]
+
+[charaFace D 4]
+＠尼禄
+赢了么。是吗……[r]这样一来……
+[k]
+
+[charaFace D 1]
+＠尼禄
+……唔嗯。[r]罗马一定会恢复其原本应有的面貌吧。
+[k]
+
+[se ad13]
+[wait se ad13]
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[communicationChara 98003003 1 5 0 3]
+＠罗曼医生
+大致来说是这样，[r]但还未发现宫廷魔术师。我们得去找圣杯才行。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+＠尼禄
+唔？　联合罗马帝国至此已经灭亡。[r]对吧？　不见身姿的魔术师阁下。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠罗曼医生
+从全局上来看确实没错。[r]但不将圣杯拿到手，我们的目的就无法[line 2]
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaFace H 5]
+[charaFadein H 0.1 0]
+＠荆轲
+等等。有人。[r]似乎不是从者。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_2 0.4]
+[wait fade]
+[soundStopAll]
+[end]

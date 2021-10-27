@@ -1,0 +1,1052 @@
+
+＄03-00-05-06-4-0
+
+[soundStopAll]
+
+
+[charaSet A 1098183200 1 赫斯提亚岛居民]
+[charaSet B 2038000 1 俄里翁]
+[charaSet C 6038002 1 夏洛特·科黛]
+[charaSet D 8001410 1 玛修]
+[charaSet E 1098124500 1 达·芬奇]
+[charaSet F 9005001 1 福尔摩斯]
+[charaSet G 1098123200 1 戈尔德鲁夫]
+[charaSet H 4034000 1 巴沙洛缪]
+[charaSet I 4034000 1 巴沙洛缪（剪影）]
+[charaFilter I silhouette 00000080]
+[charaSet J 5009000 1 特效用dummy]
+
+
+[scene 85100]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_25 0.1]
+
+＠赫斯提亚岛居民
+唔？[r]哦，俄里翁。
+[k]
+
+[charaFace A 1]
+
+＠赫斯提亚岛居民
+怎么了？[r]狩猎回来得也太早了吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠俄里翁
+我捡到了一点东西。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠赫斯提亚岛居民
+唔？[r]你也捡人回来了吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠俄里翁
+你也是？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠赫斯提亚岛居民
+嗯，有一群人来到这座村庄求救。
+[k]
+
+＠赫斯提亚岛居民
+[#我很久没见过]伤得那么严重的患者了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠俄里翁
+嘿，那还真巧。[r]……那些家伙现在在哪儿？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠赫斯提亚岛居民
+他们好像是“运输者”的熟人。[r]暂时待在酒馆里。
+[k]
+
+＠赫斯提亚岛居民
+本想等安顿下来后，让他们去神殿的，[r]既然俄里翁回来了，倒是刚好。
+[k]
+
+＠赫斯提亚岛居民
+就由你来护卫他们吧。
+[k]
+
+＠赫斯提亚岛居民
+毕竟不是所有人都像你一样拥有神授之物的。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠俄里翁
+[%1]。
+[k]
+
+？1：该不会是……！
+？！
+
+[charaFace B 1]
+＠俄里翁
+是啊，这种巧合可不多见。[r]酒馆，去酒馆吧！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+＠夏洛特·科黛
+等……等等我啦！
+[k]
+
+[messageOff]
+[se ad55]
+[se ad184]
+[wt 0.1]
+
+[seStop ad55 1.0]
+[seStop ad184 1.0]
+[charaMove C -100,0 0.4]
+[charaFadeout C 0.4]
+
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_25 1.0]
+[wait wipe]
+
+[scene 85200]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+[se ad533]
+[wt 1.4]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.4 1]
+[wt 0.4]
+＠玛修
+……[r]……
+[k]
+
+[messageOff]
+[wt 1.2]
+
+[charaFace D 6]
+＠玛修
+[f large]！！
+[k]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFace D 1]
+＠玛修
+前辈……前辈！！
+[k]
+
+？1：玛修！！
+？！
+
+[messageOff]
+[charaMoveScale D 1.2 0.2]
+[charaMove D 0,15 0.2]
+[wt 0.1]
+[se ad215]
+[wt 0.1]
+[charaShake D 0.02 2 2 0.3]
+[wt 0.3]
+[seStop ad215 0.2]
+[wt 0.5]
+
+＠玛修
+您平安无事，太好了……！
+[k]
+
+＠玛修
+嗯，对。
+[k]
+
+[charaFace D 12]
+＠玛修
+尽管在Shadow Border上[r]确认到御主的生命体征平安无事……
+[k]
+
+＠玛修
+但无法与您取得联络，[r]就算没事，也可能被敌人抓住……
+[k]
+
+[charaFace D 13]
+＠玛修
+真是太好了……！
+[k]
+
+？1：还好玛修也平安无事！
+
+＠玛修
+嗯。
+[k]
+
+＠玛修
+幸好换上了[#灵基外骨骼:奥特瑙斯]，[r]才将伤害控制在了最低限度。
+[k]
+
+？2：大家呢？
+
+＠玛修
+嗯，大家都平安无事。[wt 0.5][charaFace D 4][r]只不过……
+[k]
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaScale D 1.0]
+
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+＠达·芬奇
+噢，噢噢～！[r][%1]，你没事啊！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+＠福尔摩斯
+虽说理论上能确定你平安无事，[r]但大家都坐立不安哦。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠戈尔德鲁夫
+真是的，这就是精神松懈的证明。[r]说明你果然还是个外行人。
+[k]
+
+＠戈尔德鲁夫
+听好了，无论处于什么样的状态，[r]取得联络是士兵的首要职责。
+[k]
+
+[charaFace G 18]
+＠戈尔德鲁夫
+平安无事会让我们松一口气。[r]身受重伤会让我们大吃一惊。
+[k]
+
+＠戈尔德鲁夫
+无论如何，我们至少能采取对策，[r]而你却偏偏音讯全无……
+[k]
+
+[charaFace G 15]
+＠戈尔德鲁夫
+[&小子:小丫头]，这话我一定要说。[r]你应该多一些身为最后御主的自觉才行。
+[k]
+
+？1：我很惭愧……
+
+＠戈尔德鲁夫
+哼。反正多半是通讯机坏掉了吧。
+[k]
+
+＠戈尔德鲁夫
+既然你没事，那我也就不追究了。[r]毕竟异闻带的攻略缺不了御主。
+[k]
+
+
+？2：非常抱歉……
+
+[charaFace G 16]
+＠戈尔德鲁夫
+要好好记住报联商三原则！[wt 0.6][charaFace G 7][r]什么，通讯机坏掉了？
+[k]
+
+[charaFace G 10]
+＠戈尔德鲁夫
+……唔，那就没办法了……[r]先把我的借你吧，注意别再弄坏了。
+[k]
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠福尔摩斯
+总而言之，[r]这下总算确认所有人都平安无事了[line 3]
+[k]
+
+＠福尔摩斯
+但情报太错综复杂，[r]而且情况也十分紧迫。
+[k]
+
+[charaFace F 4]
+＠福尔摩斯
+究竟该从哪里开始着手好呢？
+[k]
+
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+＠戈尔德鲁夫
+再这样下去我们什么事都做不成。[r]首先，最重要的就是船长。
+[k]
+
+？1：尼莫……？
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠玛修
+对。
+[k]
+
+＠玛修
+我们之所以能得救，[r]都是多亏了尼莫船长强制实行虚数潜航。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 24]
+[charaFadein E 0.1 1]
+＠达·芬奇
+原本我们处于绝对不可以执行，[r]否则肯定会发生重大事故的状态。
+[k]
+
+＠达·芬奇
+可唯独那个时候，却获得了成功。
+[k]
+
+？1：究竟发生了什么？
+？！
+
+[charaFace E 25]
+＠达·芬奇
+参照数据来看，
+[k]
+
+＠达·芬奇
+Shadow Border被从天而降的“那个”给撕碎了。
+[k]
+
+＠达·芬奇
+虚数潜航也在不彻底的状态下结束，[r]但我们的存在出现了些微动摇。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠福尔摩斯
+你知道阿斯托尔福这位Rider吗？
+[k]
+
+？1：当然，我很清楚。
+
+＠福尔摩斯
+那么，你还记得他的宝具[r]『[#非世间所存之幻马:Hippogriff]』吗？
+[k]
+
+＠福尔摩斯
+由于其存在模糊不清，[r]会在现实与虚构间来往。
+[k]
+
+＠福尔摩斯
+因此能暂时回避植根于现实的攻击。
+[k]
+
+？2：不是很清楚……
+
+＠福尔摩斯
+在他的某个传说中，曾出现过一头[r]布拉达曼特也曾骑过的名为骏鹰的幻兽。
+[k]
+
+＠福尔摩斯
+据说由于其存在模糊不清，[r]因此能够自由出入世界内侧。
+[k]
+
+？！
+
+＠福尔摩斯
+我们本应连同鹦鹉螺号一起，[r]被那道从天而降的光轰得七零八落。
+[k]
+
+＠福尔摩斯
+又或是因强行虚数潜航，[r]导致无法进行存在证明。
+[k]
+
+＠福尔摩斯
+不过，当时船长的选择起到了作用。
+[k]
+
+＠福尔摩斯
+在那种不彻底的状态下受到伤害，[r]必然会证明我们的存在……
+[k]
+
+＠福尔摩斯
+同时通过潜入虚数空间，[r]也抑制了天降之光造成的伤害。
+[k]
+
+[charaFace F 4]
+＠福尔摩斯
+……不过代价十分巨大。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+＠玛修
+尼莫船长与鹦鹉螺号是一体化的。[r]舰艇半毁，尼莫船长也陷入了昏迷状态。
+[k]
+
+？1：尼莫他……还好吗？
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠福尔摩斯
+不得不说当前很难复苏。
+[k]
+
+＠福尔摩斯
+若想横渡这片亚特兰蒂斯海，[r]鹦鹉螺号是必不可少的。
+[k]
+
+＠福尔摩斯
+至少为了闯过去，[r]这是必须的。
+[k]
+
+？2：尼莫他现在……？
+
+＠玛修
+尼莫船长现在睡在二楼。[r]还没有醒过来。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+？！
+
+[charaFace F 0]
+＠福尔摩斯
+原本应该让他回[#新:Novum]·迦勒底灵体化，[r]花时间慢慢修复才对……
+[k]
+
+＠福尔摩斯
+既然鹦鹉螺号无法行动，[r]作战大部分都土崩瓦解了。
+[k]
+
+＠福尔摩斯
+更何况我们根本无法逃离这里。
+[k]
+
+？1：希翁呢……？
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 24]
+[charaFadein E 0.1 1]
+＠达·芬奇
+根据确认，通讯几乎完全中断了。
+[k]
+
+＠达·芬奇
+虽说勉强还能发送些许数据，[r]但最多也只能报个平安。
+[k]
+
+[charaFace E 14]
+＠达·芬奇
+而且发送速度极慢……[r]感觉就像地球和火星间相隔的距离。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+＠戈尔德鲁夫
+就在我们彻底走投无路的时候……
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_70 0.6]
+[charaFadeout G 0.1]
+[wt 0.4]
+
+[charaDepth H 3]
+[charaDepth I 4]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.4 1]
+[wt 0.8]
+＠I：？？？
+这时，我出面搭话了。
+[k]
+
+＠I：？？？
+『您有麻烦吗？  遮眼的小姑娘』！
+[k]
+
+？1：您哪位！？
+
+＠I：？？？
+[#Yes，just fit:对，非常正确]！[r]我的名字是巴沙洛缪·罗伯茨！
+[k]
+
+
+[messageOff]
+[charaTalk off]
+
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.4]
+
+[charaFadeout I 0.7]
+[wt 1.5]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaTalk on]
+＠巴沙洛缪
+职业是海盗，年龄全盛期，[r]以及[line 3]
+[k]
+
+[charaFace H 1]
+＠巴沙洛缪
+[f large]目前单身！！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+？2：这……这声音和台词是！
+
+＠I：？？？
+呵呵呵，看来你认识我呢。
+[k]
+
+＠I：？？？
+难道你们的迦勒底也有我吗？[r]但我还是要自我介绍（很重要）！
+[k]
+
+＠I：？？？
+我的名字是巴沙洛缪·罗伯[line 4]茨！
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.4]
+
+[charaFadeout I 0.7]
+[wt 1.5]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaTalk on]
+[charaFace H 1]
+＠巴沙洛缪
+[f large]目前单身！！
+[k]
+
+[charaFace H 3]
+＠巴沙洛缪
+（偷瞄。）
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠玛修
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+＠巴沙洛缪
+[f large]目前单身！！！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 17]
+[charaFadein E 0.1 1]
+＠达·芬奇
+来，来。[r]玛修你最好到这边来哦。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+＠玛修
+哦……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠福尔摩斯
+我们遇到了巴沙洛缪氏，[r]总算是到达了这座村庄……
+[k]
+
+＠福尔摩斯
+御主，你是怎么来的呢？
+[k]
+
+？1：是俄里翁……
+？！
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[wt 1.0]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 1.4]
+
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 1.0]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠福尔摩斯
+[FFFFFF]？[-]
+[k]
+
+＠福尔摩斯
+一个人……也没有呢。[r]但能闻到些微野兽的味道。
+[k]
+
+＠福尔摩斯
+难道是从者将你送来这里的吗？
+[k]
+
+[charaFace F 6]
+＠福尔摩斯
+唔，俄里翁。[r]……人类的？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠玛修
+人类的俄里翁先生吗！？[r]不是小熊！
+[k]
+
+＠玛修
+如果真是……[r]我非常想见识一下……！
+[k]
+
+[charaFace D 0]
+＠玛修
+然后……请问，[r]这位可爱的女性是……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠夏洛特·科黛
+[FFFFFF]？[-]
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaFace C 10]
+[charaMoveReturn C 20,0 0.8]
+[wt 0.8]
+
+[charaMoveReturn C -20,0 0.8]
+[wt 1.4]
+
+
+[charaFace C 9]
+＠夏洛特·科黛
+咦，啊，该不会是指我吧？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFace C 9]
+[charaFadein D 0.1 2]
+[charaFadein C 0.1 0]
+＠玛修
+是的！
+[k]
+
+[charaFace C 0]
+
+＠夏洛特·科黛
+我的名字是夏洛特·科黛。[r]是职阶Assassin的从者！
+[k]
+
+[charaFace C 9]
+＠夏洛特·科黛
+那个，那个……
+[k]
+
+[charaFace D 0]
+
+＠玛修
+[FFFFFF]？[-]
+[k]
+
+[charaFace C 9]
+＠夏洛特·科黛
+玛修小姐……[r]是[%1][&先生:小姐]的从者吗？
+[k]
+
+[charaFace D 1]
+＠玛修
+对。[r]我叫玛修·基列莱特。
+[k]
+
+[charaFace C 0]
+
+＠夏洛特·科黛
+同为从者，[r]请您多多指教！
+[k]
+
+[charaFace C 7]
+＠夏洛特·科黛
+啊，请叫我科黛。
+[k]
+
+[charaFace D 13]
+
+＠玛修
+彼此彼此，请您多指教。
+[k]
+
+＠玛修
+是科黛小姐一路护送御主来这里的吗？
+[k]
+
+[charaFace C 4]
+
+＠夏洛特·科黛
+不是不是！[r]倒是我被连带搭救了……
+[k]
+
+[charaFace C 2]
+＠夏洛特·科黛
+我和[%1][&先生:小姐][r]都被俄里翁先生搭救，才回到了这里！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠巴沙洛缪
+啊……难怪我刚才一直没见到你呢。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠夏洛特·科黛
+嗯。“运输者”先生。[r]对不起，让你为我担心了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠巴沙洛缪
+没关系。[r]只要你将刘海……留长就行了哦。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+＠夏洛特·科黛
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠巴沙洛缪
+呜。[r]没理解吗……
+[k]
+
+[charaFace H 0]
+＠巴沙洛缪
+比起这个，俄里翁走了吗？[r]糟了……我正想去追他。
+[k]
+
+[charaFace H 4]
+＠巴沙洛缪
+不对，我不想追什么男人。[r]还是不追算了。可是[line 3]
+[k]
+
+？1：到底追不追啊？
+？！
+
+＠巴沙洛缪
+……真是……令人苦恼……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+＠戈尔德鲁夫
+无论如何，[r]我们都没空去追已经离开的家伙了。
+[k]
+
+[charaFace G 6]
+＠戈尔德鲁夫
+重要的是情报啦情报！[r]这[#异闻带:Lostbelt]究竟是怎么回事啊！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠达·芬奇
+那么，巴沙洛缪。
+[k]
+
+＠达·芬奇
+虽然我和福尔摩斯刚才已经听你说过了，[r]但能麻烦你重新介绍一下这个[#异闻带:Lostbelt]吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠巴沙洛缪
+当然可以，[r]你不考虑将刘海放下来吗？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+＠达·芬奇
+为什么？[r]这状态的我已经很完美了，不会放下来。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠巴沙洛缪
+嘁。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_94 0.8]
+[wt 1.0]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaFace H 0]
+＠巴沙洛缪
+……好了，先不管这个了。
+[k]
+
+＠巴沙洛缪
+这片亚特兰蒂斯海之所以[r]成为[#异闻带:Lostbelt]的理由其实很明显。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ad786]
+[wt 0.2]
+[charaMoveReturn H 0,-3 0.3]
+[wt 0.4]
+
+[charaMoveReturn H 0,-3 0.3]
+
+[wt 1.0]
+
+＠巴沙洛缪
+你们见过村庄的景象了吧？
+[k]
+
+？1：巨大金属的……
+？！
+
+＠巴沙洛缪
+没错。
+[k]
+
+＠巴沙洛缪
+这从外面就能看到的巨大建筑物，[r]当然不属于人类的技术。
+[k]
+
+＠巴沙洛缪
+而是属于理应被称作神的存在。
+[k]
+
+＠巴沙洛缪
+而他们的权势仍然维持到今天。
+[k]
+
+＠巴沙洛缪
+也就是[#奥林波斯的诸神]。[r]他们仍存活的[#异闻带:Lostbelt]，就是[#这亚特兰蒂斯]。
+[k]
+
+
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

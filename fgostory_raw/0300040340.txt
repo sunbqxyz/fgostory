@@ -1,0 +1,379 @@
+
+
+＄03-00-04-03-4-0
+
+[soundStopAll]
+
+[charaSet A 1019001 1 罗摩]
+[charaSet B 1098167600 1 恶魔迦利]
+[charaSet C 3031001 1 枪兵193]
+[charaSet D 8001400 1 玛修]
+[charaSet E 3004001 1 迦尔纳]
+[charaSet F 98115300 1 福尔摩斯]
+[charaSet G 1098167700 1 圣兽]
+[charaSet J 5009000 1 特效用dummy]
+
+[scene 75004]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaMoveScale H 1.1 0.2]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[effect bit_talk_v_slash01]
+[wt 0.1]
+[cueSe Battle ad85]
+[wt 0.1]
+[flashin once 0.2 0.2 FFFFFF80 FFFFFF80]
+[wt 0.2]
+[charaFadeout A 0]
+[charaScale A 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.2]
+[se bac167]
+[fowardEffect bit_talk_14]
+[flashin once 0.2 0.2 FFFFFF80 FFFFFF00]
+
+[charaShake B 0.05 3 2 0.8]
+[wt 1.0]
+[charaMove B 0,-50 1.4]
+[wt 0.2]
+[charaFadeout B 0.3]
+[se ad716]
+[wt 0.6]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠枪兵193
+数量　超过预计。[r]有些　麻烦。
+[k]
+
+[charaFace C 2]
+
+＠枪兵193
+……呜！？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[se ad728]
+[wt 2.0]
+
+[se ad649]
+[seVolume ad649 0 0.3]
+[wt 0.6]
+[seStop ad649 0.6]
+[wt 0.5]
+
+＠人类的声音
+啊啊，停下，快停下，别过来……
+[k]
+
+＠人类的声音
+拜，拜托了，救救救救命啊神明大人救命啊噗
+[k]
+
+[se ad161]
+[wt 0.3]
+[se ad342]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+
+＠玛修
+啊啊[line 3]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[wt 0.2]
+
+[se bac7]
+[charaPut J 1]
+[charaScale J 1.1]
+[charaEffect J bit_bolg_01]
+[wt 0.5]
+[flashin once 0.1 0.1 FFFFFFD0 FFFFFF00]
+[wt 0.1]
+[fowardEffect bit_talk_14]
+[se bac361]
+[se bac358]
+[charaShake B 0.05 3 2 0.8]
+[wt 0.5]
+[charaEffectStop J bit_bolg_01]
+[charaMove B 0,-50 1.4]
+[wt 0.2]
+[charaFadeout B 0.3]
+[wt 0.2]
+[se ad716]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠迦尔纳
+……怨恨吧。来晚了一步。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠罗摩
+这里的民众没有武装。
+[k]
+
+＠罗摩
+也就是说……一旦建筑物被破坏，[r]里面的人唯有被拖出来吃掉。实在令人不快。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠迦尔纳
+尽管我们已经优先解决盯上脆弱房屋的敌人了，[r]但以对方这个数量，光凭我们的人手还是不够啊。
+[k]
+
+＠迦尔纳
+虽说可以用宝具将它们扫荡一空[line 3]但这样一来，[r]就难以避免令我们要保护的建筑与人类受牵连。
+
+[k]
+
+？1：这样就本末倒置了！
+？2：只能一只只地解决它们了！
+？！
+
+[charaFace E 0]
+
+＠迦尔纳
+正是。这是与时间的赛跑。[r]得尽快驱逐这些魔物们，哪怕快1秒也好。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1200,1200]
+[charaEffectDestroy I]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[se ad13]
+[wt 0.2]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠福尔摩斯
+哎呀呀，原本是为了不妨碍你们收集情报才会回避，[r]没想到突然发生了这种战斗。
+[k]
+
+＠福尔摩斯
+这下看来得让仪器满负荷运转来收集数据了。[r]容不得片刻休息[line 6]唔？
+[k]
+
+[charaFace F 0]
+
+＠福尔摩斯
+稍等，看来要有新要素加入局势了。
+[k]
+
+＠福尔摩斯
+有别于那些你们正在交战对象的不同反应[r]正在靠近那座城镇。数量同样很多。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠玛修
+！？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad604]
+[wt 1.0]
+[se ad678]
+[seStop ad604 0.3]
+[wt 0.8]
+[se ad322]
+[effect bit_talk_impactlanding 0,-500]
+[shake 0.05 0 2 1.0]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[charaMove G 0,-20 0.3]
+
+[wt 2.0]
+[charaMove G 1 0.5]
+[se ade246]
+[wt 1.0]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠罗摩
+这群白色野兽……是新的敌人吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠玛修
+不，请看那边！[r]它们正向迦利[line 3][#发起攻击]！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[charaMoveScale G 1.1 0.2]
+[effect bit_talk_41]
+[shake 0.05 4 2 0]
+[cueSe Servants_402900 bac727]
+[wt 0.5]
+[fadeout black 0.2]
+[cueSeStop bac727 0.3]
+[wait fade]
+[charaFadeout G 0]
+[effectStop bit_talk_41]
+[shakeStop]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0 1]
+[fadein black 0.1]
+[wait fade]
+
+[flashin once 0.1 0.1 FFFFFFD0 FFFFFF00]
+[wt 0.1]
+[fowardEffect bit_talk_14]
+[se bac361]
+[se bac358]
+[charaShake B 0.05 3 2 0.8]
+[wt 0.5]
+[charaMove B 0,-50 1.4]
+[wt 0.2]
+[charaFadeout B 0.3]
+[wt 0.2]
+[se ad144]
+[wt 1.0]
+
+？1：那算友方吗！？
+？！
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠迦尔纳
+……看来，也不尽然。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.2]
+[se ade246]
+[shake 0.05 2 2 1.0]
+[wt 1.5]
+[seStop ad711 0.3]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠罗摩
+尽管不清楚它们是与迦利一样会袭击人类的野兽，[r]还是吞噬迦利的野兽将吾等误认为迦利了。
+[k]
+
+[charaFace A 5]
+
+＠罗摩
+总之它们向这里袭来了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠玛修
+现在就算思考这些生物的介入[r]会导致什么情况变化也无济于事吧。
+[k]
+
+＠玛修
+我们只需和迦尔纳先生一样，[r]全力去做自己该做的事。
+[k]
+
+[charaFace D 5]
+
+＠玛修
+不能再让镇民们受到伤害了！[r]请您下达指示，御主！
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

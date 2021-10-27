@@ -1,0 +1,114 @@
+
+＄03-00-04-03-2-1
+
+[soundStopAll]
+
+[charaSet A 1098124510 1 达·芬奇]
+[charaSet B 8001410 1 玛修]
+[charaSet C 98115300 1 福尔摩斯]
+[charaSet J 5009000 1 特效用dummy]
+
+[scene 74901]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠达·芬奇
+话说，周围环境给你们什么印象？
+[k]
+
+＠达·芬奇
+虽说这边也能一定程度上掌握一些，[r]但还是想听听实际在外行走的你们的亲身感受呢。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛修
+让我想想。可以看到许多水流平缓的水塘。[r]盛开着很多莲花呢，很漂亮。
+[k]
+
+＠玛修
+另一方面，也有一部分地面十分干燥，[r]所以行走时没有任何不便。
+[k]
+
+？1：也就是说，其实还挺普通的。
+？2：也就是说，其实还挺和平的。
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠达·芬奇
+唔……水这种东西[r]对生物来说当然是不可或缺的。
+[k]
+
+＠达·芬奇
+看起来还有长河，自然环境方面[r]似乎和之前的中国一样安定呢。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[se ad659]
+[wt 0.5]
+[seStop ad659 0.2]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+哎呀，这反应是……？
+[k]
+
+[messageOff]
+[se ad172]
+[wt 1.5]
+[seStop ad172]
+
+[charaFace C 0]
+＠福尔摩斯
+Bingo。只要是适宜生存的世界，自然就会有人类，[r]只要有人，自然就会出现城镇。正如我所料。
+[k]
+
+＠福尔摩斯
+在你们前进方向上捕捉到了疑似城镇的反应。[r]我将坐标发给你们。
+[k]
+
+＠福尔摩斯
+先谨慎地靠近，确认安全[line 3]
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

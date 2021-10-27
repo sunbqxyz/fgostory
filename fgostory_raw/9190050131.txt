@@ -1,0 +1,1659 @@
+
+
+＄91-90-05-01-3-1
+
+[soundStopAll]
+
+[charaSet A 9005001 1 福尔摩斯]
+[charaSet B 99502600 1 玛修]
+[charaSet C 6007001 1 杰基尔]
+[charaSet D 6007003 1 海德]
+[charaSet E 5023001 1 海伦娜]
+[charaSet F 1098192300 1 海伦娜（负伤）]
+[charaSet G 2023002 1 莫里亚蒂]
+[charaSet H 98002000 1 芙芙]
+
+[charaSet J 8001000 1 dummy特效1]
+[charaSet K 8001000 1 dummy特效2]
+[charaSet L 8001000 1 dummy特效3]
+[charaSet M 8001000 1 dummy特效4]
+[charaSet N 8001000 1 dummy特效5]
+[charaSet O 8001000 1 dummy特效6]
+
+[charaSet P 6007003 1 海德（黑剪影）]
+[charaSet Q 6007001 1 杰基尔（黑剪影）]
+[charaSet R 6007003 1 海德（剪影）]
+[charaSet S 6007001 1 杰基尔（剪影）]
+
+[charaSet T 8001000 1 dummy特效10]
+[charaSet U 8001000 1 dummy特效13]
+
+[charaDepth Q 1]
+[charaDepth R 1]
+[charaDepth A 1]
+[charaDepth D 5]
+[charaDepth H 9]
+[charaDepth P 10]
+
+[charaScale J 0.4]
+[charaScale K 0.4]
+[charaScale L 0.4]
+[charaScale M 0.4]
+[charaScale N 0.4]
+[charaScale O 0.4]
+[charaPut J 0,-165]
+[charaPut K 0,-165]
+[charaPut L 0,-165]
+[charaPut M 0,-165]
+[charaPut N 0,-165]
+[charaPut O 0,-165]
+
+[charaPut U 2000,2000]
+[charaEffect U bit_sepia01]
+
+
+[scene 10000]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.4]
+
+
+[se ade41]
+[seVolume ade41 0 0.2]
+[charaEffect O bit_talk_searchlight 480,-480]
+[wt 0.3]
+[se ade41]
+[seVolume ade41 0 0.2]
+[charaEffect M bit_talk_searchlight 850,-50]
+[wt 0.25]
+[se ade41]
+[seVolume ade41 0 0.2]
+[charaEffect J bit_talk_searchlight 480,420]
+[wt 0.2]
+[se ade41]
+[seVolume ade41 0 0.3]
+[charaEffect L bit_talk_searchlight -480,480]
+[wt 0.1]
+[se ade41]
+[seVolume ade41 0 0.3]
+[charaEffect N bit_talk_searchlight -850,10]
+[wt 0.1]
+[se ade41]
+[seVolume ade41 0 0.4]
+[charaEffect K bit_talk_searchlight -480,-420]
+[wt 0.7]
+
+[charaMoveScale J 0.2 0.3]
+[charaMoveScale K 0.2 0.3]
+[charaMoveScale L 0.2 0.3]
+[charaMoveScale M 0.2 0.3]
+[charaMoveScale N 0.2 0.3]
+[charaMoveScale O 0.2 0.3]
+
+[charaMove J -900,-300 0.5]
+[charaMove K -600,-120 0.5]
+[charaMove L -600,-300 0.5]
+[charaMove M -900,-210 0.5]
+[charaMove N -600,-210 0.5]
+[charaMove O -900,-120 0.5]
+
+[charaShake J 0.03 3 4 2.0]
+[charaShake K 0.03 4 2 2.0]
+[charaShake L 0.03 3 4 2.0]
+[charaShake M 0.03 3 3 2.0]
+[charaShake N 0.03 4 2 2.0]
+[charaShake O 0.03 4 4 2.0]
+[wt 0.5]
+
+[cueSe Battle bac449]
+[wt 0.4]
+[cueSeStop bac449 0.4]
+[cueSe Battle bac450]
+[wt 0.4]
+[charaRoll T 205]
+[charaPut T 50,-550]
+
+[charaEffect T bit_talk_gram_slash_03]
+[wt 0.4]
+
+[cueSeStop bac450 0.4]
+[flashin once 0.1 0.1 9effffFA 9effff80]
+[wt 0.4]
+
+[se bac151]
+[seVolume bac151 0 0.4]
+[fowardEffect bit_talk_14]
+[wt 0.3]
+[se bac151]
+[seVolume bac151 0 0.6]
+[fowardEffect bit_talk_14]
+[wt 0.2]
+[se bac151]
+[seVolume bac151 0 0.8]
+[fowardEffect bit_talk_14]
+[wt 0.2]
+
+[fadeout white 0.3]
+[seStop bac450 0.3]
+[wait fade]
+
+[charaPut J 2000,2000]
+[charaPut K 2000,2000]
+[charaPut L 2000,2000]
+[charaPut M 2000,2000]
+[charaPut N 2000,2000]
+[charaPut O 2000,2000]
+[charaEffectStop J bit_talk_searchlight]
+[charaEffectStop K bit_talk_searchlight]
+[charaEffectStop L bit_talk_searchlight]
+[charaEffectStop M bit_talk_searchlight]
+[charaEffectStop N bit_talk_searchlight]
+[charaEffectStop O bit_talk_searchlight]
+
+[charaMoveScale G 1.4 0.1]
+[wt 0.1]
+
+[scene 10906]
+
+[fadein white 0.3]
+[wait fade]
+
+[se ad671]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.4 0,60]
+[charaMove G 1 0.4]
+[charaShake G 0.04 4 4 0.5]
+[wt 0.1]
+[charaMoveScale G 1.0 0.4]
+[wt 1.0]
+
+[charaMove G 0,-20 0.5]
+[charaShake G 0.03 6 1 0.5]
+
+＠莫里亚蒂
+被～[wt 0.15]干～[wt 0.15]掉～[wt 0.2]啦～！
+[k]
+
+[bgmStop BGM_EVENT_80 1.8]
+
+[charaFace G 4]
+＠莫里亚蒂
+……哎哟。[r]衣服都弄脏了。
+[k]
+
+[messageOff]
+[charaMove G 1 0.5]
+[wt 0.7]
+
+[se ade274]
+[seVolume ade274 0 0.6]
+[charaMoveReturn G -2,-8 0.4]
+[wt 0.4]
+
+[se ade274]
+[seVolume ade274 0 0.6]
+[charaMoveReturn G -2,-8 0.3]
+[wt 1.0]
+
+[charaFace G 1]
+[wt 0.7]
+
+[bgm BGM_MAP_6 0.1]
+
+＠莫里亚蒂
+综上所述，我先撤了哟。[r]哎呀呀，今天的巴流术害得我腰好痛啊！
+[k]
+
+[charaFace G 2]
+
+＠莫里亚蒂
+然后。那边的海德，你也辛苦啦！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 -20,0]
+＠海德
+哈！？[r]你在说什么啊，我还能继续[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠莫里亚蒂
+嘿。
+[k]
+
+[messageOff]
+
+[charaFilter P silhouette 01060eFF]
+[charaFilter Q silhouette 01060eFF]
+[charaMoveScale R 1.4 0.1]
+[charaMoveScale S 1.4 0.1]
+[wt 0.2]
+
+
+[charaMoveScale J 1.0 0.1]
+[charaMoveScale K 1.0 0.1]
+[charaSet J 8001000 1 dummy特效7]
+[charaSet K 8001000 1 dummy特效8]
+
+
+[se ade25]
+[charaMoveReturn G 0,-3 0.2]
+[wt 0.6]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace D 2]
+[charaFadein D 0.1 -20,0]
+[fowardEffect bit_talk_06b]
+[wt 0.8]
+
+[se bac334]
+[charaShake D 0.02 5 1 0.4]
+[wt 0.7]
+
+[charaFace R 4]
+[charaFadein R 0.2 250,30]
+[charaFadeTime R 0.8 0.9]
+[charaMove R 250,0 1.5]
+[wt 1.1]
+[charaFadeout R 0.3]
+[wt 0.2]
+
+[charaFace S 4]
+[charaFadein S 0.2 -400,-40]
+[charaFadeTime S 0.8 0.9]
+[charaMove S -400,10 1.5]
+[wt 1.1]
+[charaFadeout S 0.3]
+[wt 0.4]
+
+[se ad193]
+[charaFace P 0]
+[charaFadein P 1.2 -20,0]
+[fowardEffectStop bit_talk_06b]
+[wt 1.6]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaFadeout P 0.8]
+[charaFace Q 0]
+[charaFadein Q 0.4 1]
+[wt 1.2]
+
+[charaFadeout Q 0.4]
+[charaFace C 5]
+[charaFadein C 0.4 1]
+[wt 0.7]
+
+[charaTalk on]
+[charaFace C 4]
+[charaShake C 0.03 3 1 0.3]
+
+＠杰基尔
+……！？
+[k]
+
+＠杰基尔
+我……我难道……[r]又变成……海德了吗……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+[charaEffect K bit_talk_40 0,-300]
+
+＠莫里亚蒂
+那[messageShake 0.04 3 3 1.0]么再见啦！[r]哈哈哈哈哈哈哈哈哈哈！
+[k]
+
+[messageOff]
+[charaMove K 0,200 2.0]
+[wt 2.0]
+
+[se ade153]
+[charaMove G 0,-80 1.7]
+[charaMove K 0,340 1.7]
+[charaSpecialEffect G erasureReverse 0,0 1.7]
+[wt 1.9]
+
+[charaEffectStop K bit_talk_40]
+[wt 1.5]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.2 1]
+
+＠福尔摩斯
+真是的。恬不知耻……
+[k]
+
+[charaFace A 0]
+
+＠福尔摩斯
+……[r]……
+[k]
+
+＠福尔摩斯
+不过，魔雾萦绕的伦敦啊。[r]对我们来说，这已经是怀念的景象了吧。
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+[charaEffect K bit_talk_10_MiddleLevel]
+[wt 0.2]
+
+[se ad13]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.2]
+＠玛修
+据说在第四特异点，[r]Mr.福尔摩斯接受了巴贝奇先生的委托吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut K 2000,2000]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠福尔摩斯
+嗯，没错。
+[k]
+
+[charaFace A 4]
+
+＠福尔摩斯
+而且，现在仍然说不上彻底完成了委托。[r]确实有些遗憾。
+[k]
+
+[charaPut K 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠玛修
+…………
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut K 2000,2000]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠福尔摩斯
+[line 3]人理杀人事件的解决。
+[k]
+
+＠福尔摩斯
+大烧却的主谋盖提亚被打倒了，[r]但名为白纸化的第二人理杀人开始了。
+[k]
+
+[charaFace A 5]
+＠福尔摩斯
+我不能放过这巨大的杀人事件。[r]『异星之神』为何要引发这次事件呢……
+[k]
+
+＠福尔摩斯
+没错，『异星之神』。前所未有的巨大谜题。[r]踏遍了多个异闻带，却依然隐藏在不明的迷雾中。
+[k]
+
+[charaFace A 0]
+
+＠福尔摩斯
+我之所以被给予Ruler的灵基，[r]应该也是为了解开这个谜团吧……
+[k]
+
+[messageOff]
+[charaFace A 0]
+[wt 0.9]
+[charaFace A 4]
+
+＠福尔摩斯
+……[r]……
+[k]
+
+[charaFace A 0]
+
+＠福尔摩斯
+总之，作为侦探，[r]我必须辨认何谓真正的恶才行。
+[k]
+
+
+＠福尔摩斯
+没有了身为人类的生活，[r]现在的我已经是超越生前的侦探了。极为纯粹。
+[k]
+
+＠福尔摩斯
+甚至可以说[line 3][r]我已经化作侦探这个概念了。
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace A 6]
+
+＠福尔摩斯
+……[#我为何是侦探]？
+[k]
+
+[charaFace A 0]
+
+＠福尔摩斯
+我为何要追踪这个事件。[r]我还从未对你说过吧。
+[k]
+
+＠福尔摩斯
+Miss基列莱特肯定知道。[r]毕竟她读过道尔卿撰写的一系列小说，
+[k]
+
+＠福尔摩斯
+而且还看了不少影像作品吧。[r]那你呢？
+[k]
+
+＠福尔摩斯
+你又如何呢？[r][%1]。
+[k]
+
+？1：我当然知道。
+
+[charaFace A 9]
+
+＠福尔摩斯
+真令人高兴。[r]那我重新阐述一遍吧。
+[k]
+
+
+？2：……我希望能听到福尔摩斯亲口说出来。
+
+[charaFace A 7]
+
+＠福尔摩斯
+明白了。[r]那我就告诉你吧。
+[k]
+
+？！
+
+[charaFace A 0]
+
+＠福尔摩斯
+我为什么会是侦探。这是因为[line 3]
+[k]
+
+[messageOff]
+[charaFace A 5]
+[wt 1.0]
+[charaFace A 0]
+
+＠福尔摩斯
+[line 4]正义。
+[k]
+
+？1：正义。
+
+？！
+
+＠福尔摩斯
+没错，为了正义。
+[k]
+
+[charaFace A 7]
+
+＠福尔摩斯
+实不相瞒，我是[#正义的伙伴]。[r]很惊讶吗？
+[k]
+
+＠福尔摩斯
+当世故事里的名侦探中，[r]虽然也有贯彻推理机构身份的人，
+[k]
+
+[charaFace A 0]
+
+＠福尔摩斯
+但我不一样。[r]尽管从宝具的性质来看……
+[k]
+
+＠福尔摩斯
+我确实多少具备一些推理机构的性质，
+[k]
+
+
+＠福尔摩斯
+但即便如此，[r]我也不是别人，而是[#夏洛克]·[#福尔摩斯]。
+[k]
+
+＠福尔摩斯
+正因为面临人理续存的危机，[r][#侦探:福尔摩斯]才不能彻底忘记恶之所在。
+[k]
+
+[charaFace A 5]
+
+＠福尔摩斯
+不能放过杀人行为。[r]无关规模的大小。
+[k]
+
+＠福尔摩斯
+无论牺牲者只有1个，还是70亿人，[r]我都无法无视发生在眼前的杀人事件。
+[k]
+
+？1：泛人类史杀人事件……
+
+＠福尔摩斯
+没错。[r]绝对不能让这种大型犯罪被执行。
+[k]
+
+？2：……你是怎么看待异闻带的？
+
+[charaFace A 4]
+
+＠福尔摩斯
+可以说是连续世界杀人事件。[r]我是这么看待的。
+[k]
+
+[charaFace A 5]
+
+＠福尔摩斯
+而且。[r]偏偏还是犯人脏我们的手借刀杀人。
+[k]
+
+
+＠福尔摩斯
+逼迫我们为生存而战[line 3]
+[k]
+
+＠福尔摩斯
+这是远超教唆的极其残虐的强迫。[r]是我决不能放过的行为。
+[k]
+
+？！
+
+＠福尔摩斯
+……[r]……
+[k]
+
+＠福尔摩斯
+……我是不会原谅的。
+[k]
+
+＠福尔摩斯
+不会原谅那些践踏无辜人们，[r]嘲笑正义与善良，企图满足欲望之人……
+[k]
+
+＠福尔摩斯
+[line 6]不能原谅恶。
+[k]
+
+[charaFace A 0]
+
+＠福尔摩斯
+为了谁？[r]不，不是为了什么人。
+[k]
+
+＠福尔摩斯
+没错。我是为了正义而挺身面对事件。
+[k]
+
+＠福尔摩斯
+事实上，这就是我。[r]毕竟我就是[#冒险的主角:夏洛克·福尔摩斯]。
+[k]
+
+
+？1：是作为柯南·道尔小说的主角吗？
+
+？！
+
+[charaFace A 7]
+
+＠福尔摩斯
+哈哈哈。
+[k]
+
+＠福尔摩斯
+我都给你那么多我是真实人物的证据了，[r]事到如今或许也称不上什么主角了吧。
+[k]
+
+[charaFace A 0]
+
+＠福尔摩斯
+即便如此，我还是夏洛克·福尔摩斯本人。
+[k]
+
+＠福尔摩斯
+是侦探，“揭露者”的代表，[r]世界上第一个顾问侦探。
+[k]
+
+＠福尔摩斯
+是后世大量出现的[r]在众多故事世界中活跃的“名侦探”们的鼻祖之一。
+[k]
+
+＠福尔摩斯
+……所以自然背负着相应的责任。
+[k]
+
+[messageOff]
+[wt 1.1]
+[charaFace A 9]
+
+＠福尔摩斯
+[line 3]而且，我还怀着骄傲。
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_6 2.6]
+[wt 0.8]
+
+[fadeout black 1.8]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 10000]
+[wipeFilter cinema 0.5 0]
+[wt 0.4]
+
+[fadein black 0.8]
+[wait fade]
+
+[fadeout black 0.8]
+[wait fade]
+
+[scene 66400]
+
+[se ade74]
+[seVolume ade74 0 0]
+
+[fadein black 1.8]
+[wait fade]
+
+[seVolume ade74 1.6 1.0]
+[wt 0.8]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.8 0,-50]
+[wt 1.0]
+[seStop ade74 0.2]
+
+＠海伦娜
+…………你那是在糊弄人吧？
+[k]
+
+[charaFace E 1]
+
+＠海伦娜
+而且还摆出那种大道理。[r]为了正义！　呵呵，装什么帅啊！
+[k]
+
+[messageOff]
+[charaFace E 0]
+[wt 1.1]
+[charaFace E 5]
+
+＠海伦娜
+你还藏着什么巨大的秘密吧？[bgm BGM_EVENT_71 0.1][r]西格森。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 0,-50]
+[wt 0.8]
+[charaFace A 10]
+[wt 0.2]
+
+＠福尔摩斯
+哎呀呀。[r]您还真是难糊弄呢，Lady。
+[k]
+
+[charaFace A 0]
+
+＠福尔摩斯
+但我说的话全都是真的。[r]毫无虚言，我是为了正义而解决事件的。
+[k]
+
+＠福尔摩斯
+但正如你所说的。[r]秘密，确实存在。
+[k]
+
+[charaFace A 5]
+
+＠福尔摩斯
+与此同时，[r]我自己还有一个未能解开的巨大谜题。
+[k]
+
+＠福尔摩斯
+换言之，[#究竟是谁将我][line 6]
+[k]
+
+[charaFace A 0]
+
+＠福尔摩斯
+……[r]……
+[k]
+
+[charaFace A 4]
+
+＠福尔摩斯
+………………………………………………
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+
+＠海伦娜
+西格森。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+＠福尔摩斯
+……嗯。
+[k]
+
+[charaFace A 0]
+＠福尔摩斯
+这是对现界的我而言最大的命题。[r]迟早必须挑战才行。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0,-50]
+
+＠海伦娜
+[#不惜坠入邪恶]？
+[k]
+
+＠海伦娜
+为了正义，[r]甚至不惜选择邪恶，你是这个意思吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠福尔摩斯
+……[r]……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0,-50]
+
+＠海伦娜
+请容我确认一件事。那种恶，[r]与对[%1]来说的恶，是否等同？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+[wt 1.1]
+
+[charaFace A 0]
+
+＠福尔摩斯
+[line 7]不，不一样。
+[k]
+
+＠福尔摩斯
+只有这点我可以确定。[r]伊莲娜。
+[k]
+
+＠福尔摩斯
+我是包括[%1]在内的人类方阵营的。[r]你可以这么认为。
+[k]
+
+＠福尔摩斯
+我是侦探。[r]偏偏还是为了正义不断挑战的侦探。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0,-50]
+
+＠海伦娜
+真的吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠福尔摩斯
+嗯。是真的，Lady。[r]如果光靠这些话无法令你信服的话，让我想想……
+[k]
+
+[charaFace A 5]
+
+＠福尔摩斯
+我宣誓。[r]这些话都是真实的。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+
+＠海伦娜
+呵呵。[r]你会向什么宣誓呢。神明？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+
+＠福尔摩斯
+这[line 3]
+[k]
+
+[messageOff]
+[wt 0.8]
+[charaFace A 7]
+[wt 1.1]
+
+[charaFace A 5]
+[wt 0.7]
+＠福尔摩斯
+向那一天，那一刻。[r]在喜马拉雅山峰上不为人知的洞穴中见到的光景[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_71 2.8]
+[wt 1.0]
+
+[fadeout black 1.8]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[wipeOff]
+[scene 10000]
+[wt 0.8]
+
+[fadein black 1.0]
+[wait fade]
+＠
+[line 3]向散发着骄傲与光辉的你的临终宣誓。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaSet L 98006300 1 刺客]
+[imageSet I back10001 1]
+[charaScale I 1.01]
+
+[charaSet N 8001000 1 dummy特效9]
+[charaSet O 8001000 1 dummy特效11]
+[charaMoveScale N 1.0 0.1]
+[charaMoveScale O 1.0 0.1]
+
+[charaPut N 2000,2000]
+[charaPut O 2000,2000]
+[charaEffect N bit_talk_41]
+
+[scene 54700]
+[pictureFrame cut063_cinema]
+[cameraMove 0.1 0,0 1.02]
+[charaPut U 0,0]
+[wt 0.4]
+
+[charaMoveScale L 1.3 0.1]
+
+[fadein black 1.8]
+[wait fade]
+[wt 0.7]
+
+[charaPut N 0,0]
+[se ade216]
+[seVolume ade216 0 0.7]
+[wt 0.4]
+[seStop ade216 0.3]
+[charaPut N 2000,2000]
+
+[charaFace L 0]
+[charaFadein L 0.4 0,-30]
+[charaMove L 0,-50 0.2]
+[charaMoveScale L 1.0 0.2]
+[wt 0.2]
+
+[se bac427]
+[shake 0.03 5 2 0.6]
+[effect bit_talk_haboob_03 0,-200]
+[wt 0.6]
+
+[charaShake L 0.04 5 1 0.3]
+[wt 0.2]
+
+[effectStop bit_talk_haboob_03]
+[wt 1.1]
+
+[charaShake L 0.05 3 1 0.3]
+[wt 0.6]
+
+
+＠福尔摩斯
+[charaTalk A]
+…………哦。
+[k]
+
+[messageOff]
+[se ad51]
+[charaShake L 0.04 5 0 0.4]
+[wt 0.8]
+＠福尔摩斯
+[charaTalk A]
+（哪怕被摔在地上，也不放开匕首。）
+[k]
+
+＠福尔摩斯
+[charaTalk A]
+（来自时钟塔的刺客。[r]　在只剩一个的情况下，还是相当有骨气的。）
+[k]
+
+＠福尔摩斯
+[charaTalk A]
+（但是，我不会继续纵容你们了！[r]　趁我离开的间隙，居然刺伤了[#她:伊莲娜]！）
+[k]
+
+[messageOff]
+[se ad532]
+[charaShake L 0.03 4 1 0.8]
+[wt 0.4]
+[seStop ad532 0.7]
+[wt 0.2]
+
+＠福尔摩斯
+[charaTalk A]
+（所以我，要夺去你所有的可能性[line 3]）
+[k]
+
+＠福尔摩斯
+[charaTalk A]
+（为了让你，再也不会危害她。）
+[k]
+
+＠N：海伦娜
+不……行……
+[k]
+
+[messageOff]
+[wt 0.4]
+[wipeout rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+[wt 0.4]
+
+[se ad240]
+[effect bit_talk_35]
+[wt 1.6]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.7 5,-50]
+[charaMove F -5,-50 0.4]
+[charaShake F 0.04 1 1 0.8]
+[wt 0.4]
+[charaMove F 0,-50 0.4]
+[wt 1.2]
+
+[bgm BGM_EVENT_75 0.1]
+[wt 0.3]
+
+＠
+[charaTalk A]
+吐着血块的她说道。[r]紫色的眼瞳诉求着不要杀。
+[k]
+
+[messageOff]
+[wt 0.8]
+[cameraMove 0.3 0,10 1.02]
+[wt 0.3]
+[cameraMove 0.3 0,0 1.02]
+[wt 0.6]
+
+[wipeout rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 0,-50]
+
+[wipein rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+[wt 0.6]
+
+[cameraMove 0.2 0,0 1.01]
+[wt 0.2]
+
+[se bac9]
+[effect bit_talk_13 0,-80]
+[backEffect bit_talk_13 0,-80]
+[cameraMove 0.2 0,0 1.02]
+[charaShake L 0.04 2 2 0.4]
+[wt 1.0]
+
+[se ad144]
+[seVolume ad144 0 0.6]
+[charaFadeout L 0.4]
+[charaMove L 0,-60 0.4]
+[wt 0.7]
+
+＠
+[charaTalk A]
+我点了点头，一击打晕了刺客，[r]先排除了当前的可能性。
+[k]
+
+[messageOff]
+[wt 0.4]
+[wipeout rightToLeft 0.6 1.0]
+[wait wipe]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+
+[wipein leftToRight 0.6 1.0]
+[wait wipe]
+[wt 0.8]
+
+[charaFaceFade F 1 0.8]
+[wt 1.2]
+
+[charaMove F 0,-90 1.5]
+[charaShake F 0.04 3 0 1.5]
+[wt 0.4]
+
+[se bac343]
+[charaPut N 0,0]
+[cameraMove 0.15 0,-2 1.03]
+[wt 0.15]
+[cameraMove 0.15 0,0 1.04]
+[wt 0.15]
+[cameraMove 0.15 0,-2 1.05]
+[wt 0.15]
+[charaFadeout F 0.7]
+[cameraMove 0.15 0,0 1.06]
+[wt 0.15]
+[cameraMove 0.15 0,-2 1.07]
+[wt 0.15]
+[seStop bac343 0.2]
+[cameraMove 0.1 0,0 1.08]
+[wt 0.1]
+
+[fadeout black 0.2]
+[wait fade]
+
+[charaPut N 2000,2000]
+[charaEffectStop N bit_talk_41]
+
+[charaMoveScale F 1.4 0.1]
+
+[scene 87200]
+[cameraMove 0.1 0,0 1.02]
+[wt 0.1]
+
+[fadein black 0.2]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.3 1]
+[charaMoveScale F 1.3 0.3]
+
+[se ad183]
+[se ade33]
+[seVolume ade33 0 0.4]
+[shake 0.04 2 2 0.4]
+[wt 1.4]
+
+＠A：西格森
+伊莲娜……
+[k]
+
+＠
+[charaTalk A]
+为何。为什么。
+[k]
+
+＠
+[charaTalk A]
+凭你的力量，区区一个刺客，[r]你应该能瞬间了结他的性命才对[line 3]
+[k]
+
+＠
+[charaTalk A]
+不。不对。还是不说了。[r]这是她自己的选择。
+[k]
+
+＠
+[charaTalk A]
+刚才，她对我这么说。
+[k]
+
+[messageOff]
+[wt 0.6]
+[fadeout black 1.2]
+[wait fade]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[pictureFrame]
+[wipeFilter circleIn 0.5 0.5]
+
+[scene 20112]
+[cameraHome 0.1]
+[wt 0.1]
+
+[charaPut I 0,-200]
+[charaFadeTime I 0 0.1]
+[wt 0.1]
+
+[fadein black 1.2]
+[wait fade]
+[wt 0.2]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.4 1]
+[wt 0.6]
+
+＠
+[charaTalk E]
+『不要杀了他们哦。[r]　可能的话，希望让他们都能活着回家。』
+[k]
+
+＠
+[charaTalk E]
+『拜托了。Mister。[r]　我呀。已经是个老奶奶了。』
+[k]
+
+＠
+[charaTalk E]
+『虽然我没有孩子，也没有孙辈，但是，[r]　我不该夺走这个年纪的孩子们的性命。』
+[k]
+
+＠
+[charaTalk E]
+『因为我，已经死了。』
+[k]
+
+[messageOff]
+[wt 0.2]
+[cameraMove 0.2 5,0 1.0]
+[wt 0.2]
+[cameraMove 0.4 -5,0 1.0]
+[wt 0.4]
+[cameraMove 0.2 0,0 1.0]
+[wt 0.2]
+
+＠
+[charaTalk A]
+Lady。你的死只不过是伪装吧。
+[k]
+
+＠
+[charaTalk A]
+对于我的回应，她说道，
+[k]
+
+[messageOff]
+[charaTalk E]
+[wt 0.9]
+[charaFace E 0]
+[wt 0.2]
+
+＠
+[charaTalk E]
+『嗯。但是呀，从与世界断绝关系的那刻起，[r]　我还是已经死了。』
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[wait fade]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[wipeOff]
+[charaPut I 2000,2000]
+
+[scene 87200]
+[pictureFrame cut063_cinema]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+[fadein black 1.2]
+[wait fade]
+[wt 0.2]
+
+＠F：海伦娜
+谢……谢……
+[k]
+
+＠F：海伦娜
+Mr.西格森……[r]不……夏洛克……
+[k]
+
+＠F：海伦娜
+居然还有……这种偶然呢……[r]不，这或许……才算是……必然吧……？
+[k]
+
+[messageOff]
+[charaTalk A]
+[wt 0.8]
+
+＠
+[charaTalk A]
+我不明白她究竟在说什么[line 3]
+[k]
+
+＠
+[charaTalk A]
+但我熟悉这种感触。[r]从怀中的她的身体传来的所有感受。
+[k]
+
+＠
+[charaTalk A]
+生命的灯火正在熄灭。[r]她要死了。就在这里，结束她的全部生涯。
+[k]
+
+＠A：西格森
+伊莲娜。
+[k]
+
+＠
+[charaTalk A]
+我紧紧地握住她那开始颤抖的手。
+[k]
+
+[messageOff]
+[charaTalk A]
+[charaPut O 0,0]
+[charaEffect O bit_talk_diremond_dust02]
+[wt 1.2]
+
+＠
+[charaTalk A]
+[line 3]然后，我看到了。
+[k]
+
+[messageOff]
+[charaFadeout F 0.4]
+[scene 54700 0.8]
+[wt 1.2]
+＠
+[charaTalk A]
+这是否就是栖息于喜马拉雅腹地的神秘显现呢。
+[k]
+
+＠
+[charaTalk A]
+或是为了见证爱徒临终而降临的[r]超越大师的使者，横渡星辰之海的银色之船。
+[k]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 120,-20]
+[wt 0.6]
+
+＠F：海伦娜
+喂，你看到了吗……夏洛克……？
+[k]
+
+＠A：西格森
+嗯。
+[k]
+
+＠海伦娜
+无比，耀眼的……光之[line 4]
+[k]
+
+[messageOff]
+[charaFadeout F 1.8]
+[scene 10001 1.8]
+[wt 2.0]
+
+＠
+[charaTalk A]
+或许。[r]是眯起双眼的她零落的……
+[k]
+
+＠
+[charaTalk A]
+小小的，水滴的光芒……[line 3]
+[k]
+
+
+[messageOff]
+[wt 0.7]
+
+[fadeout white 1.8]
+[bgmStop BGM_EVENT_75 1.8]
+[wait fade]
+
+[charaPut O 2000,2000]
+
+[scene 10000]
+[charaPut U 2000,2000]
+[charaEffectStop U bit_sepia01]
+[effectStop bit_talk_diremond_dust02]
+[wt 0.4]
+
+[fadein white 1.8]
+[wait fade]
+
+[fadeout black 1.2]
+[wait fade]
+
+[scene 66400]
+[wt 0.2]
+
+[fadein black 1.2]
+[wait fade]
+[wt 0.4]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.2 0,-50]
+[wt 0.2]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠海伦娜
+…………[wt 0.6][charaFace E 5]西格森？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.3 0,-50]
+[wt 0.7]
+
+[charaFace A 4]
+[wt 0.6]
+
+＠福尔摩斯
+唔，[wt 0.2]啊。
+[k]
+
+[charaFace A 0]
+
+＠福尔摩斯
+怎么了？[r]伊莲娜。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0,-50]
+
+＠海伦娜
+怎么了这话应该由我来问吧？[r]怎么突然陷入沉默了？
+[k]
+
+[charaFace E 0]
+
+＠海伦娜
+还有，你得好好回答我的问题。[r]你在对什么宣誓？
+[k]
+
+＠海伦娜
+只会嘴里含糊地嘀咕，我可没法明白。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+[wt 1.2]
+
+[charaFace A 9]
+[wt 1.0]
+
+[charaFace A 0]
+[wt 0.4]
+
+＠福尔摩斯
+这……
+[k]
+
+[charaFace A 8]
+
+＠福尔摩斯
+不。这话不能说第二遍了。[wt 1.0][charaFace A 1][r]哈哈哈哈哈。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠海伦娜
+[FFFFFF]？？[-]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠福尔摩斯
+哈哈哈哈哈哈哈哈哈哈[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠海伦娜
+[FFFFFF]？？？？？[-]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaFace A 1]
+[charaFadein A 0.2 -140,-50]
+[wt 0.8]
+
+[se ade146]
+[wt 0.4]
+[charaFace H 0]
+[charaFadein H 0.8 310,-100]
+[charaMove H 250,-100 0.8]
+[wt 0.8]
+[seStop ade146 0.4]
+[wt 0.5]
+
+[se adm21]
+[charaMove H 130,-45 0.6]
+[wt 0.6]
+[charaMove H 130,-50 0.2]
+[wt 0.2]
+[charaTalk on]
+[charaTalk H]
+
+＠芙芙
+芙，[charaMoveReturn H 130,-30 0.3][wt 0.3]芙呜！！[charaMoveReturn H 130,-25 0.3][wt 0.3]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[wt 0.2]
+
+[se bac9]
+[charaMoveReturn H 115,-50 0.2]
+[charaShake A 0.03 3 1 0.2]
+[wt 0.4]
+
+[se bac9]
+[charaMoveReturn H 115,-50 0.2]
+[charaShake A 0.03 4 1 0.2]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk A]
+
+＠福尔摩斯
+哈哈哈哈哈住手啦哈哈哈哈。[r]好痛好痛。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠海伦娜
+哎呀，真稀罕，它居然那么粘你。[wt 0.6][charaFace E 1][r]呵呵呵。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+[wt 0.2]
+
+[se adm21]
+[charaMoveReturn H 0,25 0.5]
+[charaShake H 0.03 3 0 0.5]
+[wt 0.2]
+
+＠芙芙
+芙呜～。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠福尔摩斯
+哈哈哈哈哈哈哈哈[line 3]
+[k]
+
+[messageOff]
+[wt 0.4]
+
+[bgmStop BGM_EVENT_77 2.6]
+[wt 0.6]
+
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

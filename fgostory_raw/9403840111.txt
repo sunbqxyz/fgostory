@@ -1,0 +1,566 @@
+
+
+
+
+＄94-03-84-01-1-1
+
+[soundStopAll]
+
+
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[branch lblConf]
+[label lblNotClear]
+
+[charaSet A 8001000 1 玛修]
+
+
+[branch lblNotClear_out]
+[label lblConf]
+
+[charaSet A 8001410 1 玛修]
+
+
+
+[label lblNotClear_out]
+
+
+[charaSet B 1098173200 1 士兵？]
+[charaSet C 1098170800 1 阿虎]
+[charaSet D 1098172700 1 村民]
+
+[charaSet H 98115000 1 特效用]
+
+[scene 78700]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.4 -80,0]
+[charaShake A 0.05 2 1 0.6]
+[charaMove A -20,0 0.2]
+[wt 0.2]
+[charaMove A 1 0.2]
+[wt 0.2]
+[seStop ad671 0.5]
+
+＠玛修
+呜……！　数量果然太多了……！[r]仅凭单骑还是……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠士兵？
+[line 3]确认疑似指挥官的对象，开始排除。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+御[messageShake 0.05 4 4 0.2]主！！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+[se ad270]
+[seStop ad270 0.5]
+[charaMoveScale B 1.1 0.1]
+[charaMove B 0,15 0.1]
+[charaEffect H bit_talk_41]
+[wt 0.4]
+
+[fadeout black 0.1]
+[bgmStop BGM_EVENT_3 0.1]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_41]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad32]
+[effect bit_talk_Slash_white_01]
+[effect bit_talk_14]
+[wt 1.0]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 78700]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,15]
+
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[wt 0.5]
+
+[se ade48]
+[seStop ade48 1.0]
+[charaShake B 0.05 3 3 0.7]
+[charaMove B 0,-50 0.4]
+[charaFadeout B 0.4]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 5]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect C appearance 1 0.25]
+[wt 0.4]
+
+＠阿虎
+在弱小众生的危机关头飒爽登场的我。[bgm BGM_EVENT_4 0.1]
+[k]
+
+[charaFace C 6]
+
+＠阿虎
+这正是毗沙……[r]不对，是上天的引导吧！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+……阿……阿虎小姐！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠阿虎
+你们一定对自己的实力颇有自信吧，[r]但我没想到你们竟老实到从正面发动攻击。
+[k]
+
+[charaFace C 1]
+
+＠阿虎
+这种时候至少应该瞄准敌方阵型的弱点，[r]或是寻找破绽才对。
+[k]
+
+＠阿虎
+如果不是恰好有我在，你们早就死了。
+[k]
+
+？1：谢谢你，对不起！
+
+？！
+
+[charaFace C 16]
+
+＠阿虎
+…………！
+[k]
+
+[charaFace C 14]
+
+＠阿虎
+啊哈哈哈哈哈哈哈哈！[r]在这种状况下居然先道谢！
+[k]
+
+＠阿虎
+[line 3]啊哈哈哈！　你们还真奇怪。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[se ad7]
+[charaMoveScale B 1.1 0.1]
+[charaMove B 0,15 0.1]
+[charaPut H 1]
+[charaEffect H bit_talk_41]
+[wt 0.4]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_41]
+
+[se ad32]
+[fowardEffect bit_talk_ichimon01wh 0,-100]
+[fowardEffect bit_talk_14]
+[wt 0.1]
+[charaShake B 0.05 3 3 0.3]
+[wt 0.5]
+
+[charaShake B 0.05 3 3 0.7]
+[charaMove B 0,-50 0.4]
+[charaFadeout B 0.2]
+[wt 0.3]
+[fowardEffectDestroy bit_talk_ichimon01wh]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠阿虎
+好啦好啦，你们很碍事，给我安静一点。
+[k]
+
+[charaFace C 0]
+
+＠阿虎
+好了，总之先把那群家伙击溃吧。[r]我负责进攻，你负责保护[&他:她]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+啊，是！　……前辈，躲到我的背后去！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠阿虎
+听话就好。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠士兵？
+确认敌对势力的增援。[r]因敌方战斗力为未知数，询问可否派遣增援。
+[k]
+
+[messageOff]
+
+[se ad473]
+[seStop ad473 0.5]
+[fowardEffect bit_talk_Slash_white_01_L]
+[fowardEffect bit_talk_14]
+[wt 0.1]
+[charaShake B 0.05 3 3 0.3]
+[wt 0.4]
+
+[charaShake B 0.05 3 3 0.7]
+[charaMove B 0,-50 0.5]
+[charaFadeout B 0.3]
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠阿虎
+在战场上说什么梦话呢。[r]要撤退就撤退，要进攻就进攻！
+[k]
+
+[charaFace C 5]
+
+＠阿虎
+尽管我不知道你是哪家的人，[r]但我决不会放过欺压民众之辈！
+[k]
+
+[charaFace C 13]
+
+＠阿虎
+毗沙门……不对，[r]就由我代替上天惩戒你们！
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_4 1.0 0.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+
+
+[se ad170]
+[wt 0.5]
+
+[se ad33]
+[wt 1.5]
+
+[se ad32]
+[wt 0.5]
+
+[fadein black 1.0]
+[bgmStop BGM_EVENT_4 1.0]
+[wait fade]
+
+＠士兵？
+作战……难以维持……
+[k]
+
+[messageOff]
+
+[se ad471]
+[seStop ad471 1.0]
+[effect bit_talk_v_slash01]
+[wt 0.4]
+[charaShake B 0.05 3 3 0.7]
+[wt 0.5]
+
+[se ade48]
+[seStop ade48 1.0]
+[charaMove B 0,-50 0.4]
+[charaFadeout B 0.4]
+[wt 0.4]
+[charaShakeStop B]
+[wt 1.2]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠阿虎
+……出人意料地好对付呢。[r]我还以为你们会更能干一些。
+[k]
+
+＠阿虎
+而且还穿着奇怪的铠甲……
+[k]
+
+？1：好……好强……
+
+？2：居然转瞬间打败了那么多敌人！？
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+阿虎小姐也是从者吧……[bgm BGM_EVENT_2 0.1]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠阿虎
+很抱歉瞒着你们。[r]我其实是想先确认你们的来历……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠村民
+尽管不知各位是何方神圣，但感谢搭救！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠阿虎
+帮助弱者是强者的职责。[r]毕竟所谓的见义不为无那啥啦，各位不用在意。
+[k]
+
+[charaFace C 1]
+
+＠阿虎
+要道谢就谢那边两位吧。[r]我只是在配合[&他:她]们而已。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠村民
+实在是太感谢两位了。[r]两位打扮真奇怪，是旅行者吗？
+[k]
+
+？1：嗯，差不多吧……
+
+？2：话说这里是哪儿？
+
+？！
+
+＠村民
+在这儿站着说话也不方便，来吧，这边走。[r]今天请在我们的村庄好好休息吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠阿虎
+这真是帮大忙了，玛修和[%1]，[r]难得他们发出邀请，我们就在这里叨扰吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛修
+那我们就恭敬不如从命，在这里休息吧，前辈？
+[k]
+
+＠玛修
+……话说阿虎小姐没有御主吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠阿虎
+……其实正如你所推测的，[r]我虽然被召唤来此，却没有御主。
+[k]
+
+＠阿虎
+再这样下去或许迟早会魔力耗尽消失……
+[k]
+
+[charaFace C 8]
+
+＠阿虎
+对了！　萍水相逢也是緣，[r]要不要暂时和我缔结临时契约？
+[k]
+
+？1：可以啊。
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+果断回答！？　每次都会被前辈适应力震惊到，[r]今天玛修·基列莱特也十分震惊！
+[k]
+
+？2：怎么办，玛修？
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠玛修
+问……问我的意见啊……？[r]这个嘛……
+[k]
+
+＠玛修
+阿虎小姐的实力我们刚才已经见识过了，[r]如果能结伴同行的话，一定能放心不少。
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠阿虎
+看来已经决定了吧！　放心吧。[r]人不可貌相，其实我对打仗还是有点经验的，
+[k]
+
+[charaFace C 14]
+
+＠阿虎
+一切就放心交给我长……阿虎吧！
+[k]
+
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

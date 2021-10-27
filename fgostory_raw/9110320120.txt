@@ -1,0 +1,923 @@
+
+
+＄91-10-32-01-2-0
+
+[soundStopAll]
+
+[charaSet A 1035001 1 迪尔姆德]
+[charaSet B 1098124510 1 达·芬奇]
+[charaSet C 99502600 1 玛修]
+[charaSet D 98006200 1 敌人1]
+[charaSet E 98006200 1 敌人2]
+[charaSet F 98006200 1 敌人3]
+[charaSet J 1098120900 1 通信噪音]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[charaDepth D 1]
+[charaDepth E 2]
+[charaDepth F 3]
+
+[scene 46700]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk off]
+
+[charaFace D 0]
+[charaFace E 0]
+[charaFace F 0]
+
+[charaFadein D 0.1 -350,0]
+[charaFadein E 0.1 350,0]
+[charaFadein F 0.1 1]
+
+[wt 0.5]
+
+
+[fowardEffect bit_talk_kengekiall02]
+[se ad32]
+[charaShake D 0.05 3 3 0.7]
+[charaShake E 0.05 3 3 0.7]
+[charaShake F 0.05 3 3 0.7]
+[wt 0.5]
+[se ad32]
+[wt 0.1]
+[se ad32]
+[wt 0.5]
+[effect bit_talk_v_slash01]
+[wt 0.1]
+[se bac308]
+[wt 0.3]
+
+[se ad463]
+[wt 0.5]
+[seStop ad463 1.0]
+[wt 0.5]
+
+[se ad42]
+[charaSpecialEffect D enemyErasure 1 1.5]
+[charaSpecialEffect E enemyErasure 1 1.5]
+[charaSpecialEffect F enemyErasure 1 1.5]
+
+[wait charaSpecialEffect D]
+[wait charaSpecialEffect E]
+[wait charaSpecialEffect F]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+
+[charaTalk on]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaSet D 2021000 1 巴御前]
+[charaSet E 6029001 1 千代女]
+[charaSet F 98110000 1 柳生但马守]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠迪尔姆德
+……好像这是最后一批了。御主。
+[k]
+
+＠迪尔姆德
+城下町的百姓都毫无反应吗？[r]不过倒是比引发骚乱要好得多……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠巴御前
+有些诡异啊。[r]难道模拟装置本就如此吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+不如说模拟装置就是为战斗而生的。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠玛修
+没错。非但敌人不会袭击NPC，[r]NPC也不会对敌人作出反应。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠巴御前
+世间本无事的意思吗[line 3]
+[k]
+
+＠巴御前
+既然但马大人不在这里的话，[r]就说明他对于和敌人战斗并没有兴趣，对吧？
+[k]
+
+[charaFace D 4]
+
+＠巴御前
+那么他到底在做什么呢？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠迪尔姆德
+说不定他在品尝美食，[r]趁机好好欣赏这个时代和地点的风貌呢。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+[wt 1.0]
+[charaFaceFade E 0 0.5]
+[wt 0.5]
+
+＠千代女
+……千代女前去探查！[r]告辞！
+[k]
+
+[messageOff]
+[charaEffect E bit_talk_quickmove]
+[charaSpecialEffect E erasureReverse 1 0.3]
+[se ad73]
+[wt 1.5]
+
+[wipeout rollRight 1.0 0.5]
+[bgm BGM_EVENT_77 1.0 0.5]
+[wait wipe]
+[wt 1.0]
+[wipein rollLeft 1.0 0.5]
+[bgm BGM_EVENT_77 1.0 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect E appearance 1 0.25]
+[wt 0.4]
+
+＠千代女
+我回来了！
+[k]
+
+＠千代女
+报告主公大人。[r]我发现柳生但马守大人了！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth A 1]
+[charaDepth D 2]
+[charaFace A 2]
+[charaFace D 3]
+[charaFadein A 0.1 0]
+[charaFadein D 0.1 2]
+
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+？1：千代女小姐，了不起！
+
+＠千代女
+哈哈。
+[k]
+
+？2：干得不错！
+
+[charaFace E 3]
+
+＠千代女
+嘿嘿……
+[k]
+
+[messageOff]
+[wt 0.5]
+[charaFace E 0]
+[wt 0.5]
+
+＠千代女
+过奖了。这是我义不容辞的！
+[k]
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠巴御前
+那但马大人在哪里呢？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠千代女
+哈。俗话说得好，灯下黑，[r]但马守大人好像就住在繁华大街边的旅馆里。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠巴御前
+……啊呀，也就是说？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠玛修
+繁华大街应该指的就是这条街，[r]嗯…这里只有一两家旅馆。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠巴御前
+就在那里吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠千代女
+是。就在那里。[r]不愧是但马守大人，待在了让人意想不到的地方。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠迪尔姆德
+哈哈，大隐隐于市。[r]那位大人真是奸猾啊。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠千代女
+但马守大人在旅馆二楼的房间里。[r]千代女这就前去看看他的情况。
+[k]
+
+？1：小心点。
+？2：去吧。
+
+？！
+
+＠千代女
+是。[r]我去了！
+[k]
+
+[messageOff]
+[charaEffect E bit_talk_quickmove]
+[charaSpecialEffect E erasureReverse 1 0.3]
+[se ad73]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠巴御前
+不愧是女忍者，望月千代女大人。[r]没想到战国时代竟然存在如此高超的间谍……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠迪尔姆德
+巴御前，你生活的年代[r]位于千代女大人和但马大人之前，对吧？
+[k]
+
+＠迪尔姆德
+那个时候难道没有忍者吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠巴御前
+并没有。嗯嗯。
+[k]
+
+＠巴御前
+间谍是存在的，[r]但我没听说过忍者这个词。
+[k]
+
+＠巴御前
+我生活在更古老的时代。[r]是有着可怕的狂野力量的时代。
+[k]
+
+[charaFace D 4]
+
+＠巴御前
+话虽如此……
+[k]
+
+＠巴御前
+在更久以前。[r]比如说平安时代之前，存在着更古老恐怖的[line 3]
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_77 0.1]
+
+[se adm38]
+[wt 0.2]
+[seStop adm38]
+[wt 0.4]
+[se adm38]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaFace D 5]
+
+＠巴御前
+唔！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠迪尔姆德
+那个声音是……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠千代女
+呀啊啊[line 9]！
+[k]
+
+＠千代女
+主公大人[line 3]
+[k]
+
+？1：千代女！？
+？2：难道说找到了！？
+
+？！
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠巴御前
+声音好像是从那边旅馆的二楼传出来的！[r]也就是说……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+＠柳生但马守
+哈哈哈。
+[k]
+
+＠柳生但马守
+真有意思啊。[r]没想到在这里还能被甲贺望月的女忍者盯上啊。
+[k]
+
+＠柳生但马守
+这里是难得的双层旅馆。[r]请务必和主公大人一同前来。
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[wait fade]
+
+[scene 40301]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_66 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠柳生但马守
+[line 3]唔。
+[k]
+
+＠柳生但马守
+我已经让老板娘按人数准备了饭菜。[r]来，请尽情享用吧。
+[k]
+
+＠柳生但马守
+听说今天准备了南总的鱼。
+[k]
+
+＠柳生但马守
+这是鲹鱼冲脍。很好吃的。这本来是船上的料理，[r]快马加鞭才得以将活的鲹鱼运到这里。
+[k]
+
+＠柳生但马守
+还有鱚鱼天妇罗。[r]配上萝卜泥吃味道很清爽哦。
+[k]
+
+＠柳生但马守
+这是盐烤鲇鱼……[r]这道菜朴素的味道和刚蒸好的米饭很配。
+[k]
+
+＠柳生但马守
+野菜都是新鲜采摘的。[r]来，主公大人，请享用吧。
+[k]
+
+？1：咦……？
+？2：那我……不客气了……？
+
+？！
+
+[messageOff]
+
+[charaFaceFade F 1 0.5]
+[wt 1.5]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠千代女
+哈。这也太……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠巴御前
+但马大人，难道。难道。[r]你[line 3]
+[k]
+
+＠巴御前
+每晚启动模拟装置就是[r]为了品尝各地各时代的美食吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠柳生但马守
+没错。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠迪尔姆德
+唔。这也太好吃了。[r]秋田蕗天妇罗真是回味无穷啊。弄得我都想喝点酒了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠千代女
+多吃点吧！[r]迪尔姆德大人！
+[k]
+
+？1：咀嚼咀嚼。
+？2：很好吃哦，巴小姐也快吃吧。
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠巴御前
+连御主也！[r]唔唔唔唔唔唔！
+[k]
+
+[charaFace D 4]
+
+＠巴御前
+既、既然御主都这么说了……[r]可是……巴不胜惶恐……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠千代女
+巴大人[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠柳生但马守
+怎么样，巴大人。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠巴御前
+巴的……舌头里……[r]好像有一股像我的血一般火热的力量在流淌，
+[k]
+
+＠巴御前
+舌头上肯定有地方被烫伤了。[r]但即便如此……
+[k]
+
+＠巴御前
+品尝出味道的那一刻，[r]仿佛触电一般……
+[k]
+
+＠巴御前
+今天……太丢脸了……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠柳生但马守
+料理并非都需要用舌头来品尝。[r]有些料理不需要依赖舌头便可享受。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[se adm40]
+[seVolume adm40 0 0.8]
+[wt 1.0]
+
+[charaFace F 1]
+
+＠柳生但马守
+巴大人，尝尝这个吧。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠巴御前
+这是……凉粉[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠柳生但马守
+已经放凉了。[r]吃吧。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠巴御前
+……[r]……
+[k]
+
+＠巴御前
+…………既然但马大人都这么说了，那我也不好拒绝了。[r]我不客气了。
+[k]
+
+[messageOff]
+
+[wt 0.5]
+[charaMoveReturn D 0,-3 0.3]
+[wt 0.5]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠柳生但马守
+直接吃就好。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[wt 1.0]
+[se ad217]
+[seVolume ad217 0 0.5]
+[charaMoveReturn D 0,-6 0.3]
+[wt 0.3]
+[seStop ad217]
+[wt 0.7]
+
+[charaFace D 3]
+
+＠巴御前
+[line 3]！
+[k]
+
+＠巴御前
+这个，啊啊，这也太……[r]冰冰凉凉的……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[wt 0.5]
+
+[charaFaceFade F 1 0.5]
+[wt 1.0]
+
+＠柳生但马守
+……这次的模拟装置。[r]接近我曾经生活的时代。
+[k]
+
+＠柳生但马守
+我知道这些不过都是假象，[r]甚至说出这个话的我也不过是个幻影。
+[k]
+
+＠柳生但马守
+[#电脑中的假象:模 拟 装 置]和我之间，究竟有何不同呢？[r]流连于这些令人怀念的事物中也是一种乐趣啊[line 3]
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace D 1]
+[charaFace E 1]
+[charaFadein D 0.1 0]
+[charaFadein E 0.1 2]
+
+[wt 2.0]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[wt 0.5]
+[charaMoveReturn A 0,-5 0.4]
+
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？1：柳生先生
+？2：这么说，你是为了品尝美食才启动模拟装置的？
+
+？！
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠玛修
+区域随机设定也是为了……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+是为了来一场说走就走的旅行吧？[r]不错啊。这样真不错啊。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠柳生但马守
+让你们配合我这个老头的任性，真是抱歉。[r]主公大人，给你们添麻烦了。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠千代女
+您、您言重了！[r]请把头抬起来，但马大人！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠巴御前
+对啊！[r]对模拟装置感兴趣的英灵本来就有很多！
+[k]
+
+＠巴御前
+您何必如此在意。[r]明明只要跟别人说一声就行了。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+[wt 1.0]
+
+[charaFaceFade F 1 0.5]
+[wt 0.5]
+
+＠柳生但马守
+谢谢你们。[r]我们赶紧回[#迦勒底基地]吧。
+[k]
+
+[charaFace F 0]
+
+＠柳生但马守
+对了，在此之前[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_66 1.0]
+[wt 1.0]
+
+＠柳生但马守
+[line 3]有一只妖怪，我不得不去消灭它。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[wt 1.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,309 @@
+
+＄94-02-75-08-2-0
+
+[soundStopAll]
+
+
+[charaSet A 98100400 1 玛修]
+[charaSet B 7031000 1 贞德·Alter]
+[charaSet C 6034000 1 牛若丸]
+[charaSet D 2003300 1 罗宾汉]
+[charaSet E 23002000 1 BB]
+[charaSet F 25003000 1 ？？？]
+[charaSet G 98002000 1 特效用dummy１]
+[charaSet H 23002000 1 BB（剪影用）]
+
+[scene 63101]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth G 0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.4]
+
+[se ad73]
+[charaMove B 30,0 0.1]
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.1]
+[se adm15]
+[effect bit_talk_h_slash02]
+[wt 0.4]
+
+[se ad32]
+[charaShake F 0.04 2 4 0.2]
+[charaEffect F bit_talk_14]
+[wt 0.7]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaFace C 2]
+[charaFadein C 0.1 0]
+[charaFace D 5]
+[charaFadein D 0.1 2]
+[wt 0.4]
+
+[se ad73]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.1]
+
+[se ad171]
+[fowardEffect bit_talk_v_slash01]
+[wt 0.1]
+[seStop bac266 0.4]
+[wt 0.4]
+[se ad32]
+[charaShake F 0.04 2 3 0.2]
+[charaEffect F bit_talk_14]
+[wt 0.7]
+
+[effect bit_shot_01 0,-20]
+[wt 0.1]
+[se bac20]
+[wt 0.4]
+[se bac19]
+
+[effectDestroy bit_shot_01]
+
+[flashin once 0.1 0.1 FFFFFF4D FFFFFF00]
+[charaShake F 0.04 2 2 0.2]
+[se ad602]
+[wt 0.2]
+[flashin once 0.1 0.1 FFFFFF4D FFFFFF00]
+[charaShake F 0.04 2 2 0.2]
+[se ad602]
+[wt 0.2]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[charaFadeout A 0.1]
+[se ad171]
+[wt 0.1]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.1]
+[fowardEffect bit_talk_14]
+[wt 0.1]
+[se ad670]
+[shake 0.05 2 4 0.4]
+[wt 0.2]
+[cueSeStop ad670 0.5]
+
+
+[wt 1.0]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 16]
+[charaFadein E 0.4 1]
+[wt 0.4]
+＠BB
+呜！？　接了大家的全套攻击，[r]居然还不爆炸啊！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠玛修
+敌方Foreigner健在！[r]我本以为给对方造成了伤害……
+[k]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠玛修
+但那铠甲实在是太硬了……！[r]根本不起效果！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠BB
+…………[r]（这情况……看来没办法再隐瞒了……）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad1]
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+＠？？？
+Foreigner，格杀勿论。[r]从者庆典，必须毁灭。
+[k]
+
+＠？？？
+给我　记清楚了。[r]我的名字是　[#XX:Double X]。
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaFace F 10]
+[se bac66]
+[charaPut G 1]
+[charaEffect G bit_talk_charge_aura]
+[wt 1.5]
+[seStop bac66 0.4]
+
+＠F：XX
+[#消灭:猎杀]　Foreigner　的　Foreigner[line 3][r]Foreigner猎手，XX，是也！
+[k]
+
+[messageOff]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_charge_aura]
+[wt 0.4]
+[charaFadeout F 0.1]
+[wt 0.4]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+＠BB
+[messageShake 0.04 3 3 0.4]
+[charaShake E 0.04 3 3 0.4]
+！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠罗宾汉
+哇哦，那家伙还打算继续呢！[r]暂时撤退，只能跑到山那边了呢！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠BB
+不。身为特异点鲁鲁夏威的守护者，[r]我不能允许你继续这么放肆了。
+[k]
+
+＠BB
+事已至此，我也只能使用我隐藏的王牌了！[r]具体来说，就是[line 3]变身！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 0.4]
+
+
+[se ad249]
+[charaTalk off]
+
+[charaDepth H 1]
+[charaDepth E 0]
+[charaDepth G 5]
+[wt 0.1]
+[charaPut G 1]
+[charaEffect G bit_talk_fire_storm]
+
+[charaFace H 0]
+[charaFilter H silhouette 00000080]
+[charaFadein H 4.0 1]
+[wt 4.0]
+[seStop ad249 0.5]
+[charaEffectStop G bit_talk_fire_storm]
+[se bac325]
+[fowardEffect bit_talk_explosion]
+[seVolume bac325 0 0.7]
+[charaChange E 23002001 0 fade 1.0]
+[charaChange H 23002001 0 fade 1.0]
+[wait charaChange]
+[shake 0.05 1 2 2.0]
+[wt 1.5]
+[charaFadeout H 0.4]
+[charaPut G 1200,1200]
+[fowardEffectStop bit_talk_explosion]
+[wt 1.0]
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+
+＠E：BB？
+A～～lo～～ha～～～！[r]服装焕然一新，变得朋克·妖艳·野性！
+[k]
+
+＠E：BB？
+我就是嵌入了夏威夷岛女神佩蕾神核的newBB亲……
+[k]
+
+＠E：BB？
+没错！　也就是！　BB佩蕾！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+佩蕾[line 3]！　就是被誉为夏威夷版伊什塔尔小姐的[r]那位女神佩蕾吗？
+[k]
+
+？1：这比喻太简单易懂了。
+？2：感谢你的说明，玛修！
+
+？！
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 19]
+[charaFadein E 0.1 1]
+＠E：BB佩蕾
+没错，就是给夏威夷岛带来骚乱的女神，也是力量的象征，[r]破坏、再生，以及早熟的爱之女神☆
+[k]
+
+[charaFace E 6]
+
+＠E：BB佩蕾
+我再也不隐藏自己的真面目了！[r]我下令，立刻将ForeignerXX强制遣送出境～！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_4 0.4]
+[wait fade]
+[soundStopAll]
+[end]

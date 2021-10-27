@@ -1,0 +1,278 @@
+
+
+＄94-01-76-12-1-1
+[soundStopAll]
+
+[charaSet A 10004000 1 机械伊丽亲]
+[charaSet B 6031001 1 刑部姬]
+[charaSet C 99502600 1 玛修]
+[charaSet D 6026001 1 新宿的Assassin]
+[charaSet E 6027001 1 不～夜～亲]
+[charaSet F 98111500 1 达·芬奇]
+[charaSet G 6017001 1 卡米拉]
+[charaSet H 5009000 1 特效用dummy]
+
+[scene 48900]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_3 0.1]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠机械伊丽亲
+就算拥有[#性能:才能]，也毫无性格可言！[r]懈怠于自我锻炼的领主是没有未来的！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠刑部姬
+呜哇～输了～！[r]被普通地打倒＆被教育啦～！
+[k]
+
+[charaFace B 5]
+
+[bgmStop BGM_EVENT_3 0.7]
+
+＠刑部姬
+所以[#公主:我]要逃跑！[r]折纸，嘿！
+[k]
+
+[messageOff]
+
+[charaMoveReturn D 0,-10 0.2]
+[wait charaMove B]
+[se ad73]
+[charaFadeout B 0.1]
+[wt 0.3]
+[se ade123]
+[seVolume ade123 0 0.4]
+[wt 0.7]
+[seStop ade123 1.5]
+[wt 1.0]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠玛修
+坐着纸鹤逃跑了！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠机械伊丽亲
+又来了！[r]真是的，相当于重整旗鼓 A 级的逃跑水准呢！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠新宿的Assassin
+真……真顽强！[r]我自我感觉刚才那一击效果还不错呢！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠不～夜～亲
+这个嘛，好歹是公主殿下嘛。[r]所谓的公主，就是垂死挣扎的典范。
+[k]
+
+[charaFace E 1]
+
+＠不～夜～亲
+你想，她们大多被抓住之后也不会被杀掉。
+[k]
+
+＠不～夜～亲
+尽管可能沦为囚徒，或是遭到蹂躏，但还是能活下去，[r]只要精神、价值观没有崩溃，就算是胜利！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-90]
+
+＠达·芬奇
+总之，继续追踪吧！
+[k]
+
+[charaFace F 1]
+
+＠达·芬奇
+不过不断重复着追-逃-追-逃的这个过程，[r]给人一种传统游戏的感觉呢。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠玛修
+请等一下，御主。[r]前方出现了什么……
+[k]
+
+[messageOff]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.0]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[charaPut H 1200,1200]
+[wt 0.3]
+
+[charaSet B 1098119600 1 Amazones CEO]
+
+[wipein leftToRight 0.4 1]
+[wait wipe]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠玛修
+这是……
+[k]
+
+？1：是……电梯吗？
+？！
+
+[charaFace C 7]
+
+＠玛修
+看来，刑部姬小姐是坐着这个逃跑了吧。[r]若想追击，就不得不坐上这个……
+[k]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+？1：好，走吧！
+？！
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠机械伊丽亲
+当然了。我要将她的折纸[r]连同她丧家犬的本性打得渣都不剩！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠新宿的Assassin
+御主和机械伊丽气势真足呢！[r]好嘞，走吧！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠不～夜～亲
+朕也要一起乘坐～！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠卡米拉
+我自然也同行。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Amazones CEO
+一切都要顺利。[r]从下订单到当天发送。没错，Amazones能做到。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_4 0.7]
+[wipeout circleIn 0.4 1.0]
+[wait wipe]
+[charaFadeout B 0.1]
+[wt 1.0]
+[scene 10000]
+[wipein circleIn 0.4 1.0]
+[wait wipe]
+
+[se ade127]
+[seVolume ade127 0 0.05]
+[wt 0.1]
+[seVolume ade127 1.0 0.7]
+[wt 1.5]
+[seStop ade127 1.5]
+
+＠众人
+……[r]……
+[k]
+
+
+＠众人
+[f large]挤死了。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

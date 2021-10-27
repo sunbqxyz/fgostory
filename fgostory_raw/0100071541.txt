@@ -1,0 +1,508 @@
+
+
+
+
+
+
+
+＄01-00-07-15-4-1
+[soundStopAll]
+[charaSet A 98106200 1 梅林]
+[charaSet B 8001002 1 玛修]
+[charaSet C 2020001 1 伊什塔尔]
+[charaSet D 98003000 1 Dr.罗曼]
+[charaSet E 4018001 1 魁札尔·科亚特尔]
+[charaSet F 3027001 1 安娜]
+[charaSet G 98106000 1 金固]
+[charaSet H 3028001 1 豹人]
+
+[bgm BGM_EVENT_24 0.1]
+[scene 34700]
+[fadein black 1.5]
+[wait fade]
+
+[se ad13]
+[charaTalk D]
+[communicationChara 98003003 1 5 0 2]
+[wt 0.3]
+
+＠Dr.罗曼
+等等，停下来，梅林！[r]从你们那里向前三百公尺的地方有极强的神性反应！
+[k]
+
+＠Dr.罗曼
+是鲜血神殿！[r]发信号给魁札尔·科亚特尔！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠梅林
+好，来了，交给我吧！[r]那不列颠魔术．阿尔托莉雅开饭啦，咏唱！
+[k]
+
+[charaFadeout A 0.1]
+[messageOff]
+[se ad39]
+[effect bit_talk_21]
+[wt 0.7]
+[messageOff]
+[wipeout downToUp 0.4 1]
+[wait wipe]
+[effectStop bit_talk_21]
+[scene 20320]
+[wipein upToDown 0.4 1]
+[wait wipe]
+
+[effect bit_talk_22]
+[se bac132]
+[wt 3.0]
+[messageOff]
+[wipeout upToDown 0.4 1]
+[wait wipe]
+[scene 34700]
+[effectStop bit_talk_22]
+
+[wipein downToUp 0.4 1]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+
+＠玛修
+闪光弹！？[r]类似闪光弹的东西被打上去了，前辈！
+[k]
+
+？1：求刚才那个魔术名的详情！
+？2：惨了，得赶快逃！
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+
+＠伊什塔尔
+笨蛋，我们还没有避难啊！？[r]那种质量的东西就要砸过来了呀！？
+[k]
+
+＠伊什塔尔
+倘若不与着弹地点拉开三百公尺远的距离，[r]我们也会被冲击打飞的啊！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+
+＠梅林
+哎哟哟。抱歉，手滑。[r]嘿咻。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 0.4]
+[charaFadeout A 0.1]
+[se ad110]
+[messageOff]
+[se ad75]
+[seStop ad75 2.0]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[scene 32600]
+[wt 0.1]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+
+
+＠玛修
+啊。
+[k]
+
+
+＠伊什塔尔
+喂！？
+[k]
+
+
+＠安娜
+梅林必须死！
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[scene 34700]
+[wt 0.1]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr.罗曼
+[FFFFFF]？[-]　各位怎么了？[r]为什么突然在原地愣住了。发生什么了？
+[k]
+
+？1：梅林把……杖子……
+？2：向鲜血神殿的方向……扔过去了……
+
+？！
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[messageOff]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[scene 32600]
+[wt 0.4]
+[se ad239]
+[seVolume ad239 0 0.4]
+[seVolume ad239 2.0 0.95]
+[wt 2.0]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+[wt 1.2]
+[seStop ad239]
+[se ad237]
+[shake 0.01 8 8 4.0]
+[effect bit_talk_40]
+[scene 32610 2.0]
+[fadeout white 1.5]
+[wait fade]
+[wt 1.0]
+[fadein white 1.5]
+[effectStop bit_talk_40]
+[wait fade]
+
+
+[messageShake 0.03 5 5 1.0]
+＠魁札尔·科亚特尔
+Su[line 3]i[line 3]ci[line 3]da[line 3]！！！！！！？
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[scene 34700]
+[wt 0.1]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠玛修
+从相距好几公里遥远外的巴比伦这一侧都能听到[r]魁札尔·科亚特尔小姐的惨叫声……
+[k]
+
+＠玛修
+那位……已经……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠伊什塔尔
+嗯……真是次讨厌的事件……
+[k]
+
+[charaFadeout C 0.1]
+[charaSet C 98002000 1 芙芙]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠梅林
+哎呀，既然手滑了也没办法。
+[k]
+
+[charaFace A 4]
+＠梅林
+没想到杖子会变成指向标，把斧头引导到错误的地方去了呢，[r]真失败，真失败。
+[k]
+
+＠梅林
+不过嘛，最后马尔杜克之斧没能坠落到这里，[r]反倒直直地插入了鲜血神殿呢。
+[k]
+
+[charaFace A 1]
+＠梅林
+但多亏了这样，一切进展顺利哟，大家！[r]不能白白浪费魁札尔·科亚特尔宝贵的牺牲！
+[k]
+
+[charaFace A 0]
+＠梅林
+我们还是做好我们该做的事吧！[r]来吧，终于要决战了！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFadein C 0.1 1]
+[charaShake C 0.01 0 10 0.7]
+
+＠芙芙
+芙[line 2]芙芙芙[line 9]！
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout C 0.1]
+[scene 34600]
+[wt 1.0]
+[fadein black 1.5]
+[wt 0.5]
+[bgm BGM_EVENT_24 1.0]
+[wait fade]
+
+[se ad180]
+[wt 0.4]
+[effect bit_talk_14]
+[wt 0.1]
+[shake 0.05 5 5 0.7]
+[se ad170]
+[wt 1.4]
+
+[messageOff]
+[wipeout downToUp 0.4 1]
+[wait wipe]
+[scene 20320]
+[wt 0.1]
+[wipein upToDown 0.4 1]
+[wait wipe]
+
+[effect bit_talk_22]
+[se bac132]
+[seVolume bac132 0 0.2]
+[wt 3.0]
+
+[wipeout upToDown 0.4 1]
+[wait wipe]
+[effectStop bit_talk_22]
+[scene 34600]
+[wt 0.1]
+[wipein downToUp 0.4 1]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠魁札尔·科亚特尔
+（……是信号！）[r]游戏到此结束了哟，金固！
+[k]
+
+[se ad238]
+[shake 0.05 5 5 0.4]
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+＠金固
+马尔杜克之斧……！[r]居然把那东西从埃里都搬到这里来了[line 3]！？
+[k]
+
+[charaFace G 5]
+＠金固
+但是！
+[k]
+
+[se ad239]
+[seStop ad239 4.0]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.4]
+[charaMoveReturn G -80,0 0.4]
+[wt 0.5]
+[charaFace G 7]
+＠金固
+挥舞幅度这么大怎么可能打得到。[r]所谓的杀手锏，就得封住对方的行动后才能使用啊，烤鸡！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠魁札尔·科亚特尔
+怎么能叫人烤鸡呢，真失礼。
+[k]
+
+＠魁札尔·科亚特尔
+虽说我很想一把抓住你的脑袋塞进地下[r]让你好好反省，但是这次就先原谅你好啦。
+[k]
+
+[charaFace E 1]
+＠魁札尔·科亚特尔
+因为，一切都如我们的计划～！[r]那把斧头只是通行证而已！
+[k]
+
+＠魁札尔·科亚特尔
+我是能将委托物品准确送达的[r]优秀快递[line 3]
+[k]
+
+[messageOff]
+[fadeout white 0.5]
+[wait fade]
+[charaFadeout E 0.1]
+[se ad62]
+
+＠魁札尔·科亚特尔
+Su[messageShake 0.01 10 10 1.0][line 3]i[line 3]ci[line 3]da[line 3]！！！！！！？
+[k]
+
+
+[seStop ad62 1.5]
+[fadein white 1.5 1]
+[wait fade]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠豹人
+啊啊！　库库尔变成烤鸡了！[r]另外Suicida在西班牙语里是自杀的意思！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 2]
+[charaFadein H 0.1 0]
+
+
+＠魁札尔·科亚特尔
+不是什么烤鸡，是火鸟啦！[r]啊啊真是的，神罚都降下来了啊！
+[k]
+
+[charaFace H 1]
+＠豹人
+噢噢……库库尔身上原本满溢的神性……[r]竟然降到一半以下了！
+[k]
+
+＠豹人
+唔……虽然违背了女神的契约，[r]但由于不是基于自身的意愿，所以逃过一劫了喵？
+[k]
+
+[charaFace E 5]
+＠魁札尔·科亚特尔
+梅林，给我记住！
+[k]
+
+＠魁札尔·科亚特尔
+我绝对，绝[line 5]对[r]要用摔角的精髓来教训你！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+＠金固
+戈耳工的神性低下[line 3][r]莫非刚才那招把神殿破坏了！？
+[k]
+
+[charaFace G 2]
+＠金固
+魁札尔·科亚特尔……！[r]你这家伙就这么想与人类为伍吗！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+
+＠魁札尔·科亚特尔
+嘿呀！　虽然我没打算做到这种程度，[r]但从结果来说却确实做到这个份上了！
+[k]
+
+[charaFace E 0]
+＠魁札尔·科亚特尔
+啊，不过放心吧，金固。[r]我的协助就到此为止了。
+[k]
+
+＠魁札尔·科亚特尔
+我不会对戈耳工本人出手。[r]因为讨伐她是人类的职责。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+＠金固
+……！[r]糟了，那个[#女神的幼体]不在这里！
+[k]
+
+＠金固
+怎么会这样[line 3]唯独那个从者很危险！[r]得赶快去救她……去救戈耳工才行……
+[k]
+
+[charaFace G 5]
+＠金固
+你捡回一条小命了哦，魁札尔·科亚特尔！[r]等我救出戈耳工之后再来收拾你！
+[k]
+
+[messageOff]
+
+[charaSpecialEffect G erasureReverse 1 0.1]
+[charaEffect G bit_talk_21]
+[se ad73]
+[wt 0.1]
+[charaEffectStop G bit_talk_21]
+[wt 0.4]
+[se ad136]
+[wt 0.7]
+[seStop ad136 0.8]
+[wt 1.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠魁札尔·科亚特尔
+……真是的。[r]接下来就要看[%1]的运气了。
+[k]
+
+＠魁札尔·科亚特尔
+不过真意外。[r]金固居然真心为戈耳工担心。
+[k]
+
+＠魁札尔·科亚特尔
+虽然他也在利用戈耳工，[r]但那孩子其实也有自己爱她的方式吧……？
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_24 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]
+

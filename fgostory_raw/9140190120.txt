@@ -1,0 +1,78 @@
+＄91-40-19-01-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[scene 20300]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98003000 2 Dr.罗曼]
+[charaSet C 98002000 2 芙芙]
+[charaSet D 4019001 1 玛尔达]
+[charaSet E 98006100 1 ？？？]
+[charaTalk A]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace A 2]
+[charaFadein A 0 2]
+[fadein black 1]
+[wait fade]
+＠玛修
+战斗结束，不[line 2]又来了！[r]发现后续群体！
+[k]
+
+[charaFace D 2]
+＠玛尔达
+真是没完没了啊！[r]你们他妈烦不烦啊！
+[k]
+
+[charaFace A 6]
+＠玛修
+哎？
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr.罗曼
+呃？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+＠芙芙
+芙？？
+[k]
+
+？1：玛尔达小姐，刚才你[line 2]
+
+？2：一定是我听错了。
+
+？！
+
+[charaFadeout C 0.1]
+[charaFace D 1]
+[charaFadein D 0.1]
+＠玛尔达
+发生什么事了，各位？[r]来，让我们再加一把劲。Fights！
+[k]
+
+？1：Fights！
+
+？2：果然是我听错了。
+
+？！
+
+[charaFace A 2]
+＠玛修
+呃，唔，嗯。继续战斗吧！[r]前辈，请下达指示！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

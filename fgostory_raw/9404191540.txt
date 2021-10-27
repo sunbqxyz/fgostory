@@ -1,0 +1,782 @@
+
+
+＄94-04-19-15-4-0
+
+[soundStopAll]
+
+[charaSet A 11009300 1 阿斯塔蒂·起源]
+[charaSet B 2037000 1 简]
+[charaSet C 1098187200 1 伊什塔尔·阿斯塔蒂]
+[charaSet E 11009001 1 S伊什塔尔]
+[charaSet F 6018002 1 X]
+[charaSet I 98115000 1 特效用1]
+[charaSet J 98115000 1 特效用2]
+
+[scene 83800]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0 1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaFace C 2]
+
+＠伊什塔尔·阿斯塔蒂
+到此为止，胜负已定。[r]我要用这[#一踹:一击]将你狠狠打飞……！
+[k]
+
+[messageOff]
+[charaFadeout C 0.3]
+[wt 0.1]
+
+[wipeout rectangleStripLeftToRight 0.2 1]
+[wait wipe]
+
+[charaTalk depthOff]
+[charaDepth I 1]
+[charaDepth J 2]
+
+
+[charaPut J 250,-50]
+[charaRoll J 30 0,0]
+[charaEffect J bit_talk_arrow01or]
+
+[wipein rectangleStripRightToLeft 0.2 1]
+[wait wipe]
+
+[wt 0.7]
+[se adm15]
+[wt 0.5]
+
+[charaEffectStop J bit_talk_arrow01or]
+[charaPut I 0,200]
+[charaEffect I bit_talk_shock_wave]
+[shake 0.04 8 10 0]
+[cueSe Battle bac54]
+[cueSe NoblePhantasm_300400 NP_300400_11]
+[wt 0.3]
+[fowardEffect bit_talk_explosion_triple02]
+[se ad38]
+[se ad608]
+[se ad609]
+[seVolume ad609 0 0.6]
+[maskout white 1.0]
+[skip true]
+[seStop ad38 2.0]
+[seStop ad608 2.0]
+[seStop ad609 2.0]
+[wait mask]
+[effectDestroy]
+[fowardEffectDestroy]
+[charaEffectDestroy I]
+[scene 10001]
+[wt 0.3]
+
+[scene 83800]
+[charaTalk A]
+[charaFace A 2]
+[charaScale A 0.83]
+[charaFadein A 0.1 0,-40]
+[wt 0.2]
+[maskin white 0.3]
+[wt 0.1]
+[shakeStop]
+[wait mask]
+
+[wt 0.3]
+
+＠阿斯塔蒂·起源
+咕，啊…………！[r]这，这不……可能……！
+[k]
+
+＠阿斯塔蒂·起源
+『我』，居然会被……[r]刚诞生的银河拉开距离[line 3]！
+[k]
+
+[messageOff]
+[fadeout black 0.4]
+[wait fade]
+[charaFadeout A 0.1]
+[scene 83503]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+[wt 0.2]
+[imageSet A back83701 1]
+[imageSet D back83701 1]
+[imageSet G back83701 1]
+[imageSet H back83701 1]
+[charaScale A 1.01]
+[charaScale D 1.01]
+[charaScale G 1.01]
+[charaScale H 1.01]
+[fadein black 0.4]
+[wait fade]
+
+＠简
+呜哇，起源的[#女神:那个]居然被[r]打飞了1秒差距，这是有多厉害～！？
+[k]
+
+＠简
+话说这已经是概念宇宙的级别了吧，[r]现在没空惊讶了！
+[k]
+
+＠简
+我得好好完成侦察兵的工作才行！
+[k]
+
+[charaFace B 2]
+
+＠简
+要上了哦～，星辰，开启！[r]『极星啊，再次照亮人类的威胁吧！』
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+[charaFadeout B 0]
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth D 2]
+[charaDepth G 3]
+[charaDepth H 4]
+[scene 83701]
+[charaPut A -5,-195]
+[charaFadeTime A 0 0.3]
+[charaPut D 5,-205]
+[charaFadeTime D 0 0.3]
+[charaPut G -5,-205]
+[charaFadeTime G 0 0.3]
+[charaPut H 5,-195]
+[charaFadeTime H 0 0.3]
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[cueSe NoblePhantasm_900500 NP_900500_6]
+[cueSeVolume NP_900500_6 0 0.0]
+[wt 0.5]
+[cueSeVolume NP_900500_6 0.5 1.0]
+[wt 1.0]
+
+[cueSeStop NP_900500_6 1.0]
+[charaMove A 0,-200 0.5]
+[charaMove H 0,-200 0.5]
+[charaMove D 0,-200 0.5]
+[charaMove G 0,-200 0.5]
+
+[wt 0.4]
+[charaFadeout A 0.4]
+[charaFadeout D 0.4]
+[charaFadeout G 0.4]
+[charaFadeout H 0.4]
+
+[wt 2.0]
+
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+[scene 83503]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0 1]
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[charaFace B 2]
+
+＠简
+找到了！　尽管不太明白，但成功观测到了！[r]伊什塔凛，影子与本体的焦点一致了～！
+[k]
+
+[charaFace B 1]
+
+＠简
+好机会好机会～！[r]现在应该能用“相同的攻击”干掉她！
+[k]
+
+[messageOff]
+[fadeout black 0.4]
+[wait fade]
+[charaFadeout B 0.1]
+[scene 83800]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+[charaSet A 11009300 1 阿斯塔蒂·起源]
+[imageSet E cut141_asto05 1]
+[imageSet F cut141_asto02 1]
+[charaScale E 1.01]
+[charaScale F 1.01]
+[wt 0.2]
+[fadein black 0.4]
+[wait fade]
+
+＠伊什塔尔·阿斯塔蒂
+不愧是传说中的太空侦察兵，[r]时机太完美了！
+[k]
+
+[messageOff]
+[fadeout black 0.4]
+[wait fade]
+[charaFadeout C 0.1]
+[scene 83701]
+[wt 0.2]
+[fadein black 0.4]
+[wait fade]
+
+[charaFadein E 0.1 0,-200]
+
+＠阿斯塔蒂·起源
+拉开了距离[line 3][r]不，是『我』被……疏远了吗[line 3]？
+[k]
+
+＠阿斯塔蒂·起源
+不可能。[r]唯独不允许发生这种事……！
+[k]
+
+＠阿斯塔蒂·起源
+『[#我:你]』可以提升到[r]与『我』相同的次元。这是必然。
+[k]
+
+＠阿斯塔蒂·起源
+相同的灵基、相同的概念、相同的起源。[r]哪怕理念不同，性能也没有差距。
+[k]
+
+＠阿斯塔蒂·起源
+没错[line 3]但绝对不可能出现『差距』。
+[k]
+
+＠阿斯塔蒂·起源
+当『我们』发生争斗，[r]除两败俱伤以外，不可能有其他结局。
+[k]
+
+＠阿斯塔蒂·起源
+然而，为什么[line 3][r]为什么，只有这边，如此[#冰冷:古老][line 3]
+[k]
+
+[charaDepth E 1]
+[charaDepth F 2]
+
+[charaFadein F 0.1 0,-200]
+[wt 0.1]
+[charaFadeout E 0.1]
+
+＠阿斯塔蒂·起源
+有什么不同？　究竟有什么不同？[r]『[#我:你]』和『我』[line 3]！
+[k]
+
+[messageOff]
+[fadeout black 0.4]
+[wait fade]
+[charaFadeout F 0.1]
+[scene 83800]
+[wt 0.2]
+[fadein black 0.4]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.2 1]
+[wt 0.3]
+
+＠伊什塔尔·阿斯塔蒂
+……这是因为，[r]你只打算立足于过去前进。
+[k]
+
+[messageOff]
+[wt 0.6]
+
+[charaFace C 2]
+
+＠伊什塔尔·阿斯塔蒂
+[line 3]这是最后一击，起源！[r]必杀一击是半个宇宙的尺寸，特别为你定制的专用弹！
+[k]
+
+＠伊什塔尔·阿斯塔蒂
+不用客气，收下吧！[r]破例由我买单！
+[k]
+
+[messageOff]
+[se ad39]
+[effect bit_talk_36]
+[wt 1.5]
+[effectStop bit_talk_36]
+[wt 0.5]
+
+[se bac176]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[fadeout white 1.5]
+[wt 1.3]
+[seStop bac176 0.5]
+[wait fade]
+[charaFadeout C 0.1]
+[scene 84600]
+[shake 0.05 8 6 1.6]
+[cameraMove 0 0,0 1.01]
+[fadein white 0.5]
+[se ad38]
+[se ad609]
+[seVolume ad609 0 0.6]
+[wait fade]
+
+＠阿斯塔蒂·起源
+逐渐消失[line 3]逐渐冰冷[line 3][r]『我』的[#生命:形态]，逐渐回归天空[line 3]
+[k]
+
+＠阿斯塔蒂·起源
+啊啊[line 3]难道又只剩『我』一个，[r]被你们……抛下[line 3]？
+[k]
+
+＠阿斯塔蒂·起源
+……不。不能原谅，不能忘记。[r]决不能，决不能！
+[k]
+
+＠阿斯塔蒂·起源
+我不承认，不承认这种[#结局:未来]……！
+[k]
+
+＠阿斯塔蒂·起源
+如果原始宇宙，和苍辉银河，[r]都拒绝我的话，就去更遥远的过去！
+[k]
+
+＠阿斯塔蒂·起源
+哪怕『我』烟消云散，[r]哪怕『我』的残渣怎样劣化[line 3]
+[k]
+
+＠阿斯塔蒂·起源
+我也一定，会向你们人类复仇[line 3]！
+[k]
+
+[effect bit_talk_explosion_triple02]
+[se ad34]
+[se ad64]
+[wt 1.0]
+[fadeout white 1.0]
+
+＠阿斯塔蒂·起源
+[f medium][messageShake 0.05 7 5 0.7]啊啊[line 3]啊啊啊[line 3][r]啊[line 3]啊啊啊啊啊啊啊啊[line 6]！！！！！！
+[k]
+
+[messageOff]
+[wait fade]
+[seStop ad34 1.0]
+[seStop ad64 1.0]
+[cameraHome 0.1]
+[scene 83701]
+[bgmStop BGM_EVENT_24 1.2]
+[wt 1.0]
+[fadein white 2.0]
+[wait fade]
+
+[wt 3.0]
+
+[fadeout black 2.0]
+[wait fade]
+[scene 83503]
+
+[charaSet E 11009001 1 S伊什塔尔]
+[charaSet F 6018002 1 X]
+[wt 1.5]
+[fadein black 2.0]
+[wait fade]
+
+[wt 0.5]
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠简
+啊，伊什塔凛回来啦～☆[r]欢迎回来～！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.2 0,50]
+[wt 0.1]
+[charaMove E 1 0.3]
+[se ad223]
+
+[charaFace E 29]
+
+＠S伊什塔尔
+唔呀，累死我了……[r]这发展连我自己都觉得莫名其妙呢……
+[k]
+
+＠S伊什塔尔
+和阿斯塔蒂的记忆混在一起，[r]光是站在这里都会感到内心燃烧般炙热，
+[k]
+
+＠S伊什塔尔
+要把握原子可是相当不容易的，[r]我连自己是大是小都搞不清楚，
+[k]
+
+[charaFace E 25]
+
+＠S伊什塔尔
+总之，我再也不想变成那种灵基了！[wt 0.6][charaFace E 1][r]还是这样的我最好！
+[k]
+
+？1：辛苦啦。
+？2：连旁观的我都觉得莫名其妙。
+
+？！
+
+[charaFace E 9]
+
+＠S伊什塔尔
+哇哇，你居然在甲板等我啊！？[r]这里太危险了，干嘛不回驾驶舱啦！？
+[k]
+
+[charaFace E 3]
+
+＠S伊什塔尔
+（话说我为什么要这样慌张啦！？[r]　阿斯塔蒂！？　是受阿斯塔蒂的影响吗！？）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠简
+你们俩感情真不错～☆[r]想拥抱就回船里拥抱[line 3]呃，[wt 0.1][messageShake 0.07 7 6 0.3][bgmStop BGM_EVENT_2 0.3][charaFace B 2]哎哎哎！？
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠简
+上面，上面！　你们俩，上面[line 3]！[r]巴耳·马安娜要掉下来了[line 4]！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 31]
+[charaFadein E 0.1 1]
+
+＠S伊什塔尔
+！？　起源都消灭了，[r]神殿居然还在？
+[k]
+
+＠S伊什塔尔
+等下，那个来了，倒下来了[line 3]！？[r]来不及了吧[line 3]！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠简
+呀啊[line 4]！[r]要被巨大的伊什塔凛砸扁啦[line 3]！
+[k]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+＠？？？
+[charaTalk F]
+放心吧，危机时刻靠Saber！[r]但这是停不下来的所以你们稍微退后一点[line 3]！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+[charaFadeout B 0.1]
+[scene 83701]
+[wt 0.2]
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+？1：这声音是！？
+？2：Saber忍法！
+
+？！
+
+＠？？？
+哎，既然你们不退那就只有摧毁了！
+[k]
+
+＠？？？
+上，第二宝具，[r]就在刚才重生的银河流星剑XEX！
+[k]
+
+＠？？？
+只要是物理实体，就没有斩不断的对象[line 3]！
+[k]
+
+[messageOff]
+[se ad682]
+[effect bit_talk_gram_slash_03]
+[effect bit_talk_gram_slash_03 0,0 H]
+[wt 0.5]
+
+[seStop ad682 0.2]
+[charaEffect I bit_talk_explosion 120,-100]
+[se ad38]
+[se ad608]
+[shake 0.07 4 2 1.2]
+[wt 0.6]
+[seStop ad38 0.3]
+[seStop ad608 0.3]
+
+[charaEffect J bit_talk_explosion -100,40]
+[se ad608]
+[se ad609]
+[seVolume ad609 0 0.6]
+[shake 0.07 3 5 1.5]
+[wt 0.7]
+[seStop ad608 0.3]
+[seStop ad609 0.3]
+
+[charaEffect J bit_talk_explosion]
+[se ad38]
+[se ad608]
+[se ad609]
+[seVolume ad609 0 0.6]
+[shake 0.07 8 10 1.5]
+[wt 1.0]
+[seStop ad38 0.3]
+[seStop ad608 0.3]
+[seStop ad609 0.3]
+
+[charaEffect I bit_talk_explosion -120,-70]
+[se ad38]
+[se ad608]
+[shake 0.07 4 2 1.2]
+[wt 0.6]
+[seStop ad38 0.3]
+[seStop ad608 0.3]
+
+[charaEffect J bit_talk_explosion_triple02]
+[se ad38]
+[se ad608]
+[se ad609]
+[seVolume ad609 0 0.6]
+[shake 0.07 8 10 1.5]
+[wt 1.0]
+[seStop ad38 0.3]
+[seStop ad608 0.3]
+[seStop ad609 0.3]
+
+[effect bit_talk_explosion 60,140]
+[se ad608]
+[se ad609]
+[seVolume ad609 0 0.6]
+[shake 0.07 3 5 1.5]
+[wt 0.7]
+[seStop ad608 0.3]
+[seStop ad609 0.3]
+
+[effect bit_talk_explosion -100,40]
+[se ad608]
+[se ad609]
+[seVolume ad609 0 0.6]
+[shake 0.07 3 5 1.5]
+[wt 0.7]
+[seStop ad608 0.3]
+[seStop ad609 0.3]
+
+[effect bit_talk_explosion_triple02]
+[se ad38]
+[se ad608]
+[se ad609]
+[seVolume ad609 0 0.6]
+[shake 0.07 8 10 1.5]
+[wt 1.0]
+
+[fadeout white 1.2]
+[wait fade]
+[effectDestroy]
+[seStop ad38 0.5]
+[seStop ad608 0.5]
+[seStop ad609 0.5]
+[scene 83503]
+[wt 1.2]
+[fadein white 1.0]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠X
+咳咳，[charaMoveReturn F 0,-5 0.4][wt 0.4]咳咳！[charaMoveReturn F 0,-5 0.4][wt 0.4]
+[k]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠X
+总感觉这座建筑物和某个人很像，[r]究竟发生了什么啊！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[effectDestroy]
+[fowardEffectDestroy]
+
+[charaTalk off]
+[charaFace B 6]
+[charaFace E 7]
+[charaFadein B 0.1 0]
+[charaFadein E 0.1 2]
+
+＠简＆S伊什塔尔
+X！？
+[k]
+
+？1：你平安无事啊！
+
+？！
+
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠X
+嗯，当然啦。[r]我回来啦，[%1]。
+[k]
+
+＠X
+不。[r]其实当我被黑暗马安娜的爆炸炸飞的时候，
+[k]
+
+＠X
+我确信『好嘞，这次总算能痛快地死去了！』。[r]实际上我也的确去到了那个世界，
+[k]
+
+[charaFace F 0]
+
+＠X
+……该怎么说呢，总觉得我好像被某个人[r]教训了一顿，随后被赶回来了。
+[k]
+
+＠X
+类似什么……[r]『现在是点心时间，你别回来了。』
+[k]
+
+[charaFace F 1]
+
+
+＠X
+那之后，我被麻雀们搭救，恢复了体力，
+[k]
+
+＠X
+探测到这里出现强烈以太反应，[r]就抓紧赶来这里。
+[k]
+
+[charaFace F 4]
+
+＠X
+呃……[r]然后呢，太空神阴流怎么样了？
+[k]
+
+＠X
+我本打算在这里全力表现自己。[r]刚才那下最多也就左中二垒安打的程度吧……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 30]
+[charaFadein E 0.1 1]
+
+＠S伊什塔尔
+[line 3]呵，呵呵，啊哈哈哈哈！
+[k]
+
+＠S伊什塔尔
+一击破坏了巴耳·马安娜，[r]居然还那么精神，从者还真是的！
+[k]
+
+＠S伊什塔尔
+看来区区『原始女神』什么的[r]根本够不上成为宇宙危机呢！
+[k]
+
+？1：S伊什塔尔？
+？2：X老师算是相当破格的存在哦？
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠简
+没事啦没事啦。既然伊什塔凛这么认为，[r]这一定就是真相吧。
+[k]
+
+＠简
+在经历了如此严重事件后依然能笑得出来。[r]无论自己是谁都能笑得出来。
+[k]
+
+＠简
+到处都是破格的事，破格的事无需在意。[r]至少，在这苍辉银河就是这样☆
+[k]
+
+？1：原来如此！
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠X
+大家一起和睦地笑着，[r][%1]、伊什塔尔、简……
+[k]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+＠X
+怎么看都是要播放工作人员名单的时候了吧……[r]事件已经完全结束了吧……
+[k]
+
+＠X
+虽说我已经隐约意识到了……
+[k]
+
+[bgm BGM_EVENT_27 0.1]
+
+[charaFace F 7]
+
+＠X
+[f medium][messageShake 0.06 8 5 0.7]但这压根就不是什么Saber Wars！[r]几乎完全没有我的戏份吧！？
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_27 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

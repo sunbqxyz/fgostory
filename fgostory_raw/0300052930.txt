@@ -1,0 +1,729 @@
+
+＄03-00-05-29-3-0
+
+
+[soundStopAll]
+
+[charaSet A 1098124500 1 达·芬奇]
+[charaSet B 1038000 1 伊阿宋]
+[charaSet C 9005001 1 福尔摩斯]
+[charaSet D 1098158300 1 尼莫]
+[charaSet E 8001410 1 玛修]
+[charaSet F 1098123200 1 戈尔德鲁夫]
+[charaSet G 98002000 1 芙芙]
+
+[charaSet J 98115000 1 特效用dummy]
+
+[scene 84801]
+
+[se ad60]
+[seVolume ad60 0 0.1]
+[wt 0.1]
+[seVolume ad60 1.0 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 2.0]
+
+[scene 85601 2.0]
+[wt 2.0]
+[seStop ad60 1.0]
+[wt 1.5]
+
+[se ad746]
+[wt 1.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[seStop ad746 1.0]
+[wt 1.0]
+
+[scene 86200]
+
+[se ad8]
+[fadein black 1.5]
+[wait fade]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠达·芬奇
+欢迎回来，三位！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠伊阿宋
+我可是客人哦。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠达·芬奇
+好啦好啦，不必在意这种细节。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+……[r]……唔。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 0]
+
+[charaFace C 6]
+[charaFadein C 0.1 2]
+
+＠伊阿宋
+福尔摩斯，别用那种眼神看我。[r]滚边去，去去。
+[k]
+
+[charaFace C 8]
+
+＠福尔摩斯
+哎呀，抱歉。[r]这就是所谓的职业病吧。
+[k]
+
+[charaFace C 7]
+
+＠福尔摩斯
+你能回到这里让我们信心倍增。
+[k]
+
+[charaFace B 21]
+
+＠伊阿宋
+别说这种言不由衷的话，侦探。[r]不过也罢。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠伊阿宋
+好了，出发前去『[#虚无之洞:Big Hole]』！
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_77 1.5 0.5]
+[fadeout black 1.5]
+[se ad746]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[seStop ad746 1.5]
+[fadein black 1.5]
+[wait fade]
+
+
+[bgm BGM_EVENT_77 1.0 1.0]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠尼莫
+……？
+[k]
+
+＠尼莫
+[%1]，[r]你能用潜望镜确认一下空想树吗？
+[k]
+
+？1：明白了。
+？！
+
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.5]
+[wipeout rectangleStripUpToDown 0.7 1]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[se ad540]
+[scene 84903]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.7 1]
+[wait wipe]
+[wt 4.0]
+
+[wipeout rectangleStripDownToUp 0.7 1]
+[wait wipe]
+[scene 86200]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.7 1]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠玛修
+御主，看到什么了吗？
+[k]
+
+？1：空想树……有点奇怪。
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠尼莫
+我将潜望镜的影像放出来吧。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad15]
+[wt 0.5]
+[se ad1]
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠戈尔德鲁夫
+唔？[r]并没有什么不一样吧？
+[k]
+
+＠戈尔德鲁夫
+非要说的话，[r]就是比其他空想树……[wt 1.2][charaFace F 7]唔？
+[k]
+
+[charaFace F 8]
+
+＠戈尔德鲁夫
+这……这是什么啊！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+是透明的呢。[r]……果然是[#海市蜃楼吗]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠戈尔德鲁夫
+果然？
+[k]
+
+[charaFace F 10]
+
+＠戈尔德鲁夫
+……啊，原来你在那场战斗中[r]思考的问题就是这件事吗！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+说得没错。[r]那棵空想树无法砍伐，只是幻影而已。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠玛修
+这……这是怎么回事！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 1.5]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+星间都市山脉奥林波斯[r]并不在上空[line 3]恰恰相反。
+[k]
+
+＠福尔摩斯
+[#它存在于地底深处]！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace A 5]
+[charaFadein A 0.1 2]
+
+[charaFace D 5]
+[charaFadein D 0.1 0]
+
+[wt 1.2]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaFace F 5]
+[charaFadein F 0.1 2]
+
+[charaFace B 5]
+[charaFadein B 0.1 0]
+
+[wt 1.2]
+
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+[wt 1.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+
+[bgm BGM_EVENT_72 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+＠戈尔德鲁夫
+就是那啥吗？[r]所谓的地球空洞说！？
+[k]
+
+＠戈尔德鲁夫
+怎么可能……[r]但这种假说很早以前就被否定了啊！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+以前我曾经调查过，[r]在时钟塔地底有一个巨大的灵墓吧？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+＠戈尔德鲁夫
+灵墓阿尔比恩！？
+[k]
+
+＠戈尔德鲁夫
+可是，不对。
+[k]
+
+＠戈尔德鲁夫
+时钟塔地底与大西洋正中央根本是两码事吧！？
+[k]
+
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+……这恐怕就是空想树开花后的力量吧。
+[k]
+
+＠福尔摩斯
+藉由空想树，[r]将本不应存在的空间与现实连结。
+[k]
+
+[charaFace C 5]
+
+＠福尔摩斯
+[#在这个异闻带中]，[#洞穴的对面才是现实]。
+[k]
+
+＠福尔摩斯
+原来如此，难怪基尔什塔利亚的领域[r]会被称为是最大的。
+[k]
+
+＠福尔摩斯
+Shadow Border是通过魔术性扩张来维持空间的……
+[k]
+
+＠福尔摩斯
+而擅长『阵地建造』的Caster[r]也能扩张自身的领地。
+[k]
+
+＠福尔摩斯
+但这种行为，[r]就像是对地球这一巨大的容器进行加工。
+[k]
+
+＠福尔摩斯
+与其他的有如天壤之别。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+＠戈尔德鲁夫
+那……那就算我们砍伐眼前的空想树[line 3]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+没有任何意义。[r]所以答案只有一个。
+[k]
+
+＠福尔摩斯
+我们不是要上升，而是下降。[r]要一头扎进那『[#虚无之洞:Big Hole]』里面呢。
+[k]
+
+[charaFace C 5]
+
+＠福尔摩斯
+恐怕奥林波斯最后的守门者波塞冬就在那里吧！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_72 2.0]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠尼莫
+……总之是要向那洞穴潜航吧。[r]不错，简单易懂！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+＠戈尔德鲁夫
+喂喂，要靠近洞穴是没关系，[r]但千万别掉进去哦？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠尼莫
+我知道啦。[r]我会边接近边环绕洞穴观察情[line 3]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad815]
+[shake 0.05 2 3 1.5]
+[wt 1.2]
+
+[se ad9]
+[flashin loop 0.7 0.7 FF333380 FF333300]
+[wt 2.8]
+
+[flashOff]
+[seStop ad9 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠尼莫
+呜……被拽住了！？[r]急速上浮！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+＠戈尔德鲁夫
+你看，我就说嘛[line 3]！！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad797]
+[shake 0.05 2 3 1.5]
+[wt 0.8]
+[se ad776]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠尼莫
+一……一股极其强大的重力[r]正把我们拖往『[#虚无之洞:Big Hole]』！[seStop ad776 3.0]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+不，抵抗反而会加重Storm Border的负担。[r]这时应该任其摆布！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠尼莫
+但会掉进洞里[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+如果我的推测没错的话，[r]我们是不会摔死的。
+[k]
+
+＠福尔摩斯
+这应该理解成[#海神]的邀请函吧！
+[k]
+
+[charaFace C 6]
+
+＠福尔摩斯
+……情况就是这样，[r]您意见如何呢，司令官！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+＠戈尔德鲁夫
+我还能有什么意见啊，[r]不是都以此为前提在行动了吗！？
+[k]
+
+[se ad776]
+[shake 0.05 3 3 0.8]
+[charaFace F 13]
+
+＠戈尔德鲁夫
+不要啊～！　要掉下去啦～！[r]（※撕心裂肺的凄厉惨叫声。）[seStop ad776 3.0]
+[k]
+
+？1：不要啊～！！
+
+[charaFace F 8]
+
+＠戈尔德鲁夫
+哎，怎么感觉你有点从容呢！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+？2：这就像云霄飞车……！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠玛修
+对，御主，没错！
+[k]
+
+＠玛修
+虽然我并没有体验过云霄飞车[line 3]
+[k]
+
+[charaFace E 2]
+
+＠玛修
+但我认为这应该更为激烈！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[charaMoveReturn G 0,30 0.4]
+＠芙芙
+芙[line 2]呜！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠尼莫
+好了，向大家说个好消息。
+[k]
+
+＠尼莫
+我们已经抵达『[#虚无之洞:Big Hole]』，[r]也就是说，接下来会一路下坠！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth A 4]
+[charaDepth E 5]
+[charaDepth F 6]
+
+[charaTalk off]
+
+[charaFace E 2]
+[charaFadein E 0.1 350,0]
+
+[charaFace F 9]
+[charaFadein F 0.1 80,0]
+
+[charaFace A 2]
+[charaFadein A 0.1 -150,0]
+
+[charaFace C 2]
+[charaFadein C 0.1 -350,0]
+
+＠全员
+[f large]不要啊[line 2]！！
+[k]
+
+[messageOff]
+[se ad745]
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[charaTalk on]
+
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[wipein rectangleStripDownToUp 0.1 1.0]
+[wait wipe]
+[seStop ad745 2.0]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_80 2.0]
+[wait fade]
+[soundStopAll]
+[end]

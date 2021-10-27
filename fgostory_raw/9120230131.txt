@@ -1,0 +1,1194 @@
+
+＄91-20-23-01-3-1
+
+[soundStopAll]
+
+[charaSet A 98001000 1 玛修]
+[charaSet B 9005001 1 福尔摩斯]
+[charaSet C 2023002 1 莫里亚蒂]
+[charaSet D 6005001 1 杰克]
+[charaSet E 1098124500 1 达·芬奇]
+[charaSet F 5004001 1 童谣]
+[charaSet G 1098189100 1 莫里亚蒂_通信]
+[charaSet H 2023001 1 莫里亚蒂（？）]
+
+[charaSet I 98115000 1 特效用]
+[charaSet J 98115000 1 特效用]
+
+[charaSet K 2023001 1 莫里亚蒂剪影]
+[charaSet L 9005001 1 福尔摩斯剪影]
+[charaFilter K silhouette 000000AA]
+[charaFilter L silhouette 00000080]
+
+[sceneSet M 29500 1]
+[charaScale M 1.01]
+
+[imageSet N cut106_trans 1]
+[charaScale N 1.5]
+
+[charaSet O 98115000 1 特效用3]
+
+[scene 10953]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠莫里亚蒂
+很好，暂时将敌人击退了。[r]快跑！
+[k]
+
+[messageOff]
+[se ad456]
+[wt 0.1]
+[se ad59]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_80 1.0]
+[wait fade]
+
+[seStop ad456 0.5]
+[seStop ad59 0.5]
+[charaFadeout C 0.1]
+[wt 1.5]
+[scene 66400]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠福尔摩斯
+怎么样了？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+是。
+[k]
+
+＠玛修
+『暂时将敌人击退了。快跑！』[r]是莫里亚蒂先生的声音。
+[k]
+
+[charaFace A 12]
+
+＠玛修
+这是最后一句，[r]之后通讯就完全中断了。
+[k]
+
+＠玛修
+虽然还能追踪到生命信号……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 24]
+[charaFadein E 0.1 1]
+
+＠达·芬奇
+那雾和以前在伦敦出现的一样吧……
+[k]
+
+[charaFace E 14]
+
+＠达·芬奇
+看来只能暂时等待通讯恢复了。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad13]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+……！[r]通讯恢复了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠达·芬奇
+哎呀，比预料的还要快呢。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠福尔摩斯
+唔……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad539]
+[charaPut I 1]
+[charaEffect I bit_talk_10_LowLevel]
+[wt 0.3]
+[seStop ad539 0.3]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠G：莫里亚蒂
+喂，能听到吗～？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut I 0]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFace G 0]
+[charaFadein A 0.1 2]
+[charaFadein G 0.1 0]
+
+＠玛修
+是，我们听得到。[r]莫里亚蒂先生。
+[k]
+
+＠玛修
+御主没事吧？
+[k]
+
+＠G：莫里亚蒂
+……[r]……
+[k]
+
+[charaFace A 12]
+
+＠玛修
+莫里亚蒂先生？
+[k]
+
+＠G：莫里亚蒂
+嗯，当然没事。[r]不过那啥。
+[k]
+
+[charaFace G 4]
+
+＠G：莫里亚蒂
+抱歉，通讯的状况好像不太好。[r]回答有些延迟，请别在意。
+[k]
+
+[charaFace A 0]
+
+＠玛修
+没，只有2、3分钟的延迟而已。
+[k]
+
+＠玛修
+只要不是紧急情况，应该不会有什么影响。[r]请问你们现在在哪里？
+[k]
+
+[messageOff]
+[charaFace G 0]
+[charaTalk G]
+[wt 1.0]
+
+＠G：莫里亚蒂
+我们躲在魔术协会的地下了。[r]万幸的是这里没人。
+[k]
+
+＠G：莫里亚蒂
+只要状况可以允许我们安全返回，[r]记得通知我们！
+[k]
+
+＠玛修
+明白了。[r]请稍等一下。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠福尔摩斯
+……[r]……
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_70 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 21410]
+[wt 1.0]
+
+[charaEffectStop I bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠莫里亚蒂
+……好了。[r]很好很好，计划非常顺利。
+[k]
+
+？1：计划……指什么啊？
+
+[bgm BGM_EVENT_77 0.1]
+[charaFace C 0]
+＠莫里亚蒂
+好啦好啦，现在没多少时间了，[r]我们赶快行动吧。
+[k]
+
+？2：不会吧，难道这也是！？
+
+[bgm BGM_EVENT_77 0.1]
+[charaFace C 0]
+＠莫里亚蒂
+好啦好啦，希望你仔细听我说。
+[k]
+
+？！
+
+＠莫里亚蒂
+杰克，拜托你去四周戒备。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠杰克
+好的好的～。
+[k]
+
+？1：你究竟想……？
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠莫里亚蒂
+接下来……
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_77 0.7 0.5]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[charaTalk off]
+[wt 0.5]
+[se ad311]
+[wt 1.8]
+[charaTalk depthOff]
+[charaDepth F 6]
+[charaDepth H 4]
+
+[charaFace H 0]
+[charaPut O 1]
+[charaEffect O bit_talk_06b2]
+[charaFadein H 0.7 1]
+[wt 1.0]
+[seStop ad311]
+[wt 1.0]
+
+
+
+？1：又是莫里亚蒂……？
+？！
+
+
+[se ad236]
+[effect bit_talk_magical_pon]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+[charaFadeout H 0.1]
+[charaPut O 1200,1200]
+[bgm BGM_EVENT_77 1.0 1.0]
+[wt 1.0]
+[charaTalk depthOn]
+
+＠童谣
+啊，好玩真好玩，[r]实在是太好玩了！
+[k]
+
+[charaFace F 4]
+
+＠童谣
+可是杰克，[r]你差一点就要把我解体了吧！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠杰克
+抱歉～只是有点忍不住。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠童谣
+你这孩子真是的！[r]我又不是制图用纸。
+[k]
+
+？1：童谣……是莫里亚蒂……？
+？！
+[charaFace F 0]
+
+＠童谣
+嗯。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠莫里亚蒂
+是我拜托她的哟。
+[k]
+
+[charaFace C 4]
+
+＠莫里亚蒂
+可是童谣，[r]你那拖泥带水的恶人演技是怎么回事？
+[k]
+
+＠莫里亚蒂
+我还希望你多展现一些智慧的光辉呢。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠童谣
+啊呀，我只是顺着我的感觉表演而已。
+[k]
+
+＠童谣
+如果你有什么要求的话，[r]得给我认真准备台词剧本才行哦。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠莫里亚蒂
+可是没时间了啊……[r]算了，就这样吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠童谣
+化妆成这种老爷爷，[r]简直有损孩子的梦想、童话的名誉。
+[k]
+
+[charaFace F 1]
+
+＠童谣
+不过，既然被堆积如山的糖果收买，[r]也就没办法了！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠杰克
+回去后我们一起吃吧～！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace F 1]
+[charaFace D 1]
+[charaFadein F 0.1 2]
+[charaFadein D 0.1 0]
+[wt 0.3]
+[charaMoveReturn F 256,-10 0.4]
+[wt 0.6]
+[charaMoveReturn D -256,5 0.2]
+[wt 0.3]
+[charaMoveReturn D -256,5 0.2]
+[wt 0.5]
+[se ad456]
+
+[charaMove D -356,0 0.3]
+[charaMove F 156,0 0.3]
+[charaFadeout D 0.3]
+[charaFadeout F 0.3]
+[wt 0.1]
+[se ad59]
+[wt 0.5]
+[bgmStop BGM_EVENT_77 1.0]
+[seStop ad456 1.0]
+[seStop ad59 1.0]
+[wt 2.0]
+
+[charaTalk on]
+
+[bgm BGM_EVENT_48 0.1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠莫里亚蒂
+……于是乎，阴谋大成功。[r]没错！
+[k]
+
+[charaFace C 0]
+
+＠莫里亚蒂
+也就是说，所有的一切都是我的伎俩！
+[k]
+
+[charaFace C 4]
+
+＠莫里亚蒂
+唔。你眼神里充满怀疑，[r]就像在问我有什么企图吧。
+[k]
+
+[charaFace C 1]
+
+＠莫里亚蒂
+但是我的企图已经成功了。
+[k]
+
+
+[charaFace C 0]
+
+＠莫里亚蒂
+……[r]……好吧。
+[k]
+
+＠莫里亚蒂
+只要拿雾造成的噪声和延迟当挡箭牌，[r]应该还能拖延一些时间。
+[k]
+
+＠莫里亚蒂
+……没错。我的计划全都，一切，[r]都[#只]为了争取这段时间。
+[k]
+
+＠莫里亚蒂
+不论是假的莫里亚蒂，[r]还是伦敦产生伪微小特异点。
+[k]
+
+＠莫里亚蒂
+全都是为了这个。
+[k]
+
+？1：究竟是怎么回事？
+？！
+
+＠莫里亚蒂
+我不希望在谈论自己与自己的哲学时，[r]被福尔摩斯介入哦。
+[k]
+
+[charaFace C 4]
+
+＠莫里亚蒂
+……虽然我觉得是自己想太多了，[r]但我毕竟是福尔摩斯的宿敌吧。
+[k]
+
+＠莫里亚蒂
+为了不被他看穿，不被他听见，[r]我必须付出最大程度的愚蠢努力。
+[k]
+
+[charaFace C 0]
+
+＠莫里亚蒂
+……距离通讯恢复没有几分钟了。[r]现在能说多少就说多少吧。
+[k]
+
+＠莫里亚蒂
+……我明白自己被召唤至此的理由。[r]是在新宿与你产生了关联，继而结下了缘分吧。
+[k]
+
+＠莫里亚蒂
+是偶然与幸运将你和我拉到了一起。
+[k]
+
+＠莫里亚蒂
+可是如今身在迦勒底的福尔摩斯。[r][#他为什么会在迦勒底]？
+[k]
+
+？1：这是因为[line 3]
+？！
+
+[charaFace C 1]
+
+＠莫里亚蒂
+嗯，我当然清楚。
+[k]
+
+＠莫里亚蒂
+不论是关联还是契机我都知道。
+[k]
+
+[messageOff]
+[fadeout white 1.0]
+[wait fade]
+
+[effect bit_sepia01_depth]
+[charaScale B 1.2]
+[charaTalk off]
+[charaFace B 0]
+[charaFadein B 0.1 0,0]
+
+[charaFadeout C 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 5]
+[charaDepth M 3]
+
+[charaFadein M 0.1 0,-200]
+[wt 1.0]
+
+[fadein white 1.0]
+[charaMoveScale M 1.1 20.0]
+[charaMove M 10,-200 20.0]
+[wait fade]
+
+＠莫里亚蒂
+首先是在人理烧却事件中，[r]你们在漂流至沙漠的阿特拉斯院中遇到了那个男人。
+[k]
+
+＠莫里亚蒂
+阿特拉斯院内屏蔽了一切通讯，[r]所以你们与福尔摩斯的对话记录完全没有被保存。
+[k]
+
+＠莫里亚蒂
+但福尔摩斯的确在那里。[r]作为当事人的你就是证人。
+[k]
+
+＠莫里亚蒂
+那个人是这么说的吧？
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠莫里亚蒂
+“我起初是在伦敦被召唤的。[r][f small]  [f -]作为修复第四特异点的协助者。”
+[k]
+
+＠莫里亚蒂
+“但受巴贝奇卿的委托，我决定不只关注第四特异点，[r][f small]  [f -]而是去探查整个人理烧却事件的全貌，”
+[k]
+
+＠莫里亚蒂
+“于是便先行一步前往第六特异点开启了侦探调查。”
+[k]
+
+＠莫里亚蒂
+如果这些话是真的，[r]就说明那个男人独自进行了灵子转移。
+[k]
+
+＠莫里亚蒂
+然而，这种事真的可能做到吗？
+[k]
+
+？1：这个[line 3]
+？！
+
+＠莫里亚蒂
+我也觉得……不可能。
+[k]
+
+＠莫里亚蒂
+不过他同时也是个能让我们，不，[r]是能让真犯人也震惊“竟然还有这种方法吗！”的男人。
+[k]
+
+＠莫里亚蒂
+在人理烧却的情况下，阿特拉斯院只有建筑没有受损。[r]说不定他就是灵活利用了这一特性。
+[k]
+
+＠莫里亚蒂
+或者那个时代有召唤福尔摩斯的术者。
+[k]
+
+＠莫里亚蒂
+不管是哪种情况，即便理论上说得通，[r]我们也没有验证的方法。
+[k]
+
+[messageOff]
+[fadeout white 1.0]
+[wait fade]
+
+[effectStop bit_sepia01_depth]
+[charaFadeout M 0.1]
+[charaFadeout B 0.1]
+
+[charaTalk on]
+[charaScale B 1.0]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+
+＠莫里亚蒂
+听好了，御主。[r]我确实是恶人[line 3]
+[k]
+
+＠莫里亚蒂
+但站在我对立面的人，并不一定是善人。
+[k]
+
+＠莫里亚蒂
+一旦发生什么情况，为了保卫迦勒底……不，[r]应该是为了守护人理，那男人恐怕会不择手段。
+[k]
+
+[charaFace C 4]
+
+＠莫里亚蒂
+是达·芬奇和戈尔德鲁夫氏不会选择的，[r]连我都会被吓到的冷酷手段。
+[k]
+
+[charaFace C 0]
+
+＠莫里亚蒂
+……当然。[r]注意，当然了。
+[k]
+
+＠莫里亚蒂
+这或许只是我杞人忧天。[r]不过，那个男人不是这么说过吗？
+[k]
+
+＠莫里亚蒂
+当排除了所有不可能的可能性后，[r]无论剩下的多么不合理，也一定就是真相。
+[k]
+
+＠莫里亚蒂
+而且我考虑的这些，[r]仍然[#不是不可能的可能性]。
+[k]
+
+＠莫里亚蒂
+所以我必须采取对策。
+[k]
+
+＠莫里亚蒂
+我的恶必须表面上看起来无伤大雅，[r]背地里看起来是[#为御主]行恶[line 3]
+[k]
+
+[charaFace C 1]
+
+＠莫里亚蒂
+从而下出出乎他意料的一着！[r]这就是这次计划的目的。
+[k]
+
+＠莫里亚蒂
+总之，就是类似于安全装置的东西。[r]善人会为了最好的选择而不惜付出牺牲……
+[k]
+
+[charaFace C 0]
+
+＠莫里亚蒂
+我是为了预防这样的喜剧哦。[r]你愿意协助我吗？
+[k]
+
+？1：你这么说我也不好办啊……
+
+[charaFace C 1]
+
+＠莫里亚蒂
+你会感到困惑非常正常。[r]不过这方面希望你能忍耐一下。
+[k]
+
+？2：我该怎么做……
+
+[charaFace C 1]
+
+＠莫里亚蒂
+你只要保持和平时一样就可以了。[r]不如说必须和平时一样。
+[k]
+
+？！
+
+[charaFace C 0]
+
+＠莫里亚蒂
+但是。
+[k]
+
+＠莫里亚蒂
+让我来给你施加一道咒语吧。[r]……你会忘记我们在此说过的话。
+[k]
+
+？1：忘记……？
+？！
+
+[charaFace C 1]
+
+＠莫里亚蒂
+嗯。[r]虽说我此前对你千叮咛万嘱咐。
+[k]
+
+[charaFace C 0]
+
+＠莫里亚蒂
+但这只不过是动用了我全部经验和直觉的，[r][#没来由]的预感罢了。
+[k]
+
+＠莫里亚蒂
+假如你记着刚才的对话[r]面对那男人时[line 3]
+[k]
+
+[charaFace C 4]
+
+＠莫里亚蒂
+恐怕会被他看穿吧。[r]问题是……没错，问题是。
+[k]
+
+＠莫里亚蒂
+[#我不知道事态会如何发展]。
+[k]
+
+＠莫里亚蒂
+非常惭愧，[r]现在几乎没有任何证据、事实或情报。
+[k]
+
+＠莫里亚蒂
+漏洞百出的方程式是无法解出答案的。
+[k]
+
+＠莫里亚蒂
+所以现在我要消除你的记忆……[r]不，是封印你的记忆。
+[k]
+
+？1：可这样一来……
+？！
+
+[charaFace C 0]
+
+＠莫里亚蒂
+你想说这样就没有意义了？[r]不不，很有意义。
+[k]
+
+＠莫里亚蒂
+这份记忆会沉入最底部，静静地等待时机。
+[k]
+
+[charaFace C 1]
+
+＠莫里亚蒂
+只要那个时候真的到来，[r]我希望你不要相信福尔摩斯，而是相信我。
+[k]
+
+[charaFace C 0]
+
+＠莫里亚蒂
+……说实话。[r]我希望这只是一个笑话。
+[k]
+
+＠莫里亚蒂
+毕竟你想，他可是拼死帮助了你哦。[r]这里存在致命的矛盾。
+[k]
+
+[charaFace C 1]
+
+＠莫里亚蒂
+所以这一切肯定都是我的臆想。
+[k]
+
+＠莫里亚蒂
+但是人生指不定会在什么事上遭遇挫折。
+[k]
+
+＠莫里亚蒂
+为了让你能重新振作起来[line 3][r]这点[#辅助:备份]还是要准备的。
+[k]
+
+[messageOff]
+[wt 1.0]
+[wipeout openEye 6.0 1.0]
+[wt 2.0]
+
+
+
+＠莫里亚蒂
+那我们回去吧。我的御主！[r]愿你的前路有幸运相伴！
+[k]
+
+[messageOff]
+[wait wipe]
+[scene 10000]
+[charaFadeout C 0.1]
+[wt 0.1]
+[wipein openEye 2.0 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+＠
+[line 3]现在的我，是恶，还是善。
+[k]
+
+＠
+某种意义上，这是一个禁忌的问题。[r]对我来说尤其是如此。
+[k]
+
+＠
+我挺起胸膛，证明一切的那天，[r]是否会到来呢。
+[k]
+
+＠
+还是说我终将蜷缩起来，[r]认清我自己呢。
+[k]
+
+＠
+……不管结局会怎样，会如何，[r]都希望我能接受，能认可。
+[k]
+
+＠
+因为这就是身为教授被召唤的从者的骄傲与志气。
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_EVENT_48 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[scene 66600]
+[wt 2.0]
+[fadein black 1.0]
+[wait fade]
+
+[se ad311]
+[seVolume ad311 0 0]
+[seVolume ad311 2.5 1.0]
+[wt 2.5]
+[seStop ad311]
+
+[bgm BGM_EVENT_77 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠莫里亚蒂
+啊呀。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠福尔摩斯
+唔。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFace B 6]
+[charaFadein C 0.1 2]
+[charaFadein B 0.1 0]
+
+＠莫里亚蒂
+你还是老样子，简直就像穿着衣服行走的阴沉呢。[r]夏洛克。
+[k]
+
+[charaFace B 4]
+＠福尔摩斯
+我不觉得你有资格叫我夏洛克哦，教授。
+[k]
+
+[charaFace C 0]
+
+＠莫里亚蒂
+那真是失礼了。
+[k]
+
+[charaFace B 0]
+
+＠福尔摩斯
+啊，话说伦敦那件事。
+[k]
+
+[charaFace C 4]
+
+＠莫里亚蒂
+心惊。
+[k]
+
+＠福尔摩斯
+那肯定是你的伎俩吧？
+[k]
+
+[charaFace C 1]
+
+＠莫里亚蒂
+哎呀，你在说什么呢。[r]不过既然已经暴露也没办法了。
+[k]
+
+[charaFace C 2]
+
+＠莫里亚蒂
+这全都是我的企图！
+[k]
+
+＠福尔摩斯
+是么。[r]那问题就解决了。
+[k]
+
+[charaFace B 7]
+
+＠福尔摩斯
+Mr.戈尔德鲁夫和达·芬奇叫你过去。[r]老老实实接受训诫吧。
+[k]
+
+[charaFace C 3]
+
+＠莫里亚蒂
+咦，你不参加吗？
+[k]
+
+＠福尔摩斯
+嗯。[r]谜题已经全部解开了。
+[k]
+
+＠福尔摩斯
+我对后续的惩罚毫无兴趣。
+[k]
+
+[charaFace C 0]
+
+＠莫里亚蒂
+哦。[r]全都解开了啊。
+[k]
+
+[charaFace B 0]
+
+＠福尔摩斯
+嗯，全部解开了。
+[k]
+
+[bgmStop BGM_EVENT_77 0.5]
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠莫里亚蒂
+……那你也知道我的目的了？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠福尔摩斯
+……[r]……
+[k]
+
+[charaFace B 6]
+
+＠福尔摩斯
+这个嘛[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[scene 10000]
+[wt 1.5]
+
+[charaScale C 1.2]
+[charaScale B 1.2]
+[charaScale K 1.2]
+[charaScale L 1.2]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth C 5]
+[charaDepth K 4]
+[charaDepth B 3]
+[charaDepth L 2]
+
+
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_48 0.1]
+
+＠
+啊，真是的。
+[k]
+
+＠
+无论是做恶人，[r]还是欺骗主角。
+[k]
+
+＠
+都不是什么轻松的活儿。
+[k]
+
+＠
+不过，但是，即便如此。[r]我和那家伙的战斗也不会结束。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaPut I 2]
+[charaPut J 0]
+
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein C 1.0 240,0]
+
+
+[charaFadein B 1.0 -240,0]
+[wt 1.0]
+[charaEffect I bit_talk_spotlight]
+[charaFadein K 1.0 210,0]
+[charaEffect J bit_talk_spotlight]
+[charaFadein L 1.0 0]
+[wt 2.0]
+
+
+
+＠莫里亚蒂
+我的仇敌，不死之身的不朽名侦探。[r]夏洛克·福尔摩斯啊。
+[k]
+
+＠莫里亚蒂
+你发现了吗？
+[k]
+
+＠莫里亚蒂
+这次事件的背后，潜藏着连我们都会瞠目结舌的、[r]纯粹无暇的疯狂与理性。
+[k]
+
+＠莫里亚蒂
+假如你被我欺骗，那尚且无妨，[r]但我可不希望看到你被别人欺骗。
+[k]
+
+＠莫里亚蒂
+所以请务必保持万无一失的状态。
+[k]
+
+＠莫里亚蒂
+请不要夺走我的恶。
+[k]
+
+＠莫里亚蒂
+这不是智慧的比拼。[r]也不是生存的竞争。
+[k]
+
+＠莫里亚蒂
+而是为了我们能作为我们而存在的[line 3][r]概念战争啊。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_48 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

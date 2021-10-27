@@ -1,0 +1,230 @@
+
+
+＄91-10-36-01-2-1
+
+[soundStopAll]
+
+[charaSet A 1036001 1 兰陵王]
+[charaSet B 1038000 1 伊阿宋]
+[charaSet C 7027001 1 彭忒西勒亚]
+
+[charaDepth C 1]
+[charaDepth A 9]
+
+
+[branchQuestNotClear lblNotClear1 3000303]
+[flag IsClear true]
+[branch lblConf1]
+[label lblNotClear1]
+[flag IsClear false]
+[label lblConf1]
+
+
+[branch lblNotClear2 IsClear false]
+[scene 66400]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10204]
+[label lblConf2]
+
+[wipeFilter cinema 0.5 0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠彭忒西勒亚
+剑术中看不到一丝阴霾啊。[wt 1.0][charaFace C 2][r]好，到此为止！
+[k]
+
+＠彭忒西勒亚
+我承认你是个战士，[r]相信你没有辱骂我！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+＠兰陵王
+十分感谢，彭忒西勒亚阁下。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+[wt 1.2]
+[charaFace C 3]
+
+＠彭忒西勒亚
+话说那个面具……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠兰陵王
+唔？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 0,-50]
+
+＠彭忒西勒亚
+是不会在战斗中集聚湿气的那种吗？[r]好羡慕啊。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠兰陵王
+嗯。因为这是只遮盖眼睛周围的那类。
+[k]
+
+[charaFace A 4]
+＠兰陵王
+只不过，由于比头顶高了那么一点，[r]所以一不小心就可能会磕碰到什么地方。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠彭忒西勒亚
+唔……原来如此。
+[k]
+
+[charaFace C 4]
+
+＠彭忒西勒亚
+基于风俗习惯，[r]我佩戴的面具是很容易集聚湿气的……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠兰陵王
+是遮盖整张脸的那种？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠彭忒西勒亚
+没错，就是那种。[r]所以鼻子总是痒得让人受不了……
+[k]
+
+[messageOff]
+[fadeout black 1.4]
+[wait fade]
+
+[se ad8]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branch lblNotClear3 IsClear false]
+[scene 66600]
+[branch lblConf3]
+[label lblNotClear3]
+[scene 10310]
+[label lblConf3]
+
+[fadein black 1.4]
+[wait fade]
+[wt 0.6]
+
+[charaTalk off]
+[charaFace C 1]
+[charaFace A 1]
+[charaFadein C 0.4 -256,-50]
+[charaFadein A 0.4 -26,-50]
+[wt 1.1]
+
+[se ade74]
+[charaMove C -306,-50 0.6]
+[charaMove A -76,-50 0.6]
+[wt 0.2]
+
+[charaFadeout C 0.4]
+[charaFadeout A 0.4]
+[wt 1.7]
+
+[charaTalk on]
+[seStop ade74 0.2]
+
+＠
+[charaTalk C][line 3]于是，他和彭忒西勒亚[r]开始热烈讨论起面具的话题。
+[k]
+
+＠
+[charaTalk C]
+结束谈话时，两个人已经和和气气的了，[r]这下总算让人放心了。
+[k]
+
+[messageOff]
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.4 400,-50]
+[charaMove B 360,-50 0.6]
+[charaShake B 0.04 3 2 0.5]
+[wt 0.5]
+[charaShakeStop B]
+[wt 0.2]
+＠伊阿宋
+我……我只是刻意说错了而已啊……
+[k]
+
+＠
+[charaTalk C]
+伊阿宋不关在下屁事。
+[k]
+
+[messageOff]
+[charaTalk B]
+[charaFadeout B 0.4]
+[charaMove B 360,-80 0.4]
+[wt 0.3]
+
+[se ad144]
+[wt 1.1]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

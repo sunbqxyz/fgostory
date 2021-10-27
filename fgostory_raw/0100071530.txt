@@ -1,0 +1,148 @@
+
+
+
+＄01-00-07-15-3-0
+[soundStopAll]
+[charaSet A 98106200 1 梅林]
+[charaSet B 8001002 1 玛修]
+[charaSet C 2020001 1 伊什塔尔]
+[charaSet D 98003000 1 Dr.罗曼]
+[charaSet E 3028000 1 豹人]
+
+[bgm BGM_EVENT_24 0.1]
+[scene 34600]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠梅林
+[line 3]时间到了。[r]北壁内侧部队的整编已经完成了。
+[k]
+
+＠梅林
+我们离开这里一小时后，[r]魔兽战线会为应对决战而展开部队。
+[k]
+
+＠梅林
+戈耳工会被成功挑拨的概率只有五成。[r]但魔兽们一定会从杉木林中出来。
+[k]
+
+＠梅林
+因为它们“对人类的复仇心”是如此强烈。
+[k]
+
+＠梅林
+只要人类背对城墙布阵，[r]它们的冲动就是无法抑制的。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠玛修
+……我们在确认交战开始后，就从废都巴比伦侧[r]冲入杉木林，并朝鲜血神殿前进，对吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠梅林
+没错。负责守护北壁的是魁札尔·科亚特尔和……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-50]
+[charaMove E 0,0 0.2]
+[wait charaMove E]
+
+＠豹人
+当然，还有我！[r]我的豹啊！　勉强赶上啦～！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+
+＠伊什塔尔
+突袭队成员是我和[%1]、玛修、[r]以及安娜和梅林吧。
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[se ad13]
+[charaTalk D]
+[communicationChara 98003003 1 5 0 5]
+
+＠Dr.罗曼
+明白了。我这边也分配三片左右的示巴[r]给魁札尔•科亚特尔那边，以监控北壁的状况。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+
+＠梅林
+明白了。那我们开始吧。[r][%1]，请下令！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[messageOff]
+
+？1：马尔杜克闪电战，现在开始！
+
+？！
+
+[se ad16]
+[wt 1.5]
+[messageOff]
+[bgmStop BGM_EVENT_24 1.0]
+[seStop ad16 1.5]
+[fadeout black 1.5]
+[wait fade]
+[scene 32940]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1]
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 5]
+
+＠Dr.罗曼
+以及这么快就出现敌人反应了！[r]推测为集结于废都巴比伦的离群魔兽！
+[k]
+
+＠Dr.罗曼
+是进入杉木林前的前哨战！[r]拜托你了，[%1]！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.5]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+
+

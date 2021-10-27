@@ -1,0 +1,78 @@
+＄91-10-01-02-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 20700]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98003003 2 Dr.罗曼]
+[charaSet C 98002000 2 芙芙]
+[charaSet D 1001001 1 阿尔托莉雅]
+[charaFace A 4]
+[charaFadein A 0 1]
+[fadein black 1]
+[wait fade]
+＠玛修
+哈……哈……哈……[r]总算是……撑过去了……
+[k]
+
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+好厉害啊，你们俩居然能以弱克强啊……[r]刚才那只，要是弱一点的魔神，恐怕还没它强吧……？
+[k]
+
+？1：……累死了……
+
+？2：……我还以为要挂了……
+
+？！
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠玛修
+但这样就能满足条件了吧。[r]辛苦是有价值……哎？
+[k]
+
+[se ad21]
+[wait se ad21]
+[bgmStop BGM_EVENT_2 0.4]
+[bgm BGM_EVENT_3 0.1]
+[charaFadeout A 0.1]
+[charaTalk D]
+[charaFadein A 0.1 2]
+[charaFace D 2]
+[charaFadein D 0.1 0]
+＠阿尔托莉雅
+休息到此结束。你们俩在干什么啊。[r]敌人还会继续来哦。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+第二阵！？[r]亚瑟王时代的不列颠到底有多少怪物啊！？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 2]
+[charaFadein A 0.1 2]
+[charaFace D 2]
+[charaFadein D 0.1 0]
+＠玛修
+……！　既然如此只能破罐子破摔了！[r]Saber小姐，这是最后一次了吧！？
+[k]
+
+[charaFace D 0]
+＠阿尔托莉雅
+嗯，是最后一次了。[r]没事，和刚才那只差不多啦。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,168 @@
+
+
+
+＄94-05-14-07-1-1
+
+[soundStopAll]
+
+[charaSet A 1098154200 1 岩窟王]
+[charaSet B 2042001 1 伊莉雅]
+[charaSet C 2001300 1 卫宫]
+[charaSet D 1098200900 1 紫式部]
+
+[scene 99501]
+
+[bgm BGM_EVENT_77 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠伊莉雅
+结束啦。[r]啊啊，肚子好饿[line 3]！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠卫宫
+那我们回小屋吧。[wt 0.5][charaFace C 7][r]……不好了，我好像忘记煮饭了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠伊莉雅
+哎[messageShake 0.02 3 3 0.3]哎！？
+[k]
+
+＠红宝石
+卫宫先生！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠卫宫
+……面包配味噌汤可以吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠伊莉雅
+虽然这两种我都喜欢！！
+[k]
+
+
+[messageOff]
+[se ad184]
+[charaMove B -50,0 0.4]
+[charaFadeout B 0.4]
+[wt 0.4]
+[seStop ad184 0.8]
+[wt 2.0]
+
+
+？1：……
+？！
+
+[messageOff]
+[wt 0.4]
+[se ad173]
+[wt 0.4]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 -50,0]
+[charaMove D 1 0.4]
+[wt 0.4]
+[seStop ad173 0.1]
+[wt 0.4]
+
+＠紫式部
+[FFFFFF]？[-][r]御主，怎么了？
+[k]
+
+？1：不……刚才好像……
+？2：抱歉，没什么。
+？！
+
+[messageOff]
+[charaFace D 0]
+[wt 1.5]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+
+[scene 10000]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad240]
+[effect bit_talk_35]
+[wt 2.2]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.8]
+
+[bgm BGM_EVENT_70 0.1]
+
+
+＠岩窟王
+嘁……算错了抽身的时机……
+[k]
+
+＠岩窟王
+不过，这座山……[r]究竟是什么？
+[k]
+
+＠岩窟王
+感觉本质的部分存在矛盾……
+[k]
+
+＠岩窟王
+……思路有些模糊。不太妙。[r]得稍微……休息一会儿才行……
+[k]
+
+[messageOff]
+[charaMove A 0,-50 0.4]
+[charaFadeout A 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.7]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

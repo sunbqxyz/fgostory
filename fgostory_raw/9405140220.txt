@@ -1,0 +1,848 @@
+
+
+
+＄94-05-14-02-2-0
+
+[soundStopAll]
+
+
+[charaSet A 1098200900 1 紫式部]
+[charaSet B 2001300 1 卫宫]
+[charaSet C 3044000 1 虞美人]
+[charaSet D 1036300 1 兰陵王]
+[imageSet E cut220_kuu00 1]
+[charaScale E 0.9]
+[charaSet F 2042001 1 伊莉雅]
+
+
+
+[charaSet S 5009040 1 特效用dummy]
+
+[cameraMove 0 0,0 1.01]
+
+
+[scene 28300]
+
+[se ad75]
+[effect bit_talk_43h]
+[shake 0.02 3 3 0]
+
+[fadein black 1.5]
+[wait fade]
+
+
+
+[wt 1.0]
+
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[effectStop bit_talk_43h]
+
+[shakeStop]
+
+[scene 10000]
+[wt 0.5]
+
+[se ad183]
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[wt 0.8]
+
+？1：（柔软的触感……）
+
+？2：（可靠的触感……）
+
+[branch select01]
+
+？！
+
+
+＠？？？
+没事吧，御主？
+[k]
+
+[messageOff]
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[scene 99900]
+
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+[wt 0.5]
+
+[wipein openEye 1.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFace A 1]
+＠紫式部
+啊啊，太好了。[r]您醒了啊。
+[k]
+
+[charaFace A 0]
+＠紫式部
+……呃。
+[k]
+
+＠紫式部
+这次，我也试着挑战了泳装灵基。[r]这行动起来相当便利呢。
+[k]
+
+[charaFace A 1]
+＠紫式部
+多亏了这身，我才能撑住御主呢。[r]呵呵呵呵呵。
+[k]
+
+[charaFace A 0]
+＠紫式部
+能站得稳吗？[r]嘿咻……
+[k]
+
+[messageOff]
+[charaMoveScale A 1.0 0.8]
+[charaMove A 0,12 0.5]
+[wt 0.1]
+[se ad60]
+[wt 0.4]
+[charaMove A 1 0.3]
+[wt 0.2]
+[seStop ad60 0.1]
+[wt 0.8]
+
+＠紫式部
+您没事就好，御主。
+[k]
+
+？1：这……这泳装的破坏力好大啊，紫式部小姐。
+
+？！
+
+[messageOff]
+[charaFace A 1]
+[wt 1.0]
+
+＠紫式部
+呵呵。谢谢夸奖。[r]不枉我认真挑选。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch select_end]
+
+[label select01]
+
+[messageOff]
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[scene 99900]
+
+[charaScale B 1.2]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+[wt 0.5]
+
+[wipein openEye 1.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠卫宫
+话说，我理解你沉浸于感慨的心情，[r]但应该先确认一下自己和周围的情况吧。
+[k]
+
+＠卫宫
+没有因为灵子转移感到不适吧？[r]自己站不起来的话，可以搭着我的肩膀。
+[k]
+
+
+[messageOff]
+[charaMoveScale B 1.0 0.8]
+[charaMove B 0,15 0.5]
+[wt 0.1]
+[se ad60]
+[wt 0.4]
+[charaMove B 1 0.3]
+[wt 0.2]
+[seStop ad60 0.1]
+[wt 1.0]
+
+
+
+[charaFace B 10]
+＠卫宫
+哎呀，紫式部。[r]你也是队员啊。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.7 1]
+[wt 1.1]
+＠紫式部
+嗯，由于目的地是日本，我才被选拔出来。[r]御主，这次还请您多多关照。
+[k]
+
+[charaFace A 8]
+＠紫式部
+虽说身着泳装多少有些害羞……[r]但毕竟是夏天，还是要大胆一些！
+[k]
+
+？1：请多关照！
+？！
+
+[charaFace A 1]
+＠紫式部
+嗯。[r]好了，其他的人[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+
+
+[label select_end]
+
+
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠虞美人
+怎么？[r]坐标又发生偏差了吗？
+[k]
+
+[charaFace C 5]
+＠虞美人
+真是的。[r]达·芬奇倒是在灵子转移上认真点啊。
+[k]
+
+[charaFace C 4]
+＠虞美人
+……[r]……唔？
+[k]
+
+＠虞美人
+咦？[r]项羽大人？
+[k]
+
+＠虞美人
+奇怪了。[r]感受不到项羽大人的气息。
+[k]
+
+＠虞美人
+气息遮断？[r]Assassin的那种？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠卫宫
+……达·芬奇。[r]能听到吗？
+[k]
+
+？1：达·芬奇亲～。
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+
+
+[charaPut S 1]
+[charaEffect S bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+
+[se ad31]
+[wt 1.8]
+
+[seStop ad31 0.1]
+[charaPut S 1200,1200]
+[charaEffectStop S bit_talk_10_LowLevel]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠卫宫
+不行啊？[r]真是的，一开始通讯就断了啊。
+[k]
+
+[charaFace B 0]
+＠卫宫
+你怎么看，[%1]？[r]我想听听你的感想。
+[k]
+
+
+[branchQuestNotClear lblNotClear 3000320]
+
+？1：没事，我习惯了。
+
+？！
+
+[charaFace B 1]
+＠卫宫
+答得漂亮。[r]不愧是一直在拯救人理的存在。
+[k]
+
+
+[branch lblConf]
+
+
+[label lblNotClear]
+？1：先冷静下来，确认状况？
+？！
+
+[charaFace B 1]
+＠卫宫
+说得没错。[r]万事都要注重基本。
+[k]
+
+[label lblConf]
+
+
+
+[charaFace B 0]
+＠卫宫
+通讯中断基本可分为两种。
+[k]
+
+＠卫宫
+一种是神灵或从者的影响过大，[r]妨碍通讯的类型。
+[k]
+
+＠卫宫
+这种情况下只需脱离对方的影响范围，[r]通讯就会恢复，就算有害，也不危险。
+[k]
+
+[charaFace B 4]
+＠卫宫
+但如果是有人恶意屏蔽通讯的话，[r]那就另当别论了。
+[k]
+
+＠卫宫
+我们似乎都不太走运呢，御主。[r]看来这地方由不得我们兴奋了。
+[k]
+
+[charaFace B 10]
+＠卫宫
+哎哟。[r]那边那位是[line 3]
+[k]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+＠？？？
+[charaTalk D]
+非常抱歉，能稍微打扰一下吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠虞美人
+唔？[r]怎么，这不是兰陵王嘛。
+[k]
+
+＠虞美人
+话说你也来了？[r]成员清单上好像没有你啊。
+[k]
+
+[charaFace C 1]
+＠虞美人
+而且这套灵衣。不错，充满夏日感，非常凉爽。[r]很适合你。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠兰陵王
+[line 3]嗯。[r]毕竟是在夏天嘛。
+[k]
+
+[charaFace D 4]
+＠兰陵王
+虽说我坚称就算是夏天也不需要更衣……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 4]
+[charaDepth D 6]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFace D 4]
+[charaFadein C 0.1 2]
+[charaFadein D 0.1 0]
+＠虞美人
+啊，被强势施压了吧。
+[k]
+
+＠兰陵王
+嗯。
+[k]
+
+＠虞美人
+你生前就不擅长应付各种强势的人吧？[r]我觉得你的态度应该更为坚决一些。
+[k]
+
+[charaFace D 3]
+＠兰陵王
+咳咳，这个问题暂时不提了。
+[k]
+
+＠虞美人
+……说得对。
+[k]
+
+[charaFace D 0]
+＠兰陵王
+其实项羽阁下托我带给您一封信。
+[k]
+
+[charaFace C 2]
+＠虞美人
+项羽大人的信！？[r]给……给我看看！
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[se ad7]
+[seVolume ad7 0 0.5]
+[charaMove C 20,0 0.4]
+[wt 0.6]
+
+[charaMoveReturn D -236,0 0.6]
+[se ad77]
+[seVolume ad77 0. 0.4]
+[wt 0.2]
+[seStop ad77 0.2]
+[wt 0.7]
+
+[charaFace C 0]
+[charaMoveReturn C 20,-10 0.5]
+[se ade96]
+[wt 1.2]
+
+[charaTalk on]
+＠虞美人
+『我心爱的妻子啊，』
+[k]
+
+[charaFace C 3]
+＠虞美人
+居然说我是心爱的……这太……
+[k]
+
+？1：话说……能继续读下去吗？
+
+[charaFace C 0]
+＠虞美人
+好啦好啦，等一下。
+[k]
+
+？2：他不是一直这么说嘛……
+
+[charaFace C 2]
+＠虞美人
+用声音传达当然很好，[r]但用文字表达更有一种新鲜感啦！
+[k]
+
+？！
+
+[charaFace C 0]
+＠虞美人
+让我看看……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.0]
+[charaFadeout C 1.0]
+[charaFadeout D 1.0]
+
+[scene 28300 1.0]
+[wt 1.0]
+
+[charaFadein E 0.6 0,-140]
+[charaFadeTime E 0.6 0.6]
+[wt 1.0]
+
+
+[charaTalk depthOn]
+＠
+『[line 3]我心爱的妻子啊，』[bgm BGM_EVENT_11 0.1]
+[k]
+
+＠
+『虽说令人无比惭愧，[r]　但这次的灵子转移我无法参加。』
+[k]
+
+＠
+『我算出了假如我进行灵子转移，就会导致[r]　特异点确立，并给人类史造成巨大损害的结果。』
+[k]
+
+＠
+『反过来说。假如汝不去，也会造成相同的结果。』
+[k]
+
+＠
+『尽管我不想欺骗我的妻子，[r]　但这都是为了人理。我只能化作铁石心肠。』
+[k]
+
+＠
+『啊啊，啊啊，虞啊。[r]　我会期待汝之归来。』
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.0]
+[scene 99900 1.0]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 1.0 1]
+[charaFadeout E 1.0]
+[wt 1.5]
+
+＠虞美人
+怎[line 3]
+[k]
+
+＠虞美人
+怎[line 3]怎[line 3]怎[line 3]
+[k]
+
+[messageOff]
+[scene 28300 1.0]
+[charaFadeout C 1.0]
+[wt 1.5]
+
+＠虞美人
+[f large]怎[messageShake 0.02 3 3 0.5]么会这样[line 2]！！
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[scene 99900]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠卫宫
+果然遭到了某种妨害啊。[r]但灵子转移本身倒是成功了。
+[k]
+
+＠卫宫
+第二波成员来了，御主。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_94 0.1]
+
+＠伊莉雅
+[%1][&大哥哥:大姐姐][line 4]！
+[k]
+
+[messageOff]
+[charaMoveScale F 1.2 0.2]
+[charaMove F 0,20 0.2]
+[wt 0.1]
+
+[cueSe Battle bac149]
+[seVolume bac149 0 0.4]
+[shake 0.03 4 4 0.4]
+[wt 0.1]
+[seStop bac10 0.2]
+[wt 0.7]
+
+？1：慢着！？
+？2：头槌！？
+？！
+
+
+＠伊莉雅
+哇～哇～！[r]是暑假哦，是暑假哦，[%1][&大哥哥:大姐姐]！
+[k]
+
+＠伊莉雅
+来，快看，我把想在暑假做的事情清单拿来啦！
+[k]
+
+[charaFace F 10]
+＠伊莉雅
+好开心啊，一定会非常开心！[r]来吧，我们先从什么开始做起呢！
+[k]
+
+＠伊莉雅
+刨冰西瓜烟花大会……[r]还有还有那个那个！
+[k]
+
+[charaFace F 12]
+[charaShake F 0.02 3 3 0.3]
+＠伊莉雅
+啊！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠卫宫
+没关系。继续说吧。[r]这里又不是军队，你不用拘谨。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 0,20]
+[wt 0.2]
+
+[se ad7]
+[charaMove F 0,0 0.2]
+[charaMoveScale F 1.0 0.2]
+[wt 0.6]
+
+[charaFace F 8]
+＠伊莉雅
+对对对对不起，[r]其实不能这么做吧！？
+[k]
+
+＠伊莉雅
+我拿到了泳装，灵子转移到这里来，[r]莫名有些亢奋……
+[k]
+
+[charaFace F 15]
+＠伊莉雅
+下意识忘记了迦勒底的工作！[r]太没脸见人了，御主！
+[k]
+
+？1：没事啦，没事啦。
+
+[charaFace F 6]
+＠伊莉雅
+唔……
+[k]
+
+＠红宝石
+[charaTalk F]
+看到成年人从容态度的伊莉雅小姐总算是松了口气，[r]然而依然觉得不尽兴☆
+[k]
+
+[charaFace F 2]
+＠伊莉雅
+为什么你要逐一把别人的心情旁白出来啦！？
+[k]
+
+？2：小孩子就该这么精力充沛。
+
+[charaFace F 3]
+＠伊莉雅
+啊哈哈哈哈，对不起……
+[k]
+
+＠红宝石
+[charaTalk F]
+伊莉雅小姐一亢奋，[r]撒娇气质就会表露出来哦，御主[&先生:小姐]。
+[k]
+
+＠红宝石
+[charaTalk F]
+既然如此，那也只能纵容宠溺她了吧？
+[k]
+
+[charaFace F 2]
+＠伊莉雅
+啊啊啊红宝石你给我闭嘴啦！
+[k]
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFace F 3]
+[charaFadein B 0.1 2]
+[charaFadein F 0.1 0]
+＠卫宫
+……或许是晕灵子转移了吧。
+[k]
+
+＠卫宫
+虽说不是从者该有的性质，[r]但你似乎是极少数的例外呢。
+[k]
+
+＠伊莉雅
+哎嘿嘿，让您见笑了……
+[k]
+
+[charaFace B 1]
+＠卫宫
+不过算了。[r]唔，其他从者们似乎也抵达了呢。
+[k]
+
+＠卫宫
+设置营地，[r]然后……
+[k]
+
+[charaFace B 0]
+＠卫宫
+唔？[r]……那边有一栋陌生的……小屋？
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠兰陵王
+好像是。
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠卫宫
+……可能是陷阱，[r]但似乎有调查的价值。
+[k]
+
+＠卫宫
+只不过在去小屋之前，[r]还是先慎重地调查周围情况为好。
+[k]
+
+＠卫宫
+虽说只是大致观察了一下……[r]但隐约能窥见类似魔兽的身影。
+[k]
+
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠兰陵王
+也就是说，[r]得先将周围的清扫干净。
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[pictureFrame cut063_cinema]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+
+[charaShake C 0.02 2 4 0.6]
+＠虞美人
+啊啊啊啊啊啊啊……
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[pictureFrame]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+
+＠紫式部
+请问……虞美人大人究竟怎么了……？
+[k]
+
+
+？1：总之先靠我们想办法吧！
+？！
+
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_94 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

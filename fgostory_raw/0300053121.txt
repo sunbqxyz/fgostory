@@ -1,0 +1,1283 @@
+
+＄03-00-05-22-2-1
+
+[soundStopAll]
+
+[charaSet A 2030002 1 喀戎]
+[charaSet B 4029001 1 阿喀琉斯]
+[charaSet C 1098182700 1 亚特兰蒂斯防卫兵]
+[charaSet D 1098182700 1 亚特兰蒂斯防卫兵]
+[charaSet E 1098184600 1 伊阿宋]
+[charaSet F 8001410 1 玛修]
+[charaSet G 4039002 1 曼迪卡尔多]
+[charaSet H 6029001 1 望月千代女]
+[charaSet I 5009000 1 特效用dummy]
+[charaSet J 5009000 1 特效用dummy]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 85400]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠喀戎
+……！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠阿喀琉斯
+嘁……！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[cueSe Battle bac15]
+[effect bit_talk_arrow_front_y -300,0 H]
+[wt 0.4]
+[se ad32]
+[flashin once 0.1 0.1 F7AD2EFF F7AD2E80]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0 1]
+[charaShake B 0.02 3 3 0.6]
+[wt 1.2]
+
+？1：得……得救了……！
+？！
+
+[charaFace B 2]
+＠阿喀琉斯
+别讲话，会咬到舌头的！
+[k]
+
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaDepth B 6]
+[charaDepth B 5]
+[charaDepth B 4]
+
+[se ad166]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein C 0.4 2]
+[charaFadein D 0.4 0]
+[wt 0.4]
+[seStop ad166 0.4]
+[wt 0.8]
+
+
+？1：背后！？
+？！
+
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠阿喀琉斯
+……呜！
+[k]
+
+
+[messageOff]
+[charaTalk off]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+[cueSe Battle bac13]
+[effect bit_bolg_01y 256,0]
+[wt 0.1]
+[charaShake C 0.03 4 4 0.5]
+[wt 0.3]
+
+
+[cueSe Battle bac14]
+[fowardEffect bit_bolg_02y -256,0]
+[wt 0.1]
+[charaShake D 0.03 4 4 0.5]
+[wt 0.7]
+
+[charaMove C 256,-50 0.4]
+[charaFadeout C 0.4]
+[wt 0.4]
+[se ad144]
+[charaMove D -256,-50 0.4]
+[charaFadeout D 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+
+[effectStop bit_bolg_01y 256,0]
+[fowardEffectStop bit_bolg_02y -256,0]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠阿喀琉斯
+可恶，前后夹击……！
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ad872]
+[seVolume ad872 0 0.6]
+
+[wt 0.1]
+[effect bit_talk_arrow_front_y -350,100 H]
+[wt 0.2]
+[effect bit_talk_14]
+[wt 0.1]
+
+[seStop ad872 0.1]
+[cueSe Battle bac16]
+[flashin once 0.1 0.1 F7AD2EFF F7AD2E80]
+[wt 0.1]
+[effectDestroy bit_talk_arrow_front_y -350,100 H]
+[effectDestroy bit_talk_14]
+
+
+[charaFace B 5]
+[charaShake B 0.03 4 4 0.6]
+[wt 1.0]
+
+
+＠阿喀琉斯
+呜……！
+[k]
+
+
+？1：阿喀琉斯！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠喀戎
+事先射穿你的脚后跟果然是正确的选择啊。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+＠伊阿宋
+就是你……！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠阿喀琉斯
+嗯，不由分说的奇袭。[r]我的行动完全被预判了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠喀戎
+因为我从泛人类史的喀戎那里[r]抽取了必要的战斗数据。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠阿喀琉斯
+原来如此……这下谜团解开了。[r]你这家伙……[#杀了老师吧]。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠喀戎
+[line 3]对。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠阿喀琉斯
+……呜！
+[k]
+
+？1：阿喀琉斯！
+？！
+
+[charaFace B 5]
+＠阿喀琉斯
+……嗯，我知道。[r]我知道。
+[k]
+
+＠阿喀琉斯
+那是在挑衅。[r]只要我再迈一步，陷阱就会发动。
+[k]
+
+＠阿喀琉斯
+就会遂了那家伙的愿。[r]……御主，重新下达命令吧。
+[k]
+
+？1：全体撤退！
+？！
+
+
+
+[charaSet D 98115300 1 福尔摩斯]
+[charaSet F 8001400 1 玛修]
+
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠玛修
+……明白了！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠伊阿宋
+曼迪卡尔多、千代女！[r]你们俩负责殿后！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk off]
+[charaFace G 2]
+[charaFace H 2]
+[charaFadein G 0.1 2]
+[charaFadein H 0.1 0]
+＠二人
+明白了！
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠福尔摩斯
+已经做好出发的准备了，[r]抓紧时间回海边来！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠曼迪卡尔多
+！
+[k]
+
+[messageOff]
+[se adm15]
+[effect bit_talk_v_slash01]
+[charaMoveScale G 1.1 0.2]
+[wt 0.2]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad32]
+[wt 0.5]
+[charaScale G 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠喀戎
+竟然只用一把木刀。[r]相当勇猛呢。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠曼迪卡尔多
+……呜！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+＠望月千代女
+此身凭负诅咒兼神明之一，[r]伊吹大明神之名！
+[k]
+
+[charaFace H 5]
+＠望月千代女
+嘿！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+
+[se ad867]
+[wt 0.4]
+[se ad868]
+[effect bit_talk_liquid_attack]
+[wt 0.2]
+[se ad871]
+[wt 0.6]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠喀戎
+哦，操控纳米机器吗。[r]不过[line 3]
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[effect bit_talk_h_slash01 0,0 H]
+[wt 0.4]
+
+
+[cueSe Battle bac121]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF50]
+[wt 1.2]
+
+[cueSe Battle bac15]
+
+[effect bit_talk_14]
+[wt 0.4]
+
+
+[flashin once 0.1 0.1 F7AD2EFF F7AD2E80]
+[wt 0.1]
+
+[se ad240]
+[fowardEffect bit_talk_35]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0 1]
+[charaShake H 0.02 3 3 0.8]
+[charaFadeout A 0]
+[wt 1.2]
+
+
+＠望月千代女
+呜！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠喀戎
+赫淮斯托斯·克利洛诺弥亚是敌不过[r]身为主神的宙斯·克利洛诺弥亚的。
+[k]
+
+＠喀戎
+他终究是个只会敲打锤子的无能贼神。
+[k]
+
+[charaFace A 0]
+＠喀戎
+至少用雅典娜·克利洛诺弥亚或许还能够抗衡吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠望月千代女
+……呜。[r]底牌没有用处吗……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠曼迪卡尔多
+但我们争取到时间了！[r]快走！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠喀戎
+好了，这是最后一击。
+[k]
+
+＠喀戎
+身为奥林波斯眷属的我，[r]并不存在[#那种结局:传说]。
+[k]
+
+＠喀戎
+然而幸运的是，[r]通过打倒泛人类史方的[#他:我][line 3]
+[k]
+
+＠喀戎
+这个宝具也得以解放了。[r]那么接招吧。
+[k]
+
+[bgmStop BGM_EVENT_24 1.0]
+
+[charaFace A 5]
+＠喀戎
+灾祸之蝎啊，肃清已然造访。[r]与星辰一起消散吧。
+[k]
+
+[charaFace A 2]
+＠喀戎
+[f large]『[#天蝎一射:Antares Snipe]』[line 3]！
+[k]
+
+
+[messageOff]
+[wt 0.1]
+
+[se ad39]
+[charaEffect A bit_talk_36]
+[wt 2.0]
+
+
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaPut A 1200,1200]
+[charaEffectStop A bit_talk_36]
+[scene 10000]
+[wt 0.5]
+
+[se ad837]
+[fowardEffect bit_talk_rarrow01or]
+
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+[wt 0.6]
+
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[seStop ad837 0.4]
+[wait wipe]
+
+[fowardEffectStop bit_talk_rarrow01or]
+
+[scene 85400]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+[cameraFilter gray]
+[se ad231]
+[wt 2.0]
+
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[cameraFilter normal]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+
+＠曼迪卡尔多
+[f large]『[#不带剑的誓言:Serment de Durandal]』！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+
+[fadeout white 0.4]
+[wait fade]
+
+[charaFadeout G 0.1]
+
+[scene 10000]
+[wt 0.4]
+
+[fadein white 0.4]
+[wait fade]
+
+[se ad837]
+[wt 0.2]
+[fowardEffect bit_talk_rarrow01or]
+[wt 1.3]
+
+[fadeout white 0.1]
+[seStop ad837 0.1]
+[se ad170]
+[se ad32]
+[wait fade]
+[wt 0.2]
+[se ad816]
+[wt 1.8]
+
+＠望月千代女
+嘎[messageShake 0.02 3 3 0.6]，啊啊啊啊啊啊啊啊啊啊！
+[k]
+
+
+＠曼迪卡尔多
+呜，唔……！
+[k]
+
+
+[messageOff]
+
+[charaSet G 1098184700 1 曼迪卡尔多（木刀损坏）]
+
+[scene 85400]
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠喀戎
+收拾掉了。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠曼迪卡尔多
+呜……！
+[k]
+
+
+[messageOff]
+[wt 0.1]
+
+[se ad7]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect G erasureReverse 1 0.4]
+[wt 0.8]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠喀戎
+咦？[r]……我还以为已经收拾掉了。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.4 1]
+[wt 0.4]
+＠望月千代女
+……呜，咳……！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠喀戎
+啊啊，原来如此。
+[k]
+
+[charaFace A 0]
+＠喀戎
+被他的宝具防御住了吗。[r]不过，以这副惨状，已经无法再战斗了吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 1.0]
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠曼迪卡尔多
+……这可就不好说了吧？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠喀戎
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠曼迪卡尔多
+宝具[line 3]
+[k]
+
+[charaFace G 2]
+＠曼迪卡尔多
+[f large]『[#不带剑的誓言:Serment de Durandal]』！
+[k]
+
+
+[messageOff]
+[wt 0.1]
+
+[se ad39]
+[charaEffect G bit_talk_36]
+[wt 2.0]
+
+[bgm BGM_EVENT_63 0.1]
+
+[seStop ad39 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_36]
+
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠喀戎
+！！
+[k]
+
+[messageOff]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[se ad609]
+[se ad226]
+[wt 3.0]
+
+
+[fadein white 1.0]
+[wait fade]
+
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠曼迪卡尔多
+……快撤退！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_63 0.5]
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠望月千代女
+……抱歉，不行了。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠曼迪卡尔多
+你在说什么……！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+＠望月千代女
+别管在下了，[r]快撤退！！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠曼迪卡尔多
+呜……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+＠望月千代女
+[#在下自有获救的办法]！[r]快走！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠曼迪卡尔多
+明白了……！
+[k]
+
+
+[messageOff]
+[se ad443]
+[fadeout black 1.0]
+[wait fade]
+
+[seStop ad443 1.0]
+[charaFadeout G 0.1]
+
+[pictureFrame cut063_cinema]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠喀戎
+……原来如此。
+[k]
+
+＠喀戎
+原来还存在武器的有无与宝具不相干的英雄啊。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠亚特兰蒂斯防卫兵
+需要追踪[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 0,-50]
+＠喀戎
+没有这个必要。
+[k]
+
+[charaFace A 0]
+
+＠喀戎
+虽然名为曼迪卡尔多的英雄顺利逃脱，[r]但另一个已经收拾掉了。
+[k]
+
+＠喀戎
+凭赫淮斯托斯·克利洛诺弥亚也不可能[r]让其恢复到立刻能战斗的状态吧。
+[k]
+
+＠喀戎
+那么……
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 20800]
+
+[pictureFrame]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠曼迪卡尔多
+……混账……！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+
+[scene 85400]
+
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 0,-50]
+＠望月千代女
+……呼，哈……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠喀戎
+原本打算在此解决了她，[r]但还是先把她带走吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠亚特兰蒂斯防卫兵
+您的意思是？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠喀戎
+“厄喀德那”的魔力即将枯竭。[r]就用她当做饲料好了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 0,-50]
+＠望月千代女
+你，说……饲，料……？
+[k]
+
+[charaFace H 2]
+＠望月千代女
+呵……呵哈哈哈哈！[r]与其成为饲料，[#在下宁愿选择有尊严地死去]！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 0,-50]
+＠喀戎
+哎哟！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[cueSe Battle bac12]
+[effect bit_talk_14]
+[wt 0.4]
+
+[cueSe Battle bac11]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0 0,-50]
+[charaFadeout A 0]
+[charaShake H 0.02 3 3 0.6]
+[wt 1.0]
+
+＠望月千代女
+呜……
+[k]
+
+[messageOff]
+[charaMove H 0,-100 0.4]
+[charaFadeout H 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.2]
+
+
+
+[charaSet E 1098181820 1 奥德修斯]
+
+
+
+＠望月千代女
+……[r]……
+[k]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠喀戎
+……把她带走。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠亚特兰蒂斯防卫兵
+遵命！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.0]
+[se ad166]
+[wt 0.1]
+[charaMove C 50,-50 0.4]
+[charaFadeout C 0.4]
+[wt 0.4]
+[seStop ad166 0.4]
+[wt 1.4]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+＠喀戎
+非常抱歉，奥德修斯。[r]我没能获得雅典娜·克利洛诺弥亚。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+
+[se ad1]
+[charaPut J 0,-50]
+[charaEffect J bit_talk_magic_com]
+[wt 0.5]
+[charaTalk E]
+[charaFace E 0]
+[charaPut E 0,-50]
+[charaFadeTime E 1.0 0.8]
+[wt 1.5]
+
+[bgm BGM_EVENT_90 0.1]
+
+＠奥德修斯
+无妨。[r][#我已经获得了一骑的分量]。
+[k]
+
+＠奥德修斯
+这样奥林波斯也该满意了吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠喀戎
+可如果他们使用雅典娜·克利洛诺弥亚，[r]会对我们不利吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 0,-50]
+[charaTalk E]
+[charaFace E 0]
+[charaPut E 0,-50]
+[charaFadeTime E 0.1 0.8]
+＠奥德修斯
+由阿耳忒弥斯大人亲手破坏的[r]赫淮斯托斯的影像记录已经被复原出片段了。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠喀戎
+他不是被轰得连渣都不剩了吗……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 0,-50]
+[charaTalk E]
+[charaFace E 0]
+[charaPut E 0,-50]
+[charaFadeTime E 0.1 0.8]
+＠奥德修斯
+最后时刻，阿耳忒弥斯大人[r]与赫淮斯托斯之间交换过通讯信号。
+[k]
+
+＠奥德修斯
+那时乘隙获得了一小部分影像记录。[r]如果选择相信这段记录的话[line 3]
+[k]
+
+＠奥德修斯
+他们似乎打算利用[#战争女神:雅典娜]的遗产，[r]去拯救一骑微不足道的英灵。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠喀戎
+哦，微不足道啊。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 0,-50]
+[charaTalk E]
+[charaFace E 0]
+[charaPut E 0,-50]
+[charaFadeTime E 0.1 0.8]
+＠奥德修斯
+如果用在俄里翁那种英雄身上的话，[r]难免会对我们造成一些不利……
+[k]
+
+＠奥德修斯
+但用在夏洛特·科黛身上的话，[r]就无关紧要了。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠喀戎
+明白了。[r]那我们先返回一趟吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 0,-50]
+[charaTalk E]
+[charaFace E 0]
+[charaPut E 0,-50]
+[charaFadeTime E 0.1 0.8]
+＠奥德修斯
+嗯。
+[k]
+
+＠奥德修斯
+迦勒底必然会做好万全的准备。[r]但是，仅此而已。
+[k]
+
+＠奥德修斯
+不存在意外性，也不存在偶然或幸运。[r]我会彻底击溃他们。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠喀戎
+明白了。[r]那我将战利品带回去了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 0,-50]
+[charaTalk E]
+[charaFace E 0]
+[charaPut E 0,-50]
+[charaFadeTime E 0.1 0.8]
+＠奥德修斯
+好。
+[k]
+
+＠奥德修斯
+只要再有一骑从者分量的魔力，[r]“厄喀德那”就能生产刻耳柏洛斯了。
+[k]
+
+＠奥德修斯
+拜托了，吾之盟友。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 0,-50]
+＠喀戎
+这当然，吾之盟友。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaPut J 0,-50]
+[charaTalk E]
+[charaFace E 0]
+[charaPut E 0,-50]
+[charaFadeTime E 0.1 0.8]
+[wt 1.0]
+
+[se ad1]
+[charaFadeout E 0.4]
+[charaEffectStop J bit_talk_magic_com]
+[wt 1.5]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_90 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

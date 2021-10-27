@@ -1,0 +1,155 @@
+＄91-70-07-01-1-1
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 10952]
+[charaSet A 8001001 1 玛修]
+[charaSet B 98003000 2 Dr.罗曼]
+[charaSet C 98002000 2 芙芙]
+[charaSet D 7007001 1 弗拉德三世]
+[charaSet E 98014000 1 女性]
+[charaSet F 98006100 1 杂兵]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0]
+[fadein black 1]
+[wait fade]
+＠弗拉德三世
+哼。[r]化为尘土消失殆尽吧，肤浅的野兽们。
+[k]
+
+＠女性
+……
+[k]
+
+＠弗拉德三世
+女孩。
+[k]
+
+＠女性
+啊，在！？
+[k]
+
+[charaFace D 1]
+＠弗拉德三世
+听好了。这野兽已不会再给你带来困扰了。[r]早点回家，安心睡吧。
+[k]
+
+＠女性
+啊，好。[r]那个[line 2]请问您的名字是……？
+[k]
+
+[charaFace D 0]
+＠弗拉德三世
+弗拉德三世。好好记住。
+[k]
+
+[se ad59]
+[wt 0.5]
+[seStop ad59 2]
+[wt 0.3]
+＠弗拉德三世
+唔。这样一来，历史是否就算是被修正了呢？
+[k]
+
+[charaFadeout D 0.1]
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr.罗曼
+啊，嗯。[r]大概[line 2]没问题吧。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠弗拉德三世
+太完美了。[r]那回去吧。
+[k]
+
+[messageOff]
+[se ad12]
+[effect bit_talk_07]
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 4]
+[fadeout white 1]
+[effectStop]
+[wait effect]
+[wait fade]
+[charaSet A 98001000 1 玛修]
+[scene 10400]
+[charaTalk D]
+[charaFace A 0]
+[charaFadein A 0 2]
+[charaFace D 1]
+[charaFadein D 0 0]
+[fadein white 0.5]
+[wait fade]
+＠弗拉德三世
+抱歉让汝等陪余走这趟。
+[k]
+
+[charaFace A 13]
+＠玛修
+不，不会。[r]没关系。
+[k]
+
+[charaFace D 0]
+＠弗拉德三世
+唔。今晚就放心去休息吧。[r]那余也灵体化了。
+[k]
+
+[messageOff]
+[se ad52]
+[charaFadeout D 0.7]
+[wait se ad52]
+[wt 0.7]
+[charaFadeout A 0.1]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠玛修
+那个……前辈。
+[k]
+
+＠玛修
+……就算像那样修正了历史，[r]德古拉之名会从历史中消失的概率……
+[k]
+
+？1：很低？
+
+？2：几乎不可能吧？
+
+？！
+
+[charaFace A 8]
+＠玛修
+……嗯。
+[k]
+
+[charaFace A 0]
+＠玛修
+但对弗拉德先生而言[line 2][r]这好像才是他应向圣杯许下的愿望。
+[k]
+
+[charaFace A 13]
+＠玛修
+或许真的会发生什么呢。
+[k]
+
+＠玛修
+但愿能发生对弗拉德三世这个人物的认识发生变革的[line 2][r]那种奇迹。
+[k]
+
+＠玛修
+现在还是先让我们静静守候吧。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_2 0.4]
+[wait fade]
+[soundStopAll]
+[end]

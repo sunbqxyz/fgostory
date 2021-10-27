@@ -1,0 +1,858 @@
+
+
+
+＄94-05-15-10-2-0
+
+
+[soundStopAll]
+
+[charaSet A 5041002 1 美游]
+[charaSet C 6027000 1 不夜城的暗匿者]
+[charaSet D 3027001 1 美杜莎]
+[charaSet E 2028000 1 海伦娜]
+[charaSet F 2028000 1 海伦娜（剪影）]
+[charaSet G 98006200 1 敌人（雾状）]
+[charaSet H 98006200 1 敌人（雾状）]
+[charaSet I 98006200 1 敌人（雾状）]
+[charaSet J 3028001 1 最可怕的存在]
+[charaSet K 3028001 1 最可怕的存在（剪影）]
+
+[charaSet L 98002000 1 dummy特效1]
+[charaSet M 98002000 1 dummy特效2]
+[charaSet N 98002000 1 dummy特效3]
+[charaSet O 98002000 1 dummy特效4]
+
+[imageSet P back10000 1]
+[charaScale P 1.01]
+
+[charaFilter F silhouette 00000080]
+[charaFilter K silhouette 00000080]
+
+[cameraMove 0.1 0,0 1.01]
+
+[charaDepth G 1]
+[charaDepth H 5]
+[charaDepth I 5]
+[charaDepth E 6]
+[charaDepth F 7]
+
+[scene 20803]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.3]
+
+[se ad447]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadein H 0.4 350,0]
+[charaFadein I 0.4 -350,0]
+[charaSpecialEffect H appearance 350,0 1.2]
+[charaSpecialEffect I appearance -350,0 1.2]
+[wt 2.1]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠不夜城的暗匿者
+唔，唔唔唔！　数量太多了！[r]不就是区区像灵的东西嘛！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠美杜莎
+数量超出想象。[r]光凭我们或许人手不够呢。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠美游
+如果这种时候伊莉雅在场的话。我们两人齐心协力，[r]就能以将周围都夷为平地的水平铲除它们了……
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaFace G 0]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadein G 0.1 1]
+[charaFadein H 0.1 350,0]
+[charaFadein I 0.1 -350,0]
+[wt 0.4]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[se ad62]
+[effect bit_talk_beam_rope -350,0]
+[charaShake I 0.04 4 1 1.4]
+[wt 1.0]
+
+[seStop ad62 0.5]
+[wt 0.3]
+
+[effectStop bit_talk_beam_rope]
+[wt 0.1]
+[cueSe Battle bac73]
+[seVolume bac73 0 0.8]
+[wt 0.6]
+
+[se ad42]
+[charaSpecialEffect I enemyErasure 0,0 1.5]
+[wt 0.5]
+
+[wait charaSpecialEffect I]
+[wt 1.0]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠美杜莎
+！？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+[charaFadeout F 0.7]
+[wt 1.1]
+
+[charaTalk on]
+＠海伦娜
+哎呀。你们也在消灭亡灵？[bgm BGM_EVENT_7 0.1][r]真不错，我能感受到[#伟大灵魂:Mahatma]的引导！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠不夜城的暗匿者
+噢噢，你……休想蒙骗朕这圣神皇帝的双眼！[r]你背后的那个并不是水枪吧？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠海伦娜
+眼光真不错！　没错，这是为了今年夏天使用[r]而特别调整的魔力投射装置。
+[k]
+
+[charaFace E 0]
+
+＠海伦娜
+具体说来，我背后背的其实是[#伟大灵魂:Mahatma]炉！
+[k]
+
+＠海伦娜
+是将以前那两个天才为我制作的东西[r]通过我的理论改写而成的。对灵体非常有效！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠美游
+虽然用的是我不了解的理论，但只要合理，我就能接受。[r]不好意思，希望你能来帮帮我们。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠海伦娜
+当然，没问题哦！
+[k]
+
+[charaFace E 1]
+
+＠海伦娜
+啊，对了。[r]我还有备用品，如果不介意的话，要不要用用看？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠不夜城的暗匿者
+这就是所谓的顺水推舟。只要是能提升[r]歼灭它们速度的新装备，当然求之不得。
+[k]
+
+[charaFace C 1]
+
+＠不夜城的暗匿者
+干得漂亮，金星夫人！[r]朕任命你为[#鬼魂讨伐队:Gui Hun Busters]的新成员！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠海伦娜
+备用品足够一人一把，不介意的话你们也拿着吧！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠美杜莎
+呃，哦……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠美游
+虽然是我无法理解的存在，[r]但我知道这符合某种原理，
+[k]
+
+＠美游
+必须使用这个的当前状况[line 3][r]与我遇见蓝宝石成为魔法少女那时一样。
+[k]
+
+[charaFace A 6]
+
+＠美游
+那我就不客气了。[r]或许还能学到些什么。
+[k]
+
+＠蓝宝石
+不愧是美游大人，对新知识无比贪婪。[r]且不论是否能够理解。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠不夜城的暗匿者
+然后呢，这个该怎么使用？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 4]
+[charaDepth C 6]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFace C 0]
+[charaFadein E 0.1 2]
+[charaFadein C 0.1 0]
+＠海伦娜
+我会教你们的，放心吧。
+[k]
+
+[charaFace E 5]
+
+＠海伦娜
+不过这或许会因为不当使用而陷入危险的状况，[r]这方面还是需要注意的。
+[k]
+
+[charaFace E 0]
+
+＠海伦娜
+呃，首先应该这样……
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+[charaFadeout C 0.1]
+
+[charaTalk off]
+[charaTalk depthOn]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadein H 0.1 256,0]
+[charaFadein I 0.1 -256,0]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[se ad62]
+[effect bit_talk_beam_rope 256,0 H]
+[charaShake H 0.04 4 1 0.6]
+[wt 0.6]
+
+[seStop ad62 0.5]
+[wt 0.1]
+
+[se ad62]
+[fowardEffect bit_talk_beam_rope -256,0]
+[charaShake I 0.04 4 1 0.6]
+[wt 0.8]
+
+[seStop ad62 0.5]
+[wt 0.3]
+
+[effectStop bit_talk_beam_rope]
+[fowardEffectStop bit_talk_beam_rope]
+[wt 0.1]
+[cueSe Battle bac73]
+[wt 0.6]
+
+
+[se ad42]
+[charaSpecialEffect H enemyErasure 0,0 1.5]
+[charaSpecialEffect I enemyErasure 0,0 1.5]
+[wt 0.5]
+
+[wait charaSpecialEffect H]
+[wait charaSpecialEffect I]
+[wt 0.7]
+
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠不夜城的暗匿者
+咯呵呵！　不足为惧呢！[r]就照这个势头歼灭那些灵吧！
+[k]
+
+[charaFace C 4]
+
+＠不夜城的暗匿者
+这样一来，就再也不会感到害怕了……
+[k]
+
+[charaFace C 2]
+
+＠不夜城的暗匿者
+好，那个即将崩塌的废屋看来就是它们的根据地！[r]前进吧，连根拔起、彻底铲除！
+[k]
+
+[messageOff]
+[se ad132]
+[charaMove C -100,0 0.4]
+[charaFadeout C 0.4]
+[wt 0.4]
+[seStop ad132 0.8]
+[wt 1.2]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠美游
+感觉越来越得意忘形了。[r]不要紧吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠美杜莎
+……唉。总不能丢下她一个人不管。[r]我们追上去吧。
+[k]
+
+[charaFace D 3]
+[charaMoveReturn D 0,10 0.4]
+＠美杜莎
+嘿咻。[wt 0.4][r]这装置还挺重呢……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠海伦娜
+将这作为下一次的改良方向好了。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[scene 23000]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade74]
+[wt 0.9]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+[seStop ade74 0.4]
+[wt 0.6]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠不夜城的暗匿者
+发现了通往地下的楼梯，来到地下倒是无妨……[r]但这地方看上去也太可疑了吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠海伦娜
+哎呀？　这石碑是什么呢。[r]唔嗯唔嗯……
+[k]
+
+[charaFace E 5]
+
+＠海伦娜
+或许有些不妙。[r]上面写着这地下封印着非常强大的恶灵。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠美游
+不科学的恶灵是不存在的。
+[k]
+
+＠美游
+但这句话或许是某种暗语，[r]这里可能设下了某种陷阱机关。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠美杜莎
+不管怎么说，既然被封印了，[r]那我们也用不着在意吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠海伦娜
+其实，貌似是周边杂灵们的存在[r]作为灵性压力壁封住了这恶灵的行动。
+[k]
+
+
+＠海伦娜
+而此前我们消灭了很多杂灵，[r]所以这里的封印或许已经松动[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 0.6]
+[se ad14]
+[shake 0.02 2 2 0]
+
+[wt 0.4]
+[charaFace E 5]
+[wt 1.6]
+
+[seStop ad14 1.0]
+[shakeStop]
+
+[charaFace E 2]
+＠海伦娜
+果然！　或许会解开封印出现！[bgm BGM_EVENT_72 0.1]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠不夜城的暗匿者
+哼。反正这家伙就是敌方的老大吧。[r]只要打倒这家伙，周围的灵必然会烟消云散。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠海伦娜
+我也希望是这样，但既然说的是『非常强大』，[r]应该会具有特殊性质吧。
+[k]
+
+＠海伦娜
+石碑上说这恶灵能读取深层心理，[r]成为对峙对象心中『最可怕的存在』！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠美杜莎
+这下……麻烦了呢。如果出现某个原初的女神，[r]或是生气的姐姐大人们……不，没什么。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠美游
+不好了。假如出现的是『被伊莉雅讨厌』，[r]那我就束手无策了……！
+[k]
+
+＠蓝宝石
+真的会出现这种概念的敌人吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠不夜城的暗匿者
+…………唔，唔唔唔唔唔唔！　荒谬！[r]统治中华大地的女帝是无所畏惧的！
+[k]
+
+[charaFace C 2]
+
+＠不夜城的暗匿者
+用这个叫什么来着的装置将恶灵们全部秒杀！[r]出击，各位，跟着朕！
+[k]
+
+[messageOff]
+[se ad132]
+[charaMove C -100,0 0.4]
+[charaFadeout C 0.4]
+[wt 0.4]
+[seStop ad132 0.8]
+[wt 1.2]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠海伦娜
+啊，稍微等一下！　一旦冲出去就会开始干涉！[r]你的精神会[line 3]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+[charaEffect L bit_talk_06b2]
+[wt 0.2]
+[se ade153]
+[charaEffect M bit_talk_11 240,10]
+[wt 0.3]
+[charaEffect N bit_talk_11 -240,10]
+[wt 0.2]
+[charaEffect O bit_talk_19]
+[wt 2.4]
+
+[charaPut L 2000,2000]
+[charaPut M 2000,2000]
+[charaPut N 2000,2000]
+[charaPut O 2000,2000]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[charaFadeTime P 0.1 0.6]
+＠不夜城的暗匿者
+（不……不怕什么灵。不怕，一点也不怕。[r]　……害怕，呜呜……）
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaPut L 0,0]
+[charaPut M 0,0]
+[charaPut N 0,0]
+[charaPut O 0,0]
+[wt 0.6]
+
+[se ade153]
+[charaMove M -240,0 1.6]
+[charaMove N 240,0 1.6]
+[charaMove O 0,50 1.2]
+[wt 2.8]
+
+[charaPut L 2000,2000]
+[charaPut M 2000,2000]
+[charaPut N 2000,2000]
+[charaPut O 2000,2000]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠美杜莎
+糟了。开始聚成某种实体了……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠美游
+或许会出现伊莉雅本人？
+[k]
+
+[charaFace A 5]
+
+＠美游
+如果真是那样，呜，虽然不好办但我会很高兴……！[r]自从来这里以后我还没见过她呢……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[bgmStop BGM_EVENT_72 1.0]
+[wt 0.1]
+
+[charaTalk off]
+[charaPut L 1]
+[charaPut M -240,0]
+[charaPut N 240,0]
+[charaPut O 0,50]
+[wt 0.8]
+
+[se ade153]
+[fadeout white 1.5]
+[wait fade]
+
+[charaPut L 2000,2000]
+[charaPut M 2000,2000]
+[charaPut N 2000,2000]
+[charaPut O 2000,2000]
+[charaEffectStop L bit_talk_06b2]
+[charaEffectStop M bit_talk_11]
+[charaEffectStop N bit_talk_11]
+[charaEffectStop O bit_talk_19]
+[wt 1.8]
+
+[se ad494]
+[wt 0.8]
+
+[charaDepth K 6]
+[charaDepth J 4]
+
+[charaFace K 0]
+[charaFace J 1]
+[charaFadein K 0.1 1]
+[charaFadein J 0.1 1]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+[charaFadeout K 0.7]
+[wt 1.5]
+
+[bgm BGM_EVENT_27 0.1]
+
+[charaTalk on]
+[charaTalk J]
+＠J：？？？
+受召唤赶来，没错，是猫科！
+[k]
+
+[charaFace J 2]
+
+＠最可怕的存在
+My name is最可怕的存在。[r]乃是汝恐怖的象征喂！
+[k]
+
+[charaFace J 0]
+
+＠最可怕的存在
+怎么样，很恐怖吧？[r]哭着叫着恳求饶恕或许也不错。
+[k]
+
+＠最可怕的存在
+不过就算再怎么努力也会被恶灵附体杀害啦～。[r]你们还是趁早认命开始念经比较好喵。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠不夜城的暗匿者
+唔[messageShake 0.04 3 3 0.4]噢噢猫！[r]可恶，朕一直刻意让自己不去想！
+[k]
+
+[charaFace C 4]
+＠不夜城的暗匿者
+唔唔……身为朕这样的人物，[r]竟会创造出这等令人毛骨悚然的怪物……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠海伦娜
+虽然我不是很明白但总觉得这家伙似乎能够打得倒！[r]伟大灵魂背包再次充能！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFace A 5]
+[charaFadein D 0.1 -256,0]
+[charaFadein A 0.1 256,0]
+
+＠美杜莎
+总比无形的恶灵容易处理，[r]我开始有[#杀意:干劲]了。
+[k]
+
+＠美杜莎
+全力应对吧。
+[k]
+
+[charaFace A 9]
+
+＠美游
+老师……？[wt 0.4][charaFace A 5]　不，虽然不知为什么但肯定不是伊莉雅。[r]我要让你好好遭受非伊莉雅之罪的报应。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 4]
+[charaFadein J 0.1 1]
+
+＠最可怕的存在
+奇怪了，我应该被设定成拥有[r]能毁灭世界力量的邪神级恶灵才对吧……？
+[k]
+
+[charaFace J 2]
+＠最可怕的存在
+总觉得遭到了不当的轻视！[wt 0.6][charaFace J 7][r]得让这些家伙豹跳理解这一点才行！？
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_27 0.5]
+[wait fade]
+[soundStopAll]
+[end]

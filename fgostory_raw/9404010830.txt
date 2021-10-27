@@ -1,0 +1,852 @@
+
+＄94-04-01-08-3-0
+
+[soundStopAll]
+
+
+
+
+[charaSet A 98100400 1 玛修]
+[charaSet B 1040000 1 葛饰北斋]
+[charaSet C 4036001 1 卡米拉]
+[charaSet D 1098179300 1 伊什塔尔]
+[charaSet E 1098178800 1 员工]
+[charaSet F 1098176810 1 刑部姬]
+[charaSet G 6028000 1 特效用2]
+[imageSet H cut118_card02 1]
+[charaSet I 98002000 1 芙芙]
+[charaSet J 1098178800 1 特效用兼_员工]
+
+[scene 81400]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.1]
+
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.3]
+
+[charaMoveReturn E 0,-10 0.4]
+
+[se ade278]
+[wt 0.8]
+
+[seStop ade278 0.1]
+[wt 0.6]
+
+[se ade279]
+[wt 1.2]
+
+＠E：卡米拉
+门开了。趁现在。[bgm BGM_EVENT_77 0.1]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠J：葛饰北斋
+哎～，真是轻车熟路啊。
+[k]
+
+？1：这就是普通的撬锁嘛。
+？2：真像个怪盗……
+？！
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：卡米拉
+本来就是怪盗，这不是理所当然的嘛。
+[k]
+
+＠E：卡米拉
+不过可别以为这是能轻易模仿的哦，[r][&小伙子:小姑娘]。
+[k]
+
+＠E：卡米拉
+怪盗离不开坚实的技术与精良装备。这其实也都是，[r]归功于我费劲辛苦搞来的开锁工具与勤勤恳恳的练习。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠J：玛修
+嗯。看上去简单，[r]其实刚才的撬锁还同时解开了魔术的锁。
+[k]
+
+＠J：玛修
+真是令人惊叹的高科技装备。
+[k]
+
+[charaFace J 3]
+
+＠J：玛修
+制造出这种装备的人究竟是达·芬奇亲，[r]还是那位人称犯罪绅士的教授呢……
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：卡米拉
+呵呵呵。名流女怪盗Mistress C的七大道具中隐藏着[r]诸多秘密。我自然也不会告诉你们入手途径啦。
+[k]
+
+＠E：卡米拉
+好了，废话就说到这里。[r]我们进去吧。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_77 1.0 0.2]
+[wipeout leftToRight 1.0 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[scene 34801]
+[wt 1.0]
+
+[bgm BGM_EVENT_77 1.0 1.0]
+
+[wipein rightToLeft 0.8 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：卡米拉
+好，这身打扮应该用不着了。
+[k]
+
+
+[messageOff]
+
+[charaTalk off]
+
+[se bac375]
+
+[charaMove E 0,-20 0.4]
+[charaFadeout E 0.4]
+[wt 1.0]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 1.6]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 2]
+
+[charaFace C 0]
+[charaFadein C 0.1 0]
+
+＠刑部姬
+哇！　竟然趁我们不注意打扮得那么帅气！
+[k]
+
+[charaFace C 1]
+
+＠卡米拉
+呵呵，这是Mistress C的正装哦。[r]盗取宝物的时候就该这身打扮才行呢。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠葛饰北斋
+所以，宝物，宝物……噢！　是那个吧？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[cameraMove 0.8 0,0 1.1]
+[wt 1.0]
+
+[charaPut J 1]
+[charaEffect J bit_talk_blight_02]
+
+[wt 2.2]
+[charaEffectStop J bit_talk_blight_02]
+[charaPut J 2000,2000]
+
+[cameraHome 1.0]
+[wt 1.2]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠葛饰北斋
+嘿嘿，虽然我不是很愿意偷东西，[r]但是物归原主也是某种意义上的助人为乐嘛。
+[k]
+
+＠葛饰北斋
+那就抓紧[line 3]
+[k]
+
+[messageOff]
+[charaTalk E]
+[wt 0.1]
+[se ad725]
+[charaFace B 19]
+[wt 0.3]
+[se ad725]
+[wt 0.6]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠卡米拉
+慢着！
+[k]
+
+？1：刚才的狗叫声是怎么回事！？
+？！
+
+[charaFace C 0]
+
+＠卡米拉
+啊，是它们啦。[r]史皮尔多夫和莱茵费尔德。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+机械……狗……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠卡米拉
+类似于当前我的使魔哦。[r]非常有名流的感觉吧？
+[k]
+
+？1：（是吗。）
+？2：（我懂……倒不如说更像邪恶女头目……）
+？！
+
+[charaFace C 5]
+
+＠卡米拉
+总之，这两个孩子的感知器检测到了异常。[bgm BGM_EVENT_70 0.1][r]你们看。
+[k]
+
+[messageOff]
+[fadeout black 0.1]
+[wait fade]
+
+[charaTalk off]
+[charaDepth J 10]
+[charaDepth G 4]
+
+[charaFadeout C 0.1]
+[scene 10000]
+[wt 0.1]
+
+[se ade313]
+[seVolume ade313 0 0.6]
+[fadein black 0.1]
+[wait fade]
+
+[charaEffect G bit_talk_card_flies]
+[wt 1.0]
+
+
+[se ad679]
+[wt 0.2]
+[charaRoll J 351]
+[charaPut J 150,0]
+[charaEffect J bit_talk_gram_slash_02]
+[wt 0.2]
+[se ad682]
+[wt 0.1]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 0.1]
+[scene 34801]
+[charaFadein H 0 0,-200]
+[wt 1.2]
+
+[charaFadeout H 0.4]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠刑部姬
+哎，怎么回事？　卡片一分为二了！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠卡米拉
+嘁……不进来看看是不会知道的。[r]没想到警备如此森严。
+[k]
+
+＠卡米拉
+这是激光防卫网。不小心碰到的话会被一分为二。[r]而且地板上似乎还设置了压力传感器。
+[k]
+
+？1：有……有没有突破的方法……？
+？！
+
+[charaSet H 7036001 1 宫本伊织]
+
+
+[charaFace C 4]
+
+＠卡米拉
+有是有。但需要做一些准备。
+[k]
+
+＠卡米拉
+考虑到克娄巴特拉和目慈惠怒还在赌场里，[r]我并不想在这里浪费太多时间……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 1.0]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+
+[se ad7]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.2 0,-15]
+[charaMove H 1 0.2]
+[wt 0.6]
+
+＠宫本伊织
+嗨嗨～，好久不见。[r]你们还好吗？
+[k]
+
+？1：武……伊织亲！
+？2：在奇怪的时间点回来了！？
+？！
+
+[charaFace H 3]
+
+＠宫本伊织
+啊，其实那之后我觉得靠两条腿[bgm BGM_EVENT_94 0.1][r]从赌场逃走未免太麻烦了。
+[k]
+
+＠宫本伊织
+所以趁乱回到赌场藏起来了！[r]正所谓藏木于林！
+[k]
+
+＠宫本伊织
+然后正巧看到了准备走进这扇门的你们，[r]就像现在这样跟来了。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+意外像忍者呢……[r]但不管怎么说，没事就好。
+[k]
+
+＠玛修
+我们目前的状况[line 3]有些说来话长，[r]总之得先把那个宝石拿到手。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠宫本伊织
+噢噢。[r]看不见的刀刃和不能踩的地板？
+[k]
+
+[charaFace H 10]
+
+＠宫本伊织
+什么嘛～，简直太巧了！[r][#既然剑豪在场]，[#这些都小菜一碟吧]！
+[k]
+
+？1：哎。
+？！
+
+
+[charaFace H 12]
+＠宫本伊织
+哎。
+[k]
+
+[charaFace H 11]
+
+＠宫本伊织
+……啊，这样啊。[r]原来[#海滨西施:北斋亲]的实力还没达到那个层次啊。
+[k]
+
+＠宫本伊织
+你们想啊，剑豪不但可以斩断镭射，[r]还能凭借精神力调整自己的体重。
+[k]
+
+
+＠宫本伊织
+总之只要保持明镜止水的心境，[r]无论面对什么样的险恶环境，都能轻松面对。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_94 1.0]
+[charaFadeout H 0.1]
+[wt 0.2]
+
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+[wt 1.4]
+
+＠葛饰北斋
+那[line 3]
+[k]
+
+[charaFace B 12]
+
+＠葛饰北斋
+那[messageShake 0.02 3 3 0.6]我就做给你们看好了，该死的混蛋！[bgm BGM_EVENT_63 0.1]
+[k]
+
+＠葛饰北斋
+江户子面对如此藐视是不会忍气吞声的！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[messageOff]
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+[wt 1.2]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠卡米拉
+啊，慢着，等一下！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+
+[effect bit_talk_kengekiall02]
+[wt 0.1]
+[se ad170]
+[wt 0.2]
+[se ad471]
+[wt 1.2]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠葛饰北斋
+唔噢噢噢！　镭射？　既然一把刀不行，[r]那就用四把四倍斩击！
+[k]
+
+[charaFace B 11]
+
+＠葛饰北斋
+脚下！　我明白了，[r]只要模仿爹爹的动作滑行就可以了吧。
+[k]
+
+＠葛饰北斋
+取名为章鱼步法！
+[k]
+
+？1：竟然行得通！？　太厉害了！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+
+＠宫本伊织
+Yes，Of course！[r]果然犹豫不如行动呢！
+[k]
+
+[messageOff]
+[wt 0.8]
+[bgmStop BGM_EVENT_63 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 1]
+[charaMoveReturn B 0,-10 0.5]
+＠葛饰北斋
+呼，终于……终于拿到了……[wt 0.4][charaMoveReturn B 0,-10 0.5]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ade126]
+[charaPut J 1]
+[charaEffect J bit_talk_blight_01]
+[wt 2.5]
+[charaEffectStop J bit_talk_blight_01]
+[charaPut J 2000,2000]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠宫本伊织
+干得漂亮。[bgm BGM_EVENT_77 0.1][r]你已经掌握四把刀的使用方法了呢，北斋亲！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠卡米拉
+这就是“梅杰德之眼”……太美妙了。
+[k]
+
+＠卡米拉
+这美丽的蓝色犹如那个我曾遇见过的孩子的眼球，[r]仿佛能把人吸进去。
+[k]
+
+＠卡米拉
+而这闪耀的水润感宛若新鲜的内脏……
+[k]
+
+？1：比喻对象太可怕了！
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[cueSe NoblePhantasm_402600 NP_402600_2]
+[cueSeVolume NP_402600_2 0 0.1]
+[se ad123]
+[seVolume ad123 0 0]
+[wt 0.1]
+[seVolume ad123 1.0 1.0]
+[cueSeVolume NP_402600_2 1.0 1.0]
+[wt 1.2]
+[seStop ad123 0.4]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠伊什塔尔
+我来啦！[r]拿到了吧，拿到了对吧？　干得漂亮！
+[k]
+
+[charaFace D 3]
+
+＠伊什塔尔
+终于回来了，我的宝石！[r]啊……多么迷人的光泽啊……
+[k]
+
+＠伊什塔尔
+『只有镶嵌着七彩宝石的王冠才配得上[r]  女神所乘坐的[#天舟:马安娜]。』
+[k]
+
+＠伊什塔尔
+和我从马安娜上摔下来倒在走廊上晕倒时[r]做的梦里获得的天启一模一样……多么美丽啊……
+[k]
+
+[charaFace D 8]
+
+＠伊什塔尔
+我再也不会弄丢它了……[r]话说这样一来我肯定能得到强化了吧……
+[k]
+
+[charaFace D 0]
+
+＠伊什塔尔
+哎哟。不行，野心得藏在心里，[r]说出来就无法实现了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠芙芙
+芙呜芙芙芙。[r]（特別意译：确实没错。）
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠伊什塔尔
+给，这份『挑战书』就当是给你们的酬劳啦。[r]说好的报酬我已经存入瑞士银行了。
+[k]
+
+[charaFace D 1]
+
+＠伊什塔尔
+那我先告辞啦！
+[k]
+
+[messageOff]
+[wt 0.1]
+[cueSe NoblePhantasm_402600 NP_402600_2]
+[se ad123]
+[wt 0.2]
+[cueSeVolume NP_402600_2 1.0 0.1]
+[seStop ad123 1.0]
+
+[charaFadeout D 0.7]
+
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+反应速度真是惊人。[r]就这么想夺回这个东西吗……
+[k]
+
+[charaFace A 1]
+
+＠玛修
+不管怎么说，[r]终于拿到伊什塔尔小姐持有的『挑战书』了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠卡米拉
+只要那位女神不违反约定，[r]我应该也拿到报酬了。
+[k]
+
+＠卡米拉
+没能好好欣赏美丽的战利品确实是个遗憾，[r]不过也没办法。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠刑部姬
+其实我从一开始就很在意，卡米拉亲，[r]你为什么要成为一名怪盗啊？
+[k]
+
+＠刑部姬
+宝石也被你毫不犹豫地换成了金钱，[r]说到底……还是为了存钱吗？
+[k]
+
+＠刑部姬
+你是不是想买什么东西啊？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠卡米拉
+这个嘛[line 3]
+[k]
+
+[charaFace C 1]
+
+＠卡米拉
+……是秘密哦。好女人总是有很多秘密。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠刑部姬
+哎～。真喜欢卖关子呢～。
+[k]
+
+[charaFace F 8]
+
+＠刑部姬
+但现在的卡米拉亲确实充满了神秘，[r]比平时多几分好女人感呢。
+[k]
+
+＠刑部姬
+[#公主:我]也可以借鉴一下呢。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+接下来我们要调整状态，[r]与泳装剑豪目慈惠怒进行对决了……
+[k]
+
+＠玛修
+卡米拉小姐今后有什么打算？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠卡米拉
+完成工作的女怪盗总是会迅速消失踪影。[r]哪怕这样会离开相爱的对象哦。
+[k]
+
+＠卡米拉
+梦幻般消失的 one night mirage……[r]描绘于镜中的 lipstick sign……
+[k]
+
+[charaFace C 1]
+
+＠卡米拉
+那我先告辞了。[r]和你们共事[line 3]很开心哦。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠玛修
+虽说有些依依不舍，但也没办法。[r]再见了！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[wt 1.2]
+
+
+[charaFadeout C 0.4]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠葛饰北斋
+太好了！　拿到挑战书了。[r]终于要和那个晴天娃娃对决啦！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

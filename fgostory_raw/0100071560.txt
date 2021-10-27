@@ -1,0 +1,357 @@
+
+
+
+＄01-00-07-15-6-0
+
+
+[soundStopAll]
+[charaSet A 98106200 1 梅林]
+[charaSet B 8001002 1 玛修]
+[charaSet C 2020001 1 伊什塔尔]
+[charaSet D 98003000 1 Dr.罗曼]
+[charaSet E 98106000 1 金固]
+[imageSet F cut002_black01 1]
+[imageSet G cut004_festoon 1]
+
+[bgm BGM_EVENT_11 0.1]
+[scene 32400]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 1]
+
+＠玛修
+……王座完全崩塌了。[r]女神戈耳工和安娜小姐全都……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad13]
+[charaTalk D]
+[communicationChara 98105900 1 5 0 7]
+[wt 0.3]
+
+
+＠Dr.罗曼
+……戈耳工、安娜，确认两者灵基反应消失。
+[k]
+
+＠Dr.罗曼
+……安娜的武器是“伤口无法再生的镰刀”……[r]是专杀不死之身的宝具。
+[k]
+
+＠Dr.罗曼
+是她的最后一击，[r]击破了戈耳工的不死性……
+[k]
+
+
+？1：……把这个给安娜。
+
+？！
+
+[messageOff]
+[communicationCharaClear]
+[wait communicationChara]
+[se ad7]
+[seVolume ad7 0 0.6]
+[charaDepth F 0]
+[charaFace B 22]
+[charaDepth G 1]
+[charaScale F 1.2]
+[charaScale G 0.8]
+[charaPut G 0,-80]
+[charaCutin F leftToRight 0.4 1.0]
+[wait charaCut F]
+[charaCutin G circleIn 1.0 1.0]
+[wait charaCut G]
+[wt 1.2]
+[charaCutout G 1.0]
+[wait charaCut G]
+[charaCutout F 0.4]
+[wait charaCut F]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠伊什塔尔
+饯别的花……虽然很悲伤，[r]但对那个女孩来说，这点东西应该无妨吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠玛修
+嗯……我觉得，这很适合安娜小姐。
+[k]
+
+[wt 1.0]
+[charaFadeout B 0.1]
+
+[charaTalk D]
+[communicationCharaLoop 98105900 1 5 0 10]
+
+＠Dr.罗曼
+但是……为什么会没有圣杯反应……？[r]魔术王的圣杯应该是戈耳工拿着的啊……
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+
+＠梅林
+……唔。戈耳工毫无疑问[r]是靠圣杯的力量夺回了“过去的神性”。
+[k]
+
+[charaFace A 0]
+＠梅林
+她拥有圣杯的恩惠。[r]但她本人并没持有圣杯。
+[k]
+
+＠梅林
+既然如此，那答案只有一个。[r]魔术王的圣杯是[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[bgmStop BGM_EVENT_11 0.3]
+[wt 0.4]
+[bgm BGM_EVENT_24 0.1]
+[charaTalk D]
+[communicationCharaLoop 98105900 1 5 0 5]
+
+＠Dr.罗曼
+！　敌对反应急速接近！[r]这灵基模式是[line 3]！
+[k]
+
+
+[communicationCharaClear]
+[wait communicationChara]
+[messageOff]
+[se ad68]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[se ad73]
+[seStop ad88 0.4]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,50]
+[charaMove E 0,0 0.2]
+[wait charaMove E]
+
+＠金固
+母亲大人……！[r]您是否平安无事，戈耳[line 4]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+
+＠玛修
+！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠金固
+…………是吗。[r]没能赶上啊。
+[k]
+
+＠金固
+毕竟我不在身边。[r]圣杯的力量自然无法保护她啊。
+[k]
+
+＠金固
+既然不见那位幼小女神的身影，[r]就代表是她舍身杀死了自己吗。
+[k]
+
+＠金固
+真是的[line 3]
+[k]
+
+[charaFace E 5]
+＠金固
+虽号称女神，终究只是旧世界的产物。[r]并不具备足以留在新世界的美啊。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠梅林
+哦。美，指的是什么呢，金固？[r]外观的造型？　还是内在的本质呢？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠金固
+…………少给我耍嘴皮子，梅林。[r]我现在非常愤怒。
+[k]
+
+＠金固
+真的，我可以断言现在是我有生以来第一次那么愤怒。[r]我虽然一直在消灭人类，但那是只是义务。
+[k]
+
+＠金固
+但现在，驱使我的不是义务。[r]你们实在令人恨之入骨。
+[k]
+
+＠金固
+我现在想必会第一次因憎恨而杀人。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+
+＠伊什塔尔
+……要动手我自然奉陪。[r]你真的和恩奇都不一样呢。
+[k]
+
+＠伊什塔尔
+那家伙到最后一刻都贯彻自己兵器的身份。[r]基于情感杀人这种事，他从未做过。
+[k]
+
+＠伊什塔尔
+那个所谓的母亲大人，对你来说原来这么重要啊。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠金固
+……身为金固的我，[r]会爱着提亚马特神是理所当然的。
+[k]
+
+＠金固
+而她也爱着创造主。[r]所以说这只是同情啊。所谓的[#同情:Sympathy]。
+[k]
+
+[messageOff]
+[se bac115]
+[charaFadeout E 0.1]
+[wt 0.4]
+
+[fowardEffect bit_talk_38l]
+[se bac51]
+[wt 0.5]
+[se bac111]
+[wt 1.0]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[fowardEffectStop bit_talk_38l]
+[fowardEffect bit_talk_14]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[se ad32]
+[charaFace B 15]
+[charaShake B 0.05 3 3 0.6]
+[wt 0.7]
+[charaFace B 2]
+＠玛修
+呜……！　金固，已经进入战斗态势了！[r]御主，请小心……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠金固
+随着戈耳工的消灭，她的孩子们也会自我毁灭。
+[k]
+
+＠金固
+毕竟是靠戈耳工的力量合成的魔兽嘛。[r]上级姑且不论，下级魔兽是无法维持身体的。
+[k]
+
+＠金固
+战斗结束了。[r]魔兽战线是你们获得了胜利了。但是[line 3]
+[k]
+
+[charaFace E 8]
+＠金固
+我不允许你们品尝胜利的喜悦。[r]践踏恐怖复仇的善类啊。
+[k]
+
+＠金固
+是否满足于拯救了许多同胞？[r]那么[line 3]作为代价，你们就给我死在这里吧。
+[k]
+
+[messageOff]
+[se ad136]
+[seStop ad136 0.8]
+[charaEffect C bit_talk_06b2]
+[wt 1.5]
+[charaEffectStop C bit_talk_06b2]
+[wt 0.7]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[communicationCharaLoop 98105900 1 5 0 5]
+
+＠Dr.罗曼
+金固的灵基反应发生了变化……！？[r]恩奇都型居然能做到这种事吗！
+[k]
+
+＠Dr.罗曼
+[%1]，小心……！[r]他不再是Lancer了！
+[k]
+
+＠Dr.罗曼
+这是[line 3]
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠金固
+仅限此时，我将作为复仇者战斗。[r]这是我唯一能送给她的饯别之花……！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 0.5]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+
+

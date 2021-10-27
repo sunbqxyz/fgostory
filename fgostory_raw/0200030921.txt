@@ -1,0 +1,290 @@
+
+＄02-00-03-09-2-1
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[charaSet A 1017001 1 武藏]
+[charaSet B 6019001 1 风魔小太郎]
+[charaSet C 98110000 1 柳生但马守]
+[charaSet D 1098117900 1 Assassin Paraiso]
+[charaSet E 1098119200 1 清姬]
+[charaSet H 5009000 1 特效用dummy]
+
+[scene 46902]
+
+[se ad17]
+
+[charaEffect H bit_talk_gagemist_Purple]
+[charaPut H 1]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 2.0]
+
+[wipeout leftToRight 0.5 1]
+[wait wipe]
+[charaEffectStop H bit_talk_gagemist_Purple]
+[charaPut H 1200,1200]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wipein rightToLeft 0.3 1]
+[wait wipe]
+
+＠武藏
+就算每次攻击的威力都很高[line 3]
+[k]
+
+[charaFace A 2]
+
+＠武藏
+但破绽！　很多！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaScale H 1.5]
+[se bac136]
+[charaPut H -40,-30]
+[charaEffect H bit_talk_Slash_white_01]
+[wt 0.3]
+[charaEffectStop H bit_talk_Slash_white_01]
+[charaPut H 1200,1200]
+[charaScale H 1.0]
+[wt 0.4]
+
+[se ad39]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[charaEffect B bit_talk_36]
+
+＠风魔小太郎
+好机会！　全体出动！[r]呼唤地狱[line 3][#不灭的混沌旅团:Immortal Chaos Brigade]！
+[k]
+
+[messageOff]
+[charaEffectStop B bit_talk_36]
+[wt 0.3]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+[se ad392]
+[fowardEffect bit_talk_29 0,-40]
+[flashin once 0.1 0.1 FF000080 EE000040]
+[wt 0.4]
+[fowardEffectStop bit_talk_29 0,-40]
+[wt 0.7]
+
+[se ad17]
+[wt 0.3]
+[shake 0.05 4 4 0.2]
+[wt 0.4]
+[seStop ad17 1.0]
+[wt 1.0]
+
+[charaScale H 1.5]
+[charaEffect H bit_talk_06p]
+[wt 0.2]
+[charaPut H 0,100]
+[wt 1.5]
+[se ad42]
+[charaEffectStop H bit_talk_06p]
+[wt 1.75]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠柳生但马守
+把大蛇解决掉了啊。[r]尽管耗费的时间有偏多的倾向，唔。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠武藏
+站着说话不腰疼！[r]只会袖手旁观的老爷子！
+[k]
+
+＠武藏
+虽然指挥、统帅武士众[r]打倒涌现而出的怪异确实做得非常漂亮！
+[k]
+
+[charaFace A 4]
+
+＠武藏
+但你差不多也该拿出点真本事了吧！？
+[k]
+
+[charaFace A 5]
+
+＠武藏
+虽说你是因为执着于御留流才执意不肯拔刀，[r]但还是让人很不爽啊！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠柳生但马守
+别松懈。下一波来了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠武藏
+谁会松懈啊，我明白得很！
+[k]
+
+[bgmStop BGM_EVENT_3 0.4]
+[wt 0.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+
+＠Assassin Paraiso
+……………………呵呵。嘻嘻。解决了[line 3]
+[k]
+
+＠Assassin Paraiso
+杀死大蛇后就大意了吧！[r]这下就能彻底解决掉了[line 3]迦勒底的！　御主！
+[k]
+
+？1：哎！？
+？2：我！？
+
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ade105]
+[wt 1.0]
+[seStop ade105 0.5]
+
+
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.4 1]
+[wt 0.5]
+
+＠清姬
+……[r]……
+[k]
+
+[charaFace E 4]
+
+＠清姬
+快……逃，[%1]大人……[r]不行……不行……怎么能……
+[k]
+
+＠清姬
+啊，啊啊……不行……不行了，我……[r]我…………
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠武藏
+公主殿下？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠清姬
+杀，杀，杀，杀杀，杀杀杀杀杀杀杀杀杀[line 3]
+[k]
+
+[messageOff]
+[wt 1.2]
+[charaFace E 5]
+
+[bgmStop BGM_EVENT_5 0.3]
+
+＠清姬
+[line 3]杀死你[line 3]
+[k]
+
+[messageOff]
+[charaChange E 1098119210 0 fade 0.4]
+[charaPut H 1]
+[charaScale H 1.5]
+[charaEffect H bit_talk_29]
+[se ad392]
+[se ad11]
+[seVolume ad11 0 0.3]
+[wt 0.7]
+[charaEffect E bit_talk_gouka]
+[wt 1.4]
+
+？1：清姬……………………！！
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠武藏
+[%1]！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[messageOff]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[wt 2.0]
+
+
+[messageOff]
+[seStop ad11 2.0]
+[fadeout white 2.0]
+[bgmStop BGM_EVENT_24 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

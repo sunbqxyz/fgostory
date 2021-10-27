@@ -1,0 +1,200 @@
+
+＄94-03-45-10-1-0
+
+
+[soundStopAll]
+[charaSet A 5005002 1 H·C·A]
+[charaSet B 1098164300 1 Kingprotea]
+[charaSet C 10002000 1 Meltryllis]
+[charaSet D 10001000 1 Passionlip]
+
+[bgm BGM_EVENT_54 0.1]
+[scene 71300]
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠H·C·A
+……好了。就快到达底部了。[r]稍微聊一会儿往事吧。
+[k]
+
+＠H·C·A
+那是发生在与你们的世界不同的世界，[r]发生在月球背后的事件。
+[k]
+
+＠H·C·A
+过去，BB曾为了侵蚀[#月之世界:Mooncell]，[r]反复进行自我改造，最终创造出了五个分身。
+[k]
+
+＠H·C·A
+她切除了不断膨胀且无法控制的感情，[r]并通过将那些感情与女神本质融合，
+[k]
+
+＠H·C·A
+从而创造出了高等从者……[r]名为SAKURA FIVE的Alterego。
+[k]
+
+[charaTalk off]
+[charaDepth C 0]
+[charaDepth D 0]
+[charaDepth A 1]
+[charaPut C -380,0]
+[charaFadeTime C 0.7 0.5]
+[charaMove C -400,0 1.0]
+＠H·C·A
+快乐的Alterego，Meltryllis。[r]爱[charaPut D 380,0][charaFadeTime D 0.7 0.5][charaMove D 400,0 1.0]憎的Alterego，Passionlip。
+[k]
+
+[charaFadeout C 0.4]
+[charaFadeout D 0.4]
+
+＠H·C·A
+以及，被压缩在那里的，[r]是渴爱的Alterego，Kingprotea。
+[k]
+
+＠H·C·A
+无限成长，无限扩大规模，[r]只能在电脑世界中成立的知性体[line 3]
+[k]
+
+＠H·C·A
+是如果放任不管，就会吞噬SE.RA.PH，[r]甚至连Mooncell都会被吃空的，污染星之海的『灾害』。
+[k]
+
+？1：……Kingprotea……
+
+[charaFace A 0]
+＠H·C·A
+没错。别认为那是个普通的立方体哦，[r]不要被外表欺骗了。
+[k]
+
+＠H·C·A
+这重力圈就是Protea生成的。[r]只要打开那个立方体[line 3]
+[k]
+
+？2：看上去不像是危险的存在啊……
+
+[charaFace A 2]
+＠H·C·A
+那当然啦，因为现在[#被初始化]了。[r]那个等同于初生的胎儿。
+[k]
+
+＠H·C·A
+连1级状态下都能引发这种重力变动。[r]这种东西如果被放入外界[line 3]
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_54 0.7]
+[se ad14]
+[se ad39]
+[shake 0.05 3 3 2.0]
+[charaPut C 0,0]
+[charaEffect C bit_talk_blight_01 0,-90]
+[charaMove C 0,100 1.5]
+
+[scene 71400 3.0]
+[wait scene]
+
+[wt 0.5]
+[seVolume ad14 1.0 0.4]
+[wt 1.0]
+[bgm BGM_EVENT_24 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠H·C·A
+要出来了哦……！　那家伙是会以秒单位[r]成长的从者，一定要避免长期战！
+[k]
+
+＠H·C·A
+用最大火力连续不断地轰炸！[r]只要能超过那家伙的成长速度，就赢了！
+[k]
+
+＠H·C·A
+或者[line 3]坚持到极限！[r]尽管我不推崇这种方法，但那家伙也是有极限的！
+[k]
+
+＠H·C·A
+当转向下一个成长极限时，应该会有瞬间的破绽！[r]找准这个机会进攻！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad148]
+[seVolume ad14 0.7 1.0]
+[shake 0.05 3 5 2.0]
+[wt 1.5]
+
+？1：立方体裂开了……！
+
+？！
+
+[wt 0.1]
+
+[seStop ad14 0.7]
+[se ad148]
+[charaEffect C bit_talk_blight_02 0,-90]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.3]
+[seStop ad148 2.0]
+
+[scene 10001 1.5]
+[wt 1.0]
+[se ad149]
+[wait scene]
+
+[charaSet C 10002001 1 Meltryllis]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.7 0,0]
+＠Kingprotea
+爱我……爱我……[r]请你……爱我……
+[k]
+
+＠Kingprotea
+我只不过……想被爱而已……[r]但谁也，不给我爱……
+[k]
+
+[charaFace B 12]
+＠Kingprotea
+……请告诉我，我诞生的理由……[r]……请满足，我的饥渴……
+[k]
+
+＠Kingprotea
+……肚子饿扁了……[r]……根本，根本不够……
+[k]
+
+[charaFace B 14]
+＠Kingprotea
+啊啊……你就是找到了我的人吧？
+[k]
+
+＠Kingprotea
+我爱你。我爱你。我爱你。[r]所以[line 3]
+[k]
+
+＠Kingprotea
+将你的一切，都给我吧。[r]请接纳，我的生命吧。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_24 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

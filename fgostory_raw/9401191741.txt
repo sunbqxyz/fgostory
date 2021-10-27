@@ -1,0 +1,410 @@
+
+
+＄94-01-19-17-4-1
+[soundStopAll]
+[charaSet A 1030000 1 铃鹿御前]
+[charaSet B 10002000 1 Meltryllis]
+[charaSet C 2008001 1 崔斯坦]
+[charaSet D 98006300 1 来路不明人形1]
+[charaSet E 98006300 1 来路不明人形2]
+[charaSet F 98006300 1 来路不明人形3]
+[charaSet G 98006300 1 来路不明人形4]
+[charaSet H 98006300 1 来路不明人形5]
+
+[bgm BGM_EVENT_3 0.1]
+[scene 41600]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth D 2]
+[charaDepth E 3]
+[charaDepth F 4]
+[charaDepth G 5]
+[charaDepth H 6]
+
+[charaFadein D 0.4 -512,0]
+[wt 0.2]
+[charaFadein E 0.4 512,0]
+[wt 0.2]
+[charaFadein F 0.4 0]
+[wt 0.2]
+[charaFadein G 0.4 2]
+[wt 0.2]
+[charaFadein H 0.4 1]
+[wt 0.4]
+[se ad23]
+[wt 1.2]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+＠铃鹿御前
+啊啊，真是的，这群家伙怎么无穷无尽啦，神烦……！[r]就算是我，在[#滑轨:Coaster]之后也很累了啦！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠Meltryllis
+呜……如果我能回复的话……！
+[k]
+
+？1：御前大人，钢索！
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠铃鹿御前
+啊。别。不要这么称呼我。[r]感觉怪别扭的。
+[k]
+
+[charaFace A 8]
+＠铃鹿御前
+但这个姑且不论，好助攻！[r]没错没错，我们还有那个嘛！
+[k]
+
+？2：快往上逃！
+[charaFadeout B 0.1]
+[wt 0.1]
+[messageOff]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaFace A 2]
+＠铃鹿御前
+我知道啦！　我当然记得！[r]对对，是钢索对吧，往上逃跑对吧！
+[k]
+
+？！
+
+[charaFace A 11]
+＠铃鹿御前
+[messageShake 0.01 5 5 0.7]
+[line 3]等下，钢索怎么断了！？[r]一定是那个黑手党脚底抹油开溜了吧[line 2]！？
+[k]
+
+
+[messageOff]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.4]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+[messageOff]
+[charaFadein D 0.1 -512,0]
+[charaFadein E 0.1 512,0]
+[charaFadein F 0.1 0]
+[charaFadein G 0.1 2]
+[charaFadein H 0.1 1]
+[se ad150]
+[wt 1.2]
+[fowardEffect bit_talk_ichimon01bl]
+[se ad373]
+[wt 0.2]
+[shake 0.05 0 4 0]
+[wt 0.2]
+[wt 1.0]
+[shakeStop]
+[fowardEffectStop bit_talk_37]
+[effect bit_talk_35]
+[se ad161]
+[wt 0.7]
+[charaSpecialEffect D enemyErasure 1 1.7]
+[charaSpecialEffect E enemyErasure 1 1.7]
+[charaSpecialEffect F enemyErasure 1 1.7]
+[charaSpecialEffect G enemyErasure 1 1.7]
+[charaSpecialEffect H enemyErasure 1 1.7]
+[se ad24]
+[wait charaSpecialEffect D]
+[bgmStop BGM_EVENT_3 0.7]
+[wt 1.0]
+[se ad151]
+[messageOff]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[charaSet D 23001000 1 BB]
+[wt 0.4]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+＠Meltryllis
+刚才那装腔作势的弦音是[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[messageOff]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.4 1]
+[bgm BGM_EVENT_2 0.1]
+＠崔斯坦
+没想到我的弦居然会在这样的地底，[r]对那些没有心灵的破铜烂铁使用。
+[k]
+
+＠崔斯坦
+……啊啊，我太悲伤了……这样一来，[r]连悠久之音也会化为[#地狱之铁:死亡摇滚]的啊……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠Meltryllis
+（而且还说着这些听上去就像是事先想好的台词……！）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[messageOff]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[wt 0.4]
+？1：你来救我们了啊……！
+？2：谢谢你，崔斯坦
+
+？！
+
+[charaFace C 0]
+＠崔斯坦
+不用在意。只是顺其自然罢了。[r]因为阿诺尔德氏一直在唠叨着说要把你们带回去。
+[k]
+
+[charaFadeout C 0.1]
+[messageOff]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 1.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠崔斯坦
+…………居然没事啊。[r]不过嘛，并不算什么坏事。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠铃鹿御前
+虽然得救了，但你是怎么下来的，长毛？[r]黑手党的钢索不是没了吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠崔斯坦
+这种程度的高度对我来说就像是散步。[r]就算没有救命绳索，飞跃而下对我来说也是小菜一碟。
+[k]
+
+＠崔斯坦
+……对。从尖塔上一跃而下滑翔这种事，[r]对圆桌骑士而言根本就是家常便饭[line 3]哼。
+[k]
+
+[charaFace C 4]
+＠崔斯坦
+虽说美中不足的是这种做法是单行道。[r]我毕竟不是什么鸟，所以不可能飞回去。
+[k]
+
+[charaFace C 7]
+＠崔斯坦
+但各位一定有回上面的手段吧？[r]非常不好意思，能让我搭个顺风车吗。
+[k]
+
+？1：得了，第四个遇难者[line 3]！
+？2：……这骑士原来是这种人啊……
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠铃鹿御前
+因为他是中性美型男人，我本来还抱有期待来着……[r]这种天然属性似乎不在我的守备范围内……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Meltryllis
+我理解你的心情，但振作一点。[r]事已至此，只能靠你了，铃鹿。
+[k]
+
+＠Meltryllis
+打开通往天体室的通道，[r]塞拉菲克斯的职员们想去那边吧？
+[k]
+
+＠Meltryllis
+……不能让阿诺尔德看到那间房间。[r]会导致他产生过度的欲望而自我毁灭的。
+[k]
+
+＠Meltryllis
+希望你现在就能回上面阻止他……[r]但看来不太可能吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaFadein B 0.1 0]
+＠铃鹿御前
+怎么。你进过核心吗？[r]连我都没被允许进入过啊。
+[k]
+
+＠Meltryllis
+……我只是知道。[r]重要的是，这里是[#腿肚:Calf]吧。那么，
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[bgmStop BGM_EVENT_2 0.7]
+＠？？？
+那么，Melt亲原先工作的地方，[r]残忍、冷酷的[#脚掌:Thenar]已经近在眼前了，是这个意思吧？
+[k]
+
+＠？？？
+话说，各位还在垂死挣扎啊？[r]还·是·说……
+[k]
+
+＠？？？
+你们还在最底层转悠，[r]代表了你们连心都变成蝼蚁先生了吗～？
+[k]
+
+？1：这声音是[line 3]
+？2：[line 3]BB！
+
+？！
+
+[bgm BGM_EVENT_52 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 1]
+＠BB
+BING BONG，答对了～♪[r]我是一直在监视你的万能AI·BB亲啦～☆
+[k]
+
+[charaFace D 0]
+＠BB
+你好，前辈。[r]还有各位叛徒。
+[k]
+
+＠BB
+因为这里是最底层，所以就放心了？[r]才一会儿没外出就已经忘记了吗？
+[k]
+
+[charaFace D 11]
+＠BB
+但是很遗憾～，BB亲可不会允许这种事发生。
+[k]
+
+＠BB
+因为我是在你们不希望看到时就会出现的骰子1点，[r]或是抽鬼牌中出现的[#小丑:鬼牌]哦。
+[k]
+
+＠BB
+就像在做饭过程中总是会出现的黑色虫子一样，[r]我要用拖鞋将大家彻底打扁哦♡
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠崔斯坦
+……看准了能战斗的只有我和Saber这个机会，[r]本体才终于现身了吧。
+[k]
+
+＠崔斯坦
+是不是觉得现在凭你1骑就能解决我们？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠BB
+唔。别小看我哦。
+[k]
+
+＠BB
+无论对手是谁，[r][#伟大恶魔:Great devil]的BB亲都是不会输的。
+[k]
+
+[charaFace D 6]
+＠BB
+再加上这也没有违反游戏的规则。[r]我是为了管理圣杯战争，并让圣杯战争变得更为热烈而被叫来的AI。
+[k]
+
+＠BB
+在这个问题上，我是不能违反规则的。[r]哪怕这SE.RA.PH有多么错误。
+[k]
+
+？1：…………（不能违反规则……？）
+？2：…………（反过来说……）
+
+？！
+
+[charaFace D 0]
+＠BB
+哎哟，看来提示给得太多了吧！[r]那甜蜜时间到此结束～！
+[k]
+
+[charaFace D 12]
+＠BB
+你们以为我会让你们轻松回到上面吗？[r]从来到这里的那刻起，你们就已经完了。
+[k]
+
+＠BB
+来吧[line 3]让你们坠落到真正的最底层吧。[r]距SE.RA.PH到达海底还剩[#5个半小时:3分多钟]。
+[k]
+
+＠BB
+已经没时间让你们逆转或是爬上去了。[r]你们还是好好享受最后的区域吧。
+[k]
+
+[bgm BGM_EVENT_52 0.2 0.4]
+[se ade45]
+[wt 1.0]
+[se ad75]
+[messageOff]
+[charaFadeout D 2.0]
+[scene 10000 2.0]
+[wt 2.0]
+[messageOff]
+[bgmStop BGM_EVENT_52 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

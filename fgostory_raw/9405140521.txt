@@ -1,0 +1,409 @@
+
+
+
+＄94-05-14-05-2-1
+
+[soundStopAll]
+
+
+[charaSet A 2001300 1 卫宫]
+[charaSet B 1036300 1 兰陵王]
+[charaSet C 2042001 1 伊莉雅]
+[charaSet D 1098200900 1 紫式部]
+[charaSet E 6013001 1 魅影]
+[imageSet F back10000 1]
+[charaScale F 1.01]
+
+[charaSet S 5009040 1 特效用dummy]
+[charaSet T 5009040 1 特效用dummy]
+
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad33]
+[effect bit_talk_kengekiall02]
+[wt 0.9]
+
+[se ad32]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+[effectDestroy bit_talk_kengekiall02]
+
+[scene 99503]
+
+[se ad671]
+[seStop ad671 0.6]
+[charaScale A 1.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0 0,20]
+[charaMove A 0,0 0.2]
+[charaMoveScale A 1.0 0.2]
+[charaShake A 0.02 3 3 0.5]
+[wt 1.0]
+
+＠卫宫
+呜……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠兰陵王
+哈啊啊啊！
+[k]
+
+[messageOff]
+[cueSe Battle bac138]
+[effect bit_talk_v_slash01]
+[wt 0.4]
+
+
+
+[charaTalk depthOff]
+[charaDepth E 4]
+[charaDepth B 6]
+[charaDepth F 1]
+
+[se ad170]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0 -50,0]
+[charaPut B 50,0]
+[charaMove B 200,0 0.15]
+[charaMove E -200,0 0.15]
+[charaShake E 0.02 3 3 0.4]
+[charaShake B 0.02 3 3 0.4]
+[wt 0.8]
+
+＠魅影
+……[r]……
+[k]
+
+
+[messageOff]
+[se ad7]
+[charaMove E 0,0 0.2]
+[wt 0.3]
+[charaMove B 200,10 0.2]
+[se ad787]
+[charaFace B 8]
+[charaShake B 0.01 2 2 0.8]
+[wt 0.6]
+[seStop ad787 0.4]
+[wt 0.6]
+
+[charaFadeTime F 0.1 0.6]
+＠兰陵王
+（这力量是怎么回事……！[r]　即便有御主的支援，还被对方压制……！）
+[k]
+
+[charaFace B 7]
+＠兰陵王
+（脖子……有点……不妙……意识快要……）
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠卫宫
+兰陵王！　坚持住！
+[k]
+
+[charaFace A 2]
+＠卫宫
+御主，配合我！[r][#投影:Trace][#开始:on]！
+[k]
+
+
+[messageOff]
+[wt 0.1]
+
+[se bas1]
+[fowardEffect bit_talk_30]
+[wt 1.0]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[fowardEffectDestroy bit_talk_30]
+
+
+[charaDepth T 9]
+[charaDepth S 8]
+[charaDepth B 6]
+[charaDepth E 4]
+
+[charaFace E 5]
+[charaFace B 4]
+[charaFadein E 0.1 0,-50]
+[charaFadein B 0.1 200,-40]
+
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠兰陵王
+呜……！
+[k]
+
+？1：紧急回避！
+？！
+
+[messageOff]
+[charaTalk off]
+[cueSe Battle NP_START_1]
+[wt 0.6]
+
+
+[se ade282]
+[wt 0.3]
+[charaPut S 200,-40]
+[charaEffect S bit_talk_21]
+[charaSpecialEffect B erasureReverse 0,0 0.4]
+[wt 1.0]
+
+
+[se ad609]
+[charaPut T 1]
+[charaEffect T bit_talk_explosion]
+[wt 0.1]
+[charaFace E 4]
+
+[charaShake E 0.03 4 4 1.2]
+[wt 0.8]
+
+
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaPut T 1200,1200]
+[charaEffectStop T bit_talk_explosion]
+[charaPut S 1200,1200]
+[charaEffectStop S bit_talk_21]
+[charaFadeout E 0.1]
+
+[pictureFrame]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+
+[se ade282]
+[wt 0.3]
+[charaPut S 1]
+[charaEffect S bit_talk_21 0,0 V]
+[charaPut B 1]
+[charaFace B 7]
+[charaSpecialEffect B appearanceReverse 0,0 0.2]
+[wt 0.4]
+[charaEffectStop S bit_talk_21]
+[wt 0.6]
+
+
+[charaTalk on]
+＠兰陵王
+得……得救了……[wt 0.6][charaFace B 4][charaShake B 0.02 3 3 0.3]咳咳。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠卫宫
+很抱歉用这种粗暴的手段。[r]虽说降低了威力，
+[k]
+
+＠卫宫
+但毕竟宝具在眼前被释放。[r]你还是稍微休息一会儿吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠兰陵王
+但是[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠卫宫
+……确实，问题并没有解决呢。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠魅影
+……[r]……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠伊莉雅
+魅……魅影先生是不是太顽强了！？
+[k]
+
+？1：和迦勒底的魅影不是同一个人？
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠卫宫
+……不，不对。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：是被什么洗脑了吗……？
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠卫宫
+这种可能性比较高。
+[k]
+
+[charaFace A 4]
+＠卫宫
+但是，由于魅影具备『精神污染』技能，[r]对精神干涉类术式的抵抗力应该很强才对。
+[k]
+
+＠卫宫
+而他居然会被轻易……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠紫式部
+这是……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠魅影
+……[r]……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠紫式部
+大家，快进小屋！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠兰陵王
+进小屋？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠卫宫
+照这样下去确实没完没了……[r]但逃进室内反而更被逼入绝境了吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠紫式部
+不。那位[line 3][wt 0.4][charaFace D 2][r][#如果不知道打倒的方法是打不倒的]！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+＠卫宫
+……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠紫式部
+大家，赶快！
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_80 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

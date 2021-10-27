@@ -1,0 +1,436 @@
+
+
+＄94-04-91-11-2-0
+[soundStopAll]
+
+[charaSet A 1098194300 1 卑弥呼]
+[charaSet C 7025002 1 土方岁三]
+[charaSet D 6033000 1 冈田以藏]
+
+[branchQuestNotClear lblNotClear 3000320]
+
+[branch lblConf]
+[label lblNotClear]
+[charaSet E 8001000 1 玛修]
+
+[branch lblNotClear_out]
+[label lblConf]
+[charaSet E 8001410 1 玛修]
+
+[label lblNotClear_out]
+
+[charaSet G 1098194700 1 芹泽鸭]
+[charaSet H 1098195100 1 山南敬助]
+[charaSet I 1098196000 1 狗神]
+[charaSet J 1001000 1 特效用]
+[charaSet L 1098196400 1 队员]
+[charaSet M 1001000 1 特效用]
+
+[charaDepth M 8]
+[charaDepth J 7]
+[charaDepth L 6]
+[charaDepth I 6]
+
+
+[scene 97200]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠土方岁三
+啊啊啊啊啊啊啊啊啊！！！
+[k]
+
+[messageOff]
+
+[effect bit_talk_v_slash01]
+[se bac137]
+[wt 0.3]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+[charaShake L 0.03 4 4 0.3]
+[wt 0.6]
+
+[charaMove L 0,-50 0.4]
+[charaFadeout L 0.4]
+[wt 0.4]
+[se ad144]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠冈田以藏
+去死吧啊啊啊啊啊！！！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+[charaEffect L bit_talk_x_slash03 0,30]
+[se bac139]
+[wt 0.2]
+[charaShake L 0.03 5 5 0.3]
+[wt 0.6]
+
+[charaMove L 0,-50 0.4]
+[charaFadeout L 0.4]
+[wt 0.4]
+[se ad144]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+[bgmStop BGM_EVENT_3 1.5]
+
+
+＠玛修
+御主！　击败敌对个体了！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+
+＠土方岁三
+真遗憾呢，芹泽……这样一来你也完了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠芹泽鸭
+遗憾……？　啊啊，确实很遗憾……
+[k]
+
+[charaFace G 3]
+[bgm BGM_EVENT_71 0.1]
+
+＠芹泽鸭
+我的各位新选组队员，你们非常懊悔吧，非常愤恨吧。
+[k]
+
+
+＠芹泽鸭
+被凶暗侵蚀，被迫自相残杀，
+[k]
+
+＠芹泽鸭
+连你们无比信奉的女王都成了你们的敌人。
+[k]
+
+＠芹泽鸭
+很不甘心吧，非常不甘心吧……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+你究竟在说什么……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠芹泽鸭
+不，没什么，我可是非常感谢[r]不惜杀害同伴的残酷的你们哦。
+[k]
+
+[charaFace G 7]
+
+＠芹泽鸭
+[line 3]制造了不错的活祭。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_71 0.4]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+[wt 0.5]
+
+[charaEffect J bit_talk_black_mist]
+[se bac33]
+[seStop bac33 0.7]
+[se ad556]
+[seVolume ad556 0 0.4]
+[wt 0.5]
+
+[charaFace L 1]
+
+＠队员
+呜，唔啊啊啊……呜啊啊啊啊啊啊啊！！！
+[k]
+
+[charaPut J 2200,2200]
+[charaPut M 1200,1200]
+[charaFadeout L 0.1]
+[seStop ad556 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+[bgm BGM_EVENT_72 0.1]
+
+＠玛修
+你……你做了什么……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+难道说……把他们作为活祭……！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+
+＠芹泽鸭
+呼哈哈哈哈哈哈哈！　寄宿在我体内的狗奴国秘术！
+[k]
+
+＠芹泽鸭
+这就是将人类的怨念化为力量的兽之咒法！
+[k]
+
+＠芹泽鸭
+集结并操控那些渴望更多悲叹、[r]更多妄执、更多复仇之人念想的力量！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+
+＠玛修
+怎么会……也就是说你是为此才让我们打倒他们，[r]以便累积更深的怨念吗！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠土方岁三
+令人作呕……
+[k]
+
+＠土方岁三
+山南，这就是你选择的局长吗……
+[k]
+
+[charaFace C 9]
+
+＠土方岁三
+这就是你梦想中的新选组吗！
+[k]
+
+
+＠土方岁三
+回[messageShake 0.02 4 4 0.5]答我，山南！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+
+＠山南敬助
+土方……我……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠芹泽鸭
+呼哈哈哈哈哈哈哈哈！
+[k]
+
+
+＠芹泽鸭
+看啊，这就是多亏了你们才诞生的[r]古老非归顺之民的国家，狗奴国传承的怪物，
+[k]
+
+
+＠芹泽鸭
+[line 3]『狗神』！
+[k]
+
+
+＠芹泽鸭
+这是多么滑稽、丑恶至极的美妙身姿啊！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad169]
+
+[charaPut J 0,0]
+[charaTalk off]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_72 1.2]
+[charaEffectStop J bit_talk_black_mist]
+[wt 0.6]
+[charaPut M 0,0]
+[charaEffect M bit_talk_suspicious]
+[charaFadeout L 0.1]
+[se ad804]
+[seStop ad169 0.6]
+[wt 0.6]
+
+[charaPut I 1]
+[charaSpecialEffect I wipeTimeRe 1 1.0]
+[se ad42]
+[wait charaSpecialEffect I]
+[charaFadein I 0.0 1]
+[wt 0.5]
+
+[bgm BGM_EVENT_24 0.1]
+[wt 1.0]
+
+＠狗神
+哇啊啊……呜哦啊啊啊啊啊啊……！
+[k]
+
+[charaPut J 2200,2200]
+[charaPut M 1200,1200]
+[charaEffectStop M bit_talk_suspicious]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+怎么会这样……大家都在哭泣……
+[k]
+
+＠卑弥呼
+痛苦难受悲伤……
+[k]
+
+＠卑弥呼
+对不起，对不起……！
+[k]
+
+[charaFace A 5]
+
+＠卑弥呼
+如果我……如果我能更加……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+
+
+＠玛修
+御主！　那个『狗神』在释放可怕的魔力！
+[k]
+
+＠玛修
+光是与其对峙就像是要被碾压了……！
+[k]
+
+？1：总之得想办法打倒它才行……！
+？2：太过分了……！
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠芹泽鸭
+[line 3]来吧，该道别了。
+[k]
+
+＠芹泽鸭
+尽可能滑稽、凄惨地去死吧！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.5]
+[wait fade]
+[soundStopAll]
+[end]

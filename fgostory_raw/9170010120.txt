@@ -1,0 +1,137 @@
+＄91-70-01-01-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[scene 20523]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98003000 2 Dr.罗曼]
+[charaSet C 98002000 2 芙芙]
+[charaSet D 7001001 1 赫拉克勒斯]
+[charaSet E 98013000 1 少女]
+[charaSet F 98006000 1 兽人]
+[charaFace A 7]
+[charaFadein A 0]
+[fadein black 1]
+[wait fade]
+＠玛修
+很好，这里已经没问题了。[r]啊！！　那里有个女孩子！！
+[k]
+
+[charaFadeout A 0.1]
+＠少女
+呜哇～啊……妈～妈～！！
+[k]
+
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠赫拉克勒斯
+[image berserker_language_2][line 2]！！
+[k]
+
+[charaFadeout D 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+糟了，Berserker根本就不会在乎孩子！[r]得想办法阻止他！！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠赫拉克勒斯
+[image berserker_language_2][line 2]！！
+[k]
+
+＠少女
+呜哇～！！
+[k]
+
+？1：站住，赫拉克勒斯！！
+
+？2：不能这么做！！
+
+？！
+
+[charaFace D 2]
+＠赫拉克勒斯
+[image berserker_language_2][line 2]！！
+[k]
+
+[messageOff]
+[charaFadeout D 0]
+[fadeout black 0]
+[scene 10000]
+[fadein black 0]
+[se bac7]
+[flashin once 0.1 1.2 FF4040FF 00000000]
+[wait flash]
+[wt 1]
+＠Dr.罗曼
+吓……吓得我不敢直视监视屏……[r][%1]，刚才那个女孩难道……
+[k]
+
+＠玛修
+不，医生，不对。[r]他的目标是她身后的……！！
+[k]
+
+[fadeout black 0]
+[scene 20523]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[fadein black 0]
+＠兽人
+咕嘎……
+[k]
+
+[messageOff]
+[charaSpecialEffect F enemyErasure 0 2]
+[se ba6]
+[wait charaSpecialEffect F]
+＠少女
+呜哇～，好可怕啊……
+[k]
+
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠玛修
+乖，乖，没事了哦。[r]来，快逃到安全的地方去吧。
+[k]
+
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr.罗曼
+……呼。幸好女孩得救了。
+[k]
+
+[communicationCharaFace 0]
+＠Dr.罗曼
+原来如此。[r]Berserker会优先攻击敌意较强的对象。所以才[line 3]
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+医生，还有其他幸存者吗？
+[k]
+
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+唔，周围只剩下敌对反应了。[r]不如说你们的处境比刚才更糟。
+[k]
+
+？1：那就大肆闹腾一番吧！！
+
+？2：干掉他们，Berserker！！
+
+？！
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[communicationCharaClear]
+[wait fade]
+[soundStopAll]
+[end]

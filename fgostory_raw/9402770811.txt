@@ -1,0 +1,140 @@
+
+
+
+＄94-02-77-08-1-1
+
+[soundStopAll]
+
+[charaSet A 98100400 1 玛修]
+
+[charaSet B 2003300 1 罗宾汉]
+
+[charaSet C 98102400 1 伊莉雅]
+[charaSet D 2027000 1 克洛伊]
+[charaSet E 5020000 1 爱丽丝菲尔]
+[charaSet F 6015001 1 卫宫]
+[charaSet G 6015002 1 卫宫（第三）]
+
+[charaSet H 98115000 1 特效用]
+
+
+[scene 63200]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_28 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠伊莉雅
+咦，奇怪了？　刚才围着我们的人消失了？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠克洛伊
+刚才身后似乎闪了一下，[r]然后他们就消失了……究竟是怎么回事呢？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠爱丽丝菲尔
+是啊……真遗憾。[r]我本想三个人一起拍张照呢……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠伊莉雅
+这可不行，绝对不行！[r]这样会有人偏离人生轨道的！
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripRightToLeft 0.7 1]
+[bgmStop BGM_EVENT_28 0.7]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[wt 0.5]
+
+[scene 63700]
+
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[bgm BGM_EVENT_28 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠G：卫宫
+……谢谢。这下如鲠在喉的事总算解开了。[r]尽管我也不知道自己为什么会陷入这种精神状态。
+[k]
+
+[messageOff]
+[charaDepth F 10]
+[se ad7]
+[charaTalk off]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.2]
+[charaFadeout G 0.4]
+[wt 0.4]
+[charaTalk on]
+
+＠卫宫
+我先告辞了。[r]不能保证不会出现第二、第三个黑胡子。
+[k]
+
+＠卫宫
+这段时间，我得好好保护城市的治安才行。
+[k]
+
+[messageOff]
+[charaMove F -50,0 0.4]
+[charaFadeout F 0.4]
+[se ad173]
+[wt 1.0]
+[seStop ad173 0.5]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠玛修
+卫宫先生又去跟踪爱丽丝菲尔小姐她们了……[r]不，是去护卫她们了吧。
+[k]
+
+[charaFace A 1]
+
+＠玛修
+至于卫宫先生为何会那么坐立不安，[r]我们还是保持沉默为好吧，前辈！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_28 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

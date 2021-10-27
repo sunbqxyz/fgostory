@@ -1,0 +1,673 @@
+
+
+
+
+
+＄03-00-04-03-1-0
+
+[soundStopAll]
+
+[charaSet A 1098123210 1 戈尔德鲁夫]
+[charaSet B 1098123010 1 穆尼尔]
+[charaSet C 1098124510 1 达·芬奇]
+[charaSet D 8001410 1 玛修]
+[charaSet E 1019001 1 罗摩]
+[charaSet F 3004001 1 迦尔纳]
+[charaSet G 98002000 1 芙芙]
+[charaSet H 98115300 1 福尔摩斯]
+[charaSet I 3031001 1 枪兵193]
+[charaSet J 5009000 1 特效用dummy]
+
+[scene 74901]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠戈尔德鲁夫
+但这样真的能行吗？[r]在中国那时不是费了很大功夫吗？
+[k]
+
+[charaFace A 1]
+
+＠戈尔德鲁夫
+不过上次由于初期阶段我就面对着自身的死亡，[r]所以做了过多蛮勇之事，失去了冷静的判断力，
+[k]
+
+＠戈尔德鲁夫
+老实说，我已经记不清发生了什么了！[r]我想想，是无法召唤从者吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠穆尼尔
+用不着特别说明啦，[r]大家都知道。
+[k]
+
+[charaFace B 0]
+
+＠穆尼尔
+不过，像中国那种特殊状况应该不会那么常见吧。
+[k]
+
+＠穆尼尔
+这次应该能轻松召唤出可靠的从者啦。[r]尽管只是我个人乐观的猜测。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+没错～没错～。接下来就只剩实际挑战了！[r]玛修，准备好了吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠玛修
+是。召唤术式的构筑与铺设已经完成了。[r]与灵基手提箱的连接也没有问题。
+[k]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaFace D 7]
+
+＠玛修
+最终确认[line 3]英灵召唤系统·命运。[r]状况，[#一切正常:All Green]！
+[k]
+
+[charaFace D 1]
+
+＠玛修
+御主。[r]只要您准备就绪，随时都可以开始了！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 1.4]
+
+[se bas16]
+[seVolume bas16 0 0.6]
+[wt 0.9]
+
+[se ad153]
+[seVolume ad153 0 0.0]
+[seVolume ad153 1.0 0.2]
+[effect bit_talk_summon]
+[wt 1.5]
+
+[bgm BGM_EVENT_82 0.1]
+
+＠
+汝之身躯居吾麾下，吾之命运寄汝剑上。[r]应圣杯之召，若愿顺此意理，且应吾之召唤。
+[k]
+
+[se ad632]
+[seStop ad632 3.0]
+[effect bit_talk_lightning_05t]
+
+＠
+于此立誓。
+[k]
+
+＠
+吾乃成就常世一切善行之人，[r]吾乃弘布常世一切邪恶之人。
+[k]
+
+＠
+汝为三大言灵缠身之七天，[r]自抑止之轮而来，天秤的守护者啊[line 3]！
+[k]
+
+[se su3]
+[messageOff]
+[fadeout white 1.0]
+[wait fade]
+
+[effectDestroy bit_talk_summon]
+[effectDestroy bit_talk_lightning_05t]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[seStop ad632 3.0]
+[seStop ad153 3.0]
+[wt 5.0]
+
+[fadein white 2.0]
+[wait fade]
+
+[wt 1.0]
+
+[charaFace E 1]
+[wt 0.5]
+
+＠罗摩
+从者，Saber。[r]伟大的拘萨罗之王，罗摩。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 1.5]
+
+＠迦尔纳
+从者，Lancer。真名为迦尔纳。[r]请多指教。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+[wt 1.2]
+[charaFace D 1]
+
+＠玛修
+前辈！　召唤成功了！[r]应该说，这情况[line 3]太好了呢！
+[k]
+
+？1：太好啦～！
+？2：是两位熟人！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠戈尔德鲁夫
+噢噢！[wt 0.5][charaFace A 2][r]……好，很好！　不愧是我，太走运了！
+[k]
+
+[charaFace A 1]
+
+＠戈尔德鲁夫
+召唤了这两位等同于获得了胜利吧。[r]可以说召唤出了最适合攻略印度的从者吧！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+然而召唤他们的人是[%1]哦。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠玛修
+尽管很想摆出胜利的姿势，[r]但还是克制一点好啦。
+[k]
+
+＠玛修
+作为交换，[r]我想让芙芙跳一下。请跳！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.2 90,0]
+[charaMove G 1 0.3]
+
+＠芙芙
+芙芙，[wt 0.3][cueSe Battle bac469][charaMoveReturn G 0,40 0.4]芙呜！
+[k]
+
+
+[messageOff]
+[wipeout rollRight 1.2 0.5]
+[bgmStop BGM_EVENT_82 1.2]
+[wait wipe]
+[charaFadeout G 0.1]
+[wt 0.7]
+[wipein rollLeft 1.0 0.5]
+[wt 0.9]
+[bgm BGM_EVENT_77 0.1]
+[wait wipe]
+
+[charaTalk depthOff]
+[charaDepth F 0]
+[charaDepth E 1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+
+＠迦尔纳
+原来如此。我大致理解情况了。[r]也就是说，我们是[#泛人类史:迦勒底]方的从者吧。
+[k]
+
+＠罗摩
+唔嗯！　真是一趟充满苦难的旅程呢，[r]御主[%1]啊。
+[k]
+
+＠罗摩
+但是尽管放心吧。你成功召唤出了余，[r]拘萨罗之王兼毗湿奴化身的罗摩。
+[k]
+
+＠罗摩
+无论前方有多少艰难险阻，[r]余的退魔之刃都会令它们烟消云散。
+[k]
+
+[charaFace E 1]
+
+＠罗摩
+更不用说竟然连“施舍的英雄”迦尔纳也被召唤出来了！
+[k]
+
+＠罗摩
+你未免太幸运了吧……御主啊，[r]你迄今为止究竟积了多少善行啊？
+[k]
+
+＠迦尔纳
+尽管我不是个值得各位如此高兴的英灵……[r]但说得没错。
+[k]
+
+＠迦尔纳
+既然受召而来，我定会为御主的使命竭尽心力。[r]请不必顾虑，尽情使唤我吧。
+[k]
+
+
+＠迦尔纳
+但是[line 3]没想到我竟能与那位王并肩战斗，[r]这是[#战士:刹帝利]的无上光荣。
+[k]
+
+＠迦尔纳
+我不否认我也觉得自己挺幸运的。
+[k]
+
+＠罗摩
+哈哈哈，看来[#太阳神:苏利耶]的儿子也挺懂礼数的嘛。[r]完全值得让余将背后托付给你，大英雄迦尔纳啊！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠玛修
+………………
+[k]
+
+？1：你好像很开心呢，玛修。
+？！
+
+[charaFace D 13]
+
+＠玛修
+啊，对！[r]与其说开心，不如说松了口气……
+[k]
+
+＠玛修
+因为我非常清楚这两位都是极为可靠的英雄。
+[k]
+
+＠玛修
+他们能回应召唤，[r]我真是感激不尽。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+嗯嗯。即便有地理条件造成的优势，[r]这也几乎算是最好的召唤结果了吧？
+[k]
+
+＠达·芬奇
+虽然从迦勒底的灵基肖像中选出了罗摩、迦尔纳、[r]阿周那以及帕尔瓦蒂这四骑最有力候补，
+[k]
+
+＠达·芬奇
+但他们是否会回应我们的召唤，[r]也只能拼一把运气了呢！
+[k]
+
+[charaFace C 0]
+
+＠达·芬奇
+再加上在印度这一区域，[r]这两位的知名度、人气和信仰力可是格外强势的。
+[k]
+
+＠达·芬奇
+不仅能发挥出超越平常的力量[line 3][r]而且在纯粹印度风土人情的知识方面也能派上用处。
+[k]
+
+[charaFace C 1]
+
+＠达·芬奇
+虽说既然是[#异闻带:Lostbelt]，应该多少会有些偏差吧，[r]但总能比身为欧洲人的我们更容易适应啦☆
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠福尔摩斯
+这就不好说了，你们现在有感觉到什么在意的事吗？[r]这里和你们所知的印度有什么区别？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace F 0]
+[charaFadein F 0.1 0]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+
+＠罗摩
+若问有什么区别，那余不得不回答完全不同。[r]余从未见过这里的地理与地形[line 3]
+[k]
+
+[charaFace E 4]
+
+＠罗摩
+不，更重要的是，该怎么说才好呢。[r]这是极为感官性的问题，整体空气都很……
+[k]
+
+[charaFace F 4]
+
+＠迦尔纳
+嗯。非常干燥[line 3][r]感觉[#很寂寥]。
+[k]
+
+[charaFace E 0]
+
+＠罗摩
+噢噢，就是这个。确实有这种感觉。[r]尽管余也不清楚这意味着什么。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠玛修
+寂寥吗。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠芙芙
+芙呜？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠罗摩
+然后理所当然的，余每次现界都会寻找[r][#妻子:悉多]的气息，但总是没有任何反应。
+[k]
+
+＠罗摩
+从这层意义来说也很寂寥。啊啊，余心爱的悉多啊。[r]在这里仍然无法与你重逢吗……？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠迦尔纳
+我也感受不到熟悉的气息。[r]但是，一定要说的话[line 3]
+[k]
+
+[charaFace F 4]
+
+＠迦尔纳
+………………
+[k]
+
+？1：怎么了？
+？2：感觉到什么了吗？
+？！
+
+[charaFace F 0]
+
+＠迦尔纳
+……不。尽管很微弱，但我的身体[r]擅自表现出战斗开始前的紧张感。
+[k]
+
+＠迦尔纳
+尽管我琢磨了一下究竟存在什么问题，却找不到原因。[r]………是错觉，不，是茫然失措了吧。
+[k]
+
+＠迦尔纳
+很抱歉让您误会了，御主。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠福尔摩斯
+那么，关于那个能在远处眺望到的神秘立方体呢？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠罗摩
+说实话，不清楚。
+[k]
+
+＠罗摩
+尽管余曾为了寻找悉多而在许多国家之间奔走，[r]但也从未见过或听闻过这种东西。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠迦尔纳
+我也一样。……但如果光看外形，[r]我倒是觉得似曾相识。
+[k]
+
+＠迦尔纳
+然而您想知道的却并不是这样的答案。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+也对。就算说那个像某位艺术家创作的[r]巨大骰子或巨大魔方物件，
+[k]
+
+＠达·芬奇
+也起不到任何用处。[r]我想知道的并非外表，而是本质。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠戈尔德鲁夫
+哼。既然连身为正史从者的你们都不知道，[r]那应该就是这[#异闻带:Lostbelt]特有的[#某种存在]了吧。
+[k]
+
+[charaFace A 6]
+
+＠戈尔德鲁夫
+既然如此，那关键只可能存在于这[#异闻带:Lostbelt]之中。[r]按照当初的预定，赶紧去周围调查吧！
+[k]
+
+＠戈尔德鲁夫
+这可是世界的危机，[r]赶紧行动啦，真是的。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠罗摩
+……话说御主。这男人不过是你的上司，[r]为什么一副自以为了不起的样子？　余可是王啊。
+[k]
+
+？1：真是太抱歉了……
+？2：他本质是个好人！
+？！
+
+[charaFace E 0]
+
+＠罗摩
+好吧，算了，毕竟余现在是从者之身！[r]不妨展现一定的宽容好了。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠枪兵193
+确实自以为了不起。但是　无害。[r]推荐　[#不必在意:无视]。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠芙芙
+芙，芙。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaPut J 1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+
+＠福尔摩斯
+好了，该开始行动了。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+先从探索周围开始吧。[r]姑且先按照我们指示的方向前进。
+[k]
+
+＠达·芬奇
+也许会出现一些原生的怪兽，不过嘛，[r]凭你们的实力，只需随便应付一下就没问题了吧！
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_77 0.4]
+[wait fade]
+[soundStopAll]
+[end]

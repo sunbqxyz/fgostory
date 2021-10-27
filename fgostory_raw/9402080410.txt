@@ -1,0 +1,756 @@
+
+
+＄94-02-08-04-1-0
+
+
+[skip false]
+[soundStopAll]
+[scene 10001]
+[fadein black 0.2]
+[wait fade]
+
+[fowardEffectPause bit_queststart80089_4]
+[wait fowardEffectStart]
+[wt 0.5]
+[fowardEffectStart]
+[wait fowardEffect]
+
+[wt 0.7]
+[fadeout black 0.4]
+[wait fade]
+
+[wt 2.0]
+[skip true]
+
+[scene 53401]
+
+[charaSet A 2011000 1 尼古拉·特斯拉]
+[charaSet B 5025000 1 爱迪生]
+[charaSet C 6032000 1 塞弥拉弥斯]
+[charaSet D 1098126200 1 巧克力魔偶]
+[charaSet E 2011000 1 ？？？]
+[charaSet F 1098126200 1 特效用dummy左]
+[charaSet G 1098126200 1 特效用dummy右]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaDepth E 1]
+[charaDepth A 0]
+
+
+
+[se ad60]
+[wt 1.0]
+[seStop ad60 1.0]
+[wt 0.4]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFilter E silhouette 00000080]
+[charaFadein E 0.7 1]
+[wt 1.5]
+
+＠？？？
+[line 3]是这里吧。
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 0.1]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[charaFadeout E 0.7]
+[wt 1.0]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠尼古拉·特斯拉
+就算没有气息遮断技能，无法原谅量产工厂之心[r]也作为必然的命运，诱导我来到此处[line 3]
+[k]
+
+[charaFace A 2]
+
+＠尼古拉·特斯拉
+噢噢，多么可怕而邪恶的直流巧克力工厂啊！
+[k]
+
+[charaFace A 4]
+
+＠尼古拉·特斯拉
+……周围没有从者的气息，当然也没有人类的气息，[r]但是，必须尽快开始着手工作才行。
+[k]
+
+[charaFace A 0]
+
+＠尼古拉·特斯拉
+尽管很想将这些一个不剩全部爆破，[r]但这样就成恐怖分子了。
+[k]
+
+＠尼古拉·特斯拉
+交流绅士和恶鬼不同，是个明事理的人。[r]必须冷静地净化这丑恶的工厂才行。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk on]
+
+[se ad157]
+[wt 1.2]
+[seStop ad157 0.5]
+
+[se ad61]
+[wt 0.1]
+[seStop ad61 1.0]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠尼古拉·特斯拉
+很好，这样一来就成功将电源系统切换成交流了。[r]接下来……工厂的运作手册是这个吧。
+[k]
+
+＠尼古拉·特斯拉
+唯有充满知性，才不会疏于照顾到这种细微的部分。[r]哼，替换成事先准备好的东西。
+[k]
+
+＠尼古拉·特斯拉
+在印刷用品上设置的[r]肉眼不可见级的潜意识交流回路图，
+[k]
+
+＠尼古拉·特斯拉
+以及每页都用粗到完全没必要的字体印刷着[r]『A』和『C』两个字母[line 3]
+[k]
+
+＠尼古拉·特斯拉
+只要阅读这份手册，[r]头脑中就会在不知不觉被植入非交流不可的意识。
+[k]
+
+＠尼古拉·特斯拉
+多么精炼，多么毫不留情的学习过程……[r]我或许还拥有教育家的才能呢……
+[k]
+
+[charaDepth D 0]
+[charaDepth A 10]
+[charaScale D 1.2]
+[wt 0.1]
+[charaFace D 0]
+[charaFilter D silhouette 00000080]
+[charaFadein D 0.4 180,50]
+
+[charaMove D 150,50 0.3]
+[wt 0.3]
+
+＠尼古拉·特斯拉
+好了，这样一来[line 3][bgmStop BGM_EVENT_7 0.1][se ad7][charaShake A 0.05 1 1 0.2][charaMove A 0,10 0.2][charaFace A 5]唔！？
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaFace A 0]
+
+＠尼古拉·特斯拉
+（呜，这是什么！　被什么抓住了[line 3][r]　明明没有任何气息，哎！）
+[k]
+
+[messageOff]
+[se ad62]
+[fowardEffect bit_talk_lightning_02t]
+[wt 1.0]
+[fowardEffectStop]
+[seStop ad62 0.1]
+[wt 0.4]
+
+[charaEffect D bit_talk_lightning_03t]
+[se ad63]
+[shake 0.02 5 4 1.0]
+[fadeout white 0.7]
+[wait fade]
+[wt 0.7]
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[seStop ad63 0.4]
+[charaEffectStop D]
+
+[charaPut F -220,-60]
+[charaPut G 300,-128]
+[wt 0.1]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[fadein white 0.4]
+[wt 0.6]
+[charaFadeout D 0.4]
+[charaMove D 0,-30 0.4]
+[wt 0.4]
+[se ad322]
+[seVolume ad322 0 0.4]
+[shake 0.05 0 7 1.0]
+[wt 1.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠尼古拉·特斯拉
+下意识把对方破坏掉了。[r]这是……魔偶……？
+[k]
+
+[messageOff]
+[se ad410]
+[flashin once 0.2 0.2 FFFFFF80 00000000]
+[charaEffect A bit_talk_searchlight]
+[seStop ad410 0.2]
+[wt 0.2]
+[se ad410]
+[charaEffect F bit_talk_searchlight]
+[seStop ad410 0.2]
+[wt 0.2]
+[se ad410]
+[charaEffect G bit_talk_searchlight]
+[seStop ad410 0.6]
+[wt 1.0]
+
+[charaFace A 5]
+
+＠尼古拉·特斯拉
+！！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaEffectStop F]
+[charaEffectStop G]
+[charaEffectStop A]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.4 1]
+[wt 0.2]
+＠爱迪生
+出现了啊，你这庸才！[r]我就知道你会做这种事！
+[k]
+
+＠爱迪生
+你已经没有退路了。[r]仔细看看你周围吧。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaSet F 1098126200 1 巧克力魔偶]
+[charaSet G 1098126200 1 巧克力魔偶]
+[wt 0.1]
+[charaScale D 0.9]
+[charaScale F 0.9]
+[charaScale G 0.9]
+[charaDepth D 1]
+[charaDepth F 0]
+[charaDepth G 0]
+[charaTalk off]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[charaFilter D normal 00000080]
+[charaFadein D 0.1 0,-30]
+[wt 0.1]
+[charaFadein F 0.4 340,-20]
+[charaMove F 360,-20 0.4]
+[charaFadein G 0.4 -380,-20]
+[charaMove G -360,-20 0.4]
+[wt 2.2]
+
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.4]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠尼古拉·特斯拉
+……呜？　这些警卫员是[line 3]果然是魔偶。[r]但是，这颜色和甜美的味道，难道……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠爱迪生
+没错，这就是我工厂里忠实的工作人员。[r]巧克力魔偶是也！
+[k]
+
+＠爱迪生
+虽说术式是由这里的女帝构成的，[r]所以称不上是由我制作的。
+[k]
+
+＠爱迪生
+但对待遇毫无怨言，不需要休息，也不需要维护，[r]不需要工资，也不用吃东西。
+[k]
+
+＠爱迪生
+简直就是一石四鸟！[r]如果我的公司里也有这样的员工的话。
+[k]
+
+[charaFace B 0]
+
+＠爱迪生
+他们不仅能在工厂工作，还能从事其他各种职业，[r]是非常美妙的单纯劳动力。
+[k]
+
+[charaFace B 5]
+
+＠爱迪生
+当然[line 3]这些工作中，也包含了[r]排除愚蠢到夜晚潜入这里的交流混账哦！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 2]
+[charaFadein B 0.1 0]
+＠尼古拉·特斯拉
+可笑！　由于这件工作也是御主的意思，[r]因此我本来大发慈悲地打算用和平的方式解决[line 3]
+[k]
+
+＠尼古拉·特斯拉
+但看来果然有必要从物理上将你排除呢！[r]像霉菌般顽固的直流就该由菌丝根系开始彻底根绝！
+[k]
+
+[charaTalk off]
+[messageOff]
+
+[se ad61]
+[charaEffect A bit_talk_lightning_01t]
+[charaEffect B bit_talk_lightning_01g]
+[wt 0.4]
+[seStop ad61 1.0]
+[wt 1.0]
+
+[se ad62]
+[charaEffect A bit_talk_lightning_02t]
+[charaEffect B bit_talk_lightning_02g]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaEffectStop B]
+[charaEffectStop A]
+[wt 0.1]
+[charaSet A 2011000 1 特效用dummy１]
+[charaSet B 5025000 1 特效用dummy２]
+
+[charaPut A 0]
+[charaPut B 2]
+[wt 0.1]
+
+[se ad63]
+[flashin once 0.2 0.2 FFFFFF80 00000000]
+[charaEffect A bit_talk_lightning_03t]
+[charaEffect B bit_talk_lightning_03g]
+[wt 0.2]
+[se ad285]
+[shake 0.05 2 2 0.8]
+[wt 0.8]
+[seStop ad63 0.4]
+[seStop ad285 0.4]
+[wt 0.4]
+
+[flashin once 0.2 0.2 FFFFFF80 00000000]
+[charaPut A 200,100]
+[charaPut B -200,0]
+[charaEffect A bit_talk_lightning_04t]
+[charaEffect B bit_talk_lightning_05g]
+[se ad284]
+[shake 0.05 8 8 0.2]
+[wt 0.2]
+[seStop ad284 0.2]
+[wt 0.2]
+
+[se ad285]
+[shake 0.05 6 6 0.6]
+[seStop ad285 0.6]
+[wt 0.6]
+
+[flashin once 0.2 0.2 FFFFFF80 00000000]
+[charaPut A 300,150]
+[charaPut B -400,-50]
+[charaEffect A bit_talk_lightning_04g]
+[charaEffect B bit_talk_lightning_05t]
+[se ad284]
+[shake 0.05 8 8 0.2]
+[wt 0.2]
+[seStop ad284 0.2]
+[wt 0.2]
+
+[se ad285]
+[shake 0.05 6 6 0.2]
+[seStop ad285 0.2]
+[wt 0.2]
+
+[flashin once 0.8 0.8 FFFFFF80 00000000]
+[effect bit_talk_lightning_03t]
+[effect bit_talk_lightning_03g]
+[se bac474]
+[shake 0.08 7 4 2.0]
+[wt 1.0]
+[fadeout black 1.0]
+[wait fade]
+[wt 1.0]
+
+[seStop bac474]
+[effectStop bit_talk_lightning_03t]
+[effectStop bit_talk_lightning_03g]
+[wt 0.1]
+[charaSet A 2011000 1 尼古拉·特斯拉]
+[charaSet B 5025000 1 爱迪生]
+[wt 1.0]
+[fadein black 1.0]
+[wt 1.0]
+
+[charaFace A 4]
+[charaFadein A 0.4 2]
+[charaFace B 4]
+[charaFadein B 0.4 0]
+[wt 0.4]
+
+＠二人
+呼……呼……
+[k]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 5]
+
+＠爱迪生
+还没完……！
+[k]
+
+[charaTalk A]
+[charaFace A 5]
+
+＠尼古拉·特斯拉
+这是我的台词。[r]正义属于我方……！
+[k]
+
+[charaTalk off]
+[messageOff]
+[se ad61]
+[charaEffect A bit_talk_lightning_02t]
+[charaEffect B bit_talk_lightning_02g]
+[wt 2.0]
+[seStop ad61 0.4]
+[wt 0.1]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaEffectStop B]
+[charaEffectStop A]
+[wt 0.2]
+
+[bgmStop BGM_EVENT_3 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠塞弥拉弥斯
+[messageShake 0.05 4 4 0.3]
+[font large]哎，吵死了！
+[k]
+
+[bgm BGM_EVENT_27 0.1]
+
+＠塞弥拉弥斯
+而且闪得刺眼！　居然在这大半夜里噼里啪啦地肆意妄为。[r]这还让人怎么睡觉啊！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaDepth C 0]
+[charaDepth A 10]
+[charaDepth B 10]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠爱迪生
+噢噢，这不是女帝陛下吗。请容我对妨碍到您的安眠表示谢罪。[r]这一切全都是那个犯罪交流傻瓜的错。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠尼古拉·特斯拉
+这可是正当防卫的结果，Lady。[r]我只是一个崇尚和平主义而又稳重的绅士。
+[k]
+
+
+＠尼古拉·特斯拉
+我确实是为执行秘密工作才潜入这里，[r]但我可以断言，身为学者，我没有做任何亏心事。
+[k]
+
+＠尼古拉·特斯拉
+倒是能得以拜见女帝，实属我的光荣。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠塞弥拉弥斯
+唔？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠尼古拉·特斯拉
+女帝啊。拥有美丽心灵的 Lady 啊。[r]深爱鸽子之人无一例外都拥有纯洁的心灵。
+[k]
+
+＠尼古拉·特斯拉
+我坚信如此。[r]请务必听取我身为同胞对您的忠告。
+[k]
+
+＠尼古拉·特斯拉
+对能量的错误使用，只会导致不幸的结局。
+[k]
+
+＠尼古拉·特斯拉
+生产巧克力当然没有问题。[r]但是，希望您能重新考虑生产时使用的电力方式。
+[k]
+
+＠尼古拉·特斯拉
+具体来说，就是这个狮子头不可信，[r]希望您能重新考虑。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠塞弥拉弥斯
+……唔。我只要能生产出巧克力来就行了。[r]对系统运作所用的电力究竟是什么根本[line 3]
+[k]
+
+[charaFace C 0]
+＠塞弥拉弥斯
+唔…………不…………？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠尼古拉·特斯拉
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠塞弥拉弥斯
+……对，虽说我根本不在乎电力是什么形式的，[r]但这倒是让我产生了童心般纯粹的好奇心。
+[k]
+
+＠塞弥拉弥斯
+你和狮子头，[r][#究竟哪边能创造出更强的电力呢]？
+[k]
+
+[charaFadeout C 0.1]
+[charaTalk off]
+[wt 0.1]
+
+[charaFace A 2]
+[charaFadein A 0.1 2]
+[charaFace B 2]
+[charaFadein B 0.1 0]
+
+＠二人
+[messageShake 0.05 4 4 0.3]
+[font large]那当然是我啦！！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠塞弥拉弥斯
+哈，嘴上说起来简单。[r]那你们就在我的面前一较高下吧。
+[k]
+
+＠塞弥拉弥斯
+将系统进行重组，[r]而你们俩就分别向不同的工厂同时输送电力吧。
+[k]
+
+＠塞弥拉弥斯
+只要将魔偶均等分配，那其中的差异就只剩电量了。[r]我会通过究竟哪家工厂能生产更多巧克力来比较双方的优劣。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠爱迪生
+哦哦，有意思。但是，真的没问题吗！？[r]既然是量产，那几乎可以说胜负已定！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠尼古拉·特斯拉
+少夸海口了，狮子头。[r]只要我用心，想达到什么高度都行！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠塞弥拉弥斯
+好啦好啦，无关紧要啦。巧克力魔偶啊，[r]快把这两个人分别带去不同的工厂。
+[k]
+
+[charaFace C 4]
+
+＠塞弥拉弥斯
+我已经明白了。这两个人单独使用倒也不是不能用，[r]但如果混合在一起，就会产生杂味。
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[wt 0.1]
+
+[charaFadeout C 0.1]
+
+[charaTalk off]
+[charaScale D 0.95]
+[charaScale F 0.95]
+[charaScale A 0.9]
+[charaScale B 0.9]
+[wt 0.1]
+
+[charaFace A 0]
+[charaFadein A 0.1 240,-120]
+[charaFace B 0]
+[charaFadein B 0.1 -240,-120]
+
+[charaDepth D 0]
+[charaDepth F 0]
+[charaDepth A 10]
+[charaDepth B 10]
+
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+
+[charaFadein D 0.4 340,-20]
+[charaFadein F 0.4 -340,-20]
+[wt 0.4]
+
+[charaMove A 240,-90 0.7]
+[charaShake A 0.05 1 1 0.2]
+[charaMove B -240,-90 0.7]
+[charaShake B 0.05 1 1 0.2]
+
+[se ad77]
+[wt 0.2]
+[seStop ad77 0.4]
+[wt 1.5]
+
+[se ade79]
+[charaMove B -260,-90 1.0]
+[charaMove F -360,-20 1.0]
+
+[charaMove A 260,-90 1.0]
+[charaMove D 360,-20 1.0]
+
+[wt 0.7]
+[charaFadeout B 0.4]
+[charaFadeout A 0.4]
+[charaFadeout D 0.4]
+[charaFadeout F 0.4]
+[wt 0.4]
+[bgmStop BGM_EVENT_27 1.8]
+[seStop ade79 1.8]
+[wt 2.0]
+
+[bgm BGM_EVENT_2 0.4]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠塞弥拉弥斯
+不管怎么说，这样一来就能获得两倍的电力了。[r]魔偶这种劳动力也能增加了，生产应该能进一步加速吧。
+[k]
+
+＠塞弥拉弥斯
+而最终将会[line 3]
+[k]
+
+
+[charaFace C 12]
+＠塞弥拉弥斯
+呵呵，呵呵呵…………[wt 0.7][charaFace C 4]呵欠。
+[k]
+
+[charaFace C 3]
+
+＠塞弥拉弥斯
+…………我还是回去继续睡吧…………
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.4]
+[soundStopAll]
+[end]

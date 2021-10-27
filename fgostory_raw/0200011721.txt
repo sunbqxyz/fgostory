@@ -1,0 +1,163 @@
+
+＄02-00-01-17-2-1
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 98111500 1 通讯用杂音]
+[charaSet C 1002001 1 阿尔托莉雅·Alter]
+[charaSet D 2023002 1 莫里亚蒂]
+[charaSet E 98086000 1 福尔摩斯]
+[charaSet F 9938600 1 魔神巴力]
+[charaSet G 98111500 1 达·芬奇]
+
+[soundStopAll]
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 38900]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠魔神巴力
+[messageShake 0.05 4 4 1.0]
+哈哈哈哈哈！[r]果然会毁灭！　我果然会毁灭吗！　但复仇已然完成！
+[k]
+
+＠魔神巴力
+莫里亚蒂，你居然一直陪我到现在！[r]就让我们长久以来的同盟在此解散吧！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠莫里亚蒂
+嗯。再见了，巴力，我的同胞！[r]你我都是明知道这乃徒劳，却依然为之献上了一切的愚者！
+[k]
+
+[charaFace D 1]
+＠莫里亚蒂
+同意消除记忆，[r]甚至不惜忍耐化身为人类的屈辱，都渴望着复仇的存在啊。
+[k]
+
+[charaFace D 2]
+＠莫里亚蒂
+再见了，魔神！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠魔神巴力
+我们一定是同类，莫里亚蒂！[r][%1]，我没能杀掉你。
+[k]
+
+＠魔神巴力
+你的力量超越了我们。耻辱、屈辱、侮辱，[r]以及愤怒[line 3]我能感受到这些情感。
+[k]
+
+＠魔神巴力
+[#但是]，[#你一定会死]。
+[k]
+
+？1：你说什么……？
+？！
+
+＠魔神巴力
+[messageShake 0.05 7 7 1.0]
+哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈[r]哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈！！
+[k]
+
+[messageOff]
+
+[shake 0.05 7 7 2.0]
+[charaSpecialEffect F enemyErasure]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[se ba6]
+[wt 0.7]
+[flashOff]
+[wait charaSpecialEffect F]
+[charaFadeout F 0.1]
+[shakeStop]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠莫里亚蒂
+……结束了啊。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠阿尔托莉雅·Alter
+你已经完了，莫里亚蒂。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠莫里亚蒂
+不，完的是你们。[r]以及这颗星球。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠阿尔托莉雅·Alter
+……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad14]
+[shake 0.05 0 7 8.0]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0 0,-90]
+[wt 0.3]
+＠达·芬奇
+什么[line 3]！[r]新宿上空出现陨石！
+[k]
+
+＠达·芬奇
+这……这构成是……[r]“贝努鸟”……！
+[k]
+
+＠达·芬奇
+但是，示巴一直在监控新宿的上空啊！？[r]这简直像通过空间转移……！
+[k]
+
+
+
+[messageOff]
+[seStop ad14 2.0]
+[bgmStop BGM_EVENT_24 2.0]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

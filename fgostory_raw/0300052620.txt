@@ -1,0 +1,473 @@
+
+＄03-00-05-26-2-0
+
+
+[soundStopAll]
+
+[imageSet A cut137_paris0 1]
+[charaScale A 1.01]
+[charaSet B 1098182700 1 亚特兰蒂斯防卫兵]
+[charaSet C 1098182700 1 亚特兰蒂斯防卫兵]
+[charaSet D 1098182700 1 亚特兰蒂斯防卫兵]
+[imageSet E cut137_paris2 1]
+[charaScale E 1.01]
+[imageSet F cut137_paris4 1]
+[charaScale F 1.01]
+[imageSet G cut137_paris5 1]
+[charaScale G 1.01]
+
+[charaSet J 5009000 1 特效用dummy]
+
+[charaTalk depthOff]
+[charaDepth A 5]
+[charaDepth E 6]
+[charaDepth F 7]
+[charaDepth G 8]
+
+
+[cameraMove 0 0,0 1.01]
+
+[scene 28300]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad555]
+[seVolume ad555 0 0.5]
+[charaEffect J bit_talk_42 0,0 H]
+[wt 2.5]
+[seStop ad555 1.0]
+[charaEffectStop J bit_talk_42]
+[wt 1.0]
+
+
+[bgm BGM_EVENT_82 0.1]
+
+＠A：克珊托斯
+话说真没想到，竟让我拉着主人的仇敌啊。[r]正所谓夫祸之与福兮，何异纠纆。咕唏唏唏唏。
+[k]
+
+[messageOff]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.2 150,0]
+[charaMove A 150,-200 0.2]
+[wt 0.2]
+
+＠A：帕里斯
+说……说得也是呢！
+[k]
+
+[charaFadein E 0.1 150,-200]
+
+＠A：帕里斯
+……不，你不是马吗！？
+[k]
+
+[clear]
+
+＠A：克珊托斯
+人和马都是哺乳类哦。
+[k]
+
+
+[charaFadein F 0.1 150,-200]
+[clear]
+
+＠A：帕里斯
+这样啊。[r]……是这样吗……
+[k]
+
+[clear]
+
+＠A：阿波罗
+好啦好啦。[r]废话少说，干活儿干活儿。
+[k]
+
+＠A：阿波罗
+我……我可不是因为帕里斯亲[r]跟除我以外的动物说话而感到嫉妒哦！
+[k]
+
+[clear]
+
+＠A：克珊托斯
+你这是什么老掉牙的角色设定啊。
+[k]
+
+[clear]
+
+＠A：阿波罗
+是古希腊的神明哦。
+[k]
+
+[clear]
+
+[charaFadein G 0.1 150,-200]
+[wt 0.1]
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+
+＠A：帕里斯
+好嘞～，要上了～！
+[k]
+
+[messageOff]
+[charaMove G 150,-500 0.2]
+[bgmStop BGM_EVENT_82 1.0]
+[charaFadeout G 0.2]
+[wt 0.6]
+
+
+[fowardEffect bit_talk_38]
+[wt 0.2]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+[fowardEffectStop bit_talk_38]
+
+[scene 86000]
+
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaDepth B 5]
+[charaDepth C 4]
+[charaDepth D 3]
+
+[effect bit_talk_38]
+[wt 0.2]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.2]
+[effectStop bit_talk_38]
+
+[se bac16]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace B 0]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein B 0 0,-50]
+[charaFadein C 0 -300,-50]
+[charaFadein D 0 300,-50]
+[effectDestroy bit_talk_ereshki02]
+[charaShake B 0.02 3 3 0.8]
+[charaShake C 0.02 3 3 0.8]
+[charaShake D 0.02 3 3 0.8]
+[wt 1.0]
+
+＠亚特兰蒂斯防卫兵
+！？
+[k]
+
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk on]
+＠B：亚特兰蒂斯防卫兵
+在空中发现敌人！[r]解决那辆战车！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+
+
+[effect bit_talk_arrow_enemy_l 0,0 V]
+[wt 0.2]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[effectStop bit_talk_arrow_enemy_l]
+
+[scene 28300]
+
+[pictureFrame]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 150,-200]
+＠A：帕里斯
+克珊托斯，回避！
+[k]
+
+[clear]
+
+＠A：克珊托斯
+明白啦明白啦。
+[k]
+
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se bac30]
+[charaEffect J bit_talk_42 0,0 H]
+[wt 0.4]
+[charaEffectStop J bit_talk_42]
+[wt 0.2]
+
+
+[effect bit_talk_shot_02]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.4]
+
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+
+[scene 86000]
+
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+＠B：亚特兰蒂斯防卫兵
+可恶，射不中啊……！[r]速度比预想的还要快！
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[scene 28300]
+
+[pictureFrame]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaDepth F 6]
+[charaDepth E 7]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 150,-200]
+＠A：帕里斯
+很好，这样的话……！
+[k]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+
+＠亚特兰蒂斯防卫兵
+[charaTalk B]
+没办法了。[r]启动广域歼灭兵器！
+[k]
+
+[charaFadein F 0.1 150,-200]
+＠A：帕里斯
+哎？[r]刚才是不是有人说了什么？
+[k]
+
+[clear]
+
+＠A：阿波罗
+好像是地面的士兵们说了什么广域歼灭兵器。
+[k]
+
+[clear]
+
+＠A：帕里斯
+不……不会吧。
+[k]
+
+
+＠A：帕里斯
+……[r]……
+[k]
+
+[clear]
+
+＠A：阿波罗
+看来是说中了呢。
+[k]
+
+[clear]
+
+＠A：克珊托斯
+的确如此呢～。
+[k]
+
+
+[charaFadein E 0.1 150,-200]
+[clear]
+
+＠A：帕里斯
+快[messageShake 0.02 3 3 0.4]……快逃啊[line 3]！！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+[se ad609]
+[shake 0.02 3 3 0]
+
+[wt 2.0]
+
+[fadeout black 1.0]
+[seStop ad609 1.0]
+[wait fade]
+
+[shakeStop]
+
+[charaSet E 1038000 1 伊阿宋]
+[charaSet F 98006200 1 人型终端]
+[charaSet G 98006200 1 人型终端]
+[charaSet H 98006200 1 人型终端]
+
+
+[scene 85800]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade210]
+[charaTalk off]
+[charaFace F 0]
+[charaFace G 0]
+[charaFace H 0]
+[charaFadein F 0.4 1]
+[charaFadein G 0.4 -300,-10]
+[charaFadein H 0.4 300,-10]
+[wt 0.4]
+[seStop ade210 0.1]
+[wt 1.2]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+＠伊阿宋
+增援的敌人！？[r]可恶，这些家伙在我计算之外！
+[k]
+
+＠伊阿宋
+奥德修斯那混账，[r]为了这种情况特意藏了一手吗！
+[k]
+
+[charaFace E 5]
+＠伊阿宋
+不可以陷入苦战。[r]得赶紧收拾它们！　我也来帮忙！
+[k]
+
+？1：你有什么对策吗！？
+？！
+
+[charaFace E 2]
+＠伊阿宋
+没有！
+[k]
+
+＠伊阿宋
+正面交锋将对方打趴，[r]就这样！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

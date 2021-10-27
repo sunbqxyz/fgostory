@@ -1,0 +1,379 @@
+
+
+＄94-03-35-31-7-0
+
+[soundStopAll]
+
+[charaSet A 1033002 1 齐格鲁德]
+[equipSet B 9806930 1 情人节礼装]
+[charaSet H 5009000 1 特效用dummy]
+
+[scene 55700]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V010]
+[line 3]哎呀，御主。[wait tVoice]
+[k]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V020]
+看您的样子，应该是有事找在下吧。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V030]
+……唔。[r]而您的用意则是……[wait tVoice]
+[k]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V040]
+直截了当地说，[r]情人节……[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V050]
+是巧克力吧。[wait tVoice]
+[k]
+
+？1：你居然能猜到……
+
+[charaFace A 1]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V060]
+这都多亏了在下持有的睿智结晶的力量。[wait tVoice]
+[k]
+
+？2：回答正确！
+
+[charaFace A 1]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V070]
+这是常识，我的御主。[wait tVoice]
+[k]
+
+[charaFace A 3]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V080]
+……呵，只是在模仿罢了。[r]不用在意。[wait tVoice]
+[k]
+
+？！
+
+？1：就是这么回事……
+？2：请收下这份巧克力吧！
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFace A 10]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V090]
+谢谢。[r]在下由衷表示感谢。[wait tVoice]
+[k]
+
+[charaFace A 2]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V100]
+唔？[r]您问在下有没有收到布伦希尔德的？[wait tVoice]
+[k]
+
+[charaFace A 3]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V110]
+……姑且，算收到了吧。[r]不，这个话题先不谈了。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V120]
+比起这件事。[r]在下也有一件礼物要送给您。[wait tVoice]
+[k]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V130]
+只是在那之前，[r]希望您能配合在下做一个检测。[wait tVoice]
+[k]
+
+？1：检测？
+？！
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V140]
+嗯。[r]首先，请容许在下注视您的眼睛。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad7]
+[charaMoveScale A 1.4 0.25]
+[charaMove A 0,14 0.25]
+[wt 0.5]
+
+？1：太近了太近了太近了！
+？！
+
+[charaFace A 2]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V150]
+不，不靠近可不行。[r]这是为了检测您的视力。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V160]
+盯……[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+？1：快要……极限了……！
+
+[charaFace A 1]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V170]
+……在下失礼了。[wait tVoice]
+[k]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V180]
+检测就此结束。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad7]
+[charaMoveScale A 1.0 0.25]
+[charaMove A 0,0 0.25]
+
+[branch select01_03]
+
+？2：被眼镜……射穿了……！
+
+[charaFace A 5]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V190]
+尽管迦尔纳说过，[r]真正的英雄用眼睛杀人……[wait tVoice]
+[k]
+
+[charaFace A 7]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V200]
+但请放心吧。[r]在下的眼镜是不会发射光炮的。[wait tVoice]
+[k]
+
+
+？！
+
+？1：不是这个问题啦……！
+？！
+
+[charaFace A 10]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V210]
+好，结束了。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad7]
+[charaMoveScale A 1.0 0.25]
+[charaMove A 0,0 0.25]
+
+[label select01_03]
+
+[wt 0.7]
+
+[charaFace A 0]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V230]
+将使用这种方式获得的信息刻在卢恩上……[wait tVoice]
+[k]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V240]
+加入从达·芬奇阁下那里得到的素材碎片……[wait tVoice]
+[k]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V250]
+然后使用『原初之卢恩』将素材固定……[wait tVoice]
+[k]
+
+[charaEffect H bit_talk_41]
+[charaPut H 1]
+[charaFace A 7]
+[charaShake A 0.05 3 3 0.4]
+[se ad39]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V260]
+唔！[wait tVoice]
+[k]
+
+[messageOff]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_41]
+[seStop ad39 0.5]
+[wt 0.5]
+
+[se ad79]
+[wt 0.1]
+
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[charaFace B 0]
+[charaFadein B 0.5 0,-70]
+[wt 2.0]
+[charaFadeout B 0.4]
+[wt 0.5]
+
+？1：做出了眼镜[line 3]！？
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V270]
+正是。[wait tVoice]
+[k]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V280]
+……御主，在下非常清楚您的视力很好。[wait tVoice]
+[k]
+
+[charaFace A 8]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V290]
+所以这副眼镜附加了除此以外的机能。[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V300]
+眼睛疲劳的自动回复机能。[r]视觉混乱的自动抑制机能。[wait tVoice]
+[k]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V310]
+当看到强烈的光，或是一些不能看的东西，[r]导致眼睛看不见的情况下……[wait tVoice]
+[k]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V320]
+这副眼镜能够进行防护。[wait tVoice]
+[k]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V330]
+而且还非常坚固。[wait tVoice]
+[k]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V340]
+从者姑且不论，[r]普通的野兽是无法伤害您眼球分毫的。[wait tVoice]
+[k]
+
+[charaFace A 10]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V350]
+在下要用这个，作为您礼物的回报，[r]您觉得怎么样？[wait tVoice]
+[k]
+
+？1：总而言之……
+？2：谢谢你！
+？！
+
+[charaFace A 1]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V360]
+一桩小事。[wait tVoice]
+[k]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V370]
+您对在下这种极为粗俗的存在以礼相待。[wait tVoice]
+[k]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V380]
+在下将被召唤以来的感谢之情[r]全部都倾注在这副眼镜中了。[wait tVoice]
+[k]
+
+＠齐格鲁德
+[tVoice ValVoice_103300 0_V390]
+剩下的问题就取决于在下的品味了。[r]换言之，是否适合您[line 3][wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.5]
+[se ade158]
+[wt 1.0]
+
+？1：怎么样？
+？！
+
+
+[messageOff]
+[charaFace A 0]
+[wt 1.0]
+[charaFace A 8]
+[wt 1.5]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

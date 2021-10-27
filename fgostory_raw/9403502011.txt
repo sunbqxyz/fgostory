@@ -1,0 +1,169 @@
+
+＄94-03-50-20-1-1
+[soundStopAll]
+
+
+[charaSet G 3030000 1 帕尔瓦蒂]
+[charaSet C 5030001 1 山鲁佐德]
+[charaSet B 6014001 1 玛塔·哈丽]
+[charaSet E 10003000 1 杀生院祈荒]
+[imageSet I cut103_item01 1]
+[charaSet J 5009000 1 特效用dummy]
+
+
+[scene 72000]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[cueSe Battle bas2]
+[wt 0.2]
+[charaFadein I 0.7 0,-200]
+[wt 2.2]
+
+[se ad592]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout I 0.1]
+
+[charaPut J 1]
+[charaEffect J bit_talk_noise02]
+
+[scene 10001]
+[wt 0.5]
+
+[fadein white 0.5]
+[wait fade]
+[wt 1.0]
+
+[se ad592]
+[fadeout white 0.5]
+[wait fade]
+
+[scene 72000]
+
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_noise02]
+[wt 0.5]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠帕尔瓦蒂
+一如既往的的印笼呢。里面写着『吉宗』。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠山鲁佐德
+这个……我知道。[r]是胡闹Boy·吉宗……！
+[k]
+
+[charaFace C 0]
+
+＠山鲁佐德
+我认为他是个相当好的王。
+[k]
+
+＠山鲁佐德
+尽管打扮成平民溜出城的毛病不值得称赞。
+[k]
+
+＠山鲁佐德
+不过，听说哈伦·拉希德大人也做过类似的事。
+[k]
+
+＠山鲁佐德
+这是高贵之人常见的放松方式吗……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠玛塔·哈丽
+好了，看来已经没有碍事的存在了，[r]我们前往下一层吧。
+[k]
+
+＠玛塔·哈丽
+等到达下一层之后，我就解除宝具的醉酒状态，[r]再稍微忍耐一下哦，御主？
+[k]
+
+？1：我完全没醉，不要紧啦。
+
+[charaFace B 3]
+
+＠玛塔·哈丽
+越是喝醉的人就越会这么说哦～？
+[k]
+
+？2：那就拜托了。
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠杀生院祈荒
+如果此前的推测正确，剩下的五戒还有两条。[r]也就是说，还剩两大层。
+[k]
+
+[charaFace E 0]
+
+＠杀生院祈荒
+可以说，已经进入战斗的后半程了。[r]请务必小心……
+[k]
+
+
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[charaFadeout E 0.1]
+[wt 0.5]
+[soundStopAll]
+
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+
+[cueSe Battle bas2]
+[charaFace I 0]
+[charaFadein I 0.5 0,-200]
+[wt 1.4]
+
+＠
+[s 1000]
+　　　　[s 16]获得了第八代将军『德川吉宗的印笼』。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[wait fade]
+[end]

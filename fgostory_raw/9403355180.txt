@@ -1,0 +1,888 @@
+
+
+
+
+
+＄94-03-35-51-8-0
+
+[soundStopAll]
+
+[charaSet A 1040000 1 葛饰北斋]
+[charaSet B 2001000 1 卫宫]
+[charaSet C 7016002 1 玉藻猫]
+[charaSet D 6035000 1 虞美人]
+[charaSet E 1030000 1 铃鹿御前]
+[equipSet I 9807540 1 情人节礼装]
+[charaSet J 98115000 1 dummy特效1]
+
+[charaDepth A 10]
+
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 66600]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10310]
+[label lblConf2]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V010]
+哟，御主。[r]特地把你叫来这里，不好意思啦。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V020]
+其实我脑海里突然闪过一个妙计哦？[r]于是我顿时坐立不安完全静不下来啦！[wait tVoice]
+[k]
+
+[charaFace A 8]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V030]
+那啥[line 3][r]叫“[#情人节:Valentine]”的。[wait tVoice]
+[k]
+
+[charaFace A 26]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V040]
+你知道吗，御主？[r]“Va～len～tine～”。[wait tVoice]
+[k]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V050]
+虽然叫Valen，[r]但并不是指压擦版木道具的那个马莲哦？[wait tVoice]
+[k]
+
+？1：请务必教教我。
+
+[charaFace A 7]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V060]
+什么嘛，连御主也不知道啊。[r]啊哈哈！[twt 3.8][charaFace A 13]（……呼。）[wait tVoice]
+[k]
+
+？2：这话说起来可就长了啊……
+
+[charaFace A 20]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V070]
+长……？（咽口水。）[wait tVoice]
+[k]
+
+[charaFace A 28]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V080]
+哈，哈哈哈哈，哈哈唔……？[charaShake A 0.1 2 2 0][r]不不不不……不愧是御主？[wait tVoice][charaShakeStop A]
+[k]
+
+？！
+
+[messageOff]
+[charaFace A 29]
+[wt 1.2]
+
+[charaFace A 15]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V090]
+啊～～那啥？　以前我也不小心说漏过嘴，[r]总之我不太喜欢“恋爱事”！[wait tVoice]
+[k]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V100]
+就在这时“[#情人节]”[#季节]就到来了……[wait tVoice]
+[k]
+
+[charaFace A 3]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V110]
+现在到处都弥漫着香甜的气息，[r]到处都被男女话题包围，害我快疯了……[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_2 1.5]
+[charaFace A 11]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V120]
+于是我就在此时心生一计！[r]没错，这是我一年一次的大愿望！[wait tVoice]
+[k]
+
+[messageOff]
+[charaPut J 2000,2000]
+[charaEffect J bit_talk_41]
+[se ad7]
+[seVolume ad7 0 0.6]
+[charaMove A 0,-30 0.4]
+[wt 0.8]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaFace A 12]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V130]
+御主！　[cameraMove 0.2 0,3 1.05][twt 1.2]求求你了！　[cameraMove 0.2 0,6 1.1][twt 1.35]请为我！[cameraMove 0.2 0,10 1.15][twt 1.3][cameraMove 0.2 0,14 1.2][r]请为我[twt 1.0][se ade211][wt 0.05][charaPut J 0,70][charaFace A 2]做“巧克力”吧！[wait tVoice]
+[k]
+
+？1：…………哎？……我来做吗？？
+？2：嗯。来这招啊……
+
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_7 1.0 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaPut J 2000,2000]
+[charaEffectStop J bit_talk_41]
+[cameraHome 0.1]
+
+[branchQuestNotClear lblNotClear3 3000303]
+[scene 66700]
+[branch lblConf3]
+[label lblNotClear3]
+[scene 60300]
+[label lblConf3]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_7 1.0 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.4 1]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V140]
+[line 3]啊，好嘞！　准备齐全！　干劲充足！[r]接下来就好好欣赏（御主的）工作英姿吧！[wait tVoice]
+[k]
+
+[charaFace A 26]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V150]
+嘿嘿，你们倒是让我奋力做点心试试看呀。[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V160]
+万一爆发惨剧，[r]最终遭爹爹哈哈嘲笑可不关我什么事。[wait tVoice]
+[k]
+
+[charaFace A 11]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V170]
+再说了，让皮猴子像少女那样面颊羞红着制作点心什么的，[r]一想起来就……[twt 6.2][charaFace A 18]咿，我要不行了！[wait tVoice]
+[k]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V180]
+全身瘙痒，脑袋发烧，[r]打嗝都停不下来……[twt 4.0][charaFace A 6]因此[line 3][wait tVoice]
+[k]
+
+[charaFace A 26]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V190]
+负责做[#巧克力]的是御主！（敬礼。）[charaMoveScale A 1.04 0.4][charaMove A 0,7 0.4][twt 0.4][se ad7][twt 2.0][charaFace A 1][charaMoveScale A 1.0 0.4][charaMove A 0,0 0.4][r]而感激地收下的，则是我！（赞。）[twt 0.5][se ad183][wait tVoice]
+[k]
+
+[charaFace A 7]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V200]
+其中没有任何疏漏！[wait tVoice]
+[k]
+
+？1：是吗？
+？2：我怎么觉得漏了呢。
+？！
+
+[charaFace A 5]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V210]
+只要将立场彻底颠倒，[r]这种浑身不自在就会顿时消失！[wait tVoice]
+[k]
+
+？1：真的是这样吗？
+？2：越来越有意思了呢。
+？！
+
+[messageOff]
+[cameraMove 0.9 -120,90 1.3]
+[wt 1.2]
+
+＠爹爹
+···············（盯。）
+[k]
+
+？1：（……我明白了，爹爹。全都交给我吧。）
+
+＠爹爹
+（湿滑点头。）
+[k]
+
+？2：（爹爹的女儿是不是太活泼唠叨了？）
+
+＠爹爹
+（湿滑～唔？）
+[k]
+
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_7 1.0 0.5]
+[wait fade]
+
+[cameraHome 0.1]
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_7 1.0 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V220]
+首先是“切”！[r]将这[#巧克力]块切得粉碎！[wait tVoice]
+[k]
+
+[messageOff]
+[charaMoveReturn A 0,10 0.4]
+[wt 0.2]
+
+[se ad222]
+[seVolume ad222 0 0.6]
+[wt 0.2]
+[shake 0.05 2 2 0.4]
+[wt 0.6]
+
+[charaTalk off]
+[charaFace A 26]
+[charaFace B 0]
+[charaFadein B 0.6 240,0]
+[charaMove B 270,0 0.6]
+[charaFadeTime B 0.3 0.6]
+[wt 0.6]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V230]
+厨房红色二刀大哥也赞不绝口！[r]“考维曲巧克力”！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 6]
+[se ad230]
+[shake 0.1 0 3 0]
+[wt 0.3]
+[se ad230]
+[wt 0.3]
+[se ad230]
+[wt 0.3]
+[se ad230]
+[wt 0.3]
+[seStop ad230]
+[shakeStop]
+[wt 0.3]
+
+[charaFace B 1]
+[charaFace A 7]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V240]
+总之要保持均匀，颗粒切得整齐一些。[r]噢，手法不错嘛，御主。[wait tVoice]
+[k]
+
+[charaFadeout B 0.4]
+[charaMove B 290,0 0.4]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 29]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V250]
+我……我负责切这边的“白巧克力”！[wait tVoice]
+[k]
+
+[messageOff]
+[se ad230]
+[charaMoveReturn A 0,-7 0.15]
+[wt 0.3]
+[se ad230]
+[charaMoveReturn A 0,-7 0.15]
+[wt 0.3]
+[se ad230]
+[charaMoveReturn A 0,-7 0.15]
+[wt 0.3]
+[se ad230]
+[charaMoveReturn A 0,-7 0.15]
+[wt 0.3]
+[seStop ad230]
+[wt 0.4]
+
+？1：[line 3]切好了哦！
+？！
+
+[charaFace A 7]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V260]
+好嘞！　非常好！[wait tVoice]
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgm BGM_EVENT_7 1.0 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[wipein rollLeft 1.0 1.0]
+[bgm BGM_EVENT_7 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V270]
+接下来是“温度调整”！[r]这步准备工作乃是命运的分歧点。[wait tVoice]
+[k]
+
+[messageOff]
+[se ade167]
+[seVolume ade167 0 0.4]
+[charaFace A 9]
+[wt 0.6]
+[seStop ade167 0.6]
+[wt 0.6]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V280]
+拜……拜托了，御主！[r]这热水和冰水间微妙～的温度管理才是关键。[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace C 0]
+[charaFadein C 0.6 230,0]
+[charaMove C 260,0 0.6]
+[charaFadeTime C 0.3 0.6]
+[wt 0.6]
+
+[charaFace A 2]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V290]
+据说！[r]怪猫玉藻大人吩咐喵[line 3][wait tVoice]
+[k]
+
+[charaFace C 2]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V300]
+融化用五十与五十五度的心痛过程，[r]冷却用二十九与二十七度的趾尖以下[line 3][wait tVoice]
+[k]
+
+[charaFace C 1]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V310]
+然后，铺开用三十一与三十二度的曲折上坡！[wait tVoice]
+[k]
+
+[charaFadeout C 0.4]
+[charaMove C 280,0 0.4]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 22]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V320]
+我这边的[#白巧]会走其他路线。[r]为什么会那么麻烦啦……好可怕……[wait tVoice]
+[k]
+
+？1：黏在平勺上的巧克力开始凝固了哦！
+？！
+
+[charaFace A 7]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V330]
+手法真漂亮！　噢，完成度真棒。[r]真了不起，哟，大将军！[wait tVoice]
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgm BGM_EVENT_7 1.0 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[wipein rollLeft 1.0 1.0]
+[bgm BGM_EVENT_7 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V340]
+终于该收尾了……这才是最关键的……[r]接下来只要倒入模具冷却……是吧？　才不是呢！[wait tVoice]
+[k]
+
+[charaFace A 10]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V350]
+听好了哦，御主？　耳朵掏干净仔细听好了！？[r]无论是绘画还是别的什么，收尾都会影响作品……[wait tVoice]
+[k]
+
+[charaFace A 26]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V360]
+我已经认真地从先人、[r]诸位前辈那里[#调查]过了。[wait tVoice]
+[k]
+
+[charaFace A 11]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V370]
+换言之，其奥义就是[line 3]！[wait tVoice]
+[k]
+
+
+[messageOff]
+[charaTalk off]
+
+[charaEffect J bit_talk_41]
+
+
+
+
+[branchQuestNotClear lblNotClear4 3000320 4]
+
+[charaFace D 4]
+[charaFadein D 0.6 250,0]
+[charaMove D 280,0 0.6]
+[charaFadeTime D 0.3 0.6]
+[wt 0.8]
+
+[charaPut J 0,0]
+[charaFace A 2]
+[charaFace D 3]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V380]
+爱意！　要倾注无数的爱意～！[r]无论是念经还是真言什么都可以咏唱然后填充！[wait tVoice]
+[k]
+
+？1：那就交给我吧！
+？2：令咒也连续全部用掉！
+？！
+
+[charaFadeout D 0.4]
+[charaMove D 300,0 0.4]
+
+
+[branch lblConf4]
+[label lblNotClear4]
+
+[charaFace E 0]
+[charaFadein E 0.6 230,0]
+[charaMove E 260,0 0.6]
+[charaFadeTime E 0.3 0.6]
+[wt 0.8]
+
+[charaPut J 0,0]
+[charaFace A 2]
+[charaFace E 13]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V380]
+爱意！　要倾注无数的爱意～！[r]无论是念经还是真言什么都可以咏唱然后填充！[wait tVoice]
+[k]
+
+？1：那就交给我吧！
+？2：令咒也连续全部用掉！
+？！
+
+[charaFadeout E 0.4]
+[charaMove E 280,0 0.4]
+
+[label lblConf4]
+
+[charaFace A 6]
+[charaPut J 2000,2000]
+
+[charaTalk on]
+[charaTalk A]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V390]
+就是这种志气，御主！[r]我去雕刻一些陪衬的装饰品……[wait tVoice]
+[k]
+
+[messageOff]
+[se ad77]
+[charaMove A -150,0 1.0]
+[wt 1.2]
+
+[se ade137]
+[charaShake A 0.1 2 2 1.2]
+[wt 0.7]
+
+[cameraMove 1.0 40,0 1.1]
+[wt 0.7]
+
+[se ad7]
+[cameraHome 0.1]
+[charaTalk A]
+[charaFace A 11]
+[charaMove A 0,0 0.2]
+[wt 0.2]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V400]
+喂，不准偷看啦，御主……[twt 2.4][charaFace A 28][messageShake 0.05 4 4 0.2]让你不准看啦！[r]在彻底冷却下来之前，去我的房间慢慢等啦！[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_7 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[scene 52700]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+[wt 0.5]
+
+[se ad59]
+[seVolume ad59 0 0.1]
+[seVolume ad59 1.0 1.0]
+[wt 1.0]
+[seStop ad59 0.2]
+[se ad8]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.4 50,0]
+[charaMove A 0,0 0.4]
+[wt 1.0]
+
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[charaFace I 0]
+[charaFadein I 0.5 0,-70]
+[wt 2.0]
+[charaFadeout I 0.4]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V410]
+[f large]看吧，完成啦！！[wait tVoice]
+[k]
+
+[charaFace A 8]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V420]
+噢噢，这个真了不得！[r]我对御主的多才多艺敬佩不已！[wait tVoice]
+[k]
+
+？1：呜……！　甜点师的才能在蠢蠢欲动……！
+？2：（但雕刻的工程几乎全部交给她了啦。）
+？！
+
+[charaFace A 6]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V430]
+嗯嗯。那按照约定，我收下了哦？[twt 4.7][charaFace A 3][r]可……可以拿……这个吗？[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 20]
+[wt 0.7]
+[se adm27]
+[seVolume adm27 0 0.4]
+[charaFace A 29]
+[charaMoveReturn A 0,-4 0.3]
+[wt 0.6]
+[se ade161]
+[seVolume ade161 0 0.5]
+[charaFace A 8]
+[charaMoveReturn A 0,-4 0.3]
+[wt 0.3]
+[charaMoveReturn A 0,-4 0.3]
+[wt 0.3]
+[seStop ade161 0.3]
+[wt 1.0]
+[charaFace A 29]
+[wt 0.7]
+
+？1：……还合你口味吗，北斋小姐？
+？2：好吃吗？　阿荣亲？
+？！
+
+[messageOff]
+[charaFace A 18]
+[charaShake A 0.04 3 3 0.2]
+[wt 0.7]
+[charaFace A 28]
+[wt 1.0]
+[charaFace A 3]
+[wt 0.7]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V440]
+噢……呼……唔唔……那个……怎么说呢……[r]胸口，不，是肚子……已经满满的了……[wait tVoice]
+[k]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V450]
+感激不尽……总之，那啥……就是……[wait tVoice]
+[k]
+
+？1：…………？
+？2：（突然吞吞吐吐？）
+？！
+
+[charaFace A 28]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V460]
+俗……俗话说『剩茶有福。则应取之』吧？[wait tVoice]
+[k]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V470]
+换句话说，就是剩下的东西里有福气。[r]所以……剩下的，就……就给御主吧？[wait tVoice]
+[k]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V480]
+不……不管是煮是烤或是煎炸，[r]都……都都都……随您喜欢吧？　好吗？[wait tVoice]
+[k]
+
+？1：……谢谢你，阿荣小姐！
+？2：我打算先直接就这么吃。
+？！
+
+[charaFace A 2]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V490]
+唔唔……！？　这……这眼神……！？[r]怎么又来了啦，可恶！[wait tVoice]
+[k]
+
+？1：又来了是指什么？
+？2：是说谁啊？
+？！
+
+[charaFace A 10]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V500]
+就是，那啥啦。我向那些[r]我请教[#巧克力]该怎么做的从者众也说过。[wait tVoice]
+[k]
+
+[charaFace A 11]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V510]
+巧克力不是用来给御主的。[r]首先应该是为了让我吃才对吧？[wait tVoice]
+[k]
+
+[branchQuestNotClear lblNotClear5 3000320 4]
+
+[charaTalk off]
+[charaFace A 9]
+
+[charaDepth B 1]
+[charaDepth C 3]
+[charaDepth D 2]
+
+[charaFace B 3]
+[charaFadein B 0.4 240,0]
+[charaFadeTime B 0.4 0.6]
+[charaMove B 260,0 0.4]
+
+[charaFace C 3]
+[charaFadein C 0.4 -380,0]
+[charaFadeTime C 0.4 0.6]
+[charaMove C -400,0 0.4]
+
+[charaFace D 3]
+[charaFadein D 0.4 400,0]
+[charaFadeTime D 0.4 0.6]
+[charaMove D 420,0 0.4]
+
+
+[branch lblConf5]
+[label lblNotClear5]
+
+[charaTalk off]
+[charaFace A 9]
+
+[charaDepth B 1]
+[charaDepth C 3]
+[charaDepth E 2]
+
+[charaFace B 3]
+[charaFadein B 0.4 240,0]
+[charaFadeTime B 0.4 0.6]
+[charaMove B 260,0 0.4]
+
+[charaFace C 3]
+[charaFadein C 0.4 -380,0]
+[charaFadeTime C 0.4 0.6]
+[charaMove C -400,0 0.4]
+
+[charaFace E 14]
+[charaFadein E 0.4 400,0]
+[charaFadeTime E 0.4 0.6]
+[charaMove E 420,0 0.4]
+
+[label lblConf5]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V520]
+更不用说我和所谓的[r][#情人节]彻底完全毫无关系！[wait tVoice]
+[k]
+
+[charaFace A 15]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V530]
+但我这么说完……那些家伙[r]就用莫名温和的眼光看着我……[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[charaMove B 280,0 0.4]
+
+[charaFadeout C 0.4]
+[charaMove C -420,0 0.4]
+
+[branchQuestNotClear lblNotClear6 3000320 4]
+
+
+[charaFadeout D 0.4]
+[charaMove D 440,0 0.4]
+[wt 0.8]
+
+[branch lblConf6]
+[label lblNotClear6]
+
+[charaFadeout E 0.4]
+[charaMove E 450,0 0.4]
+[wt 0.8]
+
+[label lblConf6]
+
+[cameraMove 0.9 -120,90 1.3]
+[wt 1.4]
+
+？1：（原来如此……死鸭子嘴硬。）
+？2：（爹爹早就看穿了吧？）
+？！
+
+[messageOff]
+[se ade139]
+[charaFace A 29]
+[charaMoveScale A 1.05 0.4]
+[cameraMove 0.4 0,0 1.0]
+[shake 0.04 3 3 0.4]
+[wt 0.4]
+
+[charaMoveScale A 1.0 0.3]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V540]
+怎……怎么了，连御主都这样，[r]和爹爹两个笑眯眯的心有灵犀的样子！[wait tVoice]
+[k]
+
+[charaFace A 3]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V550]
+啊[messageShake 0.04 3 3 0.4]啊，又让人坐立不安了！　求你啦，御主？[r]赶快把这玩意儿塞进你的胃里处理掉！[wait tVoice]
+[k]
+
+[charaFace A 18]
+
+＠葛饰北斋
+[tVoice ValVoice_104000 0_V560]
+对[messageShake 0.04 3 3 0.4]江户子来说！[r][#巧克力]是不会留过夜的啦！[wait tVoice]
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

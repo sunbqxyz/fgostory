@@ -1,0 +1,483 @@
+
+＄94-03-35-02-1-0
+
+[soundStopAll]
+
+[charaSet A 5042000 1 紫式部]
+[charaSet B 99502600 1 玛修]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 1098162300 1 塞弥拉弥斯]
+[charaSet E 7016001 1 玉藻猫]
+[charaSet F 4011001 1 布狄卡]
+[charaSet G 2001000 1 卫宫]
+[charaSet I 98115000 1 特效用]
+[charaSet J 98115000 1 特效用]
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_41]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66700]
+[branch lblConf]
+[label lblNotClear]
+[scene 60300]
+[label lblConf]
+
+
+[se ad413]
+[seVolume ad413 0 0.1]
+[seVolume ad413 1.0 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+[seStop ad413 1.0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+＠紫式部
+原来如此，这里真热闹[line 3]
+[k]
+
+？1：这是你第一次来食堂吗？
+
+＠紫式部
+对。没错。
+[k]
+
+＠紫式部
+应该说，我天生不喜欢外出……[r]因为我亲近书籍，最喜欢接触文字。
+[k]
+
+＠紫式部
+尽管没什么可以骄傲的，[r]但我自幼就饱读汉书等书籍。
+[k]
+
+？2：你几乎不离开图书馆吗？
+
+＠紫式部
+说得……对呢。[r]尽管并不是故意为之……
+[k]
+
+＠紫式部
+但只要一有空，[r]我就沉浸于阅读图书馆的藏书中。
+[k]
+
+[charaFace A 4]
+＠紫式部
+等自己发现时，早已疏于与各位的交流了。[r]这可不行呢。
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[se ad13]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 0.3]
+＠玛修
+大家经常会聚在食堂里，[r]所以这里应该最适合寻找咒本的去向了！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠芙芙
+芙？？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠玛修
+我会和塞弥拉弥斯小姐一起，[r]在管制室支援前辈和紫式部小姐。
+[k]
+
+＠玛修
+Mr.福尔摩斯正在休息，[r]达·芬奇亲似乎也有些疲劳……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+＠塞弥拉弥斯
+福尔摩斯一直是那种德行吧。[r]不用理睬他。
+[k]
+
+[charaFace D 0]
+＠塞弥拉弥斯
+达·芬奇似乎走路都有些不太稳，[r]这次就让她好好休息吧。
+[k]
+
+＠塞弥拉弥斯
+好了。[r]那么关于『最初的咒本』[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.4]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.4 1]
+[wt 0.4]
+＠玉藻猫
+噢！　噢噢？
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaFace E 0]
+＠玉藻猫
+又有一个陌生的新人物加入餐桌！[r]看上去营养不良而实际尺寸却大到令人眩晕。
+[k]
+
+＠玉藻猫
+不过无论躯体多么矛盾，[r]既然是客人就该抓来吃。毕竟我乃猫咪。
+[k]
+
+[charaFace E 1]
+＠玉藻猫
+综上所述，快吃猫咪亲手制作的料理汪！[r]新人还可以享受99％的优惠！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFace E 1]
+[charaFadein F 0.1 2]
+[charaFadein E 0.1 0]
+＠布狄卡
+怎么了，发生什么事了？
+[k]
+
+[charaFace F 1]
+＠布狄卡
+哎呀，[%1]和……图书馆的司书小姐！[r]真难得。你们是来吃些什么的吗？
+[k]
+
+
+[charaTalk E]
+[charaFace E 0]
+＠玉藻猫
+而且司书一脸愁容。[r]看来该轮到三明治出场了？
+[k]
+
+[charaFace E 4]
+＠玉藻猫
+但是真遗憾，双手漂亮的女人啊……[r]唯独纸鱼是无论哪只猫都无法烹饪的……
+[k]
+
+＠玉藻猫
+不，其实我迟早想料理了那玩意儿，[r]但压根找不到影子的东西该怎么弄啊……
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠紫式部
+呃，唉……[r]请问，这位的话该如何……？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.4 1]
+[wt 0.4]
+＠卫宫
+抱歉。[r]请用感觉来理解她的发言。
+[k]
+
+[charaFace G 0]
+＠卫宫
+第一次在食堂见到你呢，紫式部。[r]这是你第一次离开图书馆吧？
+[k]
+
+？1：除了玉藻猫以外，大家都和你认识呀。
+？2：紫式部小姐真是个名人。
+
+？！
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+[charaMoveReturn A -30,0 0.6]
+[wt 0.6]
+[charaMoveReturn A 30,0 0.5]
+[wt 0.5]
+
+[charaFace A 6]
+＠紫式部
+万……万万……万分抱……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠塞弥拉弥斯
+啊～，嗯。那边的御主和英灵正在寻找书。[r]是携带有特殊魔力的书。
+[k]
+
+＠塞弥拉弥斯
+掌管厨房的英灵们啊，[r]你们[line 3]知道些什么吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠紫式部
+（塞弥拉弥斯大人……）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFace F 0]
+[charaFadein G 0.1 0]
+[charaFadein F 0.1 2]
+＠卫宫
+不，我们并不算掌管厨房的英灵[line 3]
+[k]
+
+
+[charaTalk F]
+[charaFace F 4]
+＠布狄卡
+书的话，最近大家都有在阅读，让我想想……[r]尤其引人注目的还是……
+[k]
+
+
+[charaTalk G]
+[charaFace G 0]
+＠卫宫
+是作家系从者吧。[r]虽说平时就经常能见到他们读书的样子，
+[k]
+
+＠卫宫
+但最近，他们书桌上的书籍一定越堆越高了吧。[r]今早也是。
+[k]
+
+
+[charaTalk F]
+[charaFace F 1]
+＠布狄卡
+嗯，没错没错！[r]比平时阅读得更多了呢。
+[k]
+
+
+[charaTalk G]
+[charaFace G 0]
+＠卫宫
+这就是所谓的流行吧。
+[k]
+
+
+[charaTalk F]
+[charaFace F 3]
+＠布狄卡
+没错没错。毕竟连我们都开始阅读了嘛。[r]读书真有意思。未知的东西不断涌入脑海中。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad127]
+[seVolume ad127 0 0.5]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 -350,0]
+[charaMove E 0,0 0.4]
+[wt 0.4]
+[seStop ad127 0.4]
+[wt 0.6]
+＠玉藻猫
+猫咪果断而美妙地加入！[r]让你们久等了，各位！
+[k]
+
+＠玉藻猫
+送上用智慧的香味作为香辛料[r]制作而成的最合适食堂的菜品吧！
+[k]
+
+[charaFace E 1]
+＠玉藻猫
+没错[line 3]一提起我们厨房英灵！　就会想到这个！
+[k]
+
+[se ad186]
+[charaPut I 1]
+＠玉藻猫
+『连小刑也会做的简单料理集／[r]　白鹭牌百毅苦苦堂大人！！』
+[k]
+
+？1：哎哟！
+？2：照这个套路来看，这本书该不会是……！
+
+？！
+
+[bgmStop BGM_EVENT_7 1.0]
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_41]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se adm21]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaMoveReturn C 0,40 0.5]
+＠芙芙
+芙芙！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠玉藻猫
+哦，哦哦？　怎么了怎么了？[r]这是我问赖光借来的书啊？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠紫式部
+玉藻猫大人！[r]失礼了！
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_pentagram_03]
+[wt 0.1]
+[se ad598]
+[wt 3.4]
+
+[se ade251]
+[fowardEffectStop bit_talk_pentagram_03]
+[wt 2.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+[charaShake E 0.03 4 4 0.4]
+[wt 0.6]
+
+[se adm21]
+[charaFace E 2]
+＠玉藻猫
+不[messageShake 0.03 3 3 0.4]可能！？[r]猫咪的书居然飞向了空中！？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk off]
+[charaFace G 5]
+[charaFace F 5]
+[charaFadein G 0.1 0]
+[charaFadein F 0.1 2]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠紫式部
+果然！　那本书[line 3]是咒本！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠玛修
+从那本书身上感知到了特殊的魔力反应！[r]暂命名为咒本反应吧！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠紫式部
+各位，失礼了！[r]开始回收咒本！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,321 @@
+
+＄03-00-03-13-3-0
+
+
+[soundStopAll]
+
+
+[charaSet A 8001400 1 玛修]
+[charaSet B 1009001 1 莫德雷德]
+[charaSet C 3031001 1 枪兵193]
+[charaSet D 6011001 1 暗匿者042]
+[charaSet E 7032001 1 狂战士226]
+[charaSet F 1036001 1 兰陵王]
+[charaSet G 1098159400 1 芥雏子]
+[charaSet H 98115000 1 特效用]
+
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 65501]
+
+[fadein black 0.7]
+[wait fade]
+
+[se ad687]
+[fowardEffect bit_talk_14 256,150]
+[wt 0.2]
+[se ad467]
+[fowardEffect bit_talk_14 -256,-50]
+
+[fadeout white 0.2]
+[wait fade]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[fadein white 0.4]
+[wait fade]
+[charaFace E 2]
+[wt 0.2]
+
+[se ad85]
+[effect bit_talk_square_slash_r]
+[wt 0.1]
+[charaMoveScale E 1.3 0.2]
+[charaMove E 0,15 0.1]
+[se ad715]
+[wt 0.1]
+[charaMove E -20,30 0.1]
+
+[se ad618]
+[shake 0.05 1 3 0.5]
+[fadeout white 0.1]
+
+[se ad170]
+[se ad32]
+[se ad471]
+[wait fade]
+
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+
+[se ad671]
+[charaTalk B]
+[charaFace B 5]
+
+[charaFadein B 0.4 -12,0]
+
+[wt 0.1]
+[charaMove B 20,-1 0.3]
+[charaShake B 0.05 2 1 0.4]
+[wt 1.2]
+[charaFace B 2]
+[charaMove B 15,0 0.2]
+[se ad51]
+[wt 0.2]
+
+＠莫德雷德
+呜，果然很强啊！[r]我们的招数根本不奏效！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaMoveScale E 1.0 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠枪兵193
+奇怪。这种强度，[r]并不只是 [#体格:硬件]上的　差异……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠暗匿者042
+……啊啊，我看明白了。[r]这家伙能预判我们的动作。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠莫德雷德
+不会吧。连父王的直觉技能也没这么恶心啊！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠暗匿者042
+嗯。这不是借助战斗实力进行的预判。[r]而是级别更为不同的……几乎像是未来视的能力。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad714]
+[se ad51]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠狂战士226
+吾之演算宣告了汝等的破灭。[r]认命吧。夷狄们。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠莫德雷德
+哼，既然能预测未来，那你应该知道了吧。
+[k]
+
+[charaFace B 2]
+
+＠莫德雷德
+我们是不可能给出『放弃』这种可能性的啦！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠狂战士226
+正是。演算宣告的乃是更深的苦难……
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.2 1.0]
+[bgm BGM_EVENT_24 0.4 0.6]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipein rectangleStripLeftToRight 0.1 1.0]
+[wait wipe]
+
+[se ad171]
+[effect bit_talk_Slash_white_01 0,0 H]
+[wt 0.2]
+[se ad32]
+[fowardEffect bit_talk_14]
+[wt 0.1]
+[wipeout circleOut 0.1 1.0]
+[wait wipe]
+
+[scene 65501]
+
+[se ad7]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 1]
+[charaShake B 0.04 4 4 0.8]
+
+[wipein circleOut 0.3 1.0]
+[charaMove B 10,0 0.2]
+[wait wipe]
+[wt 0.5]
+
+＠莫德雷德
+唔哦！　什么！？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[fowardEffect bit_talk_quickmove]
+[se ad73]
+[se ad223]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+[wt 0.4]
+
+＠F：兰陵王
+我来助您一臂之力。狂战士226阁下。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+兰陵王……芥小姐！？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad60]
+[wt 0.8]
+[seStop ad60 0.2]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.4 1]
+[wt 0.8]
+[charaFace G 8]
+
+＠芥雏子
+这次我一定要送你们下地狱，玛修。[r]迦勒底的[%1]！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+＠裁定者229
+哦？　朕本还以为汝在闹脾气，[r]看来又打算为朕效力了吗？　芥雏子。
+[k]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+＠芥雏子
+既然陛下已经明白了迦勒底的威胁性，[r]我自当谨遵圣意。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+＠裁定者229
+啊啊原来如此。汝是不忍心让狂战士226单骑作战吧。[r]看来是朕太不解风情了。
+[k]
+
+＠裁定者229
+无妨。好好努力吧。[#只是时间不多了]。
+[k]
+
+＠裁定者229
+要谨记，不必急于下杀手，[r]只需击溃其腿脚即可。
+[k]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+＠芥雏子
+……原来如此，我明白了。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 1.0 1.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠莫德雷德
+糟了。这些家伙凑一块儿可就更棘手了！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠暗匿者042
+但假如受制于此，Shadow Border会[r]离我们越来越远，将彻底追不上了！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

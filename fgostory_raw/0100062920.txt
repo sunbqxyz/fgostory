@@ -1,0 +1,296 @@
+＄01-00-06-29-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 8001002 1 玛修]
+[charaSet B 5009001 1 达·芬奇]
+[charaSet C 1012001 1 贝德维尔]
+[charaSet D 98003000 1 Dr.罗曼]
+[charaSet E 98098000 1 阿格规文]
+[charaSet F 98094000 1 狮子王]
+
+
+[scene 29802]
+[fadein black 2.0]
+[wait fade]
+
+[se ad33]
+[wait se ad33]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+击破肃正骑士！[r]进军道路安全了，御主！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[se ad13]
+[communicationChara 98003003 1 5 0 0]
+[wt 0.5]
+
+＠Dr.罗曼
+看来你们是第一个呢。
+[k]
+
+[communicationCharaFace 5]
+＠Dr.罗曼
+联合军虽然也陆陆续续进入圣都了，[r]他们人数众多。难以避免和肃正骑士们正面对上。
+[k]
+
+＠Dr.罗曼
+联合军正在圣都正门附近一边压制[r]一边向圣都中心[line 3]王城前进。
+[k]
+
+＠Dr.罗曼
+时间差大概有一小时左右吧。[r]趁他们引开圣都军注意力的这个机会，冲进王城吧！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+是！　赶在其他圆桌骑士们追上之前，[r]赶紧向王城出发吧，前辈！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0 1]
+
+[scene 29600]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_5 2.0]
+[fadein black 2.0]
+[wait fade]
+
+＠狮子王
+真吵啊，阿格规文。[r]圣都被入侵了吗？
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠阿格规文
+……好像是的。对方居然有[r]能困住高文卿的棋子，这是我的失算。
+[k]
+
+＠阿格规文
+正门被攻破，贼军已经攻入城区。[r]所以，王啊。
+[k]
+
+＠阿格规文
+已经没必要继续拖延了。[r]圣拔已经结束。接下来只剩您作决定了。
+[k]
+
+＠阿格规文
+……在这里打开尽头之塔。[r]建立未能在不列颠实现的千年王国[line 3]
+[k]
+
+＠阿格规文
+不被任何人侵略，[r]也不去侵略任何人的理想之国。
+[k]
+
+＠阿格规文
+我则会见证您的成果。
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠狮子王
+……好吧。铁之阿格规文[r]既然这么说，那就为你实现吧。
+[k]
+
+＠狮子王
+尽头之浪已传至吾之玉座。[r]关上圆桌，这片领域将成为阶梯。
+[k]
+
+＠狮子王
+卡美洛会迎来惊涛骇浪的时代。[r]以风暴之王的名义，是将一切纳入掌心之时了。
+[k]
+
+[messageOff]
+[se ad14]
+[scene 10001 5.0]
+[wait scene]
+
+[seStop ad14 2.0]
+[bgmStop BGM_EVENT_5 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[scene 29800]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_3 2.0]
+[fadein black 2.0]
+[wait fade]
+
+
+[se ad60]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 1]
+[wt 0.5]
+[seStop ad60]
+
+＠贝德维尔
+能看到了……！[r]前面就是王的领域，狮子王就在那座城的顶端！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 2]
+
+＠Dr.罗曼
+等一下，魔力计数器突破极限了！[r]停，大家快停下！
+[k]
+
+＠Dr.罗曼
+这已经是时空断层级的反应了啊！？[r]现在某种巨大的存在正要在你们那里出现！
+[k]
+
+
+[messageOff]
+[se ad14]
+[bgmStop BGM_EVENT_3 2.0]
+[maskout white 2.0]
+[wait mask]
+[scene 29803]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+
+[backEffect bit_talk_barrier]
+[wt 1.0]
+
+[seStop ad14 2.0]
+[maskin white 2.0]
+[wait mask]
+
+[bgm BGM_EVENT_1 0.1]
+[wt 1.0]
+
+[charaDepth A 3]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠玛修
+这是……！？
+[k]
+
+[charaFace A 7]
+＠玛修
+医生，是墙壁！[r]光之壁一样的东西围住了王城！
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.1]
+
+[fowardEffect bit_talk_12 1]
+[wt 0.2]
+[se ad32]
+[wt 1.0]
+
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠贝德维尔
+……！　这光和圣剑是一样的……[r]是圣枪伦戈米尼亚德的外装！
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+[line 3]准备早已完成了吗。[r]罗玛尼，圣都周边的热量现在怎么样！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 2]
+
+＠Dr.罗曼
+以加速度上升中！[r]而且在这个时代的四周都感知到了重力的崩溃！
+[k]
+
+＠Dr.罗曼
+[#世界开始关闭了]！[r]三藏法师看到的世界的尽头[line 3]
+[k]
+
+＠Dr.罗曼
+什么都没有的空间，[r]正在向圣都推进！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFace B 5]
+[charaFadein C 0.1 2]
+[charaFadein B 0.1 0]
+
+[bgmStop BGM_EVENT_1 1.5]
+
+＠贝德维尔
+开始了……正在建造尽头之塔吗，[r]居然这么快……！
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠Dr.罗曼
+敌性反应接近中！[r]大家准备好！　敌人来了！
+[k]
+
+[charaFace B 2]
+＠达·芬奇
+很好～，终于快熬出头了吗！[r]连思考的时间都没有了！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[effectStop]
+[soundStopAll]
+[end]

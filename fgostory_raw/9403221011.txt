@@ -1,0 +1,202 @@
+
+＄94-03-22-10-1-1
+[soundStopAll]
+
+
+[charaSet A 1035001 1 迪尔姆德]
+[charaSet B 1017000 1 恶鬼罗刹]
+[charaSet C 3011000 1 芬恩·麦克库尔]
+[charaSet D 1098162000 1 玛修]
+[charaSet E 1098123200 1 戈尔德鲁夫]
+[charaSet F 1098161900 1 蛇庄屋]
+[charaSet J 5009000 1 特效用dummy]
+
+[scene 70100]
+
+[bgm BGM_EVENT_63 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠迪尔姆德
+二刀流，击破！
+[k]
+
+[messageOff]
+[effect bit_talk_v_slash01]
+[wt 0.1]
+[se bac308]
+[wt 0.3]
+[charaFadeout A 0.1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[charaShake B 0.05 4 4 0.4]
+
+＠恶鬼罗刹
+呜哇啊啊啊啊！[r]太可惜了，尽管很美但如果能再年轻6……呜！
+[k]
+
+[messageOff]
+[flashin once 0.2 0.2 FFFFFFFF FFFFFF80]
+[bgmStop BGM_EVENT_63 0.5]
+[se ad528]
+[charaSpecialEffect B enemyErasure 1 1.7]
+[wt 2.0]
+
+？1：这一瞬间……露出了真面目呢……
+？2：真是个无与伦比的强敌呢……
+
+？！
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠迪尔姆德
+唔！？
+[k]
+
+[messageOff]
+
+[wt 0.7]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[charaChange A 3002001 3 fade 0.1]
+[wait charaChange A]
+[cueSe Battle bac384]
+[wt 1.0]
+
+＠迪尔姆德
+呜……大意了……[r]不仅是我的铠甲，连我的灵基都被伤到了……
+[k]
+
+＠迪尔姆德
+二刀流的罗刹……互为……平手啊……
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[charaMove A 0,-30 0.4]
+[wt 0.4]
+[se ad144]
+[seVolume ad144 0 0.4]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠芬恩·麦克库尔
+没有我表现的余地呢……[r]不过反正温泉也开放了，这件事就算了……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠玛修
+成功了呢，前辈！[r]是万众期待的温泉！
+[k]
+
+[charaFace D 3]
+
+＠玛修
+啊……不，在那之前，[r]得先把迪尔姆德先生送去休息室才行……！
+[k]
+
+＠迪尔姆德
+没关系……不用在意我的事，[r]请两位在这里轻松地……
+[k]
+
+[charaFace D 2]
+
+＠玛修
+不，那可不行！
+[k]
+
+＠玛修
+玛修·基列莱特要火速将您送去休息室，[r]请稍候片刻！
+[k]
+
+[messageOff]
+[charaFadeout D 0.4]
+[wt 2.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠蛇庄屋
+哎呀[line 3]！？[r]温泉居然开放了耶[line 3]！
+[k]
+
+＠蛇庄屋
+怎么怎么，是你们打败了那个[r]堕落的仁王吗[line 3]！？
+[k]
+
+＠蛇庄屋
+真棒真棒，太美妙了！[r]一起去喝一杯吧，戈尔德鲁夫亲！
+[k]
+
+＠蛇庄屋
+泡着温泉品尝的美酒可是别具一格的哦[line 3]！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 17]
+[charaFadein E 0.1 1]
+
+＠戈尔德鲁夫
+这就是那啥，所谓的月下饮酒吧！
+[k]
+
+[charaFace E 10]
+
+＠戈尔德鲁夫
+唔。这个暂且不论，[r]为什么我会被这个蛇男缠上？
+[k]
+
+[messageOff]
+[charaFace F 0]
+[charaFadein F 0.4 196,0]
+[wt 0.5]
+
+[charaTalk off]
+[charaFace E 7]
+[charaMove E 10,0 0.1]
+[charaMove F 186,0 0.1]
+[wt 0.2]
+
+[se ad345]
+[seVolume ad345 0 0.3]
+[charaFace E 8]
+[charaMove E 202,0 2.0]
+[charaShake E 0.07 7 0 2.0]
+[charaMove F 378,0 2.0]
+[wt 1.6]
+[charaFadeout E 0.2]
+[charaFadeout F 0.2]
+[seStop ad345 0.2]
+[wt 0.1]
+
+
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

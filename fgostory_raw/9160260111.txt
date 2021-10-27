@@ -1,0 +1,113 @@
+
+＄91-60-26-01-1-1
+
+[soundStopAll]
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 6002001 1 咒腕哈桑]
+[charaSet C 5016001 1 杰罗尼莫]
+[charaSet D 98109000 1 燕青（？）]
+[charaSet E 98111500 1 通讯用杂音]
+
+[charaPut E 1200,1200]
+[charaEffect E bit_talk_10_LowLevel]
+
+[scene 38300]
+[charaTalk D]
+[charaFace D 0]
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_EVENT_3 0.1]
+
+[charaFadein D 0.1 1]
+＠燕青（？）
+抱歉，还不行。[r]再见啦！
+[k]
+
+[messageOff]
+[se ade153]
+[charaEffect D bit_talk_40]
+[wt 1.5]
+[charaFadeout D 0.7]
+[wt 1.5]
+[charaEffectStop D bit_talk_40]
+[wt 1.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wt 1.5]
+
+[bgm BGM_EVENT_5 0.1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠杰罗尼莫
+烟幕……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠咒腕哈桑
+看来是边战斗边从别人身上窃取来的吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut E 1]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠玛修
+该……该怎么办啊。
+[k]
+
+[charaFace A 12]
+＠玛修
+他说，还有要办的事……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠咒腕哈桑
+……当然不行啦。[r][%1]阁下，我们追上去吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠杰罗尼莫
+哎呀。[r]咒腕知道燕青想办的事吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠咒腕哈桑
+嗯，因为与我也有关系。
+[k]
+
+＠咒腕哈桑
+那我们走吧。[r]尽管他的去向不明的，但没什么大不了的。
+[k]
+
+＠咒腕哈桑
+既然如此，只能地毯式搜索了。[r]对我们[#山中老人:哈桑]来说，这是家常便饭。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_5 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

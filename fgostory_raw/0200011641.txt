@@ -1,0 +1,61 @@
+
+＄02-00-01-16-4-1
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 98111500 1 达·芬奇]
+[charaSet C 98111500 1 通讯用杂音]
+[charaSet D 1002001 1 阿尔托莉雅·Alter]
+[charaSet E 2023000 1 莫里亚蒂]
+[charaSet F 98086000 1 福尔摩斯]
+
+[soundStopAll]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 38800]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaPut C 1]
+[charaEffect C bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0 0,-90]
+[wt 0.3]
+＠达·芬奇
+哎呀～，抱歉抱歉。[r]看来兴致盎然地有些过头了。
+[k]
+
+[charaFace B 0]
+＠达·芬奇
+如果是以前[line 3]。[r]啊，不，没什么。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+＠玛修
+……嗯！[r]总之，根据坐标，你们很快就能到达最顶层了。
+[k]
+
+[charaFace A 7]
+＠玛修
+有从者反应。[r]御主，请一定要小心……！
+[k]
+
+
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 2.0]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

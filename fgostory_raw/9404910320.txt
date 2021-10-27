@@ -1,0 +1,352 @@
+
+＄94-04-91-03-2-0
+
+[soundStopAll]
+
+[charaSet A 9010000 1 卑弥呼]
+[charaSet B 1098196100 1 有些卑屈的埴轮]
+[charaSet C 1098196100 1 像是老好人的埴轮]
+[charaSet D 1098140000 1 大蛇]
+
+[branchQuestNotClear lblNotClear 3000320]
+
+[branch lblConf]
+[label lblNotClear]
+[charaSet E 8001000 1 玛修]
+
+[branch lblNotClear_out]
+[label lblConf]
+[charaSet E 8001410 1 玛修]
+
+[label lblNotClear_out]
+
+[charaSet F 1027001 1 冲田总司]
+[charaSet G 1044000 1 斋藤一]
+
+[charaDepth D 7]
+[charaDepth C 6]
+
+[scene 96901]
+
+[pictureFrame cut063_cinema]
+
+[fadein black 1.5]
+[wait fade]
+
+[effect bit_talk_14]
+[se ad170]
+[wt 0.1]
+
+[charaScale B 1.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+[se ad671]
+[charaMoveScale B 1.0 0.3]
+[wt 0.8]
+
+[bgm BGM_EVENT_49 0.1]
+
+＠B：稍微有些卑屈的埴轮
+HANYOBUAAAAAAA！？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+
+＠大蛇
+真是个令人恼火的家伙。
+[k]
+
+＠大蛇
+完全不知道在说些什么。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 0,-50]
+[wt 0.4]
+
+＠像是老好人的埴轮
+HANYOHANYO……HANYOBUHANYO。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 -256,-50]
+[charaFace C 1]
+[charaFadein C 0.1 256,-50]
+
+＠大蛇
+这边的意思倒是隐约能明白。
+[k]
+
+
+＠大蛇
+听好了，都是因为你太宠他了，[r]这家伙才会那么得意忘形哦。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMove D -156,-50 0.5]
+[wt 0.5]
+[charaTalk on]
+
+
+＠大蛇
+这点暂且不论，你不准离开吾。[r]因为抱起来非常舒服。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠B：稍微有些卑屈的埴轮
+HA[messageShake 0.03 5 5 0.5]NYOBUAAAAAAA！！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[bgmStop BGM_EVENT_49 0.5]
+[wait wipe]
+
+[pictureFrame]
+
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠玛修
+前辈，稍微有些卑屈的埴轮正在被大蛇殴打。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+然而像是老好人的埴轮却莫名备受关爱。
+[k]
+
+？1：这对话似曾相识……
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠冲田总司
+的确像是常会在食堂见到的场景……
+[k]
+
+？2：啊～，是惯例的那个吧。
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠冲田总司
+的确，也就是说那个有些卑屈的[r]就是他吧。
+[k]
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+
+＠大蛇
+[line 3]你们这些家伙是什么人。以为吾没发现吗。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠冲田总司
+不，不用说你肯定是阿龙小姐吧？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠大蛇
+这莫名令人怀念令人悲伤的称呼是什么。
+[k]
+
+
+＠大蛇
+吾乃非归顺之大蛇。待回过神来时已在此处，[r]不知为何这片土地令吾住得非常惬意。
+[k]
+
+
+＠大蛇
+美中不足的是记忆有些模糊，[r]但一事归一事，这黑色的雾莫名令人习惯。
+[k]
+
+
+＠大蛇
+总觉得如果草率登山，空中或许会降下长矛，[r]因此决定久居于此地。
+[k]
+
+＠大蛇
+如果想保住小命，就立刻离开这里。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+怎么？　难道是你们的熟人？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+
+＠冲田总司
+嗯，恐怕和我处于相同的状态……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+
+＠玛修
+是由于凶暗丧失了记忆吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠冲田总司
+唔，我觉得只是阿龙小姐恢复了野生习性而已……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+＠斋藤一
+总之既然与冲田亲一样的话，[r]首先应该从毁掉埴轮开始着手吧。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 256,0]
+[charaFace C 1]
+[charaFadein C 0.1 -256,0]
+
+＠有些卑屈的埴轮
+HANYOBU，HANYOHANYOHANYO（嘲笑的感觉）。
+[k]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+
+＠像是老好人的埴轮
+HANYOHANYO，HANYOBUNYOBU（尴尬一笑的感觉）。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠冲田总司
+有些卑屈的那个令人有些火大所以先干掉它吧！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠有些卑屈的埴轮
+HA[messageShake 0.03 6 6 0.3]HANYOBUAAAA！？
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

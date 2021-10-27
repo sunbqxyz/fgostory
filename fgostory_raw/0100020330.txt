@@ -1,0 +1,41 @@
+＄01-00-02-03-3-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[scene 20401 0]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98003003 1 罗曼医生]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 1005001 1 尼禄]
+[charaSet E 98016000 1 罗马士兵]
+[charaFace A 0]
+[charaFadein A 0 1]
+[fadein black 1]
+[wait fade]
+＠玛修
+太阳已落山了。[r]但敌方的攻势依然没有减弱的迹象。
+[k]
+
+[se ad13]
+[wait se ad13]
+[charaFadeout A 0]
+[charaTalk B]
+[charaFadein A 0.1 2]
+[communicationChara 98003003 0 5 0 0]
+＠罗曼医生
+问题在于敌方人数过多了啊。[r]特别要注意[%1]体力与魔力的消耗情况！
+[k]
+
+[charaFace A 7]
+＠玛修
+是，医生。[r]御主，请尽量不要勉强。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[communicationCharaClear]
+[wait communicationChara]
+[wait fade]
+[soundStopAll]
+[end]

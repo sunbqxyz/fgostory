@@ -1,0 +1,958 @@
+
+＄94-04-91-03-2-1
+
+[soundStopAll]
+
+[charaSet A 9010000 1 卑弥呼]
+[charaSet B 6033000 1 冈田以藏]
+[charaSet C 1098138000 1 坂本龙马]
+[charaSet D 1098139000 1 阿龙小姐]
+
+[branchQuestNotClear lblNotClear 3000320]
+
+[branch lblConf]
+[label lblNotClear]
+[charaSet E 8001000 1 玛修]
+
+[branch lblNotClear_out]
+[label lblConf]
+[charaSet E 8001410 1 玛修]
+
+[label lblNotClear_out]
+
+[charaSet F 1027001 1 冲田总司]
+[charaSet G 1044000 1 斋藤一]
+[charaSet H 1098195000 1 山南敬助]
+[charaSet I 1098194500 1 无名之龟]
+[charaSet J 1001000 1 特效用]
+[charaSet K 1001000 1 特效用]
+
+[charaSet L 1098196100 1 有些卑屈的埴轮]
+[charaSet M 1098196100 1 像是老好人的埴轮]
+
+[charaDepth C 5]
+[charaDepth D 4]
+
+[scene 96901]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk off]
+[charaFace L 0]
+[charaFadein L 0.1 256,0]
+[charaFace M 1]
+[charaFadein M 0.1 -256,0]
+
+[wt 1.0]
+
+[fadeout white 0.3]
+[se ade456]
+[wait fade]
+
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+
+[charaFace B 4]
+[charaFadein B 0.1 256,0]
+[charaEffect B bit_talk_shadow_aura01]
+[charaFace C 4]
+[charaFadein C 0.1 -256,0]
+[charaEffect C bit_talk_shadow_aura01]
+
+[wt 0.5]
+
+[fadein white 0.5]
+[se ad783]
+[seStop ad783 0.6]
+[seStop ade456 0.5]
+[wait fade]
+
+[wt 1.0]
+
+[charaPut J 256,-25]
+[charaEffect J bit_talk_atomization]
+[fowardEffect bit_talk_atomization -256,0]
+[wt 0.5]
+[cueSe Battle ba6]
+[scene 96900 1.5]
+[charaEffectStop B bit_talk_shadow_aura01]
+[charaEffectStop C bit_talk_shadow_aura01]
+[wt 4.0]
+
+[fowardEffectDestroy]
+[charaEffectDestroy C bit_talk_atomization]
+[charaEffectDestroy B bit_talk_shadow_aura01]
+[charaEffectDestroy C bit_talk_shadow_aura01]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 11]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠坂本龙马
+好痛好痛好痛……哎呀，真是太惨了。
+[k]
+
+[charaFace B 10]
+
+＠冈田以藏
+究……究竟发生了什么……！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+
+＠玛修
+坂本先生和以藏先生，果然是两位啊。[r]太好了，这次倒是成功破坏了。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠卑弥呼
+哎呀～，稍微有些遗憾。枉费我攒足了力气。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠无名之龟
+认为万事都能靠蛮力解决也不太好。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠坂本龙马
+哟，各位。看来让各位费了不少工夫吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠冈田以藏
+可恶！　你们刚才动真格了吧！？[r]我差点以为要被干掉了！！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠冲田总司
+怎么，还活着啊。[r]田冈其实就算死掉也无妨哦。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 1]
+
+
+＠斋藤一
+冲田亲，你说以藏……也就是说，[r]这个人就是那位人斩以藏先生？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+
+＠冈田以藏
+你谁啊？　用那种奇怪的剑招。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 16]
+[charaFadein H 0.1 1]
+
+
+＠山南敬助
+看你能灵巧地化解斋藤的剑，[r]我正奇怪你是谁呢，竟然是土佐的冈田以藏啊。
+[k]
+
+＠山南敬助
+既然如此，那就能理解了。
+[k]
+
+＠山南敬助
+那所谓的坂本，就是那位坂本龙马阁下吧？
+[k]
+
+[charaFace H 10]
+
+
+＠山南敬助
+啊，我是山南敬助，这位是斋藤一。[r]只要说我们是新选组的人，你们应该就知道了吧。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠坂本龙马
+我们那个时代的人无人不知新选组。
+[k]
+
+＠坂本龙马
+哎呀，不过话说回来，[r]竟然能有幸见到新选组的山南敬助和斋藤一。
+[k]
+
+＠坂本龙马
+看来你们那儿也发生了不少事呢。
+[k]
+
+＠坂本龙马
+总之我们先找个安静的地方细谈吧……
+[k]
+
+[charaFace C 10]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+＠坂本龙马
+咦？　阿龙小姐？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠阿龙小姐
+…………
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠玛修
+阿龙小姐，您的脸色似乎不太好……
+[k]
+
+
+＠玛修
+难道是由于那个黑雾吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_11 0.1]
+
+
+＠阿龙小姐
+怎么会这样……[r]只是不小心吸入了一点奇怪的雾罢了，
+[k]
+
+＠阿龙小姐
+哪怕时间短暂，[r]但我竟然会忘了龙马……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠坂本龙马
+什么嘛，不用在意这种事啦……
+[k]
+
+[charaFace C 7]
+
+＠坂本龙马
+而且作为埴轮的时候你对我也很好吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+
+＠冈田以藏
+没错，阿龙！　我想起来了！
+[k]
+
+＠冈田以藏
+你竟然敢一味痛殴我一个！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠阿龙小姐
+吵死了，给我闭嘴。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaScale B 1.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+[charaEffect B bit_talk_13]
+[se bac10]
+[charaShake B 0.05 5 5 0.5]
+[wt 0.1]
+
+[se ad671]
+[charaMoveScale B 1.0 0.2]
+[wt 0.2]
+[charaFadeout B 0.4]
+[wt 0.6]
+
+
+＠冈田以藏
+什么[line 8]！？！？？
+[k]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠阿龙小姐
+这样的阿龙小姐已经无颜面对龙马了……
+[k]
+
+＠阿龙小姐
+事已至此，只能前往远方，[r]吃点青蛙赌气睡觉了。
+[k]
+
+＠阿龙小姐
+再见了，龙马……[r]希望你能偶尔回忆起阿龙小姐。
+[k]
+
+[messageOff]
+
+[charaMove D -100,50 0.3]
+[charaFadeout D 0.4]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠坂本龙马
+啊！　等一下，阿龙小姐！
+[k]
+
+[bgmStop BGM_EVENT_7 1.0]
+[charaFace C 10]
+
+＠坂本龙马
+以藏先生！　借一步说话！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠冈田以藏
+干嘛！？
+[k]
+
+[messageOff]
+
+[charaTalk depthOff]
+
+[charaMove B -50,0 0.5]
+[se ad452]
+[charaFadeout B 0.4]
+[wt 0.5]
+[seStop ad452 0.5]
+
+[charaTalk C]
+[charaFace B 13]
+[charaFadein B 0.1 100,0]
+[charaFace C 10]
+[charaFadein C 0.1 -100,0]
+
+＠坂本龙马
+…………！（嘀嘀咕咕。）
+[k]
+
+[charaFace B 12]
+
+＠冈田以藏
+哈？　怎么回事！？
+[k]
+
+[charaFace C 7]
+
+＠坂本龙马
+总之拜托你了哦。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠坂本龙马
+各位，抱歉，等我把阿龙小姐带回来以后，[r]我们再坐下来细谈吧。
+[k]
+
+＠坂本龙马
+就这样，回头见。
+[k]
+
+[messageOff]
+[charaMove C -80,0 0.3]
+[charaFadeout C 0.4]
+[se ad59]
+[seStop ad59 1.2]
+[wt 1.0]
+
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠冈田以藏
+喂，给我站住，龙马[line 6]！！！！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+
+[charaSet E 98001000 1 玛修]
+
+[scene 96600]
+[wt 0.8]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠冈田以藏
+……所以等我忽然回过神来的时候，[r]我和龙马都被关进了埴轮。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+
+＠冲田总司
+看来和我那时一样呢。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+
+＠玛修
+是的，而且同样从埴轮状态解放出来后，[r]黑雾都消失了。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+
+＠山南敬助
+唔，不过究竟是谁出于什么样的目的[r]才会做这种事呢。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+唔，比方说与邪马台国有仇的家伙？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 1]
+
+＠无名之龟
+毕竟姐姐大人那代发生了不少纠纷。[r]可以想到的可能性实在是太多了。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠冈田以藏
+…………
+[k]
+
+
+＠冈田以藏
+喂，话说你们俩，[r]是新选组的山南和斋藤吧？
+[k]
+
+＠冈田以藏
+为什么会和他们在一起。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+
+＠玛修
+以藏先生，这两位正在协助前辈。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠冈田以藏
+哦，协助啊……
+[k]
+
+[charaFace B 7]
+
+[bgmStop BGM_EVENT_2 2.5]
+
+
+＠冈田以藏
+不过说到山南，[r]我记得应该是新选组的『叛徒』吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠冲田总司
+…………！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 14]
+[charaFadein H 0.1 1]
+
+
+＠山南敬助
+……这下头疼了。[r]您要这么说，我也无言以对。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 1]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠斋藤一
+不不，山南老师，[r]这家伙没资格这么批判你吧。
+[k]
+
+[charaFace G 13]
+
+
+＠斋藤一
+说起土佐勤王党的『叛徒』，[r]不就是那位有名的爱哭包冈田先生吗？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠冈田以藏
+你说什么……？
+[k]
+
+[charaFace B 2]
+
+＠冈田以藏
+你说谁是叛徒！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠斋藤一
+哎呀，惹你不高兴了？
+[k]
+
+[charaFace G 10]
+
+＠斋藤一
+哎，你不就是那个稍微拷问一下就滔滔不绝[r]出卖了所有同伴的冈田以藏嘛。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+[se ad51]
+[wt 0.5]
+
+
+＠冈田以藏
+……喂，说你呢，跟我出去决斗。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.1 1]
+
+
+＠斋藤一
+哎，你竟然还能这样挑衅呀？
+[k]
+
+[charaFace G 5]
+
+＠斋藤一
+冈田以藏。不，无宿者铁藏先生。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 14]
+[charaFadein H 0.1 1]
+
+＠山南敬助
+别这样，斋藤。
+[k]
+
+
+＠山南敬助
+容我为我们的失礼向冈田先生道歉，[r]能不能请您此收手呢。
+[k]
+
+？1：不要吵架啦。
+？2：现在可不是做这些的时候。
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+
+＠冈田以藏
+闭嘴！　我不能原谅看不起我的人！
+[k]
+
+＠冈田以藏
+我不管什么新选组，觉悟吧！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠斋藤一
+哦，有意思。有本事就……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+[bgmStop BGM_EVENT_5 0.1]
+
+＠卑弥呼
+嘿，吵架到此结束！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[effect bit_talk_14 -256,0]
+[cueSe Battle bac150]
+[wt 0.1]
+[effect bit_talk_14 256,-50]
+[wt 0.1]
+[cueSe Battle bac149]
+[wt 0.3]
+
+[charaTalk off]
+[se ad671]
+[wt 0.2]
+[charaScale B 1.1]
+[charaScale G 1.1]
+
+[charaFace B 11]
+[charaFadein B 0.2 256,-15]
+[charaFace G 6]
+[charaFadein G 0.2 -256,-15]
+
+[charaMoveScale B 1.0 0.3]
+[charaMoveScale G 1.0 0.3]
+[wt 0.6]
+
+[charaTalk on]
+[charaTalk B]
+
+＠冈田以藏
+什么[line 4]！！？！？
+[k]
+
+[charaFace G 2]
+
+＠斋藤一
+好痛[line 9]！？
+[k]
+
+[charaFace B 12]
+
+＠冈田以藏
+这……这是什么蛮力啊……[r]和阿龙不分伯仲，甚至在她之上……（扑街。）
+[k]
+
+[messageOff]
+[charaShake B 0.05 2 1 0.5]
+[charaMove B 256,-25 0.3]
+[charaFadeout B 0.4]
+[wt 0.4]
+[se ad144]
+[wt 0.5]
+
+[charaFace G 7]
+
+＠斋藤一
+这可不像我应该扮演的角色啊……（扑街。）
+[k]
+
+[messageOff]
+[charaShake G 0.05 2 1 0.5]
+[charaMove G -256,-25 0.3]
+[charaFadeout G 0.4]
+[wt 0.4]
+[se ad144]
+
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+
+＠卑弥呼
+真是的，吵架只会导致肚子饿，
+[k]
+
+[charaFace A 2]
+
+＠卑弥呼
+你们给我在这里老老实实反省一会儿！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠玛修
+两……两位似乎都晕过去了，不要紧吧？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠无名之龟
+呵呵呵，奇妙的是，只要被姐姐大人殴打，[r]就会失去争斗的冲动，请放心吧。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+
+＠山南敬助
+真是的，问题总算是摆平了吧。
+[k]
+
+＠山南敬助
+不管怎么说，我们又完成了一个目标，[r]接下来也请多关照了哦。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠玛修
+啊，好的。那我们继续努力吧，前辈！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[bgmStop BGM_EVENT_2 0.5]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[pictureFrame cut063_cinema]
+
+[wt 0.3]
+
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 256,-50]
+[charaFace H 14]
+[charaFadein H 0.1 -256,-50]
+
+＠冲田总司
+…………
+[k]
+
+＠山南敬助
+…………
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

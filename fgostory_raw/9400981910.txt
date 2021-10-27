@@ -1,0 +1,135 @@
+
+
+＄94-99-98-19-1-0
+
+
+[charaSet A 6015002 1 卫宫]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 6015002 1 卫宫2]
+
+[soundStopAll]
+
+[scene 10420]
+
+[fadein black 2]
+[wait fade]
+
+
+
+
+
+[se ad8]
+[wait se ad8]
+
+
+[se ad95]
+[seVolume ad95 0 0.2]
+[wt 1.0]
+[seVolume ad95 1.0 0.6]
+[wt 1.0]
+[seVolume ad95 1.0 0.9]
+[wt 1.0]
+[seStop ad95]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+[bgm BGM_EVENT_11 0.3]
+
+＠卫宫
+………………
+[k]
+
+[charaTalk on]
+[charaTalk C]
+
+＠
+他[charaTalk C]在沉睡中的你的枕边放置了某件东西。
+[k]
+
+＠
+沉[charaTalk C]重、坚硬、冰冷的东西。[r]能夺取人生命的武器。
+[k]
+
+[charaTalk off]
+
+＠卫宫
+这是白天的回礼。[r]话虽如此，对你来说应该是无用之物吧。
+[k]
+
+[charaTalk off]
+
+＠卫宫
+我想不到其他东西了。[r]为了不用到这个，你就好好努力反抗吧。
+[k]
+
+＠卫宫
+[line 6]。
+[k]
+
+
+[charaTalk off]
+[charaDepth A 1]
+[charaDepth D 0]
+
+[messageOff]
+[charaFace A 3]
+[wt 1.0]
+[charaFace A 4]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠卫宫
+为守护人理，为拯救世界而战。[r]你就像是……
+[k]
+
+[charaChange A 6015002 0 fade 1.0]
+[wt 1.0]
+
+＠卫宫
+不。你一定和我不一样。
+[k]
+
+
+
+
+[messageOff]
+
+[se ad95]
+[charaFadeout A 0.4]
+[charaFadeout D 0.4]
+
+[wt 0.7]
+[seStop ad95 1.9]
+[wt 2.0]
+
+
+
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_11 2.0]
+[wait fade]
+
+[scene 10000]
+[fadein black 1]
+[wait fade]
+
+[se bas2]
+[equipSet B 9805830 1]
+[wait equipSet B]
+[charaFace B 0]
+[charaFadein B 0.5 0,-70]
+[wt 2.0]
+[charaFadeout B 0.4]
+[wt 1.0]
+
+
+
+[soundStopAll]
+[end]

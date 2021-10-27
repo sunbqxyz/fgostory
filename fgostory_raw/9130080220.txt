@@ -1,0 +1,1433 @@
+
+＄91-30-08-02-2-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 1009001 1 莫德雷德]
+[charaSet B 3008001 1 恩奇都]
+[charaSet C 5009001 1 达·芬奇]
+[charaSet D 98001000 1 玛修]
+[charaSet E 7004001 1 弗兰]
+[charaSet F 98006000 1 魔兽1]
+[charaSet G 98006000 1 魔兽2]
+[charaSet H 98006000 1 魔兽3]
+
+[charaSet I 98115000 1 特效用]
+[charaSet J 98115000 1 特效用]
+
+[scene 20900]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.2 -50,0]
+[se ad671]
+[charaMove A 1 0.2]
+[wt 0.2]
+[seStop ad671 0.3]
+[wt 0.2]
+
+＠莫德雷德
+……
+[k]
+
+[messageOff]
+[se ad51]
+[wt 0.8]
+
+[charaFace A 2]
+[se ad632]
+[charaEffect A bit_talk_charge_red]
+[wt 2.0]
+[seStop ad632 0.2]
+[wt 0.2]
+
+[se ad471]
+[fowardEffect bit_talk_h_slash01]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+[charaEffectStop A bit_talk_charge_red]
+
+[wt 0.6]
+[seStop ad471 0.5]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠恩奇都
+[line 4]！
+[k]
+
+[messageOff]
+[se ad7]
+[charaMove B -100,20 0.1]
+[wt 0.1]
+[charaMove B -156,0 0.1]
+
+[se ad32]
+[charaPut I 356,80]
+[charaEffect I bit_talk_kushizashi01]
+[wt 0.1]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[fowardEffect bit_talk_14 456,0]
+[charaEffectStop I bit_talk_kushizashi01]
+
+[se ad7]
+[charaMove B -300,20 0.1]
+[wt 0.1]
+[charaMove B -356,0 0.1]
+
+[se ad32]
+[charaPut J 56,80]
+[charaEffect J bit_talk_kushizashi01]
+[wt 0.1]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[fowardEffect bit_talk_14 156,0]
+[charaEffectStop I bit_talk_kushizashi01]
+[wt 0.5]
+[flashin once 0.1 0.5 FFFFFFAF FFFFFF00]
+[wt 0.8]
+
+[se ad73]
+[se ad133]
+[seStop ad133 1.0]
+[charaMove B -200,0 0.3]
+[wt 0.1]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[fowardEffect bit_talk_kengekiall01]
+[se ad33]
+[wt 1.4]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 -100,0]
+[charaShake A 0.05 2 1 0.6]
+[charaMove A 200,0 0.4]
+[wt 0.1]
+[se ad82]
+[se ad32]
+[fowardEffect bit_talk_14 -50,0]
+[wt 0.2]
+[se ad82]
+[fowardEffect bit_talk_14 0,-0]
+[wt 0.1]
+[se ad82]
+[fowardEffect bit_talk_14 50,0]
+[wt 0.1]
+[seStop ad671 0.5]
+[wt 0.5]
+
+[charaFace A 2]
+[wt 0.3]
+[se ad54]
+[charaMove A 50,0 0.2]
+[wt 0.1]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_3 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 10200]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_72 0.1]
+
+？1：为……为什么那两个人会！？
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+由于教授做了些奇怪的事，[r]我才拜托手头有空的人去模拟装置测试……
+[k]
+
+＠达·芬奇
+没想到居然会发生这种形式的人为故障。[r]我应该怀疑这也是教授的阴谋诡计之一吗？
+[k]
+
+？2：谁能把两位王给叫来！　乌鲁克和圆桌的！
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+我劝你还是别这样做。如果将他俩叫来，[r]问题可能会比现在复杂5倍左右。
+[k]
+
+＠达·芬奇
+万一不小心导致混乱进一步扩大，在交接给[r]新体制之前，迦勒底或许就会被夷为平地。
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+
+＠玛修
+究……究竟发生了什么！？[r]这……已经超过了模拟训练的范畴了吧！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+嗯。[r]所以也无法轻易关闭模拟装置。
+[k]
+
+＠达·芬奇
+以他们当前的势头，即便回到这里，[r]他们应该还会继续战斗吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠玛修
+确实……
+[k]
+
+＠玛修
+说实话……[r]我还是第一次看到那样的莫德雷德……
+[k]
+
+？1：也和[#圆桌领域:卡美洛]特异点时不同。
+
+？2：一句脏话都不骂反而让人感到可怕。
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+说得对。平时的莫德雷德具备的性质，[r]更像是用强烈的敌意将愤怒之情一并遏制住的感觉。
+[k]
+
+＠达·芬奇
+但这次没有受到[#祝福:Gift]或诅咒的影响，[r]应该只是触发了足以抹杀感情的愤怒吧。
+[k]
+
+＠达·芬奇
+她或许已经忘记自己现在还在模拟装置中了吧。[r]看上去像是想认真打倒对方。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠玛修
+也就是说恩奇都先生将莫德雷德惹怒到这种程度！？
+[k]
+
+＠玛修
+到底发生了什么……！？
+[k]
+
+？1：理由一会儿再说，现在先得阻止他们俩！
+？2：……感觉无法轻易介入其中呢……
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+不。[%1]或许还是先知晓一下理由为好。
+[k]
+
+＠达·芬奇
+我可以给你们看记录在模拟装置中的影像。
+[k]
+
+[charaFace C 5]
+
+＠达·芬奇
+对了，影像记录这件事千万要对莫德雷德保密。
+[k]
+
+＠达·芬奇
+为了仲裁他们俩，[r]不得不装作你们是恰好在这里听到的。
+[k]
+
+＠达·芬奇
+严禁再次提及对话内容哦。[r]这个问题确实已经敏感到这个地步了。
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠玛修
+居然……居然到……这种程度了吗。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+与其说是为了劝架……倒不如说如果不知道愤怒的原因，[r]很难保证你们在对话中不会提及相关内容。
+[k]
+
+＠达·芬奇
+有些人甚至还会刻意旧事重提，[r]而对你的信任，我才会告诉你。
+[k]
+
+[messageOff]
+[se ad172]
+[wt 1.5]
+[seStop ad172]
+
+[charaFace C 0]
+
+＠达·芬奇
+我要开始播放影像了……[r]看，差不多就在这个时间段。
+[k]
+
+？1：这是……！？
+
+？！
+
+[messageOff]
+[se ad1]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_72 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 20900]
+
+[effect bit_talk_security]
+[wipeFilter cinema 0.5 0]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠莫德雷德
+不过好吧。我正打算休息呢。[r]有话就说来听听。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠恩奇都
+谢谢！[r]十分感谢。
+[k]
+
+＠恩奇都
+我只是想了解一下你的『救赎』。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠莫德雷德
+啊？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠恩奇都
+我听说你是[#按照名为摩根的女性书写的用来][r]『[#讨伐亚瑟王]』[#的设计书创造而出的存在]。
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+
+＠莫德雷德
+……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠恩奇都
+最终，你按照母亲摩根所设计的，[r]讨伐了亚瑟王，终结了其统治。
+[k]
+
+＠恩奇都
+我知道亚瑟王的统治。
+[k]
+
+＠恩奇都
+根据对其全盛期的功绩分析，[r]可以推测出那是无比困难，几乎不可能的难题。
+[k]
+
+＠恩奇都
+但正因为如此。
+[k]
+
+＠恩奇都
+我想询问的，正是没有回避这种困难，[r]完全依照创造者的期待，完美履行了使命的你。
+[k]
+
+＠恩奇都
+[#为此诞生的你]，[r][#是否因此得到了救赎]？
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+
+＠莫德雷德
+…………
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠恩奇都
+在毁灭了父亲亚瑟王的国家的瞬间，[r]你的感性与理性是否发生了什么变化？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+
+＠莫德雷德
+………………………………………………
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠恩奇都
+假如你在完成了愿望之后，[r]还能够幸存下去的话……
+[k]
+
+＠恩奇都
+不，也就是说成为了从者的现在……
+[k]
+
+＠恩奇都
+[#在完成了出生理由的你的内心]，[r][#究竟还留有什么意义]……我想问的就是这些。
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_5 1.0]
+[wait fade]
+
+[effectStop bit_talk_security]
+[wipeOff]
+
+[charaFadeout B 0.1]
+
+[scene 10200]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠玛修
+……
+[k]
+
+？1：啥……啥啥啥啥啥啥啥啥……
+？2：我就知道他迟早会捅篓子……
+
+？！
+
+？1：那个绿色美人到底在做什么啦！？
+
+？2：那就是……乌鲁克的疯斧子……
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+我确实听乌鲁克的相关人士说过，[r]『恩奇都有时会表现出甚至能吓到英雄王的一面』。
+[k]
+
+＠达·芬奇
+不过他那种完全不考虑与对象距离感的方面，[r]和你倒是有点相似呢，是优点，也是缺点……
+[k]
+
+＠达·芬奇
+而这次，则表现在缺点方面呢。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠玛修
+现在不是冷静分析的时候吧！？[r]如果不赶快阻止，一定会演变成无可挽回的情况……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+没错。再这样下去，就算离开了模拟装置，[r]也必然会为今后留下祸根[line 2]
+[k]
+
+＠达·芬奇
+正如刚才我所说的，哪怕他们回到这里，[r]也可能继续这场战斗。
+[k]
+
+[charaFace C 5]
+
+＠达·芬奇
+综上所述，必须趁他们还在模拟装置内时，[r]想办法说服他们，让他们偃旗息鼓才行。
+[k]
+
+？1：我现在就进去，直接阻止他们。
+
+[charaFace C 0]
+
+＠达·芬奇
+这样真的好吗？[r]你完全可以从外部通过通讯向他们搭话……
+[k]
+
+＠达·芬奇
+不过确实，对你来说，[r]直接里面说服的成功率应该更高吧。
+[k]
+
+？2：麻烦准备一些起源的胎毛用作报酬。
+
+[charaFace C 0]
+
+＠达·芬奇
+我以前应该也说过，有的话我都想要呢。[r]我们直到最后都辛苦忙于筹措资源啦。
+[k]
+
+＠达·芬奇
+不过既然你还有心情开玩笑，说明应该不要紧吧。[r]看上去也不像是掉以轻心的样子。[twt 0.6][charaFace C 4]……应该没有吧？
+[k]
+
+？！
+
+[charaFace C 0]
+
+＠达·芬奇
+那就拜托啦。尽管发生了不少情况，[r]但我希望大家最后能毫无遗憾地离开迦勒底。
+[k]
+
+＠达·芬奇
+虽说是模拟装置，但刚完成调整，[r]务必要注意精神的安定哦。
+[k]
+
+[messageOff]
+[se ad15]
+[wt 0.4]
+[se ad15]
+[wt 0.4]
+[se ade69]
+[wt 0.2]
+[se ad1]
+
+[wipeout moza 2.0 1]
+[bgm BGM_EVENT_48 2.0 0.5]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[scene 20900]
+[wt 2.0]
+
+[wipein moza 2.0 1]
+[bgm BGM_EVENT_48 2.0 1.0]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠弗兰
+！[r]唔，哇，唔！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠玛修
+！[r]弗兰小姐也在这里啊！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠弗兰
+唔唔，唔。
+[k]
+
+？1：我们一起去阻止他们吧。
+
+？！
+
+[messageOff]
+[se ad59]
+[wt 0.5]
+
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_48 1.0]
+[seStop ad59 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.5]
+[se ad474]
+[charaEffect B bit_talk_36]
+[wt 2.0]
+
+[fadeout white 1.0]
+[seStop ad474 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaEffectDestroy B bit_talk_36]
+[scene 10000]
+[wt 0.5]
+
+[fadein white 1.0]
+[se adm51]
+[seVolume adm51 0 0.7]
+[wait fade]
+
+[se ad477]
+[seVolume ad477 0 0.1]
+[seVolume ad477 0.5 1.0]
+[fowardEffect bit_talk_rarrow01be]
+[wt 1.0]
+[seStop ad477 1.0]
+[wt 1.0]
+
+[fadeout black 0.5]
+[wait fade]
+
+[scene 20900]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[se ad477]
+[seVolume ad477 0 0.1]
+[seVolume ad477 0.5 0.7]
+[fowardEffect bit_talk_rarrow01be 220,-650]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 -100,0]
+[wt 0.5]
+
+[seStop ad477 1.0]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[charaMove A 256,0 0.2]
+[wt 0.2]
+[charaMove A 356,0 0.4]
+[wt 0.4]
+[seStop ad671]
+
+[shake 0.02 5 5 0.7]
+[fowardEffect bit_talk_impactlanding 256,0]
+[se ad226]
+[wt 0.3]
+[seStop ad226 1.0]
+
+[charaFace A 2]
+[se ad467]
+[seStop ad467 1.0]
+[fowardEffect bit_talk_14 356,0]
+[wt 0.5]
+
+[wt 1.0]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_EVENT_3 0.5 0.5]
+[wait wipe]
+
+[fowardEffectDestroy bit_talk_impactlanding]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_3 0.5 1.0]
+[wait wipe]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠玛修
+找到了！
+[k]
+
+＠玛修
+但是，在如此激烈的战斗中，[r]就算前辈搭话，他们也未必会注意到吧……
+[k]
+
+？1：安全第一。从远处发出巨大的声音吸引他们的注意力。
+
+＠玛修
+说得对，万一不小心介入其中，被他们击中，[r]就算是模拟装置，也会给精神造成巨大的影响。
+[k]
+
+[charaFace D 12]
+
+＠玛修
+考虑到战斗的紧张状态，若想让他们听到，[r]音量就必须大到足以让人认为是一种攻击才行……
+[k]
+
+？2：放手上吧。只要把整座城弄塌，他俩应该也会停手了吧！
+
+[charaFace D 6]
+
+＠玛修
+前辈！？
+[k]
+
+＠玛修
+即便在模拟装置里，[r]这攻击性也太强了吧……！？
+[k]
+
+[charaFace D 8]
+
+＠玛修
+我总觉得一旦习惯了这种手段，[r]迟早会连恰赫季斯城也一并破坏……
+[k]
+
+？！
+
+？1：没办法。
+？2：那可以麻烦你用一发宝具吗……？
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠弗兰
+唔唔，啊！
+[k]
+
+[messageOff]
+[se ad61]
+[charaEffect E bit_talk_lightning_02g]
+[wt 1.5]
+
+[charaFace E 2]
+
+＠弗兰
+[f large]『[#磔刑之雷树:Blasted Tree]』！！
+[k]
+
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+[charaEffectStop E bit_talk_lightning_02g]
+[seStop ad61 0.3]
+
+[fowardEffect bit_talk_lightning_03g]
+[se ad63]
+[wt 0.2]
+[fowardEffect bit_talk_lightning_05g]
+[shake 0.02 3 3 1.0]
+[se ad65]
+[wt 0.5]
+[flashin once 0.1 0.5 FFFF80EF 00000000]
+[wt 1.0]
+
+[charaTalk off]
+[charaFace B 5]
+[charaFace A 5]
+[charaFadein B 0.1 -50,0]
+[charaFadein A 0.1 50,0]
+
+[flashin once 0.1 0.2 FFFF80EF 00000000]
+[se ad7]
+[charaMove B 0 0.2]
+[charaMove A 2 0.2]
+[wt 0.4]
+
+[bgmStop BGM_EVENT_3 0.5]
+
+＠恩奇都＆莫德雷德
+　　　　　　　　　　　　　　 ！！　　　　　　　　　　 
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠莫德雷德
+弗兰！？[r]我不是让你出去了吗……
+[k]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠莫德雷德
+……[r]……御主！？[charaFace A 2]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠恩奇都
+哎呀，怎么了，御主。[r]这里很危险哦？
+[k]
+
+？1：总之，双方先放下武器！
+？2：希望你们看在我的面子上，先停止这场纷争！
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠莫德雷德
+……这件事和御主没关系吧。[r]用不着你特地挺身来处理啦。
+[k]
+
+？1：恩奇都多半不是在故意挑衅。
+？2：而且这也不是什么杀了他就能让你出气的事吧？
+
+？！
+
+[charaFace A 4]
+
+＠莫德雷德
+……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠弗兰
+唔唔……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠莫德雷德
+唉，知道啦知道啦。[r]因为你看上去不惜用宝具真的轰也要阻止我们啦。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.4]
+
+？1：恩奇都先说明情况。
+
+？2：恩奇都先道个歉。
+
+？！
+
+[charaFace B 4]
+
+＠恩奇都
+……说得对。
+[k]
+
+＠恩奇都
+尽管我还没有完全掌握情况，[r]但我已经明白了是由于我的发言才导致了你的震怒。
+[k]
+
+＠恩奇都
+希望你相信我，我说的那些话，并不是因为轻视你。[r]在此基础上，我对自己让你产生的误解表示道歉。对不起。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠莫德雷德
+……
+[k]
+
+＠莫德雷德
+…………
+[k]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+＠莫德雷德
+……………………[line 8]
+[k]
+
+？1：莫德雷德……
+
+？！
+
+[charaFace A 4]
+
+＠莫德雷德
+嘁……我知道了啦。
+[k]
+
+[charaFace A 0]
+
+＠莫德雷德
+不要用那种眼神看我啦，御主。[bgm BGM_EVENT_2 0.1][r]反正大闹了一场之后，我也痛快了一点。
+[k]
+
+＠莫德雷德
+而且这根生豆芽菜好歹也算是你的从者。
+[k]
+
+＠莫德雷德
+我确实怒火中烧，[r]但既然没有侮辱的意思，那也就不是带有轻蔑的提问。
+[k]
+
+＠莫德雷德
+既然御主愿意为这家伙说的话担保，[r]我也愿意相信这家伙没有这个意图。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠恩奇都
+是呢。如果有人能让我表现出侮辱的意图，[r]我可以肯定，那只有伊什塔尔。
+[k]
+
+＠恩奇都
+哪怕你是包含了世间一切邪恶于一体的存在，[r]我也会予以尊重。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠莫德雷德
+这家伙说的话怎么都那么让人不爽呢……[r]这家伙难道是笑面虎的凯吗。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+
+＠玛修
+太好了……[r]谢谢您，莫德雷德。
+[k]
+
+[charaFace D 0]
+
+＠玛修
+但是，为何恩奇都先生会应战呢？[r]假如是误解，只需贯彻防守或是找机会撤退就行了吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠恩奇都
+啊，这很简单。[r]因为我感受到对方的愤怒与敌意是货真价实的。
+[k]
+
+＠恩奇都
+对方究竟因何事愤怒，[r]向我投来的究竟是什么样的杀意。
+[k]
+
+＠恩奇都
+只有通过战斗亲身感受，[r]才能更为详尽地了解对手。
+[k]
+
+？1：不要凭这种理由和对方厮杀啦……
+
+＠恩奇都
+我不会向对方表露出杀意。[r]尽管我不否认从性能竞争中可以找到意义。
+[k]
+
+＠恩奇都
+有些事可以通过对锋利程度的比较获得理解……[r]这是在乌鲁克遇到的人们教会我的。
+[k]
+
+＠恩奇都
+与吉尔是智慧与力量，与姗汉特是慈爱，还有西杜丽也是，[r]她让我见识了信仰有多锋利。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+？2：恩奇都其实算是个战斗瘾君子吧。
+
+[charaFace B 0]
+
+＠恩奇都
+应该……还不至于到战斗瘾君子的程度吧……
+[k]
+
+[charaFace B 1]
+
+＠恩奇都
+虽说与吉尔战斗了三天三夜那时的亢奋感[r]直到成为英灵的现在仍烙印在回路里。
+[k]
+
+＠恩奇都
+但吉尔也挺愉快的哦。[r]或许今后能用模拟装置试着重现一下。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠玛修
+如此长时间使用模拟装置的许可估计很难被批准……
+[k]
+
+[charaFace D 0]
+
+？！
+
+＠玛修
+总之，先离开模拟装置吧。[r]得向达·芬奇亲报告才行。
+[k]
+
+[charaFace D 13]
+
+＠玛修
+帕尔小姐在食堂做了树莓思慕雪，[r]我们要不边喝边聊……
+[k]
+
+[messageOff]
+[se ad15]
+[wt 0.4]
+[se ad15]
+[wt 0.4]
+[se ade69]
+[wt 0.2]
+[se ad1]
+
+[wipeout mozaFade 2.0 1]
+[bgm BGM_EVENT_2 2.0 0.5]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[scene 10200]
+[wt 2.0]
+
+[wipein mozaFade 2.0 1]
+[bgm BGM_EVENT_2 2.0 1.0]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+哟，辛苦了。[r]我已经通过观测了解情况了。
+[k]
+
+＠达·芬奇
+快去食堂吧。[r]大家都在等着哦。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠玛修
+（大家……？）[twt 1.2][charaFace D 1][r]嗯！　那前辈，我们一起去食堂吧。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+[wt 1.0]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 1.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[wt 0.5]
+
+[se ad8]
+[wt 1.0]
+
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[scene 10313]
+[wt 0.5]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠玛修
+哎……？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+[se ad19]
+[wt 2.0]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠弗兰
+唔，啊！？
+[k]
+
+？1：为什么迦勒底内会有魔兽啊！？
+？2：快退后，玛修！
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠恩奇都
+这是……苏美尔的……？[r]不……和我知道的存在有些许……
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠莫德雷德
+……哈。[r]尽管我不知道这是啥，但来得正好。
+[k]
+
+＠莫德雷德
+我还有点没发泄够呢。[r]看我把你们统统打飞[line 2]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.5]
+
+[se bac167]
+[fowardEffect bit_talk_kushizashi01]
+[wt 0.1]
+[fowardEffect bit_talk_13]
+
+[charaShake F 0.05 3 3 0.5]
+[seStop bac167 0.5]
+[wt 0.5]
+
+[se ad20]
+[charaSpecialEffect F enemyErasure 1 1.0]
+[wait charaSpecialEffect F]
+[seStop ad20 0.5]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠莫德雷德
+喂！　不要抢我的猎物啦！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠恩奇都
+抱歉。[r]但我把守护御主设定为最优先事项。
+[k]
+
+＠恩奇都
+而且，向我发火未免为时过早吧。[r]你的猎物还多得很呢。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaDepth F 3]
+[charaDepth G 2]
+[charaDepth H 1]
+
+[charaFace F 0]
+[charaFace G 0]
+[charaFace H 0]
+
+[charaFadein F 0.4 1]
+[wt 0.2]
+[charaFadein H 0.4 -300,0]
+[wt 0.2]
+[charaFadein G 0.4 300,0]
+[se ad19]
+[wt 2.0]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠莫德雷德
+嘁。[r]你确实也是御主的从者。
+[k]
+
+[charaFace A 2]
+
+＠莫德雷德
+那我现在会和你一起战斗。[r]你可千万别拖我的后腿哦，Lancer！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

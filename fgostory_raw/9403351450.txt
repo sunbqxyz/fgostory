@@ -1,0 +1,339 @@
+
+＄94-03-35-14-5-0
+
+[charaSet A 2011001 1 尼古拉·特斯拉]
+[charaSet D 2011001 1 尼古拉·特斯拉_电击用]
+[charaSet B 5023001 1 海伦娜]
+[charaSet C 5025001 1 爱迪生]
+
+[soundStopAll]
+[bgm BGM_EVENT_7 0.1]
+
+[scene 10204]
+
+[charaPut D -136,-90]
+
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+
+
+
+
+[se ad62]
+[backEffect bit_talk_lightning_01t]
+[wt 1.0]
+[seStop ad62 0.3]
+[wt 0.3]
+
+[backEffectStop bit_talk_lightning_01t 0.1]
+
+＠尼古拉·特斯拉
+[tVoice ValVoice_201100 0_V010]
+哈哈哈哈哈哈哈哈哈哈！[r]快看，终于完成了。雷电降临此处！[wait tVoice]
+[k]
+
+＠尼古拉·特斯拉
+[tVoice ValVoice_201100 0_V020]
+交流式雷电曲奇！[r]天才就算烤个点心也如此天才，哈哈哈！[wait tVoice]
+[k]
+
+[charaFace A 2]
+＠尼古拉·特斯拉
+[tVoice ValVoice_201100 0_V030]
+那个狮子头肯定不会明白，[r]运用交流的烤炉才是正道啊！[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠尼古拉·特斯拉
+[tVoice ValVoice_201100 0_V040]
+来吧，御主啊！[r]不用客气，好好品尝这交流电流创造的睿智结晶吧！[wait tVoice]
+[k]
+
+？1：唔，嗯，谢谢。
+？2：你居然为我烤了曲奇啊，雷电博士。
+
+？！
+
+[charaFace A 1]
+
+＠尼古拉·特斯拉
+[tVoice ValVoice_201100 0_V050]
+我尼古拉·特斯拉，为了应对市井的习惯，[r]是不会吝于发挥自己天才能力的。[wait tVoice]
+[k]
+
+＠尼古拉·特斯拉
+[tVoice ValVoice_201100 0_V060]
+快看看这烤得香甜美味的曲奇吧。[r]你也可以称呼其为饼干……[wait tVoice]
+[k]
+
+
+[messageOff]
+[charaFace A 4]
+[wt 1.0]
+[charaFace A 3]
+
+＠尼古拉·特斯拉
+[tVoice ValVoice_201100 0_V070]
+这外观。[r]这芳香。[wait tVoice]
+[k]
+
+＠尼古拉·特斯拉
+[tVoice ValVoice_201100 0_V080]
+唔，达成了那个除了量产以外[r]一无是处的庸才无法成就的伟业了呢……[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 2]
+[charaFace A 3]
+[charaFadein A 0.4 0]
+＠海伦娜
+[tVoice ValVoice_201100 0_V090]
+嗯嗯，对。[r]虽说两边看上去没什么太大差别。[wait tVoice]
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+[bgmStop BGM_EVENT_7 0.5]
+
+[se ad7]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-128]
+[charaMove C 1 0.3]
+＠爱迪生
+[tVoice ValVoice_201100 0_V100]
+什么[line 3]！！[r]居然又搞抄袭了吗你这毫无自觉的无轨道天才！[wait tVoice]
+[k]
+
+[charaFadeout C 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk A]
+[charaFace C 5]
+[charaFadein C 0.1 2]
+[charaFace A 2]
+[charaFadein A 0.1 0]
+＠尼古拉·特斯拉
+[tVoice ValVoice_201100 0_V110]
+怎么可能嘛你居然好意思特地跑出来你这庸才！[r]要开战吗。又要开战了吗！[wait tVoice]
+[k]
+
+
+＠尼古拉·特斯拉
+[tVoice ValVoice_201100 0_V120]
+肯定是我的曲奇比较好吃！[wait tVoice]
+[k]
+
+[charaTalk C]
+[charaFace C 1]
+[charaMoveReturn C 250,0 0.2]
+[charaEffect A bit_talk_13]
+[wt 0.1]
+[se bac9]
+[charaFace A 4]
+[charaShake A 0.05 3 3 0.4]
+
+＠爱迪生
+[tVoice ValVoice_201100 0_V130]
+哈～哈哈哈哈！　连曲奇烤饼和面包[r]都未必分得清楚的你这Mr.都市传说Man！[wait tVoice]
+[k]
+
+[charaTalk A]
+[charaFace A 2]
+[se ad62]
+[backEffectPause bit_talk_lightning_02t 256,0]
+[wait backEffectStart]
+[backEffectStart]
+[charaShake C 0.05 3 3 0.4]
+[charaFace C 4]
+[seStop ad62 0.7]
+[wt 0.1]
+[backEffectStop]
+
+＠尼古拉·特斯拉
+[tVoice ValVoice_201100 0_V140]
+什么叫99％的出汗与1％灵感，[r]古怪到让人都笑不出来了啊Mr.狮子君！[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠海伦娜
+[tVoice ValVoice_201100 0_V150]
+啊啊真是的，又吵架了！[r]别在管制室吵架，你们的电气会跑到迦勒底亚斯里去的啊！[wait tVoice]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 1.5]
+
+[wipeout rollRight 1.5 0.5]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[wt 1.0]
+
+[charaTalk off]
+
+
+[wipein rollLeft 1.5 0.5]
+[wait wipe]
+
+[bgm BGM_EVENT_7 0.4]
+
+[charaFace C 4]
+[charaFadein C 0.1 2]
+[charaFace A 4]
+[charaFadein A 0.1 0]
+
+＠绅士与狮子
+[tVoice ValVoice_201100 0_V160]
+……呼，呼……[wait tVoice]
+[k]
+
+[charaTalk on]
+[charaTalk A]
+＠尼古拉·特斯拉
+[tVoice ValVoice_201100 0_V180]
+没……没想到魔力居然见底了……[r]难道是我在交流式雷电曲奇上耗费过多力量了吗……[wait tVoice]
+[k]
+
+＠爱迪生
+[tVoice ValVoice_201100 0_V190]
+唔，唔唔唔……没想到居然在体力比试上[r]输给了为品牌西服所倾倒傻冒……[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠海伦娜
+[tVoice ValVoice_201100 0_V200]
+好啦好啦，平局平局。[r]这次也一样。明白了吗。我不会再说第二遍了哦？[wait tVoice]
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk off]
+[charaFace C 4]
+[charaFadein C 0.1 2]
+[charaFace A 4]
+[charaFadein A 0.1 0]
+＠绅士与狮子
+[tVoice ValVoice_201100 0_V210]
+………是……[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠海伦娜
+[tVoice ValVoice_201100 0_V230]
+虽然花纹什么的不一样，[r]但确实，氛围一模一样。味道估计也是一样的。[wait tVoice]
+[k]
+
+[charaFadeout B 0.1]
+
+
+
+[charaTalk off]
+[charaFace C 2]
+[charaFadein C 0.1 2]
+[charaFace A 2]
+[charaFadein A 0.1 0]
+
+
+[se ad65]
+[charaBackEffect C bit_talk_lightning_01g]
+
+[se ad62]
+[backEffect bit_talk_lightning_01t -256,0]
+[seStop ad62 1.5]
+[seStop ad65 1.5]
+
+＠绅士与狮子
+[tVoice ValVoice_201100 0_V240]
+[fontSize x-large]为什么！[wait tVoice]
+[k]
+
+＠绅士与狮子
+[tVoice ValVoice_201100 0_V260]
+难道是为了公平起见，采用了相同材料和相同配方的缘故吗！[wait tVoice]
+[k]
+
+[charaBackEffectStop C bit_talk_lightning_01g]
+[backEffectStop bit_talk_lightning_01t 0.1]
+[wt 0.3]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠海伦娜
+[tVoice ValVoice_201100 0_V280]
+除此以外还能有什么原因吗……[wait tVoice]
+[k]
+
+[charaFace B 0]
+＠海伦娜
+[tVoice ValVoice_201100 0_V290]
+再说了，曲奇的烤制方法本来就是我教你们的，[r]连肖像都是我帮你们画的啊。难道你们忘了？[wait tVoice]
+[k]
+
+[charaFace B 5]
+＠海伦娜
+[tVoice ValVoice_201100 0_V300]
+话说这话我刚才难道没说过吗？[r]我早说过吧……[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_7 0.9]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[wt 1.0]
+
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+
+[se bas2]
+[equipSet E 9805140 1 ]
+[wait equipSet E]
+[charaFace E 0]
+[charaFadein E 0.5 0,-70]
+[wt 2.0]
+[charaFadeout E 0.4]
+[wt 0.5]
+
+
+
+[soundStopAll]
+[end]

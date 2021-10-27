@@ -1,0 +1,125 @@
+
+＄94-01-56-04-1-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[scene 10710]
+
+[charaSet A 7028000 1 班扬]
+[charaSet B 1018002 1 女神哥伦比亚]
+
+[fadein black 1.5]
+[wait fade]
+
+[effect bit_bolg_03]
+[wt 0.1]
+[se ad32]
+[wt 0.2]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[effectDestroy bit_bolg_03]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[shake 0.05 3 3 0.7]
+[wt 1.0]
+
+＠女神哥伦比亚
+[line 3]咕！[r]没想到，你们居然如此强大[line 3]！
+[k]
+
+＠女神哥伦比亚
+连剥下历史记忆的真正的我，[r]都只能到此为止了[line 3]！
+[k]
+
+＠女神哥伦比亚
+但是[line 3]必须让班扬沉睡。[r]那家伙[line 3]太危险了！
+[k]
+
+＠班扬
+危险[line 6]？[r]我吗[line 6]？
+[k]
+
+？1：班扬！
+
+[bgmStop BGM_EVENT_3 0.1]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.7 1]
+[wt 1.0]
+
+[bgm BGM_EVENT_41 0.1]
+
+＠班扬
+我太大了。不能在城市里居住。[r]所以才会拓展城市。
+[k]
+
+＠班扬
+我相信世上的某个地方一定有我的容身之处。[r]所以我创造、创造、不断创造。
+[k]
+
+[charaFace A 4]
+
+＠班扬
+但是[line 3]这全部，都是白费力气吗？
+[k]
+
+？2：班扬！　这[line 3]！！
+
+[bgmStop BGM_EVENT_3 0.1]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.7 1]
+[wt 1.0]
+
+[bgm BGM_EVENT_41 0.1]
+
+＠班扬
+我明白。我对世界来说是多余的。是没用的部件。[r]是汉堡肉饼旁的，欧芹。
+[k]
+
+＠班扬
+所以。
+[k]
+
+[charaFace A 0]
+
+＠班扬
+让一切结束吧。
+[k]
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_41 0.1]
+[wt 0.1]
+
+？1：[line 6]这世界[line 6]！？
+
+？！
+
+[se ade60]
+[fowardEffect bit_talk_03]
+[wt 1.0]
+[se ade63]
+[wait fowardEffect bit_talk_03]
+[scene 10001]
+[wt 1.0]
+[charaFadeout A 0.7]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

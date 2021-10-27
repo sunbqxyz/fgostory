@@ -1,0 +1,670 @@
+
+＄94-03-50-07-1-1
+
+[soundStopAll]
+
+
+[charaSet A 1098164200 1 巨大鬼魂女官1]
+[charaSet B 99502600 1 玛修]
+[charaSet C 3030000 1 帕尔瓦蒂]
+[imageSet D cut103_item01 1]
+[charaSet E 10003000 1 杀生院祈荒]
+[charaSet F 1098163800 1 春日局]
+[charaSet G 1098158220 1 希翁]
+[charaSet H 1098158230 1 希翁_举手_通讯]
+[charaSet I 98115000 1 特效用1]
+[charaSet J 98115000 1 特效用2]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+
+[scene 72000]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se bac26]
+[wt 0.1]
+[seStop bac41 0.5]
+[charaDepth I 9]
+[charaEffect I bit_talk_shelling_pink02]
+[wt 0.1]
+[fowardEffect bit_talk_14]
+[wt 0.5]
+
+[se bac18]
+[se bac25]
+[flashin once 0.1 0.2 e1a3ffFF e1a3ff50]
+[wt 0.1]
+[charaFadeout E 0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0 1]
+[charaShake A 0.02 5 5 0.6]
+[wt 1.0]
+
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaSpecialEffect A enemyErasure 1 2.0]
+[cueSe Battle ba6]
+[wt 3.0]
+[cueSeStop ba6 0.3]
+
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠玛修
+敌对反应消灭！　但是……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠帕尔瓦蒂
+迦摩逃跑了。[r]真遗憾……[wt 0.7][charaFace C 12]咦？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[cueSe Battle bas2]
+[wt 0.2]
+[charaFadein D 0.5 0,-200]
+[wt 2.2]
+
+[charaFadeout D 0.4]
+[wt 0.5]
+
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠杀生院祈荒
+这究竟是什么？[r]看起来不像是危险的东西。
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[wt 0.1]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth F 0]
+[charaDepth C 1]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+[wt 0.3]
+
+[charaSpecialEffect C erasureReverse 1 0.3]
+[charaFace F 15]
+[charaFadein F 0.2 1]
+[wt 0.1]
+[seStop ad80 0.3]
+
+[wt 0.5]
+＠春日局
+是印笼啊。[r]三叶葵……上面有德川的御纹。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk on]
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠希翁
+这里的女官人偶都是迦摩构建的一种使魔。
+[k]
+
+＠希翁
+既然是从她们的身体里出现的，或许可以[r]认定这是那种鬼魂型女官的构成触媒吧……
+[k]
+
+？1：（咦？　印笼似乎……）
+？2：（发光了[line 3]？）
+？！
+
+
+
+[messageOff]
+[se ad592]
+[bgmStop BGM_EVENT_77 0.5]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaPut I 1]
+[charaEffect I bit_talk_noise02]
+[scene 10001]
+[wt 1.5]
+
+[fadein white 0.5]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_EVENT_1 0.1]
+
+
+＠混杂的呢喃
+……主公究竟怎么了……[r]……完全就是在胡言乱语……
+[k]
+
+＠混杂的呢喃
+……嘘。如果被谁听到了可就完了……[r]……称什么狗将军大人……
+[k]
+
+＠混杂的呢喃
+……疯了……这种事可不能乱说……[r]……啊。反正狗大人们的首级更重要……
+[k]
+
+＠
+[line 3][r][line 6]
+[k]
+
+＠
+是吗？　是这样吗？　我错了吗？
+[k]
+
+＠
+但我觉得，这是一件好事。[r]人们应该拥有慈悲与怜悯之心。
+[k]
+
+＠
+别用那种眼神看我，当面谄媚背后说坏话的家伙。[r]好痛苦。有谁，谁都可以，有谁理解，有谁……
+[k]
+
+＠甜美的女人声音
+不，不。你没有任何错。[r]爱护生物是种美妙的行为。
+[k]
+
+＠甜美的女人声音
+没有什么可担心的。[r]没有什么可迷惑烦恼的。
+[k]
+
+＠甜美的女人声音
+只有我，只有我明白。
+[k]
+
+＠甜美的女人声音
+所以我能由衷爱你。[r]同时……也能爱这份慈悲。
+[k]
+
+＠甜美的女人声音
+永远，永远[line 3]
+[k]
+
+
+[messageOff]
+[se ad592]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_1 0.5]
+[wait fade]
+
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_noise02]
+[scene 72000]
+[wt 1.5]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+？1：（……刚才那个是什么？）
+？2：（只有我能听到……？）
+？！
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠玛修
+怎么了，御主？
+[k]
+
+[charaFace B 6]
+＠玛修
+呃……听到人的说话声吗？
+[k]
+
+＠玛修
+我什么都没有听到，[r]记录里也没有……
+[k]
+
+？1：那大概是我的错觉吧。
+？2：总之现在更在意印笼的事。
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠春日局
+恕我失礼，我要打开了。[r]……[wt 0.6][charaFace F 13]唔。里面似乎是空的呢……
+[k]
+
+[charaFace F 11]
+＠春日局
+不，等一下，上面似乎刻着什么。[r]是这印笼持有者的名字吗。
+[k]
+
+＠春日局
+[#纲吉]……？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+数据库内登记有这个名字，[r]这是……德川五代将军。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+＠春日局
+五代？[r]但现在是三代将军家光公的治世啊？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠H：希翁
+抱歉。请恕我们省略说明，毕竟我们天竺女神[r]一行人算是女神，对后世的事还是略知一二的。
+[k]
+
+＠H：希翁
+纲吉是家光的四男。乳名德松。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠春日局
+是大人的子嗣吗！　这真是！
+[k]
+
+＠春日局
+看来后世也延续了德川的世袭制吧。[r]泰平地统治天下才是最为重要的。
+[k]
+
+＠春日局
+阿福我总算放心了！
+[k]
+
+[charaFace F 13]
+＠春日局
+但是……为什么，[r]后世将军的印笼会在这里？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠希翁
+不好说。虽说上面刻着名字，[r]但未必就是本人的持有物。
+[k]
+
+＠希翁
+还是再仔细调查一下吧。
+[k]
+
+[charaFace G 15]
+＠希翁
+唔唔？　这里面……包含着一些非物理性的灵性存在呢。
+[k]
+
+[charaFace G 0]
+＠希翁
+而且属性被限定包装起来了。[r]这或许是个难得一见的珍品哦。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠玛修
+……什么意思？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠希翁
+也就是说可以轻易利用起来。
+[k]
+
+＠希翁
+只要与输出装置组合，[r]就能设定发现特殊魔术功能。
+[k]
+
+[charaFace G 0]
+＠希翁
+具体说来，就是嵌入[%1]穿着的魔术礼装中，
+[k]
+
+＠希翁
+从而改造礼装的能力。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠玛修
+没有危险吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠希翁
+尽管存在方向性，[r]但毕竟只是纯粹的魔力资源。
+[k]
+
+＠希翁
+里面没有设下机关的痕迹。[r]应该可以有效善用起来。
+[k]
+
+[charaFace G 17]
+＠希翁
+然后呢，你打算怎么做？[r]或许能为今后的大奥探索增加一些有用的功能哦。
+[k]
+
+？1：能用的就该用起来。
+？2：为了救出大家，什么都要利用。
+？！
+
+[charaFace G 10]
+＠希翁
+OK，就这么办！[r]一看到新功能就想尝试，这才是人类嘛！
+[k]
+
+[charaFace G 0]
+＠希翁
+那我会先考虑一下实际设置的方法，[r]然后再给你指示，稍等一会儿哦。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFace G 6]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+＠希翁
+好嘞，完美组装起来了！[r]一切和计算的一样！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠杀生院祈荒
+呵呵。希翁大人真是心灵手巧呢。
+[k]
+
+＠杀生院祈荒
+我只有精神方向的术这一个特长，[r]所以无比钦佩。
+[k]
+
+[charaFace E 0]
+＠杀生院祈荒
+这大奥是充满陷阱的匣子工艺品。
+[k]
+
+＠杀生院祈荒
+哪怕御主能多一种保护自己的手段也好。[r]善哉，善哉。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠春日局
+好了，那我们继续前进吧。
+[k]
+
+[charaFace F 5]
+＠春日局
+我们已经知道元凶的那个女孩就在这大奥的某处。[r]接下来只需找到她，并好好惩办就行了！
+[k]
+
+＠春日局
+尽管她是帕尔大人的知己，但敌人就是敌人。[r]我是不会手下留情的哦！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth C 0]
+[charaDepth F 1]
+
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+
+[wt 0.35]
+
+[charaSpecialEffect F erasureReverse 1 0.3]
+[charaFace C 9]
+[charaFadein C 0.15 1]
+[wt 0.05]
+[seStop ad80 0.3]
+
+[wt 0.5]
+＠帕尔瓦蒂
+请不要介意。我想您应该明白，[r]迦摩很讨厌我。
+[k]
+
+＠帕尔瓦蒂
+虽说一切都是湿婆和我的错，[r]但唆使的因陀罗神也有责任……
+[k]
+
+[charaFace C 2]
+＠帕尔瓦蒂
+不，不对不对！　和这种事无关！
+[k]
+
+[charaFace C 5]
+＠帕尔瓦蒂
+无论过去经历了什么样的事，[r]也决不能加害无关的人们。
+[k]
+
+＠帕尔瓦蒂
+迦摩的所作所为是不可饶恕的。
+[k]
+
+＠帕尔瓦蒂
+尽管我不知道她的意图，但一定要想办法阻止她的企图[line 3][r]拯救江户城的，以及迦勒底的人们才行。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk on]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠玛修
+……是。
+[k]
+
+[charaFace B 4]
+＠玛修
+但倘若大家的性命真的掌握在迦摩的掌心，[r]那可就麻烦了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠希翁
+总之先相信对方的话，[r]向最底层挺近吧
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠玛修
+她说自己的目的就是让各位永远彷徨。[r]想必接下来等待我们的也会是错综复杂的迷宫吧。
+[k]
+
+＠玛修
+虽说对御主来说将是个非常艰巨的任务[line 3][r]但一切都拜托了。
+[k]
+
+？1：我一定会想办法解决。
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+＠希翁
+唔。话说回来，居然是迦摩啊。[r]有件事我还是有些介意呢。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠帕尔瓦蒂
+我也是。但[#那边那个]应该不会轻易出现才对。[r]我真希望没有关系……
+[k]
+
+[charaFace C 9]
+＠帕尔瓦蒂
+…………
+[k]
+
+[charaFace C 4]
+＠帕尔瓦蒂
+总之，现在还是先前进吧。[r]前面的路应该还很长呢[line 3]
+[k]
+
+
+
+
+
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[charaFadeout C 0.1]
+[wt 0.5]
+[soundStopAll]
+
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+
+[cueSe Battle bas2]
+[charaFace D 0]
+[charaFadein D 0.5 0,-200]
+[wt 1.4]
+
+＠
+[s 1000]
+　　　　[s 16]获得了第五代将军『德川纲吉的印笼』。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[wait fade]
+[end]

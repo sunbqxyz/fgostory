@@ -1,0 +1,119 @@
+＄01-00-00-05-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+[scene 10720]
+[charaSet A 8001000 0 玛修]
+[charaSet B 98003003 2 罗曼医生]
+[charaSet C 98002000 2 芙芙]
+[charaSet D 98004000 1 雷夫]
+[charaSet E 98005000 1 奥尔加玛丽]
+[charaSet F 98006000 1 ？？？]
+[charaFace E 0]
+[charaFadein E 0]
+[fadein black 1]
+[wait fade]
+＠奥尔加玛丽
+不管怎么走，周围都是燃烧的荒野……[r]也没有人居住的痕迹，到底发生了什么……
+[k]
+
+[charaFace E 3]
+＠奥尔加玛丽
+说起来，究竟是什么样的异变让迦勒底亚斯变成了灰色……[r]无法观测未来也就等同于人类的灭亡……
+[k]
+
+＠奥尔加玛丽
+难道说……抑制力在特异点中发挥不了作用？[r]果然，这里就像是一颗关键的螺丝钉……
+[k]
+
+＠奥尔加玛丽
+分散在人类史中的，各个关乎灭亡的致命选择点……[r]若是选错，其结果就是……
+[k]
+
+[se ad13]
+[wait se ad13]
+[charaFadeout E 0]
+[communicationChara 98003003 1 5 0 0]
+＠罗曼医生
+哎呀，所长又开始自言自语了。[r]她只要一开始就会没完没了。
+[k]
+
+＠罗曼医生
+[%1]。[r]这附近应该很安全，要不要先休息一会儿？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠玛修
+我赞成医生的意见。[r]前辈，要吃干粮吗？
+[k]
+
+？1：谢谢。玛修不累吗？
+
+？2：那我就不客气了。倒是玛修你身体没事吗？
+
+？！
+
+[charaFace A 6]
+＠玛修
+身体的疲劳……难道你是指变成从者后，[r]我的身体有没有出什么问题？
+[k]
+
+[charaFace A 3]
+＠玛修
+……这个倒是还好。[r]除了面对战斗会感到害怕以外，身体一切正常。
+[k]
+
+？1：话说，由我当你的御主真的好吗？
+
+[charaFace A 1]
+＠玛修
+当然。我没有任何不满。[r]前辈可是今年春季No.1的最佳御主啊。
+[k]
+
+？2：对成为从者有什么不满吗？
+
+[charaFace A 3]
+＠玛修
+……这个……很难形容。[r]想象一下……其实我就像是成了一架战斗机，
+[k]
+
+[charaFace A 7]
+＠玛修
+就算能在天空飞翔，[r]也无法用自己的双手来保养自己。
+[k]
+
+＠玛修
+无论拥有多强的力量，若没有御主，[r]我连『维持存在』这种基本的活动都无法实现。
+[k]
+
+[charaFace A 8]
+＠玛修
+……虽然风险和回报成正比，[r]但一想到我会给前辈增加负担，心情就很沉重。
+[k]
+
+？！
+
+[bgmStop BGM_EVENT_5 0.4]
+[bgm BGM_EVENT_3 0.1]
+[charaFadeout A 0.1]
+[charaTalk B]
+[charaFadein A 0.1 2]
+[communicationCharaLoop 98003003 0 5 0 2]
+＠罗曼医生
+[line 3]！[r]休息到此为止，周围侦测到生命反应！
+[k]
+
+[charaFace A 2]
+＠玛修
+……！[r]御主，请指示！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,1072 @@
+
+
+＄94-02-39-08-1-0
+
+
+[soundStopAll]
+
+[charaSet A 9005001 1 福尔摩斯]
+[charaSet B 5014000 1 凯恩]
+[charaSet C 6010000 1 朱丽叶]
+[charaSet D 9005001 1 福尔摩斯2]
+[charaSet E 4017000 1 多萝西]
+[charaSet F 3011000 1 阿伦]
+[charaSet G 1020000 1 亚当斯卡]
+[charaSet H 2023000 1 霍桑]
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 30400]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[se adm14]
+[charaMoveReturn A 10,0 0.25]
+[wt 0.3]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+[charaEffect B bit_talk_13]
+[se bac149]
+[charaShake B 0.05 3 3 0.5]
+[wt 0.3]
+[charaFace B 4]
+
+＠凯恩
+呜……
+[k]
+
+[messageOff]
+[charaMove B 0,-50 0.4]
+[charaFadeout B 0.4]
+[wt 0.4]
+[se ad144]
+[bgmStop BGM_EVENT_24 0.5]
+[wt 1.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠A：薛灵汉？
+哎呀呀，真是个坏孩子呢。
+[k]
+
+[charaFace A 0]
+
+＠A：薛灵汉？
+哟，[&Mr.:Miss][%1]。[r]你没受伤吧？
+[k]
+
+？1：这种称呼……难道是福尔摩斯？
+？2：为什么福尔摩斯会……？
+
+？！
+
+[charaFace A 1]
+
+＠福尔摩斯
+嗯，这反应真不错！[r]尽管不如华生。
+[k]
+
+[charaFace A 4]
+
+＠福尔摩斯
+虽说我很想消除你满脑子的问号，[r]但应该从哪里开始说起呢……
+[k]
+
+[charaFace A 0]
+
+＠福尔摩斯
+对了。首先说明我来这里的经过吧。
+[k]
+
+＠福尔摩斯
+我哦，一直很介意你的梦境与现实间究竟有多少偏差。
+[k]
+
+＠福尔摩斯
+然后开始思考是否可以利用时间的偏差[r]从我们那边直接介入这边。
+[k]
+
+[messageOff]
+[charaDepth A 10]
+
+[scene 59001 1.5]
+[charaMove A 300,-130 1.5]
+[charaMoveScale A 0.8 1.5]
+[wt 1.5]
+
+＠福尔摩斯
+而你在满月之下与朱丽叶小姐的对谈，[r]成了最大的线索。
+[k]
+
+
+[charaFace A 6]
+
+＠福尔摩斯
+就算对天文学所知甚少的我也知道，[r]这是常识。
+[k]
+
+[charaFace A 0]
+
+＠福尔摩斯
+你在迦勒底看到月亮并倒下的日子是2018年的6月24日。
+[k]
+
+＠福尔摩斯
+第五次醒来时，已经是25日了，[r]但即便如此，6月的满月也还没出现。
+[k]
+
+[charaFace A 6]
+
+＠福尔摩斯
+因此我才发现了，[r]你看到的是数天后的未来。
+[k]
+
+[charaFace A 0]
+
+＠福尔摩斯
+所以我才做出了以这种形式直接介入的决定。
+[k]
+
+？1：那这梦境中的都是未来发生的事……？
+
+？！
+
+＠福尔摩斯
+只能这么认为。虽说原理不明，[r]但关键的不是原理而是现状。
+[k]
+
+＠福尔摩斯
+如果觉得我在撒谎，那就调查一下月龄吧。[r]2018年6月出现满月的日子只有28日。
+[k]
+
+
+＠福尔摩斯
+以这个时间来推算，你在虚月馆里被凯恩的球[r]击中的时间应该是6月26日的午后。
+[k]
+
+[charaFace A 6]
+
+＠福尔摩斯
+而从理解这一切的25日到你梦境开始日子的26日……[r]期间还有一天的准备时间。
+[k]
+
+？1：但为什么以薛灵汉的身份……
+
+？！
+
+[charaFace A 0]
+
+＠福尔摩斯
+我一直在思考该如何介入，[r]于是突然发现了。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaScale A 1.0]
+[cameraFilter gray]
+[scene 10000]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFadein D 0.5 0]
+
+＠福尔摩斯
+你看到的薛灵汉，除了因具备侦探属性，[r]而被付与了我的模样的可能性以外，
+[k]
+
+[charaFace A 0]
+[charaFadein A 0.5 2]
+
+＠福尔摩斯
+也不能彻底否认[r]自称薛灵汉的人就是我本人的可能性。
+[k]
+
+[charaMove A 1 0.7]
+[charaMove D 1 0.7]
+
+＠福尔摩斯
+那只要强行走后者的路线，[wt 0.3][cameraFilter normal][r]就能作为当事人大摇大摆地介入这件事了吧。
+[k]
+
+？1：这未免太乱来了吧！
+
+？！
+
+[charaTalk on]
+[charaFadeout D 0.1]
+[charaFace A 4]
+
+＠福尔摩斯
+这话太见外了。如果还存在解决方法，[r]那我走的步骤才是正确的。
+[k]
+
+[charaFace A 0]
+[scene 30400 1.0]
+
+＠福尔摩斯
+只不过，可以确定的是抵达这里所需的步骤非常繁琐。
+[k]
+
+＠福尔摩斯
+要以薛灵汉之名与戈尔迪家取得联系，[r]并用威胁信的事给他们下套，他们就会立刻上钩。
+[k]
+
+[charaFace A 6]
+
+＠福尔摩斯
+如果对方怀疑我的话，只要这么回答就行了。[r]『我会靠自己的力量找到你们的逗留地点』。
+[k]
+
+[charaFace A 0]
+
+＠福尔摩斯
+接下来的事就如同纵横填字游戏。
+[k]
+
+＠福尔摩斯
+根据从美国本土到达目的地的移动时间，以及6月也能[r]游泳的气候，可以判断肯定是在加勒比群岛的某处。
+[k]
+
+＠福尔摩斯
+瓶颈在于虚月馆的位置究竟在哪里，[r]但只要想到虚月就是新月的意思，就明白了。
+[k]
+
+＠福尔摩斯
+我在地图上找到了新月形状的孤岛，[r]并若无其事地出现在了你们的面前。
+[k]
+
+[charaFace A 6]
+
+＠福尔摩斯
+这些都是简单的步骤。[r]要说费事的话，也就只有说服达·芬奇了。
+[k]
+
+[charaFace A 0]
+
+＠福尔摩斯
+因为我需要为了私事使用灵子转移嘛。[r]我将美国当地的工作人员设为临时御主……
+[k]
+
+？1：这些说明就够了啦。
+？2：但当时你确实死了吧？
+
+？！
+
+[charaFace A 4]
+
+＠福尔摩斯
+你是那种会在读书时跳着读的人吗？[r]不过确实没有时间了，那我的冒险传奇也只能割爱了。
+[k]
+
+[charaFace A 0]
+
+＠福尔摩斯
+复活的说明等一会儿在大家面前再说……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaShake B 0.1 2 0 0.4]
+[charaFadein B 0.4 0,-20]
+[charaMove B 1 0.4]
+[wt 0.4]
+
+＠凯恩
+呜，唔……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠福尔摩斯
+哎呀，坏孩子醒了。[r]向凯恩问话吧。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[bgmStop BGM_EVENT_2 0.3]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠凯恩
+哈，侦探先生？　你为什么还活着啊？
+[k]
+
+？1：凯恩，你能正常说话啊？
+
+？！
+
+[charaFace B 5]
+
+[bgm BGM_EVENT_11 0.1]
+＠凯恩
+……是啊。那是演戏啦，都是在演戏。
+[k]
+
+[charaFace B 4]
+
+＠凯恩
+身为长子的我注定要继承维奥莱特家。[r]但是，我可不想成为那种世界的人。
+[k]
+
+＠凯恩
+所以我才装成不适合当继承人的[r]古怪小孩的样子活到现在。
+[k]
+
+[charaFace B 5]
+
+＠凯恩
+因为演技导致家人为我担心确实让人于心不忍，[r]但我可不想因为无聊的事情被杀。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠福尔摩斯
+凯恩的担心并非杞人忧天。[r]在这个世界中，对抗、逆袭、背叛，或是纯粹的撒气，
+[k]
+
+＠福尔摩斯
+都会让人轻易丢了性命。[r]在这里过完一生可不是什么简单的事。
+[k]
+
+[charaFace A 0]
+
+＠福尔摩斯
+但是，为了自己而装模作样到现在的你，[r]为什么突然暴露本性了？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠凯恩
+因为我觉得[%1]就是犯人。[r]我已经想不出有其他人会这么做了。
+[k]
+
+＠凯恩
+我猜你是为了帮助朱丽叶姐姐才这么做的。
+[k]
+
+[charaFace B 5]
+
+＠凯恩
+我对这件事本身表示感谢。[r]我也不喜欢莫理斯。
+[k]
+
+[charaFace B 4]
+
+＠凯恩
+但你也不用杀了克里斯先生吧。[r]如果你不是为了姐姐好，而是为了独占姐姐而杀人，
+[k]
+
+＠凯恩
+那迟早有一天，你或许会杀了我的其他家人。
+[k]
+
+[charaFace B 2]
+
+＠凯恩
+既然如此，那只有我动手了吧！[r]我还以为只要用刀威胁，你就会老实交代。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 2]
+[charaFadein A 0.1 2]
+[charaFadein B 0.1 0]
+
+＠福尔摩斯
+放心吧，凯恩。[r][%1]不是这样的人。
+[k]
+
+[charaFace B 4]
+
+＠凯恩
+但没有其他犯人了吧？
+[k]
+
+＠福尔摩斯
+不，这里是个完全的封闭空间。[r]打从一开始，犯人就在我们中间。
+[k]
+
+[charaFace A 6]
+
+＠福尔摩斯
+好了，凯恩。我要问你一个问题。[r]你是否能证明自己的清白？
+[k]
+
+＠凯恩
+因为不知道莫理斯是什么时候死的，[r]所以最初的事件我无法证明，
+[k]
+
+＠凯恩
+但克里斯先生死亡时间的话，[r]或许我能证明自己不在场。
+[k]
+
+＠福尔摩斯
+也就是说你能证明那晚上的[r]半夜11点25分时你在哪里吗？
+[k]
+
+[charaFace B 5]
+
+＠凯恩
+我和劳瑞在空房间里玩捉迷藏。[r]被人发现时大概是11点20分左右。
+[k]
+
+[charaFace A 0]
+
+＠福尔摩斯
+有大人能证明这件事吗？
+[k]
+
+＠凯恩
+嗯。有。
+[k]
+
+[charaFace A 1]
+
+＠福尔摩斯
+我想听的就是你这句话。
+[k]
+
+？1：哎，是谁？
+
+？！
+
+[charaFace A 0]
+
+＠福尔摩斯
+这我已经心里有数了。[r]我会在恰当的时间让凯恩作证的。
+[k]
+
+[charaFace B 4]
+
+＠凯恩
+那个……关于我的伪装……
+[k]
+
+＠福尔摩斯
+啊啊，我不会说的。[r]什么时候停止伪装就由你自己决定好了。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠福尔摩斯
+好了，[&Mr.:Miss][%1]，[r]我们回虚月馆吧。
+[k]
+
+[messageOff]
+[wipeout rightToLeft 0.7 1]
+[bgmStop BGM_EVENT_11 0.7]
+[se ad60]
+[se ad173]
+[wait wipe]
+
+[charaSet D 7023000 1 夏娃]
+[charaSet B 2012000 1 哈丽叶]
+
+[scene 58500]
+
+
+[charaFadeout A 0.1]
+[wt 1.0]
+[seStop ad60]
+[seStop ad173]
+
+[wipein leftToRight 0.7 1]
+[wait wipe]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk off]
+[charaFace C 2]
+[charaFace D 2]
+[charaFace E 2]
+[charaFadein C 0.1 1]
+[charaFadein D 0.1 0]
+[charaFadein E 0.1 2]
+
+[messageShake 0.05 5 5 0.5]
+＠朱丽叶＆夏娃＆多萝西
+呀啊啊啊啊啊啊啊！！！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠福尔摩斯
+这反应真夸张。[r]虽然还是不如当时的华生。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[se ad59]
+[wt 0.1]
+[se ad456]
+[charaFace G 2]
+[charaFace F 2]
+[charaFace H 2]
+[charaFadein G 0.4 306,0]
+[charaFadein F 0.4 50,0]
+[charaFadein H 0.4 -206,0]
+[charaMove G 2 0.4]
+[charaMove F 1 0.4]
+[charaMove H 0 0.4]
+[wt 1.0]
+[seStop ad59]
+[seStop ad456]
+
+[charaTalk on]
+[charaTalk G]
+
+＠亚当斯卡
+发生什么事了！？[r]呃，[messageShake 0.05 5 5 0.3]为什么你会在这里？
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaSet F 6026000 1 伍]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠伍
+不会吧……你真的活着啊。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[bgmStop BGM_EVENT_3 0.3]
+[wt 0.5]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠福尔摩斯
+所有人都到齐了吧。[r]这样一来总算能说明第一天发生的事了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠朱丽叶
+但是……你的脉搏确实停止了吧？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠福尔摩斯
+这其实根本没什么大不了的。
+[k]
+
+＠福尔摩斯
+只要在腋下夹一个球，用力压迫血管，[r]就能令血流停止脉搏消失。
+[k]
+
+＠福尔摩斯
+是个非常古典的技巧，[r]是一种正式名称为压迫止血法的医疗技术。
+[k]
+
+＠福尔摩斯
+但如果做过头的话，可能令手臂坏死，[r]但若只是在短时间内让你们产生误会，是毫无问题的。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠朱丽叶
+不，等一下……但医生可是专家啊。[r]你是不可能瞒过医生的吧？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠福尔摩斯
+没错。所以，这就是答案。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠朱丽叶
+难道……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠霍桑
+嗯，我也是同谋。[r]很抱歉欺骗了你们。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠夏娃
+医生，为什么要这么做……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠福尔摩斯
+霍桑氏是这里唯一的医生。[r]一旦出现死者，必然会让他负责验尸。
+[k]
+
+＠福尔摩斯
+所以第一天我就和他说好了。[r]如果愿意帮助我诈死，
+[k]
+
+[charaFace A 6]
+
+＠福尔摩斯
+那无论发生什么样的事件，我都保证能解决。[r]因为已经退场的我，对犯人来说是个盲点。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠亚当斯卡
+这说法……不就代表了[r]你早就知道一定会发生事件吗？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠福尔摩斯
+我现在只能说，[r]打从一开始我就知道不可能平安无事。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠伍
+医生……相信并帮助这种人未免太不正常了吧？
+[k]
+
+[charaFace F 5]
+
+＠伍
+如果这家伙真的是名侦探……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠福尔摩斯
+你想说我能在悲剧发生之前制止一切吗？
+[k]
+
+[charaFace A 4]
+
+＠福尔摩斯
+我擅长解决已经发生了的事件，[r]但逐一阻止事件的发生则是我不擅长的。
+[k]
+
+＠福尔摩斯
+有句话说得非常好，[r]『罪犯是富有创造性的艺术家，而侦探只是评论家罢了』。
+[k]
+
+＠福尔摩斯
+（就算我说我无法对事件介入到[r]　影响[%1]所做的梦的内容，[r]他们也不会接受吧。）
+[k]
+
+[charaFace A 6]
+
+＠福尔摩斯
+（所以我也只能这么说了。[r]　但话说回来，原本的我是个富有创造性的评论家哦。）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠伍
+身为侦探的实力姑且不论，[r]但我还是看你不顺眼。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠福尔摩斯
+霍桑先生之所以同意协助我的重要原因，[r]是因为他本人也感受到了危险的气息。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠哈丽叶
+医生，难道你……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠霍桑
+什么都别说了，哈丽叶！
+[k]
+
+[charaFace H 4]
+
+＠霍桑
+……听好了，如果要责备他，那我也有责任。[r]希望大家至少能在他完成工作前，安静地见证一切。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠福尔摩斯
+感谢您的补充，霍桑医生。[r]实际看来您的容貌还是十分善良的。
+[k]
+
+[charaFace A 6]
+
+＠福尔摩斯
+哎哟……已经中午了。[r]再不进入解决篇，迎接的人就要来了吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaSet D 3011000 1 阿伦]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠阿伦
+解决……[r]你难道已经明白真相了吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠福尔摩斯
+当然了。[r]我的头脑中已经完成了能说明一切的推理。
+[k]
+
+＠福尔摩斯
+但在说出口之前，有一件事需要确认。[r]各位，能跟我来吗？
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.7 1]
+[se ad184]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+[seStop ad184]
+
+[scene 11000]
+
+[charaSet H 7028000 1 劳瑞]
+
+[fadein black 1.0]
+[wait fade]
+
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠阿伦
+这里……不是克里斯的房间吗。[r]来这种地方想要干什么？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠福尔摩斯
+鉴定他的死亡留言。
+[k]
+
+[charaFace A 0]
+
+＠福尔摩斯
+根据我听到的说法，克里斯是个意志坚强的人。[r]所以只要是必要的工作，哪怕死，他也一定会完成。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠伍
+这话从你嘴里说出来令人分外恼火……但你说得没错。[r]我和大姐头也十分清楚克里斯的责任心有多强。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠福尔摩斯
+他本来打算写完这个信息的，[r]但或许是血不够用了吧。
+[k]
+
+＠福尔摩斯
+所以只要使用这个试剂，[r]就能清晰地显现因血不够而看不清的文字。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_5 1.0 0.3]
+[charaFadeout A 0.1]
+[wt 0.1]
+[se ade181]
+[wt 1.5]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠劳瑞
+mor……[wt 0.3][se ade182]变成了mom！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_5 1.0 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠福尔摩斯
+克里斯想留下的信息果然是mom。[r]在说出我的推理之前，我只想让大家看看这个。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠朱丽叶
+mom……是那个mom吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠福尔摩斯
+没错。就是那个mom。[r]我接下来会说明的。
+[k]
+
+[charaFace A 6]
+
+＠福尔摩斯
+那克里斯想要告发的人……[r]……究竟是哪个[#母亲:mom]呢？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.5]
+[wt 1.5]
+
+[scene 10000 2.0]
+[wt 1.0]
+
+[effect bit_talk_spotlight]
+[bgm BGM_MAP_6 3.0]
+[wt 2.0]
+
+[charaFace A 0]
+＠福尔摩斯
+……好了，解决所需的线索全都集齐了。[r]大家是否已经隐约看到了真相呢。
+[k]
+
+＠福尔摩斯
+犯人基于某个动机，杀害了莫理斯与克里斯。[r]只要知道了这个动机，自然就能知道犯人究竟是谁。
+[k]
+
+[charaFace A 6]
+
+＠福尔摩斯
+但……说实话，就算猜不到动机，[r]也能推断出犯人是谁。
+[k]
+
+[charaFace A 0]
+
+＠福尔摩斯
+我会为阅读到这里的各位一个特别提示。[r]请大家重新确认一下杀害克里斯时的不在场证明。
+[k]
+
+＠福尔摩斯
+只要逐一排除确定无法犯罪的人，[r]或许就能轻易触碰到真相哦。
+[k]
+
+＠福尔摩斯
+今后不会再有任何可能削减『虚月馆杀人事件』乐趣的[r]后续情报了。所以还请各位放心地进行推理。
+[k]
+
+＠福尔摩斯
+但第1天时就已经说过了，[r]这『虚月馆杀人事件』并非处于普通观测状态下。
+[k]
+
+[charaFace A 6]
+
+＠福尔摩斯
+请务必不要忘记这一点。
+[k]
+
+[messageOff]
+[wt 1.5]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_6 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,453 @@
+
+
+＄94-02-75-43-1-0
+
+
+
+[soundStopAll]
+
+[charaSet A 7031000 1 贞德·Alter]
+[charaSet B 98100400 1 玛修]
+[charaSet C 2003300 1 罗宾汉]
+[charaSet D 6034000 1 牛若丸]
+
+[imageSet H cut086_sdbb01 1]
+[charaScale H 0.9]
+
+[imageSet E cut079_time03 1]
+[imageSet F cut079_moji01 1]
+[imageSet G cut079_moji03 1]
+
+[revivalBranch lblNormal lblRevival]
+
+[label lblNormal]
+
+[flag isQueSkip true]
+
+[branch lblRevivalConf]
+
+[label lblRevival]
+
+[branchQuestNotClear lblNoClear 94039143 1]
+
+[flag isQueSkip true]
+
+[branch lblClearCheckConf]
+
+[label lblNoClear]
+
+[flag isQueSkip false]
+
+[label lblClearCheckConf]
+
+[label lblRevivalConf]
+
+[branch lblQueSkipConf isQueSkip false]
+
+[messageOff]
+[fadein black 0.1]
+[wait fade]
+
+[charaFadein H 0.1 -600,-300]
+[charaMove H -400,-300 0.7]
+[wait charaMove]
+[wt 0.4]
+
+[charaMoveReturn H -400,-250 0.2]
+[se ad673]
+[wait charaMove]
+
+[charaMoveReturn H -400,-250 0.2]
+[se ad673]
+[wait charaMove]
+[wt 0.5]
+
+？1：跳过。
+[charaMove H -420,-300 0.3]
+[wait charaMove]
+[charaMove H 800,-300 1.0]
+[se ad348]
+[wait charaMove]
+[wt 0.5]
+
+[flag isSkip true]
+
+？2：不跳过。
+[charaMove H -520,-300 0.7]
+[charaFadeout H 0.7]
+[wait charaMove]
+[wt 0.5]
+
+[flag isSkip false]
+？！
+
+[branch lblEnd isSkip true]
+
+[fadeout black 0.1]
+[wait fade]
+
+[label lblQueSkipConf]
+
+[scene 10000]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaScale E 1.0]
+[charaScale F 1.0]
+[charaScale G 1.0]
+[charaFadein E 0.1 0,-200]
+[charaFadein F 0.1 50,-200]
+[charaFadein G 0.1 100,-200]
+[wait charaCut E]
+[wait charaCut F]
+[wait charaCut G]
+[wt 2.2]
+
+[charaFadeout E 2.0]
+[charaFadeout F 2.0]
+[charaFadeout G 2.0]
+
+[scene 63500 2.0]
+[wt 2.0]
+
+[charaSet E 6031000 1 刑部姬]
+[charaSet F 2032001 1 贞德]
+[charaSet G 5007001 1 莎士比亚]
+[wt 0.5]
+
+[bgm BGM_EVENT_93 0.1 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠牛若丸
+那我和罗宾阁下去向大家打招呼。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠罗宾汉
+哦，然后我们会到处逛逛，[r]买几本看起来还不错的本子。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠贞德·Alter
+说得对。买一些可能对下次有用的本子，[r]然后好好学习。
+[k]
+
+＠贞德·Alter
+只要在晚上之前读完就行了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠罗宾汉
+知道啦～。
+[k]
+
+[messageOff]
+[se ad60]
+[seStop ad60 1.0]
+[charaFadeout C 0.4]
+[wt 1.6]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠刑部姬
+呀嗬～。[r]我来交换本子啦～。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠贞德·Alter
+知道啦知道啦。[r]是这本吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠刑部姬
+谢谢～。[r]而[#公主:我]的回赠是这个。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠贞德·Alter
+嗯，谢啦。
+[k]
+
+[messageOff]
+[wipeout rightToLeft 1.0 1.0]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 1.0]
+[wipein leftToRight 1.0 1.0]
+[wait wipe]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠贞德
+我是贞德！[r]这是『st.奥尔良』的新作！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠贞德·Alter
+……呜……
+[k]
+
+[charaFace A 5]
+
+＠贞德·Alter
+没办法，毕竟是将来的目标。[r]那给你，这是我画的本子。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠贞德
+谢谢。[r]我会读一百遍左右的！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠贞德·Alter
+这好像偏执到有些可怕了吧。
+[k]
+
+[messageOff]
+[wipeout rightToLeft 1.0 1.0]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 1.0]
+[wipein leftToRight 1.0 1.0]
+[wait wipe]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠莎士比亚
+Hello，各位。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+[charaFace A 9]
+[charaFadein A 0.1 2]
+
+＠贞德·Alter
+恶，别过来。
+[k]
+
+[charaFace G 4]
+
+＠莎士比亚
+哎，为什么吾辈会遭到这种待遇。
+[k]
+
+＠莎士比亚
+其实吾辈在这类活动上[r]还会被当做明星追捧的哦？
+[k]
+
+[charaFace A 15]
+
+＠贞德·Alter
+就是因为你是个超级大明星，[r]才不知道该怎么对待啦。
+[k]
+
+＠贞德·Alter
+如果你动真格，[r]从者庆典甚至可能会崩溃吧。
+[k]
+
+[charaFace A 16]
+
+＠贞德·Alter
+或者可以说，偏偏被你们阅读[r]自己创作的书籍，这不是一种拷问吗？
+[k]
+
+[charaFace G 1]
+
+＠莎士比亚
+哎～，吾辈也是从者庆典的同伴啊～。
+[k]
+
+[charaFace A 14]
+
+＠贞德·Alter
+唔……算了，好吧。
+[k]
+
+[charaFace A 13]
+
+＠贞德·Alter
+给，这是这次的本子。[r]只不过，你别说自己的感想。
+[k]
+
+[charaFace G 0]
+
+＠莎士比亚
+真拿你没办法。
+[k]
+
+[charaFace G 1]
+
+＠莎士比亚
+这是我们的联合小说本。[r]请收下，请收下。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛修
+……一旦这东西流入市场，[r]不知会吸引多大的资金……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_93 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 63501]
+
+[wt 1.0]
+
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠罗宾汉
+喂，我回来了。[r]销售情况怎么样？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠贞德·Alter
+只能说马马虎虎吧。[r]不好也不坏。
+[k]
+
+[charaFace A 13]
+
+＠贞德·Alter
+这次毫无疑问会输。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠牛若丸
+真没办法。
+[k]
+
+[charaFace D 4]
+
+＠牛若丸
+这次的工作并非毫无意义，[r]我们要有这种积极的态度。
+[k]
+
+？1：我们赶快构思下一次的本子吧！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠贞德·Alter
+说得对。
+[k]
+
+＠贞德·Alter
+罗宾，把买来的本子拿来。[r]为了准备下次的作品，我要和[#这家伙:御主]好好商谈。
+[k]
+
+[label lblEnd]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[soundStopAll]
+[end]

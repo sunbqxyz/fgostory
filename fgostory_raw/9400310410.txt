@@ -1,0 +1,84 @@
+＄94-00-31-04-1-0
+
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 8001001 1 玛修]
+[charaSet B 98003000 1 Dr.罗曼]
+[charaSet D 98065000 1 埃尔梅罗Ⅱ世]
+
+[scene 25800]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk B]
+[se ad13]
+[communicationChara 98003003 1 5 0 2]
+[wt 0.3]
+
+＠Dr.罗曼
+等一下！　附近出现魔力反应……[r]明显不是人类的东西正向你们那边靠近！
+[k]
+
+[messageOff]
+[communicationCharaClear]
+[wait communicationChara]
+
+[se ad46]
+[wt 0.8]
+[se ad46]
+[wt 0.2]
+[seStop ad46 0.5]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠玛修
+我们这里也看到了。那怪物是什么呢……[r]造型看上去就有点……让人想退避三舍啊……
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠埃尔梅罗Ⅱ世
+那是Caster召唤的海魔的一部分。
+[k]
+
+＠埃尔梅罗Ⅱ世
+参加这场圣杯战争的Caster已经完全丧失理性了。
+[k]
+
+[charaFace D 5]
+＠埃尔梅罗Ⅱ世
+完全无视战略之类的存在，[r]胡乱召唤使魔，牺牲无辜市民的麻烦家伙。
+[k]
+
+？1：不能放任不管。
+？2：干掉他们吧！
+
+？！
+
+[charaFace D 4]
+＠埃尔梅罗Ⅱ世
+虽说就算放置不管，也不会对我们造成什么危害……
+[k]
+
+[charaFace D 0]
+＠埃尔梅罗Ⅱ世
+但即便是在这种小巷里，万一有什么[r]一无所知的普通人走进来，必然会酿成惨案。
+[k]
+
+[charaFace D 1]
+＠埃尔梅罗Ⅱ世
+顺手把它们清理掉吧。
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

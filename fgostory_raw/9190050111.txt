@@ -1,0 +1,258 @@
+
+
+＄91-90-05-01-1-1
+
+[soundStopAll]
+
+[charaSet A 9005001 1 福尔摩斯]
+[charaSet B 1098123200 1 华生]
+
+[charaSet C 9005001 1 福尔摩斯(放映机演出1)]
+[charaSet D 9005001 1 福尔摩斯(放映机演出2)]
+[charaSet E 9005001 1 福尔摩斯(放映机演出3)]
+[charaSet F 9005001 1 福尔摩斯(放映机演出4)]
+[charaSet G 9005001 1 福尔摩斯(放映机演出5)]
+[charaSet H 9005001 1 福尔摩斯(放映机演出6)]
+
+[charaSet I 8001000 1 dummy特效１]
+[charaSet J 8001000 1 dummy特效２]
+
+
+[charaEffect I bit_talk_film_noise]
+[charaEffect J bit_talk_movie_film]
+[wt 0.5]
+
+[scene 11000]
+[cameraFilter gray]
+[cameraMove 0.1 0,0 1.02]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad563]
+[wt 0.15]
+[se ad563]
+[effect bit_shot_01 0,0 F]
+[wt 0.15]
+[se ad563]
+[wt 0.2]
+[shake 0.04 2 1 0.4]
+[wt 0.6]
+
+[se ad460]
+[se bac370]
+[shake 0.04 2 2 1.0]
+[wt 0.6]
+
+[effectDestroy bit_shot_01]
+
+[seVolume ad460 1.0 0.0]
+[seVolume bac370 1.0 0.0]
+[wt 1.0]
+
+[se ad42]
+[bgmStop BGM_EVENT_80 1.4]
+[wt 2.2]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.3 1]
+[wt 0.3]
+
+＠华生
+结……结束了吗……！[bgm BGM_EVENT_77 0.1][wt 0.4][r]呼，[charaMoveReturn B 0,-3 0.25][wt 0.25]哈……[charaMoveReturn B 0,-4 0.4][wt 0.4][charaMoveReturn B 0,-3 0.25][wt 0.25]
+[k]
+
+[charaFace B 5]
+
+＠华生
+这……这到底是怎么回事……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠福尔摩斯
+案件已经结束了。
+[k]
+
+＠福尔摩斯
+邪恶的黑魔术师将有形的诅咒[r]放进屋内进行杀人[line 3]
+[k]
+
+＠福尔摩斯
+但诅咒已被击破。[r]那家伙也不可能有什么好结果。
+[k]
+
+[charaFace A 8]
+
+＠福尔摩斯
+承受了全部反噬，应该已经死在隔壁房间里了吧。[r]正所谓暴力最终会报应到使用暴力的人身上。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠华生
+哈？
+[k]
+
+＠华生
+也就是说，当我向怪物射击的同时，[r]也在像那个毒辣的杀人犯射击吧。
+[k]
+
+[charaFace B 4]
+＠华生
+我……我说你啊，这种事就不能事先告诉我吗？[r]我把持有的子弹全都射出去了……
+[k]
+
+[charaFace B 12]
+
+＠华生
+……华生或许不会说这种话吧。会吗？[wt 1.1][charaFace B 18][r]唔……演起来还挺难的。
+[k]
+
+[messageOff]
+[wt 0.8]
+[charaFace B 4]
+
+＠华生
+不过这个案子，[r]该如何写成书呢……
+[k]
+
+＠华生
+如果实事求是地写出来，[r]必然会被时钟塔盯上。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠福尔摩斯
+哈哈哈。
+[k]
+
+＠福尔摩斯
+那就要看你了哦，华生。[r]请一定要巧妙地找理由糊弄过去哦！
+[k]
+
+[messageOff]
+[wt 0.2]
+[se ade306]
+[seVolume ade306 0 0.8]
+[wt 1.2]
+
+[bgmStop BGM_EVENT_77 2.0]
+[wt 0.3]
+
+[scene 10001 0.4]
+[wt 0.7]
+
+[charaFadeout A 0.2]
+[scene 10000 0.1]
+[wt 0.1]
+
+[scene 10001 0.1]
+
+[charaTalk B]
+[charaFace D 1]
+[charaFace C 1]
+[charaFace H 1]
+[charaFadein D 0.1 0,1000]
+[charaFadein C 0.1 0,500]
+[charaFadein H 0.1 0,0]
+[charaMove D 0,0 0.4]
+[charaMove C 0,-500 0.4]
+[charaMove H 0,-1000 0.4]
+[wt 0.2]
+
+[charaFadeout D 0.2]
+[charaFadeout C 0.2]
+[charaFadeout H 0.2]
+
+[charaFace G 1]
+[charaFace F 1]
+[charaFace E 1]
+[charaFadein G 0.1 0,1000]
+[charaFadein F 0.1 0,500]
+[charaFadein E 0.1 0,0]
+[charaMove G 0,0 0.4]
+[charaMove F 0,-500 0.4]
+[charaMove E 0,-1000 0.4]
+[wt 0.2]
+
+[charaFadeout G 0.2]
+[charaFadeout F 0.2]
+[charaFadeout E 0.2]
+
+[charaFace C 1]
+[charaFace A 1]
+[charaFace H 1]
+[charaFadein C 0.1 0,1000]
+[charaFadein A 0.1 0,500]
+[charaFadein H 0.1 0,0]
+[charaMove C 0,0 0.4]
+[charaMove A 0,-500 0.4]
+[charaMove H 0,-1000 0.4]
+[wt 0.2]
+
+[charaFadeout C 0.2]
+[charaFadeout A 0.2]
+[charaFadeout H 0.2]
+
+[charaFace F 1]
+[charaFace E 1]
+[charaFace D 1]
+[charaFadein F 0.1 0,1000]
+[charaFadein E 0.1 0,500]
+[charaFadein D 0.1 0,0]
+[charaMove F 0,0 0.4]
+[charaMove E 0,-500 0.4]
+[charaMove D 0,-1000 0.4]
+[wt 0.2]
+
+[charaFadeout F 0.2]
+[charaFadeout E 0.2]
+[charaFadeout D 0.2]
+
+[scene 10000 0.1]
+[seStop ade306 0.3]
+[wt 0.1]
+
+[scene 10001 0.1]
+[wt 0.1]
+
+[se ad508]
+[scene 10000 0.1]
+[cameraMove 0.2 0,0 1.02]
+[charaMove I 0,0 0.2]
+[wt 1.4]
+[charaPut I 2000,2000]
+[charaEffectStop I bit_talk_film_noise]
+
+[fadeout black 1.5]
+[charaEffectStop J bit_talk_movie_film]
+[wait fade]
+[wt 0.4]
+
+[charaPut J 2000,2000]
+[cameraFilter normal]
+[cameraHome 0.1]
+[wt 0.1]
+
+[soundStopAll]
+[end]

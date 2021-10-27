@@ -1,0 +1,252 @@
+
+＄03-00-04-14-4-1
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 玛修]
+[charaSet B 1098127610 1 佩佩隆奇诺]
+[charaSet C 1019001 1 罗摩]
+[charaSet D 98115300 1 福尔摩斯]
+[charaSet E 2034000 1 退尔]
+[charaSet F 23003001 1 伽内什]
+[charaSet G 1039001 1 拉克什米]
+[charaSet H 1098167400 1 男性]
+
+[charaSet J 98115000 1 特效用]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.1]
+
+[scene 75007]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠伽内什
+攻击完全打不中嘛！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠佩佩隆奇诺
+啊啊真是的，感觉快要命中了结果还是打不中！[r]控制距离的手段也太巧妙了吧！？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+[se ade8]
+[seVolume ade8 0 0.6]
+[effect bit_talk_rarrow01or]
+[wt 1.0]
+
+[wt 0.1]
+
+[se ad170]
+[se ad686]
+[fowardEffect bit_talk_14]
+
+[charaShake A 0.05 3 2 0.8]
+[wt 1.0]
+
+[charaFace A 15]
+
+＠玛修
+呜，而且，无法看穿轨道的箭矢……！[r]光防守都已经竭尽全力了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠拉克什米
+恐怕是利用风神的力量自由操纵着轨道吧。[r]发射点也无法轻易看穿。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠罗摩
+简直就像是被逼入穷途末路的猎物。[r]但我们可不能坐以待毙。
+[k]
+
+＠罗摩
+……余姑且问一句，之前那种事还能做到吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠拉克什米
+应该很难吧 。情况和当时不一样。
+[k]
+
+＠拉克什米
+（当前状况下……无论如何运转女神的神核，[r]　都无法逆聚集可能性[line 3]）
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠罗摩
+这样啊。虽然听不太懂，但余放心了。
+[k]
+
+＠罗摩
+至少，这次我们不需要再眼睁睁地看着你一个人受伤，
+[k]
+
+＠罗摩
+不需要再采取那种令人对自己恼火，[r]毫无英雄风范的策略了吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+
+＠拉克什米
+你这个男人啊……
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad443]
+[wt 0.6]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.3]
+[seStop ad443 0.1]
+[wt 0.1]
+[se bac56]
+
+＠男性
+拉克什米大人！　我来帮助您！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠拉克什米
+慢着，你是无法对付这个男人的！[r]若非包含神秘的攻击[line 3]
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[se bac19]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[fowardEffect bit_shot_01 60,0]
+[charaMove E -120,0 0.3]
+[se ad7]
+[wt 0.4]
+[se bac56]
+[wt 0.4]
+[fowardEffectStop bit_shot_01 60,0]
+
+[cueSe Servants_203000 bac724]
+[fowardEffect bit_talk_37 0,0 V]
+[wt 0.4]
+[se bac403]
+
+＠男性
+嘎[messageShake 0.05 2 2 0.3]啊……
+[k]
+
+[charaFace E 4]
+
+＠退尔
+哎哟，抱歉，[r]尽管我没有收到去伤害民众的命令……
+[k]
+
+＠退尔
+可一旦有箭矢向我射来，[r]身体就下意识做出反应。
+[k]
+
+[charaFace E 1]
+＠退尔
+嗯，以临时赶制的而言，[r]你的十字弓还算不错嘛？
+[k]
+
+＠退尔
+不能对猎人射箭哦。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠罗摩
+哎。得想办法找到突破口才行……！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

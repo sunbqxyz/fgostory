@@ -1,0 +1,180 @@
+＄91-10-08-02-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 10310]
+[charaSet A 8001000 2 玛修]
+[charaSet B 98003003 2 Dr.罗曼]
+[charaSet C 98002000 2 芙芙]
+[charaSet D 1008001 1 齐格飞]
+[charaSet E 98014000 1 士兵]
+[charaSet F 98006000 1 魔物]
+[charaFace D 4]
+[charaFadein D 0 1]
+[fadein black 1]
+[wait fade]
+＠齐格飞
+御主、玛修·基列莱特。[r]十分抱歉，但我有事相求。
+[k]
+
+[charaFadeout D 0]
+[charaTalk A]
+[charaFadein D 0.1 0]
+[charaFace A 6]
+[charaFadein A 0.1 2]
+＠玛修
+该不会法夫纳又[line 2]？
+[k]
+
+[charaFace D 0]
+＠齐格飞
+不，那头龙在上次的战斗中已被彻底消灭了。[r]请放心。
+[k]
+
+＠齐格飞
+但因为龙的复活，我失去的宝具也出现了。[r]我希望能再去一次法兰西，确保我的宝具[line 2]。
+[k]
+
+[messageOff]
+[effect bit_talk_07]
+[se ad12]
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 4]
+[fadeout white 1]
+[effectStop]
+[wait effect]
+[wait fade]
+[charaFace A 0]
+[charaFadein A 0 1]
+[wait fade]
+[fadein white 0.5]
+[scene 20300]
+＠玛修
+到达目的地。
+[k]
+
+[charaFace A 7]
+＠玛修
+……确如齐格飞先生所说，[r]能感到强大的魔力。
+[k]
+
+[charaFadeout A 0]
+[communicationChara 98003003 1 5 0 0]
+＠Dr.罗曼
+我这里也确认了。[r]我会先寻找最短路径的，你们稍等一下。
+[k]
+
+？1：宝具是指什么？
+
+？！
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠齐格飞
+……你们听说过『莱茵的黄金』吗？
+[k]
+
+[charaFadeout D 0]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr.罗曼
+『莱茵的黄金』……[r]是齐格飞获得的财宝吧。
+[k]
+
+＠Dr.罗曼
+据说哪怕给当时世上所有的人平分，[r]也无法分尽这座财宝之山。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠齐格飞
+这话虽然有些太夸张了，但那些财宝确实足够我享用一生，[r]还够我的孩子享用一生[line 2]
+[k]
+
+＠齐格飞
+恐怕就算我的曾孙一辈子吃喝玩乐到老，[r]那些财宝还有富余吧。
+[k]
+
+[charaFace D 0]
+＠齐格飞
+……恐怕是法夫纳复活的余波，[r]导致『莱茵的黄金』也被召唤出来了。
+[k]
+
+＠齐格飞
+那些黄金充满了魔性。[r]如果我们不尽快控制住，那东西一定会立刻行动起来。
+[k]
+
+[charaFadeout D 0]
+[charaTalk A]
+[charaFadein D 0.1 0]
+[charaFace A 12]
+[charaFadein A 0.1 2]
+＠玛修
+行动起来是指什么意思？
+[k]
+
+＠齐格飞
+唔。比如说……如果有人找到了宝藏。[r]光看一眼就被财宝震撼的人就会成为财宝的俘虏。
+[k]
+
+＠齐格飞
+然而，化为财宝俘虏的人自然会开始浪费财宝。[r]只要一浪费，他拥有财宝的消息就会瞬间传出去。
+[k]
+
+＠齐格飞
+最后，会牵连周围的人[line 2]引发以血洗血的战斗。[r]战斗持续时间越长，范围越大，越难阻止。
+[k]
+
+＠齐格飞
+最终，这个国家将充斥着虐杀与行刑，[r]背叛与怀疑必然会无限蔓延。
+[k]
+
+[charaFace D 4]
+＠齐格飞
+『莱茵的黄金』就是这样的一种存在。[r]这种东西居然会被召唤出来，实在对不起……
+[k]
+
+[charaFace A 7]
+＠玛修
+明白了。那必须得阻止才行。[r]快赶往目的地吧！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+计算出路径了，抓紧时间！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[communicationCharaClear]
+[wait communicationChara]
+[wait fade]
+[charaFadeout D 0.1]
+[wt 0.5]
+[scene 20800]
+[charaFace F 0]
+[charaFadein F 0 1]
+[fadein black 0.5]
+[wait fade]
+[bgmStop BGM_EVENT_2 0.4]
+[bgm BGM_EVENT_3 0.1]
+[wt 1]
+[charaFadeout F 0.1]
+[charaFace D 0]
+[charaFadein D 0 1]
+＠齐格飞
+……魔性之物开始被黄金吸引过来了。[r]突破重围，御主！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

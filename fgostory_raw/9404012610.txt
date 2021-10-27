@@ -1,0 +1,885 @@
+
+
+
+＄94-04-01-26-1-0
+
+[soundStopAll]
+
+
+[charaSet A 1098177300 1 卡米拉]
+[charaSet B 1098155100 1 崔斯坦]
+[charaSet C 5039000 1 斯卡哈·斯卡蒂]
+[charaSet D 1098177400 1 Λ]
+[charaSet E 1098155000 1 兰斯洛特]
+[charaSet F 1008300 1 齐格飞]
+[charaSet G 6019300 1 风魔小太郎]
+[charaSet H 2023300 1 莫里亚蒂]
+[charaSet I 1098176810 1 刑部姬]
+[charaSet J 5009000 1 特效用]
+
+[scene 82200]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0 1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.2]
+
+[se ad73]
+[charaEffect A bit_talk_quickmove]
+[charaFadeout A 0.1]
+
+[wt 0.5]
+
+[se ad611]
+[charaPut J 1]
+[charaEffect J bit_talk_shot_02]
+[wt 0.5]
+
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_shot_02]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.1]
+
+[fowardEffect bit_talk_13 90,10]
+[se ad82]
+[fowardEffect bit_talk_14 90,10]
+[se ad602]
+[wt 0.1]
+
+[effect bit_talk_13 -90,-110]
+[se ad82]
+[effect bit_talk_14 -90,-110]
+[se ad602]
+[wt 0.15]
+
+[charaPut J -130,70]
+[charaEffect J bit_talk_13]
+[se ad82]
+[charaEffect J bit_talk_14]
+[se ad602]
+[wt 0.8]
+
+[seStop ad602 0.2]
+[seStop ad82 0.2]
+
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_13]
+[charaEffectStop J bit_talk_14]
+[effectStop bit_talk_13]
+[effectStop bit_talk_14]
+[fowardEffectStop bit_talk_13]
+[fowardEffectStop bit_talk_14]
+
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.1]
+[se ade320]
+[wt 0.1]
+[flashin once 0.6 0.6 B100DDFF B100DD00]
+[wt 1.6]
+[seStop ade320 0.5]
+[se ad685]
+[flashin once 0.1 1.5 FFFFFFFF FFFFFF00]
+[wt 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+[charaShake B 0.05 2 2 0.4]
+
+[wt 1.5]
+
+＠崔斯坦
+唔……！[r]这满溢的后妻感……多么美妙！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+
+[charaSet A 1009001 1 莫德雷德]
+[charaSet C 3039001 1 加雷斯]
+[wt 0.1]
+
+[se ad60]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.4 1]
+[wt 0.4]
+[seStop ad60 0.2]
+[wt 0.4]
+
+＠Λ
+你这个人只要能闭嘴，[r]还算得上是个好男人呢！
+[k]
+
+[messageOff]
+[se ad73]
+[charaFadeout D 0.1]
+[charaMoveScale D 1.2 0.2]
+[charaMove D 0,40 0.2]
+[wt 0.5]
+
+[effect bit_talk_kengekiall02]
+[se ad33]
+[wt 0.9]
+
+[se bac91]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[effect bit_talk_14]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0 1]
+[charaShake B 0.05 2 2 0.6]
+
+[charaScale D 1.0]
+
+[bgmStop BGM_EVENT_80 2.0]
+[wt 1.2]
+
+[charaMove B 0,-25 0.3]
+[wt 0.2]
+[se bac2]
+[wt 0.2]
+[wt 0.6]
+
+＠崔斯坦
+原……原来如此。[r]人妻们的配合都是幌子……
+[k]
+
+＠崔斯坦
+水上魔鸟的强烈一击才是真命天女。[r]可悲的崔斯坦，一生的失败。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Λ
+[line 3]呵。别开玩笑了。[bgm BGM_EVENT_81 0.1][r]谁是你的真命天女啊？
+[k]
+
+＠Λ
+如果继续卖惨，小心我真的捅死你。[r]总之你先给我躺下吧。看招。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-25]
+[wt 0.2]
+
+[cueSe Battle bac8]
+[charaShake B 0.07 5 0 0.3]
+[cueSeStop bac8 0.2]
+[wt 0.6]
+
+[charaFace B 9]
+
+＠崔斯坦
+啊。
+[k]
+
+[messageOff]
+[charaMove B 0,-45 0.5]
+[wt 0.1]
+[charaFadeout B 0.4]
+[wt 0.3]
+[se ad144]
+[wt 1.2]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠兰斯洛特
+……崔斯坦卿竟然被打败了。
+[k]
+
+[charaFace E 0]
+
+＠兰斯洛特
+但接下来打算怎么办？[r]你们已经消耗了妙龄美女这一战斗资源。
+[k]
+
+＠兰斯洛特
+忧郁的美女与脆弱而薄命的美女[r]确实拥有可怕的威力。
+[k]
+
+＠兰斯洛特
+但我已经见过了。[r]同一位夫人只能用一次。
+[k]
+
+＠兰斯洛特
+这一点[line 3]你们应该早就明白了吧？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠齐格飞
+同一位夫人只能用一次……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 15]
+[charaFadein G 0.1 1]
+
+＠G：风魔小太郎
+……[r]……这话……很有深意吗？
+[k]
+
+？1：一点也不深！
+？2：你们俩振作一点！
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠齐格飞
+抱……抱歉御主。[r]我差点被敌人迷惑了。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠莫里亚蒂
+呵呵呵。
+[k]
+
+[charaFace H 0]
+
+＠莫里亚蒂
+没什么大不了的，尽管骑士兰斯洛特和骑士崔斯坦一样，[r]都是难以抵抗美女的夏威夷衫骑士。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 3]
+[charaFadein I 0.1 1]
+
+＠刑部姬
+请……请问，这是因为他们是夏威夷衫骑士吧？[r]他们俩平时应该没有这个弱点属性吧？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠莫里亚蒂
+不过，没错，同样的手段不能用两次。[r]我很清楚这一点。
+[k]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaFace H 2]
+
+＠莫里亚蒂
+下一招，当然！  我也已经准备好了！[r][line 3]来吧，各位！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaSet G 6007001 1 杰基尔]
+[charaSet I 1098181000 1 兰斯洛特（懊恼）]
+
+[se ade321]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠莫德雷德
+噢！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad166]
+[wt 0.7]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.3]
+[seStop ad166 0.2]
+[wt 0.3]
+
+＠加雷斯
+是，加雷斯报道！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠杰基尔
+姑且还有我。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠I：兰斯洛特
+……………………[bgm BGM_EVENT_72 0.1][r]你竟然把加雷斯都笼络了。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠莫里亚蒂
+没错。
+[k]
+
+＠莫里亚蒂
+卡美洛赌场的夏威夷衫骑士？[r]确实，这是泳装剑豪的亚种，因夏天而兴奋的灵基形态！
+[k]
+
+[charaFace H 1]
+
+＠莫里亚蒂
+不过事到如今这些已经不重要了。[r]你就是你，是圆桌骑士兰斯洛特。
+[k]
+
+＠莫里亚蒂
+身为Berserker灵基的情况下暂且不论，[r]但你是以保有理性的Saber灵基现界的。
+[k]
+
+[charaFace H 0]
+
+＠莫里亚蒂
+那么[line 3]当你看见加雷斯时，[r]一定会产生某种感觉吧？
+[k]
+
+＠莫里亚蒂
+因为她还活着。[r]虽说英灵只是已故本人的影子，
+[k]
+
+＠莫里亚蒂
+但与生前的她如出一辙。
+[k]
+
+＠莫里亚蒂
+哪怕没有连贯性，也是完全保留了相同记忆与人格的存在。
+[k]
+
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠I：兰斯洛特
+……[r]……
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠加雷斯
+兰斯洛特卿……
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 1.4]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠莫里亚蒂
+你会怎么办呢？
+[k]
+
+[charaFace H 5]
+
+＠莫里亚蒂
+[line 3]依然打算刀剑相向吗，骑士阁下？
+[k]
+
+
+＠莫里亚蒂
+以前你斩杀了她吧？[r]还是击杀了她呢？
+[k]
+
+＠莫里亚蒂
+哎呀呀，骑士道被抛哪儿去了！
+[k]
+
+
+
+[charaFace H 2]
+
+＠莫里亚蒂
+过去！　身为圆桌骑士的兰斯洛特卿做出了不义之举！[r]而在现场，遭到了以阿格规文卿为首的……
+[k]
+
+＠莫里亚蒂
+圆桌骑士们的指责……[r]噢噢，可拥有无穷的武练的兰斯洛特卿太强了！
+[k]
+
+＠莫里亚蒂
+一个接一个赤手空拳地屠杀了完全武装的骑士。
+[k]
+
+[charaFace H 4]
+
+＠莫里亚蒂
+不只是陷害你的阿格规文卿，[r]连十分崇拜你的加雷斯卿也……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠加雷斯
+……………………
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠莫里亚蒂
+……多么凄惨啊。
+[k]
+
+[charaFace H 0]
+＠莫里亚蒂
+而事实究竟如何呢，骑士兰斯洛特？[r]你难道真的是在没有认出对方的情况下杀死加雷斯卿吗？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠I：兰斯洛特
+…………
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠莫里亚蒂
+还是说……
+[k]
+
+＠莫里亚蒂
+你明知她就是那位美掌的骑士，[r]明知她是像小狗一样亲近自己的加雷斯卿[line 3]
+[k]
+
+
+？1：莫里亚蒂！
+？2：这个……有些过分了……！
+
+？！
+
+[bgmStop BGM_EVENT_72 1.0]
+
+[charaFace H 1]
+
+＠莫里亚蒂
+……唔。
+[k]
+
+＠莫里亚蒂
+是吗？[r]我还特意选择了儿童向的柔和说法呢。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠I：兰斯洛特
+哎呀。[r]看来现在可不是穿上夏威夷衫兴奋不已的时候呢。
+[k]
+
+＠I：兰斯洛特
+没错，我的确罪孽深重。[r]哪怕成为了英灵，哪怕穿上了夏威夷衫，也无法改变。
+[k]
+
+[messageOff]
+[wt 1.2]
+
+
+＠I：兰斯洛特
+…………加雷斯，我……
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠加雷斯
+兰斯洛特大人[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠莫德雷德
+那么！  去死吧！
+[k]
+
+[messageOff]
+[charaPut J 0,0]
+[charaScale J 1.4]
+[charaEffect J bit_talk_h_slash01]
+[wt 0.3]
+[cueSe Battle bac416]
+[flashin once 0.2 0.2 FFFFFF80 FFFFFF80]
+[wt 0.1]
+[effect bit_talk_14]
+[wt 0.1]
+[charaFadeout A 0]
+[charaTalk I]
+[charaFace I 1]
+[charaScale I 1.1]
+[charaShake I 0.05 3 1 0.3]
+[charaFadein I 0 1]
+
+[se ad671]
+
+[charaShake I 0.05 3 1 0.2]
+[charaMoveScale I 1.0 0.2]
+[charaMove I 1 0.2]
+[wt 0.1]
+[seStop ad671 0.6]
+[wt 0.6]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[se ad171]
+[wt 1.0]
+
+[charaFace A 2]
+
+＠莫德雷德
+你破绽太多啦，兰斯洛特！[r]看来不用魔剑也能打败你呢！
+[k]
+
+[charaFace A 1]
+
+＠莫德雷德
+不错不错！[r]面对加雷斯时你竟会如此畏手畏脚的！
+[k]
+
+[charaFace A 5]
+
+＠莫德雷德
+加雷斯！　你来当盾！[r]站在那里别动！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[se ad166]
+[wt 0.2]
+[seStop ad166 0.15]
+
+＠加雷斯
+你……说什么呢！[r]我也已经做好战斗准备了啊！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠I：兰斯洛特
+…………
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠加雷斯
+啊，啊，但我并不打算杀死您！[r]我只是想帮大家从夏威夷衫的束缚解脱出来而已！
+[k]
+
+？1：夏威夷衫的束缚？
+？2：又是新单词吧？
+
+？！
+
+
+[charaFace C 3]
+
+＠加雷斯
+啊，这只是加雷斯我隐约这么觉得而已！
+[k]
+
+[charaFace C 12]
+
+＠加雷斯
+虽然圆桌的各位穿什么都很合适，[r]但我觉得还是穿铠甲最好！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠莫德雷德
+喂，御主，我想你应该发现了，那家伙就是个笨蛋！[r]别在意她说的话哦。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠加雷斯
+莫德雷德！[r]你那是对姐姐说话时该用的口气吗！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth A 2]
+
+[charaTalk off]
+[charaFace C 2]
+[charaFadein C 0.1 0]
+[charaFace A 2]
+[charaFadein A 0.1 2]
+[wt 0.3]
+
+[charaMove C -200,0 0.2]
+[charaMove A 200,0 0.2]
+[wt 0.1]
+[se ad170]
+[se ad82]
+[se ad44]
+[charaShake C 0.03 4 4 0.5]
+[charaShake A 0.03 4 4 0.5]
+[wt 0.1]
+[charaMove C -250,0 0.2]
+[charaMove A 250,0 0.2]
+[wt 0.8]
+
+
+[charaMoveReturn C -200,0 0.3]
+[charaMoveReturn A 200,0 0.3]
+[wt 0.1]
+[se ad170]
+[seStop ad170 0.4]
+[se ad82]
+[seStop ad82 0.4]
+[se ad44]
+[seStop ad44 0.4]
+[wt 0.2]
+
+
+[charaMove C -200,0 0.2]
+[charaMove A 200,0 0.2]
+[wt 0.1]
+[se ad170]
+[se ad82]
+[se ad44]
+[charaShake C 0.03 4 4 0.5]
+[charaShake A 0.03 4 4 0.5]
+[wt 0.1]
+[charaMove C -250,0 0.2]
+[charaMove A 250,0 0.2]
+[wt 0.8]
+
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaShakeStop C]
+[charaShakeStop A]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠杰基尔
+二位！[r]别在兰斯洛特卿面前做这种多余的事啦！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠莫德雷德
+哎哟。
+[k]
+
+
+[charaFace A 5]
+
+＠莫德雷德
+这么说也是，瘦死的骆驼比马大，这家伙可是兰斯洛特。[r]尽管中了我们的计谋，但也不能掉以轻心。
+[k]
+
+[charaFace A 2]
+
+＠莫德雷德
+所以，我们上！　加雷斯！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠加雷斯
+呐喊助威应该由我来！[r]我们上，莫德雷德！！
+[k]
+
+[charaFace C 16]
+
+＠加雷斯
+……兰斯洛特大人！[r]请堂堂正正地接下加雷斯的枪吧！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠兰斯洛特
+[line 3]好！　来吧！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+

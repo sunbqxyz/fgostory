@@ -1,0 +1,234 @@
+
+＄94-01-52-54-1-0
+
+
+
+[soundStopAll]
+
+[bgm BGM_EVENT_65 0.1]
+
+
+
+[messageOff]
+[effectPause bit_talk_parasolwipe]
+[wait effectStart bit_talk_parasolwipe]
+
+
+[branch _PlayEffect_1st PM4 1]
+
+
+[label _PlayEffect_etc]
+
+[tapSkip _from_TapSkip_etc]
+
+[scene 10001]
+
+[fadein white 1.0]
+[wait fade]
+
+[effectPause bit_talk_goal1_5]
+[wait effectStart bit_talk_goal1_5]
+
+[effectStart bit_talk_parasolwipe]
+[wt 1.0]
+
+[effectStart bit_talk_goal1_5]
+[wait effect bit_talk_goal1_5]
+[label _from_TapSkip_etc]
+
+[effectDestroy bit_talk_goal1_5]
+[effectDestroy bit_talk_parasolwipe]
+[fadein black 0]
+[wait fade]
+
+[branch _PlayEffect_End]
+
+
+[label _PlayEffect_1st]
+
+[tapSkip _from_TapSkip_1st]
+
+[effectPause bit_talk_winner1_5]
+[wait effectStart bit_talk_winner1_5]
+
+[scene 10001]
+
+[fadein white 1.0]
+[wait fade]
+
+[effectStart bit_talk_winner1_5]
+
+[wt 4.9]
+[voice 402600_0_M810]
+
+[wt 1.0]
+[voice 402600_0_M811]
+
+[wt 3.8]
+
+
+[wt 1.2]
+
+[effectStart bit_talk_parasolwipe]
+[scene 10001]
+[wt 1.0]
+[scene 44300]
+[wait effect bit_talk_parasolwipe]
+
+[label _from_TapSkip_1st]
+
+[voiceStop]
+[scene 44300]
+[effectDestroy bit_talk_winner1_5]
+[effectDestroy bit_talk_parasolwipe]
+[fadein black 0]
+[wait fade]
+
+
+[label _PlayEffect_End]
+
+[bgmStop BGM_EVENT_65 0.3]
+[wt 0.4]
+
+[branch _PlayVoice_Start PM4 1]
+
+[branch _PlayVoice_End]
+
+
+
+
+[label _PlayVoice_Start]
+
+[charaSet A 7029000 1 织田信长]
+[charaSet B 6018000 1 谜之赛车手X]
+
+[flagRandom _PlayVoiceNo 1 3]
+
+
+[branch _PlayVoice_3rd _PlayVoiceNo 3]
+[branch _PlayVoice_2nd _PlayVoiceNo 2]
+[branch _PlayVoice_1st _PlayVoiceNo 1]
+
+
+[label _PlayVoice_1st]
+
+[bgm BGM_EVENT_64 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 0]
+[charaFadein A 0.4 2]
+[charaFadein B 0.4 0]
+[wt 0.7]
+
+
+[charaFace A 11]
+＠织田信长
+[tVoice ChrVoice_9010003 0_M670]
+我，第一名！　[wait tVoice]
+[k]
+[tVoice ChrVoice_9010003 0_M671]
+[charaFace A 0]
+……世界又缩小了啊。[wait tVoice]
+[k]
+
+[charaFace B 2]
+＠谜之赛车手X
+[tVoice ChrVoice_9010003 0_M672]
+太松懈了，事情才刚开始！　[wait tVoice]
+[k]
+[tVoice ChrVoice_9010003 0_M673]
+[charaFace B 5]
+在所有 Saber 被毁灭之前，我会不断战斗下去！[wait tVoice]
+[k]
+
+
+[charaFace A 1]
+＠织田信长
+[tVoice ChrVoice_9010003 0_M674]
+我们就不能好好竞速吗！[wait tVoice]
+[k]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_2nd]
+
+[bgm BGM_EVENT_64 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 0]
+[charaFadein A 0.4 2]
+[charaFadein B 0.4 0]
+[wt 0.7]
+
+[charaFace A 1]
+＠织田信长
+[tVoice ChrVoice_9010003 0_M680]
+冲线！　[wait tVoice]
+[k]
+[tVoice ChrVoice_9010003 0_M681]
+[charaFace A 10]
+信长选手，在争夺天下的竞速中赢得了首位！　[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠织田信长
+[tVoice ChrVoice_9010003 0_M682]
+哇哈哈哈哈！　让我想起了我年轻的时候！[twt 1.7][charaFace A 7][wait tVoice]
+[k]
+
+[charaFace B 1]
+＠谜之赛车手X
+[tVoice ChrVoice_9010003 0_M683]
+我也要向着天下第一 Saber 的目标奋勇直冲！　[wait tVoice]
+[k]
+[tVoice ChrVoice_9010003 0_M684]
+[charaFace B 2]
+婆娑罗！[wait tVoice]
+[k]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_3rd]
+
+[bgm BGM_EVENT_64 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFace B 0]
+[charaFadein A 0.4 2]
+[charaFadein B 0.4 0]
+[wt 0.7]
+
+[charaFace A 4]
+＠织田信长
+[tVoice ChrVoice_9010003 0_M690]
+呼……这……这次差一点就不行了呢！[twt 1.7][charaFace A 5][wait tVoice]
+[k]
+
+[charaFace B 4]
+＠谜之赛车手X
+[tVoice ChrVoice_9010003 0_M691]
+哎，假如刀锋再往右偏1公分，[r]这胜负可就不知会如何了啊。[wait tVoice]
+[k]
+
+[charaFace A 8]
+＠织田信长
+[tVoice ChrVoice_9010003 0_M692]
+你到底在比什么啊？[wait tVoice]
+[k]
+
+
+
+[label _PlayVoice_End]
+
+
+[messageOff]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_64 0.4]
+[wait fade]
+[soundStopAll]
+[end]

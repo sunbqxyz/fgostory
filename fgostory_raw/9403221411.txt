@@ -1,0 +1,165 @@
+
+＄94-03-22-14-1-1
+[soundStopAll]
+
+[charaSet A 1098157500 1 伊丽莎白]
+[charaSet B 1098162000 1 玛修]
+[charaSet C 1098160710 0 1]
+[charaSet D 1098123200 1 戈尔德鲁夫]
+[imageSet H cut097_Item02 1]
+[charaSet J 5009000 1 特效用dummy]
+
+[scene 69800]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠伊丽莎白
+喂喂[line 3]！[r]你们想干嘛啦，竟敢打扰我的演唱会[line 3]！
+[k]
+
+＠伊丽莎白
+我只是因为活动室竣工了，[r]才被叫来活跃气氛的！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠玛修
+抱……抱歉！[r]但这样下去这里会被彻底破坏的……
+[k]
+
+＠玛修
+看。警卫也来阻止了！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠警卫
+………………
+[k]
+
+？1：尽管唱得非常美妙……
+？2：但伊丽亲的力量在这大厅中犹如火焰公主……
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠玛修
+嗯。所以如果可能的话，[r]能否去野外舞台继续表演？
+[k]
+
+＠玛修
+在那边的话，我们也能一起观赏了……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠伊丽莎白
+野外舞台！	还有那种东西吗！？[r]就是那个，会放烟雾的那种吧！
+[k]
+
+[charaFace A 0]
+
+＠伊丽莎白
+真不错，在略感寒冷的演唱会中，[r]让心灵与身体快速到达最高潮！
+[k]
+
+[revivalBranch lblNormal lblRevival]
+[label lblNormal]
+
+＠伊丽莎白
+那再见了，[&小狗崽:小鹿崽]！[r]2020年新年快乐！
+[k]
+
+[branch lblConf]
+
+[label lblRevival]
+
+＠伊丽莎白
+那再见了，[&小狗崽:小鹿崽]！[r]2021年新年快乐！
+[k]
+
+[label lblConf]
+
+[messageOff]
+[charaFadeout A 0.4]
+[se ad459]
+[seVolume ad459 0 0.8]
+[wt 0.8]
+[seStop ad459 1.0]
+[wt 0.7]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠戈尔德鲁夫
+唔，嗯。[r]真是个雷鸣般的小丫头呢。唔？
+[k]
+
+[charaFace D 10]
+
+＠戈尔德鲁夫
+好像落下了什么东西……[r]这是她的灵衣碎片吧。
+[k]
+
+[charaFace D 0]
+
+＠戈尔德鲁夫
+好，好吧，反正火蜥蜴和火鼠差不了多少。[r]就把这当作『火鼠裘』吧。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.5]
+[wait fade]
+[charaFadeout D 0.1]
+[scene 10000]
+[wt 1.0]
+[fadein black 0.1]
+[wait fade]
+
+[cueSe Battle bas2]
+[charaFace H 0]
+[charaFadein H 0.5 0,-200]
+[wt 2.0]
+[charaFadeout H 0.6]
+[wt 1.0]
+
+？1：得到『火鼠裘』啦！
+？2：赶快去[#温泉:野外]舞台吧！
+
+？！
+
+
+
+[wt 2.0]
+[soundStopAll]
+[end]

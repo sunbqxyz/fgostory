@@ -1,0 +1,505 @@
+
+
+
+＄03-00-06-03-2-0
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 玛修]
+[charaSet B 1017001 1 武藏]
+[charaSet C 8001410 1 武装玛修（无护目镜）]
+[charaSet D 98002000 1 芙芙]
+[charaSet E 9005001 1 福尔摩斯]
+[charaSet S 5009000 1 特效用dummy1]
+[charaSet T 5009000 1 特效用dummy2]
+
+[scene 10000]
+
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk depthOff]
+[charaDepth S 0]
+[charaDepth T 1]
+
+[charaPut S 1]
+[charaEffect S bit_talk_kengekiall02]
+[charaPut T -70,50]
+[charaScale T 1.2]
+[charaEffect T bit_talk_14]
+[se ad32]
+[wt 0.3]
+[charaScale T 1.1]
+[charaPut T 60,10]
+[charaEffect T bit_talk_14]
+[se ad32]
+[wt 0.2]
+[charaScale T 1.4]
+[charaPut T -50,-20]
+[charaEffect T bit_talk_14]
+[se ad32]
+[wt 0.1]
+[charaScale T 1.0]
+
+[fadeout black 0.1]
+[wait fade]
+[scene 91900]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0 1]
+[fadein black 0.2]
+[wait fade]
+
+[charaPut S 1]
+[charaEffect S bit_talk_v_slash01]
+[se ad618]
+[wt 0.3]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout B 0]
+[wt 0.1]
+[charaPut S 1200,1200]
+[charaEffectDestroy S]
+
+[se ad625]
+[wt 0.2]
+[shake 0.03 4 4 1.2]
+[wt 1.5]
+[seStop ad625 0.3]
+
+[se ad85]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+[se bac170]
+[wt 0.6]
+
+[se ade345]
+[se ad882]
+[se ad881]
+[charaPut S -50,10]
+[charaEffect S bit_talk_impactlanding]
+[effect bit_talk_14]
+[shake 0.03 7 7 1.5]
+[wt 1.6]
+[se ade345]
+[charaPut T 100,0]
+[charaEffect T bit_talk_impactlanding]
+[effect bit_talk_14]
+[shake 0.03 7 7 1.5]
+[charaShake A 0.05 2 2 0.6]
+[se ad608]
+[se ad468]
+[wt 1.4]
+[seStop ad608 0.3]
+[seStop ad57 0.2]
+
+
+
+
+
+
+
+[wt 0.5]
+
+[charaFace A 2]
+
+＠玛修
+武藏小姐……！
+[k]
+
+[charaEffectDestroy A]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠武藏
+玛修，支援得好！[r]好嘞，防御就交给你了！
+[k]
+
+[charaFace B 2]
+
+＠武藏
+置生死于度外，集全力于攻击，不分先后五连击！[r]专心一意，目标是[#右臂:那里]！
+[k]
+
+[messageOff]
+[se ad73]
+[charaFadeout B 0.1]
+[effect bit_talk_quickmove]
+[wt 0.6]
+[se ad976]
+[wt 0.5]
+
+
+[se ad980]
+[wt 0.4]
+
+[se ad618]
+[effect bit_talk_x_slash01 0,0 V]
+[wt 0.2]
+[se ad618]
+[effect bit_talk_x_slash03]
+[effect bit_talk_14]
+[wt 0.1]
+[se ad618]
+[effect bit_talk_x_slash03 0,0 H]
+[wt 0.1]
+[se ad618]
+[effect bit_talk_14]
+[effect bit_talk_x_slash02]
+
+[wt 0.5]
+
+
+[charaPut S 1]
+[charaEffect S bit_talk_v_slash01]
+[se ad878]
+[wt 0.3]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.2]
+
+[charaPut S 1200,1200]
+[charaEffectDestroy S]
+
+[se ad885]
+[wt 1.0]
+[seStop ad885 1.0]
+[wt 0.5]
+
+[cueSe Battle bac234]
+[shake 0.05 0 4 1.5]
+[wt 2.0]
+
+[charaTalk off]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+好厉害……！[r]用刀背的连续攻击砍向出现裂痕的部位……！
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth A 2]
+
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.1]
+[charaFadeout A 0.4]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[wt 1.2]
+
+[charaFace C 7]
+
+＠C：玛修
+武藏小姐的攻击斩断了青铜巨人的右臂部位！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaTalk on]
+[charaTalk B]
+[shake 0.05 0 2 1.5]
+[se ad885]
+[seVolume ad885 0 0.1]
+[seVolume ad885 1.0 0.6]
+[wt 1.5]
+[seStop ad885 1.0]
+
+＠C：玛修
+青铜巨人！[r]魔力反应衰减！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 12]
+[se ad223]
+[fowardEffect bit_talk_quickmove 0,0 V]
+[charaSpecialEffect B appearanceReverse 1 0.25]
+[wt 1.5]
+
+[cueSe Battle bac306]
+[wt 1.0]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaFace B 0]
+
+＠武藏
+一击斩不断的对手只要不断殴打再斩断就行了！[r]就像是柳生将石灯笼一刀两断那样！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠C：玛修
+原……原来如此。[r]真是获益匪浅。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠芙芙
+芙芙。[r]芙。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠武藏
+没什么，这点小事交给我[line 3][wt 0.1][bgmStop BGM_EVENT_70 0.7][charaFace B 9]唔？[r]唔唔唔？
+[k]
+
+[charaFace B 12]
+
+＠武藏
+唔～……总觉得不太对劲呢。[r]这种“胜负未定”的感觉是……
+[k]
+
+[messageOff]
+[wt 0.3]
+
+[charaMove B 0,-5 0.2]
+[cueSe Battle bac305]
+[wt 1.0]
+
+[bgm BGM_EVENT_81 0.1]
+
+？1：武藏亲？
+
+[charaFace B 7]
+[wt 1.0]
+[charaFace B 12]
+
+＠武藏
+[%1]，抱歉。[r]看来似乎是[#完全无效]呢。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？2：！　玛修，维持战斗态势！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+[wt 0.7]
+[charaFace C 7]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth A 2]
+
+[se ade57]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[charaFace A 7]
+[charaFadein A 0.4 1]
+[wt 0.5]
+[charaFadeout C 0]
+
+[wt 0.5]
+
+[cueSe Battle bac170]
+[wt 1.0]
+
+[charaFace A 2]
+
+＠玛修
+明白了，御主！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+[charaTalk on]
+
+？！
+
+[wt 0.3]
+
+[se ad426]
+[shake 0.05 0 2 1.5]
+[wt 1.2]
+[se ad898]
+[seVolume ad898 0 0.3]
+[wt 1.0]
+
+[se ad883]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+被斩断的右臂……[r]连回去了……
+[k]
+
+[charaFace A 15]
+
+＠玛修
+断臂重新连起来……恢复原状了！[r]青铜巨人！　魔力再度提升至不明数值！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠福尔摩斯
+自我修复机能！[r]令人很感兴趣，但[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠武藏
+哎呀呀！[r]唔～，对身体里没有血液的家伙果然没用啊！
+[k]
+
+[charaFace B 0]
+
+＠武藏
+各位！[r]要重新战斗或者说连续战斗了，体力还跟得上吗！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+嗯！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠武藏
+[%1]！
+[k]
+
+？1：还行！
+？2：这次一定要打倒它，然后逃离这里！
+
+？！
+
+[charaFace B 1]
+
+＠武藏
+感谢你精神饱满的回答！[wt 0.4][charaFace B 7][r]干劲涌现啰～！
+[k]
+
+[charaFace B 0]
+
+＠武藏
+但是我们那么闹腾，追兵们肯定一目了然。[r]不惜任何代价都要尽快解决[line 3]
+[k]
+
+＠武藏
+三十六计，走为上计。[r]我们就如疾风般逃跑吧！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad625]
+[se ad423]
+[seVolume ad423 0 0.5]
+[wt 1.5]
+[seStop ad625 1.0]
+
+[se ad57]
+[shake 0.03 4 4 1.2]
+[wt 1.4]
+[seStop ad57 0.2]
+
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠武藏
+唔噢噢个头啦！[r]我没在对你说话，给我闭嘴！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 0.7]
+[charaFace B 5]
+[wt 1.0]
+
+[charaMove B 0,10 0.2]
+[charaMoveScale B 1.05 0.2]
+[charaMove B 0,5 0.2]
+[se ad443]
+[wt 0.2]
+[seStop ad443 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_63 0.1]
+[charaFace B 2]
+
+＠武藏
+来吧，看我迅速地[line 3][r][line 3]砍下！　你的脑袋！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_63 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

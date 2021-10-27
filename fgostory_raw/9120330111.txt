@@ -1,0 +1,162 @@
+
+
+＄91-20-33-01-1-1
+
+[soundStopAll]
+
+[charaSet A 2033000 1 马嘶]
+[charaSet B 99502600 1 玛修]
+[charaSet C 2008001 1 崔斯坦]
+[charaSet D 2030001 1 喀戎]
+[charaSet E 98006200 1 敌人]
+
+[charaSet I 98006100 1 特效dummy1]
+[charaSet J 98006100 1 特效dummy2]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_MiddleLevel]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 30400]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.2 1]
+[wt 0.1]
+
+＠马嘶
+呜啊啦！
+[k]
+
+[messageOff]
+[se bac1]
+[charaFadeout A 0.4]
+[charaMove A 0,10 0.2]
+[charaMoveScale A 1.2 0.2]
+[charaEffect I bit_talk_41]
+[wt 0.4]
+[charaMoveScale A 1.0 0]
+[charaPut I 2000,2000]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.3]
+
+[se bac150]
+[effect bit_talk_14 120,100]
+[wt 0.1]
+[charaMove E -15,0 0.2]
+[charaShake E 0.04 3 4 0.2]
+[wt 0.12]
+
+[se bac149]
+[effect bit_talk_14 -80,-20]
+[wt 0.1]
+[charaMove E 10,0 0.2]
+[charaShake E 0.04 4 3 0.2]
+[wt 0.12]
+
+[se bac150]
+[effect bit_talk_14 110,-100]
+[wt 0.1]
+[charaMove E -15,0 0.2]
+[charaShake E 0.04 4 4 0.4]
+[wt 0.5]
+
+[se ad26]
+[charaShake E 0.04 3 3 0.7]
+[wt 1.1]
+
+[se ad42]
+[charaSpecialEffect E enemyErasure 0,0 1.5]
+[wt 0.7]
+
+[wait charaSpecialEffect E]
+[bgmStop BGM_EVENT_3 1.2]
+[charaFadeout E 0.1]
+[wt 1.2]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 0.2]
+
+＠马嘶
+……哈。[r]还以为愤怒能稍微平息一些……
+[k]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaFace A 5]
+
+＠马嘶
+或[messageShake 0.04 3 3 1.0]许是因为敌人太激烈，[r]愤怒变得更加沸腾了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageShakeStop]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠崔斯坦
+节哀顺变……
+[k]
+
+[charaFace C 0]
+
+＠崔斯坦
+那接下来一定要去真正的森林浴放松一下……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠喀戎
+那可真是求之不得。[r]我也有些受不了这炎热了。
+[k]
+
+[charaPut J 0,0]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠玛修
+好……好的。
+[k]
+
+[charaFace B 7]
+
+＠玛修
+接下来一定会设定成能进行森林浴的地方。
+[k]
+
+[messageOff]
+[se ad15]
+[wt 0.3]
+
+[se ad172]
+[wt 0.7]
+
+[fadeout black 2.0]
+[seStop ad172 2.0]
+[bgmStop BGM_EVENT_94 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,442 @@
+
+
+＄94-03-01-03-1-1
+
+
+[soundStopAll]
+
+[charaSet A 3034001 1 茨木童子]
+[charaSet B 6029001 1 Assassin Paraiso]
+[charaSet C 99502600 1 玛修]
+[charaSet E 1098116710 1 鞭之鬼]
+[charaSet F 5040000 1 护法少女]
+
+[charaSet G 10008001 1 志度内]
+[charaSet D 98115000 1 特效用2]
+[charaSet H 98115000 1 特效用]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 64700]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.1]
+[se ad7]
+[charaMoveScale B 1.1 0.1]
+[wt 0.1]
+[charaFadeout B 0.1]
+[se adm14]
+[wt 0.2]
+[se adm14]
+[wt 0.5]
+
+[charaTalk depthOff]
+[charaDepth E 0]
+[charaDepth D 1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+[charaPut D -100,50]
+[charaEffect D bit_talk_14]
+[se ad170]
+[wt 0.3]
+[charaPut D 100,0]
+[charaEffect D bit_talk_14]
+[se ad170]
+[se ad7]
+[charaMoveReturn E -20,0 0.2]
+[wt 0.8]
+[charaFace E 1]
+
+[charaMoveReturn E 0,-5 0.2]
+[se adm14]
+[wt 0.2]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[cueSe Servants_402900 bac728]
+[effect bit_talk_whip02]
+[wt 0.3]
+[cueSe Servants_402900 bac728]
+[wt 0.6]
+
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[cueSe Servants_103200 bac512]
+[charaShake B 0.05 2 2 0.4]
+[charaMoveScale B 1.0 0.4]
+[wt 0.6]
+
+＠B：[servantName 602900:Assassin Paraiso:望月千代女]
+呜！[r]不愧是名震天下的异邦女君主！
+[k]
+
+＠B：[servantName 602900:Assassin Paraiso:望月千代女]
+强得离谱……！[r]不好对付呢……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠鞭之鬼
+你也是哦。呵呵，我很喜欢战斗或是工作的女性哦？
+[k]
+
+[charaFace E 11]
+
+＠鞭之鬼
+但是，过度为他人效劳的女人就不好说了吧？[r]那不是在扼杀自我吗？
+[k]
+
+[charaFace E 14]
+
+＠鞭之鬼
+必须更积极主动一点！[r]没错，就像这匹马[line 3]随心所欲地[line 3]
+[k]
+
+[charaFace E 3]
+[bgmStop BGM_EVENT_3 1.0]
+
+＠鞭之鬼
+你不认为木马有各种用途吗？[r]玩马，玩马……
+[k]
+
+＠鞭之鬼
+……还有，玩马！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠玛修
+全部都是玩马[line 3]
+[k]
+
+[messageOff]
+[charaFace C 6]
+[wt 1.0]
+
+＠玛修
+啊，啊啊……！
+[k]
+
+[charaFace C 14]
+
+＠玛修
+前辈，不行啦！[r]梅芙对旋转木马的……
+[k]
+
+＠玛修
+那些马们，该怎么说呢……[r]就像面对所爱之人般拥抱，还跳起了蛊惑的舞蹈……
+[k]
+
+[charaFace C 3]
+
+＠玛修
+这景象对茨木童子小姐是有害的！[r]前辈！　这……这个必须严令禁止！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+汝该不会当真觉得吾是个幼童了吧。
+[k]
+
+[charaFace A 5]
+
+＠茨木童子
+不是啦！[r]哎！
+[k]
+
+＠茨木童子
+那算什么！　酒吞的话暂且不论，汝这种行为简直让人笑掉大牙！[r]若想吃马，直接吃不就行了嘛。真是的。
+[k]
+
+？1：[&哎哟:啊]，茨木童子小姐……
+？2：说得对，你觉得她是肚子饿了吧。
+
+？！
+
+[charaFace A 2]
+
+＠茨木童子
+怎……怎么啦！[r]除此以外还能是什么！　没有其他可能性了吧！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.5]
+[charaFace B 4]
+
+＠B：[servantName 602900:Assassin Paraiso:望月千代女]
+……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+唔，为何要移开视线。汝移开了视线吧？
+[k]
+
+[charaFace A 2]
+
+＠茨木童子
+为什么要低下头。抬起头来看着吾。不看吾就吃了汝。[r]哎，为何要摇头！　忍者之辈！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[bgmStop BGM_EVENT_7 0.5]
+
+
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+
+＠鞭之鬼
+…………唉。什么嘛，这孩子居然那么青涩吗？[r]真扫兴。
+[k]
+
+[charaFace E 0]
+[bgm BGM_EVENT_3 0.1]
+
+＠鞭之鬼
+那就速战速决吧。[r]鬼工作人员干部！
+[k]
+[messageOff]
+[charaMoveReturn E 0,-5 0.2]
+[cueSe Servants_402900 bac728]
+[wt 1.0]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad57]
+[shake 0.05 0 3 0.3]
+[wt 1.5]
+[shake 0.05 0 3 0.3]
+[wt 1.0]
+[seStop ad57 0.5]
+[se ad17]
+[wt 2.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+唔！　不过是体格巨大而已！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠玛修
+是大型鬼！　检测到复数反应！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠志度内
+那个女游乐设施经理，[r]居然把大鬼也叫来了呀。
+[k]
+
+[charaFace G 8]
+
+＠志度内
+也就是说，她手上有不少黄金呢……[r]唔，可能有些麻烦了。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠玛修
+！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+
+
+[wait backEffectStart]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠B：[servantName 602900:Assassin Paraiso:望月千代女]
+光梅芙阁下一个人就很难对付了啊！[r]除此之外居然还会出现强大个体的鬼吗，唔唔！
+[k]
+
+[charaFadeout B 0.1]
+[bgmStop BGM_EVENT_3 1.0]
+[wt 0.1]
+
+＠谜之声音
+[line 6]既然如此，要妾身帮忙吗？
+[k]
+
+？1：这声音！
+？2：难道！
+
+？！
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠鞭之鬼
+什么人！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.3 1]
+[wt 0.1]
+
+[charaEffect H bit_talk_rarrow01br]
+[wt 0.2]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[scene 10000]
+[charaPut H -50,50]
+
+[wipein rectangleStripDownToUp 0.1 1]
+[wait wipe]
+
+[se adm15]
+[wt 1.0]
+
+[wipeout rectangleStripDownToUp 0.1 1]
+[wait wipe]
+
+[scene 64700]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[wt 0.1]
+
+[wipein rectangleStripUpToDown 0.1 1]
+[wait wipe]
+
+[se ad7]
+[charaMoveScale E 0.92 0.4]
+[charaMoveReturn E 0,5 0.3]
+[wt 0.25]
+
+[charaDepth D 10]
+
+[se ad322]
+[shake 0.05 3 3 0.3]
+[charaPut D 0,-300]
+[charaEffect D bit_talk_14]
+[wt 0.6]
+[seStop ad322 0.4]
+
+[charaFace E 4]
+
+＠鞭之鬼
+呀啊，不知从哪里飞来了棍棒！？
+[k]
+
+[charaFace E 2]
+
+＠鞭之鬼
+到底是什么啦，一旦出声就必须露出身形，[r]这不是气息遮断技能的潜规则吗！　露出真面目来！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+＠谜之声音
+既然你这么说嘛，[r]那就恭敬不如从命啦？
+[k]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 0]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect F appearance 1 0.25]
+[wt 1.0]
+[bgm BGM_HALLOWEEN_2 0.1]
+
+[charaFace F 7]
+[effect bit_talk_41]
+[cameraMove 0.2 0,0 1.1]
+
+[se ade211]
+＠护法少女
+[line 3]护法少女，再次前来造访！
+[k]
+
+
+[messageOff]
+[se ade217]
+[effect bit_talk_magic_girl_light]
+[wt 3.0]
+[fadeout black 2.0]
+[bgmStop BGM_HALLOWEEN_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

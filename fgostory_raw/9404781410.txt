@@ -1,0 +1,180 @@
+
+
+
+
+＄94-04-78-14-1-0
+
+[soundStopAll]
+
+[charaSet A 3043000 1 绘里濑]
+[charaSet B 25005000 1 旅行者]
+[charaSet C 98001000 1 玛修]
+[charaSet R 5009000 1 特效用dummy]
+[charaSet S 5009000 1 特效用dummy]
+[charaSet T 5009000 1 特效用dummy]
+
+[scene 20730]
+
+[pictureFrame cut170_gameframe_bright]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[se ad216]
+[fadeout white 0.4]
+[wait fade]
+
+[scene 10001]
+[pictureFrame]
+[wt 0.5]
+
+[fadein white 1.5]
+[seStop ad216 1.5]
+[scene 96300 1.5]
+[wait fade]
+[wt 1.0]
+
+[charaPut R -250,0]
+[charaPut S 0,0]
+[charaPut T 250,0]
+
+[charaEffect R bit_talk_token_change02]
+[charaEffect S bit_talk_token_change02]
+[charaEffect T bit_talk_token_change02]
+
+[se adm19]
+[seVolume adm19 0 0.3]
+[seVolume adm19 1.0 1.0]
+[wt 1.5]
+
+[seStop adm19 1.7]
+[charaMove R -250,700 2.2]
+[charaMove S 0,700 2.2]
+[charaMove T 250,700 2.2]
+[wt 2.2]
+
+[charaEffectStop R bit_talk_token_change02]
+[charaEffectStop S bit_talk_token_change02]
+[charaEffectStop T bit_talk_token_change02]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,0]
+
+＠玛修
+变成代币的各位都回到了绘里濑小姐那里了[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_90 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠绘里濑
+和你们的对决已经分出了胜负[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth A 2]
+
+[charaTalk B]
+[charaFace A 0]
+[charaFadein A 0.1 0]
+[charaFace B 8]
+[charaFadein B 0.1 2]
+
+＠旅行者
+[line 3]绘里濑？
+[k]
+
+[se ade430]
+[seVolume ade430 0 0.4]
+[seVolume ade430 1.0 0.3]
+
+＠绘里濑
+该告别了。
+[k]
+
+[seStop ade430 2.0]
+
+＠绘里濑
+[#有轨电车:tram]出现了。[r]下个游戏在前面等着我。
+[k]
+
+＠绘里濑
+不过这与你们已经没有关系了。
+[k]
+
+[se ade430]
+[seVolume ade430 0 0.4]
+[seVolume ade430 1.0 0.9]
+
+[charaFace B 2]
+
+＠旅行者
+绘里濑！[r]你不带上我吗！？
+[k]
+
+[seStop ade430 1.5]
+[charaFace A 20]
+
+＠绘里濑
+如果还没玩够，就等下一趟车吧。[r]说不定还有别的目的地[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠玛修
+这[line 3]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wt 0.6]
+
+？1：也就是说，我还有重新挑战的机会？
+
+？！
+
+[wt 0.4]
+[fadeout black 0.15]
+[bgmStop BGM_EVENT_90 0.15]
+[wait fade]
+[wt 0.5]
+
+＠绘里濑
+如果你能追上我的话。
+[k]
+
+[messageOff]
+[wt 2.5]
+[soundStopAll]
+[end]
+
+
+
+

@@ -1,0 +1,188 @@
+
+
+＄94-00-77-01-1-1
+[soundStopAll]
+[charaSet A 8001001 1 玛修]
+[charaSet B 7022001 1 ？？？]
+[charaSet C 98002000 1 芙芙]
+
+
+[bgm BGM_EVENT_2 0.1]
+
+[scene 31800]
+
+[wt 0.7]
+[fadein black 1.5]
+[wait fade]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.4 1]
+
+＠玛修
+呼，战斗结束。[r]全部扫荡干净了，应该没问题了吧。
+[k]
+
+
+[charaFace A 0]
+＠玛修
+总之先去城里看看吧，御主。[r]虽然很有可能会遭到从者的阻挠……
+[k]
+
+
+[messageOff]
+[wipeout downToUp 0.4 1]
+[wait wipe]
+[charaFadeout A 0]
+[scene 20322]
+[wipein upToDown 0.4 1]
+[wait wipe]
+[wt 0.4]
+？1：报酬是演唱会的特等席位吗……
+
+[charaFace A 12]
+＠玛修
+御主，请不要沮丧……
+[k]
+
+[charaFace A 1]
+＠玛修
+没关系，我会陪在您身边的！[r]御主和从者，同生共死！
+[k]
+
+？2：我要绝望了。
+
+[charaFace A 6]
+＠玛修
+无……无论什么情况都十分乐观的御主居然……！
+[k]
+
+[charaFace A 13]
+＠玛修
+没关系，等回去以后……对，等回去以后，[r]让阿马德乌斯先生为您演奏音乐吧？
+[k]
+
+＠玛修
+比如……点一首十分治愈的曲子吧……
+[k]
+
+？！
+
+[wt 0.2]
+[messageOff]
+[wipeout upToDown 0.4 1]
+[wait wipe]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0 1]
+[scene 31800]
+[wipein downToUp 0.4 1]
+[wait wipe]
+[wt 0.4]
+[charaFace A 13]
+＠玛修
+总算是恢复能执行任务的状态了啊。[r]太好了……
+[k]
+
+[charaFace A 1]
+＠玛修
+来吧，我们向城市进发吧！
+[k]
+
+[bgmStop BGM_EVENT_2 1.0]
+[messageOff]
+[charaFadeout A 0.4]
+[wt 1.2]
+[charaFilter B silhouette 00000080]
+
+[charaFadein B 0.4 6]
+[wt 0.7]
+
+[wipeout leftToRight 0.3 1]
+[wait wipe]
+[wt 0.1]
+[charaShakeStop B]
+[charaFadeout B 0.1]
+[scene 31800]
+[wt 0.2]
+[wipein rightToLeft 0.3 1]
+[wait wipe]
+[wt 0.2]
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk C]
+[charaFadein C 0.1 1]
+＠芙芙
+芙……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+芙芙，怎么了。[r]……难道……
+[k]
+
+？1：绝不能回头。
+
+[charaFace A 7]
+＠玛修
+啊，是！[r]只要不去看，就是不确定的存在……
+[k]
+
+？2：快跑[line 3]！！
+
+[charaFace A 6]
+＠玛修
+突……突然全速奔跑吗！？[r]请等一下，御主！　御主！
+[k]
+
+？！
+[bgmStop BGM_EVENT_5 0.4]
+
+[se ad59]
+[seVolume ad59 0 0.5]
+[messageOff]
+[wipeout leftToRight 0.3 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[scene 31800]
+[seStop ad59 1.0]
+[wt 1.0]
+[wipein rightToLeft 0.3 1]
+[wait wipe]
+[wt 0.4]
+
+[charaFilter B silhouette 00000080]
+[charaFadein B 0.4 1]
+
+＠？？？
+阿[charaShake B 0.05 5 5 0.7]嚏！
+[k]
+
+＠？？？
+……唔。偷偷[#灵死码头:灵　子　转　移]看来成功了呢。[r]呵呵呵……恐惧颤抖吧。
+[k]
+
+[charaShake B 0.05 5 5 0.7]
+＠？？？
+阿嚏！
+[k]
+
+[charaShake B 0.05 1 1 0]
+＠？？？
+……不过真冷啊……没想到西洋的山里居然那么寒冷……[r]……真麻烦……吾是不是穿得太少了……？
+[k]
+
+
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout B 0.1]
+[charaShakeStop B]
+[soundStopAll]
+[end]
+

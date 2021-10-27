@@ -1,0 +1,533 @@
+＄91-90-02-01-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_1 0.1]
+[charaSet A 8001001 1 玛修]
+[charaSet B 98003000 1 Dr.罗曼]
+[charaSet C 9002001 1 天草四郎]
+[charaSet D 98006200 1 敌人]
+
+
+
+[scene 20322]
+[fadein black 2.0]
+[wt 1.5]
+[wait fade]
+
+＠
+拯救，这行为本是傲慢的。
+[k]
+
+＠
+但是，若无法容忍这种傲慢，[r]人是无法将别人拉起来的。
+[k]
+
+＠
+救济那些个体很简单。[r]只要粉碎他们或是她们的愿望就够了。
+[k]
+
+＠
+那救济世界该如何是好呢。
+[k]
+
+＠
+我本以为自己明白一切，[r]但实际上或许什么都不明白。
+[k]
+
+＠
+所以，需要的是不容反驳的力量。
+[k]
+
+＠
+能万物平等地[line 3][r]甚至可以说冷酷无情地救济世间一切的力量。
+[k]
+
+＠
+我之所以回应召唤，[r]当然是为了修复人理这个目的。
+[k]
+
+＠
+然而内心某处依在寻找着这种冷酷无情的力量。
+[k]
+
+＠
+[line 3]没错，寻找名为圣杯的冷酷无情的救济。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_1 1.5]
+[wait fade]
+
+[scene 20302]
+[wt 1.5]
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+……啊！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[wt 0.4]
+[charaEffect D bit_talk_14]
+[wt 0.1]
+[shake 0.05 2 2 0.4]
+[se bac10]
+[wait se bac10]
+
+[wt 0.7]
+
+[messageOff]
+[se ad26]
+[wt 0.3]
+[charaSpecialEffect D enemyErasure 1 3]
+[wt 1.0]
+[se ad42]
+[wait charaSpecialEffect D]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_3 1.0]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wait charaFade msh]
+
+[bgm BGM_EVENT_2 1.0]
+
+＠玛修
+确认敌方消灭。[r]辛苦了。
+[k]
+
+[charaFadeout A 0.1]
+
+[se ad13]
+[communicationChara 98003003 1 5 0 0]
+[wt 0.3]
+
+＠Dr.罗曼
+明白了，继续前进吧。
+[k]
+
+＠Dr.罗曼
+在人理被烧毁的状态下，[r]不能放过任何特异点的发生。
+[k]
+
+＠Dr.罗曼
+很抱歉在忙碌的时候麻烦你们，[r]但趁特异点还小的时候毁掉才更有效率。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠玛修
+嗯，御主和我都很明白。
+[k]
+
+＠玛修
+这次还有天草先生协助，[r]应该不会有问题的。
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠天草四郎
+哪有哪有，[r]从者如果感慨髀肉复生的话，那就完了。
+[k]
+
+[charaFace C 1]
+＠天草四郎
+御主就该尽情差遣我才对哦。
+[k]
+
+[messageOff]
+[wipeout rightToLeft 1.0 1.0]
+[wait wipe]
+[charaFadeout C 0.1]
+
+
+[scene 20805]
+[wt 1.5]
+[wipein leftToRight 1.0 1.0]
+[wait wipe]
+
+[wt 1.0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.7 1]
+
+＠玛修
+医生，方向正确吗？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[communicationChara 98003003 1 5 0 0]
+
+＠Dr.罗曼
+当然啦。[r]只要穿过这座森林，应该就有一个洞窟。
+[k]
+
+？1：抓紧时间！
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠天草四郎
+请冷静一点，御主。[r]心急吃不了热豆腐。
+[k]
+
+＠天草四郎
+静静等候也是很重要的哦。[r]等待了六十年的我都这么说了，肯定不会错。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠玛修
+……六十年……？
+[k]
+
+？2：慢慢走吧。
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠天草四郎
+这才对，御主。[r]就算再怎么心急，也不会得到什么好结果。
+[k]
+
+[charaFace C 0]
+
+＠天草四郎
+更何况这里是未知的森林，[r]在不知道这里有些什么的情况下，应该慎重前行才对。
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+
+[communicationChara 98003003 1 5 0 0]
+
+＠Dr.罗曼
+这么说来，我以前就觉得很奇怪呀。[r]天草你为什么要使用黑键呢？
+[k]
+
+＠Dr.罗曼
+你那个时代你所居住的土地上，[r]不存在那东西吧？
+[k]
+
+？1：Heijian？
+？2：黑键？
+？！
+
+＠Dr.罗曼
+是圣堂教会的概念礼装。[r]我虽然不怎么了解，但好像是将圣经残片用作刀身的投掷武器。
+[k]
+
+＠Dr.罗曼
+没有记录表明你曾经隶属于圣堂教会，[r]当时的日本应该也没有导入这种技术……
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠天草四郎
+啊，这很简单。
+[k]
+
+＠天草四郎
+因为[#这个]我有过在某次圣杯战争中道成肉身，[r]并隶属于圣堂教会的经验。
+[k]
+
+[bgmStop BGM_EVENT_2 0.5]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+什么。
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[communicationChara 98003003 1 5 0 2]
+
+[shake 0.05 5 5 1.0]
+
+＠Dr.罗曼
+你说什么[line 3]！？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+道成肉身……确实有记录表明[r]部分从者有过因圣杯获得过肉身的经验……
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_2 1.0]
+
+＠天草四郎
+可那些与这个世界的记录是完全矛盾的，[r]恐怕是通过其他不可能的过程产生的结果吧。
+[k]
+
+＠天草四郎
+然而，若说身为从者最能帮上忙的，[r]毫无疑问是现在这种状态。
+[k]
+
+[charaFace C 1]
+
+＠天草四郎
+原本我是根本当不了Ruler的三流从者。
+[k]
+
+＠天草四郎
+就算再怎么努力，[r]也不一定能搭上Caster的边这种程度吧。
+[k]
+
+？1：要向美狄亚小姐求教吗？
+
+＠天草四郎
+哈哈哈哈哈。[r]不行啦会死人的啦。
+[k]
+
+＠天草四郎
+神代的各位魔术师怎么说呢，[r]总像是会在别人还骑自行车的时候骑摩托飙车。
+[k]
+
+[charaFace C 0]
+
+＠天草四郎
+更何况严格说来，我只能算是魔术使那类。
+[k]
+
+＠天草四郎
+不将魔术视为魔术，而是将其认定为[r]『能派上用处的存在』的那种类型。
+[k]
+
+＠天草四郎
+……不过，其他从者中貌似也有这种感觉的人吧……
+[k]
+
+？2：要向爱迪生求教吗？
+
+[charaFace C 0]
+＠天草四郎
+爱迪生先生啊……
+[k]
+
+＠天草四郎
+……[r]…[charaFace C 4]…
+[k]
+
+＠天草四郎
+……话说……我好像收到了手臂被概念改良成火箭拳的[r]真·天草四郎闪亮登场的启示……
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[communicationChara 98003003 1 5 0 0]
+
+＠Dr.罗曼
+不过，既然没有作为Ruler被召唤的资格，[r]那为什么你现在会是Ruler呢？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[charaFace C 1]
+＠天草四郎
+啊，这问题很简单。
+[k]
+
+＠天草四郎
+在我道成肉身的那次圣杯战争中，[r]我的御主脱离了规则。
+[k]
+
+[charaFace C 0]
+
+＠天草四郎
+原本Ruler是为了调停圣杯战争而被召唤的第八职阶。
+[k]
+
+＠天草四郎
+因此，Ruler的御主就是『圣杯』，[r]被要求维持中立的立场。
+[k]
+
+＠天草四郎
+但是，我的御主为了获得圣杯战争的胜利，[r]企图召唤Ruler。
+[k]
+
+＠天草四郎
+在普通圣杯战争中，[r]被召唤的Ruler对所有参加从者都具备令咒。
+[k]
+
+[charaFace C 1]
+
+＠天草四郎
+原本，令咒是能够命令从者自杀的强大存在，
+[k]
+
+＠天草四郎
+原本计划是打算若能召唤Ruler从者作为使魔，[r]就肯定能打赢圣杯战争吧。
+[k]
+
+＠天草四郎
+所以我才作为这种作弊行为的Ruler[r]被召唤……[charaFace C 4]被召唤了出来。
+[k]
+
+＠天草四郎
+或许是由于这件事，[r]我才获得了作为Ruler被召唤的资格吧。
+[k]
+
+[charaFace C 0]
+
+＠天草四郎
+不过话说回来，若非人理修复这种程度的非常事态，[r]我被召唤的可能性应该是极低的吧……
+[k]
+
+[charaFadeout C 0.1]
+
+[communicationChara 98003003 1 5 0 0]
+
+＠Dr.罗曼
+原来如此。
+[k]
+
+＠Dr.罗曼
+并非拥有资格才被召唤。
+[k]
+
+＠Dr.罗曼
+而是因为被召唤了出来，[r]才被误认为拥有资格吧。
+[k]
+
+＠Dr.罗曼
+无论怎么样，既然有这种记录，[r]召唤的路径得以被确立。
+[k]
+
+＠Dr.罗曼
+那第二次召唤就变得容易了呢。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠天草四郎
+虽然我没有在被召唤的圣杯战争中获得胜利，[r]但复数偶然的重叠，导致了我得以道成肉身。
+[k]
+
+[wt 0.5]
+[bgmStop BGM_EVENT_2 0.3]
+[charaFace C 5]
+[wt 0.5]
+
+＠天草四郎
+……哎呀，现在貌似不是谈论过去的时候呢。
+[k]
+
+[charaFadeout C 0.1]
+[bgm BGM_EVENT_3 0.1]
+
+[messageOff]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.5]
+[se ad25]
+[wait se ad25]
+
+[charaFadeout D 0.1]
+
+[communicationChara 98003003 1 5 0 2]
+
+＠Dr.罗曼
+哎哟，不好。[r]我也听入迷了！
+[k]
+
+＠Dr.罗曼
+综上所述，敌人来了，务必小心！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+医生，这话说得太晚了啦！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

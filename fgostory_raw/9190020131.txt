@@ -1,0 +1,333 @@
+
+＄91-90-02-01-3-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[seLoop ad14]
+[shake 0.05 1.5 1.5 0]
+[charaSet A 8001001 1 玛修]
+[charaSet B 98003000 1 Dr.罗曼]
+[charaSet C 9002001 1 天草四郎]
+[charaSet D 11001001 1 安哥拉曼纽]
+
+[se ad33]
+[wait se ad33]
+[se ad32]
+[wt 0.5]
+[se ad33]
+
+[scene 20230]
+[fadein black 1.0]
+[wt 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+[wt 0.4]
+[charaEffect C bit_talk_14]
+[charaFace C 5]
+[wt 0.1]
+[charaMove C -50,0 0.1]
+[se bac10]
+[wait se bac10]
+
+[wt 1.5]
+[charaFace C 4]
+[wt 0.5]
+
+＠天草四郎
+……是我[wt 0.7]输了呢。
+[k]
+
+[wait charaMove C]
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠玛修
+但是，圣杯……！
+[k]
+
+[charaFadeout A 0.1]
+
+[communicationChara 98003003 1 5 0 2]
+
+＠Dr.罗曼
+糟了。[r]你们得尽快逃离那里！
+[k]
+
+＠Dr.罗曼
+既然没有破坏的方法，[r]只能先避难……！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠天草四郎
+不，[wt 0.5][charaFace C 0]这个由我来破坏吧。[r]既然我输了，这也算是做个了断。
+[k]
+
+[charaFace C 1]
+
+＠天草四郎
+……和你的对话很有意义，安哥拉曼纽。[r]再见了。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠安哥拉曼纽
+是吗？　如果能让你放轻松一些的话，[r]嗯，经历这种危险也算有价值了。
+[k]
+
+[charaFace D 1]
+
+＠安哥拉曼纽
+善后就交给你啦。我一般都只负责偷懒。[r]可不要经常叫我起来哦～？
+[k]
+
+
+[messageOff]
+[charaSpecialEffect D flashErasure 1 3]
+[wt 1]
+[se ad52]
+[wait charaSpecialEffect D]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[wt 1.5]
+[charaFace C 5]
+[wt 0.7]
+
+[charaFace C 2]
+
+[se ad39]
+[charaEffect C bit_talk_36]
+
+＠天草四郎
+宝具启动。[wt 1.0][r]『[#双腕·零次集束:Twin Arm - Big Crunch]』……！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 1.0]
+[se ad39]
+[wait se ad39]
+[charaEffectStop C bit_talk_36]
+[flashin once 0.5 0.1 FFFFFFFF FFFFFF40]
+[shake 0.05 10 10 2.0]
+[voice NP_900200_3]
+[voiceStop NP_900200_3 2.0]
+
+[fadeout white 2.0]
+[voice NP_900200_4]
+[voiceStop NP_900200_4 6.0]
+
+[seStop ad14]
+
+[wait fade]
+[wt 5.0]
+
+[charaEffectStop C bit_talk_37]
+
+[charaFadeout C 0.1]
+[wt 1.0]
+
+
+[bgm BGM_EVENT_2 0.5]
+
+[scene 10204]
+[fadein white 2.0]
+[wt 1.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.7 1]
+
+＠Dr.罗曼
+……真是出了一身冷汗。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠天草四郎
+哎呀，就是嘛。[r]但令人头疼的是，我丝毫没有反省。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠Dr.罗曼
+好了……[%1]。[r]他的御主是你。
+[k]
+
+＠Dr.罗曼
+既然他反叛御主，[r]那该如何处分就全权交给你吧。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠天草四郎
+……[r]……
+[k]
+
+？1：保留。
+？2：只要他能反省就行了。
+？！
+
+[charaFace C 4]
+
+＠天草四郎
+就这些？
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠Dr.罗曼
+唉……我就隐约猜到会是这么个结果。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠天草四郎
+御主。对我来说，圣杯是……[r]不，圣杯带来的力量就是我的誓愿。
+[k]
+
+＠天草四郎
+一旦发生相同的情况，[r]恐怕我依然会毫不犹豫地企图得到圣杯。
+[k]
+
+？1：那也没办法。
+？！
+
+＠天草四郎
+没办法……？
+[k]
+
+＠天草四郎
+……那个……下次如果发生这种事，[r]御主要怎么办？
+[k]
+
+[charaFace C 5]
+
+＠天草四郎
+您还会再次阻止我吗？
+[k]
+
+？1：我会阻止。
+？！
+
+[charaFace C 4]
+
+＠天草四郎
+……原来如此。看来在这个问题上，[r]我和御主是绝不可能意见一致的吧。
+[k]
+
+？1：这就行了。
+？！
+
+[charaFace C 5]
+
+＠天草四郎
+……你说什么？
+[k]
+
+？1：无论发生多少次，我都会阻止你。
+？！
+
+＠天草四郎
+只要您还是我的御主，您就会……阻止我啊。[r]无论……多少次吗。
+[k]
+
+[charaFace C 4]
+
+＠天草四郎
+真是败给您了。只要我还是从者，[r]就无法背叛御主。
+[k]
+
+[wt 1.2]
+[charaFace C 0]
+[wt 0.5]
+[charaFace C 1]
+
+＠天草四郎
+……我明白了。只要您还是我的御主，[r]我就封存自己的梦想。
+[k]
+
+＠天草四郎
+就算无法相互理解，也能并肩战斗。[r]就算迟早会分离，也可以紧握双手。
+[k]
+
+＠天草四郎
+只要您还这样相信我[line 3][r]我就发誓继续封印自己的愿望。
+[k]
+
+[wt 0.5]
+
+[charaFace C 3]
+
+＠天草四郎
+……这个问题先搁置一边，[r]希望您至少给我一些惩罚。
+[k]
+
+＠天草四郎
+若非如此，我是无论如何都无法安心的。
+[k]
+
+？1：……比如说……打扫房间……？
+？！
+
+[charaFace C 0]
+
+＠天草四郎
+万分感谢，御主。
+[k]
+
+[charaFace C 1]
+
+＠天草四郎
+那我天草四郎时贞。[r]这就去鼓起干劲努力清扫房间了！
+[k]
+
+[messageOff]
+[fadeout black 3.0]
+[bgmStop BGM_EVENT_2 3.0]
+[wait fade]
+[soundStopAll]
+[end]
+
+
+
+

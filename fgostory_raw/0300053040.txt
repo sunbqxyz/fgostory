@@ -1,0 +1,455 @@
+
+＄03-00-05-30-3-0
+
+
+
+[soundStopAll]
+
+[charaSet A 1098123200 1 戈尔德鲁夫]
+[charaSet B 1098123000 1 穆尼尔]
+[charaSet C 9005001 1 福尔摩斯]
+[charaSet D 8001410 1 玛修]
+[charaSet E 8001400 1 玛修]
+[charaSet F 1098124500 1 达·芬奇]
+[charaSet G 1038000 1 伊阿宋]
+[charaSet I 98115000 1 特效用dummy]
+[charaSet J 98115000 1 特效用dummy]
+
+
+
+[effect bit_talk_41]
+
+[se ad729]
+[seVolume ad729 0 0]
+[seVolume ad729 1.0 0.8]
+[wt 0.5]
+
+[bgm BGM_EVENT_63 0.1]
+[wt 0.5]
+
+[scene 86600]
+
+[shake 0.05 0 3 4.0]
+
+[fadein black 1.5]
+[wait fade]
+[wt 1.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[effectStop bit_talk_41]
+
+[scene 51601]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[seVolume ad729 1.0 0.4]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+＠戈尔德鲁夫
+即将抵达最后的神核！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠穆尼尔
+警报声从刚才起就响个不停。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠[9bb9ff]广播语音[-]
+[9bb9ff]一定要抓住弗朗西斯·德雷克[-][r][9bb9ff]一定要抓住弗朗西斯·德雷克[-]
+[k]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠戈尔德鲁夫
+如此巨大的机器人，[r]居然彻底认错人了！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠福尔摩斯
+程序错误真可怕。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.4]
+
+[seVolume ad729 1.0 1.0]
+
+[wt 0.8]
+
+[seStop ad729 0.4]
+[se ade329]
+[shake 0.05 3 3 1.0]
+[wt 1.3]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+＠戈尔德鲁夫
+好，这里已经是极限位置了！
+[k]
+
+
+？1：接下来就交给我们吧！
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth E 1]
+[charaDepth D 2]
+
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+[charaFace E 7]
+[charaFadein E 0.1 1]
+[wt 0.6]
+
+[charaFadeout D 0.4]
+[wt 0.2]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[wt 0.6]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk E]
+[charaFace E 2]
+＠E：玛修
+御主，出发吧！
+[k]
+
+
+[messageOff]
+[wt 0.1]
+
+[se ad7]
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[charaSet A 1098123210 1 戈尔德鲁夫]
+[charaSet B 1098123010 1 穆尼尔]
+[charaSet C 98115300 1 福尔摩斯]
+[charaSet D 2030002 1 喀戎]
+[charaSet F 1098124510 1 达·芬奇]
+
+[scene 86600]
+[wt 1.0]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk F]
+[charaFace F 24]
+[charaFadein F 0.1 1]
+
+＠达·芬奇
+那个神核散发出了迄今最强的能量。
+[k]
+
+＠达·芬奇
+一定要小……[wt 0.5][charaFace F 22]慢着，从者反应！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_63 0.5]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[scene 10000]
+
+[effect bit_talk_rarrow01or]
+[wt 0.9]
+
+[wipein rectangleStripRightToLeft 0.1 1.0]
+[wait wipe]
+
+[cueSe Battle bac20]
+[wt 0.4]
+
+[se ad170]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+
+[scene 86600]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0 1]
+[charaShake E 0.03 4 4 0.6]
+[wt 1.0]
+
+＠玛修
+你是……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+＠[9bb9ff]广播语音[-]
+[9bb9ff]德雷克……弗朗西斯·德雷克……[-]
+[k]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠？？？
+[#这]，就是波塞冬。
+[k]
+
+＠？？？
+行星环境改造用设备船。[r]主要目的是改造与控制海洋环境。
+[k]
+
+＠？？？
+而现在正如你们所见。[r]只是『[#虚无之洞:Big Hole]』的守门者而已。
+[k]
+
+＠？？？
+别看现在这样，前不久他还是有理性的哦。[r]直到被德雷克夺走神核为止。
+[k]
+
+？1：喀戎……！
+？！
+
+[messageOff]
+[wt 0.2]
+
+[se ad800]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+[seStop ad800 0.4]
+[wt 0.8]
+
+＠喀戎
+好久不见，[r]泛人类史的御主。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+＠伊阿宋
+……喀戎。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠喀戎
+哎呀，伊阿宋也活着呢。[r]不过也无妨。
+[k]
+
+＠喀戎
+我就是这片绝海亚特兰蒂斯最后的士兵。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠伊阿宋
+你被阿喀琉斯打得落花流水吧？[r]看来他死后也阴魂不散啊。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠喀戎
+嗯，说得没错。[r]真是太惨了。
+[k]
+
+[charaFace D 0]
+
+＠喀戎
+这里就是守护奥林波斯的最后要塞。[r]你我都已无路可退了。
+[k]
+
+＠喀戎
+顺带一提[line 3]
+[k]
+
+[charaFace D 5]
+＠喀戎
+我杀死了阿喀琉斯。[r]而奥德修斯则被你们杀死了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠伊阿宋
+所以你想说我们扯平了吗？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠喀戎
+怎么会呢。
+[k]
+
+＠喀戎
+我的意思是，[r]你我已经没有任何和解的余地了。
+[k]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaFace D 5]
+＠喀戎
+我名为喀戎。
+[k]
+
+＠喀戎
+乃是受盟友奥德修斯所托，[r]守护这亚特兰蒂斯之人。
+[k]
+
+[charaFace D 2]
+＠喀戎
+你们若有胆量，就放马过来吧！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠伊阿宋
+吼得好！[r]那就开始最终决战吧！
+[k]
+
+＠伊阿宋
+……你们要加油啊！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠玛修
+伊阿宋先生！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠伊阿宋
+我会为你们声援的，[r]放我一马吧！
+[k]
+
+？1：这样就够了！
+？2：战斗吧，玛修！
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠玛修
+[line 3]
+[k]
+
+[charaFace E 7]
+＠玛修
+对不起。我明白现状了！[r]这里就交给我们吧，伊阿宋船长！
+[k]
+
+＠玛修
+御主[%1]、[r]玛修·基列莱特[line 3]
+[k]
+
+[charaFace E 2]
+＠玛修
+[line 3]在此打出[r]攻略亚特兰蒂斯的最后一步！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.8]
+
+[charaFace D 2]
+＠喀戎
+[line 3]来吧！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

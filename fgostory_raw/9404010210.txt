@@ -1,0 +1,1653 @@
+
+
+
+＄94-04-01-02-1-0
+
+[soundStopAll]
+
+[charaSet A 1017001 1 女剑士]
+[charaSet B 98001000 1 玛修]
+[charaSet C 1040000 1 葛饰北斋]
+[charaSet D 98110000 1 柳生但马守]
+[charaSet E 98002000 1 芙芙]
+[charaSet F 1008300 1 齐格飞]
+[charaSet G 1008300 1 齐格飞（剪影）]
+[charaSet H 1098124510 1 达·芬奇（萝莉）]
+[charaSet I 98111500 1 达·芬奇]
+
+
+[charaSet J 98115000 1 特效用]
+
+[branchQuestNotClear lblNotClear1 3000303]
+[flag IsClear true]
+[branch lblConf1]
+[label lblNotClear1]
+[flag IsClear false]
+[label lblConf1]
+
+
+
+
+[scene 45800]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+
+[se ad481]
+[wt 3.0]
+
+[scene 20720 1.5]
+[wt 2.0]
+
+＠
+[f x-large]　　　　　 大峡谷[se ad186]
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ad173]
+[wt 1.2]
+
+
+[charaFilter A silhouette 00000080]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+[seStop ad173 0.4]
+[wt 0.8]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠女剑士
+…………没想到会变成这样。
+[k]
+
+＠女剑士
+我只是在理所当然地旅行，[r]谁能预料到会陷入如此窘境啊。
+[k]
+
+＠女剑士
+这些呀[line 3]
+[k]
+
+＠女剑士
+哎呀，哈哈哈！[r]反正就算预料到也没差！
+[k]
+
+＠女剑士
+毕竟是穷游，[r]饿着肚子会做出怪异行径也是无可奈何的！
+[k]
+
+＠女剑士
+啊，不对。[r]这一点也不好笑哦。
+[k]
+
+＠女剑士
+虽说我迄今遇到过不少奇怪的状况，[r]但从没像这次这般棘手。
+[k]
+
+＠女剑士
+嗯嗯。恐怕这是我人生中首次、前所未闻的大事件！[r]哪怕称之为惊天动地的灾厄之兆也不为过！
+[k]
+
+＠女剑士
+仅凭力量与剑是无法解决的！[r]我需要可靠的军师，不对，是能随机应变的勇士！
+[k]
+
+＠女剑士
+这种时候，嗯[line 3]
+[k]
+
+＠女剑士
+[line 3]要是[&他:她]在的话，[r]我就能放心了啊[line 4]！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFilter A normal]
+
+
+[branch lblNotClear2 IsClear false]
+[scene 66700]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 60300]
+[label lblConf2]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠玛修
+北斋小姐的灵基突然发生了变化[line 3]
+[k]
+
+＠玛修
+但原因还不清楚。[r]斯卡哈小姐她们也没有什么头绪。
+[k]
+
+？1：毕竟最近自己修改灵基的人也很多嘛。
+
+[charaFace B 7]
+＠玛修
+确实……
+[k]
+
+？2：夏天结束后就会恢复原状了吧？
+
+[charaFace B 1]
+＠玛修
+啊，说不定会呢！[r]感觉平时这类情况也很常见……
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠葛饰北斋
+啊～真是的。[r]尽说一些我听不懂的话！
+[k]
+
+＠葛饰北斋
+我的问题无关紧要啦！[r]关键是接下去要去哪儿做什么！
+[k]
+
+[charaFace C 6]
+＠葛饰北斋
+所以，[r]哼哼。这里不就是最适合的地方吗？
+[k]
+
+＠葛饰北斋
+这里是古今东西英雄英杰齐聚一堂的地方吧？[r]我总觉得他们尤其会聚集在这附近[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠玛修
+啊……是的。[r]毕竟这里是食堂区域……
+[k]
+
+[charaFace B 0]
+＠玛修
+啊，原来您还保留有这方面的记忆啊？[r]那看来与迦勒底相关的记录并没有完全消失……
+[k]
+
+[bgm BGM_EVENT_77 0.6 0.4]
+
+[charaTalk D]
+＠柳生但马守
+哦。[r]这……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠葛饰北斋
+唔……？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.6 1.0]
+
+＠柳生但马守
+听说夏天有很多可以看到的机会，[r]原来如此。原来是这样的存在啊。
+[k]
+
+＠柳生但马守
+能否请教您的真名？[r]看在彼此都是侍奉同一主君的从者的情谊上。
+[k]
+
+＠柳生但马守
+这位一看就是新的泳装剑豪啊[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+[line 3]哎。请问……柳生但马守先生？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠柳生但马守
+失敬了。不是指玛修大人，而是那位小姑娘。[r]身为女孩子家却佩戴着刀，而且还这身打扮……
+[k]
+
+[charaFace D 0]
+＠柳生但马守
+肯定没错。[r]这无疑是泳装剑豪。
+[k]
+
+？1：泳装
+？2：剑豪
+
+？！
+
+＠柳生但马守
+嗯。
+[k]
+
+[messageOff]
+[charaFace D 1]
+[wt 1.2]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+＠柳生但马守
+哪怕远离世俗的我也对此有所耳闻。[r]据说是一年一度于北美大陆西部举行的……
+[k]
+
+＠柳生但马守
+决出[#世界第一泳装剑豪]的盛会。[r]其名为[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFace D 2]
+＠柳生但马守
+[f large]泳装剑豪御前比试！[se ade98]
+[k]
+
+＠柳生但马守
+[f large]又称泳装剑豪七色决胜！[se ade98]
+[k]
+
+？1：！！！！！！
+
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 20]
+[charaFadein C 0.1 1]
+[wt 1.2]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[wt 1.2]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠柳生但马守
+有资格能参加这场集会的，[r]就是泳装剑豪[line 3]
+[k]
+
+？1：柳生……先生……！
+？2：不是在开玩笑吧？
+
+？！
+
+[charaFace D 0]
+＠柳生但马守
+我是不会欺骗主公的。[r]这是赌上我忠义的、毫无虚假的真实之言。
+[k]
+
+＠柳生但马守
+请看。[r][line 3]这位小姑娘那飒爽的泳装剑豪身姿。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 19]
+[charaFadein C 0.1 1]
+[wt 1.4]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠柳生但马守
+这身打扮，哪怕总览古今东西，[r]也唯有泳装剑豪才会拥有啊。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 19]
+[charaFadein C 0.1 1]
+＠葛饰北斋
+泳装……[r]剑豪……
+[k]
+
+[charaFace C 1]
+＠葛饰北斋
+是……是吗[line 3][r]原来我是泳装剑豪啊！
+[k]
+
+[charaFace C 8]
+＠葛饰北斋
+这么说来，这身打扮确实是泳装，[r]而且我也可以被归入带刀的剑士剑客剑豪之列……
+[k]
+
+[charaFace C 13]
+＠葛饰北斋
+可……可我连一次实战的经验也……[r]没有啊……
+[k]
+
+＠葛饰北斋
+而且招式和术理什么的也只是道听途说学来的……[r]尽管稍微做了一些挥剑练习……
+[k]
+
+[charaFace C 17]
+＠葛饰北斋
+唔……[r]唔唔……
+[k]
+
+？1：北斋亲？
+？2：没事吧？
+
+？！
+
+[charaFace C 3]
+＠葛饰北斋
+这……这眼神什么意思啊！[r]我可是葛饰北斋，可不会止步于普通的浮世绘画师！
+[k]
+
+＠葛饰北斋
+我是已经下定决心要成为画师剑豪的预备仙女！[r]御主就放一百个心吧！
+[k]
+
+[charaFace C 9]
+＠葛饰北斋
+既然祖先大人是剑客，那我也是剑客！[r]所以完全没有问题！　很好！
+[k]
+
+[messageOff]
+[charaFace C 24]
+[wt 1.2]
+
+[charaFace C 2]
+＠葛饰北斋
+[line 3]没错！[r]我是泳装剑豪中的泳装剑豪！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠玛修
+呃，尽管我不是很明白……
+[k]
+
+＠玛修
+但北斋小姐是泳装剑豪？[r]这样真的好吗！ 前辈！
+[k]
+
+？1：我　也　不知道。
+
+[charaFace B 4]
+＠玛修
+啊……嗯……
+[k]
+
+？2：毕竟是夏天嘛。
+
+＠玛修
+嗯！
+[k]
+
+[charaFace B 4]
+＠玛修
+…………咦？　呃，前辈？[r]这……能成为理由吗……？
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠芙芙
+芙呜…………
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[branch lblClear3 IsClear true]
+
+[label lblNotClear3]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[se ad13]
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 0,-90]
+[wt 0.3]
+
+＠达·芬奇
+慢……慢着！　暂停！
+[k]
+
+＠达·芬奇
+泳装剑豪是什么啦！？[r]我压根没听说过，数据库里也……
+[k]
+
+[messageOff]
+[se ad15]
+[wt 0.6]
+[se ad172]
+[wt 1.0]
+[seStop ad172 0.1]
+[wt 0.8]
+
+[charaFace I 4]
+＠达·芬奇
+…………竟然有。
+[k]
+
+？1：居然有吗！？
+？2：既然有，那就没办法了。
+
+？！
+
+
+[charaFace I 0]
+＠达·芬奇
+哎呀，抱歉。尽管泳装剑豪的名称与由来仍然不明。[r]即便检索过去的传说与历史，
+[k]
+
+＠达·芬奇
+也没有找到任何线索。[r]不过啊。
+[k]
+
+＠达·芬奇
+……我通过示巴进行了简易扫描，发现确实存在。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠玛修
+达·芬奇亲，究竟发现了……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaPut J 1]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-90]
+＠达·芬奇
+位于北美大陆西部。[r]大峡谷附近。
+[k]
+
+[charaFace I 5]
+＠达·芬奇
+有一个微小特异点。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad60]
+[wt 0.7]
+
+
+[seStop ad60 0.8]
+
+[charaTalk off]
+[charaDepth G 6]
+[charaDepth F 4]
+
+[charaFilter G silhouette 00000080]
+[charaFace G 0]
+[charaFadein G 0.7 1]
+[wt 0.7]
+
+[charaFace F 0]
+[charaFadein F 0.7 1]
+[wt 0.8]
+
+[charaFadeout G 1.0]
+[wt 1.4]
+
+[charaTalk on]
+＠齐格飞
+原来如此，难怪……[r]我的身体会莫名感到蠢蠢欲动啊。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 19]
+[charaFadein C 0.1 1]
+＠葛饰北斋
+这……这伟岸的男性是谁啊？
+[k]
+
+[charaFace C 0]
+＠葛饰北斋
+唔……感觉皮肤一阵阵地刺痛……[r]难道你……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠柳生但马守
+齐格飞阁下。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠齐格飞
+我也不知不觉得到了这件灵衣，[r]看来我也[line 3]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠柳生但马守
+正是。
+[k]
+
+＠柳生但马守
+齐格飞阁下。[r]您大概也被选为泳装剑豪了吧。
+[k]
+
+[charaFace D 5]
+＠柳生但马守
+这意味着您不得不前往[#西部]之地，[r]参加御前比试、七色决胜。
+[k]
+
+＠柳生但马守
+否则这身灵衣迟早会对您造成伤害。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+[wt 1.2]
+
+[charaFace F 0]
+＠齐格飞
+尽管我对泳装剑豪知之甚少，[r]但看来也只能接受现实了。
+[k]
+
+[charaFace F 1]
+＠齐格飞
+是吗，西部啊。[r]毫不夸张地说，我的心情很激动。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+连……连齐格飞先生也变成了泳装剑豪（？）！？
+[k]
+
+[charaFace B 7]
+＠玛修
+可……可是，请等一下！[r]齐格飞先生他……！
+[k]
+
+＠玛修
+并没有带刀啊……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠柳生但马守
+玛修阁下。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠齐格飞
+玛修。谢谢你的关心。[r]但不必担心。
+[k]
+
+[charaFace F 1]
+＠齐格飞
+即使获得了灵衣，我的宝具也不会改变。[r]身穿泳装的剑士，就是泳装剑豪。真厉害。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+[se ad119]
+[wt 2.0]
+[seStop ad119 0.4]
+
+
+？1：…………
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[branch select01]
+
+？2：这氛围怎么回事……
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠齐格飞
+御主真温柔啊。
+[k]
+
+
+？1：不是，现在是这个问题吗……？
+
+？！
+
+[messageOff]
+[charaFace F 1]
+[wt 1.2]
+
+？1：呃……为什么要微笑啊……
+
+？！
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[label select01]
+
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+[wt 1.2]
+
+＠葛饰北斋
+……[r]……
+[k]
+
+＠葛饰北斋
+…………泳装剑豪真是罪孽深重的存在呢。
+[k]
+
+[messageOff]
+[charaFace C 24]
+[wt 1.2]
+
+[charaFace C 2]
+＠葛饰北斋
+当看到这位伟岸的男性的表情，我大概明白了！[r]我也做好觉悟了，嗯，放手干吧！
+[k]
+
+＠葛饰北斋
+不管是箭矢、火枪、大炮还是闪电，全都放马过来吧！[r]泳装剑豪七色决胜！
+[k]
+
+[charaPut J 1]
+[charaEffect J bit_talk_41]
+[se ade211]
+＠葛饰北斋
+我！[r]定要登上巅峰！！
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_7 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_41]
+
+[charaSet I 5009001 1 达·芬奇]
+
+[scene 10204]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+＠达·芬奇
+[line 3]此次灵子转移的目的，大致可分为三个！
+[k]
+
+＠达·芬奇
+第一，是为了找出葛饰北斋灵基变化的原因！[r]第二，是为了稳定齐格飞的灵衣！
+[k]
+
+＠达·芬奇
+而第三，[r]则是为了消除发生于北美西部的微小特异点！
+[k]
+
+[charaFace I 5]
+＠达·芬奇
+为了达成这三个目的，[r]我需要你们进行灵子转移。
+[k]
+
+＠达·芬奇
+成员为[%1]、[r]玛修、北斋、齐格飞。
+[k]
+
+＠达·芬奇
+柳生但马守不参加，这样可以吗？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠柳生但马守
+太可惜了。[r]但只有身着泳装的从者才配前往这个特异点。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+＠达·芬奇
+……哈哈哈。这特异点还真是奇特啊！
+[k]
+
+[messageOff]
+[charaFace I 1]
+[wt 1.2]
+
+[charaFace I 5]
+＠达·芬奇
+差不多就是这样。[r]大家准备好了吗？
+[k]
+
+[charaFace I 2]
+＠达·芬奇
+那么，灵子转移程序[line 3]启动！
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_82 1.5]
+[wait fade]
+
+[charaFadeout I 0.1]
+
+[branch lblConf3]
+
+[label lblClear3]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[se ad13]
+[charaTalk H]
+[charaFace H 22]
+[charaFadein H 0.1 1]
+[wt 0.3]
+＠H：达·芬奇
+慢……慢着！　暂停！
+[k]
+
+＠H：达·芬奇
+泳装剑豪是什么啦！？[r]记录领域里根本找不到……
+[k]
+
+[charaFace H 5]
+＠H：达·芬奇
+呃，数据库里也什么都……[r]没有……没有吧……应该没有吧……没有……吗……
+[k]
+
+[messageOff]
+[se ad15]
+[wt 0.6]
+[se ad172]
+[wt 1.0]
+[seStop ad172 0.1]
+
+[charaSet I 1098123200 1 戈尔德鲁夫]
+[charaSet A 9005001 1 福尔摩斯]
+
+[wt 0.8]
+
+
+[charaFace H 33]
+＠达·芬奇
+…………咦。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠玛修
+达·芬奇亲？[r]怎么了？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaPut J 1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠达·芬奇
+有。
+[k]
+
+[charaFace H 1]
+＠达·芬奇
+竟然有。找到了。我找到了！
+[k]
+
+？1：居然有吗！？
+？2：既然有，那就没办法了。
+
+？！
+
+[charaFace H 16]
+＠达·芬奇
+哎嘿嘿，抱歉啦。尽管泳装剑豪的名称与由来仍然不明。[r]即便确认过去的传说与历史，
+[k]
+
+＠达·芬奇
+也没有找到任何线索。[r]不过啊。
+[k]
+
+
+＠达·芬奇
+……我进行了简易扫描，发现确实存在。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠玛修
+达·芬奇亲，究竟发现了……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠达·芬奇
+位于北美大陆西部。[r]大峡谷附近。
+[k]
+
+＠达·芬奇
+有一个微小特异点。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad60]
+[wt 0.7]
+
+
+[seStop ad60 0.8]
+
+[charaTalk off]
+[charaDepth G 6]
+[charaDepth F 4]
+
+[charaFilter G silhouette 00000080]
+[charaFace G 0]
+[charaFadein G 0.7 1]
+[wt 0.7]
+
+[charaFace F 0]
+[charaFadein F 0.7 1]
+[wt 0.8]
+
+[charaFadeout G 1.0]
+[wt 1.4]
+
+[charaTalk on]
+＠齐格飞
+原来如此，难怪……[r]我的身体会莫名感到蠢蠢欲动啊。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 19]
+[charaFadein C 0.1 1]
+＠葛饰北斋
+这……这伟岸的男性是谁啊？
+[k]
+
+[charaFace C 0]
+＠葛饰北斋
+唔……感觉皮肤一阵阵地刺痛……[r]难道你……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠柳生但马守
+齐格飞阁下。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠齐格飞
+我也不知不觉得到了这件灵衣，[r]看来我也[line 3]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠柳生但马守
+正是。
+[k]
+
+＠柳生但马守
+齐格飞阁下。[r]您大概也被选为泳装剑豪了吧。
+[k]
+
+[charaFace D 5]
+＠柳生但马守
+这意味着您不得不前往[#西部]之地，[r]参加御前比试、七色决胜。
+[k]
+
+＠柳生但马守
+否则这身灵衣迟早会对您造成伤害。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+[wt 1.2]
+
+[charaFace F 0]
+＠齐格飞
+尽管我对泳装剑豪知之甚少，[r]但看来也只能接受现实了。
+[k]
+
+[charaFace F 1]
+＠齐格飞
+是吗，西部啊。[r]毫不夸张地说，我的心情很激动。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+连……连齐格飞先生也变成了泳装剑豪（？）！？
+[k]
+
+[charaFace B 7]
+＠玛修
+可……可是，请等一下！[r]齐格飞先生他……！
+[k]
+
+＠玛修
+并没有带刀啊……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠柳生但马守
+玛修阁下。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠齐格飞
+玛修。谢谢你的关心。[r]但不必担心。
+[k]
+
+[charaFace F 1]
+＠齐格飞
+即使获得了灵衣，我的宝具也不会改变。[r]身穿泳装的剑士，就是泳装剑豪。真厉害。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+[se ad119]
+[wt 2.0]
+[seStop ad119 0.4]
+
+
+
+？1：…………
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[branch select02]
+
+？2：这氛围怎么回事……
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠齐格飞
+御主真温柔啊。
+[k]
+
+
+？1：不是，现在是这个问题吗……？
+
+？！
+
+[messageOff]
+[charaFace F 1]
+[wt 1.2]
+
+？1：呃……为什么要微笑啊……
+
+？！
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+
+[label select02]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+[wt 1.2]
+
+＠葛饰北斋
+……[r]……
+[k]
+
+＠葛饰北斋
+…………泳装剑豪真是罪孽深重的存在呢。
+[k]
+
+[messageOff]
+[charaFace C 24]
+[wt 1.2]
+
+[charaFace C 2]
+＠葛饰北斋
+当看到这位伟岸的男性的表情，我大概明白了！[r]我也做好觉悟了，嗯，放手干吧！
+[k]
+
+＠葛饰北斋
+不管是箭矢、火枪、大炮还是闪电，全都放马过来吧！[r]泳装剑豪七色决胜！
+[k]
+
+[charaEffect C bit_talk_41]
+[se ade211]
+＠葛饰北斋
+我！[r]定要登上巅峰！！
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_7 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaPut C 1200,1200]
+[charaEffectStop C bit_talk_41]
+
+[charaSet H 1098124500 1 达·芬奇（萝莉）]
+
+[scene 66400]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaTalk I]
+[charaFace I 15]
+[charaFadein I 0.1 1]
+＠戈尔德鲁夫
+都是因为你们说想要灵子转移的许可，我才会过来，[r]但那是什么玩意儿啦。泳装？　剑豪？　什么鬼？
+[k]
+
+＠戈尔德鲁夫
+蠢事和玩笑两个月来一次就够了。[r]还是说日本的酷暑已经热到这种程度了？
+[k]
+
+[charaFace I 0]
+＠戈尔德鲁夫
+虽说我也不是无法理解你们想放暑假的心情。
+[k]
+
+＠戈尔德鲁夫
+为部下的福利考虑确实是上司的职责，[r]毕竟没有福利谈何劳动。
+[k]
+
+[charaFace I 11]
+＠戈尔德鲁夫
+可是，可是哦。
+[k]
+
+
+[charaEffect I bit_talk_41]
+[charaFace I 6]
+
+＠戈尔德鲁夫
+你[messageShake 0.02 3 3 0.8]们要我说多少遍！　现在可是！　紧急事态！
+[k]
+
+[charaEffectStop I bit_talk_41]
+
+＠戈尔德鲁夫
+地表已经白纸化了！[r]蓝色的大海已经不存在了，泳装也是！
+[k]
+
+＠戈尔德鲁夫
+你们明白了吗！？　对于我们来说，[r]去避暑胜地美滋滋度假的梦幻暑假已经不存在了！
+[k]
+
+？1：我明白。
+
+？！
+
+[charaFace I 18]
+＠戈尔德鲁夫
+不，你们不明白！[r]绝对没明白！
+[k]
+
+＠戈尔德鲁夫
+你们说泳装剑豪必须那样做，所以不得不灵子转移到[r]北美西部什么的，你让我怎么接受这些说辞！？
+[k]
+
+[charaFace I 16]
+＠戈尔德鲁夫
+我无法接受！[r]我不得不怀疑部下的精神状态！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 12]
+[charaFadein H 0.1 1]
+＠达·芬奇
+好啦好啦，所长，稍安勿躁。[r]咚咚。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+＠戈尔德鲁夫
+不要一边说咚咚，[r]一边用直拳不停打我的肚子啦……
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠达·芬奇
+你想，迄今为止不都是这样的吗？[r]只要获得了准圣杯级魔力资源的存在许下心愿，
+[k]
+
+＠达·芬奇
+就会产生与之相对应的特异点。[r]这次只是恰好是泳装剑豪与北美西部罢了。
+[k]
+
+＠达·芬奇
+有什么好奇怪的呢？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+＠戈尔德鲁夫
+……[r]……
+[k]
+
+[charaFace I 12]
+＠戈尔德鲁夫
+…………所以是我吗？　脑子有问题的是我吗？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠福尔摩斯
+哈哈哈。[r]那么所长，可以下达许可了吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 9]
+[charaFadein I 0.1 1]
+＠戈尔德鲁夫
+为什么板着脸还能笑出声来啊，经营顾问……[r]好可怕。我好害怕那笑容！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_94 0.6]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 1.2]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaFace A 0]
+＠福尔摩斯
+[line 3]此次灵子转移的目的，大致可分为三个。
+[k]
+
+＠福尔摩斯
+第一，是为了找出葛饰北斋灵基变化的原因。[r]第二，是为了稳定齐格飞的灵衣。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 26]
+[charaFadein H 0.1 1]
+＠达·芬奇
+而第三，[r]则是为了消除发生于北美西部的微小特异点！
+[k]
+
+＠达·芬奇
+为了达成这三个目的，[r]我需要你们进行灵子转移。
+[k]
+
+＠达·芬奇
+成员为[%1]、[r]玛修、北斋、齐格飞。
+[k]
+
+[charaFace H 7]
+＠达·芬奇
+柳生但马守不参加，这样可以吗？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠柳生但马守
+太可惜了。[r]但只有身着泳装的从者才配前往这个特异点。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 23]
+[charaFadein H 0.1 1]
+＠达·芬奇
+唔。[r]也就是说，不穿泳装就没法去吗？
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 1.2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk H]
+[charaFace H 32]
+[charaFadein H 0.1 1]
+＠达·芬奇
+……是真的吗，是真的吗。[r]我也好想去看看啊。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 10]
+[charaFadein I 0.1 1]
+＠戈尔德鲁夫
+………………[wt 0.4][charaMoveReturn I 0,-10 0.3]咳咳。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠福尔摩斯
+达·芬奇。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 34]
+[charaFadein H 0.1 1]
+＠达·芬奇
+唔。我知道了啦。[r]那我重新振作精神。
+[k]
+
+
+
+[charaFace H 0]
+＠达·芬奇
+玛修。奥特瑙斯正在维护中，[r]所以尽量避免直接战斗。
+[k]
+
+＠达·芬奇
+差不多就是这样。[r]好嘞，大家准备好了吗？
+[k]
+
+
+
+[messageOff]
+[charaFace H 10]
+[wt 1.2]
+
+[charaFace H 9]
+＠达·芬奇
+那么，灵子转移程序[line 3]启动！
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_82 1.5]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+[label lblConf3]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[fowardEffect bit_talk_07]
+[se ad12]
+[wt 4.0]
+[fadeout white 1.0]
+[wait fade]
+[wt 1.0]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+
+[skip false]
+[wt 1.5]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[bgmStop BGM_EVENT_7 0.4]
+[bgmStop BGM_EVENT_4 0.4]
+[bgmStop BGM_EVENT_5 0.4]
+[bgmStop BGM_EVENT_2 0.4]
+[bgmStop BGM_EVENT_72 0.4]
+[bgmStop BGM_EVENT_81 0.4]
+[bgmStop BGM_EVENT_82 0.4]
+
+
+[charaSet A 1017001 1 宮本武蔵]
+[charaSet A 9005001 1 福尔摩斯]
+[charaSet B 98001000 1 玛修]
+[charaSet C 1040000 1 泳装葛饰北斋]
+[charaSet D 98110000 1 柳生但马守]
+[charaSet E 98002000 1 芙芙]
+[charaSet F 1008300 1 齐格飞]
+[charaSet G 1008300 1 齐格飞（剪影）]
+[charaSet H 1098124510 1 达·芬奇（萝莉）]
+[charaSet H 1098124500 1 达·芬奇（萝莉）]
+[charaSet I 98111500 1 达·芬奇]
+[charaSet I 5009001 1 达·芬奇]
+[charaSet I 1098123200 1 戈尔德鲁夫]
+
+
+[charaSet J 98115000 1 特效用]
+
+[wt 0.4]
+[soundStopAll]
+[scene 10000]
+[wt 0.1]
+[maskin white 1.0]
+[wait mask]
+[label selectBranch]
+
+[wt 0.5]
+
+
+[revivalBranch lblNormal lblRevival]
+
+[label lblNormal]
+[fowardEffect bit_chapterstart80254]
+[wt 0.5]
+[scene 10001]
+[wait fowardEffect]
+[branch lblConf4]
+
+[label lblRevival]
+[fowardEffect bit_chapterstart80291]
+[wt 0.5]
+[scene 10001]
+[wait fowardEffect]
+
+[label lblConf4]
+
+[wt 1.5]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

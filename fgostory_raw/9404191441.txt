@@ -1,0 +1,216 @@
+
+＄94-04-19-14-4-1
+
+[soundStopAll]
+
+[charaSet A 11009001 1 S伊什塔尔]
+[charaSet B 11009000 1 阿斯塔蒂]
+[charaSet I 5009000 1 特效用1]
+[charaSet J 5009000 1 特效用2]
+
+[scene 82701]
+
+[bgm BGM_EVENT_24 0.1]
+
+[cameraMove 0 0,0 1.01]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0 1]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.1]
+
+[wipeout rectangleStripLeftToRight 0.2 1.0]
+[se ad73]
+[wait wipe]
+[charaFadeout B 0]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0 1]
+[wt 0.2]
+[wipein rectangleStripRightToLeft 0.2 1.0]
+[wait wipe]
+
+[charaShake A 0.05 6 2 0]
+[charaMove A -25,0 0.6]
+[charaPut I 1]
+[charaEffect I bit_talk_kengekiall02]
+[charaPut J -70,50]
+[charaScale J 1.2]
+[charaEffect J bit_talk_14]
+[se ad32]
+[wt 0.3]
+[charaScale J 1.1]
+[charaPut J 60,10]
+[charaEffect J bit_talk_14]
+[se ad32]
+[wt 0.2]
+[charaScale J 1.4]
+[charaPut J -50,-20]
+[charaEffect J bit_talk_14]
+[se ad32]
+[wt 0.1]
+[charaScale J 1.0]
+[charaShakeStop A]
+
+[wt 0.7]
+
+
+＠S伊什塔尔
+再说你做的坏事都太小家子气了啦！[r]既然要为恶，就该做得更帅气一些！
+[k]
+
+＠S伊什塔尔
+莫西干集团、私售阿尔托莉元素、[r]操纵学生的志愿和不流行的厨房！
+[k]
+
+＠S伊什塔尔
+剑士徽章什么的都太拐弯抹角了吧！[r]没有什么比这种小恶人更令人恼火的了！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.2 1.0]
+[se ad73]
+[wait wipe]
+[charaFadeout A 0]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0 1]
+[wt 0.2]
+[wipein rectangleStripLeftToRight 0.2 1.0]
+[wait wipe]
+
+[effect bit_talk_Slash_white_01_L 40,0]
+[charaPut I 40,0]
+[charaEffect I bit_talk_14]
+[se ad32]
+[charaShake B 0.05 3 3 0.2]
+[charaMove B 15,0 0.2]
+[wt 0.15]
+[fowardEffect bit_talk_Slash_white_01 -60,0]
+[charaPut J -60,0]
+[charaEffect J bit_talk_14]
+[se ad32]
+[charaShake B 0.05 3 3 0.2]
+[charaMove B 25,0 0.2]
+[wt 0.2]
+[fowardEffect bit_talk_ichimon01wh]
+[wt 0.1]
+[effect bit_talk_14 0,120]
+[se ad32]
+[charaShake B 0.05 3 3 0.2]
+[charaMove B 1 0.2]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[se ad32]
+
+[wt 0.7]
+
+[fowardEffectDestroy bit_talk_ichimon01wh]
+
+[charaFace B 21]
+
+＠阿斯塔蒂
+总比赏金猎人要好吧！[r]当调查你履历的时候，我眼前顿时一阵发黑！？
+[k]
+
+＠阿斯塔蒂
+只赚钱不存钱，一味吃喝玩乐借钱！[r]你应该活得更认真一点啦！
+[k]
+
+＠阿斯塔蒂
+这种散漫的正义比小恶人更给人添麻烦！
+[k]
+
+[messageOff]
+[fadeout black 0.2]
+[se ad73]
+[wait fade]
+[charaFadeout B 0.1]
+[wt 0.1]
+[fadein black 0.2]
+[wait fade]
+
+[effect bit_talk_kengekiall02 0,0 F]
+[wt 0.2]
+[se ad32]
+[wt 0.2]
+[se ad32]
+[wt 0.2]
+[se ad32]
+[wt 0.05]
+[fowardEffect bit_talk_kengekiall02 0,0 V]
+[wt 0.1]
+[se ad32]
+[wt 0.2]
+[se ad32]
+[wt 0.2]
+[se ad32]
+[wt 0.7]
+
+？1：不得了。
+？2：已经彻底成了对喷了！
+
+？！
+
+[bgm BGM_EVENT_24 0.3 0.5]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠阿斯塔蒂
+（呜……比女王女学院时反应速度更快了……！[r]　不，我的反应速度同样变快了……！）
+[k]
+
+＠阿斯塔蒂
+（简直就像相互攀比，不断补足[line 3][r]　但这样好吗？　我有种不祥的预感[line 3]）
+[k]
+
+[bgmStop BGM_EVENT_24 0.1]
+[wt 0.1]
+
+[se ad38]
+[se ad608]
+[shake 0.05 3 7 1.2]
+[wt 1.0]
+[seStop ad38 0.3]
+[seStop ad608 0.3]
+[wt 0.1]
+
+[se ade371]
+[flashin loop 0.9 0.9 FF000080 FF000000]
+
+＠广播语言
+[charaTalk A]
+警告。警告。确认主引擎停止运转。[r]『[#龙之宝玉:Dragon Heart]』遭到破坏。
+[k]
+
+＠广播语言
+[charaTalk A]
+本舰无法继续航行。确认融合炉连锁爆炸。[r]距功能维持到达极限　还剩　32分钟。
+[k]
+
+＠广播语言
+[charaTalk A]
+请所有搭乘人员前往第三机场避难。[r]重复一遍。确认主引擎[line 3]
+[k]
+
+[charaFace B 4]
+
+＠阿斯塔蒂
+什么[line 3]！？
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[seStop ade371 2.0]
+[wait fade]
+[flashOff]
+[wt 0.5]
+[soundStopAll]
+[end]
+

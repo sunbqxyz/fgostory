@@ -1,0 +1,899 @@
+
+
+
+＄01-00-07-07-3-0
+[soundStopAll]
+[charaSet A 8001002 1 玛修]
+[charaSet B 98106200 1 梅林]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 3027000 1 安娜]
+[charaSet E 98003000 1 Dr.罗曼]
+[charaSet F 98006200 1 ？？？]
+
+[charaSet G 98107700 1 朱苏德拉]
+[charaSet H 2020001 1 伊什塔尔]
+
+
+
+[bgm BGM_EVENT_11 0.1]
+[scene 32940]
+[fadein black 1.5]
+[wait fade]
+
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠玛修
+这里就是库撒市……[r]一夜间停止活动的城市……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+
+＠安娜
+……但损坏情况好严重啊。[r]难道是在居民死光后遭到了魔兽的袭击吗……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[se ad13]
+[charaTalk E]
+[communicationChara 98003003 1 5 0 5]
+[wt 0.3]
+
+＠Dr.罗曼
+……不，看起来不是这样。
+[k]
+
+＠Dr.罗曼
+这个都市里的生命反应只有你们。[r]魔兽们没有从外面进入市内。
+[k]
+
+＠Dr.罗曼
+虽然不知理由为何，[r]但魔兽们看来害怕那座城市。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠梅林
+唔……确实，我的“唯独要保住自己性命哦”[r]的第六感也在告诉我这里没有威胁。
+[k]
+
+＠梅林
+只有令人恐惧的寂静，[r]以及甚至可称之为清静的死亡。
+[k]
+
+＠梅林
+……看来我和吉尔伽美什王都看漏了这里。[r]库撒市的事件和其他城市截然不同。
+[k]
+
+＠梅林
+我甚至觉得王会将『天命泥板』[r]放在这里是命中注定的，好啦[line 3]
+[k]
+
+[charaFace B 0]
+＠梅林
+不，在深入思考前，先去寻宝吧。
+[k]
+
+＠梅林
+玛修去东区。我北区。安娜去西区。[r]然后[%1]去南区找找看吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠玛修
+不，这未免[line 3]毕竟我是前辈的从者，[r]不能离开御主。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠梅林
+没关系啦。值得庆幸的是，魔兽进不来。[r][%1]还有罗曼的导航。
+[k]
+
+[charaFace B 0]
+＠梅林
+对了，凯茜帕鲁格也在。[r]别小看这家伙，在危急时这家伙还是挺能干的。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFadein C 0.1 1]
+[charaShake C 0.1 0 5 0.7]
+
+＠芙芙
+芙，芙呜！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠玛修
+但是……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk E]
+[communicationCharaLoop 98003003 1 5 0 3]
+
+＠Dr.罗曼
+唔……虽然我也想反对，[r]但分头找确实更有效率。
+[k]
+
+＠Dr.罗曼
+再加上也没有敌人反应，[r]玛修和安娜也没有离得很远。
+[k]
+
+[communicationCharaFace 0]
+＠Dr.罗曼
+[%1]今后也可能遇到[r]需要独自调查的情况，
+[k]
+
+＠Dr.罗曼
+凡事都需要经验，我觉得分头行动未尝不可吧？
+[k]
+
+？1：没关系，万一有事，我会呼叫大家的。
+？2：毕竟这里这么大，得分头找才行呀。
+
+？！
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠玛修
+…………好吧。[r]既然御主都这么说了，我明白了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠梅林
+决定了吧。那我们尽快开始调查吧。
+[k]
+
+[charaFace B 0]
+＠梅林
+天命泥板与吉尔伽美什王所持的[r][#神权印章:Dingir]泥板是一样的东西。
+[k]
+
+＠梅林
+应该带着微弱的魔力，[r]只要接近就能感知到了。
+[k]
+
+[charaFace B 1]
+＠梅林
+总之先分头找一个小时吧。[r]无论结果如何，都回这里集合！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout B 0.1]
+[wt 2.0]
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_EVENT_11 0.1]
+
+
+？1：（……然后，从那之后经过了大约十分钟……）
+
+？！
+
+[charaTalk E]
+[communicationCharaLoop 98003003 1 5 0 5]
+[wt 0.3]
+
+＠Dr.罗曼
+唔……一目望去全是废墟呢……[r]虽然梅林说过会有什么微弱魔力，
+[k]
+
+＠Dr.罗曼
+但在这种浓密的[#魔力:玛那]下，[r]反而找不到了啊……
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk C]
+[charaFadein C 0.1 1]
+
+＠芙芙
+芙呜……
+[k]
+
+？1：总之，先到处走走吧。
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk E]
+[communicationCharaLoop 98003003 1 5 0 0]
+
+＠Dr.罗曼
+嗯，俗话说搜查就得靠脚踏实地吧。
+[k]
+
+＠Dr.罗曼
+毕竟迦勒底的观测波是以[%1]为中心扩散的。
+[k]
+
+＠Dr.罗曼
+所以一般来说，[%1]周围的反应[r]最为细[se ad31][wipeout sideBlind 0.02 1][wait wipe][wipein sideBlind 0.02 1][wait wipe]致[line 3]
+[k]
+[wt 1.2]
+[messageOff]
+[bgmStop BGM_EVENT_11 0.5]
+[wipeout sideBlind 0.05 1]
+[wait wipe]
+[wipein sideBlind 0.05 1]
+[wait wipe]
+[charaEffect E bit_talk_10]
+[communicationCharaClear]
+[wait communicationChara]
+
+[se ad227]
+[wt 0.7]
+[wipeout sideBlind 0.05 1]
+[wait wipe]
+[wipein sideBlind 0.05 1]
+[wait wipe]
+[communicationCharaLoop 98003003 1 5 10 0]
+[wt 0.7]
+[wipeout sideBlind 0.05 1]
+[wait wipe]
+[wipein sideBlind 0.05 1]
+[wait wipe]
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaPut E 1,-10000]
+[charaEffectStop E bit_talk_10]
+[charaFadeout E 0.1]
+[seStop ad31 0.1]
+
+
+？1：咦，刚才[line 3]
+
+？！
+
+
+[se ad228]
+
+[shake 0.05 3 5 0]
+
+[charaShake C 0.05 0 5 0.7]
+[seStop ad228 1.5]
+
+＠芙芙
+芙……芙[line 3]呜！？
+[k]
+[messageOff]
+[wipeout clash 1.5 1]
+[wait wipe]
+
+
+[shakeStop]
+[charaFadeout C 0.1]
+[wt 5.0]
+[se ad229]
+[seVolume ad229 0 0.4]
+[scene 33400]
+
+[wipein openEye 3.0 1]
+[wait wipe]
+[bgm BGM_EVENT_5 0.1]
+
+
+？1：这里是哪儿……！？
+[charaTalk C]
+[charaFadein C 0.1 1]
+
+
+[charaShake C 0.1 0 5 0.7]
+＠芙芙
+芙，芙呜！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+？2：医生，医生……！
+
+[se ad13]
+[se ad31]
+[charaTalk E]
+[communicationChara 98003003 1 5 1 0]
+[wt 0.3]
+[communicationCharaClear]
+[wait communicationChara]
+[charaPut E 0,0]
+[charaEffect E bit_talk_10]
+[wt 0.1]
+[communicationChara 98003003 1 5 1 0]
+[wt 0.3]
+
+＠Dr.罗曼
+[line 6]
+[k]
+[messageOff]
+[communicationCharaClear]
+[wait communicationChara]
+[wt 1.0]
+[seStop ad31 0.7]
+[charaPut E 0,-1000]
+[charaEffectStop E bit_talk_10]
+[wt 1.0]
+
+？！
+
+[charaTalk F]
+[charaFace F 0]
+[charaPut F -256,0]
+[charaFadeTime F 0.4 0.4]
+[wt 0.4]
+
+＠F：？？？
+活人[line 3]是活人。[r]为何冥界里有活人……为何……
+[k]
+
+[charaSet E 98006200 1 ？？？]
+[charaTalk E]
+[charaFace E 0]
+[charaPut E 256,0]
+[charaFadeTime E 0.4 0.4]
+[wt 0.4]
+
+＠E：？？？
+是来嘲笑的吗……是来掠夺的吗……[r]是来逃避的吗……是来丢弃的吗……
+[k]
+
+[charaSet D 98006200 1 ？？？]
+[charaTalk D]
+[charaFace D 0]
+[charaPut D 0,0]
+[charaFadeTime D 0.4 0.4]
+[wt 0.4]
+
+[bgmStop BGM_EVENT_5 1.5]
+＠D：？？？
+不可饶恕[line 3]无论哪种都不可饶恕[line 3][r]温暖的气息、温暖的肉体什么的全都不要[line 3]
+[k]
+
+[charaTalk off]
+[charaFadeTime F 0.4 1]
+[charaFadeTime E 0.4 1]
+[charaFadeTime D 0.4 1]
+[se ad21]
+＠？？？
+去死[line 3]去死，去死，去死，去死，[r]去死[bgm BGM_EVENT_3 0.1]去死去死去死死死死死死死死死死死死死死死死死！
+[k]
+
+
+？1：呜哇啊啊啊啊啊啊啊啊啊！？
+？2：呀啊啊啊啊啊啊啊啊啊啊！？
+
+？！
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk on]
+[charaTalk C]
+[charaFadein C 0.1 1]
+[charaShake C 0.05 0 5 0.7]
+
+＠芙芙
+芙[line 4]呜！
+[k]
+
+[bgmStop BGM_EVENT_3 0.4]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠G：？？？
+……慢着。[r]迦鲁拉灵啊，那个人还没死。
+[k]
+
+＠G：？？？
+倘若带走此人，会招致主人的愤怒。[r]关上七道门扉，回去履行守护的职责吧。
+[k]
+
+[messageOff]
+[charaTalk G]
+[se ad7]
+[charaFadein G 0.4 1]
+[wt 1.5]
+
+[charaFadeout G 0.1]
+[wt 0.2]
+[charaTalk off]
+[charaDepth E 1]
+[charaFadein F 0.1 0]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 1]
+
+[se ad42]
+[seVolume ad42 1.0 0.5]
+[charaFadeout F 0.7]
+[wt 1.0]
+[se ad42]
+[seVolume ad42 1.0 0.5]
+[charaFadeout D 0.7]
+[wt 1.0]
+[se ad42]
+[seVolume ad42 1.0 0.5]
+[charaFadeout E 0.7]
+[wt 1.0]
+
+[seStop ad229 0.3]
+[bgmStop BGM_EVENT_5 0.3]
+？1：……得救了……？
+？2：您是……
+
+？！
+[wt 0.4]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠朱苏德拉
+他们没有错。[r]无礼之人是你啊，年轻人。
+[k]
+
+＠朱苏德拉
+你活着造访死之国。迦鲁拉灵自然会生气。[r]原本不该帮助你的。
+[k]
+
+＠朱苏德拉
+……唔。[r]但是，我欠你一份情。
+[k]
+
+＠朱苏德拉
+尽管是不肖弟子，但你坚守信念。[r]信仰有时与生命同义。也就是说，值得我救你一命。
+[k]
+
+？1：……呃，那个……？
+？2：我不明白您在说什么……
+
+？！
+
+＠朱苏德拉
+库撒市的地底与冥界相连。[r]你是活生生地掉入冥界的。
+[k]
+
+＠朱苏德拉
+但这也到此为止了。[r]……这门就由我关上吧。
+[k]
+
+＠朱苏德拉
+你回到地上，这么转告魔术师。[r]冥界仍健在。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_11 0.7]
+[wt 0.4]
+[se ad51]
+[wt 0.4]
+[charaFadeout G 0.1]
+[wt 0.1]
+[se ad161]
+[effect bit_bolg_02]
+[wt 0.2]
+[shake 0.05 5 5 0.7]
+[fadeout white 1.5]
+[wait fade]
+[wt 2.0]
+[scene 10001]
+[fadein white 0.1]
+[wait fade]
+[fadeout black 1.5]
+[wait fade]
+[scene 32940]
+[wt 2.75]
+[bgm BGM_EVENT_2 0.1]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk C]
+[charaFadein C 0.1 1]
+
+
+＠芙芙
+芙呜……芙呜……
+[k]
+
+
+？1：啊！？
+？2：梦……？
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.4 1]
+
+
+＠玛修
+我们回来了。[r]没能找到类似的东西……
+[k]
+
+[charaFace A 6]
+＠玛修
+[FFFFFF]？[-][r]前辈，垫在您屁股下的那个，该不会[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+
+＠梅林
+哎呀，你们俩也回来了呀。[r]哎哟哟，白跑一趟，完全是徒劳无功……咦？
+[k]
+
+[charaFadeout B 0.1]
+[charaSet D 3027000 1 安娜]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+
+
+＠安娜
+……地毯式的搜索了西区，[r]但没有找到像是泥板的东西。…………唔。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFadein C 0.1 1]
+
+＠芙芙
+芙？
+[k]
+
+
+？1：怎么了？
+
+？！
+[charaFadeout C 0.1]
+[messageOff]
+[wt 0.1]
+[charaFace A 6]
+[charaFace B 2]
+[charaFace D 2]
+[charaDepth B 1]
+[charaFadein A 0.1 264,0]
+[charaFadein B 0.1 -36,0]
+[charaFadein D 0.1 -336,0]
+[wt 1.5]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+御主，您拿来当垫子的那块板，[r]怎么看都是『天命泥板』吧！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFadein C 0.1 1]
+[charaShake C 0.1 0 5 0.7]
+
+＠芙芙
+芙……芙[line 3]呜！？
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠梅林
+没错，这就是天命泥板。[r]哎呀，居然能如此轻松找到，真是太好了！
+[k]
+
+＠梅林
+但这在哪里找到的？[r]以我的见解，还以为不会在南区啊。
+[k]
+
+？1：这个嘛……我掉到地底下……
+？2：被朱苏德拉先生救了一命……
+
+？！
+
+[charaFace B 0]
+＠梅林
+哦哦，地底下？　没看到那种痕迹啊……[r]而且竟然提到名为朱苏德拉的老人啊。
+[k]
+
+＠梅林
+罗玛尼，你那边的记录呢？[r]你一直在监控[%1]吧？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaSet E 98003000 1 Dr.罗曼]
+[charaTalk E]
+[communicationCharaLoop 98003003 1 5 0 8]
+[wt 0.3]
+
+
+＠Dr.罗曼
+不，这里有几分钟没记录到……
+[k]
+
+＠Dr.罗曼
+或者应该说，[r][%1]的生命反应中断了……
+[k]
+
+＠Dr.罗曼
+我这里也有种见鬼的感觉。[r]但是那个老人自称朱苏德拉吗？
+[k]
+
+？1：Yes。
+？2：在乌鲁克也见过。
+
+？！
+
+[communicationCharaFace 5]
+＠Dr.罗曼
+……[%1]。
+[k]
+
+＠Dr.罗曼
+所谓朱苏德拉，是在苏美尔传说中，[r]唯一从人类灭绝大洪水中生还的『人类』的名字。
+[k]
+
+＠Dr.罗曼
+等同旧约圣经中的诺亚，[r]以及吉尔伽美什史诗里的乌特纳比西丁。
+[k]
+
+＠Dr.罗曼
+见证世界的终结，并成为深渊守卫的人物。
+[k]
+
+＠Dr.罗曼
+可说是『敲响世界终结警钟之人』，[r]或是『见证万物死亡之人』。
+[k]
+
+＠Dr.罗曼
+虽然我不认为那是朱苏德拉本人，[r]但既然伊什塔尔和恩奇都也出现了，或许这并非不可能。
+[k]
+
+＠Dr.罗曼
+而这位朱苏德拉的出现就代表……
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+
+＠梅林
+唔……也可能是与朱苏德拉职责近似的某个人物吧。[r]毕竟那不是什么心血来潮就能随便冒充的名字。
+[k]
+
+＠梅林
+但是『冥界仍健在』啊。[r]也就是说……
+[k]
+
+＠梅林
+可以视作[#冥界主人]也降临此地吗……[r]那我的千里眼所“看到”的三女神集会是……
+[k]
+
+[charaFadeout B 0.1]
+[bgmStop BGM_EVENT_2 1.0]
+[wt 0.1]
+[charaTalk E]
+[communicationCharaLoop 98003003 1 5 0 5]
+
+＠Dr.罗曼
+！　大家，小心点！[r]有强大灵基反应正朝你们那边去了！
+[k]
+
+＠Dr.罗曼
+这个模式已经看到过三次[line 3][r]不会错，女神伊什塔尔来了！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[messageOff]
+
+
+[charaFace A 7]
+[charaFace B 5]
+[charaFace D 5]
+[charaFadein A 0.1 264,0]
+[charaFadein B 0.1 -36,0]
+[charaFadein D 0.1 -336,0]
+[wt 1.0]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_EVENT_3 0.1]
+
+[se ad2]
+[wt 2.0]
+[seStop ad2 1.0]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 0,100]
+[charaMove H 0,0 0.2]
+[wait charaMove H]
+[charaMove H 0,50 0.2]
+[wait charaMove H]
+[charaShake H 0.2 0 3 0]
+
+＠伊什塔尔
+总算找到啦，你们这群可恶的人类！[r]听说你们向牧场主人们刨根问底地打听我的事吧！
+[k]
+
+＠伊什塔尔
+虽然不知道你们在打什么主意，[r]但不～准～做～这种事啦！
+[k]
+
+＠伊什塔尔
+竟然想调查女神假期什么的，[r]没神经也要有个限度吧！？
+[k]
+
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[messageOff]
+[se bac19]
+[effect bit_shot_01]
+[wt 0.7]
+[se bac19]
+[effect bit_shot_01]
+[wt 0.7]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+
+＠玛修
+女神伊什塔尔没有提前警告就发动威吓射击了！[r]御主，请躲到建筑物背后去！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+
+＠梅林
+哎呀，从人民那卷走宝石的存钱女神出现啦！
+[k]
+
+＠梅林
+这下惨了，看来这次的猎物是我们吧！
+[k]
+
+＠梅林
+毕竟我们从吉尔伽美什王那里得到了大量财宝！[r]我们的钱包都合不拢了呀！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFadein H 0.1 0,50]
+
+＠伊什塔尔
+那就是所谓的诽谤啦！[r]我才没有为了钱财袭击人类！
+[k]
+
+＠伊什塔尔
+我的要求是理所当然的报酬！　再说了，[r]如果免费救助人类，他们会很容易堕落的吧！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+
+＠玛修
+免费……救助？[r]随心所欲的女神伊什塔尔居然会救助……人类……？
+[k]
+
+？1：啊……果然……
+？2：我开始明白了……
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 14]
+[charaFadein H 0.1 0,50]
+
+＠伊什塔尔
+惨了……说漏嘴了……
+[k]
+
+[charaFace H 5]
+＠伊什塔尔
+总而言之！　我一定要对你们施以天罚。[r]好好偿还两次把我当白痴的罪过吧。
+[k]
+
+＠伊什塔尔
+具体来说，就是你们拿着的那个像宝物的东西。[r]那个挺让人在意的，所以我就没收啦。
+[k]
+
+[charaFace H 6]
+＠伊什塔尔
+还有嘛……嗯，既然你们手头挺宽裕的，[r]那就把你们身心全部掏空吧。
+[k]
+
+[charaFace H 2]
+＠伊什塔尔
+觉悟吧。被我发现就是气数已尽！[r]我会毫不留情地榨干你们！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.5]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+
+

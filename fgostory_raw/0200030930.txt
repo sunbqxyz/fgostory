@@ -1,0 +1,354 @@
+
+＄02-00-03-09-3-0
+[bgm BGM_EVENT_3 0.1]
+
+
+[charaSet A 1017001 1 武藏]
+[charaSet B 6019001 1 风魔小太郎]
+[charaSet C 98110000 1 柳生但马守]
+[charaSet D 1098117900 1 Assassin Paraiso]
+[charaSet E 1098119210 1 清姬]
+[charaSet G 5009000 1 特效用dummy1]
+[charaSet H 5009000 1 特效用dummy2]
+
+[se ad11]
+[seVolume ad11 0 0.3]
+[scene 46902]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_gouka]
+
+[fadein black 1.0]
+[wait fade]
+
+＠清姬
+[line 3]杀掉[line 3]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaScale H 1.5]
+[charaEffect H bit_talk_29]
+[se ad392]
+[wt 0.6]
+
+[wipeout rectangleStripRightToLeft 0.2 1]
+[wait wipe]
+[charaPut G 1200,1200]
+[charaPut H 1200,1200]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0 1]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.2 1]
+[wait wipe]
+
+
+＠风魔小太郎
+主公！！
+[k]
+
+[messageOff]
+
+[charaFace B 5]
+[wt 0.2]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+[wipeout rectangleStripLeftToRight 0.2 1]
+[wait wipe]
+[charaPut G 1]
+[charaPut H 1]
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.2 1]
+[wait wipe]
+
+[seStop ad11 2.0]
+[fadeout white 2.0]
+[bgmStop BGM_EVENT_3 2.0]
+
+[wt 1.9]
+[fowardEffect bit_talk_quickmove]
+
+[wait fade]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_gouka]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_29]
+[scene 10001]
+[fadein white 0.1]
+[wait fade]
+[wt 0.5]
+[wipeout openEye 1.5 1.0]
+[wait wipe]
+[scene 46902]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 2.0]
+[wipein openEye 1.5 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_5 0.1]
+[wt 0.4]
+
+＠风魔小太郎
+……太好了，您……平安……无事呢……主公……
+[k]
+
+[charaMove B 0,-50 0.5]
+[wt 0.2]
+[charaFadeout B 0.4]
+[wt 0.3]
+[se ad144]
+[seVolume ad144 0 0.4]
+[seStop ad144 0.5]
+[wt 0.7]
+
+？1：小太郎，振作点！
+？2：从火焰中保护了我吗……！？
+
+？！
+
+
+＠武藏
+小太郎，还活着吗！？[r]我正在与 Paraiso 相互牵制，看不到你！
+[k]
+
+＠风魔小太郎
+……没……问题。[r]灵核没事……我还站得起来……
+[k]
+
+[messageOff]
+[wt 0.3]
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaShake B 0.04 1 1 0.4]
+[charaFadein B 0.4 0,-50]
+[charaMove B 1 0.6]
+[wt 1.0]
+
+＠风魔小太郎
+现在最重要的是！[r]得让清姬殿下恢复清醒才行！
+[k]
+
+？1：没错，清姬她[line 3]
+？2：气场突然变得很奇怪，还喷火……
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠清姬
+容我说些……过去的……事吧……各位……？
+[k]
+
+[charaFace E 1]
+
+＠清姬
+我曾经将……蛇……[r]蛇的巢穴破坏过……
+[k]
+
+＠清姬
+虽然不是出自本意。[r]我知道，就算蛇，也是有生命的……
+[k]
+
+[charaFace E 0]
+
+＠清姬
+然而……
+[k]
+
+＠清姬
+我，还是将蛇巢………………
+[k]
+
+＠清姬
+……里面明明还有卵。那小小的生命，[r]看上去明明即将诞生……我……
+[k]
+
+[charaFace E 2]
+
+＠清姬
+……为什么会做出这种事情来呢。[r]我，我……很后悔，很后悔……
+[k]
+
+＠清姬
+但还是没能得到原谅，蛇，蛇，[r]逐渐靠近我的身体……你看，你看……！
+[k]
+
+＠清姬
+就像现在[line 3]这样[line 3]
+[k]
+
+[bgmStop BGM_EVENT_5 0.3]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[wt 0.7]
+
+[se ad342]
+[se ad53]
+[seStop ad53 1.2]
+[wt 1.2]
+
+[se ad17]
+[shake 0.03 4 4 0.7]
+[wt 1.5]
+
+[bgm BGM_EVENT_3 0.1]
+
+？1：大蛇的尸骸再生了！？
+？2：应该已经被烧焦了啊！？
+
+？！
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠柳生但马守
+[line 6]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠武藏
+不会吧，都已经完全碳化了，却还能再生！[r]那难道是西行法师的还魂术！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 19]
+[charaFadein D 0.1 1]
+
+＠Assassin Paraiso
+呵呵。策略就该设二重三重越多越好啊，新免武藏！
+[k]
+
+[messageOff]
+
+[charaFadeout D 0.7]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace E 1]
+[charaFadein E 0.1 0]
+[charaFace D 13]
+[charaFadein D 0.1 2]
+
+＠Assassin Paraiso
+来吧，公主。蛇如今仍未原谅您。[r]看啊，小蛇们淅淅索索聚集在一起。
+[k]
+
+＠Assassin Paraiso
+杀吧。杀吧。[r]只要这么做，稍后在下就会原谅你。
+[k]
+
+[charaFace D 19]
+
+＠Assassin Paraiso
+在下会杀了你。[r]因此，你就安心地用火焰包围一切并燃烧殆尽吧！
+[k]
+
+[charaFace E 0]
+
+＠清姬
+………………是。说得，没错[line 3]
+[k]
+
+？1：清姬！
+？2：被 Paraiso 操纵了！？
+
+？！
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠风魔小太郎
+昨晚 Paraiso 最后扔出的两把苦无[r]难道只是佯攻吗！　真正的目标是[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠武藏
+是为了对清姬施展妖术吗！？[charaFace A 4][r]唔唔，我根本不擅长法术对决什么的，我没这种素质啊！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace E 1]
+[charaFadein E 0.1 0]
+[charaFace D 19]
+[charaFadein D 0.1 2]
+
+＠Assassin Paraiso
+事到如今再意识到也为时已晚！[r]来吧，清姬，你就好好为自己犯下的事赎罪吧！
+[k]
+
+[charaFace E 2]
+
+＠清姬
+是[line 3]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[wt 0.3]
+
+[se ad17]
+[wt 0.3]
+[shake 0.03 4 4 0.7]
+[wt 0.4]
+[seStop ad17 1.2]
+[wt 1.0]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

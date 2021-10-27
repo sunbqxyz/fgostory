@@ -1,0 +1,426 @@
+
+＄94-02-90-02-1-1
+[soundStopAll]
+
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 1]
+
+[label INPUT_SELECT_BRANCH_1]
+
+[charaSet A 2002001 1 吉尔伽美什]
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_2]
+
+[charaSet A 5018300 1 吉尔伽美什]
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_3]
+
+[charaSet C 8001000 1 玛修]
+[charaSet D 1005002 1 尼禄]
+[imageSet G back10000 1]
+[charaSet H 5009000 1 特效用dummy]
+
+[charaScale G 1.01]
+
+
+[bgm BGM_EVENT_24 0.1]
+
+[wt 0.5]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[effect bit_talk_kengekiall01]
+[wt 0.1]
+[charaPut H 1]
+[charaEffect H bit_talk_14]
+[se ad32]
+[wt 0.4]
+[charaPut H 60,10]
+[charaEffect H bit_talk_14]
+[se ad32]
+[wt 0.1]
+[charaPut H -50,-20]
+[charaEffect H bit_talk_14]
+[se ad32]
+
+[wt 0.3]
+
+[se ad671]
+[wt 0.1]
+[seStop ad671 0.6]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 64400]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+[fadein black 0.3]
+[wait fade]
+
+[wt 0.2]
+[se ad73]
+[charaMove C -20,0 0.2]
+[charaFadeout C 0.2]
+[wt 0.1]
+
+[wipeout rightToLeft 0.2 1]
+[wait wipe]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wipein leftToRight 0.2 1]
+[wait wipe]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth H 2]
+
+
+[branch INPUT_SELECT_BRANCH_8 INPUT_SELECT_BRANCH 1]
+
+[label INPUT_SELECT_BRANCH_7]
+
+＠吉尔伽美什
+咕唔唔！？[r]不可能，本王居然会被打到背靠栅栏！？
+[k]
+
+[branch INPUT_SELECT_BRANCH_9]
+
+[label INPUT_SELECT_BRANCH_8]
+
+＠豪华P
+咕唔唔！？[r]不可能，本王居然会被打到背靠栅栏！？
+[k]
+
+[branch INPUT_SELECT_BRANCH_9]
+
+[label INPUT_SELECT_BRANCH_9]
+
+[messageOff]
+
+[cueSe Battle bac151]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaShake A 0.05 3 3 0.6]
+[charaPut H 1]
+[charaEffect H bit_talk_14]
+[wt 0.3]
+[charaMove A 0,20 0.15]
+[wt 0.1]
+[charaFadeout A 0.4]
+[wipeout upToDown 0.5 1.0]
+[bgm BGM_EVENT_24 1.0 0.4]
+[wait wipe]
+[charaTalk depthOn]
+
+[wt 1.0]
+
+[branch INPUT_SELECT_BRANCH_5 INPUT_SELECT_BRANCH 1]
+[label INPUT_SELECT_BRANCH_4]
+[charaSet A 1098157200 1 吉尔伽美什]
+[branch INPUT_SELECT_BRANCH_6]
+[label INPUT_SELECT_BRANCH_5]
+[charaSet A 1098157300 1 吉尔伽美什]
+[branch INPUT_SELECT_BRANCH_6]
+[label INPUT_SELECT_BRANCH_6]
+
+[charaFadeTime G 0.1 0.5]
+
+[scene 28302]
+
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaDepth A 2]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,50]
+
+
+[se ad2]
+[seVolume ad2 0 0.1]
+[effect bit_talk_43l]
+
+[wipein downToUp 0.3 1.0]
+[charaMove A 1 60]
+[wait wipe]
+
+
+[branch INPUT_SELECT_BRANCH_11 INPUT_SELECT_BRANCH 1]
+
+[label INPUT_SELECT_BRANCH_10]
+
+＠吉尔伽美什
+可恶可恶可恶可恶[line 3]！
+[k]
+
+＠吉尔伽美什
+遭受强烈的一击，本王遍体鳞伤，[r]从上空向着地面坠落中[line 3]！
+[k]
+
+＠吉尔伽美什
+嘁，这次的现界看来到此为止了……！[r]接下来只能KISS地表然后说再见啦！
+[k]
+
+＠吉尔伽美什
+但你们可别得意忘形了，杂种！[r]本王在本王中也是最为温和的本王！
+[k]
+
+＠吉尔伽美什
+[#明年:下次]一定会作为更为洗练的英雄王出现！[r]在那天到来之前，优胜腰带就先交给你们保管吧！
+[k]
+
+＠吉尔伽美什
+保管吧～！[r][f small]保管吧～！[f -]
+[k]
+
+＠吉尔伽美什
+[f small]保管吧～……
+[k]
+
+[branch INPUT_SELECT_BRANCH_12]
+
+[label INPUT_SELECT_BRANCH_11]
+
+＠豪华P
+可恶可恶可恶可恶[line 3]！
+[k]
+
+＠豪华P
+遭受强烈的一击，本王遍体鳞伤，[r]从上空向着地面坠落中[line 3]！
+[k]
+
+＠豪华P
+嘁，这次的现界看来到此为止了……！[r]接下来只能KISS地表然后说再见啦！
+[k]
+
+＠豪华P
+但你们可别得意忘形了，杂种！[r]本王在本王中也是最为温和的本王！
+[k]
+
+＠豪华P
+[#明年:下次]一定会作为更为洗练的英雄王出现！[r]在那天到来之前，优胜腰带就先交给你们保管吧！
+[k]
+
+＠豪华P
+保管吧～！[r][f small]保管吧～！[f -]
+[k]
+
+＠豪华P
+[f small]保管吧～……
+[k]
+
+[branch INPUT_SELECT_BRANCH_12]
+
+[label INPUT_SELECT_BRANCH_12]
+
+
+[messageOff]
+[se ad75]
+[charaMove A 0,-100 0.7]
+[wt 0.2]
+[charaFadeout A 0.7]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_24 1.5]
+[seStop ad2 1.5]
+[wait fade]
+
+
+
+[charaFadeout G 0.1]
+[effectStop bit_talk_43l]
+
+[scene 64400]
+
+[wt 1.0]
+[charaTalk depthOn]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.5]
+
+？1：成……成……
+
+？！
+
+[wt 0.3]
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk C]
+[charaFace D 7]
+[charaFadein D 0.1 0]
+[charaFace C 6]
+[charaFadein C 0.1 2]
+
+
+＠玛修
+成功了，御主！[r]确认NY英雄王退回迦勒底了！
+[k]
+
+＠尼禄
+说得没错！　吾等获得了胜利，[r][%1]、玛修！
+[k]
+
+？1：恭喜你，尼禄！
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠尼禄
+唔嗯。唔嗯唔嗯唔嗯！[r]继续夸奖余吧！
+[k]
+
+[charaFace D 8]
+
+＠尼禄
+感谢你在战斗中的声援，[r]以及对胜利的喝彩！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？2：辛苦了，玛修！
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠玛修
+不，应该由我向御主道一声辛苦了。[r]并不单指这场决赛。
+[k]
+
+＠玛修
+这一路之所以能赢上来，[r]都是多亏了御主的指示与声援。
+[k]
+
+[charaFace C 13]
+
+＠玛修
+英雄王说得没错，这场胜利是团队的胜利。[r]庆祝胜利时抛起的对象应该是御主。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？！
+
+[wt 0.7]
+[se bas2]
+[fowardEffect bit_talk_20]
+[wt 2.0]
+[fowardEffectStop bit_talk_20]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠尼禄
+噢噢……快看啊，[%1]。[r]这就是余准备的圣杯。
+[k]
+
+＠尼禄
+尽管被英雄王那家伙加工成了优胜腰带，[r]但功能没有改变吧。
+[k]
+
+＠尼禄
+汝拿着。[r]余不需要。
+[k]
+
+[charaFace D 1]
+
+＠尼禄
+因为这原本就是余准备的东西。[r]主办者拿走奖品不就本末倒置了嘛。
+[k]
+
+？1：那我就不客气地……
+
+？2：对尼禄使用啦。
+
+[charaFace D 3]
+
+＠尼禄
+唔，唔嗯，这样啊。[r]被这么理直气壮地回答，反而令人很难拒绝呢……
+[k]
+
+＠尼禄
+（不过，不知是不是因为余曾让母亲服下了毒……？[r]　总觉得自己不怎么喜欢圣杯……）
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠玛修
+圣杯回收啦。
+[k]
+
+＠玛修
+尽管这夜景令人流连忘返，[r]但达·芬奇亲联系要求我们立刻返回比赛会场。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+[bgmStop BGM_EVENT_2 0.5]
+
+＠尼禄
+唔嗯，胜负已定。[r]那接下来只剩让优胜者站上表彰台啦！
+[k]
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaFace D 8]
+
+＠尼禄
+走吧，余引以为傲的勇者们啊！
+[k]
+
+＠尼禄
+BATTLE IN NEWYORK 2019，[r]威风凛凛地凯旋！
+[k]
+
+
+[messageOff]
+[wt 1.2]
+[fadeout white 2.0]
+[bgmStop BGM_EVENT_4 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

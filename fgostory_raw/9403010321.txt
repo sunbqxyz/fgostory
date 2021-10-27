@@ -1,0 +1,653 @@
+
+
+＄94-03-01-03-2-1
+
+
+
+[soundStopAll]
+
+[charaSet A 3034001 1 茨木童子]
+[charaSet B 6029001 1 Assassin Paraiso]
+[charaSet C 1098157700 1 小动物]
+[charaSet D 98111500 1 达·芬奇]
+[charaSet E 1098116710 1 鞭之鬼]
+[charaSet F 1098157600 1 护法少女]
+[charaSet G 10008001 1 志度内]
+[charaSet H 98115000 1 特效用]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 64700]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+[wt 0.5]
+[se adm14]
+[effect bit_talk_v_slash01]
+[wt 0.3]
+[se adm15]
+[effect bit_talk_h_slash01]
+[wt 0.3]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 0]
+[charaDepth H 1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[wt 0.1]
+[charaPut H -100,50]
+[se ad170]
+[charaShake E 0.05 3 3 0.2]
+[charaEffect H bit_talk_14]
+
+[wt 0.3]
+
+[charaPut H 100,-50]
+[se ad170]
+[charaShake E 0.05 3 3 0.2]
+[charaEffect H bit_talk_14]
+
+[wt 1.0]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk depthOff]
+[charaDepth F 0]
+[charaDepth C 1]
+
+[charaTalk off]
+[charaPut H 1]
+[charaFace F 0]
+[charaFace C 0]
+[charaFadein F 0.1 1]
+[charaFadein C 0.1 0,0]
+[wt 0.5]
+[se ad39]
+[charaEffect H bit_talk_36_bl]
+[wt 1.5]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_36_bl]
+[charaFadeout F 0.1]
+[charaFadeout C 0.1]
+[wt 0.3]
+[se bac165]
+[flashin once 0.1 1.0 5944EAFF 5944EA80]
+[effect bit_talk_14]
+[wt 0.5]
+[seStop bac165 0.5]
+[wt 0.1]
+[se bas13]
+[charaTalk on]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[wt 0.3]
+[charaShake E 0.05 3 3 0.5]
+[bgmStop BGM_EVENT_3 1.0]
+[wt 1.0]
+
+＠鞭之鬼
+………………！
+[k]
+
+[messageOff]
+
+[bgm BGM_EVENT_11 0.1]
+[charaEffect E bit_talk_06]
+
+
+＠鞭之鬼
+还……还挺能干的嘛……[r]原来如此。这就是拥有护法之鬼协助的结果啊……
+[k]
+
+＠鞭之鬼
+不，是不渴望黄金这种非日常……[r]脑子转了几圈之后才开始有些介意的耿直的……
+[k]
+
+＠鞭之鬼
+那些家伙的……
+[k]
+
+[messageOff]
+[charaFace E 4]
+[wt 1.0]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+
+[charaEffectStop E bit_talk_06]
+[wait charaEffect E bit_talk_06]
+[se ad52]
+[charaSpecialEffect E flashErasure 1 2.0]
+[wait charaSpecialEffect E]
+
+[bgmStop BGM_EVENT_11 1.0]
+
+[charaSet E 99502600 1 玛修]
+
+[wt 1.5]
+
+
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠玛修
+哎。啊。
+[k]
+
+[charaFace E 12]
+
+＠玛修
+前辈……
+[k]
+
+＠玛修
+没有撤退反应……[r]梅芙小姐……消灭了……[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+[se ad15]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-90]
+
+＠达·芬奇
+哎哟。得在你们贸然下定论之前说一下解析结果才行！[r]准确地说，消灭的并不是英灵梅芙。
+[k]
+
+＠达·芬奇
+是高密度魔力积蓄体的『神威的黄金』[r]模仿迦勒底英灵灵基从而创造的存在。
+[k]
+
+＠达·芬奇
+可以说是影从者的一种吧。[r]由黄金碎片制作的从者风外壳而已。
+[k]
+
+＠达·芬奇
+真正的梅芙应该还活蹦乱跳着才对。[r]不用担心。
+[k]
+
+？1：…………
+？2：……回收黄金碎片吧。
+
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[bgmStop BGM_EVENT_2 1.0]
+[wt 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+
+[charaSet D 98115000 1 特效用2]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠志度内
+嗯，交给我吧。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[cueSe Battle bac199]
+[cueSeVolume bac199 0 0.6]
+[charaPut D 1]
+[charaEffect D bit_talk_gold_kamui]
+[wt 3.0]
+[charaPut D 1200,1200]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_1 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+唔，在什么都没有的地方存在扭曲……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：[servantName 602900:Assassin Paraiso:望月千代女]
+是足以让大气发生折射程度的魔力吧。[r]这就是所谓的黄金吗，主公？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠志度内
+其实应该更像普通的黄金矿石才对，[r]但这个呀，是因为失去了守护自己的外壳……
+[k]
+
+＠志度内
+才会变成了暴露的魔力。[r]稍微等一下。
+[k]
+
+[messageOff]
+[charaFace G 14]
+[wt 1.0]
+
+[charaFace G 18]
+
+＠志度内
+……过来。你一定很害怕吧，一定吓到了吧。
+[k]
+
+＠志度内
+过来，过来。[r]你该在的地方可不是这里哦。
+[k]
+
+＠志度内
+我会把你送回原来的地方。[r]所以，不要害怕，到这里来。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[wt 1.0]
+[se adm19]
+[charaEffectStop D bit_talk_gold_kamui]
+[wt 1.0]
+[seStop adm19 1.0]
+[wt 1.0]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[charaTalk G]
+[charaFace G 15]
+[charaFadein G 0.1 1]
+
+＠志度内
+…………欢迎回来。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[bgmStop BGM_EVENT_1 1.0]
+[wt 1.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠玛修
+第一黄金算是回收完成了吧！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFace C 0]
+[charaFadein F 0.1 1]
+[charaFadein C 0.1 0,0]
+
+＠护法少女
+好啦，那妾身就先告辞了。[r]有缘再见。
+[k]
+
+＠小动物
+再见啦。渣滓们。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaEffect F bit_talk_quickmove]
+[charaSpecialEffect C erasureReverse 1 0.3]
+[charaSpecialEffect F erasureReverse 1 0.3]
+[se ad73]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+啊！
+[k]
+
+[charaFace A 4]
+
+＠茨木童子
+又来了……唔唔唔唔唔唔，鬼救阿……护法少女……！[r]又没能好好和她说话就让她走掉了。
+[k]
+
+[charaFace A 0]
+
+＠茨木童子
+但是吾现在，没错，感受到了罕见的命运。[r]无限感慨！
+[k]
+
+＠茨木童子
+各位，看到了吗，护法之鬼那从容不迫的举止。
+[k]
+
+＠茨木童子
+面不改色地救了吾并飒爽离去，[r]那优美，吹气若兰的妖冶！
+[k]
+
+[charaFace A 1]
+
+＠茨木童子
+就像酒吞啊……！
+[k]
+
+？1：（不能说。）
+？2：（忍住。）
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠玛修
+（前辈……）
+[k]
+
+＠玛修
+（啊。我知道了，前辈是[r]　不想毁了茨木童子小姐的梦想吧！）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+唔？　怎么了。汝的表情很奇怪哦，御主。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠B：[servantName 602900:Assassin Paraiso:望月千代女]
+总而言之，第一黄金已经成功回收了！[r]接下来是第二黄金了吧，究竟，
+[k]
+
+[charaFace B 0]
+
+＠B：[servantName 602900:Assassin Paraiso:望月千代女]
+会是什么样的游乐设施经理在等待我们呢……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠志度内
+第二游乐设施是[line 3]
+[k]
+
+[messageOff]
+[effect bit_talk_41]
+[bgmStop BGM_EVENT_2 1.0]
+[cameraMove 0.2 0,0 1.1]
+[wt 0.2]
+[se ad186]
+[charaFace G 2]
+＠志度内
+[line 3]旋转茶杯！
+[k]
+
+＠志度内
+[line 3]转啊转啊转啊，疯狂旋转的那种！
+[k]
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[effectStop bit_talk_41]
+[charaFadeout G 0.1]
+
+[cameraHome 0.1]
+
+[wt 2.0]
+[scene 64600]
+
+
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_BATTLE_29 0.1]
+
+＠鬼王朱裸
+哼呵呵呵呵……！[r]嘎哈哈哈哈哈哈哈哈哈！
+[k]
+
+＠鬼王朱裸
+鞭之鬼不过是经理中最弱的鬼！[r]根本不痛不痒！
+[k]
+
+＠鬼王朱裸
+再说了……[r]那些家伙似乎误会了呢……
+[k]
+
+＠鬼王朱裸
+我怎么可能是温罗嘛。[r]我的名字是朱裸[line 3]没错，鬼王·朱裸是也！
+[k]
+
+＠鬼王朱裸
+哼呵呵呵呵！[r]嘎～哈哈哈哈！
+[k]
+
+＠鬼王朱裸
+好了，去吧，下一个游乐设施经理！[r]旋转茶杯经理！
+[k]
+
+＠鬼王朱裸
+在那个能够缔结诸多缘分的游乐设施中，[r]用恐怖赐予他们断绝吧！
+[k]
+
+＠鬼王朱裸
+啊啊，但千万别忘了补充呕吐袋哦。[r]虽说用茶杯破坏情侣是很痛快，
+[k]
+
+＠鬼王朱裸
+但我可不想要什么浑身呕吐物的屈辱。[r]正所谓鬼也会慈悲流泪嘛，嘎哈哈哈哈！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+
+
+
+[fadeout black 1.0]
+[bgmStop BGM_BATTLE_29 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[bgmStop BGM_EVENT_3 1.0]
+[bgmStop BGM_EVENT_11 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[bgmStop BGM_EVENT_1 1.0]
+[bgmStop BGM_BATTLE_29 1.0]
+
+[seStop adm14 0.1]
+[seStop adm15 0.1]
+[seStop ad170 0.1]
+[seStop ad39 0.1]
+[seStop bac165 0.1]
+[seStop bas13 0.1]
+[seStop ad52 0.1]
+[seStop ad15 0.1]
+[seStop adm19 0.1]
+[seStop ad73 0.1]
+[seStop ad186 0.1]
+
+[effectStop bit_talk_v_slash01]
+[effectStop bit_talk_h_slash01]
+[effectStop bit_talk_14]
+[effectStop bit_talk_41]
+
+[charaSet A 3034001 1 茨木童子]
+[charaSet B 6029001 1 Assassin Paraiso]
+[charaSet C 1098157700 1 小动物]
+[charaSet D 98111500 1 达·芬奇]
+[charaSet E 1098116710 1 鞭之鬼]
+[charaSet F 1098157600 1 护法少女]
+[charaSet G 10008001 1 志度内]
+[charaSet H 98115000 1 特效用]
+
+[scene 10000]
+[skip false]
+
+[messageOff]
+[maskin black 1.0]
+[wait mask]
+
+[fadeout black 0.1]
+[wait fade]
+[soundStopAll]
+
+[label selectBranch]
+
+[skip false]
+
+
+[fadein black 1.0]
+[wait fade]
+
+
+＠
+【caution！】[r]【接下来即将播放专用演出与语音，】
+[k]
+
+＠
+【[line 3]请在做完准备后点击画面哦！】
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+[tapSkip stop_tapSkip]
+[label stop_tapSkip]
+
+[bgm BGM_EVENT_99 0.1]
+
+[revivalBranch lblNormal lblRevival]
+[label lblNormal]
+[effect bit_talk_oniland_nexttitle]
+[wait fowardEffect]
+[branch lblConf]
+[label lblRevival]
+[effect bit_talk_oniland_nexttitle_r]
+[wait fowardEffect]
+[label lblConf]
+
+[wt 3.1]
+[effect bit_talk_oniland_cut03]
+
+[wt 0.2]
+
+[pictureFrame cut132_text_11]
+[voice 9010011_0_M630]
+[wait voice 9010011_0_M630]
+[pictureFrame]
+
+[wt 0.3]
+
+[pictureFrame cut132_text_12]
+[voice 9010011_0_M631]
+[wait voice 9010011_0_M631]
+[pictureFrame]
+
+[wt 0.2]
+
+[pictureFrame cut132_text_13]
+[voice 9010011_0_M632]
+[wait voice 9010011_0_M632]
+[pictureFrame]
+
+[wt 0.2]
+
+[pictureFrame cut132_text_14]
+[voice 9010011_0_M633]
+[wait voice 9010011_0_M633]
+[pictureFrame]
+
+[pictureFrame cut132_text_15]
+[voice 9010011_0_M634]
+[wt 4.5]
+[pictureFrame]
+
+[effect bit_talk_oniland_telop03]
+
+[wait voice 9010011_0_M634]
+
+[wt 0.3]
+
+[voice 9010011_0_M635]
+[wait voice 9010011_0_M635]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_99 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

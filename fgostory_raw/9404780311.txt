@@ -1,0 +1,179 @@
+
+
+
+
+＄94-04-78-03-1-1
+
+[soundStopAll]
+
+[skip false]
+
+[maskout black 0]
+[wait mask]
+
+[charaSet A 2009001 1 俄里翁＆阿耳忒弥斯]
+[charaSet B 2030002 1 喀戎]
+[imageSet C cut171_token_408 1]
+[imageSet D cut171_token_crn 1]
+[charaSet H 9001001 1 贞德]
+[charaSet I 25005000 1 旅行者]
+[charaSet T 5009000 1 特效用dummy]
+
+[scene 20730]
+
+[pictureFrameTop cut170_gameframe_bright]
+
+[skip true]
+
+[fadein black 0]
+[wait fade]
+[maskin black 1.0]
+[wait mask]
+
+[bgm BGM_EVENT_2 0.1]
+
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+[charaEffect H bit_talk_06]
+
+＠贞德
+来，年幼的孩子。跟着我。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 0,-50]
+
+＠旅行者
+嗯！
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+[wt 0.5]
+
+[se ade406]
+[wt 0.2]
+[flashin once 0.1 0.6 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout H 0.1]
+[wt 0.2]
+[charaEffectStop H bit_talk_06]
+[wt 0.1]
+[seStop ade406 0.6]
+[wt 1.0]
+
+[charaTalk depthOff]
+[charaDepth T 4]
+[charaDepth C 5]
+[charaDepth D 6]
+[charaDepth A 1]
+[charaDepth B 2]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 0,-50]
+
+＠阿耳忒弥斯
+啊～，输了呢。不～甘～心～。[r]亲爱的，安慰一下我啦。
+[k]
+
+[charaEffect A bit_talk_token_change01]
+
+＠俄里翁
+哎哟真遗憾！　我得为下个任务做准备了！[r]抱歉，下次再说吧！
+[k]
+
+[messageOff]
+[charaEffectStop A bit_talk_token_change01]
+[charaPut T 0,-10]
+[charaEffect T bit_talk_token_change02]
+[se ad39]
+[wt 3.2]
+
+[se ad29]
+[seStop ad29 1.5]
+[wt 0.5]
+[charaFadeout A 0.4]
+
+[charaTalk C]
+[charaFadein C 0.4 0,-210]
+[wt 0.5]
+
+[charaMove T 0,10 1.2]
+[wt 1.2]
+
+[charaFadeout C 0.4]
+[wt 0.5]
+
+[se adm19]
+[seVolume adm19 0 0.3]
+[seVolume adm19 1.0 1.0]
+[wt 0.5]
+
+[seStop adm19 1.7]
+[charaMove T 0,700 2.2]
+[wt 2.2]
+
+[charaEffectStop T bit_talk_token_change02]
+[wt 0.1]
+[charaEffectDestroy T bit_talk_token_change02]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 0,-50]
+
+[charaEffect B bit_talk_token_change01]
+
+＠喀戎
+……看来我会妨碍你们，那我先告辞了。[r]毕竟妨碍别人谈恋爱时候会被马踢的嘛。
+[k]
+
+[messageOff]
+[charaEffectStop B bit_talk_token_change01]
+[charaPut T 0,-10]
+[charaEffect T bit_talk_token_change02]
+[se ad39]
+[wt 3.2]
+
+[se ad29]
+[seStop ad29 1.5]
+[wt 0.5]
+[charaFadeout B 0.4]
+
+[charaEffectStop T bit_talk_token_change02]
+[charaTalk D]
+[charaFadein D 0.4 0,-210]
+[wt 1.5]
+
+[charaEffectDestroy T bit_talk_token_change02]
+
+[charaMove D -200,100 0.3]
+[se ad75]
+[charaFadeout D 0.2]
+[wt 0.4]
+[seStop ad75 0.5]
+[wt 0.5]
+
+[maskout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+

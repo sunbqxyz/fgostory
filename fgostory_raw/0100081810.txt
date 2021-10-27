@@ -1,0 +1,445 @@
+＄01-00-08-18-1-0
+
+
+
+[charaSet A 8001002 1 玛修]
+[charaSet B 98003000 1 Dr.罗曼]
+[charaSet C 5009001 1 达·芬奇]
+[charaSet D 98108700 1 玛修]
+[charaSet H 98017000 1 通讯特效用角色]
+
+[soundStopAll]
+[bgm BGM_BATTLE_32 0.1]
+
+[scene 36000]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+＠玛修
+神殿内全魔神柱活动规模缩小！[r]通往玉座的通路打开了！
+[k]
+
+＠玛修
+这是千载难逢的机会，御主！
+[k]
+
+？1：嗯，我们走，玛修！
+
+[charaFace A 13]
+＠玛修
+是！[r]我们一定要回应大家的努力！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：医生，可以吗！？
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad13]
+[communicationChara 98003003 1 5 0 5]
+[wt 0.3]
+＠Dr.罗曼
+当然。我没有任何理由可以阻止你。[r]我们人类的未来就托付给你了！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[wt 0.3]
+
+？！
+
+[charaPut A 1]
+
+[messageOff]
+[cameraMove 5.0 0,0 1.5]
+[wt 1.0]
+
+[scene 36900 1.0]
+[shake 0.05 2 2 0]
+[se ad271]
+[wt 0.3]
+[charaEffect A bit_talk_41]
+[wait scene]
+[wt 1.0]
+[fadeout black 1.5]
+[seStop ad271 1.5]
+[wt 1.0]
+[charaPut A -2000,-2000]
+[charaEffectStop A bit_talk_41]
+[wait fade]
+[wipeout sideBlind 0.1 1.0]
+[wait wipe]
+[fadein black 0.1]
+[wait fade]
+[shakeStop]
+[wt 0.7]
+[cameraHome 0.1]
+[wt 0.3]
+
+[scene 10202]
+
+[wipein sideBlind 0.7 1.0]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠达·芬奇
+很好，通往玉座路上没有魔神柱的反应，[r]只要一口气穿过去就行了！
+[k]
+
+＠达·芬奇
+从距离来说，在约一公里外的地方有空间断层！[r]那对面一定就是魔术王的玉座！
+[k]
+
+[charaFace C 5]
+＠达·芬奇
+[line 3]不过，这个先暂且不谈，罗玛尼！[r]最后的战斗近在眼前，我再郑重确认一下！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace B 5]
+[charaFadein C 0.1 2]
+[charaFadein B 0.1 0]
+＠达·芬奇
+完成人理烧却之人。[r]盘踞于这座神殿中的魔术王所罗门，究竟是谁！
+[k]
+
+＠达·芬奇
+是本人，还是冒牌货。[r]是英灵，还是其他某种存在。
+[k]
+
+＠达·芬奇
+无论答案是对还是错，[r]身为司令官的你应该已经得出结论了吧。
+[k]
+
+＠达·芬奇
+不打算将这些作为情报告诉[%1]吗？
+[k]
+
+[charaTalk B]
+[charaFace B 10]
+＠Dr.罗曼
+呃……不，这个……
+[k]
+
+？1：我想知道，医生。
+？2：……请告诉我。
+
+？！
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[se ad13]
+[charaPut H 2]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+[wt 0.3]
+＠D：玛修
+对。我也和前辈意见相同。[r]罗曼医生。请告诉我您的看法。
+[k]
+
+[charaTalk B]
+[charaFace B 7]
+[wt 0.7]
+[charaFace B 0]
+＠Dr.罗曼
+没办法了。[r]如果你们不在乎这是我的臆测，那我就说了。
+[k]
+
+[charaFace B 0]
+＠Dr.罗曼
+毕竟再过一会儿就要与答案本人战斗了，[r]虽然有些不好意思。
+[k]
+
+[charaFace B 5]
+＠Dr.罗曼
+那个所罗门不是冒牌货。从与这座时间神殿接触的那刻起，[r]这就成了无法否定的事实。
+[k]
+
+
+[charaFace B 5]
+＠Dr.罗曼
+因为构成这座神殿的，[r]正是所罗门的魔术回路。
+[k]
+
+＠Dr.罗曼
+除了所罗门以外，没人能操控所罗门王的魔术回路。
+[k]
+
+＠Dr.罗曼
+因此，第三者假冒所罗门的可能性就不存在了。
+[k]
+
+＠Dr.罗曼
+但是，即便如此，[r]现在就断定那是『本人』未免还有些为时过早。
+[k]
+
+＠Dr.罗曼
+因为还存在所罗门被什么人操纵的可能性。[r]或是[line 3]
+[k]
+
+[charaTalk D]
+[charaFace D 7]
+＠D：玛修
+人格与生前不同的所罗门王……
+[k]
+
+[charaFace D 0]
+＠D：玛修
+就像贞德小姐和库·丘林先生一样，[r]以其他职阶形式成立的状况吗？
+[k]
+
+[charaTalk B]
+[charaFace B 0]
+＠Dr.罗曼
+嗯。不过，我觉得就算所罗门Alter化，[r]也不会有太大的改变。
+[k]
+
+＠Dr.罗曼
+假如说善的反义是恶，恶的反义是善的话，[r]那所罗门就是无。无论发生什么，他都不会动摇。
+[k]
+
+[charaTalk D]
+[charaFace D 6]
+＠D：玛修
+……无？[r]这难道不该称作『中立』吗？
+[k]
+
+[charaTalk B]
+[charaFace B 8]
+＠Dr.罗曼
+不，是无。因为他什么愿望都没有。[r]所罗门王没有被允许拥有自我。
+[k]
+
+＠Dr.罗曼
+他是天生就注定会成为王的生物。[r]与从牧羊人成为王的大卫王不同。
+[k]
+
+＠Dr.罗曼
+被身为优秀君主的大卫王[r]作为更为优秀的君主献给神明的孩子。
+[k]
+
+[charaFace B 10]
+＠Dr.罗曼
+所罗门没有身为人类的生活与思考。[r]他不具备这样的自由[line 3]这样的人权。
+[k]
+
+[charaFace B 7]
+＠Dr.罗曼
+虽然他拥有多到用不完的神权、王权。[r]但所罗门几乎没有身为人类的感性。
+[k]
+
+[messageOff]
+
+[charaFadeout D 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+[charaFadeout H 0.1]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 2]
+＠达·芬奇
+……所以你的意思是就算Alter化，他也不会变成坏人吗。[r]但那个魔术王怎么看都是个坏人吧？
+[k]
+
+[charaTalk B]
+[charaFace B 3]
+＠Dr.罗曼
+嗯，问题就在这里。[r]我也想过，
+[k]
+
+[charaFace B 8]
+＠Dr.罗曼
+“话虽如此，但所罗门也拥有和人类很像的善恶观，[r][f small]  [f -]或许是通过变成其他职阶才终于获得了恶意。”
+[k]
+
+
+＠Dr.罗曼
+诸如此类的可能性……
+[k]
+
+[charaFace B 0]
+＠Dr.罗曼
+但不对。走到这一步，我才真正确信。[r]那虽然是所罗门王，但内在是其他的存在。
+[k]
+
+＠Dr.罗曼
+和金固一样。[r]换言之，那是所罗门王的遗体。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 2]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 2]
+＠D：玛修
+遗体……！[r]也就是说，他自己复活了……！？
+[k]
+
+[charaTalk B]
+[charaFace B 10]
+＠Dr.罗曼
+嗯。正如字面意思，如果只是身体，[r]凭那位所罗门王的能力，是可以死而复生的。
+[k]
+
+＠Dr.罗曼
+随后，作为人理烧却的伏笔，[r]将作为自己手足的魔神柱之种播撒下去，
+[k]
+
+＠Dr.罗曼
+创造了这个特异点，并一直活到了2017年。[r]因为这里几乎没有所谓时间的概念啊。
+[k]
+
+？1：所以，他的“体内”……？
+？2：果然是……
+
+？！
+
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+[charaFadeout H 0.1]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+＠Dr.罗曼
+嗯。其真面目我们已经领教到不想再见到了。
+[k]
+
+＠Dr.罗曼
+不明白的是其理由。[r]为什么他……不，[#他们]为什么会想到这种目的。
+[k]
+
+[charaFace B 0]
+＠Dr.罗曼
+这点我无论如何都想不透。[r]所以我才沉默到现在，但已经无需再烦恼了。
+[k]
+
+＠Dr.罗曼
+因为答案只需询问本人就行了。[r]好了，很快就要到时空断层了。
+[k]
+
+＠Dr.罗曼
+只要穿过那里就是神殿的中心[line 3][r]被誉为至高王者的那个男人的玉座。
+[k]
+
+[charaFace B 5]
+＠Dr.罗曼
+这是你们与迦勒底最后的通讯……[r]不，应该也是最后的对话吧。
+[k]
+
+＠Dr.罗曼
+……所以，[r]我会问一些以前从未提过的问题。
+[k]
+
+＠Dr.罗曼
+玛修。你有没有后悔？[r]这个结局真的好吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk D]
+[charaFadein D 0.1 1]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 6]
+[wt 0.7]
+
+[charaTalk D]
+[charaFace D 13]
+＠D：玛修
+当然啦，医生。[r]我很高兴直到最后一秒都能由我自己做出选择。
+[k]
+
+？1：…………
+？2：…………玛修。
+
+？！
+
+[charaFadeout D 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+[charaFadeout H 0.1]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠Dr.罗曼
+……这样啊。[r]那就让所罗门见识一下你的强大吧。
+[k]
+
+[charaFace B 5]
+
+＠Dr.罗曼
+祝你好运，御主·[%1]。
+[k]
+
+＠Dr.罗曼
+敌人是魔术王所罗门[line 3][r]运用迄今为止你们培养的所有力量，击溃这个特异点吧！
+[k]
+
+[messageOff]
+
+[wipeout sideBlind 0.7 1.0]
+[wait wipe]
+[cameraMove 0.1 0,0 1.3]
+[wait camera]
+[charaFadeout B 0.1]
+
+[scene 36900]
+[shake 0.05 4 4 0]
+[wipein sideBlind 0.7 1.5]
+[cameraMove 3.5 0,0 2.5]
+[se ad271]
+[effect bit_talk_41]
+[wait wipe]
+[wt 0.7]
+
+
+[fadeout white 2.0]
+[seStop ad271 2.0]
+[bgmStop BGM_BATTLE_32 2.0]
+[wait fade]
+[effectStop bit_talk_41]
+[shakeStop]
+[wait camera]
+[shakeStop]
+[soundStopAll]
+[end]

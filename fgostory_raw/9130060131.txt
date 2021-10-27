@@ -1,0 +1,72 @@
+＄91-30-06-01-3-1
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 20300]
+[charaSet A 8001000 2 玛修]
+[charaSet B 98003000 2 Dr.罗曼]
+[charaSet C 98002000 2 芙芙]
+[charaSet D 3006001 1 弁庆]
+[charaSet E 98025000 1 影从者]
+[charaTalk D]
+[charaFace E 0]
+[charaFadein E 0 0]
+[charaFace D 1]
+[charaFadein D 0 2]
+[fadein black 1]
+[wait fade]
+＠弁庆
+哈哈哈哈哈！　真愉快，真愉快！
+[k]
+
+＠影从者
+你，你，你不过，[r]也是个，假货……！！
+[k]
+
+[charaFace D 0]
+＠弁庆
+……
+[k]
+
+[messageOff]
+[charaSpecialEffect E darkEnemyErasure 0 3]
+[wt 1]
+[se ba5]
+[wait charaSpecialEffect E]
+[charaFadeout D 0.1]
+[communicationChara 98003003 1 5 0 2]
+[wt 0.3]
+＠Dr.罗曼
+喂～发生什么了？[r]喂，听到我说话吗。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 8]
+[charaFadein A 0.1 2]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+＠玛修
+……唉。[r]和医生的无线通讯恢复了。
+[k]
+
+[charaFace A 0]
+＠玛修
+那我们回去吧。
+[k]
+
+[charaFace D 1]
+＠弁庆
+嗯。确实已是十足的锻炼！[r]……非常感谢，御主大人。
+[k]
+
+＠弁庆
+贫僧今后也将继续为您效劳。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_2 0.4]
+[wait fade]
+[soundStopAll]
+[end]

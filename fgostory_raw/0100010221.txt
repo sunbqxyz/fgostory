@@ -1,0 +1,170 @@
+＄01-00-01-02-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 20400 0]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98003003 1 罗曼医生]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 98014000 1 士兵]
+[charaSet E 9001001 1 贞德]
+[charaFace A 0]
+[charaFadein A 0]
+[fadein black 1]
+[wait fade]
+＠玛修
+……刚才那个好像是最后一个了。
+[k]
+
+[se ad13]
+[wait se ad13]
+[charaFadeout A 0]
+[charaTalk B]
+[charaFadein A 0.1 2]
+[communicationCharaLoop 98003003 0 5 0 1]
+＠罗曼医生
+不错，诸位干得很好！　哎呀，[r]我都看入神了，连捏着芝麻包子的手都出汗了！
+[k]
+
+[charaFace A 5]
+＠玛修
+医生。[r]那是我准备的芝麻包子吧。
+[k]
+
+[communicationCharaFace 4]
+＠罗曼医生
+咦？　哎？　是吗？[r]因为包子和茶一起放在管制室里，我还以为……
+[k]
+
+＠玛修
+……这可是我预备在这次[#任务:Order]结束后，[r]为回去犒劳而准备的。
+[k]
+
+＠玛修
+当然不是给医生吃的，[r]是为了在前线大展身手的前辈啊。
+[k]
+
+[communicationCharaFace 3]
+＠罗曼医生
+玛修……你长成了一个多么懂事的孩子啊……[r]吧唧吧唧。
+[k]
+
+[communicationCharaFace 1]
+＠罗曼医生
+嗯。话说这包子真好吃。[r]若能吃到这个，[%1]一定会很高兴吧！
+[k]
+
+[charaFace A 7]
+＠玛修
+……御主。回迦勒底时，[r]请事先预留足以战斗一次的资源。
+[k]
+
+[charaFace A 13]
+＠玛修
+因为我又登记了一个[r]想用盾牌背面殴打的敌人。
+[k]
+
+[charaFadeout A 0.1]
+[communicationCharaClear]
+[wait communicationChara]
+[charaFadein D 0.1 1]
+＠士兵
+不会吧，您是[line 2]不……你是！[r]快逃！　魔女出现了！
+[k]
+
+[charaFadeout D 0.1]
+[charaTalk A]
+[charaFadein D 0.1 0]
+[charaFace A 2]
+[charaFadein A 0.1 2]
+＠玛修
+咦，魔女……？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[se ad55]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+[seStop ad55 3]
+＠贞德
+……
+[k]
+
+[charaFadeout E 0]
+[charaFadein E 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+＠贞德
+那个……[r]非常感谢。
+[k]
+
+[charaFace A 1]
+＠玛修
+不用谢，这是应该的。[r]话说您是[line 2]。
+[k]
+
+[charaFace E 0]
+＠贞德
+裁定者。[r]我的从者职阶是裁定者。
+[k]
+
+＠贞德
+我的真名叫贞德。
+[k]
+
+[charaFace A 6]
+＠玛修
+贞德……！？
+[k]
+
+？1：不是说已经变成魔女了吗……
+
+？2：不是已经死了吗？
+
+？！
+
+[charaFace E 4]
+＠贞德
+那些稍后再谈。[r]……这些话不方便在他们面前说。
+[k]
+
+[charaFace E 1]
+＠贞德
+请跟我来。[r]拜托你们了。
+[k]
+
+[charaFace A 11]
+＠玛修
+……她邀请我们。[r]该怎么办，前辈？
+[k]
+
+？1：跟她走吧。
+
+？2：这是个线索。
+
+？！
+
+[charaFadeout E 0.1]
+[charaFadein C 0.1 0]
+＠芙芙
+啾啾，啾呜！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠罗曼医生
+我也赞成。[r]虽然力量很弱，但她好歹也是个从者。
+[k]
+
+＠罗曼医生
+肯定很熟悉这个时代的情况。[r]去打听一下详细状况吧。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_2 0.4]
+[wait fade]
+[soundStopAll]
+[end]

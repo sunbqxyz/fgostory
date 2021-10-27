@@ -1,0 +1,353 @@
+＄91-70-07-02-3-0
+[charaSet A 7007001 1 弗拉德三世]
+[charaSet B 99502600 1 玛修]
+[charaSet C 98006300 1 魔术师]
+[charaSet D 98013200 1 龙]
+
+[bgm BGM_EVENT_5 0.1]
+[scene 10912]
+[fadein black 1.5]
+[wait fade]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+
+＠弗拉德三世
+好了。只剩魔术师了。[r]……余不会让你现身。
+[k]
+
+＠弗拉德三世
+然而余将追踪你到灵薄狱之尽头。[r]让你深刻体会余“穿刺公”这个外号的意义。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[charaShake C 0.01 4 4 0.7]
+[bgmStop BGM_EVENT_5 0.7]
+＠魔术师
+……你……你们究竟是什么人……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[bgm BGM_EVENT_1 0.1]
+
+＠弗拉德三世
+连这种事都不明白吗。[r]弗拉德·采佩什[line 2]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠魔术师
+瓦拉几亚的……弗拉德三世？　少胡扯了。[r]弗拉德公早就已经毁灭了！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠弗拉德三世
+对，说得没错。[r]余作为瓦拉几亚之王战斗，并走向了毁灭。
+[k]
+
+＠弗拉德三世
+这都是结束了的事了，是被历史吞没的过去。[r]但是[line 2][charaFace A 5]余不允许这些遭到后世的掩饰。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠魔术师
+……你在……说什么。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[bgmStop BGM_EVENT_1 0.7]
+
+＠弗拉德三世
+你用不着知道。[r]……因为你……会毁灭。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaShake C 0.01 0 5 0.4]
+[bgm BGM_EVENT_3 0.1]
+
+＠魔术师
+咿……不，不要！[r]召……召唤！　出来吧，救救我！
+[k]
+
+[charaPut D 0,0]
+[charaEffect D bit_talk_36]
+＠魔术师
+救救我……！！[se ad39]
+[k]
+
+[charaFadeout C 0.1]
+[charaPut D 0,-1000]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 14]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+＠玛修
+召唤阵……！[r]难道他还想召唤什么吗！？
+[k]
+
+[messageOff]
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[wt 0.4]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[effect bit_talk_36]
+[se su4]
+[fadeout white 2.0]
+[wait fade]
+[charaEffectStop D bit_talk_36]
+[effectStop bit_talk_36]
+[shake 0.01 1 1 0]
+[wt 1.0]
+[fadein white 2.0]
+[wait fade]
+[se ad14]
+[seVolume ad14 0 0.4]
+
+＠魔术师
+噢噢！　来了，来了啊……！[r]杀掉他们！　把他们全部杀光……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠弗拉德三世
+[line 2]好了，究竟会召唤出什么呢。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 6]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+＠玛修
+这极大生体反应……难道……！？
+[k]
+
+[messageOff]
+[charaPut B 0,-10000]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[se ad17]
+[shake 0.01 0 5 2.0]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 2.0]
+[shakeStop]
+[seStop ad14]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠玛修
+居然在十九世纪的土地上……召唤出了龙……！？
+[k]
+
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠弗拉德三世
+不值得惊讶。
+[k]
+
+＠弗拉德三世
+毕竟连七个时代遭到烧却的事件都发生了。[r]那在修复过程中发生这种事也不足为奇。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOff]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaPut D 0,0]
+
+＠魔术师
+成……成功了……我成功了！[r]我一族的夙愿终于实现了！
+[k]
+
+＠魔术师
+接下来我将使用龙种[r]支配全伦敦的魔术师！
+[k]
+
+＠魔术师
+这样一来，区区时钟塔那些[#贵族:Lord][r]就能被我一举根绝[charaShake C 0.01 0 5 0.4][se ad46][charaEffect D bit_talk_35][line 9]。
+[k]
+
+
+＠魔术师
+……咦？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 15]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+
+＠玛修
+魔术师被……！
+[k]
+
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaShake C 0.01 5 5 0.7]
+＠魔术师
+呀啊啊啊啊啊啊啊啊啊啊啊啊啊啊！！！[r]被……被吃掉！　被吃掉了……！？
+[k]
+
+＠魔术师
+为什么！　不是我召唤的吗……为什么！？[r]住手[se ad46][charaEffect D bit_talk_35]……[charaShake C 0.01 5 5 0.7]呀啊啊啊啊啊啊啊啊啊啊！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.7]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠弗拉德三世
+太不像样了。就算能在偶然与机遇的重合下，成功召唤了龙种，[r]可无法统帅龙种根本无济于事。
+[k]
+
+＠弗拉德三世
+好吧。[r]来吧，[charaFace A 2]穷极之幻兽[line 2]龙种啊！
+[k]
+
+＠弗拉德三世
+余之父亲尊崇汝等的名号，[r]将汝等形象视为武艺的极限！
+[k]
+
+＠弗拉德三世
+身为其儿子的余未被视为龙，而是作为恶魔，[r]遭到了敌兵、领民、甚至历史的唾弃！
+[k]
+
+＠弗拉德三世
+而余现在，正直面父亲梦想中的汝。[r]这是何等讽刺，何等矛盾！
+[k]
+
+＠弗拉德三世
+但余会感谢这份不幸！[r]虽说汝已为异常，但配得上当余的对手。
+[k]
+
+＠弗拉德三世
+就让身为[#恶魔:Dracul]的余弗拉德三世，[r]用牙刺入汝之脖颈吧！
+[k]
+
+[messageOff]
+[se ad17]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+[charaTalk B]
+[charaFace B 2]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+
+＠玛修
+龙种来了……！！
+[k]
+
+？1：上吧！
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠弗拉德三世
+当然！[r]好好见识一下余之枪有多么锋利！
+[k]
+
+？2：保护好城里的人们！
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠弗拉德三世
+……唔！[r]在当前状况下依然为他们考虑，不愧是余之御主。
+[k]
+
+＠弗拉德三世
+若在相应的时代，[r]这甚至可被称为王之气量！
+[k]
+
+＠弗拉德三世
+好了，开始吧！
+[k]
+
+？！
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

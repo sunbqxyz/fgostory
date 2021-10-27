@@ -1,0 +1,752 @@
+
+
+
+＄03-00-06-07-3-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 1017001 1 武藏]
+[charaSet B 8001410 1 玛修]
+
+[charaSet C 98002000 1 芙芙]
+[charaSet E 1098123210 1 戈尔德鲁夫]
+[charaSet F 9005001 1 福尔摩斯]
+[charaSet G 1098124510 1 达·芬奇]
+[charaSet H 1098128200 1 凯妮斯]
+[charaSet I 8001400 1 玛修_有遮目镜]
+[imageSet J cut189_msh 1]
+[charaScale J 1.85]
+
+[sceneSet P 93800 1]
+
+
+[charaSet T 5009000 1 特效用dummy]
+
+[charaPut T 1200,1200]
+[charaEffect T bit_talk_10_LowLevel]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 91803]
+[backEffect bit_talk_sparks]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠武藏
+[%1]，接得好！[wt 1.0][charaFace A 9][r]话说凯妮斯扔给你的那个……是什么？
+[k]
+
+？1：其实我也不是很清楚[line 3]
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+？1：不过这肯定[line 3]是给玛修的……！
+
+？！
+
+[charaFace B 7]
+[cameraMove 0.5 0,0 1.06]
+[wt 0.5]
+
+[se ad215]
+[wt 0.8]
+
+[cameraHome 0.5]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠芙芙
+芙，芙[line 5]呜！[r]（特别意译：传得好，[%1]！）
+[k]
+
+[bgmStop BGM_EVENT_82 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠玛修
+[line 3]是！[r]交给我吧，御主！
+[k]
+
+＠玛修
+希翁小姐关于『存在规模』的讲座。[r]能将测量转换为武器的[#悖论效果:Paradox Effector]……
+[k]
+
+＠玛修
+达·芬奇亲拼尽全力调整的[r][#灵基外骨骼:奥特瑙斯]追加机构[line 3]
+[k]
+
+＠玛修
+在彷徨海的待机任务中，[r]我已经完成了实装模拟训练了……！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth B 5]
+[charaDepth I 6]
+[wt 0.4]
+[se ad658]
+[charaFace I 7]
+[charaFadein I 0.2 1]
+[wt 0.2]
+[charaFadeout B 0.1]
+[se ad656]
+[wt 1.0]
+[charaFadeout I 0.4]
+[wt 0.6]
+[se ad896]
+[wt 1.8]
+[se ad879]
+[seVolume ad879 0 0.8]
+[wt 1.0]
+
+[charaFadein J 1.2 -450,-630]
+[charaMove J 0,-630 6.0]
+
+[wt 0.7]
+[bgm BGM_EVENT_120 0.1]
+[wt 4.2]
+
+[backEffectDestroy bit_talk_sparks]
+[scene 93800 0.1]
+
+[charaFadeout J 1.5]
+[wt 2.5]
+
+
+？1：[#灵基外骨骼:奥特瑙斯]的盾牌，变形了……！？
+
+？！
+
+[scene 91803 1.0]
+[backEffect bit_talk_sparks]
+[wt 1.5]
+
+[charaPut T 1]
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠戈尔德鲁夫
+噢噢……噢噢噢！[r]竟然会变成这样啊！　名副其实的炮身！
+[k]
+
+[charaFace E 1]
+
+＠戈尔德鲁夫
+大吃一惊吧，[%1]！
+[k]
+
+[charaFace E 16]
+
+＠戈尔德鲁夫
+那就是魔术世界中无人不知、无人不晓的[r]阿特拉斯院的智慧之极致！　传说中的七大兵器之一！
+[k]
+
+＠戈尔德鲁夫
+好像是！
+[k]
+
+？1：七大兵器……？
+？2：（……好像在哪儿听说过……）
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠福尔摩斯
+嗯。根据魔术协会私下流传的传说，[r]那是[#甚至能轻易毁灭世界的]七种魔术性兵器。
+[k]
+
+＠福尔摩斯
+其中之一[line 3]就是概念武装[#黑色炮身:Black Barrel]。
+[k]
+
+＠福尔摩斯
+而Miss希翁曾持有它的仿制品。[r]她说这是送给迦勒底的礼物之一。
+[k]
+
+＠福尔摩斯
+她与达·芬奇协作，[r]开展对[#灵基外骨骼:奥特瑙斯]的改装工作……
+[k]
+
+[charaFace F 5]
+＠福尔摩斯
+……原来如此。[r]事到如今终于赶上了啊。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠达·芬奇
+很好～，变形成炮身形态没有问题！[r]输出与安全性均达到预测值！
+[k]
+
+[charaFace G 2]
+＠达·芬奇
+[#刻寿测量针:Accomplish Measure]，弹出！[r]黑色炮身，可以开始形成！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[backEffectDestroy bit_talk_sparks]
+[scene 93800 1.0]
+[wt 1.5]
+
+＠玛修
+正在执行！[r][#刻寿测量针:Accomplish Measure]，开始测量！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ade67]
+[se ad346]
+[se ade288]
+[wt 0.8]
+[seStop ad346 1.0]
+[seStop ade288 1.0]
+[se ad904]
+[wt 1.6]
+
+＠玛修
+机神得墨忒耳的[#存在规模:Life Scale]，[r]1000……2000……3000……停止于4500！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se adm31]
+[se ad631]
+[wt 2.6]
+[se ad169]
+[se ad633]
+[wt 1.0]
+[seStop ad169 1.0]
+[seStop ad633 1.0]
+
+＠玛修
+[#悖论构造体:Black Barrel]，形成！[r][#生命距离弹:Dead Counter]，烙印于炮身中！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ad346]
+[se ade288]
+[wt 0.8]
+[seStop ad346 1.0]
+[seStop ade288 1.0]
+[wt 0.3]
+
+[se ad935]
+[se ade280]
+[wt 1.5]
+
+？1：呃，那个……
+？2：抱歉，我听不太懂！
+
+？！
+
+[seVolume ad935 2.0 0.5]
+[seVolume ade280 2.0 0.5]
+[scene 91803 1.0]
+[backEffect bit_talk_sparks]
+[wt 1.5]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠福尔摩斯
+听不懂很正常，[r]恐怕就连状态绝佳的我都搞不懂它的构造吧！
+[k]
+
+＠福尔摩斯
+然而效果很明确！[r]那数值是得墨忒耳的『寿命』！
+[k]
+
+＠福尔摩斯
+既然是机械，那就是保质期，不，是推测运转年数吗？[r]哪种都行啦！
+[k]
+
+＠福尔摩斯
+只要这宇宙中还存在寿命，[r]就不存在没有『终结』的事物！
+[k]
+
+＠福尔摩斯
+有形之物必定存在『终结』！[r]不，是存在极限！
+[k]
+
+[charaFace F 5]
+＠福尔摩斯
+而那炮身能观测极限，并将其物质化！[r]换言之[line 3]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠凯妮斯
+就是根据对方的质量誊写魔力，[r]并直接向对方轰出的武器吗？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠福尔摩斯
+说得没错！[r]外表看起来粗鲁，脑子倒是很聪明呢，神灵凯妮斯！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+[wt 1.2]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[charaPut T 1]
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠达·芬奇
+嗯。这原本并不是能轻易运用的兵器。
+[k]
+
+＠达·芬奇
+然而这次通过将观测机构限制为对机神用，[r]成功实现了小型化与稳定化。
+[k]
+
+＠达·芬奇
+希翁早就将设计图交给我了。[r]只需找到作为核心的『测量基准』就行了。
+[k]
+
+
+＠达·芬奇
+第一基准，海神波塞冬的神核。[r]而第二基准[line 3]
+[k]
+
+＠达·芬奇
+就是从亚特兰蒂斯一路漂流至此的[r][#她:凯妮斯]右手握着的阿耳忒弥斯碎片。
+[k]
+
+
+[charaFace G 2]
+＠达·芬奇
+那就是最后的关键！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+＠凯妮斯
+……哼。[r]阿耳忒弥斯那白痴还是有点用处的嘛。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[cueSeStop bac1365 3.0]
+
+[charaPut T 1]
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠达·芬奇
+可是炮身的正式驱动需要超高密度魔力。[r][%1]。也就是需要你的令咒。
+[k]
+
+[charaFace G 13]
+＠达·芬奇
+只不过[line 3]
+[k]
+
+[charaFace G 24]
+＠达·芬奇
+这次的令咒使用与以往并不一样。
+[k]
+
+＠达·芬奇
+你要动员当前所有魔力、[r]体力乃至于命运力来使用令咒。
+[k]
+
+＠达·芬奇
+听好了。一旦射偏就没有后路了。[r]为控制[#灵基外骨骼:奥特瑙斯]，玛修已经腾不出任何余力了。
+[k]
+
+[charaFace G 5]
+
+＠达·芬奇
+[line 3]你们俩要配合好时机。[r]由玛修来瞄准，由你来扣动扳机。
+[k]
+
+？1：……交给我们吧！
+
+？！
+
+[charaFace G 26]
+＠达·芬奇
+回答得好。[r]那么泛人类史就交给你们了！
+[k]
+
+？1：……谢谢。达·芬奇亲先去休息吧。
+
+[charaFace G 1]
+＠达·芬奇
+真是的，这种时候你还是那么我行我素呢。[r][line 3]谢谢。接下来就交给你们啦！
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+[wt 0.4]
+？1：动手吧，玛修！
+
+？！
+
+＠玛修
+是！　前辈！
+[k]
+
+[charaPut T 1]
+[charaTalk E]
+[charaFace E 16]
+[charaFadein E 0.1 1]
+＠戈尔德鲁夫
+虽说是在奥林波斯遭遇的第一位机神！[r]但目前无疑已是紧要关头！　诸位！
+[k]
+
+[messageOff]
+
+[seVolume ad935 2.0 0]
+[seVolume ade280 2.0 0]
+
+[bgmStop BGM_EVENT_120 1.0]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+
+[se ad895]
+[wt 1.5]
+[seStop ad895 1.0]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠武藏
+！
+[k]
+
+[charaFace A 2]
+
+＠武藏
+慢着慢着怎么回事！[r]刚才不还一直无视我们吗，不会吧[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad895]
+[wt 2.0]
+[seStop ad895 1.0]
+[wt 1.0]
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+＠凯妮斯
+这是……！
+[k]
+
+[charaFace H 2]
+＠凯妮斯
+啊啊该死，是得墨忒耳的真体驱动声！[r]她打算在真体中枢积蓄巨大的魔力并释放！
+[k]
+
+＠凯妮斯
+按你们的方式来说[line 3]就是[#即将真名解放]！
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripUpToDown 0.5 1]
+[wait wipe]
+
+[charaFadeout H 0.1]
+[backEffectDestroy bit_talk_sparks]
+[scene 93904]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.5 1]
+[wait wipe]
+[wt 0.1]
+
+
+[se ad895]
+[wt 2.0]
+[seStop ad895 1.0]
+[wt 1.0]
+
+＠
+『对不起[line 3]』
+[k]
+
+＠
+『对不起，对不起，对不起。』
+[k]
+
+＠
+『我深深地……[r]　啊啊，深深地，深深地，爱着你。』
+[k]
+
+＠
+『我深深地爱着你啊。』
+[k]
+
+＠
+『珀耳塞福涅。』
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ad899]
+[se ad779]
+[wt 0.5]
+
+[scene 93905 1.0]
+[wt 1.0]
+
+[se ad733]
+[seStop ad779 1.0]
+[seStop ad899 1.0]
+[wt 0.4]
+
+＠
+『何其悲哀，何其悲哀[line 3]』
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ad899]
+[se ad779]
+[se ad894]
+[wt 1.0]
+
+[se ad733]
+[seStop ad779 1.0]
+[seStop ad899 1.0]
+[wt 1.0]
+
+[wt 2.5]
+
+＠阿黛勒
+机神得墨忒耳机体的魔力急速上升！[r]超大规模的“咆哮”要来了！
+[k]
+
+＠马卡里俄斯
+我不知道你们得到了什么，但抓紧时间！[r]她正在集聚不惜机体自我毁灭的庞大魔力！
+[k]
+
+＠马卡里俄斯
+你们一旦在那里直接承受攻击！[r]会消失得不留任何一丝以太啊！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 0.5]
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+
+[scene 93800]
+[seVolume ad935 1.0 1.0]
+[seVolume ade280 1.0 1.0]
+
+[wt 0.8]
+
+[cueSeVolume bac1365 1.0 0.7]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_120 0.1]
+
+＠玛修
+……没有问题。
+[k]
+
+＠玛修
+根据紧急推算，[r]我们会快零点五秒。
+[k]
+
+＠玛修
+虽是毫厘之差。[r]但我们却能凭这点差距取胜！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se adm31]
+[se ad631]
+[wt 2.6]
+[se ad169]
+[se ad633]
+[wt 1.0]
+[seStop ad169 1.0]
+[seStop ad633 1.0]
+
+＠玛修
+[line 6][#连接完毕:Set]。
+[k]
+
+＠玛修
+已观测到机神得墨忒耳之命运。[r][#生命距离弹:Dead Counter]，由悖论转变为真理。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ade18]
+[wt 0.5]
+[seStop ade18 1.0]
+
+[se ad904]
+[wt 1.5]
+
+[se bac170]
+[wt 0.2]
+[se ad881]
+[wt 1.2]
+
+＠玛修
+掩体雷弹，最大极限！[r]炮身完全固定，同步完毕！
+[k]
+
+＠玛修
+[line 3]御主！
+[k]
+
+？1：令咒装填！
+
+？！
+
+[messageOff]
+[skip false]
+[wt 0.1]
+
+[masterBranch _Male _Female]
+
+[label _Male]
+
+[se bas16]
+[effect bit_talk_CommandMantra_05]
+[wt 2.0]
+
+[branch _branchEnd]
+
+
+[label _Female]
+
+[se bas16]
+[effect bit_talk_CommandMantra_08]
+[wt 2.0]
+
+[label _branchEnd]
+[overlayFadein P 0.5 0,-200]
+[wt 0.5]
+
+＠玛修
+令咒装填至灵子膛室！
+[k]
+
+[se ad936]
+
+＠玛修
+[#炮身仿制品:Barrel Replica]，Full Trans……！[r]去吧，[#灵基外骨骼:奥特瑙斯]……！
+[k]
+
+[messageOff]
+[seStop ad935 1.0]
+[seStop ad936 1.0]
+[seStop ade280 1.0]
+
+[criMovie talk_mov047 bgmPlay false]
+[wt 1.0]
+
+[scene 10000]
+[charaFadeout P 1.0]
+[wt 24.8]
+[bgmStop BGM_EVENT_120 0.3]
+[wt 5.7]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[seStop ad609 2.0]
+[seStop ad781 2.0]
+[seStop ad782 2.0]
+
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,183 @@
+
+
+
+
+＄94-04-78-11-1-5
+
+[soundStopAll]
+
+[skip false]
+
+[maskout black 0]
+[wait mask]
+
+[charaSet A 9008001 1 阿斯特赖亚]
+[charaSet C 3043000 1 绘里濑]
+[charaSet D 98001000 1 玛修]
+[charaSet E 1098192800 1 玛丽]
+[charaSet H 98115000 1 特效用]
+[charaSet I 98115000 1 特效用2]
+[charaSet J 98115000 1 特效用2]
+
+[scene 20730]
+
+[pictureFrameTop cut170_gameframe_bright]
+
+[skip true]
+
+[fadein black 0]
+[wait fade]
+[maskin black 1.0]
+[wait mask]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+[charaEffect A bit_talk_06]
+[wt 1.0]
+
+
+＠阿斯特赖亚
+战斗非常精彩！[r]好了，我把[#财宝:代币]还给你们。拿好了。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+[wt 0.3]
+
+[charaPut H -250,400]
+[charaPut I 0,400]
+[charaPut J 250,400]
+
+[charaEffect H bit_talk_token_change02]
+[charaEffect I bit_talk_token_change02]
+[charaEffect J bit_talk_token_change02]
+
+[charaMove H -250,0 2.0]
+[charaMove I 0,0 2.0]
+[charaMove J 250,0 2.0]
+[se adm19]
+[seVolume adm19 0 0.3]
+[seVolume adm19 1.0 1.0]
+[wt 2.0]
+
+[wt 1.5]
+[seStop adm19 1.0]
+[wt 2.5]
+[charaEffectDestroy H bit_talk_token_change02]
+[charaEffectDestroy I bit_talk_token_change02]
+[charaEffectDestroy J bit_talk_token_change02]
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠阿斯特赖亚
+判决已下。正义已被执行、已被展现。[r]胜利者，宇津见绘里濑！　让我们高声赞扬她的名字！
+[k]
+
+[messageOff]
+[se ade406]
+[wt 0.2]
+[flashin once 0.1 0.6 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout A 0.1]
+[wt 0.2]
+[charaEffectStop A bit_talk_06]
+[wt 0.1]
+[seStop ade406 0.6]
+[wt 1.2]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+
+＠绘里濑
+非常感谢，女神啊。[r]每当仰望空中星座时，我都会赞美您。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 0,-50]
+
+＠玛修
+前辈……
+[k]
+
+？1：太可惜了。
+
+？2：明明就差一步了。
+
+？！
+
+[charaFace D 8]
+
+＠玛修
+是的。的确……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-50]
+
+＠玛丽
+从观众的角度来看，这是场十分有趣的比赛。[r]辛苦了，[%1]♪
+[k]
+
+[charaFace E 0]
+
+＠玛丽
+绘里濑小姐也辛苦了。[r]你的战斗方式真令人心跳加速呢。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 0,-50]
+
+＠绘里濑
+哎……啊，嗯。那个……谢谢您的夸奖……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠玛丽
+呵呵……你真的很可爱呢。[r]比糖果还要纤细，比玛德琳蛋糕还要柔软[line 3]
+[k]
+
+[charaFace E 7]
+
+＠玛丽
+不过，我稍微有些开始怀念苦味了。[r]就像深度烘培的咖啡。
+[k]
+
+[messageOff]
+[maskout black 2.0]
+[bgmStop BGM_EVENT_5 2.0]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+

@@ -1,0 +1,331 @@
+
+
+
+＄91-20-10-01-4-0
+[soundStopAll]
+[charaSet A 2010002 1 比利]
+[charaSet B 99502600 1 玛修]
+[charaSet C 7005001 1 斯巴达克斯]
+[charaSet D 99360000 1 凯尔特士兵]
+[charaSet E 5014001 1 梅菲斯托费勒斯]
+[charaSet F 6003001 1 百貌哈桑]
+[charaSet G 3002001 1 迪尔姆德]
+
+[scene 11110]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+
+＠比利
+御主，把刚才交给你的弹带给我！
+[k]
+
+[charaFace A 4]
+
+[messageOff]
+[se ad7]
+
+[charaMoveReturn A 0,-15 0.3]
+[wait charaMove A]
+
+[seStop ad7]
+
+[wt 0.3]
+
+[charaFace A 0]
+
+＠比利
+谢啦！[r]……好，还能继续……！
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.2]
+[charaMove A 0 0.2]
+
+[wt 0.4]
+
+[messageOff]
+
+[effect bit_shot_01]
+[shake 0.05 4 4 0.5]
+[se bac22]
+[wt 0.2]
+[se bac22]
+[wt 1.0]
+
+[charaEffect B bit_talk_10]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠玛修
+！
+[k]
+
+[charaFace B 2]
+
+＠玛修
+有凯尔特士兵企图袭击难民！[r]请火速应对！
+[k]
+
+[charaPut B 1200,1200]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠比利
+该死……！
+[k]
+
+[messageOff]
+[se ad346]
+[seStop ad346 0.5]
+
+[wt 0.5]
+
+[charaFace A 2]
+
+＠比利
+糟了，[#哑弹:Misfire]……！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠斯巴达克斯
+哈哈哈哈哈！[r]我将成为摧毁压迫的基石！
+[k]
+
+[messageOff]
+
+[charaShake C 0.05 4 4 1.2]
+[fowardEffect bit_talk_12_red_L]
+[se bac95]
+[wt 0.3]
+[se bac95]
+[wt 0.2]
+[fowardEffect bit_talk_12_red_R]
+[se bac95]
+[wt 0.3]
+[se bac95]
+[wt 0.2]
+[fowardEffect bit_talk_12_red_L]
+[se bac95]
+
+[wt 1.2]
+
+[fowardEffectStop]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠玛修
+斯巴达克斯先生！
+[k]
+
+[charaPut B 1200,1200]
+
+[messageOff]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+[wt 0.4]
+
+[effect bit_talk_36]
+[se ad39]
+
+[wt 1.0]
+
+＠斯巴达克斯
+我的，爱，会……爆炸……！
+[k]
+
+[charaFadeout C 0.1]
+[effectStop bit_talk_36]
+[wt 0.4]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠凯尔特士兵
+什么……！？
+[k]
+
+[charaFadeout D 0.1]
+
+[messageOff]
+
+[seLoop ad61]
+[effect bit_talk_36]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+[wt 2.0]
+
+[seStop ad61 0.4]
+[se ad64]
+[se ad65]
+[effect bit_talk_30]
+[effect bit_talk_voice01]
+[shake 0.03 3 3 0]
+[fadeout white 2.0]
+[wait fade]
+
+
+[charaFadeout C 0.1]
+[shakeStop]
+[effectStop bit_talk_36]
+[effectStop bit_talk_voice01]
+[wt 1.5]
+
+[fadein white 1.0]
+[wait fade]
+
+[effect bit_talk_06]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.4 1]
+＠斯巴达克斯
+压迫不会长久……[r]你们就……品味着这句话……去死吧……！
+[k]
+
+[messageOff]
+[wt 0.5]
+[charaSpecialEffect C flashErasure 1 1.5]
+[se ad52]
+[wt 0.5]
+[effectStop bit_talk_06]
+[wait charaSpecialEffect C]
+
+[wt 1.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠玛修
+斯巴达克斯先生……[r]拖上凯尔特士兵一起消灭了……
+[k]
+
+？1：呜……
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut B 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠比利
+抱歉，是我的失误……！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠梅菲斯托费勒斯
+没事没事，刚才那个只是不走运罢了。[r]然后然后，[charaFace E 0]如果你觉得这就是最糟糕的情况！
+[k]
+
+[charaFace E 1]
+
+＠梅菲斯托费勒斯
+那接下来只会越来越好！[r]来，再追加一个炸弹哟～！
+[k]
+
+[charaFadeout E 0.1]
+
+[messageOff]
+
+[wt 0.2]
+
+[se bac61]
+[fowardEffect bit_talk_explosion_triple]
+[shake 0.05 4 4 1.0]
+
+[wt 0.5]
+
+[fowardEffectStop]
+
+[wt 2.5]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠百貌哈桑
+成功避难的居民已经超过8成。[r]再坚持一会儿。
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠迪尔姆德
+呜，[charaShake G 0 2 2 0.1]这……！
+[k]
+
+[charaFadeout G 0.1]
+
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠玛修
+确认迪尔姆德先生身旁出现两只大型敌人。[r]这是……奇美拉和守护者！
+[k]
+
+[charaFace B 14]
+
+＠玛修
+这里居然还留有这种东西……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut B 1200,1200]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠比利
+这说明人理烧却留下的爪痕有多么深……！[r]快去救援！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

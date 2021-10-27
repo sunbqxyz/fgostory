@@ -1,0 +1,261 @@
+
+
+＄94-01-76-05-2-0
+[soundStopAll]
+
+[charaSet A 3005001 1 伊丽莎白]
+[charaSet B 10004000 1 机械伊丽亲]
+[charaSet C 6031001 1 刑部姬]
+[charaSet D 6026001 1 新宿的Assassin]
+[charaSet E 99502600 1 玛修]
+[charaSet F 98111500 1 达·芬奇]
+[charaSet G 5009000 1 特效用dummy１]
+[charaSet H 5009000 1 特效用dummy2]
+
+[scene 48900]
+
+[fadein black 1.5]
+[bgm BGM_EVENT_3 0.1]
+[wait fade]
+
+[effect bit_talk_shot_02]
+[wt 0.1]
+[se bac11]
+[wt 0.2]
+[se bac11]
+[wt 0.1]
+[se bac11]
+[wt 0.1]
+[se ad32]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[effect bit_talk_h_slash01]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[shake 0.05 3 3 0.4]
+[wt 0.4]
+[seStop ad32 0.5]
+[wt 0.5]
+
+＠伊丽莎白
+好，这样就行了……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠机械伊丽亲
+咕，呜……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠刑部姬
+就是这里！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[se bac412]
+[se bac277]
+[wt 0.5]
+[seStop bac412 0.7]
+[seStop bac277 0.7]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.03 3 3 0.15]
+[se bac7]
+[wt 0.3]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.03 3 3 0.25]
+[se bac7]
+[wt 1.0]
+
+？1：能压制住吗！？
+？！
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠新宿的Assassin
+嗯，我试试看！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[se ad73]
+[wt 0.2]
+[seStop ad73 0.3]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+[charaPut G -128,20]
+[charaEffect G bit_talk_13]
+[se bac9]
+[wt 0.2]
+[seStop bac9 0.2]
+[charaEffectStop G bit_talk_13]
+
+[charaShake B 0.01 5 5 0.7]
+
+[charaPut H 64,17]
+[charaEffect H bit_talk_13]
+[se bac8]
+[wt 0.2]
+[seStop bac8 0.2]
+[charaEffectStop H bit_talk_13]
+
+[charaPut G -32,-29]
+[charaEffect G bit_talk_13]
+[se bac11]
+[wt 0.4]
+[charaEffectStop G bit_talk_13]
+
+＠机械伊丽亲
+咕，呜……！
+[k]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[charaFace B 9]
+
+＠机械伊丽亲
+[line 3]重新执行对敌方战斗力的评价。
+[k]
+
+＠机械伊丽亲
+确认存在致死危险性，变更为对军目标。[r]强制将人型生命体设定为目标。
+[k]
+
+[charaDepth G 10]
+[charaPut G 1]
+[charaEffect G bit_talk_36_bl]
+[se ad39]
+
+[charaFace B 8]
+
+＠机械伊丽亲
+认证拒绝，认证拒绝，认证[line 3]通过。[r]对军[#个人]宝具『[#钢铁天空魔女:Breast Zero Erzsebet]』锁定解除！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠玛修
+大家，快警戒！[r]从机械伊丽亲身上发出了强烈的热反应！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 0,-90]
+
+＠达·芬奇
+她打算用全部兵器轰炸过来！[r]下一招将是全力！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠刑部姬
+住[messageShake 0.01 5 5 0.7]～手～啦～！[r]城～会～被～破～坏～的～！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠机械伊丽亲
+那还真是过意不去啦。[r]但是我的回答只有一个。
+[k]
+
+[charaFace B 6]
+
+＠机械伊丽亲
+『非常抱歉哦。[r]　话说，你们买火灾保险了吗？』
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_36_bl]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠刑部姬
+呜[messageShake 0.05 3 1 0.7]哇～！[r]怎么可能买嘛[line 3]！　你这纵火狂[line 2]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠伊丽莎白
+哇哦，这是木构造建筑，一定能烧得很旺[line 3]不对！
+[k]
+
+＠伊丽莎白
+尽管我和小刑刚认识不久，[r]但不能坐视她遭受城被烧掉的痛苦。
+[k]
+
+＠伊丽莎白
+尽管原因依旧不明，但既然你以我为原型，[r]那阻止你就是我的职责！
+[k]
+
+[charaFace A 2]
+
+＠伊丽莎白
+我要上了哦，机械伊丽亲！[r]伊丽莎 VS 机械伊丽莎……
+[k]
+
+＠伊丽莎白
+让我们一分高下，[r]看是我的歌声厉害，还是你的高速喷射器厉害！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,802 @@
+
+
+＄91-20-34-01-3-0
+
+[soundStopAll]
+
+[charaSet A 2034000 1 退尔]
+[charaSet C 2005001 1 阿塔兰忒]
+
+[charaSet G 8001000 1 dummy特效1]
+[charaSet H 8001000 1 dummy特效2]
+[charaSet I 8001000 1 dummy特效3]
+[imageSet J back10000 1]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[flag IsClear true]
+[branch lblConf]
+[label lblNotClear]
+[flag IsClear false]
+[label lblConf]
+
+
+[branch lblNotClear1 IsClear false]
+
+[charaSet B 1098124510 1 达·芬奇]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[charaSet B 98111500 1 达·芬奇]
+
+[label lblConf1]
+
+
+
+[charaScale J 1.01]
+
+[charaPut G 1200,1200]
+[charaEffect G bit_talk_10_MiddleLevel]
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_20re]
+
+
+[scene 20820]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.6]
+
+[bgm BGM_EVENT_62 0.1]
+
+＠阿塔兰忒
+原来如此。[r]所以才想和我比狩猎啊。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠退尔
+嗯，看来是这么一回事。
+[k]
+
+[charaFace A 0]
+
+＠退尔
+哎呀呀，对我来说，[r]无论是你，还是俄里翁阁下，都是神话中的猎人。
+[k]
+
+＠退尔
+您来当我的对手实在是太大材小用了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠阿塔兰忒
+不要那么谦虚。[r]听说汝的实力也相当了得。
+[k]
+
+[charaFace C 5]
+
+＠阿塔兰忒
+……话说，别把我和那个好色男人相提并论。
+[k]
+
+＠阿塔兰忒
+在肌肉量方面我或许比不过他，[r]但狩猎需要的并不是那种东西。
+[k]
+
+[charaFace C 2]
+
+＠阿塔兰忒
+到底是谁第一个说他是[r]希腊第一猎人的啊？　真是的。
+[k]
+
+[charaPut G 0,0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branch lblNotClear2 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 26]
+[charaFadein B 0.1 1]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf2]
+
+＠达·芬奇
+没错，在这种狩猎较量中，[r]她或许比俄里翁更难对付。
+[k]
+
+＠达·芬奇
+千万不能掉以轻心哦。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut G 2000,2000]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠退尔
+我明白。[r]不比俄里翁阁下逊色的弓箭实力，能看清黑夜的双眼。
+[k]
+
+＠退尔
+最重要的是，
+[k]
+
+＠退尔
+她是被誉为[line 3][r]『奔跑起来不会输给任何男人』的存在吧？
+[k]
+
+
+＠退尔
+也就是身为猎人的敏捷性非常高。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿塔兰忒
+我不会像俄里翁那样靠蛮力狩猎。[r]我最擅长发现小型猎物了。
+[k]
+
+＠阿塔兰忒
+有需要的话也会使用陷阱。但一般没有这个必要。[r]因为无论什么猎物，我都能追上。
+[k]
+
+[charaFace C 1]
+
+＠阿塔兰忒
+我会让你见识何谓高效率的真正狩猎。[r]很抱歉，但我不知道如何放水哦。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠退尔
+嘿嘿，这样才对嘛。
+[k]
+
+＠退尔
+我只有身为人类的一生，[r]也只拥有正常的技术[line 3]
+[k]
+
+＠退尔
+为了回报能与您在森林中一起驰骋的幸运，[r]我定将全力以赴与您对抗。
+[k]
+
+[charaPut G 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch lblNotClear3 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 27]
+[charaFadein B 0.1 1]
+
+[branch lblConf3]
+[label lblNotClear3]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf3]
+
+＠达·芬奇
+好嘞。那比赛开始！[r]这次也要以安全优先为宗旨努力哦！
+[k]
+
+[messageOff]
+[fadeout black 1.6]
+[bgm BGM_EVENT_62 1.6 0.6]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut G 2000,2000]
+
+[wipeFilter cinema 0.5 0]
+[wt 0.4]
+
+[fadein black 1.6]
+[wait fade]
+
+[se bac20]
+[wt 0.1]
+[se bac20]
+[wt 0.1]
+[se bac20]
+[wt 0.5]
+[effect bit_shot_01 -60,-30]
+[se bac15]
+[wt 0.1]
+[se bac15]
+[wt 0.1]
+[se bac15]
+[wt 0.9]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-60]
+[wt 0.2]
+[charaMove C 0,-50 0.2]
+[wt 0.4]
+
+＠阿塔兰忒
+嗯，状态不错。
+[k]
+
+[effectDestroy bit_shot_01]
+
+[charaFace C 1]
+
+＠阿塔兰忒
+我很久没有像这样单纯地狩猎了……[r]越来越期待了。
+[k]
+
+＠阿塔兰忒
+如果是在普通森林里，还要为生态系统考虑，[r]但这里是模拟装置内。
+[k]
+
+＠阿塔兰忒
+无论怎么捕获都抓不完。[r]提升一下节奏吧……
+[k]
+
+[messageOff]
+[charaMove C 0,-70 0.1]
+[wt 0.1]
+
+[se ad73]
+[charaEffect C bit_talk_quickmove]
+[charaFadeout C 0.1]
+[wt 0.8]
+
+[fadeout black 1.2]
+[wait fade]
+
+[wipeOff]
+[cameraMove 0.1 0,0 1.02]
+[wt 0.1]
+
+[fadein black 1.2]
+[bgm BGM_EVENT_62 1.2 1.0]
+[wait fade]
+
+[se bac19]
+[wt 0.5]
+[se bac16]
+[effect bit_talk_13]
+[wt 1.0]
+
+？1：又1只！　感觉不错！
+？！
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠退尔
+…………
+[k]
+
+？1：难道……不对……吗……？
+？！
+
+[charaFace A 0]
+
+＠退尔
+当然，这已经是我最快的节奏了。
+[k]
+
+＠退尔
+我隐约能够感受到森林的气息。[r]猎物越来越少了。
+[k]
+
+
+＠退尔
+看来月之女神的猎人小姐面对[r]我这样的还动真格了呢。这是我的荣幸。
+[k]
+
+[charaFace A 4]
+
+＠退尔
+……啊？　问我有什么办法？
+[k]
+
+[charaFace A 1]
+
+＠退尔
+嘿嘿。当然啦。
+[k]
+
+＠退尔
+没有那种办法。
+[k]
+
+＠退尔
+负责狩猎的是我本人。[r]而我也已经竭尽全力了。
+[k]
+
+＠退尔
+不可能进一步提升节奏了。
+[k]
+
+[charaFace A 0]
+
+
+＠退尔
+说到底，狩猎对我来说，[r]不过是为了争取每天口粮的日常生活。
+[k]
+
+
+＠退尔
+不是什么用来赌命来一场大比拼的东西。[r]我不可能使出超过我内在的力量，
+[k]
+
+＠退尔
+如果要求我这么做，[r]那就不是什么狩猎了。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 0,0]
+[wt 0.1]
+
+[branch lblNotClear4 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 24]
+[charaFadein B 0.1 1]
+
+[branch lblConf4]
+[label lblNotClear4]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf4]
+
+[wt 0.7]
+
+[bgm BGM_EVENT_62 0.4 0.5]
+
+[charaFadein J 0.1 0,-200]
+[charaFadeTime J 0.4 0.7]
+[wt 0.4]
+
+＠达·芬奇
+（嗯。很像他的为人，[r]　对自己的力量怀有『非消极看法的达观』……）
+[k]
+
+＠达·芬奇
+（认同本色的自己，并将之设为自己的定位，[r]　这感想甚至会令人有种开悟感。）
+[k]
+
+＠达·芬奇
+（不追求、不依存超出必要的存在。）
+[k]
+
+＠达·芬奇
+（甚至将自己的力量都视为[r]　与天气变化无异的狩猎要素之一[line 3]）
+[k]
+
+[branch lblNotClear5 IsClear false]
+
+
+[charaFace B 0]
+
+[branch lblConf5]
+[label lblNotClear5]
+
+
+[charaFace B 0]
+
+[label lblConf5]
+
+
+＠达·芬奇
+（你果然非常有猎人的风格。[r]　甚至可能超越俄里翁与阿塔兰忒。）
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaFadeout B 0.1]
+[charaFadeout J 0.3]
+[wt 0.2]
+[charaPut G 2000,2000]
+[wt 0.1]
+
+[bgm BGM_EVENT_62 0.4 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠退尔
+不过嘛，我并非没有想做的事。
+[k]
+
+？1：具体指什么？
+？2：务必尝试一下！
+？！
+
+[charaFace A 1]
+
+＠退尔
+那么……噢，这块岩石正好。[r]嘿咻。
+[k]
+
+[messageOff]
+[charaMove A -15,-10 0.4]
+[wt 0.2]
+[se ade255]
+[seVolume ade255 0 0.3]
+[wt 0.5]
+[seStop ade255 0.2]
+
+？1：？？？
+？！
+
+[charaFace A 0]
+
+＠退尔
+你坐下吧。[r]刚才一路上太辛苦了，稍微休息一会儿吧。
+[k]
+
+[charaFace A 1]
+
+＠退尔
+……啊，我知道你想说什么。
+[k]
+
+[charaFace A 4]
+
+＠退尔
+但是，现在我们的狩猎信息中，[r]混入了对方给与的情报这一多余要素。
+[k]
+
+
+＠退尔
+无论是否意识到这件事，[r]多余的力量与焦虑都会从身体里散发出来。
+[k]
+
+[charaFace A 0]
+
+＠退尔
+而森林里的动物敏感地觉察到了这些。
+[k]
+
+
+＠退尔
+就算再怎么努力，也只会导致效率低下，[r]我们能选择的最好方法，就是休息一会儿。
+[k]
+
+？1：正所谓欲速则不达吧。
+？！
+
+
+＠退尔
+就是这么回事。啊，话说，[r]如果你肚子饿了的话，趁现在……
+[k]
+
+[messageOff]
+[se ade309]
+[wt 1.5]
+
+[charaFace A 1]
+
+
+＠退尔
+吃点东西垫垫饥吧。现在我身上……[r]哦，只有苹果，要吃吗？
+[k]
+
+？1：我不客气了！（脸红。）
+？2：退尔的苹果！（兴奋。）
+？！
+
+＠退尔
+嘿。我扔给你。
+[k]
+
+
+[messageOff]
+[wt 0.7]
+[charaMoveScale A 1.01 0.2]
+[wt 0.1]
+[se bac23]
+[effectStop bit_talk_20]
+[wt 0.1]
+[charaMoveScale A 1.00 0.2]
+[wt 0.5]
+
+[cameraMove 0.2 0,-8 1.02]
+[wt 0.2]
+[se ad775]
+[seVolume ad775 0 0.7]
+[cameraMove 0.2 0,0 1.02]
+[wt 0.4]
+
+[se ade253]
+[shake 0.04 3 1 0.3]
+[wt 0.6]
+
+[charaFadeout A 0.2]
+[wt 0.1]
+
+[se adm60]
+[wt 0.8]
+[seStop adm60 1.2]
+[wt 1.2]
+
+？1：啊，没接住……
+？2：顺着山坡滚下去了！　抱歉，我去捡回来！
+？！
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 -15,-10]
+
+＠退尔
+没事，不要紧。苹果我还有。[r]不用特地去捡回来啦。
+[k]
+
+＠退尔
+只要你放任不管，森林里或许还会长出苹果树来哦？
+[k]
+
+[charaPut G 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch lblNotClear6 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+[branch lblConf6]
+[label lblNotClear6]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf6]
+
+
+＠达·芬奇
+这里是模拟装置内，这不太可能吧？
+[k]
+
+[messageOff]
+[fadeout black 1.6]
+[bgm BGM_EVENT_62 1.6 0.6]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut G 2000,2000]
+
+[wipeFilter cinema 0.5 0]
+[wt 0.4]
+
+[fadein black 1.6]
+[wait fade]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-60]
+[wt 0.2]
+[charaMove C 0,-50 0.2]
+[wt 0.4]
+
+＠阿塔兰忒
+好，接下来[line 3][wt 0.4][bgmStop BGM_EVENT_62 1.1][charaFace C 0][r]……唔？
+[k]
+
+[messageOff]
+[charaPut H 550,-70]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaMove H -600,-190 1.7]
+
+[se adm60]
+[seVolume adm60 0 0.7]
+[wt 1.2]
+[seStop adm60 0.8]
+[wt 1.1]
+[charaPut H 2000,2000]
+[charaEffectStop H bit_talk_20re]
+[wt 0.8]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠阿塔兰忒
+由于我视力还不错，所以能看到……[r]远处滚动的那个，[wt 0.9][charaFace C 2][messageShake 0.04 3 3 0.4]那是[line 3]
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_7 0.1]
+
+＠阿塔兰忒
+[f large]不[messageShake 0.04 3 3 0.5]是苹果吗！
+[k]
+
+[charaFace C 5]
+
+＠阿塔兰忒
+呜，咕……慢着，我一定要忍住。[r]我的右臂，冷静下来！
+[k]
+
+[charaFace C 2]
+
+＠阿塔兰忒
+那不是什么黄金苹果，只是普通苹果。[r]不是什么能打动我内心的东西。不是啊！
+[k]
+
+＠阿塔兰忒
+…………………………[wt 0.4][charaFace C 4]但是。
+[k]
+
+[messageOff]
+[charaFadein J 0.1 0,-200]
+[charaFadeTime J 0.4 0.7]
+[wt 0.7]
+
+[charaShake C 0.05 3 2 0.4]
+
+＠阿塔兰忒
+（坐立不安。）
+[k]
+
+[charaShakeStop C]
+[charaFace C 5]
+
+＠阿塔兰忒
+（不妙，这下不妙了。身在森林。加上好久没有打猎，[r]　兴奋的狩猎本能，苹果，苹果苹果苹果……）
+[k]
+
+
+＠阿塔兰忒
+（苹果……[wt 0.35]比试……[wt 0.35]苹果……[wt 0.35]狩猎……[wt 0.5][charaFace C 4][r]　不好，这不是什么好事！）
+[k]
+
+
+＠阿塔兰忒
+…………………………
+[k]
+
+[charaShake C 0.04 3 4 0.4]
+
+＠阿塔兰忒
+（蠢蠢欲动。）
+[k]
+
+[messageOff]
+[charaFadeout J 0.4]
+[wt 0.7]
+
+[charaShake C 0.04 3 4 1.2]
+[wt 1.2]
+
+[charaFace C 2]
+
+＠阿塔兰忒
+[f large]喵[messageShake 0.04 4 3 0.5]呀！！
+[k]
+
+[messageOff]
+[se ad348]
+[charaFadeout C 0.4]
+[charaEffect I bit_talk_42]
+[charaMove C -400,-50 0.6]
+[wt 0.6]
+
+[charaEffectStop I bit_talk_42]
+[wt 0.2]
+
+[charaPut I 2000,2000]
+[wt 0.8]
+
+[fadeout black 1.6]
+[bgmStop BGM_EVENT_7 1.6]
+[wait fade]
+
+[wipeOff]
+
+[fadein black 1.6]
+[wait fade]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 -15,-10]
+
+[bgm BGM_EVENT_62 0.1]
+
+＠退尔
+咦？　我怎么感觉森林中[r]对方施加的狩猎压力似乎变弱了……
+[k]
+
+[charaFace A 1]
+
+＠退尔
+算了，反正与我无关。
+[k]
+
+[messageOff]
+[se ad7]
+[charaMove A 1 0.3]
+[wt 0.7]
+
+
+＠退尔
+好了，那我们继续狩猎吧？[r]以我们自己的节奏。
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_62 0.5]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,290 @@
+
+＄03-00-01-11-2-1
+[soundStopAll]
+
+[charaSet A 5036001 1 阿维斯布隆]
+[charaSet B 7030001 1 阿塔兰忒·Alter]
+[charaSet C 1098126400 1 帕茨西]
+[charaSet D 2010001 1 比利]
+[charaSet E 99502600 1 玛修]
+[charaSet F 1098128400 1 雅嘎反叛军]
+[charaSet H 5009000 1 特效用dummy]
+
+[scene 54100]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠帕茨西
+很好～，是肉啊，是肉！
+[k]
+
+＠帕茨西
+别只是[%1]一个人吃，[r]你们也吃点吧？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠比利
+对从者而言，进食并不是必须的。[r]不过只要不吃坏肚子，倒也无所谓。
+[k]
+
+[charaFace D 1]
+
+＠比利
+我个人最喜欢边喝酒，[r]边用炖肉当下酒菜。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+……我理解汝的感受。[r]我也好想喝西打酒啊……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠比利
+我的话，比较喜欢波本和龙舌兰。
+[k]
+
+＠比利
+因为在那边生活的时候，[r]基本上无论发生什么都会喝酒呢。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+
+＠帕茨西
+……我听说这世上还有除火酒以外的酒，[r]味道究竟怎么样？
+[k]
+
+＠比利
+这世界里的酒基本都是不兑水的伏特加，[r]大部分都没什么风味呢。
+[k]
+
+[charaFace D 1]
+
+＠比利
+我自己也酿了一些酒哦，[r]要尝尝吗？
+[k]
+
+＠帕茨西
+好。[r]那我就稍微喝一点。
+[k]
+
+[messageOff]
+[charaMove C -256,-5 0.2]
+[se ad217]
+[wt 0.2]
+[seStop ad217 0.1]
+[charaMove C -256,0 0.4]
+[wt 0.8]
+
+[charaFace C 1]
+
+＠帕茨西
+……好喝。[r]虽然好喝……但酒精度数好低啊。
+[k]
+
+[charaFace D 0]
+
+＠比利
+这已经算比较烈的酒了。[r]你们果然都特别能喝呢。
+[k]
+
+[charaFace C 3]
+
+＠帕茨西
+太过能喝也很令人头疼呢，真是的。
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_7 1.2]
+[wait fade]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 1.0]
+[scene 54105]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.2]
+
+[scene 54100 1.5]
+
+[wt 2.5]
+
+
+[se ad603]
+[seVolume ad603 0 0.5]
+[wt 1.0]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠玛修
+就快到了呢。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+没有升起狼烟。[r]我们离开了很长一段时间，但似乎还是很平稳呢。
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[seStop ad603 1.0]
+[wait fade]
+[charaFadeout B 0.1]
+[scene 54900]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+我们回来了，开门！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠雅嘎反叛军
+欢迎回来，老大。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠阿维斯布隆
+[line 3]你们回来了啊。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+有好消息。[r]从者，比利小子加入我方了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠比利
+哟，你就是阿维斯布隆啊。[r]我是比利，请多指教。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠阿维斯布隆
+嗯，你好。
+[k]
+
+[bgmStop BGM_EVENT_77 0.5]
+
+＠阿维斯布隆
+然后，我这里有个坏消息。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠玛修
+[FFFFFF]？[-][r]怎么了？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠阿维斯布隆
+[line 3]食物就快耗尽了。
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

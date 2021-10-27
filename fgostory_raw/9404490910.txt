@@ -1,0 +1,484 @@
+
+
+＄94-04-49-09-1-0
+
+[soundStopAll]
+
+[skip false]
+
+[branchQuestNotClear lblNotClear1 3000320 4]
+[label lblClear1]
+[flag IsGirl true]
+[branch lblIsClearConf1]
+[label lblNotClear1]
+[flag IsGirl false]
+[label lblIsClearConf1]
+
+[skip true]
+
+[charaSet A 7027300 1 Amazones CEO_普通]
+[charaSet B 1098119600 1 Amazones CEO_轱辘]
+[charaSet C 99502600 1 玛修]
+[charaSet E 6008000 1 Cosmotic Beauty夫人]
+[charaSet F 98002000 1 芙芙]
+[charaSet G 98013100 1 红龙]
+[charaSet H 6031001 1 刑部姬]
+[charaSet J 5009000 1 特效用]
+
+[branch lblNotGirl1 IsGirl false]
+[label lblGirl1]
+[charaSet D 1098124510 1 达·芬奇]
+[branch lblIsGirlConf1]
+[label lblNotGirl1]
+[charaSet D 98111500 1 达·芬奇]
+[label lblIsGirlConf1]
+
+[scene 90000]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_90 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+………………
+[k]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth B 1]
+[charaDepth A 2]
+[charaFadeout A 0.2]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：Amazones CEO
+这次的待办事项是关于这座塔的居民。
+[k]
+
+＠B：Amazones CEO
+如果有异议，希望大家能讨论得活跃一些。[r]不过我开始隐约明白了。
+[k]
+
+
+＠B：Amazones CEO
+看来这座塔里有比以往更为直接的……[r]没错，有类似『刺客』的存在等待着我们。
+[k]
+
+＠B：Amazones CEO
+不是以前那种知晓了我们变弱后自发行动的存在。
+[k]
+
+＠B：Amazones CEO
+而是基于黑幕的委托，或是遭到蒙骗，[r]被刻意配置在这里的猎犬般的存在。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaPut J 1]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠玛修
+说得对。十层的莎乐美小姐也是这样，
+[k]
+
+＠玛修
+说不定接下来我们还会遇到[r]其他遭到煽动的熟人吧。
+[k]
+
+[charaFace C 8]
+
+＠玛修
+尽管我不愿意这么想……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[branch lblNotGirl2 IsGirl false]
+[label lblGirl2]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+[branch lblIsGirlConf2]
+[label lblNotGirl2]
+[charaFace D 4]
+[charaFadein D 0.1 0,-90]
+[label lblIsGirlConf2]
+
+＠达·芬奇
+说得对。
+[k]
+
+＠达·芬奇
+或许就是在配送业务开始前后[r]无法取得联系的那些从者中的某个人吧。
+[k]
+
+[branch lblNotGirl3 IsGirl false]
+[label lblGirl3]
+[charaFace D 33]
+[branch lblIsGirlConf3]
+[label lblNotGirl3]
+[charaFace D 4]
+[label lblIsGirlConf3]
+
+＠达·芬奇
+说实话，有很多都是我们不愿为敌的存在。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Cosmotic Beauty夫人
+都有些什么人啊？
+[k]
+
+＠Cosmotic Beauty夫人
+银河时装周的模特，[r]还是行星网络红人？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+呵呵。这么说来，[r]之前路上[%1]有提过吧。
+[k]
+
+[charaFace A 8]
+
+＠A：Amazones CEO
+屠巨人屠龙的贤王、有三千年历史的拳法高手、[r]二刀流的大剑豪……
+[k]
+
+＠A：Amazones CEO
+还有很多强者隶属于你们的公司吧！
+[k]
+
+[charaFace A 17]
+
+＠A：Amazones CEO
+令人热血沸腾。简直就是最棒的客人。[r]我非常想为他们配送货物……
+[k]
+
+？1：CEO，CEO，表情像坏人了！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠Cosmotic Beauty夫人
+抱歉在你舔舌头的时候打断一下，[r]话说，通常是不会和客人战斗的吧？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+哎哟，不好。[r]你说的没错，通常是不会战斗的。
+[k]
+
+[charaFace A 9]
+
+＠A：Amazones CEO
+这把流星Amazones CEO锤只会对投诉者挥舞。
+[k]
+
+＠A：Amazones CEO
+我可不能忘记这个根本原则，嗯。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠玛修
+嗯。哪怕在遇到陌生人时，
+[k]
+
+＠玛修
+只需想办法通过交涉获得情报，[r]然后继续前进就行了吧。
+[k]
+
+[bgmStop BGM_EVENT_90 1.2]
+
+[charaFace C 2]
+
+＠玛修
+啊，这层楼的居民差不多该露面了。[r]大家小心！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+好，放马过来吧！　我们是Amazones.com！
+[k]
+
+＠A：Amazones CEO
+假如客人是有名的战士，请不用客气尽管投诉，[r]CEO不会跑也不会回避！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.4]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[wt 1.0]
+
+[se ade215]
+[wt 2.0]
+
+[bgm BGM_EVENT_5 0.1]
+
+？1：………………
+？！
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠芙芙
+芙…………
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠Cosmotic Beauty夫人
+…………！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 1.2]
+
+[charaFace A 12]
+
+＠A：Amazones CEO
+你好，客人。您订购的商品[r]『灾星牧场严选牛肉组合装』送到了。
+[k]
+
+＠A：Amazones CEO
+能麻烦您签收或盖章吗？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad57]
+[seVolume ad57 0 0.2]
+[seVolume ad57 1.3 0.4]
+[wt 1.4]
+[seVolume ad57 1.5 0.6]
+[wt 1.3]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.3]
+[seStop ad57]
+[wt 0.2]
+
+[se ad17]
+[wt 2.2]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+唔。也许是语言不通吧。[r]这下麻烦了。
+[k]
+
+？1：现在不是冷静聊这个的时候吧！？
+？！
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth B 1]
+[charaDepth A 2]
+[charaFadeout A 0.2]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：Amazones CEO
+虽说和我预想的确实有些不一样，[r]但平等对待每一个客人乃是我们的宗旨。
+[k]
+
+＠B：Amazones CEO
+倘若只是语言不通，拥有凶恶的锐牙和坚硬鳞片，[r]就用超出服务手册的方法对待，未免有些不妥吧？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠Cosmotic Beauty夫人
+这高度的职业素养，从某种角度来说甚至给人以[r]BT点的感觉……呜，[wt 0.4][charaFace E 2][bgmStop BGM_EVENT_5 0.3]危险！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+[charaFadeout E 0.1]
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.1]
+[fadein black 0.3]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+
+[effect bit_talk_29v 0,-100]
+[se ad249]
+[cueSe Battle bac302]
+
+[wt 0.4]
+
+[fadeout black 0.2]
+[wt 0.2]
+[seStop ad249 0.4]
+[cueSeStop bac302 0.3]
+[wait fade]
+[charaFadeout G 0.1]
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[se ad59]
+[seVolume ad59 0 0.0]
+[wt 0.1]
+[fadein black 0.2]
+[wt 0.1]
+[bgm BGM_EVENT_3 0.1]
+[seVolume ad59 0.1 1.0]
+[charaMove A 64,0 0.1]
+[wait fade]
+
+[wt 0.1]
+[seStop ad59 0.1]
+
+＠A：Amazones CEO
+[line 3]但如果遭到攻击就另当别论了！
+[k]
+
+＠A：Amazones CEO
+拒绝走普通手续，不讲道理缺乏正当逻辑，[r]或是使用暴力给Amazones.com造成损失的对象，
+[k]
+
+＠A：Amazones CEO
+就是所谓的投诉者。
+[k]
+
+＠A：Amazones CEO
+而这位顾客在他们中属于程度尤为恶劣的那种！　没错！
+[k]
+
+
+＠A：Amazones CEO
+[f large]就是怪物投诉者！
+[k]
+
+[charaFace A 0]
+
+＠A：Amazones CEO
+我这么认为，因此我方只能动用[r]武力去应对了[wt 0.2][se ad59][charaFace A 2][effect bit_talk_41]呀啊啊啊啊啊啊啊啊啊！[wt 0.95][seStop ad59 0.2]
+[k]
+
+[effectDestroy bit_talk_41]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠芙芙
+芙，芙芙芙芙呜！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠刑部姬
+[#公主:我]和芙芙的意见大概是一致的，[r]但[#公主:我]还是要说出来！
+[k]
+
+＠刑部姬
+……你肯定只是想说这句话吧！？
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+

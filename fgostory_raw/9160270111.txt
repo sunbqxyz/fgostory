@@ -1,0 +1,207 @@
+
+＄91-60-27-01-1-1
+
+
+[soundStopAll]
+
+
+[scene 10310]
+[charaSet A 98001000 1 玛修]
+[charaSet B 6027000 1 暗匿者170]
+[charaSet C 98115000 1 NPC]
+[charaSet D 25002000 1 葛饰北斋]
+[charaSet E 5010001 1 ？？？]
+[charaSet F 25002000 1 葛饰北斋2]
+
+[messageOff]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaDepth B 9]
+[wt 0.5]
+
+[charaDepth C 10]
+[wt 0.5]
+
+
+[bgm BGM_EVENT_7 0.1]
+
+
+[fadein black 1]
+[wait fade]
+[wt 0.1]
+
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+
+＠暗匿者170
+怎么，穿着衣服也行吗。[r]那你干嘛不早说啦。
+[k]
+
+[charaFace B 1]
+
+＠暗匿者170
+咯呵呵，如果五分钟左右就能搞定的话，[r]朕倒也不是不愿意奉陪哦？
+[k]
+
+＠暗匿者170
+动作要这么摆吗？
+[k]
+
+[messageOff]
+[charaPut C 156,0]
+[charaFace B 0]
+[charaMove B 156,0 0.4]
+[wt 0.4]
+[fowardEffect bit_talk_valentine_brilliant]
+[se adm19]
+[wt 0.6]
+[fowardEffectStop bit_talk_valentine_brilliant]
+[seStop adm19 0.4]
+[wt 1]
+
+＠暗匿者170
+还是这样摆？
+[k]
+
+[messageOff]
+[charaFace B 0]
+[charaMove B -156,0 0.6]
+[wt 0.8]
+[charaPut C -156,0]
+[fowardEffect bit_talk_valentine_brilliant]
+[se adm19]
+[wt 1]
+[fowardEffectStop bit_talk_valentine_brilliant]
+[seStop adm19 0.4]
+[wt 1]
+[charaPut C -1536,1024]
+[wt 1]
+
+[charaFadeout B 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+
+＠葛饰北斋
+噢，真不错。虽说我已经大致记住你的模样了，[r]但如果你愿意在我挥笔时站在我面前，那就再好不过了。
+[k]
+
+[charaFace D 6]
+
+＠葛饰北斋
+我就让你好好见识一下[r]名震花之江户的北斋笔速有多快吧！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth F 0]
+[charaDepth D 1]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaFadeout D 0.4]
+[se ade174]
+[wt 1.2]
+[seStop ade174 0.1]
+
+[charaFace D 7]
+[charaFadein D 0.4 1]
+[se ade174]
+[wt 1]
+[seStop ade174 0.1]
+
+[charaFace F 12]
+[charaFadein F 0.1 1]
+[charaFadeout D 0.4]
+[se ade174]
+[wt 1.2]
+[seStop ade174 0.1]
+
+[charaFace D 9]
+[charaFadein D 0.4 1]
+[se ade174]
+[wt 1.4]
+[seStop ade174 0.1]
+
+[charaFadeout F 0.1]
+[charaTalk D]
+[charaFace D 0]
+
+＠葛饰北斋
+唔嗯。尽管我并不执着于那种方面，[r]但性感依然是十分重要的主题。
+[k]
+
+[charaFace D 13]
+
+＠葛饰北斋
+好，要不要稍微露一下肩膀？
+[k]
+
+[charaFadeout D 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠暗匿者170
+唔？　唔呼呼呼，真拿你没办法。[r]这可是附送的服务哦！
+[k]
+
+[charaFadeout B 0.1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠玛修
+我总觉得这个发展有可能往春画方向跑偏，[r]所以在绘画完成之前，一定要认真看住她们哦，前辈……
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 2]
+
+[wipeFilter cinema 0.5 0]
+
+[se ad95]
+[wt 1]
+
+[scene 10310]
+
+[bgm BGM_EVENT_5 0.1]
+
+[seStop ad95 0.1]
+[fadein black 1]
+[wait fade]
+[wt 0.7]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFilter E silhouette 000000]
+[charaFadein E 0.4 1]
+
+
+＠？？？
+………………
+[k]
+
+
+
+
+[messageOff]
+
+[wt 0.9]
+
+[bgmStop BGM_EVENT_5 1]
+[fadeout black 2]
+[wait fade]
+[soundStopAll]
+[end]
+

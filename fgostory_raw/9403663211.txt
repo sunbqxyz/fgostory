@@ -1,0 +1,371 @@
+
+
+
+
+＄94-03-66-32-1-1
+
+
+
+
+[soundStopAll]
+
+[charaSet A 1098166200 1 特里姆玛乌]
+[charaSet B 4032000 1 莱妮丝]
+[charaSet C 5019001 1 埃尔梅罗Ⅱ世]
+[charaSet D 6015001 1 凯利]
+[charaSet E 6039000 1 格蕾]
+[charaSet F 9008000 1 阿斯特赖亚]
+
+
+
+[scene 10000]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.5]
+[fowardEffect bit_talk_noise_gr]
+[se ad31]
+[wt 0.1]
+[fowardEffectStop bit_talk_noise_gr]
+[seStop ad31]
+[wt 0.3]
+
+[fowardEffect bit_talk_noise_gr]
+[se ad31]
+[wt 0.2]
+[fowardEffectStop bit_talk_noise_gr]
+[seStop ad31]
+[wt 0.2]
+
+[fowardEffect bit_talk_noise_gr]
+[se ad31]
+[wt 0.5]
+
+[fadeout black 0.5]
+[wait fade]
+
+[fowardEffectStop bit_talk_noise_gr]
+
+[scene 10922]
+[wt 0.1]
+
+[fadein black 1.0]
+[seStop ad31 1.0]
+[wait fade]
+
+[wt 0.5]
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠特里姆玛乌
+回收到小纸片了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠莱妮丝
+刚才那是……与圣杯联结在一起的人造人吗？[r]是对第四次圣杯战争的异说的再现吗……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠埃尔梅罗Ⅱ世
+爱丽丝菲尔·冯·爱因兹贝伦……
+[k]
+
+？1：是你的熟人吗？
+
+？2：感觉只有最后的那个孩子与之前有所不同。
+
+？！
+
+[charaFace C 0]
+
+＠埃尔梅罗Ⅱ世
+不，我只是知道她的名字罢了。[r]毕竟我看过相关的资料。
+[k]
+
+＠埃尔梅罗Ⅱ世
+在冬木的圣杯战争中，[r]爱因兹贝伦是位列御三家的魔术望族。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠莱妮丝
+多亏兄长对冬木的圣杯战争进行了长期的调查啊。[r]从时间上来看，这是离我们最近的再现记录了。
+[k]
+
+[charaFace B 6]
+
+＠莱妮丝
+话说起来，你好像在沉思着什么啊，[r]难道你也和那个时代的冬木有关联吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠凯利
+…………
+[k]
+
+＠凯利
+很遗憾，这不是[#现在的我]能知道的事情。
+[k]
+
+[messageOff]
+[charaEffect D bit_talk_quickmove]
+[charaSpecialEffect D erasureReverse 1 0.3]
+[se ad73]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠莱妮丝
+唔，逃走了！
+[k]
+
+[charaFace B 0]
+
+＠莱妮丝
+感觉被召唤至特异点的从者，[r]都受到了某种因缘的影响啊。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠格蕾
+……我也这么觉得。
+[k]
+
+＠格蕾
+小纸片的记录真是不可思议呢。[r]明明我对此应该一无所知，却也莫名地心生眷恋。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaChange B 1098164900 0 fade 0.1]
+[wait charaChange B]
+
+＠莱妮丝
+第四次圣杯战争的话，年轻时的兄长应该参加了吧。[r]当时是怎样的心情呢？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+
+
+[branchQuestClear fgozero 94003118]
+[branch another]
+[label another]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠埃尔梅罗Ⅱ世
+……那确实是一个不同的世界。[r]不论与我所在的世界有多么相似，
+[k]
+
+＠埃尔梅罗Ⅱ世
+也不论与我的理想有多么接近，那说到底仍是一个完全不同的世界。[twt 1.0][charaFace C 1][r]不过正因如此，我很庆幸我能够一窥其全貌。
+[k]
+
+[branch user_join]
+
+[branch lblNotClear isClear false]
+[label fgozero]
+
+
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠埃尔梅罗Ⅱ世
+……不，其实那个异说中也有我的参与。[r]准确地说，是接近于那个异说的世界。
+[k]
+
+＠埃尔梅罗Ⅱ世
+御主对此应该很了解吧。[r]啊，能接触到那段记忆真是太好了。
+[k]
+
+[branch user_join]
+
+
+[label user_join]
+
+？1：不难受吗？
+
+[charaFace C 0]
+
+＠埃尔梅罗Ⅱ世
+是啊。[r]要说完全不难受那是骗人的。
+[k]
+
+
+？2：会希望自己的世界也变成那个样子吗？
+
+[charaFace C 0]
+
+＠埃尔梅罗Ⅱ世
+明知故问啊。[r]我当然希望啦。
+[k]
+
+？！
+
+
+＠埃尔梅罗Ⅱ世
+不过即便如此，[r]世界会变成什么样子还是取决于自己的行动吧。
+[k]
+
+[charaFace C 1]
+
+＠埃尔梅罗Ⅱ世
+失败也好，成功也好，那都是我。[r]能够明白这一点本身就是幸运的。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠阿斯特赖亚
+你可真是多虑啊。[r]好了，赶紧去下一个地方吧！[charaFace F 0]
+[k]
+
+[messageOff]
+[se ad60]
+[wt 0.1]
+[se ad95]
+[wipeout rightToLeft 1.0 1.0]
+[bgmStop BGM_EVENT_70 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[scene 10000]
+[wt 0.6]
+
+[seStop ad95 1.0]
+[seStop ad60 1.0]
+[wt 1.0]
+
+[wipein rightToLeft 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[wipeFilter cinema 0.5 0]
+
+[scene 10922]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_95 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+
+＠凯利
+……走了吗？
+[k]
+
+[charaFace D 4]
+
+＠凯利
+现在的我什么都不记得了。也不应该记得。[r]本来我和你们之间就不存在什么因缘。
+[k]
+
+[charaFace D 0]
+
+＠凯利
+不过这样也没关系吧。[r]对于不了解我的、没见过我的[#女性:人]和少女来说。
+[k]
+
+＠凯利
+毕竟还是花儿与你们更配吧。
+[k]
+
+[messageOff]
+
+[charaMove D 0,-60 0.4]
+[wt 0.3]
+[se ad27]
+[seVolume ad27 0 0.5]
+[wt 0.6]
+[charaMove D 0,-50 0.4]
+
+[wt 2.0]
+
+[charaFadeout D 0.4]
+[wt 2.0]
+
+
+
+
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.4 -350,-50]
+[wt 0.4]
+
+＠阿斯特赖亚
+……………………真是的。
+[k]
+
+[charaFace F 0]
+
+＠阿斯特赖亚
+……明明和雇主说清楚就好了嘛。[r]真是个倔强的暗杀者。
+[k]
+
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_95 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

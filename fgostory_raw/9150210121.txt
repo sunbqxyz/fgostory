@@ -1,0 +1,99 @@
+＄91-50-21-01-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_2]
+[scene 20800 0]
+[charaSet A 8001001 2 玛修]
+[charaSet B 98002000 0 芙芙]
+[charaSet C 5021001 0 库·丘林]
+[charaSet E 98006000 0 Dr.罗曼]
+[charaTalk A]
+[charaFadein B 0.1 0]
+[charaFace A 0]
+[charaFadein A 0 2]
+[fadein black 1]
+[wait fade]
+＠玛修
+已确认击破敌方。[r]战斗结束了，前辈。
+[k]
+
+＠芙芙
+芙！
+[k]
+
+[charaFadeout B 0.1]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+＠库·丘林
+……哎呀呀。[r]就这样，我的工作结束了吧。
+[k]
+
+[charaFace C 4]
+＠库·丘林
+我们赶快回去吧。[r]抱歉啦，让你们陪我这趟。
+[k]
+
+？1：不回去看看阿尔斯特吗？
+
+？2：不去见见认识的人吗？
+
+？！
+
+[charaFace C 3]
+＠库·丘林
+还是别了。[r]虽说并非没有想见的人，但是[line 2]
+[k]
+
+[charaFace C 0]
+＠库·丘林
+毕竟现在的我可是魔术师。[r]以这个模样回去，压根不知道会发生什么。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 4]
+＠Dr.罗曼
+说得对，[r]德鲁伊在凯尔特文化圈内占据了相当重要的地位。
+[k]
+
+＠Dr.罗曼
+如果被人看到原本应该已经死去的英雄库·丘林，[r]居然变成德鲁伊回来了，
+[k]
+
+[communicationCharaFace 2]
+＠Dr.罗曼
+一定会引起骚乱的。[r]说不定甚至会影响到一两个国家的兴亡盛衰！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+＠库·丘林
+正是如此。[r]所以嘛，就这样结束吧。
+[k]
+
+[charaFace C 1]
+＠库·丘林
+我也呼吸过了这令人怀念的空气。[r]够了，赶快回去吧？
+[k]
+
+？1：明白了！
+
+？2：那我们回去吧！
+
+？！
+
+[charaFace A 1]
+＠玛修
+嗯，前辈！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_2 0.4]
+[wait fade]
+[soundStopAll]
+[end]

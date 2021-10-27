@@ -1,0 +1,972 @@
+
+
+
+＄91-10-33-01-3-0
+
+
+[soundStopAll]
+
+[charaSet A 1033002 1 齐格鲁德]
+[charaSet B 98001000 1 玛修]
+[charaSet D 1008001 1 齐格飞]
+[charaSet E 5038000 1 齐格]
+[charaSet F 1040000 1 葛饰北斋]
+
+[charaSet G 8001000 1 dummy特效1]
+[charaSet H 8001000 1 dummy特效2]
+[charaSet I 8001000 1 dummy特效3]
+[charaSet J 8001000 1 dummy特效4]
+[charaSet K 8001000 1 dummy特效5]
+[charaSet L 8001000 1 dummy特效6]
+[charaSet O 8001000 1 dummy特效7]
+[charaSet P 8001000 1 dummy特效8]
+
+[charaPut G 2000,2000]
+[charaEffect G bit_talk_41]
+[charaPut H 2000,2000]
+[charaEffect H bit_talk_42 0,0 H]
+
+[charaDepth A 1]
+[charaDepth F 5]
+[charaDepth D 10]
+[charaDepth E 10]
+
+[branchQuestNotClear lblNotClear 3000303]
+[flag IsClear true]
+[branch lblConf]
+[label lblNotClear]
+[flag IsClear false]
+[label lblConf]
+
+
+[branch lblNotClear1 IsClear false]
+
+[scene 66800]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[scene 10400]
+
+[label lblConf1]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠齐格鲁德
+……所以说。
+[k]
+
+＠齐格鲁德
+在御主看来，[r]在下应该弱化了吧。
+[k]
+
+？1：我觉得你相当强啊……
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠玛修
+对。
+[k]
+
+＠玛修
+在击退法夫纳的时候，[r]如果没有齐格鲁德先生，我们肯定会陷入苦战。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+＠齐格飞
+你看。[r]齐格鲁德阁下，你为什么会这么想？
+[k]
+
+＠齐格飞
+在我看来，[r]你也相当强大啊。
+[k]
+
+
+？2：我完全没有这么想啊……
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠齐格飞
+御主说得对。
+[k]
+
+＠齐格飞
+你的强大丝毫没有逊色的迹象……
+[k]
+
+＠齐格飞
+为什么你会有这种想法？
+[k]
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+……这个嘛……
+[k]
+
+＠齐格鲁德
+首先，在下在战场上松懈了。
+[k]
+
+＠齐格鲁德
+更重要的是，面对自己曾单骑讨伐的法夫纳……
+[k]
+
+＠齐格鲁德
+居然沦落到不借助其他从者的力量[r]就无法打倒的地步。
+[k]
+
+[charaFace A 4]
+＠齐格鲁德
+这说明，在下肯定是……弱化了。[r]在下是这么想的。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠齐格飞
+的确，既然我们是从者，[r]就可能出现比生前更弱的情况。
+[k]
+
+[charaFace D 0]
+
+＠齐格飞
+比方说，就像Saber的我无法使用[#外套:Tarnkappe]。
+[k]
+
+＠齐格飞
+单独考虑的话，[r]我们无疑是变弱了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+果然是这样啊……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠齐格飞
+……但是。
+[k]
+
+＠齐格飞
+同时，我觉得自己绝不比生前弱。
+[k]
+
+[charaFace D 1]
+
+＠齐格飞
+因为[line 3][r]我们有御主。
+[k]
+
+＠齐格飞
+而且，还有并肩战斗的同伴。
+[k]
+
+＠齐格飞
+这在原本的圣杯战争中本是不可能的状况，[r]但正因如此，我们才能让这股力量沸腾。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+……[r]……
+[k]
+
+[charaFace A 1]
+
+＠齐格鲁德
+……原来如此，确实。[wt 0.65][charaFace A 10][r]不，十分感谢，齐格飞阁下。
+[k]
+
+＠齐格鲁德
+在下真想送您一些谢礼……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠齐格飞
+啊，那我倒是有个请求，[r]有几个人我希望你能帮忙训练。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+哦。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠齐格飞
+……呵呵呵。
+[k]
+
+＠齐格飞
+或许，你能通过这次训练，[r]真正理解我所说的话哦。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+……？
+[k]
+
+[messageOff]
+[wt 0.4]
+[fadeout black 1.6]
+[bgmStop BGM_EVENT_2 1.6]
+[wait fade]
+
+[scene 31501]
+[wt 0.4]
+
+[fadein black 1.6]
+[wait fade]
+[wt 0.4]
+
+[se ade126]
+[charaFace A 7]
+[wt 0.8]
+
+＠齐格鲁德
+……综上所述，[bgm BGM_EVENT_62 0.1][r]在下就是陪两位训练的齐格鲁德。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaFace E 6]
+[charaFace F 26]
+[charaFadein E 0.4 0]
+[charaFadein F 0.4 2]
+[wt 0.6]
+[charaTalk on]
+[charaTalk A]
+
+＠葛饰北斋
+好嘞。
+[k]
+
+＠葛饰北斋
+我听齐格飞老爷说了。[r]这样我就能向着剑豪的高度更上一层楼啦！
+[k]
+
+＠齐格
+我不是Saber，而是Caster……[r]但基于性质，我也常会用剑战斗。
+[k]
+
+[charaFace E 1]
+
+＠齐格
+因此，这次训练应该会很有参考意义。[r]请多指教。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.8]
+[charaFace A 1]
+
+＠齐格鲁德
+……[r]……呵呵。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠葛饰北斋
+怎么了，齐格鲁德老爷？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+……哎呀，失礼了。[r]没什么。
+[k]
+
+[charaFace A 10]
+
+＠齐格鲁德
+那我们尽快开始吧。
+[k]
+
+？1：我站他们俩这边吧。
+？！
+
+＠齐格鲁德
+嗯。
+[k]
+
+[charaFace A 2]
+
+＠齐格鲁德
+那么[line 3]开始吧！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaFace E 5]
+[charaFace F 24]
+[charaFadein E 0.1 0]
+[charaFadein F 0.1 2]
+[wt 0.6]
+[charaMoveReturn E -256,-6 0.6]
+[charaMoveReturn F 256,-6 0.6]
+[wt 0.8]
+
+[fadeout black 1.4]
+[bgm BGM_EVENT_62 1.4 0.6]
+[wait fade]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[fadein black 1.4]
+[wait fade]
+[wt 0.2]
+
+[bgm BGM_EVENT_62 0.6 1.0]
+
+[charaFace E 5]
+[charaFace F 11]
+[charaFadein E 0.1 0]
+[charaFadein F 0.1 2]
+[wt 0.6]
+
+[se ad443]
+[charaFadeout E 0.4]
+[charaMove E -800,0 0.6]
+[wt 0.6]
+
+[seStop ad443 0.8]
+[wt 0.6]
+
+[charaMoveScale F 0.98 0.1]
+[charaMove F 256,-5 0.1]
+[wt 0.15]
+
+[se bac1]
+[charaPut G 156,0]
+[charaFace F 2]
+[charaMoveScale F 1.2 0.3]
+[charaMove F 156,50 0.3]
+[charaFadeout F 0.3]
+[wt 0.3]
+
+[charaPut G 2000,2000]
+[wt 0.1]
+
+[charaRoll I -13]
+[charaMoveScale F 1.0 0.1]
+
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.6]
+
+[se bac5]
+[effect bit_talk_Slash_white_01 110,0 H]
+[charaMoveReturn A -80,-10 0.4]
+[wt 0.45]
+
+[se bac5]
+[charaEffect I bit_talk_Slash_white_01 -20,0 V]
+[charaMoveReturn A 40,0 0.4]
+[wt 0.45]
+
+[effect bit_talk_h_slash01]
+[wt 0.1]
+
+[se bac417]
+[fadeout white 0.2]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFace A 0]
+[charaFace F 12]
+[charaFadein A 0.1 -130,0]
+[charaFadein F 0.1 180,0]
+[charaShake A 0.04 3 3 0.8]
+[charaShake F 0.04 3 3 0.8]
+
+[fadein white 0.2]
+[wait fade]
+[wt 0.8]
+
+[charaFace A 5]
+[charaMove A -140,0 0.1]
+[wt 0.25]
+[se bac11]
+[charaMove A 0,0 0.3]
+[fowardEffect bit_talk_13 180,40]
+[charaFace F 3]
+[charaShake F 0.04 2 2 0.4]
+[wt 0.15]
+[charaFadeout F 0.3]
+[charaMove F 600,0 0.3]
+[wt 0.7]
+
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk A]
+
+＠齐格鲁德
+动作很迅速，但剑法常会紊乱！
+[k]
+
+＠齐格鲁德
+拿着复数把武器时，[r]自然会犹豫该使用哪一把。
+[k]
+
+＠齐格鲁德
+首先必须克服这种犹豫不决！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠葛饰北斋
+呃，噢……！
+[k]
+
+[messageOff]
+[se ad443]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 0,0]
+[wt 0.9]
+[seStop ad443 0.4]
+[charaPut H 2000,2000]
+
+[se ad671]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 100,0]
+[charaMove E -266,0 0.3]
+[wt 0.3]
+[charaMove E -256,0 0.2]
+
+＠齐格
+就[messageShake 0.04 3 3 0.4]是那边！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+
+[se ad39]
+[fowardEffect bit_talk_charge_blu -216,0]
+[wt 1.4]
+
+[charaFadeout E 0.6]
+[charaFace D 5]
+[charaFadein D 0.3 -226,0]
+[wt 0.9]
+[seStop ad39 0.4]
+[fowardEffectStop bit_talk_charge_blu]
+[wt 0.7]
+
+[charaMoveScale D 0.98 0.1]
+[charaMove D -256,-5 0.1]
+[wt 0.15]
+
+[se bac1]
+[charaFace D 2]
+[charaMoveScale D 1.2 0.3]
+[charaMove D 50,50 0.3]
+[charaFadeout D 0.3]
+[wt 0.3]
+
+[charaMoveScale D 1.0 0.1]
+[wt 0.1]
+
+[effect bit_talk_h_slash01 0,0 H]
+[wt 0.1]
+
+[se bac417]
+[fadeout white 0.2]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaFace A 5]
+[charaFace D 5]
+[charaFadein A 0.1 50,0]
+[charaFadein D 0.1 -180,0]
+[charaShake A 0.04 3 3 0.8]
+[charaShake D 0.04 3 3 0.8]
+
+[fadein white 0.2]
+[wait fade]
+[wt 0.8]
+
+[se bac41]
+[se bac166]
+[fowardEffect bit_talk_charge_blu -176,0]
+[wt 1.1]
+[seStop ad41 0.4]
+[fowardEffectStop bit_talk_charge_blu]
+
+[charaFadeout D 0.4]
+[charaFace E 5]
+[charaFace A 0]
+[charaFadein E 0.2 -226,0]
+[wt 1.1]
+[charaMove A -10,-5 0.2]
+[wt 0.2]
+[se bac9]
+[fowardEffect bit_talk_13 -150,-280]
+[charaMove A 1 0.4]
+[wt 0.25]
+[charaFace E 2]
+[charaShake E 0.04 4 2 0.4]
+[charaMove E -226,-40 0.4]
+[wt 0.1]
+[se ade75]
+[seVolume ade75 0 0.8]
+[charaFadeout E 0.3]
+[wt 0.8]
+
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk A]
+＠齐格鲁德
+你还是过于依赖齐格飞阁下的力量了。
+[k]
+
+＠齐格鲁德
+因为只能变一瞬间，[r]所以你焦急的心情并非不能理解[line 3]
+[k]
+
+＠齐格鲁德
+但用招数时必须留出充分的从容。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 0,-50]
+[wt 0.4]
+[se ad7]
+[seVolume ad7 0 0.8]
+[charaMove E 1 0.4]
+[charaShake E 0.04 3 3 0.4]
+[wt 0.7]
+[charaFace E 2]
+
+＠齐格
+啊，是！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+[wt 0.4]
+
+[charaMoveScale F 0.98 0.1]
+[charaMove F 0,-5 0.1]
+[wt 0.15]
+
+[se bac1]
+[charaPut G 0,0]
+[charaFace F 2]
+[charaMoveScale F 1.2 0.3]
+[charaMove F 0,50 0.3]
+[charaFadeout F 0.3]
+[wt 0.3]
+
+[charaPut G 2000,2000]
+[wt 0.1]
+
+＠葛饰北斋
+嘿[messageShake 0.04 4 3 0.5]呀啊啊啊啊啊啊！
+[k]
+
+[charaMoveScale F 1.0 0.1]
+[wt 0.1]
+[messageShakeStop]
+
+[charaRoll K 90]
+[charaRoll O 90]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+哎哟。
+[k]
+
+[messageOff]
+[charaMove A 20,-10 0.2]
+[wt 0.2]
+[charaMove A -30,20 0.3]
+[wt 0.1]
+[se ad471]
+[charaEffect J bit_bolg_01b 0,-80]
+[charaEffect K bit_bolg_01b -250,200]
+[charaMove A 1 0.3]
+[charaShake A 0.04 2 2 0.4]
+[wt 0.05]
+[charaMove K -330,-400 0.2]
+[wt 0.18]
+[charaMove K -630,-600 0.15]
+[wt 0.9]
+
+[charaEffectDestroy J]
+[charaEffectDestroy K]
+
+＠齐格鲁德
+……的确不再犹豫不决了，[r]但攻击反而单调了哦。
+[k]
+
+＠齐格鲁德
+唯有虚实交织才是术理，[r]至少要为敌人准备三个选项。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 20]
+[charaFadein F 0.1 1]
+[charaShake F 0.04 3 2 0.6]
+＠葛饰北斋
+咿，咿呀。[r]太复杂了吧！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+＠齐格鲁德
+也可以将选项换成其他什么，[r]通过条件反射的形式思考。
+[k]
+
+[charaFace A 0]
+
+＠齐格鲁德
+比方说，为招数分配数字。[r]4、7、2、5[line 3]
+[k]
+
+[messageOff]
+[wt 0.3]
+
+[charaMoveScale A 0.98 0.1]
+[charaMove A 0,-5 0.1]
+[wt 0.15]
+
+[se bac1]
+[charaPut G 0,0]
+[charaMoveScale A 1.2 0.3]
+[charaMove A 0,50 0.3]
+[charaFadeout A 0.3]
+[wt 0.3]
+
+[charaPut G 2000,2000]
+[wt 0.1]
+
+[wipeout circleIn 0.2 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaMoveScale A 1.0 0.1]
+
+[scene 10000]
+
+[wipein circleOut 0.2 1.0]
+[wait wipe]
+
+[se bac85]
+[se bac308]
+[charaEffect L bit_bolg_02b]
+[wt 0.25]
+
+[se bac85]
+[se bac308]
+[charaEffect P bit_bolg_01b]
+[wt 0.25]
+
+[se bac86]
+[se bac308]
+[charaEffect O bit_bolg_01b -100,100]
+[wt 0.25]
+
+[se bac308]
+[se bac474]
+[seVolume bac474 0 0.7]
+[effect bit_talk_gram_slash_03]
+[wt 0.4]
+
+[fadeout white 0.2]
+[wait fade]
+
+[scene 31501]
+[cameraMove 0.1 0,0 1.02]
+
+[fadein white 0.2]
+[wait fade]
+[wt 0.6]
+
+[se ad223]
+[fowardEffect bit_talk_quickmove]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-10]
+[wt 0.2]
+[charaMove A 1 0.2]
+[wt 0.8]
+
+[charaEffectDestroy L]
+[charaEffectDestroy O]
+[charaEffectDestroy P]
+
+[se ade80]
+[wt 2.7]
+[se ad716]
+[shake 0.04 3 2 0.9]
+[wt 1.2]
+
+＠齐格鲁德
+这样做。[r]很简单吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace E 2]
+[charaFace F 20]
+[charaFadein E 0.1 0]
+[charaFadein F 0.1 2]
+
+＠二人
+……[r]……
+[k]
+
+[charaTalk on]
+[charaFace E 8]
+
+＠齐格
+要到达这个境界似乎还有很长的路要走……
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+是吗？[r]……那就换其他形式联想吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace E 6]
+[charaFace F 29]
+[charaFadein E 0.1 0]
+[charaFadein F 0.1 2]
+
+＠葛饰北斋
+啊……齐格鲁德老爷，[r]能结合图画思考吗？
+[k]
+
+[charaFace F 6]
+
+＠葛饰北斋
+不，我只是脑海中模糊地～[r]浮现出这个念头。
+[k]
+
+＠葛饰北斋
+至少比起数字，我更熟悉这种方式。
+[k]
+
+[charaFace E 1]
+
+＠齐格
+那我……嗯，[r]用从者职阶来思考吧。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+我觉得可以哦。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace E 1]
+[charaFace F 7]
+[charaFadein E 0.1 0]
+[charaFadein F 0.1 2]
+
+＠葛饰北斋
+好嘞，那么，[r]我们上，小少爷！　我先上啦！
+[k]
+
+[charaFace E 8]
+
+＠齐格
+小少爷……
+[k]
+
+[charaFace E 2]
+
+
+＠齐格
+算了。那接下来轮到我了！[r]我要上了！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+来吧，尽管放马过来吧！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_62 0.5]
+[wait fade]
+[soundStopAll]
+[end]

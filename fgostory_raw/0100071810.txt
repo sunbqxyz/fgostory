@@ -1,0 +1,556 @@
+
+
+
+＄01-00-07-18-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1 0.5]
+[se ad2]
+[seVolume ad2 0 0.4]
+[charaSet A 98002000 1 芙芙]
+[charaSet B 8001002 1 玛修]
+[charaSet C 98003000 1 Dr.罗曼]
+[charaSet D 4018001 1 魁札尔·科亚特尔]
+[charaSet E 98107900 1 巴力拉赫穆]
+
+[effect bit_talk_41]
+[shake 0.05 0 4 0]
+[scene 35010]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠芙芙
+芙芙芙芙芙[line 3]
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠玛修
+这是前所未有的速度！[r]令人不禁回想起禁忌的阿拉什航空啊，御[line 2]！
+[k]
+
+？1：要掉下去了，要掉下去了……！
+？2：翼龙大哥动真格了……！
+
+？！
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+虽然快要昏厥了但务必坚持！[r]拉赫穆正朝波斯湾中心前进！
+[k]
+
+＠Dr.罗曼
+提亚马特恐怕就沉在那里！[r]圣杯一旦被丢下去，就几乎不可能回收了！
+[k]
+
+＠Dr.罗曼
+不仅如此，[r]倘若提亚马特靠圣杯的魔力觉醒过来[line 3]
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠魁札尔·科亚特尔
+放心啦，能追上！[r]我已经看到那家伙的背影了！
+[k]
+
+＠魁札尔·科亚特尔
+羽蛇神翼龙，最后再加把劲！[r]全速把那头拉赫穆撞个底朝天！
+[k]
+
+[charaFadeout D 0.1]
+＠羽蛇神翼龙
+咕咿[line 5]！
+[k]
+
+[messageOff]
+[seVolume ad2 0.7 0.7]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.7 1]
+[wt 0.4]
+[cameraMove 1.5 0,0 1.5]
+[wt 1.3]
+[effectStop bit_talk_41]
+[wipeout circleIn 0.2 1]
+[wait wipe]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.05 0 10 0.4]
+[se bac10]
+[cameraMove 1.0 0,0 1.0]
+[charaShake E 0.05 4 4 0.7]
+[wipein circleIn 0.2 1]
+[wait wipe]
+[charaMove E 0,-120 0.4]
+[charaFadeout E 0.4]
+[wt 0.2]
+[seVolume ad2 0.7 0.2]
+[wt 0.8]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠魁札尔·科亚特尔
+很好，分出胜负啦～！[r]掉到海岸上去了，追上去解决它！
+[k]
+
+？1：不愧是魁札尔·科亚特尔小姐！
+？2：伊什塔尔也该学学这种办事效率！
+
+？！
+
+[charaFace D 3]
+＠魁札尔·科亚特尔
+呀，要迷上我还太早啦～，[%1]！[r]我只是做了理所应当的事而已嘛～！
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr.罗曼
+拉赫穆掉落在沙滩上！[r]接下来只要在地上击倒它并把圣杯[line 3]
+[k]
+
+[communicationCharaFace 5]
+＠Dr.罗曼
+[line 3]这灵基反应是什么！？[r]魁札尔·科亚特尔，那里有什么！？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠魁札尔·科亚特尔
+！
+[k]
+
+[messageOff]
+[seStop ad2 1.0]
+[fadeout black 1.0]
+[wait fade]
+[shakeStop]
+[charaSet A 98106100 1 金固]
+[charaSet B 98107800 1 拉赫穆]
+[charaSet C 98107800 1 拉赫穆B]
+[charaSet D 98107800 1 拉赫穆C]
+[charaSet E 98107800 1 拉赫穆D]
+[charaSet F 98107800 1 拉赫穆E]
+[wt 1.0]
+
+[se ad59]
+[seVolume ad59 0 0.5]
+[scene 30400]
+[fadein black 1.0]
+[wait fade]
+
+[charaShake A 0.05 0 2 0]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠金固
+不该是这样的[line 3]不该是这样的……！[r]我是母亲制作的新人类……！
+[k]
+
+＠金固
+所以才毁了美索不达米亚。[r]为此才活动至今……！
+[k]
+
+＠金固
+哪怕这具躯体毫无经验、记录、爱情，[r]但我依然相信我还有母亲的期待……！
+[k]
+
+[se ad27]
+＠拉赫穆
+嘎哈！　嘎哈哈！　嘎哈哈哈哈哈！[r]在那边！　逃到　那边去了！
+[k]
+
+＠拉赫穆
+追上他，抓住他！[r]把他解体，把傀儡人偶　解体！
+[k]
+
+[charaFace A 7]
+＠金固
+结果却，变成这样[line 3]
+[k]
+
+＠金固
+什么都没有，这片大地上，什么都没有……！
+[k]
+
+＠金固
+从一开始就是消耗品……[r]从一开始就是冒牌货……！
+[k]
+
+＠金固
+没有未来、希望、自我意识[line 3][r]连朋友……也没有。
+[k]
+
+＠金固
+唯一能够依靠的，明明只有[r]身为提亚马特神唯一孩子的这点[line 3]！
+[k]
+
+[seStop ad59 0.7]
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[se ad27]
+[charaFadein B 0.4 1]
+＠拉赫穆
+[line 3]啊哈。找　到了。
+[k]
+
+[charaShakeStop A]
+[charaFadeout B 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠金固
+[line 6]。
+[k]
+
+[wipeFilter circleIn 0.4 1.0]
+[charaFace A 2]
+＠金固
+（[line 3]只能在这儿……结束了吗。[r]　什么嘛……简直像人类一样，太没意思了。）
+[k]
+
+＠金固
+（……我也没什么了不起的。[r]　一旦被破坏，就不能动了而已。）
+[k]
+
+＠金固
+（……啊啊，早知如此。[r]　最后若能去见一下那家伙就好了[line 3]）
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 2.0]
+[fadeout black 2.0]
+[wait fade]
+[wipeOff]
+[charaFadeout A 0.1]
+[wt 1.0]
+[charaTalk A]
+[charaDepth B 0]
+[charaDepth C 2]
+[charaDepth D 2]
+[charaDepth E 1]
+[charaDepth F 1]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaFace C 0]
+[charaFadein C 0.1 -128,0]
+[charaFace D 0]
+[charaFadein D 0.1 128,0]
+[charaFace E 0]
+[charaFadein E 0.1 -384,0]
+[charaFace F 0]
+[charaFadein F 0.1 384,0]
+[se bac135]
+[wt 0.4]
+[se bac136]
+[wt 0.4]
+[se bac135]
+[wt 2.0]
+[wipeout openEye 0.1 1]
+[wait wipe]
+[fadein black 0.1]
+[wait fade]
+[wipein openEye 1.5 1]
+[wait wipe]
+[se ad42]
+[charaSpecialEffect C enemyErasure 1 1.0]
+[wt 0.4]
+[charaSpecialEffect D enemyErasure 1 1.0]
+[wt 0.4]
+[charaSpecialEffect E enemyErasure 1 1.0]
+[wt 0.4]
+[charaSpecialEffect F enemyErasure 1 1.0]
+[wt 0.4]
+[wt 1.0]
+
+[charaTalk on]
+＠拉赫穆
+[line 6]。
+[k]
+
+[charaFadeout B 0.1]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠金固
+哎……？[r]你……救了……我吗？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadeTime B 0.1 0.8]
+＠拉赫穆
+[line 6]快逃，吧，恩奇，都。[r]虽然，你，也，活不了，多久，了吧。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠金固
+！[r]你是[line 3]昨天被那些家伙带来的……
+[k]
+
+＠金固
+但为什么？[r]为什么你要救我……
+[k]
+
+[charaFadeout A 0.1]
+
+[bgm BGM_EVENT_6 1.0 0.7]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadeTime B 0.1 0.8]
+＠拉赫穆
+[line 3]请幸，福地。[r]请一定要，得到，幸福。
+[k]
+
+＠拉赫穆
+亲爱的，朋友。恩奇，都。
+[k]
+
+＠拉赫穆
+我们，乌鲁克人民是，[r]不会，忘记，对你的感谢的。
+[k]
+
+＠拉赫穆
+是你，将人生，赋予了，孤高的王。[r]引领其走向，通往伟大之王的，道路。
+[k]
+
+＠拉赫穆
+没有人，不会对你的死，感到惋惜。[r]没有人，会遗忘，你的死。
+[k]
+
+＠拉赫穆
+……我，也。[r]我也，非常，悲伤。
+[k]
+
+＠拉赫穆
+所以，请一定要，得到幸福，恩奇都。[r]美丽，绿色的，人啊。
+[k]
+
+＠拉赫穆
+啊啊[line 3]太好了。[r]能道出，谢谢，实在太好了。
+[k]
+
+＠拉赫穆
+谢谢，谢谢，谢，谢[line 3]
+[k]
+
+[se ad42]
+[charaFadeTime B 1.0 0]
+[wt 1.0]
+[messageOff]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠金固
+[line 3]。
+[k]
+
+＠金固
+这是怎么回事[line 3]我明明不认识你。
+[k]
+
+＠金固
+为什么我会知道你的名字、你的长相……[r]居然说什么，谢谢[line 3]
+[k]
+
+＠金固
+我明明没有能让你这么说的资格[line 3][r]呜，呜[line 3]
+[k]
+
+[charaShake A 0.05 3 3 0.4]
+[charaFadeout A 0.4]
+＠金固
+呜呜[line 3]呜呜呜呜呜……！[r]呜呜啊啊啊啊啊啊啊啊啊…………！！！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_6 1.5]
+[wipeout circleIn 1.5 1]
+[wt 0.75]
+[cameraMove 1.0 0,0 0.9]
+[wait wipe]
+[fadeout black 0.1]
+[wait fade]
+[wipein circleIn 0.1 1]
+[wait wipe]
+[wt 1.0]
+[charaSet A 98003000 1 Dr.罗曼]
+[charaSet B 4018001 1 魁札尔·科亚特尔]
+[charaSet C 98107400 1 牛若丸]
+[charaSet D 8001002 1 玛修]
+[charaSet E 98107900 1 巴力拉赫穆]
+[cameraMove 0.1 0,0 1.0]
+[wt 0.5]
+
+[bgm BGM_EVENT_3 0.1]
+[scene 35000]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+海岸出现灵基反应，是从者！[r]但是，这是[line 3]！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+＠C：？？？
+没错。你们根本不可能有任何希望。
+[k]
+
+＠C：？？？
+遮那王流离谭第二景……薄绿·天刃缩步。
+[k]
+
+[messageOff]
+[se ad73]
+[wipeout upToDown 0.2 1]
+[wait wipe]
+[scene 35010]
+[wt 0.1]
+[wipein downToUp 0.2 1]
+[wait wipe]
+[wt 0.2]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 1]
+[wt 0.7]
+[charaEffect B bit_talk_ichimon01re]
+[wt 0.1]
+[se bac139]
+[charaFace B 2]
+[charaMove B 0,-256 0.4]
+[charaFadeout B 0.4]
+[wt 1.0]
+
+[wipeout downToUp 0.2 1]
+[wait wipe]
+[scene 35000]
+[wt 0.1]
+[wipein upToDown 0.2 1]
+[wait wipe]
+[wt 0.2]
+[shake 0.05 0 10 0.4]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaSpecialEffect E erasureReverse 1 0.4]
+[se bac112]
+[wait charaSpecialEffect E]
+[wt 1.7]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.7 1]
+＠魁札尔·科亚特尔
+呜，明明只差一步了……！[r]你到底是什么人！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠牛若丸
+提亚马特神的护卫。[r]从者，牛若丸。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠玛修
+[line 3]骗人。[r]牛若丸……小姐……？
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠牛若丸
+圣杯会被送到母亲大人的手中。[r]这是你们人类不配拥有的东西。
+[k]
+
+＠牛若丸
+但倘若你们想追，我会替你们实现愿望。[r]只将你们的首级送去黑海。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+[line 3]她不是牛若丸。[r]她不是牛若丸啊，玛修！
+[k]
+
+＠Dr.罗曼
+虽然灵基反应、外观都相同，但内在却完全不一样！[r]这种变质与拉赫穆的那种一样！
+[k]
+
+＠Dr.罗曼
+不能犹豫不决，玛修、[%1]！[r]她已经是提亚马特神的孩子了！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠牛若丸
+[line 3]诚然。[r]我还是第一次感受到如此令人舒畅的“自我”。
+[k]
+
+＠牛若丸
+这刀刃乃恩怨之声。[r]你们全部都会成为我献给母亲的供品……！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[wt 0.1]
+[soundStopAll]
+[end]

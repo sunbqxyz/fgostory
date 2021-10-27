@@ -1,0 +1,859 @@
+
+
+
+
+＄94-03-50-36-1-0
+[soundStopAll]
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 1098158220 1 希翁]
+[charaSet C 1098158230 1 希翁_举手_通讯]
+[charaSet D 1098123200 1 戈尔德鲁夫]
+[charaSet E 98110000 1 柳生但马守]
+[charaSet F 3030000 1 帕尔瓦蒂]
+[charaSet G 6014001 1 玛塔·哈丽]
+[charaSet H 5030001 1 山鲁佐德]
+[charaSet I 5009000 1 特效用dummy2]
+[charaSet J 5009000 1 特效用dummy]
+
+[scene 46900]
+
+[charaDepth I 9]
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_20re]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.5]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+确认BeastⅢ／L的反应……完全消灭。
+[k]
+
+[charaFace A 1]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠玛修
+成功了……[r]我们胜利了，御主！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠C：希翁
+嗯，尽管是险胜，但是毋庸置疑的大胜利！
+[k]
+
+＠C：希翁
+这算是我首次遭遇的Beast事件，[r]但以最好的结果收尾啦！
+[k]
+
+？1：大家都回去了吧？
+？！
+
+[charaFace C 12]
+
+＠C：希翁
+当然！　应该说，[r]被解放的1号人物不就在你们那儿嘛！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.4 1]
+[wt 0.5]
+
+＠戈尔德鲁夫
+唔唔……我已经吃不下了……唔嗯唔嗯。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠希翁
+因为戈尔德鲁夫氏一直保持着戈尔德鲁夫氏的状态，[r]所以还能停留在原地。
+[k]
+
+＠希翁
+而被拿去当大奥材料的从者、[r]以及江户城的人们，应该会自然回归他们应在的场所。
+[k]
+
+[charaFace B 6]
+
+＠希翁
+当然，也包括被包装在印笼中的将军们的灵魂。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+＠春日局
+听到这个我就放心了，不过[line 3][r]看来我也一样呢。
+[k]
+
+
+[charaPut I 1]
+
+＠春日局
+啊，这个，是藏在那个迷宫顶梁柱部分的东西。[r]就是所谓的圣杯吗？
+[k]
+
+＠春日局
+看上去非常重要，所以被我拔下来带来了。[r]现在的我只是被这个绑着而已。
+[k]
+
+？1：春日局小姐……
+
+＠春日局
+不要露出那么悲伤的表情。
+[k]
+
+＠春日局
+不，作为临时乳母，[r]我现在，应该严厉斥责你吗？
+[k]
+
+＠春日局
+告别时就算眉头紧锁无精打采也于事无补！
+[k]
+
+＠春日局
+告别时，一定要精神充沛！[r]……开玩笑的啦。
+[k]
+
+？2：非常……感谢。
+
+＠春日局
+该道谢的应该是我。
+[k]
+
+
+＠春日局
+多亏了你，才能将不法之徒赶出江户城，[r]才能救出主上。
+[k]
+
+？！
+
+[charaEffectDestroy I bit_talk_20re]
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_20re]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠玛修
+该……道别了吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaSet C 5009000 1 特效用dummy3]
+
+[charaPut I 1]
+
+[bgm BGM_EVENT_6 0.1]
+
+＠春日局
+呵呵。那当然啦。[r]我原本就是没有未来的灵魂。
+[k]
+
+＠春日局
+若非发生了这种异常事态，[r]若非帕尔大人出手相助，
+[k]
+
+＠春日局
+我只是一个已经陷入永远沉睡的女人。
+[k]
+
+＠春日局
+……这次发生的事，不过是涅槃前做的一个梦。[r]结束后回头看来，或许还算是件好事。
+[k]
+
+＠春日局
+至少这样一来，我就不会错误地执着于爱，[r]也不会因丑陋的留恋而感到苦闷，
+[k]
+
+＠春日局
+总算能安静地入眠了吧。
+[k]
+
+＠春日局
+尽管我本想将接下来的事全都交给宗矩阁下……
+[k]
+
+
+[messageOff]
+[charaEffectDestroy I bit_talk_20re]
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_20re]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth G 0]
+[charaDepth F 1]
+[charaDepth H 2]
+[charaDepth E 3]
+[charaDepth C 4]
+[charaDepth I 5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.2]
+[charaPut C 1]
+[charaEffect C bit_talk_06]
+[wt 1.0]
+
+＠柳生但马守
+抱歉。看来我这次的任务也到此结束了。[r]必须先走一步回迦勒底了。
+[k]
+
+＠柳生但马守
+各位也太会差遣我这把老骨头了吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut C 1200,1200]
+[wt 0.1]
+
+[charaPut I 0]
+[charaPut C 2]
+[charaTalk A]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+
+＠春日局
+[charaTalk A]
+哎呀呀。连天下闻名的柳生也战胜不了年龄呢。[r]您这样可是会遭家光大人斥责的吧？
+[k]
+
+＠春日局
+[charaTalk A]
+去侍奉新的主公固然无妨，[r]但岂能中途放弃自己的职责呢！
+[k]
+
+＠春日局
+[charaTalk A]
+我可不记得你是这种毫无毅力的兵法指南！[r]柳但是最强的！　之类的话。
+[k]
+
+[charaFace E 1]
+
+＠柳生但马守
+这话还真戳到痛处了。
+[k]
+
+？1：辛苦啦！
+？2：稍后在那边再见吧。
+
+？！
+
+＠柳生但马守
+感激不尽。
+[k]
+
+＠春日局
+[charaTalk A]
+从者与御主是这样的存在呀。[r]真不可思议。……呵呵呵。
+[k]
+
+[charaFace E 0]
+
+＠柳生但马守
+为何要笑？
+[k]
+
+＠春日局
+[charaTalk A]
+不不。我只是稍稍想象了一下啦。
+[k]
+
+＠春日局
+[charaTalk A]
+如果出于某些意外，我也被召唤的话。
+[k]
+
+＠春日局
+[charaTalk A]
+握着薙刀，和宗矩阁下一起，[r]听从[%1]阁下的指示而战，
+[k]
+
+＠春日局
+[charaTalk A]
+或是负责养育……
+[k]
+
+＠春日局
+[charaTalk A]
+我只是觉得这种生活，嗯，[r]作为死后的梦，一定会非常愉快吧。
+[k]
+
+？1：会是Lancer吗。
+
+[charaFace E 1]
+
+＠柳生但马守
+……请容我说一句，主公。[r]阿福阁下不仅身负乳母的职责，
+[k]
+
+＠柳生但马守
+在武艺方面也拥有令人瞠目的才华。[r]不愧是继承了稻叶与斋藤血脉之身。
+[k]
+
+＠柳生但马守
+还是一位只不过看了几次我与主上的训练，[r]就已经学会了好几种柳生术理的人物。
+[k]
+
+＠柳生但马守
+真是位了不起的女性。
+[k]
+
+＠春日局
+[charaTalk A]
+呵呵呵。有了宗矩阁下的担保，[r]或许还真的有这种可能性？
+[k]
+
+＠春日局
+[charaTalk A]
+那我就先怀着这份希望好啦。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaEffectDestroy I bit_talk_20re]
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_20re]
+[charaPut C 1200,1200]
+
+？2：如果将来有机会能再见就好了。
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaEffectDestroy I bit_talk_20re]
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_20re]
+[charaPut C 1200,1200]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠希翁
+反正嘛，就算灵基的强度不够，[r]最近也多了各式各样的手段。
+[k]
+
+[charaFace B 6]
+
+＠希翁
+或许还真的会以意料之外的形式重逢哦。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaPut I 1]
+
+＠春日局
+呵呵呵。那么，[r]我还是先心怀这份希望好啦。
+[k]
+
+[charaEffectDestroy I bit_talk_20re]
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_20re]
+
+？！
+
+[messageOff]
+[wt 0.1]
+
+[charaPut I 0]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+
+＠帕尔瓦蒂
+如果……还有机会的话，[r]我也很想再见到你。
+[k]
+
+[charaFace F 1]
+
+＠帕尔瓦蒂
+因为，[r]在很长一段时间里，我是你，你是我。
+[k]
+
+＠帕尔瓦蒂
+我们已经像是相互了解性情的同居人了吧？
+[k]
+
+＠春日局
+[charaTalk A]
+帕尔大人……
+[k]
+
+[charaFace F 10]
+
+＠帕尔瓦蒂
+而且，在培养孩子的问题上，[r]我也有很多问题想要问你。
+[k]
+
+＠帕尔瓦蒂
+比如若想安慰被丈夫割下了脑袋按上了象头的儿子，[r]该怎么办才好之类的！
+[k]
+
+＠春日局
+[charaTalk A]
+这……这倒是个难题……！[r]那么在下次见面之前，我得好好思考才行！
+[k]
+
+＠春日局
+[charaTalk A]
+啊啊，差不多了……[r]抱歉那么匆匆忙忙的。
+[k]
+
+[charaEffectDestroy I bit_talk_20re]
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_20re]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+
+＠春日局
+也承蒙玛塔·哈丽大人和山鲁佐德大人的照顾了。[r]祝各位身体健康！
+[k]
+
+[messageOff]
+[charaEffectDestroy I bit_talk_20re]
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_20re]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+[charaFace H 3]
+[charaFadein H 0.1 2]
+[wt 1.0]
+
+[charaMoveReturn G -256,-3 0.4]
+[charaMoveReturn H 256,-3 0.4]
+[wt 1.5]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut C 1200,1200]
+[wt 0.2]
+
+[charaPut I 1]
+
+＠春日局
+[%1]阁下。[r]尽管我已经没有可以抚摸您脑袋的手了。
+[k]
+
+＠春日局
+但心情上，还是想作为乳母，[r]再溺爱您一次。
+[k]
+
+＠春日局
+您，是个好孩子。[r]但愿您能保持现在这样，正直地成长……
+[k]
+
+[messageOff]
+[wt 0.3]
+[charaMove I 10,0 0.3]
+[wt 0.4]
+[charaMove I -10,0 0.6]
+[wt 0.7]
+[charaMove I 0,0 0.3]
+[wt 0.5]
+
+？1：（有种……被摸头的感觉……）
+？！
+
+＠春日局
+啊啊……看来，终于要真正分别了呢。[r]我决不会忘记各位的深情厚谊。
+[k]
+
+＠春日局
+但愿终将有一天，我能报答这份恩情，[r]那我就此告辞[line 3]
+[k]
+
+[messageOff]
+[cueSe Battle bas2]
+[charaEffectStop I bit_talk_20re]
+[wt 2.0]
+
+[charaPut C 1]
+[charaTalk on]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠柳生但马守
+那我也先走一步了。[r]抱歉。
+[k]
+
+[messageOff]
+[charaEffectStop C bit_talk_06]
+[se ad52]
+[charaSpecialEffect E flashErasure 1 2.0]
+[wait charaSpecialEffect E]
+[wt 1.0]
+[seStop ad52 0.2]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠希翁
+……好了。虽然有些寂寞，[r]但圣杯也顺利回收完成了。还剩下[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+[wt 0.2]
+[charaPut C 1]
+[charaEffect C bit_talk_06]
+[wt 1.0]
+
+＠帕尔瓦蒂
+啊，抱歉。我也是。
+[k]
+
+＠帕尔瓦蒂
+由于为了阻止迦摩而用尽了全力，[r]所以似乎必须先休息一会儿才行……
+[k]
+
+[charaFace F 0]
+
+＠帕尔瓦蒂
+但总之，我已经很满足了。[r]很高兴能阻止和我长着同一张面孔之人的暴行。
+[k]
+
+
+
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut C 1200,1200]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠希翁
+你一定很讨厌使用了同一身躯，[r]而且还是关系相近的神成为Beast吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaPut C 1]
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠帕尔瓦蒂
+说实话，她那不知廉耻的打扮让我非常在意。
+[k]
+
+[charaFace F 11]
+
+＠帕尔瓦蒂
+同一具身躯，却穿着如此暴露……[r]如果在其他地方见到，我或许会装作没看到吧……
+[k]
+
+[charaFace F 7]
+
+[bgmStop BGM_EVENT_6 1.0]
+
+＠帕尔瓦蒂
+不，比起这个，我想起来了。[r]稍微忍耐一下……
+[k]
+
+
+[charaEffectStop C bit_talk_06]
+
+＠帕尔瓦蒂
+在消失之前说一个认真严肃的问题吧。[r]还有一件事令我非常介意。
+[k]
+
+？1：是什么？
+？！
+
+[charaFace F 5]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠帕尔瓦蒂
+尽管那是迦摩，但严格来说，[r]还是偏向魔罗侧面的存在。
+[k]
+
+＠帕尔瓦蒂
+所以才能与BeastⅢ匹配。
+[k]
+
+＠帕尔瓦蒂
+但原本，这是不可能发生的。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut C 1200,1200]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠希翁
+哦？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaPut C 1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠帕尔瓦蒂
+迦摩自身暂且不论，魔罗是属于魔神那类的。[r]湿婆他们还是盯得挺紧的……
+[k]
+
+＠帕尔瓦蒂
+应该不是那种能轻易浮上表面，[r]或是提升影响力的神性才对。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 -320,0]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[charaFace F 4]
+[charaFadein F 0.1 320,0]
+
+＠玛塔·哈丽
+但是，实际上却出现了吧？[r]而且真的变成了Beast。
+[k]
+
+＠帕尔瓦蒂
+对。所以我才觉得很不可思议。[r]奇怪那家伙是如何躲过湿婆神耳目的。
+[k]
+
+＠山鲁佐德
+您有什么线索吗？[r]可能导致这种异常事态发生的原因……
+[k]
+
+[charaFace F 11]
+
+＠帕尔瓦蒂
+唔……是啊。[r]若论可能性[line 3]
+[k]
+
+＠帕尔瓦蒂
+难不成，是地球上发生了[r]影响整个印度神性的事件……？
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut C 1200,1200]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠玛修
+印度……
+[k]
+
+＠玛修
+这么说来，接下来我们即将前往的，[r]正好就是印度的[#异闻带:Lostbelt]。
+[k]
+
+＠玛修
+有没有可能和那边存在什么关系？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaPut C 1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠帕尔瓦蒂
+对不起，详细情况我并不清楚。[r]只知道如果存在理由的话，只有这种程度了而已……
+[k]
+
+[charaFace F 11]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+＠帕尔瓦蒂
+只不过，对。如果各位要去印度，[r]我其实也很想帮忙，
+[k]
+
+＠帕尔瓦蒂
+但我似乎只能到此为止了……对不起。
+[k]
+
+[charaFace F 9]
+
+＠帕尔瓦蒂
+但愿能派遣可以代替我的帮手，[r]但不知道会怎么样……有谁会来呢……
+[k]
+
+
+？1：您已经帮了我们很多了。
+？2：如果没有帕尔小姐，我们是不可能做到的。
+？！
+
+[bgm BGM_EVENT_78 0.1]
+
+[charaEffect C bit_talk_06]
+
+[charaFace F 1]
+
+＠帕尔瓦蒂
+不不。我才应该向您道谢，[r][%1]。
+[k]
+
+[charaFace F 0]
+
+＠帕尔瓦蒂
+灾害之兽，Beast的威胁消除了。
+[k]
+
+＠帕尔瓦蒂
+尽管还有地球漂白、[#异闻带:Lostbelt]、[r][#隐匿者:Crypter]等难题……
+[k]
+
+[charaFace F 1]
+
+＠帕尔瓦蒂
+但应该能有办法。只要是你们，肯定没问题。[r]一定要加油哦！
+[k]
+
+[messageOff]
+[charaEffectStop C bit_talk_06]
+[se ad52]
+[charaSpecialEffect F flashErasure 1 2.0]
+[wait charaSpecialEffect F]
+[wt 1.0]
+[seStop ad52 0.2]
+[wt 1.0]
+
+？1：……当然，我们会努力的。
+？！
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛修
+嗯，前辈。而且达·芬奇亲和福尔摩斯先生也平安返回了。
+[k]
+
+[charaFace A 3]
+
+＠玛修
+尽……尽管力量微薄，[r]但我也会尽我的全力。
+[k]
+
+[charaFace A 1]
+
+＠玛修
+我也觉得，肯定不会有问题的！
+[k]
+
+＠玛修
+而且我们也知道了希翁小姐[r]果然是一位非常可靠的人物！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠希翁
+尽管这次总是被迦摩钻空子呢！
+[k]
+
+＠希翁
+好了！　那么，[r]让我们开始为返回做准备吧。
+[k]
+
+＠希翁
+啊，还有麻烦别忘了那边那个[r]正悠闲呼呼大睡的将军大人哦。
+[k]
+
+[charaFace B 17]
+
+＠希翁
+只是没了那个丁髷发型稍微有些可惜呢！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_78 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

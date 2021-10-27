@@ -1,0 +1,138 @@
+
+＄01-00-05-03-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[charaSet A 8001001 1 玛修]
+[charaSet B 5023001 1 布拉瓦茨基]
+[charaSet C 3004001 1 迦尔纳]
+[charaSet D 7014001 1 南丁格尔]
+[charaSet E 98003000 1 Dr.罗曼]
+
+[scene 21004]
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠玛修
+成功了！[r]不管是蒸汽的还是电动的，只要砸烂就能打倒！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠布拉瓦茨基
+确实是明显的真相。[r]但这样也结束了。
+[k]
+
+[charaFace B 0]
+＠布拉瓦茨基
+好了，[#迦尔纳]！[r]快出来搞定他们！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+哎……[r]那个……不好意思。您刚才说什么……？
+[k]
+
+＠迦尔纳
+……我该出场了吗。明白了。
+[k]
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+哇！？　忽然出现从者反应！[r]就在你们正上方！
+[k]
+
+＠Dr.罗曼
+强制转移，是令咒吗！？[r]等等，这是什么！？
+[k]
+
+＠Dr.罗曼
+这种灵基数值，是顶级从者！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠玛修
+怎么会……！？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠南丁格尔
+…………
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠布拉瓦茨基
+不好意思，能帮我抓住他们吗～？[r]毕竟你看，他们好像成了我们的敌人。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.7]
+＠迦尔纳
+就先服从你那不诚实的臆测吧。
+[k]
+
+[charaFace C 5]
+＠迦尔纳
+异邦来客啊，很抱歉使用如此粗鲁的欢迎方式。[r][line 2]『[#梵天啊，覆盖大地:Brahmastra]』！
+[k]
+
+[se ad39]
+[charaFadeout C 0.1]
+
+＠Dr.罗曼
+撤退……不行，太快了……！！
+[k]
+
+[messageOff]
+
+[wt 0.3]
+
+[fadeout white 0.1]
+[wait fade]
+[fadein white 0.3]
+[wt 0.4]
+
+[fowardEffect bit_talk_29]
+[shake 0.05 0 4 1.0]
+[seStop ad39]
+[se bac36]
+[wt 1.5]
+
+
+[fadeout white 1.5]
+[bgmStop BGM_EVENT_3 1.5]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

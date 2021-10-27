@@ -1,0 +1,401 @@
+
+＄94-03-22-19-2-1
+[soundStopAll]
+
+
+[charaSet A 98006200 1 猿面怪]
+[charaSet B 1098161800 1 虎面怪]
+[charaSet C 1098161900 1 蛇面怪]
+[charaSet D 8001410 1 玛修]
+[charaSet E 1098123200 1 戈尔德鲁夫]
+[charaSet F 1098161900 1 蛇庄屋]
+[charaSet G 1037002 1 红阎魔]
+[charaSet J 5009000 1 特效用dummy]
+
+[scene 70000]
+
+[charaTalk depthOff]
+[charaDepth B 2]
+[charaDepth C 1]
+[charaDepth A 0]
+[charaDepth J 3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0 1]
+
+[bgm BGM_EVENT_78 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad193]
+[se ade410]
+
+[charaPut B 1]
+[charaFace B 0]
+[charaFadeTime B 1.0 0.4]
+[charaMove B 2 1.0]
+[charaEffect B bit_talk_11]
+
+[charaPut C 1]
+[charaFace C 0]
+[charaFadeTime C 1.0 0.4]
+[charaMove C 0 1.0]
+[charaEffect C bit_talk_11]
+
+[wt 1.0]
+
+＠猿面怪
+[messageShake 0.04 5 5 0.7]
+[image berserker_language_2][line 3]！！！！
+[k]
+
+＠猿面怪
+这是怎么回事，你……你们[line 3]
+[k]
+
+＠猿面怪
+蛇面！　虎面！[r]你们为什么纷纷来拖我的后腿！？
+[k]
+
+＠猿面怪
+没有名字、没有去处、也没有干劲！[r]你们这种下三滥货色都是多亏了谁的吞噬才有了今天啊！
+[k]
+
+＠猿面怪
+不准妨碍我，不准反抗我！[r]究竟是怎么回事，你们这群蠢货！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.3 0.8]
+[wait wipe]
+[charaPut C 1200,1200]
+[charaPut A 1200,1200]
+[charaPut B 1200,1200]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+[wt 0.2]
+[wipein rectangleStripLeftToRight 0.3 0.8]
+[wait wipe]
+
+＠玛修
+[line 3]灵基反应，分裂[line 3][r]不，这是……在……自我破坏……？
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.3 0.8]
+[wait wipe]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaPut C 0]
+[charaPut A 1]
+[charaPut B 2]
+[wt 0.2]
+[wipein rectangleStripRightToLeft 0.3 0.8]
+[wait wipe]
+
+
+＠A：虎面怪
+…………不对。我没有，反抗。[r]…………我只是个，没有头的，身体。
+[k]
+
+＠A：虎面怪
+…………对于拥有智慧的你……[r]…………我只能，顺从。
+[k]
+
+＠A：虎面怪
+…………因此……[r]…………我无法，帮助小红。
+[k]
+
+＠A：虎面怪
+…………我，还是我……[r]…………之所以失败，是因为你实力不足……
+[k]
+
+＠A：虎面怪
+…………让我最后再说一句。[r]…………尽管我确实没有[#头:脑]……
+[k]
+
+＠A：虎面怪
+…………但你，则是彻头彻尾的[#无能之辈]。
+[k]
+
+[messageOff]
+[se ad596]
+[charaFadeout B 0.7]
+[charaEffectStop B bit_talk_11]
+[wt 2.0]
+[seStop ad596 0.3]
+
+[wt 0.5]
+[cueSe Battle bas13]
+[cueSeVolume bas13 0 0.6]
+[wt 1.0]
+[cueSeStop Battle bas13 0.3]
+
+＠猿面怪
+混蛋，不过是区区野狗……！
+[k]
+
+＠猿面怪
+不过算了，反正我也不指望从你那里得到什么。[r]我就知道是你会绊手绊脚的！
+[k]
+
+＠猿面怪
+但是蛇面，你是怎么回事啊！？[r]你没理由站在麻雀一边吧，喂！？
+[k]
+
+＠A：蛇面怪
+是啊。我没理由站在红阎魔亲一边呢。[r]但是[line 3]
+[k]
+
+[messageOff]
+[wipeout circleIn 2.0 0.7]
+[bgmStop BGM_EVENT_78 2.0]
+[wait wipe]
+[charaPut C 1200,1200]
+[charaPut A 1200,1200]
+[wt 1.0]
+[effect bit_sepia01]
+[pictureFrame cut063_cinema]
+[wipein circleOut 2.0 0.7]
+[wait wipe]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 0,-50]
+[charaShake E 0.07 8 1 0.7]
+
+＠戈尔德鲁夫
+噢哇哇哇哇……[r]不好了，不好了，大事不好！
+[k]
+
+＠戈尔德鲁夫
+我们肯定被诅咒了！[r]我们好像犯下了什么不得了的大错！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+[charaShake F 0.07 10 3 0.7]
+
+＠蛇庄屋
+啊哇哇哇哇……[r]不好了，不好了，大事不好！
+[k]
+
+＠蛇庄屋
+竟然会发生这种事！　我会被猿长老杀掉的！[r]不，在那之前就会被从阎魔亭赶出去的！
+[k]
+
+＠蛇庄屋
+不要啊，我可是既没钱又没去处的啊！
+[k]
+
+＠蛇庄屋
+一旦离开阎魔亭，像我这样的杂灵，[r]不消一日就会烟消云散了吧！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 0,-50]
+
+＠戈尔德鲁夫
+唔，嗯？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 -256,-50]
+[charaFace E 7]
+[charaFadein E 0.1 256,-50]
+
+＠蛇庄屋
+刚[messageShake 0.05 8 6 0.8]刚刚……刚才那可不是我的错啊！？[r]那可是你们擅自做的好事！？
+[k]
+
+＠蛇庄屋
+对吧，是这样吧！？　求求你们，别把我的事说出去！[r]否则我会被赶出这里而消失的！
+[k]
+
+[charaFace E 0]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+＠戈尔德鲁夫
+唔，嗯。尽管我不知道发生了什么……[r]但我能理解被逼到绝路的人的心情。
+[k]
+
+＠戈尔德鲁夫
+明白了，你走吧。[r]就当这里除了我们之外没有其他人。
+[k]
+
+＠蛇庄屋
+哎？　真的吗？　可以吗？
+[k]
+
+[charaFace E 5]
+
+＠戈尔德鲁夫
+哎，你快点，不然警报就要响了吧！[r]毕竟你也没有什么恶意吧！？
+[k]
+
+＠戈尔德鲁夫
+那不就行了吗！　这件事的责任八成在于对自己的[r]魔术知识缺乏自信，不多加考虑就打开盖子的我！
+[k]
+
+[charaFace E 6]
+
+＠戈尔德鲁夫
+但你也别指望我！　如果被严厉地追究责任，[r]我也对自己是否会讲义气毫无自信！
+[k]
+
+＠蛇庄屋
+[line 6]
+[k]
+
+[messageOff]
+[wipeout circleIn 2.0 0.7]
+[wait wipe]
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[charaTalk A]
+[charaPut C -128,0]
+[charaPut A 128,0]
+[effectStop bit_sepia01]
+[pictureFrame]
+[wt 1.0]
+[wipein circleOut 2.0 0.7]
+[wt 1.0]
+[bgm BGM_EVENT_78 0.1]
+[wait wipe]
+
+＠A：蛇面怪
+我也无法嘲笑虎名主呢。[r]结果我们都敌不过一时的恩情呢。
+[k]
+
+＠A：蛇面怪
+开玩笑的，我[#这辈子已经活够了]。[r]反正最后大饱了眼福[line 3]
+[k]
+
+＠A：蛇面怪
+也怀着真正快乐的心情，愉快地喝了酒。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.3 0.8]
+[wait wipe]
+[charaPut C 1200,1200]
+[charaFadeout A 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.2]
+[wipein rectangleStripLeftToRight 0.3 0.8]
+[wait wipe]
+
+＠戈尔德鲁夫
+[FFFFFF]？[-]
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.3 0.8]
+[wait wipe]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaPut C 1]
+[wt 0.2]
+[wipein rectangleStripRightToLeft 0.3 0.8]
+[wait wipe]
+
+＠A：蛇面怪
+再见了。我也受够你的阴险，猿。[r]而且我并不喜欢当尾巴的部分。
+[k]
+
+[messageOff]
+[se ad596]
+[charaFadeout C 0.7]
+[charaEffectStop C bit_talk_11]
+[wt 2.0]
+[seStop ad596 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.5]
+[cueSe Battle bas13]
+[cueSeVolume bas13 0 0.6]
+[wt 1.0]
+[cueSeStop Battle bas13 0.3]
+
+＠猿面怪
+呜，呜啊啊啊啊啊啊……！[r]这算什么……这算什么啊！
+[k]
+
+＠猿面怪
+明明都是些离开了[#头:我]就什么都做不到的下三滥货色，[r]竟然全都赶在我之前升天了！
+[k]
+
+＠猿面怪
+可恶，回来，快回来，快回来啊，你们这群垃圾！
+[k]
+
+＠猿面怪
+我可是头！？[r]是你们的头儿啊！？
+[k]
+
+＠猿面怪
+啊啊可恶！　就算我是个天才，[r][#离开了身体和尾巴也什么都做不了啊]！
+[k]
+
+[messageOff]
+[wt 0.3]
+[se ad290]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.1]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[seStop ad290 0.5]
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠红阎魔
+满意了啾。[r]这就是你的穷途末路啾。
+[k]
+
+＠红阎魔
+为了一己私利与私欲而撒谎，[r]嫉妒他人幸福之人注定会失道寡助啾！
+[k]
+
+＠红阎魔
+阎魔判决，至此休庭！[r]去地狱的底层好好反省啾！
+[k]
+
+[bgmStop BGM_EVENT_78 1.0]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

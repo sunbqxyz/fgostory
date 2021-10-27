@@ -1,0 +1,148 @@
+
+
+＄03-00-01-10-3-1
+[soundStopAll]
+
+[charaSet A 7008001 1 贝奥武夫]
+[charaSet B 2010001 1 比利]
+[charaSet C 1098128400 1 雅嘎反叛军A]
+[charaSet D 1098128500 1 雅嘎反叛军B]
+[charaSet E 1098128600 1 雅嘎反叛军C]
+[charaSet F 7030001 1 阿塔兰忒·Alter]
+[charaSet H 5009000 1 特效用dummy]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fowardEffect bit_bolg_03]
+[wt 0.1]
+[se ad32]
+[wt 0.3]
+[flashin once 0.05 0.1 FFFFFFAF FFFFFF00]
+[fowardEffect bit_talk_14]
+[se ad32]
+[wt 1.0]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 54802]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠贝奥武夫
+……哎哟，好。[r]差不多就到此为止吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠比利
+咻。不错嘛。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠贝奥武夫
+……所以你们也看到了吧，[r]这些家伙是真的很强！
+[k]
+
+[charaFace A 2]
+
+＠贝奥武夫
+还有意见的现在就站出来！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace D 0]
+[charaFadein D 0.1 -384,0]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaFace E 0]
+[charaFadein E 0.1 384,0]
+
+[charaFace C 2]
+
+＠C：雅嘎
+没有意见！
+[k]
+
+[charaFace D 2]
+
+＠D：雅嘎
+没有！
+[k]
+
+[charaFace E 2]
+
+＠E：雅嘎
+完全没有！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠贝奥武夫
+很好，这样就没问题了！[r]欢迎来到地痞流氓们的村庄！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠比利
+我给你们带路。跟我来。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠阿塔兰忒·Alter
+……真是的，原来是这种意图啊。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

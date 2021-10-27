@@ -1,0 +1,535 @@
+
+＄94-04-02-08-1-0
+
+
+
+[soundStopAll]
+
+[charaSet A 98100400 1 玛修]
+[charaSet B 6040000 1 冲田·J·总司]
+[charaSet C 6040002 1 冲田总司]
+[charaSet D 6005001 1 杰克]
+[charaSet E 7028001 1 班扬]
+[charaSet F 5004001 1 童谣]
+[charaSet G 98100400 1 dummy特效]
+
+
+[charaDepth D 1]
+[charaDepth E 5]
+[charaDepth F 9]
+
+[scene 80600]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+[wt 1.0]
+
+[se ade126]
+[seVolume ade126 0.0 0.7]
+[charaEffect G bit_talk_hikari01 -360,245]
+[wt 0.6]
+
+[charaPut G 1200,1200]
+[wt 0.5]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaFace F 1]
+[charaFace D 1]
+[charaFace E 1]
+[charaFadein F 0.4 1]
+[charaFadein D 0.4 -286,0]
+[charaFadein E 0.4 286,0]
+[wt 0.7]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk on]
+[charaTalk D]
+
+＠杰克
+是鸟！
+[k]
+
+＠班扬
+是飞机！
+[k]
+
+＠F：童谣
+不！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad704]
+[seVolume ad704 0 0.3]
+[fowardEffect bit_talk_rarrow01br -30,0]
+[wt 1.3]
+[seStop ad704 0.7]
+
+[se ad34]
+[se ad64]
+[bgmStop BGM_EVENT_77 1.2]
+[shake 0.05 5 5 1.5]
+[fowardEffect bit_talk_explosion]
+[fowardEffectStop bit_talk_rarrow01br]
+[wt 1.3]
+
+[se ad127]
+[seVolume ad127 0 0.5]
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 -33,0]
+[wt 0.15]
+
+[charaMove B 1 0.2]
+[seStop ad127 0.8]
+[wt 1.2]
+
+＠冲田·J·总司
+[line 3]是新选组！
+[k]
+
+[wt 0.4]
+
+[bgm BGM_EVENT_94 0.1]
+
+？1：你们在干什么？
+
+？2：新选组从天而降！
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk F]
+[charaFace F 1]
+[charaFace D 1]
+[charaFace E 1]
+[charaFadein F 0.1 1]
+[charaFadein D 0.1 -286,0]
+[charaFadein E 0.1 286,0]
+
+＠F：童谣
+哎呀，御主。我们正拜托新选组小姐[r]带我们去空中散步呀。
+[k]
+
+＠杰克
+居然能飞得比那个摩天轮还要高，好厉害。
+[k]
+
+＠班扬
+比巨大的我的头顶还要高呢。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠冲田·J·总司
+只要我喷射天然理心流的冲田小姐出马，[r]这些都是小菜一碟！
+[k]
+
+＠冲田·J·总司
+而且和孩子们玩耍，[r]会令我回想起壬生驻地时的时光。
+[k]
+
+[charaFace B 0]
+
+＠冲田·J·总司
+以前附近的孩子们经常来我们这儿玩。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛修
+杰克小姐她们看上去也很高兴。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠冲田·J·总司
+对了！　机会难得，[r]我也带御主去空中散步吧？
+[k]
+
+？1：我就算了。
+
+＠冲田·J·总司
+没事啦没事啦，不用那么客气。[r]空中散步还是很愉快的哦。
+[k]
+
+？2：顺便问一句，飞行速度多少？
+
+＠冲田·J·总司
+我没有测算过，但因为会产生音爆，[r]所以应该超音速了吧。
+[k]
+
+？！
+
+[bgmStop BGM_EVENT_94 1.0]
+[charaFace B 2]
+
+＠冲田·J·总司
+那我们就出发吧！
+[k]
+
+[messageOff]
+[charaMoveScale B 1.1 0.2]
+[wt 0.1]
+
+[se ad7]
+[wt 0.7]
+
+[se ade102]
+[seVolume ade102 0 0.4]
+[charaMove B 0,15 1.8]
+[wt 2.4]
+[seStop ade102 0.5]
+[wt 0.2]
+
+＠冲田·J·总司
+M·DRIVE BURST！[bgm BGM_EVENT_62 0.1]
+[k]
+
+＠冲田·J·总司
+喷射天然理心流冲田·J·总司，[r]起飞！
+[k]
+
+[messageOff]
+[charaFadeout B 0.2]
+[wt 0.1]
+
+[se ad704]
+[seVolume ad704 0 0.3]
+[effect bit_talk_arrow01br]
+[wt 1.2]
+
+[se ad147]
+[seVolume ad147 0 0.7]
+[wt 0.5]
+[seStop ad704 0.7]
+[seStop ad147 1.1]
+
+[effectStop bit_talk_arrow01br]
+[wt 0.6]
+
+[wipeout leftUpToRightDown 0.4 1.0]
+[wait wipe]
+
+[scene 28300]
+[cameraMove 0 0,0 1.05]
+[shake 0.07 3 4 0]
+[wt 0.1]
+
+[se ade208]
+[seVolume ade208 0 0]
+[se ade343]
+[seVolume ade343 0 0]
+[effect bit_talk_41]
+
+[seVolume ade208 0.6 0.8]
+[seVolume ade343 0.6 0.8]
+[wipein rightDownToLeftUp 0.6 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠冲田·J·总司
+我会给御主特别服务，请好好享受这[r]将限制器提升到极致的极限速度吧！
+[k]
+
+＠冲田·J·总司
+我们走！　飞得更高！　更快！
+[k]
+
+＠冲田·J·总司
+向着那超越苍穹的彼端！
+[k]
+
+？1：呜哇啊啊啊啊啊啊啊啊！！！！？？？
+
+？2：重……重力加速度居然那么厉害……！
+
+？！
+
+＠玛修
+前……前辈！　一路小心[line 3]！
+[k]
+
+
+[messageOff]
+[se ade101]
+[fadeout white 1.5]
+[cameraMove 1.6 0,0 1.5]
+[bgmStop BGM_EVENT_62 1.5]
+[seStop ade343 1.5]
+[wait fade]
+
+[effectStop bit_talk_41]
+[shakeStop]
+
+[scene 10000]
+[cameraHome 0.2]
+[wt 0.5]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[scene 28302]
+[wt 1.0]
+
+
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.5 0.2]
+
+[wipein openEye 1.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 15]
+[charaScale B 1.0]
+[charaFadein B 0.4 1]
+[wt 0.6]
+
+＠冲田·J·总司
+……你醒了啊，御主。
+[k]
+
+？1：这里是哪儿？
+
+？2：我昏过去了……
+
+？！
+
+[messageOff]
+[charaEffect B bit_talk_36]
+[se ad39]
+[wt 1.2]
+
+[fadeout white 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaEffectStop B bit_talk_36]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.4 1]
+[wt 0.5]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.6]
+
+[charaFace C 4]
+
+＠冲田总司
+这里是拉斯维加斯高塔上。
+[k]
+
+＠冲田总司
+对不起，御主，由于我一不小心干劲太足了，[r]到处来回乱飞……
+[k]
+
+？1：不用在意啦。
+
+？2：还挺有意思的。
+
+？！
+
+
+[charaFace C 13]
+
+＠冲田总司
+是吗，非常感谢。
+[k]
+
+[charaFace C 0]
+
+＠冲田总司
+…………
+[k]
+
+[seStop ad556 2.0]
+
+＠冲田总司
+御主，我能和你聊一会儿吗？[r]光听不说话也行。
+[k]
+
+？1：什么事？
+
+？2：可以。
+
+？！
+
+＠冲田总司
+…………
+[k]
+
+＠冲田总司
+我非常感谢御主。[bgm BGM_EVENT_95 0.1]
+[k]
+
+＠冲田总司
+尽管身为英灵的我生前满是后悔，[r]但被召唤到迦勒底，生前想实现而未能实现的……
+[k]
+
+＠冲田总司
+为御主不断挥剑的愿望却得到了实现。
+[k]
+
+＠冲田总司
+而且还见到了本以为再也见不到的土方先生……
+[k]
+
+＠冲田总司
+…………
+[k]
+
+[charaFace C 4]
+
+＠冲田总司
+但我有时会这么想。
+[k]
+
+＠冲田总司
+毕竟土方先生是那种人，[r]所以才不会在意，
+[k]
+
+＠冲田总司
+但各位队士和近藤先生[r]一旦看到现在的我，会怎么想呢。
+[k]
+
+＠冲田总司
+…………
+[k]
+
+[charaFace C 13]
+
+＠冲田总司
+对……对不起，突然说出这种奇怪的话。
+[k]
+
+＠冲田总司
+或许是因为穿着泳装有些兴奋，[r]可能又有些发烧了吧？
+[k]
+
+？1：尽管我不是很明白，但冲田小姐就是冲田小姐。
+
+？2：要不要再去空中飞一会儿？
+
+？！
+
+[charaFace C 3]
+
+＠冲田总司
+御主……
+[k]
+
+＠冲田总司
+说得对……我，就是我啊。
+[k]
+
+[charaFace C 13]
+＠冲田总司
+…………
+[k]
+
+[charaFace C 1]
+＠冲田总司
+那我们差不多该回去了吧！
+[k]
+
+＠冲田总司
+天色已经很晚了，[r]玛修小姐他们应该开始担心了吧。
+[k]
+
+？1：回大家身边吧。
+
+？2：归程麻烦飞慢一点。
+
+？！
+
+[messageOff]
+[charaFace C 0]
+[wt 0.3]
+[charaEffect C bit_talk_36]
+[se ad39]
+[wt 1.2]
+
+[fadeout white 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaEffectStop C bit_talk_36]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.5]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.6]
+
+[charaMoveScale B 1.2 0.6]
+[charaMove B 0,20 0.6]
+[wt 0.6]
+
+[se ad7]
+[wt 0.7]
+
+＠冲田·J·总司
+好，请紧紧抓住冲田小姐哦。
+[k]
+
+[messageOff]
+[charaFaceFade B 1 0.4]
+[wt 0.8]
+
+＠冲田·J·总司
+[line 3]嗯，要紧紧地！
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_95 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

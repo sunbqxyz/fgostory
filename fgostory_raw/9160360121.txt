@@ -1,0 +1,489 @@
+
+＄91-60-36-01-2-1
+
+[soundStopAll]
+
+[charaSet A 6036000 1 李书文]
+[charaSet B 3014001 1 胤舜]
+[charaSet C 1098144010 1 男人]
+[charaSet D 98018100 1 首领]
+[charaSet E 98018100 1 盗贼1]
+[charaSet F 98018100 1 盗贼2]
+[charaSet G 98018100 1 盗贼3]
+[charaSet H 98002000 1 特效(匕首)]
+
+
+[charaScale H 0.3]
+[charaRoll H -25 0,0]
+
+[charaDepth G 1]
+[charaDepth F 5]
+[charaDepth E 9]
+
+[wipeFilter cinema 0.5 0]
+[scene 47001]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein E 0.1 -236,-50]
+[charaFadein F 0.1 236,-50]
+[charaFadein G 0.1 0,-50]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se bac266]
+[charaEffect E bit_talk_Slash_red_01_L 0,-50 H]
+[wt 0.15]
+[charaShake E 0.04 4 4 0.4]
+[charaFadeout E 0.4]
+
+[charaTalk F]
+
+[se bac266]
+[charaEffect F bit_talk_Slash_red_01_L 0,-50 V]
+[wt 0.15]
+[charaShake F 0.04 4 4 0.4]
+[charaFadeout F 0.4]
+
+[charaTalk G]
+[wt 0.3]
+
+[se bac10]
+[charaEffect G bit_talk_13]
+[charaShake G 0.05 5 0 0.7]
+[wt 1.0]
+
+＠G：盗贼
+妖怪……啊……！
+[k]
+
+[bgmStop BGM_EVENT_3 0.9]
+[messageOff]
+[se ad240]
+[fowardEffect bit_talk_35]
+[wt 0.9]
+
+[charaMove G 0,-100 0.4]
+[wait charaMove G]
+[se ad144]
+[charaFadeout G 0.4]
+[wt 1.4]
+
+[se ad452]
+[seVolume ad452 0 0.6]
+[seStop ad452 2.0]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace C 0]
+[charaFadein C 0.7 0,-50]
+[wt 1.0]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠
+[charaTalk B]
+尸体堆积成山。[r]男人却没有受任何一处伤。
+[k]
+
+＠
+[charaTalk B]
+这些对于男人的步调与拳头来说，[r]都是一些微不足道的东西。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+[charaShake D 0.05 3 3 0.8]
+
+＠首领
+啊、啊啊啊。[r]啊啊啊啊啊啊！　饶命，饶命啊！
+[k]
+
+＠首领
+不管什么我都会为你做的！[r]我再也不会杀人了……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠男人
+你悔改得太迟了。[r]这是来自于被你杀害的村民的回礼。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+[wt 0.2]
+
+[se bac95]
+[charaEffect H bit_talk_Slash_red_02 390,-640]
+[wt 0.2]
+[charaShake D 0.05 3 3 0.4]
+[wt 1.1]
+
+[charaMove D 0,-100 0.4]
+[wait charaMove D]
+[se ad144]
+[charaFadeout D 0.4]
+[wt 1.7]
+
+[se ad328]
+[wt 1.1]
+
+[charaTalk B]
+[charaFace C 0]
+[charaFadein C 0.4 0,-50]
+[wt 0.4]
+
+＠
+[charaTalk B]
+血染红了匕首。[r]男人无情地杀死了盗贼们。
+[k]
+
+＠男人
+……那么该去还匕首了。
+[k]
+
+＠男人
+可是匕首已经被血染红了。[r]还是用水洗一下再还回去吧……
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_5 1.0]
+[wait fade]
+
+[scene 10000]
+[charaFadeout C 0.1]
+[wt 2.0]
+
+[fadein black 0.1]
+[wait fade]
+
+＠
+[charaTalk B]
+男人从笼罩着乌云的山上下来。[r]朝着那个少年所在的村子走去。
+[k]
+
+＠
+[charaTalk B]啊，可是[line 3]
+[k]
+
+＠男人
+这是……
+[k]
+
+[messageOff]
+[fadeout black 0.1]
+[se ad510]
+[seVolume ad510 0 0]
+[wait fade]
+
+[scene 65501]
+[wt 0.1]
+
+[seVolume ad510 3.0 1.0]
+[bgm BGM_EVENT_11 0.1]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.4]
+
+＠
+村子里一个人也没有。[r]非但没有人的气息，连人住过的痕迹都没有。
+[k]
+
+＠
+这更像是一个已经被荒废多年的地方。
+[k]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠男人
+……原来是这样啊。[r]虽说现世现报。
+[k]
+
+＠男人
+但我没想到自己从一开始就没赶上。[r]我还真是个没用的男人啊。
+[k]
+
+＠
+[charaTalk B]
+男人从怀中拿出匕首，[r]而匕首已然腐朽不堪。
+[k]
+
+＠男人
+……所以。[r]我究竟消弭了谁的遗憾呢？
+[k]
+
+＠男人
+如果能做到的话，[r]你应该想亲自报仇吧。
+[k]
+
+＠
+[charaTalk B][line 3]飒飒风声中。[r]男人离开了这个没有人的、略显寂寥的村子。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[se ad60]
+[seVolume ad60 0 0.5]
+[seStop ad510 1.5]
+[seStop ad60 2.2]
+[bgmStop BGM_EVENT_11 1.5]
+[wait fade]
+
+[wipeOff]
+[charaFadeout C 0.1]
+[scene 37300]
+[wt 1.8]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.2]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠李书文
+……当时的吾的确实力很强。[r]然而吾却无能为力。
+[k]
+
+＠李书文
+无论吾拥有多么强大的力量，[r]吾都无法让过去的事物变好。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠胤舜
+唔。[r]可是，那也是没办法的啊。
+[k]
+
+＠胤舜
+人有时就得迎接无为的死亡。[r]并非所有的死都有意义，也并非所有的生都有理由。
+[k]
+
+[charaFace B 4]
+
+＠胤舜
+没有必要为他们感到悲伤。[r]不过若你想拯救他们的话[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠李书文
+呵呵。吾很清楚。
+[k]
+
+＠李书文
+吾离佛还差得很远。[r]吾本就没打算拯救天下众生。
+[k]
+
+[charaFace A 0]
+
+＠李书文
+只是[line 3]
+[k]
+
+＠李书文
+吾还有东西想告诉他们。[r]吾还有东西想传给他们。
+[k]
+
+[charaFace A 4]
+
+＠李书文
+吾所缺少的，[r]是内心的从容。
+[k]
+
+＠李书文
+吾既成不了正义，[r]也不排除邪恶。
+[k]
+
+[charaFace A 0]
+
+＠李书文
+那么，至少。[r]应该将吾的想法传下去吧。
+[k]
+
+＠李书文
+凶拳也有需要守护的东西。[r]凶拳也能打破不讲道理的事物。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠胤舜
+[line 3]可是书文大人。[r]这样的话，你就必须得和过去的自己诀别了。
+[k]
+
+＠胤舜
+你难道不会后悔吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠李书文
+后悔？[r]那自然是有的。
+[k]
+
+[charaFace A 4]
+
+＠李书文
+吾不可能不后悔于
+[k]
+
+＠李书文
+日渐衰老的自己[r]与日渐迟钝的拳头。
+[k]
+
+[charaFace A 1]
+
+＠李书文
+不过，那些后悔都已经烟消云散了。[r][#毕竟如今吾还在这里]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠胤舜
+……嗯嗯，原来如此。[r]是啊是啊，确实如此！
+[k]
+
+[charaFace B 3]
+
+＠胤舜
+嗯。说得对。[r]贫僧也应该如此啊。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠李书文
+那么，茶话就到此为止了。[r]御主。差不多该出发了吧。
+[k]
+
+？1：嗯，出发吧！
+
+＠李书文
+好。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠胤舜
+嗯！[r]受教了。
+[k]
+
+[charaFace B 1]
+＠胤舜
+多亏了你的一席话，[r]我才找到了挥舞这支枪的价值！
+[k]
+
+[messageOff]
+[se ad452]
+[charaFadeout B 0.7]
+[wt 1.6]
+
+？2：准备好了吗？
+
+[charaFace A 1]
+＠李书文
+自然。[r]我的拳头会为您而挥动的。
+[k]
+
+[messageOff]
+[se ad452]
+[charaFadeout A 0.7]
+[wt 1.6]
+
+？！
+
+[seStop ad452 1.4]
+[wt 1.4]
+
+＠
+[line 3]日渐衰老的身体。[r][line 3]日渐迟钝的拳头。
+[k]
+
+＠
+年轻时的自己一定会如此嘲笑道。
+[k]
+
+＠
+“为什么要混日子啊？”
+[k]
+
+＠
+不过，上了年纪的男人会对此一笑了之。
+[k]
+
+＠
+凶拳已不再是只为了自己而存在的武器了。
+[k]
+
+＠
+因为它已变成为迈向未来之人而战的[r]极其重要的武器[line 3]
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

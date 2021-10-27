@@ -1,0 +1,249 @@
+
+＄94-03-35-21-2-0
+
+[charaSet A 2003001 1 罗宾汉]
+[charaSet B 98006000 1 敌人]
+[charaSet C 98024100 1 女孩]
+
+[soundStopAll]
+
+
+[scene 20820]
+
+[fadein black 2]
+[wait fade]
+
+[se bac20]
+[charaPut B 0,0]
+[charaEffect B bit_shot_01]
+[wt 0.5]
+[se bac16]
+[shake 0.05 2 4 0.25]
+[wt 0.7]
+
+[wt 0.7]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+
+[wt 0.4]
+
+＠罗宾汉
+[tVoice ValVoice_200300 0_V010]
+好嘞，工作结束啦。[r]这是这附近必须讨伐的最后一个山贼了。[wait tVoice]
+[k]
+
+＠罗宾汉
+[tVoice ValVoice_200300 0_V020]
+不过你还真是好事呢，御主。[r]你明明不用特地陪我跑这趟吧。[wait tVoice]
+[k]
+
+？1：辛苦了。那请收下这个。
+？2：好好补充营养吧[line 4]！
+
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[charaFace A 0]
+＠罗宾汉
+[tVoice ValVoice_200300 0_V030]
+[FFFFFF]？[-]　怎么了，搞这种突袭。[r]能收下的我一般都会照单全[line 3][wait tVoice]
+[k]
+
+＠罗宾汉
+[tVoice ValVoice_200300 0_V040]
+[line 9]。[r][line 12]。[wait tVoice]
+[k]
+
+？1：咦……快回神啦～。
+
+？！
+
+[charaFace A 1]
+＠罗宾汉
+[tVoice ValVoice_200300 0_V050]
+啊，抱歉。[r]因为有些出人意料，我一下愣住了。[wait tVoice]
+[k]
+
+＠罗宾汉
+[tVoice ValVoice_200300 0_V060]
+是情人节吗？　我也是喜欢节日的人，[r]那我就不客气地收下啦。[wait tVoice]
+[k]
+
+[charaFace A 4]
+＠罗宾汉
+[tVoice ValVoice_200300 0_V070]
+不过这么一来，我也得回赠一份礼物才行吧。[r]要说对我们这位好事御主有用的东西……[wait tVoice]
+[k]
+
+＠罗宾汉
+[tVoice ValVoice_200300 0_V080]
+……唔，对战斗没什么用处呢，[r]不过卖掉的话，应该还能赚点路费吧。[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠罗宾汉
+[tVoice ValVoice_200300 0_V090]
+给，恕我冒昧，这是身为御主阁下骑士见习的我[r]送上的不成敬意的礼物，请务必笑纳。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[equipSet C 9805220 1 ]
+[wait equipSet C]
+[charaFace C 0]
+[charaFadein C 0.5 0,-70]
+[wt 2.0]
+[charaFadeout C 0.4]
+[wt 0.5]
+
+？1：……银币？
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠罗宾汉
+[tVoice ValVoice_200300 0_V100]
+嗯。这是某地缺德领主被打倒时的纪念品。[r]是将从前的银币融化后重新铸造的。[wait tVoice]
+[k]
+
+＠罗宾汉
+[tVoice ValVoice_200300 0_V110]
+虽然这玩意儿和我没什么关系。[r]是某座村里的女孩强行塞给我让我收下的。[wait tVoice]
+[k]
+
+＠罗宾汉
+[tVoice ValVoice_200300 0_V120]
+好歹曾一度被当做胜利的纪念。[r]那应该能起到护身符的作用吧，大概。[wait tVoice]
+[k]
+
+？2：刚才为什么沉默了一会儿？
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠罗宾汉
+[tVoice ValVoice_200300 0_V130]
+我没有沉默哦？　只是有点走神。[r]应该说被打了个措手不及吧。[wait tVoice]
+[k]
+
+＠罗宾汉
+[tVoice ValVoice_200300 0_V140]
+以前也发生过类似的事。[wait tVoice]
+[k]
+
+
+[messageOff]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[charaSet A 98110700 1 罗宾汉_单色]
+[charaSet C 98024100 1 女孩]
+[charaFilter C silhouette 00000000]
+
+
+[fowardEffect bit_talk_rain01]
+
+[wipeFilter cinema 0.5 0]
+
+[scene 20823]
+
+[charaTalk C]
+[charaFadein C 0.4 1]
+
+
+[fadein black 1.0]
+[wait fade]
+
+
+[wt 2.0]
+[se ad59]
+[seVolume ad59 0 0.6]
+[charaFadeout C 0.7]
+[wt 0.5]
+[seStop ad59 1.0]
+[wt 1.0]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+[wt 2.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[wipeOff]
+[fowardEffectStop bit_talk_rain01]
+
+[charaFadeout A 0.1]
+
+[wt 1.0]
+
+[charaSet A 2003001 1 罗宾汉]
+[charaSet C 98024100 1 女孩]
+
+[scene 20820]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_2 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+＠罗宾汉
+[tVoice ValVoice_200300 0_V150]
+怎么说呢，让我想起了某个在这种难能可贵的节日里，[r]叫住了像我这样的流浪汉并做一些事的某个人。[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 1]
+＠罗宾汉
+[tVoice ValVoice_200300 0_V160]
+话说，既然是情人节，[r]可不是蹲在这种森林里的时候吧！[wait tVoice]
+[k]
+
+＠罗宾汉
+[tVoice ValVoice_200300 0_V170]
+我们快回迦勒底吧。[r]如果节日不能痛快地玩一场，可就浪费了。[wait tVoice]
+[k]
+
+＠罗宾汉
+[tVoice ValVoice_200300 0_V180]
+应该在闹个痛快之后，[r]回到房里细细品味节日的余韵才对嘛，御主？[wait tVoice]
+[k]
+
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]

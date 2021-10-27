@@ -1,0 +1,758 @@
+
+
+＄02-00-02-13-1-0
+[soundStopAll]
+[charaSet A 7027001 1 彭忒西勒亚]
+[charaSet B 98114500 1 亚马逊人]
+[charaSet C 4004001 1 阿斯托尔福]
+[charaSet D 4025000 1 哥伦布]
+[charaSet E 99502600 1 玛修]
+[charaSet F 98002000 1 芙芙]
+[charaSet G 98115300 1 福尔摩斯]
+[charaSet H 1026001 1 迪昂]
+
+[scene 43200]
+[fadein black 1.5]
+[wait fade]
+
+[se ad149]
+[shake 0.01 1 1 0.4]
+[wt 1.5]
+[bgm BGM_EVENT_5 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+＠彭忒西勒亚
+…………呜！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠亚马逊人
+女王！？[r]怎么了，身体哪里不舒服吗！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠彭忒西勒亚
+味道。有味道。是[#阿喀琉斯]的味道……
+[k]
+
+＠彭忒西勒亚
+但是……但是。这个，有些奇怪。[r][#太近了]。究竟是从哪里[line 2]？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaSet A 98111500 1 达·芬奇]
+[charaSet B 98114200 1 巨英雄]
+
+[wt 2.0]
+[scene 10001]
+[wipeFilter circleIn 0.3 0.5]
+[flashin once 0 1000000 00c8ff50 4c98ff00]
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_EVENT_62 0.1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 1]
+＠阿斯托尔福
+好嘞～，差不多就这里！　急速上浮～！
+[k]
+[messageOff]
+[fadeout black 0.4]
+[wait fade]
+[wipeOff]
+[wt 0.1]
+[flashOff]
+[wipeout downToUp 0.4 1]
+[wait wipe]
+[fadein black 0.4]
+[wait fade]
+[cameraMove 0.1 0,-20 1.1]
+[charaFadeout C 0.1]
+[scene 43101]
+[wipein upToDown 0.4 1]
+[wait wipe]
+[se ad416]
+[cameraMove 2.0 0,0 1.1]
+[charaPut E 0,-200]
+[charaEffect E bit_talk_40]
+[shake 0.05 0 5 2.0]
+[cameraRollMove 0.3 -359]
+[wait cameraRoll]
+[cameraRollMove 0.3 0]
+[wait cameraRoll]
+[cameraRollMove 0.3 -359]
+[wait cameraRoll]
+[cameraRollMove 0.3 0]
+[wait cameraRoll]
+[cameraHome 0.8]
+[wt 0.8]
+[charaPut E 0,-10000]
+[charaEffectStop E bit_talk_40]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.4 0,-50]
+[charaMove D 1 0.4]
+[se ad414]
+[seVolume ad414 0 0.4]
+＠哥伦布
+位置不错！　就这样靠岸！[r]立刻下船登陆，并全速前进！
+[k]
+
+[charaFace D 1]
+＠哥伦布
+快看，黄金国的大本营，黄金神殿已经近在眼前了！[r]哈哈，终于咬到喉咙了！
+[k]
+
+[messageOff]
+[seStop ad414 0.4]
+[charaFadeout D 0.1]
+[wt 0.4]
+[se ad13]
+[charaTalk E]
+[charaFace E 2]
+[charaEffect E bit_talk_10_LowLevel]
+[wt 0.1]
+[charaFadein E 0.1 1]
+[bgmStop BGM_EVENT_62 2.5]
+＠玛修
+……主，御主！？
+[k]
+
+＠玛修
+能听到吗，是我！[r]请回答，御主！
+[k]
+
+？1：简直就像我那适合戴眼镜的可靠后辈的声音！来者何人？
+[bgm BGM_EVENT_2 0.1]
+[charaFace E 1]
+＠玛修
+请恕我重复您的话，我就是那个适合戴眼镜的可靠后辈，[r]玛修·基列莱特！　啊啊，真是[line 2]
+[k]
+
+？2：噢噢……玛修的声音给人的安心感太强烈了。
+[bgm BGM_EVENT_2 0.1]
+[charaFace E 3]
+＠玛修
+哎？　是……是这样吗？　有些高兴[r]……但现在先不讨论这个问题。
+[k]
+
+？！
+
+[charaPut E 0,-10000]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠芙芙
+芙！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠玛修
+还好你们没事，御主、芙芙！
+[k]
+
+＠玛修
+截至刚才为止我们一直在不断尝试，[r]通讯总算是恢复了。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠福尔摩斯
+所以我不是说了嘛，[r]只是临时的通讯障碍，不用担心啦。
+[k]
+
+？1：连福尔摩斯先生也……？
+？！
+
+[charaFace G 0]
+＠福尔摩斯
+我原打算在自己房间里抽一会儿烟斗。
+[k]
+
+＠福尔摩斯
+可毕竟是事关御主的严重情况，是迦勒底必须[r]倾尽全力应对的问题，我也不能不帮手吧。
+[k]
+
+＠福尔摩斯
+没人性的禽兽[line 2]既然被人这么痛骂着拖出来，[r]我也无从抵抗啦。
+[k]
+
+＠福尔摩斯
+虽说我从一开始就主张[r]既然能确认生存反应，这未免太小题大做了吧。
+[k]
+
+＠福尔摩斯
+现在我能断言的真实，[r]只有她无比重视你这点。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+＠玛修
+…………
+[k]
+
+[charaPut E 0,-10000]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠迪昂
+通讯之所以恢复，只是因为我们浮上水面了吧。[r]迄今为止我们一直在龙宫城。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠玛修
+……龙宫城……？
+[k]
+
+[charaFace E 15]
+＠玛修
+虽……虽然有很多想问的事，但总之[line 2]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-90]
+＠达·芬奇
+没错，总之先告诉我们。[r]主要是关于在你们前方走得气势磅礴的那个。
+[k]
+
+＠达·芬奇
+真是的，挺能干嘛。[r]为什么会变成这样？
+[k]
+
+[charaPut E 0,-10000]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[se ad423]
+＠巨英雄
+[image berserker_language_1][line 4]！！！
+[k]
+
+？1：其实……
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout B 0.1]
+[wt 2.0]
+[fadein black 1.5]
+[wait fade]
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+[bgm BGM_EVENT_62 0.1]
+＠玛修
+龙宫城的……玉匣。[r]是这样啊，居然发生了这种事……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-90]
+＠达·芬奇
+………………是哥伦布的主意啊。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠玛修
+………………
+[k]
+
+？1：你们俩怎么了？
+？！
+
+[charaFace E 12]
+＠玛修
+……不，没什么，御主。[r]现在[line 2]对此也无能为力。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠福尔摩斯
+嗯。根据刚才听到的情况，所谓的地底世界，[r]有点像儒勒·凡尔纳的小说。
+[k]
+
+＠福尔摩斯
+我曾经当过探险家，[r]对此有些感兴趣[line 2]
+[k]
+
+[charaFace G 4]
+＠福尔摩斯
+光是查看通讯情况，却完全不插手这种大工作，[r]无论给我多少先令的报酬都不划算。
+[k]
+
+[charaFace G 1]
+＠福尔摩斯
+至少将地底世界的故事说来给我听听吧。
+[k]
+
+[charaFace G 0]
+＠福尔摩斯
+没事，我不会做那种毫无顾忌催促故事结局的事。[r]但假如过于无聊，我还是有可能中途插嘴哦。
+[k]
+
+[charaFadeout G 0.1]
+[charaPut E 0,-10000]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠哥伦布
+喂，现在哪有空闲聊啊！[r]这次一定要取下那家伙的首级！　这是和时间在赛跑！
+[k]
+
+＠哥伦布
+在亚马逊人聚集过来前冲进去，[r]然后再按计划行事！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠玛修
+……嗯。那么，你们边跑边把计划告诉我们吧。[r]我们会尽全力支援你们的！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-90]
+＠达·芬奇
+[line 2]说得对。[r]得趁现在说清楚才行……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_62 2.0]
+[fadeout black 2.0]
+[wait fade]
+[charaPut E 0,-10000]
+[charaFadeout A 0.1]
+[charaSet F 7027001 1 彭忒西勒亚]
+[wt 2.0]
+[scene 43200]
+[fadein black 2.0]
+[wait fade]
+[bgm BGM_EVENT_5 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 1]
+＠哥伦布
+哟。我们来了，女王陛下。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠彭忒西勒亚
+…………
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠巨英雄
+[line 4]。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠彭忒西勒亚
+阿喀……琉斯……！[r]你居然胆敢，出现在，我的面前……！
+[k]
+
+＠彭忒西勒亚
+你这家伙，对我做了些什么。别说你已经忘了。[r]只有杀了你才能雪洗那耻辱。
+[k]
+
+＠彭忒西勒亚
+因此我要杀了你，只要杀了你。[r]趁你还没到达特洛伊之地，[#由我]，杀了你……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠哥伦布
+……？　发疯的状况还挺正常嘛。
+[k]
+
+＠哥伦布
+难道是因为我们通过简易契约控制了[#巨英雄:Megalos][line 2][r]她的杀气才被遏制，比往常有所减弱？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠阿斯托尔福
+虽然说的话还是一如既往莫名其妙。
+[k]
+
+？1：不能掉以轻心。
+？2：不知对方何时会失控……！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+＠迪昂
+当然，不能掉以轻心。[r]虽然外形只是个小姑娘，但她是位一流战士。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠彭忒西勒亚
+外形只是小姑娘……？　咯咯，咯咯咯咯。[r]说得好，阿喀琉斯。
+[k]
+
+[charaFace F 5]
+＠彭忒西勒亚
+[#正因为这样]。[#正因为如此]！[r]现在，这个我，杀你才有意义！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+＠玛修
+对她来说……眼前的一切，都是阿喀琉斯吗？[r]哪怕同时有好几个人……
+[k]
+
+＠玛修
+假如，假如真是如此。[r]可以说现在她的认知能力完全错乱了……！
+[k]
+
+[charaPut E 0,-10000]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠彭忒西勒亚
+啊啊……阿喀琉斯。[r]你又打算……刺穿我的部下们了吧。
+[k]
+
+＠彭忒西勒亚
+不让你得逞。决不让你得逞。[r]这一次，这场战争，定是吾等获得胜利。
+[k]
+
+＠彭忒西勒亚
+再次倾听吧，这勇猛的战吼。
+[k]
+
+＠彭忒西勒亚
+倾听让亚该亚士兵们恐惧、害怕，[r]扔下长剑求饶的[line 2]吾等战士的咆哮吧！
+[k]
+
+[bgmStop BGM_EVENT_5 0.7]
+[charaFace F 2]
+[charaEffect F bit_talk_voice01]
+＠彭忒西勒亚
+噢、噢、噢、噢、噢！[se ad411][r][image berserker_language_1][line 2]！
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[charaEffectStop F bit_talk_voice01]
+[charaFadeout F 0.1]
+[charaSet A 98114500 1 亚马逊人]
+[charaSet B 98114510 1 亚马逊人]
+[charaSet G 98114500 1 亚马逊人]
+[charaSet H 98114510 1 亚马逊人]
+[wt 0.4]
+[charaFace A 1]
+[charaFace B 1]
+[charaFace G 1]
+[charaFace H 1]
+[scene 43300]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk off]
+[se ad412]
+[seVolume ad412 0 0.7]
+[charaFadein G 0.4 384,0]
+[wt 0.4]
+[charaFadein H 0.4 -384,0]
+[wt 0.4]
+[charaFadein A 0.4 128,0]
+[wt 0.4]
+[charaFadein B 0.4 -128,0]
+＠亚马逊人
+[image berserker_language_1][line 2]！[effect bit_talk_voice01]
+[k]
+[seVolume ad412 1.0 0.35]
+
+[messageOff]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[effectStop bit_talk_voice01]
+[charaTalk on]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaSet A 5030001 1 山鲁佐德]
+[charaSet B 98113900 1 弗格斯]
+[charaSet H 1026001 1 迪昂]
+[scene 43200]
+[wt 0.4]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+＠亚马逊人的声音
+[image berserker_language_1][line 2]！
+[k]
+[seStop ad412 1.0]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠山鲁佐德
+这是……连这里都能听到的这声音是……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+＠迪昂
+和上次一样……是能让普通亚马逊人都获得[#强化:狂化]的，[r]『咆哮』！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠彭忒西勒亚
+噢噢……没错，激昂吧，子民们。竭尽声音激昂吧。[r]这将唤醒吾等祖先，唤醒军神之血。
+[k]
+
+＠彭忒西勒亚
+你是赢不了的，阿喀琉斯，这次你可赢不了！[r]因为我会亲手杀了你[line 2]
+[k]
+
+＠彭忒西勒亚
+当时，由我率领着前去支援特洛伊的部族人数，[r]仅为十二。
+[k]
+
+[charaFace F 2]
+＠彭忒西勒亚
+[#但现在，在这黄金国激昂的战士人数，是其百倍]！[r]你们怎可能有胜算！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+＠玛修
+……呜！
+[k]
+
+[charaPut E 0,-10000]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠弗格斯
+（果然，铸就她们的是[line 2]）
+[k]
+
+＠弗格斯
+（绝对强者的君临，全体民众只需服从即可，[r]　犹如一个完整生物的国家！　这确实，极为坚固……！）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠哥伦布
+喂[line 2]别停下脚步！[r]我们早就预想到这种情况了吧！
+[k]
+
+＠哥伦布
+我们只能按说好的作战来行动了！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠阿斯托尔福
+哎呀，说得对。现在可没空惊讶。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+＠迪昂
+虽然这边也有个令人介意的问题……但没办法了。
+[k]
+
+＠迪昂
+……弗格斯、山鲁佐德、御主。
+[k]
+
+＠迪昂
+接下来就拜托各位了。虽说完事之后我们会立刻回来[r][line 2]但还请大家小心。
+[k]
+
+？1：……你们也要多加小心。
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0]
+[charaFadein H 0.1 2]
+
+？2：……一会儿见。
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0]
+[charaFadein H 0.1 2]
+＠阿斯托尔福
+讨厌啦，御主。你这么一说[line 2]
+[k]
+
+[charaFace H 1]
+＠迪昂
+嗯。就像再也无法见面，才故意这么说似的。[r]就是那个插旗什么的。
+[k]
+
+？！
+
+＠阿斯托尔福
+那我们出发啦～！
+[k]
+
+[messageOff]
+[se ad55]
+[charaFadeout C 0.4]
+[charaFadeout H 0.4]
+[wt 1.0]
+[seStop ad55 0.7]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠弗格斯
+……真是一脸轻松的样子呢。[r]尽管很像他们的作风。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠玛修
+当听说他们俩主动请缨时，我十分惊讶。
+[k]
+
+＠玛修
+哪怕隔着通讯装置的我，[r]都能在那种轻松下感受到非比寻常的觉悟与决心。
+[k]
+
+＠玛修
+我觉得[line 2]他们一定能完成。
+[k]
+
+＠玛修
+我们就相信他们，[r]全力做好我们应做的事吧，御主……
+[k]
+
+[charaPut E 0,-10000]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠山鲁佐德
+（啊啊……难以置信。对不想死的我来说，[r]　这是，绝对做不到的。）
+[k]
+
+＠山鲁佐德
+（那些人真的[line 2]）
+[k]
+
+＠山鲁佐德
+（[#仅凭两个人，][r]　[#就打算阻止上千亚马逊人吗]……！？）
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

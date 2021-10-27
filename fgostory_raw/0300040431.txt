@@ -1,0 +1,164 @@
+
+＄03-00-04-04-3-1
+
+[soundStopAll]
+
+[charaSet A 23003000 1 ？？？]
+[charaSet B 1019001 1 罗摩]
+[charaSet C 3004001 1 迦尔纳]
+[charaSet D 23003001 1 ？？？]
+[charaSet E 98002000 1 芙芙]
+[charaSet J 5009000 1 特效用dummy]
+
+[scene 27710]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠？？？
+“崇拜我吧……赞美我吧……溺爱我吧……[r][f small]  [f -]我现在正忙着练级所以去便利店帮我买点冰淇淋吧……”
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠罗摩
+……话说，迦尔纳。[r]尽管余不愿相信，但这神气……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠迦尔纳
+…………………………
+[k]
+
+[charaFace C 0]
+
+＠迦尔纳
+先站着别动，罗摩。很快就好。
+[k]
+
+
+[messageOff]
+[charaPut J 1]
+[charaEffect J bit_talk_h_slash01]
+[wt 0.4]
+[cueSe Battle bac526]
+[cueSeVolume bac526 0 0.4]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout C 0]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_h_slash01]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaShake A 0.08 5 1 0.4]
+
+＠？？？
+哎，啊，呜哇哇哇哇哇！？
+[k]
+
+[messageOff]
+[fadeout white 0.2]
+[se ad243]
+[wait fade]
+[charaFadeout A 0.1]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[fadein white 0.5]
+[wait fade]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_7 0.1]
+[charaFace D 2]
+[charaShake D 0.05 5 2 0.7]
+
+＠D：？？？
+太……太危险了吧！？[r]刚才那下真的是超级千钧一发啊！
+[k]
+
+[charaFace D 5]
+
+＠D：？？？
+要是枪尖再靠近一点的话，[r]我的肉就会变成肯定不好吃的烤肉串[line 3]
+[k]
+
+[charaFace D 5]
+
+＠D：？？？
+…………
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠迦尔纳
+…………
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 0]
+[charaDepth D 1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0]
+[charaFace C 0]
+[charaFadein C 0.1 2]
+
+＠D：？？？
+……[#迦尔纳先生]？　你在这种地方干嘛啊。
+[k]
+
+＠迦尔纳
+这是我该说的话才对。[r]你在干什么啊，■■■。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠芙芙
+芙……[wt 0.4][messageShake 0.05 3 3 0.5]芙[line 4]！？
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

@@ -1,0 +1,274 @@
+
+
+
+＄94-04-19-05-1-0
+
+[soundStopAll]
+
+
+[charaSet A 11009001 1 S伊什塔尔]
+[charaSet B 2037000 1 简]
+[charaSet C 6018002 1 X]
+[charaSet J 5009000 1 特效用]
+
+[scene 83400]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠S伊什塔尔
+好。我们已经离开德克萨斯·超越了，[r]先整理一下今后的方针吧。
+[k]
+
+＠S伊什塔尔
+为了让[%1]返回原来的宇宙。
+[k]
+
+＠S伊什塔尔
+就必须抓住太空神阴流的总统帅，[r]也就是那个叫『阿斯塔蒂』的从者。
+[k]
+
+＠S伊什塔尔
+太空神阴流的根据地正向着某个禁忌宙域进发，
+[k]
+
+＠S伊什塔尔
+但大致方向可以通过『屏蔽反探测机』确认。
+[k]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_security]
+
+[messageOff]
+[fadeout black 0.2]
+[se ad1]
+[wait fade]
+[charaFadeout A 0]
+[scene 89000]
+[charaPut J 1]
+[wt 0.2]
+[fadein black 0.2]
+[wait fade]
+
+＠S伊什塔尔
+大致在星间地图的这附近。
+[k]
+
+？1：距这里有多远？
+
+[wt 0.5]
+[messageOff]
+[fadeout black 0.2]
+[wait fade]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_security]
+[scene 83400]
+[fadein black 0.2]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠简
+唔，大致在2000光年以外吧！
+[k]
+
+＠简
+没关系，很近的很近的！[r]大概只要进行5次极限突破跳跃就能抵达的距离！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？2：好像很红啊……
+
+[wt 0.5]
+[messageOff]
+[fadeout black 0.2]
+[wait fade]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_security]
+[scene 83400]
+[fadein black 0.2]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠X
+说得对……红到令人难以想象[r]这是充满了[#苍辉:以太]的宇宙。
+[k]
+
+[charaFace C 5]
+
+＠X
+以前有蓝色代表秩序，红色代表恶魔的定论，[r]所以估计不是什么正经禁忌宙域吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠S伊什塔尔
+……确实不是什么能轻易抵达的距离……[r]中途需要补充装备才行。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠简
+还有阿尔托莉元素的补给哦☆[r]我们边追捕通缉犯，边赚取路费吧！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠S伊什塔尔
+嗯。反正猎物会为了[%1][r]主动找上门来，应该会很轻松。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠X
+唔。你指的应该就是现在[r]跟在我们后面的所属不明的舰艇吧？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+
+＠S伊什塔尔
+哎？
+[k]
+
+[messageOff]
+[cueSe Battle bac70]
+[shake 0.04 7 5 0.6]
+[wt 0.5]
+[cueSeStop bac70 0.3]
+[wt 0.5]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠简
+抱歉～，雷达有反应了！
+[k]
+
+＠简
+一艘战斗艇正从德克萨斯·超越的方向[r]通过[#张力跳跃:Bound jump]向这里冲过来了～～！
+[k]
+
+＠简
+一定是莫西干残党～！[r]马安娜号的后部也有从者反应～！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠S伊什塔尔
+嘁，真难缠……！
+[k]
+
+＠S伊什塔尔
+我们要去外面迎击，[r]你能跟上吗，御主！？
+[k]
+
+＠S伊什塔尔
+对你来说，应该是首次宇宙空间内的任务吧！
+[k]
+
+？1：不……不要紧紧紧紧。
+？2：交交……交给我吧吧吧吧吧。
+
+？！
+
+[charaFace A 8]
+
+＠S伊什塔尔
+[line 6]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0]
+[charaFace A 8]
+[charaFadein A 0.1 2]
+
+＠简
+伊什塔凛。表情，注意表情管理。[r]看到别人恐惧的样子就感到亢奋可不是什么好兴趣哦～？
+[k]
+
+[charaFace A 3]
+
+＠S伊什塔尔
+唔！？[r]我……我可没这种兴趣！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠S伊什塔尔
+没……没关系啦，[r]我会为你拴上安全绳的！
+[k]
+
+＠S伊什塔尔
+当我们遇到危险时，就用那个厉害的东西……[r]用令咒为我们支援哦！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

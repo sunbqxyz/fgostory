@@ -1,0 +1,239 @@
+
+＄94-00-98-95-1-0
+
+[charaSet A 3004001 1 迦尔纳]
+
+[soundStopAll]
+[bgm BGM_EVENT_7 0.1]
+
+[scene 10310]
+
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+＠迦尔纳
+…………[r]……………………
+[k]
+
+[charaFace A 4]
+＠迦尔纳
+………………………………[r]………………………………………………
+[k]
+
+？1：迦尔纳先生，怎么了？
+？2：迦尔纳亲，怎么La？
+
+？！
+
+[charaFace A 1]
+＠迦尔纳
+唔。是[%1]啊。[r]抱歉，我有些分心，没发现您的到来。
+[k]
+
+＠迦尔纳
+早上好。真是个美妙的清晨。[r]毕竟能在一大早就与您见面。
+[k]
+
+[charaFace A 0]
+＠迦尔纳
+……不。这也算是上天保佑吧。[r]如果是您，应该能商量这种不可思议的现象。
+[k]
+
+＠迦尔纳
+听好了哦，[%1]，[r]请务必冷静地倾听。
+[k]
+
+＠迦尔纳
+今天，我已经遭遇了数次难以置信的场面。[r][line 3]礼物。
+[k]
+
+＠迦尔纳
+毫无理由，也不认识的迦勒底工作人员[r]亲手将巧克力送给我当礼物。
+[k]
+
+＠迦尔纳
+您能相信吗。已经有五件了。[r]而且不仅止于此。
+[k]
+
+＠迦尔纳
+罗摩、杰罗尼莫、罗宾汉、贝奥武夫，[r]还有李书文。他们也遇到了相同的情况。
+[k]
+
+＠迦尔纳
+啊啊，不知为何爱迪生却嚎啕大哭了，[r]海伦娜送了巧克力给他。
+[k]
+
+＠迦尔纳
+收到礼物原本是件值得高兴的事……[r]但我又不是阿周那，我是不可能被赠与的。
+[k]
+
+[charaFace A 5]
+
+＠迦尔纳
+另外像爱迪生那样的男人居然嚎啕大哭。[r]难道是敌方势力可怕计谋的预兆吗？
+[k]
+
+？1：爱迪生……！（被触动到哭泣。）
+？2：向他说明情人节的事。
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.5]
+[wipeout rollRight 1.5 0.5]
+[wait wipe]
+
+[wt 1.0]
+
+[charaFace A 3]
+
+[wipein rollLeft 1.5 0.5]
+[wait wipe]
+
+[bgm BGM_EVENT_2 0.3]
+
+＠迦尔纳
+情人节……！　原……原来如此。[r]我确实听说过存在这么一个极为风流的习俗……
+[k]
+
+＠迦尔纳
+但没想到今天就是那个日子啊……[r]很熟悉这方面活动的女性曾告诉过我，
+[k]
+
+＠迦尔纳
+“这是和我们无关的活动”，[r]以至于我完全忘了这件事了。
+[k]
+
+＠迦尔纳
+我太对不起工作人员们了……
+[k]
+
+＠迦尔纳
+我用“这是我不需要的东西。我也没有什么可以回礼的”这些话，[r]拒绝了她们的礼物。
+[k]
+
+？1：综上所述，其实我也准备了。
+？2：少废话，收下吧[line 3]！
+
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[charaFace A 4]
+＠迦尔纳
+[line 3]。[r][line 9]。
+[k]
+
+＠迦尔纳
+这样啊。请恕我稍微离席一会儿。[r]请在这里等我。明白了吗，绝对别移动哦。
+[k]
+
+[messageOff]
+
+[se ad95]
+[charaFadeout A 0.4]
+[wt 0.4]
+[seStop ad95 0.7]
+[wt 0.7]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[scene 10310]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠迦尔纳
+让你久等了。毫无准备的男人真是愧对于人，[r]但还请您收下这个。
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[equipSet B 9805280 1]
+[wait equipSet B]
+[charaFace B 0]
+[charaFadein B 0.5 0,-70]
+[wt 2.0]
+[charaFadeout B 0.4]
+[wt 0.5]
+
+？1：话……话说，这个……
+？2：应该非常昂贵吧……！？
+
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠迦尔纳
+嗯。我用手头的材料制作的，[r]做得还行吗？　对我来说算是少见的满意之作。
+[k]
+
+＠迦尔纳
+虽然也让达·芬奇帮了点忙，[r]但令我骄傲的是，这完全是我亲手做的。
+[k]
+
+[charaFace A 1]
+＠迦尔纳
+……那个，其实本来想要直接送给你的，[r]但我想原本的造型只会给你平添麻烦吧。
+[k]
+
+＠迦尔纳
+所以才打造成适合你的造型。[r]这点考量我还是有的。
+[k]
+
+？1：（一脸自豪……！）
+
+[charaFace A 3]
+＠迦尔纳
+……您这么觉得吗？[r]……说实话，我确实自信满满……
+[k]
+
+＠迦尔纳
+如果可能的话，您能戴上我会更高兴的。[r]在没有其他人，只有我在的时候。
+[k]
+
+？2：谢谢你，迦尔纳。
+
+[charaFace A 1]
+＠迦尔纳
+嗯。谢谢你，[%1]。[r]我不会忘记这天的喜悦。
+[k]
+
+＠迦尔纳
+这可谓不灭的巧克力。我可以断言，[r]哪怕是太阳，也无法融化这份甜美。
+[k]
+
+？！
+
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]

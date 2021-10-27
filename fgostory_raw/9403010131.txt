@@ -1,0 +1,630 @@
+
+
+＄94-03-01-01-3-1
+
+
+[soundStopAll]
+
+[charaSet A 3034001 1 茨木童子]
+[charaSet B 6029001 1 Assassin Paraiso]
+[charaSet C 99502600 1 玛修]
+[charaSet D 98111500 1 达·芬奇]
+[charaSet E 1098157600 1 护法少女]
+[charaSet F 1098157700 1 小动物]
+[charaSet G 98115000 1 令咒用]
+[charaSet H 98115000 1 特效用]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 64600]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk off]
+[charaFace E 5]
+[charaFace F 5]
+[charaFadein E 0.1 1]
+[charaFadein F 0.1 1]
+[wt 0.5]
+[se adm14]
+[charaMoveScale E 1.2 0.2]
+[charaMoveScale F 1.2 0.2]
+[charaMove E 0,10 0.2]
+[charaMove F 0,10 0.2]
+[charaEffect E bit_talk_41]
+[wt 0.2]
+[fadeout black 0.3]
+[charaEffectStop E bit_talk_41]
+[wait fade]
+
+[charaScale E 1.0]
+[charaScale F 1.0]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[scene 10000]
+
+[charaTalk on]
+
+[fadein black 0.1]
+[wait fade]
+
+[se bac149]
+[charaPut G 100,50]
+[charaEffect G bit_talk_13]
+[wt 0.2]
+[se bac149]
+[charaPut G -100,-50]
+[charaEffect G bit_talk_13]
+[wt 0.3]
+
+[se bac150]
+[effect bit_talk_14]
+[wt 0.7]
+
+[fadeout black 0.5]
+[wait fade]
+
+[scene 64600]
+[wt 0.1]
+
+[fadein black 0.3]
+[wait fade]
+[cueSe Battle bac234]
+[shake 0.05 0 5 0.5]
+[effect bit_talk_impactlanding]
+[bgmStop BGM_EVENT_3 1.0]
+[wt 2.5]
+
+[bgm BGM_HALLOWEEN_2 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 0]
+[charaDepth F 1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFace F 0]
+[charaFadein E 0.1 1]
+[charaFadein F 0.1 0,0]
+
+＠护法少女
+…………也就这样了吧♡
+[k]
+
+＠小动物
+哼。这是护法的力量呢。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+鬼救阿！　谢谢你鬼救阿！
+[k]
+
+[charaFace A 1]
+
+＠茨木童子
+护法之鬼果然是存在的……[r]嗯嗯，酒吞说的果然是真的！
+[k]
+
+＠茨木童子
+快看啊，御主！　就像酒吞一样美吧！
+[k]
+
+＠茨木童子
+那才配被称为鬼种女主角！[r]吾已经彻底成为她的[#粉丝]啦！
+[k]
+
+？1：是呢，是鬼救阿呢。
+？2：（总之先点头再说。）
+
+？！
+
+＠茨木童子
+嗯嗯。[r]汝也明白了吗！　人类也是会为那种美所倾倒的吧！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠B：[servantName 602900:Assassin Paraiso:望月千代女]
+先得逃离这里才行，主公！[r]还有童子阁下[line 3]以及护法阁下！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFace F 0]
+[charaFadein E 0.1 1]
+[charaFadein F 0.1 0,0]
+[bgmStop BGM_HALLOWEEN_2 1.0]
+
+＠护法少女
+不用在意妾身啦。[r]你们不赶紧逃跑，可是会死的哦？
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：[servantName 602900:Assassin Paraiso:望月千代女]
+！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[se ad57]
+[shake 0.05 0 3 0.3]
+[wt 1.0]
+[se ad57]
+[shake 0.05 0 3 0.3]
+[wt 1.0]
+[seStop ad57]
+[wt 0.5]
+[se ad625]
+[wt 2.0]
+
+[bgm BGM_EVENT_3 0.1]
+
+
+[charaTalk off]
+[charaFace A 2]
+[charaFace B 2]
+[charaFadein A 0.1 2]
+[charaFadein B 0.1 0]
+[wt 1.0]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+[wt 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,-90]
+[wt 1.0]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk on]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFace F 0]
+[charaFadein E 0.1 1]
+[charaFadein F 0.1 0,0]
+
+＠护法少女
+[line 5]啊啊，嗯。鬼王出马了呢。
+[k]
+
+＠护法少女
+是因为那个叫圣杯什么的缘故吧。[r]那啥，尽管妾身这么说有些奇怪，但这真的不是闹着玩的哦？
+[k]
+
+＠护法少女
+快逃吧。[r]妾身会想办法挡住他们的。
+[k]
+
+[charaPut G 1]
+
+[flag IsMale true]
+[selectionUse masterMale]
+
+？1：……我相信护法少女！
+[flag IsMale true]
+？2：……抱歉，这里就交给你了！
+[flag IsMale true]
+
+？！
+
+[selectionUse masterFemale]
+
+？1：……我相信护法少女！
+[flag IsMale false]
+？2：……抱歉，这里就交给你了！
+[flag IsMale false]
+
+？！
+
+＠护法少女
+啊，稍微等一下。
+[k]
+
+[messageOff]
+
+[branch _Male IsMale true]
+[branch _Female IsMale false]
+
+
+[label _Male]
+[charaEffect G bit_talk_CommandMantra_01 0,64]
+[charaEffectPause G bit_talk_CommandMantra_01 0,64]
+[wait charaEffectStart G]
+[charaEffectStart G]
+
+[branch _branchEnd]
+
+[label _Female]
+[charaEffect G bit_talk_CommandMantra_02 0,64]
+[charaEffectPause G bit_talk_CommandMantra_02 0,64]
+[wait charaEffectStart G]
+[charaEffectStart G]
+
+[label _branchEnd]
+[se bas16]
+[wait charaEffect G]
+[charaPut G 1200,1200]
+[charaEffectStop G]
+
+[charaFace E 1]
+
+＠护法少女
+……呵呵。先缔结临时契约吧。
+[k]
+
+＠护法少女
+总之，彼此若都能活下来的话，届时再见吧。[r]你如果遇到了什么危险，妾身或许可以考虑赶过去哦。
+[k]
+
+＠护法少女
+就这样。
+[k]
+
+＠小动物
+再见啦。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaEffect E bit_talk_quickmove]
+[charaSpecialEffect F erasureReverse 1 0.3]
+[charaSpecialEffect E erasureReverse 1 0.3]
+[se ad73]
+[wt 1.0]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+啊啊，鬼救阿走掉了……
+[k]
+
+＠茨木童子
+不能与吾同行啊，唔唔唔唔唔……[r]尽管有些遗憾，但现在也无法奢求了……
+[k]
+
+＠茨木童子
+毕竟人家是一周拯救鬼界一次的存在……[r]一定非常忙碌吧……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaSet E 10008001 1 志度内]
+[charaFilter E silhouette 00000080]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：[servantName 602900:Assassin Paraiso:望月千代女]
+刚才的战斗已经突破了包围网！[r]趁现在，快逃到别的地方去吧，主公！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠玛修
+检查敌对反应！[r]前辈，总之先向西北方向[line 3]
+[k]
+
+[messageOff]
+[charaFace C 6]
+[wt 1.0]
+
+＠玛修
+[line 3]这是？　新的从者反应？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[se ad59]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.4 1]
+[wt 0.2]
+[seStop ad59]
+[wt 0.2]
+
+＠谜之女孩
+这边走！　快点！
+[k]
+
+＠谜之女孩
+你们如果还想活命，就快跟我来！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+什么人！
+[k]
+
+[messageOff]
+[charaFace A 4]
+[wt 1.0]
+[charaFace A 2]
+
+＠茨木童子
+不……！[r][#这味道]是……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠B：[servantName 602900:Assassin Paraiso:望月千代女]
+[line 3]主公！
+[k]
+
+？1：我们走！
+
+？！
+
+＠B：[servantName 602900:Assassin Paraiso:望月千代女]
+明白了！　童子阁下，赶快！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+知道了啦！　毕竟这是鬼救阿的吩咐！
+[k]
+
+[charaFace A 1]
+
+＠茨木童子
+咯咯咯咯。偶尔撤退一下也不赖呢。[r]毕竟鬼不是什么武士！　并不会一味横冲直撞哦！
+[k]
+
+[charaFace A 2]
+
+＠茨木童子
+…………走！　撤退！
+[k]
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_3 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+[bgm BGM_BATTLE_29 0.1]
+
+＠鬼王朱裸
+哼呵呵呵呵呵……！
+[k]
+
+＠鬼王朱裸
+我乃鬼王。ONILAND之王！
+[k]
+
+＠鬼王朱裸
+似乎有些没规矩的投诉者[r]混入了我的ONILAND呢，哼呵呵呵呵……
+[k]
+
+＠鬼王朱裸
+好吧！[r]既然这些人不打算享受我的ONILAND！
+[k]
+
+＠鬼王朱裸
+那就让他们见识难以想象的鬼之恐怖吧！[r]哼呵呵呵呵！
+[k]
+
+＠鬼王朱裸
+比方说……劫持连接乐园[r]与千岁城镇的吾等ONILAND的班车！
+[k]
+
+＠鬼王朱裸
+噢噢……多么可怕……！[r]噢噢噢噢……So terrible……！
+[k]
+
+＠鬼王朱裸
+恐惧得浑身颤抖吧！[r]投诉者们！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+[fadeout black 1.0]
+[bgmStop BGM_BATTLE_29 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[bgmStop BGM_EVENT_3 1.0]
+[bgmStop BGM_HALLOWEEN_2 1.0]
+[bgmStop BGM_BATTLE_29 1.0]
+
+[seStop ad57 0.1]
+[seStop ad59 0.1]
+[seStop ad625 0.1]
+[seStop ad73 0.1]
+[seStop adm14 0.1]
+[seStop bac149 0.1]
+[seStop bac150 0.1]
+[seStop bas16 0.1]
+[cueSeStop bac234 0.1]
+
+[effectStop bit_talk_14]
+[effectStop bit_talk_impactlanding]
+
+[charaSet A 3034001 1 茨木童子]
+[charaSet B 6029001 1 Assassin Paraiso]
+[charaSet C 99502600 1 玛修]
+[charaSet D 98111500 1 达·芬奇]
+[charaSet E 1098157600 1 护法少女]
+[charaSet F 1098157700 1 小动物]
+[charaSet G 98115000 1 令咒用]
+[charaSet H 98115000 1 特效用]
+
+[scene 10000]
+[skip false]
+
+[messageOff]
+[maskin black 1.0]
+[wait mask]
+
+[fadeout black 0.1]
+[wait fade]
+[soundStopAll]
+
+[label selectBranch]
+
+[skip false]
+
+[fadein black 1.0]
+[wait fade]
+
+
+＠
+【caution！】[r]【接下来即将播放专用演出与语音，】
+[k]
+
+＠
+【[line 3]请在做完准备后点击画面哦！】
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+[tapSkip stop_tapSkip]
+[label stop_tapSkip]
+
+[messageOff]
+[bgm BGM_EVENT_99 0.1]
+
+[revivalBranch lblNormal lblRevival]
+[label lblNormal]
+[effect bit_talk_oniland_nexttitle]
+[wait fowardEffect]
+[branch lblConf]
+[label lblRevival]
+[effect bit_talk_oniland_nexttitle_r]
+[wait fowardEffect]
+[label lblConf]
+[wt 3.1]
+[effect bit_talk_oniland_cut01]
+
+[wt 0.1]
+
+[pictureFrame cut132_text_01]
+[voice 9010011_0_M610]
+[wait voice 9010011_0_M610]
+[pictureFrame]
+[wt 0.2]
+
+[pictureFrame cut132_text_02]
+[voice 9010011_0_M611]
+[wait voice 9010011_0_M611]
+[pictureFrame]
+
+[pictureFrame cut132_text_03]
+[voice 9010011_0_M612]
+[wait voice 9010011_0_M612]
+[pictureFrame]
+
+[wt 0.2]
+
+[pictureFrame cut132_text_04]
+[voice 9010011_0_M613]
+[wait voice 9010011_0_M613]
+[pictureFrame]
+
+[pictureFrame cut132_text_05]
+[voice 9010011_0_M614]
+[wt 4.5]
+[pictureFrame]
+
+[effect bit_talk_oniland_telop01]
+
+[wait voice 9010011_0_M614]
+
+[wt 0.3]
+
+[voice 9010011_0_M615]
+[wait voice 9010011_0_M615]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_99 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

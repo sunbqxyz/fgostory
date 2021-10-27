@@ -1,0 +1,365 @@
+
+
+＄03-00-02-12-2-1
+
+
+
+[soundStopAll]
+
+[charaSet A 3012001 1 布伦希尔德]
+[charaSet B 3033002 1 斯露德]
+[charaSet C 1098123210 1 戈尔德鲁夫]
+[charaSet D 8001400 1 玛修]
+[charaSet E 1098124510 1 达·芬奇]
+[charaSet F 2031001 1 拿破仑]
+[charaSet G 98002000 1 芙芙]
+
+[charaSet H 98115000 1 特效用]
+
+[bgm BGM_EVENT_81 0.1]
+
+[scene 60601]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad442]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠布伦希尔德
+[line 3]理解你我间的实力差距吧。
+[k]
+
+[charaFace A 0]
+
+＠布伦希尔德
+再继续破坏下去也毫无意义。[r]你们必须明白个体遭破坏的悲哀。
+[k]
+
+＠布伦希尔德
+你们一定会被增产吧，[r]然而，这绝不代表死而复生。
+[k]
+
+＠布伦希尔德
+那只是生产出新的个体而已。[r]身为个体的你们，绝不是永恒的。
+[k]
+
+＠布伦希尔德
+撤退吧。[r]姊妹们。
+[k]
+
+[bgm BGM_EVENT_81 1.0 0.5]
+
+＠斯露德
+…………不。我们不能撤退，姐姐大人。
+[k]
+
+[charaFace A 4]
+
+＠布伦希尔德
+这声音……[r]我有印象[line 3]
+[k]
+
+＠斯露德
+您刚才说实力差距？[r]确实，每一个量产型都不如你们。
+[k]
+
+＠斯露德
+然而我们这边有数量上的优势！[r]面对着总计100骑的量产型瓦尔基里，您！
+[k]
+
+＠斯露德
+又能战斗到什么时候！[r]布伦希尔德姐姐大人！　以及[line 3]迦勒底的残党！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 0.5]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk E]
+[charaFace E 26]
+[charaFadein E 0.1 1]
+[wt 0.6]
+
+＠达·芬奇
+说得对，那当然了！[bgm BGM_EVENT_82 0.1][r]我们当然能英勇奋战啦！
+[k]
+
+＠达·芬奇
+因为已经争取到足以重整态势的时间了哦～！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[se ad607]
+
+[shake 0.05 0 2 1.0]
+[wt 0.8]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠玛修
+紧急制动！[r]御主，抓紧我……！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad553]
+[seVolume ad553 0 0.7]
+[fowardEffect bit_talk_41]
+[shake 0.05 2 2 3.0]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠芙芙
+芙芙芙！[r]嘎呜！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[seVolume ad553 1.0 0.4]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠拿破仑
+哈哈哈！　真不错真不错，状态恢复了吗！[r]原来如此！　迦勒底的Shadow Border！
+[k]
+
+＠拿破仑
+竟能想出如此讨厌的主意！[r]不错嘛！
+[k]
+
+？1：并不是毫无目的地抱头鼠窜，
+？2：而是想开往某个地方！？
+
+？！
+
+[charaFace F 1]
+
+＠拿破仑
+没错！[r]你很快就会明白了[line 3]瞧，马上就要到了！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[cueSe Battle bac428]
+[cueSeVolume bac428 0 0.6]
+[wt 2.0]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠玛修
+巨人种……！[r]这是我们刚才突破的那群……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 26]
+[charaFadein E 0.1 1]
+
+＠达·芬奇
+这段时间我们可不只是在修理潜航艇哦～！[r]我们已经大致掌握了巨人种的性质了！
+[k]
+
+＠达·芬奇
+他们通过感知热源来攻击别人。[r]无论人类、动物、还是英灵，一视同仁！
+[k]
+
+＠达·芬奇
+瓦尔基里也有拟似心脏之类的东西，[r]构造和人体相仿，是有温度的！
+[k]
+
+[messageOff]
+
+[se ad553]
+[shake 0.05 3 2 1.2]
+[wt 2.0]
+[seStop ad553 1.0]
+[fowardEffectStop bit_talk_41]
+
+[charaFace E 27]
+
+＠达·芬奇
+也就是说[line 3]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[cueSe Battle bac428]
+[wt 1.0]
+
+[se ad85]
+[se ad246]
+[wt 0.4]
+[seStop ad246 0.7]
+
+[wt 0.6]
+
+[se ad85]
+[se ad246]
+[wt 0.4]
+[seStop ad246 0.7]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠芙芙
+芙……[charaShake G 0.05 3 3 0.5]芙，芙呜！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠玛修
+巨人群发动投石攻击……！[wt 0.5][charaFace D 2][r]要来了！　全力防御态势！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[flashin once 1.0 1.5 FFFFFF80 FFFFFF00]
+
+[se bac247]
+[seVolume bac247 0 0.7]
+[shake 0.05 5 4 0.7]
+[se ad608]
+
+[wt 0.7]
+
+[se bac325]
+[seVolume bac325 0 0.7]
+[shake 0.05 5 4 0.7]
+[wt 1.2]
+
+[se bac332]
+[seVolume bac332 0 0.7]
+[shake 0.05 5 4 0.7]
+
+[charaSet G 1098123010 1 穆尼尔]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠穆尼尔
+打中了打中了！[r]虽说是杯水救车薪，但这是冰块砸女武神哦！
+[k]
+
+＠穆尼尔
+呀嗬，作战成功！[r]迄今为止一直被你们玩命狙击，活该！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠戈尔德鲁夫
+呵。这没什么大不了的。
+[k]
+
+＠戈尔德鲁夫
+纯粹是因为我任用的技术顾问计算很周全，[r]仅此而已啦。
+[k]
+
+[charaFace C 2]
+
+＠戈尔德鲁夫
+好，继续利用巨人种的这个习性吧！
+[k]
+
+＠戈尔德鲁夫
+没必要头铁地与100骑干架嘛！[r]我们又不是斗士，只是旅行者而已！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+
+＠达·芬奇
+场面闹得这么大，其他巨人种也会集结过来吧。[r]我们就一边华丽地甩开追兵[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠拿破仑
+一边找出统率个体吧！[r]斯露德无疑是在场的，能听到她的声音。
+[k]
+
+＠拿破仑
+不过也在情理之中。毕竟集结了总计100骑瓦尔基里，[r]数量这么多，若没有头领就没法运用了吧！
+[k]
+
+[charaFace F 2]
+
+＠拿破仑
+那家伙肯定就在空中的某处！[r]只要找到，并打倒她的话……！
+[k]
+
+[charaFace F 5]
+
+＠拿破仑
+我们就能！　获得胜利了！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_82 1.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

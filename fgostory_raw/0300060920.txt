@@ -1,0 +1,470 @@
+
+
+
+＄03-00-06-09-2-0
+
+
+[soundStopAll]
+
+[charaSet A 1009001 1 莫德雷德]
+[charaSet B 7004001 1 弗兰肯斯坦]
+[charaSet C 4023000 1 坂田金时]
+[charaSet D 7023001 1 源赖光]
+
+[charaSet R 5009000 1 特效用dummy]
+[charaSet S 5009000 1 特效用dummy]
+[charaSet T 5009000 1 特效用dummy]
+[charaSet Q 5009000 1 特效用dummy]
+
+[scene 92500]
+
+[charaPut Q 1]
+[charaEffect Q bit_talk_mind_poll_02]
+
+[wipeFilter cinema 0.5 0]
+[cameraFilter gray]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_122 0.1]
+
+
+[se ad33]
+[effect bit_talk_kengekiall02]
+[wt 0.8]
+
+[se ad85]
+[charaPut R -360,-100]
+[charaRoll R 80]
+[charaEffect R bit_talk_v_slash01]
+[wt 0.4]
+
+
+[se ad32]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+
+[charaPut R 2000,2000]
+[charaEffectStop R bit_talk_v_slash01]
+
+[se ad127]
+[seStop ad127 0.6]
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,20]
+[charaMove A 0,-50 0.2]
+[charaShake A 0.02 3 3 0.6]
+[charaMoveScale A 1.0 0.2]
+[wt 0.8]
+
+＠莫德雷德
+不对，不对，不对[line 3]
+[k]
+
+＠莫德雷德
+不应该是你！[r]你不可能以这样子出现在我面前！
+[k]
+
+[charaFace A 6]
+＠莫德雷德
+这是哪里……？
+[k]
+
+＠莫德雷德
+卡美洛……阿瓦隆……不对，不对！
+[k]
+
+＠莫德雷德
+这里应该是奥林波斯！[r]所以我不可能在和你战斗！
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[effect bit_talk_mind_poll_03]
+[se ad888]
+[wt 2.0]
+[seStop ad888 1.0]
+[wt 1.0]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠莫德雷德
+是谁！[r]在我……！
+[k]
+
+＠莫德雷德
+在我脑海中唱歌的人……是谁！！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 0,-50]
+[wt 0.4]
+＠弗兰
+啊啊，唔唔唔唔唔……[wt 0.6][messageShake 0.02 3 3 0.6][r]唔啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 0,-50]
+[wt 1.0]
+
+＠莫德雷德
+你是，弗兰吗[line 3]！？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-50]
+[wt 0.5]
+
+[se ad85]
+[effect bit_talk_v_slash01]
+[wt 0.4]
+
+[se ad170]
+[charaFadeout B 0.1]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+
+[effectDestroy bit_talk_v_slash01]
+
+[charaTalk C]
+[charaFace A 8]
+[charaFace C 7]
+[charaFadein C 0 -80,-50]
+[charaFadein A 0 200,-50]
+[charaShake C 0.02 3 3 0.6]
+[wt 0.8]
+
+[charaFace C 5]
+＠坂田金时
+小姑娘，Be Cool！[r]你究竟是怎么了！
+[k]
+
+＠坂田金时
+[#莫德雷德可是同伴啊]！[r]我们是一起与机械巨人阿耳戈斯战斗的好伙伴吧！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-50]
+＠弗兰
+唔唔唔唔唔唔唔唔！[r]啊啊，啊，啊啊啊啊啊啊啊啊啊啊啊！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠莫德雷德
+金……时……！[r]你是……坂田金时吧……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+＠坂田金时
+嗯，没错！[r]话说你也和她打了好几个来回吧！？
+[k]
+
+[charaFace C 7]
+＠坂田金时
+到底是怎么回事啊，你们俩刚才还那么……
+[k]
+
+＠坂田金时
+我们已经将那个[#机械巨人:阿耳戈斯]揍到无法再生了啊！[r]接下来只要安装好那玩意儿就行了，Shit！
+[k]
+
+[charaFace C 2]
+＠坂田金时
+老大！[r]赖光老大啊！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+＠源赖光
+金时……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-50]
+＠坂田金时
+拜托你了，老大！　快将她们俩[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0,-50]
+＠源赖光
+金时。她们两个已经没救了。[r]我们搞错了战斗方式。
+[k]
+
+＠源赖光
+机械巨人阿耳戈斯不过是个陷阱。[r]我们如今已是被蛛网困住的蝴蝶。
+[k]
+
+＠源赖光
+我也……[r]已经……
+[k]
+
+＠源赖光
+……无法遏制自己了。[r]都是多亏了狂化技能，才能稍微多抵御一会儿。
+[k]
+
+[charaFace D 2]
+＠源赖光
+可再这样下去的话……[r][#我就会遏制不住想要杀你的冲动了]。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-50]
+＠坂田金时
+！[messageShake 0.02 3 3 0.4]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0,-50]
+＠源赖光
+所以说，金时。我的孩子。赶快，把我[line 3]
+[k]
+
+[charaFace D 2]
+＠源赖光
+[f large]把我杀了吧！　金时！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-50]
+＠坂田金时
+[f large]开什么玩笑啊，老大！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[effect bit_talk_mind_poll_03]
+[se ad888]
+[wt 2.0]
+[seStop ad888 1.0]
+[wt 1.0]
+
+
+
+
+[charaTalk off]
+
+[se ad85]
+[charaPut R -360,-100]
+[charaEffect R bit_talk_v_slash01]
+[wt 0.6]
+
+
+[se ad171]
+[charaPut S 1]
+[charaEffect S bit_talk_h_slash01]
+[wt 0.6]
+
+
+[se ad170]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+
+[fowardEffectStop bit_talk_41]
+
+[charaDepth A 5]
+[charaDepth B 4]
+
+[charaFace A 6]
+[charaFace B 2]
+[charaFadein A 0.1 200,-50]
+[charaFadein B 0.1 -200,-50]
+
+[charaMove A 150,-50 0.2]
+[charaMove B -150,-50 0.2]
+[wt 0.6]
+
+[se ad7]
+[charaMove A 300,-50 0.2]
+[charaMove B -300,-50 0.2]
+[charaFadeout A 0.2]
+[charaFadeout B 0.2]
+[wt 0.3]
+
+[pictureFrame cut063_cinema]
+
+[se adm15]
+[effect bit_talk_x_slash02]
+[wt 0.2]
+[se adm15]
+[effect bit_talk_x_slash01]
+[wt 0.4]
+[se ad32]
+[effect bit_talk_14 150,100]
+[wt 0.2]
+[se ad32]
+[effect bit_talk_14 -100,-100]
+[wt 0.6]
+
+[wipeOff]
+
+
+
+
+
+
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+[wt 0.3]
+[charaFace A 6]
+[charaMove A 0,-40 0.1]
+[charaMoveScale A 1.1 0.1]
+[se ad7]
+
+[wipeout circleIn 0.3 1.0]
+[wait wipe]
+
+[charaScale A 1.0]
+[charaPut Q 1200,1200]
+[charaEffectDestroy Q]
+[charaFadeout A 0.1]
+
+
+[scene 10000]
+[wt 0.2]
+
+[wipein circleIn 0.1 1.0]
+[wait wipe]
+
+
+[se bac137]
+[charaPut R 1]
+[fowardEffect bit_talk_x_slash03]
+[wt 0.7]
+
+[fowardEffect bit_talk_blood_splash]
+[se ad464]
+[wt 1.6]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 92500]
+
+[charaSet B 1098129300 1 弗兰]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-50]
+[wt 0.5]
+
+[wipeFilter cinema 0.5 0]
+
+[charaPut Q 1]
+[charaEffect Q bit_talk_mind_poll_02]
+[fadein black 0.6]
+[wait fade]
+
+[charaTalk on]
+＠弗兰
+唔……啊……啊啊……
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaMove B 0,-100 0.4]
+[charaFadeout B 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.4]
+
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+＠莫德雷德
+啊……啊啊……啊啊啊啊啊啊啊啊啊啊啊啊啊啊！[r]我……我，竟然……呜！
+[k]
+
+[charaFace A 7]
+＠莫德雷德
+可恶……！[r]我亲手……将弗兰……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[effect bit_talk_mind_poll_03]
+[se ad888]
+[wt 2.0]
+[seStop ad888 1.0]
+[wt 1.0]
+
+
+[messageOff]
+[fadeout white 2.0]
+[bgmStop BGM_EVENT_122 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end white]

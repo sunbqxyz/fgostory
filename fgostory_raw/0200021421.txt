@@ -1,0 +1,509 @@
+
+
+＄02-00-02-14-2-1
+[soundStopAll]
+[charaSet A 98114200 1 巨英雄]
+[charaSet B 99502600 1 玛修]
+[charaSet C 4025000 1 哥伦布]
+[charaSet D 1026001 1 迪昂]
+[charaSet E 4004001 1 阿斯托尔福]
+[charaSet F 98113900 1 弗格斯]
+[charaSet G 98114600 1 反抗者]
+[charaSet H 98115300 1 福尔摩斯]
+
+[bgm BGM_EVENT_5 0.1]
+[scene 43200]
+[fadein black 1.5]
+[wait fade]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠巨英雄
+[line 4]。
+[k]
+
+[messageOff]
+[charaShake A 0.1 5 0 0.7]
+[charaMove A 0,-50 0.7]
+[wt 0.7]
+[se ad238]
+[se ad35]
+[charaFadeout A 0.4]
+[wt 0.7]
+[seStop ad238 1.0]
+[wt 0.7]
+[charaTalk B]
+[charaFace B 2]
+[charaEffect B bit_talk_10_LowLevel]
+[charaFadein B 0.1 1]
+＠玛修
+成……成功了！[r][#巨英雄:Megalos]行动停止！
+[k]
+
+[charaPut B 0,-10000]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠哥伦布
+该死的……！
+[k]
+
+？1：结束了，哥伦布！
+？！
+
+[charaFace C 12]
+＠哥伦布
+哈哈，哈哈哈……还没，还没完。[r][#我不会放弃]。怎么能放弃。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠迪昂
+真是个死不罢休的男人。除了爬行以外[r]什么都做不了的你，又能做[line 2]
+[k]
+
+[charaFace D 2]
+＠迪昂
+……不，那是！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[bgmStop BGM_EVENT_5 0.7]
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+[charaPut A 0,0]
+[charaEffect A bit_talk_tamatebako]
+[se bas2]
+＠哥伦布
+哈哈哈，哈～哈哈哈～！[r]私房钱万岁！
+[k]
+
+[charaFadeout C 0.1]
+[charaPut A 0,-10000]
+[charaSet A 98114200 1 巨英雄]
+[wt 0.1]
+[bgm BGM_EVENT_24 0.1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠阿斯托尔福
+他手中的是[line 2][#玉匣啊]！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠弗格斯
+居然还偷偷藏着一个吗！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠迪昂
+呜……得赶快阻止他！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+[charaPut A 0,0]
+[charaEffect A bit_talk_tamatebako]
+＠哥伦布
+来不及啦！　好啦，让你吃个便当吧，[r][#巨英雄:Megalos]！
+[k]
+
+＠哥伦布
+这可是比肉干和酒要高级得多的食物！[r]吃下这些[#魔力:食物][line 2]赶快给我爬起来！
+[k]
+
+[charaFadeout C 0.1]
+[charaSet A 98114200 1 巨英雄]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠玛修
+糟了！　我方精疲力竭的现在，[r]如果[#巨英雄:Megalos]复活……！
+[k]
+
+[bgmStop BGM_EVENT_24 0.7]
+[messageOff]
+[wt 0.4]
+[charaPut B 0,-10000]
+[charaFadeout B 0.1]
+[wt 0.1]
+[se bac19]
+[effect bit_talk_37]
+[wt 0.7]
+[effect bit_talk_13]
+[shake 0.01 0 5 0.3]
+[se ad170]
+[seVolume ad170 0 0.7]
+[se ad171]
+[seVolume ad171 0 0.4]
+[wt 0.7]
+[se ad209]
+[seVolume ad209 0 0.6]
+[wt 1.5]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[bgm BGM_EVENT_5 0.1]
+＠哥伦布
+…………啊？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠阿斯托尔福
+玉匣……被飞来的箭矢射中……[r]摔在远处？　
+[k]
+
+？1：是……是谁？
+？2：功勋卓越的一箭！　立大功了！
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[charaShake G 0.1 5 0 0.7]
+＠反抗者
+……我压根没想到会射中。
+[k]
+
+＠反抗者
+只要不放弃，做自己力所能及的事……[r]确实能找到办法。
+[k]
+
+[bgmStop BGM_EVENT_5 0.7]
+＠反抗者
+啊啊。确实，永不言弃确实很重要。[r]船长[line 2]这是你说的话哦。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+[bgm BGM_EVENT_24 0.1]
+＠哥伦布
+你……这……[messageShake 0.01 5 5 0.7]廉价到根本不值钱的无能奴隶！[r]价值比用作紧急粮食的老鼠都不如的你这家伙[line 3]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠弗格斯
+你这叫自己抽自己耳光。[r]你的价值连那些都不如！
+[k]
+
+[charaPut A 0,0]
+[charaEffect A bit_talk_41]
+[charaFace F 2]
+＠弗格斯
+[line 2]得手了！
+[k]
+
+[messageOff]
+[charaMove F -20,0 0.1]
+[se ad73]
+[charaFadeout F 0.1]
+[charaPut A 0,-10000]
+[charaEffectStop A bit_talk_41]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+[se ad161]
+[charaEffect C bit_talk_13]
+[fowardEffect bit_talk_35]
+[charaShake C 0.01 5 5 0.7]
+[wt 1.5]
+[charaFadeout C 0.4]
+[se ad144]
+[wt 0.7]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠玛修
+致命伤……！　但是弗格斯先生！[r]请不要大意！
+[k]
+
+[charaPut B 0,-10000]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠弗格斯
+嗯，我知道！[r]接下来还有魔神柱[line 2]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[charaEffect C bit_talk_06]
+＠哥伦布
+该死……畜生……神啊……！
+[k]
+
+＠哥伦布
+请原谅我，你赐予我的幸运，[r]被我白白浪费了……！
+[k]
+
+＠哥伦布
+啊啊，但是，我，[#不会放弃]。
+[k]
+
+[charaFace C 11]
+＠哥伦布
+下次被召唤的时候，[r]该寻找什么样的赚钱方法……寻找什么样的宝岛呢。
+[k]
+
+[charaFace C 7]
+＠哥伦布
+真期待。啊啊，太期待了……[r]哈哈，哈哈哈～……！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 1.5]
+[charaEffectStop C bit_talk_06]
+[charaSpecialEffect C flashErasure 0 1.7]
+[se ad52]
+[wait charaSpecialEffect C]
+[wt 1.0]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[bgm BGM_EVENT_5 0.1]
+＠弗格斯
+…………！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+＠玛修
+……呜！？
+[k]
+
+[charaPut B 0,-10000]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠阿斯托尔福
+居然就这么消失了……？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[charaSpecialEffect A flashErasure 0 1.7]
+[se ad52]
+[wait charaSpecialEffect A]
+[wt 0.7]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠迪昂
+[#巨英雄:Megalos]也是！　灵基已经被完全破坏了！[r]但是，也就是说……！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaPut B 0,0]
+[charaFadein H 0.1 1]
+[bgmStop BGM_EVENT_5 0.7]
+＠福尔摩斯
+唔。到故事的尾声了吗？　是尾声吧。[r]那我可以说了吧。
+[k]
+
+[bgm BGM_EVENT_1 0.1]
+＠福尔摩斯
+不，准确地说，由于证据搜集过于顺利，[r]以至于我总觉得自己根本没有插嘴的余地。
+[k]
+
+？1：福尔摩斯先生……你想说什么？
+？！
+
+[charaFace H 5]
+＠福尔摩斯
+当然，我很清楚这事根本用不着我来说。[r]但毕竟我就是这么个性格，抱歉啦。
+[k]
+
+[charaFace H 0]
+＠福尔摩斯
+好了……额头冒出冷汗的Miss基列莱特。
+[k]
+
+＠福尔摩斯
+能将现在剩下的『谜题』[r]用具体的语言表述出来吗？
+[k]
+
+＠福尔摩斯
+一切都会从你说的话开始，并结束于此。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠玛修
+……我们来此的根本目的，[r][#断章指定:Remnant Order]的核心，
+[k]
+
+＠玛修
+[#也就是魔神柱至今仍未被发现]。[r]然而反应确定还在这[#地底世界:雅戈泰]。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+＠福尔摩斯
+嗯。说实话我也觉得有点扫兴。[r]这证据过于单纯，过于明显了。
+[k]
+
+＠福尔摩斯
+但毕竟当着我的粉丝Miss基列莱特的面。[r]出于服务精神，我就说一下那句台词吧[line 2]
+[k]
+
+＠福尔摩斯
+"[#Once you eliminate the impossible, whatever remains,:除去不可能的，剩下的][r]  [#no matter how improbable, must be the truth.:即使再不可能，那也是真相。]"
+[k]
+
+＠福尔摩斯
+这里提到的“不可能的”，[r]是指魔神柱在迄今为止退场的登场人物中。
+[k]
+
+＠福尔摩斯
+因为我们打倒了他们，魔神柱反应却依然存在。[r]可以肯定此前的疑犯都是清白的。
+[k]
+
+＠福尔摩斯
+而从迦勒底到来的登场人物也可以被排除。[r]毕竟要实现这个条件所需的时间太长了。
+[k]
+
+＠福尔摩斯
+来自迦勒底，并在这[#地底世界:雅戈泰]见到的存在，[r]应该是为了担负某种职责，才被强制召唤到这里来的吧。
+[k]
+
+＠福尔摩斯
+就像为了让故事的书页向前翻动而准备的小道具般的配角，[r]绝不是什么主要角色。
+[k]
+
+＠福尔摩斯
+那么……刚才我说的“剩下的”，
+[k]
+
+＠福尔摩斯
+是指和迦勒底完全没有关系，[r]出自[#地底世界:雅戈泰]的唯一幸存从者，是谁呢？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_1 0.4]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[charaPut G 0,0]
+[charaEffect H bit_talk_marblebg]
+[charaFadeout H 0.1]
+[charaPut B 0,-10000]
+[charaTalk off]
+[wt 0.7]
+[charaSet A 98111500 1 达·芬奇]
+[charaSet C 5030001 1 山鲁佐德]
+[charaSet G 5030001 1 山鲁佐德2]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+[seLoop ad231]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.7]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[wt 0.7]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[wt 0.7]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+[wt 0.7]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-90]
+[wt 0.7]
+[charaPut B 0,-10000]
+[charaFadeout A 0.1]
+[seStop ad231]
+[wt 1.0]
+
+
+[charaTalk off]
+[charaDepth C 0]
+[charaDepth G 1]
+[charaFace G 0]
+[charaFadein G 1.0 1]
+[wt 1.0]
+[charaFace C 1]
+[charaFadein C 0 1]
+[wt 0.1]
+[charaFadeout G 0.7]
+＠山鲁佐德
+[#故事，就此完成]。[r][#十分感谢][line 2]
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[charaEffectStop H bit_talk_marblebg]
+[soundStopAll]
+[end]

@@ -1,0 +1,803 @@
+
+
+＄91-10-30-02-2-0
+
+
+[soundStopAll]
+
+[charaSet A 1030001 1 铃鹿御前]
+[charaSet B 98001000 1 玛修]
+[charaSet C 98003004 1 Dr.罗曼]
+[charaSet D 5003000 1 玉藻前]
+[charaSet E 98111500 1 通讯用特效]
+[charaSet F 2005001 1 阿塔兰忒]
+
+[charaPut E 1200,1200]
+[charaEffect E bit_talk_10]
+
+[scene 20805]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaDepth D 2]
+[charaDepth A 1]
+
+[charaTalk off]
+
+[charaFace D 5]
+[charaFace A 12]
+[charaFadein D 0.1 -256,0]
+[charaFadein A 0.1 256,0]
+[wt 0.1]
+
+[effect bit_talk_x_slash02]
+[se ad7]
+[charaMove D -150,0 0.2]
+[charaMove A 150,0 0.2]
+[wt 0.3]
+[effect bit_talk_14]
+[se ad471]
+[wt 0.2]
+
+[charaMove D -356,0 0.2]
+[charaMove A 356,0 0.2]
+[wt 0.1]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFace A 12]
+[charaFadein A 0.4 -100,0]
+[se ad671]
+[seStop ad671 0.5]
+[charaMove A 56,0 0.2]
+[wt 0.2]
+[charaMove A 156,0 0.3]
+[wt 0.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFace D 2]
+[charaFadein D 0.4 100,0]
+[se ad671]
+[seStop ad671 0.5]
+[charaMove D -56,0 0.2]
+[wt 0.2]
+[charaMove D -156,0 0.3]
+[wt 0.5]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠铃鹿御前
+唔呜呜呜，那是什么技能，[r]怎么能让性能提升那么多！？
+[k]
+
+＠铃鹿御前
+那不是比你的宝具还强吧！？[r]感觉似曾相识啊[line 4]！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠玉藻前
+呜唔唔唔，倒是你的技能[r]既强大又毫无破绽呢！？
+[k]
+
+＠玉藻前
+话说一时冲动挑起了争端，[r]心中意外地涌起了千般仇怨，
+[k]
+
+＠玉藻前
+封印的本性要被释放出来了吗！[r]领教一下近2年都没有戏份的痛苦吧！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[effect bit_talk_throwing]
+[se bac17]
+[wt 0.4]
+[effect bit_talk_29 0,-100]
+[se ad267]
+[seStop ad267 1.2]
+[wt 0.1]
+[shake 0.02 3 3 0.3]
+[wt 0.5]
+
+[effect bit_talk_x_slash01]
+[wt 0.1]
+[se ad32]
+[shake 0.02 3 3 0.2]
+[wt 0.1]
+[effect bit_talk_x_slash02]
+[wt 0.1]
+[se ad32]
+[shake 0.02 3 3 0.2]
+[wt 0.2]
+[seStop ad32 0.2]
+[effect bit_talk_x_slash03]
+[se ad471]
+[wt 0.1]
+[shake 0.02 3 3 0.3]
+[flashin once 0.2 0.2 FFFFFFFF FFFFFF00]
+[wt 0.3]
+[seStop ad471 1.0]
+[wt 0.6]
+
+？1：真是的，莫名其妙！
+？2：FOX！　冷静下来！
+
+？！
+
+[charaPut E 0,0]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-151]
+
+＠Dr.罗曼
+回窝，你们俩快回窝！[r]照这样下去篝火会变成森林火灾的！
+[k]
+
+＠Dr.罗曼
+同为日本系从者，[r]就不能融洽相处吗！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠铃鹿御前
+医生你给我闭嘴。[r]我可以确定与这家伙势不两立！
+[k]
+
+[charaFace A 9]
+
+＠铃鹿御前
+灵魂会出现如此强烈的抗拒反应，[r]足以令人怀疑我和这家伙是不是在别的世界有什么恩怨……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠玉藻前
+那明明是我的台词。[r]我们就像水和油，黑鸢和油炸豆腐一样势不两立。
+[k]
+
+＠玉藻前
+在一方认输之前，[r]我们是绝不可能一起踏上人理修复之旅的。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+
+＠铃鹿御前
+这点我倒是深有同感。[r]但不管怎样，胜利的总会是我。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠玉藻前
+哦，竟不知天高地厚地想要继续比试。
+[k]
+
+＠玉藻前
+那好吧。就让我逐一消灭[r]你身上那些我看不惯的要素吧。
+[k]
+
+＠玉藻前
+首先是那对耳朵。[r]你可瞒不过狐历超850年的我这双眼睛。
+[k]
+
+[bgmStop BGM_EVENT_3 0.7]
+
+＠玉藻前
+那是[line 3][r][#假耳朵:假发]吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠铃鹿御前
+！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠玉藻前
+JK形态暂且不提，[bgm BGM_EVENT_7 0.1][r]那对耳朵绝对是后天装上去的。
+[k]
+
+＠玉藻前
+只有天然的兽耳才配得上御主。[r]既然被我识破了，就赶快摘掉吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠铃鹿御前
+哈？　后天装上去的也没关系吧。[r]反正很可爱啊。
+[k]
+
+[charaFace A 17]
+
+＠铃鹿御前
+再说了迦勒底那群人里[r]动物系？　数量并不少吧～。
+[k]
+
+＠铃鹿御前
+但其中耳朵最可爱的，还是我。
+[k]
+
+＠铃鹿御前
+因为他们多半是由于外部因素被事后强行附加的。[r]并不是他们的本意吧。
+[k]
+
+[charaFace A 16]
+
+＠铃鹿御前
+而我，则是为了『可爱』而用变化加上去的。[r]觉悟是不一样的啦，不一样。
+[k]
+
+[charaFace A 14]
+
+＠铃鹿御前
+况且兽耳又不是你的专利吧？
+[k]
+
+＠铃鹿御前
+倒不如说自以为地说出这种话的你[r]脸皮真厚。心眼太小了吧！
+[k]
+
+＠铃鹿御前
+就是因为这样，[r]你才会被自己的分身们嫌弃啦～！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠玉藻前
+呜[messageShake 0.05 4 4 0.2]啊[line 2]，[r]不要再提TAMAMO NINE了！
+[k]
+
+＠玉藻前
+可恶，多么厚颜无耻！[r]你这就知道泡卡拉ok的英灵，到底想怎么样啦！
+[k]
+
+[charaFace D 4]
+
+＠玉藻前
+不过御主应该能理解吧？
+[k]
+
+[charaFace D 2]
+[charaMoveScale D 1.05 0.2]
+[charaMove D 0,5 0.2]
+[se ad27]
+
+＠玉藻前
+她的耳朵是伪造的坏耳朵。[r]我的耳朵才是真正的好耳朵！
+[k]
+
+[charaMoveScale D 1.1 0.2]
+[charaMove D 0,10 0.2]
+[se ad27]
+[effect bit_talk_41]
+
+＠玉藻前
+请明确告诉我！[r]要是抚摸的话[line 3]选哪个！？
+[k]
+
+？1：铃鹿御前。
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[effectDestroy bit_talk_41]
+[charaScale D 1.0]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠铃鹿御前
+啊哈，御主果然是懂行的～！[r]稍后我会专门让你抚摸哦！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠玉藻前
+啊！[r]打击强烈到让人都想躲进岩户里了！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？2：玉藻前。
+
+[effectDestroy bit_talk_41]
+[charaMoveReturn D 0,15 0.3]
+
+[charaFace D 3]
+
+＠玉藻前
+那当然啦！[r]我开心得耳朵都竖起来了！
+[k]
+
+＠玉藻前
+不愧是御主，是看得出区别的专家！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaScale D 1.0]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠铃鹿御前
+慢[messageShake 0.05 4 4 0.5]着御主！　这太离谱了吧！？[r]难道你不懂兽耳＋JK的美好吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[charaPut E 0,0]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-151]
+＠Dr.罗曼
+完全是一场毫无意义的争论……[r]看来不加个第三者是没法收场了……
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+
+
+[se ad60]
+[seVolume ad60 0 0.5]
+[seVolume ad95 0.5 1.0]
+[wt 0.5]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 20,0]
+[charaMove F 1 0.4]
+[wt 0.4]
+[seStop ad60 0.2]
+
+[charaFace F 1]
+
+＠阿塔兰忒
+原来你在这里啊，御主。[r]给，我把柴火捡回来了。
+[k]
+
+＠阿塔兰忒
+幸运的是这里生长着苹果，我摘了几个回来。[r]让我们边感谢大山的馈赠，边吃苹果吧。
+[k]
+
+[charaFace F 0]
+
+＠阿塔兰忒
+…………咦。[r]你们在忙吗？（咀嚼咀嚼。）[charaMoveReturn F 0,-4 0.3][se ade161][wt 0.3][charaMoveReturn F 0,-4 0.3]
+[k]
+
+[seStop ade161 0.2]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠玉藻前
+什[messageShake 0.05 4 4 0.2]喵！？　新的兽耳！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠铃鹿御前
+……但奇妙的是，和蠢狐狸比起来，[r]她倒是没让我感到火大呢。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠玉藻前
+……的确没有铃鹿小姐那样的JK配件感，[r]……也不是狐狸耳朵……[wt 0.7][charaFace D 2]唔唔，我明白了！
+[k]
+
+＠玉藻前
+作为充满智慧的Caster，[r]我领悟到必须把她拉拢到我这边来！
+[k]
+
+[charaFace D 1]
+
+＠玉藻前
+请问，这位美丽的山猫系的……[r]阿塔兰忒小姐？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠阿塔兰忒
+什么事？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠玉藻前
+事态紧急，请仔细听我说。[r]那边的冒牌狐狸竟然说，
+[k]
+
+＠玉藻前
+自己的耳朵才是[#根源:原型]，才是至尊。[r]其他耳朵都是劣质品，价值低下。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut E 0,0]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-151]
+
+＠Dr.罗曼
+不，人家没说到那种程度吧。[r]还有，我更喜欢阿塔兰忒的。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠铃鹿御前
+单[messageShake 0.05 4 4 0.2]身狗给我闭嘴！
+[k]
+
+[charaFace A 8]
+
+＠铃鹿御前
+不过蠢狐狸说得[#完全正确:bingo]。[r]我的耳朵最可爱不就是事实嘛？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠玉藻前
+呵，不打自招了吧，你这乌帽子。[r]不懂策略的Saber满脑子肌肉。这已经是常识了……
+[k]
+
+[charaFace D 2]
+
+＠玉藻前
+总之，[r]我们的利益是一致的，阿塔兰忒小姐！
+[k]
+
+＠玉藻前
+她是所有拥有兽耳之人的敌人！[r]为了正义，必须惩罚她才行！
+[k]
+
+＠玉藻前
+请将您的Quick之力借给我吧！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠阿塔兰忒
+不……说实话，就算说什么耳朵的价值，[r]我也不是拿这个当卖点的。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠玉藻前
+竟然……完全不了解自己的价值……[r]怪不得对手雷达没有任何反应……
+[k]
+
+[charaFace D 1]
+
+＠玉藻前
+那么那么，不如这样想象一下吧？
+[k]
+
+＠玉藻前
+假设你是贫困孩子们的抚养人。[r]在福利院养育着他们。
+[k]
+
+＠玉藻前
+来吧，想象，想象起来，进入脑内镜头……尽管没有什么钱，[r]但是每天都过得很幸福。从不消失的笑脸、温暖的牵绊……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠阿塔兰忒
+……嗯。不错……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠玉藻前
+但某一天孩子们突然说了一句惊人的话！[r]『妈妈是第二把交椅？　是替补？』
+[k]
+
+＠玉藻前
+『我还以为妈妈的耳朵是最软绵绵的呢～。』[r]『哇～，劣质耳朵呀。我还是觉得那个耳朵好～。』
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠阿塔兰忒
+什么……等一下。稍微等一下。孩子们……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠玉藻前
+这全都是那边那个冒牌JK干的好事！[r]她是企图从我们这里夺走兽耳优势的恶之化身！
+[k]
+
+[bgmStop BGM_EVENT_7 1.5]
+
+＠玉藻前
+来啊，是不是有干劲了！？[r]让我们一起去教训她吧！
+[k]
+
+＠玉藻前
+[#天然:正义]是属于我们的！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠阿塔兰忒
+可恶……竟想从我身边夺走孩子们。不可饶恕！[bgm BGM_EVENT_3 0.1]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut E 0,0]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-151]
+
+＠Dr.罗曼
+太……太容易被挑拨了吧！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠铃鹿御前
+唔～，想动手？　那我就来当你的对手吧！[r]就让我来告诉你们谁的耳朵才是优秀的兽耳！
+[k]
+
+＠铃鹿御前
+那些孩子们已经沉迷于我的耳朵了吧？[r]孩子的天真有时是冷酷无情的！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠阿塔兰忒
+怎……怎么会……无论痛苦还是悲伤时，[r]只要一碰我的耳朵就会露出笑容的太阳般温暖的孩子们……
+[k]
+
+[charaFace F 2]
+
+＠阿塔兰忒
+难道说他们没有……感受到我的爱吗……！[r]难道说那些日子都是幻像吗……！　啊啊啊啊……！
+[k]
+
+？1：本来就是幻像吧！？
+
+？2：大姐精神又不稳定了……！
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠铃鹿御前
+没……没想到她比我预想的还要认真……[r]我是不是有些对不起她……
+[k]
+
+＠铃鹿御前
+呃……阿塔兰忒？[r]孩子们最后一定会发现真理？
+[k]
+
+[charaFace A 13]
+
+＠铃鹿御前
+比方说『无论多么劣质的耳朵，我还是最喜欢[r]妈妈的耳朵！』之类的？　好了，快想象，想象一下！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠阿塔兰忒
+……孩子们！　竟然如此喜欢我……！[r]果然这份爱不是幻像……这就是感慨万千啊！
+[k]
+
+[charaFace F 2]
+
+＠阿塔兰忒
+好好看着，孩子们！[r]我要证明这对被你们喜爱的耳朵才是最棒的！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠铃鹿御前
+完[messageShake 0.05 4 4 0.2]蛋了，造成反效果了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠玉藻前
+咦，趋势有变？　那就在阿塔兰忒小姐[r]整理好心情之前趁势打一场吧！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠玛修
+前辈！　局面还没平息，[r]战斗似乎就要开始了！　请小心！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

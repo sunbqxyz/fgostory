@@ -1,0 +1,197 @@
+＄91-70-07-02-1-0
+[charaSet A 7007001 1 弗拉德三世]
+[charaSet B 99502600 1 玛修]
+[charaSet C 98021100 1 女性]
+[charaSet D 98006200 1 魔物]
+
+
+[bgm BGM_EVENT_5 0.1]
+[scene 10902]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠弗拉德三世
+唔，又是伦敦啊。[r]那个恶魔已经被消灭了[line 2]这次是其他的？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[se ad13]
+[charaTalk B]
+[charaFace B 0]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+
+＠玛修
+这倒是还不清楚。[r]只不过，可以确定的是在伦敦确实出现了反应。
+[k]
+
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠弗拉德三世
+……好吧。哪怕是渺小的存在，[r]也应该尽快去除，让余的传说坚如磐石。
+[k]
+
+＠弗拉德三世
+弗拉德之名被冠以恶魔之号。[r]然而，余非恶鬼，亦非吸血鬼。
+[k]
+
+＠弗拉德三世
+好吧，我们走，御主！
+[k]
+
+？1：加油！
+？！
+
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout A 0.1]
+[scene 10952]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[se ad21]
+[wt 2.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠弗拉德三世
+……哦。看来是找到了。[r]这次似乎并非恶魔，而是普通的亡灵。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 7]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+
+＠玛修
+对，但也不是无害的。[r]这伦敦似乎还在受到魔雾相当强烈的影响。
+[k]
+
+＠玛修
+就算原本只是普通的亡灵，[r]现在也成了能致人死地的恶灵了。
+[k]
+
+[bgmStop BGM_EVENT_5 0.7]
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+＠女性
+救……命……！
+[k]
+
+？1：快救人！
+？！
+
+[bgm BGM_EVENT_3 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+
+＠弗拉德三世
+嗯，余明白。[r]那就像当时那样[line 2]『[#血染的王鬼:Kazikli Bey]』！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[messageOff]
+[se ad397]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaShake D 0.01 5 5 0.7]
+[charaEffect D bit_talk_14]
+[flashin once 0.1 0.1 FF000080 FF000080]
+[wait flash]
+[flashin once 0.1 0.1 FF000080 FF000080]
+[wait flash]
+[flashin once 0.1 0.1 FF000080 FF000080]
+[wait flash]
+[seStop ad397 1.0]
+[wt 1.0]
+
+[se ad22]
+[charaShake D 0.01 5 5 0.7]
+[wt 1.5]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[wt 0.4]
+
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+
+＠女性
+什……什么……！？
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠弗拉德三世
+那边的女人。速速离去。
+[k]
+
+[charaFace A 5]
+＠弗拉德三世
+这乃是入侵汝等领域的[line 3][r]不该存在之[#概念:物]。
+[k]
+
+＠弗拉德三世
+一旦触碰就会死去。[r]若你还珍惜生命，就快走。
+[k]
+
+＠女性
+但……但是，但是，脚……动不了……！
+[k]
+
+[charaFace A 0]
+＠弗拉德三世
+[line 3]哦，那就没办法了。[r]御主边保护她边后退吧。
+[k]
+
+[charaFace A 5]
+＠弗拉德三世
+余来蹂躏这只亡灵。[r]余之桩本就是刑罚之证。
+[k]
+
+[charaFace A 2]
+＠弗拉德三世
+死后依然企图危害民众乃是极端无礼之举。[r]速速粉碎吧，亡灵。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

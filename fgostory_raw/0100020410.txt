@@ -1,0 +1,154 @@
+＄01-00-02-04-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 20900 0]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98003003 1 罗曼医生]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 1005001 1 尼禄]
+[charaSet E 98016000 1 罗马士兵]
+[charaSet F 98006200 1 烟状杂兵敌人]
+[fadein black 1]
+[wait fade]
+[se ad13]
+[wait se ad13]
+[communicationChara 98003003 1 5 0 0]
+＠罗曼医生
+早上好，皇帝陛下。[r]其实我有一个很重要的请求。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaFace D 1]
+[charaFadein D 0.1 0]
+＠尼禄
+嗯，但说无妨。[r]余可是很宽容的哦？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠罗曼医生
+为了让我们能在这个时代安定地活动，[r]我们想去一趟埃特纳火山。
+[k]
+
+[communicationCharaFace 5]
+＠罗曼医生
+那座火山上，[r]存在着对我们而言十分重要的灵脉。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+＠尼禄
+埃特纳啊。宫廷魔术师也常去那里。[r]唔，为何要去？
+[k]
+
+？1：我们必须设置终端点。
+
+？2：为了确保战斗力。
+
+？！
+
+＠尼禄
+原来如此。[r]虽说不是很明白，不过余还是准许诸公的请求吧。
+[k]
+
+[charaFace D 1]
+＠尼禄
+诸公的埃特纳之行也同样是为了余，[r]为了余的罗马吧？
+[k]
+
+[charaFace A 13]
+＠玛修
+是，陛下。[r]这是当然的。
+[k]
+
+[charaFace D 0]
+＠尼禄
+明白了。[r]余还要调查联合帝国，故无法同行[line 2]
+[k]
+
+＠尼禄
+诸公还请自便。[r]路上若遇到联军的士兵，切勿大意哦。
+[k]
+
+[charaFace A 1]
+＠玛修
+非常感谢。
+[k]
+
+[fadeout black 0.5]
+[messageOff]
+[wait fade]
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.5]
+[scene 20700 0]
+[charaFadein C 0 2]
+[communicationCharaLoop 98003003 0 5 0 0]
+[fadein black 0.5]
+[wait fade]
+＠芙芙
+芙，芙呜！
+[k]
+
+[communicationCharaFace 3]
+＠罗曼医生
+……没想到能这么轻松就抵达。[r]对联军而言，这一带不是重要地区吗？
+[k]
+
+[charaFadeout C 0.1]
+[charaFace A 7]
+[charaFadein A 0.1 2]
+＠玛修
+不，医生。[r]似乎已经有什么东西聚集在灵脉上了！
+[k]
+
+[bgmStop BGM_EVENT_2 0.4]
+[bgm BGM_EVENT_3 0.1]
+[charaFace A 2]
+＠玛修
+那是[line 2]
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFadeout A 0.1]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.5]
+[charaFadeout F 0.1]
+[charaTalk B]
+[charaFace A 7]
+[charaFadein A 0.1 2]
+[communicationCharaLoop 98003003 0 5 0 0]
+＠罗曼医生
+死灵系的怪物！？[r]如果它们是自然产生的，那这灵脉可真不得了啊！
+[k]
+
+？1：消灭它们！
+
+？2：夺取灵脉！
+
+？！
+
+[charaFace A 2]
+＠玛修
+明白了，御主！[r]开始战斗！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[communicationCharaClear]
+[wait communicationChara]
+[wait fade]
+[soundStopAll]
+[end]

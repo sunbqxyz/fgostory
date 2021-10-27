@@ -1,0 +1,283 @@
+
+＄94-01-56-51-1-0
+
+
+
+[soundStopAll]
+
+
+
+[messageOff]
+
+
+[branch _PlayEffect_1st PM4 1]
+
+
+[label _PlayEffect_etc]
+
+[tapSkip _from_TapSkip_etc]
+
+[scene 10001]
+
+[effectPause bit_talk_goal2_4]
+[wait effectStart bit_talk_goal2_4]
+
+[fadein white 0.5]
+[wait fade]
+
+[effectStart bit_talk_goal2_4]
+[wait effect bit_talk_goal2_4]
+
+[label _from_TapSkip_etc]
+
+[effectDestroy bit_talk_goal2_4]
+[fadein black 0]
+[wait fade]
+
+[branch _PlayEffect_End]
+
+
+[label _PlayEffect_1st]
+
+[bgm BGM_EVENT_3 0.1]
+
+[tapSkip _from_TapSkip_1st]
+
+[effectPause bit_talk_winner2_4]
+[wait effectStart bit_talk_winner2_4]
+
+[scene 10001]
+
+[fadein white 0.5]
+[wait fade]
+
+[effectStart bit_talk_winner2_4]
+
+[bgmStop BGM_EVENT_3 3.7]
+
+[wt 3.9]
+[se ad251]
+[seVolume ad251 0 0.7]
+
+[wt 0.6]
+
+[voice 402600_0_M800]
+
+[scene 10000]
+
+[wait effect bit_talk_winner2_4]
+[wt 1.4]
+
+[label _from_TapSkip_1st]
+
+[voiceStop]
+[scene 10000]
+[effectDestroy bit_talk_winner2_4]
+[fadein black 0]
+[wait fade]
+
+
+[label _PlayEffect_End]
+
+[branch _PlayVoice_Start PM4 1]
+
+[branch _PlayVoice_End]
+
+
+
+
+[label _PlayVoice_Start]
+
+[charaSet A 1098117200 1 海伦娜]
+[charaSet B 5025001 1 爱迪生]
+[charaSet C 2011001 1 尼古拉·特斯拉]
+
+[bgm BGM_EVENT_64 0.1]
+
+[scene 45201 1.0]
+[wt 1.0]
+
+[flagRandom _PlayVoiceNo 1 3]
+
+
+[branch _PlayVoice_3rd _PlayVoiceNo 3]
+[branch _PlayVoice_2nd _PlayVoiceNo 2]
+[branch _PlayVoice_1st _PlayVoiceNo 1]
+
+
+
+[label _PlayVoice_1st]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFace C 0]
+[charaFadein B 0.4 2]
+[charaFadein C 0.4 0]
+[wt 0.7]
+
+
+＠爱迪生
+[tVoice ChrVoice_9010002 0_M700]
+凭借吾等三人的力量，能做到这样很正常，[wait tVoice]
+[k]
+[tVoice ChrVoice_9010002 0_M701]
+但挖洞比赛第一名这个荣誉始终令人高兴不起来！[twt 3.6][charaFace B 2][twt 0.7][charaShake B 0.05 4 0 0.7][wait tVoice]
+[k]
+
+[charaFace C 1]
+[charaShake C 0.05 0 4 0.4]
+＠尼古拉·特斯拉
+[tVoice ChrVoice_9010002 0_M702]
+哼哼……鼹鼠……鼹鼠狮……[wait tVoice]
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠海伦娜
+[tVoice ChrVoice_9010002 0_M703]
+喂，别调侃人家了啦。[wait tVoice]
+[k]
+[tVoice ChrVoice_9010002 0_M704]
+[charaFace A 0]
+而且挖洞比赛第一名也是很棒的哦？[wait tVoice]
+[k]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_2nd]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.7]
+
+＠海伦娜
+[tVoice ChrVoice_9010002 0_M710]
+哎？　也就是说我们挖得最快吗？[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.1 2]
+[charaFadein C 0.1 0]
+＠尼古拉·特斯拉
+[tVoice ChrVoice_9010002 0_M711]
+什么……下意识动了真格，结果是这样啊……[wait tVoice]
+[k]
+
+＠爱迪生
+[tVoice ChrVoice_9010002 0_M712]
+这就是直流真正力量的冰山一角啊……[wait tVoice]
+[k]
+[tVoice ChrVoice_9010002 0_M713]
+[charaFace B 1]
+何等美妙……这就是所谓的美妙吧……？[wait tVoice]
+[k]
+
+[charaFace C 2]
+[charaShake C 0.05 4 0 0.7]
+＠尼古拉·特斯拉
+[tVoice ChrVoice_9010002 0_M714]
+哈啊～？[charaFace B 5][wait tVoice]
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠海伦娜
+[tVoice ChrVoice_9010002 0_M715]
+好啦好啦不要老是那么火药味十足的。[twt 3.4][charaFace A 1][r]一起为之高兴吧！　太棒了！[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk off]
+[charaFace B 5]
+[charaFace C 5]
+[charaFadein B 0.1 2]
+[charaFadein C 0.1 0]
+
+[wt 0.8]
+[charaTalk on]
+[charaTalk C]
+[charaFace B 0]
+[charaFace C 0]
+＠尼古拉·特斯拉
+[tVoice ChrVoice_9010002 0_M716]
+唔，嗯。成功了！[wait tVoice]
+[k]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_3rd]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠海伦娜
+[tVoice ChrVoice_9010002 0_M720]
+有些累了呢！　[twt 2.4][charaFace A 1][r]毕竟挖了很久，去休息吧！[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.1 2]
+[charaFadein C 0.1 0]
+＠爱迪生
+[tVoice ChrVoice_9010002 0_M721]
+我表示赞成……[twt 2.2][charaFace B 1][charaShake B 0.05 4 0 0.7]呼噜。[wait tVoice]
+[k]
+
+＠尼古拉·特斯拉
+[tVoice ChrVoice_9010002 0_M722]
+天才也是需要休息的……[twt 3.8][charaFace C 4][charaShake C 0.05 4 0 0.7]呼噜。[wait tVoice]
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠海伦娜
+[tVoice ChrVoice_9010002 0_M723]
+哎呀，两个人都站着睡着了。[wait tVoice]
+[k]
+[tVoice ChrVoice_9010002 0_M724]
+[charaFace A 1]
+呵呵，明明那么高大，却都像是孩子呢。[wait tVoice]
+[k]
+
+
+
+[label _PlayVoice_End]
+
+
+[messageOff]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_64 0.4]
+[wait fade]
+[soundStopAll]
+[end]

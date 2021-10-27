@@ -1,0 +1,622 @@
+
+
+
+＄03-00-06-14-1-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 1098191200 1 阿黛勒]
+[charaSet B 1098191300 1 马卡里俄斯]
+[charaSet C 1017001 1 武藏]
+[charaSet D 8001410 1 玛修]
+[charaSet E 98002000 1 芙芙]
+[charaSet F 1098128200 1 凯妮斯]
+[charaSet G 9005001 1 福尔摩斯]
+[charaSet H 1098182400 1 狄俄斯库里·卡斯托耳]
+[charaSet I 1098182500 1 狄俄斯库里·波鲁克斯]
+
+
+[charaSet S 5009000 1 特效用dummy]
+[charaSet T 5009000 1 特效用dummy]
+
+
+[scene 92501]
+
+[se ade123]
+[seVolume ade123 0 0]
+[seVolume ade123 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[se ad68]
+[wt 2.0]
+[seStop ade123 1.0]
+
+[se ad542]
+[shake 0.03 3 2 1.2]
+[effect bit_talk_celebro]
+[wt 0.2]
+[se ad226]
+[seVolume ad226 0 0.4]
+[seStop ad226 2.5]
+[wt 3.0]
+
+[bgm BGM_EVENT_116 0.1]
+
+
+
+＠马卡里俄斯
+斯廷法洛斯，着陆成功。
+[k]
+
+[effectStop bit_talk_celebro]
+
+＠马卡里俄斯
+……[%1]，感觉如何？[r]还能行动吗。
+[k]
+
+？1：没事，不用担心。
+
+？！
+
+[se ad674]
+
+＠玛修
+前辈的生命体征很稳定。[r]这[line 3]
+[k]
+
+＠阿黛勒
+看来体内还有治愈术式的遗留效果。[r]这算是某种持续性效果吗……
+[k]
+
+＠阿黛勒
+如果泛人类史的人类加入同盟，[r]肯定会面临极高的危险。
+[k]
+
+＠阿黛勒
+布拉瓦茨基小姐就是在预测到[r]这个情况的前提下……
+[k]
+
+＠福尔摩斯
+原来如此。[r]真是感激不尽。
+[k]
+
+＠福尔摩斯
+但不知道效果能持续多久。[r]还是应该避免长时间强迫性活动才行。
+[k]
+
+＠玛修
+是的！
+[k]
+
+＠马卡里俄斯
+……我知道了。[r]现在好像还能动吧。
+[k]
+
+＠马卡里俄斯
+所有人先从斯廷法洛斯里下来。[r]等我将它缩小收纳后，我们就返回吧！
+[k]
+
+
+[messageOff]
+[se ade4]
+[seVolume ade4 0 0.7]
+[wt 0.7]
+[seStop ade4 0.1]
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+[se ad223]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠武藏
+知道啦。[r]看我潇洒地落地～♪
+[k]
+
+[charaFace C 0]
+＠武藏
+玛修，你没事吧？　你的武器冷却了吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠玛修
+嗯，没有问题。[r]炮身已顺利地冷却完毕了。
+[k]
+
+＠玛修
+前辈，我们也下去吧。
+[k]
+
+＠玛修
+请容我失礼，我来抱您……[r]嘿咻。
+[k]
+
+[messageOff]
+[se ad158]
+[seVolume ad158 0 0.4]
+[seStop ad158 0.5]
+[se ade4]
+[seVolume ade4 0 0.3]
+[wt 0.2]
+[seStop ade4 0.4]
+[wt 0.8]
+[se ad709]
+[seVolume ad709 0 0.4]
+[shake 0.05 3 3 0.3]
+[se ad208]
+[se ad881]
+[seVolume ad881 0 0.3]
+[wt 1.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+＠玛修
+……落地成功。[r]辛苦了，前辈。[charaFace D 13]
+[k]
+
+？1：谢谢你，玛修。
+
+[charaFace D 1]
+＠玛修
+您客气了！
+[k]
+
+？2：战斗辛苦了！
+
+[charaFace D 1]
+＠玛修
+感谢关心。[r]这次的任务也顺利完成了！
+[k]
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠芙芙
+芙，芙！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[wt 0.2]
+[se ad54]
+[wt 0.1]
+[se ad223]
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+＠凯妮斯
+唔……
+[k]
+
+[charaFace F 8]
+
+＠凯妮斯
+什么嘛，那个巨大的红色铠甲消失了吗。[r]看上去是个值得[#砸坏:干一架]的对手呢。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+＠福尔摩斯
+哈哈哈，还请高抬贵手。[r]神灵凯妮斯。
+[k]
+
+＠福尔摩斯
+他无疑是我们的战力之一，是破神作战必要的一环。[r]被你破坏掉可就麻烦了。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠马卡里俄斯
+由于魔力消耗剧烈，[r]因此巨熊号只能临时展开。
+[k]
+
+＠马卡里俄斯
+那终究只是宝具的虚拟展开。[r]难以实现始终显现。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠阿黛勒
+这是金时先生和布拉瓦茨基小姐说的。[r]我们也不是很清楚……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠芙芙
+芙芙！　芙呜！　芙[line 2]呜！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠玛修
+芙芙看到巨熊号异常兴奋呢。[r]是不是喜欢那种巨大的东西呢。
+[k]
+
+
+[selectionUse masterMale]
+？1：那个超帅的！
+
+[flag _Sel 1]
+
+？2：玛修觉得巨熊号如何？
+
+[flag _Sel 3]
+
+？！
+
+[selectionUse masterFemale]
+？1：男孩子肯定很喜欢。
+
+[flag _Sel 2]
+
+？2：玛修觉得巨熊号如何？
+
+[flag _Sel 3]
+
+？！
+
+[branch _Sel01m _Sel 1]
+[branch _Sel01f _Sel 2]
+[branch _Sel02 _Sel 3]
+
+[label _Sel01m]
+
+[charaFace D 6]
+＠玛修
+是……这样吗……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[branch _branchEnd]
+
+[label _Sel01f]
+
+[charaFace D 1]
+＠玛修
+原来是这样啊！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[branch _branchEnd]
+
+[label _Sel02]
+
+[charaFace D 13]
+＠玛修
+嗯。[r]我也很喜欢。
+[k]
+
+＠玛修
+以红色为基调的配色非常鲜艳，[r]怎么说呢，就像是布偶呢。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠芙芙
+芙呜呜呜……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[branch _branchEnd]
+
+[label _branchEnd]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠福尔摩斯
+好了，待会再继续畅谈吧。[r]我们得尽快回去才行。
+[k]
+
+＠福尔摩斯
+虽说大部分市民都去避难了，[r]但士兵和自动战斗机械并不会停止活动。
+[k]
+
+＠福尔摩斯
+我们的魔力都在对神战斗中见底了。[r]所以很有必要进行休息和休养。
+[k]
+
+＠福尔摩斯
+然后进行下一个作战目标[line 3]
+[k]
+
+[bgmStop BGM_EVENT_116 1.0]
+[wt 0.4]
+[charaTalk H]
+
+＠H：男人的声音
+[line 6]你以为还会有下一次吗。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 5]
+[charaFace F 10]
+[charaFadein C 0.1 0]
+[charaFadein F 0.1 2]
+＠剑士与战士
+！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth I 4]
+[charaDepth H 3]
+
+[se ad681]
+[wt 0.1]
+[charaPut I 120,0]
+[charaPut H -120,0]
+[charaFace I 0]
+[charaSpecialEffect I appearance 1 0.2]
+[charaFace H 0]
+[charaSpecialEffect H appearance 1 0.2]
+[wt 0.7]
+
+[fowardEffect bit_talk_gram_slash_03]
+[se ad171]
+[cueSe Battle bac263]
+[wt 0.4]
+
+[charaFadeout I 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[wt 0.2]
+[fowardEffect bit_talk_14]
+[se ad32]
+
+[charaScale F 1.2]
+[charaTalk on]
+[charaTalk F]
+[charaFace F 21]
+[charaFadein F 0.1 0,8]
+[se ad671]
+[charaMoveScale F 1.0 0.3]
+[charaMove F 0,0 0.3]
+[charaShake F 0.03 3 2 0.4]
+[wt 0.7]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaFace F 2]
+＠凯妮斯
+[#混账双胞胎:狄俄斯库里]！
+[k]
+
+？1：狄俄斯库里！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠玛修
+双神狄俄斯库里！[r]基尔什塔利亚先生的从者……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？2：福尔摩斯，刚才那下没事吧！？
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠福尔摩斯
+嗯，没问题。[r]但只要再偏2英寸，我的脑袋就要被剜穿了。
+[k]
+
+[charaFace G 10]
+＠福尔摩斯
+若非神灵凯妮斯的枪，我已经死了。[r]……我必须表示感谢才行呢。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠芙芙
+芙芙，芙呜！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+？！
+
+
+[charaTalk H]
+[charaFace I 5]
+[charaFace H 2]
+[charaFadein I 0.1 120,0]
+[charaFadein H 0.1 -120,0]
+＠狄俄斯库里·卡斯托耳
+真够乐观的！[r]迦勒底！
+[k]
+
+[charaFace I 2]
+＠狄俄斯库里·波鲁克斯
+就地杀了你们！[r]迦勒底！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠武藏
+不不不，稍微看看场合好吗？
+[k]
+
+＠武藏
+与刚结束对机神作战，[r]早已疲惫不堪的我们战斗，
+[k]
+
+＠武藏
+可是会有损你们的名誉[line 3]
+[k]
+
+[messageOff]
+[wt 0.4]
+
+[charaFace C 12]
+[wt 0.3]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaDepth S 2]
+[charaDepth T 1]
+
+[cueSe Battle bac529]
+[charaEffect S bit_talk_v_slash01 0,0 H]
+[wt 0.15]
+[cueSe Battle bac526]
+[charaEffect T bit_talk_h_slash01 0,0]
+[wt 0.15]
+[charaEffectDestroy S bit_talk_v_slash01]
+[wt 0.3]
+
+[charaTalk off]
+[charaFace I 5]
+[charaFace H 5]
+[charaFadein I 0.1 120,0]
+[charaFadein H 0.1 -120,0]
+[wt 0.2]
+
+[charaEffect S bit_talk_14 128,56]
+[charaShake H 0.03 3 2 0.3]
+[se ad32]
+[wt 0.2]
+[charaEffect T bit_talk_14 -96,-28]
+[charaShake I 0.03 3 2 0.3]
+[se ad32]
+[wt 1.5]
+
+[charaTalk on]
+[charaFace I 2]
+＠狄俄斯库里·波鲁克斯
+可笑！　吾之剑技乃是光！
+[k]
+
+[charaFace H 2]
+＠狄俄斯库里·卡斯托耳
+徒劳！　人类的偷袭怎能伤及我等！
+[k]
+
+＠狄俄斯库里·卡斯托耳
+两架机神，不，从亚特兰蒂斯算起已经是四架了！[r]如果是军神阿瑞斯，或许会称赞你们杀得好，
+[k]
+
+[charaFace H 5]
+＠狄俄斯库里·卡斯托耳
+但是！　我不一样！[r]破神！　何其荒谬！
+[k]
+
+＠狄俄斯库里·卡斯托耳
+你们不过是依靠神力弑神罢了！[r]竟敢僭越地使用克利洛诺弥亚[line 3]
+[k]
+
+[charaFace I 5]
+＠狄俄斯库里·波鲁克斯
+人类啊，有本事就朝我们释放黑色光芒吧。
+[k]
+
+＠狄俄斯库里·卡斯托耳
+吾等是光。乃是于风暴过后闪耀的存在！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMoveScale H 1.05 0.2]
+[charaMove I 120,6 0.2]
+[charaMoveScale I 1.05 0.2]
+[charaMove H -120,6 0.2]
+[se ad54]
+[seVolume ad54 0 0.5]
+[se ad132]
+[seStop ad132 0.5]
+[wt 0.4]
+
+[charaFace I 2]
+[charaFace H 2]
+＠狄俄斯库里
+[f large]在此剿灭！
+[k]
+
+＠狄俄斯库里
+[f large]破神同盟！
+[k]
+
+[messageOff]
+
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

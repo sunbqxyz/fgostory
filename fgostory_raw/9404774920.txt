@@ -1,0 +1,473 @@
+
+
+
+＄94-04-77-49-2-0
+
+[soundStopAll]
+
+
+
+[charaSet A 98001000 1 玛修]
+[charaSet B 9001001 1 贞德]
+[charaSet C 1098192800 1 玛丽]
+[charaSet D 1098192900 1 阿马德乌斯]
+[charaSet E 2031001 1 拿破仑]
+[charaSet F 1026001 1 迪昂]
+[charaSet G 5025001 1 爱迪生]
+[imageSet H cut171_token_206 1]
+[imageSet I cut173_jinrou06 1]
+[charaSet T 98115000 1 特效用dummy]
+
+[scene 49600]
+
+[pictureFrame cut170_gameframe_dark]
+
+
+[fadein black 1.5]
+[wait fade]
+
+[pictureFrame]
+[pictureFrameTop cut170_gameframe_dark]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 0,-50]
+＠迪昂
+呜……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+＠阿马德乌斯
+哎呀呀，好险啊。
+[k]
+
+[charaFace D 1]
+＠阿马德乌斯
+多谢你救了我，[r][%1]♪
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠玛修
+我们只是遵守了游戏规则。[r]刚才都是阿马德乌斯先生的错。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+＠爱迪生
+嗯。无论是从人道角度，还是作为绅士，[r]阿马德乌斯的行为都不值得褒奖。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0,-50]
+＠拿破仑
+嗯。如果换作我，一定也会动手吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+＠阿马德乌斯
+呜哇，没人站我这边？[r]快帮我，玛丽亚！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+＠玛丽
+呵呵。这种时候撒娇可没用哦，阿马德乌斯。[r]你偶尔也该接受一些[#残酷:痛苦]的惩罚♡
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-50]
+＠贞德
+迪昂暂时由我监管。[r]其他玩家请继续发言[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.2]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 0,-50]
+＠迪昂
+不，不必了！[r]受到如此屈辱，我怎么可以继续苟活！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[se ade277]
+
+＠
+骑士迪昂：第4天的发言[bgm BGM_EVENT_70 0.1]
+[k]
+
+[messageOff]
+[wt 0.2]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 0,-50]
+＠迪昂
+各位！　我会就此退场，[r]作为补偿，请就此终止今天的决议。
+[k]
+
+＠迪昂
+在卫宫他们回来之前，[r]今后的决议也请暂停。
+[k]
+
+[bgmStop BGM_EVENT_70 1.5]
+
+＠迪昂
+这是为了不造成过更多牺牲者。[r]也是为了吊死『狼人』。
+[k]
+
+[messageOff]
+
+[charaTalk depthOff]
+[charaDepth T 2]
+[charaDepth H 3]
+[charaDepth F 1]
+[wt 0.2]
+
+[se ade432]
+
+[charaEffect F bit_talk_token_change01]
+[wt 1.0]
+
+
+＠迪昂
+这是未能尽责的骑士最后唯一的愿望……！
+[k]
+
+[messageOff]
+[charaEffectStop F bit_talk_token_change01]
+[charaPut T 0,-10]
+[charaEffect T bit_talk_token_change02]
+[se ad39]
+[wt 3.2]
+
+[se ad29]
+[seStop ad29 1.5]
+[wt 0.5]
+[charaFadeout F 0.4]
+
+[charaEffectStop T bit_talk_token_change02]
+[charaTalk H]
+[charaFadein H 0.4 0,-210]
+[wt 2.0]
+
+[charaEffectDestroy T bit_talk_token_change02]
+[charaFadeout H 0.1]
+[wt 0.1]
+[seStop ade432 0.5]
+
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-50]
+＠贞德
+……高洁的骑士凭借自己的剑与尊严[bgm BGM_EVENT_70 0.1][r]从公馆的规则中获得了解放。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 0,-50]
+
+＠玛修
+怎么会……迪昂先生……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠爱迪生
+公馆的规则允许自我了断吗？[r]还是说这又是[#隐藏招数:神秘]的一种？
+[k]
+
+[charaFace G 4]
+
+＠爱迪生
+不对，就算这个事例再怎么有意思，[r]现在最重要的还是先为[#骑士:迪昂]祈祷吧。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-50]
+
+＠贞德
+骑士迪昂是『村民』。[r]他的代币暂时由我保管。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.5 0.5]
+[charaFadein I 0.4 0,-200]
+[wt 2.6]
+[wait touch]
+
+[charaFadeout I 0.4]
+[bgm BGM_EVENT_70 0.5 1.0]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-50]
+＠贞德
+至于决议[line 3]
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgm BGM_EVENT_70 0.5 0.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[fadein black 0.5]
+[bgm BGM_EVENT_70 0.5 1.0]
+[wait fade]
+
+[se ade277]
+
+＠
+玛丽·安托瓦内特：第4天的发言
+[k]
+
+[messageOff]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+＠玛丽
+已经够了吧？[r]毕竟这是可怜迪昂的愿望。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 0,-50]
+＠爱迪生
+嗯……[r]只好这样了……
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgm BGM_EVENT_70 0.5 0.5]
+[wait fade]
+
+[charaFadeout G 0.1]
+[wt 0.5]
+
+[fadein black 0.5]
+[bgm BGM_EVENT_70 0.5 1.0]
+[wait fade]
+
+[se ade277]
+
+＠
+拿破仑·波拿巴：第4天的发言
+[k]
+
+[messageOff]
+[wt 0.2]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+＠拿破仑
+喂喂，等等。[r]终止决议虽然无妨[line 3]
+[k]
+
+＠拿破仑
+可在此期间，『狼人』会老实吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-50]
+＠贞德
+不知道。在这座公馆内一切都是不确定的、[r]就算设立新规则应该也没用吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-50]
+＠拿破仑
+那么现在只能选一个吊死了吧。[r]我们已经没有其他办法了哦。
+[k]
+
+[charaFace E 0]
+＠拿破仑
+[%1]与跟班算一个。
+[k]
+
+＠拿破仑
+已经可以确定这三个在一起算『占卜师』了吧？
+[k]
+
+＠拿破仑
+爱迪生也确定是『村民』了。[r]还剩下三个。我，以及[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 0,-50]
+＠阿马德乌斯
+我和玛丽亚。所以我们三个中有『狼人』。[r]范围缩小了呢！　太令人兴奋了！
+[k]
+
+＠阿马德乌斯
+好吧，我知道。你们觉得我很可疑吧？[r]过错都在我，一切都是我的错！
+[k]
+
+[charaFace D 0]
+＠阿马德乌斯
+来吧。我不会逃避。
+[k]
+
+＠阿马德乌斯
+[%1]，[r]今晚来占卜我吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.5]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-50]
+＠拿破仑
+别糊弄过去！[r]现在不是说晚上的事，而是现在的决议该怎么办！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 0,-50]
+＠阿马德乌斯
+哎哟哎哟？　皇帝陛下着急了？[r]会如此着急，难道做了什么亏心事吗～？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-50]
+＠拿破仑
+你[messageShake 0.05 4 4 0.3][bgm BGM_EVENT_3 0.1]这饶舌的混蛋！
+[k]
+
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 19]
+[charaFadein D 0.1 0,-50]
+＠阿马德乌斯
+救[messageShake 0.05 3 3 0.3]～我～♪
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 0,-50]
+＠玛修
+……虽说很希望他能适可而止！
+[k]
+
+？1：但作为一个人！　还是要阻止他们！
+
+？2：我甚至想帮忙一起揍他一顿！
+
+？！
+
+[charaFace A 7]
+＠玛修
+是！　必须要阻止他们！
+[k]
+
+
+[messageOff]
+[maskout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[soundStopAll]
+[end]
+
+
+

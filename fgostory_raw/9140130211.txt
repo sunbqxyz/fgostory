@@ -1,0 +1,270 @@
+
+＄91-40-13-02-1-1
+
+[soundStopAll]
+
+[charaSet A 4013001 1 梅芙]
+[charaSet B 98001000 1 玛修]
+[charaSet C 6021001 1 酒吞童子]
+[charaSet D 7022001 1 茨木童子]
+[charaSet E 6011001 1 荆轲]
+[charaSet F 4002001 1 伊斯坎达尔]
+
+
+[scene 27000]
+
+[bgm BGM_EVENT_3 0.1]
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_whip02]
+[se bac104]
+[wt 0.4]
+[se bac104]
+[wt 0.6]
+
+[shake 0.05 1 4 1.0]
+[se ad211]
+[effect bit_talk_impactlanding]
+[wt 3.0]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠伊斯坎达尔
+唔唔，这可不好。[r]好像喝过头了。
+[k]
+
+
+＠伊斯坎达尔
+居然能让余神志不清，可怕的是鬼之酒呢，[r]还是凯尔特的甜酒呢……
+[k]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+[messageOff]
+[charaShake F 0.05 3 3 0.3]
+[wt 0.3]
+[charaMove F 0,-50 0.4]
+[charaFadeout F 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠茨木童子
+吾也是。团子吃得太多了，肚子好难受。[r]不不，人类是用另一个胃装的，尽管吾还能轻松吃下百来个人……
+[k]
+
+[messageOff]
+[charaShake D 0.05 3 3 0.3]
+[wt 0.3]
+[charaMove D 0,-50 0.4]
+[charaFadeout D 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠荆轲
+zzz…………
+[k]
+
+[messageOff]
+[charaShake E 0.05 3 3 0.3]
+[wt 0.3]
+[charaMove E 0,-50 0.4]
+[charaFadeout E 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+
+＠玛修
+总之赏花者们都倒下了。[r]剩下的只有[line 3]哎呀？
+[k]
+
+？1：情况似乎有些奇妙。
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace A 1]
+[charaFadein A 0.1 2]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+
+[bgmStop BGM_EVENT_2 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_7 0.1]
+[wt 0.3]
+
+[wt 0.5]
+[charaTalk on]
+
+[charaTalk A]
+
+
+＠梅芙
+哎？　如果有中意的男人，就把对方的骨头物理意义上抽出来？[r]那是什么，超有意思！
+[k]
+
+＠梅芙
+虽说我无法模仿，而且这样做会让战士废掉，[r]我并不想做，但这也是宠爱男人的一种方法吧？
+[k]
+
+[charaFace C 1]
+＠酒吞童子
+你还真是个有鬼之风格的像鬼的存在呢。[r]妖精之血？　哦，原来如此……
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+＠玛修
+在战斗过程中，不知发生了什么样的心境变化，[r]两个人开始愉快地聊起来了……
+[k]
+
+？1：多么可怕的女性聊天啊。
+？2：感觉她俩……也有相似的部分吧？
+？！
+
+[charaFace B 0]
+＠玛修
+嗯。两位看上去似乎相互理解了，
+[k]
+
+＠玛修
+但又维持着随时可能继续厮杀的氛围。
+[k]
+
+＠玛修
+或许是因为……两人度量都很大的缘故吧……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+
+＠酒吞童子
+话说，你打算拿妾身的酒做什么？
+[k]
+
+[charaFace A 12]
+＠梅芙
+咦？　我没说过吗？[r]我打算[line 3]
+[k]
+
+[messageOff]
+[charaTalk off]
+
+
+[charaMove A 128,0 0.5]
+[wt 1.5]
+[charaMoveReturn C -256,-10 0.3]
+[wt 1.0]
+[charaMove A 2 0.5]
+[wt 1.5]
+
+[charaTalk on]
+
+[charaTalk C]
+＠酒吞童子
+……哦。妾身也有点兴趣。[r]而且平时总是用酒招待人，很久没有被人用酒招待了。
+[k]
+
+[charaFace C 1]
+＠酒吞童子
+唔，既然如此，那好吧。
+[k]
+
+＠酒吞童子
+妾身会分一些自己的酒气给你，拿去吧。[r]只不过[line 3]
+[k]
+
+[charaTalk A]
+[charaFace A 14]
+
+
+＠梅芙
+好啦好啦，我知道。等完成之后，对吧。[r]你就好好期待吧。
+[k]
+
+[messageOff]
+
+
+
+[bgmStop BGM_EVENT_7 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 1.0]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+……好像，总之目的算是达成了吧？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠梅芙
+呵呵，这就是女王的人德啦。
+[k]
+
+＠梅芙
+征收对象必然会喜极而泣地将我造访的日子[r]定为第二生日，并一生为之庆祝哦。
+[k]
+
+[charaFace A 14]
+＠梅芙
+好了，顺利获得第一种材料『魔力亲和性高的酒』。[r]这简直就是她的魔力本身，所以质量更为上乘了。
+[k]
+
+[charaFace A 6]
+＠梅芙
+来吧，我们去征收下一种材料吧！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

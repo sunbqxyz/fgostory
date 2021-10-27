@@ -1,0 +1,323 @@
+
+
+
+＄94-04-78-15-1-0
+
+
+[soundStopAll]
+
+[charaSet A 3043000 1 绘里濑]
+[charaSet B 98001000 1 玛修]
+[charaSet C 25005000 1 旅行者]
+[charaSet D 1098192800 1 玛丽]
+[charaSet E 5025001 1 爱迪生]
+[charaSet F 2016000 1 卫宫·Alter]
+[charaSet H 5009000 1 特效用dummy]
+[charaSet I 5009000 1 特效用dummy]
+[charaSet J 5009000 1 特效用dummy]
+
+[scene 20730]
+
+[pictureFrame cut170_gameframe_bright]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[se ad216]
+[fadeout white 0.5]
+[wait fade]
+
+[pictureFrame]
+[wt 0.1]
+
+[fadein white 1.0]
+[seStop ad216 1.0]
+[wait fade]
+[wt 0.4]
+
+[fowardEffect bit_talk_gamefinish]
+[se ade445]
+[wt 5.3]
+
+[fadeout white 0.4]
+[wait fade]
+
+[scene 10001]
+[pictureFrame]
+[wt 1.0]
+
+
+[fadein white 1.5]
+[scene 96300 1.5]
+[wait fade]
+
+[wt 1.0]
+[charaPut H -250,400]
+[charaPut I 0,400]
+[charaPut J 250,400]
+
+[charaEffect H bit_talk_token_change02]
+[charaEffect I bit_talk_token_change02]
+[charaEffect J bit_talk_token_change02]
+
+[charaMove H -250,0 2.0]
+[charaMove I 0,0 2.0]
+[charaMove J 250,0 2.0]
+[se adm19]
+[seVolume adm19 0 0.3]
+[seVolume adm19 1.0 1.0]
+[wt 2.0]
+
+[wt 1.5]
+[seStop adm19 1.0]
+[wt 2.5]
+[charaEffectDestroy H bit_talk_token_change02]
+[charaEffectDestroy I bit_talk_token_change02]
+[charaEffectDestroy J bit_talk_token_change02]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠玛修
+变成代币的各位都落下来了。[r]落到了身为胜利者的前辈手里[line 3]
+[k]
+
+[charaFace B 0]
+＠玛修
+战斗结束后，[r]一度消失的各位好像也都在。
+[k]
+
+？1：这对从者来说很常见。
+
+？2：这或许也是游戏规则的一部分。
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 19]
+[charaFadein A 0.1 1]
+
+＠绘里濑
+……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[se ade430]
+[seVolume ade430 0 0.1]
+[seVolume ade430 2.0 0.4]
+
+[wt 2.2]
+[seStop ade430 1.0]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠绘里濑
+这次是你们赢了。但胜负还未定。[bgm BGM_EVENT_90 0.1][r]还有下一个游戏在等着你们。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛修
+[#有轨电车:tram]靠近了。[r]看来是时候前往下一座城市了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth A 2]
+
+[charaTalk C]
+[charaFace A 0]
+[charaFadein A 0.1 0]
+[charaFace C 1]
+[charaFadein C 0.1 2]
+
+＠旅行者
+绘里濑，我们终于可以一起了。
+[k]
+
+[charaFace A 18]
+
+＠绘里濑
+别……别随便向我搭话！
+[k]
+
+[charaFace C 4]
+
+＠旅行者
+绘里濑……
+[k]
+
+[charaFace A 20]
+
+＠绘里濑
+现在……你并不在我身边。
+[k]
+
+[charaFace A 0]
+
+＠绘里濑
+但是，我一定把你夺回来。
+[k]
+
+[charaFace A 4]
+
+＠绘里濑
+在那之前，我不能与你亲近……
+[k]
+
+[charaFace C 11]
+
+＠旅行者
+不要。[r]我[line 3]
+[k]
+
+＠旅行者
+绘里濑。你，是我的朋友。[r]我想和你在一起。
+[k]
+
+[charaFace C 5]
+
+＠旅行者
+我就是为此，才会来这里。
+[k]
+
+＠旅行者
+和大家一起[line 3]
+[k]
+
+[charaFace A 13]
+
+＠绘里濑
+就算你这么说[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠玛丽
+你们俩感情真好呢。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠绘里濑
+玛丽王后……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠玛丽
+我身边以前也有这么一个人。[r]是我无可取代，现在却已经不在了的人。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠爱迪生
+我对您那变成了『狼人』的青梅竹马的事表示遗憾。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠卫宫·Alter
+为了保护心爱的人[line 3]而死吧。
+[k]
+
+＠卫宫·Alter
+……[r]……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠玛丽
+那个人的事已经过去了。[r]我回忆起的是其他人。
+[k]
+
+＠玛丽
+没错，恰好是个像旅行者的孩子[line 3]
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠绘里濑
+……呜……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[se ade430]
+[seVolume ade430 0 0.1]
+[seVolume ade430 1.0 0.9]
+[wt 2.0]
+[seStop ade430 0.5]
+
+
+＠绘里濑
+[line 3]该走了。下一个游戏要开始了。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_90 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

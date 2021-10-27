@@ -1,0 +1,285 @@
+
+＄94-00-95-04-1-0
+
+
+
+[charaSet A 1017001 1 武藏]
+[charaSet B 98075000 1 助六]
+[charaSet C 6018001 1 Ｘ]
+[charaSet D 6018001 1 特效用dummy]
+
+[soundStopAll]
+[bgm BGM_EVENT_7 0.1]
+
+[scene 20303]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 0,-20]
+[wt 0.7]
+
+[charaMove B -32,-20 0.1]
+[wait charaMove B]
+[charaMove B 32,-20 0.1]
+[wait charaMove B]
+[charaMove B -32,-20 0.1]
+[wait charaMove B]
+[charaMove B 32,-20 0.1]
+[wait charaMove B]
+＠助六
+什么？[r]这里应该是最后的门才对啊……
+[k]
+
+[charaMove B 32,0 0.1]
+[wait charaMove B]
+[charaMove B 32,-20 0.1]
+[wait charaMove B]
+＠助六
+居然成了奇怪的原野？[r]而且除此以外，那座稀奇古怪的铁塔是……
+[k]
+
+？1：那火箭是……！
+？2：小心！　会被偷袭的！
+
+？！
+
+[messageOff]
+
+[bgmStop BGM_EVENT_7 0.4]
+[wt 0.7]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaDepth A 1]
+[charaFadein A 0.1 1]
+＠武藏
+[FFFFFF]！[-]　妖气！
+[k]
+
+[se bac1]
+[charaDepth D 9]
+[charaPut D 1]
+[charaEffect D bit_talk_38l]
+[se bac23]
+[wt 0.2]
+
+[charaMove A -64,0 0.1]
+[se ad82]
+[seStop ad82 1.0]
+[wait charaMove A]
+[charaMove A 64,0 0.1]
+[se ad82]
+[seStop ad82 1.0]
+[wait charaMove A]
+
+[wt 0.1]
+[charaPut D 1024,1024]
+[charaEffectStop D bit_talk_38l]
+[charaFadeout D 0.1]
+
+[wt 0.7]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 -1024,128]
+[se bac1]
+[charaMove C 1 0.2]
+[wait charaMove C]
+＠Ｘ
+哼，果然是新的Saber！[r]又犹如雨后春笋般无谓地增加了！
+[k]
+
+＠Ｘ
+而且这算什么嘛，刚才我就一直在偷偷监视，[r]你咔嚓咔嚓咔嚓咔嚓地，用帅气的动作挥砍！
+[k]
+
+＠Ｘ
+身为真正的Saber，手持的爱剑理应只有一把！[r]二刀流乃是邪道极致，你太恬不知耻了！
+[k]
+
+？1：就是说嘛。二刀流一点都不像Saber呢。
+
+[charaFace C 1]
+＠Ｘ
+说得没错。[r][%1]果然是个懂行的御主，你好！
+[k]
+
+[charaFace C 1]
+＠Ｘ
+请收下，这是新年的特产。[r]是行星群玉车站前派发的萩饼。
+[k]
+
+[charaFace C 5]
+＠Ｘ
+这个先不论，我都听到了哦，新来的！[r]二刀流已经算是践踏我最后堡垒的行为了！
+[k]
+
+[charaFace C 5]
+＠Ｘ
+由离子链构成的我的忍耐已经彻底碎裂！
+[k]
+
+？2：武藏亲，那是忍者哦。
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠武藏
+哎？　怎么可能嘛，[r]这世上怎么可能有那么招摇的忍者嘛。
+[k]
+
+[charaFace A 0]
+＠武藏
+而且她的剑术看来相当了得。[r]而且流派似乎也从未见过。应该是位极为卓越的剑士。
+[k]
+
+[charaFace A 1]
+[charaMove A 0,20 0.1]
+[wait charaMove A]
+[charaMove A 0,0 0.1]
+[wait charaMove A]
+＠武藏
+嗯。那姑娘似乎非常有意思。该怎么说呢，[r]我或许还是第一次遇到如此“想砍！”的对手！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+＠Ｘ
+哎……话说……你面带笑容说这种话，[r]就像是告白一样，真让人不好意思……
+[k]
+
+[charaFace C 0]
+＠Ｘ
+……糟了……我从这个Saber身上感受到了[r]和那个和服杀人魔相同的气息！
+[k]
+
+？！
+
+[charaFace C 2]
+＠Ｘ
+算了，不管怎么说，这次我是抱着必胜的心情发动攻击的！[r]我是宇宙的Saber，女主角X！
+[k]
+
+＠Ｘ
+为了遏制不断增加的Saber而存在的[r]从者界[#平衡者:Balancer]！
+[k]
+
+＠Ｘ
+这次定要让你尝尝吾之Saber忍法技术有多精湛！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-20]
+
+[charaMove B 0,-10 0.1]
+[wait charaMove B]
+[charaMove B 0,-20 0.1]
+[wait charaMove B]
+＠助六
+什么[line 3]Saber忍法！？
+[k]
+
+？1：啊啊，你果然知道啊，来田！
+
+？！
+
+[charaTalk B]
+[charaMove B 0,-30 0.1]
+[wait charaMove B]
+[charaMove B 0,-20 0.1]
+[wait charaMove B]
+＠助六
+唔。传说一个因某些差错渡海而来的骑士之王[r]不小心进入了葛城山，并得某位行者教导的魔技……
+[k]
+
+＠助六
+虽说每个招数都有超卓越的性能，[r]但却受到一旦成为己方就不能使用的诅咒……
+[k]
+
+＠助六
+没想到居然会被实装……[r]啊，不对，是居然会实际存在……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠Ｘ
+哼，这次虽然没有无名红色和巴贝奇，[r]但这种卑鄙无耻的技能只有在我孤身一人的时候才能使用！
+[k]
+
+＠Ｘ
+觉悟吧，二刀流！[r]还有一定要小心，[%1]！
+[k]
+
+＠Ｘ
+别因为现在是春节就掉以轻心！[r]这次的我是真的要认真了，会很强哦！
+[k]
+
+
+[input selectBranch]
+
+
+[scene 20303]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 1017001 1 武藏]
+[charaSet B 98075000 1 助六]
+[charaSet C 6018001 1 Ｘ]
+[charaSet D 6018001 1 特效用dummy]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[messageOff]
+[maskin black 1]
+[wait mask]
+
+
+[label selectBranch]
+
+？1：好吧，你就以强大的状态来吧！
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+？2：抱歉，因为现在是春节，麻烦来个弱的。
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+？！
+

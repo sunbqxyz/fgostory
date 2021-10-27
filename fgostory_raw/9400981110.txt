@@ -1,0 +1,200 @@
+
+＄94-00-98-11-1-0
+
+[charaSet A 2006001 1 大卫]
+
+[soundStopAll]
+[bgm BGM_EVENT_5 1.0]
+[scene 10310]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 6]
+
+[fadein black 2]
+[wait fade]
+
+[wt 2.0]
+
+？1：我似乎……
+？2：感到了气息……
+
+？！
+
+
+＠？？？
+…………
+[k]
+
+？1：好像有人……
+？2：正在看着我……
+
+？！
+
+[charaFace A 4]
+
+＠？？？
+怎么会这样。[r]我倒是没有设想到这种情况。
+[k]
+
+＠？？？
+真是的，含蓄的性格也挺令人头疼呢。[r]没办法，还是由我来为[&他:她]解围吧。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_5 0.3]
+
+[se ad60]
+[charaFadeout A 0.4]
+[wt 1.0]
+[seStop ad60 0.3]
+
+[bgm BGM_EVENT_2 0.3]
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠大卫
+哟，[%1]。你好。[r]看到你那么精神，我就放心了。
+[k]
+
+[flag MALE false]
+[flag FEMALE false]
+
+[selectionUse masterMale]
+？1：你好。
+[flag MALE true]
+？2：今天天气不错。
+[flag MALE true]
+
+？！
+
+[selectionUse masterFemale]
+？1：你好。
+[flag FEMALE true]
+？2：今天天气不错。
+[flag FEMALE true]
+
+？！
+
+[charaFace A 0]
+＠大卫
+不用那么拘谨嘛，今天是个好日子。[r]既商业化又成体系。非常对我的胃口。
+[k]
+
+＠大卫
+是叫情人节吗？[r]发祥于地中海，在远东商品促销的推动下发展起来的活动。
+[k]
+
+＠大卫
+说得好听一点就是文化的融合。[r]出自南美的可可块制作的糖果也很有意思。
+[k]
+
+＠大卫
+地中海、远东、南美。[r]可以说融合了整个世界，真够贪婪，不对，真是美妙……
+[k]
+
+
+＠大卫
+哎？[wt 0.5][charaFace A 1][r]我承认情人节啊。很好。相当好。
+[k]
+
+＠大卫
+无论是用来表达平日的感谢之情，[r]还是用来告白隐藏的爱意……
+[k]
+
+＠大卫
+这是个传达心情的日子吧。[r]毫无冗余。是符合我兴趣的体系化存在。
+[k]
+
+[charaFace A 0]
+＠大卫
+说得更直接一些，我甚至觉得这种活动其实可以一周办一次，[r]但这个姑且不论，万事还是需要含蓄的。
+[k]
+
+＠大卫
+无论是做生意、契约，还是战斗或爱情。
+[k]
+
+[charaFace A 1]
+＠大卫
+综上所述，深思熟虑的我是不会忘记回礼的。[r]早上你给了我巧克力吧？　这是那个的回礼。
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[equipSet B 9805230 1]
+[wait equipSet B]
+[charaFace B 0]
+[charaFadein B 0.5 0,-70]
+[wt 2.0]
+[charaFadeout B 0.4]
+[wt 0.5]
+
+？1：非……非常感谢……大卫王……
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠大卫
+什么。居然感动到全身颤抖。[r]犹如脱离队伍的落单小羊羔。
+[k]
+
+？2：（哑口无言。）
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠大卫
+唔？　居然感动到连话都说不出来了。[r]你果然十分含蓄。唔～～～，这是美德。
+[k]
+
+？！
+
+＠大卫
+但你不用想得太夸张。[r]只要你随意一些，我也会轻松。
+[k]
+
+[branch _branchEnd MALE 1]
+[branch _isFemale FEMALE 1]
+
+[label _isFemale]
+
+＠大卫
+但话说回来，如果你无论如何都想做亚比煞，[r]我倒是完全不介意哦。
+[k]
+
+＠大卫
+现在就让我们去没人看见的房间吧。[r]哎，不要？　语气很爽朗但眼神一点笑意都没有？
+[k]
+
+
+
+
+＠大卫
+哈哈哈。讨厌啦。哈哈哈。[wt 0.3][charaFace A 1][se ad186][backEffect bit_talk_41 -23,168][r][line 3]当然啦，因为我可是认真的！
+[k]
+
+[label _branchEnd]
+
+
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]

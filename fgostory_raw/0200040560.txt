@@ -1,0 +1,172 @@
+
+
+＄02-00-04-05-6-0
+
+[soundStopAll]
+
+[charaSet A 1098121200 1 队长]
+[charaSet B 1098121200 1 士兵]
+
+[charaSet C 98006200 1 鬼魂]
+
+[charaSet D 6014001 1 玛塔·哈丽]
+[charaSet E 2003001 1 罗宾汉]
+
+[charaSet F 98115000 1 特效用]
+
+[charaSet G 1098120400 1 卡特]
+
+[bgm BGM_EVENT_3 0.1]
+
+
+[scene 49502]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad84]
+[wt 1.0]
+[se ad83]
+[wt 1.0]
+
+＠
+　　　　　　　  【马萨诸塞军　骑兵队】
+[k]
+
+＠队长
+让开！　村民们快把路让开！
+[k]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠罗宾汉
+……哎哟，援军居然在这种关头登场了？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠玛塔·哈丽
+卡特氏也在马上。[r]看来是他带来的。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠罗宾汉
+啊啊但是，面对如此难缠的敌人，[r]这样只会无谓增加牺牲者[line 3]唔？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[seLoop ad84]
+[seVolume ad84 0 0.1]
+[seVolume ad84 1.6 1.0]
+[wt 1.6]
+[seStop ad84 0.1]
+[se ad83]
+[wt 1.0]
+[seStop ad83 0.5]
+[wt 0.7]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.2 1]
+[charaMove A 0,-30 0.2]
+[wt 0.1]
+[se ad223]
+[charaMove A 1 0.3]
+[wt 0.3]
+
+＠队长
+瞄准！[line 3]准备齐射！
+[k]
+
+[messageOff]
+[se ad346]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠卡特
+装填银色子弹！[r]就是这种！　剩余的子弹还有很多！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠士兵
+就凭这种东西[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[se ade64]
+[wt 0.5]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[fowardEffect bit_shot_01]
+[charaShake C 0.05 3 3 0.5]
+[se bac16]
+[wt 0.5]
+
+[se ad22]
+[charaSpecialEffect C enemyErasure 1 1.0]
+[wt 2.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠队长
+噢噢……看来是起效了！[r]明白了，教授！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠士兵
+只要是能用枪击倒的对手就在我们常识的范畴内！[r]这群家伙的动作并不敏捷。能行！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

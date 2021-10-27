@@ -1,0 +1,514 @@
+
+＄94-04-19-04-3-0
+
+[soundStopAll]
+
+
+[charaSet A 2010001 1 比利闪光]
+[charaSet B 11009001 1 S伊什塔尔]
+[charaSet C 1098184900 1 S伊什塔尔_受伤]
+[charaSet J 5009000 1 特效用]
+
+
+[scene 10000]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[wt 0.5]
+
+[se ad563]
+[effect bit_talk_shot_02 150,0]
+[wt 0.1]
+[se ad563]
+[wt 0.1]
+[se ad563]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[wt 0.1]
+[se ad32]
+[fowardEffect bit_talk_14 150,0]
+[wt 0.1]
+[se ad32]
+[fowardEffect bit_talk_14 -170,-50]
+[wt 0.1]
+[se ad32]
+[fowardEffect bit_talk_14 50,150]
+
+[wt 0.2]
+
+[fadeout black 0.1]
+[wait fade]
+[scene 83300]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.7]
+[fadein black 0.5]
+[wait fade]
+
+＠A：？？？
+咻！　真行呢，赏金猎人！[r]居然能如此精彩地挡下我的剑闪！
+[k]
+
+＠A：？？？
+你的剑术究竟是向谁学的呢！[r]我好在意好在意，在意到无法集中注意力了呢！
+[k]
+
+[messageOff]
+[se ad563]
+[effect bit_talk_shot_02 150,0]
+[wt 0.1]
+[se ad563]
+[wt 0.1]
+[se ad563]
+[wt 0.1]
+[se ad32]
+[fowardEffect bit_talk_Slash_white_01 150,0]
+[effect bit_talk_13 200,0]
+[wt 0.2]
+[se ad32]
+[fowardEffect bit_talk_Slash_white_01_L 300,-50]
+[effect bit_talk_13 300,-50]
+[wt 0.1]
+[se ad32]
+[fowardEffect bit_talk_Slash_white_01 50,150]
+[effect bit_talk_13 50,150]
+
+[wt 0.3]
+
+[effectDestroy bit_talk_shot_02]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+什么剑闪啊，怎么看都是手枪吧！[r]你真的是六剑客之一吗！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠A：？？？
+当然啦。我可是受总统帅[r]亲自授予金Saber徽章的人！
+[k]
+
+＠A：？？？
+不过实际是在与她的决斗中输了，[r]说如果想保住小命就做她的部下啦。
+[k]
+
+＠A：？？？
+哎呀。即便是Archer，只要戴上了徽章，[r]也会变成Saber职阶，真是的[line 3]
+[k]
+
+[charaFace A 5]
+
+＠A：？？？
+我们的总统帅究竟有多荒唐啊。[r]说实话，我对这件事还一直怀恨在心。
+[k]
+
+
+＠A：？？？
+[line 3]所以啦。[r]能告诉我吗。
+[k]
+
+＠A：？？？
+你的剑术究竟是谁教的？[r]那剑术，和我们的总统帅一模一样呀。
+[k]
+
+＠A：？？？
+也就是说你的师父也是ZONGJU大人？[r]但那个人应该没有那么闲才对啊。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+我没有什么师父！
+[k]
+
+＠S伊什塔尔
+这是！　为了打倒你们！[r]自学练出来的剑术啦！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[se ad73]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth J 1]
+[charaDepth A 2]
+
+[wipeout leftToRight 0.2 1.0]
+[wait wipe]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0 1]
+[wipein rightToLeft 0.2 1.0]
+[wait wipe]
+
+[se adm15]
+[charaPut J 1]
+[charaEffect J bit_talk_Slash_red_01_L]
+[wt 0.1]
+[charaFace A 2]
+[charaMoveReturn A 40,0 0.3]
+
+＠A：？？？
+哎哟，好危险！
+[k]
+
+＠A：？？？
+这样啊，没有师父啊，[r]那么这剑术应该是身体的习惯吧！
+[k]
+
+[charaFace A 0]
+
+＠A：？？？
+嗯。既然搞明白了，那我也就不玩了。[r]趁[#觉醒之前]，让你在此消失吧。
+[k]
+
+＠A：？？？
+我是六剑客之一，[r]闪断剑比利闪光。
+[k]
+
+[charaFace A 1]
+
+＠比利闪光
+总之，直截了当点说，最大的优点就是速度快。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+[line 3]！？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[se ad606]
+[effect bit_talk_radiallight01]
+[wt 0.5]
+[fadeout white 0.5]
+[wait fade]
+[effectDestroy]
+[seStop ad606 0.2]
+[se ad563]
+[wt 0.1]
+[se ad563]
+[charaFadeout A 0.1]
+[wt 0.7]
+[charaTalk C]
+[charaFace C 0]
+[charaScale C 1.2]
+[charaFadein C 0.1 1]
+[charaShake C 0.08 6 2 0.4]
+[cueSe Servants_103200 bac512]
+[charaMoveScale C 1.0 0.3]
+[fadein black 0.1]
+[wait fade]
+
+[wt 0.2]
+[cueSeStop bac512 0.4]
+[wt 0.4]
+
+＠C：S伊什塔尔
+呜……！
+[k]
+
+[charaFace C 1]
+
+＠C：S伊什塔尔
+刚才那是什么，宝具！？　没有填充没有动作！？[r]这未免太快了吧！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠比利闪光
+哎哟。明明命中了，居然还活着呀？
+[k]
+
+＠比利闪光
+我的缺点也就是开枪速度虽快，[r]可威力一般般，这也是无可奈何的。
+[k]
+
+[charaFace A 5]
+
+＠比利闪光
+你果然不是普通的从者呢。[r]不只是心脏，得连脑袋都击穿才行吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：S伊什塔尔
+（间不容发地第2发宝具……！？[r]　速度差距太大，不开玩笑，这该如何……！）
+[k]
+
+
+[messageOff]
+
+[bgm BGM_EVENT_3 0.5 0.4]
+[se ad55]
+[seVolume ad55 0 0.0]
+[seVolume ad55 1.2 1.0]
+[wt 1.5]
+[seStop ad55 0.0]
+[se ad671]
+[seVolume ad671 0 0.8]
+[wt 0.3]
+
+？1：慢着[line 6]！
+
+？！
+
+[charaFace C 1]
+
+＠C：S伊什塔尔
+[%1]！？[r]我不是让你等着吗……！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.4 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠比利闪光
+哎呀。你就是那位御主吗？[r]啊哈哈，真的只是个龙套呢。
+[k]
+
+＠比利闪光
+感谢你主动送上门来。[r]你我无仇无怨，但我还是要射穿你的手脚哦。
+[k]
+
+＠比利闪光
+哎呀。尽管我觉得这样对来自其他宇宙的客人不好，[r]但这是总部可怕老大的命令。
+[k]
+
+＠比利闪光
+说是只要留活口，随便我怎么处理都行。[r]你就是为了阿斯塔蒂大人而存的『活祭』。
+[k]
+
+＠比利闪光
+那就这样吧。[r]有意见的话，等你苏醒后去对我们的总统帅说吧。
+[k]
+
+[messageOff]
+[se ad563]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[wt 0.2]
+[se ad563]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[wt 0.1]
+[charaFadeout A 0]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0 -64,0]
+[charaMove C 1 0.2]
+[wt 0.1]
+[se ad32]
+[fowardEffect bit_talk_14 150,0]
+[charaShake C 0.05 6 2 0.2]
+[wt 0.2]
+[se ad32]
+[fowardEffect bit_talk_14 -170,-50]
+[charaShake C 0.05 6 2 0.3]
+
+＠C：S伊什塔尔
+岂能让你得手……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠比利闪光
+咻。胸口开了个洞，居然还能动呀。[r]但这是无谓的努力哦。
+[k]
+
+＠比利闪光
+你是没有胜算的，[r]你救不了[&他:她]。
+[k]
+
+＠比利闪光
+同样，[&他:她]也无路可逃，[r][&他:她]也救不了你。
+[k]
+
+＠比利闪光
+用象棋来比喻的话，就是已经将军了。[r]如果你连这个都不明白，就随你的便吧。
+[k]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+？1：不。
+
+？！
+
+？1：这根本就不是什么绝境……！
+
+？！
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth C 2]
+[charaTalk off]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[wt 0.2]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[wt 1.0]
+
+[masterBranch lblBoy lblGirl]
+[label lblBoy]
+[charaEffect J bit_talk_CommandMantra_01 0,64]
+[se bas16]
+[wait charaEffect J]
+[branch lblConf]
+[label lblGirl]
+[charaEffect J bit_talk_CommandMantra_02 0,64]
+[se bas16]
+[wait charaEffect J]
+[label lblConf]
+
+[cueSe Battle bas3]
+[effect bit_talk_cure]
+[charaFadeout C 1.5]
+[wt 2.5]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠比利闪光
+！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+灵基瞬间全部恢复了……！？[r]刚才那就是传说中的『令咒』吗！？
+[k]
+
+[bgm BGM_EVENT_4 0.1]
+
+？1：（一脸骄傲。）
+？2：（竖起拇指。）
+
+？！
+
+[charaFace B 3]
+
+＠S伊什塔尔
+不要一脸抽搐地勉强自己摆出得意的表情啦！[r]你的腿已经抖成筛子了！
+[k]
+
+[charaFace B 28]
+
+＠S伊什塔尔
+但是[line 3]这样应该能赢！[r]麻烦你支援啦，[%1]！
+[k]
+
+＠S伊什塔尔
+令咒也能填充魔力吧！？
+[k]
+
+＠S伊什塔尔
+以速攻对速攻！[r]在那家伙使用宝具之前，决出胜负吧！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.4 1]
+[bgmStop BGM_EVENT_4 0.5]
+[wait wipe]
+
+[wt 0.2]
+
+[se ad346]
+[wt 0.4]
+[seStop ad346 0.1]
+[wt 0.2]
+
+[bgm BGM_EVENT_63 0.1]
+
+＠比利闪光
+嘁……！[r]按下扳机，坏音霹雳！
+[k]
+
+[charaFace A 2]
+
+＠比利闪光
+这很厉害哦，[r]用宝具2连射解决！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_63 0.4]
+[wait fade]
+[soundStopAll]
+[end]

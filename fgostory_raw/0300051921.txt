@@ -1,0 +1,368 @@
+
+＄03-00-05-19-2-1
+
+
+[soundStopAll]
+
+[charaSet A 1038000 1 伊阿宋]
+[charaSet B 6029001 1 望月千代女]
+[charaSet C 8001410 1 玛修]
+[charaSet D 2038000 1 俄里翁]
+[charaSet E 98006000 1 魔兽]
+[charaSet F 2003300 1 曼迪卡尔多]
+[charaSet G 6038002 1 夏洛特·科黛]
+[charaSet H 4029001 1 阿喀琉斯]
+[charaSet J 98115000 1 特效用]
+
+[scene 21501]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk depthOff]
+
+[charaDepth J 10]
+
+？！
+
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 1]
+
+[label INPUT_SELECT_BRANCH_1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠阿喀琉斯
+很好，这是最后一只了！
+[k]
+
+[messageOff]
+[charaMoveScale H 1.15 0.2]
+[charaMove H 0,15 0.2]
+[se adm14]
+[effect bit_talk_v_slash01]
+[wt 0.1]
+[charaFadeout H 0.1]
+[wt 0.6]
+[charaScale H 1.0]
+
+[se bac403]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaEffect E bit_talk_14]
+[charaShake E 0.05 3 3 0.8]
+[wt 1.0]
+
+[se ad24]
+[charaMove E 0,-30 0.4]
+[charaFadeout E 0.4]
+[wt 0.5]
+[se ad144]
+[wt 1.5]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠俄里翁
+啊，可恶！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠阿喀琉斯
+数量和速度都是我赢了。[r]没意见吧？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠俄里翁
+没意见，嗯。[r]消沉。
+[k]
+
+[charaFace D 12]
+
+＠俄里翁
+御主，你也给我点指示啦～！
+[k]
+
+？1：兼顾两边太难了啦……
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_2]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠俄里翁
+哼哈！！
+[k]
+
+[messageOff]
+[charaMoveScale D 1.15 0.2]
+[charaMove D 0,10 0.2]
+[se ad85]
+[effect bit_talk_v_slash01]
+[wt 0.1]
+[charaFadeout D 0.1]
+[wt 0.6]
+[charaScale D 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[charaPut J 1]
+[charaEffect J bit_talk_impactlanding]
+[charaShake E 0.05 2 2 0.8]
+[se ade315]
+[shake 0.05 0 4 1.0]
+[wt 0.8]
+
+[se ad24]
+[charaMove E 0,-30 0.4]
+[charaFadeout E 0.4]
+[wt 0.5]
+[se ad144]
+
+[wt 2.0]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠阿喀琉斯
+搞定！！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[se bac403]
+[charaEffect E bit_talk_Slash_white_01]
+[charaShake E 0.05 3 3 1.0]
+[wt 0.8]
+
+[se ad24]
+[charaMove E 0,-30 0.4]
+[charaFadeout E 0.4]
+[wt 0.5]
+[se ad144]
+[wt 1.5]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠俄里翁
+数量不相上下，所以是我赢了！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠阿喀琉斯
+哈？　刚才那样再不济也算平局吧！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠俄里翁
+各有各的说辞，御主怎么看？
+[k]
+
+？1：俄里翁的速度更快哦。
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠阿喀琉斯
+可恶！[r]是我慢了吗！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠俄里翁
+你可别拿受伤当借口哦？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠阿喀琉斯
+我怎么可能当着御主的面[r]做这么丢人现眼的事啦。
+[k]
+
+＠阿喀琉斯
+再说了，[r]这座迷宫中更重要的是效率而非速度。
+[k]
+
+[charaFace H 4]
+
+＠阿喀琉斯
+我这场战斗的配备有点糟糕。
+[k]
+
+＠阿喀琉斯
+要是有了御主的支援，[r]赢的人就会是我了。
+[k]
+
+？1：我毕竟无法兼顾到两边嘛……
+？！
+
+＠阿喀琉斯
+唉，说得也是啦！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_3]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠伊阿宋
+哈哈哈。[r]看来你这方面的经验还远远不够。
+[k]
+
+[charaFace A 6]
+
+＠伊阿宋
+但放心吧。
+[k]
+
+＠伊阿宋
+打完盹头脑清醒的我会滴水不漏地支援你。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+
+＠夏洛特·科黛
+从者明明不需要睡眠吧。[r]真是的。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠伊阿宋
+话说回来，[#斥候:千代女]。[r]前方状况如何？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠望月千代女
+那位老人给我们的地图到此为止是也。[r]不过迷宫的路还很长。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠夏洛特·科黛
+接下来该怎样办呢？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠望月千代女
+交给在下吧。
+[k]
+
+＠望月千代女
+赫淮斯托斯阁下的气息愈发强烈了，[r]在下是不会弄错前进方向的。
+[k]
+
+＠望月千代女
+来，我们出发吧！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[soundStopAll]
+[end]

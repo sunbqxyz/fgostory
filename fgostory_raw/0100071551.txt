@@ -1,0 +1,199 @@
+
+
+
+＄01-00-07-15-5-1
+[soundStopAll]
+[charaSet A 8001002 1 玛修]
+[charaSet B 2020001 1 伊什塔尔]
+[charaSet C 3027001 1 安娜]
+[charaSet D 98107100 1 戈耳工]
+
+[se ad14]
+[shake 0.05 0 2 0]
+[bgm BGM_EVENT_24 0.1]
+[scene 32400]
+[fadein black 1.5]
+[wait fade]
+[charaScale D 1.01]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠戈耳工
+还没有[line 3]！[r]还没有结束，怎么能在这里结束[line 3]！
+[k]
+
+＠戈耳工
+我要复仇，将这地上，[r]将抛弃我的你们彻底碾平[line 3]！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠玛修
+无法打倒戈耳工……！[r]明明连王座都没了，却还……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠伊什塔尔
+骗人，不死性还在吗！？[r]那家伙的伤口已经愈合了啊！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠戈耳工
+那当然，这种程度怎可能打倒我！[r]我是起源女神，提亚马特……！
+[k]
+
+＠戈耳工
+是提亚马特，提亚马特的，才对……！
+[k]
+
+＠戈耳工
+我听到声音了！[r]哽咽哭泣的母亲的声音，现在也能听到……！
+[k]
+
+＠戈耳工
+所以，我必须[line 3][r]代替她，完成复仇才行[line 3]！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[se ad10]
+[shake 0.05 0 6 1.0]
+[wt 1.0]
+[shake 0.05 0 2 0]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠玛修
+塌崩无法停止！[r]不行，照这样下去大家都会被压死的……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠安娜
+[line 3]不。[r]你只是一头怪物而已，戈耳工。
+[k]
+
+＠安娜
+无形之岛的女怪，英雄杀手的戈耳工。[r]你的复仇，是绝不会离那座岛的。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠玛修
+安娜小姐！？[r]不可以，快回来……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠戈耳工
+你这家伙[line 3]住手，别过来！[r]不要看我[line 3]不要，不要[line 3]！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠安娜
+……嗯。一起消失吧，戈耳工。[r]因为那就是……我被召唤到这片土地上的理由。
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[se ad73]
+[charaAttack C normal -128,40 0.2]
+[charaFadeout C 0.2]
+[wt 0.3]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.7]
+[charaEffect D bit_talk_13]
+[wt 0.1]
+[se bac135]
+[se bac137]
+[charaShake D 0.05 2 5 0.7]
+[wt 0.2]
+[se ad161]
+[charaEffect C bit_talk_35]
+[wt 1.0]
+[se ad10]
+[shake 0.05 0 8 0]
+[charaMove D 0,-10 0.4]
+[charaFadeout D 0.4]
+[messageOff]
+[bgmStop BGM_EVENT_24 1.0]
+[wipeout clash 2.0 1]
+[scene 10000 2.0]
+[wait wipe]
+[effect bit_talk_43l]
+[wipeFilter circleIn 0.5 1.0]
+[se ad75]
+[fadein black 0.4]
+[wait fade]
+[charaFadein C 0.7 1]
+[wt 2.0]
+[charaFadeout C 0.1]
+[charaFadein D 0.7 1]
+[se ad75]
+
+[wt 2.0]
+[effectStop bit_talk_43l]
+[charaFadeout D 0.1]
+[wt 1.0]
+
+
+？1：安娜……！
+？2：把手伸给我，快啊！
+？！
+[charaFace C 1]
+[charaFadein C 0.7 1]
+[wt 0.7]
+[charaFace C 10]
+[charaMoveReturn C 0,-50 0.4]
+[wait charaMove C]
+[wt 0.7]
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout C 0.1]
+[se ad10]
+[seStop ad14 2.0]
+[se ad144]
+[wt 3.0]
+[shakeStop]
+
+[soundStopAll]
+[end]
+
+
+

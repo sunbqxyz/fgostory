@@ -1,0 +1,173 @@
+
+＄03-00-05-30-3-0
+
+[soundStopAll]
+
+[charaSet A 1098123210 1 戈尔德鲁夫]
+[charaSet B 8001400 1 玛修]
+[charaSet C 98115300 1 福尔摩斯]
+[charaSet I 98115000 1 特效用dummy]
+[charaSet J 98115000 1 特效用dummy]
+
+[charaScale I 1.08]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.5]
+
+[scene 86500]
+
+
+
+[fadein black 0.7]
+[wait fade]
+
+
+[se ad679]
+[wt 0.2]
+[charaPut I 100,0]
+[charaEffect I bit_talk_gram_slash_02]
+[wt 0.2]
+[se ad682]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+[se ad170]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[effect bit_talk_14]
+[se ad686]
+[charaShake B 0.05 2 2 0.4]
+[wt 1.0]
+[charaFace B 2]
+
+＠玛修
+继续采取防御态势！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠戈尔德鲁夫
+会有晃动，抓紧了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠玛修
+是！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ade329]
+[shake 0.05 3 3 1.8]
+[wt 2.0]
+
+＠[9bb9ff]广播语音[-]
+[9bb9ff]攻击目标　弗朗西斯·德雷克[-][r][9bb9ff]攻击目标　弗朗西斯·德雷克[-]
+[k]
+
+＠[9bb9ff]广播语音[-]
+[9bb9ff]迎击　迎击　迎击[-][r][9bb9ff]迎击　迎击　迎击[-]
+[k]
+
+＠[9bb9ff]广播语音[-]
+[9bb9ff]迎[line 3]杀掉　杀死　杀了　杀死杀死杀死[-][r][9bb9ff]必须杀死不可让其生还连尸体都不能留下焚毁处置[-]
+[k]
+
+[messageOff]
+[se ad679]
+[wt 0.2]
+[charaPut I 100,0]
+[charaEffect I bit_talk_gram_slash_02]
+[wt 0.2]
+[se ad682]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+[se ad170]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[effect bit_talk_14]
+[se ad686]
+[charaFace B 15]
+[charaShake B 0.05 2 2 0.4]
+[wt 1.0]
+
+＠玛修
+……！
+[k]
+
+？1：没事吧！？
+？！
+
+[charaFace B 7]
+
+＠玛修
+没事！[r][#灵基外骨骼:奥特瑙斯]，还能行！
+[k]
+
+？1：攻击真的都集中在玛修身上了……
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠福尔摩斯
+想必是由于击破了波塞冬神核，[r]你们的威胁评价得到了更新吧。
+[k]
+
+＠福尔摩斯
+换言之，攻击下一个神核时情况会更为严峻。[r]希望你们采取行动时要牢记这点！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠玛修
+明白了！[r]御主，可以开始了！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠[9bb9ff]广播语音[-]
+[9bb9ff]开始迎击　开始迎击[-][r][9bb9ff]目标[line 3]弗朗西斯·德雷克[-]
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

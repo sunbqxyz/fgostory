@@ -1,0 +1,3624 @@
+
+
+
+＄94-04-01-17-1-0
+
+[soundStopAll]
+
+
+[charaSet A 5014001 1 梅菲斯托费勒斯]
+[charaSet B 5025001 1 爱迪生]
+[charaSet C 2011001 1 尼古拉·特斯拉]
+[charaSet D 1031001 1 弗兰]
+[charaSet E 5004001 1 童谣]
+[charaSet F 3026001 1 贞德·Alter·Santa·Lily]
+[charaSet G 1098157000 1 莉丝]
+[charaSet H 2031001 1 拿破仑]
+[imageSet I back10001 1]
+[charaSet J 5009000 1 特效用]
+
+[charaScale I 1.01]
+
+[branchQuestNotClear lblNotClear 3000303]
+[flag IsClear true]
+[branch lblConf]
+[label lblNotClear]
+[flag IsClear false]
+[label lblConf]
+
+
+
+[effect bit_talk_curtain03]
+
+[charaTalk depthOff]
+[charaDepth I 8]
+[charaDepth J 9]
+
+[pictureFrame cut049_frame01]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.5]
+
+＠
+欢迎光临『[#鲨鱼马戏团:Cirque du Requin]』。
+[k]
+
+＠
+这里是表演奇迹般街头艺术的娱乐马戏团[line 3]
+[k]
+
+＠
+今夜定能成为铭刻在各位记忆中的美妙一夜！
+[k]
+
+[messageOff]
+[se ade319]
+[wt 9.5]
+
+[scene 72800]
+
+[effectStop bit_talk_curtain03]
+[wt 2.0]
+
+[wt 0.5]
+
+[talkNameBack img_talk_namebg02]
+[bgm BGM_EVENT_47 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 0,-45]
+[wt 0.4]
+
+＠梅菲斯托费勒斯
+我是本马戏团的团长，[r]梅菲斯托费勒斯。
+[k]
+
+＠梅菲斯托费勒斯
+咦，应该叫领班？  还是叫组长来着？[r]算了，哪种都可以！
+[k]
+
+＠梅菲斯托费勒斯
+接下来就请各位好好欣赏表演吧。
+[k]
+
+[charaFace A 2]
+
+＠梅菲斯托费勒斯
+首先是钻火圈[line 3]不对，[r]是钻电圈！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth B 2]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 0,-45]
+[wt 0.4]
+
+＠爱迪生
+是钻交流电圈。[wt 0.5][charaFace B 5][r]嗷呜！
+[k]
+
+[messageOff]
+[se ad62]
+[effect bit_talk_lightning_02t]
+[charaShake B 0.05 3 3 0]
+[charaPut I 0,-200]
+[charaFadeTime I 0.2 0.8]
+[wt 0.2]
+[charaFadeTime I 0.2 0.0]
+[wt 0.5]
+[seStop ad62 0.2]
+[effectStop bit_talk_lightning_02t]
+[wt 0.1]
+[charaShakeStop B]
+
+[wt 0.7]
+
+[charaFace B 0]
+
+＠爱迪生
+……正如大家所见，交流电就是如此危险！[wt 0.8][charaFace B 1][r]千万要小心啊！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 -256,-45]
+[charaFace B 0]
+[charaFadein B 0.1 256,-45]
+
+＠尼古拉·特斯拉
+只是你失败了而已，[r]你这蠢货[line 3]！！
+[k]
+
+[charaFace B 5]
+
+＠爱迪生
+你说什么，蠢货。[r]你行你上啊！
+[k]
+
+[charaFace C 2]
+
+＠尼古拉·特斯拉
+噢，上就上！[r]由我来表演钻直流电圈！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-45]
+
+＠尼古拉·特斯拉
+没错，只要在这像这样切换一下……[wt 0.6][charaFace C 2][r]带着冲劲……咚[line 3]！
+[k]
+
+[messageOff]
+[se ad62]
+[effect bit_talk_lightning_02t]
+[charaShake C 0.05 3 3 0]
+[charaFadeTime I 0.2 0.8]
+[wt 0.2]
+[charaFadeTime I 0.2 0.0]
+[wt 0.5]
+[seStop ad62 0.2]
+[effectStop bit_talk_lightning_02t]
+[wt 0.1]
+[charaShakeStop C]
+
+[wt 0.7]
+
+[charaFace C 4]
+
+＠尼古拉·特斯拉
+披风勾住了[line 3]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-45]
+
+＠爱迪生
+哈哈哈哈哈，蠢货蠢货蠢货！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.4 0,-45]
+[wt 0.4]
+
+＠弗兰
+……[r]……
+[k]
+
+[charaFace D 0]
+
+
+＠弗兰
+哟[se ad73][charaMove D -40,-50 0.2]～[wt 0.3]，嘿[se ad73][charaMove D 20,-25 0.2]～[wt 0.3]，哈[se ad73][charaMove D 0,-45 0.2]～！
+[k]
+
+[messageOff]
+[se ade76]
+[wt 0.8]
+[charaFace D 3]
+[wt 1.2]
+[seStop ade76 0.8]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 4]
+[charaFadein C 0.1 -256,-45]
+[charaFace B 4]
+[charaFadein B 0.1 256,-45]
+
+＠二人
+……[r]……
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 0,-45]
+
+＠弗兰
+你们两个，还差得远呢。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaFace C 2]
+[charaFadein C 0.1 -256,-45]
+[charaFace B 2]
+[charaFadein B 0.1 256,-45]
+
+＠二人
+[f large]不[messageShake 0.06 5 5 0.4]甘心！！
+[k]
+
+[messageOff]
+[messageShakeStop]
+[wt 1.0]
+
+[charaPut J 1]
+[charaEffect J bit_talk_curtain01]
+[bgmStop BGM_EVENT_47 2.0]
+[wt 2.0]
+[effect bit_talk_curtain03]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+
+[scene 77800]
+
+[imageSet I back10000 1]
+[charaScale I 1.01]
+
+[wt 1.5]
+[charaPut J 1280,1280]
+[charaEffectStop J bit_talk_curtain01]
+
+[effectStop bit_talk_curtain03]
+[wt 2.0]
+
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-45]
+
+＠梅菲斯托费勒斯
+[f large]欢迎！！
+[k]
+
+[charaFace A 0]
+
+＠梅菲斯托费勒斯
+下一个节目是街头娱乐剧。
+[k]
+
+＠梅菲斯托费勒斯
+造访拼缀伦敦的，[r]是两位有趣的少女。
+[k]
+
+＠梅菲斯托费勒斯
+那么，[r]究竟。
+[k]
+
+＠梅菲斯托费勒斯
+伸向少女们的魔爪是什么呢？[r]少女们不断寻求的又是什么呢？
+[k]
+
+[charaFace A 1]
+
+＠梅菲斯托费勒斯
+请各位尽情欣赏吧！
+[k]
+
+[charaFace A 5]
+
+＠梅菲斯托费勒斯
+对了。
+[k]
+
+＠梅菲斯托费勒斯
+应该不用我多说了吧，[r]这里禁止摄影摄像等行为哦。
+[k]
+
+[charaFace A 2]
+
+＠梅菲斯托费勒斯
+没有梦想！
+[k]
+
+[charaFace A 1]
+
+＠梅菲斯托费勒斯
+那就这样。[r]（挥手。）
+[k]
+
+[messageOff]
+[se ad348]
+[seVolume ad348 0 0.6]
+[seStop ad348 1.8]
+[wt 0.1]
+[charaAttack A normal 0,-900 0.5]
+[wt 0.2]
+[charaFadeout A 0.4]
+[wt 1.2]
+
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth E 2]
+[charaDepth I 8]
+
+[charaPut I 1]
+[charaFadeTime I 1.5 1.0]
+[wt 2.5]
+
+[charaFadeTime I 1.5 0]
+[wt 1.5]
+[charaPut I 1200,1200]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 -256,-45]
+[charaFace F 6]
+[charaFadein F 0.1 256,-45]
+
+＠童谣
+跳起来，踢起来，舞起来！[r]反正大家的目的地都是火锅中！
+[k]
+
+＠贞德·Alter·Santa·Lily
+小海豚，小海豚，[r]你为什么跃起？　为什么叫喊？
+[k]
+
+＠贞德·Alter·Santa·Lily
+我听不懂你说的话啊！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 0,-45]
+[wt 0.4]
+
+[se ade205]
+[wt 1.5]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-45]
+
+＠童谣
+你有巧克力吧？[r]我和你以及小海豚，一共需要三块！
+[k]
+
+[charaFace E 1]
+
+＠童谣
+外出去月球野餐！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.4 0,-45]
+[wt 0.4]
+
+＠拿破仑
+哎哟，二位等一下。
+[k]
+
+＠拿破仑
+你们带那么多东西去月球未免太重了！
+[k]
+
+[charaFace H 6]
+
+＠拿破仑
+如果你们愿意给我一块巧克力，[r]我可以把你们送去月球哦？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace E 1]
+[charaFadein E 0.1 -256,-45]
+[charaFace F 6]
+[charaFadein F 0.1 256,-45]
+
+＠二人
+带我们去！　带我们去！[r]现在就带我们去月球！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 0,-45]
+
+＠拿破仑
+那二位快钻进大炮吧！
+[k]
+
+[charaFace H 6]
+
+＠拿破仑
+一声轰隆过后，[r]你们就会华丽地飞出去！
+[k]
+
+＠拿破仑
+好了，要发射了哦！
+[k]
+
+[charaFace H 2]
+
+＠拿破仑
+[f large]『[#高歌凯旋之虹弓:Arc de Triomphe de l'Etoile]』！！
+[k]
+
+[imageSet I back10001 1]
+[charaScale I 1.01]
+
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth I 8]
+
+
+[messageOff]
+[charaPut I 0,-200]
+[charaFadeTime I 1.2 1.0]
+[se ad702]
+[seVolume ad702 0 0.5]
+[wt 1.2]
+[seStop ad702 0.5]
+[wt 0.3]
+[charaFadeout H 0.1]
+[cueSe Battle bac423]
+[wt 0.5]
+[charaFadeTime I 0.5 0.0]
+[wt 0.7]
+[cueSeStop bac423 0.7]
+
+[se ad348]
+[wt 2.0]
+
+[charaPut J 1]
+[charaEffect J bit_talk_curtain01]
+[bgmStop BGM_EVENT_77 2.0]
+[wt 2.0]
+[effect bit_talk_curtain03]
+
+[scene 44602]
+
+[charaSet B 4026000 1 伊什塔尔]
+[charaSet C 1098166000 1 面具自动人偶1]
+[charaSet D 1098166000 1 面具自动人偶2]
+[charaSet G 1098166000 1 面具自动人偶3]
+[charaSet H 7022001 1 茨木童子]
+[imageSet I back10000 1]
+
+[charaScale I 1.01]
+
+[wt 1.5]
+[charaPut J 1280,1280]
+[charaEffectStop J bit_talk_curtain01]
+
+[effectStop bit_talk_curtain03]
+[wt 2.0]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-45]
+
+＠童谣
+咦？[r]这里是月球吗？
+[k]
+
+＠童谣
+月球上明明有兔子才对啊！
+[k]
+
+＠童谣
+可这里别说兔子了，[r]连一只鸡都没有！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 0,-45]
+[wt 0.4]
+
+＠伊什塔尔
+哎呀哎呀哎呀，真可怜！[r]因为这里是金星哦。
+[k]
+
+＠伊什塔尔
+你们把大炮的角度搞错了吧！
+[k]
+
+[charaFace B 0]
+
+＠伊什塔尔
+其实经常有迷路的孩子来这里，[r]我很欢迎你们的到来哦！
+[k]
+
+[charaFace B 7]
+
+＠伊什塔尔
+因为你们可以给我干活！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 0,-45]
+＠贞德·Alter·Santa·Lily
+怎么可以这样……！[se ad119]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[seStop ad119 0.3]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 -256,-45]
+[charaFace C 0]
+[charaFadein C 0.1 256,-45]
+
+＠伊什塔尔
+呵呵呵，我是不会让你们去月球的。[r]就在这给我干一辈子活吧！
+[k]
+
+＠C：自动人偶
+劳动，劳动，快乐的劳动。[r]愉快的劳动。
+[k]
+
+＠C：自动人偶
+你们的幸福，[r]全都源于劳动。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaDepth D 2]
+[charaDepth C 3]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFadein G 0.4 -320,-45]
+[charaFace C 0]
+[charaFadein C 0.4 0,-45]
+[charaFace D 0]
+[charaFadein D 0.4 320,-45]
+[wt 0.3]
+
+[se ad66]
+[charaMove G 0,-45 0.4]
+[charaMove D 0,-45 0.4]
+[wt 0.4]
+[seStop ad66 0.1]
+[wt 0.1]
+[se ad66]
+[charaMove G -320,-45 0.4]
+[charaMove D 320,-45 0.4]
+[wt 0.4]
+[seStop ad66 0.1]
+[wt 0.1]
+[se ad66]
+[charaMove G -1120,-45 1.0]
+[charaMove D 1120,-45 1.0]
+[wt 0.8]
+[seStop ad66 0.2]
+[wt 0.2]
+[se ad66]
+[charaPut G 0,-45]
+[charaPut D 0,-45]
+[charaMove G -320,-45 0.3]
+[charaMove D 320,-45 0.3]
+[se ad66]
+[wt 1.0]
+
+[charaTalk depthOff]
+[charaDepth J 9]
+
+[charaPut J 1]
+[charaEffect J bit_talk_curtain01]
+[bgmStop BGM_EVENT_81 2.0]
+[seStop ad66 0.5]
+[wt 2.0]
+[effect bit_talk_curtain03]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[scene 44000]
+
+[charaSet B 1098157000 1 莉丝]
+[charaSet C 2009201 1 阿耳忒弥斯]
+[charaSet D 1098116600 1 伪俄里翁A]
+[charaSet G 1098116610 1 伪俄里翁B]
+[charaSet H 7022001 1 茨木童子]
+[imageSet I back10001 1]
+
+[charaScale I 1.01]
+
+[charaTalk depthOff]
+[charaDepth I 8]
+
+[wt 1.5]
+[charaPut J 1280,1280]
+[charaEffectStop J bit_talk_curtain01]
+
+[effectStop bit_talk_curtain03]
+[wt 2.0]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-45]
+
+＠童谣
+麻烦了，麻烦了！[r]这里只有无休无止的工作！
+[k]
+
+＠童谣
+可这里没有大炮，[r]也没有那个[#糊涂大叔:拿破仑]！
+[k]
+
+＠童谣
+就没有什么能够去月球的方法吗！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 0,-45]
+[wt 0.4]
+
+＠茨木童子
+怎么，原来汝等想去月球玩啊。
+[k]
+
+[charaFace H 1]
+
+＠茨木童子
+只要汝等给吾一块巧克力，[r]吾就会把你们送去月球哦！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 0,-45]
+
+＠贞德·Alter·Santa·Lily
+那我把我的巧克力给你！[r]请带我们去月球吧！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[seVolume ad182 0 0.2]
+[charaChange H 98105300 0 normal 0]
+[wait charaChange H]
+
+＠茨木童子
+好的好的。[se ad182][r]咀嚼咀嚼。
+[k]
+
+[messageOff]
+[se ad29]
+[charaPut I 0,-200]
+[charaFadeTime I 0.8 1.0]
+[wt 0.8]
+[charaChange H 3034001 0 normal 0]
+[wait charaChange H]
+[wt 1.0]
+
+[charaFadeTime I 0.8 0]
+[wt 0.8]
+[charaPut I 1200,1200]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_63 0.1]
+
+＠茨木童子
+多谢款待！
+[k]
+
+[charaFace H 5]
+
+＠茨木童子
+来吧来吧，吾会用大江山的大烟花[r]一口气送你们去月球！
+[k]
+
+＠茨木童子
+走起！
+[k]
+
+[charaFace H 2]
+
+＠茨木童子
+[f large]『[#愚神礼赞·一条归桥:Encomium Moriae]』！
+[k]
+
+[messageOff]
+[charaPut I 0,-200]
+[charaFadeTime I 0.2 1.0]
+[wt 0.2]
+[charaFadeout H 0.1]
+[wt 0.1]
+[scene 28300]
+[charaFadeTime I 0.2 0]
+[wt 0.3]
+[charaPut I 1200,1200]
+
+[se ade194]
+[effect bit_talk_fireworks]
+[wt 1.3]
+[seStop ade194 0.5]
+
+[se ad348]
+[wt 2.0]
+
+[charaPut J 1]
+[charaEffect J bit_talk_curtain01]
+[bgmStop BGM_EVENT_63 2.0]
+[wt 2.0]
+[effect bit_talk_curtain03]
+
+[scene 51100]
+
+[charaSet A 2009102 1 俄里翁]
+[charaSet H 1098116620 1 伪俄里翁C]
+
+[wt 1.5]
+[charaPut J 1280,1280]
+[charaEffectStop J bit_talk_curtain01]
+
+[effectStop bit_talk_curtain03]
+[wt 2.0]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-45]
+
+＠童谣
+到啦！[wt 0.4][charaFace E 0][r]哎呀，这里就是月球吗？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 0,-45]
+[wt 0.4]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠阿耳忒弥斯
+嗯嗯，没错没错。[r]你们说得没错。
+[k]
+
+[charaFace C 1]
+
+＠阿耳忒弥斯
+在前面等待你们的就是[r]无比快乐如梦似幻的月世界！
+[k]
+
+[charaFace C 0]
+
+＠阿耳忒弥斯
+不过，你们有巧克力吗？
+[k]
+
+[charaFace C 4]
+
+＠阿耳忒弥斯
+一块巧克力只能让一个人进入月世界！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-45]
+
+＠童谣
+怎么会这样！[r]我们只剩一块巧克力了啊！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-45]
+
+＠贞德·Alter·Santa·Lily
+那就没办法了。[r]请把童谣带去吧。
+[k]
+
+[charaFace F 6]
+
+＠贞德·Alter·Santa·Lily
+我回去。[r]童谣，要在月世界里好好玩哦！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-45]
+
+＠童谣
+哎呀哎呀，可不能这样！
+[k]
+
+
+＠童谣
+如果贞德不去，那我也不去了。[r]我也要回去，回到火锅中！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-45]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 0,-45]
+
+＠贞德·Alter·Santa·Lily
+小海豚？[r]你为什么拿着巧克力呀？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-45]
+
+[se ade205]
+[wt 1.5]
+
+[charaShake B 0.02 3 3 0.4]
+[se ade13]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace E 4]
+[charaFadein E 0.1 -256,-45]
+[charaFace F 3]
+[charaFadein F 0.1 256,-45]
+
+＠二人
+啊！[r]巧克力碎成两半了！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 0,-45]
+[wt 0.4]
+
+＠俄里翁
+嗯嗯嗯，[r]真是只了不起的海豚！
+[k]
+
+
+＠俄里翁
+这样巧克力就从一块变成两块了。[r]你没意见了吧，阿耳忒弥斯。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-45]
+
+＠阿耳忒弥斯
+嗯嗯，当然没意见。[wt 0.6][charaFace C 1][r]请两位进入月世界吧！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-45]
+
+＠童谣
+谢谢，谢谢你小海豚！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-45]
+
+[se ade205]
+[wt 1.5]
+
+[backEffect bit_talk_water 0,40]
+[charaFadeout B 0.4]
+[charaMove B 0,-95 0.4]
+[wt 0.3]
+[cueSe Battle bac462]
+
+[wt 1.8]
+
+[charaPut J 1]
+[charaEffect J bit_talk_curtain01]
+[bgmStop BGM_EVENT_2 2.0]
+[wt 2.0]
+[effect bit_talk_curtain03]
+
+[backEffectStop bit_talk_water]
+
+[scene 42400]
+
+[charaSet A 1098116630 1 伪俄里翁D]
+[charaSet B 98100800 1 野猪崽A]
+[charaSet C 98101000 1 野猪崽B]
+[charaSet E 98101200 1 野猪崽C]
+[charaSet F 1098161500 1 麻雀（平等）]
+
+[wt 1.5]
+[charaPut J 1280,1280]
+[charaEffectStop J bit_talk_curtain01]
+
+[effectStop bit_talk_curtain03]
+[wt 2.0]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaTalk off]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth H 2]
+[charaDepth G 3]
+[charaDepth D 4]
+
+[charaFace D 0]
+[charaFadein D 0.4 0,-45]
+[charaFace G 0]
+[charaFadein G 0.4 0,-45]
+[charaFace H 0]
+[charaFadein H 0.4 0,-45]
+[charaFace A 0]
+[charaFadein A 0.4 0,-45]
+[wt 0.5]
+
+[charaMove D -54,-10 0.2]
+[charaMove H -54,-10 0.2]
+[charaMove G 54,-10 0.2]
+[charaMove A 54,-10 0.2]
+[wt 0.1]
+[cueSe Battle bac469]
+[wt 0.1]
+[charaMove D -74,-10 0.1]
+[charaMove H -74,-10 0.1]
+[charaMove G 74,-10 0.1]
+[charaMove A 74,-10 0.1]
+[wt 0.1]
+[charaMove D -128,-45 0.2]
+[charaMove H -128,-45 0.2]
+[charaMove G 128,-45 0.2]
+[charaMove A 128,-45 0.2]
+
+[wt 0.3]
+
+[charaMove H -256,-45 0.4]
+[charaMove A 256,-45 0.4]
+[charaShake H 0.07 3 3 0.4]
+[charaShake A 0.07 3 3 0.4]
+
+[wt 0.4]
+
+[charaMove H -310,-10 0.2]
+[charaMove A 310,-10 0.2]
+[wt 0.1]
+[cueSe Battle bac469]
+[wt 0.1]
+[charaMove H -330,-10 0.1]
+[charaMove A 330,-10 0.1]
+[wt 0.1]
+[charaMove H -384,-45 0.2]
+[charaMove A 384,-45 0.2]
+
+[wt 0.3]
+
+[charaMove D -238,-45 0.4]
+[charaMove H -274,-45 0.4]
+[charaMove G 238,-45 0.4]
+[charaMove A 274,-45 0.4]
+[wt 0.4]
+[charaMove D -258,-10 0.1]
+[charaMove H -254,-10 0.1]
+[charaMove G 258,-10 0.1]
+[charaMove A 254,-10 0.1]
+[wt 0.1]
+[charaMove D -384,-45 0.4]
+[charaMove H -128,-45 0.4]
+[charaMove G 384,-45 0.4]
+[charaMove A 128,-45 0.4]
+[cueSe Battle bac469]
+[wt 1.0]
+
+[charaMove D -768,-45 0.7]
+[charaMove H -512,-45 0.7]
+[charaMove G 768,-45 0.7]
+[charaMove A 512,-45 0.7]
+[charaShake D 0.07 3 3 0.7]
+[charaShake H 0.06 3 3 0.7]
+[charaShake G 0.07 3 3 0.7]
+[charaShake A 0.06 3 3 0.7]
+[wt 0.5]
+[charaFadeout D 0.4]
+[charaFadeout G 0.4]
+[charaFadeout H 0.4]
+[charaFadeout A 0.4]
+
+[wt 1.0]
+
+[charaSet A 1098161100 1 麻雀（变成）]
+[charaSet D 1098161200 1 麻雀（泰山）]
+[charaSet G 1098161300 1 麻雀（五官）]
+[charaSet H 1098161400 1 麻雀（初江）]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth B 2]
+[charaDepth E 3]
+
+[charaFace C 1]
+[charaFadein C 0.4 -256,-45]
+[charaFace B 1]
+[charaFadein B 0.4 0,-45]
+[charaFace E 1]
+[charaFadein E 0.4 256,-45]
+[wt 0.5]
+
+[charaMove C -320,-45 0.7]
+[charaMove B -64,-45 0.7]
+[charaMove E 192,-45 0.7]
+[charaShake C 0.07 3 3 0.6]
+[charaShake B 0.07 3 2 0.6]
+[charaShake E 0.07 3 4 0.6]
+[wt 0.8]
+[charaMove C -152,-45 1.0]
+[charaMove B 64,-45 1.0]
+[charaMove E 320,-45 1.0]
+[charaShake C 0.07 2 3 1.0]
+[charaShake B 0.07 2 3 1.0]
+[charaShake E 0.07 2 2 1.0]
+[wt 0.9]
+[charaRollMoveEx C 0.2 -10 0,320]
+[se ad76]
+[wt 0.3]
+[charaMove B 84,-45 0.1]
+[charaRollMoveEx B 0.2 -15 0,320]
+[se ad76]
+[wt 0.3]
+[charaRollMoveEx E 0.3 -40 0,320]
+[se ad76]
+[wt 1.0]
+[charaRollMoveEx C 0.33 360 0,320]
+[charaRollMoveEx B 0.3 360 0,320]
+[wt 0.2]
+
+[charaMove C 104,-45 1.5]
+[charaMove B 320,-45 1.5]
+[charaShake C 0.07 3 3 1.5]
+[charaShake B 0.06 3 3 1.5]
+[wt 0.1]
+[charaMove E 576,-45 1.5]
+[wt 1.0]
+[charaFadeout C 0.4]
+[charaFadeout B 0.4]
+[charaFadeout E 0.4]
+
+[wt 1.0]
+
+[charaSet B 5004001 1 童谣]
+[charaSet C 3026001 1 贞德·Alter·Santa·Lily]
+[charaSet E 6005001 1 杰克]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth D 2]
+[charaDepth H 3]
+[charaDepth F 4]
+[charaDepth G 5]
+
+[charaFace A 0]
+[charaFadein A 0.1 -300,-410]
+[charaFace H 0]
+[charaFadein H 0.1 -190,-480]
+[charaFace G 0]
+[charaFadein G 0.1 0,-500]
+[charaFace F 0]
+[charaFadein F 0.1 190,-480]
+[charaFace D 0]
+[charaFadein D 0.1 288,-400]
+
+[charaMove A -300,45 0.5]
+[charaMove H -190,-25 0.5]
+[charaMove G 0,-45 0.5]
+[charaMove F 190,-25 0.5]
+[charaMove D 288,55 0.5]
+
+[se ad536]
+[wt 0.6]
+[seStop ad536 0.3]
+[wt 0.3]
+
+[charaMove G 0,600 0.5]
+[charaRollMoveEx F 0.9 -360 0,300]
+[charaMove F 0,300 0.4]
+[charaRollMoveEx H 0.9 360 0,300]
+[charaMove H 0,300 0.4]
+[charaRollMoveEx D 0.9 -720 0,300]
+[charaMove D 0,500 0.4]
+[charaRollMoveEx B 0.9 720 0,300]
+[charaMove A 0,500 0.4]
+[wt 0.2]
+[cueSe Battle bac469]
+[wt 0.2]
+[charaMove F 20,300 0.1]
+[charaMove H 20,300 0.1]
+[wt 0.1]
+[charaMove F -160,-25 0.4]
+[charaMove H 160,-25 0.4]
+[charaMove D -268,55 0.4]
+[charaMove A 268,55 0.4]
+[charaChange G 1098161000 0 normal 0]
+[wait charaChange G]
+[charaMove G 0,-45 0.5]
+[wt 0.7]
+
+[charaMove A 800,100 1.3]
+[charaMove H -690,300 1.5]
+[charaMove G 0,500 1.3]
+[charaMove F 690,110 1.4]
+[charaMove D -788,160 1.3]
+
+[se ad536]
+[wt 1.0]
+[charaFadeout A 0.4]
+[charaFadeout H 0.4]
+[charaFadeout F 0.4]
+[charaFadeout D 0.4]
+[wt 0.3]
+[seStop ad536 0.3]
+
+[wt 1.0]
+
+[charaSet A 6012001 1 桑松]
+[charaSet D 5014001 1 梅菲斯托费勒斯]
+[charaSet F 1098157000 1 莉丝]
+[charaSet G 2009001 1 俄里翁＆阿耳忒弥斯]
+[charaSet H 7022001 1 茨木童子]
+
+[bgmStop BGM_EVENT_94 1.5]
+
+[scene 42402 2.0]
+[wt 2.0]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-45]
+
+＠童谣
+野餐真是太好玩啦！[wt 0.8][charaFace B 4][r]但总感觉好像缺了点什么。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 0,-45]
+
+＠贞德·Alter·Santa·Lily
+童谣你也这么觉得？[r]其实我也觉得好像缺了些什么！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-45]
+
+＠童谣
+对了，对了。[r]是她啊！
+[k]
+
+＠童谣
+我们不能这样继续下去了。[r]我们得马上回到火锅中！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-45]
+
+＠贞德·Alter·Santa·Lily
+对。
+[k]
+
+[charaFace C 6]
+
+＠贞德·Alter·Santa·Lily
+月世界的话，[r]明天带着巧克力再来就好了！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-45]
+＠童谣
+下次多带一些来！
+[k]
+
+＠童谣
+[#糊涂大叔:拿破仑]、[r][#坏心眼女神大人:伊什塔尔]、
+[k]
+
+＠童谣
+[#咔滋咔滋鬼小姐:茨木童子]，[r]当然还有小海豚。
+[k]
+
+＠童谣
+大家一起野餐吧！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaPut J 1]
+[charaEffect J bit_talk_curtain01]
+[bgm BGM_EVENT_77 2.0 0.2]
+[wt 2.0]
+[effect bit_talk_curtain03]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[scene 71500]
+
+[wt 1.5]
+[charaPut J 1280,1280]
+[charaEffectStop J bit_talk_curtain01]
+
+[effectStop bit_talk_curtain03]
+[wt 2.0]
+
+[bgm BGM_EVENT_77 1.8 1.0]
+
+[se ade235]
+[seVolume ade235 0 0.0]
+[seVolume ade235 1.0 1.0]
+[wt 1.04]
+[seStop ade235]
+[wt 0.1]
+[se ad93]
+[wt 0.9]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 0,-45]
+[wt 0.4]
+
+＠杰克
+爸爸，爸爸！[r]能答应我们的请求吗！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 0,-45]
+[wt 0.4]
+
+＠桑松
+哎呀哎呀，怎么了，[#我的天使:Ange]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth E 2]
+[charaDepth B 3]
+
+[charaTalk off]
+[charaFace E 1]
+[charaFadein E 0.1 -256,-45]
+[charaFace B 1]
+[charaFadein B 0.1 0,-45]
+[charaFace C 6]
+[charaFadein C 0.1 256,-45]
+
+＠三人
+我们想去月球！[r]所以请给我们好多好多巧克力！
+[k]
+
+[messageOff]
+[wt 1.5]
+
+[charaPut J 1]
+[charaEffect J bit_talk_curtain01]
+[bgmStop BGM_EVENT_77 2.0]
+[wt 0.5]
+[se ade76]
+[wt 1.5]
+[effect bit_talk_curtain03]
+
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+
+[scene 10000]
+
+[charaFace D 0]
+[charaFadein D 0.1 0,-45]
+
+[wt 1.5]
+[charaPut J 1280,1280]
+[charaEffectStop J bit_talk_curtain01]
+
+[talkNameBack]
+
+[effectStop bit_talk_curtain03]
+[wt 2.0]
+
+[se ad6]
+[seVolume ad6 0 0]
+[seVolume ad6 2.0 0.8]
+[wt 2.0]
+
+[wt 1.0]
+[charaFace D 1]
+[wt 0.3]
+[charaMoveReturn D 0,-85 0.7]
+[wait charaMove D]
+[charaMove D -128,-45 0.7]
+[wt 0.5]
+[charaFadeout D 0.4]
+[wt 1.0]
+
+[charaFace G 0]
+[charaFadein G 0.4 -256,-45]
+[charaFace F 0]
+[charaFadein F 0.4 256,-45]
+[wt 1.0]
+[charaFace G 1]
+[wt 0.3]
+[charaMoveReturn G -256,-85 0.7]
+[wait charaMove G]
+[charaMove G -384,-45 0.7]
+[wt 0.5]
+[charaFadeout G 0.4]
+[wt 0.3]
+[charaMoveReturn F 256,-85 0.7]
+[wait charaMove F]
+[charaMove F 128,-45 0.7]
+[wt 0.5]
+[charaFadeout F 0.4]
+[wt 1.0]
+
+[charaSet D 2031001 1 拿破仑]
+[charaSet H 4026000 1 伊什塔尔]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth B 2]
+
+[charaFace B 0]
+[charaFadein B 0.4 -256,-45]
+[charaFace C 0]
+[charaFadein C 0.4 256,-45]
+[wt 1.0]
+[charaFace B 1]
+[wt 0.3]
+[charaMoveReturn B -256,-85 0.7]
+[wait charaMove B]
+[charaMove B -384,-45 0.7]
+[wt 0.5]
+[charaFadeout B 0.4]
+[charaFace C 6]
+[wt 0.3]
+[charaMoveReturn C 256,-85 0.7]
+[wait charaMove C]
+[charaMove C 128,-45 0.7]
+[wt 0.5]
+[charaFadeout C 0.4]
+[wt 1.0]
+
+[charaFace A 0]
+[charaFadein A 0.4 -256,-45]
+[charaFace E 0]
+[charaFadein E 0.4 256,-45]
+[wt 1.0]
+[charaFace E 1]
+[wt 0.3]
+[charaMoveReturn E 256,-85 0.7]
+[wait charaMove E]
+[charaMove E 384,-45 0.7]
+[wt 0.5]
+[charaFadeout E 0.4]
+[charaFace A 1]
+[wt 0.3]
+[charaMoveReturn A -256,-85 0.7]
+[wait charaMove A]
+[charaMove A -128,-45 0.7]
+[wt 0.5]
+[charaFadeout A 0.4]
+[wt 1.0]
+
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth D 2]
+
+[charaFace D 0]
+[charaFadein D 0.4 -256,-45]
+[charaFace H 0]
+[charaFadein H 0.4 256,-45]
+[wt 1.0]
+[charaFace H 1]
+[charaFace D 1]
+[wt 0.3]
+[charaMoveReturn D -256,-85 0.7]
+[charaMoveReturn H 256,-85 0.7]
+[wait charaMove D]
+[charaMove D -384,-45 0.7]
+[charaMove H 384,-45 0.7]
+[wt 0.5]
+[charaFadeout D 0.4]
+[charaFadeout H 0.4]
+[wt 1.2]
+
+[fadeout black 2.0]
+[seStop ad6 2.0]
+[wait fade]
+
+[effectStop bit_talk_spotlight]
+[charaEffectStop J bit_talk_curtain01]
+[charaPut J 1200,1200]
+[pictureFrame]
+
+[scene 82000]
+
+[charaSet A 98100400 1 玛修]
+[charaSet B 1098124510 1 达·芬奇]
+[charaSet C 1098123210 1 戈尔德鲁夫]
+[charaSet D 98111500 1 达·芬奇]
+[charaSet E 1040000 1 葛饰北斋]
+[charaSet F 7036001 1 宫本伊织]
+[charaSet G 1008300 1 齐格飞]
+[charaSet H 1098181100 1 贞德]
+[charaSet I 5027001 1 玛丽]
+
+[charaEffect J bit_talk_10_LowLevel]
+
+[cameraMove 0 0 1.01]
+
+[wt 2.0]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0 1]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+
+？1：太棒了！
+？！
+
+[bgm BGM_EVENT_109 0.1]
+
+[charaFace A 1]
+＠玛修
+真是一场精彩的表演！[wt 0.6][charaFace A 12][r]可是，那究竟是什么？
+[k]
+
+＠玛修
+既像……马戏，又像……音乐剧。[r]真是次不可思议的体验。
+[k]
+
+[charaFace A 0]
+
+＠玛修
+拿破仑先生的大炮和[r]茨木小姐的烟花是怎么实现的呀？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch lblNoClear1 IsClear false]
+
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：达·芬奇
+恐怕那部分空间被魔术扩张了吧。
+[k]
+
+
+＠B：达·芬奇
+或许是梅菲斯托费勒斯或是别的Caster干的吧？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠戈尔德鲁夫
+虽说魔术师应该也办得到，[r]但魔术师恐怕无法承受宝具吧。
+[k]
+
+[charaFace C 12]
+
+＠戈尔德鲁夫
+……话说回来，[r]为什么从者会去演戏……？
+[k]
+
+＠戈尔德鲁夫
+这样真的可以吗……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[branch lblConf1]
+
+[label lblNoClear1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-90]
+
+＠D：达·芬奇
+恐怕那部分空间被魔术扩张了吧。
+[k]
+
+＠D：达·芬奇
+或许是梅菲斯托费勒斯或是别的Caster干的吧？
+[k]
+
+[charaFace D 1]
+
+＠D：达·芬奇
+这是只有从者才能完成的华丽的表演呢。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[label lblConf1]
+
+[charaTalk E]
+[charaFace E 19]
+[charaFadein E 0.1 1]
+
+＠葛饰北斋
+哈……原来还能这样表演。[r]给我上了一课。
+[k]
+
+[charaFace E 0]
+
+＠葛饰北斋
+爹爹好像也有干劲了呢……[r]啊？  想画些什么？
+[k]
+
+[charaFace E 7]
+
+＠葛饰北斋
+……等一切都结束了，[r]我就来帮你！
+[k]
+
+[charaFace E 5]
+
+＠葛饰北斋
+但在那之前，[r]得先和泳装剑豪决一胜负！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+……就这样，[r]我们来到了『鲨鱼马戏团』……
+[k]
+
+？1：差不多该去挑战贞德了。
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+
+＠宫本伊织
+虽说此前去过的那些地方[r]大多都不好对付……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠葛饰北斋
+话可不能这么说。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠齐格飞
+总之，先申请和她见一面吧。[r]啊，对不起，那位小姐。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.4 1]
+[wt 0.4]
+
+＠玛丽
+欢迎来到赌场『鲨鱼马戏团』！[r]哎呀，哎呀哎呀哎呀。
+[k]
+
+[charaFace I 0]
+
+＠玛丽
+各位……[r]莫非你们是来挑战泳装剑豪的？
+[k]
+
+？1：是的。
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+
+＠葛饰北斋
+是我要挑战！
+[k]
+
+＠葛饰北斋
+以女浮世绘画师身份名扬四海的大剑客，[r]葛饰应为……不对，是葛饰北斋！
+[k]
+
+[charaFace E 12]
+
+＠葛饰北斋
+好了，快给我带路！[r]带我去见泳装剑豪！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠玛丽
+原本没有『挑战书』是不行的……
+[k]
+
+[charaFace I 1]
+
+＠玛丽
+但算了，反正最近也没什么人来挑战，[r]想必贞德也很寂寞吧！
+[k]
+
+[charaFace I 0]
+
+＠玛丽
+不过请稍等一会儿，[r][#如果那孩子还饿着肚子的话可就糟了]！
+[k]
+
+＠众人
+[charaTalk A]
+那孩子？
+[k]
+
+？1：是……贞德吗？
+
+[charaFace I 1]
+
+＠玛丽
+呵呵。
+[k]
+
+＠玛丽
+虽然贞德也是个大胃王，[r]但区区饿肚子是不会让她搞出什么麻烦事的。
+[k]
+
+？2：是谁呢……？
+
+[charaFace I 1]
+
+＠玛丽
+贞德正在竭尽全力压制它，[r]所以应该没事吧！
+[k]
+
+？！
+
+[messageOff]
+[fadeout black 1.5]
+[bgm BGM_EVENT_109 1.5 0.2]
+[wait fade]
+
+[charaFadeout I 0.1]
+
+[scene 71500]
+
+[charaSet B 1098178700 1 莉丝XP]
+[charaSet C 1026001 1 迪昂]
+[charaSet D 1098124510 1 达·芬奇]
+
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[wt 1.0]
+
+[charaFace H 0]
+[charaFadein H 0 0,-50]
+
+[charaFilter H silhouette 00000080]
+
+[pictureFrame cut063_cinema]
+
+[fadein black 1.5]
+[wait fade]
+
+＠贞德
+呵呵呵。[r]好啦好啦，乖孩子乖孩子。
+[k]
+
+＠贞德
+好像又有泳装剑豪的挑战者来了。[r]让我们加油吧！
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaFilter H normal 00000000]
+
+[pictureFrame]
+
+
+[scene 81100]
+
+[charaSet H 2032001 1 贞德]
+
+[charaDepth H 1]
+[charaDepth I 2]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_109 1.5 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad570]
+[wt 0.7]
+[seStop ad570]
+[wt 0.4]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+＠玛丽
+贞德～、贞德～，[r]现在情况还好吗～？
+[k]
+
+＠贞德
+我在～，玛丽。[r]没问题啦～，有什么事吗～？
+[k]
+
+＠玛丽
+有挑战者来了，[r]我把他们带过来了～！
+[k]
+
+[charaFace I 0]
+
+＠玛丽
+它吃饱了吗？
+[k]
+
+＠贞德
+嗯嗯，刚才吃了好多，[r]我想应该没事了吧！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+
+＠葛饰北斋
+虽然有些莫名其妙，不过我感到了一股[r]莫名的寒气与不好的预感。
+[k]
+
+[charaFace E 12]
+
+＠葛饰北斋
+然而临阵脱逃有损于我江户子之名！[r]劳驾叨[line 3]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[se ad533]
+[wt 0.8]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.4 1]
+[wt 0.4]
+
+＠贞德
+你们好！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_109 1.0]
+[charaFadeout H 0.1]
+[wt 0.2]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.7 1]
+[wt 1.1]
+
+＠B：？？？
+陪我玩。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 28]
+[charaFadein E 0.1 1]
+
+＠葛饰北斋
+[f small]扰……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth G 3]
+[charaDepth A 2]
+[charaDepth F 1]
+
+[charaTalk A]
+[charaFace G 2]
+[charaFadein G 0.1 -320,0]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+[charaFace A 6]
+[charaFadein A 0.1 320,0]
+
+＠玛修
+……[r]……
+[k]
+
+＠齐格飞
+……[r]……
+[k]
+
+＠宫本伊织
+……[r]……
+[k]
+
+[messageOff]
+[wt 0.5]
+
+？1：撤退！！！！
+？！
+
+[se ad55]
+[se ad59]
+[cueSe Battle bac343]
+[seStop ad55 1.5]
+[seStop ad59 1.5]
+[cueSeStop bac343 1.5]
+[charaFadeout G 0.4]
+[charaFadeout F 0.4]
+[charaFadeout A 0.4]
+[wt 2.0]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠贞德
+欢迎来到赌场[r]『鲨鱼马戏团』[line 3]
+[k]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaFace H 8]
+
+＠贞德
+咦，奇怪？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace H 8]
+[charaFadein H 0.1 0]
+[charaFace I 0]
+[charaFadein I 0.1 2]
+
+＠玛丽
+贞德。[r]大家都撤退了哦。
+[k]
+
+[charaFace H 4]
+
+＠贞德
+怎么会这样啦……
+[k]
+
+[charaFace H 10]
+
+＠贞德
+为什么来挑战我的人都转头拔腿就跑啊！
+[k]
+
+[charaFace I 4]
+
+＠玛丽
+恐怕是因为这孩子吧……
+[k]
+
+[charaFace H 8]
+
+＠贞德
+哎，它很可爱啊？[r]莉丝XP。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠莉丝XP
+陪我玩。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠玛丽
+是啊，我也觉得很可爱！[r]对吧，迪昂？
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠迪昂
+请容许我不予置评，[r]王后！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace H 10]
+[charaFadein H 0.1 0]
+[charaFace I 4]
+[charaFadein I 0.1 2]
+
+＠二人
+哎～。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠迪昂
+为什么两位不约而同地露出无法理解的表情啦！
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_94 1.5]
+[wait fade]
+
+[charaFadeout C 0]
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout rectangleStripLeftToRight 0.1 1.0]
+[wait wipe]
+
+[scene 82000]
+[cameraMove 0.1 0,0 1.01]
+
+[charaSet B 1098123210 1 戈尔德鲁夫]
+[charaSet C 98111500 1 达·芬奇]
+
+[wt 1.0]
+
+[shake 0.05 4 4 0]
+
+[effect bit_talk_41]
+
+[se ad55]
+[se ad59]
+[cueSe Battle bac343]
+
+[wipein rectangleStripRightToLeft 0.3 1.0]
+[wait wipe]
+
+[wt 2.0]
+
+[seStop ad55 0.3]
+[seStop ad59 0.3]
+[cueSeStop bac343 0.3]
+[se ad224]
+[wt 0.3]
+[shake 0.05 4 4 0.6]
+[wt 0.5]
+[cameraHome 0.1]
+[wt 0.1]
+[effectStop bit_talk_41]
+
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 23]
+[charaFadein E 0.1 1]
+
+＠葛饰北斋
+呼，呼……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠玛修
+哈，哈……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[bgm BGM_EVENT_72 0.1]
+
+[charaSet A 3040000 1 Λ]
+
+[branch lblNoClear2 IsClear false]
+
+？1：那个，太离谱了。
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠齐格飞
+嗯……[r]那个……太……离谱了……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+……那是幻觉吧？
+[k]
+
+＠戈尔德鲁夫
+毕竟鲨鱼怎么可能浮在空中，[r]还用无机质的眼神说『陪我玩』？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 16]
+[charaFadein D 0.1 1]
+
+＠D：达·芬奇
+唔。[r]这世上不可思议的事情还真多啊♡
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+别以为你总能靠这种方法糊弄下去！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+？2：那个圣女脑子里到底在想什么啦！？
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠齐格飞
+……以前我就听说『泳装贞德过于别具一格』[r]这样的评价，原来如此……
+[k]
+
+[charaFace G 4]
+
+＠齐格飞
+确实别具一格……过于别具一格了……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+那家伙脑子里是不是缺所有的筋！？
+[k]
+
+[charaFace B 9]
+
+＠戈尔德鲁夫
+那可是鲨鱼啊，鲨鱼！[r]怎么看那都是大白鲨吧！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+？！
+
+[branch lblConf2]
+
+[label lblNoClear2]
+
+？1：那个，太离谱了。
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠齐格飞
+嗯……[r]那个……太……离谱了……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-90]
+
+＠C：达·芬奇
+万万没想到居然发展成鲨鱼问题……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+？2：那个圣女脑子里到底在想什么啦！？
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠齐格飞
+……以前我就听说『泳装贞德过于别具一格』[r]这样的评价，原来如此……
+[k]
+
+[charaFace G 4]
+
+＠齐格飞
+确实别具一格……过于别具一格了……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-90]
+
+＠C：达·芬奇
+唔，看来我们也得提高警惕才行了！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+？！
+
+[label lblConf2]
+
+[bgmStop BGM_EVENT_72 1.0]
+
+[charaSet B 1098176810 1 刑部姫]
+[charaSet C 1098177300 1 卡米拉]
+[charaSet D 1026001 1 迪昂]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Λ
+你们在怕什么啊？[r]没出息也该有点限度吧。
+[k]
+
+＠Λ
+就算海豚变成了鲨鱼，[r]她本人也没变吧？
+[k]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaFace A 6]
+
+＠Λ
+真拿你们没办法。[r]那我就卖你们一个人情吧。
+[k]
+
+？1：谜之Meltryllis小姐！
+
+[charaFace A 5]
+
+＠Λ
+谜之这两个字是多余的。还有以后不要叫我本名。[r]万一狗仔队在场要怎么办啦？
+[k]
+
+？2：话说我都没注意到你不见了。
+
+[charaFace A 5]
+
+＠Λ
+我对马戏和音乐剧的融合秀很感兴趣。[r]于是去了VIP席观赏。
+[k]
+
+[charaFace A 0]
+
+＠Λ
+这种好莱坞式的演出应该很受大众欢迎吧？[r]表演又华丽。
+[k]
+
+[charaFace A 6]
+
+＠Λ
+不过这也是一过性的。[r]夏日维加斯的表演还是当属花滑。
+[k]
+
+？！
+
+[charaFace A 0]
+
+＠Λ
+总之。[r][%1]、北斋。
+[k]
+
+[charaFace A 1]
+
+＠Λ
+既然对手是鲨鱼，就该轮到我出场了。[r]包在我身上。海洋生物都会臣服在我的鞋跟之下。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+
+＠宫本伊织
+……是哦。
+[k]
+
+[charaFace F 0]
+
+＠宫本伊织
+冷静下来想想，那不过是鲨鱼而已。[r]努力一下应该能够打得过吧？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 29]
+[charaFadein E 0.1 1]
+
+＠葛饰北斋
+是吗……可是……[r]那只鲨鱼不是浮在空中吗？
+[k]
+
+？1：海豚也是这样的……
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Λ
+那我们回去吧。
+[k]
+
+[charaFace A 6]
+
+＠Λ
+对于拥有利维坦权能的我来说，[r]鲨鱼和鳉鱼没什么区别。
+[k]
+
+[charaFace A 1]
+
+＠Λ
+我会让你们见识见识海洋生物之间[r]存在着多大的差距！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+（我总觉得她气势汹汹地给自己插了个大Flag，[r]  但小刑我还是保持沉默好了。）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace B 4]
+[charaFadein B 0.1 0]
+[charaFace C 0]
+[charaFadein C 0.1 2]
+
+＠卡米拉
+喂，我觉得她会输，[r]你押哪边？
+[k]
+
+[charaFace B 5]
+
+＠刑部姫
+无·可·奉·告！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Λ
+[FFFFFF]？[-]
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_62 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 81100]
+
+[charaSet B 1098176810 1 刑部姫]
+
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠玛丽
+哎呀，欢迎回来！[r]太好了，我还以为你们直接回去不会再来了呢！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Λ
+我们怎么可能回去？[r]这次由我作为代理保镖。
+[k]
+
+＠Λ
+第五位泳装剑豪的首级，[r]就由我谜之Alterego·Λ收下啦。
+[k]
+
+[charaFace A 6]
+
+＠Λ
+不论是鲨鱼还是虎鲸，[r]我都会一击开膛破肚送去海鲜市场。
+[k]
+
+？1：我有种不好的预感……
+
+[charaFace A 5]
+
+＠Λ
+你这表情是什么意思？[r]是不相信我吗？
+[k]
+
+？2：你不考虑先回去一趟吗？
+
+[charaFace A 1]
+
+＠Λ
+[FFFFFF]？[-]　以你而言还真是谨慎呢。[r]难道你对鲨鱼有心理阴影？
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠迪昂
+……那么，还请您做好心理准备。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠Λ
+尽管我完全不知道要做什么心理准备，[r]不过嗯，算了。
+[k]
+
+[charaFace A 0]
+
+＠Λ
+对手是不世出的圣女贞德。[r]配得上当我的舞蹈对手[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 11]
+[charaFadein H 0.1 1]
+
+＠贞德
+……你错了，[r]我不是什么圣女。
+[k]
+
+？1：出现了[line 3]！
+？！
+
+[charaFace H 10]
+
+＠贞德
+真是的，为什么要面颊抽筋啦。[r]姐姐我会很难过的哦？
+[k]
+
+[charaFace H 12]
+
+＠贞德
+……没错。[r]我并不是圣女。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Λ
+哎呀。[r]那你是什么呢？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_48 1.0]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+
+＠贞德
+对，[r]我是[%1]的[line 3]
+[k]
+
+[charaPut J 1]
+[charaFace H 1]
+＠贞德
+[f large][charaEffect J bit_talk_41]姐姐。[se ad186]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_41]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠Λ
+原来如此，姐姐啊。
+[k]
+
+[charaFace A 0]
+
+＠Λ
+……[r]……姐姐？
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaFace A 4]
+
+＠Λ
+请问……[r]你究竟在说什么啊？
+[k]
+
+＠Λ
+你是英灵吧？　是从者吧？[r]不是来自日本吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠齐格飞
+御主，怎么了？[r]脸色很不好啊……
+[k]
+
+？1：这么说起来……
+？2：我确实觉得她是我的姐姐……！
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠宫本伊织
+哎，姐姐。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 19]
+[charaFadein E 0.1 1]
+
+＠葛饰北斋
+哦，姐姐。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠众人
+[charaTalk E]
+[f large]为[messageShake 0.02 3 3 0.4]什么！？
+[k]
+
+[messageShakeStop]
+
+[charaFace H 10]
+
+＠贞德
+姐姐我好难过啊。[r]没想到居然要和[&弟弟:妹妹]对决！
+[k]
+
+[charaFace H 4]
+
+＠贞德
+不过很遗憾，我也没办法。
+[k]
+
+[charaFace H 12]
+
+＠贞德
+我要彻底打……温柔地教导你，[r]让你知道[&弟弟:妹妹]是赢不了姐姐的！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+刚才好像不小心把心里话说出来了！[r]坏了。她和机械伊丽亲是同种类型！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠葛饰北斋
+什么意思！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠卡米拉
+就是说为了胜利不择手段，[r]哪怕对亲人也毫不留情！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 0.6]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠贞德
+那我要上了哦。
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaFace H 2]
+
+＠贞德
+[f large]姐姐光炮！！
+[k]
+
+[messageOff]
+[effect bit_talk_heart_beam]
+[wt 0.3]
+[se ade317]
+[seVolume ade317 0 0]
+[seVolume ade317 0.8 0.4]
+[wt 3.0]
+[seStop ade317 0.4]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Λ
+呀[messageShake 0.05 7 5 0.5]啊啊啊啊！？[r]那……那个光炮是什么啊！？
+[k]
+
+[messageShakeStop]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠贞德
+这是姐姐为[&弟弟:妹妹]发射的爱之光炮！
+[k]
+
+[charaFace H 12]
+
+＠贞德
+一旦被这个击中，[r]御主技能就会全部为我所用。
+[k]
+
+[charaFace H 1]
+
+
+＠贞德
+回[effect bit_talk_release]避！[cueSe Battle bas9][wt 1.0]　强[effect bit_talk_attack_buf]化！[cueSe Battle bas10][wt 0.7][cueSeStop bas10 0.3][wt 0.3]　回[effect bit_talk_cure]复！[cueSe Battle bas3][r]完美到姐姐我好高兴啊！
+[k]
+
+
+[effectStop bit_talk_release]
+[effectStop bit_talk_cure]
+[effectStop bit_talk_attack_buf]
+
+[charaSet D 6019300 1 风魔小太郎]
+[charaSet I 1098178700 1 莉丝XP]
+
+[charaFace H 6]
+
+＠贞德
+然后是莉丝XP！[r]嘎吱嘎吱狠狠地咬他们吧！
+[k]
+
+＠贞德
+嗯，用[#Jaws:大白鲨]！
+[k]
+
+[bgmStop BGM_EVENT_3 0.1]
+
+＠众人
+[charaTalk A]
+……[r]……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_27 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Λ
+这是怎么回事，[r]但凡水边的圣女脑子都有问题吗！？
+[k]
+
+[charaFace A 2]
+
+＠Λ
+还有，刚才的笑话也太冷了吧！[r]比我的花滑还冷！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+
+＠贞德
+也……也不用特别指出这个问题吧！
+[k]
+
+[messageOff]
+[se ad77]
+[fadeout black 0.2]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaScale A 1.4]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[fadein black 0.2]
+[wait fade]
+[seStop ad77 0.1]
+
+＠Λ
+喂御主！　别躲在我的身后！[r]那女人的眼神太可怕了！
+[k]
+
+？1：我做不到。
+？2：一和她对视我就会变成[&弟弟:妹妹]……！
+？！
+
+＠Λ
+洗脑，这就是洗脑吧！？[r]就算是BB也不至于做出洗脑这种事啊……！
+[k]
+
+
+[charaFace A 5]
+
+＠Λ
+呜……没办法了。
+[k]
+
+[charaFace A 2]
+
+＠Λ
+所有人，让御主退后。[r]现在只能靠从者来一决胜负了……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaScale A 1.0]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠贞德
+那可不行。[r][&弟弟:妹妹]必须服从姐姐……！
+[k]
+
+[charaFace H 6]
+
+＠贞德
+MyonMyonMyon！
+[k]
+
+[messageOff]
+[effect bit_talk_heart_beam]
+[wt 0.3]
+[se ade317]
+[seVolume ade317 0 0]
+[seVolume ade317 0.8 0.4]
+[wt 3.0]
+[seStop ade317 0.4]
+
+？1：唔，唔唔……姐……姐姐……
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Λ
+不行，再这样下去的话……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_27 1.0]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠贞德
+最后一击。[r]姐姐光……
+[k]
+
+[messageOff]
+[fadeout black 0.2]
+[wait fade]
+
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth B 2]
+
+[charaFadeout H 0]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+[fadein black 0.2]
+[wait fade]
+
+[bgm BGM_EVENT_63 0.1]
+
+＠刑部姫
+技能『千代纸大队长』发动！
+[k]
+
+＠刑部姫
+用非致死性纸战车炮击，[r]会将御主以时速70km的速度向后方打飞！
+[k]
+
+[charaFace B 2]
+
+＠刑部姫
+Ｏ・Ｓ・Ａ・Ｋ・Ａ・Ｂ・Ｅ！
+[k]
+
+[messageOff]
+
+[se ad609]
+[seVolume ad609 0 0.6]
+[seStop ad609 1.0]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 0.1]
+[charaPut J 1]
+[charaEffect J bit_talk_41]
+[shake 0.02 3 3 0]
+[wt 1.6]
+
+
+＠刑部姫
+小太郎，交给你了！
+[k]
+
+＠D：风魔小太郎
+[charaTalk D]
+明白！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 0,-40]
+[charaMove D 0,0 0.1]
+[wt 0.5]
+
+[shakeStop]
+[charaEffectStop J bit_talk_41]
+[se ade33]
+[seVolume ade33 0 0.6]
+[charaShake D 0.07 0 3 0.2]
+[charaMove D 10,0 0.2]
+[wt 0.7]
+
+？1：得……得救了……！
+
+[charaFace D 10]
+
+＠D：风魔小太郎
+主公的安全比什么都重要。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaSet B 1098176810 1 刑部姫]
+
+？2：谢谢你们俩！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+唔呵呵。[r]能帮上忙就好！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠卡米拉
+现在只能到此为止了。[r]暂时撤退，Λ。
+[k]
+
+[charaFace C 1]
+
+＠卡米拉
+与其因纠结任务失败而被逮捕，还不如暂时撤退[r]以确保下次偷窃能成功，这才算得上美丽的怪盗。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Λ
+太屈辱了……[r]我竟然在马戏团前撤退……！
+[k]
+
+[charaFace A 2]
+
+＠Λ
+这全都是喊她为姐姐的[#御主:你]的错！
+[k]
+
+＠Λ
+之后我再收拾你，[r]觉悟吧！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠贞德
+唔。[r]我不会让你欺负[&弟弟:妹妹]。
+[k]
+
+[charaFace H 2]
+
+＠贞德
+莉丝XP，上！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠莉丝XP
+陪[charaMoveScale I 1.1 0.3]我玩。[wt 0.5]陪[charaMoveScale I 1.2 0.3]我玩。[wt 0.5]陪[charaMoveScale I 1.3 0.3]我玩。
+[k]
+
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaScale I 1.0]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+就像免费恐怖游戏那种气势，[r]径直追过来了[line 3]！
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[se ad59]
+[wt 0.3]
+[seStop ad59 1.0]
+[wt 0.8]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Λ
+啊我受够了……我是不会忘记屈辱和嫉妒的女人！[r]给我记住，贞德！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠贞德
+嗯，我会好好记住！[r]随时欢迎！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Λ
+唔……这种白忙活的感觉真是太难受了！
+[k]
+
+？1：全体撤退[line 6]！
+？！
+
+[messageOff]
+[wipeout rightToLeft 0.4 1.0]
+[se ad55]
+[se ad59]
+[cueSe Battle bac343]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 82000]
+[shake 0.05 4 4 0]
+[wt 1.0]
+
+[wipein leftToRight 0.4 1.0]
+[wait wipe]
+
+[bgmStop BGM_EVENT_63 1.5]
+[wt 1.5]
+
+[wipeout rightToLeft 0.4 1.0]
+[wait wipe]
+
+[scene 77801]
+
+[seStop ad55 1.0]
+[seStop ad59 1.0]
+[cueSeStop bac343 1.0]
+[wt 0.5]
+
+[se ad443]
+[se ad133]
+[se ad453]
+
+[charaSet E 98100400 1 玛修]
+[charaSet H 5014001 1 梅菲斯托费勒斯]
+[charaSet I 5004001 1 童谣]
+
+[wt 1.0]
+
+[wipein leftToRight 0.8 1.0]
+[wait wipe]
+
+[seStop ad443 0.7]
+[seStop ad133 0.7]
+[seStop ad453 0.7]
+[shake 0.05 4 4 0.8]
+[wt 1.0]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠齐格飞
+跑到这里应该差不多了吧……
+[k]
+
+[charaFace G 2]
+
+＠齐格飞
+御主，振作一点！[r]醒醒！　要保持神志清醒！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.3]
+
+[shake 0.07 6 1 0.4]
+[se ad77]
+[seVolume ad77 0 0.5]
+[wt 0.2]
+[se ad77]
+[seVolume ad77 0 0.5]
+[wt 0.2]
+[cameraHome 0.1]
+[seStop ad77 0.1]
+[wt 0.8]
+
+？1：我……我到底……
+？！
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠D：风魔小太郎
+看来终于恢复意识了呢。[r]太好了……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠卡米拉
+你做了个噩梦。[r]没错……很可怕的梦……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Λ
+可怕得有些过头了。
+[k]
+
+＠Λ
+坚持认为自己是御主姐姐的从者[r]除了噩梦还能是什么啊。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+说得太对了！
+[k]
+
+＠刑部姫
+鲨鱼 with 自称姐姐！[r]简直是无敌组合啊！
+[k]
+
+[charaFace B 4]
+
+＠刑部姫
+一靠近她就会被洗脑，[r]御亲差点就叛变了。
+[k]
+
+[charaFace B 0]
+
+＠刑部姫
+……那难道类似于泳装剑豪的权能吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠齐格飞
+不，应该是本性吧。[r]尽管还是很可怕……
+[k]
+
+＠齐格飞
+再加上那种奔放，[r]可以算泳装剑豪里一等一的存在了吧。
+[k]
+
+＠齐格飞
+从各种角度来说。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠玛修
+……哎，咦？[r]御主。
+[k]
+
+＠玛修
+刚才只顾着逃跑，[r]都没注意到……
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[bgmStop BGM_EVENT_5 0.7]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-45]
+
+[scene 77800]
+
+[charaSet A 6005001 1 杰克]
+[charaSet B 3026001 1 贞德·Alter·Santa·Lily]
+
+[cameraHome 0.1]
+
+[pictureFrame cut049_frame01]
+[wt 0.5]
+
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+[wt 0.3]
+
+
+[charaFace H 1]
+＠梅菲斯托费勒斯
+哎呀哎呀哎呀，又出现了！[r]突然的闯入者！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 0,-45]
+
+＠童谣
+欢迎！  欢迎！[r]来来，我们来准备茶会吧！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-45]
+
+＠杰克
+哇～哇～。
+[k]
+
+＠杰克
+开[wt 0.1]·[wt 0.1]始[wt 0.1]·[wt 0.1]解[wt 0.1]·[wt 0.1]体[wt 0.1]·[wt 0.1]吧[wt 0.1]♪
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 0,-45]
+
+＠贞德·Alter·Santa·Lily
+是即兴表演吧！
+[k]
+
+[charaFace B 1]
+
+＠贞德·Alter·Santa·Lily
+没问题，我是喜欢即兴表演懂规矩的好孩子！
+[k]
+
+
+[charaFace B 6]
+
+＠贞德·Alter·Santa·Lily
+好了，开始表演吧～！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 0,-45]
+
+＠玛修
+这不是在舞台上吗！
+[k]
+
+？1：这里是舞台上啊！
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 0,-45]
+
+＠宫本伊织
+你们两个真是心有灵犀呢！[r]总之先战斗吧！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 0,-45]
+
+＠梅菲斯托费勒斯
+如果能表演一场华丽的对决，[r]那将是多么DEATH啊！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-45]
+
+＠齐格飞
+句尾充满了杀意……！[wt 0.6][charaFace G 2][r]好吧。只能上了。御主，请指示！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

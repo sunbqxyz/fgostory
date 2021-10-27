@@ -1,0 +1,346 @@
+
+＄02-00-01-12-3-0
+
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 1002001 1 阿尔托莉雅·Alter]
+[charaSet C 11003001 1 贞德·Alter]
+[charaSet D 2023000 1 莫里亚蒂]
+[charaSet E 98109100 1 新宿的Assassin]
+[charaSet F 98111500 1 通讯用杂音]
+[charaSet G 98109100 1 雀蜂]
+[charaSet H 98109100 1 雀蜂]
+
+[soundStopAll]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 39100]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠贞德·Alter
+好，搞定！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠玛修
+击败罗密欧与朱丽叶了！[r]莎士比亚先生，对不起！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠阿尔托莉雅·Alter
+……差不多了吧。[r]御主，准备好解除变装了吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠玛修
+御主，敌方又出现增援……是大军！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[messageOff]
+
+[cameraMove 0.5 0,0 1.2]
+[wait camera]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFace G 0]
+[charaFace H 0]
+[charaScale E 0.83]
+[charaScale G 0.83]
+[charaScale H 0.83]
+
+[se ad59]
+[charaFadein E 0.7 0,-48]
+[seStop ad59 1.0]
+[wt 1.4]
+
+[cameraMove 1.0 -80,0 1.2]
+[se ad59]
+[charaFadein G 0.7 384,-48]
+[seStop ad59 1.0]
+[wt 1.4]
+[wait camera]
+
+[cameraMove 0.5 80,0 1.2]
+[se ad59]
+[charaFadein H 0.7 -384,-48]
+[seStop ad59 1.0]
+[wt 1.4]
+[wait camera]
+
+[cameraMove 0.2 0,0 1.2]
+＠新宿的Assassin
+包围他们！[r]绝对不能让她们使用宝具！
+[k]
+
+＠新宿的Assassin
+不过放心吧，我会看准破绽解决她们的！
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.4]
+[charaFadeout G 0.4]
+[charaFadeout H 0.4]
+[cameraHome 0.5]
+[wait camera]
+
+[charaTalk on]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠玛修
+……还是不行。[r]灵基数值和以前不一致！
+[k]
+
+＠玛修
+新宿的Assassin毫无疑问就在数十个敌人中……
+[k]
+
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠阿尔托莉雅·Alter
+好，只要这些人中[#有人]是Assassin，[r]那就没问题了。
+[k]
+
+＠阿尔托莉雅·Alter
+来吧，御主！
+[k]
+
+
+？1：预·备！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[se ad7]
+[shake 0.05 4 4 0.4]
+[wt 0.4]
+[bgmStop BGM_EVENT_3 0.7]
+[wt 0.3]
+
+[charaFace E 0]
+[charaFace G 0]
+[charaFace H 0]
+[charaScale E 1.0]
+[charaScale G 1.0]
+[charaScale H 1.0]
+[charaDepth E 9]
+[charaDepth G 1]
+[charaDepth H 1]
+[charaFadein E 0.1 1]
+[charaFadein G 0.1 2]
+[charaFadein H 0.1 0]
+＠A：新宿的Assassin
+哎……！？
+[k]
+
+＠A：雀蜂
+……？
+[k]
+
+＠A：新宿的Assassin
+[#迦勒底的]……御主！？
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaSet E 98109100 1 新宿的Assassin]
+[wt 0.4]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFace G 0]
+[charaFace H 0]
+[charaDepth E 9]
+[charaDepth G 1]
+[charaDepth H 1]
+[charaFadein E 0.1 1]
+[charaFadein G 0.1 2]
+[charaFadein H 0.1 0]
+
+[effect bit_talk_41]
+
+？1：是你！
+？！
+
+[bgm BGM_EVENT_49 0.1]
+
+[charaShake E 0.05 4 0 1.0]
+[effectStop bit_talk_41]
+[wt 1.0]
+
+[charaFadeout E 0.4]
+[charaFadeout G 0.4]
+[charaFadeout H 0.4]
+[wt 0.7]
+
+[charaSet E 6026000 1 新宿的Assassin]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠阿尔托莉雅·Alter
+找到了，Assassin[line 3]！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+[se ad266]
+[seStop ad266 1.0]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.7 1]
+[wt 1.0]
+＠新宿的Assassin
+唔，失策了……！[r]居然被这种愚蠢无聊的计策给……！！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠莫里亚蒂
+难道不应该称赞这是绝妙地预估了心理状态的[r]极为毒辣的计策吗！？
+[k]
+
+＠莫里亚蒂
+好了，只要在房间内，Assassin是逃不掉的！[r]尽情把他痛扁一顿吧！
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠玛修
+目标，锁定新宿的Assassin！[r]请集中攻击解决他！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠新宿的Assassin
+切。[r]虽然我知道这天迟早会来的。
+[k]
+
+[charaFace E 8]
+＠新宿的Assassin
+只是比我预料的还要早……不，是晚吧？[r]不管怎么说，这也算是我乱来的结果。
+[k]
+
+＠新宿的Assassin
+我没有任何怨言。[r]但话说回来，我还不一定会输呢！
+[k]
+
+[charaFace E 9]
+＠新宿的Assassin
+好了，你们几个！[r]死吧！　为了本大爷！　为了你！
+[k]
+
+[charaFace E 7]
+＠新宿的Assassin
+为了荣华为了欲望，都给我去死吧！[r]我的宿星乃天巧星！
+[k]
+
+
+[charaFace E 8]
+＠新宿的Assassin
+梁山泊百八豪杰之一，浪子燕青！[r]出击[line 3]！！
+[k]
+
+[messageOff]
+
+[se ad10]
+[seVolume ad10 0 0.4]
+[se ad38]
+[seVolume ad38 0 0.6]
+[shake 0.05 0 4 0.4]
+[wt 1.0]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_49 0.4]
+[wait fade]
+[soundStopAll]
+[end]

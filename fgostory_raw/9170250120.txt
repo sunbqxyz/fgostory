@@ -1,0 +1,629 @@
+
+
+
+
+
+＄91-70-25-01-2-0
+
+[soundStopAll]
+[charaSet A 7025000 1 土方]
+[charaSet B 1098118900 1 敌军]
+[charaSet C 98006300 1 队员]
+
+[imageSet D cut104_text27 1]
+[charaSet E 98111500 1 特效用dummy]
+
+[charaEffect E bit_talk_41]
+[charaPut E 0,-2000]
+
+[bgm BGM_EVENT_3 0.1 0.7]
+
+[scene 47000]
+[fadein black 1.0]
+[wait fade]
+
+[se ad647]
+[seVolume ad647 0.3 0.7]
+[wt 1.5]
+[se bac7]
+[wt 0.3]
+[se bac6]
+[wt 0.4]
+[se bac5]
+[se ad161]
+
+[seStop ad647 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_3 0.5 1.0]
+
+＠敌军
+这种异样的强大是怎么回事！？　跟说好的不一样啊！
+[k]
+
+＠敌军
+难道这是幕军的残党！？
+[k]
+
+[messageOff]
+[wt 0.2]
+
+[se bac135]
+[effect bit_talk_h_slash01]
+
+[wt 0.9]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠土方
+不是幕军，我们是……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-10]
+
+[se ad35]
+
+[charaPut E 0,100]
+
+＠土方
+[f large]是新选组！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut E 0,-2000]
+[charaScale A 1.0]
+
+＠敌军
+竟然是……新选组！？
+[k]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠土方
+敌人溃败了，一个个杀掉他们！！
+[k]
+
+＠土方
+新选组，前进！！
+[k]
+
+[messageOff]
+[se ad647 0.3 0.5]
+
+[wt 2.0]
+
+[fadeout black 1.0]
+[seStop ad647 1.0]
+[bgmStop BGM_EVENT_3 1.0]
+[wait fade]
+[charaFadeout A 0.1]
+[wt 0.5]
+[scene 47001]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_50 0.1]
+
+[wt 0.5]
+
+[se ad413]
+[seVolume ad413 0 0.5]
+[seVolume ad413 1.0 0.8]
+[wt 2.5]
+
+[seStop ad413 1.0]
+[wt 1.0]
+
+＠队员
+真是久违的大胜利呢副长！
+[k]
+
+＠队员
+不，现在应该叫陆军奉行并了吧？
+[k]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠土方
+不要那么称呼我，显得一点都不沉着。[r]还是像以往一样，叫副长就可以了。
+[k]
+
+＠队员
+刚来虾夷的时候还担心会怎么样呢，[r]现在看来说不定可以击退萨长那帮家伙了呢。
+[k]
+
+＠土方
+嗯嗯，只要有我们在，就不会让他们通过这二股口的。[r]萨长那帮家伙没有一个人能踏上箱馆的土地。
+[k]
+
+＠土方
+在人数这么少的情况下，你们做得很出色。
+[k]
+
+＠土方
+虽然我很想好好夸奖你们，[r]但今天酒还是免了吧。
+[k]
+
+＠队员
+这已经很难得了！[r]刚才那已经是最好的赞美了。
+[k]
+
+＠土方
+喂喂，喝太多坏了规矩的话我也很难办啊。[r]今天就只喝一杯吧。
+[k]
+
+＠队员
+不愧是严格的鬼副长！[r]哈哈哈！
+[k]
+
+[messageOff]
+
+[wipeout rollRight 1.5 0.5]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.8]
+[wipein rollLeft 1.5 0.5]
+[wait wipe]
+[wt 0.4]
+
+
+[se ad413]
+[seVolume ad413 0.3 0.5]
+
+[wt 2.0]
+
+[seStop ad413 1.0]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠土方
+喂，新人。你也在喝吗？
+[k]
+
+？1：你变了呢，土方副长。
+？2：你还是没变呢，土方副长。
+
+？！
+
+[charaFace A 0]
+＠土方
+是吗？
+[k]
+
+[charaFace A 4]
+＠土方
+…………
+[k]
+
+＠土方
+……不，也许你说的没错。
+[k]
+
+[charaFace A 7]
+＠土方
+我明天要回五棱郭准备增援。
+[k]
+
+＠土方
+你也一起去，我有件事要拜托你。
+[k]
+
+？1：知道了。
+？2：要拜托……我？
+
+？！
+
+[charaFace A 0]
+＠土方
+嗯嗯，你和我作为曾经的新选组的成员幸存到现在，[r]实在是很难得了。
+[k]
+
+＠土方
+所以我有事要拜托你。
+[k]
+
+[messageOff]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_50 1.5]
+[wait fade]
+[charaFadeout A 0.1]
+[scene 10000]
+
+[charaFadein D 0.1 30,-210]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[wait touch]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[charaSet A 7025001 1 土方]
+
+[scene 46801]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠土方
+[line 3]你返回江户。
+[k]
+
+＠土方
+去位于日野的我的家中转达这一路的战况。
+[k]
+
+？1：竟然……
+
+？！
+
+＠土方
+拿着这封信，对了……还有这张照片。
+[k]
+
+[charaFace A 8]
+＠土方
+呵，把我照得很有男子气概嘛。[r]真不错啊。
+[k]
+
+？1：我要陪你走到最后！
+
+？！
+
+[charaFace A 9]
+＠土方
+违反命令的话我会杀了你哦！
+[k]
+
+？1：…………
+
+？！
+
+[charaFace A 7]
+＠土方
+…………
+[k]
+
+[charaFace A 8]
+＠土方
+去了日野之后帮我照顾我的亲人。[r]路上小心，新人。
+[k]
+
+[charaFace A 0]
+＠土方
+……不，现在还叫新人就太奇怪了。
+[k]
+
+＠土方
+你的名字，我记得是叫市村……
+[k]
+
+[charaFace A 7]
+＠土方
+…………
+[k]
+
+＠土方
+不，[%1]……是你吧？
+[k]
+
+？1：你想起来了吗？
+？2：这是土方副长的……记忆……？
+
+？！
+
+[charaFace A 8]
+＠土方
+那么，这是怎么回事呢……
+[k]
+
+＠土方
+究竟从者的记忆哪些是真的，[r]哪些是假的，我也不是很清楚啊。
+[k]
+
+＠土方
+不过，就算这是我的记忆也好，别人的记忆也好，[r]现在也无所谓了。
+[k]
+
+[charaFace A 0]
+＠土方
+反正这都是遥远的远方所发生的事。
+[k]
+
+＠土方
+那时只有誓言之诚在胸中奔涌。
+[k]
+
+＠土方
+…………
+[k]
+
+＠土方
+但是，我的新选组如今也并没有死。
+[k]
+
+＠土方
+…………
+[k]
+
+[charaFace A 7]
+＠土方
+好了，你该走了…………
+[k]
+
+＠土方
+从此以后便是日常的地狱、[r]我一个人的新选组了。
+[k]
+
+？1：……你要走了吗？
+？2：从此以后……
+
+？！
+
+[charaFace A 0]
+＠土方
+……嗯嗯，我要走了。
+[k]
+
+＠土方
+不管是怎样的战场，不管是怎样的地狱，[r]我的诚都不会有任何改变。
+[k]
+
+[charaFace A 7]
+＠土方
+[line 3]毕竟有我在的地方就是新选组。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_11 1.5]
+[wait fade]
+[charaFadeout A 0.1]
+[imageSet C cut104_text28 1]
+
+[imageSet D cut104_text29 1]
+
+[imageSet E cut104_text30 1]
+
+[imageSet F cut104_text31 1]
+
+[imageSet G cut104_text32 1]
+
+[imageSet H cut104_text33 1]
+
+[scene 10000]
+[wt 1.0]
+
+[charaFadein C 0.1 220,-300]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+[wait touch]
+
+[charaFadeout C 0.4]
+[wt 1.0]
+
+[charaFadein D 0.4 0,-210]
+
+[wt 1.5]
+[wait touch]
+
+[charaFadeout D 0.4]
+[wt 1.0]
+
+[charaFadein E 0.4 0,-210]
+
+[wt 1.5]
+[wait touch]
+
+[charaFadeout E 0.4]
+[wt 1.0]
+
+[charaFadein F 0.4 50,-210]
+
+[wt 1.0]
+[wait touch]
+
+[charaFadeout F 0.4]
+[wt 1.0]
+
+[charaFadein G 0.4 0,-210]
+
+[wt 1.0]
+[wait touch]
+
+[charaFadeout G 0.4]
+[wt 1.0]
+
+[charaFadein H 0.4 50,-210]
+
+[wt 1.0]
+[wait touch]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+[charaSet A 7025000 1 土方]
+[charaSet C 98006200 1 亡灵]
+[charaSet D 98006200 1 亡灵1]
+[charaSet E 98006200 1 亡灵2]
+
+[scene 40800]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠队员
+不行了，土方副长！　感觉要死了！
+[k]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠土方
+别废话！[r]要是在这里输了的话怎么有脸去见地下的近藤局长！！
+[k]
+
+＠土方
+听好了，临阵退缩者斩！
+[k]
+
+＠土方
+杀[messageShake 0.05 4 4 0.2]敌，[wt 0.5][messageShake 0.05 4 4 0.2]前进！[wt 0.5]　[messageShake 0.05 4 4 0.2]杀敌！！[wt 0.5]　[messageShake 0.05 4 4 0.2]前进！！！！
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[se ad647]
+[seVolume ad647 0.3 0.7]
+[wt 1.5]
+[seStop ad647 0.5]
+[wt 1.2]
+
+[charaTalk C]
+[charaFace C 0]
+[se ad354]
+[seVolume ad354 0.5 0.5]
+[charaFadein C 0.4 1]
+[wt 0.4]
+[seStop ad354 0.8]
+＠亡灵
+新…选组……？
+[k]
+
+＠亡灵
+新[messageShake 0.05 4 4 0.4]选组……！
+[k]
+
+[messageOff]
+
+[charaTalk D]
+[charaFace D 0]
+[se ad354]
+[seVolume ad354 0.5 0.5]
+[charaFadein D 0.4 -300,0]
+[wt 0.4]
+[seStop ad354 0.8]
+＠D：亡灵
+真可恨，新选组……真可惜，新选组……！
+[k]
+
+[messageOff]
+[charaTalk E]
+[charaFace E 0]
+[se ad354]
+[seVolume ad354 0.5 0.5]
+[charaFadein E 0.4 300,0]
+[wt 0.4]
+[seStop ad354 0.8]
+＠E：亡灵
+你们……你们……！
+[k]
+
+[charaTalk off]
+＠亡灵
+[f large]你们连下地狱的资格都没有……！！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠土方
+……呵，好像终于有点意思了。
+[k]
+
+＠土方
+不过我要去的战场可不是这样的。
+[k]
+
+＠土方
+……我已经听厌了你们这些怨恨的话。
+[k]
+
+＠土方
+没错，我的战斗还是老样子。
+[k]
+
+＠土方
+不管什么时候都是彻头彻尾的败仗。
+[k]
+
+[messageOff]
+[charaFace A 4]
+[bgmStop BGM_EVENT_24 0.1]
+
+[bgm BGM_EVENT_91 0.1]
+[charaFace A 9]
+＠土方
+但是！　……我啊！
+[k]
+
+＠土方
+只要有我在新选组就不会解散！
+[k]
+
+＠土方
+不管是在怎样的战场和地狱，[r]我的诚都不会被任何人挫伤！
+[k]
+
+＠土方
+集中精神前进！
+[k]
+
+＠土方
+集中精神杀敌！
+[k]
+
+[charaFace A 6]
+＠土方
+[line 3]上吧，新选组，前进！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_91 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

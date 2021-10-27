@@ -1,0 +1,239 @@
+
+＄94-01-52-55-1-0
+
+
+
+[soundStopAll]
+
+[bgm BGM_EVENT_65 0.1]
+
+
+
+[messageOff]
+[effectPause bit_talk_parasolwipe]
+[wait effectStart bit_talk_parasolwipe]
+
+
+[branch _PlayEffect_1st PM4 1]
+
+
+[label _PlayEffect_etc]
+
+[tapSkip _from_TapSkip_etc]
+
+[scene 10001]
+
+[fadein white 1.0]
+[wait fade]
+
+[effectPause bit_talk_goal1_6]
+[wait effectStart bit_talk_goal1_6]
+
+[effectStart bit_talk_parasolwipe]
+[wt 1.0]
+
+[effectStart bit_talk_goal1_6]
+[wait effect bit_talk_goal1_6]
+[label _from_TapSkip_etc]
+
+[effectDestroy bit_talk_goal1_6]
+[effectDestroy bit_talk_parasolwipe]
+[fadein black 0]
+[wait fade]
+
+[branch _PlayEffect_End]
+
+
+[label _PlayEffect_1st]
+
+[tapSkip _from_TapSkip_1st]
+
+[effectPause bit_talk_winner1_6]
+[wait effectStart bit_talk_winner1_6]
+
+[scene 10001]
+
+[fadein white 1.0]
+[wait fade]
+
+[effectStart bit_talk_winner1_6]
+
+[wt 4.9]
+[voice 402600_0_M820]
+
+[wt 1.0]
+[voice 402600_0_M821]
+
+[wt 5.0]
+
+[effectStart bit_talk_parasolwipe]
+[scene 10001]
+[wt 1.0]
+[scene 44300]
+[wait effect bit_talk_parasolwipe]
+
+[label _from_TapSkip_1st]
+
+[voiceStop]
+[scene 44300]
+[effectDestroy bit_talk_winner1_6]
+[effectDestroy bit_talk_parasolwipe]
+[fadein black 0]
+[wait fade]
+
+
+[label _PlayEffect_End]
+
+[bgmStop BGM_EVENT_65 0.3]
+[wt 0.4]
+
+[branch _PlayVoice_Start PM4 1]
+
+[branch _PlayVoice_End]
+
+
+
+
+[label _PlayVoice_Start]
+
+[charaSet A 5030001 1 叙述者的Caster]
+[charaSet B 6028001 1 尼托克丽丝]
+
+[flagRandom _PlayVoiceNo 1 3]
+
+
+[branch _PlayVoice_3rd _PlayVoiceNo 3]
+[branch _PlayVoice_2nd _PlayVoiceNo 2]
+[branch _PlayVoice_1st _PlayVoiceNo 1]
+
+
+
+[label _PlayVoice_1st]
+
+[bgm BGM_EVENT_64 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFace A 0]
+[charaDepth B 1]
+[charaDepth A 9]
+[charaFadein B 0.4 2]
+[charaFadein A 0.4 0]
+[wt 0.7]
+
+[charaFace B 9]
+＠尼托克丽丝
+[tVoice ChrVoice_9010005 0_M670]
+我[voice 9010005_0_M670]听到了，称颂法老的民众之声！　[wait tVoice]
+[k]
+[tVoice ChrVoice_9010005 0_M671]
+[charaFace B 1]
+虽说获胜是理所当然的，但这份心意很好！[wait tVoice]
+[k]
+
+[charaFace A 3]
+＠叙述者的Caster
+[tVoice ChrVoice_9010005 0_M672]
+理应获胜之人获胜，同时也带给人们喜悦的话。[wait tVoice]
+[k]
+[tVoice ChrVoice_9010005 0_M673]
+嗯嗯[line 2]这就是所谓的『王道故事』吧……[twt 0.8][charaFace A 7][twt 2.6][charaFace A 0][wait tVoice]
+[k]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_2nd]
+
+[bgm BGM_EVENT_64 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace A 0]
+[charaDepth B 1]
+[charaDepth A 9]
+[charaFadein B 0.4 2]
+[charaFadein A 0.4 0]
+[wt 0.7]
+
+[charaFace B 2]
+＠尼托克丽丝
+[tVoice ChrVoice_9010005 0_M680]
+看到了吧！　[wait tVoice]
+[k]
+[tVoice ChrVoice_9010005 0_M681]
+[charaFace B 9]
+法老的传说又新添了一份荣耀！　[wait tVoice]
+[k]
+
+[charaFace A 7]
+＠叙述者的Caster
+[tVoice ChrVoice_9010005 0_M682]
+若能如愿，但愿这能够带来幸福的大团圆……[wait tVoice]
+[k]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_3rd]
+
+[bgm BGM_EVENT_64 0.1]
+
+[charaTalk A]
+[charaFace B 0]
+[charaFace A 0]
+[charaDepth B 1]
+[charaDepth A 9]
+[charaFadein B 0.4 2]
+[charaFadein A 0.4 0]
+[wt 0.7]
+
+[charaFace A 0]
+＠叙述者的Caster
+[tVoice ChrVoice_9010005 0_M690]
+竞速赛的秘诀果然是『安全第一』啊。[wait tVoice]
+[k]
+
+[charaFace B 8]
+＠尼托克丽丝
+[tVoice ChrVoice_9010005 0_M691]
+实际上确实赢了，所以我也不好一概否定……[wait tVoice]
+[k]
+[tVoice ChrVoice_9010005 0_M692]
+[charaFace B 7]
+但我觉得还是要看情况。[wait tVoice]
+[k]
+
+[charaFace A 2]
+＠叙述者的Caster
+[tVoice ChrVoice_9010005 0_M693]
+不，必须用尽全力。[wait tVoice]
+[k]
+[tVoice ChrVoice_9010005 0_M694]
+[charaFace A 7]
+必须做到最大、全力、安全第一才行。[wait tVoice]
+[k]
+
+[charaFace A 3]
+＠叙述者的Caster
+[tVoice ChrVoice_9010005 0_M695]
+安全万岁。安全最好。[wait tVoice]
+[k]
+
+[charaFace B 7]
+＠尼托克丽丝
+[tVoice ChrVoice_9010005 0_M696]
+唉……总之，现在先为我们的胜利感到喜悦吧！[twt 1.7][charaFace B 9][wait tVoice]
+[k]
+
+
+
+[label _PlayVoice_End]
+
+
+[messageOff]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_64 0.4]
+[wait fade]
+[soundStopAll]
+[end]

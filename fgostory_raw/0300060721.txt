@@ -1,0 +1,307 @@
+
+
+
+＄03-00-06-07-2-1
+
+
+[soundStopAll]
+
+[charaSet A 1017001 1 武藏]
+[charaSet B 8001400 1 武装玛修]
+[charaSet C 8001410 1 玛修]
+[charaSet D 1098128200 1 凯妮斯]
+
+[charaSet G 1098190300 1 尼古拉·特斯拉]
+[charaSet H 1098123210 1 戈尔德鲁夫]
+
+[charaSet S 5009000 1 特效用dummy]
+[charaSet T 5009000 1 特效用dummy]
+
+[charaPut T 1200,1200]
+[charaEffect T bit_talk_10_red_ai 0,33]
+
+[charaPut S 1200,1200]
+[charaEffect S bit_talk_10_LowLevel]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 91803]
+[backEffect bit_talk_sparks]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_63 0.1]
+
+[se ad609]
+[se ad608]
+[shake 0.02 3 3 0]
+[wt 2.0]
+
+[se ad876]
+[se ade212]
+[wt 1.5]
+
+[seStop ade212 0.5]
+[shakeStop]
+
+[charaPut A 1]
+[charaEffect A bit_talk_quickmove 0,0 V]
+
+[charaTalk A]
+[charaFace A 5]
+[charaSpecialEffect A appearanceReverse 0,0 0.2]
+[wt 0.1]
+
+[se ad223]
+[charaEffectStop A bit_talk_quickmove]
+[wt 0.6]
+[wait charaSpecialEffect A]
+
+＠武藏
+感觉神之外壳脱落好几片了！[r]情况如何……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth B 4]
+[charaDepth C 5]
+
+[se ade18]
+[seVolume ade18 0.0 0.5]
+[wt 0.5]
+[seStop ade18 0.8]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+[se ad658]
+[charaFace C 7]
+[charaFadein C 0.2 1]
+[wt 0.2]
+
+[charaFadeout B 0.4]
+[wt 0.4]
+
+
+[charaTalk on]
+＠玛修
+是的！　机神得墨忒耳的外壳看起来损伤很大！[r]确认疑似神核的部位暴露！
+[k]
+
+＠玛修
+[#灵基外骨骼:奥特瑙斯]输出稳定！[r]对神白刃战还能持续十数分钟！
+[k]
+
+
+？1：还差一步！
+？2：照这样继续攻击神核！
+
+？！
+
+[charaFace C 2]
+＠玛修
+是！
+[k]
+
+[bgmStop BGM_EVENT_63 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠凯妮斯
+慢着慢着慢着！　给我慢着！[r]你们这群家伙怎么净是些睁眼瞎啊！
+[k]
+
+[charaFace D 11]
+
+＠凯妮斯
+别小瞧克利洛诺弥亚啊！[r]……该死，那家伙的再生机能并没有完全停止！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[backEffectDestroy bit_talk_sparks]
+[scene 93903]
+
+
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.5 1]
+[wait wipe]
+
+[se adm20]
+[flashin once 0.3 1.2 FFFFFF80 FFFFFF00]
+[wt 1.5]
+
+[scene 93904 1.0]
+[se ad886]
+[seVolume ad886 0 0.5]
+[wt 3.0]
+[seStop ad886 2.0]
+
+
+[bgm BGM_EVENT_24 0.1]
+
+[se ad13]
+＠阿黛勒
+确认无限再生重开！[r]敌对机神损伤部位逐渐被填补！
+[k]
+
+＠马卡里俄斯
+明明就只差一点了……！[r]得墨忒耳！　你究竟要怎么对我们……
+[k]
+
+＠戈尔德鲁夫
+你……你……你……你们愣着干嘛，快集中攻击！[r]你不是可以中和大地的权能吗！？
+[k]
+
+＠凯妮斯
+我已经在中和了！[r]中和后那混账女神还拥有这等力量！
+[k]
+
+＠凯妮斯
+异闻带得墨忒耳，盖亚直系真不是盖的！[r]害我空欢喜一场！
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.5 1]
+[bgm BGM_EVENT_24 0.5 0.4]
+[wait wipe]
+
+[scene 91803]
+[backEffect bit_talk_sparks]
+[wt 1.0]
+
+[bgm BGM_EVENT_24 0.5 1.0]
+[wipein rectangleStripUpToDown 0.5 1]
+[wait wipe]
+
+[charaPut T 1]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠人工智能
+…………竟然……竟然如此……
+[k]
+
+＠人工智能
+没想到如此鸿运当头还无法打倒她。[r]敌对机体性能的预测范围已经放得很宽了，
+[k]
+
+[charaFace G 5]
+
+＠人工智能
+可她的再生能力还是超出了推算！[r]难道奥林波斯机神群超越了我们的总和吗！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠凯妮斯
+[f large]还没结束！
+[k]
+
+＠凯妮斯
+打倒了那个海神的你们，[r]怎么可以输给区区得墨忒耳！
+[k]
+
+＠凯妮斯
+再说了，宰杀你们可是我的任务！[r]我可不会让你们死在这种地方！
+[k]
+
+[charaFace D 2]
+＠凯妮斯
+没错吧，[%1]！[r]接着，这是小胡子给你们的『货物』！
+[k]
+
+＠凯妮斯
+他说这玩意就是货真价实的王牌！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 1.0]
+[wt 0.1]
+
+[se ad171]
+[charaShake D 0.02 3 3 0.4]
+[wt 1.0]
+
+[se ad215]
+[shake 0.02 3 3 0.4]
+[wt 0.6]
+
+
+
+？1：哎哟，总算接住了！
+
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+？1：与[#灵基外骨骼:奥特瑙斯]同规格的外装零件……？
+
+？！
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠玛修
+这[line 3]难道是[line 3]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaPut S 1]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠戈尔德鲁夫
+嗯！　正是我迦勒底的技术顾问与阿特拉斯院的[r]炼金术师共同设计的[#灵基外骨骼:奥特瑙斯]新装备！
+[k]
+
+＠戈尔德鲁夫
+为打倒人智遥不可及的宏大[#存在:生命][r]而制造出来的[#癌细胞:Cancer][line 3]
+[k]
+
+＠戈尔德鲁夫
+其名为[#黑色炮身:Black Barrel]！
+[k]
+
+＠戈尔德鲁夫
+被称作七大兵器之一的『天寿』的概念武装！
+[k]
+
+[charaFace H 2]
+＠戈尔德鲁夫
+其实我也不太了解啦！[r]哇哈哈哈哈哈哈！
+[k]
+
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+]

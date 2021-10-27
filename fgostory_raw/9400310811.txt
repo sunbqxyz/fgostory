@@ -1,0 +1,605 @@
+＄94-00-31-08-1-1
+
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+[charaSet A 8001001 1 玛修]
+[charaSet B 98003000 1 Dr.罗曼]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 98065000 1 埃尔梅罗Ⅱ世]
+[charaSet E 6015001 1 Assassin？]
+[charaSet F 4002001 1 伊斯坎达尔]
+[charaSet G 98061000 1 韦伯]
+
+[scene 25100]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+[fadein black 2.0]
+[wait fade]
+
+＠Assassin？
+嘁，不好对付……！
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFace D 0]
+[charaFadein A 0.1 2]
+[charaFadein D 0.1 0]
+＠玛修
+这位从者有点不太对劲。[r]
+[k]
+
+＠玛修
+和其他参加这场圣杯战争的从者相比，[r]感觉明显不同。
+[k]
+
+＠埃尔梅罗Ⅱ世
+嗯，但却有一种莫名的熟悉感。[r]不如说有点像是我们迦勒底这边的。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk C]
+[charaFadein C 0.1 0]
+＠芙芙
+芙，芙！
+[k]
+
+[charaFace A 12]
+＠玛修
+对，[r]总觉得像Archer的卫宫前辈……
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠Assassin？
+……！？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+
+[charaTalk B]
+[se ad13]
+[communicationChara 98003003 1 5 0 5]
+[wt 0.3]
+＠Dr.罗曼
+各位，小心！　出现新的从者反应。[r]径直向你们那里去了！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk D]
+[charaFace A 2]
+[charaFace D 5]
+[charaFadein A 0.1 2]
+[charaFadein D 0.1 0]
+＠埃尔梅罗Ⅱ世
+什么？　这个时间点上究竟是谁……[r]啊，难道！
+[k]
+
+＠玛修
+呜！　御主，快趴下！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[charaPut A 0]
+[charaPut B 1]
+[charaPut C 2]
+
+[se ad63]
+[charaEffect A bit_talk_lightning_03t]
+[charaEffect B bit_talk_lightning_03t]
+[charaEffect C bit_talk_lightning_03t]
+
+[wt 0.2]
+[shake 0.05 2 4 0.5]
+[wt 0.5]
+[se ad64]
+[wt 0.2]
+[shake 0.05 1 2 2.0]
+
+[fowardEffect bit_talk_lightning_06i]
+
+[charaEffectStop A bit_talk_lightning_03t]
+[charaEffectStop B bit_talk_lightning_03t]
+[charaEffectStop C bit_talk_lightning_03t]
+
+[wait fowardEffect bit_talk_lightning_06i]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠Assassin？
+……
+[k]
+
+[messageOff]
+[se bac1]
+[charaFadeout E 0.4]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠玛修
+没事吧？　御主。
+[k]
+
+？1：嗯，谢谢。
+
+[charaFace A 13]
+＠玛修
+太好了……不过Assassin却[r]趁着刚才的破绽[charaFace A 8]逃跑了。非常抱歉……
+[k]
+
+？2：Assassin上哪儿去了？
+
+[charaFace A 8]
+＠玛修
+……对不起。魔力反应跟丢了。[r]应该已经脱离战线了。
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠埃尔梅罗Ⅱ世
+在下的金锁阵也被刚才的雷击劈毁了。可恶……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+
+[bgmStop BGM_EVENT_5 0.5]
+[wt 0.5]
+[bgm BGM_EVENT_4 0.1]
+
+[charaTalk F]
+[charaFace G 0]
+[charaFace F 1]
+[charaFadein G 0.4 2]
+[charaFadein F 0.4 0]
+＠伊斯坎达尔
+哦哦哦？　战斗果然已经开始了啊。[r]看来我们稍微有些来迟了啊。小子。
+[k]
+
+[charaFace G 1]
+＠韦伯
+咦？　奇怪了。[r]我还以为我们会是最早赶到的呢。
+[k]
+
+＠玛修
+那……那是！
+[k]
+
+＠芙芙
+芙～呜！
+[k]
+
+？1：非常熟悉的面孔啊！
+？2：感觉事情有些麻烦了！
+
+？！
+
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠玛修
+是啊。那位从者大概是Rider吧，[r]而那位御主……
+[k]
+
+[charaFadeout A 0.1]
+
+[bgmStop BGM_EVENT_4 1.5]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠埃尔梅罗Ⅱ世
+什么叫最早赶到的啊，你这蠢材！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFace G 0]
+[charaFadein D 0.1 2]
+[charaFadein G 0.1 0]
+＠埃尔梅罗Ⅱ世
+你自己也应该很清楚[r]你找到这地方所使用的方法有多么幼稚吧！
+[k]
+
+＠埃尔梅罗Ⅱ世
+你该不会真以为[r]能靠这种方法超越其他一流的从者吧？
+[k]
+
+[charaFace G 2]
+＠韦伯
+你……你……你算什么东西啦！　怎么一见面就劈头盖脸……
+[k]
+
+[charaFace D 2]
+＠埃尔梅罗Ⅱ世
+不止这次，以前也好今后也是，[r]你每次都只是靠自己的好运气才能度过各种难关！
+[k]
+
+＠埃尔梅罗Ⅱ世
+只不过偶尔有一点好结果，[r]你就天真地以为是自己的实力！
+[k]
+
+[charaFace D 5]
+＠埃尔梅罗Ⅱ世
+就因为总是这个德行，你这家伙才一点都没长进！[r]该不会一点都没意识到吧！　哈啊！？
+[k]
+
+[charaFace G 2]
+＠韦伯
+等一下啊！[r]为什么才刚见面我就必须被你说教才行啦！
+[k]
+
+＠韦伯
+你到底是谁啊！[r]那个把小孩子掳走的Caster的御主难道不是你们吗！？
+[k]
+
+[charaFace D 5]
+＠埃尔梅罗Ⅱ世
+大笨蛋！　连好好观察状况都做不到吗！[r]就这德行居然敢吊儿郎当地跑来圣杯战争……
+[k]
+
+[charaFace D 2]
+＠埃尔梅罗Ⅱ世
+啊啊受不了了！　笨蛋！　笨蛋！　真是个大笨蛋！[r]吃鳗鱼鸡蛋盖饭吃到撑死吧！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 2]
+[charaFadein C 0.1 0]
+＠玛修
+……怎么说呢……君主·埃尔梅罗Ⅱ世先生[r]好像打开了奇怪方向的开关……
+[k]
+
+＠芙芙
+芙～呜……
+[k]
+
+？1：毕竟谁都无法忍受自己的黑历史吧。
+？2：因为挺有意思的，所以再旁观一会儿吧。
+
+？！
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+
+[charaTalk G]
+[charaFace D 5]
+[charaFace G 7]
+[charaFadein D 0.1 2]
+[charaFadein G 0.1 0]
+＠韦伯
+你……你这！　到底算哪根葱啦！[r]再说你的属性怎么看都是Caster吧？
+[k]
+
+＠韦伯
+就因为你无视圣杯战争的规则，老是做坏事，[r]才会被监督者盯上的吧！
+[k]
+
+[charaFace D 5]
+＠埃尔梅罗Ⅱ世
+[#胡扯:Bullshit]！　既然能透视属性，[r]起码也该注意到在下是拟似从者的这个事实啊你这个呆瓜！
+[k]
+
+[charaFace D 7]
+＠埃尔梅罗Ⅱ世
+啊啊太丢人了！[r]刻在你手上的令咒正在因为被糟蹋而哭泣啊！
+[k]
+
+[charaFace G 3]
+＠韦伯
+那……那……那……那个拟似什么的是什么啦？
+[k]
+
+
+[charaFace G 2]
+＠韦伯
+有两三骑Caster职阶什么的也太奇怪了吧！[r]我完全没听说过啊！
+[k]
+
+[se ad60]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 -900,0]
+[charaMove F 0 0.5]
+[charaMove G 2 0.5]
+[charaMove D 900,0 0.5]
+[wait charaMove]
+[charaFadeout D 0.1]
+[seStop ad60]
+
+＠伊斯坎达尔
+等一下小子，不管这家伙的职阶是Caster还是其他什么，[r]至少他不是这座工房的主人。
+[k]
+
+[charaFace G 1]
+＠韦伯
+哎？　为……为什么啊？
+[k]
+
+＠伊斯坎达尔
+根据这里残留的痕迹。[r]他既不打算利用地势，也不考虑周围的损害。
+[k]
+
+＠伊斯坎达尔
+这并非什么攻防战。而是想要逃走的家伙，[r]和企图阻止他逃跑的人之间的战斗痕迹。
+[k]
+
+＠伊斯坎达尔
+因此，无论是与我们擦身错过逃跑的家伙，[r]还是留在这里的家伙，都不是我们的目标。完全是其他人。
+[k]
+
+[charaFace D 1]
+＠埃尔梅罗Ⅱ世
+唔，不愧是征服王的战略眼光。[r]没想到能如此举一反三。
+[k]
+
+＠伊斯坎达尔
+这个先不谈了，那位愁眉苦脸的人啊。
+[k]
+
+[charaFadeout G 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFace F 0]
+[charaFadein D 0.1 2]
+[charaFadein F 0.1 0]
+
+[charaFace D 0]
+＠埃尔梅罗Ⅱ世
+有……有何……贵干？
+[k]
+
+＠伊斯坎达尔
+从刚才起，[r]你好像就一直在找我家小子的茬。
+[k]
+
+[charaFace F 1]
+＠伊斯坎达尔
+这就说明，[r]你已经做好和本征服王一战的思想准备了吧？
+[k]
+
+[charaFace D 5]
+＠埃尔梅罗Ⅱ世
+为……为什么会得出这种结论？[r]您应该也明白究竟哪方比较不讲理吧！
+[k]
+
+[charaFace F 0]
+＠伊斯坎达尔
+因为无论如何，这小子都是余的御主啊。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[wt 0.2]
+[charaScale F 1.2]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 0,-50]
+＠伊斯坎达尔
+既然你找御主干架，[r]作为从者怎能坐视不理呢。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.2]
+[charaScale F 1.0]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFace F 0]
+[charaFadein G 0.1 2]
+[charaFadein F 0.1 0]
+＠韦伯
+Rider，你……
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+
+[charaTalk D]
+[charaFace A 0]
+[charaFace D 5]
+[charaFadein A 0.1 2]
+[charaFadein D 0.1 0]
+＠埃尔梅罗Ⅱ世
+呜……这……
+[k]
+
+[charaFace A 7]
+＠玛修
+话说……君主？[r]您的方针应该是不和Rider战斗吧……？
+[k]
+
+[charaFace D 0]
+＠埃尔梅罗Ⅱ世
+……撤退吧，[%1]，[r]不能在这里把事情闹大。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+
+[charaTalk F]
+[charaFace G 0]
+[charaFace F 4]
+[charaFadein G 0.1 2]
+[charaFadein F 0.1 0]
+＠伊斯坎达尔
+怎么，真没意思。[r]本以为你是个更有骨气的家伙呢。
+[k]
+
+＠埃尔梅罗Ⅱ世
+……！
+[k]
+
+[charaFace G 5]
+＠韦伯
+哼！　嘴上说大话，结果还是要逃啊！[r]耶～胆小鬼。
+[k]
+
+[charaFace F 5]
+＠伊斯坎达尔
+喂，别太得意忘形啊。
+[k]
+
+[charaMove F 1 0.2]
+[wait charaMove]
+
+[se ad76]
+[charaShake G 0.05 3 3 0.5]
+[charaFace G 4]
+
+[charaMove F 0 0.2]
+[wait charaMove]
+
+＠韦伯
+呀呜！！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[se bac2]
+[wt 1.0]
+
+？1：居然弹了一下那个软弱男孩的额头……！
+？2：多么脆弱的生物……
+
+？！
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[wt 1.0]
+
+
+[bgm BGM_EVENT_2 2.0]
+[fadein black 2.0]
+[wait fade]
+
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.4 1]
+＠埃尔梅罗Ⅱ世
+啊啊啊气死了！　御主在争论时，从者居然跑出来插话！[r]你是熊父母吗！　是熊父母吧！
+[k]
+
+？1：老师，请冷静点。
+？2：不，好像没有什么不对吧？
+
+？！
+
+[charaFadeout D 0.1]
+
+[wt 0.1]
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 4]
+＠Dr.罗曼
+不过难得有如此机会能与第三保护对象的从者Rider进行接触……
+[k]
+
+＠Dr.罗曼
+居然以这种形式决裂，真的好吗？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[wt 0.1]
+[charaTalk B]
+[communicationCharaLoop 98003003 2 5 0 4]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0]
+＠埃尔梅罗Ⅱ世
+谁管得了那么多啊！[r]反正他们压根没打算认真打。
+[k]
+
+[charaFace D 6]
+＠埃尔梅罗Ⅱ世
+就算放任不管，也就是躲在家里[r]一边吃仙贝一边看电视偷闲游玩罢了！
+[k]
+
+＠Dr.罗曼
+真的好吗……
+[k]
+
+[charaFadeout D 0.1]
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠玛修
+看来只要扯上Rider，[r]就会踩到君主埃尔梅罗Ⅱ世先生的老虎尾巴了呢，前辈。
+[k]
+
+？1：真令人头疼。
+？2：看来只能由我们来想办法应付了。
+
+？！
+
+[charaFace A 1]
+＠玛修
+嗯，我也这么认为。
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFadein C 0.1 1]
+＠芙芙
+芙～呜。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[soundStopAll]
+[end]
+

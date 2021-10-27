@@ -1,0 +1,74 @@
+＄91-10-08-01-3-1
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 20400]
+[charaSet A 8001000 2 玛修]
+[charaSet B 98003003 2 Dr.罗曼]
+[charaSet C 98002000 2 芙芙]
+[charaSet D 1008001 1 齐格飞]
+[charaSet E 98014000 1 士兵]
+[charaSet F 98013000 1 法夫纳]
+[charaFace D 0]
+[charaFadein D 0 1]
+[fadein black 1]
+[wait fade]
+＠齐格飞
+……永别了，法夫纳。[r]这次真真正正地毁灭吧。
+[k]
+
+[charaFadeout D 0]
+[charaTalk F]
+[charaFadein F 0.1 1]
+[wt 0.3]
+[charaEffect F bit_talk_12]
+[se bac6]
+[wait charaEffect F]
+[charaSpecialEffect F darkEnemyErasure 1 3]
+[se ad18]
+[wait charaSpecialEffect F]
+[wt 0.5]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠玛修
+这里是玛修。[r]已确认法夫纳的消灭。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr.罗曼
+嗯，我这里也确认了其反应的消灭。[r]已开启追踪，但完全找不到它的踪迹。
+[k]
+
+＠Dr.罗曼
+看样子这次是真的给了它致命一击呢。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠齐格飞
+这样一来，[#幻想大剑:Balmung]也恢复其真正的力量了。
+[k]
+
+？1：刚才的故事还有没有后续？
+
+？！
+
+[charaFace D 1]
+＠齐格飞
+……没有什么值得说的后续了。[r]等我们有空聊的时候，再说这个话题吧。
+[k]
+
+＠齐格飞
+那让我们回去吧，御主。[r]十分感谢。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_2 0.4]
+[wait fade]
+[soundStopAll]
+[end]

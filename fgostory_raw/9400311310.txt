@@ -1,0 +1,251 @@
+＄94-00-31-13-1-0
+
+
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+[charaSet A 8001001 1 玛修]
+[charaSet B 98003000 1 Dr.罗曼]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 98065000 1 埃尔梅罗Ⅱ世]
+[charaSet E 98063000 1 间桐雁夜]
+[charaSet F 2002001 1 吉尔伽美什]
+[charaSet G 7002001 1 Berserker]
+
+[scene 25300]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+[fadein black 2.0]
+[wait fade]
+
+＠吉尔伽美什
+可恶！　这是何等……闹剧！
+[k]
+
+[messageOff]
+[se ad52]
+[charaSpecialEffect F flashErasure 0 0 1]
+[wait charaSpecialEffect F]
+[charaFadeout F 0.4]
+[wt 1.0]
+[seStop ad52 1.5]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠埃尔梅罗Ⅱ世
+成功了……第四次圣杯战争最大的难关，[r]英雄王至此退场！
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠间桐雁夜
+哈……哈……看到了吗……！[r]这样一来……我……终于向……时臣报了一箭之……
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+什么！？　Berserker御主的身体状况……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[se ad13]
+[communicationChara 98003003 1 5 0 5]
+[wt 0.3]
+
+＠Dr.罗曼
+不好。从这边的监控看来，[r]这家伙的生命体征已经处于垂危状态了！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠埃尔梅罗Ⅱ世
+糟了！　魔力消耗过量了吗……
+[k]
+
+＠埃尔梅罗Ⅱ世
+喂，在你晕倒之前，[r]至少用令咒控制住Berserker啊！
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠间桐雁夜
+……呜。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[se bac2]
+[wt 1.0]
+
+？1：倒下了！？
+？2：振作一点！
+
+？！
+
+[charaTalk C]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaFadein C 0.1 0]
+＠芙芙
+芙，芙！
+[k]
+
+[charaFace A 7]
+＠玛修
+没事，只是晕过去了。还有呼吸。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[charaSet B 1001000 1 阿尔托莉雅]
+[charaSet C 3002000 1 迪尔姆德]
+[charaSet E 98061000 1 韦伯]
+[charaSet F 4002001 1 伊斯坎达尔]
+
+[bgmStop BGM_EVENT_5 1.5]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠埃尔梅罗Ⅱ世
+糟了！　这家伙的Berserker一旦失去控制，[r]就会对Saber……
+[k]
+
+[charaFadeout D 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+[fowardEffect bit_talk_41]
+[shake 0.05 0 4 1.0]
+＠Berserker
+[fontSize x-large]Aaaaa、uaaaaa！！
+[k]
+
+[fowardEffectStop bit_talk_41]
+[wait fowardEffect bit_talk_41]
+
+[messageOff]
+[charaFace G 5]
+[se ba2]
+[wipeout leftToRight 0.5 1]
+[charaMove G 900,0 0.2]
+[wait wipe]
+[wait charaMove]
+[charaFadeout G 0]
+
+[charaTalk off]
+
+[charaFace B 5]
+[charaFadein B 0 2]
+
+[charaFace G 5]
+[charaFadein G 0 -900,0]
+
+[wipein rightToLeft 0.5 1]
+[wait wipe]
+
+[charaMove G 0 0.2]
+[wait charaMove]
+
+[se ad32]
+[fowardEffect bit_talk_13]
+[shake 0.05 0 4 0.8]
+[wt 0.8]
+
+[charaTalk on]
+[charaFace B 2]
+＠阿尔托莉雅
+什么？　为什么要攻击我！？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout G 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠埃尔梅罗Ⅱ世
+不得已。[%1]，[r]放弃Berserker。现在排除他！
+[k]
+
+？1：哎哎哎！？
+？2：他不是自己人吗？
+
+？！
+
+＠埃尔梅罗Ⅱ世
+现在可不能让Saber陷入危险！
+[k]
+
+[charaFace D 0]
+＠埃尔梅罗Ⅱ世
+反正已经成功打倒了Archer，[r]已经没有必要和Berserker共同战斗了。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk C]
+[charaFace D 0]
+[charaFace C 0]
+[charaFadein D 0.1 2]
+[charaFadein C 0.1 0]
+＠迪尔姆德
+虽然不是一场愉快的战斗……[r]但以狂战士为对手也无可奈何啊。
+[k]
+
+[charaFace D 5]
+＠埃尔梅罗Ⅱ世
+Lancer，你的宝具正适合对付他。[r]别唠叨了，快来帮忙！
+[k]
+
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFace F 0]
+[charaFadein E 0.1 2]
+[charaFadein F 0.1 0]
+＠韦伯
+到……到底什么情况啊……
+[k]
+
+＠伊斯坎达尔
+……
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

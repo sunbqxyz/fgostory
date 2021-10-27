@@ -1,0 +1,849 @@
+
+
+
+
+
+＄94-03-13-10-1-0
+
+
+[soundStopAll]
+
+
+[charaSet A 1098159700 1 魁札尔假面]
+[charaSet B 9007000 1 魁札尔·科亚特尔]
+[charaSet C 3036001 1 布拉达曼特]
+[charaSet D 1098159800 1 黑魁札尔假面]
+[charaSet E 99502600 1 玛修]
+[charaSet F 98111500 1 达·芬奇]
+[charaSet G 98111500 1 通讯用杂音]
+[charaSet H 98006000 1 特效用dummy]
+[charaSet I 1098159700 1 dummy用1（魁札尔假面）]
+[charaSet J 1098159800 1 dummy用2（黑魁札尔假面）]
+
+[scene 68800]
+
+[charaPut H 0,-2000]
+[charaEffect H bit_talk_shadow_aura01]
+
+[charaPut G 0,-2000]
+[charaEffect G bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1]
+
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.4 1]
+[charaPut H 0,-70]
+[wt 0.2]
+＠黑魁札尔假面
+……输了啊。
+[k]
+
+[messageOff]
+
+[charaPut H 0,-2000]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.2]
+＠魁札尔假面
+你毕竟是战神的那一侧面，[r]所以我很理解你没有战斗以外的选项。
+[k]
+
+＠魁札尔假面
+但这次到此为止了。老老实实回来吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[charaPut H 0,-70]
+＠黑魁札尔假面
+你打算怎么处理圣诞圣杯。
+[k]
+
+[charaPut H 0,-2000]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠魁札尔假面
+身为神的我只是成了圣诞老人，[r]这已经是绰绰有余的礼物了。
+[k]
+
+＠魁札尔假面
+如果再得到圣杯什么的，是不是有些过头了呢～。[r]圣诞老人是赠礼之人，并不是收礼之人～。
+[k]
+
+[charaFace A 0]
+＠魁札尔假面
+所以，我要将原本属于布拉达曼特的力量还给她，[r]将圣诞圣杯托付给御主……
+[k]
+
+＠魁札尔假面
+然后，重新来过一个普通桑巴而圣诞老人的圣诞节吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+[charaPut H 0,-70]
+＠黑魁札尔假面
+呵，好吧。战斗的祭典顺利结束了。[r]只有这点确实无疑……
+[k]
+
+[charaPut H 0,-2000]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠魁札尔假面
+没错。尽管我对给别人添麻烦一事感到抱歉，[r]但我们唯一共有的结论[line 3]
+[k]
+
+＠魁札尔假面
+可以用『能尽情摔角真是太开心了！』这一言以蔽之！[r]对不起，但神明就是这样的存在～！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+[charaPut H 0,-70]
+
+[wt 1.5]
+
+[charaPut H 0,-2000]
+[charaFadeout D 0.1]
+[wt 0.3]
+
+[charaTalk off]
+
+[charaFace A 0]
+[charaFadein A 0.1 2]
+
+[charaPut H -256,-70]
+[charaFace D 6]
+[charaFadein D 0.1 0]
+
+[wt 1.5]
+
+[bgmStop BGM_EVENT_11 1.0]
+
+
+[charaFilter I silhouette FFFFFF80]
+[charaFilter J silhouette 00000080]
+
+[charaDepth J 3]
+[charaDepth I 4]
+
+[charaDepth A 1]
+[charaDepth D 1]
+[charaDepth H 2]
+
+[charaFadein I 1.5 2]
+[charaFadein J 1.5 0]
+
+[charaMove H 0,-70 1.5]
+[charaMove I 0,0 1.5]
+[charaMove J 0,0 1.5]
+[charaMove A 0,0 1.5]
+[charaMove D 0,0 1.5]
+
+[charaFadeout H 0.1]
+[charaFadeout A 0.7]
+[charaFadeout D 0.7]
+
+[wt 0.5]
+
+[fadeout white 1.0]
+[wt 0.8]
+
+[se bac32]
+
+[wait fade]
+
+[charaTalk on]
+
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaEffectStop H bit_talk_shadow_aura01]
+
+[charaSet A 98002000 1 芙芙]
+[charaSet D 3028001 1 豹人]
+[charaSet H 4019001 1 玛尔达]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[wt 1.5]
+[fadein white 1.5]
+[wait fade]
+
+[wt 1.5]
+
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.2]
+＠布拉达曼特
+……呼。结束了呢。
+[k]
+
+？1：辛苦啦！
+？2：恭喜你们获得了优胜！
+？！
+
+[charaFace C 1]
+＠布拉达曼特
+谢谢。但是，这件事还是多亏了大家的助力。
+[k]
+
+＠布拉达曼特
+非常感谢！
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠玛修
+真是太好了。[r]当时我还担心会发生什么事呢……
+[k]
+
+[charaFadeout E 0.1]
+[charaPut G 0,-2000]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠玛尔达
+呵呵，我是相信你们的。
+[k]
+
+＠玛尔达
+现在回顾过去，[r]或许我的训练根本没有必要吧。
+[k]
+
+＠玛尔达
+因为你们只要凭借自己的感情，[r]就足以获得胜利了。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠布拉达曼特
+啊，教练！[r]我当然非常感谢玛尔达教练！
+[k]
+
+＠布拉达曼特
+真不知道该怎么道谢才好……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaMoveReturn A 0,15 0.2]
+＠芙芙
+芙，芙呜！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠布拉达曼特
+芙芙大人也是！　这份可爱、手感，[r]以及莫名的梅林大人感……太治愈了……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠芙芙
+梅林芙？[r]芙。芙芙，芙。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-90]
+＠达·芬奇
+噢，各位，快看天空？
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_2 1.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaPut G 0,-2000]
+
+[scene 68801]
+
+[cameraMove 0.1 -80,-30 1.2]
+
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[cameraHome 2.0]
+[wt 3.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠布拉达曼特
+在温暖的阳光下，冰雪都融化了。
+[k]
+
+＠布拉达曼特
+这样一来……这片土地……[r]就能过上一个一如既往的圣诞节了……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠魁札尔·科亚特尔
+哎呀？[r]……看来不尽然哦～？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠芙芙
+芙！？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_6 1.5]
+
+[scene 68802 2.5]
+
+[wt 3.0]
+
+？1：又下雪了！
+？！
+
+[charaPut G 1]
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+＠玛修
+这……这是怎么回事！？[r]这片土地上异常气象的原因应该是黑魁札尔假面才对。
+[k]
+
+＠玛修
+明明已经被打倒了，却还出现了这种现象……[r]难不成，还有其他黑幕[line 3]？
+[k]
+
+[charaFadeout E 0.1]
+[charaPut G 0,-2000]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠魁札尔·科亚特尔
+不，不。不是啦～。[r]这件事非常单纯……
+[k]
+
+＠魁札尔·科亚特尔
+这就是[#真正的雪]啊。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠布拉达曼特
+哎？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠魁札尔·科亚特尔
+在圣诞节的季节，由于世界的心血来潮，[r]为墨西哥下了一场雪。
+[k]
+
+＠魁札尔·科亚特尔
+为结束了战斗的战士们送上祝福的……[r]天空的馈赠。
+[k]
+
+[charaFace B 1]
+＠魁札尔·科亚特尔
+换言之[line 3]这只是一个奇迹～。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[wt 1.0]
+
+[charaFace C 1]
+
+[wt 1.5]
+
+[charaFadeout C 0.4]
+[wt 0.8]
+
+[charaPut G 1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠玛修
+是……这样啊……竟然也会发生这种事呢。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 0,-90]
+＠达·芬奇
+这话或许会令人扫兴，不过，[r]墨西哥偶尔也会观测到降雪。
+[k]
+
+＠达·芬奇
+只不过，从时机来看……嗯。[r]或许可以将这称为奇迹吧。我不否定。
+[k]
+
+[charaFace F 2]
+＠达·芬奇
+不，倘若你们让我给一个理由的话，[r]作为科学家，我一定会全力导出推论！
+[k]
+
+＠达·芬奇
+比如说斗士们的汗蒸发到上空形成了云之类的！
+[k]
+
+[messageOff]
+
+[charaFadeout F 0.1]
+[charaPut G 0,-2000]
+
+[wt 3.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.2]
+＠布拉达曼特
+好了……差不多该分别了。
+[k]
+
+＠布拉达曼特
+尽管不知道接下来会返回座，还是前往别的地方继续旅行……[r]毕竟『不断探寻』就是我的本质啊。
+[k]
+
+？1：我会感到寂寞的。
+？2：这支队伍终于要解散了……
+？！
+
+[charaFace C 1]
+＠布拉达曼特
+但是，说不定……
+[k]
+
+＠布拉达曼特
+我的探索之路会与你的道路重合哦。[%1]。
+[k]
+
+＠布拉达曼特
+如果这样，我们或许还能见面。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠玛尔达
+嗯，确实有可能。
+[k]
+
+＠玛尔达
+下次见面时，你可能会忘了我的斗法……[r]但这一定已经烙印在你的灵魂中了。
+[k]
+
+[charaFace H 0]
+＠玛尔达
+你永远是我的同胞。需要的话，[r]你可以随时来找我。
+[k]
+
+[messageOff]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth B 1]
+[charaDepth C 2]
+
+[charaFace B 0]
+[charaFadein B 0.1 0]
+
+[charaFace C 0]
+[charaFadein C 0.1 2]
+
+[wt 0.5]
+
+[charaMove B -200,0 0.7]
+[charaMove C 200,0 0.7]
+
+[wt 0.8]
+[se ad7]
+[wt 0.5]
+[seStop ad7]
+
+[charaTalk on]
+
+[charaFace B 1]
+＠魁札尔·科亚特尔
+谢谢，我优秀的搭档。[r]下次需要我为你做一个假面吗？
+[k]
+
+[charaFace C 4]
+＠布拉达曼特
+这……这个嘛，那个……呃，[r]非常感谢……？
+[k]
+
+[charaFace B 0]
+＠魁札尔·科亚特尔
+为你前行的道路送上祝福。[r]这不是身为女神，而是身为朋友的祝福哦。
+[k]
+
+[charaFace C 1]
+＠布拉达曼特
+啊哈哈。这样更令人感激不尽。[r]否则不成熟的我会更为纵容自己的。
+[k]
+
+[messageOff]
+
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠魁札尔·科亚特尔
+好了，感伤的话题到此结束！[r]让我们踩着桑巴的节奏热烈欢送你吧～。Ole！
+[k]
+
+[bgm BGM_EVENT_6 0.1 0.5]
+[messageOff]
+
+[se ade230]
+[seVolume ade230 0 0.2]
+[wt 0.1]
+[se ade229]
+
+[charaShake B 0.1 -5 2 2.0]
+[charaMove B 0 2.0]
+[wt 1.0]
+[charaShake B 0.1 5 2 3.0]
+[charaMove B 2 3.0]
+[wt 3.0]
+[charaShake B 0.1 -5 2 1.5]
+[charaMove B 1 1.5]
+
+[wt 1.5]
+
+[seStop ade229 0.3]
+[seStop ade230 0.8]
+[wt 1.0]
+
+[bgm BGM_EVENT_6 0.1 1.0]
+
+[charaFadeout B 0.4]
+[wt 0.8]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[wt 0.8]
+
+[charaFace C 0]
+＠布拉达曼特
+嗯。那么各位……啊啊，[r]道别也用这句话比较好吧。
+[k]
+
+[charaFace C 1]
+＠布拉达曼特
+因为我，曾经是圣诞老人嘛！
+[k]
+
+＠布拉达曼特
+那么各位[line 3]圣诞快乐！
+[k]
+
+
+？1：圣诞快乐！
+？！
+
+[messageOff]
+[charaFadeout C 0.4]
+
+[wt 3.0]
+
+[charaEffect C bit_talk_06]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+[wt 0.2]
+＠布拉达曼特
+……好美。
+[k]
+
+＠布拉达曼特
+希望终有一天，我能将这美妙的景色，[r]将密林遗迹中的这场雪告诉你……鲁杰罗。
+[k]
+
+[charaFace C 0]
+＠布拉达曼特
+尽管现在，你或许也在某个地方看着相同的景色。
+[k]
+
+[charaFace C 1]
+＠布拉达曼特
+因为我们每次都会擦肩而过。[r]这一定也会是个有趣的笑话吧[line 3]
+[k]
+
+[messageOff]
+
+
+[se ad52]
+[charaSpecialEffect C flashErasure 1 1.7]
+[wait charaSpecialEffect C]
+[charaEffectStop C bit_talk_06]
+[wt 1.0]
+
+
+[fadeout black 1.5]
+[wait fade]
+[wt 0.5]
+
+[wt 1.5]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.4 1]
+[wt 0.2]
+＠豹人
+好啦～，结束啦结束啦。[r]接下来只需收拾干净就能结束啦喵。
+[k]
+
+＠豹人
+你们还是那么爱差遣豹子，但没办法。[r]因为不这么做就拿不到工资，所以没办法。
+[k]
+
+＠豹人
+总而言之，先把这运营用的淘汰赛日程牌给……[r]哎嗬，哎嗬……呼。
+[k]
+
+[se ad338]
+[charaMoveReturn D 0,-20 0.8]
+
+[wt 1.4]
+[seStop ad623]
+
+[charaFace D 0]
+
+＠豹人
+唔，这么说来，似乎没有举办给优胜者佩戴花的仪式喵。
+[k]
+
+＠豹人
+没办法，那就当额外福利，[r]我给你盖个豹人积点章用来代替花好啦。
+[k]
+
+[messageOff]
+
+[charaMove D 0,15 0.2]
+[charaMoveScale D 1.2 0.5]
+[wt 0.8]
+
+[se ad562]
+[wt 0.7]
+[seStop ad562]
+
+[charaMoveScale D 1.0 0.5]
+[charaMove D 0,0 0.2]
+[wt 1.0]
+＠豹人
+这样就行了。不过细细看来，[r]真的有各式各样的队伍参加这次比赛喵……
+[k]
+
+[charaFace D 2]
+＠豹人
+当然，最野性最具人气的队伍，[r]当然是我们啦！　胜负不代表一切！
+[k]
+
+[charaFace D 4]
+＠豹人
+好啦，下一份工作，下一份工作……如果不向库库尔[r]要求预定三倍量的肉，可就太不划算了吧……？
+[k]
+
+[messageOff]
+
+[charaMove D -700,0 3.0]
+[se ad580]
+[wt 0.4]
+[seStop ad580]
+[wt 0.4]
+[se ad580]
+[wt 0.4]
+[seStop ad580]
+[wt 0.4]
+[se ad580]
+[wt 0.4]
+[seStop ad580]
+[charaFadeout D 0.4]
+[wt 0.1]
+[seStop ad580]
+
+[scene 10000 2.0]
+[wt 2.8]
+
+＠
+有一块失去了职责，只能等着被人遗忘的日程牌。[r]记录着已然成为过去的战斗经过的日程牌。
+[k]
+
+＠
+没有人看到，[r]也不知道上面写着什么。
+[k]
+
+＠
+不知道究竟谁参加了这场淘汰赛。[r]不知道哪支队伍消失在哪个阶段。
+[k]
+
+＠
+也不知道[line 3][r][#非洲代表栏写着谁的名字]。
+[k]
+
+＠
+如果少女骑士在那里看到了自己渴望的名字。
+[k]
+
+＠
+也会笑着表示，
+[k]
+
+＠
+“我完全没发现！[r][f small]  [f -]又发生了一个奇迹呢，真可惜。”
+[k]
+
+＠
+但她是不会因后悔而停下脚步的。
+[k]
+
+＠
+尽管她确实很想见到他。但无论是否能见到，[r]都改变不了这份永恒的感情。
+[k]
+
+＠
+因为她知道，这恋情，会永远持续下去[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+恋爱中的少女只会相信自己的正义与思念。
+[k]
+
+＠
+锲而不舍，迈步前行。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_6 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]
+
+
+

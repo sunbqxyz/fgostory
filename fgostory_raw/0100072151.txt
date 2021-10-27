@@ -1,0 +1,179 @@
+
+
+
+＄01-00-07-21-5-1
+
+[soundStopAll]
+[bgm BGM_EVENT_24 0.1]
+[charaSet A 98003000 1 Dr.罗曼]
+[charaSet B 98013200 1 提亚马特]
+[charaSet C 98106200 1 梅林]
+[charaSet D 98002000 1 芙芙]
+[charaSet E 8001002 1 玛修]
+[charaSet F 98106500 1 吉尔伽美什]
+
+[scene 35500]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk A]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr.罗曼
+BeastⅡ依然健在！[r]可恶，果然灵基的硬度有天壤之别！
+[k]
+
+＠Dr.罗曼
+但攻击是有效的！[r]还差一点，只要再加把劲[line 3]！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[messageOff]
+[effect bit_talk_voice01]
+[se ad205]
+[shake 0.05 0 6 0]
+
+＠提亚马特
+Aaaaaaaaaaaaaa[r]LAAAAAAAAAAAAAAAAAAAAAAAAAAA[line 3]！
+[k]
+
+[shakeStop]
+[effectStop bit_talk_voice01]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠梅林
+唔，是打算把我整个生吞下去吗！[r]我又不是马尔杜克神，被吞下去就死定了！
+[k]
+
+＠梅林
+凯茜帕鲁格，拜托了！[r]能把我强制转移走吗！？
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠芙芙
+芙～，芙？[r]（特别意译：你在说什么胡话呢？）
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.2]
+[charaEffect C bit_talk_13]
+[wt 0.1]
+[se bac10]
+[charaShake C 0.05 4 4 0.4]
+[wt 0.7]
+
+＠梅林
+呜哇啊啊啊啊啊啊啊啊啊啊！[r]该死的，凯茜帕鲁格[line 6]！
+[k]
+
+[se ad75]
+[seVolume ad75 0 0.4]
+[wt 0.2]
+[charaMove C 0,-92 0.2]
+[charaFadeout C 0.2]
+[wt 1.0]
+
+[charaTalk A]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+什么，梅林掉下去了！？[r]那家伙不在的话，就无法缓和混沌之潮了啊！？
+[k]
+
+＠Dr.罗曼
+解毒的竟然被第一个干掉了吗，可恶！[r]这样一来就很难长时间作战了！
+[k]
+
+＠Dr.罗曼
+你们两个，先拉开距离！[r]万一你们被混沌之潮侵蚀，可就彻底完了！
+[k]
+
+？1：但我不能在这种时候退下……！
+？2：事以至此，就算被侵蚀也无妨……！
+
+？！
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠玛修
+……那就由我来当御主的盾吧！
+[k]
+
+＠玛修
+要是活生生被黑泥吞噬，就会变成其他生物……[r]那就不是前辈了！
+[k]
+
+＠玛修
+但身为亚从者的我，[r]应该还能多少支撑一会儿！
+[k]
+
+＠玛修
+医生！[r]既然御主打算留下来，我也要留下来！
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk A]
+[charaFace E 7]
+[charaFadein E 0.1 2]
+[communicationCharaLoop 98003003 0 5 0 5]
+＠Dr.罗曼
+玛修……！[r]但凭你的身体，已经[line 3]
+[k]
+
+[bgmStop BGM_EVENT_24 2.4]
+
+＠F：？？？
+说什么呢。[r]倘若无法长时间作战，那就一口气分出胜负。
+[k]
+
+[bgm BGM_EVENT_40 3.1]
+
+＠F：？？？
+还是说对火力不足感到不安？[r]若是如此，那就没办法了。由本王来助你们一臂之力吧。
+[k]
+
+[charaFace E 6]
+＠玛修
+您……是[line 3]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[communicationCharaClear]
+[wait communicationChara]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.7 1]
+＠吉尔伽美什
+从者，Archer。[r]英雄王吉尔伽美什，因为这实在太吵，就来帮你们一把。
+[k]
+
+[charaFace F 1]
+＠吉尔伽美什
+没什么大不了的，都走到这一步了，[r]这种程度的违反[#常识:规则]，还在允许范围内吧？
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_40 1.4]
+[wait fade]
+[soundStopAll]
+[end]

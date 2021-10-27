@@ -1,0 +1,557 @@
+
+
+
+＄03-00-06-02-3-1
+
+
+
+
+[soundStopAll]
+
+[charaSet A 1017001 1 武藏]
+[charaSet B 8001410 1 玛修]
+[charaSet C 9005001 1 福尔摩斯]
+[charaSet D 98002000 1 芙芙]
+[sceneSet E 93401 1]
+[sceneSet F 93400 1]
+[imageSet G back10000 1]
+[charaSet I 5009000 1 特效用dummy3_结界特效用]
+[charaSet S 5009000 1 特效用dummy1]
+[charaSet T 5009000 1 特效用dummy2]
+[sceneSet H 93400 1]
+
+[charaScale E 1.01]
+[charaScale F 1.01]
+[charaScale G 1.01]
+
+[scene 91900]
+
+[cameraMove 0 0,0 1.05]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.5]
+
+[shake 0.05 0 4 0]
+[effect bit_talk_41]
+[se ad668]
+[seVolume ad668 0 0.4]
+[se ad55]
+[seVolume ad55 0 0.4]
+[se ad59]
+[seVolume ad59 0 0.4]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[seStop ad668 0.3]
+[seStop ad55 0.3]
+[seStop ad59 0.3]
+[cueSeStop bac343 0.3]
+[se ad671]
+[wt 0.3]
+[seStop ad671 0.5]
+[shake 0.05 3 1 0.6]
+[effectStop bit_talk_41]
+[wt 0.5]
+[cameraMove 0.5 0,0 1.01]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠武藏
+呼，哈……[r]呼……哎呀，累死了！
+[k]
+
+[se bac306]
+[charaFace A 5]
+
+＠武藏
+奥林波斯居民的肉体强度[r]全都是高手或英灵水平吗！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_80 2.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛修
+周围……没有魔力反应了。[r]看来应该是暂时甩掉追兵了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+虽说只是简单的东西，但先用护符来铺设结界吧。[r]是隐蔽结界。先在这里调整气息。
+[k]
+
+[messageOff]
+[se ad39]
+[fowardEffect bit_talk_spell_r]
+[wt 0.8]
+[charaPut I 1]
+[se ad931]
+[seVolume ad931 0 0.6]
+[backEffect bit_talk_barrier_hms_01]
+[wt 2.5]
+[seStop ad931 2.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛修
+御主，辛苦了。[r]您刚才的运动几乎等同于全速奔跑1.5公里了。
+[k]
+
+＠玛修
+请您深呼吸，吸入氧气。[r]还是说，您想坐下来休息呢？
+[k]
+
+？1：没关系，毕竟我没什么负担。
+
+？2：玛修也趁现在好好休息吧。
+
+[messageOff]
+[charaFace B 16]
+[wt 1.0]
+[charaFace B 0]
+
+＠玛修
+好。当然。
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠芙芙
+芙芙。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠玛修
+嗯。感谢你的关心，芙芙。
+[k]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaFace B 12]
+
+＠玛修
+……[r]……
+[k]
+
+＠玛修
+……………………
+[k]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠玛修
+……奥林波斯的士兵。[r]强大的不只有刚开始的那个人。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠武藏
+嗯，没错。他们被强化到异常的地步。[r]就像是让人类维持人类之躯提升至英灵水平。
+[k]
+
+＠武藏
+就算被砍断一条手臂都丝毫不露怯，[r]精神强度也是超越常人。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+战斗积极性会那么高其实并不奇怪。[r]毕竟他们站在自己立场上，是为[#守护世界]而战的。
+[k]
+
+＠福尔摩斯
+他们中想必也有深爱着奥林波斯的人吧。[r]为了不失去这里，也会竭尽全力地战斗。
+[k]
+
+？1：……………………
+
+？！
+
+＠福尔摩斯
+……在以往的异闻带其实也存在这种可能性，[r]但他们终于和我们正面对峙了。
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace C 0]
+
+＠福尔摩斯
+换言之，[r]异闻带的所有一切。
+[k]
+
+＠福尔摩斯
+生活在奥林波斯的所有人，[r]都是我们的敌人。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠玛修
+……所有人，都是敌人……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+那所谓的宙斯的神谕确实很有效。[r]我们应该认为整座都市都发布了戒严令吧。
+[k]
+
+＠福尔摩斯
+奥林波斯的市民们，[r]既是会随着切除空想树而消失的无辜民众，
+[k]
+
+＠福尔摩斯
+也是攻击我们的獠牙，我们的敌人。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+？1：[line 3]说得对。
+？！
+
+？1：正因为如此，我们才更需要振作才行。
+？！
+
+[charaFace B 0]
+[wt 1.0]
+
+[bgm BGM_EVENT_70 0.4 0.4]
+
+[charaFadeout B 0.1]
+[charaTalk depthOff]
+[charaDepth G 4]
+[charaDepth A 7]
+[charaFadeTime G 0.4 0.5]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠武藏
+（既不是『不能输』，也不是『要变强』，[r]　而是必须[#抬头挺胸:振作起来]吗。）
+[k]
+
+[charaFace A 7]
+
+＠武藏
+（[line 3]嗯，表情毅然。[r]　看来用不着我打气了。）
+[k]
+
+＠武藏
+（这两个人从俄罗斯一路走到这里，[r]　已经见识过各种各样的世界了呢。）
+[k]
+
+
+[messageOff]
+[bgm BGM_EVENT_70 0.4 1.0]
+[charaFadeout G 0.4]
+[wt 0.4]
+[charaTalk depthOn]
+[charaFace A 9]
+
+＠武藏
+…………不对。[r]现在可不是放松的时候。
+[k]
+
+＠武藏
+你说你铺设了结界，[r]但不知道能否屏蔽声音。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+我也屏蔽了声音。[r]没问题，奥林波斯士兵的感知能力只有人类水平。
+[k]
+
+＠福尔摩斯
+防卫机构似乎能感知到魔力，但不碍事。[r]考虑到大气中的魔力，区区数骑从者，
+[k]
+
+[charaFace C 8]
+
+＠福尔摩斯
+应该不会有太大的问题。[r]除非是神灵级从者那样的例外……
+[k]
+
+[charaFace C 0]
+
+＠福尔摩斯
+……对了，还有。
+[k]
+
+＠福尔摩斯
+除非拥有近乎神明的眼睛，[r]否则是无法轻易[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 0.5]
+
+[cueSe Battle bac234]
+[cueSeVolume bac234 0 0.6]
+[shake 0.05 6 3 2.0]
+[wt 2.0]
+[cueSeStop bac234 0.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠玛修
+！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠武藏
+……Mr.福尔摩斯？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+……倘若拥有近乎神明的眼睛，[r]是有可能感知到结界的。
+[k]
+
+＠福尔摩斯
+我所说的神明，[r]指的是超越魔术或英灵眼中常识的存在，
+[k]
+
+[charaFace C 5]
+
+＠福尔摩斯
+也就是[line 3]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 0.5]
+
+[charaTalk A]
+[cueSe Battle bac234]
+[cueSeVolume bac234 0 0.6]
+[shake 0.05 6 3 2.0]
+[wt 2.0]
+[cueSeStop bac234 0.5]
+
+[bgm BGM_EVENT_72 0.1]
+
+[se ad932]
+[backEffectStop bit_talk_barrier_hms_01]
+[wt 3.0]
+[se ad641]
+[wt 0.7]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠芙芙
+芙！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+神，或者等同于神的存在！[r]可以将我们[#看得一清二楚]！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[cueSe Battle bac234]
+[shake 0.05 10 6 2.0]
+[se ad619]
+[seVolume ad619 0 0.1]
+[seVolume ad619 2.0 0.8]
+[wt 2.0]
+[cueSeStop bac234 0.5]
+
+[shake 0.05 6 3 2.0]
+[seStop ad619 2.0]
+
+[wt 2.0]
+
+[se ad623]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth E 2]
+[charaDepth F 3]
+[charaDepth H 4]
+
+[seVolume ad619 0.3 0.6]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠玛修
+巨大魔力反应正在接近！[r]距离30、20、10……！
+[k]
+
+＠玛修
+从小路的另一头[line 3]来了！　就是现在！
+[k]
+
+[messageOff]
+[se ad640]
+[wipeout rectangleStripUpToDown 0.5 1]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[charaScale E 2.0]
+[charaFadein E 1.0 0,0]
+[charaMove E 0,-600 10,0]
+[wt 0.6]
+
+[shake 0.05 6 3 2.0]
+[wipein rectangleStripDownToUp 0.5 1]
+[wait wipe]
+
+[wt 2.0]
+
+＠
+[line 3]是人型。
+[k]
+
+＠
+外形的确与人相似。[r]然而，却过于，
+[k]
+
+＠
+过于巨大了。[r]巨重、巨躯、巨人。没错，其模样酷似巨人。
+[k]
+
+[messageOff]
+[shake 0.05 0 3 2.2]
+[se ad898]
+[seVolume ad898 0 0.5]
+[wt 2.5]
+
+＠
+金属摩擦声响起。
+[k]
+
+[messageOff]
+[charaScale F 2.0]
+[charaFadein F 1.0 0,-600]
+[wt 2.0]
+[shakeStop]
+[charaFadeout E 0.1]
+[charaFadein H 2.0 0,-200]
+[wt 2.0]
+
+＠
+[f large]『发现入侵者。』
+[k]
+
+
+＠
+[f large]『开始排除。』
+[k]
+
+＠
+那是[line 6]青铜巨人。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[seStop ade393 2.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_72 2.0]
+[wait fade]
+[wt 1.2]
+[soundStopAll]
+[end]

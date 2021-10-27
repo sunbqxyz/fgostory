@@ -1,0 +1,307 @@
+
+＄91-10-07-01-1-1
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[charaSet A 1007001 1 高文]
+[charaSet B 1013000 1 恺撒]
+[charaSet F 5009000 1 dummy1]
+[charaSet G 5009000 1 dummy2]
+[charaSet H 5009000 1 dummy3]
+
+[scene 20901]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.4]
+
+[fadein black 0.5]
+[wait fade]
+
+
+
+
+
+
+
+[flashin once 0.1 0.1 FFFFFFFF 00000000]
+[se bac7]
+[charaShake B 0 3 3 0.3]
+[effect bit_talk_12_yellow_R]
+[wait effect bit_talk_12_yellow_R]
+
+[wt 0.2]
+＠恺撒
+呜哇[line 3]！？[r]为何不做任何说明就砍过来[line 4]！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠高文
+失礼了。[r]请恕我省略琐碎的步骤。
+[k]
+
+＠高文
+而且您好像趁着刚才战斗的混乱，[r]悄悄把借据给烧掉了吧。
+[k]
+
+[charaFace A 4]
+＠高文
+尽管很不幸，[r]但只能接受这样的命运[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠恺撒
+不，刚才给你看到的只是复制品。[r]真正的文件在这里，小心地藏在我的怀里，
+[k]
+
+[messageOff]
+
+[wt 0.2]
+[se bac7]
+[effect bit_talk_12_yellow_L]
+[charaShake B 0 3 3 0.3]
+[wt 0.2]
+[se bac7]
+[effect bit_talk_12_yellow_R]
+[charaShake B 0 3 3 0.3]
+[wait effect bit_talk_12_yellow_R]
+
+
+[se bac117]
+[wt 0.25]
+[effect bit_talk_17]
+[wt 0.25]
+[flashin once 1.0 2000.0 F2FF5CAF F2FF5C00]
+[fadeout white 1.0]
+[wait fade]
+[charaFadeout B 0.1]
+[effectStop bit_talk_17]
+[flashOff]
+[wt 1.0]
+[charaScale A 1.2]
+[charaPut A 0,-32]
+[fadein white 0.5]
+[wait fade]
+
+
+
+[charaPut F 1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠高文
+[charaEffect F bit_talk_41]
+[font large]还请您接受这样的命运！
+[k]
+
+[messageOff]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_41]
+
+[charaFadeout F 0.1]
+[charaFadeout A 0.1]
+[wt 0.3]
+[charaScale A 1.0]
+
+[charaPut F 170,60]
+[charaPut G -100,-100]
+[charaPut H -200,40]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[charaShake B 0.05 3 3 0]
+[charaEffect F bit_talk_27]
+[charaEffect G bit_talk_27]
+[charaEffect H bit_talk_27]
+[se ad11]
+[seVolume ad11 0 0.8]
+＠恺撒
+呜哇啊啊啊[line 3]！
+[k]
+
+
+？1：恺撒[line 4]！？
+？2：做事是不是太黑社会了！？
+
+？！
+
+
+[charaFadeout B 0.1]
+[charaPut F 1200,1200]
+[charaPut G 1200,1200]
+[charaPut H 1200,1200]
+
+[charaFadeout B 0.1]
+[charaShakeStop B]
+[wt 0.1]
+
+[seVolume ad11 0 0.4]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠高文
+这点还请放心。就算恺撒阁下在燃烧，[r]我刚才也已将资源回收了。
+[k]
+
+[charaFace A 4]
+＠高文
+80万QP和禁断书页一个……？
+[k]
+
+＠高文
+…………奇怪了。数量不对。[r]我把这家公司都搜遍了，都找不到那些东西……
+[k]
+
+？1：80万QP是……
+？2：已经被卖掉了吧……？
+
+？！
+
+[charaFace A 2]
+＠高文
+原来如此，这些QP都是被卖掉后的赃款啊……！[r]完美的推理，[%1]！
+[k]
+
+＠高文
+那个在燃烧的家伙！[r]你究竟卖给了谁！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[seVolume ad11 0 0.8]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[charaPut F 170,60]
+[charaPut G -100,-100]
+[charaPut H -200,40]
+[se ad11]
+
+＠恺撒
+哼……哼哼哼……你以为……[r]我会如此轻易……透露顾客的信息吗？
+[k]
+
+[charaFace B 0]
+＠恺撒
+我还是有身为商人的尊严的，[r]不列颠组的少当家啊。
+[k]
+
+？1：你是将军吧？
+？2：为什么要做这种事……
+
+？！
+[charaFace B 4]
+＠恺撒
+呵呵呵……没想到我居然会被眼前的利益诱惑……
+[k]
+
+[charaEffect B bit_talk_06]
+
+＠恺撒
+看来我就不该被大卫信用银行糊弄，[r]使用这种强行策略……扑街。
+[k]
+
+
+[bgmStop BGM_EVENT_3 0.1]
+[charaEffectStop F]
+[charaEffectStop G]
+[charaEffectStop H]
+[seStop ad11]
+[messageOff]
+[charaEffectStop B bit_talk_06]
+[charaSpecialEffect B flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect B]
+[wt 0.3]
+
+
+
+
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wait charaSpecialEffect B]
+[wt 0.5]
+[bgm BGM_EVENT_7 0.1]
+
+？1：大卫……信用银行……！
+？2：迦勒底的　经济　被扰乱了！
+
+？！
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠高文
+恺撒商会也只是金钱的牺牲者啊……[r]当然这都无所谓啦。
+[k]
+
+[charaFace A 0]
+＠高文
+[%1]。[r]这里还留有最近几天的交易记录。
+[k]
+
+＠高文
+根据这份记录，应该可以轻易找回素材。[r]他太小看我了，别以为我只是个普通的圣剑使。
+[k]
+
+＠高文
+搜查靠双腿。犯罪全消灭。[r]妻子选年少。这就是骑士的基本。
+[k]
+
+＠高文
+御主。这件事能否继续交给我来办呢？
+[k]
+
+？1：骑士的　常识　也被扰乱了！
+
+[charaFace A 6]
+＠高文
+哈哈哈。虽说是领主，但实际就是这样。[r]每天都要忙于这种杂事。
+[k]
+
+＠高文
+听说日本也有一个隐瞒自己身份[r]私访民间解决事件的粗暴君主。
+[k]
+
+？2：那大卫信用银行呢？
+
+[charaFace A 0]
+＠高文
+那个等下次有机会再搜查吧。[r]这次我们先专注于回收素材。
+[k]
+
+？！
+
+[charaFace A 5]
+＠高文
+既然决定了，那就按照这份清单来吧。
+[k]
+
+＠高文
+明知是赃物还购买的行为也是犯罪。[r]对这些人也应该施以严厉的惩罚。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[soundStopAll]
+[end]

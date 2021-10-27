@@ -1,0 +1,263 @@
+＄94-00-31-09-1-0
+
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[charaSet A 8001001 1 玛修]
+[charaSet B 98003000 1 Dr.罗曼]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 98065000 1 埃尔梅罗Ⅱ世]
+[charaSet E 98062000 1 爱丽丝菲尔]
+[charaSet F 1001000 1 阿尔托莉雅]
+
+[scene 25600]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0 1]
+
+[fadein black 2.0]
+[wait fade]
+[wt 0.5]
+
+[messageOff]
+[wt 0.5]
+[se bas1]
+[fowardEffect bit_talk_15]
+[wt 1.5]
+[fowardEffectStop]
+[seStop bas1 0.5]
+
+[fadeout black 0.5]
+[wait fade]
+[charaFadeout A 0]
+
+[wt 0.4]
+[scene 10500 0]
+[fadein black 0.5]
+[wait fade]
+[se ad29]
+[flashin once 0.7 0.5 FFFFFFBF 00000000]
+[wait flash]
+[wt 1.1]
+
+[fadeout black 0.5]
+[wait fade]
+
+[scene 25600]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0 1]
+
+[fadein black 0.5]
+[wait fade]
+
+
+[charaFace A 13]
+＠玛修
+据点设置完成。终于弄好了……
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[se ad13]
+[communicationChara 98003003 1 5 0 0]
+[wt 0.3]
+＠Dr.罗曼
+辛苦了。这样一来，[r]这边终于能正式支援你们了。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[wt 0.1]
+[charaTalk C]
+[communicationCharaLoop 98003003 2 5 0 0]
+[charaFadein C 0.1 0]
+
+＠芙芙
+芙，芙！
+[k]
+
+＠Dr.罗曼
+不过介入其他魔术师的管理地区还真是件麻烦事呢。
+[k]
+
+[charaFadeout C 0.1]
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠埃尔梅罗Ⅱ世
+不过远坂家代代维持至今的灵脉[r]也因此被切得七零八落的了。
+[k]
+
+[charaFace D 1]
+＠埃尔梅罗Ⅱ世
+看来重新整备会需要相当的才智和手段。[r]哈哈哈。真是个不错的实习课题啊。
+[k]
+
+？1：埃尔梅罗Ⅱ世教室是斯巴达式的啊。
+？2：是不是稍微有点过分？
+
+？！
+
+＠埃尔梅罗Ⅱ世
+没这样的事。[r]在下不过是根据弟子的能力和毅力对应进行指导罢了。
+[k]
+
+＠埃尔梅罗Ⅱ世
+也就是说，在下对远坂家的女儿可是给予了很高的评价哦[r]……[charaFace D 0]虽然在这里说这种话也无济于事。
+
+[k]
+
+[charaFadeout D 0.1]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[wt 0.1]
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 3]
+＠Dr.罗曼
+啊……抱歉在休息时打扰你们。
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+
+[communicationCharaFace 5]
+＠Dr.罗曼
+客人马上就到了。有一骑从者正在接近中。[r]从这个反应来看，好像是Saber。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk C]
+[charaFace A 7]
+[charaFadein A 0.1 2]
+[charaFadein C 0.1 0]
+＠芙芙
+芙！？
+[k]
+
+＠玛修
+Saber……[r]是在码头战斗过的阿尔托莉雅·潘德拉贡吧？
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0]
+＠埃尔梅罗Ⅱ世
+恐怕是。[r]唔嗯，看来我们的行动太张扬了。
+[k]
+
+[charaFace D 0]
+＠埃尔梅罗Ⅱ世
+我们采取了如此明显的敌对行为，[r]她们会回来以牙还牙也是理所当然的。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+
+[se ad60]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.5]
+[seStop ad60]
+
+＠阿尔托莉雅
+从者Saber。再次向你们发起挑战。[r]让我们堂堂正正地一决胜负吧。
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠埃尔梅罗Ⅱ世
+想要堂堂正正啊。[r]哼。一切正如在下的所料。
+[k]
+
+＠埃尔梅罗Ⅱ世
+这次的爱因兹贝伦采用的是让从者佯攻，[r]背后让杀手发动奇袭的双面作战吧。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠爱丽丝菲尔
+你在说什么？[r]请你不要用这些奇怪的挑衅言语。
+[k]
+
+[charaFace E 2]
+＠爱丽丝菲尔
+倒是你们究竟有什么企图。我很清楚。[r]你并不是正式被召唤的从者吧？
+[k]
+
+
+[charaFadeout E 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace D 0]
+[charaFadein A 0.1 2]
+[charaFadein D 0.1 0]
+
+[charaFace A 7]
+＠玛修
+……该怎么办？　君主·埃尔梅罗Ⅱ世。
+[k]
+
+[charaFace D 4]
+＠埃尔梅罗Ⅱ世
+虽然很想尽快撤退避免不必要的冲突……[r]但不能白白放弃刚设置好的召唤据点。
+[k]
+
+[charaFace D 0]
+＠埃尔梅罗Ⅱ世
+我方拥有地利。[%1]，[r]在下建议尽量用持久战逼他们撤退。
+[k]
+
+？1：我知道了！
+？2：就用这个策略吧。
+
+？！
+
+＠埃尔梅罗Ⅱ世
+还有玛修，这场战斗过程中，[r]请务必警戒以御主为目标的偷袭。
+[k]
+
+[charaFace D 5]
+＠埃尔梅罗Ⅱ世
+在下会用奇门遁甲掩护。[r]周围如果出现任何奇怪的迹象，就立刻应对。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+
+[se ad51]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+明白了！[r]玛修·基列莱特，开始战斗！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

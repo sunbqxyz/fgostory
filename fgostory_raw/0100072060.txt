@@ -1,0 +1,85 @@
+
+
+
+＄01-00-07-20-6-0
+
+[soundStopAll]
+[bgm BGM_EVENT_24 0.1]
+[charaSet A 8001002 1 玛修]
+[charaSet B 98003000 1 Dr.罗曼]
+[charaSet C 98013200 1 提亚马特]
+
+[scene 20733]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠玛修
+魁札尔……科亚特尔小姐……[r]啊啊……火焰也消失了，坠入……黑色的海里[line 3]
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr.罗曼
+BeastⅡ，略微后退……[r]但本体没有任何损伤……
+[k]
+
+＠Dr.罗曼
+魁札尔·科亚特尔最后的宝具[r]未能折断提亚马特神的角……
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[se ad205]
+[effect bit_talk_voice01]
+＠提亚马特
+Aaaaaa[line 3][r]AaaaaaaaaaaaaaAAAAAAAAAAAA[line 3]！
+[k]
+
+[messageOff]
+[shake 0.05 0 10 1.0]
+[wt 1.0]
+[effectStop bit_talk_voice01]
+[wt 0.1]
+
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+混沌之潮进一步流出！[r]是BeastⅡ的反击……！
+[k]
+
+＠Dr.罗曼
+不好，前面就是纳比斯汀之牙……！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[messageOff]
+[se ad211]
+[shake 0.05 0 4 2.0]
+[wt 2.0]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+混沌之潮也向这边涌来了！[r]拉赫穆也大量接近！
+[k]
+
+＠玛修
+前辈，请指示……！[r]我实在不能……[charaFace A 2]就这么逃跑！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

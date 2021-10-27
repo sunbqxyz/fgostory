@@ -1,0 +1,219 @@
+
+＄94-01-56-55-1-0
+
+
+
+[soundStopAll]
+
+
+
+[messageOff]
+
+
+[branch _PlayEffect_1st PM4 1]
+
+
+[label _PlayEffect_etc]
+
+[tapSkip _from_TapSkip_etc]
+
+[scene 10001]
+
+[effectPause bit_talk_goal2_6]
+[wait effectStart bit_talk_goal2_6]
+
+[fadein white 0.5]
+[wait fade]
+
+[effectStart bit_talk_goal2_6]
+[wait effect bit_talk_goal2_6]
+
+[label _from_TapSkip_etc]
+
+[effectDestroy bit_talk_goal2_6]
+[fadein black 0]
+[wait fade]
+
+[branch _PlayEffect_End]
+
+
+[label _PlayEffect_1st]
+
+[bgm BGM_EVENT_3 0.1]
+
+[tapSkip _from_TapSkip_1st]
+
+[effectPause bit_talk_winner2_6]
+[wait effectStart bit_talk_winner2_6]
+
+[scene 10001]
+
+[fadein white 0.5]
+[wait fade]
+
+[effectStart bit_talk_winner2_6]
+
+[bgmStop BGM_EVENT_3 3.7]
+
+[wt 3.9]
+[se ad251]
+[seVolume ad251 0 0.7]
+
+[wt 0.6]
+
+[voice 402600_0_M820]
+
+[scene 10000]
+
+[wait effect bit_talk_winner2_6]
+[wt 1.4]
+
+[label _from_TapSkip_1st]
+
+[voiceStop]
+[scene 10000]
+[effectDestroy bit_talk_winner2_6]
+[fadein black 0]
+[wait fade]
+
+
+[label _PlayEffect_End]
+
+[branch _PlayVoice_Start PM4 1]
+
+[branch _PlayVoice_End]
+
+
+
+
+[label _PlayVoice_Start]
+
+[charaSet A 5030001 1 叙述者的Caster]
+[charaSet B 6028001 1 尼托克丽丝]
+
+[bgm BGM_EVENT_64 0.1]
+
+[scene 45201 1.0]
+[wt 1.0]
+
+[flagRandom _PlayVoiceNo 1 3]
+
+
+[branch _PlayVoice_3rd _PlayVoiceNo 3]
+[branch _PlayVoice_2nd _PlayVoiceNo 2]
+[branch _PlayVoice_1st _PlayVoiceNo 1]
+
+
+
+[label _PlayVoice_1st]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFace A 0]
+[charaDepth B 1]
+[charaDepth A 9]
+[charaFadein B 0.4 2]
+[charaFadein A 0.4 0]
+[wt 0.7]
+
+＠尼托克丽丝
+[tVoice ChrVoice_9010005 0_M700]
+快看啊，是光！　[wait tVoice]
+[k]
+[tVoice ChrVoice_9010005 0_M701]
+[charaFace B 9]
+这可谓正确法老治理世界的崭新黎明！[wait tVoice]
+[k]
+
+[charaFace A 3]
+＠叙述者的Caster
+[tVoice ChrVoice_9010005 0_M702]
+黎明之光……[wait tVoice]
+[k]
+[tVoice ChrVoice_9010005 0_M703]
+嗯，无论见多少次，都令人安心呢。[wait tVoice]
+[k]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_2nd]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFace A 0]
+[charaDepth B 1]
+[charaDepth A 9]
+[charaFadein B 0.4 2]
+[charaFadein A 0.4 0]
+[wt 0.7]
+
+＠尼托克丽丝
+[tVoice ChrVoice_9010005 0_M710]
+挖洞和埋葬基本一样。[wait tVoice]
+[k]
+
+[charaFace B 9]
+＠尼托克丽丝
+[tVoice ChrVoice_9010005 0_M711]
+身为冥界之神的化身，[r]埋葬大师的我是不可能输的。[wait tVoice]
+[k]
+
+[charaFace A 7]
+＠叙述者的Caster
+[tVoice ChrVoice_9010005 0_M712]
+塌方、缺氧、地下水渗漏……[wait tVoice]
+[k]
+[tVoice ChrVoice_9010005 0_M713]
+[charaFace A 0]
+没遇到实际埋葬会遇到的事，实属幸运……[wait tVoice]
+[k]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_3rd]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFace A 0]
+[charaDepth B 1]
+[charaDepth A 9]
+[charaFadein B 0.4 2]
+[charaFadein A 0.4 0]
+[wt 0.7]
+
+＠尼托克丽丝
+[tVoice ChrVoice_9010005 0_M800]
+啊……[twt 1.0]故事听入迷了，[r]不知何时居然已经挖穿了！　[twt 4.7][charaFace B 9]你还真能干呀！？[wait tVoice]
+[k]
+
+[charaFace A 3]
+＠叙述者的Caster
+[tVoice ChrVoice_9010005 0_M723]
+承蒙夸奖不胜荣幸。[twt 3.0][charaFace A 0][r]那么，接下来的故事等今后有机会……[wait tVoice]
+[k]
+
+[charaFace B 7]
+＠尼托克丽丝
+[tVoice ChrVoice_9010005 0_M724]
+（能令人忘却时间固然很好，[r]　但缺点在于让人很介意后续发展啊。[wait tVoice]
+[k]
+
+[charaFace B 8]
+＠尼托克丽丝
+[tVoice ChrVoice_9010005 0_M725]
+　刚才那个故事的结局究竟会是什么呢……）[wait tVoice]
+[k]
+
+
+
+[label _PlayVoice_End]
+
+
+[messageOff]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_64 0.4]
+[wait fade]
+[soundStopAll]
+[end]

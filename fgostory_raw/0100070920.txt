@@ -1,0 +1,749 @@
+
+
+
+＄01-00-07-09-2-0
+[soundStopAll]
+[charaSet A 8001002 1 玛修]
+[charaSet B 98106200 1 梅林]
+[charaSet C 3027000 1 安娜]
+[charaSet D 98002000 1 芙芙]
+[charaSet E 98106000 1 恩奇都]
+[charaSet F 98003000 1 Dr.罗曼]
+[charaSet G 3006001 1 弁庆]
+[charaSet H 4014001 1 牛若丸]
+
+
+[bgm BGM_EVENT_3 0.1]
+[scene 32940]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.4 1]
+
+＠恩奇都
+不好意思，我的真正目标是这位。
+[k]
+
+＠恩奇都
+在之前战斗的时候，我就有些怀疑了，[r]没想到你们竟然藏有这种杀手锏。
+[k]
+
+＠恩奇都
+比起迦勒底的御主，[r]你可要恐怖多了啊。所以说[line 3]
+[k]
+
+
+[charaFace E 8]
+＠恩奇都
+[line 3]得请你，现在就先退场才行。
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[se bac167]
+[charaEffect H bit_talk_kushizashi01]
+[wt 0.2]
+[fowardEffect bit_talk_13]
+[flashin once 0.1 0.3 FF0000AF FF000000]
+[charaFace C 5]
+[charaShake C 0.05 3 3 0.4]
+[charaMoveReturn C 0,5 0.1]
+[wt 0.2]
+[charaPut H 0,-600]
+＠安娜
+呜，啊…………！
+[k]
+
+[messageOff]
+[charaEffect C bit_talk_35]
+[se ad161]
+[wt 0.3]
+[charaFadeout C 0.7]
+[wt 0.7]
+[se ad144]
+[shake 0.05 0 3 0.4]
+[wt 0.5]
+
+？1：安娜……！
+
+？！
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+安娜小姐……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+
+＠梅林
+糟了，这可是致命伤级别的！？[r]哎，凯茜帕鲁格，快做点什么！
+[k]
+
+＠梅林
+反正你肯定囤积了很多魔力吧！？[r]我不会生气的，在这里尽量用吧！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[messageOff]
+[charaTalk D]
+[charaFadein D 0.1 1]
+[charaShake D 0.1 0 5 0.7]
+
+＠芙芙
+芙，芙呜！
+[k]
+[charaMove D 0 0.2]
+[wait charaMove D]
+[charaFadeout D 0.1]
+[wt 0.1]
+[messageOff]
+
+[charaTalk C]
+[charaFace C 4]
+
+[charaTalk off]
+[charaFadein C 0.1 1]
+
+＠安娜
+……？[r]芙芙，你[line 3]
+[k]
+
+[wt 0.2]
+
+[charaFadein D 0.1 512,0]
+[charaMove D 1 0.2]
+[se ad39]
+[charaEffect D bit_talk_17]
+[charaDepth D 1]
+[charaDepth C 0]
+
+＠芙芙
+芙，芙[line 4]！
+[k]
+
+[messageOff]
+[flashin once 0.2 0.1 FFFFFFFF FFFFFFFF]
+[wt 0.4]
+[flashin once 0.2 0.1 FFFFFFFF FFFFFFFF]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.4]
+[charaPut D 0,-1000]
+[charaEffectStop D]
+[seStop ad39 0.4]
+[se ad29]
+[effect bit_talk_21]
+[wt 0.7]
+[effectStop bit_talk_21]
+
+[wt 0.4]
+
+[charaTalk on]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.4 1]
+
+＠恩奇都
+消失了……不是退去，而是转移吗！[r]那只动物究竟[line 3]唔？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[messageOff]
+[se ad14]
+[shake 0.05 2 2 2.0]
+[wt 2.0]
+[seStop ad14 0.6]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+御主，是地震！[r]不对，刚才那个应该说是[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaSet C 98107500 1 乌鲁克士兵B]
+[charaSet D 98107500 1 乌鲁克士兵A]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠D：乌鲁克士兵
+刚……刚才那是什么！？[r]大地在摇晃吗！？ 艾比夫山喷发了吗！？
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad14]
+[shake 0.03 4 4 0]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠梅林
+不，不对！　这是[line 3]！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+
+
+＠恩奇都
+[line 3]怎么可能，居然直接来了！？[r]这和预定不同，她到底有多耐不住性子啊……！
+[k]
+
+
+？1：这该不会是[line 3]
+？2：地底下有什么东西……！
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[messageOff]
+
+[seStop ad14 0.3]
+[fadeout black 0.7]
+[bgmStop BGM_EVENT_3 0.7]
+[wait fade]
+[scene 34600]
+[shakeStop]
+[wt 1.0]
+[fadein black 0.7]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.2]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+[charaFadein H 0.1 2]
+
+＠弁庆
+牛若丸大人，这是大好机会！[r]刚才的地震令魔兽们都逃跑了！
+[k]
+
+＠弁庆
+趁现在就能率领士兵撤回北壁了！[r]请马上下令！
+[k]
+
+[charaFace H 5]
+＠牛若丸
+……不。这不是地震。[r]这是地面下方大鲶游过的声音。
+[k]
+
+[charaFace G 4]
+＠弁庆
+大鲶！？[r]难道[line 3]难，道[line 3]那，那，那[line 3]！
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.4 1]
+[bgmStop BGM_EVENT_3 1.0]
+[wait wipe]
+
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[scene 32940]
+[wt 0.1]
+[charaSet G 98106900 1 提亚马特]
+[charaSet H 98006200 1 ？？？]
+[charaSet D 98106900 1 提亚马特B]
+
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+
+[charaScale G 1.01]
+[charaScale D 1.01]
+[shake 0.01 0 10 5.0]
+[charaFilter H silhouette 00000FF]
+[charaFadein H 0.1 0,-800]
+[se ad14]
+[charaPut F 0,-200]
+[effect bit_talk_haboob_02]
+[wt 5.0]
+[seStop ad14 0.7]
+[se ad10]
+[se ad190]
+[charaMove H 0,20 0.1]
+[effectStop bit_talk_haboob_02]
+[wipeout rectangleStripDownToUp 0.4 1]
+[wait wipe]
+[charaFadeout H 0.1]
+[charaFilter D silhouette 00000FF]
+
+[charaFadein D 0.1 0,-80]
+[se ad207]
+[wt 0.4]
+[scene 20320]
+[charaMove D 0,20 0.7]
+[wipein rectangleStripUpToDown 0.4 1]
+[charaEffect F bit_talk_haboob_02]
+[wt 2.0]
+[charaFadein G 0.4 0,20]
+[charaEffectStop F bit_talk_haboob_02]
+[charaFadeout D 0.1]
+[wt 4.0]
+[seStop ad207 1.4]
+[wt 1.0]
+[wipeout rectangleStripUpToDown 0.4 1]
+[wait wipe]
+[charaFadeout G 0.1]
+[scene 34600]
+[charaSet D 98107500 1 乌鲁克士兵A]
+[wt 0.2]
+[wipein rectangleStripDownToUp 0.4 1]
+[wait wipe]
+[bgm BGM_EVENT_24 0.1]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace C 0]
+[charaFadein C 0.1 2]
+＠D：乌鲁克士兵A
+尼……尼普尔市出现了新魔兽！？[r]但我从未听说过如此巨大的魔兽啊！
+[k]
+
+＠D：乌鲁克士兵A
+那是神兽！[r]比杉木林的胡姆巴巴还要巨大啊！
+[k]
+
+
+＠C：乌鲁克士兵B
+[line 3]不对。[r]那是……那是[line 3]
+[k]
+
+＠C：乌鲁克士兵B
+[line 3]那是提亚马特神。[r]太可怕了……北方女神果然就是提亚马特神！
+[k]
+
+＠C：乌鲁克士兵B
+快逃，大家快逃啊[line 4]！[r]会被杀掉的！ 我们全部都会被杀掉的[line 2]！
+[k]
+
+[messageOff]
+[se ad162]
+[seVolume ad162 0 0.4]
+
+[charaFadeout C 0.4]
+[wt 0.2]
+[charaFadeout D 0.4]
+
+[fadeout black 0.7]
+[bgmStop BGM_EVENT_24 0.7]
+[wait fade]
+[charaFadeout H 0.1]
+[wt 0.1]
+[seStop ad162 0.7]
+[scene 32940]
+[fadein black 0.7]
+[wait fade]
+
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaSet H 98107500 1 乌鲁克士兵C]
+
+[charaTalk off]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+
+[charaFace D 0]
+[charaFadein D 0.4 2]
+[charaFace H 0]
+[charaFadein H 0.4 0]
+
+＠乌鲁克士兵
+快逃[line 3]快逃快逃快逃！[r]全体撤退！　我们根本不可能打赢那种怪物！
+[k]
+
+[charaTalk off]
+
+[messageOff]
+[charaFadeout C 0.4]
+[wt 0.2]
+[charaFadeout D 0.4]
+[wt 0.2]
+[charaFadeout H 0.4]
+[wt 0.7]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+大家冷静一点……！
+[k]
+
+[charaFace A 15]
+＠玛修
+那里是怪物的尾巴[line 3]呜！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[messageOff]
+[effect bit_talk_goltail01]
+[se bac78]
+[wt 1.0]
+[effectStop bit_talk_goltail01]
+[wt 0.7]
+[effect bit_talk_35]
+[shake 0.05 0 5 0.4]
+[flashin once 0.2 0.1 FF0000FF FF000000]
+[se ad161]
+[wt 0.7]
+[effect bit_talk_35]
+[shake 0.05 0 5 0.4]
+[flashin once 0.2 0.1 FF0000FF FF000000]
+[se ad161]
+[wt 0.7]
+[effect bit_talk_35]
+[shake 0.05 0 5 0.4]
+[flashin once 0.2 0.1 FF0000FF FF000000]
+[se ad161]
+[flashout 0.7]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠梅林
+尾巴一扫就全灭了……！[r]而且城门也被堵住了！
+[k]
+
+＠梅林
+阿其曼，赶快分析那家伙！[r]虽然难以置信，但那也是从者！
+[k]
+
+＠梅林
+至少能查出灵基、身长和职阶之类的吧！？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk F]
+[communicationCharaLoop 98003003 1 5 0 2]
+
+＠Dr.罗曼
+我在做！
+[k]
+
+＠Dr.罗曼
+灵基是神灵级，本体10公尺高，[r]身长[line 3]包含尾巴的话超过100公尺！？
+[k]
+
+＠Dr.罗曼
+分类是Extra职阶！[r]是复仇者，Avenger！
+[k]
+
+
+
+[messageOff]
+[wipeout leftDownToRightUp 0.4 1]
+[wait wipe]
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+[scene 20320]
+[wipein rightUpToLeftDown 0.4 1]
+[wait wipe]
+
+
+＠？？？
+[line 3]真吵闹，人类们。
+[k]
+
+＠？？？
+人类的宿敌。『三女神同盟』的魁首。[r]你们恐惧地称之为魔兽女神的怪物[line 3]
+[k]
+
+＠？？？
+百兽母神，提亚马特已然现身让你们拜见了。[r]难道不该匍匐跪地，献上祷告吗？
+[k]
+
+[messageOff]
+[wipeout rightUpToLeftDown 0.4 1]
+[wait wipe]
+[scene 32940]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wipein leftDownToRightUp 0.4 1]
+[wait wipe]
+
+＠玛修
+[line 6]。
+[k]
+
+
+？1：那就是[line 3]魔兽女神，提亚马特[line 3]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+
+＠恩奇都
+贵安，母亲大人。[r]今天也安然睡醒了呀，真是太好了。
+[k]
+
+＠恩奇都
+……但这和预定有些许不同。[r]“再生之日”到来前，请您保重自己的身体。
+[k]
+
+＠恩奇都
+在现身这座北壁之前，[r]应该还有一段时间才对啊。
+[k]
+
+[messageOff]
+[wipeout leftDownToRightUp 0.4 1]
+[wait wipe]
+[charaFadeout E 0.1]
+[wt 0.1]
+[scene 20320]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+[wipein rightUpToLeftDown 0.4 1]
+[wait wipe]
+
+
+＠提亚马特
+[line 3]别这么说。[r]没什么，只是想看看我孩子的玩伴而已。
+[k]
+
+＠提亚马特
+迦勒底的幸存者。[r]现在仍死缠着人间不放的虫子，就是那个吗？
+[k]
+
+[messageOff]
+[cameraMove 0.7 0,-80 1.5]
+[wait camera]
+[wt 0.2]
+[se ad231]
+[wt 1.0]
+[cameraHome 1.2]
+[wait camera]
+[charaFace G 0]
+＠提亚马特
+[line 3]真渺小。[r]多么弱不经风的生命啊。
+[k]
+
+＠提亚马特
+真令人不解。就凭那种生命，[r]是如何抵达这里的。
+[k]
+
+＠提亚马特
+不堪入眼，也没有绞杀的价值。[r]完全不对本提亚马特的胃口。
+[k]
+
+＠提亚马特
+[line 3]呵。但为之庆幸吧。[r]现在我十分饥饿。
+[k]
+
+＠提亚马特
+就算是条无谓的小命，也会有点味道吧。[r]人类最后的御主，会是甜的，还是苦的呢。
+[k]
+
+[messageOff]
+[wipeout rightUpToLeftDown 0.4 1]
+[wait wipe]
+[scene 32940]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+[wipein leftDownToRightUp 0.4 1]
+[wait wipe]
+
+
+＠玛修
+提……提亚马特神正在睥睨我们……！[r]实在……无法动弹……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+
+＠梅林
+这下……麻烦了。[r]我也一根手指都动不了……！
+[k]
+
+＠梅林
+这是恐惧造成的麻痹？ 还是邪眼一类的东西？[r]竟然连我都一步也动弹不得……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+
+＠恩奇都
+………………
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[messageOff]
+[charaFadein A 0.1 2]
+[charaFadein B 0.1 0]
+
+？1：玛修，深呼吸[line 5]！
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+好……好的！[r]玛修·基列莱特，深呼吸！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：梅林，用腮呼吸[line 4]！
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠梅林
+腮是什么鬼啦！[r]但虽然很不甘心，但[#梅林:Merlin]和[#人鱼:Merman]确实非常相近！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？！
+[charaTalk F]
+[communicationCharaLoop 98003003 1 5 0 5]
+
+＠Dr.罗曼
+没错，现在不是胆怯的时候！[r]就算是女神，我们也不会崇敬那种邪神！
+[k]
+
+＠Dr.罗曼
+玛修！　要相信你的前辈[line 3][r]相信御主[%1]！
+[k]
+
+＠Dr.罗曼
+无论对手是谁，你们现在还活着！[r]而且你们身边还有世上最强的诈骗师，梅林！
+[k]
+
+＠Dr.罗曼
+总之现在先逃往北壁！[r]放弃还太早了！
+[k]
+
+？1：对！
+？2：走吧，玛修！
+
+？！
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+[line 3]当然！[r]我会派上用处的，御主！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+[wt 1.0]
+[messageOff]
+[wipeout leftDownToRightUp 0.4 1]
+[wait wipe]
+[charaFadeout E 0.1]
+[wt 0.1]
+[scene 20320]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wipein rightUpToLeftDown 0.4 1]
+[wait wipe]
+
+＠提亚马特
+哦。充满活力这点倒是相当不错。[r]……好吧。我的孩子啊，退下吧。
+[k]
+
+＠提亚马特
+就像摘下蛇莓一样掐碎人类的希望[line 3][r]这种结局也挺甜蜜愉悦的吧？
+[k]
+
+[wt 0.4]
+[messageOff]
+[effect bit_talk_43]
+[charaFadeout G 0.4]
+[se ad85]
+[wipeout downToUp 0.4 1]
+[wait wipe]
+[wt 0.4]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

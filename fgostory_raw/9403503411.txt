@@ -1,0 +1,765 @@
+
+＄94-03-50-34-1-1
+[soundStopAll]
+
+[charaSet A 1098164200 1 巨大大奥女官鬼魂]
+[charaSet B 99502600 1 玛修]
+[charaSet C 6014001 1 玛塔·哈丽]
+[charaSet D 98110000 1 柳生但马守]
+[charaSet E 1098158220 1 希翁]
+[charaSet F 1098158230 1 希翁_举手_通讯]
+[charaSet G 5030001 1 山鲁佐德]
+[charaSet H 1098163800 1 春日局]
+[charaSet I 3030000 1 帕尔瓦蒂]
+[charaSet J 5009000 1 特效用dummy]
+
+[scene 72200]
+
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0 1]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaPut J 1]
+[charaEffect J bit_talk_v_slash01]
+[wt 0.1]
+[cueSe Battle bac509]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[wt 0.1]
+[charaFadeout D 0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0 1]
+[charaShake A 0.04 4 3 0.7]
+[bgmStop BGM_EVENT_80 2.0]
+[wt 1.0]
+
+
+[charaSpecialEffect A enemyErasure 1 2.0]
+[cueSe Battle ba6]
+[wt 3.0]
+[cueSeStop ba6 0.3]
+
+[imageSet A cut103_item01 1]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[cueSe Battle bas2]
+[wt 0.2]
+[charaFadein A 0.7 0,-200]
+[wt 2.2]
+
+[charaFadeout A 0.4]
+[wt 0.5]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠玛修
+战斗结束[line 3][r]确认印笼掉落！
+[k]
+
+？1：（咦。这次什么都没听到？）
+？2：（因为是特别的吗……）
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠玛塔·哈丽
+然后呢，怎么样～？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠柳生但马守
+上面刻着……庆喜。[r]就是我们要找的东西吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠希翁
+但还没证明我们的想法是否正确。[r]唔，扫描扫描。没有精神污染，没有灵性陷阱。
+[k]
+
+＠希翁
+综合来看，没有什么……危险性。[wt 0.9][charaFace E 11][bgmStop BGM_EVENT_77 0.6][r]只不过[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠玛修
+怎么了？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+
+＠希翁
+作为阿特拉斯院的魔术师，我不得羞愧地表示，[r]“德川化”还有很多未解的谜团。
+[k]
+
+＠希翁
+由于完全是新的概念，因此现阶段，[r]我们根本没有可以进行衡量的完美标尺。
+[k]
+
+＠希翁
+这些将军的印笼或许会造成我们预想不到的副作用。
+[k]
+
+[charaFace E 11]
+
+＠希翁
+根据报告中迦摩所说的话，
+[k]
+
+＠希翁
+迄今为止的德川化似乎都是由于[r]深入这个迷宫后堕落所导致的……
+[k]
+
+[charaFace E 14]
+
+＠希翁
+嗯。我不想让各位感到不安，
+[k]
+
+＠希翁
+但我还是觉得应该说清楚，[r]现在无法保证绝对安全。
+[k]
+
+？1：现在不是犹豫的时候了。
+？2：如果能够对抗的只有这个，那只能用了……
+？！
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaFace E 0]
+＠希翁
+说得对。结果，[r]我们也只有这一个办法。
+[k]
+
+＠希翁
+尽管我总觉得我们的选择受到了限制，[r]但毕竟『大奥』是敌方阵地，不，就是敌人本身。
+[k]
+
+＠希翁
+我方会接连陷入不利的状态也在所难免。[r]现在只能去做力所能及的事，对吧。
+[k]
+
+[charaFace E 6]
+
+＠希翁
+那么，我开始将这个嵌入礼装！
+[k]
+
+＠希翁
+当然，和此前的印笼一样，[r]不会对将军的灵魂本身造成任何影响，放心吧！
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_62 1.0 0.4]
+[wait fade]
+
+[charaFadeout E 0.1]
+[charaPut J 1200,1200]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[fowardEffect bit_talk_cure]
+[wt 0.1]
+[cueSe Battle bas4]
+[wt 1.0]
+[fowardEffectStop bit_talk_cure]
+[wt 1.2]
+
+[bgm BGM_EVENT_62 0.5 1.0]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠玛修
+这是……观测到非常有特征的波长。
+[k]
+
+＠玛修
+尽管发生了潜入大奥这一仪式行为，[r]但魔术方面处于逆相位！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠希翁
+很好。也就是说，这就是“反德川”的性质……
+[k]
+
+＠希翁
+只要稍作调整，或许就能更为高效地[r]将其转换成穿戴在身上的术式了。
+[k]
+
+＠希翁
+类似对德川涂层术式的感觉。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠玛塔·哈丽
+这不就是我们想要的力量吗！？　太棒了！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+＠山鲁佐德
+逐渐远离了死亡……真是……太好了……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+
+＠希翁
+若说还有什么不满的话，[r]其实我更希望得到……
+[k]
+
+＠希翁
+能将浸染[%1]全身的德川化彻底清除的东西。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠玛塔·哈丽
+做不到吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠希翁
+嗯，非常遗憾。
+[k]
+
+[charaFace E 5]
+
+＠希翁
+用来具体分析的情报和时间都不够，[r]现在基本只能转用印笼中存在的东西。
+[k]
+
+[charaFace E 11]
+
+＠希翁
+然后嘛，这个的指向性严格来说比较偏外侧……
+[k]
+
+[charaFace E 14]
+
+＠希翁
+所以才犹豫是否该拿这个用作防御迦摩干涉的壁垒，[r]还是该用在更为有效的使用方法上。
+[k]
+
+＠希翁
+但从防御角度来说只能这么做了。[r]千万不能触碰到会引起故障的开关的感觉。
+[k]
+
+[charaFace E 12]
+
+＠希翁
+似乎还能凝缩起来像Gandr那样射出去攻击。
+[k]
+
+？1：效果已经很充分了吧！
+？2：这样或许……就能行了吧。
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgmStop BGM_EVENT_62 1.0]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠春日局
+…………
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+
+＠柳生但马守
+阿福阁下。提不起干劲吗。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk H]
+[charaFace H 12]
+[charaFadein H 0.1 1]
+
+＠春日局
+哎呀，如果我说自己不介意，那一定是在撒谎。
+[k]
+
+[charaFace H 5]
+
+＠春日局
+但我说过了，现在最重要的是救出家光大人。[r]我会痛下决心！
+[k]
+
+[charaFace H 7]
+＠春日局
+……然后！　我要身为乳母向孩子们提问，[r]请不要撒谎，诚实地回答我！
+[k]
+
+[charaFace H 13]
+＠春日局
+[line 3]能赢吗？
+[k]
+
+？1：这……
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠玛修
+……无法断言。[r]只能说，现在总算有资格走上“战场”了。
+[k]
+
+＠玛修
+若从严格的战力分析来看，[r]胜算只有五成，或者[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠春日局
+非常感谢，玛修大人。[r]感谢您诚实地回答。
+[k]
+
+＠春日局
+尽管战斗全都交给帕尔大人了，[r]但我当时也在场。
+[k]
+
+＠春日局
+很清楚敌人是一个多么不寻常的威胁。
+[k]
+
+[charaFace H 12]
+
+＠春日局
+然而却不得不将你们这样的年轻人，[r]送去那种地方，送入那样的绝境。
+[k]
+
+＠春日局
+即便你们有自己战斗的理由，但我还是不能[r]眼睁睁放任你们去挑战这种高风险的赌注……
+[k]
+
+[charaFace H 13]
+＠春日局
+我不能让你们这些年轻的生命去送死。
+[k]
+
+
+＠春日局
+请务必谨慎判断。尽管只是临时的，[r]但这是作为引导你们前进至此的乳母的请求。
+[k]
+
+？1：春日局小姐……
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+
+＠柳生但马守
+胜算，是有的。
+[k]
+
+＠柳生但马守
+我们得到了这个印笼。[r]这是毋庸置疑的事实。
+[k]
+
+[bgm BGM_EVENT_67 0.1]
+
+＠柳生但马守
+既然如此。
+[k]
+
+[charaFace D 5]
+
+＠柳生但马守
+[#我们就一定能把握]。[r]因此我们有充分的胜算，十成的胜算。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 16]
+[charaFadein H 0.1 1]
+
+＠春日局
+！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠柳生但马守
+刚才就差一步，最后还是失手了。[r]但下次我们有万全状态的主公。
+[k]
+
+[charaFace D 5]
+
+＠柳生但马守
+只要主公勇于抗争，[r][#还无法获胜的武士没有当武士的资格]。
+[k]
+
+＠柳生但马守
+因此不会输。[r]士无二言。
+[k]
+
+？1：呵呵……相当有说服力呢！
+？2：当然啦。既然柳生先生这么说，那一定没错。
+
+？！
+
+[messageOff]
+[charaFace D 1]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠山鲁佐德
+对，战斗不是光靠御主一个人的力量。[r]也不能忘记我们从者。
+[k]
+
+＠山鲁佐德
+哪怕御主的力量只增加了一，[r]我们的力量也不一定同样增加了一。
+[k]
+
+＠山鲁佐德
+或许是十，或许是百。[r]这[line 3]就是[#我们]在这里的意义。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠玛塔·哈丽
+同感。说到底，无论面对多么严苛的战斗，[r]我们也丝毫没觉得自己会输。
+[k]
+
+[charaFace C 1]
+
+＠玛塔·哈丽
+所以没关系啦，肯定没事！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠春日局
+……是吗。呵呵。[r]既然肯定能赢，那就当我没说过那些话好了。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace H 0]
+[charaFadein H 0.1 2]
+
+＠春日局
+话说回来，宗矩阁下……
+[k]
+
+＠柳生但马守
+嗯。
+[k]
+
+＠春日局
+我所熟悉的您是大人的兵法指南。[r]我并未真正意义上见过战场上的宗矩大人……
+[k]
+
+＠春日局
+但将剑术钻研到极致之人的战斗，[r]最后都会到达那种境地吗。
+[k]
+
+[charaFace H 1]
+
+＠春日局
+宛若孩童，宛若禅修问答……[r]似乎有一点好笑呢，呵呵。
+[k]
+
+[charaFace D 3]
+
+＠柳生但马守
+唔……
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠春日局
+无论如何，非常抱歉。[r]破坏了难得的氛围。
+[k]
+
+＠春日局
+年纪一大，就会变得爱操心呢，真麻烦。
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaTalk off]
+[charaDepth H 0]
+[charaDepth I 1]
+
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+
+[wt 0.35]
+
+[charaSpecialEffect H erasureReverse 1 0.3]
+[charaFace I 1]
+[charaFadein I 0.15 1]
+[wt 0.05]
+[seStop ad80 0.3]
+
+[wt 0.5]
+
+＠帕尔瓦蒂
+我理解您的心情。[r]春日局小姐非常温柔呢。
+[k]
+
+[charaFace I 0]
+
+＠帕尔瓦蒂
+但是，嗯，不用担心。[r]我们的确不觉得自己会输。
+[k]
+
+＠帕尔瓦蒂
+因为除了这“对德川”的力量以外，[r]我们还增加了重要的战力。
+[k]
+
+＠帕尔瓦蒂
+希翁小姐和玛修小姐……[r]以及两位提供的有用『情报』。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠玛修
+对。我们会尽可能准备好对策来应对。[r]结果一定会与上一次……不，是绝对会与上一次不同。
+[k]
+
+＠玛修
+请放心吧！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk depthOff]
+[charaDepth H 0]
+[charaDepth I 1]
+
+[charaTalk off]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[charaFace H 0]
+[charaPut H 180,0]
+[charaFadeTime H 0.1 0.6]
+[wt 0.5]
+[charaFaceFade H 1 0.3]
+[wt 1.5]
+
+[charaFadeout I 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk on]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠希翁
+说得对。
+[k]
+
+[charaFace E 1]
+
+＠希翁
+好了，终于要面对最终决战了。[r][line 3]我们走吧！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_67 2.0]
+[wait fade]
+[charaPut J 1200,1200]
+[charaFadeout E 0.1]
+[wt 0.5]
+[soundStopAll]
+
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+
+[cueSe Battle bas2]
+[charaFace A 0]
+[charaFadein A 0.5 0,-200]
+[wt 1.4]
+
+＠
+[s 1000]
+　　　 [s 16]获得了第十五代将军『德川庆喜的印笼』。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[wait fade]
+[end]

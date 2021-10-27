@@ -1,0 +1,94 @@
+
+＄02-00-01-11-1-1
+
+
+[charaSet A 98111500 1 通讯用杂音]
+[charaSet B 2023000 1 莫里亚蒂]
+[charaSet C 98109400 1 阿尔托莉雅·Alter]
+[charaSet D 98109500 1 贞德·Alter]
+[charaSet E 99502600 1 玛修]
+
+[soundStopAll]
+
+[bgm BGM_EVENT_7 0.1]
+
+[scene 38300]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠莫里亚蒂
+好啦，各位！[r]换衣服，打扮得漂亮一些，创造地狱吧！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace D 0]
+[charaDepth C 9]
+[charaDepth D 1]
+[charaFadein C 0.1 0]
+[charaFadein D 0.1 2]
+＠阿尔托莉雅·Alter
+换衣服……啊。
+[k]
+
+＠贞德·Alter
+换衣服……呢。
+[k]
+
+＠两人
+……[r]……
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.7]
+[wt 0.4]
+[charaFadeout D 0.7]
+[wt 1.0]
+
+？1：那我也去……
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠莫里亚蒂
+哎哟，稍微等一下，御主。[r]你穿……这·一·套。
+[k]
+
+[charaFace B 1]
+
+？1：哎！
+？！
+
+[messageOff]
+
+[charaFadeout B 0.7]
+[wt 1.0]
+
+[charaPut A 1]
+[charaEffect A bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0 1]
+[wt 0.3]
+＠玛修
+哎[line 6]！？
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[soundStopAll]
+[end]

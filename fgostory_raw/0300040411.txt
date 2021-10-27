@@ -1,0 +1,347 @@
+
+＄03-00-04-04-1-1
+
+
+[soundStopAll]
+
+[charaSet A 98115300 1 福尔摩斯]
+[charaSet B 8001400 1 装甲·玛修]
+[charaSet C 8001410 1 玛修]
+[charaSet D 1098127610 1 佩佩隆奇诺]
+[charaSet E 3004001 1 迦尔纳]
+[charaSet F 1098127610 1 剪影_佩佩隆奇诺]
+[charaFilter F silhouette 00000080]
+
+[charaSet J 5009000 1 特效用dummy]
+
+[scene 27710]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠福尔摩斯
+敌对反应全都处理完毕了吧？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth B 0]
+[charaDepth C 1]
+
+[charaTalk off]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.7]
+
+[se ade18]
+[seVolume ade18 0.0 0.5]
+[wt 0.5]
+[seStop ade18 0.8]
+[wt 1.0]
+
+[se ade57]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[charaFace C 0]
+[charaFadein C 0.3 1]
+[wt 0.3]
+[charaFadeout B 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠玛修
+对，非常顺利。[r][#灵基外骨骼:奥特瑙斯]的状态也极为良好。
+[k]
+
+[charaFace C 1]
+
+＠玛修
+稳定性与进入彷徨海之前相比，果然有天壤之别呢。
+[k]
+
+[charaFace C 0]
+
+＠玛修
+不仅拥有了合适的设备，[r]还能得到达·芬奇亲和希翁小姐的调整，
+[k]
+
+＠玛修
+这种情况正如我曾听说的那句格言……[r]是叫『如食人魔添重兵器』吧[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠迦尔纳
+说得既对，也不对。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠玛修
+对……对吧！？[r]其实我也觉得有点奇怪。
+[k]
+
+＠玛修
+因为是金时先生教我的格言，[r]所以我也隐约怀疑过这话是否有被微妙地Golden化过……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠迦尔纳
+抱歉。我也不是很了解日本的谚语。[r]我刚才指的，是关于处置敌人的问题。
+[k]
+
+[bgmStop BGM_EVENT_77 0.5]
+
+＠迦尔纳
+敌人确实已经解决掉了。[r]但是[line 3]不知是敌是友的家伙就[line 3]
+[k]
+
+？1：哎？
+？！
+
+[charaFace E 5]
+
+＠迦尔纳
+[line 3]就在那里。
+[k]
+
+[messageOff]
+[se ad73]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+[cameraMove 0.1 -40,0 1.1]
+[se adm15]
+[effect bit_bolg_02 0,-100]
+[wt 0.3]
+[shake 0.05 6 4 0.5]
+[cueSe Battle bac91]
+[wt 0.1]
+[cueSeStop bac91 0.2]
+[cueSe Battle bac434]
+[wt 0.6]
+[cueSeStop bac434 0.2]
+[se ad228]
+[wt 0.2]
+[seStop ad228 0.4]
+[effectStop bit_bolg_02]
+
+[wt 1.0]
+
+[cameraHome 0.7]
+[wt 1.2]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠迦尔纳
+给我出来。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_79 0.1]
+
+
+＠
+从那里走出来的[line 3]
+[k]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth D 2]
+[charaDepth F 1]
+
+[charaFace F 0]
+[charaFadein F 0.4 1]
+
+＠
+是位拥有美丽肉体的人类。
+[k]
+
+＠
+不是指作为男性，或是作为女性的美。[r]而是指作为“人类这种生物”的[#均衡:Balance]躯体。
+[k]
+
+＠
+他脸上隐约透露着一股目中无人，[r]却又浮现着和蔼可亲的笑容。
+[k]
+
+＠
+[#Lancer:迦尔纳]明明向他挥出了长枪。
+[k]
+
+＠
+能贯穿人类的脆弱身躯百次仍绰绰有余的致命一枪，[r]就从他身旁掠过，粉碎了岩石。
+[k]
+
+＠
+[line 3]他却仍然笑着。
+[k]
+
+＠
+仿佛那致命一击，[r]犹如清晨喝咖啡时感受到的凉爽微风一般。
+[k]
+
+＠
+没有丝毫胆怯，不露任何焦急。
+[k]
+
+＠
+对与足以终结自身那一击的刹那交汇和擦身而过，[r]他却只是面带微笑地置若罔闻。
+[k]
+
+
+
+[messageOff]
+[wt 0.5]
+
+[charaFace D 9]
+[charaFadein D 1.0 1]
+[wt 1.5]
+[charaFadeout F 0.1]
+
+[charaTalk on]
+[charaTalk D]
+
+＠D：？？？
+哎呀呀。从者竟然挥枪攻击柔弱的人类……[r]这样好吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠迦尔纳
+若是对无力的人类这样做，我会感到羞耻，[r]但我觉得你不会因为这点程度就死去。
+[k]
+
+＠迦尔纳
+而实际见到你本人之后，我的印象仍旧没变。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠D：？？？
+哎呀讨厌啦，这话听起来是不是有点像马后炮？
+[k]
+
+＠D：？？？
+我还以为自己藏得很好呢，[r]所以这还真吓了我一大跳哦？
+[k]
+
+[charaFace D 4]
+
+＠D：？？？
+不过嘛……就算听到了动静，[r]也不该贸然地接近呢。我得好好反省才行。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠玛修
+您是……您是……！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 1.5]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠玛修
+[line 3]佩佩隆奇诺先生！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 1.0]
+[charaFace D 9]
+
+＠佩佩隆奇诺
+嗨。好久不见，小玛修。
+[k]
+
+＠佩佩隆奇诺
+哎呀。不过是一阵子没见，[r]你的表情好像丰富起来了呢？
+[k]
+
+[charaFace D 1]
+
+＠佩佩隆奇诺
+嗯嗯。我觉得这非常好哦♡
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_79 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

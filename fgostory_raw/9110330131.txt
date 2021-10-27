@@ -1,0 +1,689 @@
+
+
+＄91-10-33-01-3-1
+
+
+[soundStopAll]
+
+
+[charaSet A 1033002 1 齐格鲁德]
+[charaSet B 3012001 1 布伦希尔德]
+[charaSet C 5038000 1 齐格]
+[charaSet D 1040000 1 葛饰北斋]
+[charaSet E 1041001 1 阿斯托尔福]
+
+[charaSet J 8001000 1 dummy特效1]
+
+[scene 31501]
+
+[charaDepth A 9]
+[charaDepth B 1]
+[charaDepth C 9]
+[charaDepth D 1]
+
+[charaPut J 2000,2000]
+[charaMoveScale J 0.1 0.1]
+[charaEffect J bit_talk_blue_fire]
+
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[charaTalk off]
+
+[charaFace C 2]
+[charaFace D 12]
+[charaFadein C 0.4 0]
+[charaFadein D 0.4 2]
+[wt 0.4]
+
+＠二人
+呼，[charaMoveReturn C -256,-2 0.44][wt 0.04][charaMoveReturn D 256,-2 0.4][wt 0.4]呼，[charaMoveReturn D 256,-2 0.44][wt 0.04][charaMoveReturn C -256,-2 0.4][wt 0.4]呼……[charaMoveReturn C -256,-2 0.44][wt 0.04][charaMoveReturn D 256,-2 0.4][wt 0.4]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[charaFaceFade A 10 0.6]
+[wt 0.9]
+
+[charaMoveReturn A 0,-8 0.3]
+[wt 0.1]
+
+＠齐格鲁德
+嗯。[bgm BGM_EVENT_2 0.1][r]相当不错。
+[k]
+
+＠齐格鲁德
+接下来只需不偷懒继续锻炼，[r]应该就能开辟剑之道吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace C 7]
+[charaFace D 7]
+[charaFadein C 0.1 0]
+[charaFadein D 0.1 2]
+
+＠葛饰北斋
+呀[messageShake 0.04 3 4 0.6]嗬～，结束啦～！
+[k]
+
+[messageShakeStop]
+
+[charaFace D 15]
+
+＠葛饰北斋
+啊～，不行了。[r]这就是所谓的能量用光了吧。
+[k]
+
+[messageOff]
+[charaFace C 2]
+[charaFadeout D 0.4]
+[charaMove D 256,-70 0.7]
+[charaShake D 0.04 4 1 0.7]
+[wt 0.3]
+[se ade75]
+[seVolume ade75 0 0.4]
+[wt 0.9]
+
+[charaFace C 8]
+
+＠齐格
+我很想搀扶你，[r]但遗憾的是，我也到极限了……抱歉。
+[k]
+
+[messageOff]
+[charaFadeout C 0.4]
+[charaMove C -256,-70 0.7]
+[charaShake C 0.04 4 1 0.7]
+[wt 0.3]
+[se ade75]
+[seVolume ade75 0 0.4]
+[wt 1.5]
+
+？1：两位都心满意足地倒下了……
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+没办法。[r]就由在下搀扶两位吧。
+[k]
+
+[messageOff]
+[charaMove A 0,-20 0.5]
+[wt 0.5]
+
+[se ad748]
+[seVolume ad748 0 0.6]
+[charaShake A 0.05 3 1 0.4]
+[wt 0.8]
+
+[charaMove A 1 0.2]
+[wt 0.4]
+
+[se ad7]
+[seVolume ad7 0 0.7]
+[charaMove A 0,7 0.1]
+[wt 0.1]
+
+[charaMove A 1 0.2]
+[wt 1.0]
+
+[charaFace A 1]
+
+＠齐格鲁德
+不，但是。[r][line 3]真是一段愉快的时光。
+[k]
+
+[charaFace A 4]
+
+＠齐格鲁德
+……唔。[r]居然又觉得愉快了。
+[k]
+
+＠齐格鲁德
+这可不行。
+[k]
+
+？1：我觉得没什么不好啊。
+？！
+
+[charaFace A 0]
+
+＠齐格鲁德
+……是……吗……？
+[k]
+
+？1：不信去问问你身边最亲近的人吧？
+？！
+
+＠齐格鲁德
+……唔。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.4]
+[bgmStop BGM_EVENT_2 1.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[fadein black 1.4]
+[wait fade]
+
+＠
+唯有战斗才算英雄。[r]唯有守护弱者才算英雄。
+[k]
+
+＠
+唯有不笑才算英雄。[r]一旦笑了，我一定就会变弱。
+[k]
+
+＠
+……我一直这么认为。
+[k]
+
+[messageOff]
+[fadeout black 1.4]
+[wait fade]
+
+[se ad37]
+[seVolume ad37 0 0]
+
+[scene 21105]
+
+[seVolume ad37 1.4 0.4]
+[fadein black 1.4]
+[wait fade]
+[wt 0.6]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠布伦希尔德
+[line 3]哎呀，发生了这种事啊。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.3 1]
+[wt 0.2]
+
+＠齐格鲁德
+啊啊，吾爱。[r]你怎么看待在下的弱小呢？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠布伦希尔德
+……[r]……
+[k]
+
+[messageOff]
+[seStop ad37 2.8]
+[wt 0.6]
+[charaFaceFade B 1 0.6]
+[wt 1.0]
+
+＠布伦希尔德
+不，你根本不弱。[r]并没有失去勇士的资格。[bgm BGM_EVENT_6 0.1]
+[k]
+
+＠布伦希尔德
+就像过去，从不会笑的你，[r]在我面前会露出由衷的笑容一样。
+[k]
+
+＠布伦希尔德
+现在的你，[r]可以微笑。
+[k]
+
+＠布伦希尔德
+这并不代表弱小[line 3]
+[k]
+
+＠布伦希尔德
+只是作为人类，[r]更为接近应有的模样了。
+[k]
+
+＠布伦希尔德
+我觉得，这是一件非常好的事。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.7]
+
+[charaFaceFade A 10 0.6]
+[wt 0.9]
+
+＠齐格鲁德
+是吗……
+[k]
+
+＠齐格鲁德
+如果真是这样，那一定是多亏了你。[r]吾爱，布伦希尔德啊。
+[k]
+
+＠齐格鲁德
+生前内心的激情，[r]或是慈爱的感觉。
+[k]
+
+[charaFace A 1]
+
+＠齐格鲁德
+正因为生前感受过那些，[r]在下才会在这里吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠布伦希尔德
+……呵呵。[r]你总是能打动我的心呢。
+[k]
+
+＠布伦希尔德
+但是，[r]我就喜欢你这样，[#亲爱的]。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+[charaShake A 0.04 4 3 0.4]
+
+＠齐格鲁德
+[line 3]唔。[wt 0.5][charaFaceFade A 3 0.6][r]……[wt 0.6][charaFaceFade A 11 0.4]令人措手不及的突袭……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠布伦希尔德
+你总会扰乱我的内心。[r]所以偶尔……也要回敬一下。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace A 0]
+[charaFace B 0]
+[charaFadein A 0.1 0]
+[charaFadein B 0.1 2]
+[wt 0.8]
+
+[charaFace A 10]
+[charaFace B 1]
+[wt 1.0]
+
+[charaFace A 9]
+[charaFace B 3]
+[charaShake A 0.04 2 2 0.2]
+[charaShake B 0.04 2 2 0.2]
+
+[charaTalk on]
+[charaTalk D]
+
+＠葛饰北斋
+喂～……话说[#应为:喂]是我，[r]齐格鲁德老爷～！　去修行啦，修行！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad133]
+[wt 0.6]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.8 1]
+[wt 1.2]
+
+＠葛饰北斋
+我想到了一个必杀技。[wt 0.7][charaFace D 0][r]想试试看……[wt 0.65][charaFace D 18][charaShake D 0.04 3 4 0.4]哇哇！
+[k]
+
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad133]
+[wt 0.6]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.8 1]
+[wt 1.2]
+[charaFace C 8]
+
+＠齐格
+……非常抱歉。[r]我们没打算打扰两位的幽会。
+[k]
+
+[charaFace C 5]
+
+＠齐格
+好啦，阿荣。[r]我不是说过夜晚很危险嘛。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 28]
+[charaFadein D 0.1 1]
+
+＠葛饰北斋
+是[messageShake 0.04 3 4 1.0]……是……是这个意思吗，[r]我压根没想到啦！！
+[k]
+
+[messageShakeStop]
+
+[charaFace D 3]
+
+＠葛饰北斋
+啊～，既……既然是这样的话，[r]还是算了，明天再说吧！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+你说什么呢，北斋。[r]是必杀技吧？
+[k]
+
+[charaFace A 10]
+＠齐格鲁德
+请务必让在下见识一下。
+[k]
+
+＠齐格鲁德
+好，吾爱啊。[r]你稍微帮一下这两位吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠布伦希尔德
+明白了，齐格鲁德。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠齐格
+然后……还会再加一个人，[r]不要紧吧？
+[k]
+
+[charaFace C 2]
+
+＠齐格
+说是『连我自己都不知道[r]　为什么会成为Saber啦～！』
+[k]
+
+[charaFace C 8]
+
+＠齐格
+所以我把他带来了。
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 0.3]
+
+[charaDepth C 1]
+[charaDepth E 9]
+
+[se ad132]
+[charaFadeout C 0.4]
+[charaMove C -256,0 0.8]
+[wt 1.8]
+
+[se ad345]
+[seVolume ad345 0 0.2]
+[wt 0.6]
+
+[charaFace C 8]
+[charaFace E 22]
+[charaFadein C 0.8 -160,0]
+[charaFadein E 0.6 -470,-200]
+[charaMove C -120,0 0.4]
+[charaMove E -420,-200 0.4]
+[charaShake E 0.04 3 1 0.4]
+[wt 0.6]
+
+[charaMove C -80,0 0.4]
+[charaMove E -390,-200 0.4]
+[charaShake E 0.04 3 1 0.4]
+[wt 0.6]
+
+[charaMove C -40,0 0.4]
+[charaMove E -350,-200 0.4]
+[charaShake E 0.04 3 1 0.4]
+[wt 0.6]
+
+[charaMove C 0,0 0.4]
+[charaMove E -310,-200 0.4]
+[charaShake E 0.04 3 1 0.4]
+[wt 0.6]
+[seStop ad345 0.4]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 19]
+
+＠阿斯托尔福
+晚上好！　抱歉打扰你们约会了！[wt 1.1][charaFace E 26][r]但如果能愉快地锻炼我，就太感激不尽了！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+呵……[r]当然没问题。
+[k]
+
+[charaFace A 10]
+
+＠齐格鲁德
+但是，愉快与否就要取决于你们了。
+[k]
+
+[messageOff]
+[wt 0.4]
+
+[se ade126]
+[charaFace A 7]
+[wt 0.7]
+
+＠齐格鲁德
+在下的剑术课程以[r]时而严格、时而严格、偶尔温和为方针。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠阿斯托尔福
+哇[messageShake 0.04 3 3 0.7]哇哇哇哇，我会努力的～！
+[k]
+
+[messageOff]
+[wt 0.4]
+[fadeout black 1.4]
+[bgm BGM_EVENT_6 1.4 0.6]
+[wait fade]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[scene 10000]
+[charaPut J 0,-350]
+[wt 1.7]
+
+[fadein black 1.4]
+[wait fade]
+[wt 0.4]
+
+＠
+即便[#那]不再是火焰，[r]即便那不再是燃烧沸腾的存在。
+[k]
+
+＠
+即便感情化作温暖春日般慈爱的感情。
+[k]
+
+＠
+即便如此。[r]即便如此[line 3]
+[k]
+
+＠
+英雄齐格鲁德啊。[r]现在的[#我]，应该可以清晰地感受到。
+[k]
+
+＠齐格鲁德
+[line 3]当然。我能清晰地感受到。
+[k]
+
+＠
+这是身体内侧积蓄的力量……
+[k]
+
+＠
+通过内外的接触，融合维系在一起，[r]急速提高的力量。
+[k]
+
+[messageOff]
+[fadeout black 1.4]
+[wait fade]
+
+[scene 21105]
+[wt 0.4]
+
+[charaPut J 2000,2000]
+[charaEffectStop J bit_talk_blue_fire]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 80,0]
+
+[bgm BGM_EVENT_6 1.4 1.0]
+
+[fadein black 1.4]
+[wait fade]
+[wt 0.4]
+
+
+＠布伦希尔德
+齐格鲁德。[r]大家都在等着你哦。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.6]
+[charaFace A 8]
+
+＠齐格鲁德
+嗯。[r]……那让我们开始吧。
+[k]
+
+[messageOff]
+[se ad132]
+[charaFadeout A 0.8]
+[wt 2.2]
+
+＠
+回应呼唤，[r]我先迈出了一步。
+[k]
+
+＠
+没有样式，没有质量，没有形体，[r]但是，的确存在于此的力量。
+[k]
+
+＠
+我们，称其为“爱”。
+[k]
+
+[messageOff]
+[wt 1.2]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_6 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

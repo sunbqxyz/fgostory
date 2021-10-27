@@ -1,0 +1,520 @@
+
+＄94-03-35-51-7-0
+
+[soundStopAll]
+
+[charaSet A 1098177300 1 卡米拉_第一无枪]
+[charaSet B 1098188000 1 卡米拉_第二无枪]
+[charaSet C 1098177320 1 卡米拉_第三无枪]
+[imageSet D cut118_card01 1]
+[equipSet H 9807530 1 情人节礼装]
+[imageSet I back10000 1]
+[charaScale I 1.01]
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66600]
+[branch lblConf]
+[label lblNotClear]
+[scene 10310]
+[label lblConf]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+[wt 0.5]
+
+[se ad95]
+[wt 1.8]
+
+[seStop ad95]
+[wt 0.7]
+
+？1：（好像有种可疑的气息……）
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.2 490,0]
+[wt 0.8]
+[charaFadeout A 0.2]
+[wt 0.5]
+
+[fadeout black 0.1]
+[bgmStop BGM_EVENT_2 0.1]
+[wait fade]
+
+[scene 10000]
+[wt 0.1]
+
+[se ade313]
+[seVolume ade313 0 0.6]
+[fadein black 0.1]
+[wait fade]
+
+[effect bit_talk_card_flies]
+[wt 0.9]
+
+[se ad410]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 66600]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10310]
+[label lblConf2]
+
+[charaFadein D 0 0,-200]
+[wt 1.4]
+
+＠
+[tVoice ValVoice_403600 0_V010]
+『今晚，我会来取走你重要的东西。[bgm BGM_EVENT_5 0.1][r]　　　　　　　　　　　　　　　女怪盗　Mistress C』[wait tVoice]
+[k]
+
+？1：………………！？
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_5 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[branchQuestNotClear lblNotClear3 3000303]
+[scene 71600]
+[branch lblConf3]
+[label lblNotClear3]
+[scene 10420]
+[label lblConf3]
+
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.7]
+
+？1：（…………Zzz…………）
+？！
+
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 -510,0]
+[wt 0.5]
+[charaMove B -340,0 1.0]
+[se ad60]
+[seVolume ad60 0 0.1]
+[wt 1.0]
+[seStop ad60 0.4]
+[wt 0.7]
+
+[charaMove B -170,0 1.0]
+[se ad60]
+[seVolume ad60 0 0.1]
+[wt 1.0]
+[seStop ad60 0.4]
+[wt 0.7]
+
+[charaMove B 0,0 1.0]
+[se ad60]
+[seVolume ad60 0 0.1]
+[wt 1.0]
+[seStop ad60 0.2]
+[wt 0.7]
+
+
+[charaFace B 1]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V020]
+呵呵呵…………[wait tVoice]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.1]
+[se ad410]
+[fowardEffect bit_talk_searchlight]
+[charaFace B 2]
+[wt 1.0]
+
+[se ad7]
+[wt 0.3]
+[bgm BGM_EVENT_3 0.1]
+
+？1：执行公务执行公务！
+？！
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V030]
+呜，睡得太浅了吗……不，打从一开始[r]就是在装睡吧！？　你真行啊！[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.2]
+[bgmStop BGM_EVENT_3 1.0]
+[fowardEffectStop bit_talk_searchlight]
+[se ade302]
+[branchQuestNotClear lblNotClear4 3000303]
+[scene 66800 0.5]
+[branch lblConf4]
+[label lblNotClear4]
+[scene 10400 0.5]
+[label lblConf4]
+
+[wt 1.5]
+
+[charaFace B 0]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V040]
+居然坐等我跳进你的陷阱。[bgm BGM_EVENT_7 0.1][r]不愧是御主。[wait tVoice]
+[k]
+
+？1：因为……你都发预告信了嘛……
+？2：出于礼节，我觉得总该准备一下……
+？！
+
+[charaFace B 3]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V050]
+……这么说来好像确实没错？[wait tVoice]
+[k]
+
+？1：然后呢，你打算偷什么？
+？2：只要是能给的，我可以给你哦。
+？！
+
+[messageOff]
+[charaFace B 2]
+[wt 1.0]
+
+[charaFace B 1]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V060]
+呵呵，呵呵呵。是么。[r]看来你没理解关键的内容呢。[wait tVoice]
+[k]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V070]
+……这是未能预想的 innocent & pure……[r]……然而这也颇有趣 Valentine's night……[wait tVoice]
+[k]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V080]
+这样其实倒也无所谓。[r]怪盗只需完成怪盗的工作即可。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout B 0.4]
+
+[se bas2]
+[charaFace H 0]
+[charaFadein H 0.5 0,-70]
+[wt 2.0]
+[charaFadeout H 0.4]
+[wt 0.5]
+
+？1：巧克力……？
+？2：谢谢！　但是……
+？！
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V090]
+你的表情似乎在说，[r]『你难道不是来偷什么东西的吗？』[wait tVoice]
+[k]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V100]
+没关系，这是为达成那个目的所必须的东西。[r]你可以将其视为怪盗七道具之一。[wait tVoice]
+[k]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V110]
+我Mistress C偷盗时所使用的[#道具:存在]，[r]其实远不止七个哦。[wait tVoice]
+[k]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V120]
+金钱、微笑、嫉妒、热情、技术、秘密、执着、时间、[r]恐怖、快乐、以及[line 3]爱。[wait tVoice]
+[k]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V130]
+为得到想要的东西所需的，一切。[r]怪盗就是不惜动用这一切的存在。[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_7 2.0]
+[charaFace B 4]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V140]
+但是[line 3][wait tVoice]
+[k]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V150]
+当知道光靠这些仍无法获得时。[r]又该怎么做呢……？[wait tVoice]
+[k]
+
+？1：我不太清楚。
+？2：大概只能放弃了吧？
+？！
+
+[bgm BGM_EVENT_2 0.1]
+[charaFace B 0]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V160]
+然而我并不能放弃。[wait tVoice]
+[k]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V170]
+就像永远的年轻与鲜血一样。[r]想要的东西还是会想要。[wait tVoice]
+[k]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V180]
+啊啊，有句话先说在前头[wait tVoice]
+[k]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V190]
+我姑且是伯爵夫人，所以当然也有丈夫。[r]我也爱着他。[wait tVoice]
+[k]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V200]
+但一事归一事。[r]好女人总是贪婪的。[wait tVoice]
+[k]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V210]
+无论是你的东西，还是别人的东西。[r]回过神来时总是想忍不住伸手。[wait tVoice]
+[k]
+
+[charaFace B 4]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V220]
+但是……是啊。[r]既然如此，看来只能稍微改变一下方法了。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.7]
+
+[messageOff]
+[charaTalk off]
+[charaDepth C 2]
+[charaDepth B 1]
+
+[se ad77]
+[seStop ad77 0.8]
+[charaFace C 0]
+[charaFadein C 0.5 1]
+[charaFadeout B 0.7]
+[wt 0.9]
+
+[charaTalk on]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V230]
+今天的怪盗时间到此结束。[r]接下来是作为纯粹的卡米拉。[wait tVoice]
+[k]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V240]
+工作结束，我打算去兜风。[r]陪我一起来，御主。[wait tVoice]
+[k]
+
+[messageOff]
+[se ade281]
+[wt 0.8]
+
+？1：这么大半夜的……？
+？！
+
+[charaFace C 1]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V250]
+夜晚才好啊。[r]有些感觉只有夜里才能感受。[wait tVoice]
+[k]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V260]
+安静而冰冷，稍微有些可怕[line 3][r]我会让你倾听这种钢铁少女的歌声。[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgm BGM_EVENT_2 1.5 0.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 65900]
+
+[se ade328]
+[wt 1.0]
+
+[shake 0.06 1 1 4.0]
+[se ade326]
+[seVolume ade326 0 0]
+[seVolume ade326 1.5 0.6]
+
+[fadein black 1.5]
+[bgm BGM_EVENT_2 1.5 1.0]
+[wait fade]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_2 0.5 0.5]
+[seVolume ade326 0.5 0.2]
+[charaDepth I 1]
+[charaFadeTime I 0.5 0.4]
+[wt 0.7]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V270]
+（就算没穿怪盗的装扮，现在我的灵魂就是怪盗。[r]　你掉以轻心了呢。）[wait tVoice]
+[k]
+
+[charaFace C 1]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V280]
+（即便光靠巧克力不行，也不必心急。[r]　我会一点一点偷掉的。）[wait tVoice]
+[k]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V290]
+（没错，我什么都会利用。无论是这鲜红的幻想，[r]　还是美丽的夜景……呃。）[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace C 4]
+
+[charaFadeout I 0.5]
+[bgm BGM_EVENT_2 0.5 1.0]
+[seVolume ade326 1.0 0.6]
+[wt 0.7]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V300]
+……为什么不看周围的夜景，[r]而是形迹可疑地盯着我啊？[wait tVoice]
+[k]
+
+[charaFace C 1]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V310]
+不用担心。[r]我才不会引发事故呢。[wait tVoice]
+[k]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V320]
+难得邀请你一次，[r]希望你能好好感受兜风的乐趣。[wait tVoice]
+[k]
+
+？1：啊，对不起。
+？！
+
+？1：因为我很少看到卡米拉小姐的真面目。
+？2：有种新鲜感……
+？！
+
+[charaFace C 4]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V330]
+[FFFFFF]？[-][wait tVoice]
+[k]
+
+？1：感觉自己占了便宜。
+？2：还有巧克力，也要谢谢你。
+？！
+
+[messageOff]
+[charaFace C 3]
+[wt 0.2]
+
+[shake 0.02 3 3 1.0]
+[se ade329]
+[seVolume ade326 0.5 0]
+[wt 1.5]
+[seStop ade329 0.5]
+[wt 0.5]
+
+[charaFace C 2]
+[se ade328]
+[wt 0.7]
+[seVolume ade326 0.4 1.0]
+[wt 0.4]
+[seVolume ade326 1.0 0.6]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V340]
+你……你突然说些什么啊！[r]害我吓了一跳啦！[wait tVoice]
+[k]
+
+？1：麻烦您安全驾驶。
+？！
+
+[charaFace C 3]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V350]
+我当然是这么打算的！[r]真是的……[wait tVoice]
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_2 1.0 0.5]
+[seVolume ade326 1.0 0.2]
+[wt 0.3]
+
+[charaDepth I 1]
+[charaFadeTime I 0.5 0.4]
+[wt 0.7]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V360]
+（啊啊，不好。这下可不好了。[r]　得振作起来才行。偷窃的应该是我[line 3]）[wait tVoice]
+[k]
+
+＠卡米拉
+[tVoice ValVoice_403600 0_V370]
+（可不能让无可挽回的不得了的东西……[r]　被对方偷走了哦？）[wait tVoice]
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[seStop ade326 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,50 @@
+＄01-00-00-05-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[scene 10720]
+[charaSet A 8001000 0 玛修]
+[charaSet B 98003003 2 罗曼医生]
+[charaSet C 98002000 2 芙芙]
+[charaSet D 98004000 1 雷夫]
+[charaSet E 98005000 1 奥尔加玛丽]
+[charaSet F 98006000 1 ？？？]
+[charaFace A 4]
+[charaFadein A 0 1]
+[fadein black 1]
+[wait fade]
+＠玛修
+哈啊[line 3]哈啊[line 3][r]赢了……我本以为这下肯定完了，没想到赢了[line 3]
+[k]
+
+[charaFadeout A 0]
+[charaTalk B]
+[charaFadein A 0.1 2]
+[communicationCharaLoop 98003003 0 5 0 5]
+＠罗曼医生
+……抱歉，没时间休息了，玛修。
+[k]
+
+＠罗曼医生
+[#和刚才反应相同的存在]向你们那边过去了。[r]……不用我说，你也知道该做什么吧？
+[k]
+
+[charaFace A 15]
+＠玛修
+哎[line 3]反应相同？　怎么会[line 3]
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace E 4]
+[charaFadein E 0.1 0]
+＠奥尔加玛丽
+[%1]！　撤退，赶快！[r]总之先从这里撤离！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

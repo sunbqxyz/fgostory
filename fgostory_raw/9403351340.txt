@@ -1,0 +1,148 @@
+
+＄94-03-35-13-4-0
+
+[charaSet A 4015001 1 亚历山大]
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+
+[scene 10310]
+
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+＠亚历山大
+[tVoice ValVoice_401500 0_V010]
+唔，巧克力。[r]是传说中某位皇帝爱喝的饮料的关联品吗？[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠亚历山大
+[tVoice ValVoice_401500 0_V020]
+谢谢，御主。[r]我也喜欢甜的东西哦。[wait tVoice]
+[k]
+
+[messageOff]
+
+[charaFace A 4]
+[wt 1.0]
+
+[charaFace A 0]
+＠亚历山大
+[tVoice ValVoice_401500 0_V030]
+对啊……[r]因为这似乎是一份包含了心意的礼物……[wait tVoice]
+[k]
+
+＠亚历山大
+[tVoice ValVoice_401500 0_V040]
+所以我也得回赠礼物才行吧。什么比较好？[wait tVoice]
+[k]
+
+？1：下个月再说也行哦？
+
+[charaFace A 1]
+＠亚历山大
+[tVoice ValVoice_401500 0_V050]
+啊哈哈，那怎么行呢。[r]唔……[wait tVoice]
+[k]
+
+？2：哎，你会送我什么吗……？
+
+＠亚历山大
+[tVoice ValVoice_401500 0_V060]
+王不能只获取。[r]教导我这个道理的究竟是哪位老师呢。[wait tVoice]
+[k]
+
+＠亚历山大
+[tVoice ValVoice_401500 0_V070]
+啊啊，难道是[line 3][#他]吗。还是[#她]呢？[r]无论是谁，都好怀念呀。[wait tVoice]
+[k]
+
+＠亚历山大
+[tVoice ValVoice_401500 0_V080]
+如果是成长之后的我，[r]一定会说什么想要的东西就该自己去掠夺吧。[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 1]
+＠亚历山大
+[tVoice ValVoice_401500 0_V090]
+好，我决定了！[r]我要送给你我最喜欢的东西！[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[equipSet B 9805550 1 ]
+[wait equipSet B]
+[charaFace B 0]
+[charaFadein B 0.5 0,-70]
+[wt 2.0]
+[charaFadeout B 0.4]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠亚历山大
+[tVoice ValVoice_401500 0_V100]
+这是我那个时代风格的卷轴。[r]而另一种则是你所在时代的名为文库样式的书。[wait tVoice]
+[k]
+
+＠亚历山大
+[tVoice ValVoice_401500 0_V110]
+要论携带性，毫无疑问是文库比较优秀吧。[r]你可以选择喜欢的那种阅读。[wait tVoice]
+[k]
+
+＠亚历山大
+[tVoice ValVoice_401500 0_V120]
+啊啊，对了。[r]但有一件事需要注意一下。[wait tVoice]
+[k]
+
+＠亚历山大
+[tVoice ValVoice_401500 0_V130]
+卷轴那个呀，嗯。是用希腊语写的。[r]而且不是现代的，是所谓的古希腊语。[wait tVoice]
+[k]
+
+＠亚历山大
+[tVoice ValVoice_401500 0_V140]
+如果你读不懂的话[line 3][wait tVoice]
+[k]
+
+[charaFace A 4]
+
+
+＠亚历山大
+[tVoice ValVoice_401500 0_V150]
+到时候……[tdelay 1 1.8 1][charaFace A 1][delay -][r]对了，要不我在你睡前读给你听吧？[wait tVoice]
+[k]
+
+[delayStop 1]
+
+
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]

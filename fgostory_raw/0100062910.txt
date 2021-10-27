@@ -1,0 +1,252 @@
+＄01-00-06-29-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+[charaSet A 8001002 1 玛修]
+[charaSet B 5009001 1 达·芬奇]
+[charaSet C 1012001 1 贝德维尔]
+[charaSet D 98003000 1 Dr.罗曼]
+[charaSet E 98014000 1 圣都军士兵]
+[charaSet F 98098000 1 阿格规文]
+
+[imageSet G talk_img_black_gradation 1]
+[wait imageSet G]
+[charaScale G 1.1]
+[charaCutin G upToDown 0.1 0]
+
+[scene 29000]
+
+[charaEffect D bit_talk_haboob_01]
+
+[se ad134]
+[fadein black 2.0]
+[wait fade]
+[wt 2.0]
+[seStop ad134 0.5]
+[fadeout black 2.0]
+[wait fade]
+
+[charaPut D 1200,1200]
+[charaEffectStop D bit_talk_haboob_01]
+
+[charaFadeout G 0]
+
+[scene 29400]
+
+[fadein black 2.0]
+[wait fade]
+
+
+[charaTalk E]
+[charaFadein E 0.1 1]
+
+＠圣都军士兵
+阿格规文大人，正门被突破了！[r]请火速向狮子王禀报！
+[k]
+
+＠圣都军士兵
+贼军兵临城下只是时间的问题了……[r]请尽快让陛下使用制裁之光！
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠阿格规文
+没这个必要。就算正门被攻破了，[r]我方还有圆桌骑士们。
+[k]
+
+＠阿格规文
+城下有崔斯坦。[r]城外是莫德雷德的游击部队。
+[k]
+
+＠阿格规文
+敌军的气势是暂时的。[r]那沙尘暴迟早会消失。坚持防守到那一刻。
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk E]
+[charaFadein E 0.1 1]
+
+＠圣都军士兵
+不，莫德雷德卿的游击部队已经溃败！[r]已经不存在了！
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠阿格规文
+…………这倒是令人惊讶。[r]可以说是来这圣地以来，最令人惊讶的事了。
+[k]
+
+＠阿格规文
+……发生了什么？
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk E]
+[charaFadein E 0.1 1]
+
+＠圣都军士兵
+是……那是，那个。[r]游击部队……被游击部队击溃了。
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠阿格规文
+[line 6]。
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk E]
+[charaFadein E 0.1 1]
+
+＠圣都军士兵
+是兰斯洛特卿造反。[r]湖上骑士已非圣都的骑士！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[scene 29802]
+
+[bgm BGM_EVENT_1 2.0]
+[fadein black 2.0]
+[wait fade]
+[wt 1.0]
+
+[se ad60]
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.4 1]
+[wt 0.5]
+[seStop ad60]
+
+＠贝德维尔
+这就是圣都……用圣枪制造的卡美洛。[r]……我终于，到了[line 3]
+[k]
+
+
+[charaFadeout C 0.1]
+[bgmStop BGM_EVENT_1 0.1]
+[messageOff]
+[se ad14]
+[se ad16]
+[shake 0.05 0 4 1.5]
+[wt 1.5]
+[seStop ad14]
+[seStop ad16]
+
+[bgm BGM_EVENT_3 0.1]
+[charaTalk D]
+[se ad13]
+[communicationChara 98003003 1 5 0 5]
+[wt 0.5]
+
+＠Dr.罗曼
+没空感伤了！[r]魔力反应大量接近中！
+[k]
+
+＠Dr.罗曼
+之前都是士兵和肃正骑士的混合部队，[r]但这已经完全不是人类了[line 3]
+[k]
+
+＠Dr.罗曼
+是用圣枪的魔力制造的神造军团！[r]和之前的不可同日而语！
+[k]
+
+
+？1：在城市里还要战斗吗……！
+？2：这么说来，这里的居民们[line 2]
+
+？！
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+……这里一个人都没有。[r]也没有躲在建筑物中。
+[k]
+
+＠玛修
+哪儿都找不到圣都的居民。[r]在这座城市里活动的，只有圣都士兵……
+[k]
+
+[charaFace A 4]
+＠玛修
+难道说……圣拔已经结束，[r]人们都被吸入圣枪里了吗……
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+这就不好说了。因为如果真是这样，[r]那圣都外早该变成世界尽头了。
+[k]
+
+＠达·芬奇
+很可能战斗开始后让他们都去避难了。[r]对于狮子王来说，这里的人们也是无可替代的……
+[k]
+
+＠达·芬奇
+不，是不能替代的贵重物品啊。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠贝德维尔
+……呜。[r]这……确实如此。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+抱歉，我也有点过分了！[r]但总之，现在先应战！
+[k]
+
+＠达·芬奇
+来了，是圣都直属的肃正骑士！[r]他们作为对手无需手下留情！
+[k]
+
+＠达·芬奇
+因为他们都是狮子王的分身，[r]就当是前哨战，好好打！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,351 @@
+
+
+
+
+＄94-01-76-16-1-0
+
+[soundStopAll]
+
+[charaSet A 2023000 1 新宿的Archer]
+[charaSet B 98001000 1 玛修]
+[charaSet C 5011001 1 巴贝奇]
+[charaSet D 10004000 1 机械伊丽亲]
+[charaSet F 10004000 1 机械伊丽亲（火箭拳）]
+[charaSet E 98115000 1 特效用]
+
+
+[se ad8]
+[scene 10400]
+[fadein black 1.5]
+[wait fade]
+
+[se ad311]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠新宿的Archer
+好啦，今天的午饭是什么呢～♪[bgm BGM_EVENT_7 0.1][seStop ad311 0.4][r]无论何时都在耍阴谋诡计～♪
+[k]
+
+？1：你好，教授！
+？！
+
+[charaFace A 1]
+
+＠新宿的Archer
+哟，御主！[r]你看上去挺开心的呢？
+[k]
+
+＠新宿的Archer
+如果有什么好玩的事，[r]能否让我这个五十大叔也参一脚呢？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠玛修
+不不，总之请先坐下。[r]新宿的Archer先生。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[charaShake A 0.2 0 5 0.4]
+[charaMove A -60,0 0.4]
+[wt 0.5]
+[charaMove A -60,-80 0.7]
+[wt 0.3]
+
+＠新宿的Archer
+嗯嗯，我很喜欢可以大赚一笔的事哦！
+[k]
+
+[charaDepth A 10]
+[charaDepth C 5]
+
+[bgmStop BGM_EVENT_7 0.7]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 80,0]
+[se ad68]
+[wt 0.4]
+＠巴贝奇
+原来如此，原来如此。[r]也就是说，汝很喜欢泄露技术吧？
+[k]
+
+[charaFace A 3]
+
+＠新宿的Archer
+……咦？　巴贝奇君在背后？[r]这个态势，难道我被逼入绝路了？
+[k]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠巴贝奇
+那我就直说了吧。
+[k]
+
+＠巴贝奇
+[line 3]刑部姬全都老实交代了。
+[k]
+
+
+＠巴贝奇
+当然，不只是证言，对面部也进行了核对。
+[k]
+
+＠巴贝奇
+尽管现场有恺撒、帕拉塞尔苏斯、莎士比亚[line 3]
+[k]
+
+＠巴贝奇
+但她还是毫不犹豫地指着说『是这家伙』。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠玛修
+你就是万圣节活动的犯人吧，[r]新宿的Archer先生！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 0.7]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaFace A 2]
+＠新宿的Archer
+逃脱[line 12]！！
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+
+[messageOff]
+[charaEffect A bit_talk_quickmove]
+[charaSpecialEffect A erasureReverse 1 0.3]
+
+[se ad28]
+[wt 0.3]
+
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[scene 10310]
+
+[charaPut E 1]
+[charaEffect E bit_talk_42]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[se ad55]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.7 -50,0]
+[charaMove A 50,0 0.7]
+[charaShake A 0.12 0 3 0]
+
+＠新宿的Archer
+呼哈哈哈哈抱歉抱歉！
+[k]
+
+＠新宿的Archer
+因为巴贝奇君的火车头模式太有意思了[line 3]
+[k]
+
+＠新宿的Archer
+我就情不自禁地将技术泄露出去了啊！
+[k]
+
+[charaFace A 0]
+
+＠新宿的Archer
+但一想到这迟早有一天[r]会成为我的利益并成倍返还给我，我就难以[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[seStop ad55]
+[charaPut E 1200,1200]
+[charaShakeStop A]
+[charaEffectStop E bit_talk_42]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+
+＠F：机械伊丽亲
+你泄露的技术创造了我，我对此非常感谢。[r]但我是决不会放过这种恶行的。
+[k]
+
+＠F：机械伊丽亲
+我是正义的守护神，机械伊丽亲。[r]邪恶就该毫不留情地予以处罚。[line 3]因为我是钢铁。
+[k]
+
+＠F：机械伊丽亲
+[f large]机械伊丽拳！
+[k]
+
+[messageOff]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[charaShake F 0.04 3 3 0.2]
+[charaChange F 1098119800 0 fade 0.4]
+[se ade90]
+[wt 1.7]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_3 0.7]
+
+[se ad211]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaFadeout D 0.1]
+[shake 0.05 6 4 0.8]
+[wt 1.0]
+[se ad228]
+[seVolume ad228 0 0.4]
+[wt 0.5]
+[seStop ad228 0.7]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.7 0,-50]
+[charaMove A 1 0.7]
+[charaShake A 0.05 3 3 0.7]
+[wt 0.4]
+
+＠新宿的Archer
+……话说，不好意思……
+[k]
+
+＠新宿的Archer
+你知道所谓的……[r]机器人三原则吗……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠机械伊丽亲
+艾萨克……是第一个提出人工智能职责、权利[r]还有义务什么的罪孽深重的作家吧。
+[k]
+
+＠机械伊丽亲
+但说白了，那部作品就是以[r]如何钻那三原则的空子为目的而写的。
+[k]
+
+＠机械伊丽亲
+进一步说，你不是人类，是英灵。[r]没有被保护的义务。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠新宿的Archer
+呵，呵呵……说得……很有道理呢……[r]……扑街。
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.4]
+[charaMove A 0,-50 0.4]
+[wt 0.2]
+[se ad144]
+[wt 1.3]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠机械伊丽亲
+……好了。[r]终于将所有的因果都解决了。
+[k]
+
+[charaFace D 6]
+
+＠机械伊丽亲
+准备好了吗，[%1]？[r]来吧，让我们享受万圣节的最后时光吧！
+[k]
+
+？1：皆大欢喜皆大欢喜
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaShake A 0.05 3 3 0.7]
+[charaFadein A 0.7 0,-80]
+[charaMove A 0,-50 0.7]
+
+＠新宿的Archer
+呵，呵呵呵……牺牲我一个……如果能换来他人的笑容，[r]那真是值得……
+[k]
+
+＠新宿的Archer
+之所以酝酿出这种『那家伙其实是个好人吧？』[r]的氛围，都是为了要迷惑御主……！
+[k]
+
+[charaFace A 4]
+
+＠新宿的Archer
+扑街。
+[k]
+
+[messageOff]
+[charaMove A 0,-80 0.4]
+[charaFadeout A 0.4]
+[wt 0.2]
+[se ad144]
+[wt 1.0]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

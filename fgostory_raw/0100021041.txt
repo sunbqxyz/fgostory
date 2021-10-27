@@ -1,0 +1,248 @@
+＄01-00-02-10-4-1
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 20700 0]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98003003 1 罗曼医生]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 1005001 1 尼禄]
+[charaSet E 98016000 1 罗马士兵]
+[charaSet F 3009001 1 列奥尼达]
+[charaSet G 7003001 1 吕布]
+[charaSet H 6011001 1 荆轲]
+[charaTalk A]
+[charaFace H 0]
+[charaFadein H 0 0]
+[charaFace A 13]
+[charaFadein A 0 2]
+[fadein black 1]
+[wait fade]
+＠玛修
+已击溃敌军。[r]友军损失轻微。前辈，辛苦了。
+[k]
+
+[charaFace H 1]
+＠荆轲
+请容我再次郑重致谢。[r]多亏你们，托付给我们的士兵才能幸免于难。
+[k]
+
+＠荆轲
+我是暗匿者的荆轲。[r]和你们一样，都是尼禄・克劳狄乌斯的客将。
+[k]
+
+[charaFace H 4]
+＠荆轲
+听说能手刃不少「皇帝」，我才赶来此地。[r]但不知不觉已被尊为将军了。
+[k]
+
+[charaFace H 0]
+＠荆轲
+不过……[r]我本来主要应该负责侦查与暗杀。
+[k]
+
+＠荆轲
+在战场驰骋杀敌本应是他的职责。[r]吕布[line 2]唔，追着敌人不知跑哪儿去了啊。
+[k]
+
+[charaFace H 1]
+＠荆轲
+……唔。[r]反正迟早会回来。
+[k]
+
+[se ad13]
+[wait se ad13]
+[charaFadeout A 0.1]
+[charaFadeout H 0.1]
+[communicationCharaLoop 98003003 1 5 0 0]
+[wt 1]
+＠罗曼医生
+荆轲。是那个中国传说中的刺客吗。[r]原来如此，那我能明白你为何执着于刺杀皇帝了。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaFace H 3]
+[charaFadein H 0.1 0]
+＠荆轲
+嗯[line 2]？
+[k]
+
+[charaFadeout H 0.4]
+[charaFadeout A 0.4]
+[messageOff]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[wt 0.3]
+[scene 20700 0]
+[charaFace H 0]
+[charaFadein H 0.4 0]
+[charaFace A 0]
+[charaFadein A 0.4 2]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+＠荆轲
+玛修和[%1]，[r]你们是异时代的来访者吗？
+[k]
+
+＠荆轲
+我大致明白你们的情况了。[r]不过，这并不影响我们之后的行动。
+[k]
+
+[charaFace H 5]
+＠荆轲
+那就是诛杀那群所谓的「皇帝」。[r]这是我和吕布一致的目标。
+[k]
+
+[charaFace H 1]
+＠荆轲
+我们已消灭了三名「皇帝」从者。[r]可以和你们竞争个高下。
+[k]
+
+[charaFace A 12]
+＠玛修
+是……是吗。[r]竞争……
+[k]
+
+？1：我们可不会输哦。
+
+[charaFace H 1]
+＠荆轲
+谁知道呢？
+[k]
+
+？2：我们才消灭了两名……
+
+[charaFace H 1]
+＠荆轲
+切勿灰心丧气。[r]你们还有反超的机会。
+[k]
+
+？！
+
+[charaFace H 0]
+＠荆轲
+等回到首都罗马，[r]尼禄便会立刻发动对联军的全面进攻吧。
+[k]
+
+＠荆轲
+我们的竞争就从那时开始。[r]胜负取决于谁能取下更多敌方「皇帝」的首级。
+[k]
+
+[charaFace H 1]
+＠荆轲
+我们与你们，究竟哪方能取下更多首级呢[line 2][r]啊啊，我开始有点期待了。
+[k]
+
+[charaFace A 8]
+＠玛修
+说……说得对。[r]真期待呢……
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout A 0]
+[wt 0.5]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠玛修
+（……不行了，前辈。我和她根本谈不到一起）
+[k]
+
+？1：没事，我也一样。
+
+？2：没事，我也一样。
+？2：只能尽力了。
+？！
+
+[charaFace A 14]
+＠玛修
+（真……真是的，前辈）
+[k]
+
+[fadeout black 0.5]
+[messageOff]
+[wait fade]
+[charaFadeout A 0.1]
+[charaFadeout H 0.1]
+[wt 0.5]
+[scene 20900 0]
+[charaSet G 98004000 1 雷夫]
+[charaFace G 5]
+[charaFadein G 0 1]
+[fadein black 0.5]
+[bgmStop BGM_EVENT_2 0.4]
+[bgm BGM_EVENT_5 0.1]
+[wait fade]
+＠雷夫
+[line 2]没能击败吕布么。
+[k]
+
+＠H：？？？
+……之后该怎么办，雷夫・莱诺尔。
+[k]
+
+[charaFace G 3]
+＠雷夫
+没事，这根本算不了什么。[r]我告诉过你的，你可别忘了。我拥有圣杯。
+[k]
+
+＠雷夫
+我能随心所欲地召唤真正的从者。[r]无论多么强大的英灵都不在话下！
+[k]
+
+[charaFadeout G 0.1]
+[messageOff]
+[se su2]
+[wait se su2]
+[flashin once 1 1 FFFFFF80 00000000]
+[wt 1]
+[charaFace G 3]
+[charaFadein G 1 0]
+[charaSet F 4015001 0 ？？？]
+[charaFace F 0]
+[charaFadein F 1 2]
+＠F：？？？
+……从者骑兵么。[r]呼。这就是我的职阶啊。
+[k]
+
+[charaFace F 1]
+＠F：？？？
+然后呢？[r]需要我做些什么，御主？
+[k]
+
+[charaFace G 3]
+＠雷夫
+立刻抹杀尼禄・克劳狄乌斯。[r]摧毁这个时代，斩断从今往后人类的根基。
+[k]
+
+＠H：？？？
+……我把军队借你。任你差遣。
+[k]
+
+[charaFace F 0]
+＠F：？？？
+我明白了。[r]也就是只要发动战争就行了？
+[k]
+
+＠H：？？？
+……没错。
+[k]
+
+[charaFace F 3]
+＠F：？？？
+战争。战争吗。战争呢。[r]我一定非常精于[#此道]。
+[k]
+
+[charaFace F 1]
+＠F：？？？
+明白了。[r]那军队我就借走了哦[line 2]？
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_5 0.4]
+[wait fade]
+[soundStopAll]
+[end]
