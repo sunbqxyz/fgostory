@@ -1,0 +1,174 @@
+
+＄94-03-50-02-2-1
+[soundStopAll]
+
+
+[charaSet A 10003000 1 瞑生院祈荒]
+[charaSet B 3030000 1 帕尔瓦蒂]
+[charaSet C 1098163800 1 春日局]
+[charaSet D 99502600 1 玛修]
+[charaSet E 1098158220 1 希翁]
+[charaSet F 1098158230 1 希翁_举手_通讯]
+[charaSet G 1098164100 1 女中]
+
+[charaSet I 5009000 1 特效用dummy]
+[charaSet J 5009000 1 特效用dummy2]
+
+[scene 10000]
+[scene 71702]
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se bac26]
+[wt 0.1]
+[seStop bac41 0.5]
+[charaDepth J 9]
+[charaEffect J bit_talk_shelling_pink01]
+[wt 0.1]
+[fowardEffect bit_talk_14]
+[wt 0.4]
+
+[se bac18]
+[se bac25]
+[flashin once 0.1 0.1 e1a3ffFF e1a3ff50]
+[wt 0.1]
+[charaShake G 0.03 4 4 0.8]
+
+
+[bgmStop BGM_EVENT_3 0.8]
+[wt 1.0]
+[charaMove G 0,-100 0.4]
+[charaFadeout G 0.4]
+[wt 0.3]
+[se ade41]
+[wt 0.4]
+[se ad144]
+
+
+[wt 1.2]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠瞑生院祈荒
+……唉。虽说由于外形过于怪异，[r]以至于顺手就将她们降服了……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠帕尔瓦蒂
+但她们没有发动攻击呢……？[r]总感觉自己做了什么对不起她们的事。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaDepth C 0]
+[charaDepth B 1]
+
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+[wt 0.3]
+
+[charaSpecialEffect B erasureReverse 1 0.3]
+[charaTalk off]
+[charaFace C 0]
+[charaFadein C 0.2 1]
+[wt 0.1]
+[seStop ad80 0.3]
+
+[wt 0.5]
+
+＠春日局
+她们一定是被女神大人的威势吓破胆了吧！　还有，[r]呃，被瞑生院大人的信仰……？　之类的东西……？
+[k]
+
+[charaFace C 1]
+
+＠春日局
+不管怎么说，妨碍我们前进的存在[r]已经消失了。来吧，我们走吧！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk on]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠玛修
+御主。推测前方的通道会更为异界化。
+[k]
+
+＠玛修
+可能受到与外部相异的[r][#空间构造:Structure]、[#理论:Theory]，和[#法则:Rule]所支配。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠希翁
+也就是说完全不知道会发生什么吧！[r]嗯嗯，攻略迷宫就该这样才行！
+[k]
+
+[charaFace E 3]
+
+＠希翁
+哎呀，失礼了，不小心进入观战模式了。[r]我必须好好学习福尔摩斯氏的冷静才行。
+[k]
+
+[charaFace E 0]
+
+＠希翁
+各位，请千万小心。[r]接下来才是重头戏，拜托各位了！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[wt 0.5]
+
+
+[se ade295]
+[bgmStop BGM_EVENT_81 2.0]
+[cameraMove 3.0 0,35 1.2]
+[wt 1.5]
+
+[messageOff]
+[fadeout black 2.0]
+[seStop ade295 2.0]
+[wait fade]
+[se ade269]
+[wt 1.0]
+[seStop ade269 1.0]
+[wt 2.0]
+[soundStopAll]
+[end]

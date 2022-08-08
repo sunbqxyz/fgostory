@@ -1,0 +1,297 @@
+
+
+
+＄01-00-07-20-3-0
+
+[soundStopAll]
+[se ad2]
+[seVolume ad2 0 0.2]
+[bgm BGM_EVENT_24 0.1]
+[charaSet A 8001002 1 玛修]
+[charaSet B 2020001 1 伊什塔尔]
+[charaSet C 3028000 1 豹人]
+[charaSet D 98003000 1 Dr.罗曼]
+[charaSet E 4018001 1 魁札尔·科亚特尔]
+[charaSet F 98107800 1 拉赫穆]
+[charaSet G 98107800 1 拉赫穆B]
+[charaSet H 98107800 1 拉赫穆C]
+
+[scene 20733]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+拉赫穆、拉赫穆变化体，增大！[r]混沌之潮的浓度也提升了！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+＠伊什塔尔
+看来越靠近提亚马特神，黑泥的污染就越强啊！
+[k]
+
+＠伊什塔尔
+这个距离的污染程度已经这样的话，[r]要做好其脚下范围会更严重的思想准备！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠豹人
+在此之前先考虑拉赫穆啦！　拉赫穆变得更强了吧喵！？[r]怎么看都比我还强，咕哇！？[charaEffect C bit_talk_14][wt 0.1][se bac11][charaShake C 0.05 3 3 0.4]
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+不只是型态进化，连内部的魔术回路也被强化了……[r]经过了一晚，进一步进化了吗……！
+[k]
+
+＠Dr.罗曼
+[%1]，提亚马特神的情况呢！？[r]发现你们了吗！？
+[k]
+
+？1：还没问题……！
+？2：重要的是我们根本追不上！
+
+？！
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[messageOff]
+[se bac112]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+[charaFace G 0]
+[charaFadein G 0.4 0]
+[wt 0.2]
+[charaFace H 0]
+[charaFadein H 0.4 2]
+[wt 0.4]
+
+＠拉赫穆
+人类[line 3]
+[k]
+
+[effect bit_talk_41]
+[shake 0.05 3 3 0]
+＠拉赫穆
+人类人类人类人类人类人类人类人类人类人类人类人类人类[r]人类人类人类人类人类人类人类人类人类人类人类人类人类！
+[k]
+
+[effectStop bit_talk_41]
+[wt 0.3]
+[shakeStop]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠伊什塔尔
+数量太多，根本清理不了！？[r][%1]，快逃[line 3]！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+＠玛修
+御主！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+[charaFace H 0]
+[charaFadein H 0.1 2]
+[wt 0.4]
+[se bac112]
+[effect bit_talk_41]
+[cameraMove 0.75 0,0 2.5]
+[wt 0.3]
+[effect bit_talk_arrow01br]
+[wipeout leftUpToRightDown 0.25 0.5]
+[wt 0.2]
+[effectStop bit_talk_41]
+[wt 0.25]
+[scene 10000]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+[wipein rightDownToLeftUp 0.1 1]
+[wait wipe]
+[cameraMove 0.1 0,0 1.0]
+[wt 0.2]
+[se bac37]
+[wt 1.0]
+[wipeout rightDownToLeftUp 0.1 1]
+[wait wipe]
+[scene 20733]
+[charaFadein F 0.1 1]
+[charaFadein G 0.1 0]
+[charaFadein H 0.1 2]
+[cameraMove 0.1 0,0 3.0]
+[wt 0.1]
+[wipein leftUpToRightDown 0.5 0.5]
+[cameraMove 0.5 0,0 1.0]
+[charaEffect F bit_talk_13]
+[se ad34]
+[shake 0.05 4 6 0.5]
+[charaShake F 0.05 3 3 0.25]
+[charaShake G 0.05 3 3 0.25]
+[charaShake H 0.05 3 3 0.25]
+[wait wipe]
+[wt 1.0]
+
+[se bac112]
+[charaAttack F normal 80,-60 0.4]
+[charaFadeout F 0.4]
+[wt 0.2]
+[charaAttack G normal -176,-60 0.4]
+[charaFadeout G 0.4]
+[wt 0.2]
+[charaAttack H normal 336,-60 0.4]
+[charaFadeout H 0.4]
+[wt 0.4]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+！？　刚才那是[line 3]
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠魁札尔·科亚特尔
+是吉尔苏市的投掷部队！[r]还有幸存者！
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠玛修
+但……但是，连三十人都不到！[r]凭那种人数对拉赫穆出手的话[line 3]！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠拉赫穆
+那边！　那边！[r]有趣，有趣！　弱小生物，有趣！
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+＠伊什塔尔
+呜，不行，我们也没空回头了[line 3]
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠魁札尔·科亚特尔
+豹子！　拜托你扰乱敌人了！[r]看来还有其他决定抗战到最后的人类！
+[k]
+
+＠魁札尔·科亚特尔
+让我见识一下你的脚程吧！[r]尽可能拯救那些人！
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠豹人
+OK，交给我吧[line 3]！[r]只要为了库库尔的请求，我愿意驰骋万里，荒野美兽豹人！
+[k]
+
+＠豹人
+虽然会超级痛，但是我会痛快地大闹一场，[r]吸引走拉赫穆们的！
+[k]
+
+＠豹人
+[%1]，库库尔就拜托你啦～！[r]那女人在紧要关头可是会大发雷霆，超级可怕的哟～！
+[k]
+
+[messageOff]
+[charaMove C 256,0 0.1]
+[charaFadeout C 0.1]
+[se ad73]
+[wt 1.0]
+
+？1：谢谢，荒野豹人！
+？2：那我早知道了，放心吧！
+
+？！
+
+＠豹人
+喵哈哈，不用客气啦～！[r]很好～，所谓虎道，即为寻找赴死之处喵[line 4]！
+[k]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+豹人小姐脱离本队了……！[r]接下来[line 3]
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+＠伊什塔尔
+只能靠我们冲进去了吧！[r]好嘞，我燃起斗志了！
+[k]
+
+＠伊什塔尔
+放马过来，拉赫穆，连射开始！[r]无论来几只，都不会让你们碰[%1]一根汗毛的！
+[k]
+
+
+[messageOff]
+[seStop ad2 0.4]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

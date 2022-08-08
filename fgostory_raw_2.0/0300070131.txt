@@ -1,0 +1,399 @@
+
+＄03-00-07-01-3-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 6030000 1 段藏]
+[charaSet B 6030000 1 加藤段藏_演出用]
+[charaFilter B silhouette 00000080]
+[charaSet C 1098203100 1 土蜘蛛]
+[imageSet D back10000 1]
+[charaScale D 1.05]
+
+[charaSet H 98115000 1 特效用]
+
+[scene 102201]
+
+[cameraMove 0.1 0,0 1.01]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[effect bit_talk_41_fs]
+[se ad989]
+[wt 1.0]
+[seStop ad989 0.4]
+[wt 0.2]
+
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[charaMoveScale C 1.1 0.1]
+[charaMove C 0,20 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaScale C 1.0]
+[effectDestroy bit_talk_41_fs]
+[blurOff motion 0.2]
+
+[charaDepth B 1]
+[charaDepth A 2]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[fowardEffect bit_talk_x_slash_bk_03 0,100]
+[wt 0.1]
+[se bac7]
+
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[charaFadeout A 0.2]
+[se ad488]
+[wt 0.9]
+
+[charaFadeout B 0.3]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 0]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect A appearance 1 0.25]
+[wt 0.4]
+
+＠段藏
+此乃，[r]诱饵。
+[k]
+
+[messageOff]
+[charaFace A 5]
+[se ad1021]
+[se ad896]
+[seStop ad896 1.5]
+[wt 1.5]
+
+[charaFace A 2]
+＠段藏
+风魔·喷射弹！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[effect bit_shot_01 -250,0]
+[fowardEffect bit_talk_impactlanding -250,0]
+[se ade337]
+[wt 0.5]
+[effect bit_shot_01 250,0]
+[fowardEffect bit_talk_impactlanding 250,0]
+[charaShake C 0.05 3 3 0.8]
+[wt 0.5]
+[effect bit_shot_01]
+[wt 1.0]
+[seStop ade337 0.5]
+[wt 1.0]
+[effectDestroy bit_shot_01]
+
+[se ad990]
+[shake 0.02 3 3 1.7]
+[wt 1.7]
+[seStop ad990 0.3]
+[wt 0.3]
+
+[effect bit_talk_dark_blade]
+[se ad974]
+[seVolume ad974 0 0.7]
+[wt 0.5]
+[seStop ad974 1.0]
+[wt 1.0]
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠段藏
+大片黑色刀刃……！？[r]御主！！
+[k]
+
+[messageOff]
+[charaMoveScale A 1.1 0.1]
+[charaMove A 0,20 0.1]
+[se ad7]
+[wt 0.2]
+
+
+[charaEffect A bit_talk_x_slash_bk_01]
+[charaShake A 0.05 3 3 0.3]
+[wt 0.1]
+[se bac6]
+[wt 0.1]
+
+[charaEffect A bit_talk_x_slash_bk_02]
+[charaShake A 0.05 3 3 0.3]
+[wt 0.1]
+[se bac7]
+[wt 0.5]
+
+[fowardEffect bit_talk_35]
+[charaShake A 0.05 3 3 0.2]
+[se ad161]
+[charaCrossFade A 1098204400 4 0.1]
+[wait charaCrossFade A]
+[wt 1.5]
+
+＠段藏
+呜！
+[k]
+
+[charaFace A 5]
+＠段藏
+并……无……大碍[line 3][r]区区大蜘蛛之怪异不在话下，吃吾奥义吧！
+[k]
+
+[messageOff]
+[se ad39]
+[charaPut H 1]
+[charaEffect H bit_talk_36]
+[wt 1.5]
+[charaFace A 2]
+[charaEffectStop H bit_talk_36]
+＠段藏
+[line 6]『[#机关幻法·吞牛:Evil Wind Death Storm]』！
+[k]
+
+[messageOff]
+[charaPut H 1200,1200]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaScale A 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[fowardEffect bit_talk_windstorm]
+[se ad1052]
+[wt 1.5]
+[se ad1038]
+[fowardEffectStop bit_talk_windstorm]
+[seStop ad1052 1.0]
+[fowardEffect bit_talk_aerial_wave]
+
+[charaShake C 0.05 3 3 0.5]
+[se ad990]
+[wt 1.5]
+
+[bgmStop BGM_EVENT_80 1.7]
+
+[charaSpecialEffect C enemyErasure 1 1.7]
+[wt 0.5]
+[se ad191]
+[wait charaSpecialEffect C]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 5]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect A appearance 1 0.25]
+[wt 0.4]
+
+＠段藏
+…………您没事吧，御主！[bgm BGM_EVENT_81 0.1]
+[k]
+
+？1：段藏小姐！
+？2：倒是你受伤了啊！
+
+？！
+
+[charaFace A 0]
+
+＠段藏
+不，没问题……
+[k]
+
+[messageOff]
+[effect bit_talk_release]
+[se bas2]
+[wt 0.2]
+[charaCrossFade A 6030000 0 0.4]
+[wait charaCrossFade A]
+[wt 1.5]
+
+[charaFace A 1]
+
+＠段藏
+如您所见，我会自动修复。[r]没什么大碍。
+[k]
+
+＠段藏
+……未伤及灵核，请不必担心。[r]段藏是不会在这种地方倒下的，御主。
+[k]
+
+[charaFace A 5]
+
+＠段藏
+我会连同小太郎阁下与玛修阁下的份，[r]守护好您的。
+[k]
+
+？1：……太好了。
+
+[charaFace A 3]
+
+＠段藏
+身为忍者，这种程度不值一提。
+[k]
+
+？2：段藏小姐好厉害啊。
+
+[messageOff]
+[charaFace A 1]
+[wt 1.2]
+
+？！
+
+[charaFace A 4]
+
+＠段藏
+可是……
+[k]
+
+[charaFace A 5]
+
+＠段藏
+这种敌对个体，[r]确为可怕的对手。
+[k]
+
+＠段藏
+虽然我的记录并不多，[r]但我未曾在乱世见过这种大蜘蛛之怪异。
+[k]
+
+＠段藏
+简直就像名闻天下的神代魔兽……
+[k]
+
+＠段藏
+令人想起在模拟战斗中对峙过的诸多存在。
+[k]
+
+？1：既然那是栖息于平安时代的怪异，
+？2：还是尽量避免战斗为好。
+
+？！
+
+[charaFace A 4]
+
+＠段藏
+是……
+[k]
+
+[charaFace A 0]
+＠段藏
+达·芬奇阁下曾对我说过，[r]日本是具有诸多古老神秘的土地。
+[k]
+
+＠段藏
+在乱世之时，[r]也确实存在鬼与怪异。
+[k]
+
+＠段藏
+而远在其数百年之前……
+[k]
+
+＠段藏
+[#都城之中]竟会出现力气如此之大的巨怪
+[k]
+
+＠段藏
+说不定所谓的平安之世，[r]其实是超乎想象的魔圈。
+[k]
+
+[charaFace A 4]
+
+＠段藏
+段藏对此惊诧万分……
+[k]
+
+？1：魔圈[line 3]
+？2：这意味着平安武者也相当强大吧。
+
+？！
+
+[charaFace A 4]
+
+＠段藏
+……[r]……
+[k]
+
+[charaFace A 5]
+
+＠段藏
+……是的。[r]若为伙伴，定将无比可靠。
+[k]
+
+[messageOff]
+[charaFace A 0]
+[wt 1.0]
+
+[charaFadeTime D 0.2 0.5]
+[charaFace A 5]
+
+＠段藏
+（然而万一与我们为敌……）
+[k]
+
+＠段藏
+（届时就算拼上这条性命也要……！）
+[k]
+
+？1：段藏小姐？
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaFace A 1]
+
+＠段藏
+…………不，[r]没事。
+[k]
+
+[charaFadeTime D 0.2 0.5]
+[charaFace A 5]
+
+＠段藏
+（无论面对什么样的对手，[r]　我加藤段藏应做之事都不会改变。）
+[k]
+
+＠段藏
+（定要保护好御主。）
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

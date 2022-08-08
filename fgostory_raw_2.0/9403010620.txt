@@ -1,0 +1,354 @@
+
+
+＄94-03-01-06-2-0
+
+
+
+[soundStopAll]
+
+[charaSet A 6007003 1 杀人之鬼]
+[charaSet B 5014001 1 梅菲斯托费勒斯]
+[charaSet C 4025000 1 哥伦布]
+[charaSet D 98075000 1 鬼工作人员1]
+[charaSet E 98075000 1 鬼工作人员2]
+[charaSet F 6013001 1 魅影]
+[charaSet G 99502600 1 玛修]
+[charaSet H 98115000 1 特效用]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_5 0.1]
+
+[scene 64900]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠玛修
+杰基尔先生，不[line 3]
+[k]
+
+[charaFace G 5]
+＠玛修
+通过宝具替换的海德先生是恶属性的英灵！[r]与游乐设施经理的条件一致！
+[k]
+
+＠玛修
+只要并用杰基尔先生的特殊气息遮断进行变身，[r]就可以偷袭黑胡子先生……！
+[k]
+
+[charaFadeout G 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠杀人之鬼
+[line 6]哈。
+[k]
+
+[charaFace A 1]
+＠杀人之鬼
+暴露了呢。[r]该死的，我还觉得一切顺利呢～！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠梅菲斯托费勒斯
+哎呀呀，很抱歉使用了那么粗暴的手段。[r]因为我们呀！　都是些[#不擅长说话]的人！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠魅影
+……[r]……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠梅菲斯托费勒斯
+哎呀呀虽说Rider先生或许能[r]思路清晰地描述整个事件，对吧。
+[k]
+
+[charaFace B 0]
+＠梅菲斯托费勒斯
+但你一脸嫌弃懒得解释的表情，[r]所以我才会设下这么一个机关。解释结束！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaSet F 98075000 1 鬼工作人员3]
+[charaSet G 98075000 1 鬼工作人员4]
+
+[charaDepth G 1]
+[charaDepth F 2]
+[charaDepth E 3]
+[charaDepth D 4]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠C：[servantName 402500:反抗军的Rider:哥伦布]
+我当然会懒得解释啦。[r]对方也太强词夺理了，我都惊讶得想说也说不出口了。
+[k]
+
+＠C：[servantName 402500:反抗军的Rider:哥伦布]
+作为一个恶人来说只能算是三流货色呢[line 3]海德先生哟？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠杀人之鬼
+[messageShake 0.01 3 3 0.5]
+[f large]少啰嗦！
+[k]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠杀人之鬼
+啊～烦死了！　真是烦死了！[r]人家都强忍着装成好孩子的样子了，对吧！
+[k]
+
+[charaFace A 1]
+＠杀人之鬼
+呀哈哈哈哈哈哈哈哈哈哈哈！[r]好啊！　来吧！　我会！　在这里！　把你们全部杀光！
+[k]
+
+＠杀人之鬼
+来吧，众鬼！[r]出现了一群会给其他客人添麻烦的家伙哦！！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[se ade210]
+[charaFace D 0]
+[charaFace E 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein D 0.1 -430,0]
+[charaFadein E 0.1 -140,0]
+[charaFadein F 0.1 120,0]
+[charaFadein G 0.1 410,0]
+[wt 0.4]
+[seStop ade210]
+
+＠鬼工作人员们
+这会给其他客人们添麻烦的……！[r]这会给其他客人们添麻烦的……！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaSet D 10008001 1 志度内]
+[charaSet E 1098157600 1 护法少女]
+[charaSet F 1098157700 1 小动物]
+[charaSet G 3034002 1 茨木童子]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠杀人之鬼
+没错没错！[r]你们太添麻烦了[line 3]胆敢妨碍老子的家伙全都得死！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠志度内
+……添麻烦啊。
+[k]
+
+＠志度内
+是复制本体的灵魂就是这样吗。[r]你的灵魂沾满了黑色的东西呢。
+[k]
+
+[charaFace D 14]
+＠志度内
+我不太喜欢那东西。[r]不是很像想见到。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠杀人之鬼
+老子打从出生起就是乌黑的！[r]呀哈哈哈，真遗憾，无论是女人还是孩子[line 3]
+[k]
+
+[bgmStop BGM_EVENT_24 1.0]
+
+＠E：护法少女
+[line 6]哎，居然有个古怪的人呐？
+[k]
+
+＠E：护法少女
+既然沾满了黑色的东西，[r]那需要用妾身的酒冲洗干净吗？
+[k]
+
+？1：这声音是！
+？2：我就猜到差不多该来了！
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[messageOff]
+[charaDepth F 10]
+[charaTalk off]
+[charaFace E 0]
+[charaFace F 0]
+[se ad73]
+
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect E appearance 1 0.25]
+[charaSpecialEffect F appearance 1 0.25]
+[wt 1.0]
+[bgm BGM_HALLOWEEN_2 0.1]
+[charaTalk on]
+
+＠护法少女
+[f large][line 3]护法少女·前来造访！
+[k]
+
+[messageOff]
+[se ade217]
+[effect bit_talk_magic_girl_light]
+[wt 3.0]
+
+＠小动物
+比鬼更像鬼的人类英灵啊。[r]你是所谓的反英雄吗，有点意思。
+[k]
+
+＠小动物
+但太碍事了。打倒他！
+[k]
+
+＠护法少女
+知道啦知道啦。[r]妾身怎么觉得，白你的态度越来越高傲了呢？
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠茨木童子
+[charaMoveReturn G 0,10 0.2]
+太棒了！　鬼救阿！　鬼救阿又来啦！[wt 0.2][charaMoveReturn G 0,10 0.2][r]御主，吾想在这里观战，可以吗！
+[k]
+
+？1：大家要一起战斗啦！
+
+[charaFace G 5]
+＠茨木童子
+唔，不过这样也行！[r]嗯！
+[k]
+
+？2：只有在她身边一起战斗才能算是双鬼救阿哦！
+
+[charaFace G 5]
+
+＠茨木童子
+确……确实没错！　汝偶尔也会说些精辟的话呢！
+[k]
+
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaDepth F 10]
+[charaFace E 0]
+[charaFace F 0]
+[charaFadein E 0.1 1]
+[charaFadein F 0.1 0,0]
+＠护法少女
+[line 3]鬼，即为鬼。始终狂暴。
+[k]
+
+＠护法少女
+[line 3]护法亦然。[r][line 3]没有慈悲，没有怜悯，只会撕裂啃食。
+[k]
+
+＠护法少女
+好啦！　护法之鬼开始干活啦！[r]好好见识吧！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[bgmStop BGM_HALLOWEEN_2 0.5]
+[wt 1.0]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[charaPut H 1]
+[charaEffect H bit_talk_41]
+＠杀人之鬼
+来吧！　我会将你们全部切成碎片！！！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_41]
+[soundStopAll]
+[end]

@@ -1,0 +1,106 @@
+＄91-50-04-01-3-1
+
+[soundStopAll]
+[bgm BGM_EVENT_6 0.1]
+[scene 11010]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98003000 2 Dr.罗曼]
+[charaSet C 5004000 1 童谣]
+[charaSet D 98002000 1 芙芙]
+[charaSet E 5004002 1 童谣？]
+[charaSet F 5004002 1 童谣]
+[wipeFilter circleIn 0.4 0.4]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0 1]
+[fadein black 1]
+[wait fade]
+＠玛修
+……击破敌性对象。
+[k]
+
+[charaFadeout A 0.1]
+[charaTalk E]
+[charaFace C 0]
+[charaFadein C 0.1 2]
+[charaFace E 4]
+[charaFadein E 0.1 0]
+＠童谣？
+呼。其实，我早就知道这个结局了。[r]爱丽丝既然已经不在了[line 2]
+[k]
+
+＠童谣？
+那我成为[#我:爱丽丝]就行了。[r]会有这种愚蠢想法的，只有如今的我。
+[k]
+
+[charaFace E 3]
+＠童谣？
+听好了，我？[r]既然你选择爱丽丝的外形……
+[k]
+
+[effect bit_talk_06]
+[charaFace E 1]
+＠童谣？
+那如果……如果不能……[r]迎来皆大欢喜的结局……
+[k]
+
+＠童谣？
+可不行哦……
+[k]
+
+[messageOff]
+[effectStop]
+[wait effect]
+[charaSpecialEffect E flashErasure 0 1]
+[wait charaSpecialEffect E]
+[charaSpecialEffect C flash 0 1]
+[wait charaSpecialEffect C]
+[charaFadeout C 0]
+[charaSet C 5004002 1 童谣]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0 2]
+[fadein white 1]
+[wait fade]
+＠童谣
+[line 4]嗯。
+[k]
+
+[charaFace C 1]
+＠童谣
+一定会是皆大欢喜的结局。[r]为了[#爱丽丝:我]，我一定会努力的。
+[k]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+＠芙芙
+芙呜！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr.罗曼
+很好，解决了一个问题！[r]那个奇妙的空间好像正在逐渐关闭，嗯！
+[k]
+
+[communicationCharaFace 1]
+＠Dr.罗曼
+趁现在，尽快通过灵子转移回迦勒底来吧！[r]预备[line 2]走起！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[messageOff]
+[bgmStop BGM_EVENT_6 0.7]
+[wait effect bit_talk_06]
+[effect bit_talk_07_02]
+[se ad12]
+[wt 4]
+[fadeout white 1]
+[wait fade]
+[soundStopAll]
+[wipeOff]
+[end]

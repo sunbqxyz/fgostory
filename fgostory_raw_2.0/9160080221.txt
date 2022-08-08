@@ -1,0 +1,114 @@
+
+
+
+＄91-60-08-02-2-1
+
+[soundStopAll]
+[charaSet A 6008000 1 克娄巴特拉]
+[charaSet B 5010001 1 帕拉塞尔苏斯]
+[charaSet D 98006000 1 敌人]
+
+[scene 20720]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_valentine_brilliant]
+
+[cueSe Battle bac214]
+[wt 0.3]
+[effect bit_shot_01]
+[wt 0.7]
+
+[effectStop bit_talk_valentine_brilliant]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[se bac151]
+[charaEffect D bit_talk_14]
+[wt 0.5]
+
+[se ad24]
+[charaShake D 0.05 5 5 0.5]
+[wt 1.7]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+[se ad42]
+[charaSpecialEffect D enemyErasure 1 1.0]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠克娄巴特拉
+…………尽管手感有些毛骨悚然。
+[k]
+
+
+[messageOff]
+[charaFace A 5]
+[wt 1.0]
+[charaFace A 4]
+[bgm BGM_EVENT_2 0.1]
+
+＠克娄巴特拉
+缺乏美感呢……唔唔……[r]仍然到不了理想运动的水平……真难啊……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠帕拉塞尔苏斯
+最后的法老，克娄巴特拉。[r]很抱歉没能回应您的期待。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠克娄巴特拉
+不，没关系。该道歉的是妾身。[r]好不容易得到您的帮助，却无法给您什么谢礼。
+[k]
+
+[charaFace A 1]
+＠克娄巴特拉
+请原谅要移动到下一个区域的妾身吧？[r]妾身今后一定会向您道谢。叫上尼托克丽丝大人，
+[k]
+
+＠克娄巴特拉
+办一桌最棒的酒宴。[r]那妾身就此告辞了。
+[k]
+
+[charaFace A 2]
+＠克娄巴特拉
+[line 3]御主！
+[k]
+
+？1：知道啦知道啦。
+？2：那我们去下一个地方吧？
+
+？！
+
+＠克娄巴特拉
+我们走！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

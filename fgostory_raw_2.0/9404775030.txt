@@ -1,0 +1,174 @@
+
+
+
+＄94-04-77-50-3-0
+
+
+[soundStopAll]
+
+[charaSet A 25005000 1 旅行者]
+[charaSet B 2016000 1 卫宫·Alter]
+[charaSet C 5025001 1 爱迪生]
+[charaSet D 98001000 1 玛修]
+[charaSet E 1098192800 1 玛丽]
+[charaSet S 5009000 1 特效用dummy1]
+[charaSet T 5009000 1 特效用dummy2]
+
+[scene 96301]
+
+[charaPut S 1200,1200]
+[charaEffect S bit_talk_warp_starry_sky]
+[charaPut T 1200,1200]
+[charaEffect T bit_talk_warp_starry_sky]
+
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk depthOff]
+[charaDepth S 1]
+[charaDepth T 2]
+[charaDepth A 3]
+[charaDepth B 4]
+
+[charaPut B 0]
+[charaFace B 0]
+[charaSpecialEffect B wipeTimeRe 0 1.2]
+[charaPut A 2]
+[charaFace A 0]
+[charaSpecialEffect A wipeTimeRe 0 1.2]
+[wt 0.3]
+[charaPut S 0]
+[charaPut T 2]
+[se ade410]
+[charaEffectStop S bit_talk_warp_starry_sky]
+[charaEffectStop T bit_talk_warp_starry_sky]
+[wt 2.0]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFadein A 0.0 256,0]
+[charaFadein B 0.0 -256,0]
+
+[charaFace A 11]
+
+＠旅行者
+……还是，星空。[r]距离绘里濑，似乎还很远。
+[k]
+
+＠卫宫·Alter
+看来一口气能穿越的距离是有限的。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠爱迪生
+不要止步继续前进吧，各位。[r]除此之外没有其他方法可以达成目标。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠玛修
+是，爱迪生先生。[r]玛修·基列莱特，继续前进。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth E 4]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+
+＠玛丽
+旅行者，趁赶路的间隙，[r]能说说你和绘里濑的关系吗？
+[k]
+
+＠旅行者
+……我和绘里濑，约好了。[r]我们要，一起见证，[#终结]。
+[k]
+
+[charaFace E 4]
+
+＠玛丽
+[#终结]？[r]是指终结[#游戏界:monde du jeu]吗？
+[k]
+
+
+[charaFace A 4]
+＠旅行者
+我不知，如何解释……
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠卫宫·Alter
+小心，小家伙。[r]要来了……
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut S 1]
+[charaEffect S bit_talk_warp_starry_sky]
+[wt 0.4]
+[se ade410]
+[wt 1.7]
+[seStop ade410 0.3]
+[cameraMove 0.2 0,0 1.5]
+[cueSe Battle bac110]
+[wt 0.1]
+
+[fadeout white 0.2]
+[wait fade]
+
+[charaEffectDestroy S]
+[cameraHome 0]
+[scene 10000]
+[wt 1.5]
+
+[fadein white 1.0]
+[wait fade]
+
+[fadeout black 0.1]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

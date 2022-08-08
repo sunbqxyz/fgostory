@@ -1,0 +1,110 @@
+＄01-00-03-13-4-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[scene 21400 0]
+[charaSet A 8001001 1 玛修]
+[charaSet B 2012001 1 尤瑞艾莉]
+[charaSet C 7001001 1 赫拉克勒斯]
+[charaSet D 4003001 1 德雷克]
+[charaSet E 2005001 1 阿塔兰忒]
+[charaSet F 2006000 1 大卫]
+[charaSet G 2009102 1 俄里翁]
+[charaSet H 2009201 1 阿耳忒弥斯]
+[charaTalk A]
+[charaFace C 5]
+[charaFadein C 0 0]
+[charaFace A 2]
+[charaFadein A 0 2]
+[fadein black 1]
+[wait fade]
+＠玛修
+这样看你怎么办……！
+[k]
+
+[charaFadeout A 0.1]
+[charaFace D 2]
+[charaFadein D 0.1 2]
+＠德雷克
+按住他！！！！！！！！
+[k]
+
+[se bac21]
+[wt 0.2]
+[se bac21]
+[wt 0.3]
+[voice 700100_0_B100]
+[charaFace C 2]
+＠赫拉克勒斯
+[image berserker_language_2][line 4]！！
+[k]
+
+[charaFadeout D 0.1]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+＠大卫
+好，碰到了！
+[k]
+
+[se ad39]
+[charaEffect C bit_talk_21]
+[shake 0.05 0 10 0]
+[wt 2]
+[charaFadeout C 0.1]
+[se bac18]
+[charaEffectStop C]
+[fadeout white 0.1]
+[wait charaEffect C bit_talk_21]
+[charaFadeout F 0.1]
+[wait fade]
+[scene 21400]
+[charaFace A 7]
+[shakeStop]
+[charaFadein A 0.1 1]
+[fadein white 0.5]
+[wt 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[bgm BGM_EVENT_2 0.1]
+[wait fade]
+＠玛修
+……打倒赫拉克勒斯了。[r]不对，这与其说是死亡，不如说消失比较正确。
+[k]
+
+[charaFace A 13]
+＠玛修
+说实话，我至今仍难以置信。[r]御主，你没事吧！？
+[k]
+
+？1：没事。
+
+？2：我差点挂了。
+
+？！
+
+[charaFadeout A 0]
+[charaTalk B]
+[charaFadein A 0.1 2]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+＠尤瑞艾莉
+……刚才真是担心得不行。[r]不过，看样子你并不是一个只会蛮干的勇者。
+[k]
+
+[charaFace B 1]
+＠尤瑞艾莉
+你清楚自己的弱点，并做了力所能及的事。[r]你的表现非常出色，御主。
+[k]
+
+[charaFadeout A 0.1]
+[charaFace D 5]
+[charaFadein D 0.1 2]
+＠德雷克
+好了，只剩那个令人讨厌的伊阿宋了。[r]为了解放这片大海，出发吧！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_2 0.4]
+[wait fade]
+[soundStopAll]
+[end]

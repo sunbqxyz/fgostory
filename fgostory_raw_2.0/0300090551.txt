@@ -1,0 +1,201 @@
+
+＄03-00-09-05-5-1
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 1049000 1 千子村正]
+[charaSet B 1050000 1 妖精骑士高文]
+[charaScale B 1.1]
+[charaSet C 5045000 1 阿尔托莉雅]
+
+[charaSet N 98115000 1 特效用]
+
+[charaDepth N 9]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.2]
+[bgm BGM_EVENT_24 0.1]
+
+[se ad85]
+[effect bit_talk_v_slash01]
+[wt 0.5]
+
+[cueSe Servants_102800 bac658]
+[cueSe Servants_102800 bac657]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.1]
+[effectDestroy bit_talk_v_slash01]
+
+[scene 118601]
+[charaPut N 1]
+[charaEffect N bit_talk_sparks_fs]
+
+[se ad671]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0 0,15]
+[seStop ad671 0.6]
+
+[charaMove B 0,0 0.3]
+[charaMoveScale B 1.0 0.3]
+[charaShake B 0.03 3 3 0.6]
+[wt 1.5]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 19]
+[charaFadein A 0.1 1]
+＠千子村正
+怎么，还顺带安置了个好东西呢！[r]干得挺漂亮嘛，阿尔托莉雅！
+[k]
+
+？1：村正，为什么你会在这边！？
+
+？！
+
+[charaFace A 16]
+＠千子村正
+没什么，是所谓的不祥预感啦！[r]有点放不下那边那个小姑娘嘛！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠妖精骑士高文
+呜……！[r]可恨，竟用小道具保护魔术师……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠阿尔托莉雅
+哼，你以为我们会一直任你宰割吗？[r]领教了吧，你这暴饮暴食的肠肥脑满骑士！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠妖精骑士高文
+肠肥[line 3][r]你这家伙在嘲弄我吗！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠阿尔托莉雅
+这不是废话吗！[r]什么妖精骑士嘛，别开玩笑了！
+[k]
+
+＠阿尔托莉雅
+只知道服从女王的命令，根本没有保护妖精！[r]还敢自称是[#那位]圆桌骑士，简直厚颜无耻！
+[k]
+
+＠阿尔托莉雅
+高文卿确实是个视国王为绝对，[r]死板正经的“优等生”！
+[k]
+
+＠阿尔托莉雅
+但不是你这种盲目相信女王的猎犬！
+[k]
+
+[charaFace C 5]
+＠阿尔托莉雅
+何况，我早就知道了。[r]你的真名就写在埃克特的单据上。
+[k]
+
+[bgmStop BGM_EVENT_24 1.0]
+
+[charaFace C 2]
+＠阿尔托莉雅
+用心听好了，然后好好领教吧！
+[k]
+
+[bgm BGM_EVENT_91 0.1]
+
+＠阿尔托莉雅
+[#你的真名是巴格斯特]！[r]黑犬公，吞食雷云的巴格斯特！
+[k]
+
+＠阿尔托莉雅
+假扮骑士的游戏已经玩够了吧！？[r]快扔掉女王的[#赐名:Gift]，放马过来吧！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 1.4]
+
+[bgmStop BGM_EVENT_91 1.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaPut N 2000,2000]
+[wt 0.1]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[skip false]
+[wt 1.0]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[charaSet A 1049000 1 村正]
+[charaSet B 1050000 1 妖精骑士高文]
+[charaScale B 1.1]
+[charaSet C 5045000 1 阿尔托莉雅]
+
+[charaSet N 98115000 1 特效用]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout N 0.1]
+
+[soundStopAllFade 0.4]
+[charaPut N 2000,2000]
+
+[scene 10000]
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+
+[wt 1.0]
+[criMovie talk_mov099 bgmPlay true]
+
+[wt 1.0]
+[soundStopAll]
+[end]

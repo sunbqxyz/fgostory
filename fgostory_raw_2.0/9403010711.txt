@@ -1,0 +1,241 @@
+
+
+＄94-03-01-07-1-1
+
+
+[soundStopAll]
+
+[charaSet B 6029001 1 Assassin Paraiso]
+[charaSet C 99502600 1 玛修]
+[charaSet D 5040000 1 护法少女]
+[charaSet E 98025000 1 最后的经理]
+[charaSet F 11006000 1 燎原之鬼]
+
+
+[charaSet H 98115000 1 特效用]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 65000]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.5]
+[charaFace B 2]
+[se bac1]
+[charaMoveScale B 1.1 0.1]
+[wt 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad347]
+[effect bit_talk_kengekiall01]
+[wt 0.5]
+[seStop ad347 0.5]
+[se adm15]
+[effect bit_talk_v_slash01]
+
+[wt 0.5]
+
+[cueSe Servants_103200 bac512]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[charaMoveScale B 1.0 0.4]
+[wt 0.4]
+
+＠B：[servantName 602900:Assassin Paraiso:望月千代女]
+数量！　太多了！
+[k]
+
+＠B：[servantName 602900:Assassin Paraiso:望月千代女]
+原来如此，这数量确实惊人……[r]有种接近第一次在主大道战斗的感觉！
+[k]
+
+＠B：[servantName 602900:Assassin Paraiso:望月千代女]
+不愧是黄金持有量仅次于鬼王的经理！[r]强敌！　最后的游乐设施经理！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠最后的经理
+我被赐予的力量十分可怕。[r]刮目相看吧，捣乱的客人。不[line 3]是怪物投诉者！
+[k]
+
+＠最后的经理
+出现吧，出现吧！　干部鬼工作人员们！[r]屠戮这群怪物投诉者吧！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad57]
+[shake 0.05 0 3 0.3]
+[wt 1.5]
+[shake 0.05 0 3 0.3]
+[wt 1.0]
+[seStop ad57 0.5]
+[se ad17]
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠B：[servantName 602900:Assassin Paraiso:望月千代女]
+大型的……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠玛修
+应该是比以前更强大的个体！[r]前辈，还是先撤退提升战力为好！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[bgmStop BGM_EVENT_3 0.7]
+
+＠护法少女
+[line 6]妾身也觉得这样比较好哦？
+[k]
+
+？1：这声音……难道是……
+？2：好，来了！　果然来了！
+
+？！
+
+＠护法少女
+哎呀，此前不也一直是这样的嘛？[r]机会难得，约定总要遵守到最后一刻才行吧。
+[k]
+
+＠护法少女
+所以还请见谅哟！[r]最后的经理先生！
+[k]
+
+[messageOff]
+[charaTalk D]
+[charaFace D 0]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect D appearance 1 0.25]
+[wt 0.7]
+
+[bgm BGM_HALLOWEEN_2 0.1]
+[charaFace D 7]
+＠护法少女
+[line 3]护法少女，再次再次再次再次前来造访！
+[k]
+
+[messageOff]
+[se ade217]
+[effect bit_talk_magic_girl_light]
+[wt 3.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠最后的经理
+……[r]………有意思。
+[k]
+
+＠最后的经理
+自称护法的奇妙东洋恶魔啊。[r]你会如何挡下自无法之燎原而来的吾之刃呢。
+[k]
+
+＠最后的经理
+岂能让你挡下！[r]不对，不对，无论何人都无法挡下！
+[k]
+
+[messageOff]
+[bgmStop BGM_HALLOWEEN_2 1.0]
+[charaTalk off]
+[charaFace F 2]
+
+[wt 0.5]
+[se ade89]
+[se ad7]
+[charaSpecialEffect E erasureReverse 1 0.4]
+[charaSpecialEffect F appearance 1 0.4]
+[wt 0.4]
+[seStop ade89]
+[wt 1.0]
+
+[bgm BGM_MAP_4 0.1]
+
+＠燎原之鬼
+吾乃黄金！　吾乃大欲！[r]是决不会被他人击碎的！！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠护法少女
+妾身嘛[line 3]毕竟是鬼呀。如果将你击碎了，还请见谅哟。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠燎原之鬼
+是决不会被他鬼击碎的！！
+[k]
+
+？1：萨列里……！
+？2：是复制了萨列里外貌的金块！
+
+？！
+
+[charaFace F 1]
+
+＠燎原之鬼
+咯咯……咯咯咯咯咯咯哈哈哈哈哈哈哈哈哈哈哈哈哈哈！[r]吾乃燎原，是被可憎之火锻炼的刀刃！
+[k]
+
+[charaFace F 2]
+
+＠燎原之鬼
+生命的跃动乃生命之旋律，[r]来吧，在此[line 3]奏响临终之音吧！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_4 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

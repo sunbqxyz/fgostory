@@ -1,0 +1,119 @@
+
+
+＄94-02-00-12-1-1
+
+[soundStopAll]
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 2021002 1 节分大将]
+[charaSet C 6021000 1 酒吞童子]
+
+[charaSet G 98115000 1 特效用]
+[charaSet H 98115000 1 特效用]
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 53000]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.4 1]
+
+＠酒吞童子
+好痛好痛。这可不好。
+[k]
+
+[charaFace C 0]
+
+＠酒吞童子
+在这里烧成灰可就不好玩了……[r]嘿，嘿，哟。
+[k]
+
+[messageOff]
+[se ad73]
+[seVolume ad73 0 0.7]
+[charaFadeout C 0.1]
+[wt 0.4]
+[se ad73]
+[seVolume ad73 0 0.5]
+[wt 0.3]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠玛修
+逃跑了！[r]从窗户外……向更上面！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠酒吞童子
+啊啊，妾身先忠告你们，一旦跑到屋顶，[r]负担可是会变得更为强烈的哦。
+[k]
+
+＠酒吞童子
+一般的人如果不拼死振作精神，[r]是根本爬不上去的，一定要小心哟。
+[k]
+
+[messageOff]
+[charaEffect C bit_talk_quickmove]
+[charaSpecialEffect C erasureReverse 1 0.3]
+[bgmStop BGM_EVENT_24 1.0]
+[se ad73]
+[seVolume ad73 0 0.5]
+[wt 1.5]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠节分大将
+既然如此[line 3]那只能由承受能力最强的我[bgm BGM_EVENT_4 0.1][r]负责追她了吧。
+[k]
+
+＠节分大将
+那是个脚下不稳的场所，[r]所以不能带御主一起去。请您在这里等待。
+[k]
+
+？1：抱歉，麻烦你了。
+？2：记得手下留情。
+？！
+
+[messageOff]
+[charaMoveReturn B 0,-10 0.4]
+[wt 1.0]
+[charaFace B 1]
+
+＠节分大将
+嗯，包在我的身上吧！
+[k]
+
+[messageOff]
+[charaEffect B bit_talk_quickmove]
+[charaSpecialEffect B erasureReverse 1 0.3]
+[se ad73]
+[wt 1.0]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_4 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

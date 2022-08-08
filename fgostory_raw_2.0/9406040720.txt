@@ -1,0 +1,845 @@
+
+
+
+＄94-06-04-07-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001600 1 マシュ]
+[charaSet B 1098215400 1 ダ・ヴィンチ]
+[charaSet C 5048000 1 コルデー]
+[charaSet D 1098220500 1 カイニス]
+[charaSet E 1098215500 1 ゴルドルフ]
+[charaSet F 1098216800 1 沖田オルタ]
+[charaSet G 1098216900 1 煉獄]
+[charaSet H 1098217900 0 1]
+[charaSet I 1098217900 0 1]
+[charaSet J 1098217900 0 1]
+
+[sceneSet K 130300 1]
+[sceneSet L 130300 1]
+
+[imageSet M back10000 1 1]
+[charaScale M 1.1]
+[charaDepth M 2]
+
+[charaDepth E 1]
+[charaDepth D 2]
+
+[charaDepth F 3]
+[charaDepth G 4]
+[charaDepth C 5]
+
+[charaDepth B 6]
+
+[charaDepth K 2]
+[charaDepth L 3]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[se ad36]
+[wt 1.0]
+[se ade55]
+[wt 0.5]
+
+[seStop ade55 1.5]
+[wt 1.5]
+
+？1：（教えてもらった操作法は、確か）
+？2：（ここをこうすると……）
+？！
+
+[se ad177]
+[effect bit_talk_bubble_fs]
+[wt 0.5]
+
+
+[fadeout white 1.0]
+[wait fade]
+
+[scene 130300]
+[effectDestroy bit_talk_bubble_fs]
+
+[wt 1.0]
+
+[charaScale K 1.5]
+[charaFadein K 0.1 200,-300]
+[wt 0.3]
+
+[charaMove K 200,-200 4.0]
+
+[bgm BGM_MAP_2 0.1]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 1.0]
+[charaScale L 1.5]
+[charaFadein L 1.5 0,-200]
+[charaMove L 80,-200 4.0]
+[wt 1.5]
+
+[charaFadeout K 0.1]
+[wt 1.0]
+
+[charaFadeout L 2.0]
+[wt 3.0]
+
+[se ade429]
+
+[wt 1.5]
+
+[seStop ade429 0.5]
+
+[charaTalk B]
+[charaFace B 24]
+[charaFadein B 0.4 1]
+[wt 0.7]
+
+＠ダ・ヴィンチ
+どう？　呼吸や視界に問題はない？
+[k]
+
+？1：まったく問題なし！
+？2：すごい、ホントに海底にいる！
+？！
+
+[charaFace B 0]
+＠ダ・ヴィンチ
+うん、セイレーンボンベはちゃんと動いてる！[r]よかったよかった。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+＠カイニス
+……最悪だ。
+[k]
+
+＠カイニス
+海の底にいるとか、あーもう最悪の気分だが……
+[k]
+
+[charaFace D 0]
+＠カイニス
+この装置ってのは悪くねえ。[r]確かにコレなら地上と遜色なく動けるぜ。
+[k]
+
+[charaFace D 1]
+＠カイニス
+へッ、やるじゃねえか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 17]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+ほう。呼吸に質量制御、[r]さらには視覚補正もかけているのか。
+[k]
+
+
+[charaFace E 1]
+＠ゴルドルフ
+実際使うまでは不安だったが、これはなかなか。[r]海底散歩というレジャー分野を開拓できそうだな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+ふふん。褒めて褒めて。
+[k]
+
+[charaFace B 0]
+＠ダ・ヴィンチ
+あー良かった。[r]コレ一個にすっごいコストかかってるからね！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+えっ、そうなの……？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+でも、本当に素敵な光景ですね。
+[k]
+
+[charaFace C 6]
+＠シャルロット・コルデー
+あっ、見てくださいマスター、あの綺麗なお魚！[r]すごいすごーい！
+[k]
+
+[charaFace C 1]
+＠シャルロット・コルデー
+ロマンチックな海底散歩！[r][f small]マスターと二人っきりでもう一度来たいなー。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaDepth E 3]
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+[charaFadeTime M 0.2 0.5]
+＠ゴルドルフ
+（聞き流し聞き流し……）
+[k]
+
+[charaFadeout M 0.2]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaDepth E 1]
+[charaTalk depthOff]
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+
+＠沖田オルタ
+しかし本当にお魚との距離が近いですね。
+[k]
+
+[charaFace F 6]
+＠沖田オルタ
+綺麗なお魚に、美味しそうなお魚。[r]色々いて楽しいですね。
+[k]
+
+[charaFace G 15]
+＠煉獄
+美味しそうは余計だ、主。
+[k]
+
+[charaFace G 6]
+＠煉獄
+こういう時は海の神秘に心を躍らせるのが[r]らしいというものだ。
+[k]
+
+[charaFace F 17]
+＠沖田オルタ
+む、またお姉さんぶりましたね、煉獄。
+[k]
+
+[charaFace F 14]
+＠沖田オルタ
+なんでしたか、えーと……。そうです！
+[k]
+
+
+[charaFace F 16]
+＠沖田オルタ
+それはそれ、これはこれというやつです。
+[k]
+
+[charaFace G 16]
+＠煉獄
+はいはい、余計なことはすぐ覚えるんだから。
+[k]
+
+[charaFace F 0]
+＠沖田オルタ
+それはそれとして背負い紐はしっかりと[r]締めて確かめておいてくださいね。
+[k]
+
+＠沖田オルタ
+私から離れたら大変ですよ。
+[k]
+
+[charaFace G 15]
+＠煉獄
+む、今更だがこのポジション、妙にしっくり来るような、[r]恥ずかしいような……。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠マシュ
+皆さん、装置に不具合などはないようですね。
+[k]
+
+[charaFace A 1]
+＠マシュ
+それでは、地図で示されたポイントに向かって[r]進んでみましょう！
+[k]
+
+[messageOff]
+
+[cueSe SE_21 21_ad1065]
+
+[bgm BGM_MAP_2 1.0 0.5]
+[wipeout leftToRight 1.0 1.0]
+[wait wipe]
+
+[seStop 21_ad1065 1.5]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[bgm BGM_MAP_2 1.0 1.0]
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.4]
+
+？1：やっぱり綺麗だねー
+？2：歩いてるだけで楽しい……
+？！
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+ですよね？　ふふ、役得役得。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+＠カイニス
+海底見物もいいが、[r]はぐれたりすんなよー。
+[k]
+
+[charaFace D 0]
+＠カイニス
+隊列は……よし、問題ねえな。[r]進むぞ。
+[k]
+
+[messageOff]
+
+[cueSe SE_21 21_ad1065]
+
+[bgm BGM_MAP_2 1.0 0.5]
+[wipeout leftToRight 1.0 1.0]
+[wait wipe]
+
+[seStop 21_ad1065 1.5]
+
+[charaFadeout D 0.1]
+[wt 1.0]
+
+[bgm BGM_MAP_2 1.0 1.0]
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+ふーむ。どうなることかと思っていたが、[r]なんてことはない。
+[k]
+
+[charaFace E 2]
+＠ゴルドルフ
+むしろ普段はできないレアな[r]レジャー体験をしている気分だ。
+[k]
+
+[charaFace E 0]
+＠ゴルドルフ
+むっ。視界映像を記録しておけば、[r]実家のホムンクルスたちにも見せてやれるか[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠カイニス
+油断すんじゃねーぞー？
+[k]
+
+[charaFace D 0]
+＠カイニス
+そりゃあ警戒はしてやる。[r]守ってやンよ。
+[k]
+
+＠カイニス
+だが、それはそれだ。[r]テメェら自身も注意は怠るんじゃねぇ。
+[k]
+
+[charaFace D 8]
+＠カイニス
+海を舐めるな。[r]海は、人間の味方でもなんでもねえンだぞー。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+む、むう。[r]言っていることは分かるが……
+[k]
+
+[charaFace E 2]
+＠ゴルドルフ
+しかしこの美しさはどうだ！[r]まるで海中の楽園とでも言わんばかりの光景！
+[k]
+
+＠ゴルドルフ
+今日の海はきっと良い海だとも！[r]恐ろしいことなど、起こりようも……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+サメが来るとか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+サメか……
+[k]
+
+[charaFace E 18]
+＠ゴルドルフ
+い、いや、そんなものは常夏のゴッフパンチを[r]一撃くらわせば追い払える……はずだ！
+[k]
+
+＠ゴルドルフ
+乾電池を使うといいとも聞くし！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠沖田オルタ
+サメですか……。[r]サメぐらいだったらまだ問題ないですけど……。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_MAP_2 1.0]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+ど、どういう意味かな……？
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+？1：何か異常がある？
+？！
+
+[bgm BGM_EVENT_81 0.1]
+
+＠沖田オルタ
+うーん。はっきりとはわかりませんが、[r]何かがいる気がします。近くに。
+[k]
+
+[charaFace F 14]
+＠沖田オルタ
+ざわざわしているというか……そんな気配が……。
+[k]
+
+[charaFace G 13]
+＠煉獄
+確かに反応があるな、そちらはどうかな？
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+
+[charaFace E 9]
+[charaFadein E 0.1 2]
+＠カイニス
+あるから警戒促したんだが。
+[k]
+
+[charaMove E 200,0 0.5]
+
+＠ゴルドルフ
+そうなのかね！？[r]（ササッとカイニスの後ろに隠れつつ）
+[k]
+
+[charaFace D 0]
+＠カイニス
+はいはいそうだよ。[r]総員、油断すんじゃねーぞ。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠マシュ
+カイニスさんと沖田オルタさんが言うのなら[r]間違いはないでしょう。
+[k]
+
+[charaFace A 2]
+＠マシュ
+マスター、警戒をお願いします。
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace F 5]
+[charaFadeinFSL F 0.1 -256,0]
+[charaFace G 13]
+[charaFadeinFSL G 0.1 -256,0]
+[charaFace C 5]
+[charaFadeinFSR C 0.1 256,0]
+
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaDepth D 1]
+[charaDepth E 2]
+
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+[charaFace D 5]
+[charaFadeinFSL D 0.1 -350,0]
+
+[charaFace B 5]
+[charaFadeinFSR B 0.1 350,0]
+
+[wt 1.5]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+何も、なくない？
+[k]
+
+[charaFace E 2]
+＠ゴルドルフ
+ハハ、ハハハ。もしや勘違いだったのではないか？[wt 0.3][charaMove E 0,20 0.8][r]とんだ度胸試し[line 3]
+[k]
+
+[messageOff]
+
+
+[charaFace E 13]
+＠ゴルドルフ
+って何か持ち上げられてるんだけど私！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_BATTLE_105 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠カイニス
+オラァ！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 0,20]
+[wt 0.5]
+
+[se bac7]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[fowardEffect bit_talk_ichimon01wh 0,120]
+[wt 0.8]
+
+[charaMove E 0,0 0.1]
+[wt 0.1]
+[se ad775]
+[charaShake E 0.04 1 1 0.3]
+[wt 0.9]
+
+[fowardEffectDestroy bit_talk_ichimon01wh]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk F]
+[charaFace F 16]
+[charaFadein F 0.1 1]
+
+[charaFace G 13]
+[charaFadein G 0.1 1]
+
+＠沖田オルタ
+気配はあるのに、見えな[line 3]いえ！
+[k]
+
+[charaFace G 2]
+＠煉獄
+あれだ！[r][#保護色になっている]！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+ホントだ！[r]このマジシャンの目を欺くなんてやりますね！
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad42]
+[charaPut H 0,0]
+[charaTalk H]
+[charaFace H 0]
+[charaSpecialEffect H appearance 1 0.8]
+[wt 2.0]
+
+[seStop ad42 0.5]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+触手を持った……巨大タコ、かな！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+デビルフィッシュだとー！？
+[k]
+
+[charaFace E 9]
+＠ゴルドルフ
+あの、斬って助けてくれたのはいいんだけど、まだ私に[r]巻き付いたままの触手がびちびちしてて気持ち悪い！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠カイニス
+ンなもん気合いで耐えとけ！[r]本体仕留めるまで、待ってろ！
+[k]
+
+[messageOff]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth J 6]
+[charaDepth I 7]
+[charaDepth H 8]
+
+[se ad42]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaPut H 0,0]
+[charaFace H 0]
+[charaSpecialEffect H appearance 1 0.8]
+[wt 0.3]
+
+[charaPutFSR I 350,0]
+[charaFace I 0]
+[charaSpecialEffect I appearance 1 0.8]
+[wt 0.3]
+
+[charaPutFSL J -350,0]
+[charaFace J 0]
+[charaSpecialEffect J appearance 1 0.8]
+
+[wt 1.5]
+
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+なんかいっぱいいますけどー！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 27]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+うわあすごい……[r]さすがは海底……人類最後のフロンティア……。
+[k]
+
+[charaFace B 10]
+＠ダ・ヴィンチ
+謎がいっぱい危険もいっぱい！[r]ってことだね！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+まあいい笑顔！[wt 0.3][charaFace E 6][r]いやいや嬉しそうにしている場合ではないぞ！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠マシュ
+とにかく、ここで餌になるわけにはいきません。[r]撃退しましょう！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+[charaFace G 13]
+[charaFadein G 0.1 1]
+＠沖田オルタ
+承知しました。こういう時の為に同行を希望したので[r]私と煉獄にお任せください！
+[k]
+
+＠沖田オルタ
+さあ、今こそ私たちオルタちゃんズの力を見せるとき！
+[k]
+
+[charaFace F 14]
+＠沖田オルタ
+私と煉獄でなんでしたっけ、た……たこ、[wt 0.5][charaFace F 2][r]そうタコ焼きにしてやりますとも！
+[k]
+
+[charaFace G 2]
+＠煉獄
+いいからさっさと構えろ！[wt 0.7][charaFace G 15][r]っていうかオルタちゃんズって何？
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_105 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+

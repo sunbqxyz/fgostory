@@ -1,0 +1,932 @@
+
+
+
+＄03-00-06-11-3-0
+
+
+
+[soundStopAll]
+
+[charaSet A 1017001 1 武藏]
+[charaSet B 1098123300 1 高扬斯卡娅（剪影）]
+[charaFilter B silhouette 00000080]
+[charaSet C 1098123300 1 高扬斯卡娅]
+
+[charaSet D 98002000 1 芙芙]
+[charaSet E 8001410 1 玛修]
+[charaSet F 1098191200 1 阿黛勒]
+[charaSet G 1098191300 1 马卡里俄斯]
+[charaSet H 9005001 1 福尔摩斯]
+[charaSet I 8001400 1 武装玛修]
+
+[charaSet R 5009000 1 特效用dummy]
+[charaSet S 5009000 1 特效用dummy]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 92501]
+
+[effect bit_talk_41]
+[se ad769]
+[seVolume ad769 0 0]
+[seVolume ad769 1.0 1.0]
+
+[shake 0.05 0 3 0]
+
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_EVENT_80 0.1]
+
+[wt 1.0]
+
+＠玛修
+敌对个体全部被击破！[r]跑遍相关区域后前往下一个地方！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+＠福尔摩斯
+嗯，差不多该认真考虑一下[r][%1]的体力问题了[line 3]
+[k]
+
+＠福尔摩斯
+这附近情况如何！[r]人工智能！
+[k]
+
+＠人工智能
+中头奖了。[r]很好，很好，正中靶心！
+[k]
+
+＠人工智能
+看来有什么东西掩盖目标的猜想中了！[r]前方100出现反应，有个足以扭曲空间的……
+[k]
+
+＠人工智能
+……[#怪物]！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ad671]
+[shake 0.03 4 4 0.6]
+[effectStop bit_talk_41]
+[wt 0.4]
+[seStop ad671 0.4]
+[seStop ad769 0.4]
+[wt 0.8]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠武藏
+看到了！[r]那是……[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ade422]
+[wt 0.4]
+
+[charaTalk off]
+[charaDepth B 5]
+[charaDepth C 4]
+
+[charaFace B 20]
+[charaFadein B 0.4 1]
+[wt 1.2]
+
+[seStop ade422 0.1]
+
+[charaFace C 20]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+[charaFadeout B 0.7]
+[wt 1.1]
+
+[bgm BGM_EVENT_71 0.1]
+
+[charaTalk on]
+[charaTalk C]
+＠高扬斯卡娅
+你们也太过分了。
+[k]
+
+＠高扬斯卡娅
+区区没有生命的幽灵居然叫人家怪物。
+[k]
+
+＠高扬斯卡娅
+虽然站在『异星之神』方Alterego这个立场上，[r]但人家也有在努力贯彻一名公平商人的身份呀。
+[k]
+
+[charaFace C 17]
+＠高扬斯卡娅
+我没说错吧？[r]这次也来愉快地摧毁异闻带的各位迦勒底成员？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠芙芙
+芙[messageShake 0.02 3 3 0.5]呜呜呜呜呜呜呜呜！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠玛修
+不可以，芙芙！[r]留在这里！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth G 5]
+[charaDepth F 4]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFace G 5]
+[charaFadein F 0.1 150,0]
+[charaFadein G 0.1 -150,0]
+＠阿黛勒
+人类的女性……？
+[k]
+
+[charaTalk G]
+＠马卡里俄斯
+不，那种东西怎么可能是人类！[r]丝毫没有掩饰的粗暴魔力、死亡的腥臭……
+[k]
+
+[charaFace G 2]
+＠马卡里俄斯
+你究竟是什么！　女人！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk C]
+[charaFace C 21]
+[charaFadein C 0.1 1]
+[wt 0.6]
+
+？1：玉藻Vitch·高扬斯卡娅！
+
+？2：这次又来干什么！
+
+？！
+
+[charaFace C 9]
+＠高扬斯卡娅
+呀～☆
+[k]
+
+＠高扬斯卡娅
+人畜无害的[%1]亲[r]竟然会这样挺身而出质问人家！
+[k]
+
+[charaFace C 4]
+＠高扬斯卡娅
+你的成长……不对，这是友谊？　好感度？[r]感觉关系距离比在印度稍微缩短了一些？
+[k]
+
+＠高扬斯卡娅
+总之，虽说在我看来，[r]你这种轻率并非完全不可取啦[line 3]
+[k]
+
+[charaFace C 17]
+＠高扬斯卡娅
+但我这次当然还是[#迦勒底:各位]的敌人。[r]没有任何可以向你们提供的商品或情报哦。
+[k]
+
+＠高扬斯卡娅
+我只是为了今后的行动，[r]来拜访一下幻兽的生产工厂而已。
+[k]
+
+＠高扬斯卡娅
+悄悄告诉你，这次访问是连奥林波斯诸神[r]也[#没有告知]的秘密行动[line 3]
+[k]
+
+＠高扬斯卡娅
+因此彼此[#装作]从未见过面[r]就直接告别才是聪明的做法。
+[k]
+
+[charaFace C 16]
+＠高扬斯卡娅
+你们正在准备某种大型装置，[r]意图攻略这个异闻带。
+[k]
+
+＠高扬斯卡娅
+而我则在暗中守望着你们，[r]事情顺利的话，就能获得奥林波斯的商品了。
+[k]
+
+[charaFace C 9]
+＠高扬斯卡娅
+嗯～，这难道不是win-win的关系吗？[r]根本没有人会损失！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠武藏
+（……她这么说。大家怎么看？）
+[k]
+
+？1：……还是得问她究竟在这里干什么。
+？2：……是时候弄清楚她的目的了。
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠福尔摩斯
+说得没错，[&Mr.:Miss][%1]。
+[k]
+
+＠福尔摩斯
+反正我们已经被看见了，[r]与高扬斯卡娅的战斗是不可避免的。
+[k]
+
+[charaFace H 5]
+＠福尔摩斯
+毕竟对我来说，[r]她最后肯定会成为最大的敌人。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 20]
+[charaFadein C 0.1 1]
+＠高扬斯卡娅
+哎呀……这又是为什么呢？[r]我明明在印度还请你喝了好喝的印度奶茶……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠芙芙
+芙，芙呜！[r]（特别意译：才没有呢，你这满嘴谎言的小气FOX！）
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 1.2]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠福尔摩斯
+高扬斯卡娅并非奥林波斯方的势力。
+[k]
+
+＠福尔摩斯
+在迦勒底攻略大西洋异闻带时，[r]她应该不会积极进行妨碍吧。
+[k]
+
+＠福尔摩斯
+根据她以往在异闻带的行动，[r]这点可以非常明确。
+[k]
+
+[charaFace H 8]
+＠福尔摩斯
+那她是[#隐匿者:Crypter]方……[r]『异星之神』方的势力吗？　当然也不是。
+[k]
+
+＠福尔摩斯
+她从未试图守护过『空想树』，[r]甚至还反过来将『空想树』视作商品的一环。
+[k]
+
+＠福尔摩斯
+她根本就不是听命于『异星之神』的。
+[k]
+
+[charaFace H 5]
+＠福尔摩斯
+『异星之神』拥有三骑使徒[line 3]
+[k]
+
+＠福尔摩斯
+尽管你提过这个情报，[r]但却从未宣称自己也是『使徒之一』。
+[k]
+
+＠福尔摩斯
+你曾多次尝试误导我们吧。[r]但过于刻意，反而让真相浮出了水面哦。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠高扬斯卡娅
+我就知道☆[r]但这也算是我的诚意吧。
+[k]
+
+＠高扬斯卡娅
+如果将来被蝼蚁倒打一耙说什么『你明明说过！』，[r]那我也无法保持冷静呢♡
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠武藏
+（呃……是吗，玛修？）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠玛修
+（啊，是的……重新回顾过去的对话记录……）
+[k]
+
+[charaFace E 6]
+＠玛修
+（她确实没有明确说过……！[r]　净是些让人误以为是那样的措辞！）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠武藏
+（什么嘛，不还是欺诈嘛！[r]　这算哪门子诚意啊，那个妖怪！）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠福尔摩斯
+诸位，请安静。[r]现在正讲到关键的地方。
+[k]
+
+[charaFace H 8]
+＠福尔摩斯
+至于[line 3]
+[k]
+
+＠福尔摩斯
+玉藻Vitch·高扬斯卡娅究竟是何方神圣。
+[k]
+
+＠福尔摩斯
+袭击迦勒底本部，[r]对泛人类史造成毁灭性打击。
+[k]
+
+＠福尔摩斯
+打着『异星之神』这面旗号，[r]却折磨着异闻带的居民，见证他们的终结。
+[k]
+
+＠福尔摩斯
+而现在如各位所见，[r]在大西洋异闻带摆出一副『第三者』的架子。
+[k]
+
+[charaFace H 0]
+＠福尔摩斯
+我可以说出我的结论吗，[r][&Mr.:Miss][%1]？
+[k]
+
+[charaFace H 7]
+
+＠福尔摩斯
+……不过猜你应该也已经找到答案了。
+[k]
+
+？1：（沉默地点头表示同意。）
+？2：（沉默地点头……）
+
+？！
+
+[messageOff]
+[cameraMove 0.5 0,10 1.01]
+[wt 0.5]
+[cameraMove 0.5 0,0 1.01]
+[wt 1.0]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠高扬斯卡娅
+[line 6]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠福尔摩斯
+『异星之神』的使徒。[r]有俄罗斯的拉斯普京，下总国的Limbo。
+[k]
+
+＠福尔摩斯
+[#以及在亚特兰蒂斯才发现其存在的千子村正]。
+[k]
+
+＠福尔摩斯
+这几个恐怕是『异星之神』亲自召唤的从者。
+[k]
+
+＠福尔摩斯
+所以他们会守护『空想树』，[r]并且奉『异星之神』为主。
+[k]
+
+＠福尔摩斯
+另一方面，你与『异星之神』毫无瓜葛。[r]不仅如此，你还受到了『异星之神』使徒的尊重。
+[k]
+
+＠福尔摩斯
+因此[line 3][r]她与『异星之神』是对等的存在……
+[k]
+
+＠福尔摩斯
+用高扬斯卡娅的惯用语来说，[r]应该接近[#生意伙伴]吧？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠高扬斯卡娅
+是互惠互利的关系。
+[k]
+
+＠高扬斯卡娅
+我确实与『异星之神』缔结了这样的契约。
+[k]
+
+＠高扬斯卡娅
+『我方并不会排除你方，[r]　你方也无需理解我方。』
+[k]
+
+＠高扬斯卡娅
+『遵照彼此的原则，划定这颗星球的结局。』
+[k]
+
+[charaFace C 19]
+＠高扬斯卡娅
+可是，为什么？[r]为什么你会得这种结论？
+[k]
+
+＠高扬斯卡娅
+你为什么说我与『异星之神』的关系[r]近似生意伙伴？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+＠福尔摩斯
+当然是因为只要这样想，一切就都说得通了。
+[k]
+
+＠福尔摩斯
+高扬斯卡娅虽与使徒们站在一起，[r]却怀着与他们不同的目的奔走于异闻带间。
+[k]
+
+＠福尔摩斯
+[#并不是为了培育空想树]，[r][#只是为了]『[#折磨人类]』。
+[k]
+
+[charaFace H 8]
+＠福尔摩斯
+我们仍不知道『异星之神』是什么，[r]其真面目究竟为何。没有数据。
+[k]
+
+[charaFace H 0]
+＠福尔摩斯
+但其最终目的地却很明确。[r]『异星之神』将『现今人类的灭亡』作为结论。
+[k]
+
+＠福尔摩斯
+而你的最终目标应该也一样。[r]『作为人类的天敌，毁灭人类』。
+[k]
+
+＠福尔摩斯
+正因如此，[r]『异星之神』才没有将你算入人类那边。
+[k]
+
+＠福尔摩斯
+说不定还将你视作立场对等的『竞争对手』。[r]所以才会与你谈下了那桩『生意』。
+[k]
+
+＠福尔摩斯
+彼此利用，相互无视。[r]避免决定性的冲突。
+[k]
+
+＠福尔摩斯
+虽说从『威胁』的规模而言，[r]应该是『[#异星之神:那边]』更胜一筹，
+[k]
+
+＠福尔摩斯
+可『异星之神』仍然将你视作危险，[r]为你套上了名为契约的项圈。
+[k]
+
+＠福尔摩斯
+你残酷又残忍，趣味低俗又堕落[line 3][r]却不知为何自矜于『商人』的身份。
+[k]
+
+＠福尔摩斯
+若想封锁这种自由奔放的同行的行动，[r]最便捷的手段就是让其成为自己的合伙人。
+[k]
+
+＠福尔摩斯
+你们以互不干涉彼此事业为条件缔结契约，[r]获得了对等的立场。
+[k]
+
+[charaFace H 7]
+＠福尔摩斯
+我没说错吧，Ms.高扬斯卡娅？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.1 1]
+＠高扬斯卡娅
+感谢你热心细致的说明。[r]大致上没有错哦。
+[k]
+
+[charaFace C 21]
+＠高扬斯卡娅
+[line 3]所以呢？[r]你想说我是谁？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠福尔摩斯
+……
+[k]
+
+＠福尔摩斯
+能够让可以瞬间将地球白纸化的『神』[r]如此退让的对象，我只想到一种可能。
+[k]
+
+＠福尔摩斯
+连Alterego们也不具备的[r]可以自由转移到“不同世界”的异能。
+[k]
+
+＠福尔摩斯
+连『异星之神』都避免发生冲突的灾害。
+[k]
+
+＠福尔摩斯
+在亚特兰蒂斯中，[r]被世界召唤的Archer俄里翁。
+[k]
+
+＠福尔摩斯
+在这奥林波斯中，[r]恐怕已经凑齐条件的召唤仪式。
+[k]
+
+＠福尔摩斯
+将这些因素综合起来，自然就能得出答案。[r]独立的灾害，且足以促成冠位英灵现界的存在。
+[k]
+
+[charaFace H 6]
+＠福尔摩斯
+也就是[line 3]
+[k]
+
+[bgmStop BGM_EVENT_71 1.0]
+
+[charaFace H 5]
+＠福尔摩斯
+[line 3]职阶Beast。[r]你无疑是七个人类恶之一。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 21]
+[charaFadein C 0.1 1]
+[wt 0.5]
+[charaFaceFade C 26 1.0]
+[wt 2.0]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_72 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠玛修
+职阶Beast……！？[r]可是她的灵基还在通常范围之内！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+＠福尔摩斯
+所以她是仍未『发育完全』的幼体啊。[r]不过也已经成长到[#冠位:Grand]会反应的程度了。
+[k]
+
+＠福尔摩斯
+若非如此，你根本不可能这么安分。
+[k]
+
+＠福尔摩斯
+怎么样，Ms.高扬斯卡娅。[r]不，应该怎么称呼你的真名呢？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠芙芙
+芙呜呜呜……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.1 1]
+＠高扬斯卡娅
+还是继续叫我高扬斯卡娅吧，名侦探。[r]毕竟我根本没有真名那种无聊的玩意儿。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ade153]
+[se ade280]
+[se ad556]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth R 3]
+[charaDepth S 3]
+[charaDepth E 5]
+[charaDepth F 4]
+[charaDepth G 6]
+[charaDepth A 7]
+
+[scene 10000 1.2]
+[wt 0.4]
+[charaPut R 1]
+[charaEffect R bit_talk_beast_shadow]
+[wt 0.2]
+[charaFadeout C 0.7]
+[seVolume ad556 1.0 0.5]
+
+[wt 1.6]
+
+[seStop ade280 1.0]
+[wt 1.5]
+
+？1：突然起雾了！？
+？2：（怎么回事……这阵恶寒……！？）
+
+？！
+
+＠？？？
+……………………终于。
+[k]
+
+＠？？？
+终于抵达[#分歧点:这里]了啊。[r]不愧为迦勒底的各位。
+[k]
+
+＠？？？
+与『异星之神』契约[line 3]
+[k]
+
+＠？？？
+『绝对不可主动说出自己的名字。』
+[k]
+
+＠？？？
+只要这道束缚还在，[r]我就只能做一些踏踏实实的工作[line 3]
+[k]
+
+＠？？？
+不过托你们的福，[r]我终于、终于恢复可以自由[#伸展]的身体了。
+[k]
+
+＠？？？
+呵呵……[r]呵呵呵……
+[k]
+
+＠？？？
+啊[line 4]哈哈哈哈！
+[k]
+
+＠？？？
+最好的打算却招致最坏的结果。[r]自以为有良知却沦落成自私自利。
+[k]
+
+＠？？？
+妄言守护人理的人类之自我，[r]每次看到都令我作呕！
+[k]
+
+＠？？？
+是的，请容我郑重向各位致谢。
+[k]
+
+＠？？？
+感谢你们帮我将盖提亚那[r]天真幼稚的希望破坏得体无完肤！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk off]
+
+[se ade106]
+[seVolume ad556 1.0 0.3]
+
+
+[se ad632]
+[effect bit_talk_lightning_01r]
+[wt 2.0]
+[seVolume ad632 1.0 0.5]
+
+[charaPut S 1]
+[charaEffect S bit_talk_beast_eye]
+[wt 1.5]
+[se bac35]
+[wt 1.5]
+
+
+
+＠玛修
+魔力反应急遽增大！[r]这气息、这空间侵蚀，果真是[line 3]！
+[k]
+
+
+[charaTalk off]
+
+＠？？？
+始终在各个异闻带假装品行端正，[r]盘算了很久该什么时候展示自己。
+[k]
+
+＠？？？
+我差不多也想试着用一下[r]自己的一两条尾巴了[line 3]
+[k]
+
+＠？？？
+真是焦躁难耐啊！　没错！[r]偶尔也该亲自动手！
+[k]
+
+＠？？？
+玩弄一下人类种其实也不赖嘛！
+[k]
+
+
+＠奥林波斯的双胞胎
+……！
+[k]
+
+
+
+＠？？？
+哈[messageShake 0.02 3 3 0.4]哈哈哈哈哈哈！[r]啊哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈！
+[k]
+
+＠？？？
+我来陪你们玩玩吧！　为奖励回答正确，[r]我会慢慢地、多花点时间……[line 3]
+[k]
+
+＠？？？
+说不定你们会在被机械构造之神杀死前！[r]被我的尾巴压成烂泥哦！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_72 1.0]
+[wt 0.1]
+
+[se ad14]
+[se ad241]
+[se ad619]
+[seStop ade106 2.0]
+[seStop ad632 2.0]
+[seStop ad556 2.0]
+
+[shake 0.02 3 3 0]
+[wt 2.4]
+
+
+[shakeStop]
+[charaEffectStop S bit_talk_beast_eye]
+[effectStop bit_talk_lightning_01r]
+
+[seStop ad14 1.0]
+[seStop ad241 1.0]
+[seStop ad619 1.0]
+[wt 1.5]
+
+[bgm BGM_EVENT_24 0.1]
+
+
+＠玛修
+确认对象形态变化！[r]质量增大。正在吸收周围的魔力……[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+
+
+
+＠I：玛修
+正在大型化！[r]变成详情不明的黑色四足兽！
+[k]
+
+
+＠武藏
+要来了！　[line 3]玛修，准备！
+[k]
+
+[messageOff]
+
+
+[charaTalk off]
+[charaPut S 1]
+[se ad711]
+[shake 0.02 3 3 0]
+[wt 2.0]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

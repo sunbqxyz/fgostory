@@ -1,0 +1,725 @@
+
+＄94-06-57-10-1-0
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 28002000 1 フェイカー_演出用シルエット]
+[charaFilter A silhouette 00000080]
+
+[charaSet B 1098124500 1 ダ・ヴィンチ]
+[charaSet C 1098124500 1 ダ・ヴィンチ_演出用シルエット]
+[charaFilter C silhouette 00000080]
+
+[charaSet D 5019001 1 エルメロイⅡ世]
+
+[charaSet E 2020000 1 イシュタル]
+[charaSet F 3002000 1 ディルムッド]
+[charaSet G 98005000 1 オルガマリー]
+[charaSet H 1098158200 1 シオン]
+[charaSet I 6023000 1 両儀式]
+[charaSet J 6039000 1 グレイ]
+[charaSet K 4032000 1 ライネス]
+[charaSet L 9008001 1 アストライア]
+[sceneSet M 10001 1]
+[charaScale M 1.01]
+
+[imageSet N back10000 1 1]
+[charaScale N 1.05]
+[imageSet O back10000 1 1]
+[charaScale O 1.05]
+
+[scene 105800]
+
+[wipeFilter openEye 0.3 0.7]
+[blur lens 0.1 4 4]
+[cameraMove 0.1 0,60 1.2]
+[wt 0.1]
+
+[fadein black 1.0]
+[wt 0.3]
+[se ad77 0.6]
+[wait fade]
+
+[wt 0.4]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 0,-120]
+[wt 1.2]
+
+？1：フェイカー………？
+
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[wipeout openEye 0.1 0.5]
+[wait wipe]
+
+[fadein black 0.1]
+[wait fade]
+
+[cameraHome 0.1]
+[charaFadeout A 0.1]
+
+[charaTalk off]
+
+[charaDepth C 2]
+[charaDepth B 1]
+
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+[blurOff lens 1.0]
+[wipein openEye 1.0 0.5]
+[wait wipe]
+
+[charaFadeout C 0.7]
+[wt 1.0]
+
+[charaTalk on]
+
+[bgm BGM_EVENT_116 0.1]
+
+＠ダ・ヴィンチ
+どうしたのかな、[%1]？[r]フェイカーってなに？
+[k]
+
+？1：………誰だろう
+？2：………サーヴァントのクラス？
+？！
+
+[charaFace B 23]
+
+＠ダ・ヴィンチ
+サーヴァント？　ううん、カルデアに[r]そんなクラスは登録されてないけど。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad8]
+[wt 1.2]
+[se ad95]
+[wt 0.5]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+[seStop ad95 0.2]
+
+＠エルメロイⅡ世
+いや、あったんだ。[r]私の世界では、だが。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+やあ、エルメロイⅡ世。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠エルメロイⅡ世
+立ち聞きしてしまって、申し訳ない。
+[k]
+
+＠エルメロイⅡ世
+ムネーモシュネーの件の疲れが[r]やっと取れてきて、そこらを歩いてたんだ。
+[k]
+
+[charaFace D 1]
+
+＠エルメロイⅡ世
+そうしたら、[r]ずいぶん懐かしい単語が聞こえたものでね。
+[k]
+
+＠エルメロイⅡ世
+よければ、確認させて欲しい。[r]どうして、急にそんなことを？
+[k]
+
+？1：夢を、見たのかも
+
+？！
+
+[charaFace D 0]
+
+＠エルメロイⅡ世
+夢？　なるほど夢か。[r]他に何か覚えてるかな？
+[k]
+
+？1：………………
+
+？！
+
+＠エルメロイⅡ世
+ゆっくり思い出してくれていい。[r]時間はあるんだから。
+[k]
+
+[messageOff]
+[wt 2.0]
+
+？1：………そうだ
+
+？！
+
+？1：心臓のない男って、知ってますか？
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_116 1.5]
+
+[charaFace D 3]
+[wt 2.0]
+[charaFace D 0]
+
+[bgm BGM_EVENT_101 0.1]
+
+＠エルメロイⅡ世
+知っているとも。とてもよく知っている。[r]だが、君の口から聞くとは思わなかった。
+[k]
+
+？1：教えてもらえますか？
+
+？！
+
+[charaFace D 1]
+
+＠エルメロイⅡ世
+構わない。[r]だが、少し長い話になるぞ。
+[k]
+
+
+＠エルメロイⅡ世
+何しろ、[#魔眼蒐集列車:レ ー ル ・ ツ ェ ッ ペ リ ン]のオークションから[r]霊墓アルビオンの[#冠位決議:グランド・ロール]まで話すことになる。
+[k]
+
+[charaFace D 4]
+
+＠エルメロイⅡ世
+いや、原点を話すなら、もっと前。[r]ブラックモアの墓地からか………
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+おやおや、魔術世界でも特別な名前ばかりじゃないか。[r]新所長が聞いたら、ひっくり返るぞう？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠エルメロイⅡ世
+だから、なるべく黙ってたんですよ。
+[k]
+
+＠エルメロイⅡ世
+さて、この話をするのだと、[r]グレイも同席した方がいいだろうが。
+[k]
+
+？1：かまいません
+？2：ぜひ一緒に
+
+？！
+
+＠エルメロイⅡ世
+ふむ。だったら、ちょっと探してくるか。
+[k]
+
+[charaFace D 4]
+
+＠エルメロイⅡ世
+もっともライネスなら、並行世界の情報を伝えるのは[r]あまり良くないぞ、とか言うかもしれないがね。
+[k]
+
+？1：そうなんですか？
+？2：便利そうな気も
+
+？！
+
+[charaFace D 0]
+
+＠エルメロイⅡ世
+さっきも言ったがね。これでも時計塔の[#君主:ロード]だ。[r]迂闊に話せないことは多いのさ。
+[k]
+
+＠エルメロイⅡ世
+くわえて言うと、カルデアに来て困ったことも[r]たっぷりあってね。
+[k]
+
+＠エルメロイⅡ世
+どうにもあちらこちらに、[r]知り合いの影がやたらとチラつく。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth D 6]
+[charaDepth E 5]
+[charaDepth F 4]
+[charaDepth G 3]
+[charaFace E 0]
+[charaFace F 0]
+[charaFace G 0]
+
+[charaPutFSR F 192,0]
+[charaFadeTime F 0.4 0.75]
+[charaMoveFSR F 320,0 1.4]
+[wt 1.0]
+[charaFadeout F 0.4]
+[wt 0.4]
+
+[charaPutFSL E -192,0]
+[charaFadeTime E 0.4 0.75]
+[charaMoveFSL E -320,0 1.4]
+[wt 1.0]
+[charaFadeout E 0.4]
+[wt 0.4]
+
+[charaPutFSR G 192,0]
+[charaFadeTime G 0.4 0.75]
+[charaMoveFSR G 320,0 1.4]
+[wt 1.0]
+[charaFadeout G 0.4]
+[wt 0.4]
+
+[wt 0.7]
+？1：言われてみれば
+？2：知り合い多そうですよね
+？！
+
+＠エルメロイⅡ世
+サーヴァントだけならかまわんが、[r]今の時代の組織や人間も関わると、いろいろ厄介だ。
+[k]
+
+＠エルメロイⅡ世
+死者はしがらみを割り切れても、[r]生きている者は、そうはいかない。
+[k]
+
+＠エルメロイⅡ世
+私の場合、アトラス院や彷徨海も知らなくはないし、[r]以前の冒険ではあの両儀の家にも縁があった。
+[k]
+
+[messageOff]
+[charaDepth H 5]
+[charaDepth I 4]
+
+[charaPutFSL H -192,0]
+[charaFadeTime H 0.4 0.75]
+[charaMoveFSL H -320,0 1.4]
+[wt 1.0]
+[charaFadeout H 0.4]
+[wt 0.4]
+
+[charaPutFSR I 192,0]
+[charaFadeTime I 0.4 0.75]
+[charaMoveFSR I 320,0 1.4]
+[wt 1.0]
+[charaFadeout I 0.4]
+[wt 0.4]
+
+[wt 0.7]
+？1：アトラス院も知ってたんですか！
+？2：両儀さんの家とも……！
+？！
+
+[charaTalk on]
+[charaFace D 4]
+
+＠エルメロイⅡ世
+あくまで、私の世界の話だ。人理がこうなってる以上、[r]こちらでどう違っているかは謎のまま。
+[k]
+
+[charaFace D 0]
+
+＠エルメロイⅡ世
+だというのに、私の世界の知識を不用心にもたらせば、[r]どんなトラブルが起こるか、想像したくもないね。
+[k]
+
+＠エルメロイⅡ世
+君みたいな人間に、そんな情報を無分別に教えるのは、[r]確かに良くないだろう。
+[k]
+
+＠エルメロイⅡ世
+だが、今回は………
+[k]
+
+[messageOff]
+[charaFace D 4]
+[wt 2.0]
+
+[charaFace D 0]
+[se adm36]
+[charaMoveFSR D 128,0 1.2]
+[wt 1.0]
+[seStop adm36 0.1]
+[wt 0.4]
+
+＠エルメロイⅡ世
+ほら、ついてきたまえ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+私も是非聞いてみたいが、今回はキミに譲っておこう。[r]でも、機会があったら、きちんと聞かせておくれよ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadeinFSR D 0.1 128,0]
+
+＠エルメロイⅡ世
+どうぞ、お手柔らかに。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+[se ad8]
+[wipeout rightToLeft 1.0 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[scene 105900]
+[wt 1.2]
+[wipein leftToRight 1.0 1]
+[wait wipe]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠エルメロイⅡ世
+さっきの話と、矛盾するようだがね……[r]私は、こうも思うんだよ。
+[k]
+
+＠エルメロイⅡ世
+君が、どうしてフェイカーや心臓のない男のことを[r]知っているのかは分からない。
+[k]
+
+[charaFace D 1]
+
+＠エルメロイⅡ世
+だが、知っている人間がいるなら、[r]語るべきだろうと思うんだ。
+[k]
+
+＠エルメロイⅡ世
+何かに役立てるためじゃない。[r]何かを勝ち取るためでもない。
+[k]
+
+＠エルメロイⅡ世
+それは………
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth K 3]
+[charaDepth J 2]
+[charaDepth L 1]
+
+[charaTalk off]
+[charaFace J 1]
+[charaFadein J 0.1 -192,0]
+[charaFace K 1]
+[charaFadein K 0.1 192,0]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk K]
+[charaFace K 6]
+
+＠ライネス
+おお、兄上に我が弟子か。
+[k]
+
+＠グレイ
+師匠！[r]今、ライネスさんにお茶をいれてもらってて。
+[k]
+
+[clear]
+
+＠J：アッド
+イッヒヒヒ！[r]カルデアのどこから最高級の茶葉を仕入れてるんだか！
+[k]
+
+[charaFace K 8]
+
+＠ライネス
+おっと君、仕入れ元を詮索するのはタブーだと[r]最初に言ったはずだぞ？
+[k]
+
+[messageOff]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.4 -500,0]
+[wt 1.0]
+
+[charaFace L 5]
+[wt 1.0]
+
+[charaFadeout K 0.1]
+[charaFadeout J 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠エルメロイⅡ世
+歓談中のところ、申し訳ない。我が内弟子と、[r][#先日当たり前のように召喚された]我が[#義妹:いもうと]。
+[k]
+
+[charaFace D 1]
+
+＠エルメロイⅡ世
+[%1]を交えて、前の事件や[r]時計塔についての話をしたいんだが、構わないかな？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth K 3]
+[charaDepth J 2]
+
+[charaTalk off]
+[charaFace J 0]
+[charaFadein J 0.1 -192,0]
+[charaFace K 0]
+[charaFadein K 0.1 192,0]
+[wt 0.7]
+[charaFace K 1]
+[charaFace J 1]
+[wt 1.4]
+
+[charaFadeout K 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk L]
+[charaFace L 2]
+[charaFadein L 0.2 -20,0]
+[charaMove L 0,0 0.2]
+[se ad7]
+[wt 0.2]
+
+＠アストライア
+ちょっと、そこの魔術師。[r][#私:わたくし]にもその話を聞かせなさい！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠エルメロイⅡ世
+な[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠アストライア
+当たり前でしょう？　前に召喚された[#私:わたくし]のことも、[r]この[#身体:うつわ]のことも、気にならないわけがありませんわ。
+[k]
+
+[charaFace L 1]
+
+＠アストライア
+だって、[#私:わたくし]なら、どんな舞台であろうと、[r]誇るべき活躍をしたに間違いありませんもの！
+[k]
+
+[messageOff]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace D 3]
+[charaFadein D 0.1 2]
+[wt 0.4]
+[charaFace L 0]
+[charaFadein L 0.4 0]
+[charaMove L -192,0 0.4]
+[wt 0.4]
+
+[charaFace D 4]
+[se bac8 0.7]
+[charaShake D 0.04 3 3 0.4]
+[wt 0.7]
+
+[charaFadeout D 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaFace J 6]
+[charaFadein J 0.1 -192,0]
+[charaFace K 1]
+[charaFadein K 0.1 192,0]
+[wt 0.7]
+
+[charaCrossFade K 1098164900 1 0.4]
+[wt 1.2]
+
+[charaFaceFade J 1 0.4]
+[wt 1.4]
+
+[bgm BGM_EVENT_101 2.4 0.7]
+[charaFadeout K 0.2]
+[charaFadeout J 0.2]
+[wt 2.2]
+[overlayFadein N 0.1 0,-800]
+[overlayFadein O 0.1 0,800]
+[charaMove N 0,-745 0.5]
+[charaMove O 0,745 0.5]
+[wt 1.0]
+
+[charaTalk on]
+＠
+何かに役立てるためじゃない。[r]何かを勝ち取るためでもない。
+[k]
+
+[messageOff]
+[wt 2.0]
+
+＠
+何の役にも立たなくても。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_101 2.0 0.4]
+[fadeout white 2.0]
+[wait fade]
+[charaSet A 1098228500 1 フェイカー_モノクロ]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[charaDepth M 10]
+[charaFadein M 0.1 0,-200]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[scene 74202]
+[wt 1.0]
+[fadein white 1.0]
+[wait fade]
+
+[se ad31]
+[seStop ad31 0.4]
+[fowardEffect bit_talk_noise_gr]
+[blur lens 0.4 4 100]
+[wt 0.4]
+[charaFadeout M 0.4]
+[fowardEffectStop bit_talk_noise_gr]
+[bgm BGM_EVENT_101 0.4 0.7]
+[wt 0.4]
+
+
+＠フェイカー
+夢を見た、程度でいいんだ。[r]気のせい、ぐらいでいいんだ。
+[k]
+
+＠フェイカー
+残るものなんて、その程度でいいから、[r]こいつは帰らないといけないんだ。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_101 2.0 0.4]
+[fadeout white 2.0]
+[wait fade]
+[overlayFadein N 0.1 0,-745]
+[overlayFadein O 0.1 0,745]
+[charaFadeout A 0.1]
+[cameraFilter normal]
+[scene 105900]
+[wt 1.0]
+[bgm BGM_EVENT_101 1.0 0.7]
+[fadein white 1.0]
+[wait fade]
+
+[wt 0.5]
+＠
+[charaFadeTime M 1.0 0.4]
+何を得ることもできなくても。
+[k]
+
+[messageOff]
+[charaFadeTime M 1.0 0.7]
+[wt 2.0]
+
+＠
+覚えていることは、語り続けることは、[r]きっと、[#自分自身]の救いになるからだ[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_EVENT_101 3.5]
+[fadeout white 2.0]
+[wait fade]
+[wt 0.5]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[scene 10000]
+[wt 1.2]
+[fadein white 1.0]
+[wait fade]
+[fadeout black 0.1]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

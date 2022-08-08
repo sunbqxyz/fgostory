@@ -1,0 +1,381 @@
+
+＄03-00-08-09-4-1
+
+
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098231510 1 玛修]
+[charaSet B 1098216200 1 哈贝特洛特]
+[charaSet C 1098231100 1 妖精骑士兰斯洛特]
+[charaSet D 5021000 1 贤者格里姆]
+
+[imageSet F back10000 1]
+[charaScale F 1.05]
+[charaSet H 98115000 1 特效用]
+
+[charaPut H 2000,2000]
+[charaEffect H bit_talk_shield_light 15,-15]
+
+[scene 119503]
+
+[bgm BGM_EVENT_24 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠玛修
+呜，唔唔唔唔……！！！！
+[k]
+
+[charaFace A 8]
+
+＠玛修
+不行……任何攻击，都不奏效……[r]……已经没有，力气……
+[k]
+
+[messageOff]
+[se ad598]
+[charaEffectStop H bit_talk_shield_light]
+[wt 1.5]
+[charaMove A 0,-15 0.4]
+[wt 0.2]
+[cueSe SE_21 21_ad1074]
+[seVolume 21_ad1074 0 0.4]
+[wt 0.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠妖精骑士兰斯洛特
+……这样啊。[r]你那面盾牌还是有点用处的。
+[k]
+
+＠妖精骑士兰斯洛特
+不过圆桌的护佑对在下毫无意义。[r]作为神秘的规格差距巨大。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+
+[se ad882]
+[seVolume ad882 0 0.8]
+[se ad609]
+[seVolume ad609 0 0.8]
+[shake 0.05 2 2 2.0]
+[wt 2.5]
+[seStop ad609 1.0]
+
+[fadeout black 0.5]
+[bgm BGM_EVENT_24 0.5 0.5]
+[wait fade]
+[scene 119102]
+[wt 0.5]
+[fadein black 0.5]
+[wait fade]
+
+[wt 1.0]
+
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+[cameraMove 0.1 150,-142 2.0]
+[wt 0.3]
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠谢菲尔德的卫士
+！　刚才的爆炸是，城堡主塔[line 3][r]博格特大人没事吧！？
+[k]
+
+[messageOff]
+[wt 0.3]
+[fadeout black 0.5]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.0]
+
+[scene 119503]
+[wt 0.5]
+
+[fadein black 0.5]
+[bgm BGM_EVENT_24 0.5 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-15]
+[wt 1.2]
+[charaFace A 7]
+[wt 0.8]
+[charaMove A 1 0.4]
+[se bac170]
+[wt 0.8]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 5]
+[charaDepth F 1]
+
+[charaPut F 1]
+[charaFadeTime F 0.2 0.5]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠哈贝特洛特
+（！　虽然很高兴看到她从灰心中振作，可那表情！[r]　啊啊真是的，她是打算去救援吧[line 2]！？）
+[k]
+
+[charaFadeout F 0.2]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠妖精骑士兰斯洛特
+……恢复精神了吗。[r]你还真顽强呢。
+[k]
+
+＠妖精骑士兰斯洛特
+难怪会自称加拉哈德呢。
+[k]
+
+＠妖精骑士兰斯洛特
+不过死心吧。[r]到此为止了，『预言之子』。
+[k]
+
+＠妖精骑士兰斯洛特
+你哪儿都去不了。[r]不需要两个『预言之子』。
+[k]
+
+[se ade321]
+
+＠妖精骑士兰斯洛特
+永别了。无论是自称妖精骑士，[r]还是假冒加拉哈德，你都太嫩了。
+[k]
+
+[messageOff]
+[charaMoveScale C 1.05 0.4]
+[charaMove C 0,15 0.4]
+[se ad60]
+[seStop ad60 0.4]
+[wt 0.2]
+
+[cueSe Servants_303300 bac753]
+[wt 0.2]
+
+[bgmStop BGM_EVENT_24 0.5]
+
+[se ad963]
+[seVolume ad963 0 0.8]
+[wt 0.4]
+[seStop ad963 0.3]
+[cueSe Servants_301200 bac768]
+[wt 0.4]
+[se ad960]
+[se ad961]
+[fowardEffect bit_talk_fire_wall 0,0 H]
+[wt 0.5]
+[se ad7]
+[seVolume ad7 0 0.8]
+[charaFace C 2]
+[charaMoveScale C 1.0 0.1]
+[charaMove C 0,0 0.1]
+[wt 3.5]
+[charaFace C 3]
+
+＠妖精骑士兰斯洛特
+[line 3]谁。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaScale C 1.0]
+
+[se ad60]
+[wt 1.5]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.7 1]
+[seStop ad60 0.4]
+[wt 1.5]
+
+[bgm BGM_MAP_1 0.1]
+
+＠？？？
+抱歉啦。[r]那个小妹妹是我的熟人。
+[k]
+
+＠？？？
+虽然我并不想出手，[r]但如果她死在这里，我又不太好办。
+[k]
+
+＠？？？
+麻烦你退下吧，兰斯洛特。[r]那样我们彼此都能早点回家。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+您[line 3][r]该不会是一直守护着我们的狼先生吧……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠？？？
+什么嘛，原来早就穿帮了啊。
+[k]
+
+＠？？？
+直觉真准，不，[r]应该说你的洞察力还是那么优秀，小妹妹。
+[k]
+
+＠？？？
+这家伙交给我，你快逃吧。[r]只是争取点时间的话，还是能想办法的。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+啊，好，那就恭敬不如从命了！[r]非常感谢，穿着长袍的人！
+[k]
+
+[messageOff]
+[se ad7]
+[charaMove A -50,0 0.2]
+[charaFadeout A 0.2]
+[wt 0.2]
+[se ade427]
+[seStop ade427 1.5]
+[wt 2.0]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠？？？
+哎，怎么回事，不是去外面吗！？[r]你回城是想干嘛啦喂[line 3]！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠哈贝特洛特
+咱就知道……
+[k]
+
+[charaFace B 6]
+＠哈贝特洛特
+不过没办法，这样才是玛修嘛！
+[k]
+
+＠哈贝特洛特
+格里姆！　你是格里姆吧！[r]虽说久别重逢，但抱歉，这里就拜托你啦！
+[k]
+
+[messageOff]
+[charaMove B -50,0 0.5]
+[charaFadeout B 0.4]
+[se ad59]
+[seStop ad59 1.5]
+[wt 2.0]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠贤者格里姆
+噢，包在我身上吧。[r]虽说与这家伙为敌，毫无疑问会被杀死就是了！
+[k]
+
+[charaFace D 0]
+
+＠贤者格里姆
+综上所述，可以麻烦你当我的对手吗？[r]我会怀着同归于尽的觉悟，将你驱逐到城外哦。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠妖精骑士兰斯洛特
+……格里姆。[r]是吗，你就是贤者格里姆……
+[k]
+
+＠妖精骑士兰斯洛特
+曾活在妖精历的，救世主的使魔。[r]不吸取教训，时至[#女王历:今日]又被召唤出来的从者。
+[k]
+
+[charaFace C 0]
+
+＠妖精骑士兰斯洛特
+女王陛下吩咐过，可以将你处理掉。[r]……姑且问一句，你有遗言吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠贤者格里姆
+太长了，长得说不完啦。[r]反正你我在妖精国都算是外来者。
+[k]
+
+＠贤者格里姆
+不如别管周围情况，随心所欲大闹一场吧！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

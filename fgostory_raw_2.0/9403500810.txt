@@ -1,0 +1,255 @@
+
+
+
+＄94-03-50-08-1-0
+
+[soundStopAll]
+
+
+[charaSet C 3030000 1 帕尔瓦蒂]
+[charaSet E 10003000 1 瞑生院祈荒]
+[charaSet F 1098163800 1 春日局]
+[charaSet B 99502600 1 玛修]
+[charaSet G 1098158220 1 希翁]
+[charaSet H 1098158230 1 希翁_举手_通讯]
+[imageSet I cut103_item02 1]
+
+[charaSet J 98115000 1 特效用1]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[scene 71900]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠帕尔瓦蒂
+哎呀？[r]地上有什么东西。是什么啊？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+
+[cueSe Battle bas2]
+[wt 0.2]
+[charaFadein I 0.7 0,-200]
+[wt 2.2]
+
+[charaFadeout I 0.4]
+[wt 0.5]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠瞑生院祈荒
+好像是……花牌呢。[r]尽管我不太熟悉。
+[k]
+
+？1：是牡丹呢。
+？2：是蝶呢。
+？！
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[wt 0.1]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth F 0]
+[charaDepth C 1]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+[wt 0.3]
+
+[charaSpecialEffect C erasureReverse 1 0.3]
+[charaFace F 0]
+[charaFadein F 0.2 1]
+[wt 0.1]
+[seStop ad80 0.3]
+
+[wt 0.5]
+[charaTalk on]
+＠春日局
+是骨牌的一种吗？[r]骨牌也是奥女官们喜欢的游戏。
+[k]
+
+＠春日局
+就算掉在大奥的地上也没什么好奇怪的。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠玛修
+请等一下，[r]希翁小姐似乎感到很奇怪。
+[k]
+
+＠玛修
+难道有什么令人介怀的事？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+＠希翁
+从扫描来看没什么问题，就是普通的卡牌。[r]但数值却不太稳定。
+[k]
+
+＠希翁
+一直在摇摆，就好像包含着无论如何[r]都无法分析的黑盒般的存在[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠玛修
+唔。这个……[#是一样的吧]？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠瞑生院祈荒
+[FFFFFF]？[-]　和什么一样啊？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠希翁
+和现在位于你们头顶以及脚下的东西，[r]没错[line 3][#就是和大迷宫大奥这一建筑物]，一样哦。
+[k]
+
+＠希翁
+既然与那个的反应相同，[r]也就意味着[#这张卡也是大奥的一部分]。
+[k]
+
+[charaFace G 15]
+＠希翁
+对不起，现阶段情报还不够。
+[k]
+
+＠希翁
+至少我觉得没有危险。[r]由于很有意思，所以姑且先拿着吧。
+[k]
+
+＠希翁
+因为如果能搜集到其他相同的样本，[r]就能进行新的分析。
+[k]
+
+？1：明白了。
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠春日局
+唔。尽管只要能完成自己负责的工作，我不会有什么抱怨，[r]但玩耍之后就该好好收拾才行！　这是非常重要的。
+[k]
+
+[charaFace F 17]
+
+＠春日局
+先不论是遗失的还是忘记收拾了，
+[k]
+
+＠春日局
+总之一旦等我找到了犯人，[r]一定要好好教训才行。
+[k]
+
+＠春日局
+嗯，嗯，为了大奥的风纪，[r]我心甘情愿扮演白脸角色。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠玛修
+话说，看来我也有一些误解呢。[r]大奥的各位居然也会玩卡牌游戏呀。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠春日局
+那当然啦。如果无法玩耍，无法外出，[r]那不就等同于牢房了吗。
+[k]
+
+＠春日局
+能够饲养猫狗或小鸟，还有诗歌琴曲茶道，[r]以及赏花赏月。娱乐还是多种多样的。
+[k]
+
+[charaFace F 11]
+＠春日局
+不过，在这种阴森的地下冒牌大奥里，[r]根本指望不了什么赏花赏月了。
+[k]
+
+[charaFace F 5]
+
+＠春日局
+……哎，我又开始火大了！
+[k]
+
+[charaFace F 7]
+
+＠春日局
+各位，我们继续前进吧。得尽快将被囚禁的主上[r]从这等蛮不讲理的大奥中解救出来才行！
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

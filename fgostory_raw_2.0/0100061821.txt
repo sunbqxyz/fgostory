@@ -1,0 +1,539 @@
+＄01-00-06-18-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_24 0.1]
+[charaSet A 8001001 1 玛修]
+[charaSet B 98003000 1 Dr.罗曼]
+[charaSet C 98079000 1 ？？？]
+[charaSet D 6002001 1 咒腕哈桑]
+[charaSet E 6009002 1 静谧哈桑]
+[charaSet F 1012001 1 贝德维尔]
+[charaSet G 5022001 1 三藏]
+[charaSet H 98002000 1 芙芙]
+
+[scene 29300]
+[fadein black 2.0]
+[wait fade]
+
+[wt 0.2]
+[effect bit_talk_14]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[se bac10]
+[shake 0.05 2 4 0.3]
+[wait effect bit_talk_14]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+成功无力化从者！[r]最低限度保住了灵基没有被破坏！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠静谧哈桑
+[line 3]啊[line 3][r]各位……对不……起[line 3]
+[k]
+
+[bgmStop BGM_EVENT_24 1.4]
+[charaFadeout E 0.7]
+[wt 0.5]
+[se ad58]
+[seStop ad58 0.5]
+[shake 0.05 2 2 0.2]
+[wt 1.2]
+
+＠？？？
+……吾虽然说过抢夺生的权利。[r]但没想到汝等两者都想要，真是个贪婪的[&男人:女孩]啊。
+[k]
+
+＠？？？
+但放话只看结果的是我。[r]过程的善恶便不做多问。[line 3]解除。
+[k]
+
+[charaSet C 98079000 1 “山中老人”]
+
+[messageOff]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 2.0 1]
+[wt 3.0]
+[bgm BGM_EVENT_1 0.1]
+＠“山中老人”
+欢迎来到吾之灵庙。[r]吾乃山中老人，哈桑·萨巴赫。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+剑士……？[r]初代山中老人居然……会是剑士……
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+不，值得到惊讶的不是这个啊，玛修[line 3][r]这位Assassin[line 3]难道是冠[line 3]
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠“山中老人”
+少说这种不知趣的话，魔术师。[r]这有损尔等召唤者的无谋之勇。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 2]
+[wt 0.2]
+[se ad28]
+[charaPut B -120,0]
+[charaEffect B bit_talk_37]
+[wait charaEffect B bit_talk_37]
+[se ad31]
+[seStop ad31 2.0]
+[communicationCharaClear]
+[wait communicationChara]
+
+
+＠Dr.罗曼
+啊哇哇，对不起[line 3]！[r]咦？　发生什么了，看不到影像了啊！？
+[k]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠咒腕哈桑
+……初代大人。[r]请允许我等恬不知耻地造访了庙宇。
+[k]
+
+＠咒腕哈桑
+这些人打算与狮子王战斗。[r]然而想要与王对抗，尚欠一丝战力。
+[k]
+
+＠咒腕哈桑
+请务必[line 3]务必助他们一臂之力。[r]这全是为了我们山之民的未来。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠“山中老人”
+……你弄错了两件事。[r]还是和以前一样目光短浅啊，咒腕。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠咒腕哈桑
+……此话怎讲？
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠“山中老人”
+吾质问魔术之徒。[r]与狮子王战斗之人[line 3]这是真的吗？
+[k]
+
+＠“山中老人”
+尔等追求之物是那已堕落为神的狮子王的首级。[r]这话是否无误？
+[k]
+
+？1：这个嘛……
+？2：……说实话，我不知道。
+
+？！
+
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠咒腕哈桑
+[%1]阁下！？
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠三藏
+嗯嗯。说谎是没有意义的啦。
+[k]
+
+＠三藏
+因为不可能去杀一个连面都没见过的人吧。[r]最多也就向对方表现一下不满吧？
+[k]
+
+[charaFadeout G 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠“山中老人”
+[line 3]汝刚才表示，尚欠一丝战力吧。[r]是否真的只差这么一点了？
+[k]
+
+？1：这个问题也……
+？2：……说实话，仅凭哈桑们完全不够。
+
+？！
+
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠咒腕哈桑
+[%1]阁下……！？
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠“山中老人”
+……魔术之徒们啊。[r]有些事，汝等必须知晓。
+[k]
+
+＠“山中老人”
+狮子王真正的意图。太阳王那小子的胡言。[r]人理破绽。以及[line 3]一切的开始。
+[k]
+
+[charaFace C 0]
+＠“山中老人”
+待你们掌握一切后，吾之剑便会成为汝等先锋。[r]太阳骑士，是叫高文吧。
+[k]
+
+＠“山中老人”
+吾之剑将化身猛禽啄去那人的双目。[r]吾之黑衣将化作黑夜吞噬那圣都。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠三藏
+打扰一下，骷髅的大人物！[r]我完全听不懂你的意思！
+[k]
+
+＠三藏
+再说得明白一点，明白一点！
+[k]
+
+？1：三藏亲[line 3]！？
+？2：至少也该叫他王哈桑吧！
+
+？！
+
+[charaFadeout G 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠玛修
+御……御主，[r]王哈桑这称呼也不太好吧……！
+[k]
+
+＠玛修
+求您了，倘若继续这种失礼的行为，[r]就算是王哈桑先生也会不高兴的吧……！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0]
+[charaFace A 15]
+[charaFadein A 0.1 2]
+＠芙芙
+芙，芙[line 3]呜！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠“山中老人”
+[line 3]无妨。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+哎？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠“山中老人”
+称呼随你喜欢。[r]吾本无名。不讲究这些，也没有规矩。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠玛修
+呃……嗯。您能这么说，[r]我们也松了口气……
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠三藏
+这下叫起来可就方便啦！
+[k]
+
+[charaFace G 1]
+＠三藏
+然后，那个……意思是如果我们不先去[r]调查清楚某件事，就不肯帮助我们吗？
+[k]
+
+＠三藏
+那我们该去调查什么才好呢？[r]应该有什么线索吧？
+[k]
+
+[charaFadeout G 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠“山中老人”
+[line 3]沙漠正中的异界。[r]汝等所寻求的东西尽在其中。
+[k]
+
+＠“山中老人”
+位于沙漠，却非太阳王那小子能触及的领域。[r]埋藏于黄沙中的知识宝库[line 3]
+[k]
+
+＠“山中老人”
+其名，为阿特拉斯院。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+……！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠“山中老人”
+魔术之徒啊。[r]是时候知晓人理烧却的因果了。
+[k]
+
+＠“山中老人”
+待事成之后，吾便会出现于战场。[r][line 3]作为告天命之剑。
+[k]
+
+[charaFace C 2]
+[charaChange C 98079100 0 fade 0]
+＠“山中老人”
+那咒腕之翁啊。交出首级吧。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[charaFadein C 0.1 0]
+[wt 0.1]
+[charaFace D 0]
+[charaFadein D 0.4 2]
+＠咒腕哈桑
+……是。[r]咒腕哈桑愿意接受惩罚。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+＠贝德维尔
+！？　请等一下，[r]您为何想要砍下哈桑阁下的首级！？
+[k]
+
+[charaFadeout F 0.1]
+
+[charaSet C 98079000 1 “山中老人”]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠“山中老人”
+吾之面乃翁之死。[r]吾之剑即翁之裁。
+[k]
+
+＠“山中老人”
+异乡骑士。银臂旅行者啊。[r]吾乃山中老人中的山中老人。
+[k]
+
+＠“山中老人”
+[line 3]即为，斩杀哈桑的哈桑。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+＠贝德维尔
+……！　那您是[line 3]
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠“山中老人”
+当山中老人腐坏、堕落、偏离道路之时，[r]吾便会在其面前现身。
+[k]
+
+＠“山中老人”
+明白了吗。[r]历代山中老人临终之时均见到了吾之面具。
+[k]
+
+＠“山中老人”
+没有一人能逃离吾之剑下。[r]因此，得见吾之面具之人即为真正老人[line 3]
+[k]
+
+＠“山中老人”
+该时代的哈桑向吾寻求帮助这件事，[r]等同于宣告了“自己没有资格成为山中老人”。
+[k]
+
+＠“山中老人”
+[line 3]需要被剥夺老翁的面具。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠贝德维尔
+那么……您明知如此，[r]依然带我们来到这里吗，哈桑阁下！？
+[k]
+
+？1：早知如此就不来了……！
+？2：既然如此我就不需要帮助了……！
+
+？！
+
+[charaFadeout F 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠咒腕哈桑
+……………………
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+＠“山中老人”
+咒腕啊。[r]虽说是一时的同胞，但汝并未向他们说明自己的命运啊。
+[k]
+
+[charaFace C 2]
+[charaChange C 98079100 0 fade 0]
+＠“山中老人”
+果然你这家伙丝毫未变。[r]总是放弃得太早了。
+[k]
+
+＠“山中老人”
+……抬起头来吧，咒腕。[r]已然丢尽颜面的你，不能继续失态了。
+[k]
+
+＠“山中老人”
+与这群人一起履行你的职责吧。[r]事成之后，再斩去你的首级。
+[k]
+
+[charaFace D 0]
+＠咒腕哈桑
+……感激不尽。[r]我仅以山中老人之名起誓，必定完成使命。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+
+[charaSet C 98079000 1 “山中老人”]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠“山中老人”
+尽快向阿特拉斯院出发吧。[r]所剩时间已经不多了。
+[k]
+
+＠“山中老人”
+在狮子王之枪恢复其[#真面目]之前将圣地[line 3][r]将神圣之物物归原主。
+[k]
+
+[charaFadeout C 2.0]
+[wt 3.0]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠贝德维尔
+……………………
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_1 1.4]
+[wait fade]
+[wt 0.4]
+[soundStopAll]
+[end]

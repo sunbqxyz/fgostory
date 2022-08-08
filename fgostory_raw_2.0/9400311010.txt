@@ -1,0 +1,202 @@
+＄94-00-31-10-1-0
+
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 8001001 1 玛修]
+[charaSet D 98065000 1 埃尔梅罗Ⅱ世]
+[charaSet E 98062000 1 爱丽丝菲尔]
+[charaSet F 1001000 1 阿尔托莉雅]
+[charaSet G 6015001 1 Assassin？]
+
+[scene 25600]
+
+[charaTalk F]
+[charaFace E 5]
+[charaFace F 5]
+[charaFadein E 0.1 2]
+[charaFadein F 0.1 0]
+
+[fadein black 2.0]
+[wait fade]
+
+＠爱丽丝菲尔
+麻烦了……灵脉在对方的掌控之中。[r]战斗拖得越久对我方就越不利！
+[k]
+
+＠阿尔托莉雅
+爱丽丝菲尔，我还能继续。[r]魔力的储备还十分充裕！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+
+[charaTalk D]
+[charaFace A 0]
+[charaFace D 0]
+[charaFadein A 0.1 2]
+[charaFadein D 0.1 0]
+＠埃尔梅罗Ⅱ世
+唔嗯，比想象中还要顽强啊。[r]这就麻烦了……
+[k]
+
+[charaFace A 2]
+＠玛修
+啊？　危险！
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+
+
+[charaTalk A]
+[charaFace A 15]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[charaFadein A 0.1 900,0]
+
+[fowardEffect bit_talk_42]
+[charaMove A 1 0.3]
+[wait charaMove]
+[fowardEffectStop bit_talk_42]
+[wt 0.2]
+
+[se ad32]
+[charaShake A 0.05 3 3 0.5]
+[fowardEffect bit_talk_14]
+[wait fowardEffect bit_talk_14]
+[wt 0.4]
+
+[charaFadeout A 0.7]
+[wt 1.0]
+
+[charaFace E 3]
+＠爱丽丝菲尔
+哎？　什么……
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk D]
+[charaFace A 7]
+[charaFace D 5]
+[charaFadein A 0.1 2]
+[charaFadein D 0.1 0]
+＠埃尔梅罗Ⅱ世
+果然有伏兵吗！　不过刚才的攻击……
+[k]
+
+＠玛修
+是的，目标并不是前辈，而是Saber的御主。
+[k]
+
+＠埃尔梅罗Ⅱ世
+不是爱因兹贝伦的手下？[r]难道完全是其他势力！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠Assassin？
+通过地形操作魔术的隐身也不管用吗……[r]真是难对付。
+[k]
+
+[charaFadeout G 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠玛修
+那是……[r]杀了Caster御主的从者！？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace G 0]
+[charaFace E 5]
+[charaFadein G 0.1 2]
+[charaFadein E 0.1 0]
+
+＠爱丽丝菲尔
+职阶是Assassin吧。[r]是想坐收渔翁之利吗？
+[k]
+
+＠Assassin？
+不，猎物只要一个就够了。[r]目标只有你一人，身负圣杯之人。
+[k]
+
+[charaFace E 3]
+＠爱丽丝菲尔
+……你说什么？
+[k]
+
+＠Assassin？
+你并没有什么错。[r]你的性命是达成让圣杯解体的最快手段所必要的牺牲。别怪我。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠阿尔托莉雅
+休想得手！
+[k]
+
+[charaFadeout F 0.1]
+
+[messageOff]
+[charaTalk off]
+[charaFace G 0]
+[charaFace F 2]
+[charaFadein G 0.1 900,0]
+[charaFadein F 0.1 -900,0]
+[charaMove G 2 0.2]
+[charaMove F 0 0.2]
+[wait charaMove]
+
+[se ad32]
+[shake 0.05 0 4 0.5]
+[fowardEffect bit_talk_14]
+[wait fowardEffect bit_talk_14]
+[seStop ad32]
+
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+
+
+[se ad33]
+[charaTalk on]
+[charaTalk A]
+[charaFace A 12]
+[charaFace D 5]
+[charaFadein A 0.1 2]
+[charaFadein D 0.1 0]
+＠玛修
+Saber与Assassin开始交战。[r]我们该怎么办……
+[k]
+
+＠埃尔梅罗Ⅱ世
+不管那个Assassin的目的为何，[r]我们都不能让Saber在这里退场。
+[k]
+
+[charaFace D 2]
+＠埃尔梅罗Ⅱ世
+[%1]，掩护爱因兹贝伦！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

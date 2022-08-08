@@ -1,0 +1,188 @@
+
+
+
+＄94-04-77-86-1-5
+
+[soundStopAll]
+
+[skip false]
+
+[maskout black 0]
+[wait mask]
+
+[charaSet A 3016001 1 赫克托耳]
+[charaSet B 3043000 1 绘里濑]
+[charaSet C 5043002 1 阿斯克勒庇俄斯]
+[charaSet D 25005000 1 旅行者]
+[charaSet H 1022001 1 吉尔]
+[imageSet I cut171_token_204 1]
+[charaSet T 5009000 1 特效用dummy]
+
+[scene 20730]
+
+[pictureFrameTop cut170_gameframe_bright]
+
+[skip true]
+
+[fadein black 0]
+[wait fade]
+[maskin black 1.0]
+[wait mask]
+
+[bgm BGM_EVENT_5 0.1]
+
+
+[charaTalk depthOff]
+[charaDepth T 3]
+[charaDepth I 4]
+[charaDepth H 1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 0,-50]
+
+[charaEffect H bit_talk_token_change01]
+[wt 1.0]
+
+＠吉尔
+要向敌人投降……？[r]不，胜负还未定……！
+[k]
+
+[messageOff]
+[charaEffectStop H bit_talk_token_change01]
+[charaPut T 0,-10]
+[charaEffect T bit_talk_token_change02]
+[se ad39]
+[wt 3.2]
+
+[se ad29]
+[seStop ad29 1.5]
+[wt 0.5]
+[charaFadeout H 0.4]
+
+[charaTalk I]
+[charaFadein I 0.4 0,-210]
+[wt 0.5]
+
+[charaMove T 0,10 1.2]
+[wt 1.2]
+
+[charaFadeout I 0.4]
+[wt 0.5]
+
+[se adm19]
+[seVolume adm19 0 0.3]
+[seVolume adm19 1.0 1.0]
+[wt 0.5]
+
+[seStop adm19 1.7]
+[charaMove T 0,700 2.2]
+[wt 2.2]
+
+[charaEffectStop T bit_talk_token_change02]
+[wt 0.1]
+[charaEffectDestroy T bit_talk_token_change02]
+
+[charaTalk depthOn]
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+[charaEffect A bit_talk_06]
+
+＠赫克托耳
+啊～结束了结束了。那就这样，加油哦。[r]赶紧回去吧，回原来的世界。
+[k]
+
+[messageOff]
+[se ade406]
+[wt 0.2]
+[flashin once 0.1 0.6 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout A 0.1]
+[wt 0.2]
+[charaEffectStop A bit_talk_06]
+[wt 0.1]
+[seStop ade406 0.6]
+[wt 1.2]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 0,-50]
+
+＠绘里濑
+这是鼓励，[r]还是嘲笑？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+[charaEffect C bit_talk_06]
+
+＠阿斯克勒庇俄斯
+话说在前面，患者必须老老实实地听话。
+[k]
+
+＠阿斯克勒庇俄斯
+这是义务。不肯照办的愚蠢患者[r]是医生最厌恶的存在。
+[k]
+
+[messageOff]
+[se ade406]
+[wt 0.2]
+[flashin once 0.1 0.6 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout C 0.1]
+[wt 0.2]
+[charaEffectStop C bit_talk_06]
+[wt 0.1]
+[seStop ade406 0.6]
+[wt 1.2]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-50]
+
+＠绘里濑
+我也希望想办法解决啊！[r]所以[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 0,-50]
+
+＠旅行者
+绘里濑……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 19]
+[charaFadein B 0.1 0,-50]
+
+＠绘里濑
+[line 3]所以，只能战斗了。
+[k]
+
+[messageOff]
+[maskout black 2.0]
+[bgmStop BGM_EVENT_5 2.0]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+
+

@@ -1,0 +1,2552 @@
+
+
+
+
+＄94-05-53-01-3-0
+
+[soundStopAll]
+[enableFullScreen]
+
+
+
+
+
+[charaSet A 98001000 1 玛修]
+[charaSet B 6041000 1 鬼一法眼]
+[charaSet C 3013001 1 斯卡哈]
+[charaSet D 5042000 1 紫式部]
+[charaSet E 3006001 1 弁庆]
+[charaSet F 1038000 1 伊阿宋]
+
+[charaSet G 4014001 1 牛若丸]
+[charaSet H 1098206310 1 牛若丸剪影]
+
+
+[charaSet I 1098206400 1 平景清第一剪影]
+[charaSet J 1098206410 1 平景清第二剪影]
+
+[charaSet K 1098206310 1 牛若丸剪影2]
+
+[charaSet L 6041000 1 特效用]
+
+[imageSet M back10000 1]
+[charaScale M 1.01]
+
+[charaSet R 98115000 1 特效用dummy]
+
+[imageSet S cut242_mallet 1]
+
+
+
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+[scene 104100]
+
+[branch lblConf1]
+
+[label lblNotClear1]
+
+
+[scene 105700]
+
+[label lblConf1]
+
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaDepth G 6]
+[charaDepth E 4]
+
+[effectPause bit_talk_v_slash01]
+[fowardEffectPause bit_talk_h_slash01_fs 0,0 F]
+
+[fadein black 0.5]
+[wait fade]
+
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[wt 0.3]
+
+[fadeout white 0.3]
+[se bas1]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaTalk off]
+
+[charaFace E 0]
+[charaFace G 5]
+[charaFadeinFSL G 0.1 0]
+[charaFadeinFSR E 0.1 2]
+[wt 0.5]
+
+[fadein white 0.5]
+[seStop bas1 0.5]
+[wait fade]
+
+[charaEffect G bit_talk_attack_buf]
+[charaEffect E bit_talk_attack_buf]
+[se bas9]
+[wt 1.5]
+
+[charaMoveFSR G -206,-10 0.3]
+[charaMoveScale G 1.2 0.3]
+[se ad73]
+[wt 0.1]
+
+[charaFace E 2]
+[charaMoveFSL E 206,-10 0.3]
+[charaMoveScale E 1.2 0.3]
+
+[charaFadeout E 0.2]
+[charaFadeout G 0.2]
+
+[effectStart]
+[se bac4]
+[wt 0.3]
+
+[fowardEffectStart]
+[se bac6]
+[wt 0.5]
+
+[charaScale G 1.0]
+[charaScale E 1.0]
+
+[effect bit_talk_14 -306,150]
+[se ad1013]
+[wt 0.2]
+
+[fowardEffect bit_talk_14 306,-80]
+[se ad1014]
+[wt 0.3]
+
+[charaFadeout B 0.1]
+[effectDestroy]
+[fowardEffectDestroy]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+[charaPut R 1]
+[fowardEffect bit_talk_pentagram_03]
+[wt 0.1]
+[se ad598]
+[wt 3.4]
+
+[se ade251]
+[fowardEffectStop bit_talk_pentagram_03]
+[wt 1.2]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[fowardEffectDestroy]
+
+[effect bit_talk_shelling_pink01]
+[se bac30]
+[wait effect]
+[wt 0.1]
+
+
+[charaScale B 1.2]
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 0,15]
+
+[se ad32]
+[flashin once 0.07 0.1 FFFFFFFF FFFFFF00]
+
+[charaMoveScale B 1.0 0.2]
+[charaMove B 0,0 0.2]
+[se ad671]
+[wt 1.5]
+
+[charaTalk on]
+
+＠鬼一法眼
+唔！
+[k]
+
+[charaFace B 8]
+
+＠鬼一法眼
+痛快，痛快。[r]与咱对抗你们竟还能坚持那么久！
+[k]
+
+＠鬼一法眼
+虽说咱模仿了从者的形式现界，[r]唔，看来凭[#鬼一:这个]灵基还是无法突破呢。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+[se ad51]
+
+＠斯卡哈
+那你打算如何。[r]鬼一法眼。
+[k]
+
+＠斯卡哈
+就算是东洋神明的亚种，[r]单独闯入迦勒底的做法还是过于草率了吧？
+[k]
+
+
+？1：不是单独……
+？2：好像还有很多像天狗的东西……
+
+？！
+
+[charaFace C 2]
+
+＠斯卡哈
+使魔不算！[wt 0.5][charaFace C 0][r]啊，不，这么说的话从者也不能算了吧？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+哈哈哈哈哈！
+[k]
+
+[charaFace B 0]
+
+＠鬼一法眼
+如果咱是来攻陷这里的话，这话确实没错！[r]单独闯入未免太有勇无谋了！
+[k]
+
+[charaFace B 2]
+
+＠鬼一法眼
+但是～！
+[k]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaFace B 0]
+
+＠鬼一法眼
+咱来这里并不是为了挑衅，[r]倒不如说咱是来接受挑衅的[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+
+＠伊阿宋
+接受挑衅？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+没错。[r]你说是吧，遮那王？
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.1]
+
+
+[charaShake G 0.03 3 3 0.3]
+[wt 0.3]
+
+？1：牛若丸？
+
+？！
+
+[charaFace G 4]
+
+＠牛若丸
+啊，是。
+[k]
+
+
+？1：鬼一小姐那么说，
+？2：难道你知道些什么吗？
+
+？！
+
+[charaFace G 3]
+
+
+＠牛若丸
+…………支支吾吾。
+[k]
+
+[charaFace G 4]
+
+＠牛若丸
+呃，那个……
+[k]
+
+[charaFace G 3]
+
+＠牛若丸
+该怎么说呢……[r]唔～……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+……[r]……
+[k]
+
+[charaFace A 12]
+
+＠玛修
+那……那个，前辈……[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠弁庆
+不，玛修阁下。[r]这里就交给贫僧吧。
+[k]
+
+＠弁庆
+这事怎么说呢，正如传说描述的一样。[r]牛若丸大人的确是鬼一法眼阁下的弟子。
+[k]
+
+＠弁庆
+虽说当时应该已经改名为遮那王了，[r]总之牛若丸大人向鬼一阁下学习武艺……
+[k]
+
+[bgmStop BGM_EVENT_70 1.5]
+
+＠弁庆
+并[#盗取了]兵法的奥义。
+[k]
+
+
+？1：Pardon？
+
+[bgm BGM_EVENT_7 0.1]
+
+＠弁庆
+并[#盗取了]兵法的奥义。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠伊阿宋
+又说了一遍……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠弁庆
+牛若丸大人……
+[k]
+
+？2：盗取了？
+
+[bgm BGM_EVENT_7 0.1]
+
+＠弁庆
+是的。[charaMoveReturn E 0,-10 0.3]
+[k]
+
+＠弁庆
+牛若丸大人竟然欺骗鬼一阁下的女儿，[r]让她拿出了兵法的奥义书……
+[k]
+
+？！
+
+[charaFace E 0]
+
+＠弁庆
+随后擅自阅读了里面的内容。[r]阅读了那传说中只要读一遍就能获得神通力的至宝。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠斯卡哈
+捣蛋鬼。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+啊哈哈。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+啊哈哈，你个头啊！
+[k]
+
+
+[charaFace B 17]
+
+＠鬼一法眼
+虽然迎来了21世纪，[r]但人界还真是艰难呢……
+[k]
+
+[charaFace B 5]
+
+＠鬼一法眼
+正当咱想到这里的时候，就感到了你的气息！
+[k]
+
+
+[charaFace B 0]
+
+＠鬼一法眼
+以前就算咱想降下惩罚，[r][#义经:你]也已经在奥州被讨伐了，
+[k]
+
+＠鬼一法眼
+嫌特地跑一趟彼岸太麻烦，[r]所以咱长期以来一直放任没管……
+[k]
+
+[messageOff]
+
+[charaFace B 7]
+[wt 1.0]
+
+[charaFace B 5]
+
+＠鬼一法眼
+哪怕成为以太之身，[r]哪怕只是临时的存在！
+[k]
+
+＠鬼一法眼
+纵使人理翻天覆地乱作一团！
+[k]
+
+＠鬼一法眼
+只要你终于在当世现界，就另当别论了！
+[k]
+
+[charaFace B 6]
+
+
+＠鬼一法眼
+英灵？　从座上降临的人理之影？
+[k]
+
+＠鬼一法眼
+哎哎，咱可不管那种事！
+[k]
+
+
+[charaFace B 2]
+
+＠鬼一法眼
+[line 3]遮那王！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+是，[charaShake G 0.01 3 3 0.1]在。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+由于你[#生前:过去]犯下的过错！
+[k]
+
+＠鬼一法眼
+必须让你接受惩罚才行，[r]哎哎，给咱坐端正！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaDepth M 2]
+[charaDepth S 3]
+[charaDepth F 4]
+[charaDepth E 4]
+[charaDepth A 4]
+[charaDepth D 4]
+
+[charaFadeTime M 0.1 0.6]
+
+[charaTalk F]
+[charaFace F 19]
+[charaFadein F 0.1 1]
+[wt 0.1]
+
+[charaMoveReturn F 0,-10 0.5]
+[wt 1.0]
+
+＠伊阿宋
+（原来如此，那就没办法了。）
+[k]
+
+[messageOff]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.1]
+
+[charaMoveReturn E 0,-10 0.5]
+[wt 1.0]
+
+＠弁庆
+（原来如此，说的话都很有道理。）
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[charaMoveReturn A 0,-10 0.5]
+[wt 1.0]
+
+＠玛修
+（原来如此，这是教育指导吧。）
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+[charaMoveReturn D 0,-10 0.5]
+[wt 1.0]
+
+
+＠紫式部
+（原来如此，的确不能擅自拿出来呢……）
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+
+＠斯卡哈
+原来如此。我明白了。[r]你尽情处罚她吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+斯卡哈阁下！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠斯卡哈
+这事一听就是你的错吧。[r]作为同样有笨徒弟的人，我非常有共鸣。
+[k]
+
+[charaFace C 5]
+
+＠斯卡哈
+还是说你有什么话要反驳吗？[r]有的话尽管说吧。
+[k]
+
+？1：是啊。
+？2：或许这么做是有什么理由……
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+……[r]……
+[k]
+
+[charaFace G 3]
+
+＠牛若丸
+……………………
+[k]
+
+[charaFace G 5]
+
+＠牛若丸
+……我是牛若。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+嗯。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+因为是牛若，所以不知道成为遮那王后的事。
+[k]
+
+[charaFace G 2]
+
+＠牛若丸
+成为义经时的事，[r]当然，也不知道！
+[k]
+
+[charaFace G 3]
+
+＠牛若丸
+……就不能这样解释吗？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+[line 4]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠斯卡哈
+鬼一法眼阁下。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠伊阿宋
+不，这不行吧。[r]我记得你拥有到死为止的记忆吧。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠弁庆
+唔唔。很有牛若丸大人风格的蛮干呢，[r]但应该不行吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠玛修
+不行吗……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠紫式部
+看来不行呢……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 18]
+[charaFadein F 0.1 1]
+
+＠伊阿宋
+也就是说，类似自己是少年亚历山大，[r]所以不知道伊斯坎达尔大王的所作所为吧。
+[k]
+
+[charaFace F 12]
+
+＠伊阿宋
+不，这么解释的话，或许还有可能？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+＠鬼一法眼
+不，不行！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 21]
+[charaFadein F 0.1 1]
+
+＠伊阿宋
+果然～！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+…………果然不行啊。哎哟哟。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 21]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_90 0.1]
+
+＠鬼一法眼
+……
+[k]
+
+[charaFace B 6]
+
+＠鬼一法眼
+你那种……[r]反正先说出来试试看的表情。
+[k]
+
+[charaFace B 5]
+
+＠鬼一法眼
+令人怒发冲冠就是指这种情况吧！[r]遮那王！
+[k]
+
+[messageOff]
+
+[fowardEffect bit_talk_charge_ppl]
+[se ad632 0.5]
+[seVolume ad632 0 0.3]
+[wt 0.5]
+[seVolume ad632 0.5 0.6]
+[wt 0.5]
+[seVolume ad632 0.5 1.0]
+[wt 1.5]
+
+
+？1：鬼一小姐！？
+？2：从怀里取出了某种东西……那是什么！？
+
+？！
+
+[fowardEffectDestroy]
+[seStop ad632 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaFadeTime M 0.4 0.6]
+[charaFadein S 0.4 0,-200]
+[se ad77]
+[seStop ad77 1.0]
+[wt 2.0]
+
+[charaFadeout M 0.1]
+[charaFadeout S 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠伊阿宋
+小小的木槌？　什么？
+[k]
+
+[messageOff]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+[charaFace A 2]
+
+＠玛修
+那……那个难道是……万宝[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠弁庆
+万宝小槌！[r]也可以说是日本的万能愿望机！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠斯卡哈
+……什么？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+是在众多传说中登场的日本工艺品！[r]正如弁庆先生所说的，拥有接近愿望机的力量！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+看招！
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaDepth L 8]
+[charaDepth G 4]
+
+[bgmStop BGM_EVENT_90 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[charaEffect G bit_talk_gavel_hit]
+[cueSe SE_21 21_ade539]
+[wt 1.2]
+
+[charaFace G 4]
+
+＠牛若丸
+啊。
+[k]
+
+[messageOff]
+[charaDepth K 5]
+[charaDepth H 3]
+[charaDepth G 2]
+
+[charaScale K 1.1]
+
+[cueSe SE_21 21_ade540]
+[effect bit_talk_gavel_smoke]
+[wt 0.2]
+
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.1]
+[charaFadeout G 0.1]
+[wt 1.0]
+
+[charaPut K 0,15]
+[charaFadeTime K 0.1 0.5]
+[charaMoveScale K 1.05 0.3]
+[charaMove K 0,0 0.3]
+[wt 0.2]
+[charaFadeout K 0.2]
+[cueSe SE_21 21_ade541 1.3]
+[wt 1.3]
+
+[charaCrossFade H 1098206400 0 0.8]
+[wait charaCrossFade H]
+
+[charaCrossFade H 1098206310 0 0.8]
+[wait charaCrossFade H]
+
+[charaCrossFade H 1098206400 0 0.8]
+[wait charaCrossFade H]
+
+[seStop 21_ade541 0.5]
+
+
+[wt 1.0]
+
+
+＠牛若丸
+我的……样子……！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_49 0.1]
+
+＠鬼一法眼
+万宝小槌，挥动一次！
+[k]
+
+＠鬼一法眼
+变大吧！[r]变大吧！
+[k]
+
+
+＠鬼一法眼
+以此，依一寸法师的传说[line 3][r]牛若丸就此结束，你现在是遮那王！
+[k]
+
+＠鬼一法眼
+不，机会难得！[r]再挥动一次吧！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut L 0,0]
+[charaEffect L bit_talk_gavel_hit]
+[cueSe SE_21 21_ade539]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+万宝小槌，看招，再挥动一次！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut L 0,0]
+[charaEffect L bit_talk_gavel_hit]
+[cueSe SE_21 21_ade539]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+变大吧！[r]变大吧！
+[k]
+
+＠鬼一法眼
+非牛若丸，[r]非遮那王，
+[k]
+
+[charaFace B 5]
+[bgmStop BGM_EVENT_49 2.0]
+
+＠鬼一法眼
+没错[line 3]你是九郎判官义经！
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 0.5]
+
+[cueSe SE_21 21_ade541 1.3]
+
+[charaCrossFade I 1098206410 0 0.8]
+[wait charaCrossFade I]
+
+[charaCrossFade I 1098206400 0 0.8]
+[wait charaCrossFade I]
+
+[charaCrossFade I 1098206410 0 0.8]
+[wait charaCrossFade I]
+
+[seStop 21_ade541 0.5]
+
+
+＠牛若丸
+啊，[wt 0.3][charaShake I 0.01 3 3 0.5]啊啊，啊啊啊啊……！
+[k]
+
+＠牛若丸
+这……[wt 0.3][charaShake I 0.01 3 3 0.5]是……[r]有什么……！
+[k]
+
+＠牛若丸
+这可……[wt 0.3][charaShake I 0.01 3 3 0.3]不行……有种……奇怪的[wt 0.5][charaShake I 0.01 3 3 0.3]……！
+[k]
+
+＠牛若丸
+不行，[wt 0.3][charaShake I 0.01 3 3 0.3]不行，不行不行不行不行不行[wt 0.5][charaShake I 0.01 3 3 0.3]……[#你是]……！
+[k]
+
+＠牛若丸
+不行[wt 0.3][charaShake I 0.01 3 3 0.3]……[line 3]！
+[k]
+
+[messageOff]
+
+[se ad231]
+[wt 0.5]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠牛若丸
+啊！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠斯卡哈
+牛若丸！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 21]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+又是老一套的演技吧，太夸张了啦……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠斯卡哈
+那家伙的灵基，不，灵核出现异常了！[r]仔细[#看]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+怎么会发生这种荒唐的事……
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[wt 0.5]
+
+[se ad231]
+[wt 1.5]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 19]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+咦？　奇怪？[r]遮那王？
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[wt 0.5]
+
+[se ad231]
+[wt 1.5]
+
+＠牛若丸
+啊……啊……啊啊……[line 3]
+[k]
+
+＠牛若丸
+[f large]啊[charaShake J 0.01 5 5 1.0]啊啊啊啊啊啊啊啊啊啊啊啊啊！！
+[k]
+
+
+？1：牛若丸！？
+
+？！
+
+[messageOff]
+[charaPut L 0,0]
+[charaEffect L bit_talk_charge_ppl02]
+[se ad350]
+[wt 2.0]
+
+[fadeout white 0.3]
+[se ad641]
+[seStop ad350 0.3]
+[wait fade]
+
+[charaPut L 2400,2400]
+[charaEffectStop L bit_talk_charge_ppl02]
+
+[charaFadeout J 0.1]
+[wt 1.0]
+
+[fadein white 0.5]
+[seStop ad641 0.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+魔力反应，增大！[r]御主，快退后！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 19]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+那家伙的灵核确实很奇怪！[r]连灵基都似乎莫名扭曲起来了……为什么！？
+[k]
+
+[charaFace B 20]
+
+＠鬼一法眼
+咱可没改灵核啊！？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 0.4]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.4 1]
+[wt 0.4]
+
+＠牛若丸？
+……[r]……
+[k]
+
+＠牛若丸？
+呵[line 3]
+[k]
+
+[messageOff]
+
+[charaMoveScale J 1.2 0.2]
+[charaMove J 0,20 0.2]
+[wt 0.1]
+[charaFadeout J 0.2]
+
+[effect bit_talk_h_slash02_fs]
+[se bac6]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.3 50,0]
+[charaMove E 1 0.1]
+[wt 0.1]
+
+[flashin once 0.07 0.1 FFFFFFFF FFFFFF00]
+[se ad32]
+[effect bit_talk_14]
+[charaShake E 0.01 3 3 0.5]
+[wt 0.5]
+
+＠弁庆
+……御主阁下！
+[k]
+
+[charaScale J 1.0]
+
+
+？1：弁庆，[&得救了！:谢谢！]
+
+？！
+
+＠弁庆
+不客气！
+[k]
+
+[se ad51]
+
+[charaFace E 2]
+
+＠弁庆
+牛若丸大人！
+[k]
+
+＠弁庆
+不，九郎判官义经大人！[r]您竟会对主公大人……究竟是怎么了！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaScale J 1.0]
+
+[bgm BGM_EVENT_71 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠牛若丸？
+呵，呵呵，呵呵……
+[k]
+
+＠牛若丸？
+呵呵呵呵呵呵哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈！[r]愉快，愉快！
+[k]
+
+＠牛若丸？
+可以实现了！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 20]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+有什么好笑的！[r]呃，哇！？
+[k]
+
+[messageOff]
+
+[charaPutFSL J 0]
+[charaFace J 0]
+[charaMoveFSL J -80,0 0.3]
+[wt 0.1]
+[se ad183]
+[charaFadeTime J 0.2 1.0]
+[wt 0.5]
+[se ad168]
+[wt 0.1]
+[seStop ad168 0.1]
+[wt 0.3]
+
+[charaMoveFSL J -300,0 0.3]
+[wt 0.3]
+[se ad60]
+[wt 0.1]
+[seStop ad60 0.1]
+[charaFadeout J 0.2]
+[wt 0.5]
+
+＠鬼一法眼
+怎……怎么了，为什么突然抱住咱！？
+[k]
+
+[messageOff]
+
+[charaFace B 19]
+
+[charaMoveReturn B 0,10 0.3]
+[wt 0.6]
+
+[charaFace B 5]
+
+＠鬼一法眼
+呃，啊啊！　不对！[r]没了！　小槌……万宝小槌，是你抢走的吗！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠牛若丸？
+呵呵呵，啊哈哈，啊哈哈哈哈哈！
+[k]
+
+＠牛若丸？
+万宝小槌！[r]吾收下了！
+[k]
+
+[messageOff]
+
+[se ad73]
+[charaEffect J bit_talk_quickmove]
+[charaMove J 0,10 0.3]
+[charaFadeout J 0.2]
+[wt 0.7]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+＠伊阿宋
+喂喂喂她逃掉了！[r]这情况好像不太妙吧！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠斯卡哈
+快追！
+[k]
+
+[messageOff]
+
+[wipeout rightToLeft 0.5 1.0]
+[se ad769]
+[bgmStop BGM_EVENT_71 0.5]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[charaSet G 4013001 1 梅芙]
+[charaSet H 7020000 1 库·丘林·Alter]
+[charaSet I 7020000 1 库·丘林·Alter剪影]
+[charaFilter I silhouette 00000080]
+
+[charaSet K 98104010 1 库·丘林·Alter]
+
+[charaSet E 1098206200 1 弁庆]
+[charaSet F 98104200 1 伊阿宋]
+
+[charaSet Q 1098124510 1 达·芬奇（小）]
+
+[charaSet S 98111500 1 达·芬奇（大）]
+
+[wt 1.0]
+[seStop ad769 1.0]
+
+
+
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+[scene 104200]
+
+[branch lblConf2]
+
+[label lblNotClear2]
+
+
+[scene 105500]
+
+[label lblConf2]
+
+
+[wt 1.0]
+
+[wipein leftToRight 0.5 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_49 0.1]
+
+[charaTalk off]
+
+[charaDepth H 2]
+[charaDepth I 4]
+
+[charaFace I 0]
+[charaFadein I 0.4 1]
+[wt 1.4]
+
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.1]
+[charaFadeout I 0.7]
+[wt 1.6]
+
+[charaTalk on]
+
+[charaTalk H]
+[charaFace H 0]
+
+＠库·丘林·Alter
+…………真吵闹。
+[k]
+
+[messageOff]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[se ad73]
+[charaEffect J bit_talk_quickmove 0,0 V]
+[charaFadein J 0.1 0,25]
+[charaMove J 0,0 0.2]
+[wt 1.2]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+
+
+＠库·丘林·Alter
+你是什么人。
+[k]
+
+＠库·丘林·Alter
+[line 6]哼！！
+[k]
+
+[messageOff]
+
+[fowardEffect bit_talk_v_slash02]
+[se ad171]
+[charaFadeout H 0.1]
+[wt 0.7]
+
+[effect bit_talk_14]
+[se ad32]
+[cueSe SE_21 21_ade539]
+[seVolume 21_ade539 0 0.6]
+[wt 0.5]
+
+[charaTalk J]
+[charaFace J 0]
+[charaScale J 1.2]
+[charaFadein J 0.1 0,20]
+[charaMoveScale J 1.0 0.2]
+[charaMove J 0,0 0.2]
+[se ad671]
+[wt 1.5]
+
+＠牛若丸？
+……[r]……
+[k]
+
+＠牛若丸？
+…………很强。但是。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠库·丘林·Alter
+啊？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaScale J 1.0]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠牛若丸？
+[#小槌已经挥下]。[r]你是第三骑。
+[k]
+
+＠牛若丸？
+咯咯。咯咯咯。远方的勇猛武士啊，再见了！
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_49 0.7]
+
+[se ad73]
+[charaEffect J bit_talk_quickmove]
+[charaMove J 0,10 0.3]
+[charaFadeout J 0.2]
+[wt 0.7]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[se ad51]
+
+＠库·丘林·Alter
+嘁。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+
+＠梅芙
+怎么了，怎么了？[r]在走廊里战斗可是会惹戈夫生气的哦？
+[k]
+
+[branch lblConf3]
+
+[label lblNotClear3]
+
+
+＠梅芙
+怎么了，怎么了？[r]在走廊里战斗可是会惹达·芬奇生气的哦？
+[k]
+
+[label lblConf3]
+
+
+[charaFace G 1]
+＠梅芙
+什么啊，这不是小库嘛！
+[k]
+
+[charaFace G 12]
+
+＠梅芙
+唔？
+[k]
+
+＠梅芙
+哎呀？
+[k]
+
+＠梅芙
+哎呀呀？
+[k]
+
+＠梅芙
+小库？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+＠库·丘林·Alter
+唔。
+[k]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠梅芙
+小库！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+＠库·丘林·Alter
+吵死了。
+[k]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠梅芙
+小库！！！！
+[k]
+
+[messageOff]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad769]
+[wt 2.0]
+[seStop ad769 0.1]
+
+
+＠伊阿宋
+怎么了怎么了。[r]那家伙上哪儿去了？
+[k]
+
+＠弁庆
+怎么了，梅芙阁下。
+[k]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠梅芙
+连你们也……！？[r]为……为什么会变成这个样子！
+[k]
+
+[messageOff]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+
+＠伊阿宋
+你说什么呢？[r]重要的是那家伙……
+[k]
+
+[messageOff]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠弁庆
+噢，噢噢，伊阿宋阁下，您的身高！
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.4 1]
+[wt 0.4]
+
+＠库·丘林·Alter
+吵死了啦……
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠紫式部
+啊[charaShake D 0.01 3 3 0.3]哇哇哇哇！？[r]大……大家都缩小了！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠伊阿宋
+什么[line 4]！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠弁庆
+什……什么时候！　大意了！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠斯卡哈
+彻底缩小了呢……[r]看来是受到了万宝小槌，也就是愿望机的影响吧。
+[k]
+
+＠斯卡哈
+元凶上哪儿去了？[r]没看到她的人影。也感受不到魔力。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+魔力反应[line 3]
+[k]
+
+[charaFace A 2]
+
+＠玛修
+是的，基地内已经没反应了！[r]基地周围也不见踪影！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+慢着。咱来找。
+[k]
+
+[charaFace B 7]
+
+＠鬼一法眼
+唔～……
+[k]
+
+[messageOff]
+
+[fowardEffect bit_talk_pentagram_06]
+[se ad1054]
+[wt 3.5]
+
+[fowardEffectStop bit_talk_pentagram_06]
+[seStop ad1054 0.1]
+[se ade251]
+[wt 2.0]
+
+[fowardEffectDestroy]
+
+[charaFace B 6]
+
+＠鬼一法眼
+…………找到了。她使用小槌跳跃到远方去了。
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 0.3]
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+
+[charaPut R 1]
+[se ad13]
+[charaEffect R bit_talk_10_LowLevel]
+[wt 0.2]
+
+[charaTalk Q]
+[charaFace Q 4]
+[charaFadein Q 0.4 1]
+[wt 0.4]
+
+＠达·芬奇
+管制室被弄得一团乱，这是什么？
+[k]
+
+[charaFace Q 0]
+
+＠达·芬奇
+先不管那个了，[r]嗯，微小特异点发生了，
+[k]
+
+＠达·芬奇
+你们知道[line 3]发生的原因吗？
+[k]
+
+[messageOff]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaPut R 1200,1200]
+[charaEffectStop R bit_talk_10_LowLevel]
+[charaFadeout Q 0.1]
+
+[charaSet Q 1098124500 1 达·芬奇]
+
+[scene 104100]
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+嘎，嘎，嘎！
+[k]
+
+[messageOff]
+
+[charaFace B 17]
+[wt 1.0]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaFace B 23]
+
+＠鬼一法眼
+……虽然咱这么大笑。[r]但抱歉。怎么看这都是咱的失误导致的。
+[k]
+
+＠鬼一法眼
+这就是所谓的本打算灸治惩罚她一下，[r]结果引发了严重火灾的情况吧。
+[k]
+
+＠鬼一法眼
+是咱的错。
+[k]
+
+[charaFace B 2]
+
+
+＠鬼一法眼
+所以，请不要责怪他们。[r]是咱的责任！
+[k]
+
+[charaFace B 0]
+
+＠鬼一法眼
+因此，接下来咱会全面协助你们。[r]请将咱当做临时的协助者吧。
+[k]
+
+？1：总之，请多关照！
+
+？！
+
+[charaFace B 17]
+
+＠鬼一法眼
+嗯。
+[k]
+
+[charaFace B 22]
+
+＠鬼一法眼
+啊，有句话先说在前头。[r]千万别妄想成为咱的弟子。
+[k]
+
+＠鬼一法眼
+咱虽然是天下万世之师，[r]只要成为咱的弟子，你们一定也能获得力量吧。
+[k]
+
+＠鬼一法眼
+比方说，如果咱将奥义书传授给你们，[r]你们就肯定能学会名为绝技的神通力。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠斯卡哈
+哦哦。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 22]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+但不行。这是不行的哦？
+[k]
+
+＠鬼一法眼
+区区人类之子是没资格成为咱弟子的！
+[k]
+
+？1：我知道了。
+
+[charaFace B 17]
+
+＠鬼一法眼
+嗯嗯。
+[k]
+
+？2：总之，先助我们一臂之力吧！
+
+[charaFace B 11]
+
+＠鬼一法眼
+这个问题就交给咱吧！[r]咱定会帮上你们的忙！
+[k]
+
+？！
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk Q]
+[charaFace Q 25]
+[charaFadein Q 0.1 1]
+
+＠达·芬奇
+万宝小槌[line 3]
+[k]
+
+＠达·芬奇
+受到亚种愿望机影响的牛若丸失控，[r]不仅灵基与灵核发生了变化，还逃亡去别处了。
+[k]
+
+＠达·芬奇
+与此同时，出现了微小特异点。[r]恐怕是使用小槌形成的存在吧。
+[k]
+
+[charaFace Q 22]
+
+＠达·芬奇
+好厉害啊，[r]竟能在逃跑的地点造成微小特异点。
+[k]
+
+[charaFace Q 14]
+
+＠达·芬奇
+虽然厉害，但并不好。[r]放任不管会让我们折损一骑英灵[line 3]
+[k]
+
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+
+[branch lblConf4]
+
+
+
+[label lblNotClear4]
+
+
+[charaPut R 1]
+[se ad13]
+[charaEffect R bit_talk_10_LowLevel]
+[wt 0.2]
+
+[charaTalk S]
+[charaFace S 0]
+[charaFadein S 0.4 0,-90]
+[wt 0.4]
+
+＠达·芬奇
+管制室被弄得一团乱，这是什么？
+[k]
+
+＠达·芬奇
+先不管那个了，[r]嗯，微小特异点发生了，
+[k]
+
+＠达·芬奇
+你们知道[line 3]发生的原因吗？
+[k]
+
+[messageOff]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaPut R 1200,1200]
+[charaEffectStop R bit_talk_10_LowLevel]
+[charaFadeout S 0.1]
+
+[charaSet S 5009001 1 达·芬奇]
+
+[scene 105700]
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+嘎，嘎，嘎！
+[k]
+
+[messageOff]
+
+[charaFace B 17]
+[wt 1.0]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaFace B 23]
+
+＠鬼一法眼
+……虽然咱这么大笑。[r]但抱歉。怎么看这都是咱的失误导致的。
+[k]
+
+＠鬼一法眼
+这就是所谓的本打算灸治惩罚她一下，[r]结果引发了严重火灾的情况吧。
+[k]
+
+＠鬼一法眼
+是咱的错。
+[k]
+
+[charaFace B 2]
+
+＠鬼一法眼
+所以，请不要责怪他们。[r]是咱的责任！
+[k]
+
+[charaFace B 0]
+
+＠鬼一法眼
+因此，接下来咱会全面协助你们。[r]请将咱当做临时的协助者吧。
+[k]
+
+？1：总之，请多关照！
+
+？！
+
+[charaFace B 17]
+
+＠鬼一法眼
+嗯。
+[k]
+
+[charaFace B 22]
+
+＠鬼一法眼
+啊，有句话先说在前头。[r]千万别妄想成为咱的弟子。
+[k]
+
+＠鬼一法眼
+咱虽然是天下万世之师，[r]只要成为咱的弟子，你们一定也能获得力量吧。
+[k]
+
+＠鬼一法眼
+比方说，如果咱将奥义书传授给你们，[r]你们就肯定能学会名为绝技的神通力。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠斯卡哈
+哦哦。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 22]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+但不行。这是不行的哦？
+[k]
+
+＠鬼一法眼
+区区人类之子是没资格成为咱弟子的！
+[k]
+
+？1：我知道了。
+
+[charaFace B 17]
+
+＠鬼一法眼
+嗯嗯。
+[k]
+
+？2：总之，先助我们一臂之力吧！
+
+[charaFace B 11]
+
+＠鬼一法眼
+这个问题就交给咱吧！[r]咱定会帮上你们的忙！
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk S]
+[charaFace S 0]
+[charaFadein S 0.1 1]
+
+
+＠达·芬奇
+万宝小槌[line 3]
+[k]
+
+＠达·芬奇
+受到亚种愿望机影响的牛若丸失控，[r]不仅灵基与灵核发生了变化，还逃亡去别处了。
+[k]
+
+＠达·芬奇
+与此同时，出现了微小特异点。[r]恐怕是使用小槌形成的存在吧。
+[k]
+
+[charaFace S 1]
+
+＠达·芬奇
+好厉害啊，[r]竟能在逃跑的地点造成微小特异点。
+[k]
+
+[charaFace S 4]
+
+＠达·芬奇
+虽然厉害，但并不好。[r]放任不管会让我们折损一骑英灵[line 3]
+[k]
+
+
+[charaFadeout S 0.1]
+[wt 0.1]
+
+
+[label lblConf4]
+
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+
+＠伊阿宋
+而且我们还缩小了！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠弁庆
+如果可能的话，希望能恢复原来的灵基！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+
+＠库·丘林·Alter
+……
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠梅芙
+小库保持这个样子也没问题哦？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+＠库·丘林·Alter
+有问题。
+[k]
+
+？1：我们当然会追她。
+
+？！
+
+[bgm BGM_EVENT_62 0.1]
+
+？1：一定要让牛若丸和大家都恢复原状才行！
+
+？！
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+嗯。
+[k]
+
+＠鬼一法眼
+既然如此！
+[k]
+
+[charaFace B 2]
+
+＠鬼一法眼
+咱当然也要同行！[r]弟子到处乱闹会有损做师傅的名声！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠斯卡哈
+我懂，我能懂，嗯嗯。[r]既然你这么说，那就带你一起去吧。
+[k]
+
+＠斯卡哈
+我还有要事在身，没法帮忙，[r]但这个人一定能帮上大忙。
+[k]
+
+[charaFace C 2]
+
+＠斯卡哈
+你们就一起出发，并肩战斗吧！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+感激不尽，斯卡哈阁下。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠斯卡哈
+不用客气。[r]师傅也有做师傅的苦处。对吧！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+唔，嗯。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠斯卡哈
+那么[line 3]去吧！[r][%1]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛修
+我也会留在这里负责支援。[r]前辈，一路小心！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[skip false]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout K 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout S 0.1]
+[scene 10000]
+[wt 1.0]
+[fadein black 0.1]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[soundStopAllFade 0.4]
+
+[charaSet S 5009000 1 初始化用dummy]
+[charaSet Q 5009000 1 初始化用dummy]
+[charaSet K 5009000 1 初始化用dummy]
+[charaSet I 5009000 1 初始化用dummy]
+[charaSet H 5009000 1 初始化用dummy]
+[charaSet G 5009000 1 初始化用dummy]
+[charaSet F 5009000 1 初始化用dummy]
+[charaSet E 5009000 1 初始化用dummy]
+[charaSet D 5009000 1 初始化用dummy]
+[charaSet C 5009000 1 初始化用dummy]
+[charaSet B 5009000 1 初始化用dummy]
+[charaSet A 5009000 1 初始化用dummy]
+
+[maskout black 1.0]
+[wait mask]
+[scene 10000]
+[wt 0.1]
+
+[maskin black 0.1]
+[wait mask]
+
+[label selectBranch]
+
+[fowardEffect bit_queststart80309]
+[wait fowardEffect]
+[wt 1.0]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,230 @@
+
+＄94-01-19-11-1-1
+[soundStopAll]
+[charaSet A 3005000 1 黑色偶像]
+[charaSet B 23001000 1 BB]
+[charaSet C 98112700 1 Passionlip]
+[charaSet D 10002000 1 Meltryllis]
+[charaSet E 1007000 1 高文]
+[charaSet F 7016000 1 玉藻猫]
+[charaSet G 2016000 1 卫宫·Alter]
+[imageSet H back41330 2]
+
+[shake 0.01 1 3 0]
+[bgm BGM_EVENT_52 0.1]
+[scene 41000]
+[fadein black 1.5]
+[wait fade]
+[charaFilter A silhouette 00000080]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+＠黑色偶像
+I'll be back[line 5]！[r]你～们～给～我～记～住[line 4]！
+[k]
+
+[messageOff]
+[charaPut B 0,0]
+[charaSpecialEffect B flashErasure 0 1.7]
+[charaFadeout A 1.1]
+[se ad52]
+[wait charaSpecialEffect B]
+[shakeStop]
+[charaScale H 1.01]
+[charaDepth H 1]
+[charaFadein H 0.1 0,312]
+[messageOff]
+[charaMove H 0,-200 0.3]
+[charaMove B 0,0 0.3]
+[wait charaMove]
+[charaMove H 0,-170 0.15]
+[wait charaMove]
+[charaMove H 0,-200 0.15]
+[wait charaMove]
+[charaMove H 0,-170 0.2]
+[wait charaMove]
+[charaMove H 0,-200 0.2]
+[wait charaMove]
+[charaTalk B]
+[charaFace B 4]
+[charaPut A 0,0]
+[charaEffect A bit_talk_noise_pink01]
+[charaFadein B 0.4 0,0]
+＠BB
+唔……真遗憾。但伊丽莎小姐的话，[r]迟早会在其他活动再见吧！
+[k]
+
+[charaFace B 0]
+＠BB
+前辈这次也挺努力的，[r]所以BB亲的妨碍就到此为止了。
+[k]
+
+[charaFace B 1]
+＠BB
+嗯，让大家久等了！
+[k]
+
+＠BB
+不知道久等什么，[r]当然是令人心跳的反转到背面[#开始:Start][line 3]
+[k]
+
+[bgmStop BGM_EVENT_52 0.7]
+[charaFace B 6]
+＠BB
+[line 3]等一下。[r]你打算做什么，Lip，我还没下那种命令吧！？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout H 0.1]
+[charaPut A 0,-1000]
+[wt 0.1]
+[scene 41000 0.1]
+[shake 0.01 1 3 0]
+[bgm BGM_EVENT_24 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠Passionlip
+啊[line 3]啊啊[line 3]
+[k]
+
+[charaEffect C bit_talk_voice01]
+[charaFace C 2]
+＠Passionlip
+啊啊啊啊啊啊啊[line 3]！
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[shake 0.01 1 10 0]
+[charaFadeout C 0.1]
+[charaEffectStop C bit_talk_voice01]
+[wt 0.1]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠Meltryllis
+……！　赶快，[%1]，[r]一旦被Lip看到，我们就完了！
+[k]
+
+＠Meltryllis
+继续抓紧揉！　或是殴打！[r]得赶快让这衣衫不整的SE.RA.PH翻转过来才行！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠高文
+呜……！[r]各位，赶快！　这里由我[se ad51]来！
+[k]
+
+[charaMoveScale E 1.2 0.2]
+[charaMove E 0,30 0.2]
+[wait charaMoveScale]
+[charaFadeout E 0.1]
+[se ad73]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Passionlip
+啊[line 3]啊，啊[line 3]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[messageOff]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[effect bit_talk_14]
+[se ad170]
+[charaMoveScale E 1.0 0.4]
+[wait charaMoveScale]
+
+＠高文
+呜……！　比看上去还要重……！[r]这爪子，看来撑不了很久……！
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.2 1]
+[wait wipe]
+[charaFadeout E 0.1]
+[wt 0.2]
+[wipein rightToLeft 0.2 1]
+[wait wipe]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠玉藻猫
+那可不行，帅哥！[r][#卫士:Sentinel]可不是孤身一人能阻止的对手！
+[k]
+
+＠玉藻猫
+快回来，要不就快逃！[r]太阳也是会下山的，骑士高文！
+[k]
+
+[messageOff]
+[wipeout rightToLeft 0.2 1]
+[wait wipe]
+[charaFadeout F 0.1]
+[wt 0.2]
+[wipein leftToRight 0.2 1]
+[wait wipe]
+＠高文
+唔噢噢噢噢！
+[k]
+
+
+＠Passionlip
+啊啊啊啊啊[line 3]！！！！
+[k]
+
+？1：高文，到这里来……！
+
+？！
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠卫宫·Alter
+不，已经来不及了！[r]快退下，由我来击打……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[messageOff]
+[charaPut B 0,-100]
+[charaEffect B bit_shot_01]
+[se bac57]
+[wt 0.2]
+[se bac57]
+[wt 0.2]
+[charaPut B 2000,2000]
+[charaEffectDestroy D bit_shot_01]
+[shake 0.01 1 15 0]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠玉藻猫
+噢噢，只有主人身边的世界翻转了！[r]这就是前往背面世界的入口吧！
+[k]
+
+＠玉藻猫
+但是高文[line 3][r]骑士高文[line 6]！
+[k]
+
+[se ad12]
+[messageOff]
+[bgmStop BGM_EVENT_24 1.5]
+[fadeout white 3.5]
+[wait fade]
+[wt 2.5]
+[soundStopAll]
+[end]

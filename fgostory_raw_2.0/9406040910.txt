@@ -1,0 +1,923 @@
+
+
+
+＄94-06-04-09-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+
+
+
+
+
+[charaSet A 8001600 1 マシュ]
+[charaSet B 1098215400 1 ダ・ヴィンチ]
+[charaSet C 5048000 1 シャルロット・コルデー]
+[charaSet D 4008300 1 黒髭]
+[charaSet E 4039300 1 マンドリカルド]
+[charaSet F 4029300 1 アキレウス]
+[charaSet G 1098215500 1 ゴルドルフ]
+[charaSet H 1098216800 1 沖田オルタ]
+[charaSet I 2044001 1 アナスタシア]
+[charaSet J 98002000 1 フォウ]
+[charaSet K 1098217700 1 量産型コロンブス]
+[charaSet L 1098218410 1 クリストファー]
+
+[imageSet M back10000_fs 1]
+[charaScale M 1.5]
+
+[charaSet N 4025000 1 コロンブス]
+[charaSet O 1098215510 1 ゴルドルフ2]
+
+[charaDepth M 1]
+[charaDepth E 2]
+
+[pictureFrame cut063_cinema]
+[scene 110100]
+
+[fadein black 2.0]
+[wait fade]
+[bgm BGM_EVENT_92 0.1]
+
+＠
+[line 3]レオナルド・ダ・ヴィンチ記。
+[k]
+
+
+＠
+いずれ来る離別だということは[r]わかっている。
+[k]
+
+＠
+それなら、最初から遠ざけるべきなのか。
+[k]
+
+＠
+それは違う、と[r][%1][&君:ちゃん]は言う。
+[k]
+
+＠
+私もそれに賛成だ。
+[k]
+
+＠
+全ての物語に、全ての関わった存在に、[r]いずれ必ず別れは訪れるもの。
+[k]
+
+＠
+それまでの道のりを、[r]どうか明るく楽しく、そして何より。
+[k]
+
+＠
+[line 3]ステくんにとって、美しい旅路でありますように。
+[k]
+
+[messageOff]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_92 1.5]
+[wait fade]
+
+[pictureFrame]
+[wt 1.5]
+
+[scene 129700]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_MAP_13 0.1]
+
+[charaTalk G]
+[charaFace G 15]
+[charaFadein G 0.1 1]
+＠ゴルドルフ
+迫り来るコロンブス軍団、ボスのクリストファー君、[r]謎の軍師ＤＯＭＡＮ。
+[k]
+
+＠ゴルドルフ
+あと、唐突に出てくるサメ[#兵士:ソルジャー]。[r]好き勝手に暴れ回る[#カルデア:う　　　 ち]の海賊サーヴァント。
+[k]
+
+[charaFace G 18]
+＠ゴルドルフ
+……。[r]……。
+[k]
+
+[charaFace G 4]
+＠ゴルドルフ
+帰りたいな……。
+[k]
+
+？1：わかる
+？！
+
+[messageOff]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[cueSe SE_21 21_ade592]
+[wt 0.8]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+＠黒髭
+まあゴッさんの気持ちも分からんでもない。
+[k]
+
+[messageOff]
+
+[charaPutFSR L 300,0]
+[charaFace L 1]
+[charaFadeTime L 0.4 0.7]
+[wt 0.5]
+
+[charaFace D 5]
+＠黒髭
+……[#アレ]がさ。[wt 0.5][r][#アレ]になるのさー。[charaFadeout L 0.4][charaPutFSR N 300,0][charaFace N 7][charaFadeTime N 0.4 0.7]
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+＠黒髭
+世の中の不条理感じない？[r]種を超越して哺乳類が自動車になった感ある。
+[k]
+
+[charaFace D 7]
+＠黒髭
+あんなのがあんなのになるの？
+[k]
+
+？1：なります
+？！
+
+[charaFace D 13]
+＠黒髭
+なるかー。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+それに、ノリノリのＤＯＭＡＮも[r]きちんと止めないと。
+[k]
+
+[branchQuestNotClear lblNotClear1 03000716]
+[branch lblConf1]
+[label lblNotClear1]
+
+
+
+[branch lblNotClear_out1]
+[label lblConf1]
+
+
+[charaFace B 14]
+＠ダ・ヴィンチ
+止めないと、[r]どんな風に悪いことになっちゃうか……。
+[k]
+
+？1：晴明さんいないかなー
+？！
+
+[label lblNotClear_out1]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+＠ゴルドルフ
+ともかく、いよいよ海賊の秘宝も[r]六つ目だ。
+[k]
+
+＠ゴルドルフ
+金貨、宝石、その他様々な海賊のお宝が[r]あったが……。
+[k]
+
+[charaFace G 16]
+＠ゴルドルフ
+我々の目的は、[r]あくまで聖杯だということを忘れないように！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠マンドリカルド
+まあ、ＱＰも山ほどあったっすけどね。[r]あれは助かるっす。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 -75,0]
+＠沖田オルタ
+ゴッフ隊長。急で申し訳ないのですが、[r]お腹が減ってきました。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠ゴルドルフ
+ゴッフ隊長って、君ィ。
+[k]
+
+[charaFace G 18]
+＠ゴルドルフ
+サーヴァントはお腹空かないのに……。[r]まあ良い。
+[k]
+
+[charaFace G 10]
+＠ゴルドルフ
+本日の夕食はシュラスコの予定だ。
+[k]
+
+？1：シュラスコ？
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠マシュ
+ブラジルを初めとする南アメリカの[r]肉料理ですね。
+[k]
+
+＠マシュ
+鉄串に刺した肉をウェイターさんが[r]目の前で切り分けてくれるそうです。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠ゴルドルフ
+まあ、今回は各自勝手に切り分けて[r]もらうつもりだがね。
+[k]
+
+？2：楽しみ！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠マシュ
+はい！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠ゴルドルフ
+ムジーク家秘伝のソースがあるからな。[r]楽しみに待つがいい！
+[k]
+
+？！
+
+[messageOff]
+[charaTalk off]
+[charaDepth O 1]
+[charaDepth G 2]
+[charaFace O 1]
+[charaFadein O 0 1]
+[wt 0.5]
+[se ade158]
+[charaFadeout G 0.4]
+[wt 0.7]
+
+[charaTalk on]
+＠O：ゴルドルフ
+……という訳で本日も私は留守番だ。
+[k]
+
+＠O：ゴルドルフ
+肉をソースに漬け込んだりとか、[r]色々と作業があるのでな。
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+えー。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 -75,0]
+＠沖田オルタ
+なら私も留守番をします。
+[k]
+
+
+＠沖田オルタ
+シュラスコもしっかり守護してみせます。[r]美味しそうですし。
+[k]
+
+？1：つまみ食いは厳禁だからね？
+？！
+
+[charaFace H 14]
+＠沖田オルタ
+ぐぅ。[r]もちろん……もちろんわかってます。
+[k]
+
+[charaFace H 17]
+＠沖田オルタ
+ふふふ……肉の焼ける音と漂う匂い。
+[k]
+
+＠沖田オルタ
+これは煉獄もふらふら戻ってこざるを[r]得ないというもの。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut M 0,-200]
+[charaFadeTime M 0.2 0.5]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠マンドリカルド
+（あの子あんま食に興味なさそう[r]　だったけどなぁ……）
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠アキレウス
+なら、俺も留守番するぞ。[r]後は[line 3]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠アナスタシア
+[#私:わたくし]もお付き合いしましょう。[r]シャル、マスターのことよろしくね。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+任されました！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 11]
+[charaFadein O 0.1 1]
+＠O：ゴルドルフ
+ところで神霊カイニスはどこに行ったのか……[r]まあ、何も言わなければキャンプと私を守るはず！
+[k]
+
+[charaFace O 5]
+＠O：ゴルドルフ
+では行くがいいカルデア探険隊。[r]戻ればシュラスコが待っているぞ！
+[k]
+
+？1：おー！
+？！
+
+[charaFace O 3]
+＠O：ゴルドルフ
+……。[r]……。
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠黒髭
+だいぶ毒されてきてないか私？[r]と、じっと手を見るゴッフであった。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 7]
+[charaFadein O 0.1 1]
+＠O：ゴルドルフ
+人の心を精密に読み取るのは[r]勘弁して欲しいのだがね！？
+[k]
+
+[messageOff]
+
+[fadeout black 1.5]
+[bgmStop BGM_MAP_13 1.5]
+[wait fade]
+
+[charaFadeout O 0.1]
+[wt 0.5]
+
+[scene 107300]
+
+[wt 1.5]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_MIZUGI_2017 0.1]
+
+[charaTalk B]
+[charaFace B 25]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+ステくん、もう大丈夫かい？
+[k]
+
+[messageOff]
+
+[cueSe SE_21 21_ade592]
+[wt 0.8]
+
+？1：元気になって良かったね
+？！
+
+[charaFace B 1]
+＠ダ・ヴィンチ
+うん！
+[k]
+
+[charaFace B 4]
+＠ダ・ヴィンチ
+聖杯と言っても、[r]体は恐竜の、しかも子供なんだから。
+[k]
+
+[charaFace B 14]
+＠ダ・ヴィンチ
+ちゃんと健康に気を遣ってあげていれば、[r]苦しい思いをさせずにすんだのかな……。
+[k]
+
+[charaFace B 4]
+＠ダ・ヴィンチ
+ごめんね……。
+[k]
+
+[messageOff]
+
+[cueSe SE_21 21_ade592]
+[wt 0.6]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠マシュ
+そんなことはなかったと思います。[r]ダ・ヴィンチちゃん。
+[k]
+
+＠マシュ
+いつもダ・ヴィンチちゃんは傍にいましたし、[r]目を離したこともなかったはずです。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+そうですそうです。
+[k]
+
+＠シャルロット・コルデー
+ダ・ヴィンチさんは、[r]ちゃんと頑張ってました！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠マンドリカルド
+まあ……どんなに頑張っても、[r]何かの拍子に体調を崩すのが子供っすよ。
+[k]
+
+＠マンドリカルド
+人間でも動物でも、[r]そこらへんは変わりゃしねえっす。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+……みんな、ありがとう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠黒髭
+どういたしまして！[r]まあ、拙者は何も言っておらぬですがネー。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+黒髭みたいにひねくれた感情も、[r]マシュみたいに真っ直ぐな感情も。
+[k]
+
+＠ダ・ヴィンチ
+どちらも同じくらい、[r]私には新鮮で美しいものに見えるからね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠マシュ
+あ、ありがとうございます。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠黒髭
+……拙者ってば美しい？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+そういう意味じゃないですよ、黒髭さん。[bgmStop BGM_MIZUGI_2017 1.3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.4]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+[bgm BGM_EVENT_146 0.1]
+＠黒髭
+鏡よ鏡、[r]ないしは[%1]よ。
+[k]
+
+[charaFace D 3]
+＠黒髭
+この世で一番イケメンの[line 3]海賊はだあれ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut M 0,-200]
+[charaFadeTime M 0.2 0.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠マンドリカルド
+（海賊で絞ることで、[r]　可能性を高くしたな……）
+[k]
+
+[charaFace E 4]
+＠マンドリカルド
+（まあ……アイツがいるので無駄っすけど）
+[k]
+
+[messageOff]
+
+[charaFadeout M 0.2]
+[charaFadeout E 0.1]
+[wt 0.5]
+
+？1：バーソロミューじゃない？
+？！
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠黒髭
+アイツは中身がイケメンじゃないじゃん！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+一番外見がカッコいい海賊さんを決めるのに、[r]中身を問題にするのは違うと思いますけど。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠黒髭
+そうだけど！[r]そうなのだけど！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+そもそもそれを言い出せば、[r]一番カッコいいのは文句なくマスターです。
+[k]
+
+[charaFace C 1]
+＠シャルロット・コルデー
+一番可愛い、でもいいですね。
+[k]
+
+？1：あ、はい……
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut M 0,-200]
+[charaFadeTime M 0.2 0.5]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠マンドリカルド
+（[#特攻して:ぶ っ こ ん で]きたっすね……！）
+[k]
+
+[charaFadeout M 0.2]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠黒髭
+我らがマスターは海賊じゃないじゃん！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+でも海賊さんがお仲間になっていますし。[wt 0.3][charaFace C 9][r]それにマスターはその……ちゃんと奪ってますし。
+[k]
+
+[charaFace C 2]
+＠シャルロット・コルデー
+立派な海賊さんの資格があると、[r]コルデー思ってます！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠黒髭
+……それは……アレかな？
+[k]
+
+[charaFace D 1]
+＠黒髭
+[#私の心を奪ったから海賊だ]、[r]とか？
+[k]
+
+[charaFace D 8]
+＠黒髭
+ははは、まさかそんなまさか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+……。[r]……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠黒髭
+そのまさかだったァ！[messageShake 0.04 3 3 0.4]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+な、なるほど。[r]心を奪ったから海賊……なるほど……。
+[k]
+
+[charaFace A 2]
+＠マシュ
+それは……確かに！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+＠フォウ
+フォウ……フォウ？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+やー、いやいやいやー。[r]我ながら恥ずかしいですね今の言い方！
+[k]
+
+？1：言われた方はもっと恥ずかしいけどね！？
+？！
+
+[charaFace C 4]
+＠シャルロット・コルデー
+ま、まあまあ。[r]わたしの恥ずかしい話はこのくらいにして。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+え、やめちゃうの？
+[k]
+
+[charaFace B 11]
+＠ダ・ヴィンチ
+なかなか興味深いから、[r]もうちょっとお願いしたいところだけど！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+勘弁してください……。
+[k]
+
+[bgmStop BGM_EVENT_146 0.5]
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.5]
+
+[se ade255]
+[wt 0.5]
+
+＠？？？
+ハッハァ！　ハッハァ！　ハッハァ！
+[k]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠黒髭
+このダンディだがそこはかとない[r]不気味さを感じ取れるボイスは……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠マシュ
+量産型コロンブスさんですね……！
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk K]
+[charaFace K 7]
+[charaFadein K 0.4 1]
+
+[wt 1.0]
+
+？1：いつ見ても悪夢だ……
+？！
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+とりあえず[#殺:や]っちゃいましょー！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

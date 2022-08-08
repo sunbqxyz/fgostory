@@ -1,0 +1,507 @@
+
+
+
+＄01-00-07-14-2-0
+[soundStopAll]
+[voice NP_100100_1]
+[voiceStop NP_100100_1 0]
+[bgm BGM_EVENT_2 0.1]
+[charaSet A 8001002 1 玛修]
+[charaSet B 2020001 1 伊什塔尔]
+[charaSet C 98003000 1 Dr.罗曼]
+[charaSet D 98104300 1 埃列什基伽勒]
+[charaSet E 98104300 1 埃列什基伽勒B]
+[charaSet F 98104300 1 埃列什基伽勒C]
+[charaSet G 98104300 1 埃列什基伽勒D]
+
+
+[scene 33900]
+[fadein black 1.5]
+[wait fade]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+
+＠玛修
+敌方战力沉默！[r]看来可以前进了，前辈！
+[k]
+
+？1：嗯，真是有趣的提问……
+？2：嗯，真是意味深长的提问……
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠伊什塔尔
+真是充满了恶意的内容呢。[r]……接下来不会一直都这种调调吧……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 0]
+
+
+＠Dr.罗曼
+不，刚才那只是凑巧吧？
+[k]
+
+＠Dr.罗曼
+伊什塔尔和埃列什基伽勒可是天与地的女神呀。[r]你们是简单易懂的评价标准哦，一定是这样。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠伊什塔尔
+但愿如此。[r]接下来……非得穿越门才行啊。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠玛修
+对。看来也不像是有什么陷阱。[r]看吧，我穿过来也没发生什么哦，伊什塔尔小姐。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠伊什塔尔
+看来是这样。那我就放心了。[r]谢谢，玛修。
+[k]
+
+？1：好，继续前进吧！
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.0]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 1.0]
+[scene 33800]
+
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_EVENT_5 0.1]
+
+
+[flashin once 0.7 0.7 FFFFFFAF FFFFFF00]
+[se ad65]
+[wt 2.0]
+
+＠伊什塔尔
+呀啊！？
+[k]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠玛修
+伊什塔尔小姐！？[r]怎么了，发生什么事了！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaScale B 0.93]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.4 1]
+
+＠伊什塔尔
+好痛啊啊……有点麻麻的……[r]没事啦，只是通过门时感到一阵奇怪的寒意。
+[k]
+
+＠伊什塔尔
+没有实际发生什么……什么……
+[k]
+
+[charaFace B 9]
+＠伊什塔尔
+话说。是不是哪里有点奇怪？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[messageOff]
+
+[charaTalk off]
+[charaFace A 6]
+[charaFadein A 0.1 2]
+[communicationCharaLoop 98003003 -256,0 5 0 5]
+[wt 2.0]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFadeout A 0.1]
+[wt 0.1]
+[messageOff]
+
+？1：你是不是变瘦了……？
+？2：你是不是脱皮了……？
+
+？！
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+[charaShake B 0.01 5 5 0.7]
+＠伊什塔尔
+果然没错！？[r]我明显缩水了对吧！？
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.7]
+[wipeout rightToLeft 0.7 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+
+[wipein fire 1.0 1]
+[wait wipe]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth D 0]
+[charaDepth E 1]
+[charaDepth F 2]
+[charaDepth G 3]
+[charaFadein D 0.4 1]
+[charaPut E 0,0]
+[charaPut F 0,0]
+[charaPut G 0,0]
+[charaFilter E silhouette 4B008280]
+[charaFilter F silhouette 19197080]
+[charaFadeTime E 0 0.5]
+[charaFadeTime F 0 0.8]
+[charaFadeTime G 0 0.3]
+[wait wipe]
+
+[bgm BGM_EVENT_1 0.1]
+
+
+＠埃列什基伽勒
+没错。[r]深刻理解自己的愚昧了吧，伊什塔尔。
+[k]
+
+＠埃列什基伽勒
+你的下冥界失败了。只要这神话上的事实依然存在，[r]你就无法逃脱冥界的诅咒。
+[k]
+
+＠埃列什基伽勒
+象征荒野之冠。芦苇测量尺。琉璃首饰。[r]串珠项链。金手镯。魅惑的胸饰。
+[k]
+
+＠埃列什基伽勒
+还有最后的贵妇服装。[r]过去的你被我夺走了这七件宝物。
+[k]
+
+＠埃列什基伽勒
+这个规矩如今仍有效。既然你已经失去了[r]对应宝物的权能，那只能由你亲自来承担债务了。
+[k]
+
+＠埃列什基伽勒
+明白了吗？　你每穿越过一扇门，就会变小一圈。[r]每次会被夺走七分之一的神性。
+[k]
+
+＠埃列什基伽勒
+穿过第二道门时，就会变成下级神灵。[r]穿过第四道门时，就会变成低于迦鲁拉灵的精灵。
+[k]
+
+＠埃列什基伽勒
+而最后会变成无力的飞虫。[r]变成能被我一手捏碎的可悲蝴蝶。
+[k]
+
+[wt 0.2]
+[messageOff]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[charaPut E 1000,0]
+[charaPut F 1000,0]
+[charaPut G 1000,0]
+[wt 0.1]
+[charaTalk depthOn]
+[charaTalk on]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+
+＠伊什塔尔
+品味真差！[r]你变得更为扭曲了啊，埃列什基伽勒！
+[k]
+
+[wt 0.2]
+[messageOff]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth D 0]
+[charaDepth E 1]
+[charaDepth F 2]
+[charaDepth G 3]
+[charaFadein D 0.1 1]
+[charaPut E 0,0]
+[charaPut F 0,0]
+[charaPut G 0,0]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+
+
+＠埃列什基伽勒
+[line 3]哪有这种事。[r]我这已经算很讲情面了。
+[k]
+
+＠埃列什基伽勒
+本来自从你带着活人进来的那刻起，[r]你和那边的人类都该坠入冥界底部了。
+[k]
+
+＠埃列什基伽勒
+但既然你们有意接受七门考验，[r]按照冥界的规矩，就必须鉴定你们的回答才行。
+[k]
+
+＠埃列什基伽勒
+[%1]。[r]倘若你要打倒我，就要克服这些考验。
+[k]
+
+＠埃列什基伽勒
+只要能平安通过七门，[r]届时我会以冥界主人的身份迎接来宾[line 3]
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_1 1.4]
+[wipeout fire 1.0 1]
+[wait wipe]
+[charaTalk depthOn]
+[charaTalk on]
+[charaFadeout D 0.1]
+[charaPut E 1000,0]
+[charaPut F 1000,0]
+[charaPut G 1000,0]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+[bgm BGM_EVENT_5 0.1]
+
+
+＠玛修
+这……这下大事不好了！[r]这样一来，伊什塔尔小姐就无法前进了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+
+＠伊什塔尔
+…………不。我要前进。[r]区区这种程度，我已经做好思想准备了。
+[k]
+
+＠伊什塔尔
+我说过我在冥界无法构成战力吧？[r]状况没有任何改变哦。
+[k]
+
+＠伊什塔尔
+无论是我和你们，还是吉尔伽美什，[r]只要身在冥界，就已无处可逃了。
+[k]
+
+＠伊什塔尔
+如果不在我们习惯冥界的寒冷之前打倒[r]埃列什基伽勒并离开的话，乌鲁克就会灭亡。
+[k]
+
+＠伊什塔尔
+既然如此，那唯有奋力一搏了吧。[r]下定决心吧，[%1]。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 5]
+
+
+＠Dr.罗曼
+……说得也是。[r]埃列什基伽勒也是『三女神同盟』之一。
+[k]
+
+＠Dr.罗曼
+迟早都要与她对决。[r]若能在这里打倒她，已经算是最好的解法了。
+[k]
+
+＠Dr.罗曼
+继续前进吧，[%1]。[r]看来我们没什么时间了。
+[k]
+
+＠Dr.罗曼
+虽然冥界也是现世，但只要待在这里，[r]你的身体数值和命运力就会下降。
+[k]
+
+＠Dr.罗曼
+所谓的命运力，该怎么说呢……你就当作是[r]“为生存而被使用的理所当然的幸运”。
+[k]
+
+＠Dr.罗曼
+无论是什么生命，[r]我们总是在使用“不遭遇危险”的幸运。
+[k]
+
+＠Dr.罗曼
+而这种力量低下的人就会遇到不幸事故。[r]比如说，走在路上就被违规驾驶的车子撞到之类的。
+[k]
+
+＠Dr.罗曼
+冥界充满着死亡，不需要命运力。[r]应该说这里是不需要为生存而使用幸运的世界吧。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+
+＠伊什塔尔
+就是这样。所以说一旦习惯起这种地方，[r]以后就算能回到地上，也活不了多久。
+[k]
+
+＠伊什塔尔
+这下子你总该明白冥界是个怎样的地方了吧？[r]那就赶快去第二门吧。
+[k]
+
+[wt 0.2]
+[se ad60]
+[seVolume ad60 0 0.4]
+[messageOff]
+[bgmStop BGM_EVENT_5 0.4]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[scene 33900]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+[seStop ad60 0.4]
+
+
+[bgm BGM_EVENT_1 0.1]
+
+＠第二门
+回答吧[line 3][r]回答吧[line 3]
+[k]
+
+＠第二门
+财产的分配乃是流动的，但配得上拥有的仅有一人。[r]地上所有财富应该交由一人保管。
+[k]
+
+＠第二门
+即[line 3]值得托付财富的女神是谁，[r]埃列什基伽勒与伊什塔尔，谁应为此人？
+[k]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+
+＠伊什塔尔
+很好，第二门也是送分题呢！[r]根本不需要多想吧，[%1]！
+[k]
+
+[input selectBranch]
+[scene 33900]
+[bgm BGM_EVENT_1 0.1]
+[charaSet A 8001002 1 玛修]
+[charaSet B 2020001 1 伊什塔尔]
+[charaSet C 98003000 1 Dr.罗曼]
+[charaTalk B]
+[charaFadein B 0.1]
+[charaScale B 0.93]
+[messageOff]
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+
+？1：不用想也知道是伊什塔尔小姐……！
+[charaFace B 13]
+
+＠伊什塔尔
+那当然，这可是我擅长的领域！[r]迦勒底的资金运用也交给我吧！
+[k]
+
+[charaFadeout B 0.1]
+[messageOff]
+[bgmStop BGM_EVENT_1 0.3]
+[wt 0.4]
+[se ad233]
+[wt 1.2]
+[bgm BGM_EVENT_3 0.1]
+
+＠第二门
+O[line 4]U[line 4]T[line 4][r]为[line 2]何[line 2]不[line 2]吸[line 2]取[line 2]教[line 2]训[line 2]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.5]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+
+？2：经过深思熟虑决定是埃列什基伽勒……！
+[charaFace B 9]
+＠伊什塔尔
+说……说得对，是刻意托付给埃列什基伽勒，[r]好让家里穷愁潦倒的作战吧！
+[k]
+
+＠伊什塔尔
+把那家伙的无能曝光于光天化日之下，[r]明确我与她之间的差距……我可以相信是这种作战内容吧！？
+[k]
+
+
+[charaFadeout B 0.1]
+[messageOff]
+[bgmStop BGM_EVENT_1 0.3]
+[wt 0.4]
+[se ad232]
+[wt 1.2]
+[bgm BGM_EVENT_3 0.1]
+＠第二门
+S[line 3]A[line 3]F[line 3]E[line 3][r]包[line 2]在[line 2]我[line 2]身[line 2]上[line 4]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.5]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+？！
+

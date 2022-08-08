@@ -1,0 +1,908 @@
+
+
+
+＄94-05-42-08-3-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1048000 1 圣诞迦尔纳]
+[charaSet B 99502600 1 玛修]
+[charaSet C 3046001 1 弗栗多]
+[charaSet D 1098124510 1 达·芬奇]
+[charaSet E 98111500 1 达·芬奇（术）_通讯]
+[charaSet F 4006001 1 乔尔乔斯]
+[charaSet G 5005001 1 安徒生]
+[charaSet H 2015001 1 阿周那]
+[charaSet I 7033002 1 阿周那·Alter]
+[charaSet J 98115000 1 通讯用]
+
+[charaPutFSR J 1200,2000]
+[charaEffect J bit_talk_10_LowLevel]
+
+[imageSet K back10000_fs 1]
+[charaScale K 1.5]
+
+[charaSet L 98115000 1 特效用]
+
+
+[charaSet N 98115000 1 特效用]
+
+[charaPutFSR N 1500,2000]
+[charaEffect N bit_sepia01_depth]
+
+[charaDepth K 1]
+[charaDepth I 1]
+[charaDepth L 2]
+[charaDepth D 2]
+[charaDepth E 2]
+
+[charaDepth H 3]
+[charaDepth N 4]
+
+[charaMoveScale C 1.1 0.1]
+
+[scene 105201]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[effect bit_talk_kengekiall02_fs]
+[se bac11]
+[wt 0.2]
+[se bac10]
+[wt 0.2]
+[se bac7]
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,10]
+
+[se ad581]
+[charaMoveScale C 1.0 0.3]
+[charaMove C 0,0 0.3]
+[wt 0.5]
+[effectDestroy bit_talk_kengekiall02_fs]
+
+＠弗栗多
+嘁[line 3]！
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaPut J 0,0]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠玛修
+奏效了！　战况有利！
+[k]
+
+？1：趁势一战到底！
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[se ad39]
+[effect bit_talk_36]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[wt 2.0]
+
+[seStop ad39 0.4]
+[effectStop bit_talk_36]
+
+＠乔尔乔斯
+汝为龙[line 3]亦有罪！[r]『[#刚力屠戮祝福之剑:Ascalon]』！
+[k]
+
+[messageOff]
+[wt 0.1]
+[effectDestroy bit_talk_36]
+
+[se ad386]
+[effect bit_talk_v_slash01]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+就是那里[line 3]你是无法逃离那个角落的。[r]被击倒吧！
+[k]
+
+[messageOff]
+[wipeout circleIn 0.2 1.0]
+[wait wipe]
+
+[charaMoveScale F 1.0 0.1]
+[charaFadeout A 0.1]
+
+[scene 10000]
+[wt 0.15]
+
+[wipein circleIn 0.1 1.0]
+
+[fowardEffect bit_talk_flash_g]
+[wt 0.1]
+[se ad80]
+[wt 0.3]
+[seStop ad80 0.2]
+[wt 0.4]
+[charaMoveScale C 1.1 0.1]
+
+[flashin once 0.1 0.1 FFFFFFFA FFFFFFFA]
+[se adm70]
+[seVolume adm70 0 0.6]
+[wt 0.05]
+[se ad671]
+[wt 0.05]
+[seStop adm70 0.3]
+[scene 105201]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0 0,10]
+[charaMoveScale C 1.0 0.3]
+[charaShake C 0.02 3 3 0.4]
+[charaMove C 0,0 0.3]
+[seStop ad671 0.7]
+[wt 0.9]
+
+＠弗栗多
+呜噢噢噢噢！　疼痛，[r]竟然传到了吾之鳞片下……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠乔尔乔斯
+遗憾的是太浅了……但是，你已经失去了平衡！[r]最终一击！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,25]
+
+[charaMove I 0,0 0.8]
+[wt 1.2]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠弗栗多
+…………！
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 13]
+[charaFadein I 0.1 1]
+[wt 0.1]
+
+[se ade532]
+
+[charaPut L 0,300]
+[charaEffect L bit_talk_radiallight01]
+[wt 2.0]
+
+[seStop ade532 0.5]
+[se ad216]
+[wt 1.5]
+
+[bgmStop BGM_EVENT_80 0.5]
+
+[seStop ad216 0.5]
+
+[charaEffectStop L bit_talk_radiallight01]
+[wt 1.2]
+
+[charaFace I 3]
+＠阿周那·Alter
+………………？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+你在干什么，阿周那！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+＠阿周那·Alter
+我有种……违和感。[r]当像现在这样挥舞坏劫之回剑时[line 3]
+[k]
+
+[charaFace I 0]
+＠阿周那·Alter
+当斩断邪恶之刃触及她的生命时，[r]我明白了。
+[k]
+
+＠阿周那·Alter
+所以，我必须告诉御主才行。[r][line 3][#这并非邪恶]。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+你说什么……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+不，不是，传说中弗栗多就是邪龙……
+[k]
+
+＠玛修
+而且她妨碍配送礼物的行为，[r]不也证明了这点吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+＠达·芬奇
+[line 6]
+[k]
+
+＠达·芬奇
+也就是说，她具有无法被一概定性为邪恶的部分吧。
+[k]
+
+[charaFace D 0]
+＠达·芬奇
+[%1]，[r]你怎么看？
+[k]
+
+＠达·芬奇
+从表现淡定的情况来看，[r]我估计你……
+[k]
+
+＠达·芬奇
+大概已经听阿周那说过这件事了吧。
+[k]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-90]
+＠E：达·芬奇
+[line 6]
+[k]
+
+＠E：达·芬奇
+也就是说，她具有无法被一概定性为邪恶的部分吧。
+[k]
+
+＠E：达·芬奇
+[%1]，[r]你怎么看？
+[k]
+
+[charaFace E 1]
+＠E：达·芬奇
+从表现淡定的情况来看，[r]我估计你……
+[k]
+
+＠E：达·芬奇
+大概已经听阿周那说过这件事了吧。
+[k]
+
+[label lblConf1]
+
+？1：不愧是达·芬奇亲，真敏锐。
+？2：被你说对了。
+？！
+
+[messageOff]
+
+[wipeout circleIn 1.0 1.0]
+[bgmStop BGM_EVENT_5 1.0]
+[wait wipe]
+
+[charaPutFSR J 1200,2000]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+
+[pictureFrame cut063_cinema]
+[charaPut N 0,0]
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+[scene 105800]
+
+
+[branch lblConf2]
+[label lblNotClear2]
+
+[scene 106000]
+
+[label lblConf2]
+
+[wt 1.0]
+
+[wipein circleIn 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+＠阿周那
+先说一件事。
+[k]
+
+＠阿周那
+弗栗多[line 3]虽然被定性为邪龙，[r]但与此同时，从某种角度来说也是[#普通的自然现象]。
+[k]
+
+＠阿周那
+堰界龙弗栗多。她是『障碍』[r]这种概念的化身，是堰塞世界的存在。
+[k]
+
+＠阿周那
+听好了，御主。
+[k]
+
+＠阿周那
+对人世来说，她是障碍，也是试炼。[r]但仅此而已。
+[k]
+
+＠阿周那
+正如传承所述，弗栗多曾多次夺走水源，[r]引发干旱，而每次最后都被因陀罗杀害。
+[k]
+
+＠阿周那
+但恐怕她从未想过用这种行为让人类灭绝。
+[k]
+
+＠阿周那
+她会让人类痛苦，但必会被因陀罗打倒。[r]仿佛那就是她的宿命。
+[k]
+
+＠阿周那
+这不过是我的推测，她[line 3]
+[k]
+
+＠阿周那
+是否正居高临下地[r]为我们、神明造成障碍，并考验我们呢？
+[k]
+
+＠阿周那
+我觉得，[r]这里藏着她寻求的真正目的。
+[k]
+
+[charaFace H 4]
+＠阿周那
+……至于她的目的。
+[k]
+
+[charaFace H 1]
+＠阿周那
+御主应该能明白。[r]作为一个人类，见识了很多事物的您，应该可以[line 3]
+[k]
+
+[messageOff]
+
+[wipeout circleIn 1.0 1.0]
+[bgmStop BGM_EVENT_70 1.0]
+[wait wipe]
+
+[charaFadeout H 0.1]
+
+[charaPutFSR N 1500,2000]
+[pictureFrame]
+
+[scene 105201]
+[wt 1.0]
+
+[wipein circleIn 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaPut J 0,0]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+那……那么……御主您，[r]已经知道弗栗多的目的了吗？
+[k]
+
+
+？1：（从她此前的态度来看，隐约可以猜到。）
+？2：（虽然有些难以置信[line 3]）
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 1.0]
+
+
+？1：弗栗多，你……
+？！
+
+？1：喜欢看人类和神明努力的样子吧？
+？！
+
+[wt 0.8]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaFace C 6]
+＠弗栗多
+咿，嘻，嘻！　没错！
+[k]
+
+＠弗栗多
+吾喜欢看矮小的人类、骄傲的神明辛苦、努力、[r]浑身泥泞、哭泣呐喊，却依旧站起身[line 3]
+[k]
+
+＠弗栗多
+克服必须克服的障碍。[r]这令我鳞片下都亢奋不已！
+[k]
+
+[charaFace C 7]
+＠弗栗多
+你们仔细想呀。
+[k]
+
+＠弗栗多
+那可是人类那种渺小无力很容易死去的存在哦？[r]那可是神明那种强大万能骄傲摆架子的存在哦？
+[k]
+
+[charaFace C 10]
+＠弗栗多
+他们会为了寻求吾堰塞的存在，[r]耗费全部生命，气喘吁吁费尽千辛万苦……
+[k]
+
+＠弗栗多
+上哪儿找比这更愉快的演出啊！
+[k]
+
+＠弗栗多
+最精彩的部分当然还是克服障碍的瞬间。
+[k]
+
+＠弗栗多
+障碍必须被克服才行。[r]输掉就太不成体统了。
+[k]
+
+＠弗栗多
+让我看到他们尽可能痛苦哀叹绝望，[r]然后最后获得什么的样子。
+[k]
+
+＠弗栗多
+为了这个目的，啊啊，[r]吾这个障碍愿意随时挡在他们面前。
+[k]
+
+＠弗栗多
+无论被杀害多少次，[r]吾也会再次复活阻挡他们！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+＠达·芬奇
+唔……虽然无疑是个施虐狂……
+[k]
+
+＠达·芬奇
+是那种期待对方可以克服[r]自己这个障碍的嗜虐爱好者吗？
+[k]
+
+＠达·芬奇
+这可是神魔那种接近不灭的存在[r]才有办法拥有的特殊性癖呢。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠玛修
+她的目的我明白了……[r]但弗栗多的确在为恶吧？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+＠达·芬奇
+这个问题比较复杂，关系到邪恶的定义。
+[k]
+
+[charaFace D 24]
+＠达·芬奇
+假如弗栗多象征的就是自然中重复出现的[r]『缺水』与『水的释放』这个循环[line 3]
+[k]
+
+＠达·芬奇
+那就要看这种恶究竟是对谁而言了。
+[k]
+
+＠达·芬奇
+就算对人类的生活而言是恶，[r]对世界而言也未必是恶。只是一种结构。
+[k]
+
+[charaFace D 17]
+＠达·芬奇
+阿周那·Alter或许……[r]不会把这种存在视为恶吧。
+[k]
+
+＠达·芬奇
+当然也可能有其他的原因，[r]毕竟他比较沉默寡言嘛。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠阿周那·Alter
+………………
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaPut K 0,-200]
+[charaPut J 0,0]
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+[charaFadeTime K 0.1 0.6]
+＠达·芬奇
+（嗯，的确，似乎还藏着其他的理由呢。）
+[k]
+
+＠达·芬奇
+（弗栗多这个存在的根基中，[r]　还藏着一些我们尚不知道的信息[line 3]）
+[k]
+
+[branch lblConf3]
+[label lblNotClear3]
+
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-90]
+＠E：达·芬奇
+唔……虽然无疑是个施虐狂……
+[k]
+
+＠E：达·芬奇
+是那种期待对方可以克服[r]自己这个障碍的嗜虐爱好者吗？
+[k]
+
+＠E：达·芬奇
+这可是神魔那种接近不灭的存在[r]才有办法拥有的特殊性癖呢。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠玛修
+她的目的我明白了……[r]但弗栗多的确在为恶吧？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-90]
+＠E：达·芬奇
+这个问题比较复杂，关系到邪恶的定义。
+[k]
+
+[charaFace E 0]
+＠E：达·芬奇
+假如弗栗多象征的就是自然中重复出现的[r]『缺水』与『水的释放』这个循环[line 3]
+[k]
+
+＠E：达·芬奇
+那就要看这种恶究竟是对谁而言了。
+[k]
+
+＠E：达·芬奇
+就算对人类的生活而言是恶，[r]对世界而言也未必是恶。只是一种结构。
+[k]
+
+＠E：达·芬奇
+阿周那·Alter或许……[r]不会把这种存在视为恶吧。
+[k]
+
+＠E：达·芬奇
+当然也可能有其他的原因，[r]毕竟他比较沉默寡言嘛。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠阿周那·Alter
+………………
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaPut K 0,-200]
+[charaPut J 0,0]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-90]
+[charaFadeTime K 0.1 0.6]
+＠E：达·芬奇
+（嗯，的确，似乎还藏着其他的理由呢。）
+[k]
+
+＠E：达·芬奇
+（弗栗多这个存在的根基中，[r]　还藏着一些我们尚不知道的信息[line 3]）
+[k]
+
+[label lblConf3]
+
+[charaFadeout K 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk depthOn]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠乔尔乔斯
+但是，即便如此……[#亦有罪]。
+[k]
+
+＠乔尔乔斯
+就算不是邪恶，也必须打倒。[r]那就是龙。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+没错。无论意图为何，[r]也改变不了你带来的存在。
+[k]
+
+＠圣诞迦尔纳
+也改变不了我要做的事。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠弗栗多
+嗯，没错。
+[k]
+
+＠弗栗多
+吾是否为邪恶，[r]是否为邪龙都无关紧要。
+[k]
+
+＠弗栗多
+吾只会做强大的吾。[r]不会手下留情哦。
+[k]
+
+＠弗栗多
+吾一直很拼命，真的很拼命，[r]想看到渺小之人用尽全力打倒吾的样子。
+[k]
+
+＠弗栗多
+唯有吾全力以赴做他们的对手才行。[r]打假赛什么的未免太扫兴了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠安徒生
+真是个很讲道理的对手呢。[r]简直就像连载作家。
+[k]
+
+[charaFace G 0]
+＠安徒生
+应该给主人公安排尽可能强大的对手。[r]看上去越没胜算就越好。
+[k]
+
+[charaFace G 5]
+＠安徒生
+至于主人公怎么克服困难，关我屁事。
+[k]
+
+＠安徒生
+未来的各位主人公必须想尽办法克服困难[line 3][r]在这个过程中会产生真正的戏剧。
+[k]
+
+[charaFace G 2]
+＠安徒生
+不过就算无法克服，[r]也只会产生垃圾作品而已！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_62 1.0]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠弗栗多
+这吾可不能允许。
+[k]
+
+[charaFace C 0]
+＠弗栗多
+要给吾看有趣的。[r]要给吾看美妙的。
+[k]
+
+＠弗栗多
+让吾见识汝等打倒[#蛇:吾]，[r]泪流满面地夺回想要东西的样子。
+[k]
+
+[charaFace C 5]
+＠弗栗多
+怎么了，来啊，来啊！
+[k]
+
+[charaFace C 2]
+＠弗栗多
+如果敢做等待吾投降这种温吞的事[line 3][r]吾可绝对不会松开汝等的礼物哦！
+[k]
+
+
+[messageOff]
+
+[charaTalk off]
+[se ade391]
+[se ad61]
+[seVolume ad61 0 0]
+[seVolume ad61 0.3 0.7]
+[effect bit_talk_charge_blu]
+[effect bit_talk_17_bl_03]
+[charaCrossFade C 1098204500 2 1.0]
+[wait charaCrossFade]
+[wt 1.6]
+
+[seStop ade391 0.5]
+[seStop ad61 0.5]
+[wt 0.4]
+[charaFadeout C 0.1]
+[wt 0.1]
+[effectDestroy bit_talk_charge_blu]
+[effectDestroy bit_talk_17_bl_03]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+那就打倒你。[r]不管你是否为邪恶。
+[k]
+
+＠圣诞迦尔纳
+我作为[#今年的圣诞老人:圣诞老人之一][line 3]
+[k]
+
+＠圣诞迦尔纳
+也是作为[%1]的从者，[r]必须带给你[#败北:KO]。
+[k]
+
+[charaFace A 5]
+＠圣诞迦尔纳
+我会用拳头证明，就算现在不是神代，[r]就算被夺走的不是水源，
+[k]
+
+[charaFace A 2]
+＠圣诞迦尔纳
+人类也会一如既往地克服你的障碍！　弗栗多！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

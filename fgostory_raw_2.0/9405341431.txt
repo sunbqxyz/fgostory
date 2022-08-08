@@ -1,0 +1,804 @@
+
+＄94-05-34-14-3-1
+
+[soundStopAll]
+[charaSet A 25004001 1 琰女A]
+[charaSet B 1098181900 1 尼莫水兵]
+[charaSet C 4037000 1 尼莫]
+[charaSet D 1098182110 1 尼莫教授]
+[charaSet E 1098176810 1 刑部姬A]
+[charaSet F 25006000 1 梵高]
+[charaSet G 1098182000 1 尼莫护士]
+[charaSet H 25004002 1 琰女]
+[charaSet I 98115000 1 特效用]
+[charaSet J 98115000 1 特效用]
+[charaSet K 98115000 1 特效用]
+[charaSet V 98115000 1 通讯用]
+
+[scene 99002]
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_63 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠琰女A
+成功了！[r]鱼雷全部命中！　敌舰舰体开始崩溃了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠尼莫水兵
+鱼雷部队，回收完毕！[r]白刃战部队也在返航，预计将依次回收～！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠尼莫
+很好，大家，为防备冲击[line 2]
+[k]
+
+[messageOff]
+[charaTalk D]
+[bgmStop BGM_EVENT_63 1.5]
+[se ad894]
+[shake 0.03 3 3 0.4]
+[wt 0.2]
+[seStop ad894 0.7]
+[charaFace C 5]
+[wt 1.4]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaFace C 2]
+＠尼莫
+[line 2]！？　教授，刚才那是什么！？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaEffect V bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠尼莫教授
+这里是电脑，唔～，类似于敌人的驱动声……[r]我个人推测，可能是[#第1舰:Alpha]的惨叫或是崩溃声。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠尼莫
+这样啊，幸好不是探测声[line 2]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[wt 0.2]
+[effect bit_talk_35]
+[se ad46]
+[wt 1.5]
+
+？1：哎？
+？2：血……？
+？！
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠琰女A
+……呜，唔……啊，
+[k]
+
+[charaFace A 11]
+＠琰女A
+啊哈哈……对不起……[r]受到[#致命伤:暴击]了……
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[wt 0.3]
+[se ad144]
+[wt 0.5]
+
+[bgm BGM_EVENT_41 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠刑部姬A
+玉玉！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 15]
+[charaFadein F 0.1 1]
+＠梵高
+琰女大人！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠尼莫
+快叫护士！　教授，你有什么看法！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠尼莫教授
+看起来～，恐怕是刚才的声音对琰女氏敏感的听觉[r]造成了直接冲击～。
+[k]
+
+＠尼莫教授
+但除此以外应该还有其他问题～。
+[k]
+
+＠尼莫教授
+琰女氏为同时进行多种活动，[r]将大部分灵基都转移到了分身那边，
+[k]
+
+＠尼莫教授
+因此显著弱化的本体若受到致命伤，[r]或许会连同分身一起消灭～。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[wt 0.2]
+[se ad8]
+[wt 0.7]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.4 1]
+＠尼莫护士
+我来了！　不要动她，我当场进行治疗！
+[k]
+
+[charaFace G 4]
+＠尼莫护士
+……唔，这……你调整过灵基了吧！？[r]将冗余置之度外，提升声音灵敏度……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+＠琰女A
+哎嘿……对不起，护士……咳咳！[r]就算乱来一些……我也想帮上大家的忙……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠尼莫护士
+御主，用令咒！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.4]
+
+？1：以令咒下令！
+？2：修复自己的灵基吧！
+？！
+
+[wt 0.2]
+[masterBranch _Male01 _Female01]
+
+[label _Male01]
+[se bas16]
+[effect bit_talk_CommandMantra_05 0,64]
+[wt 1.5]
+[branch _branchEnd01]
+
+[label _Female01]
+[se bas16]
+[effect bit_talk_CommandMantra_08 0,64]
+[wt 1.5]
+[branch _branchEnd01]
+
+[label _branchEnd01]
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠尼莫护士
+……不行，请继续使用！
+[k]
+
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.4]
+
+[masterBranch _Male02 _Female02]
+
+[label _Male02]
+[se bas16]
+[effect bit_talk_CommandMantra_06 0,64]
+[wt 2.5]
+[se bas16]
+[effect bit_talk_CommandMantra_07 0,64]
+[wt 1.5]
+[branch _branchEnd02]
+
+[label _Female02]
+[se bas16]
+[effect bit_talk_CommandMantra_09 0,64]
+[wt 2.5]
+[se bas16]
+[effect bit_talk_CommandMantra_10 0,64]
+[wt 1.5]
+[branch _branchEnd02]
+
+[label _branchEnd02]
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠尼莫护士
+不行……不能放弃！　我会把所有灵药都用上！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠琰女A
+不用，管我……毕竟，资源很重要……
+[k]
+
+[messageOff]
+[charaEffect I bit_talk_06]
+[wt 1.0]
+
+＠琰女A
+最后的海域……很抱歉，但我要离队了，[r]小刑小姐，对不起，一定要努力索敌哦……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠刑部姬A
+不行啦！　声呐和视觉支援只有玉玉才能胜任吧！！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠琰女A
+啊……这样啊，啊哈……对不起啦，对不起……
+[k]
+
+＠琰女A
+梵高亲……就算没有了我……[r]你也要继续当大家的伙伴……到最后哦……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠梵高
+……
+[k]
+
+[charaFace F 6]
+＠梵高
+梵高要，[#解放宝具]。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠琰女A
+哎……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠尼莫
+梵高，你……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠梵高
+嗯。其实用途、用法和效果梵高都很清楚。[r]只是一直闭口不谈，[#因为很危险]。
+[k]
+
+＠梵高
+因为这宝具相当于明示了，[r]梵高是大家的……是世界的敌人。
+[k]
+
+[bgmStop BGM_EVENT_41 1.0]
+
+[charaFace F 6]
+＠梵高
+但是……哎嘿嘿，要使用了。[r]因为梵高不希望琰女大人消失……
+[k]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaFace F 10]
+＠梵高
+[line 2]非画不可。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠琰女A
+梵高……亲……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_06]
+
+[se ad39]
+[charaEffect F bit_talk_36]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠梵高
+我非画不可。[r]描绘星空之下，超越生死的丝柏。
+[k]
+
+＠梵高
+信仰、浪漫、视觉陷阱的彼方。[r]来自永劫，依仗星旋，赠君握手。
+[k]
+
+[charaFace F 2]
+＠梵高
+[line 2]习作，丝柏与村庄！　又名，[r]『[#星月夜:De sterrennacht]』！！
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_82 1.0 0.5]
+[charaEffectStop F bit_talk_36]
+[wt 0.3]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ade461]
+[seStop ade461 2.0]
+[charaRoll J 20 0,280]
+[charaPut J -40,20]
+[charaEffect J bit_talk_draw_picture01]
+[wt 0.7]
+[se ade174]
+[wt 0.3]
+[charaRoll K 125 0,280]
+[charaPut K 0,60]
+[charaEffect K bit_talk_draw_picture01]
+[wt 0.7]
+
+[fadeout white 1.0]
+[wt 0.5]
+[se ad744]
+[wait fade]
+[wt 2.0]
+[effect bit_talk_diremond_dust]
+[fadein white 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠刑部姬A
+这……这是……！？[r]图画从画布渗透到空间中……！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠尼莫
+这是固有结界吗……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠梵高
+是在看到强烈的幻觉时，[r]从星空中觅见万古的梵高的习作……
+[k]
+
+[charaFace F 10]
+＠梵高
+本以为是一幅劣作………[r]但死后看来，还是挺喜欢的。
+[k]
+
+[charaFace F 4]
+＠梵高
+唯有一点除外，就是外宇宙之神会通过[r]这幅画凝望此世，带来可怖的福音……！
+[k]
+
+[charaFace F 2]
+＠梵高
+若在场睁开双眼，是Foreigner就会被[#神化]，[r]除此以外皆会被星辰的疯狂彻底扭曲！　快闭上眼睛！！
+[k]
+
+？1：呜……
+？2：呜哇啊啊啊啊啊！？
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_82 1.5]
+[fadeout white 1.5]
+[wait fade]
+[charaFadeout F 0.1]
+[effectDestroy bit_talk_diremond_dust]
+[scene 10000]
+[wt 2.0]
+[fadein white 1.0]
+[wait fade]
+
+[fadeout black 0.1]
+[wait fade]
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+[scene 99002]
+[wt 2.5]
+
+＠梵高
+……琰女大人，琰女大人……？
+[k]
+
+＠？？？
+唔……
+[k]
+
+[messageOff]
+[fadein black 1.5]
+[wait fade]
+
+[charaFace F 19]
+＠梵高
+哎嘿嘿，太好啦。你醒过来了吧？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 18]
+[charaFadein H 0.4 1]
+＠琰女
+这是……
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_79 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠尼莫
+灵基发生变化了……！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠梵高
+破损灵基的，大幅度修复，是[#神化]的副作用。
+[k]
+
+[charaFace F 6]
+＠梵高
+幸好，只停留在这个阶段。[r]一旦过度，肯定会变成不再是从者了……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠E：刑部姬
+玉……玉玉！？　你没事吧！？[r]总觉得你变得超级豪华～！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠琰女
+……给各位添麻烦了。诚如各位所见，[r]琰女我历经了九死一生，依然得以留存于世上。
+[k]
+
+[charaFace H 11]
+＠琰女
+没想到，竟会以这种形式抵达吾之究极。[r]捡回的这条性命，定会更为卖力地为各位与天子陛下效命……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠刑部姬A
+玉……玉玉？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 12]
+[charaFadein H 0.1 1]
+＠琰女
+……抱歉。伴随着灵基再临，[r]心境亦成熟了几分，语气不禁……
+[k]
+
+＠琰女
+请稍事等候……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_79 0.9]
+[wt 0.5]
+[fadeout white 0.4]
+[wait fade]
+[se ad29]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+[wt 1.5]
+[fadein white 0.4]
+[wait fade]
+
+[wt 0.4]
+[bgm BGM_EVENT_77 0.1]
+
+＠A：琰女
+……好了。我试着调整了一下灵基！[r]抱歉抱歉，还是原来的玉玉哦～！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠刑部姬A
+唔哇～！　还是原来的玉玉～！！
+[k]
+
+[charaFace E 0]
+＠刑部姬A
+呃，咦？　大家怎么了？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠梵高
+……
+[k]
+
+＠梵高
+梵高还是觉得，太危险了。
+[k]
+
+＠梵高
+就算迄今为止碰巧都很顺利，可只要走错一步，[r]各位Foreigner就会变成人理之敌……
+[k]
+
+[charaFace F 6]
+＠梵高
+哎嘿嘿……梵高的宝具，本身就是人类的威胁。[r]这种英灵，根本没有资格追随御主大人……
+[k]
+
+？1：你这话……
+？2：就错了。
+？！
+
+[charaFace F 8]
+＠梵高
+御……御主大人？　没事吧，您的脸色……
+[k]
+
+[messageOff]
+[wt 0.4]
+
+？1：我只是看到了……
+？2：各种奇怪的东西而已。
+？！
+
+？1：今后我们依然需要梵高的力量。
+？2：梵高也会严于律己。
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠尼莫
+……我也深有同感。
+[k]
+
+＠尼莫
+倘若梵高拥有对人类的敌对性，[r]早就用那个宝具解决我们了。
+[k]
+
+[charaFace C 0]
+＠尼莫
+然而那种事并没有发生，你没有那样做。[r]梵高无疑是站在人理这边的。
+[k]
+
+＠尼莫
+关于开启异界之门，唤来危险力量的这点，[r]我听说以前确认的Foreigner……
+[k]
+
+＠尼莫
+阿比盖尔·威廉姆斯也一样。[r]所以说……
+[k]
+
+[charaFace C 1]
+＠尼莫
+只要[%1]不介意，[r]我希望你今后继续待在鹦鹉螺号上，梵高。
+[k]
+
+？1：当然啦。
+？2：我也有同感。
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+＠A：琰女
+玉玉也一样！！　本……本来就该这样，[r]你还从死境中救了我一命……！
+[k]
+
+＠A：琰女
+我们或许都拥有异常的灵基，[r]但我觉得正因如此，有些事才需要我们去做。
+[k]
+
+[charaFace A 10]
+＠A：琰女
+梵高亲，接下来我们也一起努力吧！[r]一起完成这次作战，一起前往迦勒底！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 19]
+[charaFadein F 0.1 1]
+＠梵高
+……呜，呜……唔呵呵，哎嘿嘿……
+[k]
+
+＠梵高
+御主大人、琰女大人、尼莫亲……[r]大家……真的，都好善良……
+[k]
+
+[charaFace F 11]
+＠梵高
+梵高会努力的！[r]梵高今后也会继续努力……！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 1.0]
+
+
+＠
+[FF0000]开玩笑的啦。[-]
+[k]
+
+
+[messageOff]
+[wt 1.5]
+[soundStopAll]
+[end]

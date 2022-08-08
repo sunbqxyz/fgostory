@@ -1,0 +1,2827 @@
+＄94-00-64-38-1-0
+
+
+[soundStopAll]
+[charaSet A 5028000 1 伊莉雅]
+[charaSet B 98103600 1 红宝石]
+[charaSet C 98102100 1 美游]
+[charaSet D 98103200 1 蓝宝石]
+[charaSet E 98102800 1 克洛伊]
+[charaSet F 8001001 1 玛修]
+[charaSet G 98103000 1 海伦娜]
+[charaSet H 98103500 1 淑女]
+
+
+
+[charaDepth H 1]
+[charaDepth E 3]
+[charaTalk depthOff]
+
+
+[charaPut H -150,0]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+[charaFadein H 0.1 -150,0]
+[charaFadeTime H 0.1 0.7]
+[charaEffect E bit_talk_06b2]
+[scene 31200]
+[fadein black 2.0]
+[wait fade]
+[wt 0.5]
+
+[se ad42]
+[charaEffectStop E bit_talk_06b2]
+[charaFadeout H 1.0]
+[wt 1.0]
+
+＠E：淑女／克洛伊
+……呜呜…………
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout H 0.1]
+[wt 0.3]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠伊莉雅
+呼……呼……[r]总算成功削减了……敌人的力量了吧？
+[k]
+
+＠伊莉雅
+现在，你究竟是淑女……？[r]还是……小黑？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaPut A 1200,1200]
+[charaChange A 98102500 5 fade 0]
+[wt 0.1]
+[charaFadeout A 0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+[charaFace A 5]
+[charaFadein A 0.1 2]
+[charaShake B 0.07 0 16 1.0]
+＠红宝石
+唔～唔～？[r]看来是小黑的优势哦～？
+[k]
+
+[charaShake B 0.07 0 16 1.0]
+＠红宝石
+附体的淑女的反应正在逐渐消失！
+[k]
+
+[charaFace A 5]
+＠伊莉雅
+哎……！？[r]请……请等一下，淑女小姐！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠伊莉雅
+能听到吗，小黑！？　求你了！[r]再坚持一下！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+[charaFadein H 0.1 -150,0]
+[charaFadeTime H 0.1 0.5]
+＠E：淑女／克洛伊
+我说你啊……又这么自说自话……[r]这很累人的呀……
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout H 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠玛修
+如果达·芬奇亲和御主的推测没错……
+[k]
+
+[charaFace F 12]
+＠玛修
+那在淑女消失的同时，这固有结界也会消失……[r]已经没有什么时间了吧……？
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaShake D 0.07 0 16 1.0]
+＠蓝宝石
+已确认束缚礼装无力化！[r][line 3]美游大人！？
+[k]
+
+？1：玛修，美游就拜托你了！
+
+[charaFadeout D 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠玛修
+[line 3]是。[r]我会立刻看护她！
+[k]
+
+[charaFadeout F 0.4]
+[charaMove F 0,-100 0.4]
+[wt 0.7]
+[se ad7]
+
+＠玛修
+……美游小姐，还站得起来吗？[r]请抓住我。
+[k]
+
+[charaFace C 4]
+＠美游
+嗯，勉强还能行……但是……[r]还是请您扶我一把，玛修小姐。
+[k]
+
+[messageOff]
+[se ad60]
+[charaTalk off]
+[charaPut C -128,-100]
+[charaPut F 128,-100]
+[charaFadeTime C 0.7 1.0]
+[charaFadeTime F 0.7 1.0]
+[charaMove C -128,0 1.0]
+[charaMove F 128,0 1.0]
+[wt 0.5]
+[seStop ad60]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFadein D 0.1 -900,0]
+[charaMove C 2 0.5]
+[charaMove D 0 0.5]
+[wait charaMove]
+
+[charaTalk on]
+
+？2：（虽保持沉默其实是美游派）[line 3]没事吧，美游？
+
+[messageOff]
+[charaFadeout D 0.1]
+
+[bgmStop BGM_EVENT_5 0.3]
+[se ad7]
+[shake 0.05 0 3 0.4]
+[wt 0.4]
+
+[bgm BGM_EVENT_6 0.1]
+[charaScale C 1.25]
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.4 0,50]
+＠美游
+啊……感谢您帮助了伊莉雅。
+[k]
+
+＠美游
+我已经没事了……[r]更重要的是她……小黑……
+[k]
+
+[charaFace C 0]
+＠美游
+那个……没事。
+[k]
+
+[bgmStop BGM_EVENT_6 0.4]
+
+＠美游
+我没事哦？[r]你可以放下我……
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠玛修
+……御主？
+[k]
+
+[charaScale C 1.0]
+
+[charaFadeout F 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein C 0.1 2]
+[charaFadein D 0.1 0]
+
+？！
+
+[charaFace C 1]
+＠美游
+……呼。[r]也谢谢蓝宝石。
+[k]
+
+[charaShake D 0.07 0 16 1.0]
+＠蓝宝石
+美游大人……呜……
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠伊莉雅
+太好了……美游。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+
+[se ad7]
+[charaTalk H]
+[charaFace E 4]
+[charaFadein H 0.1 1]
+[charaFadein E 0.1 1]
+[charaFadeTime E 0.1 0.4]
+[charaMove E 0,-150 0.5]
+[wait charaMove]
+
+
+＠淑女
+………………[r]你到底……什么意思，伊莉雅……
+[k]
+
+[charaTalk on]
+＠淑女
+既然你不打算给我致命一击……[r]就不能说是打赢了我……
+[k]
+
+＠淑女
+我决不会[#放弃]……[r]不会放弃……
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout H 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠伊莉雅
+并不是什么胜负……[r]淑女小姐[line 3]。
+[k]
+
+[charaFadeout A 0.1]
+
+[bgmStop BGM_EVENT_5 1.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠美游
+……对。不是。
+[k]
+
+
+[bgm BGM_EVENT_33 0.1]
+
+＠美游
+你的那种感情与执着和理想不同。[r]这一定是[line 3]赎罪。
+[k]
+
+[charaFace C 5]
+＠美游
+淑女，只是你不承认而已。[r]和伊莉雅纯粹的感情不同。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠伊莉雅
+…………美……美游……
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFace A 3]
+[charaFadein A 0.1 2]
+＠美游
+我说，伊莉雅，把你的想法告诉她吧。
+[k]
+
+＠伊莉雅
+哎，我吗！？
+[k]
+
+[charaFace C 1]
+＠美游
+嗯[line 3]为了能够触碰她的心灵。[r]率直地。下定决心。
+[k]
+
+[charaFace A 5]
+＠伊莉雅
+……我知道了，美游。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+
+[charaTalk H]
+[charaFace E 4]
+[charaFadein H 0.1 1]
+[charaFadein E 0.1]
+[charaFadeTime E 0.1 0.4]
+
+＠淑女
+………………
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout H 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠伊莉雅
+……唔……淑女小姐……[r]我……我哦……
+[k]
+
+＠伊莉雅
+光是处理眼前的问题就已经需要用尽全力了，[r]根本没想过拯救世界什么的……
+[k]
+
+[charaFace A 4]
+＠伊莉雅
+……不。说实话，我觉得这些和我没什么关系，[r]所以不会去考虑什么遥远的事。
+[k]
+
+＠伊莉雅
+但是，如果我和淑女小姐身处相同的立场……
+[k]
+
+＠伊莉雅
+获得了足以被人们依赖、[r]必须去行使义务程度的无比强大力量的话……
+[k]
+
+＠伊莉雅
+到那时，自己究竟能做什么，究竟会选择谁……[r]我还……不清楚。
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk H]
+[charaFace E 4]
+[charaFadein H 0.1 1]
+[charaFadein E 0.1]
+[charaFadeTime E 0.1 0.4]
+＠淑女
+…………是吗。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout H 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠伊莉雅
+但是……如果我重要的朋友和家人遇到危险的话，[r]我会毫不犹豫地使用魔法。
+[k]
+
+＠伊莉雅
+我，会为了守护大家的笑容……[r]而使用魔法哦？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk H]
+[charaFace E 4]
+[charaFadein H 0.1 1]
+[charaFadein E 0.1]
+[charaFadeTime E 0.1 0.4]
+＠淑女
+…………哪怕这样，[r]会让你哭泣也在所不惜……？
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout H 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠伊莉雅
+……（点头）。
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk H]
+[charaFace E 4]
+[charaFadein H 0.1 1]
+[charaFadein E 0.1]
+[charaFadeTime E 0.1 0.4]
+＠淑女
+伊莉雅……我很羡慕你。
+[k]
+
+＠淑女
+……但同时也觉得你很愚蠢。[r]因为就像是看到了过去的我。
+[k]
+
+＠淑女
+我没能拯救……我重要的朋友……
+[k]
+
+＠淑女
+我将她与世界放在天秤上衡量[line 3][r]并选择了……世界……
+[k]
+
+＠淑女
+没能拯救……[r]她这位最好的朋友……
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout H 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠玛修
+………………这……
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠美游
+…………
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠伊莉雅
+……牺牲了……朋友？[r]！……难道您的朋友也一样是魔法少女？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk H]
+[charaFace E 4]
+[charaFadein H 0.1 1]
+[charaFadein E 0.1]
+[charaFadeTime E 0.1 0.4]
+＠淑女
+…………不。
+[k]
+
+＠淑女
+她拒绝成为魔法少女……[r]成了[#世界的敌人]，令人们绝望……
+[k]
+
+＠淑女
+所以……我才只能……呜……[r]亲手……阻止她……
+[k]
+
+＠淑女
+我再也见不到她了……[r]没能对她说……对不起……！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout H 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠伊莉雅
+……呜…………
+[k]
+
+[bgmStop BGM_EVENT_33 0.1]
+
+
+[se ad91]
+[messageOff]
+[wipeout rightToLeft 0.5 1]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaSet B 98104100 1 爱迪生君]
+[wt 0.4]
+
+[wipein leftToRight 0.5 1]
+[wait wipe]
+
+[bgm BGM_EVENT_1 0.1]
+
+[se ad95]
+[charaTalk G]
+[charaFace B 0]
+[charaFadein B 0.4 0]
+[charaFace G 5]
+[charaFadein G 0.4 2]
+[seStop ad95]
+[wt 0.5]
+
+＠海伦娜
+这就不好说了哦。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout G 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠玛修
+……！？
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠伊莉雅
+……！……海伦娜小姐！？
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_1 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[scene 10000]
+[wt 1.0]
+
+
+
+[charaFadeout A 0]
+
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+[fowardEffect bit_queststart80025_07]
+[wait fowardEffect bit_queststart80025_07]
+[fadeout black 0.5]
+[wait fade]
+
+[scene 31200]
+[wt 1.0]
+
+[bgm BGM_EVENT_1 2.0]
+[fadein black 2.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠伊莉雅
+海伦娜小姐……！[r]还有狮子先生！？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk G]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+[charaFace G 0]
+[charaFadein G 0.1 2]
+＠海伦娜
+嗯，我活下来了。[r]和淑女一样？　这就错了。
+[k]
+
+[charaFace G 4]
+＠海伦娜
+既是个悲惨残渣，又没能死成。[r]真是的，我到底有多半吊子啊。
+[k]
+
+[charaFace B 1]
+[charaShake B 0.07 0 16 1.0]
+＠爱迪生君
+没什么，自卑是她的坏毛病。[r]你们就当耳边风好了。
+[k]
+
+[charaFace G 5]
+＠海伦娜
+阿尔……！　别多嘴……
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠海伦娜
+当你们的战斗正式开始的几乎同时，[r]淑女的使魔们就已经不构成威胁了。
+[k]
+
+＠海伦娜
+虽然抵达这宝座的房间稍微有些累人，[r]这城内的结界也太强了，[#那孩子]进不来啊。
+[k]
+
+＠海伦娜
+美游也平安无事的话，[r]先把淑女带离这里吧。
+[k]
+
+＠海伦娜
+我们一边移动，[r]一边向我介绍被淑女附身的这女孩的事吧。
+[k]
+
+[charaFadeout G 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+＠玛修
+这当然[line 3][r]那孩子……是指……？
+[k]
+
+[wt 0.4]
+[messageOff]
+[bgmStop BGM_EVENT_1 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+[scene 31100]
+[charaSet B 98103600 1 红宝石]
+[charaSet D 98104300 1 余音]
+[wt 0.5]
+
+
+[wt 0.5]
+[bgm BGM_EVENT_5 2.0]
+[fadein black 2.0]
+[wait fade]
+
+[wt 0.7]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.7 1]
+[wt 1.0]
+[se ad21]
+[charaScale D 1.1]
+[charaShake D 0.05 3 3 0.5]
+[wt 0.25]
+[charaScale D 1.0]
+[wt 0.7]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠伊莉雅
+呀啊……！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk A]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace A 5]
+[charaFadein A 0.1 2]
+＠伊莉雅
+……哎，该不会是当时的那个幽灵吧！？
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+＠玛修
+为什么会在这里？
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk G]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace G 0]
+[charaFadein G 0.1 2]
+＠海伦娜
+这位[#亡灵:余音]恐怕是从很早以前起，[r]就一直在黑色墙壁周围徘徊的孩子。
+[k]
+
+＠海伦娜
+在黑色墙壁崩溃后，[r]颤颤巍巍前往城堡的中途，被我发现了。
+[k]
+
+[charaFace G 5]
+＠海伦娜
+第一淑女，你该不会[line 3][r]认识这个孩子吧？
+[k]
+
+＠海伦娜
+她看上去似乎有什么话想要对你说哦。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+
+[charaTalk H]
+[charaFace E 4]
+[charaFadein H 0.1 1]
+[charaFadein E 0.1]
+[charaFadeTime E 0.1 0.4]
+＠淑女
+………………
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout H 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[se ad21]
+＠余音
+…………！
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠伊莉雅
+确实……[r]好像非常生气……
+[k]
+
+＠伊莉雅
+她到底想向淑女小姐传达什么信息呢……？[r]但是，我们又不知道她在说什么……唔唔……
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk A]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+[charaFace A 4]
+[charaFadein A 0.1 2]
+＠伊莉雅
+红宝石，能想想办法吗？
+[k]
+
+[charaChange B 98103800 0 fade 0]
+[charaFadein B 0 1]
+
+[charaFace B 2]
+[charaMoveReturn B -256,10 0.4]
+＠红宝石
+这就包在我身上吧！　请收下红宝石我特制的[r]灵媒药水[charaMove B 0,0 0.7]！　嘿！（泼洒）[wt 0.3][se ad99]
+[k]
+
+[charaFace A 3]
+[charaShake A 0.05 3 3 0.25]
+＠伊莉雅
+呀啊[line 3]！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+
+[charaPut B 1200,1200]
+[charaChange B 98103600 0 fade 0]
+[wt 0.1]
+[charaFadeout B 0]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+＠玛修
+不由分说地……！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+[se ad42]
+[charaChange A 98103300 0 fade 1.0]
+[wait charaChange A]
+[charaFadein A 0 1]
+[wt 1.0]
+
+
+
+[charaFadeout A 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠海伦娜
+真的附体了……！？　居然这么简单？[r]虽然现在说有些晚，但这魔术礼装的性能真是高得可怕啊……
+[k]
+
+[charaFadeout G 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠美游
+怎么样……伊莉雅？[r]不，幽灵小姐……？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+
+
+[bgmStop BGM_EVENT_5 1.5]
+
+
+[charaTalk off]
+
+[charaScale D 0.8]
+[charaDepth D 1]
+[charaDepth A 3]
+[charaDepth H 1]
+[charaDepth E 3]
+
+
+[charaFace A 5]
+[charaFace E 4]
+[charaFadein A 0.1 2]
+[charaFadein E 0.1 -250,-150]
+[charaFadein H 0.1 0]
+[charaFadeTime E 0.1 0.4]
+
+[wt 1.0]
+
+[charaTalk on]
+＠淑女
+………………
+[k]
+
+＠？？？
+………………！……
+[k]
+
+＠？？？
+……这……
+[k]
+
+[bgm BGM_EVENT_34 0.1]
+
+[charaFace A 2]
+＠？？？
+你这……大傻瓜！！
+[k]
+
+[messageOff]
+[charaAttack A normal 0,0 0.15]
+[wt 0.5]
+[se ad76]
+[charaShake A 0.05 0 4 0.25]
+[charaShake E 0.05 3 3 0.25]
+[charaShake H 0.05 3 3 0.25]
+[wt 0.2]
+[charaFace E 2]
+[charaMove E 0 0.2]
+[wait charaMove]
+
+[se ad42]
+[charaFadeTime E 1.5 1.0]
+[charaFadeTime H 1.5 0.5]
+[wt 1.5]
+
+[charaFace E 2]
+＠E：淑女／克洛伊
+……好痛……不要突然打我啊……[r]你干嘛啦……！
+[k]
+
+[charaMove A -50,0 0.1]
+[wait charaMove]
+
+[se ad76]
+[charaShake E 0.05 2 2 0.25]
+[charaShake H 0.05 2 2 0.25]
+[charaMove A 0,0 0.1]
+[charaFace E 4]
+＠E：淑女／克洛伊
+好痛，很痛的啦……！
+[k]
+
+[wait charaMove]
+
+[se ad76]
+[charaMove A -50,0 0.1]
+[wait charaMove]
+[charaShake E 0.05 2 2 0.25]
+[charaShake H 0.05 2 2 0.25]
+[wt 0.2]
+
+[charaMove A 0,0 0.1]
+[wait charaMove]
+[wt 0.2]
+
+[se ad76]
+[charaMove A -50,0 0.1]
+[wait charaMove]
+[charaShake E 0.05 2 2 0.25]
+[charaShake H 0.05 2 2 0.25]
+[wt 0.2]
+
+[charaMove A 0,0 0.1]
+[wait charaMove]
+[wt 0.8]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 2]
+[charaShake B 0.07 0 16 1.0]
+＠红宝石
+哎呀哎呀～？　由于被殴打的防卫反应，[r]小黑有一半恢复了呢？
+[k]
+
+？1：附身在伊莉雅身上的究竟是谁啊……？
+？！
+
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[charaFadeout H 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠美游
+附身在伊莉雅身上的她……
+[k]
+
+＠美游
+或许我认识。[r]如果是我在梦中见到的她……
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk F]
+[charaFace C 4]
+[charaFadein C 0.1 0]
+[charaFace F 6]
+[charaFadein F 0.1 2]
+＠玛修
+梦……？
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠海伦娜
+……但是，表面看起来就像是[r]伊莉雅和克洛伊在互殴这点未免有些那啥。
+[k]
+
+？1：话说……伊莉雅小姐……？
+？！
+
+[charaFadeout G 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFace E 5]
+[charaFadein A 0.1 2]
+[charaFadein D 0.1 250,0]
+[charaFadeTime D 0.1 0.5]
+[charaFadein E 0.1 0]
+[charaFadein H 0.1 -250,0]
+[charaFadeTime H 0.1 0.5]
+
+＠A：？？？／伊莉雅
+因为你是个大笨蛋，[r]所以我才会叫你大笨蛋啦！
+[k]
+
+[charaFace E 5]
+＠E：淑女／克洛伊
+………………这语气……
+[k]
+
+[charaFace E 2]
+＠E：淑女／克洛伊
+难道是……米拉？　是你吗！？[r]你也作为[#亡灵:余音]来到这里……！？
+[k]
+
+[charaFace A 2]
+＠A：米拉／伊莉雅
+是啊……不行吗？
+[k]
+
+[charaFace A 5]
+＠A：米拉／伊莉雅
+虽然时间很短，但我好歹也当过魔法少女。[r]所以也有资格啊。
+[k]
+
+[charaFace A 2]
+＠A：米拉／伊莉雅
+而现在的你是第一淑女，[r]最初的魔法少女，没错吧？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout H 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠美游
+果然……是她啊。
+[k]
+
+[charaFace C 0]
+＠美游
+米拉小姐？[r]您是淑女重要的……朋友吗？
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[charaFadein D 0.1 150,0]
+[charaFadeTime D 0.1 0.5]
+＠A：米拉／伊莉雅
+没错[line 3]美游。
+[k]
+
+＠A：米拉／伊莉雅
+我就是被淑女当做敌人打倒的[r][line 3]原·魔法少女。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+
+[charaSet C 98103200 1 蓝宝石]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaShake B 0.07 0 16 1.0]
+＠红宝石
+呀呀～，也就是说，[r]你是最初堕落的魔法少女吧！
+[k]
+
+[charaFadeout B 0.1]
+
+[bgmStop BGM_EVENT_34 1.5]
+
+[charaTalk C]
+[charaFace B 0]
+[charaFadein B 0.1 2]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaShake C 0.07 0 8 1.0]
+＠蓝宝石
+姐姐，安静点。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+
+[bgm BGM_EVENT_33 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[charaFadein D 0.1 100,0]
+[charaFadeTime D 0.1 0.5]
+
+＠A：米拉／伊莉雅
+淑女……[r]你作为一名魔法少女很努力了。
+[k]
+
+＠A：米拉／伊莉雅
+为了让所有人都能获得幸福。[r]将自己的一切奉献给了这个世界。
+[k]
+
+[charaFace A 4]
+＠A：米拉／伊莉雅
+但是，你越是努力，[r]人们越是失去笑容。
+[k]
+
+＠A：米拉／伊莉雅
+你只是被他们的贪婪与不满所折腾，[r]伤痕累累，精疲力竭，笑着哭泣。
+[k]
+
+[charaFace A 5]
+＠A：米拉／伊莉雅
+我认为这种世界没有被拯救的价值。[r]比起世界，我选择了你。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠玛修
+…………米拉小姐……
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk E]
+[charaFace A 5]
+[charaFace E 4]
+[charaFadein A 0.1 2]
+[charaFadein D 0.1 250,0]
+[charaFadeTime D 0.1 0.5]
+[charaFadein E 0.1 0]
+[charaFadein H 0.1 -250,0]
+[charaFadeTime H 0.1 0.5]
+
+＠E：淑女／克洛伊
+……你一直在这里吗，米拉？[r]我一直没有发现吗……？
+[k]
+
+[charaFace A 4]
+＠A：米拉／伊莉雅
+……嗯。[r]我至今仍是朦胧不清的[#亡灵:余音]。
+[k]
+
+＠A：米拉／伊莉雅
+若非像这样借用伊莉雅的身体，[r]连意识都未必能维持。
+[k]
+
+[charaFace A 0]
+＠A：米拉／伊莉雅
+但是，我一直能感受到你的存在。[r]因为这个世界就是你的后悔本身。
+[k]
+
+＠A：米拉／伊莉雅
+所以我一直祈祷能传达到黑色墙壁的对面。[r]希望你的心灵能获得安宁。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout H 0.1]
+
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+[charaMoveReturn G 0,-5 0.25]
+＠海伦娜
+……呜……！？
+[k]
+
+[charaFace G 5]
+＠海伦娜
+从固有结界外部打开灵子线的是你吧？　米拉！？
+[k]
+
+＠海伦娜
+将克洛伊呼唤到这个世界并非偶然。[r]米拉，都是你的愿望导致的。
+[k]
+
+[charaFadeout G 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[charaFadein D 0.1 100,0]
+[charaFadeTime D 0.1 0.5]
+＠A：米拉／伊莉雅
+虽然我没有自觉……[r]若真是如此，那我要道歉。给你们添麻烦了。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+＠玛修
+那……那身在迦勒底的我受到干扰，[r]变得像梦游病患者的原因是什么？
+[k]
+
+
+？1：……那应该是梅芙吧。
+
+[charaFadeout F 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[charaFadein H 0.1 -150,0]
+[charaFadeTime H 0.1 0.5]
+＠E：淑女／克洛伊
+嗯。应该是她的意志吧。
+[k]
+
+＠E：淑女／克洛伊
+虽然只持续了很短的时间，[r]但梅芙曾一度具备与我相匹敌的力量。
+[k]
+
+？2：这也是淑女干的？
+
+[charaFadeout F 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[charaFadein H 0.1 -150,0]
+[charaFadeTime H 0.1 0.5]
+＠E：淑女／克洛伊
+……不。应该是梅芙吧。
+[k]
+
+？！
+
+＠E：淑女／克洛伊
+[#她:梅芙]试图用自身作为庞大魔力的容器，[r]打开灵子线。
+[k]
+
+[charaFace E 0]
+＠E：淑女／克洛伊
+我也只是利用了被打开的灵子线而已。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout H 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+＠玛修
+是这样啊……
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+
+[charaSet C 98102100 1 美游]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+[charaFadein H 0.1 -150,0]
+[charaFadeTime H 0.1 0.5]
+
+[wt 1.0]
+
+[charaFadeTime H 0.6 0.1]
+[wt 0.6]
+[charaFadeTime H 0.2 0.8]
+[wt 0.2]
+[charaFadeTime H 0.6 0.1]
+[wt 0.6]
+[charaFadeTime H 0.2 0.8]
+[wt 0.2]
+[charaFadeTime H 0.4 0.5]
+[wt 0.4]
+[charaChange E 2027001 4 fade 1.0]
+[wait charaChange A]
+
+＠E：淑女／克洛伊
+淑女的压力快要消失了……
+[k]
+
+＠E：淑女／克洛伊
+再这样下去……就算我再怎么忍着，[r]她也会被弹出去的……！……
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+[wt 0.1]
+[charaChange E 98102800 0 fade 0]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠美游
+……！……海伦娜小姐。[r]您的状态如何？
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk G]
+[charaFace C 5]
+[charaFadein C 0.1 0]
+[charaFace G 4]
+[charaFadein G 0.1 2]
+＠海伦娜
+……我自己还没感受到什么变化。
+[k]
+
+[charaFace G 5]
+＠海伦娜
+但是，我的『死亡书架之国』[r]已经开始发生异变了[line 3]我能通过宝石知道。
+[k]
+
+＠海伦娜
+恐怕是以固有结界的中心，[r]也就是由淑女城向着王国边缘的顺序崩溃的[line 3]。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout G 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠玛修
+固有结界果然无法支撑下去了啊……
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[charaFadein D 0.1 150,0]
+[charaFadeTime D 0.1 0.5]
+＠A：米拉／伊莉雅
+伊莉雅、克洛伊、美游……[r]抱歉将你们卷入了固有结界的崩溃中。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠美游
+…………！……[r]还有[charaFace C 2]什么方法吗……！
+[k]
+
+[charaFace C 5]
+＠美游
+不，就算……就算我出什么事也无所谓[line 3][r]但是[line 3]
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠海伦娜
+淑女，不能将你的固有结界继承给我吗？
+[k]
+
+[charaFadeout G 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠美游
+…………！？　将结界？[r]可以这样做吗……？
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠海伦娜
+非常遗憾，我是认真的。
+[k]
+
+＠海伦娜
+作为容纳受伤魔法少女之地，[r]这个世界是必要的。
+[k]
+
+＠海伦娜
+虽然比喻有些不太妥当，[r]但就像是收容伤病士兵的残废军人收容院一样。
+[k]
+
+[charaFace G 4]
+＠海伦娜
+啊……不，刚才的比喻不算。[r]总觉得会引来一个非常危险的灭菌魔法少女。
+[k]
+
+[charaFace G 5]
+＠海伦娜
+……总之。[r]淑女，为了避免再次出现像你这样的存在，
+[k]
+
+＠海伦娜
+是否能让我重新尝试你最初的愿望呢。
+[k]
+
+[charaFadeout G 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+[charaFadein H 0.1 -150,0]
+[charaFadeTime H 0.1 0.5]
+＠E：淑女／克洛伊
+…………
+[k]
+
+[charaFace E 0]
+＠E：淑女／克洛伊
+……海伦娜。[r]智慧与神秘的魔法少女。
+[k]
+
+＠E：淑女／克洛伊
+嗯……如果这是你由衷的愿望。[r]我……一定会实现你的愿望！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout H 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠海伦娜
+感谢您。第一淑女。[r]这次一定能顺利。
+[k]
+
+[charaFadeout G 0.1]
+
+[charaSet B 98103200 1 蓝宝石]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaShake B 0.07 0 16 1.0]
+＠蓝宝石
+淑女大人的魔力越来越衰弱了[line 3]。[r]米拉大人也一样……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFace E 4]
+[charaFadein A 0.1 2]
+[charaFadein D 0.1 250,0]
+[charaFadeTime D 0.1 0.5]
+[charaFadein E 0.1 0]
+[charaFadein H 0.1 -250,0]
+[charaFadeTime H 0.1 0.5]
+[wt 0.5]
+[charaChange A 98102500 0 fade 1.0]
+[wait charaChange A]
+[charaFadein A 0]
+
+[charaTalk on]
+
+[charaFace A 3]
+＠A：米拉／伊莉雅
+啊……米拉小姐要消失了。
+[k]
+
+[messageOff]
+[charaChange A 98103300 0 fade 1.0]
+[wait charaChange A]
+[charaFadein A 0]
+
+[charaFace A 0]
+＠A：米拉／伊莉雅
+[line 3]听我说，淑女。
+[k]
+
+＠A：米拉／伊莉雅
+你觉得自己被世界抛弃，被世界遗忘。[r]同时觉得自己遭到了深重的背叛。
+[k]
+
+＠A：米拉／伊莉雅
+魔法少女不是魔女。[r]更不是什么女王。
+[k]
+
+＠A：米拉／伊莉雅
+奇迹不需要回报。[r]也不会为自己使用魔法。
+[k]
+
+＠A：米拉／伊莉雅
+只会为不知名的陌生人，[r]将内心涌现的感情代入咒语咏唱出来。
+[k]
+
+[charaFace A 4]
+＠A：米拉／伊莉雅
+若不这样做[line 3][r]无法实现的愿望就会化为诅咒。
+[k]
+
+＠A：米拉／伊莉雅
+无法传达的感情会在世界的狭缝中堆积，[r]化为炼狱。
+[k]
+
+[charaFace E 4]
+＠E：淑女／克洛伊
+我还没有……[r]对米拉你……
+[k]
+
+[charaFace A 0]
+＠A：米拉／伊莉雅
+不，淑女。
+[k]
+
+＠A：米拉／伊莉雅
+你已经咏唱得足够多了。[r]甚至到喉咙枯竭的地步。
+[k]
+
+＠A：米拉／伊莉雅
+魔法的书已经翻到最后一页了。
+[k]
+
+[charaFace A 4]
+＠A：米拉／伊莉雅
+对啊。确实，人们遭受的危机[r]与来袭的敌人是永无止境的。
+[k]
+
+[charaFace A 0]
+＠A：米拉／伊莉雅
+即便如此……依然会有像伊莉雅这样的[r]新魔法少女们为此而诞生。
+[k]
+
+＠A：米拉／伊莉雅
+她们虽然是还很不可靠，[r]未完成的魔法少女[line 3]
+[k]
+
+＠A：米拉／伊莉雅
+但是[line 3]正因为如此[line 3][r]她们的掌心中[line 3]
+[k]
+
+[charaFace E 0]
+＠E：淑女／克洛伊
+才有未来[line 6]
+[k]
+
+[wt 0.7]
+[messageOff]
+[charaFace E 1]
+[charaFace A 1]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_33 1.5]
+
+[charaFadeout A 1.0]
+[charaFadeout E 1.0]
+[wt 1.0]
+
+[charaSpecialEffect H flashErasure 1 1.7]
+[charaSpecialEffect D flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect D]
+[wt 1.0]
+[charaFadeout H 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+[charaChange A 98102500 5 fade 0]
+[wt 0.1]
+[charaFadeout A 0]
+
+[charaSet E 98103400 1 克洛伊]
+
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠玛修
+海伦娜小姐的手上……出现了新的宝石……
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 0]
+[charaFace A 3]
+[charaFadein A 0.1 2]
+＠克洛伊
+…………
+[k]
+
+＠伊莉雅
+…………
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+
+[charaSet D 98103600 1 红宝石]
+
+[bgm BGM_EVENT_32 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaShake D 0.07 0 16 1.0]
+
+＠红宝石
+哎呀哎呀～？[r]像恋人一样双手紧紧握在一起～。
+[k]
+
+＠红宝石
+不管怎么说，[r]两位都恢复原样了吧～？
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠伊莉雅
+啊，嗯。我完全恢复了。[r]……小黑呢？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠克洛伊
+唔～……这里是哪儿……我是谁……
+[k]
+
+＠克洛伊
+我不知道……迄今为止的邪恶行径都很凑巧地[r]全都想不起来了……所以也不会造成责任问题……
+[k]
+
+[charaFace E 5]
+＠克洛伊
+虽然好像强行逼迫美游通过禁止播放的形式提供魔力，[r]但这都是征得同意过的所以不算数……
+[k]
+
+[charaFace E 3]
+＠克洛伊
+使用淑女的力量创造我是主角的世界，[r]和哥哥过着卿卿我我的生活也……
+[k]
+
+[charaFace E 4]
+＠克洛伊
+被正义的集团CERO弹劾以至于堕落，[r]被打上问题少女的烙印并被打倒的事也是秘密……
+[k]
+
+[charaFace E 0]
+＠克洛伊
+综上所述，虽然发生了不少问题，但干得漂亮，伊莉雅！[r]这才是正义的魔法少女，我是相信你的！
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠伊莉雅
+呜哇……虽然不是小黑的错，[r]但如此没有反省之色未免也太……
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+[charaShake B 0.07 0 16 1.0]
+＠蓝宝石
+从某种意义来看，也是和伊莉雅大人一样的[r]对自己深信不疑的[#魔法少女力:MS力]。虽然属性是混沌。
+[k]
+
+[charaShake D 0.07 0 16 1.0]
+＠红宝石
+克洛伊……[r]就是因为这样，你才成不了主角哦？
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠克洛伊
+干嘛啦，这种时候应该安慰我说[r]“你一定很辛苦吧？　但好可爱！”吧！？
+[k]
+
+＠克洛伊
+我也很努力了啊！
+[k]
+
+＠克洛伊
+一直压制着淑女的也是我啊，[r]我可是拥有如钢铁般坚强的自制力，你到底明不明白！？
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk C]
+[charaFace E 2]
+[charaFadein E 0.1 0]
+[charaFace C 0]
+[charaFadein C 0.1 2]
+＠美游
+……这……确实。[r]小黑和淑女的亲和度很高呢。
+[k]
+
+＠美游
+在此基础上，还能一定程度内拒绝与淑女的同化，[r]都是多亏了小黑的精神力呢。
+[k]
+
+[charaFace E 1]
+＠克洛伊
+对吧对吧？[r]我的正义之心也不是毫无价值的～♪
+[k]
+
+[charaFace E 0]
+＠克洛伊
+我虽然喜欢开心的事，喜欢恶作剧，[r]喜欢哥哥，喜欢欺负弱者，
+[k]
+
+＠克洛伊
+但最讨厌的就是悲伤的事。[r]在这点上，我和淑女无论如何都无法相容。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout C 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠美游
+（……嗯。我也能理解淑女的心情……[r]　如果我被淑女附体的话，）
+[k]
+
+＠美游
+（一定不会像那样倾听别人的话吧……[r]　虽然看上去坏坏的，但克洛伊和伊莉雅的心灵是一致的。）
+[k]
+
+[charaFace C 0]
+＠美游
+（所以……拯救了淑女的，是米拉和伊莉雅……[r]　以及和淑女一起玩耍的克洛伊吧……）
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+[charaFace C 0]
+[charaFadein C 0.1 2]
+＠克洛伊
+……？　我莫名觉得美游的眼神很温柔……？[-][r]怎么了，对我刮目相看了？
+[k]
+
+[charaFace C 5]
+＠美游
+一点也没有。对于我遭受的精神痛苦，[r]稍后我会以艾德费尔特风向你请款的。
+[k]
+
+[charaFace E 2]
+＠克洛伊
+那不就是钱的问题吗！[r]艾德费尔特几乎都是守财奴啊！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaShake B 0.07 0 16 1.0]
+＠蓝宝石
+这仅限露维亚大人和凛大人吧。[r]美游大人可是拥有清廉正确的经济观念的。
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_32 2.0]
+[wait fade]
+[charaFadeout B 0]
+
+[charaSet H 98104100 1 爱迪生君]
+
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+[fowardEffect bit_talk_eyecatch_09]
+[wait fowardEffect bit_talk_eyecatch_09]
+[fadeout black 0.5]
+[wait fade]
+
+[charaSet B 98148000 1 ？？？]
+
+[charaDepth G 1]
+[charaDepth B 3]
+
+[charaTalk depthOff]
+
+
+[scene 31100]
+
+[bgm BGM_EVENT_2 2.0]
+[fadein black 2.0]
+[wait fade]
+
+[wt 0.2]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠海伦娜
+和好了吗？[r]那开始最后的收尾工作吧。
+[k]
+
+[charaFadeout G 0.1]
+
+[charaTalk off]
+
+[se ad39]
+
+[charaFadein B 0.4 1]
+[charaEffect B bit_talk_blight_02]
+
+[wt 3]
+
+[charaFadeout B 0.4]
+[wt 0.4]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_blight_02]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠海伦娜
+现在我手中有淑女的宝石。[r]如果将这个为自己而用的话，就和以前一样了[line 3]
+[k]
+
+＠海伦娜
+但若能创造并非属于一个人的封闭世界，[r]而是愿望能循环的世界的话[line 3]
+[k]
+
+[charaFadeout G 0.1]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace G 5]
+[charaFadein G 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+＠伊莉雅
+原来是这样！[r]只要为他人使用宝石就行了吧？
+[k]
+
+[charaFace G 0]
+＠海伦娜
+嗯，就是这个意思。[r]你对这种问题的理解力很强呢。
+[k]
+
+[charaSet B 98103200 1 蓝宝石]
+
+[charaFadeout G 0.1]
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaShake D 0.07 0 16 1.0]
+
+＠红宝石
+童谣和美狄亚的宝石，再加上玛修提供的宝石，[r]加起来一共有三颗！
+[k]
+
+＠红宝石
+魔力也能均等分配，[r]这样就能回到原来的世界了～！
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠克洛伊
+呃……也就是说，[r]一人拿一颗宝石吧？
+[k]
+
+[charaFace E 0]
+
+＠克洛伊
+伊莉雅对美游，美游对我，[r]我对伊莉雅[line 3]。
+[k]
+
+[charaFace E 1]
+
+＠克洛伊
+只要分别许下希望对方回归的愿望就行了吧？
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk C]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+[charaFace C 4]
+[charaFadein C 0.1 2]
+＠美游
+居然这么简单……[r]总觉得未免太简单了一点吧……
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠伊莉雅
+不要想得太深入～！[r]总之先回去再说，美游！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+＠美游
+唔，嗯……[r]既然[charaFace C 1]伊莉雅这么说……
+[k]
+
+
+？1：海伦娜[line 3]那你会留在这里吧。
+？！
+
+[bgmStop BGM_EVENT_2 0.5]
+[wt 0.5]
+[bgm BGM_EVENT_37 0.1]
+
+[charaFadeout C 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠玛修
+代替淑女小姐的职责，[r]负责管理漂流至此的魔法少女们？
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+＠海伦娜
+[line 3]嗯。[r]我会尽自己的可能去努力的。
+[k]
+
+＠海伦娜
+我也一定会找到梅芙和童谣的[#亡灵:余音]。
+[k]
+
+＠海伦娜
+还有失去了干劲的美狄亚哦。[r]那孩子如果能积极一些的话，一定非常可靠。
+[k]
+
+
+[charaTalk off]
+[charaFace H 0]
+[charaFadein H 0 -900,0]
+[charaMove F 1200,0 0.5]
+[charaMove H 0 0.5]
+[charaMove G 2 0.5]
+[wait charaMove]
+
+[charaTalk on]
+[charaTalk H]
+[charaShake H 0.07 0 16 1.0]
+＠爱迪生君
+唔。既然你决定努力，[r]那相当于做好奉献一生的决定了吧。
+[k]
+
+[charaFace H 2]
+[charaShake H 0.07 0 16 1.0]
+＠爱迪生君
+但这个世界十分不安定。[r]一定会出现一些问题吧。
+[k]
+
+[charaFace G 4]
+＠海伦娜
+或许吧。[r]终结迟早会到来。
+[k]
+
+[charaFace G 0]
+＠海伦娜
+到那时，我就移居到某个偏僻的世界，[r]和[#亡灵:余音]们一起住到幽灵屋里去。
+[k]
+
+[charaTalk off]
+[charaFace F 13]
+[charaMove F 2 0.5]
+[charaMove H -900,0 0.5]
+[charaMove G 0 0.5]
+[wait charaMove]
+[charaFadeout H 0.1]
+[charaTalk on]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 2]
+＠玛修
+这……呵呵，好像有些好玩呢。[r]请一定要保重[line 3]。
+[k]
+
+[charaFace G 1]
+＠海伦娜
+嗯[line 3]玛修·基列莱特。[r]一定要成为一名独当一面的魔法少女哦？
+[k]
+
+[charaFace F 14]
+＠玛修
+我是亚从者啦！
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠伊莉雅
+啊哈哈……
+[k]
+
+[charaFace A 0]
+＠伊莉雅
+[%1][&大哥哥:大姐姐]、[r]玛修小姐。
+[k]
+
+＠伊莉雅
+[&大哥哥:大姐姐]们对我十分温柔。[r]所以，我不太敢对你们说……
+[k]
+
+＠伊莉雅
+[&大哥哥:大姐姐]们一直背负着[r]自己的世界战斗[line 3]认真地。拼上性命。
+[k]
+
+[charaFace A 4]
+＠伊莉雅
+在与罗玛尼医生的交谈中，[r]我明白了这一点。
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+＠玛修
+………………
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠伊莉雅
+背负着远比我巨大的使命，[r]却依然选择帮助了美游、小黑、还有我。
+[k]
+
+[charaFace A 5]
+＠伊莉雅
+这不是心血来潮能做到的事。[r]你看，[charaFace A 0]虽然[&大哥哥:大姐姐]又半开玩笑地笑了。
+[k]
+
+＠伊莉雅
+明明最痛苦的是自己，却还向他人伸出援手。[r]我认为，这是无论什么魔法都无法造就的奇迹。
+[k]
+
+＠伊莉雅
+大概只有这种人才能拯救世界。
+[k]
+
+＠伊莉雅
+……来嘛，小黑你也来。[r]你也有话想说吧？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠克洛伊
+…………抱歉给你们添麻烦了，[r]玛修、还有[%1]。
+[k]
+
+[charaFace E 0]
+＠克洛伊
+你们现在应该非常艰难吧，[r]但放松点，去做吧。
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk A]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+[charaFace A 5]
+[charaFadein A 0.1 2]
+＠伊莉雅
+不能这么说吧，小黑！[r]你真是的……
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠美游
+[line 3][%1]。[r]真的十分感谢。
+[k]
+
+[charaFace C 4]
+＠美游
+我虽然……无法想象拯救世界这个命题[r]需要多么强大的意志……
+[k]
+
+[wt 0.2]
+[charaFace C 0]
+＠美游
+但是，您为我们呕心沥血……[r]这种温暖的感情，我们确实感受到了。
+[k]
+
+＠美游
+牺牲自己为他人战斗……[r]一定是这种身影拯救了众人[line 3]
+[k]
+
+[charaFace C 1]
+＠美游
+让这个世界成为有意义的存在。[r]我……这么想。
+[k]
+
+？1：美游真成熟。
+
+[charaFace C 4]
+＠美游
+不，我只是无力的孩子。[r]一个人什么都做不到。
+[k]
+
+＠美游
+多亏了蓝宝石在我身边，才能勉强完成。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠海伦娜
+无论是孩子还是大人，[r]哪种都无所谓……
+[k]
+
+[charaFace G 0]
+＠海伦娜
+但如果收弟子的话，[r]我一定会选美游。
+[k]
+
+＠海伦娜
+因为那两个人估计连杯红茶都泡不好吧。
+[k]
+
+[charaFadeout G 0.1]
+
+[charaTalk off]
+[charaFace E 4]
+[charaFadein E 0.1 0]
+[charaFace A 4]
+[charaFadein A 0.1 2]
+＠伊莉雅＆克洛伊
+呜……
+[k]
+
+？2：美游其实可以更任性撒娇一点哦。
+
+[charaFadeout C 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+＠玛修
+就是啊。[r]率直地表达自己真挚的感情并不是什么坏事。
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠美游
+……没关系。[r]因为[charaFace C 1]现在已经有伊莉雅和小黑了。
+[k]
+
+[charaFace C 0]
+＠美游
+玛修小姐也会对[%1][&大哥哥:大姐姐]说[r]任性撒娇的话吗……？
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+＠玛修
+哎？　这……这个嘛…………
+[k]
+
+＠玛修
+…………我……我会把握好……分寸……
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+[charaFace F 3]
+[charaFadein F 0.1 2]
+＠海伦娜
+依靠酒精的力量可不算哦。
+[k]
+
+[charaFace F 8]
+＠玛修
+唔，好……
+[k]
+
+？！
+
+[messageOff]
+[wipeout rollRight 1.5 0.5]
+[wait wipe]
+
+[charaTalk on]
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 1.0]
+[wipein rollLeft 1.5 0.5]
+[wait wipe]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+[charaShake D 0.07 0 16 1.0]
+＠红宝石
+大家都准备好了吗～？[r]那么我们先告辞了哦～。
+[k]
+
+[charaShake B 0.07 0 16 1.0]
+＠蓝宝石
+请各位保重[line 3]海伦娜大人、[r]玛修大人、[%1]大人。
+[k]
+
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠伊莉雅
+唔唔……真的不知道该怎么感谢才好。[r]总有一天，我一定会回报这份恩情的（鞠躬）。
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+[charaFace A 4]
+[charaFadein A 0.1 2]
+＠克洛伊
+伊莉雅是做不到的啦。[r]你要处理自己的事就已经很累了。
+[k]
+
+[charaFace E 1]
+
+＠克洛伊
+比如让哥哥看到也不会害羞的内衣花纹啊，[r]还有点心的布丁之类的？
+[k]
+
+[charaFace A 2]
+＠伊莉雅
+什……什么！[r]别把我和小黑相提并论啦，哼～！
+[k]
+
+
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaPut E 0,-300]
+[charaEffect E bit_talk_06]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.2]
+
+？1：这样就行了啦，伊莉雅。
+
+[charaFace A 4]
+＠伊莉雅
+……哎……？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+＠玛修
+……嗯。伊莉雅小姐请保持现在这样就行了。
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠伊莉雅
+这话其实也挺打击我的……（泪）
+[k]
+
+
+？2：我们总有一天会再见的。
+
+[charaFadeout A 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+＠玛修
+说得对。其实我……
+[k]
+
+＠玛修
+从被伊莉雅小姐说我像家人的那刻起，[r]就真的由衷感到高兴……
+[k]
+
+＠玛修
+如果我能有像伊莉雅小姐这样的妹妹……
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠伊莉雅
+玛修小姐……
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+[charaShake B 0.07 0 16 1.0]
+＠蓝宝石
+限定次元[line 3][r]反射路形成[line 3]
+[k]
+
+[charaShake D 0.07 0 16 1.0]
+＠红宝石
+镜界回廊　最大展开！！☆[r]开始搜索与通常界的连接！！☆
+[k]
+
+[seStop ad169 1.0]
+[se ad39]
+[effect bit_talk_15]
+
+[charaShake D 0.07 0 16 1.0]
+＠红宝石
+好啦好啦，要[#离界:跳跃]了哦～！？
+[k]
+
+[charaShake D 0.07 0 16 1.0]
+＠红宝石
+请向着宝石，[r]在脑海中想象原来世界的坐标～？
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠伊莉雅
+谢谢你们，海伦娜小姐[line 3][r]玛修小姐！　[%1][&大哥哥:大姐姐]！
+[k]
+
+[charaFace A 1]
+＠伊莉雅
+[line 3]大家保重！
+[k]
+
+[messageOff]
+[charaEffectStop E bit_talk_06]
+[wt 0.5]
+[fadeout white 3.0]
+[wait fade]
+
+[bgmStop BGM_EVENT_37 1.0]
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[effect bit_talk_07]
+[se ad12]
+[wt 0.5]
+
+[fadein white 0.5]
+[wait fade]
+
+[wt 3.0]
+[fadeout white 1.0]
+[wait fade]
+[wt 2.0]
+
+[charaSet B 98003000 1 Dr.罗曼]
+[charaSet E 2027001 1 克洛伊]
+[charaSet F 98001000 1 玛修]
+[scene 10201]
+[fadein white 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[wt 0.2]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+＠Dr.罗曼
+[line 3]封锁[line 3]完成。[r]……呼。
+[k]
+
+[charaFace B 5]
+＠Dr.罗曼
+和那个固有结界的灵子线自然消灭了。[r]这样一来，就无法知道那边的情况了。
+[k]
+
+[charaFace B 0]
+＠Dr.罗曼
+基本可以认定，[r]已经没有遭平行世界干涉的危险了吧。
+[k]
+
+[charaFace B 4]
+＠Dr.罗曼
+……只要像红宝石和蓝宝石那种[r]超规格的魔术礼装不强行找上门来……哦。
+[k]
+
+？1：到时候再说吧。
+
+？！
+
+[charaFace B 0]
+＠Dr.罗曼
+唉……说得对。就当是又增加了一份[r]应对非常事态的宝贵经验好了。积极点。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk F]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+[charaFace F 13]
+[charaFadein F 0.1 2]
+＠玛修
+我也……[r]得以体验了宝贵的经验。
+[k]
+
+＠玛修
+虽然滞留时间不像迄今为止的任务那么长，[r]但总觉得这段时间十分漫长呢。
+[k]
+
+＠Dr.罗曼
+这样啊……[r]总之你们两人能平安无事就好，我也放心了。
+[k]
+
+[charaFace B 3]
+＠Dr.罗曼
+既然你们已经冷静下来了，[r]我还有一件事想要和你们确认……
+[k]
+
+[bgmStop BGM_EVENT_2 0.4]
+
+[charaFace B 5]
+＠Dr.罗曼
+你们旁边的……这位是谁[line 3]？
+[k]
+
+？1：[line 3]咦？
+？！
+
+[charaFace F 6]
+＠玛修
+[line 3]哎？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout F 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠克洛伊
+[line 3]唔？
+[k]
+
+[bgm BGM_EVENT_35 0.1]
+
+[charaFace E 1]
+＠克洛伊
+啊，跑来这里了呢。
+[k]
+
+？1：[line 3]小黑！？
+？！
+
+[charaFace E 0]
+＠克洛伊
+这里就是迦勒底啊。哎～。[r]建筑非常时髦。虽然缺少了些情趣。
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk F]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+[charaFace F 14]
+[charaFadein F 0.1 2]
+＠玛修
+小黑小姐……！……[r]居然如此若无其事地……接受了……？
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠Dr.罗曼
+这……这究竟是什么情况……！？
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠克洛伊
+啊哈哈。[r]其实我也稍微有些惊讶。
+[k]
+
+[charaFace E 0]
+＠克洛伊
+我听着[%1]和玛修的对话，[r]就开始逐渐觉得哦？
+[k]
+
+＠克洛伊
+觉得[#迦勒底:你们这里]的任务好像很好玩。
+[k]
+
+＠克洛伊
+当听到今后已经没有机会看到你们这里样子的时候，[r]我内心确实产生了留恋。
+[k]
+
+＠克洛伊
+这或许算是第一淑女的恶作剧吧。[r]类似将身体借给她的回报之类的？
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠Dr.罗曼
+……恶……恶作剧未免过头了点吧？
+[k]
+
+[charaFace B 5]
+＠Dr.罗曼
+那可以认为你有希望成为我们迦勒底一员的意思吗？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.5]
+[se ad42]
+[charaChange E 98103400 0 fade 1.0]
+[wait charaChange E]
+
+＠克洛伊
+[line 3]嗯。我希望。[r]求之不得。
+[k]
+
+？1：现在的你究竟是从者？　还是魔法少女？
+
+＠克洛伊
+不知道耶[line 3]至少我不打算当什么英灵？[r]我的魔法少女成分其实也很薄弱哦。
+[k]
+
+[charaFace E 4]
+＠克洛伊
+这样啊……[r]所以才只有我被召唤了啊……？
+[k]
+
+？2：得赶快制作禁止接触从者清单才行！
+
+[charaFadeout E 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+＠玛修
+您担心的是这个问题吗！？[r]我对这样的御主倒是有几分担心……！？
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠克洛伊
+你们在说什么呢？[line 3]没关系，一定能顺利。[r]我知道从者也是有各式各样的。
+[k]
+
+？！
+
+＠克洛伊
+总之我知道现在我是靠这座设施的魔力生存的。[r]算是魔法少女类型的从者吧？
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠Dr.罗曼
+又增加了奇怪的分类……[r]虽然达·芬奇亲应该会很高兴的……唔唔唔……
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠克洛伊
+居然真的有抱头烦恼的人耶，[r]在漫画之外我还是第一次看到。
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk F]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+[charaFace F 12]
+[charaFadein F 0.1 2]
+＠玛修
+但……但是小黑小姐？[r]您和伊莉雅小姐以及美游小姐会[line 3]
+[k]
+
+[charaFace E 1]
+＠克洛伊
+啊啊，那个啊？[r]不用担心啦，玛修。
+[k]
+
+[charaFace E 0]
+＠克洛伊
+[#另一个我]确实和[r]伊莉雅以及美游一起回到原来的世界了。
+[k]
+
+＠克洛伊
+只有这点，我很确定。
+[k]
+
+＠克洛伊
+啊，原来如此。
+[k]
+
+＠克洛伊
+在[#迦勒底:这里]，[%1]是[r]唯一的魔术师，也是唯一的御主适任者吧。
+[k]
+
+＠克洛伊
+那我就在此郑重向御主宣告[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠克洛伊
+我是克洛伊·冯·爱因兹贝伦。[r]今后请多指教了哦，御主。
+[k]
+
+[charaFace E 4]
+＠克洛伊
+……但你还是没有御主的气场呢。[r]叫[%1][charaFace E 0][&大哥哥:大姐姐]可以吗？
+[k]
+
+[charaFace E 1]
+＠克洛伊
+[line 3]啊，对了。[r]偶尔也要麻烦你提供一下魔力哦？
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk F]
+[charaFace E 1]
+[charaFadein E 0.1 0]
+[charaFace F 14]
+[charaFadein F 0.1 2]
+＠玛修
+不行！
+[k]
+
+[charaFace E 5]
+＠克洛伊
+啊～，好狡猾。不能一个人独占啦，玛修。[r]独占欲可是魔法少女堕落的开始哦。
+[k]
+
+[charaFace F 11]
+＠玛修
+不……不是这个问题啦！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠Dr.罗曼
+……真是的，[%1]的[r]辛苦程度又要增加了……？
+[k]
+
+
+[messageOff]
+[fadeout black 3.0]
+[bgmStop BGM_EVENT_35 3.0]
+[wait fade]
+[soundStopAll]
+[end]
+

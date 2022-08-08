@@ -1,0 +1,672 @@
+
+
+＄03-00-01-10-1-1
+[soundStopAll]
+
+[charaSet A 1098126400 1 帕茨西]
+[charaSet B 7030001 1 阿塔兰忒·Alter]
+[charaSet C 99502600 1 玛修]
+[charaSet D 9005001 1 福尔摩斯]
+[charaSet E 98002000 1 芙芙]
+[charaSet H 5009000 1 特效用dummy]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[scene 54100]
+
+[fadein black 1.0]
+[se ad555]
+[seVolume ad555 0 0.3]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠帕茨西
+你们还是那么厉害呢……
+[k]
+
+[charaFace A 0]
+
+[seStop ad555 2.0]
+
+＠帕茨西
+唔？[r]这股气味是什么？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠阿塔兰忒·Alter
+……不是魔兽呢。是雅嘎的血腥味吗。[r]姑且搜索一下吧。尽管希望很渺茫。
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[wait fade]
+[charaFadeout B 0.1]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠帕茨西
+喂，找到了哦。[charaFace A 3][r]虽说找到了……
+[k]
+
+？1：怎么了？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+这是……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠玛修
+已经死了啊。[r]是被魔兽杀害的吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+不，不对。[r]这是……被武器杀害的。
+[k]
+
+＠阿塔兰忒·Alter
+而且还相当锐利。[r]………雅嘎的直剑或劈刀是砍不出这种切口的。
+[k]
+
+＠阿塔兰忒·Alter
+毕竟与[#旧种:人类]不同，他们的皮肤比较结实。[r]除了凭蛮力硬砍以外，是无法斩断的。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 2]
+[charaTalk C]
+[charaFace A 0]
+[charaFadein A 0.1 0]
+[charaFace C 7]
+[charaFadein C 0.1 2]
+
+＠玛修
+难道是使用刀具的雅嘎猎人之类的。[r]或者是，具备这种锐利刀刃的魔兽？
+[k]
+
+＠帕茨西
+这我可闻所未闻啊……[r]而且这个足迹……
+[k]
+
+＠帕茨西
+这是你们旧种留下的。[r]不是我们雅嘎的足迹。
+[k]
+
+[charaFace C 6]
+
+＠玛修
+和我们一样……？
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.5 1.0]
+[bgm BGM_EVENT_81 0.5 0.4]
+[wait wipe]
+
+[scene 10000]
+
+[charaPut H 1200,1200]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[wipein leftToRight 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+[wt 0.1]
+
+[charaSet C 98001000 1 玛修]
+[charaTalk C]
+[charaFace D 0]
+[charaFadein D 0.1 -256,-50]
+[charaFace C 12]
+[charaFadein C 0.1 256,-50]
+[scene 51601]
+[wt 0.1]
+[wipeFilter cinema 0.5 0]
+[fadein black 0.5]
+[wait fade]
+
+＠玛修
+这么说来，此前我们听到过有一位[r]从盗贼手下保护了雅嘎村庄的人……
+[k]
+
+＠福尔摩斯
+嗯。就是瞬间砍断了盗贼手臂的那位吧。[r]虽然有可能是同一人物，但用来判断的线索太少了。
+[k]
+
+＠福尔摩斯
+也有可能是未知的从者。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[charaSet C 99502600 1 玛修]
+
+[scene 10000]
+[wipeOff]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout leftToRight 0.1 1.0]
+[wait wipe]
+
+[scene 54100]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.1]
+
+[wipein leftToRight 0.5 1.0]
+[bgm BGM_EVENT_81 0.5 1.0]
+[wait wipe]
+
+
+＠阿塔兰忒·Alter
+大家还是多加小心吧。[charaFace B 0][r]好了，太阳很快就要落山了。
+[k]
+
+[charaFace B 1]
+
+＠阿塔兰忒·Alter
+先到那边的洞窟里休息吧。[r]帕茨西，就麻烦你给猎物放血了。
+[k]
+
+[messageOff]
+[wipeout rightToLeft 1.0 1]
+[bgmStop BGM_EVENT_81 1.0]
+[wait wipe]
+[charaFadeout B 0.1]
+[scene 54701]
+[cameraMove 0.1 10,80 1.5]
+[wt 1.0]
+[wipein leftToRight 0.7 1]
+[cameraMove 2.5 -10,80 1.5]
+[se ad11]
+[seVolume ad11 0 0.2]
+[se ade24]
+[seVolume ade24 0 0.6]
+[wait wipe]
+
+[bgm BGM_EVENT_77 0.1]
+
+[wt 1.2]
+
+[fadeout black 0.7]
+[seStop ade24 0.7]
+[seStop ad11 0.7]
+[wait fade]
+
+[cameraHome 0.1]
+[wt 0.5]
+
+[fadein black 0.7]
+[wait fade]
+[wt 1.0]
+
+？1：唔噗……
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠帕茨西
+这股血腥味对旧种来说太强烈了吗。
+[k]
+
+＠帕茨西
+只要放完血后再放入混合了盐与药草的水中浸泡，[r]就能祛除掉一些腥味了，再稍等一会吧。
+[k]
+
+＠帕茨西
+内脏则分开处理。[r]煮透后放进皮革袋子里，可以用来引诱魔兽。
+[k]
+
+＠帕茨西
+在情况危急的时候，只要把这玩意扔出去，[r]魔兽们就会被它的气味引开。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+
+＠阿塔兰忒·Alter
+内脏不能吃吗？
+[k]
+
+＠帕茨西
+唔～，也不是不能吃啦。[r]就是好不好吃的问题。而且毒性很强。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠玛修
+就是说含有毒素吧。
+[r]我们还是别吃了吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠帕茨西
+嗯。但背脊部分的肉是没有[#毒:涩味]的。[r]给你，这肉已经烤好了。吃吧吃吧。
+[k]
+
+[messageOff]
+[se adm27]
+[wt 0.3]
+[se adm26]
+[seVolume adm26 0 0.1]
+[wt 1.2]
+
+？1：一股野性的味道……
+
+[seStop adm26 0.2]
+
+＠帕茨西
+是吧？
+[k]
+
+？2：熊肉吃起来就是这种口感呢。
+
+[seStop adm26 0.2]
+
+＠帕茨西
+熊是什么样的生物？[r]弱吗？　好吃吗？　够填饱肚子吗？
+[k]
+
+？！
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaMoveReturn E 0,10 0.4]
+
+＠芙芙
+芙姆芙姆。[wt 0.2][charaMoveReturn E 0,10 0.4]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠帕茨西
+这家伙真是只越看越觉得不可思议的生物呢……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+对吾等而言，没有比雅嘎更不可思议的存在了哦。
+[r]汝等到底是如何在这极寒世界中生存下来的呢。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠玛修
+这里是夜晚或天冷时气温会突破零下100度的环境。[r]就算是与魔兽合成[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+[bgmStop BGM_EVENT_77 0.7]
+
+＠帕茨西
+……你们可千万别向其他雅嘎问这个问题哦。[r]不然就是踏入了禁忌的领域。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠帕茨西
+在我们的枪械还不足以猎杀魔兽的时候……[r]确实存在过弱者为肉的时代。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaPut H 2]
+[charaFace B 5]
+[charaFadein B 0.1 0]
+[charaFace C 6]
+[charaFadein C 0.1 2]
+
+＠全员
+！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_76 0.1]
+
+＠帕茨西
+你们以前……也对自己的家畜做过这种事吧？[r]就是所谓的品种改良。
+[k]
+
+＠帕茨西
+我们也是靠这样存活下来的。
+[k]
+
+＠帕茨西
+淘汰弱者，对胜利者与失败者进行分析，[r]唯有强者才会得到尊崇。
+[k]
+
+＠帕茨西
+沉溺于魔兽力量的家伙，没能坚持下去的家伙，[r]以及陷入绝望的家伙都沦为了粮食。
+[k]
+
+＠帕茨西
+接下来是把罹患疾病的家伙与其孩子当做粮食。[r]再然后就是把纯粹的弱者当作粮食。
+[k]
+
+＠帕茨西
+做到这种地步后，才算是从魔兽与[#旧种:人类]的合成体[r]化为了真正的“雅嘎”。
+[k]
+
+＠帕茨西
+我从父亲那听说过。[r]……原本的单词好像是叫[#芭芭雅嘎:Баба-яга]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠玛修
+芭芭雅嘎……是斯拉夫民族传承中的巫婆呢。[r]据说是一个食人魔女。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠帕茨西
+似乎就是取自这个词语。
+[k]
+
+＠帕茨西
+意味着我们是与身为弱者的[#旧种:人类]诀别的[r]强者[line 3]也就是“雅嘎”。
+[k]
+
+＠帕茨西
+也有可能[#食人魔女]这层含义更为重要吧。
+[k]
+
+＠帕茨西
+……总之就是这么一回事啦。[r]为了让我们绝对不要忘记自己曾经的所作所为。
+[k]
+
+＠帕茨西
+某个人给我们起名为雅嘎。[r]所以说，我和你们果然是不同的。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠玛修
+……或许吧。
+[k]
+
+＠玛修
+我们很弱小，很脆弱，[r]所以才会紧密团结在一起。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+……说实在的，我其实与这雅嘎的世界[r]更合得来，但是[line 3]
+[k]
+
+[charaFace B 4]
+
+＠阿塔兰忒·Alter
+孩子们就另当别论了。[r]若只是成人间相争相食，我是很欢迎的。
+[k]
+
+？1：你很喜欢小孩子吧。
+？2：就算成了Alter也没有改变。
+？！
+
+[charaFace B 3]
+＠阿塔兰忒·Alter
+……要你多嘴。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠帕茨西
+……或许就是因为这点，[r]你才会被奉为老大吧。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_76 1.0]
+[wait fade]
+[charaFadeout A 0.1]
+[wt 1.0]
+[cameraMove 0.1 0,-18 1.2]
+[se ad11]
+[seVolume ad11 0 0.1]
+[se ade24]
+[seVolume ade24 0 0.3]
+[wipeFilter cinema 0.5 0]
+[fadein black 0.7]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠
+[line 3]入夜后再度刮起的暴风雪没有停止。[r]结果，我们一直等到了第二天早上。
+[k]
+
+＠
+虽说到早上也只意味着[r]从漆黑变为了昏暗而已……
+[k]
+
+＠
+但对雅嘎的眼睛来说，这已经足够了。
+[k]
+
+＠
+总之这样一来，也能看清[r]在漆黑洞窟里沉睡的[%1]了。
+[k]
+
+＠
+虽然[&他:她]闭着眼睛，[r]但其实却在与影像中的玛修悄悄地说些什么。
+[k]
+
+＠
+……就算是我，也有点顾忌，[r]不敢去偷听[&他们:她们]的对话。
+[k]
+
+＠
+而且从表情看来，应该不是在说什么[r]要紧的事，更不是在谈论自己吧。
+[k]
+
+＠
+至于阿塔兰忒嘛，[r]她闭着眼睛，但也只是闭着眼睛而已。
+[k]
+
+＠
+我只要看她一眼，她就会微微皱起眉头。[r]我赶紧移开了视线。
+[k]
+
+＠
+只要再多看一秒，她一定就会睁开眼睛。
+[k]
+
+＠
+阿塔兰忒并非雅嘎。[r]但比起旧种，她的样子更接近雅嘎。
+[k]
+
+＠
+因此，她才会受雅嘎们信任吧。[r]毕竟彼此[#只是有些许]不同的存在。
+[k]
+
+＠
+……[%1]则不然。[r]不仅外表，就连根本的部分都与雅嘎有所不同。
+[k]
+
+＠
+在非常遥远的过去。[r]由于无法忍受，而被抛弃的某种存在。
+[k]
+
+＠
+那就像小小的棘刺般，扎进了我的心口。
+[k]
+
+＠
+……我放弃了继续思考。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+
+＠
+我闭上了眼睑。[r]陷入了梦乡，不再思考任何事了。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 2.0]
+[seStop ade24 2.0]
+[seStop ad11 2.0]
+[wt 2.5]
+[soundStopAll]
+[end]

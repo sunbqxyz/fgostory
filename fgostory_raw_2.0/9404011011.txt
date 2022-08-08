@@ -1,0 +1,750 @@
+
+＄94-04-01-10-1-1
+
+[soundStopAll]
+
+
+[charaSet A 98100400 1 玛修]
+[charaSet B 1040000 1 葛饰北斋]
+[charaSet C 1008300 1 齐格飞]
+[charaSet D 1098117301 1 尼禄]
+[charaSet E 1098177300 1 卡米拉]
+[charaSet F 6019300 1 风魔小太郎]
+[charaSet G 1098176810 1 刑部姬]
+[charaSet H 10001002 1 谜之Alterego P]
+[charaSet J 98115000 1 特效用]
+
+[scene 10000]
+
+[cameraMove 0.1 0,0 1.01]
+[bgm BGM_EVENT_80 0.1]
+[wt 0.3]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad171]
+[wt 0.2]
+
+[effect bit_talk_kengekiall02]
+[se ad32]
+[wt 0.4]
+[se ad170]
+[wt 0.3]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 80600]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+[fadein black 0.5]
+[wait fade]
+
+[se ad618]
+[charaEffect H bit_talk_14]
+[charaShake H 0.02 3 3 0.8]
+[charaFace H 4]
+[wt 0.3]
+
+＠谜之Alterego P
+呀啊啊啊啊啊[line 4]…………！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠葛饰北斋
+嘿，胜负已定……！
+[k]
+
+＠葛饰北斋
+这十根钢铁手指真是了不得啊，[r]不过还是我的四刀流更厉害！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠谜之Alterego P
+对……如针扎般小家子气的攻击太烦了，[r]我简直受不了了……
+[k]
+
+[bgmStop BGM_EVENT_80 0.6]
+
+[charaFace H 2]
+＠谜之Alterego P
+但我满溢的热情是无法阻止的！[r]先不管这些了，总之我砍！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaPut J 1]
+[charaEffect J bit_talk_43h]
+
+
+[charaFace H 2]
+[charaMove H 0,-15 0.1]
+[effect bit_talk_v_slash01]
+[wt 0.1]
+[se ad85]
+[wt 0.1]
+[charaFadeout H 0.1]
+[charaPut J 2000,2000]
+[wt 0.6]
+
+[charaTalk off]
+[charaDepth E 1]
+[charaDepth F 2]
+[charaDepth G 3]
+
+[charaFace E 2]
+[charaFace F 13]
+[charaFace G 9]
+[charaFadein E 0.1 -256,0]
+[charaFadein F 0.1 256,0]
+[charaFadein G 0.1 1]
+＠卡米拉＆刑部姬＆风魔小太郎
+！
+[k]
+
+
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[effect bit_talk_haboob_01 0,-200]
+[effect bit_talk_haboob_02 0,-200]
+[charaEffectStop J bit_talk_43h]
+[fowardEffect bit_talk_impactlanding]
+[wt 0.2]
+[se ad628]
+[shake 0.05 3 3 1.5]
+[wt 4.0]
+[seStop ad628 1.0]
+[effectStop bit_talk_haboob_01]
+[effectStop bit_talk_haboob_02]
+
+
+[charaTalk depthOff]
+
+[charaFace E 5]
+[charaFadein E 0.4 -256,-100]
+
+[charaFace G 7]
+[charaFadein G 0.4 0,-100]
+
+[charaFace F 9]
+[charaFadein F 0.4 256,-100]
+
+[wt 2.0]
+[fowardEffectStop bit_talk_impactlanding]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠谜之Alterego P
+……咦？　没有碎？
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[se ad7]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.2 0,-30]
+[charaMove G 1 0.2]
+[wt 0.6]
+
+＠刑部姬
+怎么会碎啦！[bgm BGM_EVENT_94 0.1][r]还好我们在千钧一发之际躲开了啊！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠风魔小太郎
+谢谢大家。[r]我们趁各位战斗时摆脱了束缚。
+[k]
+
+？1：太好了……！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠卡米拉
+嗯，确实……[r]我可不想体验被铁处女关起来的感觉。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+？2：话说这也太Passion了吧？
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠谜之Alterego P
+对！　因为是夏天嘛！[r]我可不能输给Melt！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+？！
+
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠葛饰北斋
+真是个危险的女人。[r]难道她真心想让小太郎他们彻底扑街吗？
+[k]
+
+＠葛饰北斋
+我读过恐吓信了。[r]也就是说，你是水天宫派来的刺客吧？
+[k]
+
+＠葛饰北斋
+你之所以恐吓我们，[r]是因为想在御前比试前暗算我们吧？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠谜之Alterego P
+………………[r]（同情的眼神。）
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠葛饰北斋
+为什么不说话！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠谜之Alterego P
+不，我只是有些同情你们……
+[k]
+
+＠谜之Alterego P
+反正各位又赢不了Melt，[r]Melt根本没必要派刺客……
+[k]
+
+[charaFace H 8]
+
+＠谜之Alterego P
+其实我也是想要摧毁水天宫那方的……[r]但因为看到各位打算有勇无谋挑战水天宫……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+
+＠葛饰北斋
+唔[messageShake 0.02 3 3 0.6]哎哎哎！？[r]为什么要哭啊！？
+[k]
+
+＠葛饰北斋
+换你来，换你来，御主！[r]我和这样的女人天生八字不合！
+[k]
+
+？1：好吧。请问你的名字是？
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠尼禄
+那家伙叫做Passionlip。[r]是BB制造的Alterego之一。
+[k]
+
+＠尼禄
+和余多少有些许渊源。尽管看起来是个危险的从者，[r]但余可以保证，她不是坏人。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？2：你好，Passionlip。
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠H：Passionlip
+你好，[%1]。[r]泳装很适合你呢！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠刑部姬
+不是，气氛怎么缓和下来了！？[r]刚才[#公主:我]们可是差点被她杀掉啊！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠H：Passionlip
+[line 3]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠刑部姬
+我没看错吧？[r]你怎么一副『哎。那又怎样？』的表情？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+
+[charaFace G 2]
+[charaFadein G 0.1 2]
+
+＠卡米拉
+冷静点，刑部姬。
+[k]
+
+＠卡米拉
+跟这种精……[r]不，跟这种天真的小姑娘怄气也无济于事啊
+[k]
+
+＠卡米拉
+保持冷静、理性才是上策。
+[k]
+
+[charaFace G 0]
+
+＠刑部姬
+不愧是卡米拉大姐。[r]毕竟在对付伊丽亲的时候吸取了很多教训呢。
+[k]
+
+[charaFace E 2]
+
+＠卡米拉
+[f large]别再提这件事了。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_94 1.0]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+……那个，Passionlip小姐。[r]您为什么要绑架小太郎先生他们呢？
+[k]
+
+＠玛修
+您非但不是水天宫派来的刺客，[r]还自称与水天宫为敌……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠H：Passionlip
+这个嘛……[bgm BGM_EVENT_70 0.1][r]……唔……该怎么说才好呢……
+[k]
+
+＠H：Passionlip
+正所谓『敌人的敌人就是敌人』……[r]而且我也不知道你们的实力值不值得信任……
+[k]
+
+？1：敌人的敌人难道不是朋友吗？
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠卡米拉
+一般来说是这样。[r]不过我同意那个小姑娘的看法。
+[k]
+
+＠卡米拉
+无论何时何地，敌人就是敌人。[r]而『敌人的敌人』只不过是扰乱局面的障碍罢了。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+？2：Believe my justice。
+
+[charaFace H 1]
+
+＠H：Passionlip
+我知道，毕竟你是我们的[%1]嘛！
+[k]
+
+[charaFace H 0]
+
+＠H：Passionlip
+……啊。[r]不过这次和正义完全无关哦。
+[k]
+
+＠H：Passionlip
+区区正义是无法对抗Melt的残虐行为的。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠尼禄
+哎，快继续往下说啦！[r]不要被lip的节奏迷惑了！
+[k]
+
+[charaFace D 5]
+
+＠尼禄
+Alterego Passionlip。[r]是由某个少女的『爱憎』而生的存在。
+[k]
+
+＠尼禄
+汝与水天宫的Alterego关系不简单吧？
+[k]
+
+＠尼禄
+好像是姐妹。[r]也可以算搭档。
+[k]
+
+＠尼禄
+所以汝为何要摧毁水天宫，[r]并且还企图将吾等排除在外？
+[k]
+
+＠尼禄
+与同样想摧毁水天宫的人为敌岂不是下策？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠H：Passionlip
+我没法告诉你们原因。[r]因为……
+[k]
+
+＠H：Passionlip
+我的理由很幼稚啊。[r]我就是不想让Melt一个人出风头。
+[k]
+
+？1：……（原来如此）……
+？2：……（就是这个问题啦，Lip）……
+
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠尼禄
+唔嗯，是这样啊。余能理解汝的心情。
+[k]
+
+＠尼禄
+毕竟C狐比余先穿上泳装的时候，[r]余也曾想过毁灭所有Lancer。
+[k]
+
+[charaFace D 5]
+
+＠尼禄
+可这无法构成袭击卡米拉他们的理由。[r]快坦白吧。
+[k]
+
+＠尼禄
+否则汝就要作为难以沟通的失控机车，[r]成为难以忘怀的夏日回忆了哦？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠H：Passionlip
+唉……这就麻烦了……明明是你们不好，[r]却导致我的评价下降……
+[k]
+
+[messageOff]
+[wt 1.2]
+
+[charaFace H 0]
+＠H：Passionlip
+……真没办法。那我就说了吧。
+[k]
+
+＠H：Passionlip
+Melt……不对，Lambdaryllis是将弱者[r]转化为经验值成长起来的Alterego。
+[k]
+
+＠H：Passionlip
+所以，弱小的人进攻水天宫只会让Melt变得更强……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠齐格飞
+原来如此。半吊子实力的人进去只是送人头而已。[r]只有真正的强者才能挑战水天宫。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠H：Passionlip
+没错。如今的Melt[r]已经得意忘形地变成Lancer职阶了……
+[k]
+
+＠H：Passionlip
+所以我希望Saber职阶的人[r]能去把她打得落花流水。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠风魔小太郎
+你们不是姐妹吗？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠卡米拉
+你在说什么呢？[r]正因为是姐妹才会这样啊。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.0]
+[se ad119]
+[seVolume ad119 0 0.7]
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+[charaShake F 0.03 4 4 0.6]
+
+＠风魔小太郎
+（一家人难道不该和和睦睦的吗！？）
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[seStop ad119 0.5]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠葛饰北斋
+嗯，好吧，我明白了。[r]总之你有你的理由。
+[k]
+
+[bgm BGM_EVENT_82 0.1]
+[charaFace B 10]
+＠葛饰北斋
+只要派Saber职阶去就行了吧？[r]这你就不用担心了。
+[k]
+
+＠葛饰北斋
+我本来就是Saber职阶，[r]最适合克制那位泳装剑豪。
+[k]
+
+[charaFace B 17]
+＠葛饰北斋
+（只是……[r]　那家伙似乎说了些奇怪的话……）
+[k]
+
+[charaFace B 11]
+
+＠葛饰北斋
+罢了。拿下水天宫的任务就交给我们吧。[r]这回轮不到你出场。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠H：Passionlip
+哎。轮得到哦。
+[k]
+
+[charaFace H 5]
+
+＠H：Passionlip
+因为按照这个发展，我也会成为你们的伙伴呀。[r]我说得没错吧，[%1]？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠卡米拉
+她这么说哦。[r]你有何打算，御主？
+[k]
+
+？1：放任不管也挺危险的……
+？2：lip无疑是张王牌。
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠H：Passionlip
+嗯！　Passionlip会努力的！
+[k]
+
+＠H：Passionlip
+不论什么东西，只要有足够时间，我都能将其变为方块。[r]所以万一有什么突发情况，我会连同整座赌场噗地压缩起来！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠刑部姬
+嗯。这就是个怪兽。[r]哪怕成为同伴还是很危险啊，御亲。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,250 @@
+
+＄94-05-34-02-2-1
+
+[soundStopAll]
+[charaSet A 8001600 1 玛修]
+[charaSet B 1098197700 1 琰女]
+[charaSet C 6024000 1 斯卡哈·斯卡蒂]
+[charaSet D 1098176810 1 刑部姬]
+[charaSet E 4037000 1 尼莫]
+[charaSet F 25006000 1 ？？？]
+[charaSet G 98115000 1 通讯用]
+
+[scene 98300]
+[fadein black 2.0]
+[wait fade]
+
+[wt 0.7]
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+能看见！　能用肉眼确认一定距离内的虚数性敌人[r]以及形似海沟的壮观地形！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+＠琰女
+姑且算是成功了。但我无法将接收不到声音的敌人[r]化作影像，所以千万不要过于依赖我哦！
+[k]
+
+＠琰女
+还有，地形只是根据战斗声回音来推测的暂定影像。[r]后续再参考海图之类的加以改善吧。
+[k]
+
+[charaFace B 2]
+＠琰女
+好了，大致收拾完毕后就开始救援作业吧！[r]声音比刚才更微弱了！
+[k]
+
+＠琰女
+大概贴在左侧外壳上，一旦松手的话……[r]要尽力想办法在那之前赶上啊，玛修小姐～！！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+[charaShake C 0.03 2 0 1.0]
+＠斯卡哈·斯卡蒂
+唔唔～，轻轻地伸出这柄[#来源不明的朱枪:迦耶伯格？]，[r]让对方抓住……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠刑部姬
+这位女神大人真没用～！　拿你没辙，[r][#公主:我]会折一支救援队出来，玛修用肉眼去确认发现一下！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+明白……[twt 0.4][charaFace A 2]……啊，看到了！！　就在那边！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠刑部姬
+近视眼真不好过！　帮忙带路吧！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠玛修
+是！！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad2]
+[seVolume ad2 0 0]
+[seVolume ad2 0.7 0.15]
+[effect bit_talk_41]
+[cameraMove 1.2 0,0 1.1]
+[shake 0.03 2 3 2.2]
+[wt 2.2]
+[seStop ad2 1.0]
+[shake 0.03 0 2 0]
+[effectStop bit_talk_41]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠刑部姬
+看到了！　去吧，千代纸救援队！！[r]急造宝具，『[#白鹭城·海猿出动:Hakurojyou Sea Monkeys]』
+[k]
+
+[messageOff]
+[charaEffect D bit_talk_36]
+[se ad39]
+[wt 1.5]
+
+[bgm BGM_EVENT_80 0.4 0.5]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[cameraMove 0.1 0,0 1.0]
+[shakeStop]
+[charaFadeout D 0.1]
+[charaEffectDestroy D bit_talk_36]
+[charaSet A 1098197800 1 玛修]
+[scene 99002]
+[wt 0.7]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[wt 0.2]
+[charaPut G 1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠玛修
+『[line 2]太好啦，成功了！　救援成功！』
+[k]
+
+？1：尽管[#海猿:Sea Monkey]大概不是那意思。
+？2：太好啦！
+
+？！
+
+[charaFace A 2]
+＠玛修
+『救援部队即将归队！[r]　尼莫船长，请您操纵气闸室！』
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠尼莫
+明白。[r]本舰会郑重地迎接客人。
+[k]
+
+[charaFace E 6]
+＠尼莫
+……该怎么说呢，[%1]。
+[k]
+
+＠尼莫
+明明是无畏级的异常事态，[r]我却很放肆地感到兴奋不已。
+[k]
+
+＠尼莫
+化作死地的虚数之海中的漂流者。[r]究竟会是个什么样的人物呢？
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout E 0.1]
+[scene 10000]
+[wt 0.7]
+[wt 1.0]
+
+＠玛修
+于是乎，我们顺利营救了『漂流者』，
+[k]
+
+＠玛修
+然而这时的我们做梦都没有想到，[r]『漂流者』竟会是『那个人』……
+[k]
+
+[messageOff]
+[scene 99002]
+[wt 1.5]
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠？？？
+唔呵呵……哎嘿嘿……
+[k]
+
+＠？？？
+太好了，还以为会始终不被人发现，就此化作[r]虚数的海藻消失呢……海藻……海蕴……真像呢，唔呵呵……
+[k]
+
+＠？？？
+啊，这些非常好吃呢……哎嘿嘿……[r]人类的温柔……同情心……唔呵呵……我喜欢人类……
+[k]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.4 1]
+[wt 1.0]
+＠？？？
+啊……忘记自我介绍了……唔呵呵，对不起！
+[k]
+
+＠？？？
+[#从者]·[#降临者:Foreigner]。[r]真名，[#如各位所见]，[#是梵高]！　哎嘿嘿！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,470 @@
+
+
+
+
+
+＄94-04-30-02-1-0
+
+[soundStopAll]
+
+[charaSet A 2039000 1 南丁格尔·圣诞]
+[charaSet B 99502600 1 玛修]
+[charaSet C 1098123210 1 戈尔德鲁夫]
+[charaSet D 11003001 1 贞德·Alter]
+[charaSet E 4022000 1 圣诞Alter]
+[charaSet F 7011002 1 大流士三世]
+[charaSet J 1098120900 1 通讯用杂音]
+
+[scene 21803]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠南丁格尔·圣诞
+是雪原啊……[r]这里并不适合人类长期生存。
+[k]
+
+[charaFace A 0]
+
+＠南丁格尔·圣诞
+御主，防寒装备准备好了吗？
+[k]
+
+？1：万无一失。
+？！
+
+＠南丁格尔·圣诞
+这些还不够。[r]这是口罩，还有护目镜和帽子。
+[k]
+
+＠南丁格尔·圣诞
+暖手炉带了吧？[r]还有保温的食物和……
+[k]
+
+[messageOff]
+[charaMoveReturn A 10,0 0.6]
+[se ad77]
+[wt 0.6]
+[charaMoveReturn A -10,0 0.6]
+[wt 1.0]
+
+[charaFace A 6]
+
+＠南丁格尔·圣诞
+脖子的防护还是不太严实呢。[r]给，这是围巾。
+[k]
+
+[messageOff]
+[charaMoveScale A 1.1 0.3]
+[charaMove A 0,15 0.3]
+
+[se ade385]
+[wt 1.2]
+[seStop ade385 0.5]
+[wt 0.5]
+
+[charaMoveScale A 1.0 0.3]
+[charaMove A 0,0 0.3]
+[wt 0.5]
+
+？1：谢谢……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[se ad13]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠玛修
+御主变得胖乎乎了……
+[k]
+
+
+[branchQuestNotClear lblNotClear 3000320 4]
+
+[branch lblConf]
+[label lblNotClear]
+
+[charaFace B 0]
+
+[branch lblNotClear_out]
+[label lblConf]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠戈尔德鲁夫
+（真是个爱操心的从者……）
+[k]
+
+[charaFace C 11]
+
+＠戈尔德鲁夫
+（不过对[%1]来说或许刚刚好。[r]　[&他:她]就该被看得紧一点。）
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[label lblNotClear_out]
+
+＠玛修
+咳咳。
+[k]
+
+[charaFace B 7]
+
+＠玛修
+御主，前方不远处有从者反应。
+[k]
+
+＠玛修
+不过似乎并没有在战斗，[r]不如先去打听一下吧。
+[k]
+
+？1：明白啦！
+？！
+
+[messageOff]
+[se ad601]
+[wt 0.5]
+
+[fadeout black 1.0]
+[seStop ad601 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[effect bit_talk_snowstorm_01]
+[se ad555]
+[seVolume ad555 0 0]
+[wt 1.0]
+
+[fadein black 1.0]
+[seVolume ad555 1.0 0.6]
+[wait fade]
+
+[wt 2.0]
+
+？1：暴风雪越来越大了……
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠南丁格尔·圣诞
+等等，御主。[r]那里有微弱的灯光。
+[k]
+
+＠南丁格尔·圣诞
+说不定是刚才的从者反应，[r]我们去看看吧。
+[k]
+
+？1：好！
+？！
+
+[messageOff]
+[se ad601]
+[wt 0.5]
+
+[wipeout leftToRight 1.0 1.0]
+[seStop ad601 1.0]
+[seStop ad555 1.0]
+[wait wipe]
+
+[effectDestroy bit_talk_snowstorm_01]
+[charaFadeout A 0.1]
+
+[scene 54700]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠贞德·Alter
+……[r]……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠圣诞Alter
+……[r]……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠贞德·Alter
+我说那边的圣诞老人。[r]太无聊了，快表演个才艺啦。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠圣诞Alter
+圣诞老人可不是表演才艺的人。[r]圣诞老人是利用喷气飞到空中投放礼物的人。
+[k]
+
+＠圣诞Alter
+倒不如你来表演个才艺吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠贞德·Alter
+我不正在表演吗？[r]我在点燃极致的火焰啦。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠大流士三世
+……[r]……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠圣诞Alter
+只是点个蜡烛而已吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠贞德·Alter
+虽说我可能没什么资格这么说，[r]但你对这家伙的态度也太敷衍了吧！
+[k]
+
+？1：我还以为是灯光呢。
+？2：结果是大流士三世。
+？！
+
+[charaFace D 0]
+
+＠贞德·Alter
+什么嘛，御主亲。[r]你来这种地方[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠南丁格尔·圣诞
+哎呀。[r]这不是不健康二人组嘛。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth E 2]
+[charaDepth D 1]
+
+[charaFace E 5]
+[charaFace D 5]
+[charaFadein E 0.1 0]
+[charaFadein D 0.1 2]
+
+＠二人
+……！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠南丁格尔·圣诞
+你们不该在这里浪费时间……[r]不对，不该在这里浪费油，而是应该返回迦勒底。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠贞德·Alter
+……说得对。
+[k]
+
+[charaFace D 1]
+
+＠贞德·Alter
+我们的确正打算回去呢，[r]可是发生了不得已的情况。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠圣诞Alter
+嗯，没错。[r]南丁格尔，没想到[#你也]成了圣诞老人。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 1.5]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠南丁格尔·圣诞
+……什么？[r]我可不是什么圣诞老人。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠贞德·Alter
+不用解释了。
+[k]
+
+＠贞德·Alter
+不好意思，你的圣诞资源……[bgm BGM_EVENT_3 0.1][r]归我了！
+[k]
+
+[charaFace D 2]
+
+＠贞德·Alter
+为了获得更强大的圣诞力量！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠大流士三世
+[f large]SANTA……！！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠南丁格尔·圣诞
+原来如此。
+[k]
+
+＠南丁格尔·圣诞
+竟然胡言乱语说我是圣诞老人，[r]还想获得圣诞力量……
+[k]
+
+＠南丁格尔·圣诞
+是精神错乱了吧。[r]幸好安瓿瓶里有镇静剂。
+[k]
+
+＠南丁格尔·圣诞
+御主，请指示。
+[k]
+
+＠南丁格尔·圣诞
+她们是军人。[r]看来不进行战斗是无法为她们治疗的。
+[k]
+
+？1：总……总之开始战斗！
+？！
+
+[charaFace A 2]
+
+＠南丁格尔·圣诞
+嗯，准备出击！[r]上吧！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

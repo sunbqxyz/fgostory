@@ -1,0 +1,112 @@
+＄91-70-11-02-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[scene 20700]
+[charaSet A 8001001 1 玛修]
+[charaSet B 98003003 2 Dr.罗曼]
+[charaSet C 98002000 2 芙芙]
+[charaSet D 7011001 1 大流士三世]
+[charaFace D 2]
+[charaFadein D 0]
+[fadein black 1]
+[wait fade]
+[se ad16]
+[wt 2]
+[seStop ad16 2]
+[se bac10]
+[shake 0.05 0 5 0.5]
+[wait se bac10]
+＠大流士三世
+[image berserker_language_2][line 2]！
+[k]
+
+[se bac10]
+[shake 0.05 0 2 0.5]
+[wait se bac10]
+[wt 0.7]
+[se bac10]
+[shake 0.05 0 2 0.5]
+[wait se bac10]
+＠大流士三世
+[image berserker_language_2][line 2]！！！
+[k]
+
+[charaFadeout D 0.1]
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+呜哇，大流士三世的气势比上次还要猛烈呢！[r]而且这次又到一世纪的罗马战场遗迹了啊！
+[k]
+
+＠Dr.罗曼
+是……是自备电源吗！[r]作为御主有什么感觉吗！？
+[k]
+
+？1：唔～。
+
+？2：气势……比上次还要猛烈呢。
+
+？！
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+攻击速度也比上次有所提升！[r]他明显非常激动！
+[k]
+
+[charaFace A 14]
+＠玛修
+请注意魔力消耗，前辈。[r]Berserker用全力会让御主消耗巨大！
+[k]
+
+[charaFadeout A 0.1]
+[charaTalk C]
+[charaFadein A 0.1 2]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+＠芙芙
+芙呜！　啾～！！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+总……总之！[r]试一下上次相同的方法吧！！
+[k]
+
+＠Dr.罗曼
+再这样下去[%1]可撑不住，[r]趁还没有倒下，尽快歼灭敌人！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+是，医生！[r]前辈！
+[k]
+
+？1：玛修，战斗态势！
+
+？2：消灭大流士手下的漏网之鱼！
+
+？！
+
+[charaFace A 2]
+＠玛修
+明白了，御主！[r]开始战斗！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

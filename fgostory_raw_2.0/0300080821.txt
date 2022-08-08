@@ -1,0 +1,255 @@
+
+
+＄03-00-08-08-2-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5045000 1 阿尔托莉雅]
+[charaSet B 1098124500 1 达·芬奇]
+[charaSet C 1098209600 1 奥伯龙]
+
+[charaSet D 1049000 1 村正]
+
+[charaSet E 4031000 1 瑞德拉·比特]
+
+[charaSet F 1098211500 1 威尔士的妖精_1]
+[charaSet G 1098211600 1 威尔士的妖精_2]
+[charaSet I 1098211500 1 威尔士的妖精_人型]
+[charaSet J 1098211600 1 威尔士的妖精_虫型]
+
+[charaSet L 1098210600 1 回忆用_翁法姆]
+
+[charaSet N 98115000 1 特效用]
+
+[sceneSet H 10000 1]
+[charaScale H 1.01]
+
+[scene 118600]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 26]
+[charaFadein A 0.1 1]
+＠阿尔托莉雅
+怎，怎么感觉黑犬中混了一个[r]极其强悍的敌人……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠瑞德拉·比特
+应该是被黑犬咬到，[r]因疼痛而发狂的妖精吧？
+[k]
+
+？1：和摩耳斯不一样吗？
+
+＠瑞德拉·比特
+是的。妖精之所以会变成摩耳斯，[r]原因在于丧失目的、丧失光辉这一类“无意义化”，
+[k]
+
+＠瑞德拉·比特
+以及与摩耳斯接触引发无意义化的传染，
+[k]
+
+＠瑞德拉·比特
+而“对目的过于热衷以至于迷失自我”的妖精，[r]则会无穷无尽地生成魔力，
+[k]
+
+＠瑞德拉·比特
+最终变得无法维持形体。[r]其实可以称之为邪恶妖精化。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_77 1.0 0.5]
+[fadeout white 0.8]
+[wait fade]
+
+[effect bit_sepia01]
+
+[charaFadeout E 0.1]
+
+[wt 0.2]
+[scene 117202]
+[cameraFilter gray]
+
+[charaTalk off]
+
+[charaFace L 2]
+[charaFadein L 0.1 1]
+
+[wt 0.1]
+
+
+[fadein white 0.8]
+[wait fade]
+
+[wt 1.6]
+
+[fadeout white 0.8]
+[wait fade]
+
+[scene 118600]
+
+[effectStop bit_sepia01]
+[effectDestroy bit_sepia01]
+[cameraFilter normal]
+
+[charaFadeout L 0.1]
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 1.0 1.0]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠阿尔托莉雅
+『无名之森』的妖精们就是这种情况呢……
+[k]
+
+＠阿尔托莉雅
+由于获得了人类，令欲望无法抑制，[r]最后导致同伴间自相残杀。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+？2：黑犬是指什么？
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠阿尔托莉雅
+不知从何时起出现在妖精国，[r]会吃妖精的邪恶妖精。
+[k]
+
+＠阿尔托莉雅
+黑犬是唯一一种会吃妖精的妖精。[r]……不，还有一个例外。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠瑞德拉·比特
+『妖精吞食者』原本是发生在[r]远古时期的一种『大灾厄』，
+[k]
+
+＠瑞德拉·比特
+相传它被当时的牙之氏族长封印起来了。
+[k]
+
+＠瑞德拉·比特
+还有一种说法表示……[r]封印的代价是牙之氏族遭到了诅咒。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk depthOff]
+[charaDepth F 2]
+[charaDepth I 3]
+[charaDepth G 4]
+[charaDepth J 5]
+
+[cueSe SE_21 21_ad1094]
+[seVolume 21_ad1094 0 0.5]
+[charaTalk off]
+[charaFace F 1]
+[charaFace G 1]
+[charaFace I 1]
+[charaFace J 1]
+[charaFadeinFSSideR F 0.4 250,0]
+[charaFadein G 0.4 100,0]
+[charaFadeinFSSideL I 0.4 -350,0]
+[charaFadein J 0.4 -200,0]
+[charaMoveFSSideR F 300,0 0.4]
+[charaMove G 150,0 0.4]
+[charaMoveFSSideL I -300,0 0.4]
+[charaMove J -150,0 0.4]
+
+
+＠威尔士的妖精
+[image npc_language_6:干掉了！　干掉了！][r][image npc_language_6:Bortegen！　Bortegen！]
+[k]
+
+＠威尔士的妖精
+[image npc_language_6:奥伯龙会伤心呢，奥伯龙会高兴呢！][r][image npc_language_5:因为交到了，可靠的朋友呢！]
+[k]
+
+[messageOff]
+[cueSe Servants_603100 bac554]
+[seVolume bac554 0 0.5]
+[charaMoveReturnFSSideR F 300,10 0.25]
+[wt 0.1]
+[charaMoveReturn J -150,10 0.25]
+[wt 0.1]
+[seStop bac554 1.0]
+[charaMoveReturnFSSideL I -300,10 0.25]
+[wt 0.1]
+[charaMoveReturn G 150,10 0.25]
+[wt 0.6]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+妖精们也很高兴呢，[r]看来确实应该赶跑它们。
+[k]
+
+＠达·芬奇
+好了。因为大概得在这里逗留几天，[r]我们做一下露营的准备吧。
+[k]
+
+＠达·芬奇
+既然来都来了，[r]再怎么在意外头的形势也没用啦。
+[k]
+
+＠达·芬奇
+今天就好好地休息，[r]等奥伯龙回来吧。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

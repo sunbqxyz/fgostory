@@ -1,0 +1,469 @@
+
+
+＄94-04-49-08-1-0
+
+[soundStopAll]
+
+[skip false]
+
+[branchQuestNotClear lblNotClear1 3000320 4]
+[label lblClear1]
+[flag IsGirl true]
+[branch lblIsClearConf1]
+[label lblNotClear1]
+[flag IsGirl false]
+[label lblIsClearConf1]
+
+[skip true]
+
+[charaSet A 98002000 1 芙芙]
+[charaSet B 6008000 1 Cosmotic Beauty夫人]
+[charaSet C 99502600 1 玛修]
+[charaSet D 6031001 1 刑部姬]
+[charaSet E 7027300 1 Amazones CEO_普通]
+[charaSet F 1098119600 1 Amazones CEO_轱辘]
+[charaSet G 7034001 1 莎乐美]
+[charaSet J 5009000 1 特效用]
+
+[branch lblNotGirl1 IsGirl false]
+[label lblGirl1]
+[charaSet H 1098124510 1 达·芬奇]
+[branch lblIsGirlConf1]
+[label lblNotGirl1]
+[charaSet H 98111500 1 达·芬奇]
+[label lblIsGirlConf1]
+
+[scene 90000]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.7]
+
+[bgm BGM_EVENT_70 0.1]
+
+？1：呼……呼……
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠芙芙
+芙芙，芙……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠Cosmotic Beauty夫人
+万万，没有想到，[r]内部居然，没有楼梯，也没有电梯啊……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠玛修
+没……没事吧，前辈！
+[k]
+
+？1：我的腿都僵硬了……！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠刑部姬
+呼……[r]还好[#公主:我]有千代纸操法……
+[k]
+
+？1：小刑，你太狡猾了啦！
+？！
+
+[messageOff]
+[cameraMove 0.2 0,0 1.1]
+[wt 0.2]
+[charaFace D 3]
+[charaShake D 0.07 3 2 0.7]
+[se ad77]
+[seVolume ad77 0 0.4]
+
+＠刑部姬
+哇，不要晃啦，不要晃！[r][#公主:我]一定会借给御亲的啦！[wt 0.4][seStop ad661 0.4]
+[k]
+
+[messageOff]
+[fadeout black 0.4]
+[wait fade]
+[cameraHome 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+[fadein black 0.4]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Cosmotic Beauty夫人
+虽说外观看上去还不错，但针对内部构造的BT点，[r]妾身要给减分！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：Amazones CEO
+配送之艰难正如我的预料呢。
+[k]
+
+[charaFace E 8]
+
+＠E：Amazones CEO
+这构造简直就是在让人靠力量自己爬上去。[r]若是平时，我或许还会因为这是种修行而感到高兴[line 3]
+[k]
+
+＠E：Amazones CEO
+但对配送员而言，[r]这只是种巍然耸立的恶意。
+[k]
+
+＠E：Amazones CEO
+无论身在何处，客人都该得到尊重，[r]都该获得一视同仁的配送，
+[k]
+
+[charaFace E 0]
+
+＠E：Amazones CEO
+但我们对设备与状况还是有好恶的。
+[k]
+
+[charaFace E 5]
+
+＠E：Amazones CEO
+这座塔属于明明指定了配送时间，[r]收货人却不在家的极没礼貌的恶劣情况。
+[k]
+
+＠E：Amazones CEO
+连温和的配送员都会情不自禁地[r]攥紧拿着包裹的手。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠玛修
+啊，请各位注意，[r]前方出现从者反应！
+[k]
+
+＠玛修
+应该是这层楼的居民！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠E：Amazones CEO
+呜噢噢，我们是Amazones.com！
+[k]
+
+＠E：Amazones CEO
+我们是来配送包裹的，[r]客人你居然胆敢居住在这种地方！
+[k]
+
+？1：不小心说出真心话了啦，CEO！
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_3 1.0]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.3 1]
+[wt 0.3]
+
+
+＠莎乐美
+哎呀。你就是把我最想要的东西带来的人吧？[r]我等好久了。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠玛修
+莎乐美小姐？　此前确实一直没露面，[r]没想到您在这里啊。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+
+＠E：Amazones CEO
+唔。收货人的姓名是『骷髅姬』……[r]仔细想来，太像是个假名了啊。
+[k]
+
+？1：（根本分不清和从者宇宙名有什么区别。）
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠芙芙
+芙，芙呜，芙。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠E：Amazones CEO
+不过用笔名或者艺名下订单也是常有的事。[r]只要客户同意并签字，对包裹的交付没有影响。
+[k]
+
+[bgmStop BGM_EVENT_2 0.7]
+
+[charaFace E 11]
+
+＠E：Amazones CEO
+商品是……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠莎乐美
+啊啊，啊啊！　我等好久了，我等不及了！[r][#是头吧]？　约翰的头！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+
+＠E：Amazones CEO
+呃，唔？　说[#头:Head]或许也不算错。[r]商品是浴室用品，一个喷淋头。
+[k]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth F 1]
+[charaDepth E 2]
+[charaFadeout E 0.2]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠F：Amazones CEO
+这恰恰证明了Amazones.com商品种类的多样性。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 0.5]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+[wt 0.7]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠莎乐美
+不，不对。那不是约翰的头。
+[k]
+
+＠莎乐美
+为什么？　你撒谎了吗？[r]你不是说会为我拿来的吗。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠E：Amazones CEO
+从订购单据上可以看到订购的商品的确是这个。
+[k]
+
+[charaFace E 11]
+
+＠E：Amazones CEO
+假如客人订购了错误的商品，[r]根据敝司的宗旨，会认定这并非我方失误所致。
+[k]
+
+＠E：Amazones CEO
+只是如果您办理正规的退货手续，[r]订单也是可以取消[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠莎乐美
+啊。我知道了，我明白了。[r]原来是这么一回事啊。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠F：Amazones CEO
+您终于理解了吗。
+[k]
+
+＠F：Amazones CEO
+提供时刻为客户着想的最先进服务，[r]乃是Amazones.com的远大理想，
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+＠莎乐美
+[#你们的头]，[#就是你们拿来的头吧]？
+[k]
+
+？1：不是啦！
+？！
+
+[charaFace G 1]
+
+＠莎乐美
+尤其是[#你:御主]的头非常像约翰的。
+[k]
+
+＠莎乐美
+呵呵呵。虽然没被放在银制的盘子上，[r]但拒收送到眼前的头颅未免有失礼数。
+[k]
+
+＠莎乐美
+我必须收下，并赐予你亲吻……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk H]
+[charaFace H 4]
+[branch lblNotGirl2 IsGirl false]
+[label lblGirl2]
+[charaFadein H 0.1 1]
+[branch lblIsGirlConf2]
+[label lblNotGirl2]
+[charaFadein H 0.1 0,-90]
+[label lblIsGirlConf2]
+
+＠达·芬奇
+唔，被付与了奇怪方向性的Berserker果然很棘手。
+[k]
+
+[bgmStop BGM_EVENT_5 1.2]
+
+[charaFace H 2]
+
+＠达·芬奇
+总之先动用武力让她老实一点。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠E：Amazones CEO
+怎么能既不肯退货也不愿收货呢。[r]唯独这件事我无法接受。
+[k]
+
+[charaFace E 2]
+
+＠E：Amazones CEO
+我一定会用武力让您获得满足，这位客人！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+

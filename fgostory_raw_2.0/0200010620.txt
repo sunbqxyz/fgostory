@@ -1,0 +1,420 @@
+
+＄02-00-01-06-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 99502600 1 玛修]
+[charaSet B 2023000 1 新宿的Archer]
+[charaSet C 98006000 1 超级奇美拉君]
+[charaSet D 1002001 1 阿尔托莉雅·Alter]
+[charaSet E 11003001 1 贞德·Alter]
+[charaSet F 98109000 1 小混混A]
+[charaSet G 11005000 1 新宿的Rider]
+[charaSet H 98111500 1 通讯用杂音]
+
+[scene 38400]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠阿尔托莉雅·Alter
+喂，你这家伙到底怎么回事……[r]怎么会这样强！
+[k]
+
+[charaFadeout D 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0 1]
+＠玛修
+虽……虽然名字很愉快，但强度也很愉快！[r]而且还剩一只！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadeTime F 0.1 0.7]
+＠小混混A
+呵嘻嘻嘻嘻！　虽然我们已经死了，但还有这家伙在！[r]去吧，超级奇美拉君！　干掉他们！
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_3 0.7 0.5]
+[charaTalk A]
+[se ad19]
+[wait se ad19]
+[voice 1100500_0_B120]
+[wt 2.0]
+
+[charaTalk F]
+＠小混混A
+哎？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.4]
+
+[messageOff]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.4]
+[charaEffect C bit_talk_fangtrap_blue]
+[wt 0.1]
+[se ad191]
+[charaShake C 0.05 3 3 0.4]
+[wt 1.0]
+[se ad334]
+[wt 1.4]
+
+[charaSpecialEffect C enemyErasure 1 1.0]
+[se ad42]
+[wait charaSpecialEffect C]
+[wt 0.4]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadeTime F 0.1 0.7]
+＠小混混A
+奇美拉……居然……[r]不会吧，这家伙。
+[k]
+
+[messageOff]
+[charaEffect F bit_talk_claw]
+[wt 0.1]
+[se bac137]
+[charaShake F 0.05 3 3 0.4]
+[wait se bac137]
+[wt 0.2]
+[charaFadeout F 0.4]
+[wt 0.3]
+[se ad144]
+[shake 0.05 2 0 0.4]
+[wt 0.7]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠新宿的Archer
+喂喂。[r]看来……还真是不走运啊……
+[k]
+
+[charaFadeout B 0.1]
+
+[messageOff]
+[se ad322]
+[charaSet C 98111500 1 达·芬奇]
+
+[charaTalk G]
+[charaEffect G bit_talk_impactlanding]
+[shake 0.05 0 7 2.0]
+[charaFadein G 0.1 1]
+[charaPut G 1]
+[charaMove G 0,-40 0.1]
+[se bac234]
+[charaMove G 1 0.1]
+[wait charaEffect G bit_talk_impactlanding]
+
+[charaFadeout G 0.1]
+
+[bgm BGM_EVENT_3 0.7]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0 1]
+＠玛修
+新……新宿的Rider……出现了……！
+[k]
+
+＠玛修
+我明明在监控，[r]瞬间就……！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0 0,-90]
+＠达·芬奇
+更重要的是他能一击咬碎超级奇美拉君，[r]这是何等的咬合力啊……！？
+[k]
+
+[charaFadeout C 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠阿尔托莉雅·Alter
+御主……请退后。[r]慢慢退后哦？
+[k]
+
+＠阿尔托莉雅·Alter
+谨慎地离开他的守备范围。[r]那里……已经是[#对方:Rider]的守备范围内了。
+[k]
+
+？1：知道了。
+？2：……
+？！
+
+[charaFadeout D 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+[se ad334]
+＠新宿的Rider
+[image berserker_language_3]
+[k]
+
+[charaFadeout G 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠阿尔托莉雅·Alter
+呜……
+[k]
+
+[charaFadeout D 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0 1]
+＠玛修
+御主！
+[k]
+
+？1：被咬了！？
+？！
+
+[charaFadeout A 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠新宿的Archer
+……不，无需哀叹哦！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+[se ad334]
+＠新宿的Rider
+！？[wt 0.5]
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_3 0.4 0.5]
+[wipeout rightToLeft 0.2 1]
+[wait wipe]
+[charaFadeout G 0.1]
+[wt 0.2]
+[wipein leftToRight 0.2 1]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.4 1]
+＠贞德·Alter
+这是被憎恶磨练而成的吾之灵魂咆哮。[line 3]
+[k]
+
+[se ad357]
+[charaFace E 2]
+＠贞德·Alter
+『[#咆哮吧，吾之愤怒:Le Grondement Du Haine]』！！
+[k]
+
+[se ad357 1.0]
+
+[charaFadeout E 0.1]
+
+[seStop ad11 0.5]
+[se ad355]
+[se ad356]
+[messageOff]
+[effect bit_talk_sparks]
+[charaPut H 0,0]
+[charaEffect H bit_talk_gouka]
+[wt 1.5]
+[fowardEffect bit_talk_29]
+[wt 0.4]
+[flashin once 0.7 1.2 FF0000AF FF000000]
+[wt 0.7]
+[charaSet H 98111500 1 通讯用杂音]
+[seStop ad355 1.2]
+[seStop ad356 1.2]
+[se ad11]
+[seVolume ad11 0 0.01]
+[seVolume ad11 1.0 0.25]
+[scene 38410]
+[wt 2.2]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠阿尔托莉雅·Alter
+笨蛋！[r]哪有蠢货会把我们全都卷进去啊！？
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠贞德·Alter
+哈！？[r]打暗号让我放宝具的不是你们吗！！
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠阿尔托莉雅·Alter
+我们怎么会做这种[line 3]。
+[k]
+
+[charaFace D 5]
+＠阿尔托莉雅·Alter
+……是你啊。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠新宿的Archer
+当然啦！
+[k]
+
+[charaFace B 4]
+＠新宿的Archer
+啊，不，别用圣剑打我，请听我解释。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0 1]
+＠玛修
+贞……贞德·Alter小姐的宝具让周围全在燃烧，[r]没有退路了……！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠新宿的Archer
+不，[#这样才好]！[r]新宿的Rider也没有退路了！
+[k]
+
+＠新宿的Archer
+就算是你，也难以跳过这愤怒的火焰吧！
+[k]
+
+＠新宿的Archer
+还有，可以用火焰保护御主，一石二鸟！[r]啊，[charaFace B 1]火焰还是很热的，对不起哦！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+[voice 1100500_0_B020]
+[bgm BGM_EVENT_3 0.7]
+
+＠新宿的Rider
+[image berserker_language_4]
+[k]
+
+[charaFadeout G 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠新宿的Archer
+呼哈哈哈哈！
+[k]
+
+[charaFace B 0]
+＠新宿的Archer
+综上所述，不好意思把你卷进来啦，御主！[r]我们就在这里和Rider决出胜负吧！
+[k]
+
+？1：无妨！
+？2：干掉他！
+？！
+
+[charaFadeout B 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠阿尔托莉雅·Alter
+唉，有这种从者就有这种御主，[r]上梁不正下梁歪啊！
+[k]
+
+＠阿尔托莉雅·Alter
+没办法，你千万别走到前面来！[r]你的生命就托付给我吧！
+[k]
+
+[charaFadeout D 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+＠玛修
+新宿的Rider，来了……！
+[k]
+
+[messageOff]
+[seStop ad11 0.4]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[charaFadeout A 0.1]
+[charaPut H 1200,1200]
+[effectStop bit_talk_sparks]
+[charaEffectStop H bit_talk_10_LowLevel]
+[wt 0.3]
+[soundStopAll]
+[end]

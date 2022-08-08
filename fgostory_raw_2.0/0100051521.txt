@@ -1,0 +1,168 @@
+
+＄01-00-05-15-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 8001001 1 玛修]
+[charaSet B 98003000 1 Dr.罗曼]
+[charaSet C 3005002 1 伊丽莎白]
+[charaSet D 2003001 1 罗宾汉]
+[charaSet E 3004001 1 迦尔纳]
+
+[scene 20602]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠伊丽莎白
+呼，呼，呼。[r]有……有点本事……！
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace C 4]
+[charaFadein C 0.1 2]
+＠罗宾汉
+退到后面去吧，你已经快到极限了吧。[r]呃～，红角。
+[k]
+
+[charaFace C 5]
+＠伊丽莎白
+要你啰嗦。[r]同为Lancer，我也有不能退让的事……！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠迦尔纳
+Lancer？[r]你不是偶像吗？
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠伊丽莎白
+偶像正临时休假中。[r]现在[charaFace C 5]没有办法，我就作为枪兵[line 2]与你战斗吧！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+
+[flashin once 0.1 0.2 FFFFFFA0 FFFFFF00]
+[wt 0.1]
+[se ad32]
+[shake 0.05 0 5 0.4]
+
+[wt 1.5]
+
+
+[se ad87]
+[seStop ad87 1.0]
+[wait se ad87]
+[wt 0.2]
+
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠迦尔纳
+……唔。[r]叫我回去，还真是奇怪的命令。
+[k]
+
+[charaFace E 0]
+＠迦尔纳
+不过[line 3]是这样啊，打算亲手解决吗。[r]这就是所谓的傲慢啊，不过没办法。
+[k]
+
+[charaFadeout E 0.4]
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠伊丽莎白
+怎么，想逃吗！？[r]打赢了就想跑！？
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.4 1]
+＠迦尔纳
+这不能叫做赢了吧……
+[k]
+
+[charaFace E 0]
+＠迦尔纳
+主人下达了指示。叫我回玉座。[r]我们会在里面的玉座之间等你们。
+[k]
+
+＠迦尔纳
+这个国家战斗力最强的三个人。
+[k]
+
+[charaFadeout E 0.4]
+[wt 0.7]
+
+[bgmStop BGM_EVENT_3 0.5]
+[charaFadeout C 0.1]
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[bgm BGM_EVENT_5 0.1]
+＠玛修
+这个国家战斗力最强……也就是说。
+[k]
+
+？1：从者。
+？2：爱迪生他们。
+？！
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr.罗曼
+想必就是这么一回事。虽然刚才和你们有过通讯，[r]但爱迪生估计想直接对话吧。
+[k]
+
+[communicationCharaFace 4]
+＠Dr.罗曼
+……虽然看样子在商谈之前是无法避免战斗的。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+……说得对。不打倒爱迪生氏的话，[r]他应该是不会改变自己的主意的。
+[k]
+
+[charaFace A 0]
+＠玛修
+御主，准备妥当后就出发吧。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_5 1.0]
+[wait fade]
+[soundStopAll]
+[end]
+

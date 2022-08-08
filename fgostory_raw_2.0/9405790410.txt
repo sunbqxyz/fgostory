@@ -1,0 +1,573 @@
+
+
+
+＄94-05-79-04-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5046001 1 克莱恩小姐]
+[charaSet B 4013400 1 梅芙]
+[charaSet C 1098230000 1 X·Alter]
+[charaSet D 98001000 1 玛修]
+[charaSet E 7016300 1 玉藻猫]
+[charaSet F 7029000 1 织田信长]
+
+[charaSet T 4031000 1 特效用]
+
+[scene 113300]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠克莱恩小姐
+好了，距离第二轮比赛日程还有些时间上的宽裕。[r]因此，我打算办一次强化集训。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠梅芙
+我觉得挺好。[r]能让人集中精神训练的环境非常重要。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+＠玛修
+我已经安排好集训地了。[r]是海景优美的温泉旅馆哦。
+[k]
+
+？1：在这种空中都市……大海？
+？！
+
+[charaFace D 1]
+＠玛修
+是的。而且据说海滩一年四季都是夏天。[r]特异点里有好多奇妙的事呢。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠玉藻猫
+偶像和夏日海滩间的关系是无法切分的。[r]因此就算有海也没什么奇怪的。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 19]
+[charaFadein C 0.1 1]
+＠X·Alter
+夏天……是发挥刨冰和冰棍力量的时候了。[r]Good。让我们[#ASAP:以比光还快的速度]前往吧。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 106800]
+
+[charaPut T 0,0]
+[charaEffect T bit_talk_lens_flare_fs]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+＠全体
+[f large]夏日！[se ade227]
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.4 1.0]
+[wait wipe]
+
+[charaPut T 2000,2500]
+[charaEffectStop T bit_talk_lens_flare_fs]
+
+[scene 109600]
+
+[wt 0.6]
+
+[wipein rightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.1]
+
+＠全体
+[f large]海滩！[se ade227]
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.4 1.0]
+[wait wipe]
+
+[scene 115400]
+
+[se ad429]
+[seVolume ad429 0 0]
+[se ade24]
+[seVolume ade24 0 0]
+[wt 0.6]
+
+[seVolume ad429 0.4 0.8]
+[seVolume ade24 0.4 0.8]
+
+[wipein rightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.1]
+
+＠全体
+[f large]燃烧吧！[se ade226]
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.5]
+[seStop ad429 1.5]
+[seStop ade24 1.5]
+[wait fade]
+
+[scene 10001]
+[wt 0.6]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[bgmStop BGM_EVENT_77 0.4]
+[seStop ad429 0.4]
+[seStop ade24 0.4]
+
+[charaSet A 5046001 1 克莱恩小姐]
+[charaSet B 4013400 1 梅芙]
+[charaSet C 1098230000 1 X·Alter]
+[charaSet D 98001000 1 玛修]
+[charaSet E 7016300 1 玉藻猫]
+[charaSet F 7029000 1 织田信长]
+
+[charaSet T 4031000 1 特效用]
+
+[scene 10001]
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[wt 0.1]
+[label selectBranch]
+
+[skip false]
+
+[wt 0.6]
+
+[fowardEffect bit_guda_queststart]
+
+[wt 2.5]
+[scene 10000]
+
+[wt 4.0]
+
+[fadeout black 0.5]
+[wait fade]
+
+[scene 115400]
+[wt 1.0]
+
+[skip true]
+
+[se ad429]
+[seVolume ad429 0 0]
+[se ade24]
+[seVolume ade24 0 0]
+
+[wt 1.0]
+
+[seVolume ad429 1.5 0.8]
+[seVolume ade24 1.5 0.8]
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+
+？1：在燃烧！？
+？！
+
+[bgm BGM_EVENT_7 0.1]
+[seVolume ad429 1.0 0.2]
+[seVolume ade24 1.0 0.2]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠玛修
+着火啦！[r]火势非常迅猛！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠梅芙
+我说克莱恩！　真的在这里吗！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠克莱恩小姐
+奇……奇怪了。[r]按照官方网站，应该是在这里[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[seStop ad429 2.0]
+[seStop ade24 2.0]
+
+[se ad60]
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.4 1]
+[wt 0.4]
+[seStop ad60 0.1]
+[wt 0.4]
+
+＠织田信长
+来得好！[r]攀登永无止尽偶像坡道的勇者们啊！
+[k]
+
+[charaFace F 1]
+＠织田信长
+这里是信避暑胜地·织田信长的本能阁！[r]悠闲·尽情·破坏，电话是[#４:请][#６:多][#４:关][#９:照][#Ｅ:好][#２:风][#６:炉]！
+[k]
+
+？1：可是起火了啊！？
+？！
+
+[charaFace F 0]
+＠织田信长
+没错！　你们是好不容易来访的客人。[r]不用摇滚来迎接未免太失礼数了！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠梅芙
+呜，怎么偏偏是[#狂战士:笨蛋]的旅馆……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠织田信长
+喂？[r]你刚才是不是说我是笨蛋？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠玉藻猫
+信之火焰无可奈何，[r]信的内心一片火海，对吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠织田信长
+嗯！　你还挺懂的嘛，猫猫咪！[r]你也很有摇滚的潜质！
+[k]
+
+[charaFace F 12]
+＠织田信长
+不过真烧的话肯定会被烧死。我也会死。[r]我可不愿意，这归根结底只是演出。
+[k]
+
+[charaFace F 1]
+＠织田信长
+所以你们放心住下吧。[r]来，款待迦勒底事务所一行人！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[scene 115500]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_28 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠梅芙
+古典的和风房间。[r]怎么，还是挺正经的嘛。
+[k]
+
+＠梅芙
+虽说一开始有些那啥……[r]不过，这里不赖呢。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠克莱恩小姐
+这里的主人说，会为我们开放宴会大厅，[r]用作逗留期间的训练室使用。
+[k]
+
+＠克莱恩小姐
+是附舞台的榻榻米式大厅，带全套卡拉OK设备。[r]真是个既古典又传统的宴会厅呢。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 19]
+[charaFadein C 0.1 1]
+＠X·Alter
+桌子上还有迎宾当地馒头。[r]多么美好的文化啊。现在就开始吃吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠梅芙
+这种东西稍后再说啦！[r]趁天还亮着，去海滩吧！
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_28 1.0 0.4]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[scene 109600]
+
+[charaSet D 1098199300 1 玛修]
+[charaSet B 1034001 1 梅芙]
+
+[se ad218]
+[seVolume ad218 0 0]
+[wt 1.0]
+
+[seVolume ad218 1.0 1.0]
+[bgm BGM_EVENT_28 1.0 1.0]
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 1.5]
+
+[seStop ad218 1.0]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠玉藻猫
+小鹿乱撞的海滩！[r]炽热！　沙滩！　这就是阳光普照，夏季到来！
+[k]
+
+＠玉藻猫
+说起夏天，晚上当然要找鬼怪试胆！[r]所以趁白天，充分享受大海吧！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 1]
+[wt 0.4]
+＠玛修
+现在正值盛夏呢。[r]没想到竟能在这里享受大海。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.4 1]
+[wt 0.4]
+＠梅芙
+哎呀？　Alter不换泳装吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠X·Alter
+我在DNA层面都属于宅家派。[r]并没有适合夏日海滩的服装。
+[k]
+
+[charaFace C 3]
+＠X·Alter
+而且……说是集训，[r]我还一直以为是上课训练呢。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠梅芙
+表面懒懒散散，实际还挺认真呢。[r]不过，这应该算优点。
+[k]
+
+＠梅芙
+只是尽兴玩耍也是偶像的工作之一哦？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+＠X·Alter
+玩耍……也是工作……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠梅芙
+没错。如果想成为超一流偶像，[r]就要用享受玩耍的形象魅惑粉丝。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠克莱恩小姐
+很有梅芙亲风格的金句呢。[r]太对了，我完全同意。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠X·Alter
+……原来如此，我明白了。[r]那我也依照这种偶像哲学玩耍吧。
+[k]
+
+[charaFace C 5]
+＠X·Alter
+能魅惑粉丝的玩耍方式。[r]我的回答……是这样做！
+[k]
+
+[messageOff]
+[se ad7]
+[charaMove C 100,0 0.4]
+[charaFadeout C 0.2]
+[wt 0.8]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠玛修
+啊啊！　小艾以超快速度撑开了沙滩伞，[r]单手拿着红豆刨冰进入休息模式了！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 1]
+＠X·Alter
+然后自拍，设定SNS自动发送。[r]……这样如何。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+＠梅芙
+……[wt 0.8][charaFace B 12]算了，也行！
+[k]
+
+[charaFace B 1]
+＠梅芙
+作为偶像，[r]只要能享受度假就够了！
+[k]
+
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_28 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

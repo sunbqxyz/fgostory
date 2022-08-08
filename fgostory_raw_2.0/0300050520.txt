@@ -1,0 +1,401 @@
+
+＄03-00-05-05-2-0
+
+[soundStopAll]
+
+[charaSet A 1098123200 1 戈尔德鲁夫]
+[charaSet B 1098181900 1 尼莫水兵]
+[charaSet C 8001400 1 玛修]
+[charaSet D 8001410 1 玛修]
+[charaSet E 1098158300 1 尼莫]
+[charaSet F 98115300 1 福尔摩斯]
+[charaSet G 1098123000 1 穆尼尔]
+[sceneSet H 86800 1]
+[charaScale H 1.2]
+
+[charaSet J 5009000 1 特效用dummy]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[cameraMove 0 0,0 1.01]
+
+[bgm BGM_EVENT_24 0.1]
+
+
+[scene 51610]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠戈尔德鲁夫
+那……那个到底是什么啊！？[r]强得太不像话了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠尼莫水兵
+无法测量，无法测量～！　拒绝分析～！[r]全部状态都是[#未知:Unknown]哦～！
+[k]
+
+[charaFace B 4]
+＠尼莫水兵
+既然我们的仪器无法测量，[r]说明那个该不会是神兽吧！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[scene 85700]
+[wt 1.0]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+[se ad711]
+[wt 1.0]
+
+[cueSe Battle bac387]
+[effect bit_talk_claw]
+[wt 0.4]
+
+[se ad170]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF50]
+[wt 0.1]
+
+[effectDestroy bit_talk_claw]
+
+[charaScale C 1.2]
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0 0,20]
+
+[charaMoveScale C 1.0 0.2]
+[charaMove C 0,0 0.2]
+[charaShake C 0.02 3 3 0.8]
+[wt 1.2]
+
+＠玛修
+咕，呜[line 3]！
+[k]
+
+？1：太强了……！
+？！
+
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[scene 51610]
+[wt 1.0]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠尼莫
+[line 3]宝具展开。[r][#引擎舱:引擎]！　要上了！
+[k]
+
+
+＠尼莫引擎
+[charaTalk J]
+哈啊！？　要在这种地方打出我们的王牌吗，[r]你这笨蛋！？
+[k]
+
+＠尼莫引擎
+[charaTalk J]
+不过要上的话随时都可以！　动手吧！[r]你要是死在这里，人家就代替你当老大！
+[k]
+
+＠尼莫
+[line 3][#大冲角:Great Ram]，[r]换装为冲击状态，很好！
+[k]
+
+[charaFace E 2]
+＠尼莫
+福尔摩斯！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠福尔摩斯
+交给我吧！[r]就这样冲过去！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠尼莫
+刺冲[line 3]！[r]『[#吾将远征，鹦鹉螺的大冲角:Great Ram Nautilus]』！
+[k]
+
+[messageOff]
+[se ad39]
+[charaEffect E bit_talk_36]
+[fadeout white 2.0]
+[wait fade]
+
+[charaEffectStop E bit_talk_36]
+[charaPut E 1200,1200]
+[seStop ad39 0.4]
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[se ad226]
+[se ad609]
+[seVolume ad609 0 0.6]
+[shake 0.02 4 4 2.4]
+[wt 0.8]
+
+[fadein white 1.5]
+[wait fade]
+[wt 2.0]
+
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠尼莫
+[#冲角:Ram]发生冲突，打中了！[r]啊啊可恶，但还活着！　怎么会这样！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠福尔摩斯
+不过似乎令其动作变迟钝了。[r]只能趁现在逃跑了！
+[k]
+
+＠福尔摩斯
+你们俩赶快回来！
+[k]
+
+
+[messageOff]
+[se ad594]
+[fadeout black 2.0]
+[bgm BGM_EVENT_24 2.0 0.4]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaPut J 1200,1200]
+[wt 1.0]
+
+[bgm BGM_EVENT_24 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[se ad55]
+[seVolume ad55 0 0]
+[se ad668]
+[seVolume ad668 0 0]
+[seVolume ad55 0.8 1.0]
+[seVolume ad668 0.8 1.0]
+[wt 1.6]
+
+[seStop ad55 0.2]
+[seStop ad668 0.2]
+
+
+
+
+
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+＠玛修
+非常抱歉，[r]没能打倒它……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠福尔摩斯
+不，这不怪你。
+[k]
+
+＠福尔摩斯
+单论破坏力与耐久力而言，[r]它足以与顶级从者相匹敌。
+[k]
+
+＠福尔摩斯
+现在要尽可能逃得远[line 3][wt 0.5][charaFace F 2][bgmStop BGM_EVENT_24 1.0][r]慢着！　摄像头，聚焦！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaPut J 1200,1200]
+[wt 0.3]
+
+[effect bit_talk_security]
+[charaTalk H]
+[charaFadein H 0.1 0,-150]
+[se ad15]
+[wt 0.8]
+
+[se ad1]
+
+[fadein black 1.2]
+[wait fade]
+
+[wt 1.0]
+[charaMoveScale H 1.4 3.5]
+[charaMove H 0,-400 3.5]
+[bgm BGM_EVENT_71 0.1]
+
+[wt 3.5]
+
+[wt 2.0]
+
+[fadeout black 0.8]
+[wait fade]
+
+[effectStop bit_talk_security]
+[charaFadeout H 0.1]
+
+[scene 51610]
+[wt 1.0]
+
+[fadein black 0.8]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠戈尔德鲁夫
+这……这……究竟是……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠穆尼尔
+好厉害。[r]这魔力量是怎么回事……
+[k]
+
+＠穆尼尔
+不，不对。数值的增减乱七八糟。
+[k]
+
+＠穆尼尔
+这重复增减简直就像[r]人类瞬间变成木乃伊又复原一样……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠福尔摩斯
+有什么东西在下腹部蠕动。[r]那是……
+[k]
+
+＠福尔摩斯
+蛇女和奇美拉吗？[r]而且还是成体。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠戈尔德鲁夫
+也就是说……它在生产敌人？[r]那是什么，那到底是什么啊！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠福尔摩斯
+而且以惊人的速度生产。[r]那已经称得上是怪物之母了。
+[k]
+
+[messageOff]
+[charaFace F 6]
+[bgmStop BGM_EVENT_71 0.8]
+[wt 1.0]
+[bgm BGM_EVENT_80 0.1]
+[charaFace F 2]
+＠福尔摩斯
+……产下的家伙冲过来了！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠玛修
+御主！
+[k]
+
+？1：……动手吧，玛修！
+？！
+
+[charaFace C 2]
+＠玛修
+是……！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

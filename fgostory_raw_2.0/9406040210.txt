@@ -1,0 +1,257 @@
+
+
+
+＄94-06-04-02-1-0
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 9012000 1 ダ・ヴィンチ]
+[charaSet B 8001600 1 マシュ]
+[charaSet C 1098215500 1 ゴルドルフ]
+[charaSet D 98018100 1 海賊Ａ]
+[charaSet E 98018100 1 海賊Ｂ]
+[charaSet F 98018100 1 海賊Ｃ]
+[charaSet G 1098215510 1 ゴルドルフ2]
+
+[se ad218]
+[seVolume ad218 0 0]
+[seVolume ad218 1.0 1.0]
+[scene 129600]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.5]
+[seVolume ad218 1.0 0.5]
+[wt 1.0]
+
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.4 1]
+＠G：ゴルドルフ
+フッ……。[r]レイシフトもこれで三度目か。
+[k]
+
+？1：慣れました？
+？！
+
+[charaFace G 0]
+＠G：ゴルドルフ
+さすがにな。
+[k]
+
+＠G：ゴルドルフ
+という訳でそこでぐわんぐわんと頭を揺らしている[r]技術顧問の方を気遣ってやんなさいね。
+[k]
+
+[seStop ad218 2.0]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+わー……
+[k]
+
+[bgm BGM_MAP_13 0.1]
+
+[charaFace A 1]
+＠ダ・ヴィンチ
+っとと、くらくらしたー！[r]あははは、結構楽しいね。レイシフト！
+[k]
+
+？1：大丈夫？
+？！
+
+＠ダ・ヴィンチ
+大丈夫、まったく問題なしさ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+……む。
+[k]
+
+
+[charaFace B 0]
+＠マシュ
+マスター、[r]ノウム・カルデアとの通信が断たれています。
+[k]
+
+＠マシュ
+調子が悪いか、あるいは妨害されているか。[r]そのどちらかかと。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+＠G：ゴルドルフ
+となると、現場判断で何とかするしか[r]ないか……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+いつものことと言えばいつものことさ。[r]それよりも[line 3]
+[k]
+
+＠ダ・ヴィンチ
+今は景色を楽しんでおこう！
+[k]
+
+[charaFace A 1]
+＠ダ・ヴィンチ
+青い海！　白い砂浜！[r]そして海賊！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[bgmStop BGM_MAP_13 0.7]
+
+[charaTalk off]
+[charaDepth C 1]
+[charaDepth G 2]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+[wt 0.4]
+[charaFace C 9]
+[charaFadein C 0 1]
+[wt 0.5]
+[se ade158]
+[charaFadeout G 0.2]
+[wt 0.7]
+
+[charaTalk on]
+＠ゴルドルフ
+……海賊？
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[charaTalk depthOff]
+[charaDepth D 3]
+[charaDepth E 2]
+[charaDepth F 1]
+[wt 0.3]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaTalk D]
+[charaFadein D 0.4 1]
+[charaFadeinFSL E 0.4 -300,0]
+[charaFadeinFSR F 0.4 300,0]
+＠海賊Ａ
+へへへへへへ！[bgm BGM_EVENT_80 0.1][r]ガキがいようが俺たちは容赦しねぇぞー！
+[k]
+
+＠海賊Ｂ
+そうだそうだー。
+[k]
+
+＠海賊Ｂ
+バーソロミュー・ロバーツがくたばったからって、[r]海賊時代はまだ終わらねぇ！
+[k]
+
+＠海賊Ｃ
+俺たち『モブ海賊団』が、[r]海賊たちの[#黄金時代:おうごんじだい]を取り戻すのさ！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+[#名前:モ　ブ]の時点でダメじゃないかね？
+[k]
+
+？1：ダメだと思うなぁ……
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFadein D 0.1 1]
+[charaFadeinFSL E 0.1 -300,0]
+[charaFadeinFSR F 0.1 300,0]
+
+＠海賊ＡＢＣ
+何だとゥ！[r]本当のことをよくも！！
+[k]
+
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+よおーし、ここは当然私の出番でいいかな？[r]いいよね？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠マシュ
+ダ・ヴィンチちゃん、あまり前に出ては！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+調子もいいし気分もいいし、大丈夫！[r]それに[#新兵器]の試運転もしておきたいんだ。
+[k]
+
+
+＠ダ・ヴィンチ
+よろしくね、[%1][&君:ちゃん]！
+[k]
+
+？1：了解！　ガッツリやっちゃおう！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠ゴルドルフ
+……手加減はしてあげなさいよ？
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_80 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

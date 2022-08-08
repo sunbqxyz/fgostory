@@ -1,0 +1,555 @@
+
+
+＄91-70-30-01-3-1
+
+[soundStopAll]
+
+[charaSet A 7030001 1 阿塔兰忒·Alter]
+[charaSet B 4029001 1 阿喀琉斯]
+[charaSet C 5016001 1 杰罗尼莫]
+[charaSet D 5034001 1 示巴女王]
+
+[charaSet E 98006000 1 敌人]
+
+[charaSet J 5009000 1 特效用dummy]
+
+[scene 20822]
+
+[bgm BGM_EVENT_24 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠阿塔兰忒·Alter
+[line 3]就是这里！
+[k]
+
+[messageOff]
+
+[fadeout black 0.3]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.3]
+[wt 0.3]
+
+[effect bit_talk_arrow_enemy_r]
+[wt 0.3]
+[se ad439]
+[wt 0.2]
+[wt 0.2]
+[wt 0.2]
+[wt 0.2]
+[seStop ad439 1.0]
+[wt 0.5]
+
+[fadeout black 0.3]
+[wait fade]
+
+[effectStop bit_talk_arrow_enemy_r]
+
+[scene 20822]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1]
+[wt 0.5]
+
+[fadein black 0.3]
+[wt 0.3]
+
+[charaShake E 0 3 3 1.2]
+[se ad249]
+[charaShake E 0 5 5 0.2]
+[flashin once 0.07 0.1 FFFFFFFF FFFFFF00]
+[wt 0.3]
+[charaShake E 0 5 5 0.2]
+[flashin once 0.07 0.1 FFFFFFFF FFFFFF00]
+[wt 0.3]
+[charaShake E 0 5 5 0.2]
+[flashin once 0.07 0.1 FFFFFFFF FFFFFF00]
+[wt 0.3]
+[seStop ad249 1.5]
+[wt 0.8]
+
+[se ad23]
+[wt 1.0]
+
+？1：好！
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠阿喀琉斯
+在这里上踢！
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1]
+[wt 0.5]
+
+[se adm23]
+[flashin once 0.07 0.1 FFFFFFFF FFFFFF00]
+[charaMove E 0,1000 0.3]
+[wt 0.5]
+
+[charaFadeout E 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠杰罗尼莫
+女王啊！
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠示巴女王
+知道了～！[r][#灵鬼:镇尼]，攻进去吧～☆
+[k]
+
+[messageOff]
+
+[se adm72]
+[wt 1.5]
+
+[fadeout black 0.3]
+[wt 0.3]
+
+[charaFadeout D 0.1]
+
+[scene 28303]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[fadein black 0.3]
+[wt 0.5]
+
+[flashin once 0.07 0.1 FFFFFFFF FFFFFF00]
+[se bac149]
+[charaMove E -400,-100 0.1]
+[wt 0.2]
+
+[flashin once 0.07 0.1 FFFFFFFF FFFFFF00]
+[se bac149]
+[charaMove E 300,0 0.3]
+[wt 0.8]
+
+[flashin once 0.07 0.1 FFFFFFFF FFFFFF00]
+[se bac150]
+[charaMove E -1000,30 0.3]
+[wt 1.0]
+
+[fadeout black 0.3]
+[wt 0.3]
+
+[charaFadeout E 0.1]
+
+[scene 20822]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[fadein black 0.3]
+[wt 0.5]
+
+[se ad39]
+[fowardEffect bit_talk_36]
+[wt 1.0]
+
+＠杰罗尼莫
+宝具解放，精灵与太阳啊。[r]请短暂借给我力量吧！
+[k]
+
+[messageOff]
+
+[charaFace C 2]
+
+＠杰罗尼莫
+『[#大地的创造者:Tsago Degi Naleya]』！
+[k]
+
+[messageOff]
+
+[wt 0.3]
+
+[se ad319]
+[fadeout white 1.5]
+[wait fade]
+
+[wt 1.0]
+
+[fowardEffectStop bit_talk_36]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+
+[scene 28303]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[fadein white 1.5]
+[wait fade]
+[wt 1.0]
+
+[se ad389]
+[charaShake E 0 5 5 1.5]
+[fadeout white 1.5]
+[wt 2.5]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[scene 20822]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[fadein white 0.3]
+[wait fade]
+
+[wt 0.5]
+
+[se ad39]
+[fowardEffect bit_talk_36]
+[wt 1.0]
+
+＠阿塔兰忒·Alter
+加速！[r]我的憎恶、我的愿望降临此处！
+[k]
+
+＠阿塔兰忒·Alter
+[f large]『[#暗天蚀射:Tauropolos Skia Thermokrasia]』[line 3]！！
+[k]
+
+[messageOff]
+
+[fadeout white 1.5]
+[wait fade]
+[se ad708]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[fowardEffectStop bit_talk_36]
+[wt 1.0]
+
+[scene 28303]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[fadein white 1.5]
+[wait fade]
+
+[wt 0.3]
+
+[se ad862]
+[charaEffect J bit_talk_rush_red]
+[charaRoll J 330 0,300]
+[wt 0.3]
+[se ad284]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[fadeout white 2.0]
+[wait fade]
+
+[wait charaEffect]
+[seStop ad284 0.5]
+
+[bgmStop BGM_EVENT_24 1.0]
+[wt 2.0]
+
+[fadein white 2.0]
+[wait fade]
+
+[wt 2.0]
+
+
+
+
+
+＠
+[line 3]就这样，女猎人展开她的翅膀飞了起来。
+[k]
+
+＠
+比起生物，更像是兵器。[r]犹如拥有意志的子弹。
+[k]
+
+＠
+笔直到达敌人面前，[r]用近乎疯狂的攻击撕裂了敌人。
+[k]
+
+[messageOff]
+
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 20822]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠阿喀琉斯
+这太厉害了。[r]想开了的大姐真是既强大又可怕！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠示巴女王
+要不要我把你刚才的感想[r]告诉阿塔兰忒小姐？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠阿喀琉斯
+住手。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠杰罗尼莫
+不管怎么说，[r]行动不再迷茫总是好事。
+[k]
+
+＠杰罗尼莫
+正所谓[line 3]“若想让马跑得快，不能靠鞭子或食物，[r][f small]  [f -]只需相信马即可”。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿喀琉斯
+这是什么格言吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠杰罗尼莫
+啊，是我刚创造的。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿喀琉斯
+……原来不是格言啊……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠杰罗尼莫
+说来惭愧，只是个玩笑罢了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+
+＠示巴女王
+啊，她下来了哦～。
+[k]
+
+[messageOff]
+
+
+[charaFadeout D 0.1]
+[wt 1.0]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaPut A 0,256]
+
+[se ad443]
+[charaMoveScale A 1.0 0.2]
+[charaMove A 0,-20 0.2]
+[charaFadeTime A 0.2 1.0]
+[wt 0.3]
+
+[seStop ad443 0.1]
+[wt 0.5]
+
+[charaMove A 0,0 0.1]
+[wt 0.3]
+
+
+＠阿塔兰忒·Alter
+咻。[r]那么……我战斗得怎么样，御主？
+[k]
+
+
+
+？1：非常棒！
+
+[charaFace A 1]
+
+＠阿塔兰忒·Alter
+嗯，看来不错。
+[k]
+
+？2：完美！
+
+[charaFace A 1]
+
+＠阿塔兰忒·Alter
+哈哈哈，现在的我[r]就不客气地收下汝之赞美好了。
+[k]
+
+＠阿塔兰忒·Alter
+哎嘿。
+[k]
+
+？！
+
+
+
+[charaFace A 0]
+
+＠阿塔兰忒·Alter
+话说御主。[r]接下来去山里？　海边？　还是城塞？
+[k]
+
+＠阿塔兰忒·Alter
+敌人是魔兽？　死灵？　还是魔性之徒？
+[k]
+
+[charaFace A 1]
+
+＠阿塔兰忒·Alter
+[line 3]不管是什么，只要和汝在一起，[r]我就能一直维持这个样子战斗。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+[fadeout black 1.5]
+[wait fade]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 20170101]
+[cameraMove 0.1 85,-70 1.2]
+[wt 2.0]
+
+
+
+[fadein black 1.5]
+[bgm BGM_EVENT_6 1.0]
+[wait fade]
+
+＠
+清冷的月光。
+[k]
+
+＠
+妖精般可爱的身姿沐浴在月光下，[r]魔人天真无邪地笑着。
+[k]
+
+＠
+尽管两人本质上背道相驰。
+[k]
+
+＠
+但是[line 3][r]心中仍祈祷着，愿两人能一起欢笑。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_6 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

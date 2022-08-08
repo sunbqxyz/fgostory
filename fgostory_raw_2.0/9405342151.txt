@@ -1,0 +1,794 @@
+
+＄94-05-34-21-5-1
+
+[soundStopAll]
+[charaSet A 1031001 1 弗兰]
+[charaSet B 25006001 1 梵高]
+[charaSet C 1098158310 1 尼莫]
+[charaSet D 3040001 1 Lambda]
+[charaSet E 3029002 1 源赖光]
+[charaSet F 1098197710 1 琰女]
+[charaSet G 1098197500 1 刑部姬]
+[charaSet H 1098197800 1 玛修]
+[charaSet I 7032001 1 重瞳]
+[charaSet J 25006000 1 ？？？]
+[charaSet V 98115000 1 通讯用]
+[charaPut V 1200,1200]
+[charaEffect V bit_talk_10_LowLevel]
+
+[scene 10000]
+[fadein black 1.0]
+[wait fade]
+
+[charaEffect A bit_talk_kengekiall02]
+[wt 0.1]
+[se ad32]
+[wt 0.2]
+[se ad32]
+[seVolume ad32 0 0.8]
+[wt 0.2]
+[se ad170]
+[charaPut A 0,60]
+[wt 0.4]
+[effect bit_talk_v_slash01]
+[se ad878]
+[se bac263]
+[wt 1.2]
+
+[fadeout black 0.1]
+[wait fade]
+[scene 98900]
+[wt 0.1]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_24 0.1]
+
+？1：总算……
+？2：成功了……！！
+？！
+
+＠？？？
+出乎意料。
+[k]
+
+＠？？？
+战斗能力、技术力、对生命心理的掌握能力。
+[k]
+
+＠？？？
+妄图在这种异空间中彻底地提取并利用的[r]这份执拗堪称恶劣。
+[k]
+
+＠？？？
+然而，吾之本体依然健在，[r]你们以为自己逃得掉吗？
+[k]
+
+？1：弗兰！
+？2：救她！
+？！
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠弗兰
+Aye，aye～。能出来吗？　出不来呢。[r]不要动哦～？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[cueSe Battle bac23]
+[effect bit_talk_ichimon01wh 0,-70]
+[wt 0.1]
+[cueSe Battle bac139]
+[shake 0.03 3 3 0.4]
+[wt 0.7]
+[se ade80]
+[se ade403]
+[wt 0.5]
+[seStop ade80 1.1]
+[wt 1.5]
+[effectDestroy bit_talk_ichimon01wh]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 1]
+＠梵高
+对不……起……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠弗兰
+禁止道歉，要笑。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠梵高
+……哎嘿嘿。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠弗兰
+很好，我会抱着你。要奔跑了，所以闭上嘴巴。
+[k]
+
+[messageOff]
+[charaMoveReturn A 0,-6 0.7]
+[wt 0.3]
+[se ad110]
+[wt 0.7]
+
+[charaFace A 5]
+＠弗兰
+嘿呀～。
+[k]
+
+[messageOff]
+[se ad132]
+[se ad59]
+[seVolume ad59 0 0.4]
+[charaFadeout A 0.4]
+[wt 0.7]
+[seStop ad132 1.5]
+[seStop ad59 1.0]
+
+＠？？？
+白费力气。
+[k]
+
+[messageOff]
+
+[se ad85]
+[effect bit_talk_whip01]
+[wt 0.3]
+[cueSe Battle bac137]
+[fowardEffect bit_talk_v_slash01 -60,0]
+[wt 1.0]
+
+＠？？？
+我都说了，白费力气。
+[k]
+
+[messageOff]
+[se ad85]
+[effect bit_talk_whip02]
+[wt 0.3]
+[cueSe Battle bac137]
+[fowardEffect bit_talk_h_slash01]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠弗兰
+唔～，想要支援！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠尼莫
+稍等，我立刻通过Lambdaryllis提供一些资源！
+[k]
+
+＠？？？
+休想得逞。
+[k]
+
+[messageOff]
+[se ad539]
+[charaFadeout C 0.1]
+[wt 0.1]
+[wt 1.0]
+[charaPut V 1200,1200]
+[charaEffectStop V bit_talk_10_LowLevel]
+[wt 0.1]
+
+＠？？？
+通讯与路径都被隔断了。你们休想逃跑。
+[k]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠弗兰
+……穷途末路？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠梵高
+……弗兰……亲……
+[k]
+
+＠梵高
+我要……使用……宝具……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠弗兰
+哎～。不行吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠梵高
+……哎嘿嘿，不要紧。[r]因为，这是，另一个。
+[k]
+
+[charaFace B 10]
+＠梵高
+是这个灵基也可以使用的，另一个宝具……
+[k]
+
+[charaFace B 5]
+＠梵高
+一分钟就能画好……！[r]帮我争取时间，弗兰亲！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠弗兰
+唔！　我知道了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+住手！
+[k]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠弗兰
+谁会住手啊～！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[effect bit_talk_kengekiall02]
+[wt 0.2]
+[se ad33]
+[wt 0.8]
+[effect bit_talk_14]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[shake 0.03 3 3 0.4]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+＠梵高
+……唔呵呵……唔呵呵……
+[k]
+
+＠梵高
+梵高希望与绝望的入口……[r]徒然飘散的梦之轨迹……
+[k]
+
+[charaFace B 6]
+＠梵高
+即便如此，我依然要……画这个……[r]依然要以梵高之名……使用这个……！
+[k]
+
+[messageOff]
+[se ad39]
+[charaEffect B bit_talk_36]
+[wt 0.4]
+
+[charaFace B 5]
+＠梵高
+我非画不可。在这外黄内白，洒满阳光的屋子里，[r]与伙伴一起，描绘希望的图画。
+[k]
+
+＠梵高
+自无影之地，阻隔密史特拉风的温暖墙壁中，[r]携纤弱友谊之期望，赠君握手。
+[k]
+
+[charaFace B 2]
+＠梵高
+房屋、住客们，以及街道！　又名为，[r]『[#黄房子:Het Gele Huis]』！！
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_24 1.5 0.4]
+[fadeout white 1.5]
+[wait fade]
+[se ad744]
+[charaEffectStop B bit_talk_36]
+[charaFadeout B 0.1]
+[wt 1.0]
+[fadein white 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠弗兰
+噢噢～？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠梵高
+……这是梵高曾经触及的，另一种外部的力量！
+[k]
+
+[charaFace B 2]
+＠梵高
+赐挚友以庇护与祝福！　赐敌以暴风之灾厄！[r]用这招，想办法，突破吧……！！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+[se ade283]
+[se ad2]
+[seVolume ad2 0 0]
+[seVolume ad2 1.0 0.4]
+[effect bit_talk_tornado01_02]
+[effect bit_talk_aerial_wave]
+[wt 1.5]
+[seStop ad2 1.5]
+[wt 0.7]
+[se ad85]
+[wt 0.4]
+[se ad322]
+[seVolume ad322 0 0.6]
+[shake 0.03 3 3 0.7]
+[wt 1.0]
+[effectStop bit_talk_tornado01_02]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.2]
+[cueSe Battle bas7]
+[charaEffect A bit_talk_np_buf]
+[wt 0.1]
+[charaFace A 1]
+[wt 0.3]
+[cueSe Battle bas13]
+[charaBackEffect A bit_talk_shadow_aura01]
+[wt 1.2]
+
+[bgm BGM_EVENT_24 1.5 1.0]
+
+[charaFace A 2]
+＠弗兰
+好嘞，这样应该就行了～！
+[k]
+
+＠弗兰
+充能完成！[r]电击必中！　噼里啪啦咚哐哐～！！
+[k]
+
+[messageOff]
+[se ad39]
+[charaEffect A bit_talk_36]
+[wt 0.4]
+
+＠弗兰
+『[#穿刺之雷刃:Skewered Plasma Blade]』[line 2]！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+＠？？？
+这可，不成[line 2]
+[k]
+
+[messageOff]
+[se ade466]
+[bgmStop BGM_EVENT_24 1.0]
+[fadeout white 1.0]
+[wait fade]
+[wt 0.7]
+[se ade467]
+[charaEffectStop A bit_talk_36]
+[charaFadeout A 0.1]
+[charaBackEffect B bit_talk_shadow_aura01]
+[charaPut B 1200,1200]
+[scene 10001]
+[wt 1.5]
+[seStop ade467 2.5]
+[wt 1.5]
+[fadein white 0.1]
+[wait fade]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 98900]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_EVENT_24 0.1 0.5]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠Lambda
+慢死了！　不仅通讯中断，那离谱宝具解放的[r]余波还震得我发麻！　你们究竟在干什么！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠弗兰
+抱歉抱歉。总算是成功了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠Lambda
+……你们被诅咒了哦？　还是很严重的那种。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth A 2]
+[charaTalk B]
+[charaFace B 6]
+[charaFace A 0]
+[charaFadein B 0.1 0]
+[charaFadein A 0.1 2]
+＠梵高
+对不起……哎嘿嘿，这是副作用……
+[k]
+
+[charaFace A 7]
+＠弗兰
+快回去吧，要死了。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut B 1200,1200]
+[charaPut A 1200,1200]
+[charaBackEffectStop B bit_talk_shadow_aura01]
+[charaBackEffectStop A bit_talk_shadow_aura01]
+
+[charaTalk depthOn]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠Lambda
+真给人添麻烦……！　舰桥，会合完毕，要脱离了！
+[k]
+
+[charaFace D 2]
+＠Lambda
+赖光！　轮到你期待已久的登场啦！
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_24 0.5 0.2]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[scene 98400]
+[wt 0.4]
+[bgm BGM_EVENT_24 0.5 0.7]
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[wt 0.2]
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.4 1]
+＠源赖光
+……嗯，魔力与精力已经很久没有如此充沛了……
+[k]
+
+[charaFace E 0]
+＠源赖光
+再加上总算不需要静音了。
+[k]
+
+[charaFace E 2]
+＠源赖光
+那就让我赖光自豪地、高声地呐喊出[r]这用尽全力的一掷、消灭邪智之念吧[line 3]！
+[k]
+
+[messageOff]
+[se ad39]
+[charaEffect E bit_talk_36]
+[wt 0.4]
+
+＠源赖光
+牛头天王！　东方神、帝释天的金刚杵！！[r]也就是由圣仙骨铸造而成的神之枪！！
+[k]
+
+＠源赖光
+降临此处，歼灭所有敌人！！[r]『[#释提桓因·金刚杵:Shakudai Kan'in Kongousho]』[line 12]！！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 2.5]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+[cueSe NoblePhantasm_302900 NP_302900_4]
+[cueSeVolume NP_302900_4 0 0]
+[cueSeVolume NP_302900_4 0.7 0.7]
+[wt 0.7]
+[effect bit_talk_arrow01br]
+[wt 1.2]
+[cueSeStop NP_302900_4 0.2]
+[se ad842]
+[seVolume ad842 0 0.7]
+[fadeout white 0.4]
+[wait fade]
+[charaEffectStop E bit_talk_36]
+[charaFadeout E 0.1]
+[scene 10001]
+[wt 0.4]
+[fadein white 0.1]
+[wait fade]
+
+
+[fadeout black 1.0]
+[wait fade]
+[wipeout rectangleStripRightToLeft 0.1 1]
+[wait wipe]
+[fadein black 0.1]
+[wait fade]
+[charaSet C 4037000 1 尼莫]
+[charaSet D 1098197410 1 Lambda]
+[scene 99002]
+[wt 0.4]
+[se ad14]
+[seVolume ad14 0 0]
+[seVolume ad14 0.5 0.3]
+[shake 0.03 3 3 1.7]
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[bgm BGM_EVENT_24 0.1 0.4]
+
+[wt 0.2]
+[wt 1.0]
+
+？1：……
+？！
+
+[seStop ad14 1.5]
+[wt 0.1]
+
+[charaPut V 1]
+[charaEffect V bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠琰女
+这里是琰女！　爆炸声如怒涛般涌来！[r]敌对构造体自内部开始崩溃了！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠刑部姬
+[#公主:我]这边也确认了！　成功啦～！
+[k]
+
+[charaFace G 7]
+＠刑部姬
+话说Lambda亲，可以赶紧回收我们吗～！！[r]总觉得立足点崩溃在即啊！　心理阴影要来了！！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠Lambda
+你不知道公主的护送工作优先于一切吗。[r]我已经派回收部队过去了，坚持一下。
+[k]
+
+[bgmStop BGM_EVENT_24 1.0]
+
+[charaFace D 6]
+＠Lambda
+舰桥，姑且说一句，她们两骑都平安无事哦。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠尼莫
+太好了……！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠玛修
+这里是玛修！　成功了，我们成功了，前辈！！
+[k]
+
+？1：嗯。
+？2：太好了……！
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠尼莫
+各位，作战结束！[r]尼莫系列，做好收工的准[line 2]
+[k]
+
+[messageOff]
+[se ad874]
+[bgmStop BGM_EVENT_82 0.7]
+[charaFadeout C 0.1]
+[wt 1.5]
+[seStop ad874 1.5]
+
+＠？？？
+各位地球人。
+[k]
+
+？1：呜哇！
+？2：从哪里传来了声音！？
+？！
+
+[bgm BGM_EVENT_71 0.1]
+
+＠？？？
+由于我的预期不足与计算失误，我输了。
+[k]
+
+＠？？？
+你们拒绝了中善方案的平稳灭绝。
+[k]
+
+＠？？？
+很遗憾，再会了。
+[k]
+
+[messageOff]
+[se ad42]
+[seVolume ad42 0 0.3]
+[se ad528]
+[wt 3.5]
+
+？1：……这退场台词听起来真不吉利。
+？2：……突然感到焦虑不安了。
+？！
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠尼莫
+……所谓的神明经常会用这种招数。[r]所以无论好恶，人类也只能对他们顶礼膜拜。
+[k]
+
+＠尼莫
+不管他们说什么，[r]人类都只能独自寻找希望，划桨前行。
+[k]
+
+[charaFace C 0]
+＠尼莫
+重瞳也这么想吧？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_71 1.5]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠重瞳
+……
+[k]
+
+＠重瞳
+肯定。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠尼莫
+就是嘛！　好了，准备迎接大家吧！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

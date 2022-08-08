@@ -1,0 +1,151 @@
+＄94-00-28-04-1-1
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+
+[charaSet A 8001001 1 玛修]
+[charaSet C 2001001 1 卫宫]
+[charaSet D 1008001 1 齐格飞]
+
+[scene 21102]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[fadein black 1.0]
+[wait fade]
+
+＠齐格飞
+呜，对不……！
+[k]
+
+＠卫宫
+拿下了！
+[k]
+
+[charaShake D 0.05 3 3 0.5]
+[charaFace D 4]
+＠齐格飞
+起，失策了……！
+[k]
+
+[messageOff]
+[charaFadeout D 0.4]
+[se ad54]
+[wait se ad54]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠玛修
+虽然很难缠，[r]但最后胜利的还是我们呢，御主！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠齐格飞
+……不，胜利的是我方。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠卫宫
+你说什么？
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠齐格飞
+虽然我欺骗了你们，但我不会道歉！
+[k]
+
+[charaFace D 0]
+＠齐格飞
+因为对敌人使用策略是战士理所应当的行为。
+[k]
+
+[charaFace D 1]
+＠齐格飞
+决不是什么值得羞愧的事。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+啊，一脸引以为傲的表情耶！
+[k]
+
+[bgmStop BGM_EVENT_2 0.5]
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.5]
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk C]
+[charaFace A 6]
+[charaFace C 2]
+[charaFadein A 0.1 2]
+[charaFadein C 0.1 0]
+＠卫宫
+[line 4]！[r]不好，玛修！　快启动宝具！
+[k]
+
+[charaFace A 2]
+＠玛修
+哎……！？
+[k]
+
+[messageOff]
+[charaTalk D]
+
+[se bac19]
+[wt 0.3]
+[se bac19]
+[wt 0.3]
+[se bac19]
+[wait se bac19]
+
+[fadeout black 0.1]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.5]
+[scene 10000]
+[fadein black 0.1]
+
+＠卫宫
+[line 4][#I am the bone of my sword:此身为剑之所成].
+[k]
+
+[messageOff]
+[se ad39]
+[wt 1.0]
+
+[seStop ad39]
+[fowardEffect bit_talk_14]
+
+[bgmStop BGM_EVENT_3 0.1]
+[se ad32]
+[wait se ad32]
+
+[wait fowardEffect bit_talk_14]
+
+
+[fadeout black 1.0]
+[wait fade]
+[soundStopAll]
+[end]

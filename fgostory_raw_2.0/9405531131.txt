@@ -1,0 +1,320 @@
+
+
+
+＄94-05-53-11-3-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 6041000 1 鬼一法眼]
+[charaSet C 4013300 1 梅芙]
+[charaSet D 1098206200 1 弁庆]
+[charaSet E 98104200 1 伊阿宋]
+[charaSet F 98104010 1 库·丘林·Alter]
+[charaSet G 1098206100 1 牛若丸]
+
+[charaSet H 98114210 1 赫拉克勒斯]
+
+[imageSet M back10000 1]
+[charaScale M 1.01]
+
+[charaSet R 98115000 1 特效用dummy]
+[charaSet S 98115000 1 特效用dummy2]
+
+[scene 32501]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠赫拉克勒斯？
+……[r]……
+[k]
+
+[messageOff]
+[se ad52]
+[charaSpecialEffect H flashErasure 0 1.7]
+[wait charaSpecialEffect H]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠伊阿宋
+唔噢，真的打倒了！？[r]毕竟不是真的，能打倒也很正常！
+[k]
+
+[messageOff]
+
+[se ade393 0.5]
+[seVolume ade393 1.5 0.7]
+[shake 0.03 0 5 1.5]
+[wt 1.5]
+[shake 0.03 0 3 0]
+[seVolume ade393 0.5 0.3]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_49 0.1]
+
+＠鬼一法眼
+开始震动了！[r]这赫拉克勒斯要恢复原状啦！
+[k]
+
+？1：快离开这里！
+
+？！
+
+
+＠鬼一法眼
+嗯。[r]迦勒底的御主，紧紧抓着咱！
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_49 0.5]
+[seStop ade393 1.0]
+[wait fade]
+
+[shakeStop]
+[charaFadeout B 0.1]
+
+[se ade458]
+
+[scene 112000]
+[wt 1.0]
+
+[seStop ade458 0.5]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.3 0,20]
+[wt 0.1]
+[cueSe SE_21 21_ade538]
+[charaMove B 0,-20 0.2]
+[wt 0.3]
+[seStop 21_ade538 0.1]
+[charaMove B 0,0 0.1]
+[wt 0.3]
+
+[charaFace B 18]
+[bgm BGM_EVENT_2 0.1]
+
+＠鬼一法眼
+……呼。[r]这是迄今为止最强的敌人呢。
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.3 0,20]
+[wt 0.1]
+[se ad60]
+[charaMove G 0,-20 0.2]
+[wt 0.4]
+[seStop ad60 0.1]
+[charaMove G 0,0 0.1]
+[wt 0.3]
+
+
+[charaFace G 4]
+
+＠牛若丸
+啊啊，真是的，我也太会给人添麻烦了。[r]我到底在想什么啊……！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.5]
+
+[charaCrossFade G 1098206110 5 0.5]
+[wait charaCrossFade G]
+[wt 0.5]
+[charaShake G 0.03 4 4 2.0]
+
+[cueSe SE_21 21_ade544]
+[wt 2.0]
+[seStop 21_ade544 0.1]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠鬼一法眼
+慢着，针……！？
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ade410]
+[charaEffect S bit_talk_warp_starry_sky]
+[wt 4.0]
+
+＠梅芙
+喂。[r]到底发生什么了！？
+[k]
+
+[messageOff]
+[charaPut S 2000,2000]
+[charaPut R 0,0]
+[wt 0.1]
+
+[se ad13]
+[charaEffect R bit_talk_10_LowLevel]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠玛修
+御主，请回答。[r]出现特异点反应。
+[k]
+
+[charaFace A 7]
+
+
+＠玛修
+……不，[r]虽然此前的地点也都是特异点的一种。
+[k]
+
+＠玛修
+但刚才新形成了一个特异点反应最强的地点。
+[k]
+
+[charaPut R 1200,1200]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut S 0,0]
+[wt 0.1]
+
+
+＠伊阿宋
+这像洞一样的东西就是关键吧。
+[k]
+
+[charaPut S 2000,2000]
+[charaFadeout S 0.1]
+[wt 0.1]
+
+[charaPut R 0,0]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+
+＠玛修
+发生在您那边的空间[#形变][r]似乎就是通往新地点的门。
+[k]
+
+[charaPut R 1200,1200]
+[charaFadeout A 0.1]
+[charaFadeout R 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+
+＠牛若丸
+针的反应是迄今为止最强的。[r]这是[line 3]
+[k]
+
+？1：坏牛若吗？
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+
+＠鬼一法眼
+……应该是吧。[r]咱的直觉也在呢喃，
+[k]
+
+＠鬼一法眼
+这洞的另一侧，[r]似乎就是决战之地。
+[k]
+
+[charaFace B 7]
+
+＠鬼一法眼
+好了好了。[r]坏牛若，另一个遮那王究竟有何企图[line 3]
+[k]
+
+[charaFace B 17]
+[bgmStop BGM_EVENT_5 1.0]
+
+＠鬼一法眼
+……[r]……
+[k]
+
+[charaFace B 2]
+[bgm BGM_EVENT_62 0.1]
+
+
+＠鬼一法眼
+好。走吧，各位！
+[k]
+
+[charaFace B 9]
+
+＠鬼一法眼
+还有，迦勒底的御主。[r]咱会好好保护你的，放心吧！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+这[messageShake 0.03 3 3 0.5]是我的职责吧，师傅[line 3]！
+[k]
+
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[soundStopAll]
+[end]

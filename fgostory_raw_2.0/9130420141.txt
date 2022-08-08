@@ -1,0 +1,950 @@
+
+＄91-30-42-01-4-1
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 3042002 1 罗穆路斯·奎里努斯]
+[charaSet B 1005001 1 尼禄]
+[charaSet C 7010001 1 卡利古拉]
+[charaSet D 1013001 1 恺撒]
+[charaSet E 4011001 1 布狄卡]
+[charaSet F 99502600 1 玛修]
+[charaSet G 3039000 1 加雷斯]
+[charaSet H 1009002 1 莫德雷德]
+[charaSet I 6008000 1 克娄巴特拉]
+[charaSet J 2001000 1 卫宫]
+[charaSet K 98104300 1 大怨灵]
+[charaSet L 6005001 1 杰克]
+[charaSet M 5004001 1 童谣]
+[charaSet N 3026000 1 贞德·Alter·Santa·Lily]
+[charaSet O 7028000 1 班扬]
+[charaSet V 99502600 1 通讯用]
+
+[cameraMove 0 0,0 1.01]
+[wt 0.1]
+
+[scene 107401]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+[wt 0.4]
+
+[se ad21]
+[wt 0.1]
+[shake 0.03 4 4 0.7]
+[wt 1.2]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaMoveScale A 1.05 0.3]
+[charaMove A 0,7 0.15]
+[wt 0.15]
+[se ad54]
+[wt 0.15]
+[charaFace A 2]
+＠罗穆路斯·奎里努斯
+由吾之四肢释放而出吧！
+[k]
+
+＠罗穆路斯·奎里努斯
+神明的力量，光芒四射的力量，[r]终将抵达繁星彼方的力量啊[line 3]
+[k]
+
+[se ad733]
+[se ad39]
+[seVolume ad39 0 0.5]
+
+＠罗穆路斯·奎里努斯
+[f large]『[#吾等之臂开拓一切，至天际:Per Aspera Ad Astra]』！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[effect bit_talk_light_rain2_fs]
+[se ad962]
+[wt 1.5]
+[se ad965]
+[se ad891]
+
+[fadeout white 2.0]
+[wait fade]
+
+[effectStop bit_talk_light_rain2_fs]
+
+[charaScale A 1.0]
+[se ad876]
+[se ad875]
+[se ad886]
+[seVolume ad886 0 0.4]
+[se ad864]
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+[charaPut K 0,0]
+[charaEffect K bit_talk_barrier]
+[se ade404]
+[seVolume ade404 0 0]
+[seVolume ade404 2.0 0.3]
+[wt 1.0]
+
+[seStop ad886 2.0]
+[fadein white 2.0]
+[wait fade]
+
+[wt 0.7]
+[charaFadeout K 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+[charaEffectDestroy K bit_talk_barrier]
+[seStop ade404 1.0]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠布狄卡
+呀啊啊啊啊！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+
+[effect bit_talk_x_slash01]
+[wt 0.2]
+[cueSe Battle bac139]
+[shake 0.03 3 3 0.4]
+[wt 0.7]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+＠维钦托利·鬼魂
+噢，噢噢，噢……
+[k]
+
+＠维钦托利·鬼魂
+噢噢噢噢噢噢噢噢噢噢噢噢噢……[line 3]！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.0]
+[charaSpecialEffect K erasure 1 1.7]
+[se ad42]
+[wait charaSpecialEffect K]
+[charaFadeout K 0]
+[wt 1.5]
+
+[effect bit_talk_20]
+[cueSe Battle bac35]
+[cueSeVolume bac35 0 0]
+[cueSeVolume bac35 0.5 0.7]
+[wt 1.5]
+[effectStop bit_talk_20]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠布狄卡
+……击中了。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaEffect V bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠玛修
+敌对个体，确认消灭！
+[k]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaFace F 0]
+＠玛修
+5号圣杯出现了。[r]各位可以进行回收吗？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠布狄卡
+嗯，应该没问题。[r]玛修那边能做好保管的准备吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠玛修
+明白了。[r]前辈，还有各位，拜托了！
+[k]
+
+？1：我们会仔细回收的。
+
+[charaFace F 13]
+＠玛修
+我这边也会拜托达·芬奇亲[r]进行森严的保管与封印。
+[k]
+
+？2：也要谢谢玛修！
+
+[charaFace F 13]
+＠玛修
+不客气！
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[effect bit_talk_20]
+[wt 2.0]
+[effectStop bit_talk_20]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠布狄卡
+好了，该怎么回收呢。
+[k]
+
+＠布狄卡
+我觉得我还是不要碰为好。[r]所以[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠罗穆路斯·奎里努斯
+交给我吧。
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_20]
+[se ad733]
+[se ad39]
+[seVolume ad39 0 0.5]
+[wt 1.5]
+[seStop ad733 1.0]
+[seStop ad39 1.0]
+[fowardEffectStop bit_talk_20]
+[wt 1.0]
+
+＠罗穆路斯·奎里努斯
+用我的魔力包裹。[r]这样就不会受外部干涉了吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠布狄卡
+嗯。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFace E 4]
+＠布狄卡
+……谢……谢。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 1.2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠布狄卡
+……[r]……
+[k]
+
+＠布狄卡
+……说实话，光靠我一个估计会束手无策。[r]不只因为那是圣杯，还因为对象。
+[k]
+
+＠布狄卡
+外加是亡灵……
+[k]
+
+[charaFace E 0]
+＠布狄卡
+肯定会对精神造成某种影响吧？[r]而你帮忙解除了这些。
+[k]
+
+＠布狄卡
+不仅帮了我，也帮了[%1]。[r]所以……
+[k]
+
+＠布狄卡
+谢谢。[r]刚才那个，多亏了你的帮助。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠罗穆路斯·奎里努斯
+不用谢。
+[k]
+
+＠罗穆路斯·奎里努斯
+不必原谅我。[r]憎恨我吧。
+[k]
+
+＠罗穆路斯·奎里努斯
+你，你们有这种权利，[r]我也有承受的义务。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠布狄卡
+我……吗。[r]不说罗马了吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠罗穆路斯·奎里努斯
+嗯。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠布狄卡
+是么。我明白了。
+[k]
+
+？1：…………………………
+
+？！
+
+[charaFace E 4]
+＠布狄卡
+…………唉。
+[k]
+
+＠布狄卡
+别用那种表情看我啦，[%1]。[r]我不会再闹了，现在我已经冷静下来了。
+[k]
+
+[charaFace E 0]
+＠布狄卡
+不过我还是得说。[r]罗穆路斯·奎里努斯。
+[k]
+
+[charaFace E 5]
+＠布狄卡
+不列颠尼亚的布狄卡是不会原谅你的。[r]永远不会。
+[k]
+
+＠布狄卡
+……[r]……
+[k]
+
+[charaFace E 0]
+＠布狄卡
+…………………………可是。
+[k]
+
+＠布狄卡
+我是迦勒底的我。[r]十分相像，但总是有所不同。
+[k]
+
+＠布狄卡
+所以[line 3]
+[k]
+
+＠布狄卡
+我会在[#不给御主添麻烦的范围]内，[r]原谅你。
+[k]
+
+＠布狄卡
+我唯独不会把你当成“敌人的敌人是朋友”。[r]即便如此……
+[k]
+
+[messageOff]
+[wt 0.7]
+
+[charaFace E 3]
+＠布狄卡
+现在的我毕竟首先[r]还是[%1]的从者嘛。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.7]
+
+[charaFace A 1]
+＠罗穆路斯·奎里努斯
+[line 5]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠布狄卡
+……你倒是说点什么啊。
+[k]
+
+[charaFace E 3]
+＠布狄卡
+算了。[r]还是不说为好。
+[k]
+
+[messageOff]
+[wt 0.7]
+[bgmStop BGM_EVENT_2 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+[charaSet A 3042000 1 罗穆路斯·奎里努斯]
+[branchQuestNotClear lblNotClear01 3000303]
+[scene 105900]
+[branch lblConf01]
+[label lblNotClear01]
+[scene 105600]
+[label lblConf01]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ade396]
+[seVolume ade396 0 0]
+[seVolume ade396 0.5 0.6]
+[se adm75]
+[seVolume adm75 0 0]
+[seVolume adm75 0.5 1.0]
+[wt 2.0]
+[seStop ade396 1.4]
+[seStop adm75 1.4]
+[wt 1.4]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠布狄卡
+好啦～，饿肚子的小家伙们！
+[k]
+
+＠布狄卡
+让你们久等了！[r]今晚是我拿手的鸡肉宴哦！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth O 1]
+[charaDepth L 4]
+[charaDepth M 3]
+[charaDepth N 2]
+[charaFace O 1]
+[charaFace L 1]
+[charaFace M 1]
+[charaFace N 6]
+[charaFadein O 0.1 -380,0]
+[charaFadein L 0.1 -110,0]
+[charaFadein M 0.1 150,0]
+[charaFadein N 0.1 375,0]
+＠孩子们
+哇～！
+[k]
+
+[charaFadeout O 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaDepth G 1]
+[charaDepth H 2]
+[charaFace G 1]
+[charaFace H 1]
+[charaFadeinFSL G 0.1 0]
+[charaFadeinFSR H 0.1 2]
+＠孩子们？
+噢噢～！
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠恺撒
+多么诱人的香气啊……[r]话说克娄巴特拉，别光吃一条腿，吃四条腿吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth I 1]
+[charaDepth D 2]
+[charaTalk I]
+[charaFace I 1]
+[charaFace D 1]
+[charaFadeinFSL I 0.1 0]
+[charaFadeinFSR D 0.1 2]
+＠克娄巴特拉
+嗯，好。这油脂的香气确实能够勾起食欲，[r]可吃四条腿也太过了吧，恺撒大人？
+[k]
+
+[charaFace D 4]
+＠恺撒
+哎～～～。
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠卡利古拉
+鸡[line 12]！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠尼禄
+噢噢，噢噢！[r]余还在想上次提到的鸡是什么呢！　没想到！
+[k]
+
+＠尼禄
+今晚又能让余品尝到美味了吗，[r]布狄卡！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+＠布狄卡
+好啦好啦，没错。
+[k]
+
+＠布狄卡
+起初还多少有些顾虑，[r]现在已经很顺理成章地吃了起来……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+＠卫宫
+布狄卡，[r]可以用大盘子装吗？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠布狄卡
+啊啊不好意思，拜托了！[r]我没考虑到装盘的事！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace O 5]
+[charaFace L 5]
+[charaFace M 5]
+[charaFace N 5]
+[charaFadein O 0.1 -380,0]
+[charaFadein L 0.1 -110,0]
+[charaFadein M 0.1 150,0]
+[charaFadein N 0.1 375,0]
+＠孩子们
+我们饿了～！
+[k]
+
+[charaFadeout O 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk J]
+[charaFace J 4]
+[charaFadein J 0.1 1]
+＠卫宫
+英灵没有字面意义上的食欲才对……[r]不过算了，你们可要懂礼貌地坐端正哦。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace O 1]
+[charaFace L 1]
+[charaFace M 1]
+[charaFace N 6]
+[charaFadein O 0.1 -380,0]
+[charaFadein L 0.1 -110,0]
+[charaFadein M 0.1 150,0]
+[charaFadein N 0.1 375,0]
+＠孩子们
+好～！
+[k]
+
+[charaFadeout O 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠布狄卡
+没错没错，要懂礼貌！[r]还有你！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠尼禄
+余吗？　唔嗯，汝是说余吗！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠恺撒
+不，她刚才说的是我！[r]我正在用尽心机准备谋划偷吃的[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk I]
+[charaFace I 2]
+[charaFace D 1]
+[charaFadeinFSL I 0.1 0]
+[charaFadeinFSR D 0.1 2]
+＠克娄巴特拉
+恺撒大人！
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[se ad5]
+[seVolume ad5 0 0]
+[seVolume ad5 0.7 0.5]
+[wt 1.5]
+[bgm BGM_EVENT_7 1.5 0.6]
+[seStop ad5 2.5]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+＠罗穆路斯·奎里努斯
+[line 3]嗯，甚好。
+[k]
+
+[messageOff]
+[charaFadeout A 0.7]
+[charaMove A 32,0 0.7]
+[wt 1.2]
+
+？1：咦？
+？2：神祖，你要去哪儿？
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠罗穆路斯·奎里努斯
+唔。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFace A 0]
+[charaFadeinFSL E 0.1 0]
+[charaFadeinFSR A 0.1 2]
+＠布狄卡
+真是的，[r]今天的功臣要去哪里啊。
+[k]
+
+＠罗穆路斯·奎里努斯
+唔……
+[k]
+
+[charaFace E 0]
+＠布狄卡
+虽然我不会原谅你，[r]但是啊。
+[k]
+
+＠布狄卡
+我是不会欺负你的。[r]何况这里还有小孩子吧？
+[k]
+
+＠布狄卡
+谁都不会做那种不敢挺起胸膛的事啦。
+[k]
+
+＠布狄卡
+所以，没错。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFace E 1]
+＠布狄卡
+等人理什么的都平安解决后，[r]我会堂堂正正地……
+[k]
+
+＠布狄卡
+报上自己的名号[line 3][r]然后砍下你的头。神明。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace A 1]
+[wt 1.5]
+
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.5 1.0]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠尼禄
+砍下什么？[r]是余听错了吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace O 0]
+[charaFace L 0]
+[charaFace M 0]
+[charaFace N 0]
+[charaFadein O 0.1 -380,0]
+[charaFadein L 0.1 -110,0]
+[charaFadein M 0.1 150,0]
+[charaFadein N 0.1 375,0]
+＠孩子们
+[FFFFFF]？？[-]
+[k]
+
+[charaFadeout O 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk depthOff]
+[charaTalk H]
+[charaFace G 0]
+[charaFace H 1]
+[charaFadeinFSL G 0.1 0]
+[charaFadeinFSR H 0.1 2]
+＠莫德雷德
+怎么怎么，是要饭前运动吗？　可以哦？
+[k]
+
+[charaFace G 1]
+＠加雷斯
+他们应该不是在说这个吧。[r]多半是在说作为配菜的红薯吧。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠尼禄
+红薯啊。是吗？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.7]
+
+＠罗穆路斯·奎里努斯
+呵。
+[k]
+
+＠罗穆路斯·奎里努斯
+…………这也是……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠布狄卡
+你可别说罗马哦？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 1.0]
+＠罗穆路斯·奎里努斯
+浪漫。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 1.0]
+
+[charaFace E 1]
+＠布狄卡
+真是的！　受不了你！
+[k]
+
+＠布狄卡
+行吧行吧，浪漫也行！[r]趁刚做好还热腾腾的，快吃吧！
+[k]
+
+[se ad6]
+[seVolume ad6 0 0]
+[seVolume ad6 0.2 0.7]
+＠V：众人
+好～！！[twt 0.2][seStop ad6 2.5]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 2.0]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

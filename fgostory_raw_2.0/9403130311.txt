@@ -1,0 +1,449 @@
+
+
+
+＄94-03-13-03-1-1
+[soundStopAll]
+[charaSet A 1098160500 1 阿斯托尔福（上下颠倒）]
+[charaSet B 99502600 1 玛修]
+[charaSet C 98111500 1 通讯用杂音]
+[charaSet D 98111500 1 达·芬奇]
+[charaSet E 3036000 1 布拉达曼特]
+[charaSet F 4004001 1 阿斯托尔福]
+[charaSet G 4022001 1 圣诞·Alter]
+[charaSet H 1098159700 1 魁札尔假面]
+
+[scene 68900]
+
+[charaPut C 0,-2000]
+[charaEffect C bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠布拉达曼特
+[f large]『[#炫目的闪光魔盾:Bouclier de Atlante]』！
+[k]
+
+[se ad29]
+[messageOff]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.8]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+[charaShake F 0.05 4 4 0.5]
+＠阿斯托尔福
+呜哇，好刺眼！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠布拉达曼特
+就是现在！
+[k]
+
+[se ad73]
+[messageOff]
+[charaMove E 0 0.2]
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth E 0]
+[charaDepth F 1]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFace F 4]
+[charaFadein F 0.1 1]
+[wt 0.5]
+
+[charaFace E 2]
+[charaFadein E 0.1 800,0]
+[charaMove E 1 0.3]
+[wt 0.3]
+[se ad183]
+[charaShake F 0.05 3 3 0.2]
+[wt 0.4]
+
+[charaMoveReturn E 0,15 0.2]
+[se ad171]
+[se ad158]
+[seStop ad158 0.3]
+[charaMove F 0,200 0.3]
+[charaFadeout F 0.1]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠布拉达曼特
+不好意思，这可是认真的比赛。[r]就算对手是小阿，我也不会手下留情。
+[k]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠布拉达曼特
+在坠落地点等待，[r]当坠落时就用这把枪[line 3]
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripDownToUp 0.3 1.0]
+[wait wipe]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[scene 28300]
+
+[effect bit_talk_43h]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[charaShake A 0.04 2 2 0]
+
+[se ad75]
+[wipein rectangleStripUpToDown 0.3 1.0]
+[wait wipe]
+
+[wt 2.0]
+
+
+[wipeout rectangleStripUpToDown 0.3 1.0]
+[wait wipe]
+[effectStop bit_talk_43h]
+
+[charaFadeout A 0.1]
+[charaShakeStop A]
+
+[seStop ad75 0.5]
+[wt 0.2]
+
+[scene 68900]
+
+[wipein rectangleStripDownToUp 0.3 1.0]
+[wait wipe]
+
+[wt 0.2]
+
+[se ade184]
+[wt 0.5]
+[seStop ade184]
+
+[wt 0.4]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠布拉达曼特
+噼嗒？
+[k]
+
+[messageOff]
+[wt 0.1]
+[wipeout rectangleStripDownToUp 0.3 1.0]
+[wait wipe]
+[charaFadeout E 0.1]
+
+[scene 28300]
+
+[wt 0.1]
+
+[wipein rectangleStripUpToDown 0.3 1.0]
+[wait wipe]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠阿斯托尔福
+嘿嘿～。[r]我还有这可靠的骏鹰呢！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut C 1]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠玛修
+啊啊。阿斯托尔福先生的骏鹰靠指甲[r]停在枪的尖端！　多么的身轻如燕！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-90]
+＠达·芬奇
+这个嘛，毕竟人家可以独立飞行嘛。
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.3 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[charaPut C 0,-2000]
+
+[scene 68900]
+
+[wt 0.1]
+
+[wipein rectangleStripDownToUp 0.3 1.0]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠布拉达曼特
+（盯。）
+[k]
+
+＠布拉达曼特
+话说，小阿。那只骏鹰……该不会是我的吧？
+[k]
+
+[charaTalk F]
+＠阿斯托尔福
+哎？　啊～，这……这就不好说了吧？　啊哈哈哈！[r]我也不知道！
+[k]
+
+[charaTalk E]
+[charaFace E 2]
+＠布拉达曼特
+唔……为什么和我辛辛苦苦从[#邪恶魔术师:亚特兰特]那里[r]抢来的孩子非常相像呢！？ 　我问你啊！
+[k]
+
+＠布拉达曼特
+为什么你一脸这是属于自己的表情骑着那孩子到处飞啦？[r]喂，我问你啦！
+[k]
+
+
+[charaTalk F]
+＠阿斯托尔福
+那之后我也骑过它，所以我也有这个权利吧～！
+[k]
+
+
+[charaTalk E]
+[charaFace E 2]
+＠布拉达曼特
+哎，结果它真的是我的吗！？[r]你给我下来，到我面前来，过来！
+[k]
+
+
+[charaTalk F]
+＠阿斯托尔福
+就算你这么说……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠圣诞·Alter
+不要分心，粉红！[r][#上面被人抓到破绽了]！
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.2 1]
+[wait wipe]
+
+[scene 28300]
+
+[charaFadeout G 0.1]
+
+[wipein rectangleStripUpToDown 0.2 1]
+[wait wipe]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠阿斯托尔福
+呜！　比骑着骏鹰的我还要上面[line 3]！？
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripDownToUp 0.2 1]
+[wait wipe]
+
+[charaFadeout F 0.1]
+
+[se ad77]
+[wt 0.4]
+
+[wipein rectangleStripUpToDown 0.2 1]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.2]
+
+＠魁札尔假面
+只要利用边绳，这种事小菜一碟～！[r]你可不能小看摔角手的空中机动能力哦～！
+[k]
+
+[charaFace H 1]
+＠魁札尔假面
+高度已经足够了～！[r][line 3]礼物背摔！
+[k]
+
+[messageOff]
+[se ad7]
+[charaMove H 0,-600 0.3]
+[charaFadeout H 0.1]
+
+[se ad75 0.5]
+[effect bit_talk_43h]
+[wt 0.6]
+
+
+？1：连骏鹰一起炸弹摔！？
+？！
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.2 1]
+[wait wipe]
+
+[seStop ad75]
+
+[effectStop bit_talk_43h]
+
+[scene 68900]
+
+[charaFadeout H 0.1]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.2 1]
+[wait wipe]
+[wt 0.4]
+
+[se ad64]
+[se bac10]
+[shake 0.05 3 3 0.4]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 1.5]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+[wt 0.2]
+[charaMove F 10,0 0.5]
+[wt 0.6]
+[charaMove F -10,0 0.7]
+[wt 0.7]
+[charaMove F 1 0.8]
+＠阿斯托尔福
+呜啾……
+[k]
+
+[messageOff]
+[charaMove F 0,-50 0.4]
+[charaFadeout F 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.2]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠圣诞·Alter
+嘁！　我去救[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠布拉达曼特
+休想得逞！
+[k]
+
+[messageOff]
+
+[se ad29]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.8]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+[charaShake G 0.05 4 4 0.5]
+＠圣诞·Alter
+呜……！　好刺眼……！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[bgmStop BGM_EVENT_3 0.5]
+
+[wt 1.0]
+
+[se ade221]
+[wt 2.5]
+
+[se ade175]
+[wt 2.5]
+[seStop ade175]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠魁札尔假面
+胜负已定[line 3]！[r]无论何时，倒数三下的声音都那么悦耳～！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+＠布拉达曼特
+呼。赢……赢了……太好了……
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[soundStopAll]
+[end]
+

@@ -1,0 +1,369 @@
+
+＄94-02-90-02-1-0
+[soundStopAll]
+
+
+
+[charaSet A 1005002 1 尼禄]
+
+[charaSet B 8001000 1 玛修]
+
+[scene 64400]
+
+[se ad207]
+
+[fadein black 1.5]
+[wait fade]
+
+[seStop ad207 2.0]
+[se ad95]
+[seVolume ad95 0 0.2]
+[wt 0.5]
+[seVolume ad95 2.0 1.0]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.2]
+[seStop ad95 0.2]
+[wt 0.3]
+
+＠玛修
+这里就是决赛的舞台……[wt 0.7][charaFace B 6][r]哎？　尼禄陛下？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠尼禄
+唔，是玛修和[%1]啊！？
+[k]
+
+＠尼禄
+这是怎么回事，这不是决赛吗？[r]是出了什么岔子吗！？
+[k]
+
+[charaTalk B]
+
+[bgm BGM_EVENT_40 0.1]
+
+＠B：？？？
+不，没有任何差错。[r]晋升决赛的队伍只有两组。这是规矩。
+[k]
+
+[wt 0.5]
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[input selectBranch]
+[charaSet A 1005002 1 尼禄]
+[charaSet B 8001000 1 玛修]
+[scene 64400]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+[seStop ad207 0.1]
+[seStop ad95 0.1]
+
+[wt 0.1]
+[messageOff]
+[maskin black 1]
+[bgm BGM_EVENT_40 0.1]
+[wait mask]
+[wt 0.4]
+[label selectBranch]
+
+
+？1：这声音是吉尔伽美什……！
+[charaSet C 2002001 1 吉尔伽美什]
+
+？2：这声音是豪华P……！
+[charaSet C 5018300 1 豪华P]
+？！
+
+
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+[wt 0.2]
+
+
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 1]
+
+[label INPUT_SELECT_BRANCH_1]
+
+＠吉尔伽美什
+呼哈哈，来的果然是你们啊，杂种！[r]这次的宴会确实非常精彩！
+[k]
+
+＠吉尔伽美什
+这是给你们的奖励，赐予你们与王直接比试的机会。[r]好好品味这份名誉并坠落地面吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠尼禄
+看来你是打算同时与吾等交手吧。[r]如果这就是你身为王的尊严，余没有异议。
+[k]
+
+＠尼禄
+但告诉余一件事。[r]举办如此规模的庆典究竟耗费了多少资金。
+[k]
+
+＠尼禄
+余不认为自己的储蓄足以承担这些。[r]汝这家伙究竟动用了多少经费？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠吉尔伽美什
+哼。用了罗马金库三倍的资金[line 3][r]本王本想这么说，但本王其实并没有多大的损失。
+[k]
+
+＠吉尔伽美什
+因为那个男人啊，以你的金库为基础策划了方案，[r]完成了商业谈判，将资金翻了好几倍哦。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.7]
+[charaFace A 0]
+[bgmStop BGM_EVENT_40 0.5]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠吉尔伽美什
+九伟人这形容还真贴切。[r]没想到那三寸不烂之舌在现代娱乐界也行得通。
+[k]
+
+＠吉尔伽美什
+那家伙想必比你更为深入地思考了[r]该如何让尼禄祭获得成功吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠玛修
+恺撒先生……尽管是个会给人添麻烦的人，[r]但果然还是在为尼禄陛下担心呢。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 0.3]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠尼禄
+唔嗯！　听到这话就够了，[r]接下来只剩战斗了，英雄王！
+[k]
+
+＠尼禄
+尽管这场祭典已经属于你了，[r]但余还有身为皇帝的志气！
+[k]
+
+＠尼禄
+节日的主角并非运营，而是参加的勇者！[r]余至少要作为最强的剑士，夺回那个圣杯！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠吉尔伽美什
+蠢货，正因如此，本王才会来此战斗。[r]主角自始至终都是本英雄王啊。
+[k]
+
+＠吉尔伽美什
+本王已经腻烦了算账，[r]与摆出明事理好王的一面了。
+[k]
+
+＠吉尔伽美什
+本王会赐予你们原初的地狱。[r]别以为普通英雄能够赢得过本王[line 3]！
+[k]
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_2]
+
+＠豪华P
+呼哈哈，来的果然是你们啊，杂种！[r]这次的宴会确实非常精彩！
+[k]
+
+＠豪华P
+这是给你们的奖励，赐予你们与王直接比试的机会。[r]好好品味这份名誉并坠落地面吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠尼禄
+看来你是打算同时与吾等交手吧。[r]如果这就是你身为王的尊严，余没有异议。
+[k]
+
+＠尼禄
+但告诉余一件事。[r]举办如此规模的庆典究竟耗费了多少资金。
+[k]
+
+＠尼禄
+余不认为自己的储蓄足以承担这些。[r]汝这家伙究竟动用了多少经费？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠豪华P
+哼。用了罗马金库三倍的资金[line 3][r]本王本想这么说，但本王其实并没有多大的损失。
+[k]
+
+＠豪华P
+因为那个男人啊，以你的金库为基础策划了方案，[r]完成了商业谈判，将资金翻了好几倍哦。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.7]
+[charaFace A 0]
+[bgmStop BGM_EVENT_40 0.5]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠豪华P
+九伟人这形容还真贴切。[r]没想到那三寸不烂之舌在现代娱乐界也行得通。
+[k]
+
+＠豪华P
+那家伙想必比你更为深入地思考了[r]该如何让尼禄祭获得成功吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠玛修
+恺撒先生……尽管是个会给人添麻烦的人，[r]但果然还是在为尼禄陛下担心呢。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 0.3]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠尼禄
+唔嗯！　听到这话就够了，[r]接下来只剩战斗了，英雄王！
+[k]
+
+＠尼禄
+尽管这场祭典已经属于你了，[r]但余还有身为皇帝的志气！
+[k]
+
+＠尼禄
+节日的主角并非运营，而是参加的勇者！[r]余至少要作为最强的剑士，夺回那个圣杯！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠豪华P
+蠢货，正因如此，本王才会来此战斗。[r]主角自始至终都是本英雄王啊。
+[k]
+
+＠豪华P
+本王已经腻烦了算账，[r]与摆出明事理好王的面孔了。
+[k]
+
+＠豪华P
+本王会赐予你们原初的地狱。[r]别以为普通英雄能够赢得过本王[line 3]！
+[k]
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_3]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

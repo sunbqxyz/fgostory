@@ -1,0 +1,571 @@
+
+
+
+＄03-00-07-13-3-1
+
+
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 7006300 1 坂田金时]
+[charaSet B 7023001 1 源赖光]
+[charaSet C 1047001 1 渡边纲]
+[charaSet D 6030000 1 段藏]
+[charaSet E 7022001 1 茨木童子]
+[charaSet G 5017000 1 美狄亚·Lily]
+[charaSet J 1098205900 1 伊吹童子]
+
+[charaSet H 98115000 1 特效用]
+[charaSet I 1098205910 1 伊吹童子剪影]
+[charaSet K 98115000 1 特效用2]
+
+[scene 102002]
+
+[charaPut H 2000,2000]
+[charaEffect H bit_talk_barrier02_fs]
+
+[bgm BGM_EVENT_24 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.5]
+[se ad678]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,15 0.2]
+[effect bit_talk_gold_slash_02]
+[wt 0.2]
+[charaFadeout A 0.1]
+[wt 0.1]
+[blurOff motion 0.2]
+
+[effect bit_talk_thunder_03_fs]
+[se ad842]
+[se ade346]
+[wt 1.0]
+[seStop ad842 0.5]
+[seStop ade346 0.5]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[wt 0.5]
+[se ad7]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[charaMoveScale C 1.1 0.2]
+[charaMove C 0,15 0.2]
+[wt 0.2]
+[charaFadeout C 0.1]
+[wt 0.1]
+[blurOff motion 0.2]
+
+[charaScale A 1.0]
+[charaScale C 1.0]
+
+[se ad1053]
+[effect bit_talk_quick_slash]
+[wt 0.4]
+[se bac308]
+[wt 0.8]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.5]
+[se ad85]
+[effect bit_talk_v_slash01]
+[wt 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOff]
+[charaDepth J 1]
+[charaDepth H 2]
+
+[charaPut H 1]
+[charaScale J 1.3]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 -30,15]
+[wt 0.5]
+[se ad1013]
+[effect bit_talk_14 -300,100]
+[wt 0.1]
+[se ad1014]
+[effect bit_talk_14 0,-200]
+[wt 0.1]
+[se ad1032]
+[effect bit_talk_14 300,100]
+[wt 1.0]
+
+[charaFadeout J 0.1]
+[charaPut H 2000,2000]
+
+[charaScale C 1.1]
+[se ad671]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[charaMoveScale C 1.0 0.2]
+[wt 0.2]
+
+＠渡边纲
+……呜！
+[k]
+
+[charaFace C 2]
+
+＠渡边纲
+攻击没有效果！[r]Caster！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠美狄亚·Lily
+我已经使用了……[r]我所知范围内……藉由高速神言释放的所有术式……！
+[k]
+
+[charaFace G 2]
+
+＠美狄亚·Lily
+但……还是伤不了她，纲大人！[r]她肉体上覆盖着与生俱来的防御结界！
+[k]
+
+[charaFace G 5]
+
+＠美狄亚·Lily
+如此强度、如此强烈的存在感……[r]简直像与自然本身为敌……！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[se ad73]
+[charaPut D 1]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect D appearance 1 0.25]
+[wt 0.5]
+[charaFace D 2]
+＠段藏
+神灵·伊吹童子健在！[r]集结我方全部力量依然无法伤及她的灵核！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+嘿！　不试试的话[line 3]
+[k]
+
+[messageOff]
+[se ad1010]
+[wt 0.4]
+[se ad85]
+[charaFace A 2]
+[effect bit_talk_gold_slash_02]
+[wt 0.1]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[charaPut H 1]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 -30,15]
+[wt 0.5]
+[se ad1013]
+[se ad32]
+[effect bit_talk_14]
+[wt 1.0]
+
+＠伊吹童子
+生命。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 -30,15]
+
+＠伊吹童子
+献上……
+[k]
+
+＠伊吹童子
+虚渺之物吧。
+[k]
+
+＠A：酒吞童子
+哎，是吗？
+[k]
+
+＠伊吹童子
+[line 7]？
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_24 1.0]
+[wait fade]
+
+[scene 10000]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad1051]
+[effect bit_talk_14]
+[wt 1.0]
+[se ad464]
+[effect bit_talk_blood_splash_fs 0,0 H]
+[wt 3.0]
+
+[scene 102002 1.0]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠源赖光
+酒吞童子！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠段藏
+从神灵·伊吹童子背后发动的偷袭[line 3][r]酒吞童子的利爪打破了结界，贯穿了她的身躯！
+[k]
+
+＠段藏
+确认直接命中灵基深处！[r]御主！
+[k]
+
+＠段藏
+伊吹童子本就是酒吞童子的不同侧面！[r]因此哪怕样貌相异，两者都拥有相同的本体！
+[k]
+
+＠段藏
+她的利爪，会奏效吗……！？
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[se ad231]
+[effect bit_talk_35]
+[charaFadeout D 0.1]
+[wt 0.1]
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[wt 1.5]
+[se ad1041]
+[scene 102002 1.0]
+[wt 3.5]
+
+
+[bgm BGM_EVENT_132 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+！？
+[k]
+
+＠坂田金时
+怎么回事……[r]这简直就像尸骸式神……
+[k]
+
+＠坂田金时
+那家伙的伤势……在愈合……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad1041]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaScale J 1.0]
+[charaDepth I 4]
+[charaDepth J 1]
+
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 1.2]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[wt 0.3]
+[charaFadeout I 1.2]
+[wt 2.0]
+＠伊吹童子
+唔。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠段藏
+不对！　魔力的性质与尸骸式神截然不同！
+[k]
+
+＠段藏
+这恐怕是伊吹童子天生具备的自动再生能力！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠渡边纲
+原本就不死吗。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+呵！　那家伙说不定相当Golden呢！[r]不过你们看，那家伙缩回原本的尺寸啦！
+[k]
+
+[charaFace A 0]
+
+＠坂田金时
+看来现下正是！　进攻之时[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 7]
+[charaFadein J 0.1 1]
+[wt 1.0]
+[charaFaceFade J 14 0.5]
+[wt 0.5]
+
+＠伊吹童子
+愉快。
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[se ad875]
+[se ad14]
+[seVolume ad14 0 0.4]
+[shake 0.05 0 2 1.2]
+[charaPut K 1]
+[charaEffect K bit_talk_pressure_fs]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+…………呜！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 1.5]
+
+＠
+仅一句话。
+[k]
+
+[messageOff]
+[wt 1.0]
+＠
+再度引发超高密度魔力导致重力负荷的这一句话，[r]使所有人与鬼都停下了动作。
+[k]
+
+＠
+哪怕与如此具威胁的神灵拥有[r]相同来源和本体的酒吞童子也不例外。
+[k]
+
+＠
+比先前的重力更为沉重。[r]在场所有人中[line 3]
+[k]
+
+＠
+能挺身直立的，只有神灵·伊吹童子一骑。
+[k]
+
+＠
+其他人悉数跪伏于地，[r]低垂头颅。
+[k]
+
+＠
+在大地真正的支配者面前，[r]拥有生命的存在都束手无策，只能眼睁睁地看着。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+[wt 0.5]
+[se ad222]
+[seVolume ad222 0 0.6]
+[charaMove A 0,-20 0.2]
+[wt 0.2]
+[seStop ad222 0.2]
+
+＠坂田金时
+可……恶……[line 3]！
+[k]
+
+[messageOff]
+[charaMove A 0,-50 0.4]
+[charaFadeout A 0.4]
+[wt 0.4]
+[se ad144]
+[wt 0.5]
+＠坂田金时
+我的手……
+[k]
+
+＠坂田金时
+竟连……一根手指，都……动弹……不得……！？
+[k]
+
+[messageOff]
+[wt 0.5]
+
+？1：身体……
+
+？！
+
+[wt 0.5]
+？1：动不了……！
+
+？！
+
+＠坂田金时
+老大！
+[k]
+
+＠段藏
+御主！
+[k]
+
+[messageOff]
+[seStop ad14 1.0]
+[charaPut K 1200,1200]
+[se ad1042]
+[wt 2.0]
+[seStop ad1042 0.5]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+
+＠伊吹童子
+………………好了。
+[k]
+
+＠伊吹童子
+生命的群体啊。
+[k]
+
+＠伊吹童子
+现在余并不想要活祭，[r]但如若汝等无论如何都想献上，余亦可赏脸吃掉。
+[k]
+
+[charaFace J 9]
+
+＠伊吹童子
+让余想想，那首先[line 3]
+[k]
+
+[messageOff]
+[charaFadeout J 0.4]
+[wt 0.1]
+
+[se ad1042]
+[wt 2.0]
+[seStop ad1042 0.5]
+
+
+[charaScale J 1.2]
+[charaTalk J]
+[charaFace J 14]
+[charaFadein J 0.1 1]
+
+＠伊吹童子
+就从你开始吧？
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_132 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

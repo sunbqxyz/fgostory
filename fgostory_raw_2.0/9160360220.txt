@@ -1,0 +1,162 @@
+
+＄91-60-36-02-2-0
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 6036001 1 李书文]
+[charaSet B 4039002 1 曼迪卡尔多]
+[charaSet C 1098159300 1 武术家1]
+[charaSet D 1098159300 1 武术家2]
+[charaSet E 1098159300 1 武术家3]
+[charaSet F 1098159300 1 武术家4]
+
+[scene 109400]
+[fadein black 1.0]
+[wait fade]
+
+[se ad799]
+[seVolume ad799 0 0.6]
+[wt 1.0]
+[seStop ad799 0.7]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+＠李书文
+好了，这是第二层。[r]对手已经出现了[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+＠武术家
+[line 3]哈！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠曼迪卡尔多
+……呃，和刚才的不是一样嘛。[r]既然如此[line 3]。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[se ade210]
+[seVolume ade210 0 0.4]
+[seVolume ade210 0.4 1.0]
+[charaDepth C 4]
+[charaDepth D 3]
+[charaDepth E 1]
+[charaDepth F 2]
+[charaFace C 0]
+[charaFace D 0]
+[charaFace E 0]
+[charaFace F 0]
+[charaFadein C 0.4 -145,0]
+[charaMove C -125,0 0.4]
+[wt 0.1]
+[charaFadein D 0.4 145,0]
+[charaMove D 125,0 0.4]
+[wt 0.1]
+[charaFadein E 0.4 -395,0]
+[charaMove E -375,0 0.4]
+[wt 0.1]
+[charaFadein F 0.4 395,0]
+[charaMove F 375,0 0.4]
+[seStop ade210 0.7]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠曼迪卡尔多
+[line 3]呃，数量是不是太多了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠李书文
+第二层是少数对多数战。
+[k]
+
+＠李书文
+注意控制动作。无论对面有多少人，[r]对手也无法同时发起攻击。
+[k]
+
+＠李书文
+四面被包围的话，就是四个人。[r]靠墙站立的话，一次只要应对三个就行了。
+[k]
+
+＠李书文
+接下来只需重复这一过程。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠曼迪卡尔多
+啊……我知道这个道理。[r]理论上是可行的。
+[k]
+
+[charaFace B 2]
+＠曼迪卡尔多
+别名，纸上谈兵！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠李书文
+这可不好说哦。
+[k]
+
+？1：来了！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠曼迪卡尔多
+哎哎……只能动手啦！[r]嗯！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

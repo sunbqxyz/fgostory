@@ -1,0 +1,809 @@
+
+＄94-04-19-14-6-1
+
+[soundStopAll]
+
+[charaSet A 11009000 1 阿斯塔蒂]
+[charaSet B 11009001 1 S伊什塔尔]
+[charaSet C 1032002 1 ？？？]
+[charaSet D 1032002 1 暗黑武者ZONGJU]
+[charaSet E 2037000 1 简]
+[charaSet F 1098161100 1 太空伙计1]
+[charaSet G 1098161200 1 太空伙计2]
+[charaSet H 1098161300 1 太空伙计3]
+[charaSet J 5009000 1 特效用]
+
+[charaFilter C silhouette 00000080]
+
+[scene 82702]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[backEffect bit_talk_sparks]
+
+[fadein black 1.0]
+[wt 0.5]
+[se ade359]
+[seVolume ade359 0 0.4]
+[wait fade]
+
+[wt 0.3]
+
+[effect bit_talk_explosion 120,-100]
+[se ad38]
+[se ad608]
+[shake 0.07 4 2 1.2]
+[wt 1.0]
+[seStop ad38 0.3]
+[seStop ad608 0.3]
+
+[effect bit_talk_explosion -100,40]
+[se ad608]
+[se ad609]
+[seVolume ad609 0 0.6]
+[shake 0.07 3 5 1.5]
+[wt 1.0]
+[seStop ad608 0.3]
+[seStop ad609 0.3]
+
+[effect bit_talk_explosion_triple02]
+[se ad38]
+[se ad608]
+[se ad609]
+[seVolume ad609 0 0.6]
+[shake 0.07 8 10 1.5]
+[wt 1.5]
+[seStop ad38 0.5]
+[seStop ad608 0.5]
+[seStop ad609 0.5]
+[shake 0.07 3 2 0.3]
+[wt 1.5]
+[effectDestroy]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠阿斯塔蒂
+……我……输了……？
+[k]
+
+＠阿斯塔蒂
+居然被那种……毫无烦恼，[r]作为普通女孩被扶养长大的，半吊子……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+…………
+[k]
+
+
+＠？？？
+[charaTalk C]
+不。您并没有输。[r]倒不如说，干得漂亮。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[se ad452]
+[seVolume ad452 0 0.4]
+[wt 0.5]
+[seVolume ad452 1.0 1.0]
+[wt 1.0]
+[seStop ad452 0.1]
+[se ade357]
+[wt 0.8]
+[seStop ade357 0.1]
+[wt 0.2]
+[seStop ade359 0.5]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠？？？
+因为，比起您，[r]还是她更适应这禁忌宙域。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth A 2]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+[charaFace C 0]
+[charaFadein C 0.1 128,0]
+[charaMove C 64,0 0.4]
+
+＠阿斯塔蒂
+[FFFFFF]？[-]　这是怎么一回事，ZONG[line 3][wt 0.1][cueSe Battle bac6][charaFace A 2][charaShake A 0.07 5 2 0.2]呀啊！？
+[k]
+
+
+[messageOff]
+[charaMove A 0,-50 0.4]
+[wt 0.2]
+[charaFadeout A 0.4]
+[wt 0.3]
+[se ad144]
+
+[wt 0.5]
+
+？1：阿斯塔蒂……！？
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+从背后偷袭[line 3]！？[r]你是谁啊！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 1.2]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth C 2]
+
+[charaTalk off]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[wt 0.2]
+[charaFace D 1]
+[charaFadein D 0 1]
+
+[wt 0.5]
+
+[charaFadeout C 0.7]
+[wt 1.0]
+
+＠暗黑武者ZONGJU
+哼。我已经对你报过姓名了吧。[bgm BGM_EVENT_90 0.1][r]太空神阴流副总统帅，LIUSHNG·ZONGJU。
+[k]
+
+[charaTalk on]
+
+＠阿斯塔蒂
+ZONG……JU……[r]为……什么……？
+[k]
+
+[charaFace D 0]
+
+＠暗黑武者ZONGJU
+这个嘛，应该称之为武士的仁慈吧。[r]一旦露出败相，继续拖延只会更为给残酷。
+[k]
+
+＠暗黑武者ZONGJU
+毕竟阿斯塔蒂大人还有未完的职责，[r]只能在这里先为您拉上帷幕了。
+[k]
+
+[messageOff]
+[wt 0.7]
+[effect bit_talk_fire]
+[se bac302]
+[seVolume bac302 0 0.3]
+[wt 0.5]
+[se ad11]
+[seVolume ad11 0 0]
+[seVolume ad11 1.0 0.2]
+[wt 1.0]
+
+＠暗黑武者ZONGJU
+我的女神啊。[r]很遗憾，黑暗马安娜到此为止了。
+[k]
+
+＠阿斯塔蒂
+……是么。[r]我……组织今后会怎么样？
+[k]
+
+＠暗黑武者ZONGJU
+毫无问题。[r]区区舰船，想建多少就能建多少。
+[k]
+
+＠暗黑武者ZONGJU
+来，我们走吧。
+[k]
+
+＠阿斯塔蒂
+……？[r]去哪儿？
+[k]
+
+[charaFace D 1]
+
+＠暗黑武者ZONGJU
+您难道忘记了『成为完全恶之女神』的夙愿吗？
+[k]
+
+＠阿斯塔蒂
+说得，没错……[r]真奇怪，我走不动了……带我去吧？
+[k]
+
+＠暗黑武者ZONGJU
+当然。[r]您是重要的凭依之躯，我会小心地护送您前去。
+[k]
+
+[messageOff]
+[charaMove D 0,-30 0.7]
+[se ad77]
+[seStop ad77 0.8]
+[wt 0.3]
+[charaFadeout D 0.3]
+[wt 0.5]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth A 2]
+
+[charaTalk off]
+[charaFace A 4]
+[charaFadein A 0.3 -100,-60]
+[charaFace D 1]
+[charaFadein D 0.3 100,-30]
+[charaMove A -100,-30 1.0]
+[charaMove D 100,0 1.0]
+[se ad77]
+[wt 1.2]
+
+[charaFadeout D 0.3]
+[charaFadeout A 0.3]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+给我站住！　把那家伙放下！
+[k]
+
+＠S伊什塔尔
+尽管我不知道你是什么人，[r]但带走阿斯塔蒂的权利……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace A 4]
+[charaFadein A 0.1 -100,-30]
+[charaFace D 0]
+[charaFadein D 0.1 100,0]
+
+＠暗黑武者ZONGJU
+我当然有。[r]因为我就是扶养阿斯塔蒂大人长大的监护人。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 28]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+[line 3]！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace A 4]
+[charaFadein A 0.1 -100,-30]
+[charaFace D 0]
+[charaFadein D 0.1 100,0]
+
+＠暗黑武者ZONGJU
+到原始宇宙的祭坛来吧。[r]您也有见证一切的权利。
+[k]
+
+＠暗黑武者ZONGJU
+还有一件事。[r]那天，斩杀了您的父亲[line 3]时臣的人，
+[k]
+
+[charaFace D 1]
+
+＠暗黑武者ZONGJU
+不是别人，就是我。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_90 0.5]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+！！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk D]
+[charaFace A 4]
+[charaFadein A 0.1 -100,-30]
+[charaFace D 0]
+[charaFadein D 0.1 100,0]
+[wt 0.5]
+
+[se ad452]
+[seStop ad452 1.8]
+[charaFadeout A 0.7]
+[charaFadeout D 0.7]
+[wt 2.0]
+
+[fadeout black 1.0]
+[seVolume ad11 1.0 0.1]
+[wait fade]
+[wt 0.7]
+[fadein black 1.0]
+[seVolume ad11 1.0 0.2]
+[wait fade]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+那家伙[line 3][r]那家伙，就是父亲的[line 3]
+[k]
+
+？1：S伊什塔尔，振作点！
+？2：现在必须快逃！
+
+？！
+
+[messageOff]
+[charaFace B 3]
+[wt 1.0]
+[charaFace B 28]
+
+＠S伊什塔尔
+说……说得对！？[r]抱歉，被怒气冲昏了头脑……！
+[k]
+
+＠S伊什塔尔
+总之我们赶紧回舰船吧！[r]然后再追赶他们！
+[k]
+
+[messageOff]
+[charaFadeout B 0.3]
+[wt 0.1]
+[se ad59]
+[wt 0.5]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[seVolume ad59 0.5 0.2]
+[seStop ad11 0.5]
+[wait wipe]
+[charaFadeout B 0.1]
+[effectDestroy]
+[scene 82801]
+[effect bit_talk_fire]
+[wt 1.0]
+[se ad11]
+[seVolume ad11 0 0.0]
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[seVolume ad59 0.5 0.4]
+[seVolume ad11 0.5 0.5]
+[wait wipe]
+
+[bgm BGM_EVENT_72 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+啊～啊～！　话筒，能听到吗，简！？[r]从这里前往弹射器的逃脱路线该怎么走！？
+[k]
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth J 2]
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_security]
+[messageOff]
+[fadeout black 0.2]
+[seStop ad59 0.2]
+[seStop ad11 0.2]
+[wait fade]
+[backEffectDestroy]
+[effectDestroy]
+[charaFadeout B 0]
+[scene 83401]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0 1]
+[charaPut J 1]
+[wt 0.2]
+[fadein black 0.2]
+[wait fade]
+
+＠简
+在那边的A6通道转弯！[r]接下来是B2通道！　然后笔直走！
+[k]
+
+[messageOff]
+[fadeout black 0.2]
+[wait fade]
+[charaEffectDestroy J]
+[charaFadeout E 0]
+[scene 82801]
+[backEffect bit_talk_sparks]
+[effect bit_talk_fire]
+[se ad11]
+[seVolume ad11 0 0.0]
+[seVolume ad11 0.2 0.5]
+[fadein black 0.2]
+[wt 0.1]
+[se ad59]
+[wait fade]
+
+[wt 0.5]
+
+[se ad38]
+[se ad608]
+[se ad609]
+[seVolume ad609 0 0.6]
+[shake 0.07 8 10 1.5]
+[wt 1.5]
+[seStop ad38 0.5]
+[seStop ad608 0.5]
+[seStop ad609 0.5]
+
+[flashin loop 0.6 0.7 FF000080 FF000000]
+[se ad9]
+[wt 2.4]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[seStop ad9 0.5]
+[seStop ad59 0.5]
+[seStop ad59 0.5]
+[seStop ad11 0.5]
+[bgm BGM_EVENT_72 0.5 0.4]
+[wait wipe]
+[backEffectDestroy]
+[effectDestroy]
+[flashOff]
+[scene 10000]
+[wt 0.5]
+[wipein rectangleStripRightToLeft 0.1 1.0]
+[wait wipe]
+[fadeout black 0.1]
+[wait fade]
+[scene 82801]
+[backEffect bit_talk_sparks]
+[effect bit_talk_fire]
+[se ad11]
+[seVolume ad11 0 0.0]
+[fadein black 0.5]
+[seVolume ad11 0.5 0.5]
+[bgm BGM_EVENT_72 0.5 1.0]
+[wait fade]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+
+[charaShake G 0.10 15 1 1.5]
+[charaShake H 0.07 20 3 1.5]
+[charaShake F 0.12 23 2 1.5]
+[wt 1.7]
+
+[charaTalk on]
+[charaTalk H]
+[charaMoveReturn H 0,30 0.3]
+
+＠H：太空伙计
+是火灾啾！
+[k]
+
+[charaTalk F]
+[charaMoveReturn F 256,30 0.3]
+
+＠F：太空伙计
+不，是地震啾！
+[k]
+
+[charaTalk G]
+[charaMoveReturn G -256,30 0.3]
+
+＠G：太空伙计
+是坠落啾！
+[k]
+
+[charaTalk H]
+
+＠H：太空伙计
+但要冷静下来顺着走廊移动啾！
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 1.0]
+
+？1：走廊里全是麻雀！？
+？2：这样就过不去了啊！
+
+？！
+
+[charaFadeout F 0.1]
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+让开让开！[r]再磨磨蹭蹭下去可是会被卷进去的啦！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠太空伙计
+好好排队啾。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠太空伙计
+最近的女神一点都不懂规矩啾。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth G 2]
+
+[charaTalk off]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[charaFace G 0]
+[charaFadein G 0.1 300,0]
+[wt 0.2]
+
+[charaMoveReturn G 260,0 0.3]
+[se ad660]
+[seVolume ad660 0 0.5]
+[charaFace B 9]
+[wt 0.1]
+[charaShake B 0.05 3 3 0.2]
+[wt 0.2]
+[seStop ad660]
+
+[charaMoveReturn G 260,0 0.3]
+[se ad660]
+[seVolume ad660 0 0.5]
+[wt 0.1]
+[charaShake B 0.05 3 3 0.2]
+[wt 0.2]
+[seStop ad660]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk B]
+
+＠S伊什塔尔
+喂，我知道了啦，不要啄我！[r]你们跟我们一起来好啦！　快点！
+[k]
+
+[charaTalk G]
+
+＠G：太空伙计
+真的啾？[r]那就跟你走了啾。拜托你带路啾。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout G 0.1]
+[se ad59]
+[wt 0.2]
+
+[fadeout black 0.5]
+[bgm BGM_EVENT_72 1.0 0.4]
+[seVolume ad11 0.5 0.2]
+[seVolume ad59 1.0 0.5]
+[wait fade]
+[backEffectDestroy bit_talk_sparks]
+[scene 82900]
+[wt 1.0]
+[shake 0.05 4 2 0]
+[effect bit_talk_41]
+[fadein black 0.5]
+[bgm BGM_EVENT_72 0.5 1.0]
+[seVolume ad59 0.5 1.0]
+[se ad619]
+[seVolume ad619 0 0]
+[seVolume ad619 1.0 0.8]
+[seVolume ad11 0.5 0.5]
+[wait fade]
+
+[wt 2.0]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_72 1.0 0.3]
+[seStop ad59 0.5]
+[seStop ad11 0.5]
+[seVolume ad619 0.5 0.1]
+[wait wipe]
+[shake 0.05 2 1 0]
+[effectDestroy]
+[scene 83401]
+[wt 0.5]
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_EVENT_72 1.0 1.0]
+[wait wipe]
+
+[wt 0.2]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠太空伙计
+噢。虽说是小型的，但不赖啾。[r]能借仓库待吗啾？
+[k]
+
+？1：别管了，快进去啦！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+？2：X老师呢！？
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠简
+哎，你们没在一起吗！？[r]我还以为[line 3]
+[k]
+
+[messageOff]
+[charaFace E 4]
+[wt 1.0]
+[charaFace E 2]
+
+＠简
+X的话肯定不要紧，应该已经先逃脱了！[r]按照约定，现在已经快到极限了，要起飞了哦！
+[k]
+
+？！
+
+＠简
+扣紧安全带！[r]要开始加速了，说话会咬到舌头的！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.3]
+[se ade378]
+[seVolume ade378 0 0.0]
+[seVolume ade378 1.0 1.0]
+[shake 0.05 4 2 0]
+[wt 0.5]
+[fadeout black 0.5]
+[seStop ad619 0.5]
+[bgmStop BGM_EVENT_72 0.5]
+[wait fade]
+[shakeStop]
+[scene 84200]
+[cameraMove 0.1 0,0 1.4]
+[wt 0.5]
+[cameraHome 0.9]
+[fadein black 0.5]
+[wait fade]
+
+[wt 1.2]
+
+[fadeout black 0.7]
+[wait fade]
+[scene 83407]
+[wt 0.5]
+[fadein black 0.7]
+[wait fade]
+
+[wt 1.0]
+
+？1：要塞……
+？2：崩溃了……
+
+？！
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+………X………[bgm BGM_EVENT_70 0.1]
+[k]
+
+[charaFace B 5]
+
+＠S伊什塔尔
+……不，后悔与忏悔以后再说！[r]现在我们还有该做的事必须完成！
+[k]
+
+＠S伊什塔尔
+简，向禁忌宙域进发！[r]就是那家伙带着阿斯塔蒂前往的地方[line 3]
+[k]
+
+＠S伊什塔尔
+这次，一定要在原始宇宙的祭坛[r]为这件事做个了结！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

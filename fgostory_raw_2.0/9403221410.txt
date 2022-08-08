@@ -1,0 +1,486 @@
+
+
+＄94-03-22-14-1-0
+[soundStopAll]
+
+
+[charaSet A 1098157500 1 伊丽莎白]
+[charaSet B 6013000 1 剧院魅影]
+[charaSet C 11006000 1 萨列里]
+[charaSet D 1098123200 1 戈尔德鲁夫]
+[charaSet E 1098162000 1 玛修]
+[imageSet F back10000 1]
+[charaSet G 1098161300 1 麻雀（五官）]
+[charaSet H 1098161400 1 麻雀（初江）]
+[charaSet I 1098161200 1 麻雀（泰山）]
+[charaSet J 5009000 1 特效用dummy]
+
+[charaScale F 1.01]
+[charaPut F 0,-200]
+[charaFadeTime F 0.1 1.0]
+
+[scene 69800]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk depthOff]
+[charaDepth F 0]
+[charaDepth B 1]
+[charaDepth C 2]
+[charaDepth A 3]
+[charaDepth J 4]
+
+[charaPut J 20,0]
+[charaEffect J bit_talk_spotlight]
+[charaTalk A]
+[charaFace B 0]
+[charaFadein B 0.1 -400,0]
+[charaFace A 0]
+[charaFadein A 0.1 20,0]
+[charaFace C 0]
+[charaFadein C 0.1 416,0]
+[se ad410]
+[charaFadeTime F 0.1 0.6]
+[wt 0.5]
+[se ade76]
+[seVolume ade76 0 0.0]
+[seVolume ade76 1.0 0.4]
+[wt 1.0]
+[bgm BGM_EVENT_49 0.1]
+[wt 0.5]
+
+＠伊丽莎白
+我来啦！[r]大家好！
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[seStop ade76 1.0]
+[bgm BGM_EVENT_49 1.0 0.4]
+[wait fade]
+[charaEffectStop J bit_talk_spotlight]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[charaScale F 1.0]
+[wt 0.7]
+
+[charaSet F 1098161000 1 麻雀（都市）]
+[charaSet J 1098161500 1 麻雀（平等）]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 0]
+[charaFace E 6]
+[charaFadein E 0.1 2]
+
+＠戈尔德鲁夫
+哎。[r]（眼神交流：这是谁？）
+[k]
+
+＠玛修
+哎。[r]（眼神交流：这是谁啊？）
+[k]
+
+？1：哎。（眼神交流：不知道。）
+？2：是重金属乐队·修罗的伊莎J小姐[line 3]！
+
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[bgm BGM_EVENT_49 0.3 1.0]
+[wt 0.3]
+
+
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0]
+[charaFace G 0]
+[charaFadein G 0.1 2]
+
+＠麻雀（泰山）
+哎[line 4]！？[r]伊丽莎白小姐怎么会出现在这里啾！？
+[k]
+
+＠麻雀（五官）
+难以置信啾？[r]鬼界的超级偶像竟然会出现在我们的宴会厅啾！？
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 0]
+[charaFace H 0]
+[charaFadein H 0.1 2]
+
+＠麻雀（平等）
+不会吧啾，能听到人称[r]破坏化身的金属怪兽的声音了啾！？
+[k]
+
+＠麻雀（初江）
+我们每天的[#祈祷:压力]得到了回应啾。[r]伊丽莎白小姐，请帮我们打破这无聊的日常啾！
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace I 0]
+[charaFadein I 0.1 -384,0]
+[charaFace F 0]
+[charaFadein F 0.1 -128,0]
+[charaFace G 0]
+[charaFadein G 0.1 128,0]
+[charaFace H 0]
+[charaFadein H 0.1 348,0]
+
+[cueSe Battle bac469]
+[charaMoveReturn I -384,25 0.5]
+[charaMoveReturn F -128,40 0.5]
+[charaMoveReturn G 128,10 0.5]
+[charaMoveReturn H 384,32 0.5]
+[wt 0.5]
+[cueSe Battle bac469]
+[charaMoveReturn I -384,32 0.5]
+[charaMoveReturn F -128,27 0.5]
+[charaMoveReturn G 128,39 0.5]
+[charaMoveReturn H 384,27 0.5]
+[wt 1.0]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠伊丽莎白
+啰嗦的家畜们，[#痛骂破坏:1000元感谢][line 7]！[r]今晚我要把你们彻底烤掉[line 4]！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFace G 0]
+[charaFadein G 0.1 -384,0]
+[charaFace H 0]
+[charaFadein H 0.1 -128,0]
+[charaFace I 0]
+[charaFadein I 0.1 128,0]
+[charaFace F 0]
+[charaFadein F 0.1 384,0]
+
+[cueSe Battle bac469]
+[charaMoveReturn G -384,25 0.5]
+[charaMoveReturn H -128,40 0.5]
+[charaMoveReturn I 128,10 0.5]
+[charaMoveReturn F 384,32 0.5]
+[wt 0.5]
+[cueSe Battle bac469]
+[charaMoveReturn G -384,32 0.5]
+[charaMoveReturn H -128,27 0.5]
+[charaMoveReturn I 128,39 0.5]
+[charaMoveReturn F 384,27 0.5]
+[wt 1.0]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠伊丽莎白
+好厉害，我还是第一次受到如此欢迎！[r]看来是我坚持不懈地网上投稿奏效了呢！
+[k]
+
+＠伊丽莎白
+尽管这里只有麻雀！[r]为什么地上摆满了坐垫啊！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠麻雀（都市）
+[#太:食人魔级]帅气啾！　新裙子啾！[r]和服和重金属非常搭啾[line 4]！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠伊丽莎白
+是……是吗？　你们也这么认为？
+[k]
+
+＠伊丽莎白
+我其实也在思考“要不要认真成为UK的顶级组合？”……
+[k]
+
+[charaFace A 0]
+
+＠伊丽莎白
+不过这是理所当然的啦！　因为，[r]这可是用[#火蜥蜴:沙罗曼达]皮做成的裙子嘛！
+[k]
+
+＠伊丽莎白
+我再说一遍！[r]这可是用[#火蜥蜴:沙罗曼达]皮做成的裙子！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠戈尔德鲁夫
+你说什么……！[r]也就是说这是火属性幻兽的[#裘:皮]！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[bgmStop BGM_EVENT_49 1.0]
+
+＠伊丽莎白
+没错！　让我们冷血地发动强烈一击吧。
+[k]
+
+＠伊丽莎白
+开场曲目是日本著名的歌唱凄美爱情的魔曲！
+[k]
+
+＠伊丽莎白
+『病姬☆跟踪龙』！[r]新年版本盛大开始Dis啦[line 3]！
+[k]
+
+＠麻雀们
+[charaTalk G]
+耶[line 5]！[r]烧光一切吧，安[#珍:啾][line 3]！
+[k]
+
+[messageOff]
+[wt 0.2]
+[bgm BGM_EVENT_63 0.1]
+
+[charaTalk A]
+[charaEffect A bit_talk_voice01]
+[charaFace A 2]
+[wt 2.0]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[charaPut A 1200,1200]
+[charaEffectStop A bit_talk_voice01]
+[charaFadeout A 0.1]
+[wt 0.2]
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wt 0.2]
+
+
+[shake 0.07 8 8 0]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaRollMoveEx G 7.0 -3600 0,200]
+[charaMove F 900,0 1.5]
+
+[charaFace G 0]
+[charaFadein G 0.1 640,-200]
+[charaRollMoveEx F 7.0 3600 0,200]
+[charaMove G -1500,400 1.5]
+
+[charaFace H 0]
+[charaFadein H 0.1 900,-400]
+[charaRollMoveEx H 7.0 3600 0,200]
+[charaMove H -1500,800 1.5]
+
+[charaFace I 0]
+[charaFadein I 0.1 -1000,600]
+[charaRollMoveEx I 7.0 -3600 0,200]
+[charaMove I 1800,-1200 1.5]
+
+[wt 0.9]
+[shakeStop]
+[wt 0.1]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+
+＠玛修
+啊啊，伊丽莎白小姐用[#龙息:冲击波]把麻雀们……！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFadein F 0.1 1200,900]
+[charaRollMoveEx G 7.0 -3600 0,200]
+[charaMove F -600,0 1.2]
+
+[charaFace G 0]
+[charaFadein G 0.1 -1200,0]
+[charaRollMoveEx F 7.0 3600 0,200]
+[charaMove G 500,-600 1.2]
+
+[wt 1.0]
+
+[charaMove G 900,200 1.0]
+
+＠麻雀们
+啾[charaMove F 300,-600 1.0]！　棒呆啾[line 3]！[twt 0.6][charaMove F 1200,500 1.5][charaMove G -1200,800 1.0][r]简直就像乘着风暴飞翔的感觉啾[line 3]！
+[k]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠戈尔德鲁夫
+竟然……像橡皮球一样……很开心……？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaSet F 1098161000 1 麻雀（都市）]
+[charaSet G 1098161300 1 麻雀（五官）]
+[charaSet H 1098161400 1 麻雀（初江）]
+[charaSet I 1098161200 1 麻雀（泰山）]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠伊丽莎白
+太棒了！　原来人间还有能跟着我一起唱的粉丝啊！
+[k]
+
+＠伊丽莎白
+要唱下一首了哦，『恋爱的红怪胎·樱桃派』，[r]重新编曲的电子版献给大家！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace I 0]
+[charaFadein I 0.1 -384,0]
+[charaFace F 0]
+[charaFadein F 0.1 -128,0]
+[charaFace G 0]
+[charaFadein G 0.1 128,0]
+[charaFace H 0]
+[charaFadein H 0.1 348,0]
+
+＠麻雀们
+啾[cueSe Battle bac469][charaMoveReturn I -384,25 0.5][charaMoveReturn F -128,40 0.5][charaMoveReturn G 128,10 0.5][charaMoveReturn H 384,32 0.5][line 3]！　尽管地板和墙壁开始崩塌，[wt 0.5][r]但没关系啾[line 3]！　[cueSe Battle bac469][charaMoveReturn I -384,32 0.5][charaMoveReturn F -128,27 0.5][charaMoveReturn G 128,39 0.5][charaMoveReturn H 384,27 0.5]死亡啾[line 3]！
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠玛修
+御主，尽管有些不忍打扰正在兴头上的[r]伊丽莎白小姐和小麻雀们[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠戈尔德鲁夫
+嗯，但如果大宴会厅遭破坏可就本末倒置了！[r]快去阻止他们，[%1]！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wt 0.7]
+
+？1：等一下！
+
+[charaFace A 2]
+
+＠伊丽莎白
+等不了！
+[k]
+
+？2：你的角恶魔级的可爱呢。
+
+＠伊丽莎白
+这是最好的赞美呢，谢谢！[r]这对我来说，简直就是AED般的必杀奉承！
+[k]
+
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_63 0.4]
+[wait fade]
+[soundStopAll]
+[end]

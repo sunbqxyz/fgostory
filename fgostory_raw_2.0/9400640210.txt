@@ -1,0 +1,1209 @@
+
+＄94-00-64-02-1-0
+
+
+
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98103600 1 红宝石]
+[charaSet C 98103200 1 蓝宝石]
+[charaSet D 98102400 1 伊莉雅]
+[charaSet E 98102200 1 美游]
+[charaSet F 98003000 1 Dr.罗曼]
+[charaSet G 5009001 1 达·芬奇]
+[charaSet H 98102900 1 芙芙]
+
+
+
+[scene 31200]
+[wipeFilter circleIn 0.65 0.5]
+[fadein black 2.0]
+[wait fade]
+
+＠C：？？？
+……美游大人……美游大人……！
+[k]
+
+[messageOff]
+[se bac3]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.4 1]
+[wt 0.5]
+
+＠美游
+……呜……啊……
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaShake C 0.07 0 8 1.0]
+＠C：？？？
+……美游大人！
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFace C 0]
+[charaFadein E 0.1 150,0]
+[charaFadein C 0.1 -150,0]
+
+＠美游
+……蓝宝石……？[r]是……你吗……？
+[k]
+
+[charaShake C 0.07 0 16 1.0]
+＠蓝宝石
+是的，美游大人！[r]是我，是蓝宝石！
+[k]
+
+[charaShake C 0.07 0 8 1.0]
+＠蓝宝石
+啊啊，怎么会变成如此模样……[r]太可怜了……
+[k]
+
+[charaFace E 1]
+＠美游
+蓝宝石……太好了……[r]你能平安无事……
+[k]
+
+[charaShake C 0.07 0 8 1.0]
+＠蓝宝石
+嗯……呜……[r]我来晚了……实在太……
+[k]
+
+[charaShake C 0.07 0 16 1.0]
+＠蓝宝石
+[line 3]请等一下！[r]我现在就变成[#刃:Blade]模式，将您从这些束缚中解放出来！
+[k]
+
+[charaFace E 4]
+＠美游
+不行……呜……[r]不能碰……
+[k]
+
+＠美游
+这束缚……看上去虽然是脆弱的蕾丝丝带，[r]但却毫不留情地吸收着我的力量……
+[k]
+
+＠美游
+你一定也无法平安无事……[r]会被吞没的……
+[k]
+
+[charaShake C 0.07 0 16 1.0]
+＠蓝宝石
+怎么会……美游大人！　这样的话……！
+[k]
+
+[charaFace E 5]
+＠美游
+重要的是，伊莉雅[line 3][r]去告诉伊莉雅[line 3]。
+[k]
+
+＠美游
+告诉她这座城有多危险……[r]这里有可怕的敌人……
+[k]
+
+[charaShake C 0.07 0 8 1.0]
+＠蓝宝石
+美游大人…………[r]……遵命！
+[k]
+
+[charaShake C 0.07 0 16 1.0]
+＠蓝宝石
+我蓝宝石一定会再次回到美游大人的身边！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.5]
+[fadeout black 0.5]
+[wait fade]
+
+
+[wipeOff]
+[charaFadeout E 0.1]
+[charaFadeout C 0.1]
+
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+[fowardEffect bit_queststart80025_02]
+[wait fowardEffect bit_queststart80025_02]
+[fadeout black 0.5]
+[wait fade]
+
+
+[scene 31500]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+………………
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠伊莉雅
+…………（咽口水）。
+[k]
+
+[charaFadeout D 0.1]
+
+[wt 0.1]
+[charaTalk F]
+[communicationCharaLoop 98003003 1 5 0 2]
+[effect bit_talk_41]
+
+[se ad119]
+＠Dr.罗曼
+你们听我说，可别惊讶哦。[r]你们现在正在[#某个人的固有结界中][line 2]！
+[k]
+
+[wt 0.8]
+[effectStop bit_talk_41]
+[wt 0.2]
+[seStop ad119 0.5]
+[communicationCharaClear]
+[wait communicationChara]
+
+[bgm BGM_EVENT_32 0.1]
+
+
+[charaTalk D]
+[charaFace D 6]
+[charaFace B 0]
+[charaFadein D 0.1 2]
+[charaFadein B 0.1 0]
+
+＠伊莉雅
+啊。
+[k]
+
+[charaShake B 0.07 0 16 0.5]
+＠红宝石
+哎呀。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠玛修
+呃……
+[k]
+
+
+？1：固有结界是什么来着？
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+
+[wt 0.1]
+[charaTalk F]
+[communicationCharaLoop 98003003 1 5 0 1]
+
+＠Dr.罗曼
+啊，要从这里开始解释啊～。[r]对哦～，要从这里开始解释哦～。
+[k]
+
+[communicationCharaFace 0]
+＠Dr.罗曼
+那我就来说明吧。[r]所谓的固有结界，就是位于魔术最深层的术式。
+[k]
+
+＠Dr.罗曼
+简单说来，就是将术者心象世界的具象化，[r]用其“心的存在方式”覆盖现实的[#魔术:存在]。
+[k]
+
+＠Dr.罗曼
+可以说是禁忌中的禁忌，与魔法一步之隔的大魔术。[r]无限剑那啥的。
+[k]
+
+＠Dr.罗曼
+但是再怎么说，一般这种乱来的行为都无法长时间持续。
+[k]
+
+＠Dr.罗曼
+固有结界是出现在现实中的污渍。[r]一旦觉察到异物、矛盾，世界自身就会对此予以修正。
+[k]
+
+＠Dr.罗曼
+所以很遗憾的是，[r]固有结界是连几分钟都坚持不了的魔术。
+[k]
+
+＠Dr.罗曼
+以上，理解了吗，[%1]。[r]以及那位可爱的小淑女？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[communicationCharaLoop 98003003 0 5 0 0]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 2]
+
+＠伊莉雅
+呃……也就是说，[r]这个世界全都是某个人创造的世界，是这样吗？
+[k]
+
+
+＠Dr.罗曼
+嗯。[r]虽然我还从未听说过这种规模的固有结界呢。
+[k]
+
+[charaFace D 3]
+＠伊莉雅
+……这……这样啊……
+[k]
+
+[charaFace D 4]
+＠伊莉雅
+我[#接界:跳跃]到这个世界的时候，有一瞬间，[r]看到了几座城，以及一些像是国家领地般的景色……
+[k]
+
+＠伊莉雅
+每一块区域都很明确，很广阔。[r]还有被漆黑墙壁覆盖的空间……
+[k]
+
+[charaFace D 7]
+＠伊莉雅
+这些居然全都是一个魔术……[r]居然全都是由某人制作的世界……
+[k]
+
+[communicationCharaFace 3]
+＠Dr.罗曼
+嗯嗯。[r]只要你能那么惊讶，我这些话说得也有价值了。
+[k]
+
+[communicationCharaFace 4]
+＠Dr.罗曼
+最近[%1]总是莫名有点跑偏，[r]对大部分情况都会用“总有办法的”来应对。
+[k]
+
+[charaFace D 0]
+
+[communicationCharaFace 5]
+＠Dr.罗曼
+话说（眼神一亮），[r]我还没自我介绍吧（眼神一亮）。
+[k]
+
+[communicationCharaFace 0]
+＠Dr.罗曼
+请容我郑重自我介绍，我是罗玛尼·阿其曼。[r]希望你能称呼我为Dr.罗曼。
+[k]
+
+＠Dr.罗曼
+可爱的小姑娘。[r]你叫什么名字？　所属哪里？　有什么兴趣？
+[k]
+
+＠Dr.罗曼
+虽然拥有作为一名从者的灵基，[r]但反应却完全是个人类。
+[k]
+
+＠Dr.罗曼
+和亚从者与拟似从者都不同。[r]还有这强大的魔力究竟是什么……
+[k]
+
+＠Dr.罗曼
+难道你就是固有结界的所有者吗？[r]还有差不多该告诉我你的名字了吧？
+[k]
+
+[charaFace D 3]
+＠伊莉雅
+不是啦不是啦！　我……我只是个普通的魔法少女！[r][line 3]虽然好像这么说有点怪！
+[k]
+
+[charaFace D 0]
+＠伊莉雅
+还有，倒是我还没有自我介绍吧！[r]我是伊莉雅丝菲尔·冯·爱因兹贝伦！
+[k]
+
+[communicationCharaFace 1]
+＠Dr.罗曼
+感谢您能自我介绍！[r]哎呀，看来是我过于武断了，对不起哦！
+[k]
+
+[communicationCharaFace 4]
+＠Dr.罗曼
+但是，爱因兹贝伦……爱因兹贝伦啊……[r]看来旗在相遇的瞬间就被拔了呢……
+[k]
+
+[charaFace D 3]
+＠伊莉雅
+……？　罗曼先生难道认识爱因兹贝伦……[r]认识我的妈妈吗？
+[k]
+
+[communicationCharaFace 0]
+＠Dr.罗曼
+不。只是以前曾看到过这个名字而已。[r]但你的样子，应该是认错人了。
+[k]
+
+
+？1：医生，能让我们返回迦勒底吗？
+？！
+
+＠Dr.罗曼
+嗯。只要有玛修在，就没问题。[r]能够回迦勒底哦。
+[k]
+
+＠Dr.罗曼
+我们这边也希望你能尽快回来。[r]因为那个空间的影响是未知数。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+
+＠玛修
+如果是这样，那是否能暂时[r]将伊莉雅小姐她们也收容到迦勒底，让她们避难呢？
+[k]
+
+[communicationCharaFace 4]
+＠Dr.罗曼
+唔～……抱歉，这是不可能的。
+[k]
+
+[communicationCharaFace 0]
+＠Dr.罗曼
+是从灵子转移的原理意义上的不可能。[r]能回到迦勒底的只有[%1]和玛修。
+[k]
+
+＠Dr.罗曼
+如果她能成为[%1]的契约从者，[r]就能缔结缘分了……
+[k]
+
+[communicationCharaFace 5]
+＠Dr.罗曼
+而且啊。[r]就算真的有可能[line 3]。
+[k]
+
+＠Dr.罗曼
+这与迄今为止都在极力避免对不同时代[r]进行干涉的我们人理守护的目的来说，是背道而驰的事。
+[k]
+
+[charaFace A 14]
+＠玛修
+不，请听我说，医生。[r]她和我们不同，是平行世界的居民。
+[k]
+
+[charaFace A 8]
+＠玛修
+而且这里如果是固有结界中的话，[r]那应该几乎无需担心会有干涉的可能性啊……！
+[k]
+
+[charaFace A 14]
+＠玛修
+只要拜托达·芬奇亲，[r]想想办法[line 3]
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+
+＠伊莉雅
+玛修小姐，玛修小姐？[r]那个……我不要紧。
+[k]
+
+[charaFace D 1]
+＠伊莉雅
+谢谢您（鞠躬）。[r]但是，没关系。
+[k]
+
+[charaFace D 4]
+＠伊莉雅
+我一定要救美游才行。[r]我不会考虑只让自己留在安全的地方这种事。
+[k]
+
+[charaFace D 0]
+＠伊莉雅
+所以，哪怕只有我一个人，我也要努力。
+[k]
+
+[charaFace A 14]
+＠玛修
+……！……伊莉雅小姐……
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+
+[charaEffect H bit_talk_10]
+[wt 0.1]
+[charaTalk H]
+[charaFadein H 0.1 1]
+
+＠芙芙
+芙，芙！
+[k]
+
+＠芙芙
+啾呜呜呜……
+[k]
+
+[charaFadeout H 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10]
+
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠玛修
+芙芙[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+[se ad139]
+[cameraMove 0.2 0,0 1.5]
+[wait camera]
+[charaShake D 0.05 0 16 1.0]
+
+
+＠伊莉雅
+呀啊！　这只毛茸茸软绵绵的小家伙是什么呀！[r]好可爱～！　好想摸好想摸我要摸了！
+[k]
+
+[charaShake D 0.05 0 0 0.1]
+[cameraHome 0.2]
+[wait camera]
+
+[charaFace D 3]
+
+＠伊莉雅
+[line 3]啊！[r]我……我真的不要紧啦！
+[k]
+
+[charaFadeout D 0.1]
+
+[wt 0.1]
+[charaTalk F]
+[communicationCharaLoop 98003003 1 5 0 0]
+
+＠Dr.罗曼
+……[%1]，[r]你应该明白该怎么做吧？
+[k]
+
+
+？1：这或许是一个强化玛修的好机会。
+
+[communicationCharaFace 1]
+＠Dr.罗曼
+这样啊，你能明白啊。太好了……[communicationCharaFace 2][r][line 6]哎？
+[k]
+
+
+？2：魔法少女的[#可爱:生命]比地球还要……重要？
+
+[communicationCharaFace 3]
+＠Dr.罗曼
+[%1]！[r]没想你居然是我的同志啊！？
+[k]
+
+[communicationCharaFace 2]
+＠Dr.罗曼
+啊，不，不对，[r]各位工作人员请不要用这种冷漠的目光看着我……
+[k]
+
+[communicationCharaFace 1]
+＠Dr.罗曼
+不是啦～。我只是在迦勒底修行禅道而已。[r]根本不知道什么宅文化啦～。
+[k]
+
+？！
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk G]
+[communicationCharaLoop 98111500 1 5 0 1]
+
+＠达·芬奇亲
+真[line 3]不错[line 4]！[r]达·芬奇亲也觉得这样很不错哦！
+[k]
+
+＠Dr.罗曼
+喂，达·芬奇亲！？[r]突然跑出来说什么呢！
+[k]
+
+[communicationCharaFace 0]
+＠达·芬奇亲
+事情的始末我都听到了哦？[r]那我达·芬奇亲也不会吝于出手协助。
+[k]
+
+＠达·芬奇亲
+根据这里的测量值来看，[r]玛修好像确实无法发挥力量。
+[k]
+
+＠达·芬奇亲
+看情况，应该是符合了固有结界的条件，[r]所以被判定为不完全的状态了吧？
+[k]
+
+
+[communicationCharaFace 5]
+＠达·芬奇亲
+这个世界有其特有的规则，[r]也有特有的礼装吧。
+[k]
+
+＠达·芬奇亲
+与之配合、学习、实践有着重大的意义。
+[k]
+
+＠达·芬奇亲
+无论是对玛修，还是对迦勒底来说，[r]这应该都是一次有意义的经验。
+[k]
+
+[communicationCharaFace 1]
+＠达·芬奇亲
+关于拯救那位被绑架的魔法少女的事嘛，[r]这个先姑且不论吧？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk F]
+[communicationCharaLoop 98003003 1 5 0 2]
+
+＠Dr.罗曼
+你还真是会若无其事地说一些过分的话呢。[r]……啊啊，真是的，我知道了啦！
+[k]
+
+[communicationCharaFace 0]
+＠Dr.罗曼
+那我就继续对这个世界与灵子转移进行观测吧。[r]如果只有你们，是可以往返的。这我可以保证，
+[k]
+
+＠Dr.罗曼
+所以为了重整旗鼓，你先回一次迦勒底。[r]这是命令。
+[k]
+
+
+？1：谢谢你，医生。
+？！
+
+[communicationCharaFace 4]
+＠Dr.罗曼
+[line 6]唉……
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+御主，我会留在这里。[r]总得有人保护伊莉雅小姐才行。
+[k]
+
+[charaFace A 7]
+＠玛修
+虽然难以对付魔法少女，[r]但若是魔法生物，我还是能战斗的……！
+[k]
+
+[charaFace A 13]
+＠玛修
+所以，御主一定要再次回到这个地方来哦。
+[k]
+
+？1：……我知道了。我会以最快速度返回的。
+
+[charaFace A 1]
+＠玛修
+嗯！　御主！[r]非常感谢。
+[k]
+
+
+？2：我就知道你会这样拜托我。
+
+[charaFace A 3]
+＠玛修
+…………唔……[r]这……这个……真不好意思。
+[k]
+
+＠玛修
+完全被前辈看穿了……[r]啊啊[charaFace A 14][line 3]不……不要笑我嘛！
+[k]
+
+？！
+
+[messageOff]
+[wipeout rollRight 1.5 0.5]
+[bgmStop BGM_EVENT_32 1.5]
+[wait wipe]
+
+[wt 0.5]
+[charaFace A 0]
+
+[wipein rollLeft 1.5 0.5]
+[wait wipe]
+[bgm BGM_EVENT_4 0.1]
+
+＠玛修
+医生！[r]召唤阵确立完毕！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk F]
+[communicationCharaLoop 98003003 1 5 0 0]
+
+＠Dr.罗曼
+OK[line 3]灵子线连接确认完毕。[r]随时可以转移。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠伊莉雅
+[%1][&大哥哥:大姐姐]、[r]玛修小姐，谢谢各位！
+[k]
+
+[charaFace D 4]
+＠伊莉雅
+我打算独自一人完成这件事的想法并不假。
+[k]
+
+[charaFace D 1]
+＠伊莉雅
+……但现在我非常高兴。[r]非常安心！
+[k]
+
+
+？1：我很快就会回来的。你们俩多加小心！
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+
+[charaTalk off]
+[charaFace A 13]
+[charaFace D 0]
+[charaFadein A 0.1 2]
+[charaFadein D 0.1 0]
+[wt 1.0]
+
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+
+[charaTalk on]
+
+[bgmStop BGM_EVENT_4 0.1]
+[effect bit_talk_07_02]
+[se ad12]
+[wt 4]
+[fadeout white 1.0]
+[wait fade]
+
+[charaSet C 4008001 1 黑胡子]
+[charaSet E 6013001 1 剧院魅影]
+
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[scene 10201]
+
+[bgm BGM_EVENT_2 2.0]
+[fadein white 2.0]
+[wait fade]
+
+＠Dr.罗曼
+欢迎回来，[%1]。[r]装备等一切准备都完成后再出发吧。
+[k]
+
+[charaFace F 4]
+＠Dr.罗曼
+从立场上说，我是希望你能稍微休息一会儿啦……[r]但看来并不能如愿呢。
+[k]
+
+[charaFace F 0]
+＠Dr.罗曼
+至少准备一些玛修和伊莉雅会喜欢的慰问品带去吧。
+[k]
+
+
+？1：我们灵子转移的原因找到了吗？
+？！
+
+[charaFace F 5]
+＠Dr.罗曼
+当然正在调查。[r]虽然确实在调查……但说实话……
+[k]
+
+＠Dr.罗曼
+……关于这点，或许该庆幸还好是[%1]你一个人回来了。
+[k]
+
+＠Dr.罗曼
+不，抱歉[line 3][r]我有样东西要给你看。
+[k]
+
+
+[bgmStop BGM_EVENT_2 0.1]
+[se ad1]
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 2]
+[wait wipe]
+
+[charaSet A 98001000 1 玛修]
+[wt 0.1]
+[charaFadeout F 0.1]
+
+[fowardEffect bit_talk_security]
+
+[wipein rectangleStripLeftToRight 0.5 2]
+[wait wipe]
+[bgm BGM_EVENT_5 0.1]
+
+＠Dr.罗曼
+[line 3]这是你们俩从迦勒底消失前的记录影像。
+[k]
+
+＠Dr.罗曼
+首先，从[%1]一个人[r]在这管制室打瞌睡的地方开始。
+[k]
+
+
+[se ad8]
+[seVolume ad8 0 0.3]
+
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.5]
+
+＠Dr.罗曼
+这时候，玛修正好路过，[r]发现了你，打算叫醒你。
+[k]
+
+[charaFace A 14]
+＠玛修
+『……前辈？……真是的。[r]　又在这种地方睡觉啊。』
+[k]
+
+[charaFace A 8]
+＠玛修
+『示巴、特里斯墨吉斯忒斯，[r]　还有其他各位观测装置都在闹别扭了。』
+[k]
+
+[charaFace A 6]
+＠玛修
+『前辈…………』
+[k]
+
+
+[messageOff]
+[shake 0.05 0 4 0]
+[se ad61]
+
+[charaChange A 8001000 6 fade 0]
+[wait charaChange A]
+[charaFadein A 0.2 -80,0]
+[wt 0.2]
+[charaChange A 98001000 6 fade 0]
+[wait charaChange A]
+[charaFadein A 0.2 1]
+[wt 0.2]
+[charaChange A 8001000 6 fade 0]
+[wait charaChange A]
+[charaFadein A 0.2 -80,0]
+[wt 0.2]
+[charaChange A 98001000 6 fade 0]
+[wait charaChange A]
+[charaFadein A 0.2 1]
+[wt 0.2]
+[seStop ad61 0.5]
+[shakeStop]
+
+？1：……是……玛修吗？……这是？
+？！
+
+
+
+[se ad12]
+[seVolume ad12 0 0.3]
+
+[charaFadeout A 1.0]
+[scene 10001 1.0]
+[wait scene]
+[wt 1.0]
+[seStop ad12 1.0]
+[scene 10201 1.0]
+[wait scene]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_5 0.1]
+[se ad1]
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 2]
+[wait wipe]
+
+[fowardEffectStop bit_talk_security]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+[wipein rectangleStripLeftToRight 0.5 2]
+[wait wipe]
+[bgm BGM_EVENT_2 0.1]
+
+＠Dr.罗曼
+……我保留对这段影像的解释。[r]如何应对玛修就交给你了。
+[k]
+
+[charaFace F 4]
+＠Dr.罗曼
+达·芬奇亲好像已经意识到了什么，[r]但他笑着表示『保密哦♪』，不肯告诉我……
+[k]
+
+[charaFace F 5]
+＠Dr.罗曼
+还有关于伊莉雅丝菲尔小姐的事也是。[r]我要郑重忠告你[line 3]
+[k]
+
+＠Dr.罗曼
+你是这迦勒底的一员，[r]是身负人类存续任务的唯一御主。
+[k]
+
+＠Dr.罗曼
+我们会为了准备你们随时能回来而待机。[r]千万不要忘记迦勒底的使命。
+[k]
+
+＠Dr.罗曼
+判断要慎重，有时需要冷酷。[r]明白了吗，御主[%1]？
+[k]
+
+
+？1：……这么说来，达·芬奇亲呢？
+？！
+
+[charaFace F 0]
+＠Dr.罗曼
+达·芬奇亲的话，已经回工房了哦。
+[k]
+
+＠Dr.罗曼
+说是好像有什么东西要交给[%1]。
+[k]
+
+＠Dr.罗曼
+出发前，记得顺路去工房走一趟。
+[k]
+
+
+
+[messageOff]
+[se ad8]
+[wipeout rightToLeft 1.0 1]
+[wait wipe]
+
+[charaFadeout F 0]
+
+[scene 10310]
+
+[wipein leftToRight 1.0 1]
+[wait wipe]
+
+[se ad95]
+[cameraMove 2.0 -100,0 1.5]
+[wait camera]
+
+
+[bgmStop BGM_EVENT_2 0.1]
+[seStop ad95]
+[se ad60]
+
+[cameraHome 0.5]
+[wait camera]
+[seStop ad60]
+
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace E 0]
+[charaFadein C 0.1 2]
+[charaFadein E 0.1 0]
+[wt 1.0]
+
+[charaFace C 1]
+＠黑胡子
+听到了，在下听到了哦～！！[r][%1]氏～～！！
+[k]
+
+＠剧院魅影
+………………
+[k]
+
+＠黑胡子
+据说你被招待去魔法少女梦幻☆热带乐园了吧～～！
+[k]
+
+[charaFace C 3]
+＠黑胡子
+在下已做好觉悟，决定与你同行～！！[r]好想一起去噢噢～！　咕呼呼呼呼！！
+[k]
+
+[charaFace C 1]
+＠黑胡子
+啊，魔法少女，这正是？　女孩们的憧憬！[r]每天或是周日早上，各地的百货店屋顶！
+[k]
+
+＠黑胡子
+砰砰心跳＆[wt 0.7]兴奋不已？[wt 0.7]　亮晶晶☆[wt 0.7]开心心♪[wt 0.7][r]变身，[wt 0.7]半裸，[wt 0.7]紧密贴合的紧身衣，[wt 0.7]堕落，[wt 0.7]小薄本……
+[k]
+
+[charaFace C 3]
+＠黑胡子
+魔法少女中……在魔法少女中……呜……[r]充满了绅士们的梦想的说噢噢！！
+[k]
+
+[charaFace C 0]
+＠黑胡子
+[line 3]话说，褐色很好！
+[k]
+
+[charaFace E 1]
+＠剧院魅影
+……好。我向心爱的你歌唱，[r]异国风情阿拉伯[line 3]！
+[k]
+
+
+？1：我现在正在赶时间。
+
+[charaFace C 2]
+＠黑胡子
+在下也已经按耐不住了啊！！
+[k]
+
+
+？2：[#迦勒底:我们这儿]有这种从者吗……？
+
+[charaShake C 0.05 0 4 0.5]
+[charaFace C 3]
+＠黑胡子
+呼啊。好冷淡！[r][%1]氏的冷淡对待！　好舒服啊啊！
+[k]
+
+[charaFace E 4]
+＠剧院魅影
+啦啦啦……啊啊，残酷的舞台之影，[r]将亡灵从地底深处唤醒[line 3]
+[k]
+
+？！
+
+
+？1：让我考虑考虑。
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠黑胡子
+3、2、1，好[line 3]决定了！[r]什么时候带蒂奇过去？　[charaFace C 2]是现在吧！？
+[k]
+
+[charaFace C 0]
+＠黑胡子
+干嘛啦，为什么要深深叹息啦！
+[k]
+
+
+？2：因为会玷污魔法少女的，所以我拒绝。
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠黑胡子
+Why为什么啊啊啊～！？[r]话说这是为什么啦～！！？？
+[k]
+
+[charaFace C 2]
+＠黑胡子
+在下可是看在你是同志的份上才会如此恳求～！！[r]我们的[&绅士:魔法少女]协定上哪儿去了啊！
+[k]
+
+？！
+
+[charaFace C 5]
+＠黑胡子
+咕唔唔……你无论如何都不肯带在下去啊～！[r]唔哦哦哦哦既然如此，在下我[line 3]。
+[k]
+
+[charaFace C 2]
+＠黑胡子
+要去向[#红嫁王:God]和[#酒吞幼女:酒神]大人告状去～！[r]在下是超级认真的哦～！
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk E]
+[charaFace C 2]
+[charaFace E 0]
+[charaFadein C 0.1 2]
+[charaFadein E 0.1 0]
+
+＠剧院魅影
+不行……不行，黑船长……[r]这种情况，应该找真命天女的……清姬才对吧？
+[k]
+
+[charaFace C 0]
+＠黑胡子
+啊。不，那是要出大事的。[r]在下还狠不下心当那种恶人啊～。
+[k]
+
+[messageOff]
+[se ad59]
+[wt 1.0]
+[seStop ad59 1.0]
+
+[charaFace C 2]
+[charaShake C 0.05 0 4 0.5]
+＠黑胡子
+啊喂[line 3]！[r]居然逃跑了[line 3]！
+[k]
+
+
+[messageOff]
+[wipeout rightToLeft 0.5 1]
+[wait wipe]
+
+[charaFadeout C 0]
+[charaFadeout E 0]
+
+[wipein leftToRight 0.5 1]
+[wait wipe]
+
+
+？1：把时间浪费在了垃圾一样的事上了……
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_7 0.5]
+[fadeout black 0.5]
+[wait fade]
+
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+[fowardEffect bit_talk_eyecatch_02]
+[wait fowardEffect bit_talk_eyecatch_02]
+[fadeout black 0.5]
+[wait fade]
+
+[fadein black 0.5]
+[wait fade]
+
+
+[effect bit_talk_07]
+[se ad12]
+[wt 4]
+[fadeout white 1.0]
+[wait fade]
+
+[scene 31500]
+
+[fadein white 2.0]
+[wait fade]
+
+[wt 1.0]
+
+？1：……………………唔？
+？！
+
+？1：咦，玛修……呢？　伊莉雅呢！？
+？！
+
+[bgm BGM_EVENT_3 0.1]
+
+＠B：？？？
+[%1]～！
+[k]
+
+？1：是红宝石的声音？
+？！
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaShake B 0.07 0 16 1.0]
+＠红宝石
+[%1]～！[r]出大事了～！　快来这里～！
+[k]
+
+？1：究竟发生了什么？
+？！
+
+[charaShake B 0.07 0 16 1.0]
+＠红宝石
+伊莉雅和玛修小姐[line 3]！
+[k]
+
+[charaShake B 0.07 0 16 1.0]
+＠红宝石
+被自称『糖果之国』居民的家伙们强行带走了～！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_3 2.0]
+[wait fade]
+[soundStopAll]
+[end]

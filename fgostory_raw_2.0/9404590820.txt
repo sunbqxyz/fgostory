@@ -1,0 +1,920 @@
+
+＄94-04-59-08-2-0
+
+
+[soundStopAll]
+
+[charaSet A 1098187900 1 六条]
+[charaSet B 2040001 1 诺子]
+[charaSet C 5042000 1 紫式部]
+[charaSet D 98001000 1 玛修]
+
+[charaSet I 98115000 1 特效用]
+[charaSet J 98115000 1 特效用]
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_charge_blu]
+
+[charaTalk depthOff]
+[charaDepth I 9]
+[charaDepth B 8]
+
+[scene 10806]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[charaEffect A bit_talk_06b2]
+[wt 2.0]
+
+＠六条
+……[r]……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠诺子
+……[r]……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠六条
+算我输了吗？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+[se ad596]
+[se ad300]
+[seVolume ad300 0 0.6]
+[charaChange B 2040000 5 fade 0.7]
+[wait charaChange B]
+[charaEffectStop I bit_talk_charge_blu]
+[wt 0.5]
+[seStop ad596 0.5]
+[wt 0.5]
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠诺子
+嗯，这个嘛……[r]可以这么算吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠六条
+啊啊，这样啊……虽然很开心……[r]但一直对着什么发火……
+[k]
+
+[charaFace A 9]
+
+＠六条
+或许……意外地……无聊呢。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.7]
+[charaSpecialEffect A darkEnemyErasure 1 1.7]
+[se ad52]
+[wt 1.9]
+[charaEffectStop A bit_talk_06b2]
+[wt 2.0]
+
+[charaEffect J bit_talk_20]
+[se ad39]
+[wt 2.4]
+[charaEffectDestroy J bit_talk_20]
+
+
+
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠紫式部
+圣杯的碎片……啊！？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut I 0,0]
+[charaEffect I bit_talk_20]
+[wt 1.0]
+[charaMove I 500,0 1.8]
+[se ad474]
+[seVolume ad474 0 0.2]
+[wt 1.8]
+[charaEffectDestroy I bit_talk_20]
+
+[charaPut I -1200,0]
+[charaEffect I bit_talk_20]
+[seVolume ad474 0.2 0.1]
+
+[charaEffect B bit_talk_20re]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+[wt 1.1]
+
+[charaPut I -500,0]
+[charaMove I 0,0 1.8]
+[wt 0.3]
+[seVolume ad474 0.2 0.2]
+[wt 1.5]
+[seStop ad474 0.5]
+
+[charaEffectStop B bit_talk_20re]
+[charaEffectStop I bit_talk_20]
+[fowardEffect bit_talk_radiallight02]
+[wt 0.5]
+[se ad29]
+
+[fadeout white 1.5]
+[wait fade]
+
+[fowardEffectDestroy bit_talk_radiallight02]
+
+[charaEffect B bit_talk_20]
+[wt 1.5]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+？1：连起来了！？
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaEffectDestroy B bit_talk_20]
+[charaEffectDestroy I bit_talk_20]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠紫式部
+分开的圣杯碎片，[bgm BGM_EVENT_2 0.1][r]恢复正常状态了……
+[k]
+
+＠紫式部
+是……这么一回事吗？
+[k]
+
+[charaFadeout C 0.1]
+
+[charaPut I 0,0]
+[charaEffect I bit_talk_20re]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠诺子
+本打算放下的，结果又回来了啊。
+[k]
+
+＠诺子
+算了……这种事，也不奇怪。
+[k]
+
+
+[messageOff]
+[charaEffectStop I bit_talk_20re]
+[wt 0.9]
+
+[charaFace B 0]
+
+＠诺子
+那么，亲御。[r]这个给你。
+[k]
+
+
+？1：哎？
+
+？！
+
+[messageOff]
+[charaMoveScale B 1.1 0.4]
+[charaMove B 0,15 0.4]
+[se ade385]
+[seStop ade385 0.8]
+[wt 1.2]
+[charaMoveReturn B 0,10 0.4]
+[wt 1.0]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+[charaEffect I bit_talk_20]
+[wt 0.5]
+[se ad209]
+[seVolume ad209 0 0.2]
+[seStop ad209 0.5]
+[wt 1.1]
+[charaEffectStop I bit_talk_20]
+[wt 1.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠紫式部
+那么干脆！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠诺子
+你不是想要这个吗？[r]那就给你们俩吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠紫式部
+但是，如果我们回收了这个……
+[k]
+
+？1：诺子小姐……
+
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+[charaPut I 0,0]
+[charaEffect I bit_talk_06]
+[wt 1.5]
+[charaFace B 2]
+
+＠诺子
+呜哇，这啥好吓人！？[bgm BGM_EVENT_6 0.1]
+[k]
+
+[charaFace B 6]
+
+＠诺子
+啊，不，是那个吧。[r]是要返回那个名为『座』的地方了吧，嗯。
+[k]
+
+＠诺子
+这样一来，在这里发生的一切，[r]就都会化作一份记录了……
+[k]
+
+[charaFace B 13]
+
+＠诺子
+嗯……有些遗憾。[r]明明那么开心。
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠紫式部
+……[r]……
+[k]
+
+[charaFace C 5]
+
+＠紫式部
+…………区区这点事，给我牢牢记住啦。
+[k]
+
+＠紫式部
+只有我们记得也太不公平了吧？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠诺子
+噗哈哈哈哈！[r]小香你太强人所难了吧！
+[k]
+
+[charaFace B 9]
+
+＠诺子
+但是我知道了，我会靠毅力想想办法的。
+[k]
+
+？1：居然还能有办法吗……
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠紫式部
+诺子小姐……[r]不，清少纳言……
+[k]
+
+＠紫式部
+有一件事，[r]我一直想在有机会再见到您时问您。
+[k]
+
+[charaFace C 6]
+
+＠紫式部
+您……您有没有……
+[k]
+
+＠紫式部
+源源……源……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠诺子
+嗯。[r]我全部读完了哦，『源氏物语』。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠紫式部
+！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+
+＠诺子
+让我想想喵～。
+[k]
+
+＠诺子
+越悲伤，就越闪耀，[r]揪着内心不放，又令人怀念[line 3]
+[k]
+
+＠诺子
+我或许还是第一次那样废寝忘食地阅读吧。
+[k]
+
+＠诺子
+我可绝对写不出那种东西来。
+[k]
+
+[charaFace B 1]
+
+＠诺子
+所以，能和写下『源氏物语』的人一直在一起……
+[k]
+
+＠诺子
+我感到非常……非常高兴。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠紫式部
+啊……
+[k]
+
+＠紫式部
+我……我也……那个……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠诺子
+啊，不，慢着。
+[k]
+
+＠诺子
+唯有光之君我不能接受啦。
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠紫式部
+快[messageShake 0.05 4 4 0.3]给我滚回去啦！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠诺子
+哇哈哈哈哈！
+[k]
+
+＠诺子
+亲御……也要谢谢你！
+[k]
+
+
+？1：嗯。
+
+？！
+
+？1：有缘再见。
+
+？！
+
+
+[charaFace B 7]
+
+＠诺子
+……[r]……哎嘿嘿。
+[k]
+
+＠诺子
+说好了哦？[r]我一定……一定会去见你的。
+[k]
+
+[charaFace B 9]
+
+＠诺子
+那么两位，[r]保重啦！
+[k]
+
+＠诺子
+也向[#那边]的各位问候一下！
+[k]
+
+＠诺子
+拜拜～～～！！
+[k]
+
+[messageOff]
+[charaSpecialEffect B flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect B]
+[charaEffectStop I bit_talk_06]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠紫式部
+……[r]……
+[k]
+
+＠紫式部
+清少纳言是那种……[r]脸上露着自满，自以为了不起的人……
+[k]
+
+[charaFace C 1]
+
+＠紫式部
+究竟该怎么说才好呢。
+[k]
+
+＠紫式部
+真是个……吵闹的人呢。
+[k]
+
+
+？1：说得对。
+？2：很开心。
+
+？！
+
+[charaFace C 7]
+
+＠紫式部
+嗯，我也……
+[k]
+
+[charaFace C 1]
+
+＠紫式部
+我也非常开心。
+[k]
+
+[messageOff]
+[charaEffect I bit_talk_06]
+[wt 1.5]
+
+[charaFace C 0]
+
+＠紫式部
+啊……这是。
+[k]
+
+＠紫式部
+圣杯回收后，与我的意识连在一起的[r]空间就会分离……是这种构造吧。
+[k]
+
+＠紫式部
+真希望最后，[r]能向各位打个招呼……
+[k]
+
+＠紫式部
+……[r]……
+[k]
+
+[charaFace C 4]
+
+＠紫式部
+御主……
+[k]
+
+＠紫式部
+失去了圣杯的这个梦境世界……[r]会就此消失吗？
+[k]
+
+？1：…………
+
+？！
+
+？1：就算无法再次看到……
+
+？！
+
+？1：就算从梦中醒来，也不会消失。
+
+？！
+
+？1：这种梦的存在……其实未尝不可吧？
+
+？！
+
+[charaFace C 1]
+
+＠紫式部
+呵呵……说得对。
+[k]
+
+＠紫式部
+确实，如此……
+[k]
+
+
+＠紫式部
+好了，我们该回去了。
+[k]
+
+＠紫式部
+回去后，[r]迦勒底一定也在过情人节！
+[k]
+
+[messageOff]
+[fadeout white 1.5]
+[wait fade]
+
+[charaEffectDestroy I bit_talk_06]
+[charaFadeout C 0.1]
+[scene 10000]
+[wt 1.5]
+
+[fadein white 1.5]
+[bgmStop BGM_EVENT_6 1.5]
+[wait fade]
+[fadeout black 0.1]
+[wait fade]
+
+[scene 10000]
+
+[wipeFilter cinema 0.5 0]
+[wt 2.0]
+
+[fadein black 1.5]
+[wait fade]
+
+＠
+于是……
+[k]
+
+[messageOff]
+[branchQuestNotClear lblNotClear1 3000303]
+[scene 66700 1.0]
+[branch lblConf1]
+[label lblNotClear1]
+[scene 60300 1.0]
+[label lblConf1]
+[wt 1.2]
+
+＠
+那之后，我们[bgm BGM_EVENT_2 0.1]顺利在迦勒底苏醒。
+[k]
+
+＠
+据说我们好像睡了整整一个星期，[r]但大家一听说是『老套路的那个』，就都欣然接受了，
+[k]
+
+＠
+该说大家也习惯了，还是该怎么说呢[line 3]
+[k]
+
+＠
+然后，在情人节当天。[r]被要求卧床休息的御主身边，
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_2 1.0 0.5]
+[wait fade]
+
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 66800]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10400]
+[label lblConf2]
+[wt 0.5]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_2 1.0 1.0]
+[wait fade]
+
+＠
+男男女女接踵而至……[r]瞬间筑起了巧克力的大山。
+[k]
+
+＠
+该说这是人望呢，[r]还是平日里积下的德呢。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_2 1.0 0.5]
+[wait fade]
+
+[branchQuestNotClear lblNotClear3 3000303]
+[scene 66600]
+[branch lblConf3]
+[label lblNotClear3]
+[scene 10310]
+[label lblConf3]
+[wt 0.5]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_2 1.0 1.0]
+[wait fade]
+
+＠
+对了对了，共同开发的那种巧克力[r]被可喜可贺地中止了销售。
+[k]
+
+＠
+大家似乎都感到很遗憾，[r]但那种危险的东西就不该流到市面上。
+[k]
+
+＠
+而我……
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_2 1.0 0.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 70500]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_2 1.0 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.4 0,-50]
+[wt 0.4]
+
+＠紫式部
+我记得，就在这附近……啊。
+[k]
+
+[charaFace C 1]
+
+＠紫式部
+找到了。[r]呵呵。
+[k]
+
+＠紫式部
+虽说已经很久没有阅读了……[r]但至少今天，算破例吧。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[se ade277]
+[wt 1.5]
+
+
+＠紫式部
+春天是破晓的时候……[r]渐渐发白的山顶……
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.0]
+[bgm BGM_EVENT_2 1.0 0.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wipeOff]
+
+[branchQuestNotClear lblNotClear4 3000303]
+[scene 66800]
+[branch lblConf4]
+[label lblNotClear4]
+[scene 10400]
+[label lblConf4]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_2 1.0 1.0]
+[wait fade]
+[wt 0.5]
+
+？1：综上所述，
+？2：发生了这么一件事。
+
+？！
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠玛修
+嗯，辛苦了，前辈。
+[k]
+
+[charaFace D 8]
+
+＠玛修
+不过，该怎么说呢……
+[k]
+
+＠玛修
+每年情人节都会发生些什么，[r]都快成惯例了呢。
+[k]
+
+[charaFace D 13]
+
+＠玛修
+很遗憾没能帮上忙，[r]但这次是以巧克力为生命线的世界呀。
+[k]
+
+＠玛修
+但是，前辈您肯定……[r]不会愁没有巧克力吧？
+[k]
+
+？1：不……
+？2：这个嘛……
+
+？！
+
+[charaFace D 1]
+
+＠玛修
+看来今年前辈也从大家那里拿到了好多。
+[k]
+
+[charaFace D 3]
+
+＠玛修
+我的巧克力……您也愿意收下吗？
+[k]
+
+[charaFace D 11]
+
+＠玛修
+还是说。
+[k]
+
+＠玛修
+您已经受够巧克力了呢？
+[k]
+
+？1：这我当然会感激地……
+
+？！
+
+？1：收下啦……！
+
+？！
+
+
+[messageOff]
+[charaFace D 1]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

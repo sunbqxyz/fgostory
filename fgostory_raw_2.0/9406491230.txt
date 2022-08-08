@@ -1,0 +1,2841 @@
+
+
+
+
+
+
+＄94-06-49-12-3-0
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 8001410 1 マシュ]
+[charaSet B 1046001 1 伊吹童子]
+[charaSet C 98002000 1 フォウ]
+[charaSet D 4043001 1 太公望]
+[charaSet F 4044001 1 ニキチッチ]
+[charaSet G 1098123000 1 ムニエル]
+[charaSet H 1098124500 1 ダ・ヴィンチ]
+[charaSet I 1098123200 1 ゴルドルフ]
+[charaSet K 1098214000 1 四不相]
+[charaSet L 1098214500 0 1]
+[charaSet M 1098123300 1 コヤンスカヤ]
+[charaSet N 1098123300 1 シルエット_コヤンスカヤ]
+[charaFilter N silhouette 00000080]
+[charaSet O 4042000 1 ハベトロット]
+
+[charaSet P 1046002 1 伊吹童子_第三]
+[charaSet Q 1046001 1 ダミー1]
+[charaFilter Q silhouette EDEDED80]
+[charaSet R 1046002 1 ダミー2]
+[charaFilter R silhouette EDEDED80]
+
+[sceneSet E 126200 1]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+
+[scene 126000]
+[effect bit_talk_41_fs]
+
+[cameraMove 0.1 0,0 1.01]
+[shake 0.05 2 2 0]
+[wt 0.1]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_63 0.1 0.5]
+[wt 0.5]
+
+
+[se ad629]
+[seVolume ad629 0 0]
+[seVolume ad629 1.5 0.6]
+[se ad729]
+[seVolume ad729 0 0]
+[seVolume ad729 1.5 0.2]
+
+[wait fade]
+
+[wt 2.5]
+
+[fadeout black 1.0]
+[seStop ad729 1.0]
+[seStop ad629 1.0]
+[wait fade]
+
+[effectDestroy bit_talk_41_fs]
+[shakeStop]
+
+[scene 142000]
+[bgm BGM_EVENT_63 1.5 1.0]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠ムニエル
+うおおお、なんとか抜けたぞーーー！
+[k]
+
+[charaFace G 1]
+
+＠ムニエル
+見えた！　目標地点だ。[r]北緯６０度５５分、東経１０１度５７分！
+[k]
+
+[charaFace G 2]
+
+＠ムニエル
+って、何だありゃ[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠ゴルドルフ
+何が見えたというのかね。[r]どれどれ。
+[k]
+
+[charaFace I 7]
+
+＠ゴルドルフ
+……おお。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[se adm21]
+[charaMoveReturn C 0,15 0.4]
+
+＠フォウ
+フォウ、フォフォーウ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠ムニエル
+まさかの現代建築だとぉ……？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 24]
+[charaFadein H 0.1 1]
+
+＠ダ・ヴィンチ
+周囲に敵影なし。[r]感知距離には敵性反応も存在してないみたいだね。
+[k]
+
+[charaFace H 25]
+
+＠ダ・ヴィンチ
+本拠地護衛の戦闘獣がわんさと[r]いるんじゃないかって思ってたけど、
+[k]
+
+＠ダ・ヴィンチ
+静かなものだね。何もいない。[r]異聞眷属らしき魔力反応だって見当たらないよ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠太公望
+彼女は、ブリテンの祭神が変じた災厄から[r]カルデアを[#庇:かば]った。ならば、
+[k]
+
+＠太公望
+本気で消耗していて……[r]静かなところで休みたい、という状態なのやも。
+[k]
+
+＠太公望
+可能性の話ですがね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ニキチッチ
+何でもいい。[r]城を守る軍がいないのなら、堂々と城に入る。
+[k]
+
+＠ニキチッチ
+それだけの話だぞ。[wt 0.8][charaFace F 2][r]竜よ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠伊吹童子
+いつでも！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠ニキチッチ
+マシュ！　[%1]！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+は、はいっ。
+[k]
+
+？1：いつでも行けます！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠ニキチッチ
+よし、いい返事だ。[r]では四不相！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+
+[charaMoveReturn K 0,10 0.3]
+
+＠四不相
+モ。モモ。[wt 0.3][charaMoveReturn K 0,10 0.3]
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 13]
+[charaFadein I 0.1 1]
+
+＠ゴルドルフ
+のわっ！？　い、いたのかこの生き物……
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠太公望
+失礼。普段は霊体化させているんですが、[r]最終決戦となれば同行させた方が話が早いので。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ニキチッチ
+オレの愛馬は流石にここには入らんな。[r]まあいい。
+[k]
+
+[charaFace F 2]
+
+＠ニキチッチ
+よし、前線に出る者は全員揃っているな。[r]では早速だが覚悟を決めろ！
+[k]
+
+＠ニキチッチ
+目前に城！[r]城には王がいる！
+[k]
+
+＠ニキチッチ
+ならば、オレたちは玉座まで駆け抜けるのみ！[r][line 3]ゆくぞ！
+[k]
+
+＠ニキチッチ
+[#勇士:ボガトゥイリ]！　[#吶喊:とっかん]！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠伊吹童子
+[f large]いっくわよー！
+[k]
+
+
+[messageOff]
+[bgm BGM_EVENT_63 2.0 0.5]
+[fadeout black 1.0]
+[wait fade]
+
+[charaSet H 1098124510 1 ダ・ヴィンチ]
+[charaSet I 1098123210 1 ゴルドルフ]
+
+[charaFadeout B 0.1]
+[scene 126200]
+[charaScale E 1.5]
+[charaFadein E 0.1 0,-370]
+[wt 1.5]
+
+[se ade4]
+[wt 2.0]
+[seStop ade4 0.5]
+
+[cueSe SE_21 21_ade670]
+[seVolume 21_ade670 0 0.6]
+[wt 2.0]
+
+[se ad555]
+[seVolume ad555 0 0]
+[seVolume ad555 1.0 0.3]
+[wt 1.0]
+[bgmStop BGM_EVENT_63 2.0]
+[se bac30]
+[wt 1.0]
+[seStop ad555 1.0]
+[wt 1.5]
+
+[charaMove E 0,-470 20.0]
+
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 2.0 0.4]
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_MAP_23 0.1]
+
+[wt 2.5]
+
+＠
+荒涼の大地に[#聳:そび]えるは[line 4]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+領域支配者たる獣の座。[r]生存と[#殺戮:さつりく]、ふたつの領域を統べる大宮殿の姿。
+[k]
+
+＠
+北緯６０度５５分、東経１０１度５７分。[r]固有結界中心地。
+[k]
+
+＠
+約百年前、森林域の生命[#悉:ことごと]くを薙ぎ払った[r]大爆発の中心地。すなわちは[#爆心地跡:グラウンドゼロ]。
+[k]
+
+[messageOff]
+[seStop ad556 2.0]
+[charaFadeout E 1.5]
+[wt 2.0]
+
+＠
+[#聳:そび]え立つ巨塔。その名は[line 3]
+[k]
+
+[messageOff]
+[wt 2.0]
+
+[bgm BGM_MAP_23 1.0 0.7]
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.4 1]
+[wt 0.4]
+
+＠？？？
+ようこそいらっしゃいました。[r]お客様。
+[k]
+
+＠？？？
+ＮＦＦ本社ビル[line 3]
+[k]
+
+＠？？？
+ナイン・フォックス・ファウンデーション、[r]本社ビルディングへようこそ。
+[k]
+
+＠？？？
+私は社長より案内役を仰せつかっております、[r]本領域で唯一、言語を操ることを許された疑似生命。
+[k]
+
+＠？？？
+ＰＢと申します。[r]以後、よろしくお見知りおきを。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[bgm BGM_MAP_23 1.5 0.3]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠伊吹童子
+……。[r]……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠フォウ
+…………。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+＠ニキチッチ
+…………。[r]…………。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠太公望
+……………………。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+…………え。え？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 25]
+[charaFadein F 0.1 1]
+
+[bgmStop BGM_MAP_23 2.0]
+＠ニキチッチ
+なんと、よもや礼儀正しい門番ときたか。[r]これにはニキチッチも予想外。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠ＰＢ
+お客様。[r]お名前をお聞かせ願えますでしょうか？
+[k]
+
+[messageOff]
+[wt 1.2]
+
+？1：…………ウサギ？
+？！
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+は、はい先輩。[r]擬人化された兎のように……
+[k]
+
+＠マシュ
+見え……ますね……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠太公望
+言葉が通じるなら有り難い。[r]いやはや、物云わぬ眷属や戦闘獣より余程いい。
+[k]
+
+＠太公望
+初めまして、ＰＢ殿。[r]僕は太公望。こちらはカルデアの一行です。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠ニキチッチ
+そしてオレはドブルイニャ・ニキチッチだ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠ＰＢ
+承りました。
+[k]
+
+＠ＰＢ
+カルデアご一行様に[r]太公望様、ドブルイニャ・ニキチッチ様。
+[k]
+
+＠ＰＢ
+アポイントはいただいていないようですが……[r]これより社長に確認いたします。
+[k]
+
+＠ＰＢ
+どうぞこちらに。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠伊吹童子
+あ、はーい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[se adm21]
+[charaMoveReturn C 0,15 0.4]
+
+＠フォウ
+フォウ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+[charaMoveReturn K 0,15 0.3]
+
+＠四不相
+モ。モモ！[wt 0.3][charaMoveReturn K 0,15 0.3]
+[k]
+
+[messageOff]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[se ad13]
+[charaPut S 0,0]
+[charaEffect S bit_talk_10_LowLevel]
+[wt 0.2]
+
+[charaTalk H]
+[charaFace H 23]
+[charaFadein H 0.2 1]
+[wt 0.4]
+＠ダ・ヴィンチ
+予想外の展開だけど……[r]とりあえず、交戦しないで中に入れるのかな？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 15]
+[charaFadein I 0.1 1]
+
+＠ゴルドルフ
+と見せかけて突然の奇襲、も有り得るだろう。[r]油断は禁物だぞ諸君。
+[k]
+
+？1：奇襲とかの雰囲気じゃないけど……
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut S 1200,1200]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+そう、ですね……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠伊吹童子
+戦場にあっても柔軟に[#臨機応変:りんきおうへん]！[r]うんうん、マスターとマシュはそうでなくっちゃ。
+[k]
+
+[charaFace B 7]
+
+＠伊吹童子
+[#常在戦場:じょうざいせんじょう]で臨むのはあたしたちの役目よね。[r]ＰＢくんとの対話は任せるわ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 26]
+[charaFadein F 0.1 1]
+
+＠ニキチッチ
+ふむ。たまにいいことを言う竜だ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠伊吹童子
+あははは。[r]もしかして、好きになっちゃった？
+[k]
+
+＠伊吹童子
+あたし、多分ちょっと危ない女だから、[r]カンタンに好きになったら大変なコトになるわよ～。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠ニキチッチ
+はっはっは。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠フォウ
+フォッフォッフォ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠伊吹童子
+あはははは。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？2：とりあえず油断はしないようにしよう
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut S 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠太公望
+そうですね。[r]警戒を怠らないようお願いします。
+[k]
+
+＠太公望
+対話ができることは無論喜ばしいですが、[r]ええ、ゴルドルフ殿の言葉にも一理あります。
+[k]
+
+＠太公望
+念のため、防御の術は重ねておくとして……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠ニキチッチ
+心配性だな太公望！[r]まあ、手酷い失敗の後なら仕方ない。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠太公望
+……どうも。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠ＰＢ
+どうかされましたか？[r]どうぞこちらに。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+は、はい。今行きますので！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠ＰＢ
+よろしくお願いいたします。[r]こちらの、本社ビル正面玄関からお入りください。
+[k]
+
+＠ＰＢ
+弊社はお客様の望むサービスを提供する、[r]一種の武装集団です。
+[k]
+
+＠ＰＢ
+本社ビルの防御体制は完璧の一語。[r]特に、正面玄関付近には大小の銃の獣を建材に埋め込み、
+[k]
+
+＠ＰＢ
+戦車大隊級の火力を実現しています。[r]ですのでどうか、私からお離れにならないよう。
+[k]
+
+＠ＰＢ
+無許可で接近すれば、はい。[r]大惨事となりますので。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaShake C 0.05 3 3 0.7]
+
+＠フォウ
+フォウゥ……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠伊吹童子
+あら？　よく見たら正面入口あたり、[r]魔力反応がうようよ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk H]
+[charaFace H 14]
+[charaFadein H 0.1 1]
+
+＠ダ・ヴィンチ
+建材に銃の獣を埋め込んでるとか言ってたけど……[r]戦闘獣のことだよね多分。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut S 1200,1200]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ということは……[r]攻撃態勢に入ると、壁から無数の銃が……？
+[k]
+
+？1：うわあ
+
+＠マシュ
+想像したくない光景、ですね……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：けっこう　えぐいね
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 25]
+[charaFadein F 0.1 1]
+
+＠ニキチッチ
+ほう……。[r]（設計思想に感心している顔）
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+？！
+
+[charaPut S 1]
+[charaTalk I]
+[charaFace I 9]
+[charaFadein I 0.1 1]
+
+＠ゴルドルフ
+み、見た目は一流企業に相応しい現代建築だが、[r]外敵必殺な設計思想なのだな。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut S 1200,1200]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠ＰＢ
+はい。縦二列にお並びください。[r]はい。それでＯＫです。
+[k]
+
+＠ＰＢ
+では、正面玄関より本社ホールに入ります[line 3]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_77 1.0 0.5]
+[wait fade]
+
+[charaFadeout L 0.1]
+
+[imageSet E back10000 1]
+[charaScale E 1.05]
+
+[sceneSet U 126300 1]
+[charaScale U 1.4]
+
+[scene 126300]
+
+[charaFadein U 0.1 0,-320]
+[wt 1.0]
+
+[fadein black 1.0]
+[charaMove U 0,-150 6.0]
+[bgm BGM_EVENT_77 1.0 1.0]
+[wait fade]
+
+[wt 6.0]
+
+[charaFadeout U 1.5]
+[wt 2.0]
+[cueSe SE_21 21_ade664]
+[seVolume 21_ade664 0 0.1]
+[seVolume 21_ade664 1.0 0.7]
+[wt 1.0]
+[seStop 21_ade664 0.5]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.4 1]
+[wt 0.4]
+
+＠ＰＢ
+こちらです。
+[k]
+
+[messageOff]
+[charaFadeout L 0.4]
+[cueSe SE_21 21_ade664]
+[seVolume 21_ade664 0 0.7]
+[seStop 21_ade664 1.5]
+[wt 2.0]
+
+？1：（足音がファンシー……）
+？！
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.4 1]
+[wt 0.4]
+
+＠ＰＢ
+社長は通常、社長室においでです。
+[k]
+
+＠ＰＢ
+現在はとある理由から、[r]あまり移動を好まれないのですが[line 3]
+[k]
+
+＠ＰＢ
+皆様の来社をお伝えしたところ、[r]本ホールでお迎えになるとのご連絡がありました。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠太公望
+ふむ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+通信していた様子はありませんでしたが、[r]念話のようなものでしょうか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠太公望
+ええ、恐らくは。[r]ＰＢ殿は彼女の使い魔の一種なのでしょう。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[cueSe SE_21 21_ade664]
+[seVolume 21_ade664 0 0.1]
+[seVolume 21_ade664 1.0 0.7]
+[wt 1.0]
+
+[seStop 21_ade664 0.5]
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.4 1]
+[wt 0.4]
+
+＠ＰＢ
+[line 3]到着いたしました。
+[k]
+
+＠ＰＢ
+ＮＦＦ本社ビルディング大ホール中央部です。[r]これより、社長がお見えになります。
+[k]
+
+＠ＰＢ
+こちらでお待ちください。[r]皆様と社長の商談が世界の未来を明るくすること、
+[k]
+
+＠ＰＢ
+お祈り申し上げます。[r]まあ、私にも自我と自己は存在しないのですが……
+[k]
+
+＠ＰＢ
+それでは、ＰＢは失礼いたします。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠伊吹童子
+どうも丁寧に。[r]縁があればまたね、ＰＢくん。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+[wt 1.2]
+
+？1：案内ありがとう、ＰＢ
+？2：さよなら、ＰＢ
+
+？！
+
+＠ＰＢ
+ありがとうございます。[r]さようなら、人間の方々。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.5]
+
+[charaMove L 0,-10 0.5]
+[wt 0.6]
+[charaMove L 0,0 0.5]
+[wt 0.8]
+
+[se ad596]
+[charaSpecialEffect L enemyErasure 1 1.5]
+[wait charaSpecialEffect L]
+[wt 1.3]
+
+[cueSe SE_21 21_ade665]
+[seVolume 21_ade665 0 0.1]
+[seVolume 21_ade665 1.0 1.0]
+[wt 2.0]
+
+
+[charaTalk off]
+
+[charaDepth N 2]
+[charaDepth M 1]
+
+[charaFace N 0]
+[charaFadein N 1.0 1]
+[wt 0.9]
+[seStop 21_ade665 0.7]
+[wt 1.2]
+
+[charaFace M 7]
+[charaFadein M 0.1 1]
+[wt 0.1]
+
+[charaFadeout N 0.7]
+[wt 1.0]
+
+[charaTalk on]
+
+＠コヤンスカヤ
+本音を言うと[line 3][bgm BGM_EVENT_71 0.1]
+[k]
+
+＠コヤンスカヤ
+少し、驚きました。
+[k]
+
+[messageOff]
+[charaFace M 4]
+[wt 1.2]
+
+[charaFace M 7]
+
+＠コヤンスカヤ
+ここは固有結界の[#裡:うち]だとご存知ですよね？[r][#私:わたくし]は[#私:わたくし]の思うがままに、眷属や獣を産み出せます。
+[k]
+
+＠コヤンスカヤ
+実際に披露もして、[r]皆さんは[#這々:ほうほう]の[#体:てい]で逃げ出す他になかった。
+[k]
+
+[charaFace M 19]
+
+＠コヤンスカヤ
+彼我の戦力差は決算書のように明らか。[r]その上で堂々とやって来た、という事は[line 3]
+[k]
+
+[charaFace M 17]
+
+＠コヤンスカヤ
+胸のすくアイディアを披露してくださる、[r]という事でよろしいですか？
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠太公望
+いやいや。[r]まずは御礼からですよ。
+[k]
+
+[charaFace D 1]
+
+＠太公望
+対話から始めてくださって、ありがとう。[r]そして、驚いているのは僕たちもです。
+[k]
+
+＠太公望
+今、こうしてきみが話していることもそうですが、[r]ＰＢ殿の存在にも驚かされた。
+[k]
+
+＠太公望
+まさか人語を発する存在を領域内に作っていたとは。
+[k]
+
+[charaFace D 0]
+
+＠太公望
+てっきり僕は、[r]きみは人類を[line 3]
+[k]
+
+＠太公望
+人間のすべてを嫌っているものと、ばかり。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 7]
+[charaFadein M 0.1 1]
+
+＠コヤンスカヤ
+ええ。すべてを嫌っています。[r]ですが嫌悪と評価は別のもの。
+[k]
+
+＠コヤンスカヤ
+内面はどうあれ、行った事業が良いものなら[r]リスペクトの一つや二つ。
+[k]
+
+[charaFace M 0]
+
+＠コヤンスカヤ
+まあ、極めて希な例ではありますが。[r]それゆえのＰＢです。
+[k]
+
+＠コヤンスカヤ
+彼と対等の立場で会話していただいた事、[r]こちらも御礼を申し上げておきます。
+[k]
+
+＠コヤンスカヤ
+ＰＢは、[#私:わたくし]にとってもお気に入りですので。
+[k]
+
+？1：（極めて希な例……）
+？2：（誰なんだろう……）
+
+？！
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+（想像し難いですが、気になりますね……）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠フォウ
+（フォウフォウ……）
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠太公望
+極めて希な例、ですか。[r]成る程。
+[k]
+
+＠太公望
+それが僕ではないというのはちょっぴり残念ですね、[r]ミズ・タマモヴィッチ・コヤンスカヤ。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 13]
+[charaFadein M 0.1 1]
+[wt 1.2]
+[charaFace M 14]
+
+＠コヤンスカヤ
+まあ[line 3]
+[k]
+
+＠コヤンスカヤ
+[#私:わたくし]をコヤンスカヤとお呼びになりました？[r]先刻は確か、別の女性の名を呼んでいましたのに。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠太公望
+ええ。僕は間違えていたんですよ。
+[k]
+
+＠太公望
+知らぬこととはいえ、[r]きみには、失礼を働いてしまったようです。
+[k]
+
+＠太公望
+太公望呂尚、ここに正式にお詫びいたします。[r]ミズ・コヤンスカヤ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 10]
+[charaFadein M 0.1 1]
+
+＠コヤンスカヤ
+あら[line 3]。
+[k]
+
+
+＠コヤンスカヤ
+心のこもった謝罪の言葉、[r]胸に響いてしまいます。でも[line 3]
+[k]
+
+[charaFace M 19]
+
+＠コヤンスカヤ
+差し伸べる手と逆の手は、[r]背中に隠した銃に伸びているのでしょう？
+[k]
+
+＠コヤンスカヤ
+それが人間の狩り。人間の裏というもの。[r]違いまして、ミスター・太公望？
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠太公望
+裏はないですよ。[r]名を違えるのは礼を失した行為だ。
+[k]
+
+＠太公望
+異聞帯とはいえ、僕の前に、[r]中華の英雄が同じ愚を犯したとも聞きます。
+[k]
+
+[charaFace D 4]
+
+＠太公望
+氏の代わりとはいきませんが……[r]まことに、辛い思いをさせてしまいました。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 7]
+[charaFadein M 0.1 1]
+
+＠コヤンスカヤ
+…………いいでしょう。
+[k]
+
+[charaFace M 0]
+
+＠コヤンスカヤ
+アナタの謝罪を受け入れましょう。[r]礼儀というのは人間の数少ない美徳ですし。
+[k]
+
+＠コヤンスカヤ
+この後にどんな結果が待っていても、[r]死者をいたぶる事はいたしません。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠太公望
+……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+
+＠コヤンスカヤ
+あら、何か？
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠太公望
+数少ない美徳。[r]確かに、そうかもしれません。
+[k]
+
+＠太公望
+僕たち人類は霊長としてこの星に君臨したが、[r]文化文明の維持のために想像を絶する消費を行う。
+[k]
+
+＠太公望
+生きて、営むだけで多くを殺す。
+[k]
+
+[charaFace D 4]
+
+＠太公望
+再生のスピードを遙かに超えて消費を続ける怪物が[r]人間の本性、罪なのだとすれば……
+[k]
+
+＠太公望
+文明、社会、交流が生み出してきた[r]幾つかの美徳など、あまりにちっぽけでしょう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 4]
+[charaFadein M 0.1 1]
+
+＠コヤンスカヤ
+ええ。幾つかの功績も、[r]その本性を弁護するには至りません。
+[k]
+
+[charaFace M 7]
+
+＠コヤンスカヤ
+自らの生存圏を循環のサイクルから[r]消費のサイクルに切り替えたお猿さん……
+[k]
+
+＠コヤンスカヤ
+いえ、猿たちに失礼ですね。[r]皆さん人類など、彼らにとっては[#異星の生命]に等しい。
+[k]
+
+＠コヤンスカヤ
+同じ惑星に生きる高等動物たちに罪悪感を持ちながら。[r]例外なく彼らを消費対象に選べるのがアナタたち。
+[k]
+
+[charaFace M 20]
+
+＠コヤンスカヤ
+……まあ、その逆もあるところが、[r]まさに人類の度しがたいところなのですが……
+[k]
+
+[charaFace M 17]
+
+＠コヤンスカヤ
+そのあたりの功罪含めて、[r]虫唾が走る、というもの。
+[k]
+
+＠コヤンスカヤ
+この[#世界:固有結界]を縦断してきた皆さんには[r]もうお分かりのはず。
+[k]
+
+＠コヤンスカヤ
+[#私:わたくし]が、何のために在るのか。
+[k]
+
+＠コヤンスカヤ
+『異星の神』の侵攻を応援しながら、[bgmStop BGM_EVENT_71 2.5][r]『異星の神』の思惑の外で何を目指しているか。
+[k]
+
+？1：おまえは、人類滅亡を願っている
+
+[charaFace M 21]
+
+[bgm BGM_MAP_36 0.1]
+＠コヤンスカヤ
+…………ふふ。
+[k]
+
+？2：おまえは、絶滅する人類を見たいんだ
+
+[charaFace M 9]
+
+[bgm BGM_MAP_36 0.1]
+＠コヤンスカヤ
+あらご明察☆
+[k]
+
+？！
+
+[charaFace M 17]
+
+＠コヤンスカヤ
+[#私:わたくし]の目的、理念は、[r]嘘偽りなく『人類の全滅』です。
+[k]
+
+
+[charaFace M 0]
+
+＠コヤンスカヤ
+ですが、『この手で全滅させたいのか？』[r]というのは間違いだと申しましょう。
+[k]
+
+＠コヤンスカヤ
+そんな面倒は『異星の神』に任せておけばいい。
+[k]
+
+＠コヤンスカヤ
+異聞帯だろうと汎人類史だろうと、[r][#私:わたくし]にとっては心底どうでもいい。
+[k]
+
+[charaFaceFade M 29 0.3]
+
+＠コヤンスカヤ
+ただ、見て、[#楽しみたい]のです。
+[k]
+
+＠コヤンスカヤ
+取るに足らない癖に思い上がったエゴの群れが、[r]叫び、呻いて、足掻いて[line 3]
+[k]
+
+＠コヤンスカヤ
+どうにもならないままに数を減らして、[r]最後の一匹が涙を流して死にゆくさま。
+[k]
+
+＠コヤンスカヤ
+それをこの目で見ることが[#私:わたくし]の望み。[r]美学、と言い換えましょうか。
+[k]
+
+[charaFaceFade M 20 0.3]
+
+＠コヤンスカヤ
+だって、そうでなければ査定ができないでしょう？
+[k]
+
+[charaFaceFade M 21 0.3]
+
+＠コヤンスカヤ
+人類の皆さんが最後に残すモノは[r]どれほど空虚で、矮小で、無様なのか。
+[k]
+
+＠コヤンスカヤ
+素晴らしい技術、知識を築きながら、[r]たかだか数万年で終わりを迎える生命体。
+[k]
+
+＠コヤンスカヤ
+大地を癒せず、同族をいたわらず、[r]自らを分断し[line 3]
+[k]
+
+＠コヤンスカヤ
+結局のところ、無自覚な強者が、[r]無自覚な弱者を平らげる生存圏。
+[k]
+
+[charaFace M 17]
+
+＠コヤンスカヤ
+その最期を記録して、この宇宙の他の皆さんに[r]オークションを開くのです。
+[k]
+
+＠コヤンスカヤ
+“いったい、この文明には[r][f small]  [f -]どこまでの価値があるのか？”
+[k]
+
+[charaFace M 21]
+
+＠コヤンスカヤ
+楽しみですよねぇ？[r]最終的な金額はいくらになるでしょう。
+[k]
+
+＠コヤンスカヤ
+兆か、億か、万か、千か。[r]いえ、値が付けばいい方かしら。
+[k]
+
+＠コヤンスカヤ
+ゴミはどこまでいってもゴミ。[r]そんなものに、１円だって払う方がいらっしゃる？
+[k]
+
+？1：（無言で見つめる）
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠太公望
+……。[r]……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？2：（無言で唇を噛む）
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠マシュ
+先輩……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[charaPut S 1]
+[charaTalk I]
+[charaFace I 9]
+[charaFadein I 0.1 1]
+
+＠ゴルドルフ
+…………む、むむ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 15]
+[charaFadein H 0.1 1]
+
+＠ダ・ヴィンチ
+やれやれ、これはまた[line 3]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut S 1200,1200]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+
+＠ニキチッチ
+ふむ！
+[k]
+
+＠ニキチッチ
+そう聞くと悪趣味極まった外道だぞ、[r]おまえ。
+[k]
+
+[charaFace F 27]
+
+＠ニキチッチ
+[#生存領域:ラ イ フ ゾ ー ン]の在り方を見るに、[r]共感できるモノがあるかと思ったが、
+[k]
+
+[charaFace F 19]
+
+＠ニキチッチ
+それではまるで[line 3][r]まるで[line 3]。
+[k]
+
+＠ニキチッチ
+その、なんだ。[r]よその失敗をあざ笑う、にん[line 3]
+[k]
+
+[charaFace F 2]
+
+＠ニキチッチ
+いや、言うまい。とにかく！[r]飢えた竜でさえ、もう少し趣味がいいだろう！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk M]
+[charaFace M 8]
+[charaFadein M 0.1 1]
+
+＠コヤンスカヤ
+……なんでしょう、その方？
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ニキチッチ
+キエフの勇士だぞ。[r]ロシアの大地を救わんがため、現界した。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠伊吹童子
+伊吹童子よ。[r]自己紹介、してなかったわよね？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 14]
+[charaFadein M 0.1 1]
+
+＠コヤンスカヤ
+ご丁寧に、ありがとうございます。[bgmStop BGM_MAP_36 2.0]
+[k]
+
+＠コヤンスカヤ
+確認はしていましたが、個体名の照会は[r]手間でしたので、助かりました。
+[k]
+
+[bgm BGM_EVENT_122 0.1]
+
+[charaFace M 7]
+
+＠コヤンスカヤ
+ミスター・太公望。[r]そしてカルデアのお歴々。
+[k]
+
+＠コヤンスカヤ
+お話はこのあたりでよろしくて？
+[k]
+
+＠コヤンスカヤ
+ケルヌンノスのアレで疲れたのもありますけども、[r]皆さん、ＰＢによくしてくれましたので……
+[k]
+
+[charaFace M 4]
+
+＠コヤンスカヤ
+つい、[#私:わたくし]としたことが[#絆:ほだ]されて、[r]お話に付き合ってしまいました。
+[k]
+
+[charaFace M 19]
+
+＠コヤンスカヤ
+ですが、それもここまで。
+[k]
+
+[charaFace M 17]
+
+＠コヤンスカヤ
+確かに、今までの[#私:わたくし]と皆さんの関係は[r]“仲間”でしたが、それもここまでといたしましょう。
+[k]
+
+？1：[line 3]は？
+？2：仲間って……どうして？
+
+？！
+
+[charaFace M 25]
+
+＠コヤンスカヤ
+なんと……気づかれていなかったとは。
+[k]
+
+[charaFace M 0]
+
+＠コヤンスカヤ
+皆さんにとっての優先事項は空想樹の切除。[r][#私:わたくし]にとっての優先事項は生命の[#蒐集:しゅうしゅう]。
+[k]
+
+＠コヤンスカヤ
+ともに、敵ではなかったのです。
+[k]
+
+[charaFace M 17]
+
+＠コヤンスカヤ
+[#観光客:ゲ　ス　ト]として[#異聞帯を楽しむ]。[r]その点で、[#私:わたくし]たちは同好の士だったのですから。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+[line 3]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 7]
+[charaFadein M 0.1 1]
+
+＠コヤンスカヤ
+ですが、今回は違います。[r]皆さんは[#私:わたくし]を殺すため、この世界にやって来た。
+[k]
+
+[charaFace M 20]
+
+[bgmStop BGM_EVENT_122 2.0]
+＠コヤンスカヤ
+はじめから言葉は不要だったのです。[r]そこのおかしな英霊のせいでペースを乱しましたが……
+[k]
+
+[charaFace M 21]
+
+[bgm BGM_BATTLE_107 0.1]
+＠コヤンスカヤ
+人間は人間らしく。[r]獣は獣らしく。
+[k]
+
+＠コヤンスカヤ
+意思の疎通などせず、[r]殺し合うといたしましょう？
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ade153]
+[se ade280]
+[se ad556]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth T 1]
+[charaDepth R 1]
+[charaDepth H 3]
+[charaDepth A 4]
+[charaDepth D 5]
+[charaDepth B 6]
+[charaDepth F 7]
+[charaDepth C 10]
+
+[scene 10000 1.2]
+[wt 0.4]
+[charaPut T 1]
+[charaEffect T bit_talk_beast_shadow]
+[wt 0.2]
+[charaFadeout M 0.7]
+[seVolume ad556 1.0 0.5]
+
+[wt 1.6]
+
+[seStop ade280 1.0]
+[wt 1.5]
+
+＠コヤンスカヤ
+逃げる機会はいくらでもあったでしょうに。[r]思い知る時間はいくらかあったでしょうに。
+[k]
+
+＠コヤンスカヤ
+蛮勇か、傲慢か。[r]どうあれ霊長を名乗るにはおこがましい判断力。
+[k]
+
+＠コヤンスカヤ
+過ちばかり繰り返してきたアナタたちには、[r]似合いの末路に相違なく。
+[k]
+
+＠コヤンスカヤ
+刹那的な行動には、[r]刹那的な遊戯で応えるのみ。
+[k]
+
+＠コヤンスカヤ
+ああ[line 3]獣の[#銘:な]は叫ぶまいよ。
+[k]
+
+＠コヤンスカヤ
+この身の名乗り、人類に聞かせるなど業腹ゆえな？
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk off]
+
+[se ade106]
+[seVolume ad556 1.0 0.3]
+
+[se ad632]
+[effect bit_talk_lightning_01r]
+[wt 2.0]
+[seVolume ad632 1.0 0.5]
+
+[charaPut R 1]
+[charaEffect R bit_talk_beast_eye]
+[wt 1.5]
+[wt 0.5]
+
+
+[se ade215]
+[cueSe SE_21 21_ade667]
+[seVolume 21_ade667 0 0.5]
+[wt 3.0]
+
+＠マシュ
+……魔力量、急激に上昇！
+[k]
+
+
+＠太公望
+ここからです。[r]前回の影とは魔力の質がまるで違う！
+[k]
+
+＠太公望
+僕の霊基を守る術が[#蝕:むしば]まれていく……[r]人理に属するモノを[#蝕:むしば]む力、神仙級の防御を喰うか！
+[k]
+
+＠ニキチッチ
+来るか。
+[k]
+
+＠太公望
+[#六尾状態]の彼女が顕現するはず！[r]どれだけ強大かは、見てみないことにはわかりませんが！
+[k]
+
+＠太公望
+精神防御の術式を張りますが、どうか気を確かに！
+[k]
+
+＠太公望
+人間を殺すための獣であるなら、[r]全身のすべて、姿さえも、恐ろしい凶器となる！
+[k]
+
+？1：（目を逸らさない）
+？2：（覚悟を決める）
+
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_BATTLE_107 1.0]
+[seStop ad632 2.0]
+[seStop ad556 2.0]
+[seStop ade106 2.0]
+[wait fade]
+
+[effectDestroy bit_talk_lightning_01r]
+[charaPut T 2000,2000]
+[charaPut R 2000,2000]
+[charaEffectStop R bit_talk_beast_eye]
+
+[sceneSet J 127100 1]
+[overlayFadein E 0.1 0,-200]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+[bgm BGM_BATTLE_136 0.1]
+
+[criMovie talk_mov117 bgmPlay false]
+[wt 0.5]
+[charaFadeout E 1.0]
+[wt 32.0]
+[overlayFadein E 1.0 0,-200]
+[wt 1.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[scene 142800]
+[charaPut T 0,0]
+
+[imageSet E back10000 1]
+[charaScale E 1.05]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaEffectStop T bit_talk_beast_shadow]
+[wt 2.5]
+
+[charaPut S 1]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠ダ・ヴィンチ
+魔力上昇！[r]計測数値限界を突破！
+[k]
+
+＠ダ・ヴィンチ
+シャドウ・ボーダーの計器では計測不能だけど、[r]きっと、神霊級に匹敵する魔力量のはずだ！
+[k]
+
+＠ダ・ヴィンチ
+霊基が備える質量については、[r]さっき言っていた通り！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut S 1200,1200]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠マシュ
+完全な成体ではないのに、[r]この、独特の……空間侵食……
+[k]
+
+＠マシュ
+彼女自身の固有結界の中なのに、[r]空間が、侵食されている……[line 3]
+[k]
+
+[charaFace A 2]
+
+＠マシュ
+これは、クラス・ビーストの圧力です！[r]マスター！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠太公望
+それでも完全成体ではない[line 3][r]言わばそう、成長体！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠伊吹童子
+十二分に凄まじいパワーね！[r]魔力もそうだけど、こう全体的になんというか、
+[k]
+
+＠伊吹童子
+[f large]パワーが！　すごい！
+[k]
+
+[messageOff]
+[fadeout black 0.4]
+[bgm BGM_BATTLE_136 0.4 0.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaEffectDestroy T bit_talk_beast_shadow]
+[scene 127100]
+
+[charaScale J 1.4]
+[charaFadein J 0.1 -120,-200]
+[charaMove J -120,-400 50.0]
+[wt 0.3]
+
+[fadein black 0.4]
+[bgm BGM_BATTLE_136 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+
+[cueSe SE_21 21_ade667]
+[seVolume 21_ade667 0 0.4]
+[se ade215]
+[wt 1.0]
+[seStop 21_ade667 1.5]
+[wt 1.5]
+
+＠コヤンスカヤ
+[line 3]第四の獣。その座こそ我。
+[k]
+
+＠コヤンスカヤ
+[line 3]比較の獣なかりせば、愛玩の獣が座するは必然。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠コヤンスカヤ
+憐れみ。護り。慈しみ。[r]侮蔑し。殺し。愛おしみ。
+[k]
+
+＠コヤンスカヤ
+時に火を向けて絶滅[#鏖殺:おうさつ]し、[r]時に手を伸ばし愛玩する背反に、[#報:むく]いと応えを。
+[k]
+
+＠コヤンスカヤ
+[line 3]酷なるかなニンゲン種。[r]　　　汝らに、野生はとうに失われた。
+[k]
+
+[messageOff]
+
+
+
+[charaTalk off]
+
+[scene 142800 0.8]
+[charaFadeout J 0.8]
+
+[charaFace D 5]
+[charaFadein D 0.8 1]
+[wt 0.5]
+
+[charaTalk on]
+
+＠太公望
+[line 6]！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 20]
+[charaFadein F 0.1 1]
+＠ニキチッチ
+頭部のアレは大角か！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠太公望
+この魔力量、霊基規模であればそうでしょう。[r]呪いも消えず、尾が足りない状態で無理をする！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠伊吹童子
+無理？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠太公望
+ええ。彼女は無理矢理、ガワを完成させている！
+[k]
+
+＠太公望
+ですが、所詮は実の伴わない急成長。[r]中身は[#尚:なお]も成長途中……要は[#さなぎ]です、さなぎ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠ニキチッチ
+まさに羽化直前、ということか！[r][line 3]愛玩の獣！
+[k]
+
+[messageOff]
+
+[charaFadeout F 0.1]
+[wt 0.5]
+
+
+？1：[line 8]。
+？！
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……先輩。
+[k]
+
+[messageOff]
+[fadeout black 0.4]
+[bgm BGM_BATTLE_136 0.4 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[sceneSet J 127100 1]
+
+[scene 127100]
+[wt 0.3]
+
+[fadein black 0.4]
+[bgm BGM_BATTLE_136 0.4 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+？1：コヤンスカヤ！
+
+？2：たとえ背反だとしても[line 3]
+？！
+
+[cueSe SE_21 21_ade667]
+[seVolume 21_ade667 0 0.4]
+[se ade215]
+[wt 1.0]
+[seStop 21_ade667 1.5]
+[wt 1.5]
+
+？1：愛することが、悪だと[&オレ:わたし]は思えないし
+？！
+
+[wt 0.2]
+
+？1：[&オレ:わたし]には、おまえも何かを愛しているように見える
+
+
+？！
+
+[charaScale J 1.01]
+[charaPut J 0,-200]
+[charaFadeTime J 0.7 0.5]
+[charaMoveScale J 1.02 0.4]
+[charaMove J 0,-200 0.7]
+
+[se ad919]
+[wt 0.4]
+[charaFadeout J 1.0]
+[wt 0.1]
+[seStop ad919 2.0]
+[wt 2.0]
+
+[fadeout black 0.4]
+[bgm BGM_BATTLE_136 0.4 0.5]
+[wait fade]
+
+[scene 142800]
+
+[charaTalk off]
+
+[charaFace D 5]
+[charaFadeinFSL D 0.1 0]
+[charaFace A 7]
+[charaFadeinFSR A 0.1 2]
+[wt 0.3]
+
+[fadein black 0.4]
+[bgm BGM_BATTLE_136 0.4 1.0]
+[wait wipe]
+
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+[se ad443]
+[seStop ad443 0.3]
+[se ad60]
+[seStop ad60 0.5]
+[wt 0.5]
+
+＠太公望
+思想鍵紋、励起！[r][line 3][#崑崙山:こんろんざん]は元始天尊に奉る！
+[k]
+
+[messageOff]
+[charaEffect D bit_talk_sorcery_tik_01]
+[wt 0.1]
+[cueSe SE_21 21_ade669]
+[wt 3.0]
+
+[cueSe SE_21 21_ade661]
+
+＠太公望
+[line 3]我が諸手、雌雄の宝剣に相違なし！[r][line 3]地理天文を包含し、我が[#裡:うち]には[#八卦:はっけ]あり！
+[k]
+
+＠太公望
+[f large]『[#玉虚体現:ぎ ょ く き ょ た い げ ん]・[#封神執行:ほ う し ん し っ こ う]』！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut D 2000,2000]
+[charaEffectStop D bit_talk_sorcery_tik_01]
+
+
+[charaTalk off]
+
+[charaFace F 11]
+[charaFadeinFSL F 0.1 -320,0]
+
+[charaFace A 7]
+[charaFadeinFSR A 0.1 320,0]
+
+[effect bit_talk_sorcery_tik_03]
+[wt 0.6]
+
+[fowardEffect bit_talk_noble_light_r]
+[wt 0.5]
+
+[se adm20]
+[fowardEffectStop bit_talk_noble_light_r]
+[wt 4.5]
+
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaFace B 0]
+[charaFadein B 0.1 0,0]
+
+[effect bit_talk_sorcery_tik_03]
+[wt 0.6]
+
+[fowardEffect bit_talk_noble_light_r]
+[wt 0.5]
+
+[se adm20]
+[fowardEffectStop bit_talk_noble_light_r]
+[wt 4.5]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠太公望
+先刻と同じく、第二の対獣宝具です！[r]金色白面をモデルとした彼女には多少ですが効きます！
+[k]
+
+＠太公望
+決定打にはなりませんが、[r]最後の最後まで抗うための力です！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠伊吹童子
+はいどうも！[r]有り難く受け取るわ！
+[k]
+
+[charaFace B 2]
+
+＠伊吹童子
+からの、本気モード発動！[r][line 3]おろちも喚ぶわ！
+[k]
+
+[messageOff]
+[charaDepth B 6]
+[charaDepth P 7]
+[charaDepth R 8]
+
+[charaFace B 4]
+
+[se ad302]
+[fowardEffect bit_talk_charge_ppl]
+[wt 1.5]
+
+[seStop ad302 1.5]
+
+[se ad476]
+[charaFace Q 0]
+[charaFadein Q 0.7 1]
+[wt 0.3]
+
+[charaMove Q -30,15 2.5]
+[charaMoveScale Q 1.3 2.5]
+
+[charaMove B -30,15 2.5]
+[charaMoveScale B 1.3 2.5]
+[wt 0.3]
+[charaFadeout B 0.3]
+[wt 0.7]
+
+[fadeout white 1.0]
+[wait fade]
+
+[fowardEffectDestroy bit_talk_charge_ppl]
+[charaFadeout Q 0.1]
+[wt 1.5]
+
+[charaMoveScale P 1.3 0.1]
+[charaMoveScale R 1.3 0.1]
+
+[seStop ad476 1.0]
+
+[charaFace R 0]
+[charaFadein R 0.7 -30,15]
+[charaFadeout Q 0.7]
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[charaFace P 4]
+[charaFadein P 0.1 -30,15]
+
+[charaFadeout R 0.4]
+[wt 0.4]
+
+[charaFaceFade P 7 0.4]
+[wt 1.4]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaDepth O 6]
+[charaDepth C 8]
+[charaDepth K 9]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ハベトロットさん！[r]お願いします！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut O 0,0]
+[charaTalk O]
+[charaFace O 2]
+[se ad595]
+[charaSpecialEffect O appearance 1 1.0]
+[wait charaSpecialEffect O]
+[wt 0.5]
+
+＠ハベトロット
+オッケー、いよいよ本命だな！[r]ブラックバレル、限界火力まで維持するぞー！
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+
+＠ニキチッチ
+太公望！[r]最後の手というのは今の宝具でよかったか？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠太公望
+いや違います……[wt 0.7][charaFace D 2][r]というか、内緒話したじゃないですか！
+[k]
+
+＠太公望
+効果そのものは前回のままです！[r]そんなあなた、ぽんぽん変えられる訳ないでしょう！？
+[k]
+
+＠太公望
+それよりまずは、[r]アレの頭にのぼった血をなんとかしてください。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad919]
+[shake 0.05 3 3 2.0]
+[wt 2.5]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠太公望
+あのように……[r]狂うほどに荒ぶられては、僕の切り札も通じない！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠ニキチッチ
+そうだったか。[r]では最後の手とやら、期待するぞ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk P]
+[charaFace P 1]
+[charaFadein P 0.1 -30,15]
+
+＠P：伊吹童子
+そうそう！[r]期待しちゃうぞ！
+[k]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠フォウ
+フォウフォウ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+[charaMoveReturn K 0,10 0.3]
+
+＠四不相
+モッモ！
+[k]
+
+？1：期待するからね、太公望！
+？2：ワクワクですよ……！？
+？！
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ですね！　期待大です！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 16]
+[charaFadein O 0.1 1]
+
+＠ハベトロット
+なにこの流れ？[wt 0.7][charaFace O 1][r]ええっと、うん、期待してるぞー！
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠太公望
+アッハッハ。え、ええ、お任せください！
+[k]
+
+[charaTalk depthOff]
+[charaDepth D 5]
+[charaDepth E 3]
+
+[charaPut E 1]
+[charaFadeTime E 0.2 0.5]
+
+[charaFace D 4]
+
+＠太公望
+（これはこれでプレッシャーすごいなァ！）
+[k]
+
+[messageOff]
+[wt 1.2]
+
+[charaFace D 0]
+
+＠太公望
+（いや。いや）
+[k]
+
+[charaFace D 5]
+
+＠太公望
+（皆さん、分かってこうしてくれている。[r]　僕が、最後の大一番で気負わないように）
+[k]
+
+[charaFace D 1]
+
+＠太公望
+（なんとも、はや。[r]　恵まれたものですね太公望！）
+[k]
+
+＠太公望
+（過去には楊戩や武成王、十二仙たち！）
+[k]
+
+＠太公望
+（当世にはカルデアの皆さん、ニキチッチ！）
+[k]
+
+[charaFace D 5]
+
+＠太公望
+（期待には応えましょう。[r]　何、そうしてこその稀代の大軍師ですからね！）
+[k]
+
+[charaFadeout E 0.2]
+[wt 0.1]
+
+[charaFace D 0]
+
+＠太公望
+では皆さん[line 3]
+[k]
+
+[charaFace D 2]
+
+＠太公望
+まずは彼女を、[r]無理にでも大人しくさせてください！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠ニキチッチ
+つまり、殴れということだな！
+[k]
+
+＠ニキチッチ
+聞き分けのない子には、時にはメッも必要だ！[r]愛馬よ！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ade4]
+[wt 2.5]
+
+[seStop ade4 0.5]
+[cueSe SE_21 21_ade670]
+[seVolume 21_ade670 0 0.6]
+
+
+＠飛竜
+あいよ御主人！[r]ひゃあー熱い熱い、熱い上にすげえ化け物がいる！
+[k]
+
+
+＠飛竜
+こりゃあゴルィニシチェの野郎より強そうだ！[r]油断すりゃ負けますぜ、御主人よォ！
+[k]
+
+
+[charaTalk F]
+[charaFace F 20]
+[charaFadein F 0.1 1]
+
+＠ニキチッチ
+そうとも負ける！[r]アレは流石のオレも手に余る！
+[k]
+
+＠ニキチッチ
+だからこうして力を合わせるのだ！[r]たとえ単騎では及ばず、強敵に挫けようとも[line 3]
+[k]
+
+[charaFace F 22]
+
+＠ニキチッチ
+力を合わせた[#勇士:ボガトゥイリ]に不可能、なし！
+[k]
+
+[charaFace F 2]
+
+＠ニキチッチ
+とうっ！
+[k]
+
+[messageOff]
+[charaEffect F bit_talk_quickmove]
+[charaSpecialEffect F erasureReverse 1 0.3]
+[se ad73]
+[wt 1.0]
+
+
+＠飛竜
+振り落とされんでくれよ、御主人！
+[k]
+
+
+＠ニキチッチ
+ゆくぞ皆の者！[r]ここが、最後の戦いと心得よ！
+[k]
+
+？1：[line 3]マシュ！
+？！
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい、マスター！
+[k]
+
+[messageOff]
+[charaCrossFade A 8001400 7 0.4]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[wait charaCrossFade A]
+[wt 0.2]
+
+＠マシュ
+[#霊基外骨骼:オ ル テ ナ ウ ス]、戦闘起動。[r]自動調律機能を維持しつつ、出力限界まで上げます！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 2]
+[charaFadein O 0.1 1]
+
+＠ハベトロット
+[line 3]ブラックバレル砲身強化、完了！[r]思い切りやっちゃえ！
+[k]
+
+[messageOff]
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[se bac170]
+[wt 0.6]
+
+＠マシュ
+出力100％まで上昇！[r]ブラックバレル、火力支援モード！
+[k]
+
+＠マシュ
+戦闘準備完了。[r][line 3]行けます。マスター！
+[k]
+
+？1：対ビースト戦闘、開始する！
+？！
+
+＠マシュ
+了解！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[se ade106]
+[seVolume ad556 1.0 0.3]
+
+
+
+
+[charaScale J 1.3]
+[charaFadein J 0.5 -120,-270]
+[wt 1.0]
+
+[se ad919]
+
+
+[charaMoveScale J 2.0 0.6]
+[charaMove J -400,-500 0.6]
+[wt 0.2]
+[blur motion 0.2 4 10 0.5 0.6 0.05 100]
+[wt 0.4]
+
+
+
+
+[fadeout black 1.0]
+[seStop ad919 1.0]
+[seStop ade106 1.0]
+[seStop ad556 1.0]
+[bgmStop BGM_BATTLE_136 1.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

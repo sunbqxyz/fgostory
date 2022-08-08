@@ -1,0 +1,1088 @@
+
+＄91-70-34-01-1-1
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 7034001 1 莎乐美]
+[charaSet B 99502600 1 玛修]
+[charaSet C 3006001 1 弁庆]
+[charaSet D 7006001 1 坂田金时]
+[charaSet E 98104300 1 怨灵]
+[charaSet F 98006100 1 dummy特效1]
+[charaSet G 5030001 1 山鲁佐德]
+[imageSet H back10000 1]
+[charaScale H 1.05]
+[charaSet I 7034001 1 莎乐美]
+[charaFilter I silhouette 00000080]
+[charaSet T 98115000 1 特效用]
+
+[charaPut F 2000,2000]
+[charaEffect F bit_talk_10_LowLevel]
+
+[scene 107600]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[wt 0.2]
+
+[effect bit_talk_41_fs]
+[charaMoveScale C 1.1 0.1]
+[charaMove C 0,15 0.1]
+[se ad7]
+[wt 0.2]
+[charaFadeout C 0.1]
+[wt 0.1]
+[effectDestroy bit_talk_41_fs]
+[charaScale C 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.1]
+
+[se bac13]
+[effect bit_talk_x_slash02]
+[wt 0.1]
+[charaShake E 0.05 3 3 0.2]
+[wt 0.1]
+
+[se bac14]
+[effect bit_talk_x_slash01]
+[wt 0.1]
+[effect bit_talk_14]
+[charaShake E 0.05 3 3 0.2]
+[wt 0.3]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[wt 0.2]
+
+[effect bit_talk_41_fs]
+[charaMoveScale D 1.1 0.1]
+[charaMove D 0,15 0.1]
+[se bac1]
+[wt 0.2]
+[charaFadeout D 0.1]
+
+[se ad1010]
+[wt 0.3]
+[charaScale D 1.0]
+
+[effectDestroy bit_talk_41_fs]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[wt 0.1]
+[fowardEffect bit_talk_x_slash_gl_03]
+[wt 0.2]
+[charaShake E 0.05 3 3 0.7]
+[wt 0.8]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.4 -300,0]
+[charaMove D 20,0 0.4]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[wt 0.4]
+[charaMove D 0,0 0.2]
+[seStop ad671 0.5]
+[wt 0.5]
+
+＠坂田金时
+拜托啦，公主殿下！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad463]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[effect bit_talk_41_fs]
+
+[wt 1.5]
+
+[seStop ad463 0.5]
+[wt 0.4]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[effectDestroy bit_talk_41_fs]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠莎乐美
+啊啊[line 3]
+[k]
+
+＠莎乐美
+怎么会这样！
+[k]
+
+[charaFace A 3]
+
+＠莎乐美
+多么温柔的异乡战士们！[r]竟然把首级留给了我！
+[k]
+
+＠莎乐美
+我好高兴，我好高兴！
+[k]
+
+＠莎乐美
+由于过于高兴，我……
+[k]
+
+＠莎乐美
+要回应期待了哦！[wt 1.0][charaFace A 2][r]约翰！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.1]
+
+[effect bit_talk_lightning_01t]
+[se ad61]
+[seVolume ad61 0 0.5]
+[wt 1.6]
+[seStop ad61 0.5]
+[effectStop bit_talk_lightning_01t]
+
+[charaPut T 1]
+[charaScale T 2.0]
+
+[charaEffect T bit_talk_fangtrap]
+[wt 0.1]
+[se ad191]
+[charaShake E 0.05 3 3 0.4]
+[wt 1.0]
+
+[charaShake E 0.05 3 3 1.5]
+[cueSe SE_21 21_ade582]
+[wt 0.7]
+
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF00]
+[wt 0.2]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF00]
+[wt 0.2]
+
+[bgmStop BGM_EVENT_3 1.5]
+[charaSpecialEffect E enemyErasure 1 1.5]
+[se ad42]
+[wait charaSpecialEffect E]
+[wt 0.4]
+
+[charaPut F 1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠玛修
+魔力反应，消灭！[r]圣杯的碎片实体化[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut F 2000,2000]
+
+[effect bit_talk_20]
+[wt 0.6]
+[se bac35]
+[wt 1.4]
+[effectStop bit_talk_20]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠莎乐美
+哎呀，好美……[bgm BGM_EVENT_2 0.1]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠弁庆
+请注意，莎乐美阁下，还有金时阁下。[r]就算是碎片，那也是圣杯。
+[k]
+
+＠弁庆
+处理时一定要非常小心……[r]就像这样。
+[k]
+
+[messageOff]
+[se ad39]
+[effect bit_talk_20]
+[wt 2.0]
+
+[charaMoveReturn C 0,-5 0.4]
+[wt 0.4]
+
+[effectStop bit_talk_20]
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠坂田金时
+哎，真有你的。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠弁庆
+虽然不如玛修阁下的盾那样技艺精湛，[r]但贫僧的诵经看来也有点用处。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠玛修
+确认回收圣杯碎片。[r]作战完成！
+[k]
+
+＠玛修
+各位，辛苦了。[r]灵子转移很快就要开始了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut F 2000,2000]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠莎乐美
+呵呵呵呵呵呵呵呵。
+[k]
+
+[charaFace A 1]
+
+＠莎乐美
+还有玛修，引导辛苦了。[r]多亏了你，作战才能那么顺利，对吧，御主？
+[k]
+
+？1：嗯！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠玛修
+我很高兴能帮上忙！
+[k]
+
+？2：谢谢你，玛修。
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠玛修
+不，不用客气！[r]只要能帮上忙……
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut F 2000,2000]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠莎乐美
+呵呵。呵呵呵呵呵呵呵呵呵呵呵。
+[k]
+
+＠莎乐美
+御主和玛修的感情真的很好呢。[r]真棒。
+[k]
+
+＠莎乐美
+亮晶晶，亮晶晶。[r]就像夜空中的繁星一样闪烁，啊啊[line 3]
+[k]
+
+[charaFace A 3]
+
+＠莎乐美
+闪耀得令我快要按捺不住了。[r]呵呵。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠弁庆
+[line 3]莎乐美阁下。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠莎乐美
+什么事？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠弁庆
+没什么。
+[k]
+
+[charaTalk depthOff]
+[charaDepth C 5]
+[charaDepth H 1]
+
+[charaFace C 5]
+[charaFadeTime H 0.2 0.5]
+
+＠弁庆
+（鬼女的……气息。）
+[k]
+
+＠弁庆
+（因为灵基是狂战士吗？[r]　还是来源于她自身的存在呢？）
+[k]
+
+＠弁庆
+（金时阁下似乎也发现了。[r]　原来如此，难怪山鲁佐德阁下会那么担心。）
+[k]
+
+＠弁庆
+（只不过，她依然服从御主阁下的指示，[r]　配合无可挑剔，也可以正常沟通。）
+[k]
+
+[charaFace C 0]
+
+＠弁庆
+（唔。）
+[k]
+
+＠弁庆
+（这是何等罪孽深重啊……）
+[k]
+
+[charaFadeout H 0.2]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠莎乐美
+那就这样，两位，回头见。[r]如果今后还有机会进同一支队伍[line 3]
+[k]
+
+[charaFace A 1]
+
+＠莎乐美
+让我们一起全力以赴吧！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠坂田金时
+好！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠莎乐美
+也要请玛修多关照哦！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠玛修
+好的！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut F 2000,2000]
+[charaEffectStop F bit_talk_10_LowLevel]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 1.5]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_2 1.5]
+[wait fade]
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+[scene 105800]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[scene 106000]
+
+[label lblConf1]
+
+[charaFadeout A 0.1]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠山鲁佐德
+[line 3][#她:莎乐美]的情况如何？
+[k]
+
+？1：应该已经和迦勒底的大家熟络起来了。
+？2：哪怕在战斗中，也没有失控的迹象。
+？！
+
+＠山鲁佐德
+那就再好不过了。
+[k]
+
+？1：不过……
+
+？！
+
+[charaFace G 4]
+
+＠山鲁佐德
+这……
+[k]
+
+＠山鲁佐德
+是不是内心深处还是觉得有什么不太对劲呢。
+[k]
+
+？1：（点头。）
+？！
+
+[charaFace G 6]
+
+＠山鲁佐德
+……[r]……
+[k]
+
+[charaFace G 0]
+
+＠山鲁佐德
+……嗯。
+[k]
+
+＠山鲁佐德
+她已经适应了迦勒底，[r]无论在谁的面前，都面带笑容。
+[k]
+
+＠山鲁佐德
+哪怕在战斗过程中，也这样。[r]边驱使着水晶骷髅，边常常露出微笑。
+[k]
+
+
+＠山鲁佐德
+同时，夜晚[line 3]
+[k]
+
+[charaFace G 1]
+
+＠山鲁佐德
+在与我谈话时，[r]也经常露出笑容。
+[k]
+
+＠山鲁佐德
+那张平静的美丽脸庞仿佛在说，[r]不用担心、不要紧。
+[k]
+
+＠山鲁佐德
+我相信这不是什么谎言。[r]但是……
+[k]
+
+[charaFace G 4]
+
+＠山鲁佐德
+我……
+[k]
+
+＠山鲁佐德
+不知为何，总是会感受到。[r]来自与魔力不同的某种气息。
+[k]
+
+＠山鲁佐德
+仿佛她[line 3]
+[k]
+
+＠山鲁佐德
+自从被召唤以来，就一直……一直……[r]一直……
+[k]
+
+[messageOff]
+[charaFace G 6]
+[wt 1.0]
+
+＠山鲁佐德
+[#在忍受着什么]。
+[k]
+
+[charaFace G 0]
+
+＠山鲁佐德
+是忍受着内部想要向外部溢出的存在，[r]还是忍受着外部企图让内外崩溃的存在，
+[k]
+
+＠山鲁佐德
+这还不得而知。[r]我甚至不知道，她究竟在忍受着什么。
+[k]
+
+＠山鲁佐德
+只不过……
+[k]
+
+＠山鲁佐德
+那笑容肯定就是[#她在忍耐的证明]。[r]唯独这点，我能看出来。
+[k]
+
+？1：……在忍受……
+
+？！
+
+＠山鲁佐德
+是的。
+[k]
+
+[charaFace G 4]
+
+＠山鲁佐德
+如果有一天，粉碎了、崩溃了，[r]所有一切都溢出来的话……
+[k]
+
+＠山鲁佐德
+届时……[r]她……究竟会怎么样呢……
+[k]
+
+＠山鲁佐德
+我感到非常不安，御主。
+[k]
+
+？1：我也一样，山鲁佐德。
+
+[charaFace G 0]
+
+＠山鲁佐德
+…………嗯。
+[k]
+
+？2：谢谢你，我会找她谈谈。
+
+[charaFace G 6]
+
+＠山鲁佐德
+……[r]……
+[k]
+
+[charaFace G 0]
+
+＠山鲁佐德
+……嗯。
+[k]
+
+＠山鲁佐德
+……请千万小心。
+[k]
+
+？！
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_11 1.5]
+[wait fade]
+
+
+[scene 21501]
+
+[charaFadeout G 0.1]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.5]
+
+[se ade422]
+[seVolume ade422 0 0.1]
+[seVolume ade422 1.0 1.0]
+[wt 1.5]
+
+[charaTalk off]
+
+[charaDepth I 2]
+[charaDepth A 1]
+
+[charaFace I 0]
+[charaFadein I 0.4 1]
+
+[wt 0.8]
+[seStop ade422 0.2]
+[wt 0.4]
+
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[charaFadeout I 0.7]
+[wt 1.0]
+
+[charaTalk on]
+
+[bgm BGM_EVENT_1 0.1]
+
+＠莎乐美
+…………哎呀，御主。
+[k]
+
+＠莎乐美
+好棒呀。[r]这里非常广阔而安静呢。是什么城堡的遗迹吗。
+[k]
+
+[charaFace A 4]
+
+＠莎乐美
+但是……
+[k]
+
+＠莎乐美
+如果想和我谈话，[r]其实并不需要使用模拟装置吧？
+[k]
+
+＠莎乐美
+可以在食堂大家愉快地交谈，[r]也可以把我叫去您的房间。
+[k]
+
+＠莎乐美
+不是吗？
+[k]
+
+[charaFace A 0]
+
+＠莎乐美
+不过，嗯，[r]今晚肯定并不是谈这类事吧。
+[k]
+
+[messageOff]
+[charaFace A 1]
+[wt 1.0]
+
+＠莎乐美
+话说，御主。[r]您想对我说什么？
+[k]
+
+[messageOff]
+[wt 0.1]
+
+？1：莎乐美。
+？！
+
+？1：你是不是在勉强自己？
+？！
+
+[charaFace A 4]
+
+＠莎乐美
+勉强？
+[k]
+
+＠莎乐美
+这种事[line 3]
+[k]
+
+[messageOff]
+[charaFace A 1]
+[wt 0.7]
+
+＠莎乐美
+呵呵，这种事还用问吗，御主！
+[k]
+
+[charaFace A 6]
+
+＠莎乐美
+[#当然有啦]。
+[k]
+
+？1：……！
+？！
+
+＠莎乐美
+每天、每天。[r]早上中午晚上一直。
+[k]
+
+[charaFace A 2]
+
+＠莎乐美
+一直、一直、一直、一直、一直～！
+[k]
+
+＠莎乐美
+我一[line 10]直在忍受哦。[r]这不是理所当然的嘛，难道不是吗？
+[k]
+
+＠莎乐美
+如果遇到约翰那样亮晶晶闪闪发光的人，[r]我感觉自己肯定会喜欢上。
+[k]
+
+[charaFace A 4]
+
+＠莎乐美
+一旦喜欢上了……
+[k]
+
+＠莎乐美
+我就会想要得到。得到那个人的首级。
+[k]
+
+＠莎乐美
+纯洁之人，[r]高贵之人。
+[k]
+
+＠莎乐美
+神圣之人[line 3]
+[k]
+
+＠莎乐美
+当遇到那种类型的人，[r]我，无论如何，都会这样。
+[k]
+
+＠莎乐美
+会想起约翰[line 3]
+[k]
+
+[messageOff]
+[wt 0.8]
+
+＠莎乐美
+……[r]……
+[k]
+
+[charaFace A 0]
+
+＠莎乐美
+但是，但是哦。
+[k]
+
+＠莎乐美
+[#我在忍耐]。[r]一直、一直一直、一直～，在忍耐。
+[k]
+
+[charaFace A 1]
+
+＠莎乐美
+因为[line 3]这是您的愿望。
+[k]
+
+？1：你是为了我……
+？！
+
+[charaFace A 7]
+
+＠莎乐美
+嗯，没错。
+[k]
+
+＠莎乐美
+您希望我能在迦勒安分一点吧？
+[k]
+
+＠莎乐美
+您希望我在战斗时不要给大家添麻烦吧？
+[k]
+
+＠莎乐美
+您希望我不要对那些神圣的存在肆意妄为吧？
+[k]
+
+＠莎乐美
+您也希望我能与玛修融相处。
+[k]
+
+＠莎乐美
+对，是这样吧，御主。
+[k]
+
+[charaFace A 1]
+
+＠莎乐美
+因为您希望我这样，[r]我才会回应您的愿望。
+[k]
+
+？1：………………
+？！
+
+[charaFace A 0]
+
+＠莎乐美
+您怎么了？
+[k]
+
+？1：我希望，你不要过于勉强自己。
+？！
+
+[charaFace A 4]
+
+＠莎乐美
+这是不可能的啊。
+[k]
+
+＠莎乐美
+因为，[%1]。[r]您是御主啊？
+[k]
+
+＠莎乐美
+因为您一直在勉强自己，[r]因为您一直在迎着困难前进。
+[k]
+
+＠莎乐美
+所以与您联系在一起的[#仆从:从者]，[r]也会像您那样勉强自己。
+[k]
+
+＠莎乐美
+难道不是吗？
+[k]
+
+[charaFace A 7]
+
+＠莎乐美
+……呵呵。
+[k]
+
+＠莎乐美
+不用担心，温柔的人儿，[r]不同于约翰的人儿。
+[k]
+
+＠莎乐美
+呵呵呵。不用露出那种表情啦，没关系。
+[k]
+
+＠莎乐美
+因为我不行的时候，[r]也是您不行的时候。
+[k]
+
+＠莎乐美
+所以，不需要担心。
+[k]
+
+？1：这……
+
+[charaFace A 1]
+
+＠莎乐美
+呵呵。
+[k]
+
+？2：我真是责任重大呢。
+
+[charaFace A 1]
+
+＠莎乐美
+嗯，当然啦。
+[k]
+
+？！
+
+[charaFace A 7]
+
+＠莎乐美
+不用在意什么我，[r]您只需要关心您自己就行了。
+[k]
+
+[charaFace A 6]
+
+＠莎乐美
+话说，御主。
+[k]
+
+＠莎乐美
+只要您还是您，[r]就肯定……
+[k]
+
+＠莎乐美
+虽然您不是约翰……
+[k]
+
+[messageOff]
+[charaFace A 4]
+[wt 1.2]
+
+[charaFace A 0]
+
+＠莎乐美
+但是，但是哦？
+[k]
+
+＠莎乐美
+不断行走在坎坷道路上的您，[r]不断战斗下去的您。
+[k]
+
+＠莎乐美
+如果今后的您，[r]超越了您自身……
+[k]
+
+＠莎乐美
+终有一天，成为了约翰那样的人[line 3]
+[k]
+
+[messageOff]
+[charaMoveScale A 1.1 0.5]
+[charaMove A 0,15 0.5]
+[se ade422]
+[wt 0.5]
+[seStop ade422 0.2]
+[wt 0.4]
+
+[charaFace A 1]
+
+＠莎乐美
+我就要收下您的首级了。
+[k]
+
+？1：那肯定不要紧。
+
+[charaFace A 6]
+
+＠莎乐美
+呵呵呵呵呵，真的吗？
+[k]
+
+？2：因为我肯定成不了圣人。
+
+[charaFace A 0]
+
+＠莎乐美
+嗯，嗯，肯定没错。
+[k]
+
+？！
+
+[charaFace A 7]
+
+＠莎乐美
+但愿如此[line 3]
+[k]
+
+＠莎乐美
+我真的，由衷这样想，[r]御主。
+[k]
+
+＠莎乐美
+我在以我的方式努力……
+[k]
+
+＠莎乐美
+所以[line 3]也请您保持原本的您，努力下去哦？
+[k]
+
+[messageOff]
+[charaFace A 1]
+[wt 2.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

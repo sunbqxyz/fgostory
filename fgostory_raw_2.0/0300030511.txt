@@ -1,0 +1,825 @@
+
+＄03-00-03-05-1-1
+
+[soundStopAll]
+
+[charaSet A 8001410 1 玛修]
+[charaSet B 9005001 1 福尔摩斯]
+[charaSet C 1098124510 1 达·芬奇]
+[charaSet D 98002000 1 芙芙]
+[charaSet E 1098123200 1 戈尔德鲁夫]
+[charaSet F 3031001 1 莲偶]
+[charaSet G 1098158900 1 农妇A]
+[charaSet H 98115000 1 特效用]
+
+
+
+[bgm BGM_EVENT_77 0.1]
+
+[scene 51603]
+
+[fadein black 1.0]
+[se ad8]
+[wait fade]
+[wt 0.8]
+
+[charaTalk E]
+[charaFace E 18]
+[charaFadein E 0.1 1]
+＠戈尔德鲁夫
+唔，嗯。[r]外面好像已经发生战斗了……？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠玛修
+没错，与当地的人发生了冲突……[r]暂时算是让对方撤退了……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+毕竟玛修和莲偶的战斗方式很有绅士风度。[r]他们也理解了我们并没有杀意和敌意。
+[k]
+
+＠福尔摩斯
+现在都在远处观察情况。[r]看来对方也身负某种责任呢。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠莲偶
+嗯。似乎也没有别处派来的增援。[r]眼下的安全得到了保障。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 18]
+[charaFadein E 0.1 1]
+＠戈尔德鲁夫
+唔，嗯。也就是说，[r]没有刺激到对方吧。
+[k]
+
+＠戈尔德鲁夫
+看来他们起码能冷静地给出，[r]『误闯进来的旅客正进退两难』的推测。
+[k]
+
+[charaFace E 12]
+
+＠戈尔德鲁夫
+但是……从者的问题怎么样？[r]既然已经确保了灵脉，应该就能召唤从者了吧？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠玛修
+达·芬奇亲正在车外准备召唤阵，[r]但似乎遇到了什么问题……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.3]
+＠[51ffff]达·芬奇[-]
+[51ffff]就是啦～！[-][r][51ffff]稍等一下哦，我现在正在做各种调整～！[-]
+[k]
+
+[charaFace C 10]
+＠[51ffff]达·芬奇[-]
+[51ffff]说是问题，其实只是预料内的问题，[-][r][51ffff]这你们大可放心～！[-]
+[k]
+
+[wt 0.1]
+
+＠G：穆尼尔
+达·芬奇，把这奇怪的机器[r]和玛修的盾连接起来真的没问题吗！？
+[k]
+
+＠G：穆尼尔
+这玩意看起来超可疑。[r]充斥着非地球产的味道啊！
+[k]
+
+[charaTalk C]
+[charaFace C 0]
+＠[51ffff]达·芬奇[-]
+[51ffff]啊～，这个啊。[-][r][51ffff]是从希翁那借来的增幅器啦。[-]
+[k]
+
+[charaFace C 26]
+＠[51ffff]达·芬奇[-]
+[51ffff]据说靠这一个就能构筑三骑分量的灵基！[-][r][51ffff]好像是叫做什么[#收集体:Cell]吧？[-]
+[k]
+
+[charaFace C 0]
+＠[51ffff]达·芬奇[-]
+[51ffff]尽管使用一次后就会烧尽，但毕竟这次[-][r][51ffff]攸关两个人的性命。就不再藏着掖着了。[-]
+[k]
+
+＠[51ffff]达·芬奇[-]
+[51ffff]好，接下来只要维持着基础状态待机就行了。[-]
+[k]
+
+＠[51ffff]达·芬奇[-]
+[51ffff]只要从者那方有所响应，[-][r][51ffff]就能转移到激励状态开始召唤了。[-]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_77 1.0 0.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+
+[charaSet C 1098124500 1 达·芬奇]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[se ad8]
+[wait fade]
+
+[wt 1.6]
+
+[se ad59]
+[wt 0.1]
+[seStop ad59 0.2]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+＠达·芬奇
+综上所述，之后就是时间的问题了。[bgm BGM_EVENT_77 1.0 1.0][r]如果存在与[%1]……
+[k]
+
+＠达·芬奇
+有缘的从者，[r]就算在这异闻带中，应该也会响应召唤。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠戈尔德鲁夫
+唔，是这样啊。干得好，技术顾问。[r]那么[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_70 0.1]
+
+[charaFace E 5]
+＠戈尔德鲁夫
+去召唤个能一招就能将那群野蛮人[r]洗脑并服从我们的卓越Caster吧！
+[k]
+
+＠戈尔德鲁夫
+这次事态紧急，且时间紧迫！[r]我们必须要火速推进才行！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaMoveReturn D 0,30 0.4]
+＠芙芙
+芙，芙呜……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+[&Mr.:Miss][%1]，[r]可以按这个方针进行吧？
+[k]
+
+？1：不，洗脑未免有点……
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠玛修
+嗯。难得可以用翻译机进行沟通。[r]我建议和平友好地推进事态。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：冷静点啦，新所长。
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠戈尔德鲁夫
+哎哎，谁冷静得下来啊！[r]你也不能置身事外吧！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠福尔摩斯
+无论如何，召唤是需要时间的。[r]现在只能靠交涉来撑过去了。
+[k]
+
+[charaFace B 6]
+＠福尔摩斯
+正所谓打草会惊蛇哦，[r]Mr.戈尔德鲁夫。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠戈尔德鲁夫
+唔……那么，[r]究竟谁能负责你那所谓的友好的交涉啊！？
+[k]
+
+＠戈尔德鲁夫
+[%1]不是已经失败了吗！？
+[k]
+
+＠戈尔德鲁夫
+在我们之中，上哪儿去找一位能让那群野蛮人[r]乖乖闭嘴的拥有天使般笑容的天使[line 3]
+[k]
+
+[messageOff]
+[charaFace E 7]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_70 2.0]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+[charaTalk off]
+[charaDepth B 5]
+[charaDepth E 6]
+[charaDepth A 7]
+[charaDepth F 4]
+
+[charaFace A 6]
+[charaFace B 6]
+[charaFace F 0]
+[charaFace E 7]
+[charaFadein A 0.1 350,0]
+[charaFadein B 0.1 -130,0]
+[charaFadein F 0.1 130,0]
+[charaFadein E 0.1 -350,0]
+[wt 2.5]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 23]
+[charaFadein C 0.1 1]
+[wt 1.0]
+
+＠达·芬奇
+[FFFFFF]？[-]
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace C 10]
+[wt 1.0]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaSet E 1098158800 1 农夫A]
+[charaSet F 1098158810 1 农夫B]
+[charaSet H 1098158910 1 农妇B]
+
+[scene 69204]
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠达·芬奇
+对，我们是旅行者，[bgm BGM_EVENT_94 0.1][r]现在迷路了，不知道该怎么办。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFace F 1]
+[charaFadein E 0.1 2]
+[charaFadein F 0.1 0]
+＠农夫A
+迷路啊～，旅行啊～，嗯，还真辛苦你们了呀。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠达·芬奇
+所以我们是不小心才毁了这片农田，决不是怀着恶意。[r]能请各位原谅我们吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace E 1]
+[charaFace F 1]
+[charaFadein E 0.1 2]
+[charaFadein F 0.1 0]
+
+＠农夫B
+嗯，反正农田只要重新耕种就行了嘛。
+[k]
+
+＠农夫A
+比起那种事，我啊，只要能和这么[r]可爱的小姑娘说话，该怎么形容呢，嗯……
+[k]
+
+＠农夫A
+仿佛就能鼓足干劲，[r]努力地重新耕种农田啦！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠芙芙
+芙呜……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠玛修
+达·芬奇亲真可怕……[r]不过她并没有撒谎……
+[k]
+
+？1：天使般的……恶魔……
+？2：但是……我能懂……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaSet F 3031001 1 莲偶]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFace H 3]
+[charaFadein G 0.1 0]
+[charaFadein H 0.1 2]
+
+＠农妇A
+真是的，那群男人只知道色眯眯地傻笑！[r]居然如此轻易地被那群外乡人的花言巧语给骗了！
+[k]
+
+[charaFace H 2]
+
+＠农妇B
+就是啦，那些家伙绝对很可疑！[r]连亭卒大人都被打得鼻青脸肿了啊！
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[se ade116]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+唔[line 3]！[r]（确信现在正是自己大显身手的机会的眼神。）
+[k]
+
+[messageOff]
+[se ad7]
+[charaMove B -150,0 0.3]
+[charaFadeout B 0.2]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFace B 8]
+[charaFadein B 0.1 30,0]
+[charaMove B 1 0.5]
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.5]
+
+[charaTalk B]
+＠福尔摩斯
+恕我冒昧，夫人。[r]我为破坏农田一事深表歉意。
+[k]
+
+[charaFace B 9]
+
+＠福尔摩斯
+但是，还请各位务必理解。[r]我们是真心希望通过对话来解决问题的。
+[k]
+
+＠福尔摩斯
+然而却因为迷路而不知所措。
+[k]
+
+[charaFace B 4]
+
+＠福尔摩斯
+能否烦请几位告诉我，这里是片什么样的土地呢？[r]各位是我们唯一的希望了。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFace H 1]
+[charaFadein G 0.1 0]
+[charaFadein H 0.1 2]
+
+＠农妇A
+啊，哎呀～是这样啊～，呵呵呵，这个嘛，[r]既然被这么诚恳地拜托，我们也……对吧？
+[k]
+
+＠农妇B
+嗯嗯，是啊。[r]见到这位俊俏的公子露出如此烦恼的表情，
+[k]
+
+＠农妇B
+那我们稍微听您解释几句也未尝不可嘛……
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaMoveReturn D 0,20 0.4]
+＠芙芙
+芙呜……
+[k]
+
+？1：总之福尔摩斯就是颜值高啦。
+？2：尽管那身打扮明明可疑到不行……
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaSet G 1098123000 1 穆尼尔]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠莲偶
+[#同意:真是的]。[r]结果刚才战斗的我们，到底算什么呢，玛修。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠玛修
+呃，那个……[r]总之只要能息事宁人就好……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠穆尼尔
+毕竟大家都只是受到了惊吓，实际并没有恶意。[r]看来本质上都是些性情温厚的人呢。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_94 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaSet A 98001000 1 玛修]
+[charaSet E 1098123200 1 戈尔德鲁夫]
+
+[scene 51603]
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+话说达·芬奇。[r]刚才灵基肖像发生的问题是什么？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 36]
+[charaFadein C 0.1 1]
+＠达·芬奇
+不愧是名侦探。[r]居然注意到了这种不可以无视的疑点！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+＠戈尔德鲁夫
+唔，嗯？[r]从者召唤的问题不是已经解决了吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠达·芬奇
+问题是消除了，但算不上解决。[r]因为原因仍然成谜嘛～。
+[k]
+
+[charaFace C 24]
+
+＠达·芬奇
+说实话，这个异闻带的状况与俄罗斯和北欧都不同。
+[k]
+
+[charaFace C 25]
+
+＠达·芬奇
+我尝试着利用这片土地的灵脉，[r]与该异闻带的英灵座相连……
+[k]
+
+[messageOff]
+[charaFace C 14]
+[bgmStop BGM_EVENT_77 0.8]
+[wt 1.0]
+
+[charaFace C 24]
+
+＠达·芬奇
+[#但是毫无反应]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+……你说什么？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 25]
+[charaFadein C 0.1 1]
+＠达·芬奇
+仪器本身并没有什么异常。那就是说，[r]问题应该就出在『这个世界』的构造吧。
+[k]
+
+＠达·芬奇
+不过嘛，源自异闻带的英灵[r]主动协助我们的可能性本来就很低，
+[k]
+
+[charaFace C 5]
+
+＠达·芬奇
+打从一开始我就没抱什么期待。[r]但情况还是很奇怪吧，福尔摩斯？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+…………嗯。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠达·芬奇
+所以啦，我立刻放弃了这种召唤，[r]切换为从迦勒底的灵基肖像进行召唤了。
+[k]
+
+＠达·芬奇
+目前正处于等待这边愿意[r]响应我们召唤的英灵的状态。
+[k]
+
+[charaFace C 7]
+
+＠达·芬奇
+比喻成钓鱼的话，就是已经放下钓线的状态吧。[r]所以说，还得再等一会呢。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+前辈，这是怎么一回事啊……？
+[k]
+
+？1：我完全没搞懂。
+？2：意思是这里一个人也没有吗？
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠达·芬奇
+嗯，虽说我靠天才的灵光一现找到了一条活路，[r]但若问我理由和原因，说实话我也不知道该怎么回答。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaMoveReturn D 0,20 0.4]
+＠芙芙
+芙，芙呜……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+＠达·芬奇
+与英灵座间的路径，说白了就是种缘分。[r]我们与这个异闻带本土的灵脉间没有缘分。
+[k]
+
+＠达·芬奇
+说不定，我们与这个异闻带之间[r]对『英灵』的定义并不一致呢。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠莲偶
+英灵的……定义？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠戈尔德鲁夫
+你就不能说明得更简单易懂些吗！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+…相当有意思的事象。[r]倘若真是如此，或许这异闻带的真相就近在咫尺了哦。
+[k]
+
+[charaFace B 0]
+＠福尔摩斯
+但是，现在这不过是臆测罢了。[r]看来有必要多收集一些用来判断的情报才行。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 26]
+[charaFadein C 0.1 1]
+＠达·芬奇
+哎呀。[r]听你这口气似乎已经明白大致情况了吧，福尔摩斯？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+不过是假设罢了。侦探必须得在凑齐了确凿的证据后，[r]才能陈述自己的推理啊。
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

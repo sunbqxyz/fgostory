@@ -1,0 +1,600 @@
+
+
+＄03-00-02-17-3-0
+
+
+[soundStopAll]
+
+[charaSet A 8001410 1 玛修]
+[charaSet B 3012001 1 布伦希尔德]
+[charaSet C 1033002 1 齐格鲁德]
+[charaSet D 3033000 1 奥特琳德]
+[charaSet E 2031000 1 拿破仑]
+[charaSet F 1098123810 1 奥菲莉娅]
+[charaSet G 1098123200 1 戈尔德鲁夫]
+
+[charaSet H 98115000 1 特效用]
+
+[scene 62000]
+
+[charaPut H 1]
+[charaEffect H bit_talk_06 0,-60]
+[charaEffect H bit_talk_sparks]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad429]
+[seVolume ad429 0 0.3]
+
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.4 1]
+[wt 0.5]
+
+＠布伦希尔德
+……亲爱的。时间似乎快到了。[bgm BGM_EVENT_78 0.1]
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.4 1]
+[wt 0.5]
+
+＠齐格鲁德
+嗯。魔力已经耗尽。[r]到此为止了吗[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠玛修
+两位……[r]被火焰……
+[k]
+
+？1：（一言不发。）
+？2：（注视他们到最后一刻。）
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth C 10]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFace B 0]
+[charaFadein C 0.1 0]
+[charaFadein B 0.1 2]
+
+＠齐格鲁德
+在攻击时触碰到了苏鲁特深部的中枢。[r]会被烧尽也是理所当然的。
+[k]
+
+[charaFace C 1]
+
+＠齐格鲁德
+你们不必为此感到愧疚。[r]抱歉把你拖下水了呢，吾爱。布伦希尔德。
+[k]
+
+[charaFace B 1]
+
+＠布伦希尔德
+不。[r]我只是完成了我的职责而已，齐格鲁德。
+[k]
+
+＠布伦希尔德
+我感到很高兴。[r]竟能像这样手持长枪与你并肩作战，
+[k]
+
+＠布伦希尔德
+我从未曾想象过这种事。[r]所以，我很满足。
+[k]
+
+[charaFace B 7]
+
+＠布伦希尔德
+就像在做梦。[r]我……实现了从不敢奢求的梦想。
+[k]
+
+＠齐格鲁德
+如果是你的枪，[r]在下随时有承受的准备。
+[k]
+
+＠齐格鲁德
+下次在别处相遇时，[r]毫不犹豫地杀了在下便是。
+[k]
+
+[charaFace C 8]
+
+＠齐格鲁德
+倘若这就是你的爱的证明[line 3][r]那在下定会存活下来，并向你证明在下的爱。
+[k]
+
+[messageOff]
+[charaTalk B]
+[charaFace B 6]
+[wt 1.0]
+[charaFace B 7]
+
+＠布伦希尔德
+……嗯。
+[k]
+
+[messageOff]
+[wt 0.8]
+[charaFace C 0]
+[charaFace B 0]
+[wt 0.4]
+
+＠布伦希尔德
+[%1]、玛修小姐。
+[k]
+
+[charaFace B 1]
+
+＠布伦希尔德
+看来就要在此道别了。[r]感谢你们让我感受了一次美好的旅程。
+[k]
+
+＠布伦希尔德
+如果以后能在别处重逢……
+[k]
+
+＠布伦希尔德
+我肯定，会再次……[r]助您一臂之力……
+[k]
+[messageOff]
+
+
+[se ad528]
+[charaSpecialEffect B flashErasure 1 2.0]
+[wait charaSpecialEffect B]
+
+[wt 1.0]
+
+
+＠齐格鲁德
+下次再会时[line 3][r]对。但愿从一开始，就能为您效力。
+[k]
+
+？1：谢谢你们。
+？2：我们一定能再见的，两位。
+
+？！
+
+[messageOff]
+[charaFace C 8]
+[wt 1.0]
+[se ad528]
+[charaSpecialEffect C flashErasure 1 2.0]
+[wait charaSpecialEffect C]
+
+[seStop ad429 1.0]
+
+[charaEffectStop H bit_talk_sparks]
+[charaEffectStop H bit_talk_06]
+
+[wt 1.5]
+
+
+[fadeout black 1.0]
+[wait fade]
+
+
+[scene 61602]
+[wt 1.0]
+
+[wipeFilter cinema 0.5 0]
+
+[fadein black 1.0]
+[se ad518]
+[seVolume ad518 0 0.3]
+[wait fade]
+
+[wt 1.5]
+[seStop ad518 1.0]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 0,-50]
+
+＠奥特琳德
+姐姐大人[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_78 2.0]
+[wait fade]
+
+[wipeOff]
+
+[charaFadeout D 0.1]
+[wt 1.5]
+
+[scene 51600]
+
+[charaSet A 98001000 1 玛修]
+
+[fadein black 1.0]
+[se ad8]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+玛修·基列莱特返回！
+[k]
+
+＠玛修
+请问，那个……[r]奥菲莉娅小姐……在哪儿……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠戈尔德鲁夫
+她在医务室。[r]现在技术顾问和[#异闻带:Lostbelt]的女王正在进行治疗[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+感谢告知！
+[k]
+
+[messageOff]
+[se ad59]
+[charaMove A -100,0 0.4]
+[charaShake A 0.1 0 3 0.4]
+[charaFadeout A 0.4]
+[wt 0.6]
+[seStop ad59]
+[se ad8]
+[wt 1.0]
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+
+
+
+[wt 1.0]
+[scene 10000]
+
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+
+＠斯卡哈·斯卡蒂
+[line 3][#大令咒:Sirius Light]。
+[k]
+
+＠斯卡哈·斯卡蒂
+[#隐匿者:Crypter]被赋予的最强大的力量、王牌。[r]解放所需付出的代价是……
+[k]
+
+＠斯卡哈·斯卡蒂
+术者的生命。
+[k]
+
+＠斯卡哈·斯卡蒂
+而且那是……[r]无论用什么手段都无法代替的。
+[k]
+
+＠斯卡哈·斯卡蒂
+哪怕灌下大量的治疗灵药，[r]就算使用有优异恢复技能的礼装，也于事无补。
+[k]
+
+＠斯卡哈·斯卡蒂
+就算用原初之卢恩也无法挽回。[r]倘若用布伦希尔德破例让我们见识过的最大激发，
+[k]
+
+＠斯卡哈·斯卡蒂
+或许还能稍微延长一点寿命。[r]但最多也不过几分钟罢了。
+[k]
+
+＠斯卡哈·斯卡蒂
+也就是说[line 3]
+[k]
+[messageOff]
+[fadeout black 0.1]
+[wait fade]
+
+[wt 1.2]
+[scene 62700]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_75 0.1]
+
+＠奥菲莉娅
+玛修……[r]玛修？
+[k]
+
+＠玛修
+奥菲莉娅小姐，我在这里。[r]我[line 3]
+[k]
+
+＠玛修
+我们成功破坏苏鲁特了。[r]都是多亏了……多亏了……
+[k]
+
+＠玛修
+您的……
+[k]
+
+＠奥菲莉娅
+玛修，好厉害呀。[r]没想到你真的打倒了那家伙。
+[k]
+
+＠奥菲莉娅
+我，已经没资格责备卡多克了。[r]而阻止你们这种事，肯定……
+[k]
+
+＠奥菲莉娅
+从一开始就是……
+[k]
+
+＠玛修
+……[r]……
+[k]
+
+＠奥菲莉娅
+…如果可能的话，我也想……[r]为你的旅途，加油打气啊……
+[k]
+
+＠奥菲莉娅
+但是，我做不到。[r]对不起，玛修。
+[k]
+
+＠奥菲莉娅
+我不能背叛基尔什塔利亚大人。[r]我不想，背叛他。
+[k]
+
+＠玛修
+不[line 3]
+[k]
+
+＠奥菲莉娅
+话说，玛修。你知道吗？[r]我……
+[k]
+
+＠奥菲莉娅
+虽说或许到不了[r]像[#她:布伦希尔德]思念[#他:齐格鲁德]的那种程度……
+[k]
+
+＠奥菲莉娅
+我啊，对基尔什塔利亚大人……
+[k]
+
+＠玛修
+……嗯。
+[k]
+
+＠玛修
+尽管我并不知道详细的构造，[r]但您一直注视着他，那是……
+[k]
+
+＠玛修
+我感到[line 3]那是我曾在许多书籍和情报中看到过的，[r]所谓的恋爱般的感情。
+[k]
+
+[messageOff]
+[scene 62701 0.5]
+[wt 2.0]
+[scene 62702 0.5]
+[wt 1.0]
+
+＠奥菲莉娅
+……是吗？
+[k]
+
+＠奥菲莉娅
+奇怪了，我并没有那种想法……[r]我的，这份感情是……
+[k]
+
+＠奥菲莉娅
+我，从骨子里就是个魔术师……[r]恋爱什么的……
+[k]
+
+＠玛修
+那魔术师也是会恋爱的吧。[r]而且，这绝对，不是什么错误。
+[k]
+
+＠玛修
+我是，这么认为的。
+[k]
+
+＠奥菲莉娅
+是吗……
+[k]
+
+＠奥菲莉娅
+嗯。或许，就是这样。[r]玛修，远比我……看得清楚呢……
+[k]
+
+＠奥菲莉娅
+……你果然，成长得非常漂亮啊。[r]……对此，我真的非常高兴。我很高兴哦，玛修。
+[k]
+
+＠奥菲莉娅
+在那个被冰雪所封闭的迦勒底里，[r]总是眺望着窗外的，另一个[#我]。
+[k]
+
+＠奥菲莉娅
+尽管被拿来和每天都胆怯度日的我[r]相提并论，说不定会令你感到困扰[line 3]
+[k]
+
+＠奥菲莉娅
+但我一直，都想和你……
+[k]
+
+＠奥菲莉娅
+（[line 6]想和你，成为朋友。）
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠奥菲莉娅
+……你要，继续前进。
+[k]
+
+＠奥菲莉娅
+迈出步伐，玛修·基列莱特。
+[k]
+
+＠玛修
+会的，我会的，奥菲莉娅小姐。[r]我们会继续前进，决不会止步。
+[k]
+
+＠玛修
+一定会守护人理，[r]活下来，然后……将世界……
+[k]
+
+＠玛修
+将世界[line 3]
+[k]
+
+＠奥菲莉娅
+嗯。
+[k]
+
+＠奥菲莉娅
+如果是你们，或许能够做到。[r]不过对我来说……
+[k]
+
+＠奥菲莉娅
+心情多少，有点，复杂吧……
+[k]
+
+[messageOff]
+[scene 62703 0.5]
+[wt 1.0]
+
+＠奥菲莉娅
+啊啊，对了[line 3]
+[k]
+
+＠奥菲莉娅
+如果，你们能再次，遇到……[r][#那位英灵:拿破仑]……的话……
+[k]
+
+＠奥菲莉娅
+尽管，他多半，不会记得我……
+[k]
+
+＠奥菲莉娅
+…………但请帮我，转告一声谢谢。
+[k]
+
+＠奥菲莉娅
+说虽然，我拒绝，你的求婚……
+[k]
+
+＠奥菲莉娅
+但你的彩虹，真的，很美，
+[k]
+
+＠奥菲莉娅
+这样转告他[line 4]
+[k]
+[messageOff]
+[wt 2.0]
+[fadeout black 2.5]
+[bgmStop BGM_EVENT_75 3.0]
+[wait fade]
+
+[wt 2.0]
+
+[scene 60900]
+
+[wipeFilter cinema 0.5 0]
+
+[effect bit_sepia01]
+
+
+[fadein black 1.0]
+[bgm BGM_EVENT_78 1.0]
+[wait fade]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 0,-50]
+
+＠拿破仑
+唔，这下子头疼了！
+[k]
+
+＠拿破仑
+你不相信我的求婚吗。[r]我都说了这是一见钟情，你还是不能接受吗？
+[k]
+
+[charaFace E 3]
+
+＠拿破仑
+那么，让我想想。[r]这样怎么样，[#隐匿者:Crypter]。
+[k]
+
+＠拿破仑
+在我这[#灵基:性命]终结之前，[r]我一定会送你份超乎寻常的礼物。
+[k]
+
+[charaFace E 5]
+
+＠拿破仑
+哈哈！　敬请期待吧！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 0,-50]
+
+＠奥菲莉娅
+不。恕我拒绝。
+[k]
+
+[charaFace F 2]
+
+＠奥菲莉娅
+[line 3]再说了，你不是个有妻室的英灵吗！
+[k]
+
+[messageOff]
+[wt 2.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_78 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

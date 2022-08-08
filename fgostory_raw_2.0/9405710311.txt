@@ -1,0 +1,273 @@
+
+＄94-05-71-03-1-1
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 6031001 1 刑部姬]
+[charaSet B 23003000 1 伽内什]
+[charaSet C 1045000 1 巴御前]
+[charaSet D 98001000 1 玛修]
+[charaSet E 7039001 1 伽拉忒亚]
+[imageSet F back10000 1]
+[charaScale F 1.1]
+[charaDepth F 1]
+
+[scene 114500]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠刑部姬
+成……
+[k]
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaFace A 8]
+＠刑部姬
+[f large]成功了[line 3]！　优胜啦！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth A 4]
+[charaDepth C 3]
+[charaDepth B 2]
+
+[charaMoveReturn A 0,10 0.4]
+[wt 0.4]
+[charaMoveReturn A 0,10 0.4]
+[wt 0.7]
+
+[charaFace A 1]
+[charaFace C 1]
+[charaFadeinFSR C 0.4 276,0]
+[charaMoveFSR C 256,0 0.4]
+[charaFace B 1]
+[charaFadeinFSL B 0.4 -276,0]
+[charaMoveFSL B -256,0 0.4]
+[wt 0.4]
+
+[charaMoveReturn A 0,10 0.4]
+[charaMoveReturnFSL B -240,10 0.4]
+[charaMoveReturnFSR C 240,10 0.4]
+[wt 0.2]
+[se ade124]
+[wt 0.3]
+[charaMoveReturn A 0,10 0.4]
+[charaMoveReturnFSL B -240,10 0.4]
+[charaMoveReturnFSR C 240,10 0.4]
+[wt 0.2]
+[se ade124]
+[wt 0.3]
+[bgmStop BGM_EVENT_4 1.5]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠伽内什
+呼～。总算成功了呢～。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠巴御前
+虽然是险胜，但胜利就是胜利！[r]巴要将这场胜利献给御主！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠刑部姬
+没错，赢了哦～。[r]哎嘿嘿，御亲，快夸奖[#公主:我]！
+[k]
+
+？1：了不起！　各位非常努力，恭喜！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠玛修
+嗯，真的很厉害。[r]恭喜各位！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[branch _sel01c]
+
+？2：当然啦。想让我为你做什么吗？
+
+[branch _sel01b]
+
+？！
+
+[label _sel01b]
+[charaFace A 6]
+＠刑部姬
+唔……这个嘛。[r]虽然比较传统，但摸摸[#公主:我]的头吧！
+[k]
+
+？1：这倒是无所谓……但可以吗？
+？！
+
+＠刑部姬
+可以！[r]来吧来吧，快摸快摸！
+[k]
+
+？1：谢谢你那么努力。
+？！
+
+[messageOff]
+[cameraMove 1.0 0,-20 1.1]
+[wt 1.5]
+
+[cameraMove 0.3 0,-15 1.1]
+[wt 0.3]
+[cameraMove 0.3 0,-20 1.1]
+[wt 0.3]
+[cameraMove 0.3 0,-15 1.1]
+[wt 0.3]
+[cameraMove 0.3 0,-20 1.1]
+[wt 1.0]
+
+[charaFace A 3]
+＠刑部姬
+啊哇哇哇哇……这……这样真棒……[r]虽然很棒……
+[k]
+
+[messageOff]
+[se ad7]
+[charaMoveScale A 0.95 0.1]
+[charaMove A 0,-7 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale A 0.9]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠刑部姬
+对……对不起！[r]这对[#公主:我]的刺激太强了！！
+[k]
+
+＠刑部姬
+啊～，心脏有点不妙……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[cameraMove 0.7 0,0 1.0]
+[wt 1.0]
+[charaScale A 1.0]
+
+[label _sel01c]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠巴御前
+然后……巴也要对在我们背后出力，做出了[r]极大贡献的伽拉忒亚大人表示由衷的感谢。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠伽拉忒亚
+不，我没做什么。[r]因为原本造形就很棒。
+[k]
+
+＠伽拉忒亚
+我也是第一次触碰到如此怠惰如此肥硕[r]而十分吉利的雕像。令我受益匪浅。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠伽内什
+怠惰和肥硕是褒义词吗……不过算了。
+[k]
+
+[charaFace B 0]
+＠伽内什
+然后，这个东西，靠灵基的自我修复功能，[r]过一段时间就能恢复原状了吧？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠伽拉忒亚
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠伽内什
+竟然歪头疑惑……[twt 0.7][charaFace B 2][se ade186][seVolume ade186 0 0][seVolume ade186 1.0 0.3][bgm BGM_EVENT_7 0.1][fowardEffect bit_talk_mirrorball01][wt 1.2]啊！[r]和冷热空调的开关线路混了！？
+[k]
+
+＠伽内什
+发光功能好像[#失控了:出故障了]！
+[k]
+
+＠伽内什
+一直这样也太难受了吧，[r]我讨厌这种竞技神像啦！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[seStop ade186 0.4]
+[fowardEffectDestroy bit_talk_mirrorball01]
+[bgm BGM_EVENT_7 0.4 0.5]
+[charaFadeTime F 0.2 0.5]
+
+＠
+（※事后还是帮她恢复原状了。）[se ade178]
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

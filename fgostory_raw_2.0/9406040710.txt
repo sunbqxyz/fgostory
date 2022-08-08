@@ -1,0 +1,894 @@
+
+
+
+＄94-06-04-07-1-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001600 1 マシュ]
+[charaSet B 1098215400 1 ダ・ヴィンチ]
+[charaSet C 5048000 1 シャルロット・コルデー]
+[charaSet D 1098220500 1 カイニス]
+[charaSet E 2044001 1 アナスタシア]
+[charaSet F 4029300 1 アキレウス]
+[charaSet G 1098215500 1 ゴルドルフ]
+
+[charaSet H 1098216800 1 沖田オルタ]
+[charaSet I 1098216900 1 煉獄]
+[charaSet J 1098220600 1 カーマ]
+
+
+[scene 129700]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[se ade162]
+
+[wt 1.0]
+[seStop ade162 0.5]
+
+[wt 0.8]
+
+[bgm BGM_MAP_13 0.1]
+
+？1：ごちそうさまでした！
+？！
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠マシュ
+とても美味しかったです。[r]ダ・ヴィンチちゃん！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+あはは。[r]みんなに手伝ってもらったけどね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+いえいえ。[r]ステくん、元気になって良かったですね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+ありがとー！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+
+
+＠カイニス
+少し見回ってくる。[r]御馳走さん。
+[k]
+
+[messageOff]
+
+
+[se ad60]
+[charaFadeout D 0.4]
+[wt 0.5]
+
+[seStop ad60 1.0]
+[wt 1.5]
+
+
+
+[se ad223]
+
+[fowardEffect bit_talk_quickmove]
+
+[wt 0.1]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 0,20]
+[charaMove F 0,0 0.1]
+[wt 0.6]
+
+[fowardEffectDestroy bit_talk_quickmove]
+
+＠アキレウス
+おーい、とりあえず戻ったぜー！
+[k]
+
+？1：おかえりー
+？2：先行偵察、どうだった？
+？！
+
+[bgmStop BGM_MAP_13 1.0]
+
+[charaFace F 0]
+＠アキレウス
+ああ。地図に示された座標の位置に行ってみたは[r]いいんだが……
+[k]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠アキレウス
+完全に島から飛び出したポイントだった。[r]つまり示されてたのは海の中ってことになる。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+やっぱり合ってたかぁ。
+[k]
+
+
+[charaFace B 5]
+＠ダ・ヴィンチ
+さて、ここで一つ大事な情報がある。[r]本来、霊体であるサーヴァントにとっては、
+[k]
+
+＠ダ・ヴィンチ
+呼吸の問題っていうのは[r]それほど気にしなくていいはずなんだけど[line 3]
+[k]
+
+[charaFace B 24]
+＠ダ・ヴィンチ
+この特異点内では海や地面などの自然にも、[r]魔術的な影響が発生している。
+[k]
+
+＠ダ・ヴィンチ
+つまり、サーヴァントでも『溺れれば溺れる』、[r]という可能性がある。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠アキレウス
+ああ。なんか嫌な予感がしたから潜って[r]調べたりはしなかったが、やっぱそうだろうな。
+[k]
+
+[charaFace F 0]
+＠アキレウス
+しかし……だったらどうやって海中の宝を探す？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaTalk B]
+[charaFace B 19]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+ふっふっふー。
+[k]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠ダ・ヴィンチ
+美少女天才発明家を甘く見てはいけないな、[r]アキレウスくん。そこでコレだ。
+[k]
+
+[messageOff]
+[se ad77]
+[wt 1.0]
+
+
+？1：レギュレーターと空気ボンベ……？
+？2：ダイビングセット……？
+？！
+
+[charaFace B 9]
+＠ダ・ヴィンチ
+こんなこともあろうかと！
+[k]
+
+＠ダ・ヴィンチ
+サーヴァントでもマスターでも利用できる、[r]ダ・ヴィンチちゃん印の水中呼吸装置を！
+[k]
+
+＠ダ・ヴィンチ
+発明しておいたのさ！[wt 0.3][se ad139][r]名付けてセイレーンボンベ３号！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠マシュ
+なるほど、これを装着して海の中を探索しようと[r]いうわけですね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+うんうん、褒めたまえ撫でたまえ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠マシュ
+さすがはダ・ヴィンチちゃんです！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+？1：えらい！
+
+[charaFace B 11]
+＠ダ・ヴィンチ
+えへへ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？2：（なでなで）
+
+[charaFace B 11]
+＠ダ・ヴィンチ
+えへへへへ。
+[k]
+
+[messageOff]
+
+[cueSe SE_21 21_ade592]
+[wt 0.5]
+
+[charaFace B 6]
+[wt 0.7]
+
+[charaFace B 30]
+＠ダ・ヴィンチ
+あ。私ばっかりずるい、って？
+[k]
+
+[charaFace B 3]
+＠ダ・ヴィンチ
+甘えんぼさんだなあ。[r]この子も撫でてあげて！
+[k]
+
+[messageOff]
+
+[se ade174]
+[seVolume ade174 0 0.2]
+[wt 1.0]
+[seStop ade174 0.3]
+[wt 1.0]
+
+[cueSe SE_21 21_ade592]
+[wt 0.8]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠マシュ
+ですが……スキューバダイビングには[r]ある程度の技術が必要なのでは？
+[k]
+
+＠マシュ
+素人がいきなり潜れるようなものではないと[r]聞いたことがあります。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠ゴルドルフ
+うむ、確かにその通りだ。
+[k]
+
+＠ゴルドルフ
+あれはただ海に潜るというだけではない、[r]危険と隣り合わせのマリンスポーツ。
+[k]
+
+＠ゴルドルフ
+免許がないものは[r]必ずインストラクターの講習を受けるものだ。
+[k]
+
+
+[charaFace G 11]
+＠ゴルドルフ
+ちなみに私は慣れたものだがね。[r]上流階級のたしなみだよ君ィ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠マシュ
+わたしはまだそのカリキュラムは未履修です。[r]先輩はいかがでしょう……？
+[k]
+
+？1：実はダイビング経験ありです
+
+[charaFace A 1]
+＠マシュ
+そうなのですか？[r]さすがは先輩です！
+[k]
+
+？2：興味はあったけど、実際にやるのは……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+なに、そのあたりの心配は無用さ。[r]魔術的な礼装としての意味合いが主だからね。
+[k]
+
+
+＠ダ・ヴィンチ
+ボンベから空気を吸ってフィンで進んで、[r]みたいな通常のダイビングとはちょっと違う。
+[k]
+
+
+[charaFace B 7]
+＠ダ・ヴィンチ
+具体的には後ろのボンベから泡が出て、[r]それが着用者の全身を包んで呼吸を可能にする……
+[k]
+
+＠ダ・ヴィンチ
+っていう方式なんだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠ゴルドルフ
+なるほど。[r]道理でおかしなボンベの作りをしていると思った。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+質量制御の術式も組み込んであるから、[r]モードを変えれば『海底を歩いて進む』ことも可能だよ。
+[k]
+
+[charaFace B 10]
+＠ダ・ヴィンチ
+つまり、理論上はカナヅチでも大丈夫！
+[k]
+
+[charaFace B 25]
+＠ダ・ヴィンチ
+ただ、懸念点がないわけじゃない。
+[k]
+
+＠ダ・ヴィンチ
+たぶん大丈夫だとは思うけど……[r]テストが充分じゃないんだ。
+[k]
+
+[charaFace B 14]
+＠ダ・ヴィンチ
+十割安全、とは言い切れない。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+＠ゴルドルフ
+……いきなり不安な発言だな。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+ごめんね。[r]海底での機能不全は生命活動に直結するから、
+[k]
+
+＠ダ・ヴィンチ
+セーフティネットとして、[r]別の水中呼吸法も用意しておきたいかな。
+[k]
+
+[charaFace B 25]
+＠ダ・ヴィンチ
+具体的には、水中呼吸の魔術が使える魔術師に[r]同行してほしい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠ゴルドルフ
+ほう……。
+[k]
+
+[charaFadeout G 0.1]
+[bgmStop BGM_EVENT_2 1.5]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+[line 3]というわけで今回は同行よろしくね、[r]ゴルドルフくん。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+[bgm BGM_EVENT_7 0.1]
+＠ゴルドルフ
+なにぃぃぃぃ！？[charaShake G 0.04 3 3 0.4]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+ダイビングで海の中には慣れているんだろう？[r]それならキミが適任だ！
+[k]
+
+
+＠ダ・ヴィンチ
+重要なのは、[%1][&君:ちゃん]の[r]生命を守ること。
+[k]
+
+＠ダ・ヴィンチ
+海中ってスポットでは、[r]何が起こるかわからないから……
+[k]
+
+
+[charaFace B 11]
+＠ダ・ヴィンチ
+アドリブを利かせられる魔術師がいてくれれば、[r]安心だと思うんだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+＠ゴルドルフ
+いや……しかし……
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.4 1]
+＠カイニス
+なーにウダウダ言ってやがんだゴッフ。
+[k]
+
+
+＠カイニス
+アンタの腕が求められてるってことだろ。[r]違うか？　違わねえよな。
+[k]
+
+[charaFace D 7]
+＠カイニス
+[line 3]ならやるしかねえだろ！[r]たまにあるかないかの活躍の機会だぜ！
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠ゴルドルフ
+……！　いや、まあ……そうだな。[r]私の力が求められている、というコトか。
+[k]
+
+[charaFace G 2]
+＠ゴルドルフ
+ふは、ふははは！　ならば仕方あるまい！
+[k]
+
+[charaFace G 1]
+＠ゴルドルフ
+替えの利かない[%1]のためだ。[r]たまにはこの所長自ら働いてやるとしよう！
+[k]
+
+[charaFace G 9]
+＠ゴルドルフ
+で、私の安全面の配慮についてだが……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+＠カイニス
+ったく。
+[k]
+
+[charaFace D 17]
+＠カイニス
+海の底とか最悪だが……
+[k]
+
+＠カイニス
+コイツを前に出すってんなら、[r]オレも今回はついていくしかねえか。
+[k]
+
+[charaFace D 12]
+＠カイニス
+臨時のカルデア保安要員！[r]だしな！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠ゴルドルフ
+ホッ……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+そこで次の問題だね。セイレーンボンベ３号、[r]７セットしか作れていないんだ。
+[k]
+
+[charaFace B 25]
+＠ダ・ヴィンチ
+当然私は装置のチェックのために行くとして、[r]ゴルドルフくん、護衛のカイニス、
+[k]
+
+
+＠ダ・ヴィンチ
+そして[%1][&君:ちゃん]……[r]余ってるのはあと三人分しかない。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠カイニス
+今回は[#人間:足手まとい]が二人いるんだろ。[r]盾役を増やしとけ。
+[k]
+
+[charaFace D 11]
+＠カイニス
+ゴッフは基本的にオレが見とくから……[r]そっちはマシュ、おまえが見とけ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠マシュ
+はい！　海の底は初体験ですが、[r]わたしもご一緒させていただきます！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+はいはーい！　遺跡じゃお留守番だったんだから、[r]今度こそわたしが行ってもいいですよね、ね？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠アナスタシア
+仕方ないわね。海底遊びにも興味がなくはないけれど、[r]今回は譲っておくわ。
+[k]
+
+[charaFace E 0]
+＠アナスタシア
+残りは……そうね、普通に[r]戦闘力の高いメンバーがいいのではないかしら？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth H 5]
+[charaDepth I 6]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠沖田オルタ
+そういう事でしたら私が行きましょう！
+[k]
+
+＠沖田オルタ
+守護も得意ですが、実は戦闘はもっと得意な気がします。
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠アキレウス
+俺の戦車より、アンタの刀のほうが[r]海底では小回りが利きそうだしな。
+[k]
+
+
+＠アキレウス
+それでいいだろ。俺はまた近くに待機して、[r]何かあったときのためのサポートをする。
+[k]
+
+[charaFace F 4]
+＠アキレウス
+……いや、でも大丈夫か？　そのちっこいのは？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠煉獄
+ちっこいのじゃない。煉獄だ。
+[k]
+
+[charaFace H 7]
+
+＠沖田オルタ
+大丈夫です！　私が煉獄を背負ったら[r]一人ぶんってことになりますよね？
+[k]
+
+[charaFace I 4]
+
+＠煉獄
+いや、それは見た目がちょっと……。
+[k]
+
+＠煉獄
+それに人数制限がだな。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+んー、多分大丈夫かな。一応余裕は持たせてるから、[r]１．５人分くらいならなんとか。
+[k]
+
+[charaFace B 0]
+＠ダ・ヴィンチ
+私もこの子を自分と一緒に泡に包んでいく気だからね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 6]
+[charaFadein J 0.1 1]
+＠カーマ
+いいこと聞きました。だったら小さい私も[r]マスターさんにくっつけば同行できるってわけですか？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+さすがにそれは無理。[r]キミは普通に一人分。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 16]
+[charaFadein J 0.1 1]
+＠カーマ
+ちぇー。
+[k]
+
+[charaFace J 0]
+＠カーマ
+まあいっか。たまには離れたほうが[r]私の有り難みにも気付きやすくなるというものです。
+[k]
+
+[charaFace J 1]
+＠カーマ
+ふふふ。[r]適度なピンチを味わって、
+[k]
+
+＠カーマ
+私の存在が恋しくてたまらなくなっているような状態で[r]ギリギリ無事に帰ってきてくださいね？
+[k]
+
+[charaFace J 8]
+＠カーマ
+『やっぱり強くて可愛いカーマちゃんがいないと[r]　人生耐えられないよぅ……』
+[k]
+
+＠カーマ
+みたいな素敵に情けない台詞で私にすがりついてくる[r]未来を期待しておきます。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠カイニス
+へっ。生意気で自信過剰でカワイイねェ！
+[k]
+
+[charaFace D 7]
+＠カイニス
+ま、今回はオレがついてんだ。[r]ゴッフもマスターも無事に帰してやるよ。
+[k]
+
+＠カイニス
+五体満足かどうかは知らねーけどな……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+＠ゴルドルフ
+そこも約束してほしいな！？[r]生きてりゃまあいいだろ、みたいなのやめて！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠カイニス
+[FFFFFF]？[-]
+[k]
+
+＠カイニス
+生きてりゃまあいいだろ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.1 1]
+＠ゴルドルフ
+ほらぁ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+よし、海底探険隊の面子はこれで決まったね。[r]しっかり準備をして向かおう！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

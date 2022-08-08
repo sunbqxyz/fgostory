@@ -1,0 +1,83 @@
+
+＄94-01-56-04-3-1
+
+[soundStopAll]
+[bgm BGM_EVENT_1 0.1]
+
+[scene 31501]
+
+[charaSet A 98001000 1 玛修]
+[charaSet B 1018002 1 女神哥伦比亚]
+
+[fadein black 1.5]
+[wait fade]
+
+[effect bit_talk_06]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠女神哥伦比亚
+[line 3]不惜打倒神明，都要前进吗[line 3][r]原来如此，这也是自由的一种形式。
+[k]
+
+？1：是Do It Yourself啦。
+
+？！
+
+[charaFace B 1]
+
+＠女神哥伦比亚
+没错。[r]你们的命运，是属于你们的[line 3]
+[k]
+
+[charaFace B 0]
+
+＠女神哥伦比亚
+去吧。班扬在森林深处[line 3]
+[k]
+
+[charaFace B 4]
+
+＠女神哥伦比亚
+…………我或许没有资格说这种话。[r]但我一直关注着那个孩子。
+[k]
+
+＠女神哥伦比亚
+那孩子一直在哭泣。[r]你们是那孩子交到的第一个朋友。
+[k]
+
+＠女神哥伦比亚
+我只是……不想单纯监视那孩子，而是将那孩子[line 3][r]不[line 3]这未免太依依不舍了[line 3]
+[k]
+
+[bgmStop BGM_EVENT_1 2.0]
+[messageOff]
+[effectStop bit_talk_06]
+[wait effect bit_talk_06]
+[se ad52]
+[charaSpecialEffect B flashErasure 1 2.0]
+[wait charaSpecialEffect B]
+[wt 1.0]
+
+？1：大家，走吧。
+？2：去拯救班扬。
+
+？！
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+
+＠玛修
+好！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_4 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

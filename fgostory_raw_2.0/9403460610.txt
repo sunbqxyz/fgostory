@@ -1,0 +1,262 @@
+＄94-03-46-06-1-0
+
+
+
+[soundStopAll]
+
+[charaSet B 98002000 1 芙芙]
+[charaSet C 5008001 1 羊的大哥哥]
+
+[charaSet H 98115000 1 特效用]
+
+[scene 70900]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade284]
+[wt 1.5]
+
+[bgm BGM_TEITO 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠芙芙
+芙，芙，芙呜！[r]（特别意译：橘子！　黑加仑！　橘子！）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H -700,0]
+[charaEffect H bit_talk_20]
+
+＠调酒师
+哎呀。客人，今天是和芙芙大人两位吗？[r]要点的还是一如既往的黑兽脂混合？
+[k]
+
+？1：（……嗯……因为还有很多……）
+？2：（……偶尔也想过一段优雅的时光……）
+
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠芙芙
+芙，芙呜……[r]（特别意译：脂的味道会让人上瘾呢……我懂……）
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.5]
+[se ade252]
+[wt 0.8]
+[bgmStop BGM_TEITO 1.0]
+[seStop ade252 0.4]
+[wt 1.0]
+[charaPut H -500,0]
+
+[se ade291]
+[charaMove H 1 0.5]
+[wt 0.5]
+[se bas2]
+[wt 2.0]
+
+[charaEffectDestroy H bit_talk_20]
+
+[bgm BGM_EVENT_7 0.1]
+
+？1：啊！？
+？2：喂，滑来了一个圣杯！？
+
+？！
+
+[charaPut H 0,-1200]
+[wt 1.0]
+
+？1：店长，这是怎么一回事！？
+
+？！
+
+＠调酒师
+这是那边的客人请的。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠C：那边的客人
+嗯～，着实精彩！[r][#电影:记录]真的是件好东西呢！
+[k]
+
+＠C：那边的客人
+啊，那个算我请客，[r]不用客气，收下吧！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace C 3]
+[charaFace B 0]
+[charaFadein C 0.1 0]
+[charaFadein B 0.1 2]
+
+＠芙芙
+梅[messageShake 0.05 3 3 0.3]呜[line 3]呜！[r]（特别意译：冠位人渣！　你居然还活着！）
+[k]
+
+[messageOff]
+[charaMoveReturn B 0,70 0.3]
+[wt 0.1]
+[se bac8]
+[wt 0.4]
+[charaMoveReturn B 0,70 0.3]
+[wt 0.1]
+[se bac8]
+[wt 0.4]
+
+[charaFace C 1]
+
+[branchQuestClear ep2_user 01000822]
+
+
+＠C：那边的客人
+哈哈哈哈，别这样啦，叫芙芙的，[r]闹得太凶的话，小心被禁止入内哦！
+[k]
+
+[branch user_join]
+
+[label ep2_user]
+
+＠C：那边的客人
+哈哈哈哈，别这样啦，凯茜·帕鲁格，[r]闹得太凶的话，小心被禁止入内哦！
+[k]
+
+[branch user_join]
+
+[label user_join]
+
+？1：你……你是……
+？2：（不知为何，无法说出名字……）
+
+？！
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠C：那边的客人
+嗯。因为这是在梦中嘛，[r]记忆与意识都模糊不清。
+[k]
+
+＠C：那边的客人
+时至今日，我仍是最顶尖的Caster。[r]希望你们叫我羊的大哥哥。
+[k]
+
+[charaFace C 4]
+
+＠羊的大哥哥
+但话说回来……这节目真不错。
+[k]
+
+＠羊的大哥哥
+已经无法夺回的年轻时代的后悔……[r]到了晚年才开始忏悔，以及乡愁……
+[k]
+
+[charaFace C 1]
+＠羊的大哥哥
+哎呀，真够硬派的。[r]我也很想尝试一下那种古朴而匹配的角色呢！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠芙芙
+咕噜芙。杜芙呜。[r]（特别意译：从黑道的角度来说，你早就已经达成了啦。）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠羊的大哥哥
+综上所述，这杯鸡尾酒就当是我偷看全剧的票钱。
+[k]
+
+＠羊的大哥哥
+哎？　圣杯太奢侈了？
+[k]
+
+[charaFace C 3]
+
+＠羊的大哥哥
+没关系没关系，不是挺好的嘛，反正又不吃亏！[r]不用客气尽管用在我身上吧！
+[k]
+
+[messageOff]
+[wt 0.5]
+[wipeout openEye 0.7 1]
+[wt 0.7]
+
+[wipein openEye 1.0 1]
+[wt 1.5]
+[charaFace C 1]
+
+＠羊的大哥哥
+哎哟，差不多要醒了吗？[r]那就这样，回见！
+[k]
+
+＠羊的大哥哥
+如果还有这份从容，[r]就让我们在下次黄金英灵剧场见面吧！
+[k]
+
+＠羊的大哥哥
+我个人其实还挺希望看到阿尔托莉雅后宫的。[r][#晚安:再见]，[#晚安:再见]，[#晚安:再见]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠芙芙
+芙，芙呜！[r]（特别意译：那家伙真是不接受教训！）
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

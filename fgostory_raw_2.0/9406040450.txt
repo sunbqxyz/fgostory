@@ -1,0 +1,545 @@
+
+
+＄94-06-04-04-5-0
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098215400 1 ダ・ヴィンチ]
+[charaSet B 8001600 1 マシュ]
+[charaSet C 1098215500 1 ゴルドルフ]
+[charaSet D 1098220400 1 清少納言]
+[charaSet E 5048000 1 シャルロット・コルデー]
+[charaSet F 4008300 1 黒髭]
+[charaSet G 1098220500 1 カイニス]
+[charaSet H 1098217700 1 コロンブス1]
+[charaSet I 1098217700 1 コロンブス2]
+[charaSet J 1098217700 1 コロンブス3]
+[charaSet K 98104300 1 ゴースト]
+[charaSet L 1098217700 1 コロンブス1]
+[charaSet M 1098217700 1 コロンブス2]
+[charaSet N 1098217700 1 コロンブス3]
+[charaFilter L silhouette 00000080]
+[charaFilter M silhouette 00000080]
+[charaFilter N silhouette 00000080]
+[charaDepth H 1]
+[charaDepth I 2]
+[charaDepth J 3]
+[charaDepth L 4]
+[charaDepth M 5]
+[charaDepth N 6]
+
+[scene 107400]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[wt 0.4]
+[se ad39]
+[charaEffect E bit_talk_36]
+＠シャルロット・コルデー
+宝具[line 3]『[#喝采されるは一夜の夢:ラ ・ フ ェ ー リ ・ デ ュ ン ・ ニ ュ イ]』
+[k]
+
+[messageOff]
+[se ad851]
+[wt 0.6]
+[se ad852]
+[bgmStop BGM_EVENT_80 1.0]
+[fadeout white 1.5]
+[wait fade]
+[seStop ad852 1.6]
+[charaEffectStop E bit_talk_36]
+[charaFadeout E 0.1]
+
+[charaTalk off]
+[wt 1.0]
+[fadein white 0.6]
+[wait fade]
+
+
+[charaTalk depthOff]
+[charaDepth F 2]
+[charaDepth K 1]
+
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[charaFadein K 0.1 -100,0]
+[charaShake F 0.04 3 3 0.7]
+[charaShake K 0.03 3 3 0.7]
+＠黒髭
+グエー！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠シャルロット・コルデー
+よっしゃ殺し、じゃない倒しました！[r]イエーイ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠マシュ
+はい。[r]さすが全く情け容赦のない宝具ぶっぱでした。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaFace F 4]
+[charaFadein F 0.1 1]
+[charaFadein K 0.1 -100,0]
+[wt 0.5]
+[se ad42]
+[charaMove K -100,7 0.4]
+[charaFadeout K 0.4]
+[wt 2.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFace F 12]
+＠黒髭
+ふぅ……目が覚めたぜ。
+[k]
+
+＠黒髭
+体は全身、畳針を突き刺されたように[r]痛みが走ってる気がするが何ともないぜ……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠ゴルドルフ
+それは何ともあるのでは？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠黒髭
+しかしまあ、今後は要注意っすな。
+[k]
+
+＠黒髭
+財宝の周囲には、拙者みたいに何かに憑依された[r]サーヴァントがいるやもしれんですぞ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠清少納言
+まったまたー！[r]くろひー以外に引っ掛かる人いないって！
+[k]
+
+[charaFace D 10]
+＠清少納言
+いや、まさか、憑依されてこいっていう[r]あたしちゃんへのフリなのかい……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠黒髭
+ちゃうねん。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+＠ゴルドルフ
+ゴーストを倒したせいかＱＰも転がっているので、[r]その補充ができるのは[#僥倖:ぎょうこう]だな……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+……お。[r]地図はっけーん！
+[k]
+
+[messageOff]
+[wt 0.1]
+[cueSe SE_21 21_ade592]
+[wt 0.8]
+
+[charaFace A 23]
+＠ダ・ヴィンチ
+おや、どうしたんだいステくん。
+[k]
+
+＠ダ・ヴィンチ
+こっち？[r]こっち行くの？
+[k]
+
+[messageOff]
+[wt 0.1]
+[cueSe SE_21 21_ade592]
+[wt 0.8]
+
+[charaFace A 0]
+＠ダ・ヴィンチ
+ふんふん、そうしようそうしよう。[r]……おや？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[se bas2]
+[effect bit_talk_20]
+[wt 2.0]
+[effectDestroy bit_talk_20]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+これは……。[r]マスター、こちら聖杯です！
+[k]
+
+＠マシュ
+いえ、正確には聖杯を構築する[r]リソースの一部のようですが……。
+[k]
+
+？1：と、とりあえず回収で！
+？！
+
+[charaFace B 7]
+＠マシュ
+はい！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+そっか。[r]キミには聖杯の力があるんだものね。
+[k]
+
+＠ダ・ヴィンチ
+他の聖杯とも引かれ合う、のかな？
+[k]
+
+[messageOff]
+[wt 0.1]
+[cueSe SE_21 21_ade592]
+[wt 1.0]
+
+[charaFace A 11]
+＠ダ・ヴィンチ
+ふふふ。[r]やっぱり、何を言ってるかは分からないね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+＠ゴルドルフ
+まあ、恐竜だからな。
+[k]
+
+
+＠ゴルドルフ
+鳴き声ひとつで理解できるほど、[r]我々はこの存在に慣れ親しんではいないのだ。
+[k]
+
+
+＠ゴルドルフ
+そこにいるのは[line 3][r]一億五千万年前の、過去の生物なのだからな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+うん。まあね。
+[k]
+
+[charaFace A 13]
+＠ダ・ヴィンチ
+そうだとしても……[r]気持ちが分かると嬉しいな、私は。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_77 1.0 0.5]
+[wait fade]
+[charaFadeout A 0.1]
+[wt 1.0]
+[fadein black 1.0]
+[bgm BGM_EVENT_77 1.0 1.0]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠黒髭
+よーし、そんじゃまあ。[r]ブン捕れるものはブン捕ったし。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+＠カイニス
+そうだな。[r]奪えるものはあらかた奪い尽くしたし。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[bgmStop BGM_EVENT_77 0.7]
+[charaTalk off]
+[charaDepth F 2]
+[charaDepth G 1]
+[charaFace F 5]
+[charaFace G 19]
+[charaFadeinFSL F 0.1 0]
+[charaFadeinFSR G 0.1 2]
+＠二人
+後は、[wt 0.7][r][#そこにいる連中をぶちのめすだけだな]。
+[k]
+
+？1：……！
+？！
+
+[messageOff]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ade64]
+[effect bit_shot_01]
+[wt 0.8]
+
+[effectDestroy]
+
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 1]
+＠カイニス
+[line 3]ハッ！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad85]
+[se ad171]
+[se ad414]
+[effect bit_talk_gram_slash_04]
+[wt 0.1]
+[seStop ad414 0.4]
+[effect bit_talk_water_splash]
+[wt 0.4]
+[se ad602]
+[se ad1014]
+[se ad32]
+[wt 1.0]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠カイニス
+ぼうっとしてんじゃねえぞ、[r]チビ人形。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 22]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+な、何をう！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠マシュ
+敵襲……！
+[k]
+
+？1：何者だ！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+＠？？？
+ハッハーァ！[r]ハッハッハーァ！
+[k]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠清少納言
+こ、この極めて特徴的な笑い声は！[r][#知っているッ]！！
+[k]
+
+＠清少納言
+ウチらは知っているぞこいつをッ！[r]いや、それはそれとして[line 3]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaFadeinFSL L 0.4 -350,0]
+[charaFadeinFSR M 0.4 350,0]
+[charaFadein N 0.4 1]
+[wt 1.5]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+＠清少納言
+多くねー！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠黒髭
+どういうことですのーーー！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+＠マシュ
+どういうことなんでしゅかーーー！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+＠シャルロット・コルデー
+マシュさんマシュさん、[r]動揺してベイビィみたいな口調になってます。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+は！
+[k]
+
+[charaFace B 7]
+＠マシュ
+……コホン。[r]ど、どういうことなのでしょう！
+[k]
+
+＠マシュ
+マスター、[r]このシルエットはどう考えても……！
+[k]
+
+？1：まさかの[line 3]
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+[charaTalk off]
+[charaFadeinFSL L 0.1 -350,0]
+[charaFadeinFSR M 0.1 350,0]
+[charaFadein N 0.1 1]
+[wt 0.1]
+[charaFace H 7]
+[charaFace I 7]
+[charaFace J 7]
+[charaFadeinFSL H 0 -350,0]
+[charaFadeinFSR I 0 350,0]
+[charaFadein J 0 1]
+[wt 0.7]
+[charaFadeout L 0.4]
+[charaFadeout M 0.4]
+[charaFadeout N 0.4]
+[wt 0.7]
+
+＠コロンブス（？）×３
+ハッハッハーァ！
+[k]
+
+？1：増殖ぅぅぅ！？
+？！
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaTalk on]
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 1]
+＠カイニス
+何だか知らねぇが、[r]数を頼みにする奴ァ間違いなく雑魚だ雑魚！
+[k]
+
+
+[charaFace G 2]
+＠カイニス
+一匹残らず、[r]ブッ飛ばしてやらァ！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

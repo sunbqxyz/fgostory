@@ -1,0 +1,251 @@
+
+＄03-00-10-03-2-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098216010 1 巴格斯特]
+[charaSet B 1050000 1 巴格斯特（演出用）]
+[charaScale B 1.03]
+
+
+
+[charaSet M 1098210410 1 摩耳斯]
+[charaSet N 1098210410 1 摩耳斯]
+[charaSet O 1098210410 1 摩耳斯]
+[charaSet P 1098210410 1 摩耳斯]
+[charaSet Q 1098210410 1 摩耳斯]
+
+[charaSet T 98115000 1 特效用]
+
+
+[scene 120401]
+
+[bgm BGM_EVENT_69 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.4 0,0]
+[charaShake A 0.05 1 1 0.7]
+[wt 1.2]
+[charaMove A 0,-10 0.4]
+[cueSe SE_21 21_ad1119]
+[wt 0.3]
+[seStop 21_ad1119 0.3]
+[wt 0.5]
+
+＠巴格斯特
+……怎么，回事……视野，一片赤红……[r]……难道眼睛里，也进摩耳斯毒了吗……
+[k]
+
+＠巴格斯特
+……看不，清楚……[r]仿佛，置身于黑夜中……
+[k]
+
+＠巴格斯特
+……好。刚才，就是，最后一个。[r]虽然难对付，但这样一来，圆桌军的人类，也……
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_69 1.0 0.4]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 120302]
+[wt 1.0]
+
+[bgm BGM_EVENT_69 1.0 1.0]
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+[effect bit_talk_35]
+[se ad240]
+[wt 1.0]
+
+[fowardEffect bit_talk_blood_splash]
+[se ad863]
+[wt 2.0]
+
+[fowardEffectDestroy bit_talk_blood_splash]
+[effectDestroy bit_talk_35]
+
+[charaTalk off]
+
+
+
+
+
+[charaDepth M 9]
+[charaDepth N 8]
+[charaDepth O 7]
+[charaDepth P 6]
+[charaDepth Q 5]
+
+[charaFace M 0]
+[charaFace N 0]
+[charaFace O 0]
+[charaFace P 0]
+[charaFace Q 0]
+
+[cueSe SE_21 21_ad1083]
+[seVolume 21_ad1083 0 0.5]
+[se ad638]
+[seVolume ad638 0 0.5]
+[charaFadein M 0.4 1]
+[charaFadein N 0.4 -225,0]
+[charaFadein O 0.4 225,0]
+[charaFadein P 0.4 -450,0]
+[charaFadein Q 0.4 450,0]
+[wt 0.7]
+[cueSe SE_21 21_ad1073]
+[wt 3.0]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+
+＠圆桌军士兵
+……………………
+[k]
+
+
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+＠巴格斯特
+啊……啊，啊……[wt 0.8][messageShake 0.04 4 3 0.7][r]啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgm BGM_EVENT_69 0.5 0.4]
+[wait fade]
+
+[se ad678]
+[seVolume ad678 0 0.7]
+
+[charaFadeout A 0.1]
+[scene 10000]
+
+[charaSet A 1050000 1 巴格斯特]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[se ad171]
+[wt 0.2]
+[cueSe SE_21 21_ad1125]
+[wt 0.6]
+
+[cueSe Battle bac7]
+[wt 0.3]
+[cueSe Servants_102800 bac658]
+[wt 1.0]
+
+[cueSe Battle bac137]
+[wt 0.3]
+[se ad240]
+[wt 0.8]
+
+[cueSe Servants_102800 bac657]
+[wt 0.3]
+[se ad863]
+[wt 1.0]
+
+[fadeout black 0.5]
+[wait fade]
+
+[scene 120302]
+[wt 0.2]
+
+[bgm BGM_EVENT_69 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.4 1]
+[wt 0.4]
+＠巴格斯特
+[line 3]对不起。[r]是我力有不逮，对不起……
+[k]
+
+＠巴格斯特
+……竟然，还叫你们逃去城外……[r]……如此，自以为是[line 3]！
+[k]
+
+＠巴格斯特
+……可是，还有其他路可选吗……？
+[k]
+
+＠巴格斯特
+既然无论在里面还是逃到外面，[r]都只有死路一条的话……
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_69 3.0]
+
+[charaTalk off]
+[charaDepth A 5]
+[charaDepth B 6]
+
+[se ad231]
+[charaFace B 18]
+[charaFadein B 0.1 0,5]
+
+[charaFadeout B 1.1]
+[wt 1.6]
+
+[charaTalk on]
+[charaFace A 18]
+＠巴格斯特
+还不如[line 3][r]将大家，全都吃掉吗。
+[k]
+
+＠巴格斯特
+弱者，成为，强者的食粮。[r]强者，守护，弱者。
+[k]
+
+＠巴格斯特
+[line 3]没错。
+[k]
+
+＠巴格斯特
+哪怕……不列颠，已经终结了……[r]我还有，想要守护的，存在……
+[k]
+
+＠巴格斯特
+……我，非去不可。[r]对不起，我无法，与各位一同沉眠于此。
+[k]
+
+＠巴格斯特
+曼彻斯特……回曼彻斯特……[r]我，身为那座城市的，领主……
+[k]
+
+＠巴格斯特
+一定要守护好，[r]住在曼彻斯特的人们才行[line 3]
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

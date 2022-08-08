@@ -1,0 +1,909 @@
+
+
+
+＄03-00-07-11-4-0
+
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[cameraMove 0.1 0,0 1.01]
+
+[charaSet A 7006300 1 坂田金时]
+[charaSet F 6030000 1 段藏]
+[charaSet G 6021001 1 酒吞童子剪影]
+[charaFilter G silhouette 00000080]
+[charaSet I 6021001 1 酒吞童子]
+[sceneSet K 10000 1]
+[charaScale K 1.01]
+[charaSet L 7022001 1 茨木童子]
+[charaSet M 7022001 1 茨木童子剪影]
+[charaFilter M silhouette 00000080]
+
+[charaSet H 98115000 1 特效用]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 27601]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad1055]
+[shake 0.05 4 4 1.5]
+[wt 2.5]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+吵死了！
+[k]
+
+[messageOff]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[se ad678]
+[charaPut H 1]
+[charaEffect H bit_talk_41_fs]
+[charaMoveScale skt 1.1 0.1]
+[charaMove A 0,15 0.1]
+[wt 0.2]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_41_fs]
+[charaFadeout A 0.1]
+[wt 0.1]
+[blurOff motion 0.2]
+[charaScale A 1.0]
+
+[effect bit_talk_thunder_03_fs]
+[se ad842]
+[se ade346]
+[se ad626]
+[seVolume ad626 0 0.5]
+[wt 1.0]
+[seStop ad626 0.5]
+[wt 0.5]
+
+[se ad1018]
+[wt 1.5]
+[se ad10]
+[shake 0.05 0 4 1.5]
+[wt 1.5]
+[seStop ad640 0.5]
+[wt 1.0]
+
+[charaTalk L]
+[charaFace L 8]
+[charaFadein L 0.1 1]
+
+＠茨木童子
+啊啊，星熊……！[r]可……可恶的金时……小小人类休要猖狂！
+[k]
+
+[charaFace L 5]
+
+＠茨木童子
+既……既然如此……[r]虽说有些发憷，但只能让金熊童子苏醒……！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.0]
+[charaTalk depthOff]
+[charaDepth I 1]
+[charaDepth G 3]
+[charaDepth L 5]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 -200,0]
+[charaMove G -150,0 0.8]
+[wt 1.0]
+
+[charaTalk L]
+[se ad76]
+[charaFace L 7]
+[charaShake L 0.05 3 3 0.3]
+[wt 0.3]
+
+[charaFace L 4]
+[charaMove L 20,-10 0.5]
+[wt 0.5]
+[charaMove L 0,-20 0.5]
+[wt 0.5]
+
+＠茨木童子
+啊唔。
+[k]
+
+[messageOff]
+[charaMove L 0,-70 0.2]
+[charaFadeout L 0.2]
+[wt 0.2]
+[se ad144]
+[wt 1.0]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠段藏
+确认星熊童子沉静。[r]茨木童子的敌对反应也消失了！
+[k]
+
+[charaFace F 4]
+
+＠段藏
+应该说，那个……[r]似乎遭人背后偷袭失去了意识……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+看上去像是轻轻揍了一下吧。[r]但那是错觉啦。
+[k]
+
+＠坂田金时
+如果被敲的是[%1]的头，[r]这会儿已经像摔在地上的石榴一样裂开了吧。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.1]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 1.0]
+[charaFadeout G 1.0]
+[wt 1.0]
+[charaTalk on]
+[charaTalk depthOn]
+
+[bgm BGM_EVENT_71 0.1]
+
+＠酒吞童子
+哎呀，哎呀，人来得还挺齐的嘛。
+[k]
+
+[charaFace I 1]
+
+＠酒吞童子
+今晚夜色很不错吧？[r]月亮在流血呐。
+[k]
+
+[charaFace I 10]
+
+＠酒吞童子
+茨木好像给你们添麻烦了吧。[r]哎呀，山上的种种问题都会令人血气上涌嘛，
+[k]
+
+＠酒吞童子
+要是人类闯了进来，[r]总免不了被吃干抹净[line 3]
+[k]
+
+[charaFace I 0]
+＠酒吞童子
+话是这么说，[r]但毕竟金发碧眼的小家伙也在嘛？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+哈哈。谁知道呢！[r]你觉得我跟这座山很相称吗，酒吞。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+[wt 1.0]
+
+＠酒吞童子
+呵呵呵呵呵呵。[r]可怕可怕。别这样瞪着妾身啦。
+[k]
+
+[charaFace I 0]
+
+＠酒吞童子
+你是来找妾身谈的吧？
+[k]
+
+＠酒吞童子
+好呀，来谈吧。
+[k]
+
+＠酒吞童子
+小家伙固然不错，可是……[r]那边的[&黑发小家伙:红发小姑娘]，要和妾身聊聊吗？
+[k]
+
+[messageOff]
+[se ad1042]
+[seVolume ad1042 0 0.5]
+
+[charaMove I 0,8 0.4]
+[charaMoveScale I 1.05 0.4]
+[wt 0.2]
+[seStop ad1042 0.4]
+[wt 0.2]
+＠酒吞童子
+好嘛，来聊聊呀。
+[k]
+
+＠酒吞童子
+行吗。要不然……
+[k]
+
+＠酒吞童子
+一起喝点酒吧。[r]妾身这还有甜甜的苏哦，怎么样？
+[k]
+
+[messageOff]
+[charaFace I 1]
+[wt 1.0]
+[charaFace I 0]
+＠酒吞童子
+仔细看来，你呀……[r]这双瞳眸似乎见识过妾身不曾知晓之物呢。
+[k]
+
+＠酒吞童子
+[line 6]妾身可以挖走你的眼睛吗？
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.2]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[charaFace A 2]
+[charaMoveScale A 1.1 0.1]
+[se ad85]
+[effect bit_talk_gold_slash_02]
+[wt 0.2]
+[blurOff motion 0.2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 -50,0]
+[wt 0.1]
+[charaMove F 50,15 0.2]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[charaMoveScale F 1.1 0.2]
+[se adm14]
+[effect bit_talk_x_slash03]
+[wt 0.2]
+[blurOff motion 0.2]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaScale A 1.0]
+[charaScale F 1.0]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 0,15]
+[wt 0.1]
+[se ad7]
+[se ad671]
+[seVolume ad671 0 0.5]
+[charaMoveScale I 1.0 0.2]
+[charaMove I 0,0 0.2]
+[wt 0.2]
+[seStop ad671 0.6]
+
+＠酒吞童子
+……哎呀，讨厌。
+[k]
+
+[charaFace I 9]
+
+＠酒吞童子
+这可是妾身的一流玩笑呀。[r]咱们都多久的交情了，还真狠心呐。
+[k]
+
+[messageOff]
+[charaFace I 1]
+[wt 1.0]
+[charaFace I 0]
+
+＠酒吞童子
+啊，对了。
+[k]
+
+＠酒吞童子
+刚才顺势拧断了她的手臂，还给你吧。
+[k]
+
+[messageOff]
+[charaMoveReturn I 5,0 0.2]
+[wt 0.2]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaScale I 1.0]
+
+[se adm14]
+[wt 0.5]
+[se ad1046]
+[se ad227]
+[seVolume ad227 0 0.7]
+[wt 1.0]
+
+？1：刚抛来的东西是……
+？2：段藏的右臂！？
+
+？！
+
+[wt 0.5]
+[se ad144]
+[wt 1.0]
+＠段藏
+大意了……！
+[k]
+
+＠段藏
+我与她交错的瞬间……[r]右臂被拆下来了……！
+[k]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+酒吞！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠酒吞童子
+哎呀可怕可怕。[r]干嘛呀，摆出这副表情。
+[k]
+
+[charaFace I 9]
+
+＠酒吞童子
+只是力气稍微有些拿捏不准而已嘛。[r]而且你想呀，多么漂亮的人偶，
+[k]
+
+＠酒吞童子
+妾身可舍不得弄坏。[r]看仔细点。
+[k]
+
+＠酒吞童子
+这只手[#拆得很完整]吧？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+＠段藏
+……御主、金时阁下。
+[k]
+
+＠段藏
+两位请不必担心。[r]酒吞童子所言属实。
+[k]
+
+＠段藏
+我的右臂虽然被拆下来了……[r]但只要这样装回去……呜……！
+[k]
+
+[messageOff]
+[se ad1047]
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 4]
+[charaShake F 0.1 2 2 0.4]
+[charaFadein F 0.4 0,-20]
+[charaMove F 0,0 0.4]
+
+＠段藏
+……就恢复原状了。
+[k]
+
+？1：不要乱动。
+？2：我现在就给你施加回复术式。
+？！
+
+[messageOff]
+[wt 0.5]
+
+？1：礼装启动。
+
+？！
+
+[se bas3]
+[effect bit_talk_cure]
+[wt 2.0]
+＠段藏
+……非常感谢。[r]不，感激不尽。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+……[r]……
+[k]
+
+[charaFace A 7]
+
+＠坂田金时
+…………真受不了。
+[k]
+
+＠坂田金时
+反正以你的作风，[r]茨木与我们的对话想必早就被你听到了吧？
+[k]
+
+[charaFace A 9]
+
+＠坂田金时
+所以作何答复。[r]酒吞童子。
+[k]
+
+[bgmStop BGM_EVENT_71 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠酒吞童子
+可以哦？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠段藏
+！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+是吗。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠段藏
+秒答！？
+[k]
+
+＠段藏
+在这焦……焦灼的氛围下，竟然会……
+[k]
+
+？1：莫名
+？2：其妙！
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+嗯，没错。
+[k]
+
+＠坂田金时
+这样就行了，[%1]。
+[k]
+
+＠坂田金时
+不用强迫自己去[#理解:听懂]。[r]就算强行曲解消化也毫无意义。
+[k]
+
+＠坂田金时
+这就是鬼。
+[k]
+
+[messageOff]
+[charaFace A 7]
+[charaMove A 0,-10 0.8]
+[wt 1.2]
+[charaMove A 0,0 0.4]
+[wt 0.8]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth I 1]
+[charaDepth A 2]
+[charaTalk A]
+[charaFace A 0]
+[charaFace I 0]
+[charaFadeinFSR A 0.1 2]
+[charaFadeinFSL I 0.1 0]
+
+＠坂田金时
+酒吞。
+[k]
+
+＠酒吞童子
+什么事？
+[k]
+
+＠坂田金时
+可以认为你愿意帮助我们吧？
+[k]
+
+＠酒吞童子
+可以哦。
+[k]
+
+＠酒吞童子
+反正帕拉塞尔苏斯先生都回去了，[r]天览什么的也结束了，妾身闲得很哦。
+[k]
+
+＠酒吞童子
+所以啦，可以哦。
+[k]
+
+[charaFace I 1]
+
+＠酒吞童子
+妾身好想久违地与小家伙玩耍呢。[r]呵呵呵呵呵呵呵。上次并肩作战是多久之前的事了？
+[k]
+
+[charaFace A 4]
+
+＠坂田金时
+……并肩作战是第一次吧。
+[k]
+
+[charaFace I 0]
+
+＠酒吞童子
+哎呀，是吗？
+[k]
+
+[charaFace A 5]
+
+＠坂田金时
+话说在前头。[r]酒吞，敌人是货真价实的强者。
+[k]
+
+＠坂田金时
+八将神。我们跟其中二将打过了，强得离谱。[r]完全没有胜算，倒不如说[line 3]
+[k]
+
+[charaFace A 4]
+
+＠坂田金时
+我还[#没赢过]八将中的任何一位。[r]交过手，但解决他们的是赖光小姐和纲哥。
+[k]
+
+＠酒吞童子
+哎[line 3]
+[k]
+
+[charaFace I 1]
+＠酒吞童子
+对你来说，这事还真是稀奇呢。[r]呵呵呵呵。难道说，与强者交手没能让你热血沸腾吗？
+[k]
+
+＠酒吞童子
+是不是害怕了呀。[r]真可怜呐。
+[k]
+
+＠酒吞童子
+这样看来[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+[wt 1.2]
+
+＠酒吞童子
+倒是这位[&小家伙:小姑娘]，[r]是吧，胆子比你肥多了呢？
+[k]
+
+[messageOff]
+[se ad1042]
+[seVolume ad1042 0 0.6]
+[charaMove I 0,8 0.4]
+[charaMoveScale I 1.05 0.4]
+[wt 0.2]
+[seStop ad1042 0.4]
+[wt 0.5]
+[charaFace I 0]
+
+＠酒吞童子
+话说，[&小家伙:小姑娘]。
+[k]
+
+＠酒吞童子
+你是叫[%1]吧。
+[k]
+
+＠酒吞童子
+以你的年纪，在妾身看来，[r]虽然也可以算是个大人了……
+[k]
+
+[charaFace I 1]
+
+＠酒吞童子
+不过你还嫩得很呢。
+[k]
+
+＠酒吞童子
+年幼的孩子。[r]雏鸟、幼猫。
+[k]
+
+＠酒吞童子
+对吧？
+[k]
+
+＠酒吞童子
+只要看到你这双眼睛，妾身就看穿一切啦。
+[k]
+
+？1：[line 3]我已经不是小孩了。
+
+？！
+
+[messageOff]
+[wt 0.5]
+
+？1：虽说法律上是否算未成年……
+？2：还得看公元纪年当时怎么算。
+
+？！
+
+[charaFace I 10]
+
+＠酒吞童子
+呵呵，真是可爱呐。[r]小孩子都是这样说的啦。
+[k]
+
+＠酒吞童子
+妾身不是在责怪你哦？[r]反了，恰恰相反，妾身呀，是在夸奖你啦。
+[k]
+
+＠酒吞童子
+真了不起。[r]还是这么个小不点[line 3]
+[k]
+
+[charaFace I 0]
+
+＠酒吞童子
+[#却胆识过人]。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠酒吞童子
+说给妾身听听吧。
+[k]
+
+＠酒吞童子
+你为何要与那种恐怖的强者战斗呢？
+[k]
+
+？1：为了回去。
+
+？！
+
+[messageOff]
+[wt 0.5]
+
+？1：为了夺回世界。
+
+？！
+
+＠酒吞童子
+…………哎。
+[k]
+
+＠酒吞童子
+虽然不太明白，[r]但你的话听上去很有趣呢。对吧，小家伙？
+[k]
+
+[charaFace I 1]
+
+＠酒吞童子
+那么一个小不点却像模像样的。[r]呵呵，呵呵呵。
+[k]
+
+＠酒吞童子
+说得出这种话的喉咙一定非常美味吧，[r]舌头一定非常柔软吧[line 3]
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+[charaMoveScale F 1.05 0.3]
+[charaMove F 0,8 0.3]
+[se ad984]
+[wt 0.2]
+[wt 0.2]
+
+＠段藏
+请不要再开玩笑了。[r]酒吞童子阁下。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaScale F 1.0]
+[charaScale I 1.0]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠酒吞童子
+哎呀，坏心眼。
+[k]
+
+[charaFace I 9]
+
+＠酒吞童子
+小家伙也是吧？
+[k]
+
+＠酒吞童子
+看这距离，[r]是打算砍断妾身的双臂吧。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+当然啦。[r]你应该感谢我没打算砍下你的脑袋。
+[k]
+
+[charaFace A 5]
+
+＠坂田金时
+受你威胁的这家伙呀，[r]是我的同伴，不，是我老大。岂能让你吃掉！
+[k]
+
+＠坂田金时
+哪怕好不容易获得你的协助，[r]失去老大可就毫无意义了啦！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠酒吞童子
+知道啦。呵呵呵呵，真拼命呀！
+[k]
+
+＠酒吞童子
+既然被逼到这种地步，[r]想来敌人一定相当强大吧。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+嗯，没错。[r]关于这个问题[line 3]
+[k]
+
+[messageOff]
+[charaFace A 6]
+[wt 1.0]
+[charaFace A 0]
+
+＠坂田金时
+[%1]老大。[r]从你刚才与段藏小姐的对话来看，
+[k]
+
+＠坂田金时
+[#你们:迦勒底]应该知道[#岁刑神:那家伙]的来历。[r]我没猜错吧？
+[k]
+
+＠坂田金时
+那么[line 3]可以麻烦你向我们详细说明吗？
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

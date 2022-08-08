@@ -1,0 +1,851 @@
+
+
+＄03-00-04-12-5-0
+
+
+[soundStopAll]
+
+[charaSet A 1098123210 1 戈尔德鲁夫]
+[charaSet B 1098124510 1 达·芬奇]
+[charaSet C 98115300 1 福尔摩斯]
+[charaSet D 1098127610 1 佩佩隆奇诺]
+[charaSet E 1098176100 1 阿斯克勒庇俄斯]
+[charaSet F 1098167800 1 ？？？]
+[charaSet G 1098124310 1 戴比特]
+[charaSet H 98006100 1 敌人1]
+[charaSet I 98006100 1 敌人2]
+[charaSet J 98115000 1 特效用]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[scene 75500]
+
+[bgm BGM_EVENT_79 0.1]
+
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 1]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.5]
+
+
+？1：戴比特……？
+？2：隐匿者……？
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠戈尔德鲁夫
+戴……戴比特·泽姆·沃伊德！[r]不就是据说在[#隐匿者:Crypter]中实力首屈一指的男人吗！
+[k]
+
+＠戈尔德鲁夫
+那家伙应该在培育其他[#异闻带:Lostbelt]吧……！？[r]而……而且！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+那是……从者吗？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 2.5]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 21]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+……！
+[k]
+
+＠达·芬奇
+（瘴气过于浓厚，无法观测到实体！[r]　只能勉强根据轮廓来判断规模，然而[line 3]）
+[k]
+
+＠达·芬奇
+（……不会错。那是[#冠位:Grand]。[r]　那男人和冠位从者缔结了契约……！）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠阿斯克勒庇俄斯
+怎么了。你……那是……什么！
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth E 1]
+[charaDepth H 2]
+[charaDepth I 3]
+
+[se ad575]
+[wt 0.6]
+[charaPut H -286,0]
+[charaSpecialEffect H appearance 1 1.0]
+[wt 0.1]
+[seStop ad575 0.5]
+[se ad463]
+[charaPut I 286,0]
+[charaSpecialEffect I appearance 1 1.0]
+[wait charaSpecialEffect I]
+[wt 1.2]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.3]
+
+[se ad715]
+[effect bit_talk_v_slash02]
+[wt 0.1]
+[charaMoveScale F 1.1 0.1]
+[charaMove F 0,10 0.2]
+[wt 0.1]
+[charaFadeout F 0.2]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace H 0]
+[charaFadein H 0.1 0]
+
+[charaFace I 0]
+[charaFadein I 0.1 2]
+
+[charaShake H 0.05 3 2 0.8]
+[charaShake I 0.05 3 2 0.8]
+
+[wt 1.0]
+
+[se ad42]
+[charaEffect H bit_talk_atomization]
+[charaEffect I bit_talk_atomization]
+[wt 0.5]
+[charaFadeout H 0.7]
+[charaFadeout I 0.7]
+
+[charaScale F 1.0]
+
+[wt 2.5]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠阿斯克勒庇俄斯
+呜…………！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠？？？
+阎摩……夜摩天啊。[r]想裁决死者的思想是在开什么玩笑？
+[k]
+
+＠？？？
+死乃是吞噬之物。生乃是受供奉之物。[r]竟然允许死者获得自由，这是我的世界中不存在的[#无法:东西]。
+[k]
+
+＠？？？
+因此我吃光了。[r]但是很难吃啊。这就是它们没吃什么好东西的证据。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 1]
+
+＠戴比特
+不要冲得太靠前了。这里并不是你的土地。[r]没人对你说过不要在旅途中乱喝生水吗？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠？？？
+所言极是。我还是克制一点吧。[r]毕竟美食并非此行的目的。
+[k]
+
+[messageOff]
+[charaSpecialEffect F erasureReverse 1 1.0]
+[se ad595]
+[seVolume ad595 0 0.6]
+[charaEffectStop F bit_talk_40_black]
+[wait charaSpecialEffect F]
+[seStop ad677 0.4]
+[wt 1.4]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+[wt 1.5]
+
+
+[charaSet H 8001410 1 玛修]
+[charaSet I 1098123350 1 高扬斯卡娅]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_79 1.5]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠玛修
+戴比特先生……！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+＠戴比特
+…………
+[k]
+
+？1：（完全不看向我们这边……）
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠佩佩隆奇诺
+为……为什么？　你为什么会在这里？[r]简直吓人一大跳，不对！
+[k]
+
+＠佩佩隆奇诺
+我还没做好心理准备，而且发型也还没搞定啦！[r]讨厌，真是讨厌，稍等我一会儿！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+
+[charaFace D 3]
+[charaFadein D 0.1 2]
+
+＠戴比特
+等一下会比较好吗？[r]我是看你陷入绝境才出手相助的。
+[k]
+
+＠佩佩隆奇诺
+没……没有没有，这倒是真救了我一命呢！[r]谢谢！
+[k]
+
+[charaFace D 0]
+
+＠佩佩隆奇诺
+不过说真的，你为什么会来印度！？
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠戴比特
+是因为你在会议时的言行。
+[k]
+
+＠戴比特
+不是一帆风顺就是波澜壮阔。总之，[r]我注意到你没有提及自己管辖范围的状态。
+[k]
+
+＠戴比特
+尽管按照条约，我们对彼此的[#异闻带:Lostbelt]互不干涉，[r]但不至于连私人方面的接触都被禁止。
+[k]
+
+[charaFace G 6]
+
+＠戴比特
+没什么道理可言。只是种感觉。[r]就是所谓朋友间的感觉……给你添麻烦了吗？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠佩佩隆奇诺
+没有没有没有。但这可是[#异闻带:Lostbelt]哦？[r]不可能这么轻易移动吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠戴比特
+对我们而言是这样。但是，[r]我们的优势就在于能联络上这方面的运输者吧。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad7]
+[charaTalk I]
+[charaFace I 9]
+[charaFadein I 0.2 0,-25]
+[charaMove I 1 0.3]
+[wt 0.4]
+
+＠高扬斯卡娅
+没错～。绑架、暗杀、颠覆国家……[r]所有令您困扰的事都请尽管找我[line 2]NFF服务下单！
+[k]
+
+[charaFace I 17]
+
+＠高扬斯卡娅
+不过突然传来通讯，我这边也有自己的事情要忙，[r]如果可以的话我本想视而不见啦。
+[k]
+
+＠高扬斯卡娅
+但戴比特先生，你想啊，是稍微有些那啥的人嘛？[r]所以我就跳过『异星之神』，稍微～卖了他一点人情。
+[k]
+
+？1：高扬斯卡娅……！
+？！
+
+[charaFace I 0]
+
+＠高扬斯卡娅
+居然这么快就再次见到了各位，还真意外呢。[r]当然高扬斯卡娅亲就算到了印度，也在努力地欺凌人类哦？
+[k]
+
+＠高扬斯卡娅
+只不过考虑到一些情况[line 3][r]在[#阿周那:他]稍微离远点之前，
+[k]
+
+＠高扬斯卡娅
+我可不想在这里随心所欲、[r]恣意妄为引起他的注意。
+[k]
+
+[charaFace I 9]
+
+＠高扬斯卡娅
+我暂时会像照看郊游学生们的巴士陪导一样[r]闭上嘴巴一言不发，还请各位不要在意～。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠戴比特
+……其实，这也是为了判断这女人能力的精准度。[r]尽管费用很高昂，但你不必在意。
+[k]
+
+[charaFace G 7]
+
+＠戴比特
+但你究竟怎么了？缔结了契约的从者不在，[r]而且还和应该打倒的敌人并肩作战。
+[k]
+
+＠戴比特
+尽管这足以让我看清局势的几分钟很有意义[line 3][r]但却难以想象出事情的经过。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+[wt 1.0]
+[charaFace D 7]
+[wt 0.4]
+
+＠佩佩隆奇诺。
+因为我无法赞同身为这印度[#异闻带:Lostbelt]之楔的神[line 3][r]也就是他的做法啊。
+[k]
+
+＠佩佩隆奇诺
+而且毕竟遭到了『异星之神』[#使徒:Alterego]的出手干涉，[r]我也不能当着基尔什塔利亚的面予以批判。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+
+[charaFace D 0]
+[charaFadein D 0.1 2]
+
+＠戴比特
+为何无法赞同？[r]虽说存在方式很特殊，但并没有理论方面的破绽吧。
+[k]
+
+[charaFace D 7]
+
+＠佩佩隆奇诺
+是啊……但这一定是出于兴趣的问题。[r]就像是……生活方式、美学、信条之类的？
+[k]
+
+＠佩佩隆奇诺
+换言之，或许是因为我就是我。
+[k]
+
+[charaFace G 1]
+
+＠戴比特
+既然如此，就没有任何问题了。[r]而且你也没背叛[#隐匿者:Crypter]。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠佩佩隆奇诺
+那当然啦～。我怎么可能弃大家于不顾嘛。
+[k]
+
+[charaFace D 9]
+
+＠佩佩隆奇诺
+这些孩子也是呢。既然事已至此，[r]在问题解决前，我都打算照顾他们哦。
+[k]
+
+＠佩佩隆奇诺
+这样没问题吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠戴比特
+这样啊。[r]你确实是个很会照顾人的男人呢，妙涟寺。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+[charaShake D 0.05 3 3 1.0]
+
+＠佩佩隆奇诺
+呀啊啊啊啊！？
+[k]
+
+？1：Miao Lian Si？
+？2：能再说一遍吗？
+？！
+
+[charaSet H 1098124310 1 复用戴比特]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠戴比特
+能打倒神吗？[bgm BGM_EVENT_71 0.1]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠佩佩隆奇诺
+啊啊真是的，怎么一副若无其事的样子啦……
+[k]
+
+＠佩佩隆奇诺
+嗯，嗯。我努力过了，但说实话相当困难啦。[r]身为这里神明的他几乎是完美的存在。
+[k]
+
+[charaFace D 3]
+
+＠佩佩隆奇诺
+……如果你能给我一点建议，[r]说不定我就会振作起来哦？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+＠戴比特
+与完美的神为敌吗。[r]……唔。
+[k]
+
+[charaFace G 0]
+
+＠戴比特
+没法给出建议。神越是为神，就越强大。[r][#与已经完成的神战斗是在白费力气]。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠佩佩隆奇诺
+……这点我已经充分地体会到了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠戴比特
+应该改变战斗方式。
+[k]
+
+＠戴比特
+从空无一物的存在中抽取不出任何东西，[r]但如果是满足充盈的存在，就必定，能抽取出东西。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠佩佩隆奇诺
+…………！
+[k]
+
+＠佩佩隆奇诺
+就是让我[line 3]去拖他的后腿吗……？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaDepth H 2]
+
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.8]
+[charaFace H 1]
+[charaFadein H 0.2 1]
+[wt 1.0]
+[charaFadeout H 0.2]
+[wt 0.4]
+[charaTalk on]
+
+＠戴比特
+时间到了。没有时间去庆祝重逢了。[r]这件事不要告诉沃戴姆。
+[k]
+
+＠戴比特
+尽管没有违反条约，[r]但也不是值得提倡的行为。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠高扬斯卡娅
+啊，要搭乘回程班次了吗？　感谢您的惠顾～。
+[k]
+
+[charaFace I 0]
+
+＠高扬斯卡娅
+那么各位，我就先行告退了。[r]不过我很快就会再回来的。
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+[wt 0.8]
+[charaFace G 0]
+[wt 0.4]
+
+＠戴比特
+…………
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_71 1.5]
+
+[charaTalk off]
+
+[charaFace G 0]
+[charaFadein G 0.1 0]
+
+[charaFace I 0]
+[charaFadein I 0.1 2]
+
+[wt 0.8]
+
+[se adm20]
+
+[charaEffect G bit_talk_17_bl]
+[charaEffect I bit_talk_17_bl]
+[wt 1.0]
+[charaEffectStop G bit_talk_17_bl]
+[charaEffectStop I bit_talk_17_bl]
+[wt 0.5]
+[charaSpecialEffect G erasureReverse 1 1.2]
+[charaSpecialEffect I erasureReverse 1 1.2]
+[wt 2.0]
+
+[charaTalk on]
+
+？1：（只有最后那瞬间[line 3]看了这边一眼……？）
+？！
+
+[charaSet B 1039001 1 拉克什米]
+[charaSet C 1019001 1 罗摩]
+[charaSet F 23003001 1 伽内什]
+[charaSet G 98002000 1 芙芙]
+[charaSet H 8001410 1 玛修]
+
+[charaSet I 8001400 1 装甲·玛修_有风镜]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠戈尔德鲁夫
+哎哎，一会儿是[#隐匿者:Crypter]一会儿是[r]那只狐狸精乱糟糟的！　但现在最重要的是[line 3]
+[k]
+
+＠戈尔德鲁夫
+我说你们！　还能动吧！？[bgm BGM_EVENT_63 0.1]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠罗摩
+当然。别人已经为吾等争取了这么长的时间。[r]看来脱离绝境了呢，御主！
+[k]
+
+＠罗摩
+阿周那离开了！　死者们的数量减少了！[r][#隐匿者:Crypter]也消失了！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠伽内什
+而且还知道了疑似佩佩先生本名的字眼！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠芙芙
+芙呜芙？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠佩佩隆奇诺
+你……你在说什么呢～？[r]快忘记，快给我忘记！
+[k]
+
+[charaFace D 0]
+
+＠佩佩隆奇诺
+总而言之，没错，总而言之哦！
+[k]
+
+[charaFace D 8]
+
+＠佩佩隆奇诺
+……嗯哼。我又打起精神了。[r]意想不到的幸运能令心情好转呢。
+[k]
+
+＠佩佩隆奇诺
+好，接下来就是反击的时间了，大家一起努力吧～！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠拉克什米
+……哈。幸运吗。
+[k]
+
+＠拉克什米
+但愿这不是进一步不幸的开端[line 3][wt 0.8][charaFace B 2][r]但看来现在只能将它抛之脑后了！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+
+＠玛修
+[#灵基外骨骼:奥特瑙斯]，负荷减轻工序执行成功……[r]输出，再度稳定！
+[k]
+
+[messageOff]
+[wt 0.3]
+
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth I 2]
+
+[se ade57]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[charaTalk off]
+[charaFace I 7]
+[charaFadein I 0.3 1]
+[wt 0.5]
+[charaFadeout H 0.1]
+
+＠玛修
+能看出阿斯克勒庇俄斯有些动摇了！[r]御主，趁此时机！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_63 0.5]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,197 @@
+
+
+＄94-03-88-06-1-0
+
+[soundStopAll]
+
+[charaSet C 7020000 1 前田库·丘林·Alter]
+[charaSet D 11007001 1 织田吉法师]
+
+[charaSet E 1001000 1 特效用]
+
+[charaDepth E 1]
+
+
+[scene 79900]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠织田吉法师
+你就是统治这片土地的Alter吗？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠前田库·丘林·Alter
+……啊，你谁啊？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠织田吉法师
+我吗？　我是尾张的……[r]不，现在是迦勒底的织田吉法师！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠前田库·丘林·Alter
+…………
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠织田吉法师
+而且你相当奇装异服呢。[r]居然还有带刺的帅气的尾巴。
+[k]
+
+＠织田吉法师
+年轻时代的又左也很奇装异服，[r]而你应该有过之无不及吧？
+[k]
+
+[charaFace D 1]
+
+＠织田吉法师
+话说那身铠甲是在哪儿买的？　堺？　还是大津？
+[k]
+
+？1：小心点，他强得离谱哦！
+
+？2：我觉得外面应该没有卖。
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 0.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠前田库·丘林·Alter
+…………哼！
+[k]
+
+[messageOff]
+[se ad171]
+[fowardEffect bit_bolg_02]
+
+[charaFadeout C 0.1]
+[wt 0.4]
+[fowardEffectDestroy bit_bolg_02]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[se ad7]
+[charaMoveReturn D 30,0 0.2]
+[wt 0.4]
+
+＠织田吉法师
+哎哟！　看来这家伙确实很强。[bgm BGM_EVENT_3 0.1]
+[k]
+
+＠织田吉法师
+……不，无疑很强！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠前田库·丘林·Alter
+……够了，你们到底打还是不打？
+[k]
+
+[messageOff]
+[se ad632]
+[charaScale E 2.0]
+[charaPut E 0,0]
+[charaEffect E bit_talk_charge_red]
+[wt 2.5]
+
+[seStop ad632 0.5]
+[charaPut E 1200,1200]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠织田吉法师
+哇哈哈哈哈哈！　这冷静的霸气！[r]由于强者无法隐藏自己，所以生活一定非常艰辛吧！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[charaPut E 0,0]
+
+＠前田库·丘林·Alter
+哼，你看上去也相当不赖嘛。
+[k]
+
+[charaFace C 2]
+
+＠前田库·丘林·Alter
+我正无聊呢，稍微陪你玩一会儿。
+[k]
+
+[charaPut E 1200,1200]
+[charaEffectStop E bit_talk_charge_red]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠织田吉法师
+求之不得！　你可别小看尾张的大笨蛋哦！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

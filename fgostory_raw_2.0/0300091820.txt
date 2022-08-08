@@ -1,0 +1,111 @@
+
+＄03-00-09-18-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 3039001 1 加雷斯]
+[charaSet B 98016000 1 反叛军士兵A]
+[charaSet C 98016000 1 反叛军士兵B]
+
+
+[scene 120900]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_25 0.1]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠加雷斯
+今早的巡哨结束啦～！[r]四周不见敌影，伦蒂尼恩今天也很和平～！
+[k]
+
+[charaFace A 0]
+＠加雷斯
+听说牛津之战也以谈判的形式告终了，
+[k]
+
+＠加雷斯
+圆桌军的大家这会儿应该正在餐厅街放纵游玩吧？[r]不知道会有些什么样的菜式呢～！
+[k]
+
+[bgmStop BGM_EVENT_25 2.0]
+[charaFace A 12]
+＠加雷斯
+[FFFFFF]？[-]　怎么这么吵？[r]城堡内好像[line 3]
+[k]
+
+[charaFace A 9]
+＠加雷斯
+[line 3]为什么？[r]为什么大家都拿着剑战斗？
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaTalk off]
+[charaFace B 2]
+[charaFace C 2]
+[charaFadeinFSR B 0.4 256,0]
+[charaFadeinFSL C 0.4 -256,0]
+[wt 0.4]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk on]
+＠反叛军士兵A
+找到了，是妖精！[r]是跟『预言之子』一伙儿的家伙！
+[k]
+
+＠反叛军士兵B
+落单了吗？　好，趁现在杀了她！[r]反正是肮脏的圆桌军！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[bgm BGM_EVENT_24 0.4 0.4]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_24 0.4 1.0]
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠加雷斯
+哎[line 3]哎？[r]等一下[line 3]这是什么意思？
+[k]
+
+＠加雷斯
+为什么反叛军的人会攻打伦蒂尼恩……？
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

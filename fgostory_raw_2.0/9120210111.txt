@@ -1,0 +1,361 @@
+
+
+
+＄91-20-21-01-1-1
+
+[soundStopAll]
+
+[charaSet A 2021002 1 巴御前]
+[charaSet B 99502600 1 玛修]
+[charaSet C 98006200 1 敌人]
+
+[charaSet E 98006100 1 dummy特效1]
+[charaSet F 98006100 1 dummy特效2]
+[charaSet G 98006100 1 dummy特效3]
+[charaSet H 98006100 1 dummy特效4]
+[charaSet I 98006100 1 dummy特效5]
+[charaSet J 98006100 1 dummy特效6]
+
+[charaScale A 1.05]
+[charaScale F 0.55]
+[charaScale G 0.45]
+[charaScale H 0.55]
+[charaScale I 0.65]
+
+[bgm BGM_EVENT_3 0.1]
+
+
+[scene 20805]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad25]
+[charaShake C 0.04 3 2 0.8]
+[wt 1.1]
+
+[se bac1]
+[charaFadeout C 0.4]
+[charaMove C 0,10 0.3]
+[charaMoveScale C 1.2 0.3]
+[charaEffect E bit_talk_41]
+[wt 0.5]
+[charaMoveScale C 1.05 0]
+[charaPut E 2000,2000]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+[charaMoveScale A 1.0 0.2]
+[charaMove A 160,20 0.2]
+[wt 0.15]
+
+[se bac4]
+[seVolume bac4 0 0.3]
+[charaEffect F bit_talk_claw 0,-200]
+[charaMove A 300,-15 0.2]
+[wt 0.15]
+
+[se ad671]
+[seVolume ad671 0 0.7]
+[charaMove A 330,-15 0.2]
+[wt 0.7]
+[seStop ad671 0.3]
+
+[charaFace A 2]
+[charaMove A 0,0 0.3]
+[se bac145]
+[seVolume bac145 0 0.4]
+[charaEffect G bit_talk_13 500,-260]
+[wt 0.14]
+
+[se bac145]
+[seVolume bac145 0 0.4]
+[charaEffect H bit_talk_13 -20,-140]
+[wt 0.16]
+
+[se bac145]
+[seVolume bac145 0 0.6]
+[charaEffect I bit_talk_13 -410,-260]
+[charaMove A -300,-15 0.3]
+[wt 0.22]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.2]
+
+[se bac16]
+[fowardEffect bit_talk_14 -170,0]
+[charaMoveScale C 1.03 0.1]
+[charaShake C 0.05 2 3 0.2]
+[wt 0.17]
+
+[se bac16]
+[fowardEffect bit_talk_14 120,-190]
+[charaMoveScale C 1.02 0.1]
+[charaShake C 0.05 2 3 0.2]
+[wt 0.2]
+
+[se bac16]
+[fowardEffect bit_talk_14 150,90]
+[charaMoveScale C 1.0 0.1]
+[charaShake C 0.05 2 3 0.2]
+[wt 0.5]
+
+[se ad26]
+[seVolume ad26 0 0.6]
+[charaMove C 0,-15 0.3]
+[charaShake C 0.05 2 3 0.3]
+[wt 0.9]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠巴御前
+[line 3]就是现在！
+[k]
+
+[messageOff]
+[se bac1]
+[charaPut E 0,0]
+[charaFadeout A 0.4]
+[charaMove A 0,10 0.2]
+[charaMoveScale A 1.2 0.2]
+[wt 0.4]
+[charaMoveScale A 1.0 0]
+[charaPut E 2000,2000]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.3]
+
+[se bac511]
+[effect bit_talk_gram_slash_01]
+[charaShake C 0.04 3 3 0.3]
+[wt 1.0]
+
+[se ad26]
+[charaShake C 0.04 3 3 0.7]
+[wt 1.0]
+
+[messageOff]
+[se ad42]
+[charaSpecialEffect C enemyErasure 0,0 1.5]
+[wt 0.7]
+
+[wait charaSpecialEffect C]
+[bgmStop BGM_EVENT_3 1.2]
+[charaFadeout C 0.1]
+[wt 1.2]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠巴御前
+……[r]……
+[k]
+
+[charaFace A 0]
+
+＠巴御前
+……未发现敌影。[r]尽管对手数量很多，但基本结束了吧。
+[k]
+
+？1：看来是这样。
+？2：辛苦了，巴小姐。
+
+？！
+
+[charaFace A 5]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠巴御前
+……不敢，御主。[r]都是因为我的任性，才会让您有这种遭遇。
+[k]
+
+＠巴御前
+实在是无地自容。[wt 0.7][charaFace A 0][r]但是，那个，呃……
+[k]
+
+[messageOff]
+[wt 0.7]
+
+[charaFaceFade A 3 0.8]
+[charaShake A 0.04 2 0 0.8]
+[wt 1.2]
+
+＠巴御前
+巴[line 3]好像[line 3]稍微想开了一点！
+[k]
+
+[charaFace A 0]
+
+＠巴御前
+感谢您倾听我的故事。[r]我的新主君。
+[k]
+
+＠巴御前
+准确地说……我并不是[#巴御前本人]。[r]只是人理抛出的影子。
+[k]
+
+＠巴御前
+肉体也像您看到的这样，[r]是驰骋战场女武者时的模样。
+[k]
+
+＠巴御前
+我对巴的人生怀有很深的情感，[r]但现在我的使命是保护您。
+[k]
+
+[charaFace A 1]
+＠巴御前
+带领您回到健全而平静的日常，[r]一定就是我最为重要的职责！
+[k]
+
+＠巴御前
+原本回顾过去或许是没有必要的……
+[k]
+
+[charaFace A 0]
+＠巴御前
+但请嘲笑我是个不成熟的英灵吧。[r]今后我会努力不再让您见到这样的丑态！
+[k]
+
+？1：不会，我很高兴能和你聊天。
+
+[charaFace A 1]
+
+＠巴御前
+…………谢谢您。御主。
+[k]
+
+
+？2：……刚才你那句“因为”接下来想说什么？
+
+[charaFace A 3]
+
+＠巴御前
+啊，嗯。[r]呃，因为[line 3]
+[k]
+
+[charaFace A 0]
+
+＠巴御前
+……[r]……
+[k]
+
+＠巴御前
+………………因为，您也……
+[k]
+
+＠巴御前
+是为了某种无法替代的宝贵存在而战斗的人。[r]至少，对巴我来说……
+[k]
+
+[charaFace A 1]
+＠巴御前
+您与义仲大人十分相似，[r]也同样是心中怀着旭日光辉的人。
+[k]
+
+[branch sel01c]
+
+
+？！
+
+[branch sel01b]
+
+[label sel01c]
+
+？1：太阳的光辉吗……
+
+[charaFace A 1]
+
+＠巴御前
+嗯！
+[k]
+
+？2：未免太抬举我了吧。
+
+[charaFace A 1]
+
+＠巴御前
+不，没有这种事！
+[k]
+
+
+？！
+
+[label sel01b]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaEffect J bit_talk_10_MiddleLevel]
+[wt 0.2]
+
+[se ad13]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+＠玛修
+啊，连上了！
+[k]
+
+[charaFace B 7]
+＠玛修
+还好你们都平安无事，前辈、巴小姐！[r]管制室已经中止了病毒扫描！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠巴御前
+啊，玛修阁下！
+[k]
+
+＠巴御前
+嗯，如您所见，[%1]阁下平安无事！[r]我们即将一起返回……
+[k]
+
+[charaFace A 1]
+
+＠巴御前
+还请您稍等片刻！
+[k]
+
+[messageOff]
+[wt 1.4]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

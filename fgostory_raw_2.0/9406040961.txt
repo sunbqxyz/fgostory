@@ -1,0 +1,148 @@
+
+
+
+＄94-06-04-09-6-1
+
+[soundStopAll]
+[enableFullScreen]
+
+
+
+
+
+[charaSet A 1098220610 1 カーマ]
+[charaSet B 1098215400 1 ダ・ヴィンチ]
+[charaSet C 4008300 1 黒髭]
+[charaSet D 1098220400 1 清少納言]
+[charaSet E 4039300 1 マンドリカルド]
+
+
+[scene 130800]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠カーマ
+という訳で答えは[r]『背の低い順に倒す』でした♡
+[k]
+
+＠カーマ
+もちろん逆でも正しいですよ。[r]その分、ご褒美は盛り沢山ですし。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 1]
+
+[label INPUT_SELECT_BRANCH_1]
+
+＠マンドリカルド
+謎解きも敵も楽勝だったっすね。[r]ただ、その分だけ見返りも少なかったみたいっすけど。
+[k]
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_2]
+
+＠マンドリカルド
+謎解きは……あまり難しくなかったっすけど……。[r]純粋に普通に……倒すのが大変だったっす……。
+[k]
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_3]
+
+
+？1：まったくだ……
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠黒髭
+で、ここまでやって何も無いってことはないよね、[r]さすがに！
+[k]
+
+[charaFace C 2]
+＠黒髭
+その場合は、怒りのあまりこの遺跡に天守閣でも[r]建設しかねませんぞ朕は。
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.2]
+[cueSe SE_21 21_ade592]
+[wt 0.8]
+
+[charaFace B 23]
+＠ダ・ヴィンチ
+ステくんが反応したね。[r]エネミーが出てきた方に何かあるみたいだよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠清少納言
+うぇっへっへ。[r]こりゃあ聖杯の欠片は頂いたも同然ですぜ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+
+＠黒髭
+今からそんな風に未来予想図描いてると、[r]しっぺ返しのフラグとか、立たない？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠清少納言
+えー、こんなので立つわけないじゃん。
+[k]
+
+[charaFace D 8]
+＠清少納言
+もし本当に立ってたら、[r]鼻から担々麺を[#啜:すす]ってもいいよ！
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

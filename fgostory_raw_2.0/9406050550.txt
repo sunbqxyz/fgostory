@@ -1,0 +1,712 @@
+
+＄94-06-05-05-5-0
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet B 1098220500 1 カイニス]
+[charaSet C 1098215500 1 ゴルドルフ]
+[charaSet D 5039000 1 スカサハ＝スカディ]
+[charaSet E 2031001 1 ナポレオン]
+[charaSet G 6024000 1 スカサハ]
+
+[charaSet J 1033300 1 シグルド]
+[charaSet K 7038000 1 ブリュンヒルデ]
+
+[charaSet H 1098181810 1 オデュッセウス]
+[charaFilter H silhouette 00000080]
+
+[charaSet F 4040000 1 エウロペ_シルエット]
+[charaFilter F silhouette 00000080]
+[charaSet I 4040000 1 エウロペ]
+
+[charaSet L 98115000 1 エフェクト用ダミー]
+[charaSet M 98115000 1 エフェクト用ダミー]
+[charaSet N 98115000 1 エフェクト用ダミー]
+
+[charaDepth N 8]
+[charaDepth L 6]
+[charaDepth M 5]
+[charaDepth K 5]
+
+[charaPut N 2000,2000]
+[charaEffect N bit_talk_barrier_atc]
+
+[scene 129700]
+
+[bgm BGM_EVENT_80 0.1]
+
+
+[fadein black 0.5]
+[wait fade]
+
+[se ad817]
+[wt 0.2]
+[se ade337]
+[seStop ade337 0.7]
+[wt 0.7]
+
+[charaPut L 256,-75]
+[charaPut M -256,-75]
+
+[charaEffect L bit_talk_impactlanding]
+[se bac325]
+[seStop bac325 2.0]
+[wt 0.4]
+[shake 0.05 2 4 0.4]
+[wt 0.3]
+[charaEffect M bit_talk_impactlanding]
+[shake 0.05 2 4 1.5]
+[se bac325]
+[seStop bac325 2.0]
+[wt 2.7]
+
+[cueSe SE_21 21_ade605]
+[seVolume 21_ade605 0 0.2]
+[seStop 21_ade605 1.4]
+[se ad634]
+[seVolume ad634 0 0.9]
+[seStop ad634 1.4]
+[charaPut N 0,0]
+[charaTalk K]
+[charaFace K 5]
+[charaFadein K 0.1 1]
+[wt 1.5]
+
+[charaFadeout K 0.1]
+[charaPut N 2000,2000]
+[wt 0.1]
+
+[charaEffectStop N bit_talk_barrier04]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+
+＠ナポレオン
+流石！　並の砲撃では歯が立たん！
+[k]
+
+[charaFace E 4]
+
+＠ナポレオン
+……っとぉ！
+[k]
+
+[messageOff]
+
+[effect bit_talk_14]
+[se ad170]
+[wt 0.1]
+[charaMove E -50,0 0.2]
+[charaShake E 0.03 2 2 0.3]
+[wt 0.7]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠カイニス
+チッ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 9]
+[charaFadein J 0.1 1]
+
+
+＠シグルド
+槍を[#銛:もり]に変えて尚、その技の冴え。[r]見事の一語に尽きるな。ハラショー。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+
+＠カイニス
+褒めてねえでテメェも宝具解放してみろ！[r]案外、スカディの城あたり砕けるかもしんねーぜ！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠スカサハ
+ふふ！　生き生きとして大変結構！
+[k]
+
+＠スカサハ
+ならばスカディ。異郷の私よ、[r]そろそろ二人のスカサハの真の力を見せる時かな？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠スカサハ＝スカディ
+真の力……
+[k]
+
+[charaFace D 6]
+
+＠スカサハ＝スカディ
+はて、そういうモノは……[r]何かあっただろうか……
+[k]
+
+
+＠スカサハ＝スカディ
+原初のルーンの真価とか、[r]オーディンより譲り受けたアレとか？
+[k]
+
+＠スカサハ＝スカディ
+いやしかし二人合わせての力となると、[r]些か違うか……
+[k]
+
+[charaFace D 4]
+
+＠スカサハ＝スカディ
+うーんスカサハよ。
+[k]
+
+
+＠スカサハ＝スカディ
+すまない、私には覚えがないのだが[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠スカサハ
+私にもない！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠スカサハ＝スカディ
+適当だな！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+
+＠カイニス
+この期に及んで笑わせる！[r]ンなら礼に、この霊基のとっておきでも[line 3]
+[k]
+
+[bgmStop BGM_EVENT_80 1.5]
+＠H：？？？
+待て！
+[k]
+
+＠カイニス
+いいとこで何だ、つーか誰だ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[bgm BGM_MAP_23 0.1]
+[wt 0.4]
+
+
+＠H：？？？
+ここはマスターの拠点なのだと聞いた。[r]そして、これ以上の戦闘は拠点の破壊にまで及びかねん！
+[k]
+
+
+＠H：？？？
+ならば俺は戦いを止めよう。[r]そのために[line 3]
+[k]
+
+＠H：？？？
+来い！　木馬！
+[k]
+
+＠H：？？？
+アイギス接続！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_MAP_23 1.0]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+[scene 10000]
+[wt 0.5]
+
+[fadein black 0.1]
+[wait fade]
+
+[criMovie talk_mov112 bgmPlay true]
+
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 129700]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_5 0.1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+
+
+＠カイニス
+[#冒険野郎:オデュッセウス]の木馬かよ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+[charaShake C 0.01 4 4 0]
+
+＠ゴルドルフ
+あわわわわわわわわ……[r]た、ただでさえ戦線が拡大しているというのに、
+[k]
+
+＠ゴルドルフ
+加えてあんなモノまで参戦するのか！？[r]本当にキャンプが保たんぞ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaShakeStop C]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠I：？？？
+[line 3]では、木馬は[#うちの子:タ　ロ　ス]がなんとかしましょう。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+えっ。
+[k]
+
+[messageOff]
+[shake 0.05 0 3 2.3]
+[se ad14]
+[wt 1.5]
+
+[wipeout rectangleStripUpToDown 0.7 1]
+[seStop ad14 0.7]
+[bgm BGM_MAP_5 0.7 0.5]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+
+[charaSet L 1098204000 1 ディオスクロイ・カストロ_シルエット]
+[charaFilter L silhouette 00000080]
+[charaSet M 1098204100 1 ディオスクロイ・ポルクス_シルエット]
+[charaFilter M silhouette 00000080]
+
+[charaSet N 1098204000 1 ディオスクロイ・カストロ]
+[charaSet O 1098204100 1 ディオスクロイ・ポルクス]
+
+[imageSet H cut278_talos 1]
+
+[charaDepth F 8]
+[charaDepth I 7]
+[charaDepth L 8]
+[charaDepth M 7]
+[charaDepth N 5]
+[charaDepth O 6]
+
+[scene 106800]
+
+[charaFadein H 0.1 0,-150]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.7 1]
+[bgm BGM_MAP_5 0.7 1.0]
+[wait wipe]
+
+[wt 1.5]
+
+＠ゴルドルフ
+な[messageShake 0.03 5 5 0.3]！？
+[k]
+
+＠ゴルドルフ
+なんだねあのデカいのは！[r]い、いや待て、確かあれは……
+[k]
+
+
+＠カイニス
+[#青銅巨人:タ　ロ　ス]！
+[k]
+
+＠カイニス
+おいおい、今度は神妃エウロペかァ！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.7 1]
+[bgm BGM_MAP_5 0.7 0.5]
+[wait wipe]
+
+[charaFadeout H 0.1]
+
+[scene 129700]
+[wt 1.0]
+
+[wipein rectangleStripUpToDown 0.7 1]
+[bgm BGM_MAP_5 0.7 1.0]
+[wait wipe]
+
+[charaTalk depthOff]
+[charaTalk off]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.5]
+[charaFadeout F 0.4]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 1.4]
+
+[charaFace I 1]
+
+＠エウロペ
+ええ、そうよ。とっても楽しそうね、カイニス。[r]あなたがそんな風に笑うのを見ていると、
+[k]
+
+
+＠エウロペ
+わたくしも楽しくなってしまいそう。[r]ふふ。ねえ、あなたたち？
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaFace L 0]
+[charaFadein L 0.4 -100,0]
+[charaFace M 0]
+[charaFadein M 0.4 100,0]
+[wt 1.4]
+
+[charaFadeout L 0.4]
+[charaFadeout M 0.4]
+[charaFace N 0]
+[charaFadein N 0.1 -100,0]
+[charaFace O 0]
+[charaFadein O 0.1 100,0]
+[wt 1.4]
+
+[charaTalk on]
+[charaTalk N]
+[charaFace N 2]
+
+＠ディオスクロイ・カストロ
+まったく楽しくはない！
+[k]
+
+[charaFace O 4]
+
+＠ディオスクロイ・ポルクス
+兄様、もう……
+[k]
+
+
+＠ディオスクロイ・ポルクス
+神妃の助けになるなら力を貸すにやぶさかでない、[r]と言っていたではないですかっ。
+[k]
+
+[charaFace O 0]
+
+＠ディオスクロイ・ポルクス
+それにさっきも、ボイジャーくんと[line 3]
+[k]
+
+[charaFace N 3]
+
+＠ディオスクロイ・カストロ
+ポ、ポルクス。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1]
+[bgm BGM_MAP_5 0.5 0.5]
+[wait wipe]
+
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1]
+[bgm BGM_MAP_5 0.5 1.0]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠ナポレオン
+神代の兵装まで揃い踏みか！[r]いよいよ派手になってきたが、どうするね！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+
+＠スカサハ＝スカディ
+む、むむむむむ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+
+＠スカサハ
+[f large]とても面白い！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[bgm BGM_MAP_5 1.5 0.5]
+[wait wipe]
+
+[charaFadeout G 0.1]
+
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠カイニス
+あちらさんはまだまだやる気みたいだな、おい。[r]ンじゃあ続けるとするか、ゴッフ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+……。[r]……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠カイニス
+おいどうした、ゴルドルフ・ムジーク！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+い……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+[bgmStop BGM_MAP_5 1.5]
+
+＠カイニス
+い？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_94 0.1]
+＠ゴルドルフ
+[f x-large]い[messageShake 0.03 6 6 0.5]い加減にしたまえーッ！
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_94 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+
+[scene 129702]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[se adm13]
+[seVolume adm13 0 0]
+[seVolume adm13 0.7 0.7]
+[wt 2.0]
+[seStop adm13 1.0]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠カイニス
+とまあ、そんな感じだ！
+[k]
+
+[charaFace B 13]
+
+＠カイニス
+最後の最後はうやむやっつーか、[r]アレだ。ゴルドルフ・ムジークが男を見せたって形だ。
+[k]
+
+
+＠カイニス
+最後は、神妃エウロペの仕切りで、[r]その場の全員で[#夕:ゆう]メシ作ることになって……
+[k]
+
+[charaFace B 1]
+
+＠カイニス
+ま、なかなか悪くない一日だった。
+[k]
+
+＠カイニス
+退屈どころか、[r]休む暇すらありゃしなかったぜ。
+[k]
+
+[messageOff]
+[charaFace B 13]
+[wt 1.0]
+[charaFace B 11]
+
+＠カイニス
+まあ何だ。留守番の最中も、[r]そこそこ楽しくやらせてもらったってコトで[line 3]
+[k]
+
+？1：…………
+？！
+
+[charaFace B 12]
+[bgmStop BGM_EVENT_77 1.0]
+
+＠カイニス
+お。
+[k]
+
+？1：……………………ｚｚｚ
+？！
+
+[charaFace B 11]
+
+
+[bgm BGM_EVENT_25 0.1]
+＠カイニス
+はは。[r]寝ちまったか。
+[k]
+
+
+＠カイニス
+じゃあまあ、オデュッセウスじゃねーが……[line 3]
+[k]
+
+
+＠カイニス
+いい夢を。[r]んで明日にはいい冒険を。ってな。
+[k]
+
+＠カイニス
+毛布くらいは掛けてやるよ。[r]ったく。
+[k]
+
+[messageOff]
+[charaFaceFade B 23 0.7]
+[wt 2.2]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_25 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

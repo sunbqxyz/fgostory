@@ -1,0 +1,382 @@
+
+
+＄94-00-77-06-2-1
+
+[soundStopAll]
+
+[se ad14]
+[seVolume ad14 0 0.5]
+[bgm BGM_EVENT_3 0.1]
+
+[charaSet A 8001001 1 玛修]
+[charaSet B 5012001 1 尼托克丽丝]
+[charaSet C 2003001 1 罗宾汉]
+[charaSet D 1010001 1 伊丽莎白]
+[charaSet E 7013001 1 清姬]
+[charaSet F 7022001 1 茨木童子]
+[charaSet G 7023001 1 源赖光]
+[charaSet H 6009002 1 静谧哈桑]
+
+[scene 31900]
+[fadein black 2.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 1]
+＠玛修
+呜……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠伊丽莎白
+喂，我说你们！[r]怎么那么难缠啦！？
+[k]
+
+＠伊丽莎白
+无论打倒多少次都又跑回来什么的，[r]简[charaFace D 7]直像僵尸一样，说实话特别恐怖！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠清姬
+居然说我们是僵尸，太失礼了吧。[r]这身躯的动力，完全只有“爱”啊。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠源赖光
+这世间没有能胜过亲子之爱的存在。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠静谧哈桑
+……所以说，我只希望被触摸一下就满足了。
+[k]
+
+[charaFace H 3]
+＠静谧哈桑
+比如，摸一下头，或是摸一下面颊什么的……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠玛修
+再这样下去……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1024,0]
+[charaMove F 1 0.2]
+[wait charaMove F]
+＠茨木童子
+好，就是现在！
+[k]
+
+[se ad11]
+[charaEffect F bit_talk_gouka]
+＠茨木童子
+疾驰吧，丛原火！[r][line 3]『罗生门大怨起』！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[seStop ad11 0.4]
+[messageOff]
+[shake 0.05 7 7 1.0]
+[charaEffectStop F bit_talk_gouka]
+[se bac27]
+[effect bit_talk_29]
+[fadeout white 1.0]
+[wait effect]
+[wait fade]
+
+[effectStop bit_talk_29]
+
+[messageOff]
+
+[fadein white 1.0]
+[shake 0.05 5 5 1.5]
+[wait fade]
+
+[seStop bac27 0.7]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+[charaShake H 0.05 3 3 0.7]
+＠静谧哈桑
+呀啊！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+[charaShake G 0.05 3 3 0.7]
+＠源赖光
+该死的蝼蚁……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[charaShake E 0.05 3 3 0.7]
+＠清姬
+区区这种程度！
+[k]
+
+[charaFace E 0]
+＠清姬
+对在熔岩地带都能平安无事的我们来说，[r]这如同清风……！
+[k]
+
+[charaFace E 4]
+＠清姬
+……哎，哎呀？[r]御主呢……那位大人上哪儿去了？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠源赖光
+找到了，在那里。[r]啊[charaFace G 2]啊，那边不行啊！
+[k]
+
+＠源赖光
+那里是熔岩地带……！！[r]请等一下，妈妈现在就来救你！
+[k]
+
+＠源赖光
+跳！
+[k]
+
+[se bac1]
+[charaMove G -1024,128 0.2]
+[wait charaMove G]
+
+[charaFadeout G 0.1]
+[wt 0.7]
+
+[shake 0.05 5 5 0.4]
+[se ad36]
+[wt 0.4]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠清姬
+啊！[r]我可不能落于人后！
+[k]
+
+[charaFace E 1]
+＠清姬
+请等一下，御主！
+[k]
+
+[se bac1]
+[charaMove E -1024,128 0.2]
+[wait charaMove E]
+
+[charaFadeout E 0.1]
+[wt 0.7]
+
+[shake 0.05 3 3 0.4]
+[se ad36]
+[wt 0.4]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠静谧哈桑
+哎？[r]啊，呃……
+[k]
+
+＠静谧哈桑
+那，那我也[line 3]
+[k]
+
+[se bac1]
+[charaMove H -1024,128 0.2]
+[wait charaMove H]
+
+[charaFadeout H 0.1]
+[wt 0.7]
+
+[shake 0.05 3 3 0.4]
+[se ad36]
+[wt 0.4]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1024,0]
+[charaMove F 1 0.2]
+[wait charaMove F]
+＠茨木童子
+很好，趁现在！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+茨木童子小姐，您究竟用了什么啊？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠茨木童子
+嗯，利用尼托克丽丝的魔术，[r]做了一个[#御主:这家伙]的[charaFace F 1]人偶啦。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠尼托克丽丝
+是在战斗过程中，躲在木乃伊们的背后做的，[r]没想到竟然行得通……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠茨木童子
+固执的爱会令思考变得狭隘。[r]呵[charaFace F 1]呵，没想到那个赖光居然会中这种策略！
+[k]
+
+＠茨木童子
+嘎嘎，太不像样了！[r]掉进熔岩里，烧得残渣都不[line 3]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[communicationCharaLoop 98003003 1 5 0 0]
+[communicationCharaFace 2]
+＠Dr.罗曼
+……不，那三位都还活着，而且还在游泳哦！[r]你们还是趁现在快点逃跑吧！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[wt 0.3]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠茨木童子
+不会吧～！？
+[k]
+
+？1：全力冲刺！！
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠玛修
+啊，好！[r]各位，赶快！！
+[k]
+
+[se ad59]
+[charaFadeout A 0.7]
+[wt 0.1]
+
+[seStop ad59 1.5]
+[wt 1.5]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠茨木童子
+那些家伙们明明不是鬼种，[r]为何跳进熔岩还能活着啦！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠玛修
+大概是因为爱吧！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[charaShake F 0.05 3 3 0.7]
+＠茨木童子
+爱好可怕啊！
+[k]
+
+[wt 0.4]
+
+[se ad59]
+[charaFadeout F 0.7]
+[seStop ad59 1.5]
+[wt 1.5]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_3 0.4]
+[seStop ad14 0.4]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[soundStopAll]
+[end]

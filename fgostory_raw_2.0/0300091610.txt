@@ -1,0 +1,582 @@
+
+＄03-00-09-16-1-0
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5045001 1 阿尔托莉雅]
+[charaSet B 5045000 1 预言之歌]
+[charaSet C 1098213600 1 摩根]
+[charaSet D 1098215200 1 摩根2]
+[charaSet E 4031001 1 瑞德拉·比特]
+[charaSet F 1098231510 1 玛修]
+[charaSet G 1098124500 1 达·芬奇]
+[charaSet H 5021001 1 贤者格里姆]
+[charaSet I 1049000 1 千子村正]
+[imageSet J back10000 1]
+[charaScale J 1.01]
+
+[imageSet K back10001 1]
+[charaScale K 1.01]
+
+[sceneSet L 115100 1]
+[charaScale L 1.01]
+
+[charaSet N 98115000 1 特效用]
+[charaScale N 1.1]
+
+[charaPut N 2000,2500]
+[charaEffect N bit_talk_noise_gr]
+
+[scene 10000]
+
+[se ad556]
+[seVolume ad556 0 0]
+[wt 0.1]
+
+[seVolume ad556 1.5 0.8]
+[fadein black 1.5]
+[wait fade]
+
+[scene 123102 2.5]
+[wt 2.9]
+
+[seStop ad556 2.0]
+[wt 1.5]
+
+[cueSe SE_21 21_ad1109]
+[seVolume 21_ad1109 0 0.6]
+[wt 2.5]
+[seStop 21_ad1109 2.0]
+[wt 2.0]
+
+[bgm BGM_EVENT_11 0.1]
+
+
+＠阿尔托莉雅
+耳边传来了钟之声。[r]……耳边传来了骨之声。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+
+＠预言之歌
+“港口虽回归海滨，灾厄则去往遥远天际。”
+[k]
+
+
+＠阿尔托莉雅
+妖精们的谢罪之证。[r]接受罪孽的灵魂之声。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+
+＠预言之歌
+“圆堡垒焚烧殆尽，水之钟显现于世。”
+[k]
+
+
+＠阿尔托莉雅
+[line 3]当它们全部被敲响之时，
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠预言之歌
+“罪人承认罪状，斩首刀落首级。”
+[k]
+
+
+＠阿尔托莉雅
+[line 3]乐园妖精将……
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠预言之歌
+“『预言之子』结束使命，告别原本所在之地。”
+[k]
+
+
+[messageOff]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.5 0.8]
+[effect bit_talk_storm_atc]
+[se ad664]
+[seVolume ad664 0 0]
+[seVolume ad664 0.7 0.7]
+[wt 3.0]
+[seStop ad556 2.0]
+[seStop ad664 2.0]
+[fadeout black 1.0]
+[wait fade]
+[effectDestroy bit_talk_storm_atc]
+[cameraFilter gray]
+[scene 118700]
+[wt 2.0]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 25]
+[charaFadein D 0.4 1]
+[wt 0.5]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠D：摩根
+没错。我不会拯救妖精们，[r]我守护的只有自己的国度。
+[k]
+
+＠
+我[charaTalk B]会拯救[#妖精:他们]，[r]我会遵守被赋予的使命。
+[k]
+
+＠D：摩根
+只要有储藏在这玉座中的魔力量，[r]『大灾厄』根本不足为惧。
+[k]
+
+＠D：摩根
+[line 3]另外，[r]唯有被选中的妖精才能驾御这玉座。
+[k]
+
+[charaTalk B]
+
+＠
+结[charaTalk B]束『巡礼』的证明。[r]那玉座正是维持不列颠的关键。
+[k]
+
+[charaTalk B]
+
+＠
+乐[charaTalk B]园之楔，阿瓦隆·勒·菲。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth N 3]
+[charaDepth D 2]
+[charaDepth C 1]
+
+[se ad539]
+[se ad31]
+[charaPut N 0,30]
+[wt 0.2]
+
+
+[charaFadeout D 0.1]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[seStop ad539 0.1]
+[seStop ad31 0.1]
+[charaPut N 2000,2500]
+[charaEffectStop N bit_talk_noise_gr]
+
+[wt 0.7]
+
+[charaTalk on]
+
+＠摩根
+你是被选中的。[r]与其他妖精，还有那边的异邦人不一样。
+[k]
+
+＠摩根
+既非反叛者，亦非侵略者。[r]是被选定之杖选中的调停者。
+[k]
+
+＠摩根
+你拥有[#打倒]我的正当性。[r]哪怕与我战斗，造成大量流血牺牲，也不会有任何罪孽。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠
+我是被选中的。[r]与不列颠的妖精，还有泛人类史的[#骑士王:我]不一样。
+[k]
+
+＠
+既非反叛者，亦非侵略者。[r]哪怕挑起战争，杀死妖精们，也不会有任何罪孽。
+[k]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠摩根
+若想拯救不列颠，[r]就打倒我，夺走玉座吧。
+[k]
+
+＠摩根
+试着去履行那愚蠢的预言吧。[r]你应该比任何人都清楚，[#只能这么做]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠
+没错。要拯救不列颠，只能这么做。[r]只能打倒放弃了使命的[#乐园妖精:摩根]。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 2.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 1.5]
+
+＠阿尔托莉雅
+……但之后呢？
+[k]
+
+＠阿尔托莉雅
+做完那些不想做的事，[r]做完那些不被期望的事之后。
+[k]
+
+＠阿尔托莉雅
+[#乐园妖精:我]又该返回哪里呢……？
+[k]
+
+[messageOff]
+[cameraFilter]
+[scene 123102]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.5 0.8]
+[fadein black 1.5]
+[wait fade]
+
+[wt 2.5]
+
+[seStop ad556 2.5]
+[fadeout black 1.5]
+[wait fade]
+
+[scene 122401]
+[wt 2.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.5]
+[scene 122400 1.0]
+[wt 3.0]
+
+[fadeout black 1.0]
+[wait fade]
+[scene 117502]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠瑞德拉·比特
+各位早安！[r]很高兴能比预料的更早会合！
+[k]
+
+？1：瑞德拉·比特像弁庆一样，
+？2：杵在路中央等候着。
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠玛修
+！？　前辈、达·芬奇亲！[r]这位与丹驹先生一模一样的是！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠达·芬奇
+哦哦，他是瑞德拉·比特，是妖精国的妖精。[r]现在是我们可靠的同伴。放心吧，他不会咬你的。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[wt 1.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠玛修
+原，原来是这样。[r]初次见面，瑞德拉·比特先生。
+[k]
+
+[charaFace F 13]
+
+＠玛修
+我叫玛修·基列莱特。[r]今后请多指教。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠瑞德拉·比特
+应该是我请您多指教，腼腆的淑女。[r]我很喜欢你彬彬有礼的问候。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠达·芬奇
+不过你不是说会在爱丁堡等我们吗？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠瑞德拉·比特
+我是这么说过，但我有不奔跑[r]就冷静不下来的体质嘛。
+[k]
+
+[charaFace E 1]
+
+＠瑞德拉·比特
+只要在灰烬海岸的出口附近等待，应该就能会合了吧？[r]我怀着这种轻松的心情一路跑到了这里。哈哈哈。
+[k]
+
+＠瑞德拉·比特
+来，请坐进货车吧。[r]我保证前往[#女王都市:爱丁堡]的路途将非常舒适！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠贤者格里姆
+那太好了，我刚好走累了！[r]变成魔术师职阶后，腰腿都不太行啦！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠瑞德拉·比特
+唔？　请等一下。[r]这位先生是个生面孔呢，您是哪位？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠贤者格里姆
+我名叫格里姆。[r]是[%1]的熟人，请多指教。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠瑞德拉·比特
+[%1]的熟人……[r]就是那什么来着。斑，斑荨麻疹的……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 2]
+[charaDepth F 1]
+[charaTalk F]
+[charaFace E 0]
+[charaFadeinFSL E 0.1 0]
+[charaFace F 13]
+[charaFadeinFSR F 0.1 2]
+
+＠玛修
+您是指泛人类史吗？
+[k]
+
+[charaFace E 1]
+
+＠瑞德拉·比特
+没错，泛人类史。谢谢您，玛修小姐。[r]您这么善解人意，我都快迷上您了。
+[k]
+
+？1：玛修稍微靠过来一点。
+？2：不可以太宠瑞德拉哦。
+
+？！
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠玛修
+好，好的。我还没把握好与各位的[r]距离感，今后我会注意的。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠瑞德拉·比特
+既然是来自泛人类史的老相识，[r]就代表村正大人与格里姆大人是同类吧？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 12]
+[charaFadein I 0.1 1]
+
+＠千子村正
+[FFFFFF]？[-]　嗯，分类上可以这么算吧？[r]那又怎么了？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠瑞德拉·比特
+不。我凭野性的直觉看穿了两位感情非常融洽，[r]也算是个毫无意义的问题吧……
+[k]
+
+[bgm BGM_EVENT_7 1.0 0]
+
+＠瑞德拉·比特
+村正大人与格里姆大人，[r]两位打起来的话，是哪位比较强呢。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth H 4]
+[charaDepth I 3]
+[charaDepth K 1]
+[charaDepth L 2]
+
+[charaFace H 5]
+[charaFadeinFSL H 0.1 0]
+[charaFace I 13]
+[charaFadeinFSR I 0.1 2]
+[wt 0.1]
+[se bac40]
+[wt 0.1]
+
+[charaPut K 0,-200]
+[charaFadeTime K 0.2 0.8]
+[charaFadeTime L 0.2 0.6]
+[wt 0.4]
+[seStop ade346 1.0]
+[charaFadeout K 0.3]
+[charaFadeout L 0.3]
+[wt 1.5]
+
+[charaTalk on]
+[bgm BGM_EVENT_7 1.0 1.0]
+[charaFace I 19]
+
+＠千子村正
+什么嘛，问这种显而易见的问题！[r]当然是[#老夫:我]啦！
+[k]
+
+[charaFace H 1]
+
+＠贤者格里姆
+嗯，说得太对了！　这问题蠢到没什么好说的！[r]问十个人都有十个人会回答是格里姆更强哦！
+[k]
+
+＠千子村正
+就是嘛！　笨蛋居然还在胡说八道！[r]好啊，放马过来，[#老夫:我]就用刀背放你一马好了！
+[k]
+
+＠贤者格里姆
+不错嘛！　反正是把破刀，当成钝器用[r]倒还有点用处！　你挺有自知之明的嘛！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.0]
+[charaTalk off]
+
+＠最强的两人
+哈哈哈哈哈哈哈！[r]哈哈哈哈哈哈哈哈哈哈！
+[k]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaFace H 5]
+[charaFace I 15]
+
+＠最强的两人
+好嘞，把你彻底打趴吧！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

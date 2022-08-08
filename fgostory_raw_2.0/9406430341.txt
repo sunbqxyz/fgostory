@@ -1,0 +1,355 @@
+
+
+＄94-06-43-03-4-1
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5050000 1 サンタマルタ]
+[charaSet C 2001002 1 エミヤ]
+[charaSet D 4011001 1 ブーディカ]
+[charaSet E 7016001 1 タマモキャット]
+[charaSet F 3047001 1 パーシヴァル]
+[charaSet G 3047001 1 タラスク]
+
+[charaSet I 3039001 1 ガレス]
+[charaSet K 98006000 1 普通のお菓子ゴーレム]
+[charaSet L 98006000 1 普通のお菓子ゴーレム]
+
+[charaSet J 1098126200 1 レアお菓子ゴーレム]
+[charaFilter J silhouette 00000080]
+
+[imageSet T back10000 1 1]
+[charaScale T 1.02]
+
+[charaDepth T 2]
+
+[scene 141000]
+
+[fadein black 0.5]
+[wait fade]
+
+[cueSe Servants_102800 bac658]
+[effect bit_talk_h_slash01_fs]
+[wt 0.8]
+
+[se ad207 0.4]
+[wt 0.7]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[wt 0.5]
+[charaMove J 0,-10 0.3]
+[wt 0.2]
+[se ad54]
+[seVolume ad54 0 0.4]
+[wt 1.0]
+
+＠レアお菓子ゴーレム
+見事……。
+[k]
+
+[seStop ad207 0.5]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+[bgm BGM_EVENT_116 0.1]
+
+＠ガレス
+そちらこそ、見事な戦いぶりでした。[r]レアお菓子ゴーレム殿。
+[k]
+
+[charaFace I 19]
+
+
+＠ガレス
+それにいつの間にか馳せ参じていた、[r]その他のお菓子ゴーレムの皆様！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+
+＠レアお菓子ゴーレム
+完敗だ。[r]我の食材を持っていけ。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaDepth A 7]
+[charaDepth K 6]
+[charaDepth L 5]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadeinFSL K 0.1 -256,0]
+[charaFace L 0]
+[charaFadeinFSR L 0.1 256,0]
+
+＠K：普通のお菓子ゴーレム
+いいバトルだったぜ……！[r]しっかし、羨ましいぜレアの旦那！
+[k]
+
+＠K：普通のお菓子ゴーレム
+クリスマスのパーティーに使ってもらえるなんて、[r]流石はオレたちのヒーローだ。
+[k]
+
+[clear]
+
+
+＠L：普通のお菓子ゴーレム
+日常の食料、おやつ、非常食、それにパーティー料理。[r]オレたち食材の望みはさまざまだが、
+[k]
+
+
+＠L：普通のお菓子ゴーレム
+オレは中でもパーティー料理志望でね。[r]だが旨さは並だってんだから……
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaTalk A]
+[charaFace A 8]
+[charaFadeinFSR A 0.1 436,0]
+[charaMoveFSR A 386,0 0.3]
+[se ad977]
+[wt 0.3]
+
+＠サンタマルタ
+（がしっ）
+[k]
+
+＠L：普通のお菓子ゴーレム
+！？[charaShake L 0.03 4 4 0.3]
+[k]
+
+[charaFace A 5]
+
+＠サンタマルタ
+食材ゲット！
+[k]
+
+[charaFace A 0]
+
+
+＠サンタマルタ
+お菓子ゴーレムの食材、[r]みんなちゃんと使わせていただくわ。
+[k]
+
+＠サンタマルタ
+みんな、とっておきのシュトレンにしてあげる。[r]お姉さんに任せて！
+[k]
+
+＠L：普通のお菓子ゴーレム
+お嬢ちゃん……[r]いいのかい？
+[k]
+
+[charaFace A 1]
+
+＠サンタマルタ
+もちろん。気持ち、大切だものね！
+[k]
+
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠タマモキャット
+イイネがとまらん……[r]ハートフルな光景にうなる肉球スタンプなのだな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+いい話っぽい雰囲気だけど、[r]よかった……のかな？　これ？
+[k]
+
+？1：うん、いいんじゃないかな
+？2：気持ちは大切だよね
+
+？！
+
+[charaFace D 1]
+
+＠ブーディカ
+そっか！
+[k]
+
+[charaDepth C 7]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[charaFadeTime T 0.2 0.5]
+
+＠エミヤ
+（とはいえ……[r]　実際には、疑似人格以前の単なるプログラムだろう）
+[k]
+
+＠エミヤ
+（無生物に疑似人格を付与することは可能だが、[r]　術式以前に、人格のベースとなる魂なりが必要となる）
+[k]
+
+＠エミヤ
+（スカサハ＝スカディといえど、[r]　流石に魂までは使用していまい）
+[k]
+
+[charaFace C 0]
+
+＠エミヤ
+（しかし[line 3][r]　まあ、解説するタイミングは今ではあるまい）
+[k]
+
+[charaFace C 1]
+[bgmStop BGM_EVENT_116 1.5]
+
+＠エミヤ
+（それこそ、気持ちの問題だ）
+[k]
+
+[charaFadeout T 0.2]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠サンタマルタ
+まずは第一の食材、ゲットー！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠タマモキャット
+一件落着だワン！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+してないしてない。[r]一件目が落着、ぐらいかな？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠ガレス
+私のナビはここまでですが、[r]次も頑張ってくださいね。
+[k]
+
+[charaFace I 15]
+
+＠ガレス
+しかし……
+[k]
+
+[charaFace I 12]
+
+＠ガレス
+なぜ、食材が襲って来るんでしょうね？
+[k]
+
+？1：やっぱり、仕様と違うんだよね？
+？！
+
+[charaFace I 0]
+
+
+＠ガレス
+スカディ殿、戦闘の危険はないって言ってました。[r]散歩のつもりで案内すればいいよって。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+おや。もしや北欧の女王は、[r]散歩と武者修行を混同している？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+
+＠ブーディカ
+いやいやいや。[r]そんな、ランサーのスカサハじゃあるまいし。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+確かめてみる必要があるな。[r]まずは帰還するのがいいだろう、マスター。
+[k]
+
+？1：よし、いったん戻ろう！
+？2：撤収！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠全員
+了解！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

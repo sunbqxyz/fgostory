@@ -1,0 +1,1308 @@
+
+
+＄94-04-49-10-2-0
+
+
+[soundStopAll]
+
+[skip false]
+
+[branchQuestNotClear lblNotClear1 3000320 4]
+[label lblClear1]
+[flag IsGirl true]
+[branch lblIsClearConf1]
+[label lblNotClear1]
+[flag IsGirl false]
+[label lblIsClearConf1]
+
+[skip true]
+
+[charaSet A 7027300 1 Amazones CEO_普通]
+[charaSet B 1098119600 1 Amazones CEO_轱辘]
+[charaSet C 2038000 1 俄里翁]
+[charaSet D 99502600 1 玛修]
+[charaSet E 1098189200 1 阿耳忒弥斯石像]
+[charaSet F 6031001 1 刑部姬]
+[charaSet H 98002000 1 芙芙]
+[charaSet I 6008000 1 Cosmotic Beauty夫人]
+[charaSet J 5009000 1 特效用]
+
+[branch lblNotGirl1 IsGirl false]
+[label lblGirl1]
+[charaSet G 1098124510 1 达·芬奇]
+[branch lblIsGirlConf1]
+[label lblNotGirl1]
+[charaSet G 98111500 1 达·芬奇]
+[label lblIsGirlConf1]
+
+[scene 90001]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[spriteMaskSet 0001]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+唔噢噢噢！[r]A～ma～zo～ne～s～！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠俄里翁
+……这算什么。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠玛修
+大概是通过演唱社歌来宣泄[r]尽情与希腊英雄战斗的亢奋感吧……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+呼。兴奋令我两眼发昏到有时会差点把你看成[r]那个叫阿什么的家伙了，但现在不要紧了。
+[k]
+
+[charaFace A 8]
+
+＠A：Amazones CEO
+不是那个叫阿什么的客人，既然你输了，[r]就给我老老实实在这里签名or盖章吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠俄里翁
+好啦好啦。算了，既然打到这个程度还输了，[r]那我也算是仁至义尽了吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：Amazones CEO
+签名确认过了。这是您订购的商品。[r]期待您的再次惠顾。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth A 2]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFace A 11]
+[charaFadein A 0.1 2]
+
+＠俄里翁
+（盯。）
+[k]
+
+[charaFace A 10]
+
+＠A：Amazones CEO
+[FFFFFF]？[-]
+[k]
+
+＠俄里翁
+最初见到你的时候我还觉得年轻了点，[r]但战斗过后突然明白了你的好。
+[k]
+
+[charaFace C 1]
+
+＠俄里翁
+嗯，你是个相当不错的女人呢！
+[k]
+
+[charaFace C 0]
+
+＠俄里翁
+尤其是肌肉很棒。我喜欢强悍的女人。[r]不，纤弱的女人我也喜欢。
+[k]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaFace A 5]
+
+＠A：Amazones CEO
+！！
+[k]
+
+？1：啊……
+？2：这个话题很危险……！
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[wt 1.5]
+[charaFace F 4]
+[charaMove F 512,0 0.6]
+
+＠刑部姬
+（无言地慌忙回避。）[wt 0.5][charaFadeout F 0.4]
+[k]
+
+[wt 0.3]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+
+＠玛修
+御主，或许还是与他们拉开一些距离比较安全。
+[k]
+
+＠玛修
+如此直接地在雷区上蹦迪，[r]我估计连唱社歌也无法遏制了……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+[charaPut J 1]
+[charaTalk G]
+[branch lblNotGirl2 IsGirl false]
+[label lblGirl2]
+[charaFace G 23]
+[charaFadein G 0.1 1]
+[branch lblIsGirlConf2]
+[label lblNotGirl2]
+[charaFace G 0]
+[charaFadein G 0.1 0,-90]
+[label lblIsGirlConf2]
+
+＠达·芬奇
+……咦？　虽说与这件事没什么关系，[r]但俄里翁的身后好像有什么……
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectDestroy J]
+
+[wt 0.6]
+
+[scene 90002 1.0]
+
+[wt 1.4]
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth C 2]
+[charaDepth H 2]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 -544,0]
+[wt 0.3]
+[charaMove E -480,0 0.5]
+[wt 0.7]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[charaMoveReturn H 0,32 0.2]
+
+＠芙芙
+芙！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠俄里翁
+嗯嗯，说实话，如果年纪再大一些的话，[wt 0.3][charaMove E -384,0 0.7][r]我认为你肯定能成为绝世美女。[wait charaMove E]
+[k]
+
+
+＠俄里翁
+或许还能接近某位女神的水平。[wt 0.3][charaMove E -288,0 0.7][r]正可谓未来可期吧，嗯。[wait charaMove E]
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaShake A 0.05 2 0 0]
+
+＠A：Amazones CEO
+……，…………
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaShakeStop A]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠Cosmotic Beauty夫人
+话说，打扰一下行吗？　虽说前面这位濒临火山喷发，[r]但妾身建议你还是注意一下身后比较好哦？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 0.7]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[charaFace E 0]
+[charaFadein E 0.4 -224,0]
+
+＠俄里翁
+身后？
+[k]
+
+[messageOff]
+[charaTalk E]
+[charaMove E -128,0 0.8]
+[se ade402]
+[wt 1.0]
+[seStop ade402 0.3]
+
+[wt 0.5]
+
+[charaFace C 6]
+
+＠俄里翁
+呃……哎呀？
+[k]
+
+[bgm BGM_EVENT_72 0.1]
+
+＠俄里翁
+这尊雕像……有那么近吗？[r]哈哈，哈[line 3]
+[k]
+
+[messageOff]
+[fadeout black 0.4]
+[wait fade]
+[charaPut E 1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+[charaTalk off]
+[charaSet F 1098189210 1 阿耳忒弥斯石像_裂痕]
+[charaSet H 2009201 1 阿耳忒弥斯]
+[fadein black 0.4]
+[se ad14]
+[seVolume ad14 0 0.3]
+[charaShake E 0.8 4 1 0]
+[wait fade]
+
+[wt 0.5]
+
+[seStop ad14 0.2]
+[charaShakeStop E]
+
+[wt 0.3]
+
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth F 2]
+[charaFace F 0]
+[charaFadein F 0.3 1]
+[se ade403]
+[wt 0.15]
+[seStop ade403 0.1]
+[wt 1.0]
+[charaFadeout E 0.1]
+
+[charaTalk on]
+
+＠俄里翁
+咿。这泄露的气息……难不成！？
+[k]
+
+[bgmStop BGM_EVENT_72 0.5]
+
+＠F：石像
+亲·爱·的……？
+[k]
+
+[messageOff]
+[wt 0.5]
+[se ade404]
+[charaPut J 1]
+[charaEffect J bit_talk_radiallight01]
+[wt 0.3]
+[fadeout white 1.2]
+[wait fade]
+[charaFadeout F 0]
+[charaTalk depthOn]
+[charaPut J 1200,1200]
+[charaEffectDestroy J]
+[charaTalk depthOn]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 1.0]
+[seStop ade404 0.5]
+[wt 1.0]
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth C 2]
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 0]
+[charaFace H 2]
+[charaFadein H 0.1 2]
+[se ade405]
+[wt 0.6]
+[fadein white 0.3]
+[wait fade]
+
+[bgm BGM_EVENT_27 0.1]
+
+＠俄里翁
+唔噢噢噢！？　阿耳忒弥斯，为什么！？
+[k]
+
+＠阿耳忒弥斯
+正所谓藏木于林！[r]藏[#阿耳忒弥斯:我]当然要在阿耳忒弥斯神殿中！
+[k]
+
+[charaFace H 4]
+
+＠阿耳忒弥斯
+一想到为了所爱女人孤独战斗的亲爱的这个角色，[r]我就觉得实在是帅爆了……
+[k]
+
+[charaFace C 6]
+
+＠俄里翁
+所以你才会强行把我配置在这里吧！？
+[k]
+
+＠阿耳忒弥斯
+但孤身一人做这种事才是帅气爆表的行为吧。
+[k]
+
+＠阿耳忒弥斯
+我好想看，但既然要看就必须藏起来吧，[r]因此我才装成高雅的石像在一旁守护你。
+[k]
+
+[charaFace H 3]
+
+＠阿耳忒弥斯
+犹如神明一样只在一旁守护的我，[r]勇敢地……心砰砰乱跳……
+[k]
+
+＠阿耳忒弥斯
+偷窥亲爱的一个人做这些那些事，[r]莫名有种新鲜的刺激感。
+[k]
+
+[charaFace C 6]
+
+＠俄里翁
+还是一如既往公然无视我的个人隐私。[r]这样反倒痛快。
+[k]
+
+[charaFace H 5]
+
+＠阿耳忒弥斯
+虽说我当真……当真还怀着一丝信任，[r]但我觉得这样一来，就算亲爱的趁着我不在时，
+[k]
+
+＠阿耳忒弥斯
+对其他女孩子动手动脚，[r]我也可以出手阻止！
+[k]
+
+[charaFace H 2]
+
+＠阿耳忒弥斯
+结果这不祥的预感果然猜中了！
+[k]
+
+[charaFace C 15]
+
+＠俄里翁
+不，那个，如果知道你看着的话，[r]我肯定不会干这种事哦！？　是真的啦，真的！
+[k]
+
+＠俄里翁
+这种钓鱼执法是不对的！
+[k]
+
+＠阿耳忒弥斯
+毫无反省之色！
+[k]
+
+？1：……啊，我知道违和感的出处了。
+？！
+
+[messageOff]
+[fadeout black 0.7]
+[bgmStop BGM_EVENT_27 0.7]
+[wait fade]
+[charaFadeout C 0.1]
+[charaFadeout H 0.1]
+[charaTalk depthOn]
+[imageSet E cut160_left 1]
+[imageSet F cut160_right 1]
+[wt 0.7]
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth F 2]
+[charaFadein E 0 0,-50]
+[charaFadein F 0 0,-50]
+[pictureFrame cut160_frame]
+[fadein black 0.7]
+[wait fade]
+
+
+[wt 1.0]
+
+
+[charaMask E inside]
+[charaMask F outside]
+
+[charaMove E 102,-230 0.4]
+[charaMove F -102,-230 0.4]
+[charaMoveScale E 1.4 0.4]
+[charaMoveScale F 1.4 0.4]
+[wt 1.7]
+[se ad232]
+[wt 2.5]
+
+[fadeout black 0.7]
+[wait fade]
+[charaFadeout E 0]
+[charaFadeout F 0]
+[spriteMaskOff]
+[pictureFrame]
+[wt 0.7]
+[fadein black 0.7]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+
+＠玛修
+确……确实！　回想起来，[r]这层楼的石像上并没有熊的俄里翁先生呢。
+[k]
+
+＠玛修
+因为那就是真正的阿耳忒弥斯小姐吧……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[branch lblNotGirl3 IsGirl false]
+[label lblGirl3]
+[charaFace G 33]
+[charaFadein G 0.1 1]
+[branch lblIsGirlConf3]
+[label lblNotGirl3]
+[charaFace G 4]
+[charaFadein G 0.1 0,-90]
+[label lblIsGirlConf3]
+
+＠达·芬奇
+这种大家来找茬级的不同一般没人会发现吧。[r]我们优先探查的是更为重要的部分。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[charaFadeout G 0.1]
+[charaPut J 1200,1200]
+[wt 0.4]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[effect bit_talk_38l 0,0 H]
+[cueSe Battle bac51]
+[wt 0.5]
+[cueSe Battle bac111]
+[wt 1.0]
+[effectStop bit_talk_38l]
+
+[effect bit_talk_explosion_triple02]
+[se ad38]
+[se ad608]
+[se ad609]
+[seVolume ad609 0 0.6]
+[shake 0.07 8 10 1.5]
+[wt 1.5]
+[seStop ad38 0.5]
+[seStop ad608 0.5]
+[seStop ad609 0.5]
+[shake 0.07 3 2 0.3]
+[wt 1.5]
+[effectDestroy]
+
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[wt 1.0]
+
+[charaFaceFade A 0 0.2]
+[wt 0.1]
+
+＠A：Amazones CEO
+……哼。希腊男人都是这个德行。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 0]
+[branch lblNotGirl4 IsGirl false]
+[label lblGirl4]
+[charaFadein G 0.1 1]
+[branch lblIsGirlConf4]
+[label lblNotGirl4]
+[charaFadein G 0.1 0,-90]
+[label lblIsGirlConf4]
+
+＠达·芬奇
+噢，太好了太好了。由于其他人在同一问题上抢先发火，[r]以至于CEO错过了发火的时机～。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+我只是想起了现在不是[r]纠结于顾客骚扰问题的时候。
+[k]
+
+[charaFace A 0]
+
+＠A：Amazones CEO
+女神阿耳忒弥斯啊。[r]我有一事请问。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth A 2]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+
+＠阿耳忒弥斯
+嗯嗯。我就知道。
+[k]
+
+＠阿耳忒弥斯
+但我现在正忙着惩罚亲爱的，[r]所以我会用女神力量直接回答你想问的问题。
+[k]
+
+＠阿耳忒弥斯
+我不是这次事件的黑幕～。
+[k]
+
+[bgmStop BGM_EVENT_7 2.0]
+
+[charaFace A 10]
+
+＠A：Amazones CEO
+什么？　那么这座塔是……
+[k]
+
+[charaFace H 1]
+
+＠阿耳忒弥斯
+只是对方说想造这么一座塔，[r]我爽快地给予了许可而已嘛。
+[k]
+
+＠阿耳忒弥斯
+我拿那个叫什么肖像权？的东西作为代价，[r]换到了对亲爱的在塔内配置提意见的权利哦。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠Cosmotic Beauty夫人
+倘若黑幕不是这座神殿祭祀的您，[r]那又会是谁……？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠阿耳忒弥斯
+问题没有那么复杂啦，[r]明白的人估计已经猜到了吧～。
+[k]
+
+[charaFace H 0]
+
+＠阿耳忒弥斯
+反正总而言之，还剩二十层。
+[k]
+
+＠阿耳忒弥斯
+黑幕的心腹和黑幕本人在那里等着你们，[r]比起思考，还是直接爬上去更快吧？
+[k]
+
+[charaFace H 1]
+
+＠阿耳忒弥斯
+精力充沛地，战斗吧，战斗吧～！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+……这样啊。
+[k]
+
+[charaFace A 8]
+
+＠A：Amazones CEO
+确实，继续前进似乎才是最快的捷径。[r]走吧[line 3]
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_2 1.2]
+[wait fade]
+[charaFadeout A 0.1]
+[charaPut J 1]
+[charaTalk G]
+[branch lblNotGirl5 IsGirl false]
+[label lblGirl5]
+[charaFace G 13]
+[charaFadein G 0.1 0,-50]
+[branch lblIsGirlConf5]
+[label lblNotGirl5]
+[charaFace G 0]
+[charaFadein G 0.1 0,-140]
+[label lblIsGirlConf5]
+[wt 0.5]
+[wipeFilter cinema 0.5 0]
+[fadein black 1.2]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠达·芬奇
+（唔。实际上，现在已经类似在做排除法了吧。[r]　虽说我确实考虑过这个可能性，哎哟，真是的……）
+[k]
+
+[branch lblNotGirl6 IsGirl false]
+[label lblGirl6]
+[charaFace G 12]
+[charaFadein G 0.1 0,-50]
+[branch lblIsGirlConf6]
+[label lblNotGirl6]
+[charaFace G 4]
+[charaFadein G 0.1 0,-140]
+[label lblIsGirlConf6]
+
+＠达·芬奇
+（说真的，你究竟打算如何收场啊[line 3]？）
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+[wipeOff]
+[charaFadeout G 0.1]
+[charaPut J 1200,1200]
+[scene 90100]
+[wt 1.5]
+[charaSet A 9007000 1 魁札尔·科亚特尔·桑巴·圣诞]
+[charaSet B 2022000 1 阿蒂拉·圣诞]
+[charaSet C 4022000 1 圣诞Alter]
+[charaSet D 3026000 1 贞德·Alter·Santa·Lily]
+[charaSet E 2039000 1 南丁格尔·圣诞]
+[charaSet F 1037000 1 工作中的老板娘]
+[charaSet G 2001000 1 厨师长]
+[fadein black 2.0]
+[wait fade]
+
+[wt 1.2]
+
+＠
+[align center]～　与此同时　～[align]
+[k]
+
+[messageOff]
+[scene 89703 1.4]
+[wt 3.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-200]
+[se ad7]
+[charaMove A 0,0 0.1]
+
+[wt 0.3]
+
+[se ade230]
+[charaFace A 1]
+[seVolume ade230 0 0.2]
+[wt 0.1]
+[se ade229]
+[charaShake A 0.1 -4 2 2.0]
+[charaMove A -150,0 2.0]
+[wt 1.0]
+[charaShake A 0.1 4 2 3.0]
+[charaMove A 150,0 3.0]
+[wt 3.0]
+[charaShake A 0.1 -4 2 1.5]
+[charaMove A 1 1.5]
+
+[wt 2.0]
+
+[seStop ade229 0.3]
+[seStop ade230 0.8]
+[wt 1.0]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠魁札尔·科亚特尔·桑巴·圣诞
+呼！　踩着轻快的节奏巡游莫名其妙的世界，[r]真是太愉快啦～！
+[k]
+
+[charaFace A 0]
+
+＠魁札尔·科亚特尔·桑巴·圣诞
+而工作之后吃的墨西哥玉米片也是极品呢～。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.4 1]
+[wt 0.5]
+
+＠阿蒂拉·圣诞
+嚯～嚯～嚯～。茨尔戈也很高兴哦。
+[k]
+
+[charaFace B 1]
+
+＠阿蒂拉·圣诞
+这种日子能吃到的圣诞树干蛋糕是好文明。[r]真甜。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+[wt 0.5]
+
+＠圣诞Alter
+哼，你这话真奇怪。说起冬天的垃圾食品，[r]当然是肉包子啦。啊唔啊唔。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠魁札尔·科亚特尔·桑巴·圣诞
+咦？　你刚才不是还骑着摩托吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠圣诞Alter
+由于使用过度，现在正拆卸检修中。[r]在此期间我只能使用拉姆瑞二号了。
+[k]
+
+＠圣诞Alter
+纯粹的速度方面虽然比不过，但小巧灵活。[r]而且还能在空中飞行。
+[k]
+
+[charaFace C 1]
+
+＠圣诞Alter
+最重要的是载重量很高。[r]最适合用来运送货物了。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.4 1]
+[wt 0.5]
+
+＠贞德·Alter·Santa·Lily
+我能理解。[r]应该没有比我们更擅长搬运的从者了。
+[k]
+
+[charaFace D 1]
+
+＠贞德·Alter·Santa·Lily
+甚至可以说我们才是这次的主角吧。[r]哎嘿！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.5]
+
+＠南丁格尔·圣诞
+我不是很明白，[r]但药品本来就该被送到必须送达的地方。
+[k]
+
+[charaFace E 7]
+
+＠南丁格尔·圣诞
+只是，按照指示文件前去拜访的患者[r]无一例外全都四处逃窜不愿意吃药。
+[k]
+
+＠南丁格尔·圣诞
+奇妙的是，当我将顺便送去的包裹交给对方时，[r]他们的表情看上去似乎又都松了一口气。
+[k]
+
+[charaFace E 6]
+
+＠南丁格尔·圣诞
+那些包裹难道类似于儿科诊所里放置的玩偶吗？
+[k]
+
+[charaFace E 0]
+
+＠南丁格尔·圣诞
+那么当然，只要趁患者放松警惕的机会[r]用药就没有问题了。成功率为100％.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠贞德·Alter·Santa·Lily
+顺便送去的那些药对人有益就好……
+[k]
+
+＠贞德·Alter·Santa·Lily
+但这莫名让我回忆起了过去，[r]心情有些微妙。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠南丁格尔·圣诞
+不对。顺便的不是药，是包裹！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿蒂拉·圣诞
+咀嚼咀嚼吞。
+[k]
+
+＠阿蒂拉·圣诞
+好，肚子填饱了。[r]那我们继续过圣诞节吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 0.6]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠圣诞Alter
+……唔？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠魁札尔·科亚特尔·桑巴·圣诞
+哇哦！　你刚才，是不是[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠贞德·Alter·Santa·Lily
+说了什么奇怪的话？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.5]
+
+
+＠工作中的老板娘
+圣诞节已经结束了啾？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠贞德·Alter·Santa·Lily
+你看！　途径这里的老板娘也这么说！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠阿蒂拉·圣诞
+奇怪的是你们吧。[r]你们是不是忘了什么重要的事？
+[k]
+
+[bgm BGM_EVENT_48 0.1]
+
+＠阿蒂拉·圣诞
+[#已经进入新的一年了哦]。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠圣诞Alter
+！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠贞德·Alter·Santa·Lily
+啊……！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿蒂拉·圣诞
+没错。每年只有一次圣诞节。
+[k]
+
+[charaFace B 7]
+
+＠阿蒂拉·圣诞
+但是我认为，既然进入了新的一年，[r]那就算现在开始下一个圣诞也没什么好奇怪的。
+[k]
+
+＠阿蒂拉·圣诞
+现在是冬天。时期也刚刚好。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_48 3.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠魁札尔·科亚特尔·桑巴·圣诞
+我差点忘了。[wt 0.4][charaFace A 1][r]没错，圣诞节的可能性……是无限的……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠贞德·Alter·Santa·Lily
+呜。看来我还是缺乏知识呢……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠阿蒂拉·圣诞
+嚯～嚯～嚯～。不用着急，年轻人。[r]圣诞老人的一年和大家的一年未必相同。
+[k]
+
+[charaFace B 7]
+
+＠阿蒂拉·圣诞
+也就是说，11个月后的冬天，[r]或许还会有新的圣诞节到来。
+[k]
+
+[charaFace B 13]
+
+＠阿蒂拉·圣诞
+我们圣诞老人只需在每次圣诞节到来时，[r]全力完成使命即可。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠圣诞Alter
+不愧是长老。[r]寓意好深啊。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠南丁格尔·圣诞
+现在是……圣诞节啊。我都没发现。
+[k]
+
+[charaFace E 10]
+
+＠南丁格尔·圣诞
+既然如此，今后就更要打起精神配送[#礼物:药物]了。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠阿蒂拉·圣诞
+那我们走吧。[r]圣诞老人部队，出动！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth E 2]
+[charaDepth C 3]
+[charaDepth D 4]
+
+[charaTalk off]
+[charaFace C 2]
+[charaFadein C 0.1 -368,0]
+[charaFace E 2]
+[charaFadein E 0.1 -48,0]
+[charaFace D 2]
+[charaFadein D 0.1 96,0]
+[charaFace A 1]
+[charaFadein A 0.1 384,0]
+
+＠齐声
+噢！
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_62 1.5]
+[wait fade]
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠工作中的老板娘
+话说……圣诞节，啾……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠厨师长
+算了啦，老板娘。
+[k]
+
+＠厨师长
+在迦勒底，[r]『圣诞节、万圣节和从者宇宙这几个单词是不讲道理的』。
+[k]
+
+＠厨师长
+还是别管她们了……
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

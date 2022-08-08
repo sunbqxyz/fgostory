@@ -1,0 +1,830 @@
+
+
+
+＄94-05-42-09-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 6031000 1 刑部姬]
+[charaSet B 2015001 1 阿周那]
+[charaSet C 5004001 1 童谣]
+[charaSet D 4031000 1 丹驹]
+[charaSet E 7028000 1 班扬]
+[charaSet F 6005001 1 杰克]
+[charaSet G 2035000 1 帕里斯]
+[charaSet H 2040000 1 清少纳言]
+[charaSet I 3014001 1 胤瞬]
+[charaSet J 6001001 1 小次郎]
+[charaSet K 6038002 1 科黛]
+[charaSet L 2037000 1 简]
+[charaSet M 3039000 1 加雷斯]
+[charaSet N 3036001 1 布拉达曼特]
+[charaSet O 6037001 1 迦摩]
+
+[imageSet Q back10000_fs 1]
+[charaScale Q 1.5]
+
+[charaDepth Q 3]
+[charaDepth O 4]
+
+
+[scene 106100]
+
+[fadein black 1.5]
+[wait fade]
+
+[fowardEffect bit_talk_radiallight01 0,-270]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_94 0.1]
+
+＠刑部姬
+咿哇哇哇哇哇！　不会吧，那个竟是伏笔，[r]而且还是这种剧情展开！？
+[k]
+
+[fowardEffectStop bit_talk_radiallight01]
+＠刑部姬
+而……而且[line 3]这画力！[r]从每根线中都能感受到灵魂，每一格仿佛都在闪闪发光！
+[k]
+
+[charaFace A 0]
+＠刑部姬
+啊。不行了。太神了。神到要死了。
+[k]
+
+[messageOff]
+
+[charaShake A 0.01 1 1 1.0]
+[charaMove A 0,-30 1.0]
+
+[wt 1.5]
+
+[se ad7]
+[charaMove A 0,0 0.2]
+[charaFace A 2]
+＠刑部姬
+不，现在可没空死！[r]冬季截稿日之前还有时间！
+[k]
+
+＠刑部姬
+如果不将这溢出的冲动立刻转化成形，[#我:公主]会爆炸的！[r]分镜，先从分镜开始[line 3]
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_94 1.0 0.4]
+[wait fade]
+
+
+[fowardEffectDestroy bit_talk_radiallight01]
+[charaFadeout A 0.1]
+
+[scene 105300]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_94 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠童谣
+哇～，打开了？
+[k]
+
+＠童谣
+礼物盒里的内容太棒了……[r]是因为等了很久的缘故吗，看上去闪闪发光！
+[k]
+
+
+[charaFace C 3]
+＠童谣
+上次很抱歉对你说了那么多过分的话。[r]你不是什么欺负人的老爷爷。
+[k]
+
+[charaFace C 1]
+＠童谣
+[line 3]谢谢你，圣诞老人！
+[k]
+
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_94 1.0 0.4]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+[scene 105900]
+
+[branch lblConf4]
+[label lblNotClear4]
+[scene 105600]
+[label lblConf4]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_94 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠丹驹
+………………
+[k]
+
+[se ade117]
+[charaMoveReturn D 0,-5 0.5]
+[charaFace D 2]
+＠丹驹
+嘎哩，喀吱嘎哩这可是前所未有的优秀胡萝卜[r]连我虎狼都停不下嘴了喀吱喀吱唰姆唰[line 3]
+[k]
+
+[seStop ade117 0.5]
+[messageOff]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_94 1.0 0.4]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+[scene 104200]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+[scene 105500]
+
+[label lblConf2]
+
+[wt 1.0]
+
+[charaDepth E 1]
+[charaDepth F 2]
+
+[charaDepth H 3]
+[charaDepth G 4]
+
+[charaDepth I 5]
+[charaDepth J 6]
+
+[bgm BGM_EVENT_94 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[se ad413]
+[seVolume ad413 0 0]
+[seVolume ad413 0.8 0.7]
+
+
+[charaTalk off]
+
+[charaFace E 8]
+[charaFadein E 0.4 0,0]
+
+[charaFace F 1]
+[charaFadeinFSR F 0.4 250,0]
+
+[charaMoveFSL E -200,0 2.5]
+[charaMoveFSR F 50,0 2.5]
+
+[wt 1.0]
+
+[charaFadeout F 0.4]
+[charaFadeout E 0.4]
+[wt 1.0]
+
+[charaFace G 1]
+[charaFadeinFSR G 0.4 50,0]
+
+[charaFace H 7]
+[charaFadeinFSL H 0.4 -200,0]
+
+[charaMoveFSR G 250,0 2.5]
+[charaMove H 0,0 2.5]
+
+[wt 1.0]
+
+[charaFadeout H 0.4]
+[charaFadeout G 0.4]
+[wt 1.0]
+
+[charaDepth K 1]
+[charaDepth L 2]
+[charaDepth M 4]
+[charaDepth N 3]
+
+[charaFace I 1]
+[charaFadein I 0.4 0,0]
+
+[charaFace J 1]
+[charaFadeinFSR J 0.4 250,0]
+
+[charaMoveFSL I -200,0 2.5]
+[charaMoveFSR J 50,0 2.5]
+
+[wt 1.0]
+
+[charaFadeout J 0.4]
+[charaFadeout I 0.4]
+[wt 1.0]
+
+[charaFace K 7]
+[charaFadeinFSR K 0.4 50,0]
+
+[charaFace L 1]
+[charaFadeinFSL L 0.4 -200,0]
+
+[charaMoveFSR K 250,0 2.5]
+[charaMove L 0,0 2.5]
+
+[wt 1.0]
+
+[charaFadeout L 0.4]
+[charaFadeout K 0.4]
+[wt 1.0]
+
+[charaFace N 1]
+[charaFadein N 0.4 0,0]
+
+[charaFace M 1]
+[charaFadeinFSR M 0.4 250,0]
+
+[charaMoveFSL N -200,0 2.5]
+[charaMoveFSR M 50,0 2.5]
+
+[wt 1.0]
+
+[charaFadeout N 0.4]
+[charaFadeout M 0.4]
+
+[fadeout black 1.5]
+[seStop ad413 1.5]
+[bgmStop BGM_EVENT_94 1.5]
+[wait fade]
+
+
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk on]
+[charaTalk O]
+[charaFace O 10]
+[charaFadein O 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠迦摩
+唉。东看西看到处都是幸福的笑容……[r]让人肩膀都酸了。
+[k]
+
+[charaFace O 15]
+＠迦摩
+你不这么想吗，那边那位？
+[k]
+
+[messageOff]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[se ad95]
+[wt 1.2]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+[seStop ad95 0.1]
+[wt 0.6]
+
+＠阿周那
+不，[r]这和我没什么关系。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 13]
+[charaFadein O 0.1 1]
+＠迦摩
+唔？　呵呵，也罢。
+[k]
+
+＠迦摩
+啊，我可以顺便问个问题吗？
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠阿周那
+……只要是我能回答的问题。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 1]
+[charaFadein O 0.1 1]
+＠迦摩
+帕尔瓦蒂好歹是帕尔瓦蒂，[r]她或许从一开始就知道弗栗多的情况了。
+[k]
+
+＠迦摩
+但你为什么会那么早明白呢？
+[k]
+
+＠迦摩
+从时间点来看，似乎是遇到我的时候发现的。[r]但我有些介意，难道我出了什么纰漏吗？
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠阿周那
+……因为迦尔纳评价你是『平时那个迦摩』。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 5]
+[charaFadein O 0.1 1]
+＠迦摩
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠阿周那
+他不会被谎言或欺瞒所骗，[r]拥有能看穿人真正禀性的双眼。
+[k]
+
+＠阿周那
+既然这样一个人如此评价，
+[k]
+
+＠阿周那
+那当时的你，自然就是[r]没受任何操作的真实的你吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 0]
+[charaFadein O 0.1 1]
+＠迦摩
+这的确是没错啦。[r]因为我是自愿协助弗栗多的。
+[k]
+
+＠迦摩
+毕竟这应该是个[r]刚好能恶心到因陀罗系的最好机会嘛。
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠阿周那
+但是，你是这么说的[line 3]说对自己的行为[r]『有不情不愿的部分』。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 4]
+[charaFadein O 0.1 1]
+＠迦摩
+我说过吗？
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠阿周那
+说过。[r]所以问题就在于你不情愿的究竟是什么。
+[k]
+
+＠阿周那
+是不愿与我们及御主敌对？[r][line 3]不对。
+[k]
+
+＠阿周那
+假如迦尔纳说得没错，你还是平时那个对外界[r]一副嘲讽态度的你的话，你根本不会在意这些。
+[k]
+
+＠阿周那
+当然这话本身或许纯粹是讥讽，[r]但当时我并没有这种感觉。
+[k]
+
+＠阿周那
+那究竟为何呢……我开始思考，[r]然后想到了现在的你不愿做的事。
+[k]
+
+[messageOff]
+
+[wt 1.0]
+
+＠阿周那
+[#那就是爱人类]。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 5]
+[charaFadein O 0.1 1]
+＠迦摩
+…………
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠阿周那
+坚决抵制神之职责的你会这么说。[r][line 3]也就意味着这行为本身就是某种爱。
+[k]
+
+[charaFace B 4]
+＠阿周那
+从那一刻起，我开始怀疑[r]弗栗多的行为究竟是否是恶了。
+[k]
+
+[charaFace B 0]
+
+＠阿周那
+假如你帮助弗栗多这件事[r]会产生爱之意义的话。
+[k]
+
+＠阿周那
+那又是为何[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 10]
+[charaFadein O 0.1 1]
+＠迦摩
+……给与试炼让人克服并获得成长。[r]从某种角度来说，这也可以叫做爱吧。
+[k]
+
+＠迦摩
+这对我来说才是必要之恶啦。
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠阿周那
+但这全是我的想象，没有任何证据。[r]所以我将这件事托付给了别人。
+[k]
+
+＠阿周那
+托付给了另一个我。化身神之子，[r]能以超越性视角看透善恶的他。
+[k]
+
+＠阿周那
+……就是这样。还有什么问题吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 13]
+[charaFadein O 0.1 1]
+＠迦摩
+你其实还有别的用意吧？
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠阿周那
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 1]
+[charaFadein O 0.1 1]
+＠迦摩
+我好歹是爱神嘛，对爱十分敏感，[r]所以我要继续提问题。
+[k]
+
+＠迦摩
+你之所以把同行的职责换给另一个自己，[r]其实还包含了想给他些什么的用意吧？
+[k]
+
+[charaFace O 15]
+＠迦摩
+对，比方说……让忘却了从前，[r]忘却了身为人类时一切的另一个自己……
+[k]
+
+＠迦摩
+与内在年轻了一些的异父兄长接触，[r]来给他一些刺激，以便让他想起些什么？
+[k]
+
+[charaFace O 7]
+＠迦摩
+啊啊，这也是赠与另一个自己的[r]美好圣诞礼物吧？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 0.6]
+[charaFadeout O 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.6]
+
+[se ade533]
+[seVolume ade533 0 0.8]
+[charaShake B 0.01 2 2 0.7]
+[charaMoveScale B 0.97 0.7]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaScale O 1.1]
+[charaTalk O]
+[charaFace O 2]
+[charaFadein O 0.1 0,10]
+
+[se ad7]
+[charaMoveScale O 1.0 0.3]
+[charaMove O 0,0 0.3]
+[wt 0.5]
+＠迦摩
+喂，别这样，杀气太认真了！[r]我可是神啊！
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠阿周那
+是魔的可能性极大。只要是可能危害到御主的魔，[r]是可以根据现场判断予以消灭的。好，解决。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 11]
+[charaFadein O 0.1 1]
+＠迦摩
+太有问题了～。[r]刚才那只是恶作剧啦～。
+[k]
+
+[charaFace O 10]
+＠迦摩
+真是的，所以我讨厌偏湿婆方的人类。[r]总觉得把人烧了就完事了。
+[k]
+
+[charaFace O 14]
+＠迦摩
+好啦好啦，我先走啦。[r]你可别用箭从背后射我哦？
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[pictureFrame cut063_cinema]
+
+[charaTalk depthOff]
+[charaPut Q 0,-200]
+[charaFadeTime Q 0.1 0.6]
+[charaMove O 0,-50 0.1]
+[charaFace O 11]
+
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠迦摩
+（唔。虽说推理极为敏锐，[r]　但用那个作为最初的依据真的没问题吗。）
+[k]
+
+＠迦摩
+（这不就意味着……归根结底，[r]　他比任何人都信任那个人的能力吗？）
+[k]
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+[charaFace O 14]
+＠迦摩
+……真奇怪。
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[charaFadeout O 0.1]
+[pictureFrame]
+
+
+[wt 1.5]
+[fadein black 1.0]
+[wait fade]
+[wt 0.3]
+
+[se ad95]
+
+[wt 1.9]
+[seStop ad95 0.1]
+[wt 0.4]
+
+[se ad8]
+[wipeout leftToRight 1.0 1.0]
+[wait wipe]
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+[scene 105800]
+
+[branch lblConf3]
+[label lblNotClear3]
+
+[scene 106000]
+
+
+[label lblConf3]
+
+[wt 0.6]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.5]
+
+[bgm BGM_EVENT_45 0.1]
+
+＠
+远离喧嚣，返回房间。[r]并非不喜欢那种气氛。
+[k]
+
+＠
+外面那种充斥着安稳幸福感的氛围[r]反倒很令人愉悦，脸上不禁露出了微笑。
+[k]
+
+＠
+即便如此，那些也与自己无关。
+[k]
+
+＠
+原本自己就没有庆祝圣诞节的习俗。[r]尤其当那个男人当圣诞老人时就更不用说了。
+[k]
+
+＠
+就这样，本打算独自休息时[line 3][r]发现桌子上放着一张便条。
+[k]
+
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠阿周那
+唔。[r]究竟是谁放的，什么时候……？
+[k]
+
+
+[messageOff]
+[se ade96]
+[charaMoveReturn B 0,-6 0.8]
+[wt 1.3]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠
+上面只写着战斗模拟装置的预约时间。
+[k]
+
+＠
+这究竟意味着什么。
+[k]
+
+＠
+对自己而言究竟是『什么』，[r]根本不用多想。
+[k]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠阿周那
+……………
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.6]
+
+＠
+啊啊，没错……与圣诞节无关。[r]自己不想要什么圣诞礼物。
+[k]
+
+＠
+但是[line 3]即便如此。
+[k]
+
+[messageOff]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+＠
+自己也并非无欲无求。
+[k]
+
+[messageOff]
+[wt 2.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_45 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,893 @@
+
+＄03-00-09-01-5-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 5045000 1 阿尔托莉雅]
+[charaSet B 1098209700 1 书记官梅尔迪克]
+[charaSet C 1098213600 1 摩根]
+[charaSet D 1098124210 1 贝里尔]
+[charaSet E 1098124500 1 达·芬奇]
+[charaSet F 1098209200 1 聚集在玉座的妖精_牙]
+[charaSet G 1098209300 1 聚集在玉座的妖精_土]
+[charaSet H 1098209710 1 摩根兵]
+[charaSet I 1098209400 1 聚集在玉座的妖精_风]
+[charaFilter F silhouette 00000080]
+[charaFilter G silhouette 00000080]
+[charaFilter I silhouette 00000080]
+
+[charaSet N 98115000 1 特效用]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad311]
+[wt 2.0]
+[seStop ad311]
+
+[se ad832]
+[effect bit_talk_door_open_fs]
+[scene 10001]
+[wt 1.0]
+
+[se ad578]
+[wt 2.5]
+[seStop ad578 1.0]
+[wt 6.5]
+[scene 118700 2.0]
+[wt 3.0]
+
+
+？1：（被迫爬了近一个小时的楼梯[line 3]）
+？2：（这里就是卡美洛的城堡主塔……女王的玉座……！）
+
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠阿尔托莉雅
+………………
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth B 5]
+[charaDepth H 4]
+
+[cueSe SE_21 21_ad1119]
+
+[charaFace B 0]
+[charaFace H 0]
+[charaFadeinFSR B 0.1 2]
+[charaFadeinFSL H 0.1 0]
+[wt 0.2]
+[seStop 21_ad1119 0.2]
+[wt 0.8]
+[charaTalk on]
+[bgm BGM_EVENT_143 0.1]
+
+＠书记官梅尔迪克
+跪伏吧，[r]进贡吧。
+[k]
+
+＠书记官梅尔迪克
+膜拜吧，[r]隶属吧。
+[k]
+
+＠书记官梅尔迪克
+拜访玉座的使者屏息静气，[r]三十位大使、百位官吏噤声不语。
+[k]
+
+＠书记官梅尔迪克
+开疆拓土的王，[r]建立妖精国的王。
+[k]
+
+＠书记官梅尔迪克
+此乃摩根女王陛下的御前，[r]此乃摩根女王陛下的威光。
+[k]
+
+＠书记官梅尔迪克
+『预言之子』、『异邦的魔术师』当铭记于心。
+[k]
+
+＠书记官梅尔迪克
+此乃女王陛下的恩宠，[r]此乃女王陛下的恩赦。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk on]
+
+[se ade422]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+[seStop ade422]
+
+＠摩根
+[line 3]辛苦了。[r]各位，分明未曾传唤，却辛苦你们都到齐了。
+[k]
+
+＠摩根
+禁止大使、官吏一切发言。
+[k]
+
+＠摩根
+在场有资格发言的，[r]只有我、那边的来客，以及[line 2]
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth C 2]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.2 -200,0]
+[wt 0.2]
+
+＠贝里尔
+还有我，女王的丈夫贝里尔·伽特。[r]抱歉啦，各位上级妖精。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad4]
+[seVolume ad4 0 0]
+[seVolume ad4 1.0 1.0]
+[wt 1.5]
+[seStop ad4 2.5]
+
+[charaTalk E]
+[charaFace E 22]
+[charaFadein E 0.1 1]
+
+＠达·芬奇
+（贝里尔·伽特……！[r]　果然在卡美洛……！）
+[k]
+
+＠达·芬奇
+（而且还说是丈夫！　摩根的丈夫……！？）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFace C 0]
+[charaFadein D 0.1 -200,0]
+[charaFadein C 0.1 1]
+
+＠贝里尔
+哟，自奥林波斯一别以来第一次碰面了吧，后辈！[r]唔？　那是什么表情。
+[k]
+
+[charaFace D 3]
+
+＠贝里尔
+喂喂，难道你没有听玛修说过[r]我是摩根的[#情人]吗！
+[k]
+
+？1：你会在这里，也就意味着……
+？2：女王摩根难道是……
+
+？！
+
+[charaFace D 7]
+
+＠贝里尔
+就是吧？　身为御主，[r]自然会这样想吧，[%1]？
+[k]
+
+＠贝里尔
+没错，我坦白。[r]不瞒你说，我就是摩根的御主。
+[k]
+
+＠贝里尔
+也就是支配妖精国之女王的伴侣啦。
+[k]
+
+＠摩根
+[line 3]。
+[k]
+
+？1：不对，这就奇怪了！
+
+[charaFace D 3]
+
+＠贝里尔
+一点也不奇怪，这就是事实！
+[k]
+
+＠贝里尔
+哎呀，赘婿攀上的枝头太高，[r]连我都还没有真实感呢！
+[k]
+
+？2：（……当着女王的面，可不能随便发言……）
+
+＠摩根
+………………
+[k]
+
+？！
+
+＠摩根
+[line 3]阿尔托莉雅。[r]我准了，上前，抬起头来。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠阿尔托莉雅
+啊，是！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠摩根
+…………原来如此。『预言之子』吗。[r]看来确实是正牌货。
+[k]
+
+＠摩根
+以及，那边那位就是『异邦的魔术师』，
+[k]
+
+＠摩根
+为了夺回泛人类史而奋起的，[r]迦勒底的御主吗。
+[k]
+
+？1：…………
+？2：是的。您说得对。
+
+？！
+
+＠摩根
+我认可你们在诺里奇的功绩。[r]虽说是多管闲事，但辛苦你们击退灾厄了。
+[k]
+
+＠摩根
+前来领赏吧。[r]我原本打算用我妖精国的货币作为酬谢……
+[k]
+
+＠摩根
+但你们的魔力资源是将魔素拟作量子的[r]空间魔力占有值……[#QP:Quantum Piece]吧？
+[k]
+
+＠摩根
+给个1亿应该够了吧。[r]收下吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 21]
+[charaFadein E 0.1 1]
+
+＠达·芬奇
+这么多！？[r]啊，不对，难道这里还有量子的造币厂吗！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠摩根
+怎么可能有。我只是看透了你们的魔术体系，[r]自行炼成了而已。
+[k]
+
+＠摩根
+我要说的话都说完了。[r]若没有其他事，接见就到此结束。
+[k]
+
+＠摩根
+阿尔托莉雅、[%1]。[r]你们可有问题想要问我女王摩根？
+[k]
+
+＠摩根
+记得三思而后言。[r]不然根据内容，我可能会撤回你们的贵宾待遇。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 26]
+[charaFadein A 0.1 1]
+
+＠阿尔托莉雅
+…………！
+[k]
+
+？1：（阿尔托莉雅果然退缩了……）
+？2：（这时候必须由我先说才行……！）
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠摩根
+由你先说吗。[r]好，我不会嘲笑你不知死活。
+[k]
+
+＠摩根
+跨越了五个异闻带，站在我面前之人啊。[r]道出你的愿望吧。
+[k]
+
+？1：迦勒底的目的是解决白纸化地球。
+
+？！
+
+＠摩根
+嗯，贝里尔·伽特对我说过了。[r]我也很清楚外部世界的状况。
+[k]
+
+？1：不过在那之前，我们从这异闻带检测出了异常。
+
+？！
+
+＠摩根
+哦，什么样的异常？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 25]
+[charaFadein E 0.1 1]
+
+＠达·芬奇
+是名为『崩落』的未来观测结果。[r]可以想象成与艾因塞尔的预言相同的存在。
+[k]
+
+＠达·芬奇
+自不列颠扩散出去的『崩落』将遍布至行星全境，[r]地球将会崩溃。
+[k]
+
+＠达·芬奇
+虽说原因与原理都一概不明。
+[k]
+
+＠达·芬奇
+我们迦勒底是为了查明，并解决这崩落现象，[r]才会登陆您的妖精国。
+[k]
+
+＠达·芬奇
+与此同时，我们对空想树已经焚毁的[r]这个异闻带并没有敌对的意图。
+[k]
+
+＠达·芬奇
+我们的目的只是阻止『世界的崩落』而已。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠摩根
+原来如此。并非侵略，而是前来救助。[r]你们要办的事只有这件吗？
+[k]
+
+？1：……我们想得到可以对抗『异星之神』的神造兵装。
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 24]
+[charaFadein E 0.1 1]
+
+＠达·芬奇
+没错，您之前朝奥林波斯释放的[r]超常级大魔术，圣枪伦戈米尼亚德。
+[k]
+
+＠达·芬奇
+希望您可以提供[r]可实现该魔术的礼装或是魔术理论。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad4]
+[seVolume ad4 0 0]
+[seVolume ad4 1.0 1.0]
+[wt 1.5]
+[seStop ad4 2.5]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFace G 0]
+[charaFace I 0]
+[charaFadeinFSR F 0.1 300,0]
+[charaFadeinFSL G 0.1 -300,0]
+[charaFadein I 0.1 1]
+
+＠聚集在玉座的妖精们
+（奥林波斯……异星之神？[r]　那个外乡人究竟在说什么……？）
+[k]
+
+＠聚集在玉座的妖精们
+（哎呀，真是不知死活到极点！[r]　竟敢要求女王陛下“提供”！）
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠摩根
+[line 3]哼。[r]我确实知道你们想要的[#武器:东西]。
+[k]
+
+＠摩根
+也认同你们前来拯救不列颠的发言[r]并非谎言。
+[k]
+
+＠摩根
+尽管如此，我还是拒绝。[r][#你们泛人类史就凄惨无比地毁灭吧]。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[wt 1.2]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+？1：！
+
+？！
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠摩根
+所谓的传播至外部世界……[r]传播至白纸化地球的“崩落”，
+[k]
+
+＠摩根
+正是我的领土即将展开的扩张。[r]否定你们历史的，就是我。
+[k]
+
+＠摩根
+我是你们的敌人。[r]因此，自然没理由将神造兵装交给你们。
+[k]
+
+＠摩根
+[%1]，[r]以及诞生自骄傲的婴儿啊。
+[k]
+
+＠摩根
+若要拯救你们的世界，就打倒我吧。[r]除此以外，别无拯救泛人类史的手段。
+[k]
+
+[messageOff]
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.2 -200,0]
+[wt 1.2]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 24]
+[charaFadein E 0.1 1]
+
+＠达·芬奇
+……可以将这理解为宣战吗，女王摩根。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠摩根
+就是这个意思。我与泛人类史互不相容。[r]若想得到，就凭力量来夺取。
+[k]
+
+？1：（……分明可以对话……却只能战斗……）
+
+？！
+
+＠摩根
+这点你也是一样，阿尔托莉雅。[r]可恨的艾因塞尔的『预言之子』。
+[k]
+
+＠摩根
+想必今年最后[line 3]『大灾厄』又会导致[r]栖息于不列颠的妖精[#再度]毁灭吧。
+[k]
+
+＠摩根
+然而无论死多少次，[r]妖精这玩意儿依旧会不吸取教训地诞生。
+[k]
+
+＠摩根
+哪怕不列颠全土都被火焰包覆，[r]只要我的城堡依然屹立，妖精国就能无数次地复苏。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 27]
+[charaFadein A 0.1 1]
+
+＠阿尔托莉雅
+女王陛下……是要守护您自己的妖精国，[r]而非不列颠的子民吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠摩根
+没错。我不会拯救妖精们，[r]我守护的只有自己的国度。
+[k]
+
+＠摩根
+只要有储藏在这玉座中的魔力量，[r]『大灾厄』根本不足为惧。
+[k]
+
+＠摩根
+[line 3]另外，[r]唯有被选中的妖精才能驾御这玉座。
+[k]
+
+[charaFace C 10]
+
+＠摩根
+你是被选中的。[r]与其他妖精，还有那边的异邦人不一样。
+[k]
+
+＠摩根
+既非反叛者，亦非侵略者，[r]你是被选定之杖选中的调停者。
+[k]
+
+＠摩根
+接受我的邀请，就证明了你是[r]真正的『预言之子』。
+[k]
+
+＠摩根
+[line 3]被乐园派遣而来的妖精啊。[r]你拥有纠弹我的正当性。
+[k]
+
+＠摩根
+哪怕与我战斗，造成大量流血牺牲，[r]你也不会有任何罪孽。
+[k]
+
+[charaFace C 11]
+
+＠摩根
+若想拯救不列颠，[r]就打倒我，夺走玉座吧。
+[k]
+
+＠摩根
+试着去履行那愚蠢的预言吧。[r]你应该比任何人都清楚，[#只能这么做]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠阿尔托莉雅
+………………
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠摩根
+谈话看来就到此结束了。[r]很高兴我们能藉此理解双方的立场。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.2 1]
+
+＠贝里尔
+就是说嘛～！　通过谈话自以为搞好关系，[r]想要不流一滴血解决问题的做法未免太扫兴了！
+[k]
+
+[charaFace D 7]
+[bgm BGM_EVENT_143 1.0 0]
+
+＠贝里尔
+好啦，这一路上都对人类善意或理性[r]这种便利藉口抱有信任的一行人。
+[k]
+
+[charaFace D 8]
+
+＠贝里尔
+交涉已经决裂。[r]你们该不会以为自己可以平安返回吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠达·芬奇
+！　嗯，当然不会！
+[k]
+
+＠达·芬奇
+[%1]、阿尔托莉雅，[r]躲到我身后来！　我早就料到会发生这种[line 2]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_143 1.0 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠摩根
+闭嘴。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+[se ad875]
+[se ad14]
+[seVolume ad14 0 0.4]
+[shake 0.05 0 2 1.2]
+[charaPut N 1]
+[charaEffect N bit_talk_pressure_fs]
+[wt 0.3]
+[charaFace D 10]
+[charaMove D 0,-10 0.3]
+[wt 0.3]
+[se ad812]
+[wt 1.5]
+
+
+＠贝里尔
+！？　！！！！　、！？[r]（叫喊着这是怎么回事的贝里尔。）
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut N 2000,2000]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠摩根
+在离开卡美洛之前，[r]这些人都是我邀请来的宾客。
+[k]
+
+＠摩根
+不允许伤害他们一根汗毛、一丝尊严。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut N 1]
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠贝里尔
+！！！！　！！　、！！！！　……！[r]（叫喊着不能这样吧！？　的贝里尔。）
+[k]
+
+[seStop ad875 1.0]
+[seStop ad14 1.0]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut N 2000,2000]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠摩根
+原谅我丈夫的无礼，[r][%1]、婴儿。
+[k]
+
+＠摩根
+廷塔杰尔的女孩。[r]只要你依然是阿尔托莉雅，我就不会将你认作敌人。
+[k]
+
+＠摩根
+只要你未敲响巡礼之钟，[r]我都会禁止诸侯对你们发动攻击。
+[k]
+
+＠摩根
+然而[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 25]
+[charaFadein E 0.1 1]
+
+＠达·芬奇
+……一旦敲响巡礼之钟，[r]以『预言之子』的身份挺身而出……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠摩根
+没错。[r]届时我将会把你连同迦勒底都视作我的敌人，并举兵讨伐。
+[k]
+
+＠摩根
+仔细考虑清楚。[r]是否要投身这场毫无胜算的战争。
+[k]
+
+＠摩根
+退下吧。[r]应该没什么好说的了。
+[k]
+
+？1：…………
+
+？！
+
+＠摩根
+……什么事？
+[k]
+
+？1：……你将玛修带去哪里了？
+
+？！
+
+＠摩根
+[line 3]玛修？[r]那是什么。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 24]
+[charaFadein E 0.1 1]
+
+＠达·芬奇
+是被你用来轰散灾厄的魔术……[r]被那乌云的收束吞没了的，我们的同伴。
+[k]
+
+＠达·芬奇
+拥有盾之骑士加拉哈德灵基的亚从者。
+[k]
+
+＠达·芬奇
+既然赐予了妖精骑士们圆桌之名，[r]那你应该知道加拉哈德这名字吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠摩根
+[line 9][wt 1.0]原来是这样。[r]那个，原来是这么一回事啊。
+[k]
+
+＠摩根
+盾之骑士确实被我捉住了。
+[k]
+
+？1：她在哪儿！？
+
+？！
+
+[charaFace C 0]
+
+＠摩根
+我没理由回答你们这些家伙。[r]那是我的战利品。
+[k]
+
+＠摩根
+不过我可以保证她的平安。无论是谁[line 3][r]包括我，都无法伤害她。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 23]
+[charaFadein E 0.1 1]
+[wt 1.0]
+
+？1：……？
+
+？！
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_143 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

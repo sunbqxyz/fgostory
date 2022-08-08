@@ -1,0 +1,1515 @@
+
+
+＄94-06-43-06-1-0
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5050000 1 サンタマルタ]
+[charaSet B 1098198000 1 スカサハ＝スカディ]
+[charaSet C 2001002 1 エミヤ]
+[charaSet D 4011001 1 ブーディカ]
+[charaSet E 7016001 1 タマモキャット]
+[charaSet F 3047001 1 パーシヴァル]
+[charaSet G 1098224600 1 タラスク]
+[charaSet H 99502600 1 マシュ]
+[charaSet I 1037000 1 紅閻魔]
+[charaSet J 4032000 1 ライネス]
+[charaSet K 1098166200 1 トリムマウ]
+[charaSet L 6041000 1 鬼一法眼]
+[charaSet M 3013001 1 スカサハ]
+
+[charaSet N 98115000 1 エフェクト用ダミー]
+[charaSet O 98115000 1 エフェクト用ダミー]
+
+[imageSet P cut310_eggsb 1]
+
+[imageSet T back10000 1 1]
+[charaScale T 1.02]
+
+[charaDepth J 7]
+[charaDepth K 6]
+[charaDepth M 5]
+[charaDepth L 5]
+[charaDepth P 5]
+[charaDepth T 2]
+
+
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+[scene 140805]
+
+[branch lblConf1]
+
+[label lblNotClear1]
+
+[scene 140705]
+
+[label lblConf1]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+
+[se bas2]
+[charaFadein P 0.4 0,-200]
+[charaFadeTime T 0.4 0.5]
+[fowardEffect bit_talk_glitter]
+[wt 0.4]
+[cueSe SE_21 21_ade588]
+[wt 2.0]
+[cueSeStop 21_ade588 0.5]
+
+[bgm BGM_XMAS_2016 0.1]
+
+＠サンタマルタ
+できた～！
+[k]
+
+＠タマモキャット
+ナイスエッグ！[r]卵のトロトロ具合もばっちりなのだな！
+[k]
+
+＠ブーディカ
+試食の味も満点だったし、[r]こっちもちゃんと保存しておかないとね？
+[k]
+
+＠エミヤ
+問題ないとも。[r]保温の魔術を掛けてある。
+[k]
+
+[messageOff]
+[branchQuestNotClear lblNotClear2 3000303]
+
+[scene 140804 0.6]
+
+[branch lblConf2]
+
+[label lblNotClear2]
+
+[scene 140704 0.6]
+
+[label lblConf2]
+[charaFadeout P 0.4]
+[charaFadeout T 0.4]
+[fowardEffectStop bit_talk_glitter]
+[wt 0.6]
+[fowardEffectDestroy]
+[wt 0.1]
+
+[charaDepth D 6]
+[charaDepth E 5]
+[charaDepth C 7]
+[charaDepth F 4]
+
+？1：卵料理、完成だね
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+とっても順調だわ。
+[k]
+
+[charaFace A 1]
+
+
+＠サンタマルタ
+あなたたちが力を貸してくれるお陰だね。[r]ほんとに、ありがとう！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace E 1]
+[charaFadeinFSL E 0.1 -436,0]
+[charaFace D 1]
+[charaFadeinFSL D 0.1 -106,0]
+[charaFace C 1]
+[charaFadeinFSR C 0.1 136,0]
+[charaFace F 1]
+[charaFadeinFSR F 0.1 356,0]
+[wt 1.5]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+[bgmStop BGM_XMAS_2016 1.0]
+
+＠紅閻魔
+卵料理はこれでいいでちが……
+[k]
+
+[charaFace I 1]
+[bgm BGM_HALLOWEEN_2021_1 0.1]
+
+＠紅閻魔
+メインの前にもう一品くらい欲しいとこでちね。[r]汁物[line 3]スープ系はどうでち？
+[k]
+
+？2：次はどんな料理を作ろう？
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgmStop BGM_XMAS_2016 1.0]
+
+＠サンタマルタ
+う～ん、そうね。[r]メインにはまだ早いかしら。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+[bgm BGM_HALLOWEEN_2021_1 0.1]
+
+＠紅閻魔
+メインの前にもう一品くらい欲しいとこでちね。[r]汁物[line 3]スープ系はどうでち？
+[k]
+
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠タマモキャット
+うむ。賛成しかない。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+冬の真っ最中だからな。[r]熱いスープで体を温める……女将らしい気配りだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+スープ系、いいかもねえ。[r]具沢山のシチューとかにするのはどう？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+[#シチュー:ラ　グ　ー]？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+ああ、それはいい。[r]腹の中から温めてこそ冬を生き延びられる。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+ふむふむ（ちらり）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth D 7]
+[charaDepth F 4]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadeinFSR F 0.1 2]
+[charaFace D 1]
+[charaFadeinFSL D 0.1 0]
+
+＠パーシヴァル
+（おや、マルタ殿。マスターの方をちらりと見たか？）
+[k]
+
+[charaFace D 3]
+
+＠ブーディカ
+（マスターの好みが気になるんだね。[r]　分かりやすいマルタっていうのも、可愛いなぁ）
+[k]
+
+[charaFace F 7]
+
+＠パーシヴァル
+（愛らしさか。分かるとも。[r]　年若い[&姉弟:姉妹]を見ているかのようだ）
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout D 0.1]
+[wt 0.3]
+
+？1：賛成！
+？2：シチュー、いいね！
+
+？！
+
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaFace A 1]
+
+＠サンタマルタ
+分かったわ、シチューね！
+[k]
+
+
+＠サンタマルタ
+きっと大丈夫。[r]スープ料理は得意だもの！
+[k]
+
+[charaFace A 0]
+
+＠サンタマルタ
+とっておきの美味しいシチューにするから、[r]楽しみにしていてね、マスター。
+[k]
+
+？1：はい（力強く頷く）
+？！
+
+[messageOff]
+[cameraMove 0.4 0,20 1.0]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.0]
+[wt 1.2]
+
+[charaFace A 1]
+
+＠サンタマルタ
+いい返事！[r]んーもう、お姉さん心を掴むいい子！
+[k]
+
+[messageOff]
+[se ade422]
+[seStop ade422 0.6]
+[charaMoveScale A 1.1 0.3]
+[charaMove A 0,15 0.3]
+[wt 0.4]
+
+＠サンタマルタ
+おいでおいでおいで。[r]ほーら、よしよし。
+[k]
+
+[messageOff]
+[se ad999]
+[charaMoveReturn A -10,15 0.3]
+[wt 0.4]
+[charaMoveReturn A 10,15 0.3]
+[wt 0.4]
+[charaMoveReturn A -10,15 0.3]
+[wt 0.4]
+[charaMoveReturn A 10,15 0.3]
+[wt 0.4]
+[seStop ad999 0.4]
+
+
+？1：（よしよしのパワーがいささか強い気が……）
+
+[charaFace A 0]
+
+＠サンタマルタ
+うん？
+[k]
+
+[branch select01_1]
+
+？2：（よしよしの力強さは指摘しないでおこう……）
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+……マスター。どうかしたか？
+[k]
+
+[branch select01_2]
+
+？！
+
+
+[label select01_1]
+
+？1：なんでも？　ないよ？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch select01_end]
+
+
+
+[label select01_2]
+
+？1：なんでもありません（我慢）
+？！
+
+＠エミヤ
+そ、そうか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[label select01_end]
+
+[charaScale A 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+じゃあシチューで決定として[line 3]
+[k]
+
+
+＠ブーディカ
+野菜なら、サラダの時に採ったものが結構あるね。[r]サラダ向きじゃない食材を利用しよっか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+ニンジンやジャガイモ等の根菜が沢山あるとも。[r]実に素晴らしいことだ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+ジャガイモ、ジャガイモ。
+[k]
+
+[charaFace A 0]
+
+＠サンタマルタ
+……知らないはずなのに、知ってるのよね。[r]不思議だわ。バターに合うアレよね！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[wt 1.0]
+[charaFace D 0]
+
+＠ブーディカ
+んー。[r]そっか、そうよね。
+[k]
+
+＠ブーディカ
+マルタ、無理してない？　疲れてたりしない？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+認識のずれがある霊基ってのは[r]あたしたちより一層大変かと思って。どう？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+確かに。認識や感覚のずれが続く状態であれば、[r]意識の疲弊は充分に有り得る話だ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+心配してくれてありがとう。[r]でも、問題ないわ。
+[k]
+
+＠サンタマルタ
+気持ち的にはメイン料理まで止まりたくないし、[r]メインまでいったら最後まで走り抜けたいし！
+[k]
+
+[charaFace A 1]
+
+＠サンタマルタ
+平気。だから、いきましょう！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+気力充分のようだな。[r]では、食材確保に向かおう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠タマモキャット
+野菜があるならお肉が欲しい！[r]シチューは具だくさんでなければな！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+
+＠サンタマルタ
+お肉はもちろん必要ね！
+[k]
+
+＠サンタマルタ
+牛肉かしら……[r]あ、ベーコンとかもいいかも！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+
+＠エミヤ
+肉類なら在庫がたっぷりあるな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+普段から使うものだし、[r]お肉の在庫なら、他にもそれなりにね。
+[k]
+
+＠ブーディカ
+お肉主体の料理にするなら別だけど、[r]まだ地下倉庫でゲットする程じゃないかな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+
+＠サンタマルタ
+そうなのね！[r]じゃあ、その、みんなが良ければなのだけど、
+[k]
+
+[charaFace A 0]
+
+＠サンタマルタ
+まずはミルクが欲しいかも。どう？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth O 5]
+[charaPut O 150,185]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[wt 0.5]
+[se ade116]
+[charaEffect O bit_talk_37]
+[wt 0.7]
+[charaFace D 1]
+
+＠ブーディカ
+あ、いいわね！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+異議なしだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠タマモキャット
+ワン！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+ご随意に。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaFace A 1]
+
+
+＠サンタマルタ
+よーし！[r]みんな大好き、ホワイトシチューを作りましょう！
+[k]
+
+[bgmStop BGM_HALLOWEEN_2021_1 1.5]
+
+＠J：？？？
+……ほう、ホワイトシチューだと！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaFace J 0]
+[charaFadein J 0.4 -75,0]
+[charaFace K 0]
+[charaFadein K 0.4 176,0]
+[wt 1.4]
+
+[bgm BGM_AMAZONES 0.1]
+
+？1：[#司馬懿:しばい]さん？
+
+[charaTalk on]
+[charaTalk J]
+
+
+＠ライネス
+いや、今日は時計塔の頼れる[#君主:ロード]候補、[r]君の師匠ライネス・エルメロイ・アーチゾルテさ。
+[k]
+
+？2：師匠？
+
+[charaTalk on]
+[charaTalk J]
+[charaFace J 8]
+
+＠ライネス
+うむ、自分の師匠を見分けられるようで、喜ばしい。
+[k]
+
+[messageOff]
+[charaFace J 1]
+[wt 1.0]
+
+[charaFace L 0]
+[charaFadeinFSSideR L 0.4 456,0]
+[charaMoveFSSideR L 406,0 0.5]
+[charaFace M 0]
+[charaFadeinFSSideL M 0.4 -456,0]
+[charaMoveFSSideL M -406,0 0.5]
+[wt 0.5]
+
+[charaFace J 6]
+
+＠ライネス
+ん？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout L 0.4]
+[charaMoveFSSideR L 656,0 0.3]
+[charaFadeout M 0.4]
+[charaMoveFSSideL M -656,0 0.3]
+[wt 0.6]
+
+[charaTalk on]
+[charaFace J 0]
+
+＠ライネス
+気のせいか。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+？！
+
+＠ライネス
+カルデアのクリスマスは頓狂なことばかりだが、[r]ホワイトシチューとはやるじゃないか。
+[k]
+
+[charaFace J 1]
+
+
+＠ライネス
+軽く[#炙:あぶ]った仔牛に白ワイン、[r]とろけるようなベシャメルソース。
+[k]
+
+＠ライネス
+フランス料理ではブランケットと言ってね。[r]モダンブリティッシュでも、たまにお目にかかるのさ。
+[k]
+
+[charaFace J 2]
+
+＠ライネス
+ただ、なにしろ仕込みが面倒なものでね。[r]美味しいやつにありつくのは、意外と難しい………！
+[k]
+
+[charaFadeout K 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+ほう……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+ふむふむ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 -75,0]
+[charaFace K 0]
+[charaFadein K 0.1 176,0]
+
+＠ライネス
+つまり、だ。[r]そういうことなら、私もレシピを提供できる。
+[k]
+
+[charaFace J 1]
+
+
+＠ライネス
+ぜひとも作ってくれたまえよ。[r]パーティーの[#一:いち]参加者として楽しみにしている。
+[k]
+
+[charaFace J 8]
+[bgmStop BGM_AMAZONES 2.0]
+
+＠ライネス
+せっかくだ。[r]物理的な援助もしておこう。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_62 0.1]
+[charaDepth O 8]
+[charaPut O -260,100]
+[charaEffect O bit_talk_incantation]
+[cueSe SE_21 21_ade631]
+[wt 2.3]
+
+[charaFadeout K 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.5]
+[charaEffect A bit_talk_attack_buf]
+[wt 0.2]
+[se bas10]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 0]
+[charaFadeinFSR C 0.1 2]
+[charaFace D 0]
+[charaFadeinFSL D 0.1 0]
+[wt 0.5]
+[charaEffect C bit_talk_attack_buf]
+[charaEffect D bit_talk_attack_buf]
+[wt 0.2]
+[se bas10]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaFace F 0]
+[charaFadeinFSR F 0.1 2]
+[charaFace E 6]
+[charaFadeinFSL E 0.1 0]
+[wt 0.5]
+[charaEffect F bit_talk_attack_buf]
+[charaEffect E bit_talk_attack_buf]
+[wt 0.2]
+[se bas10]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 16]
+
+＠パーシヴァル
+これは……！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+わっ。なんだか力が湧いてきたわ！[r]ありがとう！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+へえ、司馬懿っていうかライネス、[r]お料理にも一家言あるとはね。ありがと！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 -75,0]
+[charaFace K 0]
+[charaFadein K 0.1 176,0]
+[wt 1.0]
+
+[charaFadeout K 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[se ade235]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 -600,0]
+[charaMove E 700,0 0.5]
+[effect bit_talk_42_depth 0,0 H]
+[wt 0.3]
+[charaFadeout E 0.4]
+[wt 0.6]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 -600,0]
+[charaMove E 700,0 0.5]
+[wt 0.3]
+[charaFadeout E 0.4]
+[effectDestroy]
+[seStop ade235 0.2]
+[wt 0.7]
+
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+
+＠エミヤ
+タマモキャット！[r]強化を受けて[#滾:たぎ]るのは分かるが、まだ早い！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+ははは。[r]彼女は奔放な笑顔も素敵だね。
+[k]
+
+[charaFace F 6]
+
+＠パーシヴァル
+しかしレディの祝福とは実にありがたい。[r]騎士にとって素晴らしい励みになるというものだ。
+[k]
+
+[messageOff]
+[charaFace F 7]
+[wt 1.0]
+[charaFace F 9]
+
+＠パーシヴァル
+諸君、行くとしよう。[r][line 3]さあ、ミルクの確保だ！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_62 1.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[charaSet I 1098226100 1 源頼光]
+[charaSet J 1098183600 1 エネミー]
+[charaSet K 1098183600 1 エネミー]
+[charaSet L 1098183600 1 エネミー]
+
+[charaDepth J 3]
+[charaDepth K 4]
+[charaDepth L 2]
+
+
+[charaPut N 2000,2000]
+[charaEffect N bit_talk_10_LowLevel]
+
+[scene 140600]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.4]
+
+[charaPut N 0,0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠スカサハ＝スカディ
+……ホワイトシチュー？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+
+＠マシュ
+別名クリームシチュー。[r]二十世紀初頭の日本で生まれた料理ですね。
+[k]
+
+
+＠マシュ
+ミルクや乳製品を用いたシチューです。
+[k]
+
+＠マシュ
+シチューそのものはフランス発祥で……[r]ライネスさんの仰ったように、フランスには、
+[k]
+
+＠マシュ
+乳製品を用いた[r]ブランケットという料理もあるそうです。
+[k]
+
+＠マシュ
+ですが、ことホワイトシチューとなると[r]日本の発祥とされていて[line 3]
+[k]
+
+
+[charaFace H 1]
+
+＠マシュ
+現代でも定番のメニューだそうなので、[r]マスターにとっては懐かしい味かもしれませんね。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠スカサハ＝スカディ
+ふふ。[r]マスターの故郷の味か。
+[k]
+
+＠スカサハ＝スカディ
+気を遣ったな、マルタ？[r]サーヴァントの心遣いというモノか。
+[k]
+
+[charaPut N 2000,2000]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadeinFSL D 0.1 0]
+[charaFace C 4]
+[charaFadeinFSR C 0.1 2]
+
+＠ブーディカ
+（もー。言わないでおいたのに……）
+[k]
+
+[charaFace C 0]
+
+＠エミヤ
+（まあ、仕方あるまい。[r]　当の本人は気にしていないようだ）
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+ええそう、そうなの！[r]せっかくだから故郷の味はどうかしらって。
+[k]
+
+[charaFace A 0]
+
+＠サンタマルタ
+マスターも嬉しいかと思って。[r]余計なお世話だったら、ごめんなさい。
+[k]
+
+？1：ううん、嬉しいよ
+
+[charaFace A 6]
+
+＠サンタマルタ
+それなら良かったわ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch select02_1]
+
+？2：ホワイトシチュー久しぶりだなあ……
+
+[charaFace A 1]
+
+＠サンタマルタ
+そうなの？[r]じゃあ、いっそう気合いいれなきゃだわ！
+[k]
+
+[messageOff]
+[charaMoveScale A 1.05 0.15]
+[charaMove A 0,8 0.15]
+[se ad163]
+[wt 0.3]
+[seStop ad163]
+[charaMoveScale A 1.0 0.3]
+[charaMove A 0,0 0.3]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 16]
+[charaFadein F 0.1 1]
+
+
+＠パーシヴァル
+ん。気のせいだろうか？[r]今、レディの拳が鋭く空を切っ……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+気のせいじゃない？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+気のせいだろう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+そうだろうか[line 3]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+
+＠タマモキャット
+眠れる獅子を目覚めさせれば[#大山鳴動:たいざんめいどう]。[r]ネズミが騒げばお店は閉まる。
+[k]
+
+＠タマモキャット
+多少のビリビリは自然現象のようなもの。[r]大きな心でスルーするがよい。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+
+＠パーシヴァル
+そういうものか……。[r]ご教示痛み入る、レディ・キャット。
+[k]
+
+？！
+
+？1：パーシヴァル[line 3]？
+
+[charaFace F 7]
+
+＠パーシヴァル
+ん？
+[k]
+
+？2：パーシヴァル、キャットの言葉わかるの？
+
+[charaFace F 1]
+
+
+＠パーシヴァル
+ははは。[r]みなは分からない、とでも？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+んん？
+[k]
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[label select02_1]
+
+[charaPut N 0,0]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠マシュ
+ホワイトシチューといえば、日本では[r][#白米:ごはん]に合う料理とされているそうですね。
+[k]
+
+？1：確かに、そうかも？
+？2：そうだったかな？
+
+？！
+
+[charaFadeout H 0.1]
+[charaPut N 2500,2500]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠タマモキャット
+パンにも白米にも合うのがホワイトシチュー。[r]最強の一角と言っても過言ではない。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut N 0,0]
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.4 1]
+[wt 0.4]
+
+＠源頼光
+ああ確かに！　金時が喜びそうな献立です。
+[k]
+
+[charaFadeout I 0.1]
+[charaPut N 2000,2000]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+あれ、頼光？[r]管制室にいるの？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut N 0,0]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠源頼光
+紅閻魔様のご指示で、[r]こちらにお弁当などを届けておりました。
+[k]
+
+[charaFace I 7]
+
+＠源頼光
+エネミーの反応がルーンにないものだということで、[r]管制室の皆様、忙しくされているとのこと。
+[k]
+
+[charaFace I 0]
+
+＠源頼光
+食事をする暇もないだろう、[r]と紅閻魔様がお気を遣われたのです。
+[k]
+
+[charaFadeout I 0.1]
+[charaPut N 2000,2000]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 16]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+おお……。
+[k]
+
+[charaFace F 7]
+
+＠パーシヴァル
+幻のホテルの女主人だと聞いてはいたが、[r]納得の心遣い。騎士パーシヴァル、感服致しました。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut N 0,0]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠源頼光
+マスターご不在のカルデアは、[r]どうか我らにお任せくださいませ。
+[k]
+
+[charaFace I 1]
+
+
+＠源頼光
+どうぞ[#後顧:こうこ]の[#憂:うれ]いなく、[r]存分にミルク探しをなさってくださいな！
+[k]
+
+？1：ありがとう！
+？！
+
+[charaFadeout I 0.1]
+[charaPut N 2000,2000]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+ありがとう、黒髪の美人さん。[r][line 3]あっ思い出した、源頼光さん、頼光さんね！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut N 0,0]
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+[wt 1.0]
+
+[charaFadeout I 0.1]
+[charaPut N 2000,2000]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_77 0.8]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[charaFace K 0]
+[charaFadeinFSR K 0.1 306,0]
+[charaFace L 0]
+[charaFadeinFSL L 0.1 -306,0]
+[se ad21]
+[wt 1.0]
+
+[seStop ad21 0.3]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠ブーディカ
+お、来た来た。氷削りタイムかな？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠タマモキャット
+ええい面倒だ！[r]まとめてかちわりかき氷にしてくれるワン！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+[charaFadeTime T 0.2 0.5]
+
+＠ブーディカ
+（どっち？）
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth C 6]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+（どちらだ？）
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+（かちわり氷とかき氷の、どちらなのだ？）
+[k]
+
+[charaFadeout T 0.2]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠タマモキャット
+とーーーーう！
+[k]
+
+[messageOff]
+
+[charaMove E 0,15 0.2]
+[charaMoveScale E 1.1 0.2]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[fowardEffect bit_talk_41_fs]
+[se bac1]
+[wt 0.2]
+[charaFadeout E 0.2]
+[blurOff motion 0.2]
+[fowardEffectDestroy]
+[wt 0.2]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,448 @@
+
+
+＄02-00-02-14-2-0
+[soundStopAll]
+[bgm BGM_EVENT_24 0.1]
+
+[charaSet A 98113900 1 弗格斯]
+[charaSet B 5030001 1 山鲁佐德]
+[charaSet C 4025000 1 哥伦布]
+[charaSet D 98114220 1 巨英雄]
+[charaSet E 4004001 1 阿斯托尔福]
+[charaSet F 1026001 1 迪昂]
+[charaSet G 99502600 1 玛修]
+[charaSet H 98114600 1 反抗者]
+
+[scene 43200]
+[fadein black 1.5]
+[wait fade]
+
+[effect bit_talk_kengekiall01]
+[wt 0.1]
+[se ad33]
+[wt 1.0]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.05 3 3 0.4]
+[wt 0.7]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+＠弗格斯
+咕呜……！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠山鲁佐德
+…………呜。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠哥伦布
+哈哈～，你们应该很清楚这家伙的强大！
+[k]
+
+＠哥伦布
+而我则会抛下船锚！[r]每当这么做，都能获得宝物，这是我梦想的象征！
+[k]
+
+＠哥伦布
+只要在这座岛上抛锚，就有健康的土著奴隶在等着我！[r]只要在这座岛上抛锚，就有玻璃珠换黄金的交易在等着我！
+[k]
+
+[charaFace C 10]
+＠哥伦布
+那么，在这座岛上呢！？　我激动得按捺不住内心的兴奋！[r][line 2]『[#新天地探索航行:Santa Maria Drop Anchor]』！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[se ad428]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.05 3 3 0.4]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+
+[wt 1.5]
+[charaTalk D]
+[charaFadein D 0.1 1]
+[charaEffect D bit_talk_voice01]
+[se ad425]
+＠巨英雄
+[image berserker_language_8][line 2]！
+[k]
+
+？1：同时攻击，糟了……！
+？！
+
+[charaEffectStop D bit_talk_voice01]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠弗格斯
+噢噢噢噢噢！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠山鲁佐德
+啊啊……！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[effect bit_talk_41]
+[wt 0.1]
+[se ad171]
+[se ad85]
+[wt 1.0]
+[effectStop bit_talk_41]
+[wt 0.4]
+[se ad73]
+[effectPause bit_talk_42]
+[effectStart]
+[wt 0.2]
+[effectStop bit_talk_42]
+[wt 0.3]
+[effect bit_bolg_03]
+[wt 0.1]
+[se ad32]
+[wt 0.2]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.05 3 3 0.7]
+[wt 1.0]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein F 0.4 2]
+[charaFadein E 0.4 0]
+＠阿斯托尔福
+胡呀，真累人！　不过赶上啦～！
+[k]
+
+[charaFace F 5]
+＠迪昂
+没事吧，御主！
+[k]
+
+？1：是你们俩！　倒是你们没事吧！？
+？！
+
+＠阿斯托尔福
+说实话，有点能量用光的感觉～。
+[k]
+
+[charaFace F 0]
+＠迪昂
+外面的亚马逊人没有全灭，[r]但都像人偶一样愣着不动。
+[k]
+
+＠迪昂
+我们觉得扔下她们不管也不会有什么问题。[r]彭忒西勒亚被打倒了吧？
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 7]
+[charaEffect G bit_talk_10_LowLevel]
+[charaFadein G 0.1 1]
+＠玛修
+嗯。但是……
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaPut G 0,-10000]
+[charaFadeout G 0.1]
+[wt 0.4]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.4 1]
+[wt 1.5]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠迪昂
+[line 2]也就是说不祥的预感命中了吧。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠哥伦布
+没想到你们居然会在这种情况下冲进来。[r]真是好伙伴呀。
+[k]
+
+＠哥伦布
+我当然欢迎。[r]你们一定会受到有那种兴趣的客人的欢迎吧？
+[k]
+
+[charaFace C 7]
+＠哥伦布
+其价值堪称无价！[r]不，若不能标价码也挺麻烦的！　哈哈～！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠迪昂
+……伙伴啊。这话倒是提醒我了。[r]有件事我必须确认一下。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+＠哥伦布
+哦～，是什么？　船长我什么都愿意回答哦？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠迪昂
+[#在桃源乡纵火的是不是你]？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 1.0]
+[charaFace C 9]
+＠哥伦布
+[#猜对啦]！[r]那件事当然是我动的手！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠反抗者
+什么……！？　那个……时候的……火灾是……！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠哥伦布
+话说，这种事仔细想想就能明白了吧。[r]对方可是亚马逊人哦？
+[k]
+
+＠哥伦布
+如果当时我们的根据地真的暴露了，[r]哪可能只被放了一把火就了事啊。
+[k]
+
+＠哥伦布
+她们必定会拿着斧子或剑，[r]大声咆哮着冲进来将我们赶尽杀绝。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[charaShake H 0.01 2 0 0.7]
+＠反抗者
+但……但为什么……特地将安全的隐蔽所给……！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+＠哥伦布
+啊啊？　当然是因为你们被亚马逊人吓破了胆，[r]就快变成没用的废物了啊。
+[k]
+
+＠哥伦布
+当船员吓破胆的时候，[r]船长为了让船前进，会不惜使用任何手段。
+[k]
+
+＠哥伦布
+比如写双重航海日记，随便编个理由，[r]强行编造『陆地已经很近』这种事。
+[k]
+
+＠哥伦布
+和那一样吧？　当时若想让你们[#继续前进]，[r]只有这种办法了。
+[k]
+
+＠哥伦布
+为了让你们狠下决心，[r]知道若想存活下来，只有战斗。
+[k]
+
+＠哥伦布
+真是的……如果你们在那个关头自暴自弃说什么，[r]还是当对方的奴隶比较好，那就麻烦了啊。
+[k]
+
+[charaFace C 7]
+＠哥伦布
+你们打从一开始，就是我为了得到这里而利用的棋子！[r]可不准你们擅自换主人！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[charaShake H 0.01 5 0 0.7]
+＠反抗者
+啊，啊啊……果……果然，我们……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠哥伦布
+获得桃源乡之后，接下来需要的就是士兵。
+[k]
+
+＠哥伦布
+当然，我很快就注意到召集心怀愤怒的男人们，[r]并煽风点火是最便捷的方法。所以这么做了。
+[k]
+
+＠哥伦布
+而你们……则完全没有怀疑，[r]加入了我这边。真是一群优秀的船员。
+[k]
+
+＠哥伦布
+我其实挺擅长煽动叛乱这种事哦。[r]现在回想起来反倒令人吓一跳呢！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠反抗者
+因……因为相信你而死的同伴……[r]有那么多……！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+＠哥伦布
+啊，没错。明明还有用处的劳动力一个个都死掉了，[r]连半个子儿都没留下。真令我痛心。
+[k]
+
+[charaFace C 11]
+＠哥伦布
+但是，我是不会放弃自己的梦想哦？[r]正如我教导你们的[line 2][#只要永不言弃，就一定能抵达目的地]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠阿斯托尔福
+呜哇～……真是坚定不移。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠迪昂
+乐观与为恶并不矛盾。[r]只是性质会更为恶劣罢了。
+[k]
+
+＠迪昂
+……我也认识好几个这种类型的人。[r]但还是第一次看到像他这样毫不[#掩饰]的家伙。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+＠玛修
+同感。不管怎么说[line 2][r]能和阿斯托尔福先生你们会合如添百人助力！
+[k]
+
+＠玛修
+此前的战斗中应该确实给对手造成了伤害。[r]再坚持一下，御主！
+[k]
+
+[charaSet H 98002000 1 芙芙]
+
+？1：我是不会输给靠牺牲他人往上爬的家伙的！
+[charaPut G 0,-10000]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠哥伦布
+哈哈～！　你还真会搁置问题呢！
+[k]
+
+＠哥伦布
+可以说在场的人中，[r]只有从未“想要钱”的家伙才有资格朝我扔石头！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？2：哥伦布！　我不会让你成为王！
+[charaPut G 0,-10000]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+？！
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[charaMoveReturn H 0,-15 0.4]
+＠芙芙
+芙，芙呜！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_24 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

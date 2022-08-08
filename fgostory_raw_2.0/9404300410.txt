@@ -1,0 +1,1113 @@
+
+
+
+
+＄94-04-30-04-1-0
+
+[soundStopAll]
+
+[charaSet A 98025000 1 怪人]
+[charaSet B 2009102 1 俄里翁]
+[charaSet C 2009201 1 阿耳忒弥斯]
+[charaSet D 2033000 1 马嘶]
+[charaSet E 1013001 1 恺撒]
+[charaSet F 7006001 1 坂田金时]
+[charaSet G 6019001 1 风魔小太郎]
+[charaSet I 2033000 1 马嘶变身用1]
+[charaSet H 2033000 1 马嘶变身用2]
+[charaSet J 1098120900 1 通讯用杂音]
+
+
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[scene 32300]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠怪人
+哼～哼哼！
+[k]
+
+＠怪人
+我要搞砸这个圣诞派对～！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠俄里翁
+具体来说，就是把圣诞蛋糕变成年糕，[r]把圣诞树变成门松！
+[k]
+
+[charaFace B 3]
+
+＠俄里翁
+还有，把圣诞装扮的美女变成振袖美女！
+[k]
+
+＠俄里翁
+……不，这都无所谓啦！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.2]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+＠？？？
+[f large]你们就到此为止吧！
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠怪人
+什么人！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠？？？
+既然你问了，那我不妨告诉你。[r]我叫马嘶！
+[k]
+
+[charaFace D 0]
+
+＠马嘶
+啊，怎么说呢。
+[k]
+
+[charaFace D 1]
+
+＠马嘶
+类似于守护圣诞节的圣诞老人吧。
+[k]
+
+＠马嘶
+综上所述[line 3][r]不好意思，去死吧！
+[k]
+
+[charaFace D 0]
+
+＠马嘶
+[f small]呃，那招叫什么来着。
+[k]
+
+[charaFace D 2]
+
+＠马嘶
+[f large]乘镀！！
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_ashwa_transform1]
+[se ade389]
+[wt 0.7]
+[se ad439]
+[seVolume ad439 0 0.7]
+[wt 1.0]
+
+[charaTalk off]
+[charaDepth D 1]
+[charaDepth I 2]
+[charaDepth H 3]
+
+[charaFace I 2]
+[charaPut I -550,0]
+[charaFadeTime I 0.2 0.6]
+[charaMove I 1 0.6]
+[wt 0.3]
+[charaFadeout I 0.3]
+
+[charaFace H 2]
+[charaPut H 550,0]
+[charaFadeTime H 0.2 0.6]
+[charaMove H 1 0.6]
+[wt 0.3]
+[charaFadeout H 0.3]
+[wt 0.3]
+
+[seStop ad439 1.0]
+
+[charaPut I -650,0]
+[charaPut H 650,0]
+[charaFadeTime I 0.2 0.6]
+[charaFadeTime H 0.2 0.6]
+[charaMove I 1 0.4]
+[charaMove H 1 0.4]
+[wt 1.0]
+
+[fowardEffect bit_talk_ashwa_transform2]
+[fowardEffectStop bit_talk_ashwa_transform1]
+[se ade390]
+[charaChange D 2033001 5 fade 0.1]
+[charaFadeout I 0.1]
+[charaFadeout H 0.1]
+[wait charaChange D]
+[wt 1.7]
+
+[charaTalk on]
+
+＠马嘶
+愤怒的化身，至尊战士！
+[k]
+
+＠马嘶
+受死吧！
+[k]
+
+＠马嘶
+哈啊啊啊啊啊啊！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.2]
+
+[fowardEffect bit_talk_13]
+[se bac11]
+[wt 0.1]
+[fowardEffect bit_talk_29]
+[se bac27]
+[seStop bac27 0.7]
+[charaShake A 0.05 3 3 0.8]
+[wt 0.8]
+
+＠怪人
+呀啊！
+[k]
+
+[messageOff]
+[charaSpecialEffect A erasure 1 1.2]
+[se ad52]
+[wt 0.8]
+[seStop ad52 0.5]
+[wait charaSpecialEffect A]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_4 1.2]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠俄里翁
+可恶，马嘶！
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_38l 0,0 H]
+[se bac111]
+[wt 0.2]
+[charaFace B 2]
+[charaShake B 0.05 3 3 1.2]
+[wt 0.3]
+[se bac111]
+[wt 0.9]
+[fowardEffectStop bit_talk_38l]
+
+＠俄里翁
+[f large]呀啊！？
+[k]
+
+[messageOff]
+[se ad63]
+[fowardEffect bit_talk_lightning_03g 10,180]
+[charaShake B 0.05 3 3 1.2]
+[flashin once 0.3 0.3 FFFFFFAF FFFFFF00]
+[wt 0.7]
+[flashin once 0.3 0.3 FFFFFFAF FFFFFF00]
+[wt 0.9]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠马嘶
+啊？[r]但我没攻击啊。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠俄里翁
+我想也是……[bgm BGM_EVENT_27 0.1][r]但我却受到了伤害……
+[k]
+
+[messageOff]
+[charaShake B 0.05 3 3 0.5]
+[charaMove B 0,-30 0.7]
+[wt 0.2]
+[se ad144]
+[seVolume ad144 0 0.4]
+[wt 0.8]
+
+[charaTalk off]
+[charaDepth C 1]
+[charaDepth B 2]
+[charaFace C 1]
+[charaFadein C 0.4 300,0]
+[charaMove C 50,0 0.4]
+[wt 0.4]
+
+[charaMoveReturn C 50,-10 0.4]
+[wt 0.2]
+[charaMove B 0,0 0.2]
+[wt 0.2]
+
+[charaMove C -400,0 0.7]
+[charaMove B -450,0 0.7]
+[se ad348]
+[wt 0.3]
+[charaFadeout C 0.4]
+[charaFadeout B 0.4]
+[seStop ad348 1.0]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠马嘶
+……算了，无所谓！[r]老子，大胜利！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_27 1.0 0.7]
+[se ade76]
+[seVolume ade76 0 0.3]
+[seVolume ade76 1.0 1.0]
+[wt 2.0]
+[seStop ade76 1.0]
+[bgm BGM_EVENT_27 1.0 1.0]
+[wt 0.5]
+
+[charaSet A 99502600 1 玛修]
+[charaSet H 2035000 1 帕里斯]
+[charaSet I 2039000 1 南丁格尔·圣诞]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠恺撒
+看过来看过来，现在马嘶变身套装[r]正在圣诞节回馈·八折大促销哦！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠坂田金时
+唔……真让人烦恼啊。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠风魔小太郎
+光靠[#零花钱:QP]正好不够……[r]戳中我的痛处了……
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.4 1]
+[wt 0.4]
+
+＠帕里斯
+唔唔……赫克托耳哥哥对这方面很严格的……
+[k]
+
+[charaFace H 0]
+
+＠帕里斯
+但只要有了那个变身腰带，[r]我或许能变得更强！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠恺撒
+嗯，当然能变强。[r]只要怀有这种坚定的想法！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠坂田金时
+好，小太郎。
+[k]
+
+[charaFace F 1]
+
+＠坂田金时
+我们俩合起来Golden吧！[r]（意译：把零花钱凑在一起合买吧。）
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠风魔小太郎
+明白了。[r]使用顺序就用猜拳来决定吧[line 3]
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+
+[se ad413]
+[seVolume ad413 0 0.5]
+[seVolume ad413 1.0 1.0]
+[wt 1.5]
+[bgmStop BGM_EVENT_27 1.0]
+[wt 0.5]
+[seStop ad413 1.0]
+[wt 1.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠马嘶
+呼啊～结束了结束了。[bgm BGM_EVENT_2 0.1]
+[k]
+
+＠马嘶
+不过啊，这样居然就算圣诞老人了，[r]还真是奇怪呢。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠恺撒
+……不不，[r]一点也不奇怪。
+[k]
+
+＠恺撒
+圣诞节这一活动免不了遭到资本主义的侵蚀。
+[k]
+
+[charaFace E 1]
+
+＠恺撒
+而我们只是滥用……不对，[r]是活用这点赚取QP促进经济发展罢了。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠马嘶
+尽管你说得没错[line 3]
+[k]
+
+＠马嘶
+但我总感觉啊，[r]这似乎距圣诞老人之路相去甚远哦。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠恺撒
+不不。
+[k]
+
+＠恺撒
+你是红色的，而且还会变身。[r]你完全拥有成为圣诞老人的资格。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 0.7]
+
+＠？？？
+到此为止了。
+[k]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠马嘶
+[line 3]唔？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠恺撒
+什么人。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad75]
+[wt 1.0]
+[seStop ad75 0.5]
+
+[charaTalk I]
+[charaFace I 0]
+[charaPut I 0,180]
+[charaSpecialEffect I appearanceReverse 1 0.9]
+[charaMove I 0,-10 0.7]
+[wt 0.7]
+
+[charaMove I 0,0 0.2]
+[se ad95]
+[wt 0.4]
+[seStop ad95 0.2]
+
+[charaFadein I 0.0 1]
+
+＠南丁格尔·圣诞
+各位，你们好。[r]我是[line 3]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠马嘶
+[f large]这不是圣诞老人嘛！！[bgm BGM_EVENT_7 0.1]
+[k]
+
+＠马嘶
+喂喂喂，[r]这圣诞力量也太强大了吧！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+
+＠南丁格尔·圣诞
+不，我是[line 3]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠坂田金时
+原来如此，太酷了。[r]这家伙是Golden的红色圣诞老人啊。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠风魔小太郎
+（究竟是金色还是红色啊……）
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠坂田金时
+好，我支持马嘶！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠风魔小太郎
+……那我就支持这位圣诞老人阁下吧！[r]不，其实会这么选择也没什么理由啦。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠帕里斯
+唔……不好选呢……[r]两边都很帅啊……
+[k]
+
+[charaFace H 0]
+
+＠帕里斯
+还是选马嘶吧！
+[k]
+
+[charaFace H 4]
+
+＠帕里斯
+（毕竟仔细看来，那把伞居然是针筒啊！[r]　我不喜欢疼！）
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠恺撒
+虽说遭遇了意料之外的入侵者，[r]但我们也必须作为圣诞老人进行迎击。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+＠南丁格尔·圣诞
+你们也自称圣诞老人？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠恺撒
+没错！[r]我们就是圣诞老人！
+[k]
+
+＠恺撒
+我们会传递梦与希望，发展经济，[r]为所有人的幸福架设桥梁！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠玛修
+尽管您说得非常冠冕堂皇……
+[k]
+
+？1：但你背后堆积如山的QP怎么说……？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠恺撒
+这是经济活动的一环。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠马嘶
+这大叔是怎么说来着的……[r]啊，对了对了。
+[k]
+
+＠马嘶
+他嘀咕着什么『[#不劳而获]』。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠恺撒
+我说你，这种事就不必说出来了吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠南丁格尔·圣诞
+……现阶段我还无法判断你说得对不对。
+[k]
+
+＠南丁格尔·圣诞
+但我觉得作为圣诞老人，[r]你们过于偏向经济活动了。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠恺撒
+唔。
+[k]
+
+＠恺撒
+哪怕同为圣诞老人，[r]也会走上不同的道路啊。
+[k]
+
+[bgmStop BGM_EVENT_7 0.7]
+
+[charaFace E 5]
+
+＠恺撒
+话说我可以认为你是圣诞老人吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+
+＠南丁格尔·圣诞
+……[r]……
+[k]
+
+[charaFace I 0]
+
+＠南丁格尔·圣诞
+这个……嘛。[bgm BGM_EVENT_1 0.1][r]或许[line 3]
+[k]
+
+＠南丁格尔·圣诞
+我确实是你们所说的圣诞老人。
+[k]
+
+＠南丁格尔·圣诞
+我该传递的是梦与希望。[r]也就是为了实现更好的明天必不可少的东西。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠风魔小太郎
+究竟是……？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠南丁格尔·圣诞
+御主应该知道吧？[r]我平日里一直很尊崇的词。
+[k]
+
+？1：难道是……
+？2：健康？
+？！
+
+＠南丁格尔·圣诞
+对。
+[k]
+
+＠南丁格尔·圣诞
+是健康。
+[k]
+
+＠南丁格尔·圣诞
+健康才是我作为圣诞老人唯一能够赠与的东西。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠坂田金时
+OH……[r]真是令我们无地自容的高尚动机啊……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠帕里斯
+嗯。
+[k]
+
+＠帕里斯
+作为圣诞老人守护健康！[r]太厉害，太高尚了！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠南丁格尔·圣诞
+没错。
+[k]
+
+＠南丁格尔·圣诞
+具体来说，就是用药剂代替点心作为礼物。
+[k]
+
+[bgmStop BGM_EVENT_1 0.1]
+
+＠J：全员
+[f large]哎。
+[k]
+
+[charaFace I 10]
+
+＠南丁格尔·圣诞
+这是药剂。[bgm BGM_EVENT_7 0.1]
+[k]
+
+＠南丁格尔·圣诞
+请放心。[r]这种药当然[line 3]是甜的！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠坂田金时
+问题在这里吗！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠帕里斯
+反……反对！[r]这也太没有梦想了！
+[k]
+
+＠帕里斯
+就算是甜的，[r]药和点心之间还是有不可逾越的鸿沟啦！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+
+＠南丁格尔·圣诞
+……[r]……？
+[k]
+
+＠南丁格尔·圣诞
+是吗……？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠风魔小太郎
+很遗憾……[r]我不得不同意这二位的意见……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠南丁格尔·圣诞
+御主也是这么认为的吗？
+[k]
+
+？1：很难下定论……
+？2：但还是有孩子希望得到点心的。
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠恺撒
+圣诞老人永远的课题，
+[k]
+
+＠恺撒
+是『礼物只要让孩子开心就够了吗？』
+[k]
+
+＠恺撒
+唔。[r]你竟然直面这一难题。
+[k]
+
+[charaFace E 1]
+
+＠恺撒
+真令人钦佩啊，南丁格尔。[r]你的圣诞老人之路恐怕会非常艰难。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠南丁格尔·圣诞
+……你是说我的礼物准备错了？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 1.2]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠恺撒
+这就要通过接下来的战斗决定了。
+[k]
+
+[charaFace E 2]
+
+＠恺撒
+上吧，马嘶，[bgm BGM_EVENT_3 0.1][r]拿起武器！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠马嘶
+唔？
+[k]
+
+＠马嘶
+好吧……作为圣诞老人，[r]没有理由不战斗！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠玛修
+（他们好像也误会了圣诞老人的定义……）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+＠南丁格尔·圣诞
+Mr.恺撒。
+[k]
+
+＠南丁格尔·圣诞
+看来你很了解圣诞老人之道该走往何方。
+[k]
+
+＠南丁格尔·圣诞
+我能否通过这场战斗，找到答案呢……[r]总之先请和我较量一下吧。
+[k]
+
+[charaFace I 2]
+
+＠南丁格尔·圣诞
+[#圣诞老人之间的对决]！！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠坂田金时
+……于是，[r]我们到底该帮哪边啊……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠风魔小太郎
+二……二位都请加油！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠帕里斯
+药……点心……但是甜的……[r]唔，哪边对呢……
+[k]
+
+＠帕里斯
+不好选择……真不好选择啊……[r]又得去裁定了……！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

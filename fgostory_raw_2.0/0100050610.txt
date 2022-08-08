@@ -1,0 +1,386 @@
+
+＄01-00-05-06-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+
+[charaSet A 8001001 1 玛修]
+[charaSet B 7014001 1 南丁格尔]
+[charaSet C 5016001 1 杰罗尼莫]
+[charaSet D 98003000 1 Dr.罗曼]
+[charaSet D 1019001 1 罗摩]
+[charaSet E 98022000 1 士兵]
+
+[scene 11210]
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠玛修
+早上好，前辈。[r]醒了吗？
+[k]
+
+？1：早上好，玛修。
+
+[charaFace A 1]
+＠玛修
+嗯，正好小睡了三个小时。[r]要保持能休息时就要休息的精神。
+[k]
+
+？2：这里是哪……？
+
+＠玛修
+杰罗尼莫说接下来会长距离移动，[r]所以先让你小睡一会儿……
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠杰罗尼莫
+放心吧。这里是西部的某个小镇。[r]因为凯尔特的猛攻，居民都去避难了。
+[k]
+
+＠杰罗尼莫
+如今还在这里的，[r]只有加入我们的当地同胞了。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠士兵
+是杰罗尼莫吗！
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠杰罗尼莫
+他没事吧？
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠士兵
+从者的生命力真是可怕。[r]虽然不能说没事，但勉强还有呼吸。
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+这里有从者吗？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFace A 6]
+[charaFadein A 0.1 2]
+＠杰罗尼莫
+嗯，其实第三名从者就藏在这里。
+[k]
+
+＠杰罗尼莫
+之所以救你们，除了希望你们加入我方以外，[r]最主要还是想让你为他治疗。
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 2]
+＠南丁格尔
+也就是说，该我出场了吧。[r]不，无论是否该我出场[line 2]。
+[k]
+
+＠南丁格尔
+只要存在寻求治疗的患者，[r]我就会前去。
+[k]
+
+＠杰罗尼莫
+嗯，拜托了。[r]如果你来治疗，说不定能有什么办法。
+[k]
+
+[charaFace C 2]
+＠杰罗尼莫
+好的，把他搬过来！
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 3]
+[bgmStop BGM_EVENT_2 1.0]
+[wait wipe]
+[wt 1.0]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[bgm BGM_EVENT_5 0.1]
+[wipein leftToRight 1.0 3]
+[wait wipe]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.4 1]
+＠D：？？？
+呜……！
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠玛修
+……好严重……！
+[k]
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+心脏都被挖掉一半了啊……！？[r]他竟然还能活着！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠D：？？？
+毕竟……余唯一的优点……就是结实啊……[r]呜……！
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk B]
+[charaFace D 4]
+[charaFadein D 0.1 0]
+[charaFace B 6]
+[charaFadein B 0.1 2]
+＠南丁格尔
+[line 2]这样的伤口我还是第一次见到。[r]不过，我是不会舍弃你的。
+[k]
+
+＠南丁格尔
+放心吧，少年。[r]就算你掉地狱里，我也能把你揪回来。
+[k]
+
+[charaFace D 1]
+＠D：？？？
+呵呵……还真是……令人放心呢……！
+[k]
+
+[charaFace D 2]
+＠D：？？？
+啊，疼死啦疼死啦！[r]你这家伙下手就不能稍微轻一点吗！？
+[k]
+
+＠D：？？？
+余可是被挖掉了半个心脏啊！
+[k]
+
+＠南丁格尔
+心脏都碎了还能说话的你更令人惊愕。
+[k]
+
+＠南丁格尔
+总之先进行治疗。[r]首先，由于心脏功能几乎停止了。
+[k]
+
+＠南丁格尔
+这样血液是无法在身体里循环的。[r]……所以还是切掉好了。
+[k]
+
+＠南丁格尔
+还有双手双脚。可能的话，除了肺以外，其他都要摘除。
+[k]
+
+＠D：？？？
+等……等一下等一下！[r]别切掉啊，希望你只要全力修复心脏就成了！
+[k]
+
+＠D：？？？
+余可不能在这里失去战斗力啊！
+[k]
+
+＠南丁格尔
+你在说什么呢。[r]没有什么比活下来更值得庆幸的了！
+[k]
+
+＠南丁格尔
+你作为扎根于这片大地的一个生命体，[r]身负无论如何都要活下去的义务！
+[k]
+
+[charaFace D 4]
+＠D：？？？
+你……你对余说这个有什么用啊！？
+[k]
+
+[charaFace B 7]
+＠南丁格尔
+别怕。[r]一定会治好你的……一定会！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠玛修
+……话说，这位是……？[r]似乎不是这个国家出身的从者……
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠D：？？？
+是……是说余吗！[r]余是罗摩！　拘萨罗伟大的王！
+[k]
+
+[charaFace D 2]
+＠罗摩
+详情……好疼好疼好疼！[r]去看『罗摩衍那』吧，就这样！
+[k]
+
+＠罗摩
+啊啊，该死。真的很痛啊！！
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk B]
+[charaFace D 2]
+[charaFadein D 0.1 0]
+[charaFace B 7]
+[charaFadein B 0.1 2]
+＠南丁格尔
+……不甘心。[r]不甘心、不甘心、不甘心、不甘心……！！
+[k]
+
+＠南丁格尔
+虽然能延缓正在逼近的死的速度，[r]但却没办法完全阻止……！？
+[k]
+
+＠南丁格尔
+不，我不会放弃。[r]只要这躯体还活着，我就会完成自己的使命！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠玛修
+啊啊，南丁格尔小姐，下手别那么狠！[r]究竟是在和谁的战斗中身负如此重的伤……？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠罗摩
+没办法啊……毕竟对手……是库·丘林。[r]爱尔兰最强的英雄。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+库·丘林……！？
+[k]
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+[communicationCharaLoop 98003003 1 5 0 4]
+＠Dr.罗曼
+哇啊啊……他果然在啊，[r]毕竟是和凯尔特战士们作对，他肯定在啊……
+[k]
+
+[communicationCharaFace 5]
+＠Dr.罗曼
+库·丘林。[r]被称为光之子的爱尔兰首屈一指的大英雄。
+[k]
+
+＠Dr.罗曼
+据说只要被他所持长枪迦耶伯格瞄准，[r]就必定会被穿透心脏。
+[k]
+
+＠Dr.罗曼
+……身为罗摩衍那主人公的他恐怕也难以回避吧。
+[k]
+
+[communicationCharaFace 4]
+＠Dr.罗曼
+……不如说，他还活着就已经是个奇迹了。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠杰罗尼莫
+虽然维持战线很重要，但我更希望能优先治疗罗摩。
+[k]
+
+＠杰罗尼莫
+随后我就听说有一位专门治疗士兵的从者，[r]于是就邀请你们来这里[line 3]唔？
+[k]
+
+[charaTalk A]
+[bgmStop BGM_EVENT_5 0.1]
+[se ad19]
+[wait se ad19]
+
+[charaFadeout C 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+这声音……来自空中吗。
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠杰罗尼莫
+嘁，是斥候吗。[r]一个不剩全部歼灭。
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_3 1.0]
+[wait fade]
+[soundStopAll]
+[end]

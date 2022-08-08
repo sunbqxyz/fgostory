@@ -1,0 +1,542 @@
+
+＄02-00-01-03-1-0
+
+[soundStopAll]
+[charaSet A 99502600 1 玛修]
+[charaSet B 2023000 1 新宿的Archer]
+[charaSet C 98111500 1 达·芬奇]
+[charaSet D 11005000 1 新宿的Rider]
+[charaSet E 98086000 1 福尔摩斯]
+[charaSet F 98111500 1 通讯用杂音]
+
+[voice 1100500_0_B100]
+[scene 38500]
+[wt 2.0]
+[wt 0.7]
+
+＠
+[line 3]当[#那家伙]的咆哮响起之时，[r]这新宿有条不成文的规定。
+[k]
+
+＠
+只要咆哮离得远，就能放心。[r]如果咆哮离得近，就逃跑。
+[k]
+
+＠
+届时，无论是因争斗而正在互相厮杀，[r]还是为金钱而正在欺凌好人，或是遭到欺凌，
+[k]
+
+＠
+都应相互帮助，[r]总之，只能专心逃跑。
+[k]
+
+＠
+只有这点，只有这点，[r]是绝对的不成文规定。
+[k]
+
+[wt 0.7]
+[messageOff]
+[fadein black 1.5]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 1.0 1]
+[wt 1.0]
+[wt 0.4]
+
+[voice 1100500_0_B120]
+[shake 0.04 3 3 0]
+[effect bit_talk_41]
+[effect bit_talk_voice01]
+[wt 2.0]
+
+
+[wipeout leftToRight 0.3 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[effectStop bit_talk_41]
+[effectStop bit_talk_voice01]
+[shakeStop]
+[wt 0.4]
+[wipein rightToLeft 0.3 1]
+[wait wipe]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠新宿的Archer
+麻烦了，比预想的还要近！[r]快跑！
+[k]
+
+＠新宿的Archer
+不，应该不行，我来扛你，你专心保持通信！[r]走了！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+[charaScale B 1.2]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,0]
+[wt 0.4]
+[se ad7]
+[shake 0.05 3 3 0.4]
+[charaFadeout B 0.4]
+[wt 0.2]
+[wipeout downToUp 0.3 1]
+[wait wipe]
+[wt 0.2]
+[wipein upToDown 0.3 1]
+[wait wipe]
+[wt 0.4]
+[charaScale B 1.0]
+[shake 0.04 0 2 0]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0 1]
+＠玛修
+瞬……瞬间检测到极高的灵基数值！
+[k]
+
+[charaFace A 15]
+＠玛修
+……！[r]径直向着御主过去了！
+[k]
+
+＠玛修
+距抵达还有……五……不，三分钟以内！
+[k]
+
+＠新宿的Archer
+看来那头狼的目标果然是你啊！
+[k]
+
+[charaFace A 14]
+＠玛修
+狼！？[r]但这……时速……200公里！？
+[k]
+
+＠新宿的Archer
+我很犹豫是否应该将[r]能以时速200公里追踪的怪物定义为生物啊！
+[k]
+
+＠新宿的Archer
+不行，肯定会被追上！
+[k]
+
+？1：……只能应对了！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0 0,-90]
+＠达·芬奇
+说得对。[r]没办法，和新宿的Archer组队迎击！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+？2：玛修！
+
+[charaFace A 2]
+＠玛修
+是！[r]为了迎击，我们也会做最大程度的支援！
+[k]
+
+[charaFace A 7]
+＠玛修
+御主……请务必……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+？！
+
+[messageOff]
+[wipeout upToDown 0.3 1]
+[wait wipe]
+[shakeStop]
+[wt 0.2]
+[wipein downToUp 0.3 1]
+[wait wipe]
+
+[se ad7]
+[seVolume ad7 0 0.4]
+[se ad333]
+[wt 1.15]
+[voice 1100500_0_B040]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠新宿的Archer
+每听一次灵魂都会为之震颤吧？[r]而且是因为恐惧而震颤。
+[k]
+
+＠新宿的Archer
+那是极为特殊的从者……
+[k]
+
+[charaFace B 0]
+＠新宿的Archer
+大部分英灵都不能仅靠虚构来成立。[r]而是以神话、传说、真实存在作为基础。
+[k]
+
+＠新宿的Archer
+若想仅靠虚构成立，[r]必须有相应的理由才行。
+[k]
+
+[charaFace B 1]
+＠新宿的Archer
+对，比如说[line 3]像绘本那样守护孩子的[#概念:梦][r]结晶化后的存在。
+[k]
+
+[charaFace B 0]
+＠新宿的Archer
+你那里就有那样的英灵吧？
+[k]
+
+？1：正精神十足地不停旋转呢。
+
+[charaFace B 1]
+＠新宿的Archer
+这样啊，我一直很想见一次。[r]因为那是十分有意思的概念。
+[k]
+
+[charaFace B 0]
+
+？2：遗憾的是并没有。
+
+＠新宿的Archer
+这样啊，如果你能成功召唤出来，请务必引荐给我。
+[k]
+
+？！
+
+＠新宿的Archer
+御主。我们接下来要应对的敌人啊，[r]是虚构的，也[#没有]成立的理由。
+[k]
+
+＠新宿的Archer
+也就是说，他[#不是英灵]。[r]因为不是英灵，[#所以是不可能成为从者的]。
+[k]
+
+＠新宿的Archer
+原本应该是这样才对。
+[k]
+
+[charaFace B 4]
+＠新宿的Archer
+灵基数值不达标的虚构，最多就是都市传说程度的概念。[r]既成不了英雄，也成不了反英雄，只能腐朽消失的存在。
+[k]
+
+＠新宿的Archer
+我们将这种称为“幻灵”。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0 1]
+＠玛修
+幻灵……[r]我记得福尔摩斯先生……
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_3 0.4 0.4]
+[wipeout circleIn 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+
+[charaSet A 8001001 1 玛修]
+[effect bit_sepia01]
+[charaTalk E]
+[charaFace E 0]
+[charaFace A 12]
+[charaFadein E 0.1 0]
+[charaFadein A 0.1 2]
+[scene 21410]
+[wt 0.4]
+[wipein circleIn 0.4 1]
+[wait wipe]
+
+＠福尔摩斯
+迦勒底确实还有谜题，[r]但是我自己还有其他需要追踪的人。
+[k]
+
+＠福尔摩斯
+其名为幻灵[line 3]不，这不是现在该说的事。[r]那我就此告辞了，[&Mr.:Miss][%1]。
+[k]
+
+[messageOff]
+[wipeout circleIn 0.4 1]
+[wait wipe]
+[effectStop bit_sepia01]
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[charaSet A 99502600 1 玛修]
+[scene 38500]
+[wt 0.4]
+
+[shake 0.05 0 4 0]
+[seLoop ad321]
+[se ad229]
+[seVolume ad229 0 0.4]
+[effect bit_talk_41]
+
+[bgm BGM_EVENT_3 0.4]
+[wipein circleIn 0.4 1]
+[wait wipe]
+
+[wt 2.0]
+
+[seStop ad321 0.7]
+[seStop ad229 1.4]
+[wipeout leftToRight 0.3 1]
+[wait wipe]
+[effectStop bit_talk_41]
+[shakeStop]
+[wt 0.4]
+[wipein rightToLeft 0.3 1]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠新宿的Archer
+而那就是极为特殊的特异性！
+[k]
+
+＠新宿的Archer
+神话中的双胞胎，或是与搭档共同留下传说的人们，[r]可能会以两人一组的形式被召唤出来！
+[k]
+
+＠新宿的Archer
+但是！　然而！　[#生前毫无关联的人]！[r]有可能会作为搭档结合在一起吗！
+[k]
+
+＠新宿的Archer
+可能！[r]那家伙货真价实地让这成为了可能！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+这……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.7 1]
+[wt 0.7]
+[voice 1100500_0_B040]
+[wt 1.5]
+
+？1：没有……头！？
+
+[charaFadeout D 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠新宿的Archer
+没错，无头骑士……[r]在欧美被称为杜拉汉的怪物。
+[k]
+
+
+[charaFace B 1]
+＠新宿的Archer
+简直像神话传说中匪夷所思的样子吧？[r]但是，包括骑乘的狼在内[line 3]。
+[k]
+
+
+？2：巨大的……狼！？
+
+[charaFadeout D 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠新宿的Archer
+对，很配当无头骑士的坐骑吧。[r]虽然不知道那是不是神话中著名的狼[line 3]。
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+[flashin once 0.2 0.1 FF0000FF FF000000]
+[se ad144]
+[se ad191]
+[wt 1.7]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠新宿的Archer
+他们都很残忍，这点可以确定。
+[k]
+
+？1：人类的……！
+？2：人的手臂……！
+？！
+
+[charaFadeout B 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[se ad333]
+＠？？？
+[image berserker_language_3]！！
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠新宿的Archer
+呼哈哈哈哈！[r]很好很好，胃口还是那么大啊！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0 1]
+＠玛修
+无头骑士……[r]吃人的狼……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0 0,-90]
+＠达·芬奇
+真名不明啊……
+[k]
+
+＠达·芬奇
+无头骑士有成为从者的可能性，[r]但并没有作为从者出现的记录[line 3]。
+[k]
+
+＠达·芬奇
+有名之狼但未能成为英灵，[r]食人之物[line 3]。
+[k]
+
+[charaFace C 2]
+＠达·芬奇
+……不行，可能性太多了！
+[k]
+
+＠达·芬奇
+想马上分辨出无头骑士应该很简单，[r]但从神话来考虑，全世界的狼简直数不胜数啊！
+[k]
+
+[charaFace C 5]
+＠达·芬奇
+总之这件事以后再说！
+[k]
+
+[charaFadeout C 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[voice 1100500_0_B040]
+＠？？？
+[image berserker_language_3]！！
+[k]
+
+[charaFadeout D 0.1]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+＠玛修
+……来了！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+？1：上了，Archer！
+？！
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠新宿的Archer
+嗯！[r]简直是殿堂级的吆喝啊，真不错！
+[k]
+
+＠新宿的Archer
+这样干劲也能使出来了！[r]有御主在真是件好事啊！
+[k]
+
+[charaFace B 2]
+＠新宿的Archer
+放马过来吧，Rider！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,132 @@
+＄91-70-11-02-4-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[scene 20700]
+[charaSet A 8001001 1 玛修]
+[charaSet B 98003003 2 Dr.罗曼]
+[charaSet C 98002000 2 芙芙]
+[charaSet D 7011001 2 大流士三世]
+[charaSet E 4015001 1 亚历山大]
+[charaSet F 4002001 0 伊斯坎达尔]
+[charaTalk D]
+[charaFace F 4]
+[charaFadein F 0]
+[charaFace D 4]
+[charaFadein D 0]
+[fadein black 1]
+[wait fade]
+＠大流士三世
+…………
+[k]
+
+＠伊斯坎达尔
+怎么怎么。为什么突然变老实了。[r]你就这种水平吗？　还不够啊。
+[k]
+
+？1：遗憾的是只能到此为止了。
+
+？2：快……快不行了。
+
+？！
+
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠玛修
+……前辈的魔力已经……快要见底了。[r]已经无法……继续战斗……
+[k]
+
+[charaFadeout A 0.1]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠大流士三世
+…………
+[k]
+
+[charaFadeout D 0.1]
+[bgmStop BGM_EVENT_3 0.4]
+[wt 0.4]
+[bgm BGM_EVENT_2 0.1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠伊斯坎达尔
+……是这样啊。[r]不过其实余也已经到极限了。
+[k]
+
+＠伊斯坎达尔
+毕竟是在没有正式召唤，[r]也没有圣杯情况下的强行现界[line 2]
+[k]
+
+[effect bit_talk_06]
+[charaFace F 0]
+＠伊斯坎达尔
+注定会变成这样。[r]大流士三世，阻挡在余面前的巨大壁垒啊。
+[k]
+
+＠伊斯坎达尔
+虽说失去魔力供给的你[r]或许已经听不见余的声音了[line 2]
+[k]
+
+＠伊斯坎达尔
+但下次相遇之时，[r]彼此[line 2]
+[k]
+
+[messageOff]
+[se ad52]
+[charaSpecialEffect F flashErasure 1 1.7]
+[wt 1]
+[effectStop bit_talk_06]
+[wait charaSpecialEffect F]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠大流士三世
+…………
+[k]
+
+[charaFadeout D 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+确认从者·伊斯坎达尔消灭。[r][line 2]战斗结束。
+[k]
+
+[charaFadeout A 0.1]
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 4]
+＠Dr.罗曼
+呼，总算老实地走了啊。[r]还好对方是个明事理的人。啊啊，真是太好了。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠玛修
+……说得对。[r]若再继续战斗下去，实在是……
+[k]
+
+？1：已经……不行了……
+
+？2：我要……晕了……
+
+？！
+
+[charaFace A 6]
+＠玛修
+啊，前辈！？[r]医生，请赶快灵子转移！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[soundStopAll]
+[end]

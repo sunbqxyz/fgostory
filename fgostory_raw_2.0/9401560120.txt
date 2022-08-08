@@ -1,0 +1,342 @@
+
+＄94-01-56-01-2-0
+
+
+
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[scene 20800]
+
+[charaSet A 98001000 1 玛修]
+[charaSet B 98006000 1 温迪戈]
+[charaSet C 5016001 1 杰罗尼莫]
+[charaSet D 5025001 1 爱迪生]
+[charaSet E 7028000 1 班扬]
+[charaSet F 98006000 1 温迪戈2]
+[charaSet G 98006000 1 温迪戈3]
+[charaSet H 5009000 1 特效用dummy]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+
+＠温迪戈
+G[se ad25]uooooooooo！
+[k]
+
+＠温迪戈
+U[charaScale B 1.6][charaFace B 0][charaFadein B 0.1 1][charaPut H 1][charaScale H 1.1][charaEffect H bit_talk_41][charaPut H -30,90][shake 0.05 2 4 0.5]ryyyyyyy！
+[k]
+
+[se ad85]
+[effect bit_talk_claw]
+[wt 0.7]
+
+[charaPut H 1200,1200]
+[charaFadeout B 0.1]
+[charaFadeout H 0.1]
+
+[wt 0.1]
+
+[flashin once 0.1 0.3 FF0000AF FF000000]
+[se ad46]
+[wt 0.1]
+[shake 0.05 2 2 0.15]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠玛修
+前辈！　不要紧吧！？
+[k]
+
+？1：没关系，只是擦伤！　不如说这样很好！
+
+[charaFace A 13]
+
+＠玛修
+太好了……！
+[k]
+
+[charaFace A 6]
+
+＠玛修
+……不，但是，咦……[r]刚才，我怎么好像听到了奇怪的感想……？
+[k]
+
+[charaFadeout A 0.1]
+
+？2：呜哇～红色的～
+
+[charaFace A 6]
+
+＠玛修
+御……御主……！？[r]怎么会这样，用瞪圆的眼睛凝视着出血的部位……
+[k]
+
+[charaFace A 12]
+
+＠玛修
+那……那个……这可不是什么好吃的东西哦！[r]这很难吃的。我莫名有一种非常危险的预感！
+[k]
+
+[charaFace A 7]
+
+＠玛修
+趁现在的设定还勉强能维持一致性，[r]得赶快结束这次活动才行！
+[k]
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠杰罗尼莫
+（……这么说来，玛修好像也有失冷静呢……[r]　唔……但愿不是某种精神污染……）
+[k]
+
+[charaFadeout C 0.1]
+
+？！
+
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠爱迪生
+但是，这数量确实很棘手。
+[k]
+
+＠爱迪生
+这营地虽然被我和[r]杰罗尼莫君的阵地建造强化了……
+[k]
+
+[charaFadeout D 0.1]
+
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 2]
+[charaFace D 4]
+[charaFadein D 0.1 0]
+
+＠杰罗尼莫
+嗯。但假如遭遇波状攻击，就不确定是否还能抵御了。[r]……有必要的话，需要我出击吗？
+[k]
+
+＠爱迪生
+不，等一下。我信任你的野战能力，[r]但只剩我和玛修君的话，防御面不够踏实。……唔？
+[k]
+
+[shake 0.2 0 3 0]
+[se ad57]
+[seVolume ad57 0 0.4]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+这摇动……是什么……？
+[k]
+
+[seStop ad57 0.5]
+[shakeStop]
+
+[shake 0.2 0 5 0]
+[se ad57]
+[seVolume ad57 0 0.6]
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠杰罗尼莫
+某种巨大的存在正在接近……？[r]是幻想种吗……？　不，不对……！
+[k]
+
+
+[messageOff]
+[seStop ad14 0.5]
+[shakeStop]
+[wt 0.5]
+
+[wipeout rectangleStripDownToUp 0.3 1.0]
+[wait wipe]
+
+[charaFadeout C 0]
+[scene 28300]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.3 1.0]
+[wait wipe]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaScale E 2.2]
+[charaPut E 0,100]
+[charaFadein E 0.7 0,60]
+
+[wt 2.5]
+
+[wipeout rectangleStripUpToDown 0.3 1.0]
+[wait wipe]
+[scene 20800]
+[charaFadeout E 0]
+[wt 0.5]
+[wipein rectangleStripDownToUp 0.3 1.0]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+那……那是……！？
+[k]
+
+？1：巨人的……进击……！！
+
+？！
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠杰罗尼莫
+不可能……！[r]精灵……神灵……不，怎么会……
+[k]
+
+[charaFadeout C 0.1]
+
+[messageOff]
+
+[wt 0.3]
+
+[fadeout black 0.3]
+[wait fade]
+[charaTalk E]
+[charaFace E 0]
+[charaPut E 0,100]
+[charaFadein E 0 0,60]
+[scene 28300]
+[fadein black 0.2]
+[wait fade]
+
+＠E：？？？
+没事吧～？[r]我这就来救你们～。
+[k]
+
+[wt 0.3]
+
+[messageOff]
+
+[wipeout leftToRight 0.2 2]
+[wait wipe]
+
+[charaFadeout E 0]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFadein F 0 0]
+[charaFace G 0]
+[charaFadein G 0 2]
+[scene 20800]
+
+[wipein leftToRight 0.2 2]
+[wait wipe]
+
+[se bac95]
+[charaEffect F bit_talk_12_red_R]
+[wt 0.3]
+[charaFadeout F 0.1]
+
+[wt 0.3]
+
+[se bac95]
+[charaEffect G bit_talk_12_red_R]
+[wt 0.3]
+[charaFadeout G 0.1]
+
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[se bac143]
+[effect bit_talk_Slash_red_01]
+[wt 0.1]
+[flashin once 0.3 0.3 FF000080 00000000]
+
+＠温迪戈
+Gyaaaaaaaaaaa！！
+[k]
+
+[charaFadeout B 0.1]
+[se ad144]
+
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+好……好厉害……！[r]温迪戈们就像胡萝卜被切片一样！
+[k]
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+
+[messageOff]
+[fadeout black 0.3]
+[wait fade]
+[charaTalk E]
+[charaFace E 1]
+[charaPut E 0,100]
+[charaFadein E 0 0,60]
+[scene 28300]
+[fadein black 0.2]
+[wait fade]
+
+＠E：？？？
+好嘞～！　就这样解决他们吧！[r]上吧！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

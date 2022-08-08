@@ -1,0 +1,78 @@
+＄01-00-02-10-3-1
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 20700 0]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98003003 1 罗曼医生]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 1005001 1 尼禄]
+[charaSet E 98016000 1 罗马士兵]
+[charaSet F 3009001 1 列奥尼达]
+[charaFace F 0]
+[charaFadein F 0 1]
+[fadein black 1]
+[wait fade]
+＠列奥尼达
+果然如此吗。[r]对于无守护之物的战斗，我……
+[k]
+
+[messageOff]
+[charaSpecialEffect F flashErasure 1 3]
+[wt 1]
+[se ba5]
+[wait charaSpecialEffect F]
+[wt 0.5]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠尼禄
+消失了……吗。[r]他们果然不应该属于这个世界啊。
+[k]
+
+[charaFadeout D 0]
+[charaTalk A]
+[charaFadein D 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+＠玛修
+……真是位难缠的对手。[r]不愧是最强的据点防卫英灵。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠罗曼医生
+周围已经没有敌方反应了。[r]无论是从者还是人类。也没有幻想种的反应。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaFace D 1]
+[charaFadein D 0.1 0]
+＠尼禄
+那就返回首都罗马吧！[r]玛修、[%1]，汝等尽可以挺胸抬头！
+[k]
+
+[charaFace D 0]
+＠尼禄
+唔嗯，尤其是玛修，好好挺起胸来。[r]虽然及不上余，但汝那里还是相当不错的。
+[k]
+
+[charaFace A 3]
+＠玛修
+呃，不……
+[k]
+
+[charaFace D 1]
+＠尼禄
+呵呵，堂堂正正地挺起胸膛吧！[r]这可是平定高卢后的凯旋而归！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_2 0.4]
+[wait fade]
+[soundStopAll]
+[end]

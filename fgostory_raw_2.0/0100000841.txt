@@ -1,0 +1,89 @@
+＄01-00-00-08-4-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[scene 10710]
+[charaSet A 8001000 2 玛修]
+[charaSet B 98003003 2 罗曼医生]
+[charaSet C 98002000 2 芙芙]
+[charaSet D 98004000 1 雷夫]
+[charaSet E 98005000 1 奥尔加玛丽]
+[charaSet F 5021001 0 魔术师]
+[charaSet G 98006300 1 ？？？]
+[charaFace A 2]
+[charaFadein A 0]
+[charaFace F 0]
+[charaFadein F 0]
+[fadein black 1]
+[wait fade]
+[effect bit_talk_12 1]
+[shake 0.05 0 10 0.5]
+[se ad32]
+[wt 0.5]
+[se bac1]
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠玛修
+哈啊[line 3]哈啊[line 3]哈啊[line 3]！
+[k]
+
+[charaFadeout A 0]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠魔术师
+喔，差不多该结束了！[r]同你的主人一起燃烧殆尽吧！
+[k]
+
+[charaFace F 0]
+[fowardEffect bit_talk_36 1]
+[se ad39]
+＠魔术师
+吾之魔术为炽焰牢笼，如荆棘般的绿之巨人。[r]因果报应，净化人事厄之祠[line 3]
+[k]
+
+[charaFace F 2]
+＠魔术师
+破坏之[#祭品:Wicker Man]！[r]来吧，不问善恶皆归尘土[line 3]！
+[k]
+
+[fowardEffectStop bit_talk_36]
+[voice NP_502100_2]
+[messageOff]
+[fowardEffect bit_talk_29]
+[flashin loop 1 1 FF000080 EE000040]
+[wt 2]
+[fowardEffectStop bit_talk_29]
+[charaFadeout F 0]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+啊[line 3]啊，
+[k]
+
+[charaFace A 15]
+＠玛修
+（一定要保护……再不用宝具的话，大家会消失的[line 3][r]　哪怕是冒牌货也行。哪怕只有现在也好。
+[k]
+
+＠玛修
+　如果我……如果我不能使用宝具的话，[r]　大家就要在这里灰飞烟灭了[line 3]！）
+[k]
+
+[charaFace A 2]
+＠玛修
+啊啊……啊啊啊啊啊啊[line 6]！！！！
+[k]
+
+[messageOff]
+[voice NP_800100_2]
+[charaEffect A bit_talk_14]
+[fadeout white 2]
+[wt 0.5]
+[wait charaEffect A]
+[flashout 0.7]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

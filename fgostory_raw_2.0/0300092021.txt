@@ -1,0 +1,428 @@
+
+＄03-00-09-20-2-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1049000 1 千子村正]
+[charaSet B 1098231110 1 妖精骑士兰斯洛特]
+[charaSet C 5021001 1 贤者格里姆]
+[charaSet D 98016000 1 圆桌军士兵]
+
+[imageSet J back10000 1 1]
+[charaScale J 1.05]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[bgm BGM_EVENT_24 0.1]
+
+[wt 0.2]
+
+[se ad618]
+[se ad1013]
+[effect bit_talk_14 150,100]
+[wt 0.4]
+
+[se ad1014]
+[effect bit_talk_14 -150,-100]
+
+[wt 0.3]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 120300]
+[wt 0.1]
+
+[fadein black 0.4]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠千子村正
+得手了！
+[k]
+
+[messageOff]
+[se ad678]
+[charaMove A 0,15 0.3]
+[charaMoveScale A 1.1 0.3]
+[charaFadeout A 0.2]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+[wt 0.3]
+[se ad85]
+[effect bit_talk_h_slash01_fs]
+[wt 0.2]
+
+[cameraMove 0.3 0,-45 1.3]
+
+[bgmStop BGM_EVENT_24 0.4]
+
+[fadeout white 0.2]
+[wait fade]
+[cueSe SE_21 21_ad1133]
+
+[charaScale A 1.0]
+
+[cameraHome 0.1]
+[wt 0.1]
+[fowardEffectDestroy bit_talk_x_slash02]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaSet B 3048000 1 妖精骑士兰斯洛特]
+[wt 0.1]
+
+[fadein white 1.0]
+[wt 0.5]
+[se ad44]
+[wait fade]
+[wt 0.5]
+
+[se ad671]
+[seVolume ad671 0 0.4]
+
+[wt 0.5]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.4 1]
+[charaShake B 0.05 2 2 0.4]
+[wt 0.6]
+
+＠妖精骑士兰斯洛特
+呜[line 3]！[r]为何『异邦的魔术师』的援护能顾及这边！？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad223]
+[charaPut C 1]
+[charaEffect C bit_talk_quickmove]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaSpecialEffect C appearanceReverse 1 0.3]
+[wt 0.6]
+
+＠贤者格里姆
+这不是援护，是对策啦。[r]是在进军之前，我强迫[&他:她]这么做的。
+[k]
+
+＠贤者格里姆
+是我用自身的魔力维持住了[r][%1]召唤出来的从者。
+[k]
+
+[charaFace C 1]
+
+＠贤者格里姆
+不过现在也到极限啦。[r]哎呀，实际尝试后才发现这样很辛苦呢！
+[k]
+
+＠贤者格里姆
+同时照看不同神话体系英灵的做法[r]果然很疯狂！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+＠妖精骑士兰斯洛特
+……唔，像极了魔术师……[r]……贤者这称呼果然名不虚传吗……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠贤者格里姆
+你这家伙究竟是怎么看待我的啦！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠妖精骑士兰斯洛特
+……因为……你看上去就像是会扔枪的……
+[k]
+
+＠妖精骑士兰斯洛特
+[#大神宣言:Gungnir]之类的，在[#不列颠:这里]也很有名……[r]我还满心以为你是[#同类:Lancer]呢……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠贤者格里姆
+……这是什么情况。[r]村正，这家伙真的是那个兰斯洛特吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+＠千子村正
+你会难以置信也在所难免，但这就是本人。[r]一露出真面目就变成这样，天然怕寂寞。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth J 1]
+[charaDepth B 2]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 21]
+[charaFadein B 0.1 1]
+＠妖精骑士兰斯洛特
+…………[wt 0.8][charaFadeTime J 0.2 0.5]（待会还是应该杀掉村正。）
+[k]
+
+[bgmStop BGM_EVENT_70 2.0]
+[charaFadeout J 0.2]
+
+[charaFace B 0]
+＠妖精骑士兰斯洛特
+……慢着，这就奇怪了。
+[k]
+
+＠妖精骑士兰斯洛特
+突破正门才是你们真正的目标。[r]『异邦的魔术师』的使命应该是在正门使出全力。
+[k]
+
+＠妖精骑士兰斯洛特
+但[&他:她]还有余力分给格里姆，这意味着[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.3]
+[se ad578]
+[seVolume ad578 0 0.1]
+[seVolume ad578 1.0 0.5]
+[se ad14]
+[seVolume ad14 0 0.1]
+[seVolume ad14 1.0 0.5]
+[scene 120302 1.0]
+[wt 1.0]
+[seStop ad14 1.0]
+[wt 1.5]
+
+[se ad16]
+[seVolume ad16 0 0]
+[se ad455]
+[seVolume ad455 0 0]
+[se ad647]
+[seVolume ad647 0 0]
+[wt 0.1]
+[seVolume ad16 0.2 0.2]
+[seVolume ad455 0.2 0.2]
+[seVolume ad647 0.2 0.2]
+[wt 3.0]
+
+[seStop ad16 1.0]
+[seStop ad455 1.0]
+[seStop ad647 1.0]
+
+[se ad166]
+[seVolume ad166 0 0]
+[wt 0.1]
+[seVolume ad166 0.6 1.0]
+[wt 1.0]
+
+[seStop ad166 0.2]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_82 0.1]
+
+＠圆桌军士兵
+传令，传令[line 3]！[r]正门被攻破了，巨人兵团突破正门了[line 2]！
+[k]
+
+＠圆桌军士兵
+不仅如此！[r]妖精骑士巴格斯特还投降了！
+[k]
+
+＠圆桌军士兵
+她叛离女王军了！[r]那座铁壁要塞成了我们的伙伴！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+＠妖精骑士兰斯洛特
+巴格斯特……[r]难怪在下觉得她毫无气势，原来是……
+[k]
+
+[charaFace B 0]
+
+＠妖精骑士兰斯洛特
+……好吧。[r]这场战斗是你们赢了。
+[k]
+
+＠妖精骑士兰斯洛特
+妖精骑士兰斯洛特打输了。
+[k]
+
+＠妖精骑士兰斯洛特
+你们可以宣称，[r]摩根的三骑士都输给了『预言之子』势力。
+[k]
+
+[charaFace B 16]
+＠妖精骑士兰斯洛特
+但在下只不过是顾全大局才会这么说。
+[k]
+
+＠妖精骑士兰斯洛特
+『我』可没有输。[r]你们千万别误会了。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_82 3.0]
+[wt 0.2]
+
+[messageOff]
+[charaMove B 0,-5 0.6]
+[se ad906]
+[wt 0.8]
+[se ad678]
+[seStop ad906 1.0]
+[se ade7]
+[seVolume ade7 0 0.6]
+[effect bit_talk_mgn_light02]
+[wt 0.2]
+[charaMove B 0,30 0.2]
+[charaFadeout B 0.1]
+[cueSe SE_21 21_ad1097]
+[wt 3.5]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠贤者格里姆
+……那家伙确实是龙呢。
+[k]
+
+＠贤者格里姆
+所谓的最强种，虽会对人类世界表示理解，[r]却压根不打算听别人说话吧。
+[k]
+
+[charaFace C 0]
+＠贤者格里姆
+也罢，工作都完成了。[r]我要跟师团一起回大本营，你呢？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠千子村正
+与[%1]会合。
+[k]
+
+＠千子村正
+虽说巴格斯特加入了我方，[r]但接下来才是攻城战的重头戏。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠贤者格里姆
+这样啊。那你就好好努力吧。
+[k]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaFace C 5]
+＠贤者格里姆
+[line 3]摩根可不好对付哦。
+[k]
+
+＠贤者格里姆
+按照初代格里姆的说法，[r]那家伙好像[#从未分出过胜负]。
+[k]
+
+＠贤者格里姆
+无论地点在哪，无论对手是谁，[r]那家伙只要开战，就必定会死人。
+[k]
+
+＠贤者格里姆
+不是对手，就是摩根。
+[k]
+
+＠贤者格里姆
+她是个在敌人死掉或自己被杀前，[r]都不会停手的铁娘子。
+[k]
+
+＠贤者格里姆
+阿尔托莉雅姑且不论，[r]这对[%1]和玛修来说非常棘手。
+[k]
+
+＠贤者格里姆
+这方面你还得照顾一下哦。[r]万一发生了什么……你应该明白吧？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+[charaFace A 17]
+＠千子村正
+那当然。虽然大家全都忘了，[r]但砍下摩根的脑袋原本就是[#老夫:我]的工作。
+[k]
+
+
+
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

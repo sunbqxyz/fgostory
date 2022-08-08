@@ -1,0 +1,1265 @@
+
+
+
+＄01-00-07-20-5-1
+
+[soundStopAll]
+[bgm BGM_EVENT_24 0.1]
+[charaSet A 98003000 1 Dr.罗曼]
+[charaSet B 8001002 1 玛修]
+[charaSet C 2020001 1 伊什塔尔]
+[charaSet E 98107400 1 牛若丸]
+[charaSet G 98006200 1 敌人A]
+[charaSet H 98006200 1 敌人B]
+
+[charaSet D 98006200 1 敌人C]
+[charaSet F 98006200 1 敌人D]
+
+[scene 20733]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[wt 0.7]
+[charaEffect E bit_talk_13]
+[wt 0.1]
+[charaFace E 4]
+[se bac11]
+[charaShake E 0.05 5 5 0.7]
+[wt 1.5]
+
+[se ad161]
+[charaSpecialEffect E enemyErasure 1 1.8]
+[wt 0.4]
+[se ad42]
+[wt 0.5]
+[effect bit_talk_tokeru01]
+[wait effect bit_talk_tokeru01]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.4 1]
+＠牛若丸
+看来你们到现在还没有接受教训啊，[r]就算杀掉一两个我，也根本无济于事。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+牛若丸再度从混沌之潮中出现！[r]……可恶，到底该怎么做才能打倒这家伙啊！？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠玛修
+牛若丸小姐的灵基已经是别人了……[r]但比起这个，为什么[line 3]
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+[wt 0.7]
+
+[flag MALE false]
+[flag FEMALE false]
+[selectionUse masterMale]
+？1：你为什么想要杀人类……！？
+
+[flag MALE true]
+
+？2：你为什么要对提亚马特言听计从！？
+
+[flag MALE true]
+
+？！
+
+[selectionUse masterFemale]
+？1：你为什么想要杀人类……！？
+
+[flag FEMALE true]
+
+？2：你为什么要对提亚马特言听计从！？
+
+[flag FEMALE true]
+
+？！
+
+[charaFace E 4]
+＠牛若丸
+问我为什么……？
+[k]
+
+[charaFace E 5]
+＠牛若丸
+倒是你们！[r]为什么不惜做到这个份上也要保护人类！
+[k]
+
+＠牛若丸
+你们说过拉赫穆很恐怖吧？[r]说那些怪物们很丑陋。
+[k]
+
+＠牛若丸
+但没有差别。人类和拉赫穆没有差别。[r]两者[charaFace E 2]丝毫没有任何差别啊！
+[k]
+
+[charaFace E 5]
+＠牛若丸
+假设在诸多悲剧中有一件伟业。[r]假设在诸多牺牲中有一次奇迹。
+[k]
+
+＠牛若丸
+假设在所有人都为利益而奔走的情势下，[r]只有一人会为受伤的人们奔走好了。
+[k]
+
+[charaFace E 2]
+＠牛若丸
+但是那份伟业，却在那些不知进取的人们手中，[r]遭到鲸吞蚕食、百般侮辱！
+[k]
+
+＠牛若丸
+[#人类:你们]总是这样！[r]围绕在唯一的奇迹身边，对其凌辱嘲笑！
+[k]
+
+＠牛若丸
+我为何要为这种生物而战！[r]我等为何非要被杀死不可！
+[k]
+
+[charaFace E 2]
+＠牛若丸
+我已经不再企图矫正你们了。[r]去死吧。全部都去死吧。
+[k]
+
+＠牛若丸
+除了去死，从[#起源:从头]重新来过以外，[r]你们无可救药！
+[k]
+
+[messageOff]
+[se ad42]
+[charaFace G 0]
+[charaFadein G 0.4 0]
+[wt 0.2]
+[charaFace H 0]
+[charaFadein H 0.4 2]
+[wt 0.2]
+[charaFace D 0]
+[charaFadein D 0.4 -512,0]
+[wt 0.2]
+[charaFace F 0]
+[charaFadein F 0.4 512,0]
+[wt 0.2]
+[wt 1.0]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[wt 0.1]
+
+[charaSet D 3006001 1 弁庆]
+[charaSet F 4014002 1 牛若丸B]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠伊什塔尔
+还要继续增加……！？[r]这家伙已经成了连灵魂都能分裂的怪物了吧……！
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠牛若丸
+哈哈哈哈哈哈哈！[r]对你们来说，最后的抵抗都是不被容许的！
+[k]
+
+＠牛若丸
+只要有我在，你们就别想对母亲大人出手！
+[k]
+
+＠牛若丸
+你们就像蝼蚁一般，[r]被多如蝼蚁的我杀掉吧！
+[k]
+
+[bgmStop BGM_EVENT_24 0.4]
+＠D：？？？
+那是不可能的吧。[r]蝼蚁般的群众是无法消灭唯一的希望的。
+[k]
+
+＠D：？？？
+众生确实浅见寡闻。[r]但是[line 3]
+[k]
+
+＠D：？？？
+您岂能否定那绝无仅有的伟业啊。
+[k]
+
+[charaFace E 2]
+＠牛若丸
+！　什么人！？
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[wt 0.1]
+
+[se ad73]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.2 1]
+＠弁庆
+[%1]阁下！[r]请原谅贫僧姗姗来迟！
+[k]
+
+？1：弁庆先生……！
+？2：您怎么伤痕累累……！？
+
+？！
+
+[charaFace D 1]
+＠弁庆
+无碍，手脚都还在呢[line 3][r]不，现在贫僧可谓状态奇佳！
+[k]
+
+＠弁庆
+贫僧胆小怕事，真是无颜以对各位！[r]但吾主闯出来的祸，还请交由贫僧善后！
+[k]
+
+[messageOff]
+[charaMove D -256,0 0.2]
+[charaFadeout D 0.2]
+[se ad73]
+[wt 0.4]
+
+[charaTalk depthOff]
+[charaTalk D]
+[charaDepth E 0]
+[charaDepth F 2]
+[charaDepth D 1]
+
+[charaFace D 5]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[wt 0.4]
+[charaFadein D 0.2 384,0]
+[charaMove D 128,0 0.2]
+[wt 0.2]
+
+[charaEffect E bit_talk_14]
+[wt 0.1]
+[se bac11]
+[charaShake E 0.05 5 5 0.7]
+[charaMove E -128,0 0.4]
+[wt 0.7]
+
+[charaFace E 2]
+＠牛若丸
+你这家伙居然还留在这里吗……！[r]早知就不该手下留情，应该直接烧死你！
+[k]
+
+[charaShake E 0.05 4 4 0.4]
+＠牛若丸
+可恶，放手，快放手！[r]你这三流演员！　事到如今没有你出场的余地！
+[k]
+
+[charaFace D 2]
+＠弁庆
+不，决不放开！[r]贫僧武藏坊，这次绝对，[#死也不会放手了]！
+[k]
+
+＠F：牛若丸
+[line 6]。[r]是吗。那就与我一起去死吧。
+[k]
+
+[bgmStop BGM_EVENT_3 0.5]
+[messageOff]
+
+[charaEffect D bit_talk_14]
+[wt 0.1]
+[se bac95]
+[charaFace D 5]
+[charaShake E 0.05 3 3 0.4]
+[charaShake D 0.05 3 3 0.4]
+[wt 0.1]
+[se ad46]
+[charaEffect D bit_talk_35]
+[wt 3.0]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+＠玛修
+周围的牛若丸小姐们[r]将牛若丸小姐连同弁庆先生一起刺穿了[line 3]！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 -128,0]
+[charaFace D 5]
+[charaFadein D 0.1 128,0]
+＠牛若丸
+哼。就算能拖上一个我垫背又能如何。
+[k]
+
+＠牛若丸
+如今的我已经不是你能够奈何得了的了。[r]我明明早就告诉过你了。
+[k]
+
+＠牛若丸
+……难得捡回的一条小命，[r]何不颤抖瑟缩到最后一刻呢。
+[k]
+
+＠牛若丸
+这种蛮勇真不像是胆小鬼的你会有的行为呢，常陆坊。
+[k]
+
+[bgm BGM_EVENT_6 2.1]
+[charaFace D 4]
+＠弁庆
+……哎呀，确实。[r]这确实很恐怖。
+[k]
+
+＠弁庆
+……不论有多少觉悟都不够用呢。[r]所谓的只身赴死，原来是这么恐怖的啊……
+[k]
+
+[charaFace E 5]
+＠牛若丸
+你这家伙，还没……！
+[k]
+
+[charaFace D 5]
+＠弁庆
+但是，贫僧的动力并不是觉悟。[r]愤怒。正是愤怒推动了贫僧。
+[k]
+
+＠弁庆
+……牛若丸大人。[r]您的这份憎恨，并不是提亚马特神赐予的。
+[k]
+
+＠弁庆
+而是一直存在于您内心中，[r]对全人类的感情。
+[k]
+
+[charaFace D 4]
+＠弁庆
+……这是我无法忍受的。
+[k]
+
+＠弁庆
+无论如何被周围投以异样的眼光，[r]您的为人总是像风儿一样自由。
+[k]
+
+＠弁庆
+……天才真是悲哀。[r]直到临死都是孤身一人。
+[k]
+
+＠弁庆
+尽管拯救不了您的心灵，[r]但弁庆阁下想必不希望让您孤单一人吧。
+[k]
+
+[charaFace D 5]
+＠弁庆
+而这样的您竟然会为愤怒所困，执着于愤怒[line 3][r]贫僧实在难以忍受。
+[k]
+
+[charaFace E 5]
+[charaShake E 0.05 3 3 0.4]
+＠牛若丸
+住嘴……！　可恶，你们在干什么啊，牛若丸！[r]把他的手脚连同我一起削断！　斩下他的首级啊！
+[k]
+
+＠牛若丸
+事到如今，区区和尚的说教有何意义！
+[k]
+
+[charaFace D 1]
+＠弁庆
+哈哈哈。可不能小看说教哦。[r]毕竟说教只要登峰造极，还能做到这等事情。
+[k]
+
+[messageOff]
+[se ad39]
+[effect bit_talk_06]
+[wt 2.0]
+
+[charaFace E 5]
+＠牛若丸
+怎么可能，这是[line 3][r]提亚马特的权能被剥离了[line 3]
+[k]
+
+＠牛若丸
+不，是我在主动分离吗……！[r]弁庆，你这家伙在干什么……！
+[k]
+
+[charaFace D 2]
+＠弁庆
+[line 3]还能干什么，当然是在做身为弁庆理所应当的事啊！[r]这次贫僧一定至死陪伴您的左右！
+[k]
+
+＠弁庆
+若对付起源之海，[r]我的名字也应该能派上点用处吧！
+[k]
+
+＠弁庆
+来吧，西方净土将吾等业障焚烧殆尽！[voice NP_300600_1][r]五百罗汉补陀落渡海[line 3]义经大人。
+[k]
+
+＠弁庆
+望您原谅在下如此长期不在您的身边[line 3]
+[k]
+
+[charaFace E 5]
+＠牛若丸
+[line 6]…………你这蠢材。[r]总是拘泥于那种无聊的事情。
+[k]
+
+[charaFace E 4]
+＠牛若丸
+区区胆小鬼的性命，就算送给我，我也一点都不开心。
+[k]
+
+＠牛若丸
+明明都成了仙人，你还真是……[r]所谓笨蛋，无论到哪都是笨蛋啊……
+[k]
+
+[bgmStop BGM_EVENT_6 2.4]
+[voice NP_300600_2]
+[messageOff]
+[fadeout white 2.0]
+[wait fade]
+[effectStop bit_talk_06]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[scene 10001]
+[wt 2.0]
+[fadein white 0.1]
+[wait fade]
+[fadeout black 1.5]
+[wait fade]
+
+[charaTalk depthOn]
+
+[branch play01 MALE 1]
+[branch play02 FEMALE 1]
+
+[label play01]
+[charaSet D 98108000 1 玩家]
+[branch play03]
+
+[label play02]
+[charaSet D 98108100 1 玩家]
+[branch play03]
+
+[label play03]
+[charaSet E 4018001 1 魁札尔·科亚特尔B]
+[charaSet F 4018001 1 魁札尔·科亚特尔]
+[charaSet G 98013200 1 提亚马特]
+[charaSet H 98107900 1 巴力拉赫穆]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[scene 20733]
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_EVENT_24 0.1]
+
+＠玛修
+……确认牛若丸小姐、弁庆先生这两位的灵基一同消灭。[r]守护提亚马特神的近卫消失了……
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk A]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr.罗曼
+……嗯。但没时间为之悲伤了。[r]魁札尔·科亚特尔，准备好了吗？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠魁札尔·科亚特尔
+[line 3]当然。[r]我也做好觉悟了。
+[k]
+
+＠魁札尔·科亚特尔
+各位，我起飞后，你们就离开提亚马特神。[r]待在附近的话，会遭到波及被一起烧起来的。
+[k]
+
+？1：魁札尔·科亚特尔……
+？2：……不要紧吧……？
+
+？！
+
+[charaFace F 1]
+＠魁札尔·科亚特尔
+哎呀，不要露出那种表情啦～！[r]就安心包在姐姐我身上吧～！
+[k]
+
+＠魁札尔·科亚特尔
+那我稍微去一下，将地上烧个一干二净啦～！
+[k]
+
+[messageOff]
+[se ad85]
+[charaEffect F bit_talk_21]
+[charaFadeout F 0.1]
+[wt 0.4]
+[charaEffectStop F bit_talk_21]
+[wt 1.2]
+
+
+[wipeout upToDown 0.3 1]
+[wait wipe]
+[scene 35010]
+[wt 0.1]
+[wipein downToUp 0.3 1]
+[wait wipe]
+
+＠提亚马特
+[line 6]
+[k]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.4 1]
+＠魁札尔·科亚特尔
+…………提亚马特神。[r]编织出我们[#人类]基底的起源之海。
+[k]
+
+＠魁札尔·科亚特尔
+这样的你竟然会否定人类，[r]想要重建世界。这令我深感悲哀。
+[k]
+
+[charaFace F 2]
+＠魁札尔·科亚特尔
+但是[line 3]这里已经是人类的世界了！[r]毫无理性、毫无意识、毫无内心！
+[k]
+
+＠魁札尔·科亚特尔
+仅凭“憎恨”就想吞噬我的孩子们的你，[r]我是无法认同的！
+[k]
+
+＠魁札尔·科亚特尔
+南美的神会与森林和野兽共生！[r]太阳的恩惠不是为了毁灭，而是为了生存！
+[k]
+
+[messageOff]
+[flashin once 0.1 0.3 FF0000AF FF000000]
+[se bac133]
+[se ad167]
+[seVolume ad167 0 0.3]
+[charaPut E 0,600]
+[charaEffect E bit_talk_32]
+
+＠魁札尔·科亚特尔
+过去在此[line 3]！
+[k]
+
+＠魁札尔·科亚特尔
+如今亦然。未来亦于此。[r]风啊，来吧，雷啊，来吧！
+[k]
+
+＠魁札尔·科亚特尔
+此乃拂晓明星闪耀之时！[r]太阳亦在彼方照耀！
+[k]
+
+＠魁札尔·科亚特尔
+[line 2]『[#太阳石:Piedra Del Sol]』[line 2]！
+[k]
+
+[messageOff]
+[seStop ad167 0.7]
+[se bac176]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.4]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.4]
+[se bac187]
+[fadeout white 2.0]
+[wait fade]
+
+[charaEffectStop E bit_talk_32]
+[charaFadeout F 0.1]
+[wt 1.0]
+
+[fadein white 0.5]
+[wait fade]
+
+[se ad205]
+＠提亚马特
+[f large][messageShake 0.05 3 3 0.7]Aaaaaa、aaaaa[line 6]
+[k]
+
+[wt 0.2]
+[messageOff]
+[wipeout upToDown 0.3 1]
+[wait wipe]
+[scene 20733]
+[wt 0.1]
+[wipein downToUp 0.3 1]
+[wait wipe]
+
+[wt 0.5]
+[se ad68]
+[seVolume ad68 0 0.5]
+[scene 20730 2.5]
+[wait scene]
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠玛修
+在提亚马特神头顶上方，[r]上空100米处确认魁札尔·科亚特尔！
+[k]
+
+＠玛修
+在她的上方，确认到更为强大的热源！[r]是太阳风！　混沌之潮逐渐被蒸发了！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 0]
+[charaFace B 2]
+[charaFadein B 0.1 2]
+＠伊什塔尔
+好烫，好烫啊……！　玛修，拜托你防御！[r]快点，[%1]也躲到玛修后面去！
+[k]
+
+[charaTalk depthOff]
+[charaDepth C 0]
+[charaDepth B 1]
+
+[se ad7]
+[charaMove C -128,0 0.4]
+[charaFadeout C 0.4]
+[wt 0.5]
+[charaShake B 0.05 3 3 0.25]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠伊什塔尔
+但不愧是南美的主神！[r]留了手非比寻常的王牌呢。
+[k]
+
+＠伊什塔尔
+如果将这个丢去乌鲁克，[r]乌鲁克瞬间就会化为灰烬[line 3]
+[k]
+
+[charaFace C 2]
+＠伊什塔尔
+魁札尔[messageShake 0.05 5 5 0.5]·科亚特尔！
+[k]
+
+[messageOff]
+[wipeout downToUp 0.3 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[scene 35010]
+[wt 0.1]
+[wipein upToDown 0.3 1]
+[wait wipe]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.7]
+
+[se ad203]
+[effect bit_talk_41]
+[wt 0.4]
+[cameraMove 0.5 0,0 2.0]
+[wipeout circleIn 0.5 1]
+[wait wipe]
+[effectStop bit_talk_41]
+[charaFadeout H 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+[charaPut E 0,600]
+[charaEffect E bit_talk_32]
+[se ad203]
+[cameraMove 0.1 0,0 1.0]
+[wt 0.4]
+[wipein circleIn 0.5 1]
+[wait wipe]
+
+[wt 0.2]
+[se bac11]
+[charaEffect F bit_talk_14]
+[charaShake F 0.05 3 3 0.25]
+＠魁札尔·科亚特尔
+呜……！　是飞行型的拉赫穆……！[r]也是，它们是不可能坐视不理的！
+[k]
+
+[charaFace F 1]
+＠魁札尔·科亚特尔
+但是动作太缓慢啦～！
+[k]
+
+＠魁札尔·科亚特尔
+该做的已经做完了哦～！[r]赶快回御主身边[line 3]
+[k]
+
+[wt 0.4]
+[messageOff]
+[charaFace F 7]
+[wt 1.0]
+
+[wipeout upToDown 0.3 1]
+[wait wipe]
+[charaEffectStop E bit_talk_32]
+[seStop ad167 0.4]
+[charaFadeout F 0.1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[scene 20733]
+[wt 0.1]
+[wipein downToUp 0.3 1]
+[wait wipe]
+
+[wt 0.2]
+[charaFace B 6]
+＠玛修
+！　混沌之潮，复原！[r]不，这是[line 3]
+[k]
+
+＠玛修
+是提亚马特神！[r]提亚马特神的脚下流出了混沌之潮！
+[k]
+
+[messageOff]
+[se bac176]
+[seVolume bac176 0 0.2]
+[flashin once 0.1 0.3 FF0000AF FF000000]
+[wt 0.4]
+[flashin once 0.1 0.3 FF0000AF FF000000]
+[wt 0.2]
+
+[charaFace B 15]
+＠玛修
+魁札尔·科亚特尔宝具再度出现！[r]科亚特尔小姐正在展开宝具……呜！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠伊什塔尔
+魁札尔·科亚特尔……！[r]你打算把自己烧成灰烬吗……！？
+[k]
+
+[messageOff]
+[wipeout downToUp 0.3 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+[se ad167]
+[seVolume ad167 0 0.3]
+[charaPut E 0,600]
+[charaEffect E bit_talk_32]
+[scene 35010]
+[wt 0.1]
+[wipein upToDown 0.3 1]
+[wait wipe]
+
+[charaEffect F bit_talk_13]
+[wt 0.1]
+[se bac11]
+[se ad161]
+[charaShake F 0.05 3 3 0.7]
+[wt 0.4]
+[charaEffect F bit_talk_35]
+[wt 0.4]
+
+＠魁札尔·科亚特尔
+咕，呜……！
+[k]
+
+＠魁札尔·科亚特尔
+变形成锥状发动飞扑技……！[r]你们难道是飞弹吗！
+[k]
+
+＠魁札尔·科亚特尔
+居然这么轻易贯穿我的[r]肩膀、腹部以及大腿之类的部位……！
+[k]
+
+[messageOff]
+[charaEffect F bit_talk_13]
+[wt 0.1]
+[se bac11]
+[se ad161]
+[charaShake F 0.05 3 3 0.4]
+[charaFace F 7]
+[wt 0.4]
+[charaEffect F bit_talk_35]
+[wt 2.0]
+
+
+[charaTalk F]
+[charaFace F 1]
+＠魁札尔·科亚特尔
+好痛……感觉快要听到判定倒计时了……
+[k]
+
+＠魁札尔·科亚特尔
+就算以顽强著称的我，[r]终究也只是时间问题吗[line 3]
+[k]
+
+[bgm BGM_EVENT_24 0.4 0.1]
+[charaMove F -3,0 0.1]
+[wt 0.1]
+[charaMove F 3,0 0.2]
+[wt 0.2]
+[charaMove F 0,0 0.1]
+[messageOff]
+[fadeout white 0.4]
+[wait fade]
+[charaFadeout F 0.1]
+[charaEffectStop E bit_talk_32]
+[scene 10001]
+[fadein white 0.1]
+[wait fade]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 1.5]
+[fadeout white 0.1]
+[wait fade]
+[charaPut E 0,600]
+[charaEffect E bit_talk_32]
+[charaFadeout D 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+[scene 35010]
+[wt 0.1]
+[bgm BGM_EVENT_24 0.1]
+[fadein white 0.1]
+[wait fade]
+
+＠魁札尔·科亚特尔
+这算什么，我一定会撑过去！[r]就算拼上这口气，我也不会停止[#太阳:Del Sol]！
+[k]
+
+＠魁札尔·科亚特尔
+看是我先被四分五裂，[r]还是埃列什基伽勒先完成准备好啦！
+[k]
+
+[charaFace F 2]
+＠魁札尔·科亚特尔
+这是真正意义上的不择手段的战斗！[r]就让我将这次胜负整整拖延一天[line 3][wt 0.4][charaFace F 5]怎么回事？
+[k]
+
+[messageOff]
+[charaEffectStop E bit_talk_32]
+
+[se ad204]
+＠提亚马特
+[line 3]A[line 3][r][line 3]Aaaa[line 3]Aaaaaaa[line 3]
+[k]
+
+[charaFace F 7]
+＠魁札尔·科亚特尔
+（大角抬起来了……？）
+[k]
+
+＠魁札尔·科亚特尔
+（在泥上缓和[#体积:重量]的魔力元素被集中到了角上，[r]　这简直就像翅膀[line 3]）
+[k]
+
+[charaFace F 2]
+＠魁札尔·科亚特尔
+（[line 3]不好。[r]　这家伙，[#打算飞]……！）
+[k]
+
+[messageOff]
+[seStop ad167 0.4]
+[wipeout upToDown 0.3 1]
+[wait wipe]
+[charaFadeout F 0.1]
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+[scene 20733]
+[wt 0.1]
+[wipein downToUp 0.3 1]
+[wait wipe]
+
+＠玛修
+太阳风，停止！[r]魁札尔·科亚特尔小姐回来了！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad7]
+[shake 0.05 0 4 0.25]
+[wt 0.25]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 1]
+＠魁札尔·科亚特尔
+嗨，我输啦～！　提亚马特神……不对，[r]把那种玩意儿叫成那家伙就行了～！
+[k]
+
+＠魁札尔·科亚特尔
+那家伙真是个既顽强又犯规的[#坏人:Ruda]啦！[r]认真和她较量的我简直像个笨蛋！
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠伊什塔尔
+嗯，作战到此为止吧。
+[k]
+
+＠伊什塔尔
+虽然从海洋涌上的泥被蒸发了，[r]但倘若提亚马特神本身就能产出黑泥，就另当别论了。
+[k]
+
+＠伊什塔尔
+赶快回乌鲁克吧。[r]得重新拟定对策才行。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 0]
+[charaDepth F 1]
+[charaTalk F]
+[charaFace C 8]
+[charaFadein C 0.1 0]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+＠魁札尔·科亚特尔
+不行啊，伊什塔尔。[r]不能这样破罐子破摔。
+[k]
+
+＠魁札尔·科亚特尔
+你明明很清楚。[r]这时候回去也没有意义。
+[k]
+
+＠魁札尔·科亚特尔
+如果我们不阻止提亚马特，[r]现在乌鲁克进行的最后努力就会付诸东流。
+[k]
+
+[charaFace C 2]
+＠伊什塔尔
+那你说要怎么办啦！？[r]让我们眼睁睁看着你把太阳释放至死吗！？
+[k]
+
+＠伊什塔尔
+与其让你拼个玉石俱焚，[r]不如我也亮出我的王牌！
+[k]
+
+[charaFace F 0]
+＠魁札尔·科亚特尔
+那也不行，伊什塔尔。[r]……那家伙……能飞啊。
+[k]
+
+[charaFace C 9]
+＠伊什塔尔
+[line 3]！
+[k]
+
+？1：能飞……？　就凭那巨大的身躯？
+？2：等等。这样一来，全部前提不就都……
+
+？！
+
+[charaFace F 0]
+＠魁札尔·科亚特尔
+对。已经不是蒸发脚下的泥就能解决的问题了。[r]能飞，就代表她不会坠落。
+[k]
+
+[charaFace C 2]
+＠伊什塔尔
+骗人！　提亚马特神是[#地:基]之女神，[r]是决不会接近[#天:安]的！
+[k]
+
+＠伊什塔尔
+怎么可能会飞[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠魁札尔·科亚特尔
+嗯。所以，[%1]？[r]最后要稍微……不好意思啦？
+[k]
+
+[bgm BGM_EVENT_24 0.4 0.4]
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaScale F 1.25]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,50]
+[wt 0.2]
+
+[se ad7]
+[fadeout black 0.25]
+[wait fade]
+[charaFadeout F 0]
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+[se ad30]
+[effect bit_talk_28]
+[wt 2.0]
+[fadeout black 0.1]
+[wait fade]
+[scene 20733]
+[fadein black 0.25]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+＠伊什塔尔
+喂，你干什么啊！？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+[wt 1.0]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+？1：～～～～～～！
+？2：这就是……[#更多:Mucho]……[#更多:Mucho]……
+
+？！
+
+[bgm BGM_EVENT_24 0.7]
+
+[charaScale F 1.0]
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+＠魁札尔·科亚特尔
+好嘞～，精力补满啦～！[r]我再去狠狠地与她干一场吧～！
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+哎……魁札尔·科亚特尔小姐，你都伤成这样了，还要做什么！？[r]这身体已经无法继续战斗了啊！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠魁札尔·科亚特尔
+不。四肢都还在啦。[r]我可是火之鸟哦？　只要翅膀还在，就能无数次振翅高飞。
+[k]
+
+＠魁札尔·科亚特尔
+伊什塔尔。
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠伊什塔尔
+…………干嘛。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠魁札尔·科亚特尔
+我先走一步了。接下来就交给你啦。
+[k]
+
+[charaFadeout F 0.1]
+[messageOff]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[wt 1.0]
+
+[charaFace C 6]
+＠伊什塔尔
+一路顺风。我会期待你摔角的绝招哦。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠魁札尔·科亚特尔
+当然啦！[r]御主也请好好看着哟～！
+[k]
+
+＠魁札尔·科亚特尔
+我这就去用我秘藏的空中技打倒她～！
+[k]
+
+[messageOff]
+[se ad85]
+[charaEffect F bit_talk_21]
+[charaFadeout F 0.1]
+[wt 0.4]
+[charaEffectStop F bit_talk_21]
+[wt 1.2]
+
+[wipeout downToUp 0.3 1]
+[wait wipe]
+[scene 35010]
+[wt 0.1]
+[wipein upToDown 0.3 1]
+[wait wipe]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠魁札尔·科亚特尔
+……我曾经这么说过……[r]美索不达米亚世界的武器无法伤她分毫。
+[k]
+
+[charaFace F 2]
+＠魁札尔·科亚特尔
+但是！　此身并非这片[#大地:世界]的武器，[r]而是遥远魔境的神性！
+[k]
+
+[charaTalk depthOff]
+[charaDepth F 0]
+[charaDepth E 1]
+
+[se ad136]
+[seStop ad136 1.0]
+[charaEffect F bit_talk_36]
+[charaFace F 2]
+
+[charaPut E 0,0]
+[charaFilter E silhouette FF000080]
+[charaFadeTime E 0.7 0.5]
+[wt 0.5]
+[se ad169]
+[seVolume ad169 0 0.5]
+＠魁札尔·科亚特尔
+美索不达米亚的神根本不在话下！
+[k]
+
+＠魁札尔·科亚特尔
+让你见识一下我等南美[#地下冥界:Xibalba][r]令众多生命灭绝的大冲突之力吧！
+[k]
+
+＠魁札尔·科亚特尔
+吾身化为燃烧之岩，[r]化作彗星击杀大地！
+[k]
+
+＠魁札尔·科亚特尔
+要上了哦[line 3][#终极:Ultimo]·[#冲击:Tope]·[#飞踢:Patada]！[r]燃烧吧，斗魂，[#炽焰，亦焚尽神灵:Xiuhcoatl][line 4]！
+[k]
+
+[bgmStop BGM_EVENT_24 1.5]
+[messageOff]
+[seStop ad169 0.4]
+[charaEffectStop F bit_talk_36]
+[charaEffect F bit_talk_32]
+[wt 1.0]
+[se bac51]
+[charaSpecialEffect F erasureReverse 1 0.25]
+[charaSpecialEffect E erasureReverse 1 0.25]
+[charaEffectStop F bit_talk_32]
+[fadeout black 0.25]
+[wait fade]
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[scene 10000]
+[wt 0.4]
+[fadein black 0.1]
+[wait fade]
+[effect bit_talk_rarrow01be]
+[wt 0.5]
+[se bac194]
+[wt 1.0]
+[wt 0.1]
+[wt 0.5]
+[flashin once 0.5 1.5 FFFFFFFF FFFFFF00]
+[wt 0.1]
+[se bac54]
+[wt 0.25]
+
+[wt 2.2]
+[se ad210]
+[wt 1.2]
+
+[se ad75]
+[seVolume ad75 0 0.5]
+[wt 1.5]
+
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

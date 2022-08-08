@@ -1,0 +1,776 @@
+
+＄94-04-02-04-1-0
+
+[soundStopAll]
+
+[charaSet A 98100400 1 玛修]
+[charaSet B 7030001 1 阿塔兰忒·Alter]
+[charaSet C 7031000 1 贞德·Alter]
+[charaSet D 1098163000 1 莫里亚蒂]
+[charaSet E 98002000 1 芙芙]
+[charaSet F 98109000 1 混混]
+
+[charaSet J 98002000 1 dummy特效1]
+
+[charaPut J 2000,2000]
+[charaEffect J bit_talk_27_01]
+
+[charaDepth C 1]
+[charaDepth B 9]
+
+[scene 80700]
+
+[wipeFilter cinema 0.5 0]
+[cameraFilter gray]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_41 0.1]
+
+[wt 1.5]
+
+
+＠
+[line 3]赌博中既有胜利者，[r]也有失败者。
+[k]
+
+＠
+恐怕，失败者会略多一筹吧。
+[k]
+
+＠
+而现在，又多了一名失败者。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_41 1.5]
+[wait fade]
+
+[wipeOff]
+
+[scene 81000]
+[cameraFilter normal]
+[wt 1.0]
+
+[se ad55]
+[seVolume ad55 0 0]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.4]
+
+[seVolume ad55 0.8 0.5]
+[wt 1.0]
+
+？1：这是什么声音？
+？！
+
+[seVolume ad55 0.8 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+是什么呢。[r]好像有人正在跑来[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[seStop ad55 0.3]
+[wt 0.1]
+[se ad671]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.4 -250,0]
+[charaMove B -20,0 0.3]
+[wt 0.3]
+[charaMove B 1 0.3]
+[wt 1.0]
+
+[charaFace B 2]
+
+＠阿塔兰忒·Alter
+[fontSize large]我不能接受！！
+[k]
+
+[bgm BGM_EVENT_94 0.1]
+
+？1：什么！？
+？！
+
+[charaFace B 5]
+
+＠阿塔兰忒·Alter
+话说御主。
+[k]
+
+＠阿塔兰忒·Alter
+我听说赌场是可以赚到钱的地方啊！
+[k]
+
+[charaFace B 4]
+
+＠阿塔兰忒·Alter
+但是，为何……为何……
+[k]
+
+[charaFace B 2]
+
+＠阿塔兰忒·Alter
+[fontSize large]我[messageShake 0.05 2 3 0.3]会输得精光啊！！
+[k]
+
+？1：啊……
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠玛修
+这是因为……阿塔兰忒小姐，[r]很遗憾，赌场确实是可以赚钱的地方。
+[k]
+
+[charaFace A 12]
+
+＠玛修
+但并不是百分百能赚到……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+……但是，但是啊！[r]再怎么说也不至于输到身无分文吧！
+[k]
+
+[charaFace B 8]
+
+＠阿塔兰忒·Alter
+呜呜……
+[k]
+
+？1：乖，乖……
+？！
+
+[bgm BGM_EVENT_94 0.6 0.4]
+
+＠C：？？？
+哼……这来自心灵深处的恸哭，[r]凄惨而愚蠢，但正因愚蠢，才更显悲哀。
+[k]
+
+[charaFace B 5]
+
+＠阿塔兰忒·Alter
+唔，什么人！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad60]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.8 1]
+[wt 1.2]
+
+[seStop ad60]
+[wt 0.4]
+
+[bgm BGM_EVENT_94 0.6 1.0]
+
+＠贞德·Alter
+是我。
+[k]
+
+＠贞德·Alter
+我听到了，阿塔兰忒。[r]你输到精光了吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+没错。那又如何。[r]这和汝没有任何关系。想嘲笑就尽管笑吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠贞德·Alter
+……我是不会笑你的。[r]没错，这是因为[line 3]
+[k]
+
+[charaFace C 5]
+
+＠贞德·Alter
+在这里，[r]就有一位你的同伴……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+……！
+[k]
+
+[charaFace B 3]
+
+＠阿塔兰忒·Alter
+难道汝也……！！
+[k]
+
+？1：你俩看上去都不擅长这类游戏嘛……
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 1]
+[wt 0.3]
+
+[se ad7]
+[charaMoveReturn C 0,-6 0.35]
+[wt 0.3]
+
+＠贞德·Alter
+（握手。）
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[se ad7]
+[charaMoveReturn B 0,-6 0.35]
+[wt 0.3]
+
+＠阿塔兰忒·Alter
+（握手。）
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_94 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 70900]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad657]
+[wt 1.4]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+[bgm BGM_TEITO 0.1]
+
+＠贞德·Alter
+再说了，[r]赌博的规则也太复杂了吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+嗯嗯，我懂，我懂。[r]我非常懂你。
+[k]
+
+＠阿塔兰忒·Alter
+也懂轮盘赌中应该把筹码放在哪里才是正确的。
+[k]
+
+[charaFace B 5]
+
+＠阿塔兰忒·Alter
+不对，这个我不懂。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠贞德·Alter
+还有德州扑克的概率如何如何的。
+[k]
+
+[charaFace C 0]
+
+＠贞德·Alter
+……再来一杯皇家咖啡。[r]不用点火了。
+[k]
+
+[messageOff]
+[wt 0.4]
+[se ad138]
+[charaPut J 290,-160]
+[charaMove J 290,-140 0.1]
+[wt 1.7]
+
+[charaFace C 7]
+
+＠贞德·Alter
+我自己能点。
+[k]
+
+[charaFadeout C 0.1]
+[charaPut J 1200,1200]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+我要[#苹果酒:西打酒]。[r]苹果要金苹果。
+[k]
+
+[charaFace B 6]
+
+＠阿塔兰忒·Alter
+哎，不行？[r]……那么，就换银苹果。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+？1：话说……
+？！
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace B 0]
+[charaFadein C 0.1 2]
+[charaFadein B 0.1 0]
+
+＠贞德·Alter
+干嘛啦。
+[k]
+
+＠阿塔兰忒·Alter
+什么事。
+[k]
+
+？1：你们喝闷酒有必要拖上我们吗……
+？！
+
+[charaFace C 13]
+
+＠贞德·Alter
+当然有必要啦。
+[k]
+
+[charaFace C 10]
+
+＠贞德·Alter
+将我们带来这个特异点的人，[r]本来就是御主嘛。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠玛修
+我们是为了解决问题而来的啊。
+[k]
+
+[charaFace A 0]
+
+＠玛修
+啊，我的话，那个，[r]橙汁就可以了……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠贞德·Alter
+玛修，不可以啦。[r]这种时候要成熟点，要成熟。
+[k]
+
+[charaFace C 6]
+[se ade160]
+
+＠贞德·Alter
+给这孩子来杯鸡尾酒！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠酒保
+那给这位戴眼镜的小姐这种。[r]鸡尾酒·灰姑娘。
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+啊，好……[r]谢谢……
+[k]
+
+[messageOff]
+[wt 0.2]
+[se ad217]
+[seVolume ad217 0 0.7]
+[charaMoveReturn A 0,-8 0.5]
+[wt 0.5]
+
+[seStop ad217]
+[wt 0.8]
+
+
+[charaFace A 3]
+
+＠玛修
+……真好喝。[r]脑袋有些轻飘飘的。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[charaMoveReturn E 0,20 0.4]
+
+＠芙芙
+芙！？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+[wt 0.8]
+
+？1：没事吧！？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠莫里亚蒂
+（这是无酒精的哦，御主。）
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠芙芙
+芙，芙芙？[r]芙……
+[k]
+
+？1：呼……
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+
+＠玛修
+……[r]……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+我不能接受，各种不能接受。[r]是吧，御主。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠贞德·Alter
+算了，已经无所谓了。[r]这些归根结底都宛若泡影。
+[k]
+
+[charaFace C 0]
+
+＠贞德·Alter
+原稿？[r]原稿不要紧啦，进度也不要紧。
+[k]
+
+[charaFace C 17]
+
+＠贞德·Alter
+所以再稍微陪我一会儿啦，御主亲。[r]否则小心我一把火把你烧得一点也不剩哦。
+[k]
+
+？1：好吓人！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠玛修
+前辈。
+[k]
+
+＠玛修
+……当看到埃列什基伽勒小姐之后，[r]我突然这么想。
+[k]
+
+＠玛修
+我说话的时候，[r]是不是也该把语尾语调改的可爱一些。
+[k]
+
+[charaFace A 3]
+
+＠玛修
+我是这[#玛修:么想]的……
+[k]
+
+？1：这只是冷笑话吧！
+
+[messageOff]
+[charaFace A 5]
+
+＠玛修
+[fontSize large]深受打击！
+[k]
+
+？2：虽然很可爱但会让人严肃不起来啦！
+
+＠玛修
+很可爱玛修……
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠莫里亚蒂
+……不只是你，连你的从者也晕场了啊……
+[k]
+
+[charaFace D 6]
+
+＠莫里亚蒂
+不过，就当这是个表现御主风范的机会好了！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFace B 4]
+[charaFadein C 0.1 2]
+[charaFadein B 0.1 0]
+
+＠贞德·Alter
+唉……赌博一败涂地，[r]漫画灵感迟迟不来。
+[k]
+
+＠贞德·Alter
+挫折连连就是指这种情况吧。
+[k]
+
+＠阿塔兰忒·Alter
+为孩子们准备的礼物……
+[k]
+
+[charaFace B 7]
+
+＠阿塔兰忒·Alter
+好不容易发现了可爱的骏鹰玩偶（量产版）……[r]但价格太高了……
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_TEITO 1.0]
+
+[se ad95]
+[wt 0.6]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.6]
+
+[seStop ad95]
+
+＠混混
+嘿嘿嘿。[r]哟，你们俩。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFace B 5]
+[charaFadein C 0.1 2]
+[charaFadein B 0.1 0]
+
+＠贞德·Alter
+……[r]……
+[k]
+
+＠阿塔兰忒·Alter
+……[r]……
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠混混
+要不要和我们[line 3][r]话说那眼神是什么意思。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_80 0.1]
+
+＠贞德·Alter
+好，砍了。[r]很抱歉，向我们搭话的你们还是自认倒霉吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠混混
+哎？[r]为啥啊？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+有钱吗？[r]有的话就抢。
+[k]
+
+[charaFace B 2]
+
+＠阿塔兰忒·Alter
+我会全力手下留情，[r]如果可能的话，可千万别死了哦……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠混混
+为[messageShake 0.04 3 3 0.4]啥啊[line 3]！？
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

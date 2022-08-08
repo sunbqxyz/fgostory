@@ -1,0 +1,122 @@
+＄91-60-10-01-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 20110]
+[charaSet A 8001001 2 玛修]
+[charaSet B 98003000 2 Dr.罗曼]
+[charaSet C 98002000 2 芙芙]
+[charaSet D 6010001 1 斯忒诺]
+[charaSet E 98014000 1 ？？？]
+[charaSet F 4001001 1 美杜莎]
+[charaDepth D 1]
+[charaFace F 4]
+[charaFadein F 0]
+[fadein black 1]
+[wait fade]
+＠美杜莎
+……输了。[r]我投降，请把宝物拿回去吧。
+[k]
+
+[charaFadeout F 0.1]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFace A 1]
+[charaFadein A 0.1 2]
+＠芙芙
+芙，芙呜♪
+[k]
+
+＠玛修
+是宝箱呢。[r]里面究竟是什么呢？
+[k]
+
+[se ar3]
+[wait se ar3]
+[charaFadeout A 0.4]
+[charaFadeout C 0.4]
+[wt 1]
+[charaTalk D]
+[charaFace D 1]
+[flashin once 0.6 0.4 FFFFFF80 00000000]
+[charaFadein D 0.7 1]
+[charaBackEffect D bit_talk_21]
+[se su5]
+[wt 1]
+[charaBackEffectStop D]
+＠斯忒诺
+恭喜你们闯关成功♪[r]干得漂亮，你们完成了我赋予你们的考验了呢，勇者们♪
+[k]
+
+[charaFadeout D 0.1]
+[charaFace A 6]
+[charaFadein A 0.1 2]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+＠玛修
+！？
+[k]
+
+＠芙芙
+芙，芙！？
+[k]
+
+[charaFace A 4]
+＠玛修
+……是……是这样啊。[r]你和我们一起灵子转移过来了啊。
+[k]
+
+＠玛修
+而且还特地抢在我们前面，[r]躲在……宝箱里……
+[k]
+
+？1：毫无意义！
+
+[charaFace A 8]
+＠玛修
+…………嗯。
+[k]
+
+？2：女神大人！！
+
+[charaFace A 6]
+＠玛修
+……啊，前辈，你又……
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠斯忒诺
+综上所述，宝物就是我。[r]为之高兴吧，[%1]。对吧，你们一定很高兴吧？
+[k]
+
+[charaFadeout D 0.1]
+[communicationCharaLoop 98003003 1 5 0 1]
+＠Dr.罗曼
+噢噢——！当然高兴啦！！[r]噢噢——斯忒诺大人——！！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 4]
+[charaFadein A 0.1 2]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+＠玛修
+唉……
+[k]
+
+＠芙芙
+芙呜……
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[bgmStop BGM_EVENT_2 0.4]
+[soundStopAll]
+[end]

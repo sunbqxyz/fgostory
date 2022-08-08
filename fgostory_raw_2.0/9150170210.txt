@@ -1,0 +1,342 @@
+
+＄91-50-17-02-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[charaSet A 8001001 1 玛修]
+[charaSet B 5017001 1 美狄亚·Lily]
+[charaSet C 98003000 1 Dr.罗曼]
+[charaSet D 5009001 1 达·芬奇]
+[charaSet E 98006100 1 恶魔]
+
+[charaTalk B]
+[charaFadein B 0.1 1]
+[charaFace B 0]
+
+[scene 21100]
+[fadein black 2]
+[wait fade]
+
+＠美狄亚·Lily
+呃……应该是这附近才对……
+[k]
+
+[charaFace B 1]
+＠美狄亚·Lily
+啊，稍微等一下，御主！[r]我现在就搜索敌人！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk A]
+[charaFadein A 0.1 1]
+[charaFace A 12]
+＠玛修
+……唉。您真的来了啊，前辈。[r]已经没有退路了哦。
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[se ad13]
+[communicationChara 98003003 1 5 0 4]
+[wt 0.3]
+＠Dr.罗曼
+啊，接下来究竟会举行怎样的[#魔女之宴:Sabbat]呢……[r]是考验[%1]勇气的时候了……
+[k]
+
+？1：哈哈哈，你们俩太小题大做了啦。
+？2：你们俩还是反对吗？
+
+？！
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFadein A 0.1 1]
+[charaFace A 8]
+＠玛修
+与其说反对，不如说令人头疼……[r]请回忆一小时前发生的事，前辈。
+[k]
+
+[wt 0.3]
+[messageOff]
+[wipeout circleIn 1.0 1]
+[bgmStop BGM_EVENT_2 1.0]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 1.0]
+[scene 10204]
+[wipein circleIn 1.0 1]
+[wait wipe]
+[bgm BGM_EVENT_7 0.1]
+
+[wt 0.4]
+
+[charaTalk B]
+[charaFadein B 0.4 1]
+[charaFace B 1]
+[wt 0.4]
+＠美狄亚·Lily
+～♪[r]～～♪♪
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk D]
+[charaFadein B 0.1 0]
+[charaFadein D 0.1 2]
+[charaFace D 0]
+＠达·芬奇
+哎呀，今天心情不错嘛，美狄亚。[r]我听说了哦，据说你调停了英雄王和征服王的争吵。
+[k]
+
+[charaFace D 1]
+＠达·芬奇
+哎呀，那两个人认真起来的争吵[r]可不是一般英灵能够阻止的啊。
+[k]
+
+＠达·芬奇
+和好的秘密究竟是什么？[r]诅咒什么的对那两个人无效吧。
+[k]
+
+[charaFace B 0]
+＠美狄亚·Lily
+不，那两位并不是因为憎恨对手才会争吵。
+[k]
+
+＠美狄亚·Lily
+只是在争论各自的意见而已。[r]所以，只要能找到折中的方案，
+[k]
+
+[charaFace B 1]
+＠美狄亚·Lily
+最后我还给了他们烤薄饼。[r]遇到麻烦就用烤薄饼。就算没什么事也用烤薄饼♡
+[k]
+
+[charaFace D 4]
+＠达·芬奇
+是……是这样啊。[r]不过你的时代有烤薄饼那种东西吗？
+[k]
+
+＠美狄亚·Lily
+是我被召唤到[#现代:这里]以后学会的。
+[k]
+
+＠美狄亚·Lily
+除了魔术以外，我居然还能找到沉迷的东西，[r]而且还能让人觉得很好吃，美狄亚我太幸福了♡
+[k]
+
+＠达·芬奇
+（……原来如此，确实赢不了。[r]　在如此幸福满载的氛围包围下，连龙都会停止争斗吧……）
+[k]
+
+[bgmStop BGM_EVENT_7 0.3]
+[wt 0.4]
+[bgm BGM_EVENT_5 0.1]
+
+[charaFace B 4]
+＠美狄亚·Lily
+啊，但是……最近遇到一些麻烦事。[r]迦勒底的食物储备，那个……
+[k]
+
+[charaFace D 0]
+＠达·芬奇
+啊。对哦，虽然我们有一年份的粮食，[r]但没有多余的可以用来做点心吧。
+[k]
+
+[charaFace D 4]
+＠达·芬奇
+美狄亚，能用魔术想想办法吗？
+[k]
+
+＠美狄亚·Lily
+嗯。如果可以灵子转移的话，[r]就能在目的地随意炼成材料……
+[k]
+
+＠美狄亚·Lily
+但在返回迦勒底时，[r]我只能随身运回一点点材料。
+[k]
+
+＠美狄亚·Lily
+时空之门也只能勉强确保[%1]和玛修的份，
+[k]
+
+＠美狄亚·Lily
+所以能带回来的东西最多也就只有[r]一份烤薄饼的材料[line 3]啊[bgmStop BGM_EVENT_5 0.4][charaFace B 0]。
+[k]
+
+[charaFace D 1]
+＠达·芬奇
+怎么了？　想到什么主意了吗？
+[k]
+
+[bgm BGM_EVENT_4 0.1]
+[charaFace B 1]
+＠美狄亚·Lily
+嗯！　以我的能力居然能想出如此好主意来！[r]一定是多亏了天才达·芬奇的功劳！
+[k]
+
+＠美狄亚·Lily
+既然只能搬运一份烤薄饼，[r]那就将这一份变成可以无限食用的烤薄饼就行了吧！
+[k]
+
+＠美狄亚·Lily
+没错，无论如何毁灭都能再生的材料[line 3][r]用魔神柱的魔力因子做如何！
+[k]
+
+[charaFace D 4]
+＠达·芬奇
+[line 3]啊？
+[k]
+
+＠美狄亚·Lily
+啊，我得赶快去拜托[%1]才行！[r]大家一起去狩猎魔神柱吧！
+[k]
+
+[wt 0.3]
+[messageOff]
+[wipeout circleIn 1.0 1]
+[bgmStop BGM_EVENT_4 1.0]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[wt 1.0]
+[scene 21100]
+[wipein circleIn 1.0 1]
+[wait wipe]
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFadein A 0.1 1]
+[charaFace A 8]
+＠玛修
+然后您无法拒绝拼命恳求[r]“我们一起去狩猎魔神柱吧”的Lily小姐，就这样……
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 4]
+＠Dr.罗曼
+……原本的美狄亚性格居然如此天然……
+[k]
+
+＠Dr.罗曼
+是由于遭到伊阿宋过分的待遇，[r]才终于看清了现实……
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk B]
+[charaFadein B 0.1 1]
+[charaFace B 1]
+＠美狄亚·Lily
+各位，我找到了！[r]是魔神柱的残留魔力！
+[k]
+
+[charaFace B 0]
+＠美狄亚·Lily
+那我就用这个作为触媒，钓一条其他魔神柱吧。[r]毕竟有七十二柱嘛，只钓一柱应该没关系吧？
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk A]
+[charaFadein A 0.1 1]
+[charaFace A 12]
+＠玛修
+……别把魔神柱说得像是今天晚饭一样……
+[k]
+
+[charaFadeout A 0.1]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[charaTalk B]
+[charaFadein B 0.1 1]
+[charaFace B 0]
+[se ad39]
+[charaPut D 0,-200]
+[charaEffect D bit_talk_06]
+＠美狄亚·Lily
+那我就制作召唤阵了。[r]枫树糖浆～，香草奶油～
+[k]
+
+[charaFadeout B 0.1]
+
+[charaPut D 0,-800]
+
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+那魔女的咒语咏唱怎么都那么甜啊！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaPut D 0,-200]
+
+[charaTalk B]
+[charaFadein B 0.1 1]
+[charaFace B 0]
+＠美狄亚·Lily
+蛋糊奶泡～！
+[k]
+
+＠美狄亚·Lily
+Let's cooki……不对，是Let's summon！[r]从魔之痕迹出现吧，深渊的同属啊！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaEffectStop D bit_talk_06]
+[wt 0.3]
+
+[messageOff]
+[charaEffect E bit_talk_15]
+[se ad29]
+[wait charaEffect E]
+[seStop ad29 2.0]
+
+[charaTalk E]
+[charaFadein E 0.4 1]
+[charaFace E 0]
+[se ad24]
+[seStop ad24 2.0]
+＠恶魔
+CHO[line 3]CHOCOLATEOOOOOO[bgm BGM_EVENT_3 0.1]！！！
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk B]
+[charaFadein B 0.1 1]
+[charaFace B 4]
+＠美狄亚·Lily
+对……对不起，御主！[r]我失败了，出现了普通的恶魔！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk A]
+[charaFadein A 0.1 2]
+[charaFadein B 0.1 0]
+[charaFace A 7]
+＠玛修
+因为你搞错了啦。把咒语搞错了啦。[r]因为你叫了什么Let's cooking什么的啊。
+[k]
+
+＠美狄亚·Lily
+不要说了啦，玛修，我有在反省！[r]总之先把这些人赶回去吧！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

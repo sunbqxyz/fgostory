@@ -1,0 +1,745 @@
+
+
+
+＄91-40-39-01-2-0
+
+[enableFullScreen]
+
+[soundStopAll]
+
+[charaSet A 4039002 1 曼迪卡尔多]
+[charaSet B 98002000 0 芙芙]
+[charaSet C 1098124510 1 达·芬奇]
+[charaSet D 98006000 1 魔兽]
+[charaSet E 8001400 1 装甲玛修]
+[charaSet F 8001410 1 玛修]
+[charaSet G 98025100 1 影从者]
+[imageSet H back10000 1]
+[charaSet I 98006100 1 dummy特效1]
+[charaSet J 98006000 1 魔兽]
+[charaSet K 98006000 1 魔兽]
+[charaScale H 1.05]
+[charaSet L 98006100 1 特效用1]
+[charaSet M 98006100 1 特效用2]
+[charaScale L 1.5]
+[charaScale M 1.5]
+
+[scene 10000]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad189]
+[seVolume ad189 0 0.1]
+[seVolume ad189 2.0 1.0]
+
+[scene 105800]
+[wt 0.1]
+
+[wipein openEye 1.2 1.0]
+[wait wipe]
+
+[wipeout openEye 0.8 1.0]
+[wait wipe]
+
+[wipein openEye 1.4 1.0]
+[wt 0.5]
+[seStop ad189 0.5]
+[wait wipe]
+[wt 0.8]
+
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+
+＠芙芙
+芙～。
+[k]
+
+？1：早上好～！
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_77 1.0 0.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ade113]
+[seVolume ade113 0 0.1]
+[seVolume ade113 1.0 1.0]
+[wt 2.5]
+[se ade114]
+[seVolume ade113 0.3 0.5]
+[wt 0.6]
+[se ade114]
+[seStop ade113 0.5]
+[wt 1.5]
+
+[se ad77]
+[wt 1.5]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[wipeout rightToLeft 1.0 1.0]
+[wait wipe]
+
+[scene 104200]
+[wt 0.5]
+
+[se ad8]
+[seVolume ad8 0 0.6]
+[seStop ad8 1.2]
+
+[wipein leftToRight 1.0 1.0]
+[bgm BGM_EVENT_77 1.0 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠曼迪卡尔多
+早。
+[k]
+
+？1：早。
+？！
+
+[charaFace A 4]
+
+＠曼迪卡尔多
+啊～，御主。
+[k]
+
+[charaFace A 0]
+
+＠曼迪卡尔多
+今天能不能也陪我锻炼呢。
+[k]
+
+＠曼迪卡尔多
+关于昨天那件事，我有话想说[line 3]
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[se ad13]
+[charaEffect I bit_talk_10_LowLevel]
+[wt 0.2]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+早上好。[r]能打扰一下吗？
+[k]
+
+＠达·芬奇
+啊，曼迪卡尔多也在啊。[r]刚好。
+[k]
+
+[charaFace C 24]
+
+＠达·芬奇
+发生微小特异点了。
+[k]
+
+＠达·芬奇
+这次真的非常小，[r]但还是尽早干掉为好。
+[k]
+
+？1：明白啦！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_10_LowLevel]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠曼迪卡尔多
+明白。
+[k]
+
+？1：啊，曼迪卡尔多。
+？2：你想说什么？
+？！
+
+＠曼迪卡尔多
+……啊，不，没什么大不了的。[r]比起这些，还是先去解决特异点吧。
+[k]
+
+[bgmStop BGM_EVENT_77 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠
+[line 3]当然，这不是在逃避。[r]并不是。
+[k]
+
+＠
+……似乎……[r]总是无法掌握时机……
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+
+[wait fade]
+
+[scene 107801]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠曼迪卡尔多
+嘿呀！
+[k]
+
+[messageOff]
+[se ad7]
+[charaPut I 1]
+[charaFadeout A 0.4]
+[charaMove A 0,10 0.2]
+[charaMoveScale A 1.1 0.2]
+[charaEffect I bit_talk_41]
+[wt 0.2]
+[charaPut I 2000,2000]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaScale A 1.0]
+
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.3]
+
+[se bac150]
+[effect bit_talk_14 -80,50]
+[wt 0.1]
+[charaShake D 0.04 3 4 0.2]
+[wt 0.1]
+
+[se bac149]
+[effect bit_talk_14 100,-130]
+[wt 0.1]
+[charaShake D 0.04 4 3 0.2]
+[wt 0.4]
+
+
+
+[se ad42]
+[charaSpecialEffect D enemyErasure 0,0 1.5]
+
+[wait charaSpecialEffect D]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+
+？1：曼迪卡尔多，继续进攻！
+
+
+[charaFace A 1]
+
+＠曼迪卡尔多
+好！[r]还能继续哦……！
+[k]
+
+？2：曼迪卡尔多，先退后！
+
+[charaFace A 6]
+
+＠曼迪卡尔多
+明白了，先返回！
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠E：玛修
+我开始支援！[r]呀啊啊啊！
+[k]
+
+[messageOff]
+[se ad667]
+[charaMoveScale E 1.1 0.2]
+[charaMove E 0,10 0.2]
+[wt 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[seStop ad667 0.2]
+[charaScale E 1.0]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFace J 0]
+[charaFadein D 0.1 0]
+[charaFadein J 0.1 2]
+[wt 0.3]
+
+[se ad686]
+[charaPut L -100,0]
+[charaEffect L bit_talk_x_slash01]
+[wt 0.1]
+
+[effect bit_talk_14 -200,0]
+[charaShake D 0.05 3 3 0.2]
+
+[wt 0.4]
+
+[se ad687]
+[charaPut M 100,0]
+[charaEffect M bit_talk_x_slash02 0,0 F]
+[wt 0.4]
+[effect bit_talk_14 200,0]
+[charaShake J 0.05 3 3 0.2]
+[wt 0.8]
+
+[se ad42]
+[charaSpecialEffect D enemyErasure 0,0 1.5]
+[charaSpecialEffect J enemyErasure 0,0 1.5]
+
+[wait charaSpecialEffect D]
+[wait charaSpecialEffect J]
+[charaFadeout D 0.1]
+[charaFadeout J 0.1]
+
+[wt 0.5]
+
+[bgmStop BGM_EVENT_80 1.2]
+
+[charaTalk depthOff]
+
+[charaDepth F 1]
+[charaDepth E 2]
+
+[se ade18]
+[seVolume ade18 0.0 0.5]
+
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+[wt 0.5]
+[seStop ade18 0.8]
+[wt 1.5]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.1]
+[charaFadeout E 0.4]
+[wt 0.2]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[wt 0.3]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[charaTalk F]
+[charaFace F 1]
+
+＠玛修
+扫荡完毕！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+
+＠曼迪卡尔多
+行。
+[k]
+
+？1：好，成功了！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠玛修
+那么请在返回前稍待片刻。[r]因为调整还需要时间。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠曼迪卡尔多
+这样啊……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠
+[line 3]好，这或许是个好时机。
+[k]
+
+
+＠
+不，慢着。[r]现在玛修也在场。
+[k]
+
+＠
+玛修好像也想和御主说话，[r]曼迪卡尔多还是老实一些吧……
+[k]
+
+＠
+……绝不是打退堂鼓。[r]绝不是打退堂鼓哦。
+[k]
+
+＠
+边给自己找借口，[r]我曼迪卡尔多边悄悄地和御主拉开了距离。
+[k]
+
+[bgmStop BGM_EVENT_77 1.0]
+[charaFace A 0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠曼迪卡尔多
+……唔？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+＠
+[line 3]杀气！
+[k]
+
+[messageOff]
+
+[se ad193]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 1.0 1]
+[wt 2.0]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠玛修
+曼迪卡尔多先生！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 5]
+[charaDepth H 1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[charaFadeTime H 0.2 0.6]
+
+＠曼迪卡尔多
+（影从者……背后空门被偷袭了！[r]　可恶，『气息遮断』……是暗匿者职阶吗！）
+[k]
+
+[messageOff]
+[charaFadeout H 0.2]
+[wt 0.4]
+
+[charaTalk depthOn]
+
+？1：紧急回避！
+？！
+
+[se bas9]
+[effect bit_talk_release]
+[wt 0.4]
+[flashin once 0.2 0.2 FFFFFFFF FFFFFF00]
+[charaFadeTime A 0.2 0.6]
+[wt 0.2]
+[effectDestroy bit_talk_release]
+
+[se ad171]
+[fowardEffect bit_talk_Slash_white_01_L -50,0]
+[wt 0.1]
+
+
+[charaMove A 15,0 0.1]
+[wt 0.4]
+[charaFadeTime A 0.2 1.0]
+[wt 0.2]
+
+[charaFace A 2]
+
+＠曼迪卡尔多
+哎哟，感谢！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠
+[line 3]此时此刻，突然理解了。
+[k]
+
+＠
+这是叫『领悟』吗。
+[k]
+
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠E：玛修
+我前进到前锋位置！
+[k]
+
+[messageOff]
+[charaFace E 7]
+[messageOff]
+[se ad667]
+[charaMoveScale E 1.1 0.1]
+[charaMove E 0,10 0.1]
+[wt 0.2]
+[seStop ad667 0.2]
+[wt 0.1]
+
+[effect bit_talk_14]
+[se ad32]
+[charaFace E 15]
+[charaShake E 0.05 3 3 0.2]
+
+[wt 0.3]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaScale E 1.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠曼迪卡尔多
+御主！
+[k]
+
+＠曼迪卡尔多
+非常抱歉在这种时机如此唐突！
+[k]
+
+？1：没关系，什么事！
+？！
+
+[bgm BGM_EVENT_80 1.0 0.5]
+
+＠曼迪卡尔多
+我觉得我还是成不了你的朋友！
+[k]
+
+？1：……！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠
+无论是我，还是御主。
+[k]
+
+＠
+过去实在，实在是过于隔绝，[r]以至于难以无忧无虑地成为朋友。
+[k]
+
+＠
+就像不是我的我，[r]成了[&他:她]的朋友一样。
+[k]
+
+＠
+我也对被迦勒底召唤，[r]并一直战斗至今感到非常骄傲。
+[k]
+
+＠
+这是不能抛弃，[r]也不能夺走的重要的记忆与记录。
+[k]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠曼迪卡尔多
+然而！[r]但是哦！
+[k]
+
+＠曼迪卡尔多
+[#对朋友众多的人类来说]，[#重要的不是关系]！
+[k]
+
+＠曼迪卡尔多
+我是相信你，[r]与你一起战斗的从者！
+[k]
+
+＠曼迪卡尔多
+这我决不会让步！[r]的说！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠
+[line 3]终于，[r]能将这份挂念化作语言的形式了。
+[k]
+
+＠
+这来路不明怪物般的挂念，[r]通过说明，变得不再不明。
+[k]
+
+＠
+所以，自然不再需要害怕了。
+[k]
+
+＠
+因为，已经将重要的事化作了言语。
+[k]
+
+[messageOff]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+？1：……说得对！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠
+[line 3]御主爽朗地笑着点了点头。
+[k]
+
+＠
+啊啊，在前进。[r]所谓的人类，真是太顽强了。
+[k]
+[messageOff]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+？1：好，我们上吧，曼迪卡尔多！
+？！
+
+[bgm BGM_EVENT_80 1.0 1.0]
+[charaFace A 1]
+
+＠曼迪卡尔多
+好！[r]玛修，换人！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：玛修
+好的，交给您了。[r]曼迪卡尔多先生！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠曼迪卡尔多
+迦勒底的突击队长，曼迪卡尔多。[r]出击！
+[k]
+
+
+？1：……突击队长？
+？！
+
+[charaFace A 7]
+
+＠曼迪卡尔多
+不要对这点持有疑问啦！！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,519 @@
+
+
+＄94-03-01-06-2-1
+
+
+[soundStopAll]
+
+[charaSet A 6007003 1 杀人之鬼]
+[charaSet B 1098157600 1 护法少女]
+[charaSet C 1098157700 1 小动物]
+[charaSet D 10008001 1 志度内]
+[charaSet E 99502600 1 玛修]
+[charaSet F 3034002 1 茨木童子]
+[charaSet G 6029001 1 Assassin Paraiso]
+[charaSet H 98115000 1 特效用]
+
+
+[scene 64900]
+
+[bgm BGM_EVENT_24 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[wt 0.3]
+
+[se adm14]
+[charaPut H -150,0]
+[charaEffect H bit_talk_v_slash02]
+[wt 0.2]
+
+[se adm14]
+[charaPut H 150,0]
+[charaEffect H bit_talk_v_slash02]
+[charaFadeout F 0.1]
+[wt 0.5]
+
+[charaPut H 1]
+
+[se ad267]
+[effect bit_talk_29]
+[wt 1.5]
+
+[charaDepth H 10]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 0.5]
+[se ad39]
+[charaEffect H bit_talk_36_bl]
+[wt 1.5]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_36_bl]
+[charaFadeout B 0.1]
+[wt 0.3]
+[se bac165]
+[flashin once 0.1 1.0 5944EAFF 5944EA80]
+[effect bit_talk_14]
+[wt 0.5]
+[seStop bac165 0.5]
+[wt 0.1]
+[se bas13]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.3]
+[charaShake A 0.05 3 3 0.5]
+[bgmStop BGM_EVENT_24 1.0]
+[wt 1.0]
+
+
+
+＠杀人之鬼
+………………呜！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[bgm BGM_EVENT_11 0.1 1.0]
+[charaEffect A bit_talk_06]
+[wt 1.5]
+
+[charaFace A 0]
+＠杀人之鬼
+真够鲁莽的……[r]一次对付几骑从者还是太难了……
+[k]
+
+＠杀人之鬼
+我早就知道了……
+[k]
+
+[charaFace A 4]
+＠杀人之鬼
+正因为知道，才会想一个个解决……[r]想把事情弄得轻松一点……该死的……
+[k]
+
+＠杀人之鬼
+是因为复制的本体是恶吗……[r]不……
+[k]
+
+[charaFace A 0]
+＠杀人之鬼
+……………还是不该模仿那家伙呢。
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaEffectStop A bit_talk_06]
+[wait charaEffect A bit_talk_06]
+[se ad52]
+[charaSpecialEffect A flashErasure 1 2.0]
+[wait charaSpecialEffect A]
+
+[wt 1.5]
+
+[cueSe Battle bac199]
+[cueSeVolume bac199 0 0.6]
+
+[charaPut H 1]
+[charaEffect H bit_talk_gold_kamui]
+[wt 3.0]
+[charaPut H 1200,1200]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+＠志度内
+辛苦啦。
+[k]
+
+＠志度内
+过来，过来。[r]不用再那么拼命啦。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+
+[wt 1.0]
+[se adm19]
+[charaEffectStop H bit_talk_gold_kamui]
+[wt 1.0]
+[seStop adm19 1.0]
+[wt 1.0]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+＠志度内
+………嗯。睡吧。[r]不会再有人妨碍你的睡眠了。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 1.0]
+[wt 1.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+＠玛修
+战斗结束，前辈。[r]这样一来第四黄金也成功回收了吧。
+[k]
+
+[charaFadeout E 0.1]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+[charaDepth C 10]
+[charaTalk B]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 0,0]
+＠护法少女
+好了，那妾身先走啦。[r]记得把躺在那边的黑胡子先生带走哦？
+[k]
+
+[charaFace C 1]
+
+＠小动物
+除了鬼王的以外，只剩一块金块了。[r]打起精神来继续加油哦，渣滓们。
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[charaEffect B bit_talk_quickmove]
+[charaSpecialEffect C erasureReverse 1 0.3]
+[charaSpecialEffect B erasureReverse 1 0.3]
+[se ad73]
+[wt 0.5]
+
+
+[charaSet A 6013001 1 魅影]
+[charaSet B 4025000 1 哥伦布]
+[charaSet C 5014001 1 梅菲斯托费勒斯]
+[wt 0.5]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠茨木童子
+谢谢！[r]谢谢你，护法少女·鬼救阿！　希望能再见到你！
+[k]
+
+＠茨木童子
+真希望有一天能和你悠闲地吃团子……[r]马卡龙也可以……
+[k]
+
+[charaFace F 1]
+＠茨木童子
+巧克力其实也行……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠G：[servantName 602900:Assassin Paraiso:望月千代女]
+主公，连战连胜，干得太漂亮了。[r]但是，那个[line 3]
+[k]
+
+[charaFace G 4]
+＠G：[servantName 602900:Assassin Paraiso:望月千代女]
+在下稍微有些疑问……[r]为何那边的男性众不参加这次战斗呢？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠魅影
+克里斯蒂娜……[r]我没有……倾听你歌声的……资格……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠B：[servantName 402500:反抗军的Rider:哥伦布]
+……………这话说来丢人，其实是因为魔力不够了。
+[k]
+
+[charaFace B 0]
+＠B：[servantName 402500:反抗军的Rider:哥伦布]
+这里是叫ONILAND吗？[r]真是个奇妙的地方。只是玩玩而已，魔力就不断减少。
+[k]
+
+＠B：[servantName 402500:反抗军的Rider:哥伦布]
+我已经想赶快回迦勒底了，[r]但连这种事都做不到。缘分已经结下了。
+[k]
+
+[charaFace B 1]
+＠B：[servantName 402500:反抗军的Rider:哥伦布]
+能尽快想点办法吗，御主。[r]呼。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠梅菲斯托费勒斯
+都是因为我们在这种状况下进行了战斗啦，嗯！[r]我们现在已经被榨干了！　倾家荡产啦！
+[k]
+
+[charaFace C 2]
+＠梅菲斯托费勒斯
+说实话，当前状态下如果遭到那个冒牌海德先生的袭击，[r]或许就危险啦！　唔，遗憾！　感谢您的搭救！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠B：[servantName 402500:反抗军的Rider:哥伦布]
+哈哈。到底是遗憾还是感谢人家搭救，你倒是说清楚点啦！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_2 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 2.0]
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_BATTLE_29 0.1]
+
+＠鬼王朱裸
+哼呵呵……哼呵呵呵呵呼……！！
+[k]
+
+＠鬼王朱裸
+嘎～哈哈哈哈！[r]真是群愚蠢的家伙，居然让我认真起来了！
+[k]
+
+＠鬼王朱裸
+在所有游乐设施经理中拥有最恐怖氛围的经理！
+[k]
+
+＠鬼王朱裸
+我ONILAND中最有人气的游乐设施！[r]传说中的！　摩天轮经理啊[line 3]现在就到来吧！
+[k]
+
+＠鬼王朱裸
+用你那可怕的感觉！[r]将傲慢的投诉者们……丢入地狱吧！
+[k]
+
+＠鬼王朱裸
+千岁美丽而雄伟的自然………[r]这才是他们见到的最后景象！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠鬼王朱裸
+啊。
+[k]
+
+＠鬼王朱裸
+还有哦，呃，那啥，以前向你预定的[r]那个……准备好了吗？　哎，没准备好？
+[k]
+
+＠鬼王朱裸
+咦？[r]啊，是这样啊，朱裸大概搞错了。
+[k]
+
+＠鬼王朱裸
+嗯嗯，但我应该向[#真正的他]下订单了！[r]应该订好了！　嘎哈哈哈哈哈！　没有问题！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+
+
+
+[fadeout black 1.0]
+[bgmStop BGM_BATTLE_29 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[bgmStop BGM_EVENT_24 1.0]
+[bgmStop BGM_EVENT_11 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[bgmStop BGM_BATTLE_29 1.0]
+
+[seStop adm14 0.1]
+[seStop ad267 0.1]
+[seStop ad39 0.1]
+[seStop bac165 0.1]
+[seStop bas13 0.1]
+[seStop ad52 0.1]
+[seStop adm19 0.1]
+[seStop ad73 0.1]
+[cueSeStop bac199 0.1]
+
+[effectStop bit_talk_29]
+[effectStop bit_talk_14]
+
+[charaSet A 6007003 1 杀人之鬼]
+[charaSet B 1098157600 1 护法少女]
+[charaSet C 1098157700 1 小动物]
+[charaSet D 10008001 1 志度内]
+[charaSet E 99502600 1 玛修]
+[charaSet F 3034002 1 茨木童子]
+[charaSet G 6029001 1 Assassin Paraiso]
+[charaSet H 98115000 1 特效用]
+
+[scene 10000]
+[skip false]
+
+[messageOff]
+[maskin black 1.0]
+[wait mask]
+
+[fadeout black 0.1]
+[wait fade]
+[soundStopAll]
+
+[label selectBranch]
+
+[skip false]
+
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+＠
+【caution！】[r]【接下来即将播放专用演出与语音，】
+[k]
+
+＠
+【[line 3]请在做完准备后点击画面哦！】
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+[tapSkip stop_tapSkip]
+[label stop_tapSkip]
+
+[bgm BGM_EVENT_99 0.1]
+
+[revivalBranch lblNormal lblRevival]
+[label lblNormal]
+[effect bit_talk_oniland_nexttitle]
+[wait fowardEffect]
+[branch lblConf]
+[label lblRevival]
+[effect bit_talk_oniland_nexttitle_r]
+[wait fowardEffect]
+[label lblConf]
+[wt 3.1]
+[effect bit_talk_oniland_cut06]
+
+[wt 0.3]
+
+[pictureFrame cut132_text_25]
+[voice 9010011_0_M660]
+[wait voice 9010011_0_M660]
+[pictureFrame]
+
+[pictureFrame cut132_text_26]
+[voice 9010011_0_M661]
+[wait voice 9010011_0_M661]
+[pictureFrame]
+
+[wt 0.3]
+
+[pictureFrame cut132_text_27]
+[voice 9010011_0_M662]
+[wt 3.2]
+[pictureFrame]
+[pictureFrame cut132_text_39]
+[wait voice 9010011_0_M662]
+[pictureFrame]
+
+[wt 0.3]
+
+[pictureFrame cut132_text_28]
+[voice 9010011_0_M663]
+[wait voice 9010011_0_M663]
+[pictureFrame]
+
+[wt 0.2]
+
+[pictureFrame cut132_text_29]
+[voice 9010011_0_M664]
+[wait voice 9010011_0_M664]
+
+[wt 0.1]
+[pictureFrame]
+
+[pictureFrame cut132_text_30]
+[voice 9010011_0_M665]
+[wt 2.5]
+[pictureFrame]
+[pictureFrame cut132_text_40]
+[wt 3.0]
+[pictureFrame]
+
+[effect bit_talk_oniland_telop06]
+
+[wait voice 9010011_0_M665]
+
+[wt 0.3]
+
+[voice 9010011_0_M666]
+[wait voice 9010011_0_M666]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_99 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

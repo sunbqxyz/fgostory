@@ -1,0 +1,671 @@
+
+
+＄91-10-36-01-3-0
+
+[soundStopAll]
+
+[charaSet A 1036001 1 兰陵王]
+[charaSet B 98002000 1 芙芙]
+[charaSet C 1098155400 1 黑胡子]
+[charaSet D 5042001 1 紫式部]
+[charaSet E 1098160000 1 陈宫]
+
+[charaSet G 98002000 1 dummy特效1]
+[charaSet H 98002000 1 dummy特效2]
+[charaSet I 98002000 1 dummy特效3]
+[imageSet J back10001 1]
+[charaScale J 1.01]
+
+
+[charaDepth H 1]
+[charaDepth A 1]
+[charaDepth E 1]
+[charaDepth D 5]
+[charaDepth C 10]
+
+[charaScale H 0.95]
+[charaPut H 2000,2000]
+[charaEffect H bit_talk_41]
+
+
+
+[branchQuestNotClear lblNotClear1 3000303]
+[flag IsClear true]
+[branch lblConf1]
+[label lblNotClear1]
+[flag IsClear false]
+[label lblConf1]
+
+
+[branch lblNotClear2 IsClear false]
+[scene 66600]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10310]
+[label lblConf2]
+
+[pictureFrame cut063_cinema]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.4]
+
+＠
+下午六点。[bgm BGM_EVENT_5 0.1 0.7]
+[k]
+
+[messageOff]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 0,-50]
+[wt 0.8]
+
+＠兰陵王
+……[r]……
+[k]
+
+＠
+[charaTalk C]
+目标对象，突然沉默。
+[k]
+
+＠兰陵王
+由于无害，我才一直没理会，[r]但跟踪了整整一天，难免还是想要发问。
+[k]
+
+[charaFace A 2]
+
+＠兰陵王
+您找我有何贵干，黑胡子阁下！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 0,-50]
+[wt 0.8]
+
+＠黑胡子
+……[r]……
+[k]
+
+[messageOff]
+[wipeout rollLeft 1.4 1.0]
+[bgmStop BGM_EVENT_5 1.4]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[pictureFrame]
+[wt 0.1]
+
+[branch lblNotClear3 IsClear false]
+[scene 66800]
+[branch lblConf3]
+[label lblNotClear3]
+[scene 10400]
+[label lblConf3]
+
+[charaEffect G bit_sepia01]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+[wipein rollRight 1.4 1.0]
+[wait wipe]
+[wt 0.6]
+
+
+？1：你说什么？
+？！
+
+[charaFace C 8]
+
+＠黑胡子
+所[messageShake 0.04 2 2 0.8]～以～说～啦～，[bgm BGM_EVENT_27 0.1][r]那个美男子到底算～什～么～啦～？
+[k]
+
+[messageShakeStop]
+
+＠黑胡子
+就是那个叫兰陵王的超级美男子！
+[k]
+
+[charaFace C 1]
+＠黑胡子
+虽说迦勒底美男子泛滥成灾！[r]但在下总觉得那家伙有些过头了吧！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠芙芙
+芙。[wt 0.3][charaShake B 0.03 3 1 0.6]芙呜呜呜……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaShakeStop B]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠黑胡子
+尽管巴沙洛缪那家伙也自命帅哥，[r]但他内在是个黏糊恶心的家伙！
+[k]
+
+[charaFace C 8]
+
+＠黑胡子
+所以那个美男子内心一定也藏着某种阴暗面！
+[k]
+
+？1：我说……你和他有什么仇恨吗？
+？！
+
+[charaFace C 6]
+
+＠黑胡子
+有什么仇恨？[r]……不会啊，完全没有。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaMoveReturn B 0,20 0.2]
+
+＠芙芙
+芙。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠黑胡子
+不过，黑胡子认为，[r]完美到这个地步的人一定会有缺陷。
+[k]
+
+？1：好像没有吧……
+
+[charaFace C 8]
+
+＠黑胡子
+不，那种家伙通常都藏着[r]难以启齿的奇怪癖好。
+[k]
+
+？2：就算有也无妨吧。
+
+[charaFace C 8]
+
+＠黑胡子
+既然可以有，那给人看看也不要紧吧！
+[k]
+
+＠黑胡子
+应该说，看上去越像完人，[r]就越令人想刺探隐私，这就是人的本性啦！
+[k]
+
+？！
+
+[charaFace C 0]
+
+＠黑胡子
+因此在下黑胡子，打算偷偷跟踪兰陵王，[r]并曝光他的真面目！
+[k]
+
+[charaFace C 5]
+
+＠黑胡子
+OK，let's go，[wt 0.2]迦[charaMoveReturn C 0,15 0.2]·[wt 0.2]勒[charaMoveReturn C 0,15 0.2]·[wt 0.2]底[charaMoveReturn C 0,15 0.2]·[wt 0.2]队！[charaMoveReturn C 0,15 0.2][wt 0.2]
+[k]
+
+[messageOff]
+[charaFadeout C 0.3]
+[wt 0.3]
+[se ad8]
+[wt 1.4]
+
+[se ad348]
+[wt 1.0]
+
+？1：这啦啦队式的口号是什么……？
+？！
+
+[messageOff]
+[wipeout rollRight 1.4 1.0]
+[bgm BGM_EVENT_27 1.4 0.4]
+[wait wipe]
+
+[charaPut G 2000,2000]
+[charaEffectStop G bit_sepia01]
+[wt 0.8]
+
+[wipein rollLeft 1.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_27 0.1 1.0]
+
+＠黑胡子
+综上所述，在下仔仔细细彻底调查了一遍，御主！
+[k]
+
+[charaFace C 8]
+
+＠黑胡子
+结果，发现了！
+[k]
+
+[messageOff]
+[se ade226]
+[charaPut H 30,120]
+
+＠黑胡子
+[f large]美男子的内心也是美男子！！
+[k]
+
+[charaPut H 2000,2000]
+[charaEffectStop H bit_talk_41]
+
+[charaFace C 3]
+
+＠黑胡子
+这个悲伤的事实，完毕。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠兰陵王
+就……就为了这种事……
+[k]
+
+？1：……行动确实几乎都很美男子风……
+？！
+
+[charaFace A 2]
+
+＠兰陵王
+御主您不要也来调侃我啊！
+[k]
+
+[messageOff]
+[wipeout cutSide 0.4 1.0]
+[se ad15]
+[wait wipe]
+
+[charaTalk off]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 70500]
+[pictureFrame cut063_cinema]
+
+[charaPut J 0,-200]
+[charaFadeTime J 0 0.5]
+[charaEffect I bit_talk_yume01]
+[wt 0.2]
+
+[charaFace A 0]
+[charaFace D 6]
+[charaRoll D -20]
+[charaScale A 1.4]
+[charaScale D 1.4]
+[charaFadein A 0.1 -40,-50]
+[charaFadein D 0.1 300,-140]
+
+[se ad1]
+[wipein cutSide 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+＠黑胡子
+快看啦，他抱住部式亲的那绅士的双臂。
+[k]
+
+＠黑胡子
+尽可能不触碰皮肤，[r]但稳稳接住不让她头部撞到地面。
+[k]
+
+＠黑胡子
+就算说这是过场CG也丝毫不为过。[r]（细微差异图追加双颊羞红版。）
+[k]
+
+＠黑胡子
+顺便一提，部分类型的游戏把这种称作角色CG。
+[k]
+
+＠黑胡子
+学到了不少知识吧！
+[k]
+
+？1：美……美得像一幅画……
+？！
+
+[messageOff]
+[wipeout cutSide 0.4 1.0]
+[se ad15]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[charaScale A 1.0]
+[wt 0.1]
+[charaEffectStop I bit_talk_yume01]
+[charaPut J 2000,2000]
+[charaPut I 2000,2000]
+
+[scene 10000]
+[pictureFrame]
+[wt 0.1]
+
+[wipein cutSide 0.4 0.5]
+[wait wipe]
+
+[fadeout black 0.5]
+[wait fade]
+
+[branch lblNotClear4 IsClear false]
+[scene 66800]
+[branch lblConf4]
+[label lblNotClear4]
+[scene 10400]
+[label lblConf4]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠兰陵王
+什么时候搞的这种东西……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+＠黑胡子
+啊啊……就在那一刻，连在下内脏的[r]心跳回路也开始嗡嗡地运转起来了哦……
+[k]
+
+
+？1：你居然还有这种回路啊……
+？！
+
+[charaFace C 7]
+＠黑胡子
+位置大概在心脏和胃部的中间。
+[k]
+
+＠黑胡子
+只要这条回路开始运转，就会发生出汗、发热、[r]皮肤发红、头晕、无力、呼吸急促等症状。
+[k]
+
+[charaFace C 8]
+
+＠黑胡子
+看情况，[r]应该摘除这种回路比较好吧！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠兰陵王
+话说……能阻止这位海盗吗？[bgmStop BGM_EVENT_27 1.2]
+[k]
+
+
+？1：……阻止他（的心跳回路）吧。
+？2：确实不能继续坐视他的不法行为不管了。
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠黑胡子
+OK，那就出去干一架！[bgm BGM_EVENT_3 0.1][r]人不可貌相，老子我可是超一流的海盗哦！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠兰陵王
+（正因为这话是真的，才更不好办啊……）
+[k]
+
+[messageOff]
+[fadeout black 1.4]
+[bgm BGM_EVENT_3 1.4 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 21230]
+[wt 0.5]
+
+[fadein black 1.4]
+[wait fade]
+[bgm BGM_EVENT_3 0.4 1.0]
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠黑胡子
+呼呼呼……居然选择在下擅长的船上战。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠兰陵王
+是你自己改了模拟装置的设定吧！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠黑胡子
+……呼呼呼。
+[k]
+
+[charaFace C 8]
+
+＠黑胡子
+你的失算，[r]就在于以为事情仅此而已。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠兰陵王
+什么？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠黑胡子
+正所谓，[r]黑胡子决不会孤身一人……！
+[k]
+
+？1：哎，讨厌啦，难道要来两个黑胡子？
+
+[charaFace C 2]
+
+＠黑胡子
+感谢您给出诚实的意见。
+[k]
+
+[charaFace C 5]
+＠黑胡子
+还请各位今后请继续支持本公司的产品。
+[k]
+
+？2：你还找了其他同伴吗……！？
+
+[charaFace C 2]
+
+＠黑胡子
+呼呼呼。
+[k]
+
+[charaFace C 10]
+
+＠黑胡子
+孤独哭泣颤抖的黑胡子早已不存在了。[wt 1.0][charaFace C 5][r]不，虽说原本就不存在。
+[k]
+
+？！
+
+[charaFace C 8]
+
+＠黑胡子
+综上所述，来吧，军师阁下！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ade248]
+[seVolume ade248 0 0.6]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.6]
+
+[seStop ade248 0.2]
+[wt 0.2]
+
+＠陈宫
+失礼了。[r]我就是黑胡子阁下介绍的军师，陈宫。
+[k]
+
+＠陈宫
+我其实没那么多空闲，但黑胡子阁下说是要紧事，[r]我才搁置了其他杂事，优先赶来此处。
+[k]
+
+[charaFace E 3]
+
+＠陈宫
+要紧事[line 3]就是那件事啦。[r]您应该能明白吧？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.4]
+
+[se ade248]
+[seVolume ade248 0 0.6]
+[charaFace E 0]
+[charaFadein E 0.4 200,0]
+[charaMove E 90,0 0.8]
+[wt 0.8]
+[seStop ade248 0.2]
+[wt 1.6]
+
+[charaFadeout E 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠兰陵王
+（话说，御主……）
+[k]
+
+？1：（虽说我好像已经能猜到结局了……）
+？2：（但总之还是先做好回避准备吧……！）
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFace E 1]
+[charaFadein C 0.1 1]
+[charaFadein E 0.1 90,0]
+
+＠黑胡子
+在下要上了哦～！[wt 0.6][charaFace C 6][r]话说军师先生，您为什么要站在在下的身后呢？
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,604 @@
+
+＄94-06-28-02-1-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098221300 1 エリザベート]
+[charaSet B 1098221800 1 パンプキンナイト]
+[charaSet C 1098221800 1 パンプキンナイト]
+[charaSet D 1098221800 1 パンプキンナイト]
+[sceneSet E 104300 1]
+[sceneSet F 10954 1]
+[charaSet G 1098221300 1 シルエット用エリザベート]
+[charaFilter G silhouette 00000080]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[charaScale E 1.3]
+[charaScale F 1.3]
+
+[charaPut H 2000,2500]
+[charaEffect H bit_talk_noise_gr]
+
+[scene 10000]
+
+[fadein black 1.5]
+[wait fade]
+
+
+＠
+指定された時代、場所へのレイシフト[line 3]
+[k]
+
+[messageOff]
+[wt 1.2]
+
+＠
+初めてのことではない。[r]けれど。
+[k]
+
+[messageOff]
+[wt 1.2]
+
+[se ad539]
+[se ad31]
+[charaPut H 1]
+[wt 0.4]
+
+[seStop ad539 0.1]
+[seStop ad31 0.1]
+[charaPut H 2000,2500]
+[charaEffectStop H bit_talk_noise_gr]
+[wt 0.8]
+
+妙な感覚があった[line 3]ような[line 3]？
+[k]
+
+
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+
+
+
+
+
+
+[scene 104300]
+
+[fadein black 2.0]
+[wait fade]
+[wt 1.0]
+
+
+？1：……洞窟
+？！
+
+[charaTalk E]
+[charaFadein E 0.7 100,-200]
+[charaMove E -100,-200 4.5]
+[bgm BGM_EVENT_70 3.0]
+[wt 3.0]
+[charaFadeout E 1.5]
+[wt 1.5]
+
+
+？1：ハロウィンの装飾は特に見当たらない……
+？2：今回は、こういう特異点なのかな？
+？！
+
+[se ad15]
+[wt 1.0]
+[se ad15]
+[wt 0.7]
+
+[se ad539]
+[wt 1.0]
+
+？1：……まずいな
+？！
+
+？1：カルデアと連絡が取れないし……
+
+？2：同行するはずのサーヴァントもいない……
+？！
+
+[se ad244]
+[wt 1.5]
+[seStop ad244 1.0]
+[wt 1.0]
+
+
+
+[cueSe SE_21 21_ad1119]
+[wt 1.5]
+[seStop 21_ad1119 1.0]
+
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth B 5]
+[charaDepth C 4]
+[charaDepth D 3]
+
+[charaDepth A 6]
+[charaDepth G 5]
+
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.1]
+
+[charaFace C 0]
+[charaFadeinFSR C 0.1 2]
+[wt 0.1]
+
+[charaFace D 0]
+[charaFadeinFSL D 0.4 0]
+[wt 1.4]
+
+[cueSe SE_21 21_ad1119]
+[charaFadeout B 0.5]
+[charaFadeout C 0.5]
+[charaFadeout D 0.5]
+[wt 0.5]
+[seStop 21_ad1119 1.0]
+[wt 1.0]
+
+？1：（そして、そこかしこに……）
+
+？2：（[#南瓜:かぼちゃ]エネミーがいる！）
+？！
+
+？1：（取りあえず、ここを離れよう！）
+？！
+
+
+[bgm BGM_EVENT_70 1.5 0.3]
+[cameraMove 1.0 0,-15 1.1]
+[se ad55]
+[fadeout black 1.0]
+[wait fade]
+[seStop ad55 1.0]
+[wt 1.5]
+
+[cameraHome 0.1]
+
+
+[scene 10954]
+[bgm BGM_EVENT_70 1.5 0.8]
+
+[se ad55]
+[seVolume ad55 0 0]
+[seVolume ad55 1.0 0.6]
+[fadein black 1.5]
+[wait fade]
+[seStop ad55 1.0]
+
+[wt 1.0]
+
+？1：ここは[line 3]
+？！
+
+[charaTalk F]
+[charaFadein F 0.7 100,-200]
+[charaMove F -100,-200 4.5]
+[wt 3.0]
+[charaFadeout F 1.5]
+[wt 1.5]
+
+？1：地上に出られた、のかな？
+？2：３世紀の建物には見えない……
+？！
+
+
+[bgmStop BGM_EVENT_70 1.5]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFadein G 0.7 1]
+[wt 1.0]
+
+＠？？？
+１人～♪[r]寂しく～屋敷のお掃除～♪
+[k]
+
+＠？？？
+お姉様とか～♪[r]お母様とか～♪
+[k]
+
+＠？？？
+そういうのは何故だか見かけないのだけど～♪[r]気付いたらココにいたのだけど～♪
+[k]
+
+＠？？？
+だいたい～分かって～いるの～♪
+[k]
+
+＠？？？
+[#私:アタシ]は～♪　世界で～１番～美しい～お姫様～♪[r]アイドルでもあるの～♪
+[k]
+
+[messageOff]
+[charaFace A 13]
+[charaFadein A 0.7 1]
+[wt 1.0]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+＠エリザベート
+つまり～[#私:アタシ]は～♪[r]世界で～１番～美しい～シンデレラ～♪
+[k]
+
+？1：エリちゃん！
+
+？2：唄ってる！
+？！
+
+＠エリザベート
+～～♪♪
+[k]
+
+[messageOff]
+[charaFaceFade A 16 0.2]
+[wt 1.2]
+[charaFace A 0]
+
+[bgm BGM_MAP_4 0.1]
+
+＠エリザベート
+あら？[r]そこにいるのは[&子イヌ:子ジカ]じゃないの。
+[k]
+
+[charaFace A 1]
+
+＠エリザベート
+いいわいいわ。[r]役者が揃ったってコトなのね！
+[k]
+
+[charaFaceFade A 14 0.2]
+[charaEffect A bit_talk_sing_notes]
+
+＠エリザベート
+そこに～いるのは～誰かしら～♪[r]シンデレラに～どんな～御用～なのかしら～♪
+[k]
+
+[messageOff]
+[wt 1.2]
+
+？1：……。
+？！
+
+？1：（他人のために唄うエリちゃんの歌は綺麗だよね）
+
+？2：（自分のために唄うエリちゃんの歌は、その……）
+？！
+
+[charaFace A 13]
+
+＠エリザベート
+どうしたの～♪[r]何を黙っているの～♪
+[k]
+
+？1：（この歌、すごく上手！　ではないかもだけど）
+？2：（鮮血魔嬢が発動しちゃうほどのことはない？）
+？！
+
+？1：ねえ、エリちゃん
+？！
+
+＠エリザベート
+なあに～♪
+[k]
+
+？1：何で唄ってるの？
+？！
+
+[messageOff]
+[charaEffectStop A bit_talk_sing_notes]
+[charaFaceFade A 17 0.3]
+[wt 1.0]
+
+＠エリザベート
+そんなの見て分かるでしょうに。
+[k]
+
+[charaFace A 1]
+
+＠エリザベート
+今年は[#ミュージカル路線で行く]ことにしたから！
+[k]
+
+＠エリザベート
+アイドルといえば歌！[r]歌といえばそう、ミュージカル！
+[k]
+
+[charaFace A 11]
+
+＠エリザベート
+ミュージカル作品で大成するアイドルって、[r]斬新だし素敵でしょう？
+[k]
+
+＠エリザベート
+なのでアンタも要所要所で合わせるように！[r]いいわね？
+[k]
+
+[messageOff]
+[charaFaceFade A 14 0.2]
+[wt 0.8]
+
+＠エリザベート
+い・い・わ・ね～♪
+[k]
+
+？1：なるほど。
+
+[charaFaceFade A 5 0.3]
+
+＠エリザベート
+もう。ノリが悪いわね……。[r]リズム。リズム、大事よ？
+[k]
+
+？2：なるほど～♪
+
+[charaFaceFade A 1 0.2]
+
+＠エリザベート
+そうそう。まさにそれよ、[&子イヌ:子ジカ]！
+[k]
+
+？！
+
+[messageOff]
+[charaFaceFade A 12 0.2]
+[wt 0.8]
+
+＠エリザベート
+[#私:アタシ]は～♪　世界で～１番～美しい～お姫様～♪[r]でもね～♪
+[k]
+
+＠エリザベート
+今は～屋敷のお掃除中～♪
+[k]
+
+[charaFaceFade A 16 0.2]
+
+＠エリザベート
+自分の才能にも気付かずに～♪[r]ひたすらに～お掃除を～しているの～♪
+[k]
+
+[charaFace A 0]
+
+＠エリザベート
+そこに現れたのがyou！[r]そう、１人の魔法使い！
+[k]
+
+[charaFace A 1]
+
+＠エリザベート
+知ってるわ。[r][#私:アタシ]に魔法をかけてくれるんでしょう？
+[k]
+
+？1：魔法というと
+？2：聞いた話では何か凄いやつ……
+？！
+
+[charaFace A 17]
+
+＠エリザベート
+なにそれ？
+[k]
+
+[charaFace A 16]
+
+＠エリザベート
+シンデレラといえば、[r]家事をしている女の子の前に魔法使いが現れて、
+[k]
+
+＠エリザベート
+えいやっと魔法を使って！[r]女の子に素敵なドレスをくれるものなの。
+[k]
+
+[charaFace A 5]
+
+＠エリザベート
+というわけで、さあ！[r]早く早く、ハリアップ！
+[k]
+
+？1：はい？
+？2：さあって言われても……
+？！
+
+＠エリザベート
+もう、早く魔法使って！[wt 0.8][charaFace A 2]　つーかーってー！
+[k]
+
+＠エリザベート
+何でもいいからやりなさい！[r][#私の素敵なお話:シ ン デ レ ラ ス ト ー リ ー]、ここで終わっちゃうじゃない！
+[k]
+
+[messageOff]
+[wt 0.4]
+
+？1：じ、じゃあ
+？2：やるだけやってみるけど
+？！
+
+[bgmStop BGM_MAP_4 1.5]
+[charaFace A 0]
+[wt 0.8]
+
+？1：チチンプイプイ……
+？2：アブラカダブラ……
+？3：ンンンン急々如律令ですぞ
+
+[charaFace A 2]
+
+＠エリザベート
+うさんくさい！！
+[k]
+
+？！
+
+[messageOff]
+[se ad928]
+[seVolume ad928 0 0.3]
+[effect bit_talk_noble_light]
+[wt 1.0]
+[fadeout white 2.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[effectStop bit_talk_noble_light]
+[seStop ad928 1.5]
+[wt 1.5]
+
+[scene 10001]
+
+[criMovie talk_mov114 bgmPlay false]
+[wt 0.9]
+[fadein white 1.5]
+[wait fade]
+[wt 33.0]
+
+[fadeout white 1.0]
+[wait fade]
+
+[scene 10954]
+
+[charaSet A 4046000 1 エリザベート]
+
+
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[fadein white 2.0]
+[wait fade]
+[wt 1.0]
+
+？1：ほんとに衣装が変わった[line 3]！？
+？！
+
+[bgm BGM_EVENT_13 0.1]
+
+
+＠エリザベート
+やったぁ！[r]いいわよ[&子イヌ:子ジカ]、やるじゃない！
+[k]
+
+[charaFaceFade A 14 0.2]
+
+＠エリザベート
+見なさいな。ふふふふ、このドレス姿！
+[k]
+
+＠エリザベート
+[#純粋無敵:エ レ ガ ン ト]……[#傲慢無垢:ア ロ ガ ン ト]……まさに[r][#完全無欠:パ ー フ ェ ク ト]のエリザベート・シンデレラよ！
+[k]
+
+[messageOff]
+[charaFaceFade A 15 0.2]
+[wt 1.0]
+
+＠エリザベート
+さあ、分かってるわね[&子イヌ:子ジカ]。[r]これから……
+[k]
+
+？1：これから？
+？！
+
+[charaFace A 1]
+
+＠エリザベート
+チェイテ城[line 3][r]いえ、チェイテシンデレラ城を探し出すわ！
+[k]
+
+＠エリザベート
+どこにあるかは分からないけど、[r]きっとあるわ！
+[k]
+
+＠エリザベート
+だって、今は[line 3]ハロウィンなんだからね！
+[k]
+
+？1：[#無茶苦茶:むちゃくちゃ]な理屈ではあるけど
+？2：納得してしまう……
+
+？！
+
+[charaFace A 4]
+
+＠エリザベート
+ところで[#私:アタシ]、[r]どうしてあんな場所で箒を動かしていたのかしら……？
+[k]
+
+[charaFace A 0]
+
+＠エリザベート
+まあいいわ。[r]ともかく、シンデレラといえばお城よ！
+[k]
+
+＠エリザベート
+行くわよ[&子イヌ:子ジカ]！[wt 1.0][charaFace A 5][r]って[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[cueSe SE_21 21_ad1119]
+[wt 1.5]
+[seStop 21_ad1119 1.0]
+
+[charaTalk off]
+
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.1]
+
+[charaFace C 0]
+[charaFadeinFSR C 0.4 2]
+[wt 0.1]
+
+[charaFace D 0]
+[charaFadeinFSL D 0.4 0]
+[wt 1.4]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+来たわね、邪魔者！
+[k]
+
+＠エリザベート
+[#私:アタシ]がチェイテシンデレラ城に行くのを邪魔して、[r]ハロウィンを台無しにするつもりとみたわ！
+[k]
+
+[charaFace A 1]
+
+＠エリザベート
+さあ、衝撃のデビュー・ライブ、[r]ぶちかますわよ[&子イヌ:子ジカ]！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_13 0.5]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

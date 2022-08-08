@@ -1,0 +1,713 @@
+
+
+＄94-02-75-10-1-1
+
+[soundStopAll]
+
+[charaSet A 98100400 1 玛修]
+[charaSet B 7031000 1 贞德·Alter]
+[charaSet C 3009001 1 列奥尼达]
+[charaSet D 25003000 1 XX]
+[charaSet E 6002001 1 咒腕的哈桑]
+[charaSet F 6034000 1 牛若丸]
+
+[scene 63500]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.4 1]
+[wt 0.4]
+＠XX
+呜……输出降低了……[r]果然一日三餐只靠宇宙面条的话……
+[k]
+
+[charaFace D 0]
+
+＠XX
+……唉，没办法了。
+[k]
+
+＠XX
+事已至此，只剩爆破这身甲胄，[r]将整个会场都炸飞这个办法了……
+[k]
+
+[messageOff]
+[se ad61]
+[effect bit_talk_lightning_01t]
+[wt 0.7]
+[se ad62]
+[seVolume ad62 0 0.7]
+[charaShake D 0.02 2 2 2.0]
+[effect bit_talk_lightning_02t]
+[wt 1.5]
+[se ad189]
+[seStop ad189 0.15]
+[wt 0.5]
+[charaFadeout D 0.1]
+[seStop ad61 1.0]
+[seStop ad62 1.0]
+[effectStop bit_talk_lightning_01t]
+[effectStop bit_talk_lightning_02t]
+[wt 0.1]
+[se ad189]
+[seStop ad189 0.15]
+[wt 0.65]
+[se ad189]
+[seStop ad189 0.15]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠贞德·Alter
+……话说，我怎么觉得这轻快的电子声[r]给人一种十分不祥的预感呢。
+[k]
+
+？1：自爆？
+？2：倒计时？
+？！
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠列奥尼达
+这不就糟了吗！[r]得赶快把这家伙拖离会场！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-20]
+[charaMove E 0,0 0.1]
+[wt 0.5]
+＠咒腕的哈桑
+在下听到这里有些吵闹才赶来看看的，[r]发生什么事了吗？
+[k]
+
+？1：哈桑先生！
+？！
+
+[charaFace E 4]
+
+＠咒腕的哈桑
+自爆？
+[k]
+
+＠咒腕的哈桑
+……[r]……唔。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaDepth E 10]
+
+[charaFace D 0]
+[charaFadein D 0.1 -200,0]
+[wt 0.4]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.4 150,0]
+[charaMove E 50,0 0.4]
+[wt 0.4]
+＠咒腕的哈桑
+那就由在下来搬运吧。[wt 0.4][charaShake D 0.04 1 3 0.4][charaShake E 0.02 2 1 0.4][se ad270][seStop ad270 0.7][r]嘿咻。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+哈桑先生！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 100,0]
+[charaFace D 0]
+[charaFadein D 0.1 -200,0]
+＠咒腕的哈桑
+不用介意。[r]各位请好好享受从者庆典。
+[k]
+
+[charaFace E 2]
+
+＠咒腕的哈桑
+再见了！
+[k]
+
+[messageOff]
+[se ad73]
+[seVolume ad73 0 0.7]
+[effect bit_talk_43h 0,0 V]
+[charaMove E 0 100,50 0.5]
+[charaMove D -200,50 0.5]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[effectStop bit_talk_43h]
+[wt 0.8]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠玛修
+怎么会……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠贞德·Alter
+……区区Assassin，[r]还挺能干的嘛。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠牛若丸
+哈桑阁下……
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_EVENT_3 0.4]
+[charaFadeout F 0.1]
+[wt 0.1]
+[se ad609]
+[shake 0.03 5 5 0.4]
+[wt 1.0]
+[seStop ad609 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_41 0.7]
+
+？1：……哈桑先生……
+？！
+
+
+[wt 2.0]
+
+[bgmStop BGM_EVENT_41 0.4]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-20]
+[charaMove E 0,0 0.1]
+[wt 0.5]
+
+＠咒腕的哈桑
+在下回来了。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠玛修
+哎。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠贞德·Alter
+……为什么你还活蹦乱跳的啦！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠咒腕的哈桑
+您看，其实我有『避风的加护』这个技能。[r]区区爆炸气浪根本不在话下。
+[k]
+
+？1：这是何等罕见的技能……
+？！
+
+＠咒腕的哈桑
+在意外的情况下，意外的技能还是很有用的。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠列奥尼达
+哈桑阁下，请容我由衷向您表示感谢。[r]战斗造成的损失也十分轻微。
+[k]
+
+＠列奥尼达
+距活动开始还有一分钟。[r]我继续回去履行我的本职工作了。
+[k]
+
+
+＠列奥尼达
+各位，请好好享受！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠贞德·Alter
+不用你说我也会好好享受的。[r]你们都准备好了吗？
+[k]
+
+＠贞德·Alter
+社团『[#异端怪物:Gespenst Ketzer]』，[r]值得纪念的出道活动！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[imageSet C cut079_time02 1]
+[imageSet D cut079_time03 1]
+[imageSet E cut079_moji01 1]
+[imageSet F cut079_moji03 1]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 0.1]
+[wait fade]
+
+[charaScale C 1.0]
+[charaFadein C 0.1 0,-200]
+[wait charaCut C]
+[wt 1.8]
+
+[charaFadeout C 0.1]
+[charaScale D 1.0]
+[charaFadein D 0.1 0,-200]
+[wait charaCut D]
+[wt 1.8]
+
+
+[charaScale E 1.0]
+[charaScale F 1.0]
+[charaFadein E 0.1 50,-200]
+[charaFadein F 0.1 100,-200]
+[wait charaCut E]
+[wait charaCut F]
+[wt 2.2]
+
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+
+[charaSet A 2032000 1 贞德]
+[charaSet B 5027001 1 玛丽]
+[charaSet C 5002002 1 吉尔·德·雷]
+[charaSet D 6031000 1 刑部姬]
+[charaSet E 3025000 1 清姬]
+[charaSet F 5005001 1 安徒生]
+[charaSet G 5007001 1 莎士比亚]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth A 2]
+
+[scene 63500]
+[wt 1.0]
+
+[fadein black 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_28 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠贞德
+多谢惠顾～！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+＠玛丽
+我太高兴了。[r]哎？　希望我们尝试那种？
+[k]
+
+[charaFace B 1]
+
+＠玛丽
+嗯，嗯，没问题。[r][#法兰西万岁:Vive La France]～♪
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+[wt 0.4]
+＠吉尔·德·雷
+[charaMoveReturn C 0,-10 0.4]
+太治愈了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 2]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+
+＠贞德
+吉尔，不要在这个摊位待得太久。[r]还有，不要因为兴奋而乱流海产物。
+[k]
+
+＠贞德
+若不照办，小心你那白团子似的眼球[r]变成被压扁的乒乓球哦？
+[k]
+
+[charaTalk C]
+[charaFace C 2]
+
+＠吉尔·德·雷
+[messageShake 0.04 3 3 0.4]
+好可怕！　尽管我似乎没资格这么说，[r]但这形容是不是有些太异常了！？
+[k]
+
+＠吉尔·德·雷
+虽说这话从我嘴里说出来确实有点那啥！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.4 1]
+[wt 0.4]
+＠刑部姬
+好……好想家里蹲……对人耐久力已经到极限了……[r]小清姬，剩下的就拜托你啦……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+＠清姬
+真拿你没办法。[r]给，两本是吧。谢谢惠顾～♪
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.5]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.4 1]
+[wt 0.4]
+＠安徒生
+什么，客人？
+[k]
+
+[charaFace F 2]
+
+＠安徒生
+那就随便拿吧。[r]钱？　随便给点就行了！
+[k]
+
+＠安徒生
+我已经累得连收钱都嫌麻烦了！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+＠莎士比亚
+Me too！
+[k]
+
+＠莎士比亚
+哎呀真是的，[r]我们为什么每次都那么辛苦啦！
+[k]
+
+[charaFace G 1]
+
+＠莎士比亚
+啊，请便请便。[r]您可以随便拿，不用客气。
+[k]
+
+＠莎士比亚
+不过，如果您一定要付钱的话，[r]就随便扔一些钱在这箱子里吧。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠安徒生
+下次一定要更轻松一些。[r]喂，文豪。听到了吗，文豪！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_28 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[scene 28300]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+[wt 1.0]
+
+[charaSet A 98100400 1 玛修]
+[charaSet B 7031000 1 贞德·Alter]
+[charaSet C 98002000 1 芙芙]
+
+[imageSet D cut079_time04 1]
+[imageSet E cut079_moji01 1]
+[imageSet F cut079_moji04 1]
+
+[scene 28301 2.0]
+[wt 3.0]
+
+[scene 10000 1.0]
+[wt 1.8]
+
+[charaScale D 1.0]
+[charaScale E 1.0]
+[charaScale F 1.0]
+[charaFadein D 0.1 25,-200]
+[charaFadein E 0.1 75,-200]
+[charaFadein F 0.1 150,-200]
+[wait charaCut D]
+[wait charaCut E]
+[wait charaCut F]
+[wt 2.2]
+
+[charaFadeout D 2.0]
+[charaFadeout E 2.0]
+[charaFadeout F 2.0]
+
+
+[scene 63501 2.0]
+[wt 2.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠广播语音
+在场的各位，这里是通知。[r]现在时间是下午五点。
+[k]
+
+＠广播语音
+今日的活动顺利结束了。[r]感谢各位参加者大力协助。
+[k]
+
+＠广播语音
+让我们在下次从者夏日庆典再会吧！
+[k]
+
+[se ade76]
+
+
+＠玛修
+拍手拍手拍手拍手！[r]各位，辛苦了[line 3]！
+[k]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠玛修
+我们的社团也该开始收摊了。[r]尽管算不上人气爆棚，
+[k]
+
+＠玛修
+但能和各位从者，[r]各位社团的人说上话，我感到非常高兴！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠贞德·Alter
+出的本子也算是得到了好评。[wt 0.4][charaFace B 4][r]只不过，还剩下一册……
+[k]
+
+？1：那给我吧。
+
+[charaFace B 8]
+
+＠贞德·Alter
+你想要吗？[r]这不都是你早就看腻了的原稿吗？
+[k]
+
+？2：我拿着。
+
+[charaFace B 6]
+
+＠贞德·Alter
+交给你了。
+[k]
+
+？！
+
+[charaFace B 0]
+
+＠贞德·Alter
+……好了。
+[k]
+
+＠贞德·Alter
+Foreigner被打倒，从者庆典也结束了，[r]特异点应该会就此消除了吧。
+[k]
+
+＠贞德·Alter
+没想到居然把任务全部完成了。[r]明天就该返回了吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠玛修
+虽然很对不起前辈，[r]但又要蒙住前辈的眼睛了。
+[k]
+
+＠玛修
+那我们回酒店吧。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 3.0]
+[fadeout black 3.0]
+[wait fade]
+[charaFadeout A 0.1]
+[scene 63200]
+[wt 0.1]
+
+[wt 2.0]
+
+[fadein black 2.0]
+[wait fade]
+
+[scene 63401 2.0]
+[wt 3.0]
+
+[bgm BGM_EVENT_25 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠芙芙
+芙，芙……
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？1：啊～，累死了累死了。
+？2：好，赶快睡觉吧。
+？！
+
+
+[wipeout openEye 1.0 1.0]
+[wait wipe]
+
+？1：晚安……
+？！
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_25 2.0]
+[wait fade]
+[soundStopAll]
+[end]

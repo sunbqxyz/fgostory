@@ -1,0 +1,648 @@
+＄91-30-12-02-1-0
+
+
+[soundStopAll]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaSet A 3012002 1 布伦希尔德]
+[charaSet B 6009002 1 静谧哈桑]
+[charaSet C 2013001 1 阿拉什]
+[charaSet D 5009001 1 达·芬奇]
+[charaSet E 98001000 1 玛修]
+[charaSet F 9005001 1 福尔摩斯]
+[charaSet G 98006200 1 杂兵敌人烟状]
+[charaSet H 5009000 1 特效用dummy]
+
+[scene 20803]
+
+[fadein black 0.5]
+[wait fade]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.3]
+[se ad25]
+[wt 1.0]
+
+
+
+[se ad98]
+[effect bit_talk_12_blue_L 0,50]
+[wt 0.2]
+[se bac139]
+[effect bit_talk_12_blue_L 0,-50]
+[charaShake G 0.05 2 1 0.5]
+[wt 1.0]
+
+[se bac71]
+[charaEffect G bit_shot_01]
+[wt 0.5]
+
+[charaEffect G bit_talk_13]
+[charaShake G 0.05 2 2 0.5]
+[se bac16]
+[wt 0.5]
+
+[charaSpecialEffect G enemyErasure 0 1.0]
+[se ad26]
+[bgmStop BGM_EVENT_3 1.0]
+[wt 1.5]
+
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+[wt 0.4]
+＠阿拉什
+好嘞。战斗结束啦！
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+＠静谧哈桑
+嗯。似乎不会再出现敌方增援了。[r]己方损害轻微。
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[wt 1.0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.7 1]
+[wt 1.0]
+＠布伦希尔德
+……………………战斗，结束……了吧。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠阿拉什
+噢，Lancer的大姐也辛苦啦！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+[charaFace C 4]
+＠阿拉什
+（话说，小姑娘。你注意到了吗？）
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 2]
+[charaFace C 4]
+[charaFadein C 0.1 0]
+＠静谧哈桑
+（嗯。稍微有点[line 3]）
+[k]
+
+＠阿拉什
+（嗯。感觉行动不是很利落。[r]　Lancer那位大姐似乎有些心不在焉呢。）
+[k]
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠布伦希尔德
+……[r]……
+[k]
+
+？1：布伦希尔德？
+？2：没事吧，难道你状态不好？
+
+？！
+
+＠布伦希尔德
+御主。不……
+[k]
+
+＠布伦希尔德
+感谢您的关心。[r]但是，我没有问题。我的运行非常正常。
+[k]
+
+＠布伦希尔德
+应该……非常正常……但是[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFace A 4]
+＠布伦希尔德
+…………不，不。[r]对不起。
+[k]
+
+[charaFace A 0]
+＠布伦希尔德
+我无法集中精力于战斗上确为事实。[r]我感觉自己给御主和大家拖后腿了。
+[k]
+
+＠布伦希尔德
+能否请您容我请一段时间的假期。[r]御主。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 2.0]
+
+
+[scene 10200]
+
+[charaSet B 2022000 1 ？？？]
+[charaSet C 2022000 1 阿蒂拉·Santa]
+[charaFilter B silhouette 00000080]
+[charaSet G 9005001 1 福尔摩斯剪影]
+[charaFilter G silhouette 00000080]
+
+[charaDepth C 5]
+[charaDepth B 2]
+
+[charaDepth F 5]
+[charaDepth G 2]
+
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 1]
+＠达·芬奇
+原来如此。所以她才主动提出要休养啊。[r]这情况好像确实很罕见。
+[k]
+
+＠达·芬奇
+从者既是超常的存在，[r]也是拥有人类般精神的存在。
+[k]
+
+＠达·芬奇
+他们以远超常人，甚至可以说具备绝对性的耐久度为傲，[r]但有时也会表露出疲惫与消耗过度的样子。
+[k]
+
+[charaFace D 0]
+＠达·芬奇
+你想，尤其是她有点那啥吧？[r]最近她似乎不怎么嘀咕齐格鲁德齐格鲁德了……
+[k]
+
+[charaFace D 1]
+＠达·芬奇
+或许和这件事有点关系吧。[r]憋得太久对身体可是有坏处的哦？
+[k]
+
+？1：咦，是吗？
+？2：我怎么觉得她该说的时候还是经常说啊[line 3]
+
+？！
+
+＠达·芬奇
+只是比较的结果啦。[r]用相对说得少一些了会比较好理解吧？
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+＠玛修
+……[r]……
+[k]
+
+＠玛修
+我所经历的，都是由亚从者活动带来的，[r]或许会有些不同……
+[k]
+
+[charaFace E 1]
+＠玛修
+但哪怕在反复灵子转移到特异点的过程中，[r]能获得适当的休息也会令我非常高兴。
+[k]
+
+＠玛修
+和前辈一起谈天，一起吃饭[line 3]
+[k]
+
+＠玛修
+医生边为我检查边和我闲聊……
+[k]
+
+[charaFace E 13]
+＠玛修
+尽管我不知道这样的时间……
+[k]
+
+＠玛修
+是否会直接对魔力或是身体造成数值影响，
+[k]
+
+＠玛修
+但我觉得这都是非常重要的。[r]所以[line 3]
+[k]
+
+？1：嗯，休息很重要。
+？2：各位从者也需要休息才行。
+
+？！
+
+[charaFace E 1]
+＠玛修
+是的，前辈。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace E 13]
+[charaFadein E 0.1 2]
+[charaFace D 1]
+[charaFadein D 0.1 0]
+＠达·芬奇
+她现在正在个人房间里休息吗？
+[k]
+
+[charaFace E 1]
+＠玛修
+对。不久前，[r]自灵子转移返回后，就立刻回个人房间了。
+[k]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.7]
+[charaTalk off]
+
+[se ad95]
+[seStop ad95 2.0]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.5]
+
+[charaFace F 0]
+[charaFadein F 1.5 1]
+
+[wt 0.5]
+
+＠福尔摩斯
+我都听到了。唔。[r]或许有必要为她做一次维护。
+[k]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠达·芬奇
+无视英灵也需要休息的谈话主题，[r]毫无情调的发言！　真不愧是名侦探。
+[k]
+
+＠达·芬奇
+不过嘛，嗯。福尔摩斯的话也有一定的道理。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFace D 1]
+[bgm BGM_EVENT_1 0.1]
+
+＠达·芬奇
+作为北欧神话中至高的存在，也就是大神奥丁[r]创造而出的[#她:布伦希尔德]，她的灵基作为英灵来说十分特殊。
+[k]
+
+＠达·芬奇
+尽管现在能被纳入英灵的范畴，[r]但原本相当于半神灵。
+[k]
+
+[charaFace D 0]
+＠达·芬奇
+说实话，她的现界本身就犹如[r]发生于奇迹上的奇迹[line 3]般的存在哦？
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠玛修
+发生于奇迹上的奇迹……
+[k]
+
+？1：但实际上神灵也不少吧……？
+
+＠玛修
+嗯。虽然从比例来说并不多……
+[k]
+
+？2：斯忒诺、尤瑞艾莉、魁札尔、豹人……
+
+＠玛修
+伊什塔尔小姐和埃列什基伽勒小姐、[r]戈耳工小姐也是神灵从者的一种吧。
+[k]
+
+？！
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠达·芬奇
+她们本身就是个奇迹。但严格说来，[r]迦勒底召唤式的英灵召唤本身就是极为稀有的。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠福尔摩斯
+[line 3]说得没错。[r]毕竟这可是那[#Ghost Liner]哦！
+[k]
+
+[charaFace F 0]
+＠福尔摩斯
+[#境界记录带:Ghost Liner]。英灵是与人理维系在一起的上位灵格，[r]哪怕是能瞬间借来他们可怕力量一部分的术式，
+[k]
+
+＠福尔摩斯
+比如说在时钟塔分类中被称为降灵魔术的，[r]也就是俗称召唤术的范畴内，这难度也是破格的。
+[k]
+
+[charaFace F 6]
+＠福尔摩斯
+与召唤低位魔兽或亡灵截然不同。[r]英灵是稀有的存在，是具有威胁的存在。
+[k]
+
+[charaFace F 0]
+＠福尔摩斯
+而这种存在居然伴随着以太的实体化，[r]以获得肉体与和生前相近人格的状态现界[line 3]
+[k]
+
+＠福尔摩斯
+倘若这不叫奇迹，还能叫什么？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+[charaFadein F 0.1 0]
+＠达·芬奇
+……哎呀呀，你真熟悉呢，Mr.福尔摩斯。
+[k]
+
+＠福尔摩斯
+没有没有。我只不过是熟悉而已。
+[k]
+
+[charaFace D 5]
+＠达·芬奇
+居然不否定……[r]你这男人还是老样子。
+[k]
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[bgmStop BGM_EVENT_1 0.7]
+
+＠达·芬奇
+好了，话题扯远了，我们回到原来的主题。[r]啊～，也就是说，布伦希尔德在迦勒底是稀有的存在。
+[k]
+
+[bgm BGM_EVENT_2 0.1]
+＠达·芬奇
+不妨找个契机对她表示一些关怀。[r]这也是身为一位好御主应有的表现。
+[k]
+
+＠达·芬奇
+还有嘛，就是也对她进行一下灵基维护吧。[r]尽管在上次定期检查中没有发现明显异常……
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[messageOff]
+
+[bgmStop BGM_EVENT_2 0.5]
+
+
+
+[se ad8]
+[wt 1.0]
+
+
+[se ade137]
+[wt 0.5]
+[charaFace B 13]
+[charaFadein B 1.0 1]
+[se ade137]
+
+[charaTalk off]
+
+[bgm BGM_EVENT_7 0.1]
+
+[wt 1.5]
+＠？？？
+嚯～嚯～嚯～。[r]遇到什么烦恼了吗？
+[k]
+
+＠玛修
+这……这声音是！
+[k]
+
+？1：阿蒂拉小姐！
+？2：阿蒂拉San〔ta〕！
+
+？！
+[messageOff]
+
+
+[charaFace C 13]
+[charaFadein C 1.5 1]
+
+＠阿蒂拉·Santa
+没错，就是老夫。[r]嚯～嚯～嚯～。老夫是恰好路过的圣诞老人。
+[k]
+
+
+
+[bgmStop BGM_EVENT_7 1.0]
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaSet D 98111500 1 达·芬奇]
+[charaSet E 99502600 1 玛修]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[scene 21803]
+[wt 1.5]
+
+[se ad555]
+[seVolume ad555 0 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 2.5]
+[seStop ad555 1.0]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠阿蒂拉·Santa
+[line 3]嗯。你不用说我也明白。
+[k]
+
+＠阿蒂拉·Santa
+是[#那位]没精神吧？[r]看来那位的立场比较微妙呢。
+[k]
+
+＠阿蒂拉·Santa
+所以才会变成那个样子。没错吧。
+[k]
+
+[charaFace C 1]
+＠阿蒂拉·Santa
+所以我来了哦。[r]没错，就是现在，不合时节的圣诞老人！
+[k]
+
+？1：请问[line 3]
+？2：为什么又用Archer灵基？
+
+？！
+
+[charaFace C 4]
+
+＠阿蒂拉·Santa
+请你不要过度追究……[r]因为一旦我回过神来，就会恢复原样了。
+[k]
+
+＠阿蒂拉·Santa
+我处于强行回忆起曾经变化过的灵基并再现的状态，[r]可不能太欺负我哦。
+[k]
+
+[charaFace C 0]
+＠阿蒂拉·Santa
+而且啦。[r]现在为了那个，必须积攒力量才行。
+[k]
+
+＠阿蒂拉·Santa
+希望你能协助我，[r]我轻飘飘的御主啊。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[se ad13]
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+[wt 0.3]
+＠玛修
+御主！　阿蒂拉小姐！
+[k]
+
+＠玛修
+我按吩咐启动了模拟装置……[r]呃，那个，但是您打算在那里做什么呢？
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠阿蒂拉·Santa
+当然，是在雪景中狩猎。[r]首先得为我补充圣诞能量才行。
+[k]
+
+？1：圣诞能量是什么？
+？2：可以通过战斗回收吗？
+
+？！
+
+[charaFace C 6]
+＠阿蒂拉·Santa
+不要思考。年轻人，只要相信圣诞老人就行了。[r]但千万小心不要受伤了哦？
+[k]
+
+＠阿蒂拉·Santa
+先让身体习惯。[r]这就是夺回圣诞能量的第一步！　我听说是这样。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[bgmStop BGM_EVENT_7 0.7]
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-90]
+＠达·芬奇
+是想调整你身为Archer的，不对，[r]调整你身为圣诞老人的灵基吧？
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+[wt 0.2]
+[bgm BGM_EVENT_3 0.1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠阿蒂拉·Santa
+我们走。军神的拐杖里藏着大量梦想！[r]彩虹啊，聚集吧，在天空驰骋！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

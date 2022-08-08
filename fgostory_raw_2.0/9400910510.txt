@@ -1,0 +1,466 @@
+
+
+＄94-00-91-05-1-0
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 98003000 1 Dr.罗曼]
+[charaSet C 6005001 1 杰克]
+[charaSet D 5004001 1 童谣]
+[charaSet E 3009001 1 列奥尼达]
+[charaSet F 3026000 1 贞德·Alter·Santa·Lily]
+
+[soundStopAll]
+[bgm BGM_EVENT_7 0.1]
+
+[scene 20322]
+
+
+[fadein black 2.0]
+[wait fade]
+
+
+[charaTalk C]
+[charaFace C 1]
+[charaFace D 1]
+[charaFadein C 0.4 2]
+[charaFadein D 0.4 0]
+
+[se ad187]
+[seStop ad187 1.6]
+
+＠杰克
+在天空中飞呢。
+[k]
+
+[charaTalk D]
+＠童谣
+就像是奥兹国的魔法师一样呢。
+[k]
+
+？1：有三个奥兹吗？
+
+[charaTalk C]
+[charaFace C 0]
+＠杰克
+[FFFFFF]？[-][r]我们是杰克啊？
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠贞德·Alter·Santa·Lily
+我是贞德·Alter·Santa·Lily！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠童谣
+应该不是指这个啦。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？2：谁是奥兹？
+
+[charaTalk D]
+[charaFace D 1]
+＠童谣
+嗯，我，是我！
+[k]
+
+[charaTalk C]
+[charaFace C 1]
+＠杰克
+我们是杰克哦！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠贞德·Alter·Santa·Lily
+我是贞德·Alter·Santa·Lily！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+？！
+
+[bgmStop BGM_EVENT_7 0.4]
+[wt 0.4]
+
+[messageOff]
+[se ad9]
+[wt 2.0]
+
+
+[charaShake F 0.1 4 4 1.0]
+
+[bgm BGM_EVENT_3 0.4]
+[wt 0.4]
+
+[charaShake F 0.1 4 4 1.0]
+[seStop ad9 2.0]
+
+[charaShake F 0.05 4 4 0]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[charaMove F 0,-32 1.0]
+＠贞德·Alter·Santa·Lily
+哇！？[r]拉姆瑞二号，怎么了！？
+[k]
+
+[wait charaMove F]
+[charaMove F 0,-80 1.0]
+＠贞德·Alter·Santa·Lily
+正……正在被往下拖……
+[k]
+
+[wait charaMove F]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10]
+[wt 0.1]
+[se ad13]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0 1]
+[wt 0.3]
+＠玛修
+下方有从者反应！？[r]看来是被什么力量拖住了！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFace D 2]
+[charaFadein C 0.1 2]
+[charaFadein D 0.1 0]
+
+[charaShake C 0.05 4 4 0]
+[charaShake D 0.05 4 4 0]
+
+[charaMove C 256,-64 0.7]
+[charaMove D -256,-64 0.7]
+＠杰克
+呃，这种情况应该……[r]对，是叫『坠落』吧！
+[k]
+
+[wait charaMove C]
+[wait charaMove D]
+
+[charaMove C 256,-128 0.7]
+[charaMove D -256,-128 0.7]
+[charaTalk D]
+＠童谣
+这可不是什么该高兴着说的话！
+[k]
+
+[wait charaMove C]
+[wait charaMove D]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 0,-70]
+＠贞德·Alter·Santa·Lily
+各位，快抓住什么！[r]要……要掉下去了！
+[k]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+[se ad75]
+[wipeout rectangleStripUpToDown 0.7 1.0]
+[wt 0.4]
+[messageOff]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaShakeStop F]
+[charaShakeStop C]
+[charaShakeStop D]
+
+[wt 0.7]
+
+[scene 21804]
+[wt 0.1]
+
+[wipein rectangleStripDownToUp 0.7 1.0]
+
+[seStop ad75 1.0]
+[wt 1.0]
+
+[shakeStop]
+[se bac37]
+[wait wipe]
+[bgm BGM_EVENT_5 0.1]
+[shake 0.05 10 10 1.0]
+[seStop ad37 1.0]
+[wt 1.5]
+
+
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.7 1]
+＠贞德·Alter·Santa·Lily
+驯鹿，没事吧……？
+[k]
+
+[wait charaMove F]
+
+？1：因为突然坠落有点想吐……
+
+[charaFace F 2]
+[charaShake F 0.05 4 4 0.7]
+＠贞德·Alter·Santa·Lily
+不要吐，千万不要吐哦！？[r]现在被驯鹿当垫子坐的可是我啊！
+[k]
+
+？2：呜噗……
+
+[charaShake F 0.05 4 4 0.7]
+＠贞德·Alter·Santa·Lily
+你为何表现出胃部翻腾捂住嘴巴的样子！？
+[k]
+
+＠贞德·Alter·Santa·Lily
+请……请务必要忍住啊！
+[k]
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFace D 4]
+[charaFadein C 0.1 2]
+[charaFadein D 0.1 0]
+＠杰克
+呼哇～，吓了我一跳～。
+[k]
+
+[charaTalk D]
+＠童谣
+你看上去一点都不像是吓了一跳呢，杰克。
+[k]
+
+[bgmStop BGM_EVENT_5 0.3]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+＠？？？
+哇哈哈哈哈！　从这里开始，你们一步都别想前进了！[r]我是不会让你们过的[line 5]！
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠贞德·Alter·Santa·Lily
+什……什么人……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0 1]
+[wt 0.3]
+＠玛修
+怎……怎么会……难道！[r]难道您是……！
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.7 1]
+＠列奥尼达
+[messageShake 0.1 4 4 1.0]
+我的名字乃是列奥尼达！[r]圣诞老人啊，我可不会让你实现看海的愿望！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠贞德·Alter·Santa·Lily
+哎，哎～！？[r]为什么，究竟是为什么啊！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠列奥尼达
+这……呃……关于这个嘛……
+[k]
+
+？1：看来有黑幕……！
+？2：有阴谋！
+？！
+
+[charaFace E 0]
+＠列奥尼达
+没……没错！[r]我们接到命令，不能让你们去看海！
+[k]
+
+[charaFace E 2]
+＠列奥尼达
+是黑幕或是类似那样的存在对我们下的命令！
+[k]
+
+[charaFace E 0]
+＠列奥尼达
+综上所述，我不能让你们通过～！[r]一步都不能让你们前进哦～！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFace D 4]
+[charaFadein C 0.1 2]
+[charaFadein D 0.1 0]
+＠杰克
+好过分～！[r]我们讨厌叔叔！
+[k]
+
+[charaTalk D]
+＠童谣
+就是啦！　居然欺负小孩子，你是恶魔，是鬼怪，[r]是红桃女王！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠列奥尼达
+[font large]我也是很痛苦的！！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠贞德·Alter·Santa·Lily
+呀，倒打一耙也要有个限度吧！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠列奥尼达
+嗯，我的肌肉一直卓越，有什么问题吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFace D 2]
+[charaFadein C 0.1 2]
+[charaFadein D 0.1 0]
+＠杰克
+好硬！[r]不是妈妈！
+[k]
+
+[charaTalk D]
+＠童谣
+圣诞老人～！[r]干掉他吧？
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠贞德·Alter·Santa·Lily
+……说得对。
+[k]
+
+[charaFace F 2]
+＠贞德·Alter·Santa·Lily
+快退下，列奥尼达！[r]我作为圣诞老人，一定要带这两个人去看海！
+[k]
+
+＠贞德·Alter·Santa·Lily
+实现愿望是圣诞老人的工作。[r]我要消灭所有胆敢妨碍我的人！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠列奥尼达
+好吧，圣诞老人啊！[r]既然如此，那就跨过我列奥尼达的尸体前进吧！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 1.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[soundStopAll]
+[end]

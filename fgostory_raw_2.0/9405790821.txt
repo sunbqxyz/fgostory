@@ -1,0 +1,210 @@
+
+
+
+＄94-05-79-08-2-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 3005001 1 伊丽莎白]
+[charaSet B 98001000 1 玛修]
+[charaSet C 5046001 1 克莱恩小姐]
+[charaSet D 7024000 1 X·Alter]
+
+[charaSet T 4031000 1 特效用]
+
+[scene 112400]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[charaShake A 0.05 2 2 2.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.5]
+
+[se ad7]
+[seVolume ad7 0 0.7]
+[charaMove A 0,-50 0.3]
+[charaFadeout A 0.3]
+[wt 1.0]
+
+[se ad788]
+
+＠伊丽莎白
+不·甘·心～！[r]（嚎啕大哭。）
+[k]
+
+＠伊丽莎白
+不甘心！　不甘心！　尾巴都竖起来了！[r]我才不会就此打退堂鼓呢！
+[k]
+
+＠伊丽莎白
+遭欺负就要用极端欺负人来回敬！[r]御主，觉悟[line 3]
+[k]
+
+[seStop ad788 1.5]
+
+？1：……下次你演唱会的时候，我会来捧场。
+？！
+
+[messageOff]
+[se ad7]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 0,-50]
+[charaMove A 0,0 0.4]
+[wt 1.2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+哎。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_136 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠伊丽莎白
+……真的吗！？　能保证吗？[r]愿意一整天只为我的个人演唱会捧场吗？
+[k]
+
+？1：……………………当然！
+？2：我好期待啊！！！
+？！
+
+[charaFace A 3]
+＠伊丽莎白
+……OK！　契约成立！[r]看在这约定的份上，这次就让给你们吧。
+[k]
+
+[charaFace A 2]
+
+＠伊丽莎白
+话说在前头，这么做都是因为你是[&小狗崽:小鹿崽]哦。[r]是破例哦，可·以·破·例！　原谅你们哦。
+[k]
+
+[charaFace A 1]
+＠伊丽莎白
+那我走啦～。[r]我会独自一人好好享受这个特异点！
+[k]
+
+[messageOff]
+[se ad60]
+[seStop ad60 1.0]
+[charaMove A -50,0 0.4]
+[charaFadeout A 0.4]
+[wt 1.4]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠玛修
+……前辈的觉悟令我深受感动。[r]演唱会的时候，我也愿意相伴！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+＠克莱恩小姐
+请问……[r]由于事态发展过于迅速，我有些搞不清状况……
+[k]
+
+[charaFace C 9]
+
+＠克莱恩小姐
+你们究竟是什么人？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠玛修
+啊……真遗憾，[r]克莱恩小姐好像也失去记忆了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠X·Alter
+……现在能见到她，就很值得庆幸了。[r]我们先换个地方说话吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠克莱恩小姐
+请问……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠X·Alter
+没关系，相信我，跟我来吧。[r]我是……偶像！
+[k]
+
+[messageOff]
+[se ad79]
+[seVolume ad79 0 0]
+[effect bit_talk_valentine_brilliant_fs]
+[wt 0.1]
+[seVolume ad79 0.2 1.0]
+[wt 3.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[effectDestroy bit_talk_valentine_brilliant_fs]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠克莱恩小姐
+咿[messageShake 0.05 4 3 0.5]咿咿～～～！　好……好可爱！[r]嗯，嗯，当然相信。我会跟着您走！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠玛修
+这反应，肯定是克莱恩小姐没错！
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_136 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

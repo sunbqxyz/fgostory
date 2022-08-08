@@ -1,0 +1,1774 @@
+
+
+
+
+
+
+＄94-05-15-01-1-0
+
+
+[soundStopAll]
+
+[charaSet A 2029000 1 藤乃]
+[charaSet B 2029000 1 藤乃（剪影）]
+[charaFilter B silhouette 01060eFF]
+[imageSet C cut210_somen 1]
+
+[charaSet I 8001000 1 dummy特效1]
+[imageSet J back10000 1]
+[charaScale J 1.01]
+[charaSet K 8001000 1 dummy特效2]
+[imageSet L cut106_trans 1]
+[charaScale L 3.0]
+[imageSet M cut106_trans 1]
+[charaScale M 3.0]
+
+
+[charaPut I 2000,2000]
+[charaEffect I bit_talk_43l]
+
+[cameraMove 0.1 0,0 1.01]
+
+[charaDepth A 1]
+[charaDepth B 9]
+[charaDepth I 10]
+
+[scene 10000]
+[blur lens 0.1 4 50]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[wipeout openEye 0.4 1.0]
+[wait wipe]
+
+[scene 28300]
+
+[se ad462]
+[seVolume ad462 0 0]
+
+[wipein openEye 1.4 1.0]
+[wait wipe]
+
+[seVolume ad462 1.8 0.3]
+[wt 0.4]
+
+＠
+[line 3]这是在全部结束，[r]夏日也缓步迈向终点的时候。
+[k]
+
+＠
+淡薄隐约的意识，[r]让我想起了与她的约定。
+[k]
+
+[messageOff]
+[wt 0.4]
+[wipeout openEye 1.8 1.0]
+[seStop ad462 1.8]
+[wait wipe]
+
+[scene 20803]
+
+[se ade475]
+[seVolume ade475 0 0]
+
+[blurOff lens 0.1]
+[wt 1.0]
+
+[seVolume ade475 1.4 0.3]
+
+[wipein openEye 1.8 1.0]
+[wait wipe]
+[wt 1.2]
+
+？1：好吵闹的蝉鸣声……
+？！
+
+[seVolume ade475 1.0 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠？？？
+说得对，确实很有日本夏天的感觉。
+[k]
+
+＠？？？
+国外是什么样的呢。[r]美国……中国……
+[k]
+
+＠？？？
+没怎么听说那边提及蝉呢。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+[charaFadeout B 0.7]
+[seStop ade475 1.0]
+[wt 1.4]
+
+？1：啊[line 3]
+？！
+
+[bgm BGM_EVENT_25 0.1]
+
+[charaTalk on]
+[charaFace A 1]
+
+＠？？？
+呵呵呵。[r]没发现我一直走在您的身边吧？
+[k]
+
+＠？？？
+好久不见。[r]请容我重新自我介绍一下。我叫浅上藤乃。
+[k]
+
+？1：我知道。
+
+
+＠藤乃
+哎呀，是吗。
+[k]
+
+[charaFace A 0]
+
+＠藤乃
+难道迦勒底也有我？[r]……有？
+[k]
+
+[charaFace A 6]
+
+＠藤乃
+那……真令人感到骄傲。[r]但愿有帮上您的忙。
+[k]
+
+[branch sel01a]
+
+
+？2：对不起，其实……
+
+＠藤乃
+啊啊，当然。
+[k]
+
+[charaFace A 0]
+
+＠藤乃
+因为我并不是其他大家那样的英雄或是别的什么，[r]只是个眼睛稍微有些特异的学生罢了。
+[k]
+
+＠藤乃
+之所以会在这里，也是出于神明的心血来潮，[r]想让我当个[#友情客串:Special Guest]吧。
+[k]
+
+[charaFace A 6]
+
+＠藤乃
+但假如真是这样，[r]那这个世界的神明一定非常好吧？
+[k]
+
+？！
+
+[branch sel01b]
+
+[label sel01a]
+
+？1：迦勒底的藤乃教会了紫式部恐怖电影……
+？！
+
+＠藤乃
+哎呀。[r]这的确像是我会做的事呢。
+[k]
+
+[charaFace A 3]
+
+＠藤乃
+……但当得知了自己以外的自己所做的事，[r]还是会有些不好意思呢……
+[k]
+
+[label sel01b]
+
+[charaFace A 0]
+
+＠藤乃
+这是过去多久了？[r]我和你见面是在[line 3]
+[k]
+
+
+？1：好像是在魅影之后……
+
+[flag _1stQueAnswer 1]
+
+[charaFace A 1]
+
+＠藤乃
+嗯，回答正确。
+[k]
+
+[messageOff]
+
+？2：是最后一天吗？
+
+
+[flag _1stQueAnswer 2]
+
+
+＠藤乃
+……回答错误。
+[k]
+
+[charaFace A 4]
+＠藤乃
+这么简单的问题都会答错，[r]看来只能死一次重新来过了吧？
+[k]
+
+[messageOff]
+[wt 0.4]
+
+[se bas13]
+[flashin once 0.5 0.5 767676FF 76767600]
+[wt 1.6]
+
+[charaFace A 1]
+
+＠藤乃
+呵呵[line 3]我骗你的啦。[r]玩笑，是玩笑。
+[k]
+
+＠藤乃
+但是，一定要小心哦。
+[k]
+
+＠藤乃
+因为即便是与[#最坏的结局:Bad end]没什么关系的你，[r]假如反复失败，还是有可能走到那个结局的。
+[k]
+
+[messageOff]
+
+？！
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 99900]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠藤乃
+您问我……[r]今天来这里做什么？
+[k]
+
+[charaFace A 1]
+
+＠藤乃
+呵呵。我觉得这是我该问的话哦，[r][%1]。
+[k]
+
+＠藤乃
+您来这里做什么呢？
+[k]
+
+？1：因为约定好了。
+？！
+
+[charaFace A 0]
+
+＠藤乃
+[line 3]
+[k]
+
+[charaFace A 8]
+
+＠藤乃
+我给您一个忠告。
+[k]
+
+＠藤乃
+您还是不要过于重视[r]与幽灵的约定为好哦？
+[k]
+
+[charaFace A 9]
+
+＠藤乃
+幽灵乃是作祟的存在，[r]会被作祟、被缠上。
+[k]
+
+＠藤乃
+是只会用恶意来报答善意的悲伤存在。
+[k]
+
+＠藤乃
+……不，连感受『悲伤』，[r]心念『悲伤』都是错的。
+[k]
+
+[charaFace A 0]
+
+＠藤乃
+啊啊，但是。[r]我还是很高兴您能守约。
+[k]
+
+[charaFace A 1]
+
+＠藤乃
+非常感谢。
+[k]
+
+＠藤乃
+那么，[%1]。[r]我们走吧。
+[k]
+
+？1：去哪儿？
+？！
+
+＠藤乃
+去你我相遇的地方。
+[k]
+
+＠藤乃
+……不用担心，已经没有幽灵了。[r]让我们安稳地共度今日吧。
+[k]
+
+[messageOff]
+[charaFadeout A 0.2]
+[se ade475]
+[seVolume ade475 0 0]
+[seVolume ade475 1.0 0.3]
+[effect bit_talk_lens_flare]
+[wt 1.6]
+
+＠
+一望无垠的晴朗天空。
+[k]
+
+＠
+阳光如灼烧般毒辣，[r]然而却并不会让人感到不快。
+[k]
+
+＠
+令人炫目的阳光，[r]令人切身感受到了夏天的存在。
+[k]
+
+＠
+[line 3]啊啊，这果然……
+[k]
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠藤乃
+这或许……是这夏天的错误吧。
+[k]
+
+？1：怎……怎么突然这么说……？
+
+[charaFace A 0]
+
+＠藤乃
+……[r]……
+[k]
+
+[charaFace A 3]
+
+＠藤乃
+对不起，我说过头了。
+[k]
+
+[charaFace A 1]
+
+？2：有什么错误吗？
+
+＠藤乃
+请不要在意。[r]因为我也犯下过很多错误。
+[k]
+
+？！
+
+
+＠藤乃
+暂且不提这个问题了，[r]我们到了。
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_25 1.0 0.4]
+[seStop ade475 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[effectDestroy bit_talk_lens_flare]
+
+[scene 99800]
+[wt 1.0]
+
+[bgm BGM_EVENT_25 1.0 1.0]
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠藤乃
+……虽然总体上井然有序，[r]但还是蒙上了一层灰尘呢。
+[k]
+
+？1：那我们先大扫除吧。
+
+[flag _2ndQueAnswer 1]
+
+[charaFace A 1]
+
+＠藤乃
+好的。
+[k]
+
+＠藤乃
+[%1]只要安静地待着[line 3]
+[k]
+
+[charaFace A 0]
+
+＠藤乃
+哎？　您要……来帮忙？
+[k]
+
+＠藤乃
+……说得对。
+[k]
+
+＠藤乃
+现在的我们并不是御主与从者的关系。
+[k]
+
+[charaFace A 6]
+
+＠藤乃
+那我们一起清扫吧。
+[k]
+
+？2：其实就这样也无所谓吧？
+
+[flag _2ndQueAnswer 2]
+
+[charaFace A 8]
+
+＠藤乃
+唔。不行啊，[r][%1]。
+[k]
+
+＠藤乃
+气味是扣分对象。
+[k]
+
+[messageOff]
+[se bas13]
+[flashin once 0.5 0.5 767676FF 76767600]
+[wt 1.6]
+
+[charaFace A 1]
+
+＠藤乃
+来吧，大扫除大扫除。
+[k]
+
+
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade272]
+[seVolume ade272 0 0.1]
+[wt 0.3]
+[seStop ade272 0.4]
+[wt 0.4]
+[se ade272]
+[seVolume ade272 0 0.2]
+[wt 0.3]
+[seStop ade272 0.4]
+[wt 0.6]
+
+？1：这个该搬去哪里？
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠藤乃
+嗯。
+[k]
+
+＠藤乃
+这个……[wt 0.4][charaFace A 1]放进抽屉吧。[r]恐怕，已经不会再碰了吧。
+[k]
+
+？2：扔垃圾……
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠藤乃
+嗯，这边的也拜托了。[r]请扔到外面去。
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout A 0.2]
+
+[se ade481]
+[seVolume ade481 0 0]
+[seVolume ade481 0.6 0.3]
+[wt 2.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠藤乃
+这回是寒蝉呢。
+[k]
+
+＠藤乃
+有些急躁感，[r]但我并不讨厌……
+[k]
+
+＠藤乃
+[%1]怎么样？
+[k]
+
+？1：我可能不太喜欢。
+
+＠藤乃
+说得对。
+[k]
+
+＠藤乃
+一听到这声音，仿佛……[wt 0.7][charaFace A 4][r]没错，有种被催着赛跑的感觉。
+[k]
+
+？2：我可能还挺喜欢的。
+
+[charaFace A 6]
+
+＠藤乃
+您真顽皮呢。
+[k]
+
+＠藤乃
+但的确，不停奔跑与您的印象非常相配。[r]赶快赶快，逼近前方，超过前方……
+[k]
+
+＠藤乃
+难不成您是运动会决赛[r]接力赛跑最后那棒跑手？
+[k]
+
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_25 1.0 0.4]
+[seStop ade481 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[bgm BGM_EVENT_25 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠藤乃
+那我们开始做午饭吧。[r]不想做太油腻的……[wt 0.6][charaFace A 1]素面之类的如何？
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,10 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 0.8]
+
+[charaFace A 7]
+
+＠藤乃
+嗯。那么就从擀面开始吧。[r]拧面的工作就交给我吧。
+[k]
+
+？1：明白了！
+
+[charaFace A 0]
+
+＠藤乃
+……[r]……
+[k]
+
+[charaFace A 11]
+
+＠藤乃
+那个……我是在开玩笑啦，对不起……
+[k]
+
+＠藤乃
+如果认真制作素面的话，[r]还是需要发面时间的。
+[k]
+
+？2：应该从煮面开始吧？
+
+[charaFace A 3]
+＠藤乃
+……对，我刚才是开玩笑……看来是没听懂呢。
+[k]
+
+？！
+
+[charaFace A 0]
+＠藤乃
+那么，把素面取出放进锅里。[r]能拜托您处理一下配菜的蔬菜吗？
+[k]
+
+？1：交给我吧！
+？！
+
+[messageOff]
+[charaFace A 7]
+[wt 1.2]
+
+[wipeout rollRight 1.0 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[se ade294]
+[seVolume ade294 0 0]
+[se ad450]
+[seVolume ad450 0 0]
+
+[seVolume ade294 1.0 0.2]
+[seVolume ad450 1.0 0.3]
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠藤乃
+……[r]……
+[k]
+
+[messageOff]
+[seStop ade294 0.6]
+[seStop ad450 0.6]
+[wt 0.2]
+
+[se ad230]
+[wt 0.3]
+
+[se ad230]
+[se bac373]
+[seVolume bac373 0 0.1]
+[wt 0.3]
+
+[se ad230]
+[se bac373]
+[seVolume bac373 0 0.1]
+[wt 0.3]
+
+
+[seStop ad230]
+[wt 0.3]
+
+＠藤乃
+将煮熟捞起来的素面充分滤干净水……
+[k]
+
+？1：配上切好的蔬菜……
+？！
+
+[charaFace A 1]
+
+＠藤乃
+还需要一些蛋白质呢。
+[k]
+
+＠藤乃
+那就再加上一些涮猪肉吧。[r]然后……您喜欢微辣的酱汁吗？
+[k]
+
+？1：我非常喜欢。
+
+[charaFace A 6]
+
+＠藤乃
+嗯。[r]您偏好直接的刺激吧。
+[k]
+
+？2：其实我不怎么喜欢……
+
+[charaFace A 4]
+
+＠藤乃
+这样啊。[r]太遗憾了。
+[k]
+
+[charaFace A 1]
+
+＠藤乃
+……啊，那就用芝麻酱吧。[r]反正涮猪肉和大多数酱汁都很配。
+[k]
+
+＠藤乃
+那就用这个吧。
+[k]
+
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.3]
+
+[charaTalk off]
+[charaDepth C 6]
+[charaDepth J 4]
+
+[se bas2]
+[charaFadein C 0.4 0,-200]
+[charaFadeTime J 0.4 0.6]
+[wt 2.0]
+
+[charaFadeout C 0.4]
+[charaFadeout J 0.4]
+[wt 0.6]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠藤乃
+好了[line 3]
+[k]
+
+？1：我开动了。
+
+[flag _3rdQueAnswer 1]
+
+[charaFace A 6]
+
+＠藤乃
+嗯，我们开动吧。
+[k]
+
+？2：真好吃！
+
+[flag _3rdQueAnswer 2]
+
+[charaFace A 2]
+
+＠藤乃
+啊，不行啦。[r]真是的……还没有说我开动了吧？
+[k]
+
+＠藤乃
+藤乃分数，扣分。
+[k]
+
+[messageOff]
+
+[se bas13]
+[flashin once 0.5 0.5 767676FF 76767600]
+[wt 1.6]
+
+？！
+
+[charaFace A 0]
+
+＠藤乃
+即便不吃饭，从者也可以生存，[r]本该如此……
+[k]
+
+[charaFace A 6]
+
+＠藤乃
+但这样吃饭会有种非常奇妙的感觉。[r]既觉得好吃，又仿佛充满了活力。
+[k]
+
+？1：再来一份再来一份……
+？！
+
+[charaFace A 7]
+＠藤乃
+没问题，[r]还有好多素面呢。
+[k]
+
+[charaFace A 3]
+＠藤乃
+……我也再多吃一点吧。[r]夏天的素面真是有魔性……
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[se ade274]
+[wt 0.8]
+
+？1：感谢招待。
+？！
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠藤乃
+嗯。[r]多有怠……[wt 0.6][charaFace A 6]不，感谢招待。
+[k]
+
+＠藤乃
+因为这是我们两个一起做的嘛。
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,10 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 0.8]
+
+[charaFace A 0]
+
+＠藤乃
+……[r]……
+[k]
+
+？1：……
+？！
+
+[charaFace A 4]
+
+＠藤乃
+麻烦了。
+[k]
+
+＠藤乃
+吃完饭之后，[r]该做什么呢。
+[k]
+
+？1：那要不休息一会儿……
+
+[charaFace A 1]
+
+＠藤乃
+原来如此。
+[k]
+
+？2：那要不懒懒散散地躺一会儿……
+
+[charaFace A 0]
+
+＠藤乃
+懒懒散散……[wt 0.4][charaFace A 6]呵呵。[r]听起来真有意思。懒懒散散什么的。呵呵呵。
+[k]
+
+[charaFace A 1]
+
+？！
+
+＠藤乃
+那机会难得，[r]我们在屋边廊下休息一会儿吧。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 28300]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade482]
+
+＠
+铃声叮铃铃，[r]响彻这沉默的屋子。
+[k]
+
+[messageOff]
+[scene 99800 1.5]
+[wt 1.9]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,0]
+
+＠藤乃
+我从未去国外感受过夏天，[r]无论哪里的夏天都是这种感觉吗？
+[k]
+
+？1：夏威夷可能有些不一样吧。
+
+[charaFace A 6]
+＠藤乃
+夏威夷！　是常夏的乐园吧！
+[k]
+
+＠藤乃
+在扭曲家藤乃一直想去的地点清单里，[r]夏威夷光荣地名列第一位。
+[k]
+
+？2：或许并不是哪里都一样的。
+
+[charaFace A 1]
+＠藤乃
+是这样啊。……那倒是有些遗憾，[r]但现在能这样就已经很幸福了。
+[k]
+
+？！
+
+[charaFace A 0]
+
+＠藤乃
+……[r]……
+[k]
+
+＠藤乃
+话说，虽然有些唐突。[r]但您困吗？
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[wipeout openEye 1.0 1.0]
+[wait wipe]
+
+[wt 0.2]
+
+[wipein openEye 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaFace A 6]
+＠藤乃
+啊啊，果然困了啊。[r]请便请便。好好休息吧……
+[k]
+
+？1：那我就不客气了……
+
+[flag _4thQueAnswer 1]
+
+
+＠藤乃
+……难得的机会，要不要我为您哼唱摇篮曲呢？[r]还可以用圆扇为您扇风。
+[k]
+
+[charaFace A 7]
+
+＠藤乃
+来，请闭上眼睛[line 3]
+[k]
+
+＠藤乃
+宝贝宝贝睡觉觉，睡觉觉……[r]宝贝宝贝好孩子……
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[wipeout openEye 1.8 1.0]
+[bgm BGM_EVENT_25 1.0 0.4]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 10000]
+[wt 0.5]
+
+[wipein openEye 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[wipeFilter circleIn 0.5 0.5]
+
+[scene 99800]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.7 1]
+
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.3]
+
+＠藤乃
+宝贝宝贝睡觉觉，睡觉觉……[r]哎呀，已经睡着了啊。
+[k]
+
+[charaFace A 1]
+＠藤乃
+真是毫无防备呢……[r]呵呵。
+[k]
+
+＠藤乃
+这个人好歹也是位优秀的御主呢。
+[k]
+
+[charaFace A 0]
+
+＠藤乃
+啊啊，但或许是疲劳囤积的缘故吧。[r]看上去似乎有些痛苦。
+[k]
+
+＠藤乃
+……[r]……
+[k]
+
+[charaFace A 6]
+
+＠藤乃
+……稍微……扭曲一下吧……
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_25 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[wipeOff]
+[scene 10000]
+[wt 0.5]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[scene 99800]
+[wt 0.5]
+
+[se ad7]
+[wipein openEye 0.4 1.0]
+[wait wipe]
+[wt 0.8]
+
+[branch sel01c]
+
+
+
+？2：感觉会被做什么，还是不睡了。
+
+[flag _4thQueAnswer 2]
+
+[charaFace A 4]
+＠藤乃
+……这样啊……
+[k]
+
+[messageOff]
+[se bas13]
+[flashin once 0.5 0.5 767676FF 76767600]
+[wt 1.6]
+
+？！
+
+[branch sel01d]
+
+[label sel01c]
+
+？1：我睡着了！？
+？！
+
+[bgm BGM_EVENT_25 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠藤乃
+嗯，睡得很香。[r]但是，只睡了约半个小时。
+[k]
+
+[charaFace A 0]
+
+＠藤乃
+话说回来，[r]您身体状态还好吗？
+[k]
+
+＠藤乃
+尤其是内脏。
+[k]
+
+？1：被你这么一说……
+？！
+
+[charaFace A 1]
+
+＠藤乃
+这样啊……那太好了。
+[k]
+
+＠藤乃
+[f small]不枉我小心翼翼地进行扭曲。
+[k]
+
+
+？1：你刚才说什么？
+？！
+
+[charaFace A 6]
+
+＠藤乃
+哎呀讨厌啦。[r]没什么哦，呵呵呵。
+[k]
+
+[label sel01d]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_25 1.0 0.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_25 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠藤乃
+啊。
+[k]
+
+[charaFace A 1]
+
+＠藤乃
+对了，对了。[r]我差点忘了。
+[k]
+
+[charaMoveReturn A 0,-10 0.8]
+＠藤乃
+提[se ade253][seVolume ade253 0 0.6]起日本的夏天[line 3][r]当然少不了西瓜呢。
+[k]
+
+？1：西瓜！
+？！
+
+[messageOff]
+[charaTalk I]
+[se ade161]
+[wt 2.0]
+
+＠藤乃
+日本开始吃西瓜的年代其实相当晚哦。
+[k]
+
+＠藤乃
+好像是在大正时代[r]才总算开始接受那种水果的。
+[k]
+
+[charaFace A 0]
+
+＠藤乃
+是因为红色的果肉给人不好的印象吧。[r]有些人或许会联想到鲜血。
+[k]
+
+[charaFace A 1]
+
+＠藤乃
+我也会联想到鲜血，[r]但一事归一事，我还是很喜欢吃的。
+[k]
+
+[messageOff]
+[charaTalk I]
+[wt 0.1]
+
+[se ade482]
+[wt 1.8]
+
+[charaFace A 7]
+
+＠藤乃
+凉爽的风……
+[k]
+
+？1：虽然热，但很凉爽呢。
+？！
+
+＠藤乃
+嗯。
+[k]
+
+[charaFace A 0]
+
+＠藤乃
+[%1]。[r]……今天的夏天过得怎么样？
+[k]
+
+＠藤乃
+是高兴？[r]还是痛苦？
+[k]
+
+＠藤乃
+但无论如何……[r]无论多么高兴，或是多么痛苦。
+[k]
+
+＠藤乃
+培养出的回忆都是不会消失的。[r]即便褪色，也不会消失。
+[k]
+
+＠藤乃
+哪怕对象是幽灵，也不会改变。[r]无论恐惧与悲伤，还是喜悦与快乐。
+[k]
+
+[charaFace A 10]
+＠藤乃
+呃，也就是说。
+[k]
+
+＠藤乃
+……但愿您今后也能想起我。
+[k]
+
+？1：当然。
+
+[flag _5thQueAnswer 1]
+
+[charaFace A 1]
+
+＠藤乃
+呵呵。
+[k]
+
+？2：（无言。）
+
+[flag _5thQueAnswer 2]
+
+[charaFace A 9]
+
+＠藤乃
+……我有那么可怕吗？
+[k]
+
+[messageOff]
+[se bas13]
+[flashin once 0.5 0.5 767676FF 76767600]
+[wt 1.6]
+
+
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_25 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 99801]
+[wt 1.0]
+
+[se ade483]
+[seVolume ade483 0 0]
+
+[seVolume ade483 1.0 0.3]
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠藤乃
+哎呀。[r]暮蝉开始鸣叫了。
+[k]
+
+＠藤乃
+也就是说，我们该道别了。
+[k]
+
+？1：就此说再见吗……？
+？！
+
+
+[branch lblAnswer1 _1stQueAnswer 2]
+[branch lblAnswer2 _2ndQueAnswer 2]
+[branch lblAnswer3 _3rdQueAnswer 2]
+[branch lblAnswer4 _4thQueAnswer 2]
+[branch lblAnswer5 _5thQueAnswer 2]
+
+
+[charaFace A 1]
+
+＠藤乃
+……是的。
+[k]
+
+＠藤乃
+[%1]，[r]请保重身体。
+[k]
+
+[charaFace A 7]
+
+＠藤乃
+今天您得了一百分。
+[k]
+
+[charaFace A 6]
+
+＠藤乃
+如果迦勒底也有我，[r]请代我向她问好。
+[k]
+
+＠藤乃
+我们最后握一次手吧。
+[k]
+
+[messageOff]
+[se ad452]
+[charaMoveScale A 1.15 0.8]
+[charaMove A 0,30 0.8]
+[wt 0.8]
+[seStop ad452 0.4]
+[wt 0.7]
+
+[se ad183]
+[charaMoveReturn A 0,25 0.4]
+[wt 0.7]
+
+
+＠藤乃
+……[r]……
+[k]
+
+？1：怎么了？
+？！
+
+[charaFace A 1]
+＠藤乃
+或许是幽灵的本性吧。
+[k]
+
+＠藤乃
+……总想就这么牵着您的手，[r]带着您一起逝去。
+[k]
+
+[charaFace A 0]
+
+＠藤乃
+……[r]……
+[k]
+
+[charaFace A 3]
+
+＠藤乃
+当……当然只是个玩笑哦？
+[k]
+
+＠藤乃
+若想带人一起逝去，[r]一定要得到对方的同意才行……
+[k]
+
+[charaFace A 0]
+[charaMoveReturn A 0,25 0.4]
+
+＠藤乃
+……咳咳。
+[k]
+
+[charaFace A 6]
+
+＠藤乃
+虽然还有些依依不舍，[r]但毕竟只是个幽灵。
+[k]
+
+＠藤乃
+那么，再见了，[r][%1]。
+[k]
+
+＠藤乃
+直到今后重逢的那天。
+[k]
+
+？1：再见了，藤乃小姐。
+
+[charaFace A 1]
+
+＠藤乃
+呵呵，被您称呼为藤乃小姐，[r]让我怪不好意思的。
+[k]
+
+？2：再见了，姐姐。
+
+[charaFace A 3]
+
+＠藤乃
+……[r]……吓了我……一跳。
+[k]
+
+[charaFace A 10]
+
+＠藤乃
+真是的。[r]居然吓唬幽灵，真是个坏人。
+[k]
+
+＠藤乃
+最后的最后，还是要扣分呢。[wt 0.7][charaFace A 1][r]呵呵。
+[k]
+
+？！
+
+[charaPut K 1]
+[charaEffect K bit_talk_06]
+＠藤乃
+[line 3]您呼唤我的声音，[r]非常美妙哦。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[wt 0.2]
+
+[se ad52]
+[charaSpecialEffect A flashErasure 1 2.0]
+[wait charaSpecialEffect A]
+[charaEffectStop K bit_talk_06]
+[wt 0.5]
+[seStop ad52 0.2]
+[wt 1.0]
+
+[fadeout black 1.5]
+[wait fade]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 0.1]
+[wait fade]
+
+[branch lblBranchEnd1]
+
+
+[label lblAnswer1]
+[branch lblAnswer2_2 _2ndQueAnswer 1]
+[branch lblAnswer3_2 _3rdQueAnswer 1]
+[branch lblAnswer4_2 _4thQueAnswer 1]
+[branch lblAnswer5_2 _5thQueAnswer 1]
+
+
+
+[bgmStop BGM_EVENT_77 1.0]
+[seStop ade483 1.0]
+
+＠藤乃
+……好了。
+[k]
+
+＠藤乃
+关于今天的[%1]。
+[k]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaFace A 8]
+＠藤乃
+[f large]0分。
+[k]
+
+[charaFace A 6]
+＠藤乃
+呵呵呵，您难道是故意的吗？
+[k]
+
+＠藤乃
+玩弄可怜女高中生的心灵，[r]始终采取冷漠态度的您[line 3]
+[k]
+
+＠藤乃
+只能用[#扭曲]来惩罚了。
+[k]
+
+[charaFace A 7]
+＠藤乃
+[line 3]你看，召唤您的手从背后伸来了哦。
+[k]
+
+[messageOff]
+[charaTalk I]
+[wt 0.1]
+
+[se ade507]
+[wt 2.5]
+
+[seStop ade507 1.5]
+[wt 1.5]
+
+[charaFace A 6]
+＠藤乃
+那么，[%1]。
+[k]
+
+＠藤乃
+请在幽明的边境扭曲着深刻反省吧。
+[k]
+
+[charaFace A 7]
+＠藤乃
+因为[line 3]夏日的怪谈，[r]就是这样的吧？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.0]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.0 1.0]
+[wt 1.0]
+[shake 0.01 1 1 0]
+[charaTalk off]
+[charaDepth A 5]
+[charaDepth L 9]
+[charaDepth M 9]
+[charaFadein L 1.0 0,-600]
+[charaFadein M 1.0 0,-600]
+[wt 1.0]
+
+[charaMoveScale L 0.25 3.0]
+[charaMoveScale M 0.25 4.5]
+[charaMove L 0,-100 3.0]
+[charaMove M 0,-100 4.5]
+[wt 0.4]
+
+[cameraMove 3.0 0,0 0.5]
+[wt 1.2]
+
+[wipeout circleIn 1.0 1.0]
+[fadeout black 1.0]
+[seStop ad556 1.0]
+[wait wipe]
+
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout A 0.1]
+
+[cameraMove 0 0,0 1.0]
+[scene 10000]
+[wt 1.2]
+
+[wipein circleIn 1.0 1.0]
+[wait wipe]
+
+[charaTalk on]
+＠
+[line 3]很遗憾。[r]看来这夏天的恶梦，才刚刚开始。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+
+[branch lblBranchEnd2]
+
+
+
+[label lblAnswer2]
+[label lblAnswer3]
+[label lblAnswer4]
+[label lblAnswer5]
+[label lblAnswer2_2]
+[label lblAnswer3_2]
+[label lblAnswer4_2]
+[label lblAnswer5_2]
+
+
+
+[charaFace A 1]
+
+＠藤乃
+……嗯。
+[k]
+
+＠藤乃
+[%1]，[r]请保重身体。
+[k]
+
+＠藤乃
+如果迦勒底也有我，[r]请代我向她问好。
+[k]
+
+[charaFace A 6]
+
+＠藤乃
+再见了。
+[k]
+
+[charaFace A 0]
+
+＠藤乃
+啊啊，对了[line 3]
+[k]
+
+[charaPut K 1]
+[charaEffect K bit_talk_06]
+[charaFace A 1]
+＠藤乃
+这次[%1]的得分是70分。
+[k]
+
+＠藤乃
+呵呵，虽然分数没什么特别的意义。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[wt 0.2]
+
+[se ad52]
+[charaSpecialEffect A flashErasure 1 2.0]
+[wait charaSpecialEffect A]
+[charaEffectStop K bit_talk_06]
+[wt 0.5]
+[seStop ad52 0.2]
+[wt 1.0]
+
+[fadeout black 1.5]
+[wait fade]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[branch lblBranchEnd1]
+
+
+[label lblBranchEnd1]
+
+
+
+
+[seStop ade483 0.6]
+[wt 0.6]
+
+？1：啊[line 3]
+？！
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[scene 99804]
+[wt 0.5]
+
+[wipein openEye 1.8 1.0]
+[wait wipe]
+[wt 0.3]
+
+
+＠
+待回过神来，天空已经化为暗夜。[r]待回过神来，身边已经空无一人。
+[k]
+
+[messageOff]
+[se ad452]
+[seVolume ad452 0 0.8]
+[wipeout leftToRight 1.0 1.0]
+[seStop ad452 1.5]
+[wait wipe]
+
+
+[scene 99902]
+[wt 1.0]
+
+[se adm13]
+[seVolume adm13 0 0]
+[seVolume adm13 1.0 0.3]
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠
+顺着漆黑的夜路缓步返回。
+[k]
+
+＠
+[line 3]突然，强忍住回首望去的冲动。
+[k]
+
+＠
+一昼一夜的回忆，[r]唯有珍藏在心中。
+[k]
+
+＠
+凉爽的铃虫鸣叫声、蟋蟀鸣叫声，[r]宣告了今年夏天的结束。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+
+[label lblBranchEnd2]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_11 2.0]
+[seStop adm13 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

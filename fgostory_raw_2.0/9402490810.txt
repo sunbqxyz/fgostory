@@ -1,0 +1,1336 @@
+
+＄94-02-49-08-1-0
+
+
+[soundStopAll]
+
+
+
+[charaSet A 1098138000 1 龙马]
+[charaSet B 1098139000 1 阿龙小姐]
+[charaSet C 1098135000 1 织田信长]
+[charaSet D 98111600 1 织田信胜]
+[charaSet E 1098141000 1 奄美少将]
+[charaSet F 1098142000 1 南光坊天海]
+[charaSet G 1098134000 1 兵卒]
+[charaSet H 98002000 1 特效用dummy]
+
+[charaDepth A 8]
+[charaDepth B 1]
+[charaDepth H 9]
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 59700]
+
+
+[fadein black 1.5]
+
+
+
+[effect bit_talk_sparks]
+[se ad11]
+[charaPut H 0,-10]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[charaEffect H bit_talk_gouka]
+[wt 2.5]
+[effectStop bit_talk_sparks]
+[flashin once 0.1 0.1 CC0000AF CC000000]
+[seVolume ad11 1.0 0.2]
+[se ad61]
+[charaMove H 0,-70 1.5]
+[flashin once 0.1 0.1 CC0000AF CC000000]
+[wt 1.0]
+[flashin once 0.1 0.1 CC0000AF CC000000]
+[wt 1.0]
+[seStop ad61 0.1]
+[wt 0.4]
+
+＠织田信长
+……没想到居然能让我使用波旬。
+[k]
+
+＠织田信长
+你的宝具确实犹如翱翔于……天际之龙啊。
+[k]
+
+＠织田信长
+但正因为如此，才对我行不通。
+[k]
+
+[charaFadeout C 0.1]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠龙马
+怎么会这样……[r]我也没想到会是这样。
+[k]
+
+＠龙马
+第六天魔王波旬·织田信长……
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOff]
+[charaTalk B]
+[charaFace B 4]
+[charaFadeTime B 0 0.5]
+＠阿龙小姐
+……龙马，对不起。
+[k]
+
+＠阿龙小姐
+我又……没能保护……
+[k]
+
+[messageOff]
+[se ad52]
+[charaSpecialEffect B flashErasure 1 2.0]
+[wait charaSpecialEffect B]
+[wt 1.0]
+[seStop ad52 0.7]
+[charaFadeout B 0]
+[wt 1.0]
+
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠龙马
+谢谢你，阿龙小姐。
+[k]
+
+＠龙马
+你明明可以不用管我，[r]直接飞向天际就行了啊……
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+[charaPut H 0,-70]
+＠织田信长
+……完成告别了吗？[r]……那永别了，维新的英雄。
+[k]
+
+[charaFace C 5]
+＠织田信长
+我会毁了这个世界，[r]并向着更高的世界进发。
+[k]
+[charaFadeout C 0.1]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠龙马
+……不，这就不好说了哦？[r]直接与你交手之后，我终于明白了。
+[k]
+
+
+＠龙马
+……信长公，你果然不是你。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaSet B 1098151000 1 坂本龙马_帽子]
+
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[charaPut H 0,-70]
+＠织田信长
+你说什么？　这是什么意思，Rider？
+[k]
+[charaFadeout C 0.1]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠B：龙马
+……话虽如此，接下来，[r]似乎就不是我的……任务了呢……
+[k]
+
+
+[messageOff]
+[charaFadeout B 0.4]
+[charaMove B 0,-30 0.4]
+[wt 0.4]
+[se ad144]
+[seVolume ad144 0 0.4]
+[wt 1.0]
+[seStop ad11 1.0]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_gouka]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠织田信长
+你说……我……不是我？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 1.0]
+[charaFadeout C 0.1]
+[wt 0.4]
+
+[se ad192]
+[wt 1.5]
+[seStop ad192 0.4]
+[wt 0.4]
+
+[bgm BGM_EVENT_90 0.1 1.0]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+＠奄美少将
+不愧是信长公，[r]和那些普通英灵根本不可同日而语。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠织田信长
+……你是什么人？
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠奄美少将
+您这番话也太见外了吧。[r]我们难道不是才缔结了誓约的同志吗。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠织田信长
+看来你就是Caster吧。[r]原来如此，Rider被打倒，这场战斗的趋势逐渐确定，
+[k]
+
+[charaFace C 0]
+＠织田信长
+觉得再这样下去就没机会暗算了，[r]你才会慌慌张张出现在我的面前吧。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠奄美少将
+嗯，我是Caster，真名是南光坊天海。[r]是承诺守护德川，心怀这帝都安危之人。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠织田信长
+竹千代的……？　哼，我不认识。
+[k]
+
+＠织田信长
+不过无妨，反正都要在这里杀掉。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠E：南光坊天海
+不不，您可别说自己不认识哦，信长公。[r]当你看到这张脸之后，会不会想起来呢？
+[k]
+
+
+[messageOff]
+[se ad7]
+[charaFadeout E 0.1]
+[wt 0.8]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 1]
+[wt 2.0]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠织田信长
+……你这家伙！？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠南光坊天海
+好久不见，我的主君，[r][line 3]织田上总介信长公！
+[k]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠织田信长
+……这是怎么一回事？[r]你这家伙为什么会在这里！？
+[k]
+
+
+[se ad62]
+[charaFace C 5]
+[charaShake C 0.04 3 3 0.6]
+＠织田信长
+……！？[wt 0.2][seStop ad62 0.6]
+[k]
+
+＠织田信长
+我的……身体……！？
+[k]
+
+＠织田信长
+……居然动不了了！？
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠南光坊天海
+信长公，您已经在我的掌握之中了。[r]和在那座本能寺的时候一样哦！
+[k]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠织田信长
+……原来是这样。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠南光坊天海
+不愧是信长公，明察秋毫。没错，[r]这整座帝都都是我的阵地。
+[k]
+
+＠南光坊天海
+三骑士和其他从者们也不过是[r]在我的阵地上小打小闹而已。
+[k]
+
+＠南光坊天海
+在这不停重复着的圣杯战争中，[r]那些灵基每次都会由我的阵地回收，并积攒起来……
+[k]
+
+＠南光坊天海
+这就是身为Caster的我的[#战线:Red line]，
+[k]
+
+＠南光坊天海
+神降之宫『帝都』啊！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠织田信长
+……整座帝都居然都是你的[#战线:Red line]吗！
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+＠南光坊天海
+……漫长……实在是太漫长了。
+[k]
+
+＠南光坊天海
+我就是为了这个时刻，才会瞒着那家伙的耳目，混入德川，[r]策划了三百年之计，一味地等待着。
+[k]
+
+[charaFace F 1]
+＠南光坊天海
+现在，真正的信长公终于回来了！
+[k]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+[messageShake 0.05 4 4 0.9]
+＠织田信长
+…………光秀[line 5]！　你这家伙！
+[k]
+
+[messageOff]
+[charaFadeout C 0.4]
+[charaMove C 0,-30 0.4]
+[wt 0.4]
+[se ad144]
+[seVolume ad144 0 0.4]
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠南光坊天海
+……好，把信长公带走。
+[k]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠兵卒
+是！
+[k]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠南光坊天海
+圣杯，公的灵基……
+[k]
+
+[charaFace F 1]
+＠南光坊天海
+以及聚集于此地的无数英灵之魂。[r]我的愿望实现的时刻终于要到来啦！
+[k]
+
+[charaFace F 3]
+＠南光坊天海
+呼哈哈……[r]哈哈哈哈哈哈哈……！
+[k]
+
+＠南光坊天海
+哈～哈哈哈哈哈哈哈哈哈哈！！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 1.0 1]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 1.0 1]
+[wait wipe]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.4 1]
+[wt 0.4]
+＠织田信胜
+…………
+[k]
+
+[messageOff]
+[se ad60]
+[charaFadeout D 0.7]
+[wt 0.5]
+[seStop ad60 0.5]
+[wt 0.5]
+
+
+[bgmStop BGM_EVENT_90 1.5]
+[fadeout black 2.0]
+[wait fade]
+
+[scene 59400]
+[wt 1.0]
+
+[fadein black 2.0]
+[wait fade]
+
+？1：我回来了。
+？2：坂本先生不要紧吧。
+
+？！
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+＠织田信胜
+哦，你回来了啊，[%1]。
+[k]
+
+
+？1：哎？
+？2：信胜……！？
+
+？！
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[wt 1.5]
+
+[fadeout white 1.5]
+[wait fade]
+
+[scene 10001]
+
+[skip false]
+
+[fadein white 0.1]
+[wait fade]
+
+
+[input selectBranch]
+[messageOff]
+[skip false]
+
+[bgmStop BGM_EVENT_90 0.4]
+[bgmStop BGM_EVENT_24 0.4]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaPut H 2000,2000]
+[charaFadeout H 0.1]
+
+[effectStop bit_talk_sparks]
+[charaEffectStop H bit_talk_gouka]
+
+[scene 10001]
+[wt 0.4]
+[soundStopAll]
+[maskin white 1]
+[wait mask]
+[label selectBranch]
+
+[wt 0.4]
+
+[revivalBranch lblNormal lblRevival]
+
+[label lblNormal]
+
+[fowardEffect bit_queststart80107]
+[wait fowardEffect]
+
+[branch lblConf]
+[label lblRevival]
+
+[fowardEffect bit_queststart80242]
+
+[wait fowardEffect]
+
+[label lblConf]
+
+[fadeout white 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[fadein white 0.1]
+[wait fade]
+[wt 0.1]
+
+[fadeout black 2.0]
+[wait fade]
+
+[skip true]
+[wt 0.1]
+
+[charaSet A 1098138000 1 龙马]
+[charaSet B 1098139000 1 阿龙小姐]
+[charaSet C 10007001 1 冲田Alter]
+
+[charaSet D 98111600 1 织田信胜（信IN）]
+[charaSet E 99502600 1 玛修]
+[charaSet F 98111500 1 达·芬奇亲]
+[charaSet G 6033002 1 以藏]
+[charaSet H 98111500 1 通讯杂音]
+
+[charaDepth A 8]
+[charaDepth B 1]
+
+[scene 59400]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1 1.0]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠D：织田信胜
+姐姐大人，不要突然出现啦。[r]这样会吓到人家的啦。
+[k]
+
+[charaFace D 11]
+＠织田信胜？
+哦，抱歉抱歉。[r]不过你的身体太狭窄了，好难受啊。
+[k]
+
+[charaFace D 4]
+＠D：织田信胜
+毕竟一个灵基里塞了两个人格嘛。
+[k]
+
+？1：你们怎么……？
+？2：是信胜和信吗？
+
+？！
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠冲田Alter
+……御主，这家伙怎么一回事？
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠D：织田信胜
+好久不见，我记得你是姐姐大人的……
+[k]
+
+[charaFace D 11]
+＠D：织田信胜？
+喂，信胜，我来说。[r]你先给我躲回去。
+[k]
+
+＠D：织田信胜？
+哟，冲田，你也来了啊。[charaFace D 15][r]唔，怎么？　给人的印象似乎相当不一样呢？
+[k]
+
+＠D：织田信胜？
+好像连颜色都不一样了……
+[k]
+
+？1：你是信吗？
+？2：突然开始乱七八糟了……
+
+？！
+
+[charaFace D 11]
+＠D：织田信胜？
+这个嘛，确实可以说是，[r]也可以说不是。
+[k]
+
+＠D：织田信胜？
+总之，先听我解释。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFace D 11]
+
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1 1.0]
+
+＠织田信胜（信IN）
+唔，我是和[%1]……
+[k]
+
+＠织田信胜（信IN）
+和你几乎同时被圣杯召唤到这个空间来的。
+[k]
+
+＠织田信胜（信IN）
+或许说被强制捆在这个地方比较妥当。
+[k]
+
+？1：被捆在这个地方？
+？2：那冲田小姐也是吗？
+
+？！
+
+＠织田信胜（信IN）
+没错，原本应该会作为圣杯的从者而固定灵基，
+[k]
+
+＠织田信胜（信IN）
+在这里强制受到使役才对。
+[k]
+
+＠织田信胜（信IN）
+然而我却在被固定前，[r]通过切除了一点灵基逃跑了。
+[k]
+
+？1：居然能做到这种事？
+？2：呃……
+
+？！
+
+＠织田信胜（信IN）
+一般情况下是不可能的。
+[k]
+
+＠织田信胜（信IN）
+但多亏之前的骚动，[r]在我灵基的附近记录下了信胜的存在。
+[k]
+
+＠织田信胜（信IN）
+因此我才得以借用信胜的灵基在这空间现界。
+[k]
+
+[charaFace D 1]
+＠D：织田信胜
+我原本的灵基作为灵基而言过于弱小，[r]本应是无法现界的，
+[k]
+
+＠D：织田信胜
+但补上了姐姐大人的灵基，[r]才勉强实现了现界。
+[k]
+
+[charaFace D 12]
+＠织田信胜（信IN）
+不过，这是作为亲生姐弟血脉相承的[r]我和信胜才能实现的超奇迹哦。
+[k]
+
+＠织田信胜（信IN）
+话虽如此，这家伙的灵基容量也太小了，[r]对我来说过于憋屈，但这也无可奈何呢。
+[k]
+
+[charaFace D 11]
+＠织田信胜（信IN）
+随后，我就躲在我的附近探查情况。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaPut H 1]
+[charaEffect H bit_talk_10]
+[wt 0.1]
+[se ad13]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-90]
+[wt 0.3]
+
+＠达·芬奇亲
+不不，这是什么莫名其妙的情况啦。
+[k]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠玛修
+前辈，好久不见！
+[k]
+
+[charaFace E 6]
+＠玛修
+关于那边那位似乎不像是[r]冲田小姐的冲田小姐[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[bgmStop BGM_EVENT_2 0.4]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-90]
+
+＠达·芬奇亲
+不好意思，玛修，[r]我有重要的事要说，你先暂停一下。
+[k]
+
+[bgm BGM_EVENT_5 0.1 1.0]
+
+＠达·芬奇亲
+没想到一个灵基内居然有两个人的人格……[r]尽管我对此非常有兴趣，但必须优先重要的事。
+[k]
+
+＠达·芬奇亲
+我们已经将这个特异点的构造……[r]或者该说被制造的目的成功解析了。
+[k]
+
+＠达·芬奇亲
+你们好好听着，这个空间是用来搜集从者，[r]铸造纯度更高的灵基……
+[k]
+
+＠达·芬奇亲
+也就是近似于仪式用魔术回路的空间。
+[k]
+
+？1：搜集从者？
+？2：纯度更高？
+
+？！
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+＠织田信胜（信IN）
+原来如此啊……就是所谓的蛊毒吧。
+[k]
+
+[charaFace D 9]
+＠D：织田信胜
+您居然知道吗，姐姐大人！？
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-90]
+
+＠达·芬奇亲
+唔。蛊毒就是指在壶内放入大量[r]毒虫和毒蛇，让它们自相残杀，
+[k]
+
+＠达·芬奇亲
+并将最后活下来的那个用在咒术上的东洋魔术吧。[r]确实是个好例子。
+[k]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+＠织田信胜（信IN）
+也就是说，这里的目的是让从者自相残杀，[r]从而获得纯度更高的灵基吧。
+[k]
+
+＠织田信胜（信IN）
+因此才需要大量从者参加的圣杯战争。
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 0,-90]
+
+＠达·芬奇亲
+而且根据我们的观测，[r]那个空间已经为此重复了很多次圣杯战争了。
+[k]
+
+？1：很多次？
+？2：从很久以前开始？
+
+？！
+
+＠达·芬奇亲
+嗯，虽然不知道是从什么时候开始，[r]但似乎是将整个都市从历史中隔离出来，重复举行圣杯战争，
+[k]
+
+＠达·芬奇亲
+并不断累积搜集而来的灵基。
+[k]
+
+[charaFace F 0]
+＠达·芬奇亲
+虽说利用了圣杯的力量，[r]但考虑到计划、准备、执行所耗费的劳力，
+[k]
+
+＠达·芬奇亲
+这简直太不正常了。
+[k]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+＠织田信胜（信IN）
+[line 3]但是，[r]金桔那家伙做得出这种事吧。
+[k]
+
+？1：金桔？
+？2：指的是信的……
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 0,-90]
+
+＠达·芬奇亲
+既然不惜做到这个地步，[r]看来Caster是打算干一番大事吧。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+
+[se ad60]
+[wt 0.1]
+[seStop ad60 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.4 1]
+[wt 0.4]
+＠龙马
+……原来如此。[r]所以才让我和她出马啊。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠冲田Alter
+……Rider，你没事啊。
+[k]
+
+[charaFadeout C 0.1]
+[bgmStop BGM_EVENT_5 0.4]
+[wt 0.5]
+
+[bgm BGM_EVENT_2 0.1 1.0]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+＠龙马
+嗯，多亏了那位信长公的弟弟。
+[k]
+
+？1：太好了……
+？2：阿龙小姐呢？
+
+？！
+
+[messageOff]
+[charaTalk depthOff]
+[charaTalk B]
+[charaFace B 4]
+[charaFace A 0]
+[charaFadein B 0.7 1]
+[wt 1.0]
+＠阿龙小姐
+抱歉，阿龙小姐现在正因受辱而心有不甘呢。
+[k]
+
+[charaTalk A]
+＠龙马
+因为阿龙小姐是我的宝具嘛。[r]只要我回复到一定程度，她自然也就恢复原形了。
+[k]
+
+＠龙马
+原本其实没那么简单才对，[r]但这次似乎比较特殊。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+＠阿龙小姐
+帅气的告别之后居然落到这种下场。[r]阿龙小姐因过度羞耻都想沉入海底沉睡了。
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+＠织田信胜（信IN）
+毕竟我用信胜的身体根本无法使用力量嘛。[r]但就算是这种弱小英灵，也比没有要好啦。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+＠龙马
+哈哈，这话真是太严格了。
+[k]
+
+[charaFace A 7]
+＠龙马
+话虽如此，当面对信长公时，别说我了，[r]这个国家大多数英灵基本都不够格吧。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-90]
+
+＠达·芬奇亲
+总之得先想办法应对Caster的企图才行。
+[k]
+
+＠达·芬奇亲
+否则[%1]甚至无法从这个空间返回。
+[k]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+＠织田信胜（信IN）
+那么我们该做的事情只有一件。
+[k]
+
+＠织田信胜（信IN）
+破坏金桔那家伙……不，[r]破坏Caster那家伙的企图，
+[k]
+
+＠织田信胜（信IN）
+大摇大摆地返回迦勒底。
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠冲田Alter
+说得对，这样一来御主也就能回去了。
+[k]
+
+？1：那我们走吧！
+？2：大家齐心协力！
+
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[bgmStop BGM_EVENT_2 0.1]
+[se ad93]
+[wt 1.5]
+[seStop ad93 0.7]
+[wt 0.7]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.4 1]
+[wt 1.0]
+＠以藏
+……喂，把我也带上。
+[k]
+
+？1：难道是以藏先生？
+？2：哎？　你谁啊？
+
+？！
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_4 0.1 1.0]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+＠龙马
+以藏先生……[r]这身打扮是那个时候的……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.1 1]
+＠以藏
+别误会了。[r]我只是不愿意被人擅自利用罢了。
+[k]
+
+＠以藏
+我才不管什么Caster呢，[r]我只是忍不了被那种自以为了不起的家伙操控。
+[k]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace A 10]
+[charaFace B 4]
+[charaFadein A 0.1 1]
+[charaFadein B 0.1 1]
+＠阿龙小姐
+喂，龙马，我们不需要这家伙吧。
+[k]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFace B 0]
+＠龙马
+……不，有以藏先生在就如百人助力。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+＠以藏
+……哼。[r]那你们找到Caster的位置了吗？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+＠织田信胜（信IN）
+不，知道大致位置，但不知道准确的地点。[r]不过Assassin，你应该能解决这个问题吧？
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠以藏
+嗯，身为Assassin的我[r]对[#战线:Red line]内从者的位置了若指掌。
+[k]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠冲田Alter
+……走吧，御主。[r]我觉得自己就是为此而来的。
+[k]
+
+？1：我明白了，走吧！
+？2：Alter……
+
+？！
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠玛修
+前辈就拜托您了，Alter小姐！
+[k]
+
+[charaFace E 1]
+＠玛修
+……呼，终于说出口了。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠冲田Alter
+…………
+[k]
+
+[charaFace C 1]
+＠冲田Alter
+你是叫……玛修吧。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠玛修
+对，我是玛修·基列莱特！[r]啊……应该称呼您为Alter小姐吧？
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠冲田Alter
+嗯，交给我吧。[r]我会连玛修的份一起帮助御主的。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠玛修
+好！　拜托您了！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFace B 0]
+[charaFadein A 0.1 1]
+[charaFadein B 0.1 1]
+＠龙马
+角色都到齐了吧？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+＠织田信胜（信IN）
+真是个东拼西凑的队伍。
+[k]
+
+
+[charaFace D 12]
+
+＠织田信胜（信IN）
+[line 3]不过，终于开始有意思了。
+[k]
+
+＠织田信胜（信IN）
+是吧！　[%1]！
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_4 2.0]
+[wait fade]
+[soundStopAll]
+[end]

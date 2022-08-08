@@ -1,0 +1,1419 @@
+
+＄94-03-46-01-1-0
+
+[soundStopAll]
+[charaSet A 2023001 1 莫里亚蒂]
+[charaSet B 5038000 1 齐格]
+[charaSet C 5038000 1 剪影_齐格]
+[charaFilter C silhouette 00000080]
+[charaSet D 1035001 1 迪尔姆德]
+[charaSet E 1098162700 1 手下A]
+[charaSet F 1098162700 1 手下A_2]
+[charaSet G 1098162700 1 手下A_3]
+
+[charaSet H 5012001 1 特效用dummy]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_spotlight]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 1.0 1]
+[wt 1.6]
+
+＠A：？？？
+[line 3]每个人都会心怀遗憾。
+[k]
+
+
+[charaFace A 1]
+
+＠A：？？？
+“如果能这样就好了”，“如果那样做就好了”。[r]每个人在一生中，都曾产生过这种想法。
+[k]
+
+[charaFace A 5]
+[bgm BGM_EVENT_48 0.1]
+
+＠A：？？？
+既然人生无法摆脱失败，[r]那逐一在意这些就是毫无意义的[line 3]
+[k]
+
+[charaFace A 1]
+
+＠A：？？？
+不过嘛！[r]一般肯定会在意吧！
+[k]
+
+＠A：？？？
+我也会在意！
+[k]
+
+[cameraMove 15.0 0,-40 1.2]
+
+[charaFace A 0]
+＠A：？？？
+所以今天，[r]我想稍微谈一下关于遗憾的事。
+[k]
+
+＠A：？？？
+心怀遗憾并没有什么问题。
+[k]
+
+＠A：？？？
+但若想消除这份遗憾，[r]则远比想象的更为艰难。
+[k]
+
+[charaFace A 1]
+
+＠A：？？？
+总之，就是这么个有意思而滑稽的教训故事！
+[k]
+
+[branchQuestClear ep1_5_user 2000118]
+[branchQuestNotClear ep1_5nc_user 2000118]
+
+[label ep1_5_user]
+
+[charaFace A 0]
+＠A：？？？
+综上所述，好怀念啊，御主！
+[k]
+
+[charaFace A 2]
+＠A：？？？
+我就是五十岁异次元大叔，[r]大家的詹姆斯·莫里亚蒂哟！
+[k]
+
+[charaFace A 3]
+
+＠莫里亚蒂
+哎，让我稍微严肃一点？[r]真拿你没办法呢。
+[k]
+
+[charaFace A 0]
+
+＠莫里亚蒂
+[line 3]我的名字是詹姆斯·莫里亚蒂。[r]是犯罪界的拿破仑，[#老蜘蛛:Old Spider]。
+[k]
+
+[branch user_join]
+
+[label ep1_5nc_user]
+
+[charaFace A 0]
+
+＠A：？？？
+哎哟，失礼了。[r]居然对初次见面的御主唠唠叨叨地说个不停。
+[k]
+
+[charaFace A 1]
+
+＠A：？？？
+现在的你甚至连我是谁都不知道吧。[r]呵呵呵……
+[k]
+
+[charaFace A 0]
+
+＠A：？？？
+[line 3]我的名字是詹姆斯·莫里亚蒂。[r]是犯罪界的拿破仑，[#老蜘蛛:Old Spider]。
+[k]
+
+[branch user_join]
+
+[label user_join]
+
+
+＠莫里亚蒂
+同时，也是你的从者。
+[k]
+
+＠莫里亚蒂
+好了，请容我邀请你参加这趟愉快的旅程吧！[r]没关系啦，只会有一点生命危险而已！
+[k]
+
+＠莫里亚蒂
+尽管放下心来放轻松，[r]试着旋转这遗憾的世界吧！
+[k]
+
+[charaFace A 1]
+
+＠莫里亚蒂
+哇～哈哈哈哈！
+[k]
+
+[messageOff]
+
+[wt 1.0]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_48 1.0]
+[wait fade]
+
+[scene 10000]
+
+[charaSet A 1098163000 1 莫里亚蒂]
+
+[cameraHome 0.1]
+[effectStop bit_talk_spotlight]
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 1.0]
+
+[effect bit_talk_07]
+[se ad12]
+[wt 4.0]
+
+[fadeout white 1.0]
+[wait fade]
+[scene 10001]
+
+[wt 1.0]
+
+[fadein white 0.1]
+[wait fade]
+
+[skip false]
+
+[scene 10000 1.5]
+[wt 1.5]
+
+
+[input selectBranch]
+[messageOff]
+[skip false]
+[bgmStop BGM_EVENT_48 0.4]
+[charaFadeout A 0.1]
+[charaSet A 1098163000 1 莫里亚蒂]
+[scene 10000]
+[effectStop bit_talk_spotlight]
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+
+
+
+[wt 1.0]
+[movie talk_mov008]
+[wt 1.5]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[scene 70900]
+[skip true]
+
+[wt 0.5]
+[wipein openEye 1.0 1]
+[wt 0.5]
+[wipeout openEye 0.5 1]
+[wt 1.0]
+[wipein openEye 1.0 1]
+[wait wipe]
+
+[wt 1.5]
+
+？1：久违的强制灵子转移……！？
+？！
+
+[wt 0.5]
+[cameraMove 1.0 75,0 1.2]
+[wt 1.5]
+
+[cameraMove 2.0 -75,0 1.2]
+[wt 2.5]
+
+[cameraHome 1.0]
+[wt 1.5]
+
+？1：这里究竟是……？
+？！
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[charaPut H 1]
+[charaEffect H bit_talk_41]
+
+[se adm22]
+＠莫里亚蒂
+[f x-large]早上好！！
+[k]
+
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_41]
+
+？1：吵死了！！
+？！
+
+[bgm BGM_TEITO 0.1]
+
+[charaFace A 1]
+
+＠莫里亚蒂
+哎哟，失礼了，你好！
+[k]
+
+[charaFace A 0]
+
+＠莫里亚蒂
+[%1]，[r]我很高兴看到你那么精神。
+[k]
+
+＠莫里亚蒂
+咦，你一脸奇怪『这里是哪儿？』的表情呢。
+[k]
+
+＠莫里亚蒂
+嗯，直截了当地说。[r]我们在灵子转移中迷路了！
+[k]
+
+＠莫里亚蒂
+无法通讯，没有支援。[r]换言之，
+[k]
+
+[charaFace A 2]
+
+＠莫里亚蒂
+就是『武器只能现场获取，潜入任务正式开始』[r]的那个啦！
+[k]
+
+？1：那个啊……
+
+？！
+
+[charaFace A 1]
+
+＠莫里亚蒂
+啊啊。严格到令人觉得[#秘密情报部:MI6]的谍报人员[r]一定也是这样的吧。放任不管也该有点底线。
+[k]
+
+[charaFace A 0]
+＠莫里亚蒂
+但请放心吧，御主。[r]我[#了解这个世界与这个时代]。
+[k]
+
+＠莫里亚蒂
+甚至可以说，[r]你可以认为[#我就是为此被召唤的]。
+[k]
+
+？1：换言之，这都是教授你的错？
+
+[charaFace A 4]
+
+＠莫里亚蒂
+……呃……直截了当地说……[r]或许确实如此……
+[k]
+
+？2：换言之，这都是爷爷你的错？
+
+[charaFace A 2]
+
+＠莫里亚蒂
+我，才只有，五十来岁！[r]绝对不是什么，爷爷！
+[k]
+
+？！
+
+[charaFace A 0]
+
+＠莫里亚蒂
+……好了，那简单说明一下。
+[k]
+
+＠莫里亚蒂
+我们现在所在的地方，[r]是欧洲某城镇中的某座宅邸。
+[k]
+
+＠莫里亚蒂
+时间是19世纪后半，由于没有报纸，[r]所以无法确定具体的日期与年代。
+[k]
+
+＠莫里亚蒂
+根据设定，我们是被雇来这座宅邸的佣人，[r]算是……调酒师吧。
+[k]
+
+＠莫里亚蒂
+刚才那些应该能理解吧？
+[k]
+
+？1：原来如此，这套衣服……
+？！
+
+[charaFace A 2]
+
+＠莫里亚蒂
+非常合适哦！
+[k]
+
+[charaFace A 1]
+
+＠莫里亚蒂
+好了……那接下来……呵呵呵，[r]才是问题所在！
+[k]
+
+[charaFace A 0]
+
+＠莫里亚蒂
+总之，与其论述不如看证据。
+[k]
+
+＠莫里亚蒂
+让我们离开这个酒吧，[r]去屋子里逛一圈吧。
+[k]
+
+＠莫里亚蒂
+对了，基本上不能叫，[r]也不能向他人搭话。
+[k]
+
+[charaFace A 6]
+
+＠莫里亚蒂
+……现在还不行哦。
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1]
+[bgmStop BGM_TEITO 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+
+[se ad311]
+[wt 0.1]
+[se ad95]
+
+[scene 70800]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1]
+[seStop ad311 1.0]
+[seStop ad95 1.0]
+[wait wipe]
+
+[wt 1.5]
+
+？1：好豪华的宅邸……！
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+＠莫里亚蒂
+嗯，这座宅邸的主人是当地的名流。[r]也可以说是这座城镇的真正掌权者。
+[k]
+
+＠莫里亚蒂
+哎呀，毕竟能建造如此豪华的宅邸嘛。[r]一定干了不少邪恶的勾当吧！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+喂喂，Mr.莫里亚蒂。
+[k]
+
+＠？？？
+尽管我不知道祖先是什么样的，[r]但至少我不记得自己干过什么坏事哦。
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[se ad311]
+[charaDepth B 10]
+[charaTalk off]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 1.0]
+[seStop ad311]
+[charaFace B 0]
+[charaFadein B 0.7 1]
+[wt 0.7]
+[charaFadeout C 0.5]
+[wt 0.5]
+
+[charaTalk on]
+
+？1：（这个人就是……？）
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+＠莫里亚蒂
+哈哈哈哈哈，抱歉。[r]只是个玩笑话啦，玩笑话。
+[k]
+
+？2：（齐格！？）
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠莫里亚蒂
+（和身在迦勒底的他并非同一个人。[r]　对话的时候请装作不认识。）
+[k]
+
+？！
+
+[charaFace A 0]
+
+＠莫里亚蒂
+[%1]，[r]这位就是我们的雇主，齐格。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 0.1]
+
+＠齐格
+请多关照，[%1]。
+[k]
+
+[charaFace B 0]
+
+＠齐格
+尽管你才刚入职，但不好意思的是，[r]近期应该会非常忙碌。
+[k]
+
+＠齐格
+希望你也能彬彬有礼地对待客人。
+[k]
+
+[charaFace B 6]
+
+＠齐格
+可千万不能[#嬉皮笑脸地向人搭话]。
+[k]
+
+＠齐格
+只要能记住这一点，[r]你大可以随心所欲地工作。
+[k]
+
+[charaFace B 0]
+
+＠齐格
+啊，还有，Mr.莫里亚蒂。[r]刚才和你提及的那件事，就拜托了哦。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[se ad311]
+[charaMove B -30,0 0.4]
+[charaFadeout B 0.4]
+[wt 0.4]
+[seStop ad311 1.0]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠莫里亚蒂
+……综上所述，那就是我们的雇主。
+[k]
+
+？1：为什么是齐格……？
+
+＠莫里亚蒂
+嗯，等我一会儿带你去见过客人们之后，[r]你就会明白了。
+[k]
+
+？2：客人……？
+
+＠莫里亚蒂
+嗯，我现在就带你去见他们。
+[k]
+
+？！
+
+[charaFace A 6]
+
+＠莫里亚蒂
+不过我重申一遍[line 3][r]可别惊讶哦？
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_70 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+
+[scene 71000]
+[wt 1.0]
+
+[wipeFilter cinema 0.5 0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[charaTalk off]
+
+[se ade210]
+[seVolume ade210 0 0.5]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein F 0.4 256,-50]
+[charaFadein G 0.4 -256,-50]
+[wt 0.4]
+[seStop ade210 0.3]
+[wt 0.7]
+
+[se ad60]
+[charaTalk on]
+[charaDepth D 10]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.7 0,-50]
+[wt 0.7]
+[seStop ad60]
+
+[bgm BGM_EVENT_90 0.1]
+
+＠迪尔姆德
+哦。
+[k]
+
+[charaFace D 5]
+
+＠迪尔姆德
+没想到只会喝些廉价酒的无能小混混[r]居然能混进这座宅邸啊。
+[k]
+
+＠迪尔姆德
+何等可悲。[r]令人不禁质疑齐格阁下的品格。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaSet D 6033000 1 以藏]
+[charaSet E 1098162900 1 手下C]
+[charaSet F 1098162900 1 手下C_2]
+[charaSet G 1098162900 1 手下C_3]
+
+[charaTalk off]
+
+[se ade210]
+[seVolume ade210 0 0.5]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein F 0.4 256,-50]
+[charaFadein G 0.4 -256,-50]
+[wt 0.4]
+[seStop ade210 0.3]
+[wt 0.7]
+
+[se ad452]
+[charaTalk on]
+[charaDepth D 10]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.7 0,-50]
+[wt 0.7]
+[seStop ad452]
+
+＠以藏
+[line 3]哈。[r]只涨年龄不长脑子的老不死的居然敢说这种话。
+[k]
+
+[charaFace D 13]
+＠以藏
+连船都坐不了的废物才不配来这座宅邸吧。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaSet D 6026001 1 燕青]
+[charaSet E 1098162800 1 手下B]
+[charaSet F 1098162800 1 手下B_2]
+[charaSet G 1098162800 1 手下B_3]
+
+[charaTalk off]
+
+[se ade210]
+[seVolume ade210 0 0.5]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein F 0.4 256,-50]
+[charaFadein G 0.4 -256,-50]
+[wt 0.4]
+[seStop ade210 0.3]
+[wt 0.7]
+
+[se ad60]
+[charaTalk on]
+[charaDepth D 10]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.7 0,-50]
+[wt 0.7]
+[seStop ad60]
+
+＠燕青
+算啦，算啦。[r]不要那么激动嘛。
+[k]
+
+[charaFace D 0]
+
+＠燕青
+无论是我，还是你们，[r]都是被齐格先生叫来的。
+[k]
+
+[charaFace D 6]
+
+＠燕青
+换言之，既然我们都在这里，就谈不上什么品格或废物之分了！[r]这说明我们在场的所有人，都有[#那个]资格！
+[k]
+
+[charaFace D 0]
+
+＠燕青
+……然后呢，三个组织都没做好准备。[r]都还没有到达吧？
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaSet E 1035001 1 迪尔姆德]
+[charaSet F 6033000 1 以藏]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-50]
+
+＠迪尔姆德
+……哼。[r]区区一只迟来的鬣狗。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 0,-50]
+
+＠燕青
+噢噢，鬣狗可是很棒的哦。[r]会集聚在腐肉边，是最后的胜利者哟。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 0,-50]
+
+＠以藏
+……[r]……嘁。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠迪尔姆德
+[line 3]算了。[r]距拍卖会还有一点时间。
+[k]
+
+＠迪尔姆德
+燕青、以藏。[r]在那之前，你们还是好好考虑自己的前途吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 0,-50]
+
+＠燕青
+嗯，嗯。[r]谢啦！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 0,-50]
+
+＠以藏
+这话应该由我来说。
+[k]
+
+[charaFace F 0]
+
+＠以藏
+……不，不对。[r]你根本不用考虑什么前途。
+[k]
+
+[charaFace F 2]
+
+＠以藏
+因为老不死的将注定成为鱼饵！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaSet D 1098162700 1 手下A]
+[charaSet F 1098162700 1 手下A_2]
+[charaSet G 1098162700 1 手下A_3]
+
+[charaDepth E 10]
+[charaTalk E]
+[charaFace E 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein E 0.1 0,-50]
+[charaFadein F 0.1 256,-50]
+[charaFadein G 0.1 -256,-50]
+[wt 1.0]
+[se ad60]
+[charaFadeout E 0.7]
+[wt 1.0]
+[seStop ad60 0.5]
+[wt 0.7]
+[se ade210]
+[seVolume ade210 0 0.5]
+[charaFadeout F 0.7]
+[charaFadeout G 0.7]
+[wt 0.5]
+[seStop ade210 0.5]
+[wt 1.0]
+
+[charaSet D 6026001 1 燕青]
+[charaSet E 1098162800 1 手下B]
+[charaSet F 1098162800 1 手下B_2]
+[charaSet G 1098162800 1 手下B_3]
+
+[charaDepth D 10]
+[charaTalk D]
+[charaFace D 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein D 0.1 0,-50]
+[charaFadein F 0.1 256,-50]
+[charaFadein G 0.1 -256,-50]
+[wt 1.0]
+[se ad60]
+[charaMove D 30,-50 0.7]
+[charaFadeout D 0.7]
+[wt 1.0]
+[seStop ad60 0.5]
+[wt 0.7]
+[se ade210]
+[seVolume ade210 0 0.5]
+[charaFadeout F 0.7]
+[charaMove F 286,-50 0.7]
+[charaFadeout G 0.7]
+[charaMove G -226,-50 0.7]
+[wt 0.5]
+[seStop ade210 0.5]
+[wt 1.0]
+
+[charaSet D 6033000 1 以藏]
+[charaSet E 1098162900 1 手下C]
+[charaSet F 1098162900 1 手下C_2]
+[charaSet G 1098162900 1 手下C_3]
+
+[charaDepth D 10]
+[charaTalk D]
+[charaFace D 9]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein D 0.1 0,-50]
+[charaFadein F 0.1 256,-50]
+[charaFadein G 0.1 -256,-50]
+[wt 1.0]
+[se ad452]
+[charaMove D -30,-50 0.7]
+[charaFadeout D 0.7]
+[wt 1.0]
+[seStop ad452 0.5]
+[wt 0.7]
+[se ade210]
+[seVolume ade210 0 0.5]
+[charaFadeout F 0.7]
+[charaMove F 226,-50 0.7]
+[charaFadeout G 0.7]
+[charaMove G -286,-50 0.7]
+[wt 0.5]
+[seStop ade210 0.5]
+[wt 1.0]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_90 1.5]
+[wait fade]
+
+[wipeOff]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1]
+
+[wt 0.5]
+
+？1：迪尔姆德、燕青和以藏啊……
+
+＠莫里亚蒂
+嗯，放心吧。[r]尽管他们是他们，却也不是他们。
+[k]
+
+？2：难不成这是……
+
+[charaFace A 1]
+
+＠莫里亚蒂
+反应速度真快呢。[r]恐怕正如你所想的。
+[k]
+
+[charaFace A 0]
+
+？！
+
+＠莫里亚蒂
+……没错，你还记得以前发生过的骚动吗？[wt 0.7][charaFace A 3][r]呃……我记得是叫虚月馆吧。
+[k]
+
+[charaFace A 0]
+
+
+
+＠莫里亚蒂
+由于人物数据的重现会压迫脑部，[r]所以被替换成你熟悉的人物了。
+[k]
+
+＠莫里亚蒂
+应该这么说吧？
+[k]
+
+[charaFace A 1]
+
+＠莫里亚蒂
+总之，你就当是那种现象就行了。[r]看来这次，连名字也维持了原样。
+[k]
+
+？1：莫里亚蒂的眼中看到的是什么景象？
+
+？！
+
+[charaFace A 0]
+
+＠莫里亚蒂
+啊，令人头疼的是，[r]在我看来他们也同样是从者。
+[k]
+
+＠莫里亚蒂
+只是因为一些缘故，[r]我比你更容易把握他们。
+[k]
+
+＠莫里亚蒂
+……简单来说，[r]那三个人是帮派的人。
+[k]
+
+＠莫里亚蒂
+迪尔姆德暂且不论，[r]另外两个确实给人这种感觉吧？
+[k]
+
+？1：这个嘛……确实有点……
+？！
+
+＠莫里亚蒂
+而迪尔姆德恐怕是因为容貌和属性相近，[r]才会被选中了吧。
+[k]
+
+＠莫里亚蒂
+因为那个帮派的人，[r]还由于其俊美的容貌，在镇里引发了话题呢。
+[k]
+
+？1：话说那三个人关系很糟吗？
+？！
+
+＠莫里亚蒂
+嗯，当然了。
+[k]
+
+[messageOff]
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_5 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[charaSet B 1035001 1 迪尔姆德]
+[charaSet C 6026001 1 燕青]
+
+[cameraFilter gray]
+[wt 0.5]
+
+[scene 10000]
+
+[charaTalk off]
+
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_49 0.1]
+
+[charaScale B 1.2]
+[charaFace B 0]
+[charaPut B -20,-50]
+[charaFadeTime B 0.7 0.6]
+[charaMove B 0,-50 1.0]
+
+＠莫里亚蒂
+迪尔姆德率领的那群人，[r]是从很久以前起就扎根于这块区域的历史悠久的帮派。
+[k]
+
+＠莫里亚蒂
+他们全面掌控着这座城镇的黑暗部分，[r]但同时，也受到了当地居民的敬仰。
+[k]
+
+[messageOff]
+[charaMove B 20,-50 0.7]
+[charaFadeout B 0.7]
+[wt 0.7]
+[charaScale B 1.0]
+
+[charaScale C 1.2]
+[charaFace C 0]
+[charaPut C -140,25]
+[charaFadeTime C 0.7 0.6]
+[charaMove C -170,0 1.0]
+
+＠莫里亚蒂
+而在大约二十年前，打破了这种和平的，[r]就是燕青他们。
+[k]
+
+＠莫里亚蒂
+自从燕青他们移居到这座城镇之后，[r]就开始积极地承接这座城镇里的脏活。
+[k]
+
+＠莫里亚蒂
+包括迄今为止连迪尔姆德都从未涉及的领域。
+[k]
+
+＠莫里亚蒂
+当然，这引发了抗争。[r]双方在城里乒乒乓乓地开枪，相互厮杀。
+[k]
+
+＠莫里亚蒂
+这种情况延续了十几年，最终在三年前达成了[r]『彼此该做的都已经做了，就这么一笔勾销吧』的协议。
+[k]
+
+[messageOff]
+[charaMove C -200,-20 0.7]
+[charaFadeout C 0.7]
+[wt 0.7]
+[charaScale C 1.0]
+
+[charaScale D 1.2]
+[charaFace D 0]
+[charaPut D 230,-75]
+[charaFadeTime D 0.7 0.6]
+[charaMove D 250,-50 1.0]
+
+＠莫里亚蒂
+而在这时出现的，[r]则是由港湾劳动者们组建而成的以藏的组织。
+[k]
+
+＠莫里亚蒂
+由于各种原因，三个组织相互对立，[r]陷入了胶着状态。
+[k]
+
+[messageOff]
+[charaMove D 270,-40 0.7]
+[charaFadeout D 0.7]
+[wt 0.7]
+[fadeout black 0.5]
+[wait fade]
+
+[charaScale D 1.0]
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[cameraFilter normal]
+
+[charaTalk on]
+[scene 71000]
+
+[fadein black 0.5]
+[wait fade]
+
+＠莫里亚蒂
+哎呀，你一脸不可思议的表情呢。[r]嗯，这也难怪。
+[k]
+
+？1：只要其中两个组织携手不就行了吗？
+
+[charaFace A 2]
+
+＠莫里亚蒂
+麻烦的是，这可做不到哟！
+[k]
+
+[charaFace A 0]
+＠莫里亚蒂
+因为呀，[r]在这里，三个组织的特征成了枷锁。
+[k]
+
+
+？2：最弱的组织难道不会被摧毁吗？
+
+[charaFace A 1]
+＠莫里亚蒂
+首先摧毁最弱的一方。[r]这是常理呢。
+[k]
+
+[charaFace A 0]
+＠莫里亚蒂
+但是，[r]在这里，三个组织的特征成了枷锁。
+[k]
+
+？！
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+
+[charaSet E 1098162700 1 手下A]
+[charaSet F 1098162700 1 手下A_2]
+[charaSet G 1098162700 1 手下A_3]
+[imageSet I cut063_cinema 1]
+[charaScale I 1.01]
+[charaDepth I 10]
+[charaFadein I 0.1 0,-200]
+
+
+[cameraFilter gray]
+
+[charaTalk off]
+
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+[charaFace E 0]
+[charaFadein E 0.1 -256,-50]
+
+[charaFace F 0]
+[charaFadein F 0.1 256,-50]
+
+
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+＠莫里亚蒂
+首先是迪尔姆德的组织，人数众多，[r]也融入了这座城镇。
+[k]
+
+＠莫里亚蒂
+但反过来说，他们的关系过于紧密。
+[k]
+
+＠莫里亚蒂
+迪尔姆德不得不维持自己[#侠义:迪尔姆德]的形象才行。
+[k]
+
+＠莫里亚蒂
+……不能随心所欲地行动，[r]是个成熟的组织。
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+
+[charaSet E 1098162800 1 手下B]
+[charaSet F 1098162800 1 手下B_2]
+[charaSet G 1098162800 1 手下B_3]
+
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+[charaFace E 0]
+[charaFadein E 0.1 -256,-50]
+
+[charaFace F 0]
+[charaFadein F 0.1 256,-50]
+
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[wt 0.5]
+
+＠莫里亚蒂
+另一方面，燕青率领的组织则是[r]之后才定居到这座城镇的新人。
+[k]
+
+＠莫里亚蒂
+这座城镇的人是不会对后来者的他们[r]放松警惕的……永远都不会。
+[k]
+
+＠莫里亚蒂
+但与之对应，他们则能够肆意妄为。
+[k]
+
+＠莫里亚蒂
+这座城镇不是他们的城镇，[r]所以根本不用客气。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+
+[charaSet E 1098162900 1 手下C]
+[charaSet F 1098162900 1 手下C_2]
+[charaSet G 1098162900 1 手下C_3]
+
+[charaDepth D 9]
+
+[charaFace D 9]
+[charaFadein D 0.1 0,-50]
+
+[charaFace E 0]
+[charaFadein E 0.1 -256,-50]
+
+[charaFace F 0]
+[charaFadein F 0.1 256,-50]
+
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[wt 0.5]
+＠莫里亚蒂
+而最后，就是以藏的组织。
+[k]
+
+＠莫里亚蒂
+他们的组织规模固然较小，[r]但却掌握着港口的权力。
+[k]
+
+＠莫里亚蒂
+只要这座城镇的产业还以港口为中心，[r]就很难对他们出手。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+
+[cameraFilter normal]
+[charaFadeout I 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+
+＠莫里亚蒂
+以上说的都明白了吗？
+[k]
+
+？1：算是明白了吧……
+
+[charaFace A 1]
+＠莫里亚蒂
+很好很好。[r]接下来的部分会更加复杂哦！
+[k]
+
+？2：越来越复杂了！
+
+[charaFace A 1]
+
+＠莫里亚蒂
+没事啦没事啦。[r]总之[line 3]
+[k]
+
+[charaFace A 0]
+
+＠莫里亚蒂
+迪尔姆德……大组织，[r]燕青……中组织，
+[k]
+
+＠莫里亚蒂
+以藏君……小组织，[r]只要能理解这些就行了。
+[k]
+
+[charaFace A 6]
+
+＠莫里亚蒂
+这样比较便于理解吧？
+[k]
+
+？！
+
+
+[charaFace A 0]
+
+＠莫里亚蒂
+那我们先中断一下这次讲课，[r]开始工作吧。
+[k]
+
+？1：工作？
+？！
+
+[bgmStop BGM_EVENT_49 0.1]
+[charaFace A 2]
+
+[charaPut H 1]
+[charaEffect H bit_talk_41]
+
+[se ade242]
+＠莫里亚蒂
+[f x-large]尽管话才说到一半！！
+[k]
+
+[se ad186]
+
+＠莫里亚蒂
+[f x-large]但双足飞龙出现啦！！
+[k]
+
+[messageOff]
+[charaPut H 1200,1200]
+[wt 1.0]
+
+[charaEffectStop H bit_talk_41]
+[bgm BGM_EVENT_7 0.1]
+
+？1：怎么突然说这种话？
+
+[charaFace A 6]
+
+＠莫里亚蒂
+全从者调查问卷，[r]一直很想说一次的台词排名第二位。
+[k]
+
+＠莫里亚蒂
+by 达·芬奇亲调查。
+[k]
+
+？2：莫里亚蒂？
+
+[charaFace A 4]
+
+＠莫里亚蒂
+能别用那种厌恶的目光看着我吗！
+[k]
+
+？！
+
+[charaFace A 0]
+
+＠莫里亚蒂
+哎呀，不可思议的是，[r]这个时代居然还徘徊着双足飞龙呢！
+[k]
+
+＠莫里亚蒂
+还时不时会潜入这座宅邸，[r]齐格把击退它们的任务交给了我哦！
+[k]
+
+？1：是不是太不可思议了！？
+？！
+
+[charaFace A 1]
+＠莫里亚蒂
+算了算啦，原因我大概心里有底，[bgmStop BGM_EVENT_7 0.7][wt 1.0][charaFace A 2][r]但[bgm BGM_EVENT_3 0.1]比起这个，还是先击退眼前的双足飞龙吧！
+[k]
+
+＠莫里亚蒂
+那御主，[r]拜托你支援啦！
+[k]
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.5]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

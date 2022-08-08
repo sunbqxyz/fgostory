@@ -1,0 +1,346 @@
+
+
+＄94-06-22-02-5-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001001 1 マシュ]
+[charaSet B 98003003 2 Dr.ロマン]
+[charaSet C 98002000 1 フォウ]
+[charaSet D 7013001 1 清姫]
+[charaSet E 7016001 1 タマモキャット]
+
+[charaSet F 1010000 1 エリザベート（ブレイブ）]
+[charaSet G 7007001 1 ヴラド三世]
+[charaSet H 5026000 1 エリザベート（ハロウィン）]
+
+[charaSet T 98115000 1 エフェクト用ダミー]
+
+[charaPut T 2000,2500]
+[charaEffect T bit_talk_10]
+
+[scene 134800]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+[bgm BGM_MAP_4 0.1]
+
+＠エリザベート（ブレイブ）
+ハァイ[&子イヌ:子ジカ]！[r]そしておじ様に術のエリザ！
+[k]
+
+＠エリザベート（ブレイブ）
+本当は次のハロウィンに参上する、[r]歌と勇気のセイバー、エリザベート・ブレイブよ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠ヴラド三世
+ふむ。
+[k]
+
+＠ヴラド三世
+二人揃っただけでも[r]ハウリングが起きそうなほどの騒々しさだな。
+[k]
+
+[charaFace G 0]
+＠ヴラド三世
+マスター、耳栓など必要か？[r]余は常に持っている。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth F 6]
+[charaDepth H 4]
+
+[charaFace F 2]
+[charaFace H 2]
+[charaFadeinFSR F 0.1 2]
+[charaFadeinFSL H 0.1 0]
+＠二人
+扱[messageShake 0.04 4 3 0.5]いがクルーエル！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠ヴラド三世
+ところでキャスターのエリザベートよ。[r]実はここに貴様はいなかったぞ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠エリザベート（ハロウィン）
+あれ？　そうだったかしら？
+[k]
+
+？1：（忘れている……！）
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠ヴラド三世
+そうだとも。[r]ここに居たのは[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[cueSe Battle ba6]
+[cueSe Battle bac117]
+[cueSeVolume bac117 0 0.8]
+[wipeout guruguru 1.5 1.0]
+[bgmStop BGM_MAP_4 1.5]
+[cueSeStop ba6 1.5]
+[cueSeStop bac117 1.2]
+[wait wipe]
+
+[charaFadeout G 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[wipein guruguru 0.5 1.0]
+[wait wipe]
+
+[fadeout black 0.5]
+[wait fade]
+
+[pictureFrame cut297_frame15 forceFullScreenSize]
+
+
+[bgm BGM_EVENT_94 0.1]
+
+[scene 134800]
+
+[fadein black 1]
+[wait fade]
+
+[pictureFrame]
+[pictureFrameTop cut297_frame15 forceFullScreenSize]
+[wt 0.3]
+
+[charaTalk E]
+[charaFadein E 0.1 0,-50]
+[charaFace E 0]
+＠タマモキャット
+ワオーーーーーーーーーーン！[r]あらぶるネコの波動！
+[k]
+
+＠タマモキャット
+オッス、我タマモキャット！
+[k]
+
+[charaFace E 1]
+＠タマモキャット
+ご主人（仮）、[r]もはや散歩に連れて行くしかないな！
+[k]
+
+[charaFadeout E 0.1]
+
+[charaPut T 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-175]
+＠Dr.ロマン
+あれ、なんか酷く疲弊した感じだけど。
+[k]
+
+？1：最後にこの廃テンションは辛い
+
+？2：大丈夫、平気
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 2000,2500]
+[charaEffectStop T bit_talk_10]
+
+[charaTalk D]
+[charaFadein D 0.1 0,-50]
+[charaFace D 4]
+＠清姫
+……まったく何の脈絡も伏線もなく、[r]極々当たり前のように登場しましたね。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk E]
+[charaFadein E 0.1 0,-50]
+[charaFace E 1]
+＠タマモキャット
+フ。あんまり褒めるな蛇娘。[r]その着物で爪をといでも構わない、と？
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk D]
+[charaFadein D 0.1 0,-50]
+[charaFace D 5]
+＠清姫
+褒めてません。[r]あと近寄らないで。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk E]
+[charaFadein E 0.1 0,-50]
+[charaFace E 5]
+＠タマモキャット
+むむう。褒めてもなければ帰れと言う。[r]つまり、どちらかが死ぬしかないというワケか？
+[k]
+
+？1：その前に話し合おう
+
+？2：もうちょっと待って
+
+？！
+
+[charaFace E 0]
+＠タマモキャット
+そう。必要なのは対話。理解する心。[r]さすがご主人（仮）はインテリなのだな。
+[k]
+
+＠タマモキャット
+では事情を話そう。[r]忙しいので手短にな。
+[k]
+
+＠タマモキャット
+アタシはハロウィン用のトラップを仕掛けたり[r][#カボチャゴースト:ジャック・オー・ランタン]を調理する門番だ。
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk A]
+[charaFadein A 0.1 0,-50]
+[charaFace A 6]
+＠マシュ
+あ、食べられるんですかアレ。
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk E]
+[charaFadein E 0.1 0,-50]
+[charaFace E 1]
+＠タマモキャット
+[#good:キャッツ]．
+[k]
+
+[charaFace E 5]
+＠タマモキャット
+だがカルデアじゃ二番目だ。鼻を摘まめば何とか！[r]所詮は低級霊、生臭いにも程がある！
+[k]
+
+[charaFace E 1]
+＠タマモキャット
+あははははは！
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk D]
+[charaFadein D 0.1 0,-50]
+[charaFace D 5]
+＠清姫
+相変わらずの廃々テンションですね。[r][#メル友:玉藻さん]の眷属とは思えませ[line 3]。
+[k]
+
+[charaFace D 4]
+＠清姫
+いや、あの子も何というか……。[r]奥底ではこんなノリだったのかも？
+[k]
+
+＠清姫
+シリアスな場面でやっちゃいけないことを[r]嬉々としてやってしまう系？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[bgmStop BGM_EVENT_94 0.4]
+[wt 0.3]
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk E]
+[charaFadein E 0.1 0,-50]
+[charaFace E 1]
+＠タマモキャット
+よーし盛り上がってきたーーー！[r]いくぞっ！　最終けっせんだっ！
+[k]
+
+[charaFace E 0]
+＠タマモキャット
+さあさご主人（仮）！[r]パンプキンゴーストパイの時間なり！
+[k]
+
+＠タマモキャット
+お腹いっぱい、はち切れんばかりに食べて[r]いただきたい！　コン、コンっとな！
+[k]
+
+[charaFace E 5]
+＠タマモキャット
+なお、毒は入っておりませんがアタシは知っている。
+[k]
+
+[charaFace E 1]
+＠タマモキャット
+このパンプキンゴーストパイの中に一つ、[r]現在のご主人が作ったものがあるワン！
+[k]
+
+？1：[#正真正銘:しょうしんしょうめい]の毒入りってコトだね！
+
+？2：ロシアンルーレットだね！
+
+？！
+
+[charaFadeout E 0.1]
+
+[charaTalk D]
+[charaFadein D 0.1 0,-50]
+[charaFace D 5]
+＠清姫
+なるほど。[r]それは、嫌な予感しか致しませんわね！
+[k]
+
+[messageOff]
+[charaFadeout D 0.5]
+
+[pictureFrameTop]
+[pictureFrame cut297_frame15 forceFullScreenSize]
+[wt 0.3]
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

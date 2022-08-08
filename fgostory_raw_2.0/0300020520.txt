@@ -1,0 +1,1146 @@
+
+
+＄03-00-02-05-2-0
+[soundStopAll]
+
+
+[charaSet A 98002000 1 芙芙]
+[charaSet B 98001000 1 玛修]
+[charaSet C 1098124510 1 达·芬奇]
+[charaSet D 1098153610 1 格尔达]
+[charaSet E 1098123210 1 戈尔德鲁夫]
+[charaSet G 5009000 1 特效用dummy]
+[charaSet H 5009000 1 特效用dummy]
+
+[scene 61604]
+
+[fadein black 1.5]
+[wt 0.5]
+[se ad117]
+[seVolume ad117 0.0 0.1]
+[seVolume ad117 2.0 1.0]
+[wait fade]
+
+[wt 3.0]
+
+[fadeout black 1.0]
+[seStop ad117 1.0]
+[wait fade]
+
+[scene 61701]
+
+[wt 0.5]
+
+[fadein black 1.0]
+[wt 0.5]
+[se ade24]
+[seVolume ade24 0.0 0.1]
+[seVolume ade24 1.0 1.0]
+[wait fade]
+
+[wt 2.0]
+[seStop ade24 0.5]
+[wt 0.3]
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠芙芙
+芙，芙，芙呜？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛修
+通讯果然还是连不上呢。
+[k]
+
+？1：明明刚才还连得上的……
+？2：没办法，今天先休息吧。
+
+？！
+
+[charaFace B 12]
+
+＠玛修
+……是。说得也对。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10]
+[se ad13]
+[wt 0.3]
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+[wt 0.3]
+
+＠达·芬奇
+啊！　连上了！！
+[k]
+
+[charaFace C 1]
+
+＠达·芬奇
+呀嗬，两位看得见我的脸吗！[r]不对，还有芙芙吧！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.2]
+[charaPut G 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[charaMoveReturn A 0,30 0.25]
+
+＠芙芙
+芙芙芙，芙呜！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠玛修
+达·芬奇亲！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+应该没办法长时间通话，所以我就长话短说了。[r]根据这边用魔术礼装式无人机收集到的情报，
+[k]
+
+＠达·芬奇
+和从戈尔德鲁夫那听来的情报，我说一下[r]通过综合两者得出的结论吧。顺带一提戈尔德鲁夫他已经睡着了。
+[k]
+
+[charaFace C 10]
+
+＠达·芬奇
+还说什么“真是太令人不爽了，我回船长室休息！[r][f small]  [f -]吃早餐的时候再来叫我起来！”。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.2]
+[charaPut G 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠芙芙
+芙芙……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 0.8]
+
+[charaPut G 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 1.0]
+[charaFace C 25]
+
+＠达·芬奇
+言归正传。在这北欧之地，[bgm BGM_EVENT_81 0.1][r]存在着大致可被分为三种类型的灵长。
+[k]
+
+＠达·芬奇
+这里所说的灵长并不是指具备高度智慧[r]或文明的保有者，而是指生命力与支配力。
+[k]
+
+[charaFace C 24]
+
+＠达·芬奇
+以此为前提[line 3]
+[k]
+
+＠达·芬奇
+第一种，乃是强韧捕食者的巨人种。[r]第二种，乃是离开了村落便无法生存的人类。
+[k]
+
+＠达·芬奇
+而第三种存在就是所谓的“御使与神”。[r]至少，他们似乎是人类的上位者。
+[k]
+
+[charaFace C 25]
+
+＠达·芬奇
+尽管冰兽也比人类强大，但他们终归是[r]隶属于巨人种的存在，似乎不具备自由意志，
+[k]
+
+＠达·芬奇
+因此姑且不将其划入三种之中。[r]没问题吧。
+[k]
+
+[charaFace C 24]
+
+＠达·芬奇
+通常的生物则十分稀有，几乎不存在。[r]在寥若晨星的花园中……
+[k]
+
+＠达·芬奇
+仅在冰与火交界的温暖地带，[r]勉强还有动植物生息着。
+[k]
+
+＠达·芬奇
+这些也不划入三种之中，当作例外处理……
+[k]
+
+[messageOff]
+[charaFace C 14]
+[wt 1.0]
+
+[charaFace C 24]
+
+＠达·芬奇
+遗憾的是，在北欧[#异闻带:Lostbelt]中，[r]人类绝对称不上是万物的灵长。
+[k]
+
+＠达·芬奇
+人类才是[#最底层的生物]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.2]
+[charaPut G 1200,1200]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠玛修
+最底层[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaTalk C]
+[charaFace C 25]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+我觉得在这里不宜将人类当作战力来考虑。[r]恐怕文明和魔术都不怎么发达吧。
+[k]
+
+＠达·芬奇
+你们压根没见到过机械装置吧？[r]独自一人离开村落的女孩子别说通讯设备了，
+[k]
+
+[charaFace C 24]
+
+＠达·芬奇
+连趋避巨人的护符都没有。[r]人类并没有在村落外生存下去的力量。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.2]
+[charaPut G 1200,1200]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠玛修
+………………确实是很有说服力的结论。
+[k]
+
+[charaFace B 12]
+
+＠玛修
+至少在这个村落……第23村落中，[r]村落外的世界简直等同于不存在。
+[k]
+
+＠玛修
+尽管格尔达小姐破例地离开了村落，[r]但那是多重原因造成的，正常来说是不会发生的。
+[k]
+
+＠玛修
+唯一会打开大门的情况是……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+没错。只是为了“间苗”。
+[k]
+
+？1：………………
+
+？！
+
+＠达·芬奇
+乍一看平静无奇，[r]其实这里的严苛程度甚至不亚于俄罗斯。
+[k]
+
+[charaFace C 14]
+
+＠达·芬奇
+尽管还不知道身为上位者的“神与御使”是何等存在，
+[k]
+
+＠达·芬奇
+也不清楚他们对我们是否持友好态度。
+[k]
+
+[charaFace C 25]
+
+＠达·芬奇
+但他们或许已经与[#隐匿者:Crypter]建立了关系，[r]希望你们行动时要把这种可能性放在心上。
+[k]
+
+[messageOff]
+[se ad539]
+[wt 0.2]
+[charaFace C 22]
+[charaPut H 1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.4]
+[seStop ad539]
+
+[wt 0.5]
+
+[charaFace C 21]
+
+＠达·芬奇
+不好，通讯变得不安定了[line 3][r]我再快速补充一条情报。
+[k]
+
+[charaFace C 25]
+
+＠达·芬奇
+还没发现适合进行召唤的土地。[r]虽然遗憾，但只能靠你们继续侦察了……
+[k]
+
+[messageOff]
+[se ad539]
+[wt 0.7]
+[charaPut C 1200,1200]
+[charaPut H 1200,1200]
+[wt 0.5]
+[messageOff]
+[charaFadeout C 0.1]
+
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠芙芙
+芙芙呜呜呜……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 1.5]
+
+[se ad93]
+[wt 0.7]
+[se ad456]
+[seVolume ad456 0.0 0.2]
+[wt 0.3]
+[seVolume ad456 0.8 1.0]
+[wt 0.8]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+[seStop ad456 0.1]
+
+[bgm BGM_EVENT_92 0.1]
+
+＠格尔达
+话说玛修大人！　芙芙！[r]还有[%1]大人！
+[k]
+
+[charaFace D 8]
+
+＠格尔达
+……咦？　刚才你们是不是在和某个小小的人说话？
+[k]
+
+[charaFace D 4]
+
+＠格尔达
+啊。又是那个胖墩大叔吧！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace D 1]
+[charaFadein D 0.1 0]
+[charaFace B 12]
+[charaFadein B 0.1 2]
+
+＠玛修
+呃，之前是在说话，[r]不过，连接就在刚才断线了……
+[k]
+
+＠格尔达
+什么什么？　连接什么？
+[k]
+
+[charaFace D 5]
+
+＠格尔达
+呵呵。玛修大人你们知道、拥有着[r]很多我不知道的事呢，真有趣呀。
+[k]
+
+＠格尔达
+既温柔，又强大，好棒呀。[r]我还想与你们待得更久一些。
+[k]
+
+[charaFace D 2]
+
+＠格尔达
+不只今晚，明天也能住在这里吗？[r]虽说明天是特别的日子，有工作要做[line 3]
+[k]
+
+＠格尔达
+尽管我没有自信能合御使的口味，[r]但你们都称赞了面包和鱼很好吃！
+[k]
+
+＠玛修
+……不，都说了我们并不是御……
+[k]
+
+[charaFace D 4]
+
+＠格尔达
+呵呵。我是不会被骗到的。[wt 0.5][charaFace D 0][r]啊，难道你们原本预定明天才来，
+[k]
+
+＠格尔达
+结果因为我的问题提早一天过来了？[charaFace D 2][r]如……如果是这样的话，那太对不起了。
+[k]
+
+＠玛修
+不，不是这样……[r]前……前辈。该从何纠正才好啊……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+？1：她坚信我们是御使。
+？2：就算向她说明，她也不会明白吧。
+
+？！
+
+[charaFace B 13]
+
+＠玛修
+说得……也是呢。[r]那就暂时放弃尝试说服她吧。
+[k]
+
+[messageOff]
+[charaFace B 8]
+[wt 1.0]
+[charaFace B 0]
+
+＠玛修
+[line 3]不过，我有件事想要询问格尔达小姐。[r]可以吗，前辈？
+[k]
+
+？1：嗯。
+？2：我也有很多事想打听啦。
+
+？！
+
+＠玛修
+非常感谢。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace D 1]
+[charaFadein D 0.1 0]
+[charaFace B 0]
+[charaFadein B 0.1 2]
+
+＠玛修
+……格尔达小姐。能稍微打扰一下吗？
+[k]
+
+＠格尔达
+什么事？
+[k]
+
+[charaFace B 12]
+
+＠玛修
+那个……[r]呃，就是……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_92 1.0]
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10]
+[se ad13]
+[wt 0.3]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠戈尔德鲁夫
+[line 3]等等。接下来由我来问。
+[k]
+
+？1：所长？　你起床了？
+？2：通讯又连上了……
+
+？！
+
+＠戈尔德鲁夫
+因为当我在找有没有安眠药的时候，[r]听说通讯恢复了。
+[k]
+
+＠戈尔德鲁夫
+嗯。[r]虽然只有声音，但是在30秒前连上的。
+[k]
+
+＠戈尔德鲁夫
+玛修·基列莱特，换我来。[r]怎么想都是我的交涉能力更优秀一些。
+[k]
+
+＠戈尔德鲁夫
+啊～，那边的孩子。[bgm BGM_EVENT_70 0.1][r]这只是私人问题，所以回答的时候放轻松点。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.2]
+[charaPut G 1200,1200]
+
+[charaPut G 2]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 0]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+
+＠格尔达
+[FFFFFF]？[-]
+[k]
+
+＠戈尔德鲁夫
+我有事想问你。
+[k]
+
+[charaFace D 0]
+
+＠格尔达
+什么事？
+[k]
+
+[charaFace E 10]
+
+＠戈尔德鲁夫
+你对这个[#异闻带:Lostbelt]……[r]不。是对这个村落，还有周围的一切……
+[k]
+
+＠戈尔德鲁夫
+究竟是怀着什么样的感觉而活着？
+[k]
+
+[charaFace D 8]
+
+＠格尔达
+[FFFFFF]？？？[-]
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.2]
+[charaPut G 1200,1200]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠玛修
+……[r]……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 2]
+[charaTalk E]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace E 10]
+[charaFadein E 0.1 2]
+
+＠戈尔德鲁夫
+不觉得……难受吗。[r]有没思考过将来，思考过变成大人时的事？
+[k]
+
+＠戈尔德鲁夫
+难道不希望自己可以不用畏惧巨人种，[r]能去小村落以外的……广阔世界看看吗？
+[k]
+
+＠戈尔德鲁夫
+难道没有想过……得到自由吗？
+[k]
+
+＠格尔达
+将来……自由……
+[k]
+
+[charaFace D 8]
+
+＠格尔达
+世界……？
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.2]
+[charaPut G 1200,1200]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠玛修
+格尔达小姐。
+[k]
+
+＠玛修
+无论多么健康，都会在二十多岁结束人生，[r]在这样的世界里，为何你能如此[line 3]
+[k]
+
+[charaFace B 4]
+
+＠玛修
+如此无忧无虑，开朗明快……
+[k]
+
+＠玛修
+………………………………
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠格尔达
+哎，哎，哎，玛修大人，请抬起头来好吗？[r]胖墩大叔也别摆出这么困惑的表情好吗？
+[k]
+
+＠格尔达
+那个，呃。抱歉。[r]我不是很懂[line 3]
+[k]
+
+＠格尔达
+我没能彻底理解，[r]两位究竟在说些什么。
+[k]
+
+[charaFace D 7]
+
+＠格尔达
+可能是因为我不太擅长读书写字吧……[r]所谓的将来究竟是什么意思……
+[k]
+
+[charaFace D 0]
+
+＠格尔达
+不对，字面意思我懂。[r]就是指比明天更往后的日子吧？
+[k]
+
+[charaFace D 2]
+
+＠格尔达
+唔唔……[r]好难啊……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut G 0]
+[charaTalk B]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+[charaFace B 12]
+[charaFadein B 0.1 2]
+
+＠玛修
+……[r]……
+[k]
+
+[charaFace E 10]
+
+＠戈尔德鲁夫
+…………很……难懂吗。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+[wt 0.2]
+[charaPut G 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠格尔达
+所谓的自由也是，那个，字面意思我懂。[r]就是不被关在家里，不被绳子束缚的意思，
+[k]
+
+＠格尔达
+我没说错……吧？
+[k]
+
+[messageOff]
+[charaFace D 6]
+[wt 1.0]
+[charaFace D 5]
+[wt 0.3]
+
+＠格尔达
+如果这样的话，那我是自由的哦。[r]村落的任何地方我都能去！
+[k]
+
+[charaFace D 1]
+
+＠格尔达
+我能去村落的农田，能去池塘。[r]还能去拜访任何人的家！
+[k]
+
+＠格尔达
+我能去劳拉的家里玩，[r]也可以去看新生小宝宝的脸蛋。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace D 1]
+[charaFadein D 0.1 0]
+[charaFace B 13]
+[charaFadein B 0.1 2]
+[wt 1.0]
+[charaFace B 0]
+
+＠玛修
+我……
+[k]
+
+＠玛修
+我们所在的世界。[r]人类，能活得更久。
+[k]
+
+[charaFace D 8]
+
+＠格尔达
+能活过25岁？
+[k]
+
+＠玛修
+对。还能更长。更加，更加长……[r]虽然不是全部人都能达到……
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠戈尔德鲁夫
+没错。[r]有些人能一直活到八九十岁。
+[k]
+
+＠戈尔德鲁夫
+不只是子女，那个，还能疼爱自己的孙子或曾孙哦。[r]当然前提是要足够健康啦。
+[k]
+
+＠戈尔德鲁夫
+由于病痛或事故等原因死亡的情况姑且不论，[r]但不是所有人都会在15或25岁就死哦。
+[k]
+
+＠戈尔德鲁夫
+天生短命的人也就只有人造人之类了吧。[r]这不是我需要担心的事。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.2]
+[charaPut G 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠格尔达
+孙子……曾孙……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠戈尔德鲁夫
+嗯。就算没有孙子或曾孙。[r]也有与爱人一同度过漫长一生的人。
+[k]
+
+＠戈尔德鲁夫
+为实现理想……[r]也有不组建家庭，而是与朋友或伙伴一同度过人生的。
+[k]
+
+[messageOff]
+[charaFace E 4]
+[wt 1.0]
+[charaFace E 5]
+
+＠戈尔德鲁夫
+哎，为什么我非得说这种话不可啊！[r]魔术师居然在讲述身为人类的幸福！
+[k]
+
+＠戈尔德鲁夫
+但如果谁都不说，也只能由我来说了！
+[k]
+
+＠戈尔德鲁夫
+究竟是怎么了！？[r]你们究竟是怎么了！
+[k]
+
+＠戈尔德鲁夫
+被决定了寿命，竟然还能笑着接受！[r]不仅没有愤怒，甚至连一丝恐惧都没有吗！
+[k]
+
+＠戈尔德鲁夫
+就连被强迫过上严苛生活的雅嘎们，[r]都还有“苟延残喘”的自由啊！
+[k]
+
+[charaFace E 6]
+
+＠戈尔德鲁夫
+哼，不爽，我很不爽！[r]而且通讯的状况也不好！　我要去睡了！　再见！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 1.0]
+[charaFadeout E 0.1]
+[wt 0.2]
+[charaPut G 1200,1200]
+[wt 0.5]
+
+？1：戈尔德鲁夫新所长……
+？2：（无言以对）。
+
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠芙芙
+芙……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[wt 0.5]
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠玛修
+……正如胖墩先生所言，格尔达小姐。
+[k]
+
+＠玛修
+我们的世界极为复杂，[r]但相反，却有无限的选择权。
+[k]
+
+＠玛修
+想必是在相互肯定、相互否定的基础上，[r]不断发扬壮大的吧。
+[k]
+
+[charaFace B 17]
+
+＠玛修
+……人类就是这样的存在。[r]就算在这北欧也没什么不一样才对。
+[k]
+
+[charaFace B 0]
+
+＠玛修
+人类能够做任何事。[r]所谓的自由，一定就是这个意思吧。
+[k]
+
+＠玛修
+或许实际做不到的事、无法做的事才占大多数，[r]人生不如意事常八九。但是，但是，
+[k]
+
+[charaFace B 8]
+
+＠玛修
+大家，没错[line 3][r]一定心怀愿望。
+[k]
+
+？1：玛修……
+
+[messageOff]
+[charaFace B 13]
+[wt 0.7]
+
+？2：（无言）。
+
+[messageOff]
+
+？！
+
+[charaFace B 4]
+
+＠玛修
+格尔达小姐……
+[k]
+
+＠玛修
+你……[r]在这个世界里……有什么愿望吗……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠格尔达
+我的愿望吗？
+[k]
+
+[messageOff]
+[charaFace D 8]
+[wt 1.0]
+[charaFace D 2]
+
+＠格尔达
+呃，那个，那个。[r]那个啊……唔唔，唔[line 3]
+[k]
+
+[charaFace D 6]
+
+＠格尔达
+成功采到了药草，[r]今天的晚饭也很美味……
+[k]
+
+[charaFace D 0]
+
+＠格尔达
+咦？　这么说来，[r]现在的我没什么愿望呢。
+[k]
+
+＠格尔达
+平……平时都是有的哦？　是真的哦？
+[k]
+
+＠格尔达
+希望能抓到一条大鱼，[r]希望把面包烤得美味一些……诸如此类有很多……
+[k]
+
+[charaFace D 1]
+
+＠格尔达
+啊，我还想再看一次美丽的彩虹……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠芙芙
+芙呜呜……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠格尔达
+对不起，对不起啊。[r]我并不懂你们说的事，
+[k]
+
+[charaFace D 7]
+
+＠格尔达
+我想我没法准确地回答，[r]但是……
+[k]
+
+[charaFace D 5]
+
+＠格尔达
+好棒呀。能变成老人家，[r]还能做任何事什么的。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+[wt 0.8]
+[charaFace B 4]
+
+＠玛修
+……[r]……
+[k]
+
+[charaFace B 8]
+
+＠玛修
+……………………不。
+[k]
+
+[charaFace B 12]
+
+＠玛修
+该道歉的是我才对。[r]没想到会让你陷入混乱。
+[k]
+
+＠玛修
+…………对不起，格尔达小姐。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠格尔达
+没有的事！[r]我是真的真的觉得很棒！
+[k]
+
+[charaFace D 2]
+
+＠格尔达
+尽管很难理解……[r]甚至觉得是在异想天开。
+[k]
+
+＠格尔达
+令人惊讶，脑海中甚至连模糊的印象都想象不出来，[r]这种事还是第一次发生。
+[k]
+
+＠格尔达
+听说御使的话很难懂，没想到是真的呢。[r]我连小孩的事都不是很懂，
+[k]
+
+[charaFace D 0]
+
+＠格尔达
+孙子，然后那个……曾孙？
+[k]
+
+＠格尔达
+竟然能看到几代后的孩子的脸……[r]如果能变成老人家的话，就能做到这种事吧。
+[k]
+
+[charaFace D 7]
+
+＠格尔达
+我还未想象过这种事呢。[r]因为[line 3]
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_11 2.0]
+[wait fade]
+[scene 10000]
+[wt 1.5]
+
+＠
+『因为，』
+[k]
+
+＠
+『谁都活不了那么久嘛。』
+[k]
+
+
+[messageOff]
+[wt 3.0]
+[soundStopAll]
+[end]

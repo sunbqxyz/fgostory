@@ -1,0 +1,56 @@
+＄01-00-02-04-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 20700 0]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98003003 1 罗曼医生]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 1005001 1 尼禄]
+[charaSet E 98016000 1 罗马士兵]
+[charaSet F 98006300 1 来路不明人形]
+[communicationCharaLoop 98003003 0 5 0 0]
+[charaFace A 13]
+[charaFadein A 0 2]
+[fadein black 1]
+[wait fade]
+＠玛修
+那我们回首都罗马吧。[r]还好战斗比预想的要少。
+[k]
+
+[communicationCharaFace 5]
+＠罗曼医生
+哎？　不，等等。[r]好像还有魔力反应……！
+[k]
+
+[bgmStop BGM_EVENT_2 0.4]
+[bgm BGM_EVENT_3 0.1]
+[communicationCharaFace 2]
+＠罗曼医生
+是被建立召唤阵之前[r]从灵脉泄漏出去的魔力吸引而来的吗！？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFadeout A 0.1]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠？？？
+……噢……噢……噢……！！
+[k]
+
+[charaFadeout F 0]
+[charaTalk A]
+[charaFadein F 0.1 0]
+[charaFace A 2]
+[charaFadein A 0.1 2]
+＠玛修
+……前辈，是非实体系的对手。[r]请下战斗指示！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

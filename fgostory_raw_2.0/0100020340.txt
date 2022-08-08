@@ -1,0 +1,41 @@
+＄01-00-02-03-4-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[scene 20402 0]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98003003 1 罗曼医生]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 1005001 1 尼禄]
+[charaSet E 98016000 1 罗马士兵]
+[charaFace A 0]
+[charaFadein A 0 1]
+[fadein black 1]
+[wait fade]
+＠玛修
+……天色开始暗下来了啊。
+[k]
+
+[se ad13]
+[wait se ad13]
+[charaFadeout A 0]
+[charaTalk B]
+[charaFadein A 0.1 2]
+[communicationChara 98003003 0 5 0 4]
+＠罗曼医生
+但敌人好像还是干劲十足呢。[r]不愧是肉搏战的时代，大家的体力都非同寻常。
+[k]
+
+[communicationCharaFace 0]
+＠罗曼医生
+不过，眼下正是需要坚持的时候，[r]千万不要松懈啊，[%1]！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[communicationCharaClear]
+[wait communicationChara]
+[wait fade]
+[soundStopAll]
+[end]

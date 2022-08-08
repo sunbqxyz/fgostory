@@ -1,0 +1,625 @@
+
+
+
+
+＄91-30-35-01-4-1
+
+[soundStopAll]
+
+[charaSet A 3035001 1 忠贞]
+[charaSet B 5011001 1 巴贝奇]
+
+[charaSet C 1098187100 1 埃尔梅罗Ⅱ世]
+[charaSet D 4032000 1 莱妮丝]
+[charaSet E 11005001 1 黑森·罗伯]
+[charaSet F 1098165000 1 黑森·罗伯（假罗伯）]
+[charaSet G 98111500 1 通讯用杂音]
+[equipSet H 9807080 1 情人节礼装]
+
+[charaPut G 1200,1200]
+[charaEffect G bit_talk_10_LowLevel]
+
+
+[scene 37300]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠黑森·罗伯
+[f large][line 3][messageShake 0.05 5 5 0.3]！
+[k]
+
+[messageOff]
+
+[se ad58]
+[se ad54]
+
+[fowardEffect bit_talk_41]
+[charaMove E 0,5 0.3]
+[charaMoveScale E 1.2 0.3]
+[wt 0.2]
+
+[fowardEffectStop bit_talk_41]
+[wt 0.3]
+[charaFadeout E 0.1]
+[seStop ad58]
+[seStop ad54]
+[wt 0.5]
+
+[charaMoveScale E 1.0 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.5]
+
+[fowardEffect bit_talk_kengekiall02]
+[wt 0.2]
+[se bac7]
+[charaShake F 0.05 3 3 0.4]
+[wt 0.3]
+[se bac6]
+[charaShake F 0.05 3 3 0.4]
+[wt 0.2]
+[se bac5]
+[wt 0.5]
+
+[effect bit_talk_fangtrap_blue]
+[wt 0.1]
+[se ad191]
+[flashin once 0.1 0.3 FF0000AF FFFFFF00]
+[charaShake F 0.05 3 3 0.4]
+[wt 0.6]
+
+[fowardEffect bit_talk_kengekiall04]
+[wt 0.2]
+[se bac142]
+[charaShake F 0.05 3 3 0.4]
+[wt 0.2]
+[se bac142]
+[charaShake F 0.05 3 3 0.4]
+[wt 0.2]
+[se bac143]
+[charaShake F 0.05 3 3 0.4]
+[fowardEffectStop bit_talk_kengekiall04]
+[wt 0.2]
+
+[fowardEffect bit_talk_claw]
+[wt 0.1]
+[se bac137]
+[charaShake F 0.05 3 3 0.4]
+[wt 1.0]
+[seStop bac137]
+
+[bgmStop BGM_EVENT_3 0.5]
+
+[charaSpecialEffect F erasure 1 1.7]
+[se ad42]
+[wait charaSpecialEffect F]
+[wt 1.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠忠贞
+（紧紧咬住脖子一次次猛砸，[r]　彻底斩草除根……）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠莱妮丝
+（看来是对自己的冒牌货相当不爽呢……）
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠黑森·罗伯
+……[r]……
+[k]
+
+[messageOff]
+
+[charaFace E 1]
+[wt 1.2]
+
+[se ade168]
+[charaFadeout E 0.4]
+[wt 1.0]
+[seStop ade168 1.3]
+[wt 1.5]
+
+[charaPut G 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠埃尔梅罗Ⅱ世
+罗伯离开了模拟装置。[r]看来它是心满意足了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠巴贝奇
+唔。
+[k]
+
+＠巴贝奇
+这下总算可以复原大熊猫了。
+[k]
+
+[charaFace B 0]
+＠巴贝奇
+那我开始修复数据……[r]……唔？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠忠贞
+怎么了？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠巴贝奇
+……[r]……
+[k]
+
+＠巴贝奇
+忠贞。[r]实在有些难以启齿……
+[k]
+
+[bgmStop BGM_EVENT_2 1.0]
+＠巴贝奇
+没有大熊猫的重现用数据。[r]看来这个故障发生的时间比其他的要久远得多。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠忠贞
+怎……
+[k]
+
+[se ad119]
+
+＠忠贞
+[f large]怎么会啊[line 3]！！
+[k]
+
+[messageOff]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaPut G 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠埃尔梅罗Ⅱ世
+……姑且搜索了一下大熊猫的数据……
+[k]
+
+＠埃尔梅罗Ⅱ世
+说实话，在下觉得希望很渺茫。[r]毕竟这和迦勒底的目的毫无关系。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠忠贞
+嗯……
+[k]
+
+[charaFace A 6]
+＠忠贞
+各位，给大家添麻烦了。[r]非常感谢……
+[k]
+
+[messageOff]
+
+[se ad60]
+[charaFadeout A 0.4]
+[wt 0.5]
+[seStop ad60 1.0]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠巴贝奇
+这结局真让人不是滋味。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠莱妮丝
+……喂，我的弟子。[r]去关照一下忠贞。
+[k]
+
+＠莱妮丝
+她这样也太可怜了！
+[k]
+
+？1：当然了！
+？！
+
+[messageOff]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_11 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[scene 10400]
+
+[wipeFilter cinema 0.5 0]
+
+[wt 1.5]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_25 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+＠忠贞
+唉……
+[k]
+
+＠忠贞
+惹出了那么大的乱子，[r]给御主和大家添了麻烦……
+[k]
+
+＠忠贞
+结果还什么都没得到……[r]今天难道是什么大凶日吗。
+[k]
+
+[messageOff]
+
+[se ade169]
+[seVolume ade169 0 0.2]
+[wt 0.8]
+
+？1：良小姐，在吗？
+？！
+
+[charaFace A 0]
+＠忠贞
+……御主？[r]在，我这就开门。
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_25 0.5 0.5]
+[wait fade]
+
+[se ad8]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[wipeOff]
+
+[wt 1.5]
+[fadein black 1.0]
+[bgm BGM_EVENT_25 0.5 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠忠贞
+今天给您添麻烦[line 3]
+[k]
+
+？1：唔……给，是礼物！
+？！
+
+[charaFace A 0]
+＠忠贞
+礼物？
+[k]
+
+[branchNotHaveSvtEquip lblNotHave 9807080]
+
+[branch lblConf]
+
+[label lblConf]
+
+[messageOff]
+[charaFadeout A 0.4]
+
+[se bas2]
+[charaFace H 0]
+[charaFadein H 0.5 0,-70]
+[wt 2.0]
+
+[charaFadeout H 0.4]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠忠贞
+……这……这是我以前做过的……！[r]难道是御主亲自做的！？
+[k]
+
+[messageOff]
+[wt 0.5]
+[cameraMove 0.2 0,8 1.0]
+[wait camera]
+[cameraHome 0.3]
+[wait camera]
+[wt 0.7]
+
+？1：尽管完全比不上真正的熊猫。
+？2：但哪怕有那么一点气氛也好……
+
+？！
+
+[charaFace A 1]
+＠忠贞
+我好高兴……太感谢了！
+[k]
+
+[branch lblNotHave_out]
+
+[label lblNotHave]
+
+
+[charaFace A 0]
+＠忠贞
+这究竟是……？
+[k]
+
+＠忠贞
+呃，是熊猫形状的……点心吗？[r]原来如此，是手工做的……
+[k]
+
+[charaFace A 2]
+[charaShake A 0.05 4 4 0.3]
+＠忠贞
+[f large]手工做的！？
+[k]
+
+？1：师傅也说味道相当不错。
+？！
+
+[charaFace A 0]
+＠忠贞
+师傅……啊啊，是司马懿……也就是莱妮丝阁下啊！[r]原来如此。
+[k]
+
+[charaFace A 1]
+＠忠贞
+能通过那位严格的审查，[r]确实说明肯定很好吃。
+[k]
+
+＠忠贞
+我真是太高兴了，[r]非常感谢！
+[k]
+
+
+[label lblNotHave_out]
+
+[charaFace A 0]
+＠忠贞
+……[r]……
+[k]
+
+[charaFace A 1]
+＠忠贞
+御主，如果您不介意的话，我去泡茶，[r]我们一起来品尝这个点心吧？
+[k]
+
+＠忠贞
+有一件重要的事，我忘记说了。
+[k]
+
+＠忠贞
+我之所以想重现大熊猫，[r]是为了让御主看到那可爱的样子。
+[k]
+
+＠忠贞
+连同我的回忆。
+[k]
+
+？1：说给我听听吧。
+？！
+
+＠忠贞
+好！
+[k]
+
+[messageOff]
+
+[fadeout black 1.5]
+[bgm BGM_EVENT_25 1.5 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[wt 1.5]
+[fadein black 1.5]
+[bgm BGM_EVENT_25 1.5 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠忠贞
+与其说重逢后的大熊猫头脑聪明，[r]倒不如说它的思考方式变得非常奇怪……
+[k]
+
+[charaFace A 6]
+＠忠贞
+它似乎觉得『自己和皇帝一样了不起』，[r]陛下也觉得它的样子非常可笑，甚至赐予了它冠冕……
+[k]
+
+？1：熊猫皇帝……！
+？！
+
+[messageOff]
+
+[charaFace A 1]
+[wt 1.0]
+
+[charaFace A 5]
+[charaMoveReturn A 0,-15 0.5]
+[wt 1.8]
+
+[charaFace A 1]
+[wt 1.5]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_25 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[charaSet B 2009102 1 俄里翁]
+[charaSet C 2009201 1 阿耳忒弥斯]
+
+[charaDepth B 2]
+[charaDepth C 1]
+
+[scene 10311]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+[wt 0.4]
+＠阿耳忒弥斯
+就这样，[%1]和忠贞亲[r]温馨地聊了很久，可喜可贺。
+[k]
+
+＠阿耳忒弥斯
+咦，问我为什么会突然出现？[r]呵呵呵呵呵。
+[k]
+
+[charaFace C 0]
+＠阿耳忒弥斯
+因为啊，亲爱的企图把自己涂成黑白色，[r]从而扮装成熊猫哦[line 3]
+[k]
+
+[charaFace C 2]
+＠阿耳忒弥斯
+[line 3]于是我呀，打算干脆[r]把亲爱的变成非黑非白的灰色哦。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0]
+
+[charaFace C 2]
+[charaFadein C 0.1 2]
+＠俄里翁
+对[messageShake 0.05 5 5 0.3][line 2]不[line 2]起[line 2]啦[line 2]！
+[k]
+
+＠阿耳忒弥斯
+不行，决不能饶恕。
+[k]
+
+＠俄里翁
+别用这种严肃台词回答[r]真的很可怕求放过好不好啦！
+[k]
+
+[charaMove C 0,0 0.5]
+
+[charaFace B 2]
+＠俄里翁
+可恶啊，同为熊，[r]为什么只有你受欢迎啦，大熊猫！
+[k]
+
+[messageOff]
+
+[se ad345]
+[charaMove B -150,0 1.5]
+[charaMove C 100,0 1.5]
+[wt 1.0]
+[seStop ad345 0.5]
+[wt 1.0]
+
+[charaFace B 4]
+＠俄里翁
+能换一下吗……能换一下吗……！
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[se ad345]
+[charaMove B 840,0 9.0]
+[charaMove C 1000,0 9.0]
+[wt 2.0]
+
+[fadeout black 2.0]
+[wt 0.5]
+[seStop ad345 0.5]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[soundStopAll]
+[end]
+

@@ -1,0 +1,582 @@
+
+
+
+＄94-06-43-09-1-0
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5050000 1 サンタマルタ]
+[charaSet B 4019001 1 マルタ]
+[charaSet C 99502600 1 マシュ]
+[charaSet D 25002000 1 葛飾北斎]
+[charaSet E 4045001 1 カイニス]
+[charaSet F 1009300 1 モードレッド]
+[charaSet G 1009001 1 エフェクト用]
+
+[sceneSet J 10000 1]
+[charaScale J 1.01]
+[sceneSet K 10000 1]
+[charaScale K 1.01]
+[imageSet T back10000 1 1]
+[charaScale T 1.02]
+
+[charaDepth T 2]
+[charaDepth D 3]
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+
+
+[scene 140800]
+
+[branch lblConf1]
+
+[label lblNotClear1]
+
+[scene 140700]
+
+[label lblConf1]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.5]
+
+[overlayFadein J 0.1 0,-800]
+[overlayFadein K 0.1 0,800]
+[charaMove J 0,-745 0.5]
+[charaMove K 0,745 0.5]
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_25 0.1]
+
+＠サンタマルタ
+……。[r]……。
+[k]
+
+＠サンタマルタ
+……パーティーが終わると……
+[k]
+
+＠サンタマルタ
+ちょっと、寂しいわ。[r]いつもそう。
+[k]
+
+＠サンタマルタ
+さっきまで賑やかだったテーブルに、[r]今はもう誰もいない。
+[k]
+
+＠サンタマルタ
+さっきまで聞こえていた声が、[r]今はもう聞こえない。
+[k]
+
+＠サンタマルタ
+こういう感じ、昔から苦手だった。
+[k]
+
+
+＠サンタマルタ
+でも……。
+[k]
+
+[charaFace A 6]
+
+＠サンタマルタ
+でも、パーティーは好き。[r]みんなで食卓を囲むのが大好き。
+[k]
+
+＠サンタマルタ
+お客様を迎えるのも、[r]そのためにお料理を準備するのも大好きなの。
+[k]
+
+[charaFace A 1]
+＠サンタマルタ
+だから[line 3][r]今回は、心の底から楽しかった！
+[k]
+
+＠サンタマルタ
+本当よ？
+[k]
+
+[messageOff]
+[charaMove J 0,-800 0.5]
+[charaMove K 0,800 0.5]
+[wt 0.5]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[wt 0.5]
+
+？1：マルタさん[line 3]
+？！
+
+[charaFace A 0]
+
+＠サンタマルタ
+そろそろ私は聖女マルタに戻ります。[r]クリスマスはもうおしまい。
+[k]
+
+[messageOff]
+[charaFace A 7]
+[wt 1.0]
+[charaFace A 0]
+＠サンタマルタ
+聖女かぁ。
+[k]
+
+＠サンタマルタ
+あのね、結局あんまり実感持てていないの。
+[k]
+
+＠サンタマルタ
+信仰の心までは失われていないはずだけど、[r]きちんとした実感は薄いまま。
+[k]
+
+＠サンタマルタ
+きっと、元の霊基に戻った時にこそ[r]取り戻されるものなんでしょうね。
+[k]
+
+[charaFace A 6]
+
+＠サンタマルタ
+あの日の……[r]歓待の日のことも……
+[k]
+
+
+＠サンタマルタ
+やっぱり、この私にとっては明日の出来事。[r]この霊基はどこまでいっても……
+[k]
+
+＠サンタマルタ
+少女期の……
+[k]
+
+[charaFace A 0]
+
+＠サンタマルタ
+信仰を得る前の、[r]聖女になる前の自分なのね。
+[k]
+
+＠サンタマルタ
+聖女として、[#クリスマス:あの人の生まれた日]のことを[r]どんな風に想うのかは……
+[k]
+
+[charaFace A 1]
+
+
+＠サンタマルタ
+元の霊基に戻った時、[r]しっかり実感することにするわ。
+[k]
+
+＠サンタマルタ
+それじゃあ、またね！[r]マスター！
+[k]
+
+＠サンタマルタ
+体に気を付けて、好き嫌いなくいっぱい食べて！[r]元気に旅を続けなさい！
+[k]
+
+＠サンタマルタ
+マルタお姉さんとの約束！
+[k]
+
+＠サンタマルタ
+いいわね？
+[k]
+
+[messageOff]
+[wt 0.2]
+
+？1：（強く頷く）
+？！
+
+[cameraMove 0.4 0,20 1.0]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.0]
+[wt 1.2]
+
+[charaFace A 1]
+[wt 0.7]
+[charaFaceFade A 6 0.3]
+[se ad39]
+
+[fadeout white 1.0]
+[bgmStop BGM_EVENT_25 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaEffect B bit_talk_sword_light]
+[seStop ad39 0.8]
+[wt 0.5]
+
+[se co9]
+[seVolume co9 0 0.8]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+[fadein white 1.0]
+[seStop co9 1.0]
+[wait fade]
+
+[wt 1.5]
+
+＠マルタ
+……。[r]……。
+[k]
+
+＠マルタ
+…………マスター。
+[k]
+
+？1：おかえり、マルタさん
+？！
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth B 4]
+[charaDepth A 2]
+[charaFaceFade B 1 0.3]
+[wt 0.7]
+
+
+＠マルタ
+ええ。
+[k]
+
+＠マルタ
+…………ただいま。
+[k]
+
+＠マルタ
+えっと、その[line 3]
+[k]
+
+[messageOff]
+[wt 1.5]
+
+[charaFace A 6]
+[charaFadein A 0.1 178,-50]
+[charaMove A 198,0 0.7]
+[wt 1.0]
+
+？1：マルタさん！？
+？2：うしろ！
+
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_27 0.1 0.7]
+
+＠マルタ
+え？
+[k]
+
+[charaFace A 3]
+＠サンタマルタ
+…………え、えへへ。
+[k]
+
+[messageOff]
+
+[se adm59]
+[seStop adm59 0.4]
+[charaMove A 262,10 0.2]
+[wt 0.2]
+[charaMove A 326,0 0.2]
+[wt 0.5]
+[charaFace B 4]
+
+＠マルタ
+え、私？[r]少女期の私……よね、この子。そうよね？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[se ad13]
+[charaPut G 0,0]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.2]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+先輩！[r]サンタマルタさんの霊基が、自動登録されて[line 3]
+[k]
+
+[charaFace C 13]
+＠マシュ
+あっ。そちらにいらっしゃるんですね。[r]よかった。
+[k]
+
+[charaPut G 12000,12000]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaEffectStop G bit_talk_10_LowLevel]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠マルタ
+別霊基として登録されたってこと？[r]へ。マジで？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠サンタマルタ
+えへへ。[r]ええっと……。
+[k]
+
+[charaFace A 3]
+＠サンタマルタ
+じゃあ、その、改めて……？
+[k]
+
+[charaFace A 0]
+＠サンタマルタ
+私はマルタ。[r]サンタクロースのマルタよ。
+[k]
+
+[charaFace A 1]
+＠サンタマルタ
+元の霊基の私ともども、[r]これからも仲良くしてね！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠マルタ
+[f large][messageShake 0.03 5 5 0.3]！？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadeinFSSideL D 0.4 -306,0]
+[charaMoveFSSideL D -256,0 0.5]
+[wt 1.0]
+[charaFadeTime T 0.1 0.6]
+
+
+＠葛飾北斎
+（おや。あー、あんたもそーなったか～）
+[k]
+
+[charaFace D 1]
+＠葛飾北斎
+（ま、せいぜい頑張りな！）
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_27 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout T 0.1]
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+[scene 104200]
+
+[branch lblConf2]
+
+[label lblNotClear2]
+
+[scene 105500]
+
+[label lblConf2]
+
+[wt 1.5]
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+
+[charaTalk depthOff]
+[charaDepth F 7]
+[charaDepth E 6]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFace F 0]
+[charaFadeinFSL E 0.4 0]
+[charaFadeinFSR F 0.4 2]
+[wt 0.4]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠カイニス
+……ところでよ。
+[k]
+
+＠モードレッド
+あ？
+[k]
+
+＠カイニス
+マルタのこと、どう思う？
+[k]
+
+＠カイニス
+聖女マルタそのものになる前で、[r]今回の感じとも違う……
+[k]
+
+＠カイニス
+腕っ節がガチ強い時期のマルタってのも、[r]いるはずだよなァ？
+[k]
+
+[charaFace F 5]
+＠モードレッド
+確かに。[r]ありゃ絶対昔相当のタマだったはずだ。
+[k]
+
+＠モードレッド
+間違いねーな。
+[k]
+
+[charaFace E 1]
+
+
+＠カイニス
+だろ？[r]そこらへんの霊基が来たら、よォ。
+[k]
+
+＠カイニス
+どうなるんだ？
+[k]
+
+[charaFace F 4]
+＠モードレッド
+どう……なるんだ……？
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠マルタ
+何の話してるの？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[charaShake E 0.03 3 3 0.4]
+
+
+＠カイニス
+うお！[r]なんでもねえよ、いきなり出てくんなバカ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠サンタマルタ
+なになに？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[charaShake F 0.03 3 3 0.4]
+＠モードレッド
+うお！　心臓に悪ィ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 5]
+[charaFace F 5]
+[charaFadeinFSL E 0.1 0]
+[charaFadeinFSR F 0.1 2]
+＠カイニス
+くそっ、マルタがなんで増えてんだよ[line 3][r]逃げるぞモードレッド！
+[k]
+
+＠モードレッド
+……チッ！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.6]
+[se ade97]
+[wt 0.1]
+[charaFadeout F 0.4]
+[charaFadeout E 0.4]
+[charaMoveFSL E -656,0 0.4]
+[charaMoveFSR F -144,0 0.4]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠マルタ
+……ええっと。[r]なんて言うのかしら、私たち。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_XMAS_2016 0.1]
+
+＠サンタマルタ
+仲良くやっていけそう、よね？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk off]
+[charaFace B 0]
+[charaFadeinFSL B 0.1 0]
+[charaFace A 0]
+[charaFadeinFSR A 0.1 2]
+[wt 1.0]
+[charaFaceFade B 1 0.5]
+[wt 1.5]
+[charaFaceFade A 1 0.5]
+[wt 2.0]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_XMAS_2016 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,187 @@
+
+
+＄94-06-22-04-1-1
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001001 1 マシュ]
+[charaSet B 5012001 1 ニトクリス]
+[charaSet C 2003001 1 ロビンフッド]
+[charaSet D 1010001 1 エリザベート]
+[charaSet E 98003003 1 Dr.ロマン]
+[charaSet F 7022001 1 茨木童子]
+[charaSet G 98002000 1 フォウ]
+
+
+[scene 106600]
+
+[se ad14]
+[seVolume ad14 0 0]
+[se ade189]
+[seVolume ade189 0 0]
+[wt 0.1]
+
+[seVolume ade189 1.0 0.5]
+[seVolume ad14 1.0 0.8]
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+[seStop ad14 1.0]
+[seStop ade189 1.0]
+[wt 1.0]
+
+[bgm BGM_MAP_4 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠エリザベート（ブレイブ）
+……。[r]……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠ロビンフッド
+……。[r]……。
+[k]
+
+？1：リスポーンしてたね……
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠エリザベート（ブレイブ）
+そうね……。[r]めっちゃ湧き出てたわ……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠ロビンフッド
+カボチャ頭が１００体くらい出てきた時は、[r]シミュレーターなのに死を覚悟したぜ……。
+[k]
+
+[charaFace C 0]
+＠ロビンフッド
+……まあ、その後に……コイツが[r]アンコールで歌ったせいで……。
+[k]
+
+？1：やっぱり覚悟したよね……
+？！
+
+＠ロビンフッド
+した。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠エリザベート（ブレイブ）
+アンタたちお礼！[r]まずはお礼を言うのが人としての道筋！！
+[k]
+
+？1：ありがとう、エリザベート
+？！
+
+[charaFace D 3]
+＠エリザベート（ブレイブ）
+……っ。
+[k]
+
+＠エリザベート（ブレイブ）
+い、いいわね。うん、それいいわ。
+[k]
+
+[charaFace D 6]
+＠エリザベート（ブレイブ）
+爽やかな感謝の声を聞くと、[r]胸がキュンとなるのね……勉強になるわ……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ロビンフッド
+しかしまあ、[r]サーヴァントがいなくて良かったよ。
+[k]
+
+[charaFace C 4]
+＠ロビンフッド
+……あん時はひっでえ状況だったからな……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠エリザベート（ブレイブ）
+ふっ。
+[k]
+
+＠エリザベート（ブレイブ）
+ブレイブな[#私:アタシ]だけど、[r]恐怖の記憶だけは染みついているわね。
+[k]
+
+？1：どういうこと？
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth D 4]
+[charaDepth C 6]
+
+[charaFace D 7]
+[charaFace C 4]
+[charaFadeinFSR D 0.1 2]
+[charaFadeinFSL C 0.1 0]
+＠二人
+[line 3]実は。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[cueSe Battle ba6]
+[wipeout guruguru 1.5 1.0]
+[bgmStop BGM_MAP_4 1.5]
+[cueSeStop ba6 1.5]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+
+[scene 10000]
+[wt 0.5]
+
+[wipein guruguru 0.2 1.0]
+[wait wipe]
+
+[fadeout black 0.2]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

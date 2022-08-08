@@ -1,0 +1,406 @@
+
+
+
+
+＄94-04-01-14-1-0
+
+[soundStopAll]
+
+[charaSet A 98100400 1 玛修]
+[charaSet B 1040000 1 葛饰北斋]
+[charaSet C 1098176810 1 刑部姬]
+[charaSet D 1098177300 1 卡米拉]
+[charaSet E 1098177400 1 Λ]
+[charaSet F 1098180700 1 ？？？]
+[charaFilter F silhouette 00000080]
+[charaSet G 98112300 1 路边摊的店员]
+[charaSet H 98109000 1 恶棍1]
+[charaSet I 98002000 1 芙芙]
+
+[charaSet J 98115000 1 特效用]
+
+
+[charaDepth F 1]
+[charaDepth J 9]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 28300]
+
+[shake 0.05 1 2 0]
+
+[se ade208]
+[seVolume ade208 0 0]
+[se ade343]
+[seVolume ade343 0 0]
+
+[charaPut J 1]
+[charaEffect J bit_talk_41]
+[wt 0.1]
+
+[seVolume ade208 1.5 0.8]
+[seVolume ade343 1.5 0.8]
+[fadein black 1.5]
+[wait fade]
+[wt 2.2]
+
+[seStop ade208 1.0]
+[seStop ade343 1.0]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.7 1]
+[wt 1.2]
+
+[bgm BGM_EVENT_48 0.1]
+
+＠？？？
+……能看见了。
+[k]
+
+＠？？？
+……那就是传说中的拉斯维加斯吧。
+[k]
+
+＠？？？
+…………
+[k]
+
+＠？？？
+……留给我的时间不多了。
+[k]
+
+＠？？？
+…………
+[k]
+
+＠？？？
+……千万要坚持到那一刻啊……我的身体！
+[k]
+
+[messageOff]
+[se ade208]
+[seVolume ade208 0 0]
+[se ade343]
+[seVolume ade343 0 0]
+[seVolume ade208 0.4 1.0]
+[seVolume ade343 0.4 1.0]
+[wt 1.9]
+
+[wipeout circleIn 1.5 1.0]
+[seStop ade208 1.5]
+[seStop ade343 1.5]
+[bgmStop BGM_EVENT_48 1.5]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[shakeStop]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_41]
+[cameraHome 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[wipein circleIn 0.1 1.0]
+[wait wipe]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[bgmStop BGM_EVENT_48 0.4]
+
+[charaSet A 98100400 1 玛修]
+[charaSet B 1040000 1 葛饰北斋]
+[charaSet C 1098176810 1 刑部姬]
+[charaSet D 1098177300 1 卡米拉]
+[charaSet E 1098177400 1 Λ]
+[charaSet F 1098180700 1 ？？？]
+[charaSet G 98112300 1 路边摊的店员]
+[charaSet H 98109000 1 恶棍1]
+[charaSet I 98002000 1 芙芙]
+[charaSet J 98115000 1 特效用]
+
+[scene 10000]
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+
+[skip false]
+
+[wt 1.5]
+
+[revivalBranch lblNormal lblRevival]
+
+[label lblNormal]
+[fowardEffect bit_queststart80254]
+[wait fowardEffect]
+[branch lblConf]
+
+[label lblRevival]
+[fowardEffect bit_queststart80291]
+[wait fowardEffect]
+
+[label lblConf]
+
+[fadeout black 1.0]
+[wait fade]
+
+
+[charaSet F 98109000 1 恶棍2]
+[charaSet J 98109000 1 恶棍3]
+
+[charaDepth F 1]
+[charaDepth J 1]
+[charaDepth H 9]
+
+
+
+[scene 81900]
+[wt 1.0]
+
+[skip true]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_111 0.1]
+
+＠葛饰北斋
+咦？　明明只是随便逛了逛，[r]居然就误入了一个陌生的赌场。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+看来这是一座和风赌场呢。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠葛饰北斋
+确实有种熟悉的感觉。[r]不过怎么好像弥漫着和其他赌场不同的氛围？
+[k]
+
+＠葛饰北斋
+感觉本质上就和其他赌场不太一样，[r]或者说有种莫名的搞笑感……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠芙芙
+芙芙。
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_111 1.0 0.2]
+[wait wipe]
+
+[charaFadeout I 0.1]
+[wt 1.0]
+
+[bgm BGM_EVENT_111 1.0 1.0]
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠路边摊的店员
+嘿，欢迎光临，欢迎光临！[r]切糖果、抽签、捞金鱼！
+[k]
+
+＠路边摊的店员
+炸黄油也很推荐哦！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠刑部姬
+切糖果啊，捞金鱼啊，[r]都是些维加斯不该有的店……
+[k]
+
+＠刑部姬
+炸黄油倒是可能起源于美国。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠卡米拉
+炸黄油？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠玛修
+我记得以前看过一篇报道，[r]说这是一种将冷冻黄油裹上加了蜂蜜和肉桂的面糊，
+[k]
+
+＠玛修
+然后放入油锅炸制，[r]出锅后淋上甜酱的食物……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Λ
+黄油裹上面糊炸？[r]难道这里的人类都没有控制卡路里的概念吗？
+[k]
+
+[charaFace E 1]
+＠Λ
+不过我本来就是电脑世界的智慧生命体。[r]卡路里并不会改变我的[#外貌:形态]，倒是无所谓。[wt 0.6]（咀嚼咀嚼。）[charaMoveReturn E 0,10 0.3][wt 0.3][charaMoveReturn E 0,10 0.3][wt 0.3]
+[k]
+
+？1：卑鄙。
+？2：太　卑鄙了。
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_111 1.0]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+[se ad60]
+[wt 0.6]
+
+[charaTalk off]
+[charaFace H 0]
+[charaFace F 0]
+[charaFace J 0]
+[charaFadein H 0.4 1]
+[charaFadein F 0.4 -300,0]
+[charaFadein J 0.4 300,0]
+[seStop ad60 0.4]
+[wt 0.8]
+
+[charaTalk on]
+[charaTalk H]
+＠H：恶棍
+哟哟，小姑娘，你们看起来挺面生呀。[r]你们知道这里是哪儿吗？
+[k]
+
+＠H：恶棍
+这里连泳装狮子王都无法管辖，[r]是不法之徒聚集的『赌场 DE 乐市乐座』！
+[k]
+
+＠H：恶棍
+既然来了这里，[r]就得遵守我们的规矩！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout F 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠卡米拉
+哎……这赌场对女性的态度还真是过分呀。[r]看来你们已经做好思想准备了吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Λ
+先不管游戏的内容如何，[r]至少这里店员的素质差到极致了。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠刑部姬
+唔，尽管确实是和风的，但整体品味糟透了，[r]充满了安土桃山时代的气息……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFace F 0]
+[charaFace J 0]
+[charaFadein H 0.1 1]
+[charaFadein F 0.1 -300,0]
+[charaFadein J 0.1 300,0]
+
+＠H：恶棍
+什么，你这家伙竟敢出言不逊！[r]喂，干掉他们！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout F 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠葛饰北斋
+哎！　一言不合就发飙！[r]好吧，放马过来吧！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

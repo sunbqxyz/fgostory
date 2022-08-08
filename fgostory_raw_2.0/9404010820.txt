@@ -1,0 +1,1058 @@
+
+＄94-04-01-08-2-0
+
+[soundStopAll]
+
+
+
+[charaSet A 98100400 1 玛修]
+[charaSet B 1040000 1 葛饰北斋]
+[charaSet C 1098177300 1 卡米拉]
+[charaSet D 5030001 1 山鲁佐德]
+[charaSet E 1098178800 1 员工]
+[charaSet F 1098176810 1 刑部姬]
+[charaSet G 6035002 1 虞美人]
+[charaSet H 6024000 1 斯卡哈]
+[charaSet I 1098178800 1 员工]
+[charaSet J 98115000 1 特效用]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 81400]
+
+
+[bgm BGM_EVENT_80 0.1]
+
+[se ad754]
+[seVolume ad754 0 0]
+[seVolume ad754 1.0 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[wt 0.4]
+[charaFace D 2]
+[charaEffect D bit_talk_13]
+[se bac148]
+[charaShake D 0.05 2 2 0.8]
+[wt 1.0]
+[charaFace D 4]
+[charaMove D 0,-20 0.5]
+[wt 0.1]
+[charaFadeout D 0.4]
+[wt 0.2]
+[se ad144]
+[wt 1.0]
+
+
+[seVolume ad754 0.6 0.4]
+
+[se ad448]
+
+[charaPut J 1]
+[charaEffect J bit_talk_smoke_blood]
+[wt 1.5]
+
+[se ad448]
+[wt 1.5]
+
+[se ad448]
+[wt 1.5]
+
+[se ad448]
+
+[charaTalk G]
+[charaFadein G 1.5 -3,1]
+[wt 2.0]
+
+[charaFace G 2]
+＠虞美人
+哈哈哈！　慌乱逃窜吧，人类们！[r]赌场就该毁灭！（破罐子破摔。）
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 2000,2000]
+[charaEffectStop J bit_talk_smoke_blood]
+
+[seStop ad754 1.5]
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.8]
+[se ad661]
+[seStop ad661 1.2]
+[charaMove E 0,-20 0.5]
+[wt 0.1]
+[charaFadeout E 0.4]
+[wt 0.8]
+[se ad183]
+[wt 0.2]
+[seStop ad183 0.1]
+[wt 1.2]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+看来山鲁佐德小姐的宝具效果已经消失了，[r]召唤的东西也都消失了。
+[k]
+
+＠玛修
+应该是将平时召唤的那些盗贼和精灵们[r]披上布当做警卫用吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠卡米拉
+这样一来我们就排除了物理与人员上的障碍。[bgm BGM_EVENT_70 0.1][r]尽管那些斯芬克斯士兵还是会被叫来……
+[k]
+
+＠卡米拉
+不过可以确定的是，[r]这座赌场内的常驻警卫已经减少一半了。
+[k]
+
+＠卡米拉
+那就让我们趁当前赌场内的混乱，[r]执行接下来的作战吧。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_70 1.0 0.2]
+[wipeout rollLeft 1.0 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[pictureFrame cut063_cinema]
+
+[scene 80900]
+
+
+[charaPut J 1]
+[charaEffect J bit_sepia01]
+[wt 1.0]
+
+[bgm BGM_EVENT_70 1.0 0.4]
+
+[wipein rollRight 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠卡米拉
+第二道难关[line 3]你们应该亲身体会过了。[r]那就是遍布这座赌场的『陷阱』。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+
+＠刑部姬
+是她以前的拿手好戏？[r]是用来防盗墓的吧？
+[k]
+
+[charaFace F 4]
+
+＠刑部姬
+讨厌啦，[r]虽说[#公主:我]是妖怪，但不想被诅咒啊。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠卡米拉
+赌场中到处都设置了那样的『陷阱』。[r]当然也包括我们想潜入的宝物库前。
+[k]
+
+＠卡米拉
+不过，其数量之多反倒成了让我们发现其弱点的提示。
+[k]
+
+＠卡米拉
+假如真的无处不在，那万一陷阱被轻易触发，[r]不就会把其他普通客人也卷进去了嘛。
+[k]
+
+＠卡米拉
+然而实际上这种情况并没有发生。[r]这究竟为什么呢？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 2]
+[charaDepth B 1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 256,-50]
+
+[charaFace C 0]
+[charaFadein C 0.1 -256,-50]
+
+＠葛饰北斋
+你早就调查清楚了吧？[r]别卖关子了啦。
+[k]
+
+[charaFace C 1]
+
+＠卡米拉
+呵呵，没错。根据我的调查[line 3][r]那些陷阱是与监视摄像头联动的。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠玛修
+梅……不，[r]谜之大哥哥确实提过这一点。
+[k]
+
+＠玛修
+他说，赌场中随处可见的那些梅杰德摆件，[r]应该是监视摄像头。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠卡米拉
+没错。那么，只要监视摄像头不认为我们是敌人，[r]那些『陷阱』应该就不会启动。
+[k]
+
+＠卡米拉
+也就是说[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 1.0]
+[wipeout rollRight 1.0 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[pictureFrame]
+
+[charaPut J 2000,2000]
+
+[scene 81400]
+[wt 1.0]
+
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠卡米拉
+我们必须趁场面混乱的现在进入。[r]是时候展示那个东西了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+好，就是从弗拉德先生那里拿来的东西吧？
+[k]
+
+＠玛修
+我把它放进了达·芬奇亲特制的[r]空间压缩手提袋中。那请大家把这个……
+[k]
+
+[messageOff]
+[se ad77]
+[fadeout black 0.8]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[fadein black 0.8]
+[wait fade]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.4 1]
+[wt 0.4]
+
+＠I：葛饰北斋
+唔，看不清前面呢。[bgm BGM_EVENT_94 0.1][r]虽说不是完全看不到。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+
+[charaFace I 0]
+[charaFadein I 0.1 2]
+
+＠E：刑部姬
+这也算是Cosplay吧。
+[k]
+
+＠I：卡米拉
+你准备好了吗，[&小伙子:小姑娘]？
+[k]
+
+[messageOff]
+[se ad77]
+[fadeout black 0.8]
+[wait fade]
+
+[wt 0.5]
+
+[fadein black 0.8]
+[wait fade]
+[wt 0.2]
+
+？1：（蠕动蠕动……）
+？2：（还挺有意思的呢。）
+？！
+
+[charaFadeout E 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：玛修
+很适合您呢，前辈！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠I：卡米拉
+这种东西只能拜托那个心灵手巧的男人才能做得了。
+[k]
+
+[bgmStop BGM_EVENT_94 1.0]
+
+＠I：卡米拉
+这样一来，别人就认不出我们了。
+[k]
+
+＠I：卡米拉
+当然，如果仔细应对的话，还是能够认出来的，[r]所以我们得趁陷入混乱的当前一起行动。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠E：刑部姬
+轮到[#公主:我]出场了呢。交给我吧！[bgm BGM_EVENT_82 0.1]
+[k]
+
+[messageOff]
+[se ad39]
+[charaEffect E bit_talk_36]
+[wt 2.0]
+
+[charaEffectStop E bit_talk_36]
+
+＠E：刑部姬
+『白鹭城·千式MILIMILI午夜狂欢！』
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[se adm28]
+[seVolume adm28 0 0.6]
+[wt 1.2]
+
+[seStop adm28 1.0]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠I：玛修
+刑部姬小姐的折纸士兵们[r]纷纷钻进其他准备好的白布中了……
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.2]
+
+[charaTalk off]
+
+[se ad77]
+
+[charaFace E 0]
+[charaFadein E 0.4 0,-50]
+[charaMove E 1 0.4]
+[wt 0.8]
+
+[charaMove E 230,0 0.4]
+[charaFadeout E 0.4]
+[wt 0.3]
+
+[se ad77]
+
+[charaFace I 0]
+[charaFadein I 0.4 0,-50]
+[charaMove I 1 0.4]
+[wt 0.8]
+
+[charaMove I -230,0 0.4]
+[charaFadeout I 0.4]
+[wt 0.3]
+
+[se ad77]
+
+[charaFace E 0]
+[charaFadein E 0.4 0,-50]
+[charaMove E 1 0.4]
+[wt 0.8]
+
+[charaMove E 230,0 0.4]
+[charaFadeout E 0.4]
+[wt 1.0]
+
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：刑部姬
+啊，顺便还能把山鲁佐德那些手下[r]用过的布回收再利用。GOGO！
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[se ad77]
+
+[charaFace E 0]
+[charaFadein E 0.4 0,-50]
+[charaMove E 1 0.4]
+[wt 0.8]
+
+[charaMove E 230,0 0.4]
+[charaFadeout E 0.4]
+[wt 0.3]
+
+[se ad77]
+
+[charaFace I 0]
+[charaFadein I 0.4 0,-50]
+[charaMove I 1 0.4]
+[wt 0.8]
+
+[charaMove I -230,0 0.4]
+[charaFadeout I 0.4]
+[wt 0.8]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠E：葛饰北斋
+嘿嘿，诱敌作战很顺利嘛！[charaMoveReturn E 0,10 0.3][r]干得漂亮！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+[charaShake I 0.02 3 3 0.6]
+
+＠I：刑部姬
+别……别拍我啦？[r]这样我很难集中精神哎！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠斯卡哈
+藏木于林。[r]藏梅杰德于梅杰德。
+[k]
+
+＠斯卡哈
+这样令人很难发现你们的行动。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：卡米拉
+嗯。但仅靠这个是无法闯过最后的难关的。[r]为此[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_82 1.0]
+[wipeout rollLeft 1.0 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[pictureFrame cut063_cinema]
+
+[imageSet E cut118_card01 1]
+
+[scene 80900]
+
+[charaPut J 1]
+[wt 1.0]
+
+[wipein rollRight 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-50]
+
+＠卡米拉
+然后！　等待我们的是第三道难关！[bgm BGM_EVENT_70 0.1]
+[k]
+
+[messageOff]
+[fadeout black 0.1]
+[wait fade]
+
+[charaFadeout C 0.1]
+[pictureFrame]
+[charaPut J 2000,2000]
+[scene 10000]
+[wt 0.1]
+
+[se ade313]
+[seVolume ade313 0 0.6]
+[fadein black 0.1]
+[wait fade]
+
+[effect bit_talk_card_flies]
+[wt 0.9]
+
+[se ad410]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 0.1]
+[scene 80900]
+[charaPut J 1]
+[pictureFrame cut063_cinema]
+[charaFadein E 0 0,-200]
+[wt 1.4]
+
+
+[charaFadeout E 0.4]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 0,-50]
+
+＠葛饰北斋
+呃，什么来着？
+[k]
+
+[charaFace B 2]
+
+＠葛饰北斋
+……就一句『克娄巴特拉』嘛！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠卡米拉
+没错，障碍往往是simple wall……
+[k]
+
+＠卡米拉
+宝物库的入口就在克娄巴特拉常驻地点的后面。
+[k]
+
+＠卡米拉
+如果不想办法让她离开那里[line 3][r]不想办法将她引开宝物库大门的话，
+[k]
+
+＠卡米拉
+我们是无法到达目的地的。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠玛修
+原来如此……话说不用警惕尼托……[r]不对，是不用警惕总经理目慈惠怒小姐吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠卡米拉
+其实只要不发生重大事件，[r]总经理目慈惠怒是不会走出VIP区域的。
+[k]
+
+＠卡米拉
+此前你们能遇到她只能说是运气太好了。
+[k]
+
+＠卡米拉
+至少在这次作战中，我认为不需要在意她。[r]反正说到底还是在拼速度。
+[k]
+
+＠卡米拉
+也就是说我们作战计划的最后一块拼图，[r]就是如何迅速引诱克娄巴特拉离开固有位置，
+[k]
+
+＠卡米拉
+并将其牵制在注意不到宝物库的地方。[r]关于这点……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 1.0]
+[wipeout rollRight 1.0 1.0]
+[wait wipe]
+
+[charaSet D 6008002 1 克娄巴特拉]
+[charaSet E 5034000 1 示巴女王]
+[charaSet F 98109900 1 赌场客人A]
+[charaSet G 1098120700 1 赌场客人B]
+
+[charaPut J 2000,2000]
+[charaEffectStop J bit_sepia01]
+
+[pictureFrame]
+
+[charaFadeout C 0.1]
+
+[scene 81400]
+[wt 1.0]
+
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[bgm BGM_EVENT_109 0.1]
+
+[se ad223]
+
+
+[charaPut H 1]
+[charaEffect H bit_talk_quickmove]
+
+[charaTalk H]
+[charaFace H 2]
+[charaSpecialEffect H appearanceReverse 0,0 0.3]
+[charaMove H 0,-10 0.3]
+[wt 0.5]
+[charaMove H 0,0 0.6]
+[wt 0.6]
+
+＠斯卡哈
+劳驾！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠克娄巴特拉
+什么，发生什么事了！？　这骚乱是怎么回事！
+[k]
+
+＠克娄巴特拉
+客人们大叫着肉片、肉片的四处乱窜……
+[k]
+
+＠克娄巴特拉
+而梅杰德大人外形的警卫们[r]也轻飘飘地往莫名其妙的方向移动！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠斯卡哈
+不用在意那些了。
+[k]
+
+＠斯卡哈
+身为名流之一，[r]我是来找你赌一场的。
+[k]
+
+[charaFace H 1]
+
+＠斯卡哈
+听说你是这座赌场的副总经理。[r]难道在收到挑战时会临阵脱逃吗？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_109 1.0]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠克娄巴特拉
+哦……影之国的女王啊，[r]想与妾身赌什么？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠斯卡哈
+这不是明摆着的嘛。当然是符合你我身份的，[r]更重要的具有名流风范的项目啦。
+[k]
+
+＠斯卡哈
+也就是[line 3]
+[k]
+
+[messageOff]
+[wt 1.2]
+
+[charaFace H 2]
+
+＠斯卡哈
+[f large]The 谁更强！？　游戏！[bgm BGM_EVENT_63 0.1]
+[k]
+
+？1：（名流风范究竟是啥？）
+？2：（所以还是一贯的肉搏嘛。）
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠克娄巴特拉
+您在说什么啊？[r]这可算不上什么赌博吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠斯卡哈
+你听我说完嘛。这不是普通的战斗。[r]而是要加入某个在场的要素。
+[k]
+
+＠斯卡哈
+正因为对手是你，所以即便是我，也无法从[r]这一要素中逃脱。我更要在这个要素上赢过你。
+[k]
+
+[charaFace H 3]
+
+＠斯卡哈
+那个要素就是……[wt 1.0]美。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠克娄巴特拉
+！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠斯卡哈
+身着泳装，在赌场中央，对手还是克娄巴特拉。
+[k]
+
+＠斯卡哈
+只有在美的方面赢过你，才算真正获胜。[r]虽然我有信心，但最后结果还不好说。
+[k]
+
+＠斯卡哈
+嗯，着实有趣。这简直就像[r]周围设置了电流和铁网的竞技场，
+[k]
+
+＠斯卡哈
+正因为存在特殊战斗条件[line 3][r]才能作为赌博成立。肯定能成立。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+
+[charaFace G 0]
+[charaFadein G 0.1 0]
+
+＠F：客人A
+噢噢噢噢，我喜欢那个闯入的泳装美女！[r]好想被她踩在脚下！
+[k]
+
+[charaTalk G]
+＠G：客人B
+蠢货，她不可能赢过克娄巴特拉大人啦！[r]我赌5注……不，10注！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+
+＠局头
+好了～，别挤别挤～。[r]这次的赔率是五五开！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠克娄巴特拉
+哦……也就是说你想与妾身『比美』？[r]多么不知天高地厚啊。
+[k]
+
+＠克娄巴特拉
+不过，认为胜负难分的只有你。[r]妾身觉得你必输无疑。
+[k]
+
+＠克娄巴特拉
+还有必要进行比赛吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠斯卡哈
+哦。那你是[#不想展示你的美了吗]？
+[k]
+
+＠斯卡哈
+难道你不想在某人面前证明[r]自己的美貌有多无敌吗？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[charaShake D 0.02 3 3 0.4]
+
+＠克娄巴特拉
+啊……难道说！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[cameraMove 0.5 -40,0 1.1]
+[wt 0.9]
+[cameraMove 0.5 40,0 1.1]
+[wt 0.9]
+[cameraHome 0.6]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠克娄巴特拉
+恺撒大人！　他来了吗！？
+[k]
+
+＠克娄巴特拉
+这是面向名流的赌场，[r]他就算出现在这里也没什么好奇怪的……
+[k]
+
+[charaFace D 4]
+
+＠克娄巴特拉
+如果恺撒大人真的在场，
+[k]
+
+＠克娄巴特拉
+哪怕妾身觉得自己肯定会赢，[r]也不能让他看见妾身不战离场的样子……
+[k]
+
+[charaFace D 2]
+
+＠克娄巴特拉
+妾身得不断继续向他证明，[r]他所选择的是世界最美丽的女子！
+[k]
+
+＠克娄巴特拉
+[line 3]妾身接受你的挑战！　来吧！
+[k]
+
+[messageOff]
+[se ad73]
+[charaEffect D bit_talk_quickmove]
+[charaMove D 0,50 0.4]
+[charaFadeout D 0.4]
+[wt 0.1]
+[se ad7]
+[wt 0.3]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠斯卡哈
+哼，正合我意！
+[k]
+
+[messageOff]
+[charaFace H 2]
+[wt 0.1]
+[se bac140]
+[effect bit_talk_v_slash01]
+[wt 0.4]
+[se ad32]
+[effect bit_talk_14]
+[charaFadeout H 0]
+[wt 0.1]
+[effectDestroy bit_talk_v_slash01]
+[shake 0.02 3 3 0.7]
+
+[wt 1.6]
+
+[wipeout rectangleStripRightToLeft 0.8 1.0]
+[bgm BGM_EVENT_63 0.8 0.2]
+[wait wipe]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_63 0.8 0.4]
+[wipein rectangleStripLeftToRight 0.8 1.0]
+[wait wipe]
+[wt 0.3]
+
+
+？1：你真的把恺撒也叫来了吗？
+？！
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠I：卡米拉
+呵呵。谁知道呢。[r]问题只在于对方是怎么想的。
+[k]
+
+[charaFace I 2]
+
+＠I：卡米拉
+总之我们成功把她从宝物库前引开了。[r]趁现在赶紧行动吧！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_63 0.5]
+[wait fade]
+[soundStopAll]
+[end]

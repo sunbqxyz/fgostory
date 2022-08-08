@@ -1,0 +1,1712 @@
+
+
+
+
+＄94-03-35-01-1-0
+
+[soundStopAll]
+
+[charaSet A 5035000 1 阿纳斯塔西娅]
+[charaSet B 3035001 1 忠贞]
+[charaSet C 5002001 1 吉尔·德·雷]
+[charaSet D 3011001 1 芬恩]
+[charaSet E 1007001 1 高文]
+[charaSet F 98001000 1 玛修]
+[charaSet G 98002000 1 芙芙]
+[charaSet H 5042000 1 紫式部]
+[charaSet I 1098162300 1 塞弥拉弥斯]
+[charaSet J 98115000 1 特效用]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66700]
+[branch lblConf]
+[label lblNotClear]
+[scene 60300]
+[label lblConf]
+
+
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.4]
+＠阿纳斯塔西娅
+……[r]……
+[k]
+
+[se ade96]
+＠阿纳斯塔西娅
+（读书中。）
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.4]
+＠忠贞
+……[r]……
+[k]
+
+[se ade96]
+＠忠贞
+（读书中。）
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+＠吉尔
+…………………………
+[k]
+
+[se ade96]
+＠吉尔
+（读书中。）
+[k]
+
+？1：咦？
+？2：在读书的从者好多啊……
+
+？！
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_2 1.0 0.2]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 66600]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10310]
+[label lblConf2]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[bgm BGM_EVENT_2 1.0 1.0]
+[wait wipe]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+[se ade96]
+＠芬恩
+（读书中。）
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+[se ade96]
+＠高文
+（读书中。）
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFace E 0]
+[charaFadein D 0.1 0]
+[charaFadein E 0.1 2]
+[charaMove D -180,0 1.2]
+[charaMove E 180,0 1.2]
+[wt 1.0]
+[se ad420]
+[seVolume ad420 0 0.1]
+[wt 0.1]
+[seVolume ad420 0.1 1.0]
+[charaFace D 5]
+[charaFace E 5]
+[charaShake D 0.02 3 3 0.3]
+[charaShake E 0.02 3 3 0.3]
+[charaMove D 0 0.4]
+[charaMove E 2 0.4]
+[wt 0.8]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 4]
+＠芬恩
+哎呀，失礼了。由于沉迷于读书，[r]以至于完全没发现有人接近！
+[k]
+
+[charaFace D 0]
+＠芬恩
+唔？　你很在意是什么样的名著能让[r]我这样的男人犯下这种粗心大意的错误？
+[k]
+
+＠芬恩
+呵，没什么。是一本名为『黄金骑士　芬恩·麦克库尔』的，[r]书名极为朴素的书籍。
+[k]
+
+[charaFace D 1]
+＠芬恩
+哎呀呀，读书的内涵着实深远！
+[k]
+
+
+[charaTalk E]
+[charaFace E 0]
+＠高文
+失礼的应该是我才对。
+[k]
+
+＠高文
+我也一样啊，麦克库尔卿。[r]和剑比起来，我耗费在积累知识上的时间并不多。
+[k]
+
+[charaFace E 4]
+＠高文
+居然会废寝忘食地读书……
+[k]
+
+＠高文
+罗列于纸上的文字列竟能如此揪住人心。
+[k]
+
+[charaFace E 0]
+＠高文
+哎呀呀。[r]简直就像回归学习时的初心状态呢。
+[k]
+
+
+[charaTalk D]
+[charaFace D 1]
+＠芬恩
+我理解。非常理解。[r]不[#啃拇指:Finegas]也能理解。
+[k]
+
+[charaFace D 0]
+＠芬恩
+说是骑士团，其实不过是群[r]只将武勇视为荣誉的寒碜男人。
+[k]
+
+＠芬恩
+一旦沉溺于读书，[r]反倒会令最爱的妻子感到担心。
+[k]
+
+[charaFace D 5]
+＠芬恩
+比方说『你该不会做了什么坏事吧？[r]　或者是瞒着我出轨了？』之类的！
+[k]
+
+[charaFace D 0]
+＠芬恩
+不不，当然啦，完全没有这种事。[r]你们那儿的骑士团也是这样吧，高文？
+[k]
+
+
+[charaTalk E]
+[charaFace E 1]
+＠高文
+嗯。[r]尤其在针对我的问题上，我确信无疑。
+[k]
+
+＠高文
+卿。如果不介意的话，[r]那本书您读完后能借我看看吗？
+[k]
+
+
+[charaTalk D]
+[charaFace D 1]
+＠芬恩
+没问题没问题请务必拿去阅读。
+[k]
+
+[charaFace D 0]
+＠芬恩
+那么，您在阅读的书是……？　哦哦，[r]『高文爵士与绿衣骑士』……
+[k]
+
+？1：嗯嗯。
+？2：原来如此……
+
+？！
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_2 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+
+[branchQuestNotClear lblNotClear3 3000303]
+[scene 66400]
+[branch lblConf3]
+[label lblNotClear3]
+[scene 10204]
+[label lblConf3]
+[wt 1.0]
+
+[se ad8]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠玛修
+[line 8]
+[k]
+
+[se ade96]
+＠玛修
+（读书中。）
+[k]
+
+＠玛修
+……[r]……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠芙芙
+芙！
+[k]
+
+[messageOff]
+[se ad7]
+[effect bit_talk_42 0,0 H]
+[charaMove G 50,0 0.4]
+[charaFadeout G 0.4]
+[wt 0.1]
+[effectStop bit_talk_42]
+[wt 0.5]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+[wt 0.1]
+
+[se adm21]
+[charaFace G 0]
+[charaFadein G 0.1 -260,-300]
+[charaAttack G normal -20,85 0.4]
+[wt 0.4]
+[charaMove G 0,0 0.2]
+[wt 0.3]
+
+[charaTalk on]
+[charaFace F 14]
+[charaShake F 0.03 2 2 0.4]
+＠玛修
+哇哇。芙芙？
+[k]
+
+[messageOff]
+[charaFace F 6]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+＠玛修
+啊，前辈！　您……您什么时候来的管制室！
+[k]
+
+
+＠玛修
+我完全没有发现，非常抱歉……！
+[k]
+
+？1：没关系没关系。
+
+[charaFace F 12]
+＠玛修
+尽管这本书不是我第一次阅读……[r]但还是情不自禁地读得浑然忘我。
+[k]
+
+
+
+
+
+
+
+[branch select01]
+
+
+？2：玛修在读什么？
+
+[charaFace F 0]
+＠玛修
+我在读『伊利亚特』。[r]是荷马撰写的古希腊叙事诗。
+[k]
+
+[branch select02_end]
+
+？！
+
+
+[label select01]
+
+？1：你在读什么？
+
+？！
+
+[charaFace F 0]
+＠玛修
+呃，是『伊利亚特』。[r]是荷马撰写的古希腊叙事诗。
+[k]
+
+
+
+[label select02_end]
+
+
+＠玛修
+是描写阿喀琉斯先生和赫克托耳先生[r]参加过的特洛伊战争的书籍[line 3]
+[k]
+
+？1：迦勒底也有不少喜欢这本书的英灵呢。
+
+[charaFace F 1]
+＠玛修
+是啊！
+[k]
+
+＠玛修
+这本书描写了因古希腊众神的企图[r]而引发的某种代理战争。
+[k]
+
+＠玛修
+是导致了很多人牺牲的残酷的故事……
+[k]
+
+＠玛修
+但同时，也是描写了众多英雄，[r]以及两国民众生命光辉的故事……
+[k]
+
+[messageOff]
+[charaFace F 6]
+[wt 1.0]
+
+[charaFace F 3]
+＠玛修
+对不起。[r]一旦开始阅读，就停不下来了。
+[k]
+
+？2：我记得，施里曼好像发掘了特洛伊遗迹吧。
+
+[charaFace F 1]
+＠玛修
+嗯！　没错！
+[k]
+
+＠玛修
+这故事长时间以来被视为人类历史上的架空神话，[r]但通过19世纪末考古学者施里曼的挖掘工作……
+[k]
+
+＠玛修
+令现代开始认识到其为历史事实的可能性。[r]简直就是历史与神话编织而成的神秘呢……
+[k]
+
+？！
+
+？1：……最近很流行读书吗？
+
+？！
+
+[charaFace F 0]
+＠玛修
+啊，这个。
+[k]
+
+[messageOff]
+[charaFace F 13]
+[wt 1.0]
+
+[charaFace F 1]
+＠玛修
+嗯。说得没错！
+[k]
+
+[charaFace F 13]
+＠玛修
+最近各位从者都在经常读书呢。[r]这可是迄今为止十分罕见的景象。
+[k]
+
+＠玛修
+理由非常简单。[r]其实呀[line 3]
+[k]
+
+[charaFace F 1]
+＠玛修
+在迦勒底！
+[k]
+
+＠玛修
+居然建起了一座[#图书馆]！
+[k]
+
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+[scene 10000]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[input selectBranch]
+[messageOff]
+[skip false]
+
+
+[charaSet A 5035000 1 阿纳斯塔西娅]
+[charaSet B 3035001 1 忠贞]
+[charaSet C 5002001 1 吉尔·德·雷]
+[charaSet D 3011001 1 芬恩]
+[charaSet E 1007001 1 高文]
+[charaSet F 98001000 1 玛修]
+[charaSet G 98002000 1 芙芙]
+[charaSet H 5042000 1 紫式部]
+[charaSet I 1098162300 1 塞弥拉弥斯]
+[charaSet J 98115000 1 特效用]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 0.4]
+
+[seStop ad5 0.4]
+[seStop ad7 0.4]
+[seStop ad8 0.4]
+[seStop ad420 0.4]
+[seStop ade96 0.4]
+[seStop adm21 0.4]
+
+[charaPut J 0,-2000]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[scene 10000]
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+
+[skip false]
+
+[wt 1.0]
+
+
+[fowardEffect bit_queststart80233]
+[wait fowardEffect]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 70400]
+[skip true]
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[se ade74]
+[wt 1.5]
+[seStop ade74 0.4]
+[wt 0.4]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+＠玛修
+这里就是地下图书馆[line 3]
+[k]
+
+＠玛修
+和此前一直存在的图书室不同，[r]好像是新[#产生]的大图书馆哦。
+[k]
+
+＠玛修
+看上去像是座宽敞巨大的图书馆，[r]其实却是空间被魔术扭曲的状态……
+[k]
+
+＠玛修
+只是消去了仓库区域中未使用的部分罢了，[r]所以对系统或是魔力炉不会造成什么影响。
+[k]
+
+？1：我还是……第一次听说……
+
+？！
+
+[charaFace F 12]
+＠玛修
+这……这是为什么呢？
+[k]
+
+＠玛修
+达·芬奇亲居然会出现联络失误……[wt 0.9][charaFace F 7][r]啊，或许是邮件的发送存在故障吧！
+[k]
+
+？1：这倒是。
+
+＠玛修
+稍后确认一下服务器吧。[r]也有可能是物理方面的原因导致的。
+[k]
+
+？2：达·芬奇亲应该不会忘记才对。
+
+＠玛修
+说得对。
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ade74]
+[wt 1.5]
+[seStop ade74 0.4]
+[wt 0.4]
+
+[bgmStop BGM_EVENT_2 1.0]
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+[wt 1.0]
+
+[charaFace F 0]
+＠玛修
+……[r]……
+[k]
+
+[bgm BGM_EVENT_11 0.1]
+＠玛修
+在迦勒底……
+[k]
+
+＠玛修
+情报类都被电子数据化了，[r]纸质书籍的种类并不丰富。
+[k]
+
+[charaFace F 4]
+＠玛修
+或许是由于这个原因吧，[r]我才会沉迷于这里的书中……
+[k]
+
+？1：没关系啦，毕竟现在休息！
+
+[messageOff]
+[charaFace F 6]
+[wt 1.0]
+
+[charaFace F 1]
+＠玛修
+嗯！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠芙芙
+芙芙。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[branch select01_end]
+
+
+？2：你喜欢纸质书吧？
+
+[charaFace F 0]
+＠玛修
+[line 3]嗯。
+[k]
+
+＠玛修
+因为纸质书在迦勒底非常罕见……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠芙芙
+芙？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+＠玛修
+……[r]……
+[k]
+
+[charaFace F 0]
+＠玛修
+……从阅览情报的角度来说，[r]隔着平板液晶屏其实也一样。
+[k]
+
+＠玛修
+但真不可思议。[r]阅读纸质书时，总是会[line 3]
+[k]
+
+[branch select02]
+
+？！
+
+[label select02]
+
+？1：越读越投入？
+
+？！
+
+[messageOff]
+[charaFace F 6]
+[wt 1.0]
+
+[charaFace F 3]
+＠玛修
+嗯。是的。
+[k]
+
+？！
+
+[label select01_end]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[messageOff]
+[se ade74]
+[wt 1.5]
+[seStop ade74 0.4]
+[wt 0.4]
+
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠玛修
+我们到了。[r][line 3]这里就是地下图书馆的“接待处”！
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_11 1.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[charaSet A 5042000 1 紫式部（剪影）]
+
+[scene 70300]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad311]
+[wt 1.0]
+[seStop ad311 0.4]
+[wt 0.4]
+
+[charaTalk depthOff]
+[charaDepth A 6]
+[charaDepth H 4]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[charaFilter A silhouette 00000080]
+[wt 0.6]
+
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.6]
+
+[charaFadeout A 0.4]
+[wt 0.6]
+
+[bgm BGM_EVENT_25 0.1]
+
+[charaTalk on]
+＠H：司书
+[line 6]欢迎光临。
+[k]
+
+[turnPageOff]
+＠H：司书
+我这地下图书馆搜罗了古今东西各种书籍。
+[k]
+
+＠H：司书
+从史书到传记，从神话到传说，从悲剧到喜剧，从古典到新作，[r]从故事到童话，从历史文学到西部文学，从低俗文学到政治文学，
+[k]
+
+＠H：司书
+从西方到东方……[r]从中世到近世，从古代到现代，从虚构到现实，
+[k]
+
+＠H：司书
+还有图鉴与地图等。
+[k]
+
+＠H：司书
+啊啊，还有[line 3][r]当然也包括复仇故事与恋爱故事。
+[k]
+
+＠H：司书
+如果有清单上没有的书，[r]请务必告诉我。
+[k]
+
+？1：是司书小姐耶……
+
+[charaFace H 7]
+＠H：司书
+……[r]……
+[k]
+
+[charaFace H 0]
+＠H：司书
+这是……我们初次见面吧。[r]迦勒底的御主大人。
+[k]
+
+？2：初次见面。
+
+＠H：司书
+嗯，初次见面。[r]迦勒底的御主大人。
+[k]
+
+？！
+
+＠H：司书
+恕我僭越，[r]担任这地下图书馆的司书一职。
+[k]
+
+[messageOff]
+[charaFace H 1]
+[wt 1.0]
+
+[charaFace H 0]
+＠H：司书
+从者，Caster。[r][line 3]真名为紫式部。
+[k]
+
+[turnPageOn]
+＠紫式部
+乃深爱文章，思慕诗词，[r]伴人情感左右的女人……
+[k]
+
+＠紫式部
+由于对当世所知甚少，[r]还请您多多关照。务必手下留情。
+[k]
+
+？1：请多指教！
+？2：我是[%1]。
+
+？！
+
+[messageOff]
+[charaFace H 1]
+[wt 1.5]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠玛修
+紫式部小姐是日本平安时代出身的吧。[r]是与赖光小姐以及金时先生活在同一个时代的英灵。
+[k]
+
+？1：是……作家吗？
+
+[charaFace F 1]
+＠玛修
+对！[r]尤其是『源氏物语』非常著名。
+[k]
+
+[charaFace F 13]
+＠玛修
+以平安时代的贵族社会为舞台，[r]主人公光源氏与众多女性间发生的恋爱故事……
+[k]
+
+＠玛修
+除此以外，还以优秀的和歌作者而著称，[r]小仓百人一首中也收录了紫式部小姐的歌。
+[k]
+
+？2：是源氏物语的作者，也是一位和歌作者吧！
+
+[charaFace F 1]
+＠玛修
+对！
+[k]
+
+？！
+
+[charaFace F 0]
+＠玛修
+身为英灵，以Caster的职阶现界，[r]应该相当擅长东洋魔术。
+[k]
+
+[charaFace F 1]
+＠玛修
+这里应该就是使用这种魔术创造的吧。[r]用自己的魔力从无到有构筑起地下图书馆[line 3]
+[k]
+
+＠玛修
+不仅将以数据库形式保存下来的大量书籍[r]通过魔术的效果变换成物理书籍，
+[k]
+
+＠玛修
+还无偿借给了各位从者以及职员。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠紫式部
+魔术……？
+[k]
+
+＠紫式部
+用魔术构筑图书馆……？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+＠玛修
+啊，嗯。是……这样吧？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠芙芙
+芙，芙。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠紫式部
+[line 3]呃，对。应该……是这样吧。[r]大概。
+[k]
+
+＠紫式部
+但对我来说，这只是阴阳道的一种……
+[k]
+
+＠紫式部
+将人世之理跨越时空编织而成的技术，[r]由内心拥有感情的存在引导而出的自然之物。
+[k]
+
+＠紫式部
+美丽之物。……嗯。[r]如果各位称其为魔术的话。
+[k]
+
+＠紫式部
+那玛修大人所说的应该没错吧。
+[k]
+
+[messageOff]
+[charaFace H 7]
+[wt 1.0]
+
+[charaFace H 0]
+＠紫式部
+……恕我开诚布公。
+[k]
+
+＠紫式部
+在过去的平安时代，[r]我并不怎么擅长阴阳道。
+[k]
+
+＠紫式部
+所以说，直到如今作为从者成立之后，[r]我才第一次获得了可使用各种能力的状态。
+[k]
+
+[charaFace H 1]
+＠紫式部
+尽管我还是一位生疏的Caster，[r]但愿能帮上大家的忙。
+[k]
+
+？1：今后还请多关照啦！
+
+？！
+
+＠紫式部
+嗯，请多关照。
+[k]
+
+＠紫式部
+……[r]……
+[k]
+
+[bgmStop BGM_EVENT_25 1.0]
+[charaFace H 0]
+＠紫式部
+……………………话虽如此[line 3]
+[k]
+
+[messageOff]
+[charaFace H 4]
+[wt 1.5]
+
+[charaFace H 6]
+＠紫式部
+万[messageShake 0.03 3 3 0.6]分抱歉！！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[charaMoveReturn G 0,30 0.3]
+[wt 1.2]
+
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+＠紫式部
+…………我犯下了一个重大的错误！！
+[k]
+
+
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[bgm BGM_EVENT_11 0.1]
+
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠紫式部
+我本打算这次一定要好好干……[r]本打算作为英灵华丽地出道……
+[k]
+
+＠紫式部
+但是我……搞砸了……
+[k]
+
+[charaFace H 5]
+＠紫式部
+我倾注魔力制作出来的藏书！[r]其中一册脱离了我的管辖！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠芙芙
+芙，芙呜！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠玛修
+换言之……书本失控了……？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠紫式部
+对，您说得没错。[r]那是发生在今早，当我还在整理书库的时候[line 3]
+[k]
+
+[messageOff]
+[wipeout circleIn 1.5 1.0]
+[bgmStop BGM_EVENT_11 1.5]
+[wait wipe]
+
+[charaFadeout H 0.1]
+
+
+
+[pictureFrame cut063_cinema]
+
+[effect bit_sepia01]
+
+[scene 70700]
+[wt 1.0]
+
+[wipein circleIn 1.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[bgm BGM_EVENT_25 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+＠紫式部
+嘿咻。
+[k]
+
+[messageOff]
+[charaMove H 0,-60 0.4]
+[wt 0.2]
+[se ad144]
+[seVolume ad144 0 0.25]
+[wt 0.6]
+[charaMove H 0,-50 0.4]
+[wt 1.0]
+
+＠紫式部
+呼。今天的补充就到这里吧。
+[k]
+
+＠紫式部
+这些书籍拿去保存在书库未免太过可惜了。[r]都是倾注了真心编写的文章。
+[k]
+
+[charaFace H 1]
+＠紫式部
+但愿将来会成为触动某人心灵的一册[line 3]
+[k]
+
+[messageOff]
+[charaFace H 7]
+[wt 1.0]
+
+＠紫式部
+咦……这本书是什么……为什么看上去好陌生……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_25 0.4]
+[charaFadeout H 0.1]
+[wt 0.6]
+
+[se ad39]
+[charaPut J 1]
+[charaEffect J bit_talk_warp]
+[wt 3.5]
+[seStop ad39 0.4]
+[wt 0.4]
+[charaPut J 1200,1200]
+[wt 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 0,-50]
+＠紫式部
+！[messageShake 0.03 2 2 0.4]！
+[k]
+
+＠紫式部
+书浮到半空了……！？
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[wt 0.5]
+[se ade36]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF00]
+[wt 0.6]
+[se ade36]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF00]
+[wt 0.2]
+[se ade36]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF00]
+[wt 0.9]
+[charaPut J 1200,1200]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 0,-50]
+[charaShake H 0.03 4 4 0.4]
+＠紫式部
+呀啊！！
+[k]
+
+[charaFace H 0]
+＠紫式部
+啊……[r]你……你干什么……那……那是……！
+[k]
+
+[charaFace H 2]
+＠紫式部
+那是我放在包里的宝贵的……！[r]住……住手，[#不要吸收]！
+[k]
+
+＠紫式部
+[line 3]还给我！　快还给我！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[wt 0.5]
+[se ade36]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF00]
+[wt 0.6]
+[se ade36]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF00]
+[wt 0.2]
+[se ade36]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF00]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_5 1.0]
+[se ad39]
+[seVolume ad39 0 0.1]
+[seVolume ad39 1.0 1.0]
+[charaEffectStop J bit_talk_warp]
+[wt 2.0]
+[seStop ad39 1.0]
+[wt 1.0]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 0,-50]
+＠紫式部
+啊……！
+[k]
+
+＠紫式部
+消失了……彻底……消失了……！？
+[k]
+
+[messageOff]
+[wipeout circleIn 1.5 1.0]
+[wait wipe]
+
+[charaFadeout H 0.1]
+
+[pictureFrame]
+
+[effectStop bit_sepia01]
+
+[scene 70300]
+[wt 1.0]
+
+[wipein circleIn 1.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠紫式部
+…………这是我闯的祸，是我的失误。
+[k]
+
+＠紫式部
+沉睡于我这图书馆书库中的一本书，[r]独自行动、肆虐，成为了被诅咒的书。
+[k]
+
+[charaFace H 0]
+＠紫式部
+吞噬周围的情报，[r]吞噬周围的魔力，
+[k]
+
+＠紫式部
+然后顺应自我保存的本能，四处逃窜[line 3]
+[k]
+
+＠紫式部
+我称其为咒本。[wt 0.7][charaFace H 4][r]呜呜……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠芙芙
+芙呜，芙。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠紫式部
+……[r]……
+[k]
+
+[charaFace H 5]
+＠紫式部
+过去我侍奉中宫[line 2]彰子大人的时候，[r]曾被同僚的女官们欺负，说我是个古怪的女知识分子……
+[k]
+
+＠紫式部
+由于过度悲伤，[r]我曾一度闭门不出……
+[k]
+
+[charaFace H 4]
+＠紫式部
+之后，我装成无知的单纯角色，[r]才好不容易融入了职场……
+[k]
+
+[charaFace H 6]
+＠紫式部
+但[messageShake 0.03 2 2 0.4]是，但是！[r]我本打算这次一定要好好干！
+[k]
+
+＠紫式部
+打算来一次没有任何遗憾的完美出道，[r]打算成为一位令大家高兴的“书之英灵”，
+[k]
+
+[charaFace H 4]
+＠紫式部
+然而……呜呜……[r]可悲可叹……
+[k]
+
+[bgmStop BGM_EVENT_11 0.7]
+
+
+？1：没关系。
+？2：只要回收那本书就行了吧？
+
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[bgm BGM_EVENT_2 0.1]
+
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠玛修
+对！[r]既然是危险的书，那就要回收！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠芙芙
+芙！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+＠紫式部
+……………………
+[k]
+
+[charaFace H 0]
+＠紫式部
+……各……各位不责怪我吗？[r]玛修大人，[%1]大人？
+[k]
+
+？1：因为图书馆的落成让大家非常高兴。
+？2：我不会责怪你啦。
+
+？！
+
+[messageOff]
+[charaFace H 2]
+[wt 1.0]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+
+[branch lblConf4]
+[label lblNotClear4]
+
+＠玛修
+毕竟现在是情人节的季节，[r]无论发生什么都没什么好奇怪的！
+[k]
+
+[branch lblNotClear4_out]
+[label lblConf4]
+＠玛修
+而且我们正在传说中的彷徨海内，[r]无论发生什么都没什么好奇怪的！
+[k]
+
+[label lblNotClear4_out]
+
+
+？！
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[se ad13]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 0.3]
+＠塞弥拉弥斯
+唔。啊啊，看来就是这个开关。[r]能听到吗？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠玛修
+塞弥拉弥斯小姐？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠塞弥拉弥斯
+嗯。是我。
+[k]
+
+＠塞弥拉弥斯
+达·芬奇好像状态不太好，暂时离席了，[r]所以无奈之下只能由我代她进行通讯。
+[k]
+
+[charaFace I 3]
+＠塞弥拉弥斯
+于是乎。[r]那个，什么来着。
+[k]
+
+＠塞弥拉弥斯
+怎么说呢……应该是发生异常事态了吧。
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+
+[bgmStop BGM_EVENT_2 0.7]
+
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+[charaShake H 0.03 3 3 0.3]
+[wt 0.8]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 1]
+＠塞弥拉弥斯
+保存着用来制作情人节巧克力的魔力资源[line 3]
+[k]
+
+＠塞弥拉弥斯
+被一本书靠近，[r]随后被那本书给吸收了。[wt 1.0]全部。
+[k]
+
+？1：啊，难不成！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+
+[bgm BGM_EVENT_5 0.1]
+
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠玛修
+没错，前辈！　恐怕就是那本咒本……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+？2：全部吗！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+
+[bgm BGM_EVENT_5 0.1]
+
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+＠紫式部
+[f small]……对不起……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+？！
+
+[charaPut J 1]
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+＠塞弥拉弥斯
+似乎与平时的魔书敌人不太一样，[r]那该不会是从那座图书馆外借的书吧？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+＠紫式部
+说得没错！[r]啊啊，不好，这可不行……！　怎么会这样！
+[k]
+
+＠紫式部
+终于造成了……损失……！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.4]
+[charaFadeout H 0.1]
+[wt 0.6]
+
+[se ad9]
+[seVolume ad9 0 0.4]
+[wt 2.5]
+[seStop ad9 0.4]
+[wt 0.5]
+
+[charaPut J 1]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠塞弥拉弥斯
+唔。这警报是什么？[r]迦勒底式的操作台比较古怪，很难读懂[line 3]
+[k]
+
+[charaFace I 7]
+＠塞弥拉弥斯
+唔。好像有某种魔力反应正在向你们那边移动。[r]总之，你们自己想办法处理吧。
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad19]
+[wt 2.0]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[charaShake G 0.03 4 4 0.4]
+＠芙芙
+芙，芙！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠玛修
+前辈！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠紫式部
+这全部……全部都是由于我的过失。[r]万分抱歉。
+[k]
+
+[charaFace H 5]
+＠紫式部
+我必须不惜代价解决此事，不能牵连他人！[r]请将这件事交给我吧！
+[k]
+
+？1：一起战斗吧！
+？2：别一个人胡来啦！
+
+？！
+
+[messageOff]
+[charaFace H 2]
+[wt 1.0]
+
+[charaFace H 5]
+＠紫式部
+啊，好！　……出击吧！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

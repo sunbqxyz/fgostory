@@ -1,0 +1,972 @@
+
+
+＄03-00-04-09-1-0
+
+
+
+[soundStopAll]
+[skip false]
+
+[charaSet A 1098167700 1 圣兽]
+[charaSet B 1098167400 1 男性A]
+[charaSet C 1098167410 1 男性B]
+[charaSet D 1098167500 1 女性]
+[charaSet E 98002000 1 芙芙]
+[charaSet F 1098124510 1 达·芬奇]
+[charaSet G 1098123210 1 戈尔德鲁夫]
+[charaSet H 8001410 1 玛修]
+[charaSet I 98115300 1 福尔摩斯]
+
+[charaSet J 98115000 1 特效用]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad761]
+[seVolume ad761 0 0.6]
+[effect bit_talk_yuga_clock_05]
+[wt 2.3]
+[se ad756]
+[wt 3.7]
+
+[fadeout black 1.0]
+[seStop ad761 1.0]
+[seStop ad756 1.0]
+[wait fade]
+
+[effectStop bit_talk_yuga_clock_05]
+[effectDestroy bit_talk_yuga_clock_05]
+
+[wt 0.5]
+[skip true]
+
+[wipeFilter cinema 0.5 0]
+[scene 74900]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[se ade246]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+[wt 1.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad347]
+[seVolume ad347 0 0.2]
+[se ad585]
+[wt 1.0]
+[seStop ad347 1.0]
+[wt 1.0]
+[seStop ad585 1.0]
+
+[se ad32]
+[effect bit_talk_14]
+[wt 0.8]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFace B 2]
+[charaFadein D 0.1 -256,-50]
+[charaFadein B 0.1 256,-50]
+
+＠女性
+呜……呀啊！
+[k]
+
+＠男性A
+该死，可恶的圣兽！　数量太多了……[r]竟然会碰到这么一大群！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+[wt 0.5]
+[se bac210]
+[fowardEffect bit_talk_ichimon01ye]
+[charaShake A 0.05 3 3 0.2]
+[wt 0.5]
+[se ba6]
+[charaSpecialEffect A enemyErasure 1 0.7]
+[wt 1.0]
+[fowardEffectStop bit_talk_ichimon01ye]
+
+＠？？？
+只能说不太走运吧。原本只要等它们先过去就好了，[r]这下没办法了。
+[k]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFace C 2]
+[charaFadein B 0.1 256,-50]
+[charaFadein C 0.1 -256,-50]
+
+＠男性A
+……『　　　』大人！
+[k]
+
+＠男性B
+对……对不起，我靠得太近了，[r]一害怕，就举起了弓……！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠？？？
+不必在意。[r]疏忽了刚拿起武器新兵心情的我也有责任。
+[k]
+
+＠？？？
+应该重新检讨一下技术与精神的训练比重吗……
+[k]
+
+＠？？？
+不管怎么说，我会指挥接下来的行动。[r]你们先回村庄吧。这里就由我来抵挡。
+[k]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 0,-50]
+
+＠女性
+但……但是……！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+＠？？？
+不能将这些家伙引进村庄里。[r]而且[line 3]还要考虑传闻中所谓的[#神将:护世神]。
+[k]
+
+＠？？？
+骚动闹得越大，[r]就越有可能被那些家伙发现。
+[k]
+
+＠？？？
+神之部下。拥有骇人力量的仆从。[r]一旦被他们发现就是致命的。必须避免这种事发生。
+[k]
+
+＠？？？
+如果只有我被发现或许还能撑得过去，[r]但如果你们或村庄引起了他们的注意，事情可就糟透了。
+[k]
+
+＠？？？
+所以你们先一步回迪瓦尔。[r]别忘记带上好不容易搜集到的物资哦。
+[k]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-50]
+
+＠男性
+可就算是您，一个人也未免……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠？？？
+不必担心。我没打算把这群圣兽全部打倒。[r]要做的只是争取时间而已……我早就习惯持久战了。
+[k]
+
+＠？？？
+而且，我应该告诉过你们吧。
+[k]
+
+＠？？？
+我不是人。[r]而是一骑当千的“非人存在”。
+[k]
+
+＠？？？
+乃是在正统神明的帮助下，[r]于此地现界的人理之影[line 3]！！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[wipeOff]
+[wt 1.0]
+
+[charaSet B 1098127610 1 佩佩隆奇诺]
+[charaSet C 23003001 1 伽内什]
+[charaSet D 1019001 1 罗摩]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠达·芬奇
+尽管是老话重提，但真令人烦躁啊～。[r]无法用来移动的交通工具究竟还有什么存在意义？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠戈尔德鲁夫
+你这蠢货，如果潜航艇被敌人发现并破坏的话，[r]一切就都完蛋了。
+[k]
+
+＠戈尔德鲁夫
+只有我们，必须最优先维持隐秘性。[r]即便已经具备了一定程度的迷彩机能！
+[k]
+
+[charaFace G 6]
+
+＠戈尔德鲁夫
+刚才在[#最后的由伽:迦利由伽]终结时前去迎接那些家伙[r]算是紧急事态中的紧急事态。这种事不能再有下次！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠达·芬奇
+知道啦知道啦，我只是说说而已嘛～。[r]这个问题上戈尔德鲁夫的观点确实比较正确。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠福尔摩斯
+哎呀。你们最好先停下脚步。[r]可以躲进那边的草丛里吗。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[se ad13]
+[wt 0.05]
+[seStop ad13 0.1]
+[wt 0.1]
+[se ad13]
+[wt 0.05]
+[seStop ad13 0.1]
+
+＠玛修
+是。[#灵基外骨骼:奥特瑙斯]也切换为完全静音模式。[r]御主，各位，请保持安静……
+[k]
+[bgm BGM_EVENT_77 1.0 0.2]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaMove E 0,-15 0.8]
+
+＠芙芙
+[f small]……芙～呜～……
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaSet E 1098167700 1 圣兽2]
+
+[se ade255]
+
+[wt 1.0]
+[charaTalk off]
+[charaFace A 0]
+[charaFadein A 0.4 -200,0]
+[charaFadein E 0.4 200,0]
+
+[wt 1.0]
+[se ad527]
+[charaMove A -300,0 1.4]
+[charaMove E 100,0 1.4]
+[charaShake A 0.2 0 3 1.4]
+[charaShake E 0.2 0 3 1.4]
+[wt 1.0]
+[seStop ad527 1.0]
+[charaFadeout A 0.4]
+[charaFadeout E 0.4]
+[wt 1.0]
+[charaSet E 98002000 1 芙芙]
+
+
+？1：有好多……圣兽。
+？2：好像在列队行进。
+？！
+
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠玛修
+万幸的是，它们似乎没有注意到我们。[r]先躲在这里等它们过去吧。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠佩佩隆奇诺
+光看外表其实还挺漂亮呢。[r]难怪大家会说它们是神之使者。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠伽内什
+只要没有迦利，真的就像普通动物一样呢。[r]它们靠吃什么存活的。能不能驯养它们呢？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠佩佩隆奇诺
+…………
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_77 1.0 1.0]
+[wait fade]
+
+
+[wt 1.0]
+
+
+？1：它们走了……
+？！
+
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠罗摩
+好，那我们重新出发吧。[r]应该很快就能到达目的地的村庄了。
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1]
+[wait wipe]
+
+
+[charaFadeout D 0.1]
+[wt 1.0]
+
+
+[charaSet A 1039001 1 拉克什米]
+[charaSet G 1098167400 1 男性]
+[charaSet I 1098167500 1 女性]
+[imageSet F back75200 1]
+[charaScale F 1.5]
+
+[scene 75200]
+
+[wipein rightToLeft 1.0 1]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠芙芙
+芙芙！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠玛修
+能看见了。应该就是那里吧。[r]总算顺利抵达了。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠伽内什
+哎～，竟然还砌起了壁垒，觉悟很高嘛。[r]有种反抗军村庄的感觉呢。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠罗摩
+毕竟听说他们有在和迦利战斗。[r]这种反抗军般的大门构造反倒能够理解。
+[k]
+
+[charaFace D 4]
+
+＠罗摩
+……唔？
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[charaFadein F 0.1 200,-200]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[charaDepth G 4]
+[charaDepth I 5]
+[charaDepth F 1]
+
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[charaTalk off]
+[se ad443]
+[se ad132]
+[wt 0.1]
+[se ad133]
+[charaFace G 2]
+[charaFace I 2]
+[charaFadein I 0.4 -206,0]
+[charaFadein G 0.4 306,0]
+[charaMove I -256,0 0.4]
+[charaMove G 256,0 0.4]
+[wt 1.0]
+[seStop ad443]
+[seStop ad132]
+[seStop ad133]
+[charaTalk on]
+
+＠男性
+快点，快点！
+[k]
+
+＠女性
+我们回来了！　赶紧开门！
+[k]
+
+[messageOff]
+[se ad538]
+[wt 1.5]
+[charaFadeout G 0.4]
+[charaFadeout I 0.4]
+[wt 1.0]
+[se ad546]
+[wt 1.0]
+
+[wipeout rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+[wt 0.5]
+[charaSet G 1098123210 1 戈尔德鲁夫]
+[charaSet I 98115300 1 福尔摩斯]
+
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+＠玛修
+……怎么回事？[r]跑回来的这群人慌慌忙忙地进入村庄了……？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠伽内什
+不过因为距离有点远，[r]他们好像没发现我们呢。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠罗摩
+但你们看到了吗？　尽管只比农具略好一些，[r]但看上去那些家伙都武装起来了。
+[k]
+
+＠罗摩
+跟传闻一样，他们似乎和比丘镇的镇民有所不同。[r]说不定能打听出新的情报。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠佩佩隆奇诺
+说得对。那我们去看看吧！
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+
+[charaFadein F 0.1 200,-200]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+
+
+[charaDepth D 3]
+[charaDepth H 4]
+[charaDepth B 5]
+[charaDepth G 2]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠罗摩
+……不过，不开门啊。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[se ad310]
+[seVolume ad310 0 0.6]
+[wt 1.0]
+[seStop ad310]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠佩佩隆奇诺
+敲门也没人应呢。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad310]
+[wt 1.0]
+[seStop ad310]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠罗摩
+喂～，能麻烦你们开一下门吗～！
+[k]
+
+＠罗摩
+大部分国家都会举国欢迎余的光临哦～！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠玛修
+要不试着窥探一下里面的情况呢？[r]呃……
+[k]
+
+[messageOff]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[cameraMove 1.0 50,10 1.2]
+[bgm BGM_EVENT_77 1.0 0.3]
+[wt 1.5]
+＠女性的声音
+刚才的声音是什么！？　有人来了吗！？
+[k]
+
+＠男性的声音
+难道是……啊啊，啊啊啊！[r]糟了，这下糟了！　暴露了！
+[k]
+
+＠女性的声音
+怎么办，该怎么办啊！？
+[k]
+
+＠男性的声音
+就算你问我怎么办……！
+[k]
+
+＠男性的声音
+光靠我们也绝对没有什么办法啊。
+[k]
+
+＠男性的声音
+在那位大人回来之前，[r]也只能紧闭大门固守下去了。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_77 1.0 1.0]
+[cameraHome 1.0]
+[wt 1.5]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠玛修
+该怎么说呢，似乎很焦虑？[r]我似乎听到这类声音呢……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠戈尔德鲁夫
+唔。有种不好的预感呢。[r]这种时候我的直觉都很准的，超级准。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠伽内什
+里面确实有人呢。
+[k]
+
+＠伽内什
+尽管身为从者，[r]跳起来强行越过这道墙壁还是做得到的。
+[k]
+
+＠伽内什
+但问题就在于这样跳进去真的不要紧吗[line 3]
+[k]
+
+[bgmStop BGM_EVENT_77 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠？？？
+[line 3]你们在那里做什么！
+[k]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠芙芙
+芙！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaPut J 1]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠福尔摩斯
+……是从者反应。[r]请容我感慨一句，您的运气真不错呢，御主。
+[k]
+
+[charaFace I 4]
+
+＠福尔摩斯
+但这究竟算不算中奖，[r]看来还有商榷的余地呢。
+[k]
+
+[charaFace I 0]
+
+＠福尔摩斯
+对方正从侧面全速接近……提高警惕！
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[se ad444]
+[wt 1.5]
+[seStop ad444]
+[se ad7]
+[se ade283]
+[seVolume ade283 0 0.1]
+
+[wipeout rectangleStripUpToDown 0.5 1]
+[wt 0.3]
+[seVolume ade283 0 0.3]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaFadein F 0.1 200,-400]
+[wt 0.8]
+
+[seStop ade283 0.5]
+[wipein rectangleStripDownToUp 0.5 1]
+[wait wipe]
+[se ad223]
+[wt 2.0]
+
+[wipeout rectangleStripDownToUp 0.5 1]
+[wait wipe]
+
+[charaTalk H]
+[charaFace H 15]
+[charaFadein H 0.1 1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaFadein F 0.1 200,-200]
+[wt 0.1]
+
+[wipein rectangleStripUpToDown 0.5 1]
+[wait wipe]
+
+＠玛修
+从我们的头上跳了过去[line 3][r]跳到了大门上面！？
+[k]
+
+[messageOff]
+[wt 0.5]
+[wipeout rectangleStripUpToDown 0.5 1]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaFadeout H 0.1]
+[charaFadein F 0.1 200,-400]
+[wt 0.1]
+
+[wipein rectangleStripDownToUp 0.5 1]
+[wait wipe]
+[wt 0.8]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+[wt 2.5]
+
+[wipeout rectangleStripDownToUp 0.7 1]
+[wait wipe]
+[charaFadeout A 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+[charaFadein F 0.1 200,-200]
+[wt 0.1]
+
+[wipein rectangleStripUpToDown 0.7 1]
+[wait wipe]
+
+
+＠玛修
+是以前从未见过的新从者！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠佩佩隆奇诺
+如果是熟人的话解释起来就方便了。[r]真可惜。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠伽内什
+被不认识的人责骂可比被认识的人[r]责骂遭受的精神打击大一百倍，求放过。
+[k]
+
+[charaFace C 0]
+
+＠伽内什
+也就是说对面现在一副气到爆炸的样子，[r]你们就不能快想想办法吗？
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[charaFadeout C 0.1]
+
+[charaDepth A 10]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaFadein F 0.1 200,-400]
+[wt 0.1]
+
+[wipein rectangleStripDownToUp 0.5 1]
+[wait wipe]
+
+＠？？？
+这股神气……呜。[r]明明我都那么小心谨慎了，终于还是被发现了吗。
+[k]
+
+[charaFace A 2]
+
+＠？？？
+看来你们就是传闻中的[#神将:护世神]。[r]是伪神的仆从吧！
+[k]
+
+？1：！？　这……这是误会！
+？！
+
+[charaFace A 5]
+
+＠罗摩
+慢着慢着。竟然说吾等是[#神将:护世神]？[r]开什么玩笑。
+[k]
+
+＠？？？
+少胡说八道了。你们会在这种时机现身，[r]怎么可能是偶然嘛。
+[k]
+
+＠？？？
+而且……我都听到了。[r]你们正在谋划着要翻越这道壁垒侵略村庄吧！
+[k]
+
+＠伽内什
+尽管我不是很明白，但大概是个巧合啦！[r]我们是在说，翻越墙壁是不是不太好[line 3]
+[k]
+
+＠？？？
+一点都不干脆。
+[k]
+
+＠？？？
+既然我的存在……[r]这座抵抗伪神轮回的村庄的存在终于被发现了，
+[k]
+
+[messageOff]
+[charaFace A 4]
+[bgmStop BGM_EVENT_81 1.0]
+[wt 1.0]
+[charaFace A 2]
+[bgm BGM_EVENT_80 0.1]
+
+＠？？？
+那我既不会逃避也不会躲藏。唯有一战。
+[k]
+
+[charaFace A 5]
+
+＠？？？
+做好觉悟吧。[r]决不会再让你们从我手中夺走任何事物了。
+[k]
+
+[charaFace A 2]
+
+＠？？？
+哪怕要与神为敌[line 3][r]我[#这次也定会]誓死坚守我们的容身之处！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

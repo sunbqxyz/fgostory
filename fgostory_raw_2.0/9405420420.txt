@@ -1,0 +1,1548 @@
+
+
+
+＄94-05-42-04-2-0
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet B 1048000 1 圣诞迦尔纳]
+[charaSet C 4006001 1 乔尔乔斯]
+[charaSet D 2015001 1 阿周那]
+[charaSet E 4019001 1 玛尔达]
+[charaSet F 99502600 1 玛修]
+[charaSet G 3040000 1 Lambda]
+[charaSet H 3046001 1 弗栗多]
+
+[sceneSet S 63703 1]
+[charaScale S 1.01]
+
+[charaSet T 5009040 1 特效用dummy]
+
+
+
+[imageSet U back10000_fs 1]
+[charaScale U 1.5]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[charaSet A 1098124510 1 达·芬奇]
+[branch lblConf]
+
+[label lblNotClear]
+[charaSet A 98111500 1 达·芬奇]
+[label lblConf]
+
+
+[charaPutFSR T 1200,2000]
+[charaEffect T bit_talk_10_LowLevel]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 63703]
+
+[se ad14]
+[seVolume ad14 0 0]
+[shake 0.05 2 2 0]
+
+[seVolume ad14 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+[wt 1.5]
+
+[seVolume ad14 0.6 0.2]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠玛尔达
+这震动是什么！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠乔尔乔斯
+提高警惕！[r]海上有什么[line 3]来了！
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[shake 0.03 4 4 0]
+
+[charaScale S 1.2]
+[charaFadeinFSR S 0.1 -150,-300]
+
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[seVolume ad14 0.4 1.0]
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[se ade535]
+[seVolume ade535 0 0]
+[seVolume ade535 0.5 1.0]
+[effect bit_talk_ice_tidal_wave 0,50]
+[wt 1.4]
+[seVolume ade535 1.4 0.1]
+[wt 1.0]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[pictureFrame]
+[effectDestroy bit_talk_ice_tidal_wave]
+[shake 0.05 2 2 0]
+
+[charaFadeout S 0.1]
+
+[wt 0.5]
+
+[seVolume ad14 0.4 0.2]
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.5]
+
+？1：那是！？
+？！
+
+[charaPut T 1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠玛修
+观测到类似冰形成的大浪正在逼近！
+[k]
+
+＠玛修
+范围很广[line 3]速度也很惊人！[r]来不及逃回岸上了！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠玛尔达
+那只能往上逃了！[r]塔拉斯克！
+[k]
+
+＠塔拉斯克
+[charaTalk T]
+GuRuRRRR！[r]（坐上来，各位！）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠圣诞迦尔纳
+我可以看准时机自己跳跃。[r]不用在意我。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[seVolume ad14 1.5 0.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠玛尔达
+是吗？　那么[line 3][r]来了来了来啦！　就是现在！
+[k]
+
+[messageOff]
+[charaMove E 0,15 0.4]
+
+
+[cueSe Battle bac30]
+[cueSeVolume bac30 0 0.8]
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[pictureFrame cut063_cinema]
+[cameraMove 0 0,-60 1.01]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+[wt 0.2]
+
+[effect bit_talk_ice_tidal_wave 0,-75]
+[seVolume ade535 0.6 1.0]
+[seVolume ad14 0.6 1.0]
+[wt 1.4]
+
+[seStop ade535 2.0]
+[seStop ad14 2.0]
+[wt 1.2]
+
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+[shakeStop]
+[effectDestroy bit_talk_ice_tidal_wave]
+[pictureFrame]
+[cameraMove 0 0,10 1.01]
+[wt 0.4]
+
+[effect bit_talk_impactlanding 0,-350]
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wt 0.2]
+[se ad608]
+[wait wipe]
+[seStop ad608 0.8]
+[cameraMove 0.3 0,0 1.01]
+[wt 1.6]
+
+
+？1：得救了……
+？！
+
+[charaPut T 1]
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+＠玛修
+多亏了塔拉斯克先生，[r]总算成功回避了呢……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠乔尔乔斯
+糟了，远处又来了。[r]那是第二波吧！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠圣诞迦尔纳
+只要把这当成跳绳训练，[r]根本不足为惧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠玛尔达
+再来一次，塔拉斯克！　[#展现你的毅力吧:guts all right]！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_EVENT_70 0.1]
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 34]
+[charaFadein A 0.1 1]
+＠达·芬奇
+唔。看来那种冰浪会定期涌来呢。[r]是由于什么造成的呢～？
+[k]
+
+[branch lblConf2]
+
+[label lblNotClear2]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-90]
+＠达·芬奇
+唔。看来那种冰浪会定期涌来呢。[r]是由于什么造成的呢～？
+[k]
+
+[label lblConf2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠玛尔达
+虽然我不介意一直这么跳下去，[r]但塔拉斯克应该撑不了很久。
+[k]
+
+＠玛尔达
+只能每次来的时候回避了吧。
+[k]
+
+＠塔拉斯克
+[charaTalk T]
+GuRrruu……（羞愧不已……）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠阿周那
+和昨天冰冻的樱花一样，是这里特有的自然现象吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠乔尔乔斯
+嗯。根据感觉来说[line 3][r]这应该不是攻击。
+[k]
+
+＠乔尔乔斯
+没有龙之恶意之类的感觉。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠达·芬奇
+唔？[r]既然你这么说，那应该就是这样吧，
+[k]
+
+＠达·芬奇
+但我觉得这种周期性也不是单纯的自然现象呢……
+[k]
+
+[branch lblConf3]
+
+[label lblNotClear3]
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-90]
+＠达·芬奇
+唔？[r]既然你这么说，那应该就是这样吧，
+[k]
+
+＠达·芬奇
+但我觉得这种周期性也不是单纯的自然现象呢……
+[k]
+
+[label lblConf3]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠玛尔达
+啊，又来了！[r]总之现在只能边越过冰浪边继续前进了！
+[k]
+
+＠玛尔达
+来，塔拉斯克，看准时间跳跃！
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgm BGM_EVENT_70 1.0 0.4]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[scene 10000]
+[wt 0.15]
+
+[wipein rollLeft 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[effect bit_talk_43h_fs]
+
+[pictureFrame cut063_cinema]
+[wt 1.0]
+
+[cueSe Battle bac30]
+[fadein black 0.5]
+[wait fade]
+[cueSeStop bac30 0.4]
+
+[wt 0.4]
+
+[bgm BGM_EVENT_70 0.8 1.0]
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+[effectDestroy bit_talk_43h_fs]
+
+[scene 63703]
+[pictureFrame]
+
+[cameraMove 0 0,10 1.01]
+[wt 0.2]
+
+[effect bit_talk_impactlanding 0,-350]
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wt 0.2]
+[se ad608]
+[wait wipe]
+[seStop ad608 0.8]
+[cameraMove 0.3 0,0 1.01]
+[wt 1.6]
+
+[charaTalk T]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠T：塔拉斯克
+GRRu、Gruuu……[r]（让……让我稍微休息一会儿，大姐……）
+[k]
+
+[charaFace E 2]
+＠玛尔达
+为什么啦！？[r]我对你的锻炼有那么散漫吗！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[effectDestroy bit_talk_impactlanding]
+
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠达·芬奇
+不[line 3]看到了！[r]发生源在那里！
+[k]
+
+[branch lblConf4]
+
+[label lblNotClear4]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-90]
+＠达·芬奇
+不[line 3]看到了！[r]发生源在那里！
+[k]
+
+[label lblConf4]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaPutFSR T 1200,2000]
+
+[pictureFrame cut063_cinema]
+
+[charaScale S 1.01]
+[charaFadein S 0.1 0,-280]
+
+
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+
+[se ade526]
+[seVolume ade526 0 0.5]
+[wt 2.0]
+
+[seStop ade526 1.0]
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.7 0,-50]
+[wt 1.5]
+
+
+？1：那是……Lambda大人……
+？2：那是……Lambdaryllis……
+？！
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+
+[pictureFrame]
+
+[charaFadeout S 0.1]
+
+[charaPut T 1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+[wt 0.3]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠玛修
+还有弗栗多！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠玛尔达
+就是那家伙吗！？[r]……不是很大呢。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[pictureFrame cut063_cinema]
+
+[charaFadein S 0.1 0,-280]
+
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 0,-50]
+＠弗栗多
+噢噢，噢噢。不错。[r]吾还好奇冰上的舞蹈是什么样的存在呢，
+[k]
+
+[charaFace H 14]
+＠弗栗多
+咕噜噜地旋转再咻～地跳跃，[r]多么华丽绚烂的舞蹈啊！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+＠Lambda
+我只是在确认冰的状况。[r]还没动真格呢。
+[k]
+
+＠Lambda
+看到区区彩排就那么兴奋，[r]真是个省事的观众兼赞助人呢。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ade526]
+[charaMove G -275,-50 1.0]
+[wt 0.2]
+[charaFadeout G 0.4]
+[wt 0.2]
+[seStop ade526 0.8]
+[wt 1.2]
+
+[se ade535]
+[seVolume ade535 0 0]
+[se ad14]
+[seVolume ad14 0 0]
+[seVolume ad14 0.4 1.0]
+[seVolume ade535 0.4 1.0]
+
+[effect bit_talk_ice_tidal_wave 0,50]
+[wt 1.4]
+
+[seVolume ade535 1.2 0.1]
+[seVolume ad14 1.2 0.2]
+[wt 0.8]
+
+[wipeout rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+
+[pictureFrame]
+[effectDestroy bit_talk_ice_tidal_wave]
+
+[charaFadeout S 0.1]
+[wt 0.4]
+
+[wipein rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠玛尔达
+回避！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+
+[seVolume ade535 0.5 1.0]
+[seVolume ad14 0.5 1.0]
+[wt 1.2]
+
+[seStop ad14 1.6]
+[seStop ade535 1.6]
+[wt 2.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠圣诞迦尔纳
+原来如此。[r]迄今为止的波浪都是那滑行的余波啊。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear5 3000303]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+＠达·芬奇
+虽然完全不明白那是什么滑冰技术，[r]但她似乎只要做出旋转或跳跃那类大幅动作，
+[k]
+
+＠达·芬奇
+脚下削落冰的那个就会产生那种波浪吧……
+[k]
+[branch lblConf5]
+
+[label lblNotClear5]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+＠达·芬奇
+虽然完全不明白那是什么滑冰技术，[r]但她似乎只要做出旋转或跳跃那类大幅动作，
+[k]
+
+＠达·芬奇
+脚下削落冰的那个就会产生那种波浪吧……
+[k]
+
+[label lblConf5]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠Lambda
+哎呀？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠弗栗多
+来了呀。[r]好吧，反正热身运动似乎也结束了。
+[k]
+
+＠弗栗多
+吾当然不会出手。[r]吾会在一边观赏，所以尽情舞蹈吧。就这样。
+[k]
+
+[messageOff]
+[se ad984]
+[charaMove H 50,0 0.4]
+[charaFadeout H 0.4]
+[wt 1.0]
+
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠Lambda
+为我准备了冻结了整片海洋的特制场地，[r]还说我只要滑行舞蹈就行了……
+[k]
+
+＠Lambda
+我还当是怎么回事呢[line 3][r]啊啊，这样啊，原来如此。
+[k]
+
+＠Lambda
+还是叫来了豪华观众嘛。[r]这样我的双腿也就有动力了呢。
+[k]
+
+[charaFace G 11]
+＠Lambda
+虽说复制了我的外形，[r]让我工作这点令人有些不爽……
+[k]
+
+＠Lambda
+但既然你为我准备了特别的舞台，和还算特别的客人。[r]那我就如你所愿，为你跳上一曲吧。
+[k]
+
+？1：今天的Lambda相当于……
+？2：昨天千代女的立场吧……？
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠玛修
+没错，御主。[r]那不是Lambdaryllis小姐本人。
+[k]
+
+＠玛修
+可以视为弗栗多仿造出来的复制的存在。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠Lambda
+能别这么说吗？[r]即便是复制品，明星就是明星。
+[k]
+
+[charaFace G 11]
+＠Lambda
+哪怕是他人的替补，[r]只要我在舞蹈，就是独一无二的美。
+[k]
+
+＠Lambda
+本就是被定义为完全完美的存在。[r]讨论孰真孰假未免太无趣了。
+[k]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+[charaFace G 0]
+＠Lambda
+综上所述，我本打算开始自己的特别公演……[r]但我能先问个问题吗？
+[k]
+
+＠Lambda
+我发现有个无法坐视不理的存在。[r]就是你的那个。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠玛尔达
+那个？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠Lambda
+就是正被你坐在屁股底下的那个啦？[r]那个……与利维坦有关吧？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠玛尔达
+确实有说法说……[r]塔拉斯克是利维坦的孩子。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠Lambda
+难怪。[r]我是以利维坦为基底的高等从者哦。
+[k]
+
+＠Lambda
+当然会产生特别的感觉啦。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠玛尔达
+塔拉斯克，你有什么感觉吗？
+[k]
+
+＠塔拉斯克
+[charaTalk T]
+GuRuuu……[r]（哎？　不，突然这么问我，我也……）
+[k]
+
+＠塔拉斯克
+[charaTalk T]
+（我并没有从她身上感到什么母性。[r]　但真要说我觉得和她毫无关系嘛，唔……）
+[k]
+
+[charaFace E 2]
+＠玛尔达
+你看，这完全没印象的表情！[r]少在那里胡说八道了！
+[k]
+
+＠玛尔达
+估计谁都不会对你说，所以我要告诉你，
+[k]
+
+＠玛尔达
+你的基底根本不是什么利维坦，[r]而是企鹅吧？
+[k]
+
+？1：（不愧是玛尔达小姐，直球吐槽！）
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth G 6]
+[charaDepth U 4]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠Lambda
+哈啊？[r]这怎么看都是利维坦吧！？
+[k]
+
+[charaPut U 0,-200]
+[charaFace G 0]
+[charaFadeTime U 0.1 0.6]
+＠Lambda
+（虽然我也不知道利维坦真正的样子。[r]　但既然它这亲近以利维坦为基底的我，）
+[k]
+
+＠Lambda
+（而我的魔力也是基于它发生的，[r]　那它只可能是利维坦了吧……对吧！？）
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout U 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠乔尔乔斯
+说起利维坦，我记得应该是龙种。
+[k]
+
+＠乔尔乔斯
+虽然有龙种的感觉，但若问究竟来自[r]眼前的她，还是那只可爱的生物……
+[k]
+
+＠乔尔乔斯
+不进一步调查我也不知道呢[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠Lambda
+给[messageShake 0.02 3 3 0.3]我闭嘴！[r]另外禁止触碰演员！　这是常识吧！？
+[k]
+
+＠Lambda
+总之，身为母亲利维坦，[r]我对那孩子的待遇有意见。
+[k]
+
+[charaFace G 1]
+＠Lambda
+[line 3]来，过来吧。
+[k]
+
+＠Lambda
+我会立刻想出能活用你那巨大身躯的新节目。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk T]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠T：塔拉斯克
+GuRu……？（哎？）
+[k]
+
+[charaFace E 2]
+＠玛尔达
+你做什么啦！[wt 0.6][charaFace E 0][r]塔拉斯克是我的……什么来着，小弟？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠Lambda
+小弟……呵，那是什么过时的称呼。[r]就没有更符合时代的词了吗？
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaMove G 100,0 0.3]
+[wt 0.2]
+[cueSe Battle bac11]
+[cueSeVolume bac11 0 0.4]
+[charaMove G 85,0 0.1]
+[wt 0.6]
+
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[wt 0.4]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠玛尔达
+虽说我的确是公元一世纪的女人，[r]但你没资格对我提意见！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaMove E -100,0 0.3]
+[wt 0.2]
+[cueSe Battle bac98]
+[cueSeVolume bac98 0 0.4]
+[cueSeStop bac98 0.5]
+
+[charaMove E -85,0 0.1]
+[wt 0.6]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.4]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+[wt 0.3]
+
+[charaMove G 100,0 0.3]
+[wt 0.3]
+[cueSe Battle bac11]
+[cueSeVolume bac11 0 0.4]
+[charaMove G 85,0 0.1]
+[wt 0.4]
+
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[wt 0.3]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[wt 0.3]
+
+[charaMove E -100,0 0.3]
+[wt 0.3]
+[cueSe Battle bac98]
+[cueSeVolume bac98 0 0.4]
+[cueSeStop bac98 0.5]
+[charaMove E -85,0 0.1]
+[wt 0.4]
+
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.3]
+
+[charaTalk off]
+[charaDepth G 6]
+[charaDepth E 4]
+
+[charaFace G 5]
+[charaFace E 5]
+[charaFadein E 0.1 326,0]
+[charaFadein G 0.1 -326,0]
+
+[charaMove E 226,0 0.4]
+[charaMove G -226,0 0.4]
+
+[wipein circleIn 0.4 1.0]
+[wait wipe]
+
+[se ad787]
+[charaShake E 0.03 2 3 0]
+[charaShake G 0.03 2 3 0]
+[wt 2.0]
+
+？1：塔拉斯克被夹在中间……
+？2：左右分别向塔拉斯克……
+？！
+
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaShakeStop E]
+[charaShakeStop G]
+
+
+[charaTalk on]
+[charaPut T 1]
+[charaTalk F]
+[charaFace F 15]
+[charaFadein F 0.1 1]
+＠玛修
+Lambda小姐用踢踹！[r]而玛尔达小姐则用拳头同时推挤，
+[k]
+
+＠玛修
+都企图将塔拉斯克先生打向对面砸对方！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠阿周那
+在我看来，完全处于抗衡状态。[r]力量不分伯仲。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk G]
+[charaFace G 2]
+[charaFace E 0]
+[charaFadein G 0.1 -226,0]
+[charaFadein E 0.1 226,0]
+[charaShake G 0.02 3 3 0.6]
+＠Lambda
+混……蛋……它是利维坦之子，[r]当然应该……由我来保护啦……！
+[k]
+
+
+[charaFace E 2]
+[charaShake E 0.02 3 3 0.6]
+＠玛尔达
+不过是个突然冒出来的小丫头……[r]你以为……是谁……让它改过自新的啊……！
+[k]
+
+＠塔拉斯克
+[charaTalk T]
+（大姐，大姐～！　请等一下，[r]　这，我要被双方，压扁了，啊巴巴巴……）
+[k]
+
+＠塔拉斯克
+[charaTalk T]
+（要出来了！　我里面的要出来了～！）
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad787]
+[charaShake G 0.02 2 4 0]
+[charaShake E 0.02 2 4 0]
+[wt 2.0]
+
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaShakeStop E]
+[charaShakeStop G]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠圣诞迦尔纳
+我知道[line 3]这种情况。
+[k]
+
+＠圣诞迦尔纳
+不，和圣诞老人、拳击或是过去的教诲无关，[r]是在资料库的资料里看到的。
+[k]
+
+＠圣诞迦尔纳
+应该是叫……二母争子……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+＠玛修
+两个母亲同时拉扯一个孩子的手，[r]是这么个故事吧。我也知道。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear6 3000303]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+＠达·芬奇
+而这次则是相互推搡，不过嘛，[r]状况应该……非常相似吧？
+[k]
+
+[branch lblConf6]
+
+[label lblNotClear6]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-90]
+＠达·芬奇
+而这次则是相互推搡，不过嘛，[r]状况应该……非常相似吧？
+[k]
+
+[label lblConf6]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠玛修
+如果参照那个故事的案例，[r]在争夺过程中输掉的那方才拥有正当性……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+[charaTalk depthOff]
+[charaTalk E]
+[charaFace E 2]
+[charaFace G 2]
+[charaFadein E 0.1 226,0]
+[charaFadein G 0.1 -226,0]
+＠玛尔达
+嘿[messageShake 0.02 3 3 0.3]呀！
+[k]
+
+[messageOff]
+[charaMove E 196,0 0.1]
+[wt 0.05]
+[cueSe Battle bac10]
+[cueSeVolume bac10 0 0.8]
+[charaShake G 0.02 3 3 0.6]
+[wt 0.8]
+
+＠塔拉斯克
+[charaTalk T]
+（啊，大姐的一击打破了平衡……[r]　呜噢噢噢，强行硬塞！）
+[k]
+
+
+[charaFace G 5]
+＠Lambda
+呜！？
+[k]
+
+[messageOff]
+
+[se ad85]
+[seVolume ad85 0 0]
+[seVolume ad85 0.4 0.8]
+[wt 0.1]
+[charaMoveFSL G -480,0 0.4]
+[charaFadeout G 0.4]
+[wt 0.9]
+
+[cueSe Servants_401900 bac943]
+[cueSeVolume bac943 0 0.5]
+[shake 0.05 2 2 0.8]
+[wt 0.4]
+[cueSeStop bac943 0.8]
+[wt 1.0]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[charaTalk depthOff]
+[charaDepth G 6]
+[charaDepth U 4]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+[wt 0.4]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+＠Lambda
+呵……呵呵呵……露出马脚了吧。
+[k]
+
+＠Lambda
+因为担心给塔拉斯克造成痛苦，[r]我一直没有使用全力哦。
+[k]
+
+[charaFace G 10]
+[charaFadeTime U 0.1 0.6]
+＠Lambda
+（其实就是在拼力量时输掉了，[r]　但就当是这么回事好啦。）
+[k]
+
+[charaFace G 11]
+＠Lambda
+（像我这么个嗜虐的舞姬怎么会因为[r]　他人的痛苦而心软到手下留情嘛？）
+[k]
+
+[charaFace G 9]
+＠Lambda
+（比起力量，明星更需要优雅。[r]　这样做就像反证了我的美！）
+[k]
+
+[charaFace G 0]
+[charaFadeout U 0.1]
+＠Lambda
+明白吗？　看上去腹肌很坚硬的女人。[r]没注意到孩子痛苦的你才是……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 0.4]
+
+[charaTalk depthOn]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠玛尔达
+荒[messageShake 0.02 3 3 0.3]谬！[r]漏出马脚的应该是你吧！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠Lambda
+哈？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠玛尔达
+手下留情？[r]你说什么天真的话呢。
+[k]
+
+[charaFace E 2]
+＠玛尔达
+我相信塔拉斯克的健壮！[r]但你没有相信它！
+[k]
+
+＠玛尔达
+对，这[line 3][r]就是对塔拉斯克信任的差距！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 1]
+＠Lambda
+！[messageShake 0.02 3 3 0.3]！？[r]（这女人用美妙的嗓音说些什么鬼话啊！？）
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠玛尔达
+也就是说，无论怎么解释，都是我赢了！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠乔尔乔斯
+信任……信任啊。这个嘛，从好的方面想，[r]也不是不能这么解释……
+[k]
+
+？1：算是经验上的差距吧。
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠塔拉斯克
+GuRRuuu……（大姐比任何人都[r]了解我的健壮呢……好痛好痛……）
+[k]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠Lambda
+呜……好吧。[r]单纯的力量比拼不是我的爱好。
+[k]
+
+[charaFace G 6]
+＠Lambda
+不仅在冰上是明星，在冰冻的海上也是明星。
+[k]
+
+[charaFace G 0]
+＠Lambda
+等我用这美丽彻底击溃你们之后，
+[k]
+
+＠Lambda
+会将塔拉斯克作为扔上舞台的礼物收下！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_4 1.0]
+[charaFaceFade G 12 0.4]
+[wt 1.0]
+
+[se ad661]
+[charaCrossFade G 3040001 12 1.0]
+[wait charaCrossFade G]
+[wt 1.0]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠圣诞迦尔纳
+礼物吗。戳中我的痛处了。[r]真行。
+[k]
+
+＠圣诞迦尔纳
+作为圣诞老人，[r]我或许也应该实现你的愿望。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠阿周那
+哎哎，又说这种蠢话……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear7 3000303]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+＠达·芬奇
+连她那种复制性存在的愿望也要实现的话，[r]可就没完没了了吧！
+[k]
+
+[branch lblConf7]
+
+[label lblNotClear7]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-90]
+＠达·芬奇
+连她那种复制性存在的愿望也要实现的话，[r]可就没完没了了吧！
+[k]
+
+[label lblConf7]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+[charaEffectStop T bit_talk_10_LowLevel]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠圣诞迦尔纳
+这样啊。……说得也对。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠玛尔达
+我刚才还紧张了一下，担心圣诞老人会倒戈，[r]总之你能接受就好。
+[k]
+
+＠玛尔达
+好了，我们上吧[line 3]虽然[r]我不知道这家伙究竟是不是利维坦！
+[k]
+
+[charaFace E 2]
+＠玛尔达
+但看来不只是[#孩子:塔拉斯克]，[r]做妈的性格也得靠这双拳头来修正才行！
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

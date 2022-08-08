@@ -1,0 +1,131 @@
+
+
+
+＄94-03-66-04-1-1
+
+[soundStopAll]
+
+[charaSet A 4032000 1 莱妮丝]
+[charaSet B 6015001 1 暗杀者]
+[charaSet C 1098164700 1 阿斯特赖亚_脸部剪影]
+[charaSet D 9008000 1 阿斯特赖亚]
+
+[charaDepth C 1]
+[charaDepth D 0]
+
+[scene 73200]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 80,0]
+[charaShake B 0.05 2 1 0.6]
+[charaMove B 20,0 0.2]
+[wt 0.2]
+[charaMove B 1 0.2]
+[wt 0.2]
+[seStop ad671 0.5]
+
+＠暗杀者
+要输了吗……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+怎么，准备认输了？[r]那就老实交代吧。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+＠暗杀者
+我倒是无所谓，[bgmStop BGM_EVENT_80 1.5][r]不过我的雇主好像到了。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.7]
+
+[se ad60]
+[wt 1.2]
+[seStop ad60]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.7 1]
+[wt 1.2]
+
+＠C：？？？
+辛苦了。凯利。[bgm BGM_EVENT_71 0.1]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：凯利
+我说过了不要用那个名字叫我。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[wt 0.5]
+
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[charaFadeout C 1.5]
+[wt 1.8]
+
+＠D：？？？
+就算你这么说，但只要我一看见你，[r]就忍不住想这么叫你。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+[line 2]露、露维娅？！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_71 2.0]
+[wait fade]
+[soundStopAll]
+[end]
+

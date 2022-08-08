@@ -1,0 +1,511 @@
+
+
+
+＄94-04-01-27-1-0
+
+[soundStopAll]
+
+
+[charaSet A 1009001 1 莫德雷德]
+[charaSet B 3039001 1 加雷斯]
+[charaSet C 1098181000 1 兰斯洛特]
+[charaSet D 1098155200 1 高文]
+[charaSet E 1040000 1 葛饰北斋]
+[charaSet F 6019300 1 风魔小太郎]
+[charaSet G 98100400 1 玛修]
+[charaSet H 7036001 1 宫本伊织]
+[charaSet I 2023300 1 莫里亚蒂]
+[charaSet J 5009000 1 特效用]
+
+[scene 82200]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.2]
+[charaEffect A bit_talk_quickmove]
+[charaFadeout A 0.1]
+[se ad73]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+[wt 0.2]
+[charaEffect B bit_talk_quickmove]
+[charaFadeout B 0.1]
+[se ad73]
+[wt 0.3]
+
+[charaRoll J 15]
+[charaEffect J bit_talk_v_slash01]
+[se ad171]
+[wt 0.35]
+[charaPut J 1200,1200]
+[charaRoll J 0]
+[effect bit_talk_h_slash01]
+[se ad171]
+[wt 0.3]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 1]
+[charaScale C 1.1]
+[charaFadein C 0 1]
+[charaShake C 0.02 3 3 0]
+[charaPut J -70,50]
+[charaScale J 1.2]
+[charaEffect J bit_talk_14]
+[se ad32]
+[wt 0.1]
+[charaScale J 1.4]
+[charaPut J -50,-20]
+[charaEffect J bit_talk_14]
+[se ad618]
+[wt 0.1]
+
+[se ad671]
+[seStop ad671 1.0]
+[charaMoveScale C 1.0 0.3]
+[charaMove C 0,0 0.3]
+[wt 0.8]
+[charaShakeStop C]
+[charaScale J 1.0]
+[charaPut J 1200,1200]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_3 2.0]
+
+[charaMove C 0,-10 0.3]
+[wt 0.3]
+[se bac2]
+
+＠兰斯洛特
+…………了不起，加雷斯。
+[k]
+
+＠兰斯洛特
+你变强了。[r]不对，当时你已经很强了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠加雷斯
+呼，哈。[r]呜呜，愧不敢当……兰斯洛特大人……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠莫德雷德
+笨蛋别哭！[r]哭了可就算你输了哦！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad95]
+[seVolume ad95 0 0.05]
+[seVolume ad95 1.8 1.0]
+[wt 2.5]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.7]
+[seStop ad95 0.1]
+
+＠高文
+[line 3]到此为止。已经够了吧。[bgm BGM_EVENT_70 0.1]
+[k]
+
+＠高文
+和快乐的崔斯坦一起退下吧，[r]骑士兰斯洛特。接下来就交给我吧。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[wt 1.0]
+[charaMove C -100,0 2.0]
+[se ad95]
+[wt 0.5]
+[charaFadeout C 0.4]
+[seStop ad95 0.6]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠高文
+用人妻对抗崔斯坦。[r]用加雷斯对抗兰斯洛特。
+[k]
+
+＠高文
+真是精彩的安排。[r]那你打算用什么对付我呢？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 1.0]
+[cueSe NoblePhantasm_100800 NP_100800_2]
+[wt 1.0]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth J 9]
+
+[charaPut J 1]
+[charaEffect J bit_talk_charge_red]
+[se ad61]
+[se ad556]
+[seVolume ad556 0 0.6]
+[wt 2.0]
+[seStop ad61 0.5]
+[seStop ad556 0.5]
+[se ad574]
+[fadeout white 0.2]
+[wait fade]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_charge_red]
+[charaSet B 1029300 1 亚瑟]
+[charaSet C 1029300 1 亚瑟_剪影]
+[charaFilter C silhouette 00000080]
+[fadein white 1.0]
+[wait fade]
+[seStop ad574 0.5]
+[wt 0.9]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaFace D 5]
+
+＠高文
+现在是白天。[r]太阳圣剑全力迎击各位。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 28]
+[charaFadein E 0.1 1]
+
+＠葛饰北斋
+咿[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠风魔小太郎
+呃……！[r]这巨大的魔力！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 15]
+[charaFadein G 0.1 1]
+
+＠玛修
+果……果然应该选择晚上进攻吧……
+[k]
+
+＠玛修
+可是卡美洛赌场[#晚上不营业]！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠风魔小太郎
+正是！[r]晚上强大的结界会覆盖整个赌场……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+
+
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+
+＠葛饰北斋
+就是在我们刚来拉斯维加斯时，[r]把我弹回来的那个看不见的壁垒！
+[k]
+
+＠葛饰北斋
+我们好不容易赢了七色决胜中的六色，[r]才得以进入了卡美洛……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠高文
+没错，挑战者们仅被允许在白天入场。[r]也就是我的时间。
+[k]
+
+[charaFace D 5]
+＠高文
+来吧，让我看看你们打算如何战斗！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+
+＠宫本伊织
+……呜呜。[r]如果是平时，就算明知不行，我也会拔刀，
+[k]
+
+[charaFace H 5]
+
+＠宫本伊织
+可这次却行不通了。[r]如果在这里被打败的话，一切就都白费了啊！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠莫里亚蒂
+呵呵。别慌。
+[k]
+
+[charaFace I 6]
+
+＠莫里亚蒂
+你们从我这儿买了策略。[r]那我当然也准备了针对他的计策[line 3]
+[k]
+
+[charaFace I 5]
+
+＠莫里亚蒂
+圣剑！
+[k]
+
+[charaFace I 2]
+
+＠莫里亚蒂
+就该[#用圣剑来对抗]，你来！
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_24 1.0]
+
+[se ad715]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.3]
+[charaFace D 2]
+
+
+[charaPut J 0,-30]
+[charaScale J 1.5]
+[charaEffect J bit_talk_Slash_white_01]
+
+[charaShake D 0.05 7 2 0.5]
+[se ad32]
+[effect bit_talk_14 0,50]
+[flashin once 0.1 0.2 FFFFFF80 FFFFFF80]
+[wt 0.5]
+
+＠高文
+！！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaShakeStop D]
+
+[wt 0.5]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth B 2]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.7 1]
+[wt 1.1]
+
+＠声音
+不愧是太阳圣剑。[r]既然挡下了刚才那招，说明果然如此。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠高文
+这声音、气息……！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.8]
+[charaFace B 5]
+[charaFadein B 0.7 1]
+[wt 1.1]
+
+＠亚瑟
+与我所知的太阳圣剑很像。[bgm BGM_EVENT_82 0.1][r]高文。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠高文
+亚瑟·潘德拉贡！[r]来自异世界的稀人，另一位陛下……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠莫德雷德
+你终于来啦，男的父王！[r]一直不出现，真是担心死我了！
+[k]
+
+？1：啊，原来如此！
+？2：赠品指的就是亚瑟啊！
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+[wt 1.2]
+
+[charaFace B 6]
+＠亚瑟
+我一直在等出场机会！[r]莫里亚蒂教授再三叮嘱我不能太早出现。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠莫里亚蒂
+毕竟圣剑可是保留的大招嘛。[r]好了，这下战斗力应该无可挑剔了吧。
+[k]
+
+＠莫里亚蒂
+高文卿。[r]不对，应该是夏威夷衫骑士高文。我们可要进去了哦。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠高文
+[line 3]配得上当我的对手。[r]我会赌上[#太阳:夏威夷衫]和圣剑，全力当你的对手！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠葛饰北斋
+蠢货，圣剑算什么！[r]我有四刀，至少在数量上胜你一筹！
+[k]
+
+[charaFace E 2]
+
+＠葛饰北斋
+如起舞般战斗，如战斗般起舞！[r]我要打败你！　嘿呀[line 6]！
+[k]
+
+[messageOff]
+[charaMoveScale E 1.05 0.2]
+[charaMove E 0,10 0.2]
+[se bac1]
+
+[charaPut J 1]
+[effect bit_talk_41]
+[shake 0.05 4 2 3.0]
+[wt 0.5]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_82 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+

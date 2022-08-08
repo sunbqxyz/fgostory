@@ -1,0 +1,218 @@
+
+＄91-10-36-01-1-0
+
+
+[soundStopAll]
+
+[charaSet A 1036001 1 兰陵王]
+[charaSet B 4034001 1 巴沙洛缪]
+[charaSet C 98110000 1 柳生但马守]
+
+
+[branchQuestNotClear lblNotClear1 3000303]
+[flag IsClear true]
+[branch lblConf1]
+[label lblNotClear1]
+[flag IsClear false]
+[label lblConf1]
+
+
+[branch lblNotClear2 IsClear false]
+[scene 66600]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10310]
+[label lblConf2]
+
+[pictureFrame cut063_cinema]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.4]
+
+＠
+上午七点。[bgm BGM_EVENT_5 0.1 0.7]
+[k]
+
+＠
+这是迦勒底大多从者开始活动的时间段。
+[k]
+
+＠
+当然，始终维持灵体化，[r]以及熬夜的从者不算在内。
+[k]
+
+＠
+不管怎么说，目标对象[r]似乎也会在上午七点开始活动。
+[k]
+
+＠
+虽说从者们不需要进食，但为了维持圆滑的[r]人际关系，寻求精神的满足，他们也会进食。
+[k]
+
+[messageOff]
+[fadeout black 1.4]
+[bgm BGM_EVENT_5 1.4 0.5]
+[wait fade]
+
+[branch lblNotClear3 IsClear false]
+[scene 66700]
+[branch lblConf3]
+[label lblNotClear3]
+[scene 60300]
+[label lblConf3]
+
+[wt 0.2]
+
+[fadein black 1.4]
+[wait fade]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 0,-50]
+[wt 0.4]
+
+＠兰陵王
+早上好，各位。
+[k]
+
+＠
+[charaTalk C]
+目标对象坐到了饭桌旁。[bgm BGM_EVENT_5 0.4 0.7]
+[k]
+
+＠
+[charaTalk C]
+另外，他的进食内容只有一片面包，[r]加上一杯橙汁而已。
+[k]
+
+＠
+[charaTalk C]
+他很快用完了早餐，[r]开始与周围从者闲谈。
+[k]
+
+[messageOff]
+[wipeout rollRight 1.4 1.0]
+[bgmStop BGM_EVENT_5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[wipein rollLeft 1.4 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠巴沙洛缪
+其实我也算是遮眼属性哦。[bgm BGM_EVENT_7 0.1 0.7]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 0]
+[charaFadein B 0.1 -256,-50]
+[charaFadein A 0.1 256,-50]
+
+＠兰陵王
+原来如此。
+[k]
+
+[charaFace B 1]
+
+＠巴沙洛缪
+也就是说，迟早有一天，[r]你也会放下刘海哦。
+[k]
+
+[charaFace A 1]
+
+＠兰陵王
+哈哈哈。[r]插句题外话。
+[k]
+
+[charaFace B 4]
+
+＠巴沙洛缪
+（唔，被转移话题了……）
+[k]
+
+[messageOff]
+[wipeout rollRight 1.2 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[wipein rollLeft 1.2 1.0]
+[wait wipe]
+
+＠
+[charaTalk C]
+上午八点。
+[k]
+
+＠
+[charaTalk C]
+认真的从者们开始了研究、训练、调查等工作。
+[k]
+
+[messageOff]
+[wipeout rollRight 1.2 1.0]
+[bgmStop BGM_EVENT_7 1.2]
+[wait wipe]
+
+[scene 37300]
+
+[wipein rollLeft 1.2 1.0]
+[wait wipe]
+
+＠
+[charaTalk C]
+目标对象也非常自然地选择去模拟装置训练。
+[k]
+
+＠
+[charaTalk B]对手是[line 3]
+[k]
+
+[messageOff]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 0,-50]
+[wt 0.4]
+
+[se ad51]
+[wt 0.7]
+
+＠柳生但马守
+由我来当您的对手吧。[bgm BGM_EVENT_3 0.1]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠兰陵王
+十分感谢，柳生阁下。[wt 0.5][charaFace A 2][r]那么[line 3]我要上了！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

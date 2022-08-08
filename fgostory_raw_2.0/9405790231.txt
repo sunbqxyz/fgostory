@@ -1,0 +1,774 @@
+
+
+
+＄94-05-79-02-3-1
+
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098230000 1 X·Alter]
+[charaSet B 98001000 1 玛修]
+[charaSet C 5046001 1 克莱恩小姐]
+[charaSet D 1098230100 1 粉丝A]
+[charaSet E 1098230300 1 粉丝B]
+[charaSet F 1098230200 1 粉丝C]
+[charaSet G 7016300 1 玉藻猫]
+[charaSet H 4013400 1 梅芙]
+
+
+[charaSet O 4031000 1 特效用]
+
+[scene 112400]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠X·Alter
+呼……练习、战斗、练习、战斗、[r]战斗练习练习战斗。
+[k]
+
+＠X·Alter
+日程排得密集到前所未有。
+[k]
+
+？1：小艾，累了吗？
+？！
+
+[charaFace A 1]
+＠X·Alter
+不，并不怎么累。感觉穿上了这身灵衣，[r]就能无限表演下去。
+[k]
+
+[charaFace A 18]
+＠X·Alter
+我的Alter莉雅反应炉也在高速旋转。[r]Unlimited……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad6]
+[seVolume ad6 0 0]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠克莱恩小姐
+呵呵，小艾真会奉承人。[r]好，休息一会儿吧。吃点美味的点心[line 3]
+[k]
+
+[bgmStop BGM_EVENT_2 1.0]
+[seVolume ad6 0.3 0.2]
+
+＠人们的欢呼
+[charaTalk O]
+哇啊啊啊啊啊啊！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+什……什么骚动声？
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[pictureFrame cut063_cinema]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[seVolume ad6 0.5 1.0]
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[charaTalk depthOff]
+[charaDepth D 6]
+[charaDepth E 5]
+[charaDepth F 4]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFace E 1]
+[charaFace F 2]
+[charaFadeinFSR D 0.1 256,-50]
+[charaFadein E 0.1 0,-50]
+[charaFadeinFSL F 0.1 -256,-50]
+
+[seStop ad6 2.0]
+
+＠粉丝A
+呜哇啊啊！　是无女！[r]是无女的两位啊[line 3]！
+[k]
+
+＠粉丝B
+快看！　是梅芙！[r]正用视线拥抱着我！
+[k]
+
+＠粉丝C
+猫咪[line 4]！[r]轻轻地啃咬我吧[line 4]！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+[charaTalk depthOn]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 0,-50]
+[wt 0.8]
+
+[bgm BGM_MAP_72 0.1 0.8]
+
+＠玉藻猫
+粉丝啊，散去吧！　稍后我会充分疼爱你们！[r]现在我们还有要事在身！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk D]
+[charaFace D 1]
+[charaFace E 1]
+[charaFace F 1]
+[charaFadeinFSR D 0.1 256,-50]
+[charaFadein E 0.1 0,-50]
+[charaFadeinFSL F 0.1 -256,-50]
+＠粉丝A
+啊，好的！[wt 0.5][charaFace D 2][r]大家，这是无女的吩咐！　克制一下！
+[k]
+
+[charaTalk off]
+[charaFace F 2]
+＠全体粉丝
+是！　解散！
+[k]
+
+[messageOff]
+[se ade210]
+[charaMoveFSR D 356,-50 0.4]
+[charaMoveFSL F -356,-50 0.4]
+[charaFadeout D 0.4]
+[charaFadeout E 0.4]
+[charaFadeout F 0.4]
+[wt 0.4]
+[seStop ade210 1.0]
+[wt 0.6]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_MAP_72 1.0 0.4]
+[wait wipe]
+
+[pictureFrame]
+[wt 0.7]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+[bgm BGM_MAP_72 1.0 0.8]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠玛修
+看上去相当热闹呢，[r]『无女』是什么啊？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠X·Alter
+偶像组合·∞QUEEN。[r]意思是『无限女王』……因此爱称是『无女』。
+[k]
+
+＠X·Alter
+实力、粉丝数、销量全都是这片区域的顶流。[r]实力非常强大，是顶级偶像之一。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠克莱恩小姐
+您真了解呢，小艾。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠X·Alter
+……嗯，差不多吧。[r]而关键的成员[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ade198]
+[wt 0.8]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 -80,0]
+[charaMove G 0,0 0.6]
+[wt 0.4]
+[seStop ade198 0.4]
+[wt 0.6]
+
+＠玉藻猫
+唔喵！　雷达探测到信号！[r]凝视的猫眼Catch the Rainbow。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad173]
+[wt 0.8]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.4]
+[seStop ad173 0.5]
+[wt 0.4]
+
+＠梅芙
+是在这里吧？[wt 0.5][charaFace H 10][r]……哎呀，御主，还有玛修。
+[k]
+
+[charaFace H 0]
+＠梅芙
+你们看上去也挺精神嘛。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠玉藻猫
+在某个晴朗的午后，在那无法通往市集的公园[r]与喵咪汪derful地实现了重逢蹦跳！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+梅芙小姐和猫咪小姐[r]在这个特异点当偶像吗……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 12]
+[charaFadein H 0.1 1]
+＠梅芙
+身为美之女王的我当然会这么做啦。[r]你们好像也创办了个很小的事务所吧。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+啊，是的。[r]您连这事都知道了啊。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 14]
+[charaFadein H 0.1 1]
+＠梅芙
+那当然啦。因为我们[#∞QUEEN:无限女王]，[r]就是支配这个区域的顶流偶像嘛。
+[k]
+
+＠梅芙
+无论什么事，都无法逃脱我的天线。
+[k]
+
+[se ad173]
+[charaMoveScale H 1.1 0.4]
+[charaMove H 0,15 0.4]
+[charaFace H 12]
+
+＠梅芙
+好了，比起这种事。[r]报告中提到的就是『这家伙』吧。[seStop ad173 0.5]
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaScale H 1.0]
+
+[wt 0.4]
+[cameraMove 0.6 0,30 1.1]
+[wt 1.0]
+[charaFaceFade A 16 0.2]
+[cameraMove 1.2 0,-15 1.1]
+[wt 1.8]
+[cameraMove 0.5 0,0 1.0]
+[wt 0.8]
+
+＠X·Alter
+…………
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_MAP_72 2.0]
+
+[charaTalk H]
+[charaFace H 12]
+[charaFadein H 0.1 1]
+
+＠梅芙
+嗯……唔。原来如此原来如此。[r]挺好的。合格。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+
+＠X·Alter
+哎？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠梅芙
+我很喜欢[#那套服装]。[r]制作这衣服的工作人员是谁？
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠克莱恩小姐
+嗯，是我。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠梅芙
+OK，从现在开始，加入我们吧。[r]具体条件细则可以和经纪人谈。
+[k]
+
+[charaFace H 12]
+
+[bgm BGM_EVENT_48 0.1]
+
+＠梅芙
+最美的衣服当然应该给最棒的偶像穿。[r]也就是我们。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠玉藻猫
+只要将恺撒的东西还给恺撒，[r]将青蛙的东西还给青蛙，就能平安归来。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+[wt 1.4]
+[charaFace C 7]
+[wt 0.4]
+
+＠克莱恩小姐
+『最美的衣服当然应该给最棒的偶像穿。』[r]……真是句名言。我完全同意。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[charaShake A 0.05 0 3 0.2]
+[wt 0.8]
+
+[charaFaceFade A 4 0.3]
+[wt 1.4]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 12]
+[charaFadein H 0.1 1]
+＠梅芙
+我喜欢你这种明事理的人。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠玛修
+克莱恩小姐……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠X·Alter
+…………
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_48 1.0]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠克莱恩小姐
+综上所述，梅芙亲。[r]我的服装是属于小艾的。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+＠梅芙
+……哈？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠克莱恩小姐
+因为，『最棒的偶像』就是她啊。[bgm BGM_EVENT_82 0.1]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠X·Alter
+…[messageShake 0.05 4 3 0.4]………！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+[wt 1.2]
+[charaFaceFade H 5 0.1]
+[wt 0.1]
+
+＠梅芙
+你这人的服装审美虽然很好，但毫无开玩笑的天分呢。[r]真无趣，一点也笑不出来。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠克莱恩小姐
+您觉得这是玩笑吗？[r]呵呵，如果让您误会了，我会向您道歉。
+[k]
+
+[charaFace C 8]
+＠克莱恩小姐
+那我就直说了。
+[k]
+
+[charaFace C 2]
+＠克莱恩小姐
+Non merci！[r]请恕我拒绝您的挖角。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+＠梅芙
+呜……！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠玉藻猫
+噢噢，申诉也用法语拒绝。[r]梅芙的反应将会如何？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+＠梅芙
+……无所谓啦。[r]想让我穿的服装要多少有多少。
+[k]
+
+[charaFace H 2]
+＠梅芙
+你白白浪费了难得的机会哦，设计师。[r]我本打算在下次参加[#Grail Live:圣杯演唱会]时穿呢。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠玛修
+[#Grail Live:圣杯演唱会]……！[r]梅芙小姐你们拥有参赛券吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠梅芙
+你当我是谁啊？　当然啦。而且我会获得优胜。[wt 1.0][charaFace H 13][r]好了，我们回去继续练习吧，猫咪。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠玉藻猫
+Aye-aye搭档！
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ad173]
+[se ade198]
+[seStop ad173 2.0]
+[seStop ade198 2.0]
+[charaMoveFSL G 50,0 0.4]
+[charaFadeout G 0.4]
+[bgmStop BGM_EVENT_82 1.5]
+[wt 2.0]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+＠X·Alter
+……………………[r]『当然』吗……好强啊。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+＠克莱恩小姐
+…………[wt 0.4][charaFace C 13][messageShake 0.04 3 3 0.4]噗哈！　啊、啊、啊～……[wt 0.6][charaFace C 3][r]活的无女，超可爱……心脏都要停止跳动了。
+[k]
+
+[charaFace C 2]
+＠克莱恩小姐
+在如此近距离！　[wt 0.6][charaFace C 8]一想起来就觉得要命……结婚吧。[r]情绪都要炸了。真亏我坚持下来了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠X·Alter
+请问，克莱恩小姐。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠克莱恩小姐
+怎么了，小艾。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠X·Alter
+我想不到合适的措辞用来感谢[line 3][r]但我还是要谢谢你拒绝了梅芙小姐的挖角。
+[k]
+
+[charaFace A 9]
+
+＠X·Alter
+那个……非常感谢。我很高兴。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠克莱恩小姐
+唔[messageShake 0.04 3 2 0.5]～～～！！！
+[k]
+
+[charaFace C 3]
+＠克莱恩小姐
+讨厌啦，可爱死了！　还用说吗！[r]你可别小看我的专一哦！
+[k]
+
+[se ad775]
+[charaMove C 0,-10 0.4]
+[charaFace C 4]
+＠克莱恩小姐
+恕我失礼，我先在椅子上坐一会儿。[r]呼，这幸福感……我能沉浸一百年……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠X·Alter
+虽然这积极的反应总是令人非常高兴，[r]但我毕竟等不了一百年。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad7]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-10]
+[charaMove C 1 0.4]
+
+＠克莱恩小姐
+啊，对了！
+[k]
+
+[charaFace C 8]
+＠克莱恩小姐
+无女拥有[#Grail Live:圣杯演唱会]的参赛券……[r]基于这重要的情报，举行作战会议吧！
+[k]
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

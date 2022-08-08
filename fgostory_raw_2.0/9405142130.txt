@@ -1,0 +1,285 @@
+
+＄94-05-14-21-3-0
+
+
+[soundStopAll]
+
+[charaSet A 1098199800 1 徐福]
+[charaSet B 3044000 1 雏罂]
+[charaSet C 1033300 1 齐格鲁德]
+[imageSet D cut206_Immortality 1]
+[charaSet E 98115000 1 特效用1]
+[charaSet F 98115000 1 特效用2]
+[charaSet G 98115000 1 特效用3]
+[imageSet H back10000 1]
+[charaScale H 1.01]
+
+[scene 100400]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠徐福
+虞大人～。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠雏罂
+……好久不见，徐福。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠徐福
+不，一点也不久啊？[r]我们刚才还见过吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠雏罂
+嗯，说得对。[r]但还是应该说一句好久不见。
+[k]
+
+＠雏罂
+因为刚才出于各种原因，[r]没能好好向你打个招呼。
+[k]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaFace B 5]
+＠雏罂
+[line 3]综上所述，[r]我是重新来这里把你打飞的。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠徐福
+呵呵呵。[r]居然特地跑来送死。
+[k]
+
+＠徐福
+感激不尽。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠雏罂
+或许吧。[r]也就是说，不是我死就是你死吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠徐福
+会死的，当然是虞大人！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠雏罂
+谁知道呢。[r]这[line 3]究竟会怎么样呢？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠齐格鲁德
+好。
+[k]
+
+＠齐格鲁德
+彼此已经完成了问候，[r]接下来开始战争吧。
+[k]
+
+[charaFace C 2]
+＠齐格鲁德
+上！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠雏罂
+嗯。[r]跟着我，后辈！
+[k]
+
+？1：好，前辈！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠徐福
+……！
+[k]
+
+[charaFadeTime H 0.1 0.6]
+[charaFace A 17]
+＠徐福
+（后辈？　刚才叫那个人后辈！？[r]　太羡慕了[line 5]…………！）
+[k]
+
+[charaFadeout H 0.1]
+[charaFace A 8]
+＠徐福
+虽然有些唐突，但那边的你！[r]我，我要杀了你！
+[k]
+
+？1：确实够唐突！？
+[flag SEL01 1]
+
+？2：反正我是来打飞你的，扯平了。
+[flag SEL01 0]
+
+？！
+
+[branch _sel01a SEL01 1]
+[branch _sel01b]
+
+[label _sel01a]
+
+[charaFace A 5]
+＠徐福
+我才没有觉得羡慕去死吧！[r]死死死死死！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠雏罂
+是不是动摇得太激烈了？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[branch _sel01end]
+
+[label _sel01b]
+
+[charaFace A 22]
+＠徐福
+哎哎～。[r]那算什么……
+[k]
+
+＠徐福
+别开玩笑了……[r]我难道做错了什么吗……
+[k]
+
+？1：嗯，丝毫没有反省之意。
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch _sel01end]
+
+[label _sel01end]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠齐格鲁德
+虽然有些不好意思，[r]但公认不看场合的在下要开始冲锋了！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠徐福
+别过来[line 3]！[r]不死杀手，去吧[line 2]！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth E 10]
+[charaDepth F 10]
+[charaDepth G 0]
+[charaDepth D 9]
+
+[charaFadein D 0.4 0,-200]
+[wt 0.4]
+[charaBackEffect G bit_talk_charge_ppl]
+[se ad350]
+[wt 1.4]
+[charaScale E 1.5]
+[charaScale F 1.5]
+[charaPut E -80,236]
+[charaPut F 28,176]
+[charaEffect E bit_talk_starshine]
+[charaEffect F bit_talk_starshine]
+[cueSe Battle bac283]
+[seStop ad350 1.0]
+[wt 1.0]
+[charaFadeout D 0.4]
+[wt 0.4]
+[charaPut G 1200,1200]
+[charaBackEffectStop G bit_talk_charge_ppl]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠齐格鲁德
+第一次要想办法撑住。[r]……上吧！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

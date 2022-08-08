@@ -1,0 +1,387 @@
+
+
+＄94-06-43-08-2-0
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5050000 1 サンタマルタ]
+[charaSet B 2001002 1 エミヤ]
+[charaSet C 4011001 1 ブーディカ]
+[charaSet D 3047001 1 パーシヴァル]
+[charaSet E 7016001 1 タマモキャット]
+[charaSet F 99502600 1 マシュ]
+[charaSet G 1098224600 1 タラスク]
+[charaSet H 98001000 1 エフェクト用]
+[charaSet I 99348500 1 魔神柱ハーゲンティ]
+[imageSet T back10000 1 1]
+[charaScale T 2.0]
+
+[charaDepth T 2]
+
+[charaPut H 2000,2000]
+[charaEffect H bit_talk_10_LowLevel]
+
+[scene 140600]
+
+[cameraMove 0.1 0,0 1.01]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+
+[shake 0.05 3 3 2.0]
+[se ad14]
+[seVolume ad14 0 0]
+[seVolume ad14 0.7 1.0]
+[wt 1.5]
+[seStop ad14 1.0]
+[wt 0.5]
+
+[bgm BGM_EVENT_72 0.1]
+
+[charaPut H 0,0]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠マシュ
+聖杯の反応です！[r]皆さんの前方すぐ、高魔力反応があります！
+[k]
+
+[charaFadeout F 0.1]
+[charaPut H 12000,12000]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠エミヤ
+前方。[r]アレか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠サンタマルタ
+あれ、のこと……で、いいの……？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk I]
+[charaFadein I 0.4 1]
+[se ade73]
+[wt 1.5]
+[seStop ade73 0.5]
+[wt 0.5]
+
+
+＠タマモキャット
+[f large]魔神柱だこれ！
+[k]
+
+＠タマモキャット
+しかしこの質感、この甘ァ～い匂い！[r]イチゴ風味の生クリームに覆われたスポンジ[#体:ケーキ]！
+[k]
+
+＠タマモキャット
+つまり……
+[k]
+
+＠タマモキャット
+[f large]ケーキだこれ！
+[k]
+
+
+？1：ちょっと大きすぎませんかこれ！
+？2：魔神柱型のケーキ！？
+
+？！
+
+[messageOff]
+[charaTalk off]
+
+[charaPut T 0,100]
+[charaEffect T bit_talk_charge_ppl]
+[se ad14]
+[seVolume ad14 0 0]
+[seVolume ad14 1.0 0.5]
+[wt 1.5]
+
+[charaTalk on]
+
+
+＠C：ブーディカ
+すっごい魔力量。[r][#臨戦態勢:りんせんたいせい]、寄らば襲いかかるって感じ。
+[k]
+
+＠A：サンタマルタ
+……。[r]……。
+[k]
+
+[messageOff]
+[seStop ad14 0.4]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[bgmStop BGM_EVENT_72 0.4]
+[wait wipe]
+
+[cameraHome 0.1]
+
+[charaEffectDestroy T bit_talk_charge_ppl]
+[charaEffectStop H bit_talk_10_LowLevel]
+[charaFadeout I 0.1]
+[wt 0.4]
+
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+……これって。
+[k]
+
+[charaFace A 1]
+[bgm BGM_BATTLE_115 0.1]
+
+＠サンタマルタ
+これって、ええっと[#丁度いい]わね！
+[k]
+
+？1：！？
+
+[charaFace A 7]
+＠サンタマルタ
+え、何かおかしいこと言った？
+[k]
+
+？2：マルタさん！？
+
+[charaFace A 0]
+＠サンタマルタ
+なあに？
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+
+＠タマモキャット
+うんうん、わかるぞ。[r]すなわち！　[#鴨:かも]がネギ[#背負:しょ]ってきたのだな！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠ブーディカ
+食材っていうか何ていうか、[r]もはや異形のケーキが動いてる感じだけど……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠サンタマルタ
+あのね！[r]お姉さん、分かっちゃったわ！
+[k]
+
+[charaFace A 1]
+＠サンタマルタ
+[#多分これも倒せば食材になる]って！
+[k]
+
+＠サンタマルタ
+勘だけど、そう思うの。[r]どうかしら！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 1.0]
+[charaFace B 0]
+
+＠エミヤ
+[line 3]面白い。
+[k]
+
+＠エミヤ
+何せ、ケーキで出来た魔神柱だ。[r]食材エネミーと同質の存在に見えないこともない。
+[k]
+
+＠エミヤ
+スカサハ＝スカディのルーンの効き具合[r]次第ではあるが、これまでのエネミーと同じく、
+[k]
+
+＠エミヤ
+撃破すれば食材を落とす可能性は、[r]頭ごなしに否定できない。
+[k]
+
+[charaFace B 2]
+
+
+＠エミヤ
+むしろ私としても！[r]撃破を勧めたいところでは、ある！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+
+＠タマモキャット
+エミヤンもノッてきたな！[r]流石はサンタム！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠エミヤ
+おおっとノーコメント！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+
+＠パーシヴァル
+私は無論、聖女殿の予感に従うとも。[r]どうあれ聖杯で悪戯をするモノは放っておけない！
+[k]
+
+？1：オッケー！
+？2：とりあえず、撃破しよう！
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠サンタマルタ
+食材確保と事態解決！[r]いっぺんにやっちゃいましょう！
+[k]
+
+＠サンタマルタ
+この大きさ、この迫力……
+[k]
+
+[charaFace A 1]
+＠サンタマルタ
+ええ、ええ！[r][line 3]相手にとって不足なしってなものよね！
+[k]
+
+？1：あっ、雰囲気がちょっと……？
+？2：いつものマルタさんっぽく……？
+
+？！
+
+[charaFace A 5]
+＠サンタマルタ
+……じゃなくて、頑張りましょうね！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ブーディカ
+あはは、いよいよ根性見せてきたね！[r]それでこそマルタ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠サンタマルタ
+えーっと、えーっと。[r]お料理魂全開でいくわね！
+[k]
+
+[charaFace A 5]
+＠サンタマルタ
+タラスク！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad239]
+[seVolume ad239 0 0.3]
+[seVolume ad239 1.0 1.0]
+[wt 1.3]
+
+[effect bit_talk_gale 100,0]
+[wt 0.5]
+[seStop ad239 0.1]
+
+[se ad671]
+[seStop ad671 1.0]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 50,0]
+[charaMove G 0,0 0.3]
+[wt 0.8]
+
+[charaFace G 2]
+
+
+＠タラスク
+（うおおーー！　うおおおおー！）
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠サンタマルタ
+いっくわよー！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk I]
+[charaFadein I 0.1 1]
+[charaEffect I bit_talk_41_fs]
+[se ade51]
+[seStop ade51 0.7]
+[wt 0.6]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[cameraMove 0.2 0,0 1.2]
+[wt 0.1]
+[se ad85]
+[wt 0.3]
+
+[messageOff]
+[bgmStop BGM_BATTLE_115 0.5]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

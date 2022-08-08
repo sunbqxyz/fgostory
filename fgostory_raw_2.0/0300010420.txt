@@ -1,0 +1,275 @@
+
+＄03-00-01-04-2-0
+[soundStopAll]
+
+[charaSet A 8001002 1 玛修]
+[charaSet B 5036001 1 阿维斯布隆]
+[charaSet C 7030001 1 ？？？]
+[charaSet D 1098128400 1 雅嘎]
+[charaSet F 1098127000 1 魔偶]
+[charaSet H 98115000 1 特效用]
+
+[scene 54103]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[wt 0.5]
+[se ad563]
+[wt 0.4]
+[se ad170]
+[wt 0.2]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaMoveScale F 1.2 0.2]
+[charaMove F 0,30 0.2]
+[charaFadeout F 0.1]
+[fowardEffect bit_talk_h_slash01]
+[se ad85]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+[wt 0.2]
+
+[se bac10]
+
+[fowardEffect bit_talk_13]
+[charaShake D 0.05 4 4 1.2]
+[wait se bac10]
+
+[wt 0.3]
+[charaMove D 0,-15 0.4]
+[wt 0.4]
+[se ad54]
+[wt 0.4]
+
+＠雅嘎
+咕，呜……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+
+[wt 0.3]
+
+[charaTalk depthOff]
+[charaDepth F 6]
+[charaDepth H 8]
+
+[se ad248]
+[seVolume ad248 0 0.0]
+[seVolume ad248 0.5 1.0]
+[charaPut H 1]
+[charaEffect H bit_talk_arrow_enemy_l]
+[wt 0.8]
+[seStop ad248 0.1]
+[cueSe Servants_9934800 boss06]
+[shake 0.05 4 4 0.3]
+[wt 0.2]
+[se bac59]
+[fowardEffect bit_talk_explosion_triple]
+[shake 0.05 4 10 0.5]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_arrow_enemy_l]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[fowardEffectStop bit_talk_explosion_triple]
+[wt 0.5]
+[cueSe Battle bac434]
+[wt 1.0]
+[bgmStop BGM_EVENT_80 0.7]
+[charaShake F 0.05 6 2 1.5]
+[charaMove F 0,-200 2.0]
+[wt 0.5]
+[charaFadeout F 0.7]
+[cueSeStop Battle bac434 1.5]
+[wt 2.0]
+
+＠？？？
+住手！
+[k]
+
+[charaEffectStop H bit_talk_snowstorm_02]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠阿维斯布隆
+……哟，你就是首领吗？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad60]
+[seVolume ad60 0 0]
+[wt 0.1]
+[seVolume ad60 1.0 1.0]
+[wt 1.6]
+[seStop ad60 0.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.7 1]
+[wt 1.2]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠？？？
+没错。……我已经清楚汝等的力量了。[r]你们是想加入反叛军吧？
+[k]
+
+？1：说得没错。
+
+＠？？？
+是这样啊。[r]但是，我还无法相信你们。
+[k]
+
+[charaFace C 5]
+
+＠？？？
+毕竟你们长着[#旧种:人类]的模样。
+[k]
+
+？2：可以让我们加入吗？
+
+[charaFace C 5]
+
+＠？？？
+嗯，当然欢迎。[r][line 3]若非汝等是[#旧种:人类]的话。
+[k]
+
+？！
+
+[charaFace C 4]
+
+＠？？？
+这世界上只有两类长着[#旧种:人类]外形的家伙。
+[k]
+
+[charaFace C 5]
+
+＠？？？
+也就是魔术师与从者。[r]也就是说，[#是吾等的敌人]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠玛修
+怎么会……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠？？？
+汝等是否为[#皇帝:沙皇]的手下。
+[k]
+
+＠？？？
+这点要视汝等在身为强者的同时，[r]是否会做出背离慈爱的残忍行径而定。
+[k]
+
+[bgmStop BGM_EVENT_81 0.5]
+[charaFace C 2]
+
+＠？？？
+……因此，我要在此提出蛮不讲理的要求。[r][#不下杀手地与吾等战斗]，[#但是吾等会痛下杀手]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿维斯布隆
+……哦，确实非常蛮不讲理呢。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠？？？
+假如拥有能够打倒吾等的力量，[r]就没必要怀疑汝等是间谍了。
+[k]
+
+＠？？？
+因为汝等完全可以直接消灭吾等。[r]但倘若即便如此，汝等还是放吾等一条生路[line 3]
+[k]
+
+[charaFace C 2]
+
+＠？？？
+那就是慈爱，是[#旧种:人类]拥有的善良。[r]吾等蛮不讲理地期待着这点！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿维斯布隆
+好了，该怎么办呢，御主？[r]我服从你的意见。
+[k]
+
+？1：就按她说的做.
+
+＠阿维斯布隆
+好，明白了。
+[k]
+
+？2：战斗，获胜，且不杀他们。
+
+＠阿维斯布隆
+好吧。
+[k]
+
+＠阿维斯布隆
+虽然难办，却并非不可能。
+[k]
+
+＠阿维斯布隆
+那就试着让她明白，[r]我们是英灵的事实吧。
+[k]
+？！
+
+
+[messageOff]
+[bgmStop BGM_EVENT_80 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

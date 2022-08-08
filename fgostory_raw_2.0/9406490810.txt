@@ -1,0 +1,348 @@
+
+
+
+＄94-06-49-08-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001400 1 マシュ]
+[charaSet B 1098214300 1 戦闘獣A]
+[charaSet C 4044001 1 ニキチッチ]
+[charaSet D 1098213800 1 飛竜]
+
+[sceneSet E 106800 1]
+[charaScale E 1.1]
+
+[scene 126000]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_72 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[cueSe SE_21 21_ade652]
+[se bac312]
+[wt 1.2]
+[seStop 21_ade652 0.5]
+[wt 0.3]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[cueSe SE_21 21_ade653]
+[effect bit_talk_shot_02 -150,70]
+[wt 0.4]
+[effect bit_talk_shot_02 250,-100]
+[wt 0.4]
+[effect bit_talk_shot_02]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+[cueSe SE_21 21_ade653]
+[seStop 21_ade653 0.7]
+[effect bit_talk_14 -150,-100]
+[charaShake A 0.05 4 4 0.8]
+[se ad602]
+[se ad170]
+[seVolume ad170 0 0.6]
+[wt 0.2]
+[effect bit_talk_14 150,100]
+[se ad602]
+[se ad170]
+[seVolume ad170 0 0.6]
+[wt 0.2]
+[effect bit_talk_14]
+[se ad170]
+[seVolume ad170 0 0.6]
+[wt 0.5]
+
+[effectDestroy bit_talk_shot_02]
+
+[charaFace A 2]
+＠マシュ
+マスター！
+[k]
+
+？1：（いつもより、身がすくむ……！？）
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[cueSe SE_21 21_ade670]
+[seVolume 21_ade670 0 0.6]
+[wt 1.0]
+
+[se ade4]
+
+[wt 2.0]
+
+[seStop ade4 0.5]
+
+＠ニキチッチ
+[%1]はこちらで一旦回収する！[r]戦線を維持しろ、マシュ！
+[k]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+了解です、ニキチッチさん！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+＠ニキチッチ
+距離を取る！[r]掴まっていなさい、[%1]！
+[k]
+
+[messageOff]
+
+[se ade216]
+[wt 0.1]
+[cameraMove 0.5 0,-60 1.15]
+[wt 0.2]
+[wipeout upToDown 0.4 1.0]
+[bgm BGM_EVENT_72 0.4 0.5]
+[wait wipe]
+
+[cameraHome 0.1]
+[scene 10000]
+[charaDepth E 1]
+[charaFadein E 0.1 65,-200]
+[wt 0.5]
+
+[wipein downToUp 0.4 1.0]
+[bgm BGM_EVENT_72 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[se ade4]
+
+[wt 2.0]
+
+[seStop ade4 1.0]
+
+？1：大丈夫、地上に戻してください
+？2：このまま戦えます！
+
+？！
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ニキチッチ
+いいから、強がるな。
+[k]
+
+[charaFace C 11]
+
+＠ニキチッチ
+分かるぞ。[r]どうしたってこんなものは身が[#竦:すく]む。当然だ。
+[k]
+
+[charaFace C 19]
+＠ニキチッチ
+太公望も意地が悪い！[r]戦わなくていいものは戦わなくてもいいだろうに、
+[k]
+
+[charaFace C 4]
+＠ニキチッチ
+おまえたちに体験させたいんだ。[r]あいつは……
+[k]
+
+＠ニキチッチ
+まあ、自分がそうだったみたいだからな。
+[k]
+
+？1：……？
+？！
+
+[charaFace C 11]
+＠ニキチッチ
+こっちの話だ。[r]それより、あの獣だ。戦闘獣か。
+[k]
+
+＠ニキチッチ
+あれは[line 3]人の[#殺戮:さつりく]そのものだ。だから手強い。
+[k]
+
+[messageOff]
+
+[charaFace C 26]
+[wt 1.0]
+
+[charaFace C 11]
+＠ニキチッチ
+遠くから、離れたところから、殺す。[r]それこそが銃。
+[k]
+
+＠ニキチッチ
+矢よりも力強く、容易に、[r]一方的に効率的に容赦なく殺す最強の携行武器。
+[k]
+
+＠ニキチッチ
+何よりあれは平易だ。[r]その気になれば子供でさえ[#扱:あつか]える。
+[k]
+
+＠ニキチッチ
+アレを人類最高の発明と[#謳:うた]う者もいるそうだ。[r]ま、分からなくもない。
+[k]
+
+[charaFace C 19]
+
+＠ニキチッチ
+騎士、武士、勇士、戦士……
+[k]
+
+＠ニキチッチ
+誉れ在る戦いのすべてをアレは奪い取った。[r]当世の戦争にもはや、誉れはない。
+[k]
+
+＠ニキチッチ
+それが……
+[k]
+
+[messageOff]
+
+[charaFace C 20]
+[charaShake C 0.03 1 1 0.5]
+[wt 1.2]
+
+[charaFace C 5]
+＠ニキチッチ
+こうも醜く集まって！[r]まったく！
+[k]
+
+＠ニキチッチ
+オレは怒っている！　怒っているぞ！
+[k]
+
+＠ニキチッチ
+我ら勇士の時代の誉れを破壊し尽くしておきながら、[r]それだけでは飽き足らず銃よ！　銃よ！
+[k]
+
+＠ニキチッチ
+迷える幼子を[#脅:おびや]かすとは！
+[k]
+
+[messageOff]
+
+[cueSe SE_21 21_ade670]
+[seVolume 21_ade670 0 0.6]
+
+[wt 1.5]
+
+[se ade4]
+
+[wt 1.5]
+
+[seStop ade4 0.5]
+[bgmStop BGM_EVENT_72 1.0]
+
+[charaFace C 20]
+＠ニキチッチ
+むっ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[cueSe SE_21 21_ade654]
+[effect bit_talk_shot_02 -200,100]
+[wt 0.2]
+[effect bit_talk_shot_02 250,-85]
+[wt 0.2]
+[effectDestroy bit_shot_02]
+
+[seStop 21_ade654 0.5]
+
+
+[se ade216]
+[seStop ade216 1.2]
+[charaMove E -35,-200 0.3]
+
+[wipeout rightToLeft 0.3 1.0]
+[wait wipe]
+
+[effectDestroy bit_talk_shot_02]
+[charaPut E 35,-200]
+[wt 0.3]
+[charaMove E -65,-200 0.3]
+
+[wipein leftToRight 0.3 1.0]
+[wait wipe]
+
+[se ade4]
+[wt 1.2]
+[seStop ade4 1.5]
+
+[charaTalk C]
+[charaFace C 20]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_24 0.1]
+＠ニキチッチ
+……！
+[k]
+
+＠ニキチッチ
+対空射撃か！[r]地上の戦線に大物が合流したようだ！
+[k]
+
+[charaFace C 19]
+＠ニキチッチ
+流石に、放ってはおけんか。しかしな。
+[k]
+
+？1：ニキチッチさん！
+？2：大丈夫、無茶はしません
+
+？！
+
+＠ニキチッチ
+…………了解したぞ。
+[k]
+
+[charaFace C 20]
+＠ニキチッチ
+急降下しつつ戦線復帰だ。[r]おまえは極力距離を取るように、いいな！
+[k]
+
+？1：はい！
+
+？！
+
+[charaFace C 2]
+＠ニキチッチ
+我が愛馬！[r]降下の後にはおまえは[%1]を守れ！
+[k]
+
+＠ニキチッチ
+では[line 3]行くぞ！！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

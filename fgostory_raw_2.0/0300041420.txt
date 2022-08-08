@@ -1,0 +1,256 @@
+
+
+＄03-00-04-14-2-0
+
+
+[soundStopAll]
+[skip false]
+
+[charaSet A 1039001 1 拉克什米]
+[charaSet B 1019001 1 罗摩]
+[charaSet C 1098166700 1 爱夏]
+[charaSet D 1098127610 1 佩佩隆奇诺]
+[charaSet E 23003001 1 伽内什]
+[charaSet F 8001410 1 玛修]
+[charaSet G 1098166900 1 阿贾伊]
+[charaSet H 1098167100 1 男性]
+[charaSet I 1098167200 1 女性]
+[charaSet J 98115000 1 特效用]
+
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[maskin black 1]
+[wait mask]
+
+[se ad761]
+[seVolume ad761 0 0.6]
+[effect bit_talk_yuga_clock_02]
+[wt 2.3]
+[se ad756]
+[wt 3.7]
+
+[fadeout black 1.0]
+[seStop ad761 1.0]
+[seStop ad756 1.0]
+[wait fade]
+
+[effectStop bit_talk_yuga_clock_02]
+[effectDestroy bit_talk_yuga_clock_02]
+
+[wt 0.5]
+[skip true]
+
+[scene 75006]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.8]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠玛修
+终于到[#最后的由伽:迦利由伽]了呢。[r]真希望我们还能有余力回潜航艇躲避。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠罗摩
+唔嗯。应该没问题吧。
+[k]
+
+＠罗摩
+这座城镇不再是只会祈祷的城镇了。[r]只要尽可能帮助他们，看准时机离开就行了。
+[k]
+
+＠罗摩
+之后他们应该能像以往的迪瓦尔村一样，[r]靠自己的力量渡过由伽。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad727]
+[wt 1.1]
+[seStop ad727 0.3]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠伽内什
+哎哟，话音刚落就有迦利来袭了呢。[r]但是大家都有认真锻炼，不用担[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.5]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠佩佩隆奇诺
+慢着。情况有些不对劲。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+？1：那边的迦利们……
+？2：聚集起来，将身体挤在一起[line 3]？
+？！
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaSet D 1098172000 1 巨大]
+[charaSet F 1098167600 1 恶魔迦利2]
+[charaSet J 1098167600 1 恶魔迦利3]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+
+
+[charaTalk off]
+
+
+[charaFace F 0]
+[charaFadein F 0.1 210,-10]
+
+[charaFace J 0]
+[charaFadein J 0.1 -210,-10]
+
+[charaMove F 180,-10 2.1]
+[charaMove J -180,-10 2.1]
+[se ad199]
+[seStop ad199 1.0]
+
+[wt 0.8]
+[se adm26]
+[wt 0.9]
+[flashin once 0.2 1.0 8F000050 FF000000]
+[charaFace D 0]
+[charaPut D 1]
+[charaSpecialEffect D appearance 1 0.7]
+[wt 0.3]
+[charaFadeout F 0.4]
+[charaFadeout J 0.4]
+[wt 0.4]
+[flashin once 0.2 1.0 8F000050 FF000000]
+[wt 0.4]
+
+[se ad425]
+[se ade246]
+[shake 0.05 3 3 2.0]
+[wt 2.5]
+[charaFadeout D 0.4]
+[wt 0.6]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠伽内什
+哎哎哎哎哎！？　合体巨大化了！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 2]
+
+[charaFace I 2]
+[charaFadein I 0.1 0]
+
+＠男性
+那是什么！？　我从未见过那种迦利！
+[k]
+
+＠女性
+为什么，为什么会这样！？[r]难道是因为我们决定战斗，所以它们也变强了……？
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠拉克什米
+…………
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 0]
+
+[charaFace C 5]
+[charaFadein C 0.1 2]
+
+＠阿贾伊
+……快退后，爱夏。
+[k]
+
+＠爱夏
+唔，嗯。爸爸，要小心哦……
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠罗摩
+糟了。吾等教会民众的应对方法是针对普通迦利的。[r]与那种巨大迦利为敌的情况可就大不相同了。
+[k]
+
+＠罗摩
+尽管余担心会无法顾及其他迦利[line 3]
+[k]
+
+＠罗摩
+但那种巨大迦利只能由吾等来应付了。上吧！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

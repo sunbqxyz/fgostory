@@ -1,0 +1,1397 @@
+
+＄91-30-08-02-3-0
+
+
+
+[soundStopAll]
+
+[charaSet A 98006000 1 魔兽1]
+[charaSet B 98006000 1 魔兽2]
+[charaSet C 98006000 1 魔兽3]
+[charaSet D 98001000 1 玛修]
+[charaSet E 5009001 1 达·芬奇]
+[charaSet G 3008001 1 恩奇都]
+[charaSet H 1009001 1 莫德雷德]
+[charaSet I 7004001 1 弗兰]
+
+[charaSet J 98115000 1 特效用]
+
+
+[scene 10313]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk off]
+
+[charaDepth A 3]
+[charaDepth B 2]
+[charaDepth C 1]
+
+[charaFace A 0]
+[charaFace B 0]
+[charaFace C 0]
+
+[charaFadein A 0.1 1]
+[charaFadein C 0.1 -300,0]
+[charaFadein B 0.1 300,0]
+[wt 0.6]
+
+[fowardEffect bit_talk_Slash_white_01]
+[wt 0.1]
+[se bac7]
+[charaShake A 0.05 3 3 0.8]
+[charaShake B 0.05 3 3 0.8]
+[charaShake C 0.05 3 3 0.8]
+[wt 0.3]
+[fowardEffect bit_talk_ichimon01wh]
+[fowardEffect bit_talk_14]
+[se ad32]
+[wt 0.25]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[fowardEffect bit_talk_Slash_white_01_L]
+[se ad32]
+[wt 0.5]
+[fowardEffectDestroy bit_talk_ichimon01wh]
+
+[se bac167]
+[fowardEffect bit_talk_kushizashi01 -300,0]
+[fowardEffect bit_talk_kushizashi01 300,0]
+[wt 0.1]
+[fowardEffect bit_talk_13 -300,0]
+[fowardEffect bit_talk_13 300,0]
+[charaShake B 0.05 3 3 0.3]
+[charaShake C 0.05 3 3 0.3]
+[wt 0.1]
+
+[se bac167]
+[fowardEffect bit_talk_kushizashi01]
+[wt 0.1]
+[fowardEffect bit_talk_13]
+[charaShake A 0.05 3 3 0.3]
+[wt 0.5]
+[flashin once 0.1 0.5 FFFFFFAF FFFFFF00]
+[wt 0.5]
+
+[se ad20]
+[charaSpecialEffect B enemyErasure 1 1.2]
+[charaSpecialEffect C enemyErasure 1 1.2]
+[wt 0.1]
+[charaSpecialEffect A enemyErasure 1 1.2]
+[wait charaSpecialEffect A]
+
+[bgmStop BGM_EVENT_3 1.0]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠玛修
+刚才那些究竟是……
+[k]
+
+[charaFace D 15]
+
+＠玛修
+啊啊！　管制室的各位呢……！？[r]各位，没事吧！？　究竟发生了……
+[k]
+
+[messageOff]
+[se ad8]
+[wipeout rightToLeft 1.0 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_noise_gr]
+
+[scene 10200]
+[wt 0.1]
+
+[wipein leftToRight 1.0 1.0]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠达·芬奇
+哟，辛苦了。[r]我已经通过观测了解情况了。
+[k]
+
+＠达·芬奇
+快去食堂吧。[r]大家都在等着哦。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠玛修
+达·芬奇亲……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth J 2]
+[charaDepth E 1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠达·芬奇？
+10100100111001001010010010100010[se ad31][charaPut J 1][r]1010000110100010辛苦了。[r]我已经通过观测了解情况了。[twt 0.3][charaPut J 1200,1200][seStop ad31]
+[k]
+
+＠达·芬奇？
+快去食堂吧。大家都在等着101001001[r]110100110100100110011011010000110100011[se ad31][charaPut J 1][twt 0.8]
+[k]
+
+[charaPut J 1200,1200]
+[seStop ad31]
+
+＠达·芬奇？
+101001001110010010100100101000101010000[se ad31][charaPut J 1][r]110100010101001001010101011001000111010[r]0010100100111011001100110111001101
+[k]
+
+[charaPut J 1200,1200]
+[seStop ad31]
+
+＠达·芬奇？
+我已经通过观测了解情况了。[twt 0.3][r]快去食堂1010010010100100。[se ad31][charaPut J 1][twt 0.7][charaPut J 1200,1200][seStop ad31]
+[k]
+
+[messageOff]
+[wt 0.5]
+[se ad31]
+[charaPut J 1]
+[wt 0.2]
+[charaPut J 1200,1200]
+[seStop ad31]
+[wt 0.3]
+
+[se ad31]
+[charaPut J 1]
+[wt 0.2]
+[charaPut J 1200,1200]
+[seStop ad31]
+[wt 0.3]
+
+[se ad31]
+[charaPut J 1]
+[charaChange E 1098180200 0 normal 0]
+[wt 0.2]
+[charaPut J 1200,1200]
+[seStop ad31]
+[wt 0.1]
+
+[se ad31]
+[charaPut J 1]
+[charaChange E 5009001 0 normal 0]
+[wt 0.2]
+[charaPut J 1200,1200]
+[seStop ad31]
+[wt 0.2]
+
+[se ad31]
+[charaPut J 1]
+[charaChange E 1098180200 0 normal 0]
+[wt 0.2]
+[charaPut J 1200,1200]
+[seStop ad31]
+[wt 0.2]
+
+[se ad31]
+[charaPut J 1]
+[charaChange E 5009001 0 normal 0]
+[wt 0.2]
+[charaPut J 1200,1200]
+[seStop ad31]
+[wt 0.6]
+
+[se ad31]
+[charaPut J 1]
+[charaChange E 1098180200 0 fade 1.0]
+[wait charaChange E]
+[wt 0.5]
+
+
+＠1010010111010101■■
+大家10100101111100101010010110111111101[r]0010110111001……10100101101100011010010[r]111000110……101001011010100010100101111[r]010111010010110101101101001011100100110[r]10010110100101……………………
+[k]
+
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[seStop ad31]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠恩奇都
+这是……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠？？？
+去　食堂　大家　大家　大家　大家[se ad31][charaPut J 1][r]去食堂　去食堂食去食堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂堂
+[k]
+
+
+[messageOff]
+[wt 0.2]
+[charaPut J 1200,1200]
+[seStop ad31]
+
+[se ad31]
+[charaPut J 1]
+[wt 0.2]
+[charaPut J 1200,1200]
+[seStop ad31]
+[wt 0.3]
+
+[se ad31]
+[charaPut J 1]
+[wt 0.2]
+[charaPut J 1200,1200]
+[seStop ad31]
+[wt 0.6]
+
+[se ad31]
+[charaPut J 1]
+[wt 0.2]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_noise_gr]
+[seStop ad31]
+[wt 0.6]
+
+[charaSpecialEffect E flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect E]
+[wt 1.0]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠莫德雷德
+喂喂，究竟怎么了？[r]管制室里一个人都没有了啊。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠弗兰
+唔唔……唔唔？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠恩奇都
+……走吧。去食堂。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠玛修
+哎？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠恩奇都
+如果我的[#感觉器:传感器]还正常，[r]『大家』……应该都在那里。
+[k]
+
+[messageOff]
+[se ad8]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_48 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+
+[charaSet A 1098167700 1 圣兽1]
+[charaSet B 1098167700 1 圣兽2]
+[charaSet C 1098167700 1 圣兽3]
+
+[scene 10313]
+[wt 0.1]
+
+[se ad59]
+[seVolume ad59 0 0]
+[se ad55]
+[seVolume ad55 0 0]
+[shake 0.05 0 3 0]
+
+[wipein rightToLeft 1.0 1.0]
+[seVolume ad59 1.0 1.0]
+[seVolume ad55 1.0 1.0]
+[wait wipe]
+
+
+[wt 2.0]
+
+[seStop ad59]
+[seStop ad55]
+
+[se ad8]
+
+[wipeout leftToRight 1.0 1.0]
+[wait wipe]
+
+[shakeStop]
+
+[scene 34701]
+[wt 0.1]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+？1：！？
+？2：什么时候灵子转移了！？
+
+？！
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠莫德雷德
+究竟怎么了？[r]为什么食堂里会变成森林啊。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠弗兰
+唔？[r]唔！　唔啊！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠玛修
+怎么了，弗兰小……[r]……哎！？
+[k]
+
+？1：刚才，我们进来的门……消失了……
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠莫德雷德
+哈。也就是说，我们被关起来了吧。[r]尽管被关在森林里这种说法比较奇怪。
+[k]
+
+＠莫德雷德
+但是……这树还真大呢。[r]这是啥？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠恩奇都
+是……黎巴嫩杉吧。
+[k]
+
+？1：杉树？
+
+？2：但怎么看都像是……
+
+？！
+
+＠恩奇都
+御主国家的语言中，把这称作『杉』，[r]但准确地说，这隶属于松树类植物。
+[k]
+
+＠恩奇都
+由于是能长到近50米高的参天大树，[r]常被用作建造船只的材料。
+[k]
+
+＠恩奇都
+……在御主的时代，[r]应该已经不存在如此巨大的森林了吧。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠玛修
+黎巴嫩杉……雪松林……[r]这难不成……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠恩奇都
+嗯，没错。
+[k]
+
+[bgmStop BGM_EVENT_5 1.2]
+
+＠恩奇都
+这里……[r]是我和吉尔[#终结了的]诸神之森。
+[k]
+
+
+[messageOff]
+[wt 0.7]
+
+[charaFace G 4]
+
+＠恩奇都
+尽管不知道是谁出于什么样的目的，[bgm BGM_EVENT_11 0.1][r]将我们引导到这里来。
+[k]
+
+＠恩奇都
+但……既然选择了这个地点，[r]高概率是以我为对象进行的诱导吧。
+[k]
+
+＠恩奇都
+我对御主你们被我牵连一事感到抱歉。
+[k]
+
+？1：不用在意。
+
+？2：只要在迦勒底，这都算家常便饭啦。
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠莫德雷德
+……话说啦，[r]你不是说『大家都在那里』嘛。
+[k]
+
+＠莫德雷德
+那句话，那啥，[r]应该不是指迦勒底的人都在这里吧。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠恩奇都
+……说得对。
+[k]
+
+＠恩奇都
+尽管这个问题涉及到我系统的根源，[r]或者说关乎阻碍系统的本质……
+[k]
+
+＠恩奇都
+但既然我对你刨根问底，那我自己却保持沉默[r]未免就太不公平了。当然，对御主也一样。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠玛修
+阻碍系统……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠恩奇都
+和遗憾……稍微有些不同。[r]去世时遗留的悔恨只有对[#他]的感情。
+[k]
+
+？1：这话你倒是毫不隐瞒说得很直白呢，恩奇都。
+
+[charaFace G 0]
+
+＠恩奇都
+有必要时我自然会说，需要隐瞒时我也会隐瞒。[r]仅此而已。
+[k]
+
+[bgmStop BGM_EVENT_11 1.5]
+
+[charaFace G 1]
+
+＠恩奇都
+但是……也可能因为您是御主，[r]我才愿意说出口吧。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+？2：这么说来，你和那位王聊过了吗？
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠莫德雷德
+喂，御主。虽说你指的肯定是那个金闪闪混蛋，[r]但不要当着我的面称呼父王以外的人为『王』啦。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠恩奇都
+这点只能麻烦你忍耐一下了，莫德雷德。[r]毕竟他也位居肩负着乌鲁克的地位。
+[k]
+
+＠恩奇都
+和御主两个人单独相处时姑且不论，[r]当有外人在场时，必须称呼他为吉尔伽美什王才行。
+[k]
+
+[charaFace G 1]
+
+＠恩奇都
+不过，如果无法遏制这份与哪怕遭遇挑战[r]也在所不辞的亲密之情，其实也可以用简称哦？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 1.5]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠莫德雷德
+哦，这样啊。[r]好啦好啦，感谢你们的款待。
+[k]
+
+？！
+
+＠莫德雷德
+话说，你和那个孤僻的金闪闪真的是死党吗？[r]我还以为那家伙肯定不会有什么朋友呢。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠恩奇都
+即便你这么说，我和吉尔伽美什也是好友。[bgm BGM_EVENT_25 0.1][r]我甚至可以断言他是独一无二的存在。
+[k]
+
+[charaFace G 0]
+
+＠恩奇都
+偶尔见面时其实会聊很久，[r]但我们很少每天积极地见面。
+[k]
+
+＠恩奇都
+毕竟彼此相互理解，[r]交谈就显得不那么重要了。
+[k]
+
+？1：那么重要的是什么？
+
+＠恩奇都
+我很难解释……对我来说，[r]只要他在就足够了。
+[k]
+
+＠恩奇都
+彼此分享的感情[line 3]尤其是对别离的[r]悲伤与留恋，全都在[#生前:那里]完成了补足。
+[k]
+
+[charaFace G 3]
+
+＠恩奇都
+假使吉尔在我的面前濒死，[r]我也会微笑着对他说，『终有一天，我们定会再见』。
+[k]
+
+＠恩奇都
+我觉得吉尔一定也一样。[r]因别离而产生的悲伤，每个人经历一次就够了。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠玛修
+您说得好像非常厉害。尽管英灵中有些人[r]对死亡的态度也比较积极，不会感到悲观……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠恩奇都
+我觉得这样就够了。无论是我，还是吉尔，[r]我们都清楚自己的性格很难被周围人理解。
+[k]
+
+＠恩奇都
+这么说或许会被认为非常傲慢，[r]但如果他能交到新的朋友[line 2]
+[k]
+
+[charaFace G 0]
+
+＠恩奇都
+那一定是与我完全不相似的人物。[r]我和那个人，可能只有眼睛鼻子和嘴这些共通点了吧。
+[k]
+
+＠恩奇都
+即便如此，还是想与吉尔一起前进……[r]甚至可以并肩抵达星辰尽头的……
+[k]
+
+[charaFace G 1]
+
+＠恩奇都
+能为吉尔做一些我没能做到的事的，那样的人。
+[k]
+
+＠恩奇都
+是啊……比方说，我死后的吉尔伽美什王，[r]就与名为『乌鲁克』的国家并肩前进。
+[k]
+
+＠恩奇都
+乌鲁克民众也从单纯的生命变成拥有意志的人类，[r]与王一起拓展这个世界。
+[k]
+
+＠恩奇都
+只要能知晓这些事实，成为英灵就是有价值的。[r]其价值等同于与吉尔共度一千个夜晚。
+[k]
+
+[charaFace G 0]
+
+？2：原来如此，就像小莫和弗兰呢。
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠弗兰
+唔唔？　唔。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠莫德雷德
+喂喂。御主只是在不懂装懂而已。[r]一般都能明白吧。
+[k]
+
+[charaFace H 2]
+
+＠莫德雷德
+啊！　话说，既然你向我问了那种问题，[r]难不成你向弗兰也提过什么奇怪的问题？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠恩奇都
+没有啊？　她确实是被制作出来的存在，[r]但在我看来，她和普通生命体没什么差别。
+[k]
+
+＠恩奇都
+如果博士给她搭载了某种近乎『诅咒』的系统，[r]我或许还会产生一些兴趣吧。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠弗兰
+唔？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠莫德雷德
+……
+[k]
+
+＠莫德雷德
+原来如此。[r]真是的，你这家伙真够拐弯抹角的。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠恩奇都
+对不起。[r]我也知道自己很难被他人接受。
+[k]
+
+？！
+
+＠恩奇都
+而且……
+[k]
+
+[bgmStop BGM_EVENT_25 0.3]
+
+[charaFace G 5]
+
+＠恩奇都
+[line 2]！
+[k]
+
+＠恩奇都
+……御主、玛修。[r]请稍微退后一点。
+[k]
+
+＠恩奇都
+『她』……[bgm BGM_EVENT_5 0.1][r]不……这是……『大家』似乎发现了我的存在。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠玛修
+[FFFFFF]？[-][r]恩奇都先生，『她』，以及『大家』究竟是……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠恩奇都
+是我第一个朋友。
+[k]
+
+＠恩奇都
+……不，甚至可以说是养育我的父母。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠玛修
+养育您的父母……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠莫德雷德
+来了，御主！[r]小心！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaDepth A 3]
+[charaDepth B 2]
+[charaDepth C 1]
+
+[charaFace A 0]
+[charaFace B 0]
+[charaFace C 0]
+
+[se ad42]
+[seVolume ad42 0 0.5]
+[seVolume ad42 0.4 1.0]
+[charaFadein C 0.4 -350,0]
+[wt 0.2]
+[charaFadein B 0.4 350,0]
+[wt 0.2]
+[charaFadein A 0.4 1]
+[seStop ad42 0.5]
+[wt 0.8]
+
+
+[se ad216]
+[se ad21]
+[seVolume ad21 0 0.8]
+[wt 0.1]
+[se ad25]
+[seVolume ad25 0 0.7]
+[seStop ad216 1.5]
+[wt 2.0]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠弗兰
+唔啊啊……！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠莫德雷德
+这些家伙是什么……[r]这也是巴比伦尼亚的魔兽吗？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠恩奇都
+不……
+[k]
+
+＠恩奇都
+她……不，她『们』……
+[k]
+
+＠恩奇都
+[line 2]是人类。
+[k]
+
+？1：……人类？
+
+？！
+
+[charaFace G 0]
+
+＠恩奇都
+嗯……好久不见。[r]真是好久不见了……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace A 0]
+[charaFace B 0]
+[charaFace C 0]
+
+[charaFadein C 0.1 -350,0]
+[charaFadein B 0.1 350,0]
+[charaFadein A 0.1 1]
+
+＠？？？
+『你』    　　『竟』    　　　『谁』[r]　　　『究』      　『是』        　　『啊』
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠莫德雷德
+这家伙怎么回事！？[r]是……说话了吗？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠玛修
+每个字都是由不同魔兽发出来的……[r]但连在一起，组成了句子……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠恩奇都
+……[r]原来如此，『你们』，已经是与我分别后的『你』了吧。
+[k]
+
+＠恩奇都
+当看到你们没有融合成一个时，我原本……[r]还抱有一丝期待……然而事情不可能如我所愿。
+[k]
+
+＠恩奇都
+但是……即便如此，我还是要询问。
+[k]
+
+＠恩奇都
+哪怕只有碎片也好。哪怕只剩残渣也无妨。[r]你……已经不在这座森林里了吗？
+[k]
+
+＠恩奇都
+[line 2]胡姆巴巴。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace A 0]
+[charaFace B 0]
+[charaFace C 0]
+
+[charaFadein C 0.1 -350,0]
+[charaFadein B 0.1 350,0]
+[charaFadein A 0.1 1]
+
+＠？？？
+　『胡姆』[r]　　　　　　　　　　　『巴』　　　　　　『巴』
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠玛修
+[line 4]呜。
+[k]
+
+？1：我没听说过这个名字呢。
+
+？2：我记得胡姆巴巴应该是……
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠恩奇都
+是我和吉尔打倒的神之森的守护者。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠玛修
+受诸神的命令，守护黎巴嫩杉木林的守护者，[r]是非常可怕的怪物……
+[k]
+
+＠玛修
+一旦知道了她们能令那位吉尔伽美什王心生畏惧的故事，[r]应该就能想象她们究竟是多么强大的生物了吧……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠莫德雷德
+那个金闪闪害怕这些家伙？[r]但我不觉得这些家伙有那么危险啊……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠弗兰
+唔唔……[r]唔，啊唔啊。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠莫德雷德
+干嘛啦，弗兰。[r]……『还没组合起来』，你指什么？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠恩奇都
+！[r]原来如此，你能够明白啊。
+[k]
+
+[charaFace G 0]
+
+＠恩奇都
+……胡姆巴巴……她们或许……[r][#确实和生前的你非常相似]。
+[k]
+
+
+＠恩奇都
+只有组合起来的主体是肉体还是灵魂的差别而已。
+[k]
+
+＠恩奇都
+不是通过科学家的技术与期待，[r]而是由诸神的权能与祝福……
+[k]
+
+＠恩奇都
+不……是伴随着诅咒诞生的『完全的人类』。[r]那就是胡姆巴巴。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠玛修
+完全的人类……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠恩奇都
+尽管我很想详细说明……[r]但看来情况并不允许我这么做。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace A 0]
+[charaFace B 0]
+[charaFace C 0]
+
+[charaFadein C 0.1 -350,0]
+[charaFadein B 0.1 350,0]
+[charaFadein A 0.1 1]
+
+＠胡姆巴巴？
+『你是谁』『是谁』『开心』『你是谁』『你是』[r]『悲伤』『守护』『森林』『救命』『憎恨』
+[k]
+
+＠胡姆巴巴？
+『毁灭森林』『[c3b1c6]救[-]』『敌人』『杀死』『好痛』[r]『好痛』『高兴』『[c3b1c6]命[-]』『神明』『杀掉』
+[k]
+
+＠胡姆巴巴？
+『杀』『救命』『[c3b1c6]不[-]』『森林』『守护』[r]『救』『救命』『救命』『[c3b1c6]不对[-]』『救命』
+[k]
+
+＠胡姆巴巴？
+『去死』『敌人』『[c3b1c6]错了[-]』『人类』『神明』[r]『杀』『[c3b1c6]不用[-]』『杀死』森林』[c3b1c6]管我[-]』守护』
+[k]
+
+＠胡姆巴巴？
+『森林』『是谁』『老子』『我』咱』是谁』啊』[r]梦』你』[c3b1c6]快[-]』不要』会死』去死』[c3b1c6]逃[-]』杀』
+[k]
+
+＠胡姆巴巴？
+『啊啊』『好痛』『[c3b1c6]恩[-]』『痛苦』『为什么』『讨厌』[r]『叽啊啊』『[c3b1c6]奇[-]』『好痛』好痛』好痛』好痛』
+[k]
+
+[bgmStop BGM_EVENT_5 1.5]
+
+＠胡姆巴巴？
+『憎恨』『憎恨』『憎恨憎恨杀死杀掉杀[r]　去死杀掉杀掉[c3b1c6]都[-]去死ａａａａａａａａａ』
+[k]
+
+＠胡姆巴巴？
+　　　『『『[line 16]』』』
+[k]
+
+
+
+[messageOff]
+[shake 0.02 3 3 1.0]
+
+[se ad216]
+[se ad21]
+[seVolume ad21 0 0.8]
+[wt 0.1]
+[se ad25]
+[seVolume ad25 0 0.8]
+[se ad22]
+[seVolume ad22 0 0.6]
+[seStop ad22 1.0]
+[seStop ad216 1.5]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠莫德雷德
+尽管我还是不太明白，但来了！[r]喂，我可以干掉这些家伙吧！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠恩奇都
+这样啊……
+[k]
+
+＠恩奇都
+尽管不知道是谁的意图……[r]但看来，对方是希望我再次『重现状况』吧。
+[k]
+
+[charaFace G 5]
+
+＠恩奇都
+……当然，我不会犹豫。[r]因为现在的我，是从者。
+[k]
+
+＠恩奇都
+我是Lancer，恩奇都。[r]是作为人理守护者『重启』的存在。
+[k]
+
+＠恩奇都
+我不能让御主遭受威胁。[r]无论这里究竟是什么地方。
+[k]
+
+＠恩奇都
+这也是为了统合为一的[#另一个体:金固]，[r]我会履行我的职责。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace A 0]
+[charaFace B 0]
+[charaFace C 0]
+
+[charaFadein C 0.1 -350,0]
+[charaFadein B 0.1 350,0]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+[shake 0.02 3 3 1.0]
+
+[se ad216]
+[se ad21]
+[seVolume ad21 0 0.8]
+[wt 0.1]
+[se ad24]
+[seVolume ad24 0 0.8]
+[se ad22]
+[seVolume ad22 0 0.9]
+[seStop ad22 1.0]
+[seStop ad24 1.0]
+[seStop ad216 1.5]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠恩奇都
+……实在是对不起。[r]我不会恳求你们的原谅。
+[k]
+
+＠恩奇都
+但是，哪怕这是仅限当前的[#梦幻:错误][line 2]
+[k]
+
+＠恩奇都
+我仍然……会将你从这座森林中废弃出去。
+[k]
+
+[charaFace G 3]
+
+＠恩奇都
+没事，这没什么大不了的。[r]只是会感受相同的后悔罢了。
+[k]
+
+＠恩奇都
+在你变成这样的存在之前，我没去救你，[r]这是我……理应承受的报应。
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,523 @@
+
+
+＄02-00-04-04-6-0
+[soundStopAll]
+
+[charaSet A 25001000 1 阿比盖尔]
+[charaSet B 3031001 1 哪吒]
+[charaSet C 2003001 1 罗宾汉]
+[charaSet D 5033001 1 喀耳刻]
+[charaSet E 98006300 1 来路不明人形1]
+[charaSet F 98006300 1 来路不明人形2]
+[charaSet G 98006300 1 来路不明人形3]
+[charaSet H 98006300 1 来路不明人形4]
+
+[se ad443]
+[seVolume ad443 0 0.1]
+[seVolume ad443 1.5 1.0]
+
+[wt 0.3]
+
+[scene 20802]
+
+[wipeout rightToLeft 0.1 1]
+[wait wipe]
+[fadein black 0.1]
+[wait fade]
+
+[wipein rightToLeft 0.6 1]
+[wt 0.5]
+[seStop ad443 0.2]
+[wait wipe]
+
+[bgm BGM_EVENT_5 0.1]
+
+[wt 0.5]
+
+[se ad27]
+[seVolume ad27 0 0.6]
+[wt 0.3]
+
+[charaDepth A 10]
+[charaTalk B]
+[charaFace A 0]
+[charaFadein A 0.4 0]
+[charaFace B 0]
+[charaFadein B 0.4 2]
+
+＠哪吒
+[#主人:御主]！[r]我把阿比盖尔　带过来了！
+[k]
+
+[charaFace A 10]
+
+＠阿比盖尔
+团长……您没事吧！？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaDepth A 1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠喀耳刻
+呼啊……呼啊……把我的[#爱猪:仔猪]给我……[r]我不习惯用自己的双腿奔跑……
+[k]
+
+[charaFace D 7]
+
+＠喀耳刻
+哪吒……？[charaFace D 2][r]你身后那一大群是什么！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.3 1]
+[bgmStop BGM_EVENT_5 0.5]
+[wait wipe]
+[charaFadeout D 0.1]
+
+[charaSet E 98006300 1 来路不明人形1]
+[charaSet F 98006300 1 来路不明人形2]
+[charaSet G 98006300 1 来路不明人形3]
+[charaSet H 98006300 1 来路不明人形4]
+[charaSet A 98006300 1 来路不明人形5]
+
+[charaTalk off]
+[charaDepth E 0]
+[charaDepth F 2]
+[charaDepth G 2]
+[charaDepth H 1]
+[charaDepth A 1]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaFace F 0]
+[charaFadein F 0.1 -192,0]
+[charaFace G 0]
+[charaFadein G 0.1 192,0]
+[charaFace H 0]
+[charaFadein H 0.1 -384,0]
+[charaFace A 0]
+[charaFadein A 0.1 384,0]
+
+[wt 0.3]
+[wipein rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+
+[bgm BGM_EVENT_3 0.1]
+
+[wt 0.1]
+[se ad21]
+[seVolume ad21 0 0.5]
+[se ad25]
+
+[wt 2.0]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠哪吒
+在村里　四处躲避时[r]擅自　跟过来的。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠喀耳刻
+啊，这样啊……
+[k]
+
+[charaFace D 6]
+
+＠喀耳刻
+……[%1]？[r]现在，已经……
+[k]
+
+？1：不可能继续在阿比面前隐藏真身了。
+？2：……应该说，我觉得我们目前相当被动，很不妙。
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠罗宾汉
+从刚才开始，我背上那个[r]沉重的家伙就在乱咬我哦？
+[k]
+
+[charaFace C 2]
+
+＠罗宾汉
+这真的没问题吗好[charaShake C 0.07 4 1 0.5]痛痛痛痛！！
+[k]
+
+？1：只能让哪吒与喀耳刻战斗了。
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠哪吒
+御主？　该怎么办？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？2：万不得已的情况下只能将罗宾给……
+
+[charaFace C 5]
+
+＠罗宾汉
+哎，这冰冷的视线是几个意思？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？！
+
+
+[charaTalk off]
+[wt 0.1]
+[se ad21]
+[seVolume ad21 0 0.5]
+[se ad25]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaFace F 0]
+[charaFadein F 0.1 -192,0]
+[charaFace G 0]
+[charaFadein G 0.1 192,0]
+[charaFace H 0]
+[charaFadein H 0.1 -384,0]
+[charaFace A 0]
+[charaFadein A 0.1 384,0]
+
+[wt 2.0]
+
+[charaTalk on]
+
+＠D：？？？
+[line 3]香炉啊！[se ad68][seVolume ad68 0 0.2][charaPut C 0,-200][charaMove C 0,200 20.0][charaEffect C bit_talk_gagemist_Purple][wt 0.4][seStop ad68 1.5]
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[se ad463]
+[wt 1.0]
+
+＠食尸鬼们
+唔唔唔……嘎……唔唔唔啊啊……？
+[k]
+
+[seStop ad463 0.3]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+[charaSet C 2003001 1 罗宾汉]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[charaSet A 25001000 1 阿比盖尔]
+[charaSet H 5034001 1 示巴女王]
+
+[wipein rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+
+？1：[line 3]是……是谁！？
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠阿比盖尔
+不，团长……[r]那是我们认识的人……
+[k]
+
+[charaFace A 8]
+
+＠阿比盖尔
+哎哎……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.5 0.3]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.4 1]
+[wt 0.2]
+
+＠H：？？？
+难不成～，您遇到困难了吗～[r][%1]？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠阿比盖尔
+提图芭……？　是你吗……？
+[k]
+
+[charaFace A 10]
+
+＠阿比盖尔
+但是……！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠H：？？？
+……对不起，阿比大小姐。
+[k]
+
+[charaFace H 6]
+
+＠H：？？？
+身为佣人的提图芭已经死了。[r]她已经完成了自己的戏份，走下舞台了。
+[k]
+
+[charaFace H 1]
+
+＠H：？？？
+没错，所以我才能像这样获得自由。
+[k]
+
+[charaFace H 12]
+
+＠H：？？？
+能尽情发挥力量的自由！[r]能赚钱的自由！
+[k]
+
+[charaFace H 5]
+
+[bgm BGM_EVENT_3 0.5 1.0]
+
+＠H：？？？
+[line 3]将一切打飞吧，精灵们！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+
+[effect bit_talk_rarrow01br]
+[wt 0.1]
+[se bac71]
+[wt 1.2]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[shake 0.05 0 4 1.5]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+
+[se bac325]
+[seVolume bac325 0 0.3]
+
+[se ad42]
+[charaSpecialEffect E enemyErasure 1 3]
+[charaSpecialEffect F enemyErasure 1 3]
+[wait charaSpecialEffect E]
+
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaFace F 0]
+[charaFadein F 0.1 -320,0]
+[charaFace G 0]
+[charaFadein G 0.1 320,0]
+[wt 0.1]
+[se ad25]
+
+＠食尸鬼们
+嗄啊！！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠H：？？？
+好了，刚才那些是免费体验期。[r]接下来嘛，没错，是要收费的。
+[k]
+
+[charaFace H 12]
+
+＠H：？？？
+按每只[#食尸鬼:Ghoul]为单位定价。[r]成打下单的话，还能给您打个折哦？
+[k]
+
+[charaSet A 25001000 1 阿比盖尔]
+[charaSet F 5009000 1 特效用dummy]
+
+[charaDepth F 10]
+
+？1：哎？　要收钱吗？
+？2：体验期也太短了点吧。
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠罗宾汉
+哈啊？　你不是来救人的吗？[r]呃，假提图芭小姐啊？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 13]
+[charaFadein H 0.1 1]
+
+＠H：？？？
+嗯，当然啦！[r]救人！　听起来如此美妙。
+[k]
+
+[charaFace H 12]
+
+＠H：？？？
+善行的价值是极其昂贵的吧？[r]而[#你们这边]，究竟出得起多少呢？
+[k]
+
+[charaFace H 10]
+
+＠H：？？？
+你应该不会让我……[r]无偿劳动吧？
+[k]
+
+？1：临时契约的代价！？　先……先记在迦勒底的账上……
+？2：我会和我们那边金闪闪的人商量一下……
+？！
+
+[charaFace H 13]
+
+＠H：？？？
+哎嘿嘿。[r]多谢惠顾！
+[k]
+
+[charaFace H 8]
+
+＠H：？？？
+那么，我会在短暂的契约期间内，[r]真挚地为您服务哦？
+[k]
+
+[messageOff]
+[charaFace H 0]
+
+[bgmStop BGM_EVENT_3 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_42 0.3]
+
+[wt 0.8]
+
+？1：[line 3]于此宣告。
+？2：汝之身躯居吾麾下，吾之命运寄汝剑上。
+？！
+
+[selectionUse masterMale]
+？1：听令于吾[line 3]倘若如此，
+[flag IsMale true]
+？2：这命运，将托付于汝剑！
+[flag IsMale true]
+？！
+
+[selectionUse masterFemale]
+？1：听令于吾[line 3]倘若如此，
+[flag IsMale false]
+？2：这命运，将托付于汝剑！
+[flag IsMale false]
+？！
+
+[charaPut F 1]
+
+[branch _Male IsMale true]
+[branch _Female IsMale false]
+
+[label _Male]
+[charaEffect F bit_talk_CommandMantra_01 0,64]
+
+[branch _branchEnd]
+
+[label _Female]
+[charaEffect F bit_talk_CommandMantra_02 0,64]
+
+[label _branchEnd]
+[se bas16]
+[wait charaEffect F]
+[charaPut F 1200,1200]
+[charaEffectStop F]
+
+[wt 1.2]
+
+＠H：？？？
+赌上米德拉什的 Caster 之名，[r]在此领受誓言。
+[k]
+
+[charaFace H 2]
+
+＠H：？？？
+承认您即为吾之御主[line 3]！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_42 0.4]
+[wait fade]
+[soundStopAll]
+[end]

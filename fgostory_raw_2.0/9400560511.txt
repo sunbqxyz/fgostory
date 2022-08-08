@@ -1,0 +1,261 @@
+
+＄94-00-56-05-1-1
+
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+[charaSet A 9004000 1 玛尔达]
+[charaSet B 98100400 1 玛修]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 6024000 1 斯卡哈]
+[charaSet E 5027000 1 玛丽]
+[charaSet F 98100800 1 野猪崽]
+
+
+[charaPut F 0,-312]
+[charaEffect F bit_talk_19]
+
+[scene 30600]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+＠玛尔达
+原来如此，我知道你带我来这里的理由了。[r]是为了净化这污秽之地吧。
+[k]
+
+＠玛尔达
+虽然不清楚能不能办到，[r]但我试试看。撒点圣水[line 3]
+[k]
+
+[bgmStop BGM_EVENT_5 0.4]
+[messageOff]
+[charaFadeout A 0.4]
+[wt 0.4]
+[se ad78]
+[wt 0.5]
+[se ad42]
+[seStop ad42 2.0]
+[wt 0.2]
+[effect bit_talk_06]
+[wt 0.7]
+[se ad79]
+[wt 0.3]
+[fadeout white 0.5]
+[wait fade]
+[effectStop bit_talk_06]
+[wt 1.0]
+[charaPut F 0,-700]
+[charaEffectStop F bit_talk_19]
+[fadein white 1.0]
+[wait fade]
+[wt 1.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠玛尔达
+……呼。就这样吧。
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠玛修
+真了不起！　那些毒积水都消失了……[r]难闻的气味也没有了！
+[k]
+
+？1：Nice净化！
+
+[charaFadeout B 0.1]
+
+？2：玛尔达的圣水……多少钱？
+
+[charaFadeout B 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠玛尔达
+您想要多少我都会给您，[r]但重要的是要有祈祷之心。
+[k]
+
+＠玛尔达
+否则就算拿着相同的东西，也毫无意义。
+[k]
+
+[charaFadeout A 0.1]
+
+？！
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠芙芙
+芙！
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠玛尔达
+然而枯萎的植物已经无法恢复了呢。[r]太令人痛心了……
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠斯卡哈
+但是今后，它们就能在这里再次扎根，[r]并绽放花朵了。
+[k]
+
+[charaFace D 0]
+＠斯卡哈
+这块毒之地腐蚀了这座岛的土壤本身。[r]幸运的是能那么快中和。
+[k]
+
+＠斯卡哈
+如果继续放着不管，[r]有可能会导致这座岛最终化为寸草不生的死之土地。
+[k]
+
+＠斯卡哈
+至少，这座岛的自然资源还是很丰富的。[r]可千万不能坐视这些化为乌有。
+[k]
+
+[charaFace D 4]
+＠斯卡哈
+……真是的。不只是魔物跋扈，[r]连保护环境也交给别人去做啊。
+[k]
+
+＠斯卡哈
+虽然不知道是遗忘了还是舍弃了职责，[r]但我想怒斥这座岛管理者的事又多了一件呢。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk E]
+[charaFace F 0]
+[charaFadein F 0.1 -128,0]
+[charaFace E 0]
+[charaFadein E 0.1 128,0]
+[wt 0.4]
+＠玛丽
+哎呀？　[charaMove F -256,0 0.5][charaFadeout F 0.4]这是去哪儿呢，野猪崽？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.4]
+
+[bgmStop BGM_EVENT_2 0.4]
+[charaTalk F]
+[charaFadein F 0.4 128,0]
+[charaMove F 0,0 0.5]
+[wt 0.5]
+
+[bgm BGM_EVENT_3 0.1]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[wt 0.1]
+[se ad51]
+[charaFace F 2]
+[charaShake F 0.05 3 3 0.25]
+
+＠野猪崽
+唏叽，哔叽～！　……哔！？
+[k]
+
+[charaFace D 5]
+＠斯卡哈
+擅自行动会招来死亡。你的目的为何？[r]说。快说。赶快给我说。看着我的眼睛。
+[k]
+
+？1：话说……好像没有必要用枪指着人家吧……
+？2：但你完全一副只要看了就会被杀掉的眼神啊！
+？！
+
+[bgmStop BGM_EVENT_3 0.3]
+[wt 0.4]
+[bgm BGM_EVENT_2 0.1]
+[charaFace D 0]
+＠斯卡哈
+唔？　不行，野猪是害兽的观念还挥之不去。[r]不[line 3]虽说这确实没错。
+[k]
+
+[charaFace F 2]
+＠野猪崽
+哔……哔～！
+[k]
+
+[charaAttack F normal -768,0 0.5]
+[charaFadeout F 0.4]
+[se ad14]
+[seStop ad14 1.5]
+[wt 0.4]
+
+[charaFadeout D 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠芙芙
+芙。芙，芙呜！
+[k]
+
+[charaAttack C normal -768,0 0.75]
+[charaFadeout C 0.4]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠玛修
+啊，芙芙也跑了。[r]我们快追吧。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠芙芙
+芙！
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠玛修
+……？　啊啊，原来如此。
+[k]
+
+[charaFace B 13]
+＠玛修
+虽然是根据芙芙的行动做的间接判断[line 3][r]但看来，野猪崽并非想要逃跑啊。
+[k]
+
+[bgmStop BGM_EVENT_2 0.3]
+[wt 0.4]
+[bgm BGM_EVENT_5 0.1]
+[charaFace B 7]
+＠玛修
+看来还有其他地方想要给我们看。[r]也就是说[line 3]还有其他的毒之地吧。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_5 1.4]
+[wait fade]
+[wt 0.4]
+[soundStopAll]
+[end]

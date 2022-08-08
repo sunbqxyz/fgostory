@@ -1,0 +1,543 @@
+
+
+＄94-05-15-11-1-1
+
+[soundStopAll]
+
+[charaSet A 2040000 1 清少纳言]
+[charaSet B 1030000 1 铃鹿御前]
+[charaSet C 7029000 1 织田信长]
+[charaSet D 6040000 1 冲田·J·总司]
+[charaSet E 98006000 1 敌人A]
+[charaSet F 98006000 1 敌人B]
+[charaSet G 98006000 1 敌人C]
+
+[charaSet H 98006100 1 dummy特效1]
+[charaSet I 98006100 1 dummy特效2]
+
+[charaDepth B 5]
+[charaDepth A 1]
+[charaDepth E 9]
+[charaDepth F 5]
+[charaDepth G 1]
+
+
+[charaRoll I 20]
+
+[scene 20804]
+
+[charaTalk off]
+
+[charaFace E 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein E 0.1 0,0]
+[charaFadein F 0.1 -256,0]
+[charaFadein G 0.1 256,0]
+
+[bgm BGM_EVENT_3 0.1]
+
+[se ade215]
+[fadein black 1.0]
+[wait fade]
+[wt 0.3]
+
+＠？？？
+咕噜噜噜……[seStop ade215 0.5]
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,0]
+
+＠冲田·J·总司
+[line 3]就是那边！
+[k]
+
+[messageOff]
+[charaMoveScale D 0.95 0.1]
+[wt 0.1]
+[se bac1]
+[charaFadeout D 0.3]
+[charaMove D 0,35 0.2]
+[charaMoveScale D 1.2 0.2]
+[charaEffect H bit_talk_41]
+[wt 0.4]
+
+[charaPut H 2000,2000]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace E 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein E 0.1 0,0]
+[charaFadein F 0.1 -256,0]
+[charaFadein G 0.1 256,0]
+
+＠？？？
+！！
+[k]
+
+[messageOff]
+[charaMove E 20,-20 0.2]
+[wt 0.2]
+[se bac1]
+[seVolume bac1 0 0.4]
+[charaFadeout E 0.3]
+[charaMove E -150,30 0.2]
+[wt 0.1]
+
+[se bac5]
+[effect bit_talk_Slash_white_01]
+[wt 0.1]
+
+[charaMove F -276,-30 0.2]
+[wt 0.2]
+[se bac1]
+[seVolume bac1 0 0.4]
+[charaFadeout F 0.3]
+[charaMove F 110,70 0.2]
+[wt 0.1]
+
+[se bac5]
+[effect bit_talk_Slash_white_01 -296,0 V]
+
+[charaMove G 266,-10 0.2]
+[wt 0.2]
+[se bac1]
+[seVolume bac1 0 0.4]
+[charaFadeout G 0.3]
+[charaMove G -110,50 0.2]
+[wt 0.1]
+
+[se bac5]
+[charaEffect I bit_talk_Slash_white_01 256,0]
+[wt 0.5]
+
+[se ad671]
+[charaTalk on]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.4 0,-20]
+[charaMove D 0,0 0.4]
+[charaShake D 0.04 4 4 0.5]
+[wt 0.1]
+
+[charaMoveScale D 1.0 0.4]
+[wt 0.6]
+
+[charaFace D 6]
+＠冲田·J·总司
+什么……被躲开了！？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[se ad73]
+[effect bit_talk_quickmove -256,0]
+[wt 0.1]
+[charaFace G 0]
+[charaFadein G 0.1 -256,-10]
+[charaMove G -256,0 0.2]
+[wt 0.4]
+
+[se ad73]
+[effect bit_talk_quickmove 256,0]
+[wt 0.1]
+[charaFace F 0]
+[charaFadein F 0.1 256,-10]
+[charaMove F 256,0 0.2]
+[wt 0.2]
+
+[se ad73]
+[effect bit_talk_quickmove]
+[wt 0.1]
+[charaFace E 0]
+[charaFadein E 0.1 0,-10]
+[charaMove E 0,0 0.2]
+[wt 0.4]
+
+
+＠？？？
+…………
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 1.0]
+[se ad443]
+[charaFadeout G 0.4]
+[charaFadeout E 0.4]
+[charaFadeout F 0.4]
+[charaMove G -356,0 0.4]
+[charaMove E -100,0 0.4]
+[charaMove F 156,0 0.4]
+[wt 0.4]
+[seStop ad443 0.8]
+[wt 1.4]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0,0]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠冲田·J·总司
+唔。[r]溜掉了呢。
+[k]
+
+＠冲田·J·总司
+不过刚才的反应速度……[r]那些野兽……不，这森林究竟是……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,0]
+＠铃鹿御前
+诺……诺子……[r]就是被那些家伙给杀害的？
+[k]
+
+＠铃鹿御前
+呜……呜呜……[r]虽然那家伙说自己是个有名的作家。
+[k]
+
+＠铃鹿御前
+但感觉完全不像，反倒更像是个[r]Berserker，但她真是个好人啊。
+[k]
+
+[charaShake B 0.04 4 2 0.5]
+＠铃鹿御前
+呜哇啊啊啊啊！　诺子[line 3]！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 1.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ade255]
+[wt 0.8]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.4 1]
+[wt 0.4]
+＠清少纳言
+哎呀～，刚才真是慌了神！
+[k]
+
+＠清少纳言
+突然冒出什么东西吓得偶脚扭了一下[bgm BGM_EVENT_77 0.1][r]脑袋撞到树上然后直接睡过去了！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaFace B 9]
+[charaFace A 17]
+[charaFadein B 0.1 206,0]
+[charaFadein A 0.1 -206,0]
+[wt 0.4]
+
+[cueSe Battle bac9]
+[charaMoveReturn B 156,0 0.2]
+[wt 0.1]
+
+[charaFace A 14]
+[charaShake A 0.04 4 1 0.5]
+[wt 0.6]
+
+[charaTalk on]
+[charaTalk A]
+＠清少纳言
+好痛！？
+[k]
+
+[charaFace B 10]
+
+＠铃鹿御前
+你[messageShake 0.04 3 3 0.3]这个笨蛋！[r]我还以为你真死了呢！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 0,0]
+
+＠织田信长
+呵，真是个吓唬人的家伙。[r]竟然让我这么担心……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 0,0]
+
+＠铃鹿御前
+你还好意思说这种话。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 0,0]
+
+＠冲田·J·总司
+真是的，不过没事就好……
+[k]
+
+[charaFace D 5]
+
+＠冲田·J·总司
+只是不能保证那野兽不会返回。[r]还是避免单独行动为好。
+[k]
+
+＠冲田·J·总司
+千万不要跑去看田地的景色，[r]或是独自一人返回房间哦。
+[k]
+
+[charaFace D 8]
+＠冲田·J·总司
+另外信也不准去本能寺。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 0,0]
+
+＠织田信长
+呜，好想去寺院显摆我的茶器尽情休息啊……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 0,0]
+
+＠冲田·J·总司
+诺子小姐也是，听明白了吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,0]
+
+＠清少纳言
+嗯，我知道了。
+[k]
+
+[charaFace A 2]
+
+＠清少纳言
+我已经接受教训了！[r]再也不会去采什么蘑菇了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 0,0]
+
+＠冲田·J·总司
+不，我不是让你发这种誓啦……
+[k]
+
+[charaFace D 16]
+
+＠冲田·J·总司
+这个人怎么总是带偏别人的节奏啦！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 0,0]
+
+＠清少纳言
+哎呀。[r]偶常被人这么评价呢。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,0]
+
+＠织田信长
+不！[r]我比你更被人这么评价哦！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 0,0]
+
+＠铃鹿御前
+不要比这种事啦。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[bgmStop BGM_EVENT_77 1.0]
+[wt 0.1]
+
+[charaTalk off]
+
+[se ade255]
+[wt 1.0]
+
+[se ade215]
+[wt 0.8]
+
+[charaFace G 0]
+[charaFadein G 0.4 160,0]
+[charaMove G 110,0 0.4]
+[wt 0.3]
+[charaFace F 0]
+[charaFadein F 0.4 280,0]
+[charaMove F 230,0 0.4]
+[wt 0.3]
+[charaFace E 0]
+[charaFadein E 0.4 400,0]
+[charaMove E 350,0 0.4]
+[wt 0.3]
+
+[seStop ade215 0.9]
+
+＠？？？
+咕噜噜噜……
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 0,-50]
+
+[bgm BGM_EVENT_3 0.1]
+＠清少纳言
+呜哎哎，惨了惨了！
+[k]
+
+＠清少纳言
+话音刚落它们就回来了，[r]而且数量比刚才更多了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 0,0]
+＠铃鹿御前
+是因为太阳落山，开始正式活动了吗……[r]这座森林该不会就是它们的地盘吧？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,0]
+
+＠织田信长
+所以我不是说了嘛！[r]我反对到这种地方来啦！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,0]
+
+＠冲田·J·总司
+那[messageShake 0.02 3 3 0.4]边那个，小心我真的揍飞你哦！？
+[k]
+
+[charaFace D 5]
+
+＠冲田·J·总司
+被包围可就麻烦了。[r]别管它们，先继续前进吧！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 0,0]
+
+＠织田信长
+唔，说得对。
+[k]
+
+[charaFace C 6]
+
+＠织田信长
+没什么，我们已经走了那么久了，[r]湖边小屋一定已经近在眼前了！
+[k]
+
+[charaFace C 1]
+
+＠织田信长
+各位，跟我来！[r]敌在桶狭间！
+[k]
+
+[messageOff]
+[se ad443]
+[charaMove C -100,0 0.4]
+[charaFadeout C 0.4]
+[wt 0.4]
+[seStop ad443 1.2]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_3 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

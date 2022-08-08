@@ -1,0 +1,215 @@
+
+
+
+＄03-00-07-09-4-1
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 7006300 1 坂田金时]
+[charaSet B 6030000 1 段藏]
+[charaSet C 98006200 1 敌人]
+[charaSet D 98006200 1 敌人]
+[charaSet E 1098201900 1 岁杀神]
+[charaSet F 1098201900 1 岁杀神_剪影]
+[charaFilter F silhouette 00000080]
+[charaSet G 1098202100 1 豹尾神]
+[charaSet H 1098202100 1 豹尾神_剪影]
+[charaFilter H silhouette 00000080]
+
+[cameraMove 0.1 0,0 1.01]
+
+
+
+[scene 102002]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+噢噢噢！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad1010]
+[wt 0.2]
+
+[se ad85]
+[effect bit_talk_gold_slash_02]
+[se ad1010]
+[wt 0.4]
+
+[se ad1056]
+[seVolume ad1056 0 0.4]
+[fowardEffect bit_talk_impactlanding]
+[shake 0.05 0 2 1.0]
+
+[charaTalk off]
+
+[charaFace C 0]
+[charaFace D 0]
+[charaFadeinFSL C 0.1 0]
+[charaFadeinFSR D 0.1 2]
+[wt 0.1]
+
+[se ad26]
+[wt 0.4]
+
+[se ad42]
+[charaEffect C bit_talk_atomization]
+[charaEffect D bit_talk_atomization]
+[wt 0.4]
+[charaFadeout C 1.2]
+[charaFadeout D 1.2]
+
+[wt 3.0]
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠段藏
+敌对反应消灭！[r]疑似Limbo部署的式神就此全灭！
+[k]
+
+[charaFace B 5]
+
+＠段藏
+然后前方！[r]出现两骑高魔力反应。
+[k]
+
+＠段藏
+请各位务必小心。[r]那无疑是安倍晴明阁下提及的新英灵……
+[k]
+
+[bgmStop BGM_EVENT_80 1.0]
+[charaFace B 2]
+
+＠段藏
+两骑八将神！[r]岁杀神及豹尾神！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.6]
+
+[se ad984]
+
+[charaTalk off]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 1.0]
+[bgm BGM_EVENT_127 0.1]
+
+＠岁杀神
+有人喊出了我们的骸名啊。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.6]
+
+＠豹尾神
+……唉，离朱雀门明明只差几步路了。
+[k]
+
+＠豹尾神
+啊啊，原来如此。[r]有几骑英灵呢。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠岁杀神
+不，不对。看仔细。[r]或者感受他们的气势。
+[k]
+
+＠岁杀神
+与刚才肆意收拾的那些家伙不是一个水平。[r]汝过去也知晓吧，何谓真正的武者。
+[k]
+
+＠岁杀神
+……看来，吾等唯有停下脚步了。
+[k]
+
+[messageOff]
+
+[charaTalk depthOff]
+[charaDepth F 2]
+[charaDepth E 1]
+
+[charaFace E 6]
+[charaFadein E 0.1 1]
+[wt 0.1]
+
+[charaFadeout F 0.7]
+[wt 1.6]
+
+＠岁杀神
+精悍勇猛的平安武者们啊，散去吧。[r]无人能阻挡我等的前进。
+[k]
+
+[charaFaceFade E 0 0.3]
+
+＠岁杀神
+[line 3]吾尸骸之忌名，岁杀神·俵藤太。[r][line 3]乃是汝等之死
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaDepth H 2]
+[charaDepth G 1]
+
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[wt 1.0]
+
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.1]
+
+[charaFadeout H 0.7]
+[wt 1.6]
+
+＠豹尾神
+[line 3]吾尸骸之忌名，豹尾神·铃鹿御前。[r][line 3]若想求死，便杀了你们。
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_EVENT_127 1.5]
+[fadeout black 1.5]
+[wait fade]
+[soundStopAll]
+[end]

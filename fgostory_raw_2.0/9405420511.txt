@@ -1,0 +1,684 @@
+
+
+
+＄94-05-42-05-1-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet B 6037002 1 迦摩]
+[charaSet C 2033000 1 马嘶]
+[charaSet D 1048000 1 圣诞迦尔纳]
+[charaSet E 4006001 1 乔尔乔斯]
+[charaSet F 2015001 1 阿周那]
+[charaSet G 3030000 1 帕尔瓦蒂]
+
+[imageSet H back10001_fs 1]
+[charaScale H 1.5]
+
+[imageSet I back10000 1 1]
+[charaScale I 1.01]
+[sceneSet J 106400 1 1]
+[charaScale J 1.0]
+
+
+[charaSet S 5009040 1 特效用dummy]
+[charaSet T 5009040 1 特效用dummy]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[charaSet A 1098124510 1 达·芬奇]
+[branch lblConf]
+
+[label lblNotClear]
+[charaSet A 98111500 1 达·芬奇]
+[label lblConf]
+
+
+[charaPutFSR S 1200,2000]
+[charaEffect S bit_talk_10_LowLevel]
+
+
+[scene 37301]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+[wt 0.4]
+
+
+
+[charaTalk off]
+[charaDepth T 10]
+
+[charaScale T 2.0]
+[charaPut T 0,100]
+[charaEffect T bit_talk_29_blue]
+[wt 0.1]
+[se ad249]
+[seVolume ad249 0 0]
+[seVolume ad249 0.4 0.8]
+
+[wt 0.4]
+
+[flashin once 0.1 1.2 d6e0ffFF d6e0ff00]
+
+[charaCrossFade B 6037001 12 0.1]
+[wt 0.1]
+[wait charaCrossFade B]
+
+[charaEffectStop T bit_talk_29_blue]
+[seStop ad249 1.5]
+[wt 0.5]
+[charaPutFSR T 1200,2000]
+[wt 1.7]
+[charaScale T 1.0]
+
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk on]
+＠迦摩
+哎。我还以为能多欣赏一会儿[r]你们不爽的样子呢……
+[k]
+
+[charaFace B 11]
+＠迦摩
+从不懂得氛围微妙之处的湿婆系参加的那刻起，[r]乐趣就减半了啦。真是的。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠马嘶
+这话应该由我说吧。[r]现在也行，把弗栗多叫出来啦。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+＠迦摩
+我协助她纯粹是为了自己的快乐，[r]可没这么大的强制力哦。
+[k]
+
+＠迦摩
+想见她的话，只能去其他特异点找了吧？
+[k]
+
+＠迦摩
+就这样，你们就好好圣诞快乐去吧～。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠圣诞迦尔纳
+嗯。圣诞快乐就该用圣诞快乐来回答。[r]这就是圣诞老人的教诲。
+[k]
+
+＠圣诞迦尔纳
+圣诞快乐。
+[k]
+
+＠圣诞迦尔纳
+等我成为独当一面的圣诞老人之时，[r]一定会为你送来最棒的礼物。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+[wt 0.4]
+
+
+＠迦摩
+唉。[charaMoveReturn B 0,-4 0.9][wt 0.5]连讽刺都听不懂……
+[k]
+
+[messageOff]
+[se ade527]
+[charaMove B -50,0 0.4]
+[charaFadeout B 0.4]
+[seStop ade527 1.2]
+[wt 1.6]
+
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠达·芬奇
+总之，我们胜利了。
+[k]
+
+＠达·芬奇
+虽然还不清楚迦摩的助力[r]包含了什么样的深层含义……
+[k]
+
+＠达·芬奇
+但特异点的核好像还在，[r]先赶快把这个处理掉吧。
+[k]
+
+[branch lblConf2]
+
+[label lblNotClear2]
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+＠达·芬奇
+总之，我们胜利了。
+[k]
+
+＠达·芬奇
+虽然还不清楚迦摩的助力[r]包含了什么样的深层含义……
+[k]
+
+＠达·芬奇
+但特异点的核好像还在，[r]先赶快把这个处理掉吧。
+[k]
+
+[label lblConf2]
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR S 1200,2000]
+
+
+[se ade410]
+[wt 0.2]
+[charaPut T 1]
+[charaEffect T bit_talk_20b]
+[wt 2.4]
+
+[charaPutFSR T 1200,2000]
+[charaEffectDestroy T bit_talk_20b]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.8]
+
+[wipeout circleIn 0.3 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[scene 10000]
+[wt 0.1]
+
+[wipein circleIn 0.1 1.0]
+[wait wipe]
+
+[fowardEffect bit_talk_flash_g]
+[wt 0.1]
+[se ad80]
+[wt 0.3]
+[seStop ad80 0.2]
+[wt 0.65]
+
+
+[se ad149]
+[se ad216]
+[seVolume ad216 0 0]
+[se ad733]
+[seVolume ad733 0 0]
+[fadeout white 0.3]
+[bgm BGM_EVENT_77 0.8 0.1]
+[seVolume ad216 0.3 1.0]
+[seVolume ad733 0.3 1.0]
+[wait fade]
+
+[seStop ad733 1.5]
+[wt 1.0]
+
+[scene 10000]
+[wt 1.5]
+
+
+
+
+
+[criMovie talk_mov084 bgmPlay false]
+[wt 0.5]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+[wt 29.5]
+
+[charaTalk depthOff]
+[charaDepth I 4]
+[charaDepth J 5]
+
+[overlayFadein I 1.0 0,-200]
+[wt 1.0]
+
+[scene 106400]
+[wt 3.0]
+
+[bgm BGM_EVENT_77 1.0 1.0]
+[overlayFadein J 1.0 0,-200]
+[wt 1.0]
+[charaFadeout I 1.0]
+[wt 1.0]
+
+
+？1：这风真舒服……
+？2：心灵仿佛都被洗涤了……
+？！
+[charaFadeout J 0.3]
+[wt 0.3]
+[charaTalk depthOn]
+
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠达·芬奇
+要不要先沐浴一下森林浴……竹林浴再回来？[r]时间不长的话，康复休养的时间还是能挤出来的。
+[k]
+
+[branch lblConf3]
+
+[label lblNotClear3]
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-90]
+＠达·芬奇
+要不要先沐浴一下森林浴……竹林浴再回来？[r]时间不长的话，康复休养的时间还是能挤出来的。
+[k]
+
+[label lblConf3]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR S 1200,2000]
+[charaEffectStop S bit_talk_10_LowLevel]
+
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠乔尔乔斯
+真不错。我去找找可以拍出[r]绝佳照片的地点吧……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠阿周那
+……对不起，但请容我先行告辞。[r]有些事让我比较介意。
+[k]
+
+[messageOff]
+[se ad527]
+[charaMoveFSR F 50,0 0.4]
+[charaFadeout F 0.4]
+[seStop ad527 1.0]
+[wt 1.6]
+
+？1：（介意……？）
+？2：（发生什么事了吗……？）
+？！
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠马嘶
+什么康复休养啊，[r]我的身体还没活动够呢喂。
+[k]
+
+[charaFace C 2]
+＠马嘶
+还会在这里逗留一会儿吧？　是吧？[r]好，那迦尔纳，来打一场啦，打一场！
+[k]
+
+＠马嘶
+不要说什么点到为止这种半吊子的话，[r]全力放马过来吧！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠圣诞迦尔纳
+我也正觉得这次的长跑训练不够令人满意。
+[k]
+
+＠圣诞迦尔纳
+有死路的迷宫不适合长跑训练。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 4]
+[charaDepth D 6]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFace D 0]
+[charaFadeinFSL C 0.1 0]
+[charaFadeinFSR D 0.1 2]
+＠马嘶
+哈哈哈！[r]你也用拳头打穿不就好了嘛！
+[k]
+
+[charaFace D 6]
+＠圣诞迦尔纳
+确实[line 3]！
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[charaMoveFSR D 276,0 0.4]
+[charaMoveFSL C -276,0 0.4]
+[wt 0.8]
+
+[charaMoveFSR D 106,0 0.3]
+[charaMoveFSL C -106,0 0.3]
+
+[effect bit_talk_14]
+[wt 0.1]
+
+[se ad170]
+[fadeout white 0.2]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+
+[scene 10000]
+[wt 2.0]
+
+[fadein white 1.5]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+
+[fadeout black 0.5]
+[wait fade]
+
+[effectDestroy bit_talk_14]
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+[scene 105800]
+[branch lblConf4]
+
+[label lblNotClear4]
+[scene 106000]
+[label lblConf4]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 1.2]
+
+[se ad592]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[charaSet B 6037002 1 迦摩]
+
+[charaPut S 1]
+[charaEffect S bit_sepia01_depth]
+[pictureFrame cut063_cinema]
+
+[scene 37301]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+[wt 0.8]
+
+[fadein white 0.5]
+[wait fade]
+[wt 1.2]
+
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaPutFSR S 1200,2000]
+[pictureFrame]
+
+[branchQuestNotClear lblNotClear5 3000303]
+
+[scene 105800]
+[branch lblConf5]
+
+[label lblNotClear5]
+[scene 106000]
+[label lblConf5]
+[wt 0.8]
+
+[fadein white 0.5]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠阿周那
+[line 6]
+[k]
+
+[charaFace F 4]
+＠阿周那
+奇怪。[r]果然有什么令人介意。
+[k]
+
+[messageOff]
+[fadeout white 0.5]
+[bgm BGM_EVENT_11 0.5 0.4]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[charaPut S 1]
+[pictureFrame cut063_cinema]
+
+[scene 37301]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+[wt 0.7]
+
+[fadein white 0.5]
+[wait fade]
+[wt 0.1]
+
+＠迦摩
+虽然基本还是如我所愿享受其中，[r]但也有不情不愿的部分哦，是真的。
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaDepth B 5]
+[charaDepth S 6]
+[charaDepth H 7]
+
+[charaFadein H 0.5 0,-200]
+[wt 0.5]
+
+[charaFadeout B 0.1]
+
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+[wt 0.7]
+
+[charaFadeout H 0.5]
+[wt 0.5]
+
+[charaTalk on]
+＠圣诞迦尔纳
+不。她应该就是平时那个迦摩吧。[r]我觉得她就是毫无掩饰的本质的她。
+[k]
+
+
+[messageOff]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaPutFSR S 1200,2000]
+[charaEffectStop S bit_sepia01_depth]
+[pictureFrame]
+
+[branchQuestNotClear lblNotClear6 3000303]
+
+[scene 105800]
+[branch lblConf6]
+
+[label lblNotClear6]
+[scene 106000]
+[label lblConf6]
+[wt 0.8]
+
+[bgm BGM_EVENT_11 0.5 1.0]
+[fadein white 0.5]
+[wait fade]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠阿周那
+这有矛盾。[r]如果是这样，那中间究竟有何意义呢……？
+[k]
+
+[messageOff]
+[wt 1.2]
+
+[charaFace F 0]
+＠阿周那
+……论可能性……不，不对。[r]但假如反过来……这么考虑的话……
+[k]
+
+＠阿周那
+…………[r]………………
+[k]
+
+[charaFace F 5]
+＠阿周那
+也就是说。深究到底的话[line 3][r]问题与弗栗多的本质有关？
+[k]
+
+
+[charaFace F 0]
+＠阿周那
+帕尔瓦蒂大人之所以没有行动，[r]难道是因为已经知道了……
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth G 4]
+[charaDepth F 6]
+
+[charaTalk G]
+[charaFace G 1]
+[charaPutFSL G -256,0]
+[charaFadeTime G 0.4 0.6]
+[wt 0.4]
+＠G：帕尔瓦蒂（幻听？）
+是的。但这次我不会说出答案。[r]请靠自己的力量努力吧。
+[k]
+
+[messageOff]
+[charaFadeout G 0.4]
+[wt 0.4]
+
+＠阿周那
+是，我明白。
+[k]
+
+[charaFace F 4]
+＠阿周那
+好了，那接下来该怎么办呢……？
+[k]
+
+[charaFace F 5]
+＠阿周那
+还用问吗。[r]得看穿本质仔细确认才行。
+[k]
+
+＠阿周那
+为此[line 3]
+[k]
+
+[messageOff]
+[charaFace F 4]
+[wt 1.2]
+
+[charaFace F 0]
+＠阿周那
+交给[#他]试试看吧。[r]他的眼力不容置疑，而且……
+[k]
+
+[charaFace F 1]
+＠阿周那
+我已经无法坚持继续奉陪了。[r]但他或许拥有其他的意义[line 3]
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_11 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

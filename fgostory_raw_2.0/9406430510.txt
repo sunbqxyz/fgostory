@@ -1,0 +1,755 @@
+
+
+
+＄94-06-43-05-1-0
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5050000 1 サンタマルタ]
+[charaSet C 2001002 1 エミヤ]
+[charaSet D 4011001 1 ブーディカ]
+[charaSet E 7016001 1 タマモキャット]
+[charaSet F 3047001 1 パーシヴァル]
+
+[charaSet H 98115000 1 エフェクト用ダミー]
+[charaSet I 1037000 1 紅閻魔]
+
+[charaSet J 1098183600 1 エネミー]
+[charaSet K 1098183600 1 エネミー]
+[charaSet L 1098183600 1 エネミー]
+
+[charaSet M 1098183600 1 エネミー_シルエット]
+[charaSet N 1098183600 1 エネミー_シルエット]
+[charaSet O 1098183600 1 エネミー_シルエット]
+[charaFilter M silhouette 00000080]
+[charaFilter N silhouette 00000080]
+[charaFilter O silhouette 00000080]
+
+[charaDepth M 7]
+[charaDepth N 6]
+[charaDepth O 5]
+[charaDepth J 3]
+[charaDepth K 4]
+[charaDepth L 2]
+
+[imageSet B cut309_salad 1]
+
+[imageSet T back10000 1 1]
+[charaScale T 1.02]
+
+[charaDepth B 5]
+[charaDepth T 2]
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+[scene 140806]
+
+[branch lblConf1]
+
+[label lblNotClear1]
+
+[scene 140706]
+
+[label lblConf1]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_XMAS_2016 0.1]
+
+＠サンタマルタ
+……うん。[r]こんなところかしら。
+[k]
+
+＠サンタマルタ
+最後に特製ドレッシングをかけて[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se bas2]
+[charaFadein B 0.4 0,-200]
+[charaFadeTime T 0.4 0.5]
+[fowardEffect bit_talk_glitter]
+[wt 0.4]
+[cueSe SE_21 21_ade588]
+[wt 2.0]
+[cueSeStop 21_ade588 0.5]
+
+
+＠サンタマルタ
+できたわ！[r]名付けて、カルデア風特製サラダ！
+[k]
+
+＠サンタマルタ
+トマトっていう食材いいわねいいわね。[r]お野菜なのにとってもジューシー！
+[k]
+
+＠サンタマルタ
+でも何より、決め手はドレッシングだわ。[r]エミヤたちに教えてもらった特製和風ドレッシング！
+[k]
+
+＠サンタマルタ
+葉野菜にもキュウリにもトマトにも合って、[r]それでいて食材の味を活かしてくれる。
+[k]
+
+＠サンタマルタ
+お醤油？[r]っていうのを使ってるのも面白いわ。
+[k]
+
+[messageOff]
+[branchQuestNotClear lblNotClear2 3000303]
+
+[scene 140805 0.6]
+
+[branch lblConf2]
+
+[label lblNotClear2]
+
+[scene 140705 0.6]
+
+[label lblConf2]
+
+[charaFadeout B 0.4]
+[charaFadeout T 0.4]
+[fowardEffectStop bit_talk_glitter]
+[wt 0.6]
+[fowardEffectDestroy]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+ひとまず冷蔵庫に入れつつ、[r]さらに魔術で鮮度を維持しておこう。
+[k]
+
+＠エミヤ
+それなりに量があるが……[r]頼めるだろうか、紅[#女将:おかみ]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+
+＠紅閻魔
+任せておくでち。
+[k]
+
+[charaFace I 1]
+
+
+＠紅閻魔
+ひっきりなしにお客様が来るお宿に比べれば、[r]これぐらいはお安い御用でちよ！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+ありがとう。ではお言葉に甘えて。[r]（……にしても旅館経営か……憧れるな……）
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[bgmStop BGM_XMAS_2016 2.0]
+
+＠ブーディカ
+それじゃあ、次のメニューを決めなきゃだ。[r]どうするマルタ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_147 0.1]
+
+＠サンタマルタ
+むむむむ……。[r]まだ、メインのお料理には早いわよね。
+[k]
+
+[charaFace A 7]
+
+
+＠サンタマルタ
+サラダの他に何か欲しいところかも。[r]うーん、どうしましょう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+卵料理というのはどうかな？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+卵料理！　豪勢にいくわね！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+当世じゃそこまで豪勢じゃないかも？
+[k]
+
+＠ブーディカ
+んー、オムレツやスクランブルエッグだと[r]普段のメニューっぽいよね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+卵か。懐かしい。
+[k]
+
+[charaFace F 10]
+
+＠パーシヴァル
+鶏舎の鶏たちが卵をたくさん産んだ時には、[r]とりあえずガンガン茹でたもの……
+[k]
+
+[charaFace F 2]
+
+＠パーシヴァル
+或いは生で！　ガンガン飲んだものだ！
+[k]
+
+？1：ガンガンいきすぎてない？
+
+[charaFace F 1]
+
+＠パーシヴァル
+卵は成長にもってこいだからね。[r]栄養の塊だ！
+[k]
+
+
+[charaFace F 6]
+
+＠パーシヴァル
+まあ、生でいったのは[r]私くらいだったような気もするが[line 3]
+[k]
+
+？2：ＯＨ……パワフル……
+
+[charaFace F 7]
+
+＠パーシヴァル
+騎士ならずとも卵はガンガンいくとも。[r]そうだろう？
+[k]
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+ご馳走向きな卵料理、っていうとなんだろ？[r]ガレットはちょっと違うよねえ。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth E 5]
+[charaDepth H 4]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+[wt 0.5]
+[se ade116]
+[charaPut H 0,170]
+[charaEffect H bit_talk_37]
+[wt 0.5]
+
+[charaFace E 1]
+
+＠タマモキャット
+エッグベネディクトがいいぞ！[r]なにより名前がいい！　間違いなくストロング！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+あっ、いいかも！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+えっぐべねでぃくと？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+
+＠エミヤ
+イングリッシュマフィンの上にハムやベーコン、[r]ポーチドエッグを載せてソースをかけた料理だ。
+[k]
+
+＠エミヤ
+ポーチドエッグというのは、[r]いわゆる落とし卵だな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+あ、分かるわ。[r]熱湯に生卵を入れて茹で上げるやつね。
+[k]
+
+[charaFace A 7]
+
+＠サンタマルタ
+ふんふん……（想像中）
+[k]
+
+＠サンタマルタ
+……ソースってどういうのを使うの？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+オランデーズソースだね。
+[k]
+
+
+＠ブーディカ
+泡立てた卵黄に溶かしたバターを入れて、[r]レモンの果汁と塩を少々。何にでも合うんだこれが。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+
+＠サンタマルタ
+ふむふむ（想像中）
+[k]
+
+[charaFace A 1]
+
+＠サンタマルタ
+……美味しそう！
+[k]
+
+
+？1：美味しそう[&だ:だね]
+
+＠サンタマルタ
+あなたも未経験？[r]なら、初体験といきましょうか！
+[k]
+
+？2：いいよね、エッグベネディクト
+
+＠サンタマルタ
+マスターの好物？[r]なら、ええ、それにしましょう！
+[k]
+
+？！
+
+[charaFace A 6]
+
+＠サンタマルタ
+ふっふっふ。[r]お姉さんは弟妹の反応を見逃さないのです。
+[k]
+
+[charaFace A 1]
+
+＠サンタマルタ
+えへん。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth C 6]
+[charaDepth D 7]
+[charaDepth F 5]
+
+[bgmStop BGM_EVENT_147 0.8]
+
+[charaFace C 1]
+[charaFadeinFSL C 0.1 -306,0]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[charaFace F 1]
+[charaFadeinFSR F 0.1 306,0]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+[bgm BGM_EVENT_62 0.1]
+
+
+＠タマモキャット
+ならばメニューは決まったとみた！[r]キッチンの者ども！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+ええ！[r]エッグベネディクトを作りましょう！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+
+＠パーシヴァル
+卵なら、確か在庫が……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+足りない足りない。[r]もっともっとゲットしないとね！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_62 1.0 0.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+
+[scene 140600]
+[wt 1.5]
+[bgm BGM_EVENT_62 1.0 0.9]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.4]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+
+＠パーシヴァル
+ふむ。流石に馴染んできたものの……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+ああ。いったんここで氷結エネミーと遭遇する。[r]不必要な通過儀礼に思えるがな。
+[k]
+
+[charaFace C 5]
+
+＠エミヤ
+或いは、氷結エネミーの存在が……[r]何かしらの……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+ま、任せて、どんどんご飯作るから！[r]みんなを応援するからね！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+見て楽しい食べて美味しい！[r]気持ちのいいバトルスタイルだねえ！
+[k]
+
+＠ブーディカ
+流石は聖女、と言っても自覚が薄いんだっけ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+うーん。[r]それはそうなんだけど……
+[k]
+
+＠サンタマルタ
+こうしてお料理するのって、[r]聖女っぽくなくない？
+[k]
+
+？1：逆に聖女っぽいとも言えるかもしれない？
+
+[charaFace A 0]
+[bgmStop BGM_EVENT_62 0.7]
+
+＠サンタマルタ
+そうかしら。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：聖とは……真理とは……
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+[bgmStop BGM_EVENT_62 0.7]
+
+＠タマモキャット
+そしてキッチンとは！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+？！
+
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaFace M 0]
+[charaFadein M 0.4 1]
+[charaFace N 0]
+[charaFadeinFSR N 0.4 306,0]
+[charaFace O 0]
+[charaFadeinFSL O 0.4 -306,0]
+[wt 1.4]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[charaFace K 0]
+[charaFadeinFSR K 0.1 306,0]
+[charaFace L 0]
+[charaFadeinFSL L 0.1 -306,0]
+
+[charaFadeout M 0.4]
+[charaFadeout N 0.4]
+[charaFadeout O 0.4]
+[wt 0.4]
+[se ad21]
+[wt 1.0]
+
+[seStop ad21 0.3]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠タマモキャット
+ほい来た、カチンコチンのアイスエネミーだワン！
+[k]
+
+[charaFace E 5]
+
+
+＠タマモキャット
+フライパンでかち割るも良し、[r]アタシの爪で鰹節にするも良し、だ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+それかき氷にならない？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠タマモキャット
+うむ。故に今回は自重するのだワン……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+そう悲しまない、かわりに頑張るからさ！[r]かち割りなら任せておいて！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[se ad51]
+
+＠エミヤ
+来るぞ！[r]マスター！
+[k]
+
+？1：みんな、迎撃[&開始:お願い]！
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[charaFace K 0]
+[charaFadeinFSR K 0.1 306,0]
+[charaFace L 0]
+[charaFadeinFSL L 0.1 -306,0]
+[se ad21]
+[wt 1.0]
+[seStop ad21 0.3]
+
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

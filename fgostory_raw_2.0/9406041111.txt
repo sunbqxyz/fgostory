@@ -1,0 +1,762 @@
+
+
+
+＄94-06-04-11-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001600 1 マシュ]
+[charaSet B 9012000 1 ダ・ヴィンチ]
+[charaSet C 2044001 1 アナスタシア]
+[charaSet D 5048000 1 シャルロット・コルデー]
+[charaSet E 1098220500 1 カイニス]
+[charaSet F 1098220400 1 清少納言]
+[charaSet G 4029300 1 アキレウス]
+[charaSet H 4039300 1 マンドリカルド]
+[charaSet I 4008300 1 黒髭]
+[charaSet J 1098215500 1 ゴルドルフ]
+
+[charaSet K 1098216900 1 煉獄]
+[charaSet L 1098216800 1 沖田オルタ]
+
+[charaSet M 1098218400 1 クリストファー君]
+[charaSet N 10010000 1 ＤＯＭＡＮ]
+[charaSet O 1098215600 1 ステくん]
+
+[charaSet R 98115000 1 エフェクト用ダミー]
+[imageSet T back10000 1 1]
+[charaScale T 1.32]
+
+
+[charaDepth K 7]
+[charaDepth L 5]
+[charaDepth T 2]
+
+[scene 107500]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+このーっ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[effect bit_talk_shot_02]
+[se ade65]
+[wt 0.2]
+[se ade65]
+[wt 0.5]
+
+[effectDestroy]
+
+[effect bit_talk_kengekiall02_fs]
+[wt 0.2]
+[se ad470]
+[seStop ad470 0.7]
+[wt 0.2]
+[se ad170]
+[wt 0.3]
+[flashin once 0.07 0.1 FFFFFFAF FFFFFF00]
+[se ad170]
+[wt 0.8]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠アナスタシア
+うーん、攻めきれないわ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠シャルロット・コルデー
+こちらもダメです。[r]非力でごめんなさーい！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠アキレウス
+防戦に徹しているからなー。[r]やりにくいったらありゃしねぇ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+[charaFace L 15]
+[charaFadein L 0.1 1]
+
+＠煉獄
+さすがにこの人数で勝ち切れるとは[r]思っていないからな。
+[k]
+
+
+[charaFace K 13]
+
+＠沖田オルタ
+……む。[r]来ましたよ。あの人たちです。
+[k]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+
+＠M：？？？
+アッハッハッハ。[r]苦戦しているようだね、レオナルド！
+[k]
+
+[charaFadeout L 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+嫌な声がするー！[r]おまえかーーー！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 7]
+[charaFadein M 0.1 1]
+
+[bgm BGM_MAP_16 0.1]
+
+＠クリストファー君
+僕だ！
+[k]
+
+[charaFaceFade M 0 0.2]
+
+＠クリストファー君
+……というか味方に裏切られるとか、[r]カルデアなってないんじゃないのう？
+[k]
+
+[charaFaceFade M 1 0.2]
+
+＠クリストファー君
+なあ、ＤＯＭＡＮ！
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 6]
+[charaFadein N 0.1 1]
+
+
+＠ＤＯＭＡＮ
+ソソソソソ！[r]まったくもって仰る通りかもしれませんねえ！
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+[charaFadeTime T 0.2 0.5]
+
+＠黒髭
+（ユーの後ろにいる奴もめっちゃ裏切りそうだけど。[r]　だいじょうぶ？）
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout T 0.2]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+そんなことより！
+[k]
+
+[charaFace B 25]
+
+＠ダ・ヴィンチ
+まずは聞かせて。[r]ステくんは、無事なの？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+
+＠クリストファー君
+あったりまえだろー。
+[k]
+
+[messageOff]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 0]
+[charaFadein O 0.1 1]
+[cueSe SE_21 21_ade592]
+[wt 1.0]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 27]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+ステくん！！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 7]
+[charaFadein M 0.1 1]
+
+
+＠クリストファー君
+おっと。[r]この子は僕のものだもんねーだ。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 28]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+むーッ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 1]
+[charaFadein M 0.1 1]
+
+＠クリストファー君
+あははは。
+[k]
+
+[charaFaceFade M 0 0.2]
+
+＠クリストファー君
+でさー。[r]ここはいっちょ、取引しない？
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 25]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+取引？　何？[r]ステくんを買えとか、そういうコト？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+
+＠クリストファー君
+誰が売るもんか。[r]そうじゃなくて、アイツ。
+[k]
+
+＠クリストファー君
+沖田オルタを倒すために、[r]手を組まないかって。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠ゴルドルフ
+……ふむ。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+だ[line 3]
+[k]
+
+[charaFace B 5]
+
+＠ダ・ヴィンチ
+だーれが組むもんかー！[r]いーーーだっ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 1]
+[charaFadein M 0.1 1]
+
+
+＠クリストファー君
+レオナルドはこう言ってるけど、[r]ゴッフ隊長はどう思うー？
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 4]
+[charaFadein J 0.1 1]
+
+
+＠ゴルドルフ
+あー……沖田総司を倒した後は、[r]また敵に分かれるという認識でいいのかね？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+
+＠クリストファー君
+まあ、そうだね。[r]その先は、やっぱり競争だ。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠ゴルドルフ
+[%1]、[r]君はどう思うかね？
+[k]
+
+
+[input selectBranch]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 0.4]
+[bgmStop BGM_EVENT_49 0.4]
+[charaSet A 8001600 1 マシュ]
+[charaSet B 9012000 1 ダ・ヴィンチ]
+[charaSet C 2044001 1 アナスタシア]
+[charaSet D 5048000 1 シャルロット・コルデー]
+[charaSet E 1098220500 1 カイニス]
+[charaSet F 1098220400 1 清少納言]
+[charaSet G 4029300 1 アキレウス]
+[charaSet H 4039300 1 マンドリカルド]
+[charaSet I 4008300 1 黒髭]
+[charaSet J 1098215500 1 ゴルドルフ]
+[charaSet K 1098216900 1 煉獄]
+[charaSet L 1098216800 1 沖田オルタ]
+[charaSet M 1098218400 1 クリストファー君]
+[charaSet N 10010000 1 ＤＯＭＡＮ]
+[charaSet O 1098215600 1 ステくん]
+[charaSet R 98115000 1 エフェクト用ダミー]
+[imageSet T back10000 1 1]
+[charaScale T 1.32]
+[charaDepth K 7]
+[charaDepth L 5]
+[charaDepth T 2]
+
+[scene 107500]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[wt 0.8]
+
+[maskin black 1.0]
+[wait mask]
+
+[bgm BGM_MAP_16 0.4]
+
+[label selectBranch]
+
+
+？1,5000：ひとまず組んでみる……かな
+
+[branch select01_1]
+
+？2,6000：いやー、さすがにどうかと
+
+[branch select01_2]
+
+？！
+
+[label select01_1]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+えーっ！
+[k]
+
+[charaFace B 18]
+
+＠ダ・ヴィンチ
+やだやだ、私この男の子嫌い！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 1]
+[charaFadein M 0.1 1]
+
+＠クリストファー君
+ははは、僕だって大嫌いだから[r]お互い様だね！
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace M 5]
+[charaFadeinFSL M 0.1 0]
+[charaFace B 5]
+[charaFadeinFSR B 0.1 2]
+
+＠二人
+グ[messageShake 0.03 5 5 0.5]ルルルル！
+[k]
+
+[charaFadeout M 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk N]
+[charaFace N 6]
+[charaFadein N 0.1 1]
+
+＠ＤＯＭＡＮ
+ソンンンンン。
+[k]
+
+[charaFace N 0]
+
+＠ＤＯＭＡＮ
+年端もいかぬ幼子らの争い！[r]はあ。そのようなもの拙僧はさして興味もなく[line 3]
+[k]
+
+＠ＤＯＭＡＮ
+面白きことも、まったくなく[line 3]
+[k]
+
+[charaFace N 2]
+
+＠ＤＯＭＡＮ
+ですので！
+[k]
+
+[charaFace N 1]
+
+＠ＤＯＭＡＮ
+ええまあここは仲良く。万事仲良く。[r]手に手を取って力を合わせて勝利を掴んではいかがか？
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 15]
+[charaFadein F 0.1 1]
+
+
+＠清少納言
+マンボちゃんが言うと説得力あるよなー。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠黒髭
+欠片もないですよ？
+[k]
+
+[branch select01_end]
+
+
+[label select01_2]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 2]
+[charaFadein M 0.1 1]
+
+＠クリストファー君
+だよなー！[r]僕だってカルデアなんてごめんだね！
+[k]
+
+＠クリストファー君
+ましてサーヴァントなんて！
+[k]
+
+＠クリストファー君
+僕は使える人間を従える者であって[r]従う者じゃないんだ！
+[k]
+
+＠クリストファー君
+絶対にカルデアに仕えてなんかやらないぞー！
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 8]
+[charaFadein I 0.1 1]
+
+＠黒髭
+まあ仕えてはないよね君……（の大人版）。
+[k]
+
+？1：コロンブスはいつだって夢を追いかけてるから……
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 3]
+[charaFadein M 0.1 1]
+
+＠クリストファー君
+え、大人になった僕って結構立派？
+[k]
+
+[messageOff]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaDepth A 7]
+[charaDepth J 4]
+[charaDepth B 5]
+
+[charaFace J 4]
+[charaFadeinFSL J 0.1 -356,0]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[charaFace A 4]
+[charaFadeinFSR A 0.1 356,0]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaDepth F 7]
+[charaDepth D 6]
+[charaDepth E 5]
+[charaDepth C 4]
+
+[charaFace E 4]
+[charaFadeinFSL E 0.1 -356,0]
+[charaFace D 4]
+[charaFadein D 0.1 -126,0]
+[charaFace F 4]
+[charaFadeinFSR F 0.1 136,0]
+[charaFace C 4]
+[charaFadeinFSR C 0.1 376,0]
+[wt 1.0]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaDepth H 7]
+[charaDepth G 4]
+[charaDepth I 5]
+
+[charaFace I 4]
+[charaFadeinFSL I 0.1 -356,0]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+[charaFace G 4]
+[charaFadeinFSR G 0.1 356,0]
+[wt 1.0]
+
+[charaFadeout I 0.1]
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+＠全員
+……。[r]……。
+[k]
+
+[charaTalk on]
+
+[charaTalk M]
+[charaFace M 2]
+[charaFadein M 0.1 1]
+
+＠クリストファー君
+その意味深な沈黙は何だよう！？
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+
+＠ＤＯＭＡＮ
+まあまあ。[r]まあまあ、まあまあ。
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 2]
+[charaFadein M 0.1 1]
+
+＠クリストファー君
+ともかく、協力しないんなら[r]アイツは責任持ってそっちがやっつけるんだな！
+[k]
+
+＠クリストファー君
+僕らはここで待つよ！
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+
+
+
+
+
+
+
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠清少納言
+子供は可愛いけど、図々しい子供は別！[r]楽ばっかしてるとロクな大人になんねーぞ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+
+＠クリストファー君
+若い内の苦労は買ってでもしろ？
+[k]
+
+[charaFaceFade M 2 0.2]
+
+＠クリストファー君
+嫌だね、しなくてもいい苦労は[r]なるべく誰かに売るべし押しつけるべし！
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠清少納言
+すでにロクな子供じゃぬぇー！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+ふんだ。さあ行くぞ、[%1][&君:ちゃん]！
+[k]
+
+[label select01_end]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_16 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

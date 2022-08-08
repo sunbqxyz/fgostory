@@ -1,0 +1,200 @@
+
+
+
+＄91-20-10-01-4-1
+[soundStopAll]
+[charaSet A 3002001 1 迪尔姆德]
+[charaSet B 99502600 1 玛修]
+[charaSet C 2010002 1 比利]
+
+[scene 11110]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠迪尔姆德
+承蒙搭救，我的主人……！
+[k]
+
+？1：不用介意！
+？！
+
+[charaFadeout A 0.1]
+
+[charaEffect B bit_talk_10]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠玛修
+御主，奇美拉反应还没有……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut B 1200,1200]
+
+[messageOff]
+
+[wt 0.3]
+
+[shake 0.05 3 3 0.6]
+[se ad19]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.2 2]
+[charaMove A 1 0.2]
+
+＠迪尔姆德
+快退下！
+[k]
+
+[messageOff]
+
+[fowardEffect bit_talk_13]
+[charaShake A 0.05 5 5 0.4]
+[se bac247]
+[seStop bac247 0.5]
+
+[wt 0.5]
+
+[fowardEffectStop]
+
+[charaFace A 3]
+
+＠迪尔姆德
+呜，唔噢噢噢噢……！
+[k]
+
+[charaFace A 2]
+
+＠迪尔姆德
+双枪啊！
+[k]
+
+[charaFadeout A 0.1]
+
+[messageOff]
+
+[wt 0.3]
+
+[fowardEffect bit_bolg_03y]
+[se bac140]
+[wt 0.2]
+[se bac141]
+[wt 0.2]
+[fowardEffect bit_bolg_03]
+[se bac142]
+[wt 0.3]
+[se bac143]
+
+[wt 1.3]
+
+[fowardEffectStop]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠比利
+迪尔姆德！
+[k]
+
+[charaFadeout C 0.1]
+
+[effect bit_talk_06]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠迪尔姆德
+……看来我只能到此为止了。[r]接下来就拜托各位了……！
+[k]
+
+？1：……嗯。
+
+[charaFace A 0]
+
+＠迪尔姆德
+……尽管心有不甘……[r]但这……其实也不赖……
+[k]
+
+？2：……辛苦了。
+
+[charaFace A 1]
+
+＠迪尔姆德
+……哈哈哈，居然对身为从者的我说辛苦……[r]谢谢，御主。
+[k]
+
+[charaFace A 0]
+
+＠迪尔姆德
+尽管只有刹那，但我能与您并肩战斗……
+[k]
+
+？！
+
+[bgmStop BGM_EVENT_3 2.0]
+
+[messageOff]
+[charaSpecialEffect A flashErasure 1 1.7]
+[se ad52]
+[wt 0.6]
+[effectStop bit_talk_06]
+[wait charaSpecialEffect A]
+[wt 1.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠比利
+……走吧，御主！
+[k]
+
+[charaFadeout C 0.1]
+
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠玛修
+已经没有大型敌人反应了。[r]我们去往下个地点吧！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut B 1200,1200]
+
+[messageOff]
+
+[wt 0.3]
+
+[se ad83]
+[wait se ad83]
+
+[seLoop ad84]
+[seStop ad84 2.0]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

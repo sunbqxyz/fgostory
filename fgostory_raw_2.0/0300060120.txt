@@ -1,0 +1,1574 @@
+
+
+＄03-00-06-01-2-0
+
+
+
+[soundStopAll]
+
+[charaSet A 1098123000 1 穆尼尔]
+[charaSet B 8001410 1 玛修]
+[charaSet C 1098123200 1 戈尔德鲁夫]
+[charaSet D 1098158300 1 尼莫]
+[charaSet E 1098124510 1 达·芬奇]
+[charaSet F 9005001 1 福尔摩斯]
+[charaSet G 1098182000 1 尼莫·护士]
+[charaSet H 98002000 1 芙芙]
+[charaSet I 1098182700 1 亚特兰蒂斯防卫兵]
+
+[charaSet S 5009000 1 特效用dummy]
+[charaSet T 5009000 1 特效用dummy]
+
+
+[charaPut T 1200,1200]
+[charaEffect T bit_talk_10_LowLevel]
+
+[cameraMove 0 0,0 1.01]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.3]
+
+
+[scene 91700]
+
+
+[se ade338]
+[se ad876]
+[se ad898]
+[seVolume ad898 0 0.5]
+[se ad628]
+[seVolume ad628 0 0.5]
+
+[se ad153]
+[seVolume ad153 0 0]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad153 0.6 0.6]
+[seVolume ad556 0.6 0.4]
+[shake 0.02 3 4 0]
+[effect bit_talk_41]
+
+[seVolume ad153 1.0 1.0]
+[seVolume ad554 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.5]
+
+
+[fadeout black 1.0]
+[seVolume ad153 1.0 0.2]
+[seVolume ad554 1.0 0.2]
+[wait fade]
+
+[effectStop bit_talk_41]
+
+[scene 86200]
+[wt 1.0]
+
+[shake 0.03 3 4 0]
+
+[se ad876]
+[seVolume ad876 0 0.3]
+[se ad898]
+[seVolume ad898 0 0.3]
+[se ad221]
+[seVolume ad221 0 0]
+[se ade32]
+[seVolume ade32 0 0]
+
+[se ad9]
+[seVolume ad9 0 0]
+[flashin loop 0.7 0.7 FF333380 FF333300]
+
+
+[seVolume ad221 1.0 0.6]
+[seVolume ade32 1.0 0.6]
+[seVolume ad9 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+＠穆尼尔
+唔噢噢噢噢噢噢噢噢噢噢噢噢噢噢噢噢噢噢噢噢！
+[k]
+
+[messageOff]
+[shake 0.03 4 5 1.2]
+[se ad876]
+[seVolume ad876 0 0.3]
+[se ad898]
+[seVolume ad898 0 0.3]
+[se ad608]
+[wt 1.2]
+[seStop ad608 0.4]
+[shake 0.02 3 4 0]
+
+
+＠穆尼尔
+可恶，可恶，可恶！[r]我可从未体验过战舰的迫降啊啊啊啊！
+[k]
+
+＠穆尼尔
+而且为什么要由我来掌舵啦！？[r]船长！　船长在干什么啦啊啊啊啊啊啊！
+[k]
+
+＠穆尼尔
+唔噢噢噢噢噢噢噢噢噢噢噢噢噢噢噢噢噢噢噢！[r]全体都抓紧座椅啊啊啊啊啊啊啊啊啊啊啊啊啊！
+[k]
+
+[messageOff]
+[shake 0.03 4 5 1.6]
+[se ad876]
+[se ad898]
+[seStop ad153 1.0]
+[seStop ad556 1.0]
+[wt 1.6]
+
+[shake 0.03 2 6 0]
+[bgmStop BGM_EVENT_80 1.0]
+[se ad608]
+[se ad789]
+[se ad628]
+[seStop ad221 1.0]
+[seStop ade32 1.0]
+[seStop ad153 1.0]
+[seStop ad554 1.0]
+[seVolume ad9 1.0 0]
+
+[fadeout white 2.0]
+[wait fade]
+
+[shakeStop]
+[wt 4.0]
+
+[flashOff]
+
+[seVolume ad9 2.0 0.4]
+[wt 1.0]
+[fadein white 2.0]
+[wait fade]
+
+[seStop ad9 2.0]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠穆尼尔
+呼，哈……
+[k]
+
+[charaFace A 3]
+
+＠穆尼尔
+……停……停下来了。[r]我……我还……活着吧……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠玛修
+御主，您没事吧！
+[k]
+
+？1：当然没事，多亏有安全带。
+
+[charaFace B 1]
+＠玛修
+安全带……原来如此，[r]是戈尔德鲁夫新所长教诲的成果呢！
+[k]
+
+？2：玛修也没事吧？
+
+[charaFace B 13]
+＠玛修
+嗯。考虑到万一会发生的情况，[r]我一直保持半蹲的姿势待命，总算没事。
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.8 0,-50]
+[charaMove C 0,0 0.8]
+[charaShake C 0.02 3 3 0.8]
+[wt 1.2]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠戈尔德鲁夫
+看……看来迫降成功了！
+[k]
+
+[charaFace C 16]
+＠戈尔德鲁夫
+那就紧急关闭一号到三号的魔力炉引擎！[r]赶快！　一旦魔力被感知，又会遭到追击了！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaEffect T bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaPut T 1]
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+
+＠[51ffff]达·芬奇[-]
+[51ffff]我已经全都紧急关闭了哦！[-][r][51ffff]船长，船体的伪装处理就麻烦你啦～！[-]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠尼莫
+用不着你提醒。[r]我现在正好完成了。
+[k]
+
+＠尼莫
+我在迫降前就开始伪装船体，[r]敌人应该无法目视到我们降落到哪里了。
+[k]
+
+＠尼莫
+达·芬奇抓紧启动[#迷彩:Cloak]机能。[r]因为就算无法用肉眼看见，魔力感知还是很可怕……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+＠[51ffff]达·芬奇[-]
+[51ffff]Aye，sir！[-]
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_70 1.0 0.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+[charaPut T 1200,1200]
+
+[scene 91700]
+
+[charaSet E 1098124500 1 达·芬奇]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.2]
+
+[scene 86200 1.5]
+[wt 1.9]
+
+[bgm BGM_EVENT_70 1.0 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠福尔摩斯
+……好了。[r]来梳理一下当前的情况吧。
+[k]
+
+＠福尔摩斯
+遭受到宙斯神的攻击，[r]Storm Border紧急迫降到奥林波斯西部地区。
+[k]
+
+＠福尔摩斯
+船体包裹在光学迷彩下，[r]以无法目视的状态迫降。
+[k]
+
+＠福尔摩斯
+并且通过关闭作为潜航艇动力的魔力炉，[r]以及用隐蔽结界覆盖整艘船，来遮蔽魔力感知。
+[k]
+
+[charaFace F 4]
+＠福尔摩斯
+理论上，我们应该[line 3][r]成功瞒着敌人的耳目登陆星间都市了。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠达·芬奇
+首先，说一声大家都辛苦了。
+[k]
+
+＠达·芬奇
+我们没有选择危险系数极高的虚数潜航，[r]却依然成功紧急回避了，大家可以为此感到自豪。
+[k]
+
+＠达·芬奇
+因为跳过必要工程的紧急虚数潜航[r]最糟的情况下可能会导致全军覆没……
+[k]
+
+[charaFace E 4]
+＠达·芬奇
+……以往的几次成功案例几乎都是奇迹。
+[k]
+
+[charaFace E 1]
+
+＠达·芬奇
+呼。
+[k]
+
+＠达·芬奇
+总之，大家平安无事就好！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠戈尔德鲁夫
+这也佐证了Storm Border的性能就是如此优秀吧。
+[k]
+
+＠戈尔德鲁夫
+连全能神的雷击都能躲避！　还具备虚数潜航机能！
+[k]
+
+＠戈尔德鲁夫
+要是带进泛人类史，[r]想必会掀起最新的技术革命吧！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠尼莫
+只是可能性为零吧。[r]在人理正常运作的地球上，这艘[#舰艇:船]是无法成立的。
+[k]
+
+＠尼莫
+只有在白纸化的地球上，[r]我的[#宝具:鹦鹉螺号]和希翁的[#拟似灵子装甲:Hermes Skin]，
+[k]
+
+＠尼莫
+才可能与锻造神赫淮斯托斯[r]以及迦勒底的技术结合，并成立。
+[k]
+
+＠尼莫
+Storm Border的存在，[r]是仅限到打倒『异星之神』为止的非常态措施。
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠戈尔德鲁夫
+唔，唔嗯……是这样啊……[r]其实我可能大概也隐约觉察到了……
+[k]
+
+？1：不过这无疑是一艘可靠的舰艇哦。
+
+？！
+
+[charaFace C 1]
+＠戈尔德鲁夫
+唔嗯。这话说得没错。[r]你相当懂行呢，[%1]。
+[k]
+
+[charaFace C 0]
+＠戈尔德鲁夫
+不管怎么说，[r]我们都不能白白浪费亚特兰蒂斯的战斗。
+[k]
+
+＠戈尔德鲁夫
+如果在登陆前被击败，[r]可就无颜面对亚特兰蒂斯那些家伙了啊。
+[k]
+
+＠戈尔德鲁夫
+要抱着耗尽一切资源的觉悟战斗。[r]令咒已经填充完毕了吧？
+[k]
+
+[charaFace C 4]
+
+＠戈尔德鲁夫
+……
+[k]
+
+[charaFace C 5]
+
+＠戈尔德鲁夫
+针对大规模作战藏起来的宝贝[#预备令咒][line 3]
+[k]
+
+
+＠戈尔德鲁夫
+竟然会用得像是家常便饭！
+[k]
+
+？1：已经填充完毕了。
+
+[charaFace C 1]
+
+＠戈尔德鲁夫
+嗯！
+[k]
+
+？2：没想到竟能填充三道令咒……
+
+＠戈尔德鲁夫
+我都说了这是宝贝吧。[r]预备令咒可不是想要多少就能有多少的啦！
+[k]
+
+[charaFace C 0]
+
+＠戈尔德鲁夫
+这可是让复数彷徨海的魔力炉满负荷运转，[r]并投入技术顾问与经营顾问的力量，
+[k]
+
+＠戈尔德鲁夫
+以及希翁的睡眠时间等资源，[r]才勉强来得及形成的令咒。
+[k]
+
+[charaFace C 4]
+
+＠戈尔德鲁夫
+……能否再准备一份就得看运气了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛修
+这也意味着我们现在的运气很不错吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠戈尔德鲁夫
+唔……[r]好，好了，总而言之！
+[k]
+
+？！
+
+[charaFace C 10]
+
+＠戈尔德鲁夫
+事已至此，[r]也只能投入手头拥有的一切了！
+[k]
+
+＠戈尔德鲁夫
+我们必须完成任务才行……
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 24]
+[charaFadein E 0.1 1]
+＠达·芬奇
+嗯。我们一定要在[#这里:奥林波斯]，[r]成功切除空想树才行。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠戈尔德鲁夫
+话说技术顾问。[r]你觉得我们的安全能得到多大程度的保障呢？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 24]
+[charaFadein E 0.1 1]
+＠达·芬奇
+我想想[line 3]
+[k]
+
+
+[messageOff]
+[charaFadeout E 1.5]
+[scene 91700 1.5]
+[wt 1.9]
+
+＠达·芬奇
+仅根据周边地域的扫描情况来看，我们运气还不错。[r]这里多半是奥林波斯的边境地带吧。
+[k]
+
+＠达·芬奇
+几乎没有建筑物，没有都市居民的身影，[r]也暂时没发现士兵或防卫装置。
+[k]
+
+＠达·芬奇
+这可是临危受命掌舵的穆尼尔的功劳呢。
+[k]
+
+
+[messageOff]
+[scene 86200 1.5]
+[wt 1.9]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠尼莫
+嗯。我全神贯注地与尼莫系列进行精神配合，[r]根本忙不过来。
+[k]
+
+[charaFace D 1]
+＠尼莫
+干得漂亮，穆尼尔。[r]稍后我会正式教你如何驾驶[#舰艇:船]的。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠穆尼尔
+！
+[k]
+
+[charaFace A 4]
+＠穆尼尔
+哎，哎呀，哈哈哈，哎呀呀呀！[r]情况确实如此呢，真伤脑筋！
+[k]
+
+＠穆尼尔
+虽然船长叫我掌舵时我慌得不行啦，[r]但也只能像平常一样硬着头皮上了！
+[k]
+
+？1：穆尼尔先生，谢谢你。
+？2：您对情况的判断非常准确。
+
+？！
+
+[charaFace A 1]
+
+＠穆尼尔
+没什么，是这艘Storm Border厉害啦。[r]我只是稳定住了舰艇的航向而已。
+[k]
+
+＠穆尼尔
+但只要能帮上船长的忙就好。[r]对吧，船长！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠尼莫
+是啊。我本想在驾驶座安排一个水兵的，[r]但现在看来没这个必要了。
+[k]
+
+＠尼莫
+真不错。[r]空出来的[#水兵:一个]可以派去清扫舰内了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠戈尔德鲁夫
+嗯。舰艇内部就该保持清洁。
+[k]
+
+[charaFace C 0]
+＠戈尔德鲁夫
+咳咳。所以后续呢？[r]经营顾问。总不可能全是好消息吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠福尔摩斯
+没错。[r]您越来越处变不惊了呢，戈尔德鲁夫新所长。
+[k]
+
+[charaFace F 0]
+＠福尔摩斯
+既然全部魔力炉真正意义上彻底关闭了，[r]那重新启动自然需要花费一定时间。
+[k]
+
+＠福尔摩斯
+也就是说，我们无法紧急启动潜航艇。[r]虚数潜航也一样。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠戈尔德鲁夫
+这……这代表……
+[k]
+
+？1：虽然我们很难被发现。
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛修
+是的。虽说只要一直躲藏下去，[r]被感知到的可能性多半很低……
+[k]
+
+？2：可一旦被发现，就无处可逃了？
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠玛修
+……说得对。[r]可一旦有什么万一，想脱身会非常困难。
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠尼莫
+没错。既然无法紧急启动，[r]那只要再被发现一次就完了。
+[k]
+
+＠尼莫
+而且也无法展开防御，[r]只要直接承受几次那种规模的大魔力攻击……
+[k]
+
+[charaFace D 4]
+＠尼莫
+…………我实在……不愿意……想象呢。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 1.0]
+[charaMoveReturn D 5,0 0.8]
+[wt 1.2]
+[charaMoveReturn D -5,0 0.8]
+[wt 1.2]
+[charaFadeout D 0.4]
+[charaMove D 0,-50 0.4]
+[wt 0.3]
+[se ad144]
+[seVolume ad144 0 0.5]
+[wt 1.6]
+
+？1：船长！
+
+？！
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠戈尔德鲁夫
+！[messageShake 0.02 3 3 0.4]？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠穆尼尔
+船长！[r]突……突然倒下了……怎么了！？
+[k]
+
+＠尼莫
+…………抱歉。
+[k]
+
+＠尼莫
+看来宙斯的大雷霆实在是太强了。[r]船体的损伤本身并不大……
+[k]
+
+＠尼莫
+……但却，伤及了……我的灵核……
+[k]
+
+[charaTalk A]
+＠穆尼尔
+！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠玛修
+对从者特效攻击……！？
+[k]
+
+
+＠尼莫
+要是再吃一击……[r]就危险了……
+[k]
+
+＠尼莫
+差点……又要……失去……[r]好不容易才获得的……舰艇了……
+[k]
+
+＠尼莫
+嗯……[r]真难为情，我的脚……使不上……力气。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠戈尔德鲁夫
+哎哎，快联络医务室的尼莫·护士！[r]总之先让倒下的人好好静养！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠穆尼尔
+好……好的！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 1.0]
+
+[charaFace F 4]
+＠福尔摩斯
+达·芬奇。[r]也就是说，你也受到伤害了？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠达·芬奇
+……嗯，看来是这样。
+[k]
+
+＠达·芬奇
+我还以为身体状态之所以不好，[r]是因为我将魔力大肆用在干扰箔和隐蔽上了呢……
+[k]
+
+＠达·芬奇
+但直到刚才为止，[r]我都以演算中枢的形式与Storm Border相连，
+[k]
+
+＠达·芬奇
+因此和船长一起，[r]共同承担了……深重的伤害呢。
+[k]
+
+[charaFace E 14]
+＠达·芬奇
+看来……我也应该……稍微……休息一下了[line 3]
+[k]
+
+
+[messageOff]
+[charaMove E 0,-20 0.4]
+[charaFadeout E 0.4]
+[wt 0.4]
+
+？1：达·芬奇亲！？
+
+？！
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.2 20,0]
+[charaMove F 1 0.2]
+[se ad775]
+[wt 0.1]
+[charaShake F 0.02 3 3 0.2]
+[wt 0.1]
+[seStop ad144 0.2]
+[wt 1.0]
+
+＠福尔摩斯
+哎哟。[r]……总算是接住了。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad8]
+[wt 0.6]
+[wt 1.4]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠尼莫·护士
+感谢你们呼叫护士。[r]是有急诊病患吗？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠戈尔德鲁夫
+噢噢，没错，来得好，尼莫！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠穆尼尔
+就是倒下的船长，[r]和瘫坐在那边的达·芬奇！
+[k]
+
+＠穆尼尔
+赶紧治疗吧！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 86200]
+[wt 1.5]
+
+[se ad8]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠芙芙
+芙，芙！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠玛修
+福尔摩斯先生，穆尼尔先生！[r]那个，达·芬奇亲和船长他们……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠穆尼尔
+嗯。他们俩现在都睡下了。[r]说是睡下，其实更准确的说法是北欧那时的那个啦。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠福尔摩斯
+他们正在使用以前我也用过的回复舱。[r]就算外表看上去没有问题，灵核也受到了损伤。
+[k]
+
+＠福尔摩斯
+应该会花费数天时间，但不必担心。[r]他们完全治愈的可能性还是很高的哦。
+[k]
+
+[charaFace F 9]
+
+＠福尔摩斯
+说得通俗一点嘛，我想想。[r]就是并无大碍。
+[k]
+
+？1：总之，真是太好了。
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠玛修
+嗯！　虽然无法去回复舱探望令人有些遗憾，[r]但真是太好了！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠福尔摩斯
+嗯。原本应该等他们两位都恢复后，[r]再以万全的状态开始作战……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+＠戈尔德鲁夫
+唔。我们既没有这个闲工夫，[r]精神上也被逼得非常紧迫了。
+[k]
+
+[charaFace C 16]
+＠戈尔德鲁夫
+船长和技术顾问漂亮地履行了自己的职责！
+[k]
+
+＠戈尔德鲁夫
+虽说最终导致他俩现在派不上用处了，[r]但一码归一码。目前首要任务是疗伤。
+[k]
+
+[charaFace C 15]
+＠戈尔德鲁夫
+留下来的我们有义务最大限度活用[r]他俩创造出来的机会。也就是说[line 3]
+[k]
+
+？1：要在被发现之前采取行动，对吧？
+
+[charaFace C 1]
+＠戈尔德鲁夫
+没错。[r]事到如今，应该不用我多说了吧？
+[k]
+
+？2：是要去买探望用的……蜜瓜吧？
+
+[charaFace C 6]
+＠戈尔德鲁夫
+你脑袋烧坏了吗！[r]这件事我已经安排好了！
+[k]
+
+？！
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaFace C 0]
+＠戈尔德鲁夫
+咳咳。那我要作为迦勒底新所长，[r]兼Storm Border司令官，对你们下达命令。
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace C 10]
+[bgm BGM_EVENT_82 0.1]
+
+＠戈尔德鲁夫
+御主[%1]。[r]及其从者玛修·基列莱特。
+[k]
+
+＠戈尔德鲁夫
+虽然目前仍处于未知的状况下，[r]但需要你们二人火速出击。
+[k]
+
+＠戈尔德鲁夫
+既然技术顾问已经这个样子了，[r]自然无法像平时一样做好万全准备，
+[k]
+
+＠戈尔德鲁夫
+但我和穆尼尔，[r]以及经营顾问都会在这里支援你们。
+[k]
+
+[charaFace C 10]
+＠戈尔德鲁夫
+你们当前的目的只有一个！[r]那就是探索这异闻带，并与泛人类史从者会合！
+[k]
+
+[charaFace C 1]
+＠戈尔德鲁夫
+呵呵。至少这次并非只有不利因素。[r]毕竟我们还有先行登陆的“战力”嘛。
+[k]
+
+＠戈尔德鲁夫
+自亚特兰蒂斯启程的英灵们……[r]只要能找到他们，情况就会彻底改变！
+[k]
+
+[charaFace C 10]
+＠戈尔德鲁夫
+为了打败可恨的基尔什塔利亚、[r]大得离谱的大西洋空想树，
+[k]
+
+＠戈尔德鲁夫
+以及可怕的宙斯，[r]必须先与他们会合才行！
+[k]
+
+？1：是！
+
+[charaFace C 11]
+＠戈尔德鲁夫
+呵呵，答得好。[r]看来我可以放心吃早餐了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？2：玛修，出发吧！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠玛修
+是，御主！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠福尔摩斯
+先把周边的扫描结果告诉你们吧。[r]……不得不说情况非常严峻。
+[k]
+
+＠福尔摩斯
+已经查明在奥林波斯也无法设置召唤阵……[r]也就是无法确保追加战力。
+[k]
+
+＠福尔摩斯
+灵脉被彻底管理起来了。这里的灵脉太有人工……[r]不，应该说太有神造的感觉了。
+[k]
+
+＠福尔摩斯
+换句话说，我们无法在奥林波斯[r]确保足以维持英灵召唤的魔力。
+[k]
+
+＠福尔摩斯
+所以在召唤方面，仅限于从灵基肖像进行即时召唤[line 3][r]也就是仅限战斗时的临时召唤。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠芙芙
+芙，芙……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠戈尔德鲁夫
+正因为如此，[r]你们才一定要与先行登陆的英灵们会合才行。
+[k]
+
+＠戈尔德鲁夫
+不然光凭现存的战力，根本无能为力。[r]也无法保障我们的安全。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠穆尼尔
+如果可以连接灵脉，召唤出战斗系英灵就好了……[r]但事情总无法那么顺心呢。
+[k]
+
+＠穆尼尔
+继亚特兰蒂斯之后，这里居然也是这样。
+[k]
+
+[charaFace A 0]
+
+＠穆尼尔
+所以啦。虽然不知道能派上多大用处，[r]但你们俩把这个拿去用吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛修
+好。[r]呃，这是……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠穆尼尔
+这是达·芬奇参考亚特兰蒂斯居民的打扮，[r]偷偷制作的伪装套件。
+[k]
+
+＠穆尼尔
+算是某种魔术礼装啦。[r]能在光学与认知方面欺瞒所有[#视线][line 3]
+[k]
+
+＠穆尼尔
+是不用实际换衣服那么麻烦，[r]也可以获得变装效果的道具。
+[k]
+
+＠穆尼尔
+还利用了福尔摩斯变装宝具的技术。[r]用这玩意变装成奥林波斯居民……
+[k]
+
+？1：就能进行现阶段的情报搜集了吧。
+
+＠穆尼尔
+嗯。还是老样子，拜托你们了。[r]多加小心哦。
+[k]
+
+？2：就能混入都市奥林波斯了。
+
+？！
+
+＠穆尼尔
+不幸中的万幸是，[r]你们俩的魔力反应都是人类。
+[k]
+
+＠穆尼尔
+现在玛修身上那种[r]从者特有的气息似乎非常薄弱。
+[k]
+
+＠穆尼尔
+你们甚至可以认为，[r]这样比带着从者更容易潜入哦？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠玛修
+嗯。确实。
+[k]
+
+＠玛修
+如果只有现在的我和前辈两个人，[r]那被敌对从者发现的危险应该会很低。
+[k]
+
+＠玛修
+假如能够趁此机会，[r]与先行登陆的各位英灵会合的话！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠穆尼尔
+……[r]……
+[k]
+
+＠穆尼尔
+……但是那个，怎么说呢。[r]战斗时的战力不足也是事实。
+[k]
+
+＠穆尼尔
+不要过于相信伪装套件以至于掉以轻心哦？
+[k]
+
+＠穆尼尔
+不过面对灵子转移和攻略异闻带的专家，[r]我应该不需要班门弄斧了吧。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_82 1.0]
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+[wt 1.0]
+
+[bgm BGM_EVENT_70 0.1]
+[charaFace F 0]
+
+＠福尔摩斯
+新所长。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 5]
+[charaDepth F 4]
+[charaTalk C]
+[charaFace C 0]
+[charaFace F 0]
+[charaFadein C 0.1 -200,0]
+[charaFadein F 0.1 200,0]
+＠戈尔德鲁夫
+嗯。怎么了，经营顾问。
+[k]
+
+＠福尔摩斯
+我有两个提案。
+[k]
+
+＠福尔摩斯
+第一个，我建议将现阶段获得的战斗[r]以及环境数据都打包发送给彷徨海。
+[k]
+
+＠福尔摩斯
+另一个，请将耳朵凑过来。
+[k]
+
+[messageOff]
+[se ade74]
+[charaMove F 50,0 1.0]
+[wt 1.2]
+[seStop ade74]
+[charaTalk C]
+[charaFace C 7]
+＠戈尔德鲁夫
+什……什么事啊。[wt 0.4][charaFace C 1][charaShake C 0.02 3 3 0.4][r]呼呼哈哈哈好痒啊，痒死我了。
+[k]
+
+＠戈尔德鲁夫
+……[r]……
+[k]
+
+[charaFace C 5]
+＠戈尔德鲁夫
+…………什……什么！？
+[k]
+
+[charaFace C 6]
+＠戈尔德鲁夫
+经营顾问！[r]你这……那个，不对，可是……！
+[k]
+
+＠福尔摩斯
+所长。请您回想一下[r]英灵奥德修斯率领的防卫兵。
+[k]
+
+
+[messageOff]
+[fadeout white 0.5]
+[bgm BGM_EVENT_70 0.5 0.4]
+[wait fade]
+
+[pictureFrame cut063_cinema]
+[charaTalk depthOn]
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+
+[scene 86002]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-50]
+
+[effect bit_sepia01]
+
+[wt 0.8]
+
+[fadein white 0.5]
+[wait fade]
+[wt 1.2]
+
+[fadeout white 0.5]
+[wait fade]
+
+[pictureFrame]
+[charaFadeout I 0.1]
+[effectStop bit_sepia01]
+
+[scene 86200]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[wt 0.8]
+
+[bgm BGM_EVENT_70 0.5 1.0]
+[fadein white 0.5]
+[wait fade]
+
+＠福尔摩斯
+恐怕这并非杞人忧天。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 1]
+＠戈尔德鲁夫
+……唔，唔唔，唔唔唔唔唔唔唔唔唔唔唔唔唔唔唔。
+[k]
+
+＠戈尔德鲁夫
+这样未免太不设防了，[r]但仔细想来可能也有点道理，唔唔唔！
+[k]
+
+[charaFace C 5]
+＠戈尔德鲁夫
+……………………我……我知道了。
+[k]
+
+[messageOff]
+[charaShake C 0.02 3 3 0.6]
+[wt 1.0]
+
+[charaFace C 6]
+＠戈尔德鲁夫
+我……我现在好歹是[#新:Novum]·迦勒底所长。[r]为了夺回泛人类史，不能只让部下暴露在危险之下！
+[k]
+
+＠戈尔德鲁夫
+好吧，经营顾问！[r]我接受你的提案！　允许！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠福尔摩斯
+非常感谢。[r]不，其实我一直相信您会做出这种决定的。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠芙芙
+芙？
+[k]
+
+？1：咦，什么？
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠福尔摩斯
+哈哈哈。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+＠戈尔德鲁夫
+哈哈哈你个头啊……[r]真是的。
+[k]
+
+？2：你说了什么？
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+＠福尔摩斯
+不，现在还没到说的时候。[r]你很快就会知道了。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠玛修
+啊。还是老样子呢，Mr.福尔摩斯！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠福尔摩斯
+哈哈哈。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+＠戈尔德鲁夫
+哈哈哈你个头啊……[r]真是的。
+[k]
+
+？！
+
+
+[messageOff]
+[charaFace C 15]
+[bgmStop BGM_EVENT_70 1.0]
+[wt 1.5]
+[bgm BGM_EVENT_82 0.1]
+
+[charaFace C 16]
+＠戈尔德鲁夫
+那么，[#新:Novum]·迦勒底所长正式下达指令！[r][%1]！
+[k]
+
+＠戈尔德鲁夫
+以及玛修·基列莱特！[r]你们二人即刻从潜航艇出发，登陆都市奥林波斯！
+[k]
+
+＠戈尔德鲁夫
+藉由潜入都市区域，[r]找出先行登陆的泛人类史从者！
+[k]
+
+＠戈尔德鲁夫
+[line 3]待确保战力之后！　切除第五空想树！
+[k]
+
+？1：明白了！
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠玛修
+明白了。[r]奥林波斯调查队，现在出击！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[charaMoveReturn H 0,30 0.6]
+＠芙芙
+芙呜，芙，芙[line 3]呜！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

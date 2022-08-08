@@ -1,0 +1,561 @@
+
+＄02-00-01-02-1-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 99502600 1 玛修]
+[charaSet B 2023000 1 新宿的Archer]
+[charaSet C 98111500 1 达·芬奇]
+[charaSet D 6013001 1 魅影]
+[charaSet E 98109300 1 克里斯蒂娜]
+[charaSet F 98111500 1 通讯用杂音]
+
+[scene 38300]
+[fadein black 2.0]
+[wait fade]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+＠玛修
+击破第九个！
+[k]
+
+[charaFace A 7]
+＠玛修
+剩下的两个与我们拉开了距离，按兵不动。[r]御主，该怎么办。
+[k]
+
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠新宿的Archer
+御主。[r]准备逃跑。
+[k]
+
+＠新宿的Archer
+还有玛修，[r]希望你能帮忙确认最佳的逃跑路线。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk A]
+[charaFadein B 0.1 0]
+[charaPut F 2]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaFace A 6]
+[charaFadein A 0 2]
+＠玛修
+啊？[r]也就是说[line 3]。
+[k]
+
+？1：剩下的是强敌？
+
+＠新宿的Archer
+唔，确定一定以及肯定的强敌。
+[k]
+
+[charaFace B 4]
+＠新宿的Archer
+简单说来，凭我们的战力不仅无法对付，[r]甚至无法捉摸。
+[k]
+
+＠新宿的Archer
+或者说，连尺寸都无法确定。
+[k]
+
+？2：是什么人？
+
+[charaFace B 1]
+＠新宿的Archer
+既然是操纵人偶的，自然是人偶的老大啦。[r]还有忠实于“她”的一名奴隶。
+[k]
+
+？！
+
+[charaFace A 7]
+＠玛修
+正在结合周边地图分析最适合的逃跑路线。[r]敌人急速接近……再争取一点时间！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠新宿的Archer
+为了争取逃跑时间，先向对方搭个话吧。
+[k]
+
+[charaFace B 1]
+＠新宿的Archer
+不，准确地说，[r]是名为交谈的辩白，找借口，求饶时间！
+[k
+
+[charaFace B 0]
+＠新宿的Archer
+御主很擅长这种吧？
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+[charaPut F 2]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaFace C 0]
+[charaFadein C 0 256,-90]
+＠达·芬奇
+唔……这大概是[%1][r]最不擅长的类型了吧。
+[k]
+
+[charaFace C 4]
+＠达·芬奇
+因为[&他:她]无论面对什么都会拼尽全力，[r]根本就没有求过饶。
+[k]
+
+[charaFace B 3]
+＠新宿的Archer
+噢噢，这是何等蛮勇……！[r]但或许也可以称之为怯懦吧？
+[k]
+
+[charaFace B 4]
+＠新宿的Archer
+通过求饶来苟延残喘，[r]是人类为了活得更久的一种挣扎。
+[k]
+
+＠新宿的Archer
+这是不能否定的。[r]唯有在确信该死之时到来的情况下，才能英勇赴死。
+[k]
+
+[charaFace C 0]
+＠达·芬奇
+啊，但如果是为拖延时间而不断说话，[r][&他:她]或许还挺擅长的哦！
+[k]
+
+[charaFace B 0]
+＠新宿的Archer
+好嘞～，遇到麻烦的时候我会出手相助的。[r]……看来对方来了！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0 1]
+＠玛修
+灵基解析结束。[r]这是……[#歌剧院怪人:剧院魅影]。
+[k]
+
+[charaFace A 12]
+＠玛修
+但是，似乎有些不太对……？
+[k]
+
+＠玛修
+再加上，好像还有一个……从者，[r]似乎有种不同寻常的反应……
+[k]
+
+[bgmStop BGM_EVENT_3 0.4]
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 0]
+[charaFace E 0]
+[charaFadein E 0.4 2]
+[bgm BGM_EVENT_5 0.1]
+＠魅影
+……啊啊……克里斯蒂娜，克里斯蒂娜……[r]我的宝石，我心爱的光……
+[k]
+
+＠魅影
+你渴望什么，你想要什么？
+[k]
+
+＠克里斯蒂娜
+我很正常我很正常我很疯狂我是瘴气[r]我是人类我是人类我是人偶我是替身。
+[k]
+
+＠克里斯蒂娜
+[line 3]对。[r]渴望命渴望生命渴望血渴望鲜血。
+[k]
+
+＠克里斯蒂娜
+想要A型和AB型不要B型人作为人为了活下去[r]活下去活下去活下去需要输血需要肥皂盒。
+[k]
+
+＠克里斯蒂娜
+只要有一条生命凋零我就移动一步棋子而成为人。
+[k]
+
+＠克里斯蒂娜
+两条生命凋零我就先移动一步棋子成为人。[r]那么无论一条还是和两条都是一样的。
+[k]
+
+＠克里斯蒂娜
+对。[r]把命交给我。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠新宿的Archer
+哈哈哈哈哈！[r]看来不行啦，今天克里斯蒂娜情绪尤为高涨呢。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk E]
+[charaFace D 1]
+[charaFadein D 0.1 0]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+＠克里斯蒂娜
+啊啊……啊啊，呜呼，呜呼，呜呼！　迦勒底！　迦勒底啊！[r]拯救世界的迦勒底的御主啊！
+[k]
+
+＠克里斯蒂娜
+为了拯救我，[r]请将你的生命，交给我。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠新宿的Archer
+嗯！[r]原来如此，是御主的错啊！
+[k]
+
+？1：为～啥～啦！？
+？！
+
+[charaFace B 0]
+＠新宿的Archer
+因为是你拯救了世界吧。
+[k]
+
+＠新宿的Archer
+所以说啦，既然能拯救世界，
+[k]
+
+＠新宿的Archer
+那你应该也能用那不可思议的力量，[r]拯救那只怎么看都应该被废弃的人偶吧！？
+[k]
+
+[charaFadeout B 0.1]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0 0,-90]
+＠达·芬奇
+太不讲道理了！
+[k]
+
+[bgmStop BGM_EVENT_5 0.7]
+
+[charaFadeout C 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+＠魅影
+噢噢，刚才说了什么。[r]你称呼她，称呼我心爱的克里斯蒂娜为什么？
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠克里斯蒂娜
+[#讨厌讨厌讨厌讨厌讨厌:怎么能这样]，[#讨厌讨厌讨厌讨厌讨厌:最讨厌你了]。[r][#讨厌讨厌讨厌讨厌讨厌:我要杀了你]，[#讨厌讨厌讨厌讨厌讨厌:我要毁了你]。
+[k]
+
+[charaFace D 1]
+＠魅影
+噢噢！　克里斯蒂娜！　吾爱！[r]这美丽的愤怒甚至能胜过太阳啊啊啊啊啊！
+[k]
+
+[charaFace D 2]
+＠魅影
+杀戮吧，毁坏吧，将肢体撕得四分五裂，再细致地做成人偶吧！[r]为了敦促他们反省懊悔自我批判！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠新宿的Archer
+呼哈哈哈哈！　自我批判我很早以前就做过了！[r]而结论，是我乃完美完全的理性存在！
+[k]
+
+[charaFace B 1]
+＠新宿的Archer
+要问有多理智，理智到可以预测这出[#临时应付:即兴演出][r]能在多么精确的读秒时间内结束的程度！
+[k]
+
+[charaFace B 2]
+＠新宿的Archer
+玛修！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+＠玛修
+[line 3]确认最适合的逃跑路线了！[r]请听从指示逃跑，御主！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠新宿的Archer
+好，那再拖最后一点时间！
+[k]
+
+[se bac22]
+[flashin once 0.1 0.1 FF0000AF FF000000]
+[wt 1.5]
+
+[charaFadeout B 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+＠魅影
+噢噢，这，这正是，他的魔弹……！[r]就算目的截然相反，也是相同的……！
+[k]
+
+＠克里斯蒂娜
+没击中没击中没击中没击中没击中。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠新宿的Archer
+不，中头彩了！
+[k]
+
+[charaFace B 1]
+＠新宿的Archer
+呼哈哈哈哈！[r]……我一直很想说一次这句台词！！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.4]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.7]
+[flashin once 0.1 0.2 FF0000FF FF000000]
+[se ad34]
+[se ad64]
+[shake 0.05 5 5 1.5]
+[wt 2.0]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[se ad13]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+＠玛修
+加……加油站爆炸了！[r]两位，趁现在！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠新宿的Archer
+好！
+[k]
+
+[se ad55]
+[seVolume ad55 0 0.4]
+[messageOff]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[seStop ad55 0.7]
+[wt 0.7]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠新宿的Archer
+嗯，完美无瑕的逃跑。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0 1]
+＠玛修
+魅影以及克里斯蒂娜[line 3][r]啊，在那里右拐，前辈！
+[k]
+
+[messageOff]
+[wipeout rightToLeft 0.3 1]
+[wait wipe]
+[scene 38500]
+[wt 0.2]
+[wipein leftToRight 0.3 1]
+[wait wipe]
+
+[wt 0.2]
+[charaFadeout A 0.1]
+
+[charaPut F 256,0]
+[charaFace A 7]
+[charaFadein A 0 2]
+
+[bgmStop BGM_EVENT_5 1.5]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 0]
+＠新宿的Archer
+稍等一下，玛修！[r]这里……难不成……是国道？
+[k]
+
+＠玛修
+啊，对，是20号国道！
+[k]
+
+[charaFace B 4]
+＠新宿的Archer
+……唔。[r]情况不断巨变，连我都忘记说了。
+[k]
+
+＠新宿的Archer
+我先要对此向你们谢罪。[r]抱歉了。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠新宿的Archer
+以及，[r]这个情报本来应该第一时间告诉你们的。
+[k]
+
+＠新宿的Archer
+这新宿被堕落为邪恶存在的从者们[r]分割统治的具体现状。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0 0,-90]
+＠达·芬奇
+……所以你的意思是？
+[k]
+
+[charaFadeout C 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠新宿的Archer
+像国道这种宽阔的道路，[r]是[#他们]的地盘[line 3]！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.4]
+[voice 1100500_0_B120]
+[shake 0.025 3 3 0]
+[effect bit_talk_41]
+[effect bit_talk_voice01]
+[wt 1.5]
+[wt 0.7]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_3 1.4]
+[wait fade]
+[shakeStop]
+[effectStop bit_talk_41]
+[effectStop bit_talk_voice01]
+[wt 0.4]
+[soundStopAll]
+[end]

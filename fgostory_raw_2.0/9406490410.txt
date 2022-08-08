@@ -1,0 +1,733 @@
+
+
+
+＄94-06-49-04-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001410 1 マシュ]
+[charaSet B 1046001 1 伊吹童子]
+[charaSet C 1046002 1 伊吹童子_第三]
+[charaSet D 4042000 1 ハベトロット]
+[charaSet E 98002000 1 フォウ]
+[charaSet F 4043001 1 太公望]
+[charaSet G 4043001 1 ダミー1]
+[charaFilter G silhouette 00000080]
+[charaSet H 4044000 1 ニキチッチ]
+[charaSet I 4044000 1 ダミー2]
+[charaFilter I silhouette 00000080]
+
+[imageSet J back10000 1 1]
+[charaScale J 1.1]
+
+[charaSet K 1046001 1 ダミー1]
+[charaFilter K silhouette EDEDED80]
+[charaSet L 1046002 1 ダミー2]
+[charaFilter L silhouette EDEDED80]
+
+[charaScale C 1.3]
+[charaScale L 1.3]
+
+[scene 128700]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk depthOff]
+[charaTalk off]
+
+[charaDepth B 3]
+[charaDepth K 4]
+[charaDepth C 5]
+[charaDepth L 6]
+
+[charaFace C 0]
+[charaFadein C 0.1 -30,15]
+[wt 0.7]
+
+[se ad476]
+[charaFace L 0]
+[charaFadein L 0.7 -30,15]
+[wt 0.3]
+
+[charaMove L 0,0 2.5]
+[charaMoveScale L 1.0 2.5]
+[charaMove C 0,0 2.5]
+[charaMoveScale C 1.0 2.5]
+[charaFadeout C 0.3]
+
+[wt 0.3]
+[wt 0.7]
+
+[fadeout white 1.0]
+[wait fade]
+
+[charaFadeout L 0.1]
+[wt 1.0]
+
+[charaMoveScale B 1.0 0.1]
+[charaMoveScale K 1.0 0.1]
+
+[seStop ad476 1.0]
+
+[charaFace K 9]
+[charaFadein K 0.7 0,0]
+[charaFadeout K 0.7]
+
+[charaFace B 9]
+[charaFadein B 0.1 0,0]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk on]
+[charaTalk depthOn]
+＠伊吹童子
+ふう！
+[k]
+
+[charaFace B 7]
+＠伊吹童子
+すっごい大変だったけど、[r]なんとか三匹とも仕留めきれたみたいね。
+[k]
+
+＠伊吹童子
+お疲れさま、皆。[r]ハベにゃんも！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠ハベトロット
+お、おう！　お疲れなんだわ！
+[k]
+
+[charaTalk depthOff]
+[charaDepth D 5]
+[charaDepth J 1]
+
+[charaPut J 0,-200]
+[charaFadeTime J 0.2 0.6]
+
+[charaFace D 9]
+
+＠ハベトロット
+（妖精……じゃないよな？）
+[k]
+
+＠ハベトロット
+（精霊と幻獣の化身みたいな……[r]　いや、それってつまり神様じゃない？）
+[k]
+
+[charaFadeout J 0.2]
+
+[charaFace D 1]
+＠ハベトロット
+まあいっか、気さくでいい感じの美人だし！[r]じゃあ、まったねー！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠マシュ
+ありがとうございました！[r]ハベトロットさん！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_77 1.7]
+
+[charaSpecialEffect D erasure 1 1.0]
+[se ad595]
+[wait charaSpecialEffect D]
+[seStop ad595 0.3]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+[charaFace B 13]
+＠伊吹童子
+でも、んー……。
+[k]
+
+＠伊吹童子
+やっつけてみたのはいいけれど、[r]結局のとこ。
+[k]
+
+
+[bgm BGM_EVENT_81 0.1]
+
+＠伊吹童子
+何だったのかしら、あの三巨将？[r]その前の連中も。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+…………。
+[k]
+
+＠マシュ
+あの独特の気配は覚えがあります。[r]先輩……
+[k]
+
+？1：うん
+？2：コヤンスカヤの配下かもしれない
+
+？！
+
+＠マシュ
+……はい。
+[k]
+
+＠マシュ
+彼女は過去、異聞帯に特有の生物を[r]別の異聞帯で配下として操っていました。
+[k]
+
+＠マシュ
+三巨将も、先ほどのヤガさんたちも、[r]その敵性体の雰囲気に酷似していました。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠伊吹童子
+で、ここはコヤンスカヤって奴の領域よね。[r]となると答えは……
+[k]
+
+[bgmStop BGM_EVENT_81 2.0]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠F：？？？
+異聞[#眷属:けんぞく][line 3]
+[k]
+
+＠F：？？？
+つまりは、奴の眷属。
+[k]
+
+＠F：？？？
+この領域に配置された彼らは自動的です。[bgm BGM_EVENT_90 0.1][r]敵と[#思:おぼ]しきものを、オートで襲う。
+[k]
+
+
+＠F：？？？
+ですので、ご安心を。
+[k]
+
+＠F：？？？
+彼らは首魁との情報的な接続を有していない。[r]とはいえ……
+[k]
+
+
+＠F：？？？
+巨人の方は異聞眷属の中でも上位個体ですから、[r]先ほどのあなたたちは運がなかった。
+[k]
+
+＠F：？？？
+まあ、上位個体を[r]一気に三体も倒し尽くしたからには[line 3]
+[k]
+
+＠F：？？？
+運のなさを自力でひっくり返した形となる。[r]見事なものです。
+[k]
+
+＠F：？？？
+いや、大した戦闘力だ。
+[k]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠マシュ
+……！
+[k]
+
+[messageOff]
+[se ad656]
+[wt 0.5]
+[seStop ad656 0.5]
+[wt 0.2]
+
+[se adm21]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth A 4]
+[charaDepth E 5]
+
+[charaFace E 0]
+[charaFadein E 0.4 -200,0]
+[charaMove E -256,0 0.4]
+[wt 0.6]
+
+[charaTalk on]
+[charaTalk E]
+＠フォウ
+フォウ！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+
+＠伊吹童子
+おっどろいた。
+[k]
+
+＠伊吹童子
+あたしの察知範囲内なのに、[r]こうも近距離にまで接近してくる。
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠マシュ
+マスター、わたしの後ろに！
+[k]
+
+？1：大丈夫
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_90 1.5]
+
+＠F：？？？
+おや。
+[k]
+
+？2：敵なら、もう襲って来てると思う[line 3]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_90 1.5]
+
+＠F：？？？
+成る程。[r]道理ですね。
+[k]
+
+？！
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠伊吹童子
+あなた、何者？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad173]
+
+[wt 1.0]
+
+[seStop ad173 1.0]
+
+[charaDepth F 3]
+[charaDepth G 4]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaFace G 0]
+[charaFadein G 0.7 1]
+
+[wt 1.5]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[charaFadeout G 0.7]
+[bgm BGM_EVENT_147 0.1]
+[wt 1.5]
+
+
+
+＠F：？？？
+僕は……
+[k]
+
+＠F：？？？
+んー、そうですね。[r]あなたたちの敵ではありません。
+[k]
+
+
+[charaFace F 1]
+＠F：？？？
+ですので、そう警戒しなくてもいいですよ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠マシュ
+……。[r]……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠F：？？？
+むしろ逆、逆！　敵の逆！[r]僕は、[#獣を狩りにきた]プロフェッショナル！
+[k]
+
+[charaFace F 0]
+
+＠F：？？？
+[#此度:こたび]はライダー霊基での現界ですが、[r]何。やれることは色々とあります。
+[k]
+
+[charaFace F 1]
+＠F：？？？
+と、いう訳で。
+[k]
+
+
+＠F：？？？
+ビーストⅣに成り代わらんとする[#妲己:だっき]の影、[r]その始末[line 3]
+[k]
+
+＠F：？？？
+どうかこの僕にお任せいただきたい。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+妲己……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠F：？？？
+僕、詳しいので。[r]追加調査もしましたし。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠伊吹童子
+よし！　戦力追加ってことね！
+[k]
+
+[charaFace B 0]
+＠伊吹童子
+って、喜ぶべき場面[line 3]でいいのかしらね？[r]どうなの？
+[k]
+
+？1：多分そう……？
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠F：？？？
+おや、何やら警戒されている？[r]もしや近い過去にイケメンに騙されたとか？
+[k]
+
+[charaFace F 4]
+＠F：？？？
+ふむ。[r]ふむ。
+[k]
+
+＠F：？？？
+そうきたかァ……
+[k]
+
+[charaFace F 1]
+
+＠F：？？？
+僕、交渉には自信があったんですが……[r]おっかしいなぁ。
+[k]
+
+[bgm BGM_EVENT_147 1.5 0.7]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+＠H：女の声
+当然だぞ。
+[k]
+
+＠H：女の声
+おまえは[#迂遠:うえん]に過ぎる。[r]だから、オレが先に声を掛けると言ったのだ。
+[k]
+
+[messageOff]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaMoveReturn E 0,10 0.3]
+[se adm21]
+[seStop adm21 0.3]
+[wt 0.3]
+[charaMoveReturn E 0,10 0.2]
+[se adm21]
+[seStop adm21 0.3]
+
+＠フォウ
+フォウ！　フォーウ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠F：？？？
+おっと。
+[k]
+
+[bgmStop BGM_EVENT_147 2.0]
+[charaFace F 0]
+＠F：？？？
+……出てきてオッケーですよ、ニキチッチ。[r]もう皆さんお見通しのようですし。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+＠女の声
+当然だぞ。[r]そのために声を出した。
+[k]
+
+[messageOff]
+[se ad27]
+
+[charaTalk depthOff]
+[charaDepth B 5]
+[charaDepth H 6]
+[charaDepth I 7]
+
+[charaTalk off]
+
+[charaFace I 11]
+[charaFadein I 0.4 1]
+
+[wt 1.2]
+
+[charaFace H 11]
+[charaFadein H 0.1 1]
+
+[charaFadeout I 0.7]
+[bgm BGM_MAP_61 0.1]
+[wt 1.5]
+
+＠？？？
+[line 3]ふん。
+[k]
+
+＠？？？
+隠れる必要などないと言っただろ。[r]素直に先刻、参戦していればよかった。
+[k]
+
+[messageOff]
+[charaFace H 26]
+[wt 1.2]
+
+[charaFace H 0]
+[charaMoveReturn H 0,5 0.5]
+[wt 0.3]
+[se ad997]
+[wt 1.0]
+
+＠？？？
+諸君、お初にお目に掛かる。[r]オレはニキチッチ。
+[k]
+
+＠ニキチッチ
+キエフの竜殺し、[r]英雄ドブルイニャ・ニキチッチである。
+[k]
+
+[charaFace H 7]
+＠ニキチッチ
+強いぞ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 7]
+[charaFadeinFSR B 0.1 2]
+
+[charaFace H 7]
+[charaFadeinFSL H 0.1 0]
+＠伊吹童子
+へえ、強いって言うからには強いんでしょうね！
+[k]
+
+[charaFace H 21]
+＠ニキチッチ
+ん。強いぞ。
+[k]
+
+＠伊吹童子
+へえー！
+[k]
+
+[charaFace H 26]
+＠ニキチッチ
+ふふん。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠？？？
+何でしょうねこのやり取り……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_MAP_61 1.5]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠ニキチッチ
+で、このいけすかない男は……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠F：？？？
+あ、それは僕の方から。
+[k]
+
+[bgm BGM_EVENT_96 0.1]
+
+[charaFace F 4]
+
+＠F：？？？
+ええと、はい。[r]いや、いけすかない男とかひどくないですか？
+[k]
+
+＠F：？？？
+まあいいや。[r]では手短に。
+[k]
+
+[charaFace F 5]
+＠F：？？？
+この度は、仙境より[#罷:まか]り越しました[line 3]
+[k]
+
+＠F：？？？
+[line 8]。
+[k]
+
+＠F：？？？
+もとい勿論、[r]英霊の座から現界いたしました。
+[k]
+
+＠F：？？？
+生前は、軍師のようなものをやっていた者です。[r]あと道士など少々。
+[k]
+
+[messageOff]
+
+[charaFace F 1]
+[wt 1.4]
+
+[charaFace F 5]
+
+＠F：？？？
+我が真名、[#太公望:たいこうぼう]と申します。
+[k]
+
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_96 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,131 @@
+
+
+
+＄91-50-35-02-2-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+
+
+
+
+[charaSet A 11005001 1 黑森]
+[charaSet B 1098153900 1 阿列克谢]
+[charaFilter B silhouette 00000080]
+
+
+[imageSet O back10000 1 1]
+[charaScale O 1.32]
+
+[charaSet T 98115000 1 特效用]
+
+
+
+[bgm BGM_EVENT_77 0.1]
+
+[scene 54102]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 1]
+[label INPUT_SELECT_BRANCH_1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠黑森
+『受不了。在梦里都搞这种暴力行为。[r]　她到底怎么了嘛。』
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠阿列克谢
+没办法啊。[r]这是阿纳的防卫结构。
+[k]
+
+＠阿列克谢
+一旦有异物混入就立刻排除，[r]人体也一样吧。
+[k]
+
+
+
+
+[branch INPUT_SELECT_BRANCH_3]
+[label INPUT_SELECT_BRANCH_2]
+
+
+
+
+？1：刚才的魔眼是……？
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠阿列克谢
+很遗憾，那不是我的力量，[r]只是借用了阿纳的力量。
+[k]
+
+＠阿列克谢
+……因为我不是什么魔术师。[r]虽然阿纳也一样。
+[k]
+
+[branch INPUT_SELECT_BRANCH_3]
+[label INPUT_SELECT_BRANCH_3]
+
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠黑森
+『为什么她会视我们为敌人？』
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠阿列克谢
+那当然啦。[r]因为你们是破坏她浅眠的入侵者嘛。
+[k]
+
+＠阿列克谢
+这一切都怪你啦，[r][%1]。
+[k]
+
+？1：为什么？
+？！
+
+＠阿列克谢
+……这你就去问本人吧。[r]好，快到了。
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

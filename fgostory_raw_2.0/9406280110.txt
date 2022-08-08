@@ -1,0 +1,1971 @@
+
+
+＄94-06-28-01-1-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 98001000 1 マシュ]
+[charaSet D 6005002 1 ジャック]
+[charaSet E 3026000 1 ジャンヌ・オルタ・サンタ・リリィ]
+[charaSet F 5004002 1 ナーサリー・ライム]
+[charaSet G 1038000 1 イアソン]
+
+[charaSet H 4031000 1 エフェクト用]
+
+[charaSet I 1098204000 1 ディオスクロイ・カストロ]
+[charaSet J 1098204100 1 ディオスクロイ・ポルクス]
+[charaSet K 5017001 1 メディア・リリィ]
+[charaSet L 1047000 1 渡辺綱]
+[charaSet M 5004000 1 ナーサリー・ライム_霊基第一]
+
+[charaPut H 2000,2000]
+[charaEffect H bit_sepia01_depth_fs]
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[charaSet C 1098124500 1 ダ・ヴィンチ]
+[scene 104200]
+[branch lblConf]
+
+[label lblNotClear]
+[charaSet C 5009001 1 ダ・ヴィンチ]
+[scene 105500]
+[branch lblConf]
+
+[label lblConf]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth H 9]
+[charaDepth I 7]
+[charaDepth J 6]
+
+[charaDepth D 4]
+[charaDepth F 5]
+[charaDepth M 5]
+[charaDepth E 3]
+
+[charaDepth A 7]
+[charaDepth C 6]
+
+[charaScale D 1.1]
+[charaScale F 1.1]
+[charaScale E 1.1]
+
+[wt 0.8]
+[se ad7]
+
+[charaFace D 1]
+[charaFadeinFSR D 0.4 300,-15]
+[charaMoveFSR D 300,0 0.3]
+
+[charaFace F 1]
+[charaFadein F 0.4 0,-15]
+[charaMove F 0,0 0.3]
+
+[charaFace E 6]
+[charaFadeinFSL E 0.4 -300,-15]
+[charaMoveFSL E -300,0 0.3]
+[wt 0.4]
+
+＠３人
+[f large]トリック・オア・トリート！[bgm BGM_MAP_4 0.1 0.7]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaScale D 1.0]
+[charaScale F 1.0]
+[charaScale E 1.0]
+
+[charaTalk on]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠イアソン
+！？
+[k]
+
+＠イアソン
+な、なんだあ？
+[k]
+
+？1：それはもちろん！
+？！
+
+？1：ハロウィンだからね！
+？！
+
+[charaFace G 12]
+
+＠イアソン
+あー。早いな、もうそんな頃なのか……
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠マシュ
+もうそんな頃なのです！
+[k]
+
+＠マシュ
+ちなみに、先輩とわたしは既に、[r]こちらの皆さんへ[#お菓子:トリート]を渡しています。
+[k]
+
+[charaFace A 1]
+
+＠マシュ
+イアソンさんも選びましょう！
+[k]
+
+＠マシュ
+[#いたずらかお菓子か:ト リ ッ ク ・ オ ア ・ ト リ ー ト]！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 1]
+
+＠イアソン
+んなこと急に言われてもな……。[r]飴ちゃん常備してるタイプの英霊じゃねーし、オレ。
+[k]
+
+[charaFace G 12]
+
+＠イアソン
+ていうか待て、[r]飴ちゃん常備した英霊の方が珍しくね？
+[k]
+
+＠イアソン
+オレが追い詰められる感じになってるのが、[r]そもそもおかしくないか？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadeinFSR D 0.1 2]
+
+[charaFace F 0]
+[charaFadeinFSL F 0.1 0]
+
+＠ジャック
+……あれ？
+[k]
+
+＠ジャック
+この人……[r]お菓子、くれない？
+[k]
+
+[charaFace F 4]
+
+＠ナーサリー・ライム
+うーん、そうね。[r]困ったわ。
+[k]
+
+＠ナーサリー・ライム
+わたしたちの方に問題があるのかもしれないわ。[r]やっぱり、仮装をしたりして[line 3]
+[k]
+
+＠ナーサリー・ライム
+今日がハロウィンだってことが、[r]ちゃんと伝わるようにしないといけないのかも。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[charaFace E 8]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+か、仮装……。
+[k]
+
+[charaFace E 4]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+うう……。[r]となると私はお役に立てません！
+[k]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+涙を飲んで、ここはお２人に任せます！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+[wt 0.5]
+[se bac375]
+[seVolume bac375 0 0.6]
+[charaCrossFade D 6005000 1 0.3]
+[wait charaCrossFade D]
+[wt 1.0]
+
+＠ジャック
+わたしたちに任せて。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+[wt 0.5]
+
+[se ad236]
+[effect bit_talk_magical_pon]
+[wt 0.2]
+[charaFadeout F 0]
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0 1]
+
+[wt 1.0]
+
+[charaTalk on]
+
+＠M：ナーサリー・ライム
+ええ、任せて！
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.1 1]
+
+＠イアソン
+な、なんだあ？[r]霊基を変えたのか[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 2]
+
+[charaFace M 0]
+[charaFadein M 0.1 0]
+
+[se ade227]
+[charaMoveScale D 1.1 0.4]
+[charaMove D 256,10 0.4]
+
+＠ジャック
+黒い幽霊の仮装！
+[k]
+
+[se ade226]
+[charaMoveScale M 1.1 0.4]
+[charaMove M -256,10 0.4]
+
+＠M：ナーサリー・ライム
+わたしは、呪いの本の仮装！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 1]
+
+＠イアソン
+…………？
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_MAP_4 1.0 0.4]
+
+[se ad311]
+[wt 1.2]
+
+[charaTalk off]
+
+[charaFace I 0]
+[charaFadeinFSR I 0.4 200,0]
+
+[charaFace J 0]
+[charaFadeinFSL J 0.4 -200,0]
+
+[seStop ad311 0.5]
+[wt 1.0]
+
+[charaTalk on]
+
+[charaTalk I]
+[charaFace I 1]
+
+[bgm BGM_MAP_4 1.0 0.7]
+
+＠ディオスクロイ・カストロ
+フッ。[r]なんと、恐るべき漆黒の亡霊の姿とは[line 3]
+[k]
+
+[charaFace J 2]
+
+＠ディオスクロイ・ポルクス
+兄様、兄様。[r]呪いの本から漂う瘴気も大したものです！
+[k]
+
+[charaFace I 2]
+
+＠ディオスクロイ・カストロ
+まったくだ、ポルクス。妹よ。[r]闇のサンタクロースらしきモノも、なかなかだ。
+[k]
+
+＠ディオスクロイ・カストロ
+こうも恐ろしい怪異を目にしてしまったからには、[r]我らは覚悟を決めなければならんぞ。
+[k]
+
+[charaFace I 4]
+
+＠ディオスクロイ・カストロ
+考えてもみるがいい！[r]これらの怪異たちが、口々に……
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaScale D 1.1]
+[charaScale M 1.1]
+[charaScale E 1.1]
+
+[wt 0.4]
+[se ad7]
+
+[charaFace D 1]
+[charaFadeinFSR D 0.4 300,-15]
+[charaMoveFSR D 300,0 0.3]
+
+[charaFace M 1]
+[charaFadein M 0.4 0,-15]
+[charaMove M 0,0 0.3]
+
+[charaFace E 6]
+[charaFadein E 0.4 -300,-15]
+[charaMove E -300,0 0.3]
+
+＠３人
+[f large]トリック・オア・トリート！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout M 0.1]
+[charaFadeout E 0.1]
+[wt 0.5]
+[charaScale D 1.0]
+[charaScale M 1.0]
+[charaScale E 1.0]
+
+[charaTalk on]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadeinFSR I 0.1 200,0]
+
+[charaFace J 4]
+[charaFadeinFSL J 0.1 -200,0]
+
+＠ディオスクロイ・カストロ
+そう！[r]このように、叫ぼうものなら！
+[k]
+
+＠ディオスクロイ・ポルクス
+ええ、兄様。[r]そんなことがあったら、私たち……
+[k]
+
+[charaFace J 1]
+
+＠ディオスクロイ・ポルクス
+きっと、偶然にも持ち合わせていたお菓子袋を[r]ひとつずつ渡してしまいますね！
+[k]
+
+[charaFace I 1]
+
+＠ディオスクロイ・カストロ
+フッ。
+[k]
+
+＠ディオスクロイ・カストロ
+その通り！[r]と言う訳で、我らも[#お菓子:トリート]を選ぶとしよう。
+[k]
+
+＠ディオスクロイ・ポルクス
+はい。３人とも、[r]甘いモノを食べたらちゃんと歯を磨きましょうね！
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace D 1]
+[charaFadein D 0.1 300,0]
+
+[charaFace M 0]
+[charaFadein M 0.1 0,0]
+
+[charaFace E 6]
+[charaFadein E 0.1 -300,0]
+[wt 0.4]
+
+＠３人
+[f large]はーい！
+[k]
+
+＠３人
+[f large]ありがとう！
+[k]
+
+[messageOff]
+
+[charaMoveReturn M 0,10 0.3]
+[wt 0.3]
+[charaMoveReturn D 300,10 0.3]
+[wt 0.1]
+[charaMoveReturn E -300,10 0.3]
+[wt 0.6]
+[charaMoveReturn M 0,10 0.3]
+[charaMoveReturn D 300,10 0.3]
+[charaMoveReturn E -300,10 0.3]
+[wt 0.5]
+
+[se ad55]
+[seVolume ad55 0 0.4]
+[charaMove M 300,0 1.2]
+[charaMove D 600,0 1.2]
+[charaMove E 0,0 1.2]
+[charaFadeout M 0.7]
+[charaFadeout D 0.7]
+[charaFadeout E 0.7]
+[wt 0.5]
+[seStop ad55 0.5]
+[wt 0.7]
+
+[bgmStop BGM_MAP_4 2.0]
+
+[charaTalk on]
+
+[charaTalk G]
+[charaFace G 18]
+[charaFadein G 0.1 1]
+
+＠イアソン
+去って行った。
+[k]
+
+[charaFace G 12]
+
+＠イアソン
+……とりあえず助かったと[r]考えていいよな、オレ。
+[k]
+
+＠イアソン
+おー、怖。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadeinFSR I 0.1 200,0]
+
+[charaFace J 0]
+[charaFadeinFSL J 0.1 -200,0]
+
+＠ディオスクロイ・カストロ
+フッ。どうしたイアソン。[r]顔色が悪いぞ。
+[k]
+
+
+＠ディオスクロイ・カストロ
+[#百戦錬磨:ひゃくせんれんま]の[#船長:キャプテン]ともあろう者が、子供には無力か？
+[k]
+
+[charaFace J 4]
+
+＠ディオスクロイ・ポルクス
+もう。意地悪を言ってはだめですよ、兄様。
+[k]
+
+＠ディオスクロイ・ポルクス
+むしろ、兄様の準備が良すぎるんです。[r]ズボラな方ならさっきのイアソンくらいの反応でも、
+[k]
+
+＠ディオスクロイ・ポルクス
+おかしくないというか[line 3]
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 14]
+[charaFadein G 0.1 1]
+
+＠イアソン
+飴を準備してない程度で[r]ズボラは酷くねえかおまえら！
+[k]
+
+？1：ズボラっていうとちょっと違う気がするけど
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい。[r]イアソンさんはそうですね、どちらかというと……
+[k]
+
+＠マシュ
+……。[r]……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+
+＠イアソン
+おいその沈黙は何だシールダー。
+[k]
+
+[charaFace G 9]
+
+＠イアソン
+[#悪口雑言:あっこうぞうごん]など気にもしないが、それはそれとして[r]どういう評価なのかは知っておきたい！
+[k]
+
+？2：基準をどこに置くかで話変わるよね……
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+確かに[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠イアソン
+そりゃあな！[r]お菓子袋を常備してそうなカストロに比べたらね！
+[k]
+
+＠イアソン
+ズボラでしょうよ、オレは！
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ade423]
+[wt 1.2]
+[seVolume ade423 1.0 0.3]
+
+＠？？？
+イアソンさま～！
+[k]
+
+？1：この声は
+？2：メディア・リリィかな？
+
+？！
+
+[messageOff]
+[seVolume ade423 0.5 1.0]
+[wt 0.5]
+
+[charaTalk K]
+[charaFace K 1]
+[charaFadein K 0.4 1]
+[seStop ade423 0.5]
+[wt 0.5]
+
+＠メディア・リリィ
+イアソンさま！
+[k]
+
+＠メディア・リリィ
+見てください、この見事な[#南瓜:かぼちゃ]！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.1 1]
+
+＠イアソン
+な、なんだおまえそれ……[r]でかすぎない？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 1]
+[charaFadein K 0.1 1]
+
+＠メディア・リリィ
+ええ、大きいですよね！[r]私もびっくりです。
+[k]
+
+＠メディア・リリィ
+実は今、すぐそこで渡辺綱さまが……[line 3]
+[k]
+
+[messageOff]
+[wipeout circleIn 1.2 1.0]
+[wait wipe]
+
+
+[charaPut H 1]
+
+[charaFadeout K 0.1]
+[wt 0.5]
+
+[wipein circleIn 1.2 1.0]
+[wait wipe]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.4 1]
+[wt 0.5]
+
+＠渡辺綱
+地下の菜園でな。[r]畑仕事の手伝いをやっていたのだが[line 3]
+[k]
+
+＠渡辺綱
+見事な[#南瓜:かぼちゃ]が採れた。
+[k]
+
+[charaFace L 1]
+
+＠渡辺綱
+エミヤ殿とブーディカ殿曰く、[r]煮付けにすると旨いのだそうだ。
+[k]
+
+＠渡辺綱
+イアソン殿と共に召し上がるといい。
+[k]
+
+[messageOff]
+[wipeout circleIn 1.2 1.0]
+[wait wipe]
+
+[charaFadeout L 0.1]
+[wt 0.5]
+
+[charaPut H 2000,2000]
+
+
+[charaTalk K]
+[charaFace K 1]
+[charaFadein K 0.1 1]
+[wt 0.1]
+
+[wipein circleIn 1.2 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠メディア・リリィ
+だ、そうです！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+
+＠イアソン
+[#南瓜:かぼちゃ]の煮付けねぇ……。
+[k]
+
+？1：おや、イアソン……
+
+？2：何か[#南瓜:かぼちゃ]の煮付けに思うことでも？
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadeinFSL K 0.1 0]
+
+[charaFace G 12]
+[charaFadeinFSR G 0.1 2]
+
+＠メディア・リリィ
+[FFFFFF]？[-]
+[k]
+
+[charaFace K 4]
+
+＠メディア・リリィ
+あれ、イアソン様……[r]もしかして[#南瓜:かぼちゃ]はお嫌いでしたか？
+[k]
+
+[charaFace G 3]
+
+＠イアソン
+いや別に[line 3]
+[k]
+
+[charaFadeout K 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadeinFSR I 0.1 200,0]
+
+[charaFace J 0]
+[charaFadeinFSL J 0.1 -200,0]
+
+＠ディオスクロイ・カストロ
+はっはっはっは。見ろポルクス、[r]イアソンは相も変わらずとしか言いようがない！
+[k]
+
+[charaFace J 2]
+
+＠ディオスクロイ・ポルクス
+だめです兄様っ。[r]指をさして笑っては失礼です！
+[k]
+
+[charaFace J 0]
+
+＠ディオスクロイ・ポルクス
+はあ。どうして他者の感情の機微には鋭いのに、[r]自分のことは分からないんでしょうね、兄様は……
+[k]
+
+[charaFace I 4]
+
+＠ディオスクロイ・カストロ
+ん？
+[k]
+
+[messageOff]
+[wt 0.5]
+[bgm BGM_EVENT_2 1.5 0.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+
+[equipSet D 9402730 1 礼装_ファントム・ナイト]
+[charaScale D 1.2]
+[equipSet E 9402740 1 礼装_不思議の国から]
+[charaScale E 1.2]
+[equipSet F 9402760 1 礼装_黄金の翼]
+[charaScale F 1.2]
+[equipSet G 9400530 1 礼装_ハロウィン・プチデビル]
+[charaScale G 1.2]
+[equipSet I 9400540 1 礼装_メイド・イン・ハロウィン]
+[charaScale I 1.2]
+[equipSet J 9402030 1 礼装_マタ・ハリの酒場]
+[charaScale J 1.2]
+[equipSet K 9400520 1 礼装_ハロウィン・プリンセス]
+[charaScale K 1.2]
+[equipSet L 9402720 1 礼装_トリック・オア・トリートメント]
+[charaScale L 1.2]
+[equipSet M 9401980 1 礼装_デンジャラス・ビースト]
+[charaScale M 1.2]
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+[scene 105900]
+[branch lblConf2]
+
+[label lblNotClear2]
+[scene 105600]
+[branch lblConf2]
+
+[label lblConf2]
+
+[se ad8]
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_2 1.0 1.0]
+
+？1：なんというか
+？！
+
+？1：カルデアに秋の風が吹いてるね！
+？！
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい、先輩！
+[k]
+
+＠マシュ
+ハロウィンに、[#南瓜:かぼちゃ]に、繊細な男心！
+[k]
+
+[charaFace A 13]
+
+＠マシュ
+ちなみに[line 3][r]男心の部分は女心とすることもあるようですが、
+[k]
+
+＠マシュ
+江戸時代は男心バージョン、[r]『男心と秋の空』が主だったそうです。
+[k]
+
+[charaFace A 22]
+
+＠マシュ
+カルデアには[#古今東西:ここんとうざい]の英霊がいらっしゃいますし、[r]男女の枠に収まる方ばかりではありません。
+[k]
+
+＠マシュ
+ですので……
+[k]
+
+[charaFace A 13]
+
+＠マシュ
+この場合、[r]人の心すべてという意味でいかがでしょう？
+[k]
+
+？1：その方向でいこう！
+
+？！
+
+[charaFace A 1]
+
+＠マシュ
+はいっ。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+
+[se ad413]
+[seVolume ad413 0 0]
+[seVolume ad413 0.5 1.0]
+[wt 1.5]
+[seStop ad413 3.0]
+[wt 0.5]
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+見てください、先輩。[r]仮装している英霊の方々が、たくさん！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+
+[charaTalk off]
+[charaFadein D 0.4 0,-25]
+[wt 1.5]
+
+[bgm BGM_EVENT_47 0.1]
+
+
+＠ファントム
+嗚呼[line 3][r]クリスティーヌ　クリスティーヌ
+[k]
+
+＠ファントム
+吸血鬼よ　今宵は　我が[#裡:うち]にて眠れ[r]吸血鬼よ　今宵は　我が歌に[#揺蕩:たゆた]え
+[k]
+
+＠ファントム
+脈動する[#真紅:あか]き[#迸:ほとばし]りに　私が　酔おう
+[k]
+
+＠ジル
+聖なるかな、聖なるかな！[r]おお、ハロウィン・ナイトに今こそ祝福あれ！
+[k]
+
+＠ジル
+これなるは道化師なれば、[r]趣向を凝らして笑いの渦に落としてさしあげる！
+[k]
+
+＠ジル
+はははははははははははは！
+[k]
+
+＠エウリュアレ
+ほら、もうちょっと頭下げなさい。[r]そうそう。
+[k]
+
+＠エウリュアレ
+甘い物が大好きなのはわかるけど、[r]あんまりいっぺんに頬張るものじゃないわ。
+[k]
+
+＠エウリュアレ
+いいこと、アステリオス？
+[k]
+
+＠アステリオス
+うん、えうりゅあれ。[r]わかった。
+[k]
+
+[messageOff]
+[wt 0.8]
+
+＠マシュ
+吸血鬼、道化師、ミイラ男！　それに……
+[k]
+
+＠マシュ
+エウリュアレさんは、[r]アステリオスさんとお揃いのツノの仮装ですね！
+[k]
+
+＠マシュ
+ハロウィンの仮装といえばモンスター系、[r]という定番を押さえた見事な仮装です！
+[k]
+
+？1：道化師ってモンスター級に怖いよね……
+
+＠マシュ
+はい。人によっては相当に苦手だとか……。[r]恐怖症の一種として定義されることもあるそうです。
+[k]
+
+？2：道化師って怖い系なのかな？
+
+＠マシュ
+人によっては相当に苦手、と聞きますね。[r]わたしは大丈夫です！
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout D 0.4]
+[wt 0.5]
+[bgmStop BGM_EVENT_47 1.5]
+
+[se ad413]
+[seVolume ad413 0 0]
+[seVolume ad413 0.5 1.0]
+[wt 1.5]
+[seStop ad413 3.0]
+[wt 0.5]
+
+[charaFadein E 0.4 0,-25]
+[wt 1.5]
+
+[bgm BGM_EVENT_109 0.1]
+
+＠２人
+[f large]ハッピー・ハロウィン♪
+[k]
+
+＠アン
+というわけで、ウサギさんつーかまえたっ♪
+[k]
+
+＠メアリー
+あー。しまった。[r]つかまっちゃったかー。
+[k]
+
+[messageOff]
+[wt 0.8]
+
+＠マシュ
+わっ。わわっ。[r]青いドレスを着た少女に、紳士のウサギ！
+[k]
+
+＠マシュ
+『不思議の国のアリス』の仮装です、先輩！
+[k]
+
+＠メアリー
+マスター、気を付けてね？[r]僕のお菓子を食べると……
+[k]
+
+＠アン
+大きくなったり小さくなったりして大変だから、[r]やめといたほうがいいですわよ～。
+[k]
+
+＠メアリー
+あ、言っちゃった。
+[k]
+
+？1：また今度いただきます
+
+＠マシュ
+ああっ……[r]一口だけでも……
+[k]
+
+？2：効果も『不思議の国のアリス』のまんまなの！？
+
+＠マシュ
+すごいです！[r]なんと興味深い……
+[k]
+
+？！
+
+＠マシュ
+で、ですが我慢です。[r]ここで巨大化してしまっては些か迷惑ですし！
+[k]
+
+[messageOff]
+[charaFadeout E 0.4]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_109 1.5]
+
+[se ad413]
+[seVolume ad413 0 0]
+[seVolume ad413 0.5 1.0]
+[wt 1.5]
+[seStop ad413 3.0]
+[wt 0.5]
+
+[charaFadein F 0.4 0,-25]
+[wt 1.5]
+
+[bgm BGM_MAP_55 0.1]
+
+＠オジマンディアス
+光あるところ[#遍:あまね]く我が領土！[r]見ているがいい、余はすべてを手に入れるぞ！
+[k]
+
+＠オジマンディアス
+…………本当にこれでいいのだな？
+[k]
+
+＠アーラシュ
+そういう感じでいいみたいだぜ。[r]ファラオの兄さん、じゃなくて陛下。
+[k]
+
+＠オジマンディアス
+そうか。
+[k]
+
+＠オジマンディアス
+仮装の宴とはなかなかに面倒だが……[r]ふむ。まあ、よい。
+[k]
+
+＠アーラシュ
+たまにはな！
+[k]
+
+＠オジマンディアス
+ソラを[#征:ゆ]く黄金の翼というのもなかなかに悪くない。[r]フッ。
+[k]
+
+＠オジマンディアス
+[line 3][#杯:さかずき]を持て！[r][line 3]我らの常勝を祝う光栄、[#下々:しもじも]にも許す！
+[k]
+
+＠ニトクリス
+ははーっ！[r]ありがたき幸せです、ファラオ・オジマンディアス！
+[k]
+
+＠オジマンディアス
+宇宙皇帝である！
+[k]
+
+＠ニトクリス
+宇宙皇帝オジマンディアス様！
+[k]
+
+[messageOff]
+[wt 0.8]
+
+＠マシュ
+ＳＦ！　きっとこれはＳＦの仮装です、先輩！
+[k]
+
+？1：ニトクリスどこ……？
+？2：んん、ニトクリスの声したよね？
+
+？！
+
+＠マシュ
+あそこです！[r]ファラオ・オジマンディアスの正面！
+[k]
+
+＠マシュ
+３Ｄ惑星データの上に……[r]小さく、ニトクリスさんがいらっしゃいます！
+[k]
+
+？1：メジェド様だこれ！
+？！
+
+＠マシュ
+ですね。[r]小さくても神々しいです！
+[k]
+
+[messageOff]
+[charaFadeout F 0.4]
+[wt 0.5]
+
+[bgmStop BGM_MAP_55 1.5]
+
+[se ad413]
+[seVolume ad413 0 0]
+[seVolume ad413 0.5 1.0]
+[wt 1.5]
+[seStop ad413 3.0]
+[wt 0.5]
+
+[charaFadein G 0.4 0,-25]
+[wt 1.5]
+[bgm BGM_HALLOWEEN_1 0.1]
+
+＠イリヤ
+あっ、マスターさん！　マシュさん！
+[k]
+
+＠イリヤ
+トリック・オア・トリート！
+[k]
+
+？1：お菓子でお願いします
+？2：はい、イリヤのぶんのお菓子です！
+
+？！
+
+＠イリヤ
+えへへ……。ありがとう！
+[k]
+
+＠イリヤ
+えっと、マスターさん[line 3]
+[k]
+
+＠イリヤ
+この格好、どう？[r]ルビーのお薦めだったんだけど……
+[k]
+
+？1：可愛らしいね
+
+＠マシュ
+はい！　とっても！
+[k]
+
+？2：よく似合ってる
+
+＠マシュ
+はい。よくお似合いです！
+[k]
+
+？！
+
+＠イリヤ
+えへへー。[r]よかったぁ！
+[k]
+
+＠イリヤ
+あ、クロが呼んでるから行くね。[r]それじゃあ、ハッピー・ハロウィン！
+[k]
+
+[messageOff]
+[charaFadeout G 0.4]
+[wt 0.5]
+
+[bgmStop BGM_HALLOWEEN_1 1.5]
+
+[se ad413]
+[seVolume ad413 0 0]
+[seVolume ad413 0.5 1.0]
+[wt 1.5]
+[seStop ad413 3.0]
+[wt 0.5]
+
+[charaFadein I 0.4 0,-25]
+[wt 1.5]
+
+[bgm BGM_SERVANTFES 0.1]
+
+＠タマモキャット
+おお！　ようやく来たな！[r]ここで会ったが100ループ目と覚悟するがいいワン！
+[k]
+
+＠タマモキャット
+パンプキンアンデッドNECOスイーツである！
+[k]
+
+＠タマモキャット
+肉球の表面吸着力……否、腕によりをかけて[r]作った故、残さずオイシイするのだ、ご主人！
+[k]
+
+？1：いただきます
+
+＠タマモキャット
+５分以内の完食を期待するワン！
+[k]
+
+＠マシュ
+５分以内ですか！？
+[k]
+
+＠タマモキャット
+あははははははは、冗談だ。[r]マシュと２人で一晩かけて食べきればひとまず許す！
+[k]
+
+？2：この量を食べきるのはちょっと……
+
+＠タマモキャット
+知ってる知ってる。[r]それを言うのは90ループ目の貴様故な？
+[k]
+
+＠タマモキャット
+そこんトコちゃんと分かっているのがネココック。[r]マシュと２人で一晩かけて食べるといい！
+[k]
+
+＠マシュ
+わ、わたしもいいのですか！？[r]では頑張りますっ。
+[k]
+
+＠タマモキャット
+[#頑張れ:キ ャ ッ ツ]、[#死ぬ気で:ワ ン ダ フ ル][#頑張れ:キ ャ ッ ツ]♡
+[k]
+
+？！
+[messageOff]
+[charaFadeout I 0.4]
+[wt 0.5]
+
+[bgmStop BGM_SERVANTFES 1.5]
+
+[se ad413]
+[seVolume ad413 0 0]
+[seVolume ad413 0.5 1.0]
+[wt 1.5]
+[seStop ad413 3.0]
+[wt 0.5]
+
+[charaFadein J 0.4 0,-25]
+[wt 1.5]
+
+[bgm BGM_EVENT_146 0.1]
+
+＠マタ・ハリ
+冒険者たちの酒場へようこそ！
+[k]
+
+＠マタ・ハリ
+忙しくって、目が回りそう！[r]なかなか席にご案内できなくてごめんなさいね。
+[k]
+
+＠マタ・ハリ
+あなたたちはお酒はまだダメかな？[r]じゃ、そのぶんお料理たくさん食べていきなさいな。
+[k]
+
+＠マタ・ハリ
+というわけで、[r]ご新規２名さま、入りまーす！
+[k]
+
+[messageOff]
+[wt 0.8]
+
+＠マシュ
+マタ・ハリさん、酒場の看板娘の仮装ですね！
+[k]
+
+＠マシュ
+食堂にやってきた英霊の皆さんを的確にさばいて、[r]次々とお酒と料理を配膳している[line 2]
+[k]
+
+＠マシュ
+見事な看板娘ぶりです！[r]外見だけでなく、中身まで完璧に！
+[k]
+
+？1：叔父貴たちが……
+？2：すごい勢いで話しかけている……！
+？！
+
+＠マシュ
+は、はい。
+[k]
+
+＠マシュ
+マタ・ハリさんの魅力にあてられた[r]一部英霊および職員の方々が、次々と群がっています！
+[k]
+
+＠マシュ
+[line 3]はっ。
+[k]
+
+＠マシュ
+待ってください、マスター。[r]一部英霊および職員の方々に動きがあるようです。
+[k]
+
+＠マシュ
+これは……？
+[k]
+
+[messageOff]
+[charaFadeout J 0.4]
+[wt 0.5]
+[bgmStop BGM_EVENT_146 1.5]
+
+[se ad413]
+[seVolume ad413 0 0]
+[seVolume ad413 0.5 1.0]
+[wt 1.5]
+[seStop ad413 3.0]
+[wt 0.5]
+
+[charaFadein K 0.4 0,-25]
+[wt 1.5]
+[bgm BGM_NY 0.1]
+
+＠アイリスフィール
+あらあらあら……？
+[k]
+
+＠アイリスフィール
+ええと、皆、何かしら？
+[k]
+
+＠アイリスフィール
+私、イリヤとシトナイを[r]捜しているのだけど……
+[k]
+
+＠アイリスフィール
+エミヤくんは厨房の方、でいいのかしらね？
+[k]
+
+？1：……！
+
+？2：アイリさん、刺激的……！
+？！
+
+＠マシュ
+はいっ！
+[k]
+
+＠マシュ
+あまりのその、大胆かつ刺激的な仮装に[line 3][r]一部英霊および職員の方々が引き寄せられています！
+[k]
+
+＠マシュ
+この勢い、マタ・ハリさんに並ぶほどの……
+[k]
+
+[messageOff]
+[charaFadeout K 0.4]
+[wt 0.5]
+
+[bgmStop BGM_NY 1.5]
+
+[se ad413]
+[seVolume ad413 0 0]
+[seVolume ad413 0.5 1.0]
+[wt 1.5]
+[seStop ad413 3.0]
+[wt 0.5]
+
+[charaFace A 13]
+[charaFadein A 0.1 1]
+[wt 0.6]
+[charaFace A 6]
+[wt 1.3]
+[charaFace A 21]
+
+＠マシュ
+せ、先輩！
+[k]
+
+＠マシュ
+第３勢力！[r]第３勢力です！
+[k]
+
+＠マシュ
+一部英霊および職員の方々を惹き付ける、第３の存在が！
+[k]
+
+＠マシュ
+あちらをご覧ください……[r]ナイチンゲールさんです！
+[k]
+
+＠マシュ
+ナイチンゲールさんが、とても、その！[r]攻撃的なお姿で……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.8]
+
+[charaFadein L 0.4 0,-25]
+[wt 1.5]
+
+[bgm BGM_MAP_14 0.1]
+
+＠ナイチンゲール
+[line 3]仮装？　いいえ違います。
+[k]
+
+＠ナイチンゲール
+この姿は絶対的完全滅菌の象徴。[r]なおかつ素材は抗菌仕様。
+[k]
+
+＠ナイチンゲール
+この度、私はカルデア医療班の班長を務めますので、[r]はい。このように。
+[k]
+
+＠ナイチンゲール
+私の前に集った皆様は、[r]つまり健康に異常があるという認識で構いませんね？
+[k]
+
+＠ナイチンゲール
+ならば対処します。[r]殺してでも、皆様を[line 3]助けます。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+？1：ワーオ……
+？2：完全滅菌モードでいらっしゃる！
+？！
+
+＠マシュ
+す、すごいです。[r]ものすごい気迫を感じます！
+[k]
+
+＠マシュ
+ですがハロウィンの仮装というよりは、[r]むしろハロウィン用の戦闘装備といった趣でしょうか。
+[k]
+
+＠マシュ
+[#常在戦場:じょうざいせんじょう]の覚悟……[r]しかと受け取りました、ナイチンゲールさん！
+[k]
+
+[messageOff]
+[charaFadeout L 0.4]
+[wt 0.5]
+
+[bgmStop BGM_MAP_14 1.5]
+
+[se ad413]
+[seVolume ad413 0 0]
+[seVolume ad413 0.5 1.0]
+[wt 1.5]
+[seStop ad413 3.0]
+[wt 0.5]
+
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……。[r]……。
+[k]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠マシュ
+皆さん、すごいですね！[r]素晴らしい仮装ばかりで感激してしまいます。
+[k]
+
+？1：そういえば
+？！
+
+[charaFace A 0]
+
+＠マシュ
+はい？
+[k]
+
+？1：マシュは[line 3]
+？！
+
+＠マシュ
+[FFFFFF]？[-]
+[k]
+
+？1：マシュはハロウィンの仮装、しないの？
+？！
+
+[bgmStop BGM_EVENT_2 1.5]
+
+[charaFace A 6]
+
+＠マシュ
+！
+[k]
+
+[charaFace A 3]
+
+＠マシュ
+そ……
+[k]
+
+[charaFace A 21]
+
+＠マシュ
+そ、そそ、そ、それは……[r]わ、わたしの仮装は、その……[line 3]
+[k]
+
+[messageOff]
+[se ade84]
+[seVolume ade84 0 0.6]
+[wipeout circleIn 1.2 1.0]
+[wait wipe]
+
+[charaPut H 1]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+[scene 105800]
+[branch lblConf3]
+
+[label lblNotClear3]
+[scene 106000]
+[branch lblConf3]
+
+[label lblConf3]
+
+[wipein circleIn 1.2 1.0]
+[wait wipe]
+[wt 1.0]
+
+[charaFace M 0]
+[charaFadein M 0.4 0,-25]
+[wt 1.5]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠マシュ
+あの……
+[k]
+
+＠マシュ
+わたしの机の上に、[r]差出人不明の郵便物があったので、その……
+[k]
+
+＠マシュ
+開けてみたところ、[r]コレがあったので……
+[k]
+
+＠マシュ
+ああ、ハロウィン用の仮装でしょうかと思い……
+[k]
+
+＠マシュ
+思い切って……[r]着替えてみたのですが……！
+[k]
+
+＠マシュ
+ど、どうでしょうフォウさん！[r]だ、大胆に過ぎたりしないでしょうか！？
+[k]
+
+＠マシュ
+先輩は喜んでくださるでしょうか！？
+[k]
+
+＠マシュ
+……。[r]……。
+[k]
+
+＠マシュ
+気のせいか、なんだか露出が多いような[line 3]
+[k]
+
+＠フォウ
+フォウ。フォウフォウフォウフォウフォウ。
+[k]
+
+＠マシュ
+…………。
+[k]
+
+＠マシュ
+……や、やっぱり……
+[k]
+
+＠マシュ
+ええと……
+[k]
+
+＠マシュ
+これで人前に出るのは、[r]さすがに恥ずかしいマシュ・キリエライトですっ。
+[k]
+
+＠マシュ
+とても先輩にはお見せできませんーっ！
+[k]
+
+
+[messageOff]
+[bgm BGM_EVENT_7 1.0 0.5]
+[se ade84]
+[seVolume ade84 0 0.6]
+[wipeout circleIn 1.2 1.0]
+[wait wipe]
+
+[charaPut H 2000,2000]
+[charaEffectStop H bit_sepia01_depth_fs]
+
+[charaEffect H bit_talk_noise_gr]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+[scene 105900]
+[branch lblConf4]
+
+[label lblNotClear4]
+[scene 105600]
+[branch lblConf4]
+
+[label lblConf4]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+[wipein circleIn 1.2 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_7 1.0 1.0]
+
+＠マシュ
+なんというか……[r]わたしの仮装は……
+[k]
+
+＠マシュ
+カルデア七大兵器として厳重に封印されており……
+[k]
+
+？1：そんなに！？
+？！
+
+[charaFace A 21]
+
+＠マシュ
+はい！
+[k]
+
+？1：じゃあ、いつの日か封印が解けるのを[&待つよ:待つね]
+
+？！
+
+[charaFace A 3]
+
+＠マシュ
+えっ。
+[k]
+
+＠マシュ
+え、ええと……[r]そ、そう……ですか……
+[k]
+
+＠マシュ
+善処します……[wt 1.0][charaFace A 21][r]い、いえ、マシュ・キリエライト頑張ります！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[wt 1.2]
+
+[branchQuestNotClear lblNotClear5 3000303]
+
+[scene 104100]
+[branch lblConf5]
+
+[label lblNotClear5]
+[scene 135100]
+[branch lblConf5]
+
+[label lblConf5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaScale C 1.1]
+
+[se ad7]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.2 0,-10]
+[charaMove C 0,10 0.3]
+[wt 0.3]
+
+＠ダ・ヴィンチ
+トリック・オア・レイシフト！
+[k]
+
+？1：えっ
+？2：特異点発生！？
+？！
+
+[messageOff]
+[charaFace C 1]
+[wt 1.0]
+
+[bgm BGM_EVENT_77 0.1]
+
+
+＠ダ・ヴィンチ
+うん、ハロウィンパーティーの最中にごめんよ。
+[k]
+
+＠ダ・ヴィンチ
+私も心苦しいのだけど、[r]このタイミングで微小特異点が発生してしまってね。
+[k]
+
+＠ダ・ヴィンチ
+今回もキミになんとかしてもらいたい！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaScale C 1.0]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+では、わたしも[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadeinFSL C 0.1 0]
+
+[charaFace A 7]
+[charaFadeinFSR A 0.1 2]
+
+＠ダ・ヴィンチ
+マシュにはやってほしい別任務があるので、[r]残念ながら今回は別行動ってコトになる。
+[k]
+
+＠ダ・ヴィンチ
+同行サーヴァントはこちらで選出しておいたよ。
+[k]
+
+[charaFace A 4]
+
+＠マシュ
+そう、なのですね。[r]残念です……。
+[k]
+
+？1：今回はどういうハロウィンなんです？
+？！
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+んー。特異点の発生地点は中近東だから、[r]ハロウィンとは限らないかもだ。
+[k]
+
+＠ダ・ヴィンチ
+年代的には……おっと、[r]３世紀か。かなり古いぞ。
+[k]
+
+[charaFace C 1]
+
+＠ダ・ヴィンチ
+現地に着いたら、まずは情報収集[line 3]って今更だね。[r]じゃあ早速、行ってみようか！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[scene 10000]
+[wt 0.5]
+[fadein black 1.0]
+[wait fade]
+
+[se ad539]
+[se ad31]
+[charaPut H 1]
+[wt 0.2]
+
+[seStop ad539 0.1]
+[seStop ad31 0.1]
+[charaPut H 2000,2500]
+[wt 0.6]
+
+[se ad539]
+[se ad31]
+[charaPut H 1]
+[wt 0.4]
+
+[seStop ad539 0.1]
+[seStop ad31 0.1]
+[charaPut H 2000,2500]
+[charaEffectStop H bit_talk_noise_gr]
+[wt 0.9]
+
+[effect bit_talk_07_fs]
+[se ad12]
+[wt 4.0]
+[fadeout white 1.0]
+[wait fade]
+
+[scene 10001]
+[wt 1.5]
+
+[fadein white 0.1]
+[wait fade]
+[fadeout black 2.0]
+[wait fade]
+
+[scene 10000]
+
+[fadein black 1.5]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[soundStopAllFade 0.4]
+
+[charaSet A 98115000 1 初期化用ダミー]
+[charaSet B 98115000 1 初期化用ダミー]
+[charaSet C 98115000 1 初期化用ダミー]
+[charaSet D 98115000 1 初期化用ダミー]
+[charaSet E 98115000 1 初期化用ダミー]
+[charaSet F 98115000 1 初期化用ダミー]
+[charaSet G 98115000 1 初期化用ダミー]
+[charaSet H 98115000 1 初期化用ダミー]
+[charaSet I 98115000 1 初期化用ダミー]
+[charaSet J 98115000 1 初期化用ダミー]
+[charaSet K 98115000 1 初期化用ダミー]
+[charaSet L 98115000 1 初期化用ダミー]
+[charaSet M 98115000 1 初期化用ダミー]
+[charaSet N 98115000 1 初期化用ダミー]
+[charaSet O 98115000 1 初期化用ダミー]
+[charaSet P 98115000 1 初期化用ダミー]
+
+[scene 10000]
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+
+[skip false]
+
+[wt 0.5]
+
+[fowardEffect bit_chapterstart80343]
+[wait fowardEffect]
+
+[wt 0.5]
+
+[fadeout black 2.0]
+[wait fade]
+
+[wt 0.5]
+[soundStopAll]
+[end]

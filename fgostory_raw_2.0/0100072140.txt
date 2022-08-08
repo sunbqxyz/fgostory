@@ -1,0 +1,152 @@
+
+
+
+＄01-00-07-21-4-0
+
+[soundStopAll]
+[bgm BGM_EVENT_24 0.1]
+[charaSet A 8001002 1 玛修]
+[charaSet B 98106200 1 梅林]
+[charaSet C 98003000 1 Dr.罗曼]
+[charaSet D 3028000 1 豹人]
+[charaSet E 98079000 1 山中老人]
+
+[scene 35500]
+[fadein black 2.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠玛修
+击退负责防卫的拉赫穆变异体！[r]从现在开始向提亚马特神[line 3]
+[k]
+
+＠玛修
+不，是向BeastⅡ的头部前进！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0]
+[charaFace A 7]
+[charaFadein A 0.1 2]
+＠梅林
+只要靠女神埃列什基伽勒的佑护，甚至能做到空中行走吗！[r]……不。等等。[charaFace B 5]连玛修和[%1]都行？
+[k]
+
+[charaFace B 4]
+＠梅林
+……是吗。这是何等悲哀。[r]但既然是她的选择，那也没办法。
+[k]
+
+
+[charaFace A 6]
+＠玛修
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr.罗曼
+巴力拉赫穆正在接近你们！[r]好快！？　是飞行形态特化的新类型！
+[k]
+
+＠Dr.罗曼
+而且[line 3]这魔力量超越了魔神柱！[r]最好把这些家伙当做BeastⅡ的直属使魔！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠豹人
+哼，事到如今我们可不会被这种程度的家伙给吓到喵，[r]放马过来[line 3]
+[k]
+
+[charaEffect D bit_talk_14]
+[wt 0.1]
+[se bac11]
+[charaShake D 0.05 3 3 0.4]
+[charaMove D 0,-128 0.4]
+[charaFadeout D 0.4]
+[wt 0.4]
+[se ad75]
+[seVolume ad75 0 0.4]
+[wt 0.2]
+
+＠豹人
+太大意了[line 4]！[r]这些家伙真的很强喵[line 4]！
+[k]
+
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+豹人脱队！　说错，是坠落！[r]又来了很多，总计十一只！
+[k]
+
+＠Dr.罗曼
+这就是BeastⅡ真正的孩子们吗！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+＠山中老人
+[line 3]那倒值得一斩。[r]若只斩碎一角便作罢，此剑也怕是要生锈了。
+[k]
+
+＠山中老人
+迦勒底的魔术师啊。[r]需要暗杀者相助吗？
+[k]
+
+？1：王哈桑先生！
+？2：务必拜托了！
+
+？！
+
+[charaFace E 0]
+＠山中老人
+明白了。[r]从今往后吾之名、吾之剑便与汝结缘。
+[k]
+
+＠山中老人
+冠位之名虽已送给起源之海践行了，[r]但吾之暗杀术却毫发未衰。
+[k]
+
+[charaFace E 5]
+＠山中老人
+契约者啊。你大可随意运用这告死之剑。[r][line 3]若能如愿，愿能永恒。
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠玛修
+是……！[r]没有比您更可靠的援军了！
+[k]
+
+＠玛修
+战斗开始！[r]敌人是拉赫穆变异体，要突破它们，抵达BeastⅡ的顶点！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

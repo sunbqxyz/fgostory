@@ -1,0 +1,1122 @@
+
+＄94-06-22-02-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 98003003 2 Dr.ロマン]
+[charaSet C 98002000 1 フォウ]
+[charaSet D 7013001 1 清姫]
+[charaSet E 6014001 1 マタ・ハリ]
+
+[charaSet H 5026000 1 エリザベート（ハロウィン）]
+[charaSet I 7007001 1 ヴラド三世]
+
+[imageSet J back10000 1 1]
+[charaScale J 1.05]
+
+
+[charaSet T 98115000 1 エフェクト用ダミー]
+
+[charaPut T 2000,2500]
+[charaEffect T bit_talk_10]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[scene 135300]
+[wt 0.1]
+
+[wipein openEye 2.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠[FFFFFF]H：？？？[-]
+ハァイ、[&子イヌ:子ジカ]！
+[k]
+
+？1：君は……！
+？！
+
+[charaFace H 0]
+＠[FFFFFF]H：？？？[-]
+記憶喪失って聞いたわ。[r]大変ね！　でも大丈夫よ[&子イヌ:子ジカ]。
+[k]
+
+[charaFace H 1]
+＠[FFFFFF]H：？？？[-]
+ここは皆が協力して歴代のチェイテをシミュレートした、[r]スペシャルハロウィンステージ！
+[k]
+
+＠[FFFFFF]H：？？？[-]
+ハロウィンのコトについて思う存分[r]教えてあげることができるわ！
+[k]
+
+？1：なるほど……！
+？！
+
+[charaFace H 0]
+＠[FFFFFF]H：？？？[-]
+ちなみに[#私:アタシ]のことは、[r]覚えているかしら？
+[k]
+
+＠[FFFFFF]H：？？？[-]
+[&子イヌ:子ジカ]にとって、[r]永遠のナンバー１アイドルサーヴァント……。
+[k]
+
+[charaFace H 1]
+＠[FFFFFF]H：？？？[-]
+エリザベート・バートリーのことを！
+[k]
+
+？1：覚えてない[&んだ:の]
+
+？2：もちろん、よく覚えている
+[branch select02]
+？！
+
+[charaFace H 4]
+＠エリザベート（ハロウィン）
+そう……可哀想な[&子イヌ:子ジカ]。
+[k]
+
+＠エリザベート（ハロウィン）
+[#私:アタシ]のことが記憶から抜けるなんて、[r]人生の1/3を損しているも同然よ。
+[k]
+
+[charaFace H 0]
+＠エリザベート（ハロウィン）
+キャスターにしてアイドル、エリザベート・バートリー。[r]それが[#私:アタシ]の名前ね。
+[k]
+
+＠エリザベート（ハロウィン）
+ちなみに[#私:アタシ]の歌は[r]不眠・[#目眩:めまい]・吐き気にもよく効くと言われているの。
+[k]
+
+[charaFace H 1]
+＠エリザベート（ハロウィン）
+不安なようなら、[r]後で歌ってあげてもよくてよ！
+[k]
+
+？1：（なぜか寒気が？）
+？！
+
+[branch select_end]
+
+[label select02]
+
+[charaFace H 1]
+＠エリザベート（ハロウィン）
+そう、当然よね！
+[k]
+
+＠エリザベート（ハロウィン）
+ハロウィンをフォーガットンでも[r]エリザベートはフォーエバーだった……。
+[k]
+
+＠エリザベート（ハロウィン）
+[#感動的:エモーション]。[&子イヌ:子ジカ]、合格。[r]花丸あげちゃう。
+[k]
+
+[branch select_end]
+
+[label select_end]
+
+[charaFace H 0]
+＠エリザベート（ハロウィン）
+さて、ハロウィンのことを思い出すために……。
+[k]
+
+＠エリザベート（ハロウィン）
+折角だし、一つ懐かしみながら[r]歩いてみるのはどうかしら？
+[k]
+
+
+[messageOff]
+[se ad95]
+[se ad60]
+[wipeout leftToRight 1.0 1.0]
+[seStop ad95 1.2]
+[seStop ad60 1.2]
+[bgmStop BGM_EVENT_77 1.0]
+[wait wipe]
+
+[charaFadeout H 0.1]
+
+[scene 134500]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[bgm BGM_MAP_4 0.1]
+[wait wipe]
+[wt 0.2]
+
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠エリザベート（ハロウィン）
+そう、ハロウィンの物語は、[r]いつも大体ここから始まったのよ。
+[k]
+
+[charaFace H 1]
+＠エリザベート（ハロウィン）
+あ、そうそう。[r]始まりと言えば、これね。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[bgm BGM_MAP_4 1.0 0.6]
+[wt 0.2]
+
+[se ade96]
+[wt 0.8]
+
+[scene 110101 1.0]
+[charaScale H 1.2]
+[charaPut H 0,-10]
+[charaFace H 0]
+[charaFadeTime H 1.0 0.6]
+[wt 1.4]
+
+＠手紙
+[e5bc7c]前略　[%1][e5bc7c]様[-][r][e5bc7c]素敵なハロウィンパーティーのお知らせです。[-]
+[k]
+
+[charaFace H 1]
+＠手紙
+[e5bc7c]このたび我が監獄城チェイテがリニューアル！[-]
+[k]
+
+＠手紙
+[e5bc7c]クラシック＆ドラゴニックな[-][r][e5bc7c]装いでアナタを食べちゃうぞー☆[-]
+[k]
+
+[charaFace H 0]
+＠手紙
+[e5bc7c]エレガントに、そしてワンダリングに。[-][r][e5bc7c]アナタを一夜の夢にご招待いたします。[-]
+[k]
+
+＠手紙
+[e5bc7c]パーティー会場では世界各国から集められた[-][r][e5bc7c]素晴らしい[#南瓜:カボチャ]料理と、[-]
+[k]
+
+＠手紙
+[e5bc7c]可憐な[#偶像:アイドル]が歌う素晴らしいセレナーデと[-][r][e5bc7c]美麗な令嬢が歌う心躍るセレナーデ、[-]
+[k]
+
+＠手紙
+[e5bc7c]そして至高の[#歌姫:ディーバ]が歌うセレナーデが[-][r][e5bc7c]アナタをお待ちしております。[-]
+[k]
+
+＠手紙
+[e5bc7c]ああ、誰もが心浮き立つ素敵な舞踏会が[-][r][e5bc7c]アナタのハートをバイティング＆テイスティング。[-]
+[k]
+
+＠手紙
+[e5bc7c]まさに身も心もデラックス！[-][r][e5bc7c]悪夢のような非日常の気分に浸りませんか？[-]
+[k]
+
+＠手紙
+[e5bc7c]合言葉は『スイート・ブラッド・メルヘン・トーチャー』。[-][r][e5bc7c]早めの参加をお待ちしております。[-]
+[k]
+
+[charaFace H 1]
+＠手紙
+[e5bc7c][line 3]来てね？[-]
+[k]
+
+[messageOff]
+[scene 134500 1.0]
+[charaFadeout H 1.0]
+
+[bgm BGM_MAP_4 1.0 1.0]
+[wt 1.4]
+
+
+[charaScale H 1.0]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠エリザベート（ハロウィン）
+ふふ、いつ読んでもヒットな名文ね。
+[k]
+
+＠エリザベート（ハロウィン）
+特に最後の殺し文句は、[r]我ながら見事と言わざるを得ないわ……。
+[k]
+
+＠I：？？？
+だが文面に領主としての威厳が足りん。[r]統治者たるもの、招待状にも厳格さが求められる。
+[k]
+
+[charaFace H 5]
+＠エリザベート（ハロウィン）
+ギャ！[r]そ、その声は……！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.2]
+
+[se ad311]
+[wt 0.4]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.4 1]
+[wt 0.4]
+[seStop ad311 0.1]
+[wt 0.4]
+
+＠ヴラド三世
+この地で会うのは久しいか、我がマスターよ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+＠エリザベート（ハロウィン）
+ヴラドおじ様、どうしてここに！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠ヴラド三世
+貴様だけでは不安だと、[r]カルデアの一同が考えてな。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+＠エリザベート（ハロウィン）
+信用がないー！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠ヴラド三世
+なに、懐かしさ故に参ったまで。
+[k]
+
+＠ヴラド三世
+君主たる余がいることに、[r]今さら緊張するお前たちでもあるまい。
+[k]
+
+？1：そんなことはない[&からね:ですよ]？
+
+[charaFace I 1]
+＠ヴラド三世
+ふふ、余の顔を立てるではないか。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth J 4]
+[charaDepth H 6]
+
+[charaPut J 1]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+[charaFadeTime J 0.2 0.5]
+＠エリザベート（ハロウィン）
+（本当に緊張するんだけどー！？）
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+？2：長い付き合いだしね……
+
+[charaFace I 1]
+＠ヴラド三世
+フッ。[r]とはいえ礼節を軽んじてはならぬ。
+[k]
+
+＠ヴラド三世
+余は王、[r]そしてこの娘は竜にして貴族。
+[k]
+
+＠ヴラド三世
+身分制度などとうの昔に撤廃されているが、[r]それでも我らはそういう時代を生きたのでな。
+[k]
+
+？！
+
+[charaFace I 0]
+＠ヴラド三世
+さて。
+[k]
+
+＠ヴラド三世
+一度目のハロウィンのきっかけは、[r]エリザベートが聖杯の欠片を拾ったためだが[line 3]
+[k]
+
+[branchQuestNotClear lblNotClear 94000507]
+
+[label lblClear]
+
+＠ヴラド三世
+最初に遭遇したサーヴァントは誰か、[r]貴様は思い出せたかな？
+[k]
+
+＠ヴラド三世
+無論、同行したマシュ・キリエライトは[r]除き……二択問題とする。
+[k]
+
+＠ヴラド三世
+遭遇したサーヴァントは、[r]清姫か？　マタ・ハリか？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠エリザベート（ハロウィン）
+ハロウィン・クイズね。[r]さあ、[&子イヌ:子ジカ]。
+[k]
+
+＠エリザベート（ハロウィン）
+清姫かマタ・ハリ。[r]どちらかしら！
+[k]
+
+？1：清姫……？
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠ヴラド三世
+ふむ、合っている。
+[k]
+
+[charaFace I 4]
+＠ヴラド三世
+まあ正確には遭遇したというよりは、[r]ついてきた、というべきか。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠エリザベート（ハロウィン）
+憑いてきた、と言うべきじゃないかしら……。
+[k]
+
+？2：マタ・ハリかな？
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠ヴラド三世
+合っている。
+[k]
+
+＠ヴラド三世
+厳密に言うと、最初に憑いてきたのは清姫。[r]そして相対したのがマタ・ハリという訳だな。
+[k]
+
+？！
+
+[branch lblConf]
+[label lblNotClear]
+
+[branchQuestClear lblClear 94007407]
+
+[label lblConf]
+
+
+[messageOff]
+[wt 1.0]
+
+[cueSe Battle ba6]
+[cueSe Battle bac117]
+[cueSeVolume bac117 0 0.8]
+[wipeout guruguru 1.5 1.0]
+[bgmStop BGM_MAP_4 1.5]
+[cueSeStop ba6 1.5]
+[cueSeStop bac117 1.2]
+[wait wipe]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+
+[scene 10000]
+
+[charaSet A 8001001 1 マシュ]
+[wt 1.0]
+
+[wipein guruguru 0.5 1.0]
+[wait wipe]
+
+[fadeout black 0.5]
+[wait fade]
+
+[pictureFrame cut297_frame15 forceFullScreenSize]
+
+
+
+[bgm BGM_EVENT_2 0.1]
+
+[scene 134500]
+
+[fadein black 1]
+[wait fade]
+
+[pictureFrame]
+[pictureFrameTop cut297_frame15 forceFullScreenSize]
+[wt 0.3]
+
+[charaFadein A 0.1 0,-50]
+[charaFace A 13]
+＠マシュ
+思ったより距離がありましたね。[r]でも、街の様子は期待以上の仕上がりです。
+[k]
+
+＠マシュ
+どうでしょう、マスター。[r]よければここで少し休むというのも。
+[k]
+
+？1：そうだね
+[charaFace A 1]
+＠マシュ
+了解です。[r]ドクター、しばらく休憩に入ります。
+[k]
+
+？2：パンプキンパイとか食べたいよね
+
+[charaFace A 6]
+＠マシュ
+……！[r]さすがです先輩。
+[k]
+
+＠マシュ
+ハロウィンが選ぶ『この秋ナンバーワンマスター』の[r]称号は、もらったも同然かと。
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+
+[charaPut T 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-175]
+＠Dr.ロマン
+オーケー、周囲にエネミーの反応はない。[r]しばらくゆっくりできそうだよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 2000,2500]
+
+[charaTalk A]
+[charaFadein A 0.1 0,-50]
+[charaFace A 1]
+＠マシュ
+はい。ではお弁当の出番ですね。[r]スーパーランチタイム、出撃します。
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFadein D 0.1 0,-50]
+[charaFace D 0]
+＠清姫
+まあ勇ましい。[r]では、敷物を敷いておきますね。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFadein A 0.1 0,-50]
+[charaFace A 13]
+＠マシュ
+あ。そうですね、お願いします。
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFadein D 0.1 0,-50]
+[charaFace D 1]
+＠清姫
+はい、ますたぁ。どうぞお座りになってください。[r]さ、お手製の焼きおにぎりです。
+[k]
+
+？1：ありがとう
+
+？！
+
+＠清姫
+こちらお茶です。
+[k]
+
+？1：美味しい
+
+？！
+
+[charaFace D 3]
+＠清姫
+まあ、そんな……。
+[k]
+
+[bgmStop BGM_EVENT_2 2.0]
+？1：ところで
+
+？！
+
+[charaFace D 0]
+＠清姫
+はい、何でしょうか？
+[k]
+
+？1：何でいるの？
+
+？！
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFadeinFSR A 0.1 256,-50]
+[charaFace A 6]
+[charaFadeinFSL C 0.1 -256,-50]
+[bgm BGM_EVENT_27 0.1]
+＠マシュ
+そういえば！？[r]清姫さん、何故ここに！？
+[k]
+
+＠フォウ
+フォフォーーーウ！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[charaFadein D 0.1 0,-50]
+[charaFace D 0]
+＠清姫
+あら、[#連れ合い:サーヴァント]なら[r]当然のことだと思いますが。
+[k]
+
+[charaFace D 3]
+＠清姫
+ちゃんとリボンもつけた贈呈用の箱に入っていたのに、[r][#旦那様:マスター]ったらつれないんですもの。
+[k]
+
+＠清姫
+おまけに、あーんな[#胡散:うさん]臭い招待状に引っ掛かるなんて。[r][#“あなたの妻”:サーヴァント]としては見過ごせません。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFadeinFSR A 0.1 256,-50]
+[charaFace A 12]
+[charaFadeinFSL C 0.1 -256,-50]
+＠マシュ
+おかしいですね。何かこう、耳で聞いている言葉と[r]実際の文字で致命的に何かが狂っている感があります。
+[k]
+
+＠フォウ
+フォウ……。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[charaFadein D 0.1 0,-50]
+[charaFace D 0]
+＠清姫
+という訳でついていきますね。[r]大丈夫ですよ、わたくしがきちんとお守り致します。
+[k]
+
+＠清姫
+ええ、二十四時間、隅から隅まで、[r]東西南北前後左右天地まで、ずいずいっと。
+[k]
+
+[charaFace D 1]
+＠清姫
+ほらほら、ファンファーレを鳴らして下さいまし。[r]『清姫が[#奥さん:なかま]になった！』ですよ。
+[k]
+
+？1：今後とも健全によろしく
+
+？！
+
+[charaFace D 3]
+＠清姫
+ああん、つれない御方ですこと。[r]そんなところも魅力なのですけど、うふふふふ……。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaPutFSL T 0]
+[charaTalk B]
+[charaFace B 4]
+[charaFadeinFSL B 0.1 -256,-175]
+[charaFadeinFSR A 0.1 256,-50]
+[charaFace A 12]
+＠Dr.ロマン
+先行きがたまらなく不安なのだけど、[r]マシュはどう思う？
+[k]
+
+＠マシュ
+珍しく同意見です、ドクター……。[bgmStop BGM_EVENT_27 1.0]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 2000,2500]
+[charaFadeout A 0.1]
+[wt 0.3]
+[se ad21]
+[wt 0.5]
+[bgm BGM_EVENT_3]
+
+[charaTalk D]
+[charaFadein D 0.1 0,-50]
+[charaFace D 0]
+＠清姫
+あら、何かいらっしゃったようですね。[r]それではマスター、手に手を取り合って[#怪物退治:ハ ネ ム ー ン]です。
+[k]
+
+？1：さすがに今のは強引すぎる
+
+？！
+
+[charaFace D 1]
+＠清姫
+てへ☆
+[k]
+
+[charaFadeout D 0.5]
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+
+
+[wt 2.0]
+
+
+[bgm BGM_MAP_6 0.1]
+
+[scene 134600]
+[fadein black 1]
+[wait fade]
+[wt 0.4]
+
+[charaTalk A]
+[charaFadein A 0.1 0,-50]
+[charaFace A 7]
+＠マシュ
+先輩。サーヴァントの気配がします。
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFadein D 0.1 0,-50]
+[charaFace D 5]
+＠清姫
+ですわね。[r]旦那様、わたくしの背後にお隠れなさいませ。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFadeinFSL D 0.1 -256,-50]
+[charaFace D 0]
+[charaFadeinFSR A 0.1 256,-50]
+[charaFace A 14]
+＠マシュ
+あの、いま『旦那様』と言いませんでしたか？
+[k]
+
+[charaFace D 1]
+＠清姫
+言いましたが、何か？
+[k]
+
+[charaFace A 11]
+＠マシュ
+あ、いえ……その……[r]意味合いは正しいのかな、と……
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+
+[charaPut T 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-175]
+＠Dr.ロマン
+ちなみに旦那は『面倒を見てくれる人』が語源にあるから、[r]男女どちらに使っても構わないとボクは思うよ！
+[k]
+
+[charaFace B 1]
+＠Dr.ロマン
+良かったね、[%1][&君:ちゃん]！
+[k]
+
+？1：いやいやいや
+
+？！
+
+[bgmStop BGM_MAP_6 1.5]
+＠E：？？？
+ラー、ラー、ラ～～♪
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 2000,2500]
+[wt 0.7]
+
+[charaTalk E]
+[charaFadein E 0.1 0,-50]
+[charaFace E 0]
+[bgm BGM_EVENT_71 0.1]
+＠E：？？？
+こんばんは。いい夜ね。若くて、甘い夜。[r]あなたは若くて、苦い[&男:女]かしら？
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk D]
+[charaFadein D 0.1 0,-50]
+[charaFace D 5]
+＠清姫
+ど、毒婦の気配……！[r]退がって下さい旦那様！　那由多の彼方まで！
+[k]
+
+？1：うん、確かにそんな気分
+
+[charaFadeout D 0.1]
+
+[charaPut T 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-175]
+＠Dr.ロマン
+ははは。清姫から逃げたい、という意味でかい？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 2000,2500]
+
+[charaTalk D]
+[charaFadein D 0.1 0,-50]
+[charaFace D 2]
+＠清姫
+あ゛゛？
+[k]
+
+＠Dr.ロマン
+なんでもない、なんでもないです！
+[k]
+
+[charaFadeout D 0.1]
+
+？2：それだと帰って来られないよ
+
+[charaTalk D]
+[charaFadein D 0.1 0,-50]
+[charaFace D 3]
+＠清姫
+まあ、マスターったら奥ゆかしいんですから……[r]どんなに離れようと、必ず迎えに行きますわ♡
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk C]
+[charaFadeinFSR A 0.1 256,-50]
+[charaFace A 0]
+[charaFadeinFSL C 0.1 -256,-50]
+＠フォウ
+フォウ……フォーウ……
+[k]
+
+[charaFace A 6]
+＠マシュ
+“もうこれダメじゃない、アンチン的に”ですか……？
+[k]
+
+[charaFace A 7]
+＠マシュ
+ダメですフォウさん。皆さん分かっている事なので、[r]ここは黙っておかないと。
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+
+[charaTalk E]
+[charaFadein E 0.1 0,-50]
+[charaFace E 0]
+＠[FFFFFF]E：？？？[-]
+あらあら、うふふ。[r]可愛らしい招待客さんたちね。
+[k]
+
+＠[FFFFFF]E：？？？[-]
+幻想飛び交うハロウィン・パーティーにようこそ！[r]私の名はマタ・ハリ。
+[k]
+
+[charaFace E 1]
+＠マタ・ハリ
+今宵一夜かぎりのお祭り騒ぎ。[r]どうか楽しんで下さいませ。
+[k]
+
+[bgmStop BGM_EVENT_71 1.0]
+＠マタ・ハリ
+それでは、拙いですが私の踊りを楽しんで下さいね。[r]よいしょ、と……（ぬぎぬぎ）。
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk D]
+[charaFadein D 0.1 0,-50]
+[charaFace D 2]
+[bgm BGM_EVENT_7 0.1]
+＠清姫
+！？
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk C]
+[charaFadein C 0.1 0,-50]
+[charaFace C 0]
+＠フォウ
+ドフォーーーーウ！？
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFadein A 0.1 0,-50]
+[charaFace A 6]
+＠マシュ
+ちょっと待って下さい！！！？？[r]な、何で脱いでいるんですか！？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk E]
+[charaFadein E 0.1 0,-50]
+[charaFace E 1]
+＠マタ・ハリ
+あら。だって私、そういうのが得意ですので。
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk D]
+[charaFadein D 0.1 0,-50]
+[charaFace D 2]
+＠清姫
+キャーーーーーーーーー！[r]はしたないはしたないはしたない！
+[k]
+
+[charaFace D 5]
+＠清姫
+だだだだだだ旦那様！　これより諸肌見せるこの[r]不埒極まる[#女性:にょしょう]、成敗致します！[bgmStop BGM_EVENT_7 0.8]
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk E]
+[charaFadein E 0 0,-50]
+[charaFace E 0]
+[bgm BGM_EVENT_3 0.1]
+＠マタ・ハリ
+あらあらあら～。[r]ふふふ、それならそれで構わないわよ。
+[k]
+
+[charaFadeout E 0.1]
+
+[charaPut T 1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-175]
+＠Dr.ロマン
+……チッ。[r]（そっと記録モードを解除する）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 2000,2500]
+
+[charaTalk A]
+[charaFadein A 0 0,-50]
+[charaFace A 7]
+＠マシュ
+ドクター？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaPut T 1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-175]
+＠Dr.ロマン
+なにもしてない。なにもしてませんよボクは。[r]そして残念だが戦闘だ。
+[k]
+
+＠Dr.ロマン
+お祭りにダンサーは定番だしね。[r]みんな、思う存分戦ってくれ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 2000,2500]
+[charaEffectStop T bit_talk_10]
+
+
+
+[charaTalk E]
+[charaFadein E 0.1 0,-50]
+[charaFace E 1]
+＠マタ・ハリ
+[#陽の眼を持つ女:マ　　タ　　・　　ハ　　リ]の異名。[r]篤とご覧あれ！　……というところかしら。
+[k]
+
+[messageOff]
+
+[pictureFrameTop]
+[pictureFrame cut297_frame15 forceFullScreenSize]
+[wt 1.0]
+
+
+
+[cueSe Battle ba6]
+[cueSe Battle bac117]
+[cueSeVolume bac117 0 0.8]
+[wipeout guruguru 1.5 1.0]
+[bgmStop BGM_EVENT_3 1.5]
+[cueSeStop ba6 1.5]
+[cueSeStop bac117 1.2]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[scene 134500]
+
+[pictureFrame]
+
+[wt 2.0]
+
+[wipein guruguru 1.5 1.0]
+[bgm BGM_MAP_4 0.1]
+[wait wipe]
+[wt 0.3]
+
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠ヴラド三世
+さて、思い出とは移ろい、[r]時に形を変えるもの。
+[k]
+
+＠ヴラド三世
+ここで戦いはどうだったか……。[r]一つ、試してみるとするか。
+[k]
+
+[bgmStop BGM_MAP_4 1.5]
+
+？1：えーとつまり？
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_63 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠エリザベート（ハロウィン）
+あ、[#私:アタシ]わかった。[r]戦いね！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+＠ヴラド三世
+その通り。[r]それでは思い出と戦うことにするか。
+[k]
+
+[charaFace I 2]
+＠ヴラド三世
+[line 3]行くぞ、マスター。
+[k]
+
+？1：りょ、了解ー！
+？！
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_63 0.4]
+[wait fade]
+[soundStopAll]
+[end]

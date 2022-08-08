@@ -1,0 +1,318 @@
+
+
+
+＄94-03-84-12-1-0
+
+
+[soundStopAll]
+
+[charaSet A 7029000 1 泳装信]
+[charaSet B 1098173800 1 歌舞伎信]
+[charaSet C 1098173800 1 歌舞伎信]
+[charaSet D 1098173800 1 歌舞伎信]
+[charaSet E 11007000 1 足轻信]
+[charaSet F 3038000 1 长尾景虎]
+[charaSet G 7035001 1 森长可]
+[charaSet H 98001000 1 家老玛修]
+[charaSet J 98115000 1 特效用]
+
+[charaDepth C 1]
+[charaDepth D 2]
+[charaDepth B 3]
+
+[scene 21100]
+
+[se ad218]
+[seVolume ad218 0 0]
+
+[fadein black 1.0]
+[seVolume ad218 1.0 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[seStop ad218 0.5]
+
+[se adm43]
+
+
+[charaFace A 1]
+
+＠泳装信
+耶[messageShake 0.03 3 3 0.3]～！　都在信吗！
+[k]
+
+＠泳装信
+今天感谢你们前来参加我的骏河横跨夏日生活[bgm BGM_EVENT_27 0.1][r]最终公演！　大家就尽情欢乐吧信耶～！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[charaFace C 0]
+[charaFadein C 0.4 2]
+[charaFace D 0]
+[charaFadein D 0.4 0]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk B]
+
+＠歌舞伎信
+NO[messageShake 0.05 3 3 0.5]BUYEAH！
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[se ad335]
+[seVolume ad335 0 0]
+[se ad16]
+[seVolume ad16 0 0]
+[seVolume ad335 0.5 0.5]
+[seVolume ad16 0.5 1.0]
+
+[charaMoveReturn B 0,8 0.2]
+[wt 0.6]
+[charaMoveReturn C 256,8 0.2]
+[charaMoveReturn D -256,8 0.2]
+[wt 0.6]
+
+[charaMoveReturn B 0,8 0.2]
+[wt 0.6]
+[charaMoveReturn C 256,8 0.2]
+[charaMoveReturn D -256,8 0.2]
+
+[seStop ad335 1.0]
+[seStop ad16 1.0]
+[wt 0.6]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+？1：果然是这么一回事。
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠长尾景虎
+啊哈哈哈哈！　真是个可怕的噩梦！[r]赶紧进攻毁灭这座城吧！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+？2：NOBUYEAH！
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 14]
+[charaFadein H 0.1 1]
+
+＠家老玛修
+前辈！　现在不是兴致勃勃挥舞荧光棒的时候！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+？！
+
+[charaSet B 11007001 1 织田吉法师]
+[charaSet C 6036002 1 李书文]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠织田吉法师
+哇哈哈哈哈哈哈！　那个我怎么回事！？[r]就算是我，行径奇怪也该有个限度吧！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+＠森长可
+那身打扮是怎么回事，大殿下！　哇哈哈哈哈哈哈哈！[r]泳装？　穿那样能游泳吗？
+[k]
+
+＠森长可
+那是什么，真好玩！　不行了，肚子好痛！[r]唔嘻哈哈哈哈哈哈哈哈！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠泳装信
+战斗未免太无聊了！　欣赏我的敦盛吧！[r]出发，向世界振翅高飞的天下布武！
+[k]
+
+[bgmStop BGM_EVENT_27 1.0]
+
+＠泳装信
+第[messageShake 0.03 3 3 0.7][#六天魔王波旬～盛夏～:Nobunaga THE Rock 'n' Roll]！！！！！
+[k]
+
+[messageOff]
+
+[cueSe NoblePhantasm_702900 NP_702900_9]
+[wt 1.0]
+
+[charaPut J 1]
+[charaEffect J bit_talk_fire_storm]
+[wt 0.3]
+[se ad249]
+[wt 1.7]
+[se bac37]
+[fowardEffect bit_talk_29]
+[wt 0.5]
+[fowardEffect bit_talk_sparks]
+[charaChange A 7029002 0 fade 0.5]
+
+[scene 10721 0.2]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_fire_storm]
+[fowardEffectStop bit_talk_explosion]
+[seStop ad249 0.5]
+[wt 2.5]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+＠长尾景虎
+什么！？　这难道是……结界吗！？[bgm BGM_EVENT_3 0.1]
+[k]
+
+＠长尾景虎
+而且仿佛限制了我的行动……！！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠家老玛修
+这是[line 3]对神性结界！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠李书文
+唔，看上去像是在胡闹，[r]实际上还是货真价实的魔王啊。
+[k]
+
+＠李书文
+这应该就是那家伙原本的力量吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠织田吉法师
+原来如此……如果不那样做，就无法维持自我吧。[r]虽说是我的罪业，但这还真难办呢。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠森长可
+唔？　只是稍微热了一点，没什么大不了的吧？[r]哇哈哈！　军神亲根本没打起干劲来呢！！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠长尾景虎
+你给我闭嘴！　但现在我确实无法自由行动。[r]玛修，这是对神性的特攻吗？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠家老玛修
+啊，嗯！　对我们并没有多大的效果，[r]但对身为毗沙门天化身的景虎小姐的效果应该十分巨大！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠长尾景虎
+这不算什么！　如果这样就能让我无法动弹的话，[r]我可就没法自信的宣称自己是越后军神了呢！
+[k]
+
+[charaFace F 5]
+
+＠长尾景虎
+我要上了哦！　速战速决！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[seStop ad450 0.4]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,349 @@
+
+
+＄94-06-28-07-2-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1009001 1 モードレッド]
+[charaSet B 4046000 1 エリザベート]
+[charaSet C 2031001 1 ナポレオン]
+[charaSet D 1012001 1 ベディヴィエール]
+[charaSet E 1026001 1 デオン]
+[charaSet F 2045000 1 ゼノビア]
+[charaSet G 25010000 1 モレー]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+[charaSet U 98115000 1 エフェクト用]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 136902]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1]
+
+[effect bit_talk_41_fs]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠A：モードレッド（ヤケッパチ）
+[f large]キ[messageShake 0.05 2 2 0.4]ャーエリチャーン！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[effectStop bit_talk_41_fs]
+[effectDestroy bit_talk_41_fs]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[charaEffect B bit_talk_sing_notes]
+
+＠エリザベート
+応援ありがとう～♪
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut B 2000,2000]
+[charaEffectStop B bit_talk_sing_notes]
+
+[cueSe SE_21 21_ade631]
+
+[se ad886]
+[se ad1041]
+[se ad14]
+[wt 1.0]
+[scene 136901 2.0]
+[wt 1.6]
+[seStop ad886 2.0]
+[seStop ad14 2.0]
+[wt 1.0]
+
+？1：はいクラレント
+？！
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠モードレッド
+あいよー、どっせい！
+[k]
+
+[messageOff]
+
+
+[cueSe NoblePhantasm_100900 NP_100900_5]
+[wt 0.8]
+[effect bit_talk_v_slash02]
+[wt 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[fadeout white 0.6]
+[wait fade]
+
+
+[cueSe NoblePhantasm_100900 NP_100900_7]
+[se ad828]
+[se ad14]
+
+[charaPut T 1]
+[charaPut U 1]
+[charaEffect U bit_talk_sand_dust_front_blk]
+[charaEffect T bit_talk_sand_dust_back_blk]
+[wt 1.5]
+
+[seStop ad14 5.0]
+[shake 0.05 3 3 3.5]
+[fadein white 3.0]
+[bgmStop BGM_EVENT_3 2.0]
+[wait fade]
+[wt 1.0]
+[charaEffectStop U bit_talk_sand_dust_front_blk]
+[charaEffectStop T bit_talk_sand_dust_back_blk]
+[wt 1.8]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[bgm BGM_EVENT_145 0.5 0.8]
+[wt 0.4]
+
+
+＠ナポレオン
+よし。これを繰り返せば、[r]変異した森からも早晩脱出できそうだ。
+[k]
+
+[charaFace C 8]
+
+＠ナポレオン
+問題はモードレッドの魔力が[r]保つかどうかだが……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadeinFSR A 0.1 2]
+
+[charaFace C 8]
+[charaFadeinFSL C 0.1 0]
+
+＠モードレッド
+心配するな。
+[k]
+
+＠モードレッド
+どうあれ勝負の結果だ。[r]コイツも応援の一環ってことで、
+[k]
+
+[charaFace A 2]
+
+＠モードレッド
+この森を突破するまでは[line 3][r]気合いで乗り切ってやらあ！
+[k]
+
+[charaFace C 6]
+
+＠ナポレオン
+おお、その意気やよし。[r]と言っても、１人じゃ辛かろう。
+[k]
+
+＠ナポレオン
+宝具による広域破壊が可能なのは、[r]オレも同じだ。
+[k]
+
+[charaFace C 3]
+
+＠ナポレオン
+オレたち２人で、[r]道を切り開くとするか！
+[k]
+
+[charaFace A 1]
+
+＠モードレッド
+よーし、競争だ競争！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ベディヴィエール
+では我々も手伝いましょう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠デオン
+そうだね。[r]何もしない訳にはいかない。
+[k]
+
+＠デオン
+私たちも全力で森を伐採する。[r]エリザベート・バートリーを守りながらね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠エリザベート
+それはつまり……。[wt 1.0][charaFace B 1][r][#私:アタシ]が[#お姫様:プリンセス]ってことかしら！
+[k]
+
+＠エリザベート
+……。[r]……。
+[k]
+
+[bgmStop BGM_EVENT_145 1.5]
+
+[charaFace B 4]
+
+＠エリザベート
+よね？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠デオン
+うん。[r]もちろんだとも、シンデレラ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+[bgm BGM_EVENT_4 0.1]
+
+＠エリザベート
+シンデレラ……！
+[k]
+
+
+[charaFace B 1]
+
+＠エリザベート
+さあ７人の妖精……じゃなくて、[r]７人の騎士？　イケメン？　いくわよ～♪
+[k]
+
+＠７人
+[charaTalk S]
+[f large]キャーエリチャーン！
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠ゼノビア
+カオスになってきたな……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadeinFSL G 0.1 0]
+
+[charaFace F 4]
+[charaFadeinFSR F 0.1 2]
+
+＠モレー
+[f large]キャーエリチャーン！
+[k]
+
+[charaFace F 5]
+
+＠ゼノビア
+おまえも言うのか！？
+[k]
+
+[charaFaceFade G 3 0.2]
+
+＠モレー
+……こほんこほん、げふげふ。
+[k]
+
+[charaFaceFade G 22 0.2]
+
+＠モレー
+ふ、ふふ、つい口がグリッセして。[r]なんというおバカな真似を。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠エリザベート
+バカな真似ではないと思うわ～♪[r]人はみんな、唄う生き物なのよ～♪
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 20]
+[charaFadein G 0.1 1]
+
+＠モレー
+こんなお気楽星人がいるパーティに、[r]あたしの陰謀策謀が覆されたと思うと泣ける……。
+[k]
+
+＠モレー
+その癖、[r]なんか真理突いているっぽいのもくやしい！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠エリザベート
+さあ、どんどん行くわよ[&子イヌ:子ジカ]！[r]アンタの体を取り戻すためにね！
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_4 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

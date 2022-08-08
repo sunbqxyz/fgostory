@@ -1,0 +1,881 @@
+
+
+＄94-06-28-09-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 98001000 1 マシュ]
+[charaSet C 3005001 1 エリザベート]
+[charaSet D 25010000 1 モレー]
+[charaSet E 6036000 1 李書文]
+[charaSet F 6036000 1 李書文_シルエット]
+[charaFilter F silhouette 00000080]
+
+[imageSet G back10000 1 1]
+[charaScale G 1.1]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[charaSet I 98115000 1 エフェクト用]
+[charaScale I 1.01]
+
+[charaPut H 2000,2500]
+[charaEffect H bit_sepia01_depth_fs]
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[charaSet B 1098124500 1 ダ・ヴィンチ]
+
+
+[scene 104100]
+
+[branch lblConf]
+[label lblNotClear]
+[charaSet B 5009001 1 ダ・ヴィンチ]
+
+[scene 135100]
+[label lblConf]
+
+[charaTalk depthOff]
+[charaDepth A 6]
+[charaDepth G 4]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠マシュ
+お帰りなさい、先輩！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+微小特異点の修復はこちらで確認できてるよ。[r]任務完了、ご苦労さま。
+[k]
+
+[charaFace B 4]
+
+＠ダ・ヴィンチ
+通信状況とサーヴァントの同行ミスについては、[r]こちらの不徳とするところだ。ごめんよ。
+[k]
+
+？1：両方とも、もしかしてモレーのせい？
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠モレー
+あ。多分そうですね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠モレー
+メルヘンをテーマに特異点を弄ったんですが、[r]その際にちょちょいと。
+[k]
+
+＠モレー
+我が暗黒の地母神を喚びやすいように[r]仕込んでたんで、そのせいではー？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+へええ……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠モレー
+あっ。
+[k]
+
+＠モレー
+そ、その……[r]すみませんでした……モレーと申します……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[charaPut G 1]
+[charaFadeTime G 0.2 0.5]
+＠マシュ
+（モレー……。[r]　まさか英霊ジャック・ド・モレー！）
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+あっはっは。[r]英霊モレー、どうしてカルデアに来たんだい？
+[k]
+
+
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadeinFSR C 0.1 2]
+
+[charaFace D 0]
+[charaFadeinFSL D 0.1 0]
+[bgmStop BGM_EVENT_77 1.5]
+
+＠エリザベート
+せっかくだから、[#私:アタシ]は[&子イヌ:子ジカ]と一緒に[r]戻ってきたんだけど……。
+[k]
+
+＠エリザベート
+……。
+[k]
+
+[bgm BGM_EVENT_146 0.1]
+
+[charaFace C 2]
+
+＠エリザベート
+ていうか、何でいるのアンタ！？
+[k]
+
+[charaFace D 23]
+
+＠モレー
+あー、あたしはですね……。
+[k]
+
+[charaFace D 21]
+
+＠モレー
+お伝えするのを忘れてたコトがあったので、[r]おまけでついてきた感じです。
+[k]
+
+＠モレー
+聖杯も特異点ももうないし、[r]そろそろ座に戻っちゃいますから、手短に。
+[k]
+
+？1：まだ言ってないこと……？
+？！
+
+[charaFace C 0]
+
+＠エリザベート
+ああ、思い出した。[r]結局、王子様って誰だったの？
+[k]
+
+[charaFace D 0]
+
+＠モレー
+それですそれ。
+[k]
+
+＠モレー
+ゼノビアさんと７人のイケメンが退去していく最中、[r]ばったり出逢って事情を聞いた次第で。
+[k]
+
+＠モレー
+それがですね？
+[k]
+
+[charaFace D 4]
+
+＠モレー
+どうもエリちゃんさん、[r]無意識に王子様を拒絶していたみたいでー。
+[k]
+
+[charaFace C 4]
+
+＠エリザベート
+ほえ？
+[k]
+
+＠エリザベート
+王子様なんてメルヘンの頂点に立つ存在、[r][#私:アタシ]は否定しないと思うけど……。
+[k]
+
+[charaFace D 0]
+
+＠モレー
+はい、だから多分……王子様の人選が悪かったのだと。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+それはやっぱり、顔が好みじゃなかったとかかい？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠エリザベート
+ノー！　断じてノー！[r]ルックスはあくまで一要素にすぎないわ！
+[k]
+
+[charaFace C 3]
+
+＠エリザベート
+そ、そりゃまあ好みはあるかもしれないけど、[r]王子様属性ってアドバンテージは凄いし……。
+[k]
+
+？1：大抵のサーヴァントなら王子様合うよね……
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+女性サーヴァントでもお似合いの方は[r]いくらでもいらっしゃいますし……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+うーん。[r]それじゃあ、結局誰なんだい？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠モレー
+という訳でもう大丈夫です！[r]出てきてください、王子様！
+[k]
+
+[bgmStop BGM_EVENT_146 1.5]
+
+＠？？？
+[charaTalk E]
+了解した。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠エリザベート
+こ、この渋カッコいい声は……！？
+[k]
+
+？1：ま、まさか……！
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth F 6]
+[charaDepth E 4]
+
+[charaFace F 0]
+[charaFadein F 0.7 1]
+[wt 1.4]
+
+[charaFace E 0]
+[charaFadein E 0.7 1]
+[wt 0.7]
+
+[charaFadeout F 0.7]
+[wt 1.1]
+
+[bgm BGM_EVENT_61 0.1]
+
+[charaTalk on]
+＠李書文
+[f large]儂だ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠エリザベート
+やっぱりーーー！
+[k]
+
+？1：エリちゃん！
+？！
+
+[charaFace C 5]
+
+＠エリザベート
+何よう。
+[k]
+
+？1：このイケメンのどこに文句があったのエリちゃん
+？2：王子様の資格充分じゃん……？
+？！
+
+＠エリザベート
+……だ、だってお祖父様としか思えないんだもの！[r]カッコいいかどうかで言えばカッコいいでしょうけど！
+[k]
+
+[charaFace C 2]
+
+＠エリザベート
+あと、どう見ても[r]王子様じゃなくて王様でしょ！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠李書文
+ぐうの音も出ないな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠モレー
+婚約破棄を宣言するより、[r]婚約破棄した王子様を説教する側ですよねー。
+[k]
+
+？1：まあ、そうだね……
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠李書文
+ついでに儂も孫としか思えん。[r]メルヘン、ロマンス、あまりに儂には縁遠い。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠エリザベート
+そもそも！[r]どうして、この人が[#私:アタシ]の王子様なワケ！？
+[k]
+
+＠エリザベート
+無意識にお爺ちゃんが[r]王子様だと考えていた……とか？
+[k]
+
+[charaFace C 2]
+
+＠エリザベート
+いや、そんなはずないわ！
+[k]
+
+＠エリザベート
+こうして向かい合っても、[r]王子様って感じが全くしないもの！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 25]
+[charaFadein D 0.1 1]
+
+＠モレー
+たぶんですけど……[r]特異点に来る直前に会ったとかじゃないですかー？
+[k]
+
+[messageOff]
+[se ad592]
+[seVolume ad592 0 0.6]
+[fadeout white 0.8]
+[bgmStop BGM_EVENT_61 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut I 2000,2500]
+[charaEffect I bit_talk_noise_gr]
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+[scene 104200]
+
+[branch lblConf2]
+[label lblNotClear2]
+[scene 105500]
+[label lblConf2]
+
+[charaPut H 1]
+[wt 1.0]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.2]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠エリザベート
+今年のハロウィンは～♪[r]何しようかしら～♪
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠李書文
+む。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠エリザベート
+ん？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠李書文
+そうか、ハロウィンが近い。[r]なら菓子を用意する必要があるか。
+[k]
+
+＠李書文
+助かった。ではな。
+[k]
+
+[messageOff]
+[se ad95]
+[charaMove E 50,0 0.4]
+[charaFadeout E 0.4]
+[seStop ad95 1.0]
+[wt 1.2]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠エリザベート
+はーい。
+[k]
+
+＠エリザベート
+何か分かんないけどいいことしちゃった？[r]いいカルマ積んじゃった？
+[k]
+
+＠エリザベート
+ん～♪[r]いいことしちゃったわ～♪
+[k]
+
+[messageOff]
+[se ad539]
+[se ad31]
+[charaPut I 0,4]
+[wt 0.4]
+
+[seStop ad539 0.1]
+[seStop ad31 0.1]
+[charaPut I 2000,2500]
+[charaEffectStop I bit_talk_noise_gr]
+[wt 0.8]
+[charaFace C 4]
+
+＠エリザベート
+ん……。[r]なんだか、誰かにどこかへ呼ばれたような……。
+[k]
+
+＠エリザベート
+（ふらふら）
+[k]
+
+[messageOff]
+[charaMove C -50,0 0.8]
+[charaFadeout C 0.7]
+[wt 1.6]
+
+[se ad592]
+[seVolume ad592 0 0.6]
+[fadeout white 0.8]
+[wait fade]
+
+[charaPut H 2000,2500]
+[charaEffectStop H bit_sepia01_depth_fs]
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+[scene 104100]
+[branch lblConf3]
+[label lblNotClear3]
+[scene 135100]
+[label lblConf3]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_7 0.6 1.0]
+[fadein white 1.5]
+[wait fade]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 25]
+[charaFadein D 0.1 1]
+＠モレー
+……で、エリちゃんは特異点へ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠エリザベート
+なにそれ！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠モレー
+ほら、夢なんて割とそんな感じでキャラ決まるでしょ？
+[k]
+
+＠モレー
+パルミラ帝国の特異点も、[r]夢とそう変わらなかったってこと。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+含蓄のある言葉、なのかなぁ。[r]う～ん？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠マシュ
+どうなんでしょう？[r]ただ、現実ではないという意味であれば……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+[bgmStop BGM_EVENT_7 2.0]
+
+＠モレー
+お、話が分かる子がいるじゃない？[wt 1.0][charaPut H 1][charaEffect H bit_talk_06 0,-100][wt 0.5][charaFace D 18][r]……って、あーもう時間切れかー。
+[k]
+
+[bgm BGM_EVENT_98 0.1]
+＠モレー
+まあその、あたしは特に？[r]あなたがたと良い縁を結んだ訳でもありませんので、
+[k]
+
+＠モレー
+もう二度と会うことなどは[line 3]
+[k]
+
+？1：また会おう
+？2：今度は味方で来てね、モレー
+？！
+
+[messageOff]
+[charaFace D 25]
+[wt 1.5]
+[charaFace D 11]
+
+[bgm BGM_EVENT_98 1.5 0.8]
+
+＠モレー
+……へえ？
+[k]
+
+[charaFace D 9]
+
+＠モレー
+面白いねー。[r]あ、皮肉じゃなくて、言葉通りの意味で。
+[k]
+
+[charaFace D 1]
+
+＠モレー
+まー、アレだ。[r]ドロドロの異端に“[#無辜:む　こ]”っちゃってるあたしだけど、
+[k]
+
+＠モレー
+ふさわしい覚悟があるなら、またお会いしましょうか。
+[k]
+
+＠モレー
+万が一、召喚された暁には、[r]あなたを守護する盾となりて努めましょう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 2000,2500]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠マシュ
+た、た、盾ですか！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+＠モレー
+ふっふふー。[r]これは期待が持てそうだねー。
+[k]
+
+[charaFaceFade D 8 0.2]
+
+＠モレー
+それでは～[#じゃあね:オ　ー　ボ　ワ]～。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[bgm BGM_EVENT_98 1.5 0.6]
+[charaSpecialEffect D flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect D]
+[charaEffectStop H bit_talk_06]
+[wt 1.5]
+
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠エリザベート
+……アレ、召喚されたらまた何かやらかすわよ。
+[k]
+
+？1：やらかす[&な:ね]……
+？！
+
+[charaFace C 0]
+
+＠エリザベート
+とはいえ……メルヘン特異点のお陰で、[r]また[#私:アタシ]のバリエーションも増えたワケだし。
+[k]
+
+＠エリザベート
+終わり良ければ全てよし。
+[k]
+
+[charaFace C 1]
+
+＠エリザベート
+メルヘンの最後は、[r]やっぱりハッピーエンドじゃなきゃね！
+[k]
+
+[charaFace C 0]
+[bgmStop BGM_EVENT_98 2.0]
+
+＠エリザベート
+それじゃあ最後に……。
+[k]
+
+[messageOff]
+[charaPut H 1]
+[se ad39]
+[charaEffect H bit_talk_radiallight02]
+[wt 1.5]
+
+[se ad966]
+[fadeout white 1.0]
+[wait fade]
+
+[charaPut H 2000,2500]
+[charaEffectStop H bit_talk_radiallight02]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaSet C 4046000 1 エリザベート]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[fadein white 1.5]
+[wait fade]
+[wt 1.0]
+[charaFaceFade C 15 0.2]
+[wt 0.4]
+
+[bgm BGM_EVENT_13 0.1]
+
+＠エリザベート
+[#私:アタシ]はプリンセス・ミュージカルアイドル！
+[k]
+
+
+＠エリザベート
+メルヘンの世界から来た、[r]過剰過激なエリザベート・シンデレラよ！
+[k]
+
+[charaFace C 10]
+
+＠エリザベート
+刃向かう敵は、ガラスの靴で切り刻むか[r][#南瓜:かぼちゃ]の馬車で挽き潰すわ！
+[k]
+
+[charaFace C 1]
+
+＠エリザベート
+というワケで、応援よろしくね！
+[k]
+
+？1：了解、こちらこそよろしく！
+？！
+
+[charaFaceFade C 14 0.2]
+
+＠エリザベート
+ええ、それじゃあ早速……。
+[k]
+
+[charaFaceFade C 15 0.2]
+
+＠エリザベート
+エリザベート・バートリー、[r]追加ニューバージョンお披露目ライブ[line 3]
+[k]
+
+[charaFaceFade C 1 0.2]
+
+＠エリザベート
+全員集めて、唄うわよー！！
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 3.0]
+[bgmStop BGM_EVENT_13 3.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

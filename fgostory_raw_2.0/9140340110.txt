@@ -1,0 +1,1944 @@
+
+
+
+＄91-40-34-01-1-0
+
+[soundStopAll]
+[enableFullScreen]
+
+
+
+
+
+[charaSet A 4034001 1 巴沙洛缪]
+[charaSet B 2025101 1 玛莉]
+[charaSet C 2025201 1 安妮]
+[charaSet D 2025001 1 玛莉＆安妮]
+[charaSet E 1098155400 1 黑胡子]
+
+[charaSet F 7004001 1 弗兰肯斯坦]
+[charaSet G 6019001 1 风魔小太郎]
+
+
+[scene 109601]
+[se ad37]
+[seVolume ad37 0 0]
+[fadein black 1.5]
+[seVolume ad37 1.5 1.0]
+[wait fade]
+[bgm BGM_EVENT_11 1.0]
+[wt 1.0]
+
+＠
+[line 3]财宝和梦想看似相似实则不同。
+[k]
+
+＠
+但凡海盗，[r]都会追求一攫千金。
+[k]
+
+
+＠
+只有兼具一些运气与才能之人，[r]才能获得宝物。
+[k]
+
+＠
+有海盗在恰好袭击的船上，[r]找到了正被运输的国宝。
+[k]
+
+＠
+有海盗在某座岛上，[r]找到了某位王的隐秘财宝。
+[k]
+
+＠
+大部分海盗什么都没得到，[r]连仅有的生命也被他人夺走了。
+[k]
+
+
+＠
+然而。[r]却没有任何人实现了梦想。
+[k]
+
+＠
+向往安定生活的海盗，[r]被卷入风暴般的战斗而死。
+[k]
+
+＠
+向往永恒繁华的海盗，[r]凄惨地被迫劳役，几年就死了。
+[k]
+
+＠
+从成为海盗的那刻起，[r]就几乎确定了将死于非命[line 3]
+[k]
+
+＠
+最终实现了梦想的人，[r]一个也没有。
+[k]
+
+[messageOff]
+
+[fadeout black 2.0]
+[seStop ad37 2.0]
+[bgmStop BGM_EVENT_11 2.0]
+[wait fade]
+
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+[scene 104200]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+
+[scene 105500]
+
+[label lblConf1]
+
+[wt 2.0]
+
+[pictureFrameTop cut063_cinema]
+
+[fadein black 2.0]
+[wait fade]
+
+
+[bgm BGM_EVENT_7 0.1]
+
+
+[charaTalk off]
+[charaFace F 1]
+[charaFace G 1]
+[charaFadeinFSL F 0.4 -256,-50]
+[charaFadeinFSR G 0.4 256,-50]
+[wt 1.5]
+
+[charaMoveReturnFSR G 256,-60 0.5]
+[wt 1.0]
+
+[charaMoveReturnFSL F -240,-50 0.5]
+[wt 1.0]
+
+＠巴沙洛缪
+……[r]……
+[k]
+
+[messageOff]
+
+[charaFace F 1]
+[charaMoveReturnFSL F -256,-40 0.2]
+[wt 0.4]
+[charaMoveReturnFSL F -256,-40 0.2]
+
+[charaFace G 3]
+[wt 0.3]
+[charaMoveFSR G 270,-50 0.3]
+[wt 0.3]
+[charaMoveFSR G 240,-50 0.5]
+[wt 0.5]
+[charaMoveFSR G 256,-50 0.5]
+[wt 0.5]
+
+[effect bit_talk_valentine_brilliant_fs]
+[se adm19]
+[wt 3.0]
+
+＠巴沙洛缪
+……话说，御主。[seStop adm19 1.0]
+[k]
+
+？1：……嗯，什么事？
+？！
+
+[messageOff]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[pictureFrame]
+
+[effectStop bit_talk_valentine_brilliant_fs]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠巴沙洛缪
+这只是我的胡言乱语，[r]希望你不要当真哦。
+[k]
+
+＠巴沙洛缪
+我原本是个[#型男:花花公子]，[r]我明白说这种话有违礼仪。
+[k]
+
+＠巴沙洛缪
+但即便如此。[r]我还是要说这类禁忌的话。
+[k]
+
+[charaFace A 4]
+
+＠巴沙洛缪
+因为现在的我已经因这些无比高贵而[r]惹人怜爱的事物，快要失去理智了……！
+[k]
+
+？1：是吗……
+？2：那我去把阿斯特赖亚叫来吧？
+？！
+
+[charaTalk A]
+[charaFace A 1]
+
+＠巴沙洛缪
+嗯，拜托了。[r]那么[line 3]
+[k]
+
+
+[charaFace A 2]
+＠巴沙洛缪
+（深呼吸。）
+[k]
+
+[messageOff]
+
+[charaTalk A]
+[charaFace A 0]
+
+[bgmStop BGM_EVENT_7 0.5]
+
+[se adm19]
+[cameraMove 0.1 0,-50 1.3]
+[charaMove A 0,-20 0.1]
+[effect bit_talk_valentine_brilliant_fs]
+[wt 0.5]
+
+＠巴沙洛缪
+[f large]好想被夹啊。
+[k]
+
+[messageOff]
+
+[seStop adm19]
+[effectStop bit_talk_valentine_brilliant_fs]
+[wt 0.5]
+
+[bgm BGM_EVENT_3 0.1]
+
+[se ad7]
+[wt 0.5]
+
+[se ad85]
+
+[fowardEffect bit_talk_43h_fs]
+
+[cameraMove 0.1 0,-80 1.3]
+[charaMove A 0,200 0.3]
+
+[charaSpecialEffect A erasure 1 0.3]
+[wt 0.1]
+
+[seStop ad479 0.1]
+[wt 0.2]
+
+＠巴沙洛缪
+（这招[line 3]我知道[line 3]）
+[k]
+
+＠
+[f large]背摔！！！[f -]
+[k]
+
+＠巴沙洛缪
+（原来人类被高速扔出去[r]　是这种感觉啊……）
+[k]
+
+＠巴沙洛缪
+（比坠入海中[r]　还要快……）
+[k]
+
+＠巴沙洛缪
+（来得及……做出缓冲动作吗……？）
+[k]
+
+＠巴沙洛缪
+（啊，就要激烈地[line 3]）
+[k]
+
+
+[messageOff]
+[charaRollMove A 0.1 180]
+[wt 0.1]
+
+[fowardEffectStop bit_talk_43h_fs]
+[charaPut A 0,-270]
+[charaSpecialEffect A appearanceReverse 1 0.3]
+[charaMove A 0,-610 0.3]
+
+[bgmStop BGM_EVENT_3 0.1]
+[wt 0.3]
+
+[flashin once 0.07 0.1 FFFFFFFF FFFFFF00]
+
+[fadeout black 0.3]
+
+[se adm23]
+[shake 0.02 4 4 0.3]
+
+[wait fade]
+
+[wt 0.5]
+
+[se ade175]
+[wt 0.5]
+
+[se ad6]
+[wt 0.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[seStop ad6 3.0]
+
+[charaSet F 4025000 1 哥伦布]
+[charaSet G 7005001 1 斯巴达克斯]
+
+[cameraMove 0.1 0,0 1.0]
+[charaRollMove A 0.1 0]
+
+[wt 3.0]
+
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+
+[scene 105800]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+
+[scene 106000]
+
+[label lblConf2]
+
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠巴沙洛缪
+……呼，恢复理智了……
+[k]
+
+？1：那就好。
+？！
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠黑胡子
+唔……[r]恕在下直言，你哪儿理智了？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠巴沙洛缪
+真没礼貌，黑胡子。[r]我绝对再也不会说想被夹之类的话了。
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace B 0]
+[charaFadeinFSL C 0.4 0]
+[charaFadeinFSR B 0.4 2]
+[wt 0.4]
+
+＠安妮
+靠理智是当不了海盗的哦。
+[k]
+
+[charaTalk B]
+[charaFace B 1]
+
+＠玛莉
+就算是笨蛋，也是不正经的比较好吧？
+[k]
+
+[charaFace B 0]
+
+
+＠玛莉
+……不过[#巴沙洛缪:这家伙]是另一个方向的笨蛋罢了。
+[k]
+
+[charaTalk C]
+[charaFace C 1]
+
+＠安妮
+说得也是。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠巴沙洛缪
+哈哈哈哈哈，冒昧且毫无礼貌可言。[r]确实很有海盗的风范。
+[k]
+
+
+[charaTalk A]
+[charaFace A 0]
+
+＠巴沙洛缪
+这话若非遮眸之人所说，[r]我的枪早就上膛了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace C 0]
+[charaFace B 0]
+[charaFadeinFSL C 0.1 0]
+[charaFadeinFSR B 0.1 2]
+
+＠玛莉
+……可是我们并没有遮眸呀？
+[k]
+
+[bgmStop BGM_EVENT_2 0.1]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[se bac56]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠巴沙洛缪
+嗯，所以我已经上膛了。
+[k]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFace B 0]
+[charaFadeinFSL C 0.1 0]
+[charaFadeinFSR B 0.1 2]
+[wt 0.1]
+
+[se bac56]
+
+
+＠安妮
+再不放下枪的话，我们就要把你打飞了哦。
+[k]
+
+
+[charaTalk B]
+[charaFace B 2]
+
+[se ad51]
+
+＠玛莉
+求之不得！
+[k]
+
+？1：到～此～为～止～！
+？2：住～手～！
+？！
+
+[bgmStop BGM_EVENT_3 0.5]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaDepth C 1]
+[charaDepth A 2]
+[charaDepth B 1]
+
+[charaTalk off]
+
+[charaFace C 4]
+[charaFace A 4]
+[charaFace B 4]
+[charaFadeinFSL C 0.1 0]
+[charaFadein A 0.1 1]
+[charaFadeinFSR B 0.1 2]
+
+＠三人
+好～。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠黑胡子
+真是的。
+[k]
+
+＠黑胡子
+你们几个脑子里的螺丝是不是太松了点。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠玛莉
+你又没阻止我们，有什么资格这么说。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠黑胡子
+因为看起来很有趣啊！[r]对海盗来说，有趣比生命更重要吧。
+[k]
+
+[charaTalk E]
+[charaFace E 0]
+
+＠黑胡子
+话说巴沙洛。[r]梦想、财宝什么的是指什么？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠巴沙洛缪
+我的意思是。
+[k]
+
+＠巴沙洛缪
+我们不都是那样的吗？[r]不都是没有实现梦想就死了吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaDepth C 1]
+[charaDepth E 2]
+[charaDepth B 1]
+
+[charaFace C 4]
+[charaFace E 6]
+[charaFace B 4]
+[charaFadeinFSL C 0.1 0]
+[charaFadein E 0.1 1]
+[charaFadeinFSR B 0.1 2]
+
+
+＠三人
+啊……
+[k]
+
+[charaTalk on]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛莉
+我和安妮的下场确实说不上很好。
+[k]
+
+[charaTalk B]
+[charaFace B 4]
+
+＠玛莉
+我是死在牢里的。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠安妮
+我虽然活了下来，[r]但作为海盗，那种结果与死无异。
+[k]
+
+＠安妮
+黑胡子则是遭到了斩首。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠黑胡子
+……这个嘛。[r]何况那本来就是厚颜无耻的奢望吧。
+[k]
+
+＠黑胡子
+掠夺杀人的家伙，[r]还指望实现梦想什么的[line 3]
+[k]
+
+
+[charaTalk E]
+[charaFace E 1]
+
+＠黑胡子
+啊，不，慢着。[r]还真有，就是那家伙，那个妖怪牙龈男。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaDepth C 1]
+[charaDepth A 2]
+[charaDepth B 1]
+
+[charaTalk off]
+
+[charaFace C 4]
+[charaFace A 4]
+[charaFace B 4]
+[charaFadeinFSL C 0.1 0]
+[charaFadein A 0.1 1]
+[charaFadeinFSR B 0.1 2]
+
+
+＠三人
+啊……
+[k]
+
+[messageOff]
+
+[wipeout circleOut 1.0 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[scene 106800]
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+[wt 0.1]
+
+[wipein circleIn 1.0 1.0]
+[wait wipe]
+
+
+＠哥伦布
+耶～（胜利手势）！
+[k]
+
+[messageOff]
+
+[wt 1.0]
+
+[wipeout circleOut 1.0 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+
+[scene 105800]
+
+[branch lblConf3]
+
+[label lblNotClear3]
+
+
+[scene 106000]
+
+[label lblConf3]
+
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wipein circleIn 1.0 1.0]
+[wait wipe]
+
+＠巴沙洛缪
+……那家伙的问题还是先搁置吧。[r]反正他迟早会遭报应的。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠黑胡子
+报应啊……
+[k]
+
+[messageOff]
+
+
+[charaDepth G 1]
+[charaDepth F 2]
+
+[bgm BGM_EVENT_7 0.1]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[pictureFrameTop cut063_cinema]
+
+[charaTalk off]
+
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+
+[scene 105900]
+
+[branch lblConf4]
+
+[label lblNotClear4]
+
+
+[scene 105600]
+
+[label lblConf4]
+
+
+[charaFace F 10]
+[charaFadein F 0.1 100,-50]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaMoveScale G 0.8 0.1]
+[wt 0.1]
+[charaPut G -200,-150]
+[charaFadeTime G 0.8 1.0]
+
+
+＠黑胡子
+比方说不小心认识了斯巴达克斯，[r]然后被认定为是压迫者？
+[k]
+
+[cameraMove 0.5 20,-10 1.05]
+[charaMove G -200,-125 0.5]
+[charaMoveScale G 0.88 0.5]
+[wt 0.5]
+
+＠巴沙洛缪
+没错没错。
+[k]
+
+[cameraMove 0.5 35,-15 1.10]
+[charaMove G -200,-95 0.5]
+[charaMoveScale G 0.95 0.5]
+[wt 0.5]
+
+＠巴沙洛缪
+压迫者数值不断提升，[r]仿佛马上就要大爆炸。
+[k]
+
+[cameraMove 0.5 50,-20 1.15]
+[charaMove G -200,-75 0.5]
+[charaMoveScale G 1.03 0.5]
+[wt 0.5]
+
+＠安妮
+嗯嗯，原来如此。[r]然后现在他已经即将被斯巴达克斯拍肩膀了？
+[k]
+
+[cameraMove 0.5 60,-30 1.2]
+[charaMove G -200,-50 0.5]
+[charaMoveScale G 1.1 0.5]
+[wt 0.5]
+
+＠玛莉
+哈哈哈，如果真是那样可就太好了～！
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[pictureFrame]
+
+[cameraHome 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+
+[charaSet F 6029001 1 望月千代女]
+[charaSet G 99502600 1 玛修]
+[charaSet H 98111500 1 通信用特效]
+
+[charaTalk on]
+
+[branchQuestNotClear lblNotClear5 3000303]
+
+
+[scene 105800]
+
+[branch lblConf5]
+
+[label lblNotClear5]
+
+[scene 106000]
+
+[label lblConf5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+
+＠巴沙洛缪
+好了，先把这个话题放一边吧。
+[k]
+
+＠巴沙洛缪
+现在的我们与生前不同，[r]正在帮助他人吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace B 0]
+[charaFadeinFSL C 0.1 0]
+[charaFadeinFSR B 0.1 2]
+
+＠安妮
+嗯，总体是这样没错。
+[k]
+
+＠安妮
+御主，我和玛莉有帮上什么忙吗？
+[k]
+
+？1：当然！
+
+[charaFace C 3]
+
+＠安妮
+哎呀，是吗……
+[k]
+
+[charaFace C 1]
+
+＠安妮
+哎呀……哎呀哎呀……[r]唔呵呵呵呵。
+[k]
+
+[charaFace B 3]
+
+＠玛莉
+哎，原来是这样。[r]哎……
+[k]
+
+[charaFace B 1]
+
+＠玛莉
+呵呵……嘿嘿……呵呵呵。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠黑胡子
+这些家伙还真对淳朴的对象[r]毫无抵抗能力呢……
+[k]
+
+＠黑胡子
+她们要是喝了蒸馏水怕是会死掉吧。
+[k]
+
+[charaFace E 5]
+
+＠黑胡子
+真的没问题吗？[r]她们真的能在这个热岛时代活下去吗？
+[k]
+
+？2：我一直很感谢你们哦。
+
+＠安妮
+原来如此，感谢……
+[k]
+
+[charaFace C 1]
+
+＠安妮
+那如果能将这份感谢，[r]化作具体的礼物送给我，我一定会非常开心♡♡♡
+[k]
+
+[charaMoveScale C 1.2 1.5]
+[charaMoveFSL C -250,-10 1.5]
+
+
+＠安妮
+具～体～说～来～[line 3]
+[k]
+
+[charaTalk B]
+[charaFace B 0]
+
+＠玛莉
+安妮，停，如果你不停下，[r]除我以外的其他人就会来阻止你了。
+[k]
+
+[charaTalk C]
+[charaFace C 4]
+
+＠安妮
+……好吧。
+[k]
+
+[messageOff]
+
+[charaMoveScale C 1.0 0.5]
+[charaMoveFSL C -250,0 0.5]
+[wt 1.2]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠黑胡子
+HAHAHA。
+[k]
+
+[charaFace E 5]
+
+＠黑胡子
+意思是不想被在下等人触碰？
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace C 0]
+[charaFace B 0]
+[charaFadeinFSL C 0.1 0]
+[charaFadeinFSR B 0.1 2]
+[wt 0.5]
+
+[charaMoveFSL C -256,-15 0.3]
+[charaMoveFSR B 256,-15 0.3]
+[wt 0.5]
+[charaMoveFSL C -256,0 0.3]
+[charaMoveFSR B 256,0 0.3]
+
+
+＠安妮＆玛莉
+嗯。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠黑胡子
+就知道～。
+[k]
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠巴沙洛缪
+好了，暂且搁置这个话题吧。
+[k]
+
+＠巴沙洛缪
+总之啦，[r]我觉得哦？
+[k]
+
+[charaTalk A]
+[charaFace A 1]
+
+＠巴沙洛缪
+现在的我们总可以实现梦想了吧！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠黑胡子
+唔唔。
+[k]
+
+[charaFace E 2]
+
+＠黑胡子
+那你的梦想是什么？[r]财宝？　女人？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠巴沙洛缪
+遮眸。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠黑胡子
+在零点几秒内完成了回答。
+[k]
+
+？1：不假思索……
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛莉
+可是啊。[r]你具体想做什么呢？
+[k]
+
+
+＠玛莉
+想玩赏？　想蹂躏？[r]想欣赏？　想保护？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠巴沙洛缪
+都对，但又都不对……
+[k]
+
+＠巴沙洛缪
+唔。
+[k]
+
+[charaFace A 4]
+
+＠巴沙洛缪
+冷静思考一下，[r]我究竟想对他们或她们做什么呢……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+[bgm BGM_EVENT_7 1.0 0.0]
+
+＠黑胡子
+还得先从这个问题开始思考吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠巴沙洛缪
+你不也差不多嘛。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠黑胡子
+啊？[se ad51]
+[k]
+
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+
+＠巴沙洛缪
+唔，我可不会放过你的杀气哦。[se bac56]
+[k]
+
+
+？1：好啦，住手啦。
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+[bgm BGM_EVENT_7 1.0 1.0]
+
+＠黑胡子
+嘁。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠安妮
+哎呀哎呀。
+[k]
+
+[charaFace C 1]
+
+＠安妮
+黑胡子船长，难道说你那个了？[r]想久违地做混沌恶的那种事？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠黑胡子
+啊～……这个嘛，是这样吗？[r]在下久违地想去抢夺东西。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛莉
+关键时候还是把他的灵基冻结起来比较好哦，[r]御主。
+[k]
+
+＠玛莉
+要是波及迦勒底就不好了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠黑胡子
+哎～，太不讲理了吧～。
+[k]
+
+？1：只要不出事就没问题。
+？！
+
+[charaFace E 2]
+
+＠黑胡子
+噢，谢啦。[r]不愧是在下的御主是也。
+[k]
+
+[charaDepth F 1]
+[charaDepth E 2]
+
+[charaFace F 6]
+[charaPutFSR F 2]
+[charaFadeTime F 0.4 0.8]
+
+[charaTalk E]
+[charaFace E 6]
+
+＠黑胡子
+……话说为什么最近在下一说是也，[r]某个女忍者就向在下投来极为严厉的视线呢？
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠巴沙洛缪
+大概是因为偏偏和黑胡子语尾撞车，[r]所以在纠结是杀了你还是自己去死吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠黑胡子
+啊～，果然是这样呀～！[r]那在下大概会被杀死吧～！
+[k]
+
+[messageOff]
+
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[se ad13]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.2]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+
+＠玛修
+御主，抱歉在休息时前来打扰。[r]能说两句吗？
+[k]
+
+
+？1：可以啊，怎么了？
+？！
+
+＠玛修
+事实上[line 3]
+[k]
+
+[messageOff]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaPut H 1200,1200]
+
+[charaEffectStop H bit_talk_10_LowLevel]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[scene 10000]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[effect bit_talk_07_fs]
+[se ad12]
+[wt 4.0]
+[fadeout white 1.0]
+[wait fade]
+[wt 2.0]
+
+
+[charaSet E 4008002 1 黑胡子]
+[charaSet F 98104300 1 鬼魂]
+
+[scene 107200]
+[wt 0.1]
+[se ad37]
+[seVolume ad37 0 0]
+[fadein white 1.0]
+[seVolume ad37 1.0 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+
+[bgm BGM_EVENT_12 0.1]
+[seVolume ad37 0.5 0.5]
+
+＠巴沙洛缪
+[f large]一起唱！！
+[k]
+
+[charaFace A 1]
+
+＠巴沙洛缪
+刘海、遮眼、呀嗬、呀嗬♪
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[bgmStop BGM_EVENT_12 0.3]
+
+＠黑胡子
+别唱了别唱了。
+[k]
+
+[charaFace E 1]
+
+＠黑胡子
+哎呀，话说只因为是海上微小特异点，[r]就成了海盗大集合！
+[k]
+
+[charaFace E 5]
+
+＠黑胡子
+这设定太偷懒了吧？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[seStop ad37 1.0]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFace B 0]
+[charaFadeinFSL C 0.1 0]
+[charaFadeinFSR B 0.1 2]
+
+
+＠安妮
+可我还挺享受这种不用拘束的氛围哦。[r]当然我不是指自己不擅长应付其他人啦。
+[k]
+
+[charaTalk B]
+[charaFace B 4]
+
+＠玛莉
+但德雷克和伊阿宋没来呢，[r]真遗憾。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠巴沙洛缪
+哈哈哈哈哈。[r]不过放眼望去到处都是海啊！
+[k]
+
+？1：真漂亮呢。
+
+＠巴沙洛缪
+的确。
+[k]
+
+[charaFace A 0]
+
+＠巴沙洛缪
+但千万不能忘记海洋的可怕哦。[r]御主。
+[k]
+
+
+＠巴沙洛缪
+人类无法饮用海水，[r]也无法长时间浸泡在海水中。
+[k]
+
+＠巴沙洛缪
+虽然有可捕捞的鱼，[r]但也有我们都可能遭捕食的鲨鱼。
+[k]
+
+＠巴沙洛缪
+我们生命是与遮眸一起[r]来自海洋的[line 3]
+[k]
+
+[charaFace A 4]
+
+＠巴沙洛缪
+但我们已经无法在这片海洋中生存了。
+[k]
+
+？2：好可怕呢。
+
+[charaFace A 4]
+
+＠巴沙洛缪
+嗯嗯，[r]海洋确实很可怕。
+[k]
+
+[charaFace A 1]
+
+＠巴沙洛缪
+不过好好看看这里的风景吧，御主。
+[k]
+
+＠巴沙洛缪
+一望无际的广阔水平线……[r]闪耀着美丽翠绿色的大海……
+[k]
+
+＠巴沙洛缪
+除了没有遮眸以外，[r]已经很完美了吧？
+[k]
+
+？！
+
+[charaFace A 0]
+
+＠巴沙洛缪
+总之，海洋是可怕的，海洋是美丽的。
+[k]
+
+
+＠巴沙洛缪
+由于被这种相反的要素吸引[r]而丢掉了性命的人不计其数。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠黑胡子
+话说，巴沙洛。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠巴沙洛缪
+什么事，黑胡子。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠黑胡子
+这艘船的船长是谁？[wt 0.5][charaFace E 1][r]应该是在下吧？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠巴沙洛缪
+当然是御主啦。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠黑胡子
+哎～。
+[k]
+
+
+
+[charaFace E 0]
+
+＠黑胡子
+为了夺回船长之位，在下能发动叛乱吗？[r]御主，能把脑袋给我吗？
+[k]
+
+？1：不要。
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+
+
+＠巴沙洛缪
+要是敢叛乱的话，我会把你装进木桶扔进海里哦？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFace B 5]
+[charaFadeinFSL C 0.1 0]
+[charaFadeinFSR B 0.1 2]
+
+
+＠安妮
+扔下去前要先打穿你的两个膝盖哦。
+[k]
+
+[charaTalk B]
+
+＠玛莉
+打穿膝盖前要先让你的内脏跑出来哦。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠巴沙洛缪
+……说起来，你今天很奇怪呢，黑胡子。
+[k]
+
+
+＠巴沙洛缪
+当然，我知道你是个[r]不能掉以轻心的笨蛋[line 3]
+[k]
+
+
+[charaFace A 0]
+
+＠巴沙洛缪
+但今天也太过火了吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace B 0]
+[charaFadeinFSL C 0.1 0]
+[charaFadeinFSR B 0.1 2]
+
+＠安妮
+是啊。
+[k]
+
+[charaFace C 4]
+
+
+＠安妮
+我觉得这是『如果不偶尔搞点事的话，[r]  你们就会忘记在下是海盗这码事了！』
+[k]
+
+[charaFace C 0]
+
+＠安妮
+之类的青春期海盗综合征。
+[k]
+
+[charaTalk B]
+[charaFace B 1]
+
+＠玛莉
+没错没错。[r]我本打算枪只要一上膛，我就砍了他的头。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠黑胡子
+噢，噢噢。[wt 0.5][charaFace E 0][r]……在下确实有些奇怪是也。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠巴沙洛缪
+没办法。[r]黑胡子，转过去。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠黑胡子
+呃。[r]打算趁在下背对你的时候射杀？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠巴沙洛缪
+怎么可能嘛。[r]快，向后转。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠黑胡子
+好啦好啦。[r]这样吗[line 6][wt 0.3][charaFace E 2]咯噗哇啊！？
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_7 0.1]
+
+
+[fowardEffect bit_talk_14]
+
+[wt 0.3]
+
+
+[se bac11]
+[charaMove E -1000,0 0.3]
+
+[wt 0.5]
+
+[shake 0.1 3 3 1.0]
+[se adm70]
+[wt 1.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFace B 0]
+[charaFadeinFSL C 0.1 0]
+[charaFadeinFSR B 0.1 2]
+
+＠安妮
+噢噢～高击打点的飞踢。
+[k]
+
+[charaTalk B]
+[charaFace B 0]
+
+
+＠玛莉
+黑胡子像保龄球的球瓶那样飞出去了。
+[k]
+
+[charaFace B 1]
+
+＠玛莉
+也好。
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaDepth F 1]
+[charaDepth E 2]
+
+[charaTalk depthOff]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFace F 0]
+[charaPut E 0,-500 0.1]
+[charaPut F -250,-500 0.1]
+[wt 0.1]
+
+[se ad297]
+[seVolume ad297 0.1 0.5]
+
+[charaMove E 0,0 0.3]
+[charaMove F -250,0 0.3]
+[charaFadeTime E 0.1 1.0]
+[charaFadeTime F 0.1 1.0]
+
+[bgm BGM_EVENT_3 0.3]
+[wt 0.3]
+
+[seStop ad297 0.3]
+[wt 0.5]
+
+＠黑胡子
+哪里好了！[r]一丁点也不好！　不好！
+[k]
+
+[messageOff]
+
+[charaTalk F]
+[se ad21]
+[wt 2.0]
+
+？1：……旁边，旁边！！
+
+[charaTalk depthOn]
+
+[charaTalk E]
+[charaFace E 0]
+
+＠黑胡子
+哈？　旁边？
+[k]
+
+[charaFace E 3]
+
+＠黑胡子
+难道旁边有在下喜欢的[r]身材娇小的可爱少女？
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠巴沙洛缪
+只有体格巨大性别不明的鬼魂。
+[k]
+
+？2：……你身边的那位是？
+
+[charaTalk depthOn]
+
+[charaTalk E]
+[charaFace E 4]
+[charaMove E 20,0 0.3]
+[wt 0.5]
+
+＠黑胡子
+哎，这位吗？
+[k]
+
+
+[charaFace E 0]
+
+＠黑胡子
+唔，这位大概是在下的守护灵吧？[r]应该是？　保护我的？　那种？
+[k]
+
+[charaFace E 4]
+
+＠黑胡子
+……还是说只是个恶灵？
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠巴沙洛缪
+我觉得那只是个恶灵哦，黑胡子。
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+[charaFadeinFSL F 0.1 0]
+
+＠黑胡子
+原来如此。[r]难怪心情痛快多了！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠巴沙洛缪
+……但我们就不得不为此[r]来一场额外的战斗了！
+[k]
+
+[charaFace A 2]
+
+＠巴沙洛缪
+好，御主。[r]不好意思，但请您指示！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

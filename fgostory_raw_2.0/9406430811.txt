@@ -1,0 +1,669 @@
+
+
+＄94-06-43-08-1-1
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5050000 1 サンタマルタ]
+[charaSet B 2001002 1 エミヤ]
+[charaSet C 4011001 1 ブーディカ]
+[charaSet D 3047001 1 パーシヴァル]
+[charaSet E 7016001 1 タマモキャット]
+[charaSet F 99502600 1 マシュ]
+[charaSet G 1098198000 1 スカサハ＝スカディ]
+[charaSet H 5039000 1 エフェクト用]
+[charaSet L 1098183600 1 エネミー]
+[charaSet M 1098183600 1 エネミー]
+[charaSet N 1098183600 1 エネミー]
+
+[sceneSet J 10000 1]
+[charaScale J 1.01]
+[sceneSet K 10000 1]
+[charaScale K 1.01]
+
+[charaDepth L 3]
+[charaDepth M 4]
+[charaDepth N 2]
+
+[scene 140600]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk off]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+[charaFace M 0]
+[charaFadeinFSR M 0.1 306,0]
+[charaFace N 0]
+[charaFadeinFSL N 0.1 -306,0]
+[se ad22]
+[wt 1.0]
+[seStop ad22 0.3]
+[charaSpecialEffect L enemyErasure 1 1.8]
+[charaSpecialEffect M enemyErasure 1 1.8]
+[charaSpecialEffect N enemyErasure 1 1.8]
+[se ad52]
+[wait charaSpecialEffect L]
+[wait charaSpecialEffect M]
+[wait charaSpecialEffect N]
+[wt 1.0]
+
+
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠ブーディカ
+はい突破！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠タマモキャット
+心躍る寒々しさにも慣れた。[r]我が肉球でかき氷にされたい獣はもういないか？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaDepth E 6]
+[charaDepth A 5]
+[charaTalk depthOff]
+
+[charaTalk A]
+[charaFace E 0]
+[charaFace A 0]
+[charaFadein E 0.1 0,0]
+[charaFadeinFSR A 0.1 306,0]
+[charaMoveFSR A 256,0 0.5]
+[wt 0.5]
+
+＠サンタマルタ
+肉球、しもやけしてない？[r]大丈夫？
+[k]
+
+[messageOff]
+[charaTalk E]
+[charaFace E 5]
+[se ad7]
+[charaMove E -256,0 0.2]
+[wt 0.4]
+
+＠タマモキャット
+おっと気を付けるのだ！[r]不用意に肉球に触れるイズデッドダイ！
+[k]
+
+[charaFace A 2]
+＠サンタマルタ
+！？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ブーディカ
+どうどう。[r]まだ寒さでテンション上がってない、キャット？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 0.9]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+[wt 1.0]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad13]
+[charaPut H 0,0]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.2]
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+
+＠マシュ
+[line 3]先輩！
+[k]
+
+[bgm BGM_EVENT_70 0.1]
+＠マシュ
+状況解析、終了しました！[r]大変長らくお待たせいたしました、皆さん。
+[k]
+
+＠マシュ
+微弱なものですが……[r]地下倉庫に、聖杯の反応が検知できました！
+[k]
+
+？1：聖杯！？
+
+[charaFace F 2]
+
+＠マシュ
+はい！
+[k]
+
+[charaFace F 0]
+
+？2：地下倉庫ってここのことだよね？
+
+[charaFace F 0]
+＠マシュ
+はい、その通りです。
+[k]
+
+？！
+
+＠マシュ
+詳細までは判明していませんが、[r]恐らく、地下に格納した聖杯と……
+[k]
+
+
+＠マシュ
+偶然、スカサハ＝スカディさんのルーンで活性化した[r]地下食料保管庫が結合状態にあるようです。
+[k]
+
+[charaFadeout F 0.1]
+[charaPut H 12000,12000]
+[wt 0.1]
+[charaTalk B]
+
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠エミヤ
+……理解はできる。[r]納得もだ。
+[k]
+
+
+＠エミヤ
+氷結エネミーが発生していた理由が、[r]聖杯ということだな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+[charaPut H 0,0]
+＠スカサハ＝スカディ
+その通りだ。[r]……うっかりしていた。すまぬ。
+[k]
+
+？1：毎回飛んでいった先の……
+？2：食材エリアにいたエネミーは？
+
+？！
+
+
+[charaFace G 0]
+＠スカサハ＝スカディ
+あれは私がルーンで自動設計したモノだ。[r]スフィンクス以外はな。
+[k]
+
+＠スカサハ＝スカディ
+本来はエネミーではなく、[r]自律稼働するので運搬が便利な存在のはずが……。
+[k]
+
+[charaFadeout G 0.1]
+[charaPut H 12000,12000]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠パーシヴァル
+成る程。[r]食材が歩いてくれるなら、それは便利だ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[charaPut H 0,0]
+＠スカサハ＝スカディ
+それがおまえたちに襲いかかる羽目になった。[r]よもや、聖杯の悪戯とは。
+[k]
+
+[charaFace G 4]
+
+＠スカサハ＝スカディ
+私の不徳だ。すまぬ。
+[k]
+
+？1：わざとやった訳じゃないですし
+
+[charaFace G 6]
+
+＠スカサハ＝スカディ
+……すまぬ、すまぬ。
+[k]
+
+[charaFadeout G 0.1]
+[charaPut H 12000,12000]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠サンタマルタ
+スカディさん……。
+[k]
+
+？2：カルデアではままあることです、どんまい！
+
+[charaFace G 6]
+
+＠スカサハ＝スカディ
+……ん……。
+[k]
+
+[charaFadeout G 0.1]
+[charaPut H 12000,12000]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠サンタマルタ
+優しいのね、マスター。[r]それでこそだわ。お姉さんは鼻が高いです。
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ブーディカ
+あっ、そうだ。[r]ボスがナビの性質に似た傾向だったじゃない？
+[k]
+
+＠ブーディカ
+そういうデザインになったのも、[r]聖杯のせいなんじゃない？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠エミヤ
+だろうな。
+[k]
+
+[charaFace B 4]
+
+＠エミヤ
+ファラオの冬の宮殿となった領域だけは、[r]聖杯も手を出せなかったようだが……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠パーシヴァル
+聖杯[line 3]
+[k]
+
+[charaFace D 4]
+＠パーシヴァル
+カルデアの獲得してきた聖杯というのは、[r]なんというか、難儀なものが多いようですね。
+[k]
+
+＠パーシヴァル
+いやはや……。[r]なんとも……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠サンタマルタ
+ふむふむ。なぁーるほど。
+[k]
+
+[charaFace A 7]
+＠サンタマルタ
+……。[r]……。
+[k]
+
+[charaFace A 0]
+＠サンタマルタ
+お姉さん、大体わかったわ。[r]聖杯っていうのは危ないモノなのね？
+[k]
+
+＠サンタマルタ
+スカサハ＝スカディさんの好意をねじ曲げて、[r]襲いかかってくるエネミーを作り上げちゃって……。
+[k]
+
+[charaFace A 8]
+＠サンタマルタ
+そんなの放っておけないわ。[r]お姉さん、ちょっと怒ってます。
+[k]
+
+[messageOff]
+[wt 0.3]
+
+？1：危ないといえば危ないかも……。
+？2：……。
+？！
+
+[wt 0.4]
+
+？1：……聖杯、元のマルタさん的にはどうなんだろう
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠エミヤ
+確かに、妙な具合になっているな。
+[k]
+
+＠エミヤ
+元の霊基であれば、[r]まずしない言い回しだ。
+[k]
+
+＠エミヤ
+聖杯。その由来は幾つかあるが、[r]アーサー王伝説などの聖杯伝説にあっては……
+[k]
+
+＠エミヤ
+[#救世主の血を受けた器]であり、[r]万能の願望機であるという。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠サンタマルタ
+万能の……願望機？
+[k]
+
+＠サンタマルタ
+救世主？
+[k]
+
+[messageOff]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_70 0.5]
+[se ad592]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 141600]
+[wt 0.3]
+
+[fadein white 0.3]
+[wait fade]
+
+[wt 0.5]
+
+[fadeout white 0.3]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+[scene 140600]
+[wt 0.3]
+
+[fadein white 0.5]
+[wait fade]
+
+[wt 0.4]
+
+[charaFace A 5]
+[bgm BGM_EVENT_129 0.1]
+
+＠サンタマルタ
+あ[line 3]
+[k]
+
+[messageOff]
+[charaMove A 0,-50 0.4]
+[wt 0.2]
+[charaFadeout A 0.4]
+[wt 0.4]
+[se ade401]
+[wt 0.5]
+
+？1：マルタさん！
+？！
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠ブーディカ
+マルタ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 0,-50]
+[charaMove A 0,0 0.7]
+[charaShake A 0.1 5 0 0.7]
+[wt 0.8]
+
+
+＠サンタマルタ
+だ、大丈夫、ちょっとふらついただけ。[r]ほんと大丈夫……。
+[k]
+
+＠サンタマルタ
+でもなんだろう……[r]なんだか、少しだけ、記憶が繋がった感じだわ。
+[k]
+
+＠サンタマルタ
+聖杯……聖杯……[line 3]
+[k]
+
+
+[messageOff]
+[charaFace A 6]
+[wt 0.4]
+[overlayFadein J 0.1 0,-800]
+[overlayFadein K 0.1 0,800]
+[charaMove J 0,-745 0.5]
+[charaMove K 0,745 0.5]
+[wt 0.7]
+
+
+＠サンタマルタ
+聖杯。[r]聖なるさかずき。
+[k]
+
+＠サンタマルタ
+それは……
+[k]
+
+
+＠サンタマルタ
+尊いもの、大切なもの。[r]そのへんに[#放:ほう]ったりしてはいけない特別な器。
+[k]
+
+
+＠サンタマルタ
+[#地下:こ　こ]で悪さをしている聖杯。[r]それは、本物なの……？
+[k]
+
+＠サンタマルタ
+本当に聖なる杯？
+[k]
+
+＠サンタマルタ
+いいえ、本物かどうかは分からないけど、[r]そう[#謳:うた]っているのなら！
+[k]
+
+[charaFace A 8]
+＠サンタマルタ
+放っておけない！[r]放っておいてはいけない！
+[k]
+
+
+[messageOff]
+[charaMove J 0,-800 0.5]
+[charaMove K 0,800 0.5]
+[wt 0.5]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[wt 0.5]
+
+[charaFace A 4]
+＠サンタマルタ
+どうしましょう、どうしましょう！
+[k]
+
+[messageOff]
+[charaMoveReturn A 10,0 0.6]
+[wt 0.7]
+[charaMoveReturn A -10,0 0.9]
+[wt 1.0]
+[charaMoveReturn A 0,0 0.5]
+[wt 0.6]
+[messageOff]
+[charaMoveReturn A 10,0 0.6]
+[wt 0.7]
+[charaMoveReturn A -10,0 0.9]
+[wt 1.0]
+[charaMoveReturn A 0,0 0.5]
+[wt 0.6]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ブーディカ
+落ち着いて落ち着いて、[r]はい、どうどう。
+[k]
+
+＠ブーディカ
+記憶はぼんやりしたままだけど、[r]聖杯が特別なモノだってコトは思い出した感じ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠エミヤ
+まがりなりにも聖女マルタの影法師[line 3]英霊だ。[r]救世主に関わる器となれば慌てもするだろう。
+[k]
+
+[messageOff]
+[charaFace B 0]
+[wt 1.0]
+[charaFace B 5]
+
+＠エミヤ
+食材はこの際、後回しだ。[r]まずは聖杯を探し出す。
+[k]
+
+＠エミヤ
+魔力リソースとしての聖杯は、[r]些細なことから暴走するケースが多い。
+[k]
+
+＠エミヤ
+このまま事態が悪化する恐れもある！[r]聖杯の関与が判明した以上、放ってはおけん。
+[k]
+
+？1：聖杯確保を優先しよう
+？2：（強く頷く）
+
+[messageOff]
+[cameraMove 0.4 0,10 1.0]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.0]
+[wt 1.2]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+
+＠パーシヴァル
+管制室。聖杯の位置は？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 0,0]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠マシュ
+北東、５０メートル先です！
+[k]
+
+？1：行ってみよう！
+[charaPut H 12000,12000]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠タマモキャット
+おー！
+[k]
+
+
+？2：急ごう！
+[charaPut H 12000,12000]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠サンタマルタ
+う、うん！
+[k]
+
+？！
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_129 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

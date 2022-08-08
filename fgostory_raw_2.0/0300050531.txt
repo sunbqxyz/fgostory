@@ -1,0 +1,276 @@
+
+＄03-00-05-05-3-1
+
+[soundStopAll]
+
+[charaSet A 1098128200 1 凯妮斯]
+[charaSet B 9005001 1 福尔摩斯]
+[charaSet C 8001400 1 玛修]
+[charaSet D 8001410 1 玛修]
+
+[charaSet J 5009000 1 特效用dummy]
+
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 85700]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠凯妮斯
+吵死了！　杂鱼们的宝具我以往见多了，[r]但你的宝具是最烦人的！
+[k]
+
+
+[messageOff]
+[wt 0.1]
+
+[se ad865]
+[wt 0.4]
+
+[fowardEffect bit_talk_14]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[seStop ad865 0.1]
+[se ad32]
+[se ad467]
+[wt 0.1]
+
+[charaScale B 1.2]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0 0,20]
+[charaFadeout A 0]
+
+[charaMoveScale B 1.0 0.2]
+
+[charaMove B 0,0 0.2]
+[charaShake B 0.02 3 3 0.8]
+[wt 1.2]
+
+＠福尔摩斯
+呜……！
+[k]
+
+？1：福尔摩斯！
+？！
+
+[charaFace B 5]
+＠福尔摩斯
+攻击对凯妮斯几乎都无效……！[r]这是凯妮斯的宝具……或者是权能吗？
+[k]
+
+＠福尔摩斯
+船长说得对，在海上……不对，[r]难道在希腊诸神的海洋上不可能伤到凯妮斯吗……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠凯妮斯
+[line 3]嗯。虽说我只要有这闪电就够了。[r]你们要恨的话，就去恨波塞冬那个渣滓吧。
+[k]
+
+[charaFace A 16]
+
+＠凯妮斯
+我在这片海洋上是不死之身。[r]我就是这样的存在。
+[k]
+
+[charaFace A 17]
+＠凯妮斯
+不过[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠玛修
+……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠凯妮斯
+……到时间了。[r]真是的，一群擅长防守的混账。
+[k]
+
+＠凯妮斯
+按照奥德修斯的作战计划，我该离开了。
+[k]
+
+[charaFace A 0]
+＠凯妮斯
+真可惜没能亲手折磨死迦勒底御主[r]和混账冒牌特里同[line 3]
+[k]
+
+＠凯妮斯
+不过这毕竟没有愉快到[r]值得用自己的性命来交换。
+[k]
+
+＠凯妮斯
+再见啦，迦勒底。
+[k]
+
+＠凯妮斯
+你们至少能得到[#没有痛苦]的慈悲。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_24 1.0]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+[charaFadeout A 0.1]
+[wt 0.6]
+
+[se ad416]
+[seVolume ad416 0 0.8]
+[se ade59]
+[wt 0.8]
+[seStop ad417 0.8]
+[seStop ade59 0.8]
+[wt 2.0]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠玛修
+神灵凯妮斯……撤退了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+……我有不祥的预感。[r]赶紧回鹦鹉螺号！
+[k]
+
+[messageOff]
+[se ad594]
+[wt 0.1]
+[wipeout rightToLeft 1.5 1.0]
+[bgm BGM_EVENT_81 1.5 0.4]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[scene 55700]
+[wt 1.5]
+
+[bgm BGM_EVENT_81 1.5 1.0]
+[wipein leftToRight 1.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 4]
+[se ad311]
+[charaFadein B 0.1 80,0]
+[charaMove B 40,0 0.4]
+[wt 0.2]
+[seStop ad311]
+[wt 0.6]
+
+[se ad311]
+[charaMove B 1 0.4]
+[wt 0.2]
+[seStop ad311]
+[wt 0.8]
+
+＠福尔摩斯
+……呼。
+[k]
+
+[messageOff]
+[charaMove B 0,-50 0.4]
+[charaFadeout B 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.2]
+
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth C 2]
+[charaDepth D 1]
+
+
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[wt 0.6]
+
+[charaFadeout C 0.4]
+[wt 0.2]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk D]
+＠D：玛修
+Mr.福尔摩斯，您没事吧！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+没什么。比齐格鲁德那次要好点。
+[k]
+
+＠福尔摩斯
+甚至可以说，正因为我对付过那把魔剑，[r]才能应对凯妮斯的枪。
+[k]
+
+[charaFace B 0]
+＠福尔摩斯
+重要的是现在得脱离这种困境。[r]赶快回驾驶舱吧。
+[k]
+
+＠福尔摩斯
+虽然不清楚凯妮斯为何撤退，[r]但恐怕没有时间供我们休息了。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

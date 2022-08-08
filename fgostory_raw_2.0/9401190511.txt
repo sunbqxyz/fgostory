@@ -1,0 +1,179 @@
+
+＄94-01-19-05-1-1
+[soundStopAll]
+[charaSet A 10002000 1 Meltryllis]
+[charaSet B 1007000 1 高文]
+[charaSet C 2008001 1 崔斯坦]
+[charaSet D 3003002 1 弗拉德三世]
+[charaSet E 98112500 1 玛布尔]
+
+[bgm BGM_EVENT_3 0.1]
+[scene 41300]
+[fadein black 1.5]
+[wait fade]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.4 0,-20]
+[charaEffect D bit_talk_14]
+[charaShake D 0.01 5 5 0.4]
+[se ad161]
+[wt 0.7]
+[fowardEffect bit_talk_35]
+＠弗拉德三世
+唔[se ad322][seVolume ad322 0 0.4][charaMoveScale D 0.95 0.4]唔……！[charaShake D 0.01 0 3 0.4]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[bgmStop BGM_EVENT_3 0.7]
+
+＠高文
+到此为止……！[r]得手了，弗拉德三世！
+[k]
+
+[charaFadeout B 0.1]
+[charaScale D 1.0]
+[wt 0.1]
+[charaPut E 0,0]
+[charaEffect E bit_talk_06]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[bgm BGM_EVENT_1 0.1]
+
+＠弗拉德三世
+咕……唔，正可谓断骨一击！[r]完美的挑击，丝毫不逊色于吾之枪！
+[k]
+
+＠弗拉德三世
+呼哈哈，如果在刚才一击下都没能死去，[r]那才是真正的不死吸血鬼！　吾不会走上如此末路！
+[k]
+
+？1：弗拉德三世，你刚才说的话……！？
+？2：在消失前，能告诉我吗……！
+
+？！
+
+[charaFace D 4]
+＠弗拉德三世
+呼……吾似乎过于激动了。[r]居然说漏了一些不必说出口的话。
+[k]
+
+＠弗拉德三世
+若想知道，就快赶往礼拜堂吧。[r]汝之从者[line 3]
+[k]
+
+＠弗拉德三世
+[#从迦勒底到来的Archer正在那里等着你]。
+[k]
+
+[messageOff]
+[charaPut E -10000,0]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠高文
+Archer也出现在这里了啊。[r]如果能会合就好了……
+[k]
+
+＠高文
+（但是，若真是如此，那家伙为什么不出来……？[r]　他应该清楚御主在这里吧。）
+[k]
+
+＠高文
+（只要是[%1]的从者，[r]　选择前来援救才是正常的判断吧……？）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut E 0,0]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠弗拉德三世
+这份疑惑很中肯，太阳骑士啊。[r]不能对那个男人掉以轻心……
+[k]
+
+＠弗拉德三世
+就算是己方，也不能放松警惕。[r]在这SE.RA.PH，无论对方是谁[line 3]
+[k]
+
+＠弗拉德三世
+只要内心露出一丝破绽，就会被钻空子。[r]切勿忘记这点[line 3]
+[k]
+
+[bgmStop BGM_EVENT_1 2.0]
+[charaEffectStop E bit_talk_06]
+[messageOff]
+[charaSpecialEffect D flashErasure 0 1.7]
+[se ad52]
+[wait charaSpecialEffect D]
+[wt 1.0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[bgm BGM_EVENT_5 0.1]
+＠Meltryllis
+快去礼拜堂吧。[r]从迦勒底来的Archer……
+[k]
+
+[charaFace A 10]
+＠Meltryllis
+是穿着红色外套的双剑使褐色皮肤的弓兵吧？[r]真不像话。没品也要有个限度。
+[k]
+
+＠Meltryllis
+不过算了。我会先嘲笑他，给他造成打击，[r]但如果他强烈要求，那就收他为同伴吧。
+[k]
+
+＠Meltryllis
+虽然肯定成不了我们的战力，[r]但总比没有要好。[line 3]好了，快跑！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠玛布尔
+我……我对那个礼拜堂有点……[r]不太好的回忆……
+[k]
+
+＠玛布尔
+但是，没有其他可以休息的场所吧……[r]我记得2楼有好几个独立房间，算了……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠高文
+虽然我很在意弗拉德公的忠告，[r]但[%1]的身体已经接近极限了。
+[k]
+
+＠高文
+先进去吧。[r]没事，这里有3骑值得信任的从者。
+[k]
+
+＠高文
+无论有什么在等着我们，[r]我们都不会落于下风。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

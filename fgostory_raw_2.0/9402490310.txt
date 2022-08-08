@@ -1,0 +1,550 @@
+
+＄94-02-49-03-1-0
+
+
+
+[soundStopAll]
+
+
+
+[charaSet A 10007000 1 冲田Alter]
+[charaSet B 6033000 1 黑外套的男子]
+[charaSet C 98025100 1 落单从者]
+[charaSet D 98002000 1 特效用dummy１]
+[charaSet E 98002000 1 特效用dummy２]
+[charaSet F 98002000 1 特效用dummy３]
+[charaSet G 1098154400 1 黑外套的男子剪影]
+
+[charaDepth C 1]
+[charaDepth F 6]
+
+[bgm BGM_EVENT_90 0.1]
+
+[scene 59300]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[effect bit_talk_Slash_white_01]
+[se bac143]
+[wt 0.3]
+[charaShake C 0.03 3 3 0.4]
+[wt 0.5]
+
+＠落单从者
+…………！？
+[k]
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+＠G：黑外套的男子
+哈，我还觉得你看上去是个有名的[#剑士:Saber]呢，[r]结果根本不值一提。
+[k]
+
+＠G：黑外套的男子
+凭这种水平就来找我的茬，[r]你也太小看我了。
+[k]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠落单从者
+…………！
+[k]
+
+[messageOff]
+[charaPut D 0,200]
+[charaEffect D bit_talk_06b]
+[se bac165]
+[wt 2.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut D 1200,1200]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+＠G：黑外套的男子
+哦……难道打算用点像样的[#王牌:类宝具]吗？
+[k]
+
+＠G：黑外套的男子
+但是啊，你的剑术……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaPut D 0,200]
+＠落单从者
+…………呜！
+[k]
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaEffectStop D bit_talk_06b]
+[charaPut D 1200,1200]
+
+
+[charaTalk depthOff]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.2]
+
+[charaEffect E bit_talk_v_slash01]
+[se bac154]
+[wt 0.3]
+[charaMove G 256,0 0.2]
+[charaFadeout E 0.1]
+[wt 0.5]
+[charaFadeout G 0.1]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.2]
+
+
+[charaEffect F bit_talk_ichimon01wh]
+[se bac95]
+[wt 0.3]
+[charaFadeout F 0.1]
+[charaShake C 0.03 4 4 0.4]
+[wt 0.3]
+[se ad341]
+[fowardEffect bit_talk_35]
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠G：黑外套的男子
+[line 3]我已经学会了。
+[k]
+
+[wt 0.1]
+
+[messageOff]
+[se bac127]
+[fadeout black 0.1]
+[wait fade]
+
+[charaFadeout G 0.1]
+
+[scene 10000]
+[wt 0.2]
+
+[fadein black 0.1]
+[wait fade]
+
+[fowardEffect bit_talk_blood_splash]
+[se ad464]
+[wt 0.6]
+
+
+
+[bgmStop BGM_EVENT_90 2.0]
+[wt 2.5]
+
+[fadeout white 2.0]
+[wait fade]
+
+[scene 10001]
+
+[skip false]
+
+[fadein white 0.1]
+[wait fade]
+
+
+
+[input selectBranch]
+[messageOff]
+[skip false]
+[charaSet A 10007000 1 冲田Alter]
+[charaSet B 6033000 1 黑外套的男子]
+[charaSet C 98025100 1 落单从者]
+[charaSet D 98002000 1 特效用dummy１]
+[charaSet E 98002000 1 特效用dummy２]
+[charaSet F 98002000 1 特效用dummy３]
+[charaSet G 1098154400 1 黑外套的男子剪影]
+
+[bgmStop BGM_EVENT_90 0.4]
+
+[charaFadeout G 0.1]
+[charaFadeout C 0.1]
+[charaPut D 2000,2000]
+[charaFadeout D 0.1]
+[charaPut E 2000,2000]
+[charaFadeout E 0.1]
+[charaPut F 2000,2000]
+[charaFadeout F 0.1]
+
+[charaEffectStop D bit_talk_06b]
+[charaEffectStop E bit_talk_v_slash01]
+[charaEffectStop F bit_talk_ichimon01wh]
+
+[scene 10001]
+[wt 0.4]
+[soundStopAll]
+[maskin white 1]
+[wait mask]
+[label selectBranch]
+
+[wt 0.4]
+
+[revivalBranch lblNormal lblRevival]
+
+[label lblNormal]
+
+[fowardEffect bit_queststart80107]
+[wait fowardEffect]
+
+[branch lblConf]
+[label lblRevival]
+
+[fowardEffect bit_queststart80242]
+
+[wait fowardEffect]
+
+[label lblConf]
+
+[fadeout white 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[fadein white 0.1]
+[wait fade]
+[wt 0.1]
+
+[fadeout black 2.0]
+[wait fade]
+
+[scene 10000]
+[skip true]
+[wt 0.1]
+
+
+
+[scene 59400]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1 1]
+
+[se ad31]
+[wt 0.8]
+[seVolume ad31 0.3 0.5]
+[wt 0.5]
+[seVolume ad31 0.3 0.8]
+[wt 0.5]
+[seVolume ad31 0.3 0.2]
+[wt 0.8]
+
+＠收音机广播
+现在播送临时新闻。[r]陆军第四魔道机关发布，今日凌晨，
+[k]
+
+＠收音机广播
+于帝都东京展开圣杯战争。
+[k]
+
+＠收音机广播
+于帝都东京展开圣杯战争。
+[k]
+
+[seStop ad31 0.5]
+[messageOff]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.2]
+＠冲田Alter
+…………
+[k]
+
+？1：圣杯战争居然会被新闻播放……
+
+[charaFace A 7]
+
+＠冲田Alter
+…………原本不会这么做吗？[r]…………原来如此。
+[k]
+
+？2：收音机有意思吗？
+
+＠冲田Alter
+…………嗯。[r]…………而且，还很适合学习语言。
+[k]
+
+？！
+
+[charaFace A 4]
+＠冲田Alter
+……不知为何，我缺少很多要素。
+[k]
+
+＠冲田Alter
+从者本应有生前的记忆，[r]但我却没有。
+[k]
+
+＠冲田Alter
+……冲田总司，那就是我吧？
+[k]
+
+＠冲田Alter
+而且，原本在现界时应该被赋予的[r]那个时代的知识我也没有获得。
+[k]
+
+＠冲田Alter
+不仅如此，不久前我甚至连语言功能都不具备。
+[k]
+
+＠冲田Alter
+……我究竟是什么。
+[k]
+
+？1：Alter……
+
+＠冲田Alter
+…………
+[k]
+
+＠冲田Alter
+再说我真的是Saber吗。[r]我似乎非常弱小。
+[k]
+
+？2：但你似乎很快就学会了吧。
+
+[charaFace A 7]
+＠冲田Alter
+………唔？[r]啊，确实如此。
+[k]
+
+[charaFace A 1]
+＠冲田Alter
+难不成，我脑子很聪明？
+[k]
+
+？！
+
+[charaFace A 6]
+＠冲田Alter
+话说御主，您真的愿意与我这样[r]来路不明的从者订立契约吗？
+[k]
+
+＠冲田Alter
+而且我甚至不知道契约是否成功缔结了……
+[k]
+
+？1：都靠你了哦。
+？2：今后也请多指教哦。
+
+？！
+
+[charaFace A 7]
+＠冲田Alter
+……！
+[k]
+
+[charaFace A 1]
+＠冲田Alter
+……这样啊，那再次请您多关照。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.0]
+[charaTalk B]
+[se ade74]
+[seVolume ade74 0 0.1]
+[wt 2.2]
+[seStop ade74 0.4]
+
+[charaTalk A]
+[charaFace A 6]
+＠冲田Alter
+…………等一下。
+[k]
+
+＠冲田Alter
+…………有什么来了。
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ade169]
+[seVolume ade169 0 0.3]
+[wt 1.5]
+[seStop ade169 0.4]
+
+？1：是客人吗？
+？2：是坂本先生吗？
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.2]
+
+
+[se ad93]
+[wt 1.5]
+[seStop ad93 0.7]
+[wt 0.7]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFilter B normal 00000080]
+[charaFadein B 0.4 1]
+[wt 0.7]
+
+＠黑外套的男子
+……打扰了。[r]请问这里是坂本先生的家吗？
+[k]
+
+
+？1：……啊，是的。
+？2：……很抱歉，他正好外出了。
+
+？！
+
+
+[charaFace B 1]
+＠黑外套的男子
+原来如此，那真是太好了。
+[k]
+
+[charaFace B 6]
+＠黑外套的男子
+[line 3]去死吧。
+[k]
+
+[bgm BGM_EVENT_24 0.1 1]
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+
+[se ad171]
+[fowardEffect bit_talk_Slash_white_01]
+[wt 0.3]
+
+[se ad32]
+[shake 0.03 3 3 0.7]
+[fowardEffect bit_talk_14]
+[wt 1.0]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠冲田Alter
+你干什么啊。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠黑外套的男子
+你算什么家伙……？[r]打算妨碍我吗？
+[k]
+
+＠黑外套的男子
+……这把大太刀，你难道是Saber？
+[k]
+
+？1：敌方从者！？
+？2：Alter！　没事吧！？
+
+？！
+
+[charaFace B 0]
+＠黑外套的男子
+别说什么胡话了。
+[k]
+
+＠黑外套的男子
+圣杯战争就是从者间的相互残杀，[r]从弱小的家伙开始消灭是理所当然的吧。
+[k]
+
+[charaFace B 7]
+＠黑外套的男子
+哼，那个从者很弱吧？[r]通过刚才的交手，我已经看出来了。
+[k]
+
+＠黑外套的男子
+弱到令人难以相信这家伙是Saber。
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠冲田Alter
+…………
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠黑外套的男子
+哈哈！
+[k]
+
+＠黑外套的男子
+这种居然算是三骑士中最优秀的Saber，[r]太搞笑了吧！
+[k]
+
+[charaFace B 6]
+＠黑外套的男子
+这真是个好兆头！
+[k]
+
+[charaFace B 2]
+
+＠黑外套的男子
+去死吧[line 3]！！！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

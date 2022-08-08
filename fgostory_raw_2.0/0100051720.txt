@@ -1,0 +1,118 @@
+
+＄01-00-05-17-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[charaSet A 8001001 1 玛修]
+[charaSet B 1019001 1 罗摩]
+[charaSet C 99360000 1 士兵]
+[charaSet H 98003003 1 Dr.罗曼]
+
+[scene 20720]
+[fadein black 2]
+[wait fade]
+
+[se bac22]
+[wt 1.0]
+[seStop bac21]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+[line 2]结束了！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠罗摩
+……先遣队就有如此的规模。[r]对方也认为南军是关键，所以派来的都是精锐吧。
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.5 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaTalk C]
+[charaFadein C 0.1 1]
+[wt 0.5]
+[wipein rightToLeft 0.5 1]
+[wait wipe]
+[se ad16]
+[wt 2.0]
+[seStop ad16 0.5]
+[wipeout rightToLeft 0.5 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[charaTalk B]
+[charaFadein B 0.1 1]
+[wt 0.5]
+[wipein leftToRight 0.5 1]
+[wait wipe]
+
+＠罗摩
+似乎是这样。
+[k]
+
+[charaFace B 2]
+＠罗摩
+距真正冲突开始的时间不多了。[r]各位，不要松懈！
+[k]
+
+[messageOff]
+
+[se ad66]
+[wt 1.0]
+[seStop ad66 1.5]
+[wt 2.5]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+[charaTalk H]
+[se ad13]
+[communicationChara 98003003 1 5 0 1]
+[wt 0.3]
+＠Dr.罗曼
+不愧是拘萨罗之王。[r]无论容貌为何，都充满了领袖魅力呢！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠罗摩
+这究竟算不算夸奖余呢，[r]心情真够复杂的……
+[k]
+
+[bgmStop BGM_EVENT_2 0.1]
+[messageOff]
+
+[charaTalk A]
+[se ad19]
+[wt 2.0]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+＠罗摩
+这次是双足飞龙吗。[r]好，[charaFace B 2]御主……将其全都击溃吧！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

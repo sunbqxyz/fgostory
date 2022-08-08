@@ -1,0 +1,274 @@
+
+
+
+＄94-04-78-02-1-0
+
+[soundStopAll]
+
+[skip false]
+
+[maskout black 0]
+[wait mask]
+
+[charaSet A 3043000 1 绘里濑]
+[imageSet B cut171_token_408 1]
+[imageSet C cut171_token_crn 1]
+[charaSet D 2009001 1 俄里翁＆阿耳忒弥斯]
+[charaSet E 2030002 1 喀戎]
+[charaSet F 98001000 1 玛修]
+[charaSet G 25005000 1 旅行者]
+[charaSet H 9001001 1 贞德]
+[imageSet I cut171_token_208 1]
+[charaSet S 5009000 1 特效用dummy1]
+[charaSet T 5009000 1 特效用dummy2]
+
+[scene 20730]
+
+[pictureFrameTop cut170_gameframe_bright]
+
+[skip true]
+
+[fadein black 0]
+[wait fade]
+[maskin black 1.0]
+[wait mask]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+＠绘里濑
+该怎么办……？　下一步怎么走……？
+[k]
+
+＠绘里濑
+……阿伽门农？[r]不行。他肯定会失控。
+[k]
+
+＠绘里濑
+那汉尼拔呢？[r]也不行，少数战无法发挥他的优势。
+[k]
+
+[charaFace A 5]
+
+＠绘里濑
+既然如此……
+[k]
+
+
+[charaFace A 2]
+
+＠绘里濑
+这个组合一定能……！
+[k]
+
+[messageOff]
+[wt 0.4]
+[effect bit_talk_trajectory 0,-100]
+[se ad28]
+[wt 0.8]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk off]
+
+[charaDepth S 2]
+[charaDepth T 3]
+[charaDepth B 4]
+[charaDepth C 5]
+[charaDepth D 5]
+[charaDepth E 7]
+
+[charaPut S -256,-10]
+[charaPut T 256,-10]
+
+[charaEffect S bit_talk_token_materialization]
+[charaEffect T bit_talk_token_materialization]
+[cueSe NoblePhantasm_603800 NP_603800_1]
+[wt 2.5]
+[cueSeStop NP_603800_1 0.5]
+
+[charaFadein B 0.4 -256,-210]
+[charaFadein C 0.4 256,-210]
+[wt 1.2]
+
+[se ad29]
+[fadeout white 0.5]
+[wait fade]
+[charaEffectDestroy S bit_talk_token_materialization]
+[charaFace D 0]
+[charaFadein D 0.7 -256,-50]
+[wt 0.2]
+[fadein white 0.5]
+[charaFadeout B 0.4]
+[wait fade]
+[wt 0.5]
+
+[se ad29]
+[fadeout white 0.5]
+[wait fade]
+[charaEffectDestroy T bit_talk_token_materialization]
+[charaFace E 0]
+[charaFadein E 0.7 256,-50]
+[wt 0.2]
+[fadein white 0.5]
+[charaFadeout C 0.4]
+[wait fade]
+[wt 0.8]
+
+[charaTalk on]
+[charaFace D 7]
+
+＠D：阿耳忒弥斯
+来啦来啦～♪[r]亲爱的，该[#出场:约会]了哦♪
+[k]
+
+＠D：俄里翁
+真羡慕你。一直那么开心。[r]不过[#游戏界:这边]的御主倒是很担心。
+[k]
+
+＠喀戎
+放心吧，游戏界的御主。[r]如果有做得不够的地方，我会辅助您。
+[k]
+
+[charaFace E 1]
+
+＠喀戎
+不过这个人选安排似乎没什么必要。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 0,-50]
+
+＠绘里濑
+拜托了，教导众多英雄的导师。[r]请引导我！　请务必……让我在此赢得胜利……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+
+＠玛修
+……看得出绘里濑小姐已经相当慌张了呢。
+[k]
+
+？1：的确。
+
+？2：不要放松警惕，一举拿下胜利吧。
+
+？！
+
+[charaFace F 7]
+
+＠玛修
+是，前辈。我会集中精神辅佐的！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 16]
+[charaFadein G 0.1 0,-50]
+
+＠旅行者
+是[#半人马:Centaur]……
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.3]
+
+[charaTalk depthOff]
+[charaTalk off]
+
+[charaDepth T 1]
+[charaDepth I 2]
+[charaDepth H 3]
+
+[charaPut T 0,-10]
+[charaEffect T bit_talk_token_materialization]
+[cueSe NoblePhantasm_603800 NP_603800_1]
+[wt 2.5]
+[cueSeStop NP_603800_1 0.5]
+
+[charaFadein I 0.4 0,-210]
+[wt 1.2]
+
+[se ad29]
+[fadeout white 0.5]
+[wait fade]
+[charaEffectDestroy T bit_talk_token_materialization]
+[charaFace H 0]
+[charaFadein H 0.7 0,-50]
+[wt 0.2]
+[fadein white 0.5]
+[charaFadeout I 0.4]
+[wait fade]
+[wt 0.8]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+＠贞德
+他是知名的贤者。培养了众多勇者。[r]不过，年幼的孩子啊。你可以跟随我学习。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠旅行者
+你是……[#圣女]吧？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+
+＠贞德
+正是。而且还是不断前进之人。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠旅行者
+明白了。我会，看着你。[r]一定，不会忘了哦。
+[k]
+
+
+[messageOff]
+[maskout black 2.0]
+[bgmStop BGM_EVENT_48 2.0]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

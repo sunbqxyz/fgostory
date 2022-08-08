@@ -1,0 +1,212 @@
+
+＄94-03-35-30-3-0
+
+[soundStopAll]
+[charaSet A 1035001 1 迪尔姆德]
+[charaSet B 5012001 1 特效用]
+
+[equipSet H 9807030 1 情人节礼装]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66700]
+[branch lblConf]
+[label lblNotClear]
+[scene 60300]
+[label lblConf]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠迪尔姆德
+[tVoice ValVoice_103500 0_V010]
+哦哦，[%1]。[r]您在这里啊。[wait tVoice]
+[k]
+
+
+＠迪尔姆德
+[tVoice ValVoice_103500 0_V020]
+抱歉有些冒失，我正在找您。[r]不肖迪尔姆德·奥迪那为您准备了礼物。[wait tVoice]
+[k]
+
+？1：哎，稍等。
+？2：应该由我先[line 3]
+
+？！
+
+[messageOff]
+[charaFace A 3]
+[wt 0.5]
+[charaMoveReturn A 10,0 0.5]
+[wait charaMove A]
+[charaMoveReturn A -10,0 0.5]
+[wait charaMove A]
+[wt 1.0]
+
+[charaFace A 0]
+
+
+＠迪尔姆德
+[tVoice ValVoice_103500 0_V030]
+我从达·芬奇阁下那里得知了[r]今天这个日子的含义。[wait tVoice]
+[k]
+
+＠迪尔姆德
+[tVoice ValVoice_103500 0_V040]
+所以我必须用实物来表达我的忠义、忠节与情感。[r]还请您收下我的心意。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠迪尔姆德
+[tVoice ValVoice_103500 0_V050]
+[line 3]就是这个。[r]我的主人。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se bas2]
+[charaFace H 0]
+[charaFadein H 0.5 0,-70]
+[wt 2.0]
+
+[charaFadeout H 0.4]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠迪尔姆德
+[tVoice ValVoice_103500 0_V060]
+这就是可被称为妖精果实的神秘果实。[wait tVoice]
+[k]
+
+
+＠迪尔姆德
+[tVoice ValVoice_103500 0_V070]
+这种果实正是为大洋彼岸[r]某个[#异界:依姆拉姆]大地添彩的树果。[wait tVoice]
+[k]
+
+＠迪尔姆德
+[tVoice ValVoice_103500 0_V080]
+在我养父海神马纳南的指引下，勇士布兰与同伴们曾经[r]最终抵达的大地上，就生长这种植物[line 3][wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠迪尔姆德
+[tVoice ValVoice_103500 0_V090]
+……[r]……[wait tVoice]
+[k]
+
+＠迪尔姆德
+[tVoice ValVoice_103500 0_V100]
+……不。他只是念了首诗。[r]或许还称不上指引，那个，没错。[wait tVoice]
+[k]
+
+？1：这苹果看起来很好吃呢。
+？2：谢谢！
+
+？！
+
+[charaFace A 1]
+
+
+＠迪尔姆德
+[tVoice ValVoice_103500 0_V110]
+我的主人您平日里一直勤于战斗，[r]倘若这礼物能让您得到一时的安宁就好了。[wait tVoice]
+[k]
+
+？1：那我也要送你回礼！　给！
+
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[charaFace A 2]
+[wt 1.0]
+[charaFace A 3]
+
+＠迪尔姆德
+[tVoice ValVoice_103500 0_V120]
+噢噢……这是……[line 3][wait tVoice]
+[k]
+
+＠迪尔姆德
+[tVoice ValVoice_103500 0_V130]
+啊，我何德何能……[wait tVoice]
+[k]
+
+
+＠迪尔姆德
+[tVoice ValVoice_103500 0_V140]
+尽管我事先已经知道您一定会赏赐什么东西，[r]但我内心还是激动得难以自遏。[wait tVoice]
+[k]
+
+＠迪尔姆德
+[tVoice ValVoice_103500 0_V150]
+这是我的无上荣幸。[r]您的深情厚谊，在下铭记于心。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 2]
+[bgmStop BGM_EVENT_77 0.1]
+[wt 1.0]
+
+[cameraMove 0.2 0,-60 1.2]
+[se ad186]
+[wt 0.2]
+[charaEffect B bit_talk_41]
+
+
+＠迪尔姆德
+[tVoice ValVoice_103500 0_V160]
+[f large]……既然如此！！[wait tVoice]
+[k]
+
+[bgm BGM_EVENT_94 0.1]
+
+
+＠迪尔姆德
+[tVoice ValVoice_103500 0_V170]
+在下定会独自一人吃光这份收下的巧克力！[r]哪怕命丧黄泉！　哪怕筑起尸山血河！[wait tVoice]
+[k]
+
+[charaEffectStop B bit_talk_41]
+
+？1：你不用想得那么严重啦！
+？2：咦，这对话之前好像也……？
+
+？！
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_94 2.0]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,193 @@
+
+
+
+＄94-05-14-15-1-1
+
+[soundStopAll]
+
+[charaSet A 8001600 1 玛修]
+[charaSet B 1033300 1 齐格鲁德]
+
+[charaSet S 5009040 1 特效用dummy]
+
+[charaPut S 1200,1200]
+[charaEffect S bit_sepia01_depth]
+
+[scene 58600]
+
+[pictureFrame cut063_cinema]
+
+[fadein black 1.0]
+[wait fade]
+
+
+＠玛修
+（御主正和和巴小姐一起[r]　调查着人偶的残骸。）
+[k]
+
+＠玛修
+（我也必须去帮忙才行……）
+[k]
+
+＠玛修
+（但这是为什么。[r]　为什么，我会……）
+[k]
+
+[messageOff]
+[fadeout white 1.0]
+[wait fade]
+
+[scene 99602]
+
+[pictureFrame]
+
+[charaPut S 1]
+
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+
+
+[bgm BGM_EVENT_129 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠齐格鲁德
+违和感？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 4]
+[charaFadein A 0.1 2]
+[charaFadein B 0.1 0]
+＠玛修
+虽说等于重复了一遍问题。
+[k]
+
+＠玛修
+但齐格鲁德先生有没有……[r]违和感之类的感觉呢？
+[k]
+
+[charaFace B 10]
+＠齐格鲁德
+唔。你是指对当前现状吗？
+[k]
+
+[charaFace A 12]
+＠玛修
+可以这么说，但又好像是对于[r]焦点更为集中的某种东西……
+[k]
+
+[charaFace A 8]
+＠玛修
+对不起。我自己也没能完全理解。[r]只不过[line 3]
+[k]
+
+＠齐格鲁德
+如果你真的感受到了『这确实存在』。[r]且无法将这当做自己多心的话。
+[k]
+
+[charaFace B 0]
+＠齐格鲁德
+那就肯定[#存在]。
+[k]
+
+[charaFace A 6]
+＠玛修
+……！
+[k]
+
+＠齐格鲁德
+虽说那是在下难以感受到的，[r]但恐怕这是『[#唯有你才会产生的违和感]』。
+[k]
+
+＠齐格鲁德
+在下推测其中必然有意义。
+[k]
+
+＠玛修
+是唯有我，才会产生的……？
+[k]
+
+[messageOff]
+[fadeout white 1.0]
+[bgm BGM_EVENT_129 1.0 0.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+[charaPut S 1200,1200]
+[charaEffectStop S bit_sepia01_depth]
+
+[pictureFrame]
+
+[scene 100900]
+[wt 1.0]
+
+[bgm BGM_EVENT_129 1.0 1.0]
+[fadein white 1.0]
+[wait fade]
+
+＠
+走廊里正好挂着一面镜子。[r]下意识地凝视着镜子。
+[k]
+
+＠
+自己。唯有自己才会产生的违和感。[r]唯有自己才会注意到的违和感。
+[k]
+
+＠
+这，这，究竟是……？
+[k]
+
+？1：[line 3]玛修？
+？！
+
+[messageOff]
+
+[masterBranch _Male _Female]
+
+[label _Male]
+[scene 100902 1.5]
+
+[branch _brunchEnd]
+
+[label _Female]
+[scene 100901 1.5]
+
+[label _brunchEnd]
+
+[wt 1.9]
+
+＠
+是御主。[r]应该是由于担心才过来看的吧。
+[k]
+
+＠
+总之，现在必须做应该做的事[line 3]
+[k]
+
+＠玛修
+啊，嗯！　对不起！[r]玛修·基列莱特现在就回去调查！
+[k]
+
+[messageOff]
+[se ade491]
+[wt 0.5]
+[seStop ade491 1.6]
+[scene 100903 1.5]
+[wt 3.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_129 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

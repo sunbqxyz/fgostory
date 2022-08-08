@@ -1,0 +1,264 @@
+
+
+
+
+＄94-06-04-03-2-0
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 9012000 1 ダ・ヴィンチ]
+[charaSet B 8001600 1 マシュ]
+[charaSet C 98002000 1 フォウ]
+[imageSet D cut271_egg1 1]
+[imageSet F back10000 1 1]
+[charaScale F 1.1]
+[charaDepth F 2]
+[charaDepth D 3]
+
+[scene 134100]
+[fadein black 1.0]
+[wait fade]
+
+[se ad173]
+[seVolume ad173 0 0]
+[seVolume ad173 0.7 0.5]
+[wt 1.0]
+[seStop ad173 0.7]
+[wt 1.0]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+お、結構広い場所に出たね？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+……向こうに見える光は、[r]もしかして出口でしょうか？
+[k]
+
+？1：でもここには何もないような……
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFadein C 0.1 1]
+＠フォウ
+フォウフォウ！
+[k]
+
+[messageOff]
+[se adm21]
+[charaMove C -64,24 0.4]
+[charaFadeout C 0.4]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+あれ？　フォウさん？[r]フォウさーーーん！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 25]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+何か見つけたのかな？
+[k]
+
+？1：フォウやーい！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFadein C 0.1 1]
+＠フォウ
+フォウフォウ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+こっちか。[r]おーい、どうしたのさ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠マシュ
+何か見つけたみたいですね。[r]これは……。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaDepth F 1]
+[charaDepth D 2]
+
+[charaFadeTime F 0.2 0.5]
+[charaFadein D 0.2 0,-200]
+[wt 2.0]
+[charaFadeout F 0.2]
+[charaFadeout D 0.2]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+たまご？
+[k]
+
+？1：だね
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+何の卵でしょう？[r]ダ・ヴィンチちゃん、わかりますか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+うーん。[r]これは……
+[k]
+
+
+＠ダ・ヴィンチ
+ダチョウの卵……いやもっと大きいか……。[r]うーん、何だろうなあ……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFadein C 0.1 1]
+[charaMoveReturn C -4,0 0.2]
+[cueSe SE_21 21_ade578]
+＠フォウ
+フォウフォウ！[wt 0.1][charaMoveReturn C -4,0 0.2][cueSe SE_21 21_ade578]
+[k]
+
+[bgmStop BGM_EVENT_62 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+あ、ダメですよフォウさん。[r]卵をつんつんしては[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.4]
+[cueSe SE_21 21_ade624]
+[wt 1.2]
+
+？1：卵が割れそう……
+？！
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+生きた卵だこれ！[r]それに、もう[#孵化:ふ　か]が近い！
+[k]
+
+[messageOff]
+[wt 0.4]
+[charaFace A 5]
+[wt 1.0]
+
+＠ダ・ヴィンチ
+ってことは、親が近くにいるのが普通だよね[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[se ad460]
+[wt 1.5]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠マシュ
+！[r]大型魔獣です、マスター！
+[k]
+
+？1：戦闘準備！
+
+[charaFace B 5]
+
+＠マシュ
+了解しました。[r]いきます！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+？2：もしかして親かな……？
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+いや、多分違う。[r]この威嚇音は蛇の魔獣だと思うけど……
+[k]
+
+＠ダ・ヴィンチ
+卵は、蛇の卵とは全然違う！
+[k]
+
+[charaFace A 2]
+
+？！
+
+＠ダ・ヴィンチ
+ともかく、やるしかない！[r]いっくぞー！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_80 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

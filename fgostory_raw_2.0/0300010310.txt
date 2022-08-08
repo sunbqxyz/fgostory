@@ -1,0 +1,2623 @@
+
+
+＄03-00-01-03-1-0
+[soundStopAll]
+
+
+
+
+[charaSet A 1098128000 1 玛修]
+[charaSet B 1098123210 1 戈尔德鲁夫]
+[charaSet C 1098124510 1 达·芬奇]
+[charaSet D 1098123320 1 高扬斯卡娅]
+[charaSet E 1098126500 1 雅嘎市民A]
+[charaSet F 1098126500 1 雅嘎市民Ｂ]
+[charaSet G 1098126500 1 雅嘎市民Ｃ]
+[charaSet H 5009000 1 特效用dummy]
+
+[scene 54200]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+……不知道是不是我多心，[r]我总觉得这里人……不对，是雅嘎很多啊。
+[k]
+
+[messageOff]
+[se ad573]
+[seStop ad573 1.5]
+[wt 0.5]
+[se ad573]
+[wt 0.3]
+[se ad3]
+[seVolume ad3 0 0.05]
+[seVolume ad3 0.4 0.7]
+[wt 2.0]
+
+[charaFace A 6]
+
+＠玛修
+哎呀……刚才的声音是什么？
+[k]
+
+[seStop ad3 1.0]
+
+？1：去看看情况吧。
+
+[flag IsCmn true]
+
+[charaFace A 7]
+
+＠玛修
+明白了。[r]那尽量低下头，悄悄过去。
+[k]
+
+[messageOff]
+[charaMove A 0,-30 0.5]
+[wt 0.4]
+[charaMove A -60,-30 0.6]
+[se ad580]
+[seVolume ad580 0 0.5]
+[wt 0.3]
+[charaFadeout A 0.4]
+[wt 0.4]
+[seStop ad580 0.5]
+
+[wt 1.2]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+喂，等一下，别擅自行动！？[r]哎，我有一种不祥的预感啊……！
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_77 0.5 0.4]
+[wipeout leftToRight 0.5 1.0]
+[wait wipe]
+
+[scene 10000]
+
+[charaPut H 1200,1200]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[wipein leftToRight 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+[wt 0.1]
+
+[charaSet B 1098123200 1 戈尔德鲁夫]
+[charaSet C 1098124500 1 达·芬奇]
+[charaTalk depthOff]
+[charaDepth C 2]
+[charaDepth B 3]
+[charaTalk B]
+[charaFace C 0]
+[charaFadein C 0.1 -256,-50]
+[charaFace B 5]
+[charaFadein B 0.1 256,-50]
+[scene 51600]
+[wt 0.1]
+[wipeFilter cinema 0.5 0]
+[fadein black 0.5]
+[wait fade]
+
+＠戈尔德鲁夫
+福尔摩斯！　达·芬奇！[r]你们的危机管理到底怎么一回事！
+[k]
+
+[charaFace C 29]
+
+＠达·芬奇
+没什么怎么回事，根据我的记忆，[r]这是[&他们:她们]的正常行动。[&他们:她们]知道该怎么做哦☆
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaDepth C 3]
+[charaDepth B 2]
+[charaSet B 1098123210 1 戈尔德鲁夫]
+[charaSet C 1098124510 1 达·芬奇]
+[scene 10000]
+[wipeOff]
+[fadein black 0.5]
+[bgm BGM_EVENT_77 0.5 1.0]
+[wait fade]
+[wipeout rightToLeft 0.1 1]
+[wait wipe]
+[scene 54200]
+
+？2：还是不要轻举妄动为好……
+
+[flag IsCmn false]
+
+[charaFace A 12]
+
+＠玛修
+虽说确实如此……
+[k]
+
+＠玛修
+御主，只是谨慎地暗中观察情况的程度，[r]难道也不行吗？
+[k]
+
+[messageOff]
+[wt 0.5]
+[cameraMove 0.1 0,5 1.0]
+[wt 0.3]
+[cameraMove 0.2 0,0 1.0]
+[wt 1.0]
+[charaFace A 1]
+
+＠玛修
+那我们就蹑手蹑脚走过去吧。
+[k]
+
+[charaFadeout A 0.4]
+[se ad580]
+[seVolume ad580 0 0.5]
+[wt 0.2]
+[seStop ad580 0.5]
+
+[messageOff]
+[wipeout rightToLeft 1.0 1]
+[wait wipe]
+
+？！
+
+[bgmStop BGM_EVENT_77 1.5]
+[wt 1.0]
+
+[wipein leftToRight 1.0 1]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+那是……在配给食物吗？[r]好像在排队……
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaTalk D]
+[charaFace D 9]
+[charaScale D 0.83]
+[charaFadein D 0.1 0,-48]
+[cameraMove 0.1 -72,0 1.2]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.4 0.5]
+[wt 0.2]
+[bgm BGM_EVENT_7 0.1]
+[wait wipe]
+
+＠高扬斯卡娅
+嗨～，各位雅嘎，大家好！[r]辛苦各位今天也过着那一如既往的负债生活♡
+[k]
+
+＠高扬斯卡娅
+从生态角度来说，无论怎么工作也不可能有储蓄。[r]无论多么努力也不可能有出息。
+[k]
+
+＠高扬斯卡娅
+为救助各位这前途[#黑暗:暴风雪]的生活，[r]可爱的天使到来啦～☆
+[k]
+
+[charaFace D 17]
+
+＠高扬斯卡娅
+来吧来吧，靠近一些看看商品。
+[k]
+
+＠高扬斯卡娅
+食物、医疗用具、乃至违禁品的酒，[r]没有NFF服务准备不了的东西哦♡
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 0.5]
+[bgmStop BGM_EVENT_7 0.5]
+[wait wipe]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaScale D 1.0]
+[cameraHome 0.1]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.4 0.5]
+[wt 0.3]
+[bgm BGM_EVENT_81 0.1]
+[wait wipe]
+
+＠玛修
+那是……！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[branch _Con IsCmn true]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[label _Con]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+唔！？
+[k]
+
+＠戈尔德鲁夫
+这就像给蜂蜜涂上蜂蜜，加上冰之后[r]再继续涂上蜂蜜并拿去烘烤般甜美的声音是！？
+[k]
+
+[charaFace B 8]
+
+＠戈尔德鲁夫
+我说你们，快点藏到暗处！[r]听好了，就这样从远处观察情况！
+[k]
+
+＠戈尔德鲁夫
+决不能靠近！[r]决不能像我一样被美人计害得失去一切！
+[k]
+
+？1：明白了。
+？2：（……这是迄今为止最有说服力的话了……）
+
+？！
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.6 0.5]
+[bgmStop BGM_EVENT_81 0.7]
+[wait wipe]
+[charaPut H 1200,1200]
+[charaFadeout B 0.1]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.6 0.5]
+[wait wipe]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠高扬斯卡娅
+TV·高扬斯卡娅，[r]TV·高扬斯卡娅的甜蜜厨房开张了哟～！
+[k]
+
+[charaFace D 14]
+
+＠高扬斯卡娅
+今天也有很多顾客呢，大家好。[r]感谢大家明知这是黑心商家还来光顾哦。
+[k]
+
+[charaFace D 4]
+
+＠高扬斯卡娅
+没错。你们雅嘎拥有接近不死之身的顽强的肉体呢。
+[k]
+
+＠高扬斯卡娅
+但代价就是消耗的卡路里也极高。[r]不吃[#旧种:人类]十倍的量就会死。
+[k]
+
+＠高扬斯卡娅
+强化了在极寒中的生存能力，[r]导致消耗也增多了吧。
+[k]
+
+＠高扬斯卡娅
+总之如果不进食摄取[#热量:卡路里]的话，[r]在这俄罗斯就会瞬间化为冰块吧……
+[k]
+
+[charaFace D 16]
+
+＠高扬斯卡娅
+好啦。为了帮助各位生存，[r]自雅嘎·莫斯科而来的就是我啦。
+[k]
+
+＠高扬斯卡娅
+各位，为了能抓住救赎的女神，[r]请攥住手中那仅有的一丁点钱靠过来吧～♡
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[wt 1.0]
+
+[bgmStop BGM_EVENT_7 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk E]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+
+＠E：雅嘎市民A
+……那个旧种又来了啊……[r]该死……该死……就知道把我们当笨蛋耍……
+[k]
+
+[charaFace F 3]
+
+＠F：雅嘎市民Ｂ
+喂，快闭嘴……！　就算是装，也要表现出感谢的样子来。[r]万一她再心血来潮提些过分要求该怎么办啊……！
+[k]
+
+＠G：雅嘎市民Ｃ
+……就是啊。且不说方式，[r]但那女人好歹帮了我们的忙……
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠G：雅嘎市民Ｃ
+……高……高扬斯卡娅小姐。[r]今天也请卖食物给我们……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 20]
+[charaFadein D 0.1 1]
+
+＠高扬斯卡娅
+…………
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠G：雅嘎市民Ｃ
+请……请问……高扬斯卡娅小姐？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠高扬斯卡娅
+……好悲伤。我非常悲伤啊。[r]看来各位雅嘎的记忆力连[#皮罗什基:пирожки]都不如呢。
+[k]
+
+[charaFace D 19]
+
+＠高扬斯卡娅
+真是的[line 3]连对主人的敬称也学不会。[r]你们应该称呼我为『高扬斯卡娅大人』吧。
+[k]
+
+＠高扬斯卡娅
+真是人丑心也丑。[r]不机灵，也不懂得看气氛[line 3]
+[k]
+
+＠高扬斯卡娅
+你们真的成为无聊历史了呢。
+[k]
+
+＠高扬斯卡娅
+让动物与人类混种的方法真是愚蠢中的愚蠢。[r]不仅失去了动物的纯真，也失去了人类的丰富。
+[k]
+
+＠高扬斯卡娅
+消除了各自的优点，只能适应环境，[r]还叫什么『新种』，真是太可笑了。
+[k]
+
+[charaSet G 1098123600 1 亲卫队１]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace D 19]
+[charaFadein D 0.1 0]
+[charaFace E 3]
+[charaFadein E 0.1 2]
+
+＠E：雅嘎市民Ｂ
+你说什么……？
+[k]
+
+＠E：雅嘎市民Ｂ
+喂，你这家伙。就算是[#皇帝:沙皇]的亲卫队[r]也不会对刚才那些话坐视不理吧。
+[k]
+
+[charaTalk depthOff]
+[charaDepth G 3]
+[charaDepth D 4]
+
+＠E：雅嘎市民Ｂ
+魔兽化政策原本就是[#皇帝:沙皇]起的头。[r]既然你要对此进行批判，说明你才是反叛者[charaFace G 0][charaFadein G 0.1 3][line 3][flashin once 0.1 0.1 FFFFFFAF FFFFFF00][se bac20][wt 0.1][se bac385][seVolume bac385 0 0.3][charaFace E 2][charaShake E 0.07 3 1 0.2]呀啊！？
+[k]
+
+[charaFace E 0]
+
+＠E：雅嘎市民Ｂ
+哎……不会……吧……？
+[k]
+
+[messageOff]
+[se ad240]
+[wt 0.4]
+[charaMove E 256,-50 0.7]
+[wt 0.2]
+[charaFadeout E 0.4]
+[wt 0.3]
+[se ad144]
+[wt 1.0]
+
+[charaFadeout G 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠E：雅嘎市民A
+什么……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠高扬斯卡娅
+真是的，你们可不能擅自违逆我哦♡
+[k]
+
+＠高扬斯卡娅
+对不起了哦，不知名的各位雅嘎？[r]追随我的[#亲卫队:Опричники]可是特制品。
+[k]
+
+＠高扬斯卡娅
+是只要我稍有不爽，就会立刻反应并行动的[r]精英类型哦。所以你们说话最好给我注意点。
+[k]
+
+[messageOff]
+[se ad3]
+[seVolume ad3 0 0.05]
+[seVolume ad3 0.4 0.5]
+[wt 2.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：雅嘎市民Ｃ
+但……但是……刚才是你……[r]不，是高扬斯卡娅大人您单方面的……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 0]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+
+＠高扬斯卡娅
+哎呀。勇敢的大笨蛋，你要当第二个吗？[r]生存是那么难的事吗？
+[k]
+
+[charaFace G 0]
+[charaFadein G 0.1 3]
+[wt 0.2]
+[se ade158]
+[wt 0.3]
+[seStop ad346 0.2]
+[seStop ad3 0.3]
+
+[charaFace E 2]
+
+＠E：雅嘎市民Ｃ
+不不……不是，不是啦！[r]对不起，高扬斯卡娅大人……！
+[k]
+
+[bgmStop BGM_EVENT_81 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_7 0.1]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠高扬斯卡娅
+好～，做得非常好♡[r]那就开始做买卖吧，做买卖！
+[k]
+
+[charaFace D 17]
+
+＠高扬斯卡娅
+为了粮食状况愈来愈艰难的各位，[r]今天我准备了上次两倍的食物哦。
+[k]
+
+＠高扬斯卡娅
+请不必顾虑，尽情购买吧♡[r]库存还很充足呢。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：雅嘎市民A
+……啊，嗯。无论如何，只要能得到食物……[bgmStop BGM_EVENT_7 0.5][r]食物……食物……[charaFace E 3]哈！？　这标价是什么鬼啊！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠高扬斯卡娅
+没错♡[r]咆哮兽的肩头肉涨价为50万卢布了哦♡
+[k]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠E：雅嘎市民Ｃ
+这不是三倍的标价吗！[r]上次已经是付不起的价了！
+[k]
+
+＠E：雅嘎市民Ｃ
+这样没有任何意义！　明明说好了只要顺从[#皇帝:沙皇][r]就能分给我们最低限度的食物。
+[k]
+
+＠E：雅嘎市民Ｃ
+现在则成了以物易物，拿家产来抵换了！[r]而且每次的价格都在不断倍增！
+[k]
+
+＠E：雅嘎市民Ｃ
+就知道乘人之危！[r]为什么总是用这种折磨我们的方式啊！？
+[k]
+
+[se ad3]
+[seVolume ad3 0 0.05]
+[seVolume ad3 0.4 1.0]
+[wt 2.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠高扬斯卡娅
+哎呀。气氛似乎有点紧张呢。[r]呵呵呵。离暴动就差一步的感觉呢。
+[k]
+
+＠高扬斯卡娅
+身为[#皇帝:沙皇]的亲卫队，可不能放过这种事哦？[r]要试试[#解决粮食困难问题的另一种方案]吗？
+[k]
+
+[seStop ad3 0.5]
+[bgmStop BGM_EVENT_80 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_81 0.1]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠E：雅嘎市民A
+不……不是的。我们绝没有忤逆您的意思！[r]但是您这样做就等于让我们去死啊。
+[k]
+
+[charaFace E 0]
+
+＠E：雅嘎市民A
+能否至少降回上次的价格呢？[r]那样还能想想办法……拜托了，高扬斯卡娅大人。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠高扬斯卡娅
+唔……稍微学聪明了点呢，[r]尽管我很想答应你的请求……
+[k]
+
+[charaFace D 1]
+
+＠高扬斯卡娅
+但还是不行♡[r]所以放弃吧♡
+[k]
+
+＠高扬斯卡娅
+这不是价格上涨还是下降的问题。[r]这是NFF服务的铁则。再说了[line 3]
+[k]
+
+[charaFace D 17]
+
+＠高扬斯卡娅
+说付不起钱其实都是在撒谎吧？[r]你们应该还有一些富余吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：雅嘎市民Ｃ
+富余？　我们哪儿来这种……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+
+＠高扬斯卡娅
+不是还有很多吗？
+[k]
+
+＠高扬斯卡娅
+足以向我抗议的无谓的体力。[r]能够放过反叛者的厚脸皮的精神。
+[k]
+
+＠高扬斯卡娅
+以及你身边那位财产与你差不多的朋友。
+[k]
+
+＠高扬斯卡娅
+掠夺弱者不正是雅嘎的规则吗？[r]你想，我刚才不也说了吗。
+[k]
+
+[bgmStop BGM_EVENT_81 0.5]
+
+[charaFace D 21]
+
+＠高扬斯卡娅
+解决粮食困难的对策，不只有获得这一种吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+
+＠E：雅嘎市民Ｃ
+哎？
+[k]
+
+＠F：雅嘎市民A
+[line 6]
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠F：雅嘎市民A
+……原来如此。是这样啊。既然亲卫队的你这么说，[r]意思就是不会责罚我们了吧。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 21]
+[charaFadein D 0.1 1]
+
+＠高扬斯卡娅
+对，你们人类的所谓善恶，[r]对我来说根本无关紧要。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 0]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+
+＠E：雅嘎市民Ｃ
+[FFFFFF]？　喂，怎么了。难道要放弃吗？[-][r]你也来一起抗议[line 3]
+[k]
+
+[charaFace F 1]
+
+＠F：雅嘎市民A
+是啊。一起买食物吧。[r]把我们的钱凑起来，一起买。
+[k]
+
+[messageOff]
+
+[charaMove F 100,0 0.4]
+[charaFadeout F 0.4]
+[se ad601]
+[wt 0.4]
+[charaFace F 1]
+[charaFadein F 0.7 1]
+[seStop ad601 0.5]
+[wt 0.2]
+[charaFace F 3]
+[fadeout black 0.6]
+[wait fade]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+
+[shake 0.05 5 4 0.3]
+[effect bit_talk_35]
+
+[se ad466]
+[wt 1.5]
+
+[fadeout black 0.5]
+[wait fade]
+
+[wt 1.0]
+
+[charaSet E 98115300 1 福尔摩斯]
+[charaSet F 98002000 1 芙芙]
+
+[scene 54200]
+
+[fadein black 0.7]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[wt 1.0]
+
+？1：………………
+？2：（为什么……要做那种事……）
+
+？！
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠玛修
+……没有被发现呢。[r]高扬斯卡娅……小姐，坐着马车离开了。
+[k]
+
+＠玛修
+被同伴殴打头部倒下的那位雅嘎也……[r]被马车给运走了吗……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+表情很消沉呢，声音也是呢，[r]玛修、[%1]。
+[k]
+
+＠戈尔德鲁夫
+尽可能简洁地将发生的事情报告给我。[r]只说重点就行了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠玛修
+……我本以为……是分配食物。
+[k]
+
+＠玛修
+袭击迦勒底的女性……[r]高扬斯卡娅小姐在街上分配食物。
+[k]
+
+＠玛修
+但是，却是要钱的。[r]而且还是以天价。
+[k]
+
+＠玛修
+不久，聚集起来的雅嘎们[r]对价格发起了抗议……然后……
+[k]
+
+＠玛修
+各位雅嘎间就发生了争执……[r]似乎只有人群中的半数才得到了食物。
+[k]
+
+＠玛修
+剩下的一半恐怕……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+死了……被同伴给杀死了吧？[r]夺取金钱，为了令自己得到食物？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠玛修
+………………
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠福尔摩斯
+……唔。[r]就算是以淘汰为目的，这也太恶趣味了。
+[k]
+
+＠福尔摩斯
+从结果来说，无法获得食物的雅嘎减少了一半，[r]整体的生存率或许确实提升了……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+哎哎，不要这么平静地说出这种结果论啦！[r]结论就是高扬斯卡娅是恶魔！　这样就行了！
+[k]
+
+＠戈尔德鲁夫
+[%1]，现在你的战力太垃圾了。[r]如果被高扬斯卡娅发现，一定会被杀掉的。
+[k]
+
+[charaFace B 1]
+
+＠戈尔德鲁夫
+就像我一样。不过我用天生的铁拳魔术[r]反杀了那群想杀我的[#杀戮猎兵:亲卫队]。
+[k]
+
+＠戈尔德鲁夫
+三流，不，冒牌魔术师的你是做不到的。[r]有自知之明地躲藏在暗中的方法更适合你。
+[k]
+
+[charaFace B 10]
+
+＠戈尔德鲁夫
+从这个角度来说，这次你做得很好。[r]我理解你的心情，真亏你能忍住
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+戈尔德鲁夫新所长……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+但是……该说果然，还是该说可恶呢。[r]高扬斯卡娅也在这俄罗斯就意味着……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+啊啊。而且她是从者。[r]从这魔力检测值来看毫无疑问。
+[k]
+
+＠达·芬奇
+在迦勒底时似乎伪装起来了，[r]但是在这俄罗斯中没进行任何伪装。
+[k]
+
+[charaFace C 25]
+
+＠达·芬奇
+应该是基尔什塔利亚……[#隐匿者:Crypter]的从者吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[bgmStop BGM_EVENT_81 0.5]
+
+＠福尔摩斯
+这样看来，或许应该将那位神父也当作从者吧。[r]因为他是和高扬斯卡娅小姐是一伙的。
+[k]
+
+[bgm BGM_EVENT_76 0.1]
+
+[charaFace E 5]
+
+＠福尔摩斯
+但是……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+但是什么呢？　Mr.福尔摩斯。[r]您觉得有问题的，难道是……
+[k]
+
+＠玛修
+不知道高扬斯卡娅、言峰神父这两位是从者，[r]就随意带入迦勒底的戈尔德鲁夫氏太没有眼光了吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+我……我可是最大的受害者哦！？[r]就不能多关心我一下吗！
+[k]
+
+[charaFace B 8]
+
+＠戈尔德鲁夫
+[%1]，[r]你完全没做好对后辈的教育工作吧！？
+[k]
+
+＠戈尔德鲁夫
+这小丫头在一本正经地狂戳我的痛处啊！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠福尔摩斯
+嗯。关于高扬斯卡娅小姐的问题，确实没错。
+[k]
+
+＠福尔摩斯
+都是因为戈尔德鲁夫氏太不争气了，[r]而且高扬斯卡娅小姐也很擅长伪装吧。
+[k]
+
+[charaFace E 0]
+
+＠福尔摩斯
+但言峰神父不同。[r]他确实是圣堂教会派遣来的正式的圣职者。
+[k]
+
+＠福尔摩斯
+和戈尔德鲁夫氏几乎没有任何关联，[r]因此不能说是他的疏忽。
+[k]
+
+＠福尔摩斯
+言峰神父与高扬斯卡娅小姐是在南极……[r]在前往迦勒底的船内见到的。是这样吧，新所长？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+唔，嗯。是这样。[r]应该也没怎么共处一席。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠福尔摩斯
+……这样看来，他们应该是使用了[r]不为我们所知的情报网来实行他们的计划吧。
+[k]
+
+[charaFace E 0]
+
+＠福尔摩斯
+今后要对这方面进行调查……[r]达·芬奇、[&Mr.:Miss][%1]。
+[k]
+
+＠福尔摩斯
+尽管说这话有些为时已晚，但还是有件事要向你们报告。[r]圣堂教会里不存在言峰绮礼这号人物。
+[k]
+
+＠福尔摩斯
+至少在2018年，[r]这个名字并不在圣职者名单上。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+这究竟是……[r]也就是说，言峰绮礼这个名称是伪造的吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠福尔摩斯
+……不。叫这名字的人物确实存在。[r]但是他已经不在世了。
+[k]
+
+＠福尔摩斯
+公元2004年，言峰绮礼在日本死亡了。[r]这是在迦勒底也能查到的记录。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+嗯？　那就是尸体在活动？[r]也就是说，那个偷袭混蛋是拟似从者吗？
+[k]
+
+＠达·芬奇
+英灵附体在尸体上的类型？[r]但这真的可能吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠福尔摩斯
+…………只要附体在尸体上，就能被召唤，[r]虽说我想断言没有这样的英灵。
+[k]
+
+＠福尔摩斯
+但或许存在特例，也就是唯有附在尸体身上，[r]才能作为拟似从者成立的英灵。
+[k]
+
+＠福尔摩斯
+但即便如此，还是存在一个巨大的问题。[r]圣堂教会的报告书里这样写的。
+[k]
+
+＠福尔摩斯
+[#言峰绮礼死亡时]，[#遗体被烧得一点不剩]，[r][#因此没能回收其遗体]。
+[k]
+
+＠福尔摩斯
+也就是说，这个世界里不存在言峰神父的肉体。[r]至少，不存在于我们的世界里。
+[k]
+
+？1：难道[line 3]
+？2：那个神父是这『俄罗斯』的……？
+
+？！
+
+[charaFace E 6]
+
+＠福尔摩斯
+……这个嘛，只是一种可能性而已。[r]对考察来说，证据还太少了。
+[k]
+
+[bgmStop BGM_EVENT_76 1.5]
+
+＠D：？？？
+哎呀～，我还在想这是从哪儿来的美味香气呢，[charaFace E 5][r]该不会是小巷里有什么可爱的小老鼠吧？
+[k]
+
+＠D：？？？
+尽管我很想网开一面，[r]但既然被我发现，就玩完了吧？
+[k]
+
+＠D：？？？
+碍眼的虫子就该被踩烂，[r]这是从言峰那儿得到的指示哦。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_81 0.1]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠高扬斯卡娅
+嗨，恭喜成功生还，迦勒底的各位♡[r]先容我对你们的幸运与生命力表示赞许吧。
+[k]
+
+？1：高扬斯卡娅……！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+御主，请退后……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠高扬斯卡娅
+哎呀。奋不顾身地保护御主呢。[r]但这可不行哦，玛修。
+[k]
+
+[charaFace D 21]
+
+＠高扬斯卡娅
+明明无法战斗，却摆出应战架势，[r]这可是会挑起对手的战意哦？
+[k]
+
+＠高扬斯卡娅
+请仔细想清楚自己的状况、性能、还有立场。[r]先不说你，你可不希望背后的[&他:她]被杀掉吧？
+[k]
+
+＠高扬斯卡娅
+那这种时候，就该抛弃羞耻心与面子吧？[r]要摆出恭顺的态度，表示“随你处置”哦。
+[k]
+
+[bgmStop BGM_EVENT_81 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_80 0.1]
+
+？1：谁会对你这种人……！
+？2：玛修，我们两个人一起上吧……！
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.5]
+[charaMoveReturn A 0,-5 0.4]
+[wt 0.7]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 21]
+[charaFadein D 0.1 1]
+
+[bgmStop BGM_EVENT_80 0.5]
+
+＠高扬斯卡娅
+[line 3]呵呵。[r]哦呵呵。呵呵呵呵呵呵呵呵呵呵呵呵！
+[k]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaFace D 9]
+
+＠高扬斯卡娅
+真是的，我是在开玩笑啦～！[r]哎呀，[%1]还真是拼命呢～♡
+[k]
+
+[charaFace D 0]
+
+＠高扬斯卡娅
+今天我还有别的业务没做完。[r]我是那种喜欢逐一处理工作的人。
+[k]
+
+＠高扬斯卡娅
+对你们的搜索以及扫荡应该从明天开始。[r]在这里互相厮杀有违我的信条。
+[k]
+
+[charaFace D 16]
+
+＠高扬斯卡娅
+所以我就宽宏大量地放你们一条生路吧。[r]这样做的话，也会让今后变得更加有趣。
+[k]
+
+＠高扬斯卡娅
+只对卡多克有利未免有些不公平吧。[r]至少也该给你们一些缓冲的时间才行。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+……你不止破坏了迦勒底……[r]还想让卡多克先生他们与前辈战斗吗！
+[k]
+
+？1：……玛修，冷静点。
+？！
+
+[charaFace A 14]
+
+＠玛修
+但是……！
+[k]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 90,0]
+[charaMove F -64,0 0.4]
+[charaDepth A 3]
+[charaDepth F 2]
+
+＠芙芙
+（芙，芙呜！）
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+
+＠高扬斯卡娅
+没错。我会让他们互相厮杀，[r]让[%1]和[#隐匿者:Crypter]。
+[k]
+
+＠高扬斯卡娅
+我们为此做足了准备。[r]如果在第一个人的时候就轻易玩完的话，我们可就亏大了
+[k]
+
+[charaFace D 19]
+
+＠高扬斯卡娅
+……真是的。[r]你都听到了吧，夏洛克·福尔摩斯。
+[k]
+
+＠高扬斯卡娅
+明明有你跟着，为什么还这么毫无防备？[r]你难道不该更为慎重地行动吗？
+[k]
+
+＠高扬斯卡娅
+假如负责俄罗斯的不是我，而是其他从者的话，[r]你们的旅途可就到此为止了哦。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠福尔摩斯
+没想到居然会被敌方的从者担心啊。[r]但是……你刚才说其他的从者？
+[k]
+
+＠福尔摩斯
+既然要给提示，请务必再给点优惠。[charaFace E 0][r]你的真名是什么？　御主是谁？　同伴的数量多少？　以及[line 3]
+[k]
+
+＠福尔摩斯
+这特异点的真正名字，究竟是什么？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠高扬斯卡娅
+呵。看来是恢复状态了呢。[r]这样才有击垮的价值嘛。
+[k]
+
+＠高扬斯卡娅
+我被你骗过一次。[r]所以等直接见面时，我定会加倍奉还。
+[k]
+
+[charaFace D 9]
+
+＠高扬斯卡娅
+对了，还有我是不会给任何提示的，请别见怪哦♡[r]毕竟我们这整整一年间都在不辞劳苦地准备舞台啊。
+[k]
+
+[charaFace D 16]
+
+＠高扬斯卡娅
+不明点、可疑点、以及反省点。[r]这一切还请由你们亲自去解明。
+[k]
+
+＠高扬斯卡娅
+我们的主人认为就该这样。[r]自遥远彼方飞来，如今尚无形态的[image berserker_language_1]。
+[k]
+
+？1：……为什么要敲诈那些雅嘎？
+？2：……你不是俄罗斯方的从者吗？
+
+？！
+
+[charaFace D 0]
+
+＠高扬斯卡娅
+啊，这件事啊。你还没明白呀？
+[k]
+
+
+＠高扬斯卡娅
+虽然我是你们的敌人，但却并非这俄罗斯[line 3][r]不是卡多克·泽姆露普斯的同伴。
+[k]
+
+[charaFace D 17]
+
+＠高扬斯卡娅
+雅嘎不过是人类发展形态之一。[r]对我来说，无非是厌恶的对象。
+[k]
+
+＠高扬斯卡娅
+因此要去榨取他们，彻底榨取。[r]以玩乐的心态。认真透彻。作为毕生事业。
+[k]
+
+＠高扬斯卡娅
+建立起榨取弱者社会构造的，[r]不就是你们人类吗？
+[k]
+
+＠高扬斯卡娅
+但暴力可不好。
+[k]
+
+＠高扬斯卡娅
+在迦勒底那时不得已行使了武力，[r]但那原本对我来说是出格行为。
+[k]
+
+＠高扬斯卡娅
+如果能给我一年的镇压时间，[r]我就会让大家更为和平地在背地里相互厮杀了吧。
+[k]
+
+＠高扬斯卡娅
+运用野蛮的暴力来毁灭某样东西，[r]不正是足以与人类媲美的愚昧吗？
+[k]
+
+＠高扬斯卡娅
+你们是自作自受，自取灭亡，[r]我可不想沦落到和你们同一层次。
+[k]
+
+[charaFace D 0]
+
+＠高扬斯卡娅
+……综上所述，[r]我是不会对你们出手的。
+[k]
+
+＠高扬斯卡娅
+伊凡雷帝阁下的委托……[r]排除迦勒底亚斯这一最大威胁的工作也结束了。
+[k]
+
+＠高扬斯卡娅
+指挥[#杀戮猎兵:亲卫队]就像是售后服务啦。
+[k]
+
+＠高扬斯卡娅
+假如你们来访，并要与[#隐匿者:Crypter]战斗的话，[r][#杀戮猎兵:亲卫队]的指挥就会交给[#隐匿者:Crypter]。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+[bgmStop BGM_EVENT_81 0.5]
+
+＠玛修
+……你的意思是，不打算在这里和我们战斗吧。[r]………因为我们很弱小。
+[k]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaFace A 15]
+
+＠玛修
+因为我们已经一无所有，[r]才会放我们一条生路……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 16]
+[charaFadein D 0.1 1]
+
+＠高扬斯卡娅
+对，说得没错，玛修。[r]你居然有胆量说出这种自己最不想承认的现实呢♡
+[k]
+
+[charaFace D 17]
+
+＠高扬斯卡娅
+看在你这份殷切与诚实的份上，[r]干脆这次真的放你们一马好啦。
+[k]
+
+＠高扬斯卡娅
+呵呵呵。其实我是打算趁你们松一口气的时候，[r]张开嘴巴一口把你们吞下去哦？
+[k]
+
+[messageOff]
+[se ad580]
+[charaFadeout D 0.4]
+[wt 1.0]
+[seStop ad580 0.4]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠玛修
+等[line 3]……[r]……呜……！
+[k]
+
+＠D：高扬斯卡娅
+没错没错。这样就对了，玛修、[%1]。
+[k]
+
+＠D：高扬斯卡娅
+不要反抗无法战胜的对手。[r]对动物来说这是常识吧。
+[k]
+
+＠D：高扬斯卡娅
+对如此聪明懂事的你们，[r]我就向你们做一个承诺吧。
+[k]
+
+＠D：高扬斯卡娅
+如果你们能在这俄罗斯活下来，我就会再来见你们的。[r]会作为一位女性，倾听你们的仇恨。
+[k]
+
+＠D：高扬斯卡娅
+所以[line 3]在那个时候到来前，[r]要像过街老鼠般四处逃窜哦？
+[k]
+
+＠D：高扬斯卡娅
+我是[#隐匿者:Crypter]们的顾问。[r]只要你们继续旅行，我就一定会作为敌人现身。
+[k]
+
+
+[messageOff]
+[charaTalk A]
+[bgmStop BGM_EVENT_80 1.5]
+[se ad555]
+[seVolume ad555 0 0.3]
+[wt 2.0]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠玛修
+……敌方从者反应……[seStop ad555 1.0][bgm BGM_EVENT_76 0.1][r]这是从者反应吗。
+[k]
+
+＠玛修
+总之，凶恶的魔力反应消失了。[charaFace A 12][r]……对不起，御主。
+[k]
+
+[charaFace A 8]
+
+＠玛修
+在自称高扬斯卡娅的从者面前……[r]我什么都[line 3]
+[k]
+
+？1：……没关系。我也什么都没能做到。
+？2：……现在先忍耐吧。至少现在[line 3]
+
+？！
+
+[charaFace A 4]
+
+＠玛修
+……是。[r]但是，那个……
+[k]
+
+＠玛修
+冷静下来之后，就满是疑问了。[r]她为何要出现在我们面前呢？
+[k]
+
+？1：是故意来恶心我们的吧……
+？2：算是……对我们的警告吗……
+？！
+
+[messageOff]
+[se ad649]
+[seVolume ad649 0 0.1]
+[bgmStop BGM_EVENT_76 1.5]
+[seStop ad649 2.5]
+[charaFace A 6]
+[wt 2.5]
+
+＠玛修
+！
+[k]
+
+＠玛修
+刚才的惨叫是……？
+[k]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠福尔摩斯
+……糟了。
+[k]
+
+[charaFace E 0]
+
+＠福尔摩斯
+两位，我知道面对毁灭迦勒底的犯人[r]令你们十分愤怒，但还请先冷静下来。
+[k]
+
+＠福尔摩斯
+城镇的状况似乎有些危险。[r]边警戒周围边返回帕茨西家吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+……明白了。[r]边隐蔽边前进吧，御主。
+[k]
+
+[messageOff]
+[se ad580]
+[charaFadeout A 0.4]
+[wt 1.0]
+[seStop ad580 0.4]
+
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+[scene 10000]
+[wipein leftToRight 0.1 1]
+[wait wipe]
+[charaSet F 1098126500 1 雅嘎市民A]
+[charaSet D 1098126400 1 帕茨西]
+[fadeout black 0.1]
+[wait fade]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[scene 54200]
+[wt 1.0]
+[fadein black 0.5]
+[wait fade]
+
+＠F：雅嘎市民
+请宽恕我吧！[r]请宽恕我吧，[#皇帝:沙皇]之光啊！
+[k]
+
+＠F：雅嘎市民
+这座城里的居民都是虔诚的[#皇帝:沙皇]子民，[r]没有人会忤逆雷帝啊！
+[k]
+
+＠F：雅嘎市民
+……我的哥哥确实因为企图加入反叛军，[r]而被你们[#杀戮猎兵:亲卫队]杀掉了。
+[k]
+
+[charaFace F 3]
+
+＠F：雅嘎市民
+但是，这事和我毫无关系啊！[r]更不用说[#什么魔术师]了！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+[charaFace F 3]
+[charaFadein F 0.1 2]
+
+＠G：亲卫队
+[#皇帝:沙皇]荣耀永存。[r][#皇帝:沙皇]荣耀永存。
+[k]
+
+＠G：亲卫队
+反叛的萌芽需迅速扼杀，[r]迅速碾碎。
+[k]
+
+＠G：亲卫队
+判处没收财产、烧毁房屋。[r]这就是违抗『非常大权』之人的下场。
+[k]
+
+[charaFace F 2]
+
+＠F：雅嘎市民
+怎么会……
+[k]
+
+＠G：亲卫队
+我们询问、质问。[r][#魔术师在哪]？
+[k]
+
+＠F：雅嘎市民
+都说了我不认识那些家伙啊……！
+[k]
+
+＠G：亲卫队
+……这就是你仍未理解[#皇帝:沙皇]的威光的证据。
+[k]
+
+＠G：亲卫队
+破坏、杀害。
+[k]
+
+[messageOff]
+[charaMove G -192,0 0.5]
+[wt 0.6]
+[se ad346]
+[wt 0.3]
+[seStop ad346 0.2]
+
+＠F：雅嘎市民
+啊[charaShake F 0.07 2 1 0.2]，啊啊……住手……请住手！[r]求求你们[line 3]
+[k]
+
+＠玛修
+（御主……！）
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠F：雅嘎市民
+请等一下！[r]我知道！　我知道！
+[k]
+
+＠F：雅嘎市民
+我知道谁是忤逆[#皇帝:沙皇]之人！
+[k]
+
+[bgmStop BGM_EVENT_81 0.5]
+
+＠F：雅嘎市民
+那个雅嘎的名字[line 3][r][#叫帕茨西]！
+[k]
+
+＠玛修
+！
+[k]
+
+？1：帕茨西[&:先生]……！？
+？！
+
+＠福尔摩斯
+这么说来，[r]他在这座城镇上受到的待遇有些奇怪呢。
+[k]
+
+＠F：雅嘎市民
+那个雅嘎很可疑！[r]那男人的父亲也是因为忤逆你们而被杀掉了！
+[k]
+
+＠F：雅嘎市民
+总觉得他最近手头挺阔绰的……[r]肯定是把情报透露给反叛军了！
+[k]
+
+＠F：雅嘎市民
+那个男的就是反叛军！
+[k]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace F 3]
+[charaFadein F 0.1 0]
+[charaFace D 2]
+[charaFadein D 0.1 2]
+
+＠帕茨西
+喂，你少胡扯啦！
+[k]
+
+＠玛修
+（是帕茨西先生……！）
+[k]
+
+？1：居然在这种最糟的时机！
+？！
+
+[charaFace D 4]
+
+＠帕茨西
+居然说我是反叛军！？
+[k]
+
+[charaFace F 3]
+
+＠F：雅嘎市民
+没错！　你就是反叛军的同伙，[r]大家都知道！　是吧！？
+[k]
+
+[charaFace D 2]
+
+＠帕茨西
+你这混蛋……！
+[k]
+
+＠F：雅嘎市民
+否则你是怎么捕来这些猎物的！
+[k]
+
+＠帕茨西
+！
+[k]
+
+＠F：雅嘎市民
+这城镇的猎场明明都被封锁了，[r]你却有交完税后仍富余的猎物！
+[k]
+
+＠F：雅嘎市民
+这就是证据！
+[k]
+
+[charaFace D 3]
+
+＠帕茨西
+这……
+[k]
+
+＠G：亲卫队
+……[r]……
+[k]
+
+＠F：雅嘎市民
+那……那我就先告辞了！[r]帕茨西，永别了！
+[k]
+
+[messageOff]
+[se ad586]
+[charaFadeout F 0.4]
+[wt 0.5]
+[seStop ad586 0.5]
+[wt 0.7]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 0]
+[wt 0.4]
+
+＠G：亲卫队
+[line 3]你是反叛军。
+[k]
+
+＠G：亲卫队
+你这反抗的态度，[r]丝毫没有对[#皇帝:沙皇]的敬意。
+[k]
+
+＠G：亲卫队
+违背威光之人，[r]要用拷问逼迫坦白罪行，然后处刑。
+[k]
+
+＠G：亲卫队
+交出你的首级吧。
+[k]
+
+＠帕茨西
+……[r]……
+[k]
+
+[charaFace D 4]
+
+＠帕茨西
+别开玩笑了，[r]混蛋……！
+[k]
+
+[messageOff]
+[se ad346]
+[wt 0.6]
+[seStop ad346]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[charaEffect G bit_talk_muzzleflash]
+[se ade65]
+[charaShake G 0.05 3 2 0.6]
+[wt 1.0]
+
+＠F：雅嘎市民
+开枪了……帕茨西反叛[#皇帝:沙皇]了！
+[k]
+
+[charaFace D 4]
+
+＠帕茨西
+咿，该死的……！
+[k]
+
+＠G：亲卫队
+确认反叛行为。[r]若是平常，应该立即开始肃清[line 3]
+[k]
+
+[messageOff]
+[fadeout black 0.7]
+[wait fade]
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+[fadein black 0.5]
+[bgm BGM_EVENT_80 0.5 0.4]
+[wait fade]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+哼。看到没，那就是不深思熟虑的下场。[r]无谓的反抗就会落到那种下场。
+[k]
+
+[charaFace B 2]
+
+＠戈尔德鲁夫
+但这次要表扬他干得好！[r]真是出色的佯动！
+[k]
+
+[charaFace B 10]
+
+＠戈尔德鲁夫
+好了，你应该清楚自己该做什么了吧，[r][%1]！
+[k]
+
+＠戈尔德鲁夫
+趁那个兽人被追捕的时候，[r]赶紧前往探查到的灵脉点！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+[bgmStop BGM_EVENT_80 0.5]
+
+＠玛修
+御主，走吧！
+[k]
+
+？1：嗯，走吧！
+？2：去救帕茨西[&:先生]！
+？！
+
+[bgm BGM_EVENT_82 0.1]
+
+＠玛修
+是！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+哎？[r]为什么要做那种事？
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.5 1.0]
+[bgm BGM_EVENT_82 0.5 0.4]
+[wait wipe]
+
+[scene 10000]
+
+[charaPut H 1200,1200]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[wipein leftToRight 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+[wt 0.1]
+
+[charaSet B 1098123200 1 戈尔德鲁夫]
+[charaSet C 1098124500 1 达·芬奇]
+[charaSet E 9005001 1 福尔摩斯]
+[charaTalk depthOff]
+[charaDepth C 2]
+[charaDepth B 3]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 -256,-50]
+[charaFace B 9]
+[charaFadein B 0.1 256,-50]
+[scene 51600]
+[wt 0.1]
+[wipeFilter cinema 0.5 0]
+[fadein black 0.5]
+[wait fade]
+
+＠福尔摩斯
+Mr.戈尔德鲁夫会惊讶是非常正常的，[r]但这就是迦勒底的作风。希望你能接受。
+[k]
+
+[charaFace E 1]
+
+＠福尔摩斯
+这并不是什么无益的事哦。[r]尽管会提高风险，但相应的回报也不会少。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 26]
+[charaFadein C 0.1 0,-50]
+
+＠达·芬奇
+没错，这样一来就休戚与共了。[r]这也关系到保护他的生命。
+[k]
+
+[charaFace C 30]
+
+＠达·芬奇
+好了，[%1]，[r]带着帕茨西一起逃吧！
+[k]
+
+＠达·芬奇
+倘若你们不出手相助，[r]他会与[#杀戮猎兵:亲卫队]战斗到死的！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[wipeOff]
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout leftToRight 0.5 1.0]
+[wait wipe]
+
+[charaSet B 1098123210 1 戈尔德鲁夫]
+[charaSet C 1098124510 1 达·芬奇]
+[charaSet E 98115300 1 福尔摩斯]
+[scene 54200]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[wipein leftToRight 0.5 1.0]
+[bgm BGM_EVENT_82 0.5 1.0]
+[wait wipe]
+
+＠玛修
+对，我也有同感……！[r]万不得已的时候，就再次……！
+[k]
+
+？1：这绝对不行。
+？2：不会出现万不得已的时候，玛修。
+
+？！
+
+[messageOff]
+[wt 0.6]
+[charaFace A 3]
+[wt 1.2]
+
+[fadeout black 0.7]
+[bgmStop BGM_EVENT_82 0.7]
+[wait fade]
+[charaFadeout A 0.1]
+[wt 1.0]
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠G：亲卫队
+确认反叛行为。[r]若是平常，应该立即开始肃清[line 3]
+[k]
+
+＠G：亲卫队
+但现在，我等的行动、军规、报酬，[r]皆由高扬斯卡娅亲卫队长掌管。
+[k]
+
+＠G：亲卫队
+未经亲卫队长允许，不得擅自进行处刑。[r]因此，只能打断其手足，令其无力化。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 0.5]
+[wait wipe]
+[se ad586]
+[charaFadeout G 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.4 0.5]
+[seStop ad586 1.0]
+[wait wipe]
+
+
+？1：帕茨西[&:先生]！
+
+？！
+
+[charaFace D 2]
+
+＠帕茨西
+哈！？　你们俩为什么……！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+有话稍后再说……！
+[k]
+
+＠玛修
+请跟我们走，帕茨西先生！[r]我们会为你指示逃跑路线！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+
+
+＠F：雅嘎市民
+那……那些家伙是什么！[r]和高扬斯卡娅大人一样没有毛啊！
+[k]
+
+
+＠F：雅嘎市民
+那就是传闻中的[#魔术师:科尔东]吗……！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace A 7]
+[charaFadein A 0.1 2]
+
+＠帕茨西
+你们到底[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠G：亲卫队
+反叛者不需要说话。[r]禁止说悄悄话。
+[k]
+
+[messageOff]
+
+[se ad171]
+[effect bit_talk_h_slash01]
+[wt 0.15]
+[seStop ad171 0.3]
+[wt 0.1]
+[wipeout rightToLeft 0.2 1]
+[wait wipe]
+[charaFadeout G 0.1]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[wipein leftToRight 0.1 1]
+[wait wipe]
+
+＠帕茨西
+呜，混账！
+[k]
+
+[messageOff]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[se ade65]
+[wt 1.0]
+
+？1：敌众我寡！　快逃！
+
+？！
+
+＠帕茨西
+我当然明白[line 3]不，原来是这样啊，[r]你们和[#杀戮猎兵:亲卫队]干过架吗……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+对！　所以我们很清楚他们的移动速度！[r]没问题，能逃得掉！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠福尔摩斯
+嗯。但你就无法再回这座城镇了。[r]接受我们的提案就意味着这个结果。
+[k]
+
+[charaFace E 0]
+
+＠福尔摩斯
+如果你觉得可以接受，[r]那我们也会全力协助你逃跑。如何？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+这种程度根本无所谓吧！[r]就像刚才那个市民的告密！
+[k]
+
+＠戈尔德鲁夫
+你被市民们当作麻烦人物看待吧？[r]事到如今还有什么好留恋的！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠帕茨西
+呜……[r]即便如此，我[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠亲卫队
+发现同伙。[r]紧急联络亲卫队长。申请处刑许可。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠帕茨西
+啊啊，该死……！[r]知道了啦，我跟你们走！　我就奉陪到底吧！
+[k]
+
+[charaSet G 98002000 1 芙芙]
+
+[charaFace D 4]
+
+＠帕茨西
+喂，赶紧带路啊，[%1]！[r]你可不想背后挨枪子吧！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠芙芙
+芙芙！
+[k]
+
+[messageOff]
+[fadeout black 0.7]
+[se ad586]
+[se ad580]
+[bgmStop BGM_EVENT_80 0.7]
+[wait fade]
+[charaFadeout G 0.1]
+
+[scene 54100]
+
+[charaSet F 1098123010 1 穆尼尔]
+
+[wt 1.0]
+[seStop ad586 1.0]
+[seStop ad580 1.0]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠福尔摩斯
+好了，顺最短路线逃到镇外了。[r]万幸的是没有出现伤亡。
+[k]
+
+？1：得救了……！
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠玛修
+是，我觉得前辈的[r]『在小巷内推倒货物制造障碍』的作战成效卓著。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠穆尼尔
+嗯，就像电影里的关键场景。[r]和日本幕末电影一样呢。
+[k]
+
+＠穆尼尔
+奔走逃跑过程中顺带斩杀敌人。[r]这在伦敦贫民窟也是挺常见的光景哦！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 30]
+[charaFadein C 0.1 1]
+
+＠达·芬奇
+[#杀戮猎兵:亲卫队]没有开枪[r]也是得救的关键原因呢。
+[k]
+
+[charaFace C 24]
+
+＠达·芬奇
+虽然不知道发生了什么，但看来这次[r][#杀戮猎兵:亲卫队]的命令系统出了点差错。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+[bgmStop BGM_EVENT_77 0.5]
+
+＠福尔摩斯
+是啊。感谢这意外的幸运吧。[r]不过休息就到此为止了，各位。
+[k]
+
+[bgm BGM_EVENT_76 0.1]
+
+＠福尔摩斯
+我在目的地做了标记。[r]Miss基列莱特，麻烦给帕茨西看一下。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace A 7]
+[charaFadein A 0.1 2]
+
+＠玛修
+是。就是这里，帕茨西先生。
+[k]
+
+[messageOff]
+[charaMove A 200,0 0.3]
+[wt 1.0]
+[se ad1]
+[wt 1.5]
+
+＠帕茨西
+噢，噢噢。[r]……这是山的俯瞰图吗？
+[k]
+
+＠帕茨西
+虽然乱七八糟的有点难看懂……是这样啊，[r]这玩意还显示出高低起伏啊。真方便呢……
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠福尔摩斯
+上面的红色光点就是目的地。[r]希望你能在前方不远处的山路为我们带路。
+[k]
+
+＠福尔摩斯
+毕竟光靠地图也没法看清全貌。[r]所以想依靠熟悉这片土地的你的知识。
+[k]
+
+[charaFace E 6]
+
+＠福尔摩斯
+当然，请回避魔兽出没的场所。[r]切记我们正遭追捕。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠帕茨西
+好，赶紧走吧，[r][%1]、玛修！
+[k]
+
+[charaFace D 4]
+
+
+＠帕茨西
+但回头来想想，总觉得[r]所有一切都在照你的预料发展！
+[k]
+
+[charaFace D 2]
+
+＠帕茨西
+你这家伙肯定很招人厌吧！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠福尔摩斯
+哈哈哈，说得没错！[r]尤其会被你这种老实人讨厌呢！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_76 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

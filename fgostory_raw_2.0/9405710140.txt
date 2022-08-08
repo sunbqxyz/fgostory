@@ -1,0 +1,669 @@
+
+＄94-05-71-01-4-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1005001 1 尼禄]
+[charaSet B 98001000 1 玛修]
+[charaSet C 6031001 1 刑部姬]
+[charaSet D 3043000 1 绘里濑]
+[branchQuestNotClear lblNotClear00 3000303]
+[charaSet E 1098124510 1 达·芬奇]
+[branch lblConf00]
+[label lblNotClear00]
+[charaSet E 98111500 1 达·芬奇]
+[label lblConf00]
+[charaSet F 1098127000 1 秋叶原守卫A]
+[charaSet G 98109200 1 秋叶原守卫B]
+[charaSet O 98109200 1 秋叶原守卫D]
+[charaSet H 99363000 1 秋叶原守卫C]
+[charaSet I 1098154710 1 上级Wish men A]
+[charaSet J 1098154710 1 上级Wish men B]
+[charaSet K 7039001 1 伽拉忒亚]
+[imageSet L back114100 1 1]
+[imageSet M back10000 1]
+[charaSet N 98115000 1 通讯用]
+[charaPut N 1200,1200]
+[charaEffect N bit_talk_10_LowLevel]
+[charaScale M 1.1]
+[charaDepth M 1]
+[charaDepth C 2]
+
+[pictureFrame cut063_cinema]
+[scene 114000]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1 0.7]
+
+[charaTalk off]
+[charaFace I 0]
+[charaFadeinFSL I 0.1 -256,-50]
+[charaFace J 0]
+[charaFadeinFSR J 0.1 256,-50]
+[wt 0.7]
+[charaMoveReturnFSR J 256,-54 0.3]
+[wt 0.4]
+[charaMoveReturnFSR J 256,-54 0.3]
+[wt 1.0]
+[charaMoveReturnFSL I -266,-50 0.7]
+[wt 1.7]
+
+[bgm BGM_EVENT_77 1.0 0.2]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[pictureFrame]
+[wt 1.0]
+[bgm BGM_EVENT_77 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠尼禄
+什么，立刻就知道了。[r]大家真的全都知道呢。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠玛修
+是的。而且看来是在非常显而易见的场所……
+[k]
+
+[charaFace B 6]
+＠玛修
+啊，该不会是那个吧？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠刑部姬
+唔，那就是……造形王居住的……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[charaFadein L 0.1 0,200]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.4]
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[scene 114100]
+
+[wt 1.0]
+[charaAttack L normal 0,-360 1.5]
+[wt 1.5]
+[se ad186]
+[effect bit_talk_41_fs]
+[wt 1.0]
+
+＠刑部姬
+[f x-large]秋叶原tower会馆！！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.7 1]
+[wait wipe]
+[charaFadeout L 0.1]
+[effectDestroy bit_talk_41_fs]
+[cameraMove 0.1 0,0 1.00]
+[wt 0.4]
+[wipein rectangleStripDownToUp 0.7 1]
+[wait wipe]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠刑部姬
+[f x-large]不对！！
+[k]
+
+[charaFace C 5]
+＠刑部姬
+不是那个。[r]这和[#公主:我]想去的秋叶原中的那个地方不一样。
+[k]
+
+＠刑部姬
+虽然[#公主:我]在资料里见过相似的建筑物，[r]但绝对不是这个样子的。
+[k]
+
+？1：我明白。
+？2：那座楼有那么高吗……
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+＠绘里濑
+怎么说呢，这个……什么来着？[r]总有种傻乎乎的感觉……
+[k]
+
+＠绘里濑
+当然了，[r]我所在的“秋叶原”也没有这种东西。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear01 3000303]
+[charaPut N 1]
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+
+＠达·芬奇
+和街道的样子不同，建筑物虽似曾相识，[r]但形状感觉有些不一样？
+[k]
+
+[charaFace E 23]
+＠达·芬奇
+嗯嗯……这里果然确定就是秋叶原呢。
+[k]
+
+[branch lblConf01]
+
+[label lblNotClear01]
+[charaPut N 1]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0,-90]
+
+＠达·芬奇
+和街道的样子不同，建筑物虽似曾相识，[r]但形状感觉有些不一样？
+[k]
+
+[charaFace E 4]
+＠达·芬奇
+嗯嗯……这里果然确定就是秋叶原呢。
+[k]
+
+[label lblConf01]
+
+＠达·芬奇
+是保留了原本秋叶原这条街的存在形式和构成要素，[r]并进行加工改造后的结果吧……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠尼禄
+不能说不算艺术的[r]用兼具调和与不调和色彩点缀的外观。
+[k]
+
+＠尼禄
+以及累加到仿佛能穿透天际的[r]毫不留情的高度。
+[k]
+
+[charaFace A 2]
+＠尼禄
+余并不讨厌这种一味追求出挑的态度。[r]虽然不讨厌……！
+[k]
+
+[bgmStop BGM_EVENT_7 0.7]
+
+[charaFace A 4]
+＠尼禄
+不，对这座塔的美学评价暂且搁置。
+[k]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFace A 0]
+＠尼禄
+总之，造形王就在这座楼的顶层，[r]是这么说的吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear02 3000303]
+[charaPut N 1]
+[charaTalk E]
+[charaFace E 24]
+[charaFadein E 0.1 1]
+＠达·芬奇
+说得对。
+[k]
+
+＠达·芬奇
+但令人介意的是，告诉我们地点的他们都不约而同地表示[r]『想进去可没那么简单』[line 3][twt 1.0][charaFace E 4]啊。
+[k]
+
+[branch lblConf02]
+
+[label lblNotClear02]
+[charaPut N 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-90]
+＠达·芬奇
+说得对。
+[k]
+
+＠达·芬奇
+但令人介意的是，告诉我们地点的他们都不约而同地表示[r]『想进去可没那么简单』[line 3][twt 1.0][charaFace E 4]啊。
+[k]
+
+[label lblConf02]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[fowardEffect bit_talk_41_fs]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠尼禄
+劳驾！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[fowardEffectDestroy bit_talk_41_fs]
+
+[charaTalk D]
+[charaFace D 23]
+[charaFadein D 0.1 1]
+＠绘里濑
+皇帝陛下[line 3]！？？[messageShake 0.05 4 4 0.5]
+[k]
+
+？1：（她压根没听吧。）
+？2：（她彻底忘了吧。）
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠尼禄
+余想前往这座塔的顶层。[r]立刻打开大门，让出道来！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFadeinFSL F 0.4 0]
+[charaFace G 0]
+[charaFadeinFSR G 0.4 2]
+[wt 0.7]
+[charaTalk on]
+＠秋叶原守卫A
+啊啊～，你是秋叶原新人吧？[r]偶尔会遇到这种人呢～。
+[k]
+
+＠秋叶原守卫B
+这里其实是面向老手的大楼。[r]相对的，这里贩卖的东西也很好……
+[k]
+
+＠秋叶原守卫B
+可这里对新人非常危险，[r]所以我们不能让你进入。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠尼禄
+怎么可能。虽然外表异样，[r]但听说这里只是普通的商业设施啊。
+[k]
+
+＠尼禄
+里面只有购物吧。[r]怎么可能有危险[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 0.7]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[cueSe SE_21 21_ade579]
+[wt 1.0]
+
+[se ad69]
+[seStop ad69 1.5]
+[wt 1.0]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth I 2]
+[charaDepth J 2]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.2]
+[charaFace I 3]
+[charaFadeinFSL I 0.4 -256,-50]
+[charaFace J 3]
+[charaFadeinFSR J 0.4 256,-50]
+＠秋叶原守卫C
+救急，救急～！　耗尽体力的客人倒下了！[r]意识级别1！
+[k]
+
+＠秋叶原守卫C
+搬运到会馆外后立刻进行救护！
+[k]
+
+[charaFace I 3]
+＠上级Wish men A
+呜呜，不要，不要。我，还没，买到，[r]那个限定版……以及签名本……！
+[k]
+
+[charaFace J 3]
+＠上级Wish men B
+为了来这里，我甚至把工作辞了……[r]拜托了，让我买……我有钱……
+[k]
+
+＠秋叶原守卫C
+生命更重要啦，客人！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[charaFadeTime M 0.1 0.6]
+[bgm BGM_EVENT_3 0.4 0.6]
+＠刑部姬
+（咽口水。刚才，从瞬间打开的门里溢出的[#东西]……）
+[k]
+
+[charaFace C 2]
+＠刑部姬
+（和从者庆典会场一样……不，是有过之无不及的……[r]　战场的气息……！）
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠尼禄
+……唔。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadeinFSL F 0.1 0]
+[charaFace G 0]
+[charaFadeinFSR G 0.1 2]
+＠秋叶原守卫A
+瞧，都看到了吧？　在这里购物可不是玩耍。[r]冒失地挑战有可能再也无法站起来哦。
+[k]
+
+＠秋叶原守卫A
+楼层越高，面向高手的店越多，[r]购物难度也会越来越高。
+[k]
+
+＠秋叶原守卫B
+所以必须先做一张卡，提升等级，[r]争取成为上级Wish men。
+[k]
+
+＠秋叶原守卫B
+这卡是显示此人有多熟悉秋叶原的大致证明。
+[k]
+
+＠秋叶原守卫B
+只要成为上级Wish men，[r]就能进入这座大楼了。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+＠绘里濑
+……等级？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠秋叶原守卫B
+是的。呃……客人是团体一起使用的吧。[r]那请拿好这张Wish men卡（团体用）。
+[k]
+
+＠秋叶原守卫B
+通过在秋叶原各店铺购物，[r]可以积点，并提升等级。
+[k]
+
+＠秋叶原守卫B
+结账时千万别忘记出示这张卡。
+[k]
+
+＠秋叶原守卫B
+啊，有些店还会举办一些特殊的活动。
+[k]
+
+＠秋叶原守卫B
+如果能完成那些，[r]说不定还能积到点数哦。请加油。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠刑部姬
+唔……类似附带特典的积点卡系统吧……
+[k]
+
+＠刑部姬
+只要消费很多钱，成为白金会员，[r]就能获得某些特别服务的那类吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠尼禄
+真麻烦！[r]现在就用武力闯过去就行了！
+[k]
+
+[charaFace A 4]
+＠尼禄
+……余本想这么说。
+[k]
+
+＠尼禄
+但余是会学习的皇帝。[r]不能因为一时激情冲动，为御主添麻烦。
+[k]
+
+[charaFace A 0]
+＠尼禄
+没办法，现在只能[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 0.4]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+＠伽拉忒亚
+我明白了。[r]用蛮力闯过去吧。
+[k]
+
+＠伽拉忒亚
+对我来说，见到王是最优先目的。[r]为此，我不惜动用任何手段。
+[k]
+
+＠伽拉忒亚
+虽然不忍心毁坏那位亲手制作的东西，[r]但放心吧。稍后我会修好你们的。
+[k]
+
+＠伽拉忒亚
+拥有制作人偶技术的存在，[r]自然也是拥有修复技术的存在。
+[k]
+
+[messageOff]
+[se ad51]
+[wt 1.0]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠秋叶原守卫A
+唔，反抗的态度！
+[k]
+
+＠秋叶原守卫A
+对于你们这种不明事理的新人，[r]很抱歉，也只能让你们尝尝苦头了。
+[k]
+
+＠秋叶原守卫A
+秋叶原守卫，集合！
+[k]
+
+[messageOff]
+[wt 0.2]
+[charaTalk off]
+[charaDepth F 3]
+[charaFace O 0]
+[charaFadeinFSL O 0.4 -430,0]
+[charaFace G 0]
+[charaFadeinFSR G 0.4 430,0]
+[charaMoveFSL O -420,0 0.4]
+[charaMoveFSR G 420,0 0.4]
+[se ad70]
+[seStop ad70 1.0]
+[wt 1.5]
+
+[charaFadeout F 0.1]
+[charaFadeout O 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠刑部姬
+伽拉忒亚亲～！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear03 3000303]
+[charaPut N 1]
+[charaTalk E]
+[charaFace E 17]
+[charaFadein E 0.1 1]
+[branch lblConf03]
+
+[label lblNotClear03]
+[charaPut N 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-90]
+
+[label lblConf03]
+＠达·芬奇
+顺便一提，虽然能正常沟通，[r]但她是狂战士职阶哦。
+[k]
+
+＠达·芬奇
+可能和南丁格尔女士一样，[r]是那种『拥有明确但与我们不同逻辑』的类型。
+[k]
+
+＠达·芬奇
+记住这点，千万小心！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠刑部姬
+[#公主:我]希望你这话能早点说啦！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠绘里濑
+同感！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

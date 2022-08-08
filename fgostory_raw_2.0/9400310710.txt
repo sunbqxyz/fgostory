@@ -1,0 +1,167 @@
+＄94-00-31-07-1-0
+
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 8001001 1 玛修]
+[charaSet B 98003000 1 Dr.罗曼]
+[charaSet D 98065000 1 埃尔梅罗Ⅱ世]
+[charaSet E 3002000 1 迪尔姆德]
+[charaSet F 98059000 1 肯尼斯]
+[charaSet G 5002001 1 吉尔]
+
+[scene 25100]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[fadein black 2.0]
+[wait fade]
+
+＠玛修
+敌方气势减弱了！[r]趁现在……
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk E]
+[charaFace F 0]
+[charaFace E 0]
+[charaFadein F 0.1 2]
+[charaFadein E 0.1 0]
+＠迪尔姆德
+一口气突破吧。可以吗，御主？
+[k]
+
+[charaFace F 5]
+＠肯尼斯
+嗯。我以埃尔梅罗Ⅱ世的名义下令，[r]消灭这肮脏眷属的主人！
+[k]
+
+？1：埃尔梅罗Ⅱ世？
+？2：果然是亲戚吗？
+
+？！
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠埃尔梅罗Ⅱ世
+（这件事等今后有机会再说……）
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[scene 25200]
+
+[charaFadeout D 0.1]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_5 2.0]
+[fadein black 2.0]
+[wait fade]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.4 1]
+＠玛修
+这……这是……
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk E]
+[charaFace F 0]
+[charaFace E 5]
+[charaFadein F 0.1 2]
+[charaFadein E 0.1 0]
+＠迪尔姆德
+何等可怕……竟然将尸体作为消遣品！
+[k]
+
+＠肯尼斯
+唔，这样就能理解为何监督者要我们尽快解决这家伙了。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+
+[charaTalk B]
+[se ad13]
+[communicationChara 98003003 1 5 0 5]
+[wt 0.3]
+
+＠Dr.罗曼
+小心！[r]有从者反应，就在你们身边！
+[k]
+
+[messageOff]
+[communicationCharaClear]
+[wait communicationChara]
+
+[bgmStop BGM_EVENT_5 0.5]
+[wt 0.5]
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.4 1]
+
+＠G：Caster
+可恶，阻碍我对美的探求的愚蠢家伙们！[r]你们这些家伙也打算阻止圣女的觉醒吗！
+[k]
+
+[charaFadeout G 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+吉尔·德·雷元帅！？
+[k]
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+[charaTalk B]
+
+[charaFace D 0]
+[charaFadein D 0.1 2]
+
+[communicationCharaLoop 98003003 0 5 0 4]
+
+＠Dr.罗曼
+这个人还是老样子，[r]无论被召唤到哪里，都无法好好沟通啊……
+[k]
+
+＠埃尔梅罗Ⅱ世
+这次由于受到召唤的御主影响，性质尤为恶劣。[r]撇开圣杯战争的种种因素，也应该尽快排除。
+[k]
+
+[charaFadeout D 0.1]
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠吉尔
+胡说八道！[r]在这里成为供品的应该是你们吧！！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

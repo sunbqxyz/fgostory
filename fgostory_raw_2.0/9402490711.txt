@@ -1,0 +1,253 @@
+
+
+
+＄94-02-49-07-1-1
+
+[soundStopAll]
+
+
+[charaSet A 10007000 1 冲田Alter]
+[charaSet B 1027002 1 冲田总司]
+[charaSet C 10007001 1 冲田Alter２]
+[charaSet D 1027001 1 冲田总司２]
+[charaSet E 98002000 1 特效用dummy]
+[charaSet G 98002000 1 特效用dummy2]
+[charaSet H 1027002 1 冲田总司（闪光）]
+
+[bgm BGM_EVENT_6 0.1]
+
+[scene 59700]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad54]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[charaShake B 0.03 3 3 0.3]
+[wt 0.7]
+
+＠冲田总司
+…………
+[k]
+
+＠冲田总司
+真是的，还有另一个自己的感觉真是奇妙呢。
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠冲田Alter
+……如果你想杀，其实最初的一刀就能斩杀我了。[r]你为什么没那么做？
+[k]
+
+？1：难道冲田小姐……
+？2：为了锻炼Alter？
+
+？！
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠冲田总司
+我完全不明白你在说什么哦。
+[k]
+
+＠冲田总司
+我是被圣杯召唤，[r]并在此不断杀人的人斩而已。
+[k]
+
+＠冲田总司
+无论是生前，还是现在，我都不断斩杀人。[r]甚至忘记了自己为何还活着。
+[k]
+
+[messageOff]
+[charaPut E 1]
+[charaEffect E bit_talk_06]
+[wt 1.5]
+
+＠冲田总司
+[line 2]因此，[r]才会将还债的事[#强推给了你]。
+[k]
+
+[charaFadeout B 0.1]
+[charaPut E 1200,1200]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠冲田Alter
+…………
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaPut E 1]
+＠冲田总司
+……把这个拿去吧。
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[charaDepth H 10]
+[charaDepth D 9]
+[charaDepth C 8]
+[charaDepth A 2]
+[charaDepth B 1]
+[wt 0.1]
+
+
+
+[se su4]
+[seStop su4 1.5]
+[effect bit_talk_22]
+[wt 1.0]
+[charaFilter H silhouette FFFFFF80]
+[charaFadeTime H 1.5 0.9]
+[wt 1.5]
+[charaFadeout B 0.1]
+[wt 0.1]
+[se ad606]
+[charaFadein D 0.7 1]
+[charaFadeTime H 1.3 0]
+[charaFadeout H 1.0]
+[effectStop bit_talk_22]
+[seStop ad606 1.0]
+[wt 1.5]
+[charaFadeout D 0.4]
+[charaPut E 1200,1200]
+[wt 0.4]
+
+[charaFace A 7]
+[charaFadein A 0.4 1]
+[wt 1.0]
+
+[charaEffect G bit_talk_36]
+[se ad39]
+[wt 1.5]
+[fadeout white 1.0]
+[wait fade]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_36]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+[wt 0.1]
+[fadein white 0.4]
+[wait fade]
+
+[wt 0.7]
+
+[charaTalk on]
+
+＠C：冲田Alter
+这是你的宝具……？
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaPut E 1]
+＠D：冲田总司
+你就好好保护你的御主吧。
+[k]
+
+＠D：冲田总司
+这是生前的我没能做到的事。[r]也是我或许应该去做的事。
+[k]
+
+[charaFadeout D 0.1]
+[charaPut E 1200,1200]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠C：冲田Alter
+…………
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaPut E 1]
+＠D：冲田总司
+再见了，未来本应如此的我。
+[k]
+
+[charaFace D 4]
+＠D：冲田总司
+请代我向阿弥陀佛道歉。[r]对我只为自己而活说道歉。
+[k]
+
+[charaFace D 0]
+＠D：冲田总司
+[line 3]另外那边的你。
+[k]
+
+＠D：冲田总司
+如果可能的话，希望你能在一旁见证[r]另一个我，直到那个时刻到来。
+[k]
+
+
+[messageOff]
+[se ad52]
+[charaSpecialEffect D flashErasure 1 2.0]
+[wait charaSpecialEffect D]
+[wt 1.0]
+[charaEffectStop E bit_talk_06]
+[charaFadeout D 0]
+[wt 1.0]
+
+
+？1：冲田小姐……
+？2：Alter……冲田小姐到底在说什么……
+
+？！
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠C：冲田Alter
+……御主，[r]我想起我应该做什么了。
+[k]
+
+[charaFace C 6]
+＠C：冲田Alter
+回去吧，那个时刻就快到了。
+[k]
+
+＠C：冲田Alter
+[line 3]一切结束的，那个时刻。
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_6 2.0]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,392 @@
+
+
+
+＄03-00-06-11-2-1
+
+
+
+
+[soundStopAll]
+
+[charaSet A 1017001 1 武藏]
+[charaSet B 8001400 1 武装玛修]
+[charaSet C 1098183600 1 四足敌人]
+[charaSet D 1098183600 1 四足敌人]
+[charaSet E 1098190600 1 莫德雷德]
+[charaSet F 98002000 1 芙芙]
+[charaSet G 9005001 1 福尔摩斯]
+[charaSet H 8001410 1 玛修]
+
+[charaSet O 5009000 1 人工智能用dummy]
+[charaSet S 5009000 1 特效用dummy]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 92501]
+
+[charaPut O 1200,1200]
+[charaEffect O bit_talk_10_red_ai 0,33]
+
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠武藏
+[line 3]嘿哟！
+[k]
+
+[messageOff]
+[se ad7]
+[charaFace A 2]
+[charaMoveScale A 1.1 0.2]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.2]
+
+[se bac210]
+[fowardEffect bit_talk_x_slash03]
+[wt 0.2]
+
+[charaShake C 0.02 3 3 0.4]
+[wt 0.7]
+
+[se ad42]
+[charaSpecialEffect C enemyErasure 1 1.2]
+[seStop ad42 1.6]
+[wt 2.0]
+[charaScale A 1.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠武藏
+玛修！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+
+
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠B：玛修
+是！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaDepth B 4]
+[charaDepth A 5]
+
+[charaFace A 5]
+[se ad7]
+[charaFadein A 0.2 -200,0]
+[charaMove A -150,0 0.2]
+[wt 0.2]
+[charaShake B 0.05 3 3 0.2]
+[charaMove B 0,-10 0.3]
+[se ad775]
+[wt 0.2]
+
+
+[se ad678]
+[charaDepth S 9]
+[charaPut S -150,0]
+[charaEffect S bit_talk_quickmove]
+
+[wt 0.1]
+[charaMove A -150,20 0.2]
+[charaFadeout A 0.2]
+
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+
+[scene 10000]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+[se bac210]
+[charaPut S 1]
+[charaEffect S bit_talk_x_slash01]
+[wt 0.3]
+
+[se bac211]
+[fowardEffect bit_talk_x_slash02]
+[wt 0.4]
+
+[se ad20]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+
+[scene 92501]
+
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein C 0 2]
+[charaFadein D 0 0]
+[charaShake C 0.02 3 3 0.6]
+[charaShake D 0.02 3 3 0.6]
+[wt 1.0]
+
+
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[se ad42]
+[charaSpecialEffect C enemyErasure 1 1.2]
+[charaSpecialEffect D enemyErasure 1 1.2]
+[seStop ad42 1.6]
+[wt 2.6]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠武藏
+…………好，结束了。[r]我们有边战斗边朴实地一点点移动，如何？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut O 1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠E：人工智能
+没什么如何不如何的。[r]目标不在这附近。去下一个地方，下一个！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut O 1200,1200]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠芙芙
+芙呜呜。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠武藏
+我就知道，真失望。[r]这样看来卡利古拉皇帝和凯妮斯小姐会更快找到吧？
+[k]
+
+？1：不走回头路，继续前进！
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth B 5]
+[charaDepth H 6]
+
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[wt 0.4]
+
+[se ad658]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.4]
+
+[charaFadeout B 0.4]
+[wt 0.4]
+
+
+[charaTalk on]
+[charaTalk H]
+＠玛修
+是。但千万不要勉强啊，御主。
+[k]
+
+[charaFace H 12]
+
+＠玛修
+这次尤其要注意体力的消耗……[r]不，事到如今也不用提醒了吧。对不起。
+[k]
+
+[charaFace H 7]
+＠玛修
+那我们出发吧！[r]我们这一组也不能认输！
+[k]
+
+[bgmStop BGM_EVENT_70 1.0]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠武藏
+……[r]……
+[k]
+
+[charaFace A 3]
+＠武藏
+…………唔～～～～！　真是的～！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth H 4]
+[charaDepth A 5]
+
+[charaFace H 7]
+[charaFadein H 0.1 80,0]
+[wt 0.4]
+
+[se ad7]
+[seVolume ad7 0 0.4]
+[charaFace A 3]
+[charaFadein A 0.4 -100,0]
+[charaMove A -80,0 0.4]
+[wt 0.6]
+
+[se ad168]
+[seVolume ad168 0 0.6]
+[charaFace H 3]
+[charaShake A 0.02 3 3 0.4]
+[charaShake H 0.02 3 3 0.4]
+[wt 0.2]
+[seStop ad168 0.1]
+[wt 0.8]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk on]
+[charaTalk H]
+＠玛修
+哇，哇哇，武藏小姐！？[r]为什么要将我的头埋进胸口！？
+[k]
+
+
+＠马卡里俄斯
+[charaTalk S]
+你们在干什么……？
+[k]
+
+＠阿黛勒
+[charaTalk S]
+哎呀，你们感情真好呢。简直就像姊妹。
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaTalk off]
+[charaMove A -150,0 0.4]
+[wt 0.8]
+
+[charaTalk on]
+[charaFace A 8]
+＠武藏
+抱歉抱歉。[r]忍不住，本能地动起来了！
+[k]
+
+[charaFace H 6]
+[charaTalk H]
+＠玛修
+本能……
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠福尔摩斯
+聊完了吗？[r]没事。正好让[%1]休息一下。
+[k]
+
+[charaFace G 1]
+＠福尔摩斯
+那我们继续在巨大雕像街上奔驰吧！[r]在无人的街道上肆意横冲直撞，这真是，
+[k]
+
+＠福尔摩斯
+也是一种前所未有的快感呢！[r]你们不这么认为吗！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠芙芙
+芙芙，芙啊呜！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 0.8]
+[charaFadeout F 0.1]
+[wt 1.0]
+
+[bgm BGM_EVENT_62 0.1]
+
+？1：走吧！
+？2：身体强化礼装状态良好，还能继续跑！
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+＠玛修
+是，御主！
+[k]
+
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+]

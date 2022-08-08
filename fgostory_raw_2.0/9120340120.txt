@@ -1,0 +1,333 @@
+
+
+＄91-20-34-01-2-0
+
+[soundStopAll]
+
+[charaSet A 2034000 1 退尔]
+[charaSet C 2038000 1 俄里翁]
+
+[charaSet J 8001000 1 dummy特效1]
+
+[branchQuestNotClear lblNotClear 3000303]
+[flag IsClear true]
+[branch lblConf]
+[label lblNotClear]
+[flag IsClear false]
+[label lblConf]
+
+
+[branch lblNotClear1 IsClear false]
+
+[charaSet B 1098124510 1 达·芬奇]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[charaSet B 98111500 1 达·芬奇]
+
+[label lblConf1]
+
+[scene 10000]
+
+[fadein black 1.2]
+[wait fade]
+
+[se ad15]
+[wt 0.35]
+[se ad15]
+[wt 0.2]
+
+[wipeout moza 1.0 1.0]
+[wait wipe]
+
+[scene 20803]
+
+[se ad146]
+[wipein moza 1.0 1.0]
+[wait wipe]
+
+[seStop ad146 0.4]
+[wt 0.7]
+
+[charaPut J 0,0]
+[charaEffect J bit_talk_10_MiddleLevel]
+[wt 0.2]
+
+[se ad13]
+
+[branch lblNotClear2 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+[wt 0.5]
+
+[label lblConf2]
+
+＠达·芬奇
+就是这样！[bgm BGM_EVENT_62 0.1]
+[k]
+
+
+＠达·芬奇
+我迅速搭建了一个程序～。[r]设定成狩猎专用的特别地图。
+[k]
+
+[charaFace B 1]
+
+＠达·芬奇
+生态系统与环境变化也尽可能设定成自然形式。
+[k]
+
+？1：你还是那么有效率。
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 2000,2000]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠退尔
+噢噢，谢谢。不好意思。[r]这座森林相当不错。
+[k]
+
+[charaPut J 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch lblNotClear3 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[branch lblConf3]
+[label lblNotClear3]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf3]
+
+＠达·芬奇
+另外我还给你准备了值得一战的对手哦。
+[k]
+
+＠达·芬奇
+如果你想比试狩猎的话，[r]没有比这更适合的了。
+[k]
+
+[branch lblNotClear4 IsClear false]
+
+
+[charaFace B 19]
+
+[branch lblConf4]
+[label lblNotClear4]
+
+
+[charaFace B 1]
+
+[label lblConf4]
+
+＠达·芬奇
+尽情与神代的猎人一较高下吧！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 2000,2000]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.8]
+
+[charaFace C 1]
+
+＠俄里翁
+来啦来啦，我好像被叫来了。
+[k]
+
+[charaFace C 6]
+
+
+＠俄里翁
+真的可以吗～？[r]无论是自认还是公认，我都算希腊第一猎人哦？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠退尔
+噢噢，希腊神话中的猎人，俄里翁阁下啊。
+[k]
+
+＠退尔
+您做对手的确没什么可挑剔的……[wt 0.7][charaFace A 4][r]倒不如说，真的没问题吗？
+[k]
+
+＠退尔
+在我这样一个普通人类猎人来看，[r]您对我来说可是暴殄天物的大人物啊。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠俄里翁
+别谦逊啦，我们不都是Archer职阶的猎人嘛。
+[k]
+
+[charaFace C 1]
+
+
+＠俄里翁
+我也要表现一下我不只是个猎艳者，[r]也是能认真打猎的。
+[k]
+
+[charaFace C 13]
+
+
+＠俄里翁
+通过这种方法重新展现我的魅力，[r]这样今后办起事来也就更方便了！　……呵呵呵……
+[k]
+
+[charaFace C 1]
+
+＠俄里翁
+不过就算撇开这个问题，我也很久没打猎了。[r]真令人期待！
+[k]
+
+[charaFace C 0]
+
+＠俄里翁
+啊，御主可以和他同行。
+[k]
+
+＠俄里翁
+这样更方便魔力补给吧？[r]毕竟我的肌肉比较多，得让几分才行。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠退尔
+如果您认为可以的话，我没有意见。[r]哎呀呀，看来不能表现得太拙劣呢。
+[k]
+
+[charaPut J 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch lblNotClear5 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[branch lblConf5]
+[label lblNotClear5]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf5]
+
+＠达·芬奇
+当然，我会尽可能设定得真实一点。
+[k]
+
+
+＠达·芬奇
+虽说是在模拟装置内，[r]但你们可以把这当做真正的狩猎哦。
+[k]
+
+[branch lblNotClear6 IsClear false]
+
+
+[charaFace B 26]
+
+[branch lblConf6]
+[label lblNotClear6]
+
+
+[charaFace B 5]
+
+[label lblConf6]
+
+＠达·芬奇
+对你们这几位专家来说，[r]这提醒或许算是班门弄斧[line 3]
+[k]
+
+＠达·芬奇
+但森林充满了危险。掉以轻心可是会受伤的。[r]一定要小心！
+[k]
+
+？1：我明白了！
+？2：我们会小心的……
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 2000,2000]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠退尔
+当然。[r]我会负责照看御主。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠俄里翁
+噢，拜托啦。[wt 0.45][charaFace C 1][r]那我们开始狩猎较量吧！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_62 0.5]
+[wait fade]
+[soundStopAll]
+[end]

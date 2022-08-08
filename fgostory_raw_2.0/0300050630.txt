@@ -1,0 +1,284 @@
+
+＄03-00-05-06-3-0
+
+[soundStopAll]
+
+[charaSet A 98002000 1 芙芙]
+[charaSet B 2038000 1 俄里翁]
+[charaSet C 6038002 1 夏洛特·科黛]
+[charaSet D 98006000 1 魔兽]
+[sceneSet E 84700 1]
+
+[charaSet J 5009000 1 特效用dummy]
+
+
+[scene 10000]
+
+[fadein black 1.5]
+[wait fade]
+
+
+＠芙芙
+芙，芙！
+[k]
+
+[messageOff]
+[se ad102]
+[wt 0.4]
+[se ad102]
+[wt 0.8]
+
+？1：好啦好啦，我起来了～。
+？2：芙芙，不要踩在我身上……
+？！
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-30]
+
+[scene 20800]
+[wt 1.0]
+
+[wipein openEye 1.0 1.0]
+[wait wipe]
+
+[se adm21]
+[charaMoveReturn A 0,70 1.0]
+[wt 1.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale A 1.0]
+
+[bgm BGM_EVENT_112 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠俄里翁
+噢，起来了啊。[r]那就出发吧，今天内应该就能抵达了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠夏洛特·科黛
+早上好。[r][%1][&先生:小姐]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠俄里翁
+我这里有肉干，吃吧吃吧。
+[k]
+
+？1：我开动啦～！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠芙芙
+芙芙。
+[k]
+
+？1：知道啦，芙芙也吃一点。
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠俄里翁
+这家伙是肉食性的吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠芙芙
+芙，芙！
+[k]
+
+？1：它说它什么都吃哦。
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠俄里翁
+哈哈哈，有精神就好。[wt 1.0][charaFace B 4][r]……原来它不是应急储备粮啊……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 3]
+[charaDepth A 4]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 4]
+[charaFadein B 0.1 -100,0]
+[charaFadein A 0.1 306,0]
+
+＠芙芙
+芙呜！
+[k]
+
+[messageOff]
+
+[charaTalk off]
+
+
+
+[se ad102]
+[charaMoveReturn A 100,0 0.3]
+[wt 0.2]
+[charaFace B 9]
+[wt 0.1]
+
+[se ad102]
+[charaMoveReturn A 100,0 0.3]
+[wt 0.8]
+
+[charaTalk on]
+＠俄里翁
+啊，好痛好痛！[r]抱歉啦抱歉！
+[k]
+
+[charaFace B 0]
+＠俄里翁
+不过反正看起来也不够吃！[r]抱歉，我们要边吃边赶路啦！
+[k]
+
+[messageOff]
+[wt 0.5]
+[se ad527]
+[wt 0.1]
+[se ad173]
+[wipeout leftToRight 1.0 1]
+[bgm BGM_EVENT_112 1.5 0.4]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+
+[scene 84700]
+
+[charaScale E 1.5]
+[charaFadein E 0.1 30,-200]
+[wt 1.0]
+[bgm BGM_EVENT_112 1.5 1.0]
+[wipein rightToLeft 1.0 1]
+[seStop ad527 1.0]
+[seStop ad173 1.0]
+
+[charaMove E 130,-200 5.0]
+[wait wipe]
+
+[wt 3.0]
+[charaFadeout E 1.0]
+[wt 2.0]
+
+
+？1：那边像是机械的东西是什么？
+？2：好像是某种巨大的存在……
+？！
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠俄里翁
+那就是[#村庄]。[r]是我们现阶段的目的地。
+[k]
+
+？1：村庄……？
+？！
+
+＠俄里翁
+这附近存在一万多年前的战争中[r]陨落的『神之残骸』。
+[k]
+
+[charaFace B 1]
+＠俄里翁
+……哎哟，你看上去完全不明所以呢。[r]哈哈哈哈哈，你马上就会知道了！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_112 0.5]
+[charaFadeout B 0.1]
+[wt 0.8]
+
+[se ad564]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.7 1]
+[wt 2.6]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠俄里翁
+而这就是最后的魔兽了。[r]机会难得，拜托你大力支援啦！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠夏洛特·科黛
+……呜。
+[k]
+
+[charaFace C 2]
+＠夏洛特·科黛
+我稍微有些头疼，[r]但是没问题！
+[k]
+
+＠夏洛特·科黛
+我会努力不让自己拖后腿的！
+[k]
+
+？1：明白了！
+？！
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

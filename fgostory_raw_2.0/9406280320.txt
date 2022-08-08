@@ -1,0 +1,1276 @@
+
+
+＄94-06-28-03-2-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 4046000 1 エリザベート]
+[charaSet B 2045000 1 ゼノビア]
+[charaSet C 1044001 1 斎藤一]
+
+[charaSet D 5014001 1 メフィスト]
+[charaSet E 7015001 1 エイリーク]
+[charaSet F 6019001 1 風魔小太郎]
+[charaSet G 2010002 1 ビリー]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[charaSet I 9002300 1 天草（怪盗）]
+[charaSet J 4036001 1 水着カーミラ]
+[charaSet K 2034000 1 ウィリアム・テル]
+[charaSet L 6015000 1 アサシンエミヤ]
+[charaSet T 98115000 1 エフェクト用]
+[charaSet U 98115000 1 エフェクト用]
+
+
+[charaTalk depthOff]
+[charaDepth T 1]
+[charaDepth A 3]
+[charaDepth B 5]
+[charaDepth U 9]
+
+
+[scene 28820]
+
+[charaPut T 1]
+[charaPut U 1]
+[charaEffect U bit_talk_sand_dust_front_blk]
+[charaEffect T bit_talk_sand_dust_back_blk]
+[wt 0.5]
+
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.0 0.7]
+[fadein black 1.0]
+[wait fade]
+
+[seVolume ad556 2.0 0.4]
+[wt 1.0]
+[bgm BGM_MAP_85 1.0]
+
+？1：わぷぷっ……
+？2：砂が服の中に入ってじゃりじゃりする……！
+？！
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ゼノビア
+我慢しろ。
+[k]
+
+＠ゼノビア
+正しい進路であっても砂嵐がないわけではない。[r]これでもルート外よりは幾分マシだ。
+[k]
+
+＠ゼノビア
+それに、私の読みではそろそろ晴れる。
+[k]
+
+[messageOff]
+[se ad134]
+[charaEffectStop U bit_talk_sand_dust_front_blk]
+[charaEffectStop T bit_talk_sand_dust_back_blk]
+[seStop ad556 2.0]
+[seStop ad134 2.0]
+[wt 3.0]
+
+[charaFace B 11]
+
+＠ゼノビア
+……ほらな？（得意げ）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+待って、砂嵐が晴れてわかったけど。[r]誰かそこにいない？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[se ad173]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[seStop ad173 0.5]
+[wt 0.6]
+
+？1：あれは……
+？2：斎藤さん……？
+？！
+
+[charaFace C 10]
+
+＠斎藤一
+やれやれ、砂嵐に巻き込まれてツイてないねぇ。[r]ま、それはそれとしてこいつはラッキーかな？
+[k]
+
+＠斎藤一
+１人だけ手ぶらってのも恰好付かないし、[r]どうしたもんかと思ってたのよ。
+[k]
+
+[charaFace C 11]
+
+＠斎藤一
+んじゃま[line 3]
+[k]
+
+[bgmStop BGM_MAP_85 1.5]
+
+[charaFace C 0]
+
+＠斎藤一
+そこな道行く旅人さん。僕は三番隊隊長……[r]じゃなかった、盗賊番号ナンバースリー。
+[k]
+
+＠斎藤一
+雇われのはぐれサーヴァントってやつ。[r]というわけで。
+[k]
+
+＠斎藤一
+大人しく、身ぐるみはがされてくれる？
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+？1：恐喝じゃん！
+？！
+
+
+[charaFace C 10]
+
+＠斎藤一
+警官やってた手前、ちょっと抵抗あるけど、[r]一応、紳士的に話し合いからってね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+シーフ、ローグ、盗賊ね～♪[r]降りかかる火の粉は～～殺すわ～～♪
+[k]
+
+[charaFace A 10]
+
+＠エリザベート
+話し合いは～その後に～♪
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠斎藤一
+え？　どういうノリ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠ゼノビア
+いい度胸だ。このパルミラの女王本人に対して[r]盗賊行為とはな。やはり裁判の必要はなさそうだ。
+[k]
+
+＠ゼノビア
+現場判断にて処置する。[r]後始末は砂漠に埋めればＯＫだ。
+[k]
+
+＠ゼノビア
+将来的にナツメヤシの苗床にでもなれば盗賊でも[r]パルミラの役に立てたということになる。喜べ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠斎藤一
+……あら？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth A 4]
+[charaDepth B 6]
+
+[charaFace A 9]
+[charaFadein A 0.1 300,0]
+
+[charaFace B 10]
+[charaFadein B 0.1 -300,0]
+
+[wt 0.4]
+[se ad984]
+[seVolume ad984 0 0.4]
+[charaMove A 300,4 0.3]
+[charaMove B -300,4 0.3]
+[charaMoveScale A 1.05 0.3]
+[charaMoveScale B 1.05 0.3]
+[wt 1.0]
+[se ad984]
+[seVolume ad984 0 0.4]
+[charaMove A 300,8 0.3]
+[charaMove B -300,8 0.3]
+[charaMoveScale A 1.1 0.3]
+[charaMoveScale B 1.1 0.3]
+[wt 0.6]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaScale A 1.0]
+[charaScale B 1.0]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+[wt 1.5]
+
+[se ad7]
+[charaFace C 10]
+[bgmStop BGM_EVENT_3 1.5]
+
+＠斎藤一
+はーい、降参降参～！
+[k]
+
+＠斎藤一
+いやあ。[r]確かに盗賊の１人ではあるけどさぁ。
+[k]
+
+＠斎藤一
+負ける戦いはしないってのが[#一:はじめ]ちゃんの[r]信条ってわけ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠ゼノビア
+速やかなる投降。いい判断だ。[r]それでは埋めよう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+苗床～苗床～♪
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠斎藤一
+降伏したんだからそりゃないでしょ、[r][#情状酌量:じょうじょうしゃくりょう]って知ってる？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+そうねえ。[r]盗賊っていっぱいいるんでしょう？
+[k]
+
+＠エリザベート
+せっかくだから[r]他のヤツらの情報とか聞いてもいいんじゃない？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ゼノビア
+司法取引というやつか。ふむ……。
+[k]
+
+＠ゼノビア
+悪くない。[r]パルミラが野蛮の地だと思われるのも癪だしな。
+[k]
+
+[charaFace B 10]
+
+＠ゼノビア
+それではきりきり吐いてもらおう。[r]その身をナツメヤシの糧にしたくないのならばな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠斎藤一
+司法取引だか、脅迫なんだか……。
+[k]
+
+？1：お互い様ということで……
+？！
+
+[charaFace C 10]
+
+＠斎藤一
+はは、そりゃそうだ。
+[k]
+
+＠斎藤一
+んじゃま、ペラペラ喋りますか。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_77 1.0 0.5]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 1.0 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ゼノビア
+ふむ。これから向かう岩山は[r]盗賊団の本拠地だったのか。
+[k]
+
+＠ゼノビア
+しかし、洞窟に入るための岩戸の開け方は……[r]おまえたちのボスしか知らないと？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠斎藤一
+そういうわけ。
+[k]
+
+[charaFace C 11]
+
+＠斎藤一
+不便なんで意外と困ってるのよ。
+[k]
+
+＠斎藤一
+特にボス、ちょっと問題があってね……、[r]最近はずっと岩戸の奥に籠もりきりなのよ。
+[k]
+
+＠斎藤一
+頼んでも出てきてくれないし。
+[k]
+
+[charaFace C 0]
+
+＠斎藤一
+んで、僕たち、ボスに出てきてもらうための[r]作戦に手分けして従事してる最中だった、ってわけ。
+[k]
+
+＠斎藤一
+各自で必要なアイテムを盗んで集めてこよう的な……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ゼノビア
+盗むな。
+[k]
+
+[charaFace B 10]
+
+＠ゼノビア
+ふん、やはりパルミラの治安と風紀の維持のために[r]捨て置けん集団だ。
+[k]
+
+＠ゼノビア
+集まるというなら都合がいい。[r]バリスタで[#一網打尽:いちもうだじん]にしてくれる。
+[k]
+
+？1：目的地は同じだし、行くしかないね
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠斎藤一
+はいはい、ご案内しますよ。
+[k]
+
+＠斎藤一
+こっちは囚われの身なんでね。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.5]
+[charaFace C 0]
+[wt 1.0]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[scene 137300]
+[wt 1.0]
+
+[cameraMove 0.1 0,-20 1.15]
+[wt 0.1]
+
+[cueSe SE_21 21_ad1066]
+[seVolume 21_ad1066 0 0]
+[seVolume 21_ad1066 1.0 0.7]
+
+[cameraHome 4.0]
+
+[fadein black 1.5]
+[wait fade]
+[seStop 21_ad1066 1.5]
+[bgm BGM_MAP_85 1.5 0.9]
+[wt 3.5]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠斎藤一
+はい、到着ー。
+[k]
+
+[charaFace C 0]
+
+＠斎藤一
+あ、もうみんな帰ってきてるみたいね。[r]準備も始まってるか。
+[k]
+
+？1：あれは……宴の準備……！？
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+ていうかていうか～♪
+[k]
+
+＠エリザベート
+盗賊たち、なんか多くないかしら～？[r]あといろいろおかしくないかしら～？
+[k]
+
+[bgmStop BGM_MAP_85 1.5]
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.8 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[pictureFrame cut063_cinema]
+
+
+[se ad413]
+[seVolume ad413 0 0]
+[seVolume ad413 1.0 0.5]
+[wipein rectangleStripRightToLeft 0.8 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_49 0.1]
+
+[seStop ad413 6.0]
+
+
+[charaTalk off]
+[charaDepth D 7]
+[charaDepth E 6]
+[charaDepth G 5]
+[charaDepth F 4]
+[charaDepth J 3]
+[charaDepth K 2]
+
+[charaFace D 0]
+[charaFadeinFSL D 0.4 -256,-50]
+
+[charaFace E 0]
+[charaFadeinFSR E 0.4 256,-50]
+
+[wt 1.0]
+[charaFace D 1]
+[charaMoveReturnFSL D -256,-43 0.4]
+[wt 0.4]
+[charaMoveReturnFSL D -256,-43 0.4]
+[wt 0.2]
+
+[charaFace E 4]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaFace F 1]
+[charaFadeinFSL F 0.4 -200,-50]
+[charaMoveFSL F -300,-50 2.0]
+
+[charaFace G 1]
+[charaFadeinFSR G 0.4 256,-50]
+[charaMoveFSR G 156,-50 2.0]
+[wt 1.6]
+[charaFadeout F 0.4]
+[charaFadeout G 0.4]
+[wt 0.6]
+
+
+[charaFace I 0]
+[charaFadein I 0.4 0,-50]
+[wt 1.0]
+[charaFace I 1]
+[wt 0.8]
+[charaFadeout I 0.4]
+[wt 0.6]
+
+[charaFace J 0]
+[charaFadeinFSL J 0.4 -256,-50]
+
+[charaFace K 0]
+[charaFadeinFSR K 0.4 256,-50]
+
+[wt 1.0]
+
+[charaMoveReturnFSR K 256,-56 0.5]
+[wt 0.8]
+[charaMoveReturnFSL J -256,-56 0.5]
+[wt 1.0]
+[charaFadeout K 0.4]
+[charaFadeout J 0.4]
+[wt 0.6]
+
+[se ad73]
+[charaPut L 0,-50]
+[charaEffect L bit_talk_quickmove 0,0 H]
+[charaSpecialEffect L appearanceReverse 1 0.2]
+[charaMoveReturn L 0,-56 0.4]
+[wt 1.4]
+[se ad73]
+[charaEffect L bit_talk_quickmove]
+[charaSpecialEffect L erasureReverse 1 0.2]
+[charaMove L 0,-44 0.4]
+[wt 0.4]
+
+[wipeout rectangleStripRightToLeft 0.8 1.0]
+[wait wipe]
+
+[charaSet D 4009101 1 メアリー]
+[charaSet E 4009201 1 アン]
+[charaSet F 1027000 1 沖田総司]
+[charaSet G 6040000 1 オキタ・Ｊ・ソウジ]
+
+[charaSet I 2025100 1 メアリー_水着]
+[charaSet J 2025200 1 アン_水着]
+
+[charaSet K 6003000 1 百貌のハサン]
+[charaSet L 6041000 1 鬼一法眼]
+[charaSet M 5041001 1 美遊]
+[charaSet N 2027000 1 クロエ]
+
+[charaSet O 6007001 1 ジキル]
+[charaSet P 6007003 1 ハイド]
+[charaSet Q 3007001 1 クー・フーリン]
+[charaSet R 7022001 1 茨木童子]
+[charaSet S 3034001 1 茨木童子_水着]
+[charaSet T 7025001 1 土方歳三]
+[charaSet U 6011001 1 荊軻]
+[charaSet V 5028001 1 イリヤ]
+[charaSet W 2042001 1 イリヤ_水着]
+[charaSet X 7039001 1 ガラテア]
+
+[charaTalk depthOff]
+[charaDepth D 4]
+[charaDepth E 3]
+[charaDepth I 5]
+[charaDepth J 4]
+
+[charaDepth C 5]
+[charaDepth A 4]
+
+[charaDepth F 5]
+[charaDepth G 4]
+
+[charaDepth P 5]
+[charaDepth O 4]
+
+[charaDepth R 5]
+[charaDepth S 4]
+
+
+[pictureFrame]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.8 1.0]
+[wait wipe]
+
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠斎藤一
+まあ、盗賊っぽいのもそうでないのもいるけど。
+[k]
+
+＠斎藤一
+数は勿論、[#ボス含めて４０人ですよ]。[r]当たり前でしょ？
+[k]
+
+？1：４０人……？
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+どうしたの[&子イヌ:子ジカ]？[r]まあ４０人は多いわよね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadeinFSL C 0.1 0]
+
+[charaFace A 0]
+[charaFadeinFSR A 0.1 2]
+
+＠斎藤一
+さて、それじゃあ、行きますか。
+[k]
+
+[messageOff]
+[se ad60]
+[charaFadeout C 0.6]
+[wt 0.8]
+[seStop ad60 0.5]
+[wt 0.4]
+
+[charaFace A 2]
+
+＠エリザベート
+あれっ、いつのまにか縄が！？[r]縛ってたはずなのに！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_49 1.0]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠斎藤一
+おーい。お客さんのご到着だよー。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadeinFSR D 0.4 2]
+
+[charaFace E 0]
+[charaFadeinFSL E 0.4 0]
+[wt 0.4]
+
+[bgm BGM_EVENT_94 0.1]
+
+＠メアリー
+盗賊たちの宴へようこそ！
+[k]
+
+＠アン
+詳しいことはよくわかりませんが[r]とりあえず私たちが盗賊なのは確かですわ。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadeinFSL F 0.4 0]
+
+[charaFace G 15]
+[charaFadeinFSR G 0.4 2]
+[wt 0.4]
+
+＠沖田総司
+そうですね、って、それはそれとして、[r]盗賊よりもっと奇妙なことがですね。
+[k]
+
+[charaFace G 16]
+
+＠オキタ・Ｊ・ソウジ
+はい、どうして着替えただけの私が[r]ここに並んで存在するんですかね！
+[k]
+
+[charaFace G 14]
+
+＠オキタ・Ｊ・ソウジ
+しかもよく見ると、[r]向こうに遠い昔の私までいるんですが！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadeinFSR I 0.4 2]
+
+[charaFace J 0]
+[charaFadeinFSL J 0.4 0]
+[wt 0.4]
+
+＠I：メアリー
+まあまあ。なんかここって夢の中っぽいし、[r]そういうこともあるんじゃない？
+[k]
+
+＠J：アン
+そうですわねえ。[r]深く考えなくてもよいのではないかと？
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace D 1]
+[charaFadein D 0.1 420,0]
+
+[charaFace E 1]
+[charaFadein E 0.1 200,0]
+
+[charaFace I 0]
+[charaFadein I 0.1 -200,0]
+
+[charaFace J 0]
+[charaFadein J 0.1 -420,0]
+
+[charaMoveReturn D 420,-6 0.6]
+[charaMoveReturn E 200,-6 0.6]
+[wt 0.8]
+[charaFace I 1]
+[charaFace J 1]
+[charaMoveReturn I -200,-6 0.6]
+[charaMoveReturn J -420,-6 0.6]
+[wt 1.2]
+
+＠４人
+はい、というわけでこれで４人ぶーん！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+ウソ、ホントにこの調子で４０人の盗賊がいるの？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 4]
+[charaFadein K 0.4 1]
+[wt 0.4]
+
+＠百貌のハサン
+正直、私だけでよかったと思うのだが。[r]あるいはネモたちという手も……。
+[k]
+
+[messageOff]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 1]
+[charaFadein L 0.4 1]
+[wt 0.4]
+
+＠鬼一法眼
+かんら、から、から！[r]そんな風情のないことを言うものではないぞう？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth M 3]
+[charaDepth V 5]
+[charaDepth W 6]
+
+[charaFace V 1]
+[charaFadeinFSR V 0.4 2]
+
+[charaFace M 3]
+[charaFadein M 0.4 1]
+
+[charaFace W 1]
+[charaFadeinFSL W 0.4 0]
+[wt 1.2]
+
+[charaTalk on]
+
+＠美遊
+困った。イリヤとイリヤに挟まれてとても嬉し……[r]いや大変、でもやっぱり嬉しい……ふふふ……。
+[k]
+
+[messageOff]
+[charaFadeout V 0.1]
+[charaFadeout M 0.1]
+[charaFadeout W 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 4]
+[charaFadein N 0.4 1]
+[wt 0.4]
+
+＠クロエ
+片っぽわたしが引き受けようか？
+[k]
+
+[charaFace N 1]
+
+＠クロエ
+ダブルで魔力供給してもらえるなら[r]さすがに満腹になっちゃうわねえ……。
+[k]
+
+[messageOff]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace O 4]
+[charaFadeinFSR O 0.4 2]
+
+[charaFace P 1]
+[charaFadeinFSL P 0.4 0]
+
+[wt 0.8]
+
+[charaTalk on]
+
+＠ジキル
+……確かにこれは異常事態だね。[r]困った。
+[k]
+
+＠ハイド
+ヒャハハハハァ！　何も困らねえよ、[r]楽しいじゃねえか！
+[k]
+
+[messageOff]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk Q]
+[charaFace Q 4]
+[charaFadein Q 0.4 1]
+[wt 0.4]
+
+＠クー・フーリン
+オレもたくさんいてよさそうなモンだが。[r]逃げたか……？
+[k]
+
+[messageOff]
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+[charaTalk R]
+[charaFace R 1]
+[charaFadeinFSL R 0.4 -300,0]
+[charaMoveFSL R -256,0 0.6]
+[wt 0.6]
+
+＠R：茨木童子
+酒呑、しゅてーん！[r]盗賊と言えば[#吾:われ]らだろう、どこにいるー！？
+[k]
+
+[charaTalk S]
+[charaFace S 1]
+[charaFadeinFSR S 0.4 300,0]
+[charaMoveFSR S 256,0 0.6]
+
+＠S：茨木童子
+しゅてーん！　[bgm BGM_EVENT_94 1.5 0][wt 1.0][charaTalk off][charaFace S 2][charaFace R 2]……あっ。
+[k]
+
+[messageOff]
+[wt 0.7]
+[bgm BGM_EVENT_94 1.5 0.5]
+[wt 1.5]
+
+？1：（鏡で自分を見た猫みたいに固まってる……）
+
+[charaFadeout R 0.1]
+[charaFadeout S 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+[bgmStop BGM_EVENT_94 1.5]
+
+＠エリザベート
+と、とにかく４０人の盗賊がいるのはわかったわ。[r]でもなんでパーティーなんてしてるの？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：……これってどういう宴？
+
+[messageOff]
+[bgmStop BGM_EVENT_94 0.5]
+[charaFadeout R 0.1]
+[charaFadeout S 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk T]
+[charaFace T 1]
+[charaFadein T 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_67 0.1]
+
+＠土方歳三
+決まってンだろが！
+[k]
+
+＠土方歳三
+洞窟の中に閉じこもってるボスには、[r]どうあっても出てきてもらう。
+[k]
+
+＠土方歳三
+ボスはいるだけで眼福……、じゃねえ、[r]盗賊団としての示しがつかねえだろうが。
+[k]
+
+[charaFace T 0]
+
+＠土方歳三
+だが、どう説得しても出てこない。[r]力ずくでも無理となりゃあ……。
+[k]
+
+＠土方歳三
+[#天岩戸作戦]と相場が決まってる。
+[k]
+
+＠土方歳三
+目の前でどんちゃんやりゃあ、[r]気になって出てくるのが人情ってヤツだ。
+[k]
+
+[charaFace T 2]
+
+＠土方歳三
+だが、おい斎藤ォ！
+[k]
+
+[charaFadeout T 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠斎藤一
+はいはい？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk T]
+[charaFace T 0]
+[charaFadein T 0.1 1]
+
+＠土方歳三
+仕事はきっちり済ませたのか。
+[k]
+
+＠土方歳三
+酒でもツマミでも何でもいい。[r]宴席のアテになるようなモンを
+[k]
+
+＠土方歳三
+１人１つ用意してくる……[r]そういう話だったな？
+[k]
+
+[messageOff]
+[charaFadeout T 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaTalk depthOff]
+
+[charaDepth U 5]
+[charaDepth X 4]
+
+[charaFace U 6]
+[charaFadeinFSL U 0.4 0]
+
+[charaFace X 3]
+[charaFadeinFSR X 0.4 2]
+[wt 0.6]
+
+[charaTalk on]
+
+＠荊軻
+私は用意してきたぞー。これ！[r]……んー？
+[k]
+
+[charaFace U 8]
+
+＠荊軻
+ありゃー、とっても綺麗な彫像担いで[r]盗んできたかと思ったら君か！
+[k]
+
+＠ガラテア
+……恐縮です。[r]下ろしていただけますか？
+[k]
+
+[charaFace U 6]
+
+＠荊軻
+まあいいや！　酒の[#肴:さかな]になるのは変わんないし！[r]飲もう飲もう！
+[k]
+
+[charaFadeout U 0.1]
+[charaFadeout X 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠斎藤一
+はは、僕もアレと似た感じかな？[r]酒の[#肴:さかな]タイプ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk T]
+[charaFace T 1]
+[charaFadein T 0.1 1]
+
+＠土方歳三
+おう、ならさっさと出しやがれ。
+[k]
+
+[charaFadeout T 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠斎藤一
+や、だからほら。[r]持ってきたでしょ？
+[k]
+
+[charaFace C 1]
+[bgmStop BGM_EVENT_67 1.8]
+
+＠斎藤一
+[#これ]。
+[k]
+
+＠斎藤一
+なんでも盗賊団を砂漠の肥やしにせずにはいられない、[r]戦に飢えてる系の女王様らしいんでね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk T]
+[charaFace T 1]
+[charaFadein T 0.1 1]
+[bgm BGM_EVENT_71 0.1]
+
+＠土方歳三
+ほう。
+[k]
+
+[charaFadeout T 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠ゼノビア
+貴様……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠斎藤一
+宴にゃ身体を動かすような余興も必要でしょ。[r]好き嫌いとは別にさ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+えー。４０人もいるなんて～♪[r]相手するのは大変そうじゃない～♪
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+[bgmStop BGM_EVENT_71 1.5]
+
+＠斎藤一
+なに、所詮は夢ってやつ？[r]本物と比べりゃ、ささやかなもんですよ。
+[k]
+
+[charaFace C 11]
+
+[bgm BGM_EVENT_80 0.1]
+
+＠斎藤一
+きっちり４０人……[r]いや、ボス除いたら３９人ですけどね？
+[k]
+
+＠斎藤一
+そういう祭りと思って付き合ってもらいましょうか、
+[k]
+
+[charaFace C 2]
+
+＠斎藤一
+[line 3]ねぇっ！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

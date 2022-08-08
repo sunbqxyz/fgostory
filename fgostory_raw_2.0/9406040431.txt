@@ -1,0 +1,255 @@
+
+
+
+＄94-06-04-04-3-1
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001600 1 マシュ]
+[charaSet B 2025200 1 アン]
+[charaSet C 2025100 1 メアリー]
+[charaSet D 98002000 1 フォウ]
+[imageSet E cut279_arrangement1 1]
+[imageSet F cut279_arrangement2 2]
+[imageSet G back10000 1 1]
+[charaScale G 1.1]
+[charaDepth G 2]
+[charaDepth E 3]
+[charaDepth F 3]
+
+[scene 107300]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk depthOff]
+[charaTalk C]
+[charaDepth B 1]
+[charaDepth C 2]
+[charaFace B 4]
+[charaFace C 4]
+[charaFadeinFSL B 0.1 0]
+[charaFadeinFSR C 0.1 2]
+
+＠メアリー
+にゃーっ！
+[k]
+
+＠アン
+がっくり。[r]マスターも秘宝も奪い去る予定でしたのにー……。
+[k]
+
+？1：とんでもないこと考えてた……
+？！
+
+[charaFace C 5]
+＠メアリー
+しょうがない。[r]ここは一時撤退といこう。
+[k]
+
+＠メアリー
+まだまだ海賊の秘宝は眠っているらしいからね。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠マシュ
+メアリーさん、[r]その情報は一体どこから……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadeinFSL B 0.1 0]
+[charaFadeinFSR C 0.1 2]
+＠メアリー
+ええと、あの……何だっけ、[r]めっちゃヤバイケメンな方。
+[k]
+
+
+＠アン
+あの方がこんなチラシを[r][#撒:ま]いてましたわよ？
+[k]
+
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[se ade96]
+[wt 1.0]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+チラシ……。[r]マスター、こちらは！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaDepth G 1]
+[charaDepth E 2]
+[charaDepth F 2]
+
+[charaFadeTime G 0.2 0.5]
+
+[masterBranch _Male _Female]
+
+[label _Male]
+
+[charaFadein E 0.2 0,-200]
+
+[branch _branchEnd]
+
+[label _Female]
+
+[charaFadein F 0.2 0,-200]
+
+[branch _branchEnd]
+
+[label _branchEnd]
+
+[wt 1.2]
+
+＠
+『DEAD or ALIVE』[r]『海賊の秘宝のありかを知る者』
+[k]
+
+＠
+『賞金メニメニ貰えます』[r]『レッツファイト』
+[k]
+
+[messageOff]
+[charaFadeout G 0.2]
+[charaFadeout E 0.2]
+[charaFadeout F 0.2]
+[wt 0.4]
+
+[charaTalk D]
+[charaFadein D 0.1 1]
+＠フォウ
+フォウ……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadeinFSL B 0.1 0]
+[charaFadeinFSR C 0.1 2]
+＠メアリー
+ボクたちの他にも、[r]チラシを見て襲ってくる奴がいるかもだからね。
+[k]
+
+＠アン
+どうぞ注意してくださいましね、マスター。
+[k]
+
+[charaFace C 1]
+＠メアリー
+ボクたちに捕まっておく、[r]っていう手もあるけど……。
+[k]
+
+[charaFace B 1]
+＠アン
+優しく監禁してあげますわよ？
+[k]
+
+？1：ご遠慮申し上げます
+
+[charaFace B 4]
+[charaFace C 4]
+＠アン＆メアリー
+だよねー。
+[k]
+
+？2：どうしようもなくなった時はそれで
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠マシュ
+！？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk off]
+[charaFace B 2]
+[charaFace C 2]
+[charaFadeinFSL B 0.1 0]
+[charaFadeinFSR C 0.1 2]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 1]
+＠アン
+思ったより好感触……！[r]今年はいけますわよ、メアリー！
+[k]
+
+[charaFace C 1]
+＠メアリー
+じゃあ、ギブしたくなったら[r]連絡ちょうだいね！
+[k]
+
+＠メアリー
+２４時間待ってるからー！
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout B 0.4]
+[charaFadeout C 0.4]
+[se ad37]
+[seVolume ad37 0 0.7]
+[seStop ad37 1.7]
+[se ad746]
+[seVolume ad746 0 1.0]
+[seStop ad746 1.2]
+[wt 1.7]
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠マシュ
+アンさん、メアリーさん、[r]小舟に乗って逃亡してしまいました。
+[k]
+
+
+[charaFace A 7]
+＠マシュ
+大変なことになりそうですが、[r]まずは目の前の秘宝探しですね！
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,10 1.00]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.00]
+[wt 1.2]
+
+[bgmStop BGM_EVENT_77 2.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

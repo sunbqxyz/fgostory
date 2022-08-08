@@ -1,0 +1,275 @@
+
+＄94-02-49-15-1-0
+
+[soundStopAll]
+
+
+
+[charaSet A 7026000 1 茶茶]
+[charaSet B 98113500 1 卫宫]
+[charaSet C 1098145000 1 美狄亚（剪影）]
+[charaSet D 1098144000 1 李书文（剪影）]
+[charaSet E 1098143000 1 织田信胜（剪影）]
+[charaSet F 1098147000 1 谜之女主角X（剪影）]
+[charaSet G 1098148000 1 谜之女主角X·Alter（剪影）]
+[charaSet H 98002000 1 特效用dummy]
+
+
+[bgm BGM_EVENT_5 0.1]
+
+[scene 20900]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.4 1]
+[wt 0.4]
+＠茶茶
+大家来得好，因为看到茶茶在食堂等地[r]分发的传单而齐聚一堂的吾等丰臣精锐部队啊！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 0.3]
+[wt 0.4]
+[bgm BGM_EVENT_7 0.1 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+＠B：？？？
+不，我只是为了来调查[r]张贴在食堂的奇怪文件出处啊……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+＠C：？？？
+我则是因为听说有天下名城立体透视模型的制作代理……[r]话说惯例的那个蓝色的怎么不在啊？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+＠D：？？？
+蓝色的那个说这次把位置让给我，自己出去了。[r]尽管我还是没明白这是什么意思。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠C：？？？
+那个卖花男人居然自己一个人开溜……！[r]话说，怎么又多了几张陌生面孔啊？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+＠E：？？？
+我终于也成了独当一面的中Boss……[r]哎？　没有战斗戏份？　怎么可以这样啦～。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+＠F：？？？
+看来又有新Saber出现了吧。[r]哎？　Alterego？　但那张脸就是罪！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+
+[charaSet C 1098146000 1 美杜莎（围裙剪影）]
+[charaSet D 98002000 1 特效用dummy2]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+＠G：？？？
+帝都特产小鸡布丁暗物质[r]史瓦西鲜奶油麦克斯韦
+[k]
+
+＠G：？？？
+中杯格式塔加冰淇淋球真好吃。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+＠C：？？？
+我还以为这次能逃过一劫呢……
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+＠茶茶
+总之，撇下茶茶自己享受愉快的活动[r]叽叽喳喳乐呵呵的行为是绝对不可原谅的！
+[k]
+
+＠茶茶
+茶茶的怒火已经到达顶峰，[r]或许连Berserker的灵基都无法容纳了！
+[k]
+
+＠茶茶
+没错，现在的茶茶为复仇而燃烧，[r]Princess [#Toyotomi:丰臣] Avenger 淀！
+[k]
+
+[messageOff]
+
+[se ad392]
+[wt 0.4]
+[se ad11]
+[se ad450]
+[fowardEffect bit_talk_29]
+[charaEffect H bit_talk_sparks]
+[charaEffect D bit_talk_gouka]
+[charaPut H 0,0]
+[charaPut D 0,100]
+[flashin once 0.1 0.1 FF000080 EE000040]
+[wt 4.5]
+
+[seStop ad11 0.5]
+[seStop ad392 0.5]
+[seStop ad450 0.5]
+[charaPut H 1200,1200]
+[charaPut D 1200,1200]
+[charaEffectStop H bit_talk_sparks]
+[charaEffectStop D bit_talk_gouka]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠B：？？？
+尽管她嘴上说得随意，[r]但实际情况似乎相当严重呢……
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+
+[charaSet C 1098145000 1 美狄亚（剪影）]
+[charaSet D 1098144000 1 李书文（剪影）]
+[charaSet H 1098146000 1 美杜莎（围裙剪影）]
+
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+＠A：Avenger·淀
+去吧，守护我丰臣的『帝都七本枪』！[r]将这世界打入恐怖的深渊吧！
+[k]
+
+＠A：Avenger·淀
+哎？　不止枪，还有弓以及光剑之类的？
+[k]
+
+＠A：Avenger·淀
+茶茶不会在意这种细节啦，[r]只要顺势就行了！
+[k]
+
+＠A：Avenger·淀
+茶茶会将从姨母灵基上[r]撕下来的特殊军队赐予你们！
+[k]
+
+＠A：Avenger·淀
+声音似乎都发生了变化，这是啥玩意儿？[r]自我进化？　还是青春期变声？
+[k]
+
+＠A：Avenger·淀
+算了，没关系，总之出发吧～！！
+[k]
+
+[charaFadeout A 0.1]
+[charaDepth B 3]
+[charaDepth C 2]
+[charaDepth D 1]
+[charaDepth E 5]
+[charaDepth F 3]
+[charaDepth G 2]
+[charaDepth H 1]
+[wt 0.1]
+
+[charaTalk off]
+[se ad7]
+[charaFace B 0]
+[charaFace C 0]
+[charaFace D 0]
+[charaFace E 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFace H 0]
+[charaFadein B 0.1 -513,0]
+[charaFadein C 0.1 -342,0]
+[charaFadein D 0.1 -171,0]
+[charaFadein E 0.1 1]
+[charaFadein F 0.1 171,0]
+[charaFadein G 0.1 342,0]
+[charaFadein H 0.1 513,0]
+＠帝都七本枪
+是！
+[k]
+
+＠帝都七本枪
+……话说，[r]合起来到底都是些什么莫名其妙的啊。
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[soundStopAll]
+[end]

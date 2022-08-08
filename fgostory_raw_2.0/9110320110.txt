@@ -1,0 +1,904 @@
+
+＄91-10-32-01-1-0
+
+[soundStopAll]
+
+[charaSet A 98110000 1 柳生但马守]
+[charaSet B 6029001 1 千代女]
+[charaSet C 98001000 1 玛修]
+[charaSet D 1035001 1 迪尔姆德]
+[charaSet E 2021000 1 巴御前]
+[charaSet F 1098124510 1 达·芬奇]
+[charaSet J 1098120900 1 通信噪音]
+
+[charaDepth D 1]
+[charaDepth B 3]
+[charaDepth E 2]
+
+[scene 66600]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[wt 1.0]
+
+[se ad452]
+[seVolume ad452 0 0.1]
+[seVolume ad452 1.0 1.0]
+[wt 1.0]
+[seStop ad452]
+
+＠柳生但马守
+[line 3]这可是，主公大人。
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠柳生但马守
+嗯。
+[k]
+
+＠柳生但马守
+脸色不错嘛。唔。
+[k]
+
+＠柳生但马守
+那么看来并没有多大的影响啊……
+[k]
+
+？1：柳生先生？
+？2：有何贵干？
+
+？！
+
+＠柳生但马守
+没事。是我失敬了。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[charaFaceFade A 1 0.5]
+[wt 1.0]
+
+＠柳生但马守
+主公大人应该已经熟悉了新的迦勒底了吧。[r]听说您一直在进行着残酷的旅程。
+[k]
+
+＠柳生但马守
+虽然您很年轻，但也不能乱来啊。[r]现在就请好好休息一下吧。
+[k]
+
+＠柳生但马守
+那么，我就先告退了。
+[k]
+
+[messageOff]
+
+[se ad452]
+[charaFadeout A 0.4]
+[wt 0.4]
+[seStop ad452 0.4]
+
+[wt 1.5]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[scene 66400]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect B appearance 1 0.25]
+[wt 0.4]
+
+＠千代女
+主公大人！
+[k]
+
+[charaFace B 4]
+
+＠千代女
+有一件事我必须要告诉您。[r]那个，其实[line 3]
+[k]
+
+[charaFace B 0]
+
+＠千代女
+是关于柳生但马守大人的。[r]但马守大人最近总是有奇怪的举动。
+[k]
+
+？1：柳生先生？
+？2：刚才我还碰见他了呢……
+
+？！
+
+＠千代女
+具体来说就是，[r]他好像对战斗训练用的模拟装置很上心。
+[k]
+
+＠千代女
+之前他只是一个月去一两次，[r]但是最近几天却每日每夜沉浸其中。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+[se ad15]
+[wt 0.4]
+
+＠玛修
+嗯……[r]确实有他的记录。
+[k]
+
+＠玛修
+与其说他是在进行战斗训练[line 3]
+[k]
+
+[charaFace C 7]
+
+＠玛修
+更像是不选定特定区域，[r]而是随机地在各种时代和地点中徘徊。
+[k]
+
+＠玛修
+今天，就在刚才他也启动了模拟装置。[r]果然，地点和时代是随机设定的。
+[k]
+
+？1：感觉直接去问他就好了吧？
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branch select01_01]
+
+？2：……要不要去试试看？
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[branch select01_02end]
+
+？！
+
+[label select01_01]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠千代女
+这个嘛……
+[k]
+
+[charaFace B 4]
+
+＠千代女
+十分抱歉！[r]在下实在忍不住已经问过了！
+[k]
+
+＠千代女
+我直接问了但马守大人，[r]为什么要每夜每夜地启动模拟装置……！
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_81 1.0 0.3]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 66400]
+[effect bit_sepia01]
+[wipeFilter cinema 0.5 0]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠柳生但马守
+哈哈。
+[k]
+
+＠柳生但马守
+Assassin·Paraiso[line 3]不，应该称为甲贺望月的千代女大人。[r]你完全不必担心。
+[k]
+
+＠柳生但马守
+这一切都是为了主公大人。
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_81 1.0 1.0]
+[wait fade]
+
+[wipeOff]
+[effectStop bit_sepia01]
+
+[charaFadeout A 0.1]
+
+[scene 66400]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠千代女
+但马守大人就是这么说的……
+[k]
+
+？1：……明白了。那我们去找他吧。
+
+？！
+
+
+[label select01_02end]
+
+[charaFace B 0]
+
+＠千代女
+哈！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[se ad166]
+[wt 0.5]
+[seStop ad166 0.1]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠迪尔姆德
+既然如此就请带上我迪尔姆德吧！[r]毕竟那位大人平日里也很照顾我。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad59]
+[seVolume ad59 0 0.1]
+[seVolume ad59 0.3 1.0]
+[wt 0.7]
+[seStop ad59]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠巴御前
+我听到你们的谈话了！　我也要去！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠千代女
+Inferno大人[line 3][r]不，巴大人。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠巴御前
+但马大人对我也很好。[r]他要是遇到了困难的话，我必须要挺身而出。
+[k]
+
+＠巴御前
+御主。[r]请一定把巴带上！
+[k]
+
+？1：那大家一起去吧！
+
+？！
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFace B 0]
+[charaFace E 1]
+[charaFadein D 0.1 -300,0]
+[charaFadein B 0.1 300,0]
+[charaFadein E 0.1 1]
+[wt 0.7]
+
+[charaMoveReturn D -300,-5 0.4]
+[charaMoveReturn B 300,-5 0.4]
+[charaMoveReturn E 0,-5 0.4]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠玛修
+调整模拟装置以及监视的工作就交给我吧！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠迪尔姆德
+那可太好了。[r]玛修大人，拜托你了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠千代女
+那么[line 3]出发！　启动模拟装置！
+[k]
+
+[messageOff]
+
+[se ad15]
+[wt 0.4]
+[se ad15]
+[wt 0.4]
+[se ad1]
+[wt 1.0]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 46700]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad451]
+[seVolume ad451 0 0.1]
+[wt 0.1]
+[seVolume ad451 1.4 0.95]
+
+[wt 3.0]
+[seStop ad451 0.5]
+
+[se ad60]
+[wt 0.5]
+[seStop ad60 0.5]
+[se ad166]
+[seStop ad166 0.5]
+[wt 0.5]
+
+[bgm BGM_EVENT_66 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠迪尔姆德
+嗯……
+[k]
+
+＠迪尔姆德
+这个由模拟装置所构造的假想空间，[r]不管什么时候看都觉得很了不起呢。
+[k]
+
+＠迪尔姆德
+这个木建筑[line 3]地点恐怕是远东，[r]时代应该是十六世纪左右。
+[k]
+
+[charaFace D 1]
+
+＠迪尔姆德
+莫非这里是御主出生地的过去？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠千代女
+……这里。难道说。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠迪尔姆德
+唔？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠巴御前
+嗯、嗯嗯。[r]虽然我没有亲眼见过……
+[k]
+
+＠巴御前
+但这里很像我在迦勒底的记录中见过的场景。
+[k]
+
+？1：……确实很像呢。
+？2：这里是平行世界的下总，土气城下町。
+
+？！
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaSet C 99502600 1 玛修]
+
+[charaPut J 1]
+[se ad13]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠玛修
+前辈，能听到吗？
+[k]
+
+＠玛修
+模拟装置里残留的日志显示，[r]柳生但马守先生现在应该就在那片区域内。
+[k]
+
+＠玛修
+因为这是随机生成的区域，[r]所以要说他是出于某种意图而来到这里的话，这种可能性[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠达·芬奇
+不为零但是也非常低呢。[r]达·芬奇亲登场。
+[k]
+
+[charaFace F 19]
+
+＠达·芬奇
+你们好像在做什么有趣的事呢。[r]呵呵，那我也在这边帮忙吧。
+[k]
+
+[messageOff]
+[se ad15]
+[wt 0.4]
+[se ad15]
+[wt 0.4]
+
+＠达·芬奇
+嘿呀！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[wt 0.3]
+[charaEffect E bit_talk_np_buf]
+[charaFace E 3]
+[wt 0.2]
+[cueSe Battle bas7]
+[cueSeVolume bas7 0 0.5]
+[wt 1.0]
+
+＠巴御前
+哇。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[wt 0.3]
+[charaEffect E bit_talk_np_buf]
+[wt 0.2]
+[cueSe Battle bas7]
+[cueSeVolume bas7 0 0.5]
+[wt 1.0]
+
+＠千代女
+这是……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+[wt 0.3]
+[charaEffect E bit_talk_np_buf]
+[wt 0.2]
+[cueSe Battle bas7]
+[cueSeVolume bas7 0 0.5]
+[wt 1.0]
+
+＠迪尔姆德
+[line 3]原来如此。
+[k]
+
+＠迪尔姆德
+好像被付与了某种加护的效果呢。[r]恐怕是类似于Assassin的气息遮断的技能之类的东西吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 26]
+[charaFadein F 0.1 1]
+
+＠达·芬奇
+迪尔姆德，真聪明！[r]没错没错，各位不是在模仿间谍吗？
+[k]
+
+＠达·芬奇
+这样的话就必须得隐藏好气息呢。[r]哪怕到不了Assassin的职阶技能那样的程度，
+[k]
+
+[charaFace F 12]
+
+＠达·芬奇
+好歹也能做到某种程度的隐形。
+[k]
+
+＠达·芬奇
+但是对柳生但马守这样的高手来说，[r]这招说不定行不通……
+[k]
+
+＠达·芬奇
+嗯，不过聊胜于无嘛！
+[k]
+
+？1：谢谢你，达·芬奇亲。
+？2：这很有用！
+
+？！
+
+[charaFace F 29]
+
+＠达·芬奇
+诶。可以再夸得更厉害一些哦。
+[k]
+
+？1：要是平时也有这个的话就方便了呢……
+
+？！
+
+[charaFace F 1]
+
+＠达·芬奇
+不行，啊哈哈。[r]可惜这是只能在模拟装置里使用的[#秘技:外挂]呢。
+[k]
+
+[charaFace F 0]
+
+＠达·芬奇
+当然，自身拥有这种能力的英灵的话就另当别论了。[r]总之这是权宜之计，加油吧各位！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠千代女
+是。粉身碎骨在所不辞。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠巴御前
+那么接下来我们就得去找但马大人的所在了，[r]究竟从哪边开始找好呢[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠玛修
+啊。各位，请等一下！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_66 1.5]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠达·芬奇
+哎呀哎呀。这是……
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaSet A 98006200 1 敌人1]
+[charaSet C 98006200 1 敌人2]
+[charaSet G 98006200 1 敌人3]
+
+[se ad433]
+[seVolume ad433 0 0.05]
+[wt 0.1]
+[seVolume ad433 1.0 0.6]
+[wt 1.5]
+[seStop ad433 1.0]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk off]
+
+[se ad463]
+
+[charaDepth A 1]
+[charaDepth C 2]
+[charaDepth G 3]
+
+[charaPut A -350,0]
+[charaFace A 0]
+[charaSpecialEffect A appearance 1 0.5]
+
+[charaPut C 350,0]
+[charaFace C 0]
+[charaSpecialEffect C appearance 1 0.5]
+
+[charaPut G 1]
+[charaFace G 0]
+[charaSpecialEffect G appearance 1 0.5]
+
+[wt 0.4]
+
+[seStop ad463 1.0]
+
+[wt 2.0]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠巴御前
+！！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠千代女
+敌人！　竟然可以无视气息遮断的秘技！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠迪尔姆德
+嗯嗯。这可就麻烦了呢。
+[k]
+
+[messageOff]
+[charaFace D 2]
+[se adm37]
+[wt 1.5]
+
+＠迪尔姆德
+解决掉之后再前进吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠达·芬奇
+好奇怪啊[line 3][r]按理说并不存在敌人能无视外挂的设定什么的……
+[k]
+
+[charaFace F 5]
+
+＠达·芬奇
+总之好像必须得先解决它们了！[r]抱歉了，各位！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk off]
+
+[charaFace A 0]
+[charaFace C 0]
+[charaFace G 0]
+
+[charaFadein A 0.1 -350,0]
+[charaFadein C 0.1 350,0]
+[charaFadein G 0.1 1]
+
+[wt 1.0]
+
+[se ad463]
+[wt 0.5]
+[seStop ad463 1.0]
+
+[wt 1.0]
+
+？1：遇到了也没办法！
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠千代女
+[line 3]是。打到他们！
+[k]
+
+？2：战斗开始！
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠巴御前
+好！　上吧！
+[k]
+
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

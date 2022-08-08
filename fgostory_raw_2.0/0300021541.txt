@@ -1,0 +1,239 @@
+
+
+＄03-00-02-15-4-1
+
+[soundStopAll]
+
+[charaSet A 8001400 1 玛修]
+[charaSet B 1098123000 1 穆尼尔]
+[charaSet C 2031001 1 拿破仑]
+[charaSet D 1033002 1 齐格鲁德]
+[charaSet E 1098124510 1 达·芬奇]
+[charaSet F 3012001 1 布伦希尔德]
+[charaSet G 98115300 1 福尔摩斯]
+
+[charaSet H 98115000 1 特效用]
+
+
+[scene 60603]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[se ad553]
+[seVolume ad553 0 0.2]
+[se ad629]
+[seVolume ad629 0 0.4]
+
+[shake 0.05 0 2 2.0]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad666]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+[wt 0.3]
+[seStop ad666 0.3]
+
+＠玛修
+[line 3]战斗结束。[r]这次喷射过来的种子应该都解决掉了。
+[k]
+
+[charaFace A 12]
+
+＠玛修
+不过我没想到巨人种居然会[r]成群攻击行驶中的潜航艇……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[seStop ad553 2.0]
+[seStop ad629 2.0]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠拿破仑
+是牵制吗？　还是单纯的偶遇？[r]唔唔，尽管我没觉得我们被拖慢了……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠福尔摩斯
+确实，种子并不像是受到了统率的样子。[r]或许并不是苏鲁特或[#隐匿者:Crypter]指使的。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+意思是种子……[r]或者是空想树自行喷射的吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠福尔摩斯
+这倒是有可能。有意思。[r]空想树防御本能的表现就是喷射种子吗。
+[k]
+
+[charaFace G 0]
+
+＠福尔摩斯
+你们第一次遇到这些种子，[r]是在原尤通黑门山脉吧？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+是的。在加尔赫峰。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠福尔摩斯
+唔。是纬度吗？[r]随着你们的北上自动做出了反应[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 17]
+[charaFadein E 0.1 1]
+
+＠达·芬奇
+好啦，别一副津津乐道的样子啦！[r]搞定了就赶紧回车里来，各位！
+[k]
+
+[charaFace E 16]
+
+＠达·芬奇
+啊。皇帝陛下抱歉，麻烦您继续担任炮手！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠拿破仑
+是是。交给我吧。[r]竟然把我当一介炮兵对待，真是位不容小觑的[#小姐:Mademoiselle]啊！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_80 2.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1 0.6]
+
+[charaDepth D 10]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFace F 0]
+[charaFadein D 0.1 0]
+[charaFadein F 0.1 2]
+
+＠齐格鲁德
+……布伦希尔德。
+[k]
+
+＠齐格鲁德
+待在在下的身旁一定让你很痛苦吧。[r]因为在下的存在，会折磨你的存在方式。
+[k]
+
+＠齐格鲁德
+哪怕有女王的佑护[line 3]
+[k]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 1]
+[wt 1.0]
+[charaFace F 0]
+
+＠布伦希尔德
+不会。[r]不可思议的是，我竟能忍受得住。
+[k]
+
+[charaFace F 8]
+
+＠布伦希尔德
+可能是因为……[r]我灵核的大部分已经碎裂了吧。
+[k]
+
+＠布伦希尔德
+以本就已经濒临毁坏的状态现界的我，[r]通过毁坏得更加严重……
+[k]
+
+＠布伦希尔德
+或许反而能比平常更好地遏制自己吧。
+[k]
+
+[charaFace D 4]
+
+＠齐格鲁德
+所谓的英灵还真是讽刺呢。
+[k]
+
+[charaFace F 1]
+
+＠布伦希尔德
+不，怎么会呢，亲爱的。[r]我感到非常高兴哦，齐格鲁德。
+[k]
+[messageOff]
+[charaFace D 10]
+[wt 0.8]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_11 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

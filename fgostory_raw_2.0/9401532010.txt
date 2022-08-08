@@ -1,0 +1,934 @@
+
+
+＄94-01-53-20-1-0
+
+
+[soundStopAll]
+[bgm BGM_EVENT_64 0.1]
+[charaSet A 98001000 1 玛修]
+[charaSet B 4026000 1 伊什塔尔]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 7008001 1 贝奥武夫]
+[charaSet E 5004001 1 童谣]
+[charaSet F 7022001 1 茨木童子]
+[charaSet G 5026000 1 伊丽莎白]
+[imageSet H back10000 1]
+[charaScale H 1.01]
+[charaDepth H 1]
+
+[scene 45400]
+[fadein black 2.0]
+[wait fade]
+
+[se ade89]
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+＠伊什塔尔
+冲[line 6]线！[r]恭喜，你们获得优胜啦！
+[k]
+
+？1：成啦[line 4]！
+
+[charaFadeout B 0.1]
+
+[se ad6]
+[wt 1.5]
+[seStop ad6 1.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaMoveReturn C 0,10 0.4]
+＠芙芙
+芙[line 4]！
+[k]
+
+？2：（用力拍手拍到手痛。）
+
+[charaFadeout B 0.1]
+
+[se ad6]
+[wt 1.5]
+[seStop ad6 1.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaMoveReturn C 0,5 0.2]
+[wt 0.2]
+[charaMoveReturn C 0,10 0.4]
+＠芙芙
+芙芙呜！（啪叽啪叽。）
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠玛修
+哇……气氛真热烈，我好感动！[r]我很高兴能如此近距离目睹冲线，前辈！
+[k]
+
+[messageOff]
+[se ade76]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_64 1.5]
+[seStop ade76 2.0]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout A 0.1]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠玛修
+距颁奖典礼应该还有一点时间。[r]大家都沉浸在余韵中呢。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_2 0.7 0.5]
+[charaTalk depthOff]
+[se ade106]
+[charaFadeTime H 0.7 0.5]
+[wt 1.0]
+[wt 1.0]
+[seStop ade106 0.7]
+[wt 0.7]
+
+[charaFace A 12]
+＠玛修
+哎呀……刚才那声音，是远处的雷声吗……？[r]直到刚才，会场的天空明明还如此晴朗……
+[k]
+
+[messageOff]
+[se ad2]
+[seVolume ad2 0 0.1]
+[wt 0.1]
+[seVolume ad2 2.0 0.9]
+[wt 0.7]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[se ad64]
+[wt 0.1]
+[shake 0.03 3 3 0.7]
+[wt 0.7]
+
+[seVolume ad2 0.7 0.2]
+[bgmStop BGM_EVENT_2 0.7]
+[wipeout rectangleStripUpToDown 0.3 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[imageSet H cut029_cloud 1]
+[charaScale H 1.01]
+[charaDepth H 1]
+[charaFadein H 0.1 0,-200]
+[wt 0.2]
+[wipein rectangleStripDownToUp 0.3 1]
+[wait wipe]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠玛修
+什么……那是积雨云吗……？
+[k]
+
+＠玛修
+仿佛拥有意志的生物，[r]笔直向这里冲过来了……
+[k]
+
+[bgmStop BGM_EVENT_5 0.7]
+[se ad162]
+[seVolume ad162 0 0.05]
+[wt 0.1]
+[seVolume ad162 1.0 0.9]
+[wt 1.5]
+[se ad63]
+[seStop ad162 1.5]
+[shake 0.03 3 3 0.4]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠贝奥武夫
+那是个规模不得了的暴风雨啊……！[r]喂，你们几个小鬼头，快回迦勒底去！
+[k]
+
+＠贝奥武夫
+这东西可不是只会吹走物体的暴风……[r]那是甚至能够击碎灵基的雷鸣！
+[k]
+
+＠童谣
+就是[#地震:Quake]·[#雷电:Crack]·[#火灾:Crime]·[#作家:安徒生]！[r]好不容易拿到了庆祝用的香槟！
+[k]
+
+＠茨木童子
+这这这……这犹如牛头天王的雷鸣，难道是赖光！？[r]吾……吾要开溜了，才不会被那家伙砍掉首级呢！
+[k]
+
+＠伊丽莎白
+茨木还真是胆小呢。[r]在这方面，我则能一直保持优雅……
+[k]
+
+＠伊丽莎白
+那种水准的雷根本不算什么。[r]在雅诺什山上，这样的雷非常稀疏平[line 3]
+[k]
+
+[messageOff]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.03 3 3 0.4]
+[se ad63]
+[wt 1.0]
+[se ad62]
+
+[messageShake 0.03 4 4 1.0]
+＠伊丽莎白
+呀哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇[line 3]！[r]这是什么，[seStop ad62 0.7]连骨髓都被电麻了[line 4]！
+[k]
+
+？1：情况不妙……！？
+
+＠玛修
+大家都争先恐后地逃离会场了……！
+[k]
+
+＠玛修
+我们也快离开这里吧，御主！
+[k]
+
+？2：玛修，先去避难……！
+
+＠玛修
+嗯，我赞成，御主！[r]这场暴风雨太不寻常了！
+[k]
+
+？！
+
+[seStop ad2 0.7]
+[se ad1]
+＠广播语音
+呵呵……呵呵呵……[r]啊[line 4]哈哈哈！
+[k]
+
+＠广播语音
+太完美啦[line 3]！　完美地成功了！[r]我居然如此完美无缺～！
+[k]
+
+＠芙芙
+芙，芙呜！
+[k]
+
+＠玛修
+刚才那是伊什塔尔小姐的声音……！？[r]啊，前辈……！　不行，不能回会场……！
+[k]
+
+[messageOff]
+[se ad59]
+[wipeout rightToLeft 0.3 1]
+[wait wipe]
+[charaSet B 1098117100 1 伊什塔尔]
+[charaDepth B 2]
+[charaDepth A 2]
+[charaDepth C 2]
+[seStop ad59 0.4]
+[wt 0.2]
+[wipein leftToRight 0.3 1]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.4 1]
+＠伊什塔尔
+好啦，不想被卷进来就快逃吧！[r]我毕竟也不是恶鬼，不会取你们性命的！
+[k]
+
+[charaFace B 4]
+＠伊什塔尔
+但能够要求返还赌资的只有留在会场里的从者！[r]逃跑英灵的票据将会被视为无效哦♡
+[k]
+
+[charaFace B 2]
+＠伊什塔尔
+呵呵，啊[line 3]哈哈哈！[r]如果有意见，就对继开天辟地之后的这个法则说去！
+[k]
+
+＠伊什塔尔
+『无论什么时代　在赌博中　赢的永远是东家。』
+[k]
+
+[charaFace B 6]
+＠伊什塔尔
+你们是否明白赌场里无论什么游戏，[r]都会设计成局头注定能赢的状态呢～☆
+[k]
+
+？1：这是欺诈！
+？2：不准你继续说这种卑劣的发言了！
+
+？！
+
+[charaFace B 4]
+＠伊什塔尔
+哎呀。有何贵干呢，[%1]。[r]我刚才好像听到了会严重遭报应的台词呢？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF00]
+[wt 0.1]
+[se ad63]
+[shake 0.03 3 3 0.7]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠玛修
+前辈……！[r]这里太危险了，不知道雷何时会击中……！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠伊什塔尔
+放心吧，玛修。[r]我不会用雷电劈认真工作的你们的啦。
+[k]
+
+[charaFace B 5]
+＠伊什塔尔
+[line 3]只要你们不继续妨碍我。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+
+[se ad14]
+[shake 0.07 3 3 0]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠芙芙
+芙呜！
+[k]
+
+？1：地震[line 3]！？
+？！
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠玛修
+不，这……好像不是普通的地震……？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠伊什塔尔
+对。这是大地的悲鸣。[r]因为现在，大地正在成为组装那孩子的牺牲品。
+[k]
+
+＠伊什塔尔
+你们难道认为我是那种会将全部财产用在慈善事业上的[#女神:货色]吗？[r]所有一切都只是为了这个时候的仪式罢了。
+[k]
+
+[charaFace B 3]
+＠伊什塔尔
+对。我[#根本无所谓究竟谁得第一名]。[r]只要全体拼尽全力相互竞争，跑完全程[line 3]
+[k]
+
+＠伊什塔尔
+这才是我最大的目的。
+[k]
+
+[charaFace B 7]
+＠伊什塔尔
+[#组装在全部队伍，组装在她们赛车上的][r][#所有部件都会被集中到这里][line 3]。
+[k]
+
+＠伊什塔尔
+我贴在这片土地上的[#金星织物]上，[r]被赛车轮胎刻下了满满的魔力哦！
+[k]
+
+？1：这……这是怎么一回事！？
+
+[charaFace B 3]
+＠伊什塔尔
+很好！　惊讶得好，就应该这样才行！[r]这样也不枉我当这个黑幕了！
+[k]
+
+？2：我一直隐约觉得这件事可疑！
+
+＠伊什塔尔
+哎呀是吗，[%1]？[r]不愧是我看好的有前途的御主呢。
+[k]
+
+＠伊什塔尔
+但你应该不清楚我具体打算做什么吧？
+[k]
+
+？！
+
+[charaFace B 8]
+＠伊什塔尔
+让我来告诉你吧[line 3][r]快看，这外联伊什塔尔神殿的真正形态！
+[k]
+
+[charaFadeout B 0.1]
+
+[bgmStop BGM_EVENT_3 0.7]
+
+[messageOff]
+[seStop ad14 0.7]
+[wipeout rectangleStripUpToDown 0.3 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaSet C 5032000 1 尼禄]
+[charaSet D 4027001 1 阿尔托莉雅·Alter]
+[charaSet E 5011001 1 巴贝奇]
+[charaSet F 1031001 1 弗兰]
+[charaSet G 2023000 1 教授M]
+[scene 45410]
+[wt 0.2]
+[charaFadeout H 1.0]
+[wipein rectangleStripDownToUp 0.3 1]
+[wait wipe]
+
+[se ad71]
+[seStop ad71 0.7]
+[shake 0.05 5 5 1.0]
+[wt 0.7]
+[se ade107]
+[wt 2.5]
+
+？1：那是　什么
+？2：巨大的……ATM……？
+？！
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+＠伊什塔尔
+伊什塔尔神殿只是虚假的形态！　这才是我苦心建造的[r]机密计划的心脏部分，伊什塔尔[#QPS:Quantum Power System]！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 1]
+＠尼禄
+等下等下等下～！
+[k]
+
+[charaFace C 5]
+＠尼禄
+搞出这种级别的骚动，[r]吾等也不能坐视不理了！
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠阿尔托莉雅·Alter
+刚才的话我都听到了，这是什么？[r]和装在我们赛车上的部件有关系吗？
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠伊什塔尔
+当然有关系啦！[r]一切都是为了这件事！　好了，回收～！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaSet D 2028000 1 海伦娜]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠巴贝奇
+唔[line 3]！？[r]我没有输入，这种蒸汽驱动啊！
+[k]
+
+[charaFadeout E 0.1]
+
+[charaSet E 3029002 1 源赖光]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠弗兰
+部件，从巴贝奇的身体上，卸下了！？
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠教授M
+（真不错，合体和分离……[r]　不知道是否能在最后附录部分加上如何脱卸的图解呢……）
+[k]
+
+[charaFadeout G 0.1]
+
+[charaSet F 7029000 1 织田信长]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠海伦娜
+部件自说自话地从赛车上卸下来[line 3][r]被那东西吸引过去了……？
+[k]
+
+[charaFadeout D 0.1]
+
+[charaSet G 6028001 1 尼托克丽丝]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠源赖光
+尽管这原本就是京极不需要的马具，[r]但究竟是在打什么主意？
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠织田信长
+哇哈哈哈！　只是卸下一个被强行安装的部件而已，[r]我们的赛车就自我毁灭了。
+[k]
+
+[charaFace F 10]
+＠织田信长
+迄今为止到底是以怎样的平衡在跑啊！[r]不过，这也是无可奈何的！
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠尼托克丽丝
+不是单纯的向那个飞过去。[r]有股非常可怕的魔力，从那个装置中[line 3]！？
+[k]
+
+[messageOff]
+[se ad135]
+[seVolume ad135 0 0.05]
+[seVolume ad135 2.0 0.4]
+
+[charaFadeout F 0.1]
+[wt 0.4]
+
+[charaTalk off]
+[imageSet C cut026_ggr00 1]
+[imageSet D cut026_ggr01 1]
+[imageSet E cut026_ggr02 1]
+[imageSet F cut026_ggr03 1]
+[imageSet G cut026_ggr04 1]
+[imageSet H cut026_ggr05 1]
+
+[charaFadein C 0.1 -1200,-600]
+[wt 0.1]
+[charaMove C 0,0 0.7]
+[wt 0.2]
+[charaFadeout C 0.4]
+[wt 0.2]
+
+[charaFadein D 0.1 1200,-600]
+[wt 0.1]
+[charaMove D 0,0 0.7]
+[wt 0.2]
+[charaFadeout D 0.4]
+[wt 0.2]
+
+[charaFadein E 0.1 -1200,-600]
+[wt 0.1]
+[charaMove E 0,0 0.7]
+[wt 0.2]
+[charaFadeout E 0.4]
+[wt 0.2]
+
+[charaFadein F 0.1 1200,-600]
+[wt 0.1]
+[charaMove F 0,0 0.7]
+[wt 0.2]
+[charaFadeout F 0.4]
+[wt 0.2]
+
+[charaFadein G 0.1 -1200,-600]
+[wt 0.1]
+[charaMove G 0,0 0.7]
+[wt 0.2]
+[charaFadeout G 0.4]
+[wt 0.2]
+
+[charaFadein H 0.1 1200,-600]
+[wt 0.1]
+[charaMove H 0,0 0.7]
+[wt 0.2]
+[charaFadeout H 0.4]
+[wt 0.2]
+
+[wt 1.5]
+[charaSet D 2028000 1 海伦娜]
+[charaSet H 98111500 1 达·芬奇]
+
+[seStop ad135 0.7]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠伊什塔尔
+哎呀～，来了，都来了！[r]多亏你们在我的[#金星:织物]上驰骋！
+[k]
+
+＠伊什塔尔
+通过你们的努力比赛，在这片大地上刻下的轮胎印记，[r]实现了某种魔法阵的效果，
+[k]
+
+＠伊什塔尔
+该装置会将比赛中使用的所有魔力资源积攒起来。
+[k]
+
+＠伊什塔尔
+与此同时，被安装在赛车上的部件，[r]会将我的[#织物:Texture]与用你们的魔力驱动的轮胎间
+[k]
+
+＠伊什塔尔
+发生的灵之摩擦力产生的热量偷偷积攒起来，[r]完成各部位的激发准备[line 3]
+[k]
+
+[charaFace B 3]
+＠伊什塔尔
+哼哼，啊哈哈哈哈！　完美，太完美了！[r]这[#GR:古伽兰那再造]计划很快就能实现了！
+[k]
+
+？1：古伽兰那！？
+
+[charaFadeout B 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠玛修
+古伽兰那[line 3]天之公牛。[r]传说中伊什塔尔小姐麾下的神兽。
+[k]
+
+＠玛修
+根据我们在乌鲁克听说的内容，[r]那个应该被不小心遗落在某处了吧……？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+？2：这是怎么一回事，伊什塔尔！
+
+[charaFace B 5]
+
+？！
+
+＠伊什塔尔
+……呵呵。回想起来，[r]这真是段漫长的雌伏时光呢……
+[k]
+
+＠伊什塔尔
+身为天之女主人，[r]居然被冥界女主人抢走了风头……
+[k]
+
+
+＠伊什塔尔
+只因失去了最大王牌的天之公牛，[r]就被其他女神同情地称呼为“那家伙是个无能女神”……
+[k]
+
+＠伊什塔尔
+那个金闪闪王居然还嘲笑我说[r]“凭你这种寒碜的身体，天之公牛当然会消失啦！”……
+[k]
+
+[charaFace B 3]
+＠伊什塔尔
+忍受着这些屈辱，我终于！[r]走到了！　这一步啊[line 4]！
+[k]
+
+[charaFace B 8]
+＠伊什塔尔
+喂，那边的！[r]不准露出那种“呃……换言之，你就是在胡乱撒气？”的眼神！
+[k]
+
+[charaFace B 7]
+＠伊什塔尔
+放心吧。身为最为卓越的女神，[r]我会好好向你们说明这次比赛的真相。
+[k]
+
+＠伊什塔尔
+迄今为止，我一有空就会试图寻找古伽兰那，[r]或是想要重新召唤它，
+[k]
+
+＠伊什塔尔
+总之我做了不少努力。[r]因为和我缘分如此深厚的神兽是不可能不回到我身边的。
+[k]
+
+[charaFace B 5]
+＠伊什塔尔
+……但是，无论我怎么找，都没有任何线索。[r]也无法召唤。甚至感受不到它的呼吸。
+[k]
+
+＠伊什塔尔
+这可不是普通的遗失物。[r]一定是被我的权能无法触及的某个人偷走了，或者……
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠海伦娜
+……或者，由于神灵与人类史的维系完全中断，[r]它完成了自己的使命，消灭了吧？
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠伊什塔尔
+没错。我在乌鲁克失去了古伽兰那，[r]并不是因为我的失误或是失败。
+[k]
+
+＠伊什塔尔
+是在那个时候，古伽兰那已经离开了我。[r]所以自然无法再次召唤。
+[k]
+
+＠伊什塔尔
+我从父亲那里得到的古伽兰那回归天上了。[r]这个没问题。嗯。说实话，它工作得很努力。
+[k]
+
+[charaFace B 3]
+＠伊什塔尔
+于是我心念一转，改变了思考角度。[r]既然一号坏掉了，那只要造一个二号出来就行了吧！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+什么[line 3]那……那您是真的打算[r]像主神安努神一样创造神兽吗……！？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠伊什塔尔
+嗯。父亲大人能做到的，我不可能做不到。
+[k]
+
+＠伊什塔尔
+你以为我迄今为止多少次差点毁了美索不达米亚啊？
+[k]
+
+[charaFace B 5]
+＠伊什塔尔
+我只让你们见识过我的善性，[r]所以你们可能有些小看我，但这才是真正的我。
+[k]
+
+＠伊什塔尔
+搜集所有神的权能，并将那些作为装饰[r]穿在身上打扮自己的女神中的女神[line 3]
+[k]
+
+[charaFace B 3]
+＠伊什塔尔
+我就是最强神灵，[r]支配者伊什塔尔啊……！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[se ad13]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-90]
+＠达·芬奇
+好厉害呀，神兽居然真的即将获得肉体了！[r]尽管这里是特异点，但没想到她居然能靠一个人实现这些！
+[k]
+
+[charaFace H 1]
+＠达·芬奇
+哎呀，看来我是真的小看她了！[r]女神伊什塔尔！　反省，并送上敬畏吧！
+[k]
+
+？1：达·芬奇亲！？
+？2：你那口气听上去完全没在反省吧！
+
+？！
+
+[charaFace H 5]
+＠达·芬奇
+哎呀～，打从一开始[r]这次比赛仪式就暗藏着不少玄机。
+[k]
+
+＠达·芬奇
+我想反正是女神伊什塔尔要做的事，再怎么多想也没意义，[r]就故意装作睁一只眼闭一只眼的样子[line 3]
+[k]
+
+[charaFace H 1]
+＠达·芬奇
+哈哈哈，没想到她居然在打这种主意啊。
+[k]
+
+＠达·芬奇
+这场比赛完全是用来[r]『[#创造新古伽兰那的方法]』吧？
+[k]
+
+？1：现在是笑的时候吗！
+？！
+
+[charaFace H 0]
+＠达·芬奇
+希望你能用宽大的胸怀接受我的态度。[r]天才总是难以抵抗超乎想象事态的魅力哦。
+[k]
+
+＠达·芬奇
+最重要的是这非常有意思！　面对异想天开、[r]令人激动的事，我会和凡人一样双眼熠熠生辉！
+[k]
+
+[charaFace H 4]
+＠达·芬奇
+话虽如此，嗯，这次还是适可而止好了。[r]惊讶也惊讶过了，接下来只剩如何应对了。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠伊什塔尔
+哎呀。还真敢说呢，达·芬奇。[r]刚才你不是说漏了嘴，说会敬畏我吗？
+[k]
+
+[charaFadeout B 0.1]
+
+[charaPut H 1]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 0,-90]
+＠达·芬奇
+嗯。这话现在依旧没有改变。
+[k]
+
+＠达·芬奇
+我会反省，也会敬畏。[r]但这是针对天之公牛，不是对你说的。
+[k]
+
+[charaFace H 0]
+＠达·芬奇
+非常遗憾，女神伊什塔尔。[r]你只不过是个借用人类躯壳的拟似从者。
+[k]
+
+＠达·芬奇
+你的灵基最多也就是A级的。[r]无论犯下多大的恶行，我们也能制住。
+[k]
+
+[charaFace H 5]
+＠达·芬奇
+……不过嘛。根据该如何处置那只重新构筑起来的[r]天之公牛，我的认真程度也会发生改变哦？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠伊什塔尔
+真敢大放厥词啊。[r]好啊，那我先把天之公牛构筑起来。
+[k]
+
+＠伊什塔尔
+然后再让你好好感受我本人的可怕。
+[k]
+
+[charaFace B 3]
+＠伊什塔尔
+将幼体作为核心，通过[#强制征收装置:伊什塔尔QPS][r]让魔力满溢的生体部件合体！
+[k]
+
+[charaFace B 8]
+＠伊什塔尔
+来吧[line 3]诞生吧！　这就是我的新古伽兰那！[r]古伽兰那 MKⅡ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+[se ad65]
+[shake 0.03 5 5 2.5]
+[imageSet H cut030_ggr 1]
+[charaScale H 1.01]
+[wt 0.7]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.2]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.2]
+[fadeout white 0.4]
+[wait fade]
+[charaTalk H]
+[charaFadein H 0.7 0,-200]
+[wt 0.4]
+[fadein white 1.0]
+[wait fade]
+
+[wt 0.5]
+[se ad109]
+[se ad203]
+[seVolume ad203 0 0.7]
+[shake 0.03 5 5 1.5]
+[wt 3.0]
+
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_24 1.4]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

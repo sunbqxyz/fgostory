@@ -1,0 +1,1503 @@
+
+
+＄91-20-21-01-1-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 2021000 1 巴御前]
+[charaSet B 98001000 1 玛修]
+[charaSet C 6005001 1 杰克]
+[charaSet D 5004001 1 童谣]
+[charaSet E 3026000 1 贞德·Alter·Santa·Lily]
+[charaSet F 98111500 1 达·芬奇]
+[charaSet G 1098124510 1 达·芬奇（萝莉）]
+[charaSet H 98006200 1 敌人]
+
+[charaSet I 98001000 1 通讯特效]
+[imageSet J back10000 1]
+
+[charaScale J 1.01]
+[charaFilter J silhouette E0000080]
+
+
+[charaDepth E 1]
+[charaDepth C 5]
+[charaDepth D 9]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[flag IsClear true]
+[branch lblConf]
+[label lblNotClear]
+[flag IsClear false]
+[label lblConf]
+
+
+[branch lblNotClear1 IsClear false]
+[scene 66400]
+[branch lblConf1]
+[label lblNotClear1]
+[scene 10204]
+[label lblConf1]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.4]
+＠玛修
+……今天的模拟训练到此结束。[bgm BGM_EVENT_2 0.1][r]辛苦啦！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠巴御前
+嗯，辛苦了。
+[k]
+
+[charaFace A 1]
+＠巴御前
+你们也辛苦了。[r]今天大家也都是好孩子，都非常努力哦。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk off]
+[charaFace C 1]
+[charaFace D 1]
+[charaFace E 6]
+[charaFadein C 0.4 0]
+[charaFadein D 0.4 1]
+[charaFadein E 0.4 2]
+[wt 0.6]
+[charaTalk on]
+[charaTalk C]
+
+＠杰克
+呵呵呵。我们很努力吗？
+[k]
+
+[charaFace D 1]
+
+＠童谣
+嗯，非常努力哦。[r]从开始到最后都非常努力吧。
+[k]
+
+[charaFace E 1]
+＠贞德·Alter·Santa·Lily
+当然啦。师傅教过我，[r]无论做什么事都必须认真完成！
+[k]
+
+[charaFace E 6]
+
+＠贞德·Alter·Santa·Lily
+那现在应该到吃点心的时间了吧？[r]我们去食堂吧！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠巴御前
+嗯，说得对[line 3][wt 0.3][charaFace A 1]但在那之前别忘了一件事。
+[k]
+
+＠巴御前
+是南丁格尔阁下平时的谆谆教诲。[r]来，当从[#模拟装置]或[#灵子转移]返回时，应该做什么？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace D 0]
+[charaFace E 0]
+[charaFadein C 0.1 0]
+[charaFadein D 0.1 1]
+[charaFadein E 0.1 2]
+
+＠杰克
+[FFFFFF]？[-]
+[k]
+
+[charaFace E 8]
+
+＠贞德·Alter·Santa·Lily
+呃……
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠巴御前
+……洗手和漱口。来，跟着我念！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk off]
+[charaFace C 1]
+[charaFace E 6]
+[charaFadein C 0.1 0]
+[charaFadein E 0.1 2]
+[wt 0.2]
+
+＠杰克和Lily
+洗手！[se adm21][seVolume adm21 0 0.3][charaMoveReturn C -256,10 0.4][wt 0.6]　漱口！[se adm21][seVolume adm21 0 0.3][charaMoveReturn E 256,10 0.35][wt 0.4]
+[k]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠童谣
+嗯，没错。洗手漱口！
+[k]
+
+[charaFace D 4]
+
+＠童谣
+如果忘记了这些，直接拿起甜甜圈，[r]卫宫叔叔和布狄卡也一定会露出悲伤的表情。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠巴御前
+嗯，嗯。[r]所以说，一定要认真洗手漱口。明白了吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 1]
+[charaFace D 1]
+[charaFace E 6]
+[charaFadein C 0.1 0]
+[charaFadein D 0.1 1]
+[charaFadein E 0.1 2]
+
+＠幼年系从者们
+好～。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠巴御前
+嗯，回答得好。[r]那我们先去洗手间吧。不准绕路哦。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 1]
+[charaFace D 1]
+[charaFace E 6]
+[charaFadein C 0.1 0]
+[charaFadein D 0.1 1]
+[charaFadein E 0.1 2]
+
+＠幼年系从者们
+好～！
+[k]
+
+[messageOff]
+[se ad59]
+[seVolume ad59 0 0.7]
+[charaFadeout E 0.4]
+[charaMove E 296,0 0.4]
+[wt 0.2]
+
+[charaFadeout D 0.4]
+[charaMove D 40,0 0.4]
+[wt 0.3]
+
+[charaFadeout C 0.4]
+[charaMove C -216,0 0.4]
+[wt 0.4]
+
+[seVolume ad59 1.4 0]
+[wt 1.4]
+
+[se ad8]
+[seStop ad59 0.3]
+[wt 2.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+[charaFace B 1]
+＠玛修
+……不愧是巴小姐。[r]事关掌控幼年系从者的方面，
+[k]
+
+＠玛修
+在迦勒底的英灵中可以排进前五吧。[r]您有什么窍门吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠巴御前
+哪有，哪有，我没做什么特别的事。[r]我只是比较擅长和小孩子相处……
+[k]
+
+＠巴御前
+最重要的是，这里都是些诚实的好孩子。[r]一点也不辛苦。
+[k]
+
+[charaFace A 0]
+＠巴御前
+即便在这次[#模拟训练]中，[r]大家也边嬉闹边[#利索]地完成了御主的指示，
+[k]
+
+＠巴御前
+工作完成得非常漂亮。[r]御主。稍后请务必要好好夸奖她们哦。
+[k]
+
+？1：说得对。
+
+[messageOff]
+[wt 0.4]
+
+[charaFace A 1]
+[wt 1.4]
+
+？2：先向巴小姐道一声谢。
+
+[charaFace A 3]
+
+＠巴御前
+啊，不是对我啦……
+[k]
+
+[charaFace A 1]
+
+＠巴御前
+不。您刚才的意思是先向我再向她们吧。[r]非常感谢。
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠玛修
+那我要先去整理训练相关的数据，[r]然后去向达·芬奇亲报告。
+[k]
+
+[charaFace B 13]
+
+＠玛修
+前辈还请随意。
+[k]
+
+＠玛修
+可以回自己房间休息，[r]也可以去娱乐室玩。
+[k]
+
+＠玛修
+毕竟您从一大清早就一直在训练，[r]而我觉得休息也是任务之一。
+[k]
+
+？1：玛修也不要太拼哦。
+
+[charaFace B 13]
+
+＠玛修
+感谢关心，前辈。
+[k]
+
+[charaFace B 1]
+
+？2：那你完成后，我们去食堂会合吧。
+
+[charaFace B 12]
+
+＠玛修
+啊，但是，可能要到晚上才能弄完……
+[k]
+
+[messageOff]
+[wt 0.7]
+
+[charaFace B 6]
+[wt 1.1]
+
+[charaFace B 1]
+
+＠玛修
+啊，是共进晚餐的意思吧。[r]我明白了。
+[k]
+
+？！
+
+＠玛修
+那我先告辞了！
+[k]
+
+[messageOff]
+[se ade74]
+[charaFace B 13]
+[charaFadeout B 0.4]
+[wt 0.3]
+
+[seVolume ade74 1.2 0]
+[wt 1.0]
+
+[se ad8]
+[seStop ade74]
+[wt 2.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠巴御前
+……[r]……
+[k]
+
+＠巴御前
+………………[wt 0.3][charaFace A 1][charaMoveReturn A 0,-6 0.3]唔。[wt 0.3]
+[k]
+
+＠巴御前
+…………………………[wt 0.4][charaMoveReturn A 0,-2 0.3]唔[wt 0.3][charaMoveReturn A 0,-2 0.3]唔！[wt 0.3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.2]
+[wt 1.2]
+
+[charaFace A 5]
+
+＠巴御前
+[f large]原[messageShake 0.04 2 2 0.4]来如此！
+[k]
+
+[messageShakeStop]
+[charaFace A 1]
+＠巴御前
+御主。御主。[bgm BGM_EVENT_7 0.1][r]请恕我冒昧问一句[line 3]
+[k]
+
+＠巴御前
+您和玛修阁下的关系非常好吧。[r]嗯嗯。我觉得这是好事。
+[k]
+
+[charaFace A 3]
+
+＠巴御前
+然后……其实哦？[r]御主。
+[k]
+
+＠巴御前
+话说，御主。[r]询问年轻的您这种问题或许不太礼貌，
+[k]
+
+＠巴御前
+但您……那个，[r]在故乡是否有那样的人呢？
+[k]
+
+？1：你指什么？
+
+？！
+
+[charaFace A 0]
+
+＠巴御前
+呃，那个……[r]就是……
+[k]
+
+[messageOff]
+[wt 0.7]
+[charaFaceFade A 3 0.8]
+[charaShake A 0.04 2 0 0.8]
+[wt 1.2]
+＠巴御前
+[f small]就是……思慕[wt 0.4]对象。
+[k]
+
+＠巴御前
+啊。我不是很了解现代的风俗，[r]所以刚才的问题不是指是否缔结了婚姻关系！
+[k]
+
+[charaFace A 1]
+
+＠巴御前
+实际情况究竟如何呢？[r]虽说您也可能因为年纪尚轻还未经历，
+[k]
+
+＠巴御前
+但孔明阁下说，现代人接触这类事比较早，[r]我才猜想御主会不会也是这样。
+[k]
+
+[charaFace A 3]
+
+＠巴御前
+怎[messageShake 0.04 2 2 0.7]……[wt 0.2]怎……[wt 0.2]怎么样？[r]您在故乡是否有思慕对象呢？
+[k]
+
+[messageShakeStop]
+
+＠巴御前
+还……还是说您[#洁白如新]呢？
+[k]
+
+？1：洁白如新啊……
+？2：洁白如新……指的是什么啊……
+
+？！
+
+[charaShake A 0.04 3 0 0.6]
+
+＠巴御前
+不，不，不是。那个，怎么说呢……
+[k]
+
+[charaShakeStop A]
+＠巴御前
+我不打算刨根问底，[r]但当我看到玛修阁下不辞辛劳的样子，禁不住……
+[k]
+
+＠巴御前
+产生了这种念头。[r]啊啊，玛修阁下究竟是怎么想的呢。
+[k]
+
+[charaFace A 1]
+
+＠巴御前
+御主乃是一军将领，是在人理最前线战斗的人物。[r]但迦勒底决不是御主的故乡。
+[k]
+
+＠巴御前
+所以我才猜想您在故乡或许还有[r]家人、朋友，或是思慕对象吧。
+[k]
+
+
+？1：思慕对象？
+
+[charaFace A 3]
+
+＠巴御前
+呃，那个……[r]用现代的话来说……应该……是恋人吧？
+[k]
+
+？2：指的是恋人吧？
+
+[charaFace A 3]
+
+＠巴御前
+正……正是。[r]用现代的话来说就是这样……
+[k]
+
+？！
+
+？1：不不不不不不不不不。
+？2：没有啦！
+
+
+？！
+
+[charaShake A 0.04 1 2 0.4]
+
+＠巴御前
+哎呀！
+[k]
+
+[charaShakeStop A]
+＠巴御前
+我本以为率领众多英灵英勇奋战的御主[r]在故乡必然会有一两个思慕对象呢……
+[k]
+
+＠巴御前
+御主果然还年轻，[r]这种事对您还太早了吧！？
+[k]
+
+[charaShake A 0.04 3 0 0.8]
+
+[charaFace A 3]
+
+＠巴御前
+啊哇哇哇哇哇哇哇哇哇哇哇……[r]是……是……是我太失礼了。
+[k]
+
+[charaShakeStop A]
+
+＠巴御前
+御主果然是很注重分寸的！[r]请原谅冒出这种奇怪念头的巴。
+[k]
+
+[charaFace A 4]
+
+＠巴御前
+……[r]……
+[k]
+
+[charaFace A 3]
+
+＠巴御前
+…………姑……姑且容我确认一下，御主。
+[k]
+
+＠巴御前
+您应该……[r][#没有孩子]吧。
+[k]
+
+？1：没有呢。
+？2：我没孩子……
+
+？！
+
+＠巴御前
+是……这样啊。[r]这样啊……
+[k]
+
+[charaFace A 0]
+
+＠巴御前
+我还以为会被外表年幼的英灵们喜爱的御主……[r]而且还是活在现代的一军将领或许会……
+[k]
+
+＠巴御前
+请原谅冒出这种愚蠢念头的巴。[r]十分抱歉……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.2]
+[charaFaceFade A 4 1.2]
+[wt 1.2]
+
+＠巴御前
+……[r]……
+[k]
+
+？1：难不成，你想找有孩子的父母聊天？
+
+[charaFace A 0]
+
+＠巴御前
+…………啊，嗯。
+[k]
+
+[bgm BGM_EVENT_2 0.1]
+
+？2：我记得这里应该有育儿经验的英灵吧。
+
+[charaFace A 0]
+
+＠巴御前
+……说得对。
+[k]
+
+[bgm BGM_EVENT_2 0.1]
+＠巴御前
+我和但马大人与玛丽阁下经常聊天。[r]托他们的福，我也学到了不少。
+[k]
+
+＠巴御前
+明白了哪怕时光流转物是人非……
+[k]
+
+＠巴御前
+那些世间宝贵、耀眼[r]而可爱的存在依然不会改变。
+[k]
+
+＠巴御前
+正因为如此[line 3]
+[k]
+
+？！
+
+＠巴御前
+现在，我才想听听有育儿经验之人的经验。[r]尽管我做不了什么……
+[k]
+
+[charaFace A 4]
+
+＠巴御前
+不，我会这么问，都是为了我自己。
+[k]
+
+＠巴御前
+哪怕一句话也好……
+[k]
+
+[messageOff]
+[wt 0.7]
+
+[charaFace A 0]
+＠巴御前
+不。很抱歉对您说这种任性的话。[r]考虑到我们当前的处境，这并不是什么易事吧。
+[k]
+
+[charaFace A 1]
+
+＠巴御前
+那就这样，明天见。[r]无论是战斗训练还是什么别的作战，都请务必叫上我！
+[k]
+
+＠巴御前
+巴御前定将为您效力。
+[k]
+
+？1：等一下。
+？2：我们再聊一会儿。
+
+？！
+
+[charaFace A 3]
+
+＠巴御前
+啊[line 3]
+[k]
+
+？1：关于巴小姐的家人。
+？2：因为以前您都没怎么提及吧。
+
+
+？！
+
+[charaFace A 3]
+＠巴御前
+……………………………………[wt 0.7][charaFace A 0]嗯。
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_2 1.2]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 10000]
+[wt 0.4]
+
+[fadein black 0.4]
+[wait fade]
+
+[fadeout black 0.4]
+[wait fade]
+
+[charaSet A 2021002 1 巴御前]
+
+[scene 20805]
+
+[se adm13]
+[se ad452]
+[seVolume ad452 0 0]
+[fadein black 1.2]
+[wait fade]
+
+[seVolume ad452 0.2 1.0]
+[wt 0.9]
+[seStop ad452 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.6]
+
+＠巴御前
+……请注意脚下。
+[k]
+
+＠巴御前
+尽管是在[#模拟装置]内，但这里毕竟是夜晚的森林，[r]不小心绊到树根或是藤蔓，还是会摔倒的。
+[k]
+
+[charaFace A 5]
+
+＠巴御前
+虽说在这里受的伤不会留到现实，[r]但让主君受伤乃是英灵的耻辱。
+[k]
+
+＠巴御前
+来吧，这边走。
+[k]
+
+[messageOff]
+[se ad452]
+[charaFadeout A 0.4]
+[charaMove A -30,0 0.4]
+[wt 0.2]
+
+[wipeout leftToRight 1.2 1.0]
+[wait wipe]
+
+[seVolume ad452 1.0 0.6]
+[wt 1.0]
+
+[wipein rightToLeft 1.2 1.0]
+[wait wipe]
+
+[seVolume ad452 0.4 1.0]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 30,0]
+[charaMove A 1 0.4]
+[wt 0.6]
+
+[seStop ad452 0.1]
+[wt 0.1]
+
+[charaFace A 0]
+
+＠巴御前
+这附近应该就可以了吧。
+[k]
+
+[charaFace A 1]
+
+＠巴御前
+感谢您的体谅，不胜惶恐。[r]居然愿意陪巴聊过去……
+[k]
+
+？1：不用在意。
+？2：毕竟管制室里有其他人在场嘛。
+
+？！
+
+＠巴御前
+……嗯。
+[k]
+
+[messageOff]
+[seVolume adm13 1.1 0.4]
+[charaFace A 0]
+[wt 1.1]
+
+＠巴御前
+……[r]……
+[k]
+
+[seStop adm13 1.8]
+[bgm BGM_EVENT_11 0.1]
+
+＠巴御前
+我的家人……[r]不知御主了解多少。
+[k]
+
+
+＠巴御前
+我是义仲大人[line 3]
+[k]
+
+＠巴御前
+[line 3]木曾义仲的义父中原兼远的女儿。[r]年幼时就与义仲大人相识。
+[k]
+
+[charaFace A 1]
+
+＠巴御前
+兄长兼光、兼平原本就承蒙义仲大人的照顾。
+[k]
+
+[charaFace A 0]
+
+＠巴御前
+我和兄长们同父异母……
+[k]
+
+[messageOff]
+[charaFace A 5]
+[wt 1.2]
+
+[charaFace A 0]
+＠巴御前
+回想起来，或许是由于继承了母亲那边的血脉吧。[r]我才会拥有鬼种的力量。
+[k]
+
+＠巴御前
+根据后世的传说，我的母亲是因为[r]怀上了巴渊龙神的神力，才会生下了我。
+[k]
+
+＠巴御前
+或许正因为如此，[r]我几乎没怎么和兄长们见过面……
+[k]
+
+＠巴御前
+在木曾谷，[r]我一直和驹王丸大人[line 3]也就是义仲大人在一起。
+[k]
+
+？1：你和义仲先生是青梅竹马吧。
+？2：你和他一直在一起吧。
+
+？！
+
+[messageOff]
+[charaFace A 1]
+[wt 1.2]
+
+[charaFace A 0]
+
+＠巴御前
+嗯。
+[k]
+
+＠巴御前
+即便我沦落成鬼，[r]额头上[#耸现出]如此可怕的角，
+[k]
+
+＠巴御前
+也只有义仲大人面不改色地说，
+[k]
+
+＠巴御前
+“原来如此，你怪力的根源是这个啊。[r][f small]  [f -]那你不必感到羞愧，为此感到自豪吧。”
+[k]
+
+＠巴御前
+“正因为拥有这力量，你才能成为我的左膀右臂哦。”
+[k]
+
+＠巴御前
+……说完，还哈哈大笑。
+[k]
+
+＠巴御前
+那之后……[r]没错，是我成为义仲大人妻子之一后的事了。
+[k]
+
+＠巴御前
+在俱利伽罗峠之战前不久。[r]那位大人，对我[line 3]
+[k]
+
+[messageOff]
+[fadeout black 1.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaSet A 2021001 1 巴御前]
+
+[scene 46103]
+[effect bit_sepia01]
+[wipeFilter cinema 0.5 0]
+[wt 0.8]
+
+[fadein black 1.4]
+[wait fade]
+
+
+＠山吹御前
+……唉，真是的。[r]巴阁下明明如此强悍，可为何又如此[#弱小]呢。
+[k]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.2 0,-50]
+[charaScale A 1.1]
+[wt 0.1]
+
+＠巴御前
+……[r]……
+[k]
+
+＠巴御前
+我……[r]真的……对义仲大人……有用吗？
+[k]
+
+＠巴御前
+拿起弓箭的我不如兄长他们木曾四天王，[r]作为妻子、女人的我又远远不如您和冬姬大人……
+[k]
+
+＠巴御前
+至今未能怀上孩子……
+[k]
+
+＠巴御前
+而我的身上，[r]却还长着两支非人的证明……
+[k]
+
+＠巴御前
+……[r]……
+[k]
+
+＠巴御前
+这样的我，究竟……[r]能否伴随义仲大人实现他的目标呢……[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠山吹御前
+挺起胸膛来。[r]我们的巴。
+[k]
+
+＠山吹御前
+无论是冬姬大人，还是我，都相信你。[r]再说我也是和你自幼一起长大的啊。
+[k]
+
+＠山吹御前
+我们都是义仲大人的妻子。[r]原本确实应该争夺他的宠爱。
+[k]
+
+＠山吹御前
+而事实上，我和冬姬大人的关系也不融洽。[r]但是啊，巴，我们的巴。
+[k]
+
+＠山吹御前
+只有你不一样。
+[k]
+
+＠山吹御前
+你是哪怕在鲜血横飞的战场上，[r]也能陪伴在义仲大人身边的女人，是能战斗的女人。
+[k]
+
+＠山吹御前
+当我们除了祈祷以外什么都做不了的时候，[r]只有你，可以使用你被赐予的力量。
+[k]
+
+＠山吹御前
+倘若这不叫幸运，又叫什么呢，巴。
+[k]
+
+＠山吹御前
+你可以连同我们那一份……[r]帮助义仲大人啊。
+[k]
+
+＠山吹御前
+正室、侧室，这些在战场上没有任何用处。[r]你无疑是“与木曾义仲同在的女人”。
+[k]
+
+＠山吹御前
+没错，鬼角又算什么！[r]只要像这样戴上头盔，在战场上毫不起眼！
+[k]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 0,-50]
+
+＠巴御前
+山吹大人……！
+[k]
+
+＠巴御前
+您居然如此……[r]为我着想……
+[k]
+
+[charaFace A 5]
+
+＠巴御前
+我……我[line 3]决定了。
+[k]
+
+[charaFace A 2]
+＠巴御前
+我，一定要代替所有爱着义仲大人的女人们战斗，[r]必定……！
+[k]
+
+＠巴御前
+万一义仲大人在战场上牺牲，[r]我，做好了代替大家，在他临终时伴他左右的觉悟！
+[k]
+
+＠山吹御前
+[charaTalk B]
+…………巴。
+[k]
+
+[charaFace A 5]
+
+＠巴御前
+在。
+[k]
+
+[charaFace A 3]
+[charaShake A 0.06 2 2 0.2]
+
+＠山吹御前
+[charaTalk B]
+你[messageShake 0.04 4 3 0.8]怎么能光想输掉时的事啦！[r]巴！
+[k]
+
+[messageShakeStop]
+
+＠巴御前
+啊[messageShake 0.04 3 3 1.1]，[wt 0.3]啊，[wt 0.3]呃，[wt 0.3]明白了！
+[k]
+
+[messageOff]
+[fadeout black 1.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaMoveScale A 1.0 0.1]
+[wt 0.1]
+
+[wipeOff]
+[scene 10000]
+[effectStop bit_sepia01]
+[wt 0.4]
+
+[charaSet A 2021002 1 巴御前]
+
+[fadein black 0.4]
+[wait fade]
+
+[scene 20805]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[fadein black 1.4]
+[se adm13]
+[seVolume adm13 1.4 0.6]
+[wait fade]
+＠巴御前
+…………俱利伽罗峠之战我们获得了大胜。[seStop adm13 3.2]
+[k]
+
+＠巴御前
+面对平家的大军，义仲大人英勇战斗，[r]并成功进驻了京之都城……
+[k]
+
+[charaFace A 5]
+
+＠巴御前
+……[r]……
+[k]
+
+＠巴御前
+然而并非万事都能如意。[r]义仲大人虽然终于当上了征夷大将军……
+[k]
+
+[charaFace A 4]
+＠巴御前
+却被受命于源赖朝公的源范赖、源义经夺去了生命。
+[k]
+
+＠巴御前
+而我……[line 4]
+[k]
+
+？1：没能在他临终时陪伴他的身旁吧。
+
+＠巴御前
+对。
+[k]
+
+？2：……………………
+
+＠巴御前
+…………没能在义仲大人临终时陪伴他的身旁。
+[k]
+
+？！
+
+[messageOff]
+[wt 0.3]
+
+[charaFaceFade A 0 0.6]
+[wt 1.2]
+
+[charaFace A 5]
+
+＠巴御前
+我没能遵守与山吹大人的约定。[r]义仲大人他……
+[k]
+
+＠巴御前
+对我说。[r]让我，活下去。
+[k]
+
+[charaFace A 0]
+
+＠巴御前
+义仲大人这番话语中包含的意义之一，我事后才得以知晓。[r]那就是我[#已经怀上了义仲大人的孩子]。
+[k]
+
+
+？1：那个孩子就是……
+？2：朝比奈三郎义秀。
+
+？！
+
+[charaFace A 1]
+
+＠巴御前
+嗯。是义秀。
+[k]
+
+＠巴御前
+表面上被当做与和田义盛大人的孩子，[r]但不会错。那正是义仲大人的孩子。
+[k]
+
+＠巴御前
+……巴，身为人类的女人抚养义秀。
+[k]
+
+＠巴御前
+那时候，我前额鬼种、混血证明的角已经消失了……
+[k]
+
+＠巴御前
+抚养义秀长大之后，我为义仲大人吊唁，[r]作为一个人，度过了我的余生。
+[k]
+
+＠巴御前
+听说连遗骸，都像普通人类。[r]没有任何奇异的样子。
+[k]
+
+[charaFace A 0]
+
+＠巴御前
+……[r]……
+[k]
+
+[charaFace A 5]
+＠巴御前
+我本打算忍耐所有鬼之血的冲动活下去，[r]但实际上究竟是否是这样呢？
+[k]
+
+＠巴御前
+倘若能在义仲大人临终时陪伴他，我[line 3]
+[k]
+
+＠巴御前
+或许会爱杀反转，甚至吞噬吾子义秀，[r]变成真正的鬼吧。
+[k]
+
+[charaFace A 0]
+
+＠巴御前
+不管怎么说，义仲大人……[r]双重意义上拯救了我。
+[k]
+
+[messageOff]
+[wt 0.6]
+[charaFaceFade A 5 0.5]
+[wt 0.5]
+
+[charaFace A 3]
+[charaShake A 0.04 2 2 0.3]
+[wt 0.2]
+
+＠巴御前
+对……对不起，御主。[r]结果我一直在说义仲大人的事……！？
+[k]
+
+＠巴御前
+哎，咦？[r]哎呀？
+[k]
+
+＠巴御前
+奇怪了……[r]我本打算聊家人的事啊……
+[k]
+
+＠巴御前
+尤其是今天，本打算说孩子的事！[r]打算好好聊聊义秀的事才对[line 3]咦……？
+[k]
+
+＠巴御前
+从什么时候开始偏题的呢……[r]这……这样一来，变成全是义仲大人的事了吧！？
+[k]
+
+＠巴御前
+那个，那个，年幼时的……
+[k]
+
+＠巴御前
+但……但是，唔～，唔～，[r]确实从那时起，驹王丸大人就一直很照顾我……
+[k]
+
+？1：没关系，我明白了。
+
+＠巴御前
+是……是吗。
+[k]
+
+？2：巴小姐直到现在都还很喜欢义仲先生和义秀吧。
+
+[charaFace A 0]
+
+＠巴御前
+啊[line 3]
+[k]
+
+[charaFace A 1]
+
+＠巴御前
+嗯！　那当然啦！
+[k]
+
+？！
+
+[charaFace A 0]
+＠巴御前
+我的新主君，[%1]大人。[r]假如您能见到义仲大人和义秀的话……
+[k]
+
+＠巴御前
+一定能像亲子或兄弟那样亲密无间。
+[k]
+
+[charaFace A 1]
+
+＠巴御前
+因为[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.0]
+[se ad9]
+[seVolume ad9 0 0.8]
+[charaTalk J]
+
+
+[charaFadein J 0.6 0,-200]
+[charaFadeTime J 0.6 0.4]
+[wt 0.2]
+[charaFace A 5]
+[wt 0.4]
+[charaFadeout J 0.9]
+[wt 0.9]
+[charaFadein J 0.6 0,-200]
+[charaFadeTime J 0.6 0.4]
+[wt 0.6]
+[charaFadeout J 0.9]
+[wt 0.9]
+[charaFadein J 0.6 0,-200]
+[charaFadeTime J 0.6 0.4]
+[wt 0.6]
+[charaFadeout J 0.9]
+[wt 0.4]
+
+[charaFadeout J 0]
+[wt 0.1]
+
+[seStop ad9 0.4]
+[wt 0.3]
+
+＠巴御前
+唔唔。[bgm BGM_EVENT_3 0.1]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+
+[branch lblClear2 IsClear true]
+
+[label lblNotClear2]
+
+
+[charaPut I 1]
+[charaEffect I bit_talk_10_MiddleLevel]
+[wt 0.2]
+
+[se ad13]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 0,-90]
+[wt 0.3]
+
+＠F：达·芬奇
+啊～，抱歉啦，两位。[r]我知道你们在使用模拟装置！
+[k]
+
+[charaFace F 4]
+＠F：达·芬奇
+但睡昏头的工作人员开启了病毒扫描，[r]在里面闲晃的你们被判定为异物了。
+[k]
+
+[charaFace F 2]
+
+＠F：达·芬奇
+所以，那里即将出现破格的强大敌人……[r]也就是疫苗数据！
+[k]
+
+＠F：达·芬奇
+我们正在紧急尝试中止，[r]但抱歉！　现阶段只能靠你们想办法了！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+[wt 0.4]
+
+[branch lblConf2]
+
+[label lblClear2]
+
+[charaPut I 1]
+[charaEffect I bit_talk_10_MiddleLevel]
+[wt 0.2]
+
+[se ad13]
+[charaTalk G]
+[charaFace G 34]
+[charaFadein G 0.1 1]
+[wt 0.3]
+
+＠G：达·芬奇
+啊～，抱歉了，两位。[r]我知道你们在使用模拟装置！
+[k]
+
+[charaFace G 31]
+＠G：达·芬奇
+但睡昏头的工作人员开启了病毒扫描，[r]在里面闲晃的你们被判定为异物了。
+[k]
+
+＠G：达·芬奇
+所以，那里即将出现破格的强大敌人……[r]也就是疫苗数据！
+[k]
+
+[charaFace G 4]
+
+＠G：达·芬奇
+我们正在紧急尝试中止，[r]但抱歉！　现阶段只能靠你们想办法了！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+[wt 0.4]
+
+[label lblConf2]
+
+
+？1：没想到竟是人为失误！
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠巴御前
+啊哇哇哇。[r]无论什么事都无法奢求完美无缺呢……
+[k]
+
+[charaFace A 5]
+
+？2：我们会想办法处理的，不要紧。
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠巴御前
+好，御主。
+[k]
+
+？！
+
+[messageOff]
+[se ad51]
+[wt 0.7]
+
+[charaFace A 5]
+
+＠巴御前
+[line 3]那巴御前，将作为帮助主君的武者！
+[k]
+
+[charaFace A 2]
+＠巴御前
+必定会守护好[%1]阁下[r]无论是半天，还是一天！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.6]
+
+[se ad25]
+[wt 1.1]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠巴御前
+[f large]出[messageShake 0.04 2 2 0.5]击！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

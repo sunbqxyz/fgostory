@@ -1,0 +1,1114 @@
+
+
+＄94-05-14-02-1-0
+
+
+[soundStopAll]
+
+
+[charaSet B 8001600 1 玛修]
+[charaSet C 2001300 1 卫宫]
+[charaSet D 7032001 1 重瞳]
+[charaSet E 1098123200 1 戈尔德鲁夫]
+[charaSet F 1033300 1 齐格鲁德]
+[charaSet H 98002000 1 芙芙]
+[charaSet I 6035000 1 雏罂（通常）]
+[imageSet J back10000 1]
+[charaScale J 1.01]
+[charaSet K 5009040 1 特效用dummy]
+
+[charaPut K 1200,1200]
+[charaEffect K bit_sepia01]
+
+
+[branchQuestNotClear lblNotClear 3000320]
+
+[scene 66400]
+
+[charaSet A 3044000 1 雏罂]
+[charaSet G 1098124500 1 达·芬奇]
+[branch lblConf]
+
+[label lblNotClear]
+[scene 10204]
+
+[charaSet A 1098196710 1 雏罂]
+[charaSet G 5009001 1 达·芬奇]
+[label lblConf]
+
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠玛修
+玛修·基列莱特。[r]准备完成。
+[k]
+
+＠玛修
+特异点攻略用装备自不用说，[r]娱乐活动用装备也万无一失。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+[wt 0.4]
+＠卫宫
+那太好了。[r]虽说是任务，但这次是去夏季的山中。
+[k]
+
+＠卫宫
+露营用道具自然越多越好。[r]我也打算自带几种道具过去。
+[k]
+
+？1：咿！？
+？2：卫宫先生！？
+
+？！
+
+[bgm BGM_EVENT_7 0.1]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠卫宫
+毕竟灵子转移目的地是日本。[r]我被选为当地的调停负责人。
+[k]
+
+[charaFace C 8]
+＠卫宫
+只不过我平时的打扮未免太显眼了吧？[r]所以我准备了一套夏装。
+[k]
+
+[charaFace C 1]
+＠卫宫
+身着赤原礼装的我是个严肃的从者，
+[k]
+
+＠卫宫
+但穿上这套服装就可以配合你们的心情了。[r]总之，你们就把我当做大学的前辈吧。
+[k]
+
+[charaFace C 6]
+＠卫宫
+难得的夏令营。[r]让我们放下拘束好好享受吧，[%1]。
+[k]
+
+？1：厉害，真明事理！
+
+[charaFace C 8]
+＠卫宫
+嗯。比起海，我更喜欢山。[r]我可以教你怎么在山里玩。
+[k]
+
+？2：恕我冒昧，在大学加入什么社团？
+
+[charaFace C 8]
+＠卫宫
+钓鱼兴趣小组之类的吧。[r]当然能把钓来的鱼直接拿去烹饪的正式派更好。
+[k]
+
+？！
+
+＠卫宫
+白天边感受山中乐趣边调查，[r]夜晚边学习山中知识边调查。
+[k]
+
+＠卫宫
+这次就采用这种方针吧。[r]当然，必须注意不能过于掉以轻心。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.4]
+＠雏罂
+[line 3]都准备好了吧。[r]好了，赶快出发吧。
+[k]
+
+？1：（这人完全打算去游山玩水吧……）
+？！
+
+[charaFace A 0]
+＠雏罂
+你好像有话要说，[r]但我不接受任何抱怨。
+[k]
+
+
+？1：话说那把枪是什么？
+？！
+
+[charaFace A 1]
+＠雏罂
+着眼点不错，后辈。
+[k]
+
+＠雏罂
+这把枪是重瞳大人托付给我的。[r]你要向这把枪献上和我同等的崇敬与赞美。
+[k]
+
+＠雏罂
+至于具体发生了什么[line 3]
+[k]
+
+[messageOff]
+[se ade84]
+[wipeout loveHeartOut 2.0 1.0]
+[bgm BGM_EVENT_7 2.0 0.4]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[charaPut K 1]
+[wt 1.0]
+
+[wipein loveHeartOut 2.0 1.0]
+[wait wipe]
+
+
+[charaTalk depthOff]
+[charaDepth D 4]
+[charaDepth I 6]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFace I 1]
+[charaFadein D 0.1 2]
+[charaFadein I 0.1 0]
+＠重瞳
+[line 3]话说。
+[k]
+
+＠I：雏罂
+嗯，什么事？
+[k]
+
+＠重瞳
+根据演算结果，[r]得出了这次必须将这个交给汝的答案。
+[k]
+
+[charaFace I 4]
+＠I：雏罂
+这是……重瞳大人的枪？[r]这次敌人竟如此强大？
+[k]
+
+＠重瞳
+详细说明暂且省略，[r]但应该会不止一次陷入绝境吧。
+[k]
+
+＠重瞳
+再进一步说，现在是夏天。
+[k]
+
+＠I：雏罂
+……呃，的确是啊？
+[k]
+
+＠重瞳
+虽然定义尚不完全，但我获得情报称，[r]夏日避暑胜地会出现名为『夏日魔物』的威胁。
+[k]
+
+＠重瞳
+通过将这个情报加入演算数值，[r]我判断这次必须倍加小心。
+[k]
+
+[charaFadeTime J 0.1 0.6]
+＠I：雏罂
+（夏日魔物……是日本的本地幻想种吗？[r]　稍后我得好好调查才行。）
+[k]
+
+＠I：雏罂
+（总之，难得重瞳大人如此体贴，[r]　岂能白白浪费。）
+[k]
+
+[charaFadeout J 0.1]
+[charaFace I 1]
+＠I：雏罂
+那……我就感激地收下了。[r]我会将这视作重瞳大人的化身小心使用的！
+[k]
+
+＠I：雏罂
+不过就算去到那边，我也不会离开您的身边，[r]所以或许并没有什么影响。
+[k]
+
+[charaFace I 3]
+＠I：雏罂
+……在重瞳大人的身旁，挥舞重瞳大人的枪……[r]是两个人，只属于两个人的，协同作业……呵呵，呵呵呵呵！
+[k]
+
+＠重瞳
+…………
+[k]
+
+[messageOff]
+[se ade84]
+[wipeout loveHeartOut 2.0 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[charaFadeout I 0.1]
+
+[charaPut K 1200,1200]
+[charaEffectStop K bit_sepia01]
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_7 2.0 1.0]
+[wipein loveHeartOut 2.0 1.0]
+[wait wipe]
+
+＠雏罂
+没错，至于具体发生了什么……呵呵呵。[r]我是不会轻易说的。
+[k]
+
+＠雏罂
+这是重瞳大人关心我的最好的证明。
+[k]
+
+[charaFace A 3]
+＠雏罂
+啊啊，只要拿着这个，[r]感觉就像被重瞳大人的真心所拥抱……（陶醉。）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠卫宫
+真是把优秀的枪。[r]……唔，能用来当钓竿用吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFace C 1]
+[charaFadein A 0.1 0]
+[charaFadein C 0.1 2]
+＠雏罂
+我说你。别把绝世名枪和钓鱼工具相提并论。[r]再说了，重瞳大人根本不需要什么鱼线和鱼饵。
+[k]
+
+[charaFace C 6]
+＠卫宫
+原来如此，当鱼叉用啊。太棒了。[r]原始而正式。如果有条好河就好了。
+[k]
+
+[charaFace A 0]
+＠雏罂
+……看来你是在真心佩服，那我就原谅你。[r]但不要频繁打断话题，无铭的英灵。
+[k]
+
+＠雏罂
+唔。还是应该称呼你为卫宫呢？
+[k]
+
+＠卫宫
+想怎么称呼就怎么称呼吧。[r]虽说这次我希望被称作卫宫。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠重瞳
+吾妻啊。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+[charaShake A 0.02 3 3 0.3]
+＠雏罂
+在，重瞳大人。
+[k]
+
+[messageOff]
+[charaTalk off]
+[cueSe Battle bac198]
+[effect bit_talk_28]
+[wt 2.2]
+
+
+[branchQuestNotClear lblNotClear2 3000320]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+＠戈尔德鲁夫
+（我好像看到了飞散的爱心，[r]　是幻觉吗？　我的精神终于濒临崩溃了吗？）
+[k]
+
+？1：好多爱心在到处乱飞啊……
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[branch lblConf2]
+
+[label lblNotClear2]
+
+？1：好多爱心在到处乱飞啊……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[label lblConf2]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+嗯。[r]我也亲眼看到了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠？？？
+[line 3]噢噢，确实，在下也看到了。
+[k]
+
+＠？？？
+……在下也可以向吾爱倾注爱的形状吗？
+[k]
+
+＠？？？
+唔，很有意思。[r]或许需要练习。
+[k]
+
+？1：这声音是齐格鲁德……！
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+＠齐格鲁德
+正是。
+[k]
+
+＠齐格鲁德
+在下是被提拔来[r]参与本次微小特异点攻略的齐格鲁德。
+[k]
+
+？2：这种撒狗粮的感觉，是齐格鲁德……！
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 1]
+[wt 0.4]
+＠齐格鲁德
+居然被说是撒狗粮……[r]在下太高兴了。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+很高兴啊……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+？！
+
+[charaFace F 0]
+＠齐格鲁德
+和卫宫一样，在下也拜托斯卡哈阁下，[r]准备了夏季用的灵衣。
+[k]
+
+＠齐格鲁德
+行动方便，还很凉爽，非常舒适。
+[k]
+
+？1：很适合你！
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFace F 0]
+[charaFadein B 0.1 2]
+[charaFadein F 0.1 0]
+＠玛修
+嗯。[r]非常适合，齐格鲁德先生。
+[k]
+
+[charaFace F 1]
+＠齐格鲁德
+呵……这句台词[r]应该为御主留着吧，玛修·基列莱特。
+[k]
+
+[charaFace B 3]
+[charaShake B 0.02 3 3 0.3]
+＠玛修
+[f large]咿！？
+[k]
+
+[charaFace F 0]
+＠齐格鲁德
+还有御主也一样。
+[k]
+
+＠齐格鲁德
+这类赞美的话语，[r]应该对自己的第一从者说才合规矩。
+[k]
+
+？1：对……对哦……！
+？！
+
+[charaFadeout B 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠芙芙
+芙芙……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+＠玛修
+……[r]……
+[k]
+
+？1：[line 3]玛修，这身很适合你。
+
+？2：玛修，你真是太漂亮了！！
+
+[branch select01]
+
+？！
+
+[charaFace B 3]
+＠玛修
+啊，嗯……[r]嗯……感谢夸奖……
+[k]
+
+[charaFace B 18]
+＠玛修
+……[r]……
+[k]
+
+？1：……
+？2：……
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠卫宫
+多么青春。真美好。[r]令人不禁想摆出后方守护者的表情。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear3 3000320]
+
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.1 1]
+＠达·芬奇
+咳[messageShake 0.02 3 3 0.3]咳！
+[k]
+
+[charaFace G 0]
+＠达·芬奇
+……那么，差不多该开始灵子转移了吧。
+[k]
+
+[branch lblConf3]
+
+[label lblNotClear3]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠达·芬奇
+咳[messageShake 0.02 3 3 0.3]咳！
+[k]
+
+[charaFace G 0]
+＠达·芬奇
+……那么，差不多该开始灵子转移了吧。
+[k]
+
+[label lblConf3]
+
+
+[branch select_end]
+
+
+[label select01]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaFace B 2]
+[charaShake B 0.03 4 4 0.4]
+＠玛修
+[f large]！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_27 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[charaShake H 0.02 3 3 0.4]
+＠芙芙
+芙呜呜呜！？[r]（特别意译：这破坏力太强了吧！？）
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+[charaMove B 0,-30 3.0]
+＠玛修
+不……不要紧。[r]不要紧，不要紧所以不要紧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠卫宫
+太直了，[%1]。[r]刚才那种话应该在你俩单独相处的时候说。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠齐格鲁德
+哈哈哈。[r]说得好，[%1]阁下。
+[k]
+
+＠齐格鲁德
+这样才不愧为吾之御主。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠雏罂
+……怎么感觉这两骑比平时放松了数倍？
+[k]
+
+
+[branchQuestNotClear lblNotClear4 3000320]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠戈尔德鲁夫
+（嗯。我也这么认为。）
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[bgmStop BGM_EVENT_27 0.6]
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[branch lblConf4]
+
+
+[label lblNotClear4]
+
+[label lblConf4]
+
+[messageOff]
+[charaFadeout A 0.1]
+[bgmStop BGM_EVENT_27 0.6]
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[label select_end]
+
+
+
+
+[branchQuestNotClear lblNotClear5 3000320]
+
+
+[bgm BGM_EVENT_82 0.1]
+
+＠达·芬奇
+如各位所见，两位是可靠兄长二人组。[r]这次的带队任务就全权交给这两骑了。
+[k]
+
+
+[charaFace G 9]
+＠达·芬奇
+其他调查成员可以参考这边的清单。[r]给，拿着，[%1]。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠雏罂
+啊，给我看看。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠达·芬奇
+知道啦知道啦，给。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth A 4]
+[charaDepth G 6]
+
+[charaFace A 0]
+[charaFace G 0]
+[charaFadein A 0.1 -200,0]
+[charaFadein G 0.1 200,0]
+[wt 0.4]
+
+[charaMove G 150,0 0.4]
+[wt 0.5]
+[charaMoveReturn G 150,10 0.5]
+[se ad748]
+[seStop ad748 0.4]
+[wt 0.6]
+[charaMove G 200,0 0.4]
+[wt 0.9]
+
+
+[branch lblConf5]
+
+
+[label lblNotClear5]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠达·芬奇
+如各位所见，两位是可靠兄长二人组。[r]这次的带队任务就全权交给这两骑了。
+[k]
+
+＠达·芬奇
+其他调查成员可以参考这边的清单。[r]给，拿着，[%1]。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠雏罂
+啊，给我看看。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠达·芬奇
+知道啦知道啦，给。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaDepth A 4]
+[charaDepth G 6]
+
+[charaFace A 0]
+[charaFace G 0]
+[charaFadein A 0.1 -200,0]
+[charaFadein G 0.1 200,0]
+[wt 0.3]
+
+[charaMove G 180,0 0.4]
+[wt 0.5]
+[charaMoveReturn G 180,10 0.5]
+[se ad748]
+[seStop ad748 0.4]
+[wt 0.6]
+[charaMove G 200,0 0.4]
+[wt 0.8]
+
+
+[label lblConf5]
+
+[charaTalk on]
+[charaFace A 4]
+＠雏罂
+为了融入当地，[r]有4骑换上泳装的从者？
+[k]
+
+
+＠雏罂
+战力是不是有些过剩？
+[k]
+
+＠雏罂
+[%1]、玛修，还有那边的两个。[r]以及我和重瞳大人。
+[k]
+
+＠雏罂
+我觉得其实只要这几个就足够了吧？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠重瞳
+不。
+[k]
+
+＠重瞳
+如果没有达到这个人数，[r]应该会很难攻略。
+[k]
+
+＠重瞳
+但请不要害怕，吾妻啊。[r]凭借汝之力量，必能解决此事。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠雏罂
+[FFFFFF]？[-]
+[k]
+
+[charaFace A 1]
+＠雏罂
+啊，嗯。[r]当然啦！
+[k]
+
+[charaFace A 3]
+＠雏罂
+另外，那个……等解决之后呢。[r]难得的机会，我们俩单独……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠重瞳
+当然。[r]让我们一起悠闲地享受假日吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠雏罂
+嗯，好！
+[k]
+
+[charaFace A 2]
+＠雏罂
+好了，后辈，别在那边卿卿我我的，[r]快点开始灵子转移吧！
+[k]
+
+？1：我才没有卿卿我我！
+
+[charaFace A 5]
+＠雏罂
+闭嘴。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：明……明白了！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 0,-80]
+＠玛修
+（蹲下身双手掩面。）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？！
+
+
+[branchQuestNotClear lblNotClear6 3000320]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠达·芬奇
+嗯嗯。
+[k]
+
+[charaFace G 1]
+＠达·芬奇
+那各位，开始灵子转移吧。[r]今年夏天也要创造很多回忆哦！
+[k]
+
+[messageOff]
+[charaFace G 10]
+[wt 1.2]
+
+[branch lblConf6]
+
+[label lblNotClear6]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠达·芬奇
+非常好。
+[k]
+
+＠达·芬奇
+那诸位，开始灵子转移吧。[r]今年夏天也要努力克服哦！
+[k]
+
+[messageOff]
+[charaFace G 1]
+[wt 1.2]
+
+[label lblConf6]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_82 1.5]
+[wait fade]
+
+[charaFadeout G 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 0.1]
+[wait fade]
+[se ad12]
+[effect bit_talk_07]
+[wt 4.0]
+
+[fadeout white 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[fadein white 1.0]
+[wait fade]
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[skip false]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout A 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[scene 10000]
+[wt 1.0]
+[fadein black 0.1]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[soundStopAllFade 0.4]
+
+[charaSet J 5009000 1 初始化用dummy]
+[charaSet I 5009000 1 初始化用dummy]
+[charaSet H 5009000 1 初始化用dummy]
+[charaSet G 5009000 1 初始化用dummy]
+[charaSet F 5009000 1 初始化用dummy]
+[charaSet E 5009000 1 初始化用dummy]
+[charaSet D 5009000 1 初始化用dummy]
+[charaSet C 5009000 1 初始化用dummy]
+[charaSet B 5009000 1 初始化用dummy]
+[charaSet A 5009000 1 初始化用dummy]
+
+[maskout black 1.0]
+[wait mask]
+[scene 10000]
+[wt 0.1]
+[maskin black 0.1]
+[wait mask]
+
+[label selectBranch]
+
+
+
+[revivalBranch lblNormal lblRevival]
+
+[label lblNormal]
+
+[fowardEffect bit_chapterstart80294]
+[wait fowardEffect]
+
+[branch lblConf7]
+
+[label lblRevival]
+
+[fowardEffect bit_chapterstart80326]
+[wait fowardEffect]
+
+
+[label lblConf7]
+
+[wt 1.0]
+
+
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

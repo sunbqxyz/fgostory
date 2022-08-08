@@ -1,0 +1,426 @@
+
+
+
+＄94-05-42-06-2-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet B 7033002 1 阿周那·Alter]
+[charaSet C 4006001 1 乔尔乔斯]
+[charaSet D 1048000 1 圣诞迦尔纳]
+[charaSet E 99502600 1 玛修]
+[charaSet F 5038000 1 齐格]
+[charaSet G 3005001 1 伊丽莎白·巴托里]
+
+[imageSet I back10000 1 1]
+[charaScale I 1.01]
+[sceneSet J 106500 1 1]
+[charaScale J 1.0]
+
+[charaSet S 5009040 1 特效用dummy]
+[charaSet T 5009040 1 特效用dummy]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[charaSet A 1098124510 1 达·芬奇]
+[branch lblConf]
+
+[label lblNotClear]
+[charaSet A 98111500 1 达·芬奇]
+[label lblConf]
+
+
+[charaPutFSR S 1200,2000]
+[charaEffect S bit_talk_10_LowLevel]
+
+
+[scene 44101]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+
+[charaTalk G]
+[charaFace G 2]
+[charaPut G 0,0]
+[charaFadeTime G 0.4 0.6]
+[wt 0.8]
+
+＠伊丽莎白
+哎，慢着，就这么结束了？
+[k]
+
+＠伊丽莎白
+我的嗓子好不容易才热身完毕[line 3]！[r]没有安可吗[line 3]！？
+[k]
+
+[messageOff]
+[se ad596]
+[wt 0.1]
+[charaSpecialEffect G erasure 0,0 1.5]
+[wait charaSpecialEffect G]
+[wt 0.9]
+
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠阿周那·Alter
+听不到……曲子了呢……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠圣诞迦尔纳
+等返回迦勒底之后，你随时都可以听吧。
+[k]
+
+＠圣诞迦尔纳
+我觉得罗马皇帝的歌声应该也能传达给你。[r]虽然只是我的直觉。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠乔尔乔斯
+怎么样，齐格阁下。[r]优秀地完成任务的感想如何？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠齐格
+说实话，不太清楚呢。[r]我也不知道自己有没有优秀地完成任务。
+[k]
+
+＠齐格
+我是作为日更屠龙者而来的，[r]要求我完成的工作应该也算是完成了……
+[k]
+
+[charaFace F 6]
+＠齐格
+我不是齐格飞那样的英雄。
+[k]
+
+＠齐格
+龙与屠龙者。两者都是，可也两种都不是……[r]那就是我。
+[k]
+
+[charaFace F 0]
+＠齐格
+但是。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 26]
+[charaFadein A 0.1 1]
+＠达·芬奇
+……好嘞～，出现啦。动手吧！
+[k]
+
+[branch lblConf2]
+
+[label lblNotClear2]
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-90]
+＠达·芬奇
+……好嘞～，出现啦。动手吧！
+[k]
+
+[label lblConf2]
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR S 1200,2000]
+
+
+[se ade410]
+[wt 0.2]
+[charaPut T 1]
+[charaEffect T bit_talk_20b]
+[wt 2.4]
+
+[charaPutFSR T 1200,2000]
+[charaEffectDestroy T bit_talk_20b]
+[wt 0.1]
+
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.7]
+
+[wipeout circleIn 0.2 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[scene 10000]
+[wt 0.1]
+
+[wipein circleIn 0.1 1.0]
+[wait wipe]
+
+[fowardEffect bit_talk_flash_g]
+[wt 0.1]
+[se ad80]
+[wt 0.3]
+[seStop ad80 0.2]
+[wt 0.5]
+
+
+[se ad149]
+[se ad216]
+[seVolume ad216 0 0]
+[se ad733]
+[seVolume ad733 0 0]
+[fadeout white 0.3]
+[bgm BGM_EVENT_77 0.8 0.1]
+[seVolume ad216 0.3 1.0]
+[seVolume ad733 0.3 1.0]
+[wait fade]
+
+[seStop ad733 1.5]
+[wt 1.0]
+
+[scene 10000]
+[wt 1.5]
+
+
+
+
+
+[criMovie talk_mov085 bgmPlay false]
+[wt 0.6]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+[wt 30.0]
+
+[charaTalk depthOff]
+[charaDepth I 4]
+[charaDepth J 5]
+
+[overlayFadein I 1.0 0,-200]
+[wt 1.0]
+
+[scene 106500]
+[wt 3.0]
+
+[bgm BGM_EVENT_77 1.0 1.0]
+[overlayFadein J 1.0 0,-200]
+[wt 1.0]
+[charaFadeout I 1.0]
+[wt 1.0]
+
+[charaFadeout J 0.3]
+[wt 0.3]
+[charaTalk depthOn]
+
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠齐格
+但是[line 3]能像这样和御主，[r]以及和各位一起战斗，
+[k]
+
+＠齐格
+的确令我稍微……[r]有种比以前更为自豪的感觉了。
+[k]
+
+＠齐格
+似乎对我是我这件事……感到更有自信了。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠乔尔乔斯
+说不定……齐格飞阁下就是希望[r]将这个作为礼物送给你吧。
+[k]
+
+＠乔尔乔斯
+毕竟你看，时期也很吻合。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠圣诞迦尔纳
+唔……一听到礼物，[r]圣诞老人当然不能认输。
+[k]
+
+[charaFace D 1]
+＠圣诞迦尔纳
+但是听了刚才的那席话，[r]我觉得自己也能做些自己至少能做的。
+[k]
+
+＠圣诞迦尔纳
+拳击手的战斗能给孩子带去勇气。[r]这是理所当然的礼物，收下吧。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 1.0]
+
+[charaFace F 7]
+[wt 1.2]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+＠阿周那·Alter
+…………
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+＠玛修
+御主。阿周那·Alter先生一直在凝视着河川。
+[k]
+
+？1：总算夺回了美丽的河川呢。
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR S 1200,2000]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠阿周那·Alter
+御主。[r]您觉得这景色……很普通吗？
+[k]
+
+？1：我觉得很普通哦。
+
+[charaFace B 1]
+＠阿周那·Alter
+……这样啊。
+[k]
+
+＠阿周那·Alter
+我没有喜欢的东西，也没有讨厌的东西。[r]所以也没有可以评判这景色的标准……
+[k]
+
+[charaFace B 12]
+＠阿周那·Alter
+但既然御主这么说，[r]那应该没错吧。
+[k]
+
+？2：简直太棒了。
+
+[charaFace B 1]
+＠阿周那·Alter
+……是啊。
+[k]
+
+＠阿周那·Alter
+虽然我没有什么好恶，[r]但既然您会像这样微笑[line 3]
+[k]
+
+＠阿周那·Alter
+那这份平静，[r]一定也是这种善的存在吧。
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 26]
+[charaFadein A 0.1 1]
+＠达·芬奇
+好嘞～。下一个闭塞特异点就是最后一个了。[r]或许会成为最终决战之地哦。
+[k]
+
+＠达·芬奇
+振作精神出发吧！
+[k]
+
+[branch lblConf3]
+
+[label lblNotClear3]
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-90]
+＠达·芬奇
+好嘞～。下一个闭塞特异点就是最后一个了。[r]或许会成为最终决战之地哦。
+[k]
+
+＠达·芬奇
+振作精神出发吧！
+[k]
+
+[label lblConf3]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

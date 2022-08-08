@@ -1,0 +1,342 @@
+
+
+＄02-00-02-10-3-0
+[soundStopAll]
+[charaSet A 99502600 1 玛修]
+[charaSet B 4004001 1 阿斯托尔福]
+[charaSet C 1026001 1 迪昂]
+[charaSet D 98113900 1 弗格斯]
+[charaSet E 5030001 1 山鲁佐德]
+[charaSet F 4025000 1 Rider]
+[charaSet G 98114600 1 反抗者男性C]
+[charaSet H 7027001 1 Berserker]
+
+[bgm BGM_EVENT_24 0.1]
+[scene 30430]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+[wt 0.2]
+[charaEffect H bit_talk_13]
+[wt 0.1]
+[se ad32]
+[charaShake H 0.05 3 3 0.4]
+[wt 0.6]
+＠Berserker
+哦……？[r]本以为只是一群寒酸的老鼠，还挺难缠的嘛。
+[k]
+
+＠Berserker
+我喜欢强悍的男人。
+[k]
+
+[charaFace H 5]
+＠Berserker
+[line 2]只要不是[#他们]。
+[k]
+
+？1：他们……！？
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠迪昂
+现在可没空听敌人的话啊，御主！
+[k]
+
+＠迪昂
+但是[line 2]这样看来应该能有办法吧……！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaSet A 98114600 1 反抗者男性A]
+[charaSet B 98114620 1 反抗者男性B]
+[charaSet C 98114500 1 亚马逊人]
+[charaTalk A]
+[charaFadein A 0.1 -384,0]
+[charaFadein B 0.1 384,0]
+[charaFadein G 0.1 1]
+＠反抗者男性A
+噢噢噢噢噢噢！　好嘞，能行，能行啊！
+[k]
+
+＠反抗者男性B
+受伤的家伙后撤！[r]始终要保持团体作战，亚马逊人也是能对付的！
+[k]
+
+＠反抗者男性C
+我是不会放弃的……！　现在感觉能行。[r]既然如此，那我怎么能，放弃……！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠Berserker
+……心高气傲的子民们啊。亚马逊的战士们啊。[r]女王可不记得允许过汝等玩耍。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠亚马逊人
+[line 3]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠Berserker
+只因对手是老鼠就掉以轻心了吗。
+[k]
+
+＠Berserker
+那现在重新回想起来吧。[r]哪怕是老鼠，只要是敌人，就应全力击溃。
+[k]
+
+＠Berserker
+这就是吾等亚马逊人[line 2]亚马逊部族的战斗。
+[k]
+
+＠Berserker
+弱小的敌人是让吾等英勇名扬天下的食粮。[r]强大的敌人是磨练吾等武艺的食粮。
+[k]
+
+＠Berserker
+现在再次切身感受吞噬食粮的喜悦吧。[r]因此，女王在此下令。
+[k]
+
+＠Berserker
+[line 2][#咆哮吧]。
+[k]
+
+[messageOff]
+[charaSet A 98114500 1 亚马逊人1]
+[charaSet B 98114500 1 亚马逊人2]
+[charaSet G 98114500 1 亚马逊人3]
+[charaSet D 98114500 1 亚马逊人5]
+[charaDepth C 0]
+[charaDepth D 0]
+[charaDepth B 1]
+[charaDepth G 1]
+[charaDepth A 2]
+[charaPut E 0,0]
+[charaEffect E bit_talk_voice01]
+[charaFace H 2]
+[se ad411]
+＠Berserker
+[i berserker_language_1][messageShake 0.01 7 7 1.5][line 2]！！！
+[k]
+
+[charaFadeout H 0.1]
+[charaPut E 0,-1000]
+[wt 0.1]
+[charaTalk off]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[se ad412]
+[seVolume ad412 0 0.1]
+[seVolume ad412 1.0 0.8]
+＠亚马逊人
+追随女王！[r][i berserker_language_7][charaPut E 0,0][messageShake 0.01 7 7 0.7][line 2]！
+[k]
+
+[charaFace B 0]
+[charaFace B 1]
+[charaFace G 1]
+[charaFadein B 0.4 -192,0]
+[charaFadein G 0.4 192,0]
+＠亚马逊人
+响彻吧！　吾等就在此处！[r][i berserker_language_2][messageShake 0.01 7 7 0.7][line 2]！！
+[k]
+
+[charaFace C 0]
+[charaFace C 1]
+[charaFace D 1]
+[charaFadein C 0.4 -384,0]
+[charaFadein D 0.4 384,0]
+＠亚马逊人
+[i berserker_language_2][messageShake 0.01 7 7 0.7][line 2]！！！
+[k]
+
+？1：好吵……！？
+？2：全体[line 2]发出了可怕的咆哮！
+？！
+
+[messageOff]
+[seStop ad412 5.0]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout G 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaPut E 0,-1000]
+[charaEffectStop E bit_talk_voice01]
+[charaSet A 99502600 1 玛修]
+[charaSet B 4004001 1 阿斯托尔福]
+[charaSet C 1026001 1 迪昂]
+[charaSet D 98113900 1 弗格斯]
+[wt 0.1]
+[charaTalk on]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠阿斯托尔福
+什么什么，到底怎么了～！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠山鲁佐德
+这声音，难道是……亚马逊人的……[r][#战士的咆哮:War Cry]……！？
+[k]
+
+[charaFace E 2]
+＠山鲁佐德
+糟了，这是[line 2]！
+[k]
+
+[seStop ad412 1.0]
+[messageOff]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout E 0.1]
+[charaSet G 98114620 1 反抗者男性C]
+[wt 0.1]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[charaEffect G bit_talk_12_red_L]
+[se bac209]
+[charaShake G 0.01 5 5 0.7]
+[wt 0.7]
+[se ad161]
+[charaEffect G bit_talk_35]
+＠反抗者
+呀啊啊啊啊！！
+[k]
+
+[messageOff]
+[charaFadeout G 0.4]
+[wt 0.4]
+[se ad144]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠Rider
+嘁！　开始溃败了！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠迪昂
+这也没办法。当这咆哮声响起后[line 2][r]亚马逊人带给人的压力急速飙升！
+[k]
+
+＠迪昂
+纯粹的膂力、反射速度、敏捷、耐力全都提升了。[r]似乎连痛觉都被无视了！
+[k]
+
+＠迪昂
+这简直就像……全体被付与了『狂化』……！[r]到底怎么一回事！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠弗格斯
+在战斗中，战吼确实极为重要。能鼓舞士兵提升士气。[r]但这根本不是那种程度的问题……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠山鲁佐德
+呃……我大概能提供[r]大约30种求饶的备选方案。
+[k]
+
+＠山鲁佐德
+据说在非洲某部族内抗争时使用的，[r]双手斜向上高高举起，张开嘴巴的投降方式……
+[k]
+
+[charaFace E 0]
+＠山鲁佐德
+对现在的她们来说这或许是最合适的……[r]从体感来看，大概有3％左右的概率……
+[k]
+
+？1：这是……罗马！
+？2：倒像是决心彻底抗战坚决不从的姿势吧！
+？！
+
+[charaFace E 4]
+＠山鲁佐德
+确实，有可能被理解成其他意思。
+[k]
+
+＠山鲁佐德
+果然很难啊。[r]第二选择看来还是下跪……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠Rider
+比[messageShake 0.01 5 5 0.7]起考虑求饶的方法，还是闭上嘴快动手！[r]这是存活概率最高的选项啊！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠阿斯托尔福
+同感～！　单点突围吧！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 14]
+[charaEffect A bit_talk_10_LowLevel]
+[charaFadein A 0.1 1]
+＠玛修
+我会全力寻找包围网的薄弱点！[r]一定要想办法坚持下去，御主！
+[k]
+
+
+
+[messageOff]
+[seStop ad16 0.4]
+[bgmStop BGM_EVENT_24 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

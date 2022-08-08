@@ -1,0 +1,108 @@
+＄91-10-09-01-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 10310]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98003000 2 Dr.罗曼]
+[charaSet C 1009001 1 莫德雷德]
+[charaSet D 98002000 1 芙芙]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0 1]
+[fadein black 1]
+[wait fade]
+＠莫德雷德
+哼，哼，哼……哟，御主！[r]现在有空吗？
+[k]
+
+[charaFace C 2]
+＠莫德雷德
+有空就陪我一会儿。[r]如果有事要忙，就把预定给取消！
+[k]
+
+？1：只有YES和好这二选一？
+
+？2：看样子你打算无论如何都要我奉陪啊。
+
+？！
+
+[charaFace C 1]
+＠莫德雷德
+没错。[r]来吧，去伦敦！
+[k]
+
+[charaFadeout C 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 2]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+＠玛修
+哇，别推我啊，莫德雷德……！
+[k]
+
+＠芙芙
+芙，啾，芙！？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[messageOff]
+[bgmStop BGM_EVENT_2 0.7]
+[wait effect bit_talk_06]
+[effect bit_talk_07]
+[se ad12]
+[wt 4]
+[fadeout white 1]
+[wait fade]
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+[scene 10903]
+[charaTalk C]
+[charaFace A 8]
+[charaFadein A 0 2]
+[charaFace C 1]
+[charaFadein C 0 0]
+[fadein black 1]
+[wait fade]
+＠莫德雷德
+好啦，到了到了。
+[k]
+
+[charaFace A 12]
+＠玛修
+太强硬了吧……[r]话说来伦敦有什么事吗？
+[k]
+
+[charaFace C 0]
+＠莫德雷德
+嗯。因为我是在这伦敦被召唤出来的，[r]所以只要这里发生异变，我脑袋里就会有感觉。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaTalk B]
+[se ad13]
+[communicationChara 98003003 1 5 0 2]
+[wt 0.3]
+＠Dr.罗曼
+哦，莫德雷德说得没错。[r]在你们的前面探测到奇妙的生命体反应。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠莫德雷德
+好啦……到底会是鬼还是龙呢。[r]让我们打打看吧！
+[k]
+
+[charaFadeout C 0.5]
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_5 0.4]
+[wait fade]
+[soundStopAll]
+[end]

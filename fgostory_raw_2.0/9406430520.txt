@@ -1,0 +1,877 @@
+
+
+＄94-06-43-05-2-0
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5050000 1 サンタマルタ]
+[charaSet B 1098198000 1 スカサハ＝スカディ]
+[charaSet C 2001002 1 エミヤ]
+[charaSet D 4011001 1 ブーディカ]
+[charaSet E 7016001 1 タマモキャット]
+[charaSet F 3047001 1 パーシヴァル]
+
+[charaSet I 7006300 1 坂田金時]
+[charaSet J 7005001 1 スパルタクス]
+[charaSet K 98006000 1 エネミー]
+[charaSet L 98006000 1 エネミー]
+[charaSet M 98006000 1 エネミー]
+
+[sceneSet H 140601 1]
+[charaScale H 1.3]
+
+[imageSet T back10000 1 1]
+[charaScale T 1.02]
+
+[charaDepth K 7]
+[charaDepth L 6]
+[charaDepth M 5]
+[charaDepth T 2]
+
+[scene 140601]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+
+[bgm BGM_REQUIEM 0.1]
+
+[charaFadein H 0.7 100,-250]
+[charaMove H -100,-250 4.5]
+[wt 3.0]
+[charaFadeout H 1.5]
+[wt 2.5]
+
+
+？1：今回は屋外じゃなくて屋内みたいだね
+？！
+
+？1：でも寒い！
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+[charaShake E 0.03 4 4 1.0]
+[wt 1.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+
+＠ブーディカ
+おっと、今回は走り回らないで！
+[k]
+
+＠ブーディカ
+屋内というかダンジョンかもだし、[r]一人で走って行くのは禁止。いいわね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠タマモキャット
+まさに殺生ＩＮ……。[r]ネコに走るなとは、高僧でも耐えられぬ苦行……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+なんの。キャットのためを思ってよ。[r]はいどうどう、どうどう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？2：手がかじかむ！
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+お姉さんが温めてあげましょう。
+[k]
+
+[charaFace A 5]
+
+＠サンタマルタ
+……ひゃっつめたい。[r]防寒の礼装でしたっけ、ソレ持ってるのよね？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[masterBranch _Male _Female]
+
+[label _Male]
+[branch _branchEnd]
+
+[label _Female]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+
+＠パーシヴァル
+マスター、マルタ殿。[r]貴方たちには予備のマントを貸しておこう。
+[k]
+
+＠パーシヴァル
+レディが無闇に体を冷やしてはよくない。
+[k]
+
+[messageOff]
+[se ad77]
+[wt 0.5]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+まあ、紳士だわ。[r]ありがとう、サー・パーシヴァル。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadeinFSR D 0.1 2]
+[charaFace E 0]
+[charaFadeinFSL E 0.1 0]
+
+＠ブーディカ
+（ちぇー。あたしたちは？）
+[k]
+
+[charaFace E 6]
+
+
+＠タマモキャット
+（おまえは戦士の女王だから同類騎士判定とみた。[r]　ちなみにアタシはふさふさあったか判定とみた）
+[k]
+
+[charaFace D 4]
+
+＠ブーディカ
+（あ、そーいう。なるほどね）
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[branch _branchEnd]
+
+[label _branchEnd]
+
+？！
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+今回は倉庫か。[r]屋内であることに意味はあるのか？
+[k]
+
+？1：チーズがいっぱいあるね
+
+＠エミヤ
+そのようだ。
+[k]
+
+＠エミヤ
+チーズの熟成には種類によって[r]さまざまな温度や湿度が条件となるが、
+[k]
+
+[charaFace C 4]
+
+＠エミヤ
+ここまでの氷点下で保管する必要はない。[r]何か妙だな。
+[k]
+
+？2：チーズの倉庫ってこんなに寒いっけ
+
+[charaFace C 4]
+
+＠エミヤ
+プロセスチーズであれば、[r]冷却の工程があるにはあるが……。
+[k]
+
+？！
+
+＠I：？？？
+あー、それな。寒いよなー。
+[k]
+
+
+＠I：？？？
+ゴールデンに気合い入れねえとな、っと！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaDepth I 7]
+[charaDepth J 6]
+[charaDepth A 5]
+
+
+[charaTalk off]
+[charaFace J 0]
+[charaFadeinFSL J 0.4 0]
+[charaFace I 0]
+[charaFadeinFSR I 0.4 2]
+[se ad60]
+[seStop ad60 0.8]
+[wt 1.4]
+
+[charaTalk on]
+[charaTalk I]
+[charaFace I 1]
+
+＠坂田金時
+よっ。大将！
+[k]
+
+
+＠スパルタクス
+零下という圧制にも我らが負けることはない。[r]そうだろう？
+[k]
+
+？1：金時、スパルタクス！
+
+[charaFace I 0]
+
+＠坂田金時
+ナビ参上！[r]知ってるぜ、食材探しに来たんだろ？
+[k]
+
+？2：ここのナビってもしかして……
+
+[charaFace I 0]
+
+＠坂田金時
+おう、オイラたちだぜ。
+[k]
+
+＠坂田金時
+寒いトコによく来たな！[r]ま、思うさま食材ゲットしていくといいぜ。
+[k]
+
+？！
+
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+わあ、大きい二人ね！[r]普段からよくご飯を食べてるのね、偉いわ。
+[k]
+
+＠サンタマルタ
+二人ともこっち来て。[r]いらっしゃい。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace J 0]
+[charaFadeinFSL J 0.1 0]
+[charaFace I 0]
+[charaFadeinFSR I 0.1 2]
+
+＠二人
+[FFFFFF]？？[-]
+[k]
+
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+ほらほら、いらっしゃい。
+[k]
+
+[messageOff]
+[bgmStop BGM_REQUIEM 1.0]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaFace J 0]
+[charaFadein J 0.1 -326,0]
+[charaMove J -276,0 0.5]
+
+[charaFace I 0]
+[charaFadein I 0.1 346,0]
+[charaMove I 296,0 0.5]
+[wt 0.8]
+
+[charaMoveReturn A 0,15 0.5]
+[wt 0.8]
+[charaMoveReturn A 0,25 0.5]
+[wt 0.9]
+[charaMove J -276,-100 0.8]
+[charaMove I 296,-100 0.8]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 6]
+[bgm BGM_EVENT_146 0.1]
+
+＠サンタマルタ
+よしよし。
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ade385]
+[charaMoveReturn A -10,0 0.3]
+[wt 0.4]
+[charaMoveReturn A 10,0 0.3]
+[wt 0.4]
+[charaMoveReturn A -10,0 0.3]
+[wt 0.4]
+[charaMoveReturn A 10,0 0.3]
+[wt 0.4]
+
+[charaTalk on]
+[charaFace I 3]
+[charaFace J 3]
+
+＠坂田金時
+なんだこれ？
+[k]
+
+
+＠スパルタクス
+これは圧制……ではない。だが圧制は在るのだ、[r]間違いなく[#此処:ここ]には圧制の気配が満ちているのだから！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+
+＠ブーディカ
+スパルタクス、圧制感じまくってる？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+
+＠エミヤ
+女王にルーンで無理矢理引っ張ってこられた、[r]とすれば、意に沿わぬ圧制と言えば圧制だな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+[bgmStop BGM_EVENT_146 1.0]
+
+
+＠パーシヴァル
+圧制とは幅広いものだね……
+[k]
+
+[charaFace F 0]
+[bgm BGM_EVENT_2 0.1]
+
+
+＠パーシヴァル
+しかし、かの東方の頼光四天王の坂田金時に、[r][#叛逆:はんぎゃく]の英雄スパルタクスとは。
+[k]
+
+[charaFace F 8]
+
+＠パーシヴァル
+不思議といえば不思議な組み合わせだ。[r]それでいて力強く、頼もしい！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠坂田金時
+そうかい？[r]オレっちはスパルタクスの旦那とウマ合うぜ？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+最初はガレス、次に鬼一殿とブラダマンテ殿……。[r]そして今回は坂田金時殿とスパルタクス殿。
+[k]
+
+[charaFace F 9]
+
+＠パーシヴァル
+何か、意図のある人選なのかな？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+お、ピンときた顔だ。[r]なになに？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+いや、単に連想しただけだが[line 3]
+[k]
+
+[charaFace C 0]
+
+＠エミヤ
+ガレスのエリアには、[r]求道者然としたボスエネミーが存在した。
+[k]
+
+
+＠エミヤ
+鬼一法眼とブラダマンテのエリアには、[r]ランサー霊基のボスエネミー。
+[k]
+
+
+＠エミヤ
+鬼一法眼は一時的にランサー霊基になっていたな？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+……ナビに対応したボスがいる、ってこと？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+いや、単に連想しただけだ。[r]根拠は薄い。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+結構いいセンいってるんじゃない？[r]じゃあ……
+[k]
+
+
+＠ブーディカ
+今回は、金時とスパルタクスに対応する何か？[r]バーサーカー系かな？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠坂田金時
+バーサーカー？[r]チーズ連中はバーサーカーじゃねえはずだ。
+[k]
+
+[charaFace I 0]
+
+＠坂田金時
+アンタたち、チーズ探しに来たんだよな？[r]とびきり美味いゴールデンなチーズをさ。
+[k]
+
+
+？1：チーズじゃなくて
+
+[messageOff]
+[charaFace I 11]
+[wt 1.0]
+[charaFace I 0]
+
+＠坂田金時
+チーズじゃねえの？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 2]
+[charaFadein J 0.1 1]
+
+
+＠スパルタクス
+[f large]圧制かね！？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+
+＠エミヤ
+いや圧制ではない。[r]圧制ではないぞ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？2：卵です
+
+[charaFace I 10]
+
+＠坂田金時
+卵？
+[k]
+
+[charaFace I 4]
+
+＠坂田金時
+……チーズじゃなくて、卵？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠スパルタクス
+[f large]圧制か！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+
+＠坂田金時
+いやー、むしろ圧制より[#叛逆:はんぎゃく]になりそうだぜ。[r]喜べ旦那！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+へ。どゆこと？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠サンタマルタ
+卵を探すのが、[#叛逆:はんぎゃく]になるの？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠坂田金時
+いやそれがよォ……[r]ここにいるのは大半がチーズのエネミーだ。
+[k]
+
+＠坂田金時
+見渡す限りチーズだろ？[r]だから、そのへんうろついてんのもやっぱチーズさ。
+[k]
+
+[charaFace I 11]
+
+
+＠坂田金時
+とびきり美味い卵が欲しけりゃ話は別だ。
+[k]
+
+[charaFace I 1]
+
+＠坂田金時
+覚悟しときな！[r]美味い卵は、特別にゴールデンだ！
+[k]
+
+[charaFace I 6]
+
+
+＠坂田金時
+無数のチーズの先に、ゴールデンエッグがいやがる！[r]すこぶる強敵だぜ[line 3]
+[k]
+
+[charaFace I 1]
+
+＠坂田金時
+言わば、エリアの支配者だ！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 5]
+[charaFadein J 0.1 1]
+
+＠スパルタクス
+[f x-large]圧制ィ！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+
+＠坂田金時
+ああそうさ、圧制っちゃ圧制さ。[r]そのゴールデンなエッグは、支配の証として、
+[k]
+
+[charaFace I 6]
+
+
+＠坂田金時
+魔力ごと、周囲の温度を吸い取っちまってるのさ！[r]だから[#此処:ここ]は[#こんなに寒い]！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+……熱や魔力を吸収する性質があるのか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+強敵のようだ。[r]これは、腕が鳴るというもの。
+[k]
+
+[charaFace F 2]
+[bgmStop BGM_EVENT_2 2.0]
+
+
+＠パーシヴァル
+だが[line 3]まずは無数のチーズとやらが先かな！[r]マスター、来るぞ！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+[charaFace L 0]
+[charaFadeinFSR L 0.1 306,0]
+[charaFace M 0]
+[charaFadeinFSL M 0.1 -306,0]
+[se ade215]
+[wt 1.5]
+[seStop ade215 0.3]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_80 0.1]
+
+
+＠ブーディカ
+周囲に魔力反応、ってね！[r]お熱い歓迎みたい。
+[k]
+
+？1：みんな、突破だ！
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[wt 1.0]
+
+？2：やろう！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠タマモキャット
+おー！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+？！
+
+[charaFace C 2]
+
+＠エミヤ
+卵への道を切り開く！　行くぞ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+お料理頑張っちゃうぞ～。[r]来なさい、タラスク！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

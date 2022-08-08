@@ -1,0 +1,354 @@
+
+＄94-00-64-03-1-1
+
+[soundStopAll]
+[bgm BGM_EVENT_34 0.1]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98103600 1 红宝石]
+[charaSet C 5028001 1 伊莉雅]
+[charaSet D 98006300 1 ？？？]
+[charaSet E 98006300 1 ？？？]
+[charaSet F 98006300 1 ？？？]
+[charaSet G 98006300 1 ？？？]
+[charaSet H 98006300 1 ？？？]
+
+[charaScale D 0.8]
+[charaScale E 0.8]
+[charaScale F 0.8]
+[charaScale G 0.8]
+[charaScale H 0.8]
+
+[scene 31000]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk D]
+[charaFadein D 0.1 0,-200]
+[charaShake D 0.05 0 3 1.0]
+
+＠D：糖果之国居民
+……魔法……少女……？
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk E]
+[charaFadein E 0.1 100,-200]
+[charaFadein D 0.1 -100,-200]
+[charaShake E 0.05 0 3 1.0]
+
+＠E：糖果之国居民
+魔法少女！？
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+
+[charaTalk off]
+[charaFadein H 0.1 200,-200]
+[charaFadein G 0.1 100,-200]
+[charaFadein E 0.1 0,-200]
+[charaFadein F 0.1 -100,-200]
+[charaFadein D 0.1 -200,-200]
+[charaShake D 0.05 0 3 0]
+[charaShake E 0.05 0 3 0]
+[charaShake F 0.05 0 3 0]
+[charaShake G 0.05 0 3 0]
+[charaShake H 0.05 0 3 0]
+
+＠糖果之国居民们
+是魔法少女[line 3]！！[r]是魔法少女[line 3]！！
+[k]
+
+[charaMove D 1200,-200 0.5]
+[charaMove H 1200,-200 0.5]
+[charaMove G -1200,-200 0.5]
+[charaMove F -1200,-200 0.5]
+[charaMove E -150,-200 0.2]
+[wt 0.2]
+[charaMove E 150,-200 0.2]
+[wt 0.2]
+[charaMove E -1200,-200 0.5]
+[wait charaMove]
+
+[messageOff]
+[charaFadeout D 0]
+[charaFadeout E 0]
+[charaFadeout F 0]
+[charaFadeout G 0]
+[charaFadeout H 0]
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaShake B 0.07 0 8 1.0]
+＠红宝石
+哎呀哎呀～[r]只有这点抵抗吗～？
+[k]
+
+[charaShake B 0.07 0 8 1.0]
+＠红宝石
+明明后面还有一大批人呢，[r]却都四散逃跑了呢～？
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+一看到伊莉雅小姐变身后的样子，[r]就陷入了恐慌状态……？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠伊莉雅
+真打击人……
+[k]
+
+[charaFace C 4]
+＠伊莉雅
+啊[line 3]我说，那边那位？[r]求你了，能好好听我们说话吗！？
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[charaFace C 4]
+[charaFadein C 0.1 2]
+[charaFadein D 0.1 -200,-200]
+
+＠D：糖果之国居民
+呀啊啊～，[r]不胜[#惶恐:糖果]魔法少女大人！
+[k]
+
+＠D：糖果之国居民
+我还没有潮湿，[r]保质期还很长啊！
+[k]
+
+[charaFace C 3]
+＠伊莉雅
+这……这么说来……[r]仔细看来好像挺好吃的……
+[k]
+
+
+？1：如果不全部交代的话，魔法少女可是会生气的哦？
+？！
+
+[charaFace C 2]
+＠伊莉雅
+哎？　没……没错哦？[r]吼呜噢～！
+[k]
+
+＠D：糖果之国居民
+咿～[r]既然是魔法少女大人的命令～。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_34 1.5]
+[wipeout rollRight 1.5 0.5]
+[wait wipe]
+[charaChange C 98102500 5 fade 0]
+[wt 0.2]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+[wt 0.5]
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[bgm BGM_EVENT_32 1.5]
+[wipein rollLeft 1.5 0.5]
+[wait wipe]
+
+＠玛修
+呃，好了[line 3]。[r]多少打探到了一些情报。
+[k]
+
+[charaFace A 7]
+＠玛修
+那就是统治这个『糖果之国』的女王应该知道些什么……
+[k]
+
+[charaFace A 12]
+＠玛修
+但是那位梅芙已经称自己是[r]统治『雪花与蜂蜜之国』的女王……
+[k]
+
+[charaFace A 0]
+＠玛修
+是搞错了吗？[r]只要继续前进，好像就能到达『糖果之城』。
+[k]
+
+
+？1：身为女王，还是魔法少女啊……
+？！
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠伊莉雅
+又是女王陛下啊。
+[k]
+
+＠伊莉雅
+魔法少女居然居住在城里，统治着国家，[r]感觉违和感十足啊。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaShake B 0.07 0 8 1.0]
+＠红宝石
+我红宝石亲倒是愿意[#潜入侦查:Snake]哦～。
+[k]
+
+[charaShake B 0.07 0 16 1.0]
+＠红宝石
+刚才大致转了一圈，这个固有结界也太广阔了！[r]我又不能离开伊莉雅太远！
+[k]
+
+
+？1：看来只有去『糖果之国』的城里去看看了。
+？！
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFace B 0]
+[charaFadein C 0.1 2]
+[charaFadein B 0.1 0]
+
+＠伊莉雅
+唔，嗯……[&大哥哥:大姐姐]说得对。[r]但是，稍微有些害怕～。
+[k]
+
+[charaShake B 0.07 0 8 1.0]
+＠红宝石
+万一是像凛以及露维亚那样魔力×暴力×年龄＝破坏力[r]的魔法少女的话，该怎么办！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠玛修
+那个，话说……[r]我一直在找机会想询问一下御主…………。
+[k]
+
+＠玛修
+御主头部的……那个，[r]轻飘飘的装饰品是什么？
+[k]
+
+[charaFace A 13]
+＠玛修
+莫名和芙芙的耳朵有一些相似。
+[k]
+
+
+？1：是达·芬奇亲[#配置:送]给我的礼装啦。
+
+[charaFace A 3]
+＠玛修
+礼……礼装吗……？
+[k]
+
+[charaFace A 6]
+＠玛修
+估计这东西具备能适应这异世界的功能，[r]但怎么说呢，好独特啊。
+[k]
+
+
+？2：果然很奇怪吗？
+
+[charaFace A 14]
+＠玛修
+不，不会！　非常可爱[line 3][r]很[charaFace A 3]适合前辈！　某种意义来说很棒！
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠伊莉雅
+啊……对……对不起。[r]我完全没有感到违和感。
+[k]
+
+[charaFace C 4]
+＠伊莉雅
+对多少有些古怪的装扮都不会产生任何疑问的自己，[r]未免感到有些可怕……
+[k]
+
+[charaFace C 7]
+＠伊莉雅
+因为某人的侵略，[r]以至于我的服饰品味正在日渐被破坏……
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace C 7]
+[charaFace B 0]
+[charaFadein C 0.1 2]
+[charaFadein B 0.1 0]
+
+[charaShake B 0.07 0 16 1.0]
+＠红宝石
+将来要背负魔法少女时尚界的[r]伊莉雅怎么能这么软弱呢！
+[k]
+
+[charaShake B 0.07 0 16 1.0]
+＠红宝石
+要更猛烈！　不更猛烈地进攻怎么行呢！[r]话说你对巴西的泳装有兴趣吗？
+[k]
+
+[charaFace C 2]
+＠伊莉雅
+没有！　穿着泳装战斗的魔法少女什么的，[r]这已经是该送医院的问题了！
+[k]
+
+[charaFace C 4]
+＠伊莉雅
+……唉。你当这是谁的错啊？[r]你倒是稍微有点责任感啊[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠伊莉雅
+[line 3]啊，能看到城了！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_32 2.0]
+[wait fade]
+[soundStopAll]
+[end]

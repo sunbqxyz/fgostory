@@ -1,0 +1,171 @@
+
+
+
+＄91-10-09-02-3-0
+
+[soundStopAll]
+
+[charaSet A 1009001 1 莫德雷德]
+[charaSet B 98084000 1 肃清骑士1]
+[charaSet C 98084000 1 肃清骑士2]
+[charaSet D 98084000 1 肃清骑士3]
+[charaSet E 3020000 1 亚瑟王]
+[charaSet F 1009000 1 莫德雷德2]
+
+
+[bgm BGM_EVENT_3 0.1]
+[scene 20730]
+[fadein black 1.5]
+[wait fade]
+[charaTalk off]
+[charaFadein B 0.1 0]
+[charaFadein C 0.1 1]
+[charaFadein D 0.1 2]
+[effect bit_talk_v_slash01]
+[se ad32]
+[shake 0.01 1 3 0.7]
+[bgmStop BGM_EVENT_3 1.0]
+[wt 1.5]
+[se ad144]
+[charaFadeout B 0.4]
+[charaFadeout C 0.4]
+[charaFadeout D 0.4]
+[wt 1.0]
+
+[bgm BGM_EVENT_2 0.1]
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+＠莫德雷德
+好了……大部分解决掉了。[r]还是这样，唯独数量多得要命呢。
+[k]
+
+[charaFace A 0]
+＠莫德雷德
+唔？　怎么了，御主。
+[k]
+
+？1：话说，这里是哪儿？
+？！
+
+[charaFace A 4]
+＠莫德雷德
+啊啊……对，我还没说吧。
+[k]
+
+[bgmStop BGM_EVENT_2 0.7]
+[charaFace A 5]
+＠莫德雷德
+这里[line 3]卡姆兰。[r]卡姆兰之丘。
+[k]
+
+[bgm BGM_EVENT_11 0.1]
+＠莫德雷德
+如你所知，是国家反贼莫德雷德[r]被亚瑟王讨伐的场所。
+[k]
+
+＠莫德雷德
+哈，没有比这儿更适合当我心象风景的场所啦。
+[k]
+
+[charaFace A 0]
+＠莫德雷德
+[line 3]所以，一定要振作精神哦，御主。
+[k]
+
+＠莫德雷德
+假如这场梦是在回溯我生前的记忆，[r]那在卡姆兰屹立到最后一刻的那家伙就是敌人。
+[k]
+
+
+
+
+[charaFace A 5]
+＠莫德雷德
+也就是说，当然是[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 0.4]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.4]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[se ad7]
+[bgm BGM_EVENT_24 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+
+[se ad442]
+[wt 2.0]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠莫德雷德
+[line 3]哈。
+[k]
+
+＠莫德雷德
+……以我的梦而言，这内容还真令人厌恶呢。[r]不惜在人家的梦中出现也想杀了我吗？
+[k]
+
+＠莫德雷德
+你就这么憎恨我吗？
+[k]
+
+[charaFace A 5]
+＠莫德雷德
+如果真是这样[line 3]那不愧是一场梦。[r]一点都[#不像话]。
+[k]
+
+[charaFace A 4]
+＠莫德雷德
+父王如果真的能那么憎恨我，[r]我或许就会选择其他的生存方式了吧。
+[k]
+
+[charaFace A 5]
+＠莫德雷德
+不……这么想来，[r]或许这场梦还挺体贴的呢。
+[k]
+
+[charaFace A 0]
+＠莫德雷德
+……好吧，那我就陪你玩玩这场闹剧吧。
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[se ad166]
+[se ade41]
+[seVolume ade41 0 0.5]
+[charaFadein F 1.5 1]
+[charaFadeout A 1.5]
+[wt 0.6]
+[se ade109]
+[wt 0.6]
+[seStop ade109 0.1]
+[seStop ad166 0.4]
+[wt 0.8]
+
+
+＠莫德雷德
+来吧，我要上了，亚瑟王！[r][line 3]你的国家到此结束了！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

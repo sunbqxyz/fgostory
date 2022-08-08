@@ -1,0 +1,507 @@
+
+
+
+
+＄94-03-13-04-2-0
+
+
+[soundStopAll]
+[charaSet A 1098159700 1 魁札尔假面]
+[charaSet B 99502600 1 玛修]
+[charaSet C 98111500 1 通讯用杂音]
+[charaSet D 3036000 1 布拉达曼特]
+[charaSet E 98002000 1 芙芙]
+[charaSet F 7027001 1 彭忒西勒亚]
+[charaSet G 3016001 1 赫克托耳]
+[charaSet H 1098159800 1 黑魁札尔假面]
+
+
+
+[scene 68900]
+
+[charaPut C 0,-2000]
+[charaEffect C bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade230]
+[seVolume ade230 0 0.5]
+[wt 0.1]
+[se ade229]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[charaShake A 0.1 -5 2 2.0]
+[charaMove A 0 2.0]
+[wt 1.0]
+[charaShake A 0.1 5 2 3.0]
+[charaMove A 2 3.0]
+[wt 3.0]
+[charaShake A 0.1 -5 2 1.5]
+[charaMove A 1 1.5]
+
+[wt 1.8]
+
+[seStop ade229 0.3]
+[seStop ade230 0.8]
+[charaFadeout A 0.4]
+[wt 0.8]
+
+[bgm BGM_EVENT_3 0.5]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠赫克托耳
+起初还有些困惑，但大叔我已经知道了哦。
+[k]
+
+＠赫克托耳
+这是你用来扰乱敌人行动所使用的桑巴走位。[r]通过刚才的过程，我已经研究透了！
+[k]
+
+[messageOff]
+[se ad73]
+[charaMove G 100,0 0.5]
+[charaFadeout G 0.1]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wt 0.3]
+
+[se bac10]
+[fowardEffect bit_talk_14]
+[charaShake A 0.05 4 4 0.5]
+[wt 0.3]
+[charaFace A 4]
+[wt 1.0]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+[charaFace F 2]
+＠F：[servantName 702700:盯上圣诞老人的Berserker:彭忒西勒亚]
+[image berserker_language_1][line 3]！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[wt 0.3]
+
+[se ad171]
+[charaMove D 250,0 0.25]
+[charaFadeout D 0.25]
+[wt 0.35]
+[cueSe Battle bac234]
+[shake 0.05 1 4 1.0]
+[effect bit_talk_impactlanding]
+[wt 2.5]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠布拉达曼特
+呜，这是何等强大的力量！[r]简直就像狂暴的野兽……
+[k]
+
+[charaFace D 4]
+＠布拉达曼特
+……狂暴的野兽……？
+[k]
+
+[charaFace D 1]
+＠布拉达曼特
+啊。我知道了，教练！[r]现在就是使用刚学会的那招的时候了吧！
+[k]
+
+[charaFace D 0]
+＠布拉达曼特
+玛尔达大人斗法之一，『镇压狂暴怪物的方法』。
+[k]
+
+＠布拉达曼特
+首先摆出架势来，然后开始虔诚的祈祷。[r]真诚地[line 3]
+[k]
+
+[charaFace D 2]
+＠布拉达曼特
+殴打！　殴打！[r][#圣:嘿]！！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[wt 0.5]
+
+[se bac10]
+[fowardEffect bit_talk_14]
+[charaShake F 0.05 4 4 0.5]
+[wt 0.7]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠F：[servantName 702700:盯上圣诞老人的Berserker:彭忒西勒亚]
+呜……攻击突然变得果断……！？
+[k]
+
+[turnPageOff]
+＠F：[servantName 702700:盯上圣诞老人的Berserker:彭忒西勒亚]
+将战士之魂的存在方式瞬间固定下来的[#定义:Routine]。[r]你居然也有……像吾等『咆哮』的那种东西吗……！
+[k]
+
+[messageOff]
+[charaFace F 4]
+[wt 0.5]
+
+[charaMove F 0,-50 0.4]
+[charaFadeout F 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.2]
+
+[turnPageOn]
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠赫克托耳
+喂喂，女王陛下啊，[r]你该不会要被干掉了吧！？
+[k]
+
+[charaFace G 4]
+＠赫克托耳
+是否该亮出我的隐藏绝招，用这事先准备的[r]『绝对失控☆希腊男人的味道』香水，
+[k]
+
+＠赫克托耳
+让她变得更为狂暴呢……？
+[k]
+
+[charaFace G 5]
+＠赫克托耳
+不，算了，届时我或许会成为第一个被撂倒的。[r]从危机管理角度来说不行呢，不行。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠魁札尔假面
+你们队伍的职责分工太明确啦～！[r]由她负责攻击，由你负责防守啊。
+[k]
+
+[charaFace A 2]
+＠魁札尔假面
+但是[line 3]她已经被打倒了。[r]摔角可没有简单到光靠防守就能赢哦～！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+[wt 0.5]
+
+[se bac11]
+[fowardEffect bit_talk_13]
+[charaShake G 0.05 4 4 0.5]
+[wt 0.2]
+
+[charaFace G 4]
+
+[wt 0.7]
+
+[charaMove G 0,-50 0.4]
+[charaFadeout G 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.2]
+
+[se ade175]
+[wt 2.0]
+[seStop ade175]
+
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_3 1.0]
+[wait fade]
+
+[scene 68800]
+
+[wt 1.5]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠赫克托耳
+好痛好痛……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠布拉达曼特
+赫克托耳大人，我想问个问题，[r]您是否知道鲁杰罗他有没有……
+[k]
+
+[charaFace D 4]
+＠布拉达曼特
+不知道？　这样啊，真遗憾……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠魁札尔假面
+呼。真是个强大的敌人，[r]我们的队伍也越来越强了呢～！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠芙芙
+芙芙呜！
+[k]
+
+？1：就照这个势头继续赢下去吧！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaPut C 1]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠玛修
+我还是不太习惯这种形式的比赛，[r]光在一边旁观就够让人提心吊胆的了……
+[k]
+
+[charaFadeout B 0.1]
+[charaPut C 0,-2000]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠魁札尔假面
+这不是什么提心吊胆，[r]应该称其为华丽的过招令人激动不已～！
+[k]
+
+＠魁札尔假面
+兴奋总是要[#再多一些:Mucho]，[#再多一些:Mucho]，这就是摔角！[r]胜利后会兴奋也是理所当然的～！
+[k]
+
+＠魁札尔假面
+来吧，边跳胜利的桑巴边凯旋吧！　Ole！
+[k]
+
+？2：可不能就此松懈哦。
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠布拉达曼特
+说得对。该振作的地方就该好好振作。[r]感谢您的建议。
+[k]
+
+[charaFace D 4]
+＠布拉达曼特
+……唉。[r]如果十二圣骑士中能有更多这类人材就好了……
+[k]
+
+？！
+
+[wt 0.1]
+
+[messageOff]
+[fadeout black 1.5]
+
+[bgmStop BGM_EVENT_2 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[imageSet I back10000 1]
+
+[scene 69101]
+[charaFadein I 0.1 0,0]
+[charaScale I 1.1]
+[charaFadeTime I 0.1 0.6]
+
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.8]
+
+[se ade49]
+
+[scene 69100 0.5]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.4 1]
+[wt 0.4]
+＠黑魁札尔假面
+赢了啊。不这样就没意思了。
+[k]
+
+[charaFace H 5]
+＠黑魁札尔假面
+这是斗争的节日。因此我渴望，[r]渴望苦战、血战、激战、死战！
+[k]
+
+[charaFace H 2]
+
+＠黑魁札尔假面
+血肉之声、痛苦之声、战意的咆哮！[r]让这片土地掀起斗争的风浪吧！
+[k]
+
+[charaFace H 5]
+＠黑魁札尔假面
+最终诞生的，才是拥有力量，能令圣诞节[r]永远持续下去的真正圣诞老人……
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFace H 6]
+＠黑魁札尔假面
+吾之半身的下一个对手是……呵呵，是他们啊。[r]被我特别认定为强者的4支队伍之一。
+[k]
+
+＠黑魁札尔假面
+哪方获胜其实并不重要。只要有斗争就够了。[r]淘汰赛这一规则体系真是太优秀了。
+[k]
+
+＠黑魁札尔假面
+结果会产生更多的过程。不只是败者的念想，[r]如丝线一般引导着纠缠在一起的斗争[line 3]
+[k]
+
+＠黑魁札尔假面
+呵呵。[#另一个我:魁札尔·科亚特尔]啊。[r]他们很强哦。
+[k]
+
+＠黑魁札尔假面
+正可谓四天王之一。[r]是象征“增大”的队伍。
+[k]
+
+＠黑魁札尔假面
+你们究竟能让我看到什么样的斗争呢，[r]我会热切期待的……
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_48 1.5]
+[wait fade]
+[charaFadeout I 0.1]
+[charaScale I 1.0]
+[charaFadeout H 0.1]
+[wt 0.5]
+
+[scene 30450]
+[wt 1.5]
+[fadein black 1.5]
+[wait fade]
+
+[charaSet F 1098160200 1 神秘从者1号]
+[charaSet G 1098160200 1 神秘从者2号]
+
+[charaScale G 0.9]
+
+[bgm BGM_EVENT_5 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 -256,-60]
+
+[charaFace F 0]
+[charaFadein F 0.4 2]
+[wt 0.2]
+＠神秘从者2号
+接下来该怎么办？[r]明天要不要……练习？
+[k]
+
+＠神秘从者1号
+哈哈，我们的配合早已完成。[r]还是不要浪费无谓的体力了。
+[k]
+
+＠神秘从者1号
+比起这个，还是考虑在下次比赛中使用什么样的[r]登场方式更能给人留下印象更为有意义哦！
+[k]
+
+＠神秘从者1号
+迪嘻嘻嘻嘻嘻！（笑声。）
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_5 2.0]
+[wait fade]
+[soundStopAll]
+[end]
+

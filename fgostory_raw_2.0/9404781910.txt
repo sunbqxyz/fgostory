@@ -1,0 +1,202 @@
+
+
+
+＄94-04-78-19-1-0
+
+
+[soundStopAll]
+
+
+
+[charaSet A 98001000 1 玛修]
+[charaSet B 25005000 1 旅行者]
+[charaSet C 3043000 1 绘里濑]
+[charaSet D 5025001 1 爱迪生]
+[charaSet E 2016000 1 卫宫·Alter]
+[charaSet F 1098192800 1 玛丽]
+[charaSet G 1030000 1 铃鹿御前]
+[charaSet I 98115000 1 特效用]
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_41]
+[charaScale I 0.7]
+
+[scene 47001]
+
+[pictureFrame cut170_gameframe_dark]
+
+
+[fadein black 1.5]
+[wait fade]
+
+[pictureFrame]
+[pictureFrameTop cut170_gameframe_dark]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠绘里濑
+你曾经……是我的从者。[r]但并不是我的第一个伙伴。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+＠旅行者
+是的，绘里濑。你有朋友。[r]是很大，很大的……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠玛修
+原来除了旅行者先生以外，[r]绘里濑小姐还有别的朋友啊。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠绘里濑
+嗯。我很尊敬她。[r]她是个很温柔、很可靠、很能干的人[line 3]
+[k]
+
+[charaFace C 5]
+
+＠绘里濑
+我们必须得帮助那个人。
+[k]
+
+＠绘里濑
+来，轮到你了，旅行者。[r]赶紧朝终点进发吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-50]
+＠旅行者
+……明白了！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[effect bit_talk_dice15]
+[voice 2500500_0_X080]
+[wt 6.0]
+[wait voice 2500500_0_X080]
+
+
+[se ad399]
+[charaPut I 0,-70]
+[cameraMove 0.2 0,0 1.5]
+[wipeout circleOut 0.4 1.0]
+[wait wipe]
+
+[cameraHome 0.1]
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_41]
+[wt 1.0]
+
+[wipein circleIn 0.4 1.0]
+[seStop ad399 0.4]
+[wait wipe]
+
+[wt 0.4]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠爱迪生
+距离山门的路程走了快一半了。[r]虽然路还很长，但让我们振作精神吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 0,-50]
+＠玛丽
+山路会延续到那扇门后吗？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+＠卫宫·Alter
+你是在担心登山路线吗？[r]反正应该不用爬得大汗淋漓吧。
+[k]
+
+[charaFace E 0]
+＠卫宫·Alter
+倒不如说我在意的，是等待在[#终点:那里]的存在。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_62 1.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+＠旅行者
+是绘里濑的，伙伴哦。
+[k]
+
+？1：[#游戏界:这里]有她的伙伴？
+？2：在[#神社:终点]？　这倒是有种不好的预感……
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.4 0,-50]
+[wt 0.4]
+＠铃鹿御前
+你们在唠叨些什么呢～？[bgm BGM_EVENT_3 0.1]
+[k]
+
+[charaFace G 0]
+＠铃鹿御前
+这里虽然不是我的铃鹿山，[r]但我的灵基意外适应这里呢。
+[k]
+
+[charaFace G 1]
+＠铃鹿御前
+反正都爬到户隐半山腰了，[r]来陪我玩一会儿吧？
+[k]
+
+[messageOff]
+[maskout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[soundStopAll]
+[end]
+
+

@@ -1,0 +1,587 @@
+
+
+
+＄94-06-04-07-4-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001600 1 マシュ]
+[charaSet B 1098215400 1 ダ・ヴィンチ]
+[charaSet C 5048000 1 コルデー]
+[charaSet D 1098220500 1 カイニス]
+[charaSet E 1098215500 1 ゴルドルフ]
+[charaSet F 1098217700 1 量産型コロンブス]
+[charaSet G 1098217700 1 量産型コロンブス２]
+[charaSet H 1098217700 1 量産型コロンブス３]
+
+
+[imageSet N back10000 1 1]
+[charaScale N 1.32]
+
+[charaDepth N 1]
+[charaDepth B 2]
+
+
+[scene 34901]
+
+[pictureFrame cut063_cinema]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_62 0.1]
+
+＠シャルロット・コルデー
+（思ったより水の流れが速い。[r]　焦らないで、慎重に、でも急いで……！）
+[k]
+
+＠シャルロット・コルデー
+（いけるいける、今のわたしは大マジシャン、[r]　大胆さと慎重さを併せ持った恋する女！）
+[k]
+
+＠シャルロット・コルデー
+（あった、レバー！　これを引けば[line 3]）
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_62 1.0 0.5]
+[wait fade]
+
+[wt 0.5]
+
+[scene 130400]
+[pictureFrame]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_62 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+[wt 0.3]
+
+[se ad85]
+[fowardEffect bit_talk_h_slash01_fs]
+[wt 0.3]
+
+[cueSe Servants_102800 bac658]
+[fowardEffect bit_talk_14]
+[wt 0.1]
+[charaFace F 13]
+[charaShake F 0.05 2 2 0.6]
+[wt 0.5]
+[charaMove F 0,-50 0.5]
+[charaFadeout F 0.4]
+[wt 0.3]
+[se ad144]
+[wt 0.6]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠カイニス
+くそ、マジできりがねぇな[line 3][r]お？
+[k]
+
+[messageOff]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[scene 134000 1.5]
+
+[shake 0.05 1 1 2.0]
+[se ad293]
+[wt 2.5]
+
+[seStop ad293 0.5]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠マシュ
+壁のようだった隠し扉が開きました！
+[k]
+
+？1：シャルロットがやってくれたんだ……！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+よーし！　コルデーの帰還を待って、[r]奥の部屋に突入するよ！
+[k]
+
+
+＠ダ・ヴィンチ
+そこなら派手に宝具を使っても洞窟は大丈夫だから、[r]戦いやすいはずだ！
+[k]
+
+[charaPut N 0,0]
+[charaFadeTime N 0.2 0.5]
+[charaFace B 4]
+＠ダ・ヴィンチ
+（でも、予想より時間がかかってる……[r]　大丈夫かい、コルデー？）
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_62 1.0]
+[wait fade]
+
+[charaFadeout N 0.1]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[scene 34901]
+[pictureFrame cut063_cinema]
+
+[wt 1.0]
+
+[se ade54]
+[seVolume ade54 0 0]
+[seVolume ade54 1.0 0.4]
+[fadein black 2.0]
+[wait fade]
+[seStop ade54 2.0]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠シャルロット・コルデー
+（はぁ、はあっ……息が苦しくなってきた、かも）
+[k]
+
+＠シャルロット・コルデー
+（水が重い。身体が流される）
+[k]
+
+
+＠シャルロット・コルデー
+（でも、わたしは……絶対に、[r]　マスターのところに、帰るんだ……！）
+[k]
+
+[messageOff]
+
+[bgm BGM_EVENT_81 1.0 0.5]
+[fadeout black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[scene 134000]
+[pictureFrame]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_81 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaDepth H 3]
+[charaDepth F 4]
+[charaDepth G 5]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaFace F 11]
+[charaFadein F 0.1 1]
+[charaFace G 11]
+[charaFadeinFSR G 0.1 350,0]
+[charaFace H 11]
+[charaFadeinFSL H 0.1 -350,0]
+
+[wt 0.3]
+
+[fowardEffect bit_talk_x_slash_bl_02 150,0]
+[wt 0.1]
+[se bac210]
+[effect bit_talk_14 350,0]
+[charaFace G 13]
+[charaShake G 0.05 2 2 0.6]
+[wt 0.2]
+[fowardEffect bit_talk_x_slash_bl_01 -150,0]
+[wt 0.1]
+[se bac211]
+[effect bit_talk_14 -350,0]
+[charaFace H 13]
+[charaShake H 0.05 2 2 0.6]
+[wt 0.1]
+[se bac211]
+[fowardEffect bit_talk_x_slash_bl_03]
+[wt 0.1]
+[cueSe Servants_102800 bac658]
+[fowardEffect bit_talk_14]
+[charaFace F 13]
+[charaShake F 0.05 2 2 0.6]
+[wt 0.7]
+
+[charaMove F 0,-50 0.3]
+[charaFadeout F 0.4]
+[wt 0.2]
+
+[se ad144]
+
+[charaMoveFSR G 350,-50 0.3]
+[charaFadeout G 0.4]
+[wt 0.3]
+[se ad144]
+
+[charaMoveFSL H -350,-50 0.3]
+[charaFadeout H 0.4]
+[wt 0.2]
+[se ad144]
+[wt 0.7]
+
+
+[se ad60]
+[charaFace F 7]
+[charaFadein F 0.4 1]
+[wt 0.2]
+
+[se ad173]
+[charaFace G 7]
+[charaFadeinFSR G 0.4 350,0]
+[wt 0.2]
+
+[se ad452]
+[charaFace H 7]
+[charaFadeinFSL H 0.4 -350,0]
+
+[wt 0.5]
+
+[seStop ad60 0.5]
+[seStop ad173 0.5]
+[seStop ad452 0.5]
+
+[wt 0.8]
+
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠カイニス
+おい、まだかよ！[r]いい加減、限界だぞ！
+[k]
+
+？1：シャルロット……！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+まずい……もう30分近く経っている。
+[k]
+
+
+
+＠ダ・ヴィンチ
+水中呼吸装置が保つのは10分。[r]人間が無呼吸の時間を競う競技でも、記録は24分。
+[k]
+
+＠ダ・ヴィンチ
+言った通り、サーヴァントとはいえ、[r]この特異点内では『溺れたら溺れる』から……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ade191]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+[seStop ade191 1.0]
+＠量産型コロンブス
+ハッハッハァー！
+[k]
+
+[bgmStop BGM_EVENT_81 0.5]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[wt 0.4]
+
+[se ad563]
+[effect bit_shot_01 100,170]
+
+[se ad7]
+[charaMove D -200,0 0.3]
+[charaFadeout D 0.2]
+[wt 0.5]
+
+[effectDestroy bit_shot_01]
+[se ad728]
+[seVolume ad728 0 0.3]
+[shake 0.05 2 2 2.5]
+[se ad891]
+[seStop ad891 1.5]
+[wt 0.5]
+
+[se ad228]
+[wt 0.5]
+[fowardEffect bit_talk_rubble]
+[se ad913]
+
+[seStop ad913 2.5]
+[seStop ad228 0.7]
+[wt 0.8]
+
+[charaTalk D]
+[charaFace D 19]
+[charaFadein D 0.1 1]
+
+
+＠カイニス
+チッ、岩が崩れた！[r]避けろ！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[se ad914]
+[wt 0.8]
+[shake 0.05 1 1 1.3]
+[backEffect bit_talk_impactlanding]
+[se ad238]
+
+[shake 0.05 2 2 2.5]
+[wt 0.7]
+[fowardEffectStop bit_talk_rubble]
+[se ad745]
+[seVolume ad745 0 0.7]
+[effect bit_talk_water]
+[effect bit_talk_water_splash 0,-150]
+
+[wt 1.0]
+[effectStop bit_talk_water]
+[effectDestroy bit_talk_water]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_80 0.1]
+
+＠マシュ
+マスター！[r]今、崩れた岩が通路を……！
+[k]
+
+？1：完全に塞がれてる！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠カイニス
+ええいクソ。[r]運が悪いな、あの女！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+いかん、それはいかんぞ！
+[k]
+
+[charaFace E 18]
+＠ゴルドルフ
+持ち上げられるような大きさではない……[r]わ、割るしかないか！
+[k]
+
+[charaFace E 16]
+＠ゴルドルフ
+ええい、私を働かせるなど！　常夏のゴッフパンチ！[wt 0.5][se bac9][charaMoveReturn E -10,0 0.2][r]魅惑のゴッフパンチ！[wt 0.3][se bac9][charaMoveReturn E -10,0 0.2]　情熱のゴッフパンチ！[wt 0.3][se bac9][charaMoveReturn E -10,0 0.2]
+[k]
+
+[charaFace E 5]
+＠ゴルドルフ
+くっ……[#罅:ひび]は入ったが、まだまだだ。
+[k]
+
+＠ゴルドルフ
+ただでさえ時間が足りんというのに、[r]こんなことをしている場合では……！
+[k]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaFace E 7]
+＠ゴルドルフ
+[line 3]ん？
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[se ad886]
+[seVolume ad886 0 0.5]
+[wt 1.0]
+
+[cueSe SE_21 21_ade581]
+[fowardEffect bit_talk_spotlight03]
+
+[wt 1.0]
+
+[cueSe SE_21 21_ade581]
+[fowardEffect bit_talk_spotlight03 0,0 H]
+
+[wt 1.2]
+
+[se ad728]
+[seVolume ad728 0 0.6]
+[wt 1.2]
+
+[se ad745]
+[seVolume ad745 0 0.5]
+
+[charaEffect C bit_talk_spotlight02]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.4 0,-10]
+[charaMove C 0,0 0.2]
+[seStop ad886 2.5]
+[wt 0.5]
+
+＠シャルロット・コルデー
+じゃじゃーん！[cueSe SE_21 21_ade620][seVolume 21_ade620 0 0.6][r]アイムオッケー！　です！　[wt 0.5][charaFace C 15]……けほっ。[wt 0.4][seStop 21_ade620 0.4]
+[k]
+
+[fowardEffectDestroy bit_talk_spotlight03]
+[charaEffectDestroy C bit_talk_spotlight02]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+よかった、コルデー！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+コルデーさんが……割れた岩の間から！？
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？1：シャルロット、無事！？
+？！
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+ふぅ……はい、ちょっと危なかったですけど、[r]このとおり！
+[k]
+
+[charaFace C 1]
+＠シャルロット・コルデー
+わかっていますよね。今のわたしはマジシャン……[r]水中からの脱出もお手の物なのです！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠カイニス
+よくわかんねーが、帰ってきたなら良しだ！
+[k]
+
+[charaFace D 2]
+＠カイニス
+先に進んで、[r]広いところでコイツらの残りを消し飛ばすぞ！
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+
+＠ゴルドルフ
+待って。今のタネと仕掛けは？[r]どうやって抜け出たのアレ！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠シャルロット・コルデー
+秘密でーす♡
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

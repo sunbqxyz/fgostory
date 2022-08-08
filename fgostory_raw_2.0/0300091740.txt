@@ -1,0 +1,223 @@
+
+＄03-00-09-17-4-0
+
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 5045001 1 阿尔托莉雅]
+[charaSet B 1098231510 1 玛修]
+[charaSet C 1098210900 1 佩佩隆伯爵]
+[charaSet D 1098210400 0 1]
+[charaSet E 1098210400 0 1]
+[charaSet F 1098210400 0 1]
+
+[scene 21410]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[se ade426]
+[seVolume ade426 0 0]
+[se ade427]
+[seVolume ade427 0 0]
+[seVolume ade426 1.0 0.8]
+[seVolume ade427 1.0 0.8]
+[fadein black 1.5]
+[wait fade]
+[seStop ade426 1.0]
+[seStop ade427 1.0]
+[wt 0.8]
+
+[se ad14]
+[shake 0.02 2 2 0.5]
+[seStop ad14 1.0]
+[wt 1.2]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠玛修
+刚才，是不是发生了轻微的晃动？[r]就像是地震的预兆……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 27]
+[charaFadein A 0.1 1]
+
+＠阿尔托莉雅
+地震吗？[r]不列颠很少会发生地震呢……
+[k]
+
+？1：抓紧时间，我有种不祥的预感。
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠佩佩隆伯爵
+………………
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛修
+佩佩先生？[r]……请问，您是身体不舒服吗？
+[k]
+
+[charaFace B 12]
+
+＠玛修
+我总觉得从刚才起，[r]您的样子就有点怪怪的……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠佩佩隆伯爵
+讨厌啦。[r]连这种时候观察都那么仔细呀。
+[k]
+
+＠佩佩隆伯爵
+不必在意啦，我只是有点难过而已。[r]就是『哎呀，这样吗？』程度的不祥预感。
+[k]
+
+[charaFace C 6]
+
+＠佩佩隆伯爵
+不过我好高兴。你居然这么替我着想。[r][line 3]谢谢你，小玛修。
+[k]
+
+[charaFace C 0]
+
+＠佩佩隆伯爵
+好了，只要穿过那道门，进入大厅，[r]迷宫就到头了，随后就能一条直线抵达地表。
+[k]
+
+＠佩佩隆伯爵
+冲过去吧。[r]毕竟你们还在半路上嘛。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_81 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[scene 21400]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad768]
+[seVolume ad768 0 0.4]
+[cueSe SE_21 21_ad1071]
+[seVolume 21_ad1071 0 0.6]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+[seStop ad768 0.6]
+
+＠？？？
+啊……啊啊啊……[r]唔啊啊啊啊……
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth D 5]
+[charaDepth E 4]
+[charaDepth F 3]
+
+[charaTalk off]
+
+[se ad768]
+[seVolume ad768 0 0.4]
+[charaFace E 0]
+[charaFadeinFSL E 0.4 -350,0]
+[wt 0.2]
+[charaFace F 0]
+[charaFadeinFSR F 0.4 350,0]
+[wt 0.4]
+[seStop ad768 0.6]
+
+[bgm BGM_EVENT_80 0.1]
+
+＠？？？
+哈啊……啊啊啊……啊[line 4]……
+[k]
+
+？1：！？
+？2：这些人，究竟是……！？
+
+？！
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠阿尔托莉雅
+！　这些人身体都腐烂了……！[r]是达灵顿的死尸！
+[k]
+
+＠阿尔托莉雅
+100年前袭击了达灵顿的『灾厄』，[r]死而复苏的尸人们……！
+[k]
+
+＠阿尔托莉雅
+原来是这样，这里是人类的墓地吗……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 1.2]
+[charaFace B 7]
+
+[se bac170]
+
+＠玛修
+[line 3]既然遭到袭击，我们也只能应战！[r]战斗要控制在最小限度，确保通往上层的道路！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

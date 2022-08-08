@@ -1,0 +1,169 @@
+＄91-20-01-02-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+[scene 20110]
+[charaSet A 8001000 2 玛修]
+[charaSet B 98003003 2 Dr.罗曼]
+[charaSet C 98002000 2 芙芙]
+[charaSet D 2001001 0 卫宫]
+[charaSet E 98006000 0 魔物]
+[charaTalk A]
+[charaFace D 0]
+[charaFadein D 0]
+[charaFace A 0]
+[charaFadein A 0]
+[fadein black 1]
+[wait fade]
+＠玛修
+到达燃烧都市的大空洞了。[r]卫宫前辈，这里有什么啊？
+[k]
+
+＠卫宫
+嗯。以前来[#这]冬木时，感受到了一种气息。[r]自那时起，我就一直在寻找时机。
+[k]
+
+？1：时机……？
+
+？2：气息……？
+
+？！
+
+[charaFace D 5]
+＠卫宫
+是位我个人很介意的强敌[line 3][r]不，应该称之为难以逾越的壁垒吧。
+[k]
+
+[charaFace D 0]
+＠卫宫
+[%1]。你应该知道，[r]我的宝具还无法使用吧。
+[k]
+
+＠卫宫
+这是刻意被封印起来的。[r]直到作为御主的你能够拥有与之相称的力量。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[communicationChara 98003003 1 5 0 0]
+[wt 0.3]
+＠Dr.罗曼
+啊啊，原来是这样。难怪我觉得有些奇怪。[r]你的宝具是对心象世界的具现化。
+[k]
+
+＠Dr.罗曼
+没有什么发动宝具所需的媒触。[r]只要你自己在，就行了。
+[k]
+
+＠Dr.罗曼
+但你之所以不使用宝具，[r]是为了等待[%1]的成长吧。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠卫宫
+我知道这是多管闲事，[r]但万事都要有个顺序。
+[k]
+
+＠卫宫
+我不希望你成为一名只会依靠宝具的御主……
+[k]
+
+[charaFadeout D 0]
+[charaTalk A]
+[charaFadein D 0.1 0]
+[charaFace A 1]
+[charaFadein A 0.1 2]
+＠玛修
+那您现在是判断[%1]前辈作为一名御主已然成长，[r]足以将宝具托付给前辈了吗？
+[k]
+
+？1：终于能用Archer的宝具了吗！
+
+[charaFace D 3]
+＠卫宫
+嗯。你一直很努力。[r]但在此之前，希望你能再做一件事。
+[k]
+
+？2：我对此深表感谢，但你也保护过度了吧！
+
+[charaFace D 4]
+＠卫宫
+关于这点，你还是放弃挣扎吧。[r]这是我的坏毛病，总会对中意的对象投入过多的感情。
+[k]
+
+？！
+
+[charaFace D 0]
+＠卫宫
+虽说[#结果:外形]不同，但这里就是大圣杯。[r]发生于冬木的圣杯战争……
+[k]
+
+＠卫宫
+那位最强的从者就沉睡在里面。[r]希望你能打倒那家伙。
+[k]
+
+＠卫宫
+如果你能超越那位从者，[r]那我也就没什么好说的了。
+[k]
+
+[charaFace A 6]
+＠玛修
+这里面……前辈，难道是……
+[k]
+
+？1：……啥来着？
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+喂喂，振作一点啊。[r]是Berserker啦，Berserker！
+[k]
+
+＠Dr.罗曼
+那个皮肤黝黑身材高大，拥有自己意志的暴风雨般的家伙啦！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+？2：……是Berserker。
+
+[charaFace A 8]
+＠玛修
+……是的。[r]当时的我们根本无法与之抗衡的对手。
+[k]
+
+[charaFadeout A 0.1]
+？！
+
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠卫宫
+既然你们知道，那就好办了。[r]做好万全的战斗准备[line 3]
+[k]
+
+[se ad23]
+[charaFadeout D 0.1]
+[charaFadein E 0.1 1]
+[bgmStop BGM_EVENT_5 0.4]
+[bgm BGM_EVENT_3 0.1]
+＠魔物
+GuRuuuuuuuuuuuu[line 3]！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadein D 0.1 1]
+[charaFace D 5]
+＠卫宫
+之前，先做一下简单的准备运动吧。[r]剿灭它们，[%1]！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

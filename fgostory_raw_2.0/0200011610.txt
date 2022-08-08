@@ -1,0 +1,106 @@
+
+＄02-00-01-16-1-0
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 98111500 1 达·芬奇]
+[charaSet C 98111500 1 通讯用杂音]
+[charaSet D 1002001 1 阿尔托莉雅·Alter]
+[charaSet E 2023000 1 莫里亚蒂]
+[charaSet F 98086000 1 福尔摩斯]
+
+[soundStopAll]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 38800]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaPut C 1]
+[charaEffect C bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠玛修
+塔的内部有大量敌人！[r]雀蜂、花腔歌手、还有超级奇美拉君！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut C 1200,1200]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠莫里亚蒂
+哼，事到如今我们可不会输给这些家伙们！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠阿尔托莉雅·Alter
+不，一旦掉以轻心，可是会瞬间被干掉的。[r]别忘了敌我的兵力差距！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠莫里亚蒂
+我知道啦～！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠阿尔托莉雅·Alter
+来吧，御主。[r]冲上这座塔，准备好了吗！
+[k]
+
+？1：明白！
+
+＠阿尔托莉雅·Alter
+嗯。[r]……走吧！
+[k]
+
+？2：交给我吧！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠莫里亚蒂
+哈哈哈，真可靠！
+[k]
+
+[charaFace E 2]
+＠莫里亚蒂
+话说阿尔托莉雅，[&他:她]可是我的[#搭档:Buddy]，[r]你是不是能离[&他:她]远一点呢！
+[k]
+
+？！
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

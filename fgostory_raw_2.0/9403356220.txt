@@ -1,0 +1,967 @@
+
+＄94-03-35-62-2-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+
+[charaSet A 1047001 1 渡边纲]
+[charaSet B 6021001 1 酒吞童子]
+[charaSet D 4006001 1 乔尔乔斯]
+[charaSet E 2015001 1 阿周那]
+[charaSet F 4011001 1 布狄卡]
+[charaSet G 2001000 1 卫宫]
+[charaSet H 7016001 1 玉藻猫]
+[charaSet I 7022001 1 茨木童子]
+
+[imageSet J back10000 1 1]
+[charaScale J 1.32]
+
+[charaSet K 4031000 1 特效用]
+
+[equipSet S 9807920 1 情人节礼装]
+
+
+[charaPut K 2000,2500]
+[charaEffect K bit_sepia01_depth_fs]
+
+[cameraMove 0 0,0 1.01]
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[scene 105800]
+[branch lblConf]
+
+[label lblNotClear]
+[scene 106000]
+[label lblConf]
+
+
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠渡边纲
+[tVoice ValVoice_104700 0_V010]
+[line 3]虽然有些唐突，十分抱歉。[wait tVoice]
+[k]
+
+？1：确实很唐突！
+？！
+
+[charaFace A 4]
+＠渡边纲
+[tVoice ValVoice_104700 0_V020]
+嗯，其实我和那群鬼……[r]那个，做了些稍稍过度的锻炼。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad592]
+[fadeout white 0.5]
+[bgm BGM_EVENT_7 0.5 0.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 27600]
+
+
+[charaPut K 1]
+
+[charaTalk off]
+[charaDepth K 9]
+[charaDepth J 8]
+[charaDepth E 8]
+[charaDepth D 7]
+[charaDepth A 6]
+[charaDepth B 4]
+
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[wt 0.8]
+
+[fadein white 0.5]
+[wait fade]
+[wt 0.3]
+
+[se ad73]
+[charaMove A -200,0 0.2]
+[charaFadeout A 0.2]
+[wt 0.3]
+
+[se ad171]
+[effect bit_talk_x_slash03 0,0 H]
+[wt 0.25]
+
+[seStop ad171 0.1]
+[se ad1013]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+
+[charaFace B 4]
+[charaFadein B 0 0,0]
+
+[se ad671]
+[charaShake B 0.03 3 3 0.5]
+[charaMove B -200,0 0.4]
+[wt 0.3]
+
+[seStop ad671 0.4]
+[wt 0.8]
+
+[charaFace B 5]
+[wt 0.1]
+
+[se ad73]
+[charaMove B 50,0 0.2]
+[charaFadeout B 0.2]
+[wt 0.3]
+
+[se ad85]
+[effect bit_talk_h_slash01_fs]
+[wt 0.5]
+
+[se ad171]
+[fowardEffect bit_talk_v_slash01]
+[wt 0.5]
+
+[se ad1053]
+[effect bit_talk_quick_slash]
+[wt 0.7]
+
+[se ad32]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+[effectDestroy bit_talk_h_slash01]
+[fowardEffectDestroy bit_talk_v_slash01]
+[effectDestroy bit_talk_quick_slash]
+
+
+[charaFace A 5]
+[charaFace B 4]
+[charaFadein A 0 1]
+[charaFadein B 0 0,0]
+
+[se ad671]
+[charaShake B 0.03 3 3 0.5]
+[charaShake A 0.03 3 3 0.5]
+[charaMove A 260,0 0.25]
+[charaMove B -260,0 0.25]
+[wt 0.3]
+[seStop ad671 0.4]
+[wt 0.8]
+
+
+[charaPut J 0,-200]
+[charaFadeTime J 0.7 0.6]
+[wt 0.7]
+
+＠渡边纲
+[tVoice ValVoice_104700 0_V030]
+彼此都亢奋……Heat up，[r]没错，Heat up起来了。[wait tVoice]
+[k]
+
+＠渡边纲
+[tVoice ValVoice_104700 0_V040]
+当遭到挑衅的瞬间，内心顿时决定[r]砍下对方首级的想法虽然的确不好[line 3][wait tVoice]
+[k]
+
+？1：喂，不要紧吧！？
+？！
+
+＠渡边纲
+[tVoice ValVoice_104700 0_V050]
+嗯，万幸的是有人出手阻止了。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout J 0.4]
+[wt 0.5]
+
+[se ad984]
+[charaMove A 285,0 0.4]
+[wt 0.9]
+
+[se ad984]
+[charaMove B -285,0 0.4]
+[wt 0.9]
+
+[charaFace A 2]
+[charaFace B 5]
+[wt 0.1]
+
+[se ad7]
+[wt 0.05]
+[charaMove A 1 0.3]
+[charaMove B 0,0 0.3]
+[wt 0.2]
+
+[seStop ad7 0.1]
+[se ad32]
+[se ad170]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+
+
+[charaFace E 5]
+[charaFace D 5]
+[charaFadein E 0 100,0]
+[charaFadein D 0 -100,0]
+
+[charaFace A 5]
+[charaFace B 4]
+[charaPut B -300,0]
+[charaPut A 250,0]
+
+[charaShake B 0.03 3 3 0.5]
+[charaShake A 0.03 3 3 0.5]
+[charaMove B -450,0 0.25]
+[charaMove A 450,0 0.25]
+[wt 1.5]
+
+[messageOff]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[charaPut K 2000,2500]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+[scene 105800]
+[branch lblConf2]
+
+[label lblNotClear2]
+[scene 106000]
+[label lblConf2]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wt 0.8]
+
+[bgm BGM_EVENT_7 0.5 1.0]
+[fadein white 0.5]
+[wait fade]
+[wt 0.2]
+
+＠渡边纲
+[tVoice ValVoice_104700 0_V060]
+如果没有阿周那阁下和乔尔乔斯阁下，[r]问题可能就会有些严重了。[wait tVoice]
+[k]
+
+？1：也就是说，你们差点真的厮杀起来了吧。
+？！
+
+[charaFace A 4]
+＠渡边纲
+[tVoice ValVoice_104700 0_V070]
+也可以这么说。[r]不，也只能这么说了。[wait tVoice]
+[k]
+
+＠渡边纲
+[tVoice ValVoice_104700 0_V080]
+[line 3]非常抱歉。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠渡边纲
+[tVoice ValVoice_104700 0_V090]
+所以我有事想找您商量……[wait tVoice]
+[k]
+
+＠渡边纲
+[tVoice ValVoice_104700 0_V100]
+就算遭到了挑衅，[r]先动手的毫无疑问是我。[wait tVoice]
+[k]
+
+＠渡边纲
+[tVoice ValVoice_104700 0_V110]
+所以我必须向她们谢罪才行。[r]巧合的是，我听说很快就要到祭祀时间了。[wait tVoice]
+[k]
+
+？1：祭祀时间？
+？！
+
+[charaFace A 3]
+＠渡边纲
+[tVoice ValVoice_104700 0_V120]
+嗯……是叫圣瓦伦丁日吧。[r]是向承蒙照顾的人赠送巧克力的日子吧？[wait tVoice]
+[k]
+
+＠渡边纲
+[tVoice ValVoice_104700 0_V130]
+用日本的祭典做比喻，应该类似中元节吧。[r]难道不对吗？[wait tVoice]
+[k]
+
+＠渡边纲
+[tVoice ValVoice_104700 0_V140]
+并没有不对。[r]很好很好。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠渡边纲
+[tVoice ValVoice_104700 0_V150]
+不管怎么说，我想通过那种赠礼，[r]来表达自己谢罪的心情。[wait tVoice]
+[k]
+
+？1：这是个好主意呢！
+？！
+
+[charaFace A 1]
+＠渡边纲
+[tVoice ValVoice_104700 0_V160]
+这样啊……太好了。[wait tVoice]
+[k]
+
+＠渡边纲
+[tVoice ValVoice_104700 0_V170]
+那么，必须先得到巧克力才行。[twt 5.0][charaFace A 0][r]唔。御主，怎么了？[wait tVoice]
+[k]
+
+＠渡边纲
+[tVoice ValVoice_104700 0_V180]
+……手工制作？[wait tVoice]
+[k]
+
+＠渡边纲
+[tVoice ValVoice_104700 0_V190]
+点心应该亲手制作啊。[r]唔，原来如此。[wait tVoice]
+[k]
+
+＠渡边纲
+[tVoice ValVoice_104700 0_V200]
+……说得对。[r]这样做感觉更用心。[wait tVoice]
+[k]
+
+？1：那我们一起做吧。
+？！
+
+[charaFace A 1]
+＠渡边纲
+[tVoice ValVoice_104700 0_V210]
+真是感激不尽。[r]那我就恭敬不如从命了。[wait tVoice]
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_7 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+[scene 105900]
+[branch lblConf3]
+
+[label lblNotClear3]
+[scene 105600]
+[label lblConf3]
+
+[wt 1.0]
+
+
+
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaTalk off]
+[charaDepth G 6]
+[charaDepth F 5]
+[charaDepth H 4]
+
+[charaFace F 1]
+[charaFace G 1]
+[charaFace H 1]
+[charaFadeinFSL F 0.4 -350,0]
+[charaFadein G 0.4 1]
+[charaFadeinFSR H 0.4 270,0]
+[wt 1.5]
+
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠渡边纲
+[tVoice ValVoice_104700 0_V220]
+那么，还请各位多关照。[wait tVoice]
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[wait wipe]
+
+[wt 0.3]
+
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠渡边纲
+[tVoice ValVoice_104700 0_V230]
+色、形……[r]是啊，我觉得颜色就这样。[wait tVoice]
+[k]
+
+＠渡边纲
+[tVoice ValVoice_104700 0_V240]
+至于形……怎么样。[r]可行吗？　原来如此。[wait tVoice]
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[wait wipe]
+
+[charaFace A 4]
+[wt 0.3]
+
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠渡边纲
+[tVoice ValVoice_104700 0_V250]
+抱歉，烤焦了。[r]必须重新来过。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠渡边纲
+[tVoice ValVoice_104700 0_V260]
+不，我没有垂头丧气。[r]没关系。[wait tVoice]
+[k]
+
+＠渡边纲
+[tVoice ValVoice_104700 0_V270]
+我打算从头来过，您觉得如何。[r]那就仔细地……[wait tVoice]
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.6 1.0]
+[bgm BGM_EVENT_94 0.8 0.4]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadeinFSL I 0.4 -500,-50]
+
+[charaMoveFSL I -450,-50 0.4]
+[wt 1.0]
+
+[charaFace I 2]
+[charaShake I 0.03 3 3 0.3]
+[wt 0.8]
+
+[charaMoveFSL I -600,-50 0.4]
+[charaFadeout I 0.4]
+[wt 0.6]
+
+[wipeout rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+
+[pictureFrame]
+[wt 0.5]
+
+[bgm BGM_EVENT_94 0.8 1.0]
+[wipein rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠渡边纲
+[tVoice ValVoice_104700 0_V280]
+……？[r]是错觉吗。[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_94 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠渡边纲
+[tVoice ValVoice_104700 0_V290]
+然后将这些冷却下来……[twt 4.0][charaFace A 1][r]很好，看来成功了。[wait tVoice]
+[k]
+
+[bgm BGM_EVENT_2 0.1]
+
+？1：太好了！
+
+
+＠渡边纲
+[tVoice ValVoice_104700 0_V300]
+嗯。[r]感谢您的陪伴，御主。[wait tVoice]
+[k]
+
+[charaFace A 4]
+＠渡边纲
+[tVoice ValVoice_104700 0_V310]
+好了[line 3][wait tVoice]
+[k]
+
+？2：打算给各位鬼吗？
+
+[charaFace A 4]
+＠渡边纲
+[tVoice ValVoice_104700 0_V320]
+那当然。[r]但在此之前……[wait tVoice]
+[k]
+
+？！
+
+
+[messageOff]
+[wt 0.1]
+
+[charaFace A 0]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+
+[se bas2]
+[charaFace S 0]
+[charaFadein S 0.5 0,-70]
+[wt 2.5]
+
+
+[charaFadeout S 0.4]
+[wt 0.5]
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠渡边纲
+[tVoice ValVoice_104700 0_V330]
+先把这个送给您。[r]因为这是做得最好的。[wait tVoice]
+[k]
+
+＠渡边纲
+[tVoice ValVoice_104700 0_V340]
+最重要的是，我之所以完成了生前从未做过的事，[r]都是多亏了您的提案。[wait tVoice]
+[k]
+
+[charaFace A 3]
+＠渡边纲
+[tVoice ValVoice_104700 0_V350]
+亲手制作点心啊。[r]意外与剑有共通的部分，相当有意思。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠渡边纲
+[tVoice ValVoice_104700 0_V360]
+如果您不介意的话，[r]希望您下次还能陪我一起做……[wait tVoice]
+[k]
+
+？1：我很高兴！
+？2：另外，这是我给你的！
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[effectDestroy bit_talk_valentinegift02]
+[wt 0.1]
+
+[charaFace A 1]
+＠渡边纲
+[tVoice ValVoice_104700 0_V370]
+[line 3]谢谢您，御主。[wait tVoice]
+[k]
+
+？1：不客气！
+？！
+
+[messageOff]
+[wt 1.0]
+
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_2 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 0.5]
+[wait fade]
+
+＠
+[line 3]于是到了当天。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+[scene 104200]
+[branch lblConf4]
+
+[label lblNotClear4]
+[scene 105500]
+[label lblConf4]
+
+[pictureFrame cut063_cinema]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk off]
+
+[charaFace A 0]
+[charaFace B 0]
+[charaFadein A 0.1 235,-50]
+[charaFadein B 0.1 -235,-50]
+[wt 0.8]
+
+[charaMoveReturn A 135,-50 0.8]
+[wt 0.3]
+
+[charaFace B 9]
+[charaMove B -255,-50 0.3]
+[wt 1.2]
+
+[charaFace A 4]
+[charaMove A 285,-50 0.4]
+[charaFadeout A 0.4]
+[wt 1.2]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaFace B 9]
+[charaFadein B 0.1 0,-50]
+[wt 0.5]
+
+[charaMoveReturn B 0,-60 0.4]
+[wt 0.4]
+[charaMoveReturn B 0,-60 0.4]
+[wt 0.7]
+
+[charaFace B 3]
+[wt 1.0]
+
+[charaFace B 1]
+[wt 1.6]
+
+
+[charaDepth I 6]
+[charaFace I 0]
+[charaFadein I 0.4 -460,-50]
+[charaMove I -410,-50 0.4]
+[wt 0.5]
+
+[charaFace B 0]
+[wt 0.7]
+
+[charaMoveReturn B 0,-40 0.4]
+[wt 0.4]
+
+[charaMoveReturn B 0,-40 0.4]
+[wt 0.3]
+[charaFace I 5]
+[wt 0.4]
+
+[charaMoveReturn I -410,-30 0.2]
+[wt 0.2]
+[charaMoveReturn I -410,-30 0.2]
+[wt 0.55]
+
+[charaMove I 0,-50 0.3]
+[wt 0.15]
+
+[charaFace B 4]
+[charaMove B 260,-50 0.15]
+[wt 0.15]
+
+
+[charaFace I 2]
+[shake 0.03 3 3 0]
+[charaEffect I bit_talk_41_fs]
+[wt 2.0]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaFadeout I 0.1]
+[charaEffectStop I bit_talk_41_fs]
+[charaPut I 1200,2000]
+[shakeStop]
+
+
+[branchQuestNotClear lblNotClear5 3000303]
+
+[scene 105800]
+[branch lblConf5]
+
+[label lblNotClear5]
+[scene 106000]
+[label lblConf5]
+
+[pictureFrame]
+
+[wt 1.5]
+
+[se ad1048]
+[seVolume ad1048 0 0]
+
+[seVolume ad1048 1.0 0.1]
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+[seStop ad1048 0.4]
+[se ad85]
+[seVolume ad85 0 0.3]
+[wt 0.5]
+
+[se ad171]
+[seVolume ad171 0 0.3]
+[wt 0.4]
+
+[seStop ad171 0.1]
+[se ad170]
+[seVolume ad170 0 0.3]
+[se ad32]
+[seVolume ad32 0 0.3]
+[wt 0.8]
+
+[se ad8]
+[wt 1.0]
+[charaFace A 5]
+[charaFadein A 0.3 150,0]
+
+[se ad7]
+[charaMove A 0,0 0.3]
+[wt 0.3]
+[seStop ad8 0.4]
+[wt 0.4]
+
+＠渡边纲
+[tVoice ValVoice_104700 0_V380]
+[line 3]虽然有些唐突，实在是非常抱歉。[wait tVoice]
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+？1：这次又出什么事了！？
+？！
+
+＠渡边纲
+[tVoice ValVoice_104700 0_V390]
+之前我不是送出了巧克力吗。[r]然而看到了那个的茨木表示[line 3][wait tVoice]
+[k]
+
+[messageOff]
+[se ad592]
+[fadeout white 0.5]
+[bgm BGM_EVENT_7 0.5 0.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[branchQuestNotClear lblNotClear6 3000303]
+
+[scene 104200]
+[branch lblConf6]
+
+[label lblNotClear6]
+[scene 105500]
+[label lblConf6]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+[charaPut K 1]
+
+[wt 0.8]
+
+[fadein white 0.5]
+[wait fade]
+[wt 0.2]
+
+＠渡边纲
+『这点心！　不就意味着打算[r]　取吾和酒吞首级的预演吧！』
+[k]
+
+[charaFace I 6]
+＠渡边纲
+『这份挑战，唔，作为鬼的首领而言（咔哩咔哩）[wt 0.15][charaMoveReturn I 0,-10 0.3][r]　可恶怎么那么好吃，吾愿意接受！』[wt 0.15][charaMoveReturn I 0,-10 0.3]
+[k]
+
+[charaFace I 5]
+＠渡边纲
+『好～，酒吞！　我们上！』
+[k]
+
+[charaFace I 2]
+＠渡边纲
+[f large]『要砍下！　纲的首级！』
+[k]
+
+[messageOff]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout I 0.1]
+[charaPut K 2000,2500]
+
+[branchQuestNotClear lblNotClear7 3000303]
+
+[scene 105800]
+[branch lblConf7]
+
+[label lblNotClear7]
+[scene 106000]
+[label lblConf7]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+[wt 0.8]
+
+[bgm BGM_EVENT_7 0.5 1.0]
+[fadein white 0.5]
+[wait fade]
+
+＠渡边纲
+[tVoice ValVoice_104700 0_V400]
+变成这样。[r]然后就理所当然地又打起来了。[wait tVoice]
+[k]
+
+＠渡边纲
+[tVoice ValVoice_104700 0_V410]
+送礼还真是件难事呢……[wait tVoice]
+[k]
+
+？1：多么悲哀的误会……
+？！
+
+[charaFace A 0]
+＠渡边纲
+[tVoice ValVoice_104700 0_V420]
+唔？[r]不，一点也不悲哀啊。[wait tVoice]
+[k]
+
+＠渡边纲
+[tVoice ValVoice_104700 0_V430]
+因为双方都知道这不是厮杀。[r]虽然需要拼命。[wait tVoice]
+[k]
+
+[charaFace A 3]
+＠渡边纲
+[tVoice ValVoice_104700 0_V440]
+那样其实也挺有趣的。[r]至少对我来说是这样。[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠渡边纲
+[tVoice ValVoice_104700 0_V450]
+……再加上。[r]这份心意并非完全没有传达到。[wait tVoice]
+[k]
+
+＠渡边纲
+[tVoice ValVoice_104700 0_V460]
+大家对点心很好吃的意见是一致的。[wait tVoice]
+[k]
+
+＠渡边纲
+[tVoice ValVoice_104700 0_V470]
+当知道这是我做的时候，[r]全体惊讶的样子着实令人痛快。[wait tVoice]
+[k]
+
+[charaFace A 4]
+＠渡边纲
+[tVoice ValVoice_104700 0_V480]
+真是的[line 3][r]这对制作者来说也算最大的价值了吧。[wait tVoice]
+[k]
+
+？1：真是太好了！
+？！
+
+[messageOff]
+[charaFace A 1]
+[wt 1.0]
+
+
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

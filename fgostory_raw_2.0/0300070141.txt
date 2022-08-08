@@ -1,0 +1,644 @@
+
+＄03-00-07-01-4-1
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 6030000 1 段藏]
+[charaSet B 98006200 1 敌人]
+[charaSet C 1098203100 1 大土蜘蛛]
+[charaSet D 1098201600 1 佩太刀的男子]
+[charaSet E 1098201600 1 佩太刀的男子_剪影]
+[charaFilter E silhouette 00000080]
+[charaSet H 98115000 1 特效用]
+
+[scene 102201]
+
+[cameraMove 0.1 0,0 1.01]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.3]
+
+[se ad158]
+[se ad443]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[charaMoveScale B 1.1 0.2]
+[charaMove B 0,15 0.2]
+[wt 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[seStop ad443]
+[seStop ad158]
+[blurOff motion 0.2]
+[charaScale B 1.0]
+
+[effect bit_talk_v_slash02]
+[wt 0.1]
+[se ad85]
+[wt 0.2]
+
+[effect bit_talk_h_slash02_fs]
+[wt 0.1]
+[se ad85]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[fowardEffect bit_talk_14 -50,50]
+[charaShake A 0.05 3 3 0.2]
+[se ad1031]
+[wt 0.2]
+
+[fowardEffect bit_talk_14 50,-50]
+[charaShake A 0.05 3 3 0.2]
+[se ad1032]
+[wt 0.5]
+
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,20 0.2]
+[se ad7]
+[wt 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[blurOff motion 0.2]
+[charaScale A 1.0]
+
+[fowardEffect bit_talk_h_slash01_fs]
+[se ad471]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 2]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect A appearance 1 0.25]
+[wt 0.4]
+
+＠段藏
+就此！[r]了结！
+[k]
+
+[messageOff]
+[se ade160]
+[wt 0.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[fowardEffect bit_talk_explosion_triple02]
+[charaShake B 0.05 3 3 0.7]
+[se ad609]
+[wt 1.6]
+[seStop ad609 1.0]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_80 2.2]
+
+[charaSpecialEffect B enemyErasure 1 1.2]
+[se ad42]
+[wait charaSpecialEffect B]
+[wt 0.5]
+[seStop ad609 0.5]
+[wt 0.5]
+
+？1：刚才那只我好像有印象……
+
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠段藏
+…………是的。[bgm BGM_EVENT_81 0.1]
+[k]
+
+＠段藏
+段藏我虽然并没有下总的记录，[r]但以前曾拜见过迦勒底的数据库。
+[k]
+
+＠段藏
+方才斩杀的黑武者铠甲造型，[r]与乱世之时的极其相似[line 3]
+[k]
+
+？1：虽然不敢断言……
+？2：但或许与Alterego Limbo有关吧。
+
+？！
+
+[charaFace A 5]
+
+＠段藏
+段藏也持相同的见解。[r]也觉得难不成是……
+[k]
+
+＠段藏
+……[r]……
+[k]
+
+＠段藏
+……………………
+[k]
+
+[charaFace A 2]
+
+＠段藏
+[line 3]啊。
+[k]
+
+[charaFace A 5]
+
+＠段藏
+不，比起这个！[r]现在还是尽早前往大街吧，御主。
+[k]
+
+[charaFace A 4]
+
+＠段藏
+我有种不祥的预感。[r]不，我的易经回路出现了轻微反应[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.0]
+[se ad991]
+[seVolume ad991 0 0.1]
+[seVolume ad991 1.0 0.6]
+[wt 1.5]
+[seStop ad991 0.5]
+
+[charaFace A 2]
+
+＠段藏
+！
+[k]
+
+＠段藏
+与源自记录的预测一致！[bgm BGM_EVENT_72 0.1][r]判断为[#随地形变化的特殊拟态][line 3]御主！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[se ad989]
+[wt 1.2]
+[seStop ad989 0.3]
+[wt 0.3]
+
+？1：大蜘蛛！？
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[charaMoveScale A 1.1 0.15]
+[charaMove A 0,20 0.15]
+[se ad7]
+[wt 0.1]
+[shake 0.01 5 5 0.3]
+[wt 0.2]
+[charaMoveScale A 1.0 0.15]
+[charaMove A 0,0 0.15]
+[wt 0.2]
+
+[charaEffect A bit_talk_x_slash_bk_01]
+[charaFace A 5]
+[charaShake A 0.05 3 3 0.3]
+[wt 0.1]
+[se bac6]
+[wt 0.1]
+[charaEffect A bit_talk_x_slash_bk_02]
+[charaShake A 0.05 3 3 0.3]
+[wt 0.1]
+[se bac7]
+[wt 0.5]
+
+[fowardEffect bit_talk_35]
+[charaShake A 0.05 3 3 0.2]
+[se ad161]
+[charaCrossFade A 1098204400 4 0.1]
+[wait charaCrossFade A]
+[wt 1.5]
+
+＠段藏
+……呜！　失策！
+[k]
+
+？1：段藏小姐！
+
+？！
+
+？1：（为了保护我[line 6]！？）
+
+？！
+
+[charaFace A 2]
+
+＠段藏
+请您快逃，御主！[r]段藏会在此处拖住大蜘蛛之怪异！
+[k]
+
+＠段藏
+快去前方的大街！[r]请快跑！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ade311]
+[shake 0.02 4 4 0.6]
+[wt 0.6]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[se ad989]
+[wt 1.5]
+[seStop ad989 0.2]
+
+？1：我不会丢下你不管！
+？2：至少我能保住自己的性命！
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠段藏
+不好！[r]御主！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[se ad990]
+[wt 1.5]
+
+[fadeout black 0.5]
+[seStop ad990 0.5]
+[bgm BGM_EVENT_72 0.5 0.4]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+＠
+[line 3]在魔圈，平安京。
+[k]
+
+
+＠
+[&男人:女孩]为保护同伴而悲惨地[r]被怪异吞食的光景习以为常。
+[k]
+
+＠
+尤其是这段时期，[r]土蜘蛛会在京城郊外出没。
+[k]
+
+＠
+仿佛全身都由怨之一字构成的黑色怪异。[r]不归顺本朝的化外之民们的呐喊具现。
+[k]
+
+＠
+寻常人类会轻易被杀死。[r]会在刹那间被撕裂、咬碎、吞噬。
+[k]
+
+[bgmStop BGM_EVENT_72 1.0]
+
+＠
+……但是，然而。
+[k]
+
+[messageOff]
+[wt 0.7]
+
+＠
+假如现场[line 3]
+[k]
+
+＠
+[#有一位源氏的武者路过呢]？
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[scene 102201]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+[wt 0.5]
+
+＠佩太刀的男子
+[line 5]哦。
+[k]
+
+＠佩太刀的男子
+没有抛弃同伴，[r]自己一个人仓皇逃跑。
+[k]
+
+＠佩太刀的男子
+这份气魄倒是不赖。
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[charaDepth E 2]
+[charaDepth D 1]
+
+[charaFace E 0]
+[charaFadein E 0.4 1]
+
+[se ad60]
+[wt 0.4]
+[seStop ad60 0.2]
+[wt 0.5]
+
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+[charaFadeout E 0.7]
+[wt 1.0]
+
+[charaTalk on]
+[bgm BGM_EVENT_67 0.1]
+
+＠佩太刀的男子
+竟然会被土蜘蛛盯上，[r]是哪位武家的嫡子，或是其亲缘之子吗？
+[k]
+
+＠佩太刀的男子
+或是哪位公家的血脉[line 3]
+[k]
+
+[messageOff]
+[charaTalk A]
+[se ade311]
+[seVolume ade311 0 0.6]
+[shake 0.02 3 3 0.6]
+[wt 0.7]
+
+[se ad990]
+[wt 1.5]
+[seStop ad990 0.3]
+[wt 0.3]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠段藏
+那位大人！[r]不能孤身应付，请去叫人……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠佩太刀的男子
+叫人？　你是让我叫人求助吗？
+[k]
+
+[charaFace D 1]
+
+＠佩太刀的男子
+我，去求救吗。[r]你这女人说话挺有趣。
+[k]
+
+[messageOff]
+[charaTalk A]
+[se ade311]
+[shake 0.02 4 4 0.6]
+[wt 0.7]
+
+？1：……别一脸淡定啦，快逃啊！
+
+？！
+
+[se ad990]
+[wt 1.5]
+[seStop ad990 0.3]
+[wt 0.3]
+[charaFace D 0]
+＠佩太刀的男子
+[line 6]聒噪的蜘蛛。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.2]
+
+[effect bit_talk_h_slash01_fs]
+[se bac308]
+[wt 1.0]
+
+[fowardEffect bit_talk_blood_splash_fs]
+[se ad464]
+[charaFadeout C 0.1]
+
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠段藏
+！
+[k]
+
+＠段藏
+一刀……两断……！？
+[k]
+
+[charaFace A 4]
+
+＠段藏
+可……可是……[r]我的传感器完全[#看不到]他的剑闪与刀法……
+[k]
+
+[charaFace A 5]
+＠段藏
+你……！[r]究……究竟是……什么人……！
+[k]
+
+[messageOff]
+[charaDepth H 9]
+[charaDepth B 8]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[shake 0.02 4 4 0.7]
+[charaPut H 0,0]
+[charaMove C 0,-70 1.2]
+[wt 0.6]
+[se ade311]
+[charaEffect H bit_talk_impactlanding]
+[wt 1.2]
+[charaFadeout C 0.4]
+[wt 1.2]
+
+[se ad163]
+[seStop ad163 0.3]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+[se ad1034]
+[wt 1.0]
+
+＠佩太刀的男子
+……………………
+[k]
+
+？1：[line 8]
+
+？！
+
+[charaFace D 0]
+
+＠佩太刀的男子
+唔。
+[k]
+
+＠佩太刀的男子
+面对土蜘蛛虽多少有些颤抖，[r]却没有腿软，而且最重要的是……
+[k]
+
+＠佩太刀的男子
+[#眼神充满了生气]。
+[k]
+
+＠佩太刀的男子
+非平安之世的奇异装扮。[r]异境的轻装。
+[k]
+
+＠佩太刀的男子
+而且两人这般融洽地结伴同行[line 3]
+[k]
+
+＠佩太刀的男子
+隐约能感觉到某些特有的魔力，[r]看来不会有错了。
+[k]
+
+[charaFace D 5]
+[bgmStop BGM_EVENT_67 1.0]
+
+＠佩太刀的男子
+你们是[#英灵:从者]与[#天览武者:御主]吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠段藏
+！？[bgm BGM_EVENT_48 0.1]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[wt 0.4]
+
+？1：………………你是谁？
+
+？！
+
+[charaFace D 0]
+
+＠佩太刀的男子
+我吗。[r]既然你想知道，那我便自报姓名吧。
+[k]
+
+[messageOff]
+[charaFace D 4]
+[wt 0.7]
+
+＠佩太刀的男子
+作为都城护卫的赖光四天王之首。[r]代管天下闻名之宝刀·髭切的源氏武者。
+[k]
+
+[charaFace D 5]
+
+＠佩太刀的男子
+[line 6]内舍人渡边纲，在此拜见。
+[k]
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_48 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

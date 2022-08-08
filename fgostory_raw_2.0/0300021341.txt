@@ -1,0 +1,1361 @@
+
+
+＄03-00-02-13-4-1
+[soundStopAll]
+
+[charaSet A 8001400 1 玛修]
+[charaSet B 2031001 1 拿破仑]
+[charaSet C 3012001 1 布伦希尔德]
+[charaSet D 3033000 1 奥特琳德]
+[charaSet E 1098124510 1 达·芬奇]
+[charaSet F 1033001 1 齐格鲁德]
+[charaSet G 5009000 1 特效用dummy]
+[charaSet H 5009000 1 特效用dummy２]
+
+[scene 60900]
+
+[bgm BGM_EVENT_80]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+[cueSe Battle bac169]
+[effect bit_talk_h_slash01]
+[wt 0.2]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[se ad32]
+[fowardEffect bit_talk_14]
+[effectStop bit_talk_h_slash01]
+[wt 0.1]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[effect bit_talk_kengekiall01]
+[wt 0.1]
+[charaPut G 1]
+[charaEffect G bit_talk_14]
+[se ad32]
+[wt 0.2]
+[charaScale H 1.4]
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_rarrow01br 1 F]
+[wt 0.2]
+[charaPut G 60,10]
+[charaEffect G bit_talk_14]
+[se ad32]
+[wt 0.1]
+[charaPut G -50,-20]
+[charaEffect G bit_talk_14]
+[se ad32]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[charaPut H -50,-100]
+[wt 0.3]
+[cueSe Battle bac423]
+[wt 0.4]
+[charaFadeout B 0.1]
+[wt 0.7]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+[effect bit_talk_gram_slash_02]
+[cueSe Battle bac169]
+[wt 0.4]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaFadeout F 0.1]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 -64,0]
+[se ad32]
+[fowardEffect bit_talk_14 -64,0]
+[effectStop bit_talk_h_slash01]
+[wt 0.1]
+
+[charaShake A 0.05 3 2 0.5]
+[se ad671]
+[charaMove A 16,0 0.2]
+[wt 0.2]
+[seStop ad671 0.2]
+[wt 0.5]
+
+＠玛修
+……！
+[k]
+
+[messageOff]
+[se ade18]
+[seVolume ade18 0.0 0.5]
+[wt 0.5]
+[seStop ade18 0.8]
+[wt 1.0]
+
+[se ad672]
+[charaMove A 6,0 0.3]
+
+[wt 0.5]
+
+[charaFace A 7]
+
+＠玛修
+好强[line 3][r]但是，绝不是什么无法战胜的对手！
+[k]
+
+＠玛修
+外骨骼输出稳定。除自动调节机能以外，[r]还有布伦希尔德小姐和拿破仑先生的支援。
+[k]
+
+[charaFace A 2]
+
+＠玛修
+可以维持战斗状态！[r]不会再次在魔剑面前停止运作了！
+[k]
+
+？1：不停轮番上！
+？2：继续战斗！
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠拿破仑
+噢！　战斗的感觉确实截然不同了！[r]只不过，还是有些令人介意的事！
+[k]
+
+＠拿破仑
+女武神布伦希尔德！[r]你感觉如何，继续这样下去能压制对方吗！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[se ad51]
+[wt 0.7]
+
+＠布伦希尔德
+……稍微……有些困难吧。[bgm BGM_EVENT_80 1.0 0.4]
+[k]
+
+[charaFace C 4]
+
+＠布伦希尔德
+没想到身为战斗英雄的齐格鲁德会如此强大。[r]我还自以为自己足够了解他，看来我还是不够成熟。
+[k]
+
+＠布伦希尔德
+我认识的都是平时的他，[r]都是他在远离冒险的平稳中的一面。
+[k]
+
+＠布伦希尔德
+对敌人挥舞魔剑的他，是如此……
+[k]
+
+＠布伦希尔德
+啊啊，勇猛的英雄。[r]啊啊，可怕的男人。
+[k]
+
+＠布伦希尔德
+我很困扰……[r]倘若你是如此强大，毫不犹豫的战士……
+[k]
+
+＠布伦希尔德
+我……[line 3]
+[k]
+
+[messageOff]
+[charaFace C 0]
+[wt 1.0]
+[charaFace C 2]
+
+[bgm BGM_EVENT_80 0.8 1.0]
+
+＠布伦希尔德
+我就只能拼尽灵魂极限燃烧自己了。[r][line 3]大神刻印·原型激发。
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth G 2]
+[charaDepth C 1]
+[charaFace D 5]
+
+[charaPut G 1]
+[charaEffect G bit_talk_charge_blu]
+
+[se ad61]
+[se ad556]
+[seVolume ad556 0 0.6]
+
+[wt 2.0]
+
+[messageOff]
+[seStop ad61 0.5]
+[seStop ad556 0.5]
+[se ad574]
+
+[flashin once 0.1 1.0 FFFFFF80 FFFFFF00]
+[cueSe Battle bac31]
+
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_charge_blu]
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠玛修
+这魔力的规模是……！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠奥特琳德
+大神刻印·原型激发。[r]我们姊妹并没有搭载的，只属于姐姐大人的力量。
+[k]
+
+[charaFace D 6]
+
+＠奥特琳德
+姐姐大人。我们的布伦希尔德姐姐大人。[r]您……竟然不惜做到这个地步……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[se ad13]
+[wt 0.3]
+[charaTalk E]
+[charaFace E 22]
+[charaFadein E 0.1 1]
+[wt 0.3]
+
+＠达·芬奇
+观测到庞大魔力的出现！[r]到底发生了什么事……喂，那该不会是……！
+[k]
+
+＠达·芬奇
+大神刻印！[r]曾经存在于神代的原初之卢恩吗！？
+[k]
+
+＠达·芬奇
+保守估计也有现代卢恩的数百倍的威力，[r]是甚至接近魔法的神代魔术！
+[k]
+
+[charaFace E 2]
+
+＠达·芬奇
+若是将其片鳞半爪当作普通魔术来使用也罢了，[r]一旦真正解放的话，别说灵基了！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.2]
+[charaPut G 1200,1200]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠布伦希尔德
+嗯，连灵魂都会灰飞烟灭。[r]想来也是如此。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠玛修
+！
+[k]
+
+？1：等一下！
+？2：这我可没听说啊！
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠布伦希尔德
+谢谢你。[r]温柔的孩子，[%1]。
+[k]
+
+[charaFace C 0]
+
+＠布伦希尔德
+但是……[r]我所谓的拼上性命，指的就是这种事。
+[k]
+
+[charaFace C 5]
+
+＠布伦希尔德
+来吧，让你久等了，齐格鲁德。[r]让我们继续相[#爱:杀]吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠齐格鲁德
+[line 3]自作聪明。我还以为你能给我找点乐子呢，[r]事到如今却祭出区区大神的伎俩。
+[k]
+
+[charaFace F 12]
+
+＠齐格鲁德
+真是败兴。[r]我不再扮演什么战士了。直接杀了你。
+[k]
+
+[bgmStop BGM_EVENT_80 0.5]
+
+＠G：奥菲莉娅
+慢着。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaSet A 8001410 1 玛修]
+[charaSet D 8001400 1 玛修_有风镜]
+[charaSet E 1098123820 1 奥菲莉娅]
+[charaSet G 1098123810 1 奥菲莉娅_眼帯]
+[charaSet H 5009000 1 特效用dummy]
+
+[se ad95]
+[seVolume ad95 0 0.2]
+[seVolume ad95 2.0 1.0]
+[wt 1.4]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+[seStop ad95 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠G：奥菲莉娅
+等一下，Saber。[r]你那把魔剑只须斩杀从者即可。
+[k]
+
+[charaFace G 7]
+
+＠G：奥菲莉娅
+没错，尽管我已经再三强调过了。[r]但你还是打算杀光所有人吧。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠齐格鲁德
+[line 3]呵。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠拿破仑
+…………哟！　我心爱的奥菲莉娅！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠G：奥菲莉娅
+你还是老样子啊，Archer。[r]我早该在第一次见面时就杀了你。
+[k]
+
+＠G：奥菲莉娅
+但我还是要称赞一下你的顽强奋斗。[r]称赞中包含着我的憎恨。
+[k]
+
+[charaFace G 14]
+
+＠G：奥菲莉娅
+你居然带来了布伦希尔德，[r]尽做些多余的事。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠拿破仑
+承蒙夸奖不胜惶恐。[r]哈哈！　我都快感激涕零啦！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaDepth D 2]
+[charaDepth A 1]
+
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+[wt 0.2]
+[charaFadeout D 0.4]
+[wt 0.2]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[wt 0.7]
+
+＠玛修
+……奥菲莉娅小姐。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+＠G：奥菲莉娅
+……[r]……
+[k]
+
+[charaFace G 8]
+
+＠G：奥菲莉娅
+你又来了啊，玛修。又来了。[r]为什么？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+因为我们肩负着责任。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠G：奥菲莉娅
+责任？[r]是守护人理的使命感吗？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠玛修
+……我不知道。[r]仅凭我对人类的了解程度，还不足称之为使命感。
+[k]
+
+[charaFace A 12]
+
+＠玛修
+但是……哪怕要毁灭这个[#异闻带:Lostbelt]，[r]我也，我们也……
+[k]
+
+[charaFace A 7]
+
+＠玛修
+不能放弃我们自己的世界。[r]就像坚持在那片冻土世界中生存的人们一样。
+[k]
+
+[charaFace A 16]
+
+＠玛修
+无论结局如何，[r]我们都想抬头挺胸地前进。
+[k]
+
+？1：（……啊啊，说得没错。）
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+[wt 1.0]
+[charaFace G 8]
+
+＠G：奥菲莉娅
+……有什么样的从者，[r]就有什么样的御主呢。
+[k]
+
+＠G：奥菲莉娅
+哪怕快被罪恶感压垮，[r]都还能直率地回视我。
+[k]
+
+[charaFace G 9]
+
+＠G：奥菲莉娅
+……玛修。[r]你变得强大多了。
+[k]
+
+＠G：奥菲莉娅
+和我简直是天壤之别。[r]我无法变得像你一样。
+[k]
+
+[charaFace G 0]
+
+＠G：奥菲莉娅
+但我不会让出这条道路。[r]我，对沃戴姆的那个决断[line 3]
+[k]
+
+[charaFace G 5]
+
+[bgmStop BGM_EVENT_70 0.5]
+
+＠G：奥菲莉娅
+不，我唯独不会背叛基尔什塔利亚大人的期待！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth G 2]
+[charaDepth E 1]
+
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+[wt 0.7]
+
+[se ad661]
+[wt 0.3]
+
+[charaFadeout G 0.4]
+[wt 2.0]
+[charaTalk depthOn]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_80]
+
+＠拿破仑
+魔眼吗！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[wt 0.5]
+
+[charaFace E 5]
+
+＠奥菲莉娅
+[line 6]事象·[#瞄准固定:Schufen Auf]。
+[k]
+
+[se ad476]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠奥菲莉娅
+令人惊叹的原初之卢恩与大神刻印。[r][line 3][#我不会看到其闪耀的样子:Ich will es niemals glänzen sehen.]！
+[k]
+
+[messageOff]
+[seStop ad476 0.5]
+[fadeout black 0.1]
+[wait fade]
+[cameraMove 0 0,-50 1.4]
+[wt 0.1]
+[fadein black 0.1]
+[wait fade]
+
+[se ad693]
+[effect bit_talk_ophe_eye 35,-28]
+[wt 0.2]
+
+[fadeout white 0.8]
+[wait fade]
+
+[charaFadeout E 0.1]
+[cameraHome 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+[wt 0.1]
+[fadein white 0.6]
+
+[charaFace C 5]
+
+＠布伦希尔德
+……！
+[k]
+
+[wait fade]
+
+[messageOff]
+[se ade70]
+[wt 0.7]
+[wipeout gunya 1.0 1.5]
+[wait wipe]
+[wt 0.3]
+[wipein gunya 0.5 1.5]
+[se ad632]
+[seVolume ad632 0 0.4]
+[wait wipe]
+
+[charaFace C 4]
+
+＠布伦希尔德
+咕，呜……！[r]我的，卢恩……在衰减……[line 3]！？[seStop ad632 1.0]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠奥菲莉娅
+你的光辉过于耀眼。[r]所以，我的眼瞳不会去看其可能性的未来。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠玛修
+果然是事象回卷……！[r]但是，但是……唯独不可能对时间做出干涉！
+[k]
+
+＠玛修
+哪怕借助Noble Color，[r]借助宝石魔眼，也不可能！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+[charaMove C 0,-20 0.5]
+[charaFadeout C 0.4]
+[se ade75]
+[wt 0.4]
+[seStop ade75 0.5]
+
+[wt 1.0]
+
+＠布伦希尔德
+呜……哈啊……！[wt 0.6][messageShake 0.05 5 5 1.0][r]啊啊啊啊啊啊啊啊啊啊啊啊啊……！
+[k]
+
+[messageShakeStop]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠齐格鲁德
+呵呵。这敢情好，有意思！[r]你的灵基承受不了大神刻印的原型激发吧。
+[k]
+
+＠齐格鲁德
+呵。呵呵。藉由激发所引出的力量被中止，[r]只剩下[#灵核的崩毁]吗？
+[k]
+
+＠齐格鲁德
+难受吧。[r]痛苦挣扎吧。
+[k]
+
+＠齐格鲁德
+沦落为人类女性之人啊，[r]这匍匐挣扎的模样太适合你了。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+＠布伦希尔德
+齐格……鲁德……！[wt 0.5][messageShake 0.05 5 5 1.0][r]噢噢，啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊……
+[k]
+
+？1：布伦希尔德！
+？2：我马上用礼装帮你回复[line 3]！
+
+？！
+
+[charaSet D 3033000 1 奥特琳德]
+
+[messageShakeStop]
+[bgmStop BGM_EVENT_80 1.0]
+
+＠布伦希尔德
+啊，啊……啊啊……不用……[r]还没，还没到时候，[%1]。
+[k]
+
+＠布伦希尔德
+如果害你……[r]这么担心的话，我会……很困扰的……
+[k]
+
+
+[messageOff]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.7 0,-16]
+[wt 0.2]
+[charaMove C 1 0.5]
+[se ad166]
+[wt 0.3]
+[seStop ad166 0.2]
+
+[wt 0.7]
+
+＠布伦希尔德
+我，说过吧……[bgm BGM_EVENT_82 0.1][r]关于她的魔眼……就交由我来应付。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠奥菲莉娅
+！
+[k]
+
+[charaFace E 5]
+
+＠奥菲莉娅
+事象·[#瞄准固定:Schufen Auf]！
+[k]
+
+[messageOff]
+
+[se ad476]
+
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠布伦希尔德
+[line 6]不，不。[seStop ad476 2.0][r]这眼瞳，只要亲身承受过一次就足够了。
+[k]
+
+＠布伦希尔德
+大神刻印·重启，再度激发。[r]我……不会再被你的眼瞳所迷惑了。
+[k]
+
+＠布伦希尔德
+你并不是回卷了事象吧。[r]对，就好像，用针固定住了可能性……
+[k]
+
+[charaFace C 10]
+
+＠布伦希尔德
+既然如此……[r]就能用这种方法应对。
+[k]
+
+[messageOff]
+
+[messageOff]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth H 2]
+[charaDepth C 1]
+[charaFace C 10]
+
+[charaPut H 1]
+[charaEffect H bit_talk_charge_blu]
+
+[se ad61]
+[se ad556]
+[seVolume ad556 0 0.6]
+
+[wt 2.0]
+
+[messageOff]
+[seStop ad61 0.5]
+[seStop ad556 0.5]
+[se ad574]
+
+[flashin once 0.1 1.0 FFFFFF80 FFFFFF00]
+[cueSe Battle bac31]
+
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_charge_blu]
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠奥特琳德
+重启……！？[r]身为靠灵核运作的从者，这么做，
+[k]
+
+＠奥特琳德
+相当于让连接着心脏与大脑的灵核……[r]进一步崩溃……姐姐大人……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠奥菲莉娅
+你……你做了什么[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠布伦希尔德
+你看不见了吧。[r]因为为了不让你看见，我缩小了可能性。
+[k]
+
+？1：缩小了可能性！？
+？2：这究竟是什么意思[line 3]
+
+？！
+
+[charaFace C 0]
+
+＠布伦希尔德
+魔之眼，拥有力量的眼瞳。[r]我曾经见识过这种东西。
+[k]
+
+＠布伦希尔德
+所以我不会因此受挫。[r]哪怕，那是[#异邦之神:巴罗尔]的眼睛。
+[k]
+
+[charaFace C 5]
+
+＠布伦希尔德
+或许，就算是我父亲的眼睛，[r]我……
+[k]
+
+[charaFace C 2]
+
+＠布伦希尔德
+[f large]我还是……！
+[k]
+
+＠布伦希尔德
+[f large]会杀了！　齐格鲁德！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+[se ad683]
+[seVolume ad683 0 0.4]
+
+[wt 1.0]
+
+[charaFace F 1]
+
+＠齐格鲁德
+真碍事。[r]哼。区区人偶还挺会吼的。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠布伦希尔德
+[line 6]齐格鲁德！
+[k]
+
+[messageOff]
+[se ad73]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[effect bit_talk_kengekiall04]
+[wt 0.1]
+[se ad32]
+[fowardEffect bit_talk_14]
+[wt 0.4]
+[se ad32]
+[wt 0.1]
+[fowardEffect bit_talk_14]
+[se ad618]
+
+[wt 1.2]
+
+[charaTalk E]
+[charaFace E 16]
+[charaFadein E 0.1 1]
+
+＠奥菲莉娅
+不可能……[r]这怎么可能……！
+[k]
+
+＠奥菲莉娅
+她……竟然把精神……[#固定住了]……！
+[k]
+
+＠奥菲莉娅
+把前进的道路彻……彻底限定成一条，[r]不容[#其他可能性:if]的自己出现[line 3]竟然能做到这种事！？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[cueSe Battle bac109]
+[fowardEffect bit_talk_quickmove]
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠齐格鲁德
+人类肯定是做不到的。[r]仅凭普通的意志怎么可能阻挡可能性的出现。
+[k]
+
+＠齐格鲁德
+普通的半神也不可能。[r]但如果是燃烧自我扭曲自我的半神，或许就能做到！
+[k]
+
+＠齐格鲁德
+竟然能扭曲到如此地步，[r]挥舞充满魔性的枪！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠布伦希尔德
+齐格鲁德、齐格鲁德、齐格鲁德！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF00]
+[effect bit_talk_14]
+[shake 0.05 2 4 0.5]
+[se ad32]
+
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠奥特琳德
+姐姐大人……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[effect bit_talk_41]
+[effect bit_talk_14]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[se ad468]
+
+[se ad632]
+
+[shake 0.03 3 3 0.3]
+[wt 0.3]
+[shake 0.03 2 2 0]
+[se ad468]
+[wt 1.5]
+[effectStop bit_talk_41]
+[se ad32]
+[wipeout rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+[seStop ad632 0.5]
+[shakeStop]
+[wt 0.2]
+[wipein rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠布伦希尔德
+呀啊啊啊啊啊啊啊啊啊！[r]一定要将我的火焰、我的疯狂、我的思念，传达给……！
+[k]
+
+＠布伦希尔德
+步入邪道的你！
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth H 2]
+[charaDepth C 1]
+
+[se ad690]
+[seVolume ad690 0 0.6]
+[charaPut H 1]
+[charaEffect H bit_talk_charge_blu]
+[wt 4.0]
+[flashin once 0.2 0.5 FFFFFFFF FFFFFF00]
+[charaPut H 2400,2400]
+[charaEffectStop H bit_talk_charge_blu]
+[seStop ad690 0.3]
+[charaTalk depthOn]
+
+[effect bit_talk_36]
+[se ad39]
+[wt 1.3]
+
+＠布伦希尔德
+[line 3]『[#直至死亡拆散两人:Brynhild Romantia]』！
+[k]
+
+[messageOff]
+[fadeout white 1.2]
+[se ad703]
+[wt 0.8]
+[seStop ad703 0.2]
+[wait fade]
+[effectStop bit_talk_36]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠玛修
+布伦希尔德小姐的枪……！[r]形态发生了变化，变得非常巨大！
+[k]
+
+＠拿破仑
+用于贯穿战士生命的布伦希尔德之枪、宝具吗！[r]这玩意……好大啊！　冲击波要来了！
+[k]
+
+[scene 45810]
+
+[messageOff]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+[charaSet G 1098123210 1 戈尔德鲁夫]
+
+[messageOff]
+[fadein white 1.0]
+[se ad704]
+[seVolume ad704 0 0.0]
+[wait fade]
+
+[seVolume ad704 0.5 1.0]
+[wt 1.4]
+[charaPut H 1]
+[charaScale H 1.2]
+[charaEffect H bit_talk_v_slash01]
+[wt 1.2]
+
+[se ad705]
+[flashin once 0.5 1.0 FFFFFFAF FFFFFF00]
+[fadeout white 0.2]
+[wait fade]
+[wt 2.7]
+[flashOff]
+[seStop ad704 1.0]
+
+[fadein white 0.7]
+[wait fade]
+
+＠布伦希尔德
+此乃必杀之枪。[r]乃用于杀死屠龙者、大英雄、我心爱男人的浑身一击。
+[k]
+
+＠布伦希尔德
+这巨大的枪刃无法回避。[r]只要你，是英灵齐格鲁德！
+[k]
+
+＠布伦希尔德
+将思念化作重量的这把大枪正是[line 3]
+[k]
+
+[charaFace C 2]
+
+＠布伦希尔德
+[f large]一击！　必杀！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_82 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaScale H 1.4]
+[charaEffect H bit_talk_arrow01bl 1 F]
+[wt 0.7]
+[se bac176]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.4]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.4]
+[se ad705]
+
+[se bac187]
+[seVolume bac187 0 0.6]
+[fadeout white 2.0]
+[se ad608]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+[wt 2.0]
+
+[scene 60900]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[fadein white 0.5]
+[wait fade]
+
+＠布伦希尔德
+解决[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠齐格鲁德
+不。[wt 0.5][charaFace F 13][r]这是碰不到我的！
+[k]
+
+[messageOff]
+[effect bit_talk_v_slash01]
+[cueSe Battle bac169]
+[wt 0.4]
+
+[fowardEffect bit_talk_29 0,-50]
+[se bac325]
+[seVolume bac325 0 0.8]
+[wt 0.1]
+
+[fowardEffect bit_talk_14]
+[se ad618]
+[wt 0.3]
+[wt 0.5]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth C 3]
+[charaDepth B 2]
+[charaDepth A 1]
+
+[charaFace C 4]
+[charaFadein C 0.1 0]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[charaFace A 14]
+[charaFadein A 0.1 2]
+
+[wt 3.0]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaFace D 6]
+[charaFadein D 0.1 0]
+[charaFace E 12]
+[charaFadein E 0.1 2]
+
+[wt 3.0]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk on]
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠戈尔德鲁夫
+什么[line 3]
+[k]
+
+[charaFace G 8]
+
+＠戈尔德鲁夫
+怎……怎么会有如此荒唐透顶的事！？[r]这可是女武神布伦希尔德的宝具啊，是英雄杀手啊！
+[k]
+
+＠戈尔德鲁夫
+使用魔剑格拉墨的不就是齐格鲁德吗！[r]那这把枪，肯定不会刺偏……肯定能夺走他的性命才对啊！
+[k]
+
+＠戈尔德鲁夫
+然而……[r]为什么，他为什么还活着！？
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.2]
+[charaPut H 1200,1200]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠齐格鲁德
+这宝具确实不错。[r]然而，很遗憾。
+[k]
+
+[charaFace F 12]
+
+＠齐格鲁德
+[line 3]因为我，[#并不是英灵齐格鲁德]。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

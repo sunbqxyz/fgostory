@@ -1,0 +1,233 @@
+
+
+
+＄94-06-04-08-3-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001600 1 マシュ]
+[charaSet B 1098215400 1 ダ・ヴィンチ]
+[charaSet C 4029300 1 アキレウス]
+[charaSet D 1098220400 1 清少納言]
+[charaSet E 4039300 1 マンドリカルド]
+[charaSet F 1098216800 1 沖田オルタ]
+[charaSet G 1098220500 1 カイニス]
+[charaSet H 1098220610 1 カーマ]
+
+[charaSet I 98006000 1 エネミー]
+
+[scene 131400]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_141 0.1]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠マシュ
+なんとか、垂直に近い崖のエリアは[r]乗り越えられたようですが……
+[k]
+
+[charaFace A 12]
+＠マシュ
+まだまだ険しい道のりが続くようですね。[r]油断はできません。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠アキレウス
+ああ。足を踏み外せばどこまで転がり落ちるか[r]わかんねえのは同じだ。
+[k]
+
+＠アキレウス
+引き続き慎重に行くぜ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+って、待って。なんだあれ？
+[k]
+
+＠ダ・ヴィンチ
+前方の空中に何か浮いてる[line 3][r]黒いボックス？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 -75,0]
+
+＠沖田オルタ
+『Ｖ』って表面に書いてありますね。[r]謎です。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠清少納言
+まさか、あれは……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠カーマ
+何か心当たりでもあるんですか？[r]いえ私もなんとなく既視感があるんですが。
+[k]
+
+[charaFace H 12]
+＠カーマ
+なんだったかなー……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠カイニス
+何にしてもクソ怪しいじゃねえか。[r]正体がわかるまで下手に触れんじゃ[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_141 1.0]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+＠清少納言
+フッ……大丈夫だカイみょん。[r]あたしちゃんには全部わかったぜ。
+[k]
+
+[charaFace D 1]
+＠清少納言
+こいつには、こうだ……！
+[k]
+
+[charaFace D 2]
+＠清少納言
+拳を高く突き上げながらジャーンプ！[r]そしてボックスを下からホワチャーッ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠マンドリカルド
+いきなり何してんすかー！
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[wt 0.5]
+
+[se bac1]
+[charaMoveReturn D 0,15 0.3]
+
+[wt 0.2]
+
+[cueSe SE_21 21_ade612]
+[wt 0.5]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+『Ｖ』の表示が消えて、[r]ボックスの中から何かが……！？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[cueSe SE_21 21_ade611]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-100]
+[charaMove I 0,0 1.0]
+
+[wt 1.5]
+
+[se ad19]
+[wt 1.5]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠清少納言
+む、ハズレだったか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠カイニス
+よくわかんねーモンを無駄に起動させんじゃねぇ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠アキレウス
+とにかく撃退するぞ！[r]足場は悪い、充分に注意しろ！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

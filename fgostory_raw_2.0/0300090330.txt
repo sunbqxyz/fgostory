@@ -1,0 +1,58 @@
+
+＄03-00-09-03-3-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1049000 1 千子村正]
+[charaSet B 5045000 1 阿尔托莉雅]
+
+[scene 119700]
+
+[se ad16]
+[seVolume ad16 0 0]
+[seVolume ad16 1.5 0.5]
+[fadein black 1.5]
+[wait fade]
+
+[seStop ad16 2.0]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠千子村正
+好，这边大致清理干净了！[r]之后靠咱们想办法解决就行了！
+[k]
+
+＠千子村正
+你先去城门那边吧，[%1]！[r]快去帮珀西瓦尔的忙！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠阿尔托莉雅
+加雷斯亲也总是乱来，[r]拜托你去支援！
+[k]
+
+？1：明白了！
+？2：你们俩要多加小心啊！
+
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

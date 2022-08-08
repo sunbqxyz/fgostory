@@ -1,0 +1,764 @@
+
+
+
+＄03-00-06-21-3-1
+
+
+
+
+[soundStopAll]
+
+[charaSet A 1098123710 1 基尔什塔利亚]
+[charaSet B 9005001 1 福尔摩斯]
+[charaSet D 1098124210 1 贝里尔（剪影）]
+[charaFilter D silhouette 00000080]
+[charaSet E 1098124210 1 贝里尔]
+
+[charaSet F 8001410 1 玛修]
+[charaSet H 4040002 1 欧罗巴]
+
+[verticalImageSet I cut181_tree03 1]
+[verticalImageSet J cut181_tree04 1]
+[verticalImageSet K cut181_tree05 1]
+[charaScale I 1.02]
+[charaScale J 1.02]
+[charaScale K 1.02]
+
+[sceneSet P 10001 1]
+[charaScale P 1.01]
+
+[charaSet S 5009000 1 特效用dummy]
+
+
+[sceneSet T 10001 1]
+[charaFilter T silhouette F0F0F0F0]
+
+[scene 93006]
+
+[pictureFrame cut063_cinema]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_91 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+＠基尔什塔利亚
+（[line 3]啊啊。[r]　这就是你培养的御主吗，医生。）
+[k]
+
+＠基尔什塔利亚
+（仿佛双眼都要失明，[r]　心脏都要破裂一般。）
+[k]
+
+＠基尔什塔利亚
+（我一直很放心，当我中道崩殂，[r]　或者迷失道路的时候[line 3]）
+[k]
+
+＠基尔什塔利亚
+（戴比特应该能妥善处理好之后的事情，[r]　不过真没想到啊。）
+[k]
+
+＠基尔什塔利亚
+（这里居然还有一位[r]　比我更强的适任者。）
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[pictureFrame]
+
+[scene 10000]
+[wt 0.3]
+
+[fadein black 0.1]
+[wait fade]
+
+
+[se ad171]
+[effect bit_talk_x_slash02]
+[wt 0.4]
+
+[se ad32]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF00]
+[wt 0.1]
+
+[scene 93006]
+
+[se ad671]
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0 0,30]
+
+[charaShake A 0.02 3 3 0.6]
+[charaMoveScale A 1.0 0.2]
+[charaMove A 0,0 0.2]
+
+[wt 0.4]
+[seStop ad671 0.8]
+[wt 1.0]
+
+
+
+？1：怎么样[line 4]！
+？2：这下你我互不相欠了，基尔什塔利亚·沃戴姆！
+
+？！
+
+[charaFace A 0]
+＠基尔什塔利亚
+战斗得确实精彩，[r][%1]。
+[k]
+
+＠基尔什塔利亚
+从客观上来看，[r]也可以说我被你们打败了。
+[k]
+
+＠基尔什塔利亚
+不过，你也与我一样用尽了全力，[r]身体疲惫得就连站都站不稳了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+你承认自己输了？[r]那你可以停止空想树阿特拉斯了吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠基尔什塔利亚
+…………这办不到。[r]哪怕我死去，阿特拉斯也不会停止。
+[k]
+
+＠基尔什塔利亚
+非常抱歉，[r]但我还是要请你们成为新的神明。
+[k]
+
+[charaFace A 0]
+＠基尔什塔利亚
+在那之后，[r]空想树的使用权便随你们处置。
+[k]
+
+＠基尔什塔利亚
+……就算现在无法打倒它。
+[k]
+
+＠基尔什塔利亚
+等你们获得优秀的知觉之后，[r]迟早会找到打破『异星之神』计划的方法[line 3]
+[k]
+
+[messageOff]
+[charaFace A 11]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_91 0.7]
+[wipeout rectangleStripUpToDown 0.7 1.0]
+[wait wipe]
+
+[charaTalk depthOff]
+[charaDepth I 1]
+[charaDepth J 2]
+[charaDepth K 3]
+[charaFadein I 0.1 0,400]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad933]
+[seVolume ad933 0 0]
+[seVolume ad933 1.0 0.6]
+[wipein rectangleStripDownToUp 0.7 1.0]
+[wait wipe]
+[wt 1.0]
+[charaMove I 0,-200 5.0]
+[seStop ad933 3.0]
+[wt 2.0]
+[se ad644]
+[seVolume ad644 0 0.3]
+[wt 4.0]
+
+
+[se ad801]
+
+[charaFadein J 1.5 0,-200]
+[se ad960]
+
+[wt 2.0]
+
+[se ad961]
+[wt 1.0]
+
+[se ad429]
+[seVolume ad429 0 0]
+[seVolume ad429 1.0 0.5]
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+[scene 93004]
+
+[seStop ad961 2.0]
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_72 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+天空在燃烧……不，[r]是空想树的树枝在燃烧……？
+[k]
+
+[charaFace B 2]
+＠福尔摩斯
+！　危险，快退后，玛修、[r][%1]！
+[k]
+
+＠福尔摩斯
+着火了！　火焰正沿着从空中伸展的每一根树枝，[r]朝空想树蔓延！
+[k]
+
+[messageOff]
+[charaFadeout B 1.5]
+
+[se ad963]
+[charaFadein J 1.5 0,400]
+[wt 2.0]
+[seVolume ad429 1.0 1.0]
+[se ad969]
+[se ade393]
+[seVolume ade393 0 0]
+[seVolume ade393 1.0 0.5]
+[charaFadein K 1.5 0,400]
+[wt 3.0]
+[seVolume ad429 2.0 0.8]
+
+＠基尔什塔利亚
+！
+[k]
+
+？1：空想树在燃烧……！？
+？2：究竟是怎么回事……！？
+
+？！
+
+
+＠基尔什塔利亚
+不可能……！？　生长完成的空想树[r]怎么会从外部被点燃……！
+[k]
+
+[bgmStop BGM_EVENT_72 2.0]
+[seStop ade393 2.0]
+[seStop ad429 2.0]
+
+＠？？？
+嗯。所以我是从内部点燃的。
+[k]
+
+＠？？？
+我先点燃其他空想树的树根，[r][#再通过树枝将这场森林火灾转赠给你]。
+[k]
+
+＠？？？
+你说过空想树的树枝就是网络吧？[r]我利用这个拟定了这病毒般的计划啦。
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.7 1]
+[wait wipe]
+[charaTalk off]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaDepth A 9]
+[charaDepth D 3]
+
+[charaFace A 11]
+[charaFace D 0]
+[charaFadein A 0.1 0,0]
+
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.7 1]
+[wait wipe]
+[wt 0.5]
+[charaFadein D 1.2 200,0]
+[wt 1.2]
+
+
+？1：基尔什，背后……！
+
+？！
+
+
+[fadeout black 0.4]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+
+[scene 10000]
+[charaSet A 1098123740 1 基尔什塔利亚]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad28]
+[charaDepth S 4]
+[charaRoll S 260]
+[charaPut S 100,-250]
+[charaEffect S bit_talk_Slash_white_01_L]
+[wt 0.4]
+
+
+[se ad32]
+[fowardEffect bit_talk_14]
+
+[scene 93004]
+
+[charaFace D 0]
+[charaFace A 0]
+[charaFadein A 0 1]
+[charaFadein D 0 1]
+[charaMove A 2 0.3]
+[charaMove D 0 0.3]
+[charaShake A 0.02 3 3 0.6]
+[charaShake D 0.02 3 3 0.6]
+[wt 1.0]
+
+[charaDepth E 2]
+[charaFace E 10]
+[charaFadein E 0.4 0]
+[wt 0.4]
+
+[charaFadeout D 0.7]
+[wt 1.1]
+
+
+[charaTalk on]
+[charaTalk E]
+＠贝里尔
+不会吧！？[r]难道你背后也长眼睛了吗，沃戴姆！？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+[wt 1.2]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace E 10]
+[charaFadein A 0.1 2]
+[charaFadein E 0.1 0]
+＠基尔什塔利亚
+倒是你。[r]我还以为你的行动会更为谨慎呢，贝里尔。
+[k]
+
+＠基尔什塔利亚
+就算你这里杀了我，[r]迦勒底的成员也还健在。
+[k]
+
+＠基尔什塔利亚
+我不认为没有从者的你有办法逃离这里哦。
+[k]
+
+
+[charaTalk E]
+[charaFace E 4]
+＠贝里尔
+什么嘛，喂，居然还这么冷静吗。
+[k]
+
+＠贝里尔
+怎么？　难道你早就知道我打算[r]从背后捅你一刀吗？
+[k]
+
+[charaTalk A]
+[charaChange A 1098123710 0 fade 0.5]
+[wt 0.5]
+＠基尔什塔利亚
+不。这我倒是现在才知道。[r]说实话，我也很混乱。
+[k]
+
+＠基尔什塔利亚
+[#你没有理由背叛我]。[r]为何事到如今却要来妨碍我的计划？
+[k]
+
+＠基尔什塔利亚
+你也会成为神啊，贝里尔。[r]这样你也就能从『异星之神』手中获得解放哦？
+[k]
+
+[messageOff]
+[charaTalk E]
+[charaFaceFade E 11 0.5]
+[wt 0.5]
+
+＠贝里尔
+啊～……你果然不懂啊。[r]说得也是。你一定不懂吧。
+[k]
+
+[charaFace E 9]
+＠贝里尔
+比起这件事。我说你，[r]为什么要敌视不列颠异闻带呢？
+[k]
+
+＠贝里尔
+你从没有来过不列颠异闻带吧？[r]为什么会知道『放任不管会很危险』呢？
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+
+＠基尔什塔利亚
+……因为我对你的世界进行过考察。
+[k]
+
+＠基尔什塔利亚
+与『异星之神』相迥异的灾厄。
+[k]
+
+＠基尔什塔利亚
+如果不列颠出现了异闻带，[r]恐怕就会是拖着星球一起陪葬的毁灭『诅咒』。
+[k]
+
+[charaTalk E]
+[charaFace E 3]
+
+＠贝里尔
+唔噢，真的吗！[r]虽然听不懂你在说什么，不过那真是太棒了！
+[k]
+
+＠贝里尔
+那些家伙果然是真正的炸弹啊！[r]不枉我搭上那条贼船了！
+[k]
+
+[charaFace E 11]
+
+＠贝里尔
+我也告诉你一件事以示回礼吧。[r]告诉你我为什么要来到你的异闻带。
+[k]
+
+＠贝里尔
+因为，你想啦？[r]毕竟我背叛了妖精们嘛？
+[k]
+
+＠贝里尔
+说白了，我无时无刻不被人家盯着。
+[k]
+
+[bgmStop BGM_EVENT_48 1.0]
+
+[charaFace E 12]
+＠贝里尔
+甚至只要大声点地喊一句『我在这里』，[r][#就立刻会有天罚朝我降下来]哦？
+[k]
+
+
+[charaTalk A]
+[charaFace A 2]
+＠基尔什塔利亚
+[line 3]！[r]马卡里俄斯、阿黛勒！
+[k]
+
+
+[skip false]
+
+[charaTalk E]
+[charaFace E 8]
+＠贝里尔
+既然听懂我的意思就好办了。[r][line 3]那就这样，该道别了，沃戴姆。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠基尔什塔利亚
+玛修、[%1]！[r]快离开这里！
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[fadeout white 1.0]
+[wait fade]
+
+[charaScale S 1.0]
+[charaRoll S 0]
+
+
+
+
+[scene 10000]
+[overlayFadein P 0.1 0,-200]
+[wt 1.0]
+
+[fadein white 0.1]
+[wait fade]
+[criMovie talk_mov057 bgmPlay false]
+[wt 0.5]
+[charaFadeout P 1.0]
+[wt 4.8]
+[scene 10001 1.0]
+[bgm BGM_EVENT_46 0.1]
+[wt 6.0]
+[fadeout white 1.0]
+[wait fade]
+
+[scene 93005]
+[wt 0.1]
+
+[skip true]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 1.0]
+
+？1：那是……伦戈米尼亚德的光芒……！？
+
+？！
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+各位，紧急逃离！[r]不，但凭那股热量……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+＠欧罗巴
+各位，快来这边！[r]我至少可以让你们撤离到王冠那边！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠福尔摩斯
+（不可能的，来不及了……！[r]　而且身上还有刚才战斗中受的伤！）
+[k]
+
+＠福尔摩斯
+（神妃欧罗巴的加护恐怕是物理保护以及重力操控。[r]　那样远远不够！）
+[k]
+
+＠福尔摩斯
+（不对，就算能用空间转移撤离到奥林波斯都市区域，[r]　那道光也会贯穿一切……！）
+[k]
+
+
+[messageOff]
+[skip false]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+[bgmStop BGM_EVENT_46 1.2]
+[wt 1.2]
+
+[charaFace A 5]
+＠基尔什塔利亚
+[line 3]不。[r]还没完……！
+[k]
+
+[messageOff]
+
+[cueSe NoblePhantasm_9942250 NP_9942250_8]
+[fadeout white 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[overlayFadein P 0.1 0,-200]
+[scene 10000]
+[wt 1.0]
+
+[seStop ad474 1.0]
+[fadein white 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_125 0.1]
+
+[criMovie talk_mov058 bgmPlay false]
+[wt 0.5]
+
+[charaDepth S 10]
+[charaPut S 2000,2000]
+
+[charaEffect S bit_talk_summon_g 0,0 V]
+[charaEffect S bit_talk_06 0,250 V]
+[charaFadeout P 1.0]
+[wt 10.0]
+[scene 10001 1.0]
+[wt 6.0]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+[charaPut S 1]
+
+[shake 0.05 6 6 4.0]
+[se ad477]
+[seVolume ad477 0 0]
+[seVolume ad477 2.0 1.0]
+[se ade393]
+[seVolume ade393 0 0]
+[seVolume ade393 2.0 1.0]
+
+[scene 93005 2.0]
+[charaFadeTime T 2.0 0.7]
+
+[wt 2.5]
+[shake 0.05 3 3 0]
+
+＠基尔什塔利亚
+休想得逞……！[r]怎么能让他们的旅途在这里结束……！
+[k]
+
+[messageOff]
+[wt 1.5]
+[skip true]
+
+＠贝里尔
+[line 3]这样啊。[r]那该死的人果然还是你啊。
+[k]
+
+＠贝里尔
+因为这次真的浑身破绽百出哦？
+[k]
+
+[messageOff]
+[fadeout white 1.0]
+[wait fade]
+
+
+[shakeStop]
+
+[charaPut S 2000,2000]
+
+[scene 10001]
+[wt 0.5]
+
+[fadein white 0.1]
+[wait fade]
+
+[bgmStop BGM_EVENT_125 0.1]
+
+[se ad240]
+[effect bit_talk_35]
+[wt 3.0]
+
+＠基尔什塔利亚
+[line 3]…………啊。[r][line 6]呜……………………
+[k]
+
+[messageOff]
+[fadeout white 0.1]
+[wait fade]
+
+[charaFadeTime T 0.1 0.3]
+
+[charaDepth S 10]
+
+[scene 93005]
+
+[charaPut S 0,300]
+
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠贝里尔
+沃戴姆。[r]你的败因就是你过于忙碌了。
+[k]
+
+＠贝里尔
+只要能亲自来不列颠看一次，[r]你就不会采用将事情交给我处理这种天真的对策了。
+[k]
+
+[charaFace E 9]
+＠贝里尔
+……老实说哦，我原本只打算烧掉这边的空想树之后，[r]就回不列颠的……
+[k]
+
+＠贝里尔
+但听你说了那番话，我就不得不杀死你了。[r]这也是没办法的。
+[k]
+
+[charaFace E 7]
+＠贝里尔
+“所有人都成为等同于神的存在”吗。
+[k]
+
+＠贝里尔
+这不就代表了，[r]那将是一个无法杀害任何人的世界吧？
+[k]
+
+＠贝里尔
+饶了我吧，我才不要呢。[r]那简直无聊得要死啊。
+[k]
+
+＠贝里尔
+我就是想一直当个人渣哦。[r][line 3]根本不想成为什么伟大的自己。
+[k]
+
+[messageOff]
+[cueSe NoblePhantasm_202000 NP_202000_8]
+[charaMove S 0,600 5.5]
+[seStop ade393 2.0]
+[scene 93004 2.0]
+[wt 3.5]
+
+
+[messageOff]
+[fadeout black 2.0]
+[seStop ad828 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

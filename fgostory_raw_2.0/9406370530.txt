@@ -1,0 +1,846 @@
+
+
+＄94-06-37-05-3-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 11012000 1 蘭丸Ｘ]
+[charaSet B 7026000 1 茶々]
+[charaSet C 1098170900 1 森長可]
+
+[charaSet D 1098223900 1 キンノーッブ]
+[charaSet E 1098223900 1 キンノーッブ]
+[charaSet F 1098223900 1 キンノーッブ]
+[charaSet G 1098223900 1 キンノーッブ]
+
+[charaSet H 98115000 1 エフェクト用]
+[charaSet I 98115000 1 エフェクト用]
+[charaSet J 1098223900 1 キンノーッブ]
+[imageSet K back10000 1 1]
+
+[charaSet L 1098222700 1 人斬り新兵衛]
+[charaSet M 1098223000 1 出雲阿国]
+[charaSet N 1098223100 1 斬ザブロー]
+[charaSet O 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+[charaDepth I 5]
+[charaDepth O 5]
+[charaDepth H 6]
+[charaDepth D 5]
+[charaDepth E 4]
+[charaDepth F 3]
+[charaDepth G 2]
+[charaDepth J 1]
+
+[charaDepth B 5]
+[charaDepth C 6]
+[charaDepth L 7]
+[charaDepth M 8]
+
+[charaDepth K 9]
+
+[charaPut O 2000,2500]
+[charaEffect O bit_talk_spotlight02]
+
+[charaPut I 3000,3000]
+[charaEffect I bit_talk_sparks_fs]
+
+[charaPut H 3000,3000]
+[charaEffect H bit_sepia01_depth_fs]
+
+[scene 138900]
+
+[bgm BGM_EVENT_80 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠森長可
+ここがこいつらの根城か、邪魔するぜ！　死ね！
+[k]
+
+[messageOff]
+[se ad85]
+[effect bit_talk_v_slash01]
+[wt 0.2]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.3]
+
+[se ad1028]
+[effect bit_talk_14]
+[shake 0.05 2 2 0.8]
+[wt 0.1]
+[charaMove D 500,0 0.4]
+[charaFadeout D 0.4]
+
+＠キンノブ
+キンノーッブ！？
+[k]
+
+[messageOff]
+
+[se ad914]
+[seVolume ad914 0 0.5]
+[se ad728]
+[seVolume ad728 0 0.5]
+[shake 0.05 2 2 0.8]
+[wt 1.5]
+[bgmStop BGM_EVENT_80 1.0]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+見たところ特に怪しいところは……。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad1000]
+[wt 1.4]
+[seStop ad1000 0.5]
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.4 1]
+[bgm BGM_BATTLE_8 0.4]
+[wt 1.0]
+
+＠人斬り新兵衛
+誰かと思えば貴様らか……。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠茶々
+あっ！　さっき勉強してきたから知ってるし、
+[k]
+
+[charaFace B 2]
+＠茶々
+こいつ確か……人斬り以蔵！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+いやいや、茶々様、こやつは例の新兵衛の方では？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠森長可
+おい、てめぇ、こないだの借りを返させてもらうぜ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 5]
+[charaFadein L 0.1 1]
+
+＠人斬り新兵衛
+返せるものならな……。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+[#此度:こたび]は後れは取らないでありますよ。[r]多勢に無勢ですが容赦はしないであります！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 1]
+[charaFadein L 0.1 1]
+
+＠人斬り新兵衛
+多勢？　それはこちらのセリフだ、[r]我ら勤王志士は不滅。
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ade569]
+[wt 0.8]
+
+[se ad733]
+[charaEffect L bit_talk_36]
+[wt 1.8]
+[seStop ad733 1.5]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut L 2000,2000]
+[charaEffectStop L bit_talk_36]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠茶々
+何あの箱？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+あの箱……この魔力の感じ……[r]どこかで……！？
+[k]
+
+[charaFace A 16]
+[charaShake A 0.05 2 2 0.3]
+
+＠蘭丸Ｘ
+あぅっ！？　あ、頭に何か……！？
+[k]
+
+[messageOff]
+[se ad592]
+[seVolume ad592 0 0.4]
+[bgm BGM_BATTLE_8 1.0 0.5]
+[fadeout white 0.7]
+[wait fade]
+
+[cameraMove 0.1 0,-25 1.75]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 115400]
+[charaPut I 1]
+[charaPut H 1]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 2.0]
+
+[fadeout white 0.7]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.0]
+
+[charaPut H 3000,3000]
+[charaPut I 3000,3000]
+[charaEffectStop I bit_talk_sparks_fs]
+[charaEffectStop H bit_sepia01_depth_fs]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+[wt 0.1]
+
+[charaScale I 3.0]
+
+[scene 138900]
+
+[fadein white 1.0]
+[wait fade]
+
+
+＠蘭丸Ｘ
+こ、この感じは……！？
+[k]
+
+[charaFace A 19]
+
+＠蘭丸Ｘ
+頭が、わ、割れそうであります！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠茶々
+ら、蘭丸ちゃん、大丈夫！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 2]
+[charaFadein L 0.1 1]
+
+＠人斬り新兵衛
+さあ、立ち上がれ勤王の志士達よ！
+[k]
+
+[messageOff]
+[se ad970]
+[se ad489]
+[charaPut I 1]
+[effect bit_talk_charge_ppl02]
+[charaEffect I bit_talk_29_blue]
+[charaEffect I bit_talk_29]
+[wt 0.5]
+[fadeout white 0.4]
+[wait fade]
+
+[charaFadeout L 0.1]
+[wt 0.5]
+
+[charaTalk off]
+
+[charaFadeinFSL D 0.1 -300,0]
+[charaFadein E 0.1 0,0]
+[charaFadeinFSR F 0.1 300,0]
+[wt 0.1]
+
+[fadein white 1.5]
+[effectDestroy bit_talk_charge_ppl02]
+[wait fade]
+
+[bgm BGM_BATTLE_8 1.0 1.0]
+
+＠キンノブ
+キキキキ、キンノーッブ！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠森長可
+なんだありゃ！？　あの箱から大殿のアレが[r]湧きだしてきやがるぞ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 1]
+[charaFadein L 0.1 1]
+
+＠人斬り新兵衛
+[#これ]があるかぎり我ら勤王の志士は不滅。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+あ、あれは……[r]あれは蘭丸が……！
+[k]
+
+[charaFace A 19]
+[charaShake A 0.05 2 2 0.3]
+
+＠蘭丸Ｘ
+うぁっ！？
+[k]
+
+[messageOff]
+[charaMove A 0,-20 0.4]
+[charaFadeout A 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠茶々
+大変、蘭丸ちゃんが倒れちゃったし！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFadeinFSL D 0.1 -300,0]
+[charaFadein E 0.1 0,0]
+[charaFadeinFSR F 0.1 300,0]
+
+＠キンノブ
+キンキンキンノーッブ！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠森長可
+くそっ！　こいつらウザすぎだろ！[r]数多すぎて身動きとれねぇぞ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠人斬り新兵衛
+ふん、貴様らはそこで大人しくしていろ。
+[k]
+
+＠人斬り新兵衛
+さて魔術師、話は聞いている。[r][#此度:こたび]はその首頂くぞ……！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠茶々
+ま、マスターが危ないし！
+[k]
+
+＠茶々
+蘭丸ちゃんも倒れちゃったし、[r]長可君、何とかして、何とか！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠森長可
+んなこたぁ分かってんだよ！　どけやてめぇら！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[se ad1024]
+[seVolume ad1024 0 0.5]
+
+[charaTalk off]
+[charaFadein D 0.1 -250,0]
+[charaFadein E 0.1 0,0]
+[charaFadein F 0.1 250,0]
+
+[charaFadein G 0.1 -480,0]
+[charaMove G -450,0 0.4]
+[wt 0.2]
+[charaFadein J 0.1 480,0]
+[charaMove J 450,0 0.4]
+[wt 0.6]
+
+＠キンノブ
+キンノブ、キンノブ！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+
+[charaTalk L]
+[charaFace L 4]
+[charaFadein L 0.1 1]
+
+＠人斬り新兵衛
+観念しろ、死んだ事も気づかんよう[r]両断してくれるわ。
+[k]
+
+[charaFace L 2]
+＠人斬り新兵衛
+キェアアアアアアアア！！
+[k]
+
+[messageOff]
+[se ad978]
+[charaEffect L bit_talk_kien01]
+[wt 3.5]
+
+＠人斬り新兵衛
+チェストオオオオオオッ！！！！
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ade574]
+[bgmStop BGM_BATTLE_8 0.5]
+
+[charaScale I 1.0]
+[charaFadeTime K 0.1 0.5]
+[scene 10000 0.1]
+[wt 0.1]
+
+[charaFace L 3]
+[wt 0.6]
+
+＠人斬り新兵衛
+むぅっ！？
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut L 2000,2000]
+[charaEffectStop L bit_talk_kien01]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠茶々
+なんにも見えないんですけど！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠森長可
+おい、何が起きた！？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+[charaFadein K 0.1 1]
+[wt 0.1]
+[charaPut O 1]
+
+[charaTalk M]
+[charaFace M 2]
+[charaFadein M 0.1 1]
+
+[cueSe SE_21 21_ade639]
+[wt 1.0]
+[cueSe SE_21 21_ade640]
+[wt 0.6]
+[cueSe SE_21 21_ade640]
+[wt 0.6]
+[cueSe SE_21 21_ade640]
+[wt 1.0]
+
+[charaScale I 1.5]
+[wt 0.1]
+
+
+
+[cueSe SE_21 21_ade640]
+[charaFadeout K 0.1]
+[wt 0.8]
+
+＠出雲阿国
+そこまでです、人斬り新兵衛！
+[k]
+
+[bgm BGM_BATTLE_100 0.1]
+
+＠出雲阿国
+この出雲阿国の目の黒いうちは、[r]大事なパトロン様……、[wt 0.7][charaFace M 12]じゃなかった、
+[k]
+
+[charaFace M 2]
+＠出雲阿国
+大事なお客様には指一本触れさせません。
+[k]
+
+？1：阿国さん！
+
+？2：よっ！　千両役者！
+
+？！
+
+[messageOff]
+[charaEffectStop O bit_talk_spotlight02]
+[scene 138900 1.0]
+[wt 1.0]
+
+[charaFace M 6]
+
+＠出雲阿国
+エクセレント！
+[k]
+
+[charaFace M 0]
+＠出雲阿国
+ナイスな反応に阿国さんも大満足です！
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+[charaPut O 2000,2000]
+
+[charaTalk L]
+[charaFace L 5]
+[charaFadein L 0.1 1]
+
+＠人斬り新兵衛
+貴様か……、我らの邪魔ばかりしおって……。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 9]
+[charaFadein M 0.1 1]
+
+＠出雲阿国
+はい、それこっちのセリフ。
+[k]
+
+＠出雲阿国
+貴方方とやり合うのはこの私も[r]ほとほとウンザリーニでございます。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[cueSe SE_21 21_ade569]
+
+[charaTalk L]
+[charaFace L 5]
+[charaFadein L 0.1 1]
+
+＠人斬り新兵衛
+黙れ、どちらにせよ貴様もここで始末してくれる。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠茶々
+あーっ！　またあの箱使う気だし！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 2]
+[charaFadein L 0.1 1]
+
+＠人斬り新兵衛
+さあ、よみがえれ、勤王志士達よ！
+[k]
+
+[messageOff]
+[wt 1.8]
+
+[charaFace L 3]
+＠人斬り新兵衛
+なに？　……どういうことだ、これは？
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 17]
+[charaFadein M 0.1 1]
+
+＠出雲阿国
+ふっふっふ、私が意味もなく[r]派手な登場をしたとでもお思いですか？
+[k]
+
+＠出雲阿国
+足元をよくご覧なさいませ。
+[k]
+
+[messageOff]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[se ad474]
+[seVolume ad474 0 0.4]
+[effect bit_talk_noble_light_r 0,-200]
+[wt 1.0]
+[seStop ad474 2.0]
+
+[charaTalk L]
+[charaFace L 3]
+[charaFadein L 0.1 1]
+
+＠人斬り新兵衛
+これは……、結界か！？
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 10]
+[charaFadein M 0.1 1]
+
+＠出雲阿国
+ご明察、ここに開きましたるは我が舞台、[r]すなわち悪鬼を払う封魔の陣。
+[k]
+
+＠出雲阿国
+この結界の中ではその怪しい呪具は[r]使わせませんよ。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 5]
+[charaFadein L 0.1 1]
+
+＠人斬り新兵衛
+くだらん真似を……！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 5]
+[charaFadein M 0.1 1]
+
+＠出雲阿国
+さあ、あとは残りのナマモノと新兵衛を[r]片付ければ一件落着。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠森長可
+うははははは！　なんだかよくわからねぇが[r]これ以上増えねぇってんなら楽なもんだ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 2]
+[charaFadein M 0.1 1]
+
+＠出雲阿国
+ウェイクアップ！　斬ザブロー！！
+[k]
+
+[messageOff]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+
+[se bac170]
+[wt 0.8]
+[se ad678]
+[wt 1.0]
+
+[se ad322]
+[charaPut H 1]
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.4 0,0]
+[charaMove N 0,-20 0.2]
+[charaEffect H bit_talk_impactlanding 0,-150]
+[shake 0.05 0 2 1.0]
+[wt 2.5]
+[se ad1004]
+[charaMove N 0,0 1.0]
+[wt 1.0]
+[charaFace N 2]
+
+＠斬ザブロー
+フ[messageShake 0.05 2 2 0.4]ィイイイイイイ！！
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+[messageShakeStop]
+
+[charaTalk M]
+[charaFace M 10]
+[charaFadein M 0.1 1]
+
+＠出雲阿国
+それではお待たせいたしました、皆々様。[r]今宵の演目もごゆるりとお楽しみくださいませ！
+[k]
+
+[charaFace M 21]
+＠出雲阿国
+阿国・ＴＨＥ・ショーターイム！！！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_100 0.4]
+[wait fade]
+[soundStopAll]
+[end]

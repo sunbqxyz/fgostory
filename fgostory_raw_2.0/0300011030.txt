@@ -1,0 +1,443 @@
+
+
+＄03-00-01-10-3-0
+[soundStopAll]
+
+[charaSet A 2010001 1 比利]
+[charaSet B 7030001 1 阿塔兰忒·Alter]
+[charaSet C 99502600 1 玛修]
+[charaSet D 98115300 1 福尔摩斯]
+[charaSet E 7008001 1 贝奥武夫]
+[charaSet F 1098128400 1 雅嘎A]
+[charaSet G 1098128500 1 雅嘎B]
+[charaSet H 5009000 1 特效用dummy]
+
+[scene 10000]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[fadein black 0.1]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fowardEffect bit_talk_shot_02]
+[wt 0.1]
+[se bac11]
+[wt 0.2]
+[se bac11]
+[wt 0.1]
+[se bac11]
+[wt 0.1]
+[se ad32]
+[fowardEffect bit_talk_h_slash02]
+[wt 0.7]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 54802]
+[effect bit_talk_snowstorm_01]
+
+[fadein black 1.0]
+[wait fade]
+
+[cueSe Servants_9939670 bac512]
+[cueSeVolume bac512 0 0.4]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_80 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_76 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠比利
+哎哟，暂时休息会儿。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+真是的，你看上去还精神十足呢。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+？1：比利！
+？2：不知道迦勒底情况的比利……？
+？！
+
+＠比利
+唔？　迦勒底？　那是什么？[r]抱歉，我完全没听说过。
+[k]
+
+＠比利
+听这口气，你们倒像是知道我的事呢。
+[k]
+
+[charaFace A 4]
+
+＠比利
+但很不凑巧，我们自从被召唤以来，[r]事情一直混乱不堪。
+[k]
+
+[charaFace A 5]
+
+＠比利
+我们根本没有头绪，[r]不知道该做什么才好！
+[k]
+
+[effectStop bit_talk_snowstorm_01]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠玛修
+……御主。[r]灵基肖像并不一致。
+[k]
+
+＠玛修
+这位似乎不是在北美大陆[r]与我们结下缘分的那位比利先生……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠福尔摩斯
+他是被这片土地召唤出来的从者吧。[r]明明并没有圣杯，居然还具备如此魔力[line 3]
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.5 1.0]
+[bgmStop BGM_EVENT_76 0.5]
+[wait wipe]
+
+[charaPut H 1200,1200]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[wipein leftToRight 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+[wt 0.1]
+
+[charaSet D 9005001 1 福尔摩斯]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 0,-50]
+[scene 51600]
+[wt 0.1]
+[wipeFilter cinema 0.5 0]
+
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_79 0.1]
+
+＠福尔摩斯
+（不，等一下。觉得没有圣杯的[r]　这种想法本身就是荒谬的。）
+[k]
+
+[charaFace D 5]
+
+＠福尔摩斯
+（既然已经实际现界了没有御主的从者，[r]　那必然[#存在]相当于圣杯的事物。）
+[k]
+
+＠福尔摩斯
+（圣杯若没有落入人类手中，就会响应『世界的[r]　存在方式』，成为中立的魔力资源。既然如此，）
+[k]
+
+＠福尔摩斯
+（会响应人类史最后的悲鸣，[r]　召唤从者用于反击也没什么不可思议的……）
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_79 0.5]
+[wait fade]
+
+[wipeOff]
+[charaFadeout D 0.1]
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout leftToRight 0.1 1.0]
+[wait wipe]
+
+[scene 54802]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[wipein leftToRight 0.5 1.0]
+[wt 0.3]
+[bgm BGM_EVENT_76 0.1]
+[wait wipe]
+
+[wt 0.5]
+
+？1：我只是曾经承蒙并非你的，
+？2：另一位比利小子的关照。
+？！
+
+＠比利
+……唔，是这样啊。[r]不过，现在的我就是我。
+[k]
+
+[charaFace A 2]
+
+＠比利
+好了……喂～，Berserker！[r]那个女猎人来了哦～！
+[k]
+
+＠比利
+而且还带着一群[r][#旧种:人类]模样的家伙和从者！
+[k]
+
+＠E：？？？
+啊啊，是那家伙吗。[r]好吧，这里就交给我和比利来处理吧！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠贝奥武夫
+……哟。[r]我觉得我们和你们应该是互不往来的吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠玛修
+贝奥武夫先生……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[bgmStop BGM_EVENT_76 0.5]
+
+＠贝奥武夫
+唔？　是谁？[r]……人类？　不对，是从者吗。
+[k]
+
+＠贝奥武夫
+而你是[line 3][r]魔术师……是御主啊。
+[k]
+
+[charaFace E 5]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠贝奥武夫
+……你这家伙是伊凡雷帝的宫廷魔术师吗？
+[k]
+
+[messageOff]
+[charaSet A 1098128600 1 雅嘎C]
+[charaSet D 1098128400 1 雅嘎D]
+
+[wt 1.0]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth D 1]
+[charaDepth E 2]
+[charaDepth F 1]
+[charaDepth G 1]
+
+[se ad601]
+
+[charaFace G 3]
+[charaFadein G 0.4 -164,0]
+[wt 0.3]
+[charaFace A 3]
+[charaFadein A 0.4 164,0]
+[wt 0.3]
+[charaFace F 3]
+[charaFadein F 0.4 -384,0]
+[wt 0.3]
+[charaFace D 3]
+[charaFadein D 0.4 384,0]
+[seStop ad601 1.0]
+[wt 2.0]
+
+？1：不是。
+？2：我是迦勒底的御主。
+
+？！
+
+[charaFace E 0]
+
+＠贝奥武夫
+迦勒底……观星的迦勒底……？[r]总觉得似曾相识……又好像没有……
+[k]
+
+[charaFace E 5]
+
+＠贝奥武夫
+啊，该死的。自被召唤以来，记忆就一片混乱。[r]就连自己的事都记得模糊不清。
+[k]
+
+？1：我们曾在美利坚见过！
+
+？！
+
+[charaFace E 4]
+
+＠贝奥武夫
+美利坚……不。抱歉。我想不起来。[r]既然我想不起来，就不能信任你。
+[k]
+
+[charaFace E 0]
+
+＠贝奥武夫
+但既然你们已经来这里了，[r]想必已经做好觉悟了吧。
+[k]
+
+＠贝奥武夫
+先来战斗一场吧。[r]在这俄罗斯，弱肉强食才是人理。
+[k]
+
+[bgmStop BGM_EVENT_81 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_80 0.1]
+
+[charaFace E 1]
+
+＠贝奥武夫
+向我证明，你们是否是最强的。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+……原来如此，是这样啊。[r]我明白了。那就开始战斗吧。
+[k]
+
+？1：阿塔兰忒？
+？！
+
+[charaFace B 1]
+
+＠阿塔兰忒·Alter
+（就按我说的来吧，御主、玛修。[r]　那家伙不是个单纯的战斗狂。）
+[k]
+
+＠阿塔兰忒·Alter
+（他肯定是有自己的想法。）
+[k]
+
+[charaSet A 2010001 1 比利]
+
+？1：……明白了！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠贝奥武夫
+好，既然你们那边有两个……[r]喂，比利！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠比利
+综上所述，抱歉啦，这次我可不会手下留情了。[r]你们是否值得信任[line 3]
+[k]
+
+[charaFace A 2]
+[se bac56]
+
+＠比利
+就由我的子弹来决定吧！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+来了，[%1]！[r]做好准备了吗！
+[k]
+
+
+[messageOff]
+[seStop ad555 0.4]
+[bgmStop BGM_EVENT_80 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

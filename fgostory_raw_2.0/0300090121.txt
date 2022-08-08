@@ -1,0 +1,520 @@
+
+＄03-00-09-01-2-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098209700 1 高文的士兵]
+[charaSet B 1050000 1 妖精骑士高文]
+[charaSet C 1049000 1 千子村正]
+[charaSet D 3039000 1 加雷斯]
+[charaSet E 1098216200 1 哈贝特洛特]
+[charaSet F 1098231110 1 妖精骑士兰斯洛特]
+[charaSet G 1098210410 1 摩耳斯]
+[charaScale G 1.4]
+[charaSet H 1098209300 1 土之氏族]
+
+[sceneSet I 10000 1]
+[charaScale I 1.01]
+
+[sceneSet J 10000 1]
+[charaScale J 1.01]
+[sceneSet K 10000 1]
+[charaScale K 1.01]
+
+[charaSet L 1098210410 1 摩耳斯2]
+[charaScale L 1.4]
+
+[charaSet M 1098209300 1 土之氏族_剪影]
+[charaFilter M silhouette 00000080]
+
+[charaSet O 1098210410 1 摩耳斯3]
+[charaScale O 1.4]
+
+[charaSet P 1098210410 1 摩耳斯4]
+[charaScale P 1.4]
+
+[charaSet N 98115000 1 特效用]
+[charaSet T 98115000 1 特效用2]
+
+[pictureFrame cut063_cinema]
+
+[scene 117500]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk off]
+
+[charaPut N -50]
+[charaEffect N bit_talk_morse]
+[charaPut T 2000,2000]
+[charaEffect T bit_talk_morse]
+
+[cueSe SE_21 21_ad1083]
+[charaFace G 0]
+[charaPut G -250,-50]
+[charaSpecialEffect G appearance 1 1.0]
+[wt 0.5]
+[wt 1.0]
+
+[charaPut T 250,-50]
+[charaFace L 0]
+[charaPut L 150,-50]
+[charaSpecialEffect L appearance 1 1.0]
+[wt 2.0]
+
+[charaFadeout G 0.2]
+[charaFadeout L 0.2]
+[charaPut N 2000,2000]
+[charaPut T 2000,2000]
+[wt 1.0]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth H 3]
+[charaDepth G 4]
+[charaDepth L 5]
+[charaDepth O 2]
+[charaDepth P 1]
+
+[charaFace H 2]
+[charaFadein H 0.1 0,-50]
+[wt 1.0]
+[charaFace G 0]
+[charaFace L 0]
+[charaPut N -300,-50]
+[charaFadein G 0.4 -350,-50]
+[charaMove G -300,-50 0.4]
+[cueSe SE_21 21_ad1083]
+[wt 0.5]
+[seStop 21_ad1083 0.5]
+[wt 0.5]
+[se ad32]
+[effect bit_talk_13 -100,0]
+[charaMoveReturn H -10,-50 0.2]
+[wt 0.5]
+[charaFace H 5]
+[se ad32]
+[effect bit_talk_13 -100,0]
+[charaMoveReturn H -10,-50 0.2]
+[wt 1.0]
+
+[charaPut T 350,-50]
+[charaFadein L 0.4 350,-50]
+[charaMove L 300,-50 0.4]
+[wt 0.5]
+[se ad1041]
+[charaMove G -200,-50 0.5]
+[charaMove L 200,-50 0.5]
+[wt 0.5]
+
+[messageOff]
+[fadeout black 0.4]
+[wait fade]
+[charaFadeout H 0.1]
+[wt 1.5]
+[wt 1.0]
+[wt 0.5]
+
+[fadein black 0.7]
+[wait fade]
+[wt 1.0]
+
+[charaEffectStop N bit_talk_morse]
+[charaEffectStop T bit_talk_morse]
+[cueSe SE_21 21_ad1083]
+[charaPutFSSideL O -380,-50]
+[charaPutFSSideR P 380,-50]
+[charaSpecialEffect O appearance 1 1.0]
+[wt 0.5]
+[charaSpecialEffect P appearance 1 1.0]
+[wt 2.5]
+
+
+[charaFadeout P 0.1]
+[charaFadeout O 0.1]
+[charaFadeout G 0.1]
+[charaFadeout L 0.1]
+[wt 1.0]
+[charaPut N 2000,2000]
+[charaPut T 2000,2000]
+
+[charaTalk depthOff]
+[charaTalk off]
+
+
+
+[bgm BGM_EVENT_80 0.5 0.5]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+
+[charaTalk on]
+[pictureFrame]
+[wt 0.5]
+[charaTalk depthOn]
+
+[wipein rectangleStripLeftToRight 0.5 1]
+[bgm BGM_EVENT_80 0.5 1.0]
+[wait wipe]
+
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠高文的士兵
+大型摩耳斯超过十只……不，还在增加！[r]战力差距悬殊，我们应付不来！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠妖精骑士高文
+没有铁制装备的都退下来，[r]不用打倒，将它们引诱到同一个地方！
+[k]
+
+＠妖精骑士高文
+等全都聚起来后，由我烧死它们！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠高文的士兵
+可是这些摩耳斯不为我们的引诱所动！[r]感觉它们怀着与以往不同的目的[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOff]
+[charaDepth B 3]
+[charaDepth I 2]
+[charaDepth G 1]
+[charaPut I 0,-200]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠妖精骑士高文
+不同的目的……！？[wt 1.0][charaFadeTime I 0.2 0.5][r]（难道……是盯着『预言之子』来的……？）
+[k]
+
+[messageOff]
+[charaFadeout I 0.2]
+[wt 0.2]
+
+[cueSe SE_21 21_ad1083]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 320,0]
+[charaMove G 290,0 0.4]
+[wt 0.6]
+[seStop ad1083 0.5]
+[wt 1.0]
+[charaFadeout B 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.4]
+[se ad1006]
+[seVolume ad1006 0 0.6]
+[charaEffect C bit_talk_quickmove]
+[charaSpecialEffect C erasureReverse 1 0.3]
+[wt 0.3]
+[cueSe Servants_102800 bac657]
+[seVolume bac657 0 0.7]
+[effect bit_talk_v_slash01 0,0 H]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[cueSe Servants_102800 bac658]
+[charaShake G 0.05 3 3 0.8]
+[wt 1.0]
+[se ad42]
+[charaSpecialEffect G erasure 1 1.0]
+[effect bit_talk_atomization]
+[wt 3.0]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+
+＠妖精骑士高文
+[line 3]你这家伙。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad223]
+[charaEffect C bit_talk_quickmove]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaSpecialEffect C appearanceReverse 1 0.3]
+[wt 0.4]
+
+＠千子村正
+不必道谢啦，毕竟是干戈之际嘛。
+[k]
+
+＠千子村正
+重要的是这场面该怎么办。[r]身为主帅，自当明白何时鸣金收兵吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠妖精骑士高文
+……[wt 0.5][charaFadeTime I 0.2 0.5][r]（……虽然气得牙痒痒，不过这男人说得很有道理……）
+[k]
+
+＠妖精骑士高文
+（是抛弃货车让部队后撤，[r]　还是让护卫对象先行一步……）
+[k]
+
+＠妖精骑士高文
+（……不，我是妖精骑士。[r]　面对摩耳斯决不许撤退。）
+[k]
+
+＠妖精骑士高文
+（然而，无法集中到一起的摩耳斯的行动……[r]　明显是在警戒卡文汀[line 3]）
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[bgm BGM_EVENT_80 0.5 0.5]
+[wait wipe]
+
+[charaFadeout I 0.1]
+[charaFadeout B 0.1]
+
+[charaTalk depthOff]
+
+[charaDepth D 3]
+[charaDepth E 4]
+[charaDepth J 2]
+[charaDepth K 1]
+
+[charaFadein J 0.1 -1100,0]
+[charaFadein K 0.1 1100,0]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1]
+[bgm BGM_EVENT_80 0.5 1.0]
+[wait wipe]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠加雷斯
+队伍最后的货车被破坏了！[r]怎怎怎，怎么办啊，哈贝喵！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+
+＠哈贝特洛特
+呜哇……妖精骑士分明在场，[r]咱们还是不得不战斗吗……
+[k]
+
+＠哈贝特洛特
+那家伙也太烂了吧……
+[k]
+
+＠哈贝特洛特
+怎么能让不懂得拿捏分寸的家伙[r]掌握难以调控的大火力啦。
+[k]
+
+[charaFace E 8]
+
+＠哈贝特洛特
+不过再怎样抱怨也无济于事。
+[k]
+
+＠哈贝特洛特
+战斗虽然麻烦了点，[r]但接下来全程步行也受不了！
+[k]
+
+＠哈贝特洛特
+加雷斯，单点击破小型摩耳斯！[r]大型的交给妖精骑士就行了！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 22]
+[charaFadein D 0.1 1]
+[wt 1.0]
+[charaFace D 12]
+＠加雷斯
+明白了！　加雷斯会加油的！[r]我也逐渐习惯消灭摩耳斯[line 3][cueSe SE_21 21_ad1097][seVolume 21_ad1097 0 0][seVolume 21_ad1097 1.0 0.2]
+[k]
+
+[charaFace D 9]
+
+＠加雷斯
+……哈贝喵、哈贝喵。
+[k]
+
+＠加雷斯
+是不是有一道蓝色的光芒[r]从卡美洛向我们这边飞来了？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk depthOff]
+[charaDepth E 2]
+[charaDepth I 1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠哈贝特洛特
+！[wt 0.5][charaFadeTime I 0.2 0.5][r]（那道光是在谢菲尔德也见过的[line 3]）
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_80 0.5 0.5]
+[wipeout rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+
+[cameraMove 0.1 0,0 1.01]
+[charaFadeout E 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1]
+[bgm BGM_EVENT_80 0.5 1.0]
+[wait wipe]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠妖精骑士高文
+放弃歼灭，快撤退！[r]只留下马车与第一货车，其他的都扔下别管了！
+[k]
+
+＠妖精骑士高文
+集合，赶快！[r]雷光兵保护护卫对象，禁卫兵回收行李！
+[k]
+
+＠妖精骑士高文
+在完成前由我牵制摩耳斯[line 3][wt 1.0][charaFace B 5][r]！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.0]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[se ad695]
+[seVolume ad695 0 0.3]
+[cueSe SE_21 21_ade546]
+[se ade8]
+[seVolume ade8 0 0.3]
+[wt 1.5]
+
+[effect bit_talk_mgn_light]
+[se ad696]
+[seVolume ad696 0 0.6]
+[se ade393]
+[seVolume ade393 0 0.3]
+[wt 0.3]
+[se ad914]
+[effect bit_talk_impactlanding]
+[se ad322]
+[shake 0.05 3 3 3.0]
+[wt 1.5]
+[seStop ade393 3.0]
+[wt 2.5]
+
+
+[se ade321]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.6 1]
+[wt 2.0]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠妖精骑士高文
+[line 3]你是什么意思，兰斯洛特！[r]我可不记得有喊你过来！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠妖精骑士兰斯洛特
+同意。在下也不觉得有必要前来助阵。[r]不过，这是女王陛下的命令。
+[k]
+
+＠妖精骑士兰斯洛特
+[line 3]敌方下等生命，确认。[r]开始扫荡。
+[k]
+
+[charaFace F 1]
+
+＠妖精骑士兰斯洛特
+退下吧，高文。[r]各个击破是在下的领域。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_48 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

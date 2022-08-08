@@ -1,0 +1,490 @@
+
+
+
+＄94-06-43-03-2-0
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5050000 1 サンタマルタ]
+[charaSet B 1098198000 1 スカサハ＝スカディ]
+[charaSet C 2001002 1 エミヤ]
+[charaSet D 4011001 1 ブーディカ]
+[charaSet E 7016001 1 タマモキャット]
+[charaSet F 3047001 1 パーシヴァル]
+[charaSet G 1098224600 1 タラスク]
+[charaSet H 99502600 1 マシュ]
+
+[sceneSet I 141000 1]
+[charaSet J 1098183600 1 エネミー]
+[charaSet K 98115000 1 エフェクト用ダミー]
+[charaSet L 98115000 1 エフェクト用ダミー]
+
+
+[charaScale I 1.3]
+
+[scene 140600]
+
+
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1]
+
+[cueSe Servants_102800 bac657 0 0.7]
+[effect bit_talk_kengekiall03_fs]
+[wt 0.2]
+[se bac6]
+[seVolume bac6 0 0.7]
+[wt 0.2]
+[cueSe Servants_102800 bac658]
+[wt 0.8]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[charaShake J 0.03 4 4 0.5]
+[se ad22]
+[wt 1.0]
+[seStop ad22 0.3]
+
+[charaSpecialEffect J enemyErasure 1 1.8]
+[se ad52]
+[wait charaSpecialEffect J]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+＠エミヤ
+……こんなところか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠サンタマルタ
+みんな、バトルお疲れさま。[r]お料理できてるから、食べていってね！
+[k]
+
+＠サンタマルタ
+お姉さん、腕によりをかけました！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+わ。ほんとにお料理できてる！[r]すごい！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠タマモキャット
+もぐもぐもぐもぐ（もぐもぐもぐもぐ）[r]ほう……なかなかの味……たとえるなら、そう……
+[k]
+
+
+＠タマモキャット
+少年漫画雑誌には必ずひとつあるジャンル……[r]……なぜか頻繁に対決するアレ……
+[k]
+
+[charaFace E 1]
+
+＠タマモキャット
+うむ！　あのエキサイティングな味がする！[r]修羅場血盟料理という新ジャンルを命名しよう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+これはなかなか（もぐもぐ）[r]オーブン搭載とはやりますね、タラスク。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+
+＠タラスク
+（えへへへへ）
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+よしよし。[r]ありがとね、タラスク。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.6]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ade410]
+[distortionstart 0.0 0.5 0.5 0.0 0.0 100.0]
+[distortionstart 0.7 0.5 0.5 0.3 0.3 20.0]
+[wt 0.7]
+
+[distortionstop 1.5]
+
+[charaPut L 0,0]
+[charaEffect L bit_talk_warp]
+[se ad434]
+[seVolume ad434 0 0.5]
+[wt 3.5]
+[seStop ad434 0.3]
+
+[charaPut L 2000,2000]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_1 0.1 0.9]
+
+＠ブーディカ
+お？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+
+＠エミヤ
+前方の空間が[#歪:ゆが]んでいるな。これは……
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad13]
+[charaPut K 0,0]
+[charaEffect K bit_talk_10_LowLevel]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠スカサハ＝スカディ
+我がルーンの影響だな。[r]より最適な場所におまえたちを導いてくれるぞ。
+[k]
+
+[charaFadeout B 0.1]
+[charaPut K 2500,2500]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+それはいいねえ。[r]って、あんたがここを改造したんでしょーが。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠スカサハ＝スカディ
+そうだぞ？[r]何か問題があるか？
+[k]
+
+[charaFadeout B 0.1]
+[charaPut K 2500,2500]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+
+＠エミヤ
+まったく悪びれていない……[r]ランサーのスカサハを思わせるな……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠マシュ
+先輩、聞こえますか先輩。
+[k]
+
+？1：マシュ！
+？2：管制室にいたんだね
+？！
+
+[charaFace H 1]
+
+＠マシュ
+はい。マシュ・キリエライト、[r]こちらから先輩たちのサポートを行います！
+[k]
+
+[charaFace H 0]
+
+＠マシュ
+と言っても、スカサハ＝スカディさん曰く、[r]通信が繋がるのはこのあたりまでで……
+[k]
+
+＠マシュ
+ここから先の領域は、[r]固有結界に似て非なる領域と化しているそうで、
+[k]
+
+[charaFace H 12]
+
+＠マシュ
+管制室からのサポートは行えないようです。[r]すみません……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠スカサハ＝スカディ
+なので、現地にはナビを配置しておいた。[r]まずはナビに会うのだぞ。
+[k]
+
+[charaFadeout B 0.1]
+[charaPut K 2500,2500]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+ナビ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠スカサハ＝スカディ
+会えばわかる。[r]では、元気に行ってくるがいい！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_1 0.5]
+[charaFadeout B 0.1]
+[charaPut K 2500,2500]
+[wt 0.1]
+
+[charaPut L 0,0]
+[wt 0.8]
+[cameraMove 0.8 0,0 1.4]
+[wt 0.4]
+
+[fadeout white 1.0]
+[se ade45]
+[wait fade]
+
+[cameraHome 0.1]
+
+[charaPut L 2000,2000]
+[charaEffectStop L bit_talk_warp]
+
+[charaSet J 98006000 1 エネミー]
+[charaSet M 98006000 1 エネミー]
+[charaSet N 98006000 1 エネミー]
+[charaSet O 98006000 1 エネミー_シルエット]
+[charaSet P 98006000 1 エネミー_シルエット]
+[charaSet Q 98006000 1 エネミー_シルエット]
+[charaFilter O silhouette 00000080]
+[charaFilter P silhouette 00000080]
+[charaFilter Q silhouette 00000080]
+
+[charaDepth O 6]
+[charaDepth P 7]
+[charaDepth Q 5]
+[charaDepth M 3]
+[charaDepth J 4]
+[charaDepth N 2]
+
+[wt 1.0]
+[seStop ade45 0.3]
+
+
+[scene 141000]
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[bgm BGM_MAP_41 0.1]
+
+[charaFadein I 0.7 100,-300]
+[charaMove I -100,-300 4.5]
+[wt 3.0]
+[charaFadeout I 1.5]
+[wt 1.5]
+
+？1：ここは……？
+？2：見覚えがあるような……？
+？！
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+なんだか綺麗なところだね！
+[k]
+
+[charaFace A 0]
+
+＠サンタマルタ
+でも、相変わらずちょっと寒いわね？[r]ちょっとで済んでるのが変な感じ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+それがサーヴァントというものだ。[r]さて[line 3]
+[k]
+
+[charaFace C 5]
+
+＠エミヤ
+我々は招かれざる客のようだ。[r]前方に魔力反応！
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_41 0.5]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaFace O 0]
+[charaFadein O 0.4 1]
+[charaFace P 0]
+[charaFadeinFSR P 0.4 306,0]
+[charaFace Q 0]
+[charaFadeinFSL Q 0.4 -306,0]
+[wt 0.4]
+[se ade215]
+[wt 1.0]
+
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[charaFace M 0]
+[charaFadeinFSR M 0.1 306,0]
+[charaFace N 0]
+[charaFadeinFSL N 0.1 -306,0]
+
+[charaFadeout O 0.4]
+[charaFadeout P 0.4]
+[charaFadeout Q 0.4]
+[wt 1.4]
+[seStop ade215 0.3]
+[charaFadeout J 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_80 0.1]
+
+＠サンタマルタ
+さっきの氷の獣？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+や。今度は二足歩行みたいだね。[r][line 3]来るよ！
+[k]
+
+？1：総員、戦闘準備！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+承った！[r]先陣を切るぞ！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

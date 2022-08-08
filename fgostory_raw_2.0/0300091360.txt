@@ -1,0 +1,1114 @@
+
+＄03-00-09-13-6-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098124500 1 达·芬奇]
+[charaSet B 98104300 1 米拉]
+[charaSet C 5045001 1 阿尔托莉雅]
+[charaSet D 1049000 1 千子村正]
+[charaSet E 1098216200 1 哈贝特洛特]
+[charaSet F 3048000 1 妖精骑士兰斯洛特]
+[charaSet G 1098230600 1 高扬斯卡娅]
+
+[sceneSet H 125001 1]
+[charaScale H 1.6]
+
+[sceneSet I 125001 1]
+[charaScale I 1.4]
+
+[imageSet M back10000 1 1]
+[charaScale M 1.05]
+
+[charaSet S 98115000 1 特效用]
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 124000]
+
+[effect bit_talk_mud_down]
+[se ade59]
+[seVolume ade59 0 0]
+[cueSe SE_21 21_ad1082]
+[seVolume 21_ad1082 0 0]
+[wt 0.1]
+
+[cueSe SE_21 21_ad1083]
+[seVolume 21_ad1082 0 0.4]
+[seVolume 21_ad1082 1.0 0.5]
+[seVolume ade59 1.5 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[se ad826]
+[seVolume ad826 0 0]
+[wt 0.1]
+[seVolume ad826 0.2 1.0]
+
+[effectStop bit_talk_mud_down]
+[wt 0.5]
+[seStop ade59 1.0]
+[seStop 21_ad1082 1.0]
+[wt 0.5]
+
+[se adm11]
+[seStop ad826 1.0]
+[wt 2.0]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠F：梅柳齐娜
+[#兽:Beast]！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 0.6]
+
+[se ad859]
+[seVolume ad859 0 0.4]
+[charaMoveScale F 1.3 0.25]
+[charaMove F 0,70 0.25]
+[blur motion 0.1 4 10 0.5 0.6 0.05 100]
+[wt 0.1]
+[charaFadeout F 0.25]
+[wipeout circleIn 0.3 1.0]
+[wait wipe]
+
+[blurOff]
+
+[charaScale F 1.0]
+
+[scene 10000]
+[wt 0.6]
+
+[se ad171]
+[cueSe Servants_102800 bac658]
+[cueSe Battle bac263]
+[se ad85]
+[effect bit_talk_gram_slash_03_fs]
+[wt 0.1]
+
+[wipein circleIn 0.1 1.0]
+[wait wipe]
+[wt 0.8]
+
+[effectDestroy bit_talk_gram_slash_03_fs]
+
+[charaTalk off]
+[charaDepth S 6]
+[charaDepth G 4]
+
+[se ad863]
+[cueSe SE_21 21_ad1125]
+[charaPut S 1]
+[charaEffect S bit_talk_35]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[shake 0.05 3 3 1.0]
+[wt 0.1]
+
+
+
+[scene 124000 0.1]
+
+
+[charaFace G 27]
+[charaFadein G 0.1 0,-50]
+[charaShake G 0.03 2 2 0.7]
+[charaMove G -300,-50 0.3]
+[charaFadeout G 0.4]
+
+[wt 1.0]
+[cueSe SE_21 21_ad1131]
+[wt 1.0]
+
+？1：刺中了……！
+
+？！
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+
+[pictureFrame]
+[wt 0.2]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠千子村正
+嗯，是[#妖精骑士:兰斯洛特]的阿隆戴特。[r]刚才那招确实贯穿[#灵核:心脏]了吧。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+
+[wt 0.2]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.6]
+
+[charaTalk G]
+[charaFace G 31]
+[charaFadein G 0.4 1]
+[wt 0.6]
+
+＠高扬斯卡娅
+[line 3]。
+[k]
+
+[messageOff]
+[se ad596]
+[seVolume ad596 0 0.5]
+[charaSpecialEffect G wipeTime 0,0 1.8]
+[wt 1.0]
+[wait charaSpecialEffect G]
+[seStop ade532 0.6]
+[wt 2.0]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[wt 0.2]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠哈贝特洛特
+消失了！　兰……不对，梅柳齐娜！[r]怎么回事，是你把她放跑了吗！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+＠妖精骑士兰斯洛特
+……兰斯洛特。[r]这个形态的在下是妖精骑士兰斯洛特。
+[k]
+
+[charaFace F 11]
+＠妖精骑士兰斯洛特
+不这样称呼的话，在下什么都不说。[r]……不过，在下原本就没什么好说的。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠达·芬奇
+明白了，兰斯洛特。[r]刚才听到的名字我会避而不谈。
+[k]
+
+＠达·芬奇
+无论有没有[#赐名:Gift]，[r]你的能力好像都不会改变。
+[k]
+
+＠达·芬奇
+身为『兰斯洛特』时甚至可能更弱，[r]其实对我们也很有利。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+[wt 1.0]
+
+[charaFace F 1]
+
+＠妖精骑士兰斯洛特
+说得没错。你是个通情达理的人呢。[r]谢谢你。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠达·芬奇
+是，是吗？[r]承蒙夸赞，不胜荣幸……
+[k]
+
+[charaFace A 25]
+＠达·芬奇
+不过现在重点是高扬斯卡娅。[r]我可以认为她刚才是逃跑了吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+＠妖精骑士兰斯洛特
+……………………这个嘛。[wt 0.9][charaFace F 15][r]……………………或许吧。
+[k]
+
+[charaFace F 14]
+＠妖精骑士兰斯洛特
+……看来要消灭她，应该瞄准她的脑袋，而不是心脏。
+[k]
+
+＠妖精骑士兰斯洛特
+那只[#兽:Beast]虽然还是弱小的幼体，[r]但唯独生命力很够格。
+[k]
+
+＠妖精骑士兰斯洛特
+应该……是拥有多条生命吧。[r]不过刚才那下应该会让她好几天都动弹不得吧。
+[k]
+
+？1：能击退她已经令人够满意的了。
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 16]
+[charaFadein D 0.1 1]
+＠千子村正
+是啊。想必这会儿她正按住胸口的洞[r]痛得满地打滚吧。也算是个教训。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？2：这都是兰斯洛特的功劳。
+
+[charaFace F 8]
+＠妖精骑士兰斯洛特
+太好了。[r]虽说我有所自觉，原来客观看来也是这样吗？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠米拉
+太好啦～！[r]这样枯骨大人也保住了呢～！
+[k]
+
+＠米拉
+一旦没了它，湖泊的塞子就会被拔出，[r]变回寻常的海洋了。
+[k]
+
+＠米拉
+这样一来，地表与灵洞的边界[r]也将随之消失，[#艾因塞尔:公主殿下]会哭的啦～。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+＠妖精骑士兰斯洛特
+枯骨大人……[r]『镜之氏族』是这样称呼阿尔比恩的吗？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠米拉
+是啊～，简单易懂吧～？
+[k]
+
+＠米拉
+那我们回去吧。[r]因为在这里待久身体会变差的啦～。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠达·芬奇
+看来是这样……这毒素甚至能影响灵基。[r]若是生命体，甚至有可能导致遗传因子层级的变异。
+[k]
+
+[charaFace A 0]
+＠达·芬奇
+虽然我对阿尔比恩的亡骸充满了兴趣，[r]但现在还有其他该做的事。
+[k]
+
+？1：回刚才的废墟吧。
+
+？2：……兰斯洛特呢？
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠妖精骑士兰斯洛特
+这需要特地问吗？[r]在下会再奉陪你们一阵。也算是帮了忙的责任。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠阿尔托莉雅
+意思是你要监视我们，[r]看我们会不会为害阿尔比恩的骸骨吧。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+[wt 1.0]
+
+[charaFace F 17]
+＠妖精骑士兰斯洛特
+说得直白一点，就是这样。[r]感谢你的翻译。
+[k]
+
+？！
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_81 1.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaFadeout A 0.1]
+
+[scene 122500]
+
+[wt 1.0]
+[cueSe SE_21 21_ad1066]
+[cueSeVolume 21_ad1066 0 0]
+[wt 0.5]
+
+[cueSeVolume 21_ad1066 1.5 1.0]
+[fadein black 1.5]
+[wait fade]
+[wt 0.8]
+
+[cueSeStop 21_ad1066 0.4]
+[wt 0.4]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠千子村正
+…………
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 32]
+[charaFadein A 0.1 1]
+＠达·芬奇
+…………
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠哈贝特洛特
+…………
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.4]
+
+？1：…………
+
+？！
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠妖精骑士兰斯洛特
+怎么，目不转睛地盯着在下。[r]很抱歉，在下没什么破绽或弱点哦。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠阿尔托莉雅
+没有，我只是在想“如今仍存活的阿尔比恩”[r]究竟是什么意思。
+[k]
+
+[charaFace C 7]
+＠阿尔托莉雅
+还有，梅柳齐娜这名字很棒呢。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+
+[charaPut M 1]
+[charaFadeTime M 0.2 0.5]
+＠千子村正
+（连哈贝特洛特都有所顾虑，[r]　她居然直接说出来了！）
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout M 0.2]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠妖精骑士兰斯洛特
+…………这跟你们没有关系。[r]没必要对你们[line 2]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠米拉
+兰斯洛特是阿尔比恩的『左手』哦～。
+[k]
+
+＠米拉
+当星球变成『无之海』时，没能回归乐园的[r]阿尔比恩精疲力竭，坠落而亡。
+[k]
+
+＠米拉
+不过就算炉心停止，肉却还活着，[r]只有『左手』在即将腐烂脱落的关头切断了。
+[k]
+
+＠米拉
+那就是梅柳齐娜的前身。
+[k]
+
+＠米拉
+处于不知是生还是死的状态下，[r]一直留在湖里哦～。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+＠妖精骑士兰斯洛特
+………………
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 16]
+[charaFadein E 0.1 1]
+＠哈贝特洛特
+哎！！！[r]可咱以前来时可没有那种生物啊。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 2.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠妖精骑士兰斯洛特
+……那也正常。[r]变成这个形象之前的在下，只是污秽的肉片。
+[k]
+
+[charaFace F 10]
+＠妖精骑士兰斯洛特
+没有筋与骨，也没有纤毛与体毛。[r]没有喜悦与快乐，也没有悲伤与痛苦。
+[k]
+
+＠妖精骑士兰斯洛特
+连自己曾是龙，[r]自己想要成为什么都不知道。
+[k]
+
+＠妖精骑士兰斯洛特
+只是生物，却称不上生命。[r]单纯是个在那昏暗沼泽中蠢动的“东西”。
+[k]
+
+＠妖精骑士兰斯洛特
+然而此时[line 3]
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth H 9]
+[charaDepth I 10]
+[charaDepth F 5]
+
+[se ade151]
+[seVolume ade151 0 0.5]
+[charaFadein H 1.5 -390,-510]
+[charaFadeout F 1.5]
+[wt 0.8]
+[seStop ade151 0.8]
+[wt 2.0]
+[scene 125001]
+[bgm BGM_EVENT_123 0.1]
+
+＠妖精们
+『请不要这样，欧若拉大人……！[r]　您的身体会弄脏的！』
+[k]
+
+＠妖精们
+『那是栖息于沼泽的下等生物，[r]　绝对是比摩耳斯更污秽的东西！』
+[k]
+
+＠欧若拉
+为什么要这么说呢？[r]她那样挣扎，拼命向往着光芒。
+[k]
+
+＠欧若拉
+没关系，这湖泊很浅。[r]我肯定也救得了她。
+[k]
+
+[messageOff]
+[se ade150]
+[seVolume ade150 0 0.4]
+[se ad130]
+[seVolume ad130 0 0.1]
+[charaFadein I 1.5 250,-130]
+[charaFadeout H 1.5]
+[wt 2.2]
+
+＠妖精们
+『咿[line 3]……！[r]　多么可怕，就像烂透的水果……！』
+[k]
+
+＠妖精们
+『欧若拉大人，请快离开……！[r]　您的衣服会被弄脏的！』
+[k]
+
+＠欧若拉
+哎呀……身体如此冰冷，你一定很冷吧。[r]你应该不是水之妖精吧？
+[k]
+
+＠欧若拉
+呵呵。你好，可爱的妖精。[r]还是应该道一声早上好呢。
+[k]
+
+[messageOff]
+[charaFadeout I 1.5]
+[wt 3.5]
+
+＠欧若拉
+我是欧若拉。[r]你叫什么名字？
+[k]
+
+＠欧若拉
+难得成为了朋友，要来一起喝杯茶吗？[r]当然啦，前提是不会给你添麻烦……
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgm BGM_EVENT_123 2.0 0.4]
+[fadeout black 2.0]
+[wait fade]
+
+[scene 122500]
+[wt 1.5]
+
+[bgm BGM_EVENT_123 1.5 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠妖精骑士兰斯洛特
+[line 3]却有一位爱管闲事的妖精将那个抱了起来。
+[k]
+
+＠妖精骑士兰斯洛特
+就在那一刻，『我』获得了形体。[r]第一次看到了“美丽之物”。
+[k]
+
+＠妖精骑士兰斯洛特
+原本只是个细胞的『我』，第一次产生了仰慕那位妖精，[r]想变得像那位妖精一样的意志。
+[k]
+
+＠妖精骑士兰斯洛特
+这个形象便是其结果。[r]梅柳齐娜这名字也是那个人给在下取的。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+＠达·芬奇
+没有筋骨，连细胞用来移动的纤毛都没有……[r]就像[#单细胞生物:阿米巴]啊。
+[k]
+
+＠达·芬奇
+然后由于获得了“范本”，从而转身为妖精。[r]是这么一回事吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+＠妖精骑士兰斯洛特
+对啊，很厉害吧？[r]那真的[line 3]就是个奇迹啊。
+[k]
+
+[charaFace F 1]
+＠妖精骑士兰斯洛特
+在那片昏暗的泥沼中，除了她，[r]又有谁愿意将在下抱起来呢。
+[k]
+
+＠妖精骑士兰斯洛特
+在下这条命是属于她的。[r]为了实现她的愿望，在下才成了如今的在下。
+[k]
+
+[charaFace F 10]
+＠妖精骑士兰斯洛特
+可是，她也有自己的立场。[r]我们不能一直在一起。
+[k]
+
+＠妖精骑士兰斯洛特
+100年前，土与风、王与牙之氏族因[r]过于恐惧『灾厄』，而再度挑起了战争。
+[k]
+
+＠妖精骑士兰斯洛特
+在下为平息战祸，接受了摩根陛下的提案，[r]成为了妖精骑士兰斯洛特。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+＠阿尔托莉雅
+所以才只有兰斯洛特既没有军队，[r]也没有领地啊……
+[k]
+
+＠阿尔托莉雅
+崔斯坦……芭万·希厌恶妖精。[r]高文……巴格斯特喜欢妖精，也喜欢人类。
+[k]
+
+＠阿尔托莉雅
+那你呢？[r]兰斯洛特又是怎么想的？
+[k]
+
+＠阿尔托莉雅
+你之所以为珀西瓦尔担心，[r]纯粹是心血来潮？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠妖精骑士兰斯洛特
+……不是什么心血来潮。[r]在下深深爱着珀西瓦尔。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+[charaShake C 0.02 3 3 0.4]
+＠阿尔托莉雅
+爱……！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+＠妖精骑士兰斯洛特
+……在下从他这么小的时候就看着他长大。
+[k]
+
+＠妖精骑士兰斯洛特
+10年来，每当他有所成长，[r]喜悦与困惑、感谢与寂寞都会温暖在下的心头。
+[k]
+
+[charaFace F 15]
+＠妖精骑士兰斯洛特
+……在下恐怕既不是好师父、[r]也不是好姐姐、更不是好朋友吧……
+[k]
+
+＠妖精骑士兰斯洛特
+但在下仍然念着他，以至于无数次在梦中见到[r]他像泛人类史的人类一样生活的未来。
+[k]
+
+＠妖精骑士兰斯洛特
+可他不仅拒绝了摩根陛下的邀请，[r]还组织了圆桌军那种无聊的东西……
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 1.2]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+＠妖精骑士兰斯洛特
+珀西瓦尔……变成坏孩子了………[r]身为龙母，在下可不记得自己有那样教育过他……
+[k]
+
+？1：既然你担心珀西瓦尔……
+？2：现在也还来得及，加入圆桌军……
+
+？！
+
+[bgmStop BGM_EVENT_123 2.0]
+
+[charaFace F 0]
+＠妖精骑士兰斯洛特
+……那不可能。
+[k]
+
+＠妖精骑士兰斯洛特
+之所以听命于摩根陛下，[r]是因为在下不得不成为妖精骑士。
+[k]
+
+＠妖精骑士兰斯洛特
+哪怕『预言之子』是对的，也与在下无关。[r]在下是基于自身的信念与陛下做交易的。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[scene 121400]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.6]
+
+[se ade158]
+[cueSe SE_21 21_ade569]
+[charaCrossFade F 1098231110 0 0.4]
+[wait charaCrossFade F]
+[wt 0.6]
+
+[bgm BGM_EVENT_139 0.1]
+
+＠妖精骑士兰斯洛特
+回到这里应该够远了。
+[k]
+
+＠妖精骑士兰斯洛特
+在下也不能一直离开卡美洛。[r]那下次见吧，在战场上，作为敌人。
+[k]
+
+？1：就算与珀西瓦尔交战也在所不辞？
+
+？！
+
+＠妖精骑士兰斯洛特
+……………………这是他自己选择的道路。[r]在下尊重他的自由。
+[k]
+
+[charaFace F 16]
+＠妖精骑士兰斯洛特
+但是，请不要告诉他我们谈过的事。[r]不然会伤到珀西瓦尔的。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠米拉
+再见啦～！[r]卡美洛之战要加油哦～！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠妖精骑士兰斯洛特
+…………
+[k]
+
+[messageOff]
+[charaMove F 0,-5 0.6]
+[se ad906]
+[wt 0.8]
+[se ad678]
+[seStop ad906 1.0]
+[se ade7]
+[seVolume ade7 0 0.6]
+[effect bit_talk_mgn_light02]
+[wt 0.2]
+[charaMove F 0,30 0.2]
+[charaFadeout F 0.1]
+[cueSe SE_21 21_ad1097]
+[wt 3.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠米拉
+走掉了呢～。[r]跟那时候一样，突然到来，又突然回去了。
+[k]
+
+？1：米拉……那个，难道说……
+？2：毁灭……镜之氏族的人……
+
+？！
+
+＠米拉
+没事啦没事啦，反正都过去了。[r]我并不在意哦～。
+[k]
+
+＠米拉
+所有镜之氏族的妖精都能看到未来。[r]打从出生的那刻起，就像已经死去了。
+[k]
+
+＠米拉
+知道自己将在何时死去，[r]不清楚当下的自己究竟是何时何地的自己。
+[k]
+
+＠米拉
+所以我们不会悲伤，也不会咒骂对方～。[r]只是死的时候会痛而已。
+[k]
+
+＠米拉
+不过……真是很对不起[#艾因塞尔:公主殿下]呢。
+[k]
+
+＠米拉
+[#艾因塞尔:公主殿下]是族长，[r]所以她一直都挂念着我们的未来哦～。
+[k]
+
+＠米拉
+『应该还是有得救的可能性的。』[r]『我一定要想办法守护大家才行。』
+[k]
+
+＠米拉
+一直为这些事钻牛角尖。[r]直到临死前都在向我们道歉。
+[k]
+
+＠米拉
+……该成为妖精亡主的，[r]其实是[#艾因塞尔:公主殿下]才对～。
+[k]
+
+＠米拉
+但如果死后还不断向我们道歉的话，也太辛苦了～。[r]所以信使的任务就由我来承担啦☆
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠阿尔托莉雅
+信使……[r]是传话给『预言之子』吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠米拉
+嗯，是的～！
+[k]
+
+＠米拉
+很抱歉，这座城市里没有『巡礼之钟』。[r]因为那是氏族之长持有的东西。
+[k]
+
+＠米拉
+与[#艾因塞尔:公主殿下]一起被烧掉了。[r]所以去找替代品吧～。
+[k]
+
+＠米拉
+还有嘛，唔～，其实我不太想说……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_139 1.0]
+[charaPut S 1]
+[charaEffect S bit_talk_06]
+[wt 2.0]
+
+？1：[line 3]
+
+？2：米拉，你[line 3]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠千子村正
+算了，[%1]。[r]乖乖闭嘴听吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+？！
+
+[bgm BGM_EVENT_95 0.1]
+
+＠米拉
+[#艾因塞尔:公主殿下]临死前这样说，
+[k]
+
+＠米拉
+『最终，预言之子将会来访两次。』
+[k]
+
+＠米拉
+『第一次是为了生，[r]　而第二次则是为了死。』
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠阿尔托莉雅
+…………这样啊。[r]我确认收到这重要的预言了。
+[k]
+
+[charaFace C 6]
+＠阿尔托莉雅
+谢谢你，米拉。[r]你也要保重哦。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠米拉
+嘿嘿～，幸好是个懂得领会的『预言之子』～！
+[k]
+
+＠米拉
+不必再有任何顾虑或犹豫，[r]拯救不列颠，拯救[#妖精:我们]吧！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ad52]
+[charaSpecialEffect B flashErasure 1 2.0]
+[wait charaSpecialEffect B]
+[charaEffectStop S bit_talk_06]
+[wait charaEffect S bit_talk_06]
+[wt 1.5]
+
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_95 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

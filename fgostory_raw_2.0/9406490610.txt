@@ -1,0 +1,444 @@
+
+
+
+＄94-06-49-06-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001410 1 マシュ]
+[charaSet B 8001400 1 マシュ_アーマード]
+
+[charaSet C 1046001 1 伊吹童子]
+[charaSet D 4042000 1 ハベトロット]
+[charaSet E 98002000 1 フォウ]
+[charaSet F 4043001 1 太公望]
+[charaSet G 4044001 1 ニキチッチ]
+
+[scene 105400]
+
+[effect bit_talk_snowstorm_02]
+
+[se ad135]
+[seVolume ad135 0 0]
+[seVolume ad135 1.0 0.3]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[seStop ad135 0.5]
+[wt 0.2]
+
+[se ad598]
+
+[fadeout white 1.0]
+[wait fade]
+
+[scene 128700]
+[effectDestroy bit_talk_snowstorm_02]
+[wt 1.5]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 1.2]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaDepth A 1]
+[charaDepth B 2]
+
+[charaTalk off]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[charaFadeout B 0.4]
+[wt 0.2]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+＠マシュ
+吹雪が、消えていきます……
+[k]
+
+[messageOff]
+
+[charaFace A 6]
+[wt 1.2]
+
+[charaFace A 1]
+＠マシュ
+巨大敵性体、完全消滅を確認しました。[r]戦闘終了です！
+[k]
+
+？1：お疲れさま！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠伊吹童子
+おつかれー！
+[k]
+
+＠伊吹童子
+マスターもマシュちゃんも、おつかれ！[r]太公望くんもニキチも、それにハベにゃんもおつかれー！
+[k]
+
+[charaFace C 8]
+
+＠伊吹童子
+はあー。一杯やりたいわぁ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠ハベトロット
+いいよな、仕事の後のご褒美！[r]ボクも徹夜明けのリンゴ水、大好きだ！
+[k]
+
+＠ハベトロット
+祝杯のときには遠慮なく呼んでくれよな！[r]んじゃ、おやすみー！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠フォウ
+フォウー！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 16]
+[charaFadein D 0.1 1]
+[charaMoveReturn D 0,10 0.3]
+[wt 0.7]
+
+[charaSpecialEffect D erasure 1 1.0]
+[se ad595]
+[wait charaSpecialEffect D]
+[seStop ad595 1.0]
+
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠フォウ
+フォ？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠マシュ
+…………。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠フォウ
+フォウ！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOff]
+[charaDepth A 2]
+[charaDepth E 3]
+
+[charaTalk off]
+[charaFace A 4]
+[charaFadein A 0.1 -100,0]
+
+[charaFace E 0]
+[charaFadein E 0.4 350,30]
+[se adm21]
+[charaMove E 250,0 0.5]
+[wt 0.6]
+
+[charaTalk on]
+[charaFace A 6]
+[charaShake A 0.1 3 3 0.3]
+＠マシュ
+わっ。フォウさん。
+[k]
+
+？1：マシュ、どうかした？
+？！
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaFace A 4]
+＠マシュ
+はい。その……[r]少し、考えてしまって……
+[k]
+
+[charaFace A 8]
+＠マシュ
+イヴァン雷帝の再現体……
+[k]
+
+＠マシュ
+ロシア異聞帯で、彼女は異聞帯の王を[r]『兵器』として加えていたんですね……。
+[k]
+
+？1：再現体は他にもいるの？
+
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+
+＠ニキチッチ
+そう多くはないはずだ。
+[k]
+
+
+＠ニキチッチ
+オレと太公望で何体か倒したからな。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+？2：どういう基準で選んでいるんだろう
+
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠伊吹童子
+うーん。[r]よく分からないわね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠太公望
+では、そのあたりの情報共有を。[r]今回は『この領域に存在する敵性生物』について。
+[k]
+
+＠太公望
+皆さんもこれまでで遭遇済みですが、[r]大きく分けて二種類が存在します。
+[k]
+
+＠太公望
+まずは、種族として次々に生まれ落ちる量産個体。
+[k]
+
+？1：ヤガやカリの姿をしていたのが、それかな……
+？2：あれは、それぞれの異聞帯だけの生物で……
+
+？！
+
+[charaFace F 1]
+
+
+＠太公望
+ええ、そうです。[r]ヤガ、カリ、でしたか？
+[k]
+
+＠太公望
+北欧の巨人種も目にしましたね？
+[k]
+
+
+
+[charaFace F 5]
+
+＠太公望
+彼らの量産個体たちが、通称、異聞眷属。
+[k]
+
+＠太公望
+時折、上位個体のような希少種が[r]発生することもありますが……
+[k]
+
+＠太公望
+基本的には兵卒と考えていい。
+[k]
+
+
+[charaFace F 1]
+
+＠太公望
+ああ、異聞眷属、というのは僕独自の命名です。[r]気兼ねなく、自由に使ってください。
+[k]
+
+[charaFace F 0]
+
+＠太公望
+これは“種族として、この領域で生息している”[r]ものとして分類できます。
+[k]
+
+＠太公望
+次に、再現体による超抜個体！[r]先ほど戦った雷帝再現体がまさにそれです。
+[k]
+
+＠太公望
+これを“種族ではない、単体の脅威”……[r]異聞兵器、と分類しました。
+[k]
+
+＠太公望
+種族としての敵性生物を『異聞眷属』、[r]個体としての敵性存在を『異聞兵器』、
+[k]
+
+＠太公望
+どうです？　分かりやすいでしょう？
+[k]
+
+＠太公望
+これまでに加わった眷属は６つ、兵器は６つ。[r]６種族、６個体。
+[k]
+
+[charaFace F 4]
+＠太公望
+さて、いったい幾つ集めるつもりやら。[r]異聞帯の数は７つですが……
+[k]
+
+[charaFace F 1]
+＠太公望
+いやあ。[r]それでは[#らしく]ありませんよねぇ？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠フォウ
+フォウ、フォウ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠太公望
+ともあれ、です！[r]この地ですべきことは終わりました。
+[k]
+
+＠太公望
+戦力の一部を削ぐことはできたはず。[r]さ、移動しましょう。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠ニキチッチ
+うむ！
+[k]
+
+[messageOff]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad88]
+[wt 0.8]
+
+[cueSe SE_21 21_ade670]
+[seVolume 21_ade670 0 0.5]
+[wt 1.7]
+
+[se ade4]
+
+[wt 2.5]
+
+[seStop ade4 0.5]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠ニキチッチ
+移動するぞ！　竜よ、マシュと[r][%1]を抱えて飛べ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠伊吹童子
+はーい！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

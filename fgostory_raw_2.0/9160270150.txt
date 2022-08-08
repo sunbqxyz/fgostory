@@ -1,0 +1,88 @@
+
+
+＄91-60-27-01-5-0
+
+
+[soundStopAll]
+
+[scene 20110]
+[charaSet A 98001000 1 玛修]
+[charaSet B 6027000 1 周照]
+[charaSet C 98115000 1 NPC]
+[charaSet E 1098154600 1 ？？？]
+
+[messageOff]
+
+[charaTalk A]
+[charaFace A 6]
+
+[seStop ad527 0.1]
+
+[fadein black 1]
+[wait fade]
+[wt 0.1]
+
+
+
+[se ad527]
+[wt 1]
+[seStop ad527 0.1]
+[bgm BGM_EVENT_1 0.1]
+[wt 0.4]
+[charaFadein A 0.4 1]
+[wt 0.5]
+
+＠玛修
+那……那是……？
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaPut C 1]
+[charaEffect C bit_talk_11]
+[charaTalk E]
+[charaFadein E 0.4 1]
+[wt 1]
+
+？1：这……究竟是怎么一回事？
+？！
+
+[charaFadeout E 0.1]
+[charaEffectStop C 0 bit_talk_11]
+[wt 0.1]
+[charaPut C 0,-1024]
+
+[bgmStop BGM_EVENT_1 0.3]
+[wt 0.4]
+[bgm BGM_EVENT_3 0.1]
+
+
+
+[charaFace B 4]
+[charaTalk B]
+[charaFadein B 0.1 1]
+
+＠周照
+……呼。[r]朕似乎已经明白大致情况了。
+[k]
+
+[charaFace B 0]
+
+＠周照
+不用再说了，紫菜、爬兔。[r][line 3]不，玛修和[%1]啊。
+[k]
+
+＠周照
+朕也明白该端正态度的时候就该端正。[r]来吧，有事等解决这家伙之后再谈。
+[k]
+
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.5]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

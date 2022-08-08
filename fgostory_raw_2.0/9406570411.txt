@@ -1,0 +1,557 @@
+
+＄94-06-57-04-1-1
+
+
+
+
+
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 28002000 1 フェイカー]
+[charaSet B 4002001 1 イスカンダル]
+[charaSet C 1098228300 1 エネミー]
+
+[sceneSet D 144200 1]
+[sceneSet E 144100 1]
+
+[scene 21600]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.5]
+[se ad678]
+[seVolume ad678 0 0.5]
+[charaMoveScale A 1.1 0.2]
+
+[se ad85]
+[effect bit_talk_v_slash01]
+[charaMove A 0,14 0.2]
+[charaFadeout A 0.2]
+[blur motion 0.2 4 10 0.5 0.6 0.05 100]
+[wt 0.2]
+[blurOff motion 0.1]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.5]
+[se ad171]
+[se ad7]
+[effect bit_talk_Slash_white_01_L -100,0]
+[charaMove C 100,0 0.2]
+[wt 0.6]
+
+[se ad171]
+[effect bit_talk_Slash_white_01 100,0]
+[se ad671]
+[seVolume ad671 0 0.5]
+[charaMove C -100,-30 0.4]
+[wt 1.2]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaScale A 1.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+動くな！
+[k]
+
+
+[messageOff]
+[se ad216]
+[effect bit_talk_mysticeyes_hph]
+[wt 1.6]
+[seStop ad216 0.2]
+[effectStop bit_talk_mysticeyes_hph]
+[se ad693]
+[wt 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[wt 0.1]
+[fowardEffect bit_talk_14]
+[charaShake C 0.05 3 3 0.2]
+[se ade60]
+[wt 1.0]
+
+[effect bit_talk_x_slash03]
+[cueSe Servants_102800 bac658]
+[wt 0.1]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFFF80]
+[charaShake C 0.05 3 3 0.4]
+[wt 1.5]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[se ad52]
+[charaSpecialEffect C enemyErasure 1 1.5]
+[wt 0.5]
+[wait charaSpecialEffect C]
+[wt 1.0]
+
+[se ade283]
+[wipeout sideBlind 1.0 1.0]
+[wait wipe]
+
+[scene 144100]
+[wt 1.0]
+
+[wipein sideBlind 1.0 1.0]
+[wait wipe]
+[wt 1.5]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+倒すと次の車両か。胃がムカムカする影どもだったな。[r]おまえもだいぶ慣れてきたようだ。
+[k]
+
+？1：今のは魔眼？
+
+？！
+
+[charaFace A 0]
+＠フェイカー
+ああ、現代の魔術世界では、[r]強制のノウブルカラーとか言うんだったか。
+[k]
+
+＠フェイカー
+もちろん、ここの魔眼オークションなんかで[r]買った品じゃないぞ。生まれつきのものさ。
+[k]
+
+＠フェイカー
+さて、次の車両への扉は……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[se ade491]
+[se ade295]
+
+[cameraMove 1.0 10,0 1.05]
+[charaScale D 1.1]
+[charaFadein D 1.0 -105,-240]
+[wt 1.0]
+[seStop ade491 0.5]
+[seStop ade295 0.7]
+[wt 1.0]
+
+[cueSe SE_21 21_ade554]
+[se ad568]
+[wt 0.4]
+[cueSeStop 21_ade554 0.2]
+[se ad568]
+[cueSe SE_21 21_ade554]
+[wt 0.8]
+[cueSeStop 21_ade554 0.2]
+[wt 0.5]
+
+[cameraHome 1.0]
+[charaMove D 0,-200 1.0]
+
+[charaDepth D 1]
+[charaDepth A 2]
+
+[wt 1.2]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.5 -220,0]
+[wt 0.5]
+
+＠フェイカー
+やはり、また鍵は開かないか。
+[k]
+
+＠フェイカー
+本体が紙片を見つけるまでは、[r]ここで待機するしかないらしい。
+[k]
+
+[messageOff]
+[charaFadeout A 0.5]
+[wt 1.0]
+[se ade491]
+[cameraMove 1.0 30,0 1.05]
+[wt 0.5]
+[seStop ade491 1.0]
+[wt 1.0]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.5 -250,0]
+[se ad775]
+[charaMove A -250,-10 0.6]
+[wt 1.2]
+
+＠フェイカー
+退屈だが、座って待ってるか。[r]私が詩人なら暇潰しも[#容易:たやす]かったろうがな。
+[k]
+
+
+？1：さっきの、イスカンダルの話はどう？
+？！
+
+[charaFace A 3]
+＠フェイカー
+………むう。
+[k]
+
+[charaFace A 0]
+＠フェイカー
+まあ、いいだろう。[r]半端なところで話が終わってたからな。
+[k]
+
+＠フェイカー
+おまえも察してるだろうが、[r]私はイスカンダルの臣下だった。
+[k]
+
+[charaDepth A 5]
+[charaDepth B 2]
+[charaTalk off]
+[charaScale B 0.95]
+[charaFace B 0]
+[charaFadein B 0.4 250,-30]
+[charaFadeTime B 0.4 0.7]
+
+＠フェイカー
+正確に言えば、[r]イスカンダルの影武者だったんだよ。
+[k]
+
+
+？1：影武者？
+
+[charaFadeout B 0.4]
+
+[charaTalk on]
+[charaFace A 1]
+＠フェイカー
+ふふふ、想像できなかったか？[r]あくまで魔術的な影武者だからな。
+[k]
+
+？2：さすがに無理がない？
+
+[charaFadeout B 0.4]
+
+[charaTalk on]
+[charaFace A 1]
+＠フェイカー
+ははは、当たり前だ。[r]あくまで魔術的な影武者だからな。
+[k]
+
+？！
+
+[charaFace A 0]
+＠フェイカー
+おまえの国だと、呪いの[#藁:わら]人形とか使うのだろう？[r]要はあれと一緒だ。
+[k]
+
+＠フェイカー
+王に対する呪いを、私が受け止めるための影武者さ。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFace A 1]
+＠フェイカー
+だから、[#私は名前を持ってないんだ]。
+[k]
+
+[charaFace A 0]
+＠フェイカー
+本当に、名無しなのさ。[r]自分の名を持たぬからこそ、王の代わりを務められた。
+[k]
+
+＠フェイカー
+どうしても名前が必要なときには、[r]兄上の名前を借りていたりした。
+[k]
+
+[charaFace A 1]
+＠フェイカー
+ヘファイスティオン、って名前をね。[r]我が兄は、王の一番の臣下だったのさ。
+[k]
+
+[charaFace A 0]
+＠フェイカー
+前の召喚が、フェイカーなんて[#規格外:エクストラ]クラスになったのも[r]そのためだろう。
+[k]
+
+＠フェイカー
+なにしろ、宝具もスキルも名前も借り物だ。[r][#偽の英霊:フ ェ イ カ ー]なんてのは、いかにもふさわしい。
+[k]
+
+[charaFace A 1]
+＠フェイカー
+今でも覚えている。[r]砂漠の太陽を。行く手を阻む森林を。
+[k]
+
+[charaFace A 0]
+＠フェイカー
+幾万の軍勢と戦い、幾万の味方をつくった。[r]敵には我が神の呪いを、味方には祝福を与えた。
+[k]
+
+＠フェイカー
+最果ての海に至るのだと、[r]ずっとずっと、遠くまで旅をした。
+[k]
+
+？1：楽しい旅だったんだね
+？！
+
+[messageOff]
+[charaFace A 4]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_77 1.2]
+
+[charaFace A 1]
+＠フェイカー
+分かったような口を。
+[k]
+
+[charaFace A 0]
+＠フェイカー
+だが………そうだな。悪くなかった。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaFace A 5]
+＠フェイカー
+だからこそ、怒った。
+[k]
+
+＠フェイカー
+イスカンダルが死んだ際、[r]あいつがどんな遺言を残したか、知ってるか？
+[k]
+
+＠フェイカー
+最も強きものが帝国を治めるように、だぞ。
+[k]
+
+？1：それってまさか………
+
+[charaFace A 0]
+＠フェイカー
+そのまさかを、ヤツらは実行した。[r]せっかく生き残ったのに、戦いあったんだ。
+[k]
+
+＠フェイカー
+私も兄上も死んだ後のことだ。[r]戦上手どもが、見事に殺しあってくれたさ。
+[k]
+
+？2：戦いあえってこと………？
+
+[charaFace A 0]
+＠フェイカー
+少なくとも、生き残ったヤツらはそう判断した。[r]私も兄上も死んだ後のことだ。
+[k]
+
+＠フェイカー
+神の祝福も忘れ、多くの民を犠牲にして、[r]ヤツらは無残に殺しあった。
+[k]
+
+？！
+
+＠フェイカー
+我が王の栄光も、何もかも台無しにしてな。
+[k]
+
+＠フェイカー
+最果ての海も、世界帝国も、すべては血の沼に没した。[r][#後継者:ディアドコイ]戦争などと呼ばれるそうだな。
+[k]
+
+[charaFace A 5]
+＠フェイカー
+………私は、我が王の栄光を[r]台無しにしたヤツらが許せない。
+[k]
+
+[charaFace A 4]
+＠フェイカー
+だから、王にも会えないのさ。[r]我が王の宝具を知ってるか？
+[k]
+
+[charaFace A 0]
+＠フェイカー
+生前の、数万という臣下を呼び出す、[r]偉大なる[#王の軍勢:アイオニオン・ヘタイロイ]だ。
+[k]
+
+＠フェイカー
+そして、その幹部を務めるのは[r]さっきの裏切り者たちだ。
+[k]
+
+？1：[#王の軍勢:アイオニオン・ヘタイロイ]………！
+
+？！
+
+＠フェイカー
+私も[#王の軍勢:アイオニオン・ヘタイロイ]に呼ばれたことがある。[r]そのたびに、途中で召喚を断ってきた。
+[k]
+
+[charaFace A 5]
+＠フェイカー
+あの裏切り者どもと、ともに戦うなど無理だからだ。[r]たとえ王の命令であっても、これだけは[#肯:がえ]んぜられない。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.5]
+[wt 1.0]
+[charaFace A 0]
+[wt 1.4]
+[bgm BGM_MAP_56 0.1]
+
+[charaFace A 1]
+＠フェイカー
+ああ、前のマスターに義理立てしてるのも、[r]裏切られた同士で、そんな私とウマが合ったからさ。
+[k]
+
+＠フェイカー
+エルメロイⅡ世やライネス、聖堂教会の神父と対立して、[r]この[#魔眼蒐集列車:レ ー ル ・ ツ ェ ッ ペ リ ン]で戦ったよ。
+[k]
+
+[charaFace A 7]
+＠フェイカー
+ロンドンの地下[line 3]霊墓アルビオンにも乗り込んだ。[r]あそこはなかなか愉快だったぞ。
+[k]
+
+＠フェイカー
+しかも、あのときのエルメロイⅡ世とグレイは、[r][#魔眼蒐集列車:レ ー ル ・ ツ ェ ッ ペ リ ン]を使って、追ってきたからな。
+[k]
+
+？1：霊墓アルビオン？！
+？2：[#魔眼蒐集列車:レ ー ル ・ ツ ェ ッ ペ リ ン]で追ってきた？！
+
+？！
+
+＠フェイカー
+聞いたことがないか？　ロンドンの魔術協会地下、[r]数千メートルから数万メートルなんて馬鹿げた地点。
+[k]
+
+[charaFace A 0]
+＠フェイカー
+そこには何者も侵せない純血の竜の墓、[r]霊墓アルビオンが横たわっているのさ。
+[k]
+
+[messageOff]
+[charaFace A 4]
+[wt 1.0]
+
+＠フェイカー
+いくら異界を走る列車でも[r]そんな場所に乗りつけてくるなんて、誰が思う？
+[k]
+
+[charaFace A 5]
+＠フェイカー
+なのに自分には何もできません、なんて顔をしてるから[r]あの[#君主:ロード]はなおさら腹立たしいのさ。
+[k]
+
+[charaFace A 1]
+＠フェイカー
+こちらも、あいつが運営してる[r][#現代魔術科:ノ　ー　リ　ッ　ジ]の学術都市をぶっ壊してやったがね。
+[k]
+
+＠フェイカー
+まあ、[#神代:しんだい]でも珍しい場所ばかりだった。[r]我が王が聞けば、さぞ羨ましがるだろう。
+[k]
+
+＠フェイカー
+心臓のない男が頑張りやがったものさ。
+[k]
+
+[messageOff]
+[charaFace A 4]
+
+[wt 2.0]
+
+[charaFace A 0]
+＠フェイカー
+………ふん、やはり私は詩人には向かないな。[r]つまらない話だったのを許せ。
+[k]
+
+？1：そんなことない
+？2：すごく面白かった
+
+？！
+
+
+[charaFace A 1]
+＠フェイカー
+お世辞でも悪くないな。
+[k]
+
+[charaFace A 0]
+＠フェイカー
+だったら、礼代わりに、[r]おまえを本体に返せるよう、努力してやろう。
+[k]
+
+＠フェイカー
+おまえも、ひとつ約束をしてほしい。
+[k]
+
+？1：何？
+
+？！
+
+[charaFace A 0]
+＠フェイカー
+さっきの、心臓のない男の話を覚えていてやってくれ。[r]私が勝たせてやれなかった、マスターの話をな。
+[k]
+
+[messageOff]
+[wt 0.4]
+
+？1：フェイカーのマスター………
+？2：エルメロイさんと戦った………
+
+？！
+
+？1：分かった
+？2：約束する
+
+？！
+
+[charaFace A 1]
+＠フェイカー
+………ああ、良かった。
+[k]
+
+＠フェイカー
+今を生きる誰かがあいつを覚えていてくれるなら、[r]きっと私も、自分の言葉を守れたことになる。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_56 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

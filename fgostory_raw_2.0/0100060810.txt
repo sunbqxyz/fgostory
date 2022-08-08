@@ -1,0 +1,158 @@
+＄01-00-06-08-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 8001001 1 玛修]
+[charaSet B 98003000 1 Dr.罗曼]
+[charaSet D 5009001 1 达·芬奇]
+[charaSet E 1012001 1 贝德维尔]
+[charaSet F 98084000 1 肃正骑士]
+
+[scene 29020]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠达·芬奇
+很好～，顺利逃出包围网了！[r]现在状况如何，罗玛尼！
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr.罗曼
+骑士们的阵型只有两处被突破，[r]难民们正从这两个地方逃跑。
+[k]
+
+＠Dr.罗曼
+[%1]你们这侧约有五十人左右的生命反应，[r]另一侧约有百人！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠玛修
+那边的数量比较多……[r]但那边没有能战斗的人吧！？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0]
+[charaFace A 15]
+[charaFadein A 0.1 2]
+＠贝德维尔
+……看来只能期待他们的努力了。[r]因为和那边有点距离，现在如果和那里会合的话会被一网打尽的。
+[k]
+
+＠贝德维尔
+现在我们所能做的，[r]也只有各自往不同方向逃跑而已……！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠达·芬奇
+卢修斯，不，贝德维尔说的没错。[r]我们就负责为这边的难民殿后吧。
+[k]
+
+＠达·芬奇
+所幸的是高文卿并没有追来。[r]看，天空恢复成夜晚了吧？
+[k]
+
+＠达·芬奇
+恐怕是因为『离开正门前往追击』[r]之类的命令并没有下达吧。
+[k]
+
+[charaFace D 2]
+＠达·芬奇
+赶在他们追来前，[r]趁着夜幕离开圣都吧！
+[k]
+
+[charaFace D 5]
+＠达·芬奇
+啊啊，但在此之前[line 3]
+[k]
+
+[charaFadeout D 0.1]
+
+[se ad166]
+[wt 1.0]
+[seStop ad166 3.0]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠肃正骑士
+别想逃跑！　受到圣罚之人应被肃正！[r]一旦留下活口会有后患！
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠贝德维尔
+先得打倒追来的他们！[r]准备好了吗，[%1]！
+[k]
+
+？1：当然，背后就交给我吧！
+
+[charaFadeout E 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠达·芬奇
+嘿呀，[r]真是英勇无畏呢，[%1]！
+[k]
+
+＠达·芬奇
+那么难民们的引导就由我来吧！[r]要是大家四散逃跑的话可就得不偿失了啊！
+[k]
+
+？2：那达·芬奇亲就负责领头吧！
+
+[charaFadeout E 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠达·芬奇
+没错，这个判断很准确，[%1]！[r]那我就回应你的期待吧！
+[k]
+
+＠达·芬奇
+毕竟是超过五十人的惊慌集团，[r]必须有人好好组织才行！
+[k]
+
+？！
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+肃正骑士与难民集团接触……！[r][line 3]开始战斗！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

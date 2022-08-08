@@ -1,0 +1,1094 @@
+
+＄94-06-05-05-3-0
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet B 1098220500 1 カイニス]
+[charaSet C 1098215500 1 ゴルドルフ]
+[charaSet D 7006300 1 坂田金時]
+[charaSet E 1046002 1 伊吹童子]
+[charaSet F 1047000 1 渡辺綱]
+[charaSet G 3029001 1 頼光]
+[charaSet H 3034000 1 茨木童子]
+[charaSet I 6021001 1 酒呑童子]
+
+[charaSet J 6007001 1 ジキル]
+[charaSet K 3039001 1 ガレス]
+
+[charaSet R 98115000 1 エフェクト用ダミー]
+[charaSet A 98115000 1 エフェクト用ダミー]
+
+[imageSet L back10000 1]
+[charaScale L 1.01]
+[sceneSet M 10000 1]
+[charaScale M 1.01]
+
+[imageSet T back10000 1 1]
+[charaScale T 1.32]
+
+[charaDepth T 2]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 129700]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaPut R 0,0]
+
+[effect bit_talk_attack_splash]
+[se ad979]
+[wt 0.1]
+[charaEffect R bit_talk_attack_splash 0,0 H]
+[wt 0.7]
+
+[charaPut A -256,50]
+
+[fowardEffect bit_talk_14 256,0]
+[se ad170]
+[wt 0.3]
+[charaEffect A bit_talk_14]
+[se ad170]
+[wt 0.7]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[wt 0.3]
+
+[charaMoveScale D 1.2 0.2]
+[charaMove D 0,18 0.2]
+[se bac2]
+[effect bit_talk_41_fs]
+[charaFadeout D 0.2]
+[wt 0.2]
+
+[effectDestroy]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+[wt 0.2]
+[se adm31]
+[seVolume adm31 0 0]
+[seVolume adm31 0.2 1.0]
+[charaEffect E bit_talk_charge_ppl]
+[wt 1.0]
+[seStop adm31 1.4]
+
+[se ad963]
+[seVolume ad963 0 0.8]
+[wt 0.4]
+[charaFace E 1]
+[charaMove E 0,-4 0.2]
+[seStop ad963 0.3]
+[cueSe Servants_301200 bac768]
+[wt 0.4]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+[charaEffectDestroy E bit_talk_charge_ppl]
+
+[se ad960]
+[se ad961]
+[fowardEffect bit_talk_fire_wall 0,0 H]
+[wt 0.5]
+[se ad7]
+[seVolume ad7 0 0.8]
+[wt 3.0]
+
+[effect bit_talk_14]
+[se ad1014]
+[wt 0.3]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,20]
+
+[charaMoveScale D 1.0 0.3]
+[charaMove D 0,0 0.3]
+[se ad671]
+[wt 1.0]
+
+＠坂田金時
+ッぶねえな！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠伊吹童子
+あら、ごめんなさい。[r]でも赤龍の子ならこれぐらい平気かしらーって。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+[se ad714]
+[wt 1.0]
+
+[charaFace B 11]
+
+＠カイニス
+ハッハァ！[r]いいじゃねえかいいじゃねえか！
+[k]
+
+
+＠カイニス
+ツレ諸共に消し炭にする気かよ！[r]テメェ、ナリはアレだがなかなか狂ってンな！
+[k]
+
+＠カイニス
+いいぜ、そういうのは好きだ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠伊吹童子
+露出のことだったらあたしのこと言えなくない？[r]でもそうね、うん！
+[k]
+
+＠伊吹童子
+なんだか楽しくなってきたかも！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+いやいやいやいや！[r]楽しくない！
+[k]
+
+[charaFace C 16]
+
+＠ゴルドルフ
+ええい、いい加減にやめないか！
+[k]
+
+＠ゴルドルフ
+模擬戦の域を超えてどうする！[r]カルデア所長の名において、私闘は許さんぞーッ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 22]
+[charaFadein B 0.1 1]
+
+＠カイニス
+あ？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+[charaShake C 0.01 5 5 0.5]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_80 2.0]
+
+＠ゴルドルフ
+私闘は……[r]そのう……
+[k]
+
+＠ゴルドルフ
+貴重な資源の浪費じゃないかなあと……[r]思ったりする訳なんだが、ど、どうかね……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠カイニス
+チッ。
+[k]
+
+[messageOff]
+[se ad51]
+[wt 1.0]
+
+[charaFace B 19]
+[bgm BGM_EVENT_2 0.1]
+
+＠カイニス
+わーったよ。[r]そういやオレは保安要員だからな。
+[k]
+
+
+＠カイニス
+今のは休憩時間の遊びってことでひとつ、な？[r]それでいいなゴッフ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+
+＠ゴルドルフ
+遊びの範疇を超えて……[r]いや、うむ。まあ収めてくれればそれで構わん！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠伊吹童子
+あれれ、もうおしまい？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠坂田金時
+やめだやめ！[r]そもそもオレはマスター捜しにきただけだ！
+[k]
+
+＠渡辺綱
+何やら騒がしかったが……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+
+＠渡辺綱
+神霊同士の小競り合いだったようです。[r]頼光様、もとい風紀委員長殿。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+
+＠源頼光
+マスターを巻き込んでの[#諍:いさか]い[line 3][wt 0.5][charaFace G 1][r]では、ないのですね。ホッ。まずは一安心です。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.4 1]
+[wt 0.4]
+
+
+＠茨木童子
+ええい、どこまで歩いていくのだ綱！[r]いい加減こっちを見ろ！
+[k]
+
+
+
+＠茨木童子
+ランサー霊基となった[#吾:われ]の姿に恐れ慄くのは良いが、[r][#吾:われ]が口上を述べている最中に姿を消すな！
+[k]
+
+
+＠茨木童子
+いいか、普段の霊基でもひねり潰すのは容易いが、[r]この夏の霊基はかの[#鬼救阿:おにきゅうあ]の流れを汲むモノ！
+[k]
+
+
+＠茨木童子
+第三の霊基にいたっては、[r]ほぼほぼ鬼救阿だぞ！
+[k]
+
+[charaFace H 1]
+
+
+＠茨木童子
+[#汝:なれ]なぞたちまちぎゃふん、だ！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+[wt 0.5]
+[charaFace F 0]
+[wt 1.0]
+[charaFace F 4]
+
+＠渡辺綱
+……。[r]……。
+[k]
+
+[charaFace F 0]
+
+
+＠渡辺綱
+ここはマスターたちのキャンプの模様。[r]如何されますか、風紀委員長殿。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠茨木童子
+まだ無視かぁ！？
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.4 1]
+[wt 0.4]
+
+＠酒呑童子
+はぁ。茨木、そろそろ戻らへん？[r]こんな暑いとうち、溶けてまうわぁ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+…………いきなり増えたな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠坂田金時
+綱の兄貴に頼光の大将！
+[k]
+
+[charaFace D 4]
+
+＠坂田金時
+…………と思ったら、酒呑に茨木までいやがるか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+
+＠伊吹童子
+あー。金時のいけず。
+[k]
+
+[charaFace E 8]
+
+
+＠伊吹童子
+あたしが隣にいるのに、[r]別の女の子……かどうかわからない[#靄:もや]なんか見て。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[bgmStop BGM_EVENT_2 1.0]
+
+＠カイニス
+モヤだぁ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+[bgm BGM_EVENT_71 0.1]
+
+＠伊吹童子
+え、あなたにも別のカタチに見えてるの？[r]なんだかなぁ。
+[k]
+
+[charaFace E 13]
+
+
+＠伊吹童子
+他の子は好きなんだけど、[r]どうもあの[#靄:もや]は苦手なのよねえ……
+[k]
+
+[charaFace E 4]
+
+＠伊吹童子
+長い黒髪の女の子はきゃんきゃんしてて愛らしいし、[r]茨木ちゃんもぐるぐるしてて愛らしいのだけど、
+[k]
+
+[charaFace E 5]
+
+
+＠伊吹童子
+あの[#靄:もや]！[r]茨木ちゃんの隣によくいるあの[#靄:もや]！
+[k]
+
+[charaFace E 8]
+[bgmStop BGM_EVENT_71 1.0]
+
+＠伊吹童子
+なんだかやりづらいわぁ。[r]やりづらいから[line 3]
+[k]
+
+[charaFace E 1]
+
+[bgm BGM_EVENT_146 0.1]
+＠伊吹童子
+あたしちょっと離脱！[r]ごめんね、[#ゴールデン:ダ　ー　リ　ン]！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace G 5]
+[charaFadeinFSR G 0.1 2]
+[charaFace F 4]
+[charaFadeinFSL F 0.1 0]
+[wt 1.0]
+
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaDepth H 7]
+[charaDepth I 6]
+
+[charaFace I 8]
+[charaFadeinFSR I 0.1 2]
+[charaFace H 4]
+[charaFadeinFSL H 0.1 0]
+[charaShake H 0.03 3 3 1.0]
+[wt 1.0]
+
+[charaFadeout I 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠坂田金時
+ダーリンじゃねえ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠伊吹童子
+あ、そうだゴルドルフ所長さん。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+えっ私？　何かね？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠伊吹童子
+なんだか忙しいみたいだけど、[r][#マスター:ダ　ー　リ　ン]に会ったらよろしく伝えてね♪
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+ナチュラルにダーリンが複数いる東洋の神霊……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠伊吹童子
+じゃあね♡
+[k]
+
+[messageOff]
+[wt 0.1]
+[bgmStop BGM_EVENT_146 1.5]
+[charaSpecialEffect E erasure 1 1.5]
+[se ad595]
+[wait charaSpecialEffect E]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+
+＠カイニス
+あ。霊体化しやがった。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠源頼光
+～～～～～～～～～っ！
+[k]
+
+[charaFace G 5]
+[bgm BGM_EVENT_67 0.1]
+
+＠源頼光
+聞きましたね綱、金時！[r]御禁制です！
+[k]
+
+
+＠源頼光
+金時のみならずマスターにさえあぷろーちを！[r]歩く御禁制、いかに大明神といえど風紀に反します！
+[k]
+
+[charaFace G 2]
+
+＠源頼光
+風紀進軍！[r]風紀進軍！
+[k]
+
+＠源頼光
+追いますよ、二人とも！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+
+＠坂田金時
+趣旨変わってるぜ頼光サン！？[r]マスター捜して手伝うんじゃなかったのかよ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠源頼光
+それはそれ！[r]夏の霊基の私は、影の風紀委員長ですので！
+[k]
+
+＠源頼光
+風紀の乱れは許しません！
+[k]
+
+[messageOff]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaFadeout G 0.1]
+[charaMove G 0,20 0.1]
+[wt 0.8]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠渡辺綱
+……ではまたな、茨木。[r]ああ、それから。
+[k]
+
+＠渡辺綱
+要望は、きちんとマスターに伝えるべきだ。[r]（旗を指差して）
+[k]
+
+[messageOff]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaFadeout F 0.1]
+[charaMove F 0,20 0.1]
+[wt 0.8]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_67 0.8]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaFadeout D 0.1]
+[charaMove D 0,20 0.1]
+[wt 0.8]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠茨木童子
+あ[messageShake 0.03 5 5 0.3]あっ逃げた！
+[k]
+
+[charaFace H 1]
+[bgm BGM_EVENT_2 0.1]
+
+＠茨木童子
+はっはっはっはっは！[r]綱め、形勢悪しと見てついに逃げたぞ酒呑！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 10]
+[charaFadein I 0.1 1]
+
+＠酒呑童子
+うん、せやねえせやねえ[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_EVENT_2 1.2]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout I 0.1]
+
+
+[scene 129702]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠カイニス
+とまあ、まずはこんな感じだ。
+[k]
+
+[charaFace B 7]
+
+＠カイニス
+何だか知らねえがモテてんだなマスター、意外と？
+[k]
+
+？1：モテてると言っていいのかどうか……
+
+＠カイニス
+いいんじゃねえの？
+[k]
+
+＠カイニス
+モテねえよりは、[r]モテてる方がいいんじゃないか。興味ねえけど。
+[k]
+
+？2：そ、そう？
+
+＠カイニス
+ま、オレにはどうでもいいこった。
+[k]
+
+？！
+
+[charaFace B 0]
+
+＠カイニス
+ンじゃ次の話だ。[r]来客、そいつらだけじゃなかったからな。
+[k]
+
+
+＠カイニス
+次に来たのは[line 3]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+
+[scene 129700]
+
+[overlayFadein L 0.1 0,-745]
+[overlayFadein M 0.1 0,745]
+
+[wt 1.5]
+
+[bgm BGM_MAP_13 0.1]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+
+＠
+次の連中もやっぱり、誰か捜してたな。
+[k]
+
+
+＠
+しかしあれだ。
+[k]
+
+＠
+夏の微小特異点ってのは、[r]こんな風に英霊がウロウロするもんなんだな？
+[k]
+
+[messageOff]
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.4 256,0]
+[charaMove K -206,0 2.5]
+[charaShake K 0.1 1 2 1.5]
+[wt 1.5]
+[charaFadeout K 0.4]
+[wt 0.4]
+
+[charaMove L 0,-800 0.5]
+[charaMove M 0,800 0.5]
+[wt 0.5]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[wt 0.5]
+
+[charaTalk K]
+[charaFace K 2]
+[charaFadein K 0.4 -50,0]
+[charaMove K 0,0 0.5]
+[se ad166]
+[seStop ad166 0.8]
+[wt 0.7]
+
+＠ガレス
+モードレッド～。いませんか～？
+[k]
+
+[messageOff]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.4 1]
+[wt 0.4]
+
+
+＠ジキル
+夏の霊基になっていたようだから、[r]この特異点に来ていると思うのだけど……
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 10]
+[charaFadein K 0.1 1]
+
+＠ガレス
+うーん、いませんねえ。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+
+＠カイニス
+何だ何だ。[r]ガレスとモヤシかよ。何してる？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 2]
+[charaFadein K 0.1 1]
+
+＠ガレス
+モードレッドを捜しています！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠カイニス
+へえ。そりゃなんでまた。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 1]
+[charaFadein K 0.1 1]
+
+＠ガレス
+せっかくの夏の特異点ですから、[r]夏特有の訓練ができればと！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠カイニス
+へ、へー。
+[k]
+
+[charaFadeTime T 0.2 0.6]
+
+＠カイニス
+（コイツも大概マジメ野郎だよな……）
+[k]
+
+[charaFadeout T 0.2]
+[wt 0.1]
+
+[charaFace B 0]
+
+＠カイニス
+で、モヤシは付き添いか。[r]まあそれくらいは顔見りゃ分かる。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠ジキル
+あ、うん。そんな所だね。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+今度は最初から話を聞かせてもらったとも！[r]なるほど、英霊モードレッドか。
+[k]
+
+[charaFace C 0]
+
+＠ゴルドルフ
+ここいらで姿を見たかね、神霊カイニス。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+
+＠カイニス
+見てねえ。
+[k]
+
+[charaFace B 7]
+
+
+＠カイニス
+だがよ。ハハッ！[r]適当に騒いでりゃ、そのうち顔出すかもしんねーぜ！[bgmStop BGM_MAP_13 2.0]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 14]
+[charaFadein K 0.1 1]
+
+＠ガレス
+！
+[k]
+
+[charaFace K 1]
+[bgm BGM_EVENT_7 0.1]
+
+＠ガレス
+確かに、そうかもですね！[r]モードレッドは好奇心旺盛な[#たち]ですし！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 4]
+[charaFadein J 0.1 1]
+
+＠ジキル
+いや、どうだろう[line 3]
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+うん、どうだろう。[r]さすがに発想が飛躍しすぎているのでは？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[bgmStop BGM_EVENT_7 2.0]
+
+
+＠カイニス
+夏のせいだ、夏のせい！
+[k]
+
+[messageOff]
+[se ad714]
+[wt 1.0]
+
+[charaFace B 2]
+[bgm BGM_EVENT_80 0.1]
+
+
+＠カイニス
+模擬戦いくぜえ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+えええっ、またなのかね！？
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,379 @@
+
+
+＄94-06-43-05-4-1
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5050000 1 サンタマルタ]
+[charaSet B 1098198000 1 スカサハ＝スカディ]
+[charaSet C 2001002 1 エミヤ]
+[charaSet D 4011001 1 ブーディカ]
+[charaSet E 7016001 1 タマモキャット]
+[charaSet F 3047001 1 パーシヴァル]
+[charaSet G 1098224600 1 タラスク]
+
+[charaSet I 7006300 1 坂田金時]
+[charaSet J 7005001 1 スパルタクス]
+
+[charaSet L 98115000 1 エフェクト用ダミー]
+
+
+[scene 10000]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[fowardEffect bit_talk_x_slash_bk_01]
+[wt 0.1]
+[se bac6]
+[wt 0.1]
+[charaEffect L bit_talk_x_slash_bk_02]
+[wt 0.1]
+[se bac7]
+[wt 0.5]
+
+[se ad171]
+[effect bit_talk_gold_slash_02]
+[wt 0.7]
+
+[fowardEffect bit_talk_14]
+[se ad170]
+[wt 0.5]
+
+[fadeout black 0.1]
+[bgm BGM_EVENT_80 1.0 0.5]
+[wait fade]
+
+[scene 140601]
+[wt 0.5]
+
+[fadein black 0.5]
+[bgm BGM_EVENT_80 1.0 1.0]
+[wait fade]
+
+[wt 0.4]
+
+＠おいしい巨大卵
+我を倒すか。
+[k]
+
+＠おいしい巨大卵
+人間。
+[k]
+
+＠おいしい巨大卵
+美事。[r]美事である。
+[k]
+
+＠おいしい巨大卵
+ならば我が食材、我が誇り……
+[k]
+
+[bgmStop BGM_EVENT_80 2.0]
+
+＠おいしい巨大卵
+最高の料理にして……[r]美味しくいただいてくださいね？
+[k]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+ぜえ、[charaMoveReturn A 0,-5 0.5][wt 0.4]はあ……[charaReturn A 0,-5 0.5]
+[k]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠サンタマルタ
+私はみんなの横でお料理してただけだけど、[r]なんだか凄かったのは、分かるわ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+
+＠タラスク
+（料理しつつダメージ与えてますけどね）
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+約束するわ。
+[k]
+
+[charaFace A 6]
+
+＠サンタマルタ
+あなたを使って……[r]ううん、あなたたち食材みんな、みんな！
+[k]
+
+[charaFace A 1]
+
+＠サンタマルタ
+とびきり最高に美味しい料理にするわ。[r]ありがとね！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠おいしい巨大卵
+（ニコリ……）
+[k]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+わ、笑ってる？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+本懐ということなんだろう。[r]あのサイズの微笑、凄まじい迫力があるが……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+騎士道とは違うかもしれないが、堂々たるものだ。[r]私としても何か得るものがあるよ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+そ、そう？　ほんとに？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+ああ。本当だとも。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+＠おいしい巨大卵
+では……[r]さらば……さらばだ……諸君！
+[k]
+
+
+＠おいしい巨大卵
+美味しいエッグベネディクトにしてね……！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.2]
+[wt 0.2]
+
+？1：さらば、巨大卵！
+？2：半年で二度も卵と戦うことになるとは……
+
+？！
+
+[se ad42]
+[wt 1.5]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+[bgm BGM_SABERWARS2 0.1]
+
+＠パーシヴァル
+おお！[r]巨大卵が、大量の食材に……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+
+＠スパルタクス
+おお、おお！[r]圧制者であった支配者が皆の糧となっていく……
+[k]
+
+＠スパルタクス
+比喩ではなく真の意味で糧となるとは……[r]なんと美しい光景か……。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠タマモキャット
+今度こそ一件落着だワン！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+いやいやまだ３エリア目だからね？[r]メインの料理もまだなんだしさ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+しかし、ここまでの量の食材とは素晴らしい。[r]職員やサーヴァントに振る舞って余りある量の卵！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+検品しておこう。[r]ん[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+どう？　どうかしら？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+黄身も白身も、品質は最高だ。[r]鮮度も申し分ない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+やったあ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠坂田金時
+へへっ。じゃ、オレたちはここまでだ。[r]次のエリアでもうまいことやってくれ、大将！
+[k]
+
+[charaFace I 6]
+
+
+＠坂田金時
+それに、サンタ役のマルタの姐さん！[r]クリスマスパーティーっての、楽しみにしてるぜ！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 5]
+[charaFadein J 0.1 1]
+
+
+＠スパルタクス
+次なる[#叛逆:はんぎゃく]、新たなる[#叛逆:はんぎゃく]を！[r]見事成し遂げるがいい！
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaDepth I 7]
+[charaDepth J 6]
+
+[charaTalk off]
+[charaFace J 1]
+[charaFadeinFSL J 0.1 0]
+[charaFace I 1]
+[charaFadeinFSR I 0.1 2]
+[wt 1.0]
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaFace A 5]
+
+＠サンタマルタ
+ええ！[r]楽しみにしていてね！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_SABERWARS2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

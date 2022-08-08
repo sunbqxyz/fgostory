@@ -1,0 +1,803 @@
+
+＄03-00-10-07-6-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098123000 1 ムニエル]
+[charaSet B 1007002 1 太陽の騎士（シルエット）]
+[charaFilter B silhouette FFFFFF80]
+[charaSet C 1020002 1 湖の騎士（シルエット）]
+[charaFilter C silhouette FFFFFF80]
+[charaSet D 1098231510 1 マシュ]
+[charaSet E 1098209930 1 ベリル]
+[charaSet F 1098219200 1 ベリル_ブラックウルフ_左腕欠け]
+[charaSet G 1098219210 1 ベリル_ブラックウルフ_右腕欠け]
+[charaSet H 1098209930 1 ベリル（シルエット）]
+[charaFilter H silhouette 00000080]
+
+[charaSet I 1007002 1 太陽の騎士]
+[charaSet J 1020002 1 湖の騎士]
+
+[imageSet Q back10000 1]
+[charaScale Q 1.01]
+[imageSet R back10000 1]
+[charaScale R 1.01]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+
+[scene 51608]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ムニエル
+高魔力反応、消滅……
+[k]
+
+＠ムニエル
+ノリッジを覆っていた炎も、[r]黒煙と一緒に消滅……
+[k]
+
+[bgm BGM_EVENT_78 0.1]
+
+[charaFace A 4]
+＠ムニエル
+やった、マシュがやったぞ[%1]！[r]『厄災』を[#祓:はら]っちまった！　大したもんだ！
+[k]
+
+？1：へへ。凄い[&でしょう:でしょ]、[&オレ:わたし]の後輩
+？2：……うん。本当に、頑張った
+
+？！
+
+[messageOff]
+[wt 0.1]
+
+[blur lens 5.0 1 8]
+[wt 1.6]
+
+
+[charaFace A 2]
+＠ムニエル
+っておまえもヤバかった……！[r]遠隔召喚を２騎、それも２回もやりやがって……！
+[k]
+
+＠ムニエル
+いいから休め、ベルト締めて寝てろ！
+[k]
+
+＠ムニエル
+ストーム・ボーダーとの合流時間まであと10分。[r]マシュはすぐ戻ってくるだろうから……
+[k]
+
+＠ムニエル
+うし、ギリギリ間に合う！[r]安心して横になってな！
+[k]
+
+？1：……そういう……ことなら……
+？2：……確かに……ちょっと、これきつい……
+
+？！
+
+[messageOff]
+[wt 1.0]
+
+[wipeout openEye 2.5 1.0]
+[bgmStop BGM_EVENT_78 2.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[blurOff lens 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[wipein openEye 1.0 1.0]
+[wait wipe]
+
+＠ペペロンチーノ
+なんでかしらねぇ。[r]狙い所、分かっちゃうのよねぇ。
+[k]
+
+＠ペペロンチーノ
+私たちはね、基本的にロクデナシ。[r]“続ける事”より“終わる事”を考えていた。
+[k]
+
+＠ペペロンチーノ
+それを肝に銘じておきなさい。[r]最後の最後まで、油断しないでね？
+[k]
+
+
+[messageOff]
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[scene 51608]
+[wt 0.2]
+
+[se ad7]
+[wipein openEye 0.3 1.0]
+[wait wipe]
+[wt 1.9]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaTalk depthOff]
+[charaDepth I 4]
+[charaDepth J 4]
+[charaDepth B 5]
+[charaDepth C 5]
+
+[scene 119800]
+
+[charaPutFSL B -256,0]
+[charaPutFSR C 256,0]
+[charaFadeTime B 0.1 0.97]
+[charaFadeTime C 0.1 0.97]
+[charaFadeinFSL I 0.1 0]
+[charaFadeinFSR J 0.1 2]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[cueSe SE_21 21_ade590]
+
+[charaPutFSR S 256,-20]
+[charaPutFSL T -256,-20]
+
+[charaEffect S bit_talk_gift_break]
+[charaEffect T bit_talk_gift_break]
+[wt 2.5]
+
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 3.0]
+
+[charaPut S 2000,2500]
+[charaPut T 2000,2500]
+[charaEffectStop S bit_talk_gift_break]
+[charaEffectStop T bit_talk_gift_break]
+
+[se ad775]
+[seVolume ad775 0 0.6]
+[wt 0.8]
+
+[se bac170]
+[cueSeVolume bac170 0 0.4]
+[cueSe SE_21 21_ad1075]
+[cueSeVolume 21_ad1075 0 0.4]
+[wt 0.4]
+[seStop 21_ad1075 0.2]
+[wt 1.2]
+
+＠マシュ
+は[line 3]ぁ。
+[k]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠
+戦いは終わった。[r]『厄災』は円卓の騎士の手で[#祓:はら]われた。
+[k]
+
+＠
+散り際。あの巨大な魔犬の赤い眼に、[r]涙のようなものが見えた気もした。
+[k]
+
+＠
+苦しみの涙なのか、感謝の涙なのか。[r]苦しみの涙であってほしいが、さて。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.4 0,-15]
+[charaMove D 0,0 0.8]
+[charaShake D 0.05 1 1 0.8]
+[wt 1.2]
+[charaFaceFade D 13 0.2]
+[wt 0.4]
+
+＠マシュ
+……ありがとうございました、[r]サー・ガウェイン、サー・ランスロット。
+[k]
+
+＠マシュ
+お二人のおかげで、最後に示せました。
+[k]
+
+＠マシュ
+……悪を倒し、義を示す。[r]彼女の願っていた、円卓の騎士の姿を。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+
+＠
+とはいえ、勝利の代償はあまりに大きい。
+[k]
+
+＠
+シェフィールドが陥落した夜、[r]報告にあった『[#円卓の盾:ラウンドシールド]』の連鎖召喚の予兆。
+[k]
+
+＠
+妖精國は『円卓の騎士』の名を輸入し、[r]認可していた。
+[k]
+
+＠
+この異聞世界において『円卓の騎士』は[r]存在していいものになっていた。
+[k]
+
+＠
+その最大の恩恵を、ギャラハッドである[r]マシュ・キリエライトは持っていたのだろう。
+[k]
+
+＠
+召喚そのものは『円卓』が行ったもので、[r]現れた英霊は一時的なものだ。
+[k]
+
+＠
+契約的な代償はなかったとはいえ、[r]マシュの体力、気力はごっそり削げ落ちている。
+[k]
+
+
+
+[charaTalk D]
+[charaFace D 38]
+[charaFadein D 0.1 1]
+＠マシュ
+……身体機能、疲労により低下していますが、[r]大きな損傷なし……呼吸系も支障なし……
+[k]
+
+[charaFace D 22]
+＠マシュ
+……良かった。[r]これなら少し休めば、活動を再開できる。
+[k]
+
+[charaFace D 13]
+＠マシュ
+あ、ムニエルさんに連絡をいれないと。
+[k]
+
+＠マシュ
+３……いえ、４分後にシャドウ・ボーダーに[r]戻れるので、その場で待機[line 3]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+＠
+今のマシュなら３分ほどの休息で[r]体力と魔力は作戦活動可能レベルまで回復し、
+[k]
+
+＠
+１分もかけず２キロメートル先の車両……[r]シャドウ・ボーダーとやらに戻れるだろう。
+[k]
+
+[bgmStop BGM_EVENT_11 1.5]
+
+＠
+[line 3]ただし。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+
+[se ad892]
+[wt 0.4]
+[seStop ad892 0.2]
+[wt 1.0]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠マシュ
+[line 3]？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+＠
+狼にご用心だ、赤ずきん。
+[k]
+
+＠
+そんなに疲れきった体じゃあ、[r]あっさり狼に殺されるぜ？
+[k]
+
+[messageOff]
+[wt 0.2]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.7 1]
+[wt 1.6]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+[wt 1.4]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.4]
+
+[se ad678]
+[cameraMove 0.3 0,-15 1.05]
+[charaMoveScale E 1.1 0.3]
+[charaMove E 0,15 0.3]
+[fadeout black 0.2]
+[wait fade]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaScale E 1.0]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[se bac389]
+[cueSe Servants_102800 bac658]
+[effect bit_talk_claw_red02 0,0 H]
+[wt 0.9]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[se ad161]
+[cueSe SE_21 21_ad1118]
+[fowardEffect bit_talk_blood_splash_fs]
+[wt 1.8]
+
+
+[effectDestroy bit_talk_claw_red02]
+[fowardEffectDestroy bit_talk_blood_splash_fs]
+
+[bgm BGM_EVENT_63 0.1]
+
+
+
+
+
+
+[wt 1.6]
+
+？1：危ない、マシュ[line 3]！
+？2：させるか、ベリルーーー！
+
+？！
+
+[messageOff]
+[charaPut S 1]
+[wt 0.2]
+
+[se ad55]
+[seVolume ad55 0 0]
+[seVolume ad55 0.5 0.8]
+[wipeout circleIn 0.3 1.0]
+[wait wipe]
+
+[scene 119800]
+[wt 0.3]
+
+[se ad7]
+[seStop ad55 0.2]
+[wipein circleIn 0.2 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.4]
+
+[se ad678]
+[charaMoveScale E 1.1 0.3]
+[charaMove E 0,15 0.3]
+
+[cueSe Servants_102800 bac658]
+[effect bit_talk_claw_red02 0,0 H]
+[wt 0.1]
+[charaFadeout E 0.2]
+[wt 0.2]
+[charaScale E 1.0]
+[wt 0.3]
+
+[se ad881]
+[se ad170]
+[se ad618]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[shake 0.02 3 4 1.0]
+[wt 1.2]
+
+[se ad671]
+[seVolume ad671 0 0.5]
+[wt 0.6]
+[shake 0.02 3 4 0.4]
+[cueSe SE_21 21_ad1101]
+[cueSe SE_21 21_ad1118]
+[cueSeStop 21_ad1118 0.8]
+[wt 1.4]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 37]
+[charaFadein D 0.1 1]
+＠マシュ
+先輩……！？[r]いえ、どうしてここに！？
+[k]
+
+？1：イヤな予感がしたんで、全力で！
+？2：理由は必要[&ない:ありません]！　以上！
+
+？！
+
+[messageOff]
+[charaFace D 21]
+[wt 1.0]
+
+[charaFace D 7]
+＠マシュ
+いえ、今は傷の手当を！[r]マスター、わたしの後ろに！
+[k]
+
+[bgmStop BGM_EVENT_63 2.5]
+
+＠マシュ
+おかげで気力、超速で回復しました！[r]危ないところ、ありがとうございます！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_71 0.1]
+
+[charaScale E 1.0]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ベリル
+Fuuuuuu[line 3][r]Huuuuuu[line 6]
+[k]
+
+＠ベリル
+Haaaaa[line 3]……アーあ。
+[k]
+
+＠ベリル
+興ざめにもほどがある。[r]あそこから駆けつけてきやがった。
+[k]
+
+＠ベリル
+ろくでもないマスターだ。[r]後方支援に徹しろと言われなかったか？
+[k]
+
+＠ベリル
+おかげでタメにタメた味見が台無しだ。[r]ハ、は[line 3]まった、く。
+[k]
+
+＠ベリル
+今のでしくじるなんざ、オレもヤキが回ったな？
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth S 7]
+[charaDepth H 6]
+[charaDepth F 5]
+[charaDepth E 4]
+
+[se ad341]
+[charaPut S 1]
+[charaEffect S bit_talk_beril_arm01]
+[wt 0.7]
+
+[charaFadein F 0.1 1]
+[wt 0.1]
+[charaFadeout E 0.1]
+[wt 1.5]
+[se adm39]
+[wt 0.6]
+
+[se ad1041]
+[se ad768]
+[wt 0.2]
+[seStop ad768 0.3]
+[wt 1.0]
+[se ad638]
+[wt 1.5]
+[se ad768]
+[wt 1.0]
+[seStop ad1041 2.0]
+[seStop ad768 1.0]
+
+[charaFadein E 0.4 1]
+[wt 0.4]
+[charaFadeout F 0.1]
+[wt 2.0]
+
+？1：[line 3]（ものすごい腐臭だ……）
+？2：……その体、もう……
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠マシュ
+ベリル・ガット……[r]やはり、まだ生きていたのですね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ベリル
+ああ、そりゃあ死なないさ。[r]今は生きる理由があるからな。
+[k]
+
+＠ベリル
+そうだろう、マシュ？
+[k]
+
+＠ベリル
+……悪かった。[r]ずいぶん長い間、放置しちまった。
+[k]
+
+＠ベリル
+おまえに飽きた訳じゃない。[r]ただ、ちょいとばかり邪魔が多くてな。
+[k]
+
+＠ベリル
+以前のように、[r]二人きりになれないばかりか、
+[k]
+
+＠ベリル
+おまえは元気になって[r]動き回るようになっちまった……。
+[k]
+
+＠ベリル
+ドクターの思惑通りってワケだ。[r]カルデアの治療室が恋しいぜ。
+[k]
+
+＠ベリル
+退屈そうだったからな。[r]お情けで刺激を与えてやったもんさ。
+[k]
+
+＠ベリル
+人間らしい感情はなくとも、[r]苦痛を受けた反応は誰にだってある。
+[k]
+
+＠ベリル
+指の骨の折れる音も、[r]堪えきれず漏れる[#苦痛:こ　え]も、よく響いた。
+[k]
+
+＠ベリル
+まるで開演前のコンサート会場だ。[r]オレと[#マシュ:ピ　ア　ノ]、世界にふたりきりってな！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth T 7]
+[charaDepth H 6]
+[charaDepth G 5]
+[charaDepth E 4]
+
+[se ad341]
+[charaPut S 1]
+[charaEffect S bit_talk_beril_arm02]
+[wt 0.7]
+
+[charaFadein G 0.1 1]
+[wt 0.1]
+[charaFadeout E 0.1]
+[wt 1.5]
+[se adm39]
+[wt 0.6]
+
+[se ad1041]
+[se ad768]
+[wt 0.2]
+[seStop ad768 0.3]
+[wt 1.0]
+[se ad638]
+[wt 1.5]
+[se ad768]
+[wt 1.0]
+[seStop ad1041 2.0]
+[seStop ad768 1.0]
+
+[charaFadein E 0.4 1]
+[wt 0.4]
+[charaFadeout G 0.1]
+[wt 1.5]
+
+[charaTalk on]
+＠ベリル
+……はあ。[r]あったま痛ぇ。どうなってやがる。
+[k]
+
+＠ベリル
+まあいい。ここにはドクターはいない。[r]新しい邪魔者はいるが……
+[k]
+
+＠ベリル
+なあに。すぐに片が付くさ。[r]……今まで、待たせてすまなかった。
+[k]
+
+？1：……なにを[line 3]
+？2：言っているんだ、おまえは
+
+？！
+
+＠ベリル
+なにって、愛の話だよ、愛の。
+[k]
+
+＠ベリル
+オレはマシュを愛したいだけだ。[r]殺したい訳じゃない。邪魔をしないでくれ。
+[k]
+
+＠ベリル
+なあ、おまえからも言ってくれマシュ。[r]これはただのコミュニケーション。
+[k]
+
+＠ベリル
+オレの愛情表現なんだって。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠マシュ
+それは………はい。[r]あなたには、敵意も、殺意もありませんでした。
+[k]
+
+＠マシュ
+治療室で、わたしの指の骨を折った時……[r]あなたは、わたしの体を[#労:いたわ]ってさえいた。
+[k]
+
+＠マシュ
+痛みに反応するわたしの声に、[r]真剣に耳を傾けていらっしゃいました。
+[k]
+
+＠マシュ
+それを[line 3]愛だと、あなたは言った。
+[k]
+
+＠マシュ
+喜びを喜ぶのではなく。[r]苦しみに苦しむ姿こそが、胸に迫ると。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_71 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+？1：[line 3]ベリル、おまえは[line 3]
+？2：そんなものは愛じゃない
+
+？！
+
+＠ベリル
+そりゃそうだ。人間だからな。[r]心の底から、気の合う友人ってヤツは少ない。
+[k]
+
+＠ベリル
+趣味嗜好も同じことだ。[r]わかり合ウコトは[line 3]
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[se ad177]
+[cueSe SE_21 21_ad1112]
+[charaFadein H 0.4 1]
+[wt 0.4]
+[seStop ad177 0.4]
+[wt 0.6]
+
+[se ad240]
+[fowardEffect bit_talk_35]
+[charaShake H 0.02 3 4 0.6]
+[wt 1.2]
+
+[se ad435]
+[seVolume ad435 0 0]
+[wt 0.1]
+
+[seVolume ad435 0.2 1.0]
+[wt 0.2]
+[charaFadeout H 0.8]
+[wt 0.6]
+[seStop 21_ad1112 1.0]
+[seStop ad435 0.8]
+[wt 1.6]
+
+[charaTalk on]
+＠ベリル
+……ああ、チクショウ。[r]もっと時間をかけたかったんだが……
+[k]
+
+＠ベリル
+こっちも頭が[#茹:ゆ]だってきた。[r]モースの呪いが回ってきやがった。
+[k]
+
+＠ベリル
+まあいいさ。[r]人間らしく振る舞えなくなるだけだ。
+[k]
+
+
+＠ベリル
+その前に花嫁を[#戴:いただ]いていこう。[r]祝福してくれていいぜ、後輩。
+[k]
+
+＠ベリル
+おまえは好きに世界を救えばいい。[r]人それぞれの趣味ってヤツだからな。
+[k]
+
+＠ベリル
+オレには理解できない事だが、止めはしない。[r]だからさ[line 3]
+[k]
+
+＠ベリル
+おまえも邪魔をするんじゃねえ。[r][line 3]人の恋路に、手を出すな。
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

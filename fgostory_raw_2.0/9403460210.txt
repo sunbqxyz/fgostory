@@ -1,0 +1,878 @@
+
+＄94-03-46-02-1-0
+
+[soundStopAll]
+
+[charaSet A 1098163000 1 莫里亚蒂]
+[charaSet B 5038000 1 齐格]
+
+[charaSet C 1098162700 1 帮派成员A]
+[charaSet D 1098162800 1 帮派成员B]
+[charaSet E 1098162900 1 帮派成员C]
+
+[charaSet F 1035001 1 迪尔姆德]
+[charaSet G 6026001 1 燕青]
+[charaSet H 6033000 1 以藏]
+
+[imageSet I cut099_close 2]
+
+
+[scene 70900]
+
+[se ad413]
+[seVolume ad413 0 0.2]
+
+[fadein black 1.0]
+[wait fade]
+
+[seVolume ad413 1.0 0.8]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠帮派成员C
+喂，再多拿点酒来！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠帮派成员B
+这里也要！[r]喂，搞快点！
+[k]
+
+？1：啊，是！
+？2：请稍等片刻！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠帮派成员A
+嘁……那帮家伙还是那么粗俗……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[seStop ad413 0.5]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠帮派成员C
+喂，[messageShake 0.05 2 2 0.3]你刚才说什么。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠帮派成员B
+你[messageShake 0.05 2 2 0.5]们这群老不死的别太嘚瑟了！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ade46]
+[se ade32]
+[wt 0.5]
+[seStop ade32 0.2]
+[wt 1.0]
+
+
+[bgmStop BGM_EVENT_5 0.5]
+[se ade124]
+[seVolume ade124 0 0.8]
+[wt 0.4]
+[se ade124]
+[wt 1.0]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠莫里亚蒂
+好啦～，到此为止，[r]到～此～为～止～！
+[k]
+
+[charaFace A 0]
+[bgm BGM_EVENT_70 0.1]
+
+＠莫里亚蒂
+我觉得各位只要一吵架，[r]必然会给我们的主人添麻烦[line 3]
+[k]
+
+＠莫里亚蒂
+而最终只会给各位带来不利。
+[k]
+
+[charaFace A 1]
+
+＠莫里亚蒂
+这只是我莫里亚蒂的愚见哦？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠帮派成员A
+……哼。[r]这话也有点道理……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠帮派成员B
+区区调酒师居然敢看不起我们……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠帮派成员C
+哈哈哈哈哈！[r]被看不起的只有你们吧！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠莫里亚蒂
+哈哈哈哈，只要大家高兴就好！
+[k]
+
+[charaFace A 0]
+
+＠莫里亚蒂
+但如果情况发展到物理暴力的程度，[r][#我就不知道会怎么样了哦]？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace D 0]
+[charaFadein D 0.1 -306,0]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaFace E 0]
+[charaFadein E 0.1 306,0]
+
+＠众帮派成员
+呜……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 1.0]
+[se ad60]
+
+[charaFadeout C 0.4]
+[charaFadeout D 0.4]
+[charaFadeout E 0.4]
+[wt 0.5]
+[seStop ad60 1.5]
+[wt 2.5]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠莫里亚蒂
+呵。[r]哎呀，酒真是危险呢。
+[k]
+
+＠莫里亚蒂
+这酒吧还是早点关门吧。[r]或者，干脆禁止他们进出好啦。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠齐格
+啊，正好。[r]我正打算拜托你这么办呢。
+[k]
+
+[charaFace B 4]
+
+＠齐格
+只要失去了酒精，[r]他们应该就不会冲动闹事了吧。
+[k]
+
+[charaFace B 0]
+
+＠齐格
+有权造访这里的，只有我，[r]组织的首脑，还有[line 3]
+[k]
+
+＠齐格
+[#即将抵达的他们]。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+＠莫里亚蒂
+明白了，我的主人。
+[k]
+
+？1：明白了！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.1]
+
+＠齐格
+嗯。[r]那剩下的就拜托了。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.7]
+[wt 0.7]
+[charaFace B 4]
+[wt 1.5]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaFace B 6]
+
+＠齐格
+……明天终于要到了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+＠莫里亚蒂
+还感到依依不舍吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.1]
+
+＠齐格
+当然。
+[k]
+
+＠齐格
+那可是我们家一千年以来[r]不为人知地继承下来的圣遗物。
+[k]
+
+[charaFace B 4]
+
+＠齐格
+我从未想过会转让出去。
+[k]
+
+[charaFace B 0]
+
+＠齐格
+但既然被人知道了那个在我手上，[r]就有可能牵连整座城镇。
+[k]
+
+[charaFace B 5]
+
+＠齐格
+既然如此，还不如尽可能高价卖出去。
+[k]
+
+[charaFace B 0]
+
+＠齐格
+然后我打算用得来的资金发展这座城镇。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠莫里亚蒂
+真令人敬佩。
+[k]
+
+[charaFace A 0]
+
+＠莫里亚蒂
+为了实现这个目标，[r]我们也会不断努力。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠齐格
+嗯，有你在就放心了。[r]那我走了[line 3]
+[k]
+
+[messageOff]
+[wt 0.3]
+[bgmStop BGM_EVENT_11 1.0]
+[se ad95]
+
+[charaMove B -40,0 0.4]
+[charaFadeout B 0.4]
+
+[wt 1.0]
+[seStop ad95 0.5]
+
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠莫里亚蒂
+呼，真是的。[r]……哎呀，怎么了，御主。
+[k]
+
+？1：圣遗物是什么？
+？！
+
+[bgm BGM_EVENT_2 0.1]
+[charaFace A 0]
+
+＠莫里亚蒂
+啊，到明天你就明白了。[r]好了，我们继续昨天的讲课吧。
+[k]
+
+＠莫里亚蒂
+到昨天为止，三个组织的特征都掌握了吗？
+[k]
+
+？1：三个组织的规模各不相同。
+？2：三个组织的立场各不相同。
+？！
+
+[charaFace A 1]
+
+＠莫里亚蒂
+没错！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 71100]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_49 0.1]
+[wt 1.0]
+
+＠莫里亚蒂
+好了，他们三个组织分别为了夺取[r]城镇的支配权而选择了最合理的行动。
+[k]
+
+[scene 71101 1.0]
+＠莫里亚蒂
+对组织A……迪尔姆德而言的理想行动，[r]是与以藏齐心协力搞垮燕青。
+[k]
+
+[scene 71102 1.0]
+
+＠莫里亚蒂
+然后，只要慢慢吸收以藏的小组织即可。
+[k]
+
+＠莫里亚蒂
+然而，以藏并不会如他所愿。
+[k]
+
+＠莫里亚蒂
+只要与迪尔姆德联手，固然能打倒燕青，[r]但他是无法赢过迪尔姆德的。
+[k]
+
+＠莫里亚蒂
+换言之，自己的失败早已注定。[r]所以，以藏是不会与迪尔姆德联手的。
+[k]
+
+[scene 71103 1.0]
+
+＠莫里亚蒂
+那与燕青联手是否更好呢？[r]事实并非如此。
+[k]
+
+＠莫里亚蒂
+因为他们同样是与当地关系紧密的组织！
+[k]
+
+[scene 71104 1.0]
+
+＠莫里亚蒂
+那么，[#组织A:迪尔姆德]与[#组织B:燕青]联手，[r]先搞垮[#组织C:以藏]的方式又怎么样呢？
+[k]
+
+＠莫里亚蒂
+这样也不好。[r]搞垮以藏虽简单，但损失会十分惨重。
+[k]
+
+＠莫里亚蒂
+一旦港湾劳动者的效率降低，[r]这座城镇的经济必然会崩盘。
+[k]
+
+＠莫里亚蒂
+最重要的是，根本找不到联手搞垮以藏的好处。
+[k]
+
+＠莫里亚蒂
+双方都只是希望联手的对方[r]能在与组织C的战斗中遭受更大的损失。
+[k]
+
+[messageOff]
+
+[scene 71100 1.0]
+[wt 1.5]
+
+＠莫里亚蒂
+……换言之啦，他们这些组织全都是[r][#无法联手也无法敌对的]。
+[k]
+
+＠莫里亚蒂
+完全陷入了胶着状态。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[scene 70900]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[fadein black 1.0]
+[bgmStop BGM_EVENT_49 1.0]
+[wait fade]
+
+＠莫里亚蒂
+而在这种时候，又增加了一种要素。
+[k]
+
+[charaFace A 5]
+＠莫里亚蒂
+[#圣杯战争][line 3][r]这个不用说，御主也知道吧？
+[k]
+
+[messageOff]
+
+[wt 0.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[imageSet C cut063_cinema 1]
+[charaScale C 1.01]
+[charaDepth C 10]
+
+[charaFadein C 0.1 0,-200]
+
+[scene 71501]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-50]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠齐格
+……呼。[r]终于要来了吗……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[charaFadein I 0.2 0,-200]
+[wt 2.6]
+[charaFadeout I 0.4]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-50]
+
+＠齐格
+从明天开始，为了争夺这个箱子，将会发生争斗。[r]这也是无可奈何的。
+[k]
+
+＠齐格
+这都是为了更为美好的未来。[r]得怀有不惜付出一些牺牲的精神才行。
+[k]
+
+[charaFace B 4]
+
+＠齐格
+……心情真沉重……[r]但是，只有这个办法了。
+[k]
+
+＠齐格
+因为我们已经没有守护这圣遗物的力量了。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_70 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+
+[scene 71001]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_72 0.1]
+
+[charaScale F 1.5]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 0,-50]
+[wt 0.4]
+
+＠迪尔姆德
+你们再安分一阵子。[r]问题才刚刚开始，才刚刚开始。
+[k]
+
+＠迪尔姆德
+获得支配权的，会是我们。
+[k]
+
+＠迪尔姆德
+连一粒尘土，[r]都不会留给可恨的闯入者一族。
+[k]
+
+[charaFace F 5]
+
+＠迪尔姆德
+待仪式一结束，[r]就全部杀光……！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 1.0 1.0]
+[wait wipe]
+
+[charaScale F 1.0]
+[charaFadeout F 0.1]
+
+[charaSet D 1098162800 1 帮派成员B]
+
+[scene 70800]
+[wt 1.0]
+
+[wipein rectangleStripRightToLeft 1.0 1.0]
+[wait wipe]
+
+[charaScale G 1.5]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.4 -200,-50]
+[wt 0.4]
+
+＠燕青
+[line 3]嘎嘎嘎。
+[k]
+
+[charaFace G 8]
+
+＠燕青
+高傲的老人还在大喊大叫呢。[r]疯狂得根本不像是个侠义之士。
+[k]
+
+＠燕青
+既然他们历经二十年，还辱骂我们是后来者的话，[r]那哪怕耗费两百年，也一定要与他们同化。
+[k]
+
+[charaFace G 7]
+
+＠燕青
+这座城市渴求我们的支配。[r]渴求更为过激，更为绚烂的。
+[k]
+
+[charaFace G 9]
+
+＠燕青
+从明天开始的所有行动，都将决定。[r]无论哪个组织，都休想小看我们！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 1.0 1.0]
+[wait wipe]
+
+[charaScale G 1.0]
+[charaFadeout G 0.1]
+
+[scene 49302]
+[wt 1.0]
+
+[wipein rectangleStripLeftToRight 1.0 1.0]
+[wait wipe]
+
+[charaScale H 1.5]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 200,-50]
+[wt 0.1]
+
+
+＠以藏
+我们生于海上，死于海上。
+[k]
+
+＠以藏
+既然掌握着这座城镇的生命线，[r]那无论规模再怎么小，我们也是最强的。
+[k]
+
+[charaFace H 13]
+＠以藏
+而且[line 3][r]战斗一结束，作为组织的我们也会成为最大的。
+[k]
+
+＠以藏
+哪怕匍匐在地向我们求饶……[r]也一概不用管。
+[k]
+
+[charaFace H 2]
+
+＠以藏
+全部杀光！
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_72 1.5]
+[wait fade]
+
+[charaScale H 1.0]
+[charaFadeout H 0.1]
+
+[scene 70900]
+
+[charaFadeout C 0.1]
+
+[cameraMove 0.0 0,-24 1.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+？1：圣杯战争……！？
+？！
+
+＠莫里亚蒂
+话虽如此，这次的圣杯战争算是微小版。[r]是被称作[line 3][#亚种圣杯战争]的那类。
+[k]
+
+＠莫里亚蒂
+明天，会有三个魔术师抵达。
+[k]
+
+＠莫里亚蒂
+他们首先，会先围绕齐格家传下来的圣遗物，[r]举行一场拍卖会。
+[k]
+
+[charaFace A 1]
+
+＠莫里亚蒂
+这家的圣遗物相当强大。
+[k]
+
+[charaFace A 0]
+
+＠莫里亚蒂
+对想参加圣杯战争的他们来说，[r]那似乎是无论如何都想得到的东西。
+[k]
+
+＠莫里亚蒂
+然而问题就在这里[line 3]
+[k]
+
+＠莫里亚蒂
+这三个魔术师的背后的靠山，[r]分别是这三个相互争斗的组织。
+[k]
+
+＠莫里亚蒂
+亚种圣杯战争，[r]等同于争夺这座城镇支配权的战争。
+[k]
+
+？1：事情闹大了。
+
+[charaFace A 1]
+
+＠莫里亚蒂
+嗯。[r]闹大了闹大了。
+[k]
+
+[charaFace A 0]
+
+？2：这……这下不得了了……
+
+[messageOff]
+[wt 0.5]
+[charaFaceFade A 5 0.5]
+[wt 1.0]
+[charaFace A 0]
+
+＠莫里亚蒂
+……嗯，非常不得了！
+[k]
+
+？！
+
+＠莫里亚蒂
+换言之，我们的职责……
+[k]
+
+＠莫里亚蒂
+就是想办法对他们进行调整，[r]以便将城镇的损失降到最小。
+[k]
+
+[charaFace A 1]
+
+＠莫里亚蒂
+就是这么一回事。
+[k]
+
+？1：但是该怎么做啊？
+？！
+
+[charaFace A 0]
+
+＠莫里亚蒂
+是呢。
+[k]
+
+＠莫里亚蒂
+没有迦勒底的支援，[r]只有你我两人可以采取的行动为数不多。
+[k]
+
+＠莫里亚蒂
+但也不能撒手不管……[r]你的表情在这么说呢，御主。
+[k]
+
+[messageOff]
+[wt 0.2]
+[cameraMove 0.5 0,-14 1.1]
+[wt 0.8]
+[cameraMove 0.3 0,-24 1.1]
+[wt 1.0]
+
+[charaFace A 1]
+[wt 1.0]
+
+[charaFace A 0]
+
+＠莫里亚蒂
+好了，总之一切都先等明天吧。[r]明天，让我们好好确认[line 3]
+[k]
+
+[charaFace A 2]
+
+＠莫里亚蒂
+各阵营究竟会如何行动！
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

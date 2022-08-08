@@ -1,0 +1,206 @@
+
+
+＄91-10-09-02-2-0
+
+[soundStopAll]
+
+[charaSet A 1009001 1 莫德雷德]
+[charaSet B 98084000 1 肃清骑士1]
+[charaSet C 98084000 1 肃清骑士2]
+[charaSet D 98084000 1 肃清骑士3]
+
+[scene 20730]
+[cameraFilter gray]
+[effect bit_sepia01]
+[fadein black 1.5]
+[wait fade]
+
+[se ad16]
+[wt 1.5]
+[effect bit_talk_kengekiall02]
+[se ad33]
+[wt 1.5]
+[effect bit_talk_13]
+[se ad170]
+[wt 1.5]
+[effect bit_talk_v_slash01]
+[se ad32]
+[seStop ad16 1.0]
+[wt 1.0]
+[bgm BGM_EVENT_1 0.1]
+
+＠
+[line 3]不记得斩杀了多少人。
+[k]
+
+＠
+[line 3]也没有数过葬送了多少人。
+[k]
+
+＠
+只是斩杀、斩杀、不断斩杀。
+[k]
+
+＠
+我与那些杂兵其实并无仇怨。
+[k]
+
+＠
+但如果他们是亚瑟王的手下，[r]那就是王的手足，是王的指尖。
+[k]
+
+＠
+既然如此，就要斩杀。
+[k]
+
+＠
+将一切都斩断。
+[k]
+
+＠
+[line 3]来吧，怎么样！　伟大的亚瑟王！
+[k]
+
+＠
+你的国家到此结束了！[r]你的传说到此结束了！
+[k]
+
+＠
+全部[line 3]全部！[r]都是由我终结的！
+[k]
+
+＠
+憎恨我吧！[r]厌恶我吧！
+[k]
+
+＠
+给我怨恨，给我激愤。[r]将敌意！　将杀意投向我吧！
+[k]
+
+＠
+憎恨我！[r]厌恶我！
+[k]
+
+＠
+然后[line 3]
+[k]
+
+＠
+看着我，父王……！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_1 2.0]
+[fadeout black 2.0]
+[wait fade]
+[cameraFilter normal]
+[effectStop bit_sepia01]
+
+[scene 20730]
+[wt 1.0]
+[effect bit_talk_haboob_01]
+[fadein black 2.0]
+[wait fade]
+
+[se ad2]
+
+？1：…………
+？！
+
+？1：……这里是哪儿啊。
+？2：……和昨天的梦差别好大啊？
+？！
+
+[seStop ad2 1.0]
+[effectStop bit_talk_haboob_01]
+[wt 1.5]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+[bgm BGM_EVENT_2 0.1]
+＠莫德雷德
+御主！
+[k]
+
+＠莫德雷德
+哈，居然真的来了，你这好事之徒！
+[k]
+
+？1：这个问题姑且不论……
+？2：这里是哪儿？
+？！
+
+[bgmStop BGM_EVENT_2 0.7]
+[charaFace A 5]
+＠莫德雷德
+很遗憾，愉快的聊天只能稍后再说了，御主。[r][line 3]有什么正在靠近我们。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.4]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[se ad166]
+[charaTalk off]
+[charaFadein B 0.4 -250,0]
+[charaFadein C 0.4 50,0]
+[charaFadein D 0.4 306,0]
+[charaMove B 0 0.4]
+[charaMove C 1 0.4]
+[charaMove D 2 0.4]
+[wait charaMove B]
+[wt 1.5]
+[seStop ad166]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaTalk on]
+[wt 0.4]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_3 0.1]
+＠莫德雷德
+这些家伙是[line 3]。
+[k]
+
+[charaFace A 2]
+＠莫德雷德
+嘿，原来是这样啊。
+[k]
+
+＠莫德雷德
+难怪我会觉得有印象。[r]真是的，不要继昨天之后，还让我看这种恶劣的梦境啦。
+[k]
+
+
+＠莫德雷德
+[line 3]好啊，放马过来吧，你们这群废物。
+[k]
+
+＠莫德雷德
+让你们切身感受一下[r]圆桌骑士之一，莫德雷德的力量吧！
+[k]
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

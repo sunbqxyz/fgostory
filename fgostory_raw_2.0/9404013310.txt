@@ -1,0 +1,920 @@
+
+
+
+＄94-04-01-33-1-0
+
+[soundStopAll]
+
+
+[charaSet A 98001000 1 玛修]
+[charaSet B 98115300 1 福尔摩斯]
+[charaSet C 98111500 1 达·芬奇]
+[charaSet D 1098124510 1 达·芬奇（萝莉）]
+[charaSet E 98110000 1 柳生但马守]
+[charaSet F 6019300 1 风魔小太郎]
+[charaSet G 1008300 1 齐格飞]
+[charaSet H 5008300 1 梅林]
+[charaSet I 98006200 1 敌人]
+
+[charaSet J 98001000 1 通讯特效]
+
+[branchQuestNotClear lblNotClear1 3000303]
+[flag IsClear true]
+[branch lblConf1]
+[label lblNotClear1]
+[flag IsClear false]
+[label lblConf1]
+
+
+
+[branch lblNotClear2 IsClear false]
+[scene 66700]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 60300]
+[label lblConf2]
+
+
+[se ad405]
+[seVolume ad405 0 0]
+[se ad518]
+[seVolume ad518 0 0]
+[se ad413]
+[seVolume ad413 0 0]
+
+[fadein black 1.5]
+
+[seVolume ad405 1.0 0.5]
+[seVolume ad518 1.0 0.5]
+[seVolume ad413 1.0 0.7]
+[wait fade]
+[wt 2.0]
+
+[seStop ad405 1.1]
+[seStop ad518 1.1]
+[seStop ad413 1.1]
+[wt 0.7]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠玛修
+话说前辈。
+[k]
+
+＠玛修
+我突然意识到一件事。[r]这么说来……
+[k]
+
+＠玛修
+柳生先生的说法，和特异点拉斯维加斯的真相，[r]似乎有一些不同吧……？
+[k]
+
+[messageOff]
+[wipeout circleIn 1.0 1.0]
+[bgm BGM_EVENT_77 1.0 0.4]
+[wait wipe]
+
+[effect bit_sepia01]
+
+[charaFadeout A 0.1]
+
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+[wipein circleIn 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠柳生但马守
+哪怕远离世俗的我也对此有所耳闻。[r]据说是一年一度于北美大陆西部举行的……
+[k]
+
+＠柳生但马守
+决出[#世界第一泳装剑豪]的盛会。[r]其名为[line 3]
+[k]
+
+[messageOff]
+[wipeout circleIn 1.0 1.0]
+[wait wipe]
+
+
+[effectStop bit_sepia01]
+
+[charaFadeout E 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[bgm BGM_EVENT_77 1.0 1.0]
+[wipein circleIn 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠玛修
+泳装剑豪御前比试。[r]又称，泳装剑豪七色决胜。
+[k]
+
+＠玛修
+柳生先生说，[r]这应该是一年一度于大陆西部举行的活动才对。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch lblClear3 IsClear true]
+
+[label lblNotClear3]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[se ad13]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-90]
+[wt 0.3]
+
+＠达·芬奇
+没错没错。[r]事实上，他的证言与这次的结果有矛盾。
+[k]
+
+＠达·芬奇
+于大峡谷发生的特异点，[r]也就是绚烂拉斯维加斯是最近才成立的吧？
+[k]
+
+[charaFace C 4]
+
+＠达·芬奇
+这样的存在是不可能成为什么[r]『一年一度举行的』惯例活动的。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[branch lblConf3]
+
+[label lblClear3]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[se ad13]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.3]
+
+＠福尔摩斯
+回答正确。[r]没错，他的证言与这次的结果有矛盾。
+[k]
+
+＠福尔摩斯
+于大峡谷发生的特异点，[r]也就是绚烂拉斯维加斯是最近才成立的。
+[k]
+
+＠福尔摩斯
+然而但马守却说这是『一年一度举行的』。[r]宛若从过去到现在一直都是这样。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 23]
+[charaFadein D 0.1 1]
+
+＠D：达·芬奇
+……我说福尔摩斯。你该不会又从一开始就……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠D：达·芬奇
+但在获得确证前保持沉默？[r]一如既往的？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+
+＠D：达·芬奇
+啊，真是的！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠D：达·芬奇
+唔[messageShake 0.02 3 3 0.5]唔唔唔，你倒是说话啊！　你这家伙！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[label lblConf3]
+
+[wt 0.1]
+[se ade74]
+[wt 0.2]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.6 1]
+[wt 1.0]
+
+[seStop ade74]
+[wt 0.2]
+
+＠齐格飞
+……御主。请容我打扰各位的对话。
+[k]
+
+[charaFace G 4]
+
+＠齐格飞
+……[r]……
+[k]
+
+＠齐格飞
+其实……那个。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠玛修
+齐格飞先生？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+[wt 0.4]
+
+？1：怎么了？
+？2：你的脸色好像不太好……
+
+？！
+
+＠齐格飞
+嗯。
+[k]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠齐格飞
+其实……[r]我总觉得自己的问题丝毫没有得到解决。
+[k]
+
+[charaFace G 2]
+
+＠齐格飞
+我觉得自己必须去战斗……[r]穿着……这身夏装！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.2]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+[wt 0.3]
+
+＠风魔小太郎
+主公！　其……其实……
+[k]
+
+[charaFace F 13]
+
+＠风魔小太郎
+我也……莫名感到焦虑！[r]特异点的元凶应该已经被讨伐了……
+[k]
+
+[charaFace F 12]
+
+＠风魔小太郎
+唔唔……太失败了……
+[k]
+
+[se ad55]
+[seVolume ad55 0 0]
+
+？1：这！　难道！
+？！
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaSet J 98006200 1 敌人（剪影）]
+[charaFilter J silhouette 00000080]
+
+[charaDepth I 4]
+[charaDepth J 6]
+
+[seVolume ad55 0.9 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[wt 1.2]
+
+[se ad224]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 824,0]
+[wt 0.2]
+
+[seStop ad55 0.2]
+[charaMove H 1 0.5]
+[wt 1.0]
+
+[charaFace H 2]
+
+＠梅林
+没错！[r]也就是说泳装剑豪的战斗[line 3]还没有结束！
+[k]
+
+
+？1：你这个冠位混蛋！
+？！
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaFace H 0]
+＠梅林
+我是夏日魔术师，梅林大哥哥！[r]哎呀哎呀，又见面了呢！
+[k]
+
+[charaFace H 1]
+
+＠梅林
+然后呢，刚才说到哪儿了[line 3]对了对了，泳装剑豪！[r]啊哈哈哈，你们该不会认为一切都结束了吧？
+[k]
+
+＠梅林
+怎么可能啦。其实赌场总经理什么的，[r]原本就和泳装剑豪毫无关系！
+[k]
+
+＠梅林
+天魔的问题也是哦！[r]我们只是利用了泳装剑豪之战罢了！
+[k]
+
+[charaFace H 0]
+
+＠梅林
+也就是说哦？
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.8 1.0]
+[bgm BGM_EVENT_94 0.8 0.4]
+[wait wipe]
+
+[charaFadeout H 0.1]
+
+[scene 80500]
+
+[pictureFrame cut063_cinema]
+
+[charaTalk off]
+[charaFace I 0]
+[charaFace J 0]
+[charaFadein I 0.1 0,-50]
+[charaFadein J 0.1 0,-50]
+[wt 0.5]
+
+[wipein rightToLeft 0.8 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaFadeout J 0.7]
+[wt 1.1]
+
+＠梅林
+[line 3]泳装剑豪之战不会那么轻易结束。
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.8 1.0]
+[wait wipe]
+
+[scene 81200]
+
+[charaFace J 0]
+[charaFadein J 0.1 0,-50]
+[wt 0.5]
+
+[wipein rightToLeft 0.8 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaFadeout J 0.7]
+[wt 1.1]
+
+＠梅林
+[line 3]倒不如说现在才刚刚开始。
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.8 1.0]
+[wait wipe]
+
+[scene 81300]
+
+[charaFace J 0]
+[charaFadein J 0.1 0,-50]
+[wt 0.5]
+
+[wipein rightToLeft 0.8 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaFadeout J 0.7]
+[wt 1.1]
+
+＠梅林
+[line 3]古今东西的英灵汇聚一堂。
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.8 1.0]
+[wait wipe]
+
+[scene 81500]
+
+[charaFace J 0]
+[charaFadein J 0.1 0,-50]
+[wt 0.5]
+
+[wipein rightToLeft 0.8 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaFadeout J 0.7]
+[wt 1.1]
+
+＠梅林
+[line 3]只会持续不停地战斗。
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.8 1.0]
+[wait wipe]
+
+[scene 81900]
+
+[charaFace J 0]
+[charaFadein J 0.1 0,-50]
+[wt 0.5]
+
+[wipein rightToLeft 0.8 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaFadeout J 0.7]
+[wt 1.1]
+
+＠梅林
+[line 3]为追求最强宝座而战，创造这夏天最后的回忆！
+[k]
+
+
+[messageOff]
+[wipeout leftToRight 0.8 1.0]
+[wait wipe]
+
+[charaSet B 98001000 1 dummy特效2]
+
+[charaDepth H 1]
+[charaDepth A 1]
+[charaDepth F 1]
+[charaDepth G 9]
+[charaDepth B 9]
+
+[scene 82100]
+
+[charaFace J 0]
+[charaFadein J 0.1 0,-50]
+[wt 0.5]
+
+[wipein rightToLeft 0.8 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaFadeout J 0.7]
+[wt 1.1]
+
+＠梅林
+[line 3]这正是！
+[k]
+
+
+[messageOff]
+[wipeout leftToRight 0.8 1.0]
+[bgmStop BGM_EVENT_94 0.8]
+[wait wipe]
+
+[charaFadeout I 0.1]
+
+[pictureFrame]
+
+[branch lblNotClear4 IsClear false]
+[scene 66700]
+[branch lblConf4]
+[label lblNotClear4]
+[scene 60300]
+[label lblConf4]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+[wt 0.5]
+
+[wipein rightToLeft 0.8 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠梅林
+这正是！[r]晩夏泳装剑豪御前比试！
+[k]
+
+＠梅林
+别名，[wt 0.4][charaFace H 2][charaEffect B bit_talk_41]里·泳装剑豪七番决胜！！！[se ade98]
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut B 2000,2000]
+
+[charaFace G 2]
+[charaFace A 6]
+[charaFace F 7]
+[charaFadein G 0.1 1]
+[charaFadein A 0.1 300,0]
+[charaFadein F 0.1 -300,0]
+[wt 1.6]
+
+？1：晩夏？
+？2：什么意思？
+
+？！
+
+[messageOff]
+[charaFadeout G 0.1]
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+[wt 1.4]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFace F 5]
+[charaFadein G 0.1 2]
+[charaFadein F 0.1 0]
+
+＠齐格飞
+噢噢……[bgm BGM_EVENT_82 0.1][r]里·泳装剑豪七番决胜！！
+[k]
+
+[charaFace G 2]
+＠齐格飞
+心跳加速！　鲜血沸腾！[r]竟能令人如此亢奋[line 3]太厉害了……！
+[k]
+
+＠风魔小太郎
+我也是……[r]唔唔，想战斗……无比想穿着这身打扮战斗！
+[k]
+
+＠风魔小太郎
+明明不是什么忍者装束！[r]怎……怎么会这样……唔唔……！
+[k]
+
+？1：齐格飞！　小太郎！
+？2：你们俩振作点！
+
+？！
+
+[messageOff]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[charaShake A 0.02 3 3 0.4]
+[wt 1.4]
+
+[charaFace A 6]
+
+＠玛修
+哎，奇怪？[r]为什么连我都激动得颤抖起来了[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+
+＠梅林
+因为不只是战斗之人，连观众都会为之兴奋！[r]来吧！　御主！
+[k]
+
+[charaFace H 1]
+＠梅林
+夏天才刚刚开始！[r]让我们尽情玩到特异点消失为止吧！
+[k]
+
+＠梅林
+我会为各位制作一个无比热烈的夏天！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+
+[branch lblClear5 IsClear true]
+
+[label lblNotClear5]
+
+[charaSet E 6001001 1 小次郎]
+[charaSet F 6001002 1 小次郎(再临)]
+
+[scene 10204]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad452]
+[wt 0.4]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 50,0]
+[charaMove E 1 0.4]
+[wt 0.4]
+[seStop ad452 0.4]
+[wt 0.4]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠小次郎
+……好了，那么。
+[k]
+
+＠小次郎
+说到底，[r]泳装剑豪七色决胜到底是什么呢？
+[k]
+
+＠小次郎
+大陆西部是否真的会每年举行。[r]哎呀真是的。
+[k]
+
+＠小次郎
+那个魔术师有没有提及相关内容呢？
+[k]
+
+[charaFace E 2]
+＠小次郎
+『说得没错！』
+[k]
+
+[charaFace E 0]
+
+＠小次郎
+这话该不会只是他脱口而出呢？
+[k]
+
+[messageOff]
+[charaFace E 1]
+[wt 1.2]
+
+＠小次郎
+诸如此类[line 3][r]尽管在下很想指摘。
+[k]
+
+＠小次郎
+但导致异变发生的圣杯已经不在该地。
+[k]
+
+＠小次郎
+留下的全是渴望战斗的泳装剑豪。[r]其中，似乎还有并未身着夏装却自称泳装剑豪，
+[k]
+
+＠小次郎
+情绪高涨的人物。
+[k]
+
+[charaFace E 5]
+
+＠小次郎
+此后路途为修罗，[r]唯有追求更多战斗之人才可前往。
+[k]
+
+[messageOff]
+[wt 1.2]
+
+[charaFace E 0]
+＠小次郎
+在下？
+[k]
+
+＠小次郎
+在下的话，是啊……
+[k]
+
+＠小次郎
+尽管没有夏日的灵衣[line 3]
+[k]
+
+[messageOff]
+[se ad29]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.5]
+
+＠F：小次郎
+[line 4]这个灵基怎么样？
+[k]
+
+[messageOff]
+[charaFace F 1]
+[wt 1.9]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+
+[branch lblConf5]
+
+[label lblClear5]
+
+[charaSet E 1098123200 1 戈尔德鲁夫]
+
+[scene 66400]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad95]
+[wt 0.6]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.4 50,0]
+[charaMove E 1 0.4]
+[wt 0.4]
+[seStop ad95 0.4]
+[wt 0.4]
+
+[bgm BGM_EVENT_7 0.1]
+
+
+[charaFace E 12]
+＠戈尔德鲁夫
+……啊，打扰一下哦？
+[k]
+
+＠戈尔德鲁夫
+说到底，泳装剑豪的比试[r]真的每年都会在大陆西部举办吗？
+[k]
+
+＠戈尔德鲁夫
+那个魔术师有没有提及相关内容呢？
+[k]
+
+[charaFace E 16]
+＠戈尔德鲁夫
+『说得没错！』
+[k]
+
+[charaFace E 4]
+
+＠戈尔德鲁夫
+这话其实只是他脱口而出吧？
+[k]
+
+[messageOff]
+[wt 1.2]
+
+[charaFace E 18]
+＠戈尔德鲁夫
+唔唔，唔，唔唔唔唔唔唔唔唔……
+[k]
+
+[charaFace E 13]
+＠戈尔德鲁夫
+有[messageShake 0.02 3 3 0.8]谁！　能为我！[r]思路清晰地说明一下吗！！！！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+
+[label lblConf5]
+
+
+
+[wt 0.5]
+[soundStopAll]
+[end]

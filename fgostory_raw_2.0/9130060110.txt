@@ -1,0 +1,93 @@
+＄91-30-06-01-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 10310]
+[charaSet A 8001000 2 玛修]
+[charaSet B 98003000 2 Dr.罗曼]
+[charaSet C 98002000 2 芙芙]
+[charaSet D 3006001 1 弁庆]
+[charaSet E 98025000 1 影从者]
+[charaFace D 0]
+[charaFadein D 0 1]
+[fadein black 1]
+[wait fade]
+＠弁庆
+哦哦，御主大人。[r]贫僧有事相谈……
+[k]
+
+？1：什么事？
+
+？！
+
+[charaFace D 4]
+＠弁庆
+嗯。其实待命不是很合贫僧的性格。
+[k]
+
+[charaFace D 0]
+＠弁庆
+贫僧在寻找适合锻炼的场所[line 2]。
+[k]
+
+[charaFadeout D 0]
+[charaTalk A]
+[charaFadein D 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+＠玛修
+只是锻炼……吗……？[r]那何不尝试一下模拟战斗用的训练课程呢？
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[charaFadeout A 0]
+[charaFadeout D 0]
+[scene 10000 0]
+[fadein black 0.5]
+[wait fade]
+[effect bit_talk_07]
+[se ad12]
+[wt 4]
+[fadeout white 1]
+[wait effect]
+[scene 20300 0]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[fadein white 0.5]
+[wait fade]
+[wt 0.2]
+＠玛修
+准备好了吧。[r]那这就召唤训练用拟似从者个体。
+[k]
+
+＠玛修
+是类似影从者的存在，[r]但安全性极高。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[communicationChara 98003003 1 5 0 0]
+[wt 0.3]
+＠Dr.罗曼
+是利用召唤阵投影而成的产物。[r]那我现在就召唤几个去你们那儿吧。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFadein A 0.1 2]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+＠弁庆
+嗯，放马过来吧！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_2 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,1993 @@
+
+
+＄03-00-01-20-1-1
+
+[soundStopAll]
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 1098126400 1 帕茨西]
+[charaSet C 2010001 1 比利]
+[charaSet D 1017001 1 武藏]
+[charaSet E 98006000 1 魔兽]
+[charaSet F 1098123210 1 戈尔德鲁夫]
+[charaSet G 98115300 1 福尔摩斯]
+
+[charaSet H 98115000 1 特效用]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 21500]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[fadein black 0.8]
+[wait fade]
+
+＠比利
+唔～，该用什么台词收尾呢。[r]让我们在地狱再见吧，如何……？
+[k]
+
+[charaFace C 1]
+
+＠比利
+啊，现在已经仿佛身处地狱了呢！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.2]
+
+[charaEffect E bit_shot_01 -50,180]
+[se ad563]
+[wt 0.1]
+[charaShake E 0.05 4 4 0.6]
+[se ad563]
+[wt 0.1]
+[se ad563]
+[wt 1.2]
+[charaEffectStop E bit_shot_01]
+
+[se ad26]
+[wt 0.8]
+[charaFadeout E 0.7]
+[charaMove E 0,-30 0.6]
+
+[wt 0.6]
+[se ad144]
+[bgmStop BGM_EVENT_80 1.5]
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠帕茨西
+接下来就是一条直路了。
+[k]
+
+？1：好，走吧！
+？！
+
+
+[charaFadeout B 0.1]
+[messageOff]
+[wt 0.1]
+
+[se ad55]
+[cameraMove 3.0 0,20 1.2]
+[wt 2.0]
+
+[se ad474]
+
+[fadeout white 1.5]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.2]
+
+[seStop ad55 1.0]
+[scene 21501]
+
+[charaSet E 7008001 1 贝奥武夫]
+
+[scene 55002]
+[wt 1.5]
+
+[wait effect bit_talk_34]
+
+[fadein white 2.0]
+[seStop ad474 1.0]
+[wait fade]
+[cameraMove 1.2 0,0 1.0]
+[wt 2.0]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛修
+成功[line 3]逃脱！[bgm BGM_EVENT_77 0.1]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 0]
+
+[charaFace C 0]
+[charaFadein C 0.1 2]
+
+＠帕茨西
+……啊啊，这果然不是在做梦啊……
+[k]
+
+＠比利
+刚才就已经后悔得够多了吧？[r]吊唁稍后再说，现在应该前进。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠玛修
+各位辛苦了。[r]由于离开了迷宫，通讯机能全部恢复了。
+[k]
+
+[charaFace A 0]
+
+＠玛修
+[#杀戮猎兵:亲卫队]……[r]还有马彻利斯司祭……都不见了。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+
+[se ad15]
+[wt 0.5]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠戈尔德鲁夫
+呼。终于能在显示器上看到你们的情况了。
+[k]
+
+＠戈尔德鲁夫
+真是的，你们这群蠢货太掉以轻心了！[r]别闯进我们无法追踪的地方啊！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠比利
+别说这些强人所难的话啦。[r]那种偷袭要怎么应付啊。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠福尔摩斯
+比利说得没错，Mr.戈尔德鲁夫。[r]这次能够生还已经可以说是我们的胜利了。
+[k]
+
+＠福尔摩斯
+阿斯忒里俄斯的宝具在希腊世界中[r]也是屈指可数的“食人陷阱”。
+[k]
+
+＠福尔摩斯
+能够克服迷宫，且获得Miss宫本这一战力。[r]倘若这还不算胜利[line 3][wt 0.4][bgmStop BGM_EVENT_77 1.0][charaFace G 6]唔？
+[k]
+
+＠福尔摩斯
+Miss宫本。[r]难不成，你[#还漂浮着]？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[bgm BGM_EVENT_79 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠武藏
+嗯。漂浮着，我正漂浮着。[r]不愧是帅气名侦探。这指出非常准确。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+漂浮着……？
+[k]
+
+？1：这是什么意思？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠福尔摩斯
+她并不是牢固地[r]扎根于这[#异闻带:Lostbelt]的从者。
+[k]
+
+＠福尔摩斯
+尽管方才与[&Mr.:Miss][%1]连通了魔力路径，[r]但其存在仍是不安定的。
+[k]
+
+[charaFace G 6]
+
+＠福尔摩斯
+原来如此。独自一人也能灵子转移的优点，[r]反过来也会造成这种缺点啊。
+[k]
+
+＠福尔摩斯
+换句话说，她近似于幽灵。
+[k]
+
+[charaFace G 0]
+
+＠福尔摩斯
+无论在泛人类史，还是在[#异闻带:Lostbelt]，[r]她都像是『不为世界所容的遭排挤之人』。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠武藏
+…………
+[k]
+
+[charaFace D 8]
+
+＠武藏
+嗯，情况就是这样！
+[k]
+
+＠武藏
+我原本就是居无定所，[r]不存在于[%1]历史中的女武藏啦！
+[k]
+
+[charaFace D 3]
+
+＠武藏
+本来就是没有归处的无根浮萍，[r]一味追求剑术高峰的我，
+[k]
+
+＠武藏
+现在就连这一“目的”也失去了！[r]因为我已经领悟了超越老爹的剑……零之境地！
+[k]
+
+＠武藏
+老实说，我也不清楚[r]自己为何还在继续着旅程！
+[k]
+
+？1：武藏亲……
+？2：（没有归处……这意味着……）
+
+？！
+
+[charaFace D 0]
+
+＠武藏
+没事没事，无需担心，我完～全不在意啦！[r]即使模糊不清，我也是我。
+[k]
+
+＠武藏
+只要有美少年、美少女、乌冬、金钱与强敌存在，[r]我就每天都能过得非常快乐！
+[k]
+
+[charaFace D 4]
+
+＠武藏
+但是，不安定确实令我很困扰。
+[k]
+
+＠武藏
+刚才活动身子的时候就发现了，[r]我与这个地方似乎相性不好啊。
+[k]
+
+＠武藏
+看来就连我与[%1]间的因果[r]也没法起到关键作用呢。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠玛修
+也就是说……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠武藏
+大概再过没多久，[r]我就又会被转移到不同[#世界:地方]去了。
+[k]
+
+[charaFace D 0]
+
+＠武藏
+根据经验的直觉来看，[r]我无法陪你们战斗到最后。
+[k]
+
+[charaFace D 4]
+
+＠武藏
+……不。[r]也有可能这就是最后一次……
+[k]
+
+[charaFace D 1]
+
+＠武藏
+不对，不能灰心丧气！[r]无论发生什么，我出现在此肯定是有意义的。
+[k]
+
+[charaFace D 6]
+
+＠武藏
+一定是在[%1]陷入生死存亡之刻，[r]专程赶来救助的吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠帕茨西
+我不是很懂，就是说你会消失？[r]……你不会感到害怕吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠武藏
+当然会感到害怕与不甘啦。[r]但为此哀叹，与去做现在力所能及事是两码事哦。
+[k]
+
+[charaFace D 1]
+
+＠武藏
+来吧，[%1]！[r]综上所述，我的时间不多了！
+[k]
+
+＠武藏
+所以，我会尽可能为你开辟道路。[r]尽管时间有限，但这短暂的期间还请你多加关照啦！
+[k]
+
+？1：我才应该请你多关照才是！
+？！
+
+[bgmStop BGM_EVENT_79 1.5]
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[wt 0.5]
+
+
+[fadein black 0.8]
+[wait fade]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠戈尔德鲁夫
+哼。聊完了吗？[r]东洋人会不惧死亡其实并不罕见。
+[k]
+
+＠戈尔德鲁夫
+毕竟你们有切腹与陋外慧中的文化。[r]更重要的是[line 3]
+[k]
+
+[charaFace F 5]
+
+＠戈尔德鲁夫
+那只雅嘎已经没用了，快把他踹走！[bgm BGM_EVENT_81 0.1][r]扔哪儿去都行，赶紧让他消失！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+
+＠帕茨西
+……嗯，果然会这样。
+[k]
+
+？1：等等！
+？！
+
+[charaFace B 0]
+
+＠帕茨西
+怎么。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 2]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 2]
+
+[charaFace B 0]
+[charaFadein B 0.1 0]
+
+＠福尔摩斯
+我们不会因告密一事责备你。[r]虽说反叛军的想法如何就另当别论了。
+[k]
+
+＠福尔摩斯
+但是，我们想要情报。[r][line 3]关于伊凡雷帝的情报。
+[k]
+
+[charaFace B 2]
+
+＠帕茨西
+……你们想打倒他？[r]不可能的！
+[k]
+
+[charaFace G 6]
+
+＠福尔摩斯
+哦，竟然说不可能？[r]为什么会不可能呢？
+[k]
+
+[charaFace B 0]
+
+＠帕茨西
+那个……[charaFace B 3][r]我没法说。
+[k]
+
+＠帕茨西
+连说出口都令人毛骨悚然。[r]那就是个如此可怕的怪物。
+[k]
+
+[charaFace G 0]
+
+＠福尔摩斯
+……怪物吗。[r]看来体型相当庞大吧。
+[k]
+
+＠帕茨西
+不是用庞大就能形容的。[r]可不只是这种[#水准]啊。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+不要紧，帕茨西先生。
+[k]
+
+＠玛修
+迄今为止，我们已经有过好几次[r]对巨大生物的战斗经历了。
+[k]
+
+？1：提亚马特相当厉害哦。
+？！
+
+[charaSet F 1098124510 1 达·芬奇]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠福尔摩斯
+……话虽如此，在反叛军覆灭的当下，[r]我们几乎丧失了打倒伊凡雷帝的手段。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+
+[charaPut H 2]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+
+＠帕茨西
+……所以我说了，[r]绝对不能对那个出手。
+[k]
+
+[charaFace F 12]
+
+＠达·芬奇
+唔～，口风挺紧的啊……[r]福尔摩斯，你有想到什么能打破局面的方法吗？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠福尔摩斯
+目前若仅靠帕茨西的感想，[r]推理要素还远远不足。
+[k]
+
+＠福尔摩斯
+目击、证言、证据，[r]当凑齐这些材料时[line 3]
+[k]
+
+＠福尔摩斯
+我才能做出是否有胜算的判断。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+
+[charaPut H 2]
+[charaFace G 0]
+[charaFadein G 0.1 2]
+
+＠帕茨西
+都说不可能了。[r]……不，算了。
+[k]
+
+＠帕茨西
+你们就去与他碰面，并彻底绝望吧。
+[k]
+
+＠福尔摩斯
+唔，要问有哪条道路能够接近伊凡雷帝，[r]答案自然是No。
+[k]
+
+＠福尔摩斯
+与边境不同，[r]首都附近的[#杀戮猎兵:亲卫队]太多了。
+[k]
+
+＠E：？？？
+[line 3]真没办法。[bgmStop BGM_EVENT_81 1.5][r]那么那一带就交给我吧。
+[k]
+
+？1：这声音是[line 3]
+？2：贝奥武夫先生！
+？！
+
+[messageOff]
+[charaFadeout G 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[se ad601]
+[seVolume ad601 0 0.3]
+[wt 0.1]
+[seVolume ad601 0.6 1.0]
+[wt 0.3]
+[seStop ad601 0.3]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.7 1]
+[wt 1.0]
+
+＠贝奥武夫
+正是。
+[k]
+
+[charaFace E 4]
+
+＠贝奥武夫
+听负责监视的雅嘎报告后，[bgm BGM_EVENT_82 0.1][r]我就立马赶过来了……看来为时已晚啊。
+[k]
+
+
+＠贝奥武夫
+……作战打算要怎么办？
+[k]
+
+？1：继续执行。
+？2：我会想办法的……！
+？！
+
+[charaFace E 1]
+
+＠贝奥武夫
+很好，意气轩昂呢。[r]既然你能露出这种眼神，就说明没问题。
+[k]
+
+[charaFace E 4]
+
+＠贝奥武夫
+……噢噢？[r]从者都在这儿了？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠玛修
+不，阿维斯布隆先生他……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠贝奥武夫
+这样啊……
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_82 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+
+＠比利
+顺带一提，从刚才起就一直面带笑容[r]挑衅你的这位，是武藏·宫本。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+
+[charaFace D 0]
+[charaFadein D 0.1 2]
+
+＠贝奥武夫
+哈，我还在想这疯婆娘是谁呢，原来是宫本武藏啊……[r]喂等等，这家伙就是那谁，远东的大剑豪！？
+[k]
+
+[charaFace D 3]
+
+＠武藏
+哎呀，也没那么了不起吧～？
+[k]
+
+[charaFace D 0]
+
+＠武藏
+话说回来，贝奥武夫，[r]就是那位与巨人哥伦多单挑的英雄吧？
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[wt 0.8]
+[charaFace D 7]
+[wt 0.1]
+[se bac306]
+[wt 0.4]
+[se bac306]
+[wt 0.6]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 1]
+
+＠贝奥武夫
+啊啊，是这种类型的人啊。[r]但不凑巧，这次我不打算进行无谓的战斗。
+[k]
+
+＠贝奥武夫
+毕竟状况不允许嘛。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠武藏
+真遗憾，又被拒绝了。[r]……现在回想起来，但马老爷子还是很来劲的呢……
+[k]
+
+[charaFace D 4]
+
+＠武藏
+话说回来，作战计划就是刚才你们告诉我的那个？[r]唔～……这方法能顺利进行吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠帕茨西
+那种计划是不可能成功的。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠贝奥武夫
+噢噢，这不是帕茨西吗。[r]为什么啊？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠帕茨西
+这[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠比利
+好啦好啦。
+[k]
+
+＠比利
+……伊凡雷帝那难以估量的强大[r]确实令人介意。
+[k]
+
+[charaFace C 1]
+
+＠比利
+我这有个不知是好还是坏的消息，[r]想听吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaSet D 1098128400 1 雅嘎]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+
+[charaFace C 0]
+[charaFadein C 0.1 2]
+
+＠贝奥武夫
+什么。
+[k]
+
+＠比利
+[#杀戮猎兵:亲卫队]的召唤宝具有一个条件。[r]似乎是伊凡雷帝必须处于梦境中。
+[k]
+
+＠比利
+也就是说，只要唤醒伊凡雷帝[line 3][r][#杀戮猎兵:亲卫队]就会消失不见。
+[k]
+
+＠贝奥武夫
+这样啊……毕竟是几乎无限制的无极限召唤，[r]我一直猜测其中是否有什么内情……
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠帕茨西
+快住手！[bgmStop BGM_EVENT_77 1.5]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+
+[charaFace B 0]
+[charaFadein B 0.1 2]
+
+＠贝奥武夫
+干嘛，帕茨西。
+[k]
+
+[charaFace B 4]
+
+＠帕茨西
+别唤醒伊凡雷帝！[bgm BGM_EVENT_81 0.1][r]那是绝对不能与之战斗的存在！
+[k]
+
+＠贝奥武夫
+你亲眼见过吗？
+[k]
+
+[charaFace B 3]
+
+＠帕茨西
+……见过。[r]我见过，我……我……！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠比利
+好了好了，到此为止。
+[k]
+
+＠比利
+总之，因为各种各样的原因，[r]帕茨西似乎曾亲眼见过伊凡雷帝。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+
+[charaFace B 3]
+[charaFadein B 0.1 2]
+
+＠贝奥武夫
+……哦。[r]然后你认为绝对不能与他战斗。
+[k]
+
+[charaFace B 2]
+
+＠帕茨西
+没错！
+[k]
+
+＠帕茨西
+该怎么说呢，这根本不是谈战斗或是胜利的那种次元。[r]那……那才是所谓的神啊。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad4]
+[seVolume ad4 0 0]
+[wt 0.1]
+[seVolume ad4 1.0 0.3]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.4 1]
+[wt 0.5]
+
+＠雅嘎
+这家伙被吓破胆了吧……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠帕茨西
+……[r]……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠贝奥武夫
+别说了！[seStop ad4 1.0][bgmStop BGM_EVENT_81 1.5]
+[k]
+
+[charaFace E 4]
+
+＠贝奥武夫
+……神啊。[r]喂，帕茨西。我告诉你一件事。
+[k]
+
+＠贝奥武夫
+我们这些英雄，就身负着与那种[bgm BGM_EVENT_77 0.1][r]类似神明的家伙战斗的使命啊。
+[k]
+
+[charaFace E 0]
+
+＠贝奥武夫
+那边的[%1]也不例外。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠玛修
+……对，说得没错。[r]我们也曾与被视作神明的存在战斗过。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠帕茨西
+[%1]也是吗？
+[k]
+
+？1：不，我[line 3]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠比利
+不要谦虚了啦。[r]你也战斗了，不是吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？2：只是在一旁见证了而已。
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠贝奥武夫
+见证啊……
+[k]
+
+＠贝奥武夫
+尽管我不记得了，但你这家伙[r]难道不是率先冲向战场的吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠达·芬奇
+没错。我反复看过留存的记录，[r]所有影像都是这么显示的哦。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠帕茨西
+……你们不会放弃吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠贝奥武夫
+帕茨西，这个名叫[%1]的[&男人:女人][r]是不会放弃的，绝对不会。
+[k]
+
+[charaFace E 4]
+
+＠贝奥武夫
+但只要伊凡雷帝醒来，[r][#杀戮猎兵:亲卫队]就会一口气消灭啊……
+[k]
+
+＠贝奥武夫
+既然如此，那我觉得还是在首都战斗比较好呢。[r]……喂，你们几个。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaDepth D 10]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0]
+
+[charaFace E 0]
+[charaFadein E 0.1 2]
+
+＠雅嘎
+啊，在。
+[k]
+
+＠贝奥武夫
+不好意思，能拜托你们在首都附近佯攻吗？
+[k]
+
+[charaFace D 2]
+
+＠雅嘎
+但贝奥武夫先生，[r]如果没有了您，那我们[line 3]
+[k]
+
+[charaFace E 1]
+
+＠贝奥武夫
+喂喂，你这家伙在说什么呢。
+[k]
+
+＠贝奥武夫
+我不是把你们锻炼成[r][#就算我不在也能行动]了吗？
+[k]
+
+[charaFace D 2]
+
+＠雅嘎
+……！
+[k]
+
+[charaFace E 0]
+
+＠贝奥武夫
+人数充足。你们已经能够战斗了。[r]当然也可以逃跑。
+[k]
+
+＠贝奥武夫
+能逃脱[#杀戮猎兵:亲卫队]的魔爪，[r]活下去。
+[k]
+
+＠贝奥武夫
+我就是以此为目标来锻炼你们的。[r]明白了吗？
+[k]
+
+[charaFace D 0]
+
+＠雅嘎
+……嗯。
+[k]
+
+＠贝奥武夫
+想法端正过来了吗？
+[k]
+
+＠贝奥武夫
+所谓的生存，并不是将不平等强加于人。[r]而是赋予平等。
+[k]
+
+＠贝奥武夫
+比起争先恐后，[r]共同前进反而能走更少的弯路。
+[k]
+
+＠贝奥武夫
+齐心协力所带来的喜悦，[r]远胜于排挤他人所得到的快乐
+[k]
+
+[charaFace D 2]
+
+＠雅嘎
+大将。你说得没错。[r]但我非常不安啊。老大。
+[k]
+
+＠雅嘎
+若没有你的指引，[r]我们……
+[k]
+
+[charaFace E 1]
+
+＠贝奥武夫
+既然我被你们称为[#老大:国王]，[r]那就必须为你们考虑好我消失以后的事才行。
+[k]
+
+＠贝奥武夫
+就算我不在了，你们也有办法能活下去吧？
+[k]
+
+＠贝奥武夫
+狩猎的方法，隐藏行踪的方法，最重要的是集体生活的方法，[r]我应该已经悉数教会你们了吧。
+[k]
+
+＠雅嘎
+贝奥武夫先生……
+[k]
+
+[charaFace E 0]
+
+＠贝奥武夫
+所以抱歉啊，我现在要协助这些家伙。[r]如若不然，你们就无法迎来真正的明天。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠比利
+……[r]……真正的明天吗。
+[k]
+
+？1：比利？
+？！
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaFace C 1]
+
+＠比利
+啊啊，嗯。[r]看来我也要拿出点真本事了。
+[k]
+
+＠比利
+我知道雅嘎们成长了。
+[k]
+
+[charaFace C 5]
+
+＠比利
+贝奥。[r]恐怕这些还不够啊。
+[k]
+
+[bgm BGM_EVENT_82 0.1]
+
+＠比利
+也要在首都发动佯攻。[r]就由我[#独自一人当诱饵吸引目光]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠贝奥武夫
+……你疯了吗？[r]首都内[#杀戮猎兵:亲卫队]的强大非同寻常。
+[k]
+
+＠贝奥武夫
+独自一人去，[r]就相当于与百骑从者为敌啊。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠比利
+没关系，我是Archer。[r]在存活方面可是很顽强的。
+[k]
+
+[charaFace C 0]
+
+＠比利
+[#我会拼到最后一刻]。[r]怎么样？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠贝奥武夫
+……根据[%1]所述，[r]我们没在美利坚见过面。
+[k]
+
+＠贝奥武夫
+……假如见过的话，[r]哪怕在这种情况下我肯定也能记住。
+[k]
+
+[charaFace E 1]
+
+＠贝奥武夫
+记住像你这种帅气的法外之徒。
+[k]
+
+？1：毕竟比利小子是，
+？2：传说中的法外之徒嘛！
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠比利
+真是的，令人怪不好意思的！
+[k]
+
+[charaFace C 0]
+
+＠比利
+综上所述，这样一来首都附近的人就能稍微轻松一点了。[r]请多关照啦！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+
+[charaFace E 0]
+[charaFadein E 0.1 2]
+
+＠雅嘎
+……我知道了，贝奥武夫先生、比利先生。[r]我们也会尽自己所能！
+[k]
+
+[charaFace D 1]
+
+＠雅嘎
+感谢你们迄今为止的关照！[r]一定要平安归来哦！
+[k]
+
+＠贝奥武夫
+成。打倒伊凡雷帝之后……[r]打倒之后，嗯，我们会想办法回来打声招呼的。
+[k]
+
+＠贝奥武夫
+只不过没法保证就是了。
+[k]
+
+＠雅嘎
+没关系，你是那种[r]违背了约定就会很不好受的类型吧。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠雅嘎
+那我们就先回去了。[r]做好准备，佯攻一定会进行。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_82 1.5]
+[charaFadeout D 0.7]
+
+[se ad60]
+[wt 1.0]
+[seStop ad60 2.0]
+
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠帕茨西
+……要抛弃那些家伙吗？[bgm BGM_EVENT_76 0.1]
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠贝奥武夫
+不会抛弃。[r]但也不会庇护他们。
+[k]
+
+＠贝奥武夫
+那种时代早已成为过去。[r][#如今已非英雄的时代啦]。
+[k]
+
+＠贝奥武夫
+……不过……我也不是很清楚[r]自己为何会得出这种结论……为什么呢。
+[k]
+
+＠贝奥武夫
+总之，雅嘎们所生活的这个世界，[r]也已经不是只有英雄与强者方能存活的时代了。
+[k]
+
+[charaFace E 4]
+
+＠贝奥武夫
+更不能允许神的代理人，[#皇帝:沙皇]之类的存在[r]存活几百年并持续统治的情况了。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠帕茨西
+并非……只有强者方能存活的时代。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠贝奥武夫
+好了，虽然有点晚了，[r]请容许我贝奥武夫加入[%1]的阵营！
+[k]
+
+＠贝奥武夫
+然后我有一个建议……[r]来一场拯救阿塔兰忒与萨列里的作战如何？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 2]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 2]
+
+[charaFace E 0]
+[charaFadein E 0.1 0]
+
+＠玛修
+阿塔兰忒小姐……还有萨列里先生……[r]他们都活着吗！？
+[k]
+
+＠贝奥武夫
+嗯。应该是被那些家伙抓住了。
+[k]
+
+＠贝奥武夫
+虽说孤身一人应该有办法逃脱，[r]但看来是[#孩子:小鬼头们]被抓作人质了吧。
+[k]
+
+[charaFace A 12]
+
+＠玛修
+这还……真像阿塔兰忒小姐的作风呢。
+[k]
+
+[charaFace E 4]
+
+＠贝奥武夫
+是吧。
+[k]
+
+[charaFace E 0]
+
+＠贝奥武夫
+萨列里应该是因为看到阿塔兰忒投降，[r]才会放弃抵抗了吧。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠福尔摩斯
+哎呀，稍微等一下。
+[k]
+
+＠福尔摩斯
+假如Miss阿塔兰忒那样的从者被逮捕，[r]那只可能被带去一个地方吧。
+[k]
+
+＠福尔摩斯
+除首都外不做他想吧？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠贝奥武夫
+不，根据负责追踪的雅嘎们回报，[r]应该是避开首都，被带去了其他地方。
+[k]
+
+＠贝奥武夫
+将以往的堡垒挪用作监狱。
+[k]
+
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠福尔摩斯
+唔，虽说不在首都附近算是万幸……[r]但为何要避开首都呢？
+[k]
+
+＠福尔摩斯
+（……害怕他们暗杀伊凡雷帝？[r]　不，如果是这样，应该会立刻将他们处刑才对。）
+[k]
+
+[charaFace G 4]
+
+＠福尔摩斯
+（为何要尽可能地加强警备严加看守，
+[r]并且不惜建造监狱也要）
+[k]
+
+＠福尔摩斯
+（将拥有不放在身边便无法放心力量的从者[r]……安置在远处呢？）
+[k]
+
+＠福尔摩斯
+（[#不想让其接近首都]……？[r]　这是因为……有[#他们]在……？）
+[k]
+
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 2]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 2]
+
+[charaFace B 0]
+[charaFadein B 0.1 0]
+
+＠福尔摩斯
+帕茨西君，你被逮捕的时候，[r]曾经被带去过首都雅嘎·莫斯科吧？
+[k]
+
+＠帕茨西
+嗯，是的。
+[k]
+
+＠福尔摩斯
+希望你能描述一下首都的状况。[r]民众们都畏惧着伊凡雷帝吗？
+[k]
+
+＠帕茨西
+……不，在首都雅嘎·莫斯科，[r]完全没人诋毁雷帝。
+[k]
+
+＠帕茨西
+因为那里比边境繁荣得多吧……[r]而且[#杀戮猎兵:亲卫队]到处都是。
+[k]
+
+[charaFace G 6]
+
+＠福尔摩斯
+那他们是受[#杀戮猎兵:亲卫队]威胁被逼无奈，[r]还是[#发自真心的]……你能判断得出来吗
+[k]
+
+[charaFace B 2]
+
+＠帕茨西
+发……发自真心！？[charaFace B 3][r]不，但就算你这么说[line 3]
+[k]
+
+[charaFace G 0]
+
+＠福尔摩斯
+闭上双眼，帕茨西。[r]深呼吸，回想起当时的状况。
+[k]
+
+＠帕茨西
+我……我知道了啦。
+[k]
+
+
+[messageOff]
+[wipeout openEye 1.0 1.0]
+[bgmStop BGM_EVENT_76 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaSet E 1098126500 1 雅嘎市民A]
+[charaSet F 1098126600 1 雅嘎市民Ｂ]
+[charaSet G 1098126800 1 雅嘎（孩童）]
+
+[scene 10000]
+[wipein openEye 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[wipeFilter cinema 0.5 0]
+[effect bit_sepia01]
+
+[scene 55400]
+
+[fadein black 0.7]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 -256,-50]
+[charaFace E 3]
+[charaFadein E 0.1 256,-50]
+
+
+＠F：雅嘎市民
+哎呀，竟敢忤逆[#皇帝:沙皇]……
+[k]
+
+＠E：雅嘎市民
+废物不如的雅嘎。[r]下地狱吧。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+
+[wt 0.5]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 -256,-50]
+[charaFace E 0]
+[charaFadein E 0.1 256,-50]
+
+[fadein black 0.7]
+[wait fade]
+
+＠G：雅嘎（孩童）
+那个雅嘎怎么了？
+[k]
+
+＠E：雅嘎市民
+那是因为触怒了[#皇帝:沙皇]而遭报应的雅嘎。[r]不知雅嘎所受恩惠的混账玩意。
+[k]
+
+＠E：雅嘎市民
+你可不能变成他那样的哦。
+[k]
+
+＠E：雅嘎市民
+居然忤逆绝对强者，到底想做什么啊。[r]在这种世界里，就该团结一致活下去啊。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[wait fade]
+[effectStop bit_sepia01]
+[wt 0.5]
+
+[wipeOff]
+[scene 55002]
+
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+[charaSet D 1098124510 1 达·芬奇]
+[charaSet E 7008001 1 贝奥武夫]
+[charaSet F 1098123210 1 戈尔德鲁夫]
+[charaSet G 98115300 1 福尔摩斯]
+
+[fadein black 0.7]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠帕茨西
+……那些赞颂都没有不自然的迹象。[r]非要说的话，更像是纯粹的崇拜。
+[k]
+
+＠帕茨西
+而且他们也不像在恐惧着[#杀戮猎兵:亲卫队]。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠福尔摩斯
+在你所见的范围内，没有不安定分子吧？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠帕茨西
+……仅限我所见范围内，没有。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠福尔摩斯
+哎呀，这敢情好！[r]嗯，得到一条线索了。
+[k]
+
+＠福尔摩斯
+这是与伊凡雷帝相关的一个重要要素。[r]感谢你，帕茨西。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠帕茨西
+没什么……举手之劳。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠戈尔德鲁夫
+但是福尔摩斯，这又能说明什么。
+[k]
+
+＠戈尔德鲁夫
+首都雅嘎·莫斯科会赞颂[#皇帝:沙皇]……[r]赞颂伊凡雷帝不是极为正常的吗？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠福尔摩斯
+尽管雅嘎们的思维偏向弱肉强食，[r]但他们也拥有与人类相同的感情。
+[k]
+
+＠福尔摩斯
+正如帕茨西刚才所言，[r]不会感到恐惧的雅嘎是不存在的。
+[k]
+
+＠福尔摩斯
+更不用说面对身为神之代理人的[#皇帝:沙皇]了。
+[k]
+
+＠福尔摩斯
+假如雅嘎·莫斯科的雅嘎们并无恐惧，[r]大家都在真心诚意地赞颂[#皇帝:沙皇]的话。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠戈尔德鲁夫
+的话？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠福尔摩斯
+就说明[#皇帝必须被赞颂才行]。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+[FFFFFF]？[-]
+[k]
+
+？1：这是什么意思？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.5]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠福尔摩斯
+呵[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+
+＠达·芬奇
+（啊，令人讨厌的环节开始了～。）
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠福尔摩斯
+应当阐述的阶段[line 3][wt 0.5][messageShake 0.05 5 5 0.3]看来到了呢！
+[k]
+
+[bgmStop BGM_EVENT_77 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_76 0.1]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+＠戈尔德鲁夫
+居然到了吗！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠福尔摩斯
+也就是说，伊凡雷帝正在逐渐清醒。
+[k]
+
+＠福尔摩斯
+然而对雷帝之外的当权者而言，[r]无论如何都想让他一直沉睡下去。
+[k]
+
+＠福尔摩斯
+恐怕现状正是雷帝难以容忍的。
+[k]
+
+＠福尔摩斯
+不仅遭到反叛，[r]从者还接二连三地被召唤出来。
+[k]
+
+＠福尔摩斯
+这是对皇帝统治的否定，[r]对他而言正是侵略。
+[k]
+
+＠福尔摩斯
+因此[line 3]一旦在首都内引发骚乱，[r]伊凡雷帝就会因此轻易醒来。
+[k]
+
+＠福尔摩斯
+与大量[#杀戮猎兵:亲卫队]恶战苦斗的状态[r]恐怕只需持续极短的时间！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠贝奥武夫
+……原来如此啊。
+[k]
+
+[charaFace E 0]
+
+＠贝奥武夫
+无论如何，现在[#还没到]接近首都的时候，[r]首先要救出阿塔兰忒与萨列里！
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_76 1.5]
+[wait fade]
+[soundStopAll]
+[end]

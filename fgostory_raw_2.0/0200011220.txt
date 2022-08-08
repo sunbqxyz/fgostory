@@ -1,0 +1,184 @@
+
+＄02-00-01-12-2-0
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 1002001 1 阿尔托莉雅·Alter]
+[charaSet C 11003001 1 贞德·Alter]
+[charaSet D 2023000 1 莫里亚蒂]
+[charaSet E 98109400 1 新宿的Assassin]
+[charaSet F 98111500 1 通讯用杂音]
+[charaSet G 98110900 1 罗密欧＋朱丽叶]
+
+
+[soundStopAll]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 39100]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠新宿的Assassin
+切……！[r]给我继续追派增援！
+[k]
+
+[charaFace E 2]
+＠新宿的Assassin
+把花腔歌手也拉过来！　赞助商们都回去了吗？[r]好，那剩下的家伙就无关紧要啦！
+[k]
+
+＠新宿的Assassin
+投入新创造出来的“[#创作幻想:S·P]”！[r]那玩意儿会把周围都牵连进去，但也没办法！
+[k]
+
+[charaFace E 5]
+＠新宿的Assassin
+……等下。[r][#那家伙]也在……！？
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠玛修
+敌方……出现新反应。[r]请小心，御主！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠贞德·Alter
+喂？[r]有奇怪的东西出现了啊。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaSet A 98109900 1 名流]
+
+
+[charaTalk off]
+[charaFace G 0]
+[charaFadein G 0.7 1]
+[charaEffect G bit_talk_11 0,-96]
+＠？？？
+心爱的[#你:我]！
+[k]
+
+
+＠？？？
+心爱的[#我:你]！
+[k]
+
+
+＠？？？
+然而死亡也无法将两人分开，[r]能像这样与你一起度过，人生是何等美妙啊！
+[k]
+
+＠？？？
+啊啊，[#罗密欧:朱丽叶]！[r]噢噢，[#朱丽叶:罗密欧]！
+[k]
+
+＠？？？
+来吧，今天一定要夺回和平。[r]像我们一样[#融化吧]！
+[k]
+
+[charaEffectStop G bit_talk_11]
+[charaFadeout G 0.1]
+[wt 0.4]
+
+[charaTalk on]
+
+
+[charaDepth A 9]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[charaShake A 0.05 7 0 1.0]
+＠名流
+咿……呀啊啊啊啊啊啊啊！？[r]住手，别碰我！　融化了，融化了融化了融化了[line 3]！！
+[k]
+
+[messageOff]
+
+[charaSpecialEffect A enemyErasure 1 1.7]
+[wt 0.4]
+[se ad137]
+[wait charaSpecialEffect A]
+[seStop ad137 1.0]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠阿尔托莉雅·Alter
+……原来如此。继李尔王之后是罗密欧与朱丽叶啊。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠莫里亚蒂
+哈哈哈哈哈，这真是连莎士比亚都会失望的[r]罗密欧与朱丽叶啊！
+[k]
+
+[charaFace D 1]
+＠莫里亚蒂
+这就是宣誓相爱的恋人的悲惨下场吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠贞德·Alter
+哼，虽然我对这完全没有兴趣。[r]但可悲之物确实可悲。
+[k]
+
+[charaFace C 5]
+＠贞德·Alter
+积极牵连他人的恋爱只是一种执迷不悟罢了。
+[k]
+
+[charaFace C 2]
+＠贞德·Alter
+我以这魔女的旗帜宣誓，[r]我要彻底否定你们的爱！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

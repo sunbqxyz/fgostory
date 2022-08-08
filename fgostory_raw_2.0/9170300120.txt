@@ -1,0 +1,1473 @@
+
+
+＄91-70-30-01-2-0
+
+[soundStopAll]
+
+[charaSet A 7030001 1 阿塔兰忒·Alter]
+[charaSet B 4029001 1 阿喀琉斯]
+[charaSet C 5016001 1 杰罗尼莫]
+[charaSet D 5034001 1 示巴女王]
+
+[charaSet E 98006000 1 敌人]
+
+[imageSet G back10000 1]
+
+
+[scene 20803]
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_EVENT_3 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaFadeTime A 0.2 1.0]
+[wt 0.6]
+
+
+＠阿塔兰忒·Alter
+[line 3]哈！
+[k]
+
+[messageOff]
+
+[fadeout black 0.3]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[effect bit_talk_kengekiall02]
+[wt 0.3]
+[se bac6]
+[wt 0.3]
+[se bac6]
+[wt 0.2]
+[se bac6]
+[wt 0.5]
+
+＠
+永无极限的加速犹如子弹。[r]毫无保留的攻击犹如轰炸。
+[k]
+
+[messageOff]
+
+
+[scene 20803 0.3]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.1]
+
+[charaShake E 0 5 5 0.5]
+[wt 1.0]
+
+[effect bit_talk_41 0,0]
+[wt 0.1]
+
+[se ad23]
+[wt 1.0]
+
+[effectStop bit_talk_41]
+[wt 0.5]
+
+？1：好强……！
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+＠阿塔兰忒·Alter
+还不够！
+[k]
+
+[messageOff]
+
+[se bac1]
+[charaFadeTime A 0.1 0.0]
+[charaMove A 80,20 0.1]
+[wt 0.1]
+[charaFadeout A 0.1]
+
+[wipeout rectangleStripRightToLeft 0.3 1.0]
+[wait wipe]
+
+[charaFace A 0]
+[charaMoveScale A 1.0 0.1]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.3 1.0]
+[wait wipe]
+
+[charaPut A -10,40]
+[se ade255]
+[charaFadeTime A 0.1 1.0]
+[charaMove A 5,-10 0.1]
+[wt 0.3]
+[charaMove A -5,5 0.1]
+[wt 0.3]
+[charaMove A 0,0 0.1]
+[wt 0.3]
+
+[charaPut G 0,0]
+[charaMoveScale G 1.1 0.1]
+[charaFadeTime G 0.1 0.5]
+[charaDepth G 1]
+[charaDepth A 2]
+[wt 0.1]
+
+＠
+这是野兽之间的自相残杀，[r]她瞬间产生了这个想法。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+＠
+拿起暗黑之弓，射出箭。
+[k]
+
+[messageOff]
+
+[se bac3]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad855]
+[wipeout rectangleStripLeftToRight 0.3 1.0]
+[wait wipe]
+
+[wt 0.3]
+
+[wipein rectangleStripRightToLeft 0.3 1.0]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1]
+[wt 0.1]
+
+[flashin once 0.07 0.1 FFFFFFFF FFFFFF00]
+[se bac16]
+[charaShake E 0 3 3 0.3]
+[wt 0.5]
+
+[se ad23]
+[wt 1.5]
+
+＠
+并不在意扎在自己身上的箭，[r]野兽继续突击。
+[k]
+
+[messageOff]
+
+[effect bit_talk_41 0,0]
+[shake 0.01 3 3 2.0]
+[se ad321]
+[wt 2.0]
+
+[effectStop bit_talk_41]
+[seStop ad321 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[se ad85]
+[wt 0.8]
+
+[effect bit_talk_41 0,0]
+[wt 0.1]
+
+[se bac150]
+[flashin once 0.07 0.1 FFFFFFFF FFFFFF00]
+[charaShake A 0.1 5 5 0.1]
+[charaFace A 8]
+[wt 0.1]
+
+＠阿塔兰忒·Alter
+咕，呜……！
+[k]
+
+[messageOff]
+
+[effect bit_talk_41 0,1]
+[wt 0.1]
+[charaMoveScale A 0.9 0.15]
+[charaMove A 0,-24 0.15]
+[charaFadeTime A 0.15 0]
+[wt 0.2]
+
+[cameraMove 0.5 0,0 1.5]
+[wt 0.4]
+
+[se adm70]
+[flashin once 0.07 0.1 FFFFFFFF FFFFFF00]
+[cameraMove 0.0 0,0 1.0]
+[wt 0.1]
+
+[cameraMove 0.5 0,0 1.5]
+[wt 0.4]
+
+[se adm70]
+[flashin once 0.07 0.1 FFFFFFFF FFFFFF00]
+[cameraMove 0.0 0,0 1.0]
+[wt 0.1]
+
+[cameraMove 0.5 0,0 1.5]
+[wt 0.4]
+
+[se adm70]
+[flashin once 0.07 0.1 FFFFFFFF FFFFFF00]
+[cameraMove 0.0 0,0 1.0]
+[wt 0.1]
+
+
+＠
+被撞飞了。[r]即便击碎了大树，依然不断向后飞去。
+[k]
+
+[messageOff]
+
+[cameraMove 0.1 0,-5 1.05]
+[charaTalk A]
+[charaFace A 8]
+
+[se bac150]
+[flashin once 0.07 0.1 FFFFFFFF FFFFFF00]
+[effectStop bit_talk_41 0,0]
+
+[shake 0.1 6 6 1.0]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+[wt 2.0]
+
+[charaPut G 0,0]
+[charaMoveScale G 1.1 0.1]
+[charaFadeTime G 0.1 0.5]
+
+[charaFace A 5]
+
+[charaDepth G 1]
+[charaDepth A 2]
+[wt 0.4]
+
+＠
+意识很清晰。[r]也很清楚接下来该做什么。
+[k]
+
+＠
+接下来只需移动身体。[r]并非由大脑控制，而是出于本能。
+[k]
+
+[messageOff]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaFace A 2]
+
+＠阿塔兰忒·Alter
+[line 3]哈，啊！
+[k]
+
+[messageOff]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠
+背脊猛地撞上大树的瞬间，[r]切断一切思考，选择了[#最短路径:捷径]。
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripLeftToRight 0.3 1.0]
+[bgmStop BGM_EVENT_3 0.5]
+[wait wipe]
+
+[cameraMove 0.1 1 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+[wt 0.1]
+
+[pictureFrameTop cut063_cinema]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.3 1.0]
+[wait wipe]
+
+
+
+＠
+身为深渊之森支配者的野兽[r]的确看到了[#那个]。
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut A 0,-50]
+[charaFace A 2]
+[charaEffect A bit_talk_quickmove]
+[charaFadeTime A 0.2 1.0]
+[wt 0.4]
+
+
+＠
+那被甩尾一击打飞的小小野兽，[r]瞬间扑到了自己眼前。
+[k]
+
+＠
+已经不能用快来形容了。[r]连眨眼的时间都不到。
+[k]
+
+＠
+脑海中浮现出回避的选项[line 3][r]连这点小事都做不到。
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se bac7]
+[fowardEffect bit_talk_ichimon01wh]
+[wt 0.1]
+[flashin once 0.07 0.1 FFFFFFFF FFFFFF00]
+[wt 1.5]
+
+[fowardEffectStop bit_talk_ichimon01wh]
+[wt 0.1]
+
+＠
+她的利齿割下了野兽的首级。
+[k]
+
+[messageOff]
+
+[se ad464]
+[effect bit_talk_35]
+[wait effect]
+
+[seStop ad464 0.5]
+
+[fadeout black 0.5]
+[wt 0.5]
+
+[pictureFrame]
+[wt 0.1]
+
+[se ad144]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 2.0]
+
+[cameraMove 0.1 0,0 1.01]
+
+[fadein black 0.5]
+[wt 0.5]
+
+＠阿塔兰忒·Alter
+哈…………哈…………
+[k]
+
+
+？1：没事吧！？
+？！
+
+[messageOff]
+
+[charaFace A 0]
+[wt 0.3]
+
+[se ad443]
+[shake 0.05 3 3 0]
+[wt 0.3]
+
+[charaFace A 2]
+＠阿塔兰忒·Alter
+……！
+[k]
+
+[messageOff]
+
+[wt 0.1]
+[seStop ad443]
+
+[bgm BGM_EVENT_3 0.1]
+
+[shakeStop]
+
+[se ad7]
+[charaTalk A]
+[charaFace A 2]
+[charaMoveScale A 1.2 0.2]
+[wt 0.5]
+
+[se ad144]
+[shake 0.05 5 12 0.5]
+[charaMove A 0,-30 0.5]
+[cameraMove 0.5 0,30 1.01]
+[wt 0.5]
+
+？1：……！
+？！
+
+[charaTalk A]
+[charaFace A 2]
+
+＠阿塔兰忒·Alter
+啊，啊啊……啊啊啊啊啊！
+[k]
+
+＠阿喀琉斯
+嘁……冷静点，大姐！[r]阿塔兰忒！
+[k]
+
+[messageOff]
+
+[charaDepth B 1]
+[charaDepth A 2]
+
+[charaTalk off]
+
+[se ad183]
+[charaMoveScale A 1.1 0.3]
+[charaMove A 0,0 0.3]
+
+[charaFace B 2]
+[charaFadein B 0 256,-30]
+
+[wt 0.8]
+
+[se ad421]
+[seVolume ad421 0 2.0]
+[charaShake A 0.05 5 5 0.5]
+[wt 1.0]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 2]
+
+＠阿塔兰忒·Alter
+呜，咕[line 3]啊？
+[k]
+
+？1：……阿塔兰忒！
+？！
+
+[bgmStop BGM_EVENT_3 1.0]
+
+[charaFace A 6]
+＠阿塔兰忒·Alter
+啊[line 3]御主……[r]我……？
+[k]
+
+[messageOff]
+
+[charaFace A 4]
+[se ad527]
+[charaMoveScale A 1.05 1.0]
+[charaMove A -100,-5 1.0]
+[wt 1.0]
+[seStop ad527 0.1]
+[wt 0.5]
+
+[se ad527]
+[charaMoveScale A 1.0 1.0]
+[charaMove A -256,-10 1.0]
+[wt 0.5]
+[seStop ad527 0.1]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+
+＠阿喀琉斯
+呼……千钧一发呢。[r]御主，你没事吧？
+[k]
+
+？1：只是摔了一跤而已。
+？！
+
+＠阿喀琉斯
+我扶你起来……嘿咻。
+[k]
+
+[messageOff]
+
+[charaMoveScale B 1.1 0.5]
+[charaMove B 256,-50 0.5]
+[wt 0.5]
+
+[se ade274]
+[wt 0.5]
+
+[charaMoveScale B 1.0 0.5]
+[charaMove B 2 0.5]
+[se ad527]
+[cameraMove 0.5 0,0 1.01]
+[wt 0.3]
+[seStop ad527 0.1]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+
+＠阿塔兰忒·Alter
+我[line 3][wt 1.0][bgm BGM_EVENT_5 0.1]
+[k]
+
+[charaTalk B]
+[charaFace B 0]
+
+＠阿喀琉斯
+怎么了，大姐，[r]难道状态不太好……不，是截然相反吧。
+[k]
+
+[charaFace B 1]
+
+＠阿喀琉斯
+是状态太好了吗？
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+
+＠阿塔兰忒·Alter
+不，我[line 3]
+[k]
+
+＠阿塔兰忒·Alter
+……[r]……
+[k]
+
+[charaFace A 0]
+
+＠阿塔兰忒·Alter
+抱歉，御主。[r]我迷失了自我。
+[k]
+
+＠阿塔兰忒·Alter
+我好像忘记自己是Berserker了。
+[k]
+
+[charaFace A 4]
+
+＠阿塔兰忒·Alter
+对不起……
+[k]
+
+[charaTalk B]
+[charaFace B 0]
+
+＠阿喀琉斯
+总之，事情到此为止了。[r]先退到后方去吧。
+[k]
+
+[charaTalk A]
+[charaFace A 4]
+
+＠阿塔兰忒·Alter
+嗯……
+[k]
+
+[messageOff]
+
+[se ad527]
+[charaFadeout A 1.0]
+[wt 0.5]
+
+[seStop ad527 2.0]
+[wt 2.0]
+
+[charaFadeout B 0.2]
+[wt 0.3]
+
+[charaPut B 15,0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.2 1]
+[wt 1.0]
+
+＠阿喀琉斯
+……[r]……唔。
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_5 1.0]
+[wait fade]
+
+[cameraMove 0.4 0,0 1.0]
+
+[charaFadeout B 0.1]
+
+[scene 20802]
+[wt 1.0]
+
+[se ade24]
+[seVolume ade24 1.0 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[seStop ade24 1.5]
+[wt 2.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠杰罗尼莫
+你们回来了啊。[r]情况怎么样？
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿喀琉斯
+还挺强的。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠杰罗尼莫
+……阿喀琉斯。
+[k]
+
+＠杰罗尼莫
+既然你这么说，[r]应该是相当厉害吧……
+[k]
+
+＠杰罗尼莫
+看来还得花一些时间呢。
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠示巴女王
+不必着急。
+[k]
+
+＠示巴女王
+这次的任务十分单纯，[r]就是驱除潜伏于这片森林中的魔性。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace A 0]
+[charaFadein A 0.1 0]
+
+[charaFace C 0]
+[charaFadein C 0.1 2]
+
+＠示巴女王
+我们有对森林了如指掌的[r]杰罗尼莫先生和阿塔兰忒小姐。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠示巴女王
+以及能够应对各种情况的战斗要员[r]阿喀琉斯先生。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠示巴女王
+以及在发生万一时发挥作用的[r]身为智囊的我。
+[k]
+
+[charaFace D 1]
+
+＠示巴女王
+呵呵。在这样情况下，[r]失败反倒是难事吧。
+[k]
+
+
+＠示巴女王
+比起冲动导致失败，[r]我还是建议大家采取谨慎行动的计划哦♪
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠杰罗尼莫
+说得对……[r]还要考虑到御主的健康。
+[k]
+
+＠杰罗尼莫
+还是稳妥推进为好。[r]好了，我们喝杯茶吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠示巴女王
+我来帮你。[r]虽然我是女王，但不知为何也很擅长端茶送水。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+
+＠阿喀琉斯
+大姐稍微休息一会儿吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠阿塔兰忒·Alter
+嗯，我会的……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿喀琉斯
+御主。[r]能借一步说话吗？
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 20805]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_5 0.1]
+[wt 0.5]
+
+＠阿喀琉斯
+大姐她今天的战斗是不是有些奇怪？
+[k]
+
+[messageOff]
+[wt 0.2]
+
+[cameraMove 0.2 0,8 1.0]
+[wait camera]
+[cameraHome 0.3]
+[wait camera]
+[wt 0.7]
+
+[charaFace B 4]
+
+＠阿喀琉斯
+我就说嘛。
+[k]
+
+＠阿喀琉斯
+不，战斗本身无可挑剔，[r]但不明白她为何要袭击御主。
+[k]
+
+[charaFace B 0]
+
+＠阿喀琉斯
+当时如果没有我阻止的话，[r]御主就要和这个世界道别了[line 3]
+[k]
+
+[charaFace B 1]
+
+＠阿喀琉斯
+尽管我并不觉得会严重到这个地步，[r]但是情况或许变得有些麻烦了。
+[k]
+
+[charaFace B 0]
+
+＠阿喀琉斯
+所以，能不能麻烦您去和大姐谈谈？[r]如果发生了什么就把我也叫上。
+[k]
+
+？1：明白了！
+？！
+
+[messageOff]
+
+[charaFace B 1]
+[wt 1.0]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_5 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[scene 20802]
+[wt 1.0]
+
+[se ade24 1.0]
+[seVolume ade24 1.0 1.0]
+
+
+[fadein black 1.0]
+[wait fade]
+
+
+[se ad452]
+[wt 1.5]
+
+[seStop ad452 0.3]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 1]
+
+[seStop ade24 1.0]
+[wt 1.0]
+
+？1：阿塔兰忒？
+？！
+
+[charaFace A 0]
+[wt 1.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠阿塔兰忒·Alter
+嗯，啊啊。是御主啊。[r]有什么事吗？
+[k]
+
+？1：关于刚才的事[line 3]
+？！
+
+[charaShake A 0.1 2 2 0.2]
+[charaFace A 4]
+
+＠阿塔兰忒·Alter
+唔。
+[k]
+
+[charaFace A 0]
+
+＠阿塔兰忒·Alter
+……是啊，我真的非常抱歉。[r]虽然我并没有想要伤害你[line 3]
+[k]
+
+？1：能告诉我理由吗？
+？！
+
+[charaFace A 4]
+
+＠阿塔兰忒·Alter
+理由吗……
+[k]
+
+＠阿塔兰忒·Alter
+……[r]……
+[k]
+
+[charaFace A 6]
+
+＠阿塔兰忒·Alter
+……我们要不要边走边聊？
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+
+[scene 20805]
+[wt 1.0]
+
+[se adm13 1.5]
+[seVolume adm13 0 0.3]
+[fadein black 1.5]
+[wait fade]
+
+＠
+苍白的月色，寂寥的虫鸣，[r]还有微弱的生物呼吸声。
+[k]
+
+＠
+把手放在胸口，能听到的是幻想的跳动。[r]这身体既不是生者，亦不能被称为死者。
+[k]
+
+＠
+如今，喉咙因紧张而震颤。
+[k]
+
+[messageOff]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[seStop adm13 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_5 0.1]
+
+
+＠阿塔兰忒·Alter
+[line 3]如你所见，[r]魔兽卡吕冬正附在我的身上。
+[k]
+
+
+＠阿塔兰忒·Alter
+卡吕冬之所以是魔兽，就是因为这身毛皮。[r]人类一旦披上这个，就会变成超越人类的怪物。
+[k]
+
+
+＠阿塔兰忒·Alter
+如果是英雄[line 3][r]就会成为甚至能屠戮那个怪物的魔人吧。
+[k]
+
+[charaFace A 4]
+
+＠阿塔兰忒·Alter
+……代价当然也是存在的。[r]对我来说，兽化的技能就是代价。
+[k]
+
+[charaFace A 0]
+
+＠阿塔兰忒·Alter
+虽然头脑不至于像狂化那样变得[#脆弱]，[r]但思维有时还是会出现浑浊。
+[k]
+
+[charaFace A 6]
+
+＠阿塔兰忒·Alter
+不，不对。[r]那一时，那一瞬，我将汝[line 3]
+[k]
+
+[charaFace A 4]
+
+＠阿塔兰忒·Alter
+……[r]……
+[k]
+
+？1：难道说[line 3]
+？！
+
+[bgmStop BGM_EVENT_5 1.0]
+[se adm13]
+[seVolume adm13 0.0 0.0]
+[seVolume adm13 1.5 0.3]
+
+[charaFace A 2]
+
+＠阿塔兰忒·Alter
+已……已经够了吧。[r]嗯。下次不会失败了。绝对不会失败。
+[k]
+
+[charaFace A 0]
+
+＠阿塔兰忒·Alter
+我先行一步，[r]让其他三位保护御主吧。
+[k]
+
+＠阿塔兰忒·Alter
+那样更安全，[r]而且汝也能更轻松吧？
+[k]
+
+[charaFace A 2]
+
+＠阿塔兰忒·Alter
+就谈到这里吧。[r]走，我们回去吧！
+[k]
+
+[messageOff]
+
+[seStop adm13 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[scene 20802]
+
+[se ade24]
+[seVolume ade24 1.0 1.0]
+
+[fadein black 1.0]
+[wt 3.0]
+
+[fadeout black 3.0]
+[seStop ade24 3.0]
+[wt 5.0]
+
+[scene 20800]
+
+[se ad663]
+[seVolume ad663 1.5 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+[seStop ad663 1.0]
+
+＠阿喀琉斯
+（昨天不要紧吧？）
+[k]
+
+[messageOff]
+[wt 0.2]
+
+[cameraMove 0.2 0,8 1.0]
+[wait camera]
+[cameraHome 0.3]
+[wait camera]
+[wt 0.7]
+
+＠阿喀琉斯
+这样啊……[wt 0.2][charaFace B 1][r]那今天就做个了结吧！
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[scene 20803]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[wt 0.5]
+
+＠示巴女王
+好的好的～。[r]那我会派[#灵鬼:镇尼]搜寻敌人～♪
+[k]
+
+[charaFace D 8]
+
+＠示巴女王
+三，好。沙啦啦啦～♪
+[k]
+
+[messageOff]
+
+[se adm71]
+[wt 1.0]
+[se adm72]
+[wt 1.5]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠杰罗尼莫
+嗯。
+[k]
+
+
+＠杰罗尼莫
+[#灵鬼:镇尼]们，[r]可以的话帮我探查一下那边的大树吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠示巴女王
+咦，你感觉到什么气息了吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠杰罗尼莫
+没，很遗憾并没有，只是直觉。[r]我很难解释清楚，只是隐约……有感觉。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿喀琉斯
+那就出发吧。
+[k]
+
+[charaFace B 1]
+
+＠阿喀琉斯
+毕竟杰罗尼莫老爷的直觉[r]与[#我老师:喀戎]的逻辑思考是同一级别的！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠杰罗尼莫
+哈哈哈。[r]阿塔兰忒也没意见吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠阿塔兰忒·Alter
+当然。[r]那我就跟着[#灵鬼:镇尼]走吧。
+[k]
+
+？1：好，出发！
+？！
+
+[messageOff]
+
+[se ad527]
+
+[charaMove A -250,0 1.0]
+[wt 0.1]
+[charaFadeTime A 0.2 0.0]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[seStop ad527 0.3]
+[wt 0.3]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+＠杰罗尼莫
+……不妙啊。[r]直觉或许应验了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿喀琉斯
+什么？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠阿塔兰忒·Alter
+快看那个。
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 20820]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_5 0.1]
+[wt 2.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠示巴女王
+……这棵树，[r]好像是刚被拔起来的。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠杰罗尼莫
+也就是说周围徘徊着[r]能拔起这棵树的家伙吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿喀琉斯
+也就是巨人系吗……
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠示巴女王
+看来是毫无目的的行为，[r]分类来说应该是Berserker吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+
+＠阿塔兰忒·Alter
+……唔。
+[k]
+
+？1：阿塔兰忒？
+？！
+
+[charaFace A 1]
+
+
+＠阿塔兰忒·Alter
+呵呵，汝应该知道吧？[r]我的嗅觉比身为Archer时更加灵敏。
+[k]
+
+[charaFace A 0]
+
+＠阿塔兰忒·Alter
+好，在这边！
+[k]
+
+[messageOff]
+
+[charaMove A -200,0 0.3]
+[wt 0.1]
+[charaFadeTime A 0.1 0.0]
+
+[se ad769]
+[seVolume ad769 1.0 1.0]
+[bgmStop BGM_EVENT_5 1.0]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[cameraMove 0.1 0,0 1.01]
+[charaFadeout A 0.1]
+[wt 1.5]
+
+[seStop ad769 0.5]
+
+[se ad57]
+[shake 0.14 4 6 0]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_3 0.1]
+[wt 0.5]
+
+[shakeStop]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+[wt 0.5]
+
+[shake 0.05 4 6 0.5]
+[wt 1.5]
+
+[shake 0.05 4 6 0.5]
+[wt 1.0]
+
+[charaFace D 2]
+
+＠示巴女王
+虽然我们发现了目标，[r]但是我们也被发现了！
+[k]
+
+[messageOff]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+[wt 0.5]
+
+
+＠杰罗尼莫
+好。那御主，[r]作战就按此前商量的进行。上！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[seStop ad57 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

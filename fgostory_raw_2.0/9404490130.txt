@@ -1,0 +1,2560 @@
+
+
+＄94-04-49-01-3-0
+
+[soundStopAll]
+
+[skip false]
+
+[branchQuestNotClear lblNotClear1 3000320 4]
+[label lblClear1]
+[flag IsGirl true]
+[branch lblIsClearConf1]
+[label lblNotClear1]
+[flag IsGirl false]
+[label lblIsClearConf1]
+
+[skip true]
+
+[imageSet A cut145_text01 1]
+[imageSet B cut145_text02 1]
+[imageSet C cut145_text03 1]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth B 2]
+[charaDepth C 3]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.3]
+
+[se ad186]
+[charaFadein A 0.4 0,-200]
+[wt 2.4]
+
+[charaFadeout A 0.1]
+[se ad186]
+[charaFadein B 0.4 0,-200]
+[wt 2.7]
+
+[charaFadeout B 0.1]
+[charaFadein C 0.4 0,-200]
+[se ade242]
+[wt 4.0]
+
+[fadeout black 0.6]
+[wait fade]
+
+[charaTalk depthOn]
+
+[branch lblNotGirl IsGirl false]
+
+[label lblGirl]
+
+[charaSet A 98002000 1 芙芙]
+[charaSet B 99502600 1 玛修]
+[charaSet C 6031001 1 刑部姬]
+[charaSet D 7027300 1 Amazones CEO_普通]
+[charaSet E 1098119600 1 Amazones CEO_轱辘]
+[charaSet F 3016000 1 赫克托耳]
+[charaSet G 2035000 1 帕里斯]
+[charaSet H 1098124510 1 达·芬奇]
+[verticalImageSet I cut045_bg 1]
+
+[charaScale I 1.01]
+
+[charaFadein I 0.1 0,260]
+
+[wt 0.2]
+
+[fadein black 0.6]
+[wait fade]
+
+[wt 0.7]
+[charaAttack I normal 0,-220 5.0]
+[wt 7.5]
+
+[wipeout rectangleStripDownToUp 0.4 1]
+[wait wipe]
+[charaFadeout I 0.1]
+[scene 90100]
+[wt 0.4]
+
+[charaSet I 5009000 1 特效用1]
+[charaSet J 5009000 1 特效用2]
+[charaPut I 1200,1200]
+[charaPut J 1200,1200]
+[charaEffect I bit_talk_10_LowLevel]
+[charaEffect J bit_talk_10_LowLevel]
+[wipein rectangleStripUpToDown 0.4 1]
+[wait wipe]
+
+[wt 0.7]
+
+[bgm BGM_EVENT_77 0.1]
+
+？1：事情又变得奇怪了……
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠芙芙
+芙……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：虽说每次都会变得很奇怪……
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠玛修
+嗯。
+[k]
+
+[charaFace B 12]
+
+＠玛修
+我现在理解每年一到秋天，[r]御主就会开始祈祷的原因了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠刑部姬
+一旦快要到万圣节，御亲就会莫名露出[r]大彻大悟的表情，原来是这个理由啊……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？！
+
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+来了啊。准备都完成了哦。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠玛修
+呃……请容我再确认一遍，在如此短暂的时间内，[r]您真的已经完成了对那栋建筑物内部的改造了吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+
+＠E：Amazones CEO
+嗯，完成了。凭我们始终领先于时代的技术力，[r]这点小事轻而易举。
+[k]
+
+＠E：Amazones CEO
+另外我也需要向你们再确认一次，[r]归属权方面没有问题吧？
+[k]
+
+＠E：Amazones CEO
+我们非常注重权利关系。[r]绝对不会与盗版扯上关系。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠赫克托耳
+谈论特异点内建筑物的归属权或许有些奇怪。[r]但那些可以说是相关人员的家伙[line 3]
+[k]
+
+＠赫克托耳
+刑部姬、克娄巴特拉和伊丽莎白[r]听说是为了御主的任务，已经爽快答应了。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠帕里斯
+哈哈哈，这算什么，真好玩～！
+[k]
+
+＠帕里斯
+快看啊，阿波罗大人，[r]叠罗汉上叠罗汉哦，插在上面了！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+你们是……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+[charaFace F 1]
+[charaFadein F 0.1 2]
+
+＠赫克托耳
+嗨～，是大叔和弟弟哦。[r]是这次陪同一起来的。
+[k]
+
+[charaFace F 3]
+
+＠赫克托耳
+没问题吧？[r]新开发的希腊属性除味剂还有效果吧？
+[k]
+
+＠赫克托耳
+虽说对方是CEO，但在那方面应该没什么差别，[r]我听说甚至还可能恶化……
+[k]
+
+＠赫克托耳
+说实话，大叔我现在心里相当慌哦？
+[k]
+
+[messageOff]
+[wt 0.6]
+
+？1：这两位是协助者的赫克托耳与帕里斯。
+？！
+
+[wt 0.5]
+[charaFace F 0]
+
+＠赫克托耳
+……[r]……
+[k]
+
+＠帕里斯
+……[r]……
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+唔。感觉似曾相识，又好像并不认识。[r]对了，我想起来了[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠赫克托耳
+……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+是行星特洛伊的……[#闪光头盔:Shining Helm][r]和[#小天使恶魔:Little Angel Devil]……？
+[k]
+
+[charaFace D 16]
+
+＠D：Amazones CEO
+不，他们不可能来这里。[r]应该只是恰好相似。或者是不同季的存在吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠赫克托耳
+（好危险[line 5]！[r]　吓得我心脏差点停跳[line 4]！）
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：Amazones CEO
+也就是说我们是初次见面吧。我是Amazones.com的CEO。[r]这是名片，今后请多关照。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠赫克托耳
+哎哟，您太客气了。[r]大叔我不是什么大人物，所以没有名片。
+[k]
+
+＠赫克托耳
+只是说这次最好有个擅长交涉的人比较好，[r]才把大叔我叫来这里。
+[k]
+
+[charaFace F 4]
+
+＠赫克托耳
+尽管大叔我表示比我更为[r]巧舌如簧的家伙大有人在……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠达·芬奇
+这次交涉的目的不是获利。[r]所以教授、福尔摩斯和恺撒并不适合哦。
+[k]
+
+＠达·芬奇
+需要确认的只有这里是否具备可以帮忙的环境，[r]并判断是去，还是不去就行了。
+[k]
+
+[charaFace H 12]
+
+＠达·芬奇
+还有就是……如果相关人员发生了什么问题，[r]需要通过交涉妥善处理，差不多这些吧。
+[k]
+
+[charaFace H 16]
+
+＠达·芬奇
+不，我当然知道那边的CEO[r]和你们认识那个人并不是同一个人哦？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛修
+这倒是让我想起一件事……[r]迦勒底的彭忒西勒亚小姐怎么样了？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠赫克托耳
+啊，她来的话事情会更为复杂。[r]阿喀[line 3]
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+[charaEffect D bit_talk_charge_red]
+[se ad61]
+[se ad556]
+[seVolume ad556 0 0.6]
+
+[wt 0.5]
+
+[charaEffectStop D bit_talk_charge_red]
+[seStop ad61 0.5]
+[seStop ad556 0.5]
+[wt 0.3]
+
+
+＠D：Amazones CEO
+阿喀？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaEffectDestroy D]
+
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠赫克托耳
+（唔哦惨了！　这话题对她来说也是个大地雷啊！）
+[k]
+
+[charaFace F 1]
+
+＠赫克托耳
+不，没什么啦没什么。大叔我[#啊]，[r][#咯]血痛骂的那家伙啦，万一她碰到就不好了吧，
+[k]
+
+＠赫克托耳
+而且外出走动时万一遇到另一个自己[r]对精神方面也没有什么好影响啦。
+[k]
+
+＠赫克托耳
+所以我用『从气候角度来看，目前是在室内练肌肉[r]效果倍增的时期』这个理由把她糊弄过去。
+[k]
+
+＠赫克托耳
+短期内阻止了她离开房间。[r]现在她应该正在自律地练习腹肌吧？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠玛修
+说得对……感谢您的顾虑。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠赫克托耳
+没什么，不是什么值得道谢的事。[r]大叔我只是做了自己应做的而已。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+＠帕里斯
+然后那个，彭……不对，CEO小姐。[r]能带我们进去看看里面吗？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+嗯，没问题。[r]酷似[#小天使恶魔:Little Angel Devil]的少年啊。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠帕里斯
+虽然无关紧要，[r]但到底是天使还是恶魔呀。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+跟我来。[r]先带你们从敝司引以为傲的商品仓库开始参观吧。
+[k]
+
+[messageOff]
+[wipeout rightToLeft 1.2 1.0]
+[wait wipe]
+[charaFadeout D 0.1]
+[scene 89600]
+[wt 1.5]
+[wipein leftToRight 1.2 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_4 0.1]
+
+[wt 0.7]
+
+[cameraMove 1.2 -75,-60 1.2]
+[wt 1.5]
+[cameraMove 1.2 75,-75 1.2]
+[wt 2.0]
+[cameraHome 1.0]
+[wt 1.5]
+
+？1：商品数量好多啊！
+？2：感觉要被压扁了……！
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaMoveReturn A 0,30 0.3]
+
+＠芙芙
+芙呜！[wait charaMove][charaMoveReturn A 0,30 0.3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠帕里斯
+好厉害！　哥哥，快看快看！[r]架子居然排得那么长！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠赫克托耳
+哎～，这还真不得了呢。
+[k]
+
+＠赫克托耳
+但不要太兴奋哦，帕里斯。[r]我们不是来游玩或学习参观的。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠帕里斯
+是哦。对不起～……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：Amazones CEO
+没什么，无妨。
+[k]
+
+＠E：Amazones CEO
+这里是能带给众人梦想的[r]Amazones.com必杀心脏部位。
+[k]
+
+＠E：Amazones CEO
+当然装满了众多能让孩子们兴奋到蹦蹦跳跳的梦想。[r]或者说非这样不可。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠玛修
+请问，能稍微打扰一下吗。以城堡内部而言，[r]这里空间体积好像明显有问题……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠达·芬奇
+嗯。是空间扭曲系的魔术，或是未知的技术吧。
+[k]
+
+[charaFace H 31]
+
+＠达·芬奇
+我也很在意，但深入思考可就没完没了了。[r]……然而我还是很在意！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠E：Amazones CEO
+我们会全力配合外包公司，[r]但希望各位理解我们还是有企业机密的。
+[k]
+
+＠E：Amazones CEO
+也就是，那个……安保的……没错，[r]类似所谓的……风险管理？
+[k]
+
+＠E：Amazones CEO
+稍微说明一下，只要收到订单，我们就会将商品[r]集中在这里，进行包装，并发出去配送。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛修
+地方那么大，[r]要找到订单商品一定也很辛苦吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+然而实际上并不困难。[r]其实这个架子上就随机塞满了商品。
+[k]
+
+＠D：Amazones CEO
+通过条形码可以彻底管理『什么东西放在哪里』，[r]所以根本不需要进行仓库整理。
+[k]
+
+＠D：Amazones CEO
+员工只需前往指定的架子，[r]取出指定的商品就可以了。
+[k]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth E 1]
+[charaDepth D 2]
+[charaFadeout D 0.2]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：Amazones CEO
+这就是我司引以为傲面向未来的革新技术……[r]随机存储系统！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠帕里斯
+原来如此。[r]这样一来，我应该也能不犯错地完成工作了！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+顺带一提，从这里可以通过Amazones.com[r]拥有的传送装置跳跃到最近的配送点，
+[k]
+
+＠D：Amazones CEO
+然后各位配送员基本都需要[r]从配送点出发努力送货。
+[k]
+
+[charaFace D 9]
+
+＠D：Amazones CEO
+可以徒步、可以乘车，也可以骑羊。[r]不用在意什么银河道路交通法规。
+[k]
+
+＠D：Amazones CEO
+只需将这Amazones员工的徽章给执法人员看，[r]大部分问题都能迎刃而解。
+[k]
+
+[charaFace D 12]
+
+＠D：Amazones CEO
+我们就是为了这种时候才会缴纳高昂税金的啦。
+[k]
+
+[charaFace D 11]
+
+＠D：Amazones CEO
+对按时交税行使正当权利的健全优良企业挑刺[r]会有什么结果，他们其实也很清楚。
+[k]
+
+[charaFace D 1]
+
+＠D：Amazones CEO
+具体来说，就是这铁球上的刺。会很痛的。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠赫克托耳
+不过，每个人可自行选择移动方法这点倒是很方便。
+[k]
+
+＠赫克托耳
+毕竟我们那儿即便不是Rider，[r]也有不少拥有坐骑或是能飞的家伙嘛。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+但是，万不可掉以轻心。
+[k]
+
+＠D：Amazones CEO
+尽管Amazones用传送装置可以帮忙运到中转点，[r]但在接下来的路上会遇到什么完全是个未知数。
+[k]
+
+[charaFace D 9]
+
+＠D：Amazones CEO
+配送地点可能有吃人的巨大怪兽，[r]可能是广阔的死亡森林，
+[k]
+
+＠D：Amazones CEO
+可能是气压为一千个大气压的危险行星，[r]也有可能是几乎无人的气态行星。
+[k]
+
+[charaFace D 8]
+
+＠D：Amazones CEO
+我在进修的时候也说过，[r]如果敢小看这份工作，等待你们的就会是死亡。
+[k]
+
+＠D：Amazones CEO
+哪怕是一骑当千的从者们……
+[k]
+
+＠D：Amazones CEO
+若没有感谢的能量，[r]只需配送一件货物就会精疲力竭。
+[k]
+
+[charaFace D 12]
+
+＠D：Amazones CEO
+[line 3]因此！
+[k]
+
+？1：因此？
+？！
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth E 1]
+[charaDepth D 2]
+[charaFadeout D 0.2]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：Amazones CEO
+根本无需进行现代提倡的工作方式改革，
+[k]
+
+＠E：Amazones CEO
+我司已经对全体员工提出了改革性的建议。
+[k]
+
+＠E：Amazones CEO
+这次破例对公司外包人员，[r]也就是对你们开放这项服务。
+[k]
+
+＠E：Amazones CEO
+……毕竟就算放着不用也没有其他员工会用。
+[k]
+
+＠E：Amazones CEO
+公司福利待遇这种措辞完全不够用来形容，[r]让你们好好见识何谓真正幸福的劳动环境吧！
+[k]
+
+＠E：Amazones CEO
+请各位这边走。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_4 1.5]
+[wait fade]
+[charaFadeout E 0.1]
+[charaTalk depthOn]
+[scene 89700]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_62 0.1]
+
+？1：这……这里是……！？
+？！
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠芙芙
+芙芙！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk H]
+[charaFace H 33]
+[charaFadein H 0.1 1]
+
+＠达·芬奇
+唔……我早就知道空间以奇怪的感觉[r]联系在了一起。但这里究竟是什么地方？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+这里是我司引以为傲的综合放松设施。[r]只要是员工，都可以24小时随时使用。
+[k]
+
+[charaFace D 9]
+
+＠D：Amazones CEO
+附桑拿房的宽敞温泉设施、高级按摩椅、[r]休息用床铺、游戏区、
+[k]
+
+＠D：Amazones CEO
+以美食角的形式提供一流美食，[r]可供团体使用的进食空间……
+[k]
+
+[charaFace D 8]
+
+＠D：Amazones CEO
+可以迅速疗愈因配送而疲惫的员工身体，[r]并让大家迅速[#返回战场:继续工作]的乐园。
+[k]
+
+[charaFace D 12]
+
+＠D：Amazones CEO
+其名为『大Amazones温泉物语』！
+[k]
+
+？1：与其说是综合放松设施……
+？2：怎么看都是健康中心……
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛修
+原来如此。我找到资料了。
+[k]
+
+＠玛修
+是在二十世纪后期的日本十分发达的，[r]提供沐浴、饮食的综合性放松设施。
+[k]
+
+＠玛修
+也是工作疲劳的社会人的休息场所，[r]企业战士聚集的社交场所。那就是健康中心……对吧！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+我不清楚这颗行星是怎么称呼这种地方的，[r]但这里的确是战士们聚集的场所。
+[k]
+
+＠D：Amazones CEO
+而且还能让大家保持健康。强制健康。[r]哪怕在残酷的配送中受了半死不活的伤，
+[k]
+
+＠D：Amazones CEO
+只要来到这里，第二天就又能精力充沛胸怀梦想地[r]继续前去完成新的配送任务了。
+[k]
+
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠帕里斯
+原来如此，我明白了。[r]是对人类的回收再利用吧！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace G 1]
+[charaFadein G 0.1 0]
+[charaFace F 4]
+[charaFadein F 0.1 2]
+
+＠赫克托耳
+帕里斯，[r]这种时候你就该闭嘴。
+[k]
+
+[charaFace G 2]
+
+＠帕里斯
+好过分！
+[k]
+
+
+[charaFace F 0]
+
+＠赫克托耳
+……不过，这座设施本身确实很了不起。
+[k]
+
+＠赫克托耳
+以这种规模，哪怕是人员众多的迦勒底从者们[r]应该也能来这里好好休息了吧。
+[k]
+
+[charaFace G 1]
+
+＠帕里斯
+有哥哥的保证就可以放心了！
+[k]
+
+[charaFace G 0]
+
+＠帕里斯
+守卫特洛伊的时候，[r]我自己其实还是有点不安的，
+[k]
+
+＠帕里斯
+但哥哥说『没关系，一定会有办法的』，[r]而且哥哥也一直坚持守护到了最后。
+[k]
+
+[charaFace G 1]
+
+＠帕里斯
+哥哥的眼光比任何人都可靠！
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠赫克托耳
+但大叔我能做出的判断也就这些了。[r]最终结论还是要由御主决定才行。
+[k]
+
+＠赫克托耳
+……怎么办？
+[k]
+
+？1：既然设备如此充实，我觉得应该可以。
+？2：大家一起来协助CEO吧！
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠芙芙
+芙芙呜！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠赫克托耳
+好嘞好嘞，既然御主决定了，[r]那接下来只需全力以赴。
+[k]
+
+＠赫克托耳
+让我们全体出动开始配送业务吧。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛修
+我也觉得这应该是解决这微小特异点的[r]最聪明的方法。
+[k]
+
+[charaFace B 1]
+
+＠玛修
+虽说力有不逮，但我也会尽全力支援各位。[r]这是获得电商业务员技能的大好机会！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠达·芬奇
+没问题，既然[%1]已经决定了，[r]那我也只能下定决心了。
+[k]
+
+[charaFace H 12]
+
+＠达·芬奇
+只不过，配送业务啊……和以往的工作[r]肯定有所不同，得多加注意才行。
+[k]
+
+＠达·芬奇
+分配工作时不仅要考虑从者的战斗力，[r]也该考虑到他们的移动能力比较好。
+[k]
+
+[charaFace H 14]
+
+＠达·芬奇
+还是应该重视Rider……不对，[r]我们这儿非Rider的从者中拥有载具的也很多，
+[k]
+
+＠达·芬奇
+需要仔细考虑呢。[r]唔……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠刑部姬
+[#公主:我]对自己的机动能力没什么自信，[r][#公主:我]可以回去家里蹲吗……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠帕里斯
+这次真的有种需要所有迦勒底从者[r]齐心协力一起努力的感觉吧？
+[k]
+
+＠帕里斯
+简直就像节日，似乎会很开心！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠赫克托耳
+但辛苦估计会远超开心吧。[r]总之，稍微努力一下吧。
+[k]
+
+[charaFace F 0]
+
+＠赫克托耳
+御主好像打算与CEO同行吧。[r]那迦勒底方就出刑部姬一个当护卫应该也够了。
+[k]
+
+[charaFace F 0]
+
+＠赫克托耳
+这次带着大批人马到处晃悠也没有意义。
+[k]
+
+＠赫克托耳
+重要的应该是能够独立行动的从者人数，[r]以及各自的行动速度有多轻快。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠帕里斯
+也就是说我们也要努力配送吧？[r]好嘞～，开始干吧～！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠刑部姬
+知道啦知道啦～，护卫的工作就交给[#公主:我]吧。
+[k]
+
+[charaFace C 7]
+
+＠刑部姬
+（前卫交给CEO亲负责，[#公主:我]只需集中精力[r]　保护御亲就可以了，应该会很轻松吧！）
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[charaFadeout C 0.1]
+[wt 0.7]
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.3]
+
+？1：那大家加油配送吧！
+？！
+
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth F 2]
+[charaDepth C 3]
+[charaDepth G 4]
+
+[charaTalk off]
+[charaFace C 7]
+[charaFadein C 0.1 -384,0]
+[charaFace D 11]
+[charaFadein D 0.1 -128,0]
+[charaFace G 1]
+[charaFadein G 0.1 128,0]
+[charaFace F 0]
+[charaFadein F 0.1 384,0]
+[wt 2.0]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut I 0]
+[charaFace H 0]
+[charaFadein H 0.1 0]
+[charaPut J 2]
+[charaFace B 1]
+[charaFadein B 0.1 2]
+[wt 2.0]
+
+
+[branch lblIsGirlConf]
+
+[label lblNotGirl]
+
+[charaSet A 98002000 1 芙芙]
+[charaSet B 99502600 1 玛修]
+[charaSet C 6031001 1 刑部姬]
+[charaSet D 7027300 1 Amazones CEO_普通]
+[charaSet E 1098119600 1 Amazones CEO_轱辘]
+[charaSet F 3016000 1 赫克托耳]
+[charaSet G 2035000 1 帕里斯]
+[charaSet H 98111500 1 达·芬奇]
+[verticalImageSet I cut045_bg 1]
+
+[charaScale I 1.01]
+
+[charaFadein I 0.1 0,260]
+
+[wt 0.2]
+
+[fadein black 0.6]
+[wait fade]
+
+[wt 0.7]
+[charaAttack I normal 0,-220 5.0]
+[wt 7.5]
+
+[wipeout rectangleStripDownToUp 0.4 1]
+[wait wipe]
+[charaFadeout I 0.1]
+[scene 90100]
+[wt 0.4]
+
+[charaSet I 5009000 1 特效用1]
+[charaSet J 5009000 1 特效用2]
+[charaPut I 1200,1200]
+[charaPut J 1200,1200]
+[charaEffect I bit_talk_10_LowLevel]
+[charaEffect J bit_talk_10_LowLevel]
+[wipein rectangleStripUpToDown 0.4 1]
+[wait wipe]
+
+[wt 0.7]
+
+[bgm BGM_EVENT_77 0.1]
+
+？1：事情又变得奇怪了……
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠芙芙
+芙……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：虽说每次都会变得很奇怪……
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠玛修
+嗯。
+[k]
+
+[charaFace B 12]
+
+＠玛修
+我现在理解每年一到秋天，[r]御主就会开始祈祷的原因了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠刑部姬
+一旦快要到万圣节，御亲就会莫名露出[r]大彻大悟的表情，原来是这个理由啊……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？！
+
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+来了啊。准备都完成了哦。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠玛修
+呃……请容我再确认一遍，在如此短暂的时间内，[r]您真的已经完成了对那栋建筑物内部的改造了吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+
+＠E：Amazones CEO
+嗯，完成了。凭我们始终领先于时代的技术力，[r]这点小事轻而易举。
+[k]
+
+＠E：Amazones CEO
+另外我也需要向你们再确认一次，[r]归属权方面没有问题吧？
+[k]
+
+＠E：Amazones CEO
+我们非常注重权利关系。[r]绝对不会与盗版扯上关系。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠赫克托耳
+谈论特异点内建筑物的归属权或许有些奇怪。[r]但那些可以说是相关人员的家伙[line 3]
+[k]
+
+＠赫克托耳
+刑部姬、克娄巴特拉和伊丽莎白[r]听说是为了御主的任务，已经爽快答应了。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠帕里斯
+哈哈哈，这算什么，真好玩～！
+[k]
+
+＠帕里斯
+快看啊，阿波罗大人，[r]叠罗汉上叠罗汉哦，插在上面了！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+你们是……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+[charaFace F 1]
+[charaFadein F 0.1 2]
+
+＠赫克托耳
+嗨～，是大叔和弟弟哦。[r]是这次陪同一起来的。
+[k]
+
+[charaFace F 3]
+
+＠赫克托耳
+没问题吧？[r]新开发的希腊属性除味剂还有效果吧？
+[k]
+
+＠赫克托耳
+虽说对方是CEO，但在那方面应该没什么差别，[r]我听说甚至还可能恶化……
+[k]
+
+＠赫克托耳
+说实话，大叔我现在心里相当慌哦？
+[k]
+
+[messageOff]
+[wt 0.6]
+
+？1：这两位是协助者的赫克托耳与帕里斯。
+？！
+
+[wt 0.5]
+[charaFace F 0]
+
+＠赫克托耳
+……[r]……
+[k]
+
+＠帕里斯
+……[r]……
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+唔。感觉似曾相识，又好像并不认识。[r]对了，我想起来了[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠赫克托耳
+……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+是行星特洛伊的……[#闪光的头盔:Shining Helm][r]和[#小天使恶魔:Little Angel Devil]……？
+[k]
+
+[charaFace D 16]
+
+＠D：Amazones CEO
+不，他们不可能来这里。[r]应该只是恰好相似。或者是不同季的存在吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠赫克托耳
+（好危险[line 5]！[r]　吓得我心脏差点停跳[line 4]！）
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：Amazones CEO
+也就是说我们是初次见面吧。我是Amazones.com的CEO。[r]这是名片，今后请多关照。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠赫克托耳
+哎哟，您太客气了。[r]大叔我不是什么大人物，所以没有名片。
+[k]
+
+＠赫克托耳
+只是说这次最好有个擅长交涉的人比较好，[r]才把大叔我叫来这里。
+[k]
+
+[charaFace F 4]
+
+＠赫克托耳
+尽管大叔我表示比我更为[r]巧舌如簧的家伙大有人在……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-90]
+
+＠达·芬奇
+这次交涉的目的不是获利。[r]所以教授、福尔摩斯和恺撒并不适合哦。
+[k]
+
+＠达·芬奇
+需要确认的只有这里是否具备可以帮忙的环境，[r]并判断是去，还是不去就行了。
+[k]
+
+[charaFace H 4]
+
+＠达·芬奇
+还有就是……如果相关人员发生了什么问题，[r]需要通过交涉妥善处理，差不多这些吧。
+[k]
+
+[charaFace H 1]
+
+＠达·芬奇
+不，我当然知道那边的CEO[r]和你们认识那个人并不是同一个人哦？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛修
+这倒是让我想起一件事……[r]迦勒底的彭忒西勒亚小姐怎么样了？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠赫克托耳
+啊，她来的话事情会更为复杂。[r]阿喀[line 3]
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+[charaEffect D bit_talk_charge_red]
+[se ad61]
+[se ad556]
+[seVolume ad556 0 0.6]
+
+[wt 0.5]
+
+[charaEffectStop D bit_talk_charge_red]
+[seStop ad61 0.5]
+[seStop ad556 0.5]
+[wt 0.3]
+
+
+＠D：Amazones CEO
+阿喀？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaEffectDestroy D]
+
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠赫克托耳
+（唔哦惨了！　这话题对她来说也是个大地雷啊！）
+[k]
+
+[charaFace F 1]
+
+＠赫克托耳
+不，没什么啦没什么。大叔我[#啊]，[r][#咯]血痛骂的那家伙啦，万一她碰到就不好了吧，
+[k]
+
+＠赫克托耳
+而且外出走动时万一遇到另一个自己[r]对精神方面也没有什么好影响啦。
+[k]
+
+＠赫克托耳
+所以我用『从气候角度来看，目前是在室内练肌肉[r]效果倍增的时期』这个理由把她糊弄过去。
+[k]
+
+＠赫克托耳
+短期内阻止了她离开房间。[r]现在她应该正在自律地练习腹肌吧？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠玛修
+说得对……感谢您的顾虑。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠赫克托耳
+没什么，不是什么值得道谢的事。[r]大叔我只是做了自己应做的而已。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+＠帕里斯
+然后那个，彭……不对，CEO小姐。[r]能带我们进去看看里面吗？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+嗯，没问题。[r]酷似[#小天使恶魔:Little Angel Devil]的少年啊。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠帕里斯
+虽然无关紧要，[r]但到底是天使还是恶魔呀。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+跟我来。[r]先带你们从敝司引以为傲的商品仓库开始参观吧。
+[k]
+
+[messageOff]
+[wipeout rightToLeft 1.2 1.0]
+[wait wipe]
+[charaFadeout D 0.1]
+[scene 89600]
+[wt 1.5]
+[wipein leftToRight 1.2 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_4 0.1]
+
+[wt 0.7]
+
+[cameraMove 1.2 -75,-60 1.2]
+[wt 1.5]
+[cameraMove 1.2 75,-75 1.2]
+[wt 2.0]
+[cameraHome 1.0]
+[wt 1.5]
+
+？1：商品数量好多啊！
+？2：感觉要被压扁了……！
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaMoveReturn A 0,30 0.3]
+
+＠芙芙
+芙呜！[wait charaMove][charaMoveReturn A 0,30 0.3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠帕里斯
+好厉害！　哥哥，快看快看！[r]架子居然排得那么长！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠赫克托耳
+哎～，这还真不得了呢。
+[k]
+
+＠赫克托耳
+但不要太兴奋哦，帕里斯。[r]我们不是来游玩或学习参观的。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠帕里斯
+是哦。对不起～……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：Amazones CEO
+没什么，无妨。
+[k]
+
+＠E：Amazones CEO
+这里是能带给众人梦想的[r]Amazones.com必杀心脏部位。
+[k]
+
+＠E：Amazones CEO
+当然装满了众多能让孩子们兴奋到蹦蹦跳跳的梦想。[r]或者说非这样不可。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠玛修
+请问，能稍微打扰一下吗。以城堡内部而言，[r]这里空间提体积好像明显有问题……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-90]
+
+＠达·芬奇
+嗯。是空间扭曲系的魔术，或是未知的技术吧。
+[k]
+
+[charaFace H 3]
+
+＠达·芬奇
+我也很在意，但深入思考可就没完没了了。[r]……然而我还是很在意！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠E：Amazones CEO
+我们会全力配合外包公司，[r]但希望各位理解我们还是有企业机密的。
+[k]
+
+＠E：Amazones CEO
+也就是，那个……安保的……没错，[r]类似所谓的……风险管理？
+[k]
+
+＠E：Amazones CEO
+稍微说明一下，只要收到订单，我们就会将商品[r]集中在这里，进行包装，并发出去配送。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛修
+地方那么大，[r]要找到订单商品一定也很辛苦吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+然而实际上并不困难。[r]其实这个架子上就随机塞满了商品。
+[k]
+
+＠D：Amazones CEO
+通过条形码可以彻底管理『什么东西放在哪里』，[r]所以根本不需要进行仓库整理。
+[k]
+
+＠D：Amazones CEO
+员工只需前往指定的架子，[r]取出指定的商品就可以了。
+[k]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth E 1]
+[charaDepth D 2]
+[charaFadeout D 0.2]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：Amazones CEO
+这就是我司引以为傲面向未来的革新技术……[r]随机存储系统！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠帕里斯
+原来如此。[r]这样一来，我应该也能不犯错地完成工作了！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+顺带一提，从这里可以通过Amazones.com[r]拥有的传送装置跳跃到最近的配送点，
+[k]
+
+＠D：Amazones CEO
+然后各位配送员基本都需要[r]从配送点出发努力送货。
+[k]
+
+[charaFace D 9]
+
+＠D：Amazones CEO
+可以徒步、可以乘车，也可以骑羊。[r]不用在意什么银河道路交通法规。
+[k]
+
+＠D：Amazones CEO
+只需将这Amazones员工的徽章给执法人员看，[r]大部分问题都能迎刃而解。
+[k]
+
+[charaFace D 12]
+
+＠D：Amazones CEO
+我们就是为了这种时候才会缴纳高昂税金的啦。
+[k]
+
+[charaFace D 11]
+
+＠D：Amazones CEO
+对按时交税行使正当权利的健全优良企业挑刺[r]会有什么结果，他们其实也很清楚。
+[k]
+
+[charaFace D 1]
+
+＠D：Amazones CEO
+具体来说，就是这铁球上的刺。会很痛的。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠赫克托耳
+不过，每个人可自行选择移动方法这点倒是很方便。
+[k]
+
+＠赫克托耳
+毕竟我们那儿即便不是Rider，[r]也有不少拥有坐骑或是能飞的家伙嘛。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+但是，万不可掉以轻心。
+[k]
+
+＠D：Amazones CEO
+尽管Amazones用传送装置可以帮忙运到中转点，[r]但在接下来的路上会遇到什么完全是个未知数。
+[k]
+
+[charaFace D 9]
+
+＠D：Amazones CEO
+配送地点可能有吃人的巨大怪兽，[r]可能是广阔的死亡森林，
+[k]
+
+＠D：Amazones CEO
+可能是气压为一千个大气压的危险行星，[r]也有可能是几乎无人的气态行星。
+[k]
+
+[charaFace D 8]
+
+＠D：Amazones CEO
+我在进修的时候也说过，[r]如果敢小看这份工作，等待你们的就会是死亡。
+[k]
+
+＠D：Amazones CEO
+哪怕是一骑当千的从者们……
+[k]
+
+＠D：Amazones CEO
+若没有感谢的能量，[r]只需配送一件货物就会精疲力竭。
+[k]
+
+[charaFace D 12]
+
+＠D：Amazones CEO
+[line 3]因此！
+[k]
+
+？1：因此？
+？！
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth E 1]
+[charaDepth D 2]
+[charaFadeout D 0.2]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：Amazones CEO
+根本无需进行现代提倡的工作方式改革，
+[k]
+
+＠E：Amazones CEO
+我司已经对全体员工提出了改革性的建议。
+[k]
+
+＠E：Amazones CEO
+这次破例对公司外包人员，[r]也就是对你们开放这项服务。
+[k]
+
+＠E：Amazones CEO
+……毕竟就算放着不用也没有其他员工会用。
+[k]
+
+＠E：Amazones CEO
+公司福利待遇这种措辞完全不够用来形容，[r]让你们好好见识何谓真正幸福的劳动环境吧！
+[k]
+
+＠E：Amazones CEO
+请各位这边走。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_4 1.5]
+[wait fade]
+[charaFadeout E 0.1]
+[charaTalk depthOn]
+[scene 89700]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_62 0.1]
+
+？1：这……这里是……！？
+？！
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠芙芙
+芙芙！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 0,-90]
+
+＠达·芬奇
+唔……我早就知道空间以奇怪的感觉[r]联系在了一起。但这里究竟是什么地方？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+这里是我司引以为傲的综合放松设施。[r]只要是员工，都可以24小时随时使用。
+[k]
+
+[charaFace D 9]
+
+＠D：Amazones CEO
+附桑拿房的宽敞温泉设施、高级按摩椅、[r]休息用床铺、游戏区、
+[k]
+
+＠D：Amazones CEO
+以美食角的形式提供一流美食，[r]可供团体使用的进食空间……
+[k]
+
+[charaFace D 8]
+
+＠D：Amazones CEO
+可以迅速疗愈因配送而疲惫的员工身体，[r]并让大家迅速[#返回战场:继续工作]的乐园。
+[k]
+
+[charaFace D 12]
+
+＠D：Amazones CEO
+其名为『大Amazones温泉物语』！
+[k]
+
+？1：与其说是综合放松设施……
+？2：怎么看都是健康中心……
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛修
+原来如此。我找到资料了。
+[k]
+
+＠玛修
+是在二十世纪后期的日本十分发达的，[r]提供沐浴、饮食的综合性放松设施。
+[k]
+
+＠玛修
+也是工作疲劳的社会人的休息场所，[r]企业战士聚集的社交场所。那就是健康中心……对吧！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+我不清楚这颗行星是怎么称呼这种地方的，[r]但这里的确是战士们聚集的场所。
+[k]
+
+＠D：Amazones CEO
+而且还能让大家保持健康。强制健康。[r]哪怕在残酷的配送中受了半死不活的伤，
+[k]
+
+＠D：Amazones CEO
+只要来到这里，第二天就又能精力充沛胸怀梦想地[r]继续前去完成新的配送任务了。
+[k]
+
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠帕里斯
+原来如此，我明白了。[r]是对人类的回收再利用吧！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace G 1]
+[charaFadein G 0.1 0]
+[charaFace F 4]
+[charaFadein F 0.1 2]
+
+＠赫克托耳
+帕里斯，[r]这种时候你就该闭嘴。
+[k]
+
+[charaFace G 2]
+
+＠帕里斯
+好过分！
+[k]
+
+
+[charaFace F 0]
+
+＠赫克托耳
+……不过，这座设施本身确实很了不起。
+[k]
+
+＠赫克托耳
+以这种规模，哪怕是人员众多的迦勒底从者们[r]应该也能来这里好好休息了吧。
+[k]
+
+[charaFace G 1]
+
+＠帕里斯
+有哥哥的保证就可以放心了！
+[k]
+
+[charaFace G 0]
+
+＠帕里斯
+守卫特洛伊的时候，[r]我自己其实还是有点不安的，
+[k]
+
+＠帕里斯
+但哥哥说『没关系，一定会有办法的』，[r]而且哥哥也一直坚持守护到了最后。
+[k]
+
+[charaFace G 1]
+
+＠帕里斯
+哥哥的眼光比任何人都可靠！
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠赫克托耳
+但大叔我能做出的判断也就这些了。[r]最终结论还是要由御主决定才行。
+[k]
+
+＠赫克托耳
+……怎么办？
+[k]
+
+？1：既然设备如此充实，我觉得应该可以。
+？2：大家一起来协助CEO吧！
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠芙芙
+芙芙呜！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠赫克托耳
+好嘞好嘞，既然御主决定了，[r]那接下来只需全力以赴。
+[k]
+
+＠赫克托耳
+让我们全体出动开始配送业务吧。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛修
+我也觉得这应该是解决这微小特异点的[r]最聪明的方法。
+[k]
+
+[charaFace B 1]
+
+＠玛修
+虽说力有不逮，但我也会尽全力支援各位。[r]这是获得电商业务员技能的大好机会！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-90]
+
+＠达·芬奇
+没问题，既然[%1]已经决定了，[r]那我也只能下定决心了。
+[k]
+
+[charaFace H 4]
+
+＠达·芬奇
+只不过，配送业务啊……和以往的工作[r]肯定有所不同，得多加注意才行。
+[k]
+
+＠达·芬奇
+分配工作时不仅要考虑从者的战斗力，[r]也该考虑到他们的移动能力比较好。
+[k]
+
+[charaFace H 4]
+
+＠达·芬奇
+还是应该重视Rider……不对，[r]我们这儿非Rider的从者中拥有载具的也很多，
+[k]
+
+＠达·芬奇
+需要仔细考虑呢。[r]唔……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠刑部姬
+[#公主:我]对自己的机动能力没什么自信，[r][#公主:我]可以回去家里蹲吗……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠帕里斯
+这次真的有种需要所有迦勒底从者[r]齐心协力一起努力的感觉吧？
+[k]
+
+＠帕里斯
+简直就像节日，似乎会很开心！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠赫克托耳
+但辛苦估计会远超开心吧。[r]总之，稍微努力一下吧。
+[k]
+
+[charaFace F 0]
+
+＠赫克托耳
+御主好像打算与CEO同行吧。[r]那迦勒底方就出刑部姬一个当护卫应该也够了。
+[k]
+
+[charaFace F 0]
+
+＠赫克托耳
+这次带着大批人马到处晃悠也没有意义。
+[k]
+
+＠赫克托耳
+重要的应该是能够独立行动的从者人数，[r]以及各自的行动速度有多轻快。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠帕里斯
+也就是说我们也要努力配送吧？[r]好嘞～，开始干吧～！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠刑部姬
+知道啦知道啦～，护卫的工作就交给[#公主:我]吧。
+[k]
+
+[charaFace C 7]
+
+＠刑部姬
+（前卫交给CEO亲负责，[#公主:我]只需集中精力[r]　保护御亲就可以了，应该会很轻松吧！）
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[charaFadeout C 0.1]
+[wt 0.7]
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.3]
+
+？1：那大家加油配送吧！
+？！
+
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth F 2]
+[charaDepth C 3]
+[charaDepth G 4]
+
+[charaTalk off]
+[charaFace C 7]
+[charaFadein C 0.1 -384,0]
+[charaFace D 11]
+[charaFadein D 0.1 -128,0]
+[charaFace G 1]
+[charaFadein G 0.1 128,0]
+[charaFace F 0]
+[charaFadein F 0.1 384,0]
+[wt 2.0]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut I 0]
+[charaFace H 0]
+[charaFadein H 0.1 -256,-90]
+[charaPut J 2]
+[charaFace B 1]
+[charaFadein B 0.1 2]
+[wt 2.0]
+
+
+[label lblIsGirlConf]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[skip false]
+[charaFadeout H 0.1]
+[charaFadeout B 0.1]
+[charaEffectDestroy I]
+[charaEffectDestroy J]
+[scene 10000]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[soundStopAllFade 0.4]
+
+[charaSet J 5009000 1 初始化用dummy]
+[charaSet I 5009000 1 初始化用dummy]
+[charaSet H 5009000 1 初始化用dummy]
+[charaSet G 5009000 1 初始化用dummy]
+[charaSet F 5009000 1 初始化用dummy]
+[charaSet E 5009000 1 初始化用dummy]
+[charaSet D 5009000 1 初始化用dummy]
+[charaSet C 5009000 1 初始化用dummy]
+[charaSet B 5009000 1 初始化用dummy]
+[charaSet A 5009000 1 初始化用dummy]
+
+[maskout black 1.0]
+[wait mask]
+[scene 10000]
+[wt 0.1]
+[maskin black 0.1]
+[wait mask]
+
+[label selectBranch]
+
+[fowardEffect bit_chapterstart80273]
+[wait fowardEffect]
+
+[wt 1.0]
+
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

@@ -1,0 +1,396 @@
+
+
+＄94-06-28-08-1-0
+
+
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 4046000 1 エリザベート]
+[charaSet B 2045000 1 ゼノビア]
+[charaSet C 25010000 1 モレー]
+[charaSet D 2031001 1 ナポレオン]
+[charaSet E 2003001 1 ロビンフッド]
+[charaSet F 1047000 1 渡辺綱]
+[charaSet G 2014000 1 俵藤太]
+[charaSet H 1026001 1 デオン]
+[charaSet I 1012001 1 ベディヴィエール]
+[charaSet P 1009001 1 モードレッド]
+
+[charaSet J 1098221600 1 暗黒の仔山羊]
+
+[imageSet K cut299_doll_master_male 1]
+[imageSet L cut299_doll_master_female 1]
+
+[charaSet M 98115000 1 エフェクト用]
+
+[sceneSet N 137101 1]
+[charaScale N 1.3]
+[sceneSet O 137101 1]
+[charaScale O 1.45]
+
+[charaTalk depthOff]
+
+[charaDepth N 4]
+[charaDepth O 5]
+[charaDepth A 6]
+[charaDepth C 7]
+
+[scene 137101]
+
+[charaTalk off]
+
+[charaFadein N 0.7 100,-200]
+[charaMove N -100,-200 7.0]
+
+[bgm BGM_MAP_4 0.5]
+[fadein black 1.5]
+[wait fade]
+[wt 3.0]
+[charaFadein O 1.5 -200,-100]
+[charaMove O -200,-300 7.0]
+[wt 3.5]
+[charaFadeout N 0.1]
+[wt 0.1]
+[charaFadeout O 3.0]
+[wt 4.0]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+さあいくわよ～♪[r][#私:アタシ]の７人のイケメンたち～♪
+[k]
+
+＠７人
+[charaTalk M]
+[f large]キャーエリチャーン！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[masterBranch _Male _Female]
+
+[label _Male]
+
+[cueSe SE_21 21_ade578]
+[charaTalk K]
+[charaFadein K 0.4 0,-200]
+[charaMoveReturn K 0,-190 0.4]
+[wt 0.6]
+[charaMoveReturn K 0,-190 0.4]
+[wt 0.8]
+
+[branch _branchEnd]
+
+[label _Female]
+
+[cueSe SE_21 21_ade578]
+[charaTalk L]
+[charaFadein L 0.4 0,-200]
+[charaMoveReturn L 0,-190 0.4]
+[wt 0.6]
+[charaMoveReturn L 0,-190 0.4]
+[wt 0.8]
+
+[branch _branchEnd]
+
+[label _branchEnd]
+
+？1：キャーエリチャーン！
+？！
+
+[charaFadeout K 0.4]
+[charaFadeout L 0.4]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠ゼノビア
+わ、私は言わないからな……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠モレー
+前回は勢いで言っちゃったけど、もう言わにゃい！
+[k]
+
+[charaFace C 1]
+
+＠モレー
+さー、我が神の仔になりかけの[r][%1]を打ち倒しましょう！
+[k]
+
+＠モレー
+そして聖杯をゲットです！
+[k]
+
+
+？1：うん、打ち倒す際には気を付けて……
+？2：お手柔らかにお願いします
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadeinFSR A 0.1 2]
+
+[charaFace C 1]
+[charaFadeinFSL C 0.1 0]
+
+＠エリザベート
+心配いらないわ～♪
+[k]
+
+＠エリザベート
+[#私:アタシ]とゼノビア～♪[r]そして[#私:アタシ]の７人のイケメンを信じるのよ～♪
+[k]
+
+[charaFace C 20]
+
+＠モレー
+さりげなくあたし除外されてません？[r]うう、それでも頑張るー！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk P]
+[charaFace P 2]
+[charaFadein P 0.1 1]
+
+＠モードレッド
+くっちゃべってないで行くぞ！[r]邪神退治だ！
+[k]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠ナポレオン
+オーララ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠モレー
+オニヴァ！
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_MAP_4 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+
+[scene 137201]
+[wt 1.0]
+
+[se ad538]
+[wt 1.0]
+[fadein black 2.0]
+[wait fade]
+[wt 0.8]
+
+[se ade311]
+[shake 0.03 0 4 0.8]
+[wt 1.5]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.7 1]
+[wt 1.1]
+
+[se ad1018]
+＠暗黒の仔山羊
+[i berserker_language_1]！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+いたわ！　もう１人の[&子イヌ:子ジカ]！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[wt 0.6]
+
+[se ad1019]
+[shake 0.05 3 3 1.8]
+
+＠暗黒の仔山羊
+[i berserker_language_2]！
+[k]
+
+[shakeStop]
+[seStop ad1019 1.5]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+すっごいうるさいわ～♪[r]きっと不安とか～あれこれで～怯えているのね～♪
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠ロビンフッド
+こいつはまた……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk P]
+[charaFace P 5]
+[charaFadein P 0.1 1]
+
+＠モードレッド
+やっぱでけえな。
+[k]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ゼノビア
+大きい……！　そして砂嵐の如き荒々しさの咆哮！[r]これは一筋縄ではいかないようだな……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠渡辺綱
+問題はない。[r]より巨大な鬼を斬ったこともある。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠俵藤太
+はは、心強いな！
+[k]
+
+＠俵藤太
+かく言う[#吾:オレ]も、でかぶつには多少の心得がある。[r]我ら無双の英傑ならば、なんとでもなるさ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠デオン
+そうは思えないが……[wt 1.0][charaFace H 5][r]いいえ、やるだけやってみせるさ！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadeinFSL I 0.1 0]
+
+[charaFace H 5]
+[charaFadeinFSR H 0.1 2]
+
+＠ベディヴィエール
+お力添えいたします、参りましょう。
+[k]
+
+[charaFace H 2]
+
+＠デオン
+ああ！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[se ade311]
+[shake 0.03 0 4 0.8]
+[wt 1.4]
+
+
+[se ade311]
+[shake 0.03 0 4 0.8]
+[wt 1.4]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.7 1]
+[wt 1.1]
+
+[se ad1019]
+[shake 0.02 3 3 2.0]
+[wt 1.6]
+
+
+[messageOff]
+[seStop ad1019 0.5]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

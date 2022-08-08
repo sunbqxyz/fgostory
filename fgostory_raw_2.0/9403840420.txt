@@ -1,0 +1,242 @@
+
+
+＄94-03-84-04-2-0
+
+[soundStopAll]
+
+[charaSet A 11007001 1 织田吉法师]
+[charaSet B 11007000 1 足轻信]
+[charaSet C 1098172300 1 甲斐士兵]
+[charaSet D 6036002 1 李书文]
+[charaSet E 7035001 1 森长可]
+[charaSet F 98001000 1 家老玛修]
+[charaSet G 3038000 1 长尾景虎]
+
+[charaSet J 98115000 1 特效用]
+
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_41]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 78601]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠家老玛修
+[#前辈:殿下]！　挡不住敌人的势头！！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠足轻信
+后卫都自说自话地逃跑了！[r]虽说本来签的就是这种合约，这也无可奈何！
+[k]
+
+[charaFace B 4]
+＠足轻信
+就算逃跑也不怪罪＆俸禄预先支付制什么的，[r]迦勒底家还真是战国罕见的不黑心大名呢！
+[k]
+
+[charaFace B 13]
+＠足轻信
+不过现在不是说这种话的时候啦[line 5]！！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[charaPut J 1]
+＠织田吉法师
+拿下了[line 6]！！！！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.1]
+[charaTalk C]
+[charaPut J 1200,1200]
+[se ade308]
+[wt 1.5]
+
+[charaFace A 5]
+
+＠织田吉法师
+怎么！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠甲斐士兵
+后方悬崖上有敌方伏兵！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠织田吉法师
+……那是！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+[seVolume ade307 0.4 0.2]
+
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+[bgm BGM_EVENT_63 0.1]
+
+＠长尾景虎
+我有毗沙门天的佑护在身！　前进[line 5]！！
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠家老玛修
+前辈，是景虎小姐！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠织田吉法师
+不要害怕！　只要拿到首领的首级，胜利就是我们的！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠敌兵
+但……但是那位白色装束的武将强得离谱！！[r]后卫似乎已经土崩瓦解了！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠足轻信
+来得太慢了啦，那只笑面虎！
+[k]
+
+＠足轻信
+好，我方也派出假装逃跑实际埋伏的主力队伍！[r]前后夹击！
+[k]
+
+？1：主力队？
+
+？2：这是信的作战？
+
+？！
+
+[charaFace B 12]
+＠足轻信
+要欺骗敌人首先就要欺骗自己人！[r]好，打回去！！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠长尾景虎
+这边会以直线突破！
+[k]
+
+[se ad16]
+[seVolume ad16 0 0]
+
+[charaFace G 2]
+
+＠长尾景虎
+大家跟我上！　[twt 0.6]喵[messageShake 0.02 3 3 0.4]！！[seVolume ad16 0.5 0.4]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠家老玛修
+喵！　[twt 0.3][charaFace F 4]哎？　喵……喵？
+[k]
+
+？1：我们走！
+
+[charaFace F 2]
+＠家老玛修
+是！　玛修·家老·基列莱特，[r]突击！
+[k]
+
+？2：景虎的兴致是不是特别高昂？
+
+[charaFace F 2]
+＠家老玛修
+御主！　我们也上吧！
+[k]
+
+？！
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[seStop ad16 0.4]
+[bgmStop BGM_EVENT_63 0.4]
+[wait fade]
+[soundStopAll]
+[end]

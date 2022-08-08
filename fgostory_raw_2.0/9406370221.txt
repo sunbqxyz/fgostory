@@ -1,0 +1,306 @@
+
+
+＄94-06-37-02-2-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 11012000 1 蘭丸Ｘ]
+[charaSet B 1098222510 1 坂本龍馬（ランサー）]
+[charaSet C 1098138000 1 坂本龍馬]
+[charaSet D 7026000 1 茶々]
+[charaSet E 1098170900 1 森長可]
+[charaSet F 1098139000 1 お竜さん]
+
+[charaSet H 98115000 1 エフェクト用]
+[charaSet I 98115000 1 エフェクト用]
+
+[scene 138800]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.2]
+
+[cueSe Servants_703900 m43602]
+[seVolume m43602 0 0.4]
+[cueSe Servants_703900 m43631]
+[seVolume m43631 0 0.4]
+[cueSe SE_21 21_ade642]
+[fowardEffect bit_talk_fannel_purple -50,50]
+[wt 0.2]
+[cueSe Servants_703900 m43602]
+[seVolume m43602 0 0.4]
+[cueSe Servants_703900 m43631]
+[seVolume m43631 0 0.4]
+[cueSe SE_21 21_ade642]
+[fowardEffect bit_talk_fannel_purple 50,-50 H]
+[wt 0.3]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[effect bit_talk_14]
+[cueSe Servants_703900 m43603]
+[seVolume m43603 0 0.4]
+[charaShake D 0.05 2 2 0.8]
+[effect bit_talk_14 -120,100]
+[wt 0.2]
+[cueSe Servants_703900 m43603]
+[seVolume m43603 0 0.4]
+[effect bit_talk_14 120,-100]
+
+＠茶々
+あたたたたたたー！？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[wt 0.2]
+[se ad85]
+[effect bit_talk_h_slash01_fs]
+[wt 0.2]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[wt 0.4]
+
+[cueSe Servants_704100 m46322]
+[charaPut H 1]
+[charaEffect H bit_talk_42]
+[effect bit_talk_14]
+[charaMove D -400,0 0.3]
+[charaFadeout D 0.2]
+[wt 0.2]
+
+[se ad914]
+[se ad728]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_42]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[se ad322]
+[se ad914]
+[bgmStop BGM_EVENT_80 1.0]
+[shake 0.03 5 5 0.6]
+[charaPutFSL I -100,-100]
+[charaRoll I 270]
+[charaEffect I bit_talk_impactlanding]
+[wt 2.5]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+やったでありますか！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth C 2]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFace C 0]
+[charaFadein F 0.1 1]
+[charaFadein C 0.1 1]
+
+＠お竜さん
+おい、そういうのやめろ。やれないパターンだぞ。
+[k]
+
+＠坂本龍馬
+いや……。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[se ad892]
+[seVolume ad892 0 0.5]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.4 0,-20]
+[charaMove D -6,-10 0.4]
+[wt 0.4]
+[seStop ad892 0.5]
+[charaMove D 0,0 0.4]
+[wt 0.6]
+
+＠茶々
+ゲホゲホ……、茶々に対してこの仕打ち、[r]タヌキジジィの和議くらい信じられないかも！
+[k]
+
+？1：良かった、直ってる
+
+？2：ありがとう、蘭丸…Ｘだっけ？
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 21]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+主様をお守りするのは当然の務めでありますから！
+[k]
+
+[charaFace A 6]
+
+＠蘭丸Ｘ
+あ、蘭丸のことは蘭丸とお呼び下さいませ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠森長可
+……やれやれ、茶々様にも参るぜまったく。
+[k]
+
+[charaFace E 8]
+＠森長可
+ん？　蘭丸……？　蘭丸って、てめぇまさか成利か？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+はあ？　何でありますか、馴れ馴れしい。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+
+＠森長可
+いや、その顔、成利じゃねぇか、[r]久しぶりだなぁ、おい！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaSet E 1098171200 1 森長可]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠茶々
+蘭丸ちゃん？　伯母上の小姓だったあの蘭丸ちゃん？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠森長可
+ひゃはははははは！　なんだよおい、[r]大殿と本能寺でおっ[#死:ち]んで以来じゃねぇか！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaSet E 1098170900 1 森長可]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+な、なにを訳の分からないことを……、
+[k]
+
+＠蘭丸Ｘ
+それに蘭丸は成利でもただの蘭丸でもありません。
+[k]
+
+[charaFace A 9]
+
+＠蘭丸Ｘ
+そう……、
+[k]
+
+[charaFace A 13]
+[bgmStop BGM_EVENT_77 1.0]
+
+[se ade226]
+[charaPut H 1]
+[charaEffect H bit_talk_41_fs]
+＠蘭丸Ｘ
+[line 3]謎の蘭丸Ｘなのであります！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth D 2]
+[charaFace D 3]
+[charaFace E 5]
+[charaFadeinFSL D 0.1 0]
+[charaFadeinFSR E 0.1 2]
+
+＠茶々＆森長可
+……は？
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

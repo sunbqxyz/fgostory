@@ -1,0 +1,1248 @@
+
+＄94-06-37-03-1-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098171100 1 明智光秀]
+[charaSet B 1098118900 1 家臣]
+[charaSet C 11007002 1 織田信長]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[imageSet D cut300_text01 1]
+[imageSet E cut300_text02 1]
+
+[sceneSet F 102101 1]
+[sceneSet G 115400 1]
+[sceneSet I 139700 1]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaFace D 0]
+[charaFadein D 1.0 200,-250]
+
+[wt 1.5]
+[wait touch]
+[charaFadeout D 1.0]
+[wt 1.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+
+
+
+[scene 102101]
+[wt 1.0]
+
+[fadein black 1.0]
+[se adm13]
+[seVolume adm13 0 0]
+[seVolume adm13 1.0 1.0]
+[wait fade]
+
+[wt 1.5]
+[seStop adm13 2.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+＠明智光秀
+…………。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_90 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace A 0]
+[charaFadeinFSL B 0.1 0]
+[charaFadeinFSR A 0.1 2]
+
+＠家臣
+殿？　如何なされましたか？
+[k]
+
+[charaFace A 5]
+＠明智光秀
+……やめろ、貴様に言われるまでもない！
+[k]
+
+＠家臣
+と、殿？　何を……？
+[k]
+
+[charaFace A 2]
+＠明智光秀
+……っ！　大事無い。
+[k]
+
+＠明智光秀
+皆の者、これより我らは桂川を渡る。
+[k]
+
+＠家臣
+桂川を？　それは……！？
+[k]
+
+[charaFace A 0]
+＠明智光秀
+よく聞け、この光秀、天下万民のため[r]神仏衆生の敵を討つ！
+[k]
+
+＠家臣
+おお……、殿！
+[k]
+
+＠家臣
+して、敵はいずこにございますか！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth A 2]
+[charaScale F 2.0]
+[charaScale A 1.5]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFadein F 1.0 0,-300]
+[charaFadein A 1.0 100,0]
+[charaMoveScale F 2.05 5.0]
+[charaMove F -20,-300 5.0]
+[charaMove A 120,0 5.0]
+[wt 2.0]
+
+＠明智光秀
+[line 3]敵は！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_90 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaFadeout F 0.1]
+[charaFadeout A 0.1]
+[charaScale A 1.0]
+
+[charaFadeout A 0.1]
+[scene 115400]
+[charaScale G 1.5]
+[charaFadein G 0.1 100,-300]
+[wt 1.0]
+
+
+[fadein black 1.0]
+[cueSe SE_21 21_ad1114]
+[seVolume 21_ad1114 0 0]
+[se ad450]
+[seVolume ad450 0 0]
+[seVolume ad450 1.0 0.4]
+[seVolume 21_ad1114 1.0 1.0]
+[charaMove G -100,-300 6.0]
+[wait fade]
+
+[wt 4.0]
+
+[fadeout black 1.0]
+[seStop ad450 1.0]
+[seStop 21_ad1114 1.0]
+[wait fade]
+
+[charaFadeout G 0.1]
+[scene 139700]
+[charaPut H 1]
+[charaEffect H bit_talk_sparks_fs]
+[wt 1.0]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth I 2]
+[charaDepth C 3]
+[charaDepth H 4]
+
+[cueSe SE_21 21_ad1114]
+[seVolume 21_ad1114 0 0]
+[fadein black 1.0]
+[seVolume 21_ad1114 1.0 0.3]
+[wait fade]
+
+[bgm BGM_MAP_37 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠織田信長
+…………。
+[k]
+
+＠B：森蘭丸
+主様！　明智光秀……、
+[k]
+
+＠B：森蘭丸
+謀反にございます！
+[k]
+
+＠織田信長
+……ほう。
+[k]
+
+[charaFace C 6]
+＠織田信長
+わしを殺すはサルかと思うておったが、[r]まさか光秀がのう。
+[k]
+
+＠B：森蘭丸
+とにかくお逃げください、ここは蘭丸と弥助が！
+[k]
+
+[charaFace C 0]
+＠織田信長
+……光秀の差配とあらば、[r]逃げ出す隙などあるまいに。
+[k]
+
+[charaFace C 6]
+＠織田信長
+……ふふ、
+[k]
+
+[charaFace C 1]
+＠織田信長
+ふはははははははは！
+[k]
+
+[charaFace C 7]
+＠織田信長
+[line 3]是非も無し。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaPut H 2000,2000]
+[charaFadeout C 0.1]
+[scene 115400]
+[wt 1.0]
+
+[seVolume 21_ad1114 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠明智光秀
+首だ！　信長の首を獲れい！
+[k]
+
+＠明智光秀
+首を獲らねば、信長は死なぬ！
+[k]
+
+[charaFace A 6]
+＠明智光秀
+首なくば、私の天下は来ぬのだ！
+[k]
+
+[charaFace A 5]
+＠明智光秀
+……首だ、首を獲れぇい！
+[k]
+
+[charaFace A 10]
+＠明智光秀
+信長の首を獲れぇえええい！！！
+[k]
+
+[messageOff]
+[seVolume 21_ad1114 1.0 0.3]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[scene 139700]
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+＠織田信長
+……蘭丸、おまえは逃げよ。
+[k]
+
+＠B：森蘭丸
+何を仰いますか！[r]まだ外では弥助殿も奮戦しております！
+[k]
+
+＠B：森蘭丸
+この蘭丸もどこまでもお供致します！
+[k]
+
+[charaFace C 6]
+＠織田信長
+なに、おまえには供より[r]面倒な事を任せようと思うてな。
+[k]
+
+＠B：森蘭丸
+そ、それは[line 3]
+[k]
+
+＠織田信長
+蘭丸、おまえはわしの首を持って逃げよ。
+[k]
+
+＠B：森蘭丸
+……っ！？
+[k]
+
+[charaFace C 0]
+＠織田信長
+この首を光秀如きに弄ばれても面白うない。
+[k]
+
+[charaFace C 7]
+＠織田信長
+わしの最後の嫌がらせじゃ。
+[k]
+
+＠織田信長
+どこぞに落ちのび、[r]人知れずうち捨ててくれればよい。
+[k]
+
+＠B：森蘭丸
+そ、そのような……！
+[k]
+
+[charaFace C 6]
+＠織田信長
+その後はそうじゃな、サルのところにでも駆け込め。
+[k]
+
+＠織田信長
+少々、[#贔屓:ひいき]が過ぎるがわしの命と引き換えじゃ、
+[k]
+
+[charaFace C 7]
+＠織田信長
+この程度でサルに及ばぬならば、[r]光秀めの天下もなかろうよ。
+[k]
+
+＠B：森蘭丸
+そ、そのような……。
+[k]
+
+[charaFace C 5]
+＠織田信長
+この信長の首を光秀如きにくれてやるつもりか？
+[k]
+
+＠B：森蘭丸
+……っ！
+[k]
+
+
+＠B：森蘭丸
+はっ……、承知……。
+[k]
+
+＠B：森蘭丸
+いたしました……。
+[k]
+
+＠B：森蘭丸
+信長様の首、必ずやこの蘭丸が……！
+[k]
+
+[charaFace C 0]
+＠織田信長
+……手間をかけるな。
+[k]
+
+[charaFace C 7]
+＠織田信長
+……さて、征くとするか。
+[k]
+
+[messageOff]
+[charaFadeout C 0.5]
+[wt 0.5]
+[se ad1034]
+[seVolume ad1034 0 0.2]
+[wt 0.6]
+[seStop ad1034 0.2]
+
+＠B：森蘭丸
+の、信長様……。
+[k]
+
+[messageOff]
+
+
+[charaTalk off]
+
+
+
+[charaScale I 1.3]
+[charaScale C 1.4]
+
+[charaFadein I 1.0 0,-300]
+[charaMove I 0,-250 7.0]
+[wt 2.0]
+[charaFace C 14]
+[charaFadein C 1.0 0,-30]
+[charaMove C 0,0 3.0]
+[wt 2.0]
+[charaFaceFade C 21 0.6]
+[wt 1.0]
+[charaMove I 0,-230 10.0]
+
+＠織田信長
+…………。
+[k]
+
+＠織田信長
+[line 3]人間五十年
+[k]
+
+＠織田信長
+[line 3]下天の内をくらぶれば
+[k]
+
+[messageOff]
+[seStop 21_ad1114 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaFadeout I 0.1]
+[charaFadeout C 0.1]
+[charaPut H 2000,2000]
+[charaEffectStop H bit_talk_sparks_fs]
+[charaFadeout C 0.1]
+[scene 10000]
+[wt 0.1]
+
+
+[se ad969]
+[se ad138]
+[se ad267]
+[cueSe SE_21 21_ad1148]
+[seVolume 21_ad1148 0 0.6]
+[fadein black 1.0]
+[wait fade]
+
+[bgmStop BGM_MAP_37 2.0]
+[charaFadein E 0.5 0,-130]
+
+[wt 1.5]
+[wait touch]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+[scene 10000]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[bgmStop BGM_EVENT_90 0.4]
+[bgmStop BGM_MAP_37 0.4]
+
+[cueSeStop 21_ad1114 0.4]
+[cueSeStop 21_ad1148 0.4]
+[seStop adm13 0.4]
+[seStop ad450 0.4]
+[seStop ad1034 0.4]
+[seStop ad969 0.4]
+[seStop ad138 0.4]
+[seStop ad267 0.4]
+
+[charaEffectDestroy H bit_talk_sparks_fs]
+
+[scene 10000]
+
+[charaSet A 1098171100 1 明智光秀]
+[charaSet B 1098118900 1 家臣]
+[charaSet C 11007002 1 織田信長]
+[charaSet H 98115000 1 エフェクト用]
+[imageSet D cut300_text01 1]
+[imageSet E cut300_text02 1]
+[sceneSet F 102101 1]
+[sceneSet G 115400 1]
+[sceneSet I 139700 1]
+
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+
+[skip false]
+
+[wt 0.5]
+
+
+[fowardEffect bit_queststart80346]
+[wait fowardEffect]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 110101]
+[wt 0.5]
+
+[charaSet A 11012000 1 蘭丸Ｘ]
+[charaSet B 1098222510 1 坂本龍馬（ランサー）]
+[charaSet C 1098138000 1 坂本龍馬]
+[charaSet D 7026000 1 茶々]
+[charaSet E 1098170900 1 森長可]
+[charaSet F 1098139000 1 お竜さん]
+[charaSet G 1098222730 1 田中新兵衛]
+[charaSet I 1098223900 1 キンノーッブ1]
+[charaSet J 1098223900 1 キンノーッブ2]
+[charaSet K 1098223900 1 キンノーッブ3]
+
+[charaSet L 1098223000 1 出雲阿国_シルエット]
+[charaFilter L silhouette 00000080]
+[charaSet M 1098223000 1 出雲阿国]
+[charaSet N 1098223100 1 斬ザブロー]
+[charaSet O 1098223110 1 斬ザブロー_シルエット]
+
+[imageSet P back10000 1 1]
+[charaScale P 1.05]
+
+[imageSet Q back10000 1 1]
+[charaScale Q 1.05]
+
+[sceneSet R 138800 1]
+[charaScale R 1.4]
+
+[charaSet S 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+
+[charaDepth A 5]
+
+[charaDepth S 9]
+[charaDepth P 9]
+[charaDepth Q 9]
+
+[skip true]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 3.0]
+
+[wipeout rectangleStripDownToUp 0.7 1]
+[wait wipe]
+
+[scene 137500]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.7 1]
+[wait wipe]
+
+
+
+[bgm BGM_EVENT_146 0.1]
+
+[wt 0.3]
+[se ade249]
+[seVolume ade249 0 0.2]
+
+＠テレビ放送
+維新の嵐吹き荒れる、面白い、面白すぎる、
+[k]
+
+＠テレビ放送
+ＳＡＩＴＡＭＡ銘菓『維新まんじゅう』。
+[k]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠茶々
+たしかにこのおまんじゅう、美味しいかも！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[cueSe SE_21 21_ade636]
+[wt 1.2]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+
+＠森長可
+この維新煎餅とやらもうめーな、おい！
+[k]
+
+[charaFace E 1]
+＠森長可
+殿様も喰え喰え！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+主様、蘭丸が食べやすく割っておきましたので[r]ささ、どうぞであります。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠森長可
+相変わらずこまけぇ事に気が利くな、[r]って、どーも、成利と一緒にしちまうな。
+[k]
+
+[charaFace E 8]
+＠森長可
+ってか、何しに来たんだっけか、オレら。
+[k]
+
+？1：ノッブの首を探しに来たんでしょ
+
+[charaFace E 5]
+＠森長可
+おう、そうだった、そうだった。[r]大殿の首級を挙げに来たんだったな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+？2：なんだっけ？
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠茶々
+伯母上の首を探しに来たはずなんだけど、[r]茶々も割とどうでもよくなってきたかも。
+[k]
+
+[charaFace D 0]
+？！
+
+＠茶々
+ところで、あのうさん臭い白スーツはどこかな？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+坂本様でしたら、朝方から調べ物に行くとかで
+[k]
+
+＠蘭丸Ｘ
+事務所の仕事を蘭丸達に任せて[r]出かけているでありますよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠森長可
+あの野郎、すぐ勝手に行動しやがるよな。[r]一度、きっちり絞めといた方がいいんじゃねーか、
+[k]
+
+[charaFace E 7]
+＠森長可
+なあ、殿様！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaSet E 1098171200 1 森長可]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+
+＠茶々
+主君無視して勝手に行動派武将筆頭の長可君が[r]どの口で言うってレベルなんですけどー！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠森長可
+うひゃははははは！[r]茶々様、そんなに褒めるなって！
+[k]
+
+[charaCrossFade E 1098170900 9 0.2]
+
+＠森長可
+ま、とはいえ、大殿の首なんざ[r]どうやって探せって話だし、
+[k]
+
+＠森長可
+めんどくせぇ事はあいつにやらせりゃいいか。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+主様はこの地に、何かを探しに[r]来たんでありますか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠森長可
+おう、大殿の首が朝起きたら消えててな、[r]んでオレらが探しに来たって、
+[k]
+
+[charaFace E 8]
+＠森長可
+ま、そういうわけよ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠茶々
+冷静に聞くと、朝起きたら首が消えてたとか[r]意味わかんないし。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+首が消えて……、
+[k]
+
+[charaFace A 15]
+
+＠蘭丸Ｘ
+首……？
+[k]
+
+
+[bgmStop BGM_EVENT_146 1.0]
+[messageOff]
+[charaFace A 16]
+[charaShake A 0.05 3 3 0.5]
+[se ad733]
+[seVolume ad733 0 0.4]
+[wt 1.5]
+
+＠蘭丸Ｘ
+うっ！？
+[k]
+
+？1：大丈夫？
+
+？2：どこか痛いの？
+
+？！
+
+[charaFace A 4]
+
+＠蘭丸Ｘ
+だ、大丈夫であります。
+[k]
+
+＠蘭丸Ｘ
+……少し、夜風に当たってきますね。
+[k]
+
+[messageOff]
+[se ad799]
+[charaFadeout A 0.4]
+[charaMove A 50,0 0.4]
+[wt 0.4]
+[seStop ad799 1.0]
+
+[wt 1.0]
+
+[se ad93]
+[wt 1.0]
+
+[fadeout black 1.5]
+[wait fade]
+
+[se ad94]
+[scene 138800]
+[wt 2.0]
+
+
+[charaFadein P 0.1 0,-710]
+[charaFadein Q 0.1 0,740]
+
+[charaScale A 0.85]
+
+[cameraMove 0.1 80,-15 1.15]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 150,-60]
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+
+＠蘭丸Ｘ
+…………。
+[k]
+
+[messageOff]
+[se ad93]
+[seVolume ad93 0 0.4]
+
+
+[charaMove P 0,-1010 2.5]
+[charaMove Q 0,1040 2.5]
+
+[charaMoveScale R 1.04 2.5]
+[charaMove R 0,-200 2.8]
+
+[charaMoveScale A 1.01 2.5]
+[charaMove A 150,0 2.5]
+[cameraMove 2.5 0,0 1.0]
+[wt 2.0]
+
+
+[se ad94]
+[wt 0.8]
+
+[se ad60]
+[wt 0.3]
+[seStop ad60 0.1]
+[wt 1.0]
+
+[bgm BGM_YAMA 0.1 0.8]
+
+[charaTalk A]
+[charaFace A 15]
+
+
+＠蘭丸Ｘ
+主様……。
+[k]
+
+[messageOff]
+[charaFadeout A 0.2]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.2 1]
+[wt 0.3]
+
+＠蘭丸Ｘ
+すみません、急に席を外してしまい。
+[k]
+
+[charaFace A 8]
+
+＠蘭丸Ｘ
+…………。
+[k]
+
+[charaFace A 4]
+
+＠蘭丸Ｘ
+……蘭丸は、……何か、
+[k]
+
+＠蘭丸Ｘ
+何か目的があって旅をしていたのです。
+[k]
+
+＠蘭丸Ｘ
+どういうわけか忘れてしまったのですが、[r]とても大切な何か……。
+[k]
+
+＠蘭丸Ｘ
+…………。
+[k]
+
+？1：きっと思い出すよ
+
+？2：忘れ物、みつかるといいね
+
+？！
+
+[charaFace A 7]
+
+＠蘭丸Ｘ
+……は、はい！
+[k]
+
+[charaFace A 9]
+
+＠蘭丸Ｘ
+…………。
+[k]
+
+[charaFace A 6]
+
+＠蘭丸Ｘ
+ふふ、主様は優しいでありますね。
+[k]
+
+＠蘭丸Ｘ
+蘭丸も思い出せそうな気がしてきたでありますよ。
+[k]
+
+[messageOff]
+[bgmStop BGM_YAMA 1.0]
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[se ad60]
+[wt 1.2]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[seStop ad60 0.5]
+[wt 1.2]
+[bgm BGM_EVENT_90 0.1]
+
+
+＠？？？
+貴様か……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+くせ者！？
+[k]
+
+[messageOff]
+[se ad7]
+[charaMove A -200,0 0.2]
+[charaFadeout A 0.2]
+
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+
+＠？？？
+……フン！
+[k]
+
+[messageOff]
+[se ad171]
+[effect bit_talk_h_slash02_fs 0,0 F]
+[wt 0.2]
+[charaFadeout G 0.1]
+[wt 0.2]
+
+
+[se ad170]
+[effect bit_talk_14]
+[shake 0.05 2 2 0.8]
+[wt 0.4]
+
+[se ad671]
+[seVolume ad671 0 0.3]
+[wt 0.2]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.2 -100,0]
+[charaMove A 0,0 0.2]
+[wt 0.2]
+[charaMove A 20,0 0.4]
+
+＠蘭丸Ｘ
+あうっ！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠？？？
+……邪魔だ。
+[k]
+
+＠？？？
+そこの魔術師、一緒に来てもらおう。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se bac304]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+そうはさせないでありますよ！
+[k]
+
+[charaFace A 2]
+
+＠蘭丸Ｘ
+ゆけ！　[#不動行光:ふどうゆきみつ]セイバー！！
+[k]
+
+[messageOff]
+[cueSe Servants_703900 m43602]
+[seVolume m43602 0 0.4]
+[cueSe Servants_703900 m43631]
+[seVolume m43631 0 0.4]
+[cueSe SE_21 21_ade642]
+[effect bit_talk_fannel_purple -50,50]
+[wt 0.2]
+[cueSe Servants_703900 m43602]
+[seVolume m43602 0 0.4]
+[cueSe Servants_703900 m43631]
+[seVolume m43631 0 0.4]
+[cueSe SE_21 21_ade642]
+[effect bit_talk_fannel_purple 50,-50 H]
+[wt 0.4]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[effect bit_talk_14 100,100]
+[se bac217]
+[charaShake G 0.05 3 3 0.3]
+[wt 0.3]
+[effect bit_talk_14 -100,-100]
+[se bac218]
+[charaShake G 0.05 3 3 0.2]
+
+＠？？？
+…………。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+貰ったであり……、
+[k]
+
+[charaFace A 2]
+
+＠蘭丸Ｘ
+いえ、なぜ避けないでありますか！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠？？？
+なんだこれは、こんなもので人の命が取れると[r]思っているのか？
+[k]
+
+＠？？？
+人の命を取るというのはな……、
+[k]
+
+[charaFace G 5]
+＠？？？
+[line 3]こうやるのだ！
+[k]
+
+[messageOff]
+
+[se ad978]
+[charaEffect G bit_talk_kien01]
+[wt 1.5]
+
+
+[charaFace G 2]
+
+＠？？？
+[f x-large]キ[shake 0.05 2 2 0.8]ェエエエエエイッッッ！！！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut G 2000,2000]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+なっ！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_90 1.0]
+
+[charaPut G 1]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠？？？
+[f large]チ[shake 0.05 2 2 0.8]ェエエエストォオオオオオッ！！！！
+[k]
+
+[messageOff]
+[se ad85]
+[effect bit_talk_v_slash02]
+[wt 0.2]
+[charaPut G 2000,2000]
+[charaFadeout G 0.1]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+？1：危ない！
+
+？2：くそっ！
+
+？！
+
+[se ad7]
+[charaFace A 16]
+[cameraMove 0.3 0,-30 1.25]
+[fadeout black 0.2]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠蘭丸Ｘ
+主様っ！？
+[k]
+
+
+[messageOff]
+[cameraHome 0.1]
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[cueSe SE_21 21_ad1118]
+[effect bit_talk_blood_stay]
+[wt 2.5]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

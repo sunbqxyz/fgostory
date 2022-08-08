@@ -1,0 +1,562 @@
+
+
+＄94-02-75-23-1-0
+
+
+
+
+
+
+
+
+
+
+
+[soundStopAll]
+
+[charaSet A 7031000 1 贞德·Alter]
+[charaSet B 98100400 1 玛修]
+[charaSet C 98105600 1 圣诞岛假面]
+[charaSet D 2032001 1 贞德]
+[charaSet E 1098156400 1 梅芙]
+[charaSet F 2003300 1 罗宾汉]
+
+[imageSet H cut086_sdbb01 1]
+[charaScale H 0.9]
+
+[scene 10000]
+
+[revivalBranch lblNormal lblRevival]
+
+[label lblNormal]
+
+[flag isQueSkip true]
+
+[branch lblRevivalConf]
+
+[label lblRevival]
+
+[branchQuestNotClear lblNoClear 94039123 1]
+
+[flag isQueSkip true]
+
+[branch lblClearCheckConf]
+
+[label lblNoClear]
+
+[flag isQueSkip false]
+
+[label lblClearCheckConf]
+
+[label lblRevivalConf]
+
+[branch lblQueSkipConf isQueSkip false]
+
+[messageOff]
+[fadein black 0.1]
+[wait fade]
+
+[charaFadein H 0.1 -600,-300]
+[charaMove H -400,-300 0.7]
+[wait charaMove]
+[wt 0.4]
+
+[charaMoveReturn H -400,-250 0.2]
+[se ad673]
+[wait charaMove]
+
+[charaMoveReturn H -400,-250 0.2]
+[se ad673]
+[wait charaMove]
+[wt 0.5]
+
+？1：跳过。
+[charaMove H -420,-300 0.3]
+[wait charaMove]
+[charaMove H 800,-300 1.0]
+[se ad348]
+[wait charaMove]
+[wt 0.5]
+
+[flag isSkip true]
+
+？2：不跳过。
+[charaMove H -520,-300 0.7]
+[charaFadeout H 0.7]
+[wait charaMove]
+[wt 0.5]
+
+[flag isSkip false]
+？！
+
+[branch lblEnd isSkip true]
+
+[fadeout black 0.1]
+[wait fade]
+
+[label lblQueSkipConf]
+
+[scene 63501]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.2]
+
+[bgm BGM_EVENT_2 0.1 1.0]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠贞德·Alter
+已经是黄昏了啊……[r]尽管还剩一点时间，但看来只能到此为止了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠玛修
+但我们社团摊位非常热闹呢。
+[k]
+
+＠玛修
+主要是因为黑胡子先生买了本子，[r]各位海盗们也都冲了进来的缘故。
+[k]
+
+＠玛修
+除此以外还有不少其他人也来买了呢。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad60]
+[seStop ad60 1.0]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠圣诞岛假面
+正好赶上了，给我一本。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaFace C 0]
+[charaFace B 1]
+[charaFadein C 0.1 0]
+[charaFadein B 0.1 2]
+
+[charaMove C -150,0 0.4]
+[charaMove B 150,0 0.4]
+[wt 0.2]
+[se ad27]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 13]
+
+＠玛修
+好，多谢惠顾。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠玛修
+……然后啊……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠贞德·Alter
+等一下。[r]刚才好像有个非常奇怪的家伙在这里吧。
+[k]
+
+？1：没关系，他常来。
+
+[charaFace A 2]
+
+＠贞德·Alter
+那种人怎么可能常来嘛！？
+[k]
+
+？2：他在圣诞节经常出现。
+
+[charaFace A 2]
+
+＠贞德·Alter
+你的圣诞节是不是有什么问题！？
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠贞德
+Alter。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace A 15]
+[charaFadein A 0.1 2]
+
+＠贞德·Alter
+恶。[r]干嘛啦，你是来嘲笑我们社团的吗？
+[k]
+
+[charaFace D 5]
+
+＠贞德
+被迫害妄想症也该有个度吧。[r]我是来打个招呼的。
+[k]
+
+
+[charaFace A 13]
+
+＠贞德·Alter
+……然后呢。[r]最终还是你那边的销售额最高吧？
+[k]
+
+[charaFace D 4]
+
+＠贞德
+不，今年不行呢。
+[k]
+
+[charaFace A 8]
+
+＠贞德·Alter
+哈！？　你那边的海豚本不是优秀到令人作呕吗！？
+[k]
+
+＠贞德·Alter
+那种居然会输！？[r]就算是梅芙的写真集也不可能到这种……！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠玛修
+那……那个。[r]其实啊[line 3]
+[k]
+
+[messageOff]
+[wipeout rollRight 1.5 1.0]
+[bgmStop BGM_EVENT_2 1.5]
+[wait wipe]
+[charaFadeout B 0.1]
+[wt 1.0]
+[wipein rollLeft 1.5 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_7 0.1 1.0]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠贞德·Alter
+……哼，无聊的伎俩。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠梅芙
+无聊是什么意思啦！
+[k]
+
+[charaFace E 8]
+
+＠梅芙
+我只是让他们成了我的踏脚台而已？[r]如果不发行报名券，可是会引发大恐慌的哦！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠罗宾汉
+恶，出现了。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠梅芙
+你们缺少的要素有3个！
+[k]
+
+＠梅芙
+流行、SNS、动机，[r]以及最重要的，就是缺少『美丽』！
+[k]
+
+[charaFace E 7]
+
+＠梅芙
+具体说来，就是我！
+[k]
+
+？1：总计4个了吧？
+？！
+
+[charaFace E 2]
+
+＠梅芙
+[messageShake 0.01 3 3 0.6]
+……你们缺少的要素有4个！
+[k]
+
+[charaFace E 7]
+
+＠梅芙
+流行、SNS、动机，[r]以及美丽的我！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠玛修
+越来越多了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠梅芙
+总而言之，[r]梅芙亲在这里也获得了第一名。
+[k]
+
+[charaFace E 12]
+
+＠梅芙
+我真为自己的美感到恐惧……[r]干脆制作我的石像吧。
+[k]
+
+？1：那个好像崩塌了哦。
+？！
+
+[charaFace E 10]
+
+＠梅芙
+……说得对。如果石像连续遭到破坏，[r]我也是会遭受挫折的。
+[k]
+
+＠梅芙
+总之，今天就满足于[r]赢得从者庆典第一名的成绩好了。
+[k]
+
+[charaFace E 8]
+
+＠梅芙
+这样一来圣杯就属于我啦！[r]那么，你们就有意义地度过剩下的夏日吧。
+[k]
+
+＠梅芙
+尽管你们是无法像我这样[r]度过优雅而充实的度假的吧！
+[k]
+
+[charaFace E 1]
+
+＠梅芙
+哦呵呵呵！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.0]
+[se ad95]
+[seStop ad95 1.0]
+[charaFadeout E 0.4]
+[wt 1.6]
+
+[bgm BGM_EVENT_2 0.1 1.0]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠贞德·Alter
+真厉害，那家伙居然发出那种[r]反派大小姐的笑声离开了呢。
+[k]
+
+＠贞德·Alter
+该不会是漫画看多了吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+
+＠贞德
+啊，我突然想起了那个。[r]某位推销员。
+[k]
+
+[charaFace D 11]
+
+＠贞德
+……但是，今年也很愉快呢。
+[k]
+
+[charaTalk A]
+[charaFace A 13]
+
+＠贞德·Alter
+有的只有辛苦吧。
+[k]
+
+[charaFace A 15]
+
+＠贞德·Alter
+……哼，下一次我一定要超越你。
+[k]
+
+[charaTalk D]
+[charaFace D 1]
+
+＠贞德
+嗯，我会期待的！[r]那我先回自己的摊位了。
+[k]
+
+[charaFace D 6]
+＠贞德
+辛苦啦！
+[k]
+
+[label lblEnd]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 2.5]
+[fadeout black 2.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaSet A 7031000 1 贞德·Alter]
+[charaSet B 98100400 1 玛修]
+[charaSet C 98105600 1 圣诞岛假面]
+[charaSet D 2032001 1 贞德]
+[charaSet E 1098156400 1 梅芙]
+[charaSet F 2003300 1 罗宾汉]
+
+
+[scene 63501]
+[wt 1.0]
+
+[fadein black 2.5]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠F：罗宾汉
+结果是参加奖吗。[r]算了，反正也出了一本好本子，没什么好遗憾的吧？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠贞德·Alter
+…………[r]看来又要循环了呢。
+[k]
+
+＠贞德·Alter
+算了，没办法。[r]事情都过去了，再怎么后悔也没用，继续下一次啦，下一次。
+[k]
+
+[charaFace A 0]
+＠贞德·Alter
+……最重要的是，还有几个谜题没有解开。
+[k]
+
+＠贞德·Alter
+在解决这些问题之前，[r]必须继续像这样不断重复画本子才行。
+[k]
+
+[charaFace A 6]
+＠贞德·Alter
+[line 3]好了，让我们享受度假吧。[r]御主。
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 3.0]
+[bgmStop BGM_EVENT_11 3.0]
+[wait fade]
+[soundStopAll]
+[end]

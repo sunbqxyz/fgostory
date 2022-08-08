@@ -1,0 +1,1182 @@
+
+
+
+＄94-06-04-11-2-0
+
+[soundStopAll]
+[enableFullScreen]
+
+
+
+
+
+
+
+
+[charaSet A 8001600 1 マシュ]
+[charaSet B 9012000 1 ダ・ヴィンチ]
+[charaSet C 2044001 1 アナスタシア]
+[charaSet D 5048000 1 シャルロット・コルデー]
+[charaSet E 1098220500 1 カイニス]
+[charaSet F 1098220400 1 清少納言]
+[charaSet G 4029300 1 アキレウス]
+[charaSet H 4039300 1 マンドリカルド]
+[charaSet I 4008300 1 黒髭]
+[charaSet J 1098215500 1 ゴルドルフ]
+
+[charaSet K 1098216900 1 煉獄]
+[charaSet L 1098216800 1 沖田オルタ]
+
+[charaSet M 1098218400 1 クリストファー君]
+[charaSet N 10010000 1 ＤＯＭＡＮ]
+[charaSet O 1098215600 1 ステくん]
+
+[charaSet R 98115000 1 エフェクト用ダミー]
+
+[imageSet S back10000 1]
+[charaScale S 1.01]
+[imageSet T back10000 1]
+[charaScale T 1.01]
+
+[charaDepth K 7]
+[charaDepth L 5]
+
+[scene 107500]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk depthOff]
+
+[charaTalk L]
+[charaFace L 5]
+[charaFadein L 0.1 1]
+[charaFace K 13]
+[charaFadein K 0.1 1]
+
+[bgm BGM_MAP_63 0.1]
+
+
+＠沖田オルタ
+どうやら、諦めてはくれないようですね。
+[k]
+
+＠煉獄
+クリストファー・コロンブスがいるぞ。[r]手を組んだのか？
+[k]
+
+[charaFadeout L 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[branchRouteSelect select_answer_01 94060411 5000]
+[branchNotRouteSelect select_answer_02 94060411 5000]
+
+[label select_answer_01]
+
+[charaTalk M]
+[charaFace M 1]
+[charaFadein M 0.1 1]
+
+＠クリストファー君
+その通り！
+[k]
+
+[charaFaceFade M 7 0.2]
+
+＠クリストファー君
+もちろん、[r]その後はお互いに足を引っ張り合う予定なんだ！
+[k]
+
+[branch select_join]
+
+[label select_answer_02]
+
+
+[charaTalk M]
+[charaFace M 2]
+[charaFadein M 0.1 1]
+
+＠クリストファー君
+いいや、違うね！[r]協力はせず、僕が美味しいところを戴く気なんだ！
+[k]
+
+
+[branch select_join]
+
+[label select_join]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 16]
+[charaFadein K 0.1 1]
+
+[charaFace L 5]
+[charaFadein L 0.1 1]
+
+＠煉獄
+……まあ、それならそれでいい。
+[k]
+
+[messageOff]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 0]
+[charaFadein O 0.1 1]
+[wt 0.2]
+[cueSe SE_21 21_ade592]
+[wt 0.8]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 4]
+[charaFadein M 0.1 1]
+
+＠クリストファー君
+わ、こら。[r]暴れるな暴れるな！
+[k]
+
+[charaFadeout M 0.1]
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 5]
+[charaFadein L 0.1 1]
+[charaFace K 13]
+[charaFadein K 0.1 1]
+
+＠沖田オルタ
+……！
+[k]
+
+[charaFadeout L 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 25]
+[charaFadein B 0.1 1]
+
+
+＠ダ・ヴィンチ
+沖田オルタちゃん？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 2]
+[charaFadein L 0.1 1]
+
+[charaFace K 13]
+[charaFadein K 0.1 1]
+
+＠沖田オルタ
+その子だけは、[r]前に進ませる訳にはいきません……！
+[k]
+
+[charaFadeout L 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 15]
+[charaFadein N 0.1 1]
+
+＠ＤＯＭＡＮ
+……ふむ。
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 19]
+[charaFadein F 0.1 1]
+
+
+＠清少納言
+おっと、その顔。[r]マンボちゃん、何か悪い事考えてる？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 13]
+[charaFadein N 0.1 1]
+
+＠ＤＯＭＡＮ
+いえいえ。[r]今この時の拙僧はこちらの御方の忠実な[#しもべ]ゆえ。
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaDepth F 7]
+[charaDepth I 5]
+
+[charaTalk off]
+[charaFace F 1]
+[charaFadeinFSR F 0.1 2]
+[charaFace I 8]
+[charaFadeinFSL I 0.1 0]
+
+＠清少納言＆黒髭
+またまたー。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk N]
+[charaFace N 3]
+[charaFadein N 0.1 1]
+
+＠ＤＯＭＡＮ
+はははははは。
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 24]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+……やっぱりこの子に関する“何か”があるんだね。[r]その先に。
+[k]
+
+
+＠ダ・ヴィンチ
+クリストファーくん。[r]キミは何か知ってる？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+
+＠クリストファー君
+知らない。[r]だけど、知っているコトがある。
+[k]
+
+＠クリストファー君
+それは間違いなく、疑いようもなく、[r][#絶対的に]。
+[k]
+
+[charaFaceFade M 7 0.2]
+
+＠クリストファー君
+[#誰もが見惚れるお宝だ]！
+[k]
+
+[messageOff]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 0]
+[charaFadein O 0.1 1]
+[wt 0.2]
+[cueSe SE_21 21_ade592]
+[wt 0.8]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+ステくん……。
+[k]
+
+[charaFace B 14]
+
+＠ダ・ヴィンチ
+そのお宝が何であれ。[r]どんなものであれ。
+[k]
+
+[charaFace B 25]
+
+＠ダ・ヴィンチ
+ステくんが求めている以上、[r]私たちはそこに向かうべきだと思う。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 4]
+[charaFadein L 0.1 1]
+[charaFace K 13]
+[charaFadein K 0.1 1]
+
+
+＠沖田オルタ
+……ならば、仕方ありません。
+[k]
+
+[charaFace L 15]
+
+＠沖田オルタ
+[line 3]煉獄。[bgmStop BGM_MAP_63 2.0]
+[k]
+
+[charaFace K 16]
+
+＠煉獄
+はぁ……やるのか。
+[k]
+
+＠沖田オルタ
+はい、やります。
+[k]
+
+[charaFace K 5]
+
+＠煉獄
+まあいいさ。
+[k]
+
+[charaFace K 2]
+[bgm BGM_EVENT_67 0.1]
+
+＠煉獄
+主の判断が正しいかどうかは、[r]俺が決めることじゃあないからな！
+[k]
+
+[messageOff]
+[charaFace K 13]
+[wt 0.5]
+[charaFadeTime K 0.5 0.6]
+
+[charaMove L -50,0 0.5]
+[charaMove K 50,0 0.5]
+[charaPut R 0,0]
+[charaDepth R 8]
+
+[se ad39]
+[charaEffect R bit_talk_golden_aura]
+[wt 1.8]
+
+
+[fadeout white 1.0]
+[se co9]
+[seVolume co9 0 0.7]
+[bgm BGM_EVENT_67 1.0 0.5]
+[wait fade]
+
+[charaPut R 2000,2000]
+[charaEffectDestroy R bit_talk_golden_aurat]
+[charaTalk depthOn]
+
+[charaFadeout L 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaSet L 1051002 1 沖田オルタ]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+[wt 0.8]
+
+[fadein white 1.0]
+[seStop co9 1.0]
+[seVolume co9 0.5 0.3]
+[bgm BGM_EVENT_67 1.0 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 2]
+[charaFadein M 0.1 1]
+
+＠クリストファー君
+うわ、何だよコレ！？
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 6]
+[charaFadein N 0.1 1]
+
+＠ＤＯＭＡＮ
+おやおや。[r]まあまあまあ。
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠黒髭
+ははーん。[r]合体変身モード。
+[k]
+
+
+？1：噂の重装型かぁ……
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace L 5]
+[charaFadein L 0.1 1]
+
+＠沖田オルタ
+その通りだ、マスター。[r]あらゆるモノを無穹へ還す、私の本来の姿。
+[k]
+
+＠煉獄
+通常時より機動力は劣るが、[r]攻撃力守備力は桁違いだからな。
+[k]
+
+＠煉獄
+気を付けるがいい、主のマスターよ。[r][#俺たちは手強いぞ]。
+[k]
+
+＠沖田オルタ
+ああ。この霊基は私本来の適正クラスに[r]調整されている、
+[k]
+
+[charaFace L 2]
+
+＠沖田オルタ
+即ち、剣の英霊、[line 3]魔セイバー！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+
+＠マシュ
+沖田オルタさん、来ます！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 6]
+[charaFadein J 0.1 1]
+
+＠ゴルドルフ
+このままでは、[bgmStop BGM_EVENT_67 2.0][r]先ほどと同じことの繰り返しにならないかね！？
+[k]
+
+
+
+[branchRouteSelect select_answer_01c 94060411 6000]
+[branchNotRouteSelect select_answer_02c 94060411 6000]
+
+[label select_answer_01c]
+
+[input selectBranch skipStop "branchRouteSelect 94060411 6000"]
+
+[messageOff]
+[bgmStop BGM_EVENT_67 0.4]
+[bgmStop BGM_MAP_63 0.4]
+
+
+[charaSet A 8001600 1 マシュ]
+[charaSet B 9012000 1 ダ・ヴィンチ]
+[charaSet C 2044001 1 アナスタシア]
+[charaSet D 5048000 1 シャルロット・コルデー]
+[charaSet E 1098220500 1 カイニス]
+[charaSet F 1098220400 1 清少納言]
+[charaSet G 4029300 1 アキレウス]
+[charaSet H 4039300 1 マンドリカルド]
+[charaSet I 4008300 1 黒髭]
+[charaSet J 1098215500 1 ゴルドルフ]
+
+[charaSet K 1098216900 1 煉獄]
+[charaSet L 1051002 1 沖田オルタ]
+
+[charaSet M 1098218400 1 クリストファー君]
+[charaSet N 10010000 1 ＤＯＭＡＮ]
+[charaSet O 1098215600 1 ステくん]
+[charaSet R 98115000 1 エフェクト用ダミー]
+
+[imageSet S back10000 1]
+[charaScale S 1.01]
+[imageSet T back10000 1]
+[charaScale T 1.01]
+
+[charaDepth F 7]
+[charaDepth I 5]
+
+[scene 107500]
+
+[charaTalk J]
+[charaFace J 6]
+[charaFadein J 0.1 1]
+[wt 0.8]
+
+
+[maskin black 1.0]
+[wait mask]
+
+[label selectBranch]
+
+
+？1,5010：クリストファー君！
+
+[branch select01_2]
+
+？2,6010：こちらは機動力で勝負だ！
+
+[branch select01_1]
+
+？！
+[branch select_join1]
+
+
+[label select_answer_02c]
+
+？1,5010：クリストファー君！
+
+[branch select01_4]
+
+？2,6010：こちらは機動力で勝負だ！
+
+[branch select01_3]
+
+
+？！
+
+[branch select_join1]
+
+[label select_join1]
+
+
+[label select01_1]
+[label select01_3]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_63 0.1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+よし。[r]じゃあ私と[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠アキレウス
+おうよ！　んじゃまあ、[r]俺たちがちっと本気で掻き回してやるか！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠マンドリカルド
+うっす！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠清少納言
+おおっと、ウチらの事も忘れちゃ困るぜ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠シャルロット・コルデー
+わたしは極めてどんくさいですが、[r]わたしの手品はイリュージョンできます！
+[k]
+
+
+[charaFace D 8]
+
+＠シャルロット・コルデー
+……用法合ってないような？[r]まあいいですね！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠アナスタシア
+ふっ……[#私:わたくし]、[r]こう見えて速度には自信があるの。Ｂランクくらい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠マンドリカルド
+なかなかっすね。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠アナスタシア
+まあ正確には[#私:わたくし]ではなく、[r][#私:わたくし]の攻撃速度ですが！
+[k]
+
+＠アナスタシア
+従って[#私:わたくし]自体はアーチャーになっても、[r]そんなに速くありませんでした。
+[k]
+
+[charaFace C 4]
+[bgmStop BGM_EVENT_63 1.5]
+
+＠アナスタシア
+つまり……全力で走ってみても、[r]キャスターの霊基とあまり違わないのよね……。
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠アナスタシア
+マッハくらいはいけると……いけると思ったのに……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 8]
+[charaFadein J 0.1 1]
+
+＠ゴルドルフ
+野望がすっごいね君！？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 15]
+[charaFadein F 0.1 1]
+
+＠清少納言
+フッ……。[r]丁度エンジンも温まってきたところだぜ。
+[k]
+
+[charaFace F 1]
+
+＠清少納言
+ウチらの熱い走りで、クールなオル田っちに[r]ボイラー横の熱気を思い出してもらおうか！
+[k]
+
+？1：……まあそんな感じで！
+？！
+
+＠清少納言
+よし来た、まずは[line 3]
+[k]
+
+[charaFace F 8]
+
+＠清少納言
+ウチらもようやくチームっぽくなってきたし、[r]何かチーム名考えようぜ！　漢字のやつ！
+[k]
+
+
+＠清少納言
+チーム『[#剛龍怒龍夫:ゴ　ル　ド　ル　フ]』とかどう？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 13]
+[charaFadein J 0.1 1]
+
+＠ゴルドルフ
+私の名前かね！？[r]絶対にいやだよ！！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 16]
+[charaFadein I 0.1 1]
+
+＠黒髭
+おい、ふざけた事言ってんじゃねえぞ！
+[k]
+
+[charaFace I 10]
+
+＠黒髭
+ずっと拙者の船を占拠してんだから、[r]『エドワード・ティーチ海賊団』でいいよね！？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アナスタシア
+『ヴィイ・アンビシャス』……どうかしら。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠シャルロット・コルデー
+はい、はいはい！[r]『コルデーの素敵魔術団』がいいです！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠アキレウス
+いやいや、待て待てアンタら。[r]今はそんな話してる場合じゃないですよね？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+＠清少納言
+アッキーはどう思う！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠アキレウス
+え！？[r]い、いや、俺は……！
+[k]
+
+[charaFace G 0]
+
+＠アキレウス
+……[r]……
+[k]
+
+[charaFace G 3]
+
+＠アキレウス
+け……『ケイローン教室』……？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+＠黒髭
+かぁーっ！[r]そういうのじゃないんでござるなー！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠アナスタシア
+ケイローンいないじゃないの。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠清少納言
+いや、先生も連れてくるか！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 4]
+[charaFadein M 0.1 1]
+
+
+＠クリストファー君
+……あのね。
+[k]
+
+＠クリストファー君
+どうでもいいけど、[r]とりあえず戦わない？
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+[bgmStop BGM_EVENT_7 2.0]
+＠マシュ
+そ、そうですね！[r]かなりの強敵ですが、頑張りましょうマスター！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch select01_end]
+
+
+[label select01_2]
+[label select01_4]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[branchRouteSelect select_answer_01b 94060411 5000]
+[branchNotRouteSelect select_answer_02b 94060411 5000]
+
+[label select_answer_01b]
+
+[charaTalk M]
+[charaFace M 1]
+[charaFadein M 0.1 1]
+[bgm BGM_EVENT_63 0.1]
+
+＠クリストファー君
+よーし了解！[r]それじゃあ、いっちょ手伝ってあげよう！
+[k]
+
+[charaFaceFade M 2 0.2]
+
+＠クリストファー君
+ＤＯＭＡＮ！
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+
+
+＠ＤＯＭＡＮ
+ああ、拙僧ですね。[r]はいはい。もちろんお手伝いいたしますぞ！
+[k]
+
+[branch select_join2]
+
+[label select_answer_02b]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_63 0.1]
+
+[charaTalk M]
+[charaFace M 4]
+[charaFadein M 0.1 1]
+
+＠クリストファー君
+えー、結局僕に助けを求めるんだ？[r][&お兄さん:お姉さん]、だらしがないねえ？
+[k]
+
+[charaFaceFade M 0 0.2]
+
+＠クリストファー君
+ま、いいか。[r]そんなに助けが欲しいなら仕方ない。
+[k]
+
+[charaFaceFade M 2 0.2]
+
+＠クリストファー君
+いけ、ＤＯＭＡＮ！
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 4]
+[charaFadein N 0.1 1]
+
+
+＠ＤＯＭＡＮ
+ソソソソソソ……[r]やはり拙僧の出番ですか。
+[k]
+
+[charaFace N 6]
+[bgmStop BGM_EVENT_63 2.0]
+
+＠ＤＯＭＡＮ
+気乗りいたしませんが、まあ致し方なし。[r]お手伝いいたしましょう！
+[k]
+
+[branch select_join2]
+
+
+[label select_join2]
+
+
+[charaFaceFade N 13 0.2]
+
+[bgmStop BGM_EVENT_63 2.0]
+＠ＤＯＭＡＮ
+それでは[line 3][r]呪っちゃうぞ♡
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+
+＠黒髭
+♡て。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 6]
+[charaFadein N 0.1 1]
+[bgm BGM_EVENT_94 0.1]
+
+＠ＤＯＭＡＮ
+……おやあ？
+[k]
+
+[charaFace N 0]
+
+＠ＤＯＭＡＮ
+おかしいですねえ。[r]拙僧なりに、今夏の狂騒に合わせてみたつもりでしたが？
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 17]
+[charaFadein F 0.1 1]
+
+＠清少納言
+いや、今のはどう考えても……。
+[k]
+
+[charaFace F 8]
+
+＠清少納言
+アリだな！
+[k]
+
+＠清少納言
+君には世界を狙える才能がある！[r]一緒に目指そうぜ……呪殺系アイドル！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth F 6]
+[charaDepth N 5]
+
+[charaFace N 2]
+[charaFadein N 0.1 1]
+[charaFace F 8]
+[charaFadein F 0.1 226,0]
+[wt 0.5]
+[charaMoveReturn F 206,10 0.2]
+[wt 0.2]
+[se bac8]
+[charaShake N 0.03 4 4 0.3]
+[wt 0.2]
+[charaMoveReturn F 206,10 0.2]
+[wt 0.2]
+[se bac8]
+[charaShake N 0.03 4 4 0.3]
+[wt 0.5]
+
+[charaTalk on]
+
+＠ＤＯＭＡＮ
+おやめなされおやめなされ！[r]拙僧に当世風メイクを施そうとするのはおやめなされ！
+[k]
+
+[charaFace N 5]
+[bgmStop BGM_EVENT_94 2.5]
+
+＠ＤＯＭＡＮ
+こうなればこのＤＯＭＡＮ、[r]メイクを施されながらの呪詛に初挑戦ぞ！
+[k]
+
+[label select01_end]
+
+[charaFadeout N 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 11]
+[charaFadein L 0.1 1]
+
+＠沖田オルタ
+む、向こうも総力戦のようだな。
+[k]
+
+[charaFace L 2]
+[bgm BGM_BATTLE_65 0.1]
+
+＠沖田オルタ
+だが、ここから先は通さない……！
+[k]
+
+[messageOff]
+[charaTalk off]
+[bgm BGM_BATTLE_65 0.5 0.7]
+[overlayFadein S 0.1 0,-800]
+[overlayFadein T 0.1 0,800]
+[charaMove S 0,-745 0.5]
+[charaMove T 0,745 0.5]
+[wt 0.5]
+
+
+＠煉獄
+主よ。
+[k]
+
+[charaFace L 12]
+
+＠沖田オルタ
+ん？
+[k]
+
+＠煉獄
+本当に良かったのか？
+[k]
+
+[charaFace L 7]
+
+＠沖田オルタ
+……ああ。いつも済まないな、煉獄。
+[k]
+
+＠煉獄
+そうか……、心得た。この煉獄、[r]我が銘にかけて、主の道行きを切り開こう！
+[k]
+
+[messageOff]
+[bgm BGM_BATTLE_65 0.5 1.0]
+[charaMove S 0,-800 0.5]
+[charaMove T 0,800 0.5]
+[wt 0.5]
+[charaFadeout S 0.1]
+[charaFadeout T 0.1]
+[wt 0.1]
+
+[charaFace L 9]
+
+＠沖田オルタ
+我は抑止の守護者、魔セイバー。
+[k]
+
+[charaFace L 2]
+
+＠沖田オルタ
+またの名を沖田総司・オルタナティブ、参る！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_65 0.5]
+[wait fade]
+[soundStopAll]
+[end]

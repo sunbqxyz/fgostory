@@ -1,0 +1,774 @@
+
+
+
+＄94-06-49-02-4-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001410 1 マシュ]
+[charaSet B 98002000 1 フォウ]
+[charaSet C 1098124510 1 ダ・ヴィンチ]
+[charaSet D 1098123000 1 ムニエル]
+[charaSet E 1098123200 1 ゴルドルフ]
+[charaSet F 1046001 1 伊吹童子]
+[charaSet G 1046001 1 ダミー]
+[charaFilter G silhouette 00000080]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[imageSet I back10000 1]
+[charaScale I 1.05]
+
+[charaScale B 1.2]
+
+[scene 142000]
+
+[charaPut I 1]
+[charaFadeTime I 0.1 1.0]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[cueSe SE_21 21_ade645]
+[seVolume 21_ade645 0 0.2]
+[wt 0.2]
+[seStop 21_ade645 0.1]
+[wt 0.5]
+
+[cueSe SE_21 21_ade645]
+[seVolume 21_ade645 0 0.4]
+[wt 0.2]
+[seStop 21_ade645 0.1]
+[wt 1.5]
+
+
+
+[cueSe SE_21 21_ade645]
+[charaFadeTime I 0.2 0.5]
+[wt 0.2]
+[charaFadeTime I 0.2 1.0]
+[wt 0.5]
+
+[charaFadeTime I 0.2 0.5]
+[wt 0.2]
+[charaFadeTime I 0.2 1.0]
+[wt 0.2]
+
+[charaFadeout I 1.0]
+
+[wt 2.0]
+
+[bgm BGM_EVENT_70 0.1]
+
+[se adm21]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 0,-50]
+[charaMove B 0,30 0.3]
+[wt 0.5]
+[seStop adm21 0.5]
+
+＠フォウ
+フォーウ！
+[k]
+
+[messageOff]
+[charaMoveScale B 1.3 0.3]
+[charaMove B 0,40 0.3]
+[cueSe SE_21 21_ade578]
+[wt 0.5]
+
+[se ad500]
+[seVolume ad500 0 0.4]
+[seStop ad500 0.2]
+[shake 0.03 1 1 0.3]
+[wt 0.6]
+[se ad500]
+[seVolume ad500 0 0.4]
+[seStop ad500 0.2]
+[shake 0.03 1 1 0.3]
+[wt 1.0]
+
+？1：……大丈夫だよ、フォウくん
+？2：気絶はしてないよ
+
+？！
+
+＠フォウ
+フォウ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaScale B 1.0]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠マシュ
+マスター、ご無事ですか！
+[k]
+
+[charaScale B 1.0]
+
+？1：マシュは大丈夫？
+
+[charaFace A 0]
+
+＠マシュ
+はい。[r]マシュ・キリエライト、問題ありません。
+[k]
+
+[messageOff]
+
+？2：こっちは問題なし
+
+[messageOff]
+
+[charaFace A 1]
+[wt 1.5]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 0,0]
+[charaEffect H bit_talk_10_LowLevel]
+[se ad31]
+[wt 0.3]
+[seStop ad31 0.1]
+[charaTalk C]
+[charaFace C 25]
+[charaFadein C 0.1 1]
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]状況確認[line 3][-]
+[k]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]電装系損害20％。復旧可能。[-][r][51ffff]機関部損害なし、車体損害10％。走行可能。[-]
+[k]
+
+[charaFace C 0]
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]緊急出撃からの着陸、にしては上出来だ。[-][r][51ffff]みんな、怪我はないかい？[-]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ムニエル
+あ、ああ。[r]ムチウチを覚悟してたけどなんともない。
+[k]
+
+[charaFace D 1]
+
+＠ムニエル
+というか肩こりが……[r]ちょっと良くなった気がする……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠ゴルドルフ
+なんで整体に行ったみたいになってるの？[r]ジェットコースターで回復する人？
+[k]
+
+[charaFace E 4]
+＠ゴルドルフ
+部下の生態がちょっと気持ち悪くなったが、[r]う、うむ。私も大事はないぞ。
+[k]
+
+[charaFace E 0]
+＠ゴルドルフ
+[%1]と[r]キリエライトは……ふん。大事ないな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠フォウ
+フォウ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠ゴルドルフ
+！　小動物、貴様も同乗していたのか！[wt 0.5][charaFace E 18][r]くっ……今さらストームには戻せんか……。
+[k]
+
+[charaFace E 0]
+
+＠ゴルドルフ
+技術顧問。そちらはどうかね？[r]敵地に着陸したが、霊基に問題はないか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 0,0]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]心配ありがとう、新所長。[-][r][51ffff]私も特に霊基に異常は見受けられない。[-]
+[k]
+
+[charaFace C 24]
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]異聞帯ブリテンと同じで、『すべての英霊』が[-][r][51ffff]退去してしまう訳ではないようだ。[-]
+[k]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]英霊を拒むにしても、[-][r][51ffff]何らかの条件漏れ……があるんだろう。[-]
+[k]
+
+[charaFace C 25]
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]既に明確な命のある存在も異常はないはずだ。[-][r][51ffff]人間や動物、だね。[-]
+[k]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]あくまで人類史に多くを依った[#英霊:そんざい]を退去させる、[-][r][51ffff]或いは拒絶する領域だと考えるべきだろう。[-]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠フォウ
+フォウ！
+[k]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+＠F：？？？
+えー、それ、ちょっとおかしくないかしら。
+[k]
+
+＠フォウ
+フォッ？
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？1：え？
+
+＠F：？？？
+あたしがいるし。
+[k]
+
+？2：その声は……
+
+＠F：？？？
+あたしの声、好き？[r]あたしもよ。
+[k]
+
+＠F：？？？
+兎も角、皆の予想はちょっと違うと思うわ。
+[k]
+
+？！
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠ゴルドルフ
+だ、誰だ！？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth G 2]
+
+[se ade422]
+[seVolume ade422 0 0.1]
+[seVolume ade422 0.5 1.0]
+
+[wt 1.2]
+
+[charaFace G 0]
+[charaFadein G 0.7 1]
+[seStop ade422 0.5]
+[wt 1.8]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+
+[charaFadeout G 1.0]
+[bgm BGM_EVENT_50 0.1]
+[wt 1.5]
+
+＠伊吹童子
+だって[line 3]あたしがここにいるんだもの。
+[k]
+
+？1：伊吹童子！
+？！
+
+[messageOff]
+
+[charaFace F 1]
+[wt 1.4]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaDepth F 1]
+[charaDepth E 3]
+
+[charaFace F 1]
+[charaFadeinFSL F 0.1 0]
+
+[charaFace E 7]
+[charaFadeinFSR E 0.1 2]
+[wt 1.5]
+
+[charaTalk on]
+
+[charaFace F 0]
+
+＠伊吹童子
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ゴルドルフ
+おお……。
+[k]
+
+[charaFace E 0]
+＠ゴルドルフ
+……？
+[k]
+
+＠ゴルドルフ
+英霊、か。[r]英霊というか神霊サーヴァントだな。
+[k]
+
+[charaFace E 1]
+＠ゴルドルフ
+おお、伊吹童子といえばそうだ！[r]第２ブリーフィングルームに待機中だった、
+[k]
+
+＠ゴルドルフ
+６騎の英霊のうちの１騎！[r]無事だったのか！
+[k]
+
+[charaFace E 12]
+＠ゴルドルフ
+……ん。無事……だったのか？　何故だ？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+は、はい。
+[k]
+
+[charaFace A 12]
+＠マシュ
+伊吹童子さんは、通常の英霊とは違い、[r]神霊サーヴァント……
+[k]
+
+＠マシュ
+そのカテゴリゆえ、でしょうか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ムニエル
+まあ、いるからにはいるんだろうけども。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 0,0]
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+
+[se ade357]
+[seStop ade357 1.2]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]……。[-][r][51ffff]……。[-]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠伊吹童子
+[FFFFFF]？？[-]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut H 0,0]
+[charaTalk C]
+[charaFace C 25]
+[charaFadein C 0.1 1]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]……ほんとだ。伊吹童子だ。[-]
+[k]
+
+[charaFace C 24]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]それなら、ここはブリテン異聞帯の性質とは[-][r][51ffff]異なっているのかも。[-]
+[k]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]状況的に、[-][r][51ffff]英霊の現界を阻んでいるのは間違いない。[-]
+[k]
+
+[charaFace C 32]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]ブリテンと同じで受肉すればその限りじゃなく、[-][r][51ffff]そこに加えてもうひとつ！[-]
+[k]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff][#人間でない英霊]も退去しない、だ。[-][r][51ffff]どういう選別をしているんだろうね？[-]
+[k]
+
+[charaFace C 14]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]神霊だからＯＫなのかな？[-][r][51ffff]それとも、自然霊のカテゴライズのせい？[-]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠伊吹童子
+人間でない？
+[k]
+
+[charaFace F 13]
+＠伊吹童子
+神霊？[r]自然霊？
+[k]
+
+[charaFace F 4]
+＠伊吹童子
+…………ん～～～。
+[k]
+
+[bgmStop BGM_EVENT_50 1.0]
+
+[charaFace F 3]
+＠伊吹童子
+あたしって、伊吹童子っていう真名なの？
+[k]
+
+？1：え
+
+
+[charaFace F 0]
+＠伊吹童子
+[FFFFFF]？[-]
+[k]
+
+？2：ちょっと待って
+
+
+[charaFace F 0]
+＠伊吹童子
+うん？
+[k]
+
+？！
+
+？1：もしかして、記憶に異常が
+？！
+
+[charaFace F 4]
+＠伊吹童子
+ん～～～～？
+[k]
+
+[bgm BGM_EVENT_94 0.1]
+[charaFace F 1]
+＠伊吹童子
+まああたしはあたしだし、[r]とっても強くて、やさしくて、お酒が好きで、
+[k]
+
+＠伊吹童子
+あなたのサーヴァントをやってるのは分かるわ。
+[k]
+
+[charaFace F 13]
+＠伊吹童子
+でもそれ以外は……[r]何だかぼんやりしてるのよね。
+[k]
+
+[charaFace F 8]
+＠伊吹童子
+うーん、あたしって何だったっけ？
+[k]
+
+[charaFace F 1]
+＠伊吹童子
+まあ、おいしいお酒が飲めるなら！[r]なんでもいいわ！
+[k]
+
+？1：なんでもよくはないけど状況は分かった
+
+
+[charaFace F 0]
+＠伊吹童子
+そう？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+？2：そっか……よろしく、伊吹童子！
+
+[charaFace F 7]
+＠伊吹童子
+ええ！[r]よろしく、マスター！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+物わかりよすぎないかね二人とも？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+？！
+
+[bgmStop BGM_EVENT_94 1.5]
+
+[charaPut H 0,0]
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]現界は維持できたものの、[-][r][51ffff]引き換えに記憶に異常を[#来:きた]してしまった状態、かな。[-]
+[k]
+
+[bgm BGM_EVENT_77 0.1]
+[charaFace C 0]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]不安要素はあるけど、どうだろう伊吹童子。[-][r][51ffff]戦力としての自己評価は？[-]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠伊吹童子
+あたし？[r]強いわよ。
+[k]
+
+[charaFace F 7]
+＠伊吹童子
+戦えってマスターが言うならもちろん戦うわ！[r]暴れるの、好きよ。
+[k]
+
+[charaFace F 13]
+
+＠伊吹童子
+んー。モヤっとするし、[r]本調子じゃないのは本当かもだけど……
+[k]
+
+[charaFace F 7]
+＠伊吹童子
+ええっとね、確かめてみるからちょっと待って？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠マシュ
+は、はい。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠伊吹童子
+まずそうね、あたし火が使えるわ。
+[k]
+
+[charaFace F 7]
+＠伊吹童子
+風もいけそう。
+[k]
+
+＠伊吹童子
+雷もいけるわ。
+[k]
+
+[charaFace F 1]
+＠伊吹童子
+あ、水は当然いけちゃうわね！
+[k]
+
+？1：ほぼ全部では！？
+？！
+
+[charaFace F 7]
+＠伊吹童子
+本気になれば霊基だって変えられそう！[r]魔力消費がキツそうだから、回数限定かもだけど。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+……これは……
+[k]
+
+＠ゴルドルフ
+万全でないのも６騎いないのも痛恨ではあるが、[r]かなり頼もしいのでは……？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠ムニエル
+不幸中の幸いってやつか……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠伊吹童子
+ふっふっふ！
+[k]
+
+＠伊吹童子
+お姉さんに任せなさい。[r]並の相手なんかに遅れは取らないから！
+[k]
+
+？1：頼りにするよ、伊吹童子
+？2：よろしく[&頼む！:ね！]
+
+？！
+
+[charaFace F 1]
+
+＠伊吹童子
+ええ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[se adm21]
+[charaMoveReturn B 0,20 0.7]
+＠フォウ
+フォウ、フォーーウ！
+[k]
+
+[messageOff]
+[wt 0.5]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

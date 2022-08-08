@@ -1,0 +1,179 @@
+
+
+＄94-01-50-14-3-1
+[soundStopAll]
+
+[charaSet A 2028000 1 海伦娜]
+[charaSet B 1031002 1 弗兰]
+[charaSet C 2023000 1 教授M]
+[charaSet D 5011001 1 巴贝奇]
+[charaSet E 5025001 1 爱迪生]
+[charaSet F 2011001 1 尼古拉·特斯拉]
+
+[scene 44100]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_3 0.1]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠海伦娜
+被在场最美的两人打败，[r]这个人一定也满足了吧。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout A 0]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠弗兰
+唔唔……好累……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.05]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.4 1]
+
+＠教授M
+本想让你好好休息，但看来做不到了。
+[k]
+
+＠教授M
+由于刚才的战斗，后方集团追上来了。
+[k]
+
+[charaFace C 0]
+
+＠教授M
+为了在这个区域获得胜利，必须再加把劲。[r]还能行吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.05]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠弗兰
+唔。加油！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.05]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠巴贝奇
+[line 3]好孩子。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.05]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠教授M
+嗯嗯，深有同感。话说，爸爸我刚才[r]一直在弯着腰做各种工作，能帮爸爸我揉揉腰吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.05]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠弗兰
+可以。[r]稍微等一下。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.05]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠教授M
+哎，电气治疗？[r]不那啥稍微等一下我记得你那至少也是D级[line 3]
+[k]
+
+[se ad61]
+[fowardEffect bit_talk_lightning_02g]
+[charaFace C 2]
+
+＠教授M
+N[charaShake C 0.05 7 10 0]ooooooooooo！[seStop ad61 2.0][wait se ad61][charaShakeStop C][fowardEffectStop]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.05]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠巴贝奇
+R.I.P.
+[k]
+
+[messageOff]
+[wt 0.4]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[wt 0.3]
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠海伦娜
+……要不我也找人揉揉肩膀吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.05]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+[charaFace F 0]
+[charaFadein F 0.1 0]
+
+＠爱迪生＆特斯拉
+交给我吧。只要贴上这[#直流:交流]电气治疗器，[r]无论什么样的肩膀酸痛都能一下搞定！
+[k]
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.5]
+[fadeout black 1.5]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

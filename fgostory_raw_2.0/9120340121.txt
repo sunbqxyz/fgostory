@@ -1,0 +1,438 @@
+
+
+＄91-20-34-01-2-1
+
+[soundStopAll]
+
+[charaSet A 2034000 1 退尔]
+[charaSet C 2038000 1 俄里翁]
+
+[charaSet I 8001000 1 dummy特效1]
+[imageSet J back10000 1]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[flag IsClear true]
+[branch lblConf]
+[label lblNotClear]
+[flag IsClear false]
+[label lblConf]
+
+
+[branch lblNotClear1 IsClear false]
+
+[charaSet B 1098124510 1 达·芬奇]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[charaSet B 98111500 1 达·芬奇]
+
+[label lblConf1]
+
+
+
+
+[charaScale J 1.01]
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_10_MiddleLevel]
+
+[scene 20803]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠退尔
+呼，就这样吧。[bgm BGM_EVENT_94 0.1]
+[k]
+
+＠退尔
+我喜欢鸟，因为皮肤柔软。[r]不用担心箭矢会被弹开。
+[k]
+
+[charaPut I 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch lblNotClear2 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf2]
+
+＠达·芬奇
+嗯，正如你所说的，你的分数相当高呢。[r]另一方面，俄里翁那边……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 2000,2000]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠俄里翁
+不是啦，其实我相当有自信可以[r]『比任何人都迅速地干掉这座森林里的10只狮子（空手）』哦？
+[k]
+
+＠俄里翁
+甚至可以附赠几只蛇女哦？[r]但是……
+[k]
+
+
+＠俄里翁
+『在有限时间内尽可能多地捕猎[r]　压根不知道藏在哪里的鸟』这种事……
+[k]
+
+[charaFace C 11]
+
+＠俄里翁
+仔细想来我压根没做过啊。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠退尔
+唔。作为猎人的气魄确实相当惊人，[r]我甚至能从森林中感受到氛围……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠俄里翁
+我的狩猎基本就是寻找猎物！[r]射箭！　完成！　就是这样啦。
+[k]
+
+＠俄里翁
+完全不需要像你那样致密地设置陷阱[r]并将猎物逼入绝境啊。
+[k]
+
+[charaFace C 6]
+
+＠俄里翁
+无论多远都能一箭射中。[r]毕竟是我嘛。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+
+＠退尔
+唔……自不用说，弓箭实力本身[r]肯定是俄里翁阁下比我更甚一筹。
+[k]
+
+＠退尔
+从看到您使用机械式弩的那刻起，[r]就能推测出来了。
+[k]
+
+[charaPut I 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch lblNotClear3 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+[branch lblConf3]
+[label lblNotClear3]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf3]
+
+＠达·芬奇
+唔。看来退尔的狩猎和[r]俄里翁的狩猎不是同种类型呢。
+[k]
+
+＠达·芬奇
+就算弓箭实力方面是基本素质碾压，
+[k]
+
+＠达·芬奇
+但在寻找小动物猎物的方法，[r]以及这类细节技术方面取决于其他技能呢。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 2000,2000]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+
+＠俄里翁
+没错，我喜欢巨大的猎物！[r]既容易射中，量又足，能饱餐一顿。
+[k]
+
+＠俄里翁
+压根没必要击杀那些小东西嘛。
+[k]
+
+？1：不愧是俄里翁，够野性。
+？！
+
+[charaPut I 0,0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branch lblNotClear4 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 32]
+[charaFadein B 0.1 1]
+
+[branch lblConf4]
+[label lblNotClear4]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf4]
+
+＠达·芬奇
+擅长对付大型猎物啊……[r]场地设定或许有些太偏袒了。
+[k]
+
+[charaFace B 4]
+
+＠达·芬奇
+对不起哦～，这场比试是不是不太公平？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 2000,2000]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠俄里翁
+不不，较量就是较量！
+[k]
+
+
+＠俄里翁
+退尔啊，我已经充分理解你实力有多高强了。
+[k]
+
+＠俄里翁
+毕竟我们进入了同一座森林，这点我还是能感受到的。[r]这次我会坦率地承认失败。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠退尔
+面对这种不擅长的猎物也只有这点差距。[r]我实在无法坦然地接受这种胜利……
+[k]
+
+[charaFace A 1]
+
+＠退尔
+但不管怎么说，[r]能与您一起狩猎的确是次宝贵的体验。
+[k]
+
+[charaFace A 3]
+
+＠退尔
+感激不尽，神话的猎人俄里翁[line 3]我已经[r]好久没有由于『我是猎人』而感到骄傲了。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.8]
+
+[charaFace C 1]
+[wt 1.3]
+
+[charaPut I 0,0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branch lblNotClear5 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 30]
+[charaFadein B 0.1 1]
+
+[branch lblConf5]
+[label lblNotClear5]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf5]
+
+＠达·芬奇
+但是，你并没能彻底满足吧？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 2000,2000]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠退尔
+嘿嘿。是不是越来越贪婪了？[r]毕竟这种机会太难能可贵了嘛。
+[k]
+
+＠退尔
+请您把这当做山里男人抠门的性子，原谅我吧。
+[k]
+
+[charaPut I 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch lblNotClear6 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 26]
+[charaFadein B 0.1 1]
+
+[branch lblConf6]
+[label lblNotClear6]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf6]
+
+＠达·芬奇
+交给我吧～。[r]其实我不仅叫来了俄里翁。
+[k]
+
+
+＠达·芬奇
+还准备了其他模拟猎场的模式，
+[k]
+
+[branch lblNotClear7 IsClear false]
+
+
+[charaFace B 11]
+
+[branch lblConf7]
+[label lblNotClear7]
+
+
+[charaFace B 7]
+
+[label lblConf7]
+
+＠达·芬奇
+机会难得，干脆不停更换到退尔满意为止！
+[k]
+
+？1：OK，狩猎对战第二场！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 2000,2000]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠俄里翁
+嗯～，好久没来森林了，[r]我去不会碍到你们的地方玩一会儿吧。
+[k]
+
+[charaFadein J 0.1 0,-200]
+[charaFadeTime J 0.2 0.7]
+[wt 0.1]
+
+[charaFace C 13]
+
+＠俄里翁
+（在森林里偶遇美女……为我的狩猎技术倾倒……[r]　然后……呼呼呼呼呼！）
+[k]
+
+[charaFadeout J 0.2]
+[wt 0.1]
+
+[charaFace C 8]
+
+＠俄里翁
+好嘞，那就这么办。[r]加油哦！　我也会加油的！
+[k]
+
+[messageOff]
+[se ad348]
+[charaMove C -150,0 0.4]
+[charaFadeout C 0.4]
+[wt 1.8]
+
+
+？1：我有种非常不祥的预感……
+？2：俄里翁肯定没问题吧！
+？！
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_94 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

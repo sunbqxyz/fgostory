@@ -1,0 +1,802 @@
+
+
+＄94-06-28-03-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 4046000 1 エリザベート]
+[charaSet B 2045000 1 ゼノビア]
+[imageSet C back10000 1 1]
+[charaSet H 98115000 1 エフェクト用]
+
+[charaScale C 1.1]
+[charaTalk depthOff]
+[charaDepth C 2]
+[charaDepth A 3]
+[charaDepth B 4]
+
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 28820]
+
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_kengekiall02_fs]
+[se bac137]
+[wt 0.3]
+[se ad687]
+[wt 0.1]
+[se bac139]
+[wt 0.2]
+[effect bit_talk_14]
+[shake 0.05 2 2 0.4]
+
+[se ad671]
+[seVolume ad671 0 0.4]
+
+[wt 0.5]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.4 80,0]
+[charaShake B 0.05 1 1 0.2]
+[charaMove B -20,0 0.3]
+[wt 0.3]
+[charaMove B -30,0 0.3]
+[wt 0.4]
+
+[charaFadeout B 0.1]
+[wt 0.4]
+
+[charaTalk A]
+[charaPut A 1]
+[charaFace A 5]
+
+[se ad73]
+[charaEffect A bit_talk_quickmove 0,0 H]
+[charaSpecialEffect A appearanceReverse 1 0.2]
+[charaMoveReturn A 0,-6 0.4]
+[wt 0.4]
+
+＠エリザベート
+くっ……強いわね……！
+[k]
+
+[charaFaceFade A 18 0.2]
+
+＠エリザベート
+ちょっと待って～♪[r]可能なら話し合いで～♪
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 2000,2000]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ゼノビア
+唄うな。ふざけるな。
+[k]
+
+＠ゼノビア
+ふざけている＝貴様が元凶と[r]考えても差し支えはなかろう。
+[k]
+
+[messageOff]
+[se ad7]
+[charaFace B 12]
+[cameraMove 0.3 0,-7 1.05]
+[wt 1.8]
+[bgmStop BGM_EVENT_80 1.5]
+
+？1：ふざけてはいません！
+？2：どうか話を聞いてください！
+？！
+
+[charaFace B 10]
+[wt 1.0]
+
+＠ゼノビア
+むう。ただの人間でありながら[r]我らの間に割って入るとはなかなかの度胸。
+[k]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠ゼノビア
+いいだろう、少しだけだぞ。
+[k]
+
+[messageOff]
+[cameraHome 0.6]
+[wt 1.0]
+
+？1：まずは……
+？2：（エリちゃんをじっと見る）
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaFaceFade A 3 0.2]
+[wt 0.5]
+
+＠エリザベート
+な、なによ？
+[k]
+
+＠エリザベート
+最初の自己紹介パートで[#私:アタシ]の魅力に[r]既にメロメロだったってわけかしら[&子イヌ:子ジカ]？
+[k]
+
+[charaFace A 8]
+
+＠エリザベート
+それはいいけどちょっと情熱的に見つめすぎじゃない？[r]この[#私:アタシ]でも照れるときは照れるわよ？[bgm BGM_EVENT_77 1.5 0.6]
+[k]
+
+[messageOff]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.0 0.4]
+[wt 1.5]
+[seStop ad556 3.0]
+[wt 0.5]
+
+＠エリザベート
+……。[r]……。
+[k]
+
+[charaFace A 3]
+
+＠エリザベート
+ねえ、黙ってないでなんとか言いなさいよー！
+[k]
+
+[bgmStop BGM_EVENT_77 1.5]
+
+？1：……なんかやらかした？
+
+[messageOff]
+[charaFace A 2]
+[wt 1.0]
+[charaFace A 11]
+
+[bgm BGM_EVENT_146 0.1 0.8]
+
+＠エリザベート
+やっ・て・なーい！[r]信じなさいよー！
+[k]
+
+[branch _sel01a]
+
+？2：例によってなんか分裂した？
+
+[bgm BGM_EVENT_146 0.1 0.8]
+
+[charaFace A 4]
+
+＠エリザベート
+う。
+[k]
+
+＠エリザベート
+それを言われると、[r]ちょっと言葉に詰まるわね。
+[k]
+
+＠エリザベート
+した記憶はないけど、[r]自然発生自然分離も有り得るし……。
+[k]
+
+＠エリザベート
+全否定することは……難しいわね……。
+[k]
+
+
+[branch _sel01b]
+
+？！
+
+[label _sel01a]
+
+？1：ごめんごめん
+？2：一応確認しただけだから……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠ゼノビア
+味方にさえ疑われている。[r]つまり……？
+[k]
+
+[messageOff]
+[se ad51]
+[wt 0.8]
+
+[branch _sel01end]
+
+[label _sel01b]
+
+？1：本当にエリちゃんはフリーダムだね……
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+褒めてるのよね～♪
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠ゼノビア
+つまり……やはり元凶……？
+[k]
+
+[messageOff]
+[se ad51]
+[wt 0.8]
+
+[branch _sel01end]
+
+[label _sel01end]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+ちーがーうーわーよー！
+[k]
+
+[charaFace A 5]
+
+＠エリザベート
+百歩譲って、アンタの聞いた通り[r]元凶の名前がエリザベートだったとしても、
+[k]
+
+＠エリザベート
+それは[#私:アタシ]じゃないわ。
+[k]
+
+＠エリザベート
+多分、エリザベートはエリザベートでも[r]別のエリザベートよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠ゼノビア
+おまえは何を言っているんだ？
+[k]
+
+[charaFace B 5]
+
+＠ゼノビア
+同じ[#人間:サーヴァント]がそう何人もいるか！
+[k]
+
+＠ゼノビア
+サーヴァントの仕組みとしては有り得ることでも、[r]そうポンポンと発生する事態ではなかろう。
+[k]
+
+＠ゼノビア
+しかも都合良く同じ場所にいるなど……。
+[k]
+
+？1：エリちゃんに限ってはそうとも言い切れない！
+？！
+
+[charaFace B 10]
+
+＠ゼノビア
+えー……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+[charaEffect A bit_talk_sing_notes]
+
+＠エリザベート
+そうよ、この[#私:アタシ]は史上稀に見る～♪
+[k]
+
+＠エリザベート
+視線の独占禁止法違反・ミュージカルアイドル、[r]なんだから～♪
+[k]
+
+[messageOff]
+[se ad889]
+[seVolume ad889 0 0]
+[seVolume ad889 0.5 0.8]
+[charaEffectStop A bit_talk_sing_notes]
+[wt 1.4]
+[seStop ad889 2.0]
+[charaFace A 1]
+
+＠エリザベート
+……今の視線の独占禁止法違反、[r]ちょっと我ながら良かったわね……。
+[k]
+
+[charaFace A 0]
+
+＠エリザベート
+またどこかで使いましょう。[r]めもめも。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠ゼノビア
+その歌はともかく……そうなのか？[r]ホントに？
+[k]
+
+？1：マスター・[%1]の名にかけて
+？2：信じてください、お願いします！
+？！
+
+[messageOff]
+[charaFace B 0]
+[wt 1.2]
+[charaFace B 4]
+
+＠ゼノビア
+むう、おまえの目……[r]まったく嘘のない目だ。
+[k]
+
+＠ゼノビア
+これは信じざるをえない、か。[r]ひとまずはな。
+[k]
+
+[charaFace B 0]
+
+＠ゼノビア
+いいだろう。[r]話を聞かせてみろ。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_146 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+というわけで、[r]チェイテシンデレラ城に向かってるのよ～♪
+[k]
+
+[charaFace A 6]
+
+＠エリザベート
+理由はハロウィンだしシンデレラだから。
+[k]
+
+＠エリザベート
+そうしなきゃ駄目なの。[r]ゴールがそこなのは確実。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ゼノビア
+ふむ。その城に事態の元凶……[r]もう１人のエリザベートがいる可能性は高いか。
+[k]
+
+＠ゼノビア
+そして城ならこの砂漠の先、[r]遙か彼方に見えた記憶がないわけでもない。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+ホント？　なら案内して！
+[k]
+
+[charaFaceFade A 14 0.2]
+
+＠エリザベート
+退屈な移動も～、歌と踊りで楽しめる～♪[r]それがミュージカルの醍醐味よ～♪
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠ゼノビア
+私が召喚された理由は、[r]おそらく時代と土地の縁だろう。
+[k]
+
+[charaFace B 4]
+
+＠ゼノビア
+何故なら、今この時代には[line 3][r]私の国、パルミラが存在するはずだからだ。
+[k]
+
+＠ゼノビア
+そして私の記憶が確かならば、[r]私の国はこんな様子ではなかった。
+[k]
+
+？1：…………？
+？！
+
+[charaFace B 0]
+
+＠ゼノビア
+まず、件の城だ。[r]これがまた随分とメルヘンだ。
+[k]
+
+＠ゼノビア
+国土の半分は、奇妙な森になっているらしい。
+[k]
+
+＠ゼノビア
+そしてこの砂漠……見覚えがない。[r]なんというか、生前に見た砂漠とは[#趣:おもむき]が違う。
+[k]
+
+＠ゼノビア
+もちろん、ここは間違いなく私の国パルミラだ。[r]それは感覚的に理解できている。
+[k]
+
+[charaFace B 10]
+
+＠ゼノビア
+その一方で[line 3][r]どうしようもなく[#歪:ゆが]んでいる、とも。
+[k]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+＠ゼノビア
+[#歪:ゆが]んでいるなら正さなくてはならない。[r]何者かに襲われているなら守らねばならない。
+[k]
+
+[charaFace B 5]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠ゼノビア
+具体的に言うと！[r]あの邪悪な城を！　完膚なきまでに叩き壊す！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadeinFSR A 0.1 2]
+
+[charaFace B 5]
+[charaFadeinFSL B 0.1 0]
+
+＠A：エリザベート（城主）
+……そこまでする必要はないんじゃないかしら～♪
+[k]
+
+[charaFace B 10]
+
+＠ゼノビア
+私の領地、私の国に、あのような[r]悪趣味かつメルヘンな城を置き続ける訳にはいかない。
+[k]
+
+[charaFace B 5]
+
+＠ゼノビア
+有効射程距離に入り次第、[r]バリスタで跡形もなく吹き飛ばしてやる……！
+[k]
+
+[charaFace A 2]
+
+＠A：エリザベート（城主）
+せめて穏便に引っ越しという訳にはいかないかしら？[r]あれ、一応[#私:アタシ]のお城！
+[k]
+
+[charaFace B 10]
+
+＠ゼノビア
+人の土地に勝手に上がり込んできた以上、[r]敵対したと認識しても仕方なかろう。
+[k]
+
+＠ゼノビア
+……今はこの[%1]の[r]顔を立てておくが……。
+[k]
+
+＠ゼノビア
+民を守るため、慈しむためならば。[r]私は一切の妥協をせず、叩き潰す。
+[k]
+
+＠ゼノビア
+かつて愚かなローマの皇帝から[r]民と国を守ったのと同じようにな。
+[k]
+
+
+？1：ローマと戦った国の女王様、なんですね
+？！
+
+[charaFace A 6]
+
+＠エリザベート
+ふーん。アイツとも知り合いかしら？[r]ローマ皇帝っていってもたくさんいるけど。
+[k]
+
+＠ゼノビア
+ローマ皇帝と親しいような口ぶりだ。[r]まさかアウレリアヌスではあるまいな。
+[k]
+
+[charaFace A 5]
+
+＠エリザベート
+そんな名前の皇帝は知らないし、[r]赤いのはライバルよライバル！
+[k]
+
+[charaFaceFade A 10 0.2]
+
+＠エリザベート
+でも～、ミュージカルスキルを手に入れた[#私:アタシ]のほうが～♪[r]何周ぶんも、先に進んでいるのは～、確・実～♪
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠ゼノビア
+まあ、ローマ皇帝といっても[#玉石混淆:ぎょくせきこんこう]だろう。[r]皇帝全てを[#唾棄:だき]するつもりはない。
+[k]
+
+[charaFace B 0]
+
+＠ゼノビア
+ともあれ、一緒に行くのに異論はないぞ。[r]協力して事態の解決にあたろうではないか。
+[k]
+
+？1：助かります
+？！
+
+
+＠ゼノビア
+さて……城の方角は[#大凡:おおよそ]わかっているが、[r]問題が三つある。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+なんですって、三つも～♪[r]一つくらいまけてほしいわ～♪
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ゼノビア
+……まあ、まとめれば一つと言えるのかもしれないが。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+一つならいいのよ～♪
+[k]
+
+[charaFadeout A 0.1]
+[charaEffectStop A bit_talk_sing_notes]
+[wt 0.1]
+[charaPut A 2000,2000]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+[charaFadeTime C 0.2 0.5]
+[bgmStop BGM_EVENT_81 1.5]
+
+＠ゼノビア
+（何もよくないと思うんだが）
+[k]
+
+[charaFadeout C 0.2]
+[wt 0.1]
+
+＠ゼノビア
+こほん。[wt 0.8][bgm BGM_MAP_41 0.1][charaFace B 0]まず一つ、この砂漠はある特定のルートを[r]辿らなければ、ひどい砂嵐で進めない。
+[k]
+
+
+
+＠ゼノビア
+二つ目……私も一度城のほうに向かってはみたのだが、[r]ルートの先には高い岩山が立ち塞がっていた。
+[k]
+
+＠ゼノビア
+山越えはかなりの労苦を伴うだろう。[r]まして[%1]がいるのなら、なおさらだ。
+[k]
+
+＠ゼノビア
+進むなら山の中腹。洞窟だ。
+[k]
+
+＠ゼノビア
+岩戸に閉ざされているが、隙間に空気の流れを感じた。[r]きっと、山向こうまで洞窟が続いているのだ。
+[k]
+
+＠ゼノビア
+もし岩戸を開けることができれば、[r]城への道は拓けよう。
+[k]
+
+
+？1：ふむふむ
+？！
+
+＠ゼノビア
+そして三つ目は……まあ、これは我らにとっては[r]それほど障害ではないかもしれない。
+[k]
+
+＠ゼノビア
+風の便りで聞く限り、[r]このあたりには多くの盗賊たちがいるらしい。
+[k]
+
+＠ゼノビア
+出会ってしまえば邪魔をされるかも……[r]というところだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+そんなの、話し合い（物理）で[r][#友達:ファン]にしちゃえばいいじゃない？
+[k]
+
+[charaFaceFade A 14 0.2]
+
+＠エリザベート
+ミ・ナ・ゴ・ロ・シ～♪　じゃなくて、[r]ミ・ナ・ヨ・ロ・シ～♪
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠ゼノビア
+ああ。私の国で盗賊行為とはけしからん。[r]見つけ次第、身柄を拘束し裁きを受けさせよう。
+[k]
+
+[charaFace B 5]
+
+＠ゼノビア
+パルミラの風紀と治安は私が守る！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaMove A 0,10 0.6]
+[charaMoveScale A 1.1 0.6]
+[wt 0.7]
+[charaFace A 17]
+
+＠エリザベート
+（ねえ[&子イヌ:子ジカ]。[r]　この人の服、風紀乱してない？）
+[k]
+
+？1：（ファッションは人それぞれなので）
+
+＠エリザベート
+確かにそうね。[r]この服装にも、きっと意味があるのでしょうね。
+[k]
+
+？2：（健康美、いいと思います）
+
+[charaFaceFade A 12 0.2]
+
+＠エリザベート
+そうね～♪[r]ペンテシレイアやブーディカと気が合うタイプね～♪
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠ゼノビア
+よし、出発だ！
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_MAP_41 2.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

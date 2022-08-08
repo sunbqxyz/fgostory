@@ -1,0 +1,104 @@
+
+
+
+＄94-06-04-03-1-1
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 9012000 1 ダ・ヴィンチ]
+[charaSet B 8001600 1 マシュ]
+[charaSet C 98002000 1 フォウ]
+[charaSet D 1098181100 1 ジャンヌ]
+[charaSet E 7031000 1 ジャンヌ・オルタ]
+
+[scene 134100]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠マシュ
+……。[r]……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+……。[r]……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFadein C 0.1 1]
+＠フォウ
+フォウ……。
+[k]
+
+？1：今、とんでもない連中と戦ったような
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+き、気のせい……[r]ってことにしておきたいなぁ……。
+[k]
+
+[messageOff]
+
+？2：サメでしたね……
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠マシュ
+はい……二足歩行するサメでした……。
+[k]
+
+＠マシュ
+気のせいか、大変に楽しそうな[r]ジャンヌさんの気配も感じ取れました……。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaDepth D 2]
+[charaDepth E 1]
+[charaFace D 6]
+[charaFace E 14]
+[charaPut D 0,0]
+[charaPut E -300,0]
+[charaFadeTime D 0.4 0.7]
+[charaFadeTime E 0.4 0.7]
+[wt 0.7]
+
+＠ジャンヌ
+いえーい♡
+[k]
+
+[messageOff]
+[wt 0.7]
+
+？！
+
+
+[bgmStop BGM_EVENT_94 2.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

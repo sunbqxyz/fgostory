@@ -1,0 +1,604 @@
+
+
+
+＄03-00-01-17-2-1
+[soundStopAll]
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 7030001 1 阿塔兰忒·Alter]
+[charaSet C 5036001 1 阿维斯布隆]
+[charaSet D 1098124510 1 达·芬奇]
+[charaSet E 1098123210 1 戈尔德鲁夫]
+[charaSet F 98115300 1 福尔摩斯]
+[charaSet G 1098128400 1 雅嘎反叛军]
+[charaSet H 5009000 1 特效用dummy]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 1]
+
+[label INPUT_SELECT_BRANCH_1]
+
+[scene 55300]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛修
+成功击退魔兽！
+[k]
+
+？1：太好了，太好了。
+？！
+
+[charaFace A 0]
+
+＠玛修
+看来一段时间内只能在这里与新堡垒间[r]两点一线来回了……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+阿维斯布隆一副亢奋的表情……[r]不对，虽说隔着面具不知实际情况……
+[k]
+
+[charaFace B 0]
+
+＠阿塔兰忒·Alter
+总而言之，现在正边挖掘隧道，边用[r]采掘的矿石制作魔偶，并进行搬运工作。
+[k]
+
+＠阿塔兰忒·Alter
+[line 3]这段时间就把精力集中在[r]建造堡垒与挖掘隧道上吧。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+[charaFadeout B 0.1]
+[wt 1.0]
+
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_2]
+
+[scene 54701]
+
+[cameraMove 0.1 -86,0 1.2]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaScale C 0.83]
+[charaFadein C 0.1 0,-48]
+
+[seLoop ad60]
+[seVolume ad60 0 0.8]
+[cameraMove 0.7 -46,0 1.2]
+[charaMove C -60,-48 0.8]
+[charaShake C 0.2 0 2 0.8]
+[wait charaMove C]
+[wait camera]
+[seStop ad60]
+[wt 0.7]
+
+[seLoop ad60]
+[seVolume ad60 0 0.8]
+[cameraMove 1.8 0,0 1.2]
+[charaFace C 8]
+[charaMove C 60,-48 2.0]
+[charaShake C 0.2 0 2 2.0]
+[wait charaMove C]
+[wait camera]
+[seStop ad60]
+[wt 0.7]
+
+[seLoop ad60]
+[seVolume ad60 0 0.8]
+[cameraMove 1.0 40,0 1.2]
+[charaFace C 9]
+[charaMove C 0,-48 1.5]
+[charaShake C 0.2 0 2 1.5]
+[wait charaMove C]
+[wait camera]
+[seStop ad60]
+[wt 1.0]
+
+＠阿维斯布隆
+那就用这些魔猪骨头制作魔偶吧。[r]哎呀，那这就应该被称为龙牙兵了吧？
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+[cameraHome 0.1]
+[charaFadeout C 0.1]
+[charaScale C 1.0]
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+＠玛修
+不得了。
+[k]
+
+＠玛修
+阿维斯布隆先生居然会开玩笑，[r]难以置信。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[wt 0.3]
+
+[bgmStop BGM_EVENT_7 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿维斯布隆
+……抱歉，我已经没事了。[r]嗯，头脑冷静下来了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 0,0]
+
+＠达·芬奇
+然后呢，有适合当Shadow Border装甲的素材吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿维斯布隆
+虽说这只是我从外壳损伤的数据中推测出来的……
+[k]
+
+＠阿维斯布隆
+但只要使用这些素材，应该就能避免[r]虚数航行时产生的车体损伤了吧。
+[k]
+
+＠阿维斯布隆
+而且还有多余的素材可以用来制作备用装甲。[r]只不过，还需要一定时间进行挖掘。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,0]
+
+＠戈尔德鲁夫
+太棒了！[r]好，那我们就赶紧逃离这种边境吧！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 34]
+[charaFadein D 0.1 0,0]
+
+＠达·芬奇
+我不是说过了吗，[r]这样是无法解决问题的！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠福尔摩斯
+也难怪Miss阿塔兰忒会起疑心呢。
+[k]
+
+[charaFace F 0]
+
+＠福尔摩斯
+好了，总之各位。[r]开始工作吧。
+[k]
+
+＠福尔摩斯
+我们还有堆积如山的事要去解决呢！
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+[charaFadeout F 0.1]
+[charaPut H 1200,1200]
+[wt 1.0]
+
+
+
+
+[branch INPUT_SELECT_BRANCH_3]
+
+
+[label INPUT_SELECT_BRANCH_3]
+
+
+[se ad648]
+[seVolume ad648 0 0.5]
+[scene 54403]
+[fadein black 1.2]
+[wait fade]
+[wt 2.0]
+
+[scene 54400 1.5]
+[wt 3.0]
+[scene 54403 1.5]
+[wt 1.5]
+[se ad648]
+[wt 1.5]
+[scene 54400 1.5]
+[wt 3.5]
+
+[fadeout black 1.2]
+[seStop ad648 0.6]
+[wait fade]
+[scene 54903]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+堡垒建好了，隧道也开通了。
+[k]
+
+
+＠阿塔兰忒·Alter
+……虽然还堆积不少用剩的材料，[r]但反正这是短期使用的堡垒。不用管那些了。
+[k]
+
+＠阿塔兰忒·Alter
+虽然对方做了伪装，[r]但只需三日，就能从这里逼近首都。
+[k]
+
+＠阿塔兰忒·Alter
+[line 3]联络贝奥武夫，[r]让他负责佯攻吧。
+[k]
+
+？1：也就是说……
+？！
+
+[charaFace B 1]
+
+＠阿塔兰忒·Alter
+对，时机终于成熟了。
+[k]
+
+＠阿塔兰忒·Alter
+从[#杀戮猎兵:亲卫队]的压迫下，[r]解救雅嘎们吧。
+[k]
+
+[charaFace B 2]
+
+＠阿塔兰忒·Alter
+进攻首都雅嘎·莫斯科，[r]讨伐伊凡雷帝！
+[k]
+
+[se ad522]
+[wt 1.2]
+[seStop ad522 0.5]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠雅嘎反叛军
+不……不要紧吧？[r]我们真的能成功吗？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+……老实说，我也不清楚。
+[k]
+
+＠阿塔兰忒·Alter
+[#杀戮猎兵:亲卫队]的数量实在太多了，[r]吾等甚至连伊凡雷帝的身影都未曾得以窥见。
+[k]
+
+[charaFace B 4]
+
+＠阿塔兰忒·Alter
+不过能确定的是，他就在首都内。[r]另外[line 3]
+[k]
+
+[charaFace B 5]
+
+＠阿塔兰忒·Alter
+如若陷入持久战，吾等就输了。[r]因为现阶段已经是吾等能筹得的最大战力了。
+[k]
+
+[charaFace B 2]
+
+＠阿塔兰忒·Alter
+……不能再继续浪费时间了。[r]若想生存下去，就只有战斗！
+[k]
+
+＠阿塔兰忒·Alter
+汝等若想为子孙后代带来和平，[r]就必须讨伐伊凡雷帝！
+[k]
+
+＠阿塔兰忒·Alter
+为赢得自由与和平而战，[r]为赢得胜利而拼尽全力吧！
+[k]
+
+＠阿塔兰忒·Alter
+延续了四百五十年的历史[r]即将由汝等来改写！
+[k]
+
+[charaSet E 11006001 1 萨列里]
+[charaSet G 2010001 1 比利]
+
+[se ad6]
+[wt 1.0]
+[seStop ad6 0.5]
+[wt 0.5]
+
+[charaFace B 4]
+
+＠阿塔兰忒·Alter
+……真是的。
+[k]
+
+＠阿塔兰忒·Alter
+虽然我并非恺撒，但还是容我说一句[line 3][r]骰子已然掷出。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+那为了Shadow Border装甲的修复工作，[r]我们会暂时脱离队伍。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+好的。
+[k]
+
+＠阿塔兰忒·Alter
+不用我多说，[r]汝等也是进攻首都必须的战斗力。
+[k]
+
+[charaFace B 5]
+
+＠阿塔兰忒·Alter
+汝等可千万不要临阵脱逃哦？
+[k]
+
+＠阿塔兰忒·Alter
+倘若胆敢逃跑……[r]我会跑遍整个俄罗斯追捕汝等哦？
+[k]
+
+？1：我们是不会逃的啦。
+
+[charaFace B 1]
+
+＠阿塔兰忒·Alter
+嗯，这个问题……我相信汝。[r]因为汝很诚实。
+[k]
+
+＠阿塔兰忒·Alter
+汝不会逃跑，既然说出口，[r]那必然会说到做到吧。
+[k]
+
+？2：因为我们也必须打倒伊凡雷帝。
+
+[charaFace B 1]
+
+＠阿塔兰忒·Alter
+……这样啊。
+[k]
+
+＠阿塔兰忒·Alter
+既然汝[#这样]决定了，[r]那无论发生什么，都一定会说到做到吧。
+[k]
+
+＠阿塔兰忒·Alter
+听说汝曾克服了诸多尸横遍野的战场与诸多时代。
+[k]
+
+＠阿塔兰忒·Alter
+但愿吾等也能分享到汝那份幸运。
+[k]
+
+？！
+
+[charaFace B 6]
+
+＠阿塔兰忒·Alter
+那就在这座堡垒再会吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠比利
+夏夏，拜托你了。[r]回来的时候要认准萨列里哦。
+[k]
+
+＠比利
+你记住他的气味了吧？
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaSet C 1098127100 1 夏夏]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[wt 0.1]
+[se ad582]
+[charaMoveReturn C 0,30 1.0]
+[wt 1.5]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠萨列里
+我就是为此而留下来看家吗。[r]唔。算了，这也没办法。
+[k]
+
+[charaFace E 6]
+
+＠萨列里
+Shadow Border上没有钢琴吧？[r]那我就完全没兴趣了。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠比利
+我也没有多大兴趣啊，[r]为什么达·芬奇要叫我过去呢？
+[k]
+
+[charaFace G 5]
+
+＠比利
+不过，算了。[r]走吧，夏夏！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.1]
+[se ad582]
+[charaMoveReturn C 0,15 0.5]
+[wt 0.5]
+[charaMoveReturn C 0,15 0.5]
+[wt 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠比利
+话说回来，你有没有考虑过[r]贝奥武夫按兵不动的可能性？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠阿塔兰忒·Alter
+没有。
+[k]
+
+＠阿塔兰忒·Alter
+与[%1]一样，[r]我对他们的战斗力与行动力寄予信赖。
+[k]
+
+＠阿塔兰忒·Alter
+他一定会行动。[r]那我等你们回来！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

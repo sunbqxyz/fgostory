@@ -1,0 +1,1249 @@
+
+＄03-00-03-10-2-1
+
+
+[soundStopAll]
+
+[charaSet A 1098124510 1 达·芬奇]
+[charaSet B 3035001 1 忠贞]
+[charaSet C 1098159400 1 芥雏子]
+[charaSet D 1098123330 1 高扬斯卡娅]
+[charaSet E 1098158700 1 韩信]
+[charaSet F 1098160700 1 卫士长]
+[charaSet H 98115000 1 特效用]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 65500]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad324]
+[seVolume ad324 0 0]
+[se ad140]
+[seVolume ad140 0 0]
+[se ad629]
+[seVolume ad629 0 0]
+[seVolume ad324 1.2 0.6]
+[seVolume ad140 1.2 0.6]
+[seVolume ad629 1.2 0.6]
+[wt 2.5]
+
+[seStop ad324 0.4]
+[seStop ad140 0.4]
+[seStop ad629 0.4]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 21]
+[charaFadein A 0.1 1]
+
+＠达·芬奇
+不行，敌方的增援要到了！
+[k]
+
+
+？1：没能赶上……
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+
+[se ad141]
+[se ad159]
+[wt 0.5]
+[seStop ad141 0.6]
+[seStop ad159 0.6]
+
+[wt 1.0]
+
+[se ad60]
+[seStop ad60 0.4]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.8]
+[charaFace B 2]
+＠忠贞
+到此为止！　双方，都收起兵器！[bgmStop BGM_EVENT_80 0.6]
+[k]
+
+？1：哎？
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+＠芥雏子
+你说什么！？　明明还差一点就能将这些家伙……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠忠贞
+不得放肆，芥雏子。此乃陛下圣旨！
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[wipeFilter cinema 0.5 0]
+
+[scene 65800]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_90 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 0,-50]
+＠高扬斯卡娅
+这是什么意思，陛下！？[r]忠贞不是去增援的吗！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+＠？？？
+正是。朕命其前去救援。无论是芥还是迦勒底，[r][#总之去帮助即将战败的那一方]。
+[k]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0,-50]
+＠高扬斯卡娅
+怎么能这样……事到如今您还要对迦勒底施以恩情吗？
+[k]
+
+＠高扬斯卡娅
+我明明已经再三说明了，[r]那些家伙是威胁秦帝国的夷狄啊！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+＠？？？
+哼，夷狄吗？
+[k]
+
+＠？？？
+朕以前应该说过，[r]在朕的眼中，迦勒底与汝等皆为夷狄。
+[k]
+
+＠？？？
+但朕已经看出一点端倪来了，[r]汝与芥，以及迦勒底……
+[k]
+
+＠？？？
+双方是出于与大秦毫无关系的缘故而相争相斗。
+[k]
+
+＠？？？
+汝等不过是凑巧将朕的领土当作争斗的舞台罢了。
+[k]
+
+＠？？？
+因此，朕要趁此机会辨别敌我。[r]究竟是对朕之秦帝国有益之人，或是毫无用处的闯入者。
+[k]
+
+＠？？？
+由朕来评判汝等的立场。
+[k]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 0,-50]
+＠高扬斯卡娅
+我和小芥不……不是已经[r]实实在在地为陛下效劳了吗？
+[k]
+
+＠高扬斯卡娅
+我们就是因为秦帝国陷入危机才会赶来！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+＠？？？
+归根结底，当前威胁秦帝国的危机究竟为何。
+[k]
+
+＠？？？
+是如醉汉般误闯进来的迦勒底一党？[r]是足以威胁都城咸阳的侵略吗？　韩信，回答朕。
+[k]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 0,-50]
+＠韩信
+非非非也，恕恕恕臣斗胆，陛下此言差矣。[r]当前真正面临危机的，乃是被那不可侵犯的风暴所隔绝的外侧。
+[k]
+
+＠韩信
+也也也就是说陛下的恩宠无法遍及的地球全境。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+＠？？？
+那么朕应当处理的燃眉之急是什么？
+[k]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 0,-50]
+＠韩信
+无无无非是调查风暴外的状况。
+[k]
+
+＠韩信
+而且不是听宾客讲述，[r]而是由陛下亲自遣兵调将，并取得报告。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+＠？？？
+甚好甚好。这回答正合朕意。[r]不愧是忠臣之鉴。
+[k]
+
+＠？？？
+那么，朕又该怎么做，才能将军队派往风暴外部呢？
+[k]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+＠卫士长
+单独出现在这边世界的家伙应该指望不上吧。
+[k]
+
+＠卫士长
+能从异界入侵的那种能力，[r]恐怕只能作用于个人肉体之上。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+＠？？？
+那么成群结党出现的家伙呢？
+[k]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 0,-50]
+＠韩信
+迦迦迦勒底一党是借助某种[r]不可思议的车辆才跨越了边境。
+[k]
+
+＠韩信
+也也也就是说，[#只要有那台车辆]就能突破谜之风暴。[r]姑姑姑且不论原理为何……
+[k]
+
+[charaFace E 8]
+
+＠韩信
+只要能掌握使用方法，[r]那台车辆就能成为将秦军派遣到外部的手段了吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 0,-50]
+＠高扬斯卡娅
+…[charaShake D 0.04 3 3 0.2]…呜！
+[k]
+
+＠高扬斯卡娅
+（这家伙[line 3]洞察力不错……！[r]　竟然如此分清事情的轻重缓急……！）
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+＠？？？
+就是这么回事。从与朕交涉的问题看来，[r]迦勒底从一开始便拥有汝等所没有的具有压倒性优势的王牌。
+[k]
+
+＠？？？
+若想与朕交涉，就该准备比迦勒底[r]更为有利的贡品前来拜谒。塔芸斯卡砰。
+[k]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,-50]
+＠高扬斯卡娅
+我[messageShake 0.03 2 2 0.6]是高扬斯卡娅！　真是的，[r]陛下您该不会是故意这么叫的吧！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+＠？？？
+当然。若以正确的名字称呼，[r]想必汝也会觉得不自在，因此朕才大发慈悲。
+[k]
+
+[bgmStop BGM_EVENT_90 0.5]
+
+＠？？？
+还是说朕干脆毫不客气地[#称呼汝为妲己呢]？[r]狐狸精啊。
+[k]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 0,-50]
+＠高扬斯卡娅
+……呜！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 4]
+[charaDepth H 5]
+[charaDepth D 6]
+
+[charaTalk off]
+[se ad7]
+[charaMove D -50,-40 0.1]
+[wt 0.1]
+[charaMove D -100,-50 0.1]
+[wt 0.2]
+
+[se ad73]
+[charaFace F 0]
+[charaFadein F 0.2 -600,-50]
+[charaMove F -300,-50 0.2]
+[wt 0.6]
+
+[charaTalk on]
+[charaFace F 0]
+＠卫士长
+恕我失礼。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk off]
+[charaMove F -280,-50 0.1]
+[wt 0.1]
+
+[charaPut H -130,-120]
+[charaEffect H bit_talk_13]
+
+[cueSe Battle bac8]
+[charaFace D 12]
+[charaShake D 0.04 3 3 0.4]
+[wt 0.3]
+[cueSeStop bac8 0.2]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 4]
+＠高扬斯卡娅
+呜……竟然空手就把我……？
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 0.1]
+[charaFadeout D 0.4]
+[charaMove D -100,-75 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠？？？
+汝太小看朕的演算能力，以及皇室禁卫武官的功夫了。
+[k]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+＠卫士长
+恐怕她是在轻视这中华，[r]以为此处与过去任由她恣意蹂躏的时代无异吧。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+＠？？？
+那么，重新开始交涉吧。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[wait fade]
+
+[wipeOff]
+
+[charaSet D 1098123010 1 穆尼尔]
+[charaSet E 8001410 1 玛修]
+[charaSet F 1098123210 1 戈尔德鲁夫]
+[charaSet G 1036001 1 兰陵王]
+
+
+
+[scene 65500]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.1]
+
+[se ad472]
+[se ad437]
+[charaPut H -70,-160]
+[charaEffect H bit_talk_30]
+[wt 1.5]
+[seStop ad472 0.5]
+[charaEffectStop H bit_talk_30]
+[wt 0.5]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_79 0.1]
+
+＠？？？
+迦勒底及其士兵们啊。听得见吧？
+[k]
+
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠穆尼尔
+这……这声音是什么？
+[k]
+
+？1：是从玛修盾牌传来的声音……？
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaSet D 9005001 1 福尔摩斯]
+
+＠？？？
+皇帝之声乃传达给地上万民之声。[r]正如阳光普照般理所当然。
+[k]
+
+＠？？？
+没什么，不过是将磁性光束聚焦到那姑娘的盾牌上，[r]令其产生震动罢了。
+[k]
+
+＠？？？
+虽说只要足够坚硬，无论什么物体都无妨，[r]但直接震动头盖骨会令汝等感到不快吧？
+[k]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠玛修
+皇帝的声音，难不成是……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+＠？？？
+我方有意将汝等无比渴望的高扬斯某人引渡给汝等。
+[k]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+＠戈尔德鲁夫
+将高扬斯卡娅！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+＠？？？
+没错，正是此人。不过作为交换，汝等需答应[r]将所骑乘的机械装置交由我方详细调查及解析。
+[k]
+
+＠？？？
+如若同意该条件，朕保证汝等将获得国宾级的待遇。[r]在朕的庇护下无人能威胁汝等的安全。
+[k]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+＠芥雏子
+陛下！　为何要这么做！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠？？？
+芥雏子。
+[k]
+
+＠？？？
+汝若足够精明，就该做出毫发无损地[r]虏获那台车辆的样子来，那朕也不会亏待你。
+[k]
+
+＠？？？
+可汝却亲口这么宣言。[r]说要将迦勒底的这次来访[#不留痕迹地抹消殆尽]。
+[k]
+
+＠？？？
+汝本就打算连Shadow Border也一起破坏吧？[r]明知此事非朕所愿。
+[k]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+[charaShake C 0.04 2 2 0.2]
+＠芥雏子
+呜……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠？？？
+不过这个问题先不谈，毕竟汝还有其他用处，[r]因此有别于那只狐狸精，朕会另行处置你。
+[k]
+
+＠？？？
+不会只因为汝未顺从朕的旨意，就随便惩罚汝。
+[k]
+
+＠？？？
+但要清楚，倘若汝仍然主张要与迦勒底抗战到底，[r]那白杆兵的矛头便会指向汝。
+[k]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠忠贞
+既为君命，我是不会手下留情的。请觉悟吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠芥雏子
+……呜。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFace C 11]
+[charaFadein G 0.1 2]
+[charaFadein C 0.1 0]
+＠兰陵王
+（……御主，该如何是好？）
+[k]
+
+[wt 0.1]
+
+[charaFace C 7]
+
+＠芥雏子
+（尽管我满腔怒火。但目前……还是先隐忍吧。）
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+＠？？？
+好了，双方的头脑应该都冷静下来了吧。[r]迦勒底啊，让朕听听汝等的回答。
+[k]
+
+＠？？？
+啊啊，不过声音的接收度不如影像那般清晰。[r]向朕启奏时，要向正上方大声发言。
+[k]
+
+[charaTalk D]
+[charaFace D 0][r]
+[charaFadein D 0.1 1]
+＠福尔摩斯
+对我们来说……光是能在这绝境中[r]获得其他选项已经算是求之不得了。
+[k]
+
+[charaFace D 6]
+＠福尔摩斯
+即便可能会因此衍生出其他问题。
+[k]
+
+＠福尔摩斯
+我认为逮捕高扬斯卡娅与获得解药[r]是应该排除万难最优先完成的事项。
+[k]
+
+[charaFace D 0]
+＠福尔摩斯
+当然最终决断要交由[r][&Mr.:Miss][%1]来做……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+＠戈尔德鲁夫
+哎，不是我吗！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠达·芬奇
+您算是藏起来的底牌啦。[r]而且……
+[k]
+
+[charaFace A 24]
+
+＠达·芬奇
+那声音的主人是在向[%1]说话。
+[k]
+
+[charaFace A 14]
+
+＠达·芬奇
+如果其他人代为回答的话，[r]总觉得对方会面带微笑地一刀砍下来哦。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+？1：……休战是我们求之不得的。
+？2：……我接受你们的条件。
+？！
+
+＠？？？
+甚好甚好。清楚自己有多少斤两的回答，这没问题。
+[k]
+
+＠？？？
+那在进行具体步骤前，朕先确认一点。[r]汝等可知朕乃何人？
+[k]
+
+？1：是祖政吧？
+
+＠？？？
+嗯，是祖政。
+[k]
+
+＠？？？
+甚好甚好。朕一直在担心倘若连这个问题都要从头开始解释的话，[r]未免过于麻烦了，看来是朕杞人忧天啦。
+[k]
+
+＠？？？
+那就在汝等理解朕是位伟大帝王的前提下，[r]继续接下来的话题吧。
+[k]
+
+？2：是恺撒吧。
+
+＠？？？
+恺撒？　啊啊，是妄图趁朕攻打埃及时，[r]坐收渔翁之利的那个年轻人吗。
+[k]
+
+＠？？？
+别把朕与区区独裁官混为一谈。
+[k]
+
+＠？？？
+朕乃最初也是终极的皇帝。[r]现在乃是占据这颗行星全境的秦帝国的统治者。
+[k]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠达·芬奇
+（呜哇，是秦朝与罗马和埃及[r]　交战过的世界史吗……）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+？！
+
+＠？？？
+首先，朕派去的忠贞身边有技术官员陪同。
+[k]
+
+＠？？？
+让他们与他们的器材进入Shadow Border车内。
+[k]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 32]
+[charaFadein A 0.1 1]
+＠达·芬奇
+万一他们摆弄奇怪的地方，把车搞坏了可就不好了哦？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+＠？？？
+唔。朕的技术官员将全程在[r]迦勒底技术人员的监督下进行作业。只不过……
+[k]
+
+＠？？？
+在解析出我方想要结果之前，他们会不断地刨根问底，[r]还望汝等知悉。期待彼此都能真诚以待。
+[k]
+
+＠？？？
+好了，还有其他问题吗？
+[k]
+
+？1：您身在何处对我们说的话啊？
+？！
+
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠达·芬奇
+刚才我好像无意中听到了[r]磁性光束聚焦之类的恐怖发言呢……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+＠？？？
+当然，就在汝等头上。[r]抬头仰望便可一目瞭然了吧。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_79 1.0]
+[wipeout rectangleStripUpToDown 0.7 1]
+[wait wipe]
+
+[scene 67800]
+[wt 1.0]
+
+[wipein rectangleStripDownToUp 0.7 1]
+[wait wipe]
+
+＠玛修
+抬头就能看到……[bgm BGM_EVENT_70 0.1]
+[k]
+
+＠？？？
+嗯，那是长城。
+[k]
+
+＠玛修
+长城？　那不是指万里长城吗？
+[k]
+
+＠？？？
+万里？　啊啊，是阻挡匈奴的那个吗？
+[k]
+
+＠？？？
+哈哈哈。这说的是哪个时代的事了啊。[r]长城仍在地表之时，乃是地上仍存在秦之外夷的时候了啊。
+[k]
+
+＠福尔摩斯
+也就是说，现在已经没有外敌了？
+[k]
+
+＠？？？
+正是。这颗行星全境已归大秦所有。[r]因此今后的夷狄只可能来自于天空的彼方……
+[k]
+
+＠？？？
+但等夷狄来犯再警戒就为时已晚了。[r]朕便像这样事先巩固了防守。
+[k]
+
+
+＠？？？
+那可是即便凭借我大秦引以为傲的建筑技术，[r]也耗费了三百年之久的伟业。因此现在已不止万里。
+[k]
+
+＠？？？
+准确地说，应该被称作十三万一千四百二十四里长城，[r]但太长了不便称呼，故而仅称其为长城。
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.7 1]
+[wait wipe]
+
+[scene 65500]
+[wt 1.0]
+
+[charaSet F 1098123210 1 戈尔德鲁夫]
+[charaSet D 1098123010 1 穆尼尔]
+
+[wipein rectangleStripUpToDown 0.7 1]
+[wait wipe]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠达·芬奇
+唔……我该从哪里开始吐槽呢……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠戈尔德鲁夫
+在18世纪以前就开始宇宙开发，[r]就和甘地会发射核弹一样不可能啊！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+＠？？？
+如果大秦接下来会遭遇什么危机，[r]朕本以为最多也就是外星人的侵略了吧。
+[k]
+
+＠？？？
+但这次的怪异现象着实出乎朕的预料。
+[k]
+
+＠？？？
+就像只为包围中华圈而出现的绝对不可侵犯积雨云。[r]不，那已经不算是什么云了。
+[k]
+
+＠？？？
+连卫星轨道长城穿过云端的部分也杳无音讯，[r]沦落到只能在中华上空发挥机能的惨状。
+[k]
+
+＠？？？
+遍及全世界的朕之威光，[r]被那可恨至极的风暴给阻断，
+[k]
+
+＠？？？
+世界再度被混沌黑暗所包围。
+[k]
+
+＠？？？
+这可不行。若无朕之统治，[r]民众将再度倒退回混沌与暴力的世界。
+[k]
+
+＠？？？
+朕必须重新夺回大秦遍施地球全境的安宁与和谐才行。
+[k]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠玛修
+所以才会想要Shadow Border……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+＠？？？
+没错，正是如此。[r]但是朕想要的可不止这一台车辆啊。
+[k]
+
+＠？？？
+朕要大量生产出足以派遣救援军程度的[r]运输能力更优秀的车辆。为此，需要得到设计图。
+[k]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠穆尼尔
+啊啊，所以才要求我们让你解析啊。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+＠？？？
+能穿过不接受任何物理干涉的那股风暴的手段……[r]恐怕只有入侵虚数空间了吧。朕可曾说错？
+[k]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+＠达·芬奇
+……令人震惊。第一次就说中了吗。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+＠？？？
+理论可以推测，但对实践原理却毫无头绪。[r]因此想知道这台车辆的内部构造。
+
+[k]
+
+＠？？？
+当然，若能直接得到实物，[r]并拆解到一根根螺丝程度的话，自然再好不过了。
+[k]
+
+＠？？？
+但这样也会给汝等添麻烦吧？[r]因此两相折衷，朕只需汝等提供数据便可。
+[k]
+
+＠？？？
+这是朕的开恩。
+[k]
+
+？1：但是风暴外部的世界是……
+？！
+
+[charaSet D 9005001 1 福尔摩斯]
+
+＠？？？
+啊啊，芥与狐狸精所说的异闻带或[r]剪定事象等戏言都被朕一笑置之了。
+[k]
+
+＠？？？
+倘若汝等也要重复相同的话，[r]可就略扫朕的兴致了哦？
+[k]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 34]
+[charaFadein A 0.1 1]
+
+＠达·芬奇
+（[%1]，[r]　总之先保持沉默！）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+＠？？？
+汝等访客为何要对外界之事含糊其辞，[r]揣测这方面的实情不过是在白费功夫。
+[k]
+
+＠？？？
+朕会亲眼去见证风暴外部的世界并进行判断。
+[k]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠福尔摩斯
+我有一事想要询问陛下。
+[k]
+
+＠福尔摩斯
+在那风暴产生的前后，这个国家内应该出现了[r]一棵不可思议的巨树吧？　直通天际的光之树。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+＠？？？
+唔嗯？　这问题问得真奇怪。[r][#那是必然会出现的东西吗]？
+[k]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠芥雏子
+……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠？？？
+唔……芥那家伙，看来还隐瞒了什么吧？
+[k]
+
+＠？？？
+不过也罢。朕早已知晓那女人藏有手牌。[r]反正事关与汝等迦勒底的对立吧。
+[k]
+
+＠？？？
+但是朕感兴趣的只有大秦的安宁与夺回领土。
+[k]
+
+＠？？？
+只要不妨碍朕，[r]朕不会干涉访客间的斗争。
+[k]
+
+＠？？？
+朕也打开一张手牌吧。
+[k]
+
+＠？？？
+汝刚才说光之大树？　回答是否定的。[r]朕的监视遍及中华全境，但从未观测到这般异物。
+[k]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠达·芬奇
+中华全境，是吧……
+[k]
+
+[charaFace A 12]
+
+＠达·芬奇
+唔……看来不需要再畏畏缩缩的了，[r]那我就放胆问个够吧，
+[k]
+
+＠达·芬奇
+陛下，您不介意像这样与我们直接交谈吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+＠？？？
+此话怎讲？
+[k]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 25]
+[charaFadein A 0.1 1]
+＠达·芬奇
+像您这般有地位的当权者，[r]在交涉时理应摆出煞有介事的姿态来吧？
+[k]
+
+＠达·芬奇
+派遣代理人或是中介，[r]决不会直接面对面谈话才对。
+[k]
+
+[charaFace A 17]
+＠达·芬奇
+不与卑贱之人直接会面，划下不可侵犯的界限，[r]以示身份差距。一般都是这么做的吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+＠？？？
+呵呵，哈哈哈。事到如今还说什么啊。
+[k]
+
+＠？？？
+是这样啊，原来在汝等的世界中，[r]全是一些若以真面目示人便会自曝其短的君主吗。
+[k]
+
+＠？？？
+太阳可曾忌讳众目？　月亮可曾遮掩身形？
+[k]
+
+＠？？？
+一点没错，朕乃天子。[r]乃是如天穹般君临于万民之上的存在。
+[k]
+
+＠？？？
+因此，朕准许万民的拜谒。
+[k]
+
+＠？？？
+就如太阳一视同仁地普照大地，[r]朕也会无一例外地赐予草民仰望朕的荣誉。
+[k]
+
+＠？？？
+不过若太阳的样貌与草民无异的话，[r]或许确实有必要强调两者之间的差异吧。
+[k]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.1 1]
+＠达·芬奇
+那就是说，您不介意让我们瞻仰您的尊容吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+
+[bgmStop BGM_EVENT_70 1.0]
+
+＠？？？
+嗯？　为何要不断重复此话。[r]汝等不是早已尽情地[#窥视过朕的尊容了吗]。
+[k]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+＠达·芬奇
+哎？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+＠？？？
+不过用肉眼直视会受地平线妨碍吧。就是那个，[r]汝等不是用某种机械鸟般的器具仔细眺望过朕了吗？
+[k]
+
+＠？？？
+与朕视线对上过好几次了哦。
+[k]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+＠达·芬奇
+不，那个。我确实用远视观测过咸阳……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+＠？？？
+什么？　竟然睹朕容而不识朕吗？[r]这未免有一些不敬吧。
+[k]
+
+＠？？？
+虽说不知者无罪，[r]但汝等今后必当心怀敬畏。
+[k]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 22]
+[charaFadein A 0.1 1]
+＠达·芬奇
+稍……稍等一下！[r]难道说漂浮在咸阳半空的……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+＠？？？
+嗯，正是。那即为朕。
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.7 1]
+[wait wipe]
+
+[scene 66300]
+
+[cameraMove 0.1 0,0 1.2]
+[wt 1.0]
+
+[wipein rectangleStripDownToUp 0.7 1]
+[wait wipe]
+
+[bgm BGM_EVENT_97 0.1]
+
+＠祖政
+舍弃注定腐朽的肉身，[r]以机械彻底代替朕之权能的结果，便是这圣躯。
+[k]
+
+[cameraMove 5.0 0,0 1.01]
+
+＠祖政
+自那以后，与朕之国土相同，历经了2200年的[r]反复扩张之后，现在甚至已无法再立于大地之上。
+[k]
+
+＠祖政
+但能令人一目瞭然地理解朕之威严的这样貌，[r]对民众而言是最容易理解的吧。
+[k]
+
+＠祖政
+朕就是最初也是终极的皇帝。永恒平定天地的[r]绝对不灭之君临者，也就是祖政是也。
+[k]
+
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_97 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

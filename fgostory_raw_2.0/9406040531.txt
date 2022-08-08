@@ -1,0 +1,141 @@
+
+
+＄94-06-04-05-3-1
+[soundStopAll]
+[enableFullScreen]
+
+
+
+
+
+
+
+
+
+[charaSet A 1098215400 1 ダ・ヴィンチ]
+[charaSet B 1098220400 1 清少納言]
+[charaSet C 1098220600 1 カーマ]
+[charaSet D 2044001 1 アナスタシア]
+
+[scene 130100]
+[fadein black 1.0]
+[wait fade]
+
+[branch INPUT_SELECT_BRANCH_1 INPUT_SELECT_BRANCH 0]
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 1]
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 2]
+
+[label INPUT_SELECT_BRANCH_1]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠アナスタシア
+ぶい。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 1]
+[charaFace D 1]
+[charaFadeinFSL B 0.1 0]
+[charaFadeinFSR D 0.1 2]
+＠清少納言
+一緒に撮ろうぜシアっちー！[r]はい、変な顔！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace B 8]
+[charaFace D 7]
+[wt 0.5]
+[se ad41]
+[fadeout white 0.2]
+[wait fade]
+[fadein white 0.2]
+[wait fade]
+[wt 0.7]
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+ふう。[r]とりあえず、なんとか上手くいったかな。
+[k]
+
+[charaFace A 7]
+＠ダ・ヴィンチ
+この調子で遺跡を攻略だ！
+[k]
+
+[branch _sel01end]
+
+[label INPUT_SELECT_BRANCH_2]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠アナスタシア
+はあ、はあ……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠カーマ
+しなくてもいい苦労をした気分ですよ、まったく。
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠清少納言
+いやー、めんぼくない。[r]あたしちゃんの力が足りなかった……。
+[k]
+
+＠清少納言
+そのぶん、扉を開ける時には[r]力（物理）で頑張ってみたわけですが。
+[k]
+
+？1：なぎこさんのせいじゃないよ
+？2：やっぱり答えを間違えたのがよくなかった……
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+まあでも、みんな無事だよ！[r]今はそれを喜んでおこう。
+[k]
+
+[charaFace A 7]
+＠ダ・ヴィンチ
+次はもっと慎重に進めばいいのさ。[r]それじゃ、行こう！
+[k]
+
+[branch _sel01end]
+
+[label _sel01end]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 2.0]
+[bgmStop BGM_EVENT_94 2.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

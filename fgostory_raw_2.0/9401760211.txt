@@ -1,0 +1,355 @@
+
+
+＄94-01-76-02-1-1
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+
+[charaSet A 10004000 1 机械伊丽亲]
+[charaSet B 99502600 1 玛修]
+[charaSet C 3005001 1 伊丽莎白]
+[charaSet D 6031001 1 刑部姬]
+[charaSet E 98111500 1 达·芬奇]
+[charaSet F 6026001 1 新宿的Assassin]
+[charaSet H 5009000 1 特效用dummy]
+
+[scene 48700]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠机械伊丽亲
+……[r]……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠玛修
+机械伊丽亲，仍然健在！[r]再这样下去的话……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+[se ade90]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.7]
+[seStop ade90 0.4]
+
+＠伊丽莎白
+好痛好痛好痛！[r]好烫，好烫！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠刑部姬
+呜[line 3]！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠机械伊丽亲
+你无论如何都想夺回姬路城吗，[r]刑部姬。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠刑部姬
+那当然啦！？
+[k]
+
+[charaFace D 5]
+
+＠刑部姬
+那里是[#公主:我]的圣域，[r][#公主:我]居住的场所啊！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠机械伊丽亲
+那要试着和他们一起夺回姬路城吗？[r]我方会对你们予以一并迎击。
+[k]
+
+＠机械伊丽亲
+倘若你们真的怀念自己的城，[r]就让我见识一下你们的毅力吧。
+[k]
+
+＠机械伊丽亲
+啊啊，顺便说一下，由于能够空中飞行的我不需要，[r]所以门已经全部被焊死了。
+[k]
+
+＠机械伊丽亲
+若想夺回姬路城[line 3][r]就和迦勒底的御主一起沿着外墙往上爬吧。
+[k]
+
+[charaFace A 6]
+
+＠机械伊丽亲
+那么，祝各位生活愉快。[r]期待你们能享受美妙的[#劳动:一天]。
+[k]
+
+[se ade122]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.7]
+[charaMoveReturn A 0,-10 0.3]
+[wait charaMove]
+[charaMove A 0,40 0.5]
+[wait charaMove]
+[charaFadeout A 0.4]
+[wt 1.0]
+
+？1：还提起了裙摆……真优雅……
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-90]
+
+＠达·芬奇
+哈哈哈。你刚才难道没看到[r]她裙摆下射出了导弹吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠玛修
+嗯……尽管我是通过监控屏看的影像，[r]但带给了我相当强烈的冲击……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+？2：凭借辅助引擎飞走了……
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠伊丽莎白
+哼，不借助火药的力量就无法飞行的家伙，[r]看来还是我的飞行能力更胜一筹！
+[k]
+
+＠伊丽莎白
+尽管我光是抱着小刑就已经只能勉强滑翔了，[r]但浮力可是我自备的！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠刑部姬
+呼哇……[r]仿……仿佛已经干了一辈子份的活……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠新宿的Assassin
+那只是试探性的战斗吧……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFace D 4]
+[charaFadein D 0.1 2]
+
+＠伊丽莎白
+小刑还真是缺乏体力呢。[r]这样可打不了什么圣杯战争哦。
+[k]
+
+＠刑部姬
+……[#公主:我]才没什么干劲打圣杯战争呢。
+[k]
+
+＠伊丽莎白
+是吗～？
+[k]
+
+[charaFace D 5]
+
+＠刑部姬
+当然啦。[r][#公主:我]只想每天悠闲地生活。
+[k]
+
+＠刑部姬
+热闹的祭典什么的，[r]只要夏天冬天分别有一次就足够了。
+[k]
+
+＠伊丽莎白
+唔～[r]日本的公主殿下居然那么闲啊。令人同情。
+[k]
+
+[charaFace C 1]
+
+＠伊丽莎白
+不过嘛，像我这样的领主兼偶像也挺为难的！[r]因为每天都忙碌到一刻不停！
+[k]
+
+＠刑部姬
+知道啦知道啦，旧领主旧领主。[r]偶像反正也是地下偶像吧。
+[k]
+
+[charaFace C 2]
+
+＠伊丽莎白
+根本不旧，我还没输呢！[r]就算偶像生活是在打游击战，每天也都在努力啦！
+[k]
+
+？1：正所谓吵得越激烈，
+？2：关系越融洽？
+
+？！
+
+[charaFace D 3]
+
+＠刑部姬
+……其……其实并没有那么融洽啦？[r]彼此的立场也不同……
+[k]
+
+＠刑部姬
+只是利害得失一致，[r]才当她的临时同伴罢了……
+[k]
+
+[charaFace C 0]
+
+＠伊丽莎白
+这样吗？[r]我倒是不讨厌你阴险狡诈的一面哦？
+[k]
+
+[charaFace D 2]
+
+＠刑部姬
+哈[messageShake 0.03 4 4 0.5]哈哈[#公主:我]一点都不阴险狡诈啦！？
+[k]
+
+＠刑部姬
+毕竟是公主殿下嘛，无论何时何地，[r]都是清纯清秀清汤的哦！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛修
+最后那个好像是一种汤吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[bgmStop BGM_EVENT_7 1.5]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠新宿的Assassin
+好了，那接下来……
+[k]
+
+＠新宿的Assassin
+如果那个机龙女说的内容没错，[r]那我们就必须先从恰赫季斯城的外面爬上去才行……
+[k]
+
+[charaFace F 4]
+
+＠新宿的Assassin
+从外面……啊……
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.7]
+
+[fadeout black 0.3]
+[wait fade]
+[verticalImageSet A cut045_bg 1]
+[charaScale A 1.01]
+[charaFadein A 0 0,260]
+[wt 0.15]
+[fadein black 0.3]
+[wait fade]
+
+[wt 1.0]
+[se ad207]
+[seVolume ad207 0 0.05]
+
+[charaMove A 0,-220 4.0]
+[seVolume ad207 4.0 1.0]
+[wt 6.0]
+
+
+
+[messageOff]
+[seStop ad207 2.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.7]
+[soundStopAll]
+[end]

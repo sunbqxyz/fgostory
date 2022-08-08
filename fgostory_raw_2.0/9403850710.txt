@@ -1,0 +1,179 @@
+
+
+＄94-03-85-07-1-0
+
+[soundStopAll]
+
+[charaSet A 98001000 1 家老玛修]
+[charaSet B 7035001 1 森长可]
+[charaSet C 6002000 1 百地哈桑太夫]
+[charaSet D 1098173100 1 像僧兵的男人]
+
+[scene 70200]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠家老玛修
+[#前辈:殿下]，由于最近城下绑架事件多发，[r]所以我进行了调查。
+[k]
+
+＠家老玛修
+终于找到了这些绑架犯的老巢了！
+[k]
+
+？1：那我们这就去看看吧。
+
+？2：不能原谅那些绑架犯。
+
+？！
+
+[messageOff]
+[se ad443]
+[seVolume ad443 0 0.8]
+
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_5 1.0 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[seStop ad443 1.0]
+
+[scene 20110]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[bgm BGM_EVENT_5 1.0 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠森长可
+[line 3]然后这里就是他们的老巢吗？[r]好嘞，我这就豪爽地进去把他们全部杀光！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.7 25,0]
+
+[charaMove C 0,0 0.5]
+[wt 0.9]
+
+＠？？？
+……请安静，你们是迦勒底家的人吧？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠家老玛修
+您是！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠？？？
+我是名为[#百地:Momochi]哈桑太夫的忍者。
+[k]
+
+＠百地哈桑太夫
+其实我一直在调查在附近出没的绑架犯，[r]也查到了这里。
+[k]
+
+＠百地哈桑太夫
+如果直接打进去，[r]可能会导致那些被绑架的人受到牵连。
+[k]
+
+＠百地哈桑太夫
+各位要不要与在下合作呢？
+[k]
+
+[messageOff]
+[wt 0.3]
+
+[wipeout rollRight 1.0 0.5]
+[bgmStop BGM_EVENT_5 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+
+[wt 0.5]
+
+[wipein rollLeft 1.0 0.5]
+[wait wipe]
+[wt 0.4]
+
+[se ad662]
+[seVolume ad662 0 0.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠像僧兵的男人
+……好，把抓来的家伙统统移送到大本营去。
+[k]
+
+＠像僧兵的男人
+啊对了，别忘了在城里散布流言，说这是信长做的。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[seStop ad662 1.0]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠森长可
+啊啊？　什么叫大殿下做的啊？[r]你们这群家伙，可别以为冒充了大殿下之名后能够全身而退哦。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠像僧兵的男人
+你们是什么人！　哎哎，既然被发现也就没办法了，[r]干掉这群家伙！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

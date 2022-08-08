@@ -1,0 +1,559 @@
+
+＄94-01-56-04-3-0
+
+
+
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+
+[scene 28000]
+
+[charaSet A 98006000 1 魔物]
+[charaSet B 98006000 1 魔物]
+[charaSet C 98006000 1 魔物]
+[charaSet D 98006000 1 魔物]
+[charaSet E 98006000 1 魔物]
+[charaSet F 6005001 1 杰克]
+[charaSet G 5004001 1 童谣]
+[charaSet H 98006000 1 特效用]
+[charaSet I 98006000 1 特效用2]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk depthOff]
+[charaDepth H 9]
+[charaDepth A 1]
+[charaDepth B 2]
+[charaDepth C 3]
+[charaDepth D 4]
+[charaDepth E 5]
+[charaTalk off]
+
+[charaFace A 0]
+[charaFace B 0]
+[charaFadein A 0.1 2]
+[charaFadein B 0.1 0]
+
+[wt 0.5]
+
+[se bac14]
+[charaPut H 1]
+[charaEffect H bit_bolg_01y]
+[wt 0.2]
+[charaSpecialEffect A enemyErasure 1 0.5]
+
+[se ad24]
+[wt 0.3]
+[charaPut H 1200,1200]
+[charaEffectDestroy H]
+
+[charaPut I 1]
+[se bac14]
+[charaEffect I bit_bolg_02y]
+[wt 0.2]
+[charaSpecialEffect B enemyErasure 1 0.5]
+[se ad24]
+[wt 0.3]
+[charaPut I 1200,1200]
+[charaEffectDestroy I]
+[wt 0.3]
+
+[charaFace C 0]
+[charaFace D 0]
+[charaFace E 0]
+[charaFadein C 0.1 320,0]
+[charaFadein D 0.1 -320,0]
+[charaFadein E 0.1 1]
+
+[se ad23]
+[wt 0.5]
+
+[charaPut H 1]
+[charaEffect H bit_talk_ichimon01re]
+[se ad373]
+[charaSpecialEffect C enemyErasure 1 0.5]
+[charaSpecialEffect D enemyErasure 1 0.5]
+[charaSpecialEffect E enemyErasure 1 0.5]
+
+[se ad24]
+[wt 1.0]
+[charaPut H 1200,1200]
+[charaEffectDestroy H]
+
+[wipeout rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+[wt 0.2]
+[wipein rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+
+[charaTalk on]
+
+[charaTalk F]
+[charaFace G 5]
+[charaFadein G 0.4 2]
+[charaFace F 5]
+[charaFadein F 0.4 0]
+
+＠杰克
+这样就能[line 3]！
+[k]
+
+＠童谣
+倒下吧！
+[k]
+
+[messageOff]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout G 0]
+[charaFadeout F 0]
+[wt 0.1]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+[charaDepth A 4]
+[charaDepth B 2]
+[charaDepth C 5]
+[charaDepth D 1]
+[charaDepth E 3]
+
+[charaTalk off]
+
+[charaFadein A 0.4 360,20]
+[se ad19]
+[wt 0.4]
+[charaFadein B 0.4 -360,-60]
+[se ad23]
+[wt 0.4]
+[charaFadein C 0.4 40,-30]
+[se ad19]
+[wt 0.2]
+[charaFadein D 0.4 220,30]
+[se ad23]
+[wt 0.2]
+[charaFadein E 0.4 -140,0]
+[se ad26]
+
+[wt 1.0]
+
+[wipeout rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+[charaFadeout A 0]
+[charaFadeout B 0]
+[charaFadeout C 0]
+[charaFadeout D 0]
+[charaFadeout E 0]
+[wt 0.2]
+[wipein rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+
+[charaSet A 98001000 1 玛修]
+[charaSet B 5016001 1 杰罗尼莫]
+[charaSet C 5025001 1 爱迪生]
+[charaSet D 5025001 1 ？？？]
+[charaSet E 1018002 1 女神哥伦比亚]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.4 1]
+
+＠玛修
+100……200……！[r]敌人，温迪戈，还在增加！
+[k]
+
+？1：难道是芝加哥的居民们……！？
+
+？！
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 1]
+
+＠杰罗尼莫
+如果真是，那数量可远不止100万啊！
+[k]
+
+[charaFadeout B 0.1]
+
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+班扬小姐身体中的恐惧与悲伤[r]化作了魔物，全部聚集了起来[line 3]！？
+[k]
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠杰罗尼莫
+御主。[r][line 6]发动宝具的全力。
+[k]
+
+＠杰罗尼莫
+我会杀出一条血路。届时你们快跑。[r]不顾一切，什么都别想。
+[k]
+
+？1：难道[line 3]！
+？2：你打算敢死突击！？
+
+？！
+
+＠杰罗尼莫
+英灵不过是使魔。如若你是魔术师，就不要犹豫。[r]如若你是战士，就不要恐惧。
+[k]
+
+[charaFace B 2]
+
+＠杰罗尼莫
+开始吧[line 3]！
+[k]
+
+[messageOff]
+[charaEffect B bit_talk_36]
+[se ad39]
+[wt 2.0]
+[charaEffectStop B bit_talk_36]
+
+？1：等下等下等下[line 3]！
+
+？！
+
+[bgmStop BGM_EVENT_3 0.4]
+
+＠？？？
+没错！　等一下，杰罗尼莫君！[r]这可不是绅士的所作所为！
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_4 0.1]
+
+
+？1：这声音是[line 3]！
+
+？！
+
+[charaFadeout B 0.1]
+[charaEffectStop B]
+
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+爱迪生先生！
+[k]
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+
+＠爱迪生
+我不是说过了吗！[r]天才总会在快被遗忘的时候到来！
+[k]
+
+？1：爱迪生！
+？2：我记得！
+
+？！
+
+[charaFace C 0]
+
+＠爱迪生
+牺牲自己固然值得尊敬。[r]犹如固守阿拉莫的戴维·克罗克特的精神。
+[k]
+
+[charaFace C 5]
+
+＠爱迪生
+但他一定会这么说！　身为绅士，从死地归来，[r]回到众人的身边，才是更胜一筹的伟业！
+[k]
+
+＠爱迪生
+英雄们不是因为死去才成为了英雄！[r]而是因为直到最后一刻都追求着希望，才会被称为英雄！
+[k]
+
+[charaFadeout C 0.1]
+
+[wt 0.1]
+
+[charaTalk B]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFace B 0]
+[charaFadein B 0.1 2]
+
+＠杰罗尼莫
+[line 3]真了不起。你长着一张小丑的脸，[r]却总是凝视着真实。狮子精灵的引导者啊。
+[k]
+
+[charaFace C 5]
+
+＠爱迪生
+希望你称呼我为雷音的化身！[r]不管怎么说！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠爱迪生
+不惜做出装死这种不符合绅士风格的行为，[r]都要不断等待的，正是这个好机会！
+[k]
+
+＠爱迪生
+既然魔物们全都聚集在了这里，那正合我意！[r]现在就让你们见识一下我的宝具吧！
+[k]
+
+[se ad39]
+[charaEffect C bit_talk_36]
+
+＠爱迪生
+吾之光辉冲破黑暗的虚妄，[r]从无间愚昧的牢狱中解放出来吧！
+[k]
+
+＠爱迪生
+照耀！　少女内心的黑暗！
+[k]
+
+[charaFace C 2]
+
+＠爱迪生
+[#W·F·D:World Faith Domination]！！[r]周[line 3]年[line 3]庆[line 3]版[line 3]本！
+[k]
+
+[messageOff]
+[se ade35]
+
+[fadeout white 2.0]
+[fowardEffect bit_talk_radiallight02 310,185]
+[backEffect bit_talk_radiallight02 -220,180]
+[wait fade]
+
+[fowardEffectStop bit_talk_radiallight02]
+[backEffectStop bit_talk_radiallight02]
+
+[charaEffectStop C]
+[charaFadeout C 0.1]
+
+[wt 1.3]
+
+[scene 43700]
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+
+＠市民
+咦……这里是？[r]我为什么会在这种地方？
+[k]
+
+＠市民
+讨厌啦……我是来观看小熊队比赛的，[r]为什么会在这种地方？
+[k]
+
+＠市民
+麻烦了，商谈要迟到了。[r]万一谈崩了，不知道老大会做出什么事来！
+[k]
+
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.4 1]
+
+＠玛修
+温迪戈们恢复成原来的市民了[line 3]！[r]城市也……！
+[k]
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+
+＠爱迪生
+正是！　我的宝具，能剥取一切神秘，[r]让其显露真实的模样！
+[k]
+
+＠爱迪生
+这和平的城市，[r]才是班扬君所追寻的“真实”啊！！
+[k]
+
+[charaFace C 5]
+＠爱迪生
+我会在这里使用W·F·D(TM)，[r]继续遏制这个世界！
+[k]
+
+[charaFace C 2]
+＠爱迪生
+快走，御主！[r]班扬君应该就在这个城市的尽头！
+[k]
+
+？1：明白了，爱迪生[line 3]！
+
+？！
+
+[charaFadeout C 0.4]
+
+[bgmStop BGM_EVENT_4 0.7]
+[messageOff]
+[wt 0.2]
+[se ad133]
+[seStop ad133 2.0]
+[wt 0.2]
+[scene 31501 1.5]
+[wait scene]
+[wt 0.7]
+
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[se ad133]
+[seStop ad133 2.0]
+[wt 1.5]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0 1]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+[wt 0.2]
+
+[bgm BGM_EVENT_3 0.1]
+
+？1：来了啊，哥伦比亚[line 3]！
+
+？！
+
+＠女神哥伦比亚
+梦已醒来。[r]班扬再也无法回到那个轮回中去了。
+[k]
+
+＠女神哥伦比亚
+助我一臂之力。夺走班扬的圣杯，[r]在她被英灵之座认定为英灵之前进行破坏。
+[k]
+
+＠女神哥伦比亚
+她原本就是个不配当英灵的[#民间传说:Folklore]。[r]并非不可能破坏。
+[k]
+
+？1：我是不会让你得逞的！
+
+？！
+
+[charaFadeout E 0.1]
+
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.4 1]
+
+＠童谣
+没错！　被讲述的故事已经存在了！[r]哪怕是作者本人，也不能将其彻底抹除！
+[k]
+
+[charaFace G 5]
+
+＠童谣
+这就是故事的规则。绝对不变的规定。[r]我们正是因为被人相信，才会身在这里。
+[k]
+
+[charaFadeout G 0.1]
+
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.4 1]
+
+＠杰罗尼莫
+我无法认同通过践踏少数人来获得繁荣的世界。
+[k]
+
+[charaFadeout B 0.1]
+
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+
+＠杰克
+我们就在这里。就算见不到妈妈，[r]也在这里。和御主一起。
+[k]
+
+[charaFadeout F 0.1]
+
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.4 1]
+
+＠玛修
+拜托了。大家一起，[r]寻找拯救班扬小姐的方法吧！
+[k]
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0 1]
+
+＠女神哥伦比亚
+[line 3]我明白了。但我也是被创造的女神。[r]是居住于人们内心，渴望自由与平等的神格。
+[k]
+
+[charaFace E 5]
+
+＠女神哥伦比亚
+无论多么傲慢的愿望，无论多么不实际的虚构[line 3][r]我也能让这幻想出现！
+[k]
+
+[charaFace E 2]
+
+＠女神哥伦比亚
+为了让1,000万人活下去，杀害1个人[line 3]！[r]最大多数人的最大幸福，才是我的真理[line 6]！！
+[k]
+
+＠女神哥伦比亚
+女神哥伦比亚，在自由的名下，[r]定要让你们折服！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

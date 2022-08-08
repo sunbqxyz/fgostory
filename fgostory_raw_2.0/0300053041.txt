@@ -1,0 +1,776 @@
+
+＄03-00-05-30-3-1
+
+
+
+[soundStopAll]
+
+[charaSet A 2030002 1 喀戎]
+[charaSet B 1038000 1 伊阿宋]
+[charaSet C 1098158310 1 尼莫]
+[charaSet D 9005001 1 福尔摩斯]
+[charaSet E 8001410 1 玛修]
+[charaSet F 1038000 1 伊阿宋（剪影）]
+[charaFilter F silhouette 00000080]
+[charaSet G 1098184610 1 伊阿宋]
+[sceneSet H 10001 1]
+[charaScale H 1.01]
+[charaSet I 98115000 1 特效用dummy]
+[charaSet J 98115000 1 特效用dummy]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+
+[bgm BGM_EVENT_24 0.1]
+[wt 0.5]
+
+[se ad831]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 86601]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[se ad609]
+[shake 0.02 3 3 1.0]
+[effect bit_talk_explosion 50,-100]
+
+[se ad805]
+[seVolume ad805 0 0.2]
+[se ade188]
+[seVolume ade188 0 0.2]
+[se ad767]
+[seVolume ad767 0 0.2]
+[wt 2.0]
+
+[seStop ad805 1.0]
+[seStop ade188 1.0]
+[seStop ad767 1.0]
+
+[se ad609]
+[shake 0.02 3 3 0.4]
+[charaPut I -50,20]
+[charaEffect I bit_talk_explosion]
+[wt 1.2]
+
+[se ad609]
+[shake 0.02 3 3 0.4]
+[effect bit_talk_explosion 320,-40]
+[wt 0.4]
+
+[se ad609]
+[shake 0.02 3 3 1.2]
+[fowardEffect bit_talk_explosion -400,160]
+[wt 2.0]
+
+
+＠[9bb9ff]广播语音[-]
+[9bb9ff]重新启动[line 3]失败[-][r][9bb9ff]抹杀目标[line 3]失败[-]
+[k]
+
+[messageOff]
+[se ad61]
+[wt 0.8]
+
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[se ade36]
+[se ad813]
+[wt 0.8]
+
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[se ad823]
+[wt 0.3]
+
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[se ade36]
+[se ad813]
+[wt 0.8]
+
+[seStop ad61 2.0]
+
+＠[9bb9ff]广播语音[-]
+[9bb9ff]逻辑单元　崩溃[-][r][9bb9ff]枪械管制系统　99％　破坏[-]
+[k]
+
+＠[9bb9ff]广播语音[-]
+[9bb9ff]重新启动[line 3]重新启动[line 3]重新启动[line 3][-][r][9bb9ff]systemerror重新启动error无法清除系统[-]
+[k]
+
+[se ad31]
+[seVolume ad31 0 0]
+＠[9bb9ff]广播语音[-]
+[9bb9ff]运行备用系统[line 3]失败[seVolume ad31 0.6 0.6][-][r][9bb9ff]弗朗西斯·德雷克丧失[-]
+[k]
+
+＠[9bb9ff]广播语音[-]
+[9bb9ff]感情单元的伦理逻辑保险崩溃向奥林波斯[-][r][9bb9ff]发送求救信号error各单元崩溃率突破90％[-]
+[k]
+
+＠[9bb9ff]广播语音[-]
+[9bb9ff]单元连结系统error因头脑单元过载引发的死机[seVolume ad31 0 0][-][r][9bb9ff]已达618秒距离机体完全崩溃剩余时间100秒[seVolume ad31 0 1.0][-]
+[k]
+
+[seVolume ad31 0 0]
+＠[9bb9ff]广播语音[-]
+[9bb9ff]……噢噢，噢噢噢……可恨的迦勒底，可恨的人类、[seVolume ad31 0 1.0][-][r][9bb9ff]可恨的泛人类史……！[wt 0.2][seVolume ad31 0 0][wt 0.1][seVolume ad31 0 1.0][-]
+[k]
+
+＠[9bb9ff]广播语音[-]
+[9bb9ff]距离机体……崩溃……完全停止……剩余……[-][r][9bb9ff]不要……怎能毁灭……神怎能毁灭怎能毁灭……！[-]
+[k]
+
+
+[messageOff]
+[seStop ad831 5.0]
+[bgmStop BGM_EVENT_24 0.8]
+[seStop ad31 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_75 0.1]
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+＠伊阿宋
+陷入极端混乱了啊。[r]这下总算结束了吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠[9bb9ff]广播语音[-]
+[9bb9ff]检索记忆单元，[-]
+[k]
+
+[messageOff]
+[charaPut A 1]
+[charaEffect A bit_talk_06]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 1.5]
+
+＠喀戎
+……到此为止了吗……
+[k]
+
+＠喀戎
+为什么……会输呢……[r]不，为什么……你们会赢呢……
+[k]
+
+＠喀戎
+你们应该毫无胜算才对。[r]我们士兵的数量远超你们……
+[k]
+
+＠喀戎
+就算算上质量……[r]也不可能输啊……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk B]
+[charaFace B 19]
+[charaFadein B 0.1 1]
+＠伊阿宋
+嗯，确实没错。
+[k]
+
+[charaFace B 10]
+＠伊阿宋
+其他我不知道，但这次的从者面对[r]赫拉克勒斯一骑就能搞定的刻耳柏洛斯……
+[k]
+
+＠伊阿宋
+都必须全体出动才能将它打倒。
+[k]
+
+＠伊阿宋
+阿喀琉斯的脚后跟也被射穿了。
+[k]
+
+＠伊阿宋
+论正常战力，[r]也只有俄里翁了吧？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut A 1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠喀戎
+那么，为什么……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠伊阿宋
+你的疑问不存在明确的答案啦，[r]喀戎。
+[k]
+
+＠伊阿宋
+这里，只有纯粹的意志。
+[k]
+
+[charaFace B 0]
+＠伊阿宋
+[#我们有决不能输的强大意志]，[r][#发誓不到最后决不放弃勇往直前]。
+[k]
+
+＠伊阿宋
+相较之下，[r]你们由始至终都游刃有余。
+[k]
+
+＠伊阿宋
+难道把我们当做[r]迟早会到来的其他敌人的预演练习吗？
+[k]
+
+＠伊阿宋
+而最重要的就是，[r]认为[#自己站在神明方]的安心感[line 3]
+[k]
+
+＠伊阿宋
+我认为，这才是你们最大的破绽。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut A 1]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠喀戎
+……尽管无法接受……[r]但可以当作一个意见……来参考……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠伊阿宋
+你还是那么不服输啊！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_75 1.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad14]
+[shake 0.02 3 3 0]
+[wt 1.4]
+
+[se ad629]
+[seVolume ad629 0 0]
+[seVolume ad629 1.0 1.0]
+[wt 1.4]
+
+[seStop ad629 0.4]
+[se ad731]
+[shake 0.03 4 4 1.4]
+[wt 2.0]
+
+[seStop ad14 1.0]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠福尔摩斯
+好了，抓紧时间！[r]尼莫传来通讯了！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠尼莫
+前线的各位，作战非常精彩。[r]为你们的英勇奋战送上赞誉。
+[k]
+
+[charaFace C 5]
+＠尼莫
+但高兴还是留待以后吧。
+[k]
+
+＠尼莫
+正如我们的预料，破坏全部神核后，[r]船体开始崩溃了。
+[k]
+
+＠尼莫
+立刻返回Storm Border。[r]我们会维持舰艇到极限时刻。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠玛修
+明……明白了！[r]御主，快走吧！
+[k]
+
+＠玛修
+还有伊阿宋先生！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_82 0.8]
+[charaFadeout E 0.1]
+[wt 1.0]
+
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+＠伊阿宋
+嗯？　啊，不了。[r]我留在这里就行。我累了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+＠玛修
+[line 6]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+[wt 0.8]
+
+？1：……这样好吗？
+？！
+
+[bgm BGM_EVENT_78 0.1]
+[charaFace B 8]
+＠伊阿宋
+……嗯。[r]下次再会时，可别在这种地方召唤我哦！
+[k]
+
+[charaFace B 21]
+＠伊阿宋
+啊～累死了！[r]啊～不想再来第二次了～！
+[k]
+
+＠伊阿宋
+好了，快走吧！[r]让我一个人好好地休息一会儿！
+[k]
+
+？1：伊阿宋！
+？！
+
+[charaFace B 5]
+＠伊阿宋
+干嘛？
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,-10 1.1]
+[wt 0.2]
+[charaShake B 0.02 2 2 0.4]
+[se ad183]
+[wt 0.5]
+[charaFace B 3]
+[wt 0.8]
+[charaFace B 21]
+
+＠伊阿宋
+……很难受啦。[r]话说你别再磨蹭了。
+[k]
+
+？1：谢谢你！
+？！
+
+[charaFace B 21]
+＠伊阿宋
+烦死了，赞美之词我早就听腻了。[r]快滚快滚。
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,0 1.01]
+[wt 0.8]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠玛修
+伊阿宋先[line 3][wt 0.5][charaFace E 6]御主？
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ad215]
+[charaShake E 0.02 3 3 0.4]
+[wt 1.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+？1：有缘再会！！
+？！
+
+[messageOff]
+[wt 0.1]
+
+[se ad184]
+[se ad668]
+[wt 1.2]
+
+[fadeout black 1.5]
+[seStop ad184 1.5]
+[seStop ad668 1.5]
+[bgmStop BGM_EVENT_78 1.5]
+[wait fade]
+
+[charaEffectStop J bit_talk_10_LowLevel]
+[charaEffectStop A bit_talk_06]
+
+[charaEffect J bit_talk_06]
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 0,-50]
+
+[pictureFrame cut063_cinema]
+
+[wt 1.5]
+
+[se ad831]
+[seVolume ad831 0 0.1]
+[seVolume ad831 1.5 1.0]
+[fadein black 1.5]
+[wait fade]
+
+＠伊阿宋
+……[r]……
+[k]
+
+[messageOff]
+[wt 0.8]
+
+
+[charaTalk off]
+[charaDepth B 4]
+[charaDepth G 5]
+[charaDepth F 6]
+
+[se ad193]
+[charaFace F 0]
+[charaFadein F 0.7 0,-50]
+[wt 0.7]
+
+[charaFace G 23]
+[charaFadein G 0.4 0,-50]
+[wt 0.4]
+
+[charaFadeout B 0.4]
+[wt 0.6]
+
+[charaFadeout F 0.7]
+[wt 1.1]
+
+[charaTalk on]
+[charaFace G 4]
+＠G：伊阿宋
+啊……………………[r]我还以为……要死了。
+[k]
+
+
+[messageOff]
+[seStop ad831 5.0]
+[wt 0.1]
+
+[charaFadeout G 0.4]
+[charaMove G 0,-100 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.2]
+
+[bgm BGM_EVENT_95 0.1]
+
+[charaPut J 0,-100]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 0,-50]
+＠喀戎
+……呵。
+[k]
+
+＠喀戎
+没想到……竟跟我一样，[r]不，你的比我死得更透啊。
+[k]
+
+[charaFace A 0]
+＠喀戎
+你是怎么糊弄过去的？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 3]
+
+[charaTalk G]
+[charaFace G 19]
+[charaFace A 0]
+[charaFadein G 0.1 256,-50]
+[charaFadein A 0.1 -256,-50]
+＠G：伊阿宋
+因为某个笨蛋女人送了我一个[r]派不上用处的护身符啦。
+[k]
+
+＠G：伊阿宋
+只能用来修饰外表、掩人耳目的礼装。[r]……不过，还意外有用呢。
+[k]
+
+
+[charaTalk A]
+[charaFace A 0]
+＠喀戎
+你在施展策略时，也用了那个？
+[k]
+
+
+[charaTalk G]
+[charaFace G 18]
+＠G：伊阿宋
+多亏了这个，老子在那群家伙眼中，[r]应该是一位相当优秀的谋士吧。
+[k]
+
+[charaFace G 23]
+＠G：伊阿宋
+实际上我浑身都是冷汗，[r]难受得要死。
+[k]
+
+[charaTalk A]
+[charaFace A 3]
+＠喀戎
+……原来如此。[r]真有意思。
+[k]
+
+[charaFace A 0]
+＠喀戎
+不依赖神明的英雄，[r]就非得这样打肿脸充胖子不可吗。
+[k]
+
+
+[charaTalk G]
+[charaFace G 21]
+＠G：伊阿宋
+少啰嗦，赶紧给我去死啦。
+[k]
+
+
+[charaTalk A]
+[charaFace A 0]
+＠喀戎
+哎呀……虽然痛苦得要死，[r]但我已经是输家了。
+[k]
+
+＠喀戎
+向本应是泛人类史学生的你求教，[r]倒也不失为消灭前的一种乐趣呢。
+[k]
+
+
+[charaTalk G]
+[charaFace G 0]
+＠G：伊阿宋
+这玩笑真有意思……真是的。
+[k]
+
+
+[charaTalk A]
+[charaFace A 4]
+＠喀戎
+没有神的世界，[r]对我来说是难以置信的。
+[k]
+
+＠喀戎
+人类真的能在那里活下去吗？
+[k]
+
+
+[charaTalk G]
+[charaFace G 6]
+＠G：伊阿宋
+毕竟你一个劲地向人传授……[r]人类如何在没有神的情况下生存下去的智慧啊。
+[k]
+
+[charaFace G 4]
+＠G：伊阿宋
+……不过我生前，[r]就已经把一大半都忘了。
+[k]
+
+
+[charaTalk A]
+[charaFace A 3]
+＠喀戎
+你我的生存方式天差地别呢。
+[k]
+
+
+[charaTalk G]
+[charaFace G 19]
+＠G：伊阿宋
+说得对。[r]啊啊，但是[line 3]
+[k]
+
+[charaFace G 24]
+＠G：伊阿宋
+看起来彼此都不后悔呢。[r]我没说错吧？
+[k]
+
+
+[charaTalk A]
+[charaFace A 1]
+＠喀戎
+说不定……的确……如此呢。
+[k]
+
+[charaFace A 3]
+＠喀戎
+啊啊……说起来……[r]……
+[k]
+
+[messageOff]
+
+[se ad831]
+[seVolume ad831 0 0.1]
+[seVolume ad831 1.5 1.0]
+
+[charaFadeout A 0.4]
+[charaFadeout G 0.4]
+[wt 0.6]
+
+
+＠伊阿宋
+……[r]……
+[k]
+
+＠喀戎
+……[r]……
+[k]
+
+
+
+[messageOff]
+[se ad14]
+[shake 0.02 3 3 0]
+[wt 1.2]
+
+[fadeout black 2.0]
+[wait fade]
+
+[pictureFrame]
+[charaEffectStop J bit_talk_06]
+[se ad528]
+[scene 10000]
+[wt 1.0]
+
+[seStop ad831 2.0]
+[fadein black 1.0]
+[wait fade]
+
+[se ad609]
+[seVolume ad609 0 0.6]
+[wt 1.0]
+
+[se ad609]
+[wt 2.0]
+
+[fadeout black 2.0]
+[seStop ad14 2.0]
+[bgmStop BGM_EVENT_95 2.0]
+[wait fade]
+
+[scene 10000]
+[skip false]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout H 0.1]
+
+[soundStopAllFade 0.4]
+
+[sceneSet H 10001 1]
+[charaScale H 1.01]
+
+[charaPut J 1200,1200]
+[charaPut I 1200,1200]
+
+[scene 10000]
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+
+[charaTalk H]
+[skip false]
+[fadein black 1.0]
+[wait fade]
+[charaFadein H 0.1 0,-1200]
+[charaMove H 1 5.0]
+
+[criMovie talk_mov042]
+
+[fadeout white 1.0]
+[wait fade]
+[soundStopAll]
+[end white]

@@ -1,0 +1,372 @@
+
+＄91-40-15-01-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 8001001 1 玛修]
+[charaSet B 98002000 1 芙芙]
+[charaSet C 98003000 1 Dr.罗曼]
+[charaSet D 4015001 1 亚历山大]
+[charaSet E 98018100 1 海盗]
+[charaSet F 98018100 1 海盗们]
+[charaSet G 98018100 1 海盗们]
+[charaSet H 98072000 1 ？？？]
+
+[scene 21100]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0 1]
+[charaFace G 0]
+[charaFadein G 0 0]
+[charaFace F 0]
+[charaFadein F 0 2]
+[fadein black 1]
+[wait fade]
+
+＠海盗
+不可能吧[line 4]！？　这个小鬼头，[r]明明只是个小孩子，肌肉未免太厉害了吧[line 3]！？
+[k]
+
+＠海盗
+这……这家伙是真正的强健肌肉男啊……[r]不行不行，打不赢的……快逃快逃！！
+[k]
+
+[charaTalk off]
+＠海盗们
+哇啊啊[line 2]！！
+[k]
+
+[se ad55]
+[charaAttack G normal -425,0 0.4]
+[charaAttack E normal -200,0 0.4]
+[charaAttack F normal 0,0 0.4]
+[charaFadeout G 0.4]
+[charaFadeout E 0.4]
+[charaFadeout F 0.4]
+[seStop ad55 1.0]
+[wait charaMove]
+
+[bgmStop BGM_EVENT_3 0.4]
+[wt 1.0]
+[bgm BGM_EVENT_4 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠亚历山大
+一点能力都没有。[r]行啊，逃吧，我不会杀你们的！
+[k]
+
+
+[charaFace D 2]
+＠亚历山大
+只会逃跑说明你们只有这种水平！[r]你们记好了，所谓真正的掠夺，在离去时必应伴随凯歌！
+[k]
+
+[charaFadeout D 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠玛修
+不愧是未来的征服王，[r]说的话特别豪迈呢。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr.罗曼
+嗯嗯，确实很豪迈……
+[k]
+
+？1：能说这种话的少年可十分罕见哦。
+？2：够豪迈的。
+
+？！
+
+[bgmStop BGM_EVENT_4 1.0]
+[communicationCharaClear]
+[wait communicationChara]
+
+
+＠？？？
+嗯，我也这么想。[r]原来如此，是未来的征服王啊[line 2]
+[k]
+
+
+[bgm BGM_EVENT_5 0.1]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.4]
+
+＠？？？
+听说有个小鬼打败了老练的海盗，[r]作为食客，我本想出来打个照面，原来如此～。
+[k]
+
+[charaFace H 0]
+＠？？？
+看来不是普通的小鬼呢。[r]有意思。而且你拿的那本书是[line 2]
+[k]
+
+[charaFadeout H 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠亚历山大
+伊利亚特有什么问题吗？[r]这可是我最喜欢的书哦。
+[k]
+
+[charaFace D 0]
+＠亚历山大
+还有你究竟是谁。[r]看起来好像比刚才那些家伙[#要强]呢。
+[k]
+
+＠亚历山大
+……我能请教你的姓名吗？
+[k]
+
+[charaFadeout D 0.1]
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠？？？
+喂喂，既然是你喜欢的书，那一眼就该看出来了吧？[r]虽说我还没用宝具，猜起来或许确实有些困难。
+[k]
+
+[charaFadeout H 0.1]
+[charaTalk B]
+[charaFadein B 0.1 0]
+[charaFace A 6]
+[charaFadein A 0.1 2]
+＠芙芙
+芙，芙呜！！[r]芙？？
+[k]
+
+＠玛修
+亚历山大先生，他是[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠亚历山大
+我知道。是从者。[r]那你的名字是什么？
+[k]
+
+[charaFadeout D 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠？？？
+不先报上自己的名字吗？[r]不做自我介绍就询问他人的名字，这不太好吧。
+[k]
+
+[charaFadeout H 0.1]
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠亚历山大
+说得也是。[r]请原谅我的不懂礼数，我是亚历山大。
+[k]
+
+[charaFace D 0]
+＠亚历山大
+是未来被称为征服王的人。[r]尽管我对此没有太强的自觉。我还是成为征服王之前的我。
+[k]
+
+[charaFadeout D 0.1]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠？？？
+亚历山大啊。
+[k]
+
+＠？？？
+哎哟哟，这名字听起来像是那个雷电老头会喜欢的那种类型呢。[r]虽然很麻烦，但我还是先记下吧。
+[k]
+
+[charaFace H 0]
+＠？？？
+我是[#阿喀琉斯]。在那本书里[r]被描写了不少的希腊战士。[charaFace H 1]这应该不需要特地去记忆吧？
+[k]
+
+[charaFadeout H 0.1]
+
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠亚历山大
+……！！！　你就是吗！　阿喀琉斯！[r]啊啊，[charaFace D 4]怎么会这样，居然[line 2]
+[k]
+
+[charaFace D 3]
+＠亚历山大
+居然那么快就见到本人了啊！[r]玛修、[%1]！！
+[k]
+
+？1：怎……怎么？
+？2：哎，好像很兴奋？
+
+？！
+
+[charaFace D 1]
+＠亚历山大
+这种激动难以遏制！[r]啊哈哈，很抱歉我居然这么兴奋！
+[k]
+
+[charaFace D 0]
+＠亚历山大
+我现在就想和他[line 2]
+[k]
+
+[charaSet H 98072000 1 阿喀琉斯]
+[bgmStop BGM_EVENT_5 0.1]
+[wt 0.1]
+[charaFace D 1]
+＠亚历山大
+打一场！[bgm BGM_EVENT_3 0.1][r]没问题吧，御主！！
+[k]
+
+[charaFadeout D 0.1]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠阿喀琉斯
+就知道。我就猜到你会这么做。
+[k]
+
+[charaFace H 0]
+＠阿喀琉斯
+凭气味就能分辨出谁是好战之徒。[r]毕竟你我都是同类，同为淘气的小鬼。
+[k]
+
+[charaFace H 4]
+＠阿喀琉斯
+但是[line 3]不，真的很抱歉。[r]这次我只是个食客，不，只是位教师。
+[k]
+
+＠阿喀琉斯
+我一直很想模仿一次喀戎老师……[r]基于这个理由，我答应要照顾这些家伙们。
+[k]
+
+[charaFace H 0]
+＠阿喀琉斯
+所以，我不会和你战斗。
+[k]
+
+＠阿喀琉斯
+我的工作不是打倒你，[r]而是让[#海盗:这些家伙]打赢你。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout H 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠海盗
+老师……！[r]呜噢噢，刺毛头老[line 3]师！
+[k]
+
+＠海盗
+居然对如此没耐性、好吃懒做、脑内空荡荡、[r]以及充满龙套味的我们如此关照………！
+[k]
+
+＠海盗
+呜噢～噢！　听到了吗，小的们！　不准逃跑！[r]集合，[se ad88]集～合～！　现在正是报答老师信任的时候了！
+[k]
+
+[se ad55]
+[seStop ad55 1.0]
+[charaFadein F 0.4 0]
+[charaFadein G 0.4 2]
+[wt 0.4]
+＠海盗
+现在正是实践[r]您一直用心教导我们的阿喀琉斯流，
+[k]
+
+＠海盗
+『集体群殴一个人战法』……[r]俗称『下次看到邋遢胡子枪兵就用这招数！』的时刻了啊！！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠玛修
+我刚才好像听到了[r]绝对不能让赫克托耳先生听到的战法名了呢，前辈！
+[k]
+
+[charaFadeout A 0.1]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠阿喀琉斯
+打起精神来了吧，你们这群废物！[r]很～好，去壮烈地拼一回吧！
+[k]
+
+[charaFadeout H 0.1]
+[charaTalk E]
+[charaFadein E 0.1 1]
+[charaFadein F 0.1 0]
+[charaFadein G 0.1 2]
+＠海盗
+呀嗬～！[r]就像汹涌岸边的浪花一样壮烈一次吧～！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaTalk B]
+[charaFadein B 0.1 0]
+[charaFace A 7]
+[charaFadein A 0.1 2]
+＠芙芙
+芙呜！！
+[k]
+
+[charaFace A 2]
+＠玛修
+无法阻止他们了，前辈！[r]继续战斗！！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠亚历山大
+行啊。只要你们能在统帅下变得更难对付，[r]我也挺开心的。
+[k]
+
+[charaFace D 0]
+＠亚历山大
+只要将他们彻底打趴就行了吧？[r]没了学生的老师就可以卸下职责了。
+[k]
+
+[charaFace D 2]
+＠亚历山大
+然后[line 3][r]再和我一决胜负吧，阿喀琉斯！
+[k]
+
+[charaFadeout D 0.1]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠阿喀琉斯
+你这小鬼压根没把海盗们放在眼里吧！[r]真是个本性残酷的家伙呢，哇哈哈哈哈！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,572 @@
+
+
+
+＄94-03-66-01-1-0
+
+[soundStopAll]
+
+[charaSet A 4032000 1 埃尔梅罗Ⅱ世]
+[charaSet B 1098166300 1 乘务员]
+
+[charaSet C 1098123200 1 ？？？]
+[charaFilter C silhouette 00000080]
+
+[charaSet D 9005001 1 ？？？]
+[charaFilter D silhouette 00000080]
+
+[charaSet E 98001000 1 ？？？]
+[charaFilter E silhouette 00000080]
+
+[charaSet F 1098165800 1 仿古自动人偶]
+
+[sceneSet G 77500 1]
+[charaScale G 1.4]
+
+[charaSet I 1001000 1 特效用]
+[charaPut I 0,0]
+
+
+[scene 10000]
+
+
+[se ade286]
+[seVolume ade286 0.1 0.1]
+[wt 0.1]
+[seVolume ade286 1.0 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 2.8]
+
+＠？？？
+[line 4]这位乘客。
+[k]
+
+＠？？？
+[line 2]这位乘客，列车已经到站了。[r]请醒一醒。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+＠？？？
+喂喂，这么温柔地叫怎么可能起来？
+[k]
+
+＠？？？
+应该得这样！
+[k]
+
+[messageOff]
+[charaEffect I bit_talk_13]
+[shake 0.05 2 3 1.0]
+[se ad102]
+[wt 1.0]
+
+[wipeout openEye 0.1 0.7]
+[wait wipe]
+
+[charaScale I 1.0]
+
+[scene 77700]
+[wt 0.5]
+
+[wipein openEye 0.5 0.7]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.4 1]
+[wt 1.0]
+
+[bgm BGM_EVENT_25 0.1]
+
+＠A：谜之少女
+终于醒了啊。我的弟子。
+[k]
+
+[messageOff]
+[wt 0.4]
+[cameraMove 1.0 0,-20 1.1]
+[wt 1.6]
+
+＠A：谜之少女
+为什么一直盯着人家的脸看啊？[r]看来你不知道这里是哪里以及我是谁啊。
+[k]
+
+？1：你是谁来着？
+？2：金发少女的师父，这是新的模式吗……？
+？！
+
+[charaFace A 6]
+
+＠谜之少女
+哈？[r]喂喂，给我严肃一点！
+[k]
+
+[charaFace A 2]
+
+＠谜之少女
+不管怎么看，我都是你的[#老师:Tutor]，[r][#君主]・[#埃尔梅罗Ⅱ世]吧！
+[k]
+
+
+＠埃尔梅罗Ⅱ世
+事到如今竟然还在打瞌睡。[r]难道你想说你连自己是谁都忘记了吗？
+[k]
+
+[messageOff]
+[wipeout openEye 0.8 0.5]
+[bgmStop BGM_EVENT_25 1.2]
+[wait wipe]
+
+[cameraHome 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 10000]
+[wipein openEye 0.1 0.5]
+[wait wipe]
+
+
+
+[wipeFilter openEye 0.2 0.7]
+
+[fadeout black 0.1]
+[wait fade]
+
+[effect bit_sepia01]
+
+[scene 66400]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠？？？
+这次的灵子转移……观测到了……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠？？？
+基于此，决定在……[r][#虚数潜航艇:Shadow Border]进行调整期间……
+[k]
+
+
+＠？？？
+我个人是不愿意让这么重要的人材去执行这种任务的。[r]不过，既然去了……
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠？？？
+总之前辈。这次要格外小心……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.7]
+[wt 1.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[effectStop bit_sepia01]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[scene 10000]
+[cameraMove 0.1 0,0 1.01]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[scene 77700]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+[wipein openEye 0.5 0.7]
+[wait wipe]
+[wt 0.4]
+
+[bgm BGM_EVENT_101 0.1]
+
+＠埃尔梅罗Ⅱ世
+怎么样？　想起一些了吗？
+[k]
+
+？1：很遗憾完全没有……
+
+
+＠埃尔梅罗Ⅱ世
+唔，不要摆出那副表情！[r]就算是耗子也多少给我认真一些！
+[k]
+
+？2：咦，迦勒底呢？
+
+＠埃尔梅罗Ⅱ世
+迦勒底？　是指巴比伦尼亚的迦勒底人吗？[r]呵，你在梦里也在上着[#天体科:阿尼姆斯菲亚]的课吗？
+[k]
+
+？！
+
+[charaFace A 7]
+
+＠埃尔梅罗Ⅱ世
+哎呀哎呀，看来你真是睡迷糊了。[r]算了。还是做些弟子该做的事情，赶紧帮忙提行李吧。
+[k]
+
+[messageOff]
+[charaMoveScale A 1.1 0.3]
+[charaMove A 0,15 0.3]
+[wt 0.2]
+
+[se ad7]
+[wt 0.5]
+[shake 0.03 3 3 0.3]
+[se bac245]
+[wt 0.4]
+[shake 0.03 3 3 0.3]
+[se bac245]
+[wt 0.5]
+
+＠埃尔梅罗Ⅱ世
+赶紧走吧。[r]虽然这里是终点站，但是也不能让乘务员久等。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaMoveScale A 1.0 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠乘务员
+请走好，欢迎您再次搭乘本列车。
+[k]
+
+[messageOff]
+[se ade247]
+[seVolume ade247 0 0.8]
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_101 1.0 0.5]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[seStop ade247 0.5]
+
+
+[scene 77500]
+[wt 0.7]
+
+[se adm35]
+[seVolume adm35 0 0.3]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[bgm BGM_EVENT_101 1.0 1.0]
+[seVolume adm35 1.0 0.6]
+[wait wipe]
+
+[seVolume adm35 1.0 1.0]
+[wt 2.5]
+[seStop adm35 1.0]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠埃尔梅罗Ⅱ世
+啊，终于回来了，可爱的伦敦！[r]我最喜欢这常年阴沉的街道了。
+[k]
+
+＠埃尔梅罗Ⅱ世
+先去[#公寓:Flat]吧。[r]唔，怎么了？
+[k]
+
+？1：那个，正中间黑色的塔是？
+
+
+？！
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaDepth G 2]
+[charaDepth A 1]
+
+[charaFadein G 0.7 100,-280]
+[wt 0.7]
+
+[charaMove G 100,-350 2.0]
+[wt 2.8]
+
+[charaFadeout G 0.7]
+
+[wt 1.2]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+
+＠埃尔梅罗Ⅱ世
+那自然是[#时钟塔]啦。[r]是由魔术师引以为傲的知识精髓与偏执狂妄所建成的白垩之塔。
+[k]
+
+[charaFace A 0]
+
+＠埃尔梅罗Ⅱ世
+表面说是寻求根源之所，[r]实际上却几乎成为了热衷于权力斗争的废物们的渊薮。
+[k]
+
+＠埃尔梅罗Ⅱ世
+这里就是十二位[#君主:Lord]以及与之关联的魔术师们，[r]每晚重复阴谋与斗争的魔窟啊。
+[k]
+
+？1：师父身为[#君主:Lord]，一定很了不起吧？
+？！
+
+[charaFace A 7]
+
+＠埃尔梅罗Ⅱ世
+你是想让我回答吗？
+[k]
+
+[charaFace A 0]
+
+＠埃尔梅罗Ⅱ世
+那我就回答你吧。哪怕是最下位的现代魔术科，[r]成为[#君主:Lord]之后，也会被特别对待。
+[k]
+
+[charaChange A 1098164900 0 nomal 0]
+[wait charaChange A]
+
+＠埃尔梅罗Ⅱ世
+说具体点就是，你周围的人中九成都是敌人或间谍，[r]不知道什么时候自己就会被杀害。
+[k]
+
+[charaChange A 4032000 0 nomal 0]
+[wait charaChange A]
+
+＠埃尔梅罗Ⅱ世
+唔，我一开始在继位者中就排行最末，[r]即便如此，从幼时起，我吃的食物中就被混入了毒物。
+[k]
+
+
+＠埃尔梅罗Ⅱ世
+所以我开始随身携带应急食品，只是那并不好吃。[r]因此我看到那些安全又好吃的点心店就会走不动路。
+[k]
+
+？1：竟然是这样……
+？2：冒昧提问，抱歉。
+
+？！
+
+[charaFace A 1]
+
+＠埃尔梅罗Ⅱ世
+喂喂，不要真的摆出一副难过的表情啊。
+[k]
+
+[charaFace A 0]
+
+
+＠埃尔梅罗Ⅱ世
+哎呀，不小心嘲笑了你一下。
+[k]
+
+＠埃尔梅罗Ⅱ世
+呵呵。喜欢看别人厌恶的表情是我的天性啦。[r]作为弟子就不要计较这些了。
+[k]
+
+＠埃尔梅罗Ⅱ世
+但是我说你啊。是不是得健忘症了？[r]是撞到头了吗？　不，应该是被我打的吧。
+[k]
+
+[charaChange A 1098164900 0 nomal 0]
+[wait charaChange A]
+
+＠埃尔梅罗Ⅱ世
+这次你就从小学重新念起吧。[r]你混在小学生中间会让人感觉很可爱哦。
+[k]
+
+[charaChange A 4032000 5 nomal 0]
+[wait charaChange A]
+
+＠埃尔梅罗Ⅱ世
+魔术师之类的事，应该回忆起一些了吧？
+[k]
+
+？1：也就是说，我已经获得了位阶。
+？2：确实，我好像已经开位了……
+
+？！
+
+
+[charaFace A 7]
+
+
+＠埃尔梅罗Ⅱ世
+哈？　虽然[#开位:Cause]还不能算是上位，[r]但却是确立自己的魔道的位阶！
+[k]
+
+
+＠埃尔梅罗Ⅱ世
+不管怎么看，[r]但现在的你都已经是一个真真正正的魔术师了。
+[k]
+
+＠埃尔梅罗Ⅱ世
+与其有空纠结这种无聊的误会，还不如给我专心学习。[r]比如帮我拿行李什么的。
+[k]
+
+[charaFace A 1]
+
+＠埃尔梅罗Ⅱ世
+好了，把愉快的想象放在一边，[r]赶紧走吧。
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[se ad60]
+[bgm BGM_EVENT_101 1.0 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 10920]
+[wt 0.8]
+
+[fadein black 1.0]
+[seStop ad60 1.0]
+[bgm BGM_EVENT_101 1.0 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠埃尔梅罗Ⅱ世
+到了，这就是我许久未见的[#公寓:Flat]了。[r]你给我振作些，别提这点行李就累趴下了。
+[k]
+
+[messageOff]
+[charaFace A 0]
+[bgmStop BGM_EVENT_101 1.0]
+[wt 0.5]
+
+＠埃尔梅罗Ⅱ世
+嗯？　有点奇怪啊。
+[k]
+
+＠埃尔梅罗Ⅱ世
+虽说这附近布置了结界，但未免也太安静了些。[r]我不记得自己设置了声音封锁啊。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+
+[se ad66]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+
+[wt 0.4]
+[seStop ad66 0.4]
+[wt 1.2]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠埃尔梅罗Ⅱ世
+自动人偶？！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠自动人偶
+君主·埃尔梅罗……Ⅱ世……？
+[k]
+
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠埃尔梅罗Ⅱ世
+什么？　竟然还是可以进行战斗的古董？！[r]不过也是，我已经习惯被人憎恨了。
+[k]
+
+[charaFace A 5]
+
+＠埃尔梅罗Ⅱ世
+在布置了结界的情况下，[r]还敢如此堂而皇之地进行攻击，真是让人吃惊啊。
+[k]
+
+[charaFace A 2]
+
+＠埃尔梅罗Ⅱ世
+正好可以把这当做热身。[r]就让你看看为师的本事吧。
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

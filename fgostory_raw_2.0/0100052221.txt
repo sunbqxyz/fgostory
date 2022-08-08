@@ -1,0 +1,240 @@
+
+＄01-00-05-22-2-1
+
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[charaSet A 3005002 1 伊丽莎白]
+[charaSet B 2003001 1 罗宾汉]
+[charaSet C 5023001 1 布拉瓦茨基]
+[charaSet D 5025001 1 爱迪生]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFace D 4]
+[charaFadein C 0.1 2]
+[charaFadein D 0.1 0]
+
+[scene 20722]
+[fadein black 2]
+[wait fade]
+
+＠布拉瓦茨基
+……爱迪生，爱迪生先生。[r]你已经明白了吧？
+[k]
+
+＠爱迪生
+……
+[k]
+
+[charaFace C 2]
+＠布拉瓦茨基
+站起来。[r]快站起来继续战斗。
+[k]
+
+[charaFace C 5]
+＠布拉瓦茨基
+你不是美国人吗？[r]不正是舍弃了剑而选择手握斧头与枪支的拓荒者吗？
+[k]
+
+＠布拉瓦茨基
+你虽然相信[#隐秘:神秘学]，[r]却否定自己需要依靠这股力量。
+[k]
+
+[charaFace C 0]
+＠布拉瓦茨基
+正因为你是这样的人，[r]我才会与你成为朋友[line 2]。
+[k]
+
+＠布拉瓦茨基
+他们也选择了跟随你。[r]拒绝未知，渴望未来不正是你的优点吗。
+[k]
+
+[charaFace C 0]
+＠布拉瓦茨基
+来吧，所以[line 2]。
+[k]
+
+＠爱迪生
+……[r]……
+[k]
+
+
+[messageOff]
+[wipeout rightToLeft 0.5 1]
+[wait wipe]
+
+[charaFadeout C 0]
+[charaFadeout D 0]
+
+[scene 12000]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0 1]
+
+[wt 0.1]
+[wipein leftToRight 0.5 1]
+[wait wipe]
+
+＠伊丽莎白
+啊，糟了……！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠罗宾汉
+喂，大小姐！？
+[k]
+
+[bgmStop BGM_EVENT_3 0.1]
+
+[messageOff]
+[se ad17]
+[fadeout white 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+[wt 1.0]
+[seStop ad17 1.5]
+
+[wt 0.5]
+
+[scene 10000]
+
+[fadein white 1.5]
+[wait fade]
+
+＠伊丽莎白
+……[r]……？
+[k]
+
+＠伊丽莎白
+咦？[r]我没事？
+[k]
+
+[messageOff]
+
+
+[charaPut D 3]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.7 -200,0]
+[scene 12000 0.7]
+
+[se ad61]
+[seStop ad61 2.5]
+[charaEffect D bit_talk_lightning_02g]
+[wt 2.0]
+[charaEffectStop D]
+[wait charaEffect]
+
+[bgm BGM_EVENT_4 0.1]
+
+＠爱迪生
+[line 2]站起来战斗是一件多么困难的事啊。
+[k]
+
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠布拉瓦茨基
+是啊，真的很难。
+[k]
+
+[charaFadeout C 0.1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0]
+[charaFace A 4]
+[charaFadein A 0.1 2]
+＠爱迪生
+不过正是因为能越过无数绝望，才能被称作英雄。
+[k]
+
+[charaFace D 2]
+＠爱迪生
+把所有负担都强加给这位[#幼小的小姐:Little Lady][r][line 2]真是有损美国人的名誉！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠爱迪生
+哇哈哈哈哈！　让你们见识一下真·发明王的勇姿！[r][#“W·F·D”:World Faith Domination]！！
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_29]
+[shake 0.05 0 4 0.5]
+[se ad34]
+[wait fowardEffect bit_talk_29]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace D 2]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaFadein D 0.1 0]
+＠伊丽莎白
+……好厉害！
+[k]
+
+[charaFace D 1]
+＠爱迪生
+对吧，对吧。
+[k]
+
+[charaFace A 1]
+＠伊丽莎白
+只要有了这个，我的演唱会还能更加闪耀！[r]像这样，一闪一闪的！　亮晶晶的！　龙龙的！
+[k]
+
+[charaFace D 4]
+＠爱迪生
+……我倒是没想到还有这种使用方式……
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+
+[charaTalk C]
+[charaFadein C 0.1 1]
+＠布拉瓦茨基
+爱迪生站起来了。
+[k]
+
+[charaFace C 4]
+＠布拉瓦茨基
+但是……就算有五位从者战斗，[r]也不知道还能坚持多少分钟。
+[k]
+
+[charaFace C 5]
+＠布拉瓦茨基
+……如果还能有一个，某种……[r]决定性的存在就好了……
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_4 0.5]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,754 @@
+
+
+
+＄94-05-42-02-1-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet B 1048000 1 圣诞迦尔纳]
+[charaSet D 3046001 1 弗栗多]
+[imageSet E back10000_fs 1]
+[charaScale E 1.5]
+
+[imageSet F cut237_cutin_frame 1 1]
+[charaScale F 1.32]
+
+[charaSet G 1098205800 1 cutin用圣诞迦尔纳（斗篷）]
+
+[charaSet S 5009040 1 特效用dummy]
+[charaSet T 5009040 1 特效用dummy]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[charaSet A 1098124510 1 达·芬奇]
+[charaSet C 8001400 1 玛修]
+[branch lblConf]
+
+
+[label lblNotClear]
+[charaSet A 98111500 1 达·芬奇]
+[charaSet C 8001000 1 玛修]
+[label lblConf]
+
+
+[charaPutFSR S 1200,2000]
+[charaEffect S bit_talk_10_LowLevel]
+
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad33]
+[wt 0.1]
+[effect bit_talk_kengekiall04_fs]
+[wt 1.0]
+
+[se ad32]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+
+[effectDestroy bit_talk_kengekiall04_fs]
+
+[scene 105204]
+
+[charaScale C 1.2]
+
+[se ad671]
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0 0,15]
+[charaMove C 0,0 0.3]
+[charaMoveScale C 1.0 0.3]
+[charaShake C 0.03 4 4 0.6]
+[seStop ad671 0.6]
+[wt 1.0]
+
+＠玛修
+呜！
+[k]
+
+？1：（不愧是与神战斗过的邪龙。）
+？2：（好强……！）
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+＠弗栗多
+噢噢，在痛苦，在痛苦……[wt 0.9][r]令人心痒难耐。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠圣诞迦尔纳
+…………说明圣诞老人之拳，[r]我的拳，还太轻了吗……！
+[k]
+
+[charaFace B 0]
+＠圣诞迦尔纳
+…………？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ade410]
+[wt 0.2]
+[charaPut T 1]
+[charaEffect T bit_talk_20b]
+[wt 2.4]
+
+[charaPutFSR T 1200,2000]
+[charaEffectDestroy T bit_talk_20b]
+[wt 0.1]
+
+
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠达·芬奇
+迦尔纳！　你眼前的那个扭曲[r]恐怕就是这闭塞特异点的核！
+[k]
+
+＠达·芬奇
+只要击碎肯定就能解除。
+[k]
+
+＠达·芬奇
+这里是弗栗多创造的领域，[r]这样做或许还能弱化对手！
+[k]
+
+[branch lblConf2]
+
+[label lblNotClear2]
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-90]
+＠达·芬奇
+迦尔纳！　你眼前的那个扭曲[r]恐怕就是这闭塞特异点的核！
+[k]
+
+＠达·芬奇
+只要击碎肯定就能解除。
+[k]
+
+＠达·芬奇
+这里是弗栗多创造的领域，[r]这样做或许还能弱化对手！
+[k]
+
+[label lblConf2]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR S 1200,2000]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠圣诞迦尔纳
+知道了。我试试看。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.3 1.0]
+[bgmStop BGM_EVENT_80 0.8]
+[wt 0.05]
+[se ba13]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+
+[charaTalk off]
+[charaDepth G 4]
+[charaDepth F 5]
+[charaDepth T 6]
+
+[scene 106900]
+
+[charaFadein F 0 -200,-200]
+[charaFace G 0]
+[charaFadein G 0 -200,0]
+[wt 0.15]
+
+[charaMove F 0,-200 0.15]
+[charaMove G 0,0 0.4]
+
+[wipein rectangleStripRightToLeft 0.3 1.0]
+[wait wipe]
+[wt 0.1]
+
+[se ad835]
+[seVolume ad835 0 0.4]
+[se bac30]
+[seVolume bac30 0 0.4]
+[charaPut T 187,215]
+[charaEffect T bit_talk_light_gathers]
+[wt 1.7]
+[charaCrossFade G 1098205810 0 0.4]
+[wait charaCrossFade G]
+[wt 0.8]
+
+[seStop ad835 0.4]
+[seStop bac30 0.4]
+[charaEffectStop T bit_talk_light_gathers]
+[wt 0.3]
+
+[charaFace G 1]
+[wt 0.3]
+
+[se ad7]
+[wipeout circleIn 0.1 1.0]
+[wait wipe]
+
+[charaPutFSR T 1200,2000]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+
+[scene 10000]
+[wt 0.1]
+
+[wipein circleIn 0.1 1.0]
+[wait wipe]
+
+[fowardEffect bit_talk_flash_g]
+[wt 0.1]
+[se ad80]
+[wt 0.3]
+[seStop ad80 0.2]
+[wt 0.4]
+
+
+[se ad149]
+[se ad216]
+[seVolume ad216 0 0]
+[se ad733]
+[seVolume ad733 0 0]
+[fadeout white 0.3]
+[seVolume ad216 0.3 1.0]
+[seVolume ad733 0.3 1.0]
+[wait fade]
+
+[seStop ad733 1.5]
+
+[scene 105200]
+[wt 1.0]
+
+[wt 1.5]
+
+[fadein white 2.0]
+[wait fade]
+[wt 1.0]
+
+？1：呼吸不再难受了……
+？！
+
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠玛修
+闭塞特异点……[r]恢复成普通特异点了吗……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠弗栗多
+哦。竟能用拳头击碎吾之堰界之理啊。
+[k]
+
+[charaFace D 7]
+＠弗栗多
+……啊啊，别这样别这样，[r]不要增加吾对美味的期待了。
+[k]
+
+＠弗栗多
+真是个令人头疼的家伙呢～。
+[k]
+
+[charaFace D 4]
+＠弗栗多
+不过嘛……今天就到此为止好了。[r]总不能在彻底成熟前吃光吧。
+[k]
+
+[charaFace D 1]
+＠弗栗多
+若想让吾按你们的想法行动，[r]就要在盘子里摆上最棒的诱饵哦。
+[k]
+
+[charaFace D 6]
+＠弗栗多
+到那个时候…………[r]咿，嘻，嘻！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.0]
+[wt 0.1]
+
+[se ade282]
+[wt 0.1]
+[charaSpecialEffect D wipeTime 0,0 1.0]
+[wait charaSpecialEffect D]
+[wt 1.1]
+
+
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠达·芬奇
+弗栗多的反应……完全消失了呢。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR S 1200,2000]
+
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[se ad658]
+[charaCrossFade C 8001410 4 0.2]
+[wait charaCrossFade C]
+[wt 0.7]
+
+＠玛修
+对不起，让她逃跑了……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 33]
+[charaFadein A 0.1 1]
+＠达·芬奇
+这也没办法。毕竟谁都没想到[r]会冒出那种龙种大人物嘛。
+[k]
+
+＠达·芬奇
+那可是水准足以与主神级的因陀罗[r]相提并论的龙哦？
+[k]
+
+[charaFace A 24]
+＠达·芬奇
+虽说她似乎从者化了[line 3]
+[k]
+
+＠达·芬奇
+也就是说像拟似从者的神灵那样，[r]她只能发挥原本力量所拥有的极少部分，
+[k]
+
+＠达·芬奇
+但她依然毋庸置疑是龙种中的大人物。[r]凭那么少的人数，你们已经做得很好了。
+[k]
+
+[branch lblConf3]
+
+[label lblNotClear3]
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+＠达·芬奇
+弗栗多的反应……完全消失了呢。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR S 1200,2000]
+
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠玛修
+对不起，让她逃跑了……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-90]
+＠达·芬奇
+这也没办法。毕竟谁都没想到[r]会冒出那种龙种大人物嘛。
+[k]
+
+＠达·芬奇
+那可是水准足以与主神级的因陀罗[r]相提并论的龙哦？
+[k]
+
+[charaFace A 0]
+＠达·芬奇
+虽说她似乎从者化了[line 3]
+[k]
+
+＠达·芬奇
+也就是说像拟似从者的神灵那样，[r]她只能发挥原本力量所拥有的极少部分，
+[k]
+
+＠达·芬奇
+但她依然毋庸置疑是龙种中的大人物。[r]凭那么少的人数，你们已经做得很好了。
+[k]
+
+[label lblConf3]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR S 1200,2000]
+
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠圣诞迦尔纳
+我不能用这种借口来安慰自己。
+[k]
+
+＠圣诞迦尔纳
+唯有靠一己之力突破妨碍圣诞节的所有障碍，[r]才能算是真正的圣诞老人。
+[k]
+
+＠圣诞迦尔纳
+没能做到的我，果然只是个[r]实力不够的不完全的圣诞老人。
+[k]
+
+[charaFace B 4]
+＠圣诞迦尔纳
+……还差得远。还得继续修行……
+[k]
+
+？1：接下来该怎么办呢。
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.1 1]
+＠达·芬奇
+嗯，现在我们明白了几个事实。
+[k]
+
+＠达·芬奇
+虽然解决弗栗多应该是最直接的方法，[r]但似乎还有其他可以选择的方法。
+[k]
+
+[charaFace A 25]
+＠达·芬奇
+关于你们刚才解除的，[r]以及还留存着几个的闭塞特异点[line 3]
+[k]
+
+＠达·芬奇
+那个的作用类似于干涉礼物的核心。
+[k]
+
+＠达·芬奇
+可以认为这是造成影响而存在的路径、[r]门扉、连接通道……之类的感觉。
+[k]
+
+[charaFace A 26]
+＠达·芬奇
+也就是说，只要能逐一摧毁这些，[r]应该就能封住弗栗多的干涉路径。
+[k]
+
+[charaFace A 14]
+＠达·芬奇
+顺便一提，由于对方采取了反追踪对策，[r]所以现在已经无法追踪弗栗多本人了。
+[k]
+
+＠达·芬奇
+我觉得她多半就在那些特异点中的某一个。
+[k]
+
+[branch lblConf4]
+
+[label lblNotClear4]
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+＠达·芬奇
+嗯，现在我们明白了几个事实。
+[k]
+
+＠达·芬奇
+虽然解决弗栗多应该是最直接的方法，[r]但似乎还有其他可以选择的方法。
+[k]
+
+＠达·芬奇
+关于你们刚才解除的，[r]以及还留存着几个的闭塞特异点[line 3]
+[k]
+
+＠达·芬奇
+那个的作用类似于干涉礼物的核心。
+[k]
+
+＠达·芬奇
+可以认为这是造成影响而存在的路径、[r]门扉、连接通道……之类的感觉。
+[k]
+
+[charaFace A 3]
+＠达·芬奇
+也就是说，只要能逐一摧毁这些，[r]应该就能封住弗栗多的干涉路径。
+[k]
+
+[charaFace A 0]
+＠达·芬奇
+顺便一提，由于对方采取了反追踪对策，[r]所以现在已经无法追踪弗栗多本人了。
+[k]
+
+＠达·芬奇
+我觉得她多半就在那些特异点中的某一个。
+[k]
+
+[label lblConf4]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR S 1200,2000]
+
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠玛修
+原来如此……那么，[r]看来只能逐一消除闭塞特异点了吧。
+[k]
+
+＠玛修
+中途或许还会遇到弗栗多[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠圣诞迦尔纳
+届时就打倒她。[r]仅此而已。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+[wt 0.4]
+
+[charaMove C 0,-7 0.3]
+[wt 0.3]
+[charaMove C 0,0 0.3]
+[wt 0.8]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOff]
+[charaDepth A 6]
+[charaDepth E 4]
+
+[charaPut E 0,-200]
+
+[branchQuestNotClear lblNotClear5 3000303]
+
+
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.1 1]
+[charaFadeTime E 0.1 0.6]
+＠达·芬奇
+（基本方针暂时可以这样，[r]　但对方毕竟是邪龙弗栗多……）
+[k]
+
+[charaFace A 14]
+＠达·芬奇
+（闭塞特异点的灵子转移限制也是个问题呢。）
+[k]
+
+＠达·芬奇
+（若要提高胜算，[r]　或许还得下狠心挑选队员才行。）
+[k]
+
+[charaFace A 27]
+＠达·芬奇
+（[#咱们这儿:迦勒底]不仅有因陀罗的相关人员，[r]　还有不少著名的[#屠龙者]……）
+[k]
+
+＠达·芬奇
+（我就认真想个可以活用这个优势的作战方案吧！）
+[k]
+
+[branch lblConf5]
+
+[label lblNotClear5]
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-90]
+[charaFadeTime E 0.1 0.6]
+＠达·芬奇
+（基本方针暂时可以这样，[r]　但对方毕竟是邪龙弗栗多……）
+[k]
+
+＠达·芬奇
+（闭塞特异点的灵子转移限制也是个问题呢。）
+[k]
+
+＠达·芬奇
+（若要提高胜算，[r]　或许还得下狠心挑选队员才行。）
+[k]
+
+[charaFace A 0]
+＠达·芬奇
+（[#咱们这儿:迦勒底]不仅有因陀罗的相关人员，[r]　还有不少著名的[#屠龙者]……）
+[k]
+
+＠达·芬奇
+（我就认真想个可以活用这个优势的作战方案吧！）
+[k]
+
+[label lblConf5]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[charaPutFSR S 1200,2000]
+[charaEffectStop S bit_talk_10_LowLevel]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+＠弗栗多
+唔～，令人期待！[r]令人期待！
+[k]
+
+[charaFace D 6]
+＠弗栗多
+原本只是想稍微玩一下，才没有选择水，[r]而是选择夺走了『圣诞礼物』这个概念……
+[k]
+
+＠弗栗多
+但没想到竟有那么些看上去如此美味的人。[r]真不枉吾这么做呢。
+[k]
+
+[charaFace D 4]
+＠弗栗多
+……这么说来，除那个男人以外，[r]还隐约感受到了一丝与因陀罗本人相似的气息……
+[k]
+
+[charaFace D 1]
+＠弗栗多
+算了，就当今后的一种期待吧。[r]真令人兴奋呢。
+[k]
+
+[charaFace D 7]
+＠弗栗多
+啊啊，痛苦吧。更加痛苦吧，[r]凄惨丢人丑陋地挣扎、痛苦吧。
+[k]
+
+＠弗栗多
+这样一来，最后就会……咿，嘻，嘻！
+[k]
+
+[charaFace D 8]
+＠弗栗多
+那么，明天之后的准备工作[r]还是明天再考虑吧[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFace D 14]
+＠弗栗多
+好。[r]要不去沐个浴吧？
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

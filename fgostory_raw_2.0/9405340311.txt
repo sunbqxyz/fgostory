@@ -1,0 +1,593 @@
+
+＄94-05-34-03-1-1
+
+[soundStopAll]
+
+[charaSet A 4037000 1 尼莫]
+[charaSet B 1098181910 1 尼莫水兵]
+[charaSet C 1098197710 1 琰女]
+[charaSet D 1098197800 1 玛修]
+[charaSet E 1098176810 1 刑部姬]
+[charaSet F 25006000 1 梵高]
+[charaSet G 1098182110 1 尼莫教授]
+[charaSet H 1098182210 1 尼莫引擎]
+[charaSet I 1098182310 1 尼莫烘焙坊]
+[charaSet V 98115000 1 通讯用]
+[charaSet J 98115000 1 通讯用]
+[charaSet K 98115000 1 通讯用]
+[charaPut J 1200,1200]
+[charaPut K 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+[charaEffect K bit_talk_10_LowLevel]
+
+[scene 99002]
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.2]
+
+？1：尼莫船长！
+？2：已经到极限了，撤退吧！
+？！
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠尼莫
+水兵们，撤退！　卷起救生索！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠尼莫水兵
+嗯唔唔唔唔唔……等一下，卷盘卡住啦～！！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠尼莫
+你说什么！？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaEffect V bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+＠琰女
+这里是现场的[#琰女:声呐]！[r]救生索还不往回拉吗！？
+[k]
+
+＠琰女
+从2-7-5方向传来了密集游动声！　有一大群增援要来了！[r]赶紧拉我们回去啦～～！！
+[k]
+
+？1：玛修，再稍微坚持一会儿！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠玛修
+是，御主！　但快到极限了……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+[wt 0.2]
+[se ad15]
+
+？2：琰女，有办法自行移动吗！？
+
+[charaFace C 10]
+＠琰女
+不～可～能～！！[r]随便乱动的话感觉会被冲到很远的地方！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+[wt 0.2]
+[se ad15]
+
+？！
+
+[bgm BGM_EVENT_80 0.4 0.5]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠尼莫
+御主，我姑且提个建议。
+[k]
+
+＠尼莫
+[#抛弃她们]，[#然后用宝具攻击]，[r]这样至少我们说不定还能得救。
+[k]
+
+？1：这种事，
+？2：我绝对不会做。
+？！
+
+＠尼莫
+这样啊，我重新确认了你的意志。[r]但再这样下去的话，这将会成为最终手段。
+[k]
+
+[messageOff]
+[se ad13]
+[wt 0.5]
+
+[bgm BGM_EVENT_80 0.4 1.0]
+
+[charaFace A 2]
+＠尼莫
+预计距敌方增援抵达还有70秒！[r]御主、大家，拼命想办法啊！！
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_80 0.3 0.2]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaSet C 25004001 1 琰女]
+[charaSet D 8001600 1 玛修]
+[scene 98400]
+[wt 0.4]
+[bgm BGM_EVENT_80 0.3 0.6]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠玛修
+呜唔唔唔唔唔唔……！　我已经……撑不下去了！！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+＠刑部姬
+不要啊啊啊～～这下～完蛋啦～～～～！！[charaShake E 0.03 2 2 1.0][r]果然应该老老实实家里蹲啊～～～！！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠梵高
+唔呵呵……唔呵呵……真是段短暂的人生……[r]能在消失前遇见各位……梵高很开心……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+＠琰女
+不可以放弃～～～～～！！！[messageShake 0.04 5 5 0.5]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+＠梵高
+开玩笑啦，唔呵呵，现在还早了点呢。[r]梵高笑话……哎嘿嘿……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 22]
+[charaFadein C 0.1 1]
+＠琰女
+这孩子意外坚强呢！？[messageShake 0.03 3 3 0.4][r]那么从容，难道你有什么解决方案吗！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠梵高
+各位，[#闭上双眼]。可以吗？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠琰女
+哎？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+＠梵高
+[#要解放宝具]。[r]只是梵高也不清楚这样做会发生什么。
+[k]
+
+[charaFace F 4]
+＠梵高
+毕竟这是梵高在极度痛苦的时期所画的画，[r]而且梵高现在是Foreigner……
+[k]
+
+[charaFace F 9]
+＠梵高
+但是……[#只要解放宝具就能克服这个难关]……[r]哎嘿嘿……梵高有信心……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠刑部姬
+请务必！！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠琰女
+使用吧！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠玛修
+拜托您了，梵高小姐！！
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_80 0.3 0.2]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[flashin once 0.1 0.1 FF000080 FF000000]
+[charaFadeout D 0.1]
+[scene 99002]
+[wt 0.4]
+[bgm BGM_EVENT_80 0.3 1.0]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[wt 0.4]
+[flashin loop 0.6 0.8 FF000080 FF000000]
+[wt 1.4]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠尼莫
+什么，这次又怎么了！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠尼莫教授
+在，这里是电脑室，所有仪器突然都不正常了！
+[k]
+
+＠尼莫教授
+哪怕在虚数空间，通常也不可能发生这种事态！[r]推测是[#固有结界级的宝具发动了]！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠尼莫
+现场的某人使用了宝具！？　而且还是未知的宝具！？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 0.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+[flashOff]
+[wt 0.7]
+
+[charaPut V 1]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠尼莫教授
+啊，稍等一会，这是怎么回事～？[r]啊～，嗯，唔～？　嗯，
+[k]
+
+[charaFace G 3]
+＠尼莫教授
+仪器类恢复……然后，嗯，嗯……[r]问题大概已经解决了……？
+[k]
+
+[charaFace G 0]
+＠尼莫教授
+确认白刃战部队逃进安全范围～。[r]御主、船长，要动手的话就趁现在～。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.7]
+
+？1：尼莫！
+？2：现在是决胜之刻，动手吧！
+？！
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaFace A 7]
+＠尼莫
+你是说现在要上前线吗。[r]真是个勇敢的判断，代理司令。
+[k]
+
+[charaFace A 2]
+＠尼莫
+通告全员！[r]本舰接下来将[#毅然发动宝具攻击]！
+[k]
+
+＠尼莫
+当然，依现状，舰体是撑不住的！[r]最大限度使用资源展开对冲击术式吧！
+[k]
+
+＠尼莫
+目标为方向0-6-5的敌舰！[r]借助余波将敌方增援也一并驱散！！
+[k]
+
+＠尼莫
+打起精神来！[r]若不能一击破坏敌人，本舰就会被反击击沉！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+＠尼莫引擎
+人家的精神一直是爆满的！[r]电脑室，能万无一失地守住[#轮机室:这里]吧！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠尼莫教授
+嗯，不可能～。只能算勉强避免解体，所以损管就拜托啦。[r]轮机室里恐怖的人，我给你跳舞，你愿意原谅我吗？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+＠尼莫引擎
+谁会原谅你啊，笨蛋！　如果连勉强防御都搞砸的话，[r]就给我在烧毁的魔力炉残骸上跳舞吧！！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠尼莫水兵
+呜哇～大事不妙～！[r]教授要被做成海鲜烧烤啦～！
+[k]
+
+？1：从本质来说，
+？2：这就是船长在演独角戏吧？
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠尼莫
+这代表了我的内心现在多么焦急啦。[r]现在的心情，让我想想[line 3]可以用台词来形容吗？
+[k]
+
+？1：我想听！
+？2：说吧说吧！
+？！
+
+[charaFace A 2]
+＠尼莫
+“好嘞！[r][f small]  [f -]事已至此就孤注一掷吧！”
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠尼莫水兵
+就是嘛～！　这才是海上男儿！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠尼莫
+特里同引擎，启动！[r]各部门，最终确认！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠尼莫水兵
+当然，瞄准完毕～！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠尼莫教授
+与目标的距离及预测攻击，计算完毕～！[r]魔力障壁，展开～！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+＠尼莫引擎
+第一、第二引擎，转动得很迷人！[r]马力全开直至临界！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 3]
+[charaFadein I 0.1 1]
+＠尼莫烘焙坊
+唔～～，点心要不配上布丁吧？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth B 2]
+[charaDepth H 3]
+[charaDepth A 4]
+[charaDepth G 1]
+[charaFace B 2]
+[charaFace H 2]
+[charaFace A 2]
+[charaFace G 2]
+[charaPut V -450,0]
+[charaPut J -225,0]
+[charaPut K 500,0]
+[charaFadein B 0.1 -375,0]
+[charaFadein H 0.1 -125,0]
+[charaFadein A 0.1 125,0]
+[charaFadein G 0.1 375,0]
+＠尼莫全员
+允许！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout H 0.1]
+[charaFadeout A 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+[charaPut J 1200,1200]
+[charaPut K 1200,1200]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[se ad39]
+[charaEffect A bit_talk_36]
+＠尼莫
+要上了，宝具展开！[r]尼莫船长决不原谅扰乱大海之人！
+[k]
+
+＠尼莫
+『[#吾将远征，鹦鹉螺的大冲角:Great Ram Nautilus]』！！
+[k]
+
+[messageOff]
+[fadeout white 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaEffectStop A bit_talk_36]
+[wt 0.7]
+[se ad226]
+[se ad609]
+[seVolume ad609 0 0.6]
+[wt 3.5]
+
+[scene 10000]
+[fadein white 1.0]
+[wait fade]
+
+[fadeout black 0.1]
+[wait fade]
+[wt 0.7]
+[soundStopAll]
+[end]

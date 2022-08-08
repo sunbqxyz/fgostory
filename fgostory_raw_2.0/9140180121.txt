@@ -1,0 +1,355 @@
+
+
+
+＄91-40-18-01-2-1
+
+[soundStopAll]
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 4018000 1 魁札尔·科亚特尔]
+[charaSet C 6026001 1 Mil Dos Caras]
+[charaSet D 98115300 1 福尔摩斯]
+[charaSet F 98115000 1 特效用]
+[charaSet G 98115000 1 特效用]
+[charaSet H 98115000 1 特效用]
+[charaFilter C silhouette 000000FF]
+
+[scene 20300]
+
+[wipeFilter cinema 0.5 0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk off]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.1 300,-80]
+[charaFadein C 0.1 -300,-80]
+[charaPut G 1]
+[charaEffect G bit_talk_43h]
+[charaPut F 1]
+[se bac1]
+[charaMove B 300,-40 0.2]
+[wt 0.1]
+[charaMove C -300,-40 0.2]
+[wt 0.4]
+
+[charaMove B 100,-30 0.2]
+[charaMove C -100,-30 0.2]
+[wt 0.2]
+[se bac150]
+[charaEffect F bit_talk_13]
+[charaMove B 300,-60 0.2]
+[charaMove C -300,10 0.2]
+[wt 0.5]
+
+[charaMove B 100,-30 0.2]
+[charaMove C -100,-30 0.2]
+[wt 0.2]
+[se bac148]
+[charaEffect F bit_talk_13]
+[charaMove B 300,10 0.2]
+[charaMove C -300,-60 0.2]
+[wt 0.1]
+[charaMove B 100,-30 0.2]
+[charaMove C -100,-30 0.2]
+[wt 0.2]
+[se bac149]
+[charaEffect F bit_talk_13]
+[wt 0.1]
+[se bac150]
+[charaEffect F bit_talk_13]
+[wt 0.1]
+[charaMove B 300,-40 0.2]
+[charaMove C -300,-40 0.2]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+
+[wipeOff]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_43h]
+[wait wipe]
+
+[charaTalk on]
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠福尔摩斯
+唔，这发展真不愧为名副其实的空中战，[r]比赛以[#千面人:Mil Dos Caras]占优势。
+[k]
+
+？1：魁札尔·科亚特尔的招数不奏效？
+
+？！
+
+＠福尔摩斯
+那些招数虽然看上去都很华丽，[r]但遇到[#千面人:Mil Dos Caras]这样的老手，就会被轻易闪避。
+[k]
+
+＠福尔摩斯
+另一方面，他的招数则实打实地[r]给Miss魁札尔·科亚特尔造成了伤害。
+[k]
+
+＠福尔摩斯
+似乎相当有巴流术的风范。[r]轻快，但又切实地瞄准弱点。
+[k]
+
+[messageOff]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.2]
+
+[wipeFilter cinema 0.5 0]
+
+
+[se bac153]
+[wt 0.3]
+
+[charaPut H -50,-50]
+[charaEffect H bit_talk_13]
+
+[se bac148]
+[wt 0.2]
+
+[charaPut G 50,50]
+[charaEffect G bit_talk_13]
+
+[se bac149]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-40]
+[wt 0.3]
+
+[charaEffect B bit_talk_14]
+[se bac151]
+[charaFace B 5]
+[charaShake B 0.05 6 6 0.3]
+[wt 0.1]
+[charaMove B 0,-100 0.2]
+[wt 0.6]
+[charaFace B 0]
+[charaMove B 0,-40 0.3]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-40]
+
+＠Mil Dos Caras
+（喂喂。我已经扎扎实实地击中好几拳了啊！？[r]　为什么这位大姐还不倒下啦？）
+[k]
+
+＠Mil Dos Caras
+（话说刚才那下已经彻底把她打趴了吧？[r]　但先不论她为什么还能爬起来[line 3]）
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut F 1]
+[charaDepth F 5]
+[charaDepth B 7]
+[charaEffect F bit_talk_gouka]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-40]
+[se ad327]
+
+[wt 1.5]
+
+[seStop ad327]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_gouka]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-40]
+
+＠Mil Dos Caras
+（糟了，这下可糟了！　这气功的跳跃非同寻常，[r]　这家伙是托塔天王大叔吗！）
+[k]
+
+＠Mil Dos Caras
+（大山，是大山！　一旦被这种怪物力量抓住，[r]　别说灵基了，说不定连魂魄都会被粉碎吧！？）
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaDepth F 7]
+[charaDepth B 5]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 0,-40]
+
+＠魁札尔·科亚特尔
+露出困惑的表情了哦，[#面具人:Mascara]。[r]机会难得，我就回答你的问题好了。
+[k]
+
+＠魁札尔·科亚特尔
+你的攻击非常准确，毫无多余动作，被打中非常痛。[r]但这些都是“能够忍耐”的疼痛。
+[k]
+
+＠魁札尔·科亚特尔
+因为[line 3]没错，因为！
+[k]
+
+[charaFace B 1]
+
+＠魁札尔·科亚特尔
+[#反派:Rudo]的攻击是绝对打不倒[#好人:Limpio]的～！[r]或者可以说，越打越让我充满了力量～！
+[k]
+
+
+[charaScale B 1.2]
+[charaPut G 1]
+[charaEffect G bit_talk_41]
+
+＠魁札尔·科亚特尔
+综上所述，你给我觉悟吧～！[r]我要用必杀了，炽焰，亦焚尽神灵·头部坐击[line 3]
+[k]
+
+[messageOff]
+[charaPut F 1]
+[charaEffect F bit_talk_36]
+[se ad39]
+
+[wt 2.0]
+
+[charaPut F 1200,1200]
+[charaPut G 1200,1200]
+[charaFadeout B 0.1]
+[seStop ad39]
+[wt 0.1]
+[charaEffectStop F bit_talk_36]
+[charaEffectStop F bit_talk_41]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Mil Dos Caras
+不，这个我可受不了！[r]认输认输，我投降！
+[k]
+
+[charaFadeout C 0.1]
+[bgmStop BGM_EVENT_24 0.3]
+[wt 0.1]
+
+[wipeOff]
+[wait wipe]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+我可以认定您决定投降吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.2]
+[charaScale B 1.0]
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Mil Dos Caras
+嗯。再打下去就不划算了。
+[k]
+
+＠Mil Dos Caras
+这是随口答应下来的工作，[r]如果需要搏命的话，必须出个高价才行。
+[k]
+
+＠Mil Dos Caras
+今天就算接下我所有招数的你获胜。[r]这样没问题吧，摔角大姐？
+[k]
+
+＠Mil Dos Caras
+只要对手认输，比赛就算结束。[r]这就是摔角的优点吧？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFadein B 0.1 2]
+
+＠魁札尔·科亚特尔
+对，说得没错～！[r]我觉得和你很合得来呢～！
+[k]
+
+＠魁札尔·科亚特尔
+……嗯，所以我才有些遗憾。[r]下次如果还有缘再见，届时一定要让我看你的真面目哦？
+[k]
+
+＠魁札尔·科亚特尔
+如果你总是那么害羞，[r]到时候可是连心都会消失的哦？
+[k]
+
+＠Mil Dos Caras
+哈[line 3]那还真是谢谢您啦。[r]可能的话，我可不想再见到你啦。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Mil Dos Caras
+不过自由摔角还挺深奥呢。[r]我居然会对自己武术以外的招数产生兴趣啊……
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[charaEffect C bit_talk_quickmove]
+[charaMove C 0,100 0.1]
+[charaFadeout C 0.1]
+[se ad73]
+[wt 1.0]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_4 2.0]
+[wait fade]
+[soundStopAll]
+[end]

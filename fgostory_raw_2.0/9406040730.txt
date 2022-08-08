@@ -1,0 +1,868 @@
+
+
+
+＄94-06-04-07-3-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001600 1 マシュ]
+[charaSet B 1098215400 1 ダ・ヴィンチ]
+[charaSet C 5048000 1 コルデー]
+[charaSet D 1098220500 1 カイニス]
+[charaSet E 1098215500 1 ゴルドルフ]
+[charaSet F 1098216800 1 沖田オルタ]
+[charaSet G 1098216900 1 煉獄]
+
+[charaSet H 1098218700 1 サメ兵士１]
+[charaSet I 1098218700 1 サメ兵士２]
+
+[charaDepth H 1]
+[charaDepth I 2]
+
+
+[scene 130300]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_2 0.1]
+
+[charaTalk B]
+[charaFace B 24]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+このあたりのはずだけど……
+[k]
+
+[messageOff]
+
+[charaMoveReturn B 20,0 0.5]
+[wt 0.3]
+[charaMoveReturn B -20,0 0.5]
+[wt 0.7]
+
+[charaFace B 27]
+＠ダ・ヴィンチ
+あっ。[r]見てあれ！　あそこ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？1：崖の中腹に穴が……
+？2：海底洞窟だ……！
+？！
+
+[cameraHome 0.5]
+[wt 0.7]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+地図が示していたのはあの洞窟みたいだね。[r]注意しながら入ってみよう！
+[k]
+
+[charaFace B 27]
+＠ダ・ヴィンチ
+ついに海底洞窟！[r]いったい何が待っているんだろう。
+[k]
+
+[charaFace B 1]
+＠ダ・ヴィンチ
+うーん、ますます冒険っぽくなってきた！
+[k]
+
+＠ダ・ヴィンチ
+わくわく。[r]わくわく。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+大丈夫？　今度は巨大ウツボとかに襲われたりしない？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠カイニス
+そん時はウツボを仕留めるだけだろーが。[r]行くぞ！
+[k]
+
+[messageOff]
+
+[bgmStop BGM_MAP_2 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[scene 10000]
+
+[se ad177]
+
+[wt 2.0]
+
+[seStop ad177]
+
+[scene 134000]
+
+[se ad416]
+[wt 1.5]
+[seStop ad416 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[bgm BGM_SENGOKU_1 0.1]
+＠マシュ
+横穴を進んでいったら、こんな場所に……
+[k]
+
+＠マシュ
+どうやらここには空気があるみたいですね。[r]信じられません。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+そんなことありえない、ってところに[r]一番大事なタネを隠すのがマジックの真骨頂。
+[k]
+
+[charaFace C 0]
+＠シャルロット・コルデー
+海賊さんのお宝の隠し場所としては、うん、[r]ありなんじゃないかな？　きっとここですよ！
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 24]
+[charaFadein B 0.1 1]
+
+[se ade357]
+[wt 1.0]
+
+[seStop ade357]
+
+＠ダ・ヴィンチ
+空間走査の装置で、周辺をサーチ[line 3]
+[k]
+
+
+[charaFace B 0]
+＠ダ・ヴィンチ
+成分分析……完了、と。[r]うん、この場所の空気は綺麗だ。量も充分。
+[k]
+
+＠ダ・ヴィンチ
+セイレーンボンベは停止しておいて。[r]今のうちにメンテナンスしておきたいし。
+[k]
+
+[charaFace B 7]
+＠ダ・ヴィンチ
+海底を歩くのにも体力を消耗したと思うから、[r]ひとまずここで小休止だ。
+[k]
+
+[messageOff]
+
+[cueSe SE_21 21_ade592]
+[wt 0.6]
+
+[charaFace B 30]
+＠ダ・ヴィンチ
+ふふ。[r]この子もおやつが欲しいって言ってるみたい？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+勘で言っているだろう、それ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+えへへ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠カイニス
+オレは周囲の様子を探る。[r]テメェらは休んで、体力を回復させとけ。
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_SENGOKU_1 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 1.5]
+
+[se ade24]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+
+[seStop ade24 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_147 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+海底洞窟で焚火か。
+[k]
+
+＠ゴルドルフ
+幸い、換気は問題ないようだし、[r]貴重な体験と考えることにしよう。
+[k]
+
+
+？1：あったまるー
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠マシュ
+マスター、空腹は大丈夫ですか？[r]携帯食料がありますよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+お湯も沸かしておきますね。
+[k]
+
+[charaFace C 6]
+＠シャルロット・コルデー
+見てください、このハットの中から……[r]じゃじゃーん！
+[k]
+
+＠シャルロット・コルデー
+インスタントですけど、コーヒーが！
+[k]
+
+？1：両方いただきます！
+？2：まったり……
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+フ。味気ない携帯食料も、インスタントコーヒーも。
+[k]
+
+
+＠ゴルドルフ
+焚火を見つめて食事をとることで、[r]何か普段とは違うように感じられるものだ。
+[k]
+
+＠ゴルドルフ
+そう、これこそ真の大人にのみ許された妙味、[r]日本で言うところのワビサビというもので……
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 -75,0]
+
+[wt 0.5]
+
+[charaMove F -65,0 0.3]
+
+[cueSe SE_21 21_ade597]
+[se ade24]
+[seVolume ade24 0 0]
+[seVolume ade24 0.2 0.4]
+
+[wt 1.0]
+
+[seStop 21_ade597 0.5]
+[seStop ade24 0.5]
+[wt 0.5]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+って何だねそれ！？[r]やけに即物的なイイ音と匂いがしているのだが！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 -75,0]
+＠沖田オルタ
+えっ？　いえ、みんなタコはあまり興味が[r]なさそうだったので、それならばとタコ焼きを……。
+[k]
+
+[charaFace F 0]
+＠沖田オルタ
+あの丸くて美味しいあれはさすがに無理なので、[r]醤油を塗って串に刺して焼くだけですけど。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+ううむ、いい匂いがする。だが、その……アレだ。[r]材料はさっきの海魔モドキなんだろう？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 -75,0]
+＠沖田オルタ
+でも成分的にはタコらしいので、それはつまりタコ、[r]タコなのでタコですよね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+その先入観のない素直さが羨ましい……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 15]
+[charaFadein G 0.1 176,0]
+＠煉獄
+私も羨ましい。
+[k]
+
+[messageOff]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 -75,0]
+
+[cueSe SE_21 21_ade597]
+[se ade24]
+[seVolume ade24 0 0]
+[seVolume ade24 0.2 0.4]
+
+[wt 1.0]
+
+[seStop 21_ade597 1.0]
+[seStop ade24 1.0]
+
+＠沖田オルタ
+うーん、まだかな？　もういいですかね？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+[charaMoveReturn E -10,0 0.2]
+＠ゴルドルフ
+えーい、貸してみたまえ。焚火での串焼きは[r]簡単そうに見えて意外と奥深いものだ。
+[k]
+
+[charaFace E 18]
+＠ゴルドルフ
+材料に対する不安はあるが、それはそれとして[r]料理には一家言ある私であった。
+[k]
+
+[messageOff]
+
+[charaFace E 10]
+
+[cueSe SE_21 21_ade597]
+[se ade24]
+[seVolume ade24 0 0]
+[seVolume ade24 0.2 0.4]
+
+[wt 0.5]
+
+[charaMove E -50,0 0.3]
+[wt 1.0]
+[charaMove E 0,0 0.3]
+[wt 1.0]
+[charaMove E 50,0 0.3]
+[seStop 21_ade597 1.0]
+[seStop ade24 1.0]
+[wt 1.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 -75,0]
+＠沖田オルタ
+凄いです。あまりに慣れた手つき！[r]さてはタコ焼きの英霊ですか？　ですよね！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+英霊ではない。
+[k]
+
+[charaFace E 11]
+＠ゴルドルフ
+フフ。とは言え私は優秀なエリートなので、[r]たいていのことはプロ級に出来てしまうのだよ。
+[k]
+
+[bgmStop BGM_EVENT_147 1.0]
+
+[charaFace E 1]
+＠ゴルドルフ
+……そら、できたぞ。完璧な焼き加減だ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 -75,0]
+＠沖田オルタ
+はい煉獄、お先にどうぞ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 176,0]
+＠煉獄
+なんでこっち！？[r]もしかして毒見？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 -75,0]
+＠沖田オルタ
+そんなつもりではないですよ……。[r]ただ私は焼きたてを煉獄に食べてほしくて。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 176,0]
+＠煉獄
+あ、すいません、ホント。[r]やめて、なんかごめんね。
+[k]
+
+[messageOff]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad60]
+[wt 1.0]
+
+[seStop ad60 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 1.0]
+
+＠カイニス
+周囲に異常なし！
+[k]
+
+[charaFace D 17]
+＠カイニス
+とはいえ、あんま騒がしくしてっと[r]何かを呼び寄せちまうかもしんねーぞ？
+[k]
+
+[charaFace D 0]
+＠カイニス
+って、なんだこの匂い。
+[k]
+
+＠カイニス
+アンタの料理か？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+た、食べるかね？　まだ味見もしておらんから、[r]味の保証はできんのだが[line 3]
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.5]
+
+[charaMoveReturn D 0,-5 0.3]
+[se adm27]
+
+[wt 0.5]
+
+[charaFace D 24]
+＠カイニス
+[f large]あ[messageShake 0.05 3 3 0.3]っつっ！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+ああっ、一口で食べたりするから！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠マシュ
+カイニスさん、はい、お水です！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+[se ad217]
+＠カイニス
+……んぐ。[wt 0.5][seStop ad217]
+[k]
+
+[charaFace D 7]
+＠カイニス
+異様に熱かったが味はなかなかだ。[r]悪くない。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+美味しかったの……かね？
+[k]
+
+[charaFace E 1]
+＠ゴルドルフ
+それはよかった。[r]いやほんとに。
+[k]
+
+？1：じゃあ食べてみようかな……
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠マシュ
+ま、マスターがチャレンジするのなら、[r]わたしもお供します！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+いくしかないですね！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠カイニス
+マスターは冷ましてから喰えよ、舌が溶ける。[r]いやマジで。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+え、どういう熱さだったのそれ！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 5]
+[charaDepth G 6]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠沖田オルタ
+ところでタコってたまにおでんにも入っていますよね。
+[k]
+
+[charaFace F 7]
+＠沖田オルタ
+つまり逆にタコがあればおでんが作れるのでは？[r]お願いしていいです？
+[k]
+
+[charaFace G 15]
+
+＠煉獄
+その理屈はおかしいだろ。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+おでんの命はダシだろう。[r]さすがに材料が足りんよ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+＠カイニス
+ハハッ！[r]じゃ、増やせばいいンじゃねえか材料。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+ん？　いったいどういう意味[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠カイニス
+そら、おいでなすった。[r]丁度いいタイミングじゃねえか！
+[k]
+
+[messageOff]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[se ad416]
+[charaFace H 0]
+[charaFadeinFSR H 0.4 256,-100]
+[charaMoveFSR H 256,0 0.2]
+
+[wt 0.4]
+[seStop ad416 0.5]
+
+[se ad416]
+[charaFace I 0]
+[charaFadeinFSL I 0.4 -256,-100]
+[charaMoveFSL I -256,0 0.2]
+
+[wt 1.0]
+
+[seStop ad416 0.8]
+[wt 0.8]
+
+[charaFadeout I 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaTalk B]
+[charaFace B 22]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+また出たー！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠マシュ
+二足歩行するサメです！　ここにも棲息……棲息……？[r]していたのでしょうか！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.1 1]
+
+＠シャルロット・コルデー
+マジックで使う調教した鳩みたいなもの[r]なんですかね、このサメ兵士さん……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠カイニス
+意味はわかんねえが、とにかくぶっ潰すだけだ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaFace G 13]
+[charaFadein G 0.1 1]
+
+＠沖田オルタ
+サメっておでんのダシになりますかね？
+[k]
+
+[charaFace G 5]
+
+＠煉獄
+したくないです。
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

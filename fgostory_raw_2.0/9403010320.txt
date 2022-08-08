@@ -1,0 +1,395 @@
+
+
+＄94-03-01-03-2-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 3034001 1 茨木童子]
+[charaSet B 6029001 1 Assassin Paraiso]
+[charaSet C 99502600 1 玛修]
+[charaSet D 1098116710 1 鞭之鬼]
+[charaSet E 1098157600 1 护法少女]
+[charaSet F 1098157700 1 小动物]
+[charaSet G 5040000 1 谜之护法少女（剪影）]
+[charaFilter G silhouette 19B7B0FF]
+[charaSet H 98115000 1 特效用]
+
+[scene 10000]
+
+[charaTalk off]
+[charaDepth E 10]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_sakura01]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[wt 0.5]
+
+[charaDepth E 5]
+[charaDepth F 10]
+[charaFace E 0]
+[charaFace F 0]
+[charaFadein E 1.0 1]
+[charaFadein F 1.0 0,0]
+[wt 1.0]
+
+[charaFadeout G 0.4]
+[charaTalk on]
+
+[bgm BGM_HALLOWEEN_2 0.1]
+
+
+＠护法少女
+[line 3]上天允许没什么关系吧？
+[k]
+
+＠护法少女
+[line 3]大地允许嘛，也就这么回事吧？[r][line 3]人类允许根本无关紧要。
+[k]
+
+＠护法少女
+但是呀。[r]鬼是否允许可就取决于鬼了。
+[k]
+
+＠小动物
+哼。
+[k]
+
+＠小动物
+你爱怎么做就怎么做吧。[r]我只会在一旁看着。
+[k]
+
+＠护法少女
+[line 3]妾身就是护法，护法乃是妾身[line 3]
+[k]
+
+[messageOff]
+
+[scene 27600 0.5]
+[charaPut H 2000,2000]
+[charaEffectStop H bit_talk_sakura01]
+[charaFace E 7]
+[effect bit_talk_41]
+[cameraMove 0.2 0,0 1.2]
+[se ade211]
+
+＠护法少女
+护法少女，再次前来造访！
+[k]
+
+[messageOff]
+[se ade217]
+[effect bit_talk_magic_girl_light]
+[wt 3.0]
+
+[wipeout rectangleStripLeftToRight 0.7 1]
+[bgmStop BGM_HALLOWEEN_2 0.7]
+[wait wipe]
+
+[cameraHome 0.1]
+[charaPut H 1200,1200]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[effectStop bit_talk_41]
+[wt 0.5]
+
+[charaSet G 98115000 1 特效用2]
+
+[charaEffect H bit_talk_10_LowLevel]
+
+[scene 64700]
+
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠鞭之鬼
+……[r]……
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaFace D 4]
+
+＠鞭之鬼
+………………什么造访，哎？　说了两次？
+[k]
+
+？1：说了两次。
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+噢噢噢噢噢！[r]护法少女·鬼救阿！
+[k]
+
+[charaFace A 1]
+
+＠茨木童子
+没想到居然能再次见到！[r]而重要的事就该说两遍！　这是常理，嗯！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：这大概是兼用卡吧。
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠玛修
+前辈？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：[servantName 602900:Assassin Paraiso:望月千代女]
+主公，主公。[r]兼用卡究竟是指什么啊？
+[k]
+
+＠B：[servantName 602900:Assassin Paraiso:望月千代女]
+啊啊，难道是指那位护法阁下[r]同样的话说了两遍吗。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠鞭之鬼
+果然说了两遍吧？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk E]
+[charaFace E 0]
+[charaFace F 0]
+[charaFadein E 0.1 1]
+[charaFadein F 0.1 1]
+[wt 0.5]
+[se ade126]
+[charaFace E 7]
+[charaPut G 100,50]
+[charaDepth G 10]
+[charaEffect G bit_talk_rainbow_star]
+[wt 1.5]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+哇。
+[k]
+
+[charaSet G 10008001 1 志度内]
+[charaFace A 3]
+
+＠茨木童子
+看……看到了没有。刚才看到了吗，御主！[r]那毫无疑问是对吾的福利！
+[k]
+
+[charaFace A 1]
+
+＠茨木童子
+咯咯，咯哈哈哈哈哈哈热血沸腾！　热血沸腾啊！[r]如字面意思的血都要沸腾了！
+[k]
+
+＠茨木童子
+仿佛全身都在燃烧。居然能令吾如此亢奋，[r]不愧是护法之鬼。酒吞说得一点也没错！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠玛修
+呃，尽管不清楚那个媚眼是向[r]茨木童子小姐抛来的，还是向前辈抛来的……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠志度内
+嗯嗯。这都不重要啦。
+[k]
+
+[charaFace G 0]
+
+＠志度内
+护法之鬼，既然你来了，说明你会帮助我们吧？[r]我可以这样期待吗？
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[bgmStop BGM_EVENT_7 0.3]
+[wt 0.5]
+
+[bgm BGM_HALLOWEEN_2 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFace F 0]
+[charaFadein E 0.1 1]
+[charaFadein F 0.1 0,0]
+
+＠护法少女
+这个嘛，很难说呐？
+[k]
+
+＠护法少女
+如果你问妾身是不是自己人，[r]而妾身回答没错，是否有些无趣呢。
+[k]
+
+＠小动物
+敌方，己方。[r]无聊的区别。哼。
+[k]
+
+[charaFace E 0]
+
+＠护法少女
+算啦，算啦，波奇。不要说这种坏心眼的话啦。
+[k]
+
+[charaFace F 5]
+
+＠小动物
+……我是白。
+[k]
+
+＠护法少女
+总之就当是谜之护法少女光临，[r]尽管不明原因，但总之加入搜索黄金的队伍[line 3]
+[k]
+
+[charaFace E 1]
+
+＠护法少女
+麻烦各位这么理解好啦。
+[k]
+
+？1：明白了。
+？2：那我们一起阻止黄金梅芙吧！
+
+？！
+
+[charaFace E 0]
+
+＠护法少女
+[line 3]鬼，即为鬼。就是这样。
+[k]
+
+＠护法少女
+[line 3]说是护法，终究还是个鬼。[r][line 3]可能会击溃你，融化你。
+[k]
+
+[charaFace E 6]
+
+＠护法少女
+还请见谅哟？[r]游乐设施经理小姐。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_HALLOWEEN_2 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠鞭之鬼
+啊哈哈哈哈哈哈！[r]好啊，有本事就试试看啊！
+[k]
+
+[charaFace D 2]
+
+＠鞭之鬼
+让你见识一下游乐设施经理……[r]不，是见识一下我黄金从者的力量！
+[k]
+
+[messageOff]
+[charaMoveReturn D 0,-5 0.2]
+[cueSe Servants_402900 bac728]
+[wt 1.0]
+[charaFadeout D 0.1]
+[wt 0.1]
+[se ad57]
+[shake 0.05 0 3 0.3]
+[wt 1.5]
+[shake 0.05 0 3 0.3]
+[wt 1.0]
+[seStop ad57 0.5]
+[se ad17]
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠B：[servantName 602900:Assassin Paraiso:望月千代女]
+和大型鬼一起来了！[r]主公！
+[k]
+
+？1：战斗开始！
+？2：上了哦，黄金从者梅芙！！
+
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

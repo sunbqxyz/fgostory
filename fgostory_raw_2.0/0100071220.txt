@@ -1,0 +1,415 @@
+
+
+
+＄01-00-07-12-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 3028000 1 豹人]
+[charaSet B 2020001 1 伊什塔尔]
+[charaSet C 3027000 1 安娜]
+[charaSet D 98003000 1 Dr.罗曼]
+[charaSet E 98106200 1 梅林]
+[charaSet F 8001002 1 玛修]
+[charaSet G 98006000 1 半豹人]
+[charaSet H 3028000 1 豹人B]
+
+[scene 30400]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[se bac19]
+[wait se bac19]
+
+[charaEffect A bit_talk_13]
+[wt 0.1]
+[charaFace A 6]
+[charaShake A 0.05 3 3 0.6]
+[se bac18]
+[wait se bac18]
+
+＠豹人
+怎么，才这种程度吗喵哈哈！[r]不痛！　超级严重不痛！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+＠伊什塔尔
+呜哇，果然。她狠狠吃了一下攻击耶。[r]虽然是受你们之托，我才会射击的，但不要紧吗？
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace B 9]
+[charaFadein B 0.1 0]
+[charaFace C 0]
+[charaFadein C 0.1 2]
+＠安娜
+当然。她八成到死都不会反省，[r]不彻底杀她一次可不行。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠豹人
+我说你！[r]从者被杀也会死啊！？
+[k]
+
+＠豹人
+同样身为落单从者，[r]你不可能无法理解我的心情喵！
+[k]
+
+＠豹人
+绝无仅有的奇迹召唤，竟然会没有御主。[r]为了追逐转正梦想而奔走的茶虎猫耳豹人[line 3]
+[k]
+
+＠豹人
+虽然不是女神，但我好歹也是[#伟灵:Nahual]之神啊！[r]至少该放尊重一点吧喵！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+唔哎！？　那家伙原来是落单从者吗！？[r]还以为是魁札尔·科亚特尔的手下呢……
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠豹人
+才不是什么手下！[r]我和库库尔只是一场孽缘而已！
+[k]
+
+＠豹人
+因为没有御主，[r]所以姑且先从库库尔那边刮一些油水而已喵！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠梅林
+原来如此，只是个搞敲诈的吗！
+[k]
+
+＠梅林
+[%1]！[r]伙伴总是越多越好！
+[k]
+
+＠梅林
+言行姑且不论，但那个从者战斗力也十分了得！[r]剩下的你应该懂吧！？
+[k]
+
+？1：[line 3]明白了！
+？2：……但我没什么自信啊……
+
+？！
+
+[charaFadeout E 0.1]
+
+[charaTalk off]
+[charaDepth A 1]
+[charaDepth H 0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠豹人
+你们说的我都听到了，因为我有四只耳朵啊！[r]不管什么声音都能完美Cat！
+[k]
+
+＠豹人
+但那种美好的可能性！[r]是没有的！　我可以断言！
+[k]
+
+＠豹人
+我乃是高傲的美洲豹，[r]所以绝不会屈居人下……！
+[k]
+
+[charaFace A 0]
+＠豹人
+但我好歹给你们一个机会。[r]我就先听听你们的说辞吧，有什么要说的？
+[k]
+
+？1：虽然这话有些为时过晚，但真是位绝世美女啊……！
+？2：密林真是耀眼夺目，难道这里有美丽的野兽？
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[wt 0.4]
+[wt 0.3]
+[charaFadein H 0 1]
+[charaChange A 3028000 1 fade 0.4]
+[wt 2.0]
+
+[bgm BGM_EVENT_7 0.1]
+[charaFace A 2]
+＠豹人
+好我加入啦，[r]从现在开始，我就是你们的同伴了喵！
+[k]
+
+[charaFace A 3]
+＠豹人
+我懂我懂，是打倒魁札尔·科亚特尔吧？[r]这种小事包在姐姐身上吧！
+[k]
+
+＠豹人
+我会将库库尔生活起居等所有的一切[r]像Tiger一样缜密地告诉你！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout H 0.1]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠玛修
+交涉成功了，御主！
+[k]
+
+＠玛修
+豹人小姐以惊人的速度成为我们的伙伴了！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout F 0.1]
+[scene 30400]
+[wt 2.0]
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+＠豹人
+各位好！　于是乎我乃是来东京搞房屋改建的豹人是也！
+[k]
+
+[charaFace A 3]
+＠豹人
+从今往后就要请[%1]多关照了！[r]各位，请多指教啦☆
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠安娜
+……这是[%1]下的最糟的一步棋……[r]要不是梅林多嘴……早就宰了你……
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk F]
+[charaFace A 0]
+[charaFadein A 0.1 0]
+[charaFace F 1]
+[charaFadein F 0.1 2]
+＠玛修
+请多指教啦，豹人小姐。[r]我是前辈的正式从者，玛修·基列莱特。
+[k]
+
+[charaFace A 5]
+＠豹人
+哦，哦哦。虽然面带微笑向我请求握手，[r]但我觉得这孩子应该是个很可怕的人！
+[k]
+
+[charaFace A 2]
+＠豹人
+请多指教啦，玛修亲！[r]还有那位总觉得在哪里见过的萝莉！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.4 1]
+＠伊什塔尔
+……又拉了个唠叨的家伙入伙了……
+[k]
+
+＠伊什塔尔
+算了，毕竟连临时契约都不算，[r]到真正危急的时候，一定会抛下我们不管的……
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠梅林
+没事啦，她作为线人还是非常可靠的。[r]毕竟这密林相当于豹人的后院嘛。
+[k]
+
+＠梅林
+从乌尔到埃里都的路就拜托她带路吧。[r]另外路上还可以聊聊关于魁札尔·科亚特尔的事呢。
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠豹人
+那种事就交给我吧！[r]是到埃里都吧，就让我超特快为你们带路吧！
+[k]
+
+[bgmStop BGM_EVENT_2 1.0]
+[charaSet E 98006000 1 半豹人B]
+[charaSet H 98006000 1 半豹人C]
+＠G：？？？
+叽叽叽。可不能　如你所愿。[r]竟然　胆敢背叛　豹人！
+[k]
+
+[charaFadeout A 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr.罗曼
+！　大量敌对反应来袭！[r]各位，你们被包围了！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.2]
+[charaFadein E 0.4 0]
+[charaFadein H 0.4 2]
+＠半豹人
+你忘记　丛林　的　尊严　了吗！[r]人类，观光客！　人类，劳动力！
+[k]
+
+＠半豹人
+人类，ATM！　我们　要当　导游！[r]这样教我们的，是你！　但你却　背叛了！
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[charaFadeout H 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠豹人
+哎呀☆[r]是那些被花言巧语欺骗的苏美尔产的兽人们呀。
+[k]
+
+[charaFace A 0]
+＠豹人
+但是抱歉啦，我比大家早一步找到工作了。[r]因为我找到新的御主候补。
+[k]
+
+＠豹人
+……综上所述，
+[k]
+
+[charaChange A 3028002 2 fade 0.7]
+[se ad7]
+[se ad78]
+[wt 0.7]
+＠豹人
+你们这群混蛋，我都说过多少遍[r]让你们别对正经人出手了，难道都忘了吗！？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk F]
+[charaFace B 16]
+[charaFadein B 0.1 0]
+[charaFace F 6]
+[charaFadein F 0.1 2]
+＠玛修
+哎，哎哎[line 3]！？
+[k]
+
+[charaFace B 2]
+＠伊什塔尔
+豹村老师[line 3]！？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout F 0.1]
+
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+不不，为什么你那毛皮底下[r]穿着黑手党风的现代服装啊[line 3]！？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠安娜
+你这[#粗暴:流亡]从者……！[r]给我节制点！
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[charaFadein E 0.1 0]
+[charaFadein H 0.1 2]
+＠半豹人
+大……大姐头……！[r]但是　您却　堕落了！　干掉她！
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[charaFadeout H 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠豹人
+嘁……没办法。这就是人在江湖身不由己吗……[r]竟然要以马赫之速收拾自己过去的小弟……
+[k]
+
+＠豹人
+好啊，放马过来吧？[r]这也是让[%1]见识一下老娘实力的好机会。
+[k]
+
+[charaFace A 2]
+＠豹人
+老娘的棍棒可狠了。[r]你们几个就做好明天咽不下鳄鱼肉的思想准备吧！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

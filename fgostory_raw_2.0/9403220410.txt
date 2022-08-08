@@ -1,0 +1,400 @@
+
+
+＄94-03-22-04-1-0
+[soundStopAll]
+
+
+[charaSet A 6001001 1 小次郎]
+[charaSet B 1037000 1 红阎魔]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 1098162000 1 玛修]
+[charaSet E 1098161000 1 麻雀]
+[charaSet J 5009000 1 特效用dummy]
+
+[charaFilter A silhouette 00000080]
+
+[fadein black 1.5]
+[wait fade]
+
+[scene 69500]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[wt 0.4]
+[se ad452]
+[seVolume ad452 0 0.01]
+[seVolume ad452 2.0 1.0]
+[wt 1.5]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.7 1]
+[wt 0.5]
+[seStop ad452 0.1]
+
+＠A：？？？
+哦。本来觉得偶尔也该挥棒锻炼一下，[r]就朝着熟悉的山中进发，没想到居然发现了温泉旅馆。
+[k]
+
+＠A：？？？
+看来是不知不觉越过了界线呢。[r]所以说，究竟受到了什么样的缘分引导呢？
+[k]
+
+＠A：？？？
+该不会过了这座桥就无法回头了吧，[r]神隐什么的都是很少在现实中发生的传说。
+[k]
+
+＠A：？？？
+等待在下的究竟是神是鬼[line 3][r]不管是什么，都足以用来做下酒小菜了。
+[k]
+
+[messageOff]
+[se ad452]
+[charaFadeout A 0.4]
+[wt 0.2]
+[fadeout black 1.5]
+[wt 1.0]
+[seStop ad452 1.0]
+[wait fade]
+[charaFilter A normal FFFFFFFF]
+[scene 69600]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠红阎魔
+[%1]，[r]你们竟然修好了那间客房啾！？
+[k]
+
+？1：是的啾。
+
+[charaFace B 7]
+
+＠红阎魔
+修好了啾……尽管我听玉藻说了啾，[r]但没想到你们动作会这么快啾……
+[k]
+
+？2：很抱歉擅自修缮了房间……
+
+[charaFace B 1]
+
+＠红阎魔
+不对啾，你们无需道歉啾。[r]我只是对你们的勤劳感到惊讶啾。
+[k]
+
+[charaFace B 6]
+
+＠红阎魔
+只靠我们根本忙不过来啾。[r]感谢你们帮忙修缮客房啾！
+[k]
+
+？！
+
+[charaFace B 1]
+
+＠红阎魔
+看来，我有必须改变一下我的想法了啾。
+[k]
+
+＠红阎魔
+毕竟增加客房等同于增加客源啾。
+[k]
+
+[charaTalk D]
+[se ade243]
+[wt 1.0]
+[seStop ade243 0.6]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠芙芙
+芙？
+[k]
+
+＠？？？
+[charaTalk A]
+打扰了。请问这里是温泉旅馆吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠玛修
+有客人来了！[r]这么快就有客人光临了哦，前辈！
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.8 0.5]
+[bgmStop BGM_EVENT_7 1.0]
+[wait wipe]
+[charaFadeout D 0.1]
+[wt 0.5]
+[wipein rightToLeft 0.8 0.5]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_66 0.1]
+
+＠红阎魔
+说的没错啾！[r]这位客人，欢迎您远道而来！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠小次郎
+[line 6]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+[charaFace A 5]
+[charaFadein A 0.1 2]
+
+＠红阎魔
+这位客人？　您怎么了啾？[r]话说，您是哪位神明大人啾？
+[k]
+
+[charaFace B 5]
+
+＠红阎魔
+……唔唔。[r]您的表情充满了血腥味啾。
+[k]
+
+＠红阎魔
+这并不是在对客人您挑刺啾，[r]毕竟保护其他客人的安全也是我的职责。
+[k]
+
+＠红阎魔
+这位旅客，这里是治愈身心的温泉，[r]若想要洗净身上污秽，还请另寻他处啾。
+[k]
+
+[charaFace A 4]
+
+＠小次郎
+不不，你误会在下了。[r]在下小次郎，生前不曾与人死斗。
+[k]
+
+＠小次郎
+在下只是个误打误撞成为从者的[r]微不足道的山民罢了。
+[k]
+
+＠小次郎
+既无意伤害他人，[r]也没有紧追不放的宿敌。
+[k]
+
+[charaFace A 0]
+
+＠小次郎
+在下只是顺其自然地来到了这里。[r]正所谓，萍水相逢即是缘。
+[k]
+
+＠小次郎
+这里闲寂幽雅的氛围着实不错。[r]请问有空房间吗？
+[k]
+
+[charaFace B 0]
+
+＠红阎魔
+葱者……也就是[%1]曾提及的英灵使魔？
+[k]
+
+＠小次郎
+没错。嗯？　老板娘，[r]你刚才提到[%1]了吧？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠玛修
+小次郎先生！[r]原来光临的是小次郎先生啊！
+[k]
+
+？1：你好！
+？2：欢迎！
+
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaFace A 1]
+
+＠小次郎
+原来如此。看来在下[r]并非与温泉旅馆有缘，而是与人有缘啊。
+[k]
+
+＠小次郎
+具体的情况稍后再说吧。[r]老板娘，劳烦带我去房间吧。
+[k]
+
+＠小次郎
+在下不想在熟人面前露出疲惫的样子。[r]得先洗去旅途风尘才行，哈哈哈。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+
+＠麻雀
+啾[charaMoveReturn E -256,10 0.3]啾，给客人带路啾！[wt 0.8][r][charaMoveReturn E -256,10 0.3]行李就交给我啾！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 0]
+[charaFace D 13]
+[charaFadein D 0.1 2]
+
+＠红阎魔
+……真是个可疑的男人啾。[r]他是各位的熟人吗？
+[k]
+
+＠玛修
+是的。既然他认识我们，[r]那应该是从迦勒底来的小次郎先生了。
+[k]
+
+＠红阎魔
+是吗……虽然我不知道该怎么说啾，[r]但那个男人特别让人火大啾……
+[k]
+
+＠红阎魔
+武藏大人也好，刚才那个男人也好，[r]流浪武士总是散发着麻烦的气味啾。
+[k]
+
+[charaFace D 6]
+
+＠玛修
+[line 3]哎？
+[k]
+
+？1：武藏莫非指的是那个宫本武藏！？
+？2：武藏亲在这里！？
+
+？！
+
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠红阎魔
+不[charaMoveReturn B 0,15 0.2]……不在啾！　她曾作为客人来过并引发了一场骚乱，[r]从此我就禁止她进入这里了啾！
+[k]
+
+[charaFace B 10]
+
+＠红阎魔
+……不过在某种意义上，[r]也可以说她还在这里啾……
+[k]
+
+[charaFace B 9]
+
+＠红阎魔
+总而言之，我会把那个冒牌武士[r]当做客人来招待的，放心啾。
+[k]
+
+[charaFace B 0]
+
+＠红阎魔
+毕竟玉藻她们拜托过我了啾。[r]我是不会妨碍各位啾。
+[k]
+
+[charaFace B 1]
+
+＠红阎魔
+你们修缮阎魔亭也是帮了我的大忙啾。
+[k]
+
+＠红阎魔
+所以放手去干啾。
+[k]
+
+＠红阎魔
+只要你们的所作所为是正确的，[r]阎魔大人肯定也会允许啾。
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[se ade247]
+[wt 1.5]
+[seStop ade247 0.3]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+
+＠玛修
+太好了，前辈。[r]我们拿到改装阎魔亭的正式许可了！
+[k]
+
+＠玛修
+只要按这个势头继续完善设施，[r]集满“谢意”或许也并非不可能！
+[k]
+
+？1：好嘞～！
+？2：一鼓作气，振兴阎魔亭吧～！
+
+？！
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_66 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

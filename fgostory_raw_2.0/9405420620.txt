@@ -1,0 +1,1306 @@
+
+
+
+＄94-05-42-06-2-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+
+[charaSet B 7033002 1 阿周那·Alter]
+[charaSet C 4006001 1 乔尔乔斯]
+[charaSet D 1048000 1 圣诞迦尔纳]
+[charaSet E 99502600 1 玛修]
+[charaSet F 5038000 1 齐格]
+[charaSet G 3005001 1 伊丽莎白]
+[charaSet H 3046001 1 弗栗多]
+
+[sceneSet S 44101 1]
+[charaScale S 1.01]
+
+[charaSet T 5009040 1 特效用dummy]
+
+[imageSet U back10000_fs 1]
+[charaScale U 1.5]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[charaSet A 1098124510 1 达·芬奇]
+[branch lblConf]
+
+[label lblNotClear]
+[charaSet A 98111500 1 达·芬奇]
+[label lblConf]
+
+
+[charaPutFSR T 1200,2000]
+[charaEffect T bit_talk_10_LowLevel]
+
+[charaDepth S 1]
+
+[scene 44101]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠圣诞迦尔纳
+没想到河川竟然纵向裂开了。真是千钧一发。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 31]
+[charaFadein A 0.1 1]
+＠达·芬奇
+和Lambdaryllis那种冰浪不一样。
+[k]
+
+＠达·芬奇
+从上游传来了某种类似波动的存在，[r]所以冰冻的河川才会瞬间裂开。
+[k]
+
+[charaFace A 34]
+＠达·芬奇
+嗯，为了接下来能够提前发现，[r]我得追加参数才行。
+[k]
+
+[branch lblConf2]
+
+[label lblNotClear2]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-90]
+＠达·芬奇
+和Lambdaryllis那种冰浪不一样。
+[k]
+
+＠达·芬奇
+从上游传来了某种类似波动的存在，[r]所以冰冻的河川才会瞬间裂开。
+[k]
+
+＠达·芬奇
+嗯，为了接下来能够提前发现，[r]我得追加参数才行。
+[k]
+
+[label lblConf2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠玛修
+御主，大家，没事吧？
+[k]
+
+？1：向侧面勉强躲过了，没关系！
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠阿周那·Alter
+还没完。回避。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[se ad14]
+[seVolume ad14 0 0]
+
+[shake 0.05 2 2 0]
+
+[seVolume ad14 0.8 1.0]
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.9]
+
+
+[se ade536]
+[seVolume ade536 0 0]
+[seVolume ade536 0.6 1.0]
+[effect bit_talk_ice_crack_v]
+[wt 0.1]
+[se ad641]
+[se ad676]
+[seVolume ad676 0 0.1]
+[wt 0.2]
+[se ad641]
+[se ad676]
+[seVolume ad676 0 0.2]
+[wt 0.25]
+[se ad641]
+[se ad676]
+[seVolume ad676 0 0.4]
+[se ade187]
+[seVolume ade187 0 0.3]
+[wt 0.25]
+[se ad641]
+[se ad676]
+[seVolume ad676 0 0.6]
+[se ade187]
+[seVolume ade187 0 0.6]
+[wt 0.25]
+[se ad641]
+[se ad676]
+[seVolume ad676 0 1.0]
+[se ade187]
+[seVolume ade187 0 1.0]
+[seStop ade536 1.0]
+[wt 0.4]
+
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[effectDestroy bit_talk_ice_crack_v]
+[pictureFrame]
+
+[charaFadein S 0.1 0,-200]
+[wt 0.5]
+
+[shake 0.05 1 1 0]
+
+[seVolume ad14 0.4 0.2]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠乔尔乔斯
+这次是从偏左侧来的！[r]向右侧避让！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[se ad7]
+[charaMoveFSL S -99,-240 0.3]
+[charaMoveScale S 1.3 0.3]
+[wt 0.5]
+
+[shake 0.05 2 2 0]
+[seVolume ad14 0.8 1.0]
+[wt 0.5]
+
+[se ade536]
+[seVolume ade536 0 0]
+[seVolume ade536 0.6 1.0]
+[effect bit_talk_ice_crack_v -850,0]
+[wt 0.1]
+[se ad641]
+[se ad676]
+[seVolume ad676 0 0.1]
+[wt 0.2]
+[se ad641]
+[se ad676]
+[seVolume ad676 0 0.2]
+[wt 0.25]
+[se ad641]
+[se ad676]
+[seVolume ad676 0 0.4]
+[se ade187]
+[seVolume ade187 0 0.3]
+[wt 0.25]
+[se ad641]
+[se ad676]
+[seVolume ad676 0 0.6]
+[se ade187]
+[seVolume ade187 0 0.6]
+[wt 0.25]
+[se ad641]
+[se ad676]
+[seVolume ad676 0 1.0]
+[se ade187]
+[seVolume ade187 0 1.0]
+[seStop ade536 1.8]
+[seStop ad14 1.8]
+[wt 0.45]
+[se ad641]
+[seVolume ad641 0 0.4]
+[se ad676]
+[seVolume ad676 0 0.3]
+[se ade187]
+[seVolume ade187 0 0.2]
+[wt 0.55]
+[se ad641]
+[seVolume ad641 0 0.1]
+[se ad676]
+[seVolume ad676 0 0.1]
+[se ade187]
+[seVolume ade187 0 0.1]
+[wt 0.8]
+
+[effectDestroy bit_talk_ice_crack_v]
+[wt 1.0]
+[shakeStop]
+
+[charaMove S 0,-200 0.5]
+[charaMoveScale S 1.01 0.5]
+[wt 0.7]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠乔尔乔斯
+一旦被窜来的那种开裂吞没，
+[k]
+
+＠乔尔乔斯
+肯定会落到冰面下，[r]并被关起来吧。很致命。
+[k]
+
+＠乔尔乔斯
+河川的裂缝本身倒是很快就会合起……虽然这点[r]也很奇怪，但重新冻起来的地方确实能成为落脚点。
+[k]
+
+＠乔尔乔斯
+只能在这狭窄的河川中[r]一边回避被直接击中，一边前进了呢。
+[k]
+
+？1：感觉我们的移动有点像[#STG:射击游戏]呢……
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠圣诞迦尔纳
+我在背后看伽内什神玩过。[r]确实对训练动态视力很有帮助。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠阿周那·Alter
+可能导致御主的死，[r]攻击，是恶……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠齐格
+慢着。凭你的力量确实可以正面迎击，[r]但你攻击的余波无疑会让河川进一步开裂。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠阿周那·Alter
+原来如此。但如果在此毁灭，[r]御主就无法继续前进了……
+[k]
+
+[charaFace B 0]
+＠阿周那·Alter
+我明白了。现在……就先专注守护善吧。[r]必须斩断，这根基才行……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠齐格
+塔拉斯克在场时，[r]是通过跳跃回避威胁的吧？
+[k]
+
+＠齐格
+如果我能更轻松地变成龙的状态，[r]或许就能通过载着大家飞起来搬运了吧。
+[k]
+
+＠齐格
+但维持那个宝具实在是太难了……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠乔尔乔斯
+没关系啦。只要能避开就可以了。[r]总不能在正式开战前就用光力气吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠齐格
+这么说来，我差点忘记问了。[r]这件事也很重要。
+[k]
+
+＠齐格
+我虽然拥有屠龙英雄齐格飞的力量，[r]但同时也具备邪龙法夫纳的要素。
+[k]
+
+[charaFace F 4]
+＠齐格
+那个……不会给您亦有罪的感觉吗？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠乔尔乔斯
+呵呵。我再怎么也不会[r]因为同伴有龙属性就随便拔剑啦。
+[k]
+
+＠乔尔乔斯
+正如刚才我所说的，那个类似一种概念。
+[k]
+
+＠乔尔乔斯
+如果化作从者之身后依然身怀龙之要素，
+[k]
+
+＠乔尔乔斯
+说明龙乃是这个人的人生、使命、[r]命运密不可分的存在[line 3]
+[k]
+
+＠乔尔乔斯
+以至于这个人即便成为从者也摆脱不了，[r]我是这么理解的。
+[k]
+
+[charaFace C 0]
+＠乔尔乔斯
+不过我毕竟是我，[r]肯定还是会先提高警惕的。
+[k]
+
+＠乔尔乔斯
+没错[line 3]但是。
+[k]
+
+＠乔尔乔斯
+哪怕立场上是我的同伴，
+[k]
+
+＠乔尔乔斯
+只要我判断此人是邪恶的龙，[r]而我必须[#那么做]才能守护正义的话。
+[k]
+
+＠乔尔乔斯
+我是不会犹豫的。[r]哪怕对方曾与我旅行，曾与我交谈过。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠齐格
+……我知道了。[r]我会注意不去成为邪恶的存在。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠乔尔乔斯
+只要能对自己这么说，[r]你就不要紧啦。我可以保证。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠圣诞迦尔纳
+又来了哦。[r]可以练习侧步。振作精神！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠阿周那·Alter
+御主，立刻前往十点钟方向。[r]我是不会放过恶的。
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaFadeout S 0.1]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut T 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠玛修
+各位应该已经在目的地附近了……[r]有什么变化吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠圣诞迦尔纳
+……等等。好像能听到什么。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[se ade529]
+[seVolume ade529 0 0]
+[seVolume ade529 0.4 0.1]
+[wt 2.4]
+
+[seStop ade529 0.8]
+[wt 1.2]
+
+？1：这个……我记得……
+？2：迄今为止振动的真面目，难道是……
+？！
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 0,-50]
+＠弗栗多
+唔，歌啊。歌也不错。[r]好久没听了。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.4 0,-50]
+[wt 0.4]
+
+[bgm BGM_EVENT_13 0.1]
+
+＠伊丽莎白
+哎～，你的生活究竟有多缺乏滋润啊？[r]真可怜。
+[k]
+
+[charaFace G 1]
+＠伊丽莎白
+但在此基础上，你久违听到的歌声[r]竟然就是我这特别偶像的乐曲！
+[k]
+
+＠伊丽莎白
+你真是幸运到闪闪发光呢！[r]真是Golden lucky呢！
+[k]
+
+[charaFace G 0]
+＠伊丽莎白
+和平时那种不是在地上翻滚就是全力逃离着[r]参加演唱会的[#观众:audience]不一样，
+[k]
+
+＠伊丽莎白
+这种安静品味的类型我还是第一次[line 3][r]咳咳，是似乎很久没遇到了！
+[k]
+
+＠伊丽莎白
+我还可以接受你的特别点曲哦？
+[k]
+
+＠伊丽莎白
+是让体内体液流出的抒情[#洗脑曲:ballade]？[r]还是嗜虐溢出的不健康的[#破坏曲:metal]？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth H 4]
+[charaDepth G 6]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFace G 0]
+[charaFadeinFSR G 0.1 256,-50]
+[charaFadeinFSL H 0.1 -256,-50]
+＠弗栗多
+唔……随你的便。
+[k]
+
+[charaFace H 4]
+＠弗栗多
+吾喜欢歌，但并不熟悉。[r]或者说不清楚有什么区别。
+[k]
+
+[charaFace H 0]
+＠弗栗多
+只要是歌就行了。[r]无论哪种都能享受。
+[k]
+
+[charaFace G 5]
+＠伊丽莎白
+……此前我唱了好几首曲子，[r]难道你都没分清曲调吗？
+[k]
+
+
+[charaFace H 4]
+＠弗栗多
+说实话，完全分不清。
+[k]
+
+[charaFace H 1]
+＠弗栗多
+不，至少吾知道这歌犹如用钢铁在鳞片上刮蹭，[r]简直就像凄厉的惨叫。放心吧。
+[k]
+
+[charaFace G 4]
+＠伊丽莎白
+……只要是歌，什么都可以，[r]说明这评委水准非常低？
+[k]
+
+＠伊丽莎白
+我真的应该兴奋吗？[r]卡拉OK的打分机或许还比她好点？
+[k]
+
+[charaFace G 2]
+＠伊丽莎白
+哎呀，刚说到这里，[&小狗崽:小鹿崽]！
+[k]
+
+[charaFace G 0]
+＠伊丽莎白
+本来觉得这与其说是舞台，[r]不如说是PV的摄影现场呢，
+[k]
+
+＠伊丽莎白
+看来还是有其他客人会来的嘛。这下我放心了！
+[k]
+
+[charaFace H 6]
+＠弗栗多
+吾不是说过了吗？
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[bgmStop BGM_EVENT_13 0.8]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[pictureFrame]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+？1：那是伊丽亲的影子吗？
+？！
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk depthOn]
+[charaPut T 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠玛修
+嗯。应该和此前闭塞特异点内的一样，[r]都是复制的存在。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠齐格
+也就是说，不是正牌货吧。[r]看来不需要手下留情了。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠伊丽莎白
+哈？　你对真正的偶像说些什么呢？[r]看来你是不懂音乐的那种人吧？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠齐格
+说得也是。[r]抱歉，我不是很懂。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠伊丽莎白
+真诚实！　可以，我原谅你。[r]换言之，你是第一次参加演唱会，第一次[#体验音乐:shock]！　对吧？
+[k]
+
+＠伊丽莎白
+为这种孩子开发出偶像的爱好，[r]乃是偶像[#久远:distance]的[#宿命:destiny]
+[k]
+
+＠伊丽莎白
+那其他的人呢？[r]喜欢什么类型的曲子？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠乔尔乔斯
+我觉得赞美诗最好。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠伊丽莎白
+赞美就意味着声援歌吧。
+[k]
+
+＠伊丽莎白
+OK，我平时一直有对自己唱！[r]放马过来吧！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠圣诞迦尔纳
+我听说有种风格……是在长跑训练中[r]戴着耳机听音乐以便能集中精神。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠伊丽莎白
+只要节奏到位，情绪也能高涨的那种吧？[r]OK！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠阿周那·Alter
+我和音乐这东西没什么缘分。[r]也不觉得自己能够理解[line 3]
+[k]
+
+[charaFace B 0]
+＠阿周那·Alter
+但奇妙的是，从你刚才的声音中，[r]我感受到了某种东西。
+[k]
+
+[charaFace B 8]
+＠阿周那·Alter
+那抑扬的晃动，语言的韵律。[r]那就是……所谓的曲子吧。
+[k]
+
+[charaFace B 1]
+＠阿周那·Alter
+对于将使命所不需要的欲望抛弃或约束的我，[r]竟然还有音乐可以传达给我。
+[k]
+
+＠阿周那·Alter
+有种新鲜、舒适的感觉[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠伊丽莎白
+喂[messageShake 0.02 3 3 0.5]喂怎么回事！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOff]
+[charaDepth G 6]
+[charaDepth B 4]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFace B 1]
+[charaFadein G 0.1 -230,0]
+[charaFadein B 0.1 230,0]
+
+[se ad168]
+[charaMoveReturn G -180,0 0.4]
+＠伊丽莎白
+还是存在愿意认真夸奖我的客人嘛！[wt 0.3][se ad168][charaMoveReturn G -180,0 0.4][r]要签名吗？　还有写真集哦？[charaFace B 3][wt 0.4]
+[k]
+
+[se ad168]
+[charaMoveReturn G -180,0 0.4]
+＠伊丽莎白
+讨厌啦，感谢你收集了全徽章！[wt 0.3][se ad168][charaMoveReturn G -180,0 0.4][charaMove B 230,-10 0.6]
+[k]
+
+
+＠阿周那·Alter
+这是……大量物品……呢。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOn]
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 33]
+[charaFadein A 0.1 1]
+＠达·芬奇
+被强塞了大量周边产品……！[r]这也算天授英雄的宿命吗？
+[k]
+
+[branch lblConf3]
+
+[label lblNotClear3]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-90]
+＠达·芬奇
+被强塞了大量周边产品……！[r]这也算天授英雄的宿命吗？
+[k]
+
+[label lblConf3]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+
+
+
+
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+＠弗栗多
+唔唔？　那家伙是什么啊。
+[k]
+
+＠弗栗多
+味道奇怪也该有点限度。[r]神的气息太强了。
+[k]
+
+＠弗栗多
+你居然将那种存在当做影子来使役。[r]真够辛苦的。
+[k]
+
+[charaFace H 1]
+＠弗栗多
+只不过嘛，我还不打算与神决战。[r]这里也交给这家伙吧[line 3]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠齐格
+慢着，邪龙弗栗多。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+＠弗栗多
+哦？　你身上也有奇怪的气息呢，小家伙。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠齐格
+我也是龙。[r]……说我也算龙或许比较准确。
+[k]
+
+＠齐格
+所以我想和你聊聊。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk H]
+[charaFace H 11]
+[charaFadein H 0.1 1]
+＠弗栗多
+这话听上去像是在说，[r]要吾看在同族的情谊上听你的话呢。
+[k]
+
+＠弗栗多
+这种事毫无意义哦。
+[k]
+
+[charaFace H 0]
+＠弗栗多
+这女孩也只是由于某种因果，[r]才会模仿出这种形态，
+[k]
+
+＠弗栗多
+并非因为是龙，才选择了这条路。
+[k]
+
+[charaFace H 4]
+＠弗栗多
+不……这家伙实际上，算是龙吗？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠伊丽莎白
+呵呵。偶像有很多秘密嘛，[r]换言之，我不予评论。
+[k]
+
+＠伊丽莎白
+我只能说，偶像是必须成为[r]大家的幻想才行的超存在。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+＠齐格
+……我知道。她是无辜的怪物。
+[k]
+
+＠齐格
+她那激烈的生活方式被后世的人们[r]与魔性存在联系在一起，发生变质[line 3]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+＠达·芬奇
+虽然不知真假，[r]但根据迦勒底资料库的记载，
+[k]
+
+＠达·芬奇
+说『由于巴托里家的纹章是龙牙，[r]　所以混入了龙的因子』。
+[k]
+
+＠达·芬奇
+不过我个人觉得事情没那么单纯。
+[k]
+
+[branch lblConf4]
+
+[label lblNotClear4]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+＠达·芬奇
+虽然不知真假，[r]但根据迦勒底资料库的记载，
+[k]
+
+＠达·芬奇
+说『由于巴托里家的纹章是龙牙，[r]　所以混入了龙的因子』。
+[k]
+
+[charaFace A 4]
+＠达·芬奇
+不过我个人觉得事情没那么单纯。
+[k]
+
+[label lblConf4]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+＠齐格
+……是啊。我之所以是龙，有其原因，[r]而她之所以是龙，一定也有其原因。
+[k]
+
+[charaFace F 5]
+＠齐格
+既然如此[line 3]你肯定也有你的原因吧。[r]邪龙弗栗多。
+[k]
+
+[charaFace F 4]
+＠齐格
+确实，将龙笼统地归为一类或许太武断了……
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+[wt 1.2]
+
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠圣诞迦尔纳
+可对于圣诞老人而言，是否为龙并无关系。[r]我并不是因为这个才来这里的。
+[k]
+
+＠圣诞迦尔纳
+我是为了夺回圣诞节。[r]为了成为真正的圣诞老人。
+[k]
+
+＠圣诞迦尔纳
+考虑对手的情况只会[r]令战士的拳头变得迟钝哦，齐格。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠齐格
+是这样吗？[r]或许……是这样吧……
+[k]
+
+＠齐格
+我知道了。不管怎么样，[r]现在看来只能做该做的事了。
+[k]
+
+＠齐格
+因为我想起了今天我不是作为龙，[r]而是作为屠龙者来这里的。
+[k]
+
+[messageOff]
+[charaFace F 5]
+[wt 0.6]
+
+[se adm37]
+[charaMove F 0,8 0.6]
+[wt 1.6]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠阿周那·Alter
+我之所以在这里……是为了制裁恶。[r]为了认清……邪龙，弗栗多……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠弗栗多
+吾说了，不会跟你打。机会难得，[r]总得把气氛烘托到极限才行。
+[k]
+
+＠弗栗多
+别急，吾迟早会直接做你的对手。[r]但这种事情得看时机。
+[k]
+
+＠弗栗多
+在那个时候到来之前，[r]不妨好好磨炼自己哦？
+[k]
+
+[messageOff]
+[se ade282]
+[wt 0.1]
+[charaSpecialEffect H wipeTime 0,0 1.0]
+[wait charaSpecialEffect H]
+[wt 1.1]
+
+
+[charaPut T 1]
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+＠玛修
+又被她逃跑了呢……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+[charaEffectStop T bit_talk_10_LowLevel]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠圣诞迦尔纳
+没问题。[r]我能感到我们正一步步将她逼入角落。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠齐格
+既然迦尔纳这么说，那一定是这样吧。
+[k]
+
+＠齐格
+解放闭塞特异点，帮助圣诞老人。[r]为了这个目标，我会做现在我力所能及的事。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠乔尔乔斯
+这样比较好。[r]就算一开始就瞄准龙的眼睛，剑也未必能击中。
+[k]
+
+＠乔尔乔斯
+应该先攻击手脚让龙失去平衡。[r]这种构造也是非常重要的。
+[k]
+
+＠乔尔乔斯
+没错，屠龙并非完全由结果来构成的。
+[k]
+
+＠乔尔乔斯
+当面对强大的龙，也依然能做到[r]始终维持不逃跑，勇于战斗的意志时，
+[k]
+
+＠乔尔乔斯
+剩下的就只有等待了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠齐格
+意志吗。要说我拥有什么的话，也只有这个了吧。
+[k]
+
+＠齐格
+既然对我有大恩在身的齐格飞将此事托付给了我，[r]我自然没有逃跑这个选项。
+[k]
+
+＠齐格
+虽然不清楚自己能不能做到。[r]但我还是想以自己的形式努力成为屠龙者。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠伊丽莎白
+哎，当真？　我要被杀了吗？
+[k]
+
+＠伊丽莎白
+桃色纠纷对偶像来说可是大丑闻啊，[r]绝对不行啦。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 6]
+[charaDepth U 4]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+＠齐格
+啊，不，措辞有误。[r]我的意思是要有这种气魄。
+[k]
+
+[charaPut U 0,-200]
+[charaFace F 4]
+[charaFadeTime U 0.1 0.6]
+＠齐格
+（不，但即便是复制的存在，[r]　既然要打倒，结果还是那个意思吧……？）
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout U 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠伊丽莎白
+什么嘛。也就是类似演唱会[r]即战场的觉悟吧。那当然啦。
+[k]
+
+[charaFace G 2]
+＠伊丽莎白
+那么[line 3]就让你们带着赴死的觉悟，[r]好好享受我这震撼灵魂的演唱会吧！
+[k]
+
+？1：为了保护[#身体:耳朵]，也只能战斗了！
+？2：谢绝强行推销演唱会！
+？！
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

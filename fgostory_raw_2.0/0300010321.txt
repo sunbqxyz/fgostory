@@ -1,0 +1,498 @@
+
+
+＄03-00-01-03-2-1
+[soundStopAll]
+
+[charaSet A 1098126400 1 帕茨西]
+[charaSet B 5036001 1 阿维斯布隆]
+[charaSet C 98115300 1 福尔摩斯]
+[charaSet D 1098124510 1 达·芬奇]
+[charaSet E 1098123210 1 戈尔德鲁夫]
+[charaSet F 1098127000 1 魔偶]
+[charaSet H 5009000 1 特效用dummy]
+
+[scene 54700]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠帕茨西
+好……好厉害……[r]这是什么……
+[k]
+
+[charaFace A 0]
+
+＠帕茨西
+咆哮兽瞬间变成肉沫了……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 2]
+
+[charaFace F 0]
+[charaFadein F 0.1 0]
+
+＠阿维斯布隆
+这是魔偶哦。[r]因为我很弱，只能让他们代替我去战斗。
+[k]
+
+＠阿维斯布隆
+好了，御主。详细内容稍后再说。[r]先得在这里确立我的工房。
+[k]
+
+＠阿维斯布隆
+这样一来，不仅能强化召唤线，[r]也能活用你所持有的灵基肖像了吧。
+[k]
+
+＠阿维斯布隆
+也就是说，能随时将记录于[r]这手提箱内的从者作为影子召唤出来。
+[k]
+
+＠阿维斯布隆
+当然，只能在战斗时提供极为有限的助力。
+[k]
+
+＠阿维斯布隆
+好了，在工房确立之前[line 3][r]先休息一会儿吧。
+[k]
+
+[charaTalk off]
+[messageOff]
+[se ade160]
+[charaMoveReturn B 254,0 0.25]
+[wt 0.6]
+
+[se ad624]
+[wt 0.4]
+[charaFadeout F 0.7]
+[charaMove F -300,0 0.9]
+[wt 0.9]
+[seStop ad624 1.5]
+[wt 1.5]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿维斯布隆
+御主[%1]。[r]玛修·基列莱特。
+[k]
+
+＠阿维斯布隆
+还有……雅嘎的帕茨西吗。
+[k]
+
+＠阿维斯布隆
+我再自我介绍一次。[r]我的真名是阿维斯布隆。
+[k]
+
+＠阿维斯布隆
+职阶如你们所见，是Caster。[r]是个微不足道的魔偶使。
+[k]
+
+＠阿维斯布隆
+但鉴于当前的状况，[r]我似乎无疑是最适合被召唤出来的从者。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+是灵基肖像中不存在的，[r]连[&Mr.:Miss][%1]也不知道的从者啊。
+[k]
+
+＠福尔摩斯
+这意味着比起与[&Mr.:Miss][%1]的缘分，[r]土地本身渴求的悲鸣更加强烈吗。
+[k]
+
+＠福尔摩斯
+看来一般情况下，现存的英灵[r]在[#这个世界]里无法成立呢。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠达·芬奇
+嗯。愈发觉得这里与特异点不一样呢。
+[k]
+
+＠达·芬奇
+……这样就越来越像是[r][#那个魔术理论]中提到的那个了呢……
+[k]
+
+[charaFace D 30]
+
+＠达·芬奇
+不，现在还是边感谢新战力的到来，[r]边让他好好帮助我们吧。
+[k]
+
+[charaFace D 0]
+
+＠达·芬奇
+阿维斯布隆。凭借你的技术，[r]是有可能修复Shadow Border的装甲吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaPut H 2]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+
+＠阿维斯布隆
+我想看一下数据。
+[k]
+
+[charaFace D 9]
+
+＠达·芬奇
+请看。不用顾忌，尽管提意见，拜托啦～。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[wt 0.1]
+
+[se ad15]
+[wt 0.6]
+[se ad1]
+[wt 1.2]
+
+＠阿维斯布隆
+唔。[r]……要从材料开始啊。
+[k]
+
+＠阿维斯布隆
+只要有蕴含魔力的古老矿石，[r]应该就能组装适合的装甲了吧。
+[k]
+
+＠阿维斯布隆
+原本是只能在魔术师间[r]流通交易的东西[line 3]
+[k]
+
+＠阿维斯布隆
+但在这俄罗斯的话，或许可以期待。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠达·芬奇
+回答得好。不愧是魔偶之祖。[r]福尔摩斯，能全权交给他吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+当然了。这也帮了我们的大忙。
+[k]
+
+＠福尔摩斯
+[&Mr.:Miss][%1]、Miss基列莱特。[r]还有帕茨西。
+[k]
+
+
+＠福尔摩斯
+来确认今后的方针吧。[r]戈尔德鲁夫新所长，没问题吧？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠戈尔德鲁夫
+唔，唔嗯。[r]决定权在我手中吧？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+那当然啦。
+[k]
+
+[charaFace C 0]
+
+＠福尔摩斯
+还有达·芬奇就继续商量素材相关的问题吧。
+[k]
+
+[charaFace C 5]
+
+＠福尔摩斯
+没错，是有关另一方面的。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 24]
+[charaFadein D 0.1 1]
+
+＠达·芬奇
+啊啊，没错。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 0.3]
+[wt 0.5]
+
+[bgm BGM_EVENT_76 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+
+＠福尔摩斯
+好了[line 3]综合一下情况，[r]我觉得目前我们应该前往反叛军的所在之处。
+[k]
+
+＠福尔摩斯
+首先，率领反叛军的明显是位从者。
+[k]
+
+＠福尔摩斯
+而且既然他们与伊凡雷帝对立，[r]那成为我方同伴的概率也很高。
+[k]
+
+？1：反叛军到底在哪儿呢……
+？！
+
+[charaFace C 6]
+
+＠福尔摩斯
+关于这个问题，就指望帕茨西的情报了。
+[k]
+
+[charaFace C 0]
+
+＠福尔摩斯
+你应该知道吧？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠帕茨西
+虽然无法明确到具体地点[line 3][r]但我知道几座传闻有在协助他们的村子。
+[k]
+
+＠帕茨西
+有为他们补给食物的，也有隐匿叛军的。[r]各种各样。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+那就前往那些地方吧。[r]没问题吧，新所长？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠戈尔德鲁夫
+反叛者聚集的村子啊……有种危险的预感，[r]不过反正辛苦的不是我。
+[k]
+
+＠戈尔德鲁夫
+那你们去吧，[%1]。[r]我期待着你的捷报，同时也有些期待食物了。
+[k]
+
+[charaFace E 10]
+
+＠戈尔德鲁夫
+Shadow Border的储备已经见底了。[r]填不填得饱肚子是会影响士气的。
+[k]
+
+＠戈尔德鲁夫
+不用我多说，潜航艇内的[r]工作人员们精神也濒临极限了。
+[k]
+
+＠戈尔德鲁夫
+在这饥寒交迫被封闭的状况下。[r]你能外出走动算不错了。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠达·芬奇
+啊～，还有这方面的问题啊。[r]不过咆哮兽的肉能吃吗？
+[k]
+
+[bgmStop BGM_EVENT_76 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_7 0.1]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠戈尔德鲁夫
+不能吃可就麻烦了！[r]且不说烤牛肉，我好想吃培根啊！
+[k]
+
+＠戈尔德鲁夫
+放心吧，穆吉克家可是炼金术名门，[r]就算肉里有对人体有害的毒素，我也会想办法处理！
+[k]
+
+＠戈尔德鲁夫
+我常在雪山里孤身遇难，[r]早就独立研究出了能将劣质肉化为优质肉的魔术式！
+[k]
+
+＠戈尔德鲁夫
+就连腐肉也能变成霜降牛肉！[r]不然我怎么会被叫做不死鸟的穆吉克呢！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠达·芬奇
+真是浪费，不对，是十分有用的魔术呢。[r]尽管应用范围十分狭窄，但现在真是可靠～！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+？1：明白了！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+嗯。只要Shadow Border能恢复运转，[r]也能强化对你们的支援。
+[k]
+
+[branch select04_end]
+
+？2：我会努力的！
+
+[charaFace E 6]
+
+＠戈尔德鲁夫
+光靠努力是不行的，要拿出结果！[r]毕竟你的行动关系着我的未来啊！
+[k]
+
+
+[branch select03]
+？！
+
+[label select03]
+
+？1：……啊，好。
+？2：我会……尽力的。
+？！
+
+[charaFace E 8]
+
+＠戈尔德鲁夫
+你这种也叫给自己施加压力吗[line 3]！？
+[k]
+
+[label select04_end]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

@@ -1,0 +1,884 @@
+
+
+＄91-50-35-02-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 98006000 1 魔兽]
+[charaSet B 11005001 1 黑森]
+[charaSet C 5035000 1 阿纳斯塔西娅]
+[charaSet D 1098153800 1 ？？？]
+[charaFilter D silhouette 00000080]
+[charaSet E 5035002 1 阿纳斯塔西娅（？）]
+[charaSet F 1098153900 1 阿列克谢]
+[charaFilter F silhouette 00000080]
+[charaSet G 1098127900 1 卡多克]
+[charaSet H 1098123600 1 亲卫队1]
+[charaSet I 1098123600 1 亲卫队2]
+[charaSet J 1098123600 1 亲卫队3]
+
+[imageSet O back10000 1 1]
+[charaScale O 1.32]
+
+[charaSet T 98115000 1 特效用]
+
+[charaPut T 2000,2500]
+[charaEffect T bit_sepia01_depth_fs]
+
+
+[scene 54102]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.6]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[se ad42]
+[charaSpecialEffect A enemyErasure 0,0 1.4]
+[wt 2.6]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠黑森
+『毕竟是梦之世界。[r]　果然融化消失了啊。』
+[k]
+
+＠黑森
+『那么，我们继续追踪她的气味吧。[r]　御主。』
+[k]
+
+？1：罗伯，拜托了。
+？2：狼王，拜托了。
+？！
+
+[charaTalk off]
+[se ad334]
+＠罗伯
+[i berserker_language_4]
+[k]
+
+[messageOff]
+[se ade168]
+[charaFadeout B 0.6]
+[wt 0.1]
+[se ad78]
+[seVolume ad78 0 0.5]
+[wt 0.5]
+[se ad78]
+[seVolume ad78 0 0.5]
+[wt 0.3]
+
+[seStop ade168 0.2]
+[wt 0.8]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠黑森
+『它好像在说，跟着它走。』
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_81 1.0 0.4]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[se ad555]
+[seVolume ad555 0 0]
+
+[seVolume ad555 1.0 1.0]
+
+[bgm BGM_EVENT_81 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+[wt 1.5]
+
+？1：话说回来。
+？2：风雪好猛烈啊……
+？！
+
+[seVolume ad555 1.0 0.2]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠黑森
+『这是她现在的心象风景，[r]　还是她记忆深刻的地方呢。』
+[k]
+
+＠黑森
+『不管怎么说，都令人羡慕。[r]　因为我们连故乡都不怎么想得起来。』
+[k]
+
+＠黑森
+『……虽然我对故乡也没什么留恋！』
+[k]
+
+＠黑森
+『我比较留恋的反而是更为重要的东西！』
+[k]
+
+＠黑森
+『其实！　那就是！』
+[k]
+
+＠黑森
+[f large]『脑袋！』
+[k]
+
+？1：这话……倒是没错啦……
+？！
+
+＠黑森
+『没有脑袋的杜拉汉[line 3][r]　简直就像没有肉垫的猫。』
+[k]
+
+＠黑森
+『你不这么认为吗？』
+[k]
+
+＠黑森
+『不能吃饭，不能说话，[r]　就算看到鼻毛长出来，也无法提醒哦！』
+[k]
+
+＠黑森
+『不，虽然我也不想看到别人的鼻毛！』
+[k]
+
+＠黑森
+『啊啊，对了对了。等这件事结束后，[r]　麻烦你转告小童谣。』
+[k]
+
+＠黑森
+『告诉她，就算万圣节快到了，[r]　也别把南瓜放在人家脖子上啦！』
+[k]
+
+＠黑森
+『而且还是在镂空南瓜里面竖着[r]　一根蜡烛，亮闪闪的那种哦！』
+[k]
+
+？1：你能看见吗？
+？！
+
+＠黑森
+『不，完全看不见。[r]　我是通过感觉来战斗的。』
+[k]
+
+[messageOff]
+[charaTalk off]
+[bgmStop BGM_EVENT_81 1.0]
+[seStop ad555 1.0]
+[se ad334]
+＠罗伯
+[i berserker_language_4]
+[k]
+
+[charaTalk on]
+＠黑森
+『咦？[r]　好像有人。』
+[k]
+
+？1：阿纳斯塔西娅……！？
+？！
+
+＠F：？？？
+[line 3]喂。不是啦。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 39100]
+
+[pictureFrame cut063_cinema]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 0,-50]
+[wt 0.4]
+
+[bgm BGM_EVENT_47 0.1]
+
+＠阿纳斯塔西娅
+……？[r]哎呀，阿列克谢怎么了？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+＠？？？
+阿列克谢去休息了。[r]他身体不舒服。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 1]
+[charaFace D 0]
+[charaFadeinFSR C 0.1 256,-50]
+[charaFadeinFSL D 0.1 -256,-50]
+＠阿纳斯塔西娅
+……那我去找阿列克谢。
+[k]
+
+＠阿纳斯塔西娅
+他一个人肯定感到不安吧。
+[k]
+
+＠？？？
+啊，太狡猾了。[r]我也想尽快逃离这场宴会啦。
+[k]
+
+[charaFace C 6]
+＠阿纳斯塔西娅
+这就叫先下手为强吧？
+[k]
+
+＠？？？
+……真是的。[r]拿你没办法，那我们换着来吧。
+[k]
+
+＠？？？
+一定要回来哦。
+[k]
+
+[charaFace C 1]
+＠阿纳斯塔西娅
+知道啦知道啦。[r]一切听从姐姐大人的吩咐。
+[k]
+
+[messageOff]
+[se ad95]
+[seStop ad95 1.2]
+[charaMoveFSR C 306,-50 0.4]
+[charaFadeout C 0.4]
+[wt 1.8]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_47 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[scene 54600]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠
+[line 3]我当然明白。
+[k]
+
+＠
+这甚至不是什么梦境。
+[k]
+
+＠
+这只是愿望的满足，[r]是永远不会终结的幸福时光。
+[k]
+
+＠
+……即便如此也行。[r]我已经不会回迦勒底了。不想回迦勒底了。
+[k]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+＠阿纳斯塔西娅
+[#维:Вий]。
+[k]
+
+＠阿纳斯塔西娅
+求求你，再让我看看，[r]再让我多看一些。
+[k]
+
+＠阿纳斯塔西娅
+看那幸福的时光，幸福的瞬间。[r]在浅眠之中，永远。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠
+……维睁开了眼睑。[r]我被荆棘般的幻惑缠绕起来。
+[k]
+
+＠
+啊啊，多么宁静。[r]已经不用再害怕轻蔑了。
+[k]
+
+＠
+不再需要为[&他:她]的[r]一举手一投足而紧张了。
+[k]
+
+＠
+就这样安静地、缓慢地等待破灭吧。
+[k]
+
+＠
+像[#异闻带:Lostbelt]一样。[r]某天骤然断线[line 3]就此终结。
+[k]
+
+＠
+无法弥补，无法偿还，[r]说到底，甚至不算罪孽。
+[k]
+
+＠
+但是，[r]我还有身为我自己这个罪孽。
+[k]
+
+＠
+……为什么，[r]会维系得如此紧密呢。
+[k]
+
+＠
+若只是普通的主从该有多好。[r]如果没有任何感情，被当做机器对待的话。
+[k]
+
+＠
+……可是，那个人为什么要这么对我呢？
+[k]
+
+＠
+[line 3]分明只要看到我的脸，[r]就一定会感到痛苦。
+[k]
+
+＠
+为什么，这个问题在脑海中萦绕不去。
+[k]
+
+＠
+……曾是我方的从者[r]成为敌方的事例数不胜数。
+[k]
+
+＠
+但是，那时、那个瞬间，身在那里的，[r]只有阿纳斯塔西娅·尼古拉耶芙娜·罗曼诺娃一个。
+[k]
+
+[messageOff]
+[wt 0.2]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 0,-50]
+[wt 0.8]
+＠阿纳斯塔西娅（？）
+[line 3]有什么办法。[r]因为我讨厌人类啊。
+[k]
+
+＠阿纳斯塔西娅（？）
+杀了我的军人，[r]憎恨我的市民，
+[k]
+
+＠阿纳斯塔西娅（？）
+决定对我见死不救的政治家，[r]所有这些人……都令我反感讨厌憎恨。
+[k]
+
+
+＠
+[charaTalk T]
+可是，你却想成为皇帝吧。
+[k]
+
+＠阿纳斯塔西娅（？）
+嗯，因为那是御主的愿望嘛。[r]……是那个可爱人儿的宝贵愿望。
+[k]
+
+＠
+[charaTalk T][line 3]我最讨厌你了。
+[k]
+
+[charaFace E 1]
+＠阿纳斯塔西娅（？）
+谢谢。[r]因为我也由衷讨厌你。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_70 1.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[pictureFrame]
+
+[scene 54102]
+
+[wt 1.5]
+
+[se ad555]
+[seVolume ad555 0 0]
+
+[seVolume ad555 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+？1：你……是谁？
+？！
+
+
+[seVolume ad555 1.0 0.2]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠F：？？？
+我是谁都无所谓吧。[r]我想要救她。
+[k]
+
+＠F：？？？
+你们也是为此才来这梦中的吧。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠黑森
+『这个嘛，我们当然是来救她的。[r]　但你哪位？』
+[k]
+
+＠黑森
+『如果是陷阱，可就要斩你的首了哦。[r]　不是我，就是它动手啦。』
+[k]
+
+＠黑森
+『啊，但我不会猎奇到什么把脑袋放脖子上。[r]　这点我可以赌上佣兵的名誉发誓。』
+[k]
+
+？1：请告诉我你的名字。
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠F：？？？
+……[r]……阿列克谢。
+[k]
+
+？1：阿列克谢……？
+
+＠阿列克谢
+你什么都不知道吧！[r]我是阿纳的弟弟啦！！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad334]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠罗伯
+[i berserker_language_4]
+[k]
+
+[charaTalk on]
+＠黑森
+『啊，大声说话会让它心情变糟的，[r]　能小声点吗？』
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠阿列克谢
+啊，嗯。[r]我知道了。
+[k]
+
+＠阿列克谢
+……哎呀啊怪物！！[messageShake 0.04 3 3 0.5]
+[k]
+
+？2：我记得阿列克谢应该是她弟弟的……
+
+＠阿列克谢
+没错，你有认真调查呢。[r]……但这些是御主理应做到的！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠黑森
+『你待人相当苛刻呢，阿列克谢。』
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠阿列克谢
+不用你管！[r]这点权利我总有吧！
+[k]
+
+＠阿列克谢
+……哎，哇啊怪物！！[messageShake 0.04 3 3 0.5]
+[k]
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠黑森
+『哈哈哈，真没礼貌。这点暂且不论，[r]　那能具体说来听听吗？关于拯救你姐姐的方法。』
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠阿列克谢
+……我，我知道了。
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgm BGM_EVENT_77 1.0 0.4]
+[seVolume ad555 1.0 0.1]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[wt 1.0]
+
+[se ad580]
+[seVolume ad580 0 0]
+
+[seVolume ad555 1.0 0.2]
+[seVolume ad580 1.0 1.0]
+[bgm BGM_EVENT_77 1.0 1.0]
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 1.5]
+
+[seStop ad580 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠阿列克谢
+……阿纳将自己一个人关在那座城里。
+[k]
+
+＠阿列克谢
+安排自己想要的[#配角:演员]，做自己想[r]让他们做的事，就这么一直生活下去。
+[k]
+
+＠阿列克谢
+体感时间大概已经过了约两年了吧？
+[k]
+
+？1：阿纳斯塔西娅明白当前事态吗？
+？！
+
+＠阿列克谢
+她明白。
+[k]
+
+＠阿列克谢
+照这样下去自己将会毁灭，以及再召唤的[r]萌芽将被掐断，这她全都有觉悟了。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠黑森
+『为什么要这么做？』
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠阿列克谢
+……因为阿纳曾是其他御主的从者。[r]这么说你们应该明白了吧。
+[k]
+
+[messageOff]
+[se ad592]
+[seVolume ad592 0 0.6]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_77 0.8]
+[seVolume ad555 1.0 0]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[scene 54202]
+
+[charaTalk off]
+[charaFace C 0]
+[charaFace G 0]
+[charaFadeinFSR C 0.1 2]
+[charaFadeinFSL G 0.1 0]
+
+[charaPut T 1]
+[wt 0.8]
+
+[fadein white 0.5]
+[wait fade]
+[wt 1.2]
+
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaFadeout G 0.1]
+[charaPut T 2000,2500]
+
+[scene 54102]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.8]
+
+[fadein white 0.5]
+[wait fade]
+[wt 0.5]
+
+？1：这[line 3]
+？2：我明白，但是……
+？！
+
+[bgm BGM_EVENT_70 0.1]
+[seVolume ad555 1.0 0.2]
+
+＠阿列克谢
+嗯，我知道，我知道哦。[r]我知道你有在认真做好这件事。
+[k]
+
+＠阿列克谢
+但是，阿纳也知道哦。
+[k]
+
+＠阿列克谢
+……其实你，还是很害怕吧。
+[k]
+
+？1：……
+？！
+
+＠阿列克谢
+这也没办法。[r]事出无奈。
+[k]
+
+＠阿列克谢
+既然是从者，总会遇到这类事。[r]能想开一些的话当然好。
+[k]
+
+＠阿列克谢
+但是[line 3]
+[k]
+
+＠阿列克谢
+啊啊，该死的。[r]都是你的错啦。
+[k]
+
+＠阿列克谢
+如果你能更设身处地的[r][#不要陪伴她]……就不会变成这样了。
+[k]
+
+[messageOff]
+[charaTalk T]
+[bgmStop BGM_EVENT_70 1.0]
+[seStop ad555 1.0]
+
+[se ad83]
+[seVolume ad83 0 0.3]
+[wt 2.2]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[se ad334]
+＠B：罗伯
+[i berserker_language_4]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠阿列克谢
+……嘁。[r]连[#杀戮猎兵:Опричники]都动员起来了。
+[k]
+
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth H 6]
+[charaDepth I 5]
+[charaDepth J 4]
+
+[se ad601]
+[wt 0.5]
+[charaFace H 0]
+[charaFace I 0]
+[charaFace J 0]
+[charaFadein H 0.4 1]
+[wt 0.2]
+[charaFadeinFSR I 0.4 2]
+[wt 0.2]
+[charaFadeinFSL J 0.4 0]
+[seStop ad601 0.5]
+[wt 1.2]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠阿列克谢
+我自然是无法战斗的。[r]总之先交给你们处理吧。
+[k]
+
+
+[input selectBranch]
+[seStop ad42 0.1]
+[seStop ad78 0.1]
+[seStop ad83 0.1]
+[seStop ad95 0.1]
+[seStop ad334 0.1]
+[seStop ad555 0.1]
+[seStop ad580 0.1]
+[seStop ad592 0.1]
+[seStop ad601 0.1]
+[seStop ade168 0.1]
+
+[charaSet A 1098183600 1 魔兽（四足步行）]
+[charaSet B 11005001 1 黑森·罗伯]
+[charaSet C 5035000 1 阿纳斯塔西娅]
+[charaSet D 1098153800 1 ？？？]
+[charaFilter D silhouette 00000080]
+[charaSet E 5035002 1 阿纳斯塔西娅（？）]
+[charaSet F 1098153900 1 阿列克谢]
+[charaFilter F silhouette 00000080]
+[charaSet G 1098127900 1 卡多克]
+[charaSet H 1098123600 1 亲卫队1]
+[charaSet I 1098123600 1 亲卫队2]
+[charaSet J 1098123600 1 亲卫队3]
+
+[scene 54102]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[messageOff]
+[maskin black 1.0]
+[wait mask]
+[label selectBranch]
+
+
+？1：明白了，你退后吧！
+
+＠阿列克谢
+啊，嗯。[r]既然如此，那我就不出手了。
+[k]
+
+＠阿列克谢
+你自己努力吧。
+[k]
+
+？2：你就不能提供一些辅助吗？
+
+＠阿列克谢
+怎么，想要辅助？[r]行啊，我可以稍微帮一把手。
+[k]
+
+＠阿列克谢
+[#魔眼启动]。[r]……来，迷惑吧迷惑吧！
+[k]
+
+？！
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

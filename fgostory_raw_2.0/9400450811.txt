@@ -1,0 +1,336 @@
+
+
+＄94-00-45-08-1-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 8001001 1 玛修]
+[charaSet B 98003003 1 Dr.罗曼]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 4014001 1 牛若丸]
+[charaSet E 6019000 1 风魔小太郎]
+[charaSet F 98076000 1 弁庆]
+[charaSet G 98075000 1 鬼]
+[charaSet H 4023001 1 坂田金时]
+
+
+[scene 27800]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+
+＠牛若丸
+这是最后一只了。虽然动作还挺灵活的，[r]但根本不是我牛若的对手！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFadein G 0.1 1]
+
+＠鬼
+咕嘎啊啊啊！！
+[k]
+
+[charaTalk A]
+
+＠玛修
+危险，是反击！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠牛若丸
+小菜一碟，区区这种攻击！　嗨！
+[k]
+
+[messageOff]
+
+[charaMove D -800,0 0.3]
+[se ad73]
+[wt 0.3]
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+
+＠玛修
+真厉害，用敏捷的行动回避了……
+[k]
+
+＠玛修
+咦？　有什么东西滚落在牛若丸小姐的脚下……
+[k]
+
+[bgmStop BGM_EVENT_3 0.4]
+
+[wt 0.4]
+
+
+[se ad129]
+
+[wt 1.0]
+
+[charaFace A 14]
+
+＠玛修
+……！　
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk B]
+
+＠Dr.罗曼
+哎，毕竟一边激烈地跳来跳去，一边战斗嘛，[r]也难怪。手里的地藏肯定会受到冲击……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠牛若丸
+兄……兄长的头颅掉下来了！
+[k]
+
+[charaFace D 5]
+
+＠牛若丸
+该死的，居然敢对兄长下手！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFadein G 0.1 1]
+
+＠鬼
+叽！？
+[k]
+
+[messageOff]
+
+[se bac13]
+[effect bit_talk_12]
+
+[charaFadeout G 0.1]
+[wt 0.7]
+
+[communicationCharaLoop 98003003 1 5 0 2]
+
+
+＠Dr.罗曼
+太不讲理了！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠牛若丸
+兄长……兄长的头颅……在那里！[r]等……等等！
+[k]
+
+[se ad59]
+[seStop ad59 1.5]
+[charaFadeout D 0.4]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠玛修
+地藏菩萨的头颅以极快的速度滚下去了。[r]就像老鼠与饭团故事中的……
+[k]
+
+＠玛修
+而滚落的方向[charaFace A 15][line 2]啊。
+[k]
+
+
+＠玛修
+那是……日本传统的……[r]人为农业堆肥生产设备[line 2]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+
+[charaFace F 0]
+[charaFadein F 0.1 0]
+
+＠风魔小太郎
+就是粪坑吧。
+[k]
+
+[bgmStop BGM_EVENT_7 0.1]
+
+[wt 0.2]
+
+[se ad130]
+
+[wait se ad130]
+
+[bgm BGM_EVENT_7 0.1]
+
+
+[charaTalk F]
+
+＠弁庆
+然后掉下去了。
+[k]
+
+
+[charaFadeout E 0.1]
+
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 2]
+
+＠坂田金时
+地藏菩萨……算了，反正什么事都可能发生……[r]我们唯独没能拯救地藏菩萨呢……
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFadein C 0.1 1]
+
+＠芙芙
+芙……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠牛若丸
+…………………………
+[k]
+
+[charaTalk A]
+
+＠玛修
+完全僵硬了……[r]啊。
+[k]
+
+[charaTalk D]
+
+＠牛若丸
+好了。我们走吧，主人。[r]前路还长着呢。（扔）
+[k]
+
+[se ad129]
+
+[charaTalk B]
+
+＠Dr.罗曼
+（把躯体[line 2]扔掉了！）
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 2]
+
+[charaFace D 0]
+[charaFadein D 0.1 0]
+
+＠玛修
+呃……话说……那个[line 2][r]这样对待您的兄长真的好吗……？
+[k]
+
+[charaTalk D]
+[charaFace D 1]
+
+＠牛若丸
+哈哈哈，您在说什么呢，玛修阁下。
+[k]
+
+[charaFace D 5]
+
+＠牛若丸
+我那完美的兄长可不会去什么厕所。[r]因此，那颗头颅必然不是兄长的。
+[k]
+
+[charaTalk A]
+[charaFace A 6]
+
+＠玛修
+唉……那位大哥在牛若丸小姐的内心[r]已经被彻底神格化了呢……
+[k]
+
+[charaTalk D]
+[charaFace D 0]
+
+＠牛若丸
+好了，我们走吧。[r]下一扇大门已经近在眼前了。
+[k]
+
+
+
+＠牛若丸
+……？　啊，没事啦。[r]兄[charaFace D 1]长存在于任何地方。
+[k]
+
+[charaFace D 6]
+
+＠牛若丸
+仔细看来，那岩石的表面是兄长，那颗小石子是兄长，[r]天空的颜色也是兄长，呵呵……好多兄长呢……
+[k]
+
+[charaFace D 7]
+
+＠牛若丸
+我的周围都是兄长，都不知道该如何是好了……[r]牛若真是个幸福的人……
+[k]
+
+[charaTalk B]
+
+＠Dr.罗曼
+我还以为她恢复正常了呢……果然，[r]还是局部有问题……
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_7 0.4]
+[wait fade]
+[wt 0.1]
+[soundStopAll]
+[end]

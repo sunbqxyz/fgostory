@@ -1,0 +1,685 @@
+
+＄02-00-01-14-1-1
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 98111500 1 达·芬奇]
+[charaSet C 98111500 1 通讯用杂音]
+[charaSet D 1002001 1 阿尔托莉雅·Alter]
+[charaSet E 98086000 1 福尔摩斯]
+[charaSet F 98110800 1 赫斯]
+[charaSet G 11005002 1 新宿的Avenger]
+[charaSet H 98109810 1 卡瓦斯二世（模糊）]
+
+[charaScale H 0.85]
+
+
+[soundStopAll]
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 38500]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut C 1]
+[charaEffect C bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠玛修
+黑森·罗伯……魔力急速衰减。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0 0,-90]
+＠达·芬奇
+成功了吗！？[r]成功了吧！？
+[k]
+
+？1：真像给自己插旗的台词……
+
+[charaFace B 0]
+＠达·芬奇
+我也这么想，[r]但毕竟我在监控，可以确信哦！
+[k]
+
+？2：还没成功！
+
+＠达·芬奇
+不，成功了！
+[k]
+
+＠达·芬奇
+因为根据这里的监测，[r]Avenger已经到达了消灭领域。
+[k]
+
+[charaFace B 0]
+＠达·芬奇
+不用多久，他们就会消失吧。
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[charaPut C 1200,1200]
+[charaEffectStop C bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠阿尔托莉雅·Alter
+嗯。[r]连逃跑所需的魔力应该都已经用尽了。
+[k]
+
+[charaFace D 5]
+＠阿尔托莉雅·Alter
+但是[line 3]。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 2.0]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.7 0,-32]
+[charaMove G 1 0.7]
+[charaShake G 0.05 4 0 0.7]
+[wt 1.0]
+
+[voice 1100500_0_H070]
+[shake 0.05 4 4 0.4]
+[wt 2.7]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠阿尔托莉雅·Alter
+驱使你行动的动力，是憎恨还是复仇。[r]……谁也无法为你分担这份痛苦。
+[k]
+
+[charaFace D 0]
+＠阿尔托莉雅·Alter
+这份痛苦也是归还于你的报应，[r]这无疑才是你的喜悦。
+[k]
+
+[charaFace D 4]
+＠阿尔托莉雅·Alter
+但是，已经够了吧。[r][line 3]再见了，狼王。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_5 2.0]
+[charaFadeout D 0.7]
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 5]
+[charaDepth G 1]
+[charaFadein G 0.1]
+[shake 0.05 4 0 0.7]
+
+[wt 0.7]
+[se ad171]
+[wt 0.3]
+
+[se ad170]
+[effect bit_bolg_03]
+[charaFadeout G 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaDepth F 9]
+[charaFadein F 0.1]
+[wt 1.0]
+
+[scene 38500]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠阿尔托莉雅·Alter
+什么……！？
+[k]
+
+
+[charaSet G 98111200 1 狼王罗伯（单体）]
+
+[charaFace D 5]
+＠阿尔托莉雅·Alter
+不要妨碍我，[#无头骑士:杜拉汉]……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1]
+
+[se ad209]
+[wt 1.4]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_3 0.4]
+[wt 0.7]
+[bgm BGM_EVENT_5 0.1]
+
+[charaPut C 1]
+[charaEffect C bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 1]
+[wt 0.3]
+＠玛修
+哎……？
+[k]
+
+？1：抛弃了……武器？
+？！
+
+[charaFadeout A 0.1]
+[charaPut C 1200,1200]
+[charaEffectStop C bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠阿尔托莉雅·Alter
+……你打算……做什么？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut C 1]
+[charaEffect C bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 1]
+[wt 0.3]
+＠玛修
+张开双臂……[r]怎么会，但是，这……
+[k]
+
+？1：在保护他……？
+
+[charaFadeout A 0.1]
+[charaPut C 1200,1200]
+[charaEffectStop C bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠阿尔托莉雅·Alter
+快退下，要不就拿起武器。[r]就算你不抵抗，我也不会手下留情。
+[k]
+
+？2：他打算保护罗伯……？
+
+＠玛修
+啊，嗯。[r]我也觉得是这个意思……
+[k]
+
+[charaFadeout A 0.1]
+[charaPut C 1200,1200]
+[charaEffectStop C bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+？！
+
+＠阿尔托莉雅·Alter
+快点，退下！[r]你这样也算是个从者吗！
+[k]
+
+
+[se bac127]
+
+[charaFace D 5]
+
+？1：刚才的声音是……！？
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.7 0,-32]
+[charaMove G 1 0.7]
+[charaShake G 0.05 4 0 0.7]
+[wt 1.4]
+
+[se ad340]
+[wt 1.0]
+[charaFadeout G 2.0]
+[seStop ad340 2.0]
+[wt 2.0]
+
+[charaPut C 1]
+[charaEffect C bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0 0,-90]
+[wt 0.3]
+＠达·芬奇
+……！[r]罗伯扯碎了自己的前腿逃跑了！
+[k]
+
+
+＠达·芬奇
+没关系，速度很慢，[r]徒步也能追上！
+[k]
+
+[charaFadeout B 0.1]
+[charaPut C 1200,1200]
+[charaEffectStop C bit_talk_10_LowLevel]
+[wt 0.3]
+
+[messageOff]
+
+[charaTalk D]
+[charaFace D 2]
+[charaDepth D 9]
+[charaFadein D 0.1 0]
+＠阿尔托莉雅·Alter
+等[line 3]。
+[k]
+
+[charaTalk E]
+[charaFace E 4]
+[charaDepth E 1]
+[charaFadein E 0.7 2]
+[wt 1.0]
+＠福尔摩斯
+……Miss阿尔托莉雅。[r]到此为止吧。
+[k]
+
+[bgmStop BGM_EVENT_5 0.4]
+[wt 0.7]
+
+[charaFace D 5]
+＠阿尔托莉雅·Alter
+福尔摩斯，你是什么意思？
+[k]
+
+[bgm BGM_EVENT_6 0.1]
+
+[charaFace E 0]
+＠福尔摩斯
+让他走吧。[r]胜利已经注定是我们的了。
+[k]
+
+[charaFace E 4]
+＠福尔摩斯
+无论是黑森，还是罗伯，[#都已经结束了]。[r]……至少最后，就随他们去好了。
+[k]
+
+[messageOff]
+
+[charaFadeout D 0.7]
+[se ad95]
+[charaMove E 1 0.7]
+[seStop ad95 2.0]
+[wt 1.0]
+
+[charaFace E 0]
+＠福尔摩斯
+你作为骑手，也想履行自己最后的职责吧。[r]但不要紧。
+[k]
+
+[charaFace E 4]
+＠福尔摩斯
+他终于夺回了自由，[r]你不需要为之负责。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1]
+[charaEffect F bit_talk_06]
+＠黑森
+……[r]……
+[k]
+
+[messageOff]
+
+[bgm BGM_EVENT_6 0.1 0.3]
+[messageOff]
+[charaSpecialEffect F flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect F]
+[charaEffectStop F bit_talk_06]
+[wt 0.3]
+
+[wt 0.7]
+[bgm BGM_EVENT_6 0.1]
+
+？1：是这样啊……
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠福尔摩斯
+没错，[&Mr.:Miss][%1]。[r]狼王终于恢复成一介野兽了。
+[k]
+
+？2：但是……
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠福尔摩斯
+……对。[&Mr.:Miss][%1]。
+[k]
+
+＠福尔摩斯
+正如你所担心的，[r]狼王已经没有可以回去的地方了。
+[k]
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaPut C 2]
+[charaEffect C bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFadein A 0 2]
+[wt 0.3]
+＠玛修
+……罗伯想要回去。[r]回到故乡美国。回到那片科伦坡的荒野[line 3]。
+[k]
+
+[charaFace D 4]
+＠阿尔托莉雅·Alter
+回去……吗。[r]但是，这是不可能的。
+[k]
+
+＠玛修
+……[r]……
+[k]
+
+＠阿尔托莉雅·Alter
+不是指物理上的距离。[r]他在复仇里陷得太深了。
+[k]
+
+＠阿尔托莉雅·Alter
+忘记了迟早要回归的故乡，[r]忘记了陪伴他身旁的那些面庞[line 3]。
+[k]
+
+[charaFace D 0]
+＠阿尔托莉雅·Alter
+[#连同族的气味都被新宿的味道所掩盖]。
+[k]
+
+[charaFace D 4]
+＠阿尔托莉雅·Alter
+所以，他只记得自己有故乡。[r]却不知道该去往何方。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[charaPut C 1200,1200]
+[charaEffectStop C bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠福尔摩斯
+我们已经做不了什么了，[r][&Mr.:Miss][%1]。
+[k]
+
+[charaFace E 0]
+＠福尔摩斯
+他的故事，到此结束。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠阿尔托莉雅·Alter
+……？[r]唔，卡瓦斯Ⅱ世怎么了？
+[k]
+
+[messageOff]
+
+
+[bgmStop BGM_EVENT_6 1.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 1.0]
+
+[se ad340]
+
+[scene 38330]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1]
+
+[wt 2.0]
+[seStop ad340 1.0]
+[wt 1.4]
+
+＠
+不知不觉中，失去了某种重要的存在。[r][line 3]比起痛苦，失落感更为巨大。
+[k]
+
+＠
+看来自己再一次败北了。[r]原因，是因为看到那条白色的狗吗。
+[k]
+
+＠
+自己在看到那个的时候为什么会停下来呢？[r]区区流浪狗，明明驱散就好了。
+[k]
+
+＠
+……但想到这里，心情莫名感到不快。[r]不再继续思考了。
+[k]
+
+＠
+因为前腿被撕裂，根本无法正常奔跑。[r]那匹钢铁之马会立刻追上自己吧。
+[k]
+
+＠
+然而，却没有追上来……[r]是因为骑在自己背上的[#那个]在奋斗吗。
+[k]
+
+＠
+怎么可能，我不禁自嘲。[r]自己从未向他敞开过心扉。
+[k]
+
+＠
+既然自己只将他当做道具，[r]那他也没有为自己做这些的道义。
+[k]
+
+＠
+啊啊，但是。[r]事到如今，应该去往何方呢。
+[k]
+
+＠
+好想回去。[r]想要回故乡。
+[k]
+
+＠
+但是，已经看不见了。[r]已经想不起来了。连味道都分辨不出。
+[k]
+
+＠
+过去自己究竟生活在哪里呢？
+[k]
+
+＠
+大地应该更为柔软才对。[r]应该有青草的芳香才对。
+[k]
+
+＠
+天空应该有无数星辰闪烁才对。[r]拂过脸庞的风应该更为舒畅才对。
+[k]
+
+＠
+但是，这些不过是记忆。[r]无法回想起五感的知觉。
+[k]
+
+＠
+无论是柔软的大地、青草的芳香、[r]闪耀的星辰、还是舒畅的轻风……
+[k]
+
+＠
+明明应该感受过。[r]却已经全都忘记了。
+[k]
+
+＠
+但是，无论如何都想回去。[r]因为已经结束了，因为已经败北了。
+[k]
+
+
+＠
+想回去。[r]想回去，想回去，想回去……！
+[k]
+
+[messageOff]
+
+[wipeout circleIn 1.0 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+[scene 39200]
+
+[wipein circleIn 1.0 1.0]
+[wait wipe]
+
+＠
+[line 3]啊啊。
+[k]
+
+＠
+气息随着生命倾吐而出，我终于理解了。
+[k]
+
+＠
+能回归的地方早已不存在了。[r]不，是能回归的地方[#只有这里]。
+[k]
+
+＠
+心甘情愿被召唤，心甘情愿在此处杀戮。[r]在这里划出地盘，用咆哮令人类心惊胆战。
+[k]
+
+＠
+这肮脏的，人类们所居住的地方，[r]才是自己的故乡啊。
+[k]
+
+
+＠
+所以，我已经无法回到那个地方了。[r]我一直在寻找的，是被自己舍弃的存在。
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripDownToUp 2.0 1.0]
+[wait wipe]
+[scene 28302]
+[wt 1.0]
+[wipein rectangleStripUpToDown 2.0 1.0]
+[wait wipe]
+
+[wt 0.4]
+
+[se ad359]
+
+[wt 3.7]
+
+[wipeout rectangleStripUpToDown 2.0 1.0]
+[wait wipe]
+[scene 38330]
+[wt 1.0]
+[wipein rectangleStripDownToUp 2.0 1.0]
+[wait wipe]
+
+[wt 0.4]
+
+[wipeout openEye 4.0 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+[wipein openEye 0.1 1.0]
+[wait wipe]
+[se ad316]
+[wt 1.4]
+
+
+[charaFadeout G 0.1]
+
+[wipeFilter openEye 0.5 1.0]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[fadein black 0.4]
+[wait fade]
+
+[wt 1.4]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_11 2.0]
+[wait fade]
+
+
+[wt 2.0]
+[messageOff]
+[soundStopAll]
+[end]

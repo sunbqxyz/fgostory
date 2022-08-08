@@ -1,0 +1,930 @@
+
+＄94-05-14-14-1-0
+[soundStopAll]
+
+[charaSet A 2001300 1 卫宫]
+[charaSet B 1036300 1 兰陵王]
+[charaSet C 3044000 1 雏罂]
+[charaSet D 2042001 1 伊莉雅]
+[charaSet F 1098200900 1 紫式部]
+[charaSet G 98002000 1 芙芙]
+
+[imageSet H cut202_viedo 1]
+[imageSet I back10000 1]
+[charaScale I 1.01]
+
+[charaSet J 1098199500 1 丧尸]
+[charaSet K 1098199600 1 丧尸]
+[charaSet L 1098199600 1 丧尸]
+
+[imageSet M cut203_diary 1]
+[charaSet N 1098200600 1 红宝石]
+
+[charaDepth I 5]
+[charaDepth H 8]
+
+[scene 100300]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[se ad186]
+[effect bit_talk_41]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠雏罂
+复活。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[effectDestroy bit_talk_41]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠紫式部
+身体有没有什么地方痒？[r]还有，会不会想吃肉？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠雏罂
+你打算开美容店或是烤肉店吗？
+[k]
+
+[charaFace C 0]
+
+＠雏罂
+……这个暂且不论，我不觉得痒，[r]也不想要什么肉。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠紫式部
+那我就放心了！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠兰陵王
+那我们继续寻找线索吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠伊莉雅
+感觉找起来会很累人……
+[k]
+
+
+？1：只能从一侧开始向着另一侧慢慢找了……
+
+[branch select01_1]
+
+？2：开始就要决胜负……
+
+[branch select01_2]
+
+？！
+
+[label select01_1]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠兰陵王
+很踏实呢。[r]那我陪您一起找吧。
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgm BGM_EVENT_77 1.0 0.4]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[bgm BGM_EVENT_77 1.0 1.0]
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+
+＠兰陵王
+我喜欢这类工作本身虽枯燥而乏味，[r]但反之能获得明确成果的做法。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠卫宫
+的确。
+[k]
+
+[charaFace A 1]
+
+＠卫宫
+话说回来，虽然我早就听说了，[r]但这里的储藏量好惊人啊。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠紫式部
+不只是量，尺寸也是特大的……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠卫宫
+嗯。
+[k]
+
+＠卫宫
+这边的牛奶加仑桶确实很有美式感？
+[k]
+
+[charaFace A 7]
+＠卫宫
+不过除了[%1]以外，[r]估计没人能理解我的意思吧……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠紫式部
+哎呀。
+[k]
+
+[charaFace F 0]
+
+＠紫式部
+虽然很小，但这里有个影像角。[r]这该不会是……
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+
+[se bas2]
+[charaFadein H 0.4 0,-200]
+[charaFadeTime I 0.4 0.6]
+[wt 2.1]
+
+[charaFadeout H 0.4]
+[charaFadeout I 0.4]
+[wt 0.5]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠紫式部
+找到了！
+[k]
+
+＠紫式部
+在影像角的角落里，[r]有一盘贴了白色标签的录像带……
+[k]
+
+＠紫式部
+能从中感受到微弱的魔力，[r]应该就是这个没错了。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠雏罂
+你找到了什么？
+[k]
+
+＠雏罂
+我也找到了。[r]就是那个日记。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[branch select01_end]
+
+[label select01_2]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠雏罂
+也就是随便找找吧。[r]那我去那边。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠伊莉雅
+我也来～。
+[k]
+
+＠红宝石
+真是随便三人组呢。
+[k]
+
+[charaFace D 2]
+
+＠伊莉雅
+我[messageShake 0.02 3 3 0.4]无法接受被红宝石这么评价！
+[k]
+
+[charaFace D 5]
+
+＠伊莉雅
+我可从没见到像红宝石你这样随便的人……[r]不对，是随便的杖子！
+[k]
+
+＠红宝石
+哈哈哈，怎么会呢～。
+[k]
+
+＠红宝石
+红宝石亲我可一直都是很可靠的哦？
+[k]
+
+[charaFace D 2]
+
+＠伊莉雅
+大家不要被这家伙骗了！　这家伙的意思是[r]一直都很可靠地拖着我们随便乱跑的意思！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk depthOff]
+[charaDepth C 4]
+[charaDepth D 6]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace D 2]
+[charaFadein C 0.1 2]
+[charaFadein D 0.1 0]
+
+＠雏罂
+伊莉雅，安静点。
+[k]
+
+[charaFace D 4]
+＠伊莉雅
+啊，对……对不起。[r]你讨厌吵闹的人吧。
+[k]
+
+[charaFace C 0]
+＠雏罂
+[FFFFFF]？[-]
+[k]
+
+＠雏罂
+我并不讨厌哦。[r]何况自然本身就是吵闹的。
+[k]
+
+＠雏罂
+雷声的音量大得毫无限度，[r]大瀑布则会发出粉碎一切的声响。
+[k]
+
+[charaFace D 9]
+＠伊莉雅
+哎……
+[k]
+
+＠雏罂
+只是现在如果不保持安静的话，[r]寻找起来会很费功夫而已。
+[k]
+
+[charaFace D 0]
+＠伊莉雅
+啊，好。[r]对不起。
+[k]
+
+＠雏罂
+……[r]……
+[k]
+
+[charaFace D 9]
+＠伊莉雅
+呃，有事吗……？
+[k]
+
+[charaFace C 4]
+＠雏罂
+不……从者应该会保持全盛期吧？
+[k]
+
+[charaFace D 12]
+＠伊莉雅
+啊哈哈，我算是个例外吧……
+[k]
+
+[charaFace C 0]
+＠雏罂
+魔法少女？[r]还是护法少女？
+[k]
+
+[charaFace D 3]
+＠伊莉雅
+差……差不多是这种感觉吧。
+[k]
+
+[charaFace C 0]
+＠雏罂
+这么说来，那个名叫瞑生院的，[r]她的全盛期也是少女期吗？
+[k]
+
+？1：或许吧。
+
+[charaFace C 4]
+＠雏罂
+……真不可思议。
+[k]
+
+＠雏罂
+我只是隐约感觉哦，总觉得那孩子的全盛期[r]应该是更为成长一些的状态。
+[k]
+
+[charaFace D 0]
+＠伊莉雅
+啊，我也这么认为。
+[k]
+
+[charaFace D 6]
+＠伊莉雅
+明明是同龄人，[r]但她给人的感觉比我大了三岁左右吧……
+[k]
+
+？2：我总觉得好像不太对……
+
+[charaFace D 10]
+＠伊莉雅
+就是嘛。[r]她只要一开口，
+[k]
+
+＠伊莉雅
+就令人莫名感慨，[r]『啊，Lily小姐的人生经验很丰富呢』！
+[k]
+
+？！
+
+[charaFace C 4]
+＠雏罂
+确实，那孩子很老练。[r]就像四圣……不，是四凶那种老练。
+[k]
+
+[charaFace D 9]
+＠伊莉雅
+我觉得应该和阿比盖尔亲……亲？[r]有什么关系吧。
+[k]
+
+＠伊莉雅
+但就算询问Lily小姐，[r]她本人好像也没什么头绪。
+[k]
+
+[charaFace C 0]
+＠雏罂
+是吗？
+[k]
+
+[charaFace D 0]
+[charaMoveReturn D -256,-10 0.3]
+＠伊莉雅
+（点头点头。）[wt 0.3][charaMoveReturn D -256,-10 0.3]
+[k]
+
+[charaFace C 0]
+＠雏罂
+唔～。[r]那么，那孩子会来这里只是个偶然吗……
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgm BGM_EVENT_77 1.0 0.4]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 1.0]
+
+[bgm BGM_EVENT_77 1.0 1.0]
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk depthOn]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠雏罂
+唔？[r]这是什么，书店？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠伊莉雅
+以书店而言规模未免太小了……[r]类似于书报角吧？
+[k]
+
+＠红宝石
+啊，就是以前在超市角落常见的那种吧。
+[k]
+
+＠红宝石
+周刊少年漫画杂志不知为何[r]总会满是尘埃地一直留在架子上。
+[k]
+
+＠红宝石
+小学生会说『哇～，是新的耶～，[r]咦，我好像看过这本呢～。』
+[k]
+
+＠红宝石
+就是那种的书报角吧。
+[k]
+
+[charaFadeTime I 0.1 0.6]
+[charaFace D 6]
+＠伊莉雅
+（这根杖子好像很熟悉呢……就算内心这么想，[r]　但越是吐槽就陷得越深，所以还是保持沉默吧。）
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠雏罂
+……[r]……原来如此。
+[k]
+
+[charaFace C 1]
+
+＠雏罂
+那这本是什么呢。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[se bas2]
+[charaTalk M]
+[charaFadein M 0.4 0,-200]
+[charaFadeTime I 0.4 0.6]
+[wt 1.8]
+
+？1：这……
+？！
+
+[charaFadeout M 0.4]
+[charaFadeout I 0.4]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠雏罂
+看来是找到了。[r]虽然我不知道为什么会放在书报角。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+
+＠红宝石
+噢噢。[r]某人的日记，入手！
+[k]
+
+[messageOff]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[se ade74]
+[wt 0.4]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+[seStop ade74 0.1]
+[wt 0.4]
+
+＠紫式部
+各位在这里呀。
+[k]
+
+＠紫式部
+我们也找到了录影带。[r]但愿能从中找到一些线索……
+[k]
+
+[label select01_end]
+？！
+
+[charaFace F 10]
+[bgmStop BGM_EVENT_77 0.6]
+
+＠紫式部
+！
+[k]
+
+[charaFace F 2]
+＠紫式部
+雏罂大人！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+[se ade471]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.4 1]
+[wt 1.2]
+
+[bgm BGM_EVENT_71 0.1]
+
+[charaMoveScale J 1.1 0.6]
+
+[charaMove J 0,15 0.6]
+[wt 0.5]
+[cueSe Battle bac2]
+[wt 0.6]
+
+[charaMoveScale J 1.2 0.6]
+[charaMove J 0,30 0.6]
+[wt 0.5]
+[cueSe Battle bac2]
+[wt 0.6]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠雏罂
+真是的。[r]不要随便弄脏重瞳大人的枪啦。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaScale J 1.0]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+[se bac139]
+[charaEffect J bit_talk_x_slash03 0,100]
+[wt 0.2]
+[charaShake J 0.03 5 5 0.3]
+[wt 0.6]
+
+[charaFadeout J 0.4]
+[charaMove J 0,-50 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠伊莉雅
+哇，不要紧吧？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+
+[se ade472]
+
+[charaTalk off]
+[charaDepth J 6]
+[charaDepth K 5]
+[charaDepth L 4]
+
+[charaFace J 0]
+[charaFadein J 0.4 0,0]
+[charaFace K 0]
+[charaFadein K 0.4 -350,0]
+[charaFace L 0]
+[charaFadein L 0.4 350,0]
+[wt 0.4]
+
+＠丧尸
+OOoOOooOoOo……
+[k]
+
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠雏罂
+还有残党啊。[r]不过这种对付起来太轻松了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_71 1.0]
+
+[charaTalk off]
+
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[charaFace K 0]
+[charaFadein K 0.1 -350,0]
+[charaFace L 0]
+[charaFadein L 0.1 350,0]
+
+＠丧尸
+……[r]……
+[k]
+
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠雏罂
+唔？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+
+[charaFace J 1]
+[charaFadein J 0.1 1]
+[charaFace K 1]
+[charaFadein K 0.1 -350,0]
+[charaFace L 1]
+[charaFadein L 0.1 350,0]
+[charaShake J 0.03 4 4 0.4]
+[charaShake K 0.03 4 4 0.4]
+[charaShake L 0.03 4 4 0.4]
+＠丧尸
+OOOoOooO○○○○○o！
+[k]
+
+[messageOff]
+[se ad184]
+[se ad788]
+[wt 0.1]
+[charaMoveScale J 1.2 0.4]
+[charaMoveScale K 1.2 0.4]
+[charaMoveScale L 1.2 0.4]
+[charaMove J 0,30 0.4]
+[charaMove K -380,30 0.4]
+[charaMove L 380,30 0.4]
+[charaFadeout J 0.4]
+[charaFadeout K 0.4]
+[charaFadeout L 0.4]
+[wt 0.4]
+[seStop ad184 0.2]
+[seStop ad788 0.2]
+[wt 0.4]
+
+
+[bgm BGM_EVENT_126 0.1]
+
+[charaDepth C 5]
+[charaDepth B 8]
+[charaDepth D 7]
+[charaDepth A 6]
+[charaDepth F 3]
+
+[charaFace C 2]
+[charaFadein C 0.1 -406,0]
+[charaFace B 2]
+[charaFadein B 0.1 -206,0]
+[charaFace D 2]
+[charaFadein D 0.1 0,0]
+[charaFace A 2]
+[charaFadein A 0.1 236,0]
+[charaFace F 2]
+[charaFadein F 0.1 406,0]
+
+＠全员
+[f large]跑起来了！？
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠芙芙
+芙芙芙！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠紫式部
+不……不好了！[r]是奔跑的丧尸！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠兰陵王
+和行走的那类有什么不同！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠紫式部
+毫无情趣和余韵，单纯强得离谱！[r]另外一旦被咬到就会死。
+[k]
+
+[charaFace F 11]
+
+＠紫式部
+然后大概等30秒左右就会苏醒[line 3][r]并成为丧尸！
+[k]
+
+＠紫式部
+奔跑丧尸的卖点就是速度感！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠兰陵王
+原来如此简单易懂！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠卫宫
+要与敌人接触了，各自开始准备战斗！
+[k]
+
+＠卫宫
+不仅御主，[r]其他人也得小心不能被咬到！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+
+＠紫式部
+顺便一提，不仅不能被咬到，[r]有时连被它们的爪子抓伤也不行！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠卫宫
+……总之千万不要受伤！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_126 0.5]
+[wait fade]
+[soundStopAll]
+[end]

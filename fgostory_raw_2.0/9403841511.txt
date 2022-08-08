@@ -1,0 +1,323 @@
+
+
+＄94-03-84-15-1-1
+
+[soundStopAll]
+
+[charaSet A 1098173200 1 魔导僧兵1]
+[charaSet B 1098173200 1 魔导僧兵2]
+[charaSet C 1098173200 1 魔导僧兵3]
+[charaSet D 7035001 1 森长可]
+[charaSet E 1098173900 1 摩玖主大僧正]
+
+[charaSet G 1098171500 1 摩玖主的Caster]
+[charaSet H 3038000 1 长尾景虎]
+[charaSet I 98115000 1 特效用]
+[charaSet J 98115000 1 特效用]
+
+
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[branch lblConf]
+[label lblNotClear]
+
+[charaSet F 8001000 1 玛修]
+
+
+[branch lblNotClear_out]
+[label lblConf]
+
+[charaSet F 8001410 1 玛修]
+
+
+
+[label lblNotClear_out]
+
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_lightning_01t]
+
+[scene 79700]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk off]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth C 2]
+[charaDepth A 3]
+
+[charaFace A 0]
+[charaFace B 0]
+[charaFace C 0]
+[se ad270]
+[seStop ad270 0.5]
+[charaFadein A 0.4 1]
+[wt 0.3]
+[se ad270]
+[seStop ad270 1.0]
+[charaFadein B 0.4 -300,0]
+[wt 0.1]
+
+[charaFadein C 0.4 300,0]
+[wt 1.0]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+[charaTalk A]
+
+＠A：魔导僧兵
+增援展开，继续包围歼灭。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad61]
+[charaPut I 1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0,-10]
+[charaShake D 0.05 3 3 0.4]
+[charaMove D 1 0.4]
+[wt 0.4]
+
+＠森长可
+嘁！　如果身体能自由行动，[r]这种杂兵根本不在话下！[seStop ad61 0.5]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠摩玖主大僧正
+怎么了？　我这儿的魔导僧兵还多得是哦。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk H]
+[charaFace H 16]
+[charaFadein H 0.1 1]
+
+＠长尾景虎
+在这个大堂内……从者似乎无法自由行动……！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠摩玖主大僧正
+所以我不是说过了吗，[#摩玖主:MAX]大本尊的魔力[r]正如字面所述，是『[#无限]』的。
+[k]
+
+＠摩玖主大僧正
+其无限的力量能够实现所有愿望。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠家老玛修
+这不可能……无论多么强大的魔力，[r]都不可能是永无止境的！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠摩玖主大僧正
+亲自感受了神之力量后居然还不相信啊，[r]你们的愚蠢真是超越了我的想象……
+[k]
+
+＠摩玖主大僧正
+已经够了，Caster，[r]将这种不畏神佛之人抓起来改造成魔导僧兵。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+＠摩玖主的Caster
+真的可以吗……？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠摩玖主大僧正
+但在魔王信长已死的现在，[r]已经无人可以对抗吾等的神明了。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠长尾景虎
+呜……！　岂能让你得逞……！
+[k]
+
+[messageOff]
+
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[se ad475]
+[seStop ad475 1.0]
+[se ad473]
+[seStop ad473 1.0]
+[fowardEffect bit_talk_31]
+[wt 0.5]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+[se ad14]
+[seStop ad14 0.5]
+[charaScale J 4.5]
+[charaPut J 1]
+[charaEffect J bit_talk_43l]
+[shake 0.05 0 3 1.7]
+
+[se ad472]
+[seVolume ad472 0 0.7]
+[seStop ad472 0.5]
+[wt 0.4]
+
+[charaFace H 16]
+
+[charaEffectStop J bit_talk_43l]
+[wt 0.5]
+[charaScale J 1.0]
+
+[se ad61]
+[charaPut I 1]
+[charaShake H 0.05 3 3 0.4]
+[charaMove H 0,-10 0.4]
+[wt 0.4]
+[seStop ad61 0.5]
+
+＠长尾景虎
+身体……不听……！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠摩玖主的Caster
+这是不可能的，在这大堂内，[r]我能名副其实地使用无穷无尽的魔力。
+[k]
+
+＠摩玖主的Caster
+就算是毗沙门天的化身，[r]也无法轻易行动哦。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk H]
+[charaFace H 16]
+[charaFadein H 0.1 1]
+
+＠长尾景虎
+如果我们没回去，迦勒底军是不会放过你们的！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠摩玖主大僧正
+我完全不在乎。士兵已经没有任何意义了。[r]因为真正的极乐净土将会在此地出现。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk H]
+[charaFace H 16]
+[charaFadein H 0.1 1]
+
+＠长尾景虎
+真正的……极乐净土……？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaSet G 1098171510 1 摩玖主的Caster]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠摩玖主的Caster
+那么各位，虽说非常抱歉，[r]但请老老实实待一阵子吧。
+[k]
+
+
+[messageOff]
+[fadeout white 1.5]
+[bgmStop BGM_EVENT_3 1.5]
+[wait fade]
+[scene 10000]
+[charaFadeout G 0.1]
+[wt 1.5]
+[fadein white 1.0]
+[wait fade]
+[fadeout black 0.1]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

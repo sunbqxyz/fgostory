@@ -1,0 +1,501 @@
+
+
+
+＄94-06-49-05-3-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001400 1 マシュ]
+[charaSet B 1046002 1 伊吹童子]
+[charaSet C 4043001 1 太公望]
+[charaSet D 1098124510 1 ダ・ヴィンチ]
+[charaSet E 1098123210 1 ゴルドルフ]
+[charaSet F 1098213900 1 四不相]
+
+[charaSet G 98115000 1 通信用]
+
+[charaSet H 4044001 1 ニキチッチ]
+
+[imageSet I cut318_nkt01 1]
+[charaScale I 1.01]
+[imageSet J cut318_nkt02 1]
+[charaScale J 1.01]
+[imageSet K cut318_nkt03 1]
+[charaScale K 1.01]
+
+[charaSet T 98115000 1 エフェクト用]
+
+[charaScale B 1.3]
+
+[scene 128700]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[cueSe SE_21 21_ade670]
+[seVolume 21_ade670 0 0.7]
+
+[wt 1.7]
+
+[se ade4]
+
+[wt 2.0]
+
+[charaFadein K 0.3 0,-180]
+[charaMove K 0,-200 0.3]
+[wt 0.5]
+
+[seStop ade4 0.4]
+
+＠ニキチッチ
+ははははははは！
+[k]
+
+[messageOff]
+[charaFadeout K 0.5]
+
+[scene 106800 0.5]
+[wt 1.0]
+
+[se ad85]
+[wipeout downToUp 0.3 1.0]
+[wait wipe]
+[scene 128700]
+[wt 0.2]
+[wipein upToDown 0.3 1.0]
+[wait wipe]
+
+
+[se ad171]
+[effect bit_talk_gram_slash_04_fs]
+
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+[se ad170]
+[effect bit_talk_14]
+[charaShake A 0.03 4 4 0.5]
+
+＠マシュ
+くっ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFadein K 0.2 0,-200]
+
+＠ニキチッチ
+ははは、空中戦には不慣れとみたぞ！
+[k]
+
+[messageOff]
+[charaFadeout K 0.2]
+
+[se ade4]
+
+[wt 2.5]
+
+[seStop ade4 0.4]
+
+？1：空から……！
+？2：メリュジーヌといい、また空中戦！
+
+？！
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 -30,15]
+＠伊吹童子
+飛び道具の乱れ打ちこそないけど、[r]いかにもこっちの不利ね！
+[k]
+
+[charaFace B 9]
+
+＠伊吹童子
+空中戦するのはいいけど、[r]マスターとマシュを置いてけぼりもアレだし……
+[k]
+
+[charaFace B 6]
+＠伊吹童子
+森の木々を遮蔽にするわ！　こっち来て！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaFadein I 0.2 0,-200]
+
+＠ニキチッチ
+させんぞ。
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[cueSe SE_21 21_ade670]
+[seVolume 21_ade670 0 0.7]
+
+[wt 1.5]
+
+[scene 106800 0.5]
+[wt 1.0]
+
+[se ad85]
+[wipeout downToUp 0.3 1.0]
+[wait wipe]
+[scene 128700]
+[wt 0.2]
+[wipein upToDown 0.3 1.0]
+[wait wipe]
+
+[charaScale B 1.4]
+
+[effect bit_talk_kengekiall04_fs]
+[wt 0.2]
+[se bac142]
+[wt 0.2]
+[se bac142]
+[wt 0.2]
+[se bac143]
+[wt 0.4]
+
+[effectDestroy bit_talk_kengekiall04_fs]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 -30,25]
+[charaMove B -30,15 0.3]
+[charaMoveScale B 1.3 0.3]
+[se ad419]
+[effect bit_talk_14]
+
+[se ad496]
+[wt 0.8]
+
+[charaFace B 7]
+＠伊吹童子
+わお！
+[k]
+
+＠伊吹童子
+痺れるゥ！[r]なんだか変な感じ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠マシュ
+ワイバーンを利用した高機動空中戦闘[line 3]
+[k]
+
+＠マシュ
+ドブルイニャ・ニキチッチ！[r]強敵です、マスター！
+[k]
+
+＠マシュ
+その上、あちらの攻撃は竜種への、[r]伊吹童子さんへの特攻を有しています！
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad13]
+[charaPut G 0,0]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.2 1]
+[wt 0.4]
+
+＠ダ・ヴィンチ
+ああ、竜殺しにしてドラゴンライダーだった！[r]欲張りセットにも程がある！
+[k]
+
+[charaFace D 2]
+
+＠ダ・ヴィンチ
+ならあの白い飛竜、[r]ニキチッチ伝説の名馬が変容したものかもだ！
+[k]
+
+＠ダ・ヴィンチ
+気を付けて、ただのワイバーンじゃない！[r]あれはあれで一騎の英霊とみなすべきだ！
+[k]
+
+[messageOff]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[cueSe SE_21 21_ade670]
+[seVolume 21_ade670 0 0.7]
+
+[wt 1.5]
+
+[se ade4]
+
+[wt 1.5]
+
+[seStop ade4 0.5]
+
+[charaFadein J 0.2 0,-200]
+
+＠ニキチッチ
+理不尽に挑み、[r]不可能に挑むが英雄なれば！
+[k]
+
+＠ニキチッチ
+挑め！
+[k]
+
+＠ニキチッチ
+翼なきがゆえ空中戦は無理、などと！[r]言わせないのでそのつもりでいなさい！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[se ad27]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠太公望
+……いやいや。
+[k]
+
+＠太公望
+いや、いやいやいやいやいや。[r]流石にそれは言い過ぎでしょう、ニキチッチ。
+[k]
+
+＠太公望
+翼なきものに空を飛べ、[r]迷った幼子にそのまま歩けなどとは、ね。
+[k]
+
+[charaFace C 0]
+
+＠太公望
+僕たちは大人なんですから、[r]それなりの対応をしてあげましょうよ。
+[k]
+
+[messageOff]
+
+[charaFace C 4]
+[wt 1.2]
+
+[bgmStop BGM_EVENT_80 2.0]
+
+[charaFace C 0]
+
+＠太公望
+空が飛べない？
+[k]
+
+＠太公望
+理不尽に挑めない？
+[k]
+
+＠太公望
+ならば誰かが力を貸せば良いのですよ、ニキチッチ。[r]そう、この場合は[line 3]
+[k]
+
+[bgm BGM_EVENT_63 0.1]
+
+[charaFace C 1]
+＠太公望
+[#僕が]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaFadein J 0.2 0,-200]
+
+＠ニキチッチ
+！
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[fowardEffect bit_talk_sorcery_tik_03]
+[wt 0.1]
+[cueSe SE_21 21_ade669]
+[wt 3.4]
+
+[cueSe SE_21 21_ade661]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[se bas9]
+[fowardEffect bit_talk_np_buf]
+[wt 0.5]
+
+＠マシュ
+……！
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut T 0,100]
+[charaScale T 1.2]
+[se bas9]
+[charaEffect T bit_talk_np_buf]
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 -30,15]
+＠伊吹童子
+あれ、二人もちょっと浮いてる？
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？1：この感じ……
+？！
+
+？1：マシュ！
+？！
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠マシュ
+はい！　空中歩行の魔術効果と思われます！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth C 2]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠太公望
+カルデアのお二人、[r]これより方術によるバックアップを行います。
+[k]
+
+[messageOff]
+
+[cueSe Servants_302000 m07405]
+[seVolume m07405 0 0.4]
+[wt 0.3]
+[charaTalk off]
+[charaFace F 0]
+[charaFadein F 0.4 50,0]
+[charaMove F -100,0 0.8]
+[wt 0.3]
+[cueSe Servants_302000 m07405]
+[seVolume m07405 0 0.6]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk C]
+
+[charaFace C 1]
+
+＠太公望
+ちなみに僕は[#四不相:しふそう]くんに。[r]これでもクラスはライダーなもので、ええ。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+え……
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[cueSe SE_21 21_ade670]
+[seVolume 21_ade670 0 0.7]
+
+[wt 1.5]
+
+[se ade4]
+
+[wt 2.0]
+[seStop ade4]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 -30,15]
+＠伊吹童子
+急降下、来るよ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth C 2]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+[charaFace F 0]
+[charaFadein F 0.1 -100,0]
+＠太公望
+ならば、先に空へ上がるまで！[r][line 3]いざ！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_63 0.4]
+[wait fade]
+[soundStopAll]
+[end]

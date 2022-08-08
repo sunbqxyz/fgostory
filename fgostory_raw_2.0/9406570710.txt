@@ -1,0 +1,386 @@
+
+＄94-06-57-07-1-0
+
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 28002000 1 フェイカー]
+[charaSet B 1098166310 1 車掌]
+
+[sceneSet C 144300 1]
+[charaScale C 1.02]
+
+[charaSet D 4032000 1 ライネス]
+[charaSet E 1098165700 1 ムネーモシュネー]
+[charaSet F 9008002 1 アストライア]
+[charaSet G 1098124510 1 ダ・ヴィンチ]
+
+[imageSet H back10001 1]
+[charaScale H 1.05]
+
+[charaSet I 98006200 1 通信用]
+[charaPut I 2000,2000]
+[charaEffect I bit_talk_10_LowLevel]
+
+[sceneSet J 144600 1]
+[sceneSet K 144600 1]
+
+[scene 144901]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[shake 0.05 3 3 1.1]
+
+[se ad241]
+[se ad308]
+[se ad298]
+[seVolume ad308 0 0.1]
+[seVolume ad298 0 0.1]
+
+[fadein black 1.0]
+[seVolume ad308 1.0 1.0]
+[seVolume ad298 1.0 1.0]
+[wait fade]
+
+[shake 0.05 2 2 1.1]
+[wt 1.0]
+[shake 0.05 1 1 1.0]
+[seStop ad308 1.5]
+[seStop ad298 1.5]
+[seStop ad241 2.5]
+[wt 3.5]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 144300]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+終わったのか……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠車掌
+どうやら、そのようですね。[r]聖槍から排出されていたオートマタが停止しました。
+[k]
+
+＠車掌
+特異点を覆っていた結界も解除されました。[r]これならば、特異点に侵入可能です。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+よし。[r][%1]、かまわないな？
+[k]
+
+？1：もちろん
+？2：行こう！
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_81 2.0]
+
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[se ad231]
+[charaFadein C 0.2 0,-202]
+[wt 0.16]
+[charaFadeout C 0.7]
+[wt 1.6]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+[%1]？！
+[k]
+
+[messageOff]
+
+[se ad31]
+[seStop ad31 0.8]
+[fowardEffect bit_talk_noise_gr]
+[wt 0.5]
+[fowardEffectStop bit_talk_noise_gr]
+[wt 0.2]
+
+[wipeout magic 1.0 0.5]
+[wait wipe]
+
+[fowardEffectDestroy bit_talk_noise_gr]
+[fadeout black 0.1]
+[wait fade]
+
+[wipein magic 0.1 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 74200]
+
+[pictureFrameTop cut063_cinema]
+[wipeFilter openEye 0.2 0.7]
+[cameraFilter gray]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_48 0.1 0.5]
+
+＠ライネス
+自律観測型存在証明システム……ムネーモシュネー。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 0,-50]
+
+＠ムネーモシュネー
+ええ、その通りです。私はレイシフトの際、[r]存在証明のためにつくられたサブシステムです。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[scene 74500]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+＠？？？
+君には、結構期待してるんだぜ[line 2][#ムネーモシュネー][line 2]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[scene 74201]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 0,-50]
+[backEffect bit_talk_charge_blu]
+[effect bit_talk_06_blue 0,-250]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.3]
+
+＠アストライア
+『[#ここに秩序は帰還せり:ヤ ム ・ レ デ ィ ト ・ エ ト ・ ウ ィ ル ゴ]』[line 2]！
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout white 1.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+[effectDestroy bit_talk_06_blue]
+[backEffectStop bit_talk_charge_blu]
+[scene 10000]
+[wt 1.0]
+
+[fadein white 1.5]
+[wait fade]
+
+[fadeout black 0.1]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+[scene 74201]
+
+[charaTalk G]
+[charaPut I 230,-50]
+[charaFace G 26]
+[charaFadein G 0.1 230,-50]
+[charaFace E 8]
+[charaFadein E 0.1 -256,-50]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+＠ダ・ヴィンチ
+いいかい？[r]彼の第二の生は、[#最後の瞬間まで完璧だったんだ]。
+[k]
+
+[charaFace G 25]
+
+＠ダ・ヴィンチ
+君は、彼の喪失を正しく運用しなければと言ったが、[r]そんな必要はなかった。
+[k]
+
+＠ダ・ヴィンチ
+[#私:かれ]に後悔なんて一瞬たりともなかったとも。[r]だから、[%1][&君:ちゃん]がここにいるんだ。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[charaPut I 2000,2000]
+[charaEffectStop I bit_talk_10_LowLevel]
+
+[wipeOff]
+[cameraFilter normal]
+[pictureFrameTop]
+
+[scene 144300]
+[wt 0.5]
+
+[bgm BGM_MAP_48 1.0 1.0]
+
+[wipeout magic 0.1 0.5]
+[wait wipe]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipein magic 0.8 0.5]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 -6,0]
+[se ade422]
+[seStop ade422 0.4]
+[wt 0.2]
+[charaMove A 0,-6 0.4]
+[charaShake A 0.05 2 2 0.2]
+[wt 0.8]
+[charaFace A 0]
+
+＠フェイカー
+今のは………おそらく最後のフィードバックか………！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠車掌
+大丈夫ですか。
+[k]
+
+？1：大丈夫です
+？2：行きましょう
+
+？！
+
+[bgmStop BGM_MAP_48 2.5]
+
+＠車掌
+了解しました。
+[k]
+
+＠車掌
+ただいまから、特異点への侵入を開始します。[r]霊脈との接続確認。霊的軌条敷設。
+[k]
+
+[messageOff]
+[se ad270]
+[se ade42]
+[fadeout black 1.0]
+[wait fade]
+
+[se ade157]
+[charaFadeout B 0.1]
+
+[charaDepth J 1]
+[charaDepth K 2]
+
+[charaScale J 2.5]
+[charaFadein J 0.1 -100,-150]
+[scene 144600]
+[wt 1.0]
+
+[fadein black 1.0]
+[charaMoveScale J 3.0 5.0]
+[charaMove J -600,-150 5.0]
+[cueSe SE_21 21_ade688]
+[seVolume 21_ade688 0 0]
+[seVolume 21_ade688 1.0 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_9 0.1]
+[wt 3.0]
+[charaScale K 2.0]
+[charaFadein K 1.0 600,-200]
+[charaMove K 600,-500 5.0]
+[wt 3.0]
+[charaFadeout J 0.1]
+[se ade157]
+[seStop 21_ade688 1.0]
+[wt 3.0]
+[charaFadeout K 1.0]
+[wt 2.0]
+
+？1：空中に、レールが……！
+
+？！
+
+
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_BATTLE_9 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

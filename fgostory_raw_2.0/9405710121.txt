@@ -1,0 +1,170 @@
+
+＄94-05-71-01-2-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1005001 1 尼禄]
+[branchQuestNotClear lblNotClear00 3000303]
+[charaSet B 1098124510 1 达·芬奇]
+[branch lblConf00]
+[label lblNotClear00]
+[charaSet B 98111500 1 达·芬奇]
+[label lblConf00]
+[charaSet C 6031001 1 刑部姬]
+[charaSet D 7039001 1 ？？？]
+[charaSet E 98115000 1 通讯用]
+[charaPut E 1200,1200]
+[charaEffect E bit_talk_10_LowLevel]
+
+[scene 114000]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠尼禄
+真是的。[r]为什么余非得逃跑才行啊！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear01 3000303]
+[charaPut E 1]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+[branch lblConf01]
+
+[label lblNotClear01]
+[charaPut E 1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf01]
+＠达·芬奇
+没办法啊。一旦在那里引发了骚动，[r]对我们没有任何好处。
+[k]
+
+＠达·芬奇
+呃，现在位置……[r]从中央大道分出去的支路吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠刑部姬
+呜呜，好不容易来一趟秋叶原！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear02 3000303]
+[charaPut E 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[branch lblConf02]
+
+[label lblNotClear02]
+[charaPut E 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf02]
+＠达·芬奇
+反正我们也搜集了不少情报，[r]先花点时间整理吧[line 3]
+[k]
+
+[charaFace B 2]
+＠达·芬奇
+哎，稍微等一下！[r]有[#从者反应]，很近！
+[k]
+
+＠达·芬奇
+西北方向，约20米……[r]位置大概在道路对面的店铺附近。
+[k]
+
+[branchQuestNotClear lblNotClear03 3000303]
+
+＠达·芬奇
+麻烦你们肉眼确认一下，[r]是否有疑似从者的存在！
+[k]
+
+[branch lblConf03]
+[label lblNotClear03]
+
+＠达·芬奇
+麻烦你们肉眼确认一下，[r]是否有疑似从者的存在！
+[k]
+
+[label lblConf03]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+[pictureFrame cut063_cinema]
+[wt 0.3]
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-50]
+＠？？？
+这是[line 3]非常有意思的作品呢。
+[k]
+
+＠？？？
+在细节方面也没有任何偷工减料，尤其是在[r]胸部与臀部上能感受到非比寻常的执著。
+[k]
+
+[charaFace D 4]
+＠？？？
+……什么，连倒过来才能看到的地方都做得那么细致。[r][twt 1.0][charaFace D 1]只能用卓越这个词来形容了。
+[k]
+
+[charaFace D 1]
+＠？？？
+嗯。评价可以给一朵小红花。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,0]
+[wt 0.1]
+[pictureFrame]
+[wt 0.3]
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+
+＠刑部姬
+呃……店门口有个人[r]正在非常认真地凝视美少女手办……
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

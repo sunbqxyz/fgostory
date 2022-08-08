@@ -1,0 +1,208 @@
+
+＄94-00-98-92-1-0
+
+[charaSet A 7003001 1 吕布]
+[charaSet B 98002000 1 芙芙]
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+
+[scene 10400]
+
+[fadein black 2]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+＠芙芙
+芙呜……芙？
+[k]
+
+？1：没关系，我有陈宫老师的翻译书。
+？2：没关系，大致能明白。
+
+？！
+
+[messageOff]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 10310]
+
+[se ad8]
+[wait se ad8]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+
+[fadein black 0.6]
+[wait fade]
+
+＠吕布
+[image berserker_language_1][line 5]！[r]（翻译：虽然是晴天，但冬日依然寒冷！　因此要披上虎皮！）
+[k]
+
+[charaFace A 0]
+＠吕布
+[image berserker_language_1][line 5][r]（翻译：我虽无敌，但不知如何打倒冬将军。）
+[k]
+
+＠吕布
+[image berserker_language_1][line 5][r]（翻译：军师啊。若有好计，应尽快道来。）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠芙芙
+芙，芙呜。
+[k]
+
+？1：给。寒冷的时候就该吃这个。
+？2：只能由内而外的取暖吧？
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[charaFace A 5]
+＠吕布
+[image berserker_language_1][line 5]！[r]（翻译：居然是糖果！　蜂蜜应该给袁术才对！）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠芙芙
+芙，芙呜！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠吕布
+[image berserker_language_1]……[r]（翻译：可笑。小动物根本填不饱肚子！）
+[k]
+
+＠吕布
+[image berserker_language_1]……[r]（翻译：无奈。接受军师的提案。给我[line 3]）
+[k]
+
+[se ade13]
+[wt 0.7]
+
+[charaFace A 2]
+[se ade268]
+＠吕布
+[image berserker_language_1][line 3]！！！
+[k]
+[wait se ade268]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠芙芙
+芙，芙！？
+[k]
+
+？1：这样应该就不怕寒冷了。
+？2：不愧是飞将军，眼光真不错。
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠吕布
+[image berserker_language_1]……[r]（翻译：漂亮。干得漂亮，我的军师啊。难道是陈宫？）
+[k]
+
+？1：不是啦。
+？2：我可不是那种虐待狂。
+
+？！
+
+[charaFace A 1]
+＠吕布
+[image berserker_language_1]……[r]（翻译：真遗憾。但是，我得到了难能可贵的军师。）
+[k]
+
+[messageOff]
+[se ad60]
+[charaFadeout A 0.4]
+[wt 0.7]
+[seStop ad60 0.5]
+[wt 2.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+＠吕布
+[image berserker_language_1][line 3]！[r]（翻译：此乃贺礼。婚嫁之时可用此冠！）
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[equipSet C 9806030 1]
+[wait equipSet C]
+[charaFace C 0]
+[charaFadein C 0.5 0,-70]
+[wt 2.0]
+[charaFadeout C 0.4]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠芙芙
+芙呜……芙芙芙[line 3]呜……
+[k]
+
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]

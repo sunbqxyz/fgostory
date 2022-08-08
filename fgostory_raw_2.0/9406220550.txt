@@ -1,0 +1,1991 @@
+
+
+＄94-06-22-05-5-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001001 1 マシュ]
+[charaSet C 2003001 1 ロビンフッド]
+[charaSet D 1010001 1 エリザベート]
+[charaSet E 7022001 1 茨木童子]
+[charaSet F 98003003 1 Dr.ロマン]
+[charaSet G 3003001 1 ヴラド三世]
+[charaSet H 6008001 1 ？？？]
+[charaSet I 2008000 1 トリスタン]
+[charaSet J 1020001 1 ランスロット]
+[charaSet K 98084000 1 騎士]
+[charaSet L 7002002 1 謎の黒騎士]
+[charaSet M 5012001 1 ニトクリス]
+[charaSet N 98105400 1 トリスタン]
+
+
+[scene 136100]
+
+[fadein black 1.5]
+[bgm BGM_MAP_4 0.1]
+[wait fade]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.4 1]
+[wt 0.4]
+
+＠クレオパトラ
+ようやくの到着ね！！[r]妾、心配などはこれっぽちもしていないけれど！
+[k]
+
+＠クレオパトラ
+もしやトラブルなど起きてはいなくて！？[r]エネミーに絡まれて怪我をしたりは！？！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠エリザベート（ブレイブ）
+遅くなって悪かったわね。[wt 0.6][charaFace D 5][r]それはともかく声大きいわよクレオパトラ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+＠クレオパトラ
+こほん。[r]ご指摘痛み入ります。
+[k]
+
+＠クレオパトラ
+久しぶりの出番なので勝手がね……
+[k]
+
+[charaFace H 0]
+＠クレオパトラ
+さて、アナタには二つの選択肢があります。[r]マスター。
+[k]
+
+＠クレオパトラ
+端的に言うと、妾と妾の率いる騎士二人の[r]美しくも荒々しき日常を見るか否か、です。
+[k]
+
+[charaFace H 2]
+＠クレオパトラ
+もちろん！[r]妾たちの姿を！！
+[k]
+
+＠クレオパトラ
+見たくない、なんて不敬は言うまいと！！[r]妾は信じているのだけれど！！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠ロビンフッド
+待ちくたびれたせいか、[r]テンションが変になってるな、この女王様！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠クレオパトラ
+さあ。マスター、いかがなさいます？
+[k]
+
+＠クレオパトラ
+[line 3]ご覧になりますか？
+[k]
+
+？1：見たいかな？
+
+？2：今はちょっと……
+[branch select02]
+？！
+
+[charaFace H 1]
+＠クレオパトラ
+フッ、美しさの怒濤を覚悟なさい。[r]それでは回想、スタートして差し上げましょうか。
+[k]
+
+＠クレオパトラ
+まずは座布団を用意して、[r]それからスナック菓子と飲み物と……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠エリザベート（ブレイブ）
+エリザわかったわ。[r]これめっちゃ長くなるやつ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ロビンフッド
+いや、相変わらず為政者の鑑だぜ、この女王様は。
+[k]
+
+＠ロビンフッド
+シミュレーターとはいえ、結構歩き通しだったんだ。[r]ゆっくり休むとしようぜマスター。
+[k]
+
+？1：そうだね！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠クレオパトラ
+それでは始めます。[r]せいぜい、くつろぎながら愉しみなさい！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ad90]
+[wt 2.2]
+
+
+[cueSe Battle ba6]
+[cueSe Battle bac117]
+[cueSeVolume bac117 0 0.8]
+[wipeout guruguru 1.5 1.0]
+[bgmStop BGM_MAP_4 1.5]
+[cueSeStop ba6 1.5]
+[cueSeStop bac117 1.2]
+[wait wipe]
+
+[charaFadeout H 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[wipein guruguru 0.5 1.0]
+[wait wipe]
+
+[fadeout black 0.5]
+[wait fade]
+
+[pictureFrame cut297_frame16 forceFullScreenSize]
+
+
+
+
+[bgm BGM_EVENT_5 0.5]
+[wt 0.1]
+
+[scene 136100]
+[charaTalk J]
+[charaFace J 0]
+[charaFace I 0]
+
+[fadein black 1.5]
+[wait fade]
+
+[pictureFrame]
+[pictureFrameTop cut297_frame16 forceFullScreenSize]
+
+[charaFadeinFSL J 0.1 -256,-50]
+[charaFadeinFSR I 0.1 256,-50]
+
+
+＠ランスロット
+女王。カルデアからの訪問客を確認しました。[r]張り巡らせていた結界に引っかかったようです。
+[k]
+
+＠トリスタン
+……。[r]……。
+[k]
+
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 0,-50]
+＠？？？
+フッ、さすが完璧な[#妾:わらわ]、予想済みです！[r]当然、対策は立てているわ！
+[k]
+
+[charaFace H 3]
+＠？？？
+さらに最強の門番が控えている以上、[r][#妾:わらわ]の優位は動かない……ああ、美しすぎる……
+[k]
+
+[charaFace H 1]
+＠？？？
+この領地は[#妾:わらわ]が支配する。[r]適切に、寛容に、そして無慈悲に。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk K]
+[charaFadein K 0.1 0,-50]
+＠女王騎士
+あ、あの……女王。[r]引き続き、ハロウィンは禁止ですか？
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 0,-50]
+＠？？？
+たわけ＆パッとしない男！[r]後で美容院に行きなさい！
+[k]
+
+＠？？？
+ハロウィンなど愚民には早すぎる！
+[k]
+
+[charaFace H 5]
+＠？？？
+世情が不安定なこの時期に、[r]あのような浮かれた祭りなど愚の骨頂。
+[k]
+
+[charaFace H 2]
+＠？？？
+慎みと慈しみを持ちなさい！[r]この！　[#妾:わらわ]のように！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk K]
+[charaFadein K 0.1 0,-50]
+＠女王騎士
+……しかし、誰もがハロウィンを楽しみに[r]していたのは確かですし……私の子供も……。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 0,-50]
+＠？？？
+不敬者！　[#妾:わらわ]に口答えなど処刑ものです！[r]ですが子供に免じて有給一日で許してあげましょう！
+[k]
+
+＠？？？
+いますぐ剣を置き、貧相な家に帰りなさい！[r]その命が惜しいというのなら！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk K]
+[charaFadein K 0.1 0,-50]
+＠女王騎士
+え、は？[r]あの、それはどういう……
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 0,-50]
+＠ランスロット
+君、いいから今日は帰りなさい。[r]明日一日はオフという事だ。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaTalk K]
+[charaFadein K 0.1 0,-50]
+＠女王騎士
+……はあ。[r]では、恐れながら[#有給:しょばつ]を謹んで……
+[k]
+
+[se ad166]
+[messageOff]
+[charaFadeout K 0.7]
+[seStop ad166 1.5]
+[wt 1.5]
+[wt 0.1]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 0,-50]
+
+＠ランスロット
+それで女王。[r]我々は如何致しましょうか？
+[k]
+
+＠ランスロット
+今から、総出で掛かって討ち取り、[r]後顧の憂いを無くしますか？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 0,-50]
+＠？？？
+ホホホホホ！[r]この、愚か者め！
+[k]
+
+[charaFace H 2]
+＠？？？
+それではまるで[#妾:わらわ]が[#彼奴:きゃつ]らを[r]恐れているようではないですか！
+[k]
+
+[charaFace H 0]
+＠？？？
+街に騎士たちは派遣しましょう。[r]民が浮き足立つのを防ぐためです。
+[k]
+
+＠？？？
+おまえたちは……そうね。[r]別に出撃する必要はなくてよ。
+[k]
+
+[charaFace H 2]
+＠？？？
+街に放った途端、町娘をナンパするつもりなのは[r]まるっとお見通し。世の中そう甘くはないわ！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk J]
+[charaFace J 4]
+[charaFace I 4]
+[charaFadeinFSL J 0.1 -256,-50]
+[charaFadeinFSR I 0.1 256,-50]
+＠ランスロット
+……いや、私は別に……
+[k]
+
+＠トリスタン
+…………なんという…………[r]我々の生態を完全に把握されているとは……。
+[k]
+
+[charaFace J 0]
+＠ランスロット
+いや、トリスタン卿。[r]私は純粋に街の治安をだね。
+[k]
+
+[charaFace I 6]
+＠トリスタン
+……あの街の酒場には先日、賭け事で身を持ち崩した[r]男に捨てられた、傷心の美女がいると聞きましたが……
+[k]
+
+[charaFace J 2]
+＠ランスロット
+どこの酒場かね？[r]もしや、三番街のトネリコ亭のあの美女の話か？
+[k]
+
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 0,-50]
+＠？？？
+ホホホ。[r]自室待機より上の、[charaFace H 5]牢獄待機の方がいいかしら？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk J]
+[charaFace J 6]
+[charaFace I 4]
+[charaFadeinFSL J 0.1 -256,-50]
+[charaFadeinFSR I 0.1 256,-50]
+＠ランスロット
+失敬。待機の任、承りました女王。
+[k]
+
+[charaFace J 0]
+＠ランスロット
+それでは、我々はこれで。[r]女王はごゆるりとお休み下さいませ。
+[k]
+
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 0,-50]
+＠？？？
+言われずとも[#寛:くつろ]ぎます。[r]さっさと退出なさい！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[bgmStop BGM_EVENT_5 1.0]
+[charaTalk I]
+[charaFace J 0]
+[charaFace I 4]
+[charaFadeinFSL J 0.1 -256,-50]
+[charaFadeinFSR I 0.1 256,-50]
+＠トリスタン
+……。[r]……。
+[k]
+
+＠ランスロット
+ははっ。[r]……トリスタン？
+[k]
+
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+＠？？？
+……？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 0,-50]
+＠トリスタン
+……。[r]……。
+[k]
+
+＠トリスタン
+……。[r]……スヤァ。[bgm BGM_EVENT_27 0.1 0.7]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 0,-50]
+＠？？？
+……。[r]……。
+[k]
+
+
+[bgm BGM_EVENT_27 1.0 0.5]
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+
+[se ad38]
+[shake 0.05 10 10 0.7]
+[wt 0.7]
+[charaFadeout H 0.1]
+[wt 0.1]
+[scene 134700]
+[charaTalk I]
+[charaFace J 0]
+[charaFace I 4]
+[fadein black 1.5]
+[wt 0.4]
+[bgm BGM_EVENT_27 1.5 0.7]
+[wait fade]
+[charaFadeinFSL J 0.1 -256,-50]
+[charaFadeinFSR I 0.1 256,-50]
+
+＠トリスタン
+……[se ad152]（我が肉体が痛みで物理的に）悲しい。
+[k]
+
+
+＠ランスロット
+[#卿:けい]はある意味凄いな……。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_27 1.3]
+[wait fade]
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[wt 2.0]
+
+[bgm BGM_EVENT_1 0.5]
+
+[scene 136100]
+
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.7 0,-50]
+＠H：？？？
+……。[r]……ふ。
+[k]
+
+[charaFace H 1]
+＠H：？？？
+オホホホホ！　つまらない本だこと！[r]時間潰しにはなりましたが……。
+[k]
+
+[messageOff]
+[se ad150]
+[wt 0.7]
+
+[charaFace H 0]
+
+＠H：？？？
+そこの居眠り豚。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-50]
+＠トリスタン
+ははっ、居眠り豚トリスタン。[r]御前に。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+＠H：？？？
+その音楽は気に入りません。[r]違うものを。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-50]
+＠トリスタン
+では、こちらを。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_1 0.5]
+[wt 0.7]
+
+[bgm BGM_EVENT_12 0.1]
+
+[wt 3.0]
+
+[charaFadeout I 0.4]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 0,-50]
+[charaShake H 0.05 3 3 0.5]
+
+＠H：？？？
+止めなさい気が狂いそうです！[r]落ち着いて本を読めないでしょう！
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_EVENT_12 0.1]
+
+[se ad151]
+[wt 0.4]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_1 0.5]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-50]
+
+＠トリスタン
+愉快な曲の方が良いかと思ったのですが。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 0,-50]
+＠H：？？？
+限度というものがあるでしょう、[r]限度というものが。
+[k]
+
+[charaFace H 5]
+＠H：？？？
+まして今は夜、[r]騒がしい音は無粋というもの。
+[k]
+
+[charaFace H 4]
+＠H：？？？
+というか、今の音はどうやって[r]琴で弾いたのですか……？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 0,-50]
+＠ランスロット
+失礼、女王。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+＠H：？？？
+何用か、[#妾:わらわ]はもう寝ます。[r]報告なら、明日[line 3]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 0,-50]
+＠ランスロット
+かのファラオが、[r]カルデアのパーティに参入したようです。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 0,-50]
+＠H：？？？
+[f large]な。
+[k]
+
+[charaFace H 2]
+＠H：？？？
+[messageShake 0.05 5 5 0.7]
+何ですと[line 3]！？[r]あの御方が！？
+[k]
+
+＠H：？？？
+そんな、あんな間が抜けていて愚鈍で[r]知性の欠片もなさそうな者に！？
+[k]
+
+[se ad151]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-50]
+
+＠トリスタン
+ああ悲しや。[r]我らが女王の[#貌:かお]が悲痛に歪む……。
+[k]
+
+＠トリスタン
+しかしその貌もまた、[r]輝かんばかりに美しい[line 3]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 0,-50]
+＠H：？？？
+あの御方がいるなら、氷河地帯はおろか[r]溶岩地帯も危険ですね……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 0,-50]
+＠ランスロット
+如何致しましょうか、女王。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 0,-50]
+＠H：？？？
+莫迦は時として、こちらの予測を上回る……か。
+[k]
+
+＠H：？？？
+むつかしいわね……。[r]むぅ……。
+[k]
+
+[se ad151]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-50]
+
+＠トリスタン
+憂い悩む女王の貌もまた、[r]美しく[line 3]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 0,-50]
+＠H：？？？
+考えごとの邪魔。[r]窓から飛び降りなさい、貴方は。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-50]
+＠トリスタン
+おお……[#我は空高く飛ぶ:I can fly]……。
+[k]
+
+[se bac1]
+[charaMove I 1024,0 0.2]
+[wait charaMove I]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 2]
+[charaFadein J 0.1 0,-50]
+[wt 0.4]
+[charaMove J 384,-50 0.2]
+[wait charaMove J]
+
+＠ランスロット
+本当に飛び降りただと[line 3]！？
+[k]
+
+
+[messageOff]
+[se ad151]
+[wt 0.5]
+
+[se ad151]
+[seVolume ad151 0 0.7]
+[wt 0.5]
+
+[se ad150]
+[seVolume ad150 0 0.4]
+[wt 0.7]
+
+[wt 0.4]
+
+[charaFace J 0]
+[charaMove J 0,-50 1.0]
+＠ランスロット
+音の衝撃で空を飛ぶとは……。
+[k]
+
+[wait charaMove J]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+＠H：？？？
+それは飛ぶでしょう、トリなのですから！[r]それはそれとして、ヒトヅマンスロット。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 0,-50]
+＠ランスロット
+はっ！[r]…[charaFace J 2][messageShake 0.05 5 5 0.7]……………はっ！？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 0,-50]
+＠H：？？？
+溶岩地帯に彼女たちを派遣するのよ。[r]何としてでも押し留めるのです。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 5]
+[charaFadein J 0.1 0,-50]
+＠ランスロット
+な、何ですと……！？[r]しかし、彼女たちはあまりに危険です。
+[k]
+
+[charaFace J 2]
+＠ランスロット
+暴走する可能性がなきにしもあらず、[r]いや絶対暴走する！　と断言してもいいほどに！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 0,-50]
+＠H：？？？
+ホホホホホ！[r]大丈夫でしょう、何故なら[#妾:わらわ]なのですから！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 4]
+[charaFadein J 0.1 0,-50]
+＠ランスロット
+（不安だ……！）
+[k]
+
+[messageOff]
+[wt 0.4]
+
+[pictureFrameTop]
+[pictureFrame cut297_frame16 forceFullScreenSize]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_1 2.0]
+[wait fade]
+
+[charaFadeout J 0.4]
+
+＠
+（この後、溶岩地帯でのエピソードに続く）
+[k]
+
+[messageOff]
+[scene 10000]
+
+[pictureFrame]
+[wt 0.2]
+
+[fadein black 0.3]
+[wait fade]
+
+[cueSe Battle ba6]
+[cueSe Battle bac117]
+[cueSeVolume bac117 0 0.8]
+[wipeout guruguru 1.5 1.0]
+[cueSeStop ba6 1.5]
+[cueSeStop bac117 1.2]
+[wait wipe]
+
+
+[scene 136100]
+
+
+[wt 2.0]
+
+[wipein guruguru 1.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠クレオパトラ
+ホホホホホ！[r]いかがだったかしら、マスター！
+[k]
+
+？1：実に面白いコントでした
+？！
+
+[charaFace H 2]
+＠クレオパトラ
+ええ、ええ、そうでしょうとも！[r]コントではないのですけど！
+[k]
+
+＠クレオパトラ
+あくまで美しき日常なのですけど！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠ロビンフッド
+いや、つま先からてっぺんまで[r]コントだった。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠エリザベート（ブレイブ）
+そうね……[r]めっちゃ面白いコメディ映画って感じだったわ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+＠クレオパトラ
+シ[messageShake 0.05 4 3 0.4]ョック！
+[k]
+
+[charaFace H 4]
+＠クレオパトラ
+妾と騎士の優雅で美しいはずの日常が、[r]愉快な一幕だったなんて……！
+[k]
+
+
+[branch select_end]
+
+
+
+[label select02]
+
+[charaFace H 4]
+＠クレオパトラ
+そう……ですか……。[r]そうですか……。
+[k]
+
+＠クレオパトラ
+でもでも、どうか後でも構わないので、[r]ご覧になっていただきたいものです……。
+[k]
+
+[branch select_end]
+
+
+[label select_end]
+
+[messageOff]
+[bgmStop BGM_MAP_4 0.6]
+[bgmStop BGM_EVENT_94 0.6]
+[charaFace H 0]
+[wt 1.0]
+
+[bgm BGM_EVENT_4 0.1]
+＠クレオパトラ
+コホン、[r]という訳でいよいよ最後の決戦です。
+[k]
+
+[charaFace H 2]
+＠クレオパトラ
+懐かしき思い出よ、蘇りなさい！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[cueSe Battle ba6]
+[cueSe Battle bac117]
+[cueSeVolume bac117 0 0.8]
+[wipeout guruguru 1.5 1.0]
+[bgmStop BGM_EVENT_4 1.5]
+[cueSeStop ba6 1.5]
+[cueSeStop bac117 1.2]
+[wait wipe]
+
+[charaFadeout H 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[wipein guruguru 0.5 1.0]
+[wait wipe]
+
+[fadeout black 0.5]
+[wait fade]
+
+[pictureFrame cut297_frame16 forceFullScreenSize]
+
+
+
+
+
+[bgm BGM_EVENT_5 0.1]
+
+[scene 134700]
+[wt 0.7]
+[fadein black 1.5]
+[wait fade]
+
+[pictureFrame]
+[pictureFrameTop cut297_frame16 forceFullScreenSize]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-50]
+＠トリスタン
+ようこそ、おいでくださいました。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0,-50]
+＠エリザベート
+あ、逃げた騎士ね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad152]
+[seVolume ad151 0 0.5]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-50]
+＠トリスタン
+それは見解の違いと申しましょう。[r]物事は高い位置から観察するもの……
+[k]
+
+[se ad152]
+[seVolume ad151 0 0.5]
+＠トリスタン
+これを[#鳥瞰:ちょうかん]と言います。
+[k]
+
+＠トリスタン
+私は負けそうになった試合に[r]ふわりと浮いて距離を取った逃げスタン……
+[k]
+
+[charaFace I 4]
+＠トリスタン
+即ち、勝利を諦める事で敗北を避けた、[r]哀しいまでに頭の切れる男なのですよ……
+[k]
+[se ad151]
+[seVolume ad151 0 0.5]
+
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 0,-50]
+
+＠マシュ
+それは確かに哀しいですね……[r]色々な意味で……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk L]
+[charaFace L 2]
+[charaFadein L 0.1 0,-50]
+＠謎の黒騎士
+ＨＹＵＵＵＵＵＵＵＵＵＵ……。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+マスター、あの口笛を吹こうとして吹ききれていない[r]黒騎士には……奇妙なものを感じます。
+[k]
+
+[charaFace A 7]
+＠マシュ
+この場で最優先で退治しておいた方がいいというか、[r]あるいはじっくり根を詰めて話し合うとか[line 3]
+[k]
+
+？1：だ、大丈夫？
+
+[charaFace A 7]
+＠マシュ
+……そうですね。[r]ともかく、あの黒騎士は敵です。
+[k]
+
+？2：マシュ、落ち着いて
+
+[charaFace A 2]
+＠マシュ
+大丈夫です、わたしは落ち着いています！[r]さあ、戦いましょう！
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaDepth I 10]
+[charaTalk I]
+[charaFace I 4]
+[charaFace L 0]
+[charaFadeinFSL L 0.1 -256,-50]
+[charaFadeinFSR I 0.1 256,-50]
+＠トリスタン
+（おお、テリブル……あの穏やかそうな少女が、[r]　まるで法の執行者の如き剣幕です）
+[k]
+
+＠トリスタン
+（どれだけ卿は恨みを買ったのですか？）
+[k]
+
+＠謎の黒騎士
+（面目ない……。しかし、私に覚えはないし、[r]　ただの誤解だと思うのだ。すぐに落ち着くとも）
+[k]
+
+[charaFace I 0]
+＠トリスタン
+（そうですか……では危険はないのですね？[r]　特に、私へ飛び火するような危険は？）
+[k]
+
+＠謎の黒騎士
+（う、うむ、ないだろう、おそらく）
+[k]
+
+＠トリスタン
+では安心ですね。コホン。[r]女王がお待ちかねです、こちらへ。
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaDepth I 0]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 0,-50]
+＠エリザベート
+遂に対面ね……。[r][&子イヌ:子ジカ]、気合を入れなさい。
+[k]
+
+＠エリザベート
+あの女のよく分からないテンションと外見に[r]惑わされちゃダメよ。
+[k]
+
+[charaFace D 5]
+＠エリザベート
+中身はぐつぐつ煮えたぎった毒入りシチューみたいに[r]ドロドロなんだから！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk M]
+[charaFace M 9]
+[charaFadeinFSL M 0.1 -256,-50]
+[charaFadeinFSR D 0.1 256,-50]
+＠ニトクリス
+真名は把握しているのですか？
+[k]
+
+[charaFace D 8]
+＠エリザベート
+ううん、さっぱり！
+[k]
+
+[charaFace M 7]
+＠ニトクリス
+……まあ、ピラミッドがある以上、[r]私の関係者であることは間違いないのですが。
+[k]
+
+[charaFace M 9]
+＠ニトクリス
+……確認しますが、女王ですよね？
+[k]
+
+[charaFace M 8]
+＠ニトクリス
+こう、美声で高笑いする豪奢にして太陽の目を持つ男性[r]であれば、私は降伏もやむなしなのですが。
+[k]
+
+[charaFace D 0]
+＠エリザベート
+安心して、どこからどう見ても女性よ。[r]ただ、本質は異なるわ。
+[k]
+
+[charaFace D 8]
+＠エリザベート
+[#私:アタシ]はドラゴンだけど、[r]アイツは蛇。それも、強烈な毒持ちのね！
+[k]
+
+[messageOff]
+[wt 0.1]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_5 1.5]
+[wait fade]
+[wt 0.5]
+[charaFadeout D 0.1]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[scene 136100]
+[charaTalk H]
+[charaFace H 1]
+
+[se ad91]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.7]
+
+[bgm BGM_EVENT_1 0.1]
+[charaFadein H 0.7 0,-50]
+
+
+＠H：？？？
+二度の敗退に懲りず、[r]よくもここまでやって来たものねトカゲ＆ヤモリ娘！
+[k]
+
+＠H：？？？
+その無様さは心底理解できませんが、[r]二周目の辛さを耐えた事だけは認めましょう！
+[k]
+
+＠H：？？？
+ですが所詮ハロウィンかぶれのお嬢様、[r]熱砂の環境で鍛え上げられた[#妾:わらわ]の強靱さの前では[line 3]
+[k]
+
+[charaFace H 0]
+
+＠H：？？？
+……目の錯覚かしら。一体減ってない、そちら？[r]いえ、それ以前に逞しくなってない？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠エリザベート
+フッ。そこに気がつくとは並外れた観察力じゃない。
+[k]
+
+[charaFace D 8]
+＠エリザベート
+そう。[#私:アタシ]はアンタにすべてを奪われた屈辱と[r]克己心から聖杯転臨っぽく新生した新しい[#私:アタシ]……
+[k]
+
+[charaPut H 0,10]
+[charaScale H 1.3]
+[charaEffect H bit_talk_41_fs]
+[charaFace D 2]
+＠エリザベート
+クラス・セイバーになった肉体派アイドル、[r]エリザベート・バート・ブレイブリーよ！
+[k]
+
+？1：そうだったのか……！（今さら感）
+
+[charaEffectStop H bit_talk_41_fs]
+[wt 0.4]
+[charaScale H 1.0]
+[charaFadeout D 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+＠ロビンフッド
+そうだったんでスよ。[r]みーんな、あえて黙っていたんですがねぇ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk M]
+[charaFace M 7]
+[charaFadein M 0.1 0,-50]
+＠ニトクリス
+そうなのですか？[r]てっきり、サラマンダーの英霊だとばかり……
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 0,-50]
+＠エリザベート
+火トカゲじゃないわよ！　女勇者！[r]雷竜の加護を受け音程を操る高貴なる女勇者だから！
+[k]
+
+？2：いま勢いだけで名乗った？
+
+[charaEffectStop H bit_talk_41_fs]
+[wt 0.4]
+[charaScale H 1.0]
+[wt 0.4]
+[charaFace D 6]
+＠エリザベート
+……てへ。[r]実は前から考えてたんだけど、言う機会がなかったの。
+[k]
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 0,-50]
+＠H：？？？
+そちらの話はよろしくて？[r]では[#妾:わらわ]の話に戻しましょう！
+[k]
+
+[charaFace H 0]
+＠H：？？？
+コホン。改めてよく来たものね勇者ども！[r]その健闘だけは讃えてあげましょう！
+[k]
+
+？1：美人……！
+
+[charaFace H 1]
+＠H：？？？
+フッ、聞き飽きた世辞ですが悪くはないわね！[r]素直なコトはいいコトよ！
+[k]
+
+？2：…………！
+
+[charaFace H 1]
+＠H：？？？
+いかにも。[r]言葉を失うほどに美。それが[#妾:わらわ]！
+[k]
+
+[charaFace H 2]
+＠H：？？？
+理解したなら[#頭突:ずつ]くように平伏なさい！[r]ですが特別にカメラ撮影は許可します！
+[k]
+
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-50]
+＠トリスタン
+女王の御前です、どうぞ平伏を。[r]……と言っても聞かないですよね、ええ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 0,-50]
+＠H：？？？
+申し訳程度に注意するのではありません、[r]この、自らの失態を失態と数えない鳥頭卿！
+[k]
+
+＠H：？？？
+彼らがここまで来たのは貴方の無力さ故！[r]罰として、そこで逆立ちでもしていなさい！
+[k]
+
+＠H：？？？
+ただし、琴の演奏は止めないこと！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 0,-50]
+＠トリスタン
+おお、かなしいむつかしい……。[r]ですが女王の命令であれば、やらざるを得ません。
+[k]
+
+[messageOff]
+[se ad152]
+[wt 0.4]
+[wipeout rollRight 0.3 1]
+[wait wipe]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaFadein N 0.1 0,0]
+[wt 0.1]
+[wipein rollLeft 0.3 1]
+[wait wipe]
+
+[wt 0.4]
+[se ad151]
+[wt 1.5]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,-50]
+
+＠エリザベート
+できるの！？
+[k]
+
+[se ad151]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+
+＠H：？？？
+それと……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 0,-50]
+＠謎の黒騎士
+…………………………。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+＠H：？？？
+匿名卿は現状が罰になっているようね。[r]よろしい、不問に処します。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+いえ、ここは公平に彼も罰して欲しいと思います。[r]具体的には兜を外すとか、顔を見せるとか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 0,-50]
+[charaShake L 0.05 5 5 0.7]
+＠謎の黒騎士
+……！！！！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 0,-50]
+
+＠エリザベート
+あの、マシュ……？[r]何か怖いよ……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+そ、そうですか？
+[k]
+
+[charaFace A 15]
+＠マシュ
+すみません、ただあの優柔不断な黒騎士を見ていると[r]どうしても胸が聖晶石のようにガラついて……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+＠H：？？？
+イガイガする、というコトね。良い表現です。
+[k]
+
+＠H：？？？
+気持ちはたいへん伝わりましたが、[r]その喧嘩は他所でやりなさい。
+[k]
+
+[charaFace H 5]
+＠H：？？？
+面倒ですが、まずは為政者としての責務があります。
+[k]
+
+[charaFace H 0]
+＠H：？？？
+エリザベート・バートリー。[r]此処に辿り着いたという事は、ようやく理解したようね。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 0,-50]
+＠エリザベート
+……ええ。
+[k]
+
+[charaFace D 7]
+＠エリザベート
+[#私:アタシ]はその、ハロウィンライブに浮かれすぎて、[r]執政を怠った。ホント綺麗さっぱり忘れてた。
+[k]
+
+＠エリザベート
+……[#人:ブタ]の上に立つ者として、未熟だったわ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 0,-50]
+＠H：？？？
+ええ。そも、上に立つ者が上に立つこと以外を[r]目指すなど愚の骨頂！
+[k]
+
+＠H：？？？
+[#傅:かしず]かれるには傅かれるだけの理由、[r]もしくは勢いが必要なのです！
+[k]
+
+[charaFace H 0]
+＠H：？？？
+たとえば天上の美であるか、[r]あるいは醜くとも力があるか。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 0,-50]
+＠エリザベート
+うう、耳が痛い……。[r]天上の美を持つ[#私:アタシ]がアイドルを目指したから……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+＠H：？？？
+いえ、天上の美を持つのは[#妾:わらわ]。[r]貴女はパワーの方です。パワー。
+[k]
+
+[bgmStop BGM_EVENT_1 0.7]
+
+＠H：？？？
+貴女は先ほど自分で言ったでしょう。[r]肉体派アイドル、ローランド・ゴリラ・バートリーと。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[bgm BGM_EVENT_7 0.1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,-50]
+＠エリザベート
+言ってないわよ！[r]バートリーしか合ってないじゃない！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 0,-50]
+＠H：？？？
+言われて見ればその通りですが、細かいコトは[r]いいのです！　今は真面目な話をしているのですから！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,-50]
+＠エリザベート
+それはこっちの台詞だってのよーぅ！[r]こんなに話が噛み合わないヤツは初めて！
+[k]
+
+＠エリザベート
+アンタ、一体何者なの！？
+[k]
+
+＠エリザベート
+モデル系にかぶれてるようだけど、[r]どこの英霊だっつーの！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 0,-50]
+＠H：？？？
+決まっているでしょう。[r]美をもって国を統べ、美をもって名を残す！
+[k]
+
+＠H：？？？
+そんな女王が誰かと問われれば、[r]百人が百人、[#妾:わらわ]の名を讃えるというもの！
+[k]
+
+＠H：？？？
+そう[line 3]我が名は！[r]ああ、麗しい[#妾:わらわ]の名は！
+[k]
+
+？1：まあクレオパトラですよね
+？2：普通クレオパトラですよね
+
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,-50]
+＠エリザベート
+デジマ！？[r]このパリコレかぶれが、あの女王クレオパトラ……！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 0,-50]
+＠クレオパトラ
+ホホホホ。[r]山奥の貴族娘でも[#妾:わらわ]の名前ぐらいは知っていたようね。
+[k]
+
+＠クレオパトラ
+では改めて問いましょう。[r]汝は[#妾:わらわ]と美しさを競えるのですか？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+＠エリザベート
+っ……まずいわ。『美しさ』っていう基準になると[r]英霊的にあっちのが有利すぎる……
+[k]
+
+＠エリザベート
+どこからどう見ても[#私:アタシ]の方が今風だけど、[r]とにかくブランド力で負けちゃうっていうか……
+[k]
+
+？1：今？
+？2：風？
+
+？！
+
+[charaFace D 3]
+＠エリザベート
+なによ、ビキニアーマーのどこが古いの！？[r]超！　今風！　じゃない！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk M]
+[charaFace M 1]
+[charaFadein M 0.1 0,-50]
+＠ニトクリス
+ええ。私は良いと思いますよ、その服装。[r]私の時代的に見ればとてもしっくりきます。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 0,-50]
+＠エリザベート
+でしょでしょ？[r]同じエジプト系でもニトクリスは話が分かるわ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠ロビンフッド
+オレから見りゃあどっちも同[line 3][r]いや何でもないですよ？
+[k]
+
+＠ロビンフッド
+しかしまあ、威厳ってコトなら確かに[r]あちらさんは手強そうだ。自信満々にも程がある。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+＠茨木童子
+[#吾:われ]は何とも思わぬぞ。[r]美の基準が、そもそも人と違うのでな。
+[k]
+
+[charaFace E 1]
+[bgmStop BGM_EVENT_7 1.0]
+＠茨木童子
+とはいえ[line 3]。[r]くはははは！
+[k]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠茨木童子
+マスター、マスター！[r]あやつは腹に一物、良くない毒を抱えておるぞ。
+[k]
+
+＠茨木童子
+近付けば噛んでくるか、引き裂いてくるか。[r]まあ、鬼の基準からしても[#そこそこ]の美だな！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+＠クレオパトラ
+ふん、人ならざる者ですか。[r]では[#妾:わらわ]を理解できないのは当然のこと。
+[k]
+
+＠クレオパトラ
+それから[line 3]
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.3 1]
+[wait wipe]
+[charaFadeout H 0.1]
+[charaTalk M]
+[charaFace M 7]
+[wipein rightToLeft 0.3 1]
+[wait wipe]
+[charaFadein M 0.1 0,-50]
+[bgmStop BGM_EVENT_5 1.5]
+＠ニトクリス
+……。[r]……。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+＠クレオパトラ
+貴女さまは[line 3]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[bgm BGM_MAP_35 0.1]
+[charaTalk M]
+[charaFace M 9]
+[charaFadein M 0.1 0,-50]
+＠ニトクリス
+黙りなさい、クレオパトラ。[r]今の私はたまさか縁があって、こちら側。
+[k]
+
+＠ニトクリス
+私はただの[#魔術師:キャスター]です。[r]貴女は貴女の信念を貫き、揺れることのないよう。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 0,-50]
+＠クレオパトラ
+……はい。
+[k]
+
+[charaFace H 0]
+＠クレオパトラ
+ではエリザベート、もう一度問いましょう。[r][#妾:わらわ]と美を競えるか、と？
+[k]
+
+[charaFace H 1]
+＠クレオパトラ
+フ[line 3]ふふふ、ホホホホ！[r]それは無理、不可能、競える筈がないのです！
+[k]
+
+＠クレオパトラ
+仮にも女であるのなら、『美の審査』ほど[r]恐ろしいものはないと骨身に染みているでしょうし！
+[k]
+
+[charaFace H 2]
+＠クレオパトラ
+[#妾:わらわ]は世界に名高きクレオパトラ！[r]貴女にとっては恥を晒すだけの勝負[line 3]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠エリザベート
+え？[r]競えるわよ、[#私:アタシ]。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+＠クレオパトラ
+……なんと？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0,-50]
+＠エリザベート
+確かに単純な造形を競うなら[#私:アタシ]が[r]ほんのちょっとだけ、肉体年齢的に不利だけど……
+[k]
+
+[charaFace D 0]
+＠エリザベート
+今はとにかく多様化の時代だもの。[r]美しさの評価は昔より多いのよ。と、く、にぃ[line 3]
+[k]
+
+[charaFace D 1]
+＠エリザベート
+そう、[#可愛:キュート]さならどうかしら？[r]歌って、踊って、[#笑顔:スマイル]を[#ファン:ブ　タ]に贈る！
+[k]
+
+[charaFace D 0]
+＠エリザベート
+これはアイドルたる[#私:アタシ]にしか出来ないこと！[r]そして、女王として傅かれるアナタには出来ないこと！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+[bgmStop BGM_MAP_35 1.5]
+＠クレオパトラ
+つまり貴女は、人の上に立つ執政者ではなく[line 3]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+[bgm BGM_BATTLE_126 0.1]
+＠エリザベート
+そう！[r]女王のアンタに、アイドルとして戦いを挑むの！
+[k]
+
+[charaFace D 5]
+＠エリザベート
+あ、もちろん執政はするわよ。[r]アイドルが統治するなんて、普通のことだし？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 0,-50]
+＠クレオパトラ
+なんという[line 3]なんという、[r][#妾:わらわ]、激怒案件なのかしら……！
+[k]
+
+＠クレオパトラ
+美とは知性から生まれるもの、[r]統治とは美によってなされるもの……！
+[k]
+
+＠クレオパトラ
+ただ『可愛いだけ』で人の上に立とうなど、[r]そのような脳天気、女王として[#妾:わらわ]が許しません！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadeinFSR A 0.1 256,-50]
+[charaFadeinFSL C 0.1 -256,-50]
+＠マシュ
+（クレオパトラさんの怒りももっともなような……）
+[k]
+
+[charaFace C 1]
+＠ロビンフッド
+（いや、あれくらい[#我:わ]が[#侭:まま]な方がらしいってもんだ。[r]　なにしろ反英雄、間違いだけで生きてる女だからな）
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠エリザベート
+[#私:アタシ]はアイドル！[r]そして[#私:アタシ]はチェイテ城の主！
+[k]
+
+＠エリザベート
+サーヴァントだって、ランサーで召喚されたり[r]キャスターで召喚されたりするでしょう？
+[k]
+
+[charaFace D 5]
+＠エリザベート
+ヴラドおじ様が[#私:アタシ]を認め、[r][#私:アタシ]を赦さなかったように[line 3]
+[k]
+
+[charaFace D 2]
+＠エリザベート
+[#私:アタシ]は欲深で、傲慢で、[#我:わ]が[#侭:まま]だから、[r]どっちの[#私:アタシ]も大事なの！
+[k]
+
+＠エリザベート
+片方を諦めたりなんか、絶対にしないんだから！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 0,-50]
+＠クレオパトラ
+どちらも諦めない……ですって？[r]地方領主の娘は、これだから……！
+[k]
+
+[charaFace H 2]
+＠クレオパトラ
+いいでしょう、その[#意気軒昂:いきけんこう]がどこまで続くか、[r]この[#妾:わらわ]が見定めましょう！
+[k]
+
+＠クレオパトラ
+[line 3]所詮は夢に溺れた者の戯れ言。[r]このクレオパトラの絶対美に打ち砕かれよ！
+[k]
+
+
+[messageOff]
+[pictureFrameTop]
+[pictureFrame cut297_frame16 forceFullScreenSize]
+
+[bgmStop BGM_BATTLE_126 0.5]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

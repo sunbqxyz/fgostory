@@ -1,0 +1,761 @@
+
+＄03-00-07-05-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 7006300 1 坂田金时]
+[charaSet B 6030000 1 段藏]
+[charaSet C 2040002 1 清子_剪影]
+[charaFilter C silhouette 00000080]
+[charaSet D 2040002 1 清子]
+[charaSet E 98006200 1 敌人1]
+[charaSet F 98006200 1 敌人2]
+[imageSet L back10000 1]
+[charaScale L 1.05]
+
+[scene 102301]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.5]
+
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.2 100,0]
+[se ad671]
+[charaMove A 1 0.2]
+[wt 0.2]
+[seStop ad671 0.3]
+[wt 0.4]
+
+[charaFace A 2]
+
+＠坂田金时
+…………香子小姐，你在哪儿！
+[k]
+
+[charaFace A 5]
+
+＠坂田金时
+牛车被抛在那边了。[r]侍从则一脸不知情的样子等待着主人！
+[k]
+
+＠坂田金时
+这样看来……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect B appearance 1 0.25]
+[wt 0.4]
+＠段藏
+您真是明察秋毫。[r]香子阁下进入那个洞穴了。
+[k]
+
+？1：追上她吧。
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+噢！
+[k]
+
+？2：注意千万不要动粗！
+
+＠段藏
+明白了！
+[k]
+
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_80 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+[scene 104300]
+[cameraMove 0.1 0,0 1.01]
+[wt 1.0]
+
+[se ad1002]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.5]
+[seStop ad1002 0.5]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠段藏
+……魔力浓度与先前无异。
+[k]
+
+＠段藏
+没有疑似敌对反应的魔力反应。
+[k]
+
+＠段藏
+我的扫描范围无法涵盖最深处，[r]因此无法断言，但应该没有使魔被部署在此。
+[k]
+
+？1：谢谢你，段藏小姐。
+？2：抓紧往里走吧！
+
+？！
+
+[charaFace B 5]
+
+＠段藏
+遵命。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+噢。
+[k]
+
+[charaFace A 9]
+
+＠坂田金时
+虽然很难想象香子小姐会埋伏我们……[r]不过这里确实是安插伏兵的绝佳位置。
+[k]
+
+＠坂田金时
+从这里开始既不能跳也不能跑。[r]由我来打头阵。
+[k]
+
+＠坂田金时
+殿后就拜托你了，段藏小姐。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠段藏
+交给我吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+[%1]走在我后面，[r]段藏小姐的前面。
+[k]
+
+[charaFace A 0]
+
+＠坂田金时
+万一发生了什么事，就麻烦你支援啦！
+[k]
+
+？1：成！
+
+[charaFace A 6]
+
+＠坂田金时
+这什么回答。[r]哈哈，不错！　看得出你斗志昂扬！
+[k]
+
+[charaFace A 5]
+
+＠坂田金时
+成！　走吧！
+[k]
+
+？2：交给我吧。
+
+[charaFace A 6]
+
+＠坂田金时
+嗯。拜托啦。
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad60]
+[wt 2.0]
+[seStop ad60 0.2]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+…………哎哟。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠段藏
+金时阁下。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+嗯，真讨厌[line 3][r]不过这也不是伏兵的感觉！
+[k]
+
+[charaFace A 2]
+
+＠坂田金时
+有人在那边吧！[r]我劝你最好在被这把阔斧扔中之前赶紧出来！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFace A 2]
+[charaFadeinFSL B 0.1 0]
+[charaFadeinFSR A 0.1 2]
+
+＠段藏
+（金时阁下！？）
+[k]
+
+[charaFace A 0]
+
+＠坂田金时
+（我知道。[r]　不会真的扔出去啦。）
+[k]
+
+＠坂田金时
+（毕竟对方有可能是香子小姐。[r]　我岂能亏待对自己有饭宿之恩的人呢。）
+[k]
+
+＠坂田金时
+（只是在唬人，我只是吓唬对方而已！）
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠？？？
+啊哈哈哈哈哈。[r]那把阔斧还是算了吧。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.5]
+
+[charaTalk off]
+
+[charaDepth C 2]
+[charaDepth D 1]
+
+[wt 0.2]
+
+[charaFace D 11]
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+[charaFadeout C 0.7]
+[wt 1.2]
+
+
+？1：清少纳言！？
+
+[charaTalk on]
+[charaFace D 5]
+
+＠清子
+啊～，喂喂。[bgm BGM_EVENT_70 0.1][r]都说过不能叫这个名字啦。
+[k]
+
+？2：清子小姐！？
+
+[charaTalk on]
+[charaFace D 0]
+
+＠清子
+嗯，说得没错。[bgm BGM_EVENT_70 0.1][r]我是各位可靠的大姐姐，清子小姐哦！
+[k]
+
+？！
+
+[charaFace D 4]
+
+＠清子
+抱歉啦。[r]我不希望你们再继续前进了。
+[k]
+
+[charaFace D 0]
+
+＠清子
+所以我不会让你们过去的。[r]你们三个赶紧原地转身，然后回宅邸去吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+……这还真令人惊讶。
+[k]
+
+[charaFace A 9]
+
+＠坂田金时
+为什么你会在这里啊，清子小姐。[r]抱歉我的口吻有点像检非违使，不过我还是要问你。
+[k]
+
+＠坂田金时
+应该不是你吧？[r]你不是[#天览武者:御主]吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠清子
+唔～。怎么办呢。
+[k]
+
+＠清子
+虽然我觉得也不是不能骗你们说，[r]其实我就是某某武者哦～！
+[k]
+
+＠清子
+不过真不凑巧，[r]我并不喜欢这种谎言呢。
+[k]
+
+[charaFace D 7]
+
+＠清子
+所以说很遗憾啦！[r]待在这里的我只是普通的清子小姐。
+[k]
+
+[charaFace D 11]
+
+＠清子
+再说了，那某某武者来着？[r]我完全没听说过。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[charaFadeTime L 0.2 0.5]
+
+＠段藏
+（并非天览圣杯战争的相关人士？）
+[k]
+
+[charaFadeout L 0.1]
+[charaFace B 5]
+
+＠段藏
+……那您为何会在此处。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠清子
+……[r]……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠坂田金时
+麻烦你让开，清子小姐。
+[k]
+
+＠坂田金时
+我们必须尽可能多见到几位[#天览武者:御主]，[r]并与他们好好谈谈才行。
+[k]
+
+＠坂田金时
+我们并不打算动粗啦。[r]可以吗，还请您理解。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠清子
+唔～…………
+[k]
+
+＠清子
+如果是平常，小金说的话我肯定会点头答应。
+[k]
+
+[charaFace D 16]
+
+＠清子
+没想到从未拜托过我的人，[r]会在这么短的时间内连续拜托我两次呢。
+[k]
+
+[charaFace D 9]
+
+＠清子
+作为年长的大姐姐呀。
+[k]
+
+＠清子
+人家当然会想要为你想点办法才行呢！嗯。
+[k]
+
+[messageOff]
+[charaFace D 15]
+[wt 1.0]
+[charaFace D 4]
+
+＠清子
+……嗯。
+[k]
+
+＠清子
+但是，对不起啦。[r]还是不行。
+[k]
+
+＠清子
+我无论如何都不会让你们通过此处。[r]并不是唯独不让小金过，而是任何人都不能过。
+[k]
+
+？1：是为了香子小姐吗？
+？！
+
+[charaFace D 1]
+
+＠清子
+嗯，答对了。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+＠坂田金时
+是……是这样吗？[r]这算什么。
+[k]
+
+[charaFace A 5]
+
+＠坂田金时
+清子小姐，你不是说过吗！[r]说自己与香子小姐根本不认识……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠清子
+嗯，确实，要说我和那孩子间的关联嘛，[r]除了同为写手以外，就没有任何关系了。
+[k]
+
+＠清子
+那孩子也不知道人家正试图妨碍你们。
+[k]
+
+[charaFace D 7]
+
+＠清子
+所以会这么做，[r]纯粹是[#人家在耍性子]啦！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠段藏
+说得如此坦坦荡荡……！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[wt 1.0]
+[charaFace D 15]
+
+＠清子
+我之前也说过吧，人家呀……
+[k]
+
+＠清子
+可是非常非常非常喜欢[r]那孩子编撰的故事哦。
+[k]
+
+[charaFace D 5]
+
+＠清子
+所以此路不通。[r]我不会放你们过去的。
+[k]
+
+[charaFace D 11]
+＠清子
+不过人家既不会耍刀舞剑，也不会相扑，[r]虽说喜欢蹴鞠，但其他的长处嘛，唔……唔……
+[k]
+
+[charaFace D 17]
+
+＠清子
+只有与生俱来的可爱啦！[r]也是有趣！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+不[line 3]
+[k]
+
+＠坂田金时
+不，不不不不不不。[r]那怎么可能呢！
+[k]
+
+＠坂田金时
+虽然我不想这样说，[r]但你动动脑子啊，清子小姐！
+[k]
+
+[charaFace A 2]
+＠坂田金时
+我们这边有三个，你那边只有一个！[r]退一万步说，就算你法术水平堪比晴明阁下！
+[k]
+
+＠坂田金时
+根本没有胜算啦，大概吧！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠清子
+哎哎，你这家伙竟然趁乱[line 3][r]触碰了决不可提起的禁忌吗～！？
+[k]
+
+[bgmStop BGM_EVENT_70 1.5]
+[charaFace D 2]
+
+＠清子
+既然你这样说，那就让你看看我的珍藏品吧。[r]看仔细啦，我要取出来的就是这张护符！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+……！
+[k]
+
+＠坂田金时
+慢着，这是……晴明阁下的护符吗！？[r]你不是讨厌阴阳师吗！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠清子
+哎呀～，是很讨厌啦。[r]毕竟那些家伙的咒文很吵嘛。
+[k]
+
+＠清子
+晴明阁下长得是不错啦，[r]但若问我愿不愿意跟他搞好关系嘛，那啥……你懂的吧？
+[k]
+
+[charaFace D 5]
+＠清子
+不过他之所以会在失踪前将这道护符硬塞给我……[r]想必是已经知道了我会做出这种事来吧。
+[k]
+
+[charaFace D 2]
+
+＠清子
+这样想来倒也挺令人火大的，不过也罢！[bgm BGM_EVENT_80 0.1][r]来吧来吧[line 3]急急如律令！
+[k]
+
+[messageOff]
+[se ad1008]
+[wt 1.2]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[shake 0.02 4 4 0]
+[se ad1009]
+[wt 1.0]
+
+[charaTalk off]
+[charaPut E -256,0]
+[charaPut F 256,0]
+[charaFace E 0]
+[charaFace F 0]
+
+[charaSpecialEffect E appearance 1 1.5]
+[charaSpecialEffect F appearance 1 1.5]
+[wt 1.5]
+[shakeStop]
+[wt 0.4]
+
+[wait charaSpecialEffect E]
+[wait charaSpecialEffect F]
+
+[fowardEffect bit_talk_41_fs]
+[se ad25]
+[se ad19]
+[wt 0.2]
+[se ad21]
+[wt 1.7]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[fowardEffectDestroy bit_talk_41_fs]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠段藏
+出现数个敌对反应！[r]推测为召唤术式，御主！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+不会吧！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+
+＠清子
+哇哈哈哈哈哈哈哈哈哈哈，给我上！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

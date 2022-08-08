@@ -1,0 +1,246 @@
+
+
+＄94-06-04-10-4-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001600 1 マシュ]
+[charaSet B 9012000 1 ダ・ヴィンチ]
+[charaSet C 4008300 1 黒髭]
+[charaSet D 1098220400 1 清少納言]
+[charaSet E 2044001 1 アナスタシア]
+[charaSet F 98002000 1 フォウ]
+[charaSet G 5048000 1 シャルロット・コルデー]
+[charaSet H 4039300 1 マンドリカルド]
+[charaSet I 1098220500 1 カイニス]
+[charaSet J 1098217800 1 リーダー型コロンブス]
+[charaSet K 1098217710 1 量産型コロンブス]
+
+
+[scene 131200]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk J]
+[charaFace J 12]
+[charaFadein J 0.1 1]
+[wt 0.5]
+
+[fowardEffect bit_talk_quick_slash]
+
+[se bac210]
+[charaShake J 0.05 3 3 0.5]
+[flashin once 0.05 0.1 FFFFFF8F FFFFFF00]
+[wt 0.1]
+[se bac209]
+[charaShake J 0.05 3 3 0.5]
+[flashin once 0.05 0.1 FFFFFF8F FFFFFF00]
+[wt 0.1]
+[se bac211]
+[charaShake J 0.05 3 3 0.5]
+[flashin once 0.05 0.1 FFFFFF8F FFFFFF00]
+[wt 0.8]
+
+[bgmStop BGM_EVENT_80 0.5]
+
+[charaTalk off]
+[se ad864]
+[fowardEffect bit_talk_explosion_triple02]
+[charaShake J 0.05 3 3 0.7]
+[charaFadeout J 0.45]
+[wt 2.0]
+[charaFace J 13]
+[wt 0.5]
+
+＠リーダー型コロンブス
+リーダァァァァァッ！？
+[k]
+
+？1：リーダー型コロンブス……
+？2：成仏して[&ください:ね]……！
+？！
+
+[messageOff]
+
+
+[se ad104]
+[se ad77]
+
+[charaFadein K 0.45 -150,0]
+[charaMove K 120,0 0.9]
+[wt 0.45]
+[charaFadeout K 0.45]
+[wt 0.45]
+
+[se ad77]
+[charaFadein K 0.45 150,0]
+[charaMove K -120,0 0.9]
+[wt 0.45]
+[charaFadeout K 0.45]
+[wt 0.45]
+
+[wt 0.4]
+
+[bgm BGM_EVENT_7 0.1]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+＠黒髭
+うーん。[r]この世は最早末法、世紀末。
+[k]
+
+
+＠黒髭
+量産されたコロンブスが[#右往左往:う お う さ お う]しているだけで、[r]そんなポエムな想いを抱く吾であった。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠アナスタシア
+いや、充分に世紀末の条件を満たしていると[r]思うわよ[#私:わたくし]……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+
+＠ダ・ヴィンチ
+ともかく地図の解釈が正しければ、[r]この酒場の地下が最後の遺跡への入り口だ。
+[k]
+
+？1：よーし、出発！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 16]
+[charaFadein G 0.1 1]
+＠シャルロット・コルデー
+では、このコロンブスさんたちを[r]かき分けて酒場に入る訳ですね！
+[k]
+
+＠シャルロット・コルデー
+……。[r]……。
+[k]
+
+[charaFace G 10]
+＠シャルロット・コルデー
+くじけそう……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠アナスタシア
+シャル、ひとまずここは無心になりなさい。[r]無心になって、コロンブスをかき分けるの！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠清少納言
+よーし、やってやんよー！[r]ありったけのレジライかき分けて！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠カイニス
+オレは普通に嫌なんで、[r]頭踏んでいくぞ。
+[k]
+
+[messageOff]
+
+[charaEffect I bit_talk_quickmove]
+[charaSpecialEffect I erasureReverse 1 0.3]
+[se ad73]
+[wt 1.0]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.4 350,20]
+
+[charaMove I 200,-20 0.2]
+[wt 0.2]
+[se ade479]
+[charaMove I 100,10 0.2]
+[wt 0.2]
+[charaMove I 0,-20 0.2]
+[wt 0.2]
+[se ade479]
+[charaMove I -100,10 0.2]
+[wt 0.2]
+[charaMove I -200,-20 0.2]
+[wt 0.2]
+[se ade479]
+[seVolume ade479 0.3 0.3]
+[charaMove I -300,10 0.2]
+[wt 0.2]
+[seStop ade479 0.5]
+[charaFadeout I 0.4]
+[wt 0.8]
+
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠マンドリカルド
+……カイニスが量産型コロンブスの頭踏む度に、[r]やたら可愛いＳＥが鳴るんすけど……。
+[k]
+
+？1：ＤＯＭＡＮかな……
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠フォウ
+フォウフォウ……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠マシュ
+フォウさんもくじけそう、という顔です。[r]……がんばりましょう！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

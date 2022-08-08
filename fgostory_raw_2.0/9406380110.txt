@@ -1,0 +1,947 @@
+
+＄94-06-38-01-1-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098222400 1 ノッブ]
+[charaSet B 1027000 1 沖田総司]
+[charaSet C 7026000 1 茶々]
+[charaSet D 10007000 1 沖田オルタ]
+[charaSet E 1098216900 1 煉獄]
+[charaSet F 7035001 1 森長可]
+[charaSet G 1098222500 1 坂本龍馬]
+[charaSet H 1098222920 1 お竜さん]
+[charaSet I 1098223000 1 出雲阿国]
+[charaSet J 1098223100 1 斬ザブロー]
+[charaSet K 11012000 1 蘭丸Ｘ]
+
+[charaSet L 1098222840 1 タカスギ]
+
+[charaSet M 98115000 1 エフェクト用]
+[charaSet N 98002000 1 通信用エフェクト]
+
+[scene 105800]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut M 1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[charaEffect M bit_talk_41_fs]
+[se ad186]
+
+＠ノッブ
+[line 3]というわけで性懲りもなく[r]またわしの首が消えたわけじゃが。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut M 1200,1200]
+[charaEffectStop M bit_talk_41_fs]
+
+[bgm BGM_EVENT_146 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠沖田総司
+わー、これは一大事ですねー。
+[k]
+
+[charaFace B 1]
+＠沖田総司
+よし、解散。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ノッブ
+二度目の出オチだけに反応薄ゥい！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠茶々
+復刻にはまだ早いんだけど。
+[k]
+
+＠茶々
+ところで復刻って何かな？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠沖田オルタ
+茶々様の言葉はいつも奥深いな、奥深み。
+[k]
+
+＠[FFFFFF]煉獄[-]
+そうね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+＠森長可
+おい、また成利の宝具どっか行ってんぞ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+
+＠蘭丸Ｘ
+蘭丸の宝具ではなく、[r]この星の蘭丸の宝具でありますよ。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠坂本龍馬
+その本来の持ち主に戻したという話だったけど、[r]もしかしてまた奪われたりしたのかな？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[cueSe Servants_504800 m46205]
+[seVolume m46205 0 0.4]
+
+[charaTalk depthOff]
+[charaDepth J 1]
+[charaDepth I 2]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFace J 2]
+[charaFadein I 0.1 1]
+[charaFadein J 0.1 -150,0]
+
+＠出雲阿国
+ザッ辛いと！
+[k]
+
+[charaFace I 15]
+
+＠出雲阿国
+じゃない、[wt 0.4][charaFace I 2]ザッツライト！
+[k]
+
+？1：阿国さん！
+
+[charaFace I 1]
+
+＠出雲阿国
+ご無沙汰いたしております、[r][%1]様！
+[k]
+
+[charaFace I 9]
+
+＠出雲阿国
+そうでもない？　確かにあの騒ぎも[r]昨日の今日のような気持ちではございますが。
+[k]
+
+？2：斬ザブロー！
+
+
+[charaFace J 1]
+
+＠斬ザブロー
+ザァン！
+[k]
+
+
+[charaFace I 23]
+
+＠出雲阿国
+え？　もしや斬ザブローの方がお気に入り！？[wt 1.0][charaFace I 9][r]阿国さん地味ショック！
+[k]
+
+？！
+
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ノッブ
+こやつが例の出雲阿国か。[r]名前は知っとったが会うのは初めてだったか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 9]
+[charaFadein I 0.1 1]
+
+＠出雲阿国
+そちらさまの首がないので何とも……、
+[k]
+
+[charaFace I 5]
+
+＠出雲阿国
+というかそういう貴方様が[r]話に聞いた首なし信長公でございますね。
+[k]
+
+[charaFace I 13]
+
+＠出雲阿国
+やはり、こうなっておりましたか。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 15]
+[charaFadein K 0.1 1]
+
+＠蘭丸Ｘ
+どういう事でありますか？　信長様の首は[r]この星の蘭丸にお返ししたはずなのでありますが。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 23]
+[charaFadein I 0.1 1]
+
+＠出雲阿国
+それが話せば長く……[r]と言いますかなんと言いますか、
+[k]
+
+[charaFace I 9]
+
+＠出雲阿国
+ぶっちゃけ説明するのが馬鹿らしいので[r]とりあえずご一緒に来ていただければと……。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_146 1.0]
+[wait fade]
+
+[charaFadeout I 0]
+[wt 1.0]
+
+[scene 137800]
+
+[charaSet F 1098170900 1 森長可]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaPut N 1]
+[charaEffect N bit_talk_10_red]
+[wt 0.1]
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠タカスギ
+[line 3]というわけなんだな。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk K]
+[charaFace K 2]
+[charaFadein K 0.1 1]
+
+＠蘭丸Ｘ
+何がどういうわけなんでありますか！？
+[k]
+
+[messageOff]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaPut N 1]
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+[wt 0.6]
+
+？1：説明をしてください
+？2：生きとったんか、社長！
+
+？！
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠茶々
+黒幕社長、生きてたのかだし！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+
+＠森長可
+うはははははは！[r]殿様、また何かする前に殺しとこうぜ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut N 1]
+[charaTalk L]
+[charaFace L 1]
+[charaFadein L 0.1 1]
+
+＠タカスギ
+おっと、勘違いするんじゃないぞ。[r]この僕は高杉晋作であって、高杉晋作ではない。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠出雲阿国
+実は高杉様の最期を看取りました後、どういうわけか、[r]特異点が崩壊しかかりのまま残っておりましたので、
+[k]
+
+[charaFace I 9]
+
+＠出雲阿国
+如何なるサムシングかと[#此方:こちら]に戻りましたら、[r]このような社長様の映像が現れておりまして……。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaPut N 1]
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠タカスギ
+実は僕……ああ、君達にやられた方ね。[r]自分の命が長くない事を知っていた僕は、
+[k]
+
+＠タカスギ
+万が一、天逆神に全てを手中に収められて[r]しまった時の為に対抗策を用意していたんだ。
+[k]
+
+[charaFace L 1]
+
+＠タカスギ
+自分が乗っ取られたケースを想定し、[r]己を打ち倒すためにね。
+[k]
+
+[charaFace L 11]
+
+＠タカスギ
+だがそれは並大抵の者には務まらない。[r]そう、高杉晋作に勝てるのは高杉晋作のみ。
+[k]
+
+[charaFace L 7]
+
+＠タカスギ
+つまり己の思考パターンをコピーし、[r]天逆神の野望を打ち砕く正義のＡＩ、
+[k]
+
+[charaFace L 14]
+
+＠タカスギ
+すなわち電子の英雄、
+[k]
+
+＠タカスギ
+『ＴＡＫＡＳＵＧＩ』を作成しておいたのだ！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk K]
+[charaFace K 4]
+[charaFadein K 0.1 1]
+
+＠蘭丸Ｘ
+でも、高杉様は蘭丸達が[r]やっつけたでありますから。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaPut N 1]
+[charaTalk L]
+[charaFace L 11]
+[charaFadein L 0.1 1]
+
+＠タカスギ
+そこなんだよな。晋作負けてんのかよ。
+[k]
+
+[charaFace L 8]
+＠タカスギ
+僕に勝てるのは僕だけとか言ってた奴誰だよ、[wt 1.0][charaFace L 13][r]僕だよ。
+[k]
+
+[charaFace L 20]
+
+＠タカスギ
+あそこまでお膳立てして負けるとか、[r]何してんだ晋作。
+[k]
+
+[charaFace L 22]
+
+＠タカスギ
+カッコいい最後を見せた後に姿を現す[r]羽目になった僕の身にもなれよ、僕。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠坂本龍馬
+いや、手強かったよ、高杉さんは……。[r]僕らはいろいろと幸運だったのさ、きっとね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut N 1]
+[charaTalk L]
+[charaFace L 21]
+[charaFadein L 0.1 1]
+＠タカスギ
+坂本君、君に言われてもまるで嬉しくないぞ。
+[k]
+
+[charaFace L 8]
+
+＠タカスギ
+まったく思ってもなさそうでいて、[r]心の底から思ってそうなことをペラペラと。
+[k]
+
+[charaFace L 11]
+
+＠タカスギ
+あーあ、やっぱり君となんか組むんじゃなかった。[r]何でこんなうさん臭い奴と組んじゃったかな、僕。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠森長可
+とにかく、もう必要ねぇからさっさと消えてくれや。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaTalk I]
+[charaFace I 13]
+[charaFadein I 0.1 1]
+
+＠出雲阿国
+実はそれがそうもいかなくてですね……。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaPut N 1]
+[charaTalk L]
+[charaFace L 6]
+[charaFadein L 0.1 1]
+
+＠タカスギ
+ああ、僕としては絶対に僕が勝つと思っていたから、[r]僕に対抗するための計画を水面下で進めていてね。
+[k]
+
+[charaFace L 0]
+
+＠タカスギ
+その名も……
+[k]
+
+[bgm BGM_EVENT_111 0.1]
+
+[charaFace L 15]
+
+＠タカスギ
+『[#新:ニュー]・キ神計画』！！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk K]
+[charaFace K 15]
+[charaFadein K 0.1 1]
+
+＠蘭丸Ｘ
+新・キ神計画……？
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaPut N 1]
+[charaTalk L]
+[charaFace L 17]
+[charaFadein L 0.1 1]
+
+＠タカスギ
+そう、奇神に勝てるのは奇神のみ！
+[k]
+
+[charaFace L 1]
+
+＠タカスギ
+すなわち正義の奇神である[r]『アラハバキ・弐号機』を建造していたんだ。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠森長可
+まあ、奇神とやらはオレらがぶち壊したけどな。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut N 1]
+[charaTalk L]
+[charaFace L 11]
+[charaFadein L 0.1 1]
+
+＠タカスギ
+ホント何してくれたんだよ。[r]誰だよ、奇神に勝てるのは奇神とか言ってた奴。
+[k]
+
+[charaFace L 20]
+
+＠タカスギ
+僕だよ。
+[k]
+
+[charaFace L 22]
+
+＠タカスギ
+まあいい。で、結局、『アラハバキ・弐号機』は[r]このままこの特異点とともに消えるはずだった……。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠坂本龍馬
+だった、ということは……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut N 1]
+[charaTalk L]
+[charaFace L 7]
+[charaFadein L 0.1 1]
+
+＠タカスギ
+どういうわけか、弐号機の内部に例の信長の首が[r]再構成されて出現し、炉心として稼働しだした。
+[k]
+
+＠タカスギ
+で、本来の敵である壱号機を倒そうと動き出したが[r]肝心の壱号機がもうやられてるから、
+[k]
+
+[charaFace L 13]
+＠タカスギ
+目標を失った奇神ＡＩがバグって[r]暴走してるらしいってわけ。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk K]
+[charaFace K 5]
+[charaFadein K 0.1 1]
+
+＠蘭丸Ｘ
+つまり、だいたい社長が悪いのでは？
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠茶々
+だいたいというか全部悪いとおもうし！[r]結局、ヤバいのがもう一体増えただけなんだけど！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut N 1]
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠タカスギ
+だって、[r]君達に僕が負けると思わなかったからね。
+[k]
+
+[charaFace L 1]
+
+＠タカスギ
+そもそも負けると思って戦う[r]馬鹿がいるかという話だよ。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+
+＠森長可
+そりゃ違えねぇが、それはそれとして死ねやおまえ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut N 1]
+[charaTalk L]
+[charaFace L 7]
+[charaFadein L 0.1 1]
+
+＠タカスギ
+そんなわけで君達に集まって[r]もらったのは他でもない。
+[k]
+
+[charaFace L 13]
+＠タカスギ
+このまま放っておいたら、弐号機は臨界点を超え[r]特異点を無数に分岐させ暴走、
+[k]
+
+＠タカスギ
+君達の世界すら崩壊させるかもしれない。
+[k]
+
+？1：えぇ……
+？2：社長も大概ぐだぐだですね
+
+？！
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk K]
+[charaFace K 4]
+[charaFadein K 0.1 1]
+
+＠蘭丸Ｘ
+と、とにかくせっかく蘭丸が綺麗に返した[r]信長様の首の事も気になるであります。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth G 2]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFace H 1]
+[charaFadein G 0.1 -120,0]
+[charaFadein H 0.1 120,0]
+
+＠坂本龍馬
+こうなっては仕方ないね。[r]お竜さん、僕らも一肌脱ぐとしよう。
+[k]
+
+＠お竜さん
+仕方ないな、覚醒したお竜さんの力を[r]また見せてしまうとするか。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠出雲阿国
+やれやれ、追加料金は頂きますよ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaPut N 1]
+[charaTalk L]
+[charaFace L 20]
+[charaFadein L 0.1 1]
+
+＠タカスギ
+残念、阿国君との契約は特異点の崩壊までだから[r]まだ終わってないんだなこれが。
+[k]
+
+[charaFace L 23]
+
+＠タカスギ
+ほら、契約書の右下。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk I]
+[charaFace I 13]
+[charaFadein I 0.1 1]
+
+＠出雲阿国
+いやいや、そんな馬鹿な……
+[k]
+
+[charaFace I 5]
+
+＠出雲阿国
+って、よく見ると確かにすっごい小さく[r]書いてあってマジクソでございます。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+
+＠蘭丸Ｘ
+それでは早速、『アラハバキ・弐号機』を破壊に……
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaPut N 1]
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠タカスギ
+ちなみに元の『アラハバキ』同様、６基の魔力炉からの[r]魔力を停止した後でないと、
+[k]
+
+＠タカスギ
+ほぼ破壊不可能だから気を付けてくれ。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠森長可
+またあれやんのかよ。[r]おい、軍神となんたら女王呼んでこいや。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut N 1]
+[charaTalk L]
+[charaFace L 13]
+[charaFadein L 0.1 1]
+
+＠タカスギ
+あと魔力炉には、護衛のサーヴァントも[r]召喚されているはずだから気を付けるんだぞ。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk K]
+[charaFace K 4]
+[charaFadein K 0.1 1]
+
+＠蘭丸Ｘ
+何でそんな余計な事を……。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaPut N 1]
+[charaTalk L]
+[charaFace L 9]
+[charaFadein L 0.1 1]
+
+＠タカスギ
+そこが君達にやられた僕と僕が違う所だ、[r]万が一に備えて、
+[k]
+
+＠タカスギ
+魔力炉を独自に護衛するサーヴァント、[r]通称、維新サーヴァントも配していたってわけ。
+[k]
+
+[charaFace L 15]
+
+＠タカスギ
+結局、ただの邪魔にしかなってないがな！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠茶々
+失敗を偉そうに言うなし！
+[k]
+
+[charaFace C 3]
+
+＠茶々
+というかよく考えなくても[#徹頭徹尾:てっとうてつび][r]余計な事しかしてないんですけど、
+[k]
+
+＠茶々
+この社長コンピュータ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut N 1]
+[charaTalk L]
+[charaFace L 13]
+[charaFadein L 0.1 1]
+
+＠タカスギ
+ハハハ、まあ面白いからいいだろ！
+[k]
+
+[charaFace L 17]
+
+＠タカスギ
+さあ、ゆけ！　新しい時代を作るのは君達だ！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+[charaEffectStop M bit_talk_10_red]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+
+＠森長可
+うははははははは！[r]相変わらず腹立つ笑い顔してやがる！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_111 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

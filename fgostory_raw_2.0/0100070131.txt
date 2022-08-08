@@ -1,0 +1,125 @@
+
+
+
+＄01-00-07-01-3-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 8001002 1 玛修]
+[charaSet B 3008001 1 ？？？]
+[charaSet C 98006000 1 魔兽]
+[charaSet D 98006000 1 魔兽]
+[charaSet E 98006000 1 魔兽]
+[charaSet F 98006000 1 魔兽]
+
+[scene 32940]
+[fadein black 2.0]
+[wait fade]
+
+
+[charaTalk C]
+[charaFadein C 0.4 1]
+[wt 0.3]
+[charaFadein D 0.4 0]
+[wt 0.3]
+[charaFadein E 0.4 2]
+[wt 0.3]
+[se ad19]
+[wt 0.2]
+[messageShake 0.05 4 4 0.7]
+＠C：魔兽
+fushaaaaaaaaaaaaaaaaaaaaa！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠玛修
+呜，敌人的增援层出不穷！[r]如果没有对军宝具，这个数量未免太[line 3]！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+＠？？？
+想要拼数量吗？[r]太好了。那我应该也能派上用处吧。
+[k]
+
+＠？？？
+亚从者的你。[r]还有迦勒底的御主。
+[k]
+
+＠？？？
+能不能稍微后退一点呢。[r]嗯，那样就好。然后就，这样，
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFadein C 0.1 1]
+[charaFadein D 0.1 0]
+[charaFadein E 0.1 2]
+[wt 0.2]
+
+[se ad14]
+[shake 0.05 0 4 0]
+[wt 1.0]
+
+[seStop ad14 0.4]
+[se bac167]
+[shake 0.05 0 10 0.4]
+[charaPut F 0,50]
+[charaEffect F bit_talk_kushizashi01]
+[wt 0.2]
+[fowardEffect bit_talk_13]
+[flashin once 0.1 0.3 AB8B36AF AB8B3600]
+[charaMoveReturn C 0,5 0.1]
+[charaMoveReturn D -256,5 0.1]
+[charaMoveReturn E 256,5 0.1]
+[charaShake C 0.05 4 4 0.7]
+[charaShake D 0.05 4 4 0.7]
+[charaShake E 0.05 4 4 0.7]
+[charaPut A 512,-80]
+[wt 0.2]
+[charaPut F 0,-600]
+[wt 0.7]
+
+[se ad20]
+[wt 0.7]
+[charaSpecialEffect C enemyErasure 1 1.0]
+[charaSpecialEffect D enemyErasure 1 1.0]
+[charaSpecialEffect E enemyErasure 1 1.0]
+[wait charaSpecialEffect C]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠？？？
+只要一口气全部打倒就行了。[r]区区百来只程度，不需要连城市一并破坏。
+[k]
+
+＠？？？
+我知道迦勒底的御主应该备有对军宝具，[r]但那些就留到下次有机会的时候再用吧。
+[k]
+
+[charaFace B 1]
+＠？？？
+就算是废弃都市，这里也曾是人类居住过的地方。[r]可能的话，总希望能留下原有的样貌吧？
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_3 1.4]
+[wait fade]
+[soundStopAll]
+[end]

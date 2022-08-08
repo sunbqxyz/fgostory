@@ -1,0 +1,167 @@
+
+＄94-03-35-20-6-0
+
+
+
+
+[charaSet B 2025101 1 玛莉]
+[charaSet C 2025201 1 安妮]
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+
+[scene 10400]
+
+[fadein black 2]
+[wait fade]
+
+
+[se ad310]
+[seVolume ad310 0 0.8]
+[wt 0.5]
+[seStop ad310 0.1]
+[wt 0.3]
+
+
+＠玛莉
+[tVoice ValVoice_202500 0_V010]
+御主，御主在吗？[wait tVoice]
+[k]
+
+？1：在哦～？
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+
+＠玛莉
+[tVoice ValVoice_202500 0_V020]
+啊啊，太好了。[r]如果您不在的话，我可要气馁了……[wait tVoice]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 0]
+
+[charaFace B 0]
+[charaFadein B 0.4 2]
+
+＠安妮
+[tVoice ValVoice_202500 0_V030]
+真是的，你在这种方面还真是晚熟呢。[r]好了，御主。有时间吗？[wait tVoice]
+[k]
+
+[charaFace C 0]
+
+＠安妮
+[tVoice ValVoice_202500 0_V040]
+玛莉。[wait tVoice]
+[k]
+
+[charaFace B 3]
+
+＠玛莉
+[tVoice ValVoice_202500 0_V050]
+唔，嗯。[r]那个……这个，是巧克力。[wait tVoice]
+[k]
+
+＠玛莉
+[tVoice ValVoice_202500 0_V060]
+是情人节的。[r]嗯。姑且，是手工做的。[wait tVoice]
+[k]
+
+[messageOff]
+
+[charaTalk off]
+
+[se ad79]
+[wt 0.1]
+
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+
+
+？1：谢谢，我很高兴！
+？！
+
+[charaTalk on]
+[charaFace B 0]
+
+＠玛莉
+[tVoice ValVoice_202500 0_V070]
+太好了……啊，然后哦？[r]希望你在吃这块巧克力的时候要小心一点。[wait tVoice]
+[k]
+
+[charaFace C 1]
+
+＠安妮
+[tVoice ValVoice_202500 0_V080]
+其实很简单哦？[r]只要一小口一小口吃就可以啦。[wait tVoice]
+[k]
+
+[charaFace B 1]
+
+＠玛莉
+[tVoice ValVoice_202500 0_V090]
+如果大口大口吃的话，[r]可是会对健康不利的！[wait tVoice]
+[k]
+
+[charaFace C 0]
+
+＠安妮
+[tVoice ValVoice_202500 0_V100]
+那我们就先告辞了。[r]我们会等你的哦。[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠玛莉
+[tVoice ValVoice_202500 0_V110]
+会等你的，那回见！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[charaFadeout C 0.4]
+[se ad8]
+[wait se ad8]
+[wt 0.5]
+
+
+
+[se ad182]
+[wt 1.0]
+
+？1：？
+？！
+
+[se ade26]
+
+[equipSet A 9805200 1 ]
+[wait equipSet A]
+[charaFace A 0]
+[charaFadein A 0.5 0,-70]
+[wt 2.0]
+[charaFadeout A 0.4]
+[wt 1.0]
+
+
+
+？1：这是……房间的钥匙吗……
+？！
+
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+[soundStopAll]
+[end]

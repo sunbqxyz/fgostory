@@ -1,0 +1,483 @@
+
+＄01-00-05-19-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+
+[charaSet A 8001001 1 玛修]
+[charaSet B 7014001 1 南丁格尔]
+[charaSet C 7020000 1 库·丘林·Alter]
+[charaSet D 1019001 1 罗摩]
+[charaSet E 3004001 1 迦尔纳]
+[charaSet F 2015001 1 阿周那]
+[charaSet G 98002000 1 芙芙]
+[charaSet H 98003003 1 Dr.罗曼]
+
+[charaTalk H]
+[communicationCharaLoop 98003003 1 5 0 0]
+
+[scene 20721]
+[fadein black 2]
+[wait fade]
+
+＠Dr.罗曼
+生命体反应消失！[r]……呼，哎呀呀，真是吓出一身冷汗。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0 2]
+[communicationCharaLoop 98003003 0 5 0 0]
+＠玛修
+医生，北部战线情况如何？
+[k]
+
+[communicationCharaFace 1]
+＠Dr.罗曼
+嗯，北部战线还维持着。[r]看来或许能行……！
+[k]
+
+[messageOff]
+[messageOff]
+[wipeout leftToRight 0.5 1]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[wt 1.0]
+
+[wait wipe]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaFadeout A 0]
+[communicationCharaClear]
+[wait communicationChara]
+
+[wt 0.1]
+[wipein rightToLeft 0.5 1]
+[wait wipe]
+
+[se bac20]
+[wt 0.2]
+[fowardEffect bit_talk_41]
+[wait se bac20]
+[wt 0.1]
+
+[fowardEffect bit_talk_14]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[fowardEffectStop bit_talk_41]
+[shake 0.05 2 4 0.25]
+[se ad32]
+[wt 1.0]
+[seStop ad32 0.5]
+[wt 0.4]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠迦尔纳
+哈啊啊啊啊啊啊[line 2]！！
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠阿周那
+呀啊啊啊啊啊啊！！
+[k]
+
+
+[messageOff]
+[wipeout leftToRight 0.5 1]
+[wait wipe]
+
+[charaFadeout F 0]
+
+[charaTalk D]
+[charaFace B 6]
+[charaFace D 2]
+[charaFadein B 0 2]
+[charaFadein D 0 0]
+
+[wt 0.1]
+[wipein rightToLeft 0.5 1]
+[wait wipe]
+
+＠罗摩
+是迦尔纳与阿周那吗！[r]这战斗太胡来了……！
+[k]
+
+＠罗摩
+全军远离那两个人！[r]要不会被卷进去的！！
+[k]
+
+[charaFace B 6]
+＠南丁格尔
+……迦尔纳略占优势呢。
+[k]
+
+[charaFace D 0]
+＠罗摩
+哦，你看得出来吗，南丁格尔。
+[k]
+
+[charaFace D 1]
+＠罗摩
+果然弓兵的精髓还是远距离作战。[r]在这种近距离下就算阿周那也无法应付吧。
+[k]
+
+[charaFace D 5]
+＠罗摩
+不如说，战况本应是向迦尔纳一面倒的情况才对。
+[k]
+
+[charaFace D 4]
+＠罗摩
+但之所以现在双方看起来几乎势均力敌，[r]该说不愧是阿周那吗……！
+[k]
+
+[charaFace D 0]
+＠罗摩
+不过[line 2]。[r]这样下去的话，胜负应该……
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.5 1]
+[wait wipe]
+
+[charaFadeout B 0]
+[charaFadeout D 0]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0 1]
+
+[wt 0.1]
+[wipein rightToLeft 0.5 1]
+[wait wipe]
+
+＠迦尔纳
+……！
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.05 2 4 0.25]
+[se ad32]
+[wt 1.0]
+
+＠阿周那
+呜[line 4]！
+[k]
+
+[charaTalk D]
+＠罗摩
+是迦尔纳获得胜利……！
+[k]
+
+[messageOff]
+[fadeout black 0.1]
+[wait fade]
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[scene 10000]
+[fadein black 0.5]
+[wait fade]
+
+＠C：？？？
+[line 2]『[#剜穿:Gae][#鏖杀之枪:Bolg]』。
+[k]
+
+[bgmStop BGM_EVENT_3 0.1]
+
+[messageOff]
+
+
+[se ad80]
+[wt 0.4]
+[wt 0.8]
+[fowardEffect bit_talk_37]
+[wt 0.1]
+[wt 1.0]
+[wt 0.4]
+
+[scene 20721 0.5]
+[wait scene]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+哎……？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace D 5]
+[charaFace B 7]
+[charaFadein D 0.1 0]
+[charaFadein B 0.1 2]
+＠南丁格尔
+……！
+[k]
+
+[charaFace D 2]
+＠罗摩
+什……么[line 2]！？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+
+[wt 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+从者反应忽然出现……！？[r]喂，发生什么事了！？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFace E 2]
+[charaFadein E 0.1 2]
+[charaFadein F 0.1 0]
+＠阿周那
+……！
+[k]
+
+＠迦尔纳
+……
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[messageOff]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+＠库·丘林·Alter
+别怪我哦，施舍的英雄。[r]毕竟这可是不讲规矩的厮杀。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+[fowardEffect bit_talk_35]
+
+＠迦尔纳
+……库·丘林……
+[k]
+
+[wait fowardEffect bit_talk_35]
+[messageOff]
+
+[se ad58]
+[charaFadeout E 0.1]
+[wt 0.5]
+[seStop ad58]
+[wt 0.5]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFace E 0]
+[charaFadein F 0.1 0]
+[charaFadein C 0.1 2]
+＠阿周那
+库·丘林……你这混蛋……！！
+[k]
+
+[charaFace C 5]
+＠库·丘林·Alter
+[line 2]啰嗦。是你们擅自开打的。[r]我允许你单挑了吗？
+[k]
+
+＠库·丘林·Alter
+就算真想随自己的兴趣玩一把，[r]也应该等大势已定后才行吧。
+[k]
+
+[charaFace C 0]
+＠库·丘林·Alter
+我没从背后刺你一枪，你就已经应该谢天谢地了，[r]天赐的英雄。
+[k]
+
+[charaFace F 4]
+＠阿周那
+……！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout C 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠库·丘林·Alter
+好了[line 2][r]那个人就是那个御主吗。
+[k]
+
+？1：……！
+？！
+
+＠库·丘林·Alter
+怎么，在发抖吗？[r]本以为你是个身经百战的勇者，难道是我想太多了吗？
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+你……你是……！？
+[k]
+
+？1：冬木的Caster！
+？2：当时与我们一起战斗的……！
+
+？！
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠库·丘林·Alter
+遗憾的是我完全不记得了。[r]那完全就是别人吧。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠玛修
+但是……
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+
+[charaTalk G]
+[charaFace A 14]
+[charaFace G 0]
+[charaFadein A 0.1 2]
+[charaFadein G 0.1 0]
+＠芙芙
+芙！
+[k]
+
+？1：玛修，冷静一点。
+？2：玛修，他是敌人。
+
+？！
+
+[charaTalk A]
+[charaFace A 7]
+＠玛修
+……是，我明白。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout G 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠罗摩
+等等，库·丘林！[r]斯卡哈呢[line 2]。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠库·丘林·Alter
+嗯？　哦，斯卡哈的话，已经被我打倒了。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠南丁格尔
+……！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFace A 6]
+[charaFadein A 0.1 2]
+[charaFadein D 0.1 0]
+＠罗摩
+……说得真够直接的。
+[k]
+
+[charaFace A 4]
+＠玛修
+那位斯卡哈小姐……怎么会……
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠库·丘林·Alter
+啊，悼词什么的就不需要了哦？
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaFace C 1]
+＠库·丘林·Alter
+反正你们都会死在这里。[r]要互舐伤口的话，去那个世界做吧。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠罗摩
+要来了……！[r]不要吝啬令咒，全力应战！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

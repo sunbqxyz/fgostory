@@ -1,0 +1,228 @@
+
+
+
+＄01-00-07-18-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 98107400 1 牛若丸]
+[charaSet B 8001002 1 玛修]
+[charaSet C 4018001 1 魁札尔·科亚特尔]
+[charaSet D 98003000 1 Dr.罗曼]
+[charaSet E 98107800 1 拉赫穆]
+[charaSet F 98107800 1 拉赫穆]
+[charaSet G 98107800 1 拉赫穆]
+
+[scene 35000]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[wt 0.4]
+[charaEffect A bit_talk_13]
+[wt 0.1]
+[se bac10]
+[charaShake A 0.05 5 5 0.4]
+[wt 1.0]
+＠牛若丸
+哼……看来不是光会耍嘴皮子啊。
+[k]
+
+[charaFace A 1]
+＠牛若丸
+但无论如何，你们都没有胜算。[r]就在刚才，圣杯已经送到母亲大人的手上了。
+[k]
+
+？1：……没能阻止……！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠玛修
+呜……对。这都是[r]没能突破牛若丸的我们的责任……！
+[k]
+
+[charaFadeout B 0.1]
+
+？2：牛若丸，你为什么要做这种事……！
+
+[charaFace A 0]
+＠牛若丸
+……为什么？[r]这个嘛。我也不太明白。
+[k]
+
+[charaFace A 4]
+＠牛若丸
+『曾经的我』已经死在泥之海了。[r]身处这里的，是被剥夺了理性，仅凭本能行动的亡者之类的存在。
+[k]
+
+＠牛若丸
+我原本就有素质啊，[r][%1]阁下。
+[k]
+
+[charaFace A 1]
+＠牛若丸
+像这样仇恨人世，按捺不住杀戮的渴望，[r]非人的灰暗污浊。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[messageOff]
+[wt 0.7]
+[se bac112]
+[charaTalk off]
+[charaFace E 0]
+[charaFadein E 0.4 0,-64]
+[charaMove E 0,0 0.4]
+[wt 0.2]
+[se bac112]
+[charaFace F 0]
+[charaFadein F 0.4 -320,-64]
+[charaMove F -320,0 0.4]
+[wt 0.2]
+[se bac112]
+[charaFace G 0]
+[charaFadein G 0.4 320,-64]
+[charaMove G 320,0 0.4]
+[wt 1.0]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠玛修
+拉赫穆再次大量出现……！[r]这……这数量，如今的乌鲁克是挺不住的！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠牛若丸
+……开始了啊。我也不能继续这么闲着了。[r]一旦猎物减少，我的刀就会丧失去处。
+[k]
+
+＠牛若丸
+好啦，接下来是去攻占像乌龟一样缩在壳里的乌鲁克呢，[r]还是去与在北壁苟且偷生的难民们玩玩呢。
+[k]
+
+[charaFace A 0]
+＠牛若丸
+无论如何，都得废弃这具躯体了。[r]我不会执着于受了伤的个体。
+[k]
+
+＠牛若丸
+再见啦，迦勒底的残党。[r]就让我对你们能够击杀我一事表示赞赏吧。
+[k]
+
+[charaFace A 4]
+＠牛若丸
+……虽然只是毫无意义的胜利。[r]因为对『现在的我』来说，已经不存在死亡这种[#败北:终结]了。
+[k]
+
+[messageOff]
+[se ad161]
+[charaSpecialEffect A enemyErasure 1 1.8]
+[wt 0.4]
+[se ad42]
+[wt 0.5]
+[effect bit_talk_tokeru01]
+[wait effect bit_talk_tokeru01]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠玛修
+呜……回乌鲁克吧，御主！[r]就算赶不上，也不能这样坐视不理！
+[k]
+
+？1：不。先去一趟观测所吧。
+？2：这种时候首先要冷静，玛修。
+
+？！
+
+[bgmStop BGM_EVENT_3 1.0]
+[se ad7]
+[charaShake B 0.05 3 3 0.5]
+
+[charaFace B 3]
+＠玛修
+话……话是这么说！[r]但只要握住我的手，我就能冷静下来！
+[k]
+
+[charaFadeout B 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠魁札尔·科亚特尔
+对。那个思路是正确的哦。[r]我也赞成[%1]的意见。
+[k]
+
+＠魁札尔·科亚特尔
+……还有就是，对不起。[r]都是因为我不争气，才会放跑了拉赫穆。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr.罗曼
+不，魁札尔·科亚特尔没有任何疏漏。[r]谁也无法预测我们竟然会受到那种妨碍。
+[k]
+
+＠Dr.罗曼
+比起这个问题，现在还是照[%1]所说的，[r]前往观测所吧！
+[k]
+
+＠Dr.罗曼
+虽然事态紧急，但也不能胡乱行动。[r]先得掌握状况才行！
+[k]
+
+[communicationCharaFace 0]
+＠Dr.罗曼
+而且，就算只有数分钟的休息也是很重要的。
+[k]
+
+＠Dr.罗曼
+这阵子你们一直战斗个不停。[r]希望你俩能至少能找个有屋檐的地方好好休息一会。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠魁札尔·科亚特尔
+对，那当然！　医生的关心也很正确哟～！[r]先去吃饭吧，吃饭！
+[k]
+
+＠魁札尔·科亚特尔
+日本的摔角擂台上经常互呛道，[r]饿着肚子成不了事嘛～！
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_5 1.4]
+[wait fade]
+[soundStopAll]
+[end]

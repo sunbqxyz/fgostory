@@ -1,0 +1,54 @@
+＄01-00-01-12-3-1
+
+[soundStopAll]
+[bgm BGM_EVENT_6 0.1]
+[scene 20300 0]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98003003 1 罗曼医生]
+[charaSet C 2005001 1 狂化弓兵]
+[charaSet D 9001001 1 贞德]
+[charaSet E 4006001 1 乔尔乔斯]
+[charaSet F 5015001 1 阿马德乌斯]
+[charaSet G 7013001 1 清姬]
+[charaSet H 3005001 1 伊丽莎白]
+[charaFace C 5]
+[charaFadein C 0 1]
+[fadein black 1]
+[wait fade]
+＠狂化弓兵
+……这样就好，这样就好了。[r]真是的，这可真是件麻烦又倒霉到家的差事。
+[k]
+
+[charaFace C 1]
+＠狂化弓兵
+去吧，去打倒那只龙。[r]啊啊，下次我一定要[line 2]。
+[k]
+
+[messageOff]
+[charaSpecialEffect C flashErasure 1 3]
+[wt 1]
+[se ba5]
+[wait charaSpecialEffect C]
+[wt 0.5]
+[bgmStop BGM_EVENT_6 0.4]
+[bgm BGM_EVENT_3 0.1]
+[se ad13]
+[wait se ad13]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠罗曼医生
+确认狂化弓兵已被消灭。[r]同时发现超大型生命体反应！
+[k]
+
+[communicationCharaFace 5]
+＠罗曼医生
+法夫纳好像已经从奥尔良出发了。[r]也就是说……终于到决战的时刻了！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[communicationCharaClear]
+[wait communicationChara]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

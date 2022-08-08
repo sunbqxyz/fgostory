@@ -1,0 +1,582 @@
+
+＄91-50-18-01-3-0
+
+[soundStopAll]
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 5010001 1 帕拉塞尔苏斯]
+[charaSet C 5018001 1 吉尔伽美什]
+[charaSet D 98111500 1 达·芬奇]
+[charaSet E 11001000 1 安哥拉曼纽]
+
+[charaSet F 98115000 1 特效用]
+[charaSet G 98115000 1 特效用]
+[charaSet H 98115000 1 特效用]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 10710]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se bac135]
+[charaFace B 2]
+[charaShake B 0.05 3 3 0.3]
+[effect bit_talk_Slash_white_01]
+[wt 0.3]
+[se bac136]
+[charaShake B 0.05 3 3 0.3]
+[effect bit_talk_Slash_white_01_L]
+[wt 0.3]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[wt 0.2]
+[se ad39]
+[charaPut F 1]
+[charaDepth F 10]
+[charaEffect F bit_talk_15]
+[wt 1.5]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_15]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.2]
+[se bac279]
+[charaPut F 1]
+[charaPut G -300,0]
+[charaPut H 300,0]
+
+[charaShake B 0.05 3 3 2.0]
+[charaEffect F bit_talk_32]
+[wt 0.2]
+[charaEffect G bit_talk_32]
+[wt 0.2]
+[charaEffect H bit_talk_32]
+[charaMove F -250,0 0.5]
+[charaMove G 250,0 0.5]
+[charaMove H 0,0 0.5]
+[wt 0.5]
+[seStop bac279 0.5]
+[charaMove F 200,0 0.5]
+[charaMove G 0,0 0.5]
+[charaMove H -200,0 0.5]
+[wt 0.5]
+
+
+[charaPut F 1200,1200]
+[charaPut G 1200,1200]
+[charaPut H 1200,1200]
+
+[charaEffectStop F bit_talk_32]
+[charaEffectStop G bit_talk_32]
+[charaEffectStop H bit_talk_32]
+[bgmStop BGM_EVENT_3 1.0]
+[wt 0.3]
+[charaMove B 0,-40 0.2]
+[charaShake B 0.05 3 3 0.2]
+[wt 0.2]
+[se ad144]
+[charaFadeout B 0.1]
+[wt 1.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠吉尔伽美什
+差不多就这样吧。[r]这下吸取教训了吧，霍恩海姆？
+[k]
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-60]
+[charaMove B 1 1.5]
+[charaShake B 0.07 4 1 1.5]
+[wt 2.0]
+
+＠帕拉塞尔苏斯
+非常……痛啊。[r]痛到我都想喝那种药了。
+[k]
+
+＠帕拉塞尔苏斯
+那些都是我精心培养的人工生命体，[r]但竟然依然无法弥补敌我的战力差距。
+[k]
+
+＠帕拉塞尔苏斯
+我对将它们当做弃子使用感到十分痛心……
+[k]
+[messageOff]
+[se bac23]
+[charaMoveReturn B 10,0 0.2]
+[wt 0.2]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠吉尔伽美什
+唔？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠帕拉塞尔苏斯
+这是陷阱。[r]但如果你们不介意的话要不要和我一起来？
+[k]
+[messageOff]
+[charaFadeout B 0.4]
+[se ad132]
+[wt 1.0]
+[seStop ad132 0.5]
+
+？1：等一下，帕拉塞尔苏斯！
+？2：必须阻止那个给人添麻烦的医生！
+
+？！
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠吉尔伽美什
+算了，等一下，本王理解你的心情，但冷静点，杂种。[r]没有必要自己跳入对方的陷阱。
+[k]
+
+＠吉尔伽美什
+对方是Caster，和刚才的Assassin不同。[r]我们完全可以进行追踪。
+[k]
+
+＠吉尔伽美什
+比起这件事，你不妨试着推测一下对方的意图。
+[k]
+
+？1：……是想调虎离山？
+
+[charaFace C 1]
+
+＠吉尔伽美什
+没错。[r]只要想做，你还是能做到的嘛。
+[k]
+
+？2：……不想被我们教训吗？
+
+[charaFace C 4]
+
+＠吉尔伽美什
+……你这个[&男人:女人]真是的……[r]这就是所谓的宽松，不，是无欲，不，是气盛世代吗……
+[k]
+
+＠吉尔伽美什
+好好想想，他那么强调让我们追赶他。[r]那你就需要反过来思考他不愿意的事。
+[k]
+
+？！
+
+[charaFace C 0]
+
+＠吉尔伽美什
+很明显他的撤退是在佯动。[r]但是杂种啊，是否还有其他令人在意的地方呢？
+[k]
+
+？1：……大圣杯！
+
+？！
+
+＠吉尔伽美什
+没错。[r]这块土地上只有这个有价值的东西了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaPut F 1]
+[charaEffect F bit_talk_10]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+能究明杰克小姐与帕拉塞尔苏斯先生[r]古怪行动的关键就在那边吗……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠吉尔伽美什
+………………
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.7 1]
+[bgmStop BGM_EVENT_2 0.7]
+[wait wipe]
+
+[charaSet B 9002001 1 天草四郎]
+
+[charaFadeout C 0.1]
+[wt 0.5]
+[scene 20200]
+
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+＠安哥拉曼纽
+怎么，居然笔直向正主冲来了啊？[r]看来佯动失败了呢。
+[k]
+
+＠安哥拉曼纽
+不过嘛，我早就知道[r]那个兴致低落的大哥根本不适合担任佯动的工作哦？
+[k]
+
+＠安哥拉曼纽
+[line 3]好了，综上所述，你好！[r]御主和国王亲，辛苦你们远道而来！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-90]
+
+＠达·芬奇
+那是……Zero事件中[r]在大圣杯处观测到的从者吗……？
+[k]
+
+＠达·芬奇
+是迦勒底的灵基肖像中没有的英灵，[r]你为什么会在这里？
+[k]
+
+＠达·芬奇
+是你拐走了Dr.罗曼吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠安哥拉曼纽
+医生啊。[r]尽管我不认识什么医生或是学者……
+[k]
+
+＠安哥拉曼纽
+但是嘛，那个人？[r]是叫Dr.[#论破:Ronpa]吗？
+[k]
+
+＠安哥拉曼纽
+那家伙在我手上哦，当然啦！[r]我是受人委托啦！
+[k]
+
+＠安哥拉曼纽
+好，综上所述，我们开始吧！[r]但你们可要小心哦！
+[k]
+
+＠安哥拉曼纽
+因为我非常弱小哦！[r]如果一拳把我打死了，你们可别有怨言哦！
+[k]
+
+＠安哥拉曼纽
+假如你们一冲动直接杀了我，就永远不知道[r]医生的去向了，这点请务必小心哦！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠吉尔伽美什
+什么！[r]只要一不小心发动攻击，就得不到情报了！？
+[k]
+
+＠吉尔伽美什
+这可是崭新的人质作战啊，杂种！[r]那该死的从者，居然用自己的性命当筹码！
+[k]
+
+？1：手下留……不对，应该全力以赴！
+？2：玛修一定能找到医生！
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut F 1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+是！　周围的探索就交给我吧！[r]请先镇压敌方势力，吉尔伽美什王！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠吉尔伽美什
+哦。哦哦哦。他们这么说哦，[r]让本王也感到意外的复仇者啊，接下来你打算怎么做？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠安哥拉曼纽
+唔……我非常中意你们[r]完全不在乎我的性命这点。不赖。
+[k]
+
+＠安哥拉曼纽
+但是啦，话说我原本就打算偷袭你们？[r]所以我的生死打从一开始就不在考虑范围内？
+[k]
+
+＠安哥拉曼纽
+只要你们能被我的花言巧语蒙骗，[r]就都没问题了吧？
+[k]
+[messageOff]
+
+[se bac23]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[wt 0.5]
+
+[charaPut F 1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠玛修
+御主！
+[k]
+
+？1：[line 3]后面，吉尔伽美什王！
+
+？！
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[charaPut G 1]
+[se ad32]
+[charaFace C 2]
+[charaEffect G bit_talk_GuardMagic]
+[wt 1.0]
+[charaEffectStop G bit_talk_GuardMagic]
+[wt 0.5]
+
+
+＠吉尔伽美什
+警告太慢啦，差一点本王就中招了！[r]若非本王，刚才那击完全是致命伤啊！
+[k]
+
+＠吉尔伽美什
+但反正千钧一发之际避开了就好。[r]现身吧，第3骑从者啊！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.7 1]
+[wt 0.7]
+＠天草四郎
+白白放过了最好的机会。[r]既然要偷袭，应该再快一拍才行吧。
+[k]
+
+＠天草四郎
+还是说这算我们俩失误呢。[r]我们的配合太糟了吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+怎么会这样……连天草先生都……请回答我。[r]医生怎么了？　为什么要做这种事？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠天草四郎
+这个嘛……[r]……………………Avenger。你有什么话要说吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠安哥拉曼纽
+别把话题扔给我啦。[r]那啥，就说是迦勒底毁灭计划不就好了嘛？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠天草四郎
+这方案真粗糙，不过算了。[r]对。一切正如他所说的。
+[k]
+
+＠天草四郎
+如果一定要我说的话，那我只能说……[r]时机已经成熟了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠吉尔伽美什
+你还是老样子，完全摸不透心里在想什么。[r]这已经是我们第二次见面了吧？　嗯？
+[k]
+
+＠吉尔伽美什
+尽管本王没有直接见过你。[r]但和你的缘分被刻在了灵基上。
+[k]
+
+＠吉尔伽美什
+不过，本王倒是对你刮目相看了，圣者啊。[r]尽管你在乌鲁克瞬间消散于密林之中[line 3]
+[k]
+
+＠吉尔伽美什
+但没想到你居然还有揭竿造反的骨气。[r]难道是因为有些厌恶现代人的生活方式了？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠天草四郎
+哈哈哈。我对这方面确实有那么点看法……[r]但具体内容就任由您想像了。
+[k]
+
+＠天草四郎
+我能说的只有一句，[r]无论在哪儿，我都是我。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠安哥拉曼纽
+喂～，既然偷袭已经暴露了，那能快点解决吗？[r]对方可不是什么可以通过交谈来打发的对手吧。
+[k]
+
+＠安哥拉曼纽
+因为无论是那个国王还是御主，[r]都早已习惯听你的说教了。
+[k]
+
+＠安哥拉曼纽
+再说了，区区一骑Caster。[r]与其在说话上白费体力，还不如全力杀了他更简单吧？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[bgmStop BGM_EVENT_5 0.5]
+[wt 0.5]
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠吉尔伽美什
+[line 3]好吧。[r]本王就接受你的挑衅，复仇者。
+[k]
+
+＠吉尔伽美什
+这魔杖是本王引以为傲的财宝之一。[r]你就亲身体会一下其威力吧！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

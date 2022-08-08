@@ -1,0 +1,474 @@
+
+
+＄94-06-05-02-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5048000 1 シャルロット・コルデー]
+[charaSet B 98114800 1 女海賊]
+[charaSet C 98018100 1 海賊]
+
+[scene 129600]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_146 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠シャルロット・コルデー
+アン・ドゥ・トロワ！[wt 0.5][se ade160]
+[k]
+
+[messageOff]
+
+[se ade310]
+[fowardEffect bit_talk_magical_pon]
+[wt 0.3]
+[se ade154]
+[seStop ade154 1.5]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠女海賊
+うお、スゲえ！　今のもう一回見せてくれ！
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+[se ade160]
+[wt 0.8]
+
+[se ade310]
+[fowardEffect bit_talk_magical_pon]
+[wt 0.3]
+[se ade154]
+[seStop ade154 1.5]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.4]
+
+＠海賊
+鳩が出てきた！[r]……鳩が消えたーーー！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠女海賊
+すっげえ！　どうやった！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シャルロット・コルデー
+そして不思議なことに、[r]こちらの帽子から～コインが～。[se ade395]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadeinFSL B 0.1 0]
+[charaFadeinFSR C 0.1 2]
+
+＠海賊ｓ
+おおおおお！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠シャルロット・コルデー
+という訳でこのコインは差し上げまーす。[wt 0.5][charaMoveReturn A 0,-15 0.5][se ad192][seStop ad192 0.3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠女海賊
+え？　いいの！？[r]やったーーー！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠シャルロット・コルデー
+はーい。
+[k]
+
+？1：（いいの？）
+？！
+
+[charaFace A 0]
+
+＠シャルロット・コルデー
+（あと五分くらいしたら消えるので……）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠女海賊
+しょうがねえ。[r]アンタたち、通っていいぜ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠海賊
+小金持ちだ、ヤッター！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad404]
+[seVolume ad404 0 0]
+[seVolume ad404 0.7 0.4]
+[se ad16]
+[seVolume ad16 0 0]
+[seVolume ad16 0.7 0.4]
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠シャルロット・コルデー
+ありがとうございまーす！
+[k]
+
+[messageOff]
+
+[seStop ad404 1.0]
+[seStop ad16 1.0]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_146 1.0]
+[se ad173]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 129600]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[seStop ad173 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_25 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠シャルロット・コルデー
+あはははは。
+[k]
+
+[charaFace A 0]
+
+＠シャルロット・コルデー
+騙してちょっと申し訳ないですけど、[r]まあ海賊さんですし、お互い様としましょう！
+[k]
+
+？1：まさにイリュージョン！
+？！
+
+[charaFace A 8]
+
+＠シャルロット・コルデー
+いえいえ、お恥ずかしい。[r]マスターも楽しんでくれたようですし。
+[k]
+
+[charaFace A 0]
+
+＠シャルロット・コルデー
+キャスターというにはほど遠いですが、[r][#手品師:マ ジ シ ャ ン]になって良かったなあ、と。
+[k]
+
+？1：他にも手品ができるのかな？
+？！
+
+[charaFace A 8]
+
+＠シャルロット・コルデー
+ええ。
+[k]
+
+[charaFace A 0]
+
+＠シャルロット・コルデー
+大がかり系はちょっと今すぐは難しいですが、[r]簡単なものなら。
+[k]
+
+＠
+そう言って。[r]ふと、思いついた手品があった。
+[k]
+
+[charaFace A 7]
+
+＠シャルロット・コルデー
+それでは、少々お待ちください。[r]今から、四季をご覧にいれましょう。
+[k]
+
+？1：四季……？
+？！
+
+[charaFace A 0]
+
+＠シャルロット・コルデー
+では……。[r]アン・ドゥ・トロワ！[bgmStop BGM_EVENT_25 1.5][wt 0.5][se ade160]
+[k]
+
+[messageOff]
+
+
+[fadeout white 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 99901]
+[bgm BGM_EVENT_45 0.1]
+
+[effect bit_talk_leaves]
+
+[fadein white 1.0]
+[wait fade]
+
+＠シャルロット・コルデー
+夏が終わり、秋が来て[line 3]
+[k]
+
+＠シャルロット・コルデー
+（何もかもが終わってしまったとしても）
+[k]
+
+[messageOff]
+
+[fadeout white 1.0]
+[wait fade]
+
+[effectDestroy bit_talk_leaves]
+
+[scene 61400]
+
+[fadein white 1.0]
+[wait fade]
+
+[effect bit_talk_snowstorm_01]
+[se ade534]
+[seStop ade534 2.5]
+
+＠シャルロット・コルデー
+秋が終わり、冬が訪れ[line 3]
+[k]
+
+＠シャルロット・コルデー
+（全てにさよならをする日が来たとしても）
+[k]
+
+[messageOff]
+
+[fadeout white 1.0]
+[wait fade]
+
+[effectDestroy bit_talk_snowstorm_01]
+
+[scene 55200]
+
+[effect bit_talk_sakura03a_back]
+[effect bit_talk_sakura03a_front]
+[se ad951]
+
+[fadein white 1.0]
+[wait fade]
+
+＠シャルロット・コルデー
+そして春がやってきて[line 3]
+[k]
+
+＠シャルロット・コルデー
+（どうか春のような幸福が訪れますように）
+[k]
+
+[messageOff]
+
+[fadeout white 1.0]
+[wait fade]
+
+[effectDestroy bit_talk_sakura03a_back]
+[effectDestroy bit_talk_sakura03a_front]
+[seStop ad951 0.1]
+
+[scene 84900]
+
+[effect bit_talk_lens_flare_fs]
+[se adm19]
+
+[fadein white 1.0]
+[wait fade]
+
+＠シャルロット・コルデー
+そしてまた、夏がやってくる。
+[k]
+
+＠シャルロット・コルデー
+（どうかわたしを、わたしたちを忘れないで）
+[k]
+
+[messageOff]
+
+[fadeout white 1.5]
+[wait fade]
+
+[effectDestroy bit_talk_lens_flare_fs]
+[seStop adm19 0.5]
+
+[scene 129600]
+
+[charaFace A 1]
+[wt 1.0]
+
+
+[fadein white 1.5]
+[wait fade]
+
+[se ade52]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+
+＠
+驚きと笑み、そして[#拍手喝采:はくしゅかっさい]。
+[k]
+
+＠
+[line 3]ああ。
+[k]
+
+＠
+一夏のとてもささやかな、この思い出を。[r]わたしは絶対に、絶対に手放さないだろう。
+[k]
+
+[charaFace A 7]
+
+＠シャルロット・コルデー
+以上っ。[r]シャルロット・コルデーでした！
+[k]
+
+[messageOff]
+
+[se ade52]
+
+[charaMoveReturn A 0,-7 0.7]
+[wt 1.2]
+
+[fadeout black 1.0]
+[seStop ade52 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[scene 106800]
+
+[fadein black 1.0]
+[wait fade]
+
+＠
+見上げれば、白雲と[#蒼穹:そうきゅう]。
+[k]
+
+＠
+全てを塗り潰すように色鮮やかなそれに、[r]わたしは少しばかり辟易する。
+[k]
+
+＠
+わたしの心を、[r]その[#眩:まばゆ]い夏で塗り潰さないで。
+[k]
+
+＠
+この淡い、[#仄:ほの]かにしか色づいていない心を。[r]歓喜のような蒼に、塗り潰さないで。
+[k]
+
+＠
+どうか、どうか[line 3]
+[k]
+
+
+[messageOff]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_45 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

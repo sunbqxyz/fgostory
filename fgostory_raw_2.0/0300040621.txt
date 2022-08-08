@@ -1,0 +1,906 @@
+
+＄03-00-04-06-2-1
+
+
+[soundStopAll]
+
+[charaSet A 1098127610 1 佩佩隆奇诺]
+[charaSet B 1098176200 1 马嘶]
+[charaSet C 8001400 1 玛修]
+[charaSet D 1098124510 1 达·芬奇]
+[charaSet E 3004001 1 迦尔纳]
+[charaSet F 98115300 1 福尔摩斯]
+[charaSet G 3004002 1 迦尔纳_灵基第三]
+[charaSet I 1019001 1 罗摩]
+[charaSet J 5009000 1 特效用dummy]
+[charaSet H 5009000 1 特效用dummy2]
+
+[scene 75007]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.5]
+
+[cueSe Battle bac109]
+[charaFadeout A 0.2]
+[wt 0.07]
+
+[charaPut J 1]
+[charaScale J 1.5]
+[charaPut J -40,-30]
+[se bac136]
+[charaEffect J bit_talk_Slash_white_01]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 128,0]
+[wt 0.2]
+
+[cueSe Battle bac109]
+[charaFadeout A 0.2]
+[wt 0.07]
+
+[se bac136]
+[charaPut J 88,0]
+[charaEffect J bit_talk_Slash_white_01_L]
+[wt 1.0]
+
+[charaPut J 1200,1200]
+[charaEffectDestroy I]
+[charaScale J 1.0]
+[charaEffect J bit_talk_10_LowLevel]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠马嘶
+啊啊可恶，烦死人了！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠玛修
+佩佩先生用魔术支援……尽管没有伤害，[r]但他用敏捷的动作扰乱着对方。趁现在！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠达·芬奇
+唔～，这是不太常见的高速机动术式呢～。[r]就是单纯速度很快的感觉。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠佩佩隆奇诺
+呵呵，想知道原理吗？
+[k]
+
+＠佩佩隆奇诺
+是啊，实际上是名副其实的……[r]用爱的力量扭曲了空间哦！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 22]
+[charaFadein D 0.1 1]
+
+＠达·芬奇
+哎～，明显是在胡扯，但现在没空细究了～！[r]出现破绽了，就是现在！
+[k]
+
+＠达·芬奇
+周围没有生命反应！　几乎已经在城镇外了，[r]所以你们可以尽情使出浑身解数啦！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+[charaEffect E bit_talk_36]
+[se ad39]
+[wt 1.5]
+[charaEffectStop E bit_talk_36]
+[cueSe NoblePhantasm_300400 NP_300400_3]
+[fadeout white 0.6]
+[effect bit_talk_29]
+[wait fade]
+
+[effectStop bit_talk_29]
+[charaFadeout E 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+[cueSeStop NP_300400_3 0.6]
+[fadein white 1.2]
+[wait fade]
+
+[cueSe NoblePhantasm_300400 NP_300400_6]
+
+[seStop ad39 0.2]
+[wt 0.8]
+
+[charaFace G 2]
+
+＠G：迦尔纳
+[f large]『[messageShake 0.05 6 4 0.4][#日轮啊，顺从死亡:Vasavi Shakti]』！！
+[k]
+
+[messageShakeStop]
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+
+[fadeout ff4500 2.0]
+[effect bit_talk_shock_wave]
+[cueSe NoblePhantasm_300400 NP_300400_11]
+[shake 0.03 4 6 0]
+[wt 1.0]
+[cueSe NoblePhantasm_300400 NP_300400_12]
+[wait fade]
+[effectDestroy bit_talk_shock_wave]
+[charaFadeout B 0.1]
+[wt 1.0]
+[cueSeStop NP_300400_4 0.5]
+[wt 0.5]
+[shakeStop]
+[fadein ff4500 0.2]
+[wait fade]
+
+[charaPut H 2000,2000]
+[charaEffect H bit_talk_lightning_01r]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠玛修
+确认直接命中！　这样就能[line 3]
+[k]
+
+[bgmStop BGM_EVENT_80 0.5]
+
+[charaFace C 15]
+
+＠玛修
+[line 3]？？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[charaPut H 1]
+[se ad137]
+[se ad61]
+[wt 1.5]
+
+＠马嘶
+啊啊，啊啊啊，啊啊啊啊[line 3]……！
+[k]
+
+[messageOff]
+[seStop ad137 1.0]
+[seStop ad61 1.0]
+[charaEffectStop H bit_talk_lightning_01r]
+[wt 1.0]
+
+[bgm BGM_EVENT_24 0.1]
+[charaFace B 2]
+
+＠马嘶
+怎么了，迦尔纳。我还没死哦。[r]就这点本事，可是杀不死我的啊[line 3]！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 2000,2000]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠福尔摩斯
+并非没有造成伤害。[r]但是他极速再生了……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠G：迦尔纳
+……看来和我所认识的你有些许不同呢。[r]马嘶。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠马嘶
+哈[line 3]这不是，理所，当然的吗。[r]你死得，可是，比我更早啊……
+[k]
+
+＠马嘶
+就因为，输给阿周那，那种家伙……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠G：迦尔纳
+[line 3]没错。这是事实。我无可否认。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠佩佩隆奇诺
+慢着慢着～，你们几个。
+[k]
+
+＠佩佩隆奇诺
+我们的目的可不是杀死他啊。[r]造成的伤害已经足够我们突围了，趁现在！
+[k]
+
+？1：同感。走吧！
+？2：全员，迅速逃离！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠马嘶
+该死。给我，站住……！
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgm BGM_EVENT_24 1.5 0.2]
+[se ad668]
+[se ad59]
+[se ad443]
+[wait fade]
+[charaFadeout B 0.1]
+[scene 74903]
+[wt 0.2]
+[seStop ad668 0.6]
+[seStop ad59 0.56]
+[seStop ad443 0.54]
+[wt 1.0]
+
+[charaSet B 1098123210 1 戈尔德鲁夫]
+[charaSet C 8001410 1 玛修]
+[charaSet E 3004002 1 迦尔纳]
+[charaSet H 23003001 1 伽内什]
+[charaSet G 98002000 1 芙芙]
+
+[fadein black 1.2]
+[bgm BGM_EVENT_24 1.2 0.6]
+
+[se ad668]
+[seVolume ad668 0 0.0]
+[se ad59]
+[seVolume ad59 0 0.0]
+[se ad443]
+[seVolume ad443 0 0.0]
+[seVolume ad668 1.0 0.5]
+[seVolume ad59 1.0 0.5]
+[seVolume ad443 1.0 0.5]
+[wait fade]
+
+[wt 2.0]
+
+[seStop ad668 1.0]
+[seStop ad59 1.0]
+[seStop ad443 1.0]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠芙芙
+芙，芙芙！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠伽内什
+呼、呼。我……我先说一句哦！
+[k]
+
+[charaFace H 0]
+
+＠伽内什
+伽内什小姐毕竟是伽内什小姐，[r]虽说外表这幅样子，但跑起来速度还是比人类快的。
+[k]
+
+＠伽内什
+而且也不怎么会累。
+[k]
+
+[charaFace H 7]
+
+＠伽内什
+……但还是会产生『疲惫的感觉』啊。[r]这对前尼特族来说是最难受的事啊！
+[k]
+
+[charaFace H 5]
+
+＠伽内什
+世界上最讨厌『跑步』这种行为的人种！[r]那就是尼特族！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 0]
+[charaDepth H 1]
+
+[charaTalk E]
+[charaFace H 5]
+[charaFadein H 0.1 0]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+
+＠迦尔纳
+再怎么说丧气话也不会变得更轻松。闭上嘴巴快跑。
+[k]
+
+[charaFace H 3]
+
+＠伽内什
+我说这话其实是期待迦尔纳先生能背着我跑哦～！？
+[k]
+
+＠迦尔纳
+不可能。我确定自己会被压垮。[r]是因为伽内什神格的重量吗……？
+[k]
+
+[charaFace H 2]
+
+＠伽内什
+太气人啦！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠罗摩
+话说回来，为什么你这家伙也跟吾等一起逃了啊。[r]你是吾等的敌人吧。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠佩佩隆奇诺
+事出有因啦，事出有因！
+[k]
+
+[charaFace A 4]
+
+＠佩佩隆奇诺
+因为迄今为止没被那家伙认定为敌人，[r]所以我只要躲起来就行了[line 3]
+[k]
+
+＠佩佩隆奇诺
+但我在那座山上被莲偶发现了，[r]而且今天还出手帮了你们。
+[k]
+
+＠佩佩隆奇诺
+恐怕我也彻底被视作[r]『这世界不需要的存在』了。
+[k]
+
+＠佩佩隆奇诺
+也就是说，[#我获得了受牵连的资格]！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠玛修
+那个，佩佩先生，这是什么意[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠佩佩隆奇诺
+现在还是多动腿少动嘴为好哦，小玛修。
+[k]
+
+＠佩佩隆奇诺
+因为如果赶不及的话，[r]一切就真的追悔莫及了！
+[k]
+
+？1：那我们究竟该逃往哪里啊？
+？！
+
+
+[charaFace A 3]
+
+＠佩佩隆奇诺
+讨厌啦～！？　不会吧，还处于这种程度吗！？
+[k]
+
+[charaFace A 4]
+
+＠佩佩隆奇诺
+真是拿你们没辙，那就边跑边听我讲吧！
+[k]
+
+
+＠佩佩隆奇诺
+那个阿周那呀，[r][#接下来将彻底破坏并重新创造这异闻带内部]。
+[k]
+
+＠佩佩隆奇诺
+归灭与再生、破坏与重构、毁灭天地与创造天地[line 3][r]那家伙能做到这些。[#因为他是最后之神]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠玛修
+……哎？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠佩佩隆奇诺
+他那漫～长的蓄力，就是准备与提炼[r]这惊天动地行径所需能量的准备动作。
+[k]
+
+＠佩佩隆奇诺
+从结论来说，如果我或者你们被卷入[r]那场世界重塑的话，当然就会消灭啦。
+[k]
+
+＠佩佩隆奇诺
+百分之百，毫无疑问，无可奈何哦。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠福尔摩斯
+这话着实令人难以置信呢。
+[k]
+
+＠福尔摩斯
+但假如那股庞大的能量持续以更快的加速度[r]增加的话，这或许并非毫无可能[line 3]
+[k]
+
+＠福尔摩斯
+然而如果你所言非虚，[r]那重新创造后的世界又会变得如何呢？　生命呢？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠佩佩隆奇诺
+这部分待会儿再说明啦，待会儿！
+[k]
+
+[charaFace A 0]
+
+＠佩佩隆奇诺
+我只是在回答[%1]亲的问题而已啦，[r]问我该逃到哪里嘛！
+[k]
+
+＠佩佩隆奇诺
+令整个世界归灭的超范围回归宝具[line 3][r]该如何才能回避，你应该知道吧？
+[k]
+
+[charaFace A 7]
+
+＠佩佩隆奇诺
+你们是唯一拥有回避手段的人。[r]我就是看中了这点，才会跟你们一起逃跑……
+[k]
+
+？1：潜航艇的……虚数潜航！
+？！
+
+[charaFace A 1]
+
+＠佩佩隆奇诺
+你这不是挺明白的嘛，就是那个啦，就是那个！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 26]
+[charaFadein D 0.1 1]
+
+＠达·芬奇
+达·芬奇亲我早就预料到了这点，[r]已经全力预热好引擎了哦☆
+[k]
+
+＠达·芬奇
+我们也会抓紧前去迎接你们～。[r]让我先设定好会合地点！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠佩佩隆奇诺
+尽管不知道万一那家伙认知了潜航艇之后会怎么样，[r]这其中确实有风险……
+[k]
+
+＠佩佩隆奇诺
+但现在已经顾不上那么多了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+慢着，慢着慢着给我慢着！
+[k]
+
+＠戈尔德鲁夫
+要让四肢健全的[#隐匿者:Crypter]登上潜航艇？[r]而且还打算让他体验虚数潜航！？
+[k]
+
+[charaFace B 6]
+
+＠戈尔德鲁夫
+这行为真是蠢得可以！[r]我决不会允许这种危险行为！
+[k]
+
+＠戈尔德鲁夫
+虽说并非没有[#隐匿者:Crypter]登上过潜航艇，[r]但那些要么是俘虏，要么就是紧急措施[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠福尔摩斯
+当然，我和达·芬奇没有无视这方面的风险。
+[k]
+
+＠福尔摩斯
+但现在最重要的应该是确保[%1]的安全。
+[k]
+
+＠福尔摩斯
+根据现状，我认为这风险应该被暂时搁置。[r]而且[line 3]
+[k]
+
+？1：………………
+？！
+
+[charaFace F 6]
+
+＠福尔摩斯
+你看看[&他:她]的表情吧。[r]一旦[&他:她]决定要去相信，
+[k]
+
+＠福尔摩斯
+那无论我们再怎么费劲口舌也劝不动吧？[r]毕竟实际行动的可是他们。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠佩佩隆奇诺
+真是的～，你们就别再翻来覆去地争吵了。
+[k]
+
+＠佩佩隆奇诺
+现在的我没有从者，[r]只不过是一介无力的魔术师啊。
+[k]
+
+＠佩佩隆奇诺
+我倒是希望你们能把我当作俘虏呢。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+唔。俘虏啊……好不容易抓住的[r]卡多克·泽姆卢普斯最后还是逃掉了。
+[k]
+
+＠戈尔德鲁夫
+考虑到这是又一次能获得[#隐匿者:Crypter]方情报的机会，
+[k]
+
+＠戈尔德鲁夫
+还算是有将风险与回报放在天秤上衡量的价值吗……？
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace B 0]
+
+＠戈尔德鲁夫
+……好，我知道了！　我就破例允许吧！[r]但前提是要严密警戒！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠玛修
+非常感谢，戈尔德鲁夫所长！
+[k]
+
+[messageOff]
+[se ad15]
+[wt 0.8]
+[charaFace C 2]
+[wt 0.2]
+
+＠玛修
+……与潜航艇的预计会合地点坐标传送来了！[r]就这样全速前往那边吧，御主！
+[k]
+
+？1：再加把劲吧！
+？2：大家，加油啊！
+？！
+
+[charaSet D 1098176300 1 身为神的阿周那]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠芙芙
+芙芙呜！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[shake 0.05 0 2 0]
+[se ad668]
+[seVolume ad668 0 0]
+[seVolume ad668 0.5 0.4]
+[se ad59]
+[seVolume ad59 0 0]
+[seVolume ad59 0.5 0.4]
+[se ad443]
+[seVolume ad59 0 0]
+[seVolume ad59 0.5 0.4]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 2.0]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 2.0]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+[wt 2.0]
+
+[fadeout black 0.7]
+[seStop ad668 0.7]
+[seStop ad59 0.7]
+[seStop ad443 0.7]
+[bgmStop BGM_EVENT_24 1.5]
+[wait fade]
+
+[shakeStop]
+
+[charaFadeout H 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+[wt 0.1]
+[pictureFrame cut063_cinema]
+[fadein black 0.7]
+[wait fade]
+
+＠佩佩隆奇诺
+（哎哟哟。总算有幸存下来的可能性了。[r]　接下来只剩一个单纯的问题了[line 3]）
+[k]
+
+
+[messageOff]
+[se ad750]
+[seVolume ad750 0 0]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[scene 75601]
+[charaPut J 210,-20]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 -150,-50]
+[charaEffect J bit_talk_arjuna_np_charge01]
+
+[wt 0.3]
+
+[seVolume ad750 0.5 0.8]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[wt 3.0]
+
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+[cueSeStop NP_201500_1 0.5]
+
+[charaFadeout D 0.1]
+[charaPut J 3000,3000]
+
+[scene 74903]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+[wt 0.3]
+
+[seStop ad750 0.5]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+＠佩佩隆奇诺
+（也就是，[r]　[#是否能赶得及呢]……）
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[wait fade]
+[pictureFrame]
+[wt 1.0]
+[soundStopAll]
+[end]

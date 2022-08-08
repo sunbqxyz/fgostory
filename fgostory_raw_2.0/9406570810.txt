@@ -1,0 +1,623 @@
+
+＄94-06-57-08-1-0
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 28002000 1 フェイカー]
+[charaSet B 28002000 1 フェイカー_シルエット]
+[charaFilter B silhouette 00000080]
+
+[charaSet C 1098166310 1 車掌]
+[charaSet D 1098228000 1 支配人代理]
+[charaSet E 1098165700 1 ムネーモシュネー]
+
+[masterBranch _Male _Female]
+
+[label _Male]
+
+[charaSet F 1098184400 1 主人公_第二部立ち絵_新表情（男）]
+
+[branch _branchEnd]
+
+[label _Female]
+
+[charaSet F 1098184410 1 主人公_第二部立ち絵_新表情（女）]
+
+[label _branchEnd]
+
+[charaFilter F silhouette 00000080]
+
+[imageSet H cut107_paper 1]
+[charaScale H 1.01]
+
+[charaSet T 98115000 1 エフェクト用]
+
+[scene 144300]
+
+[cueSe SE_21 21_ade686 0]
+[seVolume 21_ade686 1.0 1.0]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 4.0]
+
+？1：列車が止まった………！
+？2：ここが目的地………？
+？！
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 1.0]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.1]
+[scene 74201]
+[wt 1.0]
+
+[fadein black 1.0]
+[cameraHome 3.0]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1]
+
+[wt 2.7]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+フェイク・ロンゴミニアド………
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad241]
+[shake 0.05 2 2 1.0]
+[effect bit_talk_rubble]
+[se ad228]
+[wt 1.0]
+
+
+[seStop ad241 2.0]
+[seStop ad228 2.0]
+[wt 2.0]
+[effectStop bit_talk_rubble]
+[wt 1.0]
+
+？1：崩れかかってる……！
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+ロンゴミニアドだけじゃないな。[r]この特異点自体が崩壊しかかってる。
+[k]
+
+＠フェイカー
+どうやら、[r]カルデアのヤツらはもう帰投したようだが………
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 1.0 1]
+[wt 2.5]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+おまえ………！
+[k]
+
+？1：自律観測型存在証明システム………
+？2：ムネーモシュネー………
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_BATTLE_104 1.0]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ムネーモシュネー
+………夢を見ていました。[r]………幸せな夢を。
+[k]
+
+[charaFace E 0]
+
+＠ムネーモシュネー
+あなたは………ああ、そうか。[r]もうひとりの私が、保護していた記憶ですか。
+[k]
+
+？1：もうひとり？
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+なんだそれは。[r]おまえがもうひとりだって？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠ムネーモシュネー
+もうひとりの私、というよりは[r]もうひとつの意見を持つ私、が正確でしょうね。
+[k]
+
+＠ムネーモシュネー
+私が目覚めた後、しばらく私の内側で、[r]意見が分裂していたんですよ。
+[k]
+
+＠ムネーモシュネー
+本来の私は、カルデアの観測機として、[r]補助的にマスターを保護する機械です。
+[k]
+
+＠ムネーモシュネー
+だから本来通り補助するのか、もっと積極的に[r]マスターを[#保護してしまう]のか意見が割れました。
+[k]
+
+[charaFace E 0]
+
+＠ムネーモシュネー
+結果として、今の私が勝ち、[r]元々の意見を[#隔離]したんです。
+[k]
+
+＠ムネーモシュネー
+マスターの記憶を奪った際、[r]その私が逃げ出したのまでは、確認していました。
+[k]
+
+？1：じゃあ、もうひとりの君は………
+？！
+
+[charaFace E 8]
+
+＠ムネーモシュネー
+分かりません。[r]ですが、ええ、演算できます。
+[k]
+
+＠ムネーモシュネー
+特異点にあっては、私から逃げることはできません。[r]だから、彼女は[#魔眼蒐集列車:レ ー ル ・ ツ ェ ッ ペ リ ン]に行ったのでしょう。
+[k]
+
+[charaFace E 4]
+
+＠ムネーモシュネー
+………ああ、当時の私なんて、[r]簡単に演算できてしまいますね。
+[k]
+
+[messageOff]
+[wipeout guruguru 1.0 1.0]
+[bgmStop BGM_BATTLE_104 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[scene 144400]
+[effect bit_sepia01_depth_fs]
+[pictureFrameTop cut063_cinema]
+[wt 1.0]
+
+[wipein guruguru 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[bgm BGM_EVENT_103 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.4 0,-50]
+[wt 0.4]
+
+＠ムネーモシュネー
+やっと………ここまで………
+[k]
+
+＠ムネーモシュネー
+特異点にあって、特異点より少しだけ外………[r]暴走した私の手の………届かない場所………
+[k]
+
+＠ムネーモシュネー
+あなたが………導いてくれたのですか………？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-50]
+[wt 2.0]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 0,-50]
+
+＠ムネーモシュネー
+ここにあるのは、[&[#彼]:[#彼女]]の本来の記憶。[r]ですが、このままでは記憶を守れません。
+[k]
+
+＠ムネーモシュネー
+もはや、私は本来の私の3％にも満たないのですから。
+[k]
+
+＠ムネーモシュネー
+だったら………
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ade96]
+[charaFadein H 0.7 0,-230]
+[wt 1.5]
+
+[charaFadeout H 0.3]
+[wt 0.2]
+
+[charaEffect T bit_talk_blight_02]
+[se ad39]
+[wt 1.5]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 0,-50]
+[wt 0.5]
+[charaEffectStop T bit_talk_blight_02]
+[wt 1.5]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 0,-50]
+
+＠ムネーモシュネー
+記憶への人格付与、成功しました。
+[k]
+
+＠ムネーモシュネー
+出力低下……機能維持の限界まで、あと13分……
+[k]
+
+[messageOff]
+[effect bit_talk_crack01]
+[se ad148]
+[seVolume ad148 0 0.5]
+[seStop ad148 0.5]
+[wt 1.2]
+
+[charaFace E 0]
+
+＠ムネーモシュネー
+私は、あなたの期待に応えられましたか……？
+[k]
+
+[charaFace E 5]
+
+＠ムネーモシュネー
+いえ、ダメですね。[r]これだけでは足りません。
+[k]
+
+＠ムネーモシュネー
+[&彼:彼女]を守る者が必要です。[r]ですが、召喚するだけの魔力リソースは………
+[k]
+
+[charaFace E 1]
+
+＠ムネーモシュネー
+………ありました。[r]まだ2.7％、私はここに残っている。
+[k]
+
+[messageOff]
+[effect bit_talk_summon_fs]
+[wt 1.5]
+
+[charaFace E 8]
+
+＠ムネーモシュネー
+現環境とリソースで召喚できるサーヴァントを検索。[r]検索………検索………一騎、一致。
+[k]
+
+＠ムネーモシュネー
+英霊召喚システム・フェイト、疑似起動。
+[k]
+
+[messageOff]
+[effect bit_talk_crack02]
+[se ad148]
+[seVolume ad148 0 0.5]
+[seStop ad148 0.5]
+[wt 1.5]
+
+[flashin loop 0.7 1 FF000080 FF000000]
+[se ad9]
+[seVolume ad9 0 0.8]
+[wt 2.8]
+
+[seStop ad9]
+[flashOff]
+
+＠ムネーモシュネー
+展開のために73％の儀式出力不足、[r]61％の魔術精度不足を検出。
+[k]
+
+＠ムネーモシュネー
+召喚補助のため、自律観測型存在証明システム、[r]ムネーモシュネーの分解を開始します。
+[k]
+
+[messageOff]
+[effect bit_talk_crack03]
+[se ad148]
+[seVolume ad148 0 0.5]
+[seStop ad148 0.5]
+[wt 1.5]
+
+[charaEffect E bit_talk_06]
+
+＠ムネーモシュネー
+システム疑似起動、安定。[r]召喚を開始します。
+[k]
+
+[charaFace E 6]
+
+＠ムネーモシュネー
+マスターを守って………。[r]私のサーヴァント………。
+[k]
+
+[messageOff]
+[effectStop bit_talk_crack01]
+[effectStop bit_talk_crack02]
+[effectStop bit_talk_crack03]
+[se ad148]
+[se ad149]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[effect bit_talk_mirror_break02]
+[charaFadeout E 0.4]
+
+[fadeout white 1.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[charaEffectStop E bit_talk_06]
+[se ad52]
+[wt 1.5]
+
+[fadein white 1.5]
+[wait fade]
+
+[se ad153]
+[seVolume ad153 0 0.2]
+[seStop ad153 1.0]
+[se su3]
+[effectStop bit_talk_summon_fs]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 0,-50]
+[wt 4.0]
+
+[wipeout unGuruguru 1.0 1.0]
+[bgmStop BGM_EVENT_103 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[pictureFrameTop]
+[effectStop bit_sepia01_depth_fs]
+
+[scene 74201]
+[wt 1.0]
+
+[wipein unGuruguru 1.0 1.0]
+[bgm BGM_BATTLE_104 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+？1：それが………自分とフェイカーの………
+
+？！
+
+[bgm BGM_BATTLE_104 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ムネーモシュネー
+正しい記憶を保護するため、[#私]はあなたに人格を与えて[r][#魔眼蒐集列車:レ ー ル ・ ツ ェ ッ ペ リ ン]に乗せたのです。
+[k]
+
+＠ムネーモシュネー
+残念ながら、ほぼ間違いないはずです。[r]何しろ、[#自分]のことですからね。
+[k]
+
+＠ムネーモシュネー
+とりわけそれは、[r][#あの人に期待された通りの私]なんですから。
+[k]
+
+？1：ムネーモシュネー………
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+じゃあ、私が前の召喚のことを覚えてるのは………
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠ムネーモシュネー
+あなたには、[#私]がまじっています。
+[k]
+
+＠ムネーモシュネー
+もうひとつの[#私]は、魔力不足を補うため、[r]自分の体を使ったのでしょう。
+[k]
+
+＠ムネーモシュネー
+結果として、[#私:ムネーモシュネー]を構築する術式が[r]あなたの霊基に組み込まれてしまった。
+[k]
+
+＠ムネーモシュネー
+私の性能は、世界と時系列に左右されず、[r]記憶と観測を保持するものです。
+[k]
+
+＠ムネーモシュネー
+カルデア式召喚に限り、[r]あなたには記憶が固定されるでしょう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+カルデア式召喚に限り……か。[r]なるほど、妙なことになったな。
+[k]
+
+＠フェイカー
+未知のクラスになったのもそのせいだな。[r]私という殻を被っているが、厳密には私じゃない。
+[k]
+
+＠フェイカー
+[#偽の英霊:フ　ェ　イ　カ　ー]のさらにニセモノ。[r]さしずめ[#役を羽織る者:プ　リ　テ　ン　ダ　ー]と呼ぶべきか。
+[k]
+
+
+＠フェイカー
+ふん。[r]こいつのことが、放っておけなかったわけだ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠ムネーモシュネー
+そして、あなたは………
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 2.0]
+
+
+
+
+[fadeout black 2.0]
+[bgmStop BGM_BATTLE_104 2.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[scene 10000]
+[wt 0.2]
+
+[fadein black 0.1]
+[wait fade]
+
+[skip false]
+[wt 1.0]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[charaSet A 98115000 1 エフェクト用]
+[charaSet B 98115000 1 エフェクト用]
+[charaSet C 98115000 1 エフェクト用]
+[charaSet D 98115000 1 エフェクト用]
+[charaSet E 98115000 1 エフェクト用]
+[charaSet F 98115000 1 エフェクト用]
+[charaSet G 98115000 1 エフェクト用]
+[charaSet H 98115000 1 エフェクト用]
+[charaSet I 98115000 1 エフェクト用]
+[charaSet J 98115000 1 エフェクト用]
+[charaSet K 98115000 1 エフェクト用]
+[charaSet L 98115000 1 エフェクト用]
+[charaSet M 98115000 1 エフェクト用]
+[charaSet N 98115000 1 エフェクト用]
+[charaSet O 98115000 1 エフェクト用]
+[charaSet P 98115000 1 エフェクト用]
+[charaSet Q 98115000 1 エフェクト用]
+[charaSet R 98115000 1 エフェクト用]
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+[charaSet U 98115000 1 エフェクト用]
+[charaSet V 98115000 1 エフェクト用]
+[charaSet W 98115000 1 エフェクト用]
+[charaSet X 98115000 1 エフェクト用]
+[charaSet Y 98115000 1 エフェクト用]
+[charaSet Z 98115000 1 エフェクト用]
+
+[soundStopAllFade 0.4]
+
+[scene 10000]
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+
+[wt 1.0]
+[criMovie talk_mov116 bgmPlay true]
+
+[wt 1.0]
+[soundStopAll]
+[end]

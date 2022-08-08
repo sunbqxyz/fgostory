@@ -1,0 +1,541 @@
+
+＄94-06-28-02-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 4046000 1 エリザベート]
+[charaSet B 1098221800 1 パンプキンナイト]
+[charaSet C 1098221800 1 パンプキンナイト]
+[charaSet D 1098221800 1 パンプキンナイト]
+[sceneSet E 28820 1]
+[charaScale E 1.3]
+[charaSet F 2045000 1 ゼノビア]
+[charaSet G 2045000 1 ゼノビア_シルエット]
+[charaFilter G silhouette 00000080]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[charaSet I 1098224110 1 ジャックドモレー_シルエット]
+
+[charaTalk depthOff]
+
+[charaDepth B 5]
+[charaDepth C 4]
+[charaDepth D 3]
+
+[bgm BGM_EVENT_13 0.1]
+[wt 0.5]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+
+[se ad1028]
+[effect bit_talk_14 100,100]
+[wt 0.6]
+
+[effect bit_talk_14 -100,-100]
+[cueSe Servants_704100 m46322]
+[effect bit_talk_14]
+[wt 0.3]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 10954]
+
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[charaFace C 0]
+[charaFadeinFSR C 0.1 320,0]
+
+[charaFace D 0]
+[charaFadeinFSL D 0.1 -320,0]
+
+[charaShake B 0.05 2 2 1.0]
+[charaShake C 0.05 2 2 1.0]
+[charaShake D 0.05 2 2 1.0]
+
+[fadein black 0.7]
+[wait fade]
+
+[charaMoveFSL D -320,-10 0.4]
+[charaFadeout D 0.4]
+[wt 0.2]
+[charaMoveFSR C 320,-10 0.4]
+[charaFadeout C 0.4]
+[wt 0.1]
+[se ad144]
+[cueSe SE_21 21_ad1064]
+[seVolume 21_ad1064 0 0.1]
+[wt 0.1]
+[charaMove B 0,-10 0.4]
+[charaFadeout B 0.4]
+[wt 0.1]
+[se ad144]
+[wt 0.2]
+[cueSe SE_21 21_ad1074]
+[cueSe SE_21 21_ad1119]
+[wt 0.3]
+[seStop 21_ad1119 0.3]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+魔法使いに～魔法をもらったから～♪[r]勇気も～魔力も～たっぷりなのよ～♪
+[k]
+
+[charaFaceFade A 0 0.2]
+
+＠エリザベート
+さあ、行くわ。[r]チェイテシンデレラ城へ。
+[k]
+
+[charaFace A 1]
+
+＠エリザベート
+こっちよ、来なさい[&子イヌ:子ジカ]！
+[k]
+
+[messageOff]
+[se ade97]
+[wt 0.2]
+[charaMove A 500,0 1.0]
+[charaFadeout A 0.7]
+[wt 1.5]
+[bgmStop BGM_EVENT_13 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[wt 1.0]
+
+[scene 28820]
+[charaFadein E 0.1 -200,-200]
+[wt 0.1]
+[charaMove E 200,-200 6.0]
+
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.0 0.7]
+[fadein black 1.5]
+[wait fade]
+[wt 1.5]
+[charaFadeout E 1.5]
+
+[seStop ad556 5.0]
+[wt 2.5]
+
+？1：……見渡す限りの、砂漠！
+？！
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 1.3]
+
+[charaFace A 18]
+
+[bgm BGM_EVENT_94 0.1]
+
+＠エリザベート
+なんでよー！！
+[k]
+
+＠エリザベート
+[#南瓜:かぼちゃ]の山もなければ、お菓子もなし！[r]ぜんぜんハロウィンって感じじゃないし……
+[k]
+
+[charaFace A 2]
+
+＠エリザベート
+何より、[#私:アタシ]のお城どこ！？
+[k]
+
+[charaFaceFade A 16 0.2]
+
+＠エリザベート
+チェイテシンデレラ城がないと～♪[r]シンデレラがシンデレラになれないわ～♪
+[k]
+
+？1：シンデレラといえばお城だもんね……
+
+[charaFace A 4]
+
+＠エリザベート
+そうなのよぅ。
+[k]
+
+？2：シンデレラといえばお城と王子様だよね
+
+[charaFace A 0]
+
+＠エリザベート
+そう！　王子様も重要ね！
+[k]
+
+[charaFace A 4]
+
+＠エリザベート
+でもお城がないと、[r]王子様も出てくるはずないじゃない……うう……。
+[k]
+
+？！
+
+？1：そういえば、確か……
+？2：レイシフト先は中近東だったはず？
+？！
+
+[charaFaceFade A 18 0.2]
+
+＠エリザベート
+ああ～♪　どこへ～行って～しまったの～♪[r][#私:アタシ]のお城～♪
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_94 1.5]
+
+[se ad173]
+[wt 1.5]
+[seStop ad173 0.5]
+
+＠？？？
+…………この気配、サーヴァントか。
+[k]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+へ？
+[k]
+
+？1：誰？
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[se ad173]
+[wt 1.0]
+[seStop ad173 0.5]
+
+[charaFace G 0]
+[charaFadein G 0.7 1]
+[wt 1.5]
+
+[charaFace F 10]
+[charaFadein F 0.7 1]
+[bgm BGM_EVENT_71 0.1]
+[wt 1.0]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+＠？？？
+ならばこの事態の元凶と見たぞ。[line 3]そこの女！
+[k]
+
+[charaFace F 5]
+
+＠？？？
+何者か！[r]大人しく、正体を明かすがいい！
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_EVENT_71 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[wt 1.5]
+
+
+[pictureFrame cut063_cinema]
+
+[scene 137200]
+
+[fadein black 1.5]
+[wait fade]
+
+
+
+＠？？？
+すーっ、すーっ……。[r]むにゃむにゃ……。
+[k]
+
+[messageOff]
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.7 0,-50]
+[wt 0.3]
+[bgm BGM_MAP_62 0.5 0.9]
+[wt 1.2]
+
+
+＠I：？？？
+ふっふふふー。[r]なんて穏やかな眠りだろ……。
+[k]
+
+[charaFace I 18]
+＠I：？？？
+でもまあ、[#お姫様:プリンセス]ってのは、[r]大体そんなものだよねー。
+[k]
+
+＠I：？？？
+無力で無欲でかよわくて。[r]そして[#王子様:たすけがくるの]を待ちこがれてる。
+[k]
+
+[charaFace I 19]
+
+＠I：？？？
+あたしとは縁遠い存在だなー、まーじーで。
+[k]
+
+
+＠[FFFFFF]A：？？？[-]
+[charaTalk A]
+ぴよぴよ……。
+[k]
+
+[charaTalk I]
+[charaFace I 5]
+
+＠I：？？？
+……なんだかイラッとするー。[r]顔にらくがきでもしてみよっか……？
+[k]
+
+＠I：？？？
+……。[r]……。
+[k]
+
+[charaFace I 23]
+
+＠I：？？？
+ま、穏やかに眠ってるなら[r]それに越したことはないか。
+[k]
+
+＠I：？？？
+迂闊に傷つけちゃったら、[r]それはそれで問題だし？
+[k]
+
+＠[FFFFFF]A：？？？[-]
+[charaTalk A]
+……。[r]……。
+[k]
+
+[bgm BGM_MAP_62 0.5 0]
+
+＠[FFFFFF]A：？？？[-]
+[charaTalk A]
+[f large][messageShake 0.05 3 3 0.4]カッ！！
+[k]
+
+[charaTalk I]
+[charaFace I 2]
+[charaShake I 0.05 2 2 0.6]
+＠I：？？？
+[f large]ぴゃぁー！？
+[k]
+
+＠I：？？？
+びびびびっくりするじゃん！[bgm BGM_MAP_62 1.5 0.7][r]何、何、なんで急に目覚めたの？
+[k]
+
+＠I：？？？
+おっかしーなー？[r]眠り薬がバッチリ効いてるはずなんだけど。
+[k]
+
+＠I：？？？
+もう[#両方とも抜けてる]から、[r]比較的、欲求には素直になってるはずだし……。
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgmStop BGM_MAP_62 1.7]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 0,-60]
+[charaMove A 0,-50 0.6]
+[wt 1.0]
+
+＠A：エリザベート
+……。[r]……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 25]
+[charaFadein I 0.1 0,-50]
+
+＠I：？？？
+……あの？
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠A：エリザベート
+[f large]唄いたいから！！
+[k]
+
+＠A：エリザベート
+[f large]唄うわ！！
+[k]
+
+[bgm BGM_BATTLE_29 0.1]
+[se ad805]
+[se ad14]
+[charaEffect A bit_talk_voice01]
+[shake 0.05 2 2 0]
+
+＠A：エリザベート
+[f large]ボエ～♪
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 2000,2000]
+[charaEffectStop A bit_talk_voice01]
+
+[charaTalk I]
+[charaFace I 27]
+[charaFadein I 0.1 0,-50]
+
+＠I：？？？
+ギ[messageShake 0.05 3 3 0.4]ャー！　[#ウッソでしょ:セ　　パ　　ヴ　　レ]！？[r]眠れ眠れ眠ってーーー！！
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[se bac9]
+[effect bit_talk_magical_pon 0,100]
+[wt 0.4]
+[se bac8]
+[effect bit_talk_magical_pon 100,0]
+[wt 0.4]
+[cueSe Servants_2500200 bac622]
+[effect bit_talk_magical_pon 0,-100]
+[wt 0.4]
+[cueSe Servants_1000400 bac552]
+[effect bit_talk_magical_pon -100,0]
+
+[seStop ad805 1.5]
+[seStop ad14 1.5]
+[wt 1.0]
+[shakeStop]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 0,-50]
+[wt 0.7]
+[bgmStop BGM_BATTLE_29 1.5]
+
+[charaMove A 0,-70 0.5]
+[charaFadeout A 0.4]
+[wt 0.4]
+[se ad775]
+[seVolume ad775 0 0.6]
+[wt 0.6]
+
+＠A：エリザベート
+スヤァ……。
+[k]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 0,-50]
+
+＠I：？？？
+ぜーぜー……。[r]な、何とか眠った……。
+[k]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaFace I 18]
+
+＠I：？？？
+このサーヴァント……って、[r]肉体面の欲求に“歌”があるのかな？
+[k]
+
+＠I：？？？
+ん～～、それとも余分な要素が[r]混じっちゃってるせい……？
+[k]
+
+[charaFace I 24]
+
+＠I：？？？
+まーともかく[r]とんでもない歌声をお持ちで……。
+[k]
+
+＠I：？？？
+どうしてカルデアのマスターは、[r]平気なんだろね。
+[k]
+
+[charaFace I 18]
+
+＠I：？？？
+歌の種類が違うとか？
+[k]
+
+[charaFace I 16]
+
+＠I：？？？
+……んー、わからん！　わっかんない！
+[k]
+
+＠I：？？？
+わからんので、後はもう[r]目覚めないようにお祈りするしかねーですわ。
+[k]
+
+[charaFace I 17]
+
+＠I：？？？
+これさー、人選、間違っちゃった？
+[k]
+
+＠I：？？？
+もうちょいお姫様属性のサーヴァントを[r]狙えば良かったとか？　まー今さらだけど。
+[k]
+
+[charaFace I 4]
+
+＠I：？？？
+はぁ～……。[r]陰謀、策謀、悪だくみも一苦労だわ……。
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

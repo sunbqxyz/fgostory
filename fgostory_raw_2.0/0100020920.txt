@@ -1,0 +1,97 @@
+＄01-00-02-09-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+[scene 20113 0]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98003003 1 罗曼医生]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 1005001 1 尼禄]
+[charaSet E 6010001 1 斯忒诺]
+[charaSet F 98006300 1 骸骨士兵]
+[charaTalk D]
+[charaFace A 0]
+[charaFadein A 0 2]
+[charaFace D 4]
+[charaFadein D 0 0]
+[fadein black 1]
+[wait fade]
+＠尼禄
+唔唔……
+[k]
+
+＠尼禄
+……既阴暗，又潮湿……
+[k]
+
+[charaFace A 0]
+＠玛修
+这里可不是什么令人舒心的地方。[r]而且能见度也很差。
+[k]
+
+[se ad13]
+[wait se ad13]
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠罗曼医生
+啊……
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 12]
+[charaFadein A 0.1 2]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+＠玛修
+医生，怎么了？[r]你的脸色……不对，是你的语气听起来不太好啊。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 4]
+＠罗曼医生
+被骗了。抱歉，对不起。[r]前方发现大量魔力反应。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 6]
+[charaFadein A 0.1 2]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+＠玛修
+哎。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠罗曼医生
+虽说不是从者……[r]是怪物之类的。这是……被那位女神大人……
+[k]
+
+[communicationCharaFace 2]
+＠罗曼医生
+下套了啊……[r]啊……啊哈哈……
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFadeout A 0.1]
+[wt 0.5]
+[charaFadein F 0.1 1]
+[bgmStop BGM_EVENT_5 0.4]
+[bgm BGM_EVENT_3 0.1]
+[wt 0.5]
+＠骸骨士兵
+（喀塔喀塔喀塔喀塔）
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

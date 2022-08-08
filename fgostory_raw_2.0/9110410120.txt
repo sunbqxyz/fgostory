@@ -1,0 +1,840 @@
+
+
+＄91-10-41-01-2-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1041002 1 阿斯托尔福]
+[charaSet B 7013001 1 清姬]
+[charaSet C 2018001 1 幼吉尔]
+[charaSet D 2038001 1 俄里翁]
+[sceneSet E 10001 1]
+[charaScale E 1.01]
+
+[charaSet H 98115000 1 特效用]
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 104200]
+[branch lblConf]
+[label lblNotClear]
+[scene 105500]
+[label lblConf]
+
+
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+也就是说，[r]在下平时不是会理性蒸发吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠清姬
+这个嘛……确实……
+[k]
+
+？1：唔……相当辛苦呢……
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+但今天是新月。
+[k]
+
+＠阿斯托尔福
+而在下的思路似乎非常清晰。[r]而且还充满了理性与良知。
+[k]
+
+[charaFace A 4]
+＠阿斯托尔福
+也就是说，这……
+[k]
+
+[charaFace A 2]
+
+＠阿斯托尔福
+在下不得不推导出结论，[r][#是大家的理性都集中到在下身上了吧]！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠清姬
+铿锵有力呢……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+？1：……有什么根据吗？
+？！
+
+[charaFace A 9]
+
+
+＠阿斯托尔福
+自新月开始之后，在下变得多聪明，[r]别人的理性就有多擅自集中于在下身上。
+[k]
+
+[charaFace A 0]
+
+＠阿斯托尔福
+其实这事发生在不久之前[line 3]
+[k]
+
+[messageOff]
+[wipeout diaOut 1.5 1.0]
+[bgmStop BGM_EVENT_2 1.5]
+[se ade84]
+[wait wipe]
+[wt 0.5]
+[effect bit_sepia01_depth_fs]
+[charaFadeout A 0.1]
+[wt 1.0]
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 105900]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 105600]
+[label lblConf2]
+
+
+[wipein diaOut 1.0 1.0]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠幼吉尔
+哎～，搜集理性的瓶子啊。[r]这是阿斯托尔福的触媒吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+没错～没错～。
+[k]
+
+[charaFace A 21]
+
+＠阿斯托尔福
+只要有了这个，我也能变成[r]有点理性的从者了哦～。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠幼吉尔
+唔～，那我稍微找找看吧。
+[k]
+
+[messageOff]
+[charaPut H 1]
+[se bac24]
+[charaEffect H bit_talk_gate_of_babylone]
+[wt 1.5]
+[charaEffectStop H bit_talk_gate_of_babylone]
+[wt 0.8]
+[charaPut H 2000,2000]
+
+[charaFace C 4]
+＠幼吉尔
+让我看看，不是这个，也不是那个。[wt 1.2][charaFace C 0][r]……啊，找到了。
+[k]
+
+＠幼吉尔
+是这种感觉的瓶子吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFace C 0]
+[charaFadeinFSR A 0.1 2]
+[charaFadeinFSL C 0.1 0]
+
+＠阿斯托尔福
+哇！
+[k]
+
+[charaFace A 1]
+＠阿斯托尔福
+没错没错，是这种感觉，就这种感觉！[r]哎，我可以收下吗？
+[k]
+
+[charaFace C 1]
+
+＠幼吉尔
+当然可以。[r]反正这东西也没什么特别的用处。
+[k]
+
+＠幼吉尔
+如果你能靠这个找回理性，[r]感觉会很有意思。
+[k]
+
+[charaFace A 21]
+
+＠阿斯托尔福
+虽然听上去似乎有什么阴谋，[r]但我并不怎么在意，当然收下啦！
+[k]
+
+＠幼吉尔
+给。
+[k]
+
+[charaFace C 0]
+＠幼吉尔
+与传说中的虽略有不同……
+[k]
+
+＠幼吉尔
+但只要在新月使用这个瓶子，[r]应该就能夺回理性了哦。
+[k]
+
+[charaFace A 1]
+
+＠阿斯托尔福
+哇～，谢谢！[r]新月怎么还没到呢～！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_7 1.0 0.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 1.0]
+[branchQuestNotClear lblNotClear3 3000303]
+[scene 105800]
+[branch lblConf3]
+[label lblNotClear3]
+[scene 106000]
+[label lblConf3]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_7 1.0 1.0]
+[wait fade]
+
+＠
+[line 3]然后，新月。
+[k]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+好了好了。[r]根据历法，今天应该就是新月。
+[k]
+
+＠阿斯托尔福
+打开瓶盖，好……
+[k]
+
+[charaFace A 8]
+
+＠阿斯托尔福
+……[r]……
+[k]
+
+＠阿斯托尔福
+唔？　感觉没什么变化啊。[r]唔～，唔～，唔～？
+[k]
+
+[messageOff]
+[se ad579]
+[wt 1.0]
+
+＠阿斯托尔福
+奇怪？
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth E 2]
+[se ad39]
+[effect bit_talk_36]
+[wt 1.5]
+[charaFace A 12]
+＠阿斯托尔福
+哇，哇，哇……
+[k]
+[messageOff]
+[se adm20]
+[se ad732]
+[se ad730]
+[seVolume ad730 0 0.5]
+[charaFadein E 1.0 0,-200]
+[wt 1.5]
+
+
+＠
+[line 3]发出了光芒，圣骑士事后如是说。[r]于是，[#理性集聚了]。
+[k]
+
+[messageOff]
+[wipeout diaOut 1.5 1.0]
+[bgmStop BGM_EVENT_7 1.5]
+[se ade84]
+[wait wipe]
+[charaTalk depthOn]
+[effectStop bit_talk_36]
+[effectStop bit_sepia01_depth_fs]
+
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+
+[branchQuestNotClear lblNotClear7 3000303]
+[scene 104200]
+[branch lblConf7]
+[label lblNotClear7]
+[scene 105500]
+[label lblConf7]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+[wt 1.0]
+
+[wipein diaOut 1.0 1.0]
+[wait wipe]
+
+
+[bgm BGM_EVENT_2 0.1]
+
+＠清姬
+原来如此，糟透了……
+[k]
+
+？1：（抱着脑袋。）
+？2：（吞胃药。）
+
+＠清姬
+给，这里有水。[r]一口咽下去吧。
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+清姬说得太对了。
+[k]
+
+＠阿斯托尔福
+如果平时就能保持理性与节制的态度，[r]就不会发生这种事了。
+[k]
+
+[charaFace A 2]
+
+＠阿斯托尔福
+在下真是太可恶了！！
+[k]
+
+？1：咦？　但是清姬还……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠清姬
+没错。[r]我和平时没什么变化。
+[k]
+
+＠清姬
+不仅我一个，[r]还有其他几位也……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+啊，这个问题很简单。[r][#纯粹因为这些人已经没有可以被夺走的理性了]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠清姬
+……[r]……
+[k]
+
+＠清姬
+你刚才，说什么？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠阿斯托尔福
+这瓶子似乎会夺走约七成理性。
+[k]
+
+＠阿斯托尔福
+所以至少会留下三成。[r]因此，那些原本就连平均三成理性都没有的从者[line 3]
+[k]
+
+＠阿斯托尔福
+就会保留原有理性。[r]算是一种保险功能吧。
+[k]
+
+？1：原来如此……
+？！
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠清姬
+嗄呀！
+[k]
+
+＠清姬
+……如果我！　有手套的话！[r]现在！　就会向你扔过去！
+[k]
+
+＠清姬
+明明可以不说，偏偏说什么三成！
+[k]
+
+[charaFace B 4]
+
+＠清姬
+御主。[r]我是有理性的吧？
+[k]
+
+？1：……我觉得有！
+？2：现在还没问题！
+？！
+
+＠清姬
+从这委婉的回答中，[r]能隐约窥到您复杂的心情……
+[k]
+
+＠清姬
+不，您没有撒谎呢……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+那么，为了解决这个状况，[r]我们出发吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠清姬
+这……我赞成，[r]但要去哪儿？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠阿斯托尔福
+当然，应该去找这东西的持有者。[r]英雄王吉尔伽美什……
+[k]
+
+[charaFace A 2]
+＠阿斯托尔福
+的少年ver.那里！
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.7 1]
+[bgm BGM_EVENT_2 0.7 0.4]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.5]
+[branchQuestNotClear lblNotClear4 3000303]
+[scene 105900]
+[branch lblConf4]
+[label lblNotClear4]
+[scene 105600]
+[label lblConf4]
+
+
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+[wt 1.5]
+
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+
+
+[wt 0.5]
+[branchQuestNotClear lblNotClear5 3000303]
+[scene 105800]
+[branch lblConf5]
+[label lblNotClear5]
+[scene 106000]
+[label lblConf5]
+
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+[wt 1.5]
+
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+
+
+[wt 0.5]
+[branchQuestNotClear lblNotClear6 3000303]
+[scene 104100]
+[branch lblConf6]
+[label lblNotClear6]
+[scene 105700]
+[label lblConf6]
+
+[wipein rightToLeft 0.7 1]
+[bgm BGM_EVENT_2 0.7 1.0]
+[wait wipe]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+不在呢……
+[k]
+
+[charaFace A 5]
+
+＠阿斯托尔福
+唔，看来是躲进模拟装置了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠清姬
+既然如此，看来只能地毯式搜索[r]模拟装置的所有角落了呢……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+千里之行始于足下。[r]来吧，我们开始吧！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+[scene 107802]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+查一下模拟装置的[#记录:履历]。
+[k]
+
+＠阿斯托尔福
+有从者反应的地方是[line 3]
+[k]
+
+＠阿斯托尔福
+森林、海岸、美术馆、威基基大道、[r]美国的城市、洞窟，以及玉座之间呢。
+[k]
+
+[charaFace A 2]
+＠阿斯托尔福
+首先从这座森林开始调查吧。[r]来吧，开始探索！
+[k]
+
+？1：还是一如既往地有干劲。
+？2：微妙地不知该如何应对……！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠清姬
+是的。[r]也许是心理作用，仿佛声音也透露着勇猛……
+[k]
+
+[charaFace B 4]
+＠清姬
+不，虽然你平时像个傻瓜这种事[r]我完全……有这么认为……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+有这么认为吗。[r]唔。不过也没办法，因为没理性嘛！
+[k]
+
+[charaFace A 5]
+
+＠阿斯托尔福
+话说回来，[r]好像有从者。
+[k]
+
+[bgmStop BGM_EVENT_70 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+……[r]……
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[se ade255]
+
+
+[wt 1.5]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠清姬
+哎呀，俄里翁（人型）大人。[r]……啊。
+[k]
+
+[bgm BGM_EVENT_5 0.1]
+[charaFace B 5]
+
+＠清姬
+不好。[r]他恐怕也是理性蒸发组。
+[k]
+
+[charaFace B 2]
+
+＠清姬
+快退下，御主！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠俄里翁
+那边的两位从者。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFace B 4]
+[charaFadeinFSR A 0.1 2]
+[charaFadeinFSL B 0.1 0]
+
+＠阿斯托尔福
+[FFFFFF]？[-][r]我吗？
+[k]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+＠清姬
+还有我？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠俄里翁
+[f large]我喜欢你们！！（问候。）
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠清姬
+[f large]出故障了！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+呵。
+[k]
+
+＠阿斯托尔福
+既然理性已经蒸发，[r]看来也没有对话的余地了。
+[k]
+
+[bgmStop BGM_EVENT_7 1.0]
+[charaFace A 5]
+＠阿斯托尔福
+在他毫无节操地搭讪，[r]引来阿耳忒弥斯大人[#震怒:火山喷发]之前[line 3]
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+[charaFace A 2]
+
+＠阿斯托尔福
+我们必须尽快阻止！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠清姬
+好的！
+[k]
+
+？1：好嘞，动手吧！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+无论状况多么不利，[r]我也决不会屈服哦～！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

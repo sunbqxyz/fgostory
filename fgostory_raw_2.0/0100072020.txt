@@ -1,0 +1,78 @@
+
+
+
+＄01-00-07-20-2-0
+
+[soundStopAll]
+[charaSet A 8001002 1 玛修]
+[charaSet B 2020001 1 伊什塔尔]
+[charaSet C 4018001 1 魁札尔·科亚特尔]
+[charaSet D 98003000 1 Dr.罗曼]
+
+[se ad158]
+[seVolume ad158 0 0.8]
+[se ad2]
+[seVolume ad2 0 0.2]
+[scene 20733]
+[fadein black 2.0]
+[wait fade]
+
+[wt 1.0]
+[bgm BGM_EVENT_24 0.1]
+[seStop ad158 1.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠玛修
+御主，提亚马特神进入视线范围了！[r]来了！　是拉赫穆！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠伊什塔尔
+离开乌鲁克两小时，我都等得不耐烦了！[r]前锋就由我来，没问题吧，魁札尔·科亚特尔？
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠魁札尔·科亚特尔
+呀，当然啦～！[r]虽然我也能战斗，但请尽量让我保存实力～！
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr.罗曼
+虽然我想你们都知道了，[r]但那边已经进入提亚马特神的领域了！
+[k]
+
+＠Dr.罗曼
+无论做什么，只要在混沌之潮上，[r]就会受到伤害！　一定要注意！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+是……！[r]开始战斗，御主！
+[k]
+
+
+[messageOff]
+[seStop ad2 0.4]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,1203 @@
+
+
+＄94-06-04-05-4-1
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098215400 1 ダ・ヴィンチ]
+[charaSet B 1098220400 1 清少納言]
+[charaSet C 1098220600 1 カーマ]
+[charaSet D 2044001 1 アナスタシア]
+[charaSet E 4026000 1 イシュタル]
+[charaSet F 2037000 1 ジェーン]
+[charaSet G 98002000 1 フォウ]
+[charaSet H 8001600 1 マシュ]
+[charaSet I 4029300 1 アキレウス]
+[imageSet J back10000 1 1]
+[charaScale J 1.1]
+
+
+[imageSet K cut272_map1 1]
+[charaSet L 1098221900 1 イシュタルカットイン]
+
+[charaDepth K 4]
+[charaDepth J 2]
+[charaDepth E 3]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[wt 0.5]
+
+[se ad616]
+[wt 0.3]
+
+[effect bit_talk_14 100,150]
+[se ad563]
+[wt 0.2]
+[effect bit_talk_14 -100,-150]
+[se ad563]
+[wt 0.1]
+[se ad610]
+[fadeout white 0.3]
+[wait fade]
+
+[scene 130200]
+
+[fadein white 0.4]
+[wait fade]
+[wt 0.3]
+
+[se ad671]
+[seVolume ad671 0 0.4]
+
+[wt 0.5]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 80,0]
+[charaShake F 0.05 1 1 0.2]
+[charaMove F -20,0 0.3]
+[wt 0.3]
+[charaMove F -30,0 0.3]
+[wt 0.4]
+[charaFace F 1]
+
+＠ジェーン
+あはは、思い出すなあ。
+[k]
+
+＠ジェーン
+スペース古代遺跡でうっかり起動させちゃった[r]キュケオンガーディアンと滅茶苦茶に撃ち合ったの。
+[k]
+
+＠ジェーン
+あのときはキュケオン粒子ビームが綺麗で綺麗でさー。[r]あ、今もビームとかお花とか散って綺麗だね？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+[se ade8]
+[effect bit_talk_rarrow01or]
+[wt 0.8]
+
+[se bac230]
+[se ade320]
+[seStop ade320 1.2]
+[cueSe Servants_603700 bac1047]
+[effect bit_talk_shelling_pink02]
+[se ade9]
+[seVolume ade9 0 0.8]
+[wt 0.4]
+[se ad609]
+[se ad864]
+[shake 0.05 3 3 4.0]
+[fadeout white 0.5]
+[wait fade]
+
+[wt 2.0]
+
+[fadein white 2.0]
+[wait fade]
+[wt 0.5]
+
+[charaTalk E]
+[charaPut E 1]
+[charaFace E 2]
+
+[se ad73]
+[charaEffect E bit_talk_quickmove 0,0 H]
+[charaSpecialEffect E appearanceReverse 1 0.2]
+[charaMoveReturn E 0,-6 0.4]
+[wt 0.4]
+
+＠イシュタル
+もう少し！[r]敬意ってものを持ったらどうなのかしら！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaPut C 1]
+[charaFace C 5]
+
+[se ad775]
+[seVolume ad775 0 0.4]
+[charaFace C 2]
+[charaEffect C bit_talk_quickmove 0,0 H]
+[charaSpecialEffect C appearanceReverse 1 0.2]
+[charaMoveReturn C 0,-6 0.4]
+[wt 0.6]
+
+＠カーマ
+当然って顔して自分の欲しいもの持ってく癖、[r]本当にどうにかしたほうがいいと思いますけどー！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+えーと、今のうちに今のうちに……と。
+[k]
+
+[charaFace A 23]
+＠ダ・ヴィンチ
+お。この欠けた碑文がヒントっぽい。
+[k]
+
+＠ダ・ヴィンチ
+『女王の[#かんばせ]のみが……鍵……』とある。[r]断片的だが、となると……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠アナスタシア
+ヴィイがその壁に怪しい窪みを発見しました！
+[k]
+
+＠アナスタシア
+何かを嵌め込むような……そう、[r]人の顔のような窪みです。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠清少納言
+[#かんばせ]ってのは顔のことだよ。[r]仮面か何かが鍵になるんじゃない？
+[k]
+
+？1：でも、仮面なんて持ってないよ？
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+古い遺跡だから鍵が失われてしまっている[r]ということはあるかもしれない。
+[k]
+
+＠ダ・ヴィンチ
+だけど、手がないわけじゃない。[r]私たちはこの遺跡における女王の姿を知っている。
+[k]
+
+[charaFace A 26]
+＠ダ・ヴィンチ
+つまり……
+[k]
+
+＠ダ・ヴィンチ
+ふふ。試してみてもいい？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+＠清少納言
+フッ……みなまで言うな、ダビ子。
+[k]
+
+＠清少納言
+今のあたしちゃんは見てのとおり、[r]とびきりのワルだが……
+[k]
+
+[charaFace B 7]
+＠清少納言
+不良ってヤツは、ときに身を犠牲にして[r]仲間を救うもの……らしいぜ？
+[k]
+
+＠清少納言
+すぅー、はぁー……そおいっ！！
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[charaMove B 0,-10 0.4]
+[wt 0.4]
+[se ad181]
+[wt 1.5]
+
+＠清少納言
+あだ、痛たたたた、[messageShake 0.04 3 3 0.7][r]意外と中がゴツゴツしてて痛いぞこれ！
+[k]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠アナスタシア
+仮面の代わりに、女王そっくりの顔を[r]そのまま押しつけてしまおうというわけですね。
+[k]
+
+＠アナスタシア
+上手くいくかしら……あっ。[wt 0.4][charaFace D 7]
+[k]
+
+[messageOff]
+[shake 0.04 3 3 1.0]
+[se ad576]
+[wt 2.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+やった！　中へ入ろう！[r]カーマがイシュタルたちを惹きつけてくれてるうちに！
+[k]
+
+[messageOff]
+[se ad586]
+[seStop ad586 1.0]
+[se ad132]
+[seStop ad132 1.0]
+[bgmStop BGM_EVENT_80 0.7]
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.4]
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+
+[effect bit_talk_light_range 0,50]
+[se adm19]
+[wt 1.5]
+[bgm BGM_EVENT_1 0.1]
+[effectStop bit_talk_light_range]
+[seStop adm19 2.0]
+[wt 1.5]
+
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠アナスタシア
+あらあら、かなりのお宝ね。[r]特に宝石が山のようよ。
+[k]
+
+？1：イシュタルの嗅覚は凄いから……
+？！
+
+[charaFace D 4]
+＠アナスタシア
+そうなの？[r]あの方、いつも切羽詰まっているような……。
+[k]
+
+[charaFace D 1]
+＠アナスタシア
+あ、言ってはいけない感じなのかしら。[r]ホホホホホ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+うーん、財宝は魅力的ではあるけど……。
+[k]
+
+＠ダ・ヴィンチ
+今の私たちにはあまり用のない代物だ。[r]それよりは……と。
+[k]
+
+[messageOff]
+[wt 0.1]
+[cueSe SE_21 21_ade592]
+[wt 0.8]
+
+[charaFace A 7]
+＠ダ・ヴィンチ
+お、あった！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se bas2]
+[effect bit_talk_20]
+[wt 2.0]
+[effectDestroy bit_talk_20]
+[wt 0.1]
+
+[charaFadeTime J 0.2 0.5]
+[charaFadein K 0.2 0,-200]
+[wt 2.0]
+[charaFadeout J 0.2]
+[charaFadeout K 0.2]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+
+＠ダ・ヴィンチ
+よーしよしよし。[r]いい子いい子。
+[k]
+
+[messageOff]
+[wt 0.1]
+[cueSe SE_21 21_ade592]
+[wt 0.8]
+
+？1：……うん？
+？！
+
+
+[charaFace A 0]
+＠ダ・ヴィンチ
+どうかした、[r][%1][&君:ちゃん]？
+[k]
+
+[charaFace A 23]
+＠ダ・ヴィンチ
+……これは……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠アナスタシア
+あら、綺麗ね。[r][#琥珀:アンバー]の欠片かしら。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[cueSe SE_21 21_ade592]
+[wt 0.8]
+
+[charaFace A 6]
+＠ダ・ヴィンチ
+わっ！？
+[k]
+
+＠ダ・ヴィンチ
+ステくん、どうしたの？[r]おーい！？
+[k]
+
+？1：[#琥珀:アンバー]にすりすりしてる？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠アナスタシア
+その[#琥珀:アンバー]が気に入ったのかしら？[r]それとも食べようとしてる？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+んー……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠アナスタシア
+持って帰ったらどうかしら。
+[k]
+
+＠アナスタシア
+別にこの程度を持ち帰ったところで、[r]不利益はないでしょう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+……そうだね。[r]じゃあ、持って帰ろう！
+[k]
+
+＠ダ・ヴィンチ
+ステくん、いいかい？
+[k]
+
+[messageOff]
+[wt 0.1]
+[cueSe SE_21 21_ade592]
+[wt 0.8]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠アナスタシア
+口で噛んで放さないわね……。[r]……何か味でもついているのかしら。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 0.2]
+[cueSe SE_21 21_ade592]
+[wt 0.8]
+
+＠ダ・ヴィンチ
+わわ。[r]呑み込まないように注意しなきゃだ。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_1 1.0]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+＠イシュタル
+到着！！
+[k]
+
+＠イシュタル
+……。[r]……。
+[k]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFace E 4]
+＠イシュタル
+あー。先に獲られちゃったかぁ。[r]バトルに夢中になりすぎたわ……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠カーマ
+ふふん。マスターさん、見てくれました？[r]私の献身的な時間稼ぎ。もっと依存してもいいですよ？
+[k]
+
+？1：うん、ありがとうね
+？2：私怨みたいなのも感じられたけど、お疲れ様
+？！
+
+[messageOff]
+[charaFace C 8]
+[wt 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠イシュタル
+ところでマスター、[r]ちょっと聞きたいんだけど。
+[k]
+
+＠イシュタル
+……この宝石、どうするの？
+[k]
+
+？1：このまま置いていくよ
+？！
+
+[charaFace E 5]
+＠イシュタル
+……。[r]……ホワッツ？
+[k]
+
+＠イシュタル
+置いていく？　これだけの宝石を？[r]不要だから？
+[k]
+
+[charaFace E 2]
+＠イシュタル
+……じゃあ、私が貰ってもいいわよねコレ！？
+[k]
+
+？1：いいですよ
+？！
+
+[charaFace E 1]
+[charaMoveReturn E 0,5 0.4]
+＠イシュタル
+イヤッホー！
+[k]
+
+＠イシュタル
+それじゃあ、とりあえず宝石を[r]片っ端から戴いていくことにするわ！
+[k]
+
+＠イシュタル
+くーっ、仕事帰りにちょいと一杯並みの[r]魅力があるわね、この作業！
+[k]
+
+[messageOff]
+[charaMoveReturn E 0,-5 0.4]
+[wt 0.1]
+[se ad194]
+[seStop ad194 1.5]
+[wt 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[se ad14]
+[seVolume ad14 0 0]
+[seVolume ad14 1.0 0.3]
+[shake 0.03 1 1 1.5]
+[wt 1.5]
+
+[charaFace E 7]
+＠イシュタル
+はて？[r]地震かしら？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠アナスタシア
+地震の割には長くありませんか？[r]というか、その……。
+[k]
+
+？1：遺跡が崩壊しようとしてない？
+？！
+
+
+[messageOff]
+
+[charaTalk H]
+[wt 0.1]
+[cueSe SE_21 21_ade592]
+[wt 0.8]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠アナスタシア
+ステくんも[r]同意しているわね。
+[k]
+
+
+＠アナスタシア
+……大変では？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[bgm BGM_EVENT_80 0.1]
+[charaTalk A]
+[charaFace A 22]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+またー！？[r]第二の秘宝のときも崩壊したよ！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 21]
+[charaFadein C 0.1 1]
+＠カーマ
+うぐっ。[r]……私は悪くないです、よ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+＠イシュタル
+ジェーン。[r]アンタ、まさかプランＢを進めて忘れてたんじゃ……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠ジェーン
+ワーオ、濡れ衣だね！[r]ちゃんと解除しました！
+[k]
+
+[charaFace F 5]
+＠ジェーン
+これは……なんか、遺跡自体の仕掛けっぽいかな？
+[k]
+
+＠ジェーン
+うん、実はそういうのもよくあるんだー。
+[k]
+
+＠ジェーン
+最深部のお宝手に入れたら、嫌がらせか何か知らないけど[r]『最後のトラップを乗り越えてみよ！』ってばかりに、
+[k]
+
+＠ジェーン
+今までの通路が崩落したりするの。
+[k]
+
+[messageOff]
+[seVolume ad14 1.0 0.6]
+[shake 0.03 2 2 1.0]
+[wt 1.5]
+
+？1：………………
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+ジェーンの見立ては当たってる気がする……。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[bgm BGM_EVENT_80 0.7 0.5]
+[seVolume ad14 0.7 0.9]
+[shake 0.03 3 3 1.2]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠清少納言
+よーし、ちゃんマス。
+[k]
+
+[charaFace B 2]
+＠清少納言
+死ぬ気で走れ！！
+[k]
+
+？1：逃げろー！
+？！
+
+[messageOff]
+[se ad586]
+[seStop ad586 2.0]
+[se ad132]
+[seStop ad132 2.0]
+[wipeout rightToLeft 0.3 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[scene 130201]
+[wt 0.2]
+[wipein leftToRight 0.3 1]
+[wait wipe]
+
+[wt 0.4]
+
+[wipeout rightToLeft 0.3 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[scene 130100]
+[wt 0.2]
+[wipein leftToRight 0.3 1]
+[wait wipe]
+
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 21]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+まずい、どんどん激しくなってくる。[r]出口まではもう少しだけど……！？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[se ad913]
+[shake 0.03 3 3 0.7]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠清少納言
+いやー、これ本格的にヤバみかも！
+[k]
+
+？1：このままだと間に合わない……！
+？！
+
+[charaFadeout B 0.1]
+[bgmStop BGM_EVENT_80 0.7]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠アナスタシア
+待って、あれは何かしら？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[cueSe SE_21 21_ade546]
+[seStop 21_ade546 1.0]
+[se ad859]
+[seStop ad859 1.0]
+[se ad2]
+[seVolume ad2 0 0.7]
+[seStop ad2 1.5]
+[shake 0.05 1 1 0]
+[effect bit_talk_gale 0,0 H]
+[wt 1.5]
+[shakeStop]
+[effectDestroy bit_talk_gale]
+[wt 0.4]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.4 1]
+＠アキレウス
+よっしゃ間に合った！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+アキレウス！[r]迎えに来てくれたんだ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+＠アキレウス
+おう。罠とか警戒しながらじゃなくて、[r]この状況ならただの速度勝負だからな。
+[k]
+
+[charaFace I 2]
+＠アキレウス
+何より、出口の近くだ！
+[k]
+
+＠アキレウス
+あー、ま、五人はしんどいが何とかなんだろ。[r]乗れ、つーかしがみつけ！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠清少納言
+な……何ィーッ！[r]頭にカマちょ、背中にちゃんマス！
+[k]
+
+＠清少納言
+右腕にシアっち、左腕にあたしちゃん、[r]両手でダビ子抱えてる！　ギリシャすげえ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+＠アキレウス
+喋ってると舌噛むぞ。
+[k]
+
+[charaFace I 2]
+＠アキレウス
+いくぜ！　これが人類最速の[r]ライフセイバーの走りだ！
+[k]
+
+[messageOff]
+[charaFadeout I 0.2]
+[effect bit_talk_41_fs]
+[cueSe SE_21 21_ade546]
+[seStop 21_ade546 1.5]
+[se ad859]
+[seStop ad859 1.5]
+[se ad2]
+[seVolume ad2 0 0.4]
+[seStop ad2 1.5]
+[shake 0.05 1 1 0]
+[seStop ad14 2.0]
+[bgmStop BGM_EVENT_82 1.0]
+[fadeout black 1.0]
+[wait fade]
+[shakeStop]
+[effectDestroy bit_talk_41_fs]
+[scene 107300]
+[wt 3.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.7]
+[se ad913]
+[se ad914]
+[se ad10]
+[wt 0.5]
+[shake 0.03 3 3 1.0]
+[wt 2.0]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+＠アキレウス
+……ふう。
+[k]
+
+？1：助かっ、た……
+？2：ありがとう、アキレウス……
+
+[charaFace I 1]
+＠アキレウス
+おう、いいってことよ。これが俺の役割だからな。[r]久しぶりに足の速さが役に立ったぜ。
+[k]
+
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[bgm BGM_EVENT_2 0.1]
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+＠マシュ
+マスター、ご無事ですか！？[r]よかった……。
+[k]
+
+[charaFace H 13]
+＠マシュ
+大きな振動と共に遺跡が崩れ始めたときには[r]どうなることかと思いましたが、
+[k]
+
+＠マシュ
+全員脱出できたようで何よりです。[r]ほっとしました……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠清少納言
+ん～～～。[r]『全員』っつっていいのかな、これ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠アナスタシア
+そう言えば……イシュタルさんたち、[r]いないわね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 14]
+[charaFadein H 0.1 1]
+＠マシュ
+え。イシュタルさん……？[r]あ、いらっしゃったのですか！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+ジェーンも一緒にね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+＠アキレウス
+マジかよ。俺の目には見えなかったが、[r]どっかにいたのか。まずいな……。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠アナスタシア
+………………。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[scene 106800 1.0]
+[wt 1.5]
+
+[charaTalk off]
+[charaScale E 1.5]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+[wt 1.0]
+
+＠アナスタシア
+面白いひとを亡くしたわね……。[r]頭おかしいひと、と呼ぶべきかしら……。
+[k]
+
+[charaFace L 1]
+＠イシュタル（妄想）
+[f large]ブッ飛ばすわよ？
+[k]
+
+[messageOff]
+[charaFadeout L 1.0]
+[scene 107300 1.0]
+[wt 1.5]
+
+[charaScale E 1.0]
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+きっと、退去はしてないはずだよ？
+[k]
+
+＠ダ・ヴィンチ
+通路こそ崩落で埋まっちゃったけど、[r]遺跡全部がそうなったワケじゃなさそうだ。
+[k]
+
+＠ダ・ヴィンチ
+古い巨岩のトラップとなると、[r]多少の神秘もあるかもだけど……
+[k]
+
+
+＠ダ・ヴィンチ
+ジェーンの能力ならきっと大丈夫。[r]そういうスキルもあったはず。
+[k]
+
+
+？1：それなら……大丈夫、かな？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠カーマ
+あの女神のことはともかく。今は無事に[r]次の地図を手に入れたことを喜びません？
+[k]
+
+[charaFace C 7]
+＠カーマ
+そしてそれに尽力した[r]可愛い[#魔王:愛　神]を評価しません？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadeinFSL B 0.1 -64,0]
+[charaFace C 7]
+[charaFadeinFSR C 0.1 2]
+[charaMove B -0,0 0.4]
+[wt 0.4]
+[charaMoveReturn B -0,-4 0.4]
+[se ad579]
+＠清少納言
+うんうん、カマちょは頑張ったぞう。[r]よぉーしよしよしよしゃ！[wt 0.15][charaMoveReturn B -0,-4 0.4]
+[k]
+
+[charaFace C 21]
+＠カーマ
+貴女に撫でられても[r]嬉しくもなんともないんですけど！？
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+当初の目的を達成したのは確かだね。[r]ひとまず今日は、キャンプに戻って休もう！
+[k]
+
+[messageOff]
+[wt 0.1]
+[cueSe SE_21 21_ade592]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_2 1.5]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout A 0.1]
+[wipeFilter circleIn 0.5 1.0]
+[scene 130200]
+[wt 2.0]
+[se ad138]
+[fadein black 0.4]
+[wait fade]
+
+[wt 1.0]
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 0,-50]
+＠ジェーン
+いやー、完全に閉じ込められちゃったね？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 0,-50]
+＠イシュタル
+うう。なんでこんな目に……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+＠ジェーン
+完全に生き埋めにならなかっただけマシじゃない？[r]というわけで、はいこの板。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[bgmStop BGM_EVENT_7 1.0]
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 0,-50]
+＠イシュタル
+なにこれ。[r]まさか……。
+[k]
+
+＠イシュタル
+掘るの？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 0,-50]
+＠ジェーン
+掘るの。
+[k]
+
+[bgm BGM_EVENT_94 0.1]
+
+＠ジェーン
+さすがのわたしもこっからの[r]脱出方法はその一つしか思い浮かばないよ。
+[k]
+
+[charaFace F 1]
+＠ジェーン
+シンプルイズベスト。[r]一緒に頑張ろうー、ファイト！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 16]
+[charaFadein E 0.1 0,-50]
+＠イシュタル
+いーーーやーーー！[r]こんなの美しい女神の仕事じゃないわー！
+[k]
+
+＠イシュタル
+前に推奨したことはあるけどさー！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 0,-50]
+＠ジェーン
+がんばれがんばれ！
+[k]
+
+＠ジェーン
+さもないと『イシュタル、ここにありき』[r]なんて遺言を残す羽目になるからね！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_94 1.5]
+
+[charaTalk E]
+[charaFace E 16]
+[charaFadein E 0.1 0,-50]
+＠イシュタル
+とほほ……。
+[k]
+
+[messageOff]
+[effect bit_talk_irisout 0,100]
+[wt 0.1]
+[cueSe SE_21 21_ade637]
+[wt 2.0]
+
+[cueSe SE_21 21_ade638]
+[effectStop bit_talk_irisout]
+[wt 1.0]
+[charaFadeout E 0.1]
+[scene 10000]
+[wt 0.5]
+
+[fadeout black 2.0]
+[wait fade]
+[wipeOff]
+[wt 0.5]
+[soundStopAll]
+[end]
+

@@ -1,0 +1,257 @@
+
+
+＄91-10-27-01-2-0
+[soundStopAll]
+[enableFullScreen]
+
+
+
+
+
+
+
+[charaSet A 1027000 1 沖田総司]
+
+[imageSet B cut296_text09 1]
+
+[se ad732]
+[fadeout white 1.0]
+[wait fade]
+
+[scene 40700]
+[wt 2.0]
+
+[fadein white 1.0]
+[seStop ad732 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠沖田総司
+……今のは、一体。
+[k]
+
+＠沖田総司
+土方さんに、それに私と居たあの人は……。
+[k]
+
+＠沖田総司
+…………。
+[k]
+
+[charaFace A 9]
+
+＠沖田総司
+……そうか、そうでしたか。
+[k]
+
+？1：……沖田さん
+
+？！
+
+[charaFace A 0]
+
+＠沖田総司
+…………。
+[k]
+
+＠沖田総司
+そうだったんですね。
+[k]
+
+[charaFace A 10]
+
+＠沖田総司
+[line 3]黒猫さん、あなたは。
+[k]
+
+[messageOff]
+
+
+[fadeout white 3.0]
+
+[charaMove A 0,-40 0.5]
+[wt 0.2]
+[charaFadeout A 0.3]
+[wt 0.2]
+[se ad775]
+
+[wt 3.0]
+
+[wait fade]
+
+[scene 106800]
+
+[fadein white 1.0]
+[wait fade]
+
+
+[wt 3.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+
+[branchQuestClear lblClear1 3000303]
+[branch lblNotClear1]
+[label lblClear1]
+
+
+[scene 105800]
+
+[branch lblIsClearConf1]
+
+[label lblNotClear1]
+
+
+[scene 106000]
+
+[label lblIsClearConf1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wipein openEye 3.0 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠沖田総司
+……目が覚めましたか、マスター？
+[k]
+
+＠沖田総司
+部屋に呼びに来たら眠ってらっしゃる[r]ようだったので。
+[k]
+
+？1：……何かあったような
+
+？2：……なんだっけ？
+
+？！
+
+[charaFace A 13]
+
+＠沖田総司
+えー、なんですかそれ。
+[k]
+
+＠沖田総司
+お昼ごはんでも食べ過ぎたんじゃないです？
+[k]
+
+[charaFace A 2]
+
+＠沖田総司
+あ！　それはそうと、またノッブが大変なことを[r]しでかしまして、早く来てください！
+[k]
+
+？1：……またかぁ
+
+？2：ぐだぐだしてきた気がする
+
+？！
+
+[charaFace A 0]
+
+＠沖田総司
+とにかく来てください！
+[k]
+
+＠沖田総司
+…………。
+[k]
+
+＠沖田総司
+大丈夫です、どんな事があっても[r]マスターには私がついていますから！
+[k]
+
+＠沖田総司
+さあ、行きましょう！
+[k]
+
+[charaFace A 10]
+
+＠沖田総司
+[line 2]ずっと、どこまでも！
+[k]
+
+[messageOff]
+
+
+[fadeout white 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.5]
+
+[scene 106800]
+
+[fadein white 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_6 0.1]
+
+＠沖田総司
+わかっています、私は半端者。
+[k]
+
+＠沖田総司
+最後まで皆と共にあれなかった半端な隊士。
+[k]
+
+＠沖田総司
+ですが……、心に刻んだこの一文字。
+[k]
+
+＠沖田総司
+そう……。
+[k]
+
+＠沖田総司
+それだけは偽りのない事実なのだから。
+[k]
+
+
+[messageOff]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaFadein B 0.1 0,-200]
+[wt 1.0]
+
+
+[messageOff]
+[wait touch]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_6 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

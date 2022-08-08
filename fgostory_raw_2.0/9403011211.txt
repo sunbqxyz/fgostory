@@ -1,0 +1,460 @@
+
+
+＄94-03-01-12-1-1
+
+
+
+[soundStopAll]
+
+
+[charaSet A 3034002 1 茨木童子]
+[charaSet B 6029001 1 Assassin Paraiso]
+[charaSet C 10008001 1 志度内]
+[charaSet D 99502600 1 玛修]
+[charaSet E 5040000 1 谜之护法少女]
+[charaSet F 98115000 1 特效用3]
+[charaSet G 98115000 1 特效用2]
+[charaSet H 98115000 1 特效用]
+
+[bgm BGM_EVENT_24 0.1]
+
+
+[scene 64500]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad64]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 1.0]
+[se ad64]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 0.5]
+[se ad64]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 1.0]
+
+＠黄金龙
+呀啊，啊，啊啊啊，啊啊啊啊啊啊啊啊啊啊啊啊……[line 3]
+[k]
+
+＠黄金龙
+不会死……[r]不会死啊……吾之大欲……是无限的……
+[k]
+
+＠黄金龙
+人理是无法抛弃我的……[r]哪怕吾陷入沉睡，也会再次降临千岁之地……！！
+[k]
+
+[messageOff]
+[charaPut H 1]
+[charaPut F 300,-150]
+[charaEffect H bit_talk_gate_of_babylone]
+[charaEffect F bit_talk_gate_of_babylone]
+[se bac24]
+[wt 2.1]
+[se bac25]
+[wt 0.7]
+[charaPut H 1200,1200]
+[charaPut F 1200,1200]
+[charaEffectStop H bit_talk_gate_of_babylone]
+[charaEffectStop F bit_talk_gate_of_babylone]
+[wt 0.3]
+
+[charaPut G 100,-50]
+[charaEffect G bit_talk_13]
+[se bac42]
+
+[wt 0.1]
+
+[charaPut G -100,50]
+[charaEffect G bit_talk_13]
+[se bac42]
+
+[wt 0.1]
+
+[charaPut G 150,20]
+[charaEffect G bit_talk_13]
+[se bac42]
+
+[wt 0.1]
+
+[charaPut G 30,-100]
+[charaEffect G bit_talk_13]
+[se bac42]
+
+[wt 0.1]
+
+[charaPut G -200,-50]
+[charaEffect G bit_talk_13]
+[se bac42]
+
+[wt 0.1]
+
+[charaPut G 200,70]
+[charaEffect G bit_talk_13]
+[se bac42]
+
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_13]
+[se bac42]
+
+[wt 0.2]
+
+[charaEffect G bit_talk_14]
+[se bac45]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+
+＠黄金龙
+……………………呜！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 1.0]
+[wt 1.0]
+
+[se ad64]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 1.0]
+
+[se ad63]
+[fadeout white 0.1]
+[wait fade]
+[wt 0.1]
+[fadein white 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[se ad52]
+[charaSpecialEffect G flashErasure 1 2.0]
+[wait charaSpecialEffect G]
+
+[wt 1.5]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠玛修
+最后的攻击……[r]该不会是吉尔伽美什先生的『[#王之财宝:Gate of Babylon]』[line 3]？
+[k]
+
+？1：这样就结束了吧。
+？2：各位，辛苦了！
+
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaPut H 1200,1200]
+
+[cueSe Battle bac199]
+[cueSeVolume bac199 0 0.6]
+[charaPut F 1]
+[charaEffect F bit_talk_gold_kamui]
+[wt 3.0]
+[charaPut F 1200,1200]
+[wt 0.5]
+
+[bgm BGM_EVENT_6 0.1]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 1]
+
+＠志度内
+来吧。
+[k]
+
+＠志度内
+不用再害怕了。[r]这次，一定会把你送回原来的地方。
+[k]
+
+＠志度内
+你不会再因为欲望而变成龙了。[r]我也会……
+[k]
+
+[messageOff]
+[charaPut G 0,-50]
+[charaEffect G bit_talk_06]
+[wt 1.0]
+[charaFace C 15]
+
+＠志度内
+……从这里消失。[r]你再也不会变得像莱茵的黄金那样了。
+[k]
+
+＠志度内
+我会陪你一起消失哦。[r]黄金龙。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+唔，唔。
+[k]
+
+＠茨木童子
+志度内，你要走了吗？[r]吾还打算最后尽情玩一下再回去呢……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut G 0,-50]
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠志度内
+嗯。我必须将魔力返还大地才行。[r]乐园建立之后从英灵们那里吸收来的多余部分……
+[k]
+
+＠志度内
+会以圣杯的形式交给你们。[r]我会认真制作的，不会变成龙的。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠B：[servantName 602900:Assassin Paraiso:望月千代女]
+志度内阁下……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 0,-50]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠志度内
+都是我的错，给那么多人添了麻烦，[r]对不起，对不起了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+不要道歉！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut G 0,-50]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+[wt 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+………嗯。道歉可不好。[r]无论是吾，还是酒吞，临死时都是面带笑容的。
+[k]
+
+＠茨木童子
+所以[line 3]
+[k]
+
+[charaFace A 1]
+
+＠茨木童子
+……汝也该尽情欢笑。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut G 0,-50]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+[wt 1.0]
+[charaFace C 1]
+
+＠志度内
+再见了！　大家！
+[k]
+
+＠志度内
+谢谢！[r]尽管给大家带来了偌大的麻烦……
+[k]
+
+＠志度内
+但能和大家在一起，我感到非常[line 3]
+[k]
+
+[messageOff]
+[charaEffectStop G bit_talk_06]
+[wait charaEffect G bit_talk_06]
+[se ad52]
+[charaSpecialEffect C flashErasure 1 2.0]
+[wait charaSpecialEffect C]
+
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+……嗯。
+[k]
+
+[charaFace A 1]
+
+＠茨木童子
+吾也相当开心哦！　志度内！
+[k]
+
+[messageOff]
+[wt 1.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_6 2.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+[messageOff]
+[effect bit_talk_07_02]
+[se ad12]
+[wt 4.0]
+[fadeout white 1.0]
+[wait fade]
+[wt 2.0]
+
+
+
+
+[scene 10200]
+
+[fadein white 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠酒吞童子
+好了，就是这样。
+[k]
+
+[charaFace E 1]
+
+
+＠酒吞童子
+皆大欢喜皆大欢喜。[r]微小特异点或是特异点什么的也平息了吧？
+[k]
+
+＠酒吞童子
+游乐园也消失了，好，结束。[r]真是有劳了呐。老板。
+[k]
+
+[messageOff]
+[charaFace E 4]
+[wt 1.0]
+[charaFace E 0]
+
+＠酒吞童子
+然后嘛。
+[k]
+
+＠酒吞童子
+尽管白的魔力消失了，[r]但没事，只要妾身没这个打算，灵基也不会变回去吧。
+[k]
+
+＠酒吞童子
+……但若有这个打算应该就会变回去了。
+[k]
+
+[charaFace E 6]
+
+＠酒吞童子
+好啦，今后也请多关照，多光顾。[r][line 3]这样就行了吧？
+[k]
+
+？1：我也要请你多关照啦！
+
+[charaFace E 1]
+
+＠酒吞童子
+知道啦知道啦。多关照。
+[k]
+
+？2：咦，白……不是在那里吗？
+
+[charaFace E 4]
+
+＠酒吞童子
+啊，这个呀。[r]这个不是正牌货啦。
+[k]
+
+[charaFace E 1]
+
+＠酒吞童子
+是妾身用魔力编织而成的冒牌货[line 3][r]但或许有一天，这家伙也会开口说话吧。呵呵。
+[k]
+
+＠酒吞童子
+因为外形中包含着意义。
+[k]
+
+？！
+
+＠酒吞童子
+好了，总之，辛苦啦。[r]你可以去好好休息了哦？
+[k]
+
+
+
+[messageOff]
+[wt 1.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

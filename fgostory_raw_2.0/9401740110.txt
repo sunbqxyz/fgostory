@@ -1,0 +1,1473 @@
+
+
+＄94-01-74-01-1-0
+[soundStopAll]
+
+[charaSet A 3030000 1 帕尔瓦蒂]
+[charaSet B 98111500 1 达·芬奇]
+[charaSet C 99502600 1 玛修]
+[charaSet D 98109000 1 莫西干]
+[charaSet E 6002001 1 咒腕哈桑]
+[charaSet H 5009000 1 特效用dummy]
+
+[scene 10000]
+[fadein black 1.0]
+[wait fade]
+
+
+[effect bit_talk_07]
+[se ad12]
+[wt 4]
+[fadeout white 1.0]
+[wait fade]
+[wt 2.0]
+
+
+[scene 45700]
+
+[fadein white 2.0]
+[wait fade]
+
+[wt 1.0]
+
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[wt 0.3]
+
+＠玛修
+[line 3]系统一切正常。[r]灵子转移成功完成。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+＠达·芬奇
+甚好甚好。[r]好啦，[%1]。
+[k]
+
+＠达·芬奇
+重复这些或许显得有些奇怪，[r]但那边是日本的地方都市，冬木。
+[k]
+
+＠达·芬奇
+这次灵子转移的目的，[r]是调查从那里发出的奇妙反应。
+[k]
+
+＠达·芬奇
+事不宜迟[line 3]如何？
+[k]
+
+＠达·芬奇
+你眼前有什么让你介意的物、人，或事吗？
+[k]
+
+？1：呃……
+？！
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaPut H 1200,1200]
+[cameraMove 0.1 -86,0 1.2]
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 4]
+[charaScale A 0.83]
+[charaFadein A 0.4 0,-48]
+[wt 0.2]
+
+
+
+
+[se ad95]
+[seVolume ad95 0 0.8]
+[cameraMove 0.7 -46,0 1.2]
+[charaMove A -60,-48 0.8]
+[charaShake A 0.2 0 2 0.8]
+[wait charaMove A]
+[wait camera]
+[seStop ad95]
+[wt 0.7]
+
+[se ad95]
+[seVolume ad95 0 0.8]
+[cameraMove 1.8 0,0 1.2]
+[charaFace A 8]
+[charaMove A 60,-48 2.0]
+[charaShake A 0.2 0 2 2.0]
+[wait charaMove A]
+[wait camera]
+[seStop ad95]
+[wt 0.7]
+
+[se ad95]
+[seVolume ad95 0 0.8]
+[cameraMove 1.0 40,0 1.2]
+[charaFace A 9]
+[charaMove A 0,-48 1.5]
+[charaShake A 0.2 0 2 1.5]
+[wait charaMove A]
+[wait camera]
+[seStop ad95]
+[wt 1.0]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+[cameraHome 0.1]
+[charaFadeout A 0.1]
+[charaScale A 1.0]
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+？1：有个……印度风的贵妇。
+？！
+
+＠达·芬奇
+让我看看……？
+[k]
+
+[charaFace B 7]
+
+＠达·芬奇
+嗯，不愧是[%1]，[r]一开始就找到啦！
+[k]
+
+＠达·芬奇
+那边的女性无疑就是我们正在寻找的反应。[r]她是从者。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠玛修
+但是，并不是普通的从者。[r]这反应……是神灵。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+＠达·芬奇
+哦。既然被示巴观测为异常现象，[r]我也猜到会是特殊情况，但居然是神灵从者啊。
+[k]
+
+＠达·芬奇
+虽说对方看来没有敌意，但不知道会发生什么事。[r]慎重地与她接触吧，[%1]。
+[k]
+
+？1：唉。那么……劳驾，能打扰一下吗？
+？2：您好，这位小姐。能否询问一下……
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+[wt 0.3]
+[charaMoveReturn A 0,5 0.1]
+
+＠A：？？？
+！？　哎，啊，咦……？[r]什……什么事啊！？
+[k]
+
+＠A：？？？
+呃，确实，我始终在同一个地方转来转去的，
+[k]
+
+＠A：？？？
+或许看起来非常可疑[line 3][r]但我绝不是什么可疑的人物哦！
+[k]
+
+[charaFace A 0]
+
+＠A：？？？
+……哎呀？
+[k]
+
+＠A：？？？
+……………………
+[k]
+
+＠A：？？？
+那个……如果不是我的误会。
+[k]
+
+＠A：？？？
+您该不会是与从者缔结了契约的……御主吧？
+[k]
+
+？1：正是，说得没错。
+？2：我和很多从者缔结了契约。
+？！
+
+[charaFace A 1]
+
+＠A：？？？
+哎呀，太好了。[r]那我就不用再做基本说明了吧。
+[k]
+
+＠A：？？？
+我不是什么可疑的人物。[r]我[line 4]毫无隐瞒，正是落单从者！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+＠达·芬奇
+承蒙您如此有礼。[r]不过并非只要讲礼貌就能解决问题。
+[k]
+
+＠达·芬奇
+（看上去是个比较被动的人物，[r]　但不断压迫胸口的这强势态势……）
+[k]
+
+＠达·芬奇
+（看来并非外表看起来的那种讲道理类型呢。[r]　一定要小心，[%1]。）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠玛修
+达·芬奇亲，你也太失礼了啦。[r]她只是诚实地告诉了我们她是落单从者的事实……
+[k]
+
+[charaFace C 1]
+
+＠玛修
+尽管还不清楚情况，也不知道她的真名，[r]但我觉得她一定是位卓越的女性从者！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠A：？？？
+哎呀，是您的同伴吗？[r]热热闹闹的真不错。
+[k]
+
+[charaFace A 0]
+
+＠A：？？？
+是从非『此处』也非『现在』的『某处』，[r]只将声音传来……我说得没错吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace A 0]
+[charaFadein A 0.1 0]
+[charaPut H 2]
+[charaFace B 0]
+[charaFadein B 0.1 256,-90]
+
+＠达·芬奇
+嗯，这个解释最准确。[r]不愧是神灵级，很高兴您能如此明事理。
+[k]
+
+[charaFace A 12]
+
+＠A：？？？
+你居然知道我是神灵……知道我是女神从者啊？[r]灵基都已经如此衰弱了，还能看出来？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 2]
+
+＠玛修
+啊，嗯。该怎么说呢，我们遇到过[r]很多女神从者……各位都充斥着某种独特的氛围。
+[k]
+
+[charaFace A 0]
+
+＠A：？？？
+哎呀。[r]那还真是好缘分，您一定积累了不少修行吧。
+[k]
+
+＠A：？？？
+尽管我不知道你们“遇到过的女神”究竟是哪个神话的女神，[r]不知道她们是用什么样的人类当凭依之躯……
+[k]
+
+
+＠A：？？？
+但既然经历过，那我也就不用隐瞒了。[r]请容我报上名字。
+[k]
+
+＠A：？？？
+我是帕尔瓦蒂。是借用灵魂与肉体波长吻合的……[r]这少女身体作为凭依之躯显现的存在。
+[k]
+
+？1：帕尔瓦蒂……？
+？2：凭依之躯……也就是拟似从者……！？
+
+？！
+
+[charaFace A 11]
+
+＠帕尔瓦蒂
+对。[r]因为我经历了不少奇缘。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠玛修
+女神帕尔瓦蒂[line 4][r]是印度神话中有名的女神。
+[k]
+
+＠玛修
+湿婆神的配偶神，象征着温和与优美。[r]看来不是什么危险的神灵，那我就放心了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-90]
+
+＠达·芬奇
+嗯。如果这位女性真的是女神帕尔瓦蒂的话，[r]姑且应该没有什么危险。
+[k]
+
+＠达·芬奇
+毕竟根据神话来看，[r][#帕尔瓦蒂]没有任何危险的轶事！
+[k]
+
+＠达·芬奇
+所谓的女神多半表里不一，[r]以至于稍有应对差错，就会对人类降下惩罚。
+[k]
+
+＠达·芬奇
+但若维持帕尔瓦蒂的状态，那黑暗面[line 4][r]不，等一下。
+[k]
+
+[charaFace B 5]
+
+＠达·芬奇
+以美丽与温和为特征的女神……[r]这下糟了。非常糟糕！
+[k]
+
+＠达·芬奇
+因为不是『纷争与美』，而是『纯粹的美』之女神啊！[r]分类重复了！　和我的分类重复了！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠玛修
+以上这些达·芬奇亲的玩笑话先搁置不谈。
+[k]
+
+＠玛修
+令我在意的是成为凭依之躯的人。[r]那个……恕我失礼，帕尔瓦蒂小姐。
+[k]
+
+＠玛修
+您身体的原主……[r]现在处于什么状态呢？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠帕尔瓦蒂
+……是关于这身体原主的状态吗……[r]没想到你们最先询问的……居然是我最难以启齿的部分……
+[k]
+
+＠帕尔瓦蒂
+看上去老实，实际却那么大胆，不，强大的警戒外敌感……[r]没想到不仅同为后辈属性，连性格都如此相似……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠玛修
+请问……帕尔瓦蒂小姐？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠帕尔瓦蒂
+没什么。[r]如果我身处您的立场，一定会问相同的问题。
+[k]
+
+[charaFace A 4]
+
+＠帕尔瓦蒂
+这肉体的原主，现在并不在。
+[k]
+
+＠帕尔瓦蒂
+并不是在沉睡，[r]也不是被赶出去了……
+[k]
+
+[charaFace A 6]
+
+＠帕尔瓦蒂
+以神灵而言，这话非常羞于启齿。[r]但我和她完美地融合了♡
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠玛修
+融……融合吗……！？[r]那个……也就是说[line 4]
+[k]
+
+＠玛修
+人类少女的精神……那个……承受住了身为神灵的帕尔瓦蒂小姐，[r]或者可以说，她并没有输给帕尔瓦蒂小姐。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠帕尔瓦蒂
+就是这么一回事……
+[k]
+
+＠帕尔瓦蒂
+虽说我不是什么战神，但居然能反支配[r]神灵级的英灵，简直令人哑口无言。
+[k]
+
+＠帕尔瓦蒂
+这身体……不，已经是我的了。在我看来，[r]我自身的性格消极、怕事，也可以说很毅然。
+[k]
+
+[charaFace A 0]
+
+＠帕尔瓦蒂
+但我现在的性格是少女的，[r]她的人格覆盖了[#帕尔瓦蒂:我]。
+[k]
+
+＠帕尔瓦蒂
+我们是在相互同意的前提下，通过将彼此认同的部分重合，[r]去除坏部分得以诞生的新生拟似从者。
+[k]
+
+＠帕尔瓦蒂
+这名少女过去发生的经历与记忆，都因为通过[r]与[#女神:我]的融合被封印了。因为人类是无法承受神的记忆量的。
+[k]
+
+＠帕尔瓦蒂
+作为交换，[#女神:我]的判断基准、嗜好等，[r]全部交由这位少女迄今为止培养的人性来决定。
+[k]
+
+[charaFace A 11]
+
+＠帕尔瓦蒂
+或许用这种比喻比较难以理解，但让我想想……[r]您知道魔法少女这个概念吗？
+[k]
+
+＠帕尔瓦蒂
+现在的我和那个非常相近。处于维持变身状态无法恢复原状，[r]但恢复原状时将会忘记一切的极端限定状态。
+[k]
+
+？1：魔法少女……明白了。
+？2：尽管我不太了解魔法少女，但我明白了。
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+＠达·芬奇
+唔。既然知道是神灵，那必然会考虑到凭依之躯的存在，[r]但看上去她和乌鲁克女神的状态似是而非呢。
+[k]
+
+＠达·芬奇
+那边是女神方将凭依之躯的少女作为核，[r]而你则是人类方将女神作为核啊。
+[k]
+
+＠达·芬奇
+不管怎么说，这名少女应该也是[r]与圣杯或是从者有某种缘分的人类吧。
+[k]
+
+＠达·芬奇
+将相性良好的人类作为凭依之躯，[r]仅降下神之力量的小部分，半强行作为从者显现[line 4]
+[k]
+
+＠达·芬奇
+这是拟似从者的原则。[r]虽说你似乎与这惯例不太一样。
+[k]
+
+＠达·芬奇
+但基本上和[#迦勒底:我们这儿]的其他神灵们没什么差别。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠帕尔瓦蒂
+你们那边已经有像我这样的存在了呀。[r]既然如此，那我就放心多了。
+[k]
+
+[charaFace A 0]
+
+＠帕尔瓦蒂
+我可不希望被无谓地尊崇或是畏惧。
+[k]
+
+＠帕尔瓦蒂
+希望大家能像对待各位熟悉的其他几位一样，[r]自然地与我相处。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 2]
+[charaTalk C]
+[charaFace A 0]
+[charaFadein A 0.1 0]
+[charaFace C 1]
+[charaFadein C 0.1 2]
+
+＠玛修
+感谢您的体贴，帕尔瓦蒂小姐。[r]那么[line 3]
+[k]
+
+＠帕尔瓦蒂
+啊。可以直接称呼我为帕尔小姐哦？[r]这名字微妙地有些长吧。
+[k]
+
+[charaFace C 3]
+
+＠玛修
+呃，哎……虽说这未免令人有些惶恐。[r]那么，就称呼帕尔小姐吧……
+[k]
+
+[charaFace A 1]
+
+＠帕尔瓦蒂
+嗯！　……呵呵呵。第一次被人叫昵称。[r]我或许还是有点社交能力的嘛。感觉好高兴。
+[k]
+
+[charaFace A 0]
+
+＠帕尔瓦蒂
+无论是我，还是这身体的少女，[r]两者原本就很内向害羞。
+[k]
+
+＠帕尔瓦蒂
+但是，多亏彼此将优点重合在一起，[r]现在或许变得率直一点了，
+[k]
+
+[charaFace A 1]
+
+＠帕尔瓦蒂
+能像刚才那样，不再害怕，[r]明确地说出自己喜欢的东西。
+[k]
+
+＠帕尔瓦蒂
+光凭这点，这次显现就是有价值的。
+[k]
+
+？1：那么，帕尔小姐……
+？2：您到底为什么来这里？
+？！
+
+[charaFace A 3]
+
+＠帕尔瓦蒂
+啊！　对……对哦。[r]现在可不是高兴的时候。
+[k]
+
+[charaFace A 4]
+
+＠帕尔瓦蒂
+呃，简单说，我在寻找一件东西。[r]我能确定的只有那东西在这里。
+[k]
+
+[charaFace C 6]
+
+＠玛修
+在这个时代的冬木吗？
+[k]
+
+＠帕尔瓦蒂
+嗯。[r]这里似乎是与[#这身体:我]有缘的城市，
+[k]
+
+＠帕尔瓦蒂
+我本以为先过来看看应该就能找到办法……
+[k]
+
+＠帕尔瓦蒂
+但看来，这里和[#她:我]所熟悉的冬木微妙地有些不一样。
+[k]
+
+[charaFace A 11]
+
+＠帕尔瓦蒂
+说来惭愧，我迷路了，[r]以至于现在不知所措。
+[k]
+
+？1：原来如此……
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠玛修
+我们明白情况了。[r]怎么办，前辈，我们会帮助帕尔小姐吧？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+＠达·芬奇
+说得对。既然她是因为某种理由留在这里，[r]那实现她的愿望无疑能推进事态的发展。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+？2：那我们来帮你吧？
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠玛修
+说得对。我们和冬木多少也有些缘分，[r]我们这里也能提供支援。
+[k]
+
+＠玛修
+一定会帮上您的。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+？！
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠帕尔瓦蒂
+！　这……如果真能这样，那就太好了……[r]但为刚认识的我做到这个份上，真的可以吗？
+[k]
+
+？1：（点头表示当然没问题。）
+？2：（竖起拇指表示交给我吧。）
+？！
+
+[charaFace A 11]
+
+＠帕尔瓦蒂
+啊啊，您是一位心地多么善良的人啊。[r]我必须对这次邂逅表示感谢才行。
+[k]
+
+[charaFace A 4]
+
+＠帕尔瓦蒂
+……另外恕我失礼，我还没询问[r]各位的名字呢。我是否能冒昧询问呢？
+[k]
+
+？1：我叫[%1]。
+？！
+
+[charaFace A 0]
+
+＠帕尔瓦蒂
+[%1]。[r]是叫[%1]吧……
+[k]
+
+[charaFace A 1]
+
+＠帕尔瓦蒂
+嗯，这名字非常好。[r]请多关照啦，[%1]！
+[k]
+
+＠帕尔瓦蒂
+还有……玛修小姐和达·芬奇亲小姐吧！[r]我都记住了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace A 0]
+[charaFadein A 0.1 0]
+[charaPut H 2]
+[charaFace B 0]
+[charaFadein B 0.1 256,-90]
+
+＠达·芬奇
+话说，关于你搜寻的东西。[r]除了在这座城市里以外，还有其他线索吗？
+[k]
+
+[charaFace A 4]
+
+＠帕尔瓦蒂
+啊……不，这是感觉上的问题。[r]我觉得只要能靠近对象，应该就能知道……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 2]
+
+＠玛修
+既然如此，[r]就只能边走边寻找了呢。
+[k]
+
+＠玛修
+由我们这里绘制地图，[r]将已搜索过的范围全部涂掉。
+[k]
+
+＠玛修
+或许很费时间，[r]但只要反复这种操作，应该迟早能找到。
+[k]
+
+[charaFace A 0]
+
+＠帕尔瓦蒂
+好厉害……说您和我同类简直就是高攀。[r]玛修小姐比我更为……怎么说呢，是更为积极向上的那种人呢！
+[k]
+
+[charaFace A 1]
+
+＠帕尔瓦蒂
+但现在这令人十分安心。[r]我遇到了一些好人呢。真幸运！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠帕尔瓦蒂
+那事不宜迟，我们这就出发吧。[r]请各位多多指教啦！
+[k]
+
+[messageOff]
+[wipeout rightToLeft 0.7 1]
+[bgmStop BGM_EVENT_2 1.2]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.4]
+[scene 45600]
+[wipein leftToRight 0.7 1]
+[wait wipe]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠玛修
+话说回来。[r]帕尔小姐手中拿着的……是枪吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-90]
+
+＠达·芬奇
+啊，我也很介意那个。[r]你的职阶是Lancer吧？
+[k]
+
+＠达·芬奇
+但是，我从未听说过帕尔瓦蒂用枪啊……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠帕尔瓦蒂
+嗯……说得对。[r]正式来说，这不是属于我的。
+[k]
+
+＠帕尔瓦蒂
+这是从我的丈夫，湿婆那里借来的东西。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-90]
+
+＠达·芬奇
+什么，是湿婆的[#三叉戟:特里修拉]吗？[r]原来如此，难怪会是Lancer。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠帕尔瓦蒂
+当然只是借来的东西，[r]无法发挥湿婆挥舞时的力量。
+[k]
+
+＠帕尔瓦蒂
+再加上为配合我的爱好，[r]帮忙改造成了方便我使用的样子……
+[k]
+
+[charaFace A 8]
+
+＠帕尔瓦蒂
+或许看上去不是很像枪……[r]不，毕竟是我，一定显得很难看……
+[k]
+
+＠帕尔瓦蒂
+尽管我……成了女神，[r]但性格依然那么迟钝……
+[k]
+
+？1：啊哇哇……
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠玛修
+不，没有那种事！　哪怕抓不到诀窍，[r]帕尔小姐看上去也是那种勤勤恳恳不断积累的类型！
+[k]
+
+＠玛修
+尽管是毫无根据的直觉，但我可以断言！[r]因为我和您很有亲近感！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠帕尔瓦蒂
+玛修小姐……！
+[k]
+
+？2：一点都不迟钝，女神大人很华丽！
+
+[charaFace A 10]
+
+＠帕尔瓦蒂
+是……是吗，是这样吗！？[r]居然比我更为坚定地这么说，我会不好意思的！
+[k]
+
+？！
+
+[charaFace A 1]
+
+＠帕尔瓦蒂
+但是[line 4]您能这么说，[r]我就有自信多了！
+[k]
+
+[charaFace A 0]
+
+＠帕尔瓦蒂
+哪怕使不出湿婆程度的火力，[r]毕竟也实际显现了，
+[k]
+
+＠帕尔瓦蒂
+我无疑就是名副其实的Lancer职阶的从者吧！[r]嘿呀[line 2]！[wt 0.2][se ad76]
+[k]
+
+？1：嘿呀……？
+？2：话说……刚才那个前屈的动作……？
+
+？！
+
+[charaFace A 10]
+
+＠帕尔瓦蒂
+这……这是嘿呀哦？[r]日本武术家总是通过这种方法鼓足力气……！
+[k]
+
+[charaFace A 5]
+
+＠帕尔瓦蒂
+……唔唔唔。这样可不行。[r]我遭到了怀疑……
+[k]
+
+[charaFace A 4]
+
+＠帕尔瓦蒂
+作为Lancer，我确实刚刚诞生，[r]但我好歹也是女神级从者。
+[k]
+
+＠帕尔瓦蒂
+哪怕动作不够帅气，[r]在战斗方面也一定很强。大概吧。
+[k]
+
+[charaFace A 2]
+
+＠帕尔瓦蒂
+只要敌人一出现，就能这样，[r]噼里啪啦地搞定！
+[k]
+
+＠帕尔瓦蒂
+我打算边借助湿婆的力量，[r]边以自己的风格优雅地打胜仗！
+[k]
+
+＠帕尔瓦蒂
+没有问题啦，[r]不会出现那种黑乎乎的奇怪东西啦！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+＠达·芬奇
+[FFFFFF]？[-]（黑乎乎的奇怪东西是指什么？）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠玛修
+（尽管本人不断想表现自己的强大……）
+[k]
+
+＠玛修
+（但失礼的是，表现出来的[r]　还是优美与可爱之类的感觉呢。）
+[k]
+
+＠玛修
+（换句话说，女神大人就是女神大人吧……）
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠帕尔瓦蒂
+所以，如果接下来的路上出现敌人，[r]也不用担心哦，[%1]。
+[k]
+
+＠帕尔瓦蒂
+向陷入困境的我伸出援手的善良的人们。[r]我，以女神的名义[line 4]一定会守护你们的。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-90]
+
+＠达·芬奇
+唔……尽管指望女神帕尔瓦蒂[r]直接战斗好像有些不太合适，
+[k]
+
+＠达·芬奇
+但如果回溯神话系统，就另当别论了。[r]非返祖的返神现象确实很适合战斗[line 4]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠帕尔瓦蒂
+哎呀？　那是……
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 5]
+
+[wt 1.0]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+[charaFadeout E 0.1]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠玛修
+那边那位是……咒腕哈桑先生……？
+[k]
+
+＠玛修
+正偷偷摸摸地在路边做什么呢。[r]到底在做什么呢……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠帕尔瓦蒂
+………………
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠玛修
+帕尔小姐？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠帕尔瓦蒂
+不知为何……我感受到了。
+[k]
+
+＠帕尔瓦蒂
+那个，是恶人吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+＠达·芬奇
+这个嘛，从属性来看确实没错。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠帕尔瓦蒂
+体内不禁涌上这种感觉，[r]我觉得……必须高度警戒才行。
+[k]
+
+[charaFace A 4]
+
+＠帕尔瓦蒂
+还有这是什么呢。是联想程度的事吗，[r]或者说这余味令人介意……
+[k]
+
+＠帕尔瓦蒂
+怎么说呢，讨厌……虫臭味……的感觉……？
+[k]
+
+＠帕尔瓦蒂
+因为是感觉层面的问题，[r]所以我也无法顺利将这种感觉转化为语言。
+[k]
+
+＠帕尔瓦蒂
+…………
+[k]
+
+[charaFace A 2]
+
+＠帕尔瓦蒂
+但是，不管怎么说！[r]看来那家伙是恶人乃是毋庸置疑的事实！
+[k]
+
+＠帕尔瓦蒂
+那我帕尔瓦蒂，[r]身为女神，就不能坐视不理！
+[k]
+
+[charaFace A 9]
+
+＠帕尔瓦蒂
+吸～，呼～（深呼吸）……
+[k]
+
+[charaFace A 2]
+
+＠帕尔瓦蒂
+[line 4]给我站住，那边的可疑假面男！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.2]
+
+＠咒腕哈桑
+唔。可疑假面男……是指我吗？
+[k]
+
+？1：因为没有其他人了嘛！
+？2：如果岛屿假面他们也在场，就另当别论了……
+
+？！
+
+[charaFace E 1]
+
+＠咒腕哈桑
+哈哈哈，此话确实没错。[r]那么，各位有何贵干。
+[k]
+
+[charaFace E 0]
+
+＠咒腕哈桑
+似乎有位女性从刚才起就一直在瞪着这边……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠帕尔瓦蒂
+[line 3]哪怕是恶人，我也相信[r]真诚的话语能打动人心，所以我问你。
+[k]
+
+＠帕尔瓦蒂
+回答我。[r]你到底在这里做什么？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠咒腕哈桑
+问我在这里做什么……唔。[r]仔细想来，或许这还是个挺深奥的问题呢。
+[k]
+
+＠咒腕哈桑
+尽管我在这里的原因包含着很多要素。[r]但是，如果让我诚实而直接地回答你。
+[k]
+
+[charaFace E 1]
+
+＠咒腕哈桑
+那就是[#将失去了去处]，[#没有内在的存在解决掉][line 3][r]应该这么说吧？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠帕尔瓦蒂
+你说……什么……！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+
+＠莫西干
+嘿嘿，老师，老师～！[r]找到啦！　在河岸那边有好多啊！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠咒腕哈桑
+哦，那还真是。我这就去。[r]令我跃跃欲试啊，哼哼哼……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠帕尔瓦蒂
+居……居然还带着丑恶的部下……！？
+[k]
+
+[charaFace A 5]
+
+＠帕尔瓦蒂
+[line 4]你是在开玩笑吧。[r]不，不对，给我站住！
+[k]
+
+＠帕尔瓦蒂
+我确实听说当今世上有不少看不到未来，[r]仿佛失去了灵魂般毫无干劲的人。
+[k]
+
+[charaFace A 2]
+
+＠帕尔瓦蒂
+但即便如此[line 3]对神来说，他们也是重要而可爱的子民！
+[k]
+
+＠帕尔瓦蒂
+居然想杀害无罪之人，[r]我是决不会坐视不理的！
+[k]
+
+
+
+＠帕尔瓦蒂
+给我老实点，暗杀者。[r]不用多说[line 3]我，现在[charaEffect A bit_talk_41]发怒了！
+[k]
+[wt 0.5]
+[charaEffectStop A bit_talk_41]
+
+？1：（吓到。）
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠玛修
+帕尔小姐的氛围……！？[r]散发出与女神不符的威压感！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+＠达·芬奇
+猜对了。帕尔瓦蒂只会被描述成作为湿婆神妻的一面，[r]确实是名温和的女神，但是，
+[k]
+
+＠达·芬奇
+基于她是湿婆的妻子，[r]因此与同为湿婆妻子的战斗女神杜尔伽、
+[k]
+
+＠达·芬奇
+以及由此而生的迦梨也被视为同一存在。[r]换言之，惹她生气可是很可怕的哦！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠帕尔瓦蒂
+现在可不是聊天的时候哦。
+[k]
+
+＠帕尔瓦蒂
+既然您也是正义之士，[r]就决不会放过这种为非作歹之辈才对。
+[k]
+
+[charaFace A 2]
+
+＠帕尔瓦蒂
+好了，我们上吧，[%1]！[r]让我们一起向充满虫臭味的卑劣暗杀者降下天罚吧！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

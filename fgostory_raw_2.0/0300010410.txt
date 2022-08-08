@@ -1,0 +1,1135 @@
+
+
+
+＄03-00-01-04-1-0
+[soundStopAll]
+
+
+[charaSet A 1098128000 1 玛修]
+[charaSet B 98115300 1 福尔摩斯]
+[charaSet C 5036001 1 阿维斯布隆]
+[charaSet D 1098126400 1 帕茨西]
+[charaSet E 1098128600 1 雅嘎]
+[charaSet F 1098127000 1 魔偶]
+[charaSet G 1098123210 1 戈尔德鲁夫]
+[charaSet H 98115000 1 特效用]
+
+
+
+[se ad60]
+[wt 1.0]
+[seStop ad60 2.0]
+
+[scene 57000]
+
+[fadein black 2.0]
+[charaPut H 1]
+[charaEffect H bit_talk_snowstorm_01]
+[se ad555]
+[seVolume ad555 0 0.5]
+[wait fade]
+
+[wt 1.5]
+[charaEffectStop H bit_talk_snowstorm_01]
+[wt 0.5]
+[seStop ad555 1.0]
+[wt 0.8]
+[bgm BGM_EVENT_77 0.1]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿维斯布隆
+那我们出发吧，御主。
+[k]
+
+＠阿维斯布隆
+用岩石将这里的工房隐蔽起来。[r]就像是藏身所一样。
+[k]
+
+
+[messageOff]
+[se ade160]
+[charaMoveReturn C -2,0 0.25]
+[wt 0.8]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad14]
+[shake 0.05 3 2 2.5]
+[seStop ad14 2.5]
+[wt 3.0]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+转瞬间就不见踪影了呢。[r]但这样一来，我们也会很难找到吧……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿维斯布隆
+我已经设定好了，只要我们一靠近，[r]魔偶就会自动感知并帮忙带路。
+[k]
+
+？1：魔偶好厉害！
+？！
+
+＠阿维斯布隆
+身为魔偶使，这点事怎么可能做不到呢。[r]不然作为魔术师也太二流了吧。
+[k]
+
+＠阿维斯布隆
+那我们这就出发前往那个帮助反叛军的村子吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.3]
+
+＠福尔摩斯
+希望你们尽可能迅速。
+[k]
+
+[charaFadeout B 0.1]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠帕茨西
+对。[r]在抵达那座村子前，会经过另一座村子。
+[k]
+
+＠帕茨西
+千万别在那边惹麻烦哦。[r]那里的立场是中立偏支持伊凡雷帝的。
+[k]
+
+[messageOff]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[scene 54800]
+[wt 0.8]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.8]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠帕茨西
+……好，赶紧穿过这里。[r]毕竟你们和我不一样，太引人注目了。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad60]
+[wt 1.5]
+[seStop ad60 1.5]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠雅嘎
+……站住！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+
+＠帕茨西
+干嘛啦。
+[k]
+
+＠雅嘎
+……缴纳通行税。[r]若要经过这座村子，就得交点买路钱。
+[k]
+
+＠帕茨西
+不仅荒谬，而且还气量狭小。
+[k]
+
+＠雅嘎
+[#你们是想加入反叛军吧]？[r]我们完全不介意将你们抓去告密哦。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿维斯布隆
+很遗憾，我们在金钱方面本来就很紧缺。
+[k]
+
+＠阿维斯布隆
+同时也不想让你们受到伤害。[r]虽说不想……
+[k]
+
+[bgm BGM_EVENT_81 0.7 0.5]
+
+＠阿维斯布隆
+好了，御主。[r]该怎么办呢？
+[k]
+
+？1：全力逃跑吧。
+
+[bgmStop BGM_EVENT_81 0.1]
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠帕茨西
+……嘁，只有这个办法了。[r]快逃，[%1]！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿维斯布隆
+既然要逃跑。[r]那就让我的魔偶当壁垒防御吧。
+[k]
+
+[messageOff]
+[se ade160]
+[charaMoveReturn C -2,0 0.25]
+[wt 0.8]
+
+[se ad14]
+[seStop ad14 2.5]
+
+＠阿维斯布隆
+玛修坐上逃亡用魔偶。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+啊，好！
+[k]
+
+[messageOff]
+
+[se ad7]
+[charaFadeout C 0.4]
+[wt 0.2]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[bgmStop BGM_EVENT_80 0.4]
+[wait wipe]
+[charaFadeout A 0.1]
+[scene 10000]
+[wt 0.3]
+[wipein rectangleStripLeftToRight 0.1 1.0]
+[wait wipe]
+[fadeout black 0.1]
+[wait fade]
+[wt 0.6]
+
+？2：说服他们吧。
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.7 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠帕茨西
+就算想说服他们……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿维斯布隆
+你们是不是缺乏劳动力？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 0]
+
+[charaFace C 0]
+[charaFadein C 0.1 2]
+
+＠雅嘎
+你觉得我们看起来劳动力充足吗？
+[k]
+
+＠阿维斯布隆
+那就把这个转让给你们吧。
+[k]
+
+
+[messageOff]
+
+[charaMoveReturn C 253,0 0.2]
+[se ade160]
+[wt 0.4]
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad575]
+[charaTalk F]
+[charaFace F 0]
+[charaPut F 1]
+[charaSpecialEffect F appearance 1 1.0]
+[wt 1.0]
+[seStop ad575 0.5]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠雅嘎
+呜哇，这是什么啊！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿维斯布隆
+这是用魔术驱动的人偶。[r]虽然动作迟缓，但是力气活可以完全交给它来做。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠雅嘎
+……免……[#免费:白送]吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿维斯布隆
+怎么可能。你们要对我们的事情保密。[r]让我们平安无事地通过这里。
+[k]
+
+＠阿维斯布隆
+你们能获得永远的劳动力。[r]而我们则能够前往目的地的村子。
+[k]
+
+＠阿维斯布隆
+……如何？
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_81 1.2]
+[wait fade]
+
+？！
+
+
+[charaFadeout C 0.1]
+
+[charaSet E 1098128400 1 雅嘎]
+[charaSet F 1098124510 1 达·芬奇]
+
+[scene 54100]
+
+[wt 0.8]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿维斯布隆
+[line 3]哎呀呀，真是花了不少时间。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+
+＠戈尔德鲁夫
+……那座村子里的家伙真是群半吊子。
+[k]
+
+[charaFadeout G 0.1]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠帕茨西
+怎么，你不是很懂嘛，人类。[r]没错，正如你所说的。
+[k]
+
+＠帕茨西
+那座村子正是半吊子们的集合。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠玛修
+……这是什么意思？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+
+＠戈尔德鲁夫
+尽管顺从伊凡雷帝，[r]但根据交易内容，也会光明正大地援助反叛军。
+[k]
+
+＠戈尔德鲁夫
+那种村子最后会被视作[#双方的敌人]，[r]无论被哪边进攻，都会遭到毁灭。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠福尔摩斯
+但从地理位置看来，会这么做也是无可厚非的。[r]他们远离首都，靠近反叛军。
+[k]
+
+＠福尔摩斯
+我们也没资格责怪[r]只能通过当半吊子来维生的他们吧？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+
+＠戈尔德鲁夫
+哼。作为一个半吊子生活的诀窍，[r]就是抛弃一切，[#在妥协与堕落中苟且下去]。
+[k]
+
+＠戈尔德鲁夫
+明天不会更美好，但与之相对，[r]明天也不会更糟糕，就这样自我安慰着活下去。
+[k]
+
+[charaFace G 0]
+
+＠戈尔德鲁夫
+如果连这点都做不到，只会在两边摇摆不定的话，[r]等待着他们的就只有破灭。
+[k]
+
+[charaFace G 5]
+
+＠戈尔德鲁夫
+毕竟我们家就是因为这样，[r]才会眼见着在政治斗争中衰落了啊！
+[k]
+
+[charaFace G 4]
+
+＠戈尔德鲁夫
+……哎哟不好，[r]一想起来就倒胃……
+[k]
+
+？1：请冷静点。
+？！
+
+[charaFadeout G 0.1]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠玛修
+……虽然我也不明详情，但对魔术师而言，[r]家族的衰落只能用悲惨来……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠帕茨西
+……你还是会说些人话的嘛。[r]那座村子确实是摇摆不定的墙头草。
+[k]
+
+＠帕茨西
+想靠耍滑头来两边讨好[line 3][r]但应该是不可能如愿的吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+话说回来……
+[k]
+
+＠玛修
+虽说是村子，但与帕茨西先生所居住的[r]城镇的样子真是大相径庭啊。
+[k]
+
+＠玛修
+简直像回到了中世纪……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠福尔摩斯
+雅嘎·斯摩棱斯克的建筑物更为近代化吧。
+[k]
+
+[charaFadeout B 0.1]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠帕茨西
+因为那是在[#旧种:人类]的时代建造的东西。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+是历经四百多年的建筑物吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠帕茨西
+虽然好像经过了反复修缮。[r]毕竟已经没人知道那种建筑物的建造方法了。
+[k]
+
+＠帕茨西
+最多只能填补出现的破洞。
+[k]
+
+＠帕茨西
+……如果发生大地震，[r]建筑物一定会彻底倒塌吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿维斯布隆
+尽管我对雅嘎的文明非常有兴趣，[r]但现在先暂且搁置好了。
+[k]
+
+＠阿维斯布隆
+还是思考一下该如何与反叛军取得联络吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠玛修
+是，阿维斯布隆先生。[wt 0.8][r]从者、御主、特异点……
+[k]
+
+[charaFace A 1]
+
+＠玛修
+是不是应该若无其事地暗示这些单词呢！
+[k]
+
+？1：简直像间谍！
+？！
+
+[charaFace A 3]
+
+＠玛修
+说得对呢！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿维斯布隆
+[line 3]很遗憾。
+[k]
+
+＠阿维斯布隆
+底层的士兵恐怕不会知道这类单词吧。
+[k]
+
+＠阿维斯布隆
+再加上，千万不能忘记敌我双方都存在从者哦。
+[k]
+
+＠阿维斯布隆
+虽说我们是御主与从者，[r]但未必是反叛军的同伴。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠福尔摩斯
+很好。
+[k]
+
+＠福尔摩斯
+既然如此，我们就简洁地行动。[r]表现出我们想加入反叛军的意志吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 2]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 2]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+
+＠福尔摩斯
+帕茨西。[r]你打算加入反叛军吗？
+[k]
+
+＠帕茨西
+……自从雷帝率领[#杀戮猎兵:亲卫队]支配这片大地至今，[r]已经过去四百五十年了。
+[k]
+
+＠帕茨西
+不死之身的雷帝，伟大的[#皇帝:沙皇]。[r]在那位大人的执政下，我们战战兢兢地生存着[line 3]
+[k]
+
+＠帕茨西
+既然继续龟缩下去也难逃一死……[r]还倒不如昂首挺胸地战斗。
+[k]
+
+＠福尔摩斯
+嗯，这样啊。
+[k]
+
+＠福尔摩斯
+虽说我觉得你只要假装加入就行了……
+[k]
+
+＠帕茨西
+把我扯进来的可是你们吧。
+[k]
+
+＠福尔摩斯
+你这么一说，我也无法完全否定呢。
+[k]
+
+？1：抱歉。
+
+＠帕茨西
+不用介意。[r]……说实话，我只是有点焦躁。
+[k]
+
+＠帕茨西
+对没能做什么感到焦躁，[r]也对没能阻止什么感到焦躁。
+[k]
+
+？2：真的不要紧吗？
+
+＠帕茨西
+嗯，无妨。
+[k]
+
+＠帕茨西
+你们很强，而且反叛军里[r]也有那叫啥从者的存在吧？
+[k]
+
+＠帕茨西
+既然如此[line 3]说不定能赢呢。[r]战胜那个雷帝。
+[k]
+
+？！
+
+＠福尔摩斯
+……我们应该尊重你的意志呢。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠戈尔德鲁夫
+你们要磨磨蹭蹭地说到什么时候啊。[r]既然他想做，那就放手让他去做不就行了嘛。
+[k]
+
+＠戈尔德鲁夫
+修复Shadow Border才是当务之急啊。
+[k]
+
+＠戈尔德鲁夫
+说不定在你们磨蹭的这会儿，[r][#杀戮猎兵:亲卫队]还在搜查我们呢！
+[k]
+
+[charaFadeout G 0.1]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿维斯布隆
+那进村子的任务就交给帕茨西了，[r]我们稍后再和你会合，怎么样？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠帕茨西
+就这么办吧。[r]别担心，我一定会好好为你们介绍的。
+[k]
+
+＠帕茨西
+毕竟我手上的见面礼，[r]就只有你们了啊……
+[k]
+
+＠帕茨西
+那你们稍微等我一会儿。
+[k]
+
+
+[messageOff]
+[charaFadeout D 0.7]
+
+[se ad60]
+[wt 1.0]
+[seStop ad60 2.0]
+
+[wt 2.0]
+
+
+？1：……
+？！
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿维斯布隆
+脸色不太好呢，御主。
+[k]
+
+＠阿维斯布隆
+是在后悔不该把他牵扯到这个程度吗？
+[k]
+
+？1：稍微有点……
+
+＠阿维斯布隆
+……或许这意见有些过分，但既然如此，[r]你就应该在一开始扯上他的时候斩断关系。
+[k]
+
+＠阿维斯布隆
+但另一方面，就在刚才，[r]他自己选择了道路。
+[k]
+
+＠阿维斯布隆
+若想尊重他的意志，[r]那保持沉默才是对他的敬意吧。
+[k]
+
+？2：尽管我想尊重他的意志。
+
+＠阿维斯布隆
+这也是没办法的。
+[k]
+
+＠阿维斯布隆
+有的时候，命运不是靠自己，[r]而是由他人来决定的。
+[k]
+
+？！
+
+＠阿维斯布隆
+总之，我们先等等吧。[r]俗话不也说罗马非一日建成吧？
+[k]
+
+＠阿维斯布隆
+魔偶也是一样的道理。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠达·芬奇
+哪用得着一日啊，你不是一秒就铸造好了嘛？
+[k]
+
+[charaFadeout F 0.1]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿维斯布隆
+因为我用的就是这样的魔术啊。
+[k]
+
+＠阿维斯布隆
+但在练成这样的魔术前，可是历经磨练啊……[r]非一日而成这话十分正确。
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgm BGM_EVENT_77 1.5 0.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 54103]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.1]
+
+[bgm BGM_EVENT_77 1.0 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠玛修
+……太阳落山了呢。
+[k]
+
+＠玛修
+该怎么办啊。[r]我觉得差不多应该可以先进村子了吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿维斯布隆
+有人过来了。
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+
+[se ad60]
+[wt 1.0]
+[seStop ad60 1.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.7 1]
+
+[wt 1.0]
+
+？1：您是哪位？
+？！
+
+＠雅嘎
+啊～，叫帕茨西的那家伙带来的就是你们吗？
+[k]
+
+？1：是的。
+？！
+
+＠雅嘎
+[#能不能摘下兜帽让我看看你们的脸]。
+[k]
+
+
+[messageOff]
+[wt 0.6]
+[se ad7 0.5]
+[wt 1.2]
+
+[charaFace E 1]
+
+＠雅嘎
+……真令人惊讶。[r]那家伙说的是真的啊。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿维斯布隆
+没错。[r]顺带一提，我不打算摘下这个面具。
+[k]
+
+＠阿维斯布隆
+……好了，话说我有一个问题。
+[k]
+
+[bgmStop BGM_EVENT_77 0.7]
+
+＠阿维斯布隆
+我们已经证明自己并非雅嘎了，[r]为何你们还有这么多同伴杀气腾腾的呢？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠雅嘎
+其实很简单。[r]这是最近发生的事[line 3]
+[k]
+
+[charaFace E 2]
+
+[bgm BGM_EVENT_80 0.1]
+
+＠雅嘎
+[#伊凡雷帝身边似乎有人类魔术师]。[r][#也有人型的从者]！
+[k]
+
+[charaFace E 3]
+
+＠雅嘎
+不好意思，但我们不会手下留情！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿维斯布隆
+……御主，该怎么办？
+[k]
+
+？1：不要杀害他们。
+
+＠阿维斯布隆
+唔，既然是命令，那我会照办。[r]玛修，你也持相同意见吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠玛修
+……是的。[r]他们只是想保护自己的生存圈而已……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿维斯布隆
+这样啊。[r]那我会向魔偶们下达不杀的命令。
+[k]
+
+？2：用刀背攻击……
+
+＠阿维斯布隆
+让魔偶用刀背攻击，[r]还真是给我出了道难题呢。
+[k]
+
+＠阿维斯布隆
+……开玩笑啦。[r]我领会你的意思了，我会尽力而为。
+[k]
+
+？！
+
+＠阿维斯布隆
+那就让你们见识一下我绝密奥义的魔偶吧。
+[k]
+
+＠阿维斯布隆
+诸位雅嘎，我会尽可能手下留情[line 3][r]但如果击中的位置不巧，恕我概不负责。
+[k]
+
+＠阿维斯布隆
+你们就祈祷吧。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_80 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

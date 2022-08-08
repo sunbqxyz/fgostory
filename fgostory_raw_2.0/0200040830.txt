@@ -1,0 +1,761 @@
+
+
+
+＄02-00-04-08-3-0
+
+[soundStopAll]
+
+[charaSet A 98001000 1 玛修]
+[charaSet B 2003001 1 罗宾汉]
+[charaSet C 1098120430 1 魔神柱劳姆]
+
+[charaSet D 1098121800 1 魔神柱劳姆（魔神柱形态）]
+
+[charaSet E 25001001 1 阿比盖尔]
+
+[charaSet F 1098120300 1 拉维尼娅（无溅血）]
+
+[charaSet G 1098120310 1 拉维尼娅]
+
+[charaSet H 98115000 1 特效用]
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 49602]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFace C 0]
+[charaFadein D 0.1 1]
+[charaFadein C 0.1 1]
+
+[charaDepth D 10]
+[charaDepth C 5]
+
+[charaShake D 0.05 3 3 0]
+[se ad14]
+[fadein black 1.0]
+[wait fade]
+
+
+
+[wt 0.5]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.3]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.3]
+
+[seStop ad14 0.7]
+[se ad42]
+[charaSpecialEffect D enemyErasure 1 1.0]
+[wt 1.5]
+[charaShakeStop D]
+
+＠魔神柱劳姆
+Croak……Croak……
+[k]
+
+[charaTalk on]
+
+＠魔神柱劳姆
+阿比……盖尔……[r]……阿比[line 3]盖尔[line 3]……
+[k]
+
+[se ad536]
+[wt 0.5]
+
+[seStop ad536 0.3]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaDepth D 5]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+劳姆[line 3][r]不，卡特的头部碎裂了！
+[k]
+
+？1：变成了一只乌鸦[line 3]！
+？2：打算拖上阿比同归于尽吗！？
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad509]
+[seVolume ad509 0 0.1]
+[seVolume ad509 0.4 1.0]
+[wt 1.5]
+[seStop ad509 0.3]
+
+？1：[line 3]罗宾！　射击！
+？！
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.1]
+
+＠罗宾汉
+嘁！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad509]
+[seVolume ad509 0 0.1]
+[seVolume ad509 1.2 1.0]
+[wt 1.5]
+[seStop ad509 0.3]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+[charaEffect H bit_talk_41]
+[wt 0.5]
+[charaPut H 1]
+[wt 0.5]
+[charaFadeout E 0.1]
+[charaPut H 1200,1200]
+[wt 0.1]
+[effect bit_shot_01 0,-20]
+[wt 0.1]
+[se bac20]
+[wt 0.4]
+[se bac19]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_24 0.7]
+
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[wt 1.0]
+[charaShake F 0.05 3 3 0.5]
+[charaShake G 0.05 3 3 0.5]
+[se bac13]
+[flashin once 0.1 0.1 FF000080 FF000080]
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.5 1]
+[charaFadeout F 1.0]
+
+＠拉维尼娅
+[line 9]
+[k]
+
+[charaFace G 7]
+
+＠拉维尼娅
+……啊…………
+[k]
+
+[messageOff]
+[charaFadeout G 0.4]
+[charaMove G 0,-20 0.7]
+[wt 0.3]
+[se ad144]
+[seVolume ad144 0 0.4]
+[wt 1.5]
+
+？1：[line 3]拉维尼娅！？
+？2：一开始瞄准的就是她吗……！？
+？！
+
+[imageSet H back10000 1]
+[charaDepth H 10]
+[charaScale H 1.01]
+[charaPut H 1200,1200]
+[charaFadeTime H 0.1 0.0]
+
+
+[scene 50600 1.2]
+[wt 1.5]
+
+＠濒死的卡特《劳姆》
+Croak……Croak……[r]时空之“门”……不断增多……
+[k]
+
+＠濒死的卡特《劳姆》
+“[#现实:非虚构作品]”的魔术师们……[r]是无法应对……这种威胁的……
+[k]
+
+＠濒死的卡特《劳姆》
+“[se ad534][seVolume ad534 0 0.4]第六条……[wt 0.3][seStop ad534 0.2]罪状”……[r]乃是，微不足道……不值一提的罪……
+[k]
+
+＠濒死的卡特《劳姆》
+阿比盖尔，已经舍弃了。[r]舍弃了全部……
+[k]
+
+＠濒死的卡特《劳姆》
+舍弃了人心……言语……希望……
+[k]
+
+[charaPut H 1]
+[charaFadeTime H 0.2 0.6]
+
+＠濒死的卡特《劳姆》
+……咕哦。
+[k]
+
+[messageOff]
+[charaEffect B bit_talk_35]
+[se ad161]
+[flashin once 1.0 1.0 AF3333FF AF333300]
+
+[charaPut H 1200,1200]
+[charaFadeTime H 0.1 1.0]
+[charaDepth H 8]
+[charaScale H 1.0]
+
+[wt 1.0]
+[charaPut B 1200,1200]
+[scene 10000]
+
+[wt 0.5]
+[charaSet C 3031001 1 哪吒]
+[charaSet D 5033001 1 喀耳刻]
+
+[charaSet F 5034001 1 示巴女王]
+
+[charaSet G 25001002 1 阿比盖尔第三再临]
+[charaSet H 1098122600 1 阿比盖尔第三再临]
+
+[bgm BGM_EVENT_41 0.1]
+
+[scene 49602 1.5]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+劳姆被……踩碎了…………
+[k]
+
+＠玛修
+…………阿比……小姐……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠阿比盖尔
+………………
+[k]
+
+＠阿比盖尔
+…………拉维尼娅……
+[k]
+
+＠阿比盖尔
+……拉维尼娅……？[r]………………死掉了啊。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠玛修
+拉维尼娅小姐……
+[k]
+
+？1：（阿比的氛围再次彻底改变……）
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：（喀耳刻，能想想办法吗……）
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠喀耳刻
+…………
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠哪吒
+……啊，阿比……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠示巴女王
+……已经……太晚了。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠喀耳刻
+……嗯。
+[k]
+
+＠喀耳刻
+在我们被劳姆耽搁的这段时间，[r]阿比盖尔已经不再是人类了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠罗宾汉
+[line 3]这样啊。[r]看来只能射杀了啊……！
+[k]
+
+？1：罗[line 3]
+？！
+
+[messageOff]
+[se bac19]
+[charaMoveReturn B 10,0 0.2]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+[wt 0.8]
+[effect bit_talk_GuardMagic]
+[se ad170]
+[wt 2.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠哪吒
+箭矢……无法击中吗。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠罗宾汉
+……[r]算了，我就猜到会是这样。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠阿比盖尔
+…………
+[k]
+
+＠阿比盖尔
+[#史托提丰:Sut-Typhon]……[#史托提丰:Sut-Typhon]……
+[k]
+
+＠阿比盖尔
+其为罪人……[r]乃六个绳结……
+[k]
+
+＠阿比盖尔
+于异端之地寻求赎罪，[r]乃恶魔之收获。
+[k]
+
+＠阿比盖尔
+在此祈求，[r]父神与我同在……
+[k]
+
+＠阿比盖尔
+[#史托提丰:Sut-Typhon]……[#史托提丰:Sut-Typhon]……
+[k]
+
+＠阿比盖尔
+其为罪人……[r]乃七个绳结……
+[k]
+
+＠阿比盖尔
+于炼狱寻求赎罪，[r]乃献给假象之供品……！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad343]
+[effect bit_talk_presage]
+[wt 1.4]
+[seLoop ad61]
+[seVolume ad61 0 0.1]
+[wt 0.1]
+[seLoop ad440]
+[seVolume ad440 0 0.05]
+[seVolume ad440 1.0 1.0]
+[wt 2.5]
+[seStop ad61]
+[seStop ad343 1.5]
+[seStop ad440 0.7]
+[se ad267]
+[charaFace H 0]
+[effectStop bit_talk_presage]
+[charaEffect E bit_talk_powerup]
+[wt 1.0]
+[se ad63]
+[shake 0.03 3 3 1.0]
+[wt 1.0]
+[shake 0.05 6 6 1.0]
+[se ad64]
+[wt 0.5]
+[charaFadein H 1.0 1]
+[wt 1.0]
+[charaFadeout E 1.0]
+[wt 2.5]
+
+＠H：阿比盖尔
+………………
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠示巴女王
+这结界的扭曲……对戒律的违背……[r]这不是魔神……正是虚伪之神……
+[k]
+
+？1：阿比……盖尔……？
+？2：神格降临到她身上了吗……？
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+
+＠H：阿比盖尔
+……痛楚……
+[k]
+
+＠H：阿比盖尔
+…………疼痛……痛苦……
+[k]
+
+＠H：阿比盖尔
+对人类之身而言，最为珍贵的幸福是什么……？
+[k]
+
+＠H：阿比盖尔
+无论是喜悦，还是爱情……[r]都会褪色，消失……
+[k]
+
+＠H：阿比盖尔
+但是……唯有犯下罪孽的意识会残留，[r]永远苛责自己……
+[k]
+
+＠H：阿比盖尔
+哪怕死后化作恶灵，[r]也会成为推进的冲动……
+[k]
+
+[charaFace H 9]
+
+＠H：阿比盖尔
+直至变为丑陋的[#食尸鬼:Ghoul]……
+[k]
+
+＠H：阿比盖尔
+存在毫无罪过的人类吗……？
+[k]
+
+＠H：阿比盖尔
+这世间真的存在不是罪之子的人类吗……？
+[k]
+
+[charaFace H 0]
+
+＠H：阿比盖尔
+那就，赐予其[#报应:Punish]吧。
+[k]
+
+＠H：阿比盖尔
+痛苦带来的切实报应……[r]那才正是唯一的赎罪……
+[k]
+
+＠H：阿比盖尔
+赐予这世间所有人[line 3][r]痛苦[line 3]痛苦[line 3]
+[k]
+
+[charaFace H 1]
+
+＠H：阿比盖尔
+我的喜悦……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_41 1.0]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠玛修
+快住手……阿比……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth H 2]
+[charaDepth G 1]
+[charaBackEffect H bit_talk_06b]
+[se ad42]
+[seVolume ad42 0 0.05]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.1]
+[seVolume ad42 0.4 0.3]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.4]
+
+[charaFadeout H 2.0]
+[wt 1.0]
+[charaBackEffectStop H bit_talk_06b]
+
+＠G：阿比盖尔
+“门”，通往所有时空。[charaSet H 25001002 1 阿比盖尔第三再临][bgm BGM_EVENT_24 0.1]
+[k]
+
+[charaFace G 10]
+
+＠G：阿比盖尔
+对不起……[r]我还……不太熟悉……“门”的使用方法……
+[k]
+
+＠G：阿比盖尔
+啊啊……碍事的结界……害我无法聚焦……[r]无法顺利……传达痛苦……
+[k]
+
+[messageOff]
+[se ad39]
+[effect bit_talk_warp_failed]
+[charaMove G 20,0 0.3]
+[wt 0.4]
+[se ade63]
+[wt 0.66]
+[se ad39]
+[charaMove G -40,-15 0.5]
+[wt 0.46]
+[se ade63]
+[wt 0.4]
+[charaMove G 0,0 0.3]
+[wt 0.2]
+[se ad39]
+[charaMove G 0,12 0.4]
+[wt 0.6]
+[se ade63]
+[seStop ad39 0.4]
+[wt 0.3]
+[charaMove G 0,0 0.2]
+[wt 0.2]
+[wait effect bit_talk_warp_failed]
+
+[charaFace G 4]
+＠G：阿比盖尔
+这样啊……无法传递给外界啊……[r]我明明正在搜寻罪孽最为深重的人们……
+[k]
+
+＠G：阿比盖尔
+那就……通过结界本身，[r]将痛苦送进……魔术师们的心脏……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠玛修
+快住手……！！
+[k]
+
+？1：……阿比盖尔
+？2：你……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+
+＠H：阿比盖尔
+和玛修小姐不同，[r]团长能够理解我吧……
+[k]
+
+？1：你不必成为邪恶之神。
+？！
+
+＠H：阿比盖尔
+可是所有人都在渴望拯救哦……？[r]你的喜悦[line 3][charaFace H 1]就是我的喜悦哦？
+[k]
+
+？1：我的喜悦，是能拯救你。
+
+[charaFace H 8]
+
+＠H：阿比盖尔
+…………拯救……我？
+[k]
+
+[charaFace H 10]
+？2：无论是什么人，光是活着就已经非常痛苦了啊。
+
+[charaFace H 10]
+
+＠H：阿比盖尔
+真可怜……[r]这太可怜了……
+[k]
+
+＠H：阿比盖尔
+完全，不够啊……
+[k]
+
+？！
+
+＠H：阿比盖尔
+我无法离开这里[r]……我是绝对无法离开塞勒姆的。
+[k]
+
+＠H：阿比盖尔
+因为我的罪，还沉眠于这片土地上。
+[k]
+
+＠H：阿比盖尔
+那只要将全部……都化为塞勒姆就行了。[r]我[charaFace H 4]会将一切连接起来[line 3]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠哪吒
+―――[#主人:御主]。
+[k]
+
+＠哪吒
+讨伐　那个伪神吧[line 3]
+[k]
+
+？1：哪吒……
+？！
+
+[charaFace C 5]
+＠哪吒
+那　并非　阿比盖尔。[r]那是　邪神　虚伪之神。
+[k]
+
+＠哪吒
+如若堕落的阿比盖尔[r]真的拥有　无秽的强大……
+[k]
+
+＠哪吒
+那么哪怕打倒她之后，[r]也肯定　会留下　什么……！
+[k]
+
+[charaFace C 2]
+
+＠哪吒
+吾之魂魄的形式　就是证据！！
+[k]
+
+？1：我明白了……！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠H：阿比盖尔
+没错，是一切哦[line 3]
+[k]
+
+＠H：阿比盖尔
+无论是英格兰、罗马，还是耶路撒冷……[r]我会将一切连接起来。
+[k]
+
+＠H：阿比盖尔
+然后，赐予如此无穷无尽，永劫的[#痛苦:pain][line 3][r][#痛苦:pain]、[#痛苦:pain]、[#痛苦:pain][line 3]！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,271 @@
+
+＄03-00-09-02-1-1
+
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 3039000 1 加雷斯]
+[charaSet B 5045000 1 阿尔托莉雅]
+[charaSet C 1098209600 1 奥伯龙]
+[charaSet D 1049000 1 千子村正]
+[charaSet E 1098210300 0 1]
+[charaSet F 1098210300 0 1]
+[charaSet G 1098210300 0 1]
+[charaSet H 1098212330 1 诺克娜蕾]
+[charaSet I 1098212330 1 诺克娜蕾_剪影]
+[charaFilter I silhouette 00000080]
+
+[scene 120500]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠加雷斯
+咦，奇怪？[r]感觉大家都没有麻痹呀？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠阿尔托莉雅
+抱歉啦，加雷斯亲，我们完全没事……[r]估计这里面什么毒都没有吧……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠奥伯龙
+嗯，没错没错。[r]坊间传闻的所谓巧克力中毒，
+[k]
+
+＠奥伯龙
+其实是指“过于美味实在难以忘怀受不了啊。”[r]“好，既然能吃到巧克力，那就去北方吧。”
+[k]
+
+＠奥伯龙
+这种意思吧。[r]应该不是指肉体层面的负面影响哦～。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad182]
+[se ade13]
+[seVolume ade13 0 0.3]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠加雷斯
+真的耶！[r]非常好次！
+[k]
+
+＠加雷斯
+又甜又脆，很容易入口，[r]也不会感到口渴！　简直震撼大脑！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠奥伯龙
+哈哈哈哈。不过这东西很稀缺，[r]而这里的确是诺克娜蕾的田地。
+[k]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+＠奥伯龙
+所以如果未经允许就试吃的话，你们瞧[line 2]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se adm76]
+[seVolume adm76 0 0]
+[seVolume adm76 1.5 0.7]
+[wt 2.0]
+[seStop adm76 0.5]
+
+[bgm BGM_EVENT_80 0.1]
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+
+＠千子村正
+糟糕，一群大军从山丘对面过来了！[r]不过……那是什么？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth F 2]
+[charaDepth G 3]
+
+
+[cueSe SE_21 ad1025]
+[charaFace E 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein E 0.2 -280,0]
+[charaMove E -300,0 0.2]
+[wt 0.1]
+
+[charaFadein F 0.2 20,0]
+[charaMove F 0,0 0.2]
+[wt 0.1]
+
+[charaFadein G 0.2 320,0]
+[charaMove G 300,0 0.2]
+[wt 0.2]
+
+＠谜之士兵们
+Weeeeeeeeeeeei！！！！[r]Hohooooooooooi！！！！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠阿尔托莉雅
+被包围了……！　这数量……[r]唔唔，这股蜂蜜般的魔力威压是……！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth I 2]
+[charaDepth H 1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.4 1]
+[wt 0.4]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+＠？？？
+到此为止啦，你们这群以为在游山玩水的无耻之徒！
+[k]
+
+＠？？？
+竟敢在我的田园里面大肆喧闹，[r]真是不知天高地厚。
+[k]
+
+＠？？？
+难道是打算到下代下代的再下代为止[r]都当我的奴隶吗！
+[k]
+
+？1：这，这声音是[line 3]
+？2：不会错！
+
+？！
+
+[messageOff]
+[charaFadeout I 1.0]
+[wt 1.5]
+
+[bgm BGM_EVENT_62 0.1]
+
+＠H：？？？
+没错，还不快浑身颤抖跪拜在地？
+[k]
+
+＠H：？？？
+无论哪个穷乡僻壤的妖精，只要面对这美貌，[r]自然就知道我是谁了吧。
+[k]
+
+＠H：？？？
+所以说[line 3]
+[k]
+
+[charaFace H 7]
+＠H：？？？
+以女王诺克娜蕾之名，[r]处罚巧克力盗贼！
+[k]
+
+＠诺克娜蕾
+侵吞国家财产罪、走私重要文化罪、[r]吃霸王餐罪、侮辱女王罪，四罪并罚！
+[k]
+
+＠诺克娜蕾
+命令你们完成为期100年的[r]包装巧克力工作后，
+[k]
+
+＠诺克娜蕾
+领取与劳动时间相符之养老金，[r]并在爱丁堡生活下去！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠阿尔托莉雅
+果然……！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+[wt 0.5]
+
+？1：是女王梅芙……！
+？2：耶～！　梅芙亲最棒啦～！
+
+？！
+
+[charaFace H 12]
+
+＠诺克娜蕾
+……什么？
+[k]
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

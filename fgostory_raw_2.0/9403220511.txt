@@ -1,0 +1,290 @@
+
+＄94-03-22-05-1-1
+[soundStopAll]
+
+
+[charaSet A 1035001 1 迪尔姆德]
+[charaSet B 1037000 1 红阎魔]
+[charaSet C 5003000 1 玉藻前]
+[charaSet D 3011000 1 芬恩·麦克库尔]
+[charaSet E 8001410 1 玛修]
+[imageSet I cut063_cinema 1]
+[charaSet J 5009000 1 特效用dummy]
+
+[charaScale I 1.01]
+
+[scene 70200]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠迪尔姆德
+[f large]这座山好可怕！
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_35]
+[charaShake A 0.05 4 4 0.4]
+[se ad240]
+[wt 1.5]
+[charaFadeout A 0.4]
+[charaMove A 0,-30 0.4]
+[wt 0.4]
+[se ad144]
+[seVolume ad144 0 0.4]
+[wt 1.0]
+
+？1：迪尔姆德[line 4]！？
+？2：我理解。
+
+？！
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.2 0,-50]
+[charaMove A 0,0 0.2]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠迪尔姆德
+不过，总算是捡回了一条小命。
+[k]
+
+＠迪尔姆德
+虽然只是野兽，但是强大的野猪依然很恐怖啊……[r]我迪尔姆德得到了宝贵的经验。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠红阎魔
+干得漂亮啾。尽管只是凭蛮力挥剑啾，[r]但从中也能看出久经磨练的招式啾。
+[k]
+
+＠红阎魔
+不只是臂力，双腿也锻炼得很好啾。[r]我并不讨厌跳来跳去啾。
+[k]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+？1：话说回来，凶暴的野兽是不是太多了……
+
+？！
+
+[charaFace B 4]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠红阎魔
+……这些还算是温顺的啾。
+[k]
+
+＠红阎魔
+在阎魔亭的兴盛时期，[r]这里就已有神兽和幻兽乱闹了啾……
+[k]
+
+＠红阎魔
+如今客人少了，信仰衰弱了，[r]也不再有误入此处的人类了……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠玉藻前
+[line 6]
+[k]
+
+[charaFace C 1]
+
+＠玉藻前
+好啦好啦。[r]山里变安静了不是挺好吗？
+[k]
+
+＠玉藻前
+客流的问题有[%1]大人帮忙想办法啦。
+[k]
+
+＠玉藻前
+红阎魔老师还请放宽心吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 0]
+[charaFace C 1]
+[charaFadein C 0.1 2]
+
+＠红阎魔
+竟然如此从容啾……[r]明明玉藻也会遭天罚啾……
+[k]
+
+[charaFace C 0]
+
+＠玉藻前
+这是因为我咪咕地♪[r]信任御主啊。
+[k]
+
+＠玉藻前
+尽管得到过诸多奇迹的助力，[r]但御主毕竟是曾修复了人理存在。
+[k]
+
+＠玉藻前
+善良的灵魂会引来美好的缘分。[r]我完全不担心天罚♡
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠红阎魔
+是这样啾。那么以后，[r]食材收集的任务就交给各位了啾。
+[k]
+
+＠红阎魔
+若对手是巨大的野兽，[r]麻雀们组队后也可以与之对抗，
+[k]
+
+[messageOff]
+[wipeout rollFlashRight 1.0 1.0]
+[bgmStop BGM_EVENT_70 1.0]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaFadein I 0.1 0,-200]
+[scene 37310]
+[wt 1.0]
+[wipein rollFlashRight 1.0 1.0]
+[wt 1.0]
+[bgm BGM_EVENT_63 0.1]
+[wait wipe]
+
+＠负责背大剑的麻雀
+前卫就交给我啾。[r]让我用蓄力了三天的一击重创它啾。
+[k]
+
+＠负责背大弓的麻雀
+牵制就交给我啾。[r]我会不管周围情况一直放广域弹啾。
+[k]
+
+＠负责背枪盾的麻雀
+只有我要活到最后啾。[r]我打算用这种战术进行周旋啾。
+[k]
+
+＠负责接待的麻雀
+一起前去战斗吧，搭档！　啾。[r]（※本人其实并不会上场。）
+[k]
+
+[messageOff]
+[wipeout rollFlashRight 1.0 1.0]
+[bgmStop BGM_EVENT_63 1.0]
+[wait wipe]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaFadeout I 0.1]
+[scene 70200]
+[wt 1.0]
+[wipein rollFlashRight 1.0 1.0]
+[wt 1.0]
+[bgm BGM_EVENT_70 0.1]
+[wait wipe]
+
+＠红阎魔
+但是麻雀们对于比自己[r]『稍微大一点』的对手就无能无力了啾。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠芬恩·麦克库尔
+嗯。也就是说魔猿们是麻雀们的天敌吧？[r]它们是从什么时候开始出现的？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠红阎魔
+从大约一百年前起，魔猿就在这里了啾，[r]但是作恶是最近才开始的啾。
+[k]
+
+＠红阎魔
+大概是因为人类世界变得不适宜居住了，[r]所以才集体逃到阎魔亭来的啾。
+[k]
+
+＠红阎魔
+我其实并不想赶走这些走投无路的魔猿啾……
+[k]
+
+[charaFace B 4]
+
+＠红阎魔
+但如果它们变得进一步残暴，[r]我就不得不考虑驱逐它们了啾。
+[k]
+
+[charaFace B 1]
+
+＠红阎魔
+哎哟，这些话可不该对客人们说啾。
+[k]
+
+＠红阎魔
+我先行一步回阎魔亭啾。
+[k]
+
+＠红阎魔
+既然各位都付出了辛勤的劳动，[r]那晚饭就给大家准备丰盛的野猪火锅啾！
+[k]
+
+[messageOff]
+[se ad536]
+[charaFadeout B 0.3]
+[wt 1.0]
+[seStop ad536 0.3]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠玛修
+……红阎魔小姐也很为魔猿们着想呢……
+[k]
+
+＠玛修
+解除我们的诅咒固然重要，[r]但阎魔亭本身的问题也很令人在意呢，御主……
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

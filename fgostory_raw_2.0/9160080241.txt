@@ -1,0 +1,431 @@
+
+
+
+＄91-60-08-02-4-1
+
+[soundStopAll]
+
+[charaSet A 6008000 1 克娄巴特拉]
+[charaSet B 1013001 1 恺撒]
+[charaSet C 5012001 1 尼托克丽丝]
+
+[charaSet D 1001000 1 特效用]
+[charaDepth D 1]
+
+[charaSet E 98115000 1 恺撒里昂的声音]
+
+
+[scene 21101]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut D 1]
+
+[se ad33]
+[effect bit_talk_kengekiall02]
+[wt 1.0]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[cueSe Battle bac216]
+[charaEffect D bit_talk_radiallight01]
+[charaEffect A bit_talk_valentine_brilliant]
+[wt 1.0]
+[cueSeStop Battle bac216 0.1]
+
+
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,20 0.2]
+[se ad73]
+[wt 0.3]
+
+[charaFadeout A 0.1]
+[charaPut D 1200,1200]
+[wt 0.5]
+
+
+[fadeout white 0.7]
+[wait fade]
+
+[cueSe Battle bac215]
+
+[charaScale A 1.0]
+
+[charaFadeout A 0.1]
+[charaEffectStop D bit_talk_radiallight01]
+[charaEffectStop A bit_talk_valentine_brilliant]
+[wt 1.7]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+[fadein white 0.5]
+[wait fade]
+
+[wt 0.3]
+[se ad7]
+[charaMoveReturn B 0,5 0.2]
+[charaMoveScale B 0.95 0.2]
+[wt 0.2]
+
+
+[charaFace B 2]
+＠恺撒
+不……不可能……！
+[k]
+
+
+＠恺撒
+居然看穿了我的黄金剑……！[r]原来如此，确实……
+[k]
+
+
+＠恺撒
+就算我能轻巧挥剑到令我自己都感到震惊，[r]凭借这个体型也是有极限的啊[line 3]
+[k]
+
+[messageOff]
+[wt 0.3]
+[bgmStop BGM_EVENT_3 0.7]
+
+[charaFace B 1]
+[wt 1.0]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaEffect B bit_talk_06]
+[wt 1.0]
+
+＠恺撒
+干得漂亮。[r]克娄巴特拉。还有御主。
+[k]
+
+[charaFace B 4]
+
+
+＠恺撒
+在我消失之后……克娄巴特拉……克娄巴特拉……！
+[k]
+
+＠恺撒
+就……拜托你了，再见……！[r]啊啊……恺撒里昂，我现在就去你那边！
+[k]
+
+
+＠恺撒里昂的声音
+（不，其实你不用过来啦。）
+[k]
+
+[messageOff]
+[charaTalk B]
+
+
+[bgmStop BGM_EVENT_70 2.8]
+
+[se ad52]
+[charaSpecialEffect B flashErasure 1 1.7]
+[wait charaSpecialEffect B]
+[charaEffectStop B bit_talk_06]
+[wt 0.7]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠克娄巴特拉
+哎[line 3]
+[k]
+
+[bgm BGM_EVENT_41 0.1]
+
+＠克娄巴特拉
+[messageShake 0.05 5 5 0.5]
+骗……骗人，骗人骗人骗人骗人骗人！？[r]恺撒大人要……要消失了……[wt 0.3][charaFace A 4]怎么会……[line 3]
+[k]
+
+＠克娄巴特拉
+啊啊……！[r]啊啊，啊，啊啊啊……妾身……我……！
+[k]
+
+＠克娄巴特拉
+究竟做了……什么……！
+[k]
+
+
+[charaFace A 2]
+＠克娄巴特拉
+[messageShake 0.01 5 5 0.7]
+恺撒大人[line 8]！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 506,0]
+
+[bgmStop BGM_EVENT_41 0.1]
+
+＠尼托克丽丝
+……[r]……
+[k]
+
+[se ad173]
+[charaMove C 0,0 1.2]
+[wait charaMove]
+[seStop ad173 0.1]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaFace C 0]
+＠尼托克丽丝
+其实一直在场的我觉得那个应该不用担心啦。[r]他只是灵体化了而已，并没有消灭。
+[k]
+
+[charaFace C 4]
+＠尼托克丽丝
+再说这里是模拟装置啊，嗯。[r]若非发生重大事故，是不会消灭的。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠克娄巴特拉
+哎哎！？[r]但……但是您看，恺撒大人那样闪闪发光！
+[k]
+
+[charaFace A 4]
+＠克娄巴特拉
+会那样闪闪发光，[r]不是只有在灵核遭破坏完全消灭的时候吗……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+
+＠尼托克丽丝
+这是因为那个……克娄巴特拉。[r]他或许和你一样，也拥有熠熠生辉的魅力，
+[k]
+
+[charaFace C 4]
+＠尼托克丽丝
+或是因为毕竟曾和你在一起过，所以具备这种要素，[r]诸如此类吧。说这些都让我觉得心累。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠克娄巴特拉
+！
+[k]
+
+[charaFace A 4]
+＠克娄巴特拉
+怎……怎么会这样……[r]那也就是说妾身再次被恺撒大人！
+[k]
+
+？1：被他溜了呢。
+？2：真遗憾！
+
+？！
+
+[charaFace A 2]
+＠克娄巴特拉
+[messageShake 0.05 5 5 0.7]
+唔唔唔唔唔唔唔唔唔，怎么会这样！[r]因为过于闪闪发光了，妾身还以为……！
+[k]
+
+
+[messageOff]
+
+[wt 0.5]
+
+[bgmStop BGM_EVENT_7 0.7]
+[charaFace A 1]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_6 0.1]
+
+[charaFace A 0]
+＠克娄巴特拉
+……没办法了。法老不能哭哭啼啼的。[r]不，虽说以前曾心情低落到无可救药的程度。
+[k]
+
+＠克娄巴特拉
+但恺撒大人说的话也有一点道理。[r]嗯，说得也是。
+[k]
+
+＠克娄巴特拉
+御主。[r]妾身在当世找到的吾之第一秘书啊。
+[k]
+
+[charaFace A 2]
+
+
+＠克娄巴特拉
+好不容易将你提升到秘书的水准！[r]如果不能让你随侍妾身左右的时光变得更为快乐，
+[k]
+
+[charaFace A 3]
+＠克娄巴特拉
+不就有辱法老的名号了嘛。[r]对吧？　嗯，没错，你不用回答！
+[k]
+
+[charaFace A 2]
+＠克娄巴特拉
+啊啊，庆幸能成为妾身的秘书！[r]庆幸能召唤到妾身！
+[k]
+
+[charaFace A 0]
+＠克娄巴特拉
+在你由衷这么想之前，嗯。[r]完全实现妾身愿望的事就先暂且搁置吧。
+[k]
+
+？1：那么，不用让恺撒变瘦了吗？
+
+？！
+
+[messageOff]
+[wt 0.1]
+[bgmStop BGM_EVENT_6 0.7]
+[charaFace A 1]
+[wt 1.0]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠克娄巴特拉
+不！
+[k]
+
+＠克娄巴特拉
+一事归一事！
+[k]
+
+[charaFace A 2]
+＠克娄巴特拉
+好了，在日落之前，让我们先享受海边风光吧！[r]把玛修也叫来吧，还有尼托克丽丝大人！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+
+＠尼托克丽丝
+知道啦知道啦。
+[k]
+
+
+[charaFace A 5]
+＠克娄巴特拉
+让这秘书好好领教什么叫[r]双法老的光辉，没问题吧！
+[k]
+
+[charaFace C 8]
+＠尼托克丽丝
+哎……
+[k]
+
+[charaFace A 2]
+＠克娄巴特拉
+没问题吧！
+[k]
+
+[charaFace C 2]
+＠尼托克丽丝
+啊啊，真是的，我知道了啦。[r]我知道了还不行吗！
+[k]
+
+＠克娄巴特拉
+感谢您能这样回答！　不愧是天空的女王！
+[k]
+
+[charaFace A 1]
+＠克娄巴特拉
+那么，首先[line 3]得换上泳装才行呢。[r]去寻找最适合妾身的最棒泳装[line 3]
+[k]
+
+[charaFace C 1]
+＠尼托克丽丝
+啊。那我倒是有个主意。[r]这运用新素材制作的梅杰德大人的……
+[k]
+
+[charaFace A 2]
+
+
+＠克娄巴特拉
+不用了！[r]妾身还没有自信能配得上梅杰德大人的品味！
+[k]
+
+[charaFace A 4]
+
+
+＠克娄巴特拉
+现阶段先这样……
+[k]
+
+[charaFace C 4]
+[charaShake C 0.05 3 3 0.3]
+＠尼托克丽丝
+[se ad119]
+（受打击！）
+[k]
+
+[charaFace A 2]
+
+＠克娄巴特拉
+妾身的目标是巴黎时装周的前沿艺术！
+[k]
+
+＠克娄巴特拉
+妾身我，无论做什么都要全力散发光辉！[r]只有这点，是无论如何都是无法阻止的！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠克娄巴特拉
+[line 4]来吧！　大家一起出发吧！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

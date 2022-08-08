@@ -1,0 +1,626 @@
+
+＄03-00-03-06-2-1
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 玛修]
+[charaSet B 9005001 1 福尔摩斯]
+[charaSet C 1098124500 1 达·芬奇]
+[charaSet D 6011001 1 匕见]
+[charaSet E 98002000 1 芙芙]
+[charaSet F 1098159400 1 芥雏子]
+[charaSet G 1036001 1 兰陵王]
+[charaSet H 98115000 1 特效用]
+
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 69200]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[se ad33]
+[backEffect bit_talk_Slash_white_01_L]
+[wt 0.3]
+[effect bit_talk_ichimon01wh]
+[wt 0.4]
+[backEffect bit_talk_Slash_white_01]
+[wt 0.5]
+[seStop ad33 0.3]
+[se ad32]
+[fowardEffect bit_talk_14]
+[wt 0.1]
+
+[charaScale D 1.1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[charaShake D 0.03 4 4 0.6]
+[charaMoveScale D 1.0 0.4]
+[wt 1.2]
+
+[charaPut H 1]
+[charaEffect H bit_talk_41]
+[se ad7]
+[se ad171]
+[charaMoveScale D 1.2 0.2]
+[charaMove D 0,20 0.2]
+[charaFadeout D 0.3]
+[wt 0.1]
+[effect bit_talk_v_slash01]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_41]
+[wt 0.2]
+[se ad467]
+[wt 0.5]
+
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[charaScale G 1.05]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 0,10]
+[charaShake G 0.03 4 4 0.6]
+[charaMoveScale G 1.0 0.4]
+[charaMove G 1 0.4]
+[wt 0.1]
+[seStop ad671 0.8]
+[wt 0.8]
+
+＠G：？？？
+呜，可恶，[r]在我的鼓舞之下，居然还有无法攻破的军队！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaScale D 1.0]
+
+
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠福尔摩斯
+戴着假面增幅统率力，[r]对友军造成诅咒级别的影响力[line 3]
+[k]
+
+＠福尔摩斯
+不会错，那名Saber的真名是兰陵王！[r]是北齐的高长恭！
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+＠芥雏子
+Saber，退下！　重整态势！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠G：兰陵王
+但是……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFace G 5]
+[charaFadein F 0.1 0]
+[charaFadein G 0.1 2]
+
+＠芥雏子
+既然连下决心使用宝具都无法抓住胜机的话，[r]我们是没有胜算的。是战略本身有问题。
+[k]
+
+＠G：兰陵王
+是，我知道了。
+[k]
+
+[charaTalk off]
+[messageOff]
+[bgmStop BGM_EVENT_80 1.0]
+[charaEffect G bit_talk_quickmove]
+[charaEffect F bit_talk_quickmove]
+[charaSpecialEffect F erasureReverse 1 0.3]
+[charaSpecialEffect G erasureReverse 1 0.3]
+[se ad73]
+[wt 1.5]
+
+[charaSet F 1009001 1 莫德雷德]
+[charaSet G 7005001 1 斯巴达克斯]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+敌方从者与御主撤退了。[r]……这次也挺过来了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaMoveReturn E 0,30 0.4]
+＠芙芙
+芙，芙呜！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠匕见
+没事吧，[%1]？[r]以你现在的身体状态，战斗是不是太勉强了……
+[k]
+
+？1：没问题，就只是有点发烧而已。
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠斯巴达克斯
+噢噢，这才不愧为我的[#主人:御主]，[r]我要称赞这份反叛病毒的骨气！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+？2：唔，稍微有点吧……
+
+＠匕见
+千万不可勉强。这次召集的从者[r]都是些不在乎魔力消耗的粗线条啊。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？！
+
+[charaSet E 3031001 1 莲偶]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠莫德雷德
+话说回来，这些敌兵都很没意思啊。
+[k]
+
+＠莫德雷德
+这里的国王难道就用那种骗小孩的傀儡人偶打仗吗？
+[k]
+
+？1：居然是从咸阳补充武装……
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+＠达·芬奇
+嗯，还以为无法输送士兵呢，[r]真是出人意料。
+[k]
+
+[charaFace C 14]
+
+＠达·芬奇
+原来如此，既然不是血肉之躯的士兵，[r]就算用那种粗鲁的火箭运送也死不了呢。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+
+[charaFace C 14]
+[charaFadein C 0.1 2]
+
+＠福尔摩斯
+能回收敌人的残骸吗？[r]我想要研究一下。
+[k]
+
+[charaFace C 25]
+
+＠达·芬奇
+表面上看起来像是自动人偶那类吧。[r]尽管此前我们已经与类似的敌人战斗过很多次了。
+[k]
+
+＠福尔摩斯
+我对它们的运作原理很感兴趣。[r]或许会成为摸清这世界架构的线索。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠莲偶
+……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠匕见
+怎么了，莲偶？　有什么在意的事吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠莲偶
+……嗯，或许吧。
+[k]
+
+＠莲偶
+稍后也请让我看一看刚才敌人的残骸。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_81 1.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaSet A 1098123330 1 高扬斯卡娅]
+[charaSet B 1098160700 1 卫士长]
+[charaSet C 98115000 1 ？？？]
+[charaSet F 1098159410 1 芥雏子]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_china]
+
+[scene 65800]
+[wt 1.0]
+
+[wipeFilter cinema 0.5 0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_97 0.1]
+
+＠？？？
+朕已看到汝等的战斗方式了。
+[k]
+
+＠？？？
+无需进行第三次交战。[r]仅凭汝之从者单骑是难以取胜的。对吧？
+[k]
+
+[charaPut H 0,-50]
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 0,-50]
+＠芥雏子
+是……
+[k]
+
+[charaFadeout F 0.1]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+＠？？？
+那便向汝派去增援吧。[r]然而从者乃是异能魔将。
+[k]
+
+＠？？？
+即便派出一两百杂兵也无济于事……[r]对了，[#汝的重瞳如何]？
+[k]
+
+[charaPut H 0,-50]
+[charaTalk F]
+[charaFace F 15]
+[charaFadein F 0.1 0,-50]
+＠芥雏子
+派会……重瞳大人！？　但那……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+＠？？？
+确实，在朕的执政之下，[r]如今他仍是有用的能臣。
+[k]
+
+＠？？？
+但他原本就是只有在面对未知敌人时，[r]才能发挥出十二分机能的棋子。
+[k]
+
+＠？？？
+当前情况下，将其留在咸阳暴殄天物未免可惜。[r]因此就将他交由汝吧。汝可要充分使用他哦。
+[k]
+
+[charaPut H 0,-50]
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 0,-50]
+＠芥雏子
+遵……遵命，此乃不敢奢望的恩赐，不胜惶恐。皇帝陛下。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+＠？？？
+不过嘛，若要将那个派上前线，[r]朕也得做好相应准备才行。需要一些时间。
+[k]
+
+＠？？？
+汝等继续保持监视，继续牵制[r]迦勒底势力，以免其做出危险之举。
+[k]
+
+[charaPut H 0,-50]
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 0,-50]
+＠芥雏子
+是，遵命。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_97 1.0]
+[wt 0.1]
+[se ad1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_china]
+[wt 1.0]
+
+[se ad95]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 0,-50]
+[wt 0.4]
+[seStop ad95 0.1]
+＠高扬斯卡娅
+真是的，小芥居然那么欢欣雀跃。[r]没想到她还有这么可爱的一面呢。
+[k]
+
+[bgm BGM_EVENT_90 0.1]
+
+＠高扬斯卡娅
+话说回来……这时候派出重瞳啊。[r]陛下，您的玩心是否过重了？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+这还真是奇怪。汝是说朕在玩耍吗？　高楠斯嘎。
+[k]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-50]
+
+＠高扬斯卡娅
+是高扬斯卡娅。
+[k]
+
+[charaFace A 7]
+＠高扬斯卡娅
+如果您当真要把迦勒底视为威胁，[r]那用确实牢靠的一击解决他们才是王道。
+[k]
+
+＠高扬斯卡娅
+对陛下而言，这甚至算不上是『举手之劳』。[r]只需动一动小指便能搞定了吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+确实。
+[k]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠高扬斯卡娅
+然而您却刻意做出将战局托付给芥雏子的判断。
+[k]
+
+＠高扬斯卡娅
+而且看似大手一挥扔出了王牌，[r]实际上却并不是能成为决胜招的稳健一棋。
+[k]
+
+＠高扬斯卡娅
+难道陛下揣度的并非敌人，而是友方……[r]也就是在揣度芥雏子？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+确实如此。看得出迦勒底一党[r]不过是困兽犹斗罢了。
+[k]
+
+＠？？？
+因此，一切取决于芥。[r]朕想看看她在发现胜算时会如何出招。
+[k]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+＠高扬斯卡娅
+（果然我和小芥的信用度都是零吗。[r]　唉，毕竟是异闻带之王？）
+[k]
+
+＠高扬斯卡娅
+（会有这般精准的直觉也很正常……[r]　而且真搞不懂这位大人到底有几分认真。）
+[k]
+
+＠高扬斯卡娅
+（真是的……[r]　[#看不到脸]这点还挺麻烦的。）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+不过这个暂且不谈，那些名为从者的武将。[r]朕本以为是普通鬼魂，根本没放在眼里，现在看来还挺能干嘛。
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠高扬斯卡娅
+嗯。是与陛下培养的秦帝国仙术系统截然不同的魔术。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+＠卫士长
+不就是让曾经建功立业的死者还魂并加以使役的术式吗。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠高扬斯卡娅
+与普通的死灵术的不同点，[r]就在于要获得英灵的同意才能缔结契约吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+当那边的世界面临危机时，[r]为此担忧的过去亡者会主动现身拔刀相助……
+[k]
+
+＠？？？
+应该这样理解吧？　高粱吉娃娃。
+[k]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+＠高扬斯卡娅
+是，您真是明察秋毫。[r]还有我是高扬斯卡娅。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+唔嗯，竟有如此令人不快之事。
+[k]
+
+＠？？？
+居然存在这种连死者们都无法得到安息的[r]危如累卵的世界史。
+[k]
+
+＠？？？
+朕的治世下不存在什么英灵。[r]身怀荣誉赴死之人，是不可能为这泰平之世而忧烦的。
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠高扬斯卡娅
+说得也是。毕竟这个世界根本不存在[r]让抑止力之类的存在所运作的基盘呢。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+但是放任[#宾客:异乡来客]们使役的鬼魂们[r]肆意妄为同样令朕怒火难平。
+[k]
+
+＠？？？
+在朕之麾下可是沉眠着比死去的英灵之流[r]更为勇猛的英杰。是吧？　卫士长。
+[k]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+＠卫士长
+是，陛下所言极是。面临国难之际，[r]属下认为应当召集沉眠于骊山的英杰们。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠？？？
+这也莫可奈何。权当以防万一。[r]朕下令，让冻眠的英雄们苏醒吧。
+[k]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-50]
+＠卫士长
+遵旨！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+＠高扬斯卡娅
+哇哦，终于有干劲了吗？
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_90 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,853 @@
+
+
+
+＄03-00-08-08-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5045000 1 阿尔托莉雅]
+[charaSet B 1098124500 1 达·芬奇]
+
+[charaSet C 1098209640 1 奥伯龙]
+
+[charaSet D 1049000 1 千子村正]
+
+[charaSet E 4031000 1 瑞德拉·比特]
+
+[charaSet F 1098211500 1 威尔士的妖精A]
+[charaSet G 1098211600 1 威尔士的妖精B]
+
+[charaSet I 1098211500 1 威尔士的妖精_人型]
+[charaSet J 1098211600 1 威尔士的妖精_虫型]
+
+[charaSet N 98115000 1 特效用]
+
+[sceneSet H 10000 1]
+[charaScale H 1.01]
+
+[sceneSet K 118600 1]
+[charaScale K 1.4]
+
+[scene 118600]
+[charaFadein K 0.1 200,-400]
+
+[se ad462]
+[seVolume ad462 0 0]
+[seVolume ad462 1.0 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+[charaMove K -200,-200 8.0]
+[wt 7.0]
+[charaFadeout K 1.0]
+[seStop ad462 2.0]
+[wt 2.0]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠奥伯龙
+到啦。[r]这里就是我的领地，威尔士的『秋之森』！
+[k]
+
+？1：确实层林尽染……！
+？2：（看起来既没有城市，也没有村庄……）
+
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaSet C 1098209600 1 奥伯龙]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 2]
+[charaDepth I 3]
+[charaDepth G 4]
+[charaDepth J 5]
+
+[cueSe SE_21 21_ad1094]
+[seVolume 21_ad1094 0 0.5]
+[charaTalk off]
+[charaFace F 1]
+[charaFace G 1]
+[charaFace I 1]
+[charaFace J 1]
+[charaFadeinFSSideR F 0.4 450,0]
+[charaFadein G 0.4 200,-50]
+[charaFadeinFSSideL I 0.4 -450,0]
+[charaFadein J 0.4 -200,-50]
+
+[charaMoveFSSideR F 350,0 0.4]
+[charaMove G 150,0 0.4]
+[charaMoveFSSideL I -350,0 0.4]
+[charaMove J -150,0 0.4]
+
+[wt 1.5]
+
+[charaTalk on]
+
+[cueSe Servants_603100 bac554]
+[seVolume bac554 0 0.5]
+[charaMoveReturnFSSideR F 350,10 0.2]
+＠F：威尔士的妖精A
+[image npc_language_5:！　是奥伯龙大人，是奥伯龙大人！][wt 0.2][charaMoveReturnFSSideR F 350,10 0.2][r][image npc_language_5:大家，奥伯龙大人回来啦———！][seStop bac554 1.0]
+[k]
+
+[charaMoveReturn J -150,10 0.2]
+＠J：威尔士的妖精B
+[image npc_language_5:说来听听！　说来听听！][wt 0.2][charaMoveReturn J -150,10 0.2][r][image npc_language_5:将外面大家的事情说来听听！]
+[k]
+
+
+[messageOff]
+[cueSe Servants_603100 bac554]
+[seVolume bac554 0 0.5]
+[charaTalk off]
+[charaMoveReturnFSSideR F 350,10 0.25]
+[wt 0.2]
+[charaMoveReturn J -150,10 0.25]
+[wt 0.2]
+[seStop bac554 1.0]
+
+[charaMoveReturnFSSideL I -350,10 0.25]
+[wt 0.2]
+[charaMoveReturn G 150,10 0.25]
+[wt 0.8]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠奥伯龙
+大家，我回来了。[r]今天我带来了客人哦。
+[k]
+
+＠奥伯龙
+与我立场相同，[r]见证者，[%1]。
+[k]
+
+＠奥伯龙
+万能的天才兼楚楚可怜的女孩子，达·芬奇。[r]多半会帮大家制作各种东西的，亲切的村正。
+[k]
+
+＠奥伯龙
+以及『预言之子』，阿尔托莉雅。
+[k]
+
+＠奥伯龙
+怎么样？　哪怕这里是被抛弃的土地，[r]『预言之子』还是会来的。
+[k]
+
+＠奥伯龙
+我没骗你们吧？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[cueSe SE_21 21_ad1094]
+[seVolume 21_ad1094 0 0.5]
+[charaFadeinFSSideR F 0.1 350,0]
+[charaFadein G 0.1 150,0]
+[charaFadeinFSSideL I 0.1 -350,0]
+[charaFadein J 0.1 -150,0]
+[charaMoveReturnFSSideR F 350,10 0.25]
+[wt 0.1]
+[charaMoveReturn J -150,10 0.25]
+[wt 0.1]
+[charaMoveReturnFSSideL I -350,10 0.25]
+[wt 0.1]
+[charaMoveReturn G 150,10 0.25]
+[wt 0.8]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth F 2]
+[charaDepth I 3]
+[charaDepth G 4]
+[charaDepth J 5]
+
+[charaFace F 1]
+[charaFace G 0]
+[charaFace I 0]
+[charaFace J 1]
+[charaFadeinFSSideR F 0.4 350,0]
+[charaFadein G 0.4 220,-50]
+[charaFadeinFSSideL I 0.4 -350,0]
+[charaFadein J 0.4 -220,-50]
+
+[charaMoveFSSideR F 300,0 0.4]
+[charaMove G 180,0 0.4]
+[charaMoveFSSideL I -300,0 0.4]
+[charaMove J -180,0 0.4]
+[wt 0.5]
+[cueSe Servants_603100 bac554]
+[seVolume bac554 0 0.5]
+[charaMoveReturn J -180,10 0.2]
+[wt 0.2]
+[seStop bac554 1.0]
+[charaMoveReturn J -180,10 0.2]
+[charaTalk on]
+[charaFace A 3]
+
+＠阿尔托莉雅
+哇，哇……！[r]奥伯龙，这些孩子们，我该怎么办！？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠奥伯龙
+你不用做什么啦。[r]你只要愿意来，他们就很高兴了。
+[k]
+
+[charaFaceFade C 0 0.2]
+
+＠奥伯龙
+啊，不过，不能因为可爱，[r]就用力抱他们哦。
+[k]
+
+＠奥伯龙
+大家都不习惯被别人触碰。[r]尤其是被外面的妖精触碰。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 36]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+就像图画描绘的妖精呢。[r]总算有种来到『妖精之国』的感觉了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth G 2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠千子村正
+不，无论什么妖精不都是妖精吗？[r]这里的又没什么特别[line 3]
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFadein G 0.2 -250,0]
+[charaMove G -200,0 0.4]
+[wt 1.0]
+[cueSe Servants_603100 bac554]
+[seVolume bac554 0 0.5]
+
+[charaMoveReturn G -190,0 0.25]
+[wt 0.4]
+[seStop bac554 1.0]
+[charaMoveReturn G -190,0 0.25]
+[wt 0.4]
+
+[charaTalk on]
+
+＠G：威尔士的妖精
+[image npc_language_5:帮我做！　帮我做！　帮我做头盔！][r][image npc_language_5:我想成为士兵，我想成为士兵！]
+[k]
+
+[charaFace D 14]
+
+＠千子村正
+……不对，有点不一样呢。[r]虽然听不懂在说什么……
+[k]
+
+＠千子村正
+你是想要一顶适合自己的头盔吗？
+[k]
+
+[messageOff]
+[charaTalk G]
+[charaFace G 1]
+[charaMoveReturn G -200,-10 0.3]
+[wt 0.8]
+
+＠千子村正
+这个模样的话，[r]确实用不了人类规格的防具呢。
+[k]
+
+[charaFace D 7]
+＠千子村正
+奥伯龙，[#老夫:我]可以在空地搭一个工作台吗？
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠奥伯龙
+当然可以，随你使用。[r]啊啊，不过材料就用树枝和树叶吧。
+[k]
+
+＠奥伯龙
+大家只是想扮演士兵而已。[r]只要个外形就可以了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 19]
+[charaFadein D 0.1 1]
+[charaFace G 0]
+[charaFadein G 0.1 -200,0]
+
+＠千子村正
+知道啦，[#老夫:我]才不会做真家伙呢！[r]这只是过家家而已嘛！
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[se ad527]
+[charaMove D -50,0 0.4]
+[charaFadeout D 0.4]
+[wt 1.0]
+[seStop ad527 1.0]
+[charaFace G 1]
+[charaMove G -250,0 0.4]
+[charaFadeout G 0.4]
+[wt 1.5]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[cueSe SE_21 21_ad1094]
+[seVolume 21_ad1094 0 0.3]
+
+＠F：威尔士的妖精
+[image npc_language_5:你呢？　你呢？][r][image npc_language_5:是奥伯龙的朋友吗？　真正的朋友？][seStop 21_ad1094 1.0]
+[k]
+
+[charaFace F 1]
+
+＠F：威尔士的妖精
+[image npc_language_5:那你就是我们的朋友啦！][r][image npc_language_5:要帮助奥伯龙哦！　奥伯龙就拜托你啦！]
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ad1094]
+[seVolume 21_ad1094 0 0.3]
+
+[charaMove F -50,50 0.2]
+[wt 0.1]
+[charaMove F 0,75 0.2]
+[wt 0.1]
+[charaMove F 50,50 0.2]
+[wt 0.1]
+[charaMove F 100,0 0.2]
+[wt 0.1]
+[charaMove F 50,-50 0.2]
+[wt 0.1]
+[charaMove F 0,-75 0.2]
+[wt 0.1]
+[charaMove F -50,-50 0.2]
+[wt 0.1]
+[charaMove F -100,-0 0.2]
+[wt 0.1]
+[charaMove F -50,50 0.2]
+[wt 0.1]
+[charaMove F 0,0 0.2]
+[wt 0.2]
+
+
+？1：哇哇，哇哇哇……！
+？2：（看得出是在热烈欢迎我，但却听不懂！）
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠奥伯龙
+这是在欢迎你们哦。
+[k]
+
+＠奥伯龙
+因为漂流到森林里的大家[r]都不懂得如何怀疑别人。
+[k]
+
+＠奥伯龙
+这里虽然没有对人类文化的模仿，[r]但帐篷之类的东西还是能准备的。
+[k]
+
+＠奥伯龙
+你们先休息一段时间吧。[r]外面的情报由我来收集。
+[k]
+
+[charaFaceFade C 8 0.2]
+
+＠奥伯龙
+大家，客人就麻烦你们招待啦。
+[k]
+
+＠奥伯龙
+放心吧，这里没有人会伤害你们。
+[k]
+
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 2]
+[charaDepth I 3]
+[charaDepth G 4]
+[charaDepth J 5]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFace G 1]
+[charaFace I 1]
+[charaFace J 0]
+[charaFadeinFSSideR F 0.1 300,0]
+[charaFadein G 0.1 150,0]
+[charaFadeinFSSideL I 0.1 -300,0]
+[charaFadein J 0.1 -150,0]
+[wt 0.5]
+[charaMoveFSSideR F 300,-30 0.5]
+[charaMove G 150,-15 0.5]
+[charaMoveFSSideL I -300,-30 0.5]
+[charaMove J -150,-15 0.5]
+[wt 1.2]
+
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠奥伯龙
+很好。[r]那么暂且别过，诸位！
+[k]
+
+＠奥伯龙
+不过晚上我就会回来，[r]记得留下我那份晚餐！
+[k]
+
+[messageOff]
+[se ad527]
+[charaMove C -100,0 0.4]
+[charaFadeout C 0.4]
+[wt 1.0]
+[seStop ad527 1.0]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 31]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+哎，稍等一下，奥伯龙，[r]至少找个懂得翻译[line 3]
+[k]
+
+[charaFace B 14]
+
+＠达·芬奇
+……走掉了。
+[k]
+
+＠达·芬奇
+不，虽然我知道妖精们在欢迎我们啦……
+[k]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth E 2]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.2 550,0]
+[charaMove E 500,0 0.2]
+
+＠瑞德拉·比特
+确实。我也听不太懂[r]威尔士的妖精们在说什么呢。
+[k]
+
+＠瑞德拉·比特
+而且他还没有介绍我吧。[r]这其实还挺伤我心的。
+[k]
+
+＠瑞德拉·比特
+奥伯龙是不是有点那个？[r]说话做事很冒失？
+[k]
+
+？1：不，我觉得……大概是碰巧忘了吧？
+？2：（糟糕……我也把他给忘了……）
+
+？！
+
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[cueSe SE_21 21_ad1094]
+[seVolume 21_ad1094 0 0.3]
+
+＠威尔士的妖精
+[image npc_language_6:肚子饿吗？　肚子饿吗？][r][image npc_language_6:跟奥伯龙大人一样的话，肚子肯定饿了吧？][seStop 21_ad1094 1.0]
+[k]
+
+[charaFace F 1]
+
+＠威尔士的妖精
+[image npc_language_5:招待你们吃东西，招待你们吃东西！][r][image npc_language_5:威尔士的栗子很好吃哦！]
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaFace A 5]
+
+＠阿尔托莉雅
+各位，他们好像想请我们吃东西呢。[r]而且还是栗子！　这里居然有栗子！
+[k]
+
+[charaFace A 13]
+
+＠阿尔托莉雅
+好厉害～，是违禁品耶！
+[k]
+
+＠阿尔托莉雅
+“甜的东西”是受到管制的，[r]在南部可是稀缺品，这里原来是法外之地啊！
+[k]
+
+？1：管制……？
+？2：违禁品……？
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+啊，迈克也说过。[r]说只有上级妖精才能弄到『点心』。
+[k]
+
+＠达·芬奇
+听说女王下令禁止加工水果之类的东西。[r]砂糖可是稀缺品呢。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠瑞德拉·比特
+欧若拉大人以前也给过我一小块[r]不知是什么的黑色板状物……
+[k]
+
+＠瑞德拉·比特
+老实说，我还是比较喜欢胡萝卜。[r]甜味的天然度不一样啊。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+[cueSe SE_21 21_ad1094]
+[seVolume 21_ad1094 0 0.3]
+
+＠威尔士的妖精
+[image npc_language_5:来这边！　来这边！][r][image npc_language_5:说说奥伯龙的事！　说说奥伯龙的事！][seStop 21_ad1094 1.0]
+[k]
+
+[messageOff]
+[charaMove F -100,0 0.4]
+[charaFadeout F 0.4]
+
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+看来那边有餐桌呢。
+[k]
+
+＠达·芬奇
+虽然听不懂在说什么，[r]不过我们就欣然接受吧，[%1]。
+[k]
+
+？1：说得也是。
+？2：毕竟是甜食！
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 1.2]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_94 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.5]
+
+
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠阿尔托莉雅
+多谢款待！
+[k]
+
+？1：多谢款待！
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+嗯，非常好吃！[r]尤其是葡萄超～～～豪华！
+[k]
+
+[charaFace B 0]
+
+＠达·芬奇
+而且连水果里都蕴藏着神秘。
+[k]
+
+＠达·芬奇
+对从者之身而言，[r]这可是不容小觑的魔力补充手段。
+[k]
+
+[charaFace B 26]
+
+＠达·芬奇
+要不带几个在身上以备紧急之需吧……[r]还是捎给福尔摩斯他们呢……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠瑞德拉·比特
+吭哧吭哧。[r]吭哧吭哧。（一口将梨啃干净了。）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠千子村正
+话说这里多了一盘呢。[r]是奥伯龙那份吗？　留在这里就行了吗？
+[k]
+
+[bgmStop BGM_EVENT_77 1.0]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[cueSe SE_21 21_ad1094]
+[seVolume 21_ad1094 0 0.5]
+
+[charaTalk off]
+[charaFace F 2]
+[charaFace G 2]
+[charaFace I 2]
+[charaFace J 2]
+[charaFadeinFSSideR F 0.1 300,0]
+[charaFadein G 0.1 150,0]
+[charaFadeinFSSideL I 0.1 -300,0]
+[charaFadein J 0.1 -150,0]
+
+＠威尔士的妖精们
+[image npc_language_7:来了，来了，是黑犬！][r][image npc_language_7:快躲起来快躲起来，谁先躲好谁先赢，快躲起来！]
+[k]
+
+[messageOff]
+[charaMoveFSSideR F 200,0 0.4]
+[charaMove G 50,0 0.4]
+[charaMoveFSSideL I -400,0 0.4]
+[charaMove J -250,0 0.4]
+[charaFadeout F 0.4]
+[charaFadeout G 0.4]
+[charaFadeout I 0.4]
+[charaFadeout J 0.4]
+[wt 1.0]
+
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+[FFFFFF]？　怎么回事，大家突然不是爬上树，[-][r]就是飞进了树洞里[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠瑞德拉·比特
+吭哧吭哧。那边能看到黑犬。[r]吭哧吭哧。大家恐怕都躲起来了吧？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠阿尔托莉雅
+！　赶跑它们吧！[r]当作承蒙款待的回礼！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠瑞德拉·比特
+我也吭有哧意。[r]抱歉，我也正有此意。
+[k]
+
+＠瑞德拉·比特
+黑犬固然可怕，[r]可这里的妖精们都不具备战斗的手段。
+[k]
+
+＠瑞德拉·比特
+恐怕以往都只能束手无策地付出牺牲吧，[r]但既然我们在场，就不会让悲剧重演。
+[k]
+
+[charaFace E 2]
+
+＠瑞德拉·比特
+各位，让它们好好领教一下吧。[r]区区小狗！　岂是！　兔子的敌人！
+[k]
+
+？1：你其实是从者吧？
+？2：人类史的收束指的就是这种情况吗？
+
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

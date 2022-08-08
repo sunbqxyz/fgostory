@@ -1,0 +1,731 @@
+
+＄94-06-57-09-1-0
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 28002000 1 フェイカー]
+[charaSet B 1098166310 1 車掌]
+[charaSet C 1098228000 1 支配人代理]
+
+[charaSet D 98006200 1 エネミー1]
+[charaSet E 98006200 1 エネミー2]
+[charaSet F 98006200 1 エネミー3]
+[charaSet G 98006200 1 雑魚エネミー煙状]
+[charaScale G 1.3]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[sceneSet J 144600 1]
+[sceneSet K 144601 1]
+
+[scene 10000]
+
+[backEffect bit_talk_thunder_roop]
+[wt 0.5]
+
+[fadein black 1.5]
+[se ade106]
+[seVolume ade106 0 0]
+[seVolume ade106 1.5 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[seVolume ade106 1.5 0.5]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.3]
+
+[charaTalk depthOff]
+[charaDepth H 5]
+[charaDepth A 7]
+
+[charaDepth D 1]
+[charaDepth E 2]
+
+[charaTalk off]
+
+[se ad42]
+[charaTalk off]
+[charaFace D 0]
+[charaFadeinFSL D 0.4 0]
+[charaFace E 0]
+[charaFadeinFSR E 0.4 2]
+[wt 2.0]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 5]
+[overlayFadein A 0.1 1]
+
+＠フェイカー
+くそ、キリがない！
+[k]
+
+[charaFace A 0]
+
+＠フェイカー
+消えかかってるとはいえ、[r]世界ひとつのテクスチャが敵に回ってるんだ！
+[k]
+
+[charaFace A 2]
+
+＠フェイカー
+ダレイオスが率いたペルシャ軍だって、もっとマシだ！[r]いくらなんでも、相手しきれないぞ！
+[k]
+
+[messageOff]
+
+[se ad678]
+[seVolume ad678 0 0.7]
+[charaEffect A bit_talk_quickmove]
+[charaSpecialEffect A erasureReverse 1 0.2]
+[charaMove A 0,6 0.4]
+[wt 0.4]
+
+
+[effect bit_talk_kengekiall03_fs]
+[wt 0.2]
+[se ad1013]
+[se ad1015]
+[wt 0.3]
+[se ad687]
+[wt 0.1]
+[se bac139]
+[effect bit_talk_14]
+[shake 0.05 2 2 0.4]
+[wt 1.2]
+
+
+[se ad231]
+[flashin once 0.7 1 FF000080 FF000000]
+[shake 0.03 2 1 0.4]
+
+[wipeout moya 0.6 1.0]
+[wait wipe]
+
+[wipein moya 0.6 1.0]
+[wait wipe]
+[wt 1.0]
+
+
+[se ad223]
+[charaPut A 1]
+[fowardEffect bit_talk_quickmove 0,0 H]
+[charaSpecialEffect A appearanceReverse 1 0.2]
+[charaMoveReturn A 0,-6 0.4]
+[wt 0.6]
+[charaFace A 2]
+
+＠フェイカー
+おい、[%1]！[r]しっかりしろ！
+[k]
+
+？1：大………丈夫………
+？2：ちょっと………ふらついただけで………
+
+？！
+
+[charaFace A 5]
+
+＠フェイカー
+ちっ、正直に言え！[r]戦闘に耐えられる状態じゃない！
+[k]
+
+？1：それでも………
+？2：戦わなきゃ………帰れない………
+
+？！
+
+[charaFace A 4]
+
+＠フェイカー
+帰る………
+[k]
+
+[charaFace A 1]
+
+＠フェイカー
+ああ、そうだな。その通りだ。[r]本体まで帰してやるって、私もおまえに約束した。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth D 1]
+[charaDepth E 2]
+[charaDepth F 3]
+
+[charaTalk off]
+
+[se ad42]
+[charaFace D 0]
+[charaFadeinFSL D 0.4 -312,0]
+[wt 0.2]
+[charaFace E 0]
+[charaFadeinFSR E 0.4 312,0]
+[wt 0.2]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 2.0]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+しつこい！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth D 1]
+[charaDepth E 2]
+[charaDepth F 3]
+
+[charaTalk off]
+
+[charaFace D 0]
+[charaFadeinFSL D 0.1 -312,0]
+[charaFace E 0]
+[charaFadeinFSR E 0.1 312,0]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.1]
+
+[fowardEffect bit_talk_x_slash_bk_01]
+[cueSe Servants_102800 bac657]
+[wt 0.3]
+[charaShake D 0.05 3 3 0.7]
+[charaShake E 0.05 3 3 0.7]
+[charaShake F 0.05 3 3 0.7]
+[fowardEffect bit_talk_x_slash_bk_03]
+[cueSe Servants_102800 bac658]
+[wt 1.0]
+
+[se ad52]
+[charaSpecialEffect D enemyErasure 1 1.5]
+[charaSpecialEffect E enemyErasure 1 1.5]
+[charaSpecialEffect F enemyErasure 1 1.5]
+[wait charaSpecialEffect D]
+[wait charaSpecialEffect E]
+[wait charaSpecialEffect F]
+[wt 0.5]
+
+[se ad42]
+[seStop ad42 1.2]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 1.2]
+[fowardEffect bit_talk_41_fs]
+[se ad85]
+[charaMoveScale D 1.2 0.2]
+[charaMove D 0,37 0.2]
+[wt 0.5]
+[charaFadeout D 0.1]
+[wt 0.1]
+[fowardEffectDestroy bit_talk_41_fs]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[se ad216]
+[fowardEffect bit_talk_mysticeyes_hph]
+
+＠フェイカー
+止まれ！
+[k]
+
+[messageOff]
+[seStop ad216 0.2]
+[fowardEffectStop bit_talk_mysticeyes_hph]
+[se ad693]
+[wt 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,20]
+[wt 0.1]
+[fowardEffect bit_talk_14]
+[charaShake D 0.05 3 3 0.2]
+[charaMoveScale D 1.15 0.2]
+[se ade60]
+[wt 1.0]
+
+[fowardEffect bit_talk_x_slash_bk_02]
+[cueSe Servants_102800 bac658]
+[charaShake D 0.05 3 3 0.7]
+[wt 1.0]
+
+[se ad52]
+[charaSpecialEffect D enemyErasure 1 1.5]
+[wait charaSpecialEffect D]
+[charaScale D 1.0]
+[wt 0.5]
+
+[charaDepth D 1]
+[charaDepth E 2]
+[charaDepth F 3]
+
+[charaTalk off]
+
+[se ad42]
+[charaFace D 0]
+[charaFadeinFSL D 0.4 -312,0]
+[wt 0.2]
+[charaFace E 0]
+[charaFadeinFSR E 0.4 312,0]
+[wt 0.2]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 2.0]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+くそ、魔力が追いつかない。[r]私の宝具でも、この数は………
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_80 0.5 0.7]
+
+[se ad733]
+[seVolume ad733 0 0.5]
+[charaTalk B]
+[charaFace B 0]
+[charaPut B 0,0]
+[charaFadeTime B 0.4 0.4]
+[wt 0.4]
+
+＠車掌
+聞こえますか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+車掌か！　なんだ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaPut B 0,0]
+[charaFadeTime B 0.1 0.4]
+
+＠車掌
+ただ今、念話を用いております。[r][#魔眼蒐集列車:レ ー ル ・ ツ ェ ッ ペ リ ン]としての判断をお知らせします。
+[k]
+
+＠車掌
+今回、八つの魔眼を回収させていただきました。[r]ここで、ひとつふたつぐらいは使ってもかまいません。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+はっ、ずいぶん気前がいいな。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaPut B 0,0]
+[charaFadeTime B 0.1 0.4]
+
+＠車掌
+もちろん無念に思っております。[r]ですが、支配人代理もそう仰せですので。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaPut C 0,0]
+[charaFadeTime C 0.4 0.4]
+[wt 1.5]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+影だけなのに、よく意志が分かるもんだ。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaPut B 0,0]
+[charaFadeTime B 0.1 0.4]
+
+＠車掌
+分からなければ、[r][#魔眼蒐集列車:レ ー ル ・ ツ ェ ッ ペ リ ン]のスタッフは務まりませんので。
+[k]
+
+＠車掌
+薙ぎ払います。[r]どうぞご注意を。
+[k]
+
+[messageOff]
+[seVolume ade106 1.5 0]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_80 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[backEffectDestroy bit_talk_thunder_roop]
+[charaScale J 1.4]
+[charaScale K 1.5]
+[charaDepth J 2]
+[charaDepth K 1]
+[charaFadein J 0.1 250,-250]
+[charaFadein K 0.1 300,-280]
+[scene 144600]
+[wt 1.0]
+
+[charaMove J 300,-280 5.0]
+[charaMoveScale J 1.5 5.0]
+[se ad550 0]
+[seVolume ad550 1.0 0.4]
+
+[se ade186]
+[seVolume ade186 0 0]
+[seVolume ade186 1.0 0.4]
+[fadein black 1.0]
+[wait fade]
+
+[se ade157]
+[wt 1.7]
+[se ad594]
+[wt 0.8]
+
+[se ade42]
+
+[scene 144601 1.0]
+[shake 0.04 2 2 1.5]
+[cueSe SE_21 21_ade687]
+[wt 0.5]
+[cueSe SE_21 21_ad1064]
+[se ad1003]
+[se ad1015]
+[seVolume ad1015 0 0.4]
+[wt 0.5]
+[wt 0.5]
+[bgm BGM_EVENT_82 0.1]
+[shake 0.04 4 4 0.8]
+[charaFadeout J 1.0]
+[se ade153]
+[se ad903]
+[cueSe SE_21 21_ad1075]
+[seVolume 21_ad1075 0 0.4]
+[wt 3.5]
+[charaFadeout K 0.7]
+[wt 1.4]
+[seStop ade186 2.0]
+
+
+？1：列車の眼が……開いた？！
+
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_82 1.0 0.5]
+[wait fade]
+
+[scene 10000]
+[backEffect bit_talk_thunder_roop]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_82 1.0 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+[#魔眼蒐集列車:レ ー ル ・ ツ ェ ッ ペ リ ン]のとっておきだ。[r]魔眼を[#焼:く]べて、その威力を数百倍・数千倍にする。
+[k]
+
+＠フェイカー
+前に召喚されたときは、[r]あれでこっちの呼び出した[#森]ごと焼かれたもんだ。
+[k]
+
+[charaFace A 1]
+＠フェイカー
+問題は、とびきり貴重品の魔眼が、[r][#たった一発で燃え尽きる]ってことでな。
+[k]
+
+＠フェイカー
+ここの魔眼オークションで[r]エルメロイⅡ世が競ったヤツは五億ドルまでいったぞ！
+[k]
+
+？1：………………！
+
+？！
+
+[charaFace A 7]
+
+＠フェイカー
+驚いて、少しは意識が戻ったか？[r]あのときは、貧乏[#君主:ロード]が粘りに粘ってな。
+[k]
+
+[charaFace A 0]
+
+＠フェイカー
+だが、その値段以上に、[r][#魔眼蒐集列車:レ ー ル ・ ツ ェ ッ ペ リ ン]が執着してる品だ。
+[k]
+
+
+[charaFace A 1]
+
+＠フェイカー
+車掌も支配人代理も、[r]さぞ身を切られる思いだろうさ！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_82 1.0 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[backEffectDestroy bit_talk_thunder_roop]
+
+[scene 144301]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_82 1.0 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠車掌
+特性、炎焼の魔眼を装填開始。[se ad917][seVolume ad917 0 0.3][wt 1.5][r]装填完了。
+[k]
+
+
+＠車掌
+魔眼大投射シーケンス開始します。[r]基幹車両リルカペロー、魔眼との接続完了。解析まで……
+[k]
+
+＠車掌
+…………三…………二…………
+[k]
+
+＠車掌
+…………一…………終了。
+[k]
+
+＠車掌
+接続された魔眼の特性の延伸性を確保。[r]霊質回帰型レンズ・ローズアイ展開。
+[k]
+
+
+＠車掌
+[f large]魔眼大投射！
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_82 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[criMovie talk_mov115 bgmPlay true]
+[wt 0.5]
+
+[fadeout black 1.0]
+[wait fade]
+
+[backEffect bit_talk_thunder_roop]
+[wt 1.0]
+
+
+[seVolume ade106 1.0 0.5]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_63 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+ははは、空を抉ったな！[r]味方になれば頼もしいもんだ！
+[k]
+
+[charaFace A 2]
+
+＠フェイカー
+行く手のレールが開いた！　突破するぞ！[r]もう少しだけ耐えろ、[%1]！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[shake 0.05 0 2 2.5]
+[fowardEffect bit_talk_41_fs]
+[se ad845]
+[seVolume ad845 0 0.1]
+[seVolume ad845 1.5 0.7]
+[wt 2.0]
+[seStop ad845 1.0]
+[wt 0.5]
+[fowardEffectStop bit_talk_41_fs]
+[wt 0.5]
+[fowardEffectDestroy bit_talk_41_fs]
+
+[charaTalk B]
+[charaFace B 0]
+[charaPut B 0,0]
+[charaFadeTime B 0.1 0.4]
+
+＠車掌
+いえ、回避行動を！[r]ネガ・ロンゴミニアドから高エネルギー反応！
+[k]
+
+＠車掌
+砲撃が来ます！
+[k]
+
+[messageOff]
+[seVolume ade106 1.0 0]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[bgmStop BGM_EVENT_63 1.0]
+[wait wipe]
+
+[backEffectDestroy bit_talk_thunder_roop]
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[se ade393]
+[seVolume ade393 0 0]
+[seVolume ade393 1.0 0.5]
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait fade]
+
+[effect bit_talk_ereshki01]
+[wt 0.5]
+[se ad146]
+[wt 1.5]
+[seStop ad146 0.2]
+[se ad248]
+[wt 1.5]
+[wipeout rectangleStripDownToUp 0.7 1.0]
+[wait wipe]
+
+[seStop ad248 2.0]
+
+[effectStop bit_talk_ereshki01]
+[backEffect bit_talk_thunder_roop]
+[wt 1.0]
+
+[seVolume ade106 1.0 0.5]
+[wipein rectangleStripUpToDown 0.7 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 0,15]
+[se ade311]
+[wt 0.1]
+[se ad42]
+[seVolume ad42 0 0.5]
+[wt 1.9]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+しかも、大物到来か！
+[k]
+
+
+
+
+[messageOff]
+
+[seStop ade106 0.5]
+[seStop ade393 0.5]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

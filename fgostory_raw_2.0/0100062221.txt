@@ -1,0 +1,183 @@
+＄01-00-06-22-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+
+[charaSet A 8001001 1 玛修]
+[charaSet B 1012001 1 贝德维尔]
+[charaSet D 98086000 1 福尔摩斯]
+[charaSet E 5022001 1 三藏]
+[charaSet F 2014000 1 俵藤太]
+[charaSet G 98002000 1 芙芙]
+
+[scene 28801]
+
+[charaBackEffect D bit_talk_haboob_02]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+
+[fadein black 2.0]
+[wait fade]
+
+＠玛修
+成功迎击斯芬克斯！[r]前辈，现在起我们该[line 3]呀！？
+[k]
+
+[messageOff]
+[se ad10]
+
+[charaFadeout A 0.4]
+[wt 0.8]
+
+[charaTalk G]
+[charaFadein G 0.1 1]
+
+＠芙芙
+芙！？
+[k]
+
+[charaFadeout G 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠三藏
+等一下，刚才玛修她是不是突然不见了！？[r]简直像是掉进了一个洞咿呀哎！？
+[k]
+
+[messageOff]
+[se ad10]
+
+[charaFadeout E 0.4]
+[wt 0.8]
+
+[charaTalk G]
+[charaFadein G 0.1 1]
+
+＠芙芙
+芙芙！？
+[k]
+
+[charaFadeout G 0.1]
+
+[charaTalk F]
+[charaFace B 5]
+[charaFace F 5]
+[charaFadein B 0.1 2]
+[charaFadein F 0.1 0]
+
+＠俵藤太
+唔，这是！
+[k]
+
+＠贝德维尔
+嗯，这就是！
+[k]
+
+？1：陷阱坑[line 5]！
+
+？！
+
+[se ad10]
+[messageOff]
+[wipeout rectangleStripDownToUp 0.5 1]
+[wait wipe]
+[charaPut D 1200,1200]
+[charaBackEffectStop D bit_talk_haboob_02]
+
+[charaFadeout B 0]
+[charaFadeout F 0]
+
+[scene 10000]
+[wt 1.0]
+[seStop ad10]
+[se ad57]
+[wt 1.0]
+[seStop ad57]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.5 1]
+[wait wipe]
+
+＠玛修
+好疼疼……屁股着地……
+[k]
+
+＠玛修
+各位都在吗……？[r]虽说落地的声音有五个……
+[k]
+
+？1：学号一号，[%1]，到……
+
+？！
+
+＠贝德维尔
+华丽成功着地。[r]贝德维尔，在此。
+[k]
+
+＠三藏
+……苦厄，舍利子色不异空……[r]嗯……玄奘三藏出席了～……
+[k]
+
+＠俵藤太
+摔得真够深啊……[r]话说这里有空气吗？
+[k]
+
+＠芙芙
+芙。
+[k]
+
+＠D：？？？
+不错不错。看来全体成功逃脱了呢。[r]也没人受伤，真是太好了。
+[k]
+
+＠D：？？？
+那我点上灯吧。[r]或许会有些眩晕，还希望各位能谅解。
+[k]
+
+[bgmStop BGM_EVENT_5 2.0]
+
+？1：[line 3]哎？
+？2：[line 3]还有第六个人？
+
+？！
+
+[se ad138]
+[messageOff]
+[wipeout circleOut 0.1 0.5]
+[wait wipe]
+
+[scene 21400]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0 1]
+
+[wipein circleIn 1.0 0.5]
+[wait wipe]
+[bgm BGM_EVENT_7 0.1]
+
+＠D：？？？
+哟，各位好。[r]欢迎来到神秘久远的阿特拉斯院！
+[k]
+
+[charaFace D 1]
+＠福尔摩斯
+我是夏洛克·福尔摩斯。[r]是世界上最厉害的侦探，也是唯一的顾问侦探。
+[k]
+
+＠福尔摩斯
+是侦探这个概念的结晶，“查明真相之人”的代表[line 3][r]正是带领你们通往真相的，最后的钥匙！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[soundStopAll]
+[end]

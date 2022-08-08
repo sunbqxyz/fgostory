@@ -1,0 +1,109 @@
+
+＄94-03-35-24-4-0
+
+[charaSet A 3008000 1 恩奇都]
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+
+[scene 10400]
+
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+＠恩奇都
+[tVoice ValVoice_300800 0_V190]
+对不起，御主。[r]我不请自来了。[wait tVoice]
+[k]
+
+＠恩奇都
+[tVoice ValVoice_300800 0_V200]
+……那个。关于为什么会发生这种事，[r]虽然我自己无法解析[line 3][wait tVoice]
+[k]
+
+[charaFace A 5]
+＠恩奇都
+[tVoice ValVoice_300800 0_V210]
+但现在，我无论如何都想赠送东西给你。[r]倘若做不到，我自己都想毁了自己。[wait tVoice]
+[k]
+
+[charaFace A 2]
+＠恩奇都
+[tVoice ValVoice_300800 0_V220]
+啊啊，但毫无理由赠送礼物未免过于不讲道理了吧，[r]我清楚御主是无法接受这种事的。[wait tVoice]
+[k]
+
+＠恩奇都
+[tVoice ValVoice_300800 0_V230]
+所以如果你不愿意，还请拒绝。[r]最后不过是我去走廊里自爆罢了。[wait tVoice]
+[k]
+
+？1：哎，不，为什么啊！？
+？2：冷静点。以及冷静点。
+
+？！
+
+[charaFace A 3]
+＠恩奇都
+[tVoice ValVoice_300800 0_V240]
+太好了。你不讨厌吧？[r]那请务必收下这朵花。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[equipSet B 9805320 1 ]
+[wait equipSet B]
+[charaFace B 0]
+[charaFadein B 0.5 0,-70]
+[wt 2.0]
+[charaFadeout B 0.4]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠恩奇都
+[tVoice ValVoice_300800 0_V250]
+虽然不够华丽，但能温暖心灵。[r]总之，我希望你今天能收下这件礼物。[wait tVoice]
+[k]
+
+＠恩奇都
+[tVoice ValVoice_300800 0_V260]
+……嗯。或许算是……内心点燃的热情的表现吧。[r]敬意的计量也许已经超越规定值了。[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠恩奇都
+[tVoice ValVoice_300800 0_V270]
+你只要将这朵花摆放在房间里就行了。[r]那我先告辞了。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠恩奇都
+[tVoice ValVoice_300800 0_V280]
+愿你拥有美好的一天，[%1]。[r]不要因为过度劳动而两眼发昏哦。[wait tVoice]
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]

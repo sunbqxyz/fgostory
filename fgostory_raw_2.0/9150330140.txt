@@ -1,0 +1,385 @@
+
+
+＄91-50-33-01-4-0
+
+[soundStopAll]
+
+[charaSet A 5033001 1 喀耳刻]
+[charaSet B 2005001 1 阿塔兰忒]
+[charaSet C 5017000 1 美狄亚·Lily]
+[charaSet D 98001000 1 玛修]
+[charaSet E 98006000 1 杂兵]
+[charaSet F 98006000 1 杂兵]
+[charaSet G 98006000 1 杂兵]
+
+
+
+
+[charaDepth F 4]
+[charaDepth G 5]
+[charaDepth C 6]
+
+
+[bgm BGM_EVENT_3 0.1]
+
+[se ad507]
+
+[scene 21200]
+
+[fadein black 1.0]
+[wait fade]
+
+[seVolume ad507 0.5 0.5]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠阿塔兰忒
+哈啊[line 3]！！
+[k]
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+
+[fowardEffect bit_talk_38]
+[wt 0.1]
+[shake 0.05 0 4 0]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.2]
+[fowardEffectStop bit_talk_38]
+[wt 0.1]
+[shakeStop]
+
+[wt 0.3]
+[charaTalk off]
+[charaFace E 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein E 0.1 0]
+[charaFadein F 0.1 2]
+[charaFadein G 0.1 1]
+[wt 0.1]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[se bac16]
+[wt 0.5]
+[charaSpecialEffect G enemyErasure 1 0.8]
+[wt 0.2]
+[se ad42]
+[wt 0.1]
+[charaSpecialEffect F enemyErasure 1 0.8]
+[wt 0.3]
+[charaSpecialEffect E enemyErasure 1 0.8]
+[wait charaSpecialEffect E]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠阿塔兰忒
+好，船体外部的敌人已经扫荡一空了！
+[k]
+
+＠阿塔兰忒
+接下来只剩阿耳戈内部的敌人了！[r]伊阿宋！　请下指示[line 3]！
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠玛修
+其实……！
+[k]
+
+？1：伊阿宋先生被苹果桶砸中了脑袋，晕过去了。
+？2：听说他为了保卫阵地，英勇地牺牲了。
+
+？！
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠阿塔兰忒
+怎么又来了。[r]那就由我们来做收尾工作吧。
+[k]
+
+＠阿塔兰忒
+喀耳刻……？[r]……啊……[wt 0.2][charaFace B 2]
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaSet F 98006200 1 杂兵附瘴气]
+[charaSet G 98006200 1 杂兵附瘴气]
+
+[bgmStop BGM_EVENT_3 1.0]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠喀耳刻
+……终于愿意出现在我的面前了啊。
+[k]
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[charaTalk off]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 1.0]
+
+[charaFace F 0]
+[charaFace G 0]
+[charaPut F -256,0]
+[charaPut G 256,0]
+[se ad19]
+[charaSpecialEffect F appearance 1 0.8]
+[wt 0.5]
+[charaSpecialEffect G appearance 1 0.8]
+
+[wait charaSpecialEffect F]
+[wait charaSpecialEffect G]
+[wt 1.2]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_5 0.1 1.0]
+
+[charaTalk on]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠玛修
+美狄亚小姐……[r]和诅咒的怪物们在一起……？
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠阿塔兰忒
+唔……你这是什么意思！[r]美狄亚……！？
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein C 0.1 1]
+[charaFadein F 0.1 0]
+[charaFadein G 0.1 2]
+＠美狄亚·Lily
+喀耳刻……阿塔兰忒。[r]你们是来嘲笑我这丑陋的哭丧脸的吧……？
+[k]
+
+＠美狄亚·Lily
+还是说，你们是由于我犯下的罪行而来责备我的呢……？
+[k]
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠喀耳刻
+………………美狄亚……
+[k]
+
+[charaFace A 0]
+＠喀耳刻
+……不。不是。[r]我是来庆祝你的启程。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein C 0.1 1]
+[charaFadein F 0.1 0]
+[charaFadein G 0.1 2]
+＠美狄亚·Lily
+庆祝……我的启程？
+[k]
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠喀耳刻
+就像我不会再被人用女神之名称呼一样[line 3]
+[k]
+
+＠喀耳刻
+美狄亚，你也成了被冠以魔女名讳的女人了。
+[k]
+
+[charaFace A 1]
+＠喀耳刻
+会将他人人生搅得一团糟也是无可奈何的。[r]因为你是魔女啊！
+[k]
+
+＠喀耳刻
+魅惑男人们，让他们堕落吧！[r]一旦厌倦了他们，就将他们抛弃在荒野里！
+[k]
+
+[charaFace A 0]
+＠喀耳刻
+这就是魔女的乐趣[line 3][r]对自己具备这种价值感到骄傲吧。
+[k]
+
+[charaFace A 5]
+＠喀耳刻
+但是，事实又如何呢……你看上去却一点都不幸福。
+[k]
+
+＠喀耳刻
+面带微笑，内心却号啕大哭。[r]我对此很不满意。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 4]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein C 0.1 1]
+[charaFadein F 0.1 0]
+[charaFadein G 0.1 2]
+＠美狄亚·Lily
+…………
+[k]
+
+＠美狄亚·Lily
+这些诅咒，就是我自己……[r]是我的罪。
+[k]
+
+[charaFace C 0]
+＠美狄亚·Lily
+我会将它们一起带走。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 0.3]
+[wt 0.4]
+[bgm BGM_EVENT_3 0.1 1.0]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠阿塔兰忒
+美狄亚，这我可不能坐视不理了。[r]这诅咒是会令船只沉没的诅咒。
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein C 0.1 1]
+[charaFadein F 0.1 0]
+[charaFadein G 0.1 2]
+＠美狄亚·Lily
+…………
+[k]
+
+？1：美狄亚……
+？！
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠喀耳刻
+呵……[r]我不是一直苦口婆心让你好好学药术嘛？　美狄亚。
+[k]
+
+[charaFace A 0]
+＠喀耳刻
+赫卡忒的药术不仅对肉体有用，[r]还会对内心造成强大的影响。
+[k]
+
+＠喀耳刻
+如果不仔细学习对内心的作用与原理，[r]可是无法出师的。
+[k]
+
+＠喀耳刻
+这对驯服隐藏于自己内心的怪物[r]可是非常有用的招数哦。
+[k]
+
+＠喀耳刻
+身为女神赫卡忒的使徒……[r]怎么能放这种半吊子的魔女出师呢。
+[k]
+
+[charaFace A 5]
+＠喀耳刻
+所以……我才不想收徒弟啊。
+[k]
+
+
+[charaFace A 2]
+＠喀耳刻
+那我就借用这场[#纷乱的争斗:闹剧]，[r]为你上最后一堂补课吧……！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[seStop ad507 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

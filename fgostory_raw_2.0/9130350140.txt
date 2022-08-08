@@ -1,0 +1,294 @@
+
+
+
+
+＄91-30-35-01-4-0
+
+
+[soundStopAll]
+
+[charaSet A 3035001 1 忠贞]
+[charaSet B 5011001 1 巴贝奇]
+
+[charaSet C 1098187100 1 埃尔梅罗Ⅱ世]
+[charaSet D 4032000 1 莱妮丝]
+[charaSet E 11005001 1 黑森·罗伯]
+[charaSet F 5004001 1 童谣]
+[charaSet G 98111500 1 通讯用杂音]
+
+[charaPut G 1200,1200]
+[charaEffect G bit_talk_10_LowLevel]
+
+[scene 37300]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠巴贝奇
+唔。
+[k]
+
+＠巴贝奇
+打倒了三个，仍然没有被修正的迹象。[r]看来是个相当严重的问题。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠埃尔梅罗Ⅱ世
+果然如此。
+[k]
+
+[charaFace C 0]
+＠埃尔梅罗Ⅱ世
+……没办法了，御主。[r]我拜托你的那件事怎么样了？
+[k]
+
+？1：总……总算是搞定了……！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠莱妮丝
+哎呀，听上去不太妙呢。[r]你拜托[&他:她]做了什么，吾兄啊。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠埃尔梅罗Ⅱ世
+尽管理由不明，但大熊猫[r]偏偏被置换成了从者的狼王罗伯。
+[k]
+
+＠埃尔梅罗Ⅱ世
+也就是说，最好的修正方法[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠巴贝奇
+就是与正确的数据进行比较，[r]并让两者进行战斗吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠忠贞
+原来如此。
+[k]
+
+[charaFace A 6]
+＠忠贞
+……哎，等一下。[r]也就是说，正确的数据是……！
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+[se ad334]
+＠黑森·罗伯
+……[r]……
+[k]
+
+？1：这可费了我不少工夫哦……！
+？！
+
+[messageOff]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+[wipeout circleIn 1.5 0.5]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[scene 20110]
+
+[effect bit_sepia01]
+
+[wt 1.0]
+[wipein circleIn 1.5 0.5]
+[wait wipe]
+
+[wt 0.4]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+＠童谣
+如此如此这般这般，[r]就是这么一回事哦。
+[k]
+
+[charaFace F 1]
+＠童谣
+这些对你来说或许无关紧要。[r]但是哦，但是[line 3]
+[k]
+
+[charaFace F 0]
+＠童谣
+[#你的冒牌货在到处乱晃]，[r][#这等同于入侵你的领地吧]？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠黑森·罗伯
+……[r]……
+[k]
+
+[messageOff]
+
+[se ad359]
+[charaFace E 2]
+
+[wt 1.0]
+
+[bgmStop BGM_EVENT_48 0.4]
+[wipeout circleIn 1.5 0.5]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 1.0]
+
+[effectStop bit_sepia01]
+
+[scene 37300]
+
+[wipein circleIn 1.5 0.5]
+[wait wipe]
+[wt 0.4]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠黑森·罗伯
+……[r]……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠忠贞
+御主，御主。[r]罗伯先生……现在是什么态度？
+[k]
+
+？1：好像正怒发冲冠。
+？！
+
+[charaFace A 4]
+＠忠贞
+我就知道！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠莱妮丝
+兄长，麻烦您对当前情况给个评价。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠埃尔梅罗Ⅱ世
+……在下能给出的建议只有一个。
+[k]
+
+[charaFace C 5]
+＠埃尔梅罗Ⅱ世
+千万别被卷进去，[r]心情恶劣的狼王等同于暴风。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠莱妮丝
+真是个干脆的建议。[wt 0.5][charaFace D 5][r]那总之将这些量产型罗伯[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad334]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠黑森·罗伯
+……[r]……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠莱妮丝
+失礼了。[wt 0.3][charaFace D 0][r]把这些某某冒牌货打倒再说吧！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_62 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

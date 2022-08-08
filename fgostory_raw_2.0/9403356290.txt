@@ -1,0 +1,705 @@
+
+
+＄94-03-35-62-9-0
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1049001 1 千子村正]
+[charaSet B 9011000 1 卡莲]
+[imageSet C cut240_text 1]
+[equipSet M 9807980 1 情人节礼装]
+[charaSet T 98115000 1 特效用]
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 104200]
+[branch lblConf]
+[label lblNotClear]
+[scene 105500]
+[label lblConf]
+
+[se ad95]
+[seVolume ad95 0 0]
+[wt 0.2]
+[se ade422]
+[seVolume ade422 0 0]
+
+[fadein black 1.0]
+[seVolume ad95 1.0 1.0]
+[seVolume ade422 1.0 1.0]
+[wait fade]
+
+[wt 1.0]
+[seStop ad95 0.5]
+[seStop ade422 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V010]
+然后啦，Lancer那家伙终究是胡诌出了[bgm BGM_EVENT_2 0.1][r]『我没有害怕的东西』这种鬼话。[wait tVoice]
+[k]
+
+[charaFace A 13]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V020]
+这无疑是『害怕馒头』那段子的套路啦，[r]会认真听他说话也未免太蠢了。[wait tVoice]
+[k]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V030]
+于是[#老夫:我]也随便应和了一句，[r][#你这套是桑名的烤花蛤吧:我可不吃你这套]。[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V040]
+结果他居然说『啊，不，抱歉。还是有一种的。[r]我害怕师傅那令人不敢恭维的灵衣。』[wait tVoice]
+[k]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V050]
+这种不吉利的话来，[r]你这个人啊，将这种话挂在嘴上小心一语成[line 3][wait tVoice]
+[k]
+
+[messageOff]
+[se ad193]
+[wipeout uzumaki 1.5 1.0]
+[bgmStop BGM_EVENT_2 1.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 110400]
+[wt 0.5]
+
+[wipein uzumaki 1.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+？1：咦。
+
+？！
+
+？1：世界突然……
+？2：切换了呢。
+
+？！
+
+[bgm BGM_EVENT_3 0.1]
+[wt 0.1]
+
+＠？？？
+[tVoice ValVoice_901100 0_V060]
+发现目标，瞄准目标。[r]神之力量，充能百分之十。[wait tVoice]
+[k]
+
+＠？？？
+[tVoice ValVoice_901100 0_V070]
+周围没有人看见，没有监视摄像头。[r]不会构成道德问题。[wait tVoice]
+[k]
+
+＠？？？
+[tVoice ValVoice_901100 0_V080]
+人类已刻不容缓。[r]现在就把问题解决掉吧。[wait tVoice]
+[k]
+
+＠？？？
+[tVoice ValVoice_901100 0_V090]
+发射。[wait tVoice]
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_godbazooka]
+[cueSe SE_21 21_ade563]
+[wt 1.5]
+
+[charaEffect T bit_talk_impactlanding]
+[se ad609]
+[wt 1.5]
+[seStop ad147 0.5]
+[seStop ad609 1.0]
+[bgmStop BGM_EVENT_3 1.0]
+[wt 1.2]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V100]
+你好，亲爱的三流御主。[bgm BGM_EVENT_7 0.1][r]今天你也一副衰样，非常丢人。[wait tVoice]
+[k]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V110]
+我想应该不需要说明了，[r]我就是你忠实的支配者，阿摩耳亲。[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V120]
+……哎哟。[r]对不起，搞错了。[wait tVoice]
+[k]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V130]
+这个灵基的我不是阿摩耳，[r]而是爱之传教士卡莲·C·奥尔黛西亚，[wait tVoice]
+[k]
+
+[charaFace B 6]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V140]
+每种灵基都有特色的从者真麻烦。[r]但既然是热门生意，这也算无奈之举。[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V150]
+请不要客气由衷地称呼我为[r]卡莲亲，或是卡莲大人吧。[wait tVoice]
+[k]
+
+[messageOff]
+
+？1：请问……卡莲亲。
+？2：请问……卡莲大人。
+
+？！
+
+？1：刚才那究竟是什么？
+
+？！
+
+[charaFace B 9]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V160]
+态度还是有种对待外人的隔阂感呢，不过也罢。[r]看在前途可期的份上，算你合格好了。[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V170]
+好了。我来回答你的问题吧，[r]刚才那个自不用说[line 3][wait tVoice]
+[k]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V180]
+[f large]是[#无偿爱:免费石]。[wait tVoice]
+[k]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V190]
+所以，有什么问题吗？[wait tVoice]
+[k]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V200]
+主的爱是平等降临在所有人身上的。[r]就像香槟，或是葡萄酒。[wait tVoice]
+[k]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V210]
+刚才的巧克力弹就是使用情人节的力量[r]将那种爱可视化、物质化的存在。[wait tVoice]
+[k]
+
+[charaFace B 15]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V220]
+反正你肯定已经收到过其他人的了，[r]不会受到什么巨大的冲击……[wait tVoice]
+[k]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V230]
+这是对你平日里侍奉我咳咳，抱歉，不小心说真话了。[wait tVoice]
+[k]
+
+[charaFace B 1]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V240]
+是我对你平日里劳动的回礼。[r]请收下吧。[wait tVoice]
+[k]
+
+？1：…………
+？2：…………………………
+
+？！
+
+[charaFace B 14]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V250]
+……究竟是怎么回事。[r]这发展大大出乎了我的预料。[wait tVoice]
+[k]
+
+[charaFace B 24]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V260]
+本以为收下我巧克力的你应该狂喜到觉醒，[wait tVoice]
+[k]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V270]
+并像发情的狗一样，[r]在召唤房间里疯狂召唤才对……[wait tVoice]
+[k]
+
+[charaFace B 8]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V280]
+……难道说……你是讨厌巧克力的……[r]那种稀有存在？　明明是主人公体质？[wait tVoice]
+[k]
+
+？1：不是这个问题，总觉得应该……
+？2：不该是这种会送给大家的东西……
+
+？！
+
+[messageOff]
+[charaFace B 16]
+[wt 1.2]
+
+[charaFace B 17]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V290]
+……也就是说。[r]你想要[#有偿爱:付费石]吧。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.4]
+
+[charaFace B 3]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V300]
+……好吧。[r]我倒也不是没有准备那种。[wait tVoice]
+[k]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth C 2]
+
+[charaFadein C 0.3 -5,-90]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V310]
+稍微等一下。[r]Stay and Pray。[wait tVoice]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaFace B 0]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V320]
+啊。反正你也不用吃刚才那块巧克力了，[r]请还给我。就这样。[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_7 1.0 0.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaSet B 9011001 1 卡莲]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_7 1.0 1.0]
+[wait fade]
+
+
+＠
+[align center]－经过体感时间3小时－[align]
+[k]
+
+[messageOff]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V330]
+让你久等了。[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V340]
+本打算几分钟就回来，[r]但看来比预计多花了点时间。[wait tVoice]
+[k]
+
+
+＠卡莲
+[tVoice ValVoice_901100 0_V350]
+正所谓再怎么亲密也要讲礼节。[r]既然是真心巧克力当然要注重外形。[wait tVoice]
+[k]
+
+[charaFace B 3]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V360]
+请容我再次向你问候。[wait tVoice]
+[k]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V370]
+我是你的从者兼精神饲主，[r]卡莲·C·奥尔黛西亚。[wait tVoice]
+[k]
+
+[charaFace B 5]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V380]
+请收下这个吧。[r]这是我的特别礼物！　还请您品尝。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+[charaFadeout B 0.4]
+
+[se bas2]
+[charaFace M 0]
+[charaFadein M 0.5 0,-70]
+[wt 2.0]
+[charaFadeout M 0.4]
+[wt 0.5]
+
+？1：这是……威化饼？
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V390]
+是的。是我个人对圣饼加工的产物。[r]因为我觉得至少要用小麦粉。[wait tVoice]
+[k]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V400]
+至于设计方面的问题一律拒绝回答。[wait tVoice]
+[k]
+
+？2：这是……纸钞束！
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V410]
+[line 6][wait tVoice]
+[k]
+
+[charaFace B 1]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V420]
+呵呵呵。[r]看来迦勒底的生活相当功利呢。[wait tVoice]
+[k]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V430]
+只是表面看起来如此而已，[r]里面可是非常好吃的神之点心。[wait tVoice]
+[k]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V440]
+每日每夜向[#教会:我]捐赠并痛改前非吧。[r]并非只有眼睛看到的才是真实。[wait tVoice]
+[k]
+
+？！
+
+[charaFace B 7]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V450]
+……算了，这也是个好机会，[r]我向你说明我的[#性癖:性格]吧。[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V460]
+我似乎被错误地当做拜金主义者，[r]但这是没来由的误会。[wait tVoice]
+[k]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V470]
+我之所以会搜集金钱，都是因为金钱是[r]『支配人们的存在』，是『权力的象征』。[wait tVoice]
+[k]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V480]
+人们希望神明是爱众人，[r]并能将世界美好运营的存在。[wait tVoice]
+[k]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V490]
+也就是支配者。[r]非常简单易懂吧。[wait tVoice]
+[k]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V500]
+对我来说，主之心就是这样的存在。[wait tVoice]
+[k]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V510]
+所以，[r]积攒金钱是一种喜悦。[wait tVoice]
+[k]
+
+[charaFace B 4]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V520]
+……虽说教会有『不可在地上积攒财富』这条教诲……[wait tVoice]
+[k]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V530]
+但我并不觉得金钱就是财富，[r]也不会执着于搜集来的金钱。[wait tVoice]
+[k]
+
+[charaFace B 1]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V540]
+只是对积攒力量象征[r]这一行为感到兴奋而已。[wait tVoice]
+[k]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V550]
+我没有『买喜欢的东西』、『用金钱过奢侈生活』[r]这种想法，不好意思啦。[wait tVoice]
+[k]
+
+？1：原来如此……原来如此？
+？2：只是客观存在的集资装置……
+
+？！
+
+[charaFace B 6]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V560]
+不过，重要东西遭没收以至于惊慌失措的样子[r]令人看得兴奋难耐，这点确为事实。[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V570]
+那么，祝你愉快。[r]这神之空间是与外部时间相距甚远的空间。[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_7 4.0]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V580]
+如果吃腻了，你也不用把威化饼全部吃光，[r]请在适当的时候告一段落。[wait tVoice]
+[k]
+
+？1：啊，慢着。谢谢你的礼物！
+
+？！
+
+[messageOff]
+[charaFace B 3]
+[wt 0.7]
+
+[charaFace B 0]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V590]
+该道谢的应该是我。[bgm BGM_EVENT_2 0.1][r]因为那是有偿爱。[wait tVoice]
+[k]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V600]
+我并不是免费送给你那个的。[r]正所谓各取所需。[wait tVoice]
+[k]
+
+？1：？　但所谓的有偿究竟该怎么有偿？
+
+？！
+
+[charaFace B 1]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V610]
+那还用问吗，[r]当然由你给我回报啦。[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V620]
+……让我想想。[r]当有一天你拯救了世界之后。[wait tVoice]
+[k]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V630]
+身躯疲劳，丧失了时间，[r]内心无数次受到伤害[line 3][wait tVoice]
+[k]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V640]
+即便是在逞强，如果能像现在这样向我[r]露出开朗笑容的话，应该就行了吧。[wait tVoice]
+[k]
+
+[charaFace B 1]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V650]
+那是非常有价值的东西，[r]所以才是无法定价的奇迹。[wait tVoice]
+[k]
+
+＠卡莲
+[tVoice ValVoice_901100 0_V660]
+因为我知道，所谓『真正的爱』[r]就是这样的存在。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[se ade404]
+[seVolume ade404 0 0.1]
+[seVolume ade404 1.5 1.0]
+[fadeout white 1.5]
+[bgm BGM_EVENT_2 1.5 0.5]
+[wait fade]
+
+[seStop ade404 0.8]
+[charaFadeout B 0.1]
+
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 104200]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 105500]
+[label lblConf2]
+[wt 1.5]
+
+[fadein white 1.5]
+[bgm BGM_EVENT_2 1.5 1.0]
+[wait fade]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V670]
+…………[wait tVoice]
+[k]
+
+？1：吃光堆积如山的威化饼之后，
+？2：发现已经回到了熟悉的迦勒底通道。
+
+？！
+
+[charaFace A 12]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V680]
+突然消失又突然出现……[r]难道这种事对你来说算家常便饭吗？[wait tVoice]
+[k]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V690]
+不，虽说[#老夫:我]貌似也有莫名相似的宿命，[r]但神隐也太过头了吧？[wait tVoice]
+[k]
+
+[charaFace A 6]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V700]
+什么？　这次还算正常的？[r]威化饼很好吃？[wait tVoice]
+[k]
+
+[charaFace A 7]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V710]
+算了，既然本人无所谓就好。[r]你手里小心翼翼拿着的那个就是起因吧。[wait tVoice]
+[k]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V720]
+状似红色心脏的巧克力啊。[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_2 4.0]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V730]
+虽然萦绕着恶魔般不祥的气息，[r]但既然倾注了心意，应该不是什么坏东西吧。[wait tVoice]
+[k]
+
+[charaFace A 14]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V740]
+啊，不对，上面贴着价标哦？[bgm BGM_EVENT_7 0.1][r]让[#老夫:我]瞧瞧……建议零售价，100亿QP[line 3][wait tVoice]
+[k]
+
+[charaFace A 19]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V750]
+[line 3]好，[#老夫:我]什么都没看到！[r]再会啦，[%1]！[wait tVoice]
+[k]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V760]
+驱除恶魔记得要找专家哦！[wait tVoice]
+[k]
+
+[messageOff]
+[se ade421]
+[seStop ade421 1.8]
+[charaFadeout A 0.4]
+[wt 2.0]
+
+？1：[line 3]这不还是定价了嘛！
+
+？！
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

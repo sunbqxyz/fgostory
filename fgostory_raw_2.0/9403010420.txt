@@ -1,0 +1,479 @@
+
+
+＄94-03-01-04-2-0
+
+
+[soundStopAll]
+
+[charaSet A 5040000 1 谜之护法少女（剪影）]
+[charaFilter A silhouette 19B7B0FF]
+[charaSet B 1098157600 1 护法少女]
+
+[charaSet C 1098157700 1 小动物]
+[charaSet D 99502600 1 玛修]
+[charaSet E 3034002 1 茨木童子]
+[charaSet F 10008001 1 志度内]
+[charaSet H 98115000 1 特效用]
+[charaSet G 98115000 1 特效用2]
+
+
+
+
+[scene 10000]
+
+
+[charaTalk off]
+[charaDepth B 10]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_sakura01]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[charaTalk depthOff]
+[charaDepth B 0]
+[charaDepth C 1]
+
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 1.0 1]
+[charaFadein C 1.0 0,0]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[bgm BGM_HALLOWEEN_2 0.1]
+
+[charaTalk on]
+
+＠护法少女
+[line 3]上天允许没什么关系吧？
+[k]
+
+＠护法少女
+[line 3]大地允许嘛，也就这么回事吧？[r][line 3]人类允许根本无关紧要。
+[k]
+
+＠护法少女
+但是呀。[r]鬼是否允许可就取决于鬼了。
+[k]
+
+＠小动物
+哼。
+[k]
+
+＠小动物
+你就随心所欲地放手去干吧。[r]反正不关我的事。
+[k]
+
+＠护法少女
+[line 3]妾身就是护法，护法乃是妾身[line 3]
+[k]
+
+
+[scene 27600 0.5]
+[charaPut G 2000,2000]
+[charaEffectStop G bit_talk_sakura01]
+[charaPut H 1]
+[charaFace B 7]
+[charaEffect H bit_talk_41]
+[cameraMove 0.2 0,0 1.1]
+[se ade211]
+
+＠护法少女
+护法少女，再次前来造访！
+[k]
+
+[messageOff]
+[se ade217]
+[effect bit_talk_magic_girl_light]
+[wt 3.0]
+
+？1：你又来了啊，护法少女！
+？2：兼用卡出现啦！
+
+？！
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[charaSet G 4008002 1 黑胡子之鬼]
+
+[cameraHome 0.1]
+[charaPut H 1200,1200]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaTalk depthOn]
+[charaEffectStop H bit_talk_41]
+[wt 0.5]
+
+[scene 64700]
+
+[charaEffect H bit_talk_10_LowLevel]
+
+[wipein rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+[wt 0.5]
+
+[charaTalk on]
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠玛修
+不知道是不是我多心了，该怎么说呢，[r]似乎已经完全模式化了……！
+[k]
+
+[charaFadeout D 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+[wt 0.1]
+
+[charaSet D 98115000 1 特效用2]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠茨木童子
+你在说什么呢。[r]就是这样的啦。吾每周都很期待哦。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠志度内
+哎，唔。是这样的吗？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOff]
+[charaDepth B 0]
+[charaDepth C 1]
+[charaDepth D 2]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 0,0]
+[wt 0.5]
+[se ade126]
+
+[charaFace B 7]
+[charaPut D 100,50]
+[charaDepth D 10]
+[charaEffect D bit_talk_rainbow_star]
+[wt 1.5]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaPut H 1200,1200]
+[charaPut D 1200,1200]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠茨木童子
+！[messageShake 0.01 3 3 0.6]！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠黑胡子之鬼
+！[messageShake 0.01 3 3 0.6]！！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaEffect H bit_talk_41]
+
+[charaTalk off]
+[charaFace E 2]
+[charaFace G 2]
+[charaFadein E 0.1 2]
+[charaFadein G 0.1 0]
+＠鬼与胡子
+刚……刚才绝对看这边了！　视线对上了！
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠茨木童子
+……你在说什么呢。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠黑胡子之鬼
+……不是，谁都是会犯错啦，一次错误还是能原谅的。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠茨木童子
+护法少女·鬼救阿看的是吾，不是汝，[r]再说区区人类不要因为见到了鬼就那么高兴啦。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠黑胡子之鬼
+哈啊？　是萌角还是萌鬼妹啦！[r]小心在下用拟鬼的惯用表现搞死你哦，啊啊？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠茨木童子
+完全不知道汝在说什么啦！[r]哎，御主，事情越来越混乱了，快点解决这家伙吧！
+[k]
+
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_41]
+[charaEffect H bit_talk_10_LowLevel]
+
+[charaSet D 99502600 1 玛修]
+
+＠茨木童子
+吾已经像这样提升了自己和鬼救阿的配对度了！[r]为何还要进行这种无谓的对话啦！
+[k]
+
+？1：啊，之所以第三再临就是为了这个啊！
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠玛修
+原来是这样啊！[r]确实，现在的茨木小姐既时尚又可爱呢！
+[k]
+
+[charaFadeout D 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠茨木童子
+是……是吗？[wt 0.5][charaFace E 1][r]唔呼呼。
+[k]
+
+＠茨木童子
+时尚这个词就是和鬼救阿登对的意思吧！[r]一定是这样吧！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 0]
+[charaDepth C 1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠护法少女
+真精神呢。呵呵呵呵呵。[r]和妾身两人一起当[#双]护法少女也挺好吧？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠茨木童子
+！！
+[k]
+
+[charaFace E 1]
+
+＠茨木童子
+双护法少女呀！！　真不错！
+[k]
+
+[charaSet D 98115000 1 特效用2]
+
+？1：双！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaDepth C 10]
+[charaFace B 1]
+[charaFace C 0]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 0,0]
+
+＠护法少女
+干脆由妾身和你[line 3][r]洒脱地将黄金抽掉吧？
+[k]
+
+
+？2：护法少女小姐，拜托啦！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 0]
+[charaDepth C 1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFace C 5]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 0,0]
+
+＠护法少女
+好啦好啦，交给妾身吧～。
+[k]
+
+＠小动物
+哼。又打算自命正义的使者了吗。
+[k]
+
+[charaFace B 6]
+
+＠护法少女
+唔～，你要是总是说这种狂妄的话，就要遭这种待遇了哦。[r]挤压挤压～。
+[k]
+
+[messageOff]
+[charaMove B 50,0 0.3]
+[wt 0.3]
+[se ad181]
+
+[charaFace C 2]
+[charaShake C 0.04 4 4 0]
+＠小动物
+呀啊！
+[k]
+
+[messageOff]
+[charaShakeStop C]
+[charaMove B 1 0.3]
+[wt 0.3]
+
+＠护法少女
+好，结束。那快走吧～♪
+[k]
+
+[charaFace C 4]
+
+＠小动物
+好痛好痛痛……[r]所以才说鬼这种存在太可怕了……
+[k]
+
+？！
+
+
+[charaFace B 0]
+＠护法少女
+[line 3]鬼，即为鬼。就是这样。
+[k]
+
+＠护法少女
+[line 3]说是护法，终究还是个鬼。[r][line 3]可能会碎你的骨，撕你的肉，将你刺穿。
+[k]
+
+＠护法少女
+还请见谅哟？[r]黑胡子游乐设施经理先生。
+[k]
+
+[messageOff]
+[bgmStop BGM_HALLOWEEN_2 0.3]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.5]
+[charaTalk depthOn]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠黑胡子之鬼
+十分感谢！　求之不得！[r]不如说希望大家一起[line 3]扑向在下的胸膛啦！
+[k]
+
+＠黑胡子之鬼
+[f large]扑[messageShake 0.01 3 3 0.6]向在下的胸膛啦！
+[k]
+
+[messageOff]
+[wt 0.1]
+[se bac30]
+[charaPut H 1]
+[charaMoveScale G 1.2 0.2]
+[charaMove G 0,-5 0.2]
+[wt 0.6]
+
+
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[seStop ad556 0.4]
+[wait fade]
+[charaEffectStop H bit_talk_41]
+[soundStopAll]
+[end]

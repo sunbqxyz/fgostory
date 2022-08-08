@@ -1,0 +1,1087 @@
+
+＄94-05-53-09-1-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 6041000 1 鬼一法眼]
+[charaSet C 4013300 1 梅芙]
+[charaSet D 1098206200 1 弁庆]
+[charaSet E 98104200 1 伊阿宋]
+[charaSet F 98104010 1 库·丘林·Alter]
+[charaSet G 1098206100 1 牛若丸]
+
+[charaSet H 1098204000 1 狄俄斯库里·卡斯托耳]
+[charaSet I 1098204100 1 狄俄斯库里·波鲁克斯]
+[charaSet M 1098204000 1 狄俄斯库里·卡斯托耳·剪影]
+[charaFilter M silhouette 00000080]
+[charaSet N 1098204100 1 狄俄斯库里·波鲁克斯·剪影]
+[charaFilter N silhouette 00000080]
+
+[charaSet J 11007000 1 织田信长]
+[charaSet K 11007000 1 织田信长·剪影]
+[charaFilter K silhouette 00000080]
+
+[charaSet L 2041000 1 织田信胜]
+
+[imageSet Q cut243_text01 1]
+
+[charaSet R 98115000 1 特效用dummy]
+
+[charaEffect R bit_talk_10_LowLevel]
+[charaPut R 1200,1200]
+
+[fowardEffectPause bit_talk_gram_slash_03_fs]
+
+
+[scene 109700]
+
+[fadein black 1.5]
+[wait fade]
+[wt 1.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠伊阿宋
+找到坏牛若了吗？
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+[charaMove D -20,0 0.2]
+[wt 0.2]
+[charaMove D 20,0 0.4]
+[wt 0.4]
+[charaMove D 0,0 0.2]
+[wt 0.3]
+
+＠弁庆
+很遗憾。你那边如何？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠库·丘林·Alter
+没有。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠梅芙
+真是的，到底怎么回事啦。[r]出来的尽是些多余的家伙[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+
+＠牛若丸
+我逃跑的速度还真快呢。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+这可就不好说了哦。[r]没法保证她在云上一次恶都没做吧？
+[k]
+
+？1：确实。
+？2：可能还给我们留了什么陷阱。
+
+？！
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut R 0,0]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+请等一下，前辈！
+[k]
+
+[bgmStop BGM_EVENT_70 1.0]
+[charaFace A 7]
+
+＠玛修
+出现魔力反应。[r]恐怕是数骑迦勒底的从者……
+[k]
+
+[messageOff]
+
+[charaPut R 1200,1200]
+[charaFadeout A 0.1]
+[charaFadeout R 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaFace M 0]
+[charaFace N 0]
+[charaFadein M 0.4 -100,0]
+[charaFadein N 0.4 100,0]
+[wt 0.4]
+
+
+[fowardEffectStart]
+[se ad171]
+[wt 0.5]
+
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[wt 0.6]
+
+[fowardEffectDestroy]
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠鬼一法眼
+！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[se ad7]
+
+[charaFace M 0]
+[charaFace N 0]
+[charaFadein M 0.1 -100,0]
+[charaFadein N 0.1 100,0]
+[wt 0.3]
+
+[fowardEffect bit_talk_gram_slash_04_fs]
+[se ad171]
+[wt 0.4]
+
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[wt 0.3]
+
+[fowardEffect bit_talk_14]
+[se ad170]
+
+[charaTalk depthOn]
+
+[charaScale B 1.2]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 0,5]
+[se ad671]
+[charaMoveScale B 1.0 0.3]
+[charaMove B 0,0 0.3]
+[charaShake B 0.03 3 2 0.4]
+[wt 0.7]
+
+[charaFace B 5]
+
+＠鬼一法眼
+什么人！
+[k]
+
+＠鬼一法眼
+哎呀，很高兴看到你们那么血气方刚！[r]迦勒底还是有劲头十足的人嘛！
+[k]
+
+[messageOff]
+[charaFace B 8]
+[wt 1.0]
+[charaFace B 6]
+
+＠鬼一法眼
+毕竟此前咱见到的大多都是[r]在御主面前讲规矩懂礼貌的英灵，
+[k]
+
+[charaFace B 5]
+
+＠鬼一法眼
+咱还以为都是这样呢，[r]怎么！　这就对了嘛！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.6]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaFace M 0]
+[charaFace N 0]
+[charaFadein M 0.1 -100,0]
+[charaFadein N 0.1 100,0]
+[wt 0.5]
+
+[charaDepth H 2]
+[charaDepth I 3]
+[charaDepth M 4]
+[charaDepth N 4]
+
+[charaFace H 0]
+[charaFace I 0]
+[charaFadein H 0.1 -100,0]
+[charaFadein I 0.1 100,0]
+[wt 0.1]
+[charaFadeout M 0.7]
+[charaFadeout N 0.7]
+[wt 1.6]
+
+[charaTalk on]
+
+[charaFace H 2]
+[bgm BGM_EVENT_5 0.1]
+
+
+＠狄俄斯库里·卡斯托耳
+你们的旅途！　就要在此终结了！
+[k]
+
+[charaFace I 4]
+
+＠狄俄斯库里·波鲁克斯
+如您所见，哥哥现在很有干劲。[r]对不起啦，御主。
+[k]
+
+[charaFace H 5]
+
+＠狄俄斯库里·卡斯托耳
+不用道歉，波鲁克斯！
+[k]
+
+[charaFace I 0]
+
+
+＠狄俄斯库里·波鲁克斯
+但是哥哥。
+[k]
+
+？1：狄俄斯库里！
+
+？！
+
+[charaFace H 2]
+
+＠狄俄斯库里·卡斯托耳
+不准随便叫我们的名字！
+[k]
+
+[charaFace I 1]
+
+＠狄俄斯库里·波鲁克斯
+是的，御主。
+[k]
+
+[charaFace H 5]
+
+＠狄俄斯库里·卡斯托耳
+波鲁克斯！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+
+＠库·丘林·Alter
+小丑已经够多了。[r]给我让开。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠梅芙
+哇哦！　小库好严厉！　我喜欢！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠伊阿宋
+喂，你。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadein H 0.1 -100,0]
+[charaFadein I 0.1 100,0]
+
+＠狄俄斯库里·卡斯托耳
+……区区英灵，这可不是该对神说的话哦。
+[k]
+
+[charaTalk I]
+[charaFace I 0]
+
+＠狄俄斯库里·波鲁克斯
+算啦算啦哥哥，[r]毕竟人家所处的时代与地域与我们都不相同……
+[k]
+
+[messageOff]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[se adm21]
+[charaMoveReturn E 0,25 0.3]
+[wt 0.6]
+
+
+＠伊阿宋
+我说你们。[r]能看在我的面子上让一下吗？
+[k]
+
+＠伊阿宋
+虽然我不知道坏牛若想做什么，[r]但帮助那家伙对你们没有好处吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk I]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadein H 0.1 -100,0]
+[charaFadein I 0.1 100,0]
+
+＠狄俄斯库里·波鲁克斯
+伊阿宋。
+[k]
+
+[charaTalk H]
+[charaFace H 0]
+
+＠狄俄斯库里·卡斯托耳
+英雄伊阿宋。[r]只要你开口，一定程度内的事我都愿意听。
+[k]
+
+＠狄俄斯库里·卡斯托耳
+但是，唯独这次不行。[r]放弃吧。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠伊阿宋
+什么！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk I]
+[charaFace H 0]
+[charaFace I 4]
+[charaFadein H 0.1 -100,0]
+[charaFadein I 0.1 100,0]
+
+＠狄俄斯库里·波鲁克斯
+对不起，伊阿宋。[r]哥哥他这次彻底来劲了。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+[bgmStop BGM_EVENT_5 1.5]
+
+＠伊阿宋
+唔，唔唔唔唔唔……[r]对方竟开出了连老交情都行不通的条件吗！？
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.4 1]
+[wt 0.4]
+
+＠？？？
+哟哟，说得对！[r]那对双子神中的一个已经被彻底收买了！
+[k]
+
+＠？？？
+我不知道那家伙是牛若丸还是九郎判官义经，[r]总之就是受这么一个人所托！
+[k]
+
+＠？？？
+说只要妨碍路过这里的御主，[r]就可以用万宝小槌帮我们实现愿望！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+
+＠牛若丸
+什么人！
+[k]
+
+[messageOff]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaDepth Q 4]
+[charaDepth K 4]
+[charaDepth J 3]
+[charaDepth L 2]
+
+[charaFace K 0]
+[charaFadein K 0.1 0,0]
+[wt 0.5]
+
+[charaFace J 1]
+[charaFadein J 0.1 0,0]
+[wt 0.1]
+[charaFadeout K 0.7]
+[wt 1.6]
+
+[charaTalk on]
+[charaTalk J]
+[charaFace J 1]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠织田信长
+是我啦，是我！
+[k]
+
+？1：信！
+？！
+
+[messageOff]
+
+[charaTalk depthOff]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.4 330,0]
+[wt 1.4]
+
+？1：另外，你身后的难道是……
+？！
+
+[charaFadeout J 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOn]
+
+[charaTalk L]
+[charaFace L 1]
+[charaFadein L 0.1 1]
+
+
+＠织田信胜
+啊，是我。[r]有姐姐大人在的地方当然就有我信胜在！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠弁庆
+哦，连弟弟也来了啊。[r]这么看来，这次是兄弟英灵负责阻挡我们吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+怎么了怎么了。[r]相亲相爱的兄弟英灵军团袭来。
+[k]
+
+＠鬼一法眼
+这该怎么说？
+[k]
+
+[charaFace B 17]
+
+＠鬼一法眼
+既然叫狄俄斯库里，应该是双子星吧？[r]再加上一组像是来自日本的姐弟英灵。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠织田信长
+我是第六天魔王织田信长！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠织田信胜
+你好，我是弟弟信胜。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+唔？　织田？
+[k]
+
+[charaFace B 4]
+
+
+＠鬼一法眼
+咱其实活得相当久，[r]也见过很多人类……
+[k]
+
+[charaFace B 18]
+
+
+＠鬼一法眼
+织田信长是这种感觉的人吗？
+[k]
+
+
+？1：这么一说，我们好像常常会忘记，
+？2：因为信是……唠唠叨叨时空的人吧？
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠伊阿宋
+为什么？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 19]
+[charaFadein B 0.1 1]
+
+
+＠鬼一法眼
+[FFFFFF]？？？[-]
+[k]
+
+[charaFace B 0]
+
+＠鬼一法眼
+算了，织田信长（？）的问题先搁置不谈，[r]这里是空中的云上。
+[k]
+
+[charaFace B 16]
+
+＠鬼一法眼
+……[r]……
+[k]
+
+[charaFace B 18]
+
+＠鬼一法眼
+…………不明白。这是什么状况？
+[k]
+
+？1：的确很不可思议呢……
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠织田信长
+噢噢，不明白吗？[r]传说中的阴阳师也没什么大不了的嘛。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+唔唔唔唔唔。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠织田信长
+真相十分单纯。[r]你看，狄俄斯库里原本是星之神吧？
+[k]
+
+＠织田信长
+所以就算在云上也没什么好奇怪的。[r]是这样吧。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠弁庆
+这倒是。
+[k]
+
+？1：但信为什么会在？
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+
+＠织田信长
+不明白吗～。
+[k]
+
+？2：信和云上没什么关系吧？
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+
+＠织田信长
+呵呵呵！
+[k]
+
+？！
+
+[charaFace J 0]
+
+＠织田信长
+因为我是第六天魔王嘛！[r]是天之魔王嘛！
+[k]
+
+[charaFace J 1]
+
+＠织田信长
+那天空、云上自然也是我的领域！[r]这下说通了吧～！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+原来如此～？
+[k]
+
+？1：第六天的天可以这么解释吗？
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+在佛道中，天就是梵语中的提婆。[r]代表了天人居住的最胜之世。
+[k]
+
+＠鬼一法眼
+而第六天，就是他化自在天，[r]是欲界的第六天……
+[k]
+
+[charaFace B 17]
+
+＠鬼一法眼
+说这是云上世界，[r]也不能算错吧？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+
+＠织田信长
+你看是吧！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+
+＠鬼一法眼
+毕竟咱和天没什么关系嘛。[r]因为咱是山的那个的那个。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠织田信长
+我现在心情愉快，[r]所以顺便告诉你们好了。
+[k]
+
+
+＠织田信长
+在这次的骚动中，[r]我无论如何都要站在那家伙那边。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠伊阿宋
+哦？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+这又是为什么？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+
+＠织田信长
+因为我流着[#平家的血脉]嘛！
+[k]
+
+[se ade178]
+[charaFadein Q 0.4 0,-90]
+[wt 1.9]
+
+[charaFadeout Q 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk L]
+[charaFace L 2]
+[charaFadein L 0.1 1]
+
+＠织田信胜
+啊啊！[r]姐姐大人，这话不该公开说吧……
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaTalk J]
+[charaFace J 2]
+[charaFadein J 0.1 1]
+
+＠织田信长
+为……为什么！[r]我是平家的人！　是平家的后裔啊！
+[k]
+
+[se ade178]
+[charaFadein Q 0.4 0,-90]
+[wt 1.9]
+
+[charaFadeout Q 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+[FFFFFF]？[-]？？
+[k]
+
+[charaFace G 7]
+
+
+＠牛若丸
+为什么会提到自己是平家的话题？[r]虽说我确实是源氏，曾经与平家有过纷争，
+[k]
+
+[charaFace G 5]
+[bgmStop BGM_EVENT_7 1.3]
+
+
+＠牛若丸
+但我现在是英灵。[r]我们共有同一个御主[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad60]
+[seStop ad60 0.5]
+
+[charaTalk depthOff]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFace I 0]
+[charaFadein H 0.1 -100,0]
+[charaFadein I 0.1 100,0]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠狄俄斯库里·卡斯托耳
+不用再废话了。[r]我要将你们扫荡干净，实现愿望。
+[k]
+
+[se ad51]
+[charaFace H 2]
+
+＠狄俄斯库里·卡斯托耳
+上，波鲁克斯！
+[k]
+
+[charaFace I 2]
+
+＠狄俄斯库里·波鲁克斯
+好的，哥哥！[r]对不起，御主！
+[k]
+
+[se ad51]
+
+＠狄俄斯库里·波鲁克斯
+麻烦您稍微配合一下……！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+
+
+＠织田信长
+哇哈哈哈哈哈哈哈我们也上吧，信胜！[r]另外，出现吧，鸦天狗军团！
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[effect bit_talk_06_b3]
+[se adm30]
+[wt 2.0]
+
+[effectStop bit_talk_06_b3]
+[seStop adm30 1.5]
+[wt 1.0]
+
+[se ade159]
+[se ade437]
+[se ade4]
+[wt 1.5]
+[seStop ade159 0.5]
+[seStop ade4 0.5]
+[wt 0.5]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠弁庆
+唔，鸦天狗！[r]经由万宝小槌与义经大人的缘分召唤出来的吗！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+
+＠织田信长
+做好思想准备了吗，迦勒底的各位！
+[k]
+
+[charaFace J 2]
+
+＠织田信长
+那么[line 3]来吧，前往本能寺！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 2]
+[charaFadein L 0.1 1]
+
+
+＠织田信胜
+姐姐大人，这样说会输的啦！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

@@ -1,0 +1,572 @@
+
+
+＄94-04-49-11-2-0
+
+
+[soundStopAll]
+
+[skip false]
+
+[branchQuestNotClear lblNotClear1 3000320 4]
+[label lblClear1]
+[flag IsGirl true]
+[branch lblIsClearConf1]
+[label lblNotClear1]
+[flag IsGirl false]
+[label lblIsClearConf1]
+
+[skip true]
+
+[charaSet A 2035000 1 帕里斯]
+[charaSet B 3016000 1 赫克托耳]
+[charaSet C 7027300 1 Amazones CEO_普通]
+[charaSet D 1098119600 1 Amazones CEO_轱辘]
+[charaSet F 6008000 1 Cosmotic Beauty夫人]
+[charaSet G 99502600 1 玛修]
+[charaSet H 6011001 1 Ci-Sha Jingke社长]
+[charaSet I 1098126200 1 搬运魔偶]
+[charaSet J 5009000 1 特效用]
+
+[branch lblNotGirl1 IsGirl false]
+[label lblGirl1]
+[charaSet E 1098124510 1 达·芬奇]
+[branch lblIsGirlConf1]
+[label lblNotGirl1]
+[charaSet E 98111500 1 达·芬奇]
+[label lblIsGirlConf1]
+
+[scene 90000]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+[charaPut C 1200,1200]
+[charaEffect C bit_talk_charge_red]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠帕里斯
+精疲力尽了～。[r]我动不了了……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠赫克托耳
+哎呀，好厉害的[#暴力:力量]啊，虽说大叔我早知道了。[r]这种过于单纯的暴力实在是有点……
+[k]
+
+＠赫克托耳
+不是说不能选择死撑，[r]但付出的劳力得不到相应的回报。
+[k]
+
+＠赫克托耳
+毕竟就算设下陷阱，[r]陷阱也可能被破坏嘛……
+[k]
+
+[bgmStop BGM_EVENT_7 1.5]
+
+[charaFace B 1]
+
+＠赫克托耳
+反正总之啦，嗯，[r]大叔我已经很努力了。投降～。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠Amazones CEO
+[#Grrrr:我要杀了你]……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut C 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠赫克托耳
+大叔我已经投降了啦，[r]能不能麻烦你住手呢！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[branch lblNotGirl2 IsGirl false]
+[label lblGirl2]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+[branch lblIsGirlConf2]
+[label lblNotGirl2]
+[charaFace E 4]
+[charaFadein E 0.1 0,-90]
+[label lblIsGirlConf2]
+
+＠达·芬奇
+表面上投降，反正你也不打算说吧？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠赫克托耳
+差不多吧。
+[k]
+
+＠赫克托耳
+做事要讲道理，[r]这样肯定也是为了你们好。
+[k]
+
+[charaFace B 1]
+
+＠赫克托耳
+还剩10层。继续努力攀登吧。[r]她就在上面等你们。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_3 1.2]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Cosmotic Beauty夫人
+她？　也就是说……黑幕是女人吧？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[branch lblNotGirl3 IsGirl false]
+[label lblGirl3]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+[branch lblIsGirlConf3]
+[label lblNotGirl3]
+[charaFace E 4]
+[charaFadein E 0.1 0,-90]
+[label lblIsGirlConf3]
+
+＠达·芬奇
+…………
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+
+＠玛修
+…………
+[k]
+
+？1：…………
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠Cosmotic Beauty夫人
+大家为什么都沉默了？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠赫克托耳
+这个嘛，估计大家都隐约觉察到了吧。[r]直觉好的人或许从一开始就发现了。
+[k]
+
+[charaFace B 4]
+
+＠赫克托耳
+那你们继续加油吧。[r]大叔我的腰腿和膝盖……差不多到极限了……呜哎……
+[k]
+
+[messageOff]
+[charaMove B 0,-50 0.4]
+[charaFadeout B 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.2]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠Amazones CEO
+…………
+[k]
+
+[messageOff]
+[charaEffectStop C bit_talk_charge_red]
+[wt 0.1]
+[charaFaceFade C 0 0.2]
+[wait charaEffect C bit_talk_charge_red]
+
+＠Amazones CEO
+本想让商业间谍用身体了解[r]自己的行为有多么愚蠢[line 3]
+[k]
+
+[bgmStop BGM_EVENT_5 1.2]
+
+＠Amazones CEO
+但现在时间宝贵。处置与应对就交给外包公司的你们了。[r]哪个公司都行。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠Ci-Sha Jingke社长
+哇～。要捅一刀吗？　要捅一刀吗？
+[k]
+
+？1：我觉得把他押去没有退路的设施，
+？2：并扔进对腰部有效的炎热空间里比较好。
+？！
+
+＠Ci-Sha Jingke社长
+也就是看准弱点进行拷问吧？　太没人性了！[r]听上去很有意思，那这件事就让给你吧！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Amazones CEO
+唔。无需对敌人手下留情。[r]你终于明白商业活动有多残酷了呢。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+＠玛修
+呃……言下之意就是，[r]我应该先去桑拿室预约个位置吧……？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgmStop BGM_EVENT_7 0.7]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Amazones CEO
+那我们继续前进吧。
+[k]
+
+＠Amazones CEO
+这座塔里的配送工作还剩10件。[r]很快就能与黑幕做个了断了。
+[k]
+
+[charaFace C 2]
+
+＠Amazones CEO
+但劳累困顿的配送后期总是容易事故频发。[r]一定要打起精神来！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[charaFadeout C 0.1]
+[wt 1.0]
+[wipeFilter cinema 0.5 0]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth B 2]
+
+＠赫克托耳
+没有人来迎接我们呢……[r]没办法了，[wt 0.4][se ad7][seVolume ad7 0 0.6][charaTalk B][charaFace B 4][charaFadein B 0.2 0,-80][charaMove B 0,-50 0.4]嘿咻。
+[k]
+
+
+＠帕里斯
+我还动不了啦～。[r]对不起……
+[k]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaFace B 0]
+
+＠赫克托耳
+你也让人没办法呢。
+[k]
+
+＠赫克托耳
+但既然把你拖来帮忙，我自然也有责任。[r]何况你现在还是体重很轻的时期，应该没什么问题吧。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMove B -64,-50 0.5]
+[wait charaMove]
+[charaMove B -64,-90 0.4]
+[wait charaMove]
+[se ad77]
+[seVolume ad77 0 0.4]
+[charaFace A 4]
+[charaFadein A 0.1 80,-30]
+[charaMove B -64,-50 0.4]
+[charaMove A 80,20 0.4]
+[wait charaMove]
+
+[wt 0.7]
+
+[charaTalk on]
+[charaFace A 1]
+
+＠帕里斯
+哇～，背我！
+[k]
+
+＠帕里斯
+好久没有让哥哥背我了。[r]太令人高兴了！
+[k]
+
+[charaFace B 1]
+
+＠赫克托耳
+你还是那么缺乏紧张感。
+[k]
+
+[charaFace B 0]
+
+＠赫克托耳
+让你陪我跑这么一趟，我确实有些过意不去，[r]但这件事你也有一定的责任哦？
+[k]
+
+[charaFace A 0]
+
+＠帕里斯
+[FFFFFF]？？？[-]　指什么啊？
+[k]
+
+[charaFace A 4]
+
+＠帕里斯
+难道我做了什么坏事……？
+[k]
+
+＠赫克托耳
+不，并不是坏事。
+[k]
+
+[charaFace B 4]
+
+＠赫克托耳
+只是……从不同的视角来看，[r]事态仿佛在你看不到的地方越来越无法控制……
+[k]
+
+＠赫克托耳
+唔……仔细想来，这和特洛伊时一样吧。[r]你还真是背负着注定被卷入这种事的宿命呢。
+[k]
+
+[charaFace A 0]
+
+＠帕里斯
+[FFFFFF]？？？[-]
+[k]
+
+[charaFace B 1]
+
+＠赫克托耳
+不，不用介意。[r]接下来都是那边的问题了。
+[k]
+
+[charaFace B 0]
+
+＠赫克托耳
+好了，那我们就恭敬地收下御主的厚意，[r]去泡个澡好好休息吧。
+[k]
+
+[charaFace A 1]
+
+＠帕里斯
+啊，对了对了～！[r]我好久没有帮哥哥搓背了！
+[k]
+
+[charaFace B 1]
+
+＠赫克托耳
+哎，那太让人高兴了。
+[k]
+
+＠赫克托耳
+没想到居然还能有机会和你做这种事呢。[r]从者这种存在真是[line 3][charaFace B 2][charaMoveReturn B -64,-47 0.1][cueSe Battle bac314][cueSeVolume bac314 0 0.2]
+[k]
+
+
+[charaFace A 2]
+
+＠帕里斯
+哥哥？　没事吧，哥哥～！？
+[k]
+
+[charaFace B 5]
+
+＠赫克托耳
+呜噢噢……全力战斗后就背上弟弟，[r]好像还是有点累人呢……！？
+[k]
+
+＠赫克托耳
+这么说来，我忘了计算羊的重量了……！
+[k]
+
+[charaFace B 0]
+
+＠赫克托耳
+好嘞，帕里斯。你哥哥我看来到此结束了。[r]别管我了，你一个人走吧。
+[k]
+
+[charaFace A 5]
+
+＠帕里斯
+哎～，不要啦。[r]我要和哥哥一～起～去～啦～。
+[k]
+
+[charaFace B 4]
+
+＠赫克托耳
+啊～真是的，你不要太任性[line 3][charaFace B 0]唔？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[se ad57]
+[seVolume ad57 0 0.2]
+[seVolume ad57 1.3 0.4]
+[wt 1.4]
+[seVolume ad57 1.5 0.6]
+[wt 1.4]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-50]
+[seStop ad57 0.1]
+
+＠搬运魔偶
+…………
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace A 1]
+[charaFadein A 0.1 -288,-50]
+[charaFace B 0]
+[charaFadein B 0.1 288,-50]
+[charaMove A -304,-30 0.3]
+[charaMove B 304,-30 0.3]
+[se ad77]
+[seVolume ad77 0 0.6]
+[wt 0.5]
+[seStop ad77 0.1]
+
+[wt 1.2]
+
+[se ad57]
+[seVolume ad57 0 0.3]
+
+[charaTalk on]
+
+＠帕里斯
+这是面具Caster先生的魔偶吧。[r]它好像愿意把我们带去设施哦！
+[k]
+
+＠帕里斯
+是御主安排的吗？
+[k]
+
+[charaFace B 4]
+
+＠赫克托耳
+真是的……
+[k]
+
+[charaFace B 0]
+
+＠赫克托耳
+有劳你来做这种不擅长的工作了。
+[k]
+
+[charaFace B 1]
+
+＠赫克托耳
+没办法，既然是别人的好意，那就恭敬不如从命吧。[r]可别半路把我们丢下不管哦？
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[seStop ad57 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

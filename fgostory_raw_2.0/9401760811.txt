@@ -1,0 +1,186 @@
+
+
+＄94-01-76-08-1-1
+[soundStopAll]
+
+
+[charaSet A 1098119600 1 Amazoness CEO_轱辘]
+[charaSet B 6017001 1 卡米拉]
+[charaSet C 6027001 1 不～夜～亲]
+[charaSet D 10004000 1 机械伊丽亲]
+[charaSet E 6026001 1 新宿的Assassin]
+[charaSet F 98006200 1 怪物]
+[charaSet G 7027300 1 Amazoness CEO]
+[charaSet H 5009000 1 特效用dummy]
+
+[scene 20602]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_3 0.1]
+[wait fade]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠Amazoness CEO
+用南瓜派办家庭派对！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[wt 0.4]
+[charaEffect F bit_talk_14]
+[se bac10]
+[wt 0.1]
+[shake 0.05 2 2 0.4]
+
+[charaSpecialEffect F enemyErasure 1 3]
+[wt 1.0]
+[se ad42]
+[wait charaSpecialEffect F]
+
+[bgmStop BGM_EVENT_3 0.7]
+[wt 1.0]
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠卡米拉
+这算哪门子吆喝声……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠A：Amazoness CEO
+当然是美式的啦。
+[k]
+
+＠A：Amazoness CEO
+要吃吗？
+[k]
+
+？1：不，我对凝视者稍微有点……
+
+＠A：Amazoness CEO
+没关系，迦勒底的御主。[r]对人类来说，只要不是毒，吐出来就没事了。
+[k]
+
+？2：等我回去再吃吧
+
+＠A：Amazoness CEO
+原来如此，但这样一来，[r]交流会成为安全隐患吧？
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠不～夜～亲
+为什么你总是摆出那种转轱辘的动作？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠A：Amazoness CEO
+这……是为什么呢……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠机械伊丽亲
+风险企业的高层就是这样的。[r]是想要抓住某种看不见的存在的无意识表现吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠新宿的Assassin
+休息结束。[r]好了，我们继续沿着墙壁往上攀登吧。
+[k]
+
+[charaFace E 1]
+
+＠新宿的Assassin
+嗨咻！
+[k]
+
+[messageOff]
+[charaMoveReturn E 0,-10 0.2]
+[wait charaMove E]
+[se ad73]
+[charaFadeout E 0.1]
+
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠A：Amazoness CEO
+依照我的看法，当我想传达自己印象的时候，[r]无意识中……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠卡米拉
+走啦，赶快做准备。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠Amazoness CEO
+唔呜呜。
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.4]
+[soundStopAll]
+[end]

@@ -1,0 +1,158 @@
+＄91-20-11-01-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 10902]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98003000 2 Dr.罗曼]
+[charaSet C 2011001 1 尼古拉·特斯拉]
+[charaSet D 98002000 1 芙芙]
+[charaSet E 98006100 1 ？？？]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0 1]
+[fadein black 1]
+[wait fade]
+＠玛修
+击破敌对势力。[r]战斗结束[line 2]
+[k]
+
+[charaFadeout A 0.1]
+[bgmStop BGM_EVENT_2 0.4]
+[bgm BGM_EVENT_3 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[se ad21]
+[wt 0.3]
+＠？？？
+[line 6]。
+[k]
+
+[charaFadeout E 0.1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠玛修
+……！？[r]还有残余的……！
+[k]
+
+[charaFadeout A 0.1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠尼古拉·特斯拉
+雷电一闪！！
+[k]
+
+[messageOff]
+[se ad61]
+[seStop ad61 4.0]
+[backEffect bit_talk_lightning_01t]
+[wt 1.0]
+[charaFadeout C 0.1]
+[wt 0.2]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.2]
+[effect bit_talk_lightning_03t]
+[backEffectStop bit_talk_lightning_01t]
+[se ad63]
+[flashin once 0.1 0.3 FFFFFFAF 00000000]
+[flashin once 0.1 1.2 FFFFFFAF 00000000]
+[wt 0.8]
+[charaSpecialEffect E enemyErasure 1 3]
+[wt 1.0]
+[se ba5]
+[wait charaSpecialEffect E]
+[bgmStop BGM_EVENT_3 0.4]
+[wt 0.5]
+[bgm BGM_EVENT_2 0.1]
+[charaTalk C]
+[charaFace A 14]
+[charaFadein A 0.1 2]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+＠尼古拉·特斯拉
+掉以轻心可是致命的。[r]务必注意。
+[k]
+
+＠尼古拉·特斯拉
+那是具备相当于气息遮断程度大魔术的那类魔术书吧。
+[k]
+
+[charaTalk A]
+[charaFace A 8]
+＠玛修
+非常感谢，特斯拉先生。[r]……今后我会注意的。
+[k]
+
+[charaTalk C]
+[charaFace C 4]
+＠尼古拉·特斯拉
+调整好呼吸。[r]看，来了个大的。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+啊，又比我快[line 2][r]正如他所说的，发现了巨大魔力反应！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠玛修
+……我也感受到了。[r]近似于龙种，居然凝集了如此巨大的魔力！
+[k]
+
+[charaTalk E]
+[bgmStop BGM_EVENT_2 0.4]
+[se ad23]
+[wt 0.3]
+[bgm BGM_EVENT_3 0.1]
+＠？？？
+[fontSize large]GAAAAAAAAA！！[fontSize -]
+[k]
+
+[charaFadeout A 0.1]
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+这……这反应！！[r]该不会是真正的恶魔之类的存在吧[line 2]！？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠尼古拉·特斯拉
+哈哈哈哈哈哈哈哈！！[r]毫无问题！
+[k]
+
+＠尼古拉·特斯拉
+旧世界神秘的存在！[r]哈哈哈！　无论你如何巨大、强大、极大！
+[k]
+
+[charaFace C 2]
+＠尼古拉·特斯拉
+只要有我在！[r]这开拓新世界，引领人类神话的睿智！
+[k]
+
+＠尼古拉·特斯拉
+也就是！[r]人类神话·雷电降临[line 2]！！
+[k]
+
+[charaFadeout C 0.5]
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,394 @@
+
+
+＄94-04-91-04-2-1
+
+
+[soundStopAll]
+
+[branchQuestNotClear lblNotClear 3000320]
+
+
+[charaSet A 8001410 1 玛修]
+[branch lblConf]
+
+[label lblNotClear]
+[charaSet A 8001000 1 玛修]
+
+[label lblConf]
+
+
+[charaSet B 3038000 1 长尾景虎]
+[charaSet C 1044000 1 斋藤一]
+[charaSet D 1098195000 1 山南敬助]
+[charaSet E 1027001 1 冲田总司]
+[charaSet F 2041000 1 织田信胜]
+[charaSet G 1098196100 1 埴轮]
+
+[charaSet S 5009040 1 特效用dummy]
+[charaSet O 5009040 1 特效用dummy]
+
+[charaPut O 1200,1200]
+[charaEffect O bit_talk_radiallight01]
+
+[charaDepth G 7]
+[charaDepth O 4]
+
+[scene 20803]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFadein G 0.1 0,0]
+[charaPut O 0,0]
+[wt 1.0]
+
+
+[fadeout white 0.3]
+[se ade456]
+[wait fade]
+
+[charaFadeout G 0.1]
+[charaPut O 1200,1200]
+[charaEffectStop O bit_talk_radiallight01]
+
+[charaFace B 8]
+[charaFadein B 0.1 0,0]
+[charaEffect B bit_talk_shadow_aura01]
+
+[wt 0.5]
+
+[fadein white 0.5]
+[se ad783]
+[seStop ad783 0.6]
+[seStop ade456 0.5]
+[wait fade]
+
+[wt 1.0]
+
+[charaPut S 0,0]
+[charaEffect S bit_talk_atomization]
+[wt 0.5]
+[cueSe Battle ba6]
+
+[charaEffectStop B bit_talk_shadow_aura01]
+[wt 4.0]
+
+[charaEffectDestroy S bit_talk_atomization]
+[charaEffectDestroy B bit_talk_shadow_aura01]
+
+
+
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 1]
+
+
+
+[label INPUT_SELECT_BRANCH_1]
+
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 8]
+＠长尾景虎
+输……输掉了……喵。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠玛修
+这……这群埴轮的数量真可怕呢，前辈。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+＠长尾景虎
+明明在战术上获得了胜利，却输在了力量上，[r]身为军神也太丢人了……
+[k]
+
+[charaFace B 14]
+＠长尾景虎
+但我就喜欢这种！
+[k]
+
+[charaFace B 1]
+＠长尾景虎
+还是强行突破不利的战况[r]才能算战斗的乐趣嘛！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠斋藤一
+不不，饶了我吧。
+[k]
+
+＠斋藤一
+这个强得离谱的小姐是谁啊？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠长尾景虎
+是战国最强的军神，有问题吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 16]
+[charaFadein D 0.1 1]
+＠山南敬助
+难道又是你们的熟人？
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[wt 1.0]
+
+
+
+[branch INPUT_SELECT_BRANCH_3]
+
+
+
+[label INPUT_SELECT_BRANCH_2]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 8]
+＠长尾景虎
+输……输掉了……喵。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+果然是景虎小姐呢。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+
+
+＠长尾景虎
+由于输在了战术上，[r]我本打算凭我一己之力逆转战况，
+[k]
+
+＠长尾景虎
+可没想到却因为埴轮的手臂太短，[r]根本无法自如地掌控武器……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠斋藤一
+什么叫无法自如地掌控啊。
+[k]
+
+[charaFace C 7]
+＠斋藤一
+你在身为埴轮的状况下已经强得离谱了吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠长尾景虎
+这就没办法了，毕竟我是战国最强的军神嘛。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 16]
+[charaFadein D 0.1 1]
+＠山南敬助
+难道又是你们的熟人？
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[wt 1.0]
+
+
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_3]
+
+
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠长尾景虎
+对，我也同样被关进了埴轮，[r]但总之先把附近的埴轮们痛揍了一遍，
+[k]
+
+
+＠长尾景虎
+并将它们全都收为部下，[r]结果不知不觉被它们当做神明供奉起来了……
+[k]
+
+[charaFace B 14]
+＠长尾景虎
+但毕竟我是军神，这也在所难免吧？
+[k]
+
+？1：总之还好把你解放出来了。
+
+？2：这位是长尾景虎小姐。
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠斋藤一
+话说，这位小姐就是长尾景虎……
+[k]
+
+[charaFace C 7]
+＠斋藤一
+也就是说，她就是越后之龙，上杉谦信？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠长尾景虎
+没错，剑术莫名难缠的人。
+[k]
+
+[charaFace B 8]
+＠长尾景虎
+下次突击时麻烦再痛快点。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠斋藤一
+承蒙夸奖不胜荣幸。
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 16]
+[charaFadein D 0.1 1]
+＠山南敬助
+哎呀呀，你认识的都是些不得了的人物呢。
+[k]
+
+
+＠山南敬助
+没想到那位上杉谦信居然是这般威风凛凛的女性……
+[k]
+
+[charaFace D 11]
+＠山南敬助
+照这样下去，下次出现的应该就是信长公了吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠冲田总司
+希望她别出来！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠织田信胜
+姐姐大人！　您到底在哪儿啊～！！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+
+＠冲田总司
+信胜先生，你居然在啊！？
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

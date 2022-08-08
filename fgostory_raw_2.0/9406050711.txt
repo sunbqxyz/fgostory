@@ -1,0 +1,515 @@
+
+
+＄94-06-05-07-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098218120 1 カーマ]
+[charaSet B 3030000 1 パールヴァティー]
+
+[charaSet D 98111500 1 エフェクト用ダミー1]
+[charaSet E 98111500 1 エフェクト用ダミー2]
+[charaSet F 98111500 1 エフェクト用ダミー3]
+
+[imageSet G back10000 1]
+[charaScale G 1.1]
+
+
+[scene 107300]
+
+[fadein black 1.5]
+[bgm BGM_BATTLE_101 0.1]
+[wait fade]
+
+[wt 0.4]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[se ad73]
+
+[fowardEffect bit_talk_x_slash_bk_01]
+[wt 0.1]
+[se bac138]
+[wt 0.3]
+
+[fowardEffect bit_talk_dark_blade]
+[se ad1053]
+[wt 0.3]
+[wt 0.7]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.1]
+
+[se ad809]
+[wt 0.3]
+[charaShake B 0.04 3 3 0.2]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[se ad1032]
+[wt 0.3]
+[charaShake B 0.04 3 3 0.4]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[se ad1031]
+[wt 1.0]
+
+[charaFace B 2]
+[se ad39]
+[fowardEffect bit_talk_36]
+[wt 1.0]
+
+[fadeout white 1.0]
+[wait fade]
+
+[fowardEffectDestroy bit_talk_36]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+[charaDepth D 2]
+[charaDepth E 2]
+[charaDepth F 2]
+[charaDepth A 4]
+
+[fadein white 1.0]
+[wait fade]
+
+[charaDepth A 10]
+[charaScale D 2.0]
+[charaPut D -400,420]
+[se ad626]
+[charaEffect D bit_talk_lightning_03t]
+[wt 0.3]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[seStop ad626 0.4]
+[shake 0.03 3 3 0.5]
+[charaPut D 2000,2000]
+[wt 0.3]
+
+[charaScale E 2.0]
+[charaPut E 400,420]
+[se ad626]
+[charaEffect E bit_talk_lightning_03t]
+[wt 0.3]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[seStop ad626 0.4]
+[shake 0.03 3 3 0.5]
+[charaPut E 2000,2000]
+[wt 0.3]
+
+[charaScale F 2.0]
+[charaPut F 0,420]
+[se ad626]
+[charaEffect F bit_talk_lightning_03t]
+
+[fadeout white 0.5]
+[se ad226]
+[seVolume ad226 0 0.6]
+[seStop ad626 0.4]
+[shake 0.03 3 3 1.0]
+[wait fade]
+[wt 1.0]
+
+[charaPut F 2000,2000]
+
+[charaEffectStop D bit_talk_lightning_03t]
+[charaEffectStop E bit_talk_lightning_03t]
+[charaEffectStop F bit_talk_lightning_03t]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[fadein white 1.0]
+[shake 0.03 3 3 1.5]
+[wait fade]
+[wt 0.7]
+[charaDepth A 4]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.5]
+[bgm BGM_BATTLE_101 1.0 0.7]
+
+？1：（本当に大丈夫？）
+？！
+
+[charaFace B 0]
+
+＠パールヴァティー
+（はい。改めて言いましょう。[r]　この調子であれば、大丈夫です）
+[k]
+
+[charaFace B 4]
+
+＠パールヴァティー
+（カーマは全ての人類を等しく愛せる神。[r]　言い換えれば[line 3]）
+[k]
+
+[charaFace B 9]
+
+＠パールヴァティー
+（[#誰か一人だけを特別に愛するのは難しい]んです。[r]　少し哀しいことではありますが）
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[charaCrossFade A 1098221500 15 0.5]
+[wait charaCrossFade A]
+
+＠カーマ
+ちょっと、この期に及んでまだひそひそと！[r]見せつけてるんですか、見せつけてますね？
+[k]
+
+[charaFace A 2]
+
+＠カーマ
+このイライラは単にパールヴァティーを[r]ぶっ飛ばしても晴れないとみました！
+[k]
+
+＠カーマ
+じゃあ対抗しまーす！[r]私もやりまーす！
+[k]
+
+[messageOff]
+
+[bgmStop BGM_BATTLE_101 1.5]
+
+
+[charaMoveScale A 1.2 0.5]
+[charaMove A 0,20 0.5]
+[wt 0.3]
+[se ad183]
+[shake 0.03 1 0 0.4]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠パールヴァティー
+マスターさんの逆の耳に……！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_TEITO 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,20]
+
+＠カーマ
+（ねえ、マスターさん。止めましょうよ。そんな[r]　結局はシヴァのものな女とひそひそ話するより、）
+[k]
+
+＠カーマ
+（どこまでも自由で甘やかしてあげる私とやったほうが[r]　絶対に楽しいし興奮しますってば。ねえ……）
+[k]
+
+？1：（ええと……）
+？2：（内緒話ごっこがしたいのかな？）
+？！
+
+[charaFace A 13]
+
+＠カーマ
+ん、おや？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut G 0,0]
+[charaFadeTime G 0.1 0.5]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+[bgmStop BGM_TEITO 1.8]
+
+＠パールヴァティー
+（逆にカーマの耳に口を寄せて……？）
+[k]
+
+[messageOff]
+
+[charaPut G 2000,2000]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,20]
+[wt 1.5]
+
+？1：せっかくの夏だし（ひそひそ）
+？2：できれば二人とも仲良くしてほしいな（ひそひそ）
+？！
+
+[charaFace A 3]
+[charaMoveReturn A 0,50 0.3]
+
+＠カーマ
+ひゃん！？
+[k]
+
+[messageOff]
+
+
+[bgm BGM_EVENT_27 0.1]
+[se ad443]
+[charaMoveScale A 1.0 0.3]
+[charaMove A 0,0 0.3]
+[wt 0.5]
+[seStop ad443 0.1]
+[wt 0.5]
+
+[charaFace A 9]
+
+＠カーマ
+なっ、なっ、なっななな。
+[k]
+
+[charaFace A 10]
+
+＠カーマ
+耳元でひそひそ、逆にやられると……
+[k]
+
+＠カーマ
+息がふぅーってかかって、温度も感じて、[r]こんなに……どきどきするなんて……。
+[k]
+
+
+[charaFace A 11]
+
+＠カーマ
+えーい落ち着け、落ち着きなさい私。[r]とにかく魔王の威厳だけはキープして[line 3]
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_27 1.5]
+[wt 1.0]
+
+
+[charaMoveReturn A 0,-7 0.3]
+[charaFace A 13]
+
+＠カーマ
+おほん。
+[k]
+
+[charaFace A 2]
+[bgm BGM_EVENT_7 0.1]
+
+＠カーマ
+というわけで！[r]そんなわけで！
+[k]
+
+[charaFace A 6]
+
+＠カーマ
+パールヴァティーをただぶっ飛ばしても[r]こっちの格が下がるだけなんで、
+[k]
+
+＠カーマ
+ここはもっと私らしいやり方でいこうと思います。
+[k]
+
+[charaFace A 8]
+
+＠カーマ
+具体的には[line 3]勿論、[r]マスターさんに愛を与えてあげる感じです。
+[k]
+
+[charaFace A 7]
+
+＠カーマ
+実のところ、この島の宝探しイベントには[r]まだ満足してない感じですよねぇ？
+[k]
+
+＠カーマ
+だから追加で私プロデュースのお宝を[r]配置してあげますよ。
+[k]
+
+[charaFace A 4]
+
+＠カーマ
+適度な謎解きとか困難を乗り越えて、[r]素晴らしいお宝を手に入れるという快楽……
+[k]
+
+[charaFace A 6]
+
+＠カーマ
+それを丸ごと与える堕落の愛！
+[k]
+
+＠カーマ
+そしてマスターさんが私の愛を受け入れることで、[r]私はさらに夏の魔王としてレベルアップ。
+[k]
+
+[charaFace A 7]
+
+＠カーマ
+もはや逃げられない。[r]ノーエスケイプ、ノーフューチャー。
+[k]
+
+[charaFace A 1]
+
+＠カーマ
+フフフ……完璧です！　これならきっと[r]マスターさんも屈してくれることでしょう。
+[k]
+
+[charaFace A 19]
+
+＠カーマ
+それじゃあ、[r]私は宝を埋める準備がありますのでこれで。
+[k]
+
+[charaFace A 9]
+
+＠カーマ
+けっして、さっき耳にかかった吐息がまだ忘れられなくて[r]ムズムズしてるわけじゃないですからねー！
+[k]
+
+
+[messageOff]
+[se ade97]
+[bgmStop BGM_EVENT_7 1.0]
+[wt 0.4]
+
+[charaMove A -350,0 0.3]
+[wt 0.2]
+[charaFadeout A 0.3]
+[wt 0.5]
+[seStop ade97 0.5]
+
+？1：何だったんだろう……
+？！
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaScale B 1.0]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠パールヴァティー
+ええと……だから、ですね。
+[k]
+
+＠パールヴァティー
+自分自身では気付いていないのでしょうが、[r]カーマ的には根本的に慣れない状況なので、
+[k]
+
+＠パールヴァティー
+絶対に本調子ではいられないはずというか、[r]バランスが崩れているに決まっているというか。
+[k]
+
+＠パールヴァティー
+つまり、私が思うに[line 3][r]明確な弱点が生まれている気がします。
+[k]
+
+＠パールヴァティー
+ひょっとしたらマスターさんも[r]今までの冒険の間に感じていたかもしれませんが。
+[k]
+
+＠パールヴァティー
+ステータスを攻撃一辺倒に変えたあまり、防御の数値が[r]今までと比べても遥かに下がってしまった的な。
+[k]
+
+[charaFace B 9]
+
+＠パールヴァティー
+そうですね。有り体に、わかりやすく言ってしまえば、[r]今のカーマは普段より遥かに[line 3]
+[k]
+
+[charaFace B 6]
+
+＠パールヴァティー
+[f large]チョロいです。
+[k]
+
+？1：？？？
+？！
+
+[charaFace B 0]
+
+＠パールヴァティー
+つまりそういうことなので、ある程度は[r]好きにやらせても大丈夫かなーと思っている次第です。
+[k]
+
+[charaFace B 1]
+
+＠パールヴァティー
+放っておいてもさっきみたいに自爆しますから。
+[k]
+
+[charaFace B 0]
+
+＠パールヴァティー
+加えて安全面での最後の最後のところは[r]私が監視していますので、やっぱり危険はありません。
+[k]
+
+＠パールヴァティー
+カーマの性格からして、[r]用意される追加のお宝は本当にお宝でしょう。
+[k]
+
+
+
+
+[charaFace B 1]
+
+＠パールヴァティー
+あまり気にせずおまけの宝探し、[r]追加の夏を楽しめばいいのではと思いますよ。
+[k]
+
+＠パールヴァティー
+それでは！
+[k]
+
+
+
+
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,270 @@
+
+
+＄94-06-43-08-2-1
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5050000 1 サンタマルタ]
+[charaSet B 2001002 1 エミヤ]
+[charaSet C 7016001 1 タマモキャット]
+[charaSet D 99502600 1 マシュ]
+[charaSet E 98001000 1 エフェクト用]
+[charaSet F 98001000 1 エフェクト用2]
+[charaSet G 99348500 1 魔神柱ハーゲンティ]
+[charaSet H 3047001 1 パーシヴァル]
+[charaSet I 4011001 1 ブーディカ]
+[imageSet T back10000 1 1]
+[charaScale T 1.02]
+
+[charaDepth T 2]
+
+[bgm BGM_EVENT_24 0.1]
+[scene 140600]
+
+[cameraMove 0.1 0,0 1.01]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.2]
+[flashin once 0.2 0.1 FFFFFFAF FFFFFF00]
+[wt 0.2]
+[se bac136]
+[charaShake G 0.03 3 3 0.2]
+[wt 0.2]
+[flashin once 0.2 0.1 FFFFFFAF FFFFFF00]
+[wt 0.2]
+[se bac139]
+[charaShake G 0.03 3 3 0.3]
+[wt 1.0]
+
+[shake 0.05 3 3 2.0]
+[se ad14]
+[seVolume ad14 0 0]
+[seVolume ad14 0.7 1.0]
+[wt 1.5]
+[seStop ad14 2.0]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_24 1.5]
+＠マシュ
+臨界状態です！[r]魔神柱型巨大ケーキ、消失します……！
+[k]
+
+[messageOff]
+[charaTalk G]
+[se ad569]
+[wt 0.7]
+[se ad952]
+[seStop ad952 3.0]
+[wt 0.5]
+[fadeout white 1.5]
+[wait fade]
+
+[cameraHome 0.1]
+
+[se ad42]
+[charaFadeout G 0.1]
+[branchQuestNotClear lblNotClear1 3000303]
+
+[scene 104600]
+
+[branch lblConf1]
+
+[label lblNotClear1]
+
+[scene 141300]
+
+[label lblConf1]
+
+[charaPut E 2000,2000]
+[charaEffect E bit_talk_10_LowLevel]
+
+[wt 3.0]
+[fadein white 2.0]
+[wait fade]
+
+[wt 1.0]
+
+[charaPut E 0,0]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+
+＠マシュ
+聖杯および原初のルーンの影響によって[r]拡大していた地下食料保管庫、通常に戻りました！
+[k]
+
+＠マシュ
+それに伴い、[r]皆さんの現在位置も微妙に変化して……
+[k]
+
+
+＠マシュ
+地下ではありますが、[r]地下食料保管庫とは異なる場所に[line 3]
+[k]
+
+[messageOff]
+[charaFace D 6]
+[wt 1.0]
+[charaFace D 5]
+
+＠マシュ
+あっ、聖杯です！[r]聖杯が出現します！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaPut E 12000,12000]
+[wt 0.1]
+
+[charaPut F 0,0]
+[charaEffect F bit_talk_20]
+[se bas2]
+[wt 1.5]
+[charaEffectStop F bit_talk_20]
+[wt 1.0]
+[charaPut F 12000,12000]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠サンタマルタ
+聖杯……[r]これが……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+
+＠エミヤ
+大規模な魔力リソースとしての存在だ。[r]少なくとも、救世主の血を受けたソレではないさ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠サンタマルタ
+そう[line 3]なのね。
+[k]
+
+[charaFace A 0]
+
+
+＠サンタマルタ
+でも、これ以上悪さをする前に止められて[r]良かったわ。お姉さんひと安心！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠タマモキャット
+そんなことより聖杯だ！[r]そんなことより食材だ！
+[k]
+
+[charaFace C 1]
+＠タマモキャット
+聖杯＆食材、いっぺんにダブルゲットなのだな！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠サンタマルタ
+ええ！　ダブルゲットね！
+[k]
+
+？1：これで！　全食材ゲットだー！
+
+？！
+
+＠サンタマルタ
+お疲れさま！[r]それに、みんなありがとう！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth I 7]
+[charaDepth C 6]
+[charaDepth B 7]
+[charaDepth H 4]
+
+[charaTalk off]
+[charaFace B 3]
+[charaFace H 1]
+[charaFadeinFSL B 0.1 0]
+[charaFadeinFSR H 0.1 2]
+[wt 1.5]
+[charaFadeout B 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaFace I 3]
+[charaFace C 1]
+[charaFadeinFSR I 0.1 2]
+[charaFadeinFSL C 0.1 0]
+[wt 1.5]
+[charaFadeout I 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk on]
+
+[charaPut E 0,0]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[wt 1.5]
+[charaFadeout D 0.1]
+[charaPut E 12000,12000]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠サンタマルタ
+あなたもね、マスター。[r]ここまで力を貸してくれて、本当にありがとう。
+[k]
+
+＠サンタマルタ
+結構大変な道のりだったと思うし、[r]みんなが大変だったのも見てきたけれど。
+[k]
+
+＠サンタマルタ
+それでもね、こう思うの。
+[k]
+
+[messageOff]
+[charaFace A 6]
+[wt 1.0]
+[charaFaceFade A 1 0.7]
+[wt 1.4]
+
+＠サンタマルタ
+[line 3]楽しかったわ！　心から！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.5]
+[fadeout black 1.5]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

@@ -1,0 +1,662 @@
+
+
+＄94-06-28-06-1-0
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 2045000 1 ゼノビア]
+[charaSet B 4046000 1 エリザベート]
+[charaSet C 2031001 1 ナポレオン]
+[charaSet D 1009001 1 モードレッド]
+[charaSet E 25010000 1 ジャックドモレー]
+[sceneSet F 136902 1]
+[charaScale F 1.3]
+
+[imageSet G cut299_doll_master_male 1]
+[charaScale G 1.01]
+[imageSet H cut299_doll_master_female 1]
+[charaScale G 1.01]
+
+[charaSet S 98115000 1 エフェクト用]
+
+[scene 10000]
+
+[fadein black 1.5]
+[wait fade]
+
+＠
+[line 3]前回までのあらすじ
+[k]
+
+＠
+[%1]が、[r]ボスキャラになってしまった！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[scene 136902]
+[wt 1.0]
+
+[se ade159]
+[fadein black 1.5]
+[wait fade]
+[wt 1.5]
+
+[se ade255]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.7 0,-10]
+[charaMove A 0,0 0.8]
+[bgm BGM_MAP_10 0.1]
+[wt 1.2]
+
+
+＠ゼノビア
+くっ……。[r]無事か、エリザベート？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad892]
+[seVolume ad892 0 0.5]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 0,-20]
+[charaMove B -6,-10 0.4]
+[wt 0.4]
+[charaMove B 0,0 0.4]
+[wt 0.6]
+
+[charaFaceFade B 18 0.2]
+
+＠エリザベート
+だ、だ、だいじょうぶよ～♪[r]頭がクラクラするけど～♪
+[k]
+
+＠エリザベート
+死んでいないと思うわ、たぶん～♪
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ゼノビア
+モードレッド！　ナポレオン！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[se ad7]
+[wt 0.8]
+
+[se ad1006]
+[charaTalk C]
+[charaPut C 0,0]
+[charaFace C 0]
+[charaEffect C bit_talk_quickmove 0,0 H]
+[charaSpecialEffect C appearanceReverse 1 0.2]
+[charaMoveReturn C 0,6 0.4]
+[wt 1.4]
+
+[charaFace C 4]
+
+＠ナポレオン
+オーララ！[r]派手に吹き飛んだぜ。
+[k]
+
+＠ナポレオン
+……で、どういうことだいこの森は。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFadein F 1.5 150,-300]
+[charaMove F -150,-300 6.0]
+[wt 4.5]
+[charaFadeout F 1.5]
+[wt 2.5]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠モードレッド
+うお、ヤベえなこの森。[r]ファンシー通り越してブッ飛んだナイトメア状態だ。
+[k]
+
+＠モードレッド
+なあ[%1]、[r]おまえはだいじょう[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_10 2.0]
+[charaFace D 8]
+[wt 1.3]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth A 5]
+[charaDepth C 6]
+
+[charaFace A 12]
+[charaFadeinFSR A 0.1 2]
+
+[charaFace C 2]
+[charaFadeinFSL C 0.1 0]
+[wt 1.6]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 1.5]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[masterBranch _Male _Female]
+
+[label _Male]
+
+[cueSe SE_21 21_ade578]
+[charaTalk G]
+[charaFadein G 0.4 0,-200]
+[wt 2.5]
+[charaFadeout G 0.4]
+[wt 0.4]
+
+[branch _branchEnd]
+
+[label _Female]
+
+[cueSe SE_21 21_ade578]
+[charaTalk H]
+[charaFadein H 0.4 0,-200]
+[wt 2.5]
+[charaFadeout H 0.4]
+[wt 0.4]
+
+[branch _branchEnd]
+
+[label _branchEnd]
+
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+[bgm BGM_EVENT_27 0.1 0.7]
+
+＠モードレッド
+……。[r]……ぶ、じゃなさそうだな……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠ゼノビア
+おまえ……[%1]なのか！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠エリザベート
+え、えええええ！？[r][&子イヌ:子ジカ]！　ホントに[&子イヌ:子ジカ]！？
+[k]
+
+？1：一体何がどうなっているのやら……
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se adm37]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠モードレッド
+ほら、オレの剣で姿を映してみろ。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[branch select_01]
+
+？2：頭が……重たい……
+
+？！
+
+[charaFace B 4]
+
+＠エリザベート
+そ、そうね。[r][#南瓜:かぼちゃ]になってるし……。
+[k]
+
+？1：……[#南瓜:かぼちゃ]？
+？！
+
+[messageOff]
+[wt 0.1]
+
+[label select_01]
+
+[wt 1.0]
+
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[scene 110101]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+？1：ギャーーー！！！
+？！
+
+
+[messageOff]
+[bgmStop BGM_EVENT_27 2.0]
+[wt 1.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+
+
+[scene 136902]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_145 0.7]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠モードレッド
+落ち着いたか？
+[k]
+
+？1：長年ハロウィンやってるけど……
+？2：とうとう自分がパンプキンヘッドになるとは……
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+＠ゼノビア
+に、人間には滅多にない経験だな！　うん！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠エリザベート
+[&子イヌ:子ジカ]、可哀想に……。
+[k]
+
+＠エリザベート
+……。[r]……。
+[k]
+
+[charaFace B 0]
+
+＠エリザベート
+これからは子[#南瓜:かぼちゃ]って呼んだ方がいいかしら？
+[k]
+
+？1：やめて！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠モードレッド
+（それはそれとして、[r]　わりかし元気なのがスゲえなこいつ）
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadeinFSL C 0.1 0]
+
+[charaFace D 8]
+[charaFadeinFSR D 0.1 2]
+
+＠ナポレオン
+（ああ、大した[&少年:お嬢さん]だぜ……。[r]　相当の修羅場に慣れているんだろう……）
+[k]
+
+
+[charaFace D 9]
+
+＠モードレッド
+にしても、吹っ飛ばされてきたもんだから[r]場所がわかんねーな。ンだよこの森。
+[k]
+
+[charaFace C 8]
+
+＠ナポレオン
+これからのことを考えるためにも、[r]どこかに一度腰を落ち着けたいものだが……
+[k]
+
+＠ナポレオン
+オレたちの根城とは、[r]だいぶ離れた場所にいるようだからな。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠エリザベート
+探せば別の家くらいあるでしょう～♪[r]童話の森には～、お菓子の家がつきものよ～♪
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠ナポレオン
+そう……かな？[r]まあ、ずっとここにいても始まらん。
+[k]
+
+[charaFace C 0]
+
+＠ナポレオン
+とりあえず動いてみるか。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_145 1.5 0.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 1.0]
+
+[cueSe SE_21 21_ad1066]
+[seVolume 21_ad1066 0 0.1]
+[seVolume 21_ad1066 1.0 1.0]
+[fadein black 1.5]
+[wait wipe]
+[wt 1.2]
+[seStop 21_ad1066 1.0]
+
+[bgm BGM_EVENT_145 1.0 1.0]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+＠ゼノビア
+ここも立地的には私の国の一部のはずだが……
+[k]
+
+[charaFace A 5]
+
+＠ゼノビア
+ええい、奇怪で不快な森だ。[r]森林資源は大事だが、いっそ焼き払ってしまおうか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadeinFSR B 0.1 2]
+
+[charaFace A 5]
+[charaFadeinFSL A 0.1 0]
+
+＠エリザベート
+や、焼き払うのは～、止めましょうね～？
+[k]
+
+[charaFace A 4]
+
+＠ゼノビア
+この前は焼いてスッキリと言っていなかったか？[r]まあ、焼かないに越したことはないが……
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+
+＠？？？
+そうそう、そうですともー。
+[k]
+
+＠？？？
+たしかに奇怪な森だけど、これはこれで[r]冒涜感マシマシでいいじゃないですかー。
+[k]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[bgmStop BGM_EVENT_145 2.0]
+
+＠エリザベート
+まあそういう気持ちはわからなくもないけど……。[wt 1.0][charaFace B 5][r]ど……ど？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.7 1]
+[wt 1.4]
+
+＠モレー
+いやあ、その……どうもどうも。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠エリザベート
+何でここにモレー！？[r]い～る～の～！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se adm37]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠モードレッド
+追いかけてきたか、テメエ！
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 26]
+[charaFadein E 0.1 1]
+＠モレー
+待った待った！[r]こうさん、こうさんしまーす！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠モードレッド
+うるせえブッ殺し確定だ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠ナポレオン
+落ち着け、モードレッド！[wt 1.0][charaFace C 8][r]さて、些か毒気が抜け落ちた総長殿。
+[k]
+
+＠ナポレオン
+降参とはどういうことかな？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_3 1.7]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠モレー
+やー、言葉まんまの意味ですって。[r]降参、降伏、大惨敗、あたしの負けでーす。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠モードレッド
+へえ。[r]じゃあ、この特異点は解決か。
+[k]
+
+＠モードレッド
+お疲れ解散さようなら。[r]……って訳にはいかなそうだな、オイ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+＠モレー
+あー……実はーですねー……そのー……。
+[k]
+
+＠モレー
+[f small]大きい声では言えねーのですが……。
+[k]
+
+＠モレー
+[%1]が、[r]暴走しちゃって……。
+[k]
+
+[charaFace E 11]
+
+[bgmStop BGM_EVENT_5 2.0]
+
+＠モレー
+あたし……皆さんと同様に……[r]吹き飛ばされました……。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace D 8]
+[charaFadeinFSR D 0.1 2]
+
+[charaFace C 4]
+[charaFadeinFSL C 0.1 0]
+[wt 1.6]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaFace A 12]
+[charaFadeinFSL A 0.1 0]
+
+[charaFace B 2]
+[charaFadeinFSR B 0.1 2]
+[wt 1.6]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠全員
+はぁ！？
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

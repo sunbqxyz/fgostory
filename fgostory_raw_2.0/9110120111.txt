@@ -1,0 +1,417 @@
+
+
+＄91-10-12-01-1-1
+[soundStopAll]
+
+[charaSet A 1012000 1 贝德维尔]
+[charaSet B 1012002 1 贝德维尔（第三灵基）]
+[charaSet C 98006100 1 鱼？]
+[charaSet H 5009000 1 dummy]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 21103]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[fadein black 1.0]
+[wait fade]
+
+[scene 10001 1.0]
+
+
+＠B：贝德维尔
+[f large][#一闪即逝，银之臂:Dead End Agateram]！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout B 0.1]
+
+[messageOff]
+
+[wt 0.5]
+[charaPut H -250,0]
+[charaFadein C 0.1 1]
+[charaScale H 3]
+[se bac7]
+[charaEffect H bit_talk_Slash01]
+[wt 1.0]
+[se ad22]
+[capture]
+[specialEffect cutting]
+[charaFadeout C 0]
+[charaFadeout H 0.1]
+[charaEffectStop H]
+[scene 21103 1.0]
+[wt 1.0]
+[bgmStop BGM_EVENT_3 0.5]
+
+[charaTalk B]
+[charaFace B 0]
+[wt 1.0]
+[charaFadein B 0.7 1]
+
+[wt 2.0]
+
+[messageOff]
+[charaFilter B silhouette FFFFFF80]
+[se ad39]
+[wt 1.0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.7 1]
+[wt 0.2]
+[charaFadeout B 0.7]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 1]
+＠贝德维尔
+……[r]……
+[k]
+
+[bgm BGM_EVENT_2 1.0]
+
+[messageOff]
+[wt 0.5]
+[charaFace A 0]
+[wt 1.0]
+
+＠贝德维尔
+……请容我再次为我的失礼道歉。
+[k]
+
+[charaFace A 4]
+
+＠贝德维尔
+就算是用模拟装置，[r]维持主人的安全明明也是我们的职责……
+[k]
+
+＠贝德维尔
+这次是竹篮打水一场空……[r]请原谅我，[%1]。
+[k]
+
+？1：没什么原不原谅的。
+？2：既然平安无事，就没关系啦。
+
+？！
+
+[messageOff]
+[wt 1.0]
+[charaFace A 3]
+[wt 1.0]
+[charaFace A 10]
+＠贝德维尔
+……太感谢了。[r]您的这份温柔、宽容拯救了我。
+[k]
+
+[messageOff]
+
+[wt 1.0]
+[charaFace A 0]
+[wt 0.8]
+
+[charaFace A 5]
+＠贝德维尔
+那么…………………………
+[k]
+
+
+[charaFace A 8]
+＠贝德维尔
+机会难得，我们开始吃吧。
+[k]
+
+？1：啥？
+？2：我不太明白你在说什么。
+
+？！
+
+[charaFace A 5]
+＠贝德维尔
+我拥有[#生前:过去]的记忆。[r]比如说，对，圆桌、亚瑟王语录其八。
+[k]
+
+[charaFace A 2]
+＠贝德维尔
+“就算是怪物的肉　也是营养！”
+[k]
+
+＠贝德维尔
+来吧，御主。请您复述一次！
+[k]
+
+？1：对哦[line 3]
+？2：贝德维尔是这种人！
+
+？！
+
+[messageOff]
+[shake 0.05 1.0 1.0 0.5]
+[se ad173]
+[charaMoveScale A 0.98 0.2]
+[charaMove A 5,-10 0.2]
+[seStop ad173 0.5]
+[wt 0.5]
+[shake 0.05 1.0 1.0 0.5]
+[se ad173]
+[charaMoveScale A 0.95 0.2]
+[charaMove A 0,-20 0.2]
+[seStop ad173 0.5]
+[wt 0.8]
+[shake 0.05 1.0 1.0 0.5]
+[se ad173]
+[charaMoveScale A 0.92 0.2]
+[charaMove A 5,-30 0.2]
+[seStop ad173 0.5]
+[wt 1.0]
+[shake 0.05 1.0 1.0 0.5]
+[se ad173]
+[charaMoveScale A 0.90 0.2]
+[charaMove A 0,-40 0.2]
+[seStop ad173 0.5]
+[wt 0.5]
+
+[charaFace A 9]
+＠贝德维尔
+您在说什么呢？[r]御主，为什么要后退……御主！？
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+
+[wait fade]
+[scene 20302]
+[wt 1.0]
+[charaScale A 1.0]
+[charaFadeout A 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se adm13]
+[wt 2.0]
+[seStop adm13 2.0]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠贝德维尔
+…………请恕我刚才失礼了。
+[k]
+
+[charaFace A 1]
+＠贝德维尔
+但是，太好了。您全部吃光了。[r]因为我掌握了御主口味的偏好，
+[k]
+
+＠贝德维尔
+所以下次若有机会，[r]我会为了让您更为高兴而继续磨练技术。
+[k]
+
+？1：话说
+？2：这里是……？
+
+？！
+
+[charaFace A 0]
+＠贝德维尔
+如果说刚才的海边是崔斯坦卿休憩的场所，[r]那这里就是我个人的休憩场所。
+[k]
+
+
+
+[messageOff]
+[wt 0.5]
+[charaFace A 4]
+[wt 1.0]
+＠贝德维尔
+这里和[#故乡:不列颠]的[line 3]某个地点非常相似。
+[k]
+
+[charaFace A 11]
+＠贝德维尔
+……[r]……
+[k]
+
+[charaFace A 4]
+＠贝德维尔
+休憩……[r]不。我确实在此处伴随着安静畅想，
+[k]
+
+＠贝德维尔
+在此宣下誓言，让灵魂[#赋活:复活]。[r]但这休憩，或许稍微有些不太一样。
+[k]
+
+？1：贝德维尔？
+
+＠贝德维尔
+…………………………
+[k]
+
+？2：…………说给我听听。
+
+[charaFace A 0]
+＠贝德维尔
+……好的。御主。
+[k]
+
+？！
+
+[bgmStop BGM_EVENT_2 0.1]
+[wt 0.3]
+[bgm BGM_EVENT_11 0.1]
+＠贝德维尔
+我的祖国不列颠不是个安泰的国家，[r]曾数次遭到各种威胁的侵袭。
+[k]
+
+＠贝德维尔
+造成了众多牺牲者。[r]有很多生命，我没能拯救。
+[k]
+
+[charaFace A 0]
+
+＠贝德维尔
+[line 3]圣米歇尔的巨人。[r]居住在布列塔尼圣米歇尔的巨人种，
+[k]
+
+＠贝德维尔
+在疯狂肆虐后，甚至掳走了[r]布列塔尼王的侄女海蕾娜公主。
+[k]
+
+＠贝德维尔
+吾王亚瑟在凯卿与我的陪同下迅速出击，[r]前去讨伐巨人。
+[k]
+
+
+[messageOff]
+[wt 0.5]
+[charaFace A 4]
+[wt 1.0]
+[charaFace A 0]
+＠贝德维尔
+当时[line 3][r]其实，我并没有帮上两人的忙。
+[k]
+
+＠贝德维尔
+亚瑟王与凯卿在经历了激烈战斗之后，打倒了巨人，[r]给布列塔尼带来了短暂的和平。
+[k]
+
+＠贝德维尔
+但是，我……
+[k]
+
+[charaFace A 4]
+＠贝德维尔
+………………并没能拯救公主。
+[k]
+
+＠贝德维尔
+因为我[line 3]太弱小了，没能来得及。[r]一切都晚了、不够。
+[k]
+
+＠贝德维尔
+以美丽著称的海蕾娜公主成了惨不忍睹的尸骸，[r]她年轻而生机勃勃的生命就这么凋零了。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[charaFace A 11]
+[wt 1.0]
+＠贝德维尔
+我没能救下重要的人。[r]对[line 3]
+[k]
+
+[charaFace A 4]
+
+＠贝德维尔
+第一次是海蕾娜公主。然后是在卡姆兰之战时，[r]连吾王……亚瑟都……
+[k]
+
+＠贝德维尔
+不仅一次[line 3]连第二次也[line 6]
+[k]
+
+？1：……贝德维尔。
+
+？！
+
+＠贝德维尔
+…………这里非常相似。[r]和海蕾娜公主临终的地方。
+[k]
+
+＠贝德维尔
+每次我站在这里，都会充分理解。[r]我是个无力的骑士。
+[k]
+
+＠贝德维尔
+以及我是个二度失去该守护之人的男人。[r]同时……
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace A 8]
+[wt 1.0]
+[charaFace A 0]
+＠贝德维尔
+[line 3]我下定决心再也不会[r][line 3]犯下相同的错误。
+[k]
+
+＠贝德维尔
+御主。[r]我是个力量不足以被称为圆桌骑士的人。
+[k]
+
+＠贝德维尔
+即便如此。不，正因为如此，[r]我要在这次现界的奇迹中起誓。
+[k]
+
+＠贝德维尔
+我会守护为美好的每一天而挑战残酷战斗的你。
+[k]
+
+＠贝德维尔
+无论袭来的敌人有多么强大。[r]哪怕面前挡着残酷的命运。
+[k]
+
+[charaFace A 5]
+＠贝德维尔
+我都要守护您的生命、您的心灵、您的身体。
+[k]
+
+？1：谢谢，贝德维尔卿。
+
+
+[charaFace A 1]
+＠贝德维尔
+…………嗯。[%1]。
+[k]
+
+？2：我相信你。
+
+[messageOff]
+[wt 0.5]
+[charaFace A 4]
+[wt 1.0]
+？！
+
+
+[charaFace A 0]
+＠贝德维尔
+我一定会回应您的期待。[r][%1]。
+[k]
+
+[messageOff]
+[wt 0.5]
+[se adm13]
+[seVolume adm13 0 0.1]
+[seVolume adm13 2.0 1.0]
+[wt 2.0]
+
+[seStop adm13 1.5]
+[fadeout black 2.5]
+[bgmStop BGM_EVENT_11 2.0]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,210 @@
+
+＄94-00-98-18-1-0
+
+[charaSet A 11002002 1 岩窟王]
+[charaSet C 11002002 1 岩窟王]
+
+[soundStopAll]
+[scene 10420]
+
+[fadein black 2]
+[wait fade]
+
+[se ad95]
+[seVolume ad95 0 0.2]
+[wt 1.0]
+[seVolume ad95 1.0 0.6]
+[wt 1.0]
+[seVolume ad95 1.0 0.9]
+[wt 1.0]
+[seStop ad95]
+[wt 0.4]
+[bgm BGM_EVENT_5 0.3]
+
+
+？1：……是谁？
+
+？！
+
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+[bgmStop BGM_EVENT_5 0.7]
+
+
+
+[wt 0.7]
+
+
+＠岩窟王
+[line 3]哼。[r]看来弄出声音的话，还是会睁开眼睛的啊。
+[k]
+
+[bgm BGM_EVENT_2 0.4]
+
+＠岩窟王
+话虽如此，现在已经是早上了。[r]是时候起来了。
+[k]
+
+？1：岩窟王……
+？2：早上好，你起得真早啊。
+
+？！
+
+
+＠岩窟王
+我不需要睡眠。[r]和你不一样。所以其实……
+[k]
+
+
+＠岩窟王
+原本我是不会饮用这种东西的。[r]但一直在为作家那群家伙冲泡，所以都熟练了。
+[k]
+
+
+[messageOff]
+
+[se ad89]
+[seVolume ad89 0 0.7]
+[wt 0.3]
+[seStop ad89 0.1]
+[wt 0.4]
+
+[se ade29]
+[seVolume ade29 0 0.2]
+[wt 1.0]
+[wt 1.3]
+
+＠岩窟王
+让人清醒一杯。
+[k]
+
+＠岩窟王
+虽说我想让你趁还没凉掉快喝，[r]但随你便吧。不喝也无所谓。
+[k]
+
+＠岩窟王
+砂糖爱放多少放多少。[r]牛奶也是。
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[equipSet B 9806110 1 ]
+[wait equipSet B]
+[charaFace B 0]
+[charaFadein B 0.5 0,-70]
+[wt 2.0]
+[charaFadeout B 0.4]
+[wt 0.5]
+
+？1：真香[line 3]
+？2：难道你是特地为我冲泡的咖啡？
+
+？！
+
+[charaTalk off]
+[charaDepth A 1]
+[charaDepth C 0]
+
+[charaFace A 4]
+[charaFace C 4]
+[charaFadein A 0.1 1]
+[charaFadein C 0.1 1]
+＠岩窟王
+………………
+[k]
+
+
+[messageOff]
+[charaChange A 11002002 0 fade 0.4]
+[wt 1.0]
+
+＠岩窟王
+是昨晚的回礼。[r]就是零点刚过时你送我的可可做的糖果。
+[k]
+
+
+＠岩窟王
+本以为我的味觉和生活在马赛那段时候相比[r]发生了很大变化，
+[k]
+
+＠岩窟王
+但这味道依然能让人回忆起什么。
+[k]
+
+？1：是巧克力哦。
+？2：你生前吃过吗？
+
+？！
+
+[charaFace A 4]
+＠岩窟王
+[line 3]谁知道呢。
+[k]
+
+[charaFace A 0]
+＠岩窟王
+快起床吧。[r]今天你应该会非常繁忙。
+[k]
+
+[charaFace A 1]
+＠岩窟王
+或者……呵呵。[r]你打算就这样在床上碌碌无为过一天？
+[k]
+
+？1：这样或许也不赖。
+
+[charaFace A 0]
+＠岩窟王
+……玩笑开得真烂。[r]快起床，向后辈以及其他从者们打招呼去。
+[k]
+
+？2：……是呢。还是起床吧。
+
+[charaFace A 0]
+＠岩窟王
+就该这样。[r][line 3]啊，[#那些]你自己收拾吧。
+[k]
+
+
+？！
+
+[charaFace C 0]
+
+＠岩窟王
+这一天，是属于你们的一天。[r]好好享受吧。
+[k]
+
+
+[messageOff]
+
+[se ad95]
+[charaFadeout A 0.4]
+[charaFadeout C 0.4]
+
+[wt 0.7]
+[seStop ad95 1.9]
+[wt 2.0]
+
+
+
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]

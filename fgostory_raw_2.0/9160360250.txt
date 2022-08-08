@@ -1,0 +1,158 @@
+
+＄91-60-36-02-5-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 6036001 1 李书文]
+[charaSet B 4039002 1 曼迪卡尔多]
+[charaSet C 6036001 1 特效用]
+
+[scene 109400]
+[fadein black 1.0]
+[wait fade]
+
+[se ad799]
+[seVolume ad799 0 0.6]
+[wt 1.0]
+[seStop ad799 0.7]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.4 1]
+＠曼迪卡尔多
+我死了！！[bgm BGM_EVENT_2 0.1][r]不，虽然没死但死了！！
+[k]
+
+？1：还活着啦还活着。
+
+？！
+
+[charaFace B 4]
+＠曼迪卡尔多
+御主。[r]我的脑袋还在吧？
+[k]
+
+＠曼迪卡尔多
+感觉他的刀已经锋利到就算不知不觉[r]把我的脑袋砍下来我也不会发现的程度。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.7]
+[wipeout rightToLeft 0.7 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[scene 109500]
+[wt 0.5]
+[se ad525]
+[wt 0.4]
+[wipein leftToRight 0.7 1]
+[wait wipe]
+
+[se ad799]
+[seVolume ad799 0 0.6]
+[wt 1.0]
+[seStop ad799 0.7]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠李书文
+[line 3]好了，终于到最后一层了。[r]没[charaFace A 1]想到你们竟能抵达这里。
+[k]
+
+＠李书文
+只要能打败这里的守卫，[r]这场试炼就正式结束了。
+[k]
+
+？1：咦……？
+？2：可这里没人啊……？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠曼迪卡尔多
+……真的哎。[r]难道说我们来晚了，对方已经走了……？
+[k]
+
+＠曼迪卡尔多
+这种情况算不战而胜吗……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 0.7]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠李书文
+你说什么呢。[r][#守卫不就在这里吗]。
+[k]
+
+？1：哎？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠曼迪卡尔多
+啊，不祥的预感。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaDepth A 10]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaEffect C bit_talk_charge_blu]
+[se ad169]
+[seVolume ad169 0 0]
+[seVolume ad169 1.0 0.7]
+[wt 1.5]
+
+[seStop ad169 1.5]
+[bgm BGM_EVENT_80 0.1]
+
+＠李书文
+[line 3]八极门，李书文。[r]全力当你们的对手。
+[k]
+
+＠李书文
+回想起锻炼的过程吧。[r]让我见识你们的全部！
+[k]
+
+？1：请……请多指教……！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut C 1200,1200]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠曼迪卡尔多
+[line 3]不是吧[line 5]！？
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

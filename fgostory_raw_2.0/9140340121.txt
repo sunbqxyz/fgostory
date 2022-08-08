@@ -1,0 +1,378 @@
+
+
+＄91-40-34-01-2-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 4034001 1 巴沙洛缪]
+[charaSet B 2025101 1 玛莉]
+[charaSet C 2025201 1 安妮]
+[charaSet D 2025001 1 玛莉＆安妮]
+[charaSet E 4008002 1 黑胡子]
+
+[charaSet F 98104300 1 敌人]
+[charaSet G 99502600 1 玛修]
+[charaSet H 98111500 1 通讯用特效]
+
+[scene 107500]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.3]
+
+＠？？？
+啊啊[line 3]啊，啊[line 3][r]但是，这样[line 3]终于[line 3]
+[k]
+
+
+＠？？？
+可以[line 3]解脱，了[line 3][r]能够，解放了[line 3]
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_3 2.0]
+
+[se ad42]
+
+[charaSpecialEffect F erasure]
+[wait charaSpecialEffect F erasure]
+[charaSpecialEffectStop F erasure]
+[wt 1.0]
+
+[seStop ad42 0.1]
+
+[charaFadeout F 0.1]
+[wt 0.5]
+
+
+＠？？？
+但还是，好想得到，财宝啊[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠巴沙洛缪
+呼。
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaPut H 1]
+[se ad13]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.2]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠玛修
+这里是迦勒底。[r]御主，请回答。
+[k]
+
+？1：我在我在～。
+？！
+
+[charaFace G 1]
+
+＠玛修
+已确认特异点修正完成。[r]辛苦了。
+[k]
+
+＠玛修
+回归准备再过一会儿就能做完，[r]还请稍作等待。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠巴沙洛缪
+嗯，明白了。
+[k]
+
+[messageOff]
+
+
+
+
+
+
+
+[se ad1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaEffectStop H bit_talk_10_LowLevel]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠巴沙洛缪
+……唔。
+[k]
+
+？1：怎么了？
+？！
+
+＠巴沙洛缪
+不，没事。[r]正如我刚才所说的，这里并没有财宝。
+[k]
+
+＠巴沙洛缪
+不过，[r]说不定这里还是存在财宝的。
+[k]
+
+[messageOff]
+
+[se adm28]
+[seVolume adm28 0.0 0.5]
+[wt 0.5]
+[seStop adm28 0.1]
+
+＠巴沙洛缪
+瞧，看这个。
+[k]
+
+？1：地图……？
+？！
+
+＠巴沙洛缪
+勉强可以辨认出是地图。[r]但并不是这座岛的地图。
+[k]
+
+＠巴沙洛缪
+是从刚才那个恶灵坐着的岩石下找到的。
+[k]
+
+[charaFace A 4]
+
+＠巴沙洛缪
+……即便过去了数十年，[r]也依然没被恶灵发现的地方。
+[k]
+
+[charaFace A 0]
+
+＠巴沙洛缪
+那个，总而言之。
+[k]
+
+[charaFace A 0]
+
+＠巴沙洛缪
+就算这里没有财宝，[r]也不用气馁。
+[k]
+
+
+＠巴沙洛缪
+即便我们没有抓住梦想，[r]依然能扬帆寻宝[line 3]
+[k]
+
+[charaFace A 1]
+
+＠巴沙洛缪
+因为我们是专业的。
+[k]
+
+？1：财宝……似乎很有意思……！
+？！
+
+[messageOff]
+
+[bgmStop BGM_EVENT_2 0.5]
+[wt 0.5]
+
+[se ad59]
+[seVolume ad59 0 0]
+[se ad60]
+[seVolume ad60 0 0]
+[seVolume ad59 1.5 1.0]
+[seVolume ad60 1.5 1.0]
+
+[charaFace A 1]
+
+＠巴沙洛缪
+哈哈哈。[wt 0.5][charaFace A 0][r]咦？　多个熟悉的脚步声……
+[k]
+
+[messageOff]
+
+[seStop ad59 0.5]
+[seStop ad60 0.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠黑胡子
+呼，呼，呼。[r]终……终于到了是也……
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠安妮
+真是一场充斥着死亡陷阱、[r]怨灵和机关门的大冒险啊……
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠玛莉
+不过好在付出了那么多辛劳之后，[r]终于得到宝物啦～！
+[k]
+
+[charaFace B 0]
+
+＠玛莉
+……呃，咦？[r]御主？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠黑胡子
+巴沙洛？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠安妮
+咦？[r]本该在这里的财宝呢？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaDepth C 1]
+[charaDepth E 2]
+[charaDepth B 1]
+
+[charaFace C 2]
+[charaFace E 2]
+[charaFace B 2]
+[charaFadeinFSL C 0.1 0]
+[charaFadein E 0.1 1]
+[charaFadeinFSR B 0.1 2]
+
+＠三人
+[f large]在哪儿？
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠巴沙洛缪
+呵，受不了。
+[k]
+
+[charaFace A 0]
+
+＠巴沙洛缪
+好了，御主。[r]下一个难题。
+[k]
+
+＠巴沙洛缪
+我们不得不向经历千辛万苦到达这里的三人[r]解释这里从一开始就没有宝物才行。
+[k]
+
+？1：感觉这个问题比较难……
+？！
+
+[charaFace A 1]
+
+＠巴沙洛缪
+太对了。
+[k]
+
+[charaFace A 0]
+
+＠巴沙洛缪
+没办法，[r]只能用下个财宝的话题来满足他们了！
+[k]
+
+＠巴沙洛缪
+即便没能实现梦想，[r]只要有炫目的财宝[line 3]
+[k]
+
+[charaFace A 1]
+
+＠巴沙洛缪
+海盗总能想到办法嘛！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

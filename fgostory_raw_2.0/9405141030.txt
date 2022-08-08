@@ -1,0 +1,640 @@
+
+
+
+＄94-05-14-10-3-0
+
+[soundStopAll]
+
+[charaSet A 3044000 1 雏罂]
+[charaSet B 2042001 1 伊莉雅]
+[charaSet C 1098200900 1 紫式部]
+[charaSet D 1036300 1 兰陵王]
+[charaSet E 2001300 1 卫宫]
+[charaSet F 6013002 1 魅影]
+[charaSet G 1098198300 1 瞑生院Lily]
+[charaSet H 1098198500 1 雏罂_幽灵]
+
+[charaSet J 5009000 1 特效用dummy]
+[imageSet K back10000 1]
+[charaScale K 1.01]
+
+[charaSet L 1098200600 1 红宝石]
+
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_41]
+
+
+[charaDepth A 2]
+[charaDepth C 3]
+[charaDepth E 4]
+[charaDepth B 5]
+[charaDepth D 6]
+
+[charaDepth J 9]
+
+[scene 99902]
+
+[effect bit_talk_40]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[se ad769]
+[wt 1.5]
+
+[seStop ad769 0.5]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠兰陵王
+成功突破了……但是……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠卫宫
+离小屋应该很近了，[r]还看不见吗！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠伊莉雅
+雾……雾太浓了，[r]完全不知道什么情况！
+[k]
+
+＠伊莉雅
+红宝石，能探知吗！？
+[k]
+
+＠红宝石
+妙唔妙唔妙唔……没有反应！
+[k]
+
+＠红宝石
+对不起，[r]看来不太可能！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠卫宫
+那就把这雾吹散吧，[r]哪怕只有一瞬也好……！
+[k]
+
+[charaFace E 2]
+＠卫宫
+全员，趴下……！
+[k]
+
+[bgmStop BGM_EVENT_80 1.0]
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace D 5]
+[charaFadein D 0.1 -350,0]
+
+
+[charaFace B 5]
+[charaFadein B 0.1 0,0]
+
+[charaFace C 8]
+[charaFadein C 0.1 350,0]
+[wt 0.6]
+
+[se ad7]
+[charaMove C 350,-50 0.3]
+[charaMove D -350,-50 0.3]
+[charaMove B 0,-50 0.3]
+[wt 0.1]
+
+[charaFadeout C 0.2]
+[charaFadeout D 0.2]
+[charaFadeout B 0.2]
+[wt 0.8]
+
+[se ad855]
+[fowardEffect bit_talk_14]
+[wt 0.6]
+
+[se ad353]
+[shake 0.02 3 3 0.5]
+[fadeout white 0.5]
+[wait fade]
+
+[effectStop bit_talk_40]
+[fowardEffectStop bit_talk_14]
+
+[seStop ad353 1.0]
+[wt 1.5]
+
+[se ad596]
+[wt 0.8]
+
+[fadein white 0.5]
+[wait fade]
+[wt 1.0]
+
+？1：雾散了……！
+？！
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠兰陵王
+看到了！[r]沿着这个方向继续前进！
+[k]
+
+[messageOff]
+[se ad769]
+
+[wipeout rightToLeft 0.5 1.0]
+[seStop ad769 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+
+[scene 99601]
+[wt 1.6]
+
+[se ad533]
+
+[wipein leftToRight 0.5 1.0]
+[wait wipe]
+[wt 1.0]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠魅影
+噢噢　克里斯蒂娜！[r]我的　歌姬。我的　歌声。
+[k]
+
+＠魅影
+平安返回　此处　共同庆祝[line 3]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠瞑生院Lily
+嗨～，欢迎回来～。[wt 0.5][charaFace G 0][r]……咦？　怎么了？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠兰陵王
+各位，没受伤吧？
+[k]
+
+？1：没有……问题……
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+＠伊莉雅
+哈呼……不……不要紧……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠紫式部
+嗯……[r]还行……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠卫宫
+虽然对方死缠烂打，[r]但总算[line 3]唔？
+[k]
+
+[charaFace E 10]
+＠卫宫
+放任独自一人就会很危险的雏罂，[r]炸药雏罂上哪儿去了？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+[charaShake D 0.05 3 3 0.2]
+＠兰陵王
+[line 3]！[r]（※由于戳中笑点故意干咳糊弄。）
+[k]
+
+[charaFace D 3]
+＠兰陵王
+失礼了，刚才的事请不要外传！[r]那位的话，刚才还感到她的气息…………
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.7 -420,0]
+[charaMove H -400,0 0.7]
+[wt 1.2]
+
+？1：难不成……
+？！
+
+[charaFace H 4]
+＠H：雏罂
+……后辈。[r]别用这种眼神看我，后辈。
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠H：雏罂
+我死了。[r]被非常彻底地[#拧]死了。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace E 10]
+[charaFadein E 0.1 -400,0]
+
+[charaFace D 2]
+[charaFadein D 0.1 -140,0]
+
+[charaFace B 2]
+[charaFadein B 0.1 140,0]
+
+[charaFace C 10]
+[charaFadein C 0.1 400,0]
+
+＠全员
+[f large]怎么又来了！？
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+＠瞑生院Lily
+难以置信。靠人鱼之肉不老不死的[r]八百比丘尼说这种话或许不太合适，
+[k]
+
+＠瞑生院Lily
+但您这么频繁地死来死去真的不要紧吗？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠H：雏罂
+没有问题。[r]只要过一阵子就能恢复原样了。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.0]
+[charaFadeout H 0.1]
+[wt 0.4]
+
+[se ad61]
+[seVolume ad61 0 0.3]
+[seVolume ad61 0.2 0.1]
+[scene 99602 0.1]
+[wt 0.1]
+[scene 99601 0.1]
+[wt 0.4]
+[seVolume ad61 0.2 0.4]
+
+[scene 99602 0.1]
+[wt 0.1]
+[scene 99601 0.1]
+[wt 0.1]
+[seVolume ad61 0.2 0.1]
+[wt 0.8]
+
+[se ade36]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[se ad61]
+[seVolume ad61 0 0.5]
+[scene 99602 0.1]
+[wt 0.1]
+[seStop ad61 0.2]
+[wt 1.4]
+
+
+[bgm BGM_EVENT_126 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠卫宫
+来了吗……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠紫式部
+这里是我们的领域。[r]很适合进行对峙。
+[k]
+
+[charaFace C 5]
+＠紫式部
+但最好能再找到某种[#要素:碎片]……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠H：雏罂
+……虽然不知道能不能作为线索。
+[k]
+
+＠H：雏罂
+但对方好像是魔眼持有者哦。[r]类似将看到的对象碾成肉泥的感觉。
+[k]
+
+[charaFace H 4]
+＠H：雏罂
+另外，多半和视野如何无关。
+[k]
+
+＠H：雏罂
+在大雾的状态下视野明明为零，[r]对方却还是分毫不差地将我的身体拧断了。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠卫宫
+魔眼啊……不好办呢。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠紫式部
+魔眼……视觉……[r]概念层面的应对方法……
+[k]
+
+[charaFace C 9]
+＠紫式部
+唔唔，还差一点，如果能再有一点什么……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠卫宫
+镜子如何？[r]自古以来镜子就是对付魔眼的标配吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠紫式部
+说……说得对。[r]但普通的镜子应该很难做到。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠卫宫
+那就用我事先投影的这面魔镜吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠伊莉雅
+简直就像烹饪节目事先准备好的……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠H：雏罂
+你还真是什么都行呢。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠卫宫
+好，开始战斗吧！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[charaFadeTime K 0.1 0.6]
+＠紫式部
+（仍有一丝不安[line 3]但现在只能这样了……！）
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_126 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

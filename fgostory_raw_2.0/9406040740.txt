@@ -1,0 +1,648 @@
+
+
+
+＄94-06-04-07-4-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001600 1 マシュ]
+[charaSet B 1098215400 1 ダ・ヴィンチ]
+[charaSet C 5048000 1 コルデー]
+[charaSet D 1098220500 1 カイニス]
+[charaSet E 1098215500 1 ゴルドルフ]
+[charaSet F 1098216800 1 沖田オルタ]
+[charaSet G 1098216900 1 煉獄]
+[charaSet H 1098217700 1 ？？？]
+[charaSet I 1098217700 1 コロンブス2]
+[charaSet J 1098217700 1 コロンブス3]
+
+[charaSet K 1098217700 1 ダミー１]
+[charaFilter K silhouette 00000080]
+[charaSet L 1098217700 1 ダミー２]
+[charaFilter L silhouette 00000080]
+[charaSet M 1098217700 1 ダミー３]
+[charaFilter M silhouette 00000080]
+
+[charaDepth J 1]
+[charaDepth H 2]
+[charaDepth I 3]
+[charaDepth M 4]
+[charaDepth L 5]
+[charaDepth K 6]
+
+[scene 130400]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_SENGOKU_1 0.1]
+
+[charaTalk B]
+[charaFace B 24]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+ずいぶん進んできたね。[r]そろそろ目的地だとは思うんだけど……あれ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+なんだとォ！？[r]行き止まりではないか！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 24]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+ちょっと待って、サーチしてみる。
+[k]
+
+[messageOff]
+
+[se ade357]
+[charaFace B 25]
+＠ダ・ヴィンチ
+えーっと……
+[k]
+
+[seStop ade357 0.2]
+[charaFace B 7]
+＠ダ・ヴィンチ
+お！　そこの壁の向こうに広い空間があるみたい！
+[k]
+
+[charaFace B 0]
+＠ダ・ヴィンチ
+つまり……[r]行き止まりじゃなくて……。
+[k]
+
+＠ダ・ヴィンチ
+隠し扉、みたいな感じじゃないかな？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+へー。宝を隠した海賊さんが作った仕掛けでしょうか？[r]らしくなってきましたよ！
+[k]
+
+？1：で、開け方は？
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠カイニス
+ぶち破れば[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+ダメ！
+[k]
+
+
+[charaFace B 5]
+＠ダ・ヴィンチ
+ここは海底洞窟！[r]無闇に荒らすと崩れて危険かもだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+＠カイニス
+はいはい、そうかよ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 25]
+[charaFadein B 0.1 1]
+
+[se ade357]
+＠ダ・ヴィンチ
+えーと、さらにサーチすると……
+[k]
+
+[messageOff]
+
+[wt 1.0]
+
+[seStop ade357 0.2]
+[charaFace B 24]
+＠ダ・ヴィンチ
+ふむふむ……。
+[k]
+
+[charaFace B 26]
+＠ダ・ヴィンチ
+わかった。そこの物陰に、[r]水が溜まった窪みみたいな穴があるよね？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 -75,0]
+＠沖田オルタ
+えーと……はい、ありますね！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 25]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+その先、一段低い通路になってるみたいだ。
+[k]
+
+[charaFace B 24]
+＠ダ・ヴィンチ
+最初からそういう作りなのか、[r]後で水没したのかは分からないけどね。
+[k]
+
+＠ダ・ヴィンチ
+この海底洞窟に入ってくるときに通った、[r]水没通路と似たような感じかな。
+[k]
+
+[charaFace B 26]
+＠ダ・ヴィンチ
+きっと、その先にレバーのようなものがある！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠マシュ
+それを動かせばここの壁が開く、[r]という仕組みなのですね。理解しました！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+よし、ならば話は早い。
+[k]
+
+＠ゴルドルフ
+誰でもいい、レバーを操作してきたまえ。
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 24]
+[charaFadein B 0.1 1]
+
+[se ade357]
+[wt 1.4]
+
+[seStop ade357 0.2]
+＠ダ・ヴィンチ
+……ん。
+[k]
+
+[charaFace B 21]
+＠ダ・ヴィンチ
+んん！？[r]これは、ちょっとまずいかも。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 5]
+[charaDepth G 6]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠煉獄
+どうした？
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 24]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+水没通路を入念にサーチしてみたんだけど……
+[k]
+
+＠ダ・ヴィンチ
+問題が二つ！
+[k]
+
+[charaFace B 25]
+＠ダ・ヴィンチ
+一つ目は……その先、洞窟の造りのせいか、[r]わりと複雑な水流が発生しているってこと。
+[k]
+
+[charaFace B 14]
+＠ダ・ヴィンチ
+プールを泳ぐようにはいかないかも……[r]流されて、岩にぶつからないように注意しなきゃだ。
+[k]
+
+[charaFace B 24]
+＠ダ・ヴィンチ
+二つ目の問題は……
+[k]
+
+＠ダ・ヴィンチ
+霊脈のせいなのか、[r]魔力の[#歪:ひず]みが発生しているみたいなんだ。
+[k]
+
+[charaFace B 5]
+＠ダ・ヴィンチ
+そのせいで、魔術および礼装が不調を[#来:きた]す可能性がある。
+[k]
+
+＠ダ・ヴィンチ
+具体的には水中呼吸が問題だ。[r]装置にせよ、魔術にせよ……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+呼吸ができなくなるということかね？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+うーん、まったく[r]できなくなるわけじゃないと思う。
+[k]
+
+[charaFace B 25]
+＠ダ・ヴィンチ
+呼吸可能時間が著しく低下する、って感じかな？
+[k]
+
+[charaFace B 4]
+＠ダ・ヴィンチ
+水没通路の奥まで進んで、[r]レバーを操作するまで保つのかどうかは[line 3]
+[k]
+
+＠ダ・ヴィンチ
+サーチ済みの通路の長さを考えると、[r]ちょっと微妙なところ。
+[k]
+
+[charaFace B 14]
+＠ダ・ヴィンチ
+ギリギリ……
+[k]
+
+＠ダ・ヴィンチ
+いけるような……[r]いけないような……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 18]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+ううむ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+＠カイニス
+チッ。仕方ねえ。[r]この面子ン中で一番泳げそうなのはオレだ。なら……
+[k]
+
+[bgmStop BGM_SENGOKU_1 1.0]
+
+[charaFace D 5]
+＠カイニス
+[line 3]と思ったが、ヤメだ。[r]客が来た！
+[k]
+
+[messageOff]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad60]
+[se ad173]
+[wt 0.1]
+[se ad452]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaFace K 0]
+[charaFadein K 0.4 1]
+[charaFace L 0]
+[charaFadeinFSR L 0.4 350,0]
+[charaFace M 0]
+[charaFadeinFSL M 0.4 -350,0]
+
+[wt 0.5]
+[seStop ad60 0.5]
+[seStop ad173 0.5]
+[seStop ad452 0.5]
+
+[charaFace H 7]
+[charaFadein H 0.1 1]
+[charaFace I 7]
+[charaFadeinFSR I 0.1 350,0]
+[charaFace J 7]
+[charaFadeinFSL J 0.1 -350,0]
+
+[wt 0.5]
+
+＠？？？
+ハッハーァ！[r]ハッハッハーァ！
+[k]
+
+[messageOff]
+
+[charaFadeout M 0.7]
+[charaFadeout L 0.7]
+[charaFadeout K 0.7]
+[wt 1.7]
+
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[charaFadeout H 0.1]
+
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+また出たー！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+
+＠沖田オルタ
+なるほど。話には聞いていましたが、実際、[r]並んでいるのを見ると少し可愛い気もしますね。
+[k]
+
+[charaFace G 5]
+
+＠煉獄
+いやまったく。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+[charaFace I 7]
+[charaFadeinFSR I 0.1 350,0]
+[charaFace J 7]
+[charaFadeinFSL J 0.1 -350,0]
+＠量産型コロンブスたち
+ハッハッハーァ！[r]ハッハッハーァ！
+[k]
+
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠マシュ
+くっ……すごい数です。[r]この狭い洞窟内では逃げ場もありません……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠カイニス
+チッ。いくらなんでも数に差がありすぎる。[r]後ろが塞がってるのが一番まずい。
+[k]
+
+＠カイニス
+この隠し扉を開けて早えとこスペースを確保しねえと、[r]純粋な物量だけで押し切られるぞ。
+[k]
+
+[charaFace D 6]
+＠カイニス
+だが、オレが潜ったらこっちの戦力が[r]足りなくなるかもしんねえ。どうすっか……。
+[k]
+
+[messageOff]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+[wt 1.0]
+
+[charaFace C 5]
+
+＠シャルロット・コルデー
+……レバーはわたしが操作してきます。[r]皆さんはそれまで少し耐えていてください。
+[k]
+
+？1：シャルロット？
+？2：大丈夫なの？
+？！
+
+＠シャルロット・コルデー
+はい。今は、これが[#適材適所:てきざいてきしょ]だと思います。
+[k]
+
+[charaFace C 8]
+＠シャルロット・コルデー
+大丈夫です、自信はアリアリです！[r]そうじゃなかったら言いません！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+今は迷っている時間もないし……。[r]うん、コルデーに頼むしかなさそう。
+[k]
+
+[charaFace B 5]
+＠ダ・ヴィンチ
+でも、充分気をつけてね。
+[k]
+
+＠ダ・ヴィンチ
+改めて言うけど、[r]そこでは水中呼吸装置は時間制限が発生する。
+[k]
+
+＠ダ・ヴィンチ
+おそらく10分程度が限界だ！
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+
+？1：危険だと思ったら引き返してね！
+？！
+
+[charaFace C 2]
+
+＠シャルロット・コルデー
+はい！　それじゃ、行ってきます！
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaFace C 5]
+[charaMove C 0,20 0.3]
+[wt 0.3]
+[se ad36]
+[charaMove C 0,-80 0.3]
+[charaFadeout C 0.4]
+
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠カイニス
+さて、あとはアイツが扉を開けるのを待つだけだ。[r]あのむさ苦しい髭面たちの相手をしながらな！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth G 2]
+
+[charaTalk F]
+[charaFace F 16]
+[charaFadein F 0.1 1]
+[charaFace G 13]
+[charaFadein G 0.1 1]
+
+＠沖田オルタ
+くっ、確かにこの数の髭は一苦労です。
+[k]
+
+
+[charaFace F 11]
+＠沖田オルタ
+こんなことならイゾーの人斬り講座を[r]受けておけばよかったかもです。
+[k]
+
+[charaFace F 0]
+＠沖田オルタ
+煉獄も今度一緒に受講しませんか？
+[k]
+
+[charaFace G 5]
+
+＠煉獄
+あいつの剣、あんまり参考にはならんと[r]思うぞ、主には。
+[k]
+
+[charaFace G 15]
+＠煉獄
+っていうか、あれホントに人なのか？
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+

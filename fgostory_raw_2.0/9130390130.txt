@@ -1,0 +1,500 @@
+
+
+
+
+＄91-30-39-01-3-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 3039001 1 ガレス]
+[charaSet B 6021001 1 酒呑童子]
+[charaSet C 3047001 1 パーシヴァル]
+[charaSet D 7002001 1 ランスロット]
+[charaSet E 7002001 1 ランスロット（狂）シルエット]
+[charaFilter E silhouette 00000080]
+
+[charaSet H 98111500 1 エフェクト用ダミー]
+
+[charaDepth D 2]
+[charaDepth B 2]
+[charaDepth C 3]
+[charaDepth A 4]
+[charaDepth E 4]
+
+
+[scene 109600]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.1]
+
+[charaEffect B bit_talk_quickmove]
+[wt 0.1]
+
+[charaSpecialEffect B erasureReverse 1 0.2]
+[se ad73]
+[wt 0.4]
+
+[charaFadeout B 0.1]
+[seStop ad173 0.1]
+[wt 0.1]
+
+[seStop ad173 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[fowardEffect bit_talk_kengekiall03_fs]
+[wt 0.2]
+[se ad171]
+[wt 0.2]
+[se ad171]
+[wt 0.2]
+[se ad171]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 19]
+[charaFadein A 0.1 1]
+
+[se ad170]
+[fowardEffect bit_talk_14 0,0]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF40]
+[wt 0.1]
+[charaShake A 0.04 3 3 0.2]
+[wt 0.2]
+
+[se ad170]
+[fowardEffect bit_talk_14 0,0]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF40]
+[wt 0.1]
+[charaShake A 0.04 3 3 0.2]
+[wt 0.2]
+
+[se ad170]
+[fowardEffect bit_talk_14 0,0]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF40]
+[wt 0.1]
+[charaShake A 0.04 3 3 0.3]
+[wt 0.3]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[charaEffect H bit_talk_41_fs 0,0]
+
+[charaMoveScale C 1.1 0.2]
+[charaMove C 0,-5 0.2]
+[se ad54]
+[wt 0.2]
+
+[charaPut H 2000,2000]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 19]
+[charaFadein A 0.1 1]
+
+[fowardEffect bit_bolg_01y 0,0 F]
+[se ad1020]
+[wt 0.3]
+
+[se ad170]
+[se ad881]
+[fowardEffect bit_talk_13 0,0]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF40]
+[wt 0.1]
+
+[fowardEffectDestroy bit_bolg_01y]
+
+[charaShake A 0.04 4 4 0.4]
+
+[se ad671]
+[charaMoveScale A 0.9 0.5]
+[charaMove A 0,-10 0.5]
+[wt 1.5]
+
+
+＠ガレス
+……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠酒呑童子
+真正面の硬いこと硬いこと。[r]ああ[line 3]
+[k]
+
+[messageOff]
+
+[charaEffect B bit_talk_quickmove]
+[wt 0.1]
+[charaSpecialEffect B erasureReverse 1 0.2]
+[se ad73]
+[wt 0.3]
+
+[wipeout rectangleStripRightToLeft 0.3 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaScale A 1.0]
+[charaScale C 1.0]
+
+[charaTalk A]
+[charaFace A 19]
+[charaFadein A 0.1 1]
+
+[wipein rectangleStripLeftToRight 0.3 1.0]
+[wait wipe]
+
+
+[charaTalk depthOff]
+
+[charaTalk B]
+[charaFace B 1]
+[charaPut B -200,0]
+[charaEffect B bit_talk_quickmove]
+[wt 0.1]
+[charaSpecialEffect B appearance 1 0.2]
+[se ad132 0.8]
+[seStop ad132 0.3]
+[wt 0.5]
+
+＠酒呑童子
+その分あんたはん、[r][#不意打ち]に弱いんかもしれへんね。
+[k]
+
+[charaFace A 2]
+
+＠ガレス
+！
+[k]
+
+[messageOff]
+
+
+[charaFadeout B 0.3]
+[charaEffect B bit_talk_quickmove]
+[wt 0.1]
+[charaSpecialEffect B erasureReverse 1 0.2]
+[se ad73]
+[wt 0.3]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace C 0]
+[charaFadeinFSR C 0.1 2]
+[wt 0.3]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaPutFSL B 0]
+[charaFace B 1]
+[charaEffect B bit_talk_quickmove]
+[wt 0.1]
+[charaSpecialEffect B appearance 1 0.2]
+[se ad132 0.8]
+[seStop ad132 0.3]
+[wt 0.5]
+
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[charaTalk C]
+[charaFace C 0]
+
+＠パーシヴァル
+……レディの言葉には一理ある。[r]では、準備はこの程度に留めておくのがいいか。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠ガレス
+[FFFFFF]？[-]
+[k]
+
+[charaFace A 2]
+
+＠ガレス
+ガレスはまだやれます！[r]こういう訓練でしたら、幾らでも！
+[k]
+
+[charaFace A 4]
+
+＠ガレス
+ガレスはもう……[r]あんな風になりたくないのです！
+[k]
+
+[charaFace A 2]
+
+＠ガレス
+緊張にも、恐怖にも！[r]守備にも、回避にも、慣れておきたい！
+[k]
+
+[bgmStop BGM_EVENT_3 2.0]
+
+[charaFace A 4]
+
+＠ガレス
+そうすればきっと……[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFace C 0]
+[charaFadeinFSL B 0.1 0]
+[charaFadeinFSR C 0.1 2]
+
+＠酒呑童子
+ふふ。せやねえ。
+[k]
+
+[charaFace B 1]
+
+＠酒呑童子
+でもなあ、[r][#幾らでもやれる]んなら意味ないやろ？
+[k]
+
+[charaFace B 0]
+
+＠酒呑童子
+心構えがどの程度出来とるか知らへんけど、[r]そろそろ[line 3]
+[k]
+
+
+[bgmStop BGM_EVENT_3 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+
+＠パーシヴァル
+ああ。直接“慣れる”訓練といこう！[wt 0.5][charaFace C 2][r][line 3]出番だぞ！　卿！
+[k]
+
+？1：え、誰？
+？！
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad75]
+[seVolume ad75 0 0]
+[seVolume ad75 1.0 2.5]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠ガレス
+何かが飛来して……！？
+[k]
+
+[messageOff]
+[seStop ad75 0.3]
+[wt 0.3]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[se ad284]
+[fowardEffect bit_talk_smoke 0,0]
+[wt 0.5]
+[shake 0.05 3 3 2.5]
+[wt 1.5]
+[seStop ad284 2.0]
+[wt 2.0]
+[shakeStop]
+
+
+[bgm BGM_EVENT_80 0.1]
+
+[cueSe SE_21 21_adm81]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 1.0 1]
+[wt 0.3]
+[seStop 21_adm81 0.1]
+[wt 1.2]
+
+[charaTalk off]
+
+[fowardEffectStop bit_talk_smoke]
+
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[charaFadeout E 1.0]
+[wt 1.5]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 5]
+
+＠ランスロット
+[f x-large][image berserker_language_2]！！[se ade267][charaShake D 0.03 2 2 1.0][wt 1.0][charaShakeStop D]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ガレス
+[charaShake A 0.05 3 0 0.7]
+！！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠パーシヴァル
+[f large]直接慣れる訓練だ！
+[k]
+
+？1：スパルタ式すぎない！？
+？2：そういう意味かー！
+
+？！
+
+[charaFace C 0]
+
+＠パーシヴァル
+さあ[line 3]ガレス。
+[k]
+
+＠パーシヴァル
+逃げるもよし、立ち向かうもよし。[wt 0.3][charaFace C 2][r]だが忘れるな！
+[k]
+
+＠パーシヴァル
+バーサーカー霊基のランスロット卿に慣れるための機会、[r]今この時を[#措:お]いて他になしと覚悟せよ！
+[k]
+
+＠パーシヴァル
+二度、この場を我らは設けない！[r]騎士にとって絶好の機会は常に一度きり！
+[k]
+
+[charaFace C 0]
+
+＠パーシヴァル
+願うことがあるならば[line 3]
+[k]
+
+[charaFace C 2]
+
+＠パーシヴァル
+[f large]ここで！　[#疾:と]く成し遂げよ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ガレス
+！！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+[charaEffect D bit_talk_charge_ppl 0,-400]
+[se ad474]
+[wt 2.0]
+[seStop ad474 1.0]
+
+＠ランスロット
+[f x-large][image berserker_language_2]！！[charaShake D 0.03 2 2 1.0][wt 1.0][charaShakeStop D]
+[k]
+
+[seStop ad476 0.1]
+[charaPut D 2000,2000]
+[charaEffectStop D bit_talk_charge_ppl]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 19]
+[charaFadein A 0.1 1]
+
+＠ガレス
+う[line 6][charaShake A 0.05 3 0 0.7]
+[k]
+
+[charaFace A 2]
+
+＠ガレス
+[f x-large]うあああああああああああ！[charaShake A 0.03 5 0 1.0]
+[k]
+
+[messageOff]
+
+[cueSe Servants_303900 bac1257]
+[seVolume bac1257 0 0.4]
+[charaPut H 0,0]
+[blur motion 1.0 4 10000 0.5 0.7 0.05 100]
+[charaMoveScale A 1.2 0.3]
+[charaMove A 0,16 0.3]
+[wt 0.5]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[seStop bac1257 0.4]
+[fowardEffectStop bit_talk_41 0,0]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

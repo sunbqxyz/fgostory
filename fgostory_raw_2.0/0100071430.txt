@@ -1,0 +1,508 @@
+
+
+
+＄01-00-07-14-3-0
+[soundStopAll]
+[charaSet A 8001002 1 玛修]
+[charaSet B 98108200 1 伊什塔尔]
+[charaSet C 98003000 1 Dr.罗曼]
+[charaSet D 5018001 1 吉尔伽美什]
+
+[se ad229]
+[seVolume ad229 0 0.2]
+[scene 33900]
+[fadein black 1.5]
+[wait fade]
+[wt 1.5]
+
+[fadeout black 1.5]
+[wt 1.0]
+[seStop ad229 1.0]
+[wait fade]
+[scene 33800]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[flashin once 0.7 0.7 FFFFFFAF FFFFFF00]
+[se ad65]
+[wt 2.0]
+
+
+[bgm BGM_EVENT_5 0.1]
+[charaScale B 1.12]
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.4 0,-50]
+
+＠伊什塔尔
+呜……果然又被诅咒了啊……[r]就算使用所有魔力来防御也没用啊……
+[k]
+
+＠伊什塔尔
+这样下去不只是无法参加战斗了，[r]真的会被埃列什基伽勒一把捏死的啦……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠玛修
+是这样吗？[r]我看起来，您的弓的破坏力丝毫没有降低啊？
+[k]
+
+＠玛修
+只是尺寸有所变化，[r]伊什塔尔小姐的战斗力还是非常可靠的。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 0,-50]
+
+＠伊什塔尔
+抱歉，到这里差不多已经是我的极限了。[r]再下去就要划不来了，所以战斗就交给你们啦。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 5]
+
+＠Dr.罗曼
+……麻烦了，这才第二道门而已。[r]没有女神伊什塔尔的话，能够走到哪一步呢……
+[k]
+
+
+？1：我和玛修会想办法的。
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠玛修
+嗯，当然啦。[r]为了回应前辈的期待，我会积极努力的！
+[k]
+
+
+？2：伊什塔尔还能行啦。
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 0,-50]
+[messageShake 0.05 5 5 0.4]
+
+＠伊什塔尔
+我说你压根没听我说话是吧！？[r]我不是说过我已经很累，已经不行了吗！？
+[k]
+
+
+？！
+
+[wt 0.2]
+[se ad60]
+[seVolume ad60 0 0.4]
+[messageOff]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 1.0]
+[scene 33900]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+[seStop ad60 0.4]
+
+
+
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 5]
+
+＠Dr.罗曼
+是第三门呢。考验的敌人在逐步增强。[r]这次若也能顺利突破就好了……
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+
+＠玛修
+虽然只要选择倾向埃列什基伽勒的回答，[r]战斗难度就会明显的降低……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-50]
+
+
+＠伊什塔尔
+那可不行。无论多么辛苦，[r]女人都有不能让步的底线哦，玛修。
+[k]
+
+＠伊什塔尔
+“面对其他女神时，只要我看起来相对比较优越就行了，[r][f small]  [f -]但唯独不能输给这家伙。”
+[k]
+
+＠伊什塔尔
+在与这种令人不爽到无可救药的对手战斗时尤其不行！
+[k]
+
+？1：因为是犹如镜中自己般的强敌呢……
+？2：这已经超越了主客观了呢……
+
+？！
+
+
+[wt 0.2]
+[messageOff]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[cameraMove 0.1 80,0 1.25]
+[wt 0.1]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+
+＠？？？
+想不到你这家伙也有如此气概啊。[r]开始会讲一些有模有样的话了呢，小丫头啊。
+[k]
+
+＠？？？
+[FFFFFF]？　不对，实际却是变成很小的丫头了吧，小丫头？[-][r]哇哈哈哈，这是什么呀，太搞笑了！
+[k]
+
+＠？？？
+这样下冥界一定很不安吧！[r]终于要进退维谷了呀，小丫头，还有[%1]！
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[cameraHome 0.1]
+[wait camera]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+
+＠玛修
+！　岩石背后好像有什么！[r]御主，请允许我发动攻击！
+[k]
+
+？1：好，全力打下去！
+？2：等等，那个是……！
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.4]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.4 1]
+[bgm BGM_EVENT_4 0.1]
+
+＠吉尔伽美什
+呼哈哈哈哈哈哈哈哈哈哈辛苦你们前来迎驾！
+[k]
+
+＠吉尔伽美什
+看来是被冥界过度寒气冻得胆怯了呢，生面孔！[r]需要熟悉冥界的本王带路吗？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+您是吉尔伽美什王[line 3]！
+[k]
+
+＠玛修
+为何您会在这里！？[r]您不是被埃列什基伽勒囚禁起来了吗！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+
+＠吉尔伽美什
+哼。区区冥界，不过是本王的后院。[r]我自然熟得很。毕竟来了很多次了。
+[k]
+
+[charaFace D 5]
+＠吉尔伽美什
+虽然一不小心死掉了，但在迦鲁拉灵到来之前，[r]本王躲在阴暗处屏住呼吸进入冥想气息遮断EX。
+[k]
+
+＠吉尔伽美什
+完美地从他们眼皮底下逃出后，一直在这里思考[r]该怎么做的时候，你们就出现了，仅此而已！
+[k]
+
+？1：这人超·精神百倍呢……
+？2：不愧是王，还是老样子呢！
+
+？！
+
+[charaFace D 1]
+＠吉尔伽美什
+你也是啊，[%1]。[r]毕竟你性格那么横冲直撞，本王早料到你们必会来冥界。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 0,-50]
+
+＠伊什塔尔
+……虽然没被埃列什基伽勒抓住是件好事，[r]但这家伙比我想象中的还有精神，反倒令人很不爽呢……
+[k]
+
+＠伊什塔尔
+要是跟我一样被诅咒的话，[r]倒还能够接受……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+
+＠吉尔伽美什
+蠢货。冥界的诅咒是对生者施加的存在。[r]本王已经死了，所以冥界惩罚不会降于吾身。
+[k]
+
+[charaFace D 3]
+＠吉尔伽美什
+但是这同时也代表着[r]本王受制于埃列什基伽勒的[#法律:规则]之下。
+[k]
+
+＠吉尔伽美什
+即便想回乌鲁克，[r]没有那家伙的允许，是无法离开冥界的。
+[k]
+
+[charaFace D 0]
+＠吉尔伽美什
+本王不觉得那家伙会老老实实放本王回去。[r]既然如此，你应该明白吧，[%1]？
+[k]
+
+[charaFace D 2]
+＠吉尔伽美什
+本王下令。为了本王，穿过冥界之门，[r]给那卑鄙的埃列什基伽勒一点教训！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 0]
+
+
+＠Dr.罗曼
+嗯，[%1]来这里的目的就是这个。
+[k]
+
+＠Dr.罗曼
+虽然情况有些颠倒，[r]但您也会帮助我们击败埃列什基伽勒吧，吉尔伽美什？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠吉尔伽美什
+包在本王身上吧。[r]就让你见识一下本王与那个小小小丫头的水平差吧。
+[k]
+
+[bgmStop BGM_EVENT_4 0.3]
+[wt 0.4]
+[bgm BGM_EVENT_2 0.1]
+
+＠吉尔伽美什
+话说，你怎么缩成那样了？[r]事到如今才意识到自己的愚蠢，变得畏畏缩缩了吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-50]
+[charaShake B 0.01 5 5 0.5]
+
+＠伊什塔尔
+不是早就说过这是埃列什基伽勒的诅咒了吗！
+[k]
+
+＠伊什塔尔
+啊啊真是的，[r]我果然不该来救你这种人！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+
+＠吉尔伽美什
+哈哈哈。这家伙，哈哈哈。[r]你来救本王，这是在做梦吗？
+[k]
+
+＠吉尔伽美什
+莫非本王在冥界进一步过劳而死，[r]看到幻觉了不成？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 0,-50]
+
+
+＠伊什塔尔
+是啊，这样一来我就可以心安理得地见死不救了呢。[r]你何不就这样坠入深渊如何？
+[k]
+
+＠伊什塔尔
+你最擅长游泳了吧。[r]擅长到沉迷沐浴，连灵草都被蛇给偷走了哟。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+
+＠吉尔伽美什
+唔，居然能准确刺中本王痛处的那张臭嘴！[r]这不是幻觉……是真正的伊什塔尔！
+[k]
+
+[charaFace D 1]
+＠吉尔伽美什
+但这样就说不通了。
+[k]
+
+＠吉尔伽美什
+若非本王的梦，[r]那这略有些可爱的伊什塔尔又是什么？
+[k]
+
+＠吉尔伽美什
+莫非发生了概率变动？[r]你打算在[%1]的面前装成超级无敌乖乖女吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 0,-50]
+
+＠伊什塔尔
+呜哇，好恶心。还可爱呢，被你说得我全身都起鸡皮疙瘩了。[r]还有我可完全没在装模作样。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠玛修
+话说……两位。乌鲁克闲聊就到此为止吧。[r]我们去第三门吧。请看，就在那边，
+[k]
+
+[wt 0.2]
+[messageOff]
+[bgmStop BGM_EVENT_2 0.4]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.4]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+
+＠第三门
+………………回答吧………………[r]………………请快回答我的提问吧………………
+[k]
+
+[wt 0.2]
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[wt 0.4]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 3]
+
+
+＠Dr.罗曼
+好可怜。从刚才开始一直在叫，[r]但完全被无视，连自信都没有了呢……
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[bgm BGM_EVENT_1 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+
+＠吉尔伽美什
+哎呀，对哦。[r]好吧，本王准了。第三门啊，你的裁定为何？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+＠第三门
+……并肩战斗的伙伴……[r]信赖、敬爱、配得上胜利的……
+[k]
+
+＠第三门
+究竟是……哪一位呢？
+[k]
+
+
+？1：是伊什塔尔哦。
+？2：是吉尔伽美什哦。
+
+？！
+
+
+[messageOff]
+[bgmStop BGM_EVENT_1 0.5]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

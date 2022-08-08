@@ -1,0 +1,841 @@
+
+
+＄91-10-41-01-1-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1041002 1 阿斯托尔福]
+[charaSet B 7013001 1 清姬]
+[charaSet C 1098162100 1 匕见]
+[charaSet D 2008000 1 崔斯坦]
+[charaSet E 1098198100 1 巴御前]
+[charaSet F 2038001 1 俄里翁]
+[charaSet G 11007000 1 织田信长]
+[charaSet H 2041000 1 织田信胜]
+[charaSet I 6028000 1 尼托克丽丝]
+[charaSet J 1098178800 1 梅杰德1]
+[charaSet K 1098178800 1 梅杰德2]
+[charaSet L 1098178800 1 梅杰德3]
+[charaSet M 1098178800 1 梅杰德4]
+[charaSet N 2011001 1 尼古拉·特斯拉]
+[charaSet O 5025001 1 爱迪生]
+[charaSet P 4009201 1 安妮]
+[charaSet Q 4009101 1 玛莉]
+
+[charaSet R 98115000 1 特效用]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad189]
+[wt 1.5]
+[seStop ad189]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 105800]
+[branch lblConf]
+[label lblNotClear]
+[scene 106000]
+[label lblConf]
+
+[charaScale B 1.5]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,20]
+[wt 0.5]
+
+[wipein openEye 1.0 1.0]
+[wait wipe]
+[wt 0.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠清姬
+早上好，[r]御·主♡
+[k]
+
+？1：……好近……
+？！
+
+＠清姬
+我是一直陪伴在您身边的，[r]属于您的清姬哦。
+[k]
+
+[charaFace B 0]
+＠清姬
+……哎呀，如果是平时，[r]这时候玛修小姐该赶来了。
+[k]
+
+[charaFace B 4]
+
+＠清姬
+虽然有些唐突。[r]……但现在，迦勒底出大事了。
+[k]
+
+？1：哎……！？
+？！
+
+[charaFace B 0]
+
+＠清姬
+让我想想。[r]用一句话概括虽然很简单……
+[k]
+
+＠清姬
+御主。[r]您喜欢关东风格还是关西风格？
+[k]
+
+？1：呃……关东风格？
+
+＠清姬
+嗯。
+[k]
+
+＠清姬
+简单说，就是大家，
+[k]
+
+[charaFace B 0]
+＠清姬
+都变成了[line 2]
+[k]
+
+[charaFace B 2]
+
+＠清姬
+[f large]笨蛋！
+[k]
+
+？2：那，那么……关西风格？
+
+＠清姬
+嗯。
+[k]
+
+＠清姬
+简单说，就是大家，
+[k]
+
+[charaFace B 0]
+
+＠清姬
+都变成了[line 2]
+[k]
+
+[charaFace B 2]
+
+＠清姬
+[f large]呆子！
+[k]
+
+？！
+
+[charaFace B 0]
+＠清姬
+正所谓百闻不如一见。[r]请务必更衣并前往走廊查看。
+[k]
+
+[charaFace B 1]
+
+＠清姬
+我也会帮您更衣的。
+[k]
+
+？1：好啦，你先出去。
+？！
+
+[charaFace B 4]
+
+＠清姬
+嘁。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaScale B 1.0]
+[wt 1.0]
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 104200]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 105500]
+[label lblConf2]
+
+
+[fadein black 1.0]
+[se ad8]
+[wait fade]
+
+[wt 0.5]
+
+？1：让你久等了，清……
+？！
+
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[bgm BGM_EVENT_27 0.1]
+
+＠匕见
+[f large]嗷哎～♪
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+[charaShake D 0.1 0 10 0]
+＠崔斯坦
+（激烈而美丽地甩头。）
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+[charaMove E -20,5 0.2]
+[wt 0.2]
+[charaMove E -40,0 0.2]
+[wt 0.3]
+[charaMove E -20,5 0.2]
+[wt 0.2]
+[charaMove E 0,0 0.2]
+[wt 0.3]
+
+[charaMove E 20,5 0.2]
+[wt 0.2]
+[charaMove E 40,0 0.2]
+[wt 0.3]
+[charaMove E 20,5 0.2]
+[wt 0.2]
+[charaMove E 0,0 0.2]
+[wt 0.3]
+＠巴御前
+（挥舞着名为剑的荧光棒。）
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+[charaMoveReturn F 0,-20 0.2]
+[wt 0.4]
+[charaMoveReturn F 0,-20 0.2]
+＠俄里翁
+（挥舞着棍棒。）
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠织田信长
+次锋，信！[r]来个模仿秀！
+[k]
+
+[charaFace G 6]
+
+＠织田信长
+唔唔～。[r]唔～，唔～。
+[k]
+
+[messageOff]
+[se ad236]
+[charaChange G 1098173600 0 fade 0.2]
+[effect bit_talk_magical_pon]
+[wait charaChange G]
+[wt 0.5]
+
+
+＠织田信长
+老夫是织田信长（尖锐的嗓音）。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ade77]
+[seVolume ade77 0 0.5]
+[wt 2.0]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠织田信胜
+不愧是姐姐大人！[r]哪怕变成正牌货也好帅啊！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth I 5]
+[charaDepth J 4]
+[charaDepth K 3]
+[charaDepth L 2]
+[charaDepth M 1]
+
+[charaTalk off]
+[charaFace I 0]
+[charaFace J 0]
+[charaFace K 0]
+[charaFadein I 0.1 1]
+[charaFadeinFSR J 0.1 2]
+[charaFadeinFSL K 0.1 0]
+
+＠梅杰德ｓ
+梅～杰～德～
+[k]
+
+＠梅杰德ｓ
+梅～杰～德～
+[k]
+
+＠梅杰德ｓ
+梅～杰～德～变～多～了～
+[k]
+
+＠梅杰德ｓ
+梅～杰～德～变～多～了～
+[k]
+
+
+[messageOff]
+[charaFace L 0]
+[charaFace M 0]
+[charaFadeinFSR L 0.1 2]
+[charaMoveFSR J 156,0 0.4]
+[charaMoveFSR L 356,0 0.4]
+
+[charaFadeinFSL M 0.1 0]
+[charaMoveFSL K -156,0 0.4]
+[charaMoveFSL M -356,0 0.4]
+
+＠梅杰德ｓ
+变～多～后～[r]目～标～是～
+[k]
+
+＠梅杰德ｓ
+黑～洞～
+[k]
+
+＠梅杰德ｓ
+咻～哇～
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[se ad335]
+[seVolume ad335 0 0.5]
+[wt 2.5]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠清姬
+……[r]……
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_27 1.0]
+[se ad8]
+[wait fade]
+
+[charaFadeout B 0.1]
+[branchQuestNotClear lblNotClear3 3000303]
+[scene 105800]
+[branch lblConf3]
+[label lblNotClear3]
+[scene 106000]
+[label lblConf3]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[wt 1.0]
+
+[bgm BGM_EVENT_7 0.1]
+
+？1：……不妙。
+？！
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠清姬
+没错。[r]真的很不妙，御主。
+[k]
+
+＠清姬
+玛修小姐在离开房间的瞬间，[r]就因为打击过大而卧床不起。
+[k]
+
+？1：让她睡吧！
+？2：玛修多半接受不了！
+？！
+
+＠清姬
+我也这么认为，[r]所以我劝她在床上好好休息别下来。
+[k]
+
+[charaFace B 0]
+
+＠清姬
+……好了。
+[k]
+
+＠清姬
+然后当然，大家……[r]会变成那样肯定有相应的原因。
+[k]
+
+＠清姬
+万幸的是，御主似乎平安无事……
+[k]
+
+＠清姬
+总之，何不先深呼吸一下，前往走廊，[r]寻找神志还清醒的人想办法解决问题呢？
+[k]
+
+？1：就这么办吧！
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_7 1.0 0.4]
+[wait fade]
+
+[branchQuestNotClear lblNotClear4 3000303]
+[scene 104200]
+[branch lblConf4]
+[label lblNotClear4]
+[scene 105500]
+[label lblConf4]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_7 1.0 1.0]
+[wait fade]
+
+＠清姬
+那边好像是爱迪生大人和特斯拉大人。
+[k]
+
+[charaFace B 5]
+
+＠清姬
+那两位是科学家，[r]或许……！
+[k]
+
+？1：好，找他们聊聊吧。
+？！
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth O 2]
+[charaDepth N 1]
+[charaTalk O]
+[charaFace O 2]
+[charaFace N 0]
+[charaFadein O 0.1 2]
+[charaFadein N 0.1 0]
+[wt 0.2]
+
+[wipein rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+
+
+＠爱迪生
+[f large]交流最棒！
+[k]
+
+[charaFace N 2]
+
+＠尼古拉·特斯拉
+[f large]直流最棒！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace O 1]
+[charaFace N 1]
+
+[charaMoveReturn O 256,-5 0.4]
+[wt 0.2]
+[se ade139]
+[wt 0.2]
+[charaMoveReturn O 256,-5 0.4]
+[wt 0.2]
+[se ade139]
+[wt 0.4]
+[charaMoveReturn N -256,-5 0.4]
+[wt 0.2]
+[se ade139]
+[wt 0.2]
+[charaMoveReturn N -256,-5 0.4]
+[wt 0.2]
+[se ade139]
+[wt 0.4]
+
+？1：好，没救了。
+？！
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 0.4]
+
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+
+＠清姬
+嗯。[r]那我们找下一位吧。
+[k]
+
+[charaFace B 2]
+
+＠清姬
+……！[r]御主！
+[k]
+
+？1：什么？
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_7 0.5]
+[wipeout upToDown 0.3 1]
+[wt 0.1]
+[se ad796]
+[wait wipe]
+[seStop ad796 0.3]
+
+[charaFadeout B 0.1]
+[scene 10000]
+[wt 0.4]
+
+[wipein downToUp 0.1 1]
+[wait wipe]
+
+
+[fadeout black 0.1]
+[wait fade]
+
+[branchQuestNotClear lblNotClear5 3000303]
+[scene 104200]
+[branch lblConf5]
+[label lblNotClear5]
+[scene 105500]
+[label lblConf5]
+
+[pictureFrame cut063_cinema]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth P 1]
+[charaDepth Q 2]
+[charaFace P 1]
+[charaFace Q 1]
+[charaFadein P 0.1 -256,-50]
+[charaFadein Q 0.1 256,-50]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+＠安妮＆玛莉
+哇哈哈！[r]御主就由我们收下啦～！
+[k]
+
+[messageOff]
+[charaFadeout P 0.4]
+[charaFadeout Q 0.4]
+[charaMove P -456,-50 0.4]
+[charaMove Q 56,-50 0.4]
+[se ad348]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-50]
+
+＠清姬
+可恶的安妮大人和玛莉大人！[r]多么下流而令人羡慕！
+[k]
+
+[charaFace B 5]
+
+＠清姬
+但我长年磨炼出来的[r]御主跟踪技术可不是吃素的！
+[k]
+
+[charaFace B 2]
+
+＠清姬
+嘿呀！
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[charaMove B -300,-50 0.4]
+[se ade101]
+[seVolume ade101 0 0.5]
+[fadeout black 1.0]
+[wait fade]
+
+[pictureFrame]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout downToUp 0.1 1]
+[wait wipe]
+
+[scene 107200]
+[wt 0.4]
+
+[wipein upToDown 0.3 1]
+[se ad7]
+[wait wipe]
+
+
+[wt 0.5]
+[se ad144]
+[seVolume ad144 0 0.3]
+[cameraMove 0.3 0,30 1.05]
+[wt 0.3]
+[shake 0.05 3 3 0.3]
+[wt 0.5]
+[cameraHome 1.0]
+[wt 1.5]
+
+
+？1：……好了。
+？2：接下来会怎么样呢……
+？！
+
+[bgm BGM_EVENT_7 0.1]
+[charaTalk depthOff]
+[charaDepth Q 2]
+[charaDepth P 1]
+[charaTalk P]
+[charaFace P 1]
+[charaFace Q 1]
+[charaFadein P 0.1 0]
+[charaFadein Q 0.1 2]
+
+＠安妮
+唔～呼～呼～呼～呼～。[r]御～主～♡
+[k]
+
+＠玛莉
+御～主～♡
+[k]
+
+？1：两位，能冷静下来好好谈吗？
+？！
+
+＠安妮
+嗯，嗯。
+[k]
+
+＠安妮
+若是平时，我们当然愿意奉陪，[r]待赖光或玛修亲一来就逃难……
+[k]
+
+＠玛莉
+更何况。[r]我和安妮平时还有那个。
+[k]
+
+？1：……那个？
+？！
+
+＠安妮
+那是对英灵，对从者，[r]尤其是对人类非常重要的存在。
+[k]
+
+＠安妮
+呵呵……但那个不复存在的如今，[r]我们已经无所畏惧了。
+[k]
+
+＠玛莉
+虽然不知道消失的原因，[r]但这些都无关紧要啦！
+[k]
+
+＠玛莉
+来吧，来吧。[r]大家一起享受野兽般的糜烂时光[line 3]
+[k]
+
+[bgmStop BGM_EVENT_7 0.5]
+
+＠A：？？？
+很遗憾！[r]哪有那么便宜！
+[k]
+
+[charaTalk off]
+[charaFace P 2]
+[charaFace Q 2]
+
+＠二人
+……什么人！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[charaTalk on]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[scene 106800]
+[wt 0.1]
+
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+[effect bit_talk_43h_fs 0,0 F]
+[se ad75]
+[seVolume ad75 0 0]
+[seVolume ad75 1.0 1.0]
+[wt 1.0]
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+[effectStop bit_talk_43h_fs]
+[scene 107200]
+[seStop ad75 0.5]
+[wt 0.1]
+
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[charaPut A 1]
+[charaTalk A]
+[charaFace A 5]
+[se ad223]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect A appearance 1 0.25]
+[wt 0.4]
+
+＠阿斯托尔福
+查理曼十二勇士之一，[r]吾名为阿斯托尔福。
+[k]
+
+＠阿斯托尔福
+是对胆敢为害御主之人，[r]胆敢与御主为敌之人，以及[line 3]
+[k]
+
+＠阿斯托尔福
+胆敢诱惑御主的不法之徒！
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+[charaFace A 2]
+
+＠阿斯托尔福
+[f large]惩戒！！
+[k]
+
+[charaFace A 5]
+
+＠阿斯托尔福
+的圣骑士！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk P]
+[charaFace P 5]
+[charaFace Q 5]
+[charaFadein P 0.1 0]
+[charaFadein Q 0.1 2]
+
+＠安妮
+……有种奇妙的感觉，[r]但总之是敌人。
+[k]
+
+＠玛莉
+现在的我们没有制动装置！[r]先迎击你，然后[#和御主卿卿我我:玩弄御主]！！
+[k]
+
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+执行正义！[r]我要上啦[line 3]！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

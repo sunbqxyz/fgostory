@@ -1,0 +1,301 @@
+
+＄94-04-01-13-2-0
+
+
+
+[soundStopAll]
+
+
+[charaSet A 98100400 1 玛修]
+[charaSet B 1008300 1 齐格飞]
+[charaSet C 5032001 1 尼禄]
+[charaSet D 6019300 1 风魔小太郎]
+[charaSet E 1098181300 1 Kingprotea]
+[charaSet F 4025001 1 工厂长]
+[charaSet G 10001002 1 Passionlip]
+
+[charaSet J 98115000 1 特效用]
+
+[scene 81700]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.5]
+
+[fadein black 0.7]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠风魔小太郎
+[#制裁邪恶:Jackpot]！
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+
+[se ad28]
+[effect bit_talk_Slash_white_01_L]
+[charaFadeout D 0.1]
+[wt 0.3]
+
+[se bac139]
+[fowardEffect bit_talk_14]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[charaShake F 0.02 3 3 0.8]
+[wt 0.8]
+＠工厂长
+呃啊啊啊啊慢着搭档！[r]被粗暴地打倒也该有点限度吧！？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.0]
+[charaMove F 0,-30 0.6]
+[charaFadeout F 0.4]
+[wt 0.3]
+[se ad144]
+[wt 1.5]
+
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠风魔小太郎
+邪恶已经被打倒了。这样一来，[r]Protea小姐就能恢复原本温柔的[line 3]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+
+＠Kingprotea
+……呵欠～啊唔……
+[k]
+
+＠Kingprotea
+工厂长太吵了，[r]都把我吵醒了……
+[k]
+
+＠Kingprotea
+话说他已经被你们打败了呀……[r]完全没有闹够……
+[k]
+
+[charaFace E 1]
+
+＠Kingprotea
+但我很高兴看到大家能平安无事。
+[k]
+
+[messageOff]
+[charaFaceFade E 14 0.6]
+[wt 1.0]
+
+[bgm BGM_EVENT_24 0.1]
+＠Kingprotea
+呵呵……[r]让我们尽情……尽情地玩耍吧。
+[k]
+
+＠Kingprotea
+没关系。就算砸得一塌糊涂，[r]Meltryllis也一定会帮我修好的。
+[k]
+
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad85]
+[wt 0.1]
+[se ade344]
+[shake 0.05 0 4 2.0]
+[effect bit_talk_impactlanding 200,0]
+[wt 1.8]
+[effectStop bit_talk_impactlanding]
+
+[se ad85]
+[wt 0.1]
+
+[se ade345]
+[shake 0.05 0 4 2.0]
+[effect bit_talk_impactlanding -200,0]
+[wt 2.0]
+[effectStop bit_talk_impactlanding]
+[seStop ad628 1.0]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠风魔小太郎
+怎么回事！？[r]她难道不是个善良的从者吗！？
+[k]
+
+？1：话说你为什么会这么想？
+
+[charaFace D 11]
+
+＠风魔小太郎
+因为……她总是遮住一侧眼睛……[r]我还以为她很害羞……
+[k]
+
+？2：（对哦……他没在上面和她打过……）
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠尼禄
+反倒是工厂长在的时候比较好啊！[r]该怎么办，[%1]！
+[k]
+
+＠尼禄
+派一个人引开她以便其他人前往地表，[r]还是选择正面对抗呢！
+[k]
+
+＠尼禄
+交由御主来做决定吧！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+那我负责引开她！[r]我作为盾兵，短时间内应该可以一个人[wt 1.0][charaFace A 6][line 3]哎？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[se ad609]
+[shake 0.05 2 3 2.5]
+[wt 0.4]
+[se ad608]
+[wt 2.0]
+
+[effect bit_talk_explosion]
+[se bac59]
+[flashin once 0.4 1.0 FFFFFFFF FFFFFF80]
+[wt 0.4]
+[effect bit_talk_sparks]
+[charaPut J 0,-200]
+[charaEffect J bit_talk_fire]
+[effectStop bit_talk_explosion]
+[wt 2.4]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠齐格飞
+工厂被爆破了！？[r]可究竟是谁……唔，那个影子是……！
+[k]
+
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ade163]
+[seVolume ade163 0 0.8]
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.7 1]
+[seStop ade163 1.0]
+[wt 1.0]
+
+＠Passionlip
+咦？　我还当是谁呢，[r]原来是[%1]啊？
+[k]
+
+[charaFace G 1]
+
+＠Passionlip
+呵呵，真巧呀。[r]我也刚来。
+[k]
+
+？1：Passionlip……！
+？2：我有种……怪物VS怪兽的预感……！
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠Kingprotea
+哎……为什么要破坏工厂？[bgm BGM_EVENT_82 0.1][r]Meltryllis会生气的……
+[k]
+
+＠Kingprotea
+而且……这讨厌的气息是……[r]Passionlip……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠Passionlip
+Yes！[r]我终于找到了，万恶之源Kingprotea！
+[k]
+
+＠Passionlip
+[%1]，交给我吧！！[r]我来解决Protea！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠Kingprotea
+啊哇哇……[r]不要用那双爪子啦，那可是怪兽杀手……！
+[k]
+
+＠Kingprotea
+Protea，大危机[line 3]！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_82 0.5]
+[wait fade]
+[soundStopAll]
+[end]

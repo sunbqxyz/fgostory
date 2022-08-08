@@ -1,0 +1,317 @@
+
+
+
+＄03-00-06-06-5-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 玛修]
+[charaSet B 1017001 1 武藏]
+[charaSet C 9005001 1 福尔摩斯]
+[charaSet D 98002000 1 芙芙]
+[charaSet E 1098191310 1 马卡里俄斯]
+[charaSet F 1098190300 1 尼古拉·特斯拉]
+[sceneSet G 93901 1]
+[charaSet S 5009000 1 特效用dummy1]
+[charaSet T 5009000 1 特效用dummy2]
+
+[charaScale G 1.01]
+
+[scene 91803]
+[backEffect bit_talk_sparks]
+
+[charaPut T 1200,1200]
+[charaEffect T bit_talk_10_red]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[se ad668]
+[wt 0.2]
+[seStop ad668 0.1]
+
+＠玛修
+[line 3]护卫战团，第二波突破！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+[se adm15]
+[wt 0.7]
+[cueSe Battle bac305]
+[wt 0.5]
+
+[charaFace B 1]
+
+＠武藏
+不错。真不错。[r]异乡军神的纳米什么来着，太[line 2]厉害啦！
+[k]
+
+[charaFace B 6]
+
+＠武藏
+虽说不至于改变信仰，但值得尊敬！[r]感谢将力量借给我！
+[k]
+
+[charaFace B 12]
+
+＠武藏
+然后，话说回来！[r]机神得墨忒耳，注意到我们……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 2.0]
+[wipeout rectangleStripUpToDown 0.7 1.0]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaFadein G 0.1 0,-200]
+[wt 0.3]
+[wipein rectangleStripDownToUp 0.7 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[se ad895]
+[wt 2.0]
+[seStop ad895 1.0]
+[wt 1.0]
+
+＠
+『何其悲哀。何其悲哀。』
+[k]
+
+＠
+『死即为悲哀。终结亦为悲哀。』
+[k]
+
+＠
+『我心爱的奥林波斯市民、我心爱的孩子们啊。』
+[k]
+
+[messageOff]
+[se ad895]
+[wt 2.0]
+[seStop ad895 1.0]
+[wt 1.0]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.7 1.0]
+[wait wipe]
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+[charaFadeout G 0.1]
+[wt 0.3]
+[wipein rectangleStripUpToDown 0.7 1.0]
+[wait wipe]
+
+＠武藏
+…………并没有注意到吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+护卫战团的动向并不会影响机神得墨忒耳吗。[r]那么应该认为两者的指挥系统是各自独立的吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠芙芙
+芙？　芙呜？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+护卫战团只是纯粹的障碍物。[r]这种情况下，若想将她引导至γ地点……
+[k]
+
+[messageOff]
+[charaFace C 8]
+[wt 1.0]
+[bgm BGM_EVENT_63 0.1]
+[charaFace C 7]
+
+＠福尔摩斯
+只能主动挡在神的面前了，[r]无论如何都要让得墨忒耳神注意到我们。
+[k]
+
+＠福尔摩斯
+无论她拥有多么无敌的再生能力，[r]只要遭到直接攻击，总不可能无动于衷。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+对神攻击……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+请容我这样说！[r]对机神战术其三，“总之卯足力气狠揍”！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠马卡里俄斯
+……夏洛克·福尔摩斯。[r]泛人类史的贤者。
+[k]
+
+＠马卡里俄斯
+虽然乱来，但确实很有道理。
+[k]
+
+[charaFace E 7]
+
+＠马卡里俄斯
+玛修、武藏、[%1]。[r]拜托了。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠F：人工智能
+别指望能彻底打倒她。[r]撑下去[line 3]都会困难得超乎想象。
+[k]
+
+[charaFace F 2]
+
+＠F：人工智能
+但无论如何都要躲避攻击，忍耐下去。[r]并将她引诱到γ点！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[se ad668]
+[wt 0.2]
+[seStop ad668 0.1]
+[wt 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[cueSe Battle bac305]
+[wt 1.0]
+
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaFadein G 0.1 0,-200]
+[wt 0.2]
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[se ad895]
+[wt 2.0]
+[seStop ad895 1.0]
+[wt 1.0]
+
+＠
+『何其悲哀。何其悲哀。』
+[k]
+
+＠
+『死即为悲哀。终结亦为悲哀。』
+[k]
+
+[messageOff]
+[se ad895]
+[wt 2.0]
+[seStop ad895 1.0]
+[wt 1.0]
+
+＠武藏
+从刚才起就在重复同一句台词！[r]看来就算是神明也有不擅长的领域嘛！
+[k]
+
+＠武藏
+就连现代的家电AI都比你更会说哦？[r]要不去看一场歌舞伎学习一下？
+[k]
+
+＠武藏
+开玩笑啦，我只是逞强地说了几句，[r][%1]你怎么想呢[line 2]！？
+[k]
+
+？1：嗯，跟微波炉半斤八两！
+？2：赢不过武藏亲的嘴皮子啦！
+
+？！
+
+＠武藏
+果然呢！[r]那再加把劲，鼓足干劲上吧！
+[k]
+
+＠玛修
+与机神得墨忒耳的相对距离，目前为2600！[r]高速移动突击后，开始战斗！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_63 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+
+

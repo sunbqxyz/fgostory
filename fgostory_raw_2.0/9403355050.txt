@@ -1,0 +1,641 @@
+
+＄94-03-35-50-5-0
+
+[soundStopAll]
+
+[charaSet A 7033000 1 阿周那·Alter_第一]
+[charaSet B 7033002 1 阿周那·Alter_第三]
+[equipSet H 9807310 1 情人节礼装]
+
+
+
+[fadein black 1.0]
+[wait fade]
+
+＠
+你遇见的是[line 3]
+[k]
+
+
+？1：接近神的阿周那·Alter。
+
+[branch select01_01]
+
+？2：接近人的阿周那·Alter。
+
+[branch select01_02]
+
+？！
+
+
+
+
+
+[label select01_01]
+
+[messageOff]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66800 1.0]
+[branch lblConf]
+[label lblNotClear]
+[scene 10400 1.0]
+[label lblConf]
+[wt 1.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠阿周那·Alter
+[line 3][r][line 3]
+[k]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V010]
+我听见了召唤……[r]前来拜访……[wait tVoice]
+[k]
+
+？1：给，阿周那。
+？2：这是巧克力！
+？！
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V020]
+……[r]……[wait tVoice]
+[k]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V030]
+……唔。[r]巧克力……是一种点心吧。[wait tVoice]
+[k]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V040]
+这次的任务是……[r]收下巧克力……？[wait tVoice]
+[k]
+
+？1：没错。
+？！
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V050]
+我明白了……[r]那我就收下吧。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V060]
+……[r]……[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V070]
+什么事……都没发生呢……[wait tVoice]
+[k]
+
+？1：希望你可以尝尝看。
+？！
+
+[charaFace A 0]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V080]
+尝尝看……[r]从者似乎并不需要吃饭吧……？[wait tVoice]
+[k]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V090]
+……[r]……[wait tVoice]
+[k]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V100]
+不过既然这是任务……[wait tVoice]
+[k]
+
+[messageOff]
+[se ade11]
+[wt 1.4]
+[se ade13]
+[wt 1.0]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V110]
+……[r]……[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V120]
+唔。[r]……好甜啊。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V130]
+那这样任务就完成了吧？[wait tVoice]
+[k]
+
+？1：啊，嗯。
+？！
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V140]
+那我就告辞了……[wait tVoice]
+[k]
+
+[messageOff]
+[se ad95]
+[seStop ad95 1.5]
+[charaMove A -50,0 0.5]
+[charaFadeout A 0.4]
+[wt 1.0]
+[se ad8]
+[wt 2.2]
+
+？1：不知道好吃吗……？
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_2 1.0 0.5]
+[wait fade]
+[wt 2.0]
+[fadein black 1.0]
+[bgm BGM_EVENT_2 1.0 1.0]
+[wait fade]
+[wt 0.5]
+
+[se ade169]
+[seVolume ade169 0 0.7]
+[wt 1.2]
+
+？1：请进？
+？！
+
+[se ad8]
+[wt 0.8]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V150]
+御主……[r]我理解刚才任务的详细内容了……[wait tVoice]
+[k]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V160]
+这是[#祭祀:活动]吧……[r]原来如此……怪不得……[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V170]
+我由衷表示感谢……[wait tVoice]
+[k]
+
+？1：不难吃吧？
+
+[charaFace A 4]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V180]
+难吃……？[wait tVoice]
+[k]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V190]
+……[r]……失礼了。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V200]
+尽管如今的我严重缺乏常识……[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V210]
+即便如此……[r]还没有机械化到……[wait tVoice]
+[k]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V220]
+会践踏饱含了真心制作出来的东西……[wait tVoice]
+[k]
+
+？2：好吃吗？
+
+[charaFace A 1]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V230]
+嗯，很好吃。[wait tVoice]
+[k]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V240]
+……虽然我已经成为了从者……[r]但味道还是能尝出来的。[wait tVoice]
+[k]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V250]
+……不。就算尝不出来[line 3][r]我也会将这形容为好吃吧。[wait tVoice]
+[k]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V260]
+毕竟这是你倾注了心意制作的东西。[r]我收下了这份感情。[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 0]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V270]
+不管怎么说……[wait tVoice]
+[k]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V280]
+我也得为巧克力准备相应的回礼才行。[wait tVoice]
+[k]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V290]
+如果有什么想要的，请趁现在告诉我吧。[wait tVoice]
+[k]
+
+？1：没有什么……特别想要的。
+？2：阿周那想送的东西就行了。
+？！
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V300]
+……[r]……我明白了。[wait tVoice]
+[k]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V310]
+请稍等……[wait tVoice]
+[k]
+
+[messageOff]
+[se ad39]
+[charaEffect A bit_talk_36_bl]
+[wt 1.5]
+[charaEffectStop A bit_talk_36_bl]
+[fowardEffect bit_talk_release]
+[wt 1.7]
+
+[charaFace A 1]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V320]
+……请收下这个。[wait tVoice]
+[k]
+
+[messageOff]
+[fowardEffectDestroy bit_talk_release]
+[charaFadeout A 0.4]
+
+[se bas2]
+[charaFace H 0]
+[charaFadein H 0.5 0,-70]
+[wt 2.0]
+[charaFadeout H 0.4]
+[wt 0.5]
+
+？1：这是宝石……！？
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V330]
+……不。[wait tVoice]
+[k]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V340]
+这是半宝石，[r]或者说应该称之为准宝石。[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_2 3.5]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V350]
+石头被人工分类，[r]并决定其价值……[wait tVoice]
+[k]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V360]
+但是，在上一个阶段，[bgm BGM_EVENT_6 0.1][r][#只需努力闪耀便拥有价值]。[wait tVoice]
+[k]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V370]
+……看来我……[r]是这么理解的。[wait tVoice]
+[k]
+
+？1：我会好好珍藏的。
+？！
+
+[charaFace A 1]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V380]
+那块石头虽然没什么特别的，[r]但如果你愿意这么做，就再好不过了……[wait tVoice]
+[k]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V390]
+那么。[r]祝你好运……[wait tVoice]
+[k]
+
+[messageOff]
+
+[branch select01_end]
+
+
+
+
+[label select01_02]
+
+[messageOff]
+
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 66800 1.0]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10400 1.0]
+[label lblConf2]
+[wt 1.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V400]
+哎呀，御主。[r]欢迎。[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V410]
+问我为何不将自己的房间[r]装饰得有特色一些？[wait tVoice]
+[k]
+
+[charaFace B 9]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V420]
+……我考虑过很多方案，[r]但不太好办呢……[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V430]
+话说回来，请问有何贵干？[wait tVoice]
+[k]
+
+？1：情人节快乐！
+？！
+
+[charaFace B 4]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V440]
+只要能和御主在一起，[r]我就一直很幸福……[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V450]
+不是这个意思？[r]唔，我明白了。[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_2 1.0 0.5]
+[wait fade]
+[charaFace B 1]
+[wt 1.5]
+[fadein black 1.0]
+[bgm BGM_EVENT_2 1.0 1.0]
+[wait fade]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V460]
+是这种[#祭祀:活动]吧。[r]非常感谢。[wait tVoice]
+[k]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V470]
+这本该是供奉给神明们的祭品……[r]不，没什么。[wait tVoice]
+[k]
+
+[charaFace B 6]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V480]
+那我就把这视作给予我的奖赏，[r]恭敬地收下了。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[se ade11]
+[wt 1.4]
+
+[se ade13]
+[wt 1.0]
+
+[charaFace B 12]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V490]
+啊，原来如此。[r]这是……新奇的甜味。[wait tVoice]
+[k]
+
+[charaFace B 6]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V500]
+不论是战斗，还是思考，[r]人体都需要糖分。[wait tVoice]
+[k]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V510]
+虽然身为从者并不需要。[r]但吃了以后会令心情变得轻松。[wait tVoice]
+[k]
+
+[charaFace B 12]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V520]
+……不，原来如此。[r]因为这是御主赠送的礼物吧……[wait tVoice]
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 0.5]
+[bgm BGM_EVENT_2 1.0 0.5]
+[wait wipe]
+[charaFace B 1]
+[wt 1.0]
+[wipein rollLeft 1.0 0.5]
+[bgm BGM_EVENT_2 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V530]
+多谢款待。[wait tVoice]
+[k]
+
+？1：品尝得好仔细啊……
+？！
+
+[charaFace B 9]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V540]
+最后一块实在舍不得吃啊……[wait tVoice]
+[k]
+
+[charaFace B 1]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V550]
+好了，话说回来。[r]我打算向您献上回礼。[wait tVoice]
+[k]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V560]
+就是这个。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+
+[se bas2]
+[charaFace H 0]
+[charaFadein H 0.5 0,-70]
+[wt 2.0]
+[charaFadeout H 0.4]
+[wt 0.5]
+
+？1：宝石！？
+？2：如此贵重的……！
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V570]
+不，严格来说这不是宝石，[r]而是被称为半宝石，或者准宝石的存在。[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_2 3.5]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V580]
+价值或许有所差异，[r]但在美丽方面绝不逊色。[wait tVoice]
+[k]
+
+[charaFace B 1]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V590]
+而且最重要的是，[bgm BGM_EVENT_6 0.1][r]这块石头选择散发出美丽的光辉。[wait tVoice]
+[k]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V600]
+不是因为散发着美丽光辉才显得美丽，[r]正因为努力闪耀，才显得美丽。[wait tVoice]
+[k]
+
+[charaFace B 6]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V610]
+希望你能一直保持这块准宝石般的心……[wait tVoice]
+[k]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V620]
+我由衷这么祈祷。[wait tVoice]
+[k]
+
+？1：我会好好珍藏的。
+？！
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V630]
+谢谢你，御主。[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V640]
+……假如是更接近神的我，[r]会赠送什么礼物？[wait tVoice]
+[k]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V650]
+……无论是神，还是人，[r]本质都是我。[wait tVoice]
+[k]
+
+＠阿周那·Alter
+[tVoice ValVoice_703300 0_V660]
+所以恐怕会赠送相同的东西吧。[r]或许多少有些无礼吧。[twt 4.0][charaFace B 1][wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[label select01_end]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_6 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

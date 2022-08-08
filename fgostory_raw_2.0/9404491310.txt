@@ -1,0 +1,1089 @@
+
+
+＄94-04-49-13-1-0
+
+[soundStopAll]
+
+[skip false]
+
+[branchQuestNotClear lblNotClear1 3000320 4]
+[label lblClear1]
+[flag IsGirl true]
+[branch lblIsClearConf1]
+[label lblNotClear1]
+[flag IsGirl false]
+[label lblIsClearConf1]
+
+[skip true]
+
+[charaSet A 7027300 1 Amazones CEO_普通]
+[charaSet B 1098119600 1 Amazones CEO_轱辘]
+[charaSet C 99502600 1 玛修]
+[charaSet D 7027002 1 彭忒西勒亚]
+[charaSet E 1098124510 1 达·芬奇]
+[charaSet F 2035000 1 帕里斯]
+[charaSet G 3016000 1 赫克托耳]
+[charaSet H 4029001 1 阿喀琉斯]
+[charaSet J 5009000 1 特效用]
+
+[branch lblNotGirl1 IsGirl false]
+[label lblGirl1]
+[charaSet E 1098124510 1 达·芬奇]
+[branch lblIsGirlConf1]
+[label lblNotGirl1]
+[charaSet E 98111500 1 达·芬奇]
+[label lblIsGirlConf1]
+
+[scene 89703]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.7]
+
+[cameraMove 2.0 -118,0 1.3]
+[wt 2.8]
+[cameraMove 3.2 118,0 1.3]
+[wt 4.0]
+[cameraHome 2.0]
+[wt 3.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+？1：好，弄干净了。
+？2：这里真是个好地方啊……
+？！
+
+[se ade74]
+[seVolume ade74 0 0.6]
+[seVolume ade74 0.7 1.0]
+[wt 1.7]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.4 1]
+[seStop ade74 0.1]
+[wt 0.5]
+
+＠A：Amazones CEO
+你还在这里啊。
+[k]
+
+[charaFace A 1]
+
+＠A：Amazones CEO
+也不用把每个角落都清扫得那么干净吧。
+[k]
+
+？1：毕竟是我们在频繁使用。
+？2：这也是为了表达我们的感谢吧。
+？！
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth B 1]
+[charaDepth A 2]
+[charaFadeout A 0.2]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠B：Amazones CEO
+是这样啊。只要你们能认真完成工作，[r]你我已经算达成双赢关系了……
+[k]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth B 2]
+[charaFadeout B 0.2]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+不过算了，差不多该出去了吧。[r]你在里面我就无法分离空间了。
+[k]
+
+＠A：Amazones CEO
+这个叫……恰赫季斯金字塔姬路城？[r]的地方被设置成会与我穿过传送口相连动，
+[k]
+
+＠A：Amazones CEO
+连接内部的商品仓库与放松设施也会分离。
+[k]
+
+＠A：Amazones CEO
+还在里面的你将会被卷入其中，[r]独自一人被留在遥远的我们本公司内，
+[k]
+
+[charaFace A 1]
+
+＠A：Amazones CEO
+以我个人来说[line 3][r]觉得这样或许也不错？
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[wait fade]
+[charaFadeout A 0.1]
+[charaTalk depthOn]
+[scene 90100]
+[wt 0.5]
+[fadein black 1.2]
+[wait fade]
+
+[charaPut J 1]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠玛修
+啊，好像来了呢。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠彭忒西勒亚
+来了啊。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+哎呀，这个银河的我。[r]不只是[&他:她]，连你也来为我送行了吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 0]
+[branch lblNotGirl2 IsGirl false]
+[label lblGirl2]
+[charaFadein E 0.1 1]
+[branch lblIsGirlConf2]
+[label lblNotGirl2]
+[charaFadein E 0.1 0,-90]
+[label lblIsGirlConf2]
+
+＠达·芬奇
+不过，假如说除了[%1]以外，[r]还有谁最适合作为代表的话，
+[k]
+
+＠达·芬奇
+毫无疑问就是她了吧。
+[k]
+
+[branch lblNotGirl3 IsGirl false]
+[label lblGirl3]
+[charaFace E 17]
+[branch lblIsGirlConf3]
+[label lblNotGirl3]
+[charaFace E 5]
+[label lblIsGirlConf3]
+
+＠达·芬奇
+……虽说可能还有其他人正在偷看。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 0]
+[charaFace A 11]
+[charaFadein A 0.1 2]
+
+＠彭忒西勒亚
+不要误会。我可不会做送行这种软弱娘娘腔的事。
+[k]
+
+＠彭忒西勒亚
+我是身为Amazones的女王，[r]意识到自己有一件重要的事忘了说了。
+[k]
+
+＠A：Amazones CEO
+唔？[r]代替赔偿费的资源我已经收下了啊。
+[k]
+
+？1：居然付赔偿费了啊。
+？！
+
+[charaFace D 3]
+
+＠彭忒西勒亚
+既然判断失误，当然必须老实承认。[r]这才算是好女王。
+[k]
+
+[charaFace D 9]
+
+＠彭忒西勒亚
+不承认自己过错的王族支配的国家迟早会毁灭。
+[k]
+
+＠A：Amazones CEO
+作为CEO，我深有同感。[r]然后呢，忘记说的是什么事？
+[k]
+
+[charaFace D 0]
+
+＠彭忒西勒亚
+唔。仔细想来，你的世界……是银河吗？[r]那里应该也有类似阿喀琉斯那样的男人吧。
+[k]
+
+＠彭忒西勒亚
+就像你无法原谅我的世界中的那家伙一样，[r]我也不打算放过你的世界里的那家伙。
+[k]
+
+＠彭忒西勒亚
+决不原谅。耻辱必须雪洗。[r]因此，那边就交给你处理了。
+[k]
+
+＠A：Amazones CEO
+就这种事啊，不用说，我当然同意。
+[k]
+
+＠A：Amazones CEO
+我也要回你一句。你那边的那家伙就交给你处理了。[r]写作一定要杀了他，读作必杀。
+[k]
+
+[charaFace D 8]
+
+＠彭忒西勒亚
+嗯。要做的事和现在没什么差别，[r]但我作为女王向你发誓。
+[k]
+
+＠A：Amazones CEO
+那我会作为CEO向你保证。[r]稍后我会发一份确认书给你的，记得看一下。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠玛修
+唯一能肯定的是，无论在哪个世界，[r]被盯上的那位一定很辛苦呢……
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_2 1.2]
+[wait fade]
+[charaFadeout C 0.1]
+[charaPut J 1200,1200]
+[scene 49100]
+[wt 1.0]
+[fadein black 1.2]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠帕里斯
+嗯嗯。那家伙就该多辛苦一点。[r]活该！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠赫克托耳
+只不过啊。
+[k]
+
+＠赫克托耳
+大叔我觉得通过认真面对另一个自己，[r]她自己也能获得某种救赎。
+[k]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaFace G 4]
+
+＠赫克托耳
+只是我这么说或许有些狂妄。
+[k]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠赫克托耳
+冷静下来考虑，除了那家伙的内心以外，[r]状况并没有发生什么改变……
+[k]
+
+＠赫克托耳
+若说这至少达到了最基本的目的，那我也无话可说，[r]说这无关紧要其实也行。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0]
+[charaFace G 4]
+[charaFadein G 0.1 2]
+
+＠帕里斯
+哥哥……是希望彭忒西勒亚小姐能被拯救吗？
+[k]
+
+[charaFace G 0]
+
+＠赫克托耳
+不好说。说到底，究竟何谓救赎，[r]还是取决于彭忒西勒亚自身啊。
+[k]
+
+＠赫克托耳
+正因为知道这种理所当然的结论，[r]我才觉得自己狂妄啊。
+[k]
+
+＠赫克托耳
+所以对我来说，[r]这只是报答人情的问题。
+[k]
+
+＠帕里斯
+说得对。我们确实欠她一份情。
+[k]
+
+＠帕里斯
+自从哥哥被阿喀琉斯杀害之后，我……[r]还有特洛伊的大家都心情低落。
+[k]
+
+＠帕里斯
+而就在这时，[r]赶来的黄金女战士们赐予了我们莫大的勇气。
+[k]
+
+[charaFace G 1]
+
+＠赫克托耳
+她明知亚该亚的战力有多强大。
+[k]
+
+＠赫克托耳
+却仍然耿直地遵循赎罪的神谕，[r]带着为数不多的援军赶到……太笨拙了。
+[k]
+
+[charaFace G 0]
+
+＠赫克托耳
+嗯。我啊，只是多管闲事地[r]为这种笨拙而耿直的恩人，
+[k]
+
+＠赫克托耳
+提供[#或许能引发某种拯救的机关]所须的要领罢了。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaFace H 0]
+[charaFadein H 0.3 -128,0]
+[wt 0.2]
+[charaMove H -64,0 0.7]
+[wt 2.0]
+[charaTalk H]
+
+＠阿喀琉斯
+[line 3]所以你才会怂恿阿维斯布隆，[r]让他和闲得发慌的我接触吧？
+[k]
+
+[charaFace H 5]
+
+＠阿喀琉斯
+但你们这群特洛伊的人也太拐弯抹角了吧！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠帕里斯
+啊！　出现了，阿喀琉斯！[r]要干掉他吗，哥哥，阿波罗大人！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠赫克托耳
+住手啦。在这里闹起来的话，[r]会被下面那两个发现的啦。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace H 0]
+[charaFadein H 0.1 0]
+[charaFace G 0]
+[charaFadein G 0.1 2]
+
+＠赫克托耳
+[line 3]既然都来了，那你就老实交代吧。
+[k]
+
+＠赫克托耳
+[#我]只是提出了『或许能推进事态的可能性』。[r]而你，为什么会接受阿维斯布隆的提案？
+[k]
+
+[charaFace G 1]
+
+＠赫克托耳
+哪怕你说自己懒得当什么亚该亚英雄，[r]只想变身成一介魔偶也行……
+[k]
+
+＠赫克托耳
+不过，我觉得应该不可能吧。
+[k]
+
+＠阿喀琉斯
+怎么可能啦，你脑袋少零件了吗？
+[k]
+
+[charaFace G 4]
+
+＠赫克托耳
+这是在骂我吧？
+[k]
+
+[charaFace H 4]
+
+＠阿喀琉斯
+……真是的。[r]因为我是第一次看到那边的那家伙啦。
+[k]
+
+[charaFace G 0]
+
+＠赫克托耳
+CEO的那个吗？
+[k]
+
+[charaFace H 0]
+
+＠阿喀琉斯
+嗯。我有听说过，但当知道她实际存在时……[r]就非常在意。
+[k]
+
+＠阿喀琉斯
+在意[#那边的那家伙是什么立场]。
+[k]
+
+＠阿喀琉斯
+[line 3]嗯，我知道。态度没什么差别。
+[k]
+
+＠阿喀琉斯
+还是一听到名字就会不分敌我发疯的关系。
+[k]
+
+＠阿喀琉斯
+我不知道那边的那家伙为何会变成这样。[r]但应该还是我的错吧。
+[k]
+
+＠阿喀琉斯
+所以我觉得，或许应该去了解一下。[r]究竟发生了什么。为什么会变成这样。
+[k]
+
+＠阿喀琉斯
+只是我又不能直接开口询问。[r]她只要一看到我，就肯定会发疯。所以[line 3]
+[k]
+
+＠赫克托耳
+所以才会在她身边做这种类似情报人员的事吧。
+[k]
+
+＠赫克托耳
+因为在搬运魔偶的面前，她或许会在[r]与御主的对话中不小心吐露两句提示吧。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠帕里斯
+简直就像跟踪狂呢，阿波罗大人！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠阿喀琉斯
+少啰嗦，发呆弟！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠帕里斯
+我没有发呆啦！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace H 0]
+[charaFadein H 0.1 0]
+[charaFace G 1]
+[charaFadein G 0.1 2]
+
+＠赫克托耳
+然后呢，你打探到了吗？[r]顺便一提，大叔我还不知道哦。
+[k]
+
+＠赫克托耳
+一定是最高机密吧。[r]她应该连御主也没说过。
+[k]
+
+[charaFace G 0]
+[charaFace H 4]
+
+＠阿喀琉斯
+是啊。结果还是不知道。
+[k]
+
+＠阿喀琉斯
+明白的只有她心中的怒火[r]比彭忒西勒亚有过之而无不及。
+[k]
+
+＠阿喀琉斯
+不只是对话，通过实际过招，我能看出来。
+[k]
+
+[charaFace H 1]
+
+＠阿喀琉斯
+[line 3]哈。所以啦，[r]在不知道的基础上我算是了解了。
+[k]
+
+[charaFace H 4]
+
+＠阿喀琉斯
+那边的我，也对那家伙……做出了[r]足以与在战场上羞辱对方相匹敌的行为吧。
+[k]
+
+[charaFace G 5]
+
+＠赫克托耳
+难道……你后悔了？
+[k]
+
+[charaFace H 5]
+
+[messageOff]
+[charaTalk H]
+[wt 0.7]
+[charaFace H 0]
+
+＠阿喀琉斯
+怎么可能嘛。
+[k]
+
+＠阿喀琉斯
+这倒是让我认识到，[r]无论在哪儿，我都是我，我反而安心了。
+[k]
+
+＠阿喀琉斯
+虽说对别人而言，这或许只是个麻烦。
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 1.2 1]
+[bgm BGM_EVENT_81 1.2 0.4]
+[wait wipe]
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[scene 90100]
+[charaTalk off]
+[charaFace D 1]
+[charaFadein D 0.1 0]
+[charaFace A 1]
+[charaFadein A 0.1 2]
+[wt 0.5]
+[wipein rectangleStripUpToDown 1.2 1]
+[wait wipe]
+
+[wt 3.0]
+
+[wipeout rectangleStripDownToUp 1.2 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[scene 49100]
+[charaTalk on]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0]
+[charaFace G 0]
+[charaFadein G 0.1 2]
+[wt 0.5]
+[wipein rectangleStripUpToDown 1.2 1]
+[bgm BGM_EVENT_81 1.2 1.0]
+[wait wipe]
+
+＠阿喀琉斯
+不管怎么样，我不会后悔，也不会谢罪。
+[k]
+
+＠阿喀琉斯
+只是……我知道了那边的我们也和我们一样，[r]被强度相近的锁链拴住了。
+[k]
+
+＠阿喀琉斯
+那这样就行了。
+[k]
+
+＠阿喀琉斯
+哪怕这锁链是由憎恨与疯狂构成的，那也是我们。[r]只要知道无论在哪儿都一样，已经算是收获了。
+[k]
+
+[bgmStop BGM_EVENT_81 3.0]
+
+[charaFace G 1]
+
+＠赫克托耳
+哈。不要因为确认了彼此的[#无可救药][r]就感到放心啦。
+[k]
+
+＠赫克托耳
+这就是所谓的年轻吗？　哎呀，[r]大叔我果然很讨厌你。可以扔石头吗？
+[k]
+
+＠阿喀琉斯
+我可不打算久留。我只是来告诉你，[r]并非一切都在你的掌控中而已哦。
+[k]
+
+＠阿喀琉斯
+因为即便你不做这些事先安排，[r]我也一定会靠自己的方法，得到相同的东西吧。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠帕里斯
+这种就叫死鸭子嘴硬啦！
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠帕里斯
+哥哥，给，这里没有石头，但有瓦片！[r]请用吧！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠赫克托耳
+他早溜了。是为了向腰腿酸痛的大叔[r]显摆自己的脚程有多快吧。
+[k]
+
+＠阿喀琉斯的声音
+[charaTalk H]
+腰姑且不论，[r]从者可不该腿脚酸痛吧！
+[k]
+
+[charaFace G 4]
+
+＠赫克托耳
+知道啦知道啦。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_7 1.5]
+[wait fade]
+[charaFadeout G 0.1]
+[scene 90100]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace A 11]
+[charaFadein A 0.1 2]
+
+＠A：Amazones CEO
+好了，那我差不多该走了。[r]员工们都在等着我回去。
+[k]
+
+[charaFace A 1]
+
+＠A：Amazones CEO
+如果你不想继续当女王，倒是对CEO这个工作[r]产生兴趣的话，可以随时联系我。
+[k]
+
+＠A：Amazones CEO
+我会把我的自传寄给你。一定会起到帮助。
+[k]
+
+[charaFace D 10]
+
+＠彭忒西勒亚
+唔，嗯……？
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+还有[line 3][%1]。[r]承蒙你的关照了。
+[k]
+
+？1：我也要多谢你的关照。
+？2：这真是次不错的职业体验。
+？！
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth B 1]
+[charaDepth A 2]
+[charaFadeout A 0.2]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：Amazones CEO
+我以前或许说过，危机才是机会。
+[k]
+
+＠B：Amazones CEO
+在这绝境中，[r]Amazones.com发生了解禁外包这一范式转移。
+[k]
+
+＠B：Amazones CEO
+这让我第一次认识到，[r]借用外部公司的力量也不赖。非常感谢。
+[k]
+
+[charaFace B 1]
+
+＠B：Amazones CEO
+……嗯，今后这个系统或许也可以延续下去。
+[k]
+
+＠B：Amazones CEO
+不止面向公司，[r]或许也可以面向个人。
+[k]
+
+＠B：Amazones CEO
+就起名为Amazones Flex制度吧……
+[k]
+
+[charaFace B 0]
+
+＠B：Amazones CEO
+宣传口号是『你也可以随时随地Amazones！』[r]这样如何？
+[k]
+
+？1：那么，有机会我或许还会去你那边打工。
+？！
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth B 2]
+[charaFadeout B 0.2]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+呵呵。不行。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaPut J 1]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠玛修
+为……为什么啊？
+[k]
+
+＠玛修
+虽说我只是个后方支援的办事员，[r]但我觉得前辈工作得非常努力啊！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+正因为如此啦。[r]让你打工也太浪费了。
+[k]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[charaFace A 11]
+
+＠A：Amazones CEO
+[%1]。[r]我再认真问你一句。
+[k]
+
+[messageOff]
+[wt 0.7]
+[charaFace A 0]
+
+＠A：Amazones CEO
+你打不打算来Amazones.com当正式员工？
+[k]
+
+[messageOff]
+[wt 1.2]
+
+？1：感谢您的邀请，
+？2：但是我还有一些非做不可的事。
+？！
+
+[charaFace A 4]
+[wt 0.7]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaFaceFade A 1 0.2]
+[wt 0.1]
+
+＠A：Amazones CEO
+……这样啊。
+[k]
+
+＠A：Amazones CEO
+那就没办法了。真遗憾。
+[k]
+
+＠A：Amazones CEO
+那为了嘉奖你这次的贡献，[r]我就赠与你特别名誉员工的称号吧。
+[k]
+
+？1：非常感谢。
+？2：非常……感谢……？
+
+＠A：Amazones CEO
+不用加问号。
+[k]
+
+＠A：Amazones CEO
+无需入职考试就可随时回到岗位，[r]哪怕在银河里，这也是极为罕见的特殊立场哦。你该感到高兴。
+[k]
+
+？！
+
+[charaFace A 11]
+
+＠A：Amazones CEO
+时间到了。
+[k]
+
+＠A：Amazones CEO
+[line 3]我一般不太会说什么感伤的话。[r]但我是不会忘记这次经历的。
+[k]
+
+＠A：Amazones CEO
+假如我下次出新的自传，[r]这可是能占据厚厚一大章节的事件哦。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[branch lblNotGirl4 IsGirl false]
+[label lblGirl4]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+[branch lblIsGirlConf4]
+[label lblNotGirl4]
+[charaFace E 4]
+[charaFadein E 0.1 0,-90]
+[label lblIsGirlConf4]
+
+＠达·芬奇
+毕竟全体出动开开心心热热闹闹的活动[r]看似普通实际很少发生嘛。
+[k]
+
+？1：我会感到寂寞的。
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+呵呵。我也[line 3][wt 0.1][charaFace A 11]不。
+[k]
+
+
+[bgmStop BGM_EVENT_11 3.0]
+
+[charaFace A 8]
+
+＠A：Amazones CEO
+无需感到寂寞，[r]重要的顾客兼名誉员工啊！
+[k]
+
+[effect bit_talk_06]
+
+[charaFace A 11]
+
+＠A：Amazones CEO
+只要你有需要，我随时都会赶来。[r]那就是我们。
+[k]
+
+[charaFace A 12]
+
+＠A：Amazones CEO
+没错[line 3]只需一键，无论在银河的什么地方，[r]Amazones.com都能迅速送达！
+[k]
+
+
+＠A：Amazones CEO
+那就这样！[r]期待你们的再次下单！
+[k]
+
+[messageOff]
+[charaFace A 0]
+[wt 2.0]
+[distortionstart 0.0 0.5 0.6 0.0 0.0 100.0]
+[distortionstart 1.5 0.5 0.6 0.5 0.3 20.0]
+[wt 0.1]
+[cueSe Servants_202900 bac655]
+[wt 1.0]
+[distortionstop 1.2]
+[wt 0.6]
+[effectStop bit_talk_06]
+[wt 0.1]
+[charaFadeout A 0.4]
+[wait distortion]
+
+
+[wt 3.0]
+
+[fadeout black 1.5]
+[wait fade]
+[wt 2.0]
+[scene 83605]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_45 0.1]
+
+＠
+[align center]～　事后　～[align]
+[k]
+
+＠
+陷入了创业以来最大窘境的Amazones.com[r]在员工返回后不久，便恢复了正常营业。
+[k]
+
+＠
+发展势头不仅没有减弱，反而由于开放了与其他公司的合作，[r]那之后的Amazones.com继续维持高速成长。
+[k]
+
+＠
+不断吸收革新而跨时代的各种服务，[r]配合用户需求维持丰富的商品种类并不断扩大。
+[k]
+
+＠
+此外，认为确保安定的配送路径乃是[r]配送员运用资源中重要要素的Amazones CEO，
+[k]
+
+＠
+甚至开拓了银河高速公路的收购业务。
+[k]
+
+＠
+用绝对压倒性肌肉量完成了这个所有专家都摇头[r]表示不可能的挑战，她们得到了进一步成长。
+[k]
+
+＠
+并逐渐在从者宇宙中成长为[r]拥有比以往更强大影响力的势力[line 3]
+[k]
+
+＠
+不过，这又是另一个故事了。
+[k]
+
+
+[messageOff]
+[wt 2.0]
+[fadeout black 3.0]
+[bgmStop BGM_EVENT_45 3.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

@@ -1,0 +1,52 @@
+＄91-70-03-01-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[scene 21002]
+[charaSet A 8001001 2 玛修]
+[charaSet B 98003000 2 Dr.罗曼]
+[charaSet C 98002000 2 芙芙]
+[charaSet D 7003001 0 虎狼]
+[charaFace A 12]
+[charaFadein A 0 1]
+[fadein black 1]
+[wait fade]
+＠玛修
+姑且算是搞定了吧。
+[k]
+
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+不！！　后方也出现反应！！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠虎狼
+[image berserker_language_2][line 2]！！
+[k]
+
+[charaFadeout D 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+啊？已经开始扫荡了！？　什么时候开始的！？[r]不愧是被誉为『天下无双』的存在啊。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFadeout D 0.1]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠玛修
+御主，我们也上吧！！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

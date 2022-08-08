@@ -1,0 +1,759 @@
+
+
+
+＄94-05-34-18-3-1
+
+[soundStopAll]
+[charaSet A 3029001 1 源赖光]
+[charaSet B 1031001 1 弗兰]
+[charaSet C 8001600 1 玛修]
+[charaSet D 1098176810 1 刑部姬]
+[charaSet E 1098182210 1 尼莫引擎]
+[charaSet F 1098182110 1 尼莫教授]
+[charaSet G 1098198000 1 斯卡哈·斯卡蒂]
+[charaSet H 1098197400 1 Lambda]
+[charaSet I 1098158310 1 尼莫]
+[charaSet J 25004001 1 琰女]
+[charaSet K 1098181900 1 尼莫水兵]
+[charaSet O 1098181900 1 尼莫水兵1]
+[charaSet P 1098181900 1 尼莫水兵2]
+[charaSet L 1098182310 1 尼莫烘焙坊]
+[charaSet M 1098182010 1 尼莫护士]
+[charaSet V 98115000 1 通讯用]
+
+[se ad59]
+[seVolume ad59 0 0]
+[seVolume ad59 2.0 0.7]
+[effect bit_talk_41]
+[shake 0.03 0 2 0]
+[scene 55700]
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[wt 1.5]
+[effectStop bit_talk_41]
+[shakeStop]
+[seStop ad59 0.5]
+[wt 0.5]
+[effectDestroy bit_talk_41]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠源赖光
+还差……一点……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠弗兰
+到舰桥啦～。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se bac137]
+[effect bit_talk_h_slash01]
+[wt 0.1]
+[se bac263]
+[wt 1.4]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠源赖光
+就是现在，快去！
+[k]
+
+[messageOff]
+[se ad59]
+[seVolume ad59 0 0.5]
+[seStop ad59 0.7]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[scene 99002]
+[se ad8]
+[wt 0.3]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+
+[wt 0.4]
+
+？1：玛修！
+？2：没事吧！？
+？！
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠玛修
+御主！[r]是的，大家总算都没事……！
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠刑部姬
+[#公主:我]和玉玉都没事！[r]守城对[#公主:我]来说不在话下！
+[k]
+
+＠刑部姬
+虽然水兵亲他们受了点伤，[r]不过姑且也回复过了！
+[k]
+
+？1：各部门都……
+？2：没问题吧！？
+
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaEffect V bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠尼莫引擎
+这里是轮机室！　来了几只怪物，走投无路了！[r]抱歉，不用很多人，但麻烦派些增援来吧！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠尼莫教授
+这里是电脑室，同样需要求助～！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠斯卡哈·斯卡蒂
+这里是工房，我和烘焙坊都被困住了！[r]尽早派救援……唔，怎么？　啊，你[line 2]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠Lambda
+这里是Lambda。因为前往浴室的路被堵住了，[r]舰尾方面就由我来剿灭吧。
+[k]
+
+＠Lambda
+接下来虽然预计会经过轮机室和电脑室，[r]不过保险起见，还是考虑全面清查舰艇为好吧。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+＠尼莫
+这里是仓库……！　Lambdaryllis说得没错！
+[k]
+
+＠尼莫
+[%1]，全面清查全舰！[r]决不可放过任何一只怪物！
+[k]
+
+？1：明白了！
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaSet F 1098182100 1 尼莫教授]
+[charaSet G 5039000 1 斯卡哈·斯卡蒂]
+[charaPut V 1200,1200]
+[charaFadeout I 0.1]
+[wt 1.5]
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.4]
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠尼莫教授
+总算成功生还了。真是大祸临头呢，各位。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠弗兰
+大祸临头。想去洗个澡睡一觉。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 4]
+[charaFadein J 0.1 1]
+＠琰女
+别说得好像事情已经告一段落一样啦～……[r]目前我们根本没有解决任何问题啊？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠源赖光
+在依然维持停泊的船上突然出现了怪物……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠尼莫教授
+关于这点，[r]尼莫系列自然已经掌握了船长的所见所闻。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 2]
+[charaFace O 6]
+[charaFace P 6]
+[charaFadein K 0.1 1]
+[charaFadein O 0.1 0]
+[charaFadein P 0.1 2]
+＠尼莫水兵
+梵高……梵高浑身都是血……
+[k]
+
+＠尼莫水兵
+然后怪物从那些血里生出来了哦～！
+[k]
+
+[charaFadeout K 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+＠尼莫教授
+嗯，保持肃静。我已经大致调查过了，[r]说梵高氏『生出了』那些怪物有点不准确。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 1]
+＠斯卡哈·斯卡蒂
+嗯，那是以自己的血液为媒介进行的召唤吧。[r]只要将血擦干净就不会发生什么问题了。
+[k]
+
+＠斯卡哈·斯卡蒂
+她的体内或许有某种术式在自动运转。[r]可能与本人的意志并无关系哦。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+＠尼莫教授
+对此我表示质疑。毕竟她由于精神不稳定[r]才会导致自残这点是非常明确的。
+[k]
+
+＠尼莫教授
+作为负责『理性』之人我要事先声明……[r]这场骚动本身或许就是一场精心策划的自杀～。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 2]
+[charaFace O 6]
+[charaFace P 6]
+[charaFadein K 0.1 1]
+[charaFadein O 0.1 0]
+[charaFadein P 0.1 2]
+＠尼莫水兵
+就是啊……不管怎么说，[r]梵高变得很奇怪后出现怪物这件事毫无疑问吧～！
+[k]
+
+＠尼莫水兵
+她果然很危险啦～！[r]御主，你还打算与梵高维持契约吗～！？
+[k]
+
+？1：这……
+？！
+
+[charaFadeout K 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+＠尼莫教授
+唔～，稍微冷静一点啦，各位水兵。
+[k]
+
+＠尼莫教授
+虽然单纯是你们的卖点，但就算保守点说，[r]我也不愿认同强烈排斥他人的你们～。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 2]
+[charaFace O 6]
+[charaFace P 6]
+[charaFadein K 0.1 1]
+[charaFadein O 0.1 0]
+[charaFadein P 0.1 2]
+＠尼莫水兵
+什么嘛，教授一天到晚窝在电脑室，[r]根本不理解紧挨着虚数工作的我们！
+[k]
+
+[charaFadeout K 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk L]
+[charaFace L 6]
+[charaFadein L 0.1 1]
+＠尼莫烘焙坊
+这里是厨房。虽说有些对不起教授，[r]但我或许也要支持水兵。
+[k]
+
+＠尼莫烘焙坊
+希望你可以理解一下无法自力[r]解决问题的后勤人员的心情啊。
+[k]
+
+[charaFace L 2]
+＠尼莫烘焙坊
+为了让所有人放心，希望能排除舰内的异物～！[r]的这种心情，护士应该也一样吧？
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 3]
+[charaFadein M 0.1 1]
+＠尼莫护士
+这里是仓库，我是尼莫护士。[r]我正在治疗伤者，恕我拒绝回答。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠尼莫引擎
+这里是轮机室！　舰桥给我适可而止！[r]就算船长累趴了，你们也过于慌张了吧！
+[k]
+
+＠尼莫引擎
+听好了，敌人就该打倒！　弱小的人就该保护！[r]仅此而已！　所以说，那个……
+[k]
+
+[charaFace E 2]
+＠尼莫引擎
+梵高如果是敌人就该打倒但我们定要保护好她，[r]啊啊我也不明白了！　人家要冷静一下，给我冰淇淋！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠尼莫教授
+呜哇～，各位，抱歉。这就是分割思考的弱点。
+[k]
+
+＠尼莫教授
+一旦陷入极度混乱，自己脑中的各种想法[r]就会发生冲突，导致争论个不休呢。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+＠玛修
+这可……太糟了。[r]前辈……我们究竟该怎么办……
+[k]
+
+？1：首先……
+？2：来解开谜团吧。
+？！
+
+[charaFace C 6]
+＠玛修
+哎……？
+[k]
+
+？1：看这个。
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.4]
+
+[cameraMove 1.5 170,-30 1.5]
+[wt 2.7]
+＠玛修
+这是在事件发生前不久，重瞳先生留下的涂鸦……
+[k]
+
+＠尼莫教授
+啊～我都忘得一干二净了。[r]我本想解读其中的信息，结果完全看不懂呢。
+[k]
+
+＠尼莫教授
+哎，难道御主已经解开了吗？
+[k]
+
+？1：这应该是……
+？2：围棋。
+？！
+
+＠尼莫教授
+哈……？
+[k]
+
+[messageOff]
+[cameraMove 1.2 0,0 1.0]
+[wt 1.5]
+
+？1：小刑感觉到有敌人气息的地方，
+？2：会在网格上投下阴影。
+？！
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠刑部姬
+唔，是啊，然而敌人的本体不在……
+[k]
+
+？1：敌人并不在网格内，
+？2：而是在网格的交叉点上。
+？！
+
+[charaFace D 5]
+＠刑部姬
+……啊，哎，难道围棋是这个意思？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 22]
+[charaFadein J 0.1 1]
+＠琰女
+……围棋确实与将棋不一样，[r]是将棋子摆在棋盘线条的交叉点上……
+[k]
+
+＠琰女
+那就是说敌人在网格间隔那里吗？[r]这样不是很奇怪吗～？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠刑部姬
+是很奇怪！　而且[#公主:我]的索敌[r]才不会粗略到忽视区域的缝隙啊，御亲！
+[k]
+
+[messageOff]
+[wt 0.4]
+
+？1：我不是这个意思。
+？！
+
+？1：如果这战略盘『观测到了』……
+？！
+
+？1：类似『空间间隙』的话呢？
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠斯卡哈·斯卡蒂
+……原……来……如此？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠尼莫教授
+哎哟……这说不定是个盲点呢～。
+[k]
+
+＠尼莫教授
+假如在与网格交叉点完全重合的位置上，[r]等距离地排列着面积为零的空间……
+[k]
+
+＠尼莫教授
+……嗯，嗯，嗯～。这样一来，[r]就能够解释战略盘目前的[#显示异常:Glitch]了～。
+[k]
+
+＠尼莫教授
+正可谓观测到异常化世界的机器[r][#发疯:出故障]了[line 2]
+[k]
+
+[charaFace F 3]
+＠尼莫教授
+[line 2]不，假如这种空间的紊乱当真存在，[r]莫非是[#战略盘导致世界出现了故障]？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 23]
+[charaFadein J 0.1 1]
+＠琰女
+啊～！　因为无法证明观测者和世界到底哪边发疯了……
+[k]
+
+[charaFace J 2]
+＠琰女
+疯狂机器的观测将会扭曲空间构造！　因此，[r]『空间间隙』就会与围棋棋盘上的目完全一致吗！？
+[k]
+
+？1：……虽然不太明白。
+？2：但我觉得问题应该更为单纯。
+？！
+
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠玛修
+……前辈，这样说来，[r]应该存在[#最先扭曲虚数空间的某人]吧……！
+[k]
+
+？1：我觉得怪异现象的原因并非机器。
+
+？2：而是受机器启发观测到间隙的『某人』。
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠斯卡哈·斯卡蒂
+我一直都是这样认为的哦。[r]给我们设下陷阱的并非机器，而是[#人]。
+[k]
+
+＠斯卡哈·斯卡蒂
+御主提到的特殊力量……我们不是已经目睹过好几次，[r]并且也好几次得益于它了吗？
+[k]
+
+＠斯卡哈·斯卡蒂
+没错，[#琰女高超的虚数空间影像置换能力]，[r]与[#包含在梵高血清中的虚数存在变换能力]……
+[k]
+
+[charaFace G 5]
+＠斯卡哈·斯卡蒂
+我有个主张。操控[#世界内侧虚数空间]的人，[r]是否就是[#来自世界外侧的降临者]呢？
+[k]
+
+＠斯卡哈·斯卡蒂
+这么想来，『空间间隙』的形状也没什么好奇怪的。
+[k]
+
+＠斯卡哈·斯卡蒂
+只要见到这战略盘并灵机一动的Foreigner[r]创造出了与其相似的『空间间隙』就行了。
+[k]
+
+
+＠斯卡哈·斯卡蒂
+与此同时，琰女无疑是在事件发生后才从[r]座上被召唤而来的，所以可疑的当然是……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 2]
+[charaFace O 6]
+[charaFace P 6]
+[charaFadein K 0.1 1]
+[charaFadein O 0.1 0]
+[charaFadein P 0.1 2]
+＠尼莫水兵
+就是梵高啦～！　梵高就是一切的元凶～！！
+[k]
+
+[messageOff]
+[se ad4]
+[seVolume ad4 0 0]
+[seVolume ad4 1.0 0.7]
+[charaMoveReturn K 0,2 0.3]
+[wt 0.2]
+[charaMoveReturn O -256,2 0.3]
+[wt 0.1]
+[charaMoveReturn P 256,2 0.3]
+[wt 0.1]
+[charaMoveReturn K 0,2 0.3]
+[wt 0.2]
+[charaMoveReturn O -256,2 0.3]
+[wt 0.2]
+[charaMoveReturn P 256,2 0.3]
+[wt 0.4]
+[charaMoveReturn K 0,2 0.3]
+[wt 0.1]
+[charaMoveReturn O -256,2 0.3]
+[wt 0.2]
+[charaMoveReturn P 256,2 0.3]
+[wt 0.2]
+[charaMoveReturn K 0,2 0.3]
+
+[charaFadeout K 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[wt 0.1]
+
+？1：大家安静点！
+？2：首先得确认假设是否准确。
+？！
+
+[seStop ad4 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠尼莫教授
+说得对～。空间间隙……暂称『棋盘空间』，[r]我们马上来证明它是否实际存在吧。
+[k]
+
+＠尼莫教授
+琰女氏与刑部姬氏恐怕都是下意识地将这种空间[r]认知为普通三次元空间并相应编组魔术的吧。
+[k]
+
+＠尼莫教授
+这些都要彻底推翻重来，通过多种计算方法来确认[r]『棋盘空间』的实际存在是否有矛盾。
+[k]
+
+＠尼莫教授
+大家群策群力，以假设为基础构筑魔术函数，[r]然后上传到战略盘吧。
+[k]
+
+＠尼莫教授
+在那之前麻烦各位稍安勿躁。[r]话说船长差不多该回来了吧～。[twt 0.4][charaFace F 4]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+＠尼莫
+……我现在无法离开梵高身边。[r]而且我也不能将梵高带去现在的舰桥。
+[k]
+
+？1：就这样吧。
+？2：麻烦重新计算吧。
+？！
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+[wt 0.2]
+
+[charaTalk off]
+[charaDepth J 1]
+[charaDepth D 3]
+[charaDepth G 2]
+[charaDepth F 4]
+[charaFace J 13]
+[charaFace D 5]
+[charaFace G 0]
+[charaFace F 0]
+[charaFadein J 0.1 -375,0]
+[charaFadein D 0.1 -125,0]
+[charaFadein G 0.1 125,0]
+[charaFadein F 0.1 375,0]
+[wt 1.0]
+[charaMoveReturn J -375,-4 0.4]
+[charaMoveReturn D -125,-4 0.4]
+[charaMoveReturn G 125,-4 0.4]
+[charaMoveReturn F 375,-4 0.4]
+[wt 0.7]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

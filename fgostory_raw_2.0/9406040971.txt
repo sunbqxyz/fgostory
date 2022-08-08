@@ -1,0 +1,328 @@
+
+
+
+＄94-06-04-09-7-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001600 1 マシュ]
+[charaSet B 1098215400 1 ダ・ヴィンチ]
+[charaSet C 4039300 1 マンドリカルド]
+[charaSet D 1098220500 1 カイニス]
+[charaSet E 4003001 1 ドレイク]
+[charaSet F 2025200 1 アン]
+[charaSet G 2025100 1 メアリー]
+[charaSet H 5048000 1 シャルロット・コルデー]
+
+[charaSet I 2025000 1 水着アンメア]
+[charaSet J 1098220610 1 カーマ]
+
+[imageSet K back10000_fs 1]
+[charaScale K 1.5]
+
+
+[charaDepth K 1]
+[charaDepth C 2]
+
+[charaDepth I 3]
+[charaDepth D 4]
+[charaDepth E 5]
+
+
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 131600]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+どっりゃああああああああ！
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaFace D 8]
+[charaFadeinFSR D 0.1 350,0]
+[charaFace I 6]
+[charaFadeinFSL I 0.1 -350,0]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+[wt 0.3]
+
+[se ade65]
+[effect bit_shot_01 -350,0]
+[charaFace I 4]
+[charaShake I 0.05 2 2 0.5]
+[wt 0.2]
+[se ade65]
+[effect bit_shot_01 350,0]
+[charaFace D 4]
+[charaShake D 0.05 2 2 0.5]
+[wt 0.2]
+[se ade65]
+[effect bit_shot_01 0,0]
+[charaFace E 4]
+[charaShake E 0.05 2 2 0.5]
+[wt 0.5]
+
+[effectDestroy bit_shot_01]
+
+[cueSe Servants_403500 bac1238]
+[effect bit_talk_explosion_triple02 0,0]
+[wt 0.2]
+[charaShake I 0.05 2 2 0.5]
+[charaShake D 0.05 2 2 0.5]
+[charaShake E 0.05 2 2 0.5]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+
+[charaMoveFSL I -350,-20 0.8]
+[charaFadeout I 0.4]
+[wt 0.2]
+[se ad144]
+[wt 0.1]
+
+[charaMoveFSR D 350,-20 0.8]
+[charaFadeout D 0.4]
+[wt 0.2]
+[se ad144]
+[wt 0.1]
+
+[charaMove E 0,-20 0.8]
+[charaFadeout E 0.4]
+[wt 0.2]
+[se ad144]
+[wt 2.0]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk depthOn]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠ドレイク
+かーっ、負けた負けた！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠アン
+強奪されちゃいました♡
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+＠シャルロット・コルデー
+何なら命も奪いましょうか？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠アン
+ひえ。[r]メアリー、怖いですわよこの方。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠メアリー
+その辺で勘弁してあげてー。[r]アンもメンタル強い方じゃないしー。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaPut K 0,-200]
+[charaFadeTime K 0.2 0.5]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠マンドリカルド
+（そうかなぁ……）
+[k]
+
+[charaFadeout K 0.2]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+＠カイニス
+ま、しょうがねえか。[r]おい、チビ人形……じゃねえな、ダ・ヴィンチ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+ん、なに？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠カイニス
+ついてっていいか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+いいとも！[r]……よね？
+[k]
+
+？1：そもそも保安要員だからね！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠カイニス
+おう。[r]んじゃ、ドレイクの姉御。
+[k]
+
+
+＠カイニス
+オレは本業の方に戻るんで、バイトはやめだ。[r]後はよろしくな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ドレイク
+しょうがないねえ。[r]ま、負けたんだから仕方ないか。
+[k]
+
+＠ドレイク
+アンタの自由だ、好きにしな！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠カイニス
+という訳で改めてよろしく頼むぜ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 15]
+[charaFadein J 0.1 1]
+
+
+＠カーマ
+フンだ。[r]せいぜい[#丁稚:でっち]みたく走り回ってください。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠カイニス
+ああ、そうしてやるよ。[r]今日だけはな！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+……。[r]……はっ。
+[k]
+
+[charaFace A 19]
+＠マシュ
+何が何だかわかりませんが、[r]上手く話が[#纏:まと]まった気がします！
+[k]
+
+＠マシュ
+聖杯の欠片も手に入れました、[r]これで残るは一つですね！
+[k]
+
+？1：（後は……揃ったらどうなるかだけど……）
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+
+＠ダ・ヴィンチ
+……。[wt 1.0][charaFace B 10][r]……がんばろうね、ステくん！
+[k]
+
+[messageOff]
+[wt 0.1]
+[cueSe SE_21 21_ade592]
+[wt 1.0]
+
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

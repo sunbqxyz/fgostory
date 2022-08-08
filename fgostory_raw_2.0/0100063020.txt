@@ -1,0 +1,1084 @@
+＄01-00-06-30-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 1007002 1 高文]
+[charaSet B 98081000 1 联合军士兵]
+[charaSet C 98014000 1 圣都军士兵]
+[charaSet D 98079000 1 “山中老人”]
+[charaSet H 98014000 1 ？？？]
+
+[imageSet G talk_img_black_gradation 1]
+[wait imageSet G]
+[charaScale G 1.1]
+[charaCutin G upToDown 0.1 0]
+[charaEffect H bit_talk_haboob_02]
+
+[scene 29000]
+
+[se ad14]
+[shake 0.05 0 2 4.0]
+[fadein black 2.0]
+[wait fade]
+[wt 1.0]
+[seStop ad14 1.0]
+
+
+[charaTalk B]
+[charaFadein B 0.1 1]
+
+＠联合军士兵
+看到刚才那个了吗？[r]金字塔把立于圣都的光柱打倒了！
+[k]
+
+＠联合军士兵
+狮子王已经没什么可怕的了！[r]我们也只要敢做就能[line 3]呜哇！？
+[k]
+
+[messageOff]
+[se bac95]
+[charaEffect B bit_talk_12]
+[charaShake B 0.05 3 3 0.5]
+[wt 0.5]
+[charaFadeout B 0.4]
+[wt 0.5]
+[se ad144]
+[wt 0.5]
+
+[charaTalk C]
+[charaFadein C 0.1 1]
+
+＠圣都军士兵
+区区贼兵，不要得意忘形了……！[r]王城尚健在，圆桌尚健在！
+[k]
+
+＠圣都军士兵
+圣都中有崔斯坦卿驻守！[r]现在一定已经手刃了闯入圣都的贼兵了吧！
+[k]
+
+＠圣都军士兵
+只要这阵沙尘暴过去了，就是我们优势！[r]然后只要高文卿能稳住局势的话……！
+[k]
+
+[se bas1]
+[messageOff]
+[maskout black 0.5]
+[wait mask]
+
+[charaFadeout C 0]
+
+[scene 28902]
+
+[maskin black 0.5]
+[wait mask]
+
+[se ad33]
+[wait se ad33]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠高文
+呼，哈[line 3]！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠“山中老人”
+[line 6]
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaDepth G 0]
+[charaDepth A 2]
+[charaDepth D 3]
+
+[se ad85]
+[charaEffect B bit_talk_42]
+[wt 0.2]
+[charaMove D 900,0 0.3]
+[wait charaMove]
+
+[charaFadein A 0 -900,0]
+[charaMove D 200,0 0.3]
+[charaMove A -200,0 0.3]
+[wait charaMove]
+[charaEffectStop B bit_talk_42]
+[charaPut B 1200,1200]
+
+[shake 0.05 0 4 1.3]
+[se ad33]
+[fowardEffect bit_talk_14]
+[wt 0.4]
+[fowardEffect bit_talk_14]
+[wt 0.4]
+[fowardEffect bit_talk_14]
+[wt 0.5]
+
+[se ad85]
+[charaMove A 900,0 0.3]
+[charaMove D -900,0 0.3]
+[wait charaMove]
+
+[charaFadeout D 0]
+[charaFadeout A 0]
+[wt 0.5]
+[charaTalk on]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠高文
+（交手开始至今已经过了一个小时[line 3][r]　可他丝毫没有露出疲态……！）
+[k]
+
+＠高文
+（但我已经习惯了他的剑法。[r]　这个剑士也不是不死身。一定会有破绽……！）
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠“山中老人”
+[line 3]到此为止。[r]晚钟已过。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+
+[se ad2]
+[wt 0.5]
+[seStop ad2 1.0]
+[charaFadeout G 1.0]
+[charaEffectStop H bit_talk_haboob_02]
+[charaMove H 0,-300 2.0]
+[wt 1.0]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠高文
+风暴……停止了？[r]不，是你停止了风暴吗……！？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠“山中老人”
+沙尘暴已是不要之物。[r]已无需用吾之衣袍覆盖天空。
+[k]
+
+＠“山中老人”
+这白日是映照狮子王罪恶之物。[r]晚钟将会移向城中吧。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠高文
+你太骄傲了……！[r]只要阳光回来，我的圣剑就是无敌的……！
+[k]
+
+
+[messageOff]
+
+
+[charaPut C 0,1100]
+[charaScale C 5.0]
+
+
+[voice NP_100100_4]
+[wt 0.3]
+[cameraMove 0.1 0,0 1.2]
+[charaEffect C bit_talk_12]
+[charaEffect C bit_talk_13]
+[wt 0.1]
+[shake 0.05 0 4 0.4]
+[wt 0.4]
+[voiceStop NP_100100_4 0.2]
+[wait camera]
+
+[charaFadeout A 0.1]
+[cameraHome 0.2]
+[wt 0.2]
+[wait camera]
+
+[bgmStop BGM_EVENT_3 0.1]
+[se ad32]
+[fowardEffect bit_talk_14]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 1.5]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠“山中老人”
+当然可以骄傲。[r]只是连叫醒人都做不到的区区日光。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠高文
+什么……！？
+[k]
+
+[charaFace A 5]
+＠高文
+居然将卡文汀[line 3]从沙尘暴中解放，[r]立于白日之下的我的卡文汀被挡了下来！？
+[k]
+
+＠高文
+（……看来反而是我被蒙蔽了双眼。[r]　这位剑士的力量足以与狮子王匹敌……！）
+[k]
+
+[charaFace A 5]
+＠高文
+……为什么。[r]为什么停止了沙尘暴。
+[k]
+
+＠高文
+不，应该问明明拥有如此强大的力量，[r]却为何迄今为止都保持沉默……！
+[k]
+
+＠高文
+对您来说，打倒狮子王也绝非不可能。[r]如果您是山中老人的话，半年前[line 3]
+[k]
+
+＠高文
+在我们建造圣都之时，[r]就已经能阻止我们的行动了……！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠“山中老人”
+非也。[r]吾之剑只斩有违天命之人。
+[k]
+
+＠“山中老人”
+狮子王的天命不在我，而在那些人身上。[r]因此吾之剑无用。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠高文
+有违……天命之人……
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠“山中老人”
+太阳骑士啊。汝用这把剑证明了自己的清白。[r]晚钟离去就是证据。
+[k]
+
+＠“山中老人”
+[line 3]汝之天命已经进入城中。[r]若还想当一名骑士，就快去吧。
+[k]
+
+＠“山中老人”
+汝最后且唯一的滞留。[r]在被圣枪吞噬之前，抓住告解的机会。
+[k]
+
+[messageOff]
+[se ad42]
+[charaSpecialEffect D erasure 1 1.5]
+[wt 2.0]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠高文
+等一下，请等一下……！[r]还没有分出胜负……！
+[k]
+
+[charaFace A 5]
+＠高文
+……消失了。放过我了啊……[r]不，那位没有这种仁慈。
+[k]
+
+＠高文
+那个黑洞诉说着……[r]我们应得到更为残酷的结局吗……
+[k]
+
+[charaScale C 1.0]
+
+[messageOff]
+[charaFadeout A 0.1]
+
+[se ad60]
+[charaTalk C]
+[charaFadein C 0.4 1]
+[wt 0.5]
+[seStop ad60]
+
+＠圣都军士兵
+高文卿，还好您没事……！[r]与敌方魁首的这场较量真是太漂亮了！
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠高文
+敌方魁首……？[r]这样啊。各位是这样看的啊。
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFadein C 0.1 1]
+
+＠圣都军士兵
+难道不是吗？[r]那是一位光看就觉得寒气逼人，非常厉害的骑士吧……
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠高文
+啊啊，说得对。[r]没想到居然能与实力如此卓越的骑士交手。
+[k]
+
+＠高文
+我很走运。[r]虽然这样说有点对不起其他的圆桌骑士。
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFadein C 0.1 1]
+
+＠圣都军士兵
+哈哈。[r]但如此厉害的骑士都被高文卿击退了，
+[k]
+
+＠圣都军士兵
+您才是我们的骄傲。[r]今后还请继续担任正门的守护者！
+[k]
+
+＠圣都军士兵
+击退入侵圣都的贼军就交给我们吧。[r]高文卿请在这里稍事休息吧。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠高文
+……不。抱歉，我不同意。[r]我要回王城。正门就交给你们了。
+[k]
+
+＠高文
+还有半刻左右，战场的趋势就能决定了吧。[r]如果王城起火了的话[line 3]
+[k]
+
+＠高文
+各位就举兵向北进发。[r]虽然路途会很艰难，但是[line 3]
+[k]
+
+[charaFace A 0]
+＠高文
+但还希望有多一些人能回到故乡。
+[k]
+
+＠高文
+这场远征打从一开始就没有胜利。[r]感谢你们陪我们到现在。
+[k]
+
+＠圣都军士兵
+高文卿……
+[k]
+
+[charaFace A 2]
+＠高文
+当然，我也不甘于就这样输掉。[r]王城内还有圆桌的同胞在战斗。
+[k]
+
+＠高文
+那[line 3]圆桌骑士高文，出击！[r]哪怕到生命最后一刻，也要成为吾王之剑！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[charaSet A 8001002 1 玛修]
+[charaSet B 5009001 1 达·芬奇]
+[charaSet C 1012001 1 贝德维尔]
+[charaSet D 98003000 1 Dr.罗曼]
+[charaSet E 1020000 1 兰斯洛特]
+[charaSet F 2008000 1 崔斯坦]
+[scene 29802]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_2 2.0]
+[fadein black 2.0]
+[wait fade]
+
+
+？1：光之壁被……
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠贝德维尔
+……嗯，确实碎裂了……[r]我的脑袋是不是终于变得不正常了……
+[k]
+
+[charaFace C 4]
+＠贝德维尔
+我仿佛看到金字塔从天而降……
+[k]
+
+[charaFadeout C 0.1]
+
+？2：金字塔从天空……
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+降下来了……[r]而且还闪着金光……
+[k]
+
+＠玛修
+刚才那也是奥斯曼狄斯王的支援吗……？
+[k]
+
+[charaFadeout A 0.1]
+
+？！
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+真是无与伦比的力量啊！[r]我刚说过束手无策了吧，把那句话忘了吧！
+[k]
+
+[charaFace B 0]
+＠达·芬奇
+毕竟尽头之塔已经粉碎了。[r]对现在的圣都军来说可是致命伤。
+[k]
+
+＠达·芬奇
+几乎像是折断了他们的精神支柱呢。[r]现在的话，应该会有士兵愿意被劝降了吧！
+[k]
+
+[charaFadeout B 0.1]
+
+[wt 0.1]
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 5]
+
+＠Dr.罗曼
+[line 3]不。士兵或许会这样，[r]但是真正的目标可不会。
+[k]
+
+＠Dr.罗曼
+想要挤压时代的重力变动并没有停止。[r]狮子王的圣枪尚健在！
+[k]
+
+＠Dr.罗曼
+刚才破坏的应该是类似圣枪鞘之类的东西吧。[r]只要狮子王还在，人理的崩溃就不会停止！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠贝德维尔
+……！
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+我们快走，前辈！[r]只要冲破这片城下区域，就能到达王城了！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+
+[seLoop ad84]
+[wt 2.0]
+
+[seStop ad84]
+[se ad83]
+[wt 1.0]
+
+[se ad60]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.4 1]
+[wt 0.5]
+[seStop ad60]
+
+＠兰斯洛特
+[%1]阁下！　贝德维尔卿！
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+骑士兰斯洛特！[r]真是辛苦你事到如今还这么悠闲地跑来这里啊！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+[se bac95]
+[charaShake E 0.05 3 3 0.5]
+
+＠兰斯洛特
+呜哇！
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠玛修
+抱歉，说错了！[r]辛苦你竟然还特地跑到这种地方来呢！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace A 3]
+[charaFace C 3]
+[charaFadein A 0.1 2]
+[charaFadein C 0.1 0]
+
+＠贝德维尔
+（女士，说法没什么不同，[r]　语气的强度根本没有变化！）
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+算啦算啦。兰斯洛特卿能到这里来，[r]就说明圣都前的战斗几乎胜负已定了吧？
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk E]
+[charaFace B 0]
+[charaFace E 0]
+[charaFadein B 0.1 2]
+[charaFadein E 0.1 0]
+
+＠兰斯洛特
+当然了。联合军的优势已经无法扭转了。[r]城墙上的弓兵也有很多投降了。
+[k]
+
+＠兰斯洛特
+他们直接看到了刚才的光景，[r]失去了战意。
+[k]
+
+＠兰斯洛特
+……虽然最大的原因是高文卿不在。[r]卿好像回到王城了。
+[k]
+
+＠达·芬奇
+是这样啊。那得赶在高文卿回来之前，[r]见到狮子王才行。
+[k]
+
+＠达·芬奇
+兰斯洛特卿呢？[r]要和我们同行吗？
+[k]
+
+[charaFace E 5]
+＠兰斯洛特
+……不。我去找阿格规文。[r]放着他不管会很危险。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠贝德维尔
+……阿格规文卿啊。
+[k]
+
+＠贝德维尔
+即使成为狮子王圆桌的一员，[r]看来他还是老样子呢。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠兰斯洛特
+……？
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+OK，那又要分头行动了。[r]我们从正面直线冲入王城。
+[k]
+
+＠达·芬奇
+兰斯洛特卿会从背面迂回吧？[r]走坏官偷偷逃跑的那种通道之类的地方。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠兰斯洛特
+嗯，因为我们有马。
+[k]
+
+＠兰斯洛特
+那我们就先走一步去抓阿格规文了。[r]在狮子王的宝座前会合吧！
+[k]
+
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.2]
+[se ad83]
+[wt 1.0]
+[seLoop ad84]
+[wt 2.0]
+[seStop ad84 1.0]
+
+[bgmStop BGM_EVENT_2 2.0]
+[maskout black 2.0]
+[wait mask]
+
+
+[scene 29802]
+
+[shake 0.05 0 4 3.0]
+[charaEffect D bit_talk_41]
+
+[bgm BGM_EVENT_5 2.0]
+[maskin black 1.0]
+[cameraMove 3.0 0,0 1.2]
+[wt 0.5]
+[se ad59]
+[wait mask]
+
+[wt 1.5]
+[seStop ad59]
+[wait camera]
+[charaPut D 1200,1200]
+[charaEffectStop D bit_talk_41]
+
+[cameraHome 0.1]
+[wait camera]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+到处都燃起了火光……！[r]圣都沦陷已经是时间问题了！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+嗯，虽然我觉得对建筑物放火简直脑子不正常，[r]但唯独这点可以说是战争的惯例！
+[k]
+
+[charaFace B 0]
+＠达·芬奇
+话说回来贝德维尔卿，[r]你刚才给了阿格规文卿一个奇怪的评价吧？
+[k]
+
+＠达·芬奇
+那是什么意思？[r]从达·芬奇亲的角度来说非常介意！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠贝德维尔
+……不。阿格规文卿就算在以前的圆桌时，[r]也遭到了其他骑士们厌恶与恐惧。
+[k]
+
+＠贝德维尔
+我只是再次明确了，[r]原来这次也是这样啊。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+唔～。那其本意呢？[r]阿格规文是那种足以被大家厌恶的坏人吗？
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠贝德维尔
+怎么可能呢。如果辅佐官阁下真的是坏人，[r]卡美洛根本不可能运营下去。
+[k]
+
+[charaFace C 0]
+＠贝德维尔
+……阿格规文卿不知为何，[r]不会主动讨别人的欢心。
+[k]
+
+＠贝德维尔
+因为这个原因，周围都认为他是个冷血的人。
+[k]
+
+＠贝德维尔
+甚至连和卿有血缘关系的高文卿、[r]加赫里斯卿和加雷斯亲都对辅佐官有误解。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 2]
+
+＠Dr.罗曼
+哎，等一下，等一下。[r]刚才是不是混了一个很厉害的词语进去！？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+好啦，单身男人给我闭嘴～。
+[k]
+
+[charaFace B 0]
+＠达·芬奇
+……但是，你却不是这么看待阿格规文卿的。[r]这是为什么？
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠贝德维尔
+……不，我以前也讨厌辅佐官阁下。[r]但是后来注意到了。
+[k]
+
+＠贝德维尔
+圆桌的崩溃、卡美洛的没落，[r]都是由阿格规文卿的亡故开始的。
+[k]
+
+[charaFace C 0]
+＠贝德维尔
+他是王身边必不可少的人物。[r]甚至可以说比宫廷魔术师梅林还要重要。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+…………话说，其实哦，[r]我也和贝德维尔先生持相同意见。
+[k]
+
+＠玛修
+在堡垒和阿格规文卿对峙的时候，[r]我稍微松了一口气。
+[k]
+
+＠玛修
+“只要这个人在，王就没问题”。[r]就好像这[#灵基:身体]记得一样。
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠贝德维尔
+加拉哈德是圆桌骑士最天然……不，是品德最高尚的人。[r]看人的眼光也是首屈一指的。
+[k]
+
+＠贝德维尔
+如果他都信任阿格规文卿的话，[r]就说明他果然心怀一丝正义[charaFace C 2][line 3]危险！
+[k]
+
+[messageOff]
+[se ad152]
+[bgmStop BGM_EVENT_5 0.1]
+
+
+[charaPut H -400,-200]
+[charaEffect H bit_talk_arrow01bl]
+[wt 1.5]
+
+
+[se ad32]
+[fowardEffect bit_talk_14]
+[charaShake C 0.05 3 3 0.5]
+[wt 1.0]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠贝德维尔
+这个断音之箭是崔斯坦卿……！[r]在哪里，看不见身影！
+[k]
+
+
+[messageOff]
+[se ad32]
+[fowardEffect bit_talk_14]
+[charaShake C 0.05 3 3 0.5]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 2]
+
+＠Dr.罗曼
+前方，右侧建筑的屋顶！[r]烟囱背后有魔力反应……！
+[k]
+
+[messageOff]
+[communicationCharaClear]
+[wait communicationChara]
+
+＠崔斯坦
+……多么悲伤。[r]本来只要再走十步就能把你们全部都切片了。
+[k]
+
+＠崔斯坦
+但因为贝德维尔卿的话太过不讲理，[r]令我不愉快地忍不住提早动了手指。
+[k]
+
+[se ad60]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 1]
+[wt 0.5]
+[seStop ad60]
+
+＠崔斯坦
+……哎呀真是的。连失言都能导致幸运，[r]不愧是贝德维尔卿。
+[k]
+
+＠崔斯坦
+真希望你也教教我如何才能如此积德呢。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[scene 29802]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0 1]
+
+[bgm BGM_EVENT_5 2.0]
+[fadein black 2.0]
+[wait fade]
+
+＠崔斯坦
+……我认为，[r]命运就如同死神。
+[k]
+
+＠崔斯坦
+能成功甩掉的人能获得些许的时间，[r]而被追上的人则只能出师未捷身先死。
+[k]
+
+＠崔斯坦
+你们曾经一度甩开了命运。[r]在那座寒碜的村子里。
+[k]
+
+[charaFace F 1]
+＠崔斯坦
+那就再让我见识一下吧。[r]以我为对手。让我见识一下你们最后的挣扎。
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠贝德维尔
+……崔斯坦。[r]我和你已无话可说，
+[k]
+
+＠贝德维尔
+在那个村子里，我认识的崔斯坦卿已经消失了。[r]就算再怎么不成熟，我也是骑士王的骑士。
+[k]
+
+[charaFace C 2]
+＠贝德维尔
+是绝不可能落于[r]身为狮子王骑士的你之下的！
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠崔斯坦
+……当然了。[r]你终于达到这种心境了。
+[k]
+
+＠崔斯坦
+此地从来就没有你所认识的圆桌。[r]我们是狮子，是有着野兽之心的恶鬼。
+[k]
+
+＠崔斯坦
+不惜残忍杀害你们，将这个时代作为踏板，[r]只为了自己能够活下去。
+[k]
+
+＠崔斯坦
+非常抱歉，但现在的我只有这个。[r]所以，让我们拉开帷幕吧。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.1]
+[se ad152]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠贝德维尔
+要来了！[r][%1]、玛修女士，做好准备！
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+是！　敌人是圆桌骑士，崔斯坦！[r]夺走大量生命的妖弦，就将断于此处！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,633 @@
+
+
+＄94-03-50-40-1-0
+[soundStopAll]
+
+[imageSet A cut103_item02 1]
+[charaSet B 98110000 1 柳生但马守]
+[charaSet C 1098164010 1 松平信纲]
+[charaSet D 1098164020 1 松平信纲2]
+
+[charaSet E 1098158220 1 希翁]
+[charaSet F 6014001 1 玛塔·哈丽]
+[charaSet G 1098163710 1 迦摩]
+[charaSet H 3030000 1 帕尔瓦蒂]
+[charaSet I 5030001 1 山鲁佐德]
+[charaSet J 5009000 1 特效用dummy]
+
+
+[scene 72403]
+
+[bgm BGM_EVENT_82 0.1]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+
+[se bas3]
+[effect bit_talk_cure]
+[wt 1.5]
+[effectStop bit_talk_cure]
+[wt 0.5]
+
+？1：身体好暖和……
+？2：感觉轻松多了！
+？！
+
+
+[charaFadein A 0.7 0,-200]
+[wt 2.0]
+[charaFadeout A 0.4]
+[wt 0.6]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠柳生但马守
+原来如此。从这张花牌中飞出的并非普通的蝶。[r]而是伊豆蝶……[#大河内松平的家纹啊]。我完全没发现。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠松平信纲
+宗矩阁下。正好。天海僧正授予在下的计策还有一个。[r]是天海阁下用自己的生命作为代价刻在这身体上的术。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 1.5]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠松平信纲
+在下重复一遍。回顾在下此前的所作所为吧。[r]在各位眼前的，是『[#为害德川之人]』。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠柳生但马守
+！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_82 1.0]
+[charaFace B 4]
+[wt 1.0]
+
+[charaFace B 0]
+
+＠柳生但马守
+老中，松平伊豆守信纲。[r]您的确是一位忠臣啊。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠松平信纲
+不。即便如此，在下也是逆臣。必须是这样才行。[r]因此[line 3]完成您该做的事吧，宗矩阁下。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠柳生但马守
+……那么，[#非斩不可]。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠松平信纲
+[#没错]。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+[cueSe Battle bac305]
+[wt 0.2]
+[fadeout black 0.2]
+[wait fade]
+[charaFadeout B 0]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0 1]
+[fadein black 0.1]
+[wait fade]
+[wt 0.2]
+[cueSe Battle bac136]
+[charaPut J 1]
+[charaScale J 1.2]
+[charaEffect J bit_talk_Slash_white_01_L]
+[wt 0.1]
+[charaEffectStop J bit_talk_Slash_white_01_L]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF50]
+[charaFace D 1]
+[charaShake D 0.03 5 5 0.3]
+[wt 0.5]
+[fowardEffect bit_talk_blood_splash]
+[se ad464]
+[wt 1.2]
+[charaMove D 0,-25 0.4]
+[wt 0.1]
+[charaFadeout D 0.4]
+[wt 0.4]
+[fowardEffectStop bit_talk_blood_splash]
+[se ad144]
+[wt 1.0]
+
+[charaSet C 5009000 1 特效用dummy２]
+[charaSet D 99502600 1 玛修]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+？1：柳生先生！？
+？2：为什么要突然动手！
+？！
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠柳生但马守
+这样一来，信纲阁下就与阿福阁下一样，[r]成了只有灵魂的存在。正因为如此。
+[k]
+
+＠柳生但马守
+天海僧正准备的术，他的意志，[r]无论如何，都会和阿福阁下一样，就此发生形态变化。
+[k]
+
+＠柳生但马守
+变成拥有『[#为害德川]』性质的[line 3][r]一把刀。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[charaPut C 1]
+[charaEffect C bit_talk_sword_light]
+[wt 0.3]
+[cueSe Battle bac283]
+[cueSeVolume bac283 0 0.0]
+[cueSeVolume bac283 1.0 1.0]
+[wt 2.5]
+
+[fadeout black 0.1]
+[wait fade]
+
+[charaPut C 1200,1200]
+[charaEffectStop C bit_talk_sword_light]
+
+[scene 72403]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+
+＠玛修
+信纲先生的身体里，出现了日本刀……！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠柳生但马守
+不是什么和泉守兼定，[r]而是伊豆守的拟村正啊。
+[k]
+
+[messageOff]
+[wt 0.2]
+[cueSe Battle bac305]
+[wt 0.8]
+[charaFace B 5]
+
+[charaSet A 1098163720 1 迦摩_同位体]
+[charaSet C 1098163720 1 迦摩_同位体]
+
+[bgm BGM_EVENT_67 0.1]
+
+＠柳生但马守
+好吧。[r]松平伊豆守，我已收下了您的忠义。
+[k]
+
+＠柳生但马守
+德川家兵法指南，柳生但马守宗矩[line 3]唯一一次，[r]为毁灭虚假的德川，挥舞这把虚伪的村正。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠希翁
+这与庆喜公的力量和想法一致。想让自己，[r]成为对付虚伪德川的最终兵器吧。
+[k]
+
+[charaFace E 11]
+
+＠希翁
+坚信有资格挥舞这把武器，[r]且能够收拾事态的人终将到来[line 3]
+[k]
+
+＠希翁
+为此不断打磨着自己这把刀。[r]简直就是埋伏之毒的极致。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+
+
+＠迦摩
+……这是什么发展啊。
+[k]
+
+
+＠迦摩
+我早就知道信纲先生背叛我了。[r]不，唯一惊讶的是他居然放跑了局小姐。
+[k]
+
+＠迦摩
+是趁我读书的间隙，[r]搞的那么多小伎俩吧？
+[k]
+
+[charaFace G 19]
+
+＠迦摩
+因为觉得他如果像这样可怜地用尽了手段，[r]结果还只能无能为力地被我蹂躏，
+[k]
+
+＠迦摩
+届时的样子一定会非常有趣，[r]我才会将他作为愉快的零部件来使用[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠玛塔·哈丽
+然而他对德川的忠义远超你的想象。[r]你并没能识破他所有的计划吧？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 22]
+[charaFadein G 0.1 1]
+
+＠迦摩
+怎么可能识破啊！？
+[k]
+
+＠迦摩
+之所以背叛，就是为了给自己，[r]给这[#花牌:生命]付与反德川的性质？
+[k]
+
+＠迦摩
+而且为了打倒我，居然不惜让自己被斩杀，[r]并成为[#杀害德川之刀:Tokugawa Slayer]？
+[k]
+
+＠迦摩
+真是太莫名其妙了。这算啥。太奇怪了。[r]我找不到能表达这种恶心感的形容词。
+[k]
+
+＠迦摩
+不停地忍耐也该有个限度吧。[r]啊啊，真是的，人类到底多喜欢疼痛啊！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+＠春日局
+但我能理解。身为乳母的我感到无比幸福。[r]这正是自他幼时起，我一直在教诲他的道理。
+[k]
+
+＠春日局
+干得漂亮。干得太漂亮了，信纲阁下。[r]尽管很有您的作风，非常笨拙……
+[k]
+
+＠春日局
+但这才是对德川真正的忠义。[r]我干脆换一种说法吧？
+[k]
+
+＠春日局
+这才是信纲阁下所守护的[line 3][r]信纲阁下所相信的[#爱]的形式。
+[k]
+
+[messageOff]
+[charaTalk G]
+[charaFace G 17]
+[charaFadein G 0.1 1]
+[wt 1.2]
+
+＠迦摩
+不行。这不行。[r]给与爱的是我，充满宇宙的也是我。
+[k]
+
+[charaFace G 18]
+
+＠迦摩
+你们不需要拥有什么爱！[r]尤其是我不知道的爱！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+[bgmStop BGM_EVENT_67 1.0]
+
+＠帕尔瓦蒂
+迦摩……不，爱欲之兽。[r]所以你才无法与人类相容。
+[k]
+
+＠帕尔瓦蒂
+付出爱是非常快乐的。爱的形式千差万别。[r]你是司掌所有这些无限快乐的存在。
+[k]
+
+＠帕尔瓦蒂
+如果你化身成体振翅高飞，世界就会终结。[r]甚至可能将宇宙都烧成灰烬。
+[k]
+
+[bgm BGM_EVENT_82 0.1]
+
+＠帕尔瓦蒂
+[line 3]一定要在这里阻止你。一定。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠玛塔·哈丽
+怎么能让你独占爱这种行为呢。[r]我也是因为爱才会成为英灵的呀。
+[k]
+
+[charaFace F 1]
+
+＠玛塔·哈丽
+至于是不是因为真正的爱，可就容我保密了哦？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+＠山鲁佐德
+被夺走……嗯，会令人困扰。[r]不知为何，现在的我，很清楚这点。
+[k]
+
+[charaFace I 0]
+
+＠山鲁佐德
+[#这]或许，是能让人忘记死之恐惧的唯一存在……
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠玛修
+尽管我……只知道字面含义的爱是什么意思……
+[k]
+
+＠玛修
+但大家告诉我，这是自己内心的表现，[r]总有一天将与他人分享。
+[k]
+
+＠玛修
+只要一想象，就会感到那将是个[r]令人心情激动的无比灿烂的未来。
+[k]
+
+＠玛修
+我内心由衷呐喊着，[r]不希望爱被你一个人的价值观所充斥。
+[k]
+
+＠玛修
+单方面给与的堕落[line 3][r]不过是堕落，不是什么爱情！
+[k]
+
+[charaFace D 2]
+
+＠玛修
+御主！　我也会全力支援。[r]拜托您击破BeastⅢ／L吧！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠希翁
+迦摩同位体的数量不计其数。[r]想必会从周围宇宙无限飞来。
+[k]
+
+[charaFace E 2]
+＠希翁
+但是……司掌一切的头脑体应该只有一个。[r]得想办法消灭头脑！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠柳生但马守
+明白了。我该做的事只有这一件。[r]用这把刀，斩杀。
+[k]
+
+＠柳生但马守
+[line 3]觉悟吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaDepth G 4]
+[charaDepth C 5]
+[charaDepth A 6]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+
+[bgmStop BGM_EVENT_82 1.0]
+
+＠迦摩
+啊啊……真是的。
+[k]
+
+＠迦摩
+像养猪场的猪一样惹人怜爱呢。[r]大家，每个人，满脑都是“自己想爱”的烦恼。
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 2]
+[wt 0.4]
+
+＠C：迦摩
+那么[line 3]我就现在，[r]就代替必须凌驾的那个女人这么宣告吧。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.4 0]
+[wt 0.4]
+
+＠A：迦摩
+烦恼无量誓愿断。
+[k]
+
+[charaTalk G]
+[charaFace G 0]
+
+
+＠迦摩
+我的爱，是消除所有烦恼的堕落之炎。[r][#因此不会存在烦恼]。
+[k]
+
+[charaFace G 14]
+
+＠迦摩
+没错，我会拯救人类。[r]虽说结果不会产生任何东西，但又有何妨。
+[k]
+
+[charaFace G 1]
+
+＠迦摩
+我一点也不在意。[r]因为我最讨厌人类了。
+[k]
+
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaFace G 13]
+
+＠迦摩
+来呀，过来呀，[r]可爱的御主。
+[k]
+
+＠迦摩
+我会从正面摧毁你们的自以为是。[r]即将满溢的，乃是由堕落宇宙而来的存在。
+[k]
+
+
+＠迦摩
+将刻印于历史上的爱之园改造成破戒的陷阱，
+[k]
+
+＠迦摩
+从概念上凌驾成对的存在，[r]作为兽，渴望羽化的大灾害。
+[k]
+
+＠迦摩
+BeastⅢ[#Lapse:堕落]。[r]就让腐败堕落的天魔王，赐予你们无限的爱吧！
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

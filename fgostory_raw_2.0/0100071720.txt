@@ -1,0 +1,115 @@
+
+
+
+＄01-00-07-17-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1 0.7]
+[charaSet A 8001002 1 玛修]
+[charaSet B 98003000 1 Dr.罗曼]
+[charaSet C 4018001 1 魁札尔·科亚特尔]
+[charaSet D 2020001 1 伊什塔尔]
+
+[se ad55]
+[seVolume ad55 0 0.3]
+
+[scene 32700]
+[fadein black 2.0]
+[wt 1.0]
+[se ad162]
+[seVolume ad162 0 0.2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.4 1]
+＠玛修
+抵达埃里都了！[r]人的迹象[line 3]这骚动是怎么一回事！？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr.罗曼
+生命反应非常多！[r]五百，不，有六百人份！　是被抓走的人们！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠魁札尔·科亚特尔
+全都被集结在广场吧！？[r]拉赫穆的反应呢！？
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr.罗曼
+当然有！　魔力反应超过两百，虽然跟整体比起来很少，[r]但对我们来说依旧存在绝望的战力差距！
+[k]
+
+＠Dr.罗曼
+各位，我能理解大家的心情，但务必谨慎行动！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠玛修
+话虽如此，情况刻不容缓！[r]既然被聚集在一起，就有可能发生最糟糕的情况！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠伊什塔尔
+冷静一点，我们可没说不去战斗啊，玛修。[r]行动迅速，尽快掌握情况，
+[k]
+
+＠伊什塔尔
+得先掌握最佳的位置才能出手哦。[r]毕竟我们一次能应对的数量最多只有四只。
+[k]
+
+＠伊什塔尔
+若要与那些家伙正面交锋，[r]至少得知道它们的弱点和缺点之类的才行啊……！
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+！　前方出现拉赫穆，数量一只！[r]它发现我们了！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr.罗曼
+只有单体吗，那可以与之交战！[r]要赶在它叫同伴来前，将其击倒！
+[k]
+
+
+[messageOff]
+[seStop ad55 0.4]
+[seStop ad162 0.4]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[shakeStop]
+[communicationCharaClear]
+[wait communicationChara]
+[soundStopAll]
+[end]

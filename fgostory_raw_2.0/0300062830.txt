@@ -1,0 +1,965 @@
+
+
+
+＄03-00-06-25-3-0
+
+
+
+[soundStopAll]
+
+[charaSet A 1098123010 1 穆尼尔]
+[charaSet B 1098191200 1 阿黛勒]
+[charaSet C 1098191300 1 马卡里俄斯]
+[charaSet D 1017001 1 武藏]
+
+
+[charaSet S 5009000 1 特效用dummy]
+[charaSet T 5009000 1 特效用dummy]
+
+
+[scene 86301]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.5]
+
+[charaPut T 1]
+[charaEffect T bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+
+＠穆尼尔
+…………啊～。那个。你还没睡吗？
+[k]
+
+[charaFace A 1]
+＠穆尼尔
+嗯，还醒着啊。[r]其实有件东西必须让你看一下。
+[k]
+
+[charaFace A 5]
+＠穆尼尔
+我烦恼了很久……[r]但最后还是觉得给你看一下比较好。
+[k]
+
+[charaFace A 0]
+＠穆尼尔
+抱歉在你这么累的时候还来打扰。[r]但之后再给你看的话……也不太好……
+[k]
+
+？1：必须给我看的东西……？
+
+？！
+
+＠穆尼尔
+[line 3]是破神同盟基地传来的影像数据。
+[k]
+
+
+？1：……！
+
+？！
+
+＠穆尼尔
+根据时间戳，[r]确认这段影像应该是在击破得墨忒耳之后拍的。
+[k]
+
+＠穆尼尔
+传送文件的时间则更晚一些，[r]是在你们即将前往轨道大神殿之前。
+[k]
+
+
+＠穆尼尔
+不知是什么原理，但影像规格是迦勒底式的。[r]奥林波斯的技术真厉害啊。
+[k]
+
+＠穆尼尔
+数据我已经发到[r][#个人房间:这里]的终端了。
+[k]
+
+＠穆尼尔
+……要不要看取决于你自己。[r]我们都已经看过了。
+[k]
+
+[messageOff]
+[charaFace A 5]
+[wt 1.2]
+
+[charaFace A 0]
+＠穆尼尔
+看完之后，戈尔德鲁夫所长[r]将他们全员都列为了[#未归还者]。
+[k]
+
+＠穆尼尔
+他还说什么……
+[k]
+
+＠穆尼尔
+“无法断定那些家伙是否真的已经死亡。[r][f small]  [f -]说不定有一天还会与我们会合。”
+[k]
+
+[charaFace A 5]
+＠穆尼尔
+假如说你们有问题的话，[r]那大叔也是。
+[k]
+
+＠穆尼尔
+不过听我一句劝吧。[r]……感伤有时也是有必要的吧。
+[k]
+
+[charaFace A 1]
+＠穆尼尔
+总之就是这样。[r]我先走啦。
+[k]
+
+[messageOff]
+[charaEffectStop T bit_talk_10_LowLevel]
+[charaFadeout A 0.1]
+[se ad15]
+[wt 0.5]
+[charaPut T 1200,1200]
+[wt 1.2]
+
+[se ad661]
+[wt 2.0]
+
+[se ad95]
+[wt 1.8]
+
+[seStop ad95 0.1]
+[wt 0.8]
+
+[se ad15]
+[wt 0.8]
+
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+
+
+[scene 10000]
+
+[effect bit_talk_security]
+
+[wt 1.0]
+
+[se ad31]
+[seVolume ad31 0 0]
+
+[seVolume ad31 1.0 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.5]
+
+
+[seStop ad31 0.1]
+[se ad539]
+
+[scene 92100]
+[wt 0.1]
+[scene 10000]
+[wt 0.1]
+[scene 92100]
+[wt 0.1]
+[scene 10000]
+[wt 0.5]
+[scene 92100]
+[wt 1.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_116 0.1]
+
+＠马卡里俄斯
+[line 3]有拍到吧。很好。
+[k]
+
+＠马卡里俄斯
+啊～，啊～。声音也录进去了。[r]没有问题了。
+[k]
+
+＠马卡里俄斯
+录像准备完毕。[r]然后就是小心不要让其他人发现了。
+[k]
+
+＠马卡里俄斯
+我并不想搞内讧，[r]但对组织来说，内部调查还是有必要的。
+[k]
+
+＠马卡里俄斯
+哪怕现在人数很少，破神同盟依然是组织。[r]应该了解一下各成员的内心想法。
+[k]
+
+[charaFace C 9]
+＠马卡里俄斯
+……[r]……
+[k]
+
+[charaFace C 8]
+＠马卡里俄斯
+虽然我对偷拍不感兴趣……[r]但爱迪生也说这样做是应该的。嗯。
+[k]
+
+＠马卡里俄斯
+反正只是作为参考而已。
+[k]
+
+[messageOff]
+[se ad95]
+[wt 0.4]
+[charaFadeout C 0.4]
+[seStop ad95 0.8]
+[wt 1.8]
+
+[se ade74]
+[seVolume ade74 0 0.5]
+[seVolume ade74 0.8 1.0]
+[wt 0.6]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+[seStop ade74 0.1]
+[wt 0.4]
+
+＠阿黛勒
+马卡里俄斯？　你在哪儿？
+[k]
+
+[charaFace B 4]
+＠阿黛勒
+还以为他会在这附近，[r]难道是在自己房间吗。真是的。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠武藏
+唔～。[r]阿黛勒亲，怎么了？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace D 9]
+[charaFadein D 0.1 2]
+[charaFace B 4]
+[charaFadein B 0.1 0]
+
+＠阿黛勒
+我找不到马卡里俄斯了。[r]我还有事想要拜托他呢……
+[k]
+
+[charaFace D 0]
+
+＠武藏
+嗯嗯。[r]那如果你不嫌弃的话，让我来帮忙吧。
+[k]
+
+[charaFace B 1]
+
+＠阿黛勒
+谢谢。但你的好意我心领了。[r]因为我是想拜托马卡里俄斯……
+[k]
+
+＠阿黛勒
+帮你和玛修小姐调整克利洛诺弥亚哦。
+[k]
+
+[charaFace D 8]
+
+＠武藏
+哎呀，真遗憾。[r]这种事情不是专家做不来吧。
+[k]
+
+[charaFace B 6]
+
+＠阿黛勒
+其实我们也不是专家啦……
+[k]
+
+[charaFace D 0]
+
+＠武藏
+不过你们摆弄那玩意已经多少年了？
+[k]
+
+[charaFace B 0]
+
+＠阿黛勒
+大概一千二百年左右吧。[r]啊，对哦，按其他世界的标准来看，确实算是……
+[k]
+
+[charaFace D 8]
+
+＠武藏
+比专家更专家啦！
+[k]
+
+[charaFace B 1]
+
+＠阿黛勒
+好像是呢。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad95]
+[seVolume ad95 0 0.3]
+[seVolume ad95 0.8 1.0]
+[wt 0.6]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+[seStop ad95 0.1]
+[wt 0.4]
+
+＠马卡里俄斯
+……怎么，原来你在这里啊，姐姐。[r]还有武藏。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠阿黛勒
+啊，太好了。[r]马卡里俄斯，听我说哦。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠马卡里俄斯
+是调整克利洛诺弥亚吧。我来弄吧。[r]必须处理到不会留下后遗症才行。
+[k]
+
+[charaFace C 4]
+＠马卡里俄斯
+比起这个，啊～。[r]姐姐、武藏。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_116 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+[charaFadein D 0.1 2]
+＠武藏
+唔？
+[k]
+
+＠阿黛勒
+什么事？
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠马卡里俄斯
+我有个问题想问你们……[r]你们是怎么看迦勒底那些家伙的？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠阿黛勒
+怎么看……
+[k]
+
+＠阿黛勒
+他们是帮助我们同盟的同志吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠马卡里俄斯
+武藏呢？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠武藏
+唔～，该怎么说呢。[r]旅伴……好像有点不太对。
+[k]
+
+[charaFace D 8]
+＠武藏
+老实说，我不太了解福尔摩斯先生。[r]也基本没怎么与其他职员们聊过天！
+[k]
+
+[charaFace D 7]
+＠武藏
+不过，嗯。[r]如果是说[%1]的话，我很喜欢哦。
+[k]
+
+[charaFace D 3]
+＠武藏
+当然玛修也是！[r]唔～，喜欢喜欢，我最～喜欢[&他们:她们]了！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+＠阿黛勒
+哎呀……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠武藏
+其实我一开始只了解[%1]的事。
+[k]
+
+[charaFace D 9]
+＠武藏
+而对玛修的第一印象嘛……[r]就觉得她是个很认真的孩子吧？
+[k]
+
+
+[charaFace D 7]
+＠武藏
+可当看到她战斗的样子后，[r]我就想，啊啊，原来是这样。
+[k]
+
+＠武藏
+正因为和这女孩在一起，[r][%1]才会……
+[k]
+
+＠武藏
+……形成那样的处世态度吧。
+[k]
+
+
+[charaFace D 6]
+＠武藏
+自从感受到这点之后，[r]我就非常非常喜欢[&他们:她们]。姐姐我超满足！
+[k]
+
+＠武藏
+甚至每当看到那两人努力的身影，[r]就会自然地露出笑容！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠阿黛勒
+……这样真好呢。[r]好棒啊。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠马卡里俄斯
+听起来有些莫名其妙。[r]那我问下一个问题了。
+[k]
+
+[charaFace C 0]
+＠马卡里俄斯
+你们对那些家伙有什么要求吗？[r]比方说有什么不满意的地方希望他们改善。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠武藏
+唔唔。这都什么问题。[r]感觉就像在衙门一样。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+[charaShake C 0.02 3 3 0.3]
+[wt 1.0]
+
+＠马卡里俄斯
+没……没有。只是闲聊而已。[r]没有什么别的意思。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+＠武藏
+真的吗？
+[k]
+
+
+[messageOff]
+[charaFace D 7]
+[wt 1.2]
+
+[charaFace D 0]
+＠武藏
+也罢。呃～，[r]如果说我有什么事想拜托那些孩子的话。
+[k]
+
+[charaFace D 9]
+＠武藏
+我想想，唔～。[r]……我希望那两个人连同我的份……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠阿黛勒
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠武藏
+啊，不，没什么。[r]刚才的不算，我从头来过吧。
+[k]
+
+[charaFace D 0]
+＠武藏
+我希望那两个人[line 3]
+[k]
+
+[charaFace D 1]
+＠武藏
+嗯。我希望[&他们:她们]身体健健康康的！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠马卡里俄斯
+这……这算什么啊。[r]这根本连要求都算不上吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠武藏
+希望[&他们:她们]感情融洽，尽可能一直健康下去。[r]不要遭遇什么难受或痛苦的经历。
+[k]
+
+[charaFace D 7]
+＠武藏
+这就是武藏大姐姐对那两个人唯一的愿望！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠马卡里俄斯
+…………一点参考价值都没有嘛。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠武藏
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠阿黛勒
+你真的很喜欢那两个人呢。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+[wt 1.2]
+
+[charaFace D 7]
+＠武藏
+嗯，那当然啦。[r]我最喜欢[&他们:她们]啦！
+[k]
+
+[charaFace D 0]
+＠武藏
+你们又如何？[r]对那两个人怎么看？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace B 0]
+[charaFadein C 0.1 -150,0]
+[charaFadein B 0.1 150,0]
+＠马卡里俄斯
+我们吗？
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠武藏
+没错。你们。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 4]
+[charaDepth C 5]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFace B 0]
+[charaFadein C 0.1 -150,0]
+[charaFadein B 0.1 150,0]
+＠马卡里俄斯
+这……这个嘛……我想想。[r]如果没有那些家伙，也就无法打倒得墨忒耳。
+[k]
+
+＠马卡里俄斯
+应该说自从那些家伙来了之后，[r]我们破神同盟才真正实现了破神。
+[k]
+
+＠马卡里俄斯
+所以[line 3]
+[k]
+
+
+[charaTalk B]
+[charaFace B 1]
+＠阿黛勒
+我喜欢[&他们:她们]哦。[r]与作战或同盟没有关系。
+[k]
+
+
+[charaTalk C]
+[charaFace C 3]
+＠马卡里俄斯
+姐……姐姐！
+[k]
+
+
+[charaTalk B]
+[charaFace B 6]
+＠阿黛勒
+我甚至觉得，[r]如果不是在这种忙碌的战场上相遇的话……
+[k]
+
+＠阿黛勒
+我们应该可以成为朋友吧。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠武藏
+当然啦。[r]应该说你们早就是朋友了吧？　不是吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 4]
+[charaDepth C 5]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFace C 4]
+[charaFadein B 0.1 150,0]
+[charaFadein C 0.1 -150,0]
+＠阿黛勒
+……如果是就好了。[r]不过谁知道呢。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠武藏
+我觉得肯定就是啦。[r]唔～～～。
+[k]
+
+[charaFace D 9]
+＠武藏
+啊。
+[k]
+
+[bgmStop BGM_EVENT_11 3.0]
+
+[charaFace D 1]
+＠武藏
+对了。我想到了。[r]宫本武藏突然想出了一个好主意！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFace B 0]
+[charaFadein C 0.1 -150,0]
+[charaFadein B 0.1 150,0]
+＠马卡里俄斯
+突……突然怎么了。好主意？
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠武藏
+嗯，好主意。就是好主意！[r]如果破神作战全部顺利进行、圆满结束的话，
+[k]
+
+[charaFace D 6]
+＠武藏
+大家一起来办个酒宴吧。[r]准备各种美味的饭菜。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth B 4]
+[charaDepth C 5]
+
+[charaFace B 3]
+[charaFace C 7]
+[charaFadein B 0.1 150,0]
+[charaFadein C 0.1 -150,0]
+[wt 1.2]
+
+[bgm BGM_EVENT_78 0.1]
+
+[charaTalk on]
+[charaTalk depthOff]
+[charaTalk B]
+[charaFace B 1]
+＠阿黛勒
+真不错。很棒呢！
+[k]
+
+[charaTalk C]
+[charaFace C 8]
+＠马卡里俄斯
+……这种事啊。得在作战完全成功，[r]一个人都没少，并且时间充裕的情况下才有可能吧。
+[k]
+
+＠马卡里俄斯
+根本不算是什么好主[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠武藏
+一定会顺利的啦！[r]大家一起努力，让事情进展顺利吧！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 4]
+[charaDepth C 5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace B 6]
+[charaFadein C 0.1 -150,0]
+[charaFadein B 0.1 150,0]
+＠马卡里俄斯
+……[r]……
+[k]
+
+＠马卡里俄斯
+……这个嘛，也是。[r]当然应该追求作战完美成功。
+[k]
+
+
+[charaTalk B]
+＠阿黛勒
+那我从现在起就得考虑一下菜色了吧。[r]我想想……做什么好呢……
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠武藏
+乌冬必须要有！[r]然后嘛，对了，去问一下大家都喜欢吃什么吧。
+[k]
+
+[charaFace D 1]
+＠武藏
+啊，还可以找戈尔德鲁夫大叔[r]准备一些他独门煎蛋卷之类的！
+[k]
+
+[messageOff]
+[charaFaceFade D 13 0.8]
+[wt 1.4]
+
+＠武藏
+大家一起办一场超级开心的派对吧！
+[k]
+
+
+[messageOff]
+[wt 2.0]
+
+[bgmStop BGM_EVENT_78 0.1]
+
+[se ade49]
+[fowardEffect bit_talk_03]
+[wt 0.3]
+
+[fadeout white 0.1]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+
+[scene 10000]
+[wt 2.0]
+
+[se ad31]
+[seVolume ad31 0 0]
+[seVolume ad31 1.5 1.0]
+
+[fadein white 1.5]
+[wait fade]
+[wt 3.0]
+
+
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[seStop ad31 2.0]
+
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

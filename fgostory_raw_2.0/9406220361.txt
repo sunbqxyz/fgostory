@@ -1,0 +1,342 @@
+
+
+＄94-06-22-03-6-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[bgm BGM_EVENT_63 0.1]
+
+[charaSet A 8001001 1 マシュ]
+[charaSet B 5012001 1 ニトクリス]
+[charaSet C 2003001 1 ロビンフッド]
+[charaSet D 1010001 1 エリザベート]
+[charaSet E 98002000 1 フォウ]
+[charaSet F 6008001 1 クレオパトラ]
+[charaSet G 2008000 1 トリスタン]
+[charaSet H 1020001 1 ランスロット]
+[charaSet I 98003003 1 Dr.ロマン]
+[charaSet T 98115000 1 エフェクト用ダミー]
+
+[charaPut T 2000,2500]
+[charaEffect T bit_talk_10]
+
+[pictureFrame cut297_frame16 forceFullScreenSize]
+
+[scene 134000]
+[fadein black 2.0]
+[wait fade]
+
+[pictureFrame]
+[pictureFrameTop cut297_frame16 forceFullScreenSize]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 0,-50]
+＠ニトクリス
+ふふ……中々やりますね……。[r]私の働きものな死霊たちも品切れです……。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-50]
+＠エリザベート
+アンタの方こそ、素晴らしい動きだったわ……。[r]あと、[charaFace D 1]死霊ちゃん可愛いわね。
+[k]
+
+＠エリザベート
+特にあの、シーツかぶってるの。[r]くるくる廻るの、可愛いわ。
+[k]
+
+[charaFace D 0]
+＠エリザベート
+こう、ライブのヒントになりそうな気がする……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+＠ニトクリス
+メジェド神に目を付けるとは……[r]アナタはやはり、ただの害獣ではないのですね……
+[k]
+
+[charaFace B 1]
+＠ニトクリス
+貴女の歌は確かに素晴らしいものでした……[r]死霊たちも[#拍手喝采:はくしゅかっさい]でしたし……。
+[k]
+
+[charaFace B 0]
+[bgmStop BGM_EVENT_63 1.5]
+＠ニトクリス
+私も……あまりの心地よさに[r]霊的インスピレーションが得られましたし……
+[k]
+
+？1：え？
+？2：え？
+
+？！
+
+[charaFace B 7]
+[bgm BGM_EVENT_7 0.1]
+＠ニトクリス
+確かに、かのピラミッドは私も気にしているのです。[r]ファラオであれば、一度挨拶に出向かなければ[line 3]
+[k]
+
+＠ニトクリス
+そう思いつつ、一人で立ち向かうのも何ですから、と[r]引き籠もっていた訳ですが。
+[k]
+
+[charaFace B 0]
+＠ニトクリス
+……いいでしょう、勇者エリザベート。[r]貴女のライブ、手伝って差し上げましょう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠エリザベート
+ありがとう、アナタとはいい友人になれそうね。
+[k]
+
+[charaFadeout D 0.4]
+[wt 0.1]
+
+[messageOff]
+[wt 0.7]
+
+[se ad59]
+[wt 1.0]
+[seStop ad59 1.5]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.7 0,-50]
+＠マシュ
+はあ、はあ、はあ……。[r]や、やっと追いつきました[line 3]って。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+＠ロビンフッド
+はあ、握手？[r]力比べじゃなくて？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+あの……マスター。[r]一体何が起きたんですか？
+[k]
+
+？1：きっと仲良くなると思っていたんだ
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+＠ロビンフッド
+……しかし、仲良くなったらなったで……。[r]問題児の問題度が上がっただけのような……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaDepth B 6]
+[charaDepth D 4]
+
+[charaFace B 2]
+[charaFace D 2]
+[charaFadeinFSL B 0.1 -256,-50]
+[charaFadeinFSR D 0.1 256,-50]
+＠二人
+[f large][messageShake 0.05 5 5 0.7]何ですって！
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[charaFadeout D 0.4]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+＠フォウ
+フォウ……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaSet E 7022001 1 茨木童子]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠エリザベート
+ともかく、進みましょう！[r]目指せ、チェイテピラミッドよ！
+[k]
+
+[charaFace D 1]
+＠エリザベート
+次は難関、[r]氷河地帯を潜り抜けるわ！！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+氷河！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 0,-50]
+＠エリザベート
+……確かに考えてみたら、城までの道のりに[r]氷河地帯があるとか、おかしいわよね！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-175]
+[charaFace I 1]
+＠Dr.ロマン
+そこはほら、お約束的なノリなんじゃないかな……。
+[k]
+
+[charaFace I 0]
+＠Dr.ロマン
+……ん？[bgmStop BGM_EVENT_7 1.5][r]サーヴァント反応が……１、２、３、４……５？
+[k]
+
+[charaFace I 2]
+＠Dr.ロマン
+一つ多いぞ、キミたち！
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut T 2000,2500]
+[charaEffectStop T bit_talk_10]
+[wt 0.3]
+
+[bgm BGM_EVENT_146 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 0,-50]
+＠茨木童子
+……むぅ。おかしい……お菓子がない……。[r]いや、[#洒落:しゃれ]でなく。
+[k]
+
+[charaFace E 2]
+＠茨木童子
+どういうことだ、[%1]！[r][#吾:われ]に嘘を吐いたのではなかろうな！？
+[k]
+
+＠茨木童子
+はろうぃんとは、こう、菓子食べ放題の[r]夢のお祭りではなかったのか！？
+[k]
+
+？1：何でいるの！？
+
+[charaFace E 1]
+＠茨木童子
+阿呆め、さっきからずっと居たわ！[r][#吾:われ]の[#隠形:おんぎょう]に気付かぬうぬが不覚よ！
+[k]
+
+？2：いつから此処に！？
+
+[charaFace E 1]
+＠茨木童子
+ふははは、[#汝:なれ]と一緒に[#霊死埠頭:れ　い　し　ふ　と]してきたのよ！
+[k]
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+やっぱり幻覚じゃなかったんですね……！[r]良かったです！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+＠エリザベート
+え、誰なの！？[r]遊び人とか、パーティに加えたくないんだけど！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-50]
+＠茨木童子
+だ[messageShake 0.05 3 3 0.5]ーれーがー遊び人かーーーー！[r]酔った京人どもと一緒にするでない！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+混乱したまま、次回に続きますね……！
+[k]
+
+[messageOff]
+[wt 0.4]
+
+[pictureFrameTop]
+[pictureFrame cut297_frame16 forceFullScreenSize]
+
+[bgmStop BGM_EVENT_146 2.0]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

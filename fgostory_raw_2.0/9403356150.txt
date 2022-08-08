@@ -1,0 +1,551 @@
+
+＄94-03-35-61-5-0
+
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098196710 1 雏罂]
+[charaSet B 1098199800 1 谜之怨灵]
+[equipSet C 9807820 1 情人节礼装]
+
+[charaSet T 5009040 1 特效用dummy]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 99900]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 0,-20]
+[wt 0.4]
+
+[bgm BGM_EVENT_25 0.1]
+
+＠雏罂
+[tVoice ValVoice_304400 0_V010]
+喂，那边那个恰好路过[r]一脸衰样的后辈？[wait tVoice]
+[k]
+
+？1：什么事……？
+？！
+
+[charaFace A 1]
+＠雏罂
+[tVoice ValVoice_304400 0_V020]
+不用那么警惕。[r]我想你应该明白，最近我心情很不错。[wait tVoice]
+[k]
+
+＠雏罂
+[tVoice ValVoice_304400 0_V030]
+以至于会偶尔换成这身打扮[r]回顾夏日的幸福回忆哦。[wait tVoice]
+[k]
+
+[messageOff]
+[charaMove A 0,-25 0.2]
+[wt 0.1]
+[se ade503]
+[wt 0.1]
+[charaMove A 0,0 0.5]
+[wt 0.4]
+[seStop ade503 0.1]
+[wt 0.5]
+
+[se ade158]
+[charaCrossFade A 3044000 1 0.4]
+[wait charaCrossFade A]
+[wt 0.6]
+
+＠雏罂
+[tVoice ValVoice_304400 0_V040]
+综上所述。[wait tVoice]
+[k]
+
+＠雏罂
+[tVoice ValVoice_304400 0_V050]
+从容不迫的我在今天这个活动中[r]也有资格站在居高临下的立场参加。[wait tVoice]
+[k]
+
+[charaFace A 3]
+＠雏罂
+[tVoice ValVoice_304400 0_V060]
+毕竟在得到这幸福的过程中，[r]你的努力好像也不能算完全毫无关系？[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠雏罂
+[tVoice ValVoice_304400 0_V070]
+所以作为最起码的奖励，[r]我会送你这个。给。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[charaFace C 0]
+[charaFadein C 0.5 0,-70]
+[wt 2.0]
+
+
+？1：非……非常感谢！　但这形状……
+
+[charaFadeout C 0.4]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠雏罂
+[tVoice ValVoice_304400 0_V080]
+哈？　你难道有什么意见吗？[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠雏罂
+[tVoice ValVoice_304400 0_V090]
+这是将我现在感受到的幸福[r]化作实体的产物。[wait tVoice]
+[k]
+
+？2：给人一种结婚通知信函那类的感觉。
+
+[charaFadeout C 0.4]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠雏罂
+[tVoice ValVoice_304400 0_V100]
+结……结婚……咳咳。[r]你偶尔还是挺会挑选贴切措辞的嘛，后辈。[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠雏罂
+[tVoice ValVoice_304400 0_V110]
+没错，这是将我现在全身感受到的幸福[r]化作实体的产物。[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 1]
+＠雏罂
+[tVoice ValVoice_304400 0_V120]
+只要像这样以简单易懂的形式展现我们的情况，[r]自然就能赶走那些碍事的家伙了。[wait tVoice]
+[k]
+
+＠雏罂
+[tVoice ValVoice_304400 0_V130]
+是巧克力的话，还能顺便履行对你的义务。[r]正所谓一举两得吧？[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠雏罂
+[tVoice ValVoice_304400 0_V140]
+啊，当然是手工制作的。[r]你应该会感激涕零地吃下去吧。[wait tVoice]
+[k]
+
+
+？1：那，我开动了。
+？2：（该怎么吃呢……）
+？！
+
+[messageOff]
+[wt 1.2]
+
+？1：（打算咬重瞳那半边。）
+
+？2：（打算咬雏罂那半边。）
+[branch select01]
+？！
+
+[charaFace A 5]
+＠雏罂
+[tVoice ValVoice_304400 0_V150]
+哈？　就算只是画出来的，[r]你竟然打算一开始就损坏重瞳大人的身体？[wait tVoice]
+[k]
+
+＠雏罂
+[tVoice ValVoice_304400 0_V160]
+就算重瞳大人允许，我也不可能允许吧。[r]你那可是罪该万死的侮辱性吃法。[wait tVoice]
+[k]
+
+？1：那就从反方向吃起……
+？！
+
+[charaFace A 0]
+＠雏罂
+[tVoice ValVoice_304400 0_V170]
+当然不可以啦。[wait tVoice]
+[k]
+
+＠雏罂
+[tVoice ValVoice_304400 0_V180]
+怎么？　你是看不起我，觉得我反正会轰轰地炸碎，[r]所以啃一下不算什么吗？[wait tVoice]
+[k]
+
+[branch select_end]
+
+[label select01]
+
+[charaFace A 2]
+＠雏罂
+[tVoice ValVoice_304400 0_V190]
+啊，喂，你给我慢着！[wait tVoice]
+[k]
+
+[charaFace A 4]
+＠雏罂
+[tVoice ValVoice_304400 0_V200]
+难以置信，[r]你竟然打算从我的那边开始啃！[wait tVoice]
+[k]
+
+[charaFace A 5]
+＠雏罂
+[tVoice ValVoice_304400 0_V210]
+你对前辈就没有敬意吗！？[wait tVoice]
+[k]
+
+？1：那就从反方向吃起……
+？！
+
+[charaFace A 0]
+＠雏罂
+[tVoice ValVoice_304400 0_V220]
+竟敢先啃重瞳大人的身体，你什么意思？[r]怎么可能允许你做这种事嘛。[wait tVoice]
+[k]
+
+[label select_end]
+
+＠雏罂
+[tVoice ValVoice_304400 0_V230]
+应该说，我想起在吃的时候[r]最重要的绝对禁止事项了。[wait tVoice]
+[k]
+
+＠雏罂
+[tVoice ValVoice_304400 0_V240]
+从正中一分为二是最不能容忍的。[r]哪怕死也要严格遵守这点。[wait tVoice]
+[k]
+
+＠雏罂
+[tVoice ValVoice_304400 0_V250]
+虽然我不在意人类的宗教观或是命运观念，[r]但这也太不吉利了。[wait tVoice]
+[k]
+
+[charaFace A 4]
+＠雏罂
+[tVoice ValVoice_304400 0_V260]
+……你问我那该怎么吃？[twt 4.2][charaFace A 0][r]这个嘛。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFace A 1]
+＠雏罂
+[tVoice ValVoice_304400 0_V270]
+整个吞下去就行了吧。[wait tVoice]
+[k]
+
+[charaFace A 2]
+＠雏罂
+[tVoice ValVoice_304400 0_V280]
+做不到？　先试了再说。[r]来。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠雏罂
+[tVoice ValVoice_304400 0_V290]
+啊～，我是多么的温柔啊。[wait tVoice]
+[k]
+
+＠雏罂
+[tVoice ValVoice_304400 0_V300]
+可能是因为过于幸福，连性格都变得圆滑了吧。[r]竟然为区区义理巧克力提供这种服务。[wait tVoice]
+[k]
+
+[messageOff]
+[charaMove A 0,10 0.2]
+[charaMoveScale A 1.1 0.5]
+[wt 0.2]
+[se ad60]
+[charaMove A 0,7 0.3]
+[wt 0.3]
+[seStop ad60 0.1]
+[wt 0.4]
+
+[se ade498]
+[charaMove A 0,13 0.15]
+[charaMoveScale A 1.15 0.15]
+[wt 0.15]
+[charaMove A 0,10 0.15]
+[charaMoveScale A 1.1 0.15]
+[wt 0.3]
+
+[se ade498]
+[charaMove A 0,13 0.15]
+[charaMoveScale A 1.15 0.15]
+[wt 0.15]
+[charaMove A 0,10 0.15]
+[charaMoveScale A 1.1 0.15]
+[wt 0.5]
+
+
+[se ad217]
+[cameraMove 0.3 0,10 1.01]
+[wt 0.3]
+[cameraMove 0.3 0,0 1.01]
+[wt 0.3]
+[seStop ad217 0.1]
+[wt 0.6]
+
+？1：呼呼……
+？2：多谢，咳咳，款待……
+？！
+
+[messageOff]
+[charaMove A 0,7 0.3]
+[charaMoveScale A 1.0 0.5]
+[wt 0.3]
+[se ad60]
+[charaMove A 0,0 0.2]
+[wt 0.2]
+[seStop ad60 0.1]
+[wt 0.6]
+
+[charaFace A 1]
+＠雏罂
+[tVoice ValVoice_304400 0_V310]
+嗯，这样应该没问题了。[wait tVoice]
+[k]
+
+＠雏罂
+[tVoice ValVoice_304400 0_V320]
+今后也别忘了这种为守护我们的[r]安宁而流泪努力的方向性哦。[wait tVoice]
+[k]
+
+？1：话说，数量好多啊。
+？！
+
+[charaFace A 3]
+＠雏罂
+[tVoice ValVoice_304400 0_V330]
+因为一开始练习，手就停不下来了。[r]所以我试着做了各种不同的样式。[wait tVoice]
+[k]
+
+[charaFace A 4]
+＠雏罂
+[tVoice ValVoice_304400 0_V340]
+你那像是在问哪有什么样式？　的表情是什么意思啊。[wait tVoice]
+[k]
+
+[charaFace A 2]
+＠雏罂
+[tVoice ValVoice_304400 0_V350]
+仔细看清楚，这是微笑的重瞳大人！[r]这是睥睨敌人帅爆了的重瞳大人！[wait tVoice]
+[k]
+
+[charaFace A 5]
+＠雏罂
+[tVoice ValVoice_304400 0_V360]
+表情完全不一样吧！？　很好分辨吧！[wait tVoice]
+[k]
+
+？1：（完全分辨不出来……）
+？！
+
+[charaFace A 0]
+＠雏罂
+[tVoice ValVoice_304400 0_V370]
+受不了。[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_25 1.5]
+
+[charaFace A 4]
+＠雏罂
+[tVoice ValVoice_304400 0_V380]
+…………（哆嗦）。[wait tVoice]
+[k]
+
+[charaFace A 3]
+＠雏罂
+[tVoice ValVoice_304400 0_V390]
+话说，后辈。[wait tVoice]
+[k]
+
+[charaFace A 4]
+＠雏罂
+[tVoice ValVoice_304400 0_V400]
+这话说出来可能有点奇怪，最近，[r]我总觉得背后会传来一阵来路不明的凉意。[wait tVoice]
+[k]
+
+＠雏罂
+[tVoice ValVoice_304400 0_V410]
+自从制作了这个巧克力之后。[wait tVoice]
+[k]
+
+＠雏罂
+[tVoice ValVoice_304400 0_V420]
+就像是一直在被人注视……[r]或是被人纠缠的感觉……[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth A 6]
+[charaDepth B 4]
+
+[charaTalk B]
+[charaPut B -250,0]
+[charaFace B 0]
+[charaFadeTime B 0.7 0.6]
+[wt 1.4]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaFace B 10]
+＠谜之怨灵
+（呜呜呜。雏大人的手工巧克力……）
+[k]
+
+[charaFace B 8]
+＠谜之怨灵
+（[messageShake 0.04 2 2 0.5]好～想～要～啊～！）
+[k]
+
+[charaFace B 2]
+＠谜之怨灵
+（虽然形状有些那啥！　但是！）
+[k]
+
+[charaFace B 4]
+＠谜之怨灵
+（既然做了那么多，不知道……[r]　能不能拿一块呢……不行吗……）
+[k]
+
+[messageOff]
+[charaFace B 11]
+[wt 0.4]
+
+[charaMove B 250,0 1.2]
+[wt 1.2]
+[charaMoveReturn B 250,5 0.4]
+[wt 0.4]
+[charaMoveReturn B 250,5 0.4]
+[wt 0.8]
+
+[charaMove B -250,0 1.2]
+[wt 1.2]
+
+[charaMoveReturn B -250,5 0.4]
+[wt 0.4]
+[charaMoveReturn B -250,5 0.4]
+[wt 1.2]
+
+？1：……是被什么诅咒了吧？
+？2：我觉得不妨拿一块做供品。
+？！
+
+[charaFace A 0]
+＠雏罂
+[tVoice ValVoice_304400 0_V430]
+通常是由我诅咒人，[r]而不是我被诅咒啊。[wait tVoice]
+[k]
+
+＠雏罂
+[tVoice ValVoice_304400 0_V440]
+但总觉得现在你的眼神中[r]充满了真实感。[wait tVoice]
+[k]
+
+＠雏罂
+[tVoice ValVoice_304400 0_V450]
+而且我也不是很了解人类的解咒方法，[wait tVoice]
+[k]
+
+＠雏罂
+[tVoice ValVoice_304400 0_V460]
+如果你觉得有必要，我可以允许你使用一块。[r]千万别浪费了哦。[wait tVoice]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 2.0]
+[charaFace B 13]
+[wt 0.8]
+
+[charaFaceFade B 9 0.8]
+[wt 1.4]
+
+
+
+[charaTalk depthOn]
+[se ade158]
+[charaCrossFade A 1098196710 0 0.4]
+[wait charaCrossFade A]
+[wt 0.6]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠雏罂
+[tVoice ValVoice_304400 0_V470]
+那就这样。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad60]
+[seStop ad60 0.8]
+[charaMove A 50,0 0.4]
+[charaFadeout A 0.4]
+[wt 1.8]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 200,0]
+[charaMove A 150,0 0.4]
+[wt 0.1]
+[se ad60]
+[wt 0.4]
+[seStop ad60 0.1]
+[wt 0.5]
+
+＠雏罂
+[tVoice ValVoice_304400 0_V480]
+[line 3]啊啊，先叮嘱你一句。[r]虽然可能根本不用提醒。[charaFace B 0][wait tVoice]
+[k]
+
+＠雏罂
+[tVoice ValVoice_304400 0_V490]
+就算是什么诅咒，[r]也绝对不准掰开那些巧克力哦。[wait tVoice]
+[k]
+
+＠雏罂
+[tVoice ValVoice_304400 0_V500]
+记得在符咒上写个留言说清楚，[r]就算要死，也必须整个吞下去[line 3][wait tVoice]
+[k]
+
+
+
+[messageOff]
+[charaFace B 6]
+[wt 2.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

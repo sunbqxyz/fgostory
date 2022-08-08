@@ -1,0 +1,777 @@
+
+＄03-00-07-05-3-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 7006300 1 坂田金时]
+[charaSet B 6030000 1 段藏]
+[charaSet C 2040002 1 清子]
+[charaSet D 1098202400 1 藤原香子]
+[charaSet E 5011001 1 巴贝奇]
+[charaSet F 98006200 1 敌人1]
+[charaSet G 98006200 1 敌人2]
+
+[scene 104300]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[se ad1006]
+[wt 0.2]
+
+＠坂田金时
+嘿！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+
+[charaFace F 0]
+[charaFace G 0]
+[charaFadeinFSL F 0.1 0]
+[charaFadeinFSR G 0.1 2]
+[wt 0.1]
+
+[se ad1010]
+[wt 0.2]
+[effect bit_talk_gold_slash_01]
+[wt 0.2]
+[charaShake F 0.05 3 3 0.7]
+[charaShake G 0.05 3 3 0.7]
+[wt 0.9]
+
+[se ad42]
+[charaSpecialEffect F enemyErasure 1 1.5]
+[charaSpecialEffect G enemyErasure 1 1.5]
+[wait charaSpecialEffect F]
+[wait charaSpecialEffect G]
+
+[bgmStop BGM_EVENT_80 1.5]
+[wt 1.5]
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 5]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect B appearance 1 0.25]
+[wt 0.4]
+
+＠段藏
+确认敌对反应全部消灭。[r]战斗结束！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[charaMove C 0,-20 0.4]
+[se ad999]
+[seStop ad999 0.6]
+[wt 0.4]
+
+＠清子
+哎呀。
+[k]
+
+＠清子
+啊痛痛痛……
+[k]
+
+？1：（伸出手。）
+
+？！
+
+[charaFace C 1]
+
+＠清子
+嗯，谢啦。
+[k]
+
+[messageOff]
+[charaMove C 0,0 0.6]
+[charaShake C 0.1 2 2 0.6]
+[se ad77]
+[seStop ad77 0.6]
+[wt 0.6]
+
+＠清子
+……[r]……
+[k]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFace C 6]
+
+＠清子
+啊～，输了吗。[r]果然不该去做这种不习惯的事呢。
+[k]
+
+＠清子
+收下的护符也破了，没有后手啦。[r]这下我该怎么办呀。
+[k]
+
+？1：清子小姐[line 3]
+
+？！
+
+[messageOff]
+[charaFace C 1]
+[wt 1.0]
+
+[charaFace C 0]
+
+＠清子
+…………你读过那部物语吗？
+[k]
+
+[charaFace C 7]
+＠清子
+人家可是非常喜欢哦。[r]虽说唯独对光之君怎么都提不起兴趣来。
+[k]
+
+[charaFace C 16]
+＠清子
+那几段光辉灿烂的恋情，[r]时明时暗，时而活泼时而文静。
+[k]
+
+＠清子
+总觉得……那些呀……
+[k]
+
+[charaFace C 9]
+
+＠清子
+看起来闪闪发光，[r]每次阅读时都会兴奋激动，根本克制不住。
+[k]
+
+[charaFace C 1]
+
+＠清子
+既然都喜欢上了，[r]自然[#希望能读到最后]呀。
+[k]
+
+[charaFace C 4]
+
+＠清子
+所以说[line 3]
+[k]
+
+？1：我们真的不会加害香子小姐啦。
+
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+？1：对吧，金时！
+
+？！
+
+＠坂田金时
+唔？
+[k]
+
+＠坂田金时
+这不当然嘛，妇孺理应守护。[r]就算搞错了什么也不是战斗的对象啦！
+[k]
+
+＠坂田金时
+刚才我不也没碰你半根毫毛吗。[r]所以放心啦，清子小姐。
+[k]
+
+＠坂田金时
+我说过了吧？[r]我啊……
+[k]
+
+[messageOff]
+[charaFace A 1]
+[wt 1.0]
+
+＠坂田金时
+不是来挥这把阔斧的，[r]而是来谈话的！
+[k]
+
+[charaFace A 0]
+
+＠坂田金时
+不会变成你担心的那种事态啦。[r][line 3]更正，是我不会让那种事发生！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[wt 1.5]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 1.0]
+
+[se ad1002]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.5]
+[seStop ad1002 0.5]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠藤原香子
+我也……[bgm BGM_EVENT_11 0.1]
+[k]
+
+＠藤原香子
+我也想做梦。[r]像您那样。
+[k]
+
+＠藤原香子
+这钢铁。[r]这铠甲。
+[k]
+
+＠藤原香子
+若能抵达那厚重外壳的另一侧，我也……[r]能亲眼目睹您的世界吗？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[se ad67]
+[seStop ad67 1.5]
+[wt 1.0]
+
+＠巴贝奇
+可笑。[r]不，请别开玩笑了，御主。
+[k]
+
+＠巴贝奇
+你该做自己的梦。[r]吾之梦境残渣、吾之念想的尽头，只属于吾自己。
+[k]
+
+＠巴贝奇
+那对你毫无意义。[r]说到底，讲述故事这种行为……
+[k]
+
+＠巴贝奇
+其实酷似踏上梦想的旅途，苦苦寻求[r]诗圣的灵感巅峰，不断编织自己的世界。
+[k]
+
+＠巴贝奇
+你已拥有你的梦想了。[r]御主香子。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠藤原香子
+为何您能如此断言呢，叔父大人。[r]查尔斯·巴贝奇。
+[k]
+
+＠藤原香子
+您这位人物，应该……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠巴贝奇
+吾确实并非诗圣。[r]然而[line 3]
+[k]
+
+[charaFace E 1]
+
+＠巴贝奇
+吾之友人中有许多诗圣。[r]因此吾时常听闻诗圣们的话。
+[k]
+
+＠巴贝奇
+吾知晓。[r]知晓讲述故事之人的众多欢愉与哀伤。
+[k]
+
+＠巴贝奇
+吾知晓。[r]知晓你发自内心的愿望为何。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠藤原香子
+……[r]……
+[k]
+
+[charaFace D 0]
+
+＠藤原香子
+嗯……[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 1.2]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠巴贝奇
+………………好了。
+[k]
+
+＠巴贝奇
+各位要偷看吾等到何时呢。[r]何不快快现身，壮勇的年轻人啊。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.1]
+[se ad984]
+[wt 0.3]
+
+＠坂田金时
+被你看出来了吗。[bgm BGM_EVENT_124 0.1]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠段藏
+抱歉在两位相谈甚欢时前来叨扰。[r]看来您就是英灵，查尔斯·巴贝奇阁下吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠藤原香子
+啊……！[r]你们……
+[k]
+
+[messageOff]
+[charaFace D 2]
+[wt 0.7]
+
+＠藤原香子
+难道是跟踪我……！？[r]非常抱歉，叔父大人，我……！
+[k]
+
+？1：香子小姐，对不起了。
+？2：我们跟踪了你。
+
+？！
+
+[messageOff]
+[charaFace D 4]
+[wt 1.2]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-20]
+[charaMove E 0,0 0.4]
+[se ad1003]
+[seStop ad1003 0.6]
+[wt 0.4]
+
+＠巴贝奇
+年轻人。[r]你们知晓吾之真名吗。
+[k]
+
+＠巴贝奇
+既然如此，自无需多费口舌。[r]你我理应都是与天览圣杯战争有缘之人吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+噢。不过可不要贸然判断哦。[r]毕竟我来此是为了与你们谈谈。
+[k]
+
+＠坂田金时
+天览圣杯战争乃是邪恶！[r]至少存在这种嫌疑！
+[k]
+
+[bgmStop BGM_EVENT_124 1.5]
+
+＠坂田金时
+我可不想被邪魔外道玩弄于股掌之中！[r]如何，是否愿意与我一同[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.4]
+
+[se ad171]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[charaMoveScale E 1.1 0.1]
+[charaMove E 0,20 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaScale E 1.0]
+[blurOff motion 0.2]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[se ad881]
+[se ad618]
+[charaShake A 0.05 3 3 0.5]
+[charaEffect A bit_talk_14]
+[wt 1.0]
+
+[charaFace A 0]
+
+＠坂田金时
+嘿嘿！[bgm BGM_EVENT_24 0.1]
+[k]
+
+＠坂田金时
+好重！[r]这锤好重啊！
+[k]
+
+＠坂田金时
+看来这次是真家伙了吧，货真价实的钢铁怪物！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠巴贝奇
+[f large]此乃杖！
+[k]
+
+[messageOff]
+[charaFace E 2]
+[se ad67]
+[seStop ad67 1.5]
+[wt 1.5]
+
+？1：巴贝奇！
+？2：希望你能听我们解释。
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠段藏
+正是。您为何要如此焦急呢！[r]巴贝奇阁下！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠巴贝奇
+…………无需多言。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+看来是个顽固老爹啊。
+[k]
+
+[charaFace A 2]
+
+＠坂田金时
+你们应该能听到我们说的话吧？[r]钢铁老爷和香子小姐啊！
+[k]
+
+＠坂田金时
+我们怀疑天览圣杯战争乃是邪恶！[r]很有可能是某个不得了的邪魔外道所设的陷阱！
+[k]
+
+＠坂田金时
+你们可不能被这种阴谋牵扯其中啊！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠藤原香子
+我……我……[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠巴贝奇
+香子。别听他们的说辞。
+[k]
+
+[charaFace E 2]
+
+＠巴贝奇
+召唤此身之物毋庸置疑是圣杯的力量！[r]因此吾要化作钢铁，为御主的愿望倾尽全力！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+真是个不可理喻的大叔啊！[r]愿望能否实现都是个未知数啊！
+[k]
+
+＠坂田金时
+难道你要为那种不可靠的[#圣杯:东西]赌上性命吗！[r]钢铁老爷啊！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[se ad67]
+
+＠巴贝奇
+[f large]吾说了无需多言！
+[k]
+
+[seStop ad67 0.2]
+[charaFace E 5]
+
+＠巴贝奇
+人类乃虚渺之物。[r]生命乃脆弱之物。
+[k]
+
+＠巴贝奇
+因此哪怕只有些微可能性，也不可不去希求。[r]若想实现自己的愿望，就必须燃尽一切。
+[k]
+
+[charaFace E 2]
+[se ad67]
+＠巴贝奇
+[f large]若连这都不懂，还是退下吧！
+[k]
+
+[seStop ad67 0.2]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+[f large]我才不要！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth A 2]
+[charaFace E 0]
+[charaFadeinFSL E 0.1 0]
+[charaFace A 2]
+[se ad998]
+[wt 0.3]
+[charaFadeinFSR A 0.1 300,0]
+[charaMoveFSR A 100,0 0.2]
+[wt 0.2]
+[seStop ad998 0.1]
+
+
+[effect bit_talk_14 -10,50]
+[charaFace A 8]
+[charaShake A 0.05 3 3 0.2]
+[charaMoveFSR A 110,0 0.2]
+[se ad1013]
+[wt 0.2]
+[effect bit_talk_14 10,-50]
+[charaShake A 0.05 3 3 0.2]
+[charaMoveFSR A 120,0 0.2]
+[se ad1014]
+[wt 0.4]
+
+[se ad7]
+[charaMoveFSR A 160,0 0.2]
+[charaFadeout A 0.2]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.2 -50,0]
+[se ad671]
+[charaMove A 1 0.2]
+[wt 0.2]
+[seStop ad671 0.5]
+[wt 0.5]
+
+？1：金时！
+
+？！
+
+[charaFace A 2]
+
+＠坂田金时
+我知道！[r]只是要先让他的头脑冷静一下而已！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[se ad67]
+[wt 1.3]
+[se ad1003]
+[seStop ad1003 0.5]
+[wt 0.5]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+[line 3]小心，要来了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠巴贝奇
+蒸汽压提升。[r]蒸汽压提升。
+[k]
+
+[charaFaceFade E 2 0.2]
+
+＠巴贝奇
+战斗机能[line 3]第二阶段解放！！
+[k]
+
+[messageOff]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[fowardEffect bit_talk_41_fs]
+[se ad171]
+[charaMoveScale E 1.1 0.1]
+[charaMove E 0,10 0.1]
+[wt 0.3]
+
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

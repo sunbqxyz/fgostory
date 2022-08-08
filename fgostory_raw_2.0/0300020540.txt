@@ -1,0 +1,362 @@
+
+
+＄03-00-02-05-4-0
+[soundStopAll]
+
+
+[charaSet A 8001400 1 玛修]
+[charaSet B 1098153200 1 御使]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 1098153600 1 格尔达]
+[charaSet E 1098153900 1 少年]
+[charaSet F 1098154100 1 少女]
+[charaSet H 5009000 1 特效用dummy]
+
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[wt 0.7]
+
+[effect bit_talk_kengekiall01]
+[wt 0.1]
+[se ad32]
+[fowardEffect bit_talk_14]
+[wt 0.4]
+[se ad32]
+[wt 0.1]
+[fowardEffect bit_talk_14]
+[se ad32]
+
+[wt 1.0]
+
+[wipeout leftToRight 0.1 1]
+[wait wipe]
+
+[scene 61800]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 -25,0]
+
+[wipein rightToLeft 0.3 1]
+[se ad671]
+[wt 0.1]
+[charaMove A 1 0.2]
+[wait wipe]
+
+[wt 0.3]
+[seStop ad671 0.3]
+[wt 1.0]
+
+[charaFace A 2]
+
+＠玛修
+[line 6]！
+[k]
+
+
+[messageOff]
+
+[se ad688]
+
+[charaFace A 2]
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,20 0.2]
+
+[charaPut H 1]
+[charaScale H 1.1]
+
+[charaEffect H bit_talk_41]
+
+[charaPut H -30,90]
+[shake 0.05 2 4 0.5]
+
+[wt 0.2]
+
+[charaPut H 1200,1200]
+[charaFadeout A 0.4]
+[wt 0.2]
+[charaEffectStop H bit_talk_41]
+
+[wt 0.3]
+
+[charaScale H 1.0]
+[charaScale A 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[charaShake B 0.05 5 2 1.0]
+[fowardEffect bit_talk_13]
+[flashin once 0.2 0.2 FFFFFF80 FFFFFF80]
+[effect bit_talk_14]
+[se ad687]
+[wt 0.2]
+[cueSeStop bac54 0.3]
+
+[wt 1.0]
+
+＠御使
+……………………………………人，把，御使给。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+我虽是人类，但过去也是拥有英灵力量的亚从者。
+[k]
+
+＠玛修
+将力量借给我的英雄，[r]拥有泛人类史中的你们会真心渴求的灵魂。
+[k]
+
+＠玛修
+依你的习性，肯定不能无视[r]曾在我体内的英雄残渣。因此[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaPut H 0,-70]
+[charaEffect H bit_talk_06_blue]
+
+[wt 0.7]
+
+＠御使
+勇士的，灵魂……
+[k]
+
+＠御使
+………………自从被[#量产]以来，两千又数百年……[r]始终……未得……一见……
+[k]
+
+[messageOff]
+[charaSpecialEffect B enemyErasure 1 2.0]
+[wt 0.3]
+[cueSe Battle ba5]
+[wt 2.0]
+[charaEffectStop H bit_talk_06_blue]
+[cueSeStop ba5 0.3]
+
+[wt 1.0]
+
+[charaSet G 1098153700 1 村里的大人_男]
+[charaSet H 1098153800 1 村里的大人_女]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+[line 3]确认对象消灭。[bgm BGM_EVENT_81 0.1][r][#灵基外骨骼:奥特瑙斯]输出衰减率，在误差范围内。还能继续战斗！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠芙芙
+芙。芙呜嘎呜！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠玛修
+她并不是从者呢。[r]尽管有魔力反应……
+[k]
+
+[charaFace A 14]
+
+＠玛修
+并不是被召唤出来的存在！[r]也就是说，在2019年现在的北欧[#异闻带:Lostbelt]……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠格尔达
+御使……[r]有很多哦……
+[k]
+
+[charaFace D 3]
+
+＠格尔达
+有很多，很多哦！
+[k]
+
+＠格尔达
+为……为什么要这么做啊，玛修大人！[r]御使之间居然相互争斗！
+[k]
+
+[charaFace D 2]
+
+＠格尔达
+这样肯定会[line 3]触怒神明的[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0]
+[charaFace F 2]
+[charaFadein F 0.1 2]
+
+＠E：孩子们
+御使消失了……[r]怎么会发生这种事……？
+[k]
+
+＠F：孩子们
+哎，哎？[r]选定之日要怎么办呀？　喂？
+[k]
+
+＠E：孩子们
+奇怪，奇怪！　这太奇怪了！[r]我们都献上花束了，御使却不打开大门。
+[k]
+
+＠F：孩子们
+我们不可以自己开门吧？[r]昨天格尔达的情况和选定之日不一样吧？
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 0]
+[charaFace H 0]
+[charaFadein H 0.1 2]
+
+＠G：大人们
+啊，啊啊……怎么会这样……！[r]引导我们前往瓦尔哈拉的御使消失了！
+[k]
+
+[charaFace H 1]
+
+＠H：大人们
+不要紧啦！　御使是神明大人的仆从嘛，[r]就算消失了也会有其他御使过来，你们看[line 3]
+[k]
+
+＠H：大人们
+天空中有光[line 3]
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_80]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaMoveReturn C 0,30 0.25]
+
+＠芙芙
+芙，芙芙芙呜！[r]嘎呜！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+上空出现许多新的魔力反应！[r]……连续战斗，外骨骼的输出还撑得住！
+[k]
+
+[messageOff]
+[charaFace A 7]
+[cueSe Battle bac170]
+[wt 1.0]
+
+＠玛修
+[#软银替身:Amalgam Goad]，没有问题。[r]如果只是战斗，应该还能应付。
+[k]
+
+[charaFace A 0]
+
+＠玛修
+看来御使是将村落的人们……[r]当作庇护对象。
+[k]
+
+＠玛修
+刚才的一骑似乎一直注意不让攻击的余波波及人们。
+[k]
+
+＠玛修
+恐怕这次村落遭波及的可能性也很低……[line 3]
+[k]
+
+＠玛修
+……[r]……
+[k]
+
+[charaFace A 8]
+
+＠玛修
+…………不，最重要的是，十分抱歉。
+[k]
+
+＠玛修
+我的行动太欠缺考虑了……
+[k]
+
+？1：没关系，我的心情也一样。
+？2：就算玛修不站出来，我也会出面哦。
+
+？！
+
+[charaFace A 13]
+
+＠玛修
+非常感谢。[wt 0.5][charaFace A 2][r][line 3]来自上空的复数魔力反应急速接近。来了！
+[k]
+
+＠玛修
+[#灵基外骨骼:奥特瑙斯]维持输出开始战斗！[r]拜托您指挥和支援了，御主！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

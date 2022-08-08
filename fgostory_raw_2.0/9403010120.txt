@@ -1,0 +1,209 @@
+
+
+＄94-03-01-01-2-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 3034001 1 茨木童子]
+[charaSet B 6029001 1 Assassin Paraiso]
+[charaSet C 99502600 1 玛修]
+[charaSet F 98115000 1 特效用]
+[charaSet G 98115000 1 特效用2]
+[charaSet H 98115000 1 通讯用]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 64600]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.5]
+[se adm15]
+[effect bit_talk_v_slash02]
+[wt 0.3]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se bac80]
+[se ad267]
+[charaPut F -200,-50]
+[charaEffect F bit_talk_32]
+[wt 0.3]
+[se bac80]
+[se ad267]
+[charaPut G 200,-50]
+[charaEffect G bit_talk_32]
+
+[wt 1.0]
+
+[charaEffectStop F bit_talk_32]
+[wt 0.3]
+[charaEffectStop G bit_talk_32]
+[wt 0.5]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.5]
+[se adm14]
+[charaMoveReturn B 10,0 0.2]
+[wt 0.2]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se bac141]
+[charaPut F 0,50]
+[charaEffect F bit_talk_14]
+[wt 0.2]
+[se bac141]
+[charaPut F -100,0]
+[charaEffect F bit_talk_14]
+[wt 0.4]
+[se bac142]
+[charaPut F 100,-30]
+[charaEffect F bit_talk_14]
+[wt 1.0]
+
+
+[cueSe Battle bac234]
+[shake 0.05 0 5 0.5]
+[effect bit_talk_impactlanding]
+[bgmStop BGM_EVENT_3 1.0]
+[wt 2.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：[servantName 602900:Assassin Paraiso:望月千代女]
+…………主公，大型鬼已经解决了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+哼哼！　太不给力了！[r]汝等这种根本不是被称作鬼将的吾之敌手！
+[k]
+
+＠茨木童子
+就算再带几个大人物过来也改变不了这个事实，改变不了！[r]胆敢冒充鬼的无耻之徒就由吾来……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.0]
+[charaTalk B]
+[se ad57]
+[shake 0.05 0 3 0.3]
+[wt 1.5]
+[shake 0.05 0 3 0.3]
+[wt 1.0]
+[seStop ad57 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+唔。这脚步声是……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad57]
+[shake 0.05 0 3 0.3]
+[wt 1.0]
+[seStop ad57]
+[wt 0.5]
+[se ad17]
+[wt 2.0]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠玛修
+复数大型反应接近！[r]应该是在刚才战斗的最后出现的战斗特化型，
+[k]
+
+＠玛修
+或是其亚种个体的集合！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+有意思！　新敌人陆续杀过来了啊！[r]似乎都是些身材巨大的大人物，这种家伙[line 3]
+[k]
+
+？1：不要随便挑衅人家啦！
+
+[charaFace A 5]
+
+＠茨木童子
+唔？　有什么问题吗？
+[k]
+
+？2：总之先挺过这个难关！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠B：[servantName 602900:Assassin Paraiso:望月千代女]
+明白了！[r]童子阁下！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+？！
+
+[charaFace A 1]
+
+＠茨木童子
+愚蠢的傀儡无论来多少个都一样。[r]呵呵，呵哈哈哈哈！　不过是再大闹一场罢了！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

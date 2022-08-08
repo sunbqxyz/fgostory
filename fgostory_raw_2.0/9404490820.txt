@@ -1,0 +1,1187 @@
+
+
+＄94-04-49-08-2-0
+
+[soundStopAll]
+
+[skip false]
+
+[branchQuestNotClear lblNotClear1 3000320 4]
+[label lblClear1]
+[flag IsGirl true]
+[branch lblIsClearConf1]
+[label lblNotClear1]
+[flag IsGirl false]
+[label lblIsClearConf1]
+
+[skip true]
+
+[charaSet A 6008000 1 Cosmotic Beauty夫人]
+[charaSet B 7034001 1 莎乐美]
+[charaSet C 99502600 1 玛修]
+[charaSet D 7027300 1 Amazones CEO_普通]
+[charaSet E 1098119600 1 Amazones CEO_轱辘]
+[charaSet F 98002000 1 芙芙]
+[imageSet H cut147_head 1]
+[charaSet I 6031001 1 刑部姬]
+[charaSet J 5009000 1 特效用]
+
+[branch lblNotGirl1 IsGirl false]
+[label lblGirl1]
+[charaSet G 1098124510 1 达·芬奇]
+[branch lblIsGirlConf1]
+[label lblNotGirl1]
+[charaSet G 98111500 1 达·芬奇]
+[label lblIsGirlConf1]
+
+[scene 90000]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Cosmotic Beauty夫人
+说实话，妾身觉得这个骷髅的BT点还挺高的。
+[k]
+
+＠Cosmotic Beauty夫人
+毕竟骷髅花纹是摇滚时尚必不可少的要素。[r]和妾身现在的服饰也很搭。
+[k]
+
+＠Cosmotic Beauty夫人
+但需要注意的是，一旦使用过度就会显得低俗。[r]你如果还想要更多头颅，就有些过头了。
+[k]
+
+[charaFace A 2]
+
+＠Cosmotic Beauty夫人
+好好看看妾身的穿搭，认真研究吧！
+[k]
+
+[bgmStop BGM_EVENT_24 1.0]
+
+[messageOff]
+[se adm19]
+[fowardEffect bit_talk_valentine_brilliant]
+[charaPut J 1]
+[charaEffect J bit_talk_radiallight01]
+
+[wt 2.0]
+
+[seStop adm19 0.7]
+[fowardEffectStop bit_talk_valentine_brilliant]
+[wt 0.6]
+[charaPut J 1200,1200]
+[charaEffectDestroy J]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 1.2]
+[charaMove B 0,-60 1.0]
+[wt 0.4]
+[charaFadeout B 0.4]
+[wt 0.6]
+[se ad775]
+
+[charaEffect J bit_talk_10_LowLevel]
+
+[wt 1.2]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Cosmotic Beauty夫人
+呵呵呵呵！　胜负已定！[r]华丽，无比华丽！
+[k]
+
+？1：虽说这位CEO像是在进行时尚对决，
+？2：但好歹算是赢了……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠莎乐美
+约翰的头颅……为什么……？[r]我点的明明是这个啊……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠玛修
+看来她已经没有攻击的意思了，[r]只是情绪显得十分低落呢。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgmStop BGM_EVENT_2 1.2]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+对不起……Amazones.com也有……[r]无法配送的东西……
+[k]
+
+[messageOff]
+[wt 0.7]
+[charaFace D 12]
+
+[bgm BGM_EVENT_49 0.1]
+
+＠D：Amazones CEO
+[line 3]不！
+[k]
+
+＠D：Amazones CEO
+不能放弃，CEO，你怎么能不相信公司的力量呢！[r]Amazones.com拥有无限的可能性！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth E 2]
+
+[charaTalk E]
+[charaFace B 4]
+[charaFadein B 0.1 0]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+
+＠E：Amazones CEO
+不好意思，这位客人，请看一眼这平板电脑。[r]请问您愿不愿意换成这个商品……？
+[k]
+
+[charaFace B 1]
+
+＠莎乐美
+哎呀！　约翰的头！　我想要这个！
+[k]
+
+？1：真的有吗！？
+？！
+
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaShake F 0.07 3 1 0.6]
+
+＠芙芙
+芙！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 21]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+这个商品我们当然能配送。[r]请稍等片刻。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠莎乐美
+嗯嗯，我会等？　拜托了哦。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+＠Cosmotic Beauty夫人
+你的商品里应该不会有真的人头吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+我只是建议她更换成尽可能相似的商品。[r]就是这个。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[se ad807]
+[seVolume ad807 0 0.6]
+[wt 0.5]
+[seStop ad807 0.15]
+[wt 0.6]
+[charaFace H 0]
+[charaFadein H 0.5 0,-200]
+[wt 3.2]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[branch lblNotGirl2 IsGirl false]
+[label lblGirl2]
+[charaFace G 31]
+[charaFadein G 0.1 1]
+[branch lblIsGirlConf2]
+[label lblNotGirl2]
+[charaFace G 3]
+[charaFadein G 0.1 0,-90]
+[label lblIsGirlConf2]
+
+＠达·芬奇
+是练习理发用的模型头吧。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+为用户提出灵活变通的提案才是CEO应有的实力。[r]我很高兴能让客户感到满意。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠玛修
+这结果好像能接受，但好像又不能……[r]不，只要对方满意就好。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgmStop BGM_EVENT_49 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+更重要的是[line 3]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[cameraMove 0.7 0,-10 1.3]
+[wt 1.0]
+[cameraMove 1.5 0,-75 1.3]
+[wt 3.0]
+
+[cameraHome 0.5]
+[wt 0.6]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+果然是女神阿耳忒弥斯神像啊。[r]正如我的推测……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠玛修
+有没有找到什么黑幕的线索呢？
+[k]
+
+[charaFace C 12]
+
+＠玛修
+最终莎乐美小姐只是受到了唆使，[r]但她好像并不记得对象是谁。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+……不。现在还不好说。
+[k]
+
+[charaFace D 11]
+
+＠D：Amazones CEO
+总之，我让那个搬运魔偶把替代用商品送来，[r]我们抓紧时间继续前进吧。
+[k]
+
+[charaFace D 12]
+
+＠D：Amazones CEO
+上面还有更多的客人在等着我们。[r]继续攀登！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Cosmotic Beauty夫人
+至于你和那只小动物，[r]还是像此前一样，由我们来辅助爬塔。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+
+＠刑部姬
+嗯嗯，没有办法，[r][#公主:我]会让御亲坐上折纸。
+[k]
+
+？1：给你添麻烦了……
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠芙芙
+芙芙芙呜。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠玛修
+请一定要绑紧安全带啊，各位……
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+[charaFadeout C 0.1]
+[charaPut J 1200,1200]
+[charaEffectDestroy J]
+[scene 90100]
+[wt 1.5]
+[charaSet A 7005001 1 斯巴达克斯]
+[charaSet B 2030002 1 喀戎]
+[charaSet C 2005001 1 阿塔兰忒]
+[charaSet D 5007001 1 莎士比亚]
+[charaSet E 4029001 1 阿喀琉斯]
+[charaSet F 5036001 1 阿维斯布隆]
+[charaSet G 6032000 1 塞弥拉弥斯]
+[charaSet H 9002001 1 天草四郎]
+[charaSet I 4004001 1 阿斯托尔福]
+[fadein black 2.0]
+[wait fade]
+
+[wt 1.2]
+
+＠
+[align center]～　与此同时　～[align]
+[k]
+
+[messageOff]
+[scene 89703 1.4]
+[wt 3.0]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk I]
+[charaFace A 0]
+[charaFadein A 0.4 0]
+[charaFace I 4]
+[charaFadein I 0.4 2]
+[wt 0.5]
+
+＠阿斯托尔福
+喂～喂～，斯巴达克斯～。[r]这里好歹是休息室哦～。
+[k]
+
+＠阿斯托尔福
+你不打算休息吗？
+[k]
+
+＠斯巴达克斯
+休息是压迫者应该的事。[r]而我则是忍受痛苦之人！
+[k]
+
+[charaFace I 5]
+
+＠阿斯托尔福
+不，不是啦，虽说从某个角度来说这话是没错啦！[r]但战士也是需要休息的吧！
+[k]
+
+[charaFace A 2]
+
+＠斯巴达克斯
+噢噢，虐待民众之人啊！[r]见识我用肌肉发起的叛逆吧！
+[k]
+
+[charaFace A 1]
+
+＠斯巴达克斯
+只要一直忍耐，一直锻炼，[r]肌肉酸痛也无妨！　呼哈哈哈哈！
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[se ad57]
+[seVolume ad57 0 0.4]
+[wt 0.4]
+[seStop ad57 0.1]
+[wt 0.5]
+[se ad57]
+[seVolume ad57 0 0.3]
+[wt 0.4]
+[seStop ad57 0.1]
+
+[charaFace I 0]
+
+＠阿斯托尔福
+……结果还是在忍耐啊。[r]下次我去为他捶捶肩膀吧……
+[k]
+
+
+＠阿斯托尔福
+啊，对了。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠阿斯托尔福
+喂～喂～喂～喂～，我有个问题，[r]可以提吗？
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.5]
+
+＠喀戎
+嗯嗯，是什么啊？[r]只要是我能够回答的。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0]
+[charaFace B 0]
+[charaFadein B 0.1 2]
+
+＠阿斯托尔福
+但我觉得很少有你答不上来的问题呢……[r]算了，这个先暂且不谈。
+[k]
+
+＠阿斯托尔福
+我是骑着骏鹰咻～地飞行，[r]而喀戎则是靠马腿奔跑吧？
+[k]
+
+＠阿斯托尔福
+这样会多么……唔，[r]就是这样会多累呢？
+[k]
+
+＠阿斯托尔福
+是不是没有我们奔跑那么累呢？
+[k]
+
+[charaFace B 3]
+
+＠喀戎
+呵呵，这个就不好说了呀。[r]严格来说，
+[k]
+
+[charaFace B 0]
+
+＠喀戎
+我是无法理解你们这种[r]『只能用双腿步行之人』的感觉的。
+[k]
+
+＠喀戎
+当我用双腿奔跑时，[r]本质上和用人马的脚一样。
+[k]
+
+＠喀戎
+在奔跑方面我确实拥有优势，
+[k]
+
+＠喀戎
+但我并不知道这是普通人和马拉松选手程度的差异，[r]还是徒步与汽车程度的差异，
+[k]
+
+＠喀戎
+就是这么一回事。
+[k]
+
+[charaFace I 4]
+
+＠阿斯托尔福
+唔……？
+[k]
+
+＠喀戎
+还没有切实的感受吗？[r]你对这方面有什么看法呢？
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.5]
+
+＠阿塔兰忒
+不清楚。
+[k]
+
+＠阿塔兰忒
+要我说的话，无论多擅长跑步，[r]跑得越久还是会越疲惫。（咀嚼咀嚼。）
+[k]
+
+＠阿塔兰忒
+不过这有利于身心健康，而且还令人心情舒畅。
+[k]
+
+[charaFace C 1]
+
+＠阿塔兰忒
+你要不要将骏鹰还给布拉达曼特，[r]偶尔也尝试用自己的双腿配送呢？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+＠阿斯托尔福
+讨厌啦不行啦～！　这样会很累的啦！
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 1]
+[wt 0.5]
+
+＠莎士比亚
+哈哈哈！[r]骑士没有坐骑果然不够威严呢。
+[k]
+
+[charaFace D 3]
+
+＠莎士比亚
+查理曼十二圣骑士之一气喘吁吁地徒步到达战场……
+[k]
+
+[charaFace D 0]
+
+＠莎士比亚
+啊，慢着。[r]阿斯托尔福阁下的话，这或许也可以？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠阿斯托尔福
+不可以啦！！[r]我的角色定位一直是帅气而可爱的！
+[k]
+
+[charaFace I 5]
+
+＠阿斯托尔福
+比起这个，莎士比亚。[r]你不去配送吗。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠莎士比亚
+吾辈是办事员嘛。[r]这对文学系从者来说也算适材适所。
+[k]
+
+[charaFace D 3]
+
+＠莎士比亚
+吾辈可没有偷懒哦，还请各位理解。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠阿斯托尔福
+好了，说起不去配送的人……
+[k]
+
+[charaFace I 5]
+
+＠阿斯托尔福
+你在这里真的好吗？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠阿喀琉斯
+啊唔啊唔。这个真好吃……[r]啊？　吃饭时间应该不要紧吧。
+[k]
+
+＠阿喀琉斯
+我拜托那个小小的雀老板娘帮忙看着了。[r]一旦发现我必须逃避对象的气息，我就会当即逃跑。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠喀戎
+呵呵，可以说你的任务就是[r]该如何拼命维持迦勒底的和平呢。
+[k]
+
+[charaFace B 0]
+
+＠喀戎
+假如你无法完成，[r]我们也就没有余力去配送了。
+[k]
+
+＠喀戎
+无论是产生正面效果，还是回避负面效果，[r]都同为工作。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠阿喀琉斯
+这个嘛……如果从好的方面去解释，[r]确实是这样没错啦。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.5]
+
+＠阿维斯布隆
+这也是一种适材适所吧。
+[k]
+
+＠阿维斯布隆
+阿斯托尔福，[r]我认为他并非单纯来这里吃饭。
+[k]
+
+＠阿维斯布隆
+当大家都在努力工作的情况下，[r]独自一人躲在房里未免会感到过意不去，
+[k]
+
+＠阿维斯布隆
+所以我推测他来这里的真正目的，[r]是来看望熟人并为他们加油哦。
+[k]
+
+＠阿维斯布隆
+因为他没有参与配送，[r]也不会[#有多大的魔力消耗:肚子饿]，
+[k]
+
+＠阿维斯布隆
+完全不需要特地来这里，[r]只需让我们帮他拿一些食物过去就可以了。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠阿喀琉斯
+喂…………
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠阿斯托尔福
+哎～，是这样吗？[r]特地来为我加油？
+[k]
+
+[charaFace I 3]
+
+＠阿斯托尔福
+哎嘿嘿～，你居然是个如此为同伴着想的人呀。
+[k]
+
+[charaFace I 1]
+
+＠阿斯托尔福
+没关系，你不用感到抱歉哦！[r]我会连你的那份加倍努力工作！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠阿喀琉斯
+不是啦，我可没说我是来为你加油的啊！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠阿维斯布隆
+啊，我的特制魔偶也会连同你那份一起做掉哦。[r]所以不用在意，你去做你该做的就行了。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠阿喀琉斯
+…………
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.4 1]
+[wt 0.5]
+
+＠塞弥拉弥斯
+怎么了，怎么了。
+[k]
+
+＠塞弥拉弥斯
+似曾熟悉又陌生的一群人居然凑在一起说傻话。
+[k]
+
+[charaFace G 11]
+
+＠塞弥拉弥斯
+和走到哪里都有人邀请的我不一样，[r]你们看来都很闲呢。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠阿斯托尔福
+塞弥拉弥斯！[r]你居然会认真工作吗！？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠塞弥拉弥斯
+哼。为民众运货可不是女帝该做的事，[r]但毕竟是御主的拜托。
+[k]
+
+[charaFace G 5]
+
+＠塞弥拉弥斯
+我可不愿意被人认为我做不到。
+[k]
+
+[charaFace G 0]
+
+＠塞弥拉弥斯
+为了让汝等重新认识吾之威容，[r]我只是打发时间陪汝等玩玩而已。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿塔兰忒
+你用了『[#虚荣的空中庭园:Hanging Gardens of Babylon]』吗？[r]用那个可以搬运的货物确实会比任何人都多。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth G 2]
+[charaDepth J 3]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 64,0]
+
+＠塞弥拉弥斯
+唔，嗯？　啊，没错[line 3]
+[k]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 -384,0]
+[wt 0.5]
+
+＠天草四郎
+哈哈哈，不是啦不是啦。她起初确实打算用[r]『[#虚荣的空中庭园:Hanging Gardens of Babylon]』进行宏大的搬运，
+[k]
+
+＠天草四郎
+于是当然，在配送第一件的中途就魔力耗尽倒下。[r]从此之后就改为用使魔鸽子了。
+[k]
+
+[charaFace G 2]
+
+＠塞弥拉弥斯
+你，你，天草四郎！　你从哪儿冒出来的！[r]另外你是什么时候来的！
+[k]
+
+[charaFace H 1]
+
+＠天草四郎
+哈哈哈，从者当然是从召唤阵冒出来的啦。[r]至于是什么时候来的，这是个秘密。
+[k]
+
+＠塞弥拉弥斯
+哎哎，还是那么会装傻！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+[wt 2.0]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+[wt 2.0]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+[wt 1.2]
+
+[bgmStop BGM_EVENT_2 0.5]
+
+[charaFace G 2]
+
+＠塞弥拉弥斯
+[f large][messageShake 0.09 7 5 0.3]『[#虚荣的空:Hanging Gar][line 3]！[q]
+
+[wt 1.3]
+
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+
+[bgm BGM_EVENT_27 0.1]
+
+[charaTalk off]
+[charaFace I 2]
+[charaFadein I 0.1 4]
+[charaFace E 2]
+[charaFadein E 0.1 6]
+
+[charaMove I 0 0.2]
+[charaMove E 2 0.2]
+
+[messageShakeStop]
+
+＠阿斯托尔福＆阿喀琉斯
+不要为了掩饰不好意思而使用宝具啦[line 3]！
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠塞弥拉弥斯
+我没有不好意思！[r]只是为了弥补这个屈辱！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠阿维斯布隆
+好，喀戎。[r]你快想想办法。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth G 2]
+
+[bgmStop BGM_EVENT_27 1.2]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠喀戎
+……没办法。虽说在没得到本人同意的情况下[r]使用这个不太好。
+[k]
+
+[charaFace B 0]
+
+＠喀戎
+但只需在能瞬间让意识消失的医疗用穴位上，这样。
+[k]
+
+[messageOff]
+[charaMove B -512,0 0.3]
+[wt 0.1]
+[fadeout black 0.3]
+[wait fade]
+[charaFadeout B 0.1]
+[charaTalk off]
+[charaFace G 0]
+[charaFadein G 0 -128,0]
+[wt 0.1]
+[fadein black 0.3]
+[charaFace B 0]
+[charaFadein B 0.1 2]
+[charaMove B 196,0 0.1]
+[wait fade]
+
+[se ad342]
+[seVolume ad342 0 0.6]
+[charaFace G 2]
+[charaShake G 0.08 6 2 0.4]
+
+[wt 0.1]
+[seStop ad342 0.1]
+
+＠塞弥拉弥斯
+咕。
+[k]
+
+
+[messageOff]
+[charaMove G -128,-50 0.4]
+[charaFadeout G 0.4]
+[wt 0.4]
+[se ad775]
+[seVolume ad775 0 0.6]
+[wt 1.2]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠喀戎
+……就是这样，天草四郎阁下。[r]接下来就拜托你了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠天草四郎
+我明白了。[r]接下来就由我来想办法吧。
+[k]
+
+[charaFace H 1]
+
+＠天草四郎
+等她醒来的时候，应该已经冷静下来了吧。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 0]
+[charaFace E 4]
+[charaFadein E 0.1 2]
+
+＠阿斯托尔福
+（万一被人知道她膝枕的事，[r]　会不会又发动宝具啊……）
+[k]
+
+＠阿喀琉斯
+（……算了，既然那家伙说不要紧，[r]　那应该不要紧吧……）
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+

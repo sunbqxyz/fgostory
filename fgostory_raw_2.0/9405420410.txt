@@ -1,0 +1,702 @@
+
+
+
+＄94-05-42-04-1-0
+
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet B 1048000 1 圣诞迦尔纳]
+[charaSet C 4006001 1 乔尔乔斯]
+[charaSet D 2015001 1 阿周那]
+[charaSet E 4019001 1 玛尔达]
+[charaSet F 99502600 1 玛修]
+
+
+[charaSet T 5009040 1 特效用dummy]
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[charaSet A 1098124510 1 达·芬奇]
+[branch lblConf]
+
+[label lblNotClear]
+[charaSet A 98111500 1 达·芬奇]
+[label lblConf]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 10000]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad12]
+[fowardEffect bit_talk_07_fs]
+[wt 4.0]
+
+
+[fadeout white 1.0]
+[wait fade]
+
+[fowardEffectDestroy bit_talk_07_fs]
+
+[scene 63703]
+[wt 2.0]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+
+＠圣诞迦尔纳
+接下来的特异点就是这里啊。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠乔尔乔斯
+看来得顺着海岸线前进才行呢。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠阿周那
+目标地点有一部分在海上。[r]并不完全是顺着海滩前进吧。
+[k]
+
+＠阿周那
+看来得做好在冻结的海面上前进的思想准备呢。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+＠玛尔达
+虽说我自认已经习惯水边城市了，[r]但冷到这个地步还是让人讨厌呢。
+[k]
+
+＠玛尔达
+毫无水声，有种很不自然的感觉。
+[k]
+
+
+？1：今天的帮手是玛尔达小姐呀。
+
+
+？2：（人在水边，却没穿泳装……）
+
+
+[charaFace E 5]
+＠玛尔达
+你那眼神是什么意思啦。[r]是对我有什么意见吗？　[wt 1.0][charaFace E 0]……咳咳。刚才的不算。
+[k]
+
+？！
+
+[charaFace E 1]
+＠玛尔达
+情况我都听说了。[r]交给我吧。
+[k]
+
+＠玛尔达
+对我来说，无论是什么，[r]我都会做好圣女应尽的职责。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠乔尔乔斯
+靠你了哦，玛尔达阁下。
+[k]
+
+＠乔尔乔斯
+我们同为圣人，也都是在神的引导下[r]消灭恶龙之人[line 3]
+[k]
+
+[bgmStop BGM_EVENT_77 2.0]
+
+＠乔尔乔斯
+只要能齐心协力，[r]一定能克服任何困难。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+＠玛尔达
+呃，消灭或打倒这种措辞[r]不是很有圣女感，对吧？
+[k]
+
+＠玛尔达
+换成努力而和平地说服对手这种表现方式吧。
+[k]
+
+
+＠玛尔达
+对吧，塔拉斯克？
+[k]
+
+＠塔拉斯克
+[charaTalk T]
+GuRuuu……（呃，唉。当视线第一次对上的瞬间，[r]脑海中『啊，这下要死了』的印象还记忆犹新呢。）
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaPut T 1]
+[charaEffect T bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+＠玛修
+玛尔达小姐和乔尔乔斯老师……[r]有消灭恶龙传说的两大圣人这次并肩战斗呢。
+[k]
+
+＠玛修
+负责支援的我都兴奋起来了！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠圣诞迦尔纳
+跨越团体障碍的梦幻组合，[r]统一王者大决战……是这样吧。充满了梦想。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠玛尔达
+不，并不会一决雌雄哦！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠圣诞迦尔纳
+呵呵。不管怎么说，玛尔达啊，[r]你是个非常令人期待的陪练搭档。
+[k]
+
+＠圣诞迦尔纳
+我的圣人拳和你的圣人拳，究竟谁更快更强……[r]真希望能彻彻底底分个高下。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠玛尔达
+都[messageShake 0.02 3 3 0.6]说今天的我不是那种人啦！[r]圣女！　我是圣女啦！？
+[k]
+
+[charaFace E 3]
+＠玛尔达
+不，虽然的确不能说完全没兴趣但这种[r]问题麻烦在御主不在场的情况下谈吧。
+[k]
+
+[charaFace E 4]
+＠玛尔达
+听说最近盛传我拿杖子的印象反而比较罕见。
+[k]
+
+＠玛尔达
+我可不能放过雪洗这种印象的机会……
+[k]
+
+[charaFace E 0]
+＠玛尔达
+总之，我暂时会是主妇的守护圣人，[r]是面带笑容散播那个人教诲的玛尔达。
+[k]
+
+＠玛尔达
+对了，前不久刚来的双胞胎中的妹妹，[r]是叫波鲁克斯吗？
+[k]
+
+＠玛尔达
+听说她也是拳术高手。[r]比起我，你还不如试着找她较量呢？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠圣诞迦尔纳
+嗯。我已经数次试图和她交手了，[r]但每次她哥哥都会闯入。
+[k]
+
+＠圣诞迦尔纳
+从未坚持过一个回合。[r]每次结果都是比赛中止。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠玛尔达
+啊啊……我就知道……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠阿周那
+玛尔达阁下。[r]建议您不要完全听信这个半吊子圣诞老人的话。
+[k]
+
+＠阿周那
+总之，[r]现在应该先考虑该如何完成任务。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠玛尔达
+说得对。[r]总不能一直这样悠闲地聊天呢。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠达·芬奇
+嗯，那各位就出发吧。
+[k]
+
+＠达·芬奇
+顺便提一句，根据我们的调查，[r]这被冰冻起来的海面强度相当坚固。
+[k]
+
+＠达·芬奇
+虽然不会突然裂开，但不知道接下来会发生什么。[r]所以前进时还是要小心哦。
+[k]
+
+[branch lblConf2]
+
+[label lblNotClear2]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+＠达·芬奇
+嗯，那各位就出发吧。
+[k]
+
+＠达·芬奇
+顺便提一句，根据我们的调查，[r]这被冰冻起来的海面强度相当坚固。
+[k]
+
+＠达·芬奇
+虽然不会突然裂开，但不知道接下来会发生什么。[r]所以前进时还是要小心哦。
+[k]
+
+[label lblConf2]
+
+
+？1：明白了！
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaPutFSR T 1200,2000]
+[charaEffectStop T bit_talk_10_LowLevel]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠玛尔达
+话说，弗栗多是什么类型的龙啊？[r]很大吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠乔尔乔斯
+现阶段看上去只是长着尾巴的人类体。[r]但不清楚是否会变成龙体。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠圣诞迦尔纳
+尺寸果然很重要吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠玛尔达
+那当然啦。重量乃是力量之源嘛。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠乔尔乔斯
+但无论对手是多么巨大的龙，[r]也不用胆怯。
+[k]
+
+＠乔尔乔斯
+哪怕是拥有翅膀飞行的龙，[r]支撑肉体的四肢也是非常重要的。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠玛尔达
+对啦对啦。所以先攻击下盘[r]夺走对方的行动能力比较合理[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠圣诞迦尔纳
+因为无法击打下半身，所以就瞄准躯干吧。[r]腹击对龙也有效果吗……
+[k]
+
+？1：（屠龙话题聊得很欢呢……）
+？2：（玛尔达小姐……）
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠阿周那
+………………
+[k]
+
+？1：阿周那不参与讨论吗？
+？2：感谢你帮忙戒备。稍微休息一会儿吧？
+？！
+
+＠阿周那
+不。毕竟不知道会发生什么。[r]可不能松懈。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠圣诞迦尔纳
+我们也没有松懈。[r]一直有在警戒。
+[k]
+
+＠圣诞迦尔纳
+与此同时，[r]加深战斗相关知识也是非常重要的。
+[k]
+
+＠圣诞迦尔纳
+师父教导过吧，[r]理论知识也不可以荒废。
+[k]
+
+＠圣诞迦尔纳
+为了共同成为优秀的[#战士:圣诞老人]，[r]何不一起来交流意见呢。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠阿周那
+……[r]……这倒是没有错。
+[k]
+
+＠阿周那
+我为自己的错误向你道歉，迦尔纳。[r]正如你所说的，我也立志成为优秀的圣[line 3]慢着，
+[k]
+
+[charaFace D 2]
+＠阿周那
+我可不想当什么圣诞老人！[r]你为什么那么惊讶！？
+[k]
+
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgm BGM_EVENT_2 1.0 0.4]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[wt 1.0]
+
+[bgm BGM_EVENT_2 1.0 1.0]
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠玛尔达
+能打扰一下吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠阿周那
+抱歉，让您见笑了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠玛尔达
+没事。虽然我不会轻巧地说……[r]我可以理解你的心情。
+[k]
+
+＠玛尔达
+但如果你有什么想说的，我愿意倾听哦？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠阿周那
+我没什么想说的。[r]只是……有些混乱而已。
+[k]
+
+[charaFace D 0]
+＠阿周那
+玛尔达阁下又如何呢？[r]关于那个圣诞迦尔纳……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠玛尔达
+我并没有混乱，这个嘛，[r]我只觉得他和平时有些不一样。
+[k]
+
+
+＠玛尔达
+有种好久没看到青梅竹马，[r]稍微有些兴奋……的感觉吧？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠阿周那
+……肯定正因为如此吧。
+[k]
+
+＠阿周那
+事实就是事实。我和他[line 3][r]尽管立场不同，但曾一起学习，一起长大。
+[k]
+
+＠阿周那
+这点不容否定。[r]……但是……
+[k]
+
+[charaFace D 4]
+＠阿周那
+在除此以外的问题上，[r]我和他……发生了太多的事了。
+[k]
+
+＠阿周那
+所以，他那似乎忘记了一切的举止，[r]或许让我稍微有些烦躁吧。
+[k]
+
+＠阿周那
+连我都觉得自己的气量有些狭小……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠玛尔达
+唔……可能不太对。[r]他并不是忘记了……
+[k]
+
+[charaFace E 1]
+＠玛尔达
+当然这只是我个人的看法。
+[k]
+
+＠玛尔达
+他并没有忘记。[r]一点都没忘记，也没有当那些事没发生过。
+[k]
+
+＠玛尔达
+但一事归一事，[r]他只是在[#坦率地怀念过去]吧？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠阿周那
+…………
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠玛尔达
+[line 3]呵呵。抱歉，请别介意。[r]这只是我的多管闲事罢了。
+[k]
+
+＠玛尔达
+因为我是个圣女。[r]得帮助迷茫的年轻人才行吧？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠阿周那
+[line 3]我[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.4]
+[se ad14]
+[shake 0.02 3 3 0]
+[wt 1.6]
+
+[charaFace D 5]
+＠阿周那
+！！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[seStop ad14 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

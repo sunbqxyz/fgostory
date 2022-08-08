@@ -1,0 +1,1483 @@
+
+＄02-00-01-17-2-0
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 98111500 1 通讯用杂音]
+[charaSet C 1002001 1 阿尔托莉雅·Alter]
+[charaSet D 2023000 1 莫里亚蒂]
+[charaSet E 98086000 1 福尔摩斯]
+[charaSet F 2023001 1 莫里亚蒂恶]
+[charaSet G 98111400 1 魔神巴力]
+[charaSet H 98111400 1 魔神巴力的剪影]
+
+[soundStopAll]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 38900]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+[charaEffect F bit_talk_06]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠F：莫里亚蒂
+……败北吗……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[charaSpecialEffect F flashErasure 1 1.2]
+[se ad52]
+[wait charaSpecialEffect F]
+[charaEffectStop F bit_talk_06]
+[wt 0.3]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_4 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠莫里亚蒂
+……败北了啊。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaSet F 98111500 1 达·芬奇]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0 1]
+[wt 0.3]
+＠玛修
+确认恶之莫里亚蒂消灭……！[r]太好了，成功了，御主！
+[k]
+
+？1：这是大家赢得的胜利！
+？！
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+[charaFadein D 0.1 0]
+＠莫里亚蒂
+嗯！[r]可谓完美！
+[k]
+
+[charaFace E 3]
+＠福尔摩斯
+……不，还没有。
+[k]
+
+[charaFace D 0]
+＠莫里亚蒂
+还没有是什么意思啊？
+[k]
+
+[charaFace E 5]
+＠福尔摩斯
+[#没有圣杯]……那么，那力量……！
+[k]
+
+[se ad14]
+[bgmStop BGM_EVENT_4 2.0]
+[shake 0.05 7 7 2.0]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[seStop ad14 2.0]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 1]
+[wt 0.3]
+＠玛修
+……！[r]确认灵基出现！　这是……这个模式是……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0 0,-90]
+＠达·芬奇
+这不可能！！
+[k]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠达·芬奇
+[#不可能]！[r][#哪怕翻天覆地]，[#唯独这个是不可能的]！
+[k]
+
+[charaFadeout F 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+
+[messageOff]
+
+
+[se ad134]
+[shake 0.05 2 2 3.0]
+[wt 2.4]
+[seStop ad134 4.0]
+[charaPut H 1]
+[charaEffect H bit_talk_tornado01]
+[wt 0.2]
+[se ad63]
+[shake 0.05 7 7 1.0]
+[wt 0.7]
+[charaTalk off]
+[charaFace H 0]
+[charaDepth H 9]
+[charaFilter H silhouette 00000080]
+[charaFadein H 0.7 1]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[wt 0.7]
+[shake 0.05 2 2 4.0]
+[flashOff]
+[wt 0.4]
+
+[charaEffectStop H bit_talk_tornado01]
+
+[se ad14]
+[charaFace G 0]
+[charaDepth G 1]
+[charaFadein G 0.1 1]
+[charaPut C 1]
+[se ad61]
+[seStop ad61 4.0]
+[charaEffect C bit_talk_lightning_01g]
+[charaMove C 0,-1200 8.0]
+[charaFadeout H 3.0]
+[seStop ad14 4.0]
+[wt 4.0]
+[charaEffectStop C bit_talk_lightning_01g]
+
+＠G：？？？
+[messageShake 0.05 4 4 1.0]
+[line 3]哈哈。[r][line 3]哈，哈，哈，哈哈哈哈哈哈！
+[k]
+
+＠G：？？？
+想起来了！[r]一切都想起来了！　想起来了！
+[k]
+
+＠G：？？？
+来了啊，[%1]……！[r]可恨的迦勒底御主啊！
+[k]
+
+
+？1：难道是盖提亚……！？
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0 0,-90]
+[wt 0.3]
+＠达·芬奇
+不，不是！[r][#那个]……是魔神柱！
+[k]
+
+＠达·芬奇
+虽然看上去人化了，但灵基模式不会错！
+[k]
+
+？1：魔神柱……！？
+
+？2：应该都毁灭了吧……！？
+
+？！
+
+[charaFadeout F 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠G：？？？
+是毁灭了！[r][#我们]早已是毁灭的种族！
+[k]
+
+＠G：？？？
+无法复活！　无法回归！[r]无法复原！　永远做不到！
+[k]
+
+＠G：？？？
+对，3000年的计划可谓完全崩溃了！[r]即便如此，我依然来到人前，丢人现眼！
+[k]
+
+＠G：？？？
+全部，全部都是为了杀了你。[r]只为了做到这点[line 3]！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠阿尔托莉雅·Alter
+……哼，我还当是什么呢，只不过是残党啊。[r]外加还是为了杀害[%1]？
+[k]
+
+[charaFace C 5]
+＠阿尔托莉雅·Alter
+居然能这么倒打一耙[line 3]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠G：？？？
+[font large][messageShake 0.05 7 7 1.0]我明白！！
+[k]
+
+[messageShakeStop]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠阿尔托莉雅·Alter
+[line 3]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠G：？？？
+说得没错！[r]这撕扯胸膛的痛苦，这煎熬身躯的炽热！
+[k]
+
+＠G：？？？
+不是因为3000年的计划化为泡影。[r]也不是因为人理烧却被英灵们阻止了。
+[k]
+
+＠G：？？？
+更不是因为戒指被那可恨的所罗门归还上天。
+[k]
+
+＠G：？？？
+完美的计划，完全的展开。[r]这些之所以全被化为乌有，是有起点的。
+[k]
+
+＠G：？？？
+……对，就是你，[%1]！
+[k]
+
+？1：我……？
+？！
+
+＠G：？？？
+我承认，这是倒打一耙，这是乱撒气。[r]连这些话都只是装饰。
+[k]
+
+＠G：？？？
+[messageShake 0.05 4 4 2.0]
+……憎恨。憎恨，憎恨，憎恨憎恨憎恨憎恨憎恨憎恨憎恨憎恨[r]憎恨憎恨憎恨憎恨憎恨憎恨憎恨憎恨憎恨憎恨憎恨憎恨憎恨！
+[k]
+
+
+＠G：？？？
+除了憎恨以外什么都感受不到！[r]憎恨，憎恨你，[%1]！
+[k]
+
+
+＠G：？？？
+你为何会到达这星球，到达这时代，[r]到达那个场所！
+[k]
+
+＠G：？？？
+若是超越人类的英雄，尚能理解！[r]若是吞噬人类的魔王，尚能接受！
+[k]
+
+＠G：？？？
+但是，只因为像你这样平凡、平均而平庸的[&男人:女人]的错，[r]一切都毁了……！
+[k]
+
+＠G：？？？
+之所以忍受凄惨逃跑的耻辱，[r]是为了无论如何都要杀了你，只为了这点……！！
+[k]
+
+＠G：？？？
+不是为了毁灭世界而杀你，[r]而是为了杀你而毁灭世界[line 3]！！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠福尔摩斯
+杀人计划……！
+[k]
+
+＠福尔摩斯
+从那座时间神殿逃亡后，从头开始设计的吗……[r][#从3000年前起就一直在不断完善计划]！
+[k]
+
+[charaFace E 2]
+＠福尔摩斯
+巴贝奇卿从计算结果中指出的人类史的扭曲！[r]位于人理烧却角落的异物的真面目就是这个啊！
+[k]
+
+？1：异物究竟是什么……！？
+？！
+
+[charaFace E 5]
+＠福尔摩斯
+巴贝奇卿通过作为英灵被召唤，并加入魔神柱的麾下，[r]得以掌握了所有的数值。
+[k]
+
+[charaFace E 3]
+＠福尔摩斯
+这么一来，接下来需要的就是计算。[r]身为数学家理所当然的计算。
+[k]
+
+[charaFace E 5]
+＠福尔摩斯
+不是为了“防止人理烧却”而计算。[r]而是对“假设人理烧却被废弃之后的未来”进行的计算啊。
+[k]
+
+[charaFace E 2]
+＠福尔摩斯
+我们是在那个时候得知的。
+[k]
+
+＠福尔摩斯
+就算魔术王不进行人理烧却，[r]2018年之后的未来也会崩溃！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠G：？？？
+说得没错，贝克街的侦探。
+[k]
+
+＠G：？？？
+经过了3000年的岁月，[r]我掌握了幻灵与英灵的融合技术！
+[k]
+
+＠G：？？？
+历史不足，信仰不足，[r]被抛弃的无数废铜烂铁……
+[k]
+
+＠G：？？？
+但是，其中却存在无比有价值的存在！[r][#都市传说:Urban Legend]！　[#童话故事:Fairy Tale]！　被毁灭的兽们！
+[k]
+
+＠G：？？？
+过去的我直到最后都没能理解[line 3][r]而现在的我所必需的存在，就是这个！
+[k]
+
+＠魔神巴力
+报应的热情。复仇的誓约。[r]这就是，我魔神巴力的[#构成要素:Factor]！
+[k]
+
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠福尔摩斯
+那么，我问你。[r]你和莫里亚蒂究竟有多深的关联！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠魔神巴力
+[#我没有必要回答这个问题]。[r]因为，答案已经有了。
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripRightToLeft 0.2 1.0]
+[wait wipe]
+
+[bgmStop BGM_EVENT_24 0.1]
+
+[charaFadeout G 0.1]
+[scene 10000]
+
+[wipein rectangleStripLeftToRight 0.2 1.0]
+[wait wipe]
+
+
+＠莫里亚蒂
+[line 3]是全部哦，福尔摩斯。
+[k]
+
+[se bac143]
+[effect bit_talk_35]
+[wt 2.0]
+[se ad328]
+[wt 2.0]
+[bgm BGM_EVENT_5 0.1]
+
+？1：……哎？
+？！
+
+
+[messageOff]
+
+[scene 38900]
+[wt 0.4]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 1]
+[wt 0.3]
+＠玛修
+啊……哎……？
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠阿尔托莉雅·Alter
+……什么……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0 0,-90]
+[wt 0.3]
+＠达·芬奇
+怎么……回事……？
+[k]
+
+[charaFadeout F 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠福尔摩斯
+莫里亚蒂……你……不，原来如此！[r][#难道]！　[#是这样]！
+[k]
+
+＠福尔摩斯
+反了！[r]都反了！
+[k]
+
+＠福尔摩斯
+糟了，没想到你居然会做……[r][#如此孤注一掷的赌注]！！
+[k]
+
+[charaFace E 5]
+＠福尔摩斯
+居然不惜舍弃确实性，[r]也渴望胜利……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠莫里亚蒂
+[line 3]终于触碰到了吧，福尔摩斯。[r]哎呀，比预想的还要……轻而易举呢。
+[k]
+
+[charaFace D 5]
+＠莫里亚蒂
+但是，我胜利了哦，福尔摩斯。[r]这次，终于。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠福尔摩斯
+……因为败北，就是这样的存在……[r]莫里亚蒂，很遗憾的是，你赢了。
+[k]
+
+[charaFace E 4]
+＠福尔摩斯
+同时，我也要由衷向你道歉，[&Mr.:Miss][%1]。[r]我的推理，错了。
+[k]
+
+？1：！？
+？！
+
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 1]
+[wt 0.3]
+＠玛修
+怎么……会……！！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+
+[messageOff]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+[wt 0.4]
+[charaFace E 2]
+＠福尔摩斯
+阿尔托莉雅！[r]快斩杀我！　这样一来，还有机会[line 3]。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠莫里亚蒂
+真了不起，不愧是我的怨恨的宿敌。[r]但你的同伴可跟不上你的推理哦！
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[messageOff]
+
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[charaSpecialEffect E wipe]
+
+[charaEffect E bit_talk_11]
+
+[bgmStop BGM_EVENT_5 0.4]
+[se ad343]
+[wait charaSpecialEffect E]
+[charaPut E 1024,1024]
+[charaEffectStop E bit_talk_11]
+[wt 0.3]
+
+[wt 1.4]
+
+
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠莫里亚蒂
+永别了！　永别了，[#同类:福尔摩斯]啊！
+[k]
+
+＠莫里亚蒂
+拥有相同的视野，却无法站在相同位置上的[r]世上最优秀的名侦探啊！
+[k]
+
+[charaFace D 5]
+＠莫里亚蒂
+凭借你的力量，我才能获得真正的胜利！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[bgm BGM_EVENT_24 0.1]
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 1]
+[wt 0.3]
+＠玛修
+……！[r]福尔摩斯先生……灵基……没有消灭！？
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.1]
+
+[charaSet D 2023002 1 莫里亚蒂]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠阿尔托莉雅·Alter
+玛修说得没错。
+[k]
+
+＠阿尔托莉雅·Alter
+确实能感受到从者……福尔摩斯的气息。[r]从那个……莫里亚蒂的身上……！
+[k]
+
+
+[bgmStop BGM_EVENT_24 1.5]
+[messageOff]
+[charaFadeout C 0.1]
+[charaSet E 2023002 1 福尔摩斯]
+[wt 0.4]
+[cameraMove 1.0 0,0 1.2]
+[wait camera]
+
+[se bac168]
+[seStop bac168 0.7]
+[se ad267]
+[seVolume ad267 0 0.3]
+[seStop ad267 0.7]
+[wt 0.4]
+[se bac168]
+[charaTalk E]
+[charaScale E 0.83]
+[charaFilter E silhouette 00000080]
+[charaFace E 0]
+[charaFadein E 0.7 0,-48]
+[wt 0.1]
+[seStop ad267 0.7]
+[wt 2.0]
+
+[se ad95]
+[cameraMove 3.0 0,0 1.0]
+[charaFadeout E 2.0]
+[wait camera]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.7 1]
+[wt 1.5]
+
+[bgm BGM_EVENT_24 1.5]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠莫里亚蒂
+当然，我没有杀他，而是将他吸收了。[r]不这样做可不行。
+[k]
+
+
+？1：莫里亚蒂……
+？！
+
+[charaFace D 5]
+＠莫里亚蒂
+[line 3][#初次见面]，各位。[r]我的名字是詹姆斯·莫里亚蒂。
+[k]
+
+[charaFace D 1]
+＠莫里亚蒂
+是击碎这颗星球的人。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0 0,-90]
+[wt 0.3]
+＠达·芬奇
+你背叛了我们吗……什么时候开始……！
+[k]
+
+[charaFadeout F 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠莫里亚蒂
+如果你问从什么时候开始，那答案应该是[#就刚才]吧。[r]有种漫长……漫长的计算终于结束的感觉。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0 1]
+[wt 0.3]
+＠玛修
+请等一下。[r][#就刚才]？　就刚才，您突然决定背叛我们吗！？
+[k]
+
+[charaFace A 2]
+＠玛修
+怎么会……莫名其妙！[r]我完全无法理解您所说的话！
+[k]
+
+[charaFace A 15]
+＠玛修
+那个……如果看形势不利，通过背叛我们，[r]或许能够找到解决的方法。
+[k]
+
+[charaFace A 14]
+＠玛修
+但是，刚才我们胜利了！[r]我们拥有足以打倒魔神柱巴力的战斗力才对……！
+[k]
+
+[charaFace A 5]
+＠玛修
+你根本没有任何需要背叛我们的理由啊！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠莫里亚蒂
+巴力。[r]……可以吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠魔神巴力
+徒劳之举。[r]但是，[#我们幻影魔人同盟]在任何时候都是对等的。
+[k]
+
+＠魔神巴力
+如果你想这么做，[r]那我会等。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠莫里亚蒂
+很好。[r]你们拥有询问的权利。
+[k]
+
+[charaFace D 1]
+＠莫里亚蒂
+而我，应该也有回答的义务吧。[r]全部……全部按顺序从头开始回答吧。
+[k]
+
+[charaFace D 5]
+＠莫里亚蒂
+毕竟福尔摩斯已经不在了。
+[k]
+
+？1：……
+？！
+
+[messageOff]
+
+[fadeout black 0.4]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 1.0]
+
+[charaSet H 2016000 1 卫宫·Alter]
+
+[fadein black 0.4]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠莫里亚蒂
+……[%1]。你意识到了吗？[r]这新宿，一开始就很奇怪吧？
+[k]
+
+？1：……就像是虚构的世界
+？2：仿佛在故事中一样
+？！
+
+＠莫里亚蒂
+说得没错。
+[k]
+
+[charaFace D 1]
+＠莫里亚蒂
+这新宿与所有的世界隔离，[r]变得与人理毫无关系。
+[k]
+
+[charaFace D 5]
+＠莫里亚蒂
+其结果[line 3]导致这新宿，[#成了空想之城]。
+[k]
+
+[charaFace D 0]
+＠莫里亚蒂
+幻灵与英灵、幻灵与幻灵的融合这种事，[r]除了在这隔绝魔境新宿以外，是几乎不可能做到的。
+[k]
+
+[charaFace D 5]
+＠莫里亚蒂
+而在这新宿，我和巴力为了各自的目的，[r]缔结了同盟。
+[k]
+
+[charaFace D 1]
+＠莫里亚蒂
+魔神巴力是为了杀[%1]……杀你。[r]而我，则是为了超越福尔摩斯。
+[k]
+
+[charaFace D 5]
+＠莫里亚蒂
+为了完成几乎不可能达成的这两件事，[r]我们虽分别为人与魔神，但依然缔结了同盟。
+[k]
+
+
+＠莫里亚蒂
+这就是幻影魔人同盟[line 3]。[r]就是指，[#魔神与人类的同盟]。
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 1]
+[wt 0.3]
+＠玛修
+超越……吗？[r]不是为了杀害。
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠莫里亚蒂
+……[%1]，你玩过只要一说21这个数字，[r]就会输掉的那种游戏吗？
+[k]
+
+[charaFace D 1]
+＠莫里亚蒂
+彼此能说的数字最多只有3个。[r]先攻后攻，如果说可以由你来决定，你选择哪个？
+[k]
+
+？1：先攻。
+
+[charaFace D 5]
+＠莫里亚蒂
+真遗憾，你肯定会输。
+[k]
+
+？2：后攻。
+
+[charaFace D 5]
+＠莫里亚蒂
+恭喜，你肯定会赢。
+[k]
+
+？！
+
+[charaFace D 5]
+＠莫里亚蒂
+为了让对方说出21，就必须由自己来说4的倍数才行。[r]为了要说4的倍数，就决不能选择先攻。
+[k]
+
+[charaFace D 1]
+＠莫里亚蒂
+……然而世界注定我必然是先攻，[r]福尔摩斯则始终是后攻。
+[k]
+
+＠莫里亚蒂
+我们生活的世界就是这样的存在，[r][#是善能击败恶的世界]。
+[k]
+
+[charaFace D 5]
+＠莫里亚蒂
+对，只要我还是莫里亚蒂这个存在，[r]我是无论如何都赢不了福尔摩斯的。
+[k]
+
+＠莫里亚蒂
+而且就算像这样被召唤，[r]这个规则依然束缚着我们。
+[k]
+
+[charaFace D 1]
+
+
+＠莫里亚蒂
+用比喻来说……就像在世界即将被毁灭的千钧一发之际，[r]出现的类似抑止力的存在。
+[k]
+
+
+[charaFace D 5]
+＠莫里亚蒂
+就算企图杀他也无法取胜，就算想要在背后暗算他也没用。[r]所以我思考着，可以说是拼命地思考。
+[k]
+
+[charaFace D 0]
+＠莫里亚蒂
+福尔摩斯其实也并非不会犯错。[r]就像他曾输给艾琳·艾德勒一样。
+[k]
+
+[charaFace D 5]
+＠莫里亚蒂
+但令人烦恼的是，一旦以我为对手，他总会用尽全力。[r]想要打赢用尽全力的福尔摩斯的方法，只有一个。
+[k]
+
+[charaFace D 1]
+＠莫里亚蒂
+[#那就是我站在福尔摩斯一方]。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠阿尔托莉雅·Alter
+哦。[r]……那你果然一开始就背叛我们了吧。
+[k]
+
+[charaFace C 5]
+＠阿尔托莉雅·Alter
+不过我们居然蠢到没能看穿你的阴谋，[r]这未免让人有些火大。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠莫里亚蒂
+不，你们当然不可能看穿。[r]因为[line 3]。
+[k]
+
+？1：因为你抹去了记忆？
+
+？2：因为你化为了零？
+？！
+
+＠莫里亚蒂
+……噗，咯咯。
+[k]
+
+[charaFace D 5]
+＠莫里亚蒂
+哇哈哈哈哈！[r]不愧是御主，太聪明了！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠魔神巴力
+莫里亚蒂。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠莫里亚蒂
+抱歉抱歉。[r]哎呀，正是如此。
+[k]
+
+[charaFace D 5]
+＠莫里亚蒂
+我将自己化为零。[r]删去记忆，删去恶性，创造善性，重生了。
+[k]
+
+[charaFace D 0]
+＠莫里亚蒂
+不只是我哦。[r]连着魔神巴力也删除了记忆。
+[k]
+
+[charaFace D 1]
+＠莫里亚蒂
+他将自己当做恶之莫里亚蒂来行动。[r]而我，则将自己当做善之莫里亚蒂来行动。
+[k]
+
+[charaFace D 0]
+＠莫里亚蒂
+对，直到刚才为止。[r]直到恶之莫里亚蒂毁灭为止哦。
+[k]
+
+[charaFace D 5]
+＠莫里亚蒂
+他以为自己就是莫里亚蒂，[r]也作为莫里亚蒂行动哦。
+[k]
+
+＠莫里亚蒂
+若非如此，我们是赢不了福尔摩斯和你的。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 1]
+[wt 0.3]
+＠玛修
+怎么会……
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠莫里亚蒂
+因为事实如此吧？[r]我们是无法逃过福尔摩斯的观察眼的。
+[k]
+
+[charaFace D 1]
+＠莫里亚蒂
+所以我才全力帮助你，[r]作为同伴，与你并肩战斗。
+[k]
+
+[charaFace D 2]
+＠莫里亚蒂
+这是毋庸置疑的事实。[r]御主，你无须为没能看穿而哀叹！
+[k]
+
+？1：一点都高兴不起来！
+
+[charaFace D 5]
+＠莫里亚蒂
+哈哈哈哈哈！[r]你还能如此意气轩昂真是不错！
+[k]
+
+？2：我只会悲伤。
+
+[charaFace D 5]
+＠莫里亚蒂
+……哎呀，真对不起。[r]也是。因为你很善良。
+[k]
+
+[charaFace D 4]
+＠莫里亚蒂
+不是因为遭到我的背叛而悲伤，[r]而是对我站在了恶的一方而感到悲伤吧。
+[k]
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+
+＠H：？？？
+你终于现出真身了，巴力！
+[k]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠魔神巴力
+唔……！
+[k]
+
+[messageOff]
+
+[se bac22]
+[charaEffect G bit_shot_01]
+[charaShake G 0.05 4 4 1.0]
+[wt 1.4]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.7 1]
+[wt 1.0]
+
+[wt 0.7]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠阿尔托莉雅·Alter
+[line 3]你这家伙。[r]这就是你的目的吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 1]
+[wt 0.3]
+＠玛修
+卫宫先生……！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠卫宫·Alter
+这就是身为佣兵的苦处了。[r]不管是不是反转，无论自己是否愿意，工作就是工作。
+[k]
+
+[charaFace H 4]
+＠卫宫·Alter
+毕竟被召唤的时候，己方我一个人。[r]身边只有狼王与燕青，魅影与克里斯蒂娜。
+[k]
+
+[charaFace H 0]
+＠卫宫·Alter
+我被雇佣的原因，是为了打倒魔神柱，[r]除此之外都是些鸡毛蒜皮的小事。
+[k]
+
+[charaFace H 1]
+＠卫宫·Alter
+更不用说这世界已经被分离出去。[r]就算这里真的挂了，也没什么影响。
+[k]
+
+[charaFace H 6]
+＠卫宫·Alter
+无论是加入邪恶一方，还是作为善良的一方进行抵抗，[r]我要做的就是[#只要最后能搞定就行了]。
+[k]
+
+[charaFace H 5]
+＠卫宫·Alter
+那自然应该尽可能选择有效率的方法。[r]你不这么认为吗？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠阿尔托莉雅·Alter
+……这是何等令人不愉快的想法。[r]但是，看来你应该不是敌人吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠魔神巴力
+原来如此。[r]答案果然很简单啊。
+[k]
+
+＠魔神巴力
+你加入我麾下的理由不明，[r]但唯有你想取我性命这点是可以理解的。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+＠卫宫·Alter
+彼此彼此。[r]我能看出来你打算将我利用到渣都不剩的决心哦。
+[k]
+
+[charaFace H 0]
+＠卫宫·Alter
+我预测事态演变到这个程度前，你是不会肃清我的，[r]看来猜对了。
+[k]
+
+＠卫宫·Alter
+好了，迦勒底的御主。[r]那边是我的敌人，对你们来说，他们也是敌人。
+[k]
+
+[charaFace H 1]
+＠卫宫·Alter
+换言之，现在是千载难逢的好机会。
+[k]
+
+[charaFace H 4]
+＠卫宫·Alter
+我们没道理放过这个机会，[r]你应该也没有与我战斗的理由吧。
+[k]
+
+[charaFace H 1]
+＠卫宫·Alter
+要不要联手？
+[k]
+
+？1：……我明白了。
+
+[charaFace H 1]
+＠卫宫·Alter
+不要一副勉为其难的表情嘛。[r]反转的人中也有这种从者。
+[k]
+
+[charaFace H 0]
+＠卫宫·Alter
+如果你想继续拯救世界，就该早点学会习惯。
+[k]
+
+？2：魔神柱就交给你了。
+
+[charaFace H 0]
+＠卫宫·Alter
+……明白了。这本来就是我的目的。[r]魔神柱就交给我吧。
+[k]
+
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠魔神巴力
+[line 3]莫里亚蒂。[r]要战斗吗？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠莫里亚蒂
+虽然我有点想说，这是毫无意义的事……[r]不，有意义呢。
+[k]
+
+[charaFace D 1]
+＠莫里亚蒂
+你的复仇将在此结束。[r]我的道义也要在此诀别。
+[k]
+
+[charaFace D 5]
+＠莫里亚蒂
+我们上，巴力。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠魔神巴力
+嗯。[r]我的名字乃是巴力。
+[k]
+
+＠魔神巴力
+为了一雪前耻，我要在此完成我的复仇。[r]我的生命，全都是为了这个瞬间[line 3]。
+[k]
+
+
+[messageOff]
+
+[charaSet H 9938600 1 魔神巴力的剪影]
+
+[se ad63]
+[charaTalk off]
+[charaFace H 0]
+[charaDepth G 1]
+[charaDepth H 9]
+[charaFilter H silhouette 00000080]
+[charaFadeout G 0.7]
+[charaFadein H 0.7 1]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[wt 0.7]
+[flashOff]
+[wt 0.4]
+
+[charaSet G 9938600 1 魔神巴力]
+[wt 0.1]
+
+[se ad14]
+[charaFace G 0]
+[charaDepth G 1]
+[charaFadein G 0.1 1]
+[charaFadeout H 0.7]
+[wt 1.0]
+[seStop ad14 1.0]
+
+[wt 1.4]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaSet H 2016000 1 卫宫·Alter]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠玛修
+魔神柱转化为战斗形态！[r]御主，请指示！
+[k]
+
+？1：一定要赢！
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠阿尔托莉雅·Alter
+喊得漂亮。[r]可别拖我们的后腿哦，Archer！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+＠卫宫·Alter
+少废话。[r]这是我要说的台词[line 3]！
+[k]
+
+？2：放马过来吧，莫里亚蒂！
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠莫里亚蒂
+……[r]……
+[k]
+
+[charaFace D 5]
+＠莫里亚蒂
+……嗯，来吧，各位！
+[k]
+
+？！
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

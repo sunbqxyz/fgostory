@@ -1,0 +1,659 @@
+＄94-04-65-04-2-0
+
+[soundStopAll]
+
+[charaSet A 5033001 1 喀耳刻]
+[charaSet B 2009102 1 俄里翁]
+[charaSet C 2015001 1 阿周那]
+[charaSet D 1038000 1 伊阿宋]
+[charaSet E 4006001 1 乔尔乔斯]
+[charaSet F 1098181810 1 奥德修斯]
+
+[charaDepth A 8]
+[charaDepth F 7]
+
+[imageSet G cut163_ias10 1]
+[charaScale G 1.01]
+[imageSet H cut162_ias06 1]
+[charaScale H 1.01]
+[imageSet I cut162_ias23 1]
+[charaScale I 1.01]
+
+[charaDepth G 8]
+[charaDepth H 7]
+[charaDepth I 6]
+
+[imageSet J back10000 1]
+[charaScale J 1.02]
+
+[scene 21505]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.4]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠喀耳刻
+火焰后接着是冰吗……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿周那
+没有什么立牌呢。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠伊阿宋
+唔？[r]隐约能看到通道呢……
+[k]
+
+＠伊阿宋
+什么嘛，这太简单了。[r]只要融化这玩意儿就行了吧？
+[k]
+
+[charaFace D 1]
+
+＠伊阿宋
+好，阿周那。[r]用你的弓箭射这个吧！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠阿周那
+你是指『[#炎神咆哮:Agni Gandiva]』吧。[r]但是……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 23]
+[charaFadein D 0.1 1]
+
+＠伊阿宋
+怎么，没有自信吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠阿周那
+……怎么可能呢。[r]我担心的事截然相反。
+[k]
+
+[charaFace C 5]
+
+＠阿周那
+我的一击，[r]会不会破坏这座迷宫[line 3]
+[k]
+
+＠阿周那
+我只是担心这件事而已。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠喀耳刻
+喂喂，万一被活埋，[r]不好办的可是我们哦～？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿周那
+那我会尽可能手下留情。
+[k]
+
+[charaFace C 5]
+
+
+＠阿周那
+然而为了不让大家觉得我力量不足，[r]我也会竭尽全力！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[charaFadeTime J 0.3 0.4]
+[wt 0.4]
+
+＠俄里翁
+（感觉情况有些不妙啊。）
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout J 0.3]
+[bgmStop BGM_EVENT_2 0.3]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.5]
+[se ad153]
+[bgm BGM_EVENT_62 0.1]
+[charaEffect C bit_talk_charge_blu]
+[wt 1.0]
+
+[charaFace C 2]
+
+＠阿周那
+[#炎神:阿耆尼]啊，赐予我力量！！[r]气势一闪！　上！
+[k]
+
+＠阿周那
+[f x-large]『[#炎神咆哮:Agni Gandiva]』！！
+[k]
+
+[messageOff]
+[seStop ad153 1.5]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[se bac71]
+[seStop bac71 0.6]
+[wt 0.1]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[se bac71]
+[seStop bac71 0.6]
+[wt 0.1]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[se bac71]
+[seStop bac71 0.6]
+[wt 0.1]
+
+[charaEffectStop C bit_talk_charge_blu]
+[charaEffectDestroy C bit_talk_charge_blu]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠乔尔乔斯
+哎哟，抓拍机会！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.3 1.0]
+[bgmStop BGM_EVENT_62 0.3]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.3 1.0]
+[wait wipe]
+
+[wt 0.3]
+
+[effect bit_talk_explosion_triple02]
+[se bac59]
+[shake 0.05 1 4 0.6]
+[wt 0.4]
+
+[fadeout white 0.3]
+[se ad826]
+[wait fade]
+
+[scene 21501]
+[effect bit_talk_tidal_wave]
+[se ad226]
+
+[wt 0.3]
+
+[fadein white 0.3]
+[wait fade]
+
+[se ad414 2.0]
+[seVolume ad414 0 0.2]
+[wt 4.5]
+[effect bit_talk_water]
+[seVolume ad414 1.0 0.4]
+[seStop ad826 1.0]
+[wt 2.0]
+
+[bgm BGM_EVENT_7 0.1]
+
+
+＠喀耳刻
+哇，哇，哇，冰瞬间全都融化了！[r]哇噗！
+[k]
+
+[messageOff]
+[seStop ad414 1.0]
+[effectStop bit_talk_water]
+[wt 0.1]
+
+？1：喀耳刻！！
+？！
+
+[effectDestroy]
+
+＠喀耳刻
+啊，不，没关系。[r]没什么大不了的。
+[k]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+
+＠伊阿宋
+真是的。[r]全身都浸湿[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 0.3]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad231]
+[charaFadeTime J 0.3 0.4]
+[charaFace G 0]
+[charaFadein G 0.3 0,-70]
+[wt 0.6]
+
+[bgm BGM_EVENT_48 0.1]
+
+＠伊阿宋（0.1秒）
+（慢着慢着慢着。[r]　喀耳刻的衣服好像是布做的吧。）
+[k]
+
+＠伊阿宋（0.2秒）
+（也就是说淋湿全都透明了吧？[r]　会变成[#不成体统的样子]吧？）
+[k]
+
+＠伊阿宋（0.3秒）
+（不，虽说这个无关紧要啦。[r]　问题在于喀耳刻的反应。）
+[k]
+
+＠伊阿宋（0.4秒）
+（那家伙平时就很那啥，[r]　但好歹也是希腊的大魔女。）
+[k]
+
+＠伊阿宋（0.5秒）
+（应该会做出将看到自己肌肤的[r]　人类变成怪物这种事来吧？）
+[k]
+
+[charaFace H 0]
+[charaFadein H 0.1 0,-70]
+
+＠伊阿宋（0.6秒）
+（那也就是说最成问题的就是御主。）
+[k]
+
+[messageOff]
+[charaFadeout G 0.4]
+[charaFace I 0]
+[charaFadein I 0.4 0,-70]
+[wt 0.4]
+
+＠伊阿宋（0.7秒）
+（真没办法。[r]　御主，稍后我会帮你买冰淇淋的。）
+[k]
+
+[messageOff]
+[charaFadeout H 0.4]
+[wt 0.4]
+
+＠伊阿宋（0.8秒）
+（哼……但我这高速思考的水准[r]　已经足以与阴沉的Caster相匹敌了吧。）
+[k]
+
+[messageOff]
+[charaFadeout I 0.3]
+[charaFadeout J 0.3]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+[bgmStop BGM_EVENT_48 1.0]
+
+＠伊阿宋
+哎哟手滑了！！
+[k]
+
+
+？1：哎！？
+？！
+
+[messageOff]
+[wipeout openEye 0.5 0.3]
+[se ade66]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+
+[wipein openEye 1.0 0.1]
+[wait wipe]
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace F 0]
+[charaFadein F 0.1 -256,-50]
+[charaFace A 4]
+[charaFadein A 0.1 256,-50]
+
+＠喀耳刻
+啊～真是的～，都湿透了。
+[k]
+
+＠奥德修斯
+衣服不要紧吧？
+[k]
+
+[charaFace A 7]
+
+＠喀耳刻
+啊，衣服？
+[k]
+
+[charaFace A 1]
+[bgm BGM_EVENT_7 0.1]
+
+＠喀耳刻
+哈哈哈。[r]你当我是谁啊？
+[k]
+
+
+＠喀耳刻
+我可是赫卡忒的弟子，[r]大魔女喀耳刻哦。
+[k]
+
+＠喀耳刻
+湿透的衣服变透明这种事，[r]就算神明允许，我也不会允许！
+[k]
+
+[charaFace F 1]
+
+＠奥德修斯
+原来如此。[r]的确看不到呢。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgm BGM_EVENT_7 0.5 0.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaFadeout A 0.1]
+
+[pictureFrame]
+[wt 0.3]
+
+
+？1：发生什么事了？
+？！
+
+
+[wipeout openEye 0.5 0.1]
+[wait wipe]
+[fadein black 0.1]
+[wait fade]
+
+[se ade312]
+[wt 1.0]
+
+[seStop ade312 0.5]
+[wipein openEye 0.5 0.7]
+[bgm BGM_EVENT_7 0.5 1.0]
+[wait wipe]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+
+＠伊阿宋
+……抱歉，都怪我这个英雄脑子实在是[r]太好使以至于做了些对不起你的事……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠俄里翁
+伊[messageShake 0.03 5 5 0.4]阿宋居然罕见地道歉了！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠阿周那
+这能叫道歉吗……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠喀耳刻
+但话说回来，怎么，[r]难道你对我的裸露肌肤有兴趣吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠奥德修斯
+没有。
+[k]
+
+[charaFace F 4]
+
+＠奥德修斯
+虽然没有，[r]但我认为不该让少女感到羞耻。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠喀耳刻
+……你你你你这钢铁直男！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaFace F 0]
+[charaFadein F 0.1 0]
+[charaFace A 3]
+[charaFadein A 0.1 2]
+[wt 0.2]
+
+[charaMove A 150,0 0.3]
+[wt 0.3]
+
+[charaMoveReturn A 130,0 0.3]
+[wt 0.1]
+[charaEffect A bit_talk_rainbow_star -186,0]
+[se ad76]
+[charaShake F 0.01 0 3 0.5]
+[wt 0.6]
+
+[charaMoveReturn A 130,0 0.3]
+[wt 0.1]
+[charaEffect A bit_talk_rainbow_star -186,0]
+[se ad76]
+[charaShake F 0.01 0 3 0.5]
+[wt 0.8]
+
+[charaFadeout F 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaEffectDestroy A bit_talk_rainbow_star]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠奥德修斯
+我自认这个回答非常正确啊……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠俄里翁
+嗯，毕竟你就是这种性格嘛……[r]我开始逐渐明白了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠乔尔乔斯
+这景象相当不错。[r]笑一个。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠喀耳刻
+谁[messageShake 0.03 6 6 0.3]笑得出来啦！！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+
+
+[charaFadeout A 0.1]
+
+[scene 21503]
+
+[wipeFilter cinema 0.5 0]
+[wt 0.8]
+
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠？？？
+稍微有些遗憾呢。
+[k]
+
+＠？？？
+本以为只要能让他看到裸露的皮肤，[r]就能以负责为由[line 3]逐渐解决呢。
+[k]
+
+[clear]
+
+＠？？？
+看来事情并没有那么顺利呢。[r]但至少关系和睦了。
+[k]
+
+[clear]
+
+＠？？？
+对！[r]太棒了。不枉我特地拜托你这件事！
+[k]
+
+[clear]
+
+＠？？？
+接下来该怎么做？
+[k]
+
+[clear]
+
+＠？？？
+接下来嘛……呵呵呵。[r]对，这样做如何。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_5 2.0]
+[wait fade]
+[soundStopAll]
+[end]

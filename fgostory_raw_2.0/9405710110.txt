@@ -1,0 +1,963 @@
+
+＄94-05-71-01-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 6031001 1 刑部姬]
+[branchQuestNotClear lblNotClear00 3000303]
+[charaSet B 1098124510 1 达·芬奇]
+[branch lblConf00]
+[label lblNotClear00]
+[charaSet B 98111500 1 达·芬奇]
+[label lblConf00]
+[charaSet C 98001000 1 玛修]
+[charaSet D 3043000 1 绘里濑]
+[charaSet E 1098154700 1 市民]
+[charaSet F 98108900 1 市民]
+[charaSet G 98108900 1 市民]
+[charaSet H 1098162800 1 市民]
+[charaSet I 1005001 1 尼禄]
+[charaSet J 1006001 1 ？？？]
+[charaSet K 98115000 1 通讯用]
+[imageSet L back10000 1]
+[charaScale L 1.1]
+[charaDepth L 1]
+[charaDepth D 2]
+[charaDepth A 3]
+
+[scene 10000]
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_07_fs]
+[se ad12]
+[wt 4]
+[fadeout white 1.0]
+[wait fade]
+
+[scene 114000]
+[wt 1.5]
+[fadein white 1.0]
+[wait fade]
+
+[wt 0.4]
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+＠刑部姬
+终于到了，秋叶原！
+[k]
+
+[charaFace A 0]
+＠刑部姬
+唔，但总感觉这条街的样子[r]和想象的有点不一样呢……
+[k]
+
+＠刑部姬
+不，虽说确实有秋叶原的感觉，[r]唔～？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear01 3000303]
+[charaEffect K bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[branch lblConf01]
+
+[label lblNotClear01]
+[charaEffect K bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf01]
+＠达·芬奇
+你们现在所处的位置，[r]可以说是秋叶原的主干道。
+[k]
+
+＠达·芬奇
+周围的情况怎么样？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠玛修
+这个嘛，非常热闹。[r]宽阔的道路就像步行街一样。
+[k]
+
+＠玛修
+没有发现称得上威胁的存在。甚至可以说，[r]这里是个前所未有的和平场所。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠绘里濑
+嗯，也算是预料之内吧。[r]和我认识的“秋叶原”不同，完全不是同一个地方。
+[k]
+
+？1：其实我也有相同的感想。
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠玛修
+连来自东京的前辈也这么认为吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠刑部姬
+对吧？　建筑给人的感觉似乎和[r]记录影像及动画中的秋叶原有些不一样。
+[k]
+
+＠刑部姬
+不过街道的样子会随时代不同发生变化，[r]应该是这种程度的误差吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear02 3000303]
+[charaPut K 1]
+[charaTalk B]
+[charaFace B 24]
+[charaFadein B 0.1 1]
+＠达·芬奇
+不过，这里和[%1]生活的时期[r]几乎是同一个时代哦。
+[k]
+
+[charaFace B 14]
+＠达·芬奇
+然而……唔……和记录中的秋叶原景色[r]果然并不一致呢。
+[k]
+
+＠达·芬奇
+是这个特异点特有的变化吗……？
+[k]
+
+[branch lblConf02]
+
+[label lblNotClear02]
+[charaPut K 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+＠达·芬奇
+不过，这里和[%1]生活的时期[r]几乎是同一个时代哦。
+[k]
+
+[charaFace B 4]
+＠达·芬奇
+然而……唔……和记录中的秋叶原景色[r]果然并不一致呢。
+[k]
+
+＠达·芬奇
+是这个特异点特有的变化吗……？
+[k]
+
+[label lblConf02]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+＠绘里濑
+话说……我们是不是被围观了？
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_77 0.7 0.2]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[pictureFrame cut063_cinema]
+[charaTalk E]
+[charaFace F 0]
+[charaFadeinFSL F 0.1 -256,-50]
+[charaFace E 0]
+[charaFadeinFSR E 0.1 256,-50]
+[wt 0.2]
+[bgm BGM_EVENT_77 0.7 0.6]
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+
+[charaTalk E]
+＠E：市民[FFFFFF]
+啊，喂。快看那边。
+[k]
+
+[charaTalk F]
+＠F：[FFFFFF]市民
+确实，Cosplay质量好高啊。[r]……要不要去拜托对方允许我们拍个照呢？
+[k]
+
+[charaTalk E]
+＠E：市民[FFFFFF]
+按规矩，在中央大道上好像不准拍照吧。
+[k]
+
+[charaTalk F]
+＠F：[FFFFFF]市民
+这样啊。真遗憾。但如果这么说的话，[r]规定也禁止穿着Cos服在大道上走吧。
+[k]
+
+[charaTalk E]
+＠E：市民[FFFFFF]
+是因为走路姿势非常自然，[r]连守卫也没注意到吧？
+[k]
+
+＠E：市民[FFFFFF]
+能像那么自然地融入那身打扮，[r]多半是Cosplay老手吧。
+[k]
+
+[charaTalk F]
+＠F：[FFFFFF]市民
+反正到时候被责问的也是那些人，我们……
+[k]
+
+[charaTalk E]
+＠E：市民[FFFFFF]
+嗯。只能在内心狂点赞了吧。[r]感激不尽！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[wipeout rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[pictureFrame]
+[charaTalk off]
+[charaFace D 0]
+[charaFadeinFSL D 0.1 0]
+[charaFace A 0]
+[charaFadeinFSR A 0.1 2]
+[wt 0.2]
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[wt 0.2]
+[charaMoveFSR A 200,0 0.4]
+[wt 0.6]
+[charaMoveReturnFSR A 200,-4 0.2]
+[wt 0.1]
+[se ad579]
+[seVolume ad579 0 0.7]
+[seStop ad579 0.4]
+[se ad110]
+[seVolume ad110 0 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 9]
+＠刑部姬
+绘里亲……[r]（将手搭在她肩上。）[twt 0.4][bgm BGM_EVENT_7 0.1]
+[k]
+
+[charaFace D 24]
+[charaShake D 0.04 3 3 0.6]
+＠绘里濑
+干什么！？　不……不是啦！
+[k]
+
+＠刑部姬
+你再否认也没用啦。[r]你那身完全被当做邪马台国系的Cosplay了。
+[k]
+
+＠刑部姬
+……要不要连带把卑弥呼亲也叫来？
+[k]
+
+[charaFace D 23]
+＠绘里濑
+慢着，慢着？　我承认自己和这里不太搭！[r]但被当做Cosplay真是种屈辱。
+[k]
+
+＠绘里濑
+这身打扮是身为从者的样式。[r]大家都这样吧？　喂，为什么要移开视线？
+[k]
+
+[charaFace D 18]
+＠绘里濑
+不过原来如此……在[#这个秋叶原]，[r]从者在街上行走算异常情况吧……呃，换言之？
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+＠尼禄
+呵呵呵……呵～呵呵呵！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+＠玛修
+突然高声大笑！？[r]发……发生什么事了，尼禄小姐？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 8]
+[charaFadein I 0.1 1]
+＠尼禄
+不，没什么，余只是觉得差不多该挑明了。
+[k]
+
+[bgm BGM_EVENT_27 0.1]
+
+[charaFace I 7]
+＠尼禄
+实不相瞒[line 3][r]刚才的视线全都是投向余的！
+[k]
+
+＠尼禄
+虽说绘里濑确实也是余承认的美少女，[r]但这片土地现在是余威光照耀之地！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠绘里濑
+不……不胜惶恐。
+[k]
+
+[charaFadeTime L 0.1 0.6]
+[bgm BGM_EVENT_27 0.4 0.6]
+[wt 0.1]
+[charaFace D 24]
+＠绘里濑
+（呜哇，没想到竟然能得到[r]　罗马皇帝陛下如此赞扬……）
+[k]
+
+[charaFadeout L 0.1]
+[charaFadeout D 0.1]
+[bgm BGM_EVENT_27 0.4 1.0]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+＠尼禄
+看好了，答案就在那里！[r]无论是那边还是这边，到处都有！
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[cameraMove 1.0 -100,-60 1.2]
+[wt 1.4]
+
+[wt 0.5]
+[cameraMove 2.2 100,-60 1.2]
+[wt 3.0]
+
+[cameraMove 1.0 0,0 1.0]
+[wt 1.4]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠玛修
+这……这是！？[r]类似于……尼禄小姐的周边广告吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠刑部姬
+仔细看来，到处都是大楼外墙广告啊！[r]为什么！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear03 3000303]
+[charaPut K 1]
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+[branch lblConf03]
+
+[label lblNotClear03]
+[charaPut K 1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf03]
+＠达·芬奇
+呃……这是怎么回事？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+＠尼禄
+呵呵呵。[r]那就由余说明吧。
+[k]
+
+＠尼禄
+这里是艺术与歌唱之都，[r]而余是热爱艺术与歌唱的皇帝。
+[k]
+
+[charaFace I 8]
+＠尼禄
+既然如此[line 3]余会想要[r]得到这里也在情理之中吧？
+[k]
+
+[charaFace I 0]
+＠尼禄
+不，余毕竟是[%1]的从者，
+[k]
+
+＠尼禄
+不会妨碍大家消除特异点。[r]也不可能实际得到这里。
+[k]
+
+＠尼禄
+所以至少[line 3]要在这著名的艺术之都[r]刻上名为余的顶级艺术才行。
+[k]
+
+[charaFace I 2]
+＠尼禄
+余认为，这样做或许也可以证明[r]余得到了这座都市吧！
+[k]
+
+[charaFace I 0]
+＠尼禄
+所以余动用了所有力量，[r]在这秋叶原开展了余这一内容。
+[k]
+
+＠尼禄
+投放顶级质量的手办，[r]推进漫画化与动画化，
+[k]
+
+＠尼禄
+在SNS上极力炒热这个话题……
+[k]
+
+＠尼禄
+当然也安排了乐曲创作，[r]但由于余对音乐非常讲究，因此在发行上花了点时间。
+[k]
+
+＠尼禄
+需要再等待一段时间。
+[k]
+
+[charaFace I 2]
+＠尼禄
+总之，眼前这些就是余付出的成果！
+[k]
+
+＠尼禄
+一切按照预定，余的内容化大成功！[r]如今在这秋叶原，
+[k]
+
+＠尼禄
+余这个存在无人不知无人不晓，[r]已经被大家认作一个角色人物了！
+[k]
+
+[charaFace I 6]
+＠尼禄
+唔呵呵呵。如何如何，御主啊。有没有吓到？[r]……惊喜！
+[k]
+
+？1：瞠目结舌……
+？2：您在干什么啊，皇帝陛下！
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear04 3000303]
+[charaPut K 1]
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+[branch lblConf04]
+
+[label lblNotClear04]
+[charaPut K 1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf04]
+＠达·芬奇
+真是的，灵子转移偷渡的果然是你啊。
+[k]
+
+＠达·芬奇
+在没完成调查之前，[r]我可不希望有人改变特异点啊……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+＠尼禄
+余明白这个道理。但请原谅余！[r]因为余是位当机立断的皇帝！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+＠玛修
+但是，从特异点被发现[r]到开始这么做，可用的时间并不多吧？
+[k]
+
+＠玛修
+您竟然能做到这个程度……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+＠尼禄
+唔嗯，在事物的流行与过时方面，[r]最重要的莫过于广告力。
+[k]
+
+＠尼禄
+只要像流水般注入皇帝特权与罗马金钱，[r]要完成这些易如反掌。
+[k]
+
+＠尼禄
+当然，也需要具备足以与缪斯媲美的[r]余这种魅力十足存在的实力才行。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠刑部姬
+这话翻译过来，靠的就是压力与收买吧。[r]不愧是暴君行为……
+[k]
+
+[charaFace A 0]
+＠刑部姬
+那么，难道说这条街道的样子[r]也是你根据自己的喜好改造的？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠尼禄
+唔？　不，自从余初次看到这街道以来，[r]这里就一直是这个样子啊？
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[se ad5]
+[seVolume ad5 0 0]
+[seVolume ad5 0.7 0.7]
+[wt 0.7]
+[charaTalk off]
+[charaFace G 2]
+[charaFadeinFSL G 0.4 0]
+[charaFace H 0]
+[charaFadeinFSR H 0.4 2]
+[wt 1.0]
+[seStop ad5 2.5]
+
+[charaTalk on]
+[charaTalk G]
+＠G：市民[FFFFFF]
+喂，快看那个。[r]那不是[#尼禄]亲吗？（嘈杂。）
+[k]
+
+[charaTalk H]
+＠H：[FFFFFF]市民
+真的啊。[r]不知道能不能求个签名呢……（嘈杂。）
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+＠尼禄
+唔嗯唔嗯，身为大人气角色模特的余。[r]会受瞩目也是理所当然的。
+[k]
+
+[charaFace I 8]
+＠尼禄
+哎呀～，有人气还真不好办呢～，真不好办呢～！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠绘里濑
+现在不是高兴的时候。[r]应该避免受到瞩目比较好。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear05 3000303]
+[charaPut K 1]
+[charaTalk B]
+[charaFace B 24]
+[charaFadein B 0.1 1]
+[branch lblConf05]
+
+[label lblNotClear05]
+[charaPut K 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf05]
+＠达·芬奇
+说得对。先离开这里吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+＠尼禄
+噢噢，那汝等跟余来吧。[r]余要带汝等去一个地方。
+[k]
+
+＠尼禄
+其实，那里才是惊喜的看点！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_27 1.0]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠刑部姬
+没办法，总之先跟陛下走吧。[r][#公主:我]也想尽快去购物……
+[k]
+
+[messageOff]
+[se ad60]
+[wipeout rightToLeft 1.0 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.7]
+[seStop ad60 1.0]
+[wipein leftToRight 1.0 1]
+[wait wipe]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+＠绘里濑
+这里是……站前广场吗。[bgm BGM_EVENT_77 0.1]
+[k]
+
+？1：这里有什么吗？
+？2：您说有惊喜的看点……
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 1]
+＠尼禄
+呵呵呵，实不相瞒！[r]这车站前的黄金地块上安置着余的等身大雕塑！
+[k]
+
+[charaFace I 8]
+＠尼禄
+虽然还没有亲眼确认，但余都安排好了。
+[k]
+
+[charaFace I 6]
+＠尼禄
+犹如这座艺术都市秋叶原的象征，[r]大家一出车站就能立刻看到的，
+[k]
+
+＠尼禄
+正是光彩照人且身穿[r]正式新娘礼服的余的形象……
+[k]
+
+＠尼禄
+无论谁看到那个，都会在余的威光中颤抖，[r]为余的美摄去心魄[line 3]
+[k]
+
+[charaFace I 2]
+＠尼禄
+可以说那个等身大雕塑[r]就是余夺取秋叶原计划的奖杯！
+[k]
+
+＠尼禄
+来吧，在这里！　快看，[r]然后仔细倾听，余艺术性的胜利宣言！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[charaFadeout I 0.1]
+[wt 0.2]
+
+[cameraMove 0.7 0,25 1.1]
+[wt 1.2]
+[cameraMove 0.7 -50,25 1.1]
+[wt 1.2]
+[cameraMove 1.4 50,25 1.1]
+[wt 1.9]
+[cameraMove 0.7 0,25 1.1]
+[wt 1.0]
+[cameraMove 0.7 0,0 1.0]
+[wt 1.5]
+
+？1：…………？
+？！
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+＠绘里濑
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠刑部姬
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+＠玛修
+……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+＠尼禄
+怎么了，为什么都一副呆愣的表情。[r]就在那里哦。一出车站必定能看到的黄金地块，
+[k]
+
+＠尼禄
+就在只有真正的超人气形象[r]才能使用的展示柜中[line 3]
+[k]
+
+[charaFace I 0]
+＠尼禄
+…………
+[k]
+
+[fowardEffect bit_talk_41_fs]
+[charaFace I 2]
+＠尼禄
+[f x-large]怎么会没有！[bgm BGM_EVENT_27 0.1]
+[k]
+
+[fowardEffectDestroy bit_talk_41_fs]
+[charaFace I 4]
+＠尼禄
+为为为为什么？[r]余确实已经向值得信任的厂家下订单了啊！？
+[k]
+
+＠尼禄
+按照预定，应该早就已经交付，[r]并被安置在这里才对[line 3]唔唔？
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[se ad940]
+[seVolume ad940 0 0]
+[seVolume ad940 1.0 0.7]
+[wt 1.5]
+[seStop ad940 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠刑部姬
+在吵嚷些什么？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠绘里濑
+是那栋楼的外墙大屏。[r]好像要开始播放什么节目了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+＠尼禄
+节目什么的无关紧要啦！　现在最大的问题[r]是余之雕塑消失的事件[line 3]
+[k]
+
+[bgmStop BGM_EVENT_27 2.0]
+
+＠尼禄
+呃，什么[line 4]！？[messageShake 0.04 4 4 0.6]
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[cameraMove 1.1 70,-70 1.2]
+[wt 0.3]
+[wipeout diaOut 0.7 1]
+[wait wipe]
+[wt 0.4]
+[cameraMove 0.1 0,0 1.0]
+[charaDepth I 10]
+[scene 116206]
+[charaTalk off]
+[se ad539]
+[wt 0.4]
+[seStop ad539 0.3]
+[fadeout black 0.1]
+[wait fade]
+[wipein diaOut 0.1 1]
+[wait wipe]
+[se ad562]
+[fadein black 1.0]
+[wt 0.2]
+[wait fade]
+
+[scene 116201 0.2]
+[wt 0.7]
+
+[bgm BGM_EVENT_65 0.1]
+
+＠？？？
+闪亮尼禄尼禄梦之街～☆[r]秋叶之天使降临此地～☆
+[k]
+
+＠？？？
+大家～，都好吗～！？　是余亲哦～！
+[k]
+
+＠？？？
+秋叶原公认偶像兼应援团长，[r][#秋叶尼禄]的突击直播[line 3]正式开始～！
+[k]
+
+[messageOff]
+
+[charaFace I 5]
+[charaFadeinFSL I 0.1 -460,-180]
+[wt 1.0]
+
+[bgm BGM_EVENT_65 0.7 0.6]
+[charaFace I 2]
+＠尼禄
+[f x-large][messageShake 0.04 4 4 1.0]那不是余吗！？
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_65 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

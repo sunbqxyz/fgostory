@@ -1,0 +1,767 @@
+
+＄94-05-53-12-2-0
+[soundStopAll]
+[enableFullScreen]
+
+
+
+
+
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 6041000 1 鬼一法眼]
+[charaSet C 4013300 1 梅芙]
+[charaSet D 1098206200 1 弁庆]
+[charaSet E 98104200 1 伊阿宋]
+[charaSet F 98104010 1 库·丘林·Alter]
+[charaSet G 1098206100 1 牛若丸]
+[charaSet H 11010001 1 平景清]
+[charaSet I 1098202300 1 平景清]
+
+[charaSet J 98115000 1 通信用]
+
+[charaPut J 2400,2400]
+[charaEffect J bit_talk_10_LowLevel]
+
+[scene 109901]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.4]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+[bgm BGM_EVENT_72 0.1]
+
+＠平景清
+[line 3]吾之真名，乃是平景清！
+[k]
+
+[messageOff]
+[charaFace H 0]
+[wt 1.0]
+
+[branchQuestNotClear lblNotClear 3000716]
+
+[fadeout white 0.5]
+[se ad592]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+[effect bit_talk_noise02]
+[cameraFilter gray]
+
+[scene 103200]
+[wt 0.5]
+
+[fadein white 0.5]
+[wait fade]
+
+[wt 2.0]
+
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout I 0.1]
+[effectStop bit_talk_noise02]
+[cameraFilter normal]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[scene 109901]
+[wt 0.5]
+
+[fadein white 0.5]
+[wait fade]
+
+？1：平景清！
+？！
+
+？1：是与牛若丸，不，是与义经融合的怨灵！
+？！
+
+[charaFace H 1]
+
+＠平景清
+哦。
+[k]
+
+[charaFace H 0]
+
+＠平景清
+[line 3]你竟然已经见过这个形象了啊，真是奇缘。
+[k]
+
+＠平景清
+原来如此，难怪。
+[k]
+
+
+＠平景清
+此乃义经的灵基。[r]吾还奇怪为何会如此适应，
+[k]
+
+＠平景清
+原来如此。已经融合了啊。[r]虽说灵基上并未留下相关记录，
+[k]
+
+[charaFace H 2]
+
+＠平景清
+但缘分就是缘分。[r]真有意思！
+[k]
+
+[branch lblConf]
+
+[label lblNotClear]
+
+[label lblConf]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+
+＠玛修
+平景清[line 3][r]乃是平安时代末期被视为桓武平氏武者的人物。
+[k]
+
+＠玛修
+是与毁灭了平家开创幕府的源氏为敌，[r]尤其针对源赖朝，企图复仇的传说人物。
+[k]
+
+[charaFace A 4]
+
+＠玛修
+世间流传着很多景清传说，[r]其中最令人惊异的……应该是不死传说吧。
+[k]
+
+[charaFace A 7]
+
+
+＠玛修
+不知道是基于什么样的魔术构造，[r]总之据说『即便被砍下首级，平景清也会复活』。
+[k]
+
+[charaPut J 2400,2400]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠伊阿宋
+不死的英灵吗！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠弁庆
+唔……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+
+＠梅芙
+为什么这家伙会长着牛若丸的脸啊？[r]说到底，那[#灵基:身躯]是牛若丸的吧。
+[k]
+
+＠梅芙
+难道两个英灵同时存在于一个灵基中？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠平景清
+……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+嗯，咱有些眉目了哦。[r][#传说众多的平景清]吗。
+[k]
+
+[charaFace B 6]
+
+＠鬼一法眼
+众多传说中描绘的『景清』。[r]众多传说中描绘的『义经』。
+[k]
+
+＠鬼一法眼
+虽然分别身在平家与源氏，[r]但这两个人是多么的相似啊。
+[k]
+
+[charaFace B 16]
+
+
+＠鬼一法眼
+不一样的……[r]应该是平景清并没有牛若丸那样的实情吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠玛修
+嗯，是的。[r]您说得对。
+[k]
+
+[charaFace A 8]
+
+
+＠玛修
+『平家物语』中的恶七兵卫景清尚且不论，[r]但景清传说中描绘的平景清……
+[k]
+
+[charaFace A 7]
+
+＠玛修
+与其说是出自历史事实的传说，[r]倒不如说是为英雄故事而出现的传说中的存在。
+[k]
+
+[charaPut J 2400,2400]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+没有实情的存在。[r]在英灵中其实并不稀罕……
+[k]
+
+[charaFace B 17]
+
+＠鬼一法眼
+但根据咱的感觉，那个叫景清的家伙[r]别说实情了，连实体都没有。
+[k]
+
+＠鬼一法眼
+比起英灵，更像是亡灵、怨灵吧？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠平景清
+……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+没有实体的怨灵，平景清……[r]究竟是基于什么缘分，才会附身于咱弟子身上！
+[k]
+
+
+？1：……为什么要附在牛若丸身上呢。
+
+？！
+
+[charaFace B 6]
+
+＠鬼一法眼
+平景清。[r]你这家伙[line 3]
+[k]
+
+＠鬼一法眼
+打算完全支配遮那王，不，[r]是完全支配义经的[#灵基:身体]吧？
+[k]
+
+[charaFace B 16]
+
+＠鬼一法眼
+为此，你将镰仓化作了魔圈。[r]本以为你的目的是杀死咱……
+[k]
+
+[charaFace B 5]
+
+＠鬼一法眼
+但能将所有踏入之人都化作自己猎物的魔圈。[r]其真正目的是！
+[k]
+
+[charaFace B 6]
+
+
+＠鬼一法眼
+[line 3][#杀害迦勒底的御主]吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+
+＠牛若丸
+……
+[k]
+
+
+
+
+？1：[line 10]
+？！
+
+
+
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠平景清
+正是。
+[k]
+
+
+[charaFace H 0]
+
+＠平景清
+这义经的灵基相当优秀。
+[k]
+
+＠平景清
+只要和吾化为一体，[r]吾之使命定能完成。
+[k]
+
+？1：屠戮源氏。
+
+？！
+
+[charaFace H 1]
+
+＠平景清
+没错。
+[k]
+
+[charaFace H 0]
+
+＠平景清
+杀光所有时代、[r]所有地区的源氏，
+[k]
+
+＠平景清
+景清完成自己的复仇，[r]义经也完成自己的复仇。
+[k]
+
+[charaFace H 7]
+
+＠平景清
+但是……
+[k]
+
+＠平景清
+派生自英灵·牛若丸的这义经之灵基[r]似乎相当顽固。
+[k]
+
+[charaFace H 5]
+
+＠平景清
+唠叨地表示不会协助吾。
+[k]
+
+＠平景清
+那就没办法了。[r]吾必须击碎她那顽固的源头。
+[k]
+
+＠平景清
+也就是对义经，也就是对迦勒底的牛若丸来说，[r]可以被称作[#当代赖朝]的人……
+[k]
+
+[charaFace H 1]
+
+＠平景清
+迦勒底的御主，吾要杀了你。
+[k]
+
+？1：…………………………
+
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+失去主人的忠犬会丧失自我。
+[k]
+
+
+＠鬼一法眼
+遮那王的灵魂肯定会立刻烟消云散，[r]只剩作为外壳的以太肉体吧。
+[k]
+
+[charaFace B 16]
+
+＠鬼一法眼
+你这家伙就是为了这个……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠伊阿宋
+打算彻底占据那个躯体啊。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠梅芙
+做法真阴险。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+请……请等一下！
+[k]
+
+[charaFace A 2]
+
+
+＠玛修
+一旦失去了御主这位拱心石，[r]几乎所有的英灵都将无法维持现界！
+[k]
+
+[charaFace A 4]
+
+＠玛修
+您应该不会不明白这点……
+[k]
+
+[charaPut J 2400,2400]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+慢点，玛修。[r]还有万宝小槌吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+！
+[k]
+
+[charaPut J 2400,2400]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+
+＠平景清
+……吾本不打算说得那么清楚。[r]但看来可以不用解释了呢。
+[k]
+
+[charaFace H 0]
+
+＠平景清
+好了。[r]该说的都说完了。
+[k]
+
+[charaFace H 7]
+
+＠平景清
+那么，吾要询问迦勒底的御主。
+[k]
+
+
+＠平景清
+要杀你易如反掌。[r]此处已是魔圈。
+[k]
+
+[charaFace H 5]
+
+＠平景清
+但是……
+[k]
+
+[charaFace H 8]
+
+＠平景清
+稍稍有些[#可惜]。
+[k]
+
+[charaFace H 0]
+
+＠平景清
+这灵基认你为主。[r]正因为如此。
+[k]
+
+＠平景清
+倘若你愿意成为吾之仆从，[r]吾就不取你性命，放你一条生路。
+[k]
+
+[charaFace H 5]
+[bgmStop BGM_EVENT_72 1.5]
+
+
+＠平景清
+倘若不愿意[line 3]那你，就在这里，去死吧。
+[k]
+
+？1：很抱歉，
+？2：现在我无法帮你。
+
+？！
+
+[charaFace H 0]
+
+＠平景清
+这样啊。
+[k]
+
+[charaFace H 5]
+
+＠平景清
+那看来只能屠戮[line 3]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_67 0.1]
+
+＠鬼一法眼
+不，这可不行！
+[k]
+
+＠鬼一法眼
+岂能让你杀了这家伙！[r]这是属于咱的！
+[k]
+
+？1：哎？
+？！
+
+？1：鬼一师傅？
+？！
+
+[charaFace B 7]
+
+＠鬼一法眼
+对。没错，这孩子现在虽然只是咱的弟子……
+[k]
+
+[charaFace B 2]
+
+＠鬼一法眼
+但咱相当喜欢这孩子。[r]这孩子迟早会成为咱的养子，或是成为咱的新娘！
+[k]
+
+＠鬼一法眼
+决不能容许你这样的杀害这孩子！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠伊阿宋
+为什么？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+
+＠梅芙
+新娘？　[&不是新郎？:说的是新娘吗？]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+您[messageShake 0.01 5 5 0.5]说什么胡话呢，师傅[line 3]！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+哎，因为这是我先发现的啊……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+
+＠伊阿宋
+思维模式也太怪了吧！[r]不愧是牛若的师傅呢，你这个人！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠平景清
+…………咯咯。
+[k]
+
+＠平景清
+真搞笑。[r]鬼一法眼，不愧是天下万世之师。
+[k]
+
+[charaFace H 5]
+
+
+＠平景清
+连说笑话的工夫都那么擅长呢。[r]咯咯。那么，吾也必须尽自己的礼数才行！
+[k]
+
+[charaFace H 2]
+[bgmStop BGM_EVENT_67 0.5]
+
+＠平景清
+各位！
+[k]
+
+[messageOff]
+[charaFace H 1]
+[wt 1.0]
+[charaFace H 2]
+
+[bgm BGM_EVENT_3 0.1]
+
+
+＠平景清
+[line 3]在此大开杀戒吧！
+[k]
+
+[messageOff]
+[charaFace H 0]
+[charaMoveScale H 1.2 0.2]
+[charaMove H 0,18 0.2]
+[se bac1]
+[effect bit_talk_41]
+[charaFadeout H 0.2]
+
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+
+[wt 0.2]
+[effectStop bit_talk_41]
+[effectDestroy]
+[wt 0.1]
+
+[blurOff motion 0.1]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

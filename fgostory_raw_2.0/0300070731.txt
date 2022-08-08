@@ -1,0 +1,762 @@
+
+
+＄03-00-07-07-3-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 6021001 1 酒吞童子]
+[charaSet B 5017000 1 美狄亚·Lily]
+[charaSet C 1098201600 1 渡边纲]
+[charaSet D 5010001 1 帕拉塞尔苏斯]
+[charaSet E 5004001 1 童谣]
+[charaSet F 1098204400 1 段藏]
+[charaSet G 98074000 1 源赖光]
+
+[imageSet H back10000 1]
+[charaScale H 1.05]
+
+[charaSet I 7006300 1 坂田金时]
+
+[charaSet J 98115000 1 特效用]
+
+[scene 10000]
+
+[bgm BGM_EVENT_24 0.1]
+
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[se ad1010]
+[wt 0.6]
+[se ad1015]
+[se ad1014]
+[wt 0.5]
+
+
+[effect bit_talk_14]
+[se ad1032]
+[se ad881]
+[se ad1012]
+[seVolume ad1012 0 0.3]
+[se ad880]
+
+[fadeout white 0.4]
+[wait fade]
+
+[se ad632]
+[seVolume ad632 0 0.2]
+
+[scene 103200]
+
+[charaTalk off]
+
+[charaTalk depthOff]
+
+[charaDepth I 5]
+[charaDepth A 4]
+
+[charaFace A 0]
+[charaFadein A 0.1 -270,0]
+[charaShake A 0.07 2 2 2.0]
+
+[charaFace I 8]
+[charaFadein I 0.1 270,0]
+[charaShake I 0.07 2 2 2.0]
+
+[fadein white 0.8]
+[wait fade]
+
+[wt 1.2]
+
+[effect bit_talk_14]
+[se ad881]
+[se ad618]
+
+[seStop ad632 0.5]
+[seStop ad1012 0.5]
+[wt 0.1]
+
+[charaShakeStop A]
+[charaShakeStop I]
+
+[charaMove A -300,0 0.2]
+[charaMove I 300,0 0.2]
+
+[charaFadeout A 0.1]
+[charaFadeout I 0.1]
+[wt 0.6]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[wt 0.2]
+
+[charaTalk on]
+
+[charaTalk I]
+[charaFace I 8]
+[charaFadein I 0.4 -100,0]
+[charaMove I -30,0 0.1]
+[wt 0.1]
+[charaMove I 1 0.2]
+[wt 0.9]
+[se ad997]
+[charaFace I 0]
+＠坂田金时
+原来如此！[r]我知道了，酒吞，圣杯战争确实很愉快！
+[k]
+
+＠坂田金时
+不对，是痛快！[r]对吧！
+[k]
+
+[charaFace I 2]
+
+＠坂田金时
+平时光是追赶你就够费劲的了！[r]但是[line 3]
+[k]
+
+＠坂田金时
+我才不会跟你硬碰硬呢！[r]目标应该是对手的弱点！
+[k]
+
+[messageOff]
+[se ad678]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect I erasureReverse 1 0.25]
+[wt 0.6]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.8]
+
+＠酒吞童子
+Caster先生！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠坂田金时
+[f large]晚啦！
+[k]
+
+
+[messageOff]
+
+[bgmStop BGM_EVENT_24 2.0]
+
+[se ad85]
+[effect bit_talk_gold_slash_02]
+[wt 0.6]
+
+[effect bit_talk_thunder_03_fs]
+[se ad842]
+[se ade346]
+[wt 0.4]
+[se ad1056]
+[seVolume ad1056 0 0.4]
+[fadeout white 0.4]
+[wait fade]
+
+
+[wt 2.0]
+
+
+[fadein white 1.5]
+[wait fade]
+
+[se ad193]
+[scene 102701 1.5]
+[wt 2.0]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠酒吞童子
+…………挺能干的嘛，小家伙。
+[k]
+
+＠酒吞童子
+以其人之道还治其人之身呀，[r]害妾身都没什么立场说你狡猾了呢。
+[k]
+
+[charaFace A 4]
+
+＠酒吞童子
+不过，你真狡猾呢，小家伙。
+[k]
+
+＠酒吞童子
+你用尽全力的大雷[line 3]
+[k]
+
+＠酒吞童子
+竟然不是用来对付妾身，[r]而是[#轰][#Caster][#先生]呀。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠帕拉塞尔苏斯
+说得太对了。[r]看来是我们输了啊。
+[k]
+
+[bgm BGM_EVENT_95 0.1]
+
+
+[charaEffect J bit_talk_06 0,-100]
+
+＠帕拉塞尔苏斯
+被那道落雷直接命中。[r]我的灵核已然粉碎。
+[k]
+
+＠帕拉塞尔苏斯
+完败。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 2000,2000]
+
+[se ad997]
+[wt 0.8]
+[se ad1020]
+
+[charaTalk I]
+[charaFace I 9]
+[charaFadein I 0.1 1]
+
+
+＠坂田金时
+抱歉啦，酒吞的[#术者:Caster]！[r]话说我还没对你说过呢……
+[k]
+
+＠坂田金时
+源氏武者决不会输第二次。[r]而动真格的赖光四天王就更是如此啦。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠帕拉塞尔苏斯
+……原来如此。
+[k]
+
+？1：……虽然此前没能好好说上话，
+
+？！
+
+？1：但我知道你真实的一面哦，帕拉塞尔苏斯。
+
+？！
+
+[messageOff]
+[charaFace D 5]
+[wt 1.0]
+[charaFace D 0]
+
+＠帕拉塞尔苏斯
+哎呀，难道说……
+[k]
+
+＠帕拉塞尔苏斯
+虽然不清楚是否是在圣杯战争中，[r]但另一个我与您……？
+[k]
+
+[charaFace D 1]
+
+＠帕拉塞尔苏斯
+不，不了。我就不深究了。[r]说得对，那就容我期待那个时候的到来吧。
+[k]
+
+＠帕拉塞尔苏斯
+还有，[#我的主人:御主]，[r]至少允许我向您表达歉意。
+[k]
+
+[messageOff]
+[se ad949]
+[wt 0.4]
+[seStop ad949 1.4]
+[fowardEffect bit_talk_easy_spell_r]
+[wt 1.0]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 2000,2000]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.8]
+
+＠酒吞童子
+哎呀。[r]Caster先生还真是重情重义呐。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠帕拉塞尔苏斯
+哪有。还请您替我向先行回去的[r]茨木大人与虎熊大人问好。
+[k]
+
+[charaFace D 4]
+
+＠帕拉塞尔苏斯
+唉，我实在有些对不起茨木大人[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace D 1]
+[wt 0.4]
+
+＠帕拉塞尔苏斯
+呵呵，不过我这种人[r]事到如今说这些也没意义了吧。
+[k]
+
+＠帕拉塞尔苏斯
+那再见了。[r]仅以享乐之炎在圣杯战争中起舞之人啊。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 2000,2000]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+
+[se ad598]
+[charaSpecialEffect A wipeTime 0 1.5 0 0.2]
+[wt 1.4]
+[seStop ad598 0.3]
+[wt 1.2]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠帕拉塞尔苏斯
+[line 3]那各位，就此别过。祝大家武运昌隆。
+[k]
+
+＠帕拉塞尔苏斯
+我会在远方祈祷，[r]愿各位不会被圣杯之魔吞噬。
+[k]
+
+[messageOff]
+[charaSpecialEffect D flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect D]
+[charaEffectStop J bit_talk_06]
+[wt 1.8]
+
+[fadeout black 1.5]
+[bgm BGM_EVENT_95 1.5 0.5]
+[wait fade]
+
+[wt 1.0]
+
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_95 1.5 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠童谣
+……他走了呢。
+[k]
+
+[charaFace E 1]
+
+＠童谣
+那接下来该轮到我啦。[r]可以握住我的手吗，赖光？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠源赖光
+……呜。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+[charaEffect J bit_talk_06 0,-100]
+
+＠童谣
+啊啊，来了。
+[k]
+
+＠童谣
+这种既怀念又遥远的感觉，[r]不知我们会体会多少次呢。
+[k]
+
+[charaFace E 0]
+
+＠童谣
+英灵真是不可思议呢……
+[k]
+
+＠童谣
+明明几乎不记得，[r]却总觉得异常深刻、难以忘怀。
+[k]
+
+＠童谣
+重复着这种相逢与别离，[r]我们……
+[k]
+
+＠童谣
+若能在最后的最后抵达[#结局]……[r]就好了……
+[k]
+
+[charaFace E 1]
+
+＠童谣
+若能如愿，真希望那是个可喜可贺，可喜可贺的……[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_95 1.5]
+[fadeout white 1.5]
+[wait fade]
+
+[se ad52]
+[charaEffectStop J bit_talk_06]
+[wt 3.0]
+
+[fadein white 2.5]
+[wait fade]
+[wt 0.8]
+
+[charaFace E 4]
+
+＠童谣
+咦？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 10]
+[charaFadein I 0.1 1]
+
+＠坂田金时
+唔？
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+[wt 0.8]
+[charaFaceFade G 4 0.3]
+[wt 0.4]
+
+＠源赖光
+[FFFFFF]？[-]？？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠段藏
+！？
+[k]
+
+＠段藏
+灵核损坏导致以太体的彻底崩溃，[r]英灵的现世离去……竟在中途停止了！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠美狄亚·Lily
+请等一下，[r]我来精密扫描一下灵基状态。
+[k]
+
+[se ad598]
+
+＠美狄亚·Lily
+……[r]……
+[k]
+
+[charaFace B 5]
+
+＠美狄亚·Lily
+……灵核的伤口似乎愈合了。[r]这是……
+[k]
+
+＠美狄亚·Lily
+虽说有可能损伤本身并不严重，[r]但灵核多达五成都碎裂的话，消灭……
+[k]
+
+＠美狄亚·Lily
+从现世离去肯定是无可避免的。[r]然而……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ade295]
+[wt 1.5]
+[seStop ade295 0.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠渡边纲
+本不可能的事却发生了。[r]是这样吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠美狄亚·Lily
+是的，纲大人。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_78 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠童谣
+呃……[r]我是没死成吗？
+[k]
+
+＠童谣
+是吗，[%1]。
+[k]
+
+？1：虽然我也不是很清楚……
+？2：但总之你的伤势看来是治好了，太好啦。
+
+？！
+
+[messageOff]
+[charaFace E 1]
+[wt 1.2]
+[charaFace E 0]
+
+＠童谣
+是因为你给了我魔力吗。[r]毕竟我们之间好像有种不可思议的因缘嘛。
+[k]
+
+＠童谣
+啊，还是说……
+[k]
+
+＠童谣
+金发碧眼的美男子，金时。[r]难道都是托你的福吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 10]
+[charaFadein I 0.1 1]
+
+＠坂田金时
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠童谣
+嗯，嗯，这么说来，[r]因为这里有你在场呢！
+[k]
+
+＠童谣
+你可是东方孩子们的英雄。[r]虽然并非[#西方岛屿的童话故事:童谣]，但也是[#童话故事:我们]的碎片。
+[k]
+
+＠童谣
+虽然并非说给女孩子听的故事，[r]但你依然是闪耀的光。
+[k]
+
+＠童谣
+说不定就是你的光辉，[r]你那金光闪闪的雷电……
+[k]
+
+＠童谣
+填补了即将消灭的我的灵核哦。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 3]
+[charaFadein I 0.1 1]
+
+＠坂田金时
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠源赖光
+[FFFFFF]？[-]？？？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠童谣
+实际上是怎么回事呢。[r]你知道吗？
+[k]
+
+＠童谣
+能感觉到什么吗？[r]怎么样？
+[k]
+
+＠童谣
+[line 6][#足柄山的金太郎]先生？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 3]
+[charaFadein I 0.1 1]
+
+＠坂田金时
+呃，噢。
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace F 0]
+[charaFadeinFSR F 0.1 2]
+
+[charaFace B 0]
+[charaFadeinFSL B 0.1 0]
+
+[wt 1.6]
+
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+[wt 1.4]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 1]
+
+＠坂田金时
+……[r]……
+[k]
+
+[charaFace I 3]
+
+＠坂田金时
+…………呃，那个。金太郎是谁啊？
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+[wt 1.6]
+
+
+[fadeout black 3.0]
+[bgmStop BGM_EVENT_78 3.0]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,311 @@
+
+
+＄91-40-39-01-1-2
+
+[enableFullScreen]
+
+[soundStopAll]
+
+[charaSet A 4039002 1 曼迪卡尔多]
+[charaSet B 2030001 1 喀戎]
+[charaSet C 6005002 1 杰克]
+[charaSet D 5004001 1 童谣]
+[imageSet E back10000 1]
+[charaScale E 1.05]
+
+[scene 105900]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.5]
+
+＠曼迪卡尔多
+哟。[r]辛苦了。
+[k]
+
+？1：哟！
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth A 2]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadeinFSL B 0.4 0]
+[charaFace A 0]
+[charaFadeinFSR A 0.1 2]
+
+＠喀戎
+这问候真够随便的。[r]御主模仿倒是无所谓[line 3]
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_77 0.7 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_77 0.7 1.0]
+[wait wipe]
+
+[charaTalk off]
+[charaFace D 1]
+[charaFadeinFSR D 0.4 2]
+[charaFace C 1]
+[charaFadeinFSL C 0.4 0]
+[wt 1.0]
+
+[charaTalk on]
+
+＠杰克
+[charaMoveReturnFSL C -256,5 0.4]
+哟！
+[k]
+
+＠童谣
+[charaMoveReturnFSR D 256,5 0.4]
+哟～！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_77 0.7 0.5]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 1.0]
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_77 0.7 1.0]
+[wait wipe]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth A 2]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadeinFSR A 0.1 2]
+[charaFace B 0]
+[charaFadeinFSL B 0.1 0]
+
+＠曼迪卡尔多
+对不起，会被孩子们模仿吧，[r]早上好！
+[k]
+
+[charaFace B 1]
+
+＠喀戎
+嗯，非常好。
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFadein A 0.1 0,0]
+[wt 0.5]
+
+？1：怎么了？
+？！
+
+[charaFace A 0]
+
+＠曼迪卡尔多
+唔……不，只是今天，[r]不知道你能否陪我锻炼。
+[k]
+
+？1：没问题！
+？！
+
+
+[charaTalk depthOn]
+
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,0]
+[charaFadeTime E 0.2 0.5]
+
+＠曼迪卡尔多
+（[line 3]好，非常自然地邀请了御主。[r]　接下来只要这样那样漫不经心地询问就行了！）
+[k]
+
+[charaFace A 4]
+
+＠曼迪卡尔多
+（……漫不经心，[r]　该怎么做才能漫不经心呢……）
+[k]
+
+[messageOff]
+[charaFadeout E 0.2]
+[wt 0.5]
+
+？1：（似乎又在胡思乱想什么了……）
+？！
+
+[messageOff]
+
+[wt 0.5]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[scene 84700]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠喀戎
+我是负责今天战斗模拟控制的喀戎。
+[k]
+
+＠喀戎
+玛修·基列莱特阁下[r]为了调整奥特瑙斯，今天休息呢。
+
+[k]
+
+[charaFace B 1]
+
+＠喀戎
+综上所述，[r]让我们毫不犹豫地进入困难模式。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth A 2]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadeinFSR A 0.1 2]
+[charaFace B 1]
+[charaFadeinFSL B 0.1 0]
+
+＠曼迪卡尔多
+完全不听需求果断决定！？
+[k]
+
+＠曼迪卡尔多
+不过最近确实开始重复老套路了，[r]我倒也无所谓啦！
+[k]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+？1：好，开始吧！
+？！
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaFace B 0]
+
+＠喀戎
+那么，这次是以配合你们的形式进行战斗。
+[k]
+
+＠喀戎
+攻击性还是防御性，[r]你们打算采取哪种战术？
+[k]
+
+[charaFace A 0]
+
+＠曼迪卡尔多
+唔～……总之，还是交给御主决定吧。
+[k]
+
+＠曼迪卡尔多。
+御主应该很了解我的技能和宝具吧？[r]可以走活用这些的方式……
+[k]
+
+＠曼迪卡尔多
+也可以采取把我当做诱饵，[r]用来支援他人的方式。
+[k]
+
+＠喀戎
+嗯。[r]御主，你选哪种？
+[k]
+
+[messageOff]
+
+[input selectBranch]
+[messageOff]
+
+[bgmStop BGM_EVENT_11 0.4]
+[bgmStop BGM_EVENT_77 0.4]
+[bgmStop BGM_EVENT_7 0.4]
+
+[charaSet A 4039002 1 曼迪卡尔多]
+[charaSet B 2030001 1 喀戎]
+[charaSet C 6005002 1 杰克]
+[charaSet D 5004001 1 童谣]
+[imageSet E back10000 1]
+[charaScale E 1.05]
+
+[scene 84700]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth A 2]
+
+[charaTalk B]
+[charaFace A 0]
+[charaFadeinFSR A 0.1 2]
+[charaFace B 0]
+[charaFadeinFSL B 0.1 0]
+
+[bgm BGM_EVENT_80 0.1]
+
+[maskin black 1.0]
+[wait mask]
+
+[label selectBranch]
+
+
+？1：以曼迪卡尔多为中心，攻击态势。
+？2：将曼迪卡尔多作为诱饵，防御态势。
+？！
+
+＠曼迪卡尔多
+明白了。[r]那么，开始来吧！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+

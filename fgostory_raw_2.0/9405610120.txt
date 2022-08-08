@@ -1,0 +1,489 @@
+
+
+
+＄94-05-61-01-2-0
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet B 2018001 1 幼吉尔]
+[charaSet C 3001000 1 库·丘林]
+[charaSet D 9011000 1 ？？？]
+[charaSet E 9011000 1 ？？？_剪影]
+[charaFilter E silhouette 00000080]
+[charaSet F 1098206700 1 贞德]
+[charaSet G 1098206800 1 贞德·Alter]
+[charaSet H 1098206900 1 贞德·Alter·Santa·Lily]
+
+[charaSet I 98115000 1 特效用]
+[charaSet J 98115000 1 特效用]
+[charaSet K 98115000 1 特效用]
+
+[imageSet L back10000 1]
+[charaScale L 1.05]
+
+[charaSet T 98115000 1 特效用]
+
+[branchQuestNotClear lblNotClear 3000303]
+[charaSet A 8001410 1 玛修]
+[charaSet Q 1098124510 1 达·芬奇]
+[scene 110200]
+[branch lblConf]
+[label lblNotClear]
+[charaSet A 8001000 1 玛修]
+[charaSet Q 98111500 1 达·芬奇]
+[scene 105500]
+[label lblConf]
+
+[charaPut T 1200,1200]
+[charaEffect T bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[charaDepth F 1]
+[charaDepth G 2]
+[charaDepth H 3]
+
+[charaPutFSR I 256,-200]
+[charaPutFSL J -256,-200]
+[charaPut K 0,-200]
+[charaEffect I bit_talk_11]
+[charaEffect J bit_talk_11]
+[charaEffect K bit_talk_11]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFadeinFSR F 0.1 2]
+
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[charaFace G 0]
+[charaFadeinFSL G 0.1 0]
+[wt 0.4]
+
+[fowardEffect bit_talk_kengekiall02_fs]
+[wt 0.1]
+[se bac12]
+[wt 0.1]
+[charaShake F 0.05 3 3 0.7]
+[charaShake G 0.05 3 3 0.7]
+[charaShake H 0.05 3 3 0.7]
+[wt 0.3]
+[se bac14]
+[wt 0.1]
+[se bac14]
+[wt 0.5]
+
+[se ad52]
+[charaSpecialEffect F enemyErasure 1 1.5]
+[charaSpecialEffect G enemyErasure 1 1.5]
+[charaSpecialEffect H enemyErasure 1 1.5]
+[wt 0.5]
+[charaEffectStop I bit_talk_11]
+[charaEffectStop J bit_talk_11]
+[charaEffectStop K bit_talk_11]
+[wait charaSpecialEffect F]
+[wait charaSpecialEffect G]
+[wait charaSpecialEffect H]
+[wt 1.0]
+
+[se ad42]
+[charaEffect I bit_talk_11]
+[charaEffect J bit_talk_11]
+[charaEffect K bit_talk_11]
+[charaSpecialEffect F appearance 1 1.5]
+[charaSpecialEffect G appearance 1 1.5]
+[charaSpecialEffect H appearance 1 1.5]
+[wt 0.5]
+
+[wait charaSpecialEffect F]
+[wait charaSpecialEffect G]
+[wait charaSpecialEffect H]
+
+[wt 1.5]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaEffectStop I bit_talk_11]
+[charaEffectStop J bit_talk_11]
+[charaEffectStop K bit_talk_11]
+
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠库·丘林
+啊啊，实在是烦死了！[r]无论打倒多少次都会立刻复活！
+[k]
+
+＠库·丘林
+顽强到媲美[#二十八战士:Clan Calatin]了，[r]照这样下去，迦勒底会被毁灭的！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠幼吉尔
+联系管制室～。[r]就没有什么应对方法吗～？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk Q]
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+[charaFace Q 12]
+[charaFadein Q 0.1 1]
+
+＠达·芬奇
+抱歉～！[r]由于是未知的现象，解析根本来不及～！
+[k]
+
+＠达·芬奇
+没有灵核，灵基也雾散了，[r]你们的攻击完全消灭了他们！
+[k]
+
+[charaFace Q 9]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+[charaFace Q 1]
+[charaFadein Q 0.1 0,-90]
+
+＠达·芬奇
+抱歉～！[r]由于是未知的现象，解析根本来不及～！
+[k]
+
+＠达·芬奇
+没有灵核，灵基也雾散了，[r]你们的攻击完全消灭了他们！
+[k]
+
+[label lblConf2]
+
+＠达·芬奇
+本应如此，不知为何却无法消失呢～！？[r]为什么会复活呢[line 3]！？
+[k]
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠库·丘林
+……那家伙看上去很开心呢。[r]找她是不是选错人了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠幼吉尔
+后方支援人员热衷研究是好事啦。[r][#现场:这里]也要做好[#现场:这里]的工作[line 3]
+[k]
+
+[messageOff]
+[backEffect bit_talk_37 0,150]
+[charaFace B 2]
+[cueSe SE_21 21_ade565]
+[wt 1.8]
+
+＠幼吉尔
+慢着，那边是不是有人！？[r]我全身窜过一股凉意！
+[k]
+
+＠？？？
+雷达水平好优秀啊。[r]真希望你能当我助手。
+[k]
+
+[charaShake B 0.05 3 3 0.5]
+
+＠幼吉尔
+呀啊，这是前所未有的，不，[r]是似曾相识的背脊发凉感！？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+
+＠？？？
+[#你好:Buon giorno]。[r]我不是什么可疑的人。
+[k]
+
+＠？？？
+关于那种物体为何不会消灭，[r]就由我来说明吧。
+[k]
+
+＠？？？
+这是因为他们……[r]并不是影从者。
+[k]
+
+？1：您是哪位！
+
+？！
+
+＠？？？
+要知道对诞生于黑暗深渊的存在来说，[r]暴力是毫无意义的。
+[k]
+
+＠？？？
+消灭他们的方式只有一种。
+[k]
+
+＠？？？
+呵呵。竟然说，只有一种，[r]我还真是大言不惭。
+[k]
+
+＠？？？
+但是这并不是夸张表现，[r]没什么好不好意思的。
+[k]
+
+＠？？？
+没错[line 3]因为，[r]消灭他们的手段，正是人类共通普遍的主题……
+[k]
+
+＠？？？
+那就是[line 2]
+[k]
+
+＠？？？
+[f large]『爱』。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_3 1.5]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠库·丘林
+呃……爱……？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk off]
+
+[charaDepth E 2]
+[charaDepth D 1]
+
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+[charaFace D 15]
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+[charaFadeout E 0.7]
+[wt 1.0]
+
+[charaTalk on]
+
+
+＠？？？
+……这个人反应真慢呢。[bgm BGM_EVENT_4 0.1][r]你这还算是凯尔特引以为傲的超级情人吗？
+[k]
+
+＠？？？
+不仅走到哪儿泡美女泡到哪儿，[r]还把真爱的公主安置在城里卿卿我我。
+[k]
+
+[charaFace D 12]
+
+＠？？？
+……这么说出口，不禁越说越火大。[r]你的下半身和上半身是不同生物吗？
+[k]
+
+＠？？？
+你应该向乌伊芙小姐道歉。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠库·丘林
+我[messageShake 0.05 4 4 0.2]知道啦，那都是我的错！[r]但你也别对人家家务事说三道四啦！
+[k]
+
+？1：（初次见面就给人如此压力……什么人……？）
+？2：（凯尔特的超级情人啊……）
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠？？？
+呵呵。虽然只能感觉大致的氛围，[r]但我听到了美妙的心之声。
+[k]
+
+[charaFace D 6]
+
+＠？？？
+合格。[r]我承认你是个适合被推举的御主。
+[k]
+
+＠？？？
+日安，你好。[r]今早你的运势好像是五星呢。
+[k]
+
+＠？？？
+恋爱运是“为突然的邂逅做准备”。[r]或是“比起汝之邻人，更应相信眼前的女神”。
+[k]
+
+[bgmStop BGM_EVENT_4 1.5]
+
+＠？？？
+对，我正是为了提升你的运势[r]而飒爽出现的[line 3]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth F 1]
+[charaDepth G 2]
+[charaDepth H 3]
+
+[charaPutFSR I 256,-200]
+[charaPutFSL J -256,-200]
+[charaPut K 0,-200]
+[charaEffect I bit_talk_11]
+[charaEffect J bit_talk_11]
+[charaEffect K bit_talk_11]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFadeinFSR F 0.1 2]
+
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[charaFace G 0]
+[charaFadeinFSL G 0.1 0]
+[wt 0.1]
+
+[se ad7]
+[charaMoveScale F 1.2 0.2]
+[charaMoveScale G 1.2 0.2]
+[charaMoveScale H 1.2 0.2]
+[charaMoveFSR F 256,20 0.2]
+[charaMoveFSL G -256,20 0.2]
+[charaMove H 0,20 0.2]
+
+[effect bit_talk_41_fs]
+[wt 0.6]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaEffectStop I bit_talk_11]
+[charaEffectStop J bit_talk_11]
+[charaEffectStop K bit_talk_11]
+[effectDestroy bit_talk_41_fs]
+
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠？？？
+……真是个不会看场合的人呢。[r]真没办法。
+[k]
+
+＠？？？
+还没达成共识就助人一臂之力[r]虽然有违我的方针[line 3]
+[k]
+
+[charaFace D 0]
+
+＠？？？
+但就把这当做促销的一部分吧。[r]请随意下达指示，御主。
+[k]
+
+[charaFace D 6]
+
+＠？？？
+尽情尝试你的御主力，[r]以及我的恋爱力吧。
+[k]
+
+[messageOff]
+[wt 0.2]
+[flashin once 0.4 0.4 FFFFFFFF FFFFFF00]
+[se ad216]
+[seStop ad216 1.2]
+[wt 1.4]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+！[r]刚才那是临时契约的通路吗！？
+[k]
+
+？1：好像是……！
+？2：总之，先应战吧！
+
+？！
+
+[messageOff]
+[wt 0.2]
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+

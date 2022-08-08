@@ -1,0 +1,854 @@
+
+
+
+＄94-04-77-49-3-1
+
+
+[soundStopAll]
+
+[skip false]
+
+[maskout black 0]
+[wait mask]
+
+[charaSet A 98001000 1 玛修]
+[charaSet B 25005000 1 旅行者]
+[charaSet C 1098192920 1 阿马德乌斯]
+[charaSet D 1098192800 1 玛丽]
+[charaSet E 5025001 1 爱迪生]
+[charaSet F 2031001 1 拿破仑]
+[charaSet G 2016000 1 卫宫·Alter]
+[charaSet H 98111500 1 达·芬奇]
+[charaSet I 1098124510 1 达·芬奇（骑）]
+[charaSet J 98115000 1 通讯用]
+[charaSet K 1098196200 1 ？？？]
+[imageSet L cut171_token_209 1]
+[charaSet M 98115000 1 特效用]
+[charaSet N 98115000 1 特效用]
+
+[scene 50001]
+
+[pictureFrameTop cut170_gameframe_dark]
+
+[bgm BGM_EVENT_3 0.1]
+
+[skip true]
+
+[fadein black 0]
+[wait fade]
+[maskin black 1.0]
+[wait mask]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 0,-50]
+＠？？？
+咕[messageShake 0.05 5 5 0.3]啊啊啊……！
+[k]
+
+[messageOff]
+[se ad216]
+[fadeout white 1.0]
+[bgm BGM_EVENT_3 1.0 0.5]
+[wait fade]
+
+[charaFadeout K 0.1]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-50]
+
+[fadein white 1.0]
+[bgm BGM_EVENT_3 1.0 1.0]
+[seStop ad216 1.0]
+[wait fade]
+
+[wt 1.2]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠玛修
+『狼人』的样子……变化了！
+[k]
+
+？1：果然……！
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 19]
+[charaFadein C 0.1 0,-50]
+＠阿马德乌斯
+呵……呵哈哈哈哈哈哈哈！[r]没错，我果然就是幕后黑手！
+[k]
+
+＠阿马德乌斯
+多亏[%1]接受了我的挑战[line 3]
+[k]
+
+＠阿马德乌斯
+让我好好享受了一番！
+[k]
+
+[messageOff]
+[fadeout black 0.2]
+[bgmStop BGM_EVENT_3 0.2]
+[wait fade]
+
+[charaFadeout C 0.1]
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad28]
+[seStop ad28 0.5]
+[effect bit_talk_throwing 0,0 V]
+[se bac17]
+[wt 0.5]
+
+[fadeout black 0.2]
+[wait fade]
+
+[scene 50001]
+
+[charaTalk C]
+[charaFace C 19]
+[charaFadein C 0.1 0,-50]
+[wt 0.1]
+
+[fadein black 0.2]
+[wait fade]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth M 2]
+[charaDepth C 1]
+[charaPut M 1]
+
+[se ad240]
+[charaEffect M bit_talk_35]
+[charaFace C 2]
+[charaShake C 0.05 4 4 0.5]
+[wt 0.7]
+
+＠阿马德乌斯
+咕[messageShake 0.05 4 4 0.2]哈！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 0,-50]
+＠玛丽
+太丢人了，狼先生。老实去死吧。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+[wt 0.5]
+
+[charaTalk depthOff]
+[charaDepth M 2]
+[charaDepth L 3]
+[charaDepth C 1]
+
+[se ade432]
+
+[charaEffect C bit_talk_token_change01]
+[wt 1.0]
+
+[se ad641]
+[seStop ad641 1.0]
+[charaChange C 1098192900 22 fade 0.7]
+[wait charaChange C]
+[wt 0.2]
+
+
+＠阿马德乌斯
+玛丽亚，噢噢玛丽亚！　这是最好的谢幕……！[r]我的[#骗术:艺术]就此完成！
+[k]
+
+[messageOff]
+[charaEffectStop C bit_talk_token_change01]
+[charaPut M 0,-10]
+[charaEffect M bit_talk_token_change02]
+[se ad39]
+[wt 3.2]
+
+[se ad29]
+[seStop ad29 1.5]
+[wt 0.5]
+[charaFadeout C 0.4]
+
+[charaEffectStop M bit_talk_token_change02]
+[charaFadein L 0.4 0,-210]
+[wt 2.0]
+
+[charaEffectDestroy M bit_talk_token_change02]
+[charaFadeout L 0.1]
+[wt 0.1]
+[seStop ade432 0.5]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+
+＠玛修
+玛丽小姐！[bgm BGM_EVENT_77 0.1][r]还有爱迪生先生和拿破仑先生……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠爱迪生
+我都看到了。[r]果然他就是『狼人』！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+＠拿破仑
+等等。剩下的那个『狂信徒』怎么样了？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+＠玛丽
+还有一个人去向不明吧……[r]那个人很可疑吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+＠玛修
+魅影先生他刚才……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+＠爱迪生
+唔。一切都隐藏于黑暗的彼方啊……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+＠玛丽
+[#裁定者:Ruler]离去的现在，[r]只能靠我们玩家自己来判输赢了吧。
+[k]
+
+[charaFace D 0]
+＠玛丽
+如何？[r]可以认为……就此[#结束:通关]了吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 0,-50]
+＠拿破仑
+嗯。可以。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-50]
+＠爱迪生
+我没有异议！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.3]
+
+[se ad216]
+[maskout white 0.5]
+[wait mask]
+
+[pictureFrameTop]
+[wt 0.1]
+
+[maskin white 1.0]
+[seStop ad216 1.0]
+[wait mask]
+[wt 0.4]
+
+[fowardEffect bit_talk_gamefinish]
+[se ade445]
+[wt 6.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠旅行者
+这下，终于可以去找绘里濑了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠玛丽
+怎么样，[%1]？[r]如果可以的话，能带我一起去旅行吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+玛丽小姐……也要跟我们一起走？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠玛丽
+我还没玩够呢。[r]感觉和你们一起能遇到更刺激的游戏。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth D 2]
+[charaDepth B 1]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFace B 4]
+[charaFadein D 0.1 0]
+[charaFadein B 0.1 300,0]
+[wt 0.1]
+[charaMove B 380,0 1.4]
+[wt 1.6]
+
+[charaTalk on]
+＠旅行者
+……
+[k]
+
+[charaFace D 1]
+＠玛丽
+哎呀？　怎么了，可爱的旅行者先生？
+[k]
+
+[charaFace B 12]
+＠旅行者
+……
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+前辈，旅行者先生的神情……？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+？1：是太紧张了吧。
+
+？2：有什么在意的事吗？
+
+？！
+
+＠旅行者
+……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠玛丽
+很快就会习惯的。我最喜欢孩子了。[r]纯洁无瑕又美丽。
+[k]
+
+＠玛丽
+话说，[%1]，[r]我可以跟你们一起走吧？
+[k]
+
+？1：当然。
+
+？2：只要你愿意。
+
+？！
+
+[charaFace D 1]
+＠玛丽
+呵呵。谢谢♪[r][#游戏界万岁:Vive le monde de jeux]！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+……然后我还比较在意的，[r]是代币的使用……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠拿破仑
+你们还打算继续旅程吧？[r]那就带上这些吧。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠爱迪生
+嗯。虽然现在只是些未解的物质，[r]但或许能发现意想不到的使用方法。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaPut M -250,400]
+[charaPut N 250,400]
+
+[charaEffect M bit_talk_token_change02]
+[charaEffect N bit_talk_token_change02]
+
+[charaMove M -150,0 2.0]
+[charaMove N 150,0 2.0]
+[se adm19]
+[seVolume adm19 0 0.3]
+[seVolume adm19 1.0 1.0]
+[wt 2.0]
+
+[wt 1.5]
+[seStop adm19 1.0]
+[wt 2.4]
+[charaEffectDestroy M bit_talk_token_change02]
+[charaEffectDestroy N bit_talk_token_change02]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠玛修
+由贞德小姐保管的变成代币的各位，[r]都到前辈手里了。
+[k]
+
+＠玛修
+可是童谣小姐……
+[k]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠旅行者
+她似乎，对[#游戏]感到疲倦了。[r]说想休息一会儿。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠拿破仑
+那就由我保管吧。[r]说不定还能成为玩伴。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠卫宫·Alter
+看。路开启了。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad606]
+[effect bit_talk_warp_starry_sky]
+[wt 1.5]
+[seStop ad606 1.0]
+[wt 1.0]
+
+
+＠卫宫·Alter
+这是通往下一个[#比赛:游戏]的线路。
+[k]
+
+[messageOff]
+[wt 0.3]
+
+[se ad75]
+[se ade406]
+[seVolume ade406 0 0.4]
+
+[cameraMove 1.2 0,0 1.5]
+[wt 0.1]
+[wipeout circleIn 1.0 0.7]
+[bgmStop BGM_EVENT_2 1.0]
+[wait wipe]
+
+[seStop ade406 1.0]
+[effectDestroy bit_talk_warp_starry_sky]
+[cameraHome 0.1]
+[scene 10000]
+[wt 1.5]
+
+[wipein circleOut 0.1 0.7]
+[wait wipe]
+
+[fadeout white 1.5]
+[wait fade]
+
+[scene 95800]
+
+[se ade430]
+[seStop ade430 1.8]
+[wt 2.0]
+
+[fadein white 1.5]
+[se ade431]
+[seVolume ade431 0 0.1]
+[seVolume ade431 1.5 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[seStop ade431 1.5]
+[wt 0.5]
+
+
+[charaPut J 0,0]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+＠I：达·芬奇
+终于连上了！　一直联系不上，害我担心死了。[bgm BGM_EVENT_2 0.1][r]究竟发生了什么？
+[k]
+
+[charaFadeout I 0.1]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 0,-90]
+＠达·芬奇
+终于连上了！　一直联系不上，害我担心死了。[bgm BGM_EVENT_2 0.1][r]究竟发生了什么？
+[k]
+
+[charaFadeout H 0.1]
+
+[label lblConf1]
+
+
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠玛修
+我们玩了一场游戏。很长很长的游戏。[r]简直就像噩梦。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠旅行者
+我们，从梦中醒来了吗……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠卫宫·Alter
+只要我们还有意志，或是执着，[r]无论是梦境还是实相都没有什么区别。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠爱迪生
+嗯！　无论如何，[r]铁路还延续着，载着我们前往下一个[#战场:游戏]……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠旅行者
+我好想，快点见到绘里濑啊。[r]这就是，我的愿望。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠玛丽
+我也非常想见见她。[r]绘里濑小姐应该是个很棒的人吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠旅行者
+……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 1]
+＠I：达·芬奇
+这么说来，童谣去哪儿了？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠玛修
+童谣小姐她……[r]变成了代币。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk I]
+[charaFace I 22]
+[charaFadein I 0.1 1]
+＠I：达·芬奇
+你说什么？　这是怎么回事？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠玛丽
+尽管童谣很可怜，[r]不过我代替她加入了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk I]
+[charaFace I 25]
+[charaFadein I 0.1 1]
+
+＠I：达·芬奇
+看来发生了什么大事啊。[r]能具体说来听听吗？
+[k]
+
+
+[branch lblConf2]
+[label lblNotClear2]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-90]
+＠达·芬奇
+这么说来，童谣去哪儿了？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠玛修
+童谣小姐她……[r]变成了代币。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 0,-90]
+＠达·芬奇
+你说什么？　这是怎么回事？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠玛丽
+尽管童谣很可怜，[r]不过我代替她加入了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 0,-90]
+
+＠达·芬奇
+看来发生了什么大事啊。[r]能具体说来听听吗？
+[k]
+
+
+[label lblConf2]
+
+
+？1：……嗯。反正到下一站还有些时间。
+
+？！
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+

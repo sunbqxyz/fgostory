@@ -1,0 +1,251 @@
+
+
+＄91-10-37-01-2-0
+
+
+[soundStopAll]
+
+[charaSet A 3011000 1 芬恩·麦克库尔]
+[charaSet B 1035000 1 迪尔姆德]
+[charaSet C 2014000 1 背大米的人]
+[charaSet D 1098161300 1 麻雀]
+
+[charaSet I 98006100 1 特效dummy１]
+[charaSet J 98006100 1 特效dummy２]
+
+[charaPut I 2000,2000]
+[charaEffect I bit_talk_gagemist]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[fadeout white 1.5]
+[se ad8]
+[wait fade]
+
+[scene 10001]
+
+[fadein white 0.4]
+[wait fade]
+
+？1：进入茨木童子的房间之后，
+
+？！
+
+[fadeout white 0.4]
+[wait fade]
+
+[scene 27000]
+[cameraMove 0 0,0 1.02]
+
+[se ad510]
+[charaPut I 0,0]
+[charaEffect J bit_talk_sakura01 100,0 H]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.6]
+
+
+？1：发现那里不知何时成了特异点。
+
+？！
+
+[seStop ad510 2.0]
+[charaMove J 1100,-100 1.3]
+[wt 1.3]
+[charaPut J 2000,2000]
+[charaEffectStop J bit_talk_sakura01]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+[wt 0.6]
+＠芬恩·麦克库尔
+这就是所谓的固有结界吧。[bgm BGM_EVENT_5 0.1][r]茨木童子的心象风景被固定成异界了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠迪尔姆德
+是否可以认为这就是红老板娘所拥有的宝物……[r]『阎魔帐』的力量呢？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠芬恩·麦克库尔
+当然没有到圣杯的水准，[r]但好歹也是地狱大王给女儿的咒具。
+[k]
+
+[charaFace A 0]
+
+＠芬恩·麦克库尔
+被有名有姓的鬼得到后，[r]应该都能办到这种事。对吧，俵阁下？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad452]
+[wt 1.2]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.4 1]
+[wt 0.5]
+[seStop ad452]
+[wt 0.2]
+
+[charaFace C 2]
+＠C：？？？
+嗯！　这无疑就是鬼之结界，[r]建立在彼世与现世狭缝中的『迷途之家』！
+[k]
+
+[charaFace C 6]
+＠C：？？？
+虽说没有怨念，但充满了阴郁的气息。[r]酒气……不，是红豆味儿吗？
+[k]
+
+＠C：？？？
+茨木童子那个家伙，[r]难道想起了鬼之夙愿了？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠麻雀
+啾啾？[r]这位大哥哥是谁啾？
+[k]
+
+＠麻雀
+看你背着米袋，[r]难道是[#三河屋:酿造店]的大哥哥啾？
+[k]
+
+＠麻雀
+可是敞开衣服露出上半身，[r]感觉是个十足的变态啾。
+[k]
+
+＠麻雀
+要是来送货的话，[r]请绕到厨房的后门啾。
+[k]
+
+？1：不对！？　小麻雀，这个人是……！
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+＠C：？？？
+哈哈哈，没错没错！[r]送货是体力活，所以在下干脆敞开衣服啦！
+[k]
+
+＠C：？？？
+当我正闲得发慌的时候，[r]麦克库尔阁下来找我商量事。于是我就来帮忙了。
+[k]
+
+[charaFace C 0]
+＠C：？？？
+没关系，叫在下『背大米的人』就行了。[r]在下就不用其他的名字自称了。
+[k]
+
+[charaFace C 5]
+
+＠背大米的人
+明白了吗？[r]千万要向你们的主人保密哦。
+[k]
+
+＠背大米的人
+[%1]也没意见吧？[r]绝对不要公布在下的真名。
+[k]
+
+？1：可以倒是可以……
+？2：可是为什么？
+
+？！
+
+[charaFace C 0]
+
+＠背大米的人
+好啦好啦。再说下去就不识趣了。[r]比起这个[line 3][bgmStop BGM_EVENT_5 1.0]
+[k]
+
+[messageOff]
+[se ad57]
+[charaTalk B]
+[shake 0.04 1 2 0.5]
+[wt 0.5]
+[charaFace C 6]
+[wt 0.7]
+[shake 0.04 1 3 0.5]
+[wt 1.2]
+[se ad23]
+[seStop ad57 0.2]
+[wt 1.7]
+
+[charaFace C 2]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠背大米的人
+诸位，迎接我们的已经来了哦！[r]剑、枪、弓[line 3]很有排场嘛！
+[k]
+
+＠背大米的人
+哈哈。[r]把在下叫来就是猜到事态会发展成这样吗？
+[k]
+
+＠背大米的人
+那在下就不客气地解决掉剑之鬼吧。[r]在惩戒大鬼之前，先简单用弓热下身吧！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠迪尔姆德
+我来对付枪之鬼。[r]芬恩·麦克库尔，殿后的鬼就交给你了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠芬恩·麦克库尔
+当然没问题。[r]那么御主，请充分运用我们三骑吧！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

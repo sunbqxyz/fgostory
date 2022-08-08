@@ -1,0 +1,156 @@
+
+＄03-00-09-15-5-0
+
+
+
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1049000 1 千子村正]
+[charaSet B 1098124500 1 达·芬奇]
+[charaSet C 5045001 1 阿尔托莉雅]
+[charaSet D 1098216200 1 哈贝特洛特]
+[charaSet E 1098209500 1 白狼]
+[charaSet F 5021000 1 贤者格里姆]
+
+[imageSet J back10000 1 1]
+[charaScale J 1.05]
+
+[charaSet S 98115000 1 特效用]
+
+[charaPut S 1]
+[charaEffect S bit_talk_fog_side]
+
+[scene 121500]
+[wt 0.1]
+
+
+
+[fadein black 1.5]
+[wait fade]
+
+？1：好浓的雾……
+？2：（……刚才的亡灵是……）
+
+？！
+
+[bgm BGM_EVENT_142 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠贤者格里姆
+别急。撞钟堂又不会现在跑掉。[r]雾那么大，走得太快会失散的。要冷静地前进哦。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠千子村正
+……喂，格里姆。[r]按照走过的距离来算，应该已经到撞钟堂了吧。
+[k]
+
+＠千子村正
+而且刚才还爬完了一大段楼梯。[r]然而，现在这[line 3]
+[k]
+
+[messageOff]
+[se ad592]
+[seVolume ad592 0 0.5]
+[fadeout white 0.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaPut S 2000,2500]
+
+[scene 120700]
+[cameraFilter gray]
+[wt 0.6]
+
+[fadein white 0.4]
+[wait fade]
+[wt 1.0]
+
+[fadeout white 0.4]
+[wait fade]
+
+[scene 121500]
+[charaPut S 1]
+[cameraFilter normal]
+[wt 0.6]
+
+[fadein white 0.4]
+[wait fade]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠贤者格里姆
+……这个嘛，这种情况也是会出现的啦。[r]虽说倾听死者的声音并非德鲁伊的工作……
+[k]
+
+[charaFace F 5]
+＠贤者格里姆
+对方在问『你们是否有资格』哦。[r]看来，是不打算让我们继续前进吧。
+[k]
+
+＠贤者格里姆
+该怎么办，[%1]？[r]要试着等到雾散去吗？
+[k]
+
+？1： ……这雾多半永远都不会散去吧。
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[wt 1.2]
+
+？2：[line 3]没有资格。但我依然要前进！
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 1]
+[wt 1.2]
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠贤者格里姆
+就是这样啦，各位来头不小的老爷。[r]谢谢你们的忠告，但这是白费功夫。
+[k]
+
+＠贤者格里姆
+更何况灵魂本就该转生，徒留于世又有何益。[r]还是赶紧放我们过去吧！
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_142 1.0]
+[wait fade]
+[soundStopAll]
+[end]

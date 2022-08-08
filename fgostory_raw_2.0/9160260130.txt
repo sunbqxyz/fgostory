@@ -1,0 +1,359 @@
+
+＄91-60-26-01-3-0
+
+[soundStopAll]
+
+[charaSet A 6026001 1 燕青]
+[charaSet B 99502600 1 玛修]
+[charaSet C 6002001 1 咒腕哈桑（？）]
+[charaSet D 5016001 1 杰罗尼莫]
+[charaSet E 6026001 1 燕青（？）]
+[charaSet F 98111500 1 通讯用杂音]
+[charaSet G 98015000 1 鬼魂]
+
+[wipeFilter cinema 0.5 0]
+[cameraMove 0.1 0,-50 1.0]
+[scene 38500]
+[imageSet H back10001 1]
+[charaFilter H silhouette FF000060]
+[charaDepth A 1]
+[charaDepth C 1]
+[charaDepth H 0]
+[charaScale H 1.1]
+[effect bit_talk_noise]
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_EVENT_71 0.1]
+
+＠
+[line 3]不在。
+[k]
+
+＠
+也不在这里。
+[k]
+
+＠
+哪里都找不到。
+[k]
+
+＠
+奇怪了。[r]不可能不在。
+[k]
+
+＠
+那家伙，一定还在。
+[k]
+
+[charaPut H -1,-250]
+[charaFadeTime H 0.4 0.1]
+＠
+啊啊，身体在崩溃。[r]无法维持身为燕青的灵基了。
+[k]
+
+＠
+天空一片浑浊，[r]水满是下水沟的味道，
+[k]
+
+＠？？？
+死的感觉如何？
+[k]
+
+＠
+回首望去，[r]翘首以盼的死神就站在这里。
+[k]
+
+[messageOff]
+[fadeout black 0.4]
+[wait fade]
+[wt 0.4]
+[charaTalk A]
+＠燕青
+什么嘛，不是在嘛。[r][#咒腕哈桑]。
+[k]
+
+[messageOff]
+[fadein black 0.4]
+[wait fade]
+
+[charaFace C 0]
+[charaFadein C 0.4 0,-50]
+[wt 1.0]
+
+＠燕青
+没错，我必须向你道歉。[r]我杀了你，杀了你。
+[k]
+
+＠燕青
+不，不对，[#是被杀了]。[r][#我被你杀了]。
+[k]
+
+＠燕青
+……不，等一下。请等一下。[r]记忆，记忆产生了混乱……！
+[k]
+
+[charaTalk C]
+＠咒腕哈桑（？）
+已经够了吧，[r]老老实实地接受吧。
+[k]
+
+＠咒腕哈桑（？）
+……[r]……
+[k]
+
+＠咒腕哈桑（？）
+[#我们是无法偿还我们的罪的]。
+[k]
+
+[charaTalk A]
+＠燕青
+……这，声音是……[r]不，等一下……
+[k]
+
+＠燕青
+[#你是我吗]？
+[k]
+
+[charaTalk C]
+＠咒腕哈桑（？）
+我会这样回答你的问题。
+[k]
+
+＠咒腕哈桑（？）
+[#你认为自己是谁]？
+[k]
+
+[messageOff]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+[wt 0.4]
+[se ad266]
+[seStop ad266 1.0]
+[charaChange C 6026002 0 fade 0.7]
+[wt 2.0]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_71 1.0]
+[wait fade]
+[cameraHome 0.1]
+[charaFadeout H 0.1]
+[wipeOff]
+[effectStop bit_talk_noise]
+[charaPut C 0,0]
+
+[wt 0.5]
+[fadein black 1.0]
+[wait fade]
+[wt 0.7]
+[bgm BGM_EVENT_70 0.1]
+
+？1：哈桑先生……
+？2：成了燕青……！？
+？！
+
+[charaTalk C]
+[charaFace C 1]
+＠C：燕青
+哟，不好意思啦，御主！
+[k]
+
+[charaFace C 6]
+＠C：燕青
+尽管我是骗了你，[r]但我没这个意思！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠杰罗尼莫
+唔。[r]看来，你才是真正的燕青吧。
+[k]
+
+[charaFace D 0]
+＠杰罗尼莫
+不过，对方也拥有足以与燕青媲美的灵基。
+[k]
+
+＠杰罗尼莫
+……既然如此，那答案只有一个。
+[k]
+
+＠杰罗尼莫
+[#对面的燕青是二重身吗]。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+＠A：燕青（？）
+啊……[r]啊，啊……
+[k]
+
+[bgmStop BGM_EVENT_70 0.4]
+[wt 0.4]
+[bgm BGM_EVENT_3 0.1]
+[charaFace A 9]
+
+[charaTalk off]
+[charaFace E 9]
+[wt 0.4]
+[se ad266]
+[charaFadein E 0.7 1]
+
+[messageShake 0.04 4 4 0.4]
+＠E：燕青（？）
+啊啊啊啊啊啊啊啊啊啊啊啊啊！！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.3 1.0]
+[wait wipe]
+
+[charaEffectStop A]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+[wipein rectangleStripLeftToRight 0.3 1.0]
+[wait wipe]
+
+＠C：燕青
+喂喂，冷静点啦，我！[r]啊，不行，糟了，看来真面目暴露得早了点！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.3 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.3 1.0]
+[wait wipe]
+
+[wt 0.1]
+[charaPut B 1]
+
+[charaSet G 98109300 1 克里斯蒂娜（？）]
+[charaFace G 0]
+[charaFadein G 0.7 1]
+[se ad266]
+[charaFadeout E 0.7]
+[wt 1.7]
+[charaSet E 6002001 1 咒腕哈桑（？）]
+[charaFace E 0]
+[charaFadein E 0.7 1]
+[se ad266]
+[charaFadeout G 0.7]
+[wt 1.7]
+[charaSet G 6026001 1 燕青（？）]
+[charaFace G 9]
+[charaFadein G 0.7 1]
+[se ad266]
+[charaFadeout E 0.7]
+[wt 1.7]
+[charaSet E 98104300 1 鬼魂]
+[charaFace E 0]
+[charaDepth E 9]
+[charaFadein E 0.7 1]
+[se ad266]
+[charaFadeout G 0.7]
+[wt 3.0]
+[charaFadeout E 0.1]
+
+[charaEffect F bit_talk_10_LowLevel]
+[charaPut F 1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠玛修
+这是……从者……不，克里斯蒂娜……？[r]还有哈桑先生，燕青先生……
+[k]
+
+＠玛修
+他正变质成其他各式各样的敌人！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.3 1.0]
+[wait wipe]
+[charaEffectStop B]
+[charaFadeout B 0.1]
+[charaPut F 1200,1200]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.3 1.0]
+[wait wipe]
+＠C：燕青
+没事，不管怎么说，[r]只要让他冷静下来就行啦，我的御主！
+[k]
+？1：简单说就是打飞那家伙！
+
+[charaFace C 2]
+＠C：燕青
+说得没错！
+[k]
+
+？2：呃，也就是说……
+
+[charaFace C 2]
+＠C：燕青
+把他打趴就行了！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠杰罗尼莫
+嗯，真是简单明了。
+[k]
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠C：燕青
+好了，谁都不是的我。[r]回我们该去的地方吧。
+[k]
+
+[charaFace C 4]
+＠C：燕青
+这里已经没有你该偿还的对象了。
+[k]
+
+[charaFace C 2]
+＠C：燕青
+所以[line 3]若无法在此了结一切，[r]我们彼此都将无法成立！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

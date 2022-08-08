@@ -1,0 +1,321 @@
+
+
+
+＄91-10-46-01-2-0
+[charaSet A 1046001 1 伊吹童子]
+[charaSet B 7023000 1 源頼光]
+[charaSet C 7013001 1 清姫]
+[charaSet D 1047000 1 渡辺綱]
+[charaSet E 5003000 1 玉藻の前]
+[charaSet F 7006000 1 坂田金時]
+[charaSet G 5003000 1 玉藻前シルエット用]
+[charaSet H 7006000 1 坂田金時シルエット用]
+
+
+[soundStopAll]
+[enableFullScreen]
+[bgm BGM_EVENT_80 0.1]
+[scene 104200]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠伊吹童子
+あっははははは！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[effect bit_talk_gram_slash_04_fs]
+[wt 0.1]
+[se bac139]
+[wt 0.6]
+
+[se ad471]
+[seStop ad471 0.4]
+[charaScale D 1.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,10]
+[se ad671]
+[charaShake D 0.04 4 4 0.3]
+[charaMoveScale D 1.0 0.3]
+[charaMove D 0,0 0.3]
+[wt 0.6]
+
+[charaFace D 5]
+＠渡辺綱
+流石ッ……！
+[k]
+
+＠渡辺綱
+加えて！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[cueSe Servants_9942710 m84102]
+[se ad772]
+[seVolume ad772 0 0.6]
+[seStop ad772 1.5]
+[wt 1.5]
+
+？1：何もないとこから[#大蛇:おろち]が！？
+？！
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠渡辺綱
+[#大蛇:おろち]か！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠源頼光
+これでは伊吹童子さまにまで届きません！[r]くっ……！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[charaMove C -64,0 0.2]
+[wt 0.2]
+[charaMoveReturn C -64,10 0.1]
+[wt 0.3]
+
+[charaMove C 64,0 0.4]
+[wt 0.4]
+[charaMoveReturn C 64,10 0.1]
+[wt 0.2]
+
+[charaMove C 0,0 0.2]
+[wt 0.2]
+＠清姫
+ああっ、ますたぁ！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 0.4]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[wt 0.3]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[se ad60]
+[seVolume ad60 0 0]
+[seVolume ad60 2.0 1.0]
+[wt 1.0]
+
+＠E：？？？
+だから、理由付けです理由付け。[r]途中で紅閻魔先生に見つかってもいいように、
+[k]
+
+＠E：？？？
+こじゃれた微小特異点を見つけたので偵察に、[r]という体裁を整えるために30秒ほどお芝居を……
+[k]
+
+＠F：[FFFFFF]？？？
+オッケーだ。[r]とりあえず頷いておきゃいいんだなフォックス。
+[k]
+
+[messageOff]
+[seStop ad60 0.4]
+
+[charaTalk off]
+[charaDepth G 2]
+[charaDepth H 3]
+[charaDepth E 0]
+[charaDepth F 1]
+[charaFilter G silhouette 00000080]
+[charaFilter H silhouette 00000080]
+[charaFadeinFSL H 0.4 0]
+[charaFadeinFSR G 0.4 2]
+[wt 0.4]
+[charaFace F 4]
+[charaFace E 0]
+[charaFadeinFSL F 0 0]
+[charaFadeinFSR E 0 2]
+[wt 1.0]
+[charaFadeout H 0.4]
+[charaFadeout G 0.4]
+[wt 1.0]
+[charaTalk on]
+[bgm BGM_EVENT_80 0.1]
+[charaTalk E]
+[charaFace E 2]
+[bgm BGM_EVENT_80 0.1]
+＠玉藻の前
+[messageShake 0.02 5 5 0.7]
+って、なんですこれ！？
+[k]
+
+[charaFace F 2]
+＠坂田金時
+な、なんだァ！？[r]こりゃどういうんだ！？
+[k]
+
+[messageOff]
+[charaTalk B]
+[cueSe Servants_9942710 m84102]
+[se ad772]
+[seVolume ad772 0 0.6]
+[seStop ad772 1.5]
+[wt 1.5]
+
+[charaFace F 4]
+＠坂田金時
+うお、[#大蛇:おろち]かよ！
+[k]
+
+[charaFace E 4]
+＠玉藻の前
+な、なんです？[r]彷徨海じゃ神獣の放し飼いとかアリでしたっけ？
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠源頼光
+金時、丁度よいところに！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠坂田金時
+お、おう、頼光サン[line 3]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠源頼光
+伊吹童子さまご乱心の由！[r]マスターの身が危ういものと思いなさい！
+[k]
+
+＠源頼光
+我らは[#大蛇:おろち]に阻まれているゆえ、[r]貴方がマスターを救い出すのです！　いいですね！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠坂田金時
+はァ？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad350]
+[charaTalk B]
+[charaFace B 5]
+[charaEffect B bit_talk_charge_ppl]
+[charaFadein B 0.1 1]
+[wt 1.5]
+[seStop ad350 1.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut B 1200,1200]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠坂田金時
+ら、頼光サン！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠玉藻の前
+えっと、頼光さんと清姫ちゃん、[r]殺る気全開に見えるんですが、本気です？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠伊吹童子
+一難去ってまた一難！
+[k]
+
+＠伊吹童子
+賑やかになってきた感じ！[r]ねえねえ、これってどう思う？　マスター？
+[k]
+
+？1：笑いごとじゃないんじゃないかな！
+
+＠伊吹童子
+んー、折角だから[#初志貫徹:しょしかんてつ]！
+[k]
+
+＠伊吹童子
+突破しちゃうぞう！
+[k]
+
+？2：金時と玉藻なら話が通じるかも[line 3]
+
+[charaFace A 0]
+＠伊吹童子
+そうかしら。
+[k]
+
+[charaFace A 8]
+＠伊吹童子
+んー、んー、[r]でもお姉さんもうちょっと[#遊びたい]わぁ。
+[k]
+
+[charaFace A 1]
+＠伊吹童子
+だから突破しちゃう！[r]付き合ってね、マスター！
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠坂田金時
+く、くっそ、基地ン中だぞ！[r]手加減しろよ伊吹の神サン！？
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_80 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

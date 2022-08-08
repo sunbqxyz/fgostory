@@ -1,0 +1,781 @@
+
+＄91-25-04-01-3-0
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 25004001 1 琰女]
+[charaSet B 1098162100 1 匕见]
+[charaSet C 4032002 1 李白]
+[charaFilter C silhouette 00000080]
+[charaSet D 3035001 1 忠贞]
+[charaSet E 6036000 1 李书文]
+[charaSet F 7010000 1 卡利古拉]
+[charaSet G 4002000 1 伊斯坎达尔]
+[charaSet H 2031000 1 拿破仑]
+[charaSet I 4028000 1 伊凡雷帝]
+
+[charaSet S 98115000 1 特效用]
+[imageSet T back10000 1]
+[charaScale T 1.05]
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 105900]
+[branch lblConf]
+[label lblNotClear]
+[scene 105600]
+[label lblConf]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad59]
+[seVolume ad59 0 0.1]
+[seVolume ad59 1.0 1.0]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.4 1]
+[charaShake A 0.1 3 3 0]
+[wt 0.4]
+
+[seStop ad59 0.5]
+[wt 0.5]
+
+＠琰女
+哈咿、哈咿、哈咿……[bgm BGM_EVENT_2 0.1]
+[k]
+
+＠琰女
+有，有没有，可以藏身的地方！？[r]锯子好可怕……锯子好可怕……
+[k]
+
+[charaShakeStop A]
+
+＠B：？？？
+喂～。我说喂～。
+[k]
+
+[charaFace A 16]
+
+＠琰女
+……啊？　能听见声音，却看不见灵基？
+[k]
+
+＠B：？？？
+怎么了。在这里哦！
+[k]
+
+[messageOff]
+[se ad538]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[scene 51400]
+[wt 0.52]
+[se ade125]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+＠琰女
+……咦咦咦咦？[r]食堂的阴暗处竟然有这种秘密空间？
+[k]
+
+＠琰女
+光线昏暗……有些危险的气息……？[r]那边那位是[line 3]匕见小姐？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_7 0.1]
+
+
+＠匕见
+哎呀，我还当是谁呢，是杨家的千金啊。
+[k]
+
+[charaFace B 1]
+
+＠匕见
+真是求之不得的幸运！[r]非赏雪酒，非赏月酒，而是赏花酒！　干杯！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 22]
+[charaFadein A 0.1 1]
+
+＠琰女
+仔，仔细看来，满地都是空酒瓶……[r]这些全都是您一个人喝掉的吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠匕见
+呵呵，怎么会呢。[r]独自饮酒的方式我还是懂的。
+[k]
+
+＠匕见
+我正和其他两位酒友一起愉快地喝呢。[r]结果……
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth E 2]
+[charaDepth B 3]
+
+[charaFace D 0]
+[charaFadein D 0.4 -220,0]
+[charaFadeTime D 0.4 0.6]
+
+[charaFace E 0]
+[charaFadein E 0.4 -400,0]
+[charaFadeTime E 0.4 0.6]
+[wt 1.0]
+
+[charaFace D 4]
+
+＠匕见
+忠贞表示要去补充喝光的酒[line 3][charaFadeout D 0.4][wt 1.2][r]李书文则说去寻找一些下酒菜，说完就走了。[charaFadeout E 0.4][wt 0.4]
+[k]
+
+[charaFace B 1]
+
+＠匕见
+[line 3]可是，无论是等，是跳舞，还是泪洒枕巾，[r]那两个人都始终没回来。真寂寞啊～！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaDepth A 5]
+[charaDepth T 1]
+
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+[charaFadeTime T 0.2 0.5]
+
+＠琰女
+[f large]（溜了吧！？）
+[k]
+
+[charaFadeout T 0.2]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠匕见
+不过这些都是杞人忧天，杞人忧天。总算找到了酒。[r]下酒菜也像这样主动找上门来了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠琰女
+啊？　下酒菜？
+[k]
+
+[charaFace A 8]
+
+＠琰女
+那个，其实我正在偷偷摸摸地寻找藏身之处，[r]不希望弄出巨大的声响被人发现……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠匕见
+唔？　这样啊，那真是失礼了。[r]安静地举杯饮酒也不失为一种乐趣……
+[k]
+
+＠匕见
+好了，杨家的千金[line 3]我知道。[r]我听说你其实[#也很行:酒量很好]哦。
+[k]
+
+＠匕见
+像这样在迦勒底角落遭遇也是一种缘分。[r]何不让我们一起来一杯呢？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 19]
+[charaFadein A 0.1 1]
+
+＠琰女
+但是……真的只喝一杯就结束吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠匕见
+你该不会把我当做单纯的[r]发酒疯醉鬼姐姐了吧……？
+[k]
+
+[charaFace B 1]
+
+＠匕见
+说对了！　当然不可能只喝一杯就结束！[wt 1.0][charaShake B 0.1 0 5 1.2][r]哈哈哈哈哈哈哈（拖拖拍拍拍）！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaShakeStop B]
+
+[charaTalk depthOff]
+[charaDepth A 5]
+[charaDepth T 1]
+
+[charaTalk A]
+[charaFace A 25]
+[charaFadein A 0.1 1]
+[charaFadeTime T 0.2 0.5]
+
+＠琰女
+（咦？　这是喝酒拷问吗？）
+[k]
+
+[charaFadeout T 0.2]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaFace A 4]
+
+＠琰女
+那个，那个，还请安静一点……[r]呜呜呜没办法，就一会儿哦！？
+[k]
+
+[charaFace A 15]
+
+＠琰女
+[line 6]（一饮而尽）。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠匕见
+哦～，喝得真痛快！[r]倾国！　倾国！　倾国！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠琰女
+不要叫我倾国啦～！！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[effect bit_talk_salamander]
+[se ad267]
+[seVolume ad267 0 0.4]
+[wt 0.7]
+[se ad450]
+[seVolume ad450 0 0.4]
+[effectStop bit_talk_salamander]
+[wt 0.8]
+
+＠
+[charaTalk S]
+[f small][align right][00ffff]【贵妃大人】【加油】【加油】[align][r][f small][align right][00ffff]【加油】【插旗】【大丈夫萌大奶】[align]
+[k]
+
+[seStop ad450]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠匕见
+那是鬼火吗！[r]据说是寄宿着侍女之灵的那个吧！？
+[k]
+
+＠匕见
+那真不错，请务必让我见识一下后宫之舞！[r]击筑吧～！　尽情演奏吧～！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠琰女
+不是什么筑，而是琵琶和龙笛啦～！
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 0.5]
+[bgm BGM_EVENT_7 1.0 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[wipein rollLeft 1.0 0.5]
+[bgm BGM_EVENT_7 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 20]
+[charaFadein A 0.1 1]
+
+＠琰女
+啊哈哈哈，啊哈哈哈哈哈！[r]杨，玉，杨杨～♪　杨～玉玉～♪
+[k]
+
+[charaFace A 25]
+
+＠琰女
+好好～～真开心呀～！[r]哎嘿嘿，毕竟是难得的酒宴[line 3]
+[k]
+
+[charaFace A 12]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth G 2]
+[charaDepth A 9]
+
+[charaFace G 0]
+[charaFace F 0]
+[charaFadein F 0.4 -330,0]
+[charaFadeTime F 0.4 0.6]
+
+
+[branchQuestNotClear lblNotClear2 3000218]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+＠琰女
+将，将卡利古拉陛下，[wt 1.0][charaFadeout F 0.4][wt 0.4]还有伊斯坎达尔陛下！[charaFadein G 0.4 -310,0][charaFadeTime G 0.4 0.6][r]务必务必都邀来此处吧！　好吗！
+[k]
+
+[branch lblNotClear_out2]
+[label lblConf2]
+
+[charaDepth H 3]
+[charaDepth I 4]
+
+[charaFace I 0]
+[charaFace H 0]
+
+＠琰女
+将，将卡利古拉陛下、[wt 1.0][charaFadeout F 0.4][wt 0.4]伊凡雷帝陛下[charaFadein I 0.4 -310,0][charaFadeTime I 0.4 0.6][wt 1.0][charaFadeout I 0.4][wt 0.4]拿破仑陛下！[charaFadein H 0.4 -310,0][charaFadeTime H 0.4 0.6][wt 1.0][charaFadeout H 0.4][wt 0.4][charaFadein G 0.4 -310,0][charaFadeTime G 0.4 0.6][r]还有伊斯坎达尔陛下也务必务必邀来此处吧！
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout H 0.1]
+
+
+[label lblNotClear_out2]
+
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠匕见
+那还真是莫名有些烦呢！[r]好！　皇帝就该被我刺戳扎捅[line 2]！！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad450]
+[seVolume ad450 0 0.4]
+
+＠
+[charaTalk S]
+[f small][align right][00ffff]【完全烂醉】【即刻中止】【鸭梨山大】[align][r][f small][align right][00ffff]【救命啊】【旗回收】【有生之年】[align]
+[k]
+
+[messageOff]
+[seStop ad450]
+
+
+
+[wipeout fire 2.0 1.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait wipe]
+
+[scene 10001]
+[wt 0.1]
+[fadeout black 0.1]
+[wait fade]
+[wipein fire 0.1 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[scene 116900 1.5]
+[wt 1.6]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_1 0.1]
+
+＠？？？
+玉玉……玉玉啊……[r]我在对你的内心说话哦。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 22]
+[charaFadein A 0.1 1]
+
+＠琰女
+……啊……您，您是……[r]难，难道说……
+[k]
+
+[charaFace A 21]
+
+＠琰女
+[f large]幻想李白！？
+[k]
+
+[charaFace A 18]
+
+＠琰女
+我喝得烂醉后，不知不觉出现的[r]破罐子破摔唠唠叨叨的幻想李白！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠李白
+哈哈哈，没错，说得对。[r]我是幻想李白。
+[k]
+
+＠李白
+外人称我为盛唐的“诗仙”。[r]酒客饮中八仙之一[line 3]太白·李白本人。
+[k]
+
+＠李白
+不过嘛，也是你脑海中描绘的幻觉哦？
+[k]
+
+＠李白
+不过是认识了数年程度的我这般模样，[r]竟然能刻入从者琰女的灵基，这是我的荣幸。
+[k]
+
+＠李白
+于是乎，分我点酒。[r]啊啊，谢谢，谢谢。
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_yuge]
+[wt 1.0]
+
+[fadeout white 1.5]
+[bgmStop BGM_EVENT_1 1.5]
+[wait fade]
+
+[fowardEffectDestroy bit_talk_yuge]
+[charaFadeout C 0.1]
+[scene 116800]
+[wt 1.0]
+
+[fadein white 1.5]
+[wait fade]
+
+[wt 0.2]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠李白
+娘子你还是老样子呢，玉玉？[r]呵呵……
+[k]
+
+＠李白
+一杯一杯复一杯。[r]明朝有意抱琴来，呢（一口饮尽）。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠琰女
+我，我不会再喝过头啦！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠李白
+少来啦，总是说这种无法履行的承诺。
+[k]
+
+＠李白
+有什么关系嘛。想喝多少喝多少。[r]尽情喝个痛快，将忧愁抛到脑后啦。
+[k]
+
+＠李白
+竟然会被你说教，别开玩笑了。[r]我只是将我的心里话一五一十说出来，仅此而已。
+[k]
+
+＠李白
+好了，话说……
+[k]
+
+＠李白
+你现在想独占迦勒底的[#主人:御主]，[r]但当着武后的面，无法称心如意吧？
+[k]
+
+＠李白
+因为迦勒底和宫廷不一样。[r]你意识到了西行者想说的话，才会找机会溜走的吧？
+[k]
+
+＠李白
+并非只有血亲才算家人，好像是这么说的吧。[r]你无法忍受这种用来掩饰的漂亮话吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠琰女
+…………
+[k]
+
+[charaFace A 15]
+
+＠琰女
+……这令我忍不住回想起，[r]教导我笛子的那一位[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠李白
+嗯，李隆基的异母兄长，李宪吗？
+[k]
+
+＠李白
+他的确是个稀世罕见的笛子名家。[r]也是个将皇位白白让给弟弟的傻男人……
+[k]
+
+＠李白
+我倒是非常欣赏那个男人。[r]李宪的长子，汝阳王李琎也是个分外有趣的家伙。
+[k]
+
+＠李白
+你好像非常羡慕你的天子大人李隆基[r]向哥哥和外甥投去的温柔眼神吧？
+[k]
+
+＠李白
+娘子，你肯定[line 3]
+[k]
+
+＠李白
+想要用安禄山来确认，[r]世上还有这种不求回报的无私之爱吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠琰女
+………………呜……
+[k]
+
+[charaFace A 14]
+
+＠琰女
+………………
+[k]
+
+[charaFace A 8]
+
+＠琰女
+……那，那个时候，[r]李白不是已经不在宫廷了吗……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠李白
+将我赶出宫廷的究竟是谁呢？[r]算了，这种事反正也无所谓。
+[k]
+
+＠李白
+没事，迦勒底又算什么。[r]去试着习惯吧。很快就会没有任何感觉了。
+[k]
+
+＠李白
+无论在哪里，你都很擅长[r]扼杀自己去忍耐吧。
+[k]
+
+＠李白
+你给武后找麻烦让她头疼。[r]而武后则乐于惩罚你。
+[k]
+
+＠李白
+这种爱的表现很适合你们两个笨拙的人。[r]所谓理想的家人，只存在于回忆之中。
+[k]
+
+＠李白
+可是武后是那种哪怕面对家人武氏一族，[r]也会毫不留情地施以鞭刑的女杰。
+[k]
+
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth T 9]
+
+[charaPut T 1]
+[charaFadeTime T 2.0 0.6]
+
+＠李白
+哪怕会夸张地血肉横飞，但确实是公平的爱。[r]我有说错吗，娘子？
+[k]
+
+[charaFadeTime T 2.0 0.8]
+
+＠李白
+谁家玉笛暗飞声[r]何人不起故园情[line 3]
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgm BGM_EVENT_11 1.5 0.5]
+[wait fade]
+
+[charaFadeout T 0.1]
+[charaFadeout C 0.1]
+[scene 10000]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+＠琰女
+我不要……[r]我才……不要这样呢……
+[k]
+
+＠琰女
+无论御主……还是奶奶……都很重要……
+[k]
+
+＠琰女
+好不容易……[r]……能像这样遇见……
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_11 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

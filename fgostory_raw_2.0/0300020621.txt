@@ -1,0 +1,913 @@
+
+
+＄03-00-02-06-2-1
+[soundStopAll]
+
+
+
+[charaSet A 2031000 1 拿破仑]
+[charaSet B 8001400 1 玛修]
+[charaSet C 98002000 1 芙芙]
+[charaSet H 5009000 1 特效用dummy]
+
+[scene 60701]
+
+[bgm BGM_EVENT_80]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaScale H 1.4]
+[charaEffect H bit_talk_rarrow01br 1 F]
+[charaPut H 1200,1200]
+[wt 0.6]
+[charaPut H -50,-100]
+[wt 0.3]
+[cueSe Battle bac423]
+
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠拿破仑
+……好！　最后一骑也击败了！
+[k]
+
+[messageOff]
+[charaFace A 0]
+
+[wt 0.5]
+
+[cueSe Battle bac170]
+
+[bgmStop BGM_EVENT_80 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_77 0.1]
+[wt 0.5]
+
+[charaFace A 6]
+
+＠拿破仑
+辛苦啦，[&少年少女:两位小姐]！[wt 0.9][charaFace A 0][r]没想到量产瓦尔基里竟会一涌而出。
+[k]
+
+[charaFace A 1]
+
+＠拿破仑
+不过，反正两者都是受女王支配的存在。[r]会协同作战也不奇怪，只是看起来怎么说呢。
+[k]
+
+＠拿破仑
+率领巨人的女武神还挺有神话感的呢。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[wt 0.1]
+
+[se ade18]
+[seVolume ade18 0.0 0.5]
+
+[wt 0.5]
+[seStop ade18 0.8]
+[wt 1.5]
+
+＠玛修
+……与其说庄严，不如说有种壮丽感呢。
+[k]
+
+＠玛修
+御主，周围没有魔力反应。[r]辛苦了。
+[k]
+
+？1：玛修也辛苦了.
+
+[charaFace B 1]
+
+＠玛修
+嗯！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+？2：也要谢谢拿破仑。
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠拿破仑
+哦？　噢，我只是做了应做的事而已。
+[k]
+
+[charaFace A 6]
+
+？！
+
+＠拿破仑
+话说你们俩还挺不错的。[r]看得出你们步调很一致，感觉很熟悉战斗呢。
+[k]
+
+＠拿破仑
+盾兵小姐相当有胆识。[r][%1]，你也一样。
+[k]
+
+[charaFace A 0]
+
+＠拿破仑
+同时召唤数骑英灵是基于什么原理？[r]虽然看起来无法一直维持……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠芙芙
+芙，芙呜。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠拿破仑
+太遗憾了！[r]如果能维持现界状态，就能编制出最强[#宏伟军团:Grande Armee]啦！
+[k]
+
+[charaFace A 0]
+
+＠拿破仑
+没有的东西也不能强求。[r]既然如此，就只能提升核心战力的练度了。
+[k]
+
+＠拿破仑
+也就是你们和我。[wt 0.8][charaFace A 8][r]我想想……
+[k]
+
+[wt 1.0]
+[charaFace A 0]
+
+＠拿破仑
+我来教你们几点狩猎巨人种的诀窍吧。[r]首先，和它们战斗时要瞄准感觉器官和脚。
+[k]
+
+＠拿破仑
+若有威力巨大的武器，试着瞄准重要器官一击必杀也不坏，[r]但常规方法就是瞄准感觉器官和脚。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠玛修
+是指……头部和脚吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠拿破仑
+没错。头部是感觉器官集中的部位。[r]因为眼睛和鼻子都藏在面具下，听觉看起来也不怎么敏锐，
+[k]
+
+＠拿破仑
+所以他们应该具备灵性视野或热源感知能力，[r]但使用的应该还是视觉。
+[k]
+
+＠拿破仑
+就算隔着面具也能给予伤害。[r]毕竟标靶这么大，应该不难才对。
+[k]
+
+＠拿破仑
+脚的话，没错，最好瞄准关节部位。[r]尽管那庞大的身躯和质量对我们是个威胁，
+[k]
+
+＠拿破仑
+但失去平衡的巨大身躯是最容易遭到打击的。[r]也就是说……
+[k]
+
+[charaFace A 6]
+
+＠拿破仑
+没什么特别的。就是常规做法。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠芙芙
+芙芙，芙！
+[k]
+
+？1：你很擅长与巨人战斗呢。
+？2：原来拿破仑是巨人猎手……？
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠玛修
+嗯，我也很惊讶。[r]原来拿破仑先生是[#巨人杀手:Giant Slayer]啊！
+[k]
+
+[charaFace B 0]
+
+＠玛修
+尽管我没听说过……这种轶事，[r]难道是什么不为人知的轶事吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠拿破仑
+不是不是。只是顺其自然啦，顺其自然。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠芙芙
+芙芙？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠玛修
+顺其自然？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠拿破仑
+嗯，是因为经历了一些事。
+[k]
+
+[messageOff]
+[charaFace A 8]
+[wt 1.0]
+[charaFace A 0]
+
+＠拿破仑
+……太阳快要落山了。[r]正好，我们就在这附近待到天亮吧？
+[k]
+
+＠拿破仑
+而且，差不多也是时候向你们说一下[#作战]的事了。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[charaSet B 8001410 1 玛修]
+
+[wt 2.0]
+
+[scene 54701]
+
+[cameraMove 0.1 -10,80 1.3]
+[wt 0.1]
+
+[fadein black 1.5]
+[cameraMove 2.0 10,80 1.3]
+[se ade24]
+[seVolume ade24 0 0.6]
+[wait fade]
+
+[wt 0.7]
+
+＠玛修
+这是[line 3]
+[k]
+
+[messageOff]
+[cameraHome 1.5]
+[seStop ade24 0.7]
+[wt 2.0]
+
+[bgm BGM_EVENT_77]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛修
+那个，这里的野营设备似乎相当齐全。[r]难不成这里是拿破仑先生事先准备的……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠拿破仑
+嗯。我在各地零零散散地设置了这类据点。[r]是从我赶跑了御使的村落那儿征收，[charaFace A 1]咳咳，不对，
+[k]
+
+＠拿破仑
+是用从他们那里借来的东西勉强过着野营生活啦。[wt 0.8][charaFace A 11][r]总之，要说落单从者有什么优势的话，
+[k]
+
+[charaFace A 6]
+
+＠拿破仑
+就是不用担心补给吧。[r]只要有能让肉体与精神休整的场所就足够了。
+[k]
+
+[charaFace A 0]
+
+＠拿破仑
+不过，不能让[&少年少女:小姐们]也这样呢……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠玛修
+不，没有问题。[r]但还是感谢您的关心。
+[k]
+
+[charaFace B 0]
+
+＠玛修
+我们常备着一套粮食、饮用水以及野营用睡袋。[r]利用盾牌的收纳空间。
+[k]
+
+＠玛修
+嘿咻。
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[wt 0.8]
+
+[se ade41]
+[seVolume ade41 0 0.5]
+
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠芙芙
+芙[line 3]呜！[r]芙芙！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠玛修
+也有芙芙那份哦。[r]我把水倒到盘子里了哦。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaMoveReturn C 0,30 0.25]
+
+＠芙芙
+芙！　芙！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠拿破仑
+哎，真方便！[r]不过毛毯总归越多越好吧，拿着。
+[k]
+
+[messageOff]
+[se ad77]
+[wt 0.5]
+[seStop ad77 0.2]
+
+？1：谢谢。
+？2：呼，好暖和……
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛修
+还有从潜航艇带来的储存用食品……[r]不过今晚就吃格尔达小姐给我们烤的面包吧。
+[k]
+
+[messageOff]
+[charaFace B 12]
+[wt 1.0]
+[charaFace B 8]
+
+＠玛修
+分别的时候太匆忙了，[r]不知格尔达小姐……现在怎样了呢。
+[k]
+
+？1：…………嗯。
+
+[charaFace B 12]
+
+＠玛修
+……[r]……
+[k]
+
+？2：我好想再见她一面呢。
+
+[charaFace B 12]
+
+＠玛修
+…………嗯。我也这么想。
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaMoveReturn C 0,30 0.25]
+
+＠芙芙
+芙芙，芙！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFace B 14]
+[charaFadein B 0.1 2]
+
+＠玛修
+啊，芙芙！　你还没说“我开动了”，[r]就那样大口大口地吃面包[line 3]！
+[k]
+
+＠芙芙
+芙！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠拿破仑
+噢噢，看起来很好吃嘛。我也尝一口吧。[r]唔嗯，唔嗯。哦。这味道相当不错……勋章级！
+[k]
+
+[charaFace A 3]
+
+＠拿破仑
+她是叫格尔达吗，还得为那女孩颁一枚勋章呢！
+[k]
+
+[messageOff]
+[wipeout rollRight 1.5 1.0]
+[bgmStop BGM_EVENT_77 1.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[wt 2.0]
+
+[wipein rollLeft 1.5 1.0]
+[se ade24]
+[seVolume ade24 0 0.6]
+[wait wipe]
+
+[seStop ade24 2.0]
+[wt 2.0]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠拿破仑
+呼。多谢款待。
+[k]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaFace A 0]
+
+＠拿破仑
+那就让我们开始期待已久的“作战会议”吧。[r][line 3]抱歉，拖了这么久。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠玛修
+没事，毕竟您现在就打算向我们做事先说明了。[r]那我们还要重新请您多指教啦。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠拿破仑
+彼此彼此。
+[k]
+
+[charaFace A 8]
+
+＠拿破仑
+明天的话，我想想。应该算是去袭击据点吧？[r]我们要潜入位于原奥斯陆一带的“城堡”。
+[k]
+
+[charaFace A 0]
+
+＠拿破仑
+当然，战斗想必是无可避免的。
+[k]
+
+？1：你认为[line 3]我们能赢吗？
+？2：光齐格鲁德一个人就是强敌了。
+
+？！
+
+
+＠拿破仑
+没错。[r]所以在这种情况下[line 3]就该先设定好胜利条件！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠芙芙
+芙？　芙芙？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠拿破仑
+什么情况下可以算是我军获得胜利。[r]反之，什么情况下可以算是我军败北。
+[k]
+
+[charaFace A 10]
+
+＠拿破仑
+胜利条件是歼灭敌方势力吗？[r]不，我们既不可能打倒北欧所有巨人种与御使，
+[k]
+
+＠拿破仑
+我和你们也不会刻意去打倒他们。[r]所以并不是这个。这不能称作胜利条件。
+[k]
+
+[charaFace A 0]
+
+＠拿破仑
+你们应该做的事情是[line 3]
+[k]
+
+？1：夺回[#平面之月:Paper Moon]！
+？2：还要调查空想树的具体位置[line 3]
+
+？！
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠玛修
+对。[r]夺回[#平面之月:Paper Moon]是首要目的，也是当务之急。
+[k]
+
+＠玛修
+关于不见踪影的空想树的情报也是必须的。
+[k]
+
+＠玛修
+或许会等接触彷徨海以后再做，[r]但我们最终还是要切除空想树……
+[k]
+
+[charaFace B 12]
+
+＠玛修
+将这个[#异闻带:Lostbelt]……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠拿破仑
+那么，这才是你们的胜利条件。[r]才是你们应该做的事。
+[k]
+
+＠拿破仑
+夺回那个什么[#平面之月:Paper Moon]，获得空想树的情报。
+[k]
+
+＠拿破仑
+那败北条件呢？　这也很明确。[r]就是你们被杀死，全军覆没。
+[k]
+
+＠拿破仑
+你们只能边保护自己，[r]边达成胜利条件。
+[k]
+
+＠拿破仑
+如果只是“打倒敌人”，那倒还简单。[r]然而你们的胜利条件相当困难。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠芙芙
+芙呜……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠拿破仑
+噢，表情有些不安呢，小狗狗！[r]我理解你的心情[line 3]毕竟女王的势力遍布北欧全土嘛！
+[k]
+
+[charaFace A 0]
+
+＠拿破仑
+不过啊。那家伙可没打算投入全部战力哦？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠玛修
+是……这样吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠拿破仑
+若真的想杀，女王早就动手了。[r]御使和巨人种都依女王的意志行动，也就是所谓的人偶。
+[k]
+
+＠拿破仑
+只需向附近一带的巨人种下达搜索和攻击命令，[r]我们就得不眠不休地持续战斗了啊[line 3]
+[k]
+
+[charaFace A 0]
+
+＠拿破仑
+然而实际情况却是现在这样。[r]别说警戒线了，就连防卫线都不存在。
+[k]
+
+？1：也就是说，既没有警戒……
+？2：也不打算防卫吗？
+
+？！
+
+
+＠拿破仑
+嗯，没错。尽管身为[#宏伟军团:Grande Armee]总司令的我非常不甘心，[r]但我们甚至没被她当做敌军看待。
+[k]
+
+[charaFace A 8]
+
+＠拿破仑
+她顶多把我们当成会吼叫的野兽了吧？
+[k]
+
+[messageOff]
+[charaFace A 10]
+[wt 1.0]
+[charaFace A 6]
+
+＠拿破仑
+算了，这样也无所谓。[r]我们就利用这个机会。毫无警戒就意味着满是破绽。
+[k]
+
+[charaFace A 0]
+
+＠拿破仑
+剩下的，就是[line 3]
+[k]
+
+[messageOff]
+[charaFace A 1]
+[charaMoveScale A 1.1 0.4]
+[charaMove A 0,15 0.4]
+[se ad60]
+[wt 0.2]
+[seStop ad60 0.1]
+
+＠拿破仑
+……耳朵凑过来一点。[r]听好了，关于这次潜入据点[line 3]
+[k]
+
+[messageOff]
+[wipeout rollRight 1.5 1.0]
+[bgm BGM_EVENT_70 1.5 0.3]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaScale A 1.0]
+
+[wt 2.0]
+
+[wipein rollLeft 1.5 1.0]
+[se ade24]
+[seVolume ade24 0 0.6]
+[wait wipe]
+
+[seStop ade24 1.5]
+[wt 1.0]
+[bgm BGM_EVENT_70 0.5 1.0]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠拿破仑
+好嘞！[r][line 3]尽管以作战而言有些粗糙，但暂时就这样计划吧！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠玛修
+是。我明白了！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠拿破仑
+回答得好。没事，不用担心啦！[r]我也不是两手空空地把你们带到这里来的。
+[k]
+
+[charaFace A 11]
+
+＠拿破仑
+我还有几张珍藏的王牌。[wt 1.0][charaFace A 6][r]……因为是王牌所以不能告诉你们。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠芙芙
+芙呜！[r]嘎呜！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠拿破仑
+哈哈哈！　抱歉抱歉！[r]一半是在开玩笑，但也有一半是认真的哦，哈哈哈哈哈哈哈哈哈！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

@@ -1,0 +1,658 @@
+
+
+＄03-00-02-03-2-1
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 玛修]
+[charaSet B 1033000 1 齐格鲁德（剪影）]
+[charaFilter B silhouette 00000080]
+[charaSet C 1033000 1 齐格鲁德]
+[charaSet G 98115000 1 特效用]
+[charaSet H 98115000 1 特效用]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[charaDepth H 10]
+
+[charaPut H 1]
+[charaEffect H bit_talk_celebro]
+[charaEffect H bit_talk_celebro_back]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 60601]
+
+[fadein black 1.0]
+[wait fade]
+
+[se adm14]
+[effect bit_talk_kengekiall03]
+
+[wt 0.2]
+[se adm14]
+[wt 0.5]
+
+[se ad32]
+[effect bit_talk_14]
+[wt 1.0]
+
+[se ad170]
+[effect bit_talk_14]
+[wt 0.3]
+[se ad32]
+[effect bit_talk_14]
+[wt 0.7]
+
+
+[se ad671]
+[charaShake A 0.05 3 2 1.2]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.4 1]
+
+＠玛修
+咕，呜呜……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+[wt 0.4]
+[se ad681]
+
+[charaShake C 0.05 5 0 0.4]
+[charaFadeout C 0.4]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+（来了！）
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad680]
+[fowardEffect bit_talk_gram_slash_02]
+[wt 0.6]
+
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[se ad170]
+[effect bit_talk_14]
+[charaShake A 0.05 3 3 0.6]
+[wt 0.5]
+
+＠玛修
+咕……呜……！[wt 0.5][charaFace A 2][r]嘿，啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊[line 3]！
+[k]
+
+[flag MALE false]
+[flag FEMALE false]
+
+[selectionUse masterMale]
+？1：使用令咒！
+[flag MALE true]
+？！
+
+[selectionUse masterFemale]
+？1：使用令咒！
+[flag FEMALE true]
+
+？！
+
+[messageOff]
+
+[branch play01 MALE 1]
+[branch play02 FEMALE 1]
+
+[label play01]
+[charaEffect G bit_talk_CommandMantra_01 0,64]
+[wt 0.5]
+[se bas16]
+[wt 1.5]
+
+[branch play03]
+
+[label play02]
+[charaEffect G bit_talk_CommandMantra_02 0,64]
+[wt 0.5]
+[se bas16]
+[wt 1.5]
+
+[branch play03]
+
+[label play03]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠齐格鲁德
+唔[line 3]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[seStop ad632 0.5]
+[fadeMove white 0.4 1.0]
+[se ad467]
+[se ad170]
+[se ad32]
+[wait fade]
+
+[fadein white 0.3]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+哈啊啊啊啊！！
+[k]
+
+[messageOff]
+
+[se ad73]
+[charaMoveScale A 1.0 0.3]
+[charaPut G 1]
+[charaEffect G bit_talk_41]
+[wt 0.3]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_41]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+[wt 0.1]
+[se ad686]
+[charaEffect C bit_talk_13]
+[flashin once 0.2 0.2 FFFFFF80 FFFFFF80]
+[charaShake C 0.05 4 3 0.5]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaScale A 1.0]
+
+＠玛修
+（命中！）
+[k]
+
+＠玛修
+（一击！）
+[k]
+
+[messageOff]
+[se ad54]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.4 1]
+
+＠玛修
+哈啊，哈……哈啊……[r]呼……
+[k]
+
+[charaFace A 7]
+
+＠玛修
+……这是承载了我和前辈全部魔力的一击。[r]再加上福尔摩斯先生的力量，威力非同小可。
+[k]
+
+＠玛修
+尽管不是正宗的巴流术，但我感觉打中了。[r]应该也对你的灵核造成了些许损伤。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠齐格鲁德
+……[r]……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+…………撤退吧，齐格鲁德。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠齐格鲁德
+你提到了灵核吧。[r]但那又如何。
+[k]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠齐格鲁德
+[f large]那又如何？
+[k]
+
+[messageOff]
+[se ad681]
+
+[charaFadeout C 0.4]
+[charaShake C 0.05 5 0 0.4]
+[wt 0.8]
+
+？1：玛修！
+？2：看不到他了[line 3]
+
+？！
+
+
+[se adm14]
+[se ad679]
+[effect bit_bolg_01]
+[wt 0.2]
+
+[se ad680]
+[effect bit_bolg_02]
+[wt 0.2]
+
+[effect bit_talk_14]
+[se ad170]
+[wt 0.8]
+[se ad322]
+[shake 0.05 3 2 1.0]
+[wt 1.0]
+
+＠玛修
+唔啊啊啊……！
+[k]
+
+[messageOff]
+[se ad632]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.4 1]
+[charaShake A 0.05 2 1 0.8]
+[wt 0.4]
+
+＠玛修
+前……辈……！[seStop ad632 1.5]
+[k]
+
+＠玛修
+外骨骼，驱动率降低[line 3][r]魔力残量只剩少许……咕……呜呜……还没……！
+[k]
+
+＠玛修
+……我……绝对，不能……倒下……！[r]前辈……前……辈……
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[charaMove A 0,-15 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+
+？1：（飞奔过去）。
+
+？！
+
+[messageOff]
+[se ad55]
+[seVolume ad55 0 0.4]
+[shake 0.05 0 1 0]
+[wt 0.4]
+
+[seStop ad55]
+[shakeStop]
+
+[se ad1]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.4 1]
+[charaShake C 0.05 3 3 0.4]
+
+＠齐格鲁德
+你[line 3]不许动。
+[k]
+
+＠齐格鲁德
+好了……[r]刚才那个是为什么？　因为是混杂品吗？
+[k]
+
+＠齐格鲁德
+当你说全部魔力这句话的时候真令我大吃一惊。[r]没想到竟然会有在捕杀猎物时舔舐舌头的猎人呢。
+[k]
+
+＠齐格鲁德
+……[r]……
+[k]
+
+＠齐格鲁德
+嗯，不对。你们不是猎人，[r]不是勇士，恐怕连战士都不是吧。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_24 0.5 0.5]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se bac151]
+[shake 0.05 3 4 1.0]
+[flashin once 0.2 0.2 FF000080 FF000000]
+
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠玛修
+前辈……！！
+[k]
+
+＠玛修
+呜……快动……快动啊，[#灵基外骨骼:奥特瑙斯]！[r]拜托了[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠齐格鲁德
+可悲的人类幼子啊。
+[k]
+
+＠齐格鲁德
+此乃慈悲。喜悦吧。[r]你们的首级，将被你们的英雄的剑砍下。
+[k]
+
+＠齐格鲁德
+人类啊，人类啊，可悲的存在啊。[r]你们没有明天，同样，世界也没有明天。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠玛修
+不行，不行……！[r]前辈，前辈，请再次对我用一次令咒……前辈……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠齐格鲁德
+白费力气。[r]你也清楚，在倾注魔力前你就会死去。
+[k]
+
+＠齐格鲁德
+永别了。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 2.0]
+[se ad51]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaFilter B normal 00000000]
+
+？1：（不移开视线）。
+
+[se adm14]
+
+＠
+[line 12]
+[k]
+
+＠
+剑伴随着呼啸声挥下。
+[k]
+
+＠
+……[r]……
+[k]
+
+＠
+没有……………………………鲜血。
+[k]
+
+＠
+什么都没从脖子处喷出。[r]也没有刀刃斩断骨头的残酷声音。
+[k]
+
+＠
+首级仍连在脖子上。[r]还活着。
+[k]
+
+＠
+只有一纸之隔……[r]只要魔剑的剑尖再往下移动一点，
+[k]
+
+＠
+[%1]的生命就会被斩断了。[r]但是。
+[k]
+
+[messageOff]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.7 1]
+[wt 1.0]
+
+＠
+[charaTalk A]
+戛然而止。[r]就在千钧一发之际，赤色的魔剑完全停了下来。
+[k]
+
+？2：（一边闭上眼睛一边使用令咒）。
+
+[wipeout openEye 0.1 0.1]
+[wait wipe]
+
+[charaPut H 2000,2000]
+[wt 0.1]
+
+[scene 10000]
+
+[wipein openEye 0.1 0.1]
+[wait wipe]
+
+[se adm14]
+
+＠
+[line 3]确实。[r]挥剑的速度，比令咒的使用更快。
+[k]
+
+＠
+耳边响起剑锋呼啸之声……
+[k]
+
+＠
+…………不知为何，仅此而已。
+[k]
+
+＠
+哪怕经过一秒，经过两秒，[r]也没发生任何变化。
+[k]
+
+＠
+并没有冲击或剧痛之类的感觉[r]向[%1]袭来。
+[k]
+
+＠
+也并非因为在毫无触感的情况下[r]就被夺去生命。
+[k]
+
+
+[messageOff]
+[wipeout openEye 0.1 0.1]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[scene 60601]
+
+[wipein openEye 1.0 0.5]
+[wait wipe]
+[wt 1.0]
+
+＠
+[charaTalk A]
+戛然而止。[r]赤色的魔剑在眼前完全停了下来。
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+（魔剑的剑刃……在中途……停了下来[line 3]）
+[k]
+
+[charaFace A 9]
+
+＠玛修
+御主！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[wt 0.3]
+[charaFace B 12]
+[charaFadein B 0.4 1]
+[wt 0.7]
+
+＠齐格鲁德
+…………哼。[charaFadeout C 0.1][bgm BGM_EVENT_81 0.1][r]这就是所谓英雄的自尊吗。
+[k]
+
+[se ad51]
+
+＠齐格鲁德
+你捡回了一条小命啊，人类幼子。
+[k]
+
+
+[messageOff]
+[se ad60]
+[charaFadeout B 0.7]
+[wt 1.0]
+[seStop ad60 1.0]
+[wt 0.6]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+[se ad632]
+[wt 0.8]
+
+＠玛修
+御主！[seStop ad632 1.5]
+[k]
+
+＠玛修
+请不要乱动……！[r]您在被他踢踹的时候负伤了……
+[k]
+
+[messageOff]
+[charaFace A 11]
+[wt 1.0]
+[charaFace A 8]
+
+＠玛修
+所以……[r]请您暂时先不要动……
+[k]
+
+＠玛修
+…………前辈…………
+[k]
+
+[messageOff]
+[charaFadeout A 0.7]
+[charaMove A 0,-15 1.0]
+[wt 1.0]
+[se ad144]
+
+
+？1：玛修……！
+
+？！
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

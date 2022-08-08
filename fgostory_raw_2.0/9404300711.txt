@@ -1,0 +1,886 @@
+
+
+
+
+＄94-04-30-07-1-1
+
+[soundStopAll]
+
+[charaSet A 1041002 1 阿斯托尔福]
+[charaSet B 3036001 1 布拉达曼特]
+[charaSet C 2039000 1 南丁格尔·圣诞]
+[charaSet D 99502600 1 玛修]
+[charaSet E 1098123210 1 戈尔德鲁夫]
+[imageSet F cut138_christmas_bell 1]
+[imageSet G cut139_Grail 1]
+[imageSet H back10000 1]
+[charaScale F 1.01]
+[charaScale G 1.01]
+[charaScale H 1.01]
+[charaDepth F 10]
+[charaDepth G 9]
+
+[charaSet J 1098120900 1 通讯用杂音]
+
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+[charaPut A 1200,1200]
+[charaEffect A bit_talk_charge_red]
+
+[scene 21803]
+
+[bgm BGM_EVENT_24 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[charaMove A 100,0 0.2]
+[charaFadeout A 0.2]
+[se ad73]
+[wt 0.2]
+[charaPut A 1200,1200]
+[wt 0.2]
+
+[fowardEffect bit_talk_v_slash01]
+[se ad171]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.2]
+
+[charaShake C 0.05 3 3 0.7]
+[charaMove C 20,0 0.5]
+[fowardEffect bit_talk_14]
+[se ad170]
+[wt 0.1]
+[fowardEffect bit_talk_14]
+[se ad170]
+[wt 1.2]
+
+[se ad601]
+[charaMove C 0,0 0.4]
+[wt 0.4]
+[seStop ad601]
+
+[se ad7]
+[charaMove C -100,0 0.2]
+[charaFadeout C 0.2]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[fowardEffect bit_talk_13]
+[charaShake A 0.05 3 3 0.3]
+[se bac11]
+[wt 0.3]
+
+[fowardEffect bit_talk_impactlanding]
+[charaEffectStop A bit_talk_charge_red]
+[charaShake A 0.05 3 3 0.7]
+[charaFace A 4]
+[se bac11]
+[se bac36]
+[wt 2.0]
+
+[bgmStop BGM_EVENT_24 1.0]
+
+[charaMove A 0,-50 0.4]
+[charaShake A 0.05 3 3 0.4]
+[charaFadeout A 0.4]
+[se ad601]
+[wt 0.1]
+[seStop ad601 0.2]
+[se ad144]
+[wt 1.5]
+
+[se ad7]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.2 0,-50]
+[charaMove A 0,0 0.2]
+[wt 0.2]
+
+＠阿斯托尔福
+输[line 2]掉[line 2]啦[line 2]！[bgm BGM_EVENT_2 0.1]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠布拉达曼特
+唉，果然不出所料。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+怎么就不出所料了啦！
+[k]
+
+[charaFace A 22]
+
+＠阿斯托尔福
+……咦？[r]好像……力量……正在消失[line 3]……？
+[k]
+
+[messageOff]
+[se ade153]
+[seStop ade153 1.5]
+[wt 1.4]
+
+[fadeout white 1.0]
+[se ad29]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaChange A 4004000 1 normal 0]
+[wait charaChange A]
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.5]
+
+＠阿斯托尔福
+……[r]……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠布拉达曼特
+……[r]……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠南丁格尔·圣诞
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+回到原来的状态了[line 3]！？[bgm BGM_EVENT_7 0.1][r]哎？　咦？　为什么？　为什么啊！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠布拉达曼特
+……难道说。
+[k]
+
+＠布拉达曼特
+小阿是受到了这个铃铛的影响，[r]才会从Rider变成了Saber？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+哎，不，呃……是这样吗？[r]难道不是老天回应了我的努力吗？
+[k]
+
+？1：我就知道。
+？！
+
+＠阿斯托尔福
+御主？
+[k]
+
+？1：因为这个……
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[bgm BGM_EVENT_7 0.5 0.5]
+[charaFadeTime H 0.3 0.5]
+[wt 0.4]
+[charaFadein F 0.7 0,-200]
+[wt 1.7]
+
+[se ad748]
+[seStop ad748 0.5]
+
+[charaRoll G 193 0,-220]
+[charaFadein G 0.7 10,-244]
+[wt 0.3]
+[charaFadeout F 0.7]
+[wt 1.2]
+
+[charaRollMove G 1.5 360]
+[charaMove G 0,-200 1.5]
+[wt 3.2]
+
+[bgm BGM_EVENT_7 0.5 1.0]
+[charaFadeout G 0.3]
+[charaFadeout H 0.3]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠南丁格尔·圣诞
+啊。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠布拉达曼特
+啊。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+啊[line 6]！？
+[k]
+
+？1：是圣杯。
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠玛修
+原来如此！
+[k]
+
+＠玛修
+也就是说圣杯被加工成了铃铛，[r]难怪可以积蓄魔力！
+[k]
+
+[branchQuestNotClear lblNotClear 3000320 4]
+
+[branch lblConf]
+[label lblNotClear]
+
+[charaFadeout D 0.1]
+
+[branch lblNotClear_out]
+[label lblConf]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+
+＠戈尔德鲁夫
+也就是说，我们珍贵的魔力资源[r]被拿来玩圣诞老人办家家了？
+[k]
+
+[charaFace E 9]
+
+＠戈尔德鲁夫
+好，这段记录不用留下来了！[r]毕竟一旦流传出去，迦勒底就会颜面扫地！
+[k]
+
+[charaFadeout E 0.1]
+
+[label lblNotClear_out]
+
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+这样啊，是因为我平时常常许愿，[r]希望能变成Saber的缘故啊！
+[k]
+
+[charaFace A 3]
+
+＠阿斯托尔福
+（……还好我许的不是想要变成[r]　大富翁之类的低俗愿望！）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠布拉达曼特
+原来如此。
+[k]
+
+＠布拉达曼特
+由于铃铛的所有者换成了南丁格尔小姐，[r]小阿身上的力量就被抽走了吧！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+啊呜。[r]人生太不顺了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠南丁格尔·圣诞
+……[r]……
+[k]
+
+[bgmStop BGM_EVENT_7 1.2]
+
+[charaFace C 0]
+
+＠南丁格尔·圣诞
+阿斯托尔福，能打扰一下吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+嗯？
+[k]
+
+[messageOff]
+[se ade381]
+[wt 1.5]
+[effect bit_talk_summon]
+[charaFace A 2]
+[se ad364]
+[seVolume ad364 0 0.5]
+[wt 1.0]
+[seStop ad364 1.0]
+
+＠阿斯托尔福
+呀呼！？
+[k]
+
+＠阿斯托尔福
+哎，哎，哎……！？
+[k]
+
+[messageOff]
+[effectStop bit_talk_summon]
+[se ad29]
+[wt 0.5]
+
+[fadeout white 1.5]
+[wait fade]
+
+[charaChange A 1041002 10 normal 0]
+[wait charaChange A]
+[wt 1.5]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_EVENT_4 0.1]
+
+＠阿斯托尔福
+变回Saber了～！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠布拉达曼特
+稍……稍等片刻！[r]你刚才是不是用了圣杯的力量！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠南丁格尔·圣诞
+对。[r]只用了能让你转变灵基程度的力量。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth A 2]
+[charaDepth B 1]
+[charaFace A 2]
+[charaFace B 2]
+[charaFadein A 0.1 0]
+[charaFadein B 0.1 2]
+
+＠二人
+[f large]哎！？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠南丁格尔·圣诞
+圣杯本就应由迦勒底回收……
+[k]
+
+＠南丁格尔·圣诞
+而且最重要的是，[r]这些圣诞力量并不是我收集的。
+[k]
+
+＠南丁格尔·圣诞
+虽说我已决定成为圣诞老人……
+[k]
+
+[charaFace C 1]
+
+＠南丁格尔·圣诞
+但我并不想依靠圣杯的力量，[r]一跃成为圣诞老人。
+[k]
+
+＠南丁格尔·圣诞
+既然做出了决定，我自然会向着目标努力，[r]而且并不打算采用作弊的手段。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 21]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+好……好高尚……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠布拉达曼特
+不愧是世界上最强的护士小姐……[r]自制力果然与众不同。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠南丁格尔·圣诞
+我有这个复制品就够了。[r]它也能发出清亮的声音。
+[k]
+
+[messageOff]
+[se ade381]
+[wt 1.7]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+唔唔，谢谢你，南丁格尔。
+[k]
+
+[bgmStop BGM_EVENT_4 1.5]
+
+[charaFace A 3]
+
+＠阿斯托尔福
+唉……结果我做的，[r]只是让事态变得更为复杂啊……
+[k]
+
+？1：没有啦。
+？！
+
+[charaFace A 10]
+
+＠阿斯托尔福
+哎？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠南丁格尔·圣诞
+阿斯托尔福。[bgm BGM_EVENT_45 0.1]
+[k]
+
+＠南丁格尔·圣诞
+如果没有了你的行动，[r]我是不会成为圣诞老人的。
+[k]
+
+＠南丁格尔·圣诞
+不会来圣诞岛，[r]更不会回望『我自己』。
+[k]
+
+[charaFace C 3]
+
+＠南丁格尔·圣诞
+……所以，[r]谢谢你。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+南丁格尔！[r]害羞了！
+[k]
+
+[charaFace A 1]
+
+＠阿斯托尔福
+[f large]好可爱！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠南丁格尔·圣诞
+可……！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠布拉达曼特
+哎……南丁格尔小姐害羞模样的破坏力太强了……
+[k]
+
+？1：确实很可爱。
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠南丁格尔·圣诞
+……[r]……
+[k]
+
+＠南丁格尔·圣诞
+咳咳！
+[k]
+
+＠南丁格尔·圣诞
+……就是这样，御主。[r]非常不好意思……
+[k]
+
+＠南丁格尔·圣诞
+但我还想继续作为圣诞老人修行一阵子，[r]可以吗？
+[k]
+
+？1：没问题！
+？！
+
+[charaFace C 10]
+
+＠南丁格尔·圣诞
+谢谢你，御主。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠阿斯托尔福
+我当然也会帮你哦！[r]如果有什么我能做就尽管说！
+[k]
+
+[charaFace A 24]
+
+＠阿斯托尔福
+毕竟我是最优秀的Saber嘛！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠布拉达曼特
+小阿，你这力量是别人送你的，[r]下次可别得意忘形了哦。
+[k]
+
+[charaFace B 1]
+
+＠布拉达曼特
+啊，当然布拉达曼特我也会鼎力相助！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaSet A 9007000 1 魁札尔·科亚特尔·桑巴·圣诞]
+[charaSet B 7011002 1 大流士三世]
+[charaSet F 98105600 1 圣诞岛假面]
+[charaSet G 2022000 1 阿蒂拉·Santa]
+[charaSet H 11003001 1 贞德·Alter]
+[charaSet I 4022000 1 圣诞Alter]
+
+[shake 0.05 0 2 0.5]
+[se ade383]
+[seVolume ade383 0 0.1]
+[seVolume ade383 1.0 0.7]
+[wt 0.5]
+[shake 0.05 0 3 2.0]
+[wt 1.7]
+[seStop ade383 0.6]
+[wt 0.7]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠贞德·Alter
+尽管我不会帮忙，[r]但我会带愿意帮忙的同伴过来。
+[k]
+
+[charaFace H 3]
+
+＠贞德·Alter
+尽管我不会帮忙。[r]不会帮忙哦。
+[k]
+
+？1：（最后还是会帮吧……）
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠圣诞Alter
+作为初代圣诞老人，这是理所当然的义务。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠圣诞岛假面
+我就不用问了吧。[r]欢迎你，新圣诞老人。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠阿蒂拉·Santa
+当然，我也会帮忙。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠魁札尔·科亚特尔·桑巴·圣诞
+就是嘛！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠大流士三世
+SANTA……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠阿蒂拉·Santa
+温暖的大流士三世好像也在说没错没错呢。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠玛修
+身处迦勒底的我也是，[r]有什么需要帮忙的请务必告诉我！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠南丁格尔·圣诞
+谢谢你们。[r]其实我现在就有一个请求……
+[k]
+
+＠J：众人
+[FFFFFF]？[-]
+[k]
+
+[charaFace C 0]
+
+＠南丁格尔·圣诞
+我听说圣诞节需要开派对。[r]所以希望大家能来帮忙。
+[k]
+
+＠南丁格尔·圣诞
+可以吗……？
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠J：众人
+当然可以！
+[k]
+
+[messageOff]
+[charaTalk C]
+[wt 0.5]
+[charaFace C 10]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_45 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,110 @@
+
+＄03-00-09-05-4-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5045000 1 阿尔托莉雅]
+[charaSet B 1050000 1 妖精骑士高文]
+[charaSet N 98115000 1 特效用]
+
+[charaDepth N 9]
+
+[charaPut N 1]
+[charaEffect N bit_talk_sparks_fs]
+
+[scene 118601]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_72 0.1]
+
+[charaTalk A]
+[charaFace A 32]
+[charaFadein A 0.1 1]
+＠阿尔托莉雅
+呼……呼……呼……！[r]想逃，犯下这等事，竟然还想逃！
+[k]
+
+＠阿尔托莉雅
+不可饶恕，无法忘记……！[r]杀害了，杀害了大家[line 3]！
+[k]
+
+？1：冷静点，阿尔托莉雅……！
+？2：现在应该先救威尔士的大家吧！？
+
+？！
+
+[charaFace A 33]
+＠阿尔托莉雅
+放开我，那些家伙要逃掉了！[r]一定，一定要让他们血债血[line 3]！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_72 1.0]
+
+[cueSe SE_21 21_ad1111]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.1]
+[seStop ad500 0.2]
+[charaFace A 19]
+[charaShake A 0.02 3 3 0.4]
+[wt 1.6]
+
+
+＠阿尔托莉雅
+[line 6]啊。
+[k]
+
+＠阿尔托莉雅
+……对不起。[r]刚才我眼前突然一片鲜红[line 3]
+[k]
+
+？1：……没关系，我才应该向你道歉。
+？2：现在还是先寻找幸存者吧。
+
+？！
+
+[charaFace A 4]
+＠阿尔托莉雅
+……嗯。[r]他们以前曾经躲到树上过，说不定[line 2]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[cueSe SE_21 21_ad1119]
+[se adm12]
+[wt 1.0]
+[se ad195]
+[wt 1.0]
+[seStop 21_ad1119 0.5]
+[wt 0.5]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠妖精骑士高文
+白费力气。扫荡早已结束。[r]只剩烧毁森林的工作了。
+[k]
+
+＠妖精骑士高文
+救援晚了半天。[r]这就是你敲响钟声的结果，『预言之子』。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_EVENT_81 2.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,215 @@
+
+
+
+＄94-04-77-46-2-0
+
+[soundStopAll]
+
+[charaSet A 98001000 1 玛修]
+[charaSet B 25005000 1 旅行者]
+[charaSet C 9001001 1 贞德]
+[charaSet D 1098193700 1 童谣]
+[imageSet E cut172_card_back 1]
+[imageSet F cut172_card_werewolf 1]
+
+[scene 50001]
+
+[pictureFrame cut170_gameframe_dark]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠玛修
+这里是……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠贞德
+这里是童谣的房间。[r]我们正从捷径空间进行观察。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFadein D 0.4 0,-50]
+[wt 1.5]
+
+＠玛修
+睡着真香啊……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠贞德
+『占卜师』[%1]，[r]请开始行动。
+[k]
+
+＠贞德
+查看童谣的真实身份。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth E 3]
+[charaDepth F 2]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFadein D 0.4 -206,-50]
+[charaFadein E 0.4 160,-200]
+[wt 0.8]
+
+？1：……！
+
+？！
+
+[se ad300]
+[effect bit_talk_30]
+[wt 0.5]
+
+[charaFadein F 0.1 160,-200]
+[effectStop bit_talk_30]
+[wt 0.3]
+
+[charaFadeout E 0.7]
+[wt 1.8]
+
+＠
+[line 3]『狼人』
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+
+＠玛修
+前辈！　那么，童谣小姐是……
+[k]
+
+
+？1：……诚实的人啊。
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 0,-50]
+＠旅行者
+那么，她会袭击谁吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+＠玛修
+呃……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠贞德
+『狼人』的行动顺序排在最后。[r]需要等其他特殊身份全都完成行动[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth B 2]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 256,-50]
+
+[charaFace C 0]
+[charaFadein C 0.1 -256,-50]
+＠旅行者
+你会，去接他们吗？
+[k]
+
+[charaFace C 0]
+＠贞德
+因为这是必要的流程。
+[k]
+
+[charaFace B 8]
+＠旅行者
+接送，杀人者？
+[k]
+
+[charaFace C 0]
+＠贞德
+这个游戏就是这样的。
+[k]
+
+[charaFace B 0]
+＠旅行者
+真奇怪。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠贞德
+今晚的行动完成了。[r]回房间吧。
+[k]
+
+[charaFace C 5]
+＠贞德
+回去路上也会出现敌人，[r]但那之后，清晨很快就会到来。
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_77 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+

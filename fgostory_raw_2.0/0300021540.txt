@@ -1,0 +1,327 @@
+
+
+＄03-00-02-15-4-0
+
+
+[soundStopAll]
+
+
+[charaSet A 8001410 1 玛修]
+[charaSet B 1098123000 1 穆尼尔]
+[charaSet C 1098153000 1 拿破仑]
+[charaSet D 1033002 1 齐格鲁德]
+[charaSet E 1098124500 1 达·芬奇]
+[charaSet F 3012001 1 布伦希尔德]
+
+[charaSet H 98115000 1 特效用]
+
+[scene 51600]
+
+[shake 0.05 0 2 3.0]
+
+[fadein black 1.0]
+
+[se ad629]
+[seVolume ad629 0 0.4]
+
+[se ad553]
+[seVolume ad553 0 0.4]
+[wait fade]
+
+
+[cameraMove 1.5 0,0 1.2]
+[wt 0.5]
+[fadeout white 1.0]
+[wait fade]
+
+[cameraHome 0.1]
+
+[scene 60703]
+[fadein white 1.0]
+[seStop ad553 2.0]
+[seStop ad629 2.0]
+
+[wait fade]
+
+[wt 1.2]
+
+[bgm BGM_EVENT_80 0.1 0.6]
+
+＠斯卡哈·斯卡蒂
+……为何要搭乘这种铁块进行移动？
+[k]
+
+＠斯卡哈·斯卡蒂
+效率未免有些低下吧。[r]只要使用高速飞行的卢恩，或者飞奔的卢恩，
+[k]
+
+＠斯卡哈·斯卡蒂
+各位英灵不就能更早抵达目的地了吗。[r]唔嗯。
+[k]
+
+＠芙芙
+芙？　芙芙？
+[k]
+
+＠福尔摩斯
+这是在考虑到当前情况后采取的行动，女王陛下。
+[k]
+
+＠达·芬奇
+嗯嗯。毕竟现在不只是巨人种的积极性增加，[r]还会有空想树的种子掉落啊。
+[k]
+
+＠达·芬奇
+在空中就会成为投石的标靶吧？[r]分别行动也有被各个击破的危险。
+[k]
+
+＠达·芬奇
+所以，比起飞行或让英灵滑雪，[r]还是这样做更便于防守和进攻。
+[k]
+
+＠达·芬奇
+如果是一定程度的的敌群，你看，[r]皇帝陛下会在车顶用炮击击退哦！
+[k]
+
+＠穆尼尔
+唔……[r]好像感知到了什么。
+[k]
+
+＠戈尔德鲁夫
+是敌人来袭吗！
+[k]
+
+＠穆尼尔
+啊不是，并非敌对反应。[r]上空……这是什么，是鸟吗……？
+[k]
+
+＠福尔摩斯
+在显示器上放出来。
+[k]
+
+＠穆尼尔
+没问题。嘿咻。
+[k]
+
+[messageOff]
+[se ade165]
+[wt 0.4]
+[seStop ade165 0.1]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_80 1.0]
+[wait fade]
+
+[cameraMove 0.1 0,-80 1.0]
+
+[effect bit_talk_security 0,80]
+
+[scene 62200]
+[wt 0.5]
+
+[wipeFilter cinema 0.5 0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_79 0.1]
+
+[wt 2.0]
+
+＠玛修
+啊，又是[line 3]
+[k]
+
+＠芙芙
+芙！
+[k]
+
+？1：啊啊，是鸟。
+？2：好久不见了呢。
+
+？！
+
+＠玛修
+是的，又是两只鸟呢。
+[k]
+
+＠玛修
+恐怕是生活在火焰领域狭缝间生物栖息地的鸟类……
+[k]
+
+＠志度内
+哎。这对鸟关系真好呢？[r]呃，咦？　等一下，让我仔细瞧瞧，唔唔？
+[k]
+
+＠斯卡哈·斯卡蒂
+你们以前也有见过它们吗。
+[k]
+
+＠玛修
+是的。迄今为止见到过好几次了……
+[k]
+
+＠斯卡哈·斯卡蒂
+是这样啊[line 3]
+[k]
+
+＠斯卡哈·斯卡蒂
+啊啊，我明白了。原来如此。是这么一回事啊。
+[k]
+
+＠达·芬奇
+女王陛下。怎么了？
+[k]
+
+＠斯卡哈·斯卡蒂
+没事，这是我个人的问题。外表年幼的贤者啊。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_79 1.5]
+[wait fade]
+
+[wipeOff]
+
+[cameraHome 0.1]
+
+[effectStop bit_talk_security]
+
+[scene 51600]
+[wt 0.5]
+
+
+[fadein black 0.7]
+[wait fade]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.3]
+
+＠拿破仑
+喂，听得到吗！[r]待在有暖气舒适房间内的各位！
+[k]
+
+[bgm BGM_EVENT_80 0.1]
+[charaFace C 2]
+
+＠拿破仑
+这里是潜航艇车顶。[r]我在上空看到了鸟类以外的存在！
+[k]
+
+＠拿破仑
+看来又被喷射出来了，一群种子正在飞过来！[r]它们究竟是隔着多远的距离被射过来的啊！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠穆尼尔
+我这里还没检测到……[wt 0.7][charaFace B 2][r]唔噢，突然检测到魔力！　确实有好多种子！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠拿破仑
+……啊～，啊～，在空中改变了下落轨道！[r]看样子会精准无误地掉到车顶啊。
+[k]
+
+[charaFace C 2]
+
+＠拿破仑
+改为迎击！[r]想来的家伙就上来吧！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+？1：我们去迎击吧。
+？2：玛修，能出动吗？
+
+？！
+
+＠玛修
+是。能战斗！[r]外骨骼已经由达·芬奇亲全面检查过了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+
+＠达·芬奇
+因为那个被女王用卢恩修好了啦，[r]外骨骼完全没有受损哦。原初之卢恩真厉害呀。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[se ad166]
+
+[charaDepth D 10]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+
+[charaFace F 0]
+[charaFadein F 0.1 2]
+[wt 0.2]
+[seStop ad166 0.15]
+
+＠齐格鲁德
+在下也出击吧。[r]没事，只是想再熟悉一下格拉墨的重量。
+[k]
+
+＠布伦希尔德
+我也去。
+[k]
+
+＠齐格鲁德
+不。这里交给在下就够了。[r]你好好休息。
+[k]
+
+＠布伦希尔德
+不，亲爱的。[r]就算是这样，我也想陪你一起去。
+[k]
+
+[charaFace D 1]
+
+＠齐格鲁德
+[line 3]这样啊。那就一起去吧。
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

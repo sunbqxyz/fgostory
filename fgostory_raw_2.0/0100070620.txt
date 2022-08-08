@@ -1,0 +1,385 @@
+
+
+
+＄01-00-07-06-2-0
+[soundStopAll]
+[charaSet A 8001002 1 玛修]
+[charaSet B 5018001 1 吉尔伽美什]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 5009001 1 达·芬奇]
+[charaSet E 98003000 1 Dr.罗曼]
+[charaSet F 98106000 1 恩奇都]
+
+
+[bgm BGM_EVENT_2 0.1]
+[scene 33300]
+[fadein black 1.5]
+[wait fade]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+
+＠玛修
+平安抵达观测所了。
+[k]
+
+＠玛修
+自石像事件后一帆风顺，[r]真是一趟平稳的旅程呢，御主。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+
+＠吉尔伽美什
+……唔。什么都没发生啊。无聊。[r]亏得本王还期待你们路上会有奇妙遭遇呢……
+[k]
+
+？1：石像事件也是相当稀奇的事件哦？
+
+[charaFace B 0]
+＠吉尔伽美什
+哈哈哈。那种事情本王早就忘了。[r]你们也立刻忘记吧。否则太烦人了。
+[k]
+
+？2：只要替换瓶子就行了吧？
+
+[charaFace B 1]
+＠吉尔伽美什
+没错。和运货车上的瓶子交换。[r]现在的本王不擅长干体力活，因此你们努力吧。
+[k]
+
+？！
+
+[messageOff]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_2 1.5]
+[wait fade]
+[charaFadeout B 0.1]
+[wt 2.0]
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_EVENT_2 0.1]
+
+
+[charaTalk C]
+[charaFadein C 0.4 1]
+
+＠芙芙
+芙～！[r]芙芙，芙[line 3]呜！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+
+＠玛修
+芙芙～，不可以跑太远哦[line 2]！
+[k]
+
+[charaFace A 13]
+＠玛修
+……呼。[r]瓶子交换完成，工作告一段落了呢。
+[k]
+
+＠玛修
+吉尔伽美什王说“有事情想要调查”，所以留在观测所里了，[r]不过只要二十分钟左右应该就能搞定吧。
+[k]
+
+＠玛修
+在那之前，我们可以稍微休息一会儿了呢。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[se ad13]
+[charaTalk E]
+[communicationChara 98003003 1 5 0 0]
+[wt 0.3]
+
+
+＠Dr.罗曼
+嗯。如果能够干脆在这里休个假，[r]就能去海里游泳了呢，真可惜。
+[k]
+
+＠Dr.罗曼
+肉眼看到的波斯湾如何？[r]看上去与俄刻阿诺斯有所不同吧。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+
+＠玛修
+与俄刻阿诺斯相比的话，确实小了点。[r]毕竟与其说这是海，不如说是港湾地形才对。
+[k]
+
+＠玛修
+但是，一是想到这前方还有辽阔的印度洋，[r]内心就不禁心潮澎湃。
+[k]
+
+[charaFace A 13]
+＠玛修
+无论是多么遥远的过去世界，[r]人们总会面对海洋，并渡洋而过呢。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk E]
+[communicationCharaLoop 98003003 1 5 0 0]
+
+
+＠Dr.罗曼
+说得对。而且从细节方面来说，[r]第七特异点比以前那些特异点的规模都要大。
+[k]
+
+＠Dr.罗曼
+观测结果能到达波斯湾的前方的印度洋。
+[k]
+
+＠Dr.罗曼
+想必海洋对美索不达米亚来说，[r]是不可或缺的要素吧。
+[k]
+
+？1：……海啊……
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+
+＠玛修
+……前辈？　您这么眺望着水平线，[r]有想起了什么吗？
+[k]
+
+[charaFace A 6]
+＠玛修
+梦……？　在梦中听到了浪潮声吗……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+？2：我们这么悠哉真的不要紧吗……
+
+[communicationCharaFace 0]
+
+
+＠Dr.罗曼
+我能理解你的心情。魔兽战线、乌尔的密林。[r]还有圣杯探索。问题堆积如山。
+[k]
+
+＠Dr.罗曼
+但是急也没用。就算你赶赴战场，[r]也无法从根本上解决问题。至少现在是这样。
+[k]
+
+＠Dr.罗曼
+在搞清楚状况之前，忍耐也是一种战斗哦。[r]将这种想要奋战的心情好好保留到那时候吧。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.5]
+[wt 0.4]
+[charaTalk C]
+[charaFadein C 0.1 1]
+[charaShake C 0.05 0 10 0.4]
+
+＠芙芙
+！　芙，芙[line 4]呜！
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠玛修
+芙芙？[r]发生什么事了？　怎么这样上蹿下跳[line 3]
+[k]
+
+[se ad225]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[bgm BGM_EVENT_3 0.1]
+
+＠玛修
+[#飞机云:Vapour Trail]！　医生，快查九点钟方向！[r]有什么东西朝这里笔直飞过来了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk E]
+[communicationCharaLoop 98003003 1 5 0 2]
+
+
+＠Dr.罗曼
+哇，这里也确认了！[r]在神代[#魔力:玛那]浓度中，时速500公里[line 3]！？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk D]
+[communicationCharaLoop 5009003 1 5 0 2]
+
+
+＠达·芬奇
+距接触还剩3、[wt 0.4]2、[wt 0.4]1[line 3][wt 0.4][r]玛修，架盾牌！　准备对抗冲击！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+
+[messageOff]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 2]
+[wt 0.2]
+[charaMove A 1 0.2]
+[wait charaMove A]
+[charaEffect A bit_talk_30]
+[seStop ad225 0.4]
+[se ad226]
+[shake 0.05 10 10 2.5]
+[flashin once 0.2 0.2 FFFFFFAF FFFFFF00]
+[wt 0.4]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.2]
+[fadeout white 0.4]
+[wait fade]
+[charaFadeout A 0.1]
+[fowardEffect bit_talk_haboob_03]
+[scene 33300]
+[wt 0.6]
+[fadein white 1.0]
+[wait fade]
+[wt 1.0]
+[fowardEffectStop bit_talk_haboob_03]
+[wt 0.4]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+
+
+＠恩奇都
+[line 3]太令人无语了。[r]你们还真是缺少危机意识呢。
+[k]
+
+＠恩奇都
+不只离开乌鲁克，[r]还不带护卫来到这种杳无人烟的地方。
+[k]
+
+＠恩奇都
+究竟是习惯于自己的好运，[r]还是太小看我们了呢[line 3]
+[k]
+
+[charaFace F 7]
+＠恩奇都
+算了，哪种都行。[r]无论如何，这次谁都不会来帮你们的。
+[k]
+
+？1：恩奇都……！
+
+＠恩奇都
+对，没错。[r]太好了，我稍微放心了一点。
+[k]
+
+＠恩奇都
+虽然脑袋迟钝依然无可救药，[r]但看来至少还记得我的名字呢。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+不对，御主！[r]眼前的敌方个体不是英灵恩奇都……！
+[k]
+
+＠玛修
+从他身上能感受到魔术王的气息……！[r]我不认为他就是我们在乌鲁克听说的那位恩奇都先生！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFadein F 0.1 1]
+
+？2：假恩奇都……！
+
+？！
+
+[charaFace F 6]
+＠恩奇都
+又提这个。只不过换了个主人，[r]就被当作冒牌货，人类还真是无可救药。
+[k]
+
+[charaFace F 7]
+＠恩奇都
+但是嘛[line 3]嗯，你们说得没错。[r]我确实是恩奇都的冒牌货。
+[k]
+
+＠恩奇都
+这点确实要先讲清楚才行呀。[r]毕竟万一以后如果你们对我抱有奇怪的期待，那就麻烦了吧？
+[k]
+
+＠恩奇都
+在我坏掉以前，我都会是人类的敌人。[r]无论发生什么，这点都不会变。
+[k]
+
+[charaFace F 8]
+＠恩奇都
+你们现在就用自己的小命来证明这点吧。[r]居然跑到这座伊什塔尔不在的港口来，你们的好运也算到头啦。
+[k]
+
+＠恩奇都
+啊，但我不会玩那些折磨人的手段。[r]我可没有三女神那么野蛮嘛。
+[k]
+
+[charaFace F 7]
+＠恩奇都
+痛苦只要一瞬，而且要极大。[r]最多也就是全身被穿刺这种程度而已啦！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+
+＠玛修
+暂名恩奇都的敌人要来了……！[r]御主，请全力以赴……！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.5]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+
+

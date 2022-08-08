@@ -1,0 +1,717 @@
+
+
+
+＄94-99-99-09-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 11012000 1 蘭丸Ｘ]
+[charaSet B 1098222800 1 高杉晋作]
+[charaSet C 1098223000 1 出雲阿国]
+[charaSet D 1098222560 1 坂本龍馬（ランサー）]
+[charaSet E 1098222710 1 田中新兵衛]
+[charaSet F 1098224310 1 岡田以蔵]
+[charaSet G 1098222610 1 武市瑞山]
+[charaSet H 1098223100 1 斬ザブロー]
+[charaSet I 1098223700 1 アマノサカガミ]
+[charaSet J 1098224430 1 坂本龍馬]
+
+[charaSet O 98115000 1 エフェクト用]
+
+[scene 138200]
+[wt 1.0]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_41 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+＠蘭丸Ｘ
+そんな……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠出雲阿国
+……っ！　こんなところにまで[r]あの時のツケが……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 21]
+[charaFadein B 0.1 1]
+＠高杉晋作
+聞いてはいたが、あの女を殺せる鉾が[r]ホントにあるとはな。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOff]
+[charaDepth D 6]
+[charaDepth I 4]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+[wt 0.4]
+[se ad442]
+[charaCrossFade D 1098222550 4 0.4]
+[wt 1.0]
+
+＠D：坂本龍馬
+予定が狂ったな。[r]あの化け物、使い勝手が良かったんだが。
+[k]
+
+[charaFace D 1]
+＠D：坂本龍馬
+まあいい、どのみち同じ事だ。[r]こいつももう生きてはいられんだろう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk J]
+[charaFace J 12]
+[charaFadein J 0.1 1]
+＠[FFFFFF]坂本龍馬[-]
+…………。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+＠岡田以蔵
+りょ、龍馬……！　逃げい、逃げるんじゃ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 12]
+[charaFadein J 0.1 1]
+＠[FFFFFF]坂本龍馬[-]
+…………。
+[k]
+
+？1：坂本さん、立って！
+？2：以蔵さん、なんとか坂本さんを！
+
+？！
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠D：坂本龍馬
+終わりだよ、この男はもう。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_41 1.5]
+
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[charaTalk depthOn]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.5 0,-50]
+[charaShake E 0.02 3 4 0.7]
+[charaMove E 0,0 0.7]
+[wt 0.2]
+[se ad527]
+[wt 0.3]
+[seStop ad527 0.1]
+[wt 1.0]
+
+[se ad978]
+[se ad632]
+[seVolume ad632 0 0.1]
+[se ad439]
+[seVolume ad439 0 0.1]
+[se ad429]
+[charaEffect E bit_talk_kien01]
+[wt 2.0]
+
+＠田中新兵衛
+キェエアアアアアアアアアア！！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut E 2000,2500]
+[seStop ad632 0.4]
+[seStop ad439 0.4]
+[seStop ad429 0.4]
+
+[bgm BGM_BATTLE_128 0.1]
+
+[charaTalk depthOff]
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+＠D：坂本龍馬
+なに！？　貴様、動けるのか！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠田中新兵衛
+チ[messageShake 0.05 4 3 0.8]ェエエエストオオオオオオッ！！！！
+[k]
+
+[messageOff]
+[se ad1006]
+[charaMoveScale E 1.15 0.2]
+[charaMove E 0,22 0.2]
+[charaFadeout E 0.25]
+[wt 0.1]
+[se ad980]
+[seVolume ad980 0 0.5]
+[cueSe Servants_102800 bac658]
+[effect bit_talk_v_slash02]
+[wt 0.15]
+[charaPut E 2000,2500]
+[charaEffectStop E bit_talk_kien01]
+[wt 0.35]
+[seStop ad980 0.1]
+[seStop ad1006 0.1]
+[wt 0.4]
+
+[se ad609]
+[se ad618]
+[effect bit_talk_14]
+[fowardEffect bit_talk_impactlanding]
+[effectDestroy bit_talk_v_slash02]
+[shake 0.02 3 3 1.2]
+[wt 0.6]
+[seStop ad609 1.5]
+[wt 0.2]
+
+[shakeStop]
+[se ad671]
+[charaScale D 1.1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.2 0,15]
+[charaMoveScale D 1.0 0.3]
+[charaMove D 0,0 0.3]
+[charaShake D 0.02 3 3 0.5]
+[seStop ad671 0.6]
+[wt 1.6]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[fowardEffectDestroy bit_talk_impactlanding]
+
+
+[charaTalk depthOn]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠岡田以蔵
+新兵衛！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaScale E 1.0]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠田中新兵衛
+以蔵！　武市先生と坂本を連れて逃げろ！
+[k]
+
+[charaFace E 5]
+＠田中新兵衛
+ここはこの田中新兵衛が引き受ける……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠武市瑞山
+田中君……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠D：坂本龍馬
+この人斬り風情が……！[r]大したサーヴァントでもない癖に調子に乗るな！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_BATTLE_128 0.6 0.7]
+
+[charaTalk depthOn]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠田中新兵衛
+武市先生……
+[k]
+
+＠田中新兵衛
+詫びの言葉もありませんが、[r]どうか永らえて下さい。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠武市瑞山
+田中君……、だが私は君を……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠田中新兵衛
+何も言わんでください。[r]私はこういう卑怯な男です。
+[k]
+
+[charaFace E 5]
+＠田中新兵衛
+そこをあいつに付け込まれてしまった。[r]何があろうと武市先生についていくと言いながら、
+[k]
+
+＠田中新兵衛
+その実、心の底では以蔵に嫉妬し、[r]坂本に嫉妬するような小人。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+＠岡田以蔵
+新兵衛……、おまん……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠田中新兵衛
+それゆえあの時も全てから逃げてしまった。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFace E 5]
+[charaFadeinFSL G 0.1 0]
+[charaFadeinFSR E 0.1 2]
+＠武市瑞山
+あれは私が……私が君を陥れたんだぞ！
+[k]
+
+
+[charaFace E 0]
+＠田中新兵衛
+それでもあなたの役に立てるならと[r]目を背けてしまったんです。
+[k]
+
+
+[charaFace G 2]
+＠武市瑞山
+そんな事はない！　悪いのは私だ！[r]私は全てが想いのままだと[#自惚:うぬぼ]れていたのだ！
+[k]
+
+[charaFace G 4]
+＠武市瑞山
+私は君の思うような男では……！
+[k]
+
+
+[charaFace E 0]
+＠田中新兵衛
+……でしたらまた立ってください。
+[k]
+
+＠田中新兵衛
+初めてお会いして、勤王の世を熱く語り、[r]立ち上がったあの時の武市先生のように。
+[k]
+
+
+[charaFace G 6]
+＠武市瑞山
+田中……君……。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_BATTLE_128 0.6 1.0]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠田中新兵衛
+さあ、後は任せたぞ、以蔵！[r]護衛の仕事はしくじらんのが貴様の自慢だ！
+[k]
+
+＠田中新兵衛
+武市先生と坂本を頼む！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+＠岡田以蔵
+……おまんに言われるまでもないがじゃ！
+[k]
+
+[charaFace F 5]
+＠岡田以蔵
+わしは護衛の仕事だけはしくじった事がないき！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠D：坂本龍馬
+くだらない茶番を……。[r]逃がすわけがないだろう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_BATTLE_128 1.5]
+
+[charaTalk depthOn]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠田中新兵衛
+ほざくな！　土佐っもんが薩摩隼人を[r]あも見っとじゃなかぞ！
+[k]
+
+[bgm BGM_BATTLE_129 0.1]
+[charaFace E 7]
+＠田中新兵衛
+薩摩[#示現流:じげんりゅう]、田中新兵衛ん最後ん[#初太刀:し ょ だ っ]、[r]そん身ぃ刻みよれいっ！！！
+[k]
+
+＠田中新兵衛
+[f large]キ[messageShake 0.05 4 3 0.8]ェエアアアアアアアアアア！！！
+[k]
+
+[messageOff]
+[se ad978]
+[se ad632]
+[seVolume ad632 0 0.5]
+[se ad439]
+[seVolume ad439 0 0.4]
+[se ad429]
+[charaEffect E bit_talk_kien02]
+[shake 0.05 2 2 3.5]
+[wt 1.5]
+[se ad14]
+[seVolume ad14 0 0.5]
+[effect bit_talk_rubble]
+
+[se ad240]
+[fowardEffect bit_talk_35]
+[charaShake E 0.02 3 3 0.4]
+[wt 3.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut E 2000,2500]
+[charaEffectStop E bit_talk_kien02]
+[effectStop bit_talk_rubble]
+[seStop ad632 1.5]
+[seStop ad439 1.5]
+[seStop ad429 1.5]
+[seStop ad14 1.5]
+[fowardEffectDestroy bit_talk_35]
+
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+＠高杉晋作
+うおっ！？　こいつはとんでもないな。[r]死ぬ気だぞ、ここで。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠岡田以蔵
+マスター！　龍馬と武市を！
+[k]
+
+？1：わかった、蘭丸！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠蘭丸Ｘ
+蘭丸にお任せを！　坂本様！
+[k]
+
+[messageOff]
+[cueSe Servants_9943060 m44209]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[cueSe Servants_9943060 m44208]
+[charaFadeout A 0.1]
+
+[charaPut O 2000,2500]
+[charaEffect O bit_talk_42 0,0 H]
+
+[charaTalk off]
+[charaFace J 12]
+[charaFadein J 0.1 -80,0]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.1]
+
+[charaDepth J 6]
+[charaDepth A 4]
+
+[se ad95]
+[charaFace A 5]
+[charaFadein A 0.3 80,0]
+[wt 0.3]
+[seStop ad95 0.1]
+[wt 0.3]
+
+[charaMoveReturn A 80,-10 0.5]
+[wt 0.1]
+[se ad977]
+[seVolume ad997 0 0.4]
+[wt 0.1]
+[charaMove J -80,10 0.3]
+[wt 0.8]
+
+[se ad7]
+[se ad1006]
+[cueSe SE_21 21_ade642]
+[charaPut O 1]
+[wt 0.1]
+[charaFadeout A 0.1]
+[charaFadeout J 0.1]
+[wt 0.2]
+[charaPut O 2000,2500]
+[charaEffectStop O bit_talk_42]
+[wt 1.9]
+
+
+？2：阿国さん！　お願いします！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 6]
+[charaDepth G 5]
+[charaDepth H 4]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFace H 0]
+[charaFadeinFSR C 0.1 2]
+[charaFadeinFSL H 0.1 0]
+＠出雲阿国
+斬ザブロー！　武市様を！
+[k]
+
+＠斬ザブロー
+フィアアアアアア！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout H 0.1]
+[charaFadeout C 0.1]
+
+[charaTalk depthOn]
+[charaTalk off]
+[charaFace G 4]
+[charaFadein G 0.1 -80,0]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.1]
+
+[cueSe SE_21 21_ad1119]
+[charaFace H 0]
+[charaFadein H 0.3 80,0]
+[wt 0.3]
+[cueSeStop 21_ad1119 0.2]
+[wt 0.4]
+
+[charaMoveReturn H 80,-10 0.5]
+[wt 0.1]
+[se ad977]
+[wt 0.1]
+[charaMove G -80,10 0.3]
+[wt 0.8]
+
+[cueSe SE_21 21_ad1120]
+[charaMove G 170,0 0.4]
+[charaMove H 330,0 0.4]
+[charaFadeout G 0.3]
+[charaFadeout H 0.3]
+[cueSeStop 21_ad1120 1.2]
+[wt 2.0]
+
+？！
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠田中新兵衛
+[#雲耀:うんよう]……！！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ad978]
+[se ad632]
+[seVolume ad632 0 0.5]
+[se ad439]
+[seVolume ad439 0 0.4]
+[se ad429]
+
+[charaEffect E bit_talk_kien02]
+[shake 0.05 2 2 3.5]
+[wt 3.5]
+[se ad14]
+[seVolume ad14 0 0.5]
+[effect bit_talk_rubble]
+
+[charaFaceFade E 8 0.2]
+
+＠田中新兵衛
+[f large]チェエエエエエエエエエエエエエッ！！
+[k]
+
+＠田中新兵衛
+[f large]ス[messageShake 0.05 4 3 0.8]トオオオオオオオオオッッッ！！！！
+[k]
+
+[messageOff]
+[se ad1006]
+[se ad678]
+[se ad715]
+[blur motion 0.2 4 10 0.5 0.6 0.05 100]
+[charaMoveScale E 1.15 0.2]
+[charaMove E 0,24 0.2]
+[charaFadeout E 0.25]
+[wt 0.25]
+[charaPut E 2000,2500]
+
+[charaEffectStop E bit_talk_kien02]
+[effectStop bit_talk_rubble]
+[seStop ad7 0.3]
+[seStop ad14 0.3]
+[seStop ad429 0.3]
+[seStop ad439 0.3]
+[seStop ad632 0.3]
+[seStop ad1006 0.3]
+[effect bit_talk_v_slash02]
+[wt 1.0]
+
+[se ad828]
+[se ad609]
+[se ad228]
+[se ad10]
+[fadeout white 0.3]
+[wait fade]
+
+[effectDestroy bit_talk_v_slash02]
+[blurOff motion 0.1]
+[scene 10000]
+[wt 2.0]
+[bgmStop BGM_BATTLE_129 3.0]
+[wt 3.0]
+
+[seStop ad828 3.0]
+[seStop ad609 3.0]
+[seStop ad228 2.0]
+[seStop ad10 3.0]
+[wt 1.5]
+[fadein white 2.5]
+[wait fade]
+
+
+[fadeout black 0.5]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

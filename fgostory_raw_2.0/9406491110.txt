@@ -1,0 +1,1249 @@
+
+
+
+＄94-06-49-11-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001410 1 マシュ]
+[charaSet B 8001400 1 アーマード・マシュ]
+[charaSet C 1046001 1 伊吹童子]
+[charaScale C 1.3]
+[charaSet D 4043001 1 太公望]
+[charaSet E 98002000 1 フォウ]
+[charaSet F 1098123300 1 コヤンスカヤ]
+[charaSet G 1098123200 1 ゴルドルフ]
+[charaSet H 1098123010 1 ムニエル]
+[charaSet I 1098124510 1 ダ・ヴィンチ]
+
+[charaSet J 1098214320 1 戦闘獣A]
+[charaSet K 1098214320 1 戦闘獣B]
+[charaSet L 1098214320 1 戦闘獣C]
+[charaSet M 1098214320 1 戦闘獣D]
+[charaSet N 1098214400 1 大型戦闘獣]
+
+[charaSet P 98115000 1 エフェクト用１]
+[charaSet Q 98115000 1 エフェクト用２]
+[charaSet R 1098123300 1 コヤンスカヤ_演出用]
+
+[sceneSet S 128700 1]
+
+[charaSet T 98115000 1 エフェクト用]
+
+[charaPut P 1200,1200]
+[charaEffect P bit_talk_10_LowLevel]
+
+[scene 128700]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[bgm BGM_BATTLE_107 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk depthOff]
+[charaDepth M 4]
+[charaDepth K 3]
+[charaDepth J 2]
+[charaDepth L 1]
+
+[cueSe SE_21 21_ade650]
+[se ad27]
+
+[charaFace J 0]
+[charaFadein J 0.4 100,0]
+[wt 0.8]
+
+[charaFace K 0]
+[charaFadein K 0.4 -130,0]
+[wt 0.2]
+[se ad27]
+[wt 0.6]
+
+[charaFace L 0]
+[charaFadein L 0.4 330,0]
+[wt 0.5]
+[se ad27]
+[wt 0.5]
+
+[charaFace M 0]
+[charaFadein M 0.4 -360,0]
+[wt 0.5]
+[se ad27]
+
+[wt 1.0]
+
+[seStop 21_ade650]
+
+[cueSe SE_21 21_ade652]
+[se bac312]
+[wt 1.2]
+[seStop 21_ade652 0.5]
+[wt 0.3]
+
+[charaFadeout M 0.1]
+[charaFadeout L 0.1]
+[charaFadeout K 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[cueSe SE_21 21_ade653]
+[effect bit_talk_shot_02 350,0]
+[wt 0.3]
+[effect bit_talk_shot_02 -350,0]
+[wt 0.1]
+[effect bit_talk_shot_02 100,0]
+[wt 0.2]
+[effect bit_talk_shot_02 -100,0]
+[wt 0.2]
+[effect bit_talk_shot_02 250,0]
+[wt 0.5]
+
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+[cueSe SE_21 21_ade653]
+[seStop 21_ade653 0.7]
+[effect bit_talk_14 -150,-100]
+[charaShake B 0.05 4 4 0.8]
+[se ad602]
+[se ad170]
+[seVolume ad170 0 0.6]
+[wt 0.2]
+[effect bit_talk_14 150,100]
+[se ad602]
+[se ad170]
+[seVolume ad170 0 0.6]
+[wt 0.2]
+[effect bit_talk_14]
+[se ad170]
+[seVolume ad170 0 0.6]
+[wt 0.5]
+[effectDestroy bit_talk_shot_02]
+
+＠B：マシュ
+……！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad980]
+[se ad85]
+
+[se ad671]
+[seStop ad671 0.6]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.4 20,15]
+[charaMove C -30,15 0.3]
+[wt 0.5]
+＠伊吹童子
+いっくわよ～！
+[k]
+
+[charaFace C 5]
+
+＠伊吹童子
+炎と雷！[r]来たれ！
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth M 1]
+[charaDepth K 2]
+[charaDepth J 3]
+[charaDepth L 4]
+
+[charaTalk off]
+[charaFace L 0]
+[charaFadein L 0.1 330,0]
+
+[charaFace J 0]
+[charaFadein J 0.1 100,0]
+
+[charaFace K 0]
+[charaFadein K 0.1 -130,0]
+
+[charaFace M 0]
+[charaFadein M 0.1 -360,0]
+
+[se ad960]
+[se ad961]
+[se ad969]
+[fowardEffect bit_talk_fire_wall 0,0 H]
+[wt 1.2]
+[se ad963]
+[se ad882]
+[charaShake J 0.05 4 4 1.2]
+[charaShake K 0.05 4 4 1.2]
+[charaShake L 0.05 4 4 1.2]
+[charaShake M 0.05 4 4 1.2]
+[se ad7]
+[seVolume ad7 0 0.8]
+[wt 1.5]
+
+[se ad842]
+[se ade346]
+[fowardEffect bit_talk_thunder_02]
+[se ad879]
+[wt 0.1]
+[charaShake J 0.05 4 4 0.5]
+[charaShake K 0.05 4 4 0.5]
+[charaShake L 0.05 4 4 0.5]
+[charaShake M 0.05 4 4 0.5]
+[wt 1.0]
+[fowardEffectDestroy bit_talk_fire_wall]
+
+
+[cueSe SE_21 21_ade657]
+[wt 0.3]
+
+
+[charaSpecialEffect J enemyErasure 1 1.5]
+[charaSpecialEffect K enemyErasure 1 1.5]
+[charaSpecialEffect L enemyErasure 1 1.5]
+[charaSpecialEffect M enemyErasure 1 1.5]
+[wait charaSpecialEffect J]
+[wait charaSpecialEffect K]
+[wait charaSpecialEffect L]
+[wait charaSpecialEffect M]
+[wt 1.0]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+＠ニキチッチ
+[line 3]今だ、急降下攻撃！
+[k]
+
+[messageOff]
+
+[cueSe SE_21 21_ade670]
+[seVolume 21_ade670 0 0.7]
+
+
+＠飛竜
+オ[messageShake 0.05 5 5 0.3]オオオオオオオオオオオオオオオオ！！[r]任せろ御主人ッ！
+[k]
+
+[messageOff]
+[seStop ad17 0.5]
+
+[scene 106800 1.0]
+
+[se ade4]
+
+[wt 2.0]
+
+[seStop ade4 0.5]
+
+
+[se ad85]
+[wipeout downToUp 0.3 1.0]
+[wait wipe]
+[scene 128700]
+[wt 0.2]
+[wipein upToDown 0.3 1.0]
+[wait wipe]
+
+[cueSe Servants_102800 bac658]
+[effect bit_talk_gram_slash_04_fs]
+[wt 0.5]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+[charaShake N 0.05 3 3 1.1]
+[wt 0.1]
+
+[cueSe SE_21 21_ade659]
+[wt 3.5]
+[seStop 21_ade659 0.5]
+
+[se ad864]
+[seVolume ad864 0 0.8]
+[fowardEffect bit_talk_explosion_triple02]
+[charaFadeout N 0.1]
+[wt 3.7]
+
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+[se bac170]
+[wt 0.6]
+＠B：マシュ
+戦闘獣の小部隊複数、[r]および大型の異聞眷属複数を撃破！
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth A 1]
+[charaDepth B 2]
+
+[charaFace A 9]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[charaFadeout B 0.4]
+[wt 0.2]
+
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[wt 0.5]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+[wt 0.5]
+
+＠マシュ
+はあ、はあ[line 3][r]戦闘時間、４時間を、経過しました[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 -30,15]
+
+＠伊吹童子
+……流石にマスターの魔力使いすぎたわ。[r]ちょっと休憩！
+[k]
+
+[messageOff]
+[se adm20]
+[fadeout white 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaScale C 1.0]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[wt 1.0]
+[seStop adm20 1.0]
+[wt 0.5]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+[charaFace C 0]
+
+＠伊吹童子
+状況どう、マシュ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠マシュ
+正確には不明なものの……[r]相当数の敵戦力を削っているはずです。
+[k]
+
+
+＠マシュ
+でも……
+[k]
+
+？1：分かってる
+
+＠マシュ
+……はい。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：まだ後続が来る
+
+
+[charaFace A 7]
+＠マシュ
+はい、敵性反応が多数。[r]まだ来ます！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠伊吹童子
+むむむ。また、ちょっと大きい奴ね[line 3]
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[shake 0.03 3 3 0.4]
+
+[cueSe SE_21 21_ade651]
+[seStop 21_ade651 1.0]
+
+[wt 1.5]
+
+[shake 0.03 3 3 0.4]
+[cueSe SE_21 21_ade651]
+[seStop 21_ade651 1.0]
+
+[wt 1.5]
+
+[shake 0.03 3 3 0.4]
+[cueSe SE_21 21_ade651]
+[seStop 21_ade651 1.0]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.4 1]
+[wt 0.5]
+
+[cueSe SE_21 21_ade652]
+[seVolume 21_ade652 0 1.2]
+[se bac312]
+[cueSe SE_21 21_ade566]
+[wt 1.2]
+[seStop 21_ade652 0.5]
+[seStop 21_ade566 0.5]
+[wt 0.3]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth B 2]
+[charaDepth A 1]
+
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[se ad658]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[wt 0.4]
+
+[charaFadeout A 0.4]
+
+[wt 0.8]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+[charaFace B 2]
+＠B：マシュ
+大型戦闘獣！[r]後続に、異聞眷属と戦闘獣の混成部隊も！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+＠伊吹童子
+次から次に！
+[k]
+
+＠伊吹童子
+まるで[#雲霞:うんか]の如く次から次へと湧いて、んもー！[r]お姉さん喉が渇いてきちゃう！
+[k]
+
+＠伊吹童子
+コレが終わったらぁ、[r]そうね。キンキンに冷やしたお酒を頂戴！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut P 0,0]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠ムニエル
+そんなもん幾らでも用意しとく！[r]だから踏ん張ってくれ、みんな！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut P 1200,1200]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠伊吹童子
+わお♡
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut P 0,0]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠ムニエル
+これだけの物量に押し寄せられたら……[r]戦艦仕様のストーム・ボーダーならまだしも、
+[k]
+
+＠ムニエル
+シャドウ・ボーダーの多重結界なんざ、[r]流石にひとたまりもないからな！
+[k]
+
+？1：了解！　食い止める！
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut P 1200,1200]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠B：マシュ
+はい！
+[k]
+
+[messageOff]
+
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[bgm BGM_BATTLE_107 0.4 0.5]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 0.5]
+
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[bgm BGM_BATTLE_107 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+
+[se ade191]
+[wt 0.7]
+[seStop ade191 0.2]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[effect bit_talk_shot_02 50,70]
+[se ad615]
+[wt 0.3]
+[effect bit_talk_shot_02 -150,-100]
+[se ad611]
+[wt 0.3]
+[effect bit_talk_shot_02 0,0]
+[se ad615]
+[wt 0.3]
+[effect bit_talk_shot_02 200,-80]
+[se ad615]
+[wt 0.6]
+
+[effectDestroy bit_talk_shot_02]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+
+[charaDepth D 1]
+[charaDepth T 2]
+
+[fowardEffect bit_talk_sorcery_tik_03]
+[wt 0.1]
+[cueSe SE_21 21_ade669]
+[wt 1.7]
+
+[charaScale T 1.3]
+[charaPut T 0,0]
+[charaEffect T bit_talk_barrier02]
+[se ad933]
+[wt 1.6]
+
+[se ad602]
+[se ad82]
+[effect bit_talk_14 250,-100]
+[wt 0.08]
+
+[se ad602]
+[se ad82]
+[effect bit_talk_14 -150,50]
+[wt 0.08]
+
+[se ad602]
+[se ad82]
+[effect bit_talk_14]
+[wt 0.08]
+
+[charaEffectStop T bit_talk_barrier02]
+[seStop ad933 0.5]
+
+[charaSpecialEffect D wipeTime 1 0.6]
+[se ad598]
+[seStop ad598 2.5]
+
+[se ad602]
+[se ad82]
+[effect bit_talk_14 100,100]
+[wt 0.08]
+
+[se ad602]
+[se ad82]
+[effect bit_talk_14 -150,-80]
+[wt 0.5]
+[se ad641]
+[wt 2.5]
+
+
+
+[se ad931]
+[seStop ad931 1.5]
+[charaFace D 8]
+[charaSpecialEffect D wipeTimeRe 1 1.0]
+[wt 2.4]
+[charaFadein D 0.0 1]
+
+
+
+＠太公望
+……。[r]……。
+[k]
+
+＠太公望
+……カルデア一行と出会えたのは[#僥倖:ぎょうこう]でした。[r]皆さん、よくやってくれている。
+[k]
+
+[charaFace D 13]
+
+＠太公望
+ならば僕も仕事を済ませねば、[r]元始天尊様や西王母様に顔向けできません。
+[k]
+
+＠太公望
+覚悟はできていますか？[r]妲己の影よ。
+[k]
+
+＠太公望
+随分と、雰囲気を変えたようですが[line 3]
+[k]
+
+[messageOff]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+
+[wt 1.4]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_BATTLE_107 2.0]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠太公望
+もしかして香水変えました？[r]とか言うのもアレなので理由は尋ねません。
+[k]
+
+[charaFace D 13]
+
+＠太公望
+頃合いです。[r]思想鍵紋、励起。
+[k]
+
+[messageOff]
+
+[bgm BGM_BATTLE_86 0.1]
+
+[charaTalk depthOff]
+[charaDepth D 3]
+[charaDepth Q 6]
+
+[charaPut Q 0,0]
+[charaEffect Q bit_talk_sorcery_tik_01]
+
+[wt 0.1]
+[cueSe SE_21 21_ade669]
+
+[wt 3.5]
+
+[charaFaceFade D 5 0.2]
+[wt 0.7]
+
+[cueSe SE_21 21_ade661]
+
+＠太公望
+[line 3][#崑崙山:こんろんざん]は元始天尊に奉る。[r][line 3]魚尾金冠、[#鶴氅:かくしょう]を[#纏:まと]い、[#乾:けん]と[#坤:こん]を[#双:ふた]つに結ぶ！
+[k]
+
+[cueSe SE_21 21_ade661]
+
+＠太公望
+[line 3][#仙風道骨:せんぷうどうこつ]、神清にして！[r][line 3]極楽神仙、陣に臨む！
+[k]
+
+[cueSe SE_21 21_ade661]
+＠太公望
+[line 3]我が諸手、雌雄の宝剣に相違なし！
+[k]
+
+[charaFaceFade D 10 0.2]
+
+[cueSe SE_21 21_ade661]
+
+＠太公望
+[line 3]地理天文を包含し、我が[#裡:うち]には[#八卦:はっけ]あり！[r][line 3]すなわち我が身は神仙臨陣に似たり！
+[k]
+
+[messageOff]
+
+[bgm BGM_BATTLE_86 0.4 0.5]
+
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaPut Q 1200,1200]
+[charaFadeout D 0.1]
+
+[charaSet H 1098123000 1 ムニエル]
+
+[scene 142000]
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk depthOn]
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 0,-50]
+＠ゴルドルフ
+あの詠唱は……
+[k]
+
+＠ゴルドルフ
+いや、そもそも呪文詠唱なのか？[r]そこのところどうなのかね？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut P 0,-50]
+
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 0,-50]
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]おそらく詠唱だよ。[-][r][51ffff]間違いなく声と言葉に魔力が含まれてる。[-]
+[k]
+
+[charaFace I 5]
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]仙術というか思想魔術方面は詳しくないんだけど、[-][r][51ffff]でもその、彼、とんでもないことを言ってる気がする！[-]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut P 1200,1200]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 0,-50]
+＠ムニエル
+だ、だよな。[r]神仙がどうのって聞こえたぞ！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut P 0,-50]
+
+[charaTalk I]
+[charaFace I 26]
+[charaFadein I 0.1 0,-50]
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]彼は宣言しているんだ。[-][r][51ffff]ここにいる自分自身は、現界した神仙級の存在だって！[-]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut P 1200,1200]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 0,-50]
+＠ゴルドルフ
+えっ？
+[k]
+
+＠ゴルドルフ
+神仙？
+[k]
+
+＠ゴルドルフ
+神仙というのは……
+[k]
+
+＠ゴルドルフ
+中国神話における、[r]神霊的なモノと記憶にはあるが合っているかね？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut P 0,-50]
+
+[charaTalk I]
+[charaFace I 27]
+[charaFadein I 0.1 0,-50]
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]うん。その神仙だよ。[-]
+[k]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]神霊よりも神々そのもの[line 3][-][r][51ffff]つまり北欧のスカディやオリュンポスの十二神のように、[-]
+[k]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]圧倒的な霊基と霊格を有して君臨する、[-][r][51ffff]強大な神秘を秘めた高次存在だ。[-]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut P 1200,1200]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 0,-50]
+＠ムニエル
+マジか。[r]大きく出たな太公望！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 18]
+[charaFadein G 0.1 0,-50]
+＠ゴルドルフ
+……む、むう。確かに大きく出ている！[wt 0.7][charaFace G 16][r]しかし私としては不思議ではない。
+[k]
+
+[charaFace G 1]
+
+＠ゴルドルフ
+かの『封神演義』における太公望の活躍を真とすれば、[r]ヤツはまさしく神仙に並ぶ戦闘力の持ち主！
+[k]
+
+＠ゴルドルフ
+九龍島[#霊霄殿:れいしょうでん]の四聖が一人、[r]高友乾をただの一撃で殺したそうだからな。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 0,-50]
+＠ムニエル
+へー！[r]太公望ってのは軍師のイメージが強いが……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut P 0,-50]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-50]
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]用兵にあっては名軍師、[-][r][51ffff]道士としては神仙級の遣い手[line 3][-]
+[k]
+
+[charaFace I 12]
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]本当なら何より心強いけど、[-][r][51ffff]でもやっぱりあの詠唱はちょっと心配になるかな！[-]
+[k]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]だって縁あるとはいえ、[-][r][51ffff]神話の最高存在に向けての宣言だもの。[-]
+[k]
+
+[charaFace I 5]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]私には相当リスキーな詠唱に聞こえるよ。[-][r][51ffff]これは、彼にとっての普通なのかな？[-]
+[k]
+
+[messageOff]
+
+[wt 1.0]
+
+[charaFace I 29]
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]或いは[line 3][-]
+[k]
+
+[charaFace I 27]
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]妲己を討伐するためには、[-][r][51ffff][#ここまで無理する必要がある]、ってことかも！[-]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut P 1200,1200]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 0,-50]
+＠ゴルドルフ
+！
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[pictureFrame]
+[charaFadeout G 0.1]
+
+[scene 128700]
+
+[charaTalk depthOff]
+[charaDepth D 3]
+[charaDepth F 4]
+[charaDepth R 5]
+[charaDepth Q 6]
+
+[charaScale D 1.4]
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 100,-20]
+[charaScale Q 2.0]
+[charaPut Q 100,-150]
+[charaScale S 1.5]
+[charaFadein S 0.1 -310,-200]
+[wt 0.5]
+
+[charaMove S -320,-200 0.5]
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[bgm BGM_BATTLE_86 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+
+
+
+
+
+[cueSe SE_21 21_ade661]
+
+＠太公望
+[line 3]我、地上に於いては玉虚の体現者！[r][line 3]我、地上に於いては封神の実行者！
+[k]
+
+[cueSe SE_21 21_ade661]
+＠太公望
+[line 3]いざ。我、天数のもと神を破り聖朝を導く！
+[k]
+
+[cueSe SE_21 21_ade661]
+
+＠太公望
+[line 3]千年[#狐狸:こ　り]精、その影！　封神奉る！
+[k]
+
+[cueSe SE_21 21_ade661]
+
+＠太公望
+[line 3]三皇王母、女媧娘娘の名のもとに。[r][line 3]仙道の正果は地上になきものと心得よ、狐！
+[k]
+
+＠太公望
+[f large]『[#大妖昇華:た  い  よ  う  し  ょ  う  か]・[#封神演義:ほ  う  し  ん  え  ん  ぎ]』！
+[k]
+
+[messageOff]
+
+[cueSe SE_21 21_ade662]
+[effect bit_talk_noble_light_r]
+[wt 0.1]
+[effectStop bit_talk_noble_light_r]
+
+[fadeout white 1.5]
+[wait fade]
+
+[charaFadeout S 0.1]
+[charaFadeout D 0.1]
+[charaPut Q 1200,1200]
+[wt 1.0]
+[charaEffectDestroy Q bit_talk_sorcery_tik_01]
+[effectDestroy bit_talk_noble_light_r]
+
+[seVolume 21_ade662 1.0 0.2]
+[seStop 21_ade662 0.5]
+
+[charaScale D 1.0]
+[wt 1.0]
+[fadein white 1.5]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+[charaScale Q 1.0]
+[charaPut Q 0,0]
+[charaEffect Q bit_talk_sorcery_tik_02]
+[wt 0.1]
+[cueSe SE_21 21_ade669]
+[wt 3.5]
+
+[charaTalk off]
+
+[charaFace R 2]
+[charaFadeTime R 0.2 0.3]
+[charaMove R 0,40 0.3]
+[charaMoveScale R 1.2 0.3]
+[se ad231]
+[wt 0.3]
+
+[charaMove R 0,0 0.2]
+[charaMoveScale R 1.0 0.2]
+[charaFadeout R 0.2]
+[wt 0.8]
+
+[charaTalk on]
+
+＠コヤンスカヤ
+……。[r]……。
+[k]
+
+[bgmStop BGM_BATTLE_86 1.0]
+
+[charaFace F 17]
+＠コヤンスカヤ
+ふっ。
+[k]
+
+[messageOff]
+
+[wt 1.0]
+[charaEffectStop Q bit_talk_sorcery_tik_02]
+[wt 0.2]
+[se ad149]
+[wt 2.4]
+
+[charaFace F 9]
+＠コヤンスカヤ
+あら☆
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+＠太公望
+へ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+＠コヤンスカヤ
+ごめんあそばせ。[r]ふふふ。あまりにか弱い結界宝具でしたので、つい。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+＠太公望
+ん。
+[k]
+
+＠太公望
+んん？
+[k]
+
+＠太公望
+あれ、え。嘘。おかしいな。
+[k]
+
+[charaFace D 15]
+＠太公望
+あっはっは。[r]参ったなこれは！
+[k]
+
+[charaFace D 8]
+＠太公望
+[#崑崙:こんろん]十二仙の力をも取り込んだ、[r]対妲己の影用、ファイナル対獣宝具だったんですが[line 3]
+[k]
+
+[messageOff]
+
+[charaFace D 1]
+[wt 1.4]
+
+[charaFace D 15]
+
+＠太公望
+[f large]全然効きませんね！
+[k]
+
+＠太公望
+[f x-large]なんでかなァ！
+[k]
+
+[messageOff]
+
+
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[scene 142000]
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.1 0,-50]
+
+[se ad119]
+[charaShake G 0.05 4 4 0.5]
+
+＠ゴルドルフ
+[f large]！？
+[k]
+[bgm BGM_EVENT_71 0.1]
+
+[messageOff]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[seStop ad119 0.4]
+[wait wipe]
+
+[pictureFrame]
+[charaFadeout G 0.1]
+
+[scene 128700]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠B：マシュ
+え……
+[k]
+
+？1：太公望[line 3]！？
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠フォウ
+ブ[messageShake 0.05 5 5 0.3]フォーーーーーウ！？
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+[wt 1.0]
+
+[charaFace C 2]
+
+＠伊吹童子
+[f large]マジで！？
+[k]
+
+[bgmStop BGM_EVENT_71 2.0]
+[messageOff]
+[wt 0.5]
+
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

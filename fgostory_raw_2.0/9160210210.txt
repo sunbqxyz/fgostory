@@ -1,0 +1,845 @@
+
+
+
+＄91-60-21-02-1-0
+
+
+[soundStopAll]
+[charaSet A 7022001 1 茨木童子]
+[charaSet B 1098203900 1 紫式部（通讯）]
+[charaSet C 6029001 1 望月千代女]
+[charaSet D 5042000 1 紫式部]
+[charaSet E 6021001 1 ？？？]
+[charaSet V 98115000 1 通讯用]
+[charaFilter E silhouette 00000080]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[scene 70500]
+[fadein black 2.0]
+[wait fade]
+
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.7]
+
+＠茨木童子
+…………………………？
+[k]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaFace A 4]
+＠茨木童子
+汝是谁？
+[k]
+
+＠茨木童子
+吾不认识。[r]吾不认识这样说话的汝。
+[k]
+
+＠茨木童子
+汝究竟……是谁……？
+[k]
+
+＠茨木童子
+用那张吾比任何人都更熟悉的面容，[r]用那种吾比任何人都熟悉的形式嗤笑的汝，究竟是谁？
+[k]
+
+[charaFace A 2]
+＠茨木童子
+快回答！[messageShake 0.03 4 4 0.25]
+[k]
+
+＠茨木童子
+汝！　是谁！[messageShake 0.03 4 4 0.5]
+[k]
+
+[messageOff]
+[wt 0.7]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+[line 6]唔。
+[k]
+
+[messageOff]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 1.2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+啊，这里有个小鬼。
+[k]
+
+＠？？？
+没想到山中之物在当世仍然存在啊。不。
+[k]
+
+＠？？？
+不是吧。[r]你是影子吧。
+[k]
+
+＠？？？
+若是活在当世之物，余倒是还有几分兴趣，[r]但余是不会为区区影子浪费时间的。
+[k]
+
+＠？？？
+赶紧消失吧。
+[k]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠茨木童子
+……！
+[k]
+
+＠茨木童子
+果然不认识，吾不认识。[r]吾决不允许汝用那种形象……
+[k]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaFace A 2]
+＠茨木童子
+说出羞辱吾的话！[messageShake 0.03 4 4 0.25][r]该滚的是你这种不法之徒，现在就将你五马分尸！
+[k]
+
+[branchQuestNotClear lblNotClear01 3000303]
+＠茨木童子
+折断角、砍掉首级，[r]然后把你扔出去葬身鱼腹[line 3]！
+[k]
+[branch lblConf01]
+
+[label lblNotClear01]
+＠茨木童子
+折断角、砍掉首级，[r]然后把你扔出去变成冰雕[line 3]！
+[k]
+
+[label lblConf01]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+闭嘴。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_80 0.4 0.5]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[charaShake A 0.04 3 3 0.4]
+[wt 1.2]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+闭嘴。[r]小鬼。
+[k]
+
+＠？？？
+有点，吵闹。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_80 0.5]
+
+[se ad875]
+[se ad14]
+[seVolume ad14 0 0.4]
+[shake 0.05 0 2 1.2]
+[effect bit_talk_pressure]
+[wt 1.5]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaShake A 0.05 2 2 1.2]
+
+＠茨木童子
+………………！
+[k]
+
+＠茨木童子
+这……这是……！？
+[k]
+
+[charaFace A 4]
+＠茨木童子
+汝……[r]汝是……
+[k]
+
+[messageOff]
+[charaTalk E]
+[se adm74]
+[seVolume adm74 0 0.2]
+[seVolume adm74 5.0 1.0]
+[wt 1.0]
+
+[charaFace A 5]
+＠茨木童子
+！
+[k]
+
+[charaFace A 4]
+＠茨木童子
+别过来……
+[k]
+
+＠茨木童子
+别过来，别过来别过来别过来……别过来……！[r]别再……！
+[k]
+
+[charaFace A 2]
+＠茨木童子
+别再过来了……[line 4]！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[seStop ad14 1.0]
+[seStop adm74 1.0]
+[fadeout black 1.0]
+[wait fade]
+[effectStop bit_talk_pressure]
+[charaFadeout A 0.1]
+[branchQuestNotClear lblNotClear02 3000303]
+[scene 66400]
+[branch lblConf02]
+[label lblNotClear02]
+[scene 10204]
+[label lblConf02]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaEffect V bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠B：紫式部
+[%1]大人。[r]抱歉在百忙之中打扰您，我是紫式部。
+[k]
+
+＠B：紫式部
+出于紧急事态，[r]我只能使用迦勒底的线路与您通话。
+[k]
+
+[charaFace B 5]
+＠B：紫式部
+事实上……
+[k]
+
+？1：怎么了，紫式部小姐？
+
+＠B：紫式部
+检测到高魔力反应。[r]就在地下图书馆接待处向深处笔直走，
+[k]
+
+＠B：紫式部
+主要收藏历史相关书籍的书架附近。
+[k]
+
+？2：地下图书馆发生什么事了吗？
+
+＠B：紫式部
+没错，您真是明察秋毫。
+[k]
+
+＠B：紫式部
+就在地下图书馆接待处向深处笔直走，[r]主要收藏历史相关书籍的书架附近。
+[k]
+
+＠B：紫式部
+检测到了高魔力反应。
+[k]
+
+？！
+
+＠B：紫式部
+为了提醒此前进入图书馆的酒吞童子大人，[r]还有稍后追着她赶来的茨木童子大人……
+[k]
+
+＠B：紫式部
+也就是说，为了提醒那两位鬼提高警惕，[r]我已经通过馆内广播进行了播报。
+[k]
+
+＠B：紫式部
+然而没有任何回应，[r]也没有返回接待处的迹象。
+[k]
+
+＠B：紫式部
+所以，那个……
+[k]
+
+[messageOff]
+[charaFace B 4]
+[wt 1.0]
+
+[charaFace B 6]
+＠B：紫式部
+可能发生了某种异常情况！[r]对不起，图书馆总是给您添麻烦！
+[k]
+
+？1：没事啦。
+
+？2：毕竟地下图书馆也给大家提供了不少服务。
+
+？！
+
+＠B：紫式部
+您的话令我不胜惶恐……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+[se ad73]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,4]
+[charaMove C 1 0.1]
+[wt 0.7]
+
+＠望月千代女
+请将详情告诉在下吧。[r]主公。
+[k]
+
+[branchQuestNotClear lblNotClear03_01 01000822]
+[branchQuestNotClear lblNotClear03_02 3000303]
+
+[label lblNotClear03_01]
+＠望月千代女
+由于玛修大人正在进行身体检查，[r]现在由在下保护主公的安全。
+[k]
+[branch lblConf03]
+
+[label lblNotClear03_02]
+＠望月千代女
+现在由在下保护主公的安全。[r]请交给在下吧。
+[k]
+
+[label lblConf03]
+
+？1：我们走吧！
+？2：前往地下图书馆！
+
+？！
+
+[charaFace C 5]
+＠望月千代女
+遵命！
+[k]
+
+[messageOff]
+[se ad59]
+[charaFadeout C 0.2]
+[charaMove C -192,0 0.4]
+
+[bgm BGM_EVENT_5 0.7 0.2]
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+[scene 70300]
+[wt 0.5]
+[seStop ad59 1.0]
+[bgm BGM_EVENT_5 0.7 1.0]
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+
+[wt 0.2]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.4 1]
+＠紫式部
+[%1]大人！
+[k]
+
+[charaFace D 5]
+＠紫式部
+现在没有明显的变化。[r]那个高魔力反应……
+[k]
+
+＠紫式部
+还停留在深处的书架那里，[r]并没有向这里移动的迹象。
+[k]
+
+[messageOff]
+[charaFace D 4]
+[wt 1.0]
+
+[charaFace D 5]
+＠紫式部
+不过……
+[k]
+
+＠紫式部
+有一点令我感到很危险。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠望月千代女
+此话怎讲？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠紫式部
+如果是稳定的高魔力，[r]其实还是比较安全的。但是……
+[k]
+
+＠紫式部
+高魔力反应的对象，来路不明的那位，[r]正重复着魔力上升与下降的不稳定状态。
+[k]
+
+＠紫式部
+这状态很危险。[r]究竟发生了什么啊……
+[k]
+
+[charaFace D 4]
+＠紫式部
+假如能在这个通过空间扩张的术式[r]创造出来的图书馆内解决就好了……
+[k]
+
+＠紫式部
+但如果以不稳定的状态逃到外面的话。
+[k]
+
+[charaFace D 2]
+＠紫式部
+或许会！[r]对迦勒底重要的作战造成影响！
+[k]
+
+[charaFace D 4]
+＠紫式部
+如……如果发展到那种地步……[r]我……
+[k]
+
+[charaFace D 6]
+＠紫式部
+啊哇，啊哇哇哇哇哇哇哇哇哇[line 2]
+[k]
+
+？1：我们立刻去确认情况。
+
+？！
+
+？1：不用担心。
+
+＠紫式部
+好……好的。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+？2：走吧，千代女小姐！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠望月千代女
+再次遵命！
+[k]
+
+？！
+
+[charaFace C 0]
+＠望月千代女
+紫式部阁下请在此处等待。[r]我们去确认书架高魔力反应的真面目。
+[k]
+
+[charaFace C 5]
+＠望月千代女
+那主公。[r]我们出发吧！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout C 0.1]
+[scene 70500]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[se ad452]
+[seVolume ad452 0 0]
+[seVolume ad452 1.0 0.7]
+[wt 1.5]
+[seStop ad452 0.6]
+[wt 1.0]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+＠望月千代女
+高魔力反应……
+[k]
+
+＠望月千代女
+相当接近了。[r]请小心。
+[k]
+
+[messageOff]
+[charaFace C 5]
+[wt 0.7]
+
+[charaFace C 2]
+＠望月千代女
+就是前方！　主公！[bgmStop BGM_EVENT_81 0.4]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad85]
+[seVolume ad85 0 0]
+[seVolume ad85 0.1 1.0]
+[se ad171]
+[seVolume ad171 0 0]
+[seVolume ad171 0.1 0]
+[wt 0.7]
+[shake 0.03 3 3 0.4]
+[se ad144]
+[se ade47]
+[seStop ade47 1.5]
+[wt 2.0]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠望月千代女
+人类大小的东西飞过来了……[r]这……这是！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.4]
+
+？1：茨木童子！
+？！
+
+？1：（抱起。）
+？！
+
+[cameraMove 0.4 0,20 1.01]
+[wt 0.7]
+[se ad7]
+[wt 0.1]
+[cameraMove 0.4 0,0 1.01]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 0,-6]
+[charaMove A 0,0 0.4]
+[charaShake A 0.03 2 2 0.4]
+[wt 0.7]
+
+＠茨木童子
+呜呜呜呜……[r]竟用指尖轻而易举地将吾甩飞了！
+[k]
+
+[charaFace A 0]
+＠茨木童子
+哈。
+[k]
+
+＠茨木童子
+你……你们干嘛！[r]来得正好，不对，来得不太巧[line 3]
+[k]
+
+[messageOff]
+[charaFace A 5]
+[wt 0.7]
+
+[charaFace A 2]
+＠茨木童子
+来了。[r]准备，那家伙是敌人！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[se ade146]
+[wt 1.5]
+[seStop ade146]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 1.5]
+
+？1：酒吞童子…………？
+
+？！
+
+＠？？？
+呵。呵呵。呵。
+[k]
+
+＠？？？
+酒吞童子。[r]酒吞童子。
+[k]
+
+＠？？？
+是在叫余吗？
+[k]
+
+＠？？？
+被毫无印象的名字称呼，嗯。[r]第一次还行，第二、三次的话[line 3]
+[k]
+
+＠？？？
+就稍微有些厌倦。
+[k]
+
+＠？？？
+还是说汝等在耍弄余？[r]人啊、鬼啊。
+[k]
+
+＠？？？
+而且，啊啊……
+[k]
+
+＠？？？
+这里竟然还有个很有趣的人。[r]竟然是三郎的后裔。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.4]
+[flashin once 0.05 0.05 FFFFFF8F FFFFFF00]
+[cameraMove 0.05 0,0 1.06]
+[wait camera]
+[se ade103]
+[seVolume ade103 0 0.8]
+[cameraMove 0.05 0,0 1.01]
+[wait camera]
+[wt 0.5]
+[seStop ade103]
+[wt 0.4]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaFace C 5]
+＠望月千代女
+！
+[k]
+
+＠望月千代女
+这……气息[line 3]
+[k]
+
+＠望月千代女
+就是诅咒吾之血脉的大蛇，本人！[r]比平时感受到的更加浓烈！
+[k]
+
+＠望月千代女
+所以那位酒吞童子阁下，[r]难道……！
+[k]
+
+[charaFace C 2]
+＠望月千代女
+已经处于接近[#伊吹御子]侧面的状态了吗！？[r]主公，那既是酒吞童子，也不是酒吞童子！
+[k]
+
+＠望月千代女
+不，不对，那是日本三大化生之一的酒吞童子！[r]是她的另一面！
+[k]
+
+＠望月千代女
+伊吹[line 3]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaEffect E bit_talk_charge_ppl]
+[se ad14]
+[seVolume ad14 0 0]
+[seVolume ad14 1.0 0.3]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.0 0.2]
+[wt 1.5]
+
+＠？？？
+大蛇啊，在此现身吧。
+[k]
+
+[messageOff]
+[seStop ad14 1.5]
+[seStop ad556 1.5]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+
+[se ad789]
+[se ad619]
+[shake 0.03 3 3 1.5]
+[seStop ad619 1.5]
+[wt 1.0]
+[se ad212]
+[wt 0.3]
+[se ad190]
+[wt 0.15]
+[se ad212]
+[wt 0.7]
+[wt 1.5]
+
+？1：巨大敌对对象！
+？2：大型的多头蛇……！？
+
+？！
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠望月千代女
+千万要小心！[r]如果在下的猜测没有错……
+[k]
+
+＠望月千代女
+那条大蛇作为幻想种的分类超越了魔兽，[r]达到了幻兽，或神兽是也……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠茨木童子
+那种东西！[r]平时的酒吞是决不允许其留在自己身边的！
+[k]
+
+＠茨木童子
+不爽[line 3]吾可是相当不爽！
+[k]
+
+[charaFace A 2]
+＠茨木童子
+助吾一臂之力，御主！[r]那不是酒吞！
+[k]
+
+[charaFace A 4]
+＠茨木童子
+不，不对，看起来是酒吞，[r]所以或许是酒吞，但和平时的不一样！
+[k]
+
+[charaFace A 5]
+＠茨木童子
+没错，酒吞肯定是喝劣酒喝醉了！
+[k]
+
+＠茨木童子
+因此让她醒酒自然是统帅大江山鬼众魁首的职责，[r]也就是吾的职责吧！
+[k]
+
+＠茨木童子
+嗯。[line 3]吾已经决定了！
+[k]
+
+？1：一起阻止她吧！
+？2：战斗，开始！
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[se ad212]
+[wt 0.3]
+[se ad190]
+[wt 0.7]
+[se ad460]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠望月千代女
+敌对个体，接近！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠茨木童子
+上！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

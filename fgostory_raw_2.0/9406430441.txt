@@ -1,0 +1,136 @@
+
+
+＄94-06-43-04-4-1
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 5050000 1 サンタマルタ]
+[charaSet B 1098198000 1 スカサハ＝スカディ]
+[charaSet C 2001002 1 エミヤ]
+[charaSet D 4011001 1 ブーディカ]
+[charaSet E 7016001 1 タマモキャット]
+[charaSet F 3047001 1 パーシヴァル]
+
+[charaSet J 6041000 1 鬼一法眼]
+[charaSet K 3036001 1 ブラダマンテ]
+
+[scene 141100]
+
+[bgm BGM_EVENT_80 0.1]
+[se ad18]
+[wt 1.0]
+
+[fadein black 0.5]
+[wait fade]
+
+
+[se ad10]
+[shake 0.05 0 2 1.0]
+[effect bit_talk_impactlanding]
+[wt 3.0]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+敵性体、沈黙！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+＠ブーディカ
+よーし、快勝だね！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠サンタマルタ
+これで他の料理に使うお野菜も充分かしら！[r]第二の食材、ゲットね！
+[k]
+
+[charaFace A 7]
+
+＠サンタマルタ
+野菜っぽくない見た目だったけど、[r]お野菜……なのよね？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 9]
+[charaFadein J 0.1 1]
+
+
+＠鬼一法眼
+そのはずだぞ。[r]うむうむ、皆の衆ご苦労であった。
+[k]
+
+[charaFace J 10]
+
+＠鬼一法眼
+今後の食材探索も頑張るといい。[r]僕はここまでだが、気持ち的には見守っているぞ。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 1]
+[charaFadein K 0.1 1]
+
+＠ブラダマンテ
+私もナビの御役目はこれにて終わりですが、[r]応援してます！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+念のため、周囲を確認してから帰還するとしよう。[r]回収し忘れた食材があっては困るからな。
+[k]
+
+？1：はーい
+？2：そうだね、そうしよう
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+美味しいサラダを作りましょう！[r]わくわく！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

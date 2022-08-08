@@ -1,0 +1,133 @@
+
+＄91-30-14-01-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 3014001 1 胤舜]
+[charaSet B 99502600 1 玛修]
+[charaSet C 98111500 1 通讯用杂音]
+[charaSet D 1098117700 1 Purgatorio1]
+[charaSet E 1098117700 1 Purgatorio2]
+[charaSet F 1098117700 1 Purgatorio3]
+[charaSet G 98111500 1 特效用]
+
+
+[scene 37312]
+
+[charaPut C 0,-2000]
+[charaEffect C bit_talk_10_LowLevel]
+[charaTalk off]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[charaFace D 5]
+[charaFadein D 0.4 1]
+[charaFace E 5]
+[charaFadein E 0.4 5]
+[charaFace F 5]
+[charaFadein F 0.4 3]
+[wt 0.8]
+
+[se bac14]
+[effect bit_talk_ichimon01wh]
+[wt 0.4]
+[se ad161]
+[fowardEffect bit_talk_35]
+[charaFace D 4]
+[charaFace E 4]
+[charaFace F 4]
+[shake 0.05 3 3 0.4]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_3 0.5]
+[charaEffect G bit_talk_06]
+
+[wt 1.7]
+
+[charaEffectStop G bit_talk_06]
+[charaSpecialEffect D flashErasure 1 1.7]
+[charaSpecialEffect E flashErasure 1 1.7]
+[charaSpecialEffect F flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect D]
+[wait charaSpecialEffect E]
+[wait charaSpecialEffect F]
+[wt 0.7]
+
+
+[bgm BGM_EVENT_2 0.5]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠胤舜
+没什么大不了的！
+[k]
+
+[charaFace A 4]
+＠胤舜
+甚至可以说，唔。[r][line 3]是不是太弱了？
+[k]
+
+？1：确实太弱了。
+
+[charaFace A 0]
+＠胤舜
+我就说嘛。
+[k]
+
+？2：是胤舜太强了……？
+
+[charaFace A 0]
+＠胤舜
+不不。根据记录上的内容，[r]实力肯定远不止这种程度哦？
+[k]
+
+？！
+
+[charaFace A 0]
+＠胤舜
+综上所述，玛修阁下。
+[k]
+
+＠胤舜
+请不用照顾我的感受把握分寸。[r]拜托来一个更为逼真的Purgatorio。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut C 1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+啊，好！
+[k]
+
+[charaFace B 0]
+＠玛修
+那么，唔……[r]对了，试着把难度提升吧！
+[k]
+
+[charaFace B 7]
+＠玛修
+基础参数阶级提升，[r]宝具解禁。付与隶属型敌人……
+[k]
+
+＠玛修
+这样差不多就行了吧。[r]开始第二场战斗吧！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_2 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

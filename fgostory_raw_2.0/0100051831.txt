@@ -1,0 +1,63 @@
+
+＄01-00-05-18-3-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[charaSet A 8001001 1 玛修]
+[charaSet B 7014001 1 南丁格尔]
+[charaSet H 98003003 1 Dr.罗曼]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+[scene 20721]
+[fadein black 2]
+[wait fade]
+
+＠南丁格尔
+治疗基本结束。[r]无法进行战斗的人员已送至后方。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠玛修
+医生，迦尔纳先生没事吧？
+[k]
+
+＠玛修
+既然阿周那不在这里，[r]我觉得两人多半已经遭遇了[line 2]。
+[k]
+
+[charaFadeout A 0.1]
+[messageOff]
+
+[se ad13]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[communicationChara 98003003 0 5 0 5]
+[wt 0.3]
+＠Dr.罗曼
+……好厉害。
+[k]
+
+[charaFace A 6]
+＠玛修
+哎？
+[k]
+
+[communicationCharaFace 2]
+＠Dr.罗曼
+正可谓神话的重现……！[r]不愧是顶级从者，各种方面都是超规格的！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

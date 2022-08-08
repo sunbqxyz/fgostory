@@ -1,0 +1,122 @@
+
+＄01-00-05-01-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[charaSet A 8001001 1 玛修]
+[charaSet B 98022000 1 士兵]
+[charaSet C 99360000 1 凯尔特战士]
+[charaSet D 7014001 1 ？？？]
+[charaSet E 98002000 1 芙芙]
+[charaSet F 98056000 1 医生]
+
+[scene 20720]
+[fadein black 2]
+[wait fade]
+
+[charaTalk C]
+[charaFadein C 0.1 1]
+[wt 0.2]
+
+[se ad25]
+[seStop ad25 1.0]
+＠C：？？？
+[line 6]！
+[k]
+
+[charaFadeout C 0.4]
+
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠玛修
+成功了！[r]这一边的人也后撤了！
+[k]
+
+？1：干得好，玛修！
+？2：玛修也回来吧……！
+
+？！
+
+[charaFace A 7]
+＠玛修
+啊，好！　我们也抓紧时间撤退吧！[r]留在这里只会被双方夹击[line 3]
+[k]
+
+[se ad75]
+＠玛修
+御主请尽量退到后方来[line 3][r]不好，[charaFace A 14]快逃！！
+[k]
+[seStop ad75 1.5]
+
+[charaFadeout A 0.1]
+
+[charaTalk E]
+[charaFadein E 0.1 1]
+＠芙芙
+芙[line 11]呜！！
+[k]
+
+？1：咦？
+？2：啥？
+
+？！
+
+[charaFadeout E 0.1]
+
+[se bac36]
+[shake 0.05 0 4 1.5]
+[wait se bac36]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠玛修
+前辈！？　前辈！！
+[k]
+
+[charaFace A 15]
+＠玛修
+医生！[r]前辈的身体！　在锥形回旋！！
+[k]
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+啥！？[r]那个……玛修。你在说什么呢！？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠玛修
+都说了是在锥形回旋啊！[r]像这样，跳起来的同时不停旋转……！
+[k]
+
+
+[charaFace A 4]
+＠玛修
+前辈！　振作一点！[r]前辈，前辈……！
+[k]
+
+[messageOff]
+[wipeout circleIn 2.5 1]
+[bgmStop BGM_EVENT_3 2.0]
+[wait wipe]
+[wt 1.0]
+[charaFadeout A 0.1]
+[scene 10000]
+[fadeout black 0.1]
+[wait fade]
+[wipein circleIn 0.1 1]
+[wait wipe]
+[end]
+

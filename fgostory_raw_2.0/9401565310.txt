@@ -1,0 +1,235 @@
+
+＄94-01-56-53-1-0
+
+
+
+[soundStopAll]
+
+
+
+[messageOff]
+
+
+[branch _PlayEffect_1st PM4 1]
+
+
+[label _PlayEffect_etc]
+
+[tapSkip _from_TapSkip_etc]
+
+[scene 10001]
+
+[effectPause bit_talk_goal2_3]
+[wait effectStart bit_talk_goal2_3]
+
+[fadein white 0.5]
+[wait fade]
+
+[effectStart bit_talk_goal2_3]
+[wait effect bit_talk_goal2_3]
+
+[label _from_TapSkip_etc]
+
+[effectDestroy bit_talk_goal2_3]
+[fadein black 0]
+[wait fade]
+
+[branch _PlayEffect_End]
+
+
+[label _PlayEffect_1st]
+
+[bgm BGM_EVENT_3 0.1]
+
+[tapSkip _from_TapSkip_1st]
+
+[effectPause bit_talk_winner2_3]
+[wait effectStart bit_talk_winner2_3]
+
+[scene 10001]
+
+[fadein white 0.5]
+[wait fade]
+
+[effectStart bit_talk_winner2_3]
+
+[bgmStop BGM_EVENT_3 3.7]
+
+[wt 3.9]
+[se ad251]
+[seVolume ad251 0 0.7]
+
+[wt 0.6]
+
+[voice 402600_0_M790]
+
+[scene 10000]
+
+[wait effect bit_talk_winner2_3]
+[wt 1.4]
+
+[label _from_TapSkip_1st]
+
+[voiceStop]
+[scene 10000]
+[effectDestroy bit_talk_winner2_3]
+[fadein black 0]
+[wait fade]
+
+
+[label _PlayEffect_End]
+
+[branch _PlayVoice_Start PM4 1]
+
+[branch _PlayVoice_End]
+
+
+
+
+[label _PlayVoice_Start]
+
+[charaSet A 3029002 1 源赖光]
+[charaSet B 5022001 1 三藏]
+
+[bgm BGM_EVENT_64 0.1]
+
+[scene 45201 1.0]
+[wt 1.0]
+
+[flagRandom _PlayVoiceNo 1 3]
+
+
+[branch _PlayVoice_3rd _PlayVoiceNo 3]
+[branch _PlayVoice_2nd _PlayVoiceNo 2]
+[branch _PlayVoice_1st _PlayVoiceNo 1]
+
+
+
+[label _PlayVoice_1st]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 1]
+[charaDepth A 9]
+[charaDepth B 1]
+[charaFadein A 0.4 0]
+[charaFadein B 0.4 2]
+[wt 0.7]
+
+＠源赖光
+[tVoice ChrVoice_9010004 0_M700]
+第1名？　什么的第1名？[wait tVoice]
+[k]
+
+＠三藏
+[tVoice ChrVoice_9010004 0_M701]
+什么来着。啊，对啦，是越狱，[wait tVoice]
+[k]
+[tVoice ChrVoice_9010004 0_M702]
+[charaFace B 0]
+是越狱的成果吧！[wait tVoice]
+[k]
+
+＠源赖光
+[tVoice ChrVoice_9010004 0_M703]
+哎呀这还真是……[r]总之必须尽快离开这座牢狱才行。[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠源赖光
+[tVoice ChrVoice_9010004 0_M704]
+我们继续努力吧。[wait tVoice]
+[k]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_2nd]
+
+[charaTalk B]
+[charaFace A 0]
+[charaFace B 4]
+[charaDepth A 9]
+[charaDepth B 1]
+[charaFadein A 0.4 0]
+[charaFadein B 0.4 2]
+[wt 0.7]
+
+＠三藏
+[tVoice ChrVoice_9010004 0_M710]
+唉～累死了～[wait tVoice]
+[k]
+
+＠三藏
+[tVoice ChrVoice_9010004 0_M711]
+虽然我不讨厌活动身体，[r]但看不到太阳公公实在会令人心情低落。[wait tVoice]
+[k]
+
+＠源赖光
+[tVoice ChrVoice_9010004 0_M712]
+说得对。得尽快逃到外面去才行。[wait tVoice]
+[k]
+
+[charaFace B 0]
+＠三藏
+[tVoice ChrVoice_9010004 0_M713]
+没关系，佛祖大人一定会保佑我们。绝对能离开这里！　[wait tVoice]
+[k]
+[tVoice ChrVoice_9010004 0_M714]
+我没有做什么坏事啊！　[wait tVoice]
+[k]
+
+[charaFace B 4]
+＠三藏
+[tVoice ChrVoice_9010004 0_M715]
+……应该没做吧？[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠源赖光
+[tVoice ChrVoice_9010004 0_M716]
+当然啦。[wait tVoice]
+[k]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_3rd]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFace B 1]
+[charaDepth A 9]
+[charaDepth B 1]
+[charaFadein A 0.4 0]
+[charaFadein B 0.4 2]
+[wt 0.7]
+
+＠源赖光
+[tVoice ChrVoice_9010004 0_M720]
+边挖掘边前进还挺深奥的呢。我学到了不少。[wait tVoice]
+[k]
+
+[charaFace B 5]
+＠三藏
+[tVoice ChrVoice_9010004 0_M721]
+只不过是挖掘……很深奥……？　[r]唔唔，刚才那个难道是冷笑……[wait tVoice]
+[k]
+
+[charaFace A 4]
+＠源赖光
+[tVoice ChrVoice_9010004 0_M722]
+不……不是。不对，绝不是！　这可绝不是那种啊！[wait tVoice]
+[k]
+
+
+
+[label _PlayVoice_End]
+
+
+[messageOff]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_64 0.4]
+[wait fade]
+[soundStopAll]
+[end]

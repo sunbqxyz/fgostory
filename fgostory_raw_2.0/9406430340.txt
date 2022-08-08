@@ -1,0 +1,310 @@
+
+
+＄94-06-43-03-4-0
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5050000 1 サンタマルタ]
+[charaSet C 2001002 1 エミヤ]
+[charaSet D 4011001 1 ブーディカ]
+[charaSet E 7016001 1 タマモキャット]
+[charaSet F 3047001 1 パーシヴァル]
+[charaSet G 3047001 1 タラスク]
+
+[charaSet I 3039001 1 ガレス]
+[charaSet K 98110000 1 柳生]
+
+[charaSet B 7016001 1 タマモ_シルエット]
+[charaFilter B silhouette 00000080]
+[charaSet J 1098126200 1 レアお菓子ゴーレム]
+[charaFilter J silhouette 00000080]
+
+[charaDepth B 7]
+[charaDepth E 5]
+[charaDepth J 5]
+[charaDepth K 4]
+
+[scene 141000]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠エミヤ
+さて、二度目の食材戦闘からしばらく経つが……。
+[k]
+
+
+＠エミヤ
+近くにサーヴァントがいるな。[r]キャット君か？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.5]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[se ad586]
+[seStop ad586 0.5]
+[wt 1.4]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaFadeout B 0.4]
+[wt 1.4]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaFace E 1]
+
+＠タマモキャット
+おーい、こっちだワン！[r]なるほど味の差！
+[k]
+
+
+＠タマモキャット
+こっちに座禅を組むお菓子ゴーレムがいる。[r]十中八九、噂のレアエネミーとみた！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+座禅とは東方の確か……？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+瞑想の手法だ。特殊な状況下とはいえ、[r]ゴーレムが座禅を組むとは……。
+[k]
+
+
+＠エミヤ
+食材であるのかゴーレムであるのか、[r]その問いに向かい合っている……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+む……見えてきた。
+[k]
+
+＠ブーディカ
+ねえマスター。あれじゃないかな、[r]雪原の真ん中で背中を向けて……
+[k]
+
+[charaFace D 2]
+
+＠ブーディカ
+あっ、立ち上がって……[r]振り向いた！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+[bgmStop BGM_EVENT_70 1.5]
+
+＠パーシヴァル
+こちらに来るか？[r]いや、その場に立ったまま[line 3]
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_131 0.1]
+
+＠？？？
+来たか。
+[k]
+
+
+＠？？？
+我は孤高のレアお菓子ゴーレム。[r]美味たらんとして遂に大悟へと至ったモノである。
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaTalk off]
+[charaPutFSSideR K 450,0]
+[charaFace K 0]
+[charaFadeTime K 0.4 0.5]
+[wt 1.4]
+
+[charaFadeout K 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+やはりか！
+[k]
+
+？1：誰かの影響を受けている気がする……
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+
+＠レアお菓子ゴーレム
+我が美味、もはや天に届く。[r]聞けばクリスマス料理の食材を欲しているとか。
+[k]
+
+＠レアお菓子ゴーレム
+ならば我こそが相応しい。[r]料理人たちよ！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+は、はいっ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠レアお菓子ゴーレム
+その覚悟を見せよ！[r]覚悟充分であれば我が食材を料理せよ！
+[k]
+
+
+＠レアお菓子ゴーレム
+だが！　その覚悟不充分であれば！
+[k]
+
+＠レアお菓子ゴーレム
+[line 3]雪原に、おまえたちは散るであろうー！[r]粉砂糖のように！　パウダーシュガーのように！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+やる気まんまんだアレ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+
+＠パーシヴァル
+見事な名乗りであった！[r]であれば、我らも騎士として応えねばならない！
+[k]
+
+＠パーシヴァル
+ガレス！[r]貴公に任せよう！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+[bgmStop BGM_EVENT_131 1.0]
+
+＠ガレス
+はいっ！
+[k]
+
+
+＠ガレス
+レアお菓子ゴーレム殿！！[bgm BGM_BATTLE_3 0.1][r]事情定かならざるもその挑戦、受け取らねば礼を失する！
+[k]
+
+＠ガレス
+我らカルデア、[r]全霊で以てお応えしましょう！
+[k]
+
+
+＠ガレス
+クリスマスパーティー成功のため、[r]その美味の食材を受け取らせていただく！
+[k]
+
+＠ガレス
+[line 3]いざ、勝負です！
+[k]
+
+[messageOff]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[charaMoveScale I 1.1 0.2]
+[charaMove I 0,15 0.2]
+[se ad166]
+[seStop ad166 0.7]
+[se ad603]
+[seStop ad603 0.6]
+[se bac1]
+[wt 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaScale I 1.0]
+[blurOff motion 0.2]
+
+
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

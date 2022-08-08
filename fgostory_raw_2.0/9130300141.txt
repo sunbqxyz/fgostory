@@ -1,0 +1,672 @@
+
+＄91-30-30-01-4-1
+
+[soundStopAll]
+
+[charaSet A 1001000 1 帕尔瓦蒂_演出用]
+[charaSet B 3030000 1 帕尔瓦蒂]
+[charaSet C 1001000 1 帕尔瓦蒂_演出用]
+
+[charaSet D 6037000 1 迦摩]
+
+[charaSet E 6005001 1 杰克]
+[charaSet F 5004001 1 童谣]
+[charaSet G 7028000 1 班扬]
+[charaSet H 3026000 1 贞德·Alter·Santa·Lily]
+
+[charaSet J 1001000 1 特效用1]
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[branch lblConf]
+[label lblNotClear]
+[charaSet I 5009001 1 达·芬奇]
+[scene 10310]
+
+[branch lblNotClear_out]
+[label lblConf]
+[charaSet I 1098124500 1 达·芬奇]
+[scene 66600]
+
+[label lblNotClear_out]
+
+[charaPut J 326,0]
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[fowardEffect bit_talk_lightning_03t]
+[effect bit_talk_lightning_03t -326,0]
+[charaEffect J bit_talk_lightning_03t]
+[se bac40]
+[wt 0.5]
+
+[se bac437]
+[seVolume bac437 0 0.5]
+[fowardEffect bit_talk_lightning_02t]
+[wt 1.0]
+
+[fadeout white 0.3]
+[wait fade]
+
+[fowardEffectStop bit_talk_lightning_02t]
+[wt 0.1]
+
+[effect bit_talk_thunderbolt]
+
+[fadein white 0.3]
+[se ad63]
+[seStop bac437 0.3]
+[wait fade]
+
+[wt 1.8]
+
+[effectStop bit_talk_thunderbolt]
+[wt 1.0]
+[bgmStop BGM_EVENT_3 1.5]
+[wt 1.5]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove 0,0 H]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.2 0,20]
+[charaMove D 0,0 0.3]
+[wt 0.3]
+
+[charaFace D 11]
+
+＠迦摩
+哼～哼～。
+[k]
+
+＠迦摩
+太蛮不讲理了，太蛮横了！
+[k]
+
+[charaFace D 12]
+
+＠迦摩
+我只是做了自己力所能及的事而已[line 3][r]没错，只是一如既往地给予了大家爱而已。
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+
+＠迦摩
+为想要满汉全席的人准备满汉全席。[r]为想要轻便万能食物的人准备轻便万能食物。
+[k]
+
+[charaFace D 7]
+
+＠迦摩
+这就是我，服务周到♡[r]你们应该夸奖我才对吧？
+[k]
+
+[messageOff]
+
+[charaFadeout D 0.1]
+[wt 0.4]
+
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.4 1]
+[se adm36]
+[seStop adm36 0.7]
+[wt 0.4]
+
+＠达·芬奇
+哟，我是恰好路过的天才发明家。[r]你们好像在聊什么有意思的事呢。
+[k]
+
+＠达·芬奇
+我正好用吸管采集了一些，[r]分析迦摩牌柠檬水的成分……
+[k]
+
+[messageOff]
+[se ade271]
+[seStop ade271 0.8]
+[wt 0.8]
+
+[charaFace I 1]
+
+＠达·芬奇
+嗯嗯。凭这卡路里量，[r]或许确实适合作为灾难时的应急食物。
+[k]
+
+＠达·芬奇
+为了研究，我也要一杯吧。[r]钱就放在这里了哦。
+[k]
+
+＠达·芬奇
+就这样，[#再见啦:ciao]～。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 0.7]
+[charaMove I -50,0 0.5]
+[charaFadeout I 0.4]
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+[branch lblConf1]
+[label lblNotClear1]
+[se adm36]
+[wt 1.0]
+[seStop adm36 0.4]
+[wt 0.3]
+
+[branch lblNotClear_out1]
+[label lblConf1]
+[se adm53]
+[wt 0.6]
+[seStop adm53 0.6]
+[wt 0.9]
+
+[label lblNotClear_out1]
+
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠帕尔瓦蒂
+……我承认你做的这个不是『坏事』。
+[k]
+
+[charaFace B 4]
+
+＠帕尔瓦蒂
+美味而营养丰富的柠檬汁，[r]这个东西本身是好东西。
+[k]
+
+＠帕尔瓦蒂
+比方说如果能做出无热量的版本，[r]我也就不会有意见了……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠迦摩
+我才不要呢。[r]如果我真的制作这种只会对别人有好处的东西……
+[k]
+
+[charaFace D 1]
+
+＠迦摩
+不就变成[#正常赐予他们爱]了嘛？
+[k]
+
+＠迦摩
+我早就决定现在我将极力避免去做这种认真的工作。
+[k]
+
+＠迦摩
+这样你也会比较放心吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠帕尔瓦蒂
+你这个[#神:人]啊……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+
+[charaMove D -150,0 0.5]
+[wt 0.6]
+
+＠迦摩
+尽管我不知道你自己有没有意识到，[r]在短时间内噼里啪啦激烈大闹了一场[line 3]
+[k]
+
+[charaMove D -200,0 0.5]
+[wt 0.5]
+
+[charaFace D 5]
+
+＠迦摩
+啊啊～，好不容易摄入的卡路里说不定都消耗了。
+[k]
+
+[charaMove D -250,0 0.5]
+[wt 0.5]
+
+[charaFace D 14]
+
+＠迦摩
+你捡回了一条小命呢，帕尔瓦蒂。[r]但没能看到你难看的样子实在是太令人遗憾了。
+[k]
+
+[charaMove D -300,0 0.5]
+[wt 0.5]
+
+[charaFace D 7]
+
+＠迦摩
+那么，今天就这样吧～。
+[k]
+
+[messageOff]
+[se ad348]
+[charaMove D -900,0 0.2]
+[wt 1.0]
+[charaFadeout D 0.4]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+
+＠班扬
+再见啦！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠杰克
+这么说来，食堂今天好像提供布丁呢，[r]是红色的人说的哦。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+
+＠童谣
+哇。突然直角拐弯？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+
+＠贞德·Alter·Santa·Lily
+我们再卖一会儿柠檬水，[r]就一起去吃点心吧！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠班扬
+说得对，那我们去下一个地方吧！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠童谣
+回头见，御主、帕尔瓦蒂！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠帕尔瓦蒂
+……嗯，回头见。小心别在走廊里撞上什么人哦？
+[k]
+
+[charaTalk off]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaFace H 1]
+[charaFadein H 0.1 -379,0]
+[charaFace F 1]
+[charaFadein F 0.1 -113,0]
+[charaFace E 1]
+[charaFadein E 0.1 153,0]
+[charaFace G 1]
+[charaFadein G 0.1 379,0]
+
+＠孩子们
+好～！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.7]
+[se ad456]
+[charaMove H -429,0 0.5]
+[charaFadeout H 0.4]
+[wt 0.3]
+[charaMove F -163,0 0.5]
+[charaFadeout F 0.4]
+[wt 0.2]
+
+[se ade235]
+[charaMove E 63,0 0.5]
+[charaFadeout E 0.4]
+[wt 0.2]
+[charaMove G 289,0 0.5]
+[charaFadeout G 0.4]
+[seStop ad456 1.5]
+[seStop ade235 1.5]
+[wt 1.5]
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠帕尔瓦蒂
+……呼。
+[k]
+
+？1：辛苦了。
+？！
+
+[charaFace B 4]
+[bgm BGM_EVENT_11 0.1]
+
+＠帕尔瓦蒂
+对不起……[r]让您见笑了……
+[k]
+
+＠帕尔瓦蒂
+毕竟迦摩对我来说是有特殊关系性的对象呢……
+[k]
+
+？1：我知道，所以没关系。
+？2：某种角度来说令人欣慰。
+？！
+
+＠帕尔瓦蒂
+恐怕今后迦摩也不会改变自己的生活方式吧。
+[k]
+
+＠帕尔瓦蒂
+犹如小恶魔，犹如愉快犯……[r]虽说会履行最基本的从者工作。
+[k]
+
+[charaFace B 0]
+
+＠帕尔瓦蒂
+啊，但是，御主完全不必担心哦。[r]我会像今天一样认真盯紧她的！
+[k]
+
+＠帕尔瓦蒂
+就算没有了风纪委员代理的工作，[r]我也会继续守着那个让人无奈的神。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 0.7]
+[wt 1.0]
+
+[charaFace B 1]
+[bgm BGM_EVENT_6 0.1]
+
+
+＠帕尔瓦蒂
+……啊啊。我似乎隐约明白了。[r]在与其他印度相关人员的问题上或许也一样。
+[k]
+
+
+＠帕尔瓦蒂
+也许，像这样站在稍微后退一步的位置，[r]暗中守护他们[line 3]就是我的职责吧。
+[k]
+
+[charaFace B 11]
+
+＠帕尔瓦蒂
+因为那个，尽管这么说有些不好意思，[r]但各位印度英灵都容易做过火。
+[k]
+
+？1：因为大家的度量标准都很大嘛。
+？！
+
+[charaFace B 0]
+
+＠帕尔瓦蒂
+嗯。[r]正因为如此，只要放着不管，就容易失控。
+[k]
+
+＠帕尔瓦蒂
+所以[line 3]我觉得或许需要一个[r]能在意识方面制止他们，类似制动器的存在。
+[k]
+
+＠帕尔瓦蒂
+而这份工作……与现在的我……
+[k]
+
+＠帕尔瓦蒂
+『只是一个普通女神的女神』非常相称。
+[k]
+
+[charaFace B 4]
+
+＠帕尔瓦蒂
+只是存在于此，并不强大，[r]也没有什么特别的，但是[line 3]
+[k]
+
+[charaFace B 0]
+
+＠帕尔瓦蒂
+我重新认识到，我想成为[#守护大家的支柱]。
+[k]
+
+＠帕尔瓦蒂
+这或许同样是我……[r]不。是我想成为这样的存在。
+[k]
+
+[charaFace B 6]
+
+＠帕尔瓦蒂
+呵呵。得好好感谢给我整理思绪机会的赖光小姐呢。
+[k]
+
+？1：有点像大家的母亲吧。
+？！
+
+[charaFace B 11]
+
+＠帕尔瓦蒂
+是……这样吗？[r]您这么明确说出口，我倒是有些不好意思了。
+[k]
+
+[charaFace B 10]
+
+＠帕尔瓦蒂
+啊，当然，有必要的话，[r]战斗方面我也会努力的！
+[k]
+
+[charaFace B 3]
+
+＠帕尔瓦蒂
+我说过很多遍了，这同样非常重要。[r]请不要客气，尽管叫我！
+[k]
+
+？1：当然啦。今后也请多关照！
+？！
+
+[messageOff]
+[wt 0.5]
+[charaFaceFade B 1 1.0]
+[wt 2.0]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_6 2.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[wipeFilter cinema 0.5 0]
+
+[charaSet E 6031000 1 刑部姬]
+[charaSet F 23003001 1 伽内什]
+
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+
+＠
+　　　　　　～　附录　这次事件最大的受害者　～
+[k]
+
+[messageOff]
+[scene 48800 0.7]
+[wt 1.5]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 0,-50]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠刑部姬
+……………………不会吧。
+[k]
+
+[messageOff]
+[se ad111]
+[wt 0.5]
+
+[charaFace E 0]
+
+＠刑部姬
+是……是我多心了吧，多半是。肯定是。
+[k]
+
+
+＠刑部姬
+呃，但姑且……试着用一下从者用体重秤……
+[k]
+
+[messageOff]
+[charaMoveReturn E 0,-60 0.5]
+[wait charaMove E]
+[se adm49]
+[charaFace E 4]
+[wt 1.3]
+
+[charaFace E 8]
+[charaShake E 0.05 3 3 0]
+
+＠刑部姬
+啊哇哇哇哇哇哇哇果然没错！[r]为什么，为什么为什么！？
+[k]
+
+＠刑部姬
+因为边画原稿边一味吃垃圾食物吗！？[r]但即便如此，这变化速度也太突然了吧！？
+[k]
+
+[messageOff]
+[charaShakeStop E]
+
+[se ade12]
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 562,-50]
+[charaMove F 502,-50 0.5]
+[wt 0.5]
+
+＠伽内什
+喂～，我按照之前说好的来找你玩啦～。[r]还带来了大量薯片作为礼物[line 3]
+[k]
+
+[charaFace E 2]
+
+＠刑部姬
+绝[messageShake 0.03 5 5 0.5]对不行！[r]接下来[#公主:我]将冲上修罗之路！
+[k]
+
+＠刑部姬
+遇薯片杀薯片！[r]遇蛋糕杀蛋糕！
+[k]
+
+[charaFace E 3]
+
+＠刑部姬
+啊啊对了，得赶快在化生SNS上发布求救贴，
+[k]
+
+＠刑部姬
+『急求！　宅家也能轻松减肥的方法。』[r]好了[line 3]拜托了！　拜托了！
+[k]
+
+[charaFace F 4]
+
+＠伽内什
+……根据里面传出来的声音，[r]作为同样宅家属性的我很想吐槽。
+[k]
+
+
+＠伽内什
+不过那么好用的愿望，[r]可是连我伽内什小姐也无法实现的超级难题啊……
+[k]
+
+＠伽内什
+应该只能改变生活态度了吧？
+[k]
+
+[charaFace F 1]
+
+＠伽内什
+比方说像我这样放弃！
+[k]
+
+[charaFace E 8]
+
+＠刑部姬
+不要啦！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[soundStopAll]
+[end]

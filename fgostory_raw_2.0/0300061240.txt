@@ -1,0 +1,638 @@
+
+
+
+＄03-00-06-11-4-0
+
+
+
+[soundStopAll]
+
+[charaSet A 1017001 1 武藏]
+[charaSet B 8001400 1 玛修]
+[charaSet C 9005001 1 福尔摩斯]
+[charaSet D 1098128200 1 凯妮斯]
+[charaSet E 98002000 1 芙芙]
+[charaSet F 1098123300 1 高扬斯卡娅（剪影）]
+[charaFilter F silhouette 00000080]
+[charaSet G 1098123300 1 高扬斯卡娅]
+
+[charaSet H 8001410 1 武装玛修（有护目镜）]
+[charaSet I 1098191200 1 阿黛拉]
+[charaSet J 1098191300 1 马卡里俄斯]
+[charaSet K 7010001 1 卡利古拉]
+
+[charaSet Q 5009000 1 特效用dummy]
+[charaSet R 5009000 1 特效用dummy]
+[charaSet S 5009000 1 特效用dummy]
+
+[charaSet T 5009000 1 特效用dummy]
+[charaPut S 1200,1200]
+[charaEffect S bit_talk_41]
+
+[scene 10000]
+
+[charaPut Q 1]
+[charaEffect Q bit_talk_beast_shadow]
+
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_EVENT_24 0.1]
+
+[se ad171]
+[fowardEffect bit_talk_x_slash02]
+[wt 0.4]
+
+[se ad170]
+[flashin once 0.1 0.1 02010CFF 02010C80]
+[wt 0.1]
+
+[se ad671]
+[fowardEffectDestroy bit_talk_x_slash02]
+
+[charaScale A 1.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0 0,20]
+[charaMove A 1 0.2]
+[charaShake A 0.02 3 3 0.6]
+[charaMoveScale A 1.0 0.2]
+[wt 0.8]
+
+＠武藏
+呜！
+[k]
+
+＠武藏
+（完全无法掌握真面目……！[r]　只知道[#有东西]，这已经是极限了！）
+[k]
+
+[charaFace A 2]
+＠武藏
+（然而这异样的压力……！[r]　魔力是这种[#光凭自身]就能物质化的玩意儿吗！？）
+[k]
+
+＠武藏
+（总觉得一个不小心，[r]　这整个异闻带都会被炸飞啊！）
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaDepth Q 5]
+[charaDepth R 5]
+
+[se ad711]
+[shake 0.02 3 3 1.8]
+
+[charaPut R 1]
+[charaEffect R bit_talk_beast_eye]
+[wt 2.8]
+[charaEffectStop R bit_talk_beast_eye]
+[wt 1.0]
+
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠玛修
+大咆哮！[r][line 3]范围攻击要来了！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠福尔摩斯
+不对。结束了。[r]至少在这大西洋异闻带的战斗到此结束。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠武藏
+嗯！　说得没错！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaFadeout A 0.1]
+[wt 0.8]
+
+
+＠武藏
+就算无法掌握[#真面目:外形]，杀气也很明显！[r]本体在那里！
+[k]
+
+＠武藏
+这就叫藏头露尾呢……！[r]你的尾巴，我拿下了……！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ad7]
+[charaPut S 1]
+[charaMoveScale A 1.1 0.2]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaMove A 0,15 0.2]
+[wt 0.1]
+
+
+[se ad878]
+[wt 0.1]
+[effect bit_talk_v_slash01]
+[wt 0.4]
+[charaFadeout A 0]
+[charaPut S 1200,1200]
+[wt 0.1]
+
+
+
+＠武藏
+[line 6]骗你的！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ade8]
+[seVolume ade8 0 0.8]
+[wt 1.0]
+
+＠凯妮斯
+[f large]在上面，臭狐狸！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth Q 2]
+[charaDepth T 5]
+
+
+[se bac210]
+[se ad897]
+[charaPut T 200,0]
+[charaEffect T bit_talk_attack_splash]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[se ad414]
+[effect bit_talk_water_splash]
+[wt 0.2]
+[seStop ad414 0.4]
+[wt 1.2]
+
+
+
+[se ad223]
+[fowardEffect bit_talk_quickmove]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 0,10]
+[charaMove D 1 0.2]
+[wt 1.0]
+＠凯妮斯
+呵！　这招吃得爽吗！
+[k]
+
+[messageOff]
+[se ad442]
+[wt 1.0]
+
+[charaFace D 7]
+＠凯妮斯
+不错不错，值得称赞！　武士女！[r]你是从哪儿听说我喜欢偷袭的！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+来自高空的下坠攻击！？[r]凯妮斯小姐不知不觉超跳跃……
+[k]
+
+[charaFace B 7]
+＠玛修
+不，不对！[r]神灵凯妮斯的一击击破了敌对个体[line 3]
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaMoveReturn E 0,30 0.6]
+＠芙芙
+芙[line 3]呜！[r]芙芙！　芙！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+[line 3]不，这是[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.0 1.0]
+[charaTalk off]
+[charaDepth F 4]
+[charaDepth G 3]
+
+[wt 0.5]
+
+[seStop ad556 3.0]
+[se ade153]
+[bgmStop BGM_EVENT_24 1.0]
+
+[charaEffectStop Q bit_talk_beast_shadow]
+[charaEffectStop R bit_talk_beast_eye]
+
+[scene 92501 1.5]
+
+[charaFace F 31]
+[charaFadein F 1.5 1]
+[wt 1.5]
+
+[charaFace G 31]
+[charaFadein G 0.4 1]
+[wt 1.0]
+
+[charaFadeout F 0.7]
+[wt 1.5]
+
+[charaTalk on]
+[charaTalk G]
+＠高扬斯卡娅
+[line 6]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_71 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠玛修
+敌对从者健在！[r]灵基看不出有任何损伤……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠武藏
+[line 6]！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 31]
+[charaFadein G 0.1 1]
+＠高扬斯卡娅
+不许动，Saber。[r]你的末路并不在此吧。
+[k]
+
+＠高扬斯卡娅
+Lancer、Shielder、御主，[r]还有专注于观察的卑鄙小人啊。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+[wt 1.2]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 31]
+[charaFadein G 0.1 1]
+＠高扬斯卡娅
+作为初次露面，刚才那样就够了。[r]还是说，你们真的希望打到至死方休？
+[k]
+
+？1：这……你说得没错。
+？2：大家先退下来吧。
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠福尔摩斯
+服从[&Mr.:Miss][%1]的判断。[r]……看来形势已经发生了变化。
+[k]
+
+＠福尔摩斯
+你满意了吗，Ms.高扬斯卡娅。[r]我们的整体实力还入得了你的法眼吗？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 31]
+[charaFadein G 0.1 1]
+[wt 1.0]
+
+[charaFaceFade G 28 0.5]
+[wt 0.5]
+＠高扬斯卡娅
+[line 3]嗯。
+[k]
+
+＠高扬斯卡娅
+不会太弱，不会太强。[r]正可谓『刚刚好』的阵容呢。
+[k]
+
+＠高扬斯卡娅
+看来就算接下来交给奥林波斯诸神，[r]也不会有任何问题吧。
+[k]
+
+＠高扬斯卡娅
+我也尽情地[#舒展]了一下身体，[r]肩膀的酸痛都舒缓了……
+[k]
+
+[charaFace G 18]
+＠高扬斯卡娅
+相互争吵、相互试探到此为止，[r]彼此都回到各自的工作上吧？
+[k]
+
+＠高扬斯卡娅
+当然啦，在这里遇到各位的事，[r]我不会告诉任何人。
+[k]
+
+＠高扬斯卡娅
+就当作我对各位为我[r]来了一次舒服按摩的回礼吧。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+就是说……你不会把这个情报传达给大神宙斯，[r]也不会共享给[#隐匿者:Crypter]吗？
+[k]
+
+＠福尔摩斯
+那真是谢谢。我们没有拒绝的理由。[r]毕竟我们也在争分夺秒啊。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 22]
+[charaFadein G 0.1 1]
+＠高扬斯卡娅
+那就算买卖成交了吧。
+[k]
+
+＠高扬斯卡娅
+我对连“我”的形态都看不见的人类代表没有兴趣。
+[k]
+
+＠高扬斯卡娅
+但愿你们能在这异闻带中获得进一步成长。
+[k]
+
+[charaFace G 29]
+＠高扬斯卡娅
+那我告辞啦[line 3][r]我会期待各位的英勇奋战哦。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_71 1.0]
+[charaSpecialEffect G erasureReverse 1 1.5]
+[se ad52]
+[wt 2.8]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaFace A 4]
+
+＠武藏
+……走掉了吗。呼。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠凯妮斯
+你是叫福尔摩斯吗？[r]你那啥。已经习惯应对那种玩意儿了吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠福尔摩斯
+不，这不好说……[r]虽然我的确与类似间谍的女性有那么点缘分，
+[k]
+
+[charaFace C 6]
+
+＠福尔摩斯
+但是否该将她归为这类。[r]可就不好说了哦。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth B 4]
+[charaDepth H 5]
+
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[wt 0.4]
+
+[se ad658]
+[charaFace H 7]
+[charaFadein H 0.4 1]
+[wt 0.4]
+
+[charaFadeout B 0.4]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk H]
+＠H：玛修
+确认敌对个体，暂称高扬斯卡娅·Beast……[r]已灵体化并撤退！
+[k]
+
+＠H：玛修
+战斗结束了，御主！
+[k]
+
+？1：大家辛苦了！
+
+？！
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.5]
+
+？1：……话说，第二个地点确认了吗？
+
+？！
+
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaTalk depthOff]
+[charaDepth J 5]
+[charaDepth I 4]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFace I 5]
+[charaFadein J 0.1 -150,0]
+[charaFadein I 0.1 150,0]
+＠马卡里俄斯
+交给我吧！　现在可以发现第二个目标！[r]正如福尔摩斯的推断。
+[k]
+
+[charaFace J 0]
+＠马卡里俄斯
+多半是那头黑雾之兽的存在掩盖了目标。
+[k]
+
+[charaTalk I]
+＠阿黛勒
+我已经通过人工智能将消息转告[r]英灵卡利古拉了。他很快就会[line 3]
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[se ad223]
+[fowardEffect bit_talk_quickmove]
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 0,10]
+[charaMove K 1 0.2]
+[wt 0.6]
+
+＠卡利古拉
+[line 3]让你们久等了。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+＠武藏
+说皇帝陛下皇帝陛下就到！[wt 1.0][charaFace A 0][r]休息时间……看来是没法指望了呢。嗯。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 1]
+[charaFadein K 0.1 1]
+＠卡利古拉
+第二目标达成。[r]很好，下一个。赶紧前往最后的目标吧！
+[k]
+
+？1：出发吧！
+
+？！
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠H：玛修
+是，御主！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaMoveReturn E 0,30 0.6]
+＠芙芙
+芙芙，芙[line 3]呜！
+[k]
+
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,669 @@
+
+
+＄02-00-02-11-2-0
+[soundStopAll]
+[charaSet A 4004001 1 阿斯托尔福]
+[charaSet B 98002000 1 芙芙]
+[charaSet C 99502600 1 玛修]
+[charaSet D 98114600 1 反抗者男性A]
+[charaSet E 98114620 1 反抗者男性B]
+[charaSet F 4025000 1 Rider]
+[charaSet G 98113900 1 弗格斯]
+[charaSet H 5030001 1 山鲁佐德]
+
+[scene 42404]
+[fadein black 1.5]
+[wait fade]
+[charaPut B 0,0]
+[charaEffect A bit_talk_sparks]
+[se ad11]
+[wt 2.5]
+[fadeout black 0.4]
+[wait fade]
+[scene 42501]
+[fadein black 0.4]
+[wait fade]
+[bgm BGM_EVENT_3 0.1]
+[seVolume ad11 0 0.5]
+[se ad93]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+＠阿斯托尔福
+御主，起来！　不好了！
+[k]
+
+？1：唔嗯唔嗯……再让我睡5分钟……
+
+？2：唔唔……新发现……阿斯托尔福毛茸茸的……
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠芙芙
+芙[charaMoveReturn B 20,0 0.3]芙？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠阿斯托尔福
+所[messageShake 0.01 5 5 0.7]以说现在可不是用脸蹭芙芙的时候吧～！
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 2]
+[charaEffect C bit_talk_10_LowLevel]
+[se ad13]
+[wt 0.1]
+[charaFadein C 0.1 1]
+＠玛修
+阿斯托尔福先生，请最优先御主的人身安全！[r]抱着御主行动！
+[k]
+
+[charaPut C 0,-10000]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠阿斯托尔福
+也是哦！　嘿！
+[k]
+
+[messageOff]
+[charaMoveScale ast 1.1 0.3]
+[wt 0.3]
+[se ad7]
+[charaFadeout A 0.1]
+[wt 0.1]
+[fadeout black 0.4]
+[wait fade]
+[scene 42404]
+[charaScale A 1]
+[wt 2.0]
+[charaSet B 1026001 1 迪昂]
+[fadein black 1.5]
+[wait fade]
+
+？1：[line 2]！？　怎么了！？
+？2：醒来一看……正在燃烧……！？
+？！
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠阿斯托尔福
+就是啦～！　已经不是火灾程度的问题了！[r]总之整个桃源乡都在燃烧！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠反抗者男性A
+该死的，[charaMoveReturn D 256,-20 0.4][se ad7]熄灭，[wait charaMove D][charaMoveReturn D 256,-20 0.4]快熄灭啊！[se ad7]
+[k]
+
+[charaShake E 0.01 5 5 0.4]
+＠反抗者男性B
+不行，火势太强了！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠D：反抗者男性C
+该死的，为什么会这样……
+[k]
+
+[charaShake E 0.01 5 5 0.7]
+＠E：反抗者男性D
+是亚马逊人。一定是她们放的火！[r]啊啊，都烧光了……！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠Rider
+[line 2][messageShake 0.01 7 7 0.7]千万不要退缩！
+[k]
+
+[charaFace F 0]
+＠Rider
+先确认火场中是否还有没来得及逃跑的人。[r]比起物品，更优先救人命！
+[k]
+
+＠Rider
+保证同时有几个人警戒周围情况。[r]毕竟敌人可能会配合时机发动进攻。
+[k]
+
+[charaFace F 5]
+＠Rider
+放火的人也有可能还在附近。[r]一旦发现，千万不能放跑对手！
+[k]
+
+＠Rider
+能达成上述全部内容后再考虑物资！[r]将没有烧掉的东西搬去安全的地方！
+[k]
+
+[charaFace F 2]
+＠Rider
+好了，行动起来！[r]如果不这么做，真的会被全部烧掉的！
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[charaFadeout F 0.1]
+[wt 0.4]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.4 1]
+＠弗格斯
+失策了。等意识到时已经是这个样子了。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+＠山鲁佐德
+是我……大意了……[r]没想到居然会攻击我方根据地……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠迪昂
+一会儿再后悔吧。我们也去救援负伤者。[r]从者是不会被卷入火中的。
+[k]
+
+？1：拜托你们了。我会尽我的可能帮助大家。
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠阿斯托尔福
+嗯，御主快去安全的地方！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 1.5]
+[seStop ad11 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaPut A 0,-10000]
+[charaEffectStop A bit_talk_sparks]
+[charaFadeout A 0.1]
+[wt 2.0]
+[scene 42401]
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_EVENT_5 0.1]
+[charaTalk D]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠反抗者男性A
+啊啊……不会吧，怎么会这样……
+[k]
+
+＠反抗者男性B
+这……这里……终于暴露了吗。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠D：反抗者男性C
+因为昨天……大家都忙着逃跑，[r]或许没能彻底消除遗留的痕迹。
+[k]
+
+[charaShake D 0.01 5 5 0.7]
+＠D：反抗者男性C
+导致通往这里的道路被发现了……
+[k]
+
+＠E：反抗者男性D
+那……那也就是说，她们的主力部队随时都可能抵达吧！[r]该……该怎么办啊！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFadein D 0.1 1]
+＠D：反抗者男性E
+问[messageShake 0.01 5 5 0.7]什么怎么办……我怎么知道啊！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠Rider
+什么怎么办[line 2]这不是明摆着的吗。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk off]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠反抗者们
+Rider先生……
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Rider
+就是我迄今为止一直不停在说的，[r]一直不停在教导你们的。我不打算改变这点。
+[k]
+
+＠Rider
+所以[line 2][#永不言弃，继续前进]。[r]我们能做的，只有这些了。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠反抗者们
+Rider先生……但是……
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Rider
+嗯，没错。[r]全部都被烧毁了。
+[k]
+
+＠Rider
+连我们粮食来源的桃树，[r]辛辛苦苦建造起来的小屋，
+[k]
+
+＠Rider
+从敌人那里一点点夺来的物资，[r]以及迄今为止战死的同伴们的[line 2]坟墓。
+[k]
+
+＠Rider
+全部，全部化为灰烬了。[r]这舒适的根据地，桃源乡已经完了。
+[k]
+
+[bgmStop BGM_EVENT_5 0.7]
+[charaFace F 2]
+＠Rider
+但是……但是啊！[r]正因为如此，我们才要这么说！
+[k]
+
+[bgm BGM_EVENT_4 0.1]
+[charaFace F 0]
+＠Rider
+[line 2][#那又如何]。
+[k]
+
+＠Rider
+我们还在这里。我们还活着。[r]还能靠自己的双腿行走。
+[k]
+
+＠Rider
+既然如此，必然还有能做的事吧。
+[k]
+
+＠Rider
+我还能笑着对你们说那些理所当然的话。[r]再一次，无论几次，都会对你们说。
+[k]
+
+[charaFace F 1]
+＠Rider
+在一切结束之前，一切都没有完。[r]所以，只要不放弃[line 2][#梦想必将实现]。
+[k]
+
+＠Rider
+不是别的什么人，而是我的灵魂很清楚这点。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk off]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠反抗者们
+…………
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠Rider
+你们作何打算。和我一直战斗到现在，[r]充满勇气的你们究竟作何打算！
+[k]
+
+＠Rider
+就此放弃结束一切！？[r]还是和我继续向前！　究竟怎样！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk on]
+[charaTalk D]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+
+＠反抗者男性A
+啊啊……或许……确实没错。[r]我们还活着。
+[k]
+
+＠反抗者男性B
+都走到这一步了，如果放弃……[r]死去的他们，一定会生气的。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠D：反抗者男性C
+在落入地底的时候，我还以为自己会一辈子当奴隶至死，[r]但我们已经奋斗到现在这样了。
+[k]
+
+＠D：反抗者男性C
+不走到最后才是错误的选择……！
+[k]
+
+＠E：反抗者男性D
+我要继续，我会继续，Rider先生！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk off]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠反抗者们
+我也要！　我也要！
+[k]
+
+[messageOff]
+[se ad16]
+[wt 2.0]
+[seStop ad16 1.5]
+[messageOff]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.4]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠迪昂
+好厉害。刚才还很消沉的他们恢复了精神。
+[k]
+
+＠迪昂
+虽然道理本身形同虚设[line 2][r]但他们现在需要的不是道理吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠弗格斯
+嗯。无论诉说千言万语，还是搬出无数理论，[r]当内心陷入挫折的士兵不想行动时，这些是无法说动他们的。
+[k]
+
+＠弗格斯
+但不可思议的是，有时只需有才能之人[r]说一句『站起来』，人们就会争先恐后地开始奔跑。
+[k]
+
+＠弗格斯
+Rider似乎就拥有这种才能。[r]虽然多少有些敢死队倾向，显得有些危险。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠阿斯托尔福
+直说的话，就是领袖魅力吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠玛修
+…………
+[k]
+
+[charaPut C 0,-10000]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠弗格斯
+大致可以这么说吧。
+[k]
+
+＠弗格斯
+话说回来，领袖气质也分王的，女王的，[r]将军的，孤高战士的。
+[k]
+
+＠弗格斯
+我觉得这些性质各不相同。[r]根据我的看法，他拥有的应该是[line 2]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠山鲁佐德
+…………
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Rider
+哎呀，你在这里啊。[r]那军师。接下来就是你的工作了。
+[k]
+
+＠Rider
+我是给他们打了气，但说实话，[r]现阶段我还看不清将来。
+[k]
+
+＠Rider
+你有没有什么可以在当前状况下逆转的策略，[r]能说来听听吗？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠山鲁佐德
+……嗯。就刚才，我想出来了。
+[k]
+
+？1：时机刚刚好！　说来听听。
+？！
+
+[charaFace H 6]
+＠山鲁佐德
+简单说来……就是再次发动偷袭。
+[k]
+
+＠山鲁佐德
+不，凭借当前的战力，应该换一种说法[line 2][r]或许应该称之为……敢死突击。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠Rider
+我本想说敢死突击有何不可，[r]但你无法保证不会演变成昨天那种状况吧？
+[k]
+
+＠Rider
+我知道刻意再来一次的做法十分出人意料。[r]但不能保证不会落入敌方陷阱吧。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+＠山鲁佐德
+不是和昨天一样的偷袭。[r]方法、式样、路径都有明确的不同。
+[k]
+
+＠山鲁佐德
+这[line 2]正是因为出现了变化的现在，才可能办到。[r]虽然不是什么令人高兴的变化。
+[k]
+
+＠山鲁佐德
+首先，反抗者的数量减少。[r]另一点，就是不需要在乎归程了……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠阿斯托尔福
+…………
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠山鲁佐德
+并且还要加上最后一条理由。[r]那就是你，Rider。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Rider
+……啊？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠山鲁佐德
+迄今为止，根据你的服饰与战斗方式，我虽然多少猜到了[line 2][r]但通过刚才那些事，我终于得以确信。
+[k]
+
+＠山鲁佐德
+恐怕大家也有相同的想法吧。
+[k]
+
+＠山鲁佐德
+你会将包括自己在内的所有麾下人员[r]作为一个独立生物般[line 2]
+[k]
+
+＠山鲁佐德
+整合成为了某个目的冲锋的一个前进体，[r]同时具备引导他们的才能。
+[k]
+
+＠山鲁佐德
+不像王那样支配，也不像将领那样鼓舞。[r]只是拥有让他们与自己共同前进的力量。
+[k]
+
+＠山鲁佐德
+是[#船长的从者]。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Rider
+…………
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠山鲁佐德
+那么，有一个职责就适合你。
+[k]
+
+＠山鲁佐德
+是只有你才能[line 2][r]不，是只要是你，就能完成的职责。
+[k]
+
+＠山鲁佐德
+也是，这次作战的关键……
+[k]
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_4 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,1385 @@
+
+
+
+＄94-05-42-07-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 1048000 1 圣诞迦尔纳]
+[charaSet B 99502600 1 玛修]
+[charaSet C 7008001 1 贝奥武夫]
+[charaSet D 1098124510 1 达·芬奇]
+[charaSet E 98111500 1 达·芬奇（术）_通讯]
+[charaSet F 4006001 1 乔尔乔斯]
+[charaSet G 7033002 1 阿周那·Alter]
+[charaSet H 7013001 1 清姬]
+[charaSet I 3046001 1 弗栗多]
+[charaSet J 98115000 1 通讯用]
+
+[charaSet K 98115000 1 特效用1]
+[charaSet L 98115000 1 特效用2]
+
+[imageSet M back10000_fs 1]
+[charaScale M 1.5]
+
+
+[charaDepth M 1]
+[charaDepth I 2]
+[charaDepth F 3]
+
+[scene 31901]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.5]
+
+[se ade393]
+[shake 0.05 1 2 1.8]
+[wt 1.0]
+[seStop ade393 0.8]
+
+[se ad541]
+[seVolume ad541 0 0]
+[seVolume ad541 0.4 0.1]
+[wt 0.8]
+
+[seStop ad541 0.1]
+[se ad685]
+[effect bit_talk_ice_geyser]
+[wt 1.9]
+
+[effectDestroy bit_talk_ice_geyser]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_62 0.1]
+
+＠贝奥武夫
+小心，御主！[r]上方和下方都又来了！
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠玛修
+虽然好不容易能分辨预兆了……[r]但每次都只能提前一点时间，对不起！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠达·芬奇
+下方冰之间歇泉，8秒后！[r]向2点方向5米开外，回避！
+[k]
+
+
+[branch lblConf1]
+[label lblNotClear1]
+
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-90]
+＠E：达·芬奇
+下方冰之间歇泉，8秒后！[r]向2点方向5米开外，回避！
+[k]
+
+[label lblConf1]
+
+[messageOff]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[se ade393]
+[shake 0.05 1 2 1.8]
+[wt 1.0]
+[seStop ade393 0.8]
+
+[se ad541]
+[seVolume ad541 0 0]
+[seVolume ad541 0.4 0.1]
+[wt 0.8]
+
+[seStop ad541 0.1]
+[se ad685]
+[effect bit_talk_ice_geyser]
+[shake 0.05 3 3 0.3]
+[wt 1.9]
+[effectDestroy bit_talk_ice_geyser]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠玛修
+预报下个飞来的是火焰弹！
+[k]
+
+＠玛修
+约在20到30秒后，[r]应该会命中冰山不同部位并改变轨道！
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_62 1.0]
+[wait fade]
+
+[charaPutFSR J 1200,2000]
+[charaFadeout B 0.1]
+
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut J 0,0]
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+
+[charaTalk D]
+[charaFace D 32]
+[charaFadein D 0.1 1]
+＠达·芬奇
+……总算暂时平静下来了吗？
+[k]
+
+
+
+[branch lblConf2]
+[label lblNotClear2]
+
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 0,-90]
+＠E：达·芬奇
+……总算暂时平静下来了吗？
+[k]
+
+[label lblConf2]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+＠玛修
+好像是的。
+[k]
+
+＠玛修
+从下方喷涌而出的冰柱间歇泉，[r]以及从远处落下的火焰弹的同时攻击……
+[k]
+
+[charaFace B 8]
+＠玛修
+这次的场地也相当严苛呢。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠乔尔乔斯
+毕竟冻结的熔岩地带这种地点就很矛盾嘛。[r]无论发生什么都没什么好奇怪的。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+但我们必须不断前进。
+[k]
+
+＠圣诞迦尔纳
+只有在进行空击训练时，[r]才能停止长跑训练。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠阿周那·Alter
+妨碍我们斩断邪恶的恶……[r]世界上依然充斥着恶呢……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠贝奥武夫
+话说，选我真的没问题吗？
+[k]
+
+[charaFace C 0]
+＠贝奥武夫
+虽说我的确打败了龙，[r]但对全盛期的这个我来说，那未免有些[#遥远]。
+[k]
+
+＠贝奥武夫
+毕竟那是我成为老爷爷之后的事了。
+[k]
+
+[charaFace C 4]
+＠贝奥武夫
+好歹是从者，[r]也不能说完全不记得……
+[k]
+
+[charaFace C 0]
+＠贝奥武夫
+但我只剩与龙为敌麻烦得要死的那些感受了哦。
+[k]
+
+＠贝奥武夫
+不知道是否能有效运用。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠达·芬奇
+根据各种战力值进行综合判断，[r]结论认定你肯定没问题啦。
+[k]
+
+[charaFace D 19]
+＠达·芬奇
+反正都到这里来了，应该不至于想回去吧？
+[k]
+
+
+[branch lblConf3]
+[label lblNotClear3]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-90]
+＠E：达·芬奇
+根据各种战力值进行综合判断，[r]结论认定你肯定没问题啦。
+[k]
+
+[charaFace E 1]
+＠E：达·芬奇
+反正都到这里来了，应该不至于想回去吧？
+[k]
+
+[label lblConf3]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠贝奥武夫
+那当然。我讨厌龙，[r]但怎么能不参加这种节日呢！
+[k]
+
+＠贝奥武夫
+既然不是一个人，那或许可以把麻烦事全都[r]交给他们，而我专心殴打就行了吧。
+[k]
+
+＠贝奥武夫
+而且，今年的圣诞老人似乎很有意思。[r]拳斗吗……啊啊，真不错，拳头。男人就该用拳头。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+嗯。男人就该用拳头。
+[k]
+
+？1：互相面带微笑，斗气则噼噼啪啪的。
+？2：现在还是别打啦。
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠乔尔乔斯
+同感。如果放任他俩不管，[r]感觉随时都可能会打起训练赛。
+[k]
+
+＠乔尔乔斯
+要打还是等有空时再说吧。[r]现在我们必须边应对这些障碍边前进才行。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+＠达·芬奇
+我姑且把现在所知的事说一下。[r]冰之间歇泉似乎是纯粹的自然现象。
+[k]
+
+[charaFace D 24]
+＠达·芬奇
+火焰弹则应该是什么人的攻击吧。
+[k]
+
+＠达·芬奇
+何况那东西基本是瞄着你们飞来的，[r]并没有掉落在其他地方的迹象。
+[k]
+
+[charaFace D 25]
+＠达·芬奇
+火焰弹中心部分的材质恐怕是这地方的岩块。
+[k]
+
+＠达·芬奇
+挖出或击碎冰冻的岩块，[r]用超火力的火焰包裹，
+[k]
+
+＠达·芬奇
+并以媲美攻城兵器的速度射出……[r]差不多这种感觉吧。
+[k]
+
+＠达·芬奇
+换言之，这不仅是火焰，更是有重量的危险物品。[r]哪怕命中一发也很糟糕。
+[k]
+
+[branch lblConf4]
+[label lblNotClear4]
+
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0,-90]
+＠E：达·芬奇
+我姑且把现在所知的事说一下。[r]冰之间歇泉似乎是纯粹的自然现象。
+[k]
+
+＠E：达·芬奇
+火焰弹则应该是什么人的攻击吧。
+[k]
+
+＠E：达·芬奇
+何况那东西基本是瞄着你们飞来的，[r]并没有掉落在其他地方的迹象。
+[k]
+
+＠E：达·芬奇
+火焰弹中心部分的材质恐怕是这地方的岩块。
+[k]
+
+＠E：达·芬奇
+挖出或击碎冰冻的岩块，[r]用超火力的火焰包裹，
+[k]
+
+[charaFace E 0]
+＠E：达·芬奇
+并以媲美攻城兵器的速度射出……[r]差不多这种感觉吧。
+[k]
+
+＠E：达·芬奇
+换言之，这不仅是火焰，更是有重量的危险物品。[r]哪怕命中一发也很糟糕。
+[k]
+
+[label lblConf4]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠阿周那·Alter
+没有问题。至少，[r]那邪恶是无法触及御主身体的。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠贝奥武夫
+当前还会对我们发动攻击，[r]说明对方应该很有干劲。这样才对嘛！
+[k]
+
+[charaFace C 0]
+＠贝奥武夫
+话说，我不太了解[r]那只叫弗栗多的龙……会喷火吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+好像曾经喷过。[r]似乎还有传言说，她是从火中诞生的。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠贝奥武夫
+哦……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠乔尔乔斯
+你曾经打倒的那头龙应该也是火龙吧。
+[k]
+
+＠乔尔乔斯
+以前没什么和你交谈的机会，
+[k]
+
+＠乔尔乔斯
+真希望能趁此机会拓宽一下自己的见闻呢。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠贝奥武夫
+话虽如此，刚才我也说过了，[r]那是这个我的将来才完成的屠龙。
+[k]
+
+[charaFace C 3]
+＠贝奥武夫
+究竟是怀着什么样的心情完成的。[r]是高兴、期待、还是恐惧呢……
+[k]
+
+＠贝奥武夫
+说实话，现在的我并不能[r]巨细无遗地回忆起当时的事。
+[k]
+
+[charaFace C 4]
+＠贝奥武夫
+唯一可以确定的[line 3]没错。
+[k]
+
+[charaFace C 0]
+＠贝奥武夫
+是因为非做不可才会去做。[r]应该仅此而已吧。
+[k]
+
+[charaFace C 1]
+＠贝奥武夫
+并不是我主动渴望获得的立场……[r]因为当时的我，已经是王了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠阿周那·Alter
+意思是恶必须被制裁吗？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠贝奥武夫
+无论理由为何，王都不该默不作声地[r]坐视民众被肆意啃食吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠阿周那·Alter
+原来如此……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠乔尔乔斯
+说得对。
+[k]
+
+＠乔尔乔斯
+作为遵循神之教诲的人，[r]我也没有对被毒龙支配的那座城市坐视不理。
+[k]
+
+＠乔尔乔斯
+不存在[#不作为]这个选项。[r]因为不得不做，所以只能去做……
+[k]
+
+＠乔尔乔斯
+被巨大流向的引导下，到达了那里。[r]我无法否定屠龙包含了这样的侧面。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+流向虽然是外人无法理解的感觉，[r]但我对非做不可才做这点表示同意。
+[k]
+
+＠圣诞迦尔纳
+我也非做不可。[r]为了成为真正的圣诞老人。
+[k]
+
+＠圣诞迦尔纳
+为了夺回正常的圣诞节。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠贝奥武夫
+不愧是施舍的英雄，[r]无法忍受孩子因打不开的礼物盒而哭泣吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+……追求的东西。[r]为了生存必不可少的东西。
+[k]
+
+＠圣诞迦尔纳
+当遇到这种人的时候，[r]自当由可能拥有的我给与对方。
+[k]
+
+＠圣诞迦尔纳
+……因此，我或许从未想过……[r]那之后的经过吧。
+[k]
+
+＠圣诞迦尔纳
+假如给与的结果并不能让那个人露出笑容，[r]而是露出悲伤的表情，那只能认为这种行为是不恰当的。
+[k]
+
+＠圣诞迦尔纳
+『让人心怀期待再彻底失望[r]　造成的伤害才是最大的！』
+[k]
+
+＠圣诞迦尔纳
+『尤其是迦尔纳先生一脸认真地这么做威力倍增！』[r]伽内什神才刚这么叮嘱过我。
+[k]
+
+？1：那么，我们只能努力解决事态了呢。
+？！
+
+[charaFace A 0]
+＠圣诞迦尔纳
+当然，我们走吧。
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_62 0.1]
+
+[se ade393]
+[shake 0.05 1 2 1.8]
+[wt 1.0]
+[seStop ade393 0.8]
+
+[se ad541]
+[seVolume ad541 0 0]
+[seVolume ad541 0.4 0.1]
+[wt 0.8]
+
+[seStop ad541 0.1]
+[se ad685]
+[effect bit_talk_ice_geyser]
+[wt 1.4]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[seStop ad685 0.4]
+[wait wipe]
+
+[effectDestroy bit_talk_ice_geyser]
+
+[effect bit_talk_flame_bullet]
+[wt 0.4]
+
+[se ad439]
+[seVolume ad439 0 0]
+[seVolume ad439 0.4 1.0]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.15]
+
+[se ad85]
+[wt 0.4]
+[se ad85]
+[seVolume ad85 0 0.5]
+[wt 0.4]
+[se ad85]
+[seVolume ad85 0 0.2]
+[wt 0.3]
+[se ad85]
+[seVolume ad85 0 0.7]
+[wt 0.7]
+
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[seStop ad439 0.8]
+[wait wipe]
+
+[effectDestroy bit_talk_flame_bullet]
+[wt 0.4]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠贝奥武夫
+嘁，冰和火的频率都变高了！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠阿周那·Alter
+全部[line 3]斩断[line 3]！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠乔尔乔斯
+注意魔力分配！[r]如果到正式战斗时才气喘吁吁可就得不偿失了！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+御主。不好意思，但请骑到我的背上来。[r]这样更便于我的步伐移动和迎击。
+[k]
+
+？1：那……那我就失礼了！
+？！
+
+[messageOff]
+
+[charaMove A 0,-10 0.3]
+[wt 0.4]
+
+[se ad77]
+[wt 0.4]
+[seStop ad77 0.3]
+[wt 0.5]
+
+[charaMove A 0,0 0.5]
+[wt 0.9]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠贝奥武夫
+越来越难前进了呢。
+[k]
+
+＠贝奥武夫
+冰之间歇泉和火焰弹，[r]如果能排除一个集中应付另一个就好了。
+[k]
+
+[messageOff]
+
+[effect bit_talk_flame_bullet]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad439]
+[seVolume ad439 0 0]
+[seVolume ad439 0.3 1.0]
+
+[wt 0.4]
+[se ad85]
+[seVolume ad85 0 0.5]
+[wt 0.4]
+[se ad85]
+[seVolume ad85 0 0.2]
+[wt 0.3]
+[se ad85]
+[seVolume ad85 0 0.7]
+[wt 0.7]
+
+[seStop ad439 0.1]
+[seStop ad85 0.1]
+
+[se ad419]
+[fowardEffect bit_talk_kengekiall03_fs]
+[wt 0.3]
+[se ad419]
+[wt 0.2]
+[se ad419]
+[wt 0.1]
+[effectDestroy bit_talk_flame_bullet]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠贝奥武夫
+欧啦！　哈哈，真热真热！
+[k]
+
+＠贝奥武夫
+真是的，这永无止尽的火焰……[r]简直就像我那儿的龙一样呢。
+[k]
+
+[charaFace C 4]
+＠贝奥武夫
+……啊啊，我好像快想起来了哦。[r]我当时是怎么做的呢？　是怎么克服的呢？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠玛修
+贝奥武夫先生，有什么对策吗！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠贝奥武夫
+不好说。[r]但大概，是这种感觉吧！
+[k]
+
+＠贝奥武夫
+首先躲开这个[line 3]
+[k]
+
+[messageOff]
+
+[se ade393]
+[shake 0.05 1 2 2.2]
+[wt 1.0]
+[seStop ade393 0.8]
+
+[se ad541]
+[seVolume ad541 0 0]
+[seVolume ad541 0.4 0.1]
+[wt 0.8]
+
+[se ad7]
+[charaMoveFSR C 125,0 0.3]
+[charaFadeout C 0.3]
+[wt 0.4]
+
+[seStop ad541 0.1]
+[se ad685]
+[effect bit_talk_ice_geyser]
+[wt 1.5]
+
+＠贝奥武夫
+然后，一刀两断！[r]『[#赤原猎犬:Hrunting]』[line 3]『[#铁锤蛇溃:Nægling]』！！
+[k]
+
+[messageOff]
+
+[fowardEffect bit_talk_x_slash01]
+[fowardEffect bit_talk_x_slash02]
+[wt 0.2]
+[cueSe Battle bac81]
+[wt 0.25]
+
+
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF00]
+[wt 0.1]
+[effectDestroy bit_talk_ice_geyser]
+[fowardEffectDestroy bit_talk_x_slash01]
+[fowardEffectDestroy bit_talk_x_slash02]
+[wt 1.0]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠阿周那·Alter
+…………？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-10]
+＠贝奥武夫
+然后，抱着这玩意儿……[wt 0.6][se ad575][charaMove C 0,0 0.5][r]唔[messageShake 0.05 3 3 0.3]唔唔唔唔唔唔唔唔！[wt 0.8][seStop ad575 0.5]
+[k]
+
+[messageOff]
+
+[effect bit_talk_flame_bullet]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad439]
+[seVolume ad439 0 0]
+[seVolume ad439 0.3 1.0]
+
+[wt 0.4]
+[se ad85]
+[seVolume ad85 0 0.5]
+[wt 0.4]
+[se ad85]
+[seVolume ad85 0 0.2]
+[wt 0.3]
+[se ad85]
+[seVolume ad85 0 0.7]
+[wt 0.8]
+
+[seStop ad439 0.1]
+[seStop ad85 0.1]
+
+
+[se ad641]
+[se ad34]
+[fowardEffect bit_talk_14 200,0]
+[wt 0.3]
+
+[se ad641]
+[se ad34]
+[fowardEffect bit_talk_14 -200,100]
+[wt 0.1]
+[effectDestroy bit_talk_flame_bullet]
+
+[wt 1.2]
+
+[charaPut J 0,0]
+
+[branchQuestNotClear lblNotClear5 3000303]
+
+
+[charaTalk D]
+[charaFace D 22]
+[charaFadein D 0.1 1]
+＠达·芬奇
+割断了隆起的冰块，强行用作盾牌吗！[r]但冰块如此巨大，不重吗！？
+[k]
+
+
+[branch lblConf5]
+[label lblNotClear5]
+
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-90]
+＠E：达·芬奇
+割断了隆起的冰块，强行用作盾牌吗！[r]但冰块如此巨大，不重吗！？
+[k]
+
+[label lblConf5]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠贝奥武夫
+当然重啦！[r]所以要抓紧时间前进！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠乔尔乔斯
+迦尔纳阁下，和御主一起跟在贝奥武夫阁下的后方！[r]我和Alter阁下负责支援！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+明白了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠乔尔乔斯
+麻烦玛修你们重点负责间歇泉的警告。[r]上面的应对由我们随机应变！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠玛修
+但那块冰盾应该很快[r]就会被火焰弹的热量融化吧！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠贝奥武夫
+那就融化一次做一次啦！[r]上吧！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaPut M 0,-200]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+[charaFadeTime M 0.1 0.6]
+＠乔尔乔斯
+（粗暴的年轻活力，[r]　与贤王的部分闪光点并存……）
+[k]
+
+＠乔尔乔斯
+（您果然是一位可靠的屠龙者啊，[r]　贝奥武夫阁下[line 3]）
+[k]
+
+[messageOff]
+
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_62 1.0]
+[wait wipe]
+
+[charaFadeout M 0.1]
+[charaFadeout F 0.1]
+[wt 1.5]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk depthOn]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠贝奥武夫
+好嘞！　到了！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠玛修
+找到了！　那是弗栗多[line 3][r]和清姬小姐！
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.4 1]
+[wt 0.4]
+[bgm BGM_EVENT_7 0.1]
+＠清姬
+欢迎光临，御主♡[r]恭候多时了！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 12]
+[charaFadein I 0.1 1]
+＠弗栗多
+唔……吾虽然模仿出了这家伙，[r]但状态尤为奇怪呢。
+[k]
+
+＠弗栗多
+Berserker都这样吗？
+[k]
+
+？1：就是这样的。
+？2：毕竟是小清姬嘛。
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+＠清姬
+啊啊，就算不说话，[r]也能完全理解的这种感觉！
+[k]
+
+＠清姬
+简直就是[wt 0.3][messageShake 0.05 3 3 0.2]爱！　[wt 0.5][messageShake 0.05 3 3 0.2]Love！　[wt 0.5][messageShake 0.05 3 3 0.4]Je t'aime！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+＠弗栗多
+唔，果然无法理解。
+[k]
+
+＠弗栗多
+吾压根没有吩咐什么，[r]这家伙就主动向你们释放出火焰弹了。
+[k]
+
+＠弗栗多
+你们原本就和这家伙有仇吗？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+＠清姬
+哎呀，我才没有喷什么火呢！[r]那是爱之路标，名为喜欢喜欢弹啦！
+[k]
+
+＠清姬
+只要那样做，就可以让人[r]毫不犹豫地径直抵达这里啦！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠乔尔乔斯
+这个嘛，确实没迷路呢。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠清姬
+首先忍受着令人苦闷的满溢思念并挖掘冰块！[r]然后将从喉咙深处溢出的灼热思念包含其中！
+[k]
+
+＠清姬
+然后边许下恋爱成功的愿望，[r]边腰腿用力向所爱之人投掷！
+[k]
+
+[charaFace H 3]
+＠清姬
+没错，这满满的含蓄而少女的情感……[r]看来明天前后应该就能举行仪式了吧？
+[k]
+
+＠清姬
+顺便一提，我以前听过一个[r]用发光石子做路标的童话故事，
+[k]
+
+[charaFace H 1]
+＠清姬
+这作战就是参考了那个故事！[r]是叫汉赛尔与[#格莱特:Gretel]吗？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠贝奥武夫
+[#哥伦多:Grendel]？[r]那家伙又惹什么事了吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠玛修
+指的应该是和贝奥武夫先生的宿敌[r]没什么关系的兄妹中的妹妹！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+＠弗栗多
+虽然不太明白，[r]但这家伙的热量相当了不起。
+[k]
+
+＠弗栗多
+充满了想要将你们的骨头[r]都烧成灰烬的气概呢。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+＠清姬
+因为！　这就是爱！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk I]
+[charaFace I 12]
+[charaFadein I 0.1 1]
+[charaFadeTime M 0.1 0.6]
+＠弗栗多
+（果然难以理解……）
+[k]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaFadeout M 0.1]
+[charaFace I 0]
+＠弗栗多
+无论如何，是呢。[r]这个障碍足以作为最后的试炼了。
+[k]
+
+＠弗栗多
+只要能克服这个，[r]时机应该就差不多了吧。
+[k]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaFace I 6]
+＠弗栗多
+届时吾会亲自与你们交手哦？
+[k]
+
+＠弗栗多
+不过一定要小心哦。[r][#最合适的时间]总是意外地短暂。
+[k]
+
+[charaFace I 7]
+＠弗栗多
+哪怕存在任何天真、大意、保留……[r]都有可能导致为时已晚。
+[k]
+
+＠弗栗多
+这对吾来说也不是什么值得高兴的事。[r]千万别让吾失望了哦？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+保留？　当然不可能。
+[k]
+
+＠圣诞迦尔纳
+我必须尽早打倒你，[r]尽快成为圣诞老人才行。
+[k]
+
+＠圣诞迦尔纳
+如果不这么做，圣诞节就要结束了。
+[k]
+
+＠圣诞迦尔纳
+……如果需要比赛才能获得挑战权的话，[r]我会用尽全力让你见识这拳头的光辉。
+[k]
+
+？1：好……现在先全力对付清姬！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+＠清姬
+也就是让我们相爱的意思吧！[r]啊啊，竟如此大声宣誓爱情！
+[k]
+
+[charaFace H 11]
+＠清姬
+但是『现在先』这种说法令人介意呢。
+[k]
+
+＠清姬
+听上去就像是未来准备花心出轨似的。
+[k]
+
+＠清姬
+这个问题非常重要哦，御主，[r]让我们进入钟内举行夫妻会议吧？
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

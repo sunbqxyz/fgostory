@@ -1,0 +1,113 @@
+
+
+
+＄01-00-07-08-2-0
+[soundStopAll]
+[charaSet A 8001002 1 玛修]
+
+[charaSet B 98106200 1 梅林]
+[charaSet C 98107500 1 乌鲁克士兵]
+[charaSet D 98006000 1 魔兽]
+
+
+
+
+[bgm BGM_EVENT_4 0.1]
+[scene 32930]
+[se ad5]
+[seVolume ad5 0 0.05]
+[seVolume ad5 1.5 0.4]
+[fadein black 1.5]
+[wait fade]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+
+
+＠玛修
+好厉害……！[r]快看啊，前辈！
+[k]
+
+＠玛修
+这热闹程度与乌鲁克一般无二！[r]明明是城塞，但除了士兵以外，还有很多人在工作！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+
+＠梅林
+那当然啦。这种规模的防御已经维持了半年哦？[r]为了维持下去，当然只能建造城市了呀。
+[k]
+
+[charaFace B 0]
+＠梅林
+恩，但不能掉以轻心。[r]虽然城墙确实能抵挡魔兽，
+[k]
+
+[messageOff]
+[seStop ad5 0.7]
+[bgmStop BGM_EVENT_4 0.4]
+[wipeout rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+
+[bgm BGM_EVENT_3 0.1]
+[se ad16]
+[seVolume ad16 0 0.4]
+
+＠乌鲁克士兵
+警报，警报！　基之17区被突破了！[r]附近市民赶快避难，狮子班火速前往讨伐！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFadein D 0.1 1]
+[se ad23]
+
+＠魔兽
+GuuuuRuuaaaaaaaaaaaa[line 3]！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+
+＠梅林
+就像这样，脚力强的魔兽们[r]会单枪匹马翻越城墙而来呢！
+[k]
+
+＠梅林
+没什么大不了的，不用客气，[%1]。[r]沿途什么都没发生，也挺无聊的吧？
+[k]
+
+＠梅林
+这里就痛快地展现我们的实力吧！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.5]
+[seStop ad16 0.5]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+
+

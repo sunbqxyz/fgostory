@@ -1,0 +1,197 @@
+
+
+
+＄91-20-06-01-3-0
+
+[soundStopAll]
+
+[charaSet A 2006001 1 大卫]
+[charaSet B 8001002 1 玛修]
+[charaSet C 98003003 1 Dr.罗曼]
+[charaSet D 98002000 1 芙芙]
+
+[bgm BGM_EVENT_5 0.1]
+[scene 28400]
+[fadein black 1.5]
+[wait fade]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+
+＠大卫
+……好了，敌方老大差不多要出现了。
+[k]
+
+＠大卫
+基于你们的英勇表现，特异点正逐渐被修复。[r]这片大地本已恢复原状。
+[k]
+
+＠大卫
+在此处显现，向我们扑来的巨人军队。[r]企图将展现了神之威严的这片大地破坏殆尽的存在。
+[k]
+
+＠大卫
+其魁首就是[line 2]
+[k]
+
+？1：歌利亚？
+？2：什么来着？
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠玛修
+……歌利亚。或者叫歌莱亚斯。[r]是与以色列王国敌对的巨人战士吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr.罗曼
+大卫与歌利亚之战。[r]是记载于撒母耳记上卷的传说，但现在是13世纪。也就是说，
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠大卫
+那不是真正的歌利亚吧。[r]如果真的是，或许会更加麻烦。
+[k]
+
+＠大卫
+这是传说的重现。[r]更像是某种象征。
+[k]
+
+＠大卫
+所以我才会来这里。[r]并非真正的、生前的以色列建国国王的我。
+[k]
+
+＠大卫
+那出现的歌利亚，[r]也是与之相似的冒牌货[line 2]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.4]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.4]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[voice 700100_0_B100]
+[wt 2.5]
+[bgm BGM_EVENT_3 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠大卫
+……来啦！　看，是巨人！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠玛修
+……不，抱歉，请等一下。[r]那不是巨人……
+[k]
+
+＠玛修
+那是巨大的鬼魂和……魔猪……以及龙吧？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠大卫
+嗯，反正这三只都会发动全体攻击……[r]就算说它们类似巨人，也没什么问题吧？
+[k]
+
+？1：很有问题吧！？
+
+[charaPut D 0,0]
+[charaEffect D bit_talk_41]
+[charaFace A 2]
+＠大卫
+我想也是！
+[k]
+
+[charaPut D 0,-1000]
+[charaEffectStop D bit_talk_41]
+
+？2：这就是巨人判定的标准吗！？
+
+[charaFace A 1]
+＠大卫
+嗯，巨大的家伙会全体攻击。[r]这就是我的世界的常识。
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr.罗曼
+啊……所以这个王才会极端擅长全体防御技术啊……[r]我还以为这技能是为了保护羊群呢……
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠大卫
+哎？　不是一样的吗？[r]因为这两者都是那种只要适当诱导，就能[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+呜[messageShake 0.01 5 5 0.7]哇啊啊暂停暂停！[r]我不想再继续听下去了！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk D]
+[charaFadein D 0.1 1]
+＠芙芙
+芙呜！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+＠玛修
+那……那个……[r]请指示，御主！
+[k]
+
+？1：进入战斗态势，玛修！
+？！
+
+[charaFace B 7]
+＠玛修
+[line 3]明白了。[r]战斗开始！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

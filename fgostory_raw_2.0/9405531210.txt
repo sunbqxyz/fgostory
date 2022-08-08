@@ -1,0 +1,833 @@
+
+＄94-05-53-12-1-0
+[soundStopAll]
+[enableFullScreen]
+
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_71 0.1]
+
+
+＠
+[align center]吾，乃是怨恨[align]
+[k]
+
+＠
+[align center]吾，乃是永无止尽的愤怒[align]
+[k]
+
+＠
+[align center]吾，乃是永不熄灭的业火[align]
+[k]
+
+＠
+[align center]吾，乃是[align]
+[k]
+
+[messageOff]
+[wt 1.5]
+
+＠
+[align center]景清[align]
+[k]
+
+[messageOff]
+[wt 1.5]
+
+＠
+[align center]一边，是源氏[align][r][align center]一边，是平家[align]
+[k]
+
+＠
+[align center]然而吾等乃相近的存在[align]
+[k]
+
+＠
+[align center]因此可以携起手来[align]
+[k]
+
+
+＠
+[align center]手牵着手[align]
+[k]
+
+＠
+[align center]来吧[align]
+[k]
+
+＠
+[align center]来吧！[align]
+[k]
+
+＠
+[align center]来吧，向镰仓出发！[align]
+[k]
+
+＠
+[align center]杀害[#你的赖朝]，义经！[align]
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_71 1.5]
+[wait fade]
+
+[wait fade]
+[skip false]
+[effectDestroy]
+
+[scene 10000]
+[wt 1.5]
+[fadein black 0.1]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[soundStopAllFade 0.4]
+[effectDestroy]
+
+[maskout black 1.0]
+[wait mask]
+[scene 10000]
+[wt 0.1]
+[maskin black 0.1]
+[wait mask]
+
+[label selectBranch]
+
+[fowardEffect bit_queststart80309]
+[wait fowardEffect]
+
+[fadeout black 1.0]
+[wait fade]
+
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 6041000 1 鬼一法眼]
+[charaSet C 4013300 1 梅芙]
+[charaSet D 1098206200 1 弁庆]
+[charaSet E 98104200 1 伊阿宋]
+[charaSet F 98104010 1 库·丘林·Alter]
+[charaSet G 1098206100 1 牛若丸]
+[charaSet H 11010001 1 景清]
+
+[charaSet I 11010001 1 景清第二剪影]
+[charaFilter I silhouette 00000000]
+
+[charaSet J 98115000 1 通信用]
+[charaSet K 1001000 1 特效用]
+
+[imageSet L back10000 1]
+[charaScale L 1.01]
+
+[charaPut J 2400,2400]
+[charaEffect J bit_talk_10_LowLevel]
+
+[charaDepth B 8]
+[charaDepth L 2]
+
+[scene 109900]
+[wt 1.5]
+
+[skip true]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+？1：这里是[line 3]
+？！
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠牛若丸
+镰仓！？
+[k]
+
+＠牛若丸
+不会错，主公。[r]这里是……
+[k]
+
+＠牛若丸
+镰仓，我的全部都在诉说……[r]就算不是过去的镰仓……
+[k]
+
+[charaFace G 6]
+
+＠牛若丸
+这里也留有兄长大人的气息……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠弁庆
+牛若丸大人……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+坐标，日本。似乎是关东南部的镰仓。[r]牛若丸小姐说得对。
+[k]
+
+[charaPut J 2400,2400]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠伊阿宋
+镰仓？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠梅芙
+牛若丸，不对，[r]坏牛若打算在这里做什么呢。
+[k]
+
+
+＠梅芙
+这里是与牛若丸缘分匪浅的地方吧？[r]与其说坏牛若是恰好逃到了这里……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+或许应该认为，[r]她的最终目的地就是镰仓吧。
+[k]
+
+＠鬼一法眼
+至于她究竟打算做什么[line 3]
+[k]
+
+[charaFace B 0]
+
+＠鬼一法眼
+应该是想破坏吧。
+[k]
+
+？1：破坏……
+
+？！
+
+[charaFace B 7]
+
+＠鬼一法眼
+没有作为牛若丸，没有作为遮那王，[r]坏牛若化身成义经的状态开始了单独行动。
+[k]
+
+[charaFace B 6]
+
+＠鬼一法眼
+认为她想在[#自己憎恨的]镰仓为恶，[r]也没什么好奇怪的。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+……[r]……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+
+＠鬼一法眼
+要说其他难以理解的部分嘛，对，[r]所谓的特异点，是能回溯时间的吧？
+[k]
+
+
+[charaFace B 0]
+
+＠鬼一法眼
+既然是以破坏为目的，[r]理应针对赖朝还活着的那个时代的镰仓才对，
+[k]
+
+＠鬼一法眼
+怎么计算，[r]那也不是距当代非常遥远的时代吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠玛修
+从微小特异点的先例来看，[r]就算发生在现代也没什么好奇怪的……
+[k]
+
+[charaPut J 2400,2400]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+唔，是这样吗。
+[k]
+
+[charaFace B 18]
+
+
+＠鬼一法眼
+是即便凭万宝小槌的魔力，[r]魔力输出也不够回溯时代吗？
+[k]
+
+[charaFace B 4]
+
+
+＠鬼一法眼
+所以觉得随便什么时代都行，[r]只要破坏镰仓就够了吗……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.0]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠？？？
+不。[r]鬼一法眼。
+[k]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+[bgm BGM_EVENT_90 0.1]
+
+＠牛若丸
+！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠梅芙
+来了呢。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠库·丘林·Alter
+总算来了啊。我都等得不耐烦了。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+哦！
+[k]
+
+＠鬼一法眼
+终于不逃不躲愿意现身了吗！　遮那王！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.4 1]
+[wt 0.4]
+
+＠牛若丸？
+憎恨镰仓[line 3]
+[k]
+
+＠牛若丸？
+确实。唯独这件事没错。
+[k]
+
+＠牛若丸？
+九郎判官义经遭兄长赖朝背叛，死去。[r]吾确实也憎恨镰仓。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+吾？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+[charaFadeTime L 0.1 0.6]
+
+＠鬼一法眼
+（吾？）
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+[bgmStop BGM_EVENT_90 1.5]
+
+＠牛若丸？
+但是[line 3][r]首先是你，迦勒底的御主。
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[shake 0.03 0 5 1.5]
+[se ad14]
+[wt 1.0]
+[se ade153]
+[seStop ade153 1.5]
+
+[scene 109901 1.5]
+[wt 0.5]
+[seVolume ad14 0.5 0.5]
+[shake 0.03 0 3 1.0]
+[seStop ad14 1.0]
+[wt 3.0]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_48 0.1]
+
+＠梅芙
+这是什么啊！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+土地本身正在散发着魔力！[r]对方似乎连接了地脉，要警惕！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut J 2400,2400]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠牛若丸？
+这就是吾通过万宝小槌设下的陷阱！[r]将这镰仓化为了魔圈！
+[k]
+
+
+＠牛若丸？
+没发现吗！[r]迦勒底的人啊！
+[k]
+
+＠牛若丸？
+此前你们经过的那些地点，[r]都不是真正的世界各地。
+[k]
+
+
+＠牛若丸？
+那全部，[#全部都是镰仓领域]！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠伊阿宋
+哈！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+
+＠牛若丸？
+全都是为了让此地成为魔圈而做的准备，[r]为了熟悉术而玩的游戏！
+[k]
+
+[messageOff]
+[fadeout white 0.5]
+[se ad592]
+[bgmStop BGM_EVENT_48 0.5]
+[wait fade]
+
+[charaFadeout I 0.1]
+[effect bit_talk_noise02]
+[cameraFilter gray]
+
+[scene 107600]
+[wt 0.5]
+
+[fadein white 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_71 0.1]
+
+
+[wt 1.0]
+
+
+＠牛若丸？
+第一地点，并非法国。[r]而是怀岛。
+[k]
+
+[messageOff]
+[scene 20503 0.7]
+[wt 2.2]
+
+＠牛若丸？
+第二地点，并非恰赫季斯。[r]而是沼浜。
+[k]
+
+[messageOff]
+[scene 109600 0.7]
+[wt 2.2]
+
+＠牛若丸？
+第三地点，并非澳大利亚。[r]而是柄岛。
+[k]
+
+[messageOff]
+[scene 109700 0.7]
+[wt 2.2]
+
+＠牛若丸？
+第四地点，并非地中海上空。[r]而是粟船。
+[k]
+
+[messageOff]
+[scene 112000 0.7]
+[wt 2.2]
+
+＠牛若丸？
+第五地点，并非纽约。[r]而是金泽。
+[k]
+
+[messageOff]
+[fadeout white 0.5]
+[bgm BGM_EVENT_71 0.5 0.5]
+[wait fade]
+
+[effectStop bit_talk_noise02]
+[cameraFilter normal]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+[scene 109901]
+[wt 0.5]
+
+[fadein white 0.5]
+[bgm BGM_EVENT_71 0.5 1.0]
+[wait fade]
+
+
+＠牛若丸？
+分别为镰仓周围的五个地点[r]付与了不同的土地属性……
+[k]
+
+＠牛若丸？
+并将迦勒底的从者们拉入其中。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+……！
+[k]
+
+[charaFace A 7]
+
+＠玛修
+在微小特异点的观测位置显示之前，[r]之所以会有一瞬间的延迟，难道是……
+[k]
+
+[charaPut J 2400,2400]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠牛若丸？
+呵呵。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠伊阿宋
+为……为什么……[r]要做这种超麻烦的事啦……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠牛若丸？
+吾不是说了吗，为了练手。
+[k]
+
+＠牛若丸？
+经过了五次游戏，[r]吾终于学会了使用小槌精雕细琢。
+[k]
+
+＠牛若丸？
+然后，成功将镰仓化作了魔圈。
+[k]
+
+＠牛若丸？
+付与镰仓的土地属性，[r]就是付与所有入侵者的某种属性！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠梅芙
+属性？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+为敌人付与自己的攻击可以更有效的属性，[r]应该是这类吧。咱有说错吗，坏牛若？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠牛若丸？
+正是。
+[k]
+
+
+＠牛若丸？
+汝等已经全部化作吾之屠戮对象了
+[k]
+
+
+＠牛若丸？
+屠戮源氏，无法逃跑[line 3]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 22]
+[charaFadein B 0.1 1]
+
+
+＠鬼一法眼
+知道啦知道啦，啊啊真是的，烦死了！[r]这真不像你的作风，遮那王！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+不，师傅，那不是我！
+[k]
+
+
+＠牛若丸
+既是我，也不是我！[r]我是绝对不可能为害御主的！
+[k]
+
+[bgmStop BGM_EVENT_71 1.5]
+
+
+＠牛若丸
+报上名字吧，令人恼火的卑鄙无耻之徒！[r]你究竟！　是谁！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠牛若丸？
+呵。呵呵呵呵呵！
+[k]
+
+[bgm BGM_EVENT_72 0.1]
+
+＠牛若丸？
+被你看穿了，牛若丸，[r]不，牛若丸的碎片！
+[k]
+
+＠牛若丸？
+没错，吾既是义经，也不是义经。
+[k]
+
+
+＠牛若丸？
+吾正是怨之一字，[r]吾正是屠戮源氏之志。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth K 8]
+[charaDepth I 7]
+[charaDepth H 5]
+
+[charaPut K 0,0]
+[charaEffect K bit_talk_charge_ppl02]
+[se ad153]
+[seVolume ad153 0 0.6]
+[se ad559]
+[seVolume ad559 0 0.4]
+[wt 2.0]
+
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[charaEffectStop K bit_talk_charge_ppl02]
+[seStop ad153 0.5]
+[seStop ad559 0.5]
+[wt 0.2]
+[se ade457]
+[charaFadeout I 0.8]
+[wt 2.5]
+
+[charaFace H 2]
+
+＠牛若丸？
+[line 3]吾之真名，乃是平景清！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_72 2.0]
+[wait fade]
+[soundStopAll]
+[end]

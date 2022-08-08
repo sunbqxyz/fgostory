@@ -1,0 +1,878 @@
+
+＄03-00-07-02-3-1
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 1047001 1 渡边纲]
+[charaSet B 5017000 1 美狄亚·Lily]
+[charaSet C 7006300 1 坂田金时]
+[charaSet D 1098204400 1 段藏]
+[charaSet E 98006200 1 敌人]
+[charaSet F 98006200 1 敌人]
+[charaSet G 98006200 1 敌人]
+[imageSet L back10000 1]
+[charaScale L 1.05]
+
+[scene 102101]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠渡边纲
+Caster！[r]撤掉骨之式神，碍事。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠美狄亚·Lily
+是龙牙兵！　可是……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠渡边纲
+对金时无效！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠坂田金时
+喝呀！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaDepth E 1]
+[charaDepth F 2]
+[charaDepth G 3]
+
+[charaFace E 0]
+[charaFace E 0]
+[charaFace E 0]
+
+[se ad1010]
+[wt 0.2]
+[effect bit_talk_gold_slash_02]
+[wt 0.2]
+
+[charaFadeinFSL E 0.1 -350,0]
+[charaFadeinFSR F 0.1 350,0]
+[charaFadein G 0.1 1]
+
+[charaShake E 0.05 3 3 0.7]
+[charaShake F 0.05 3 3 0.7]
+[charaShake G 0.05 3 3 0.7]
+[wt 0.9]
+
+[se ad42]
+[charaSpecialEffect E enemyErasure 1 1.5]
+[charaSpecialEffect F enemyErasure 1 1.5]
+[charaSpecialEffect G enemyErasure 1 1.5]
+[wait charaSpecialEffect E]
+[wait charaSpecialEffect F]
+[wait charaSpecialEffect G]
+[wt 1.5]
+
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠坂田金时
+哈哈，什么嘛！
+[k]
+
+＠坂田金时
+犹如奔驰于山野之孤狼的你！[r]竟然会带着骨头杂兵袭来，这倒是吓了我一跳呢！
+[k]
+
+＠坂田金时
+结果根本不算什么[line 3][wt 0.5][charaFace C 10]哎哟！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.2]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,10 0.2]
+[se ad7]
+[wt 0.1]
+[charaFadeout A 0.1]
+[blurOff motion 0.2]
+[wt 0.1]
+[charaScale A 1.0]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+[wt 0.2]
+
+[fowardEffect bit_talk_x_slash01]
+[se ad1013]
+[wt 0.2]
+[charaShake C 0.05 3 3 0.7]
+
+[fowardEffect bit_talk_x_slash02]
+[se ad1013]
+[wt 0.2]
+
+[fowardEffect bit_talk_x_slash03]
+[fowardEffect bit_talk_14]
+[se ad471]
+[wt 1.5]
+
+[charaFace C 0]
+
+＠坂田金时
+好危险好危险！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠渡边纲
+接下髭切后斧刃竟无损毁！[r]这样才对嘛！
+[k]
+
+[messageOff]
+[charaFace A 5]
+[charaEffect A bit_talk_charge_red]
+[se ad664]
+[seVolume ad664 0 0.1]
+[seVolume ad664 1.0 1.0]
+[wt 1.6]
+[seStop ad664 0.2]
+[se bas10]
+[wt 0.2]
+[charaEffect A bit_talk_attack_buf]
+[charaEffectStop A bit_talk_charge_red]
+
+[charaFace A 2]
+
+＠渡边纲
+噢噢噢！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠坂田金时
+嘁！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[charaFadeTime L 0.2 0.5]
+
+＠段藏
+（金时阁下不愧为赖光四天王之一！[r]　就算面对纲阁下依然寸步不让，）
+[k]
+
+＠段藏
+（可纲阁下却透露着一股深不可测的气息[line 3]）
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠渡边纲
+虽说与你交手很是痛快，[r]但抱歉，金时。
+[k]
+
+＠渡边纲
+我并不会愚蠢到[r]与没有天览武者资格的四天王一直纠缠下去。
+[k]
+
+[charaFace A 5]
+
+＠渡边纲
+喝！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+
+[se ad171]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+[fowardEffect bit_talk_14]
+[charaShake C 0.05 3 3 0.4]
+[se ad881]
+[se ad618]
+[wt 0.2]
+
+＠坂田金时
+……哇！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠渡边纲
+在场的Caster有两骑！[r]那应该取下的首级也[#只有一个]！
+[k]
+
+[messageOff]
+[charaEffect A bit_talk_quickmove]
+[wt 0.05]
+[charaFadeout A 0.1]
+[se ad73]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[charaFadeTime L 0.1 0.5]
+
+＠段藏
+（纲阁下的目标[line 3]）
+[k]
+
+＠段藏
+（并非金时阁下。[r]　现在的杀气……也不是冲着我来的！）
+[k]
+
+[charaFace D 2]
+
+＠段藏
+（那就是御主！？）
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 5]
+[se ad223]
+[charaPut A 0,20]
+[charaSpecialEffect A appearanceReverse 1 0.2]
+[wt 0.2]
+[seStop ad1 0.2]
+[wt 0.5]
+
+
+＠坂田金时
+啊，糟了[line 3]
+[k]
+
+？1：段藏小姐，灵体化！
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠段藏
+明……明白！
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaSpecialEffect D erasure 1 0.5]
+[se ad595]
+[wait charaSpecialEffect D]
+[seStop ad595 0.3]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠坂田金时
+唔噢！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,20]
+
+＠渡边纲
+！？
+[k]
+
+[charaFace A 5]
+
+＠渡边纲
+消失了，不对[line 3]
+[k]
+
+＠渡边纲
+是英灵特有的所谓灵体化吗。
+[k]
+
+[charaFace A 2]
+
+＠渡边纲
+Caster！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠美狄亚·Lily
+啊，是。[r]她无疑是从者！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,20]
+[wt 0.2]
+
+[charaMoveScale A 1.0 0.7]
+[charaMove A 0,0 0.7]
+[se ad987]
+[wt 0.8]
+[seStop ad987 0.2]
+[wt 0.2]
+
+＠渡边纲
+人偶那个才是啊。
+[k]
+
+[messageOff]
+[charaFace A 5]
+[wt 1.2]
+[charaFace A 4]
+
+＠渡边纲
+不是这[&男人:姑娘]吗？[r]……与其说是被对手迷惑，不如说我还是不够成熟啊。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 1.0]
+[charaFace B 4]
+
+
+＠美狄亚·Lily
+非……非常抱歉！[r]都怪我说得不够详细！
+[k]
+
+[charaFace B 2]
+
+＠美狄亚·Lily
+出现从者反应的是刚才隐去身影的[#黑色长发]女性！
+[k]
+
+＠美狄亚·Lily
+并不是那边的[&黑发少年:红发少女]！
+[k]
+
+？1：……………………
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠渡边纲
+原来如此。[bgm BGM_EVENT_81 0.1]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠美狄亚·Lily
+而且，那个……
+[k]
+
+＠美狄亚·Lily
+恐怕黑色长发的女性并非Caster灵基的英灵。
+[k]
+
+＠美狄亚·Lily
+从她的动作来看，[r]我猜她肯定是Assassin。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠渡边纲
+什么。
+[k]
+
+＠渡边纲
+[#Caster][#以外的从者]？[r]还有这种存在啊。
+[k]
+
+[charaFace A 4]
+
+＠渡边纲
+……[r]……
+[k]
+
+[charaFace A 0]
+
+＠渡边纲
+…………唔。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠美狄亚·Lily
+纲大人。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠渡边纲
+不，没关系。[r]责任在贸然断定的我身上。
+[k]
+
+[charaFace A 4]
+
+＠渡边纲
+……都城内未曾见过的异境衣裳，[r]还有行使某种妖术的动作。
+[k]
+
+＠渡边纲
+可我竟然一直没机会重新检讨。[r]果然是我还不够成熟。
+[k]
+
+[messageOff]
+[wt 0.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[wt 1.4]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠渡边纲
+金时。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[se ad997]
+
+＠坂田金时
+……莫名其妙。[r]怎么回事，受伤的大姐是怎么消失的？
+[k]
+
+[charaFace C 0]
+
+＠坂田金时
+啊，哦。叫我干嘛，大哥。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠渡边纲
+我会暂且收手。[r]因为我寻求的只有Caster的首级。
+[k]
+
+＠渡边纲
+随你带那个[&男子:姑娘]去哪里都行。
+[k]
+
+[charaFace A 5]
+
+＠渡边纲
+但是……
+[k]
+
+＠渡边纲
+待下次见面时，[r]我会检查你的左手。
+[k]
+
+＠渡边纲
+什么都没有当然好。[r]但是，假如浮现出[#证明的纹样][line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠坂田金时
+那你打算如何，大哥。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠渡边纲
+当然，[r]会斩杀。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠坂田金时
+！
+[k]
+
+[charaFace C 6]
+
+＠坂田金时
+哈哈！　那敢情好！[r]你是真的打算用那把太刀砍我吗！
+[k]
+
+[charaFace C 0]
+
+＠坂田金时
+既然如此[line 3][r]我就衷心期待那个时候的到来吧，纲大哥。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 1.5]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠渡边纲
+…………走吧，Caster。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠美狄亚·Lily
+啊，是。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 1.5]
+
+[se ad987]
+[se ad60]
+[wt 1.0]
+[seStop ad987 1.5]
+[seStop ad60 1.5]
+[wt 2.0]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠坂田金时
+……[r]……
+[k]
+
+＠坂田金时
+………………………………
+[k]
+
+[charaFace C 3]
+
+＠坂田金时
+………………呼。走了吗？　走了吧？
+[k]
+
+？1：他走了！
+
+[charaFace C 6]
+
+＠坂田金时
+就是嘛！
+[k]
+
+？2：至少……应该看不见他的身影了。
+
+[charaFace C 6]
+
+＠坂田金时
+气息也消失了！[r]呼，刚才真是吓得我胆战心惊啊！
+[k]
+
+？！
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFace C 0]
+
+＠坂田金时
+哈，很久没这么刺激了。[r]虽说他没动真格，但还是与佩带太刀的大哥干了一架嘛！
+[k]
+
+＠坂田金时
+你们大可感到骄傲哦！[r]与那个渡边纲交手后却没身首异处，
+[k]
+
+＠坂田金时
+而且也没断手断脚！[r]这可是值得世代传诵的荣耀啊！
+[k]
+
+？1：谢谢你救了我们。
+
+[charaFace C 1]
+
+＠坂田金时
+噢！
+[k]
+
+＠坂田金时
+不用客气！　哈哈！
+[k]
+
+？2：……金时在平安时代还是那么可靠呢。
+
+[charaFace C 4]
+
+＠坂田金时
+啊？？
+[k]
+
+？！
+
+？1：简直就像正义的伙伴！
+？！
+
+[charaFace C 11]
+
+＠坂田金时
+正义？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaSpecialEffect D appearance 1 0.8]
+[wt 0.2]
+[se ad52]
+[wt 0.5]
+[seStop ad52 0.3]
+[wt 1.2]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+＠坂田金时
+唔噢，吓我一跳！
+[k]
+
+＠坂田金时
+怎……怎么了，[r]你不是连气息一起消失了吗！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠段藏
+诸如行正事之义士。
+[k]
+
+＠段藏
+这位大人的意思是您就像这样的人。[r]坂田金时阁下。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠坂田金时
+嘿，[r]行正事吗。
+[k]
+
+[charaFace C 4]
+
+＠坂田金时
+唔～～～～～。
+[k]
+
+＠坂田金时
+……………………这样啊？　说我吗？
+[k]
+
+[charaFace C 3]
+
+＠坂田金时
+我不太清楚什么才算正义啦。[r]如果你知道的话，我倒是想请教你呢。
+[k]
+
+＠坂田金时
+我嘛，只是顺势[#帮助了迷路的孩子]而已，[r]并没有想什么复杂的事……
+[k]
+
+[messageOff]
+[charaFace C 7]
+[wt 1.0]
+
+[charaFace C 0]
+
+＠坂田金时
+总之都城真是不好待啊！[r]对吧！
+[k]
+
+[bgmStop BGM_EVENT_77 1.0]
+[charaFace C 4]
+
+＠坂田金时
+尤其现在[#正在进行天览圣杯战争]嘛[line 3]
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

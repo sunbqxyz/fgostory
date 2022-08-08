@@ -1,0 +1,736 @@
+
+
+＄03-00-04-12-4-0
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 玛修]
+[charaSet B 1039001 1 拉克什米]
+[charaSet C 98115300 1 福尔摩斯]
+[charaSet D 23003001 1 伽内什]
+[charaSet E 1098176100 1 阿斯克勒庇俄斯]
+[charaSet F 98006100 1 敌人1]
+[charaSet G 98006100 1 敌人2]
+[charaSet H 1098167300 1 孩子]
+[charaSet I 1098124510 1 达·芬奇]
+[charaSet J 98115000 1 特效用]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[scene 10000]
+
+[bgm BGM_EVENT_80 0.1]
+[fadein black 1.0]
+[wait fade]
+
+
+[se ad171]
+[effect bit_talk_v_slash01]
+[wt 0.4]
+[effect bit_talk_14 100,-100]
+[se ad170]
+[wt 0.3]
+
+[scene 75500 0.5]
+[wt 0.5]
+
+[charaTalk off]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.2]
+[se bac167]
+[fowardEffect bit_talk_14]
+[charaShake F 0.05 3 2 0.8]
+[wt 0.8]
+[charaMove F 0,-15 0.3]
+[charaFadeout F 0.4]
+[wt 0.2]
+[se ad144]
+[wt 1.0]
+
+[se ad575]
+[wt 0.6]
+[charaPut F 0]
+[charaSpecialEffect F appearance 1 1.0]
+[wt 0.1]
+[seStop ad575 0.5]
+[se ad463]
+[charaPut G 2]
+[charaSpecialEffect G appearance 1 1.0]
+[wait charaSpecialEffect G]
+[wt 1.2]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[se ade18]
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+＠玛修
+无论打倒多少，都会接连不断地涌现……呜，那是！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+[charaShake H 0.05 2 1 0]
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[wt 1.5]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaPut J 1]
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠达·芬奇
+糟糕，是小孩子。看到战斗后大部分镇民应该都躲起来了[r]……但还有留下来的人吗！
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[wt 0.1]
+
+？1：这里很危险，快去避难！
+？2：最优先保护那孩子！
+？！
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+[charaShake H 0.05 2 1 0]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+＠孩子
+咿，咿呀啊啊……
+[k]
+
+[messageOff]
+[charaMove H 80,0 0.3]
+[wt 0.2]
+[se bac344]
+[charaShakeStop H]
+
+[se bac345]
+[charaMove H 100,-10 0.3]
+[wt 0.5]
+[charaFace H 4]
+
+＠孩子
+呜呜，好痛，好痛啊……
+[k]
+
+＠伽内什
+啊，摔倒了。这下糟了，[r]赶不上了……哎呀？[bgmStop BGM_EVENT_80 1.5]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠阿斯克勒庇俄斯
+怎么了。摔倒了吗。[r]膝盖没受伤吧。让我看看。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 2]
+
+[charaFace E 0]
+[charaFadein E 0.1 0]
+
+＠孩子
+神……神明大人……？
+[k]
+
+[charaFace E 4]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠阿斯克勒庇俄斯
+被石头割伤了吗。[r]虽说是在城镇里，但道路铺得不整齐啊。
+[k]
+
+＠阿斯克勒庇俄斯
+以刚才的冲劲在城镇里跌倒，[r]就会造成这种割裂伤……原来如此。
+[k]
+
+＠阿斯克勒庇俄斯
+我会将伤口的深度与面积留在记忆里，[r]以便今后只要看见伤口就能判断出缘由。
+[k]
+
+[charaMove E -200,0 0.4]
+
+＠阿斯克勒庇俄斯
+好了，伤口本身并没有任何奇怪的部分。[r]最适合的治疗是[line 3]首先洗干净伤口。
+[k]
+
+＠阿斯克勒庇俄斯
+然后贴上这些药草。
+[k]
+
+[messageOff]
+[se ad738]
+[wt 1.0]
+[charaFace H 6]
+
+＠孩子
+血……止住了……？
+[k]
+
+[charaFace E 0]
+
+＠阿斯克勒庇俄斯
+那当然啦，因为我处理过了。
+[k]
+
+[charaFace E 5]
+
+＠阿斯克勒庇俄斯
+听好了，在疼痛消失之前都不可以撕下来。[r]既然是患者，就该遵守医生的指示。
+[k]
+
+＠阿斯克勒庇俄斯
+如果无法遵守，就表明问题出在你那愚钝的头部。[r]可别做这种让我撇下你不管的事哦。
+[k]
+
+[charaFace H 1]
+
+＠孩子
+唔，嗯……我绝对，绝对会遵守的！[r]万分感谢，神明大人！
+[k]
+
+[charaFace E 0]
+
+＠阿斯克勒庇俄斯
+那你就是一位好患者。[r]多保重。
+[k]
+
+
+[messageOff]
+[charaTalk off]
+
+[se ad132]
+[charaMove H 300,0 0.5]
+[charaFadeout H 0.4]
+
+[wt 1.5]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaSet H 1019001 1 罗摩]
+
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠伽内什
+哎～。这算啥，看似冷漠，[r]其实是位好医生的感觉……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠阿斯克勒庇俄斯
+你在说什么？
+[k]
+
+＠阿斯克勒庇俄斯
+该治疗的人我自会治疗，而阻碍治疗、[r]阻挡我医术进步的家伙我决不会原谅[line 3]
+[k]
+
+＠阿斯克勒庇俄斯
+仅此而已，非常简单。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠拉克什米
+你的志向或许确实很了不起。
+[k]
+
+[charaFace B 5]
+
+＠拉克什米
+但为什么？[r]为什么要顽固地将这摆在第一位？
+[k]
+
+＠拉克什米
+为什么要轻率地将除此以外的一切[line 3][r]将世界的扭曲、众人的哀叹都摆在次要呢？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠阿斯克勒庇俄斯
+为什么。你问我理由？　……真新奇。[r]因为太过理所当然了，以至于连我内心都没有答案。
+[k]
+
+＠阿斯克勒庇俄斯
+若想回答你这问题，必须将头脑降智到愚钝患者[r]那种会去在意这类无需在意之事的水平才行。
+[k]
+
+[charaFace E 4]
+
+＠阿斯克勒庇俄斯
+…………
+[k]
+
+[charaFace E 0]
+[bgmStop BGM_EVENT_70 1.5]
+
+＠阿斯克勒庇俄斯
+不，白费力气。嗯。怎么想都是在白费力气。[r]所以还是继续将碍事者赶出诊室吧。
+[k]
+
+[messageOff]
+
+[charaTalk off]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[se ad575]
+[wt 0.6]
+[se ad463]
+[charaPut F 0]
+[charaSpecialEffect F appearance 1 1.0]
+[wt 0.2]
+[seStop ad575 0.5]
+[charaPut G 2]
+[charaSpecialEffect G appearance 1 1.0]
+[wait charaSpecialEffect G]
+[wt 1.2]
+[bgm BGM_EVENT_80 0.1]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠罗摩
+才刚救了个孩子，就又去操纵死者了[line 3][r]你到底想要赞誉还是骂名呢？
+[k]
+
+[messageOff]
+
+[charaFace H 2]
+[charaMoveScale H 1.1 0.2]
+[charaMove H 0,10 0.1]
+[effect bit_talk_v_slash01]
+[wt 0.1]
+[charaMove H 5,12 0.1]
+[se bac263]
+[wt 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.2]
+[se bac403]
+[fowardEffect bit_talk_14]
+[flashin once 0.2 0.2 FFFFFF80 FFFFFF80]
+
+[charaShake F 0.05 3 2 0.8]
+[wt 0.8]
+[charaMove F 0,-15 0.3]
+[charaFadeout F 0.4]
+[wt 0.2]
+[se ad144]
+[wt 1.0]
+[charaScale H 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠阿斯克勒庇俄斯
+两者都不需要。你们真是群不明事理的患者。[r]差不多该安分下来了吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠罗摩
+就算数量再多，终究不过死者之流。[r]别以为曾经打倒过魔王的余会露怯。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠阿斯克勒庇俄斯
+越是无知的患者，越是会采取令事态恶化的行动。
+[k]
+
+＠阿斯克勒庇俄斯
+你们就不能老老实实地被我[r]亲手用作为医术进步的基石吗？
+[k]
+
+[charaFace E 6]
+
+＠阿斯克勒庇俄斯
+都因为这意外浪费了时间[line 3][#他已经来了哦]。[bgmStop BGM_EVENT_80 1.0]
+[k]
+
+？1：…………？
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad659]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+稍后再说明！　全员立刻中止所有战斗，[r]逃离现场！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 22]
+[charaFadein I 0.1 1]
+
+＠达·芬奇
+尽管我们确实设想过这种可能性，可恶！
+[k]
+
+＠达·芬奇
+当然，这是我们所能设想到的最糟糕的情况。[r]怎么会这样倒霉啦！
+[k]
+
+[charaFadeout I 0.1]
+[seStop ad659 1.0]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[se ad246]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠拉克什米
+…………[seStop ad246 3.0]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+御主，有什么东西从那边空中过来了！[r]那是[line 3]！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[scene 10000]
+
+[charaSet F 1098176300 1 身为神的阿周那]
+[charaSet G 1098127610 1 佩佩隆奇诺]
+
+[wipein rectangleStripUpToDown 0.1 1.0]
+[wait wipe]
+
+[se ade8]
+[wt 0.4]
+[fadeout white 1.5]
+[wait fade]
+
+[scene 75600]
+[wt 0.2]
+
+[fadein white 1.0]
+[wait fade]
+[bgm BGM_EVENT_24 0.1]
+[wt 2.2]
+
+
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[scene 75500]
+[wt 0.1]
+[se bac256]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.5 0,60]
+[charaMove F 0,0 0.7]
+[wt 2.5]
+
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠罗摩
+……阿周那！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠伽内什
+呜哎哎哎！？　你们不是说他平时只会在空想树附近飞行吗！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠阿斯克勒庇俄斯
+没有比外行人想出来的独门偏方更糟糕的东西了。
+[k]
+
+＠阿斯克勒庇俄斯
+只要拥有他那样的力量和维摩那的机动力，[r]根本没必要紧贴着那棵树保护它。
+[k]
+
+[charaFace E 4]
+
+＠阿斯克勒庇俄斯
+尤其是……现在[#那片海洋]已经扩展开来了。[r]除他以外无人能够接近。
+[k]
+
+[charaFace E 0]
+
+＠阿斯克勒庇俄斯
+说到底，平时的他只是[r]『因为没什么行动的必要才会逗留原地』而已。
+[k]
+
+＠阿斯克勒庇俄斯
+这等同于『只要有必要就会采取行动』。
+[k]
+
+[charaFace E 5]
+
+＠阿斯克勒庇俄斯
+……不过这次只是因为我听从了他事先的要求而已。[r]也就是一旦发现了你们，就立刻向他报告。
+[k]
+
+＠阿斯克勒庇俄斯
+看来他很难得地产生了兴趣。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.8]
+
+？1：（逃不掉了……！）
+？2：（被前后夹击了……！）
+？！
+
+＠身为神的阿周那
+…………
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠拉克什米
+你就是……这世界上唯一的神吗。[r]吸收了所有神性的[line 3]！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠身为神的阿周那
+…………？[r]你也是……神……吗……但是……很弱小……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠拉克什米
+……闭嘴。[r]别用不属于自身的神性来衡量我，曾为天赐英雄之人啊！
+[k]
+
+＠拉克什米
+就让我来谴责你的傲慢不逊吧。[r]速速解放[line 3]你体内的神吧！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠罗摩
+所言甚是。你拥有与这世界的悉多相关的神性吧。[r]余是不会放过你的！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk I]
+[charaFace I 31]
+[charaFadein I 0.1 1]
+
+＠达·芬奇
+现在能不能先放过人家呢！[r]我不是说你们现在还没有胜算吗～！？
+[k]
+
+[charaFace I 2]
+
+＠达·芬奇
+我都已经下达逃离的指示了，听见了吗！？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠佩佩隆奇诺
+当然听见了啊！　但是呢！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠玛修
+从状况来看，战斗似乎已经无法避免了……！
+[k]
+
+？1：想办法……撑过去！
+？2：看准时机……逃离！
+？！
+
+[charaFace A 7]
+
+＠玛修
+是，御主！[r]不能在这种地方结束……请指示！
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

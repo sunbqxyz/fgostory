@@ -1,0 +1,987 @@
+＄01-00-08-01-1-1
+
+
+[charaSet A 98017000 1 魔神柱]
+[charaSet B 98017000 1 魔神柱剪影]
+[charaSet C 8001002 1 玛修]
+[charaSet D 98003003 1 Dr.罗曼]
+[charaSet E 5009003 1 达·芬奇]
+[charaSet F 9001001 1 贞德]
+[charaSet G 5009000 1 通讯杂音]
+
+[soundStopAll]
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 36001]
+
+
+[charaTalk A]
+[charaDepth A 1]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaTalk off]
+
+[fadein black 1.0]
+[wait fade]
+
+[se bac10]
+[charaShake A 0.06 3 3 1.0]
+[effect bit_talk_13]
+
+[wt 0.3]
+
+[se bac10]
+[charaShake A 0.06 3 3 1.0]
+[effect bit_talk_13 200,100]
+
+[wt 0.3]
+
+[se bac10]
+[charaShake A 0.06 3 3 1.0]
+[effect bit_talk_13 -100,150]
+
+[wt 0.3]
+
+
+[shake 0.05 7 7 0]
+[charaSpecialEffect A enemyErasure]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[wt 0.7]
+[se ba6]
+[flashOff]
+[wait charaSpecialEffect A]
+[charaFadeout A 0.1]
+[shakeStop]
+[wt 0.8]
+
+[wt 0.4]
+[seLoop ad14]
+[se ad63]
+[charaSpecialEffect A appearance]
+[wt 0.3]
+[flashin loop 0.2 0.2 FFFFFFFF FFFFFF00]
+[wt 1.3]
+[flashOff]
+[wait charaSpecialEffect A]
+
+
+[seStop ad14 1.0]
+[charaTalk on]
+
+[seLoop ad14]
+[seVolume ad14 0 0.5]
+
+[charaTalk A]
+＠A：魔神佛劳洛斯
+没用。做什么都没有用！[r]哈哈哈。哈哈哈哈。哈哈哈哈哈哈哈哈哈哈哈哈！
+[k]
+
+
+[charaFadeout A 0.1]
+[seStop ad14 0.2]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 15]
+[charaDepth C 2]
+[charaFadein C 0.1 1]
+＠玛修
+怎么可能……！　魔神柱再度出现！[r]既不是复原，也不是恢复！
+[k]
+
+＠玛修
+刚才，新的佛劳洛斯诞生了……！
+[k]
+
+
+？1：难道没完没了吗……！？
+？2：难道这地面全是[line 3]
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0 0,-151]
+
+[se bac36]
+[charaShake D 0.05 4 4 1.0]
+[charaShake G 0.05 4 4 1.0]
+＠Dr.罗曼
+哇啊啊，发生了什么！？[r]刚才的冲击是怎么回事！？
+[k]
+[wt 0.4]
+
+[charaFadeout D 0.1]
+[wt 0.2]
+[charaFadein D 0.1 0,-151]
+[wt 0.2]
+[charaFadeout D 0.1]
+[wt 0.2]
+[charaFadein D 0.1 0,-151]
+＠工作人员A
+是来自外部的冲击！[r]第二攻性理论受损率超过60％！
+[k]
+
+[seLoop ad14]
+
+[se bac59]
+[charaShake D 0.05 7 7 2.0]
+[charaShake G 0.05 7 7 2.0]
+＠工作人员B
+北部观测室沦陷！[charaFadeout D 0][r]天文台屋顶确认过度压力！
+[k]
+
+[wt 0.1]
+
+[charaShake D 0.05 2 2 0]
+[charaShake G 0.05 2 2 0]
+[charaShake E 0.05 2 2 0]
+＠工作人员B
+距崩溃还有五分钟……！[r]如果屋顶被破坏了，就无法维持管制室的不在证明了！
+[k]
+
+[charaFadein D 0 0,-151]
+＠工作人员B
+迦勒底陷入泡沫状态，[charaFadeout D 0][r]被时间神殿吸收了！[charaFadein D 0 0,-151]
+[k]
+
+＠工作人员Ｃ
+拟似灵子演算精度，脱离可感知领域！[charaFadeout D 0][r]攻性理论强度正在降低！[charaFadein D 0 0,-151]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.2]
+[charaFadein D 0.1 0,-151]
+[wt 0.2]
+[charaFace D 5]
+＠Dr.罗曼
+将除中央以外的馆内电力供给全部切断！[r]将炉心的电力全部提供给攻性理论与迦勒底亚斯使用！
+[k]
+
+＠Dr.罗曼
+无论如何都要保住管制室！[r]莱昂纳多，你工房里囤积的资源怎么样了！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 0,-90]
+＠达·芬奇
+正转给灵子演算用的超级计算机，[r]那边就用我的私房钱想办法解决吧！
+[k]
+
+[charaFace E 2]
+＠达·芬奇
+但这不过是杯水车薪啊罗玛尼！[charaFadeout E 0.1][r]袭击迦勒底的可是魔神柱！[charaFadein E 0.1 0,-90]
+[k]
+
+[charaFadein E 0.1 0,-90]
+＠达·芬奇
+六、七、八[line 3]有八柱魔神柱[r]正在从外部缠绕着迦勒底！
+[k]
+
+[charaFace E 5]
+＠达·芬奇
+虽然我可以出去处理，[charaFadeout E 0.1][r]但就算抱着同归于尽的决心，也不知道是否能解决一柱啊！[charaFadein E 0.1 0,-90]
+[k]
+
+[charaFace E 2]
+＠达·芬奇
+完全无法解决根本性问题！[r]只能在迦勒底崩溃前，彻底消除特异点了！
+[k]
+
+[messageOff]
+
+[seStop ad14 0.2]
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10]
+[wt 0.3]
+
+[charaShakeStop D]
+[charaShakeStop G]
+[charaShakeStop E]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[seLoop ad14]
+[seVolume ad14 0 0.5]
+＠A：魔神佛劳洛斯
+[messageShake 0.05 2 2 1.0]
+哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈！[r]这是不可能的，不可能的啊，诸位！
+[k]
+
+＠A：魔神佛劳洛斯
+我乃不死之身。吾等无穷无尽。[r]因为这空间的一切都是我们啊！
+[k]
+
+＠A：魔神佛劳洛斯
+显现吧，显现吧[line 3][r]同胞们啊，好好展现你们的身姿吧！
+[k]
+
+[seStop ad14 0.2]
+[wt 0.3]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[seLoop ad14]
+[shake 0.05 2 2 1.0]
+[scene 12000 2.0]
+
+[se ad63]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[wt 0.7]
+[flashOff]
+[wt 0.4]
+
+[wt 2.0]
+
+＠玛修
+又是魔神柱吗[line 3][r]不，这是[line 3]
+[k]
+
+
+[messageOff]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.7 1]
+
+[scene 36001 1.0]
+[shakeStop]
+[seStop ad14 0.1]
+[wt 0.4]
+
+[seLoop ad14]
+[seVolume ad14 0 0.5]
+
+[charaTalk A]
+＠A：魔神佛劳洛斯
+没错，吾等就是七十二柱魔神！！
+[k]
+
+＠A：魔神佛劳洛斯
+把我杀了？　那又意味着什么。[r]吾等始终是七十二柱魔神。
+[k]
+
+＠A：魔神佛劳洛斯
+只要这大地、玉座尚存，[r]吾等就绝不会毁灭！
+[k]
+
+＠A：魔神佛劳洛斯
+若想杀了我，[r]就得先把我们七十二个同胞全部杀光才行！
+[k]
+
+＠A：魔神佛劳洛斯
+但你们何来如此火力与军势？[r]这片大地上已然没有这种存在了！
+[k]
+
+＠A：魔神佛劳洛斯
+你们并没有将我们逼入绝路。[r]而是自己主动跳入了必死的坟墓啊！
+[k]
+
+＠A：魔神佛劳洛斯
+哈哈哈，这就是所谓的飞蛾扑火吧！[r]还真是辛苦你们意气风发地冲进来呢！
+[k]
+
+[charaFadeout A 0.1]
+[seStop ad14 0.2]
+[wt 0.3]
+
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+＠玛修
+无法与迦勒底取得联系……！[r]御主，该怎么办……！
+[k]
+
+？1：…………不。
+？2：…………不！
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[seLoop ad14]
+[seVolume ad14 0 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠A：魔神佛劳洛斯
+我错估你们了！[r]没想到你们居然还有狠狠瞪[#敌人:我]的精神！
+[k]
+
+＠A：魔神佛劳洛斯
+但已经够了，我非常理解你们的坚持不懈！[r]但这种方法能行得通的日子已经过去了！
+[k]
+
+＠A：魔神佛劳洛斯
+最后的御主，[r]最后的人类，[%1]啊。
+[k]
+
+＠A：魔神佛劳洛斯
+我们要由衷向你表示感谢！[r]因为你带给了我们最棒的乐趣！
+[k]
+
+＠A：魔神佛劳洛斯
+对第一特异点的反抗一笑了之。[r]对第二特异点的热情一笑了之。
+[k]
+
+＠A：魔神佛劳洛斯
+对第三特异点的冒险一笑了之。[r]对第四特异点的探求一笑了之！
+[k]
+
+＠A：魔神佛劳洛斯
+对第五特异点的进军一笑了之！[r]对第六特异点的生存一笑了之！
+[k]
+
+＠A：魔神佛劳洛斯
+然后对第七特异点[line 3][r]啊啊，这倒不怎么令人愉快呢。
+[k]
+
+＠A：魔神佛劳洛斯
+那是场一点都不可笑的三流杂耍。[r]还是把第七的事给忘了吧。
+[k]
+
+＠A：魔神佛劳洛斯
+总之，你的战斗实在令人愉快！[r]尤其是毫无意义这一点！
+[k]
+
+＠A：魔神佛劳洛斯
+战斗至此的这份徒劳！[r]如此拼命战斗，却依然无果而终的这份悲惨！
+[k]
+
+＠A：魔神佛劳洛斯
+我们对此给与了很高的评价！[r]谢谢啦，以及再见了！
+[k]
+
+＠A：魔神佛劳洛斯
+连同迦勒底一起，在这里结束这趟旅程吧！[r]哈哈，哈哈哈，
+[k]
+
+＠A：魔神佛劳洛斯
+[messageShake 0.05 3 3 1.0]
+[fontSize large]哈哈哈哈哈哈哈哈哈哈哈哈哈哈！
+[k]
+
+[seStop ad14 0.2]
+[wt 0.3]
+
+[charaFadeout A 0.7]
+[seStop ad14 2.0]
+
+[se bac78]
+[flashin loop 0.1 0.1 D72727FF FFFFFF00]
+[charaFilter B silhouette 00000080]
+[wt 0.5]
+[flashOff]
+
+[flashin once 0.5 20000 D72727FF FF000000]
+[wt 0.5]
+
+＠玛修
+前辈……！
+[k]
+
+
+？1：玛修……！
+？2：唔唔唔……！
+
+？！
+
+[messageOff]
+
+[bgmStop BGM_EVENT_24 3.0]
+[fadeout black 3.0]
+[wait fade]
+
+[flashOff]
+
+[charaSet H 98017000 1 魔神柱]
+[charaSet B 98017000 1 魔神柱]
+
+[wt 3.0]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+
+？1：…………
+
+？！
+
+？1：…………………………
+
+？！
+
+？1：…………果然…………
+
+？！
+
+？1：…………还是不行吗…………
+
+？！
+
+＠？？？
+不。将其称之为毫无意义才是真正的笑话。[r]以你来说，放弃得是不是太快了？
+[k]
+
+[messageOff]
+
+[voice NP_900100_4]
+
+[scene 10001 4.0]
+[wait voice NP_900100_4]
+
+[bgm BGM_EVENT_42 2.0]
+
+＠？？？
+你的战斗是一场回溯人类史的漫长旅途。[r]但你们应该从未对此感到悲观过。
+[k]
+
+＠？？？
+因为，无数的邂逅在等待着你。
+[k]
+
+＠？？？
+哪怕这颗星辰上的一切都化为圣杯战争的战场。
+[k]
+
+＠？？？
+哪怕这片大地上的一切都化为早已失落的废墟。
+[k]
+
+＠？？？
+哪怕道路尽头有无数强敌林立。
+[k]
+
+＠？？？
+你也从未放弃。[r]凝视着天空，表示决不将结局交由他人之手。
+[k]
+
+＠？？？
+现在这一切仍未改变。[r]来吧[line 3]开始战斗吧，御主。
+[k]
+
+＠？？？
+这就是，你和我们的，[r]夺回未来的故事吧？
+[k]
+
+[messageOff]
+
+[scene 36001 2.0]
+
+
+[wt 2.0]
+
+[charaTalk off]
+
+
+[charaFace A 0]
+[charaFace H 0]
+[charaFace B 0]
+
+[charaDepth A 1]
+[charaDepth H 2]
+[charaDepth B 3]
+
+[charaFadein H 0.7 4]
+[wt 1.0]
+
+[shake 0.05 7 7 0]
+[se ba6]
+[charaSpecialEffect H enemyErasure]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[wt 0.7]
+[flashOff]
+
+[wait charaSpecialEffect H]
+[charaFadeout H 0.1]
+[shakeStop]
+[wt 0.8]
+
+[charaFadein B 0.4 6]
+[wt 0.3]
+
+[shake 0.05 7 7 0]
+[se ba6]
+[charaSpecialEffect B enemyErasure]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[wt 0.7]
+[flashOff]
+
+[wait charaSpecialEffect B]
+[charaFadeout B 0.1]
+[shakeStop]
+[wt 0.8]
+[charaTalk on]
+
+[charaFadein A 0.4 1]
+[wt 0.3]
+
+[charaTalk A]
+＠A：魔神佛劳洛斯
+[messageShake 0.05 2 2 1.0]
+咕啊啊啊啊[line 3]！？[r]什么，刚才那是什么！？
+[k]
+
+＠A：魔神佛劳洛斯
+为什么[%1]没有消失！？[r]为什么迦勒底还残存于此！？
+[k]
+
+＠A：魔神佛劳洛斯
+为什么[line 3][r]为什么吾等的身体开始崩溃[line 3]！？
+[k]
+
+[messageOff]
+
+[shake 0.05 7 7 0]
+[se ba6]
+[charaSpecialEffect A enemyErasure]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[wt 0.7]
+[flashOff]
+[wait charaSpecialEffect A]
+[charaFadeout A 0.1]
+[shakeStop]
+[wt 0.8]
+
+
+[charaPut G 1]
+[charaEffect G bit_talk_10]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0 0,-151]
+＠Dr.罗曼
+魔神柱，八柱全部消灭！[r]成功了，不愧是达·芬奇亲啊！　太厉害了！
+[k]
+
+＠Dr.罗曼
+不过到底是用了什么杀手锏啊！
+[k]
+
+[charaFace D 1]
+＠Dr.罗曼
+如果有这么危险的秘密武器，[r]真希望你能向我报告一下啊！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 0,-90]
+＠达·芬奇
+不。刚才那不是我干的。[r]刚才那是[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10]
+
+[messageOff]
+
+[wt 0.3]
+
+？1：嗯，刚才那是[line 3]！
+
+？！
+
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+[scene 36301]
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+＠？？？
+灵长之世确定以来，已然繁荣了数千年。
+[k]
+
+＠？？？
+神代终结，[r]经历了公历的人类成了地上最繁荣的物种。
+[k]
+
+＠？？？
+吾等乃是决定星辰未来，在星辰上刻下碑文的存在。
+[k]
+
+＠？？？
+为此，我们孕育了诸多知识，[r]创造了诸多资源，流转了诸多生命。
+[k]
+
+＠？？？
+令人类更为长久、更为坚定、更为强盛繁荣之理[r][line 3]人类的航海图。
+[k]
+
+＠？？？
+这在魔术世界中，被称为人理。[r]他们迦勒底将其视为至高使命，一直努力守护着。
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+[scene 36001]
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0 0,-151]
+＠Dr.罗曼
+……这是在做梦？　还是测量器出故障了？[r]特异点各地陆续启动了召唤术式！
+[k]
+
+＠Dr.罗曼
+没有触媒也没有召唤者，自发启动了！[r]仅凭借一度结下的缘分之细线！
+[k]
+
+＠Dr.罗曼
+灵基反应十、二十、三十[line 3]还在增加！[r][%1]，这是！
+[k]
+
+
+？1：啊啊，那面旗帜是！
+？2：大家都来了啊……！
+
+？！
+
+[messageOff]
+
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10]
+[wt 0.7]
+
+[scene 36300]
+
+[charaSet A 9938300 1 魔神概布]
+[charaSet B 9938600 1 魔神巴力]
+[charaSet H 9938800 1 魔神欧赛]
+
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+
+
+[charaTalk off]
+
+[charaFace B 0]
+[charaDepth B 1]
+[charaFadein B 0.7 6]
+[seLoop ad14]
+[seVolume ad14 0 0.5]
+＠魔神巴力
+东部末端神经，燃烧。[r]敌方从者，仍在增加。
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.7]
+[seStop ad14 0.2]
+[wt 1.0]
+
+[charaFace A 0]
+[charaDepth A 2]
+[charaFadein A 0.7 4]
+[seLoop ad14]
+[seVolume ad14 0 0.5]
+＠魔神概布
+西部自律神经，损坏。[r]敌方从者，确认为二十四骑。
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.7]
+[seStop ad14 0.2]
+[wt 1.0]
+
+[charaFace H 0]
+[charaDepth H 3]
+[charaFadein H 0.7 1]
+[seLoop ad14]
+[seVolume ad14 0 0.5]
+＠魔神欧赛
+[line 3]不值一提。[r]无论聚集多少，也不过是人类的延伸。
+[k]
+
+＠魔神欧赛
+不是我们这样的群体。[r]而是只能单独生存，单独战斗的存在。
+[k]
+
+＠魔神欧赛
+歼灭。扫荡。排除。[r]区区从者根本不是我们的对手。
+[k]
+
+＠魔神欧赛
+会导致吾等七十二柱魔神失败的原因[line 3]
+[k]
+
+[messageOff]
+
+[charaFadeout H 0.7]
+[seStop ad14 0.2]
+[wt 1.0]
+
+[charaFace B 0]
+[charaDepth B 1]
+[charaFadein B 0.7 6]
+[seLoop ad14]
+[seVolume ad14 0 0.5]
+＠魔神巴力
+[line 3]东部末端神经，消灭。[r]第一至第八柱，无法维持正常值。
+[k]
+
+[shake 0.05 7 7 0]
+[charaSpecialEffect B enemyErasure]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[se ba6]
+[wt 0.7]
+[flashOff]
+[wait charaSpecialEffect B]
+[charaFadeout B 0.1]
+[shakeStop]
+[wt 0.8]
+
+[charaSet B 98020000 1 魔神劳姆]
+
+[charaFace A 0]
+[charaDepth A 2]
+[charaFadein A 0.7 4]
+[seLoop ad14]
+[seVolume ad14 0 0.5]
+＠魔神概布
+西部自律神经，消灭。[r]第二十六至第三十三柱，无法维持正常值。
+[k]
+
+[shake 0.05 7 7 0]
+[charaSpecialEffect A enemyErasure]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[se ba6]
+[wt 0.7]
+[flashOff]
+[wait charaSpecialEffect A]
+[charaFadeout A 0.1]
+[shakeStop]
+[wt 0.8]
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.7 1]
+[seLoop ad14]
+[seVolume ad14 0 0.5]
+＠魔神劳姆
+……左右基底骨廓，损坏。[r]我，提议离开这片宙域。
+[k]
+
+[shake 0.05 7 7 0]
+[charaSpecialEffect B enemyErasure]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[se ba6]
+[wt 0.7]
+[flashOff]
+[wait charaSpecialEffect B]
+[charaFadeout B 0.1]
+[shakeStop]
+[wt 0.3]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.7 1]
+[seLoop ad14]
+[seVolume ad14 0 0.5]
+＠魔神欧赛
+这是怎么回事。[r]为什么吾等会被压制？
+[k]
+
+＠魔神欧赛
+为什么拒绝相互理解的人类[r]会互相合作[line 3]！
+[k]
+
+[messageOff]
+
+[seStop ad14 0.2]
+
+[wipeout rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[charaFadeout H 0.1]
+[seStop ad14 0.2]
+[wt 0.7]
+
+[scene 36301]
+
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+＠？？？
+……对。[r]我们确实是被私欲束缚的生命。
+[k]
+
+＠？？？
+即便成了英灵也未曾改变。[r]不，正因为是英灵，才不会扭曲自己的信念。
+[k]
+
+＠？？？
+但是[line 3][r]却还有相信着我们的人类。
+[k]
+
+＠？？？
+哪怕见证了众多英灵、众多纷争，[r]却依然坚信我们就是[#英雄]。
+[k]
+
+＠？？？
+若不能回应这份信赖，回应这种呼声，谈何英灵！
+[k]
+
+＠？？？
+主啊。请容许我再次为了救国[line 3][r]不，是为了救世，而挥舞这面旗帜吧。
+[k]
+
+[messageOff]
+
+
+[se ad60]
+[wt 0.7]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.7 1]
+[seStop ad60 0.5]
+[wt 1.0]
+＠贞德
+听着，聚集于这个领域中的一骑当千，[r]万夫不当的英灵们啊！
+[k]
+
+＠贞德
+哪怕本为无法相容的敌人，哪怕本为没有交集的不同时代之人，[r]现在也请互相把后背托付给对方吧！
+[k]
+
+＠贞德
+不是为了阻止人理烧却，[r]而是为吾等的契约者开辟前行的道路！
+[k]
+
+＠贞德
+我的真名乃是贞德！[r]在主的名义下，化为各位的坚实之盾！
+[k]
+
+[messageOff]
+
+[se ad16]
+[wt 2.0]
+[seStop ad16 1.0]
+
+
+[wt 1.0]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+
+[wt 0.4]
+
+[scene 36001]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠玛修
+那是……[r]从天空中划过的无数流星是[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0 0,-151]
+＠Dr.罗曼
+啊啊，是从者！[r]好厉害，陆续到来了！
+[k]
+
+＠Dr.罗曼
+我也无法说明理由！
+[k]
+
+＠Dr.罗曼
+难道这个特异点处于时间之外这点反倒成了进入的捷径吗？[r]不，这些都无关紧要啦！
+[k]
+
+[charaFace D 0]
+＠Dr.罗曼
+曾经与你们相识的[#英灵:存在]，[r]曾经与你们对战的英灵[line 3]
+[k]
+
+＠Dr.罗曼
+其中有一些想必觉得“不妨帮他们一下吧”！
+[k]
+
+＠Dr.罗曼
+所以他们才在[%1]遇到危机的时候赶来了！
+[k]
+
+[charaFace D 5]
+＠Dr.罗曼
+总而言之，这是千载难逢的好机会。
+[k]
+
+＠Dr.罗曼
+在从者们的攻击下，[r]魔神们目前无法自由行动！
+[k]
+
+＠Dr.罗曼
+“七十二柱的魔神”全部处于战斗中。[r]现在应该能消灭他们了！
+[k]
+
+＠Dr.罗曼
+打开通往中央的道路吧，[%1]！[r]剩下的时间不多了！
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_42 2.0]
+[wait fade]
+[soundStopAll]
+[end]

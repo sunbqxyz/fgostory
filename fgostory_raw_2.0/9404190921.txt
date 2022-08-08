@@ -1,0 +1,370 @@
+
+＄94-04-19-09-2-1
+
+[soundStopAll]
+
+
+[charaSet A 7002001 1 兰斯洛特]
+[charaSet B 11009001 1 S伊什塔尔]
+[charaSet C 2037000 1 简]
+[charaSet D 6018002 1 X]
+[charaSet J 5009000 1 特效用]
+
+[scene 83501]
+
+[charaTalk A]
+[charaFace A 2]
+[charaScale A 0.83]
+[charaFadein A 0 128,-98]
+[charaShake A 0.06 6 2 0.7]
+[cameraMove 0 0,0 1.2]
+[charaPut J 1]
+[charaEffect J bit_talk_security]
+[wt 0.3]
+[bgm BGM_EVENT_3 0.1]
+[fadein black 0.2]
+[wait fade]
+
+[wt 0.3]
+
+＠A：谜之失控剑士
+G[shake 0.07 5 5 0.4][cameraMove 0.2 64,0 1.2][charaMove A -256,-50 0.2]aaaaaaaaaaaaaaaaaaa！！！！[wt 0.1][charaFadeout A 0.1]
+[k]
+
+[messageOff]
+[fadeout black 0.1]
+[wait fade]
+[charaPut J 1200,1200]
+[charaScale A 1.0]
+[cameraHome 0.1]
+[scene 83403]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.1]
+[fadein black 0.1]
+[wait fade]
+
+＠S伊什塔尔
+好！　把他弹飞了！[r]简，趁现在全速前进！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠简
+明白了！
+[k]
+
+[messageOff]
+[fadeout black 0.2]
+[wait fade]
+[charaFadeout C 0]
+[scene 83602]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[charaPut J 1]
+[fadein black 0.2]
+[wait fade]
+
+[se ade386]
+
+＠谜之失控剑士
+aaaaaaaaaaa！！
+[k]
+
+[messageOff]
+[fadeout black 0.2]
+[seStop ade386 0.5]
+[wait fade]
+[charaPut J 1200,1200]
+[charaFadeout A 0]
+[scene 83403]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0 1]
+[fadein black 0.2]
+[wait fade]
+
+＠简
+又开始射击了！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+他还想打吗！？[r]太缠人了！
+[k]
+
+[messageOff]
+[seStop ad9 0.5]
+[shake 0.05 7 5 0.9]
+[cueSe Battle bac70]
+[wt 1.0]
+
+[charaFace B 7]
+
+＠S伊什塔尔
+！！[r]被打坏了？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠简
+没关系！　被防护罩弹开了！[r]但是，又一波来了！
+[k]
+
+[messageOff]
+[seStop ad9 0.5]
+[shake 0.05 7 5 0.9]
+[cueSe Battle bac70]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 32]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+呀啊！[r]能不能适可而止啊！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠X
+啊啊，真是的，我再也忍不下去了！[r]我上一趟甲板！
+[k]
+
+＠X
+啊，各位留在原地别动！[r]也不要监听我们的对话，拜托了！
+[k]
+
+[messageOff]
+[charaFadeout D 0.4]
+[wt 0.5]
+
+[se ade354]
+[seVolume ade354 0 0.6]
+[wt 0.8]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_3 1.0 0.4]
+[wait fade]
+[scene 83501]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-50]
+[wt 0.7]
+[wipeFilter cinema 0.5 0]
+[fadein black 1.0]
+[bgm BGM_EVENT_3 1.0 1.0]
+[wait fade]
+
+＠谜之失控剑士
+[f medium][messageShake 0.07 7 5 0.6]Aaaaaaaaaaaaaaaa！[r]Ho[line 6]↑↑↑↑↑↑↑↑！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_3 3.0]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,-50]
+
+＠X
+Ho[line 4]！　你个头啦！[r]我还当是谁呢，这不是兰斯洛特嘛！
+[k]
+
+＠X
+本以为你和小艾单挑打输了之后，[r]就被扔进宇宙空间了呢，
+[k]
+
+＠X
+居然在这种地方干类似暴走族流氓的事……[r]你不是有可以回的家嘛！　你这好吃懒做的！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠兰斯洛特
+A……[r]ArrrrrrrThurrrrrrrr！？
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaFace A 4]
+
+＠兰斯洛特
+啊。不，不对，你认错人了。[r]你说的是谁啊，湖上骑士听起来像是最强的称号吧。
+[k]
+
+＠兰斯洛特
+我是失去了记忆，在各地彷徨过程中，[r]被太空神阴流招揽的普通暗黑骑士。
+[k]
+
+[charaFace A 3]
+
+＠兰斯洛特
+这还是我第一次见到你，讨厌啦，哈哈哈。[r][line 3]就当是这样好吗？
+[k]
+
+[charaFace A 1]
+
+＠兰斯洛特
+那我先告辞了哈。差不多该回老家了。[r]我有个处于青春期性格比较复杂的儿子嘛，哈哈哈哈……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[se ad73]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_7 2.0]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,-50]
+
+＠X
+好啦，再见！[r]真是的，圆桌的人到底在干些什么啊！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout D 0.1]
+[scene 83400]
+[wt 0.5]
+[wipeOff]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠简
+啊！　距离拉开了……[r]甩掉了！
+[k]
+
+？1：得……得救了！？
+？2：我还以为这下要完了。
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 29]
+[charaFadein B 0.1 1]
+
+＠S伊什塔尔
+唉[line 4][r]没事吧，[%1]？
+[k]
+
+[charaFace B 10]
+
+＠S伊什塔尔
+刚才我也吓出了一身冷汗。该怎么说呢，[r]那个黑色家伙背后透出一股凌厉的杀气。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[se ade354]
+[seVolume ade354 0 0.6]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠X
+我回来啦。那个给人添麻烦的家伙[r]不会再攻击我们了，放心……咦？
+[k]
+
+＠X
+感觉前进速度越来越慢了？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠简
+嗯。最后那一击正好命中了关键位置。
+[k]
+
+[bgm BGM_EVENT_27 0.1]
+
+[charaFace C 8]
+
+＠简
+引擎停止运作啦♡
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace B 2]
+[charaFadein B 0.1 0]
+[charaFace D 2]
+[charaFadein D 0.1 2]
+
+＠S伊什塔尔＆X
+哎[line 3]
+[k]
+
+？1：哎哎[line 6]！？
+
+？！
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_27 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

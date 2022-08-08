@@ -1,0 +1,1668 @@
+
+＄94-05-71-12-4-0
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet O 98108900 1 东京男性]
+[charaSet D 1098154710 1 海盗市场兵]
+[charaSet R 98109000 1 莫西干]
+
+
+[scene 114000]
+[fadein black 2.0]
+[wait fade]
+
+[effect bit_talk_liquor_communication04]
+[se ad928]
+[seVolume ad928 0 0.6]
+[wt 3.5]
+[effectStop bit_talk_liquor_communication04]
+[seStop ad928 2.8]
+[wt 2.5]
+[se adm20]
+[wt 4.0]
+
+[bgm BGM_EVENT_1 0.1]
+
+＠刚买的人偶
+感谢你接纳我！　现在准备回家吗？[r]是个什么样的家呢，真令人期待！
+[k]
+
+[charaTalk O]
+[charaFace O 2]
+[charaFadein O 0.1 1]
+
+＠市民
+啊啊……啊啊！　说话了，会说话了！[r]不枉我一直打工存钱啊！
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.7 1.0]
+[bgm BGM_EVENT_1 0.7 0.5]
+[wait wipe]
+
+[charaFadeout O 0.1]
+
+[scene 114400]
+[wt 1.0]
+
+[wipein rightToLeft 0.7 1.0]
+[bgm BGM_EVENT_1 0.7 1.0]
+[wait wipe]
+
+[effect bit_talk_liquor_communication04]
+[se ad928]
+[seVolume ad928 0 0.6]
+[wt 3.5]
+[effectStop bit_talk_liquor_communication04]
+[seStop ad928 2.8]
+[wt 2.5]
+[se adm20]
+[wt 4.0]
+
+＠人偶
+嘿嘿，谢谢你一直那么珍惜我！[r]多亏了你，我才能一直保持帅气哦！
+[k]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠市民
+那……那当然啦！？　你是最强的！[r]今后我也会永远珍惜你。永远，永远！
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.7 1.0]
+[bgm BGM_EVENT_1 0.7 0.5]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[scene 114200]
+[wt 1.0]
+
+[wipein rightToLeft 0.7 1.0]
+[bgm BGM_EVENT_1 0.7 1.0]
+[wait wipe]
+
+＠超合金
+我很高兴能从你年幼时就一直陪伴着你。[r]谢谢你。你长大了呢。
+[k]
+
+[charaTalk R]
+[charaFace R 1]
+[charaFadein R 0.1 1]
+
+＠市民
+呜，呜噢噢噢！　抱歉！　对不起！[r]我原本不想留你了，但还是不行！
+[k]
+
+[charaFace R 0]
+＠市民
+你已经是我的家人了！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_1 1.0]
+[wait fade]
+
+[charaFadeout R 0.1]
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[charaSet A 98001000 1 玛修]
+[charaSet B 1098124510 1 达·芬奇]
+[branch lblConf]
+
+[label lblNotClear]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98111500 1 达·芬奇]
+[label lblConf]
+
+[charaSet C 1005001 1 尼禄]
+[charaSet D 3043000 1 绘里濑]
+[charaSet E 6031001 1 刑部姬]
+[charaSet F 7039001 1 伽拉忒亚]
+[charaSet G 7039002 1 造形王]
+[charaSet L 5001001 1 美狄亚]
+[charaSet N 1006001 1 秋叶尼禄]
+
+[imageSet M back10000 1]
+[charaScale M 1.01]
+
+[charaSet I 98115000 1 通讯用]
+[charaSet J 1001000 1 特效用]
+[charaSet K 1001000 1 特效用]
+
+[charaEffect I bit_talk_10_LowLevel]
+[charaPut I 1200,1200]
+
+[scene 114300]
+[wt 1.0]
+
+[fadein black 0.7]
+[wait fade]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+[bgm BGM_EVENT_95 0.1]
+
+＠造形王
+啊啊，力量……为皮格马利翁王准备的……爱……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠伽拉忒亚
+[#我:你]应该早就明白了。[r]用从他人那里搜集来的爱提升是毫无意义的。
+[k]
+
+[charaFace F 2]
+
+＠伽拉忒亚
+寻求皮格马利翁王的我的真实之爱[line 3][r]只能从我的内侧雕刻出来！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+[wt 0.1]
+
+[charaEffect J bit_talk_Slash_white_01_L]
+[se ad682]
+[wt 0.2]
+[charaShake G 0.03 4 4 0.3]
+[wt 0.5]
+
+＠造形王
+啊……啊啊……
+[k]
+
+[messageOff]
+[charaFadeout G 0.4]
+[charaMove G 0,-50 0.5]
+[wt 0.5]
+[se ad144]
+[wt 1.0]
+
+[charaScale J 1.0]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛修
+成功了！　确认造形王的灵核损伤[line 3][r]动作停止！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 26]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+好嘞～，确认对人偶之爱能量顺利分散。[r]已经不会发生爆炸了！
+[k]
+
+[charaFace B 25]
+
+＠达·芬奇
+造形王也……哪怕是圣杯制的，[r]只要形态是从者，
+[k]
+
+＠达·芬奇
+灵核一碎也就完了。[r]最后应该可以回收为普通的圣杯。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[branch lblConf1]
+
+[label lblNotClear1]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-90]
+
+＠达·芬奇
+好嘞～，确认对人偶之爱能量顺利分散。[r]已经不会发生爆炸了！
+[k]
+
+[charaFace B 0]
+
+＠达·芬奇
+造形王也……哪怕是圣杯制的，[r]只要形态是从者，
+[k]
+
+＠达·芬奇
+灵核一碎也就完了。[r]最后应该可以回收为普通的圣杯。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[label lblConf1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+[charaEffect J bit_talk_06]
+[wt 1.5]
+
+＠造形王
+我，错了吗？
+[k]
+
+[charaFadeout G 0.1]
+[charaPut J 1200,1200]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠伽拉忒亚
+是的。由于过于渴望见到皮格马利翁王，[r]以至于搞错了宝贵东西的顺序。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠造形王
+但你不需要………[r]露出悲伤的表情吧？
+[k]
+
+[charaFadeout G 0.1]
+[charaPut J 1200,1200]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠伽拉忒亚
+不。你就是我。也就是说，[r]我也有可能犯错。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠造形王
+说得对。但是……这样的话，[r]同样也可以说，我们应该都发现了。
+[k]
+
+＠造形王
+我们真正需要的，只有，[r]怀着爱雕刻而已。
+[k]
+
+[charaFadeout G 0.1]
+[charaPut J 1200,1200]
+[wt 0.1]
+
+[charaEffectStop J bit_talk_06]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠伽拉忒亚
+是的。这是个重大的发现。[r]是绝对不能忘记的事。
+[k]
+
+＠伽拉忒亚
+因为这会是证明。
+[k]
+
+＠伽拉忒亚
+证明因被人所爱而诞生的雕像中[line 3][r]也会萌生真实的爱。
+[k]
+
+＠伽拉忒亚
+这就是我这个雕刻家必须不断追求的主题。[r]必须不断雕琢、不断追求完成的题材……
+[k]
+
+[charaFace F 4]
+
+＠伽拉忒亚
+我可以将这种发现……带回座吧。
+[k]
+
+[charaFace F 1]
+
+＠伽拉忒亚
+不。或许不是全部……
+[k]
+
+＠伽拉忒亚
+但肯定会存在[r]重新雕刻我这[#雕像:人类]的存在。
+[k]
+
+＠伽拉忒亚
+因为，已经有两人份的记录了。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_95 1.0]
+[charaPut J 0,0]
+[charaEffect J bit_talk_06]
+[wt 2.5]
+
+[charaFadeout F 0.1]
+[charaPut J 1200,1200]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+[bgm BGM_EVENT_6 0.1]
+
+＠刑部姬
+哎，伽拉忒亚亲也要走了吗！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠伽拉忒亚
+因为我原本就已经是即将损坏的拼凑品了。[r]必然会这样。
+[k]
+
+＠伽拉忒亚
+不用感到悲伤。
+[k]
+
+＠伽拉忒亚
+多亏了大家的协助，[r]我才想起了自己重要的东西。
+[k]
+
+＠伽拉忒亚
+我心中充满了对大家的感谢。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth G 8]
+[charaDepth F 9]
+[charaTalk G]
+[charaFace G 0]
+[charaFadeinFSL G 0.1 0]
+[charaFace F 0]
+[charaFadeinFSR F 0.1 2]
+
+＠造形王
+我……能将梦想、愿望，以更为正确的形式[r]托付给下一个我。可以这样认为吗。
+[k]
+
+[charaFace F 1]
+
+＠伽拉忒亚
+嗯，或许……一定。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[charaPut J 1200,1200]
+[wt 0.1]
+[charaTalk depthOn]
+
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+说得对。缘分已经紧密地结下了。
+[k]
+
+＠达·芬奇
+你作为[%1]的从者被召唤到迦勒底……
+[k]
+
+＠达·芬奇
+也会是非常有可能发生的未来。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[branch lblConf2]
+
+[label lblNotClear2]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+＠达·芬奇
+说得对。缘分已经紧密地结下了。
+[k]
+
+＠达·芬奇
+你作为[%1]的从者被召唤到迦勒底……
+[k]
+
+＠达·芬奇
+也会是非常有可能发生的未来。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[label lblConf2]
+
+[charaTalk off]
+
+[charaPut J 0,0]
+[charaFace F 1]
+[charaFadeinFSR F 0.1 2]
+[charaFace G 0]
+[charaFadeinFSL G 0.1 0]
+[wt 1.0]
+[charaFace G 1]
+[wt 1.0]
+
+？1：有缘再见。
+
+[charaTalk on]
+
+＠伽拉忒亚
+嗯。
+[k]
+
+＠伽拉忒亚
+您那边似乎也有很多艺术家，[r]或许能从中获得很好的刺激吧……
+[k]
+
+？2：有机会要再让我欣赏你的作品哦。
+
+[charaTalk on]
+
+＠伽拉忒亚
+好。[r]虽然和吾王相比，我还很不成熟，但我很愿意。
+[k]
+
+＠伽拉忒亚
+您那边似乎也有很多艺术家，[r]或许能从中获得很好的刺激吧……
+[k]
+
+？！
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaPut J 1200,1200]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛修
+我们会恭候您的光临。[r]迦勒底有很多人想和伽拉忒亚小姐好好聊聊，
+[k]
+
+＠玛修
+应该说，敬请期待！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠绘里濑
+比方说优哉游哉的宇宙船男孩。[r]下次我介绍你认识吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠刑部姬
+[#公主:我]会邀你来[#公主:我]的房间。[r]给你看[#公主:我]引以为傲的手办～。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠尼禄
+余非常喜欢优秀的艺术家。[r]绝对不准汝找其他人做资助者哦。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 4]
+[charaFadein L 0.1 1]
+
+＠美狄亚
+虽然我和你流派不同……不过，也是。[r]要再来哦。
+[k]
+
+[charaFace L 1]
+
+＠美狄亚
+我可以为你做一套适合你的漂亮换装用裙子。
+[k]
+
+[messageOff]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaPut J 0,0]
+[charaFace F 1]
+[charaFadeinFSR F 0.1 2]
+[charaFace G 1]
+[charaFadeinFSL G 0.1 0]
+[wt 1.5]
+
+[charaSpecialEffect F flashErasure 1 1.7]
+[charaSpecialEffect G flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect F]
+[wait charaSpecialEffect G]
+[charaEffectStop J bit_talk_06]
+[bgmStop BGM_EVENT_6 1.7]
+[wt 2.0]
+
+[charaTalk on]
+
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠达·芬奇
+……好了，这下圣杯也回收了。[r]特异点的异变应该也很快就会解除了吧……
+[k]
+
+[charaFace B 17]
+
+＠达·芬奇
+我倒是有些在意那边那位功臣呢？
+[k]
+
+[charaFadeout B 0.1]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[branch lblConf3]
+
+[label lblNotClear3]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠达·芬奇
+……好了，这下圣杯也回收了。[r]特异点的异变应该也很快就会解除了吧……
+[k]
+
+[charaFace B 1]
+
+＠达·芬奇
+我倒是有些在意那边那位功臣呢？
+[k]
+
+[charaFadeout B 0.1]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[label lblConf3]
+
+[charaTalk N]
+[charaFace N 1]
+[charaFadein N 0.1 1]
+
+＠秋叶尼禄
+啊，那差不多该散席了吧～☆
+[k]
+
+＠秋叶尼禄
+交给余亲吧，这种时候还是[r]有魄力地开门见山比较好哦～♪
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout N 0.1]
+
+[scene 116201]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_65 0.1]
+
+＠秋叶尼禄
+好啦～，这样那样的特别企划直播到此结束！[r]各位～，充分享受奇迹了吗～？
+[k]
+
+[messageOff]
+[scene 116200 0.1]
+[wt 1.0]
+[scene 116201 0.1]
+
+＠秋叶尼禄
+……嗯嗯，余亲听到大家高兴的声音啦！[r]然后现在最后有个重大发表～！
+[k]
+
+＠秋叶尼禄
+这是余亲最后一次直播！[r]也就是说，这次是余亲的引退直播～☆
+[k]
+
+＠秋叶尼禄
+各位，一直以来谢谢啦～！　咻～咻～！[r]Love love大感谢！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[bgmStop BGM_EVENT_65 0.4]
+[wait wipe]
+
+[charaSet D 1098154710 1 海盗市场兵]
+[charaSet L 1098212400 1 现代女性]
+[charaSet O 98108900 1 东京男性]
+
+[pictureFrame cut063_cinema]
+
+[scene 114000]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[charaDepth L 4]
+[charaDepth O 5]
+[charaDepth D 4]
+[charaDepth R 3]
+[charaTalk off]
+
+[charaFace L 3]
+[charaFadeinFSL L 0.1 -356,-50]
+[charaFace O 1]
+[charaFadeinFSL O 0.1 -56,-50]
+[charaFace D 1]
+[charaFadeinFSR D 0.1 91,-50]
+[charaFace R 1]
+[charaFadeinFSR R 0.1 356,-50]
+[wt 1.0]
+
+＠市民们
+[f large]哎[messageShake 0.03 6 6 0.5]哎哎哎哎哎哎哎哎哎哎！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+[pictureFrame]
+[charaFadeout O 0.1]
+[charaFadeout L 0.1]
+[charaFadeout D 0.1]
+[charaFadeout R 0.1]
+
+[scene 116200]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+＠秋叶尼禄
+另外，狂欢时间结束了，
+[k]
+
+＠秋叶尼禄
+所以在这次直播中获得生命的孩子[r]迟早会全部恢复原状还请见谅啦。
+[k]
+
+＠秋叶尼禄
+啊啊，此前在街上的那些有生命的人偶……[r]都是在获得圣杯力量后诞生的存在，
+[k]
+
+＠秋叶尼禄
+所以现在应该都已经动不了了。
+[k]
+
+[bgm BGM_EVENT_45 0.1]
+
+＠秋叶尼禄
+……但是呀，大家不需要悲伤哦。[r]就算不再会说话，不再能行动，
+[k]
+
+＠秋叶尼禄
+那些孩子们[line 3]也是你们真心爱的人偶，[r]只有这点依然没变哦。对吧？
+[k]
+
+[scene 116201 0.1]
+
+＠秋叶尼禄
+不要悲伤，继续爱它们吧！
+[k]
+
+＠秋叶尼禄
+然后总有一天，神明或许还会创造奇迹，[r]让那些孩子变成人类哦！
+[k]
+
+＠秋叶尼禄
+那就再见啦～☆　余亲也爱着大家哦，[r]秋叶～！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_45 1.5]
+[wt 0.5]
+[scene 116208 0.2]
+[se ad562]
+[wt 2.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaSet C 1005001 1 尼禄]
+[charaSet D 3043000 1 绘里濑]
+[charaSet E 6031001 1 刑部姬]
+[charaSet L 5001001 1 美狄亚]
+[charaSet O 2009201 1 阿耳忒弥斯]
+[charaSet P 1098190010 1 阿佛洛狄忒]
+
+[scene 114300]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk on]
+
+[charaTalk N]
+[charaFace N 1]
+[charaFadein N 0.1 1]
+
+＠秋叶尼禄
+差不多就这样吧？[bgm BGM_EVENT_7 0.1]
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠刑部姬
+真是个粗暴的结局，[r]但也没办法。
+[k]
+
+[charaFace E 2]
+
+＠刑部姬
+将为你烧钱视为生存意义的[r]那些沦陷的人……努力活下去吧……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 5]
+[charaFadein L 0.1 1]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+＠美狄亚
+慢着。[r]为什么你还能动？
+[k]
+
+[messageOff]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+[wt 1.0]
+
+[charaFace N 1]
+[bgm BGM_EVENT_2 0.1]
+
+
+＠秋叶尼禄
+……大概是因为余亲是第1号吧？[r]不过也是迟早的事啦。
+[k]
+
+＠秋叶尼禄
+余亲不喜欢感伤的氛围，[r]想找个安静的地方沉睡～。所以别来找余亲哦？
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠尼禄
+慢着慢着，汝是余。[r]原本就是余订做的东西。
+[k]
+
+＠尼禄
+让汝独自在不为人知的场所沉睡未免太浪费了。[r]由余接手吧。一直待在余的房间里吧。
+[k]
+
+＠尼禄
+或者将汝摆在食堂？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 1]
+[charaFadein N 0.1 1]
+
+＠秋叶尼禄
+你这个人啊……呵呵～？
+[k]
+
+[messageOff]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth C 7]
+[charaDepth N 6]
+
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[charaFace N 6]
+[charaFadein N 0.1 -306,0]
+[charaMove N -256,0 0.5]
+[wt 0.5]
+
+[se ad748]
+[se ad458]
+[seVolume ad458 0 0]
+[seVolume ad458 0.4 0.4]
+[charaMoveReturn C -5,0 0.5]
+[wait charaMove C]
+[charaMoveReturn C 5,0 0.5]
+[wait charaMove C]
+[charaMoveReturn C -5,0 0.5]
+[wait charaMove C]
+[seStop ad458 0.6]
+[charaMoveReturn C 5,0 0.5]
+[wait charaMove C]
+[wt 0.6]
+
+[charaTalk on]
+[charaFace C 5]
+
+＠尼禄
+唔哇，干嘛。不准摸余的头，汝这无礼之徒！[r]余是皇帝哦！
+[k]
+
+[charaFace C 4]
+
+＠尼禄
+不，或许是因为长着余的脸吧，[r]奇妙的是并不会感到火大……
+[k]
+
+[charaFace N 1]
+
+＠秋叶尼禄
+感谢你的提案，不过基于各种因素，余亲就算了！[r]没关系，余亲不会让这身体被滥用在不好的地方啦。
+[k]
+
+＠秋叶尼禄
+那余亲先告辞啦～。辛苦啦☆
+[k]
+
+[messageOff]
+[se ade423]
+[seStop ade423 1.0]
+[charaMove N -306,0 0.5]
+[charaFadeout N 0.4]
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+算了，反正圣杯已经回收了，[r]从数据也能看出来，她的确快要停止活动了。
+[k]
+
+＠达·芬奇
+随她去应该没什么大碍吧。
+[k]
+
+[charaFace B 1]
+
+＠达·芬奇
+综上所述，这次的任务完成啦！[r]各位，辛苦啦！
+[k]
+
+[charaFadeout B 0.1]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠刑部姬
+呃，那啥？[r][#公主:我]有一事相求……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+好啦好啦，我当然知道。[r]距特异点完全消除应该还有一点时间。
+[k]
+
+＠达·芬奇
+想去购物想去观光都行，[r]允许你们暂时在秋叶原养精蓄锐。
+[k]
+
+[charaFadeout B 0.1]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[branch lblConf4]
+
+[label lblNotClear4]
+
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+＠达·芬奇
+算了，反正圣杯已经回收了，[r]从数据也能看出来，她的确快要停止活动了。
+[k]
+
+＠达·芬奇
+随她去应该没什么大碍吧。
+[k]
+
+[charaFace B 1]
+
+＠达·芬奇
+综上所述，这次的任务完成啦！[r]各位，辛苦啦！
+[k]
+
+[charaFadeout B 0.1]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠刑部姬
+呃，那啥？[r][#公主:我]有一事相求……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-90]
+
+＠达·芬奇
+好啦好啦，我当然知道。[r]距特异点完全消除应该还有一点时间。
+[k]
+
+＠达·芬奇
+想去购物想去观光都行，[r]允许你们暂时在秋叶原养精蓄锐。
+[k]
+
+[charaFadeout B 0.1]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[label lblConf4]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠刑部姬
+太棒了！　那[#公主:我]出发啦～！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛修
+我怎么觉得刑部姬小姐在此前的[r]空闲时间已经买了不少东西了呢……
+[k]
+
+＠玛修
+是因为这里对刑部姬小姐是圣地般的存在，[r]不可能轻易逛遍所有的地方吗？
+[k]
+
+？1：我们也去随便逛逛吧？
+？！
+
+＠玛修
+嗯，当然。[r]我陪您一起去，前辈！
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 115000]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+
+＠秋叶尼禄
+…………
+[k]
+
+[messageOff]
+[fadeout white 1.0]
+[se ad592]
+[wait fade]
+
+[charaFadeout N 0.1]
+
+[effect bit_sepia01_depth_fs]
+[wipeFilter cinema 0.5 0]
+[charaEffect J bit_talk_06]
+[charaTalk off]
+
+[charaPut J 0,25]
+[charaFace F 0]
+[charaFadeinFSR F 0.1 256,-50]
+[charaFace G 0]
+[charaFadeinFSL G 0.1 -256,-50]
+
+[scene 114300]
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[charaFace F 1]
+[charaFace G 1]
+[wt 1.0]
+
+[charaSpecialEffect F flashErasure 1 1.7]
+[charaSpecialEffect G flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect F]
+[wait charaSpecialEffect G]
+[charaEffectStop J bit_talk_06]
+[wt 2.0]
+
+[messageOff]
+[fadeout white 1.0]
+[wait fade]
+
+[effectStop bit_sepia01_depth_fs]
+[wipeOff]
+
+[charaDepth K 7]
+[charaDepth O 6]
+[charaDepth P 5]
+
+[charaTalk on]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+
+[scene 115000]
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+
+[charaFace N 1]
+[bgm BGM_EVENT_11 0.1]
+
+＠秋叶尼禄
+……呵呵。想看的东西都看到了，也罢。[r]真的，只要能开朗地露出微笑就行了。
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+＠？？？
+唔～，这里的风真舒服呢。[r]我可以打扰一下吗～？
+[k]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+
+＠秋叶尼禄
+[FFFFFF]？[-]
+[k]
+
+[messageOff]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 0]
+[charaFadein O 0.4 1]
+[wt 0.4]
+
+＠阿耳忒弥斯
+哟。
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 1]
+[charaFadein N 0.1 1]
+
+＠秋叶尼禄
+唔～，不太妙呢☆　如果身为偶像的余亲[r]在这种地方惆怅的样子被人看到……
+[k]
+
+＠秋叶尼禄
+或许就会全新发现忧郁的魅力[r]获得更高的人气受到大家的喜爱吧！
+[k]
+
+＠秋叶尼禄
+真头疼～，余亲已经引退了啊～？
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 1]
+[charaFadein O 0.1 1]
+
+＠阿耳忒弥斯
+你想继续演下去其实也无妨～，[r]但维持这种情绪真的不要紧吗？
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 1]
+[charaFadein N 0.1 1]
+
+＠秋叶尼禄
+什么不要紧？　余亲呀[line 3]
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaTalk off]
+
+[bgmStop BGM_EVENT_11 0.3]
+
+[charaPut K 0,0]
+[se ad437]
+[charaEffect K bit_talk_noise_gr]
+[wt 0.3]
+[charaEffectStop K bit_talk_noise_gr]
+[wt 1.0]
+
+[se ad539]
+[charaEffect K bit_talk_noise_gr]
+[wt 0.2]
+[charaCrossFade N 1098190010 8 0.3]
+[wait charaCrossFade N]
+[charaEffectStop K bit_talk_noise_gr]
+[wt 0.5]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+[charaFace N 1]
+
+＠？？？
+余亲是大家的梦之啦啦队☆
+[k]
+
+＠？？？
+就算引退了，也不能显露出[r]会破坏大家梦想的态度哟！
+[k]
+
+＠？？？
+……[wt 0.3]……………[wt 0.5]……………
+[k]
+
+[charaFace N 3]
+[bgm BGM_EVENT_27 0.1]
+
+＠？？？
+[f large]～[messageShake 0.03 5 5 0.8]～～～～～～～！？
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk O]
+[charaFace O 0]
+[charaFadeinFSR O 0.1 2]
+[charaFace P 3]
+[charaFadeinFSL P 0.1 0]
+
+＠阿耳忒弥斯
+[line 3]所以说啦，我就是在忠告你，[r][#你那张皮已经快坏掉了吧]，阿佛洛狄忒。
+[k]
+
+[charaFace P 5]
+
+＠阿佛洛狄忒
+啊啊，真是的。糟透了。[r]果然被你看出来了啊，阿耳忒弥斯。
+[k]
+
+[charaFace O 1]
+
+＠阿耳忒弥斯
+毕竟离那么近了，怎么也该看出来了吧～？
+[k]
+
+[charaFace O 0]
+
+＠阿耳忒弥斯
+然后，我问你哦。[r]……为什么？
+[k]
+
+[charaFace P 3]
+
+＠阿佛洛狄忒
+话说在前面，[r]我和[#造形王:那孩子]在这条街上做的事无关哦。
+[k]
+
+[charaFace P 5]
+
+＠阿佛洛狄忒
+进一步说，我几乎也算是受害者。[r]只是被召唤的那方而已。
+[k]
+
+＠阿耳忒弥斯
+嗯……那孩子倾注了圣杯的力量，用神之凿，[r]为相当于你血亲的罗马皇帝的塑像赋予了生命。
+[k]
+
+[charaFace O 1]
+
+＠阿耳忒弥斯
+难怪会导致神灵碎片寄宿其中的因果吧。
+[k]
+
+[bgmStop BGM_EVENT_27 1.0]
+
+＠阿耳忒弥斯
+那我换一种问法吧。[r]问得更具体一些。
+[k]
+
+[charaFace O 0]
+
+＠阿耳忒弥斯
+假装成被赋予生命的普通人偶，[r]隐藏真面目，在近处旁观[line 3]
+[k]
+
+＠阿耳忒弥斯
+不，应该叫守护吧，为什么这么做？
+[k]
+
+[charaFace P 9]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠阿佛洛狄忒
+这……
+[k]
+
+＠阿佛洛狄忒
+你这是明知故问吧。[r]因为她们好歹也是和我有关的人嘛。
+[k]
+
+＠阿耳忒弥斯
+阿佛洛狄忒。我直接见过，[r]并触碰过那孩子[line 3]伽拉忒亚。
+[k]
+
+＠阿耳忒弥斯
+怎么可能没有发现嘛。
+[k]
+
+＠阿耳忒弥斯
+[#那孩子的身体里有你]。[r]对吧？
+[k]
+
+[charaFace P 5]
+
+＠阿佛洛狄忒
+…………
+[k]
+
+＠阿耳忒弥斯
+不过多半只是你的一部分，[r]至少肯定不是身在此处的你本人。
+[k]
+
+＠阿耳忒弥斯
+是与源自残酷战斗回路的[#你:潘得摩斯]性质截然相反的，[r]另一个你。
+[k]
+
+＠阿耳忒弥斯
+源自高贵而深情回路的你……识别名称[r]是叫『阿佛洛狄忒·乌剌尼亚』吗？
+[k]
+
+[charaFace P 4]
+
+＠阿佛洛狄忒
+是碎片啦，只是区区碎片。
+[k]
+
+＠阿佛洛狄忒
+至于说我在塞浦路斯岛上做了些什么，[r]当前这个状态的我也不记得是怎么一回事了。
+[k]
+
+＠阿耳忒弥斯
+那也就是说……你也不知道[r]那孩子体内具体是什么？
+[k]
+
+[charaFace P 8]
+
+＠阿佛洛狄忒
+没错。谁会知道那种渺小灵体构成要素[r]的最深处是什么啦。我也懒得去详细调查。
+[k]
+
+＠阿耳忒弥斯
+总之，她就像是你的家人吧～。
+[k]
+
+＠阿耳忒弥斯
+虽然不知道像孩子还是双胞胎或是你自己。[r]所以你才会守护她吧？
+[k]
+
+[charaFace P 8]
+
+＠阿佛洛狄忒
+………………
+[k]
+
+[charaFace P 9]
+
+＠阿佛洛狄忒
+那不是我，我不记得具体情况，[r]但我知道在塞浦路斯做了什么。
+[k]
+
+＠阿佛洛狄忒
+做了那种……[#罗曼蒂克]的，[r]让人非常害羞的事啦。
+[k]
+
+[charaFace P 0]
+
+＠阿佛洛狄忒
+既然如此[line 3]那我只能[r]负起责任这么做了吧。
+[k]
+
+＠阿耳忒弥斯
+唔～。总感觉被你糊弄过去了，[r]不过算了，我大致明白了。
+[k]
+
+[charaFace P 3]
+
+＠阿佛洛狄忒
+最后还让我丢人现眼，真是的。[r]话说你究竟来干什么啦。
+[k]
+
+＠阿耳忒弥斯
+没什么啊？　只是感到一股怀念的气息，[r]来找你叙叙旧而已哦～？
+[k]
+
+＠阿耳忒弥斯
+想继续聊聊？　还是想干架？
+[k]
+
+[charaFace P 0]
+
+＠阿佛洛狄忒
+哪种我都不要。我就快消失了。
+[k]
+
+＠阿佛洛狄忒
+再说我之所以会在这里，[r]不过是[#那孩子:伽拉忒亚]附带的啦。
+[k]
+
+＠阿佛洛狄忒
+除了人偶被赋予的生命以外，[r]我自身的现界也在被她拖拽，会这样也很正常。
+[k]
+
+＠阿耳忒弥斯
+等我回迦勒底之后，说不定还能见到伽拉忒亚。[r]你有什么话要我转告她吗？
+[k]
+
+[charaFace P 6]
+
+＠阿佛洛狄忒
+不用了啦。
+[k]
+
+＠阿佛洛狄忒
+那孩子就是那孩子。[r]不是美神阿佛洛狄忒……是伽拉忒亚。
+[k]
+
+[messageOff]
+[charaFace P 8]
+[se ad312]
+[wt 1.0]
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+
+[charaSet P 1098190000 1 阿佛洛狄忒]
+
+[scene 110101]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+[scene 115000 0.8]
+[wt 1.3]
+
+[charaTalk P]
+[charaFace P 1]
+[charaFadein P 0.1 1]
+
+＠阿佛洛狄忒
+呼……
+[k]
+
+＠阿佛洛狄忒
+算了，其实这次还挺开心的。[r]我并不讨厌这条街哦。
+[k]
+
+[bgmStop BGM_EVENT_11 1.0]
+
+＠阿佛洛狄忒
+对了对了，记得代我向你那品味极差的男友问好。
+[k]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 2]
+[charaFadein O 0.1 1]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠阿耳忒弥斯
+哈[messageShake 0.03 5 5 0.5]啊啊啊啊！？[r]亲爱的是最棒的[line 3]！？
+[k]
+
+＠阿耳忒弥斯
+你给我站住，从现在开始，[r]我要花几天给你好好灌输亲爱的究竟有多美好！
+[k]
+
+[messageOff]
+[wt 0.5]
+[charaFace O 5]
+
+＠阿耳忒弥斯
+……呃，已经不见了。
+[k]
+
+＠阿耳忒弥斯
+好不容易见一次，最后还让人火冒三丈，[r]简直太有阿佛洛狄忒的作风了！　哼！
+[k]
+
+[charaFace O 1]
+
+＠阿耳忒弥斯
+早点回去尽情与亲爱的卿卿我我吧[line 3]
+[k]
+
+[charaFace O 2]
+
+＠阿耳忒弥斯
+[f x-large]外遇检测！！
+[k]
+
+[messageOff]
+
+[cueSe SE_21 21_ade576]
+[charaMove O 0,25 0.2]
+[charaFadeout O 0.2]
+[wt 0.2]
+[effect bit_talk_impactlanding 0,-250]
+[wt 0.7]
+[cueSeVolume 21_ade576 0.4 0.4]
+[wt 0.8]
+[cueSeStop 21_ade576 1.5]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

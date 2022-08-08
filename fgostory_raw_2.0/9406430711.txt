@@ -1,0 +1,172 @@
+
+
+＄94-06-43-07-1-1
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5050000 1 サンタマルタ]
+[charaSet B 1098198000 1 スカサハ＝スカディ]
+[charaSet C 2001002 1 エミヤ]
+[charaSet D 4011001 1 ブーディカ]
+[charaSet E 7016001 1 タマモキャット]
+[charaSet F 3047001 1 パーシヴァル]
+
+[charaSet L 98115000 1 エフェクト用ダミー]
+[charaSet N 98115000 1 エフェクト用ダミー]
+
+
+
+[scene 140600]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.4]
+
+[se ade410]
+[distortionstart 0.0 0.5 0.5 0.0 0.0 100.0]
+[distortionstart 0.7 0.5 0.5 0.3 0.3 20.0]
+[wt 0.7]
+
+[distortionstop 1.5]
+
+[charaPut L 0,0]
+[charaEffect L bit_talk_warp]
+[se ad434]
+[seVolume ad434 0 0.5]
+[wt 3.5]
+[seStop ad434 0.3]
+
+[charaPut L 2000,2000]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+[bgm BGM_SENGOKU_1 0.1]
+
+＠ブーディカ
+来た来た、ルーンの導き！[r]だったっけ？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad13]
+[charaPut N 0,0]
+[charaEffect N bit_talk_10_LowLevel]
+[wt 0.2]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+
+＠スカサハ＝スカディ
+マシュは状況解析の合間の休憩中ゆえ、[r]私だけで解説するが、その先が第五の食材エリアだ。
+[k]
+
+[charaFace B 8]
+
+
+＠スカサハ＝スカディ
+エネミーを配置したつもりは毛頭ないのだが、[r]これまでの傾向を[#鑑:かんが]みるに[line 3]
+[k]
+
+[charaFace B 0]
+
+＠スカサハ＝スカディ
+それなりに歯応えがある、[r]食わせ物のエネミーが揃っているようだ。
+[k]
+
+[charaPut N 2000,2000]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+
+＠パーシヴァル
+食わせ物！[r]成る程、北欧流の[#洒落:しゃれ][line 3]というわけですか。
+[k]
+
+[charaFace F 6]
+
+
+＠パーシヴァル
+なかなかのセンスですね、[r]敬服しました。ユア・マジェスティ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut N 0,0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠スカサハ＝スカディ
+え？
+[k]
+
+[charaFace B 4]
+
+＠スカサハ＝スカディ
+あっ、い、いや、そういう意味ではなく！[r]難敵がいるだろうという、ほら！
+[k]
+
+[messageOff]
+[charaPut N 2000,2000]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth D 7]
+[charaDepth C 6]
+[charaDepth E 5]
+[charaDepth A 4]
+
+[charaFace D 3]
+[charaFadeinFSL D 0.1 0]
+[charaFace C 4]
+[charaFadeinFSR C 0.1 2]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaFace E 1]
+[charaFadeinFSL E 0.1 0]
+[charaFace A 1]
+[charaFadeinFSR A 0.1 2]
+[wt 1.0]
+
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut N 0,0]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠スカサハ＝スカディ
+ううっ……[r]ええい、もういい！　行ってくるがいい！
+[k]
+
+
+＠スカサハ＝スカディ
+道中気を付けるように！[wt 0.8][charaFace B 3][r]わーん！
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_SENGOKU_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

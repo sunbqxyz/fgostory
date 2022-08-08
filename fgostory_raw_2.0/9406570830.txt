@@ -1,0 +1,504 @@
+
+＄94-06-57-08-3-0
+
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 28002000 1 フェイカー]
+[charaSet B 1098166310 1 車掌]
+[charaSet C 98006200 1 エネミー1]
+[charaSet D 98006200 1 エネミー2]
+[charaSet E 98006200 1 エネミー3]
+
+[scene 144300]
+
+[imageSet F cut320_rhong01 1]
+[imageSet G cut320_rhong02 1]
+[imageSet H cut320_rhong03 1]
+
+[sceneSet I 10000 1]
+[charaFilter I silhouette FF000080]
+
+[fadein black 1.0]
+[cueSe SE_21 21_ade688 0]
+[seVolume 21_ade688 0.4 0.6]
+[wait fade]
+
+[wt 2.5]
+[seStop 21_ade688 1.5]
+[wt 1.0]
+
+[bgm BGM_EVENT_72 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+なんだ、あれは。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_72 1.0 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaScale F 2.0]
+[charaScale G 2.0]
+[charaScale H 2.0]
+[charaFadein F 0.1 160,-120]
+
+[scene 10000]
+[cameraMove 0.1 0,0 1.01]
+[wt 1.0]
+
+[se ade393]
+[seVolume ade393 0 0.1]
+[seVolume ade393 1.0 0.5]
+
+[fadein black 1.0]
+[charaMove F 300,-480 8.0]
+[bgm BGM_EVENT_72 1.0 1.0]
+[wait fade]
+
+[wt 2.0]
+[effect bit_talk_lightning_02r -20,0]
+[shake 0.05 4 4 5.0]
+
+[se ad619]
+[seVolume ad619 0 0.1]
+[seVolume ad619 1.0 0.8]
+[se ad626]
+[seVolume ad626 0 0.1]
+[seVolume ad626 1.0 0.5]
+[wt 6.5]
+[effectStop bit_talk_lightning_02r]
+
+[charaDepth F 1]
+[charaDepth G 2]
+[charaDepth H 3]
+[charaDepth I 5]
+
+[se ad241]
+
+[charaScale I 1.01]
+[charaPut I 0,-200]
+[se ad1062]
+[seVolume ad1062 0 0.5]
+[se ad1056]
+[seVolume ad1056 0 0.6]
+[shake 0.05 1 3 1.8]
+[charaFadeTime I 0.2 0.6]
+[charaFadein G 0.2 300,-480]
+[seStop ad619 5.5]
+[seStop ad626 5.5]
+[wt 0.2]
+[charaFadeout I 0.2]
+[seStop ad241 5.0]
+[seStop ade393 5.0]
+[wt 0.5]
+
+[wt 3.5]
+
+
+＠フェイカー
+ロンゴミニアドが、さらに変化していくぞ………！
+[k]
+
+？1：一体、何が起きてる………？
+？2：ロンゴミニアドが変化………？
+
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_72 1.0 0.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[cameraHome 0.1]
+
+[scene 144300]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_72 1.0 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+聖槍の防衛本能か。[r]本当に、真面目に模倣しすぎたぞ。ムネーモシュネー。
+[k]
+
+？1：それって………！
+
+？！
+
+[charaFace A 0]
+
+＠フェイカー
+私の知る限りだが、[r]本物のロンゴミニアドは強く拘束されてる。
+[k]
+
+＠フェイカー
+もしも、の話だ。[r]もしも、ロンゴミニアドの封印などなければ？
+[k]
+
+＠フェイカー
+そして、直前まで、[r]聖杯からの無尽の魔力が注ぎ込まれていたとしたら？
+[k]
+
+？1：聖槍に、聖杯の魔力を注ぐ……？！
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠車掌
+あの聖槍はテクスチャを繋ぎ止める[#錨:いかり]でございます。
+[k]
+
+＠車掌
+ですが、反転すれば[r]テクスチャを[#改竄:かいざん]する網ともなり得てしまうでしょう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+おそらく、この特異点でなければ起きない暴走だ。
+[k]
+
+＠フェイカー
+この特異点では[#記憶のエネルギー効率が高い][r]ルールがあるって、フィードバックで言ってただろ。
+[k]
+
+＠フェイカー
+ムネーモシュネーが蓄えた大量の記憶が、[r]ロンゴミニアドに影響を与えてしまった。
+[k]
+
+＠フェイカー
+さしずめ、フェイク・ロンゴミニアドならぬ[r]ネガ・ロンゴミニアドといったところか……！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_72 1.0 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[charaScale G 1.3]
+[charaScale H 1.3]
+[charaFadein G 0.1 -5,-350]
+[scene 144500]
+[cameraMove 0.1 0,0 1.01]
+[wt 1.0]
+
+[se ade393]
+[seVolume ade393 0 0.1]
+[seVolume ade393 1.0 0.5]
+
+[fadein black 1.0]
+[se ad241]
+[seVolume ad241 0 0]
+[seVolume ad241 1.0 1.0]
+[bgm BGM_EVENT_72 1.0 1.0]
+[wait fade]
+
+[wt 1.0]
+[shake 0.05 4 4 3.0]
+[se ad619]
+[seVolume ad619 0 0.1]
+[seVolume ad619 1.0 1.5]
+[se ad632]
+[seVolume ad632 0 0.1]
+[seVolume ad632 1.0 0.6]
+[wt 2.5]
+
+[se ad1062]
+[se ad1056]
+[charaFadein H 2.0 -5,-350]
+[scene 144501 2.0]
+[seStop ad619 5.5]
+[seStop ad632 5.5]
+[wt 1.5]
+[seStop ade393 5.0]
+[seStop ad241 5.0]
+[wt 2.0]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_72 1.0 0.5]
+[wait fade]
+
+[cameraHome 0.1]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[scene 144300]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_72 1.0 1.0]
+[wait fade]
+
+[scene 144301 0.2]
+[flashin loop 0.7 1 FF000080 FF000000]
+[se ad9]
+[seVolume ad9 0 0.8]
+[wt 2.8]
+[seStop ad9]
+[flashOff]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠車掌
+緊急警報！[r]レール直上に、大量の敵性反応が出現。
+[k]
+
+＠車掌
+これはよろしくない。[r]レール上を埋め尽くされています。
+[k]
+
+＠車掌
+いくら[#魔眼蒐集列車:レ ー ル ・ ツ ェ ッ ペ リ ン]をもってしても、[r]あの数では、強引な突破は不可能です。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+意図的………というより本能的だな。[r]こいつは、私たちを逃がすまいとしてる。
+[k]
+
+＠フェイカー
+特異点にあるものは、[r]全部自分の魔力リソースだと判断しているのか。
+[k]
+
+＠フェイカー
+この敵性反応は、ムネーモシュネーの記録から[r]テクスチャの[#改竄:かいざん]で捏造したエネミーだな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠車掌
+逃げようとしなければ、反応しないかもしれませんが、[r]特異点の修正に巻き込まれることでしょう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+くそ、迎撃するぞ[%1]！[r]私の戦車で先行して、先にいる敵どもを薙ぎ払う！
+[k]
+
+？1：そんなことできるの！
+
+？！
+
+＠フェイカー
+魔力はかかるが、やるしかないだろう！[r]ついてこい！
+[k]
+
+
+[messageOff]
+[se ad59]
+[seStop ad59 1.0]
+
+[bgmStop BGM_EVENT_72 1.0]
+
+[wipeout leftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 110101]
+[wt 1.0]
+
+[se ad547]
+[wt 0.4]
+[se ad548]
+[seVolume ad548 0 0.1]
+[seVolume ad548 1.0 0.6]
+[wt 0.8]
+[se ad546]
+[wipein rightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.9]
+
+[se ad223]
+[charaTalk A]
+[charaFace A 5]
+[charaEffect A bit_talk_quickmove 0,0 H]
+[charaSpecialEffect A appearanceReverse 1 0.2]
+[charaMoveReturn A 0,-4 0.2]
+[wt 0.4]
+[bgm BGM_EVENT_63 0.1]
+
+[charaFace A 2]
+＠フェイカー
+ああ、ここなら私の宝具だって展開できるとも！
+[k]
+
+[messageOff]
+[charaEffect A bit_talk_36]
+[se ad39]
+[wt 1.2]
+
+[charaFace A 5]
+＠フェイカー
+ヘカテよ、導きたまえ。
+[k]
+
+＠フェイカー
+我が名は偽り。[r]我が身は影。
+[k]
+
+＠フェイカー
+されど、この虚偽を誇りとして、[r]今一度手綱を握らん！
+[k]
+
+
+[charaFace A 2]
+
+＠フェイカー
+[f large]打ち砕け！　『[#魔天の車輪:ヘ カ テ ィ ッ ク ・ ホ イ ー ル]』！
+[k]
+
+
+[messageOff]
+[se ad606]
+[seVolume ad606 0 0.4]
+[se ade338]
+[fadeout white 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaEffectStop A bit_talk_36]
+[wt 1.5]
+
+[cueSe SE_21 21_ade546]
+[fadein white 0.7]
+[wait fade]
+[se ad845]
+[seVolume ad845 0 0]
+[seVolume ad845 1.0 0.6]
+[wt 2.5]
+[seStop ad845 1.0]
+[wt 1.0]
+
+？1：空を飛ぶ戦車……！
+？！
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+乗れ！
+[k]
+
+[messageOff]
+[charaMoveScale A 1.05 0.2]
+[charaMove A 0,20 0.2]
+[cameraMove 0.2 0,-10 1.1]
+
+[se ad7]
+[se ade139]
+[seVolume ade139 0 0.4]
+[wt 0.1]
+[shake 0.05 3 3 0.2]
+
+
+[wipeout upToDown 0.5 1.0]
+[bgm BGM_EVENT_63 0.5 0.5]
+[wt 0.2]
+[wait wipe]
+
+[se ad845]
+[seVolume ad845 0 0]
+[seVolume ad845 1.0 0.4]
+
+[cameraHome 0.1]
+[charaFadeout A 0.1]
+[charaScale A 1.0]
+[wt 0.2]
+
+[wipein downToUp 0.5 1.0]
+[bgm BGM_EVENT_63 0.5 1.0]
+[wait wipe]
+[wt 1.0]
+[seStop ad845 1.5]
+
+[charaDepth C 1]
+[charaDepth D 2]
+[charaDepth E 3]
+
+[charaTalk off]
+
+[se ad42]
+[charaFace C 0]
+[charaFadeinFSL C 0.4 -312,0]
+[wt 0.2]
+[charaFace D 0]
+[charaFadeinFSR D 0.4 312,0]
+[wt 0.2]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 2.0]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+邪魔だ！　雑魚ども！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_63 0.4]
+[wait fade]
+[soundStopAll]
+[end]

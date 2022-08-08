@@ -1,0 +1,495 @@
+
+＄94-03-35-61-1-0
+[enableFullScreen]
+
+[soundStopAll]
+
+
+[charaSet A 7038000 1 布伦希尔德]
+[charaSet B 1001000 1 特效用]
+[charaSet C 7038000 1 布伦希尔德（剪影）]
+[charaFilter C silhouette 00000080]
+[equipSet D 9807840 1 情人节礼装]
+
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+[scene 105800]
+
+[branch lblConf1]
+[label lblNotClear1]
+[scene 106000]
+
+[label lblConf1]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.3]
+[se ad8]
+[wt 2.0]
+
+[se ade422]
+[seVolume ade422 0 0.1]
+[seVolume ade422 1.0 1.0]
+[wt 2.0]
+
+[seStop ade422 0.2]
+[wt 1.2]
+
+[charaTalk off]
+
+[charaDepth C 2]
+[charaDepth A 1]
+
+[charaFace C 0]
+[charaFadein C 0.4 1]
+
+[wt 1.2]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[charaFadeout C 0.7]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V010]
+[line 3]啊啊。[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V020]
+见到了呢，御主。[r]太好了。[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V030]
+今天……[r]是个……特别的日子吧。[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V040]
+情人节。[r]将感情，传达给亲密之人的日子。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 20]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[wt 1.0]
+
+[charaFace A 10]
+
+＠布伦希尔德
+[tVoiceUser ValVoice_703800 0_V050 ValVoice_703800 0_V060]
+虽然身为从者，[r]但我，也有想要传达给[&您:您]的感情。[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V070]
+您……有时间吗？[wait tVoice]
+[k]
+
+？1：当然可以。
+
+？！
+
+[messageOff]
+
+[charaFace A 1]
+[wt 1.0]
+[charaFace A 0]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V080]
+非常感谢。[wait tVoice][r]御主。
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V090]
+作为受大神惩罚的罪孽之具现，[r]我加深了自己的罪孽……[line 3][wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V100]
+……不。
+[k]
+
+＠布伦希尔德
+[tVoiceUser ValVoice_703800 0_V110 ValVoice_703800 0_V120]
+[&您:您]并没有责怪我感情的加深。[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V130]
+虽然我只是个临时与临时[r]拼凑起来的虚缈灵基，[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V140]
+但我内心萌生的感情，[r]肯定，与拥有生命的过去并无二致。[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V150]
+所以[line 3][wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 20]
+[wt 1.5]
+
+[charaFace A 10]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V160]
+这是我，小小的心意。[wait tVoice]
+[k]
+
+
+[messageOff]
+
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[charaFace D 0]
+[charaFadein D 0.5 0,-70]
+[wt 2.0]
+[charaFadeout D 0.4]
+
+[wt 0.5]
+
+
+？1：哇，好厉害！
+[branch select01_01]
+
+？2：结婚蛋糕！
+[branch select01_02]
+
+？！
+
+[label select01_01]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V170]
+呵呵。[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V180]
+是我和妹妹们一起制作的。[r]我分明说自己一个人就够了，但那些孩子真是的……[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V190]
+还是来帮忙了。[r]等回过神来时，已经做成了个这么大的蛋糕。[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V200]
+真的，很大呢……[wait tVoice]
+[k]
+
+[charaFace A 10]
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V210]
+……[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V220]
+御主。[r]您愿意收下吗？[wait tVoice]
+[k]
+
+[branch select01_end]
+
+
+[label select01_02]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V230]
+结婚蛋糕……？[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V240]
+究竟是……[r]什么意思呢？[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V250]
+抱歉，我不太熟悉现代的文化……[wait tVoice]
+[k]
+
+？1：呃，在结婚仪式之类的活动上[line 3]
+？2：是在结婚仪式上使用的蛋糕！
+
+？！
+
+[messageOff]
+
+[charaFace A 6]
+[wt 1.0]
+
+[charaFace A 14]
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V260]
+！？[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V270]
+[f large]结婚！？[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V280]
+哎，[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V290]
+不，不是，那个，我，[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V300]
+和妹妹们一起……[r]不，我不是把责任推给那些孩子们的意思，[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V310]
+但是，那些孩子们说，[r]还是根据感情做个大的比较好，[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V320]
+那……那些孩子们真是的[line 3]！[wait tVoice]
+[k]
+
+[charaFace A 15]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V330]
+……[wait tVoice][r]……
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V340]
+………………[wait tVoice]
+[k]
+
+[charaFace A 16]
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V350]
+………………没……没关系。[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V360]
+……我冷静下来了。[r]失礼了。[wait tVoice]
+[k]
+
+[label select01_end]
+
+
+？1：是参照了雪山吗。
+
+？！
+
+[charaFace A 0]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V370]
+是的。[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V380]
+造型参考了希恩达尔之山。[r]那个[line 3][wait tVoice]
+[k]
+
+[charaFace A 12]
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V390]
+是和那个人……[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V400]
+和齐格鲁德……初次……[r]相遇的山。[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V410]
+山顶上放着一座小屋吧。[r]原本，应该是燃烧的火焰之馆，[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V420]
+我们两人就是在这里相遇的。[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V430]
+现代已经没有那座馆了。[r]这是遥远过去的事[line 3][wait tVoice]
+[k]
+
+？1：……我可以收下吗？
+
+？！
+
+[charaFace A 8]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V440]
+[FFFFFF]？[-][wait tVoice]
+[k]
+
+？1：如果把蛋糕送给齐格鲁德，他一定会很高兴哦。
+
+？！
+
+[charaFace A 6]
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V450]
+！[wait tVoice]
+[k]
+
+[charaFace A 14]
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V460]
+不，不是，其实[line 3][wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V470]
+那个，啊啊……[wait tVoice]
+[k]
+
+
+[charaFace A 16]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V480]
+不是啦，我……[r]我……[wait tVoice]
+[k]
+
+[charaFace A 19]
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V490]
+……[r]……[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V500]
+…………很抱歉没有解释清楚。[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V510]
+我为齐格鲁德也做了[#相同的东西]。[r]但是，如果只做一个的话，我是无法接受的。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V520]
+我做不到。[r]因为……[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoiceUser ValVoice_703800 0_V530 ValVoice_703800 0_V540]
+在迦勒底式召唤这奇迹中，[r][&您:您]带来了更大的奇迹。[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V550]
+那就是[#重逢]。[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoiceUser ValVoice_703800 0_V560 ValVoice_703800 0_V570]
+[&您:您]给了我本不可能得到的东西。[r]更多的邂逅、重逢的机会……[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoiceUser ValVoice_703800 0_V580 ValVoice_703800 0_V590]
+我想将自己的感谢表现出来，[r]献给赐予了我们那么多的[&您:您]。[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V600]
+所以……[wait tVoice]
+[k]
+
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V610]
+[line 3]倾注了成百上千万的感谢之情。[r]御主。[wait tVoice]
+[k]
+
+[charaFace A 10]
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V620]
+请收下吧。[wait tVoice]
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.4]
+[wt 0.1]
+
+[charaFace D 0]
+[charaFadein D 0.5 0,-70]
+[wt 2.0]
+[charaFadeout D 0.4]
+
+[wt 0.5]
+
+？1：谢谢你。
+
+？！
+
+？1：那我就不客气了！
+
+？！
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+[charaFace A 1]
+＠布伦希尔德
+[tVoice ValVoice_703800 0_V630]
+嗯！[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

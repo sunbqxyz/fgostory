@@ -1,0 +1,800 @@
+
+
+
+＄94-03-66-01-3-0
+
+[soundStopAll]
+
+[charaSet A 4032000 1 埃尔梅罗Ⅱ？世]
+
+[charaSet B 1098165800 1 仿古自动人偶1]
+[charaSet C 1098165800 1 仿古自动人偶2]
+[charaSet D 1098165800 1 仿古自动人偶3]
+
+
+[charaSet E 1098166200 1 特里姆玛乌]
+
+[charaSet F 99502600 1 玛修]
+[charaFilter F silhouette 00000080]
+
+[charaSet G 98109200 1 特效用dummy]
+
+[charaSet I 98014000 1 通信噪音]
+
+[scene 11000]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk off]
+[charaDepth B 3]
+[charaDepth C 2]
+[charaDepth D 1]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[fadein black 0.8]
+[wait fade]
+
+[se ad66]
+
+[charaFace C 0]
+[charaFadein C 0.4 -306,0]
+[charaMove C -256,0 0.3]
+[wt 0.2]
+
+[charaFace D 0]
+[charaFadein D 0.4 306,0]
+[charaMove D 256,0 0.3]
+[wt 0.6]
+
+[seStop ad66 0.4]
+[wt 0.4]
+
+[charaTalk B]
+
+＠自动人偶
+埃尔梅罗Ⅱ世……？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠埃尔梅罗Ⅱ世？
+可恶，没完没了了！[r]我们先逃吧！
+[k]
+
+＠埃尔梅罗Ⅱ世？
+就从那个窗口！　跳出去！
+[k]
+
+？1：啊，可是这里是四楼……
+
+？！
+
+[charaFace A 2]
+
+＠埃尔梅罗Ⅱ世？
+快走笨蛋！
+[k]
+
+[messageOff]
+
+[charaMoveScale A 1.15 0.2]
+[charaMove A 0,20 0.2]
+[wt 0.1]
+[se ade139]
+[fowardEffect bit_talk_14]
+[shake 0.05 3 3 0.3]
+[wt 0.2]
+
+[se ade187]
+[fadeout white 0.2]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 10000]
+[effect bit_talk_43h]
+[wt 0.1]
+
+[se ad75]
+[wt 1.0]
+
+
+[fadein white 1.0]
+[wait fade]
+
+[wipein rectangleStripDownToUp 0.2 1.0]
+[wait wipe]
+
+[wt 1.0]
+[effectStop bit_talk_43h 0,0]
+[wt 0.1]
+
+[wipeout rectangleStripDownToUp 0.1 1.0]
+[wait wipe]
+
+[scene 11000]
+[pictureFrame cut063_cinema]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-50]
+
+[wt 0.1]
+
+[wipein rectangleStripDownToUp 0.2 1.0]
+[wait wipe]
+
+＠埃尔梅罗Ⅱ世？
+[#月灵髓液:Trim]！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[se ad130]
+[seVolume ad130 0 0.7]
+[charaPut E 0,-50]
+[charaTalk E]
+[charaFace E 0]
+[charaSpecialEffect E appearance 1 0.4]
+[wt 0.3]
+[seStop ad130 0.2]
+[wt 0.4]
+
+＠特里姆玛乌
+明白了，[#主人:Master]。
+[k]
+
+[messageOff]
+[se ad73]
+[wipeout rectangleStripDownToUp 0.2 1.0]
+[charaMove E 0,-70 0.2]
+[charaEffect E bit_talk_quickmove]
+[wait wipe]
+
+[se ad480]
+[scene 10920]
+[effect bit_talk_43h]
+[pictureFrame]
+
+[cameraMove 0.1 0,-20 1.0]
+
+[wt 0.3]
+
+[effectStop bit_talk_43h]
+[se ad77]
+[seStop ad77 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,15]
+
+[wipein rectangleStripUpToDown 0.3 1.0]
+[shake 0.05 0 3 0.9]
+
+[effect bit_talk_impactlanding 0,-550]
+[cameraMove 0.3 0,0 1.0]
+[charaMove E 0,-20 0.3]
+[se ad222]
+[wait wipe]
+[wt 0.8]
+
+[charaFadeout E 0.1]
+[wt 0.3]
+
+[charaMoveScale E 1.0 0.1]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove 0,0 H]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.2 0,20]
+
+[charaMove A 0,0 0.3]
+[wt 0.3]
+
+＠埃尔梅罗Ⅱ世？
+着陆成功！[r]然后是魔弹大礼！
+[k]
+
+[messageOff]
+
+[se ade285]
+[effect bit_talk_magicbullet]
+[wt 0.5]
+[charaFadeout A 0.1]
+[wt 0.5]
+[flashin once 0.1 1.0 FFFFFF80 FFFFFF00]
+
+[charaPut G 600,800]
+[charaRoll G 90]
+[charaEffect G bit_talk_impactlanding]
+
+[wt 0.2]
+[shake 0.05 3 3 0.7]
+[seStop ad439]
+[se ad63]
+[se ad296]
+[wt 2.5]
+[seStop ad296 1.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠埃尔梅罗Ⅱ世？
+就是现在！[r]赶快退避！
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[se ad59]
+[se ad60]
+
+[bgmStop BGM_EVENT_80 1.5]
+[wait wipe]
+
+[seStop ad59 1.0]
+[seStop ad60 1.0]
+
+[scene 10000]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[wipein rightToLeft 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 77500]
+[wt 1.9]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠埃尔梅罗Ⅱ世？
+啊，真是累坏了……[bgm BGM_EVENT_70 0.1][r]你竟然连四肢强化都不会，未免也太差劲了吧。
+[k]
+
+？1：对不起。
+？2：刚才你说你并不是埃尔梅罗Ⅱ世……
+
+？！
+
+[charaFace A 0]
+
+＠埃尔梅罗Ⅱ世？
+你先给我好好反省。[r]不过，我刚才确实说过，我并不是埃尔梅罗Ⅱ世。
+[k]
+
+[charaFace A 4]
+
+＠埃尔梅罗Ⅱ世？
+我的名字是，莱妮丝·埃尔梅罗·阿奇佐尔缇。[r]之前倒在那里的尸体是我的义兄。
+[k]
+
+
+[turnPageOff]
+
+
+[charaFace A 0]
+
+＠A：莱妮丝
+虽说我早晚都要继承君主·埃尔梅罗的位置，[r]但现在时机还未到。那为什么我会有那种臆想呢？
+[k]
+
+[charaFace A 4]
+
+＠A：莱妮丝
+为什么……兄长会被杀害……
+[k]
+
+
+？1：他是很重要的人吗？
+？！
+
+＠A：莱妮丝
+兄长……对于我来说……
+[k]
+
+[charaFace A 0]
+
+＠A：莱妮丝
+……不行，现在不是说这种话的时候。[r]特里姆，你怎么样了？
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[bgm BGM_EVENT_70 1.0 0.5]
+
+[se ad130]
+[seVolume ad130 0 0.6]
+[charaTalk E]
+[charaFace E 0]
+[charaSpecialEffect E appearance 1 0.3]
+[wt 0.3]
+[seStop ad130 0.4]
+[wt 0.2]
+
+[turnPageOn]
+＠特里姆玛乌
+直到刚才，我都还以为[#主人:Master]您是埃尔梅罗Ⅱ世。
+[k]
+
+？1：哇！
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠A：莱妮丝
+连你也这么觉得吗，特里姆玛乌。[r]啊，她是我的使魔。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠特里姆玛乌
+礼装·月灵髓液。[#主人:Master]有时也会叫我特里姆。[r]初次见面，请多关照。
+[k]
+
+[messageOff]
+
+[charaMove E 0,-10 0.4]
+[wt 0.9]
+[charaMove E 0,0 0.4]
+[wt 0.9]
+
+
+？1：请多关照。
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠A：莱妮丝
+她是我的使魔兼女仆兼保镖。[r]毕竟她和人类不同，不会背叛。
+[k]
+
+？2：这就是月灵髓液吗……？
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠A：莱妮丝
+嗯嗯，你知道前一代肯尼斯的[#月 灵 髓 液:Volumen Hydrargyrum]吗？[r]她便是月灵髓液付与了简易自我的产物。
+[k]
+
+＠A：莱妮丝
+她是我的使魔兼女仆兼保镖。[r]毕竟她和人类不同，不会背叛。
+[k]
+
+？！
+
+[bgm BGM_EVENT_70 1.0 1.0]
+
+＠A：莱妮丝
+所以我对她绝对信任。[twt 1.0][charaFace A 4][r]可是………
+[k]
+
+[charaFace A 5]
+
+＠A：莱妮丝
+啊！　为什么兄长会被杀害啊！[r]为什么我会有那种臆想啊！
+[k]
+
+＠A：莱妮丝
+暗示只是初级魔术，[r]我和特里姆玛乌怎么可能中那种魔术？
+[k]
+
+[charaFace A 0]
+
+＠A：莱妮丝
+对了。你的记忆怎么样了？[r]你想起来自己是谁了吗？
+[k]
+
+？1：无论如何也想不起来。
+？2：除了名字以外都很模糊……
+
+？！
+
+[messageOff]
+[wipeout noise 0.5 1.0]
+[se ad539]
+[seVolume ad539 0 0.6]
+[wait wipe]
+
+[wt 0.1]
+
+[wipein noise 0.5 1.0]
+[seStop ad539]
+[wait wipe]
+
+[wt 1.0]
+＠A：莱妮丝
+呵。和我的症状一样嘛。[r]直到刚才我都还以为你是我的弟子，现在我才意识到弄错了。
+[k]
+
+
+＠A：莱妮丝
+但是两个人怎么可能同时丧失记忆啊。[r]只能说我们的记忆被篡改了。
+[k]
+
+[charaFace A 5]
+
+＠A：莱妮丝
+这究竟是谁干的呢？[r]你该不会是犯人吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaRoll G 0]
+[charaPut G 0,-150]
+[charaEffect G bit_talk_shadow_aura01]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠特里姆玛乌
+是这样吗……？
+[k]
+
+？1：不不不！
+？2：头发好像在蠢蠢欲动！
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_shadow_aura01]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠A：莱妮丝
+别在意，刚才那只是玩笑加讥讽罢了。特里姆。
+[k]
+
+[charaFace A 0]
+
+
+＠A：莱妮丝
+[&他:她]若是犯人，那么刚才从窗户跳下来的时候[r]就不会那么狼狈了吧。
+[k]
+
+＠A：莱妮丝
+话说。这片街区也太陈旧了吧。[r]简直就像19世纪末20世纪初……
+[k]
+
+[charaFace A 4]
+
+＠A：莱妮丝
+不，这样的话……大概这个世界……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[se ad193]
+[distortionstart 0.0 0.5 0.5 0.0 0.0 100.0]
+[distortionstart 2.0 0.5 0.5 0.8 0.1 15.0]
+
+[bgmStop BGM_EVENT_70 1.0]
+[wait distortion]
+[wt 0.8]
+
+？1：莱妮丝小姐！
+？2：世界……扭曲了……！
+
+？！
+
+
+[charaPut I 1]
+[charaEffect I bit_talk_10]
+[wt 0.1]
+[se ad13]
+[wt 0.2]
+
+[se ad31 0.3]
+[wt 0.5]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadeTime F 0.4 0.7]
+[wt 0.5]
+
+＠玛修
+前辈！　听得……到吗……！
+[k]
+
+
+＠玛修
+灵子转移中……联络……至今也……！[r]和……被卷入其中的……前辈……
+[k]
+
+
+＠玛修
+不行……没法建立……通信……[r]总之……至少……灵基肖像的……手提箱……
+[k]
+
+
+＠A：莱妮丝
+灵基肖像？
+[k]
+
+[messageOff]
+[charaEffect I bit_talk_10]
+[seStop ad31 0.5]
+[se ad539]
+[charaFadeout F 0.3]
+[wt 0.4]
+[charaEffectStop I bit_talk_10]
+[charaEffectStop I bit_talk_10]
+[charaPut I 1200,1200]
+[wt 1.5]
+
+
+[se ad193]
+[distortionstart 0.8 0.5 0.5 1.5 0.1 8.0]
+[wt 0.6]
+[distortionstart 1.2 0.5 0.5 2.2 0.4 15.0]
+[wipeout uzumaki 1.5 0.5]
+[wait wipe]
+[wait distortion]
+
+[wipein uzumaki 1.5 0.5]
+[distortionstart 1.3 0.5 0.5 0.0 0.0 100.0]
+[scene 77800 2.0]
+[seStop ad193 1.5]
+[wait wipe]
+[wt 1.5]
+
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠A：莱妮丝
+什么嘛那是！[bgm BGM_MAP_6 0.1]
+[k]
+
+＠A：莱妮丝
+难道说在我们意识到记忆和世界的异常之后，[r]被妨碍的认识复原了吗？　可是这里是？
+[k]
+
+＠A：莱妮丝
+而且你刚才还收到了奇怪的通信吧？[r]这一切究竟是怎么回事？
+[k]
+
+？1：混杂了噪音，实在听不清楚……
+？2：好像是要把手提箱怎么样来着……
+
+？！
+
+[charaFace A 0]
+
+
+＠A：莱妮丝
+这么说起来，我拿着的手提箱好像并不是我的。[r]手提箱应该就是指这个吧。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[imageSet F back10000 1]
+[imageSet G cut053_trk 1]
+[charaScale F 1.01]
+[charaScale G 1.01]
+[charaDepth G 10]
+
+[charaFadeTime F 0.3 0.5]
+[wt 0.4]
+[se ad568]
+[charaFadein G 0.7 0,-200]
+[wt 2.2]
+
+＠A：莱妮丝
+呵。你自己的东西应该自己拿才对吧。
+[k]
+
+[messageOff]
+[charaFadeout G 0.3]
+[charaFadeout F 0.3]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠A：莱妮丝
+哎呀哎呀……谜团也未免太多了。[r]究竟为什么会变成现在这种状况呢？
+[k]
+
+[charaFace A 4]
+
+＠A：莱妮丝
+……不管怎么样，我都要找到[r]杀死兄长并夺走我们记忆的犯人。
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_6 0.8]
+[wt 1.0]
+[charaFace A 1]
+
+＠A：莱妮丝
+好，那出发吧！[bgm BGM_EVENT_82 0.1]
+[k]
+
+？1：哎，出发？
+？2：必须要一起去吗？！
+
+？！
+
+
+[charaChange A 1098164900 0 nomal 0]
+[wait charaChange A]
+
+＠A：莱妮丝
+嗯？　你当然得来帮忙啦。[r][&难道你忍心抛下一个弱女子吗？:难道你不准备帮助同样身为弱女子的我了吗？]
+[k]
+
+
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_82 1.5]
+[wait fade]
+
+[charaSet A 4032000 1 埃尔梅罗Ⅱ？世]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+[pictureFrame cut063_cinema]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+
+
+＠A：莱妮丝
+………………
+[k]
+
+[messageOff]
+[wt 0.5]
+[charaFace A 5]
+
+＠A：莱妮丝
+一定…………一定要抓住犯人。
+[k]
+
+＠A：莱妮丝
+在抓到杀害兄长的犯人并让其受到应有的惩罚之前，[r]我是绝对不会放弃的[line 3]！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[scene 10000]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[distortionstop 0.0]
+[wait distortion]
+
+[messageOff]
+[skip false]
+
+[bgmStop BGM_EVENT_82 0.4]
+[bgmStop BGM_MAP_6 0.4]
+[bgmStop BGM_EVENT_70 0.4]
+[bgmStop BGM_EVENT_80 0.4]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+
+[fowardEffectStop bit_talk_14]
+[pictureFrame]
+[charaSpecialEffectStop E appearance]
+[charaEffectStop E bit_talk_quickmove]
+[effectStop bit_talk_43h]
+[effectStop bit_talk_impactlanding]
+[fowardEffectStop bit_talk_quickmove]
+[effectStop bit_talk_magicbullet]
+[charaEffectStop I bit_talk_10]
+
+
+[scene 10000]
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+
+[skip false]
+
+[wt 1.0]
+
+[revivalBranch lblNormal lblRevival]
+
+[label lblNormal]
+
+[fowardEffect bit_queststart80244]
+[wait fowardEffect]
+
+[branch lblConf]
+
+[label lblRevival]
+
+[fowardEffect bit_queststart80352]
+[wait fowardEffect]
+
+[label lblConf]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,792 @@
+
+
+＄94-03-50-18-1-0
+
+[soundStopAll]
+
+
+[charaSet A 6014001 1 玛塔·哈丽]
+[charaSet B 5030001 1 山鲁佐德]
+[charaSet C 1098163800 1 春日局]
+[charaSet D 3030000 1 帕尔瓦蒂]
+[charaSet E 98110000 1 柳生但马守]
+[charaSet F 10003000 1 瞑生院祈荒]
+
+[charaSet I 98115000 1 特效用]
+[charaSet J 98115000 1 特效用]
+
+
+[scene 71700]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk off]
+[charaDepth A 4]
+[charaDepth B 6]
+
+[charaFace A 3]
+[charaFace B 3]
+[charaFadein A 0.1 2]
+[charaFadein B 0.1 0]
+[wt 2.0]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+[wt 0.5]
+[charaMoveReturn C 0,-5 1.5]
+[wt 2.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠玛塔·哈丽
+对不起哦～？　尽管我知道你很在意，[r]但现在我已经没有多余的魔力用在服装上了。
+[k]
+
+＠玛塔·哈丽
+还有，感觉现在情况出乎意料地艰难，[r]所以我想尽可能保持习惯的装束啦～～。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠山鲁佐德
+毕竟现在不知何时才能得到补给。
+[k]
+
+＠山鲁佐德
+非常抱歉，但我还是希望能保存[r]战斗这类与生存相关的魔力。
+[k]
+
+＠山鲁佐德
+因为一个掉以轻心，就会轻易死去……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+＠春日局
+咳。[wt 0.4][charaFace C 13]说到底，[r]这里并不是我的大奥。
+[k]
+
+＠春日局
+不尊重帮助自己之人的异国文化，[r]将大奥的习惯强加于人也是不好的。
+[k]
+
+[charaFace C 0]
+＠春日局
+所以这样没有问题，嗯。没关系。
+[k]
+
+[charaFace C 8]
+＠春日局
+……万一小姓那群孩子们冲出来，
+[k]
+
+＠春日局
+可能会对教育造成影响，[r]所以届时的应对方案则需要另行考虑。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠山鲁佐德
+感谢……您的理解……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠玛塔·哈丽
+当然，如果问题最终得以解决，[r]而我们需要进入正常大奥的话，
+[k]
+
+＠玛塔·哈丽
+届时我们一定会配合您的要求，所以请放心吧。[r]我知道，有句话叫入乡随俗。
+[k]
+
+＠玛塔·哈丽
+就算让我穿上十二件和服，[r]我也会毫无怨言地配合哦～。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth D 0]
+[charaDepth C 1]
+
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+[wt 0.35]
+
+[charaSpecialEffect C erasureReverse 1 0.3]
+[charaFace D 0]
+[charaFadein D 0.15 1]
+[wt 0.05]
+[seStop ad80 0.3]
+
+[wt 0.5]
+[charaTalk on]
+＠帕尔瓦蒂
+总之现在应该优先攻略迷宫。
+[k]
+
+＠帕尔瓦蒂
+这两位是非常可靠的，[r]放心吧，局小姐。
+[k]
+
+[charaFace D 4]
+＠帕尔瓦蒂
+好了。那我们也该继续前进……咦？[r]怎么了，御主？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[wt 0.3]
+[charaPut I 0,50]
+[charaEffect I bit_talk_liquor_communication01]
+[wt 1.5]
+
+？1：唔……唔……
+？2：总觉得脑袋有点疼。
+？！
+
+[fadeout black 0.3]
+[bgm BGM_EVENT_77 0.3 0.4]
+[wait fade]
+[charaEffectStop I bit_talk_liquor_communication01]
+[charaPut I 1200,1200]
+[wt 1.0]
+[fadein black 0.5]
+[bgm BGM_EVENT_77 0.5 1.0]
+[wait fade]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛塔·哈丽
+没事吧？　要喝水吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠山鲁佐德
+真……奇怪。[r]御主明明没有喝酒。
+[k]
+
+＠山鲁佐德
+这空间中确实弥漫着浓郁的酒气，[r]但我不认为光靠这种可以起到什么作用。
+[k]
+
+＠山鲁佐德
+脸也变红了，抗毒的性质应该还在生效吧。[r]应该还没有醉。
+[k]
+
+＠山鲁佐德
+然而，为什么？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠柳生但马守
+[line 3]差不多是时候了吧，瞑生院阁下。
+[k]
+
+＠柳生但马守
+刚才，您似乎从这名为大奥的存在中，[r]得出了某种答案。
+[k]
+
+＠柳生但马守
+应该是能说明主公异变的内容吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠玛塔·哈丽
+是吗？　好厉害！[r]希望你务必告诉我们呢。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠瞑生院祈荒
+……并不是什么特别的事。[r]而且对方其实也毫不隐瞒地说出来了。
+[k]
+
+＠瞑生院祈荒
+只是因为我是尼姑，[r]所以比他人更容易留心到那些而已。
+[k]
+
+[charaFace F 4]
+＠瞑生院祈荒
+不杀生戒。不妄语戒。[r]如果和这些一致，那这层[line 3]就是不饮酒戒吧。
+[k]
+
+？1：？
+？！
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaFace F 0]
+＠瞑生院祈荒
+前面两句是此前爱神迦摩随口提及的话。
+[k]
+
+＠瞑生院祈荒
+换言之，这是大奥各层的主题吧。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠柳生但马守
+主题啊。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠瞑生院祈荒
+对。这些话，是佛道五戒……[r]为了参悟而“不能做”的戒律。
+[k]
+
+＠瞑生院祈荒
+分别代表了不可杀生、不可撒谎、不可饮酒的意思。
+[k]
+
+[charaFace F 7]
+＠瞑生院祈荒
+然后，请各位回想一下迄今为止我们在各楼层做的事……
+[k]
+
+＠瞑生院祈荒
+我猜测，这些该不会就是这大奥整体的设计思路吧。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠帕尔瓦蒂
+说起做过的事……呃。
+[k]
+
+＠帕尔瓦蒂
+在起初的楼层就是很平常地和女官战斗。[r]其中大多数强度并没有大不了的。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠柳生但马守
+虽说都是些非人的人偶，[r]但若说我们是在杀生，或许也可以这么理解。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠帕尔瓦蒂
+在第二层楼，则是选择谎言中的道路前进……[r]然后在这里，则是被强行灌酒……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠玛塔·哈丽
+尽管我们已经不记得被要求[r]逼迫你们喝酒之后究竟有什么用意。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠山鲁佐德
+但隐约有一种“要将你们带去什么地方”的感觉，[r]嗯，似乎有这种感觉……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠瞑生院祈荒
+只要喝醉，就能前进，[r]现在我们只能这么假定了。
+[k]
+
+＠瞑生院祈荒
+如果这个猜想正确……也就是说大奥……[r]是否可以被称作[#只要破戒就能前进的地方]呢？
+[k]
+
+？1：或……或许没错！
+？！
+
+＠瞑生院祈荒
+反过来想，也可能发生[r][#只要遵守戒律就无法前进]的情况了。
+[k]
+
+＠瞑生院祈荒
+而现在正好印证了这种情况[line 3]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠柳生但马守
+[#不醉就无法前进]啊。[r]正因为如此，主公的身体才会出现异变吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠玛塔·哈丽
+确实有这个可能性呢。[r]虽说只因为[#没有]喝酒就感到头痛，似乎有点奇怪。
+[k]
+
+＠玛塔·哈丽
+不，这件事就先这么算了好了，[r]但不能保证接下来不会发生更糟的事吧？
+[k]
+
+＠玛塔·哈丽
+最糟的情况下，有可能寸步难行，[r]甚至可能口鼻喷血。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠山鲁佐德
+那可不行。[r]是会死的……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠瞑生院祈荒
+尽管我不知道为什么要设定这样的主题，[r]但对方如果是故意将大奥造成这个样子的话……
+[k]
+
+＠瞑生院祈荒
+其中一定有什么用意。所以，[r][#过于顺着对方的心意前进是很危险的][line 3]
+[k]
+
+＠瞑生院祈荒
+正是因为我这么想，[r]刚才才会拒绝了她们的邀请。
+[k]
+
+[charaFace F 4]
+＠瞑生院祈荒
+但不能因此让御主白白送死。
+[k]
+
+＠瞑生院祈荒
+尽管不知道发生了什么，[r]但现在只能铤而走险，选择喝醉这一个……
+[k]
+
+？1：区区头疼我还是能忍的。
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠山鲁佐德
+那可不行，头痛可是重病的征兆！[r]我说过很多遍了，这是会死的……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？2：就在附近随便找点酒一口闷吧。
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠玛塔·哈丽
+喂～，这可不行哦～？
+[k]
+
+＠玛塔·哈丽
+连对方的目的都不知道，[r]就跳进对方设好的套里也太危险了吧？
+[k]
+
+＠玛塔·哈丽
+在这种情况下，应该边争取时间边寻找出路。[r][#枕边话:Pillow talk]就是为此而使用的哦？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠帕尔瓦蒂
+就没有第三种方案吗。[r]不用顺着对方的心意，但又能继续前进的那种。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠玛塔·哈丽
+就算你这么说。唔……唔……
+[k]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaFace A 5]
+＠玛塔·哈丽
+……？
+[k]
+
+[charaFace A 1]
+＠玛塔·哈丽
+啊，我想到了！[r]我想做一种尝试，可以吗？
+[k]
+
+？1：有什么好主意吗？
+？！
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaFace A 0]
+＠玛塔·哈丽
+只是可能性而已。
+[k]
+
+＠玛塔·哈丽
+说到底，『醉』到底算是指什么呢？
+[k]
+
+＠玛塔·哈丽
+有些人即便没喝含酒精饮料，[r]也会像喝了含酒精饮料似的晕氛围吧。
+[k]
+
+＠玛塔·哈丽
+所以我啊[line 3]想用我的宝具试着这么做。
+[k]
+
+？1：玛塔·哈丽的宝具是……
+
+？！
+
+
+＠玛塔·哈丽
+没错，『[#拥有阳眼之女:Mata Hari]』。是[#洗脑宝具]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠山鲁佐德
+用您的宝具，让不会醉酒的御主……
+[k]
+
+＠山鲁佐德
+陷入[#等同于喝醉的精神状态]，[r]是这么一回事吧？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠玛塔·哈丽
+没错。这是个赌注，[r]看大奥是否能分辨『醉了的御主』。
+[k]
+
+？1：破罐子破摔。
+？2：试试看吧，拜托了！
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_82 1.0 0.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠玛塔·哈丽
+要开始了哦。全身放松，放轻松。[r]结合，揭开，沉溺于我这样的女人吧[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[effect bit_talk_28]
+[wt 0.1]
+[se ade276]
+[wt 0.7]
+[fadeout ff8fbd 0.5]
+[wait fade]
+[wt 0.1]
+[fadein ff8fbd 0.5]
+[wt 1.5]
+
+
+[bgm BGM_EVENT_82 1.0 1.0]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠帕尔瓦蒂
+怎么样……？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[cueSe Servants_202900 bac655]
+[wipeout uzumaki 1.0 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[wipein uzumaki 1.0 1.0]
+[cueSeStop bac655 1.0]
+[wait wipe]
+[wt 0.5]
+
+？1：噢噢……有种喝醉的感觉……
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠玛塔·哈丽
+怎么样？　头还痛吗？
+[k]
+
+？1：反倒觉得非常舒服。
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠瞑生院祈荒
+尽管没醉，却醉了……[r]似乎顺利地钻进了规则的空子呢？
+[k]
+
+＠瞑生院祈荒
+既然是用宝具办到的事，那只要一离开这层楼，[r]就能恢复原样了吧。万万岁。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠柳生但马守
+话虽如此，既然主公处于喝醉的状态……
+[k]
+
+＠柳生但马守
+我们就必须比此前更为卖力才行。[r]明白了吗，各位。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠瞑生院祈荒
+那当然啦。[r]尽管这酩酊感难以割舍，但准备万无一失。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth C 0]
+[charaDepth D 1]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+[wt 0.3]
+
+[charaSpecialEffect D erasureReverse 1 0.3]
+[charaFace C 0]
+[charaFadein C 0.2 1]
+[wt 0.1]
+[seStop ad80 0.3]
+
+[wt 0.5]
+[charaTalk on]
+＠春日局
+我都听到了。
+[k]
+
+＠春日局
+首先是玛塔·哈丽大人，尽管我不是很明白，[r]但从困境中拯救了[%1]阁下的那种术。
+[k]
+
+[charaFace C 1]
+＠春日局
+实在是太精彩了！[r]了不起！（摸摸头。）
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠玛塔·哈丽
+哎呀，呵呵？　我已经好久没有[r]被别人当孩子一样直率地夸奖了呢～？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠春日局
+你或许经历过不少辛苦，还那么年轻。[r]在我看来，你就像是个孩子。
+[k]
+
+[charaFace C 13]
+＠春日局
+好了[line 3]如果“醉就能前进”[r]这个法则真的是大前提的话，
+[k]
+
+＠春日局
+通往下一层的路径本身[r]应该也会依照这个法则隐藏着什么线索。
+[k]
+
+＠春日局
+必须精神高度集中仔细辨认……还有，[r]要边盯紧脚步开始踉跄的[%1]阁下，
+[k]
+
+＠春日局
+边前进才行！
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

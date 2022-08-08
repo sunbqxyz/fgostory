@@ -1,0 +1,553 @@
+
+
+＄94-01-53-12-2-0
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+
+[charaSet A 1098116710 1 梅芙监狱长]
+[charaSet B 4018001 1 魁札尔·科亚特尔副监狱长]
+[charaSet C 4026000 1 伊什塔尔]
+[charaSet D 98001000 1 玛修]
+[charaSet E 5009003 1 达·芬奇]
+[charaSet F 3029002 1 源赖光]
+[charaSet G 5022001 1 三藏]
+[charaSet H 5009000 1 特效用dummy]
+
+[scene 44301]
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+[charaEffect A bit_talk_06]
+
+＠梅芙监狱长
+怎么会这样啦！[r]康诺特确实是我的土地啊[line 2]！
+[k]
+
+＠梅芙监狱长
+我确实随心所欲地支配着这片土地，[r]但我可是女王，这不是理所当然的吗！
+[k]
+
+[charaFace A 8]
+
+＠梅芙监狱长
+不能接受，不能接受～！[r]真是的，我到底该上哪儿才能找到优秀的勇者啊～！
+[k]
+
+[messageOff]
+[charaEffectStop A bit_talk_06]
+[wait charaEffect A bit_talk_06]
+[se ad52]
+[charaSpecialEffect A flashErasure 1 2.0]
+[wait charaSpecialEffect A]
+
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+[charaEffect B bit_talk_06]
+
+＠魁札尔·科亚特尔副监狱长
+我本想说再多一些，再多一些呢……
+[k]
+
+＠魁札尔·科亚特尔副监狱长
+但愉快的摔角时间也该解散了吧～？
+[k]
+
+[charaFace B 0]
+
+＠魁札尔·科亚特尔副监狱长
+看守挽留出狱之人实属本末倒置。[r]毕竟就此消失才是交换条件呢！
+[k]
+
+[charaFace B 1]
+
+＠魁札尔·科亚特尔副监狱长
+好啦～，合格！[r]库库尔坎式毕业考试，到此结束！
+[k]
+
+[bgmStop BGM_EVENT_3 1.0]
+[messageOff]
+[charaEffectStop B bit_talk_06]
+[wait charaEffect B bit_talk_06]
+[se ad52]
+[charaSpecialEffect B flashErasure 1 2.0]
+[wait charaSpecialEffect B]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.4 1]
+[wt 0.2]
+
+＠伊什塔尔
+（漂亮，逆转大胜利哦，[%1]！[r]　最大的强敌退场了……！）
+[k]
+
+[charaFace C 6]
+
+＠伊什塔尔
+大家，干得漂亮！[r]这样一来，邪恶可以说已经全部毁灭了！
+[k]
+
+[charaFace C 1]
+
+＠伊什塔尔
+好了，让我们继续比赛吧！[r]还差一点，所有的辛苦就都将有回报了！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+[wt 0.2]
+
+＠玛修
+说得对。尽管不得不与梅芙小姐战斗，[r]但万幸的是大家都获得了自由。
+[k]
+
+[charaFace D 0]
+
+＠玛修
+但是……看来梅芙小姐……[r]并不是特异点的核心呢。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-90]
+[wt 0.3]
+
+＠达·芬奇
+哟，我是大家久违的达·芬奇亲哦。
+[k]
+
+＠达·芬奇
+正如玛修所说的，这个地点的特异点反应并未消失。[r]看来这特异点是扎根于土地的那类吧。
+[k]
+
+＠达·芬奇
+失去了她的影响力的现在，只要认真搜索，[r]应该就能找到核心的位置了[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠伊什塔尔
+这太浪费时间了。[r]只要伊什塔尔比赛结束，那个核就会自动消灭。
+[k]
+
+＠伊什塔尔
+我应该不用多说了，继续比赛才是最快的捷径。
+[k]
+
+？1：毕竟打从一开始就是为了这个目的才举行的比赛嘛。
+？2：终点近在眼前，事已至此，就该有始有终！
+？！
+
+
+[charaFace C 2]
+
+＠伊什塔尔
+对，说得没错！
+[k]
+
+＠伊什塔尔
+所以赛车！　最重要的是赛车！[r]各位，去仓库回收各位的赛车！
+[k]
+
+[charaFace C 0]
+
+＠伊什塔尔
+大家还有调整的时间，千万别慌张哦！
+[k]
+
+[charaFace C 6]
+
+＠伊什塔尔
+届时不准你们制造新赛车！[r]一定要使用此前一直在用的赛车才行！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+[wt 0.2]
+
+＠源赖光
+这个嘛，确实。我可不会更换[r]一直以来都在为我努力工作的京极啊。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.2]
+
+＠三藏
+嗯嗯！　无论结果如何，[r]既然到了这一步，若不与现在的白龙一起前进，
+[k]
+
+＠三藏
+就算冲到终点，也不能说是顺利完成了旅途！[r]啊，当然我们会努力争取第一名哦！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠伊什塔尔
+我当然也会检查，但你们回收了赛车后，[r]首先要检查我在比赛前交给你们的仪式部件哦。
+[k]
+
+＠伊什塔尔
+如果没有那个，将会即刻失去资格，不容辩解！
+[k]
+
+[charaSet H 5032000 1 尼禄]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+[wt 0.2]
+
+＠尼禄
+汝还真是莫名执着于那玩意儿呢……不过，[r]一定是因为没有那个就无法完成让特异点消失的仪式了吧。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠伊什塔尔
+好啦，综上所述，快去准备，去准备啦！
+[k]
+
+[charaFace C 1]
+
+＠伊什塔尔
+漫长的监狱生活结束了。[r]看台上的观众们都在等待你们继续驰骋！
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_2 1.2]
+[wait fade]
+[charaFadeout C 0.1]
+[wt 1.0]
+[wipeFilter cinema 0.5 0]
+[charaSet A 6026001 1 怪人∞面相]
+[charaSet B 98106900 1 戈耳工]
+[charaSet C 3008000 1 恩奇都]
+[charaSet D 98106000 1 金固]
+[charaSet E 5009000 1 特效用dummy]
+[charaScale B 1.01]
+[fadein black 1.2]
+[wait fade]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_1 0.1]
+
+[charaEffect A bit_talk_06]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 0,-50]
+
+＠怪人∞面相
+……呼。[r]总算是顺利糊弄过去了。
+[k]
+
+＠怪人∞面相
+不过由于表演过于逼真，以至于灵核都被[r]抽出来了，还请见谅。但这样一来，各位观众也会信以为真了。
+[k]
+
+[charaFace A 0]
+
+＠怪人∞面相
+虽说这角色很不起眼，但很有扮演的价值。[r]确实不负黑暗侠客的威名呢。
+[k]
+
+[charaFace A 1]
+
+＠怪人∞面相
+好啦，接下来就随你怎么办吧，大姐。[r]如果还有下次机会，届时务必要和我交手哦。
+[k]
+
+[messageOff]
+[charaEffectStop A bit_talk_06]
+[wait charaEffect A bit_talk_06]
+[se ad52]
+[charaSpecialEffect A flashErasure 1 2.0]
+[wait charaSpecialEffect A]
+
+[wt 0.5]
+
+[messageOff]
+[fadeout black 1.2]
+[wait fade]
+[scene 45100]
+[wt 1.0]
+[se ad14]
+[seVolume ad14 0 0.05]
+[wt 0.1]
+[seVolume ad14 1.2 0.6]
+[fadein black 1.2]
+[wait fade]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 0,-50]
+[wt 0.2]
+
+＠戈耳工
+……监狱正在崩溃。[r]原来如此。这场骚动是你的计谋吧？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 0,-50]
+[wt 0.2]
+
+＠恩奇都
+唔？　啊，是指梅芙消失后监狱也消失的事吗？[r]那当然。
+[k]
+
+＠恩奇都
+她们想要越狱。[r]但我想毁了这座监狱。
+[k]
+
+[charaFace C 1]
+＠恩奇都
+没有人指出我们认知的差异。[r]我也故意绝口不提，始终为达成这个目的而行动。
+[k]
+
+＠恩奇都
+以异乡女神作为奠基，建造强大的监狱……[r]这个创意无可挑剔，但应该好好挑选活祭对象才行。
+[k]
+
+[charaFace C 0]
+＠恩奇都
+是吧？　既然是监狱，就该选择正义的女神做基石。[r]复仇女神只会扰乱监狱的风纪。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠戈耳工
+这是讥讽吗？　我可不是心甘情愿来当基石的。[r]打从一开始我就是作为活祭被召唤出[line 3]等一下！
+[k]
+
+[messageOff]
+[charaFace B 2]
+[se bac167]
+[seStop bac167 0.3]
+[charaPut E 192,50]
+[charaEffect E bit_talk_kushizashi01]
+[wt 0.2]
+[fowardEffect bit_talk_13 192,0]
+[charaShake B 0.15 3 3 0.5]
+[wt 0.1]
+[charaPut E 1200,-1200]
+[se ad250]
+[seVolume ad250 0 0.3]
+[wt 0.4]
+[se bac167]
+[seStop bac167 0.3]
+[charaPut E -192,50]
+[charaEffect E bit_talk_kushizashi01]
+[wt 0.2]
+[fowardEffect bit_talk_13 -192,0]
+[charaShake B 0.15 3 3 0.5]
+[wt 0.1]
+[charaPut E 1200,-1200]
+[se ad251]
+[seVolume ad251 0 0.3]
+[wt 0.4]
+[wt 0.4]
+
+
+
+[charaFace B 2]
+
+＠戈耳工
+……你这家伙……打算做什么？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠恩奇都
+我很抱歉用了粗暴的手段。[r]让你的玉鳞受到了一些损伤吧。
+[k]
+
+[charaFace C 0]
+
+＠恩奇都
+但这样一来，支撑这座监狱的基石就能获得自由了。[r]尽管你不可能很有礼貌地从正门出去，
+[k]
+
+[charaFace C 1]
+
+＠恩奇都
+但凭你的能力，应该能在这种情况下逃脱吧？[r]毕竟你很擅长潜伏于土中。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-50]
+
+＠戈耳工
+…………你是让我向你道谢吗。[r]但我不认识你。你究竟是[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠恩奇都
+谁知道呢？　说实话，[r]我也不清楚自己为什么要救你。
+[k]
+
+[charaFace C 5]
+＠恩奇都
+但是这[#心脏:心中]在强烈地呼喊。
+[k]
+
+＠恩奇都
+说再也不想看到复合神性……不想看到这[r]坠入复仇深渊的女神在不知自由为何的情况下消失。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠戈耳工
+[line 6]。
+[k]
+
+[shake 0.07 3 3 1.2]
+[seVolume ad14 1.0 0.9]
+[se ad228]
+[seStop ad228 1.5]
+[wt 0.8]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠恩奇都
+这里快要被埋没了。[r]我先告辞了。
+[k]
+
+＠恩奇都
+彼此都是没有御主之身。
+[k]
+
+＠恩奇都
+虽说不能长时间现界，但在退去前的这段时间内，[r]为何不好好享受这个世界呢？
+[k]
+
+[messageOff]
+[charaDepth D 2]
+[charaDepth C 1]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFadein D 0.7 0,-50]
+[wt 2.0]
+[charaFadeout D 0.7]
+[wt 1.5]
+
+[charaFadeout C 0.4]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠戈耳工
+[line 3]你是[line 3][r]原来如此，你是[line 3]
+[k]
+
+[messageOff]
+[shake 0.05 7 7 1.5]
+[seStop ad14 2.0]
+[se ad211]
+[wt 1.0]
+[shake 0.07 5 5 0]
+[effect bit_talk_33]
+[se ad228]
+
+
+[bgmStop BGM_EVENT_1 2.5]
+[fadeout black 2.5]
+[wait fade]
+[shakeStop]
+[seStop ad228 1.5]
+[wt 2.0]
+[soundStopAll]
+[end]

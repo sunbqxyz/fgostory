@@ -1,0 +1,647 @@
+
+＄91-10-97-01-1-1
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 10007000 1 沖田オルタ]
+[charaSet B 1098216900 1 煉獄]
+[charaSet C 10007001 1 魔・沖田総司]
+[charaSet D 1098171600 1 マックスウェルの悪魔]
+[charaSet E 7023000 1 エフェクト用]
+[charaSet G 1098131000 1 黒巨人]
+
+
+[bgm BGM_BATTLE_86 0.1]
+[scene 60200]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠マックスウェルの悪魔
+なるほど、さすが抑止の守護者……、
+[k]
+
+＠マックスウェルの悪魔
+なんと　みにくい　人の祈り[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠魔・沖田総司
+…………。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[charaEffect D bit_talk_charge_ppl02]
+[se ad970]
+[seVolume ad970 0 0.0]
+[seVolume ad970 0.1 0.7]
+＠マックスウェルの悪魔
+ですがそれを超えるのが我が存在の[seStop ad970 1.7]
+[k]
+
+[charaFace D 2]
+＠マックスウェルの悪魔
+[line 3]『証明』！！
+[k]
+
+[messageOff]
+[se ad439]
+[seStop ad439 1.7]
+[fowardEffect bit_talk_29_black]
+[wt 0.1]
+[charaEffectStop D bit_talk_charge_ppl02]
+[fowardEffectStop bit_talk_29_black]
+[wt 1.6]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[charaEffect C bit_talk_36_sl01]
+[se ad39]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 1.4]
+
+＠魔・沖田総司
+[#塵刹:じんせつ]を穿つ、無辺の光をもって、天命を断つ。
+[k]
+
+[charaFace C 2]
+＠魔・沖田総司
+『[#絶剱・無穹三段:ぜっけん・むきゅうさんだん　]』！！
+[k]
+
+[messageOff]
+[se ad733]
+[wt 0.2]
+
+[fadeout white 0.2]
+[wait fade]
+[charaFadeout C 0.1]
+[fowardEffectStop bit_talk_36_sl01]
+[charaEffectDestroy C bit_talk_36_sl01]
+[wt 0.4]
+[seStop ad733 0.7]
+[fadein white 0.2]
+[wait fade]
+
+[cueSe SE_21 21_ad1134]
+[effect bit_talk_h_slash02_fs]
+[wt 1.5]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠マックスウェルの悪魔
+[line 3]ッ！？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFadein G 0.1 1]
+[wt 0.3]
+[se ad818]
+[se ad865]
+[charaShake G 0.04 4 4 1.0]
+[wt 1.5]
+[bgmStop BGM_BATTLE_86 2.5]
+[fowardEffect bit_talk_black_mist]
+[charaSpecialEffect G enemyErasure 1]
+[se ba6]
+[se ad161]
+[wt 0.1]
+[fowardEffectStop bit_talk_black_mist]
+[wait charaSpecialEffect G]
+[wt 2.0]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+[charaMove D 0,-30 0.4]
+[wt 0.3]
+[se ad144]
+[wt 1.2]
+[bgm BGM_EVENT_70 0.1]
+
+＠マックスウェルの悪魔
+アナタに敗れたというコトは、[r]やはり私は否定される運命というコトですか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠魔・沖田総司
+…………。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 0,-30]
+＠マックスウェルの悪魔
+[line 3]であれば、
+[k]
+
+＠マックスウェルの悪魔
+同じ人の祈りから生まれ争う、[r]私達とは何なのでしょうね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠魔・沖田総司
+…………。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 0,-30]
+＠マックスウェルの悪魔
+いやはや……、とかく人とは、
+[k]
+
+[charaFace D 7]
+[bgmStop BGM_EVENT_70 1.5]
+＠マックスウェルの悪魔
+[line 3]度しがたい。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠魔・沖田総司
+…………。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[se ade50]
+[seVolume ade50 0 0]
+[seVolume ade50 0.4 1.0]
+[se ad414]
+[seVolume ad414 0 0]
+[seVolume ad414 0.4 1.0]
+[se ade112]
+[seVolume ade112 0 0]
+[seVolume ade112 0.4 1.0]
+[fowardEffect bit_talk_grail_mud]
+[wt 2.7]
+[seStop ade50 2.0]
+[seStop ad414 2.0]
+[seStop ade112 2.0]
+
+[fadeout black 1.5]
+[wait fade]
+[fowardEffectDestroy bit_talk_grail_mud]
+[charaFadeout C 0.1]
+[scene 59200]
+[wt 3.5]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_95 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠魔・沖田総司
+…………。
+[k]
+
+＠煉獄
+お疲れさん、今回もしんどい戦いだったな。
+[k]
+
+＠煉獄
+なんだよ、あのヤベェ奴。
+[k]
+
+＠煉獄
+通常の人類史にあんなの顕現しようがないだろ。
+[k]
+
+＠煉獄
+まあ、そういう時だからこその主か。
+[k]
+
+＠煉獄
+にしたって、急に呼び出されてあんなのと[r]やり合えっていい加減にしてほしいんだよね。
+[k]
+
+[charaFace C 1]
+＠魔・沖田総司
+……そうだな、でも煉獄のお陰で何とかなった。
+[k]
+
+＠魔・沖田総司
+ありがとう、いつも私を助けてくれて。
+[k]
+
+＠煉獄
+うっ……、そ、そういうのいいから！
+[k]
+
+[charaFace C 0]
+＠魔・沖田総司
+いいのか？
+[k]
+
+＠煉獄
+…………。
+[k]
+
+＠煉獄
+あーもー！　嬉しい、嬉しいですよ。
+[k]
+
+＠煉獄
+嬉しいでーす！
+[k]
+
+[charaFace C 1]
+＠魔・沖田総司
+ふふ、良かった。
+[k]
+
+＠煉獄
+はぁ……、主にはホント参るよ。
+[k]
+
+＠煉獄
+…………。
+[k]
+
+＠煉獄
+なあ……。
+[k]
+
+[charaFace C 0]
+＠魔・沖田総司
+……なんだ？
+[k]
+
+＠煉獄
+俺が言うのも妙な話だけどさ。
+[k]
+
+＠煉獄
+主はこんな事を続けてて飽きないのか？
+[k]
+
+[charaFace C 7]
+＠魔・沖田総司
+…………。
+[k]
+
+＠魔・沖田総司
+おまえは飽きたのか？
+[k]
+
+＠煉獄
+なっ！？　そりゃ俺はもううんざ……、
+[k]
+
+[charaFace C 4]
+＠魔・沖田総司
+…………。
+[k]
+
+＠煉獄
+……いや、別に。
+[k]
+
+[charaFace C 9]
+＠魔・沖田総司
+……そうか。
+[k]
+
+＠煉獄
+……はぁ。
+[k]
+
+＠煉獄
+あーあ、これだから主はなー。
+[k]
+
+＠煉獄
+……まあいいさ。
+[k]
+
+＠煉獄
+俺もぐちぐち言うのはこのくらいにしとく。
+[k]
+
+＠煉獄
+あいつと約束もしたしな。
+[k]
+
+[charaFace C 7]
+＠魔・沖田総司
+あいつ？　あいつって誰の事だ？
+[k]
+
+＠煉獄
+へっへー、そいつは最後のお楽しみってやつ。
+[k]
+
+＠煉獄
+こういうのは先に言っちゃうと[r]ありがたみが減るから。
+[k]
+
+[charaFace C 9]
+＠魔・沖田総司
+そうか、煉獄が言うならそうなんだろうな。[r]楽しみにするとしよう。
+[k]
+
+＠煉獄
+素直すぎるでしょ！
+[k]
+
+＠煉獄
+そこは少し根掘り葉掘り聞いてほしかったって[r]いうかなんて言うか……。
+[k]
+
+[charaFace C 7]
+＠魔・沖田総司
+……難しいな、煉獄は。
+[k]
+
+＠煉獄
+全然難しくないから。
+[k]
+
+＠煉獄
+とにかく、こんな事ずっとさせられるんだ。
+[k]
+
+＠煉獄
+最後に楽しみを用意するくらいは構わないだろ。
+[k]
+
+＠煉獄
+……なあ、主よ。
+[k]
+
+[charaFaceFade C 8 0.5]
+＠魔・沖田総司
+…………。
+[k]
+
+[bgmStop BGM_EVENT_95 2.0]
+
+＠煉獄
+主……？　おい、主よ……。
+[k]
+
+＠魔・沖田総司
+…………。
+[k]
+
+＠煉獄
+…………。
+[k]
+
+＠煉獄
+……そうか、ようやくか。
+[k]
+
+＠煉獄
+ゆっくり、ゆっくり休んでくれ。
+[k]
+
+[messageOff]
+[wt 1.0]
+[wipeout rectangleStripDownToUp 1.0 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[scene 110100]
+[wt 1.0]
+[wipein rectangleStripUpToDown 1.0 1]
+[wait wipe]
+[wt 1.0]
+
+＠煉獄
+[line 3]我が終生の主よ。
+[k]
+
+
+[messageOff]
+[wt 1.5]
+
+[fadeout white 2.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[scene 10000]
+[wt 2.0]
+[fadein white 1.5]
+[wait fade]
+
+[wipeout openEye 0.3 1]
+[wait wipe]
+[branchQuestNotClear lblNotClear1 3000303]
+[label lblClear1]
+
+[scene 105800]
+[branch lblIsClearConf1]
+
+[label lblNotClear1]
+[scene 106000]
+
+[label lblIsClearConf1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+[blur lens 0.1 4 100]
+[wt 2.2]
+[blur lens 1.0 0 0]
+[wipein openEye 1.0 1]
+[wait wipe]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFace A 9]
+
+＠沖田オルタ
+……目が覚めたか、マスター？
+[k]
+
+？1：あ、寝ちゃってた？
+
+？2：うーん、何か大事なことが……
+
+？！
+
+[charaFace A 1]
+＠沖田オルタ
+ああ、私も寝ていたが安心してくれ、[r]ちゃんと守っていたから。
+[k]
+
+＠煉獄
+寝てたら守れてないだろ。
+[k]
+
+[charaFace A 3]
+＠沖田オルタ
+む、いや、こうちゃんと覆いかぶさっていたから[r]大丈夫だぞきっと。
+[k]
+
+＠煉獄
+はいはい、そういう事にしておきましょうね。
+[k]
+
+[charaFace A 0]
+＠沖田オルタ
+そういう事にしてくれるのか、ありがとう煉獄。
+[k]
+
+＠煉獄
+……ったく。
+[k]
+
+[messageOff]
+[se ad441]
+[wt 1.5]
+[charaFace A 4]
+＠沖田オルタ
+ん？　そろそろ夕食の時間か？
+[k]
+
+[charaFace A 9]
+＠沖田オルタ
+マスター、私と一緒に食堂に行こう。
+[k]
+
+＠沖田オルタ
+確か朝方、今日の夕食はおでんにしてくれると[r]言っていた気がするぞ。
+[k]
+
+[charaFace A 1]
+＠沖田オルタ
+嬉しいな、嬉しみ。
+[k]
+
+[charaFace A 9]
+＠沖田オルタ
+さあ、早く行こうマスター。
+[k]
+
+[messageOff]
+[charaMove A 0,0 0.4]
+[wt 0.2]
+[se ad7]
+[wt 1.0]
+[charaFadeout A 0.4]
+[charaMove A 40,0 0.4]
+[se ad60]
+[seStop ad60 1.0]
+[wt 1.4]
+
+＠煉獄
+[line 3]おい、約束は守れよ。
+[k]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.4 1]
+＠沖田オルタ
+……？
+[k]
+
+＠沖田オルタ
+何か言ったか煉獄？
+[k]
+
+＠煉獄
+いや、別に。
+[k]
+
+？1：……約束は守るよ
+
+？2：忘れちゃったけど、忘れないよ
+
+？！
+
+＠煉獄
+おう、ありがとな。
+[k]
+
+[charaFace A 0]
+＠沖田オルタ
+マスターに煉獄がありがとうしている。
+[k]
+
+＠沖田オルタ
+何か嬉しいことがあったのか？
+[k]
+
+[charaFace A 9]
+＠沖田オルタ
+それなら私からもありがとうだな。
+[k]
+
+＠煉獄
+いや、だからそういうのいいって。
+[k]
+
+[charaFace A 1]
+＠沖田オルタ
+よくない、なんだかわからないけど[r]ありがとうはありがとうなんだ。
+[k]
+
+[charaFace A 7]
+＠沖田オルタ
+そうだ、思い出した。
+[k]
+
+＠沖田オルタ
+私はそのためにもここにいるんだ。
+[k]
+
+[charaFace A 8]
+＠沖田オルタ
+そう、だから……、
+[k]
+
+[charaFace A 9]
+＠沖田オルタ
+[line 3]ありがとう、マスター。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 2.0]
+[fadeout white 2.0]
+[wait fade]
+[charaFadeout A 0.1]
+[scene 10000]
+[wt 1.5]
+[fadein white 1.0]
+[wait fade]
+[fadeout black 0.1]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]
+

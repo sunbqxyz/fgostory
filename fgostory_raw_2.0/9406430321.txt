@@ -1,0 +1,335 @@
+
+
+＄94-06-43-03-2-1
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5050000 1 サンタマルタ]
+[charaSet C 2001002 1 エミヤ]
+[charaSet D 4011001 1 ブーディカ]
+[charaSet E 7016001 1 タマモキャット]
+[charaSet F 3047001 1 パーシヴァル]
+[charaSet G 1098224600 1 タラスク]
+
+[charaSet I 3039001 1 ガレス]
+
+[charaSet B 3039001 1 ガレス_シルエット]
+[charaFilter B silhouette 00000080]
+
+[charaDepth B 7]
+[charaDepth I 5]
+
+
+[scene 141000]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠タマモキャット
+お菓子ゴーレム、撃破！[r]クッキーの中からドライフルーツとは！
+[k]
+
+[charaFace E 6]
+
+
+＠タマモキャット
+きのこパイに似た歓びを、アナタに。[r]これはネコも止まるまい。もぐもぐ（もぐもぐ）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+ああもう、倒した先から食べちゃってる。[r]というか食材が歩いて襲ってきたってこと、よね？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+新鮮な食材が待ち受ける、[r]と言うからどういうことかと思ったが……
+[k]
+
+[charaFace C 0]
+
+＠エミヤ
+なるほど。食材がエネミーとして活動する領域か。
+[k]
+
+[charaFace C 1]
+
+＠エミヤ
+このあたりのエネミーを倒して回れば、[r]シュトレンの食材は確保できそうだ。
+[k]
+
+[bgm BGM_EVENT_77 0.5 0.5]
+
+＠I：？？？
+おっと、お待ちを！
+[k]
+
+＠I：？？？
+お菓子ゴーレムを構成する食材は、[r]確かにシュトレンにばっちり向いているかと。
+[k]
+
+＠I：？？？
+ですが！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠タマモキャット
+お。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+おお。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[bgmStop BGM_EVENT_77 1.5]
+
+＠ブーディカ
+あら、サーヴァント反応？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[se ad166]
+[seStop ad166 1.0]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 1.4]
+[charaFace I 12]
+[charaFadein I 0.1 1]
+[charaFadeout B 0.4]
+[wt 1.4]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaFace I 11]
+
+[bgm BGM_EVENT_94 0.1]
+
+
+＠ガレス
+せっかくですので、[r]一番美味しいレアゴーレムを探してはいかがでしょう！
+[k]
+
+[charaFace I 17]
+
+
+＠ガレス
+おほん。もとい、[r]一番美味しいレアお菓子ゴーレムを探しては！
+[k]
+
+[charaFace I 1]
+
+＠ガレス
+いかがでしょうか！
+[k]
+
+？1：ガレス！
+
+[charaFace I 0]
+
+＠ガレス
+はい、ガレス参上です。[r]第一エリアのナビ役を仰せつかりました。
+[k]
+
+[charaFace I 1]
+
+
+＠ガレス
+ナビとして皆様をご案内いたします！
+[k]
+
+[charaFace I 0]
+
+＠ガレス
+短い間ではありますが、[r]よろしくお願いいたしますね。
+[k]
+
+[branch select01_1]
+
+
+？2：スカサハ＝スカディの言ってたナビって……
+
+[charaFace I 1]
+
+＠ガレス
+えへへ、私です。
+[k]
+
+[charaFace I 17]
+
+＠ガレス
+廊下を歩いていたらお声掛けいただきまして、[r]御役目を仰せつかりました！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+……素晴らしい。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 3]
+[charaFadein I 0.1 1]
+[wt 0.3]
+[se ad166]
+[seStop ad166 0.7]
+[charaMoveReturn I 0,5 0.3]
+[wt 0.5]
+[se ad166]
+[seStop ad166 0.7]
+[charaMoveReturn I 0,5 0.3]
+[wt 0.5]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+素晴らしい！[r]淑女の願いを果たすことは騎士道の本懐！
+[k]
+
+＠パーシヴァル
+英霊となっても騎士の礼節あり！[r]それでこそ円卓の騎士ガレス！
+[k]
+
+[charaFace F 8]
+
+＠パーシヴァル
+私は感動している。[r]ああ、ガレスの力を借りられるなら百人力だ。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 3]
+[charaFadein I 0.1 1]
+[wt 1.0]
+
+[charaFace I 18]
+
+
+＠ガレス
+お、おおげさですよパーシヴァル卿！[r]たまたまお声掛けいただいただけなのでーっ！
+[k]
+
+[charaFace I 12]
+
+＠ガレス
+でも、はい。[r]やるからにはしっかり務めますっ。
+[k]
+
+
+＠ガレス
+ガレスにお任せください、皆様！
+[k]
+
+？！
+
+
+
+？1：よろしく、ガレス
+
+[charaFace I 17]
+
+＠ガレス
+はいっ。
+[k]
+
+？！
+
+[label select01_1]
+
+[messageOff]
+[charaFace I 1]
+[wt 1.0]
+[charaFace I 2]
+
+＠ガレス
+ここは、お菓子やケーキの特別食材エリア！
+[k]
+
+[charaFace I 5]
+
+＠ガレス
+並み居るお菓子ゴーレムは[r]すべて食材なのですが、その中に一体だけ、
+[k]
+
+
+＠ガレス
+特別に美味しい……[r]一番のレアお菓子ゴーレムが存在するのです。
+[k]
+
+[charaFace I 2]
+
+＠ガレス
+ですので、ここはひとつお任せください。[r]ガレスがご案内いたします！
+[k]
+
+[messageOff]
+[charaFace I 1]
+[wt 1.0]
+
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_94 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

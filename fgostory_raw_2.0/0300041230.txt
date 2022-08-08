@@ -1,0 +1,1378 @@
+
+
+＄03-00-04-12-3-0
+
+
+[soundStopAll]
+[skip false]
+
+[charaSet A 8001410 1 玛修]
+[charaSet B 1098123210 1 戈尔德鲁夫]
+[charaSet C 1019001 1 罗摩]
+[charaSet D 23003001 1 伽内什]
+[charaSet E 1098124510 1 达·芬奇]
+[charaSet F 98115300 1 福尔摩斯]
+[charaSet G 1098167100 1 男性]
+[charaSet H 1039001 1 拉克什米]
+[charaSet J 98115000 1 特效用]
+
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[maskin black 1]
+[wait mask]
+
+[se ad761]
+[seVolume ad761 0 0.6]
+[effect bit_talk_yuga_clock_09]
+[wt 2.3]
+[se ad756]
+[wt 3.7]
+
+[fadeout black 1.0]
+[seStop ad761 1.0]
+[seStop ad756 1.0]
+[wait fade]
+
+[effectStop bit_talk_yuga_clock_09]
+[effectDestroy bit_talk_yuga_clock_09]
+
+[wt 0.5]
+
+[skip true]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+
+[scene 74901]
+
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_EVENT_77 0.1]
+
+[se ad172]
+[wt 1.0]
+[seStop ad172 0.1]
+[se ad15]
+[wt 0.5]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠福尔摩斯
+距离目的地的城镇还有一段路程，但出现了人类反应。[r]说不定……是和你们一样的旅行者呢。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+情报是非常重要的。稍微向他打听一下情况吧。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad60]
+[wt 0.6]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+[seStop ad60 0.1]
+
+＠男性
+唔？　你们是……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛修
+您好。我们想打听点事，请问方便吗？
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠男性
+哎哎？　你们打算去前面的城镇？[r]听我一句劝吧，千万别去！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠伽内什
+咦？　为什么啊？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+＠男性
+[#是疫病啦]。很严重的传染病。
+[k]
+
+＠男性
+我原本打算在那座城镇里找个新工作，[r]但听到这消息后就慌忙避开了。
+[k]
+
+＠男性
+当时好像已经死了好几个人了……[r]现在的情况也许更糟糕。说不定都尸横遍野了。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠罗摩
+疫病吗。这……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠男性
+那我走啦，我可是忠告过你们了哦。
+[k]
+
+＠男性
+遇到迦利还可以祈祷或等待圣兽大人搭救，[r]但遇到传染病可不能这样。你们一定要珍惜性命哦。
+[k]
+
+[messageOff]
+[se ad60]
+
+[charaMove G 50,0 0.5]
+[charaFadeout G 0.4]
+[wt 0.4]
+[seStop ad60 0.5]
+[wt 0.8]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠伽内什
+祈祷和圣兽啊……[r]这样只能自我安慰而已。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠拉克什米
+然后呢……我们该怎么办？
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+[wt 0.8]
+[charaFace B 15]
+[charaShake B 0.05 2 2 0]
+
+＠戈尔德鲁夫
+我竟然会忘记这么基本的问题。[r]技术顾问。在潜航艇里，那个……
+[k]
+
+＠戈尔德鲁夫
+用来保护我们的健康，[r]抵抗一切病原菌的预防接种已经做好了吧？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaShakeStop B]
+
+[charaTalk E]
+[charaFace E 28]
+[charaFadein E 0.1 1]
+
+＠达·芬奇
+那当然啦！　毕竟我们迄今为止去过那么多地方了吧？[r]绝大部分传染病都已经做好预防啦！
+[k]
+
+＠达·芬奇
+不过嘛，反正[%1]还有抗毒技能般的体质，
+[k]
+
+＠达·芬奇
+所以只是以防万一做的保险而已哦？[r]但既然所长这么在意，
+[k]
+
+＠达·芬奇
+也可以让从者们先行调查，[r]取回病毒或其他什么详细数据后[line 3]
+[k]
+
+？1：没关系，出发吧。
+？2：不亲眼确认是无法判断的。
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠拉克什米
+我知道了。[r]那我们就按预定计划出发吧。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+听好了，千万不能触碰奇怪的东西哦？[r]橡胶手套和防毒面具准备了吗？　严禁重复使用哦？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠伽内什
+你是爱操心的大妈吗！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+
+＠达·芬奇
+顺带一提，潜航艇中疫苗之类的[r]医疗物资绝对算不上充裕。
+[k]
+
+＠达·芬奇
+我们也许无法拯救所有镇民，[r]这点你们要做好心理准备……
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_81 1.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaSet B 98002000 1 芙芙]
+[charaSet G 1098167110 1 男性]
+[charaSet I 1098167200 1 女性]
+[charaSet J 1098167300 1 孩子]
+
+[wt 1.0]
+
+[scene 75500]
+
+[se ad5]
+[seVolume ad5 0 0.1]
+
+[fadein black 1.0]
+[seVolume ad5 1.0 0.8]
+[wait fade]
+[wt 0.8]
+
+
+
+[bgm BGM_EVENT_25 0.1]
+
+[charaTalk off]
+
+[charaFace I 0]
+[charaFadein I 0.4 1]
+
+[charaFace J 0]
+[charaFadein J 0.4 2]
+
+[charaMove I -150,0 1.5]
+[charaMove J 106,0 1.5]
+[wt 1.2]
+
+[charaFadeout I 0.4]
+[charaFadeout J 0.4]
+[wt 0.5]
+
+[charaFace G 0]
+[charaFadein G 0.1 -100,0]
+
+[charaMove G 100,0 1.5]
+[wt 1.2]
+
+[seStop ad5 1.0]
+
+[charaFadeout G 0.4]
+[wt 0.5]
+
+？1：咦，奇怪？
+？！
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠芙芙
+芙芙呜？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠罗摩
+是座普通的城镇啊。[r]看上去不像是疫病正在蔓延的样子。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠伽内什
+难道刚才的人在撒谎？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠拉克什米
+但感觉不太像啊……[wt 0.8][charaFace H 0][r]抱歉，能打听一些事吗？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+
+[charaFace H 0]
+[charaFadein H 0.1 2]
+
+＠男性
+什么事？
+[k]
+
+＠拉克什米
+我听说这城镇里正在流行疫病。[r]是真的吗？
+[k]
+
+[charaFace G 1]
+
+＠男性
+啊哈哈，过时啦！　你的情报过时啦，旅行者小姐！[r]前不久确实发生过那样的事。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+＠男性
+好几个人倒地不起，发高烧而死，[r]还逐渐传染给了看护的人……
+[k]
+
+＠男性
+大家觉得这城镇要完蛋了，[r]神明的佑护也到头了。
+[k]
+
+＠男性
+实不相瞒，前不久，我还卧病在床呢。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+就是说确实曾流行过疫病……[r]但疫情已经平息了？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠男性
+没错没错。当我们觉得已经没救了的时候，[r]有位医生来到了这座城镇，救活了大家。
+[k]
+
+[charaFace G 1]
+
+＠男性
+哎呀，真是太好了。[r]我染上致死疫病之后就一直被隔离着，
+[k]
+
+＠男性
+本以为再也见不到老婆和孩子了呢。[r]嘿嘿，托那位医生的福，我才能够回家。
+[k]
+
+＠男性
+他就是咱镇的救世主啊。大家都表示会准备好住宅和食物，[r]拜托那人一直留在这里，
+[k]
+
+＠男性
+但那人没有收下任何谢礼，转身就离开了。[r]真是位品格高尚的人啊。
+[k]
+
+[charaFace G 0]
+
+＠男性
+“我只是顺道来看看情况而已。[r][f small]  [f -]并没有解决这世界的根本性问题。”
+[k]
+
+[charaFace G 3]
+
+＠男性
+那人留下了这么一句话……可能有什么烦恼吧。[r]我看那人一副愁眉紧锁的样子呢……
+[k]
+
+[charaFace G 1]
+
+＠男性
+总之，这座城镇已经完全回归了平静。[r]你们就安心住下吧！　这里是个好地方哦！
+[k]
+
+
+[messageOff]
+[se ad60]
+
+[charaMove G 50,0 0.5]
+[charaFadeout G 0.4]
+[wt 0.4]
+[seStop ad60 0.5]
+[wt 0.5]
+
+[charaSet B 1098127610 1 佩佩隆奇诺]
+[charaSet G 1098176100 1 阿斯克勒庇俄斯]
+[charaSet I 1098123210 1 戈尔德鲁夫]
+[charaSet J 98115000 1 特效用]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠佩佩隆奇诺
+…………
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+神秘的医生……英雄般的行为……
+[k]
+
+＠玛修
+达·芬奇亲。[r]我可以再向您确认一遍阿斯克勒庇俄斯的事吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠达·芬奇
+我想想。
+[k]
+
+[bgmStop BGM_EVENT_25 1.5]
+
+＠达·芬奇
+纯魔术师、魔女、炼金术师、美少女天才发明家[r]兼万能之人，尽管Caster中有各种各样的人[line 3]
+[k]
+
+＠达·芬奇
+但根据背景故事来看，阿斯克勒庇俄斯的称号[r]毫无疑问……是“医生”哦。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛修
+果然啊。御主，[r]这是不是代表我们的预测猜中了呢？
+[k]
+
+？1：医生没有坏人！
+？2：说不定能成为我们的伙伴！
+？！
+
+＠玛修
+没错。只是假装在立场上服从，[r]其实无法对受难的民众置若罔闻，
+[k]
+
+＠玛修
+心底里已经意识到了这世界的错误，[r]如果他是这样的人，只要我们试图劝说，或许[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+[se ad15]
+[wt 0.8]
+[charaFace F 0]
+
+＠福尔摩斯
+看来答案马上就能揭晓了。[r]本人已经登场了。
+[k]
+
+＠福尔摩斯
+至少他看起来并不像是要偷袭我们的样子，[r]但不可掉以轻心。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[wt 0.2]
+
+[se ad60]
+[wt 0.6]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+[seStop ad60 0.1]
+
+＠阿斯克勒庇俄斯
+这是什么。[r]怎么回事？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠罗摩
+来了啊。虽说吾等就是因为有可能接触才会来这里，[r]但没想到一来就碰面了呢。这是拜御主平日里所积的德所赐吗。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛修
+来得正好。我们先谈谈吧，[r]阿斯克勒庇俄斯先生。这座城镇的疫病是您[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 2.0]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠阿斯克勒庇俄斯
+吵死了，闭嘴。这里是我用来实验的城镇。[r]等同于我的诊室。
+[k]
+
+＠阿斯克勒庇俄斯
+在诊室里擅自说话的患者是被污染的纱布都不如的废弃物。[r]患者只需要回答被询问的事就够了。
+[k]
+
+＠阿斯克勒庇俄斯
+这是你们干的好事吗？　为什么大家都被治好了？[r][#我明明什么都没做]！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+……哎？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠佩佩隆奇诺
+哎呀呀。照这情形来看，[r]传闻中的医生似乎是别人呢。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠阿斯克勒庇俄斯
+那当然啦。更何况我接下来[bgm BGM_EVENT_48 0.1][r]才正打算开始调查这种疫病的情况。
+[k]
+
+＠阿斯克勒庇俄斯
+我可没有什么特效药。
+[k]
+
+[charaFace G 4]
+
+＠阿斯克勒庇俄斯
+真是的……病例的数量对医术进步可是至关重要的啊。
+[k]
+
+＠阿斯克勒庇俄斯
+本以为只要在镇上传染开来，[r]起码病例数量就犯不着我去操心了……
+[k]
+
+[charaFace G 5]
+
+＠阿斯克勒庇俄斯
+结果数量居然一口气归零了！？　开什么玩笑。
+[k]
+
+＠阿斯克勒庇俄斯
+虽然不知道是谁，[r]但竟敢从我手上夺走宝贵的研究机会！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠伽内什
+唔，说的所有话全都一副自我中心的感觉。[r]应该是把[#数值:参数]全部往智力上面点的那种人吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠罗摩
+哼。连余也能猜到这种宵小可能会干的事。
+[k]
+
+＠罗摩
+回答余一个问题。[r][#这种疫病]，[#该不会是你这家伙散播的吧]？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠玛修
+呜[messageShake 0.05 3 2 0.2]…………？
+[k]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠阿斯克勒庇俄斯
+哈？　你是笨蛋吗？　脑袋是粘菌吗？[r]谁会做这种事啊。
+[k]
+
+＠阿斯克勒庇俄斯
+我想让医术更为进步，想搜集病例。[r]但为此增加患者的数量是想怎样。这不就本末倒置了嘛。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠福尔摩斯
+但是……根据我的推理，[r]你并没有采取阻止感染扩大的手段吧。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠阿斯克勒庇俄斯
+因为我知道这是阻止不了的。我不会做徒劳的事。[r]待看到病例后再制作疫苗才更为合理吧。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+
+＠拉克什米
+哪怕民众会在此期间死去吗？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠阿斯克勒庇俄斯
+啊啊，可悲，真是太可悲了。[r]但在我面前死去，等同于医术的进步。
+[k]
+
+[charaFace G 0]
+
+＠阿斯克勒庇俄斯
+赌上医生的自尊，[r]我决不会让患者白白死去。
+[k]
+
+＠阿斯克勒庇俄斯
+我定会从中吸取可运用于下一次的经验。
+[k]
+
+[charaFace G 5]
+
+＠阿斯克勒庇俄斯
+从而推进现在，[r][#乃至将来医术的进步][line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠伽内什
+说的话乍听之下很合理，[r]但他的眼神果然有些疯狂呢～！
+[k]
+
+[charaFace D 5]
+
+＠伽内什
+看来还是没辙吧？
+[k]
+
+＠伽内什
+治好镇上疫病的不是这家伙，[r]感觉和莲偶也不一样啊！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠阿斯克勒庇俄斯
+哈[line 3]原来如此，是这样啊。
+[k]
+
+＠阿斯克勒庇俄斯
+难道你们以为我和莲偶一样，[r]内心深处也对那个神的所作所为有所不满吗？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+看来你……不一样吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠阿斯克勒庇俄斯
+当然不一样啦！
+[k]
+
+[charaFace G 6]
+
+＠阿斯克勒庇俄斯
+我说你们啊。不完美的存在将逐渐从世界上消失？[r][line 3]这不是很好吗。这是理所当然的吧。
+[k]
+
+＠阿斯克勒庇俄斯
+[#总比优秀的存在被抹消要好多了吧]。[r]比起会做这种事的愚蠢而又怯懦的神好多了吧[line 3]
+[k]
+
+[charaFace G 5]
+
+＠阿斯克勒庇俄斯
+你知道吗？[r]知道我受到了[#神:宙斯]怎样的对待吗？
+[k]
+
+？1：……我听说了。
+
+？2：（什么情况来着……）
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 16]
+[charaFadein E 0.1 1]
+
+＠达·芬奇
+哎哟，你已经忘记了吗？[r]真拿你没辙啊。那开始补课吧！
+[k]
+
+[charaFace E 25]
+
+＠达·芬奇
+在神话中，将医术钻研到极致的阿斯克勒庇俄斯最终……[r][#甚至制造出了能令死者复活的药]。
+[k]
+
+＠达·芬奇
+当然，这对诸神而言是无法熟视无睹的事。
+[k]
+
+＠达·芬奇
+尤其对冥界神哈得斯来说，“人类这一种族克服死亡”[r]会导致自身的领域与权能陈旧化。
+[k]
+
+＠达·芬奇
+由于哈得斯无法加害身为阿波罗之子的阿斯克勒庇俄斯，[r]所以请求主神宙斯惩罚他。
+[k]
+
+＠达·芬奇
+宙斯听从了这一请求，[r]降下雷霆击杀了他[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+
+＠阿斯克勒庇俄斯
+…………
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 25]
+[charaFadein E 0.1 1]
+
+＠达·芬奇
+姑且为了考虑阿波罗的心情，
+[k]
+
+＠达·芬奇
+宙斯让死去的阿斯克勒庇俄斯升上天，也就来到神之座。[r]这就是所谓“蛇夫座”的出处……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠阿斯克勒庇俄斯
+什么叫考虑心情啊。以为将我升作神就会原谅你吗！[r]谁想遭遇这种事啊！？　没有意义，完全没有意义！
+[k]
+
+？！
+
+＠阿斯克勒庇俄斯
+我只是想让医术获得进步而已！[r]只是最终到达了死者复活的领域而已！
+[k]
+
+[charaFace G 10]
+
+＠阿斯克勒庇俄斯
+希腊诸神的度量太过狭隘。[r]怠惰、怯懦、乖僻。
+[k]
+
+＠阿斯克勒庇俄斯
+他们并不正确。用不正确的行为惩罚了我。
+[k]
+
+＠阿斯克勒庇俄斯
+就因为我过于优秀，[r]就用优秀这种借口惩罚了我。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠佩佩隆奇诺
+啊啊……原来如此。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠阿斯克勒庇俄斯
+而这世界恰好相反。[r]优质品可以存活，劣质品会被消灭！
+[k]
+
+＠阿斯克勒庇俄斯
+简单明瞭！　理所当然的法则！[r]正确，正确，这才是正确的世界！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠罗摩
+你渴望在这世界的尽头寻找到什么呢？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠阿斯克勒庇俄斯
+听完我刚才说的话还不明白吗？[r]我所渴望的只有一件事。就是令自己的医术获得发展。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+……为了达到这个目的，无论有多少东西会从世界上消失，[r]你都无所谓吗……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+[bgmStop BGM_EVENT_48 1.5]
+
+＠阿斯克勒庇俄斯
+……？[r]只要人类还没灭绝，医术就一定能发挥作用啊？
+[k]
+
+[charaFace G 0]
+
+＠阿斯克勒庇俄斯
+换言之，只要不是全灭就行了吧？[r]这点你们就放心吧。
+[k]
+
+＠阿斯克勒庇俄斯
+无论如何，我至少会让我的患者活下来。[r]这是理所当然的。为了实现这点，我不惜造成任何牺牲。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+[wt 1.2]
+[charaFace A 7]
+
+＠玛修
+……御主。[bgm BGM_EVENT_80 0.1][r]这个人[line 3]
+[k]
+
+？1：……我知道。
+？2：……看来有本质性的偏差呢……
+？！
+
+[charaSet C 98006100 1 敌人1]
+[charaSet E 98006100 1 敌人2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠拉克什米
+尽管医术非常重要，[r]但你也不能因此蔑视人们的感情。
+[k]
+
+[charaFace H 2]
+
+＠拉克什米
+哪怕医术再怎么精湛[line 3]你这家伙[r]也无法治愈从世界中零落的民众之哀叹！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠阿斯克勒庇俄斯
+麻烦你仔细确认治疗项目。有些病就算[r]来找我看也治不好。比方说人类的愚蠢。
+[k]
+
+＠阿斯克勒庇俄斯
+没错，我最讨厌愚蠢的患者了。
+[k]
+
+[charaFace G 5]
+
+＠阿斯克勒庇俄斯
+医生说不准做的事就“不准做”。[r]医生说要照办的事就“必须照办”。
+[k]
+
+＠阿斯克勒庇俄斯
+……为什么连这些事都做不到！？[r]是不想治好吗，是不想被治好吗！？
+[k]
+
+＠阿斯克勒庇俄斯
+莫名其妙！[r]那种人的脑袋才是最严重的患部吧！
+[k]
+
+[charaFace G 0]
+
+＠阿斯克勒庇俄斯
+所以，想摧毁这正确世界的患者[line 3][r]该切除的患部究竟是哪里也是显而易见的。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk I]
+[charaFace I 8]
+[charaFadein I 0.1 1]
+
+＠戈尔德鲁夫
+想干架吗！　迎击吧，[%1]！[r]不必害怕，对手不过是个医生Caster罢了！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+[bgm BGM_EVENT_80 1.0 0.5]
+[se ad650]
+[seVolume ad650 0 0.4]
+
+[charaEffect G bit_talk_06b 0,-200]
+
+＠阿斯克勒庇俄斯
+[#罢了]？　你难道把我身为[#神将:护世神]，[r]被阿周那赋予神性的事给忘了吗？
+[k]
+
+＠阿斯克勒庇俄斯
+我被赋予的印度神是[line 3]
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ade160]
+[charaFadeout G 0.1]
+[wt 0.2]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_06b]
+
+[wt 0.5]
+
+[se ad575]
+[wt 0.6]
+[charaPut C 0]
+[charaSpecialEffect C appearance 1 1.0]
+[wt 0.2]
+[seStop ad575 0.5]
+[charaPut E 2]
+[charaSpecialEffect E appearance 1 1.0]
+[wait charaSpecialEffect E]
+[se ad463]
+[wt 1.2]
+[bgm BGM_EVENT_80 1.0 1.0]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠阿斯克勒庇俄斯
+[#阎摩]。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠佩佩隆奇诺
+死神，死者之王[line 3]南方的护世神！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad575]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+御主，地底陆续传来敌对反应……[r]是骷髅兵和活死尸！[seStop ad575 0.5]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠阿斯克勒庇俄斯
+毕竟这与令死者复活过的我相性极佳啊。
+[k]
+
+＠阿斯克勒庇俄斯
+即便同为冥界神，只要不是[#那个死脑筋:哈得斯]就没关系……[r]被赋予的东西就该好好利用。
+[k]
+
+＠阿斯克勒庇俄斯
+权限是管理死者。或者说是管理这片土地上死者的记忆，[r]但其实都差不多吧。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+[charaShake D 0.05 3 2 0.5]
+
+＠伽内什
+咿哎哎，砍杀僵尸的无双类混战游戏吗！？
+[k]
+
+＠伽内什
+如果没有无敌且全方位必杀地图炮之类的，[r]这游戏要怎么通关嘛！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk I]
+[charaFace I 8]
+[charaFadein I 0.1 1]
+
+＠戈尔德鲁夫
+一次性召唤出这么多……而且还不需要任何准备或咏唱！[r]这是什么[#死灵魔术:Necromancy]啊！？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠福尔摩斯
+这是无法被纳入人类魔术范畴的事象吧。
+[k]
+
+＠福尔摩斯
+就像莲偶借助俱毗罗的力量展开多重宝具一样，[r]是神力所为。应对时要多加小心。
+[k]
+
+？1：明白了！
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠阿斯克勒庇俄斯
+就算是愚昧的患者，也应该知道所谓的验尸吧。[r]死亡也是能对医术进步起到作用的。
+[k]
+
+[charaFace G 6]
+
+＠阿斯克勒庇俄斯
+所以只要能交到我的手上，你们的死[r]或许也会是有用的。……这下放心了吧？
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

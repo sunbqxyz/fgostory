@@ -1,0 +1,101 @@
+
+
+＄02-00-02-04-3-1
+[soundStopAll]
+[charaSet A 99502600 1 玛修]
+[charaSet B 4004001 1 阿斯托尔福]
+[charaSet C 98111500 1 达·芬奇]
+[charaSet D 4025000 1 Rider]
+[charaSet H 7027001 1 特效用]
+
+[bgm BGM_EVENT_25 0.1]
+[scene 42400]
+[fadein black 1.5]
+[wait fade]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-90]
+＠达·芬奇
+好啦，情报处理与休息都告一段落了。[r]我们正式确定一下今后的事吧。
+[k]
+
+＠达·芬奇
+接下来我们会实际去拜访三都市的支配者。[r]你推荐去哪边，Rider氏？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠Rider
+这个嘛……水都比较好吧。
+[k]
+
+＠Rider
+理由有几点[line 2]其中最重要的理由之一，[r]是我们原本接下来就打算攻打那边。
+[k]
+
+＠Rider
+我们已经在水都支配区域的一角建立了小规模的反抗军中间据点。[r]只要经由那边，补给就会很轻松。
+[k]
+
+？1：没有异议。去那边吧。
+？2：中途能休息一下真是不错。
+？！
+
+[charaFadeout D 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠阿斯托尔福
+既然已经准备妥当了，[r]那当然选择这种方法比较好啦。赞成～。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠玛修
+话说，Rider先生。
+[k]
+
+＠玛修
+其他两个地方名为『[#黄金国:El Dorado]』、『不夜城』，[r]称呼用的都是似曾相识的名字……
+[k]
+
+＠玛修
+那这座湖畔都市难道就没有什么名字吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠Rider
+当然有啦。我没说过吗？
+[k]
+
+＠Rider
+我们接下来要前往的都市名为伊苏。[r]摇荡于水面的颓废之都，水上都市伊苏。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_25 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,1019 @@
+
+
+
+＄94-05-42-08-3-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+
+[charaSet A 1048000 1 圣诞迦尔纳]
+[charaSet B 99502600 1 玛修]
+[charaSet C 1098204500 1 弗栗多]
+[charaSet D 1098124510 1 达·芬奇]
+[charaSet E 98111500 1 达·芬奇（术）_通讯]
+[charaSet F 4006001 1 乔尔乔斯]
+[charaSet G 6031000 1 刑部姬]
+[charaSet H 7033002 1 阿周那·Alter]
+[charaSet I 5005001 1 安徒生]
+[charaSet J 5030001 1 山鲁佐德]
+[charaSet K 98115000 1 通讯用]
+[imageSet L cut235_black_present 1]
+
+[charaSet M 98115000 1 特效用]
+[charaSet N 98115000 1 特效用１]
+
+[imageSet O cut237_cutin_frame 1 1]
+[charaScale O 1.32]
+[charaSet P 1098205800 1 cutin用圣诞迦尔纳（斗篷）]
+
+
+[charaSet S 98115000 1 特效用２]
+
+
+[charaPutFSR K 1200,2000]
+[charaEffect K bit_talk_10_LowLevel]
+
+[charaPutFSR M 1200,2000]
+[charaEffect M bit_talk_radiallight02]
+
+[charaDepth M 1]
+[charaDepth L 2]
+
+
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 105201]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠弗栗多
+并非因陀罗的血亲，[r]但似乎与其有关的你[line 3]
+[k]
+
+＠弗栗多
+是否能代替因陀罗打倒吾呢！？
+[k]
+
+＠弗栗多
+现在正是见证之刻！[r]嗄啊啊啊啊[line 3]！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ade391]
+[se ad61]
+[seVolume ad61 0 0]
+[seVolume ad61 0.3 0.7]
+[effect bit_talk_charge_blu]
+[effect bit_talk_17_bl_03]
+[wt 2.0]
+
+[fowardEffect bit_talk_41_fs]
+[se ad859]
+[seVolume ad859 0 0.7]
+[seStop ad859 0.7]
+[seStop ade391 0.4]
+[seStop ad61 0.4]
+[charaMoveScale C 1.2 0.3]
+[charaMove C 0,20 0.3]
+[charaFadeout C 0.3]
+[wt 0.3]
+[effectDestroy bit_talk_charge_blu]
+[effectDestroy bit_talk_17_bl_03]
+[fowardEffectDestroy bit_talk_41_fs]
+[wt 0.2]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+
+[wt 0.2]
+
+[charaDepth P 4]
+[charaDepth O 5]
+
+[scene 106900]
+[charaFadein O 0 0,-200]
+[charaFace P 0]
+[charaFadein P 0 0,0]
+
+[wt 0.3]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠圣诞迦尔纳
+当然能打倒。[r]因为我就是我。
+[k]
+
+＠圣诞迦尔纳
+[#既然你想要什么][line 3][r][#我就会将那个送给你]。
+[k]
+
+＠圣诞迦尔纳
+我就是这样的存在。[r]也就是圣诞老人。
+[k]
+
+[charaFace P 1]
+＠圣诞迦尔纳
+将你渴望的我们之凌驾赠与你。[r]作为给你的礼物赠与你！
+[k]
+
+[messageOff]
+
+[se ad835]
+[seVolume ad835 0 0.4]
+[se bac30]
+[seVolume bac30 0 0.4]
+[effect bit_talk_light_gathers 187,215]
+
+[wt 1.7]
+
+[charaCrossFade P 1098205810 1 0.4]
+[wait charaCrossFade P]
+[wt 0.8]
+
+[effectStop bit_talk_light_gathers]
+[wt 0.8]
+
+[charaFace P 2]
+＠圣诞迦尔纳
+吃我这招，[r]这就是现在这个我的另一个宝具。
+[k]
+
+＠圣诞迦尔纳
+由我创造而出，因名字相同很适合[r]作为[#圣诞老人:Santa Claus]必杀冲击拳的……
+[k]
+
+＠圣诞迦尔纳
+一击必杀的[#圣诞老人的交叉防反]……
+[k]
+
+[bgmStop BGM_EVENT_24 1.0]
+
+
+[charaFace P 1]
+＠圣诞迦尔纳
+[f large]『[messageShake 0.02 3 3 0.5][#圣人交叉拳:Graharaja Santa Cross]』！！
+[k]
+
+
+[messageOff]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+
+[scene 10000]
+[wt 0.2]
+
+[wipein rectangleStripRightToLeft 0.1 1.0]
+[wait wipe]
+[wt 0.05]
+
+[se ad855]
+[effect bit_talk_gram_slash_01_fs 0,0 H]
+[wt 0.5]
+
+[effect bit_talk_flash_g]
+[wt 0.1]
+[se ad80]
+[wt 0.3]
+[seStop ad80 0.2]
+[wt 0.2]
+
+
+[se ad878]
+[fadeout white 0.1]
+[wait fade]
+
+[effectDestroy bit_talk_gram_slash_01_fs 0,0 H]
+[effectDestroy bit_talk_flash_g]
+
+[scene 105201]
+[wt 2.7]
+
+[se ad951]
+[seVolume ad951 0 0]
+[seVolume ad951 1.5 0.8]
+[fadein white 1.5]
+[wait fade]
+
+[wt 1.5]
+
+[seVolume ad951 1.0 0.4]
+
+[charaTalk on]
+[charaScale C 1.0]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[charaShake C 0.05 2 2 0.3]
+＠弗栗多
+嘎，啊……
+[k]
+
+[messageOff]
+[se ad207]
+[seVolume ad207 0 0]
+[seVolume ad207 1.0 1.0]
+
+[charaMove C 0,-60 0.8]
+[charaFadeout C 0.8]
+[wt 0.8]
+[se ad144]
+
+[wt 2.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 1.8]
+
+
+[se ade89]
+[seVolume ade89 0 0.5]
+[wt 0.1]
+[charaFaceFade A 8 0.6]
+[wt 0.3]
+[seStop ade89 0.3]
+
+[wt 1.8]
+
+[seStop ad207 2.0]
+[seStop ad951 2.0]
+
+＠圣诞迦尔纳
+这就是……[r]送给你的圣诞礼物。
+[k]
+
+[messageOff]
+
+
+[wt 1.0]
+
+[bgm BGM_EVENT_4 0.1]
+
+？1：成功啦～！
+？2：KO胜利！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠乔尔乔斯
+结束了……吗。
+[k]
+
+＠乔尔乔斯
+干得漂亮。[r]新屠龙者诞生了。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+
+[charaTalk D]
+[charaFace D 32]
+[charaFadein D 0.1 1]
+＠达·芬奇
+……唔，奇怪？　这是什么反应？
+[k]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-90]
+＠E：达·芬奇
+……唔，奇怪？　这是什么反应？
+[k]
+
+[label lblConf1]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+达·芬奇亲，这难道是[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR K 1200,2000]
+
+[se ade410]
+[wt 0.2]
+[charaPut S 1]
+[charaEffect S bit_talk_20b]
+[wt 2.4]
+
+
+
+[se ad149]
+[se ad216]
+[seVolume ad216 0 0]
+[se ad733]
+[seVolume ad733 0 0]
+[seVolume ad216 0.3 1.0]
+[seVolume ad733 0.3 1.0]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaPutFSR S 1200,2000]
+[charaEffectDestroy S bit_talk_20b]
+[wt 0.2]
+[seStop ad216 1.5]
+[seStop ad733 1.5]
+
+[wt 2.0]
+
+[charaPut K 0,0]
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+
+[charaTalk D]
+[charaFace D 22]
+[charaFadein D 0.1 1]
+＠达·芬奇
+有什么碎裂了。
+[k]
+
+＠达·芬奇
+难道说，在这喜马拉雅闭塞特异点中，[r][#还有一层被闭塞的东西]吗？
+[k]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0,-90]
+＠E：达·芬奇
+有什么碎裂了。
+[k]
+
+＠E：达·芬奇
+难道说，在这喜马拉雅闭塞特异点中，[r][#还有一层被闭塞的东西]吗？
+[k]
+
+[label lblConf2]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR K 1200,2000]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+据说弗栗多会将水封在喜马拉雅山中。
+[k]
+
+＠圣诞迦尔纳
+这地方或许就是她用来堰塞、[r]封印什么的地方吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠玛修
+而现在那个获得了解放？[r]也就是说[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR K 1200,2000]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+嗯。一直被她封印到刚才的东西。[r]那正是我所寻求的东西……
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_4 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+
+[scene 106100]
+
+[pictureFrame cut063_cinema]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_25 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 0,-50]
+＠刑部姬
+啊～呜～。新刊，好想看好想看好想看啊～！[r]好想尽快看到啦～！
+[k]
+
+[charaFace G 2]
+＠刑部姬
+纯粹想看是一个原因，而且下次展会[r]究竟该画什么也想靠那个来确定啦！
+[k]
+
+＠刑部姬
+难得的机会，当然想出最热门[r]最炙手可热的二次创作吧？
+[k]
+
+[charaFace G 8]
+＠刑部姬
+如果到会展前才能看到，[r][#我:公主]就会因为想将难以遏制的情感……
+[k]
+
+＠刑部姬
+化作同人纸或附赠本以至于[r]压迫截稿日变得更为紧张……！
+[k]
+
+[charaMoveReturn G 0,-55 0.4]
+＠刑部姬
+所以说，求求你了～！[wt 0.2][charaMoveReturn G 0,-55 0.4][r]快～让～我～看～到～啦～！（脸在纸箱上乱蹭。）
+[k]
+
+[bgmStop BGM_EVENT_25 1.0]
+
+[charaFace G 4]
+＠刑部姬
+闹着闹着，咦？[r]黑色礼物盒怎么发光了[line 3]
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.2]
+
+[se ad39]
+
+[charaTalk off]
+[charaTalk M]
+[charaPut M 0,100]
+[charaFadein L 0.1 0,-250]
+
+[wt 1.5]
+
+[seStop ad39 2.5]
+[fadeout white 1.5]
+[wait fade]
+
+[charaPutFSR M 1200,2000]
+[charaFadeout L 0.1]
+
+[wt 0.5]
+
+[fadein white 1.5]
+[wait fade]
+
+[se ade301]
+[seStop ade301 0.3]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 0,-50]
+＠刑部姬
+啊，打开了！　当真！？
+[k]
+
+[charaFace G 8]
+＠刑部姬
+那事不宜迟……不，慢着，稍微等一下。[r]这是[line 3]
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[wait fade]
+
+
+[pictureFrame]
+[charaFadeout G 0.1]
+
+[scene 10000]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[criMovie talk_mov087]
+
+
+
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaSet C 3046001 1 弗栗多]
+
+[scene 105203]
+[wt 1.5]
+
+[bgm BGM_EVENT_78 1.5 1.0]
+
+[fadein black 1.5]
+[wait fade]
+[wt 1.0]
+
+
+[cameraMove 1.5 50,0 1.2]
+[wt 2.2]
+[cameraMove 1.5 -80,0 1.2]
+[wt 2.2]
+[cameraHome 1.5]
+[wt 2.2]
+
+？1：哇…………
+？！
+
+[charaPut K 0,0]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠玛修
+是刚才那个闭塞解除的结果吧？[r]好美的天空啊……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR K 1200,2000]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠阿周那·Alter
+果然是这样。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠达·芬奇
+怎么了？
+[k]
+
+[branch lblConf3]
+[label lblNotClear3]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-90]
+＠E：达·芬奇
+怎么了？
+[k]
+
+[label lblConf3]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR K 1200,2000]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠阿周那·Alter
+这也是我判断她并非邪恶的理由。
+[k]
+
+＠阿周那·Alter
+我能感受到弗栗多的堰界化，[r]也就是将东西堰塞封闭的行为，
+[k]
+
+＠阿周那·Alter
+伴随着某种性质。
+[k]
+
+[charaFace H 4]
+＠阿周那·Alter
+对于失去了很多人之要素的我这个神之子……[r]很难用言语来表达。
+[k]
+
+[messageOff]
+
+[charaFadeout H 0.1]
+[wt 0.6]
+
+[se ad41]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠乔尔乔斯
+说实话，[r]我也隐约发现了。
+[k]
+
+＠乔尔乔斯
+我手中关于这趟旅程为数不多的[r]记录照片就是最好的证据。
+[k]
+
+[charaFace F 1]
+＠乔尔乔斯
+那些都[#太美妙了]。
+[k]
+
+＠乔尔乔斯
+那些照片看上去之所以那么美妙，[r]并不是因为我的技术。
+[k]
+
+＠乔尔乔斯
+而是因为能看到的景色本身就很美妙。[r]不知为何，似乎比平时更为熠熠生辉……
+[k]
+
+＠乔尔乔斯
+也就是说，当弗栗多封闭什么之后，[r]反而会产生[#更美好的存在][line 3]
+[k]
+
+＠乔尔乔斯
+她拥有这种性质吧。[r]虽然只是我的感觉，但我无法不这么想。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+真的有这种事吗……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR K 1200,2000]
+
+[charaPut N 1]
+[charaEffect N bit_talk_06]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠弗栗多
+咿，嘻，嘻。但这并不是吾想要的东西。[r]不过是如此啦。
+[k]
+
+？1：弗栗多……
+？！
+
+[charaPutFSR N 1200,2000]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠玛修
+灵基正在不断崩溃。[r]……想要说话已经到极限了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+＠达·芬奇
+神话中所示的苦难与障碍也可以[r]被视为[#通过克服来获得成长的存在]。
+[k]
+
+＠达·芬奇
+因为如果克服后反而后退，就无法延续下去了。
+[k]
+
+[charaFace D 24]
+＠达·芬奇
+一旦水这类必不可少的东西遭到堰塞、[r]抢夺，人类自然会感到痛苦。
+[k]
+
+[charaFace D 25]
+＠达·芬奇
+但是[line 3]正如冬季存储的能量[r]会在春季让植物冒出新芽一样。
+[k]
+
+＠达·芬奇
+世间确实存在一些如果不阻塞[r]一段时间就无法产生的势头。
+[k]
+
+＠达·芬奇
+『克服障碍后能获得成长。』[r]『为了前进所须的邪恶壁垒。』[line 3]
+[k]
+
+＠达·芬奇
+这或许就是弗栗多这个概念真正司掌的东西吧。
+[k]
+
+[charaFace D 16]
+＠达·芬奇
+不过嘛，这也是我自说自话的解释啦！
+[k]
+
+[branch lblConf4]
+[label lblNotClear4]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0,-90]
+＠E：达·芬奇
+神话中所示的苦难与障碍也可以[r]被视为[#通过克服来获得成长的存在]。
+[k]
+
+＠E：达·芬奇
+因为如果克服后反而后退，就无法延续下去了。
+[k]
+
+＠E：达·芬奇
+一旦水这类必不可少的东西遭到堰塞、[r]抢夺，人类自然会感到痛苦。
+[k]
+
+[charaFace E 0]
+＠E：达·芬奇
+但是[line 3]正如冬季存储的能量[r]会在春季让植物冒出新芽一样。
+[k]
+
+＠E：达·芬奇
+世间确实存在一些如果不阻塞[r]一段时间就无法产生的势头。
+[k]
+
+＠E：达·芬奇
+『克服障碍后能获得成长。』[r]『为了前进所须的邪恶壁垒。』[line 3]
+[k]
+
+＠E：达·芬奇
+这或许就是弗栗多这个概念真正司掌的东西吧。
+[k]
+
+[charaFace E 1]
+＠E：达·芬奇
+不过嘛，这也是我自说自话的解释啦！
+[k]
+
+[label lblConf4]
+
+[messageOff]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR K 1200,2000]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaPut N 0,0]
+[wt 1.0]
+
+[charaFace C 1]
+＠弗栗多
+关吾什么事。吾就是吾。[r]吾只是喜欢看他人努力的样子。
+[k]
+
+[charaFace C 15]
+＠弗栗多
+但是……嗯，也是。
+[k]
+
+＠弗栗多
+还是不停重复，[r]令人更为坚韧的做法不会令吾腻烦。
+[k]
+
+＠弗栗多
+这点确实无疑。
+[k]
+
+[charaFace C 7]
+＠弗栗多
+因此吾今后也会继续欺负汝等，欺负世界。
+[k]
+
+＠弗栗多
+你们就继续让吾见识更为坚韧的样子吧。[r]这样一来，更强大的吾就会成为你们的对手，所以让吾见识吧。
+[k]
+
+？1：……意思是，你还打算再来啊。
+？！
+
+[charaFace C 6]
+＠弗栗多
+当然。[r]吾乃不灭之魔。连[#神:因陀罗]都无法消灭。
+[k]
+
+？1：但我们现在很忙……
+？2：我们正在与其他大问题战斗……
+？！
+
+[charaPutFSR N 1200,2000]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠玛修
+嗯。说实话，想应对那边已经没有余力了，[r]如果可能的话，希望您不要妨碍我们。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR K 1200,2000]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+[charaPut N 0,0]
+＠弗栗多
+哦～。[r]除了吾，还有如此强大的障碍吗。
+[k]
+
+[charaFace C 0]
+＠弗栗多
+假如人类、神明、世界……[r]都在齐心协力奋力挣扎的话。
+[k]
+
+[charaFace C 1]
+＠弗栗多
+能在一旁观赏或许会是件新鲜而有趣的事吧……？
+[k]
+
+？1：如果你能成为同伴帮忙，我很欢迎哦。
+？！
+
+[charaFace C 6]
+＠弗栗多
+咿，嘻，嘻！　吾可是魔哦。[r]竟然让吾当同伴，你这家伙还真奇怪。
+[k]
+
+＠弗栗多
+不过如果能缔结缘分，[r]看情况，或许近期确实能有机会见面吧。
+[k]
+
+[charaFace C 9]
+＠弗栗多
+弱小而强韧的人类啊。[r]在吾前去参观之前，可千万别输了哦。
+[k]
+
+？1：我才不会输呢。
+？2：我会和大家一起克服困难。
+？！
+
+[messageOff]
+[charaFaceFade C 1 0.6]
+[wt 1.6]
+
+
+[se ad52]
+[charaSpecialEffect C flashErasure 1 2.0]
+[wait charaSpecialEffect C]
+[charaEffectStop N bit_talk_06]
+[wt 1.0]
+[seStop ad52 0.2]
+[wt 0.8]
+[charaFadeout C 0.1]
+
+[charaPut K 0,0]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠玛修
+弗栗多的反应完全消灭[line 3][r]任务完成了，御主！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR K 1200,2000]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠乔尔乔斯
+辛苦了。屠龙果然不简单呢。[r]对我来说也是一次很好的经验。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠阿周那·Alter
+邪恶仍在世间蔓延。[r]但是[line 3]
+[k]
+
+[charaFace H 12]
+＠阿周那·Alter
+至少，这里没有。[r]这是好事。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 3]
+[charaFadein J 0.1 1]
+＠山鲁佐德
+可以认为这是不会死的保证吗？[r]这真是太棒了……
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+＠安徒生
+虽然我只是帮忙准备了最后的道具，[r]但也是一次不错的取材。
+[k]
+
+＠安徒生
+竟然能亲眼见证屠龙的过程。[r]嗯，等有机会写冒险故事时，应该会有帮助吧。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+[line 3]那我们回去吧。[r]我还有非做不可的事。
+[k]
+
+？1：不用问，
+？2：当然是指那件事吧。
+？！
+
+[charaFace A 9]
+＠圣诞迦尔纳
+嗯[line 3]是配送礼物。[r]给[#大家]哦。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_78 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

@@ -1,0 +1,151 @@
+
+
+＄03-00-01-09-1-1
+[soundStopAll]
+
+[charaSet A 98006000 1 咆哮兽]
+[charaSet B 5036001 1 阿维斯布隆]
+[charaSet C 99502600 1 玛修]
+[charaSet D 1098123210 1 戈尔德鲁夫]
+[charaSet H 5009000 1 特效用dummy]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[scene 54100]
+
+
+[fadein black 1.0]
+
+
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 1]
+
+[label INPUT_SELECT_BRANCH_1]
+
+[bgm BGM_EVENT_80 0.1]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[wt 1.2]
+[charaSpecialEffect A enemyErasure 1]
+[se ad26]
+[wait charaSpecialEffect A]
+[wt 1.5]
+
+[bgmStop BGM_EVENT_80 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_77 0.1]
+
+[wt 0.7]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿维斯布隆
+多亏我们把咆哮兽的嘴逐一堵起来了，[r]似乎没被恶魔御座发现。
+[k]
+
+＠阿维斯布隆
+趁还没被发现，赶快离开吧。[r]这次的事情发展正合我意。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_2]
+
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠玛修
+成功了！[r]确认恶魔御座敌对反应消失！
+[k]
+
+＠玛修
+敌人的情报也详细分析完了。[r]看来似乎是能在体内生成酒精的物种呢。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠戈尔德鲁夫
+噢。那难道是[line 3][r]俄罗斯的名产，伏特加吗！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠玛修
+哎？　不，不是蒸馏酒，[r]严格说来似乎更像发酵酒……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠戈尔德鲁夫
+发酵酒！　劣质酒精吗！[r]哎哎，不要了，放着别管了！
+[k]
+
+[charaFace D 6]
+
+＠戈尔德鲁夫
+赶紧前往反叛军据点，[r][%1]！
+[k]
+
+[charaFace D 10]
+
+＠戈尔德鲁夫
+他们如果也算士兵，一定会藏着几瓶伏特加！[r]你偷偷去搞点剩下的酒来！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿维斯布隆
+如果雅嘎富裕到能有多余的酒就好了。[r]快走吧，[%1]。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_3]
+
+[wt 1.0]
+[soundStopAll]
+[end]

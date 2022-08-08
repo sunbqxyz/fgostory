@@ -1,0 +1,2156 @@
+
+
+
+＄94-06-04-07-5-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001600 1 マシュ]
+[charaSet B 1098215400 1 ダ・ヴィンチ]
+[charaSet C 5048000 1 コルデー]
+[charaSet D 1098220500 1 カイニス]
+[charaSet E 1098215500 1 ゴルドルフ]
+[charaSet F 1098216800 1 沖田オルタ]
+[charaSet G 1098216900 1 煉獄]
+[charaSet H 25002002 1 葛飾北斎_第三]
+[charaSet I 1098218400 1 ？？？]
+[charaSet J 10010000 1 ＤＯＭＡＮ]
+[charaSet L 1098217700 1 量産型コロンブス]
+[charaSet M 1098217700 1 コロンブス2]
+[charaSet N 1098217700 1 コロンブス3]
+[charaSet P 1098215600 1 ステくん]
+[imageSet Q back10000_fs 1]
+[charaScale Q 1.5]
+
+[charaSet R 10010000 1 ダミー]
+[charaFilter R silhouette 00000080]
+
+[charaSet S 25002002 1 ダミー1]
+[charaFilter S silhouette EDEDED80]
+
+[charaSet T 25002000 1 ダミー1]
+[charaFilter T silhouette EDEDED80]
+
+[charaSet U 25002000 1 葛飾北斎]
+[charaSet V 25002000 1 エフェクト]
+
+[charaDepth H 1]
+[charaDepth S 2]
+[charaDepth U 3]
+[charaDepth T 4]
+
+[charaDepth G 5]
+[charaDepth F 4]
+[charaDepth I 6]
+
+
+[scene 134000]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[effect bit_talk_kengekiall02_fs]
+[se bac137]
+[wt 0.3]
+[se ad687]
+[wt 0.1]
+[se bac139]
+[wt 0.2]
+
+[charaTalk H]
+[charaFace H 17]
+[charaFadein H 0.1 1]
+[charaShake H 0.05 2 2 0]
+
+[effect bit_talk_14]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[cueSe Servants_102800 bac658]
+[wt 0.8]
+
+[charaShakeStop H]
+
+[wt 0.3]
+
+＠H：葛飾北斎
+うにゃー！？[r]やーらーれーたー！
+[k]
+
+[messageOff]
+
+[charaTalk depthOff]
+[charaTalk off]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[se ad950]
+[effect bit_talk_magic_circle]
+[wt 2.0]
+[fadeout white 1.5]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+[effectStop bit_talk_magic_circle]
+[effectDestroy bit_talk_magic_circle]
+
+[charaFace U 4]
+[charaFadein U 0.1 1]
+[wt 0.8]
+
+[se ade456]
+[seVolume ade456 0 0.2]
+[fadein white 2.0]
+[wait fade]
+
+[charaMove U 0,-30 0.6]
+[wt 0.3]
+[charaFadeout U 0.4]
+[wt 0.4]
+
+[se ad144]
+[wt 1.2]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠マシュ
+北斎さんの無力化になんとか成功です！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+よーし、それでは宝箱の中身を[#検:あらた]めさせてもらおう。
+[k]
+
+[messageOff]
+
+[charaMove E 0,10 0.5]
+[charaMoveScale E 1.1 0.5]
+
+[wt 0.5]
+
+[se ad547]
+[wt 1.0]
+
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[effect bit_talk_20]
+[se bas2]
+[wt 1.5]
+[effectDestroy bit_talk_20]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠マシュ
+聖杯の欠片、確認しました。[r]回収します！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+
+＠ゴルドルフ
+それから、また謎の文が書かれた地図だな。[r]この解読は後回しでいいだろう。
+[k]
+
+
+[charaFace E 0]
+＠ゴルドルフ
+帰り道でも水に濡れないよう、[r]しっかり保管しておきたまえ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaScale E 1.0]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+了解！
+[k]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[charaFace B 0]
+＠ダ・ヴィンチ
+うん。これで、ここでのミッションは完了[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠カイニス
+[line 3]ッ。おい！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+＠少年の声
+こんにちはっ。[r]えーと、そっちの用事ってもう終わったかな？
+[k]
+
+＠少年の声
+それじゃあ、今度は僕のほうの用事を[r]済まさせてほしいな。
+[k]
+
+＠少年の声
+《希望の光》弾、装填。[r][line 3]どーん、と。
+[k]
+
+[messageOff]
+
+[se ade64]
+[wt 0.4]
+[se ad805]
+[seVolume ad805 0 0]
+[seVolume ad805 0.4 0.5]
+[fadeout white 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1]
+[seStop ad805 1.5]
+[wt 0.2]
+
+[scene 10001]
+
+[fadein white 0.3]
+[wait fade]
+
+＠ゴルドルフ
+な、なんだあ！？
+[k]
+
+＠カイニス
+閃光弾か！
+[k]
+
+＠カイニス
+全員、こっちに集まれ！
+[k]
+
+＠ダ・ヴィンチ
+[line 3]！
+[k]
+
+
+＠ダ・ヴィンチ
+待って。ステくんが、いつのまにか[line 3]！
+[k]
+
+＠ダ・ヴィンチ
+どこ！？
+[k]
+
+[messageOff]
+
+[fadeout white 0.3]
+[wait fade]
+
+[wt 0.2]
+
+[charaSet B 9012000 1 ダ・ヴィンチ]
+
+[charaDepth L 1]
+[charaDepth P 2]
+[charaDepth Q 3]
+[charaDepth D 4]
+[charaDepth J 5]
+[charaDepth R 6]
+
+[scene 134000]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 0.5]
+
+
+[charaTalk depthOff]
+[charaTalk L]
+[charaFace L 7]
+[charaFadeinFSL L 0.1 0]
+
+[charaFace P 0]
+[charaFadeinFSR P 0.1 2]
+
+
+＠量産型コロンブス
+ハッハッハァー！
+[k]
+
+[messageOff]
+
+[charaTalk P]
+[cueSe SE_21 21_ade593]
+[wt 0.8]
+
+[charaFadeout P 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠マシュ
+量産型コロンブスさんが……[r]投げ縄で、ステくんを……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 16]
+[charaFadein F 0.1 1]
+[charaFace G 13]
+[charaFadein G 0.1 1]
+[bgmStop BGM_EVENT_3 1.5]
+
+
+＠沖田オルタ
+誰かが量産型コロンブスさんを率いているような……？
+[k]
+
+＠煉獄
+誰だ……？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.4 1]
+[wt 0.4]
+[bgm BGM_EVENT_105 0.1]
+＠？？？
+わーい。[r]欲しかったお宝、ゲットだー☆
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+キミ……
+[k]
+
+＠ダ・ヴィンチ
+キミは……誰だ……？
+[k]
+
+[messageOff]
+
+[se ad437]
+[bgm BGM_EVENT_105 0.4 0.5]
+[wipeout noise 0.4 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[scene 131201]
+
+[cameraFilter gray]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+[wt 0.3]
+
+[wipein noise 0.4 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+[se ad437]
+[wipeout noise 0.4 1.0]
+[wait wipe]
+
+[charaFadeout I 0.1]
+[wt 0.5]
+
+[scene 134000]
+[cameraFilter normal]
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_105 0.4 1.0]
+[wipein noise 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+＠ダ・ヴィンチ
+………………？
+[k]
+
+[messageOff]
+
+[charaFace B 6]
+[wt 0.6]
+
+
+[charaFace B 5]
+＠ダ・ヴィンチ
+キミの正体は後回しだ！[r]まずは、ステくんを返してもらおう！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+＠？？？
+えー？　やだよ。僕の手の中にあるってことは、[r]コレはもう僕のものってことでしょ？
+[k]
+
+＠？？？
+どうして返さなきゃいけないのさ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠カイニス
+へー、テメェが黒幕か。[r]何者だ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠？？？
+僕が何者か、か。
+[k]
+
+[messageOff]
+
+[charaFaceFade I 4 0.2]
+[wt 1.0]
+
+[charaFaceFade I 0 0.2]
+＠？？？
+……そんなもの、僕にだってわかりはしないよ。
+[k]
+
+＠？？？
+んーん。そういうことじゃないか。
+[k]
+
+＠？？？
+聞きたいのは僕の目的とかでしょ？[r]だったら想像してる通りだと思うよ。
+[k]
+
+[charaFaceFade I 7 0.2]
+＠？？？
+僕はお宝を手に入れる。そのためにコレを手に入れる。[r]だからコイツらを手駒にしてる……
+[k]
+
+[charaFaceFade I 1 0.2]
+＠？？？
+ほら、シンプルでしょ？
+[k]
+
+
+？1：きみは、どうして宝を……？
+？！
+
+＠？？？
+そんなもの、決まってるじゃないか。
+[k]
+
+[charaFaceFade I 0 0.2]
+＠？？？
+[#夢だから]。[r][#夢に向かって進み続けるのが僕だから]。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠カイニス
+あァ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+その子は……[r][#私が]、保護していたんだ。
+[k]
+
+＠ダ・ヴィンチ
+勝手はさせない！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠？？？
+ヘンなの。[r]宝物に勝手も何もないよね？
+[k]
+
+[charaFaceFade I 4 0.2]
+＠？？？
+早い者勝ち……だと分が悪いか。[r]強い者勝ち。うん、これならいいな。
+[k]
+
+
+[charaFaceFade I 7 0.2]
+＠？？？
+僕は君より強いから、[r]コレは今僕の手の中にある。ね？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠カイニス
+宝なんざどうでもいいが……[r]オレは、カルデアの臨時保安要員だからな。
+[k]
+
+[charaFace D 2]
+＠カイニス
+ソイツはカルデアの財産だよな？[r]オラ、手癖の悪いガキ。返せっつってんだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠？？？
+怖い顔しても駄目なものは駄目だってば。[r]力ずくで取り返す？
+[k]
+
+＠？？？
+別にチャレンジするのはいいよ。[r]諦めないのは大事なことだよ。
+[k]
+
+[charaFaceFade I 7 0.2]
+＠？？？
+でも、できるかなー？
+[k]
+
+[messageOff]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[se ade210]
+[wt 0.2]
+
+[charaDepth N 7]
+[charaDepth L 8]
+[charaDepth M 9]
+
+[charaTalk off]
+[charaFace L 11]
+[charaFadein L 0.4 1]
+[charaFace M 11]
+[charaFadeinFSR M 0.4 350,0]
+[charaFace N 11]
+[charaFadeinFSL N 0.4 -350,0]
+[wt 0.5]
+
+[seStop ade210 0.1]
+[wt 1.2]
+
+[charaFadeout N 0.1]
+[charaFadeout M 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠カイニス
+ハッ。
+[k]
+
+＠カイニス
+生憎、慣れてきたとこだ！[r]量産のコロンブス野郎なんぞ百人だろうと[line 3]
+[k]
+
+[charaFace D 0]
+＠カイニス
+……ん？
+[k]
+
+[messageOff]
+
+[effect bit_talk_incantation 0,50]
+[cueSe SE_21 21_ade631]
+[wt 0.8]
+[effectDestroy]
+[seStop 21_ade631 0.1]
+[se ad80]
+[wt 1.5]
+
+[se ade280]
+[se ad707]
+[effect bit_talk_06_b3]
+[charaFace D 2]
+[charaShake D 0.05 2 2 0.5]
+[wt 1.8]
+
+[se ad632]
+[seVolume ad632 0 0.3]
+
+[seStop ade280 1.0]
+
+＠カイニス
+チッ……この！
+[k]
+
+[messageOff]
+
+[seStop ad632]
+[seStop ad707]
+[charaMoveReturn D -10,0 0.2]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[effectDestroy bit_talk_06_b3]
+[se ad149]
+[wt 1.5]
+
+＠カイニス
+[f large]誰だテメェ！
+[k]
+
+[messageOff]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk R]
+[charaFace R 0]
+[charaFadein R 0.4 1]
+[wt 0.4]
+＠J：？？？
+ンン、ンンンンンソンンンンン……[line 3]
+[k]
+
+＠J：？？？
+ひとたび[#誰何:すいか]されたからには、[r]お答えしたく存じますが。
+[k]
+
+＠J：？？？
+構いませんかな？
+[k]
+
+[charaFadeout R 0.1]
+[wt 0.1]
+
+[clear]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[bgmStop BGM_EVENT_105 1.0]
+＠？？？
+もちろんだよ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaFace R 0]
+[charaFadein R 0.1 1]
+[wt 0.1]
+
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[wt 0.7]
+
+[bgm BGM_BATTLE_142 0.1]
+[charaFadeout R 0.7]
+[wt 1.5]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 22]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+[line 3]ッ！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠カイニス
+何……！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+ギャー！？
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.4]
+
+？1：ちょっとー！？
+？！
+
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+＠J：？？？
+皆々さまごきげんよう。[r]拙僧、故あってこちらの御方に[#与:くみ]する謎の術者にて。
+[k]
+
+[charaFaceFade J 9 0.3]
+＠J：？？？
+そうですねえ。[r]仮初めの名としましては[line 3]
+[k]
+
+[charaFaceFade J 6 0.3]
+＠J：？？？
+[f large]ＤＯＭＡＮ。
+[k]
+
+＠ＤＯＭＡＮ
+そうお呼びいただきましょう！
+[k]
+
+？1：謎も何もない[&よ:じゃん]！？
+？！
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠マシュ
+あの、道満さ[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+＠ＤＯＭＡＮ
+ＤＯＭＡＮ。[r]（いい発音）
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠マシュ
+はい。[r]それではＤＯＭＡＮさん。
+[k]
+
+[charaFace A 0]
+＠マシュ
+もしかしてＤＯＭＡＮさんは、[r]カルデアに召喚されたサーヴァントでは？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 4]
+[charaFadein J 0.1 1]
+＠ＤＯＭＡＮ
+ソンンンンンン？[r]カルデア、ですか……？
+[k]
+
+[charaFace J 3]
+＠ＤＯＭＡＮ
+……そうですね……その単語、特に……[r]心当たりが、ある訳では……ないですね……ええ……。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+歯切れ悪いな！[r]知ってるだろ絶対に！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 3]
+[charaFadein J 0.1 1]
+＠ＤＯＭＡＮ
+ンーンーンーンーンー♪
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠カイニス
+もう鼻歌じゃねえか！
+[k]
+
+[charaFace D 0]
+＠カイニス
+（……などと言いつつ、[r]　割とヤな感じだぞマスター）
+[k]
+
+？1：（わかってる）
+
+[charaFace D 9]
+＠カイニス
+（理解できてるならいい）
+[k]
+
+＠カイニス
+（相手が相手だ。[r]　[#おふざけ]気分だろうと油断するンじゃねえぞ）
+[k]
+
+？2：（敵に回る以上は、気を付けないとね）
+
+[charaFace D 6]
+＠カイニス
+（道満の野郎……）
+[k]
+
+[charaPut Q 0,-200]
+[charaFadeTime Q 0.2 0.5]
+＠カイニス
+（やっぱアレか、[r]　念のため手足もいどいた方がよかったかァ！）
+[k]
+
+＠カイニス
+（でもそういうのうるせえしなカルデア！）
+[k]
+
+？！
+
+[charaFadeout Q 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠？？？
+まあ、胡散臭い星の胡散臭い町三丁目から[r]やってきたような奴だけど。
+[k]
+
+[charaFaceFade I 1 0.2]
+＠？？？
+その実力はピカイチだ！[r]ホント胡散臭いけど！
+[k]
+
+
+＠？？？
+時々勝手に姿を消して、捜してみれば[r]胡散臭いことをしていたコトもあるけど！
+[k]
+
+＠？？？
+ホントまあ、バカみたいな強さなので[r]仕方がない！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 4]
+[charaFadein J 0.1 1]
+＠ＤＯＭＡＮ
+ンンンンソソンンン。
+[k]
+
+＠ＤＯＭＡＮ
+流石に“胡散臭い”を言い過ぎなのでは……？[r]（拙僧は深い悲しみに包まれた）
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+むむ、むむむむ……！
+[k]
+
+[charaFace B 2]
+＠ダ・ヴィンチ
+ＤＯＭＡＮのことなんかどうでもいいから！[r]もう、その子を返してよ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+＠ＤＯＭＡＮ
+これはこれは！[r]どうでもいいと申されたか！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+いいから！[r]返して！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.1 1]
+[charaFace F 16]
+[charaFadein F 0.1 1]
+
+＠煉獄
+……一つ聞く。[r]主も取り返したいと願うか？
+[k]
+
+[charaFace F 5]
+
+＠沖田オルタ
+もちろんです！　あの子が行きたいならともかく[r]無理やり連れ去るなんて許せません！
+[k]
+
+＠煉獄
+そうか。ならば手はある。[r]危険もあるが、やらないよりはマシだろう。
+[k]
+
+＠煉獄
+……この中で一番小さく、[r]目立たない私だからできることだ。
+[k]
+
+＠煉獄
+顔を動かさずに見てくれ。右斜め上、[r]水が漏れている天井があるだろう？
+[k]
+
+＠煉獄
+私の予想では[line 6][r]なのだが、どうだ？
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠カイニス
+悪かないが……[r]いわゆる一か八か、ってヤツじゃねえか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.1 1]
+[charaFace F 16]
+[charaFadein F 0.1 1]
+
+＠煉獄
+判断は任せる。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+……お願い！　やって！
+[k]
+
+＠ダ・ヴィンチ
+このまま立ち去られたら打つ手がなくなっちゃう！[r]だからお願い、煉獄くん！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_BATTLE_142 1.5]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+[charaFace F 16]
+[charaFadein F 0.1 1]
+
+＠煉獄
+承知した。[r]では、みんなは奴らの気を引いておいてくれ。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+と、言われても……[wt 0.3][charaFace E 5]ええい！
+[k]
+
+[charaFace E 11]
+[bgm BGM_EVENT_49 0.1]
+＠ゴルドルフ
+オホン、待ちなさい！　この場にいる唯一の[r]真っ当な大人として場を仕切らせてもらいたいのだが……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠カイニス
+あ？　唯一っつったかゴッフよォ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+サーヴァントならざる只人とかそういう意味のつもり！[r]噛み付くのはやめたまえー！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠？？？
+なんだか仲良しで楽しそうだね。[r]僕らはもう帰ってもいいかなぁ？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 3]
+[charaFadein J 0.1 1]
+＠ＤＯＭＡＮ
+はっはっは。[r]はっはっはっはっは。
+[k]
+
+＠ＤＯＭＡＮ
+拙僧、当世の若人についても調べておりますれば、[r]ここは下校時のチャイムの鳴らし所でしょう！
+[k]
+
+[messageOff]
+[charaFaceFade J 9 0.3]
+
+[wt 1.0]
+
+[charaFaceFade J 6 0.3]
+＠ＤＯＭＡＮ
+きーんこーんかーんこーん！
+[k]
+
+＠ＤＯＭＡＮ
+[line 3]と！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+いやいや、話はここからだからね！[r]あー、えー、そう、名前！
+[k]
+
+[charaFace E 5]
+＠ゴルドルフ
+対立関係であっても名前くらいは知っておかないと[r]どうしようもないだろう。
+[k]
+
+＠ゴルドルフ
+私は不死鳥のゴルドルフ・ムジークという。[r]君の名前くらいは教えてほしいものだ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠？？？
+名前？　僕の、名前……。
+[k]
+
+[messageOff]
+
+[charaTalk depthOff]
+[charaTalk G]
+[charaFace G 13]
+[charaFadeinFSSideR G 0.4 580,0]
+[wt 0.5]
+
+[charaMoveFSSideR G 580,120 2.0]
+[wt 2.0]
+[charaFadeout G 0.4]
+[wt 1.0]
+
+[charaRoll G 180 -410,340]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadeinFSSideR G 0.4 -600,280]
+[wt 1.0]
+
+＠？？？
+[line 3][#クリストファー]。[r]僕の名前は、クリストファー、だ。
+[k]
+
+＠？？？
+ああ、名前は君付けでお願いするよ。
+[k]
+
+？1：[line 6]！！？
+？！
+
+[charaFaceFade I 1 0.2]
+＠I：クリストファー君
+ふふふ、[r]この恐竜は渡さないよ、僕のものだ！
+[k]
+
+[bgmStop BGM_EVENT_49 1.0]
+
+[charaFace G 2]
+＠煉獄
+今だ！
+[k]
+
+[messageOff]
+
+[charaFadeout I 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se bac210]
+[effect bit_talk_x_slash03 0,100]
+[wt 0.1]
+[shake 0.05 5 4 0.3]
+[wt 0.5]
+[effectDestroy bit_talk_x_slash03]
+[wt 0.2]
+
+[se ad416]
+[se ad211]
+[seVolume ad211 0 0]
+[seVolume ad211 1.4 0.5]
+[effect bit_talk_tidal_wave_fs]
+[wt 2.0]
+
+[cueSe SE_21 21_ade614]
+[seVolume 21_ade614 0 0]
+[seVolume 21_ade614 0.2 0.2]
+[wt 1.0]
+[scene 130500]
+
+
+[charaTalk depthOn]
+
+
+[charaEffect V bit_talk_water]
+
+
+[wt 2.0]
+
+[effectDestroy bit_talk_tidal_wave_fs]
+[bgm BGM_EVENT_63 0.1]
+
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠クリストファー君
+わぷ！？[r]きゅ、急に何だ！？　冷たいなぁ！
+[k]
+
+[charaFace I 4]
+
+
+＠I：クリストファー君
+えっ、えっ？　うわわわっ？
+[k]
+
+[messageOff]
+
+[se ad416]
+[seVolume ad416 0 0.4]
+[seStop ad416 2.0]
+[effect bit_talk_water_spread]
+[effectStop bit_talk_water_spread]
+[charaMove I -656,0 0.7]
+[charaFadeout I 0.4]
+
+[charaSet B 1098215400 1 ダ・ヴィンチ]
+
+[wt 1.0]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaDepth F 7]
+[charaDepth G 8]
+[charaDepth P 9]
+
+[charaTalk depthOff]
+[charaRoll G 0 0,0]
+
+[charaPut Q 0,-200]
+[charaFadeTime Q 0.2 0.5]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.1 176,0]
+＠煉獄
+（手から離れた。チャンス！）
+[k]
+
+[messageOff]
+
+[charaFadeout Q 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaFace P 0]
+[charaFadein P 0.1 1]
+[wt 0.5]
+
+[se ad73]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.4 -130,50]
+[charaEffect G bit_talk_quickmove -165,-38]
+[charaMove G -130,30 0.3]
+[wt 0.6]
+
+[charaEffectDestroy G bit_talk_quickmove]
+[wt 0.5]
+
+[charaFace G 2]
+＠煉獄
+主よ！　受け取れ！
+[k]
+
+[messageOff]
+
+[se ad171]
+
+[charaTalk off]
+[charaMoveReturn G -150,30 0.2]
+[wt 0.2]
+[charaMove P 150,10 0.2]
+[charaFadeout P 0.4]
+[wt 0.5]
+
+[charaFadeout G 0.1]
+[charaPut V 1200,1200]
+[wt 0.1]
+
+[charaFace F 0]
+[charaFadein F 0.1 75,0]
+[wt 0.5]
+
+[charaFace P 0]
+[charaFadein P 0.4 -150,20]
+[charaMove P -100,0 0.2]
+[wt 0.2]
+[se ad775]
+＠沖田オルタ
+っ、と、キャッチ！[r]はい、ダ・ヴィンチちゃん！
+[k]
+
+[charaFadeout P 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad77]
+[charaTalk on]
+[charaTalk B]
+[charaFace B 27]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+ありがと！[r]無事かい？　無事だね、よかった！
+[k]
+
+[messageOff]
+
+[cueSe SE_21 21_ade592]
+[wt 0.8]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 -75,0]
+＠沖田オルタ
+グッジョブです、さすが煉獄です！[r]もう戻ってきて[line 3]
+[k]
+
+[bgmStop BGM_EVENT_63 1.0]
+
+[charaFace F 10]
+＠沖田オルタ
+あれ[line 3]？
+[k]
+
+[messageOff]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[effect bit_talk_water_spread]
+[effectStop bit_talk_water_spread]
+[seVolume 21_ade614 0.2 0.3]
+
+
+[charaTalk L]
+[charaFace L 7]
+[charaFadein L 0.4 100,0]
+[charaMove L 0,0 0.5]
+[charaShake L 0.05 2 2 0.0]
+＠量産型コロンブス
+ハッハッブハァ……！[r]ハッハッブハァ……！
+[k]
+
+[messageOff]
+[charaMove L -100,0 0.8]
+[charaFadeout L 0.4]
+[wt 0.9]
+[charaPut V 1200,1200]
+[wt 0.1]
+[charaShakeStop L]
+
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk B]
+[charaFace B 21]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+まずい、予想より遥かに水量が……！[r]みんな、水中呼吸装置の準備を！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 -75,0]
+＠沖田オルタ
+煉獄！？　煉獄ーー！
+[k]
+
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 176,0]
+[charaShake G 0.05 4 0 0.0]
+＠煉獄
+来るな主！[r]主まで流されるぞ！
+[k]
+
+＠煉獄
+これは……駄目だ。[r]私はもうそっちには戻れない。一人で脱出しろ！
+[k]
+
+[charaShakeStop G]
+[charaFadeout G 0.1]
+[charaPut V 1200,1200]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 -75,0]
+＠沖田オルタ
+そ、そんなことできるわけが……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 176,0]
+[charaShake G 0.05 4 0 0.0]
+＠煉獄
+やるんだ！　共倒れだけは避けなければ。
+[k]
+
+[charaFace G 7]
+＠煉獄
+なに、私という霊基の根本は剣。[r]他のサーヴァントとは在り方が違う。
+[k]
+
+＠煉獄
+溺れたりはしない……多分な。
+[k]
+
+[charaFace G 13]
+＠煉獄
+大丈夫だ、必ず戻って主の[line 3]
+[k]
+
+[messageOff]
+
+[se ad416]
+[seVolume ad416 0 0.4]
+[seStop ad416 2.0]
+[effect bit_talk_water_spread]
+[effectStop bit_talk_water_spread]
+[seVolume 21_ade614 0.6 0.4]
+[charaMove G 76,0 0.5]
+[charaFadeout G 0.4]
+[wt 0.5]
+[seVolume 21_ade614 0.4 0.1]
+[wt 0.4]
+[charaPut V 1200,1200]
+[wt 0.1]
+[charaShakeStop G]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 -75,0]
+＠沖田オルタ
+[f large]煉獄ーーーーーー！！
+[k]
+
+？1：た、助けに行けない！？
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+＠カイニス
+行けなかねェが行かねえぜ、今は。
+[k]
+
+[charaFace D 17]
+＠カイニス
+臨時とはいえオレは保安要員だからな。[r]テメェらの安全を守るのが仕事だ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 -75,0]
+＠沖田オルタ
+煉獄…………。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+………………。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+見ろ、水の勢いはまだまだ凄まじい！[r]このままでは、いずれ海底洞窟自体が水没しかねん。
+[k]
+
+＠ゴルドルフ
+何を迷う必要がある！[r]今は我々の脱出を優先すべきだろう！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+そう……ですね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠マシュ
+沖田オルタさん……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 -75,0]
+＠沖田オルタ
+うう……
+[k]
+
+[charaFace F 2]
+＠沖田オルタ
+[f large]うあーーーー！
+[k]
+
+[messageOff]
+
+[se ade524]
+[charaFace F 9]
+[wt 0.1]
+[charaShake F 0.04 3 3 0.3]
+[wt 0.8]
+
+[charaFace F 5]
+＠沖田オルタ
+煉獄は私の最高の相棒です。
+[k]
+
+＠沖田オルタ
+その最高の相棒が、大丈夫、と言いました！[r]必ず戻る、と！
+[k]
+
+＠沖田オルタ
+[line 3]だったら、私はそれを信じます。[r]私は、煉獄の相棒ですから！
+[k]
+
+[charaFace F 2]
+＠沖田オルタ
+さあ脱出しましょう！　出口のサーチは済んでいますか？[r]どこか斬る必要があるのなら任せてください、さあさあ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+よし！
+[k]
+
+＠ゴルドルフ
+まずは脱出だ！[r]各員、水中呼吸装置の準備を！
+[k]
+
+[charaFace E 10]
+＠ゴルドルフ
+あっ。葛飾北斎はどうしたものかな？[r]誰か抱えていけるかね？
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk U]
+[charaFace U 4]
+[charaFadein U 0.4 0,-30]
+[charaMove U 0,0 0.7]
+＠葛飾北斎
+ふわーあ。何やら夢の中で[r]とんでもねぇ傑作描いてた気がするが……。
+[k]
+
+[charaFadeout U 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+ちょうど起きたみたいですね。[r]様子も……うん、普通そう。
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+[wt 0.8]
+
+[charaFace B 5]
+＠ダ・ヴィンチ
+葛飾北斎！
+[k]
+
+＠ダ・ヴィンチ
+聞きたかったんだ。[r][line 3]キミ、どうやってここに？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk U]
+[charaFace U 7]
+[charaFadein U 0.1 1]
+＠葛飾北斎
+あん？
+[k]
+
+[charaFace U 0]
+＠葛飾北斎
+島の磯辺に小さな洞窟があってな。[r]その奥にどんどん潜ってったらここに着いた[line 3]
+[k]
+
+[charaFace U 15]
+＠葛飾北斎
+水が溜まってる箇所もあったが、[r]まあ普通に息止めてりゃ越えられる程度だ。
+[k]
+
+[charaFace U 0]
+＠葛飾北斎
+……何だ、帰り道探してやがんのか。
+[k]
+
+＠葛飾北斎
+ま、何ヵ所か隙間広げねえと腹がつっかえる部分も[r]あるだろうけどヨ、
+[k]
+
+＠葛飾北斎
+そこをどうにかすりゃあ元の磯辺には戻れると思うぜ。
+[k]
+
+
+[charaFace U 14]
+＠葛飾北斎
+おれはタコだからよ。[r]ヌルッと隙間を通り抜けられたんでい。
+[k]
+
+[charaFadeout U 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+いい情報！
+[k]
+
+＠ダ・ヴィンチ
+とりあえずそこに案内してほしい。[r]できるだけ急いでね！
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 -75,0]
+
+[wt 0.8]
+
+[se ad59]
+
+[charaFadeout F 0.4]
+[wt 0.7]
+
+[seStop ad59 1.0]
+[seStop 21_ade614 1.5]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_80 1.5]
+[wait fade]
+
+[wt 0.5]
+
+[scene 129601]
+
+[charaSet R 98002000 1 フォウ]
+[charaSet S 98018100 1 海賊Ｃ]
+
+[charaDepth S 7]
+
+[wt 2.0]
+
+[se ad37]
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+
+[seStop ad37 1.0]
+[wt 0.5]
+
+[charaTalk S]
+[charaFace S 0]
+[charaFadein S 0.1 1]
+＠海賊Ｃ
+俺はモブの海賊♪　名前なんざ捨てちまったぜ♪[r]強いて言うなら海賊Ｃ♪
+[k]
+
+[messageOff]
+
+[charaFadeout S 0.1]
+[wt 0.1]
+
+[se ad416]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.4 0,-20]
+[charaMove E 0,0 0.2]
+[wt 0.5]
+
+＠ゴルドルフ
+死ぬかと思ったーーー！
+[k]
+
+[seStop ad416 0.4]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk S]
+[charaFace S 0]
+[charaFadein S 0.1 1]
+[charaShake S 0.05 2 2 0.5]
+＠海賊Ｃ
+うわ、何かいきなり大人数が水揚げされた！？[bgm BGM_EVENT_77 0.1]
+[k]
+
+[charaFadeout S 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadeinFSR D 0.1 2]
+
+[charaFace S 0]
+[charaFadeinFSL S 0.1 0]
+＠カイニス
+あァ？
+[k]
+
+[charaFace D 19]
+＠カイニス
+何だ、テメェ[line 3][r]何見てンだ。あァ？　殺すぞテメェ？
+[k]
+
+＠海賊Ｃ
+な、なんだよぅ。[r]いきなりチンピラかよアンタ！
+[k]
+
+[charaFace D 19]
+＠カイニス
+あァ！？
+[k]
+
+[charaFadeout S 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠マシュ
+落ち着いてください、カイニスさん。[r]おちついてー！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk U]
+[charaFace U 4]
+[charaFadein U 0.1 1]
+＠葛飾北斎
+ふあああ……。
+[k]
+
+＠葛飾北斎
+ずっと絵を描いていたもんだから、[r]肩が凝っちまったよ。
+[k]
+
+[charaFace U 13]
+＠葛飾北斎
+や、悪かったなますたあ！[r]今度かき氷でも[#奢:おご]ってやるから！
+[k]
+
+[messageOff]
+
+[se ad173]
+
+[charaFadeout U 0.4]
+[wt 0.8]
+[seStop ad173 0.5]
+[wt 0.8]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+ともかく第四の秘宝はゲットです。[r]皆さん、お疲れさまでした。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk S]
+[charaFace S 0]
+[charaFadein S 0.1 1]
+＠海賊Ｃ
+えええ！？[r]第四の秘宝だって！？
+[k]
+
+[charaFadeout S 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+あ、しまった。
+[k]
+
+[charaFace C 8]
+＠シャルロット・コルデー
+ナイショにしててくださいね、海賊さん。[r]しーっ♪
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk S]
+[charaFace S 0]
+[charaFadein S 0.1 1]
+＠海賊Ｃ
+あ、はい。[r]（この娘もしかして俺のことが好きなのでは？）
+[k]
+
+[charaFadeout S 0.1]
+[wt 0.1]
+
+[charaDepth E 7]
+
+[charaPut Q 0,-200]
+[charaFadeTime Q 0.2 0.5]
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠ゴルドルフ
+（魔性属性かな？）
+[k]
+
+[charaFadeout Q 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+ステくんも無事、第四の秘宝もゲット。[r]万事めでたしめでたし[line 3]
+[k]
+
+[charaFace B 4]
+
+＠ダ・ヴィンチ
+といきたいところだけど、[r]そうもいかないか。
+[k]
+
+＠ダ・ヴィンチ
+クリストファーくん……。[r]あのサーヴァント、一体何者なんだろうね。
+[k]
+
+？1：ＤＯＭＡＮもね……
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠マシュ
+はい……。
+[k]
+
+＠マシュ
+クリストファー君……
+[k]
+
+
+＠マシュ
+ＤＯＭＡＮさん……
+[k]
+
+＠マシュ
+そして量産型コロンブスさん……
+[k]
+
+[charaFace A 8]
+＠マシュ
+今年の夏も、またカオスですね……。[r]……[wt 0.3][charaFace A 6]あれ？
+[k]
+
+？1：マシュ？
+？！
+
+[charaFace A 0]
+
+
+＠マシュ
+あ、いえ。[r]ちょっと何か今閃き掛けたような……。
+[k]
+
+[charaFace A 4]
+＠マシュ
+……すみません、思い出せないようです。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk R]
+[charaFace R 0]
+[charaFadein R 0.1 1]
+＠フォウ
+フォウフォウフォウ！　フォウ！
+[k]
+
+[charaFadeout R 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠カイニス
+ったく。[r]おい、チビ人形。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 28]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+その呼び方ヤだなぁ……。[r]なに？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠カイニス
+次会ったときには、[r]奴らにいい啖呵を切ってやれ。
+[k]
+
+＠カイニス
+この夏、カルデアとテメェの敵は奴らで間違いねえ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+うん。[r]一応、考えておく。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 16]
+[charaFadein F 0.1 -75,0]
+＠沖田オルタ
+…………。
+[k]
+
+？1：煉獄は大丈夫？
+？！
+
+[charaFace F 0]
+＠沖田オルタ
+はい。
+[k]
+
+＠沖田オルタ
+少なくとも生きていて、[r]害を受けている訳でもないみたいです。
+[k]
+
+
+＠沖田オルタ
+すぐに帰ってくると思いますが……。[r]難しいようなら、捜してみようと思います。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+色々と気になるところではあるが……、[r]日も暮れそうだし、キャンプへ戻るとしようか。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+うん。[r]まずは、キャンプに帰ろう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+まあ何にせよ……。
+[k]
+
+[charaFace E 18]
+＠ゴルドルフ
+当分の間、スキューバダイビングは[r]勘弁したいところだな！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

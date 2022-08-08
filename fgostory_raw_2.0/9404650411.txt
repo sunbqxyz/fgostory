@@ -1,0 +1,225 @@
+＄94-04-65-04-1-1
+
+[soundStopAll]
+
+[charaSet A 5033001 1 喀耳刻]
+[charaSet B 2009102 1 俄里翁]
+[charaSet C 2015001 1 阿周那]
+[charaSet D 1098181810 1 奥德修斯]
+[charaSet E 1038000 1 伊阿宋]
+[charaSet F 1001000 1 特效用]
+[charaSet G 1001000 1 特效用]
+
+[charaSet H 98006200 1 敌人]
+
+[scene 90501]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_shelling_pink01]
+[wt 0.4]
+
+[flashin once 0.1 0.1 e1a3ffFF e1a3ff50]
+[se bac18]
+[effectDestroy]
+[wt 0.1]
+[charaShake H 0.03 4 4 0.8]
+[wt 1.0]
+[charaFadeout H 0.1]
+[wt 0.5]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove 0,0 H]
+[charaTalk A]
+[charaFace A 5]
+
+[charaFadein A 0.2 0,40]
+
+[charaMove A 0,0 0.3]
+[wt 0.6]
+
+＠喀耳刻
+……好。[r]抓住一只了！
+[k]
+
+[charaFace A 2]
+
+＠喀耳刻
+这样如何！
+[k]
+
+[messageOff]
+[se ad73]
+[charaPut G 1]
+[charaMoveScale A 1.2 0.2]
+[charaMove A 0,10 0.2]
+[charaEffect G bit_talk_41]
+[charaFadeout A 0.2]
+[wt 0.2]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_41]
+[wt 0.3]
+
+[fadeout white 0.3]
+[se ad39]
+[wait fade]
+
+[wt 0.5]
+
+[fadein white 0.5]
+[seStop ad39 0.5]
+[wait fade]
+
+[se ad14]
+[shake 0.01 0 3 2.0]
+[bgmStop BGM_EVENT_3 1.0]
+[wt 1.0]
+
+[charaMoveScale A 1.0 0]
+
+[scene 90500 1.0]
+[seStop ad14 1.0]
+[se ad576]
+[seStop ad576 1.5]
+[wt 2.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠阿周那
+这……墙壁打开了呢。
+[k]
+
+＠阿周那
+看来奥德修斯的推测是正确的。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 18]
+[charaFadein E 0.1 1]
+
+＠伊阿宋
+呵欠……哦，结束了啊。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠俄里翁
+你倒是来帮帮忙啊！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+
+＠奥德修斯
+好，成功了。
+[k]
+
+[charaFace A 1]
+
+＠喀耳刻
+噢～。
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 0.2]
+
+
+[charaMove D -190,0 0.3]
+[charaMove A 190,0 0.3]
+[wt 0.3]
+
+[se ade124]
+[charaMoveReturn D -180,10 0.3]
+[charaMoveReturn A 180,10 0.3]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠喀耳刻
+……[r]……
+[k]
+
+[charaFace A 6]
+
+＠喀耳刻
+我为什么非要和这家伙击掌不可啊！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠奥德修斯
+原来如此，我有些理解了。[r]你是那种一步入正轨就非常强的人吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠喀耳刻
+你，不准笑！
+[k]
+
+
+＠喀耳刻
+总之道路已经打开了。[r]继续前进啦！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠奥德修斯
+嗯，走吧！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,1329 @@
+
+＄94-04-91-02-4-1
+
+[soundStopAll]
+
+[charaSet A 9010000 1 卑弥呼]
+[charaSet B 1098194300 1 卑弥呼]
+[charaSet C 1044000 1 斋藤一]
+[charaSet D 2041000 1 织田信胜]
+
+[branchQuestNotClear lblNotClear 3000320]
+[branch lblConf]
+[label lblNotClear]
+[charaSet E 8001000 1 玛修]
+
+[branch lblNotClear_out]
+[label lblConf]
+[charaSet E 8001410 1 玛修]
+
+[label lblNotClear_out]
+
+[charaSet F 1098195000 1 山南敬助]
+[charaSet G 1098196100 1 埴轮信]
+[charaSet H 1098194500 1 无名之龟]
+[charaSet I 1001000 1 特效用]
+[charaSet J 1098195500 1 村落里的女性]
+[charaSet K 1027001 1 冲田总司]
+
+[charaSet L 1098195800 1 村落里的孩子]
+[charaSet M 1098195700 1 村落里的老人]
+[charaSet N 1098195900 1 村落里的孩子]
+[charaSet O 1001000 1 特效用]
+
+[charaDepth O 8]
+[charaDepth A 7]
+[charaDepth I 5]
+[charaDepth L 6]
+[charaDepth N 7]
+
+
+[scene 96901]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+[wt 0.1]
+
+[effect bit_talk_14]
+[se ad809]
+[wt 0.1]
+[charaShake G 0.05 5 5 0.4]
+[wt 0.5]
+
+＠埴轮
+……HA……HANYONYOBU！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+
+＠斋藤一
+好硬！？　怎么那么硬。
+[k]
+
+[bgmStop BGM_EVENT_3 1.5]
+
+＠斋藤一
+我的刀刃都快崩了啊。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+[bgm BGM_EVENT_5 0.1]
+
+
+＠玛修
+那个埴轮非常坚硬，前辈！
+[k]
+
+＠玛修
+虽然好不容易停住了它们，[r]但即便用我的盾，它们都毫发无损。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+
+＠山南敬助
+连斋藤都无法毁掉它们的话，该怎么办呢。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+唔……没办法了。
+[k]
+
+[charaFace A 5]
+
+＠卑弥呼
+大家稍微退后一点，我来动手。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠织田信胜
+哎？　什么意思？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[bgmStop BGM_EVENT_5 2.0]
+
+＠无名之龟
+没错，姐姐大人的话，[r]对付这种程度应该不成问题吧。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_62 0.1]
+
+＠卑弥呼
+哈啊啊啊啊啊啊啊啊啊啊啊！
+[k]
+
+
+[messageOff]
+[charaPut I 0,0]
+[charaEffect I bit_talk_charge_aura_set]
+[se bac66]
+[se ad14]
+[wt 2.0]
+[seStop bac66 0.4]
+
+[charaPut I 1200,1200]
+[seVolume ad14 0.5 0.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠玛修
+前辈！　卑弥呼小姐释放出了非常强烈的魔力！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 16]
+[charaFadein F 0.1 1]
+
+＠山南敬助
+这是何等强大的魔力……[r]看来她并不是普通的从者呢。
+[k]
+
+[seVolume ad14 0.2 1.0]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut I 0,0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+我要上了哦～！　见识一下初代女王的力量吧！
+[k]
+
+[charaPut I 1200,1200]
+[charaFadeout A 0.1]
+[seVolume ad14 0.1 0.5]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠玛修
+难道是宝具吗！？
+[k]
+
+[seVolume ad14 0.2 1.0]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut I 0,0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+『必杀！　卑弥呼拳！！』
+[k]
+
+[messageOff]
+[charaMoveScale A 1.2 0.2]
+[charaMove A 0,10 0.2]
+[se bac1]
+[charaMoveScale I 1.2 0.2]
+[charaMove I 0,10 0.2]
+[effect bit_talk_41]
+[charaFadeout A 0.2]
+[wt 0.2]
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_charge_aura_set]
+[effectStop bit_talk_41]
+[effectDestroy]
+[charaEffectDestroy I bit_talk_charge_aura_set]
+[seStop ad14]
+[wt 0.1]
+
+[charaScale A 1.0]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+[bgmStop BGM_EVENT_62 0.1]
+
+[charaEffect G bit_talk_arrow_back_y 330,80]
+[se ad85]
+[wt 0.2]
+[se bac98]
+[wt 0.3]
+[charaShake G 0.03 5 5 0.5]
+
+[fowardEffect bit_talk_impactlanding 0,-150]
+[wt 2.5]
+
+？1：殴打！？
+？2：不是光炮什么的吗！？
+？！
+
+[effect bit_talk_31]
+[se ade456]
+[wt 0.6]
+
+[fadeout white 0.3]
+[se ad556]
+[seVolume ad556 0 0.4]
+[wait fade]
+
+[charaFadeout G 0.1]
+[effectDestroy]
+
+[wt 0.5]
+[seStop ade456 0.5]
+
+＠织田信胜
+呜哇啊啊啊啊啊啊！？！？？！？
+[k]
+
+＠织田信胜
+姐……姐姐大人，救命啊～！！
+[k]
+
+[messageOff]
+[charaTalk K]
+[charaFace K 4]
+[charaFadein K 0.1 1]
+[charaEffect K bit_talk_shadow_aura01 0,-25]
+[wt 0.5]
+
+[se ade187]
+
+[fadein white 0.5]
+[seStop ade187 1.0]
+[seStop ad556 0.5]
+[wait fade]
+
+[wt 1.0]
+
+＠冲田总司
+……我……我还以为要死了。
+[k]
+
+[charaFace K 6]
+
+
+＠冲田总司
+…………[charaShake K 0.03 4 4 0.3]呜噗！？[fowardEffect bit_talk_35][se ad466]
+[k]
+
+[messageOff]
+[fowardEffectDestroy]
+
+[fowardEffect bit_talk_atomization]
+[wt 0.5]
+[cueSe Battle ba6]
+[charaEffectStop K bit_talk_shadow_aura01]
+[wt 4.0]
+
+[charaEffectDestroy K bit_talk_shadow_aura01]
+[fowardEffectDestroy]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠玛修
+冲……冲田小姐！？
+[k]
+
+＠玛修
+前辈，埴轮中出现了冲田小姐……！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[wt 1.0]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠玛修
+吓……吓了我一跳，前辈……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 16]
+[charaFadein F 0.1 1]
+
+＠山南敬助
+没想到竟能徒手破坏那个以坚硬见长的埴轮……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+嘿嘿，不在话下哦？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+
+＠无名之龟
+不愧是姐姐大人，[r]通过碎骨占卜练成的蛮力依然宝刀未老呢。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠斋藤一
+不，一般人都会被吓到的。你究竟是谁啊。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+我是卑弥呼啊，有什么问题吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 6]
+[charaFadein K 0.1 1]
+
+
+＠冲田总司
+不不，你们倒是给我点关心啊……
+[k]
+
+[charaFace K 8]
+
+＠冲田总司
+……呃，山南先生和斋藤先生？
+[k]
+
+＠冲田总司
+你们怎么会在这里！？
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+
+[charaFace F 10]
+[charaFadein F 0.1 2]
+
+＠山南敬助
+哎呀，冲田，好久不见。
+[k]
+
+[charaFace C 1]
+
+＠斋藤一
+哟，还精神吗？
+[k]
+
+[charaFace C 9]
+
+＠斋藤一
+话说，在此之前，冲田亲，[r]你为什么会在埴轮里啊？
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 4]
+[charaFadein K 0.1 1]
+
+＠冲田总司
+唉，其实当我回过神来时，[r]就已经被关在那个埴轮里无法动弹了……
+[k]
+
+＠冲田总司
+刚才的拳击？　应该是多亏了那个，[r]才好不容易重获自由。
+[k]
+
+[charaFace K 0]
+
+＠冲田总司
+这……这个暂且不论，山南先生和斋藤先生……
+[k]
+
+＠冲田总司
+没想到竟然还能见到你们。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+
+＠山南敬助
+[line 3]我们的问题稍后再谈吧。
+[k]
+
+
+＠山南敬助
+快看，不知是否因为埴轮消失了，[r]从神殿冒出来的那些黑雾也逐渐消失了哦。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.6]
+
+
+[scene 96900 1.5]
+[wt 2.5]
+
+[charaTalk H]
+
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠无名之龟
+噢噢，河川的水也变清澈了，姐姐大人。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+这样总算是解决了吧，怎么样，未来亲。
+[k]
+
+[charaFace A 1]
+
+＠卑弥呼
+初代邪马台国女王卑弥呼的力量如何？
+[k]
+
+[charaFace A 6]
+
+＠卑弥呼
+嘿嘿，有没有对我刮目相看？
+[k]
+
+？1：好强的力量啊。
+
+
+＠卑弥呼
+对吧～。
+[k]
+
+？2：（物理角度上）好强的力量啊。
+
+[charaFace A 0]
+
+＠卑弥呼
+啊，这说法有些不太痛快呢。
+[k]
+
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠织田信胜
+什么好强的力量啊，只是蛮力而已吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 2]
+[charaFadein J 0.1 1]
+
+＠村落里的女性
+啊，啊啊…………
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠织田信胜
+你看，这个人也被吓到了吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 2]
+[charaFadein J 0.1 1]
+
+＠村落里的女性
+…………！
+[k]
+
+[messageOff]
+[charaFadeout J 0.3]
+[charaMove J 50,0 0.4]
+[se ad444]
+[seStop ad444 1.0]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠玛修
+究竟是怎么了，突然跑了……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠无名之龟
+啊啊，是这样啊。
+[k]
+
+[charaFace H 1]
+
+
+＠无名之龟
+来吧，各位，我们回去吧。[r]女王回归。
+[k]
+
+[messageOff]
+
+[wipeout rightToLeft 1.0 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait wipe]
+
+[charaFadeout H 0.1]
+
+
+[charaSet E 98001000 1 玛修]
+
+[scene 96700]
+[wt 0.8]
+
+[wipein leftToRight 1.0 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[charaTalk off]
+
+[charaFace M 0]
+[charaFadein M 0.1 1]
+[charaFace J 0]
+[charaFadein J 0.1 -306,0]
+[charaFace L 0]
+[charaFadein L 0.1 306,0]
+
+[bgm BGM_EVENT_50 0.1]
+
+＠村落里的人们
+是……是卑弥呼大人……卑弥呼大人……！
+[k]
+
+[charaTalk on]
+
+＠村落里的老人
+本以为不可能，真的是卑弥呼大人……！
+[k]
+
+＠村落里的孩子
+卑弥呼大人就是爷爷一直提到的那位卑弥呼大人？
+[k]
+
+
+＠村落里的老人
+没错，就是拯救了饱受战乱之苦的邪马台国，[r]守护我们的那位卑弥呼大人。
+[k]
+
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+
+＠玛修
+前辈，村落里的人们陆续聚集过来了！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+哎呀～。不过会暴露也难怪。
+[k]
+
+[charaFace A 1]
+
+＠卑弥呼
+没错，我就是……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 2]
+[charaFadein L 0.1 1]
+
+＠村落里的孩子
+传说能徒手打死山里来的大蛇，[r]能一脚踩裂大地创造河川的，
+[k]
+
+＠村落里的孩子
+[line 3]那位卑弥呼大人吗？
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+哈？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 2]
+[charaFadein M 0.1 0]
+[charaFace L 0]
+[charaFadein L 0.1 2]
+
+＠村落里的老人
+没错，就是当时将攻打邪马台国的家伙们[r]一个接一个打飞，
+[k]
+
+＠村落里的老人
+堆积出犹如贝冢般尸山的[r]那位传说中的女王陛下。
+[k]
+
+＠村落里的老人
+老……老天保佑，老天保佑……！
+[k]
+
+[charaFace L 2]
+
+＠村落里的孩子
+卑弥呼大人好厉害呀！
+[k]
+
+[messageOff]
+[charaTalk off]
+[bgmStop BGM_EVENT_50 1.0]
+[se ade322]
+[se ad413]
+
+[wt 1.5]
+[seStop ade322 0.8]
+[seStop ad413 0.8]
+[wt 0.3]
+
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+哈？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠无名之龟
+呵呵呵，姐姐大人的传说被严重夸大了呢。
+[k]
+
+？1：邪马台国原来是被力量支配的国家啊……！？
+
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+怎么可能嘛！
+[k]
+
+？2：和我在课本上看到的内容不太一样……
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+课本？　那是什么？
+[k]
+
+？！
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+
+[scene 96600]
+[wt 0.8]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠B：卑弥呼
+总之，大致情况我明白了。
+[k]
+
+[charaFace B 4]
+
+
+＠B：卑弥呼
+也就是说各地神殿中流出了那种[r]名为凶暗的东西玷污了这个国家吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+
+＠玛修
+是的，卑弥呼小姐破坏埴轮后，[r]神殿就不再流出凶暗，
+[k]
+
+[charaFace E 1]
+
+
+＠玛修
+河流的水变得清澈，[r]衰弱的村里人也恢复了生气。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠卑弥呼
+那事情就好办了。[r]我们继续寻找并破坏那个埴轮吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+
+＠山南敬助
+根据冲田那件事推测，[r]那个埴轮应该是用来守护神殿的存在吧。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 5]
+[charaFadein K 0.1 1]
+
+
+＠冲田总司
+也就是说，还有其他[r]和我一样被那个埴轮操控的从者吗？
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+
+＠卑弥呼
+总之，我们已经找到了窍门，[r]清除从者身上凶暗的任务就交给我吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+
+＠玛修
+您刚才难道不只是用蛮力殴打吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+不，就是殴打。用蛮力。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 4]
+[charaFadein K 0.1 1]
+
+＠冲田总司
+哎……
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠卑弥呼
+但除此以外，其实我也拥有[r]清除这类不太好东西的力量哦。
+[k]
+
+[charaFace A 4]
+
+＠卑弥呼
+是叫鬼道的能力……[r]唔，只是这个很难口头解释。
+[k]
+
+[charaFace A 0]
+
+＠卑弥呼
+反正我能用的水平和壹与也差不多，[r]无所谓啦。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+
+＠无名之龟
+姐姐大人，这些倒是无妨啦，[r]我们还得重建彻底荒废的村落才行。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+
+＠织田信胜
+就是啊，兵站乃是战斗的关键，[r]我的姐姐大人是这么说的。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠玛修
+那当前目标就设定为边帮忙重建村落，[r]边寻找位于各地神殿的埴轮，
+[k]
+
+
+＠玛修
+并清除黑色的雾怎么样，前辈？
+[k]
+
+[charaFace E 12]
+
+
+＠玛修
+不管怎么说，只要不清除那种所谓的凶暗，[r]我们也无法离开这个国家……
+[k]
+
+？1：说得对，就这么办吧。
+？2：如果能与迦勒底取得联系就好了……
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠山南敬助
+还有那些自称新选组的家伙吧。
+[k]
+
+＠山南敬助
+怎么样，冲田和斋藤。[r]我们也暂时在这里帮忙吧？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+
+
+＠冲田总司
+我原本就是御主的从者，[r]正有此意，
+[k]
+
+[charaFace K 4]
+
+
+＠冲田总司
+但那个……山南先生你们没意见吗？
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠斋藤一
+有何不可，反正我们也无处可去。
+[k]
+
+[charaFace C 0]
+
+
+＠斋藤一
+而且正如山南老师所说的，[r]我也很在意那群自称新选组的离谱家伙。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+
+＠山南敬助
+综上所述，我们也和冲田一样，[r]打算留在这里帮助各位，没问题吧？
+[k]
+
+？1：求之不得！
+？2：没问题吧，玛修？
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠玛修
+嗯，请多关照！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+
+＠山南敬助
+嗯，请多关照。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠斋藤一
+真是的，没想到又要和冲田亲并肩作战了啊。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+
+
+＠冲田总司
+万事拜托了哦，斋藤先生。
+[k]
+
+＠冲田总司
+啊，要不要久违地比试一场？
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+
+＠斋藤一
+我才不要呢，我可不想和冲田亲的剑较量。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 2]
+[charaFadein K 0.1 1]
+
+
+＠冲田总司
+哎～，你以前拿这种话当借口，[r]始终不肯和我练习吧。
+[k]
+
+[charaFace K 5]
+[bgmStop BGM_EVENT_2 1.0]
+
+＠冲田总司
+气鼓鼓。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_62 0.1]
+
+＠卑弥呼
+好嘞～！　那让我们齐心协力复兴邪马台国吧！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaFace E 1]
+[charaFadein E 0.1 0,0]
+[charaFace C 1]
+[charaFadein C 0.1 -406,0]
+[charaFace K 1]
+[charaFadein K 0.1 -176,0]
+[charaFace D 0]
+[charaFadein D 0.1 196,0]
+[charaFace F 11]
+[charaFadein F 0.1 406,0]
+[charaFace H 1]
+[charaFadein H 0.1 306,-200]
+
+[charaDepth H 8]
+[charaDepth E 7]
+[charaDepth K 6]
+[charaDepth D 6]
+[charaDepth C 4]
+[charaDepth F 3]
+
+＠全体
+好！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[bgmStop BGM_EVENT_62 1.5]
+[wait wipe]
+
+[charaTalk on]
+[charaFadeout E 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout H 0.1]
+[charaFadeout F 0.1]
+[charaFadeout K 0.1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[charaTalk N]
+[charaFace L 0]
+[charaFadein L 0.1 -386,0]
+[charaFace N 1]
+[charaFadein N 0.1 -186,0]
+
+＠N：村落里的孩子
+喂喂，那就是卑弥呼大人吗？
+[k]
+
+[clear]
+
+[charaTalk L]
+[charaFace L 1]
+
+＠村落里的孩子
+没错，看上去虽然没什么了不起的，[r]但她可以空手击碎大山哦！
+[k]
+
+[clear]
+
+[charaTalk N]
+
+[bgm BGM_EVENT_7 0.1]
+[charaFace N 5]
+
+＠N：村落里的孩子
+还能从嘴里喷出火焰吧？　好厉害～！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[bgm BGM_EVENT_7 0.5 0.5]
+[wait wipe]
+
+[charaFadeout L 0.1]
+[charaFadeout N 0.1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1]
+[bgm BGM_EVENT_7 0.5 1.0]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+[messageShake 0.03 5 5 0.3]
+[line 3]我可喷不出来！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[soundStopAll]
+[end]

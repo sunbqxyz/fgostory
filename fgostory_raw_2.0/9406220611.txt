@@ -1,0 +1,721 @@
+
+
+＄94-06-22-06-1-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 98084000 1 ハロウィン騎士]
+[charaSet B 98084000 1 ハロウィン騎士]
+[charaSet C 98084000 1 ハロウィン騎士]
+[charaSet D 99502600 1 マシュ]
+[charaSet E 6031001 1 刑部姫]
+[charaSet F 3005001 1 エリザベート]
+[charaSet G 6026001 1 新宿のアサシン]
+
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[charaSet I 10004000 1 メカエリチャン]
+[charaSet J 10005000 1 Ⅱ号機]
+
+
+[pictureFrame cut297_frame17 forceFullScreenSize]
+
+[scene 134500]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_3 0.1]
+[wait fade]
+
+[pictureFrame]
+[pictureFrameTop cut297_frame17 forceFullScreenSize]
+
+[charaTalk off]
+[charaFadeinFSL B 0.1 -256,-50]
+[charaFadein A 0.1 0,-50]
+[charaFadeinFSR C 0.1 256,-50]
+[wt 0.2]
+
+＠ハロウィン騎士
+くっ……撤退、撤退だー！
+[k]
+
+[messageOff]
+[se ad166]
+[charaMoveFSL B -300,-50 0.4]
+[charaMove A -50,-50 0.4]
+[charaMoveFSR C 200,-50 0.4]
+[seStop ad166 1.7]
+[charaFadeout A 0.4]
+[charaFadeout B 0.4]
+[charaFadeout C 0.4]
+[wt 0.4]
+[bgmStop BGM_EVENT_3 0.7]
+[wt 2.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk on]
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 0,-50]
+[wt 0.3]
+
+＠マシュ
+敵性反応、後退及び消滅を確認。[r]お疲れさまでした、マスター。
+[k]
+
+[charaFace D 11]
+＠マシュ
+[line 3]さて。[r]それではそろそろ、離れてはいかがでしょうか。
+[k]
+
+[charaFace D 14]
+＠マシュ
+むしろ引き剥がしてはどうなのでしょうか！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk E]
+[charaFace E 1]
+[charaScale E 1.3]
+[charaFadein E 0.1 0,0]
+
+＠E：？？？
+え、あ、きゃっ！
+[k]
+
+[messageOff]
+[se ad7]
+[seVolume ad7 0 0.5]
+[charaFadeout E 0.2]
+[wt 0.2]
+[charaScale E 1.0]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.4 0,-50]
+
+＠E：？？？
+あはは、ごめんね。[r]ちょっと、怖くってさ。
+[k]
+
+？1：別にいい[&けど:ですよ]
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_7 0.1]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 0,-50]
+
+＠エリザベート
+[messageShake 0.01 5 5 1.0]
+[&子イヌ:子ジカ]ーーー！[r]どうしよう、どうしよう、どうしよう！
+[k]
+
+＠エリザベート
+チェイテ城がまた奪われちゃったの！
+[k]
+
+？1：またかー！
+？！
+
+[charaFace F 2]
+＠エリザベート
+そうなの！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace F 2]
+[charaFadeinFSL F 0.1 -256,-50]
+[charaFace E 0]
+[charaFadeinFSR E 0.1 256,-50]
+
+＠E：？？？
+カルデアのマスター……ふんふん。[r]いいじゃない、いいじゃないの。
+[k]
+
+[charaFace F 0]
+＠エリザベート
+でしょ？
+[k]
+
+＠エリザベート
+まあ、まだまだ[#私:アタシ]の理想とするマスターには[r]及ばないんだけど。
+[k]
+
+＠エリザベート
+凄いから、[#私:アタシ]の理想。[r]なんとなく、そんな気がするだけだけど。
+[k]
+
+＠E：？？？
+なにそれ、非実在系？[r]そういうの、無い者ねだりって言うのよエリエリ？
+[k]
+
+[charaFace F 5]
+
+＠エリザベート
+実在系よ、ちゃんと！[r]いるはずだもの！　絶対にいるんだから！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 0.7]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 0,-50]
+＠新宿のアサシン
+で、アンタ何者なんだい？
+[k]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠新宿のアサシン
+ああいう連中に追われているって、[r]只事じゃあ、なさそうなんだが。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0,-50]
+
+＠E：？？？
+……ここの新しい主に追われているの。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 0,-50]
+＠マシュ
+新しい……主？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+＠新宿のアサシン
+話が見えてこねえなー。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠マシュ
+そうですね、まずあの騎士が仕えている主とは、[r]エリザベートさんの事ではないですよね？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 0,-50]
+＠エリザベート
+そう、みんな洗脳されちゃったの！[r]うぃんうぃんうぃんみょんみょんみょーんって！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠E：？？？
+洗脳電波って怖いわよねー。[r]さすが機械。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+＠新宿のアサシン
+機械？[r]そーいやさっきなんか言ってたな。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 0,-50]
+＠マシュ
+はい。機械仕掛けの女王[line 3][r]メカエリチャン、と。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 0,-50]
+＠エリザベート
+………………。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0,-50]
+
+＠E：？？？
+そうね、何はともあれ。[r]……空を見てみなさい。
+[k]
+
+＠E：？？？
+あの禍々しい混沌の城塞を。
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripDownToUp 0.4 1]
+[bgmStop BGM_EVENT_5 0.4]
+[wait wipe]
+[charaFadeout E 0.1]
+[imageSet A cut045_bg 1]
+[charaScale A 2.65]
+[charaFadein A 0 670,-250]
+[wt 0.4]
+
+[scene 136200]
+[wipein rectangleStripUpToDown 0.4 1]
+[wait wipe]
+
+[wt 0.7]
+[charaAttack A normal 670,-1000 2.0]
+[wt 2.2]
+[se ad186]
+[wt 1.75]
+
+[wipeout rectangleStripUpToDown 0.4 1]
+[wait wipe]
+
+[charaFadeout A 0]
+
+[charaSet A 98111500 1 ダ・ヴィンチ]
+[charaSet B 98102900 1 フォウ]
+[charaSet G 5009000 1 エフェクト用ダミー２]
+[charaSet C 6026001 1 新宿のアサシン]
+
+[scene 134500]
+[wt 0.4]
+[wipein rectangleStripDownToUp 0.4 1]
+[wait wipe]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 0,-50]
+
+＠マシュ
+……。[r]……。
+[k]
+
+？1：めまいがします
+
+[charaFace D 14]
+＠マシュ
+な、な、な[line 3]！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+＠フォウ
+フォウ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 0,-50]
+
+＠新宿のアサシン
+おいおい大丈夫かマスター。[r]いや、何だアレ滅茶苦茶面白いな！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？2：馬鹿なの？　ねえ、馬鹿なの？
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-140]
+＠ダ・ヴィンチ
+これはまた……。[r]素晴らしいグロテスクさだ。
+[k]
+
+＠ダ・ヴィンチ
+西洋／中東／東洋全部乗せ。
+[k]
+
+＠ダ・ヴィンチ
+ハンバーグの上にチョコパフェと刺身を乗せて[r]チリソースで食べさせられるみたいな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+？！
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0,-50]
+
+＠E：？？？
+あの日本の城が、[#姫:わたし]の本当の住処。
+[k]
+
+＠E：？？？
+今はもう奪われた……[#姫:わたし]の[#聖域]。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadeinFSL F 0.1 -256,-50]
+[charaFace E 4]
+[charaFadeinFSR E 0.1 256,-50]
+
+＠エリザベート
+ええ、気持ちはよく分かるわ、おっきー……。[r]辛いわよね、お城を奪われるのって。
+[k]
+
+？1：[&きみ:あなた]は[line 3]？
+？！
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 1.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+＠E：？？？
+そっか、自己紹介まだだったね。
+[k]
+
+[bgm BGM_EVENT_1 0.1]
+
+＠E：？？？
+こほん、こほん。
+[k]
+
+[charaFace E 1]
+
+＠E：？？？
+我が住処は白鷺の如き天上の城。[r][#誰彼:たそがれ]時を好む[#蝙蝠:こうもり]の化身でございます。
+[k]
+
+＠E：？？？
+誰が呼んだか白鷺城の八天堂、[r]真名を[#刑部姫:おさかべひめ]。
+[k]
+
+＠E：？？？
+そう、もちろんサーヴァント。[r]クラスはアサシン。
+[k]
+
+[charaFace E 9]
+
+＠E：？？？
+ああ、カルデアのマスターちゃん！[r]どうか、[#姫:わたし]の愛する姫路城を取り戻してください。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadeinFSL F 0.1 -256,-50]
+[charaFace E 4]
+[charaFadeinFSR E 0.1 256,-50]
+＠エリザベート
+[#私:アタシ]のチェイテ城もよろしくお願いね！
+[k]
+
+＠刑部姫
+どうか、どうか。[r]あの、恐ろしい悪の化身[line 3]。
+[k]
+
+[bgmStop BGM_EVENT_1 1.0]
+[charaTalk off]
+[charaDepth F 2]
+[charaDepth E 1]
+[charaFace F 2]
+[charaFace E 2]
+[charaMoveScale E 1.3 0.1]
+[charaMoveScale F 1.3 0.1]
+[charaMoveFSL F -196,-60 0.1]
+[charaMoveFSR E 196,-60 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_41_fs]
+
+[se ad185]
+[wt 0.4]
+
+＠二人
+メカエリチャンをブッ倒して！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+[charaScale G 1.0]
+[charaScale F 1.0]
+[charaScale E 1.0]
+
+[charaPut H 1]
+[charaTalk on]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 0,-50]
+＠マシュ
+メカ
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-140]
+＠ダ・ヴィンチ
+エリ
+[k]
+
+？1：チャン？
+？！
+
+
+[messageOff]
+[pictureFrameTop]
+[pictureFrame cut297_frame17 forceFullScreenSize]
+
+[fadeout black 2.0]
+[wait fade]
+
+[pictureFrame]
+
+[tapSkip test_skip]
+[label test_skip]
+
+[charaFadeout A 0.1]
+[charaPut H 1200,1200]
+[scene 10000]
+
+
+[wt 1.0]
+[fadein black 0.5]
+[wait fade]
+
+[branch _Movie]
+
+[label skip]
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[pictureFrameTop]
+[pictureFrame]
+
+[bgmStop BGM_EVENT_1 0.4]
+[bgmStop BGM_EVENT_2 0.4]
+[bgmStop BGM_EVENT_3 0.4]
+[bgmStop BGM_EVENT_5 0.4]
+[bgmStop BGM_EVENT_7 0.4]
+[seStop ad7 0.4]
+[seStop ad13 0.4]
+[seStop ad166 0.4]
+[seStop ad185 0.4]
+[seStop ad186 0.4]
+[scene 10000]
+[charaSet A 98111500 1 ダ・ヴィンチ]
+[charaSet B 98102900 1 フォウ]
+[charaSet C 6026001 1 新宿のアサシン]
+[charaSet D 99502600 1 マシュ]
+[charaSet E 6031001 1 刑部姫]
+[charaSet F 3005001 1 エリザベート]
+[charaSet G 5009000 1 エフェクト用ダミー２]
+[charaSet H 5009000 1 エフェクト用ダミー]
+[charaSet I 10004000 1 メカエリチャン]
+[charaSet J 10005000 1 Ⅱ号機]
+[skip false]
+[fadein black 0.1]
+[wait fade]
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[branch _Movie]
+
+[label _Movie]
+
+[skip false]
+
+[effectPause bit_talk_mechaelisa_op_02_fs]
+
+[effect bit_talk_mechaelisa_op_01_fs]
+[wait effect bit_talk_mechaelisa_op_01_fs]
+
+[wt 0.17]
+
+[bgm BGM_MAP_16 2.0]
+
+[effectStart bit_talk_mechaelisa_op_02_fs]
+
+[wt 13.0]
+[bgmStop BGM_MAP_16 1.5]
+[wt 1.5]
+
+
+
+
+[wt 1.0]
+[skip true]
+
+[wt 0.5]
+
+[cueSe Battle ba6]
+[cueSe Battle bac117]
+[cueSeVolume bac117 0 0.8]
+[wipeout guruguru 1.5 1.0]
+[cueSeStop ba6 1.5]
+[cueSeStop bac117 1.2]
+[wait wipe]
+
+
+
+[scene 135300]
+
+
+[wt 2.0]
+
+[wipein guruguru 1.5 1.0]
+[bgm BGM_MAP_4 0.1]
+[wait wipe]
+[wt 0.3]
+
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠メカエリチャン
+そういう訳で、[r]かつて私は敵だったのです、パイロット候補。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+＠Ⅱ号機
+驚いた？
+[k]
+
+？1：うんまあ……
+？！
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠メカエリチャン
+でしょうね。
+[k]
+
+＠メカエリチャン
+この鋼鉄魔嬢が敵に回った恐怖の夜[line 3][r]それが三度目のハロウィンなのですから。
+[k]
+
+＠メカエリチャン
+具体的にはこんな感じです。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[cueSe Battle ba6]
+[cueSe Battle bac117]
+[cueSeVolume bac117 0 0.8]
+[wipeout guruguru 1.5 1.0]
+[bgmStop BGM_MAP_4 1.5]
+[cueSeStop ba6 1.5]
+[cueSeStop bac117 1.2]
+[wait wipe]
+
+[charaFadeout I 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[wipein guruguru 0.5 1.0]
+[wait wipe]
+
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

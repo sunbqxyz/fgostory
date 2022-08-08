@@ -1,0 +1,257 @@
+
+＄03-00-09-05-4-0
+
+
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098124500 1 达·芬奇]
+[charaSet B 1098209600 1 奥伯龙]
+[charaSet C 1049000 1 千子村正]
+[charaSet D 1098209710 1 女王军·骑士]
+
+[charaSet G 5045000 1 阿尔托莉雅]
+[charaSet N 98115000 1 特效用]
+
+[scene 122400]
+
+[se ad646]
+[seVolume ad646 0 0]
+[seVolume ad646 1.0 1.0]
+
+[se ad995]
+[seVolume ad995 0 0]
+[seVolume ad995 1.0 0.4]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+[scene 122401 1.0]
+[wt 2.0]
+[seStop ad646 1.0]
+[seStop ad995 1.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 117401]
+
+[pictureFrame cut063_cinema]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_126 0.1]
+
+[charaTalk A]
+[charaFace A 22]
+[charaFadein A 0.1 0,-50]
+＠达·芬奇
+看到了，是威尔士！[r]可是[line 3]森林在燃烧……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 0,-50]
+＠奥伯龙
+还有希望……！[r]大家肯定都巧妙地躲起来了！
+[k]
+
+＠奥伯龙
+我们兵分二路！[r]驱赶敌人，扑灭大火！
+[k]
+
+＠奥伯龙
+阿尔托莉雅、达·芬奇、[r][%1]！　我们走这边，跟过来！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+＠千子村正
+那咱们就走反方向！[r]珀西瓦尔、加雷斯，走吧！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_126 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 118601]
+
+[charaDepth N 9]
+[charaPut N 1]
+[charaEffect N bit_talk_sparks_fs]
+
+[se ade24]
+[seVolume ade24 0 0]
+[se ad429]
+[seVolume ad429 0 0]
+
+[wt 1.0]
+
+[seVolume ade24 1.0 1.0]
+[seVolume ad429 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+[seVolume ade24 0.6 0.4]
+[seVolume ad429 0.6 0.4]
+
+[bgm BGM_EVENT_72 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠女王军·骑士
+这是女王陛下的命令，放火！[r]这里是污秽的『腐朽之森』，全部烧光！
+[k]
+
+＠女王军·骑士
+僭称妖精王的不法之徒……！[r]知道厉害了吧！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[cueSe Servants_603100 bac554]
+[seVolume bac554 0 0.5]
+
+＠威尔士的妖精
+[image npc_language_5:好痛，好痛，好痛。][r][image npc_language_5:拜托了　住手　快住手。][seStop bac554 1.0]
+[k]
+
+＠威尔士的妖精
+[image npc_language_5:不要烧毁森林。][r][image npc_language_5:不要破坏　奥伯龙的家。]
+[k]
+
+[cueSe SE_21 21_ad1094]
+[seVolume 21_ad1094 0 0.3]
+＠威尔士的妖精
+[image npc_language_5:不要欺负大家。][r][image npc_language_5:不要欺负我们。][seStop 21_ad1094 1.0]
+[k]
+
+＠威尔士的妖精
+[image npc_language_5:好痛啊，好痛啊，好痛啊。][r][image npc_language_5:要死了，要死了，要死，了][line 3]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_72 1.0 0.4]
+[seVolume ade24 1.0 0.2]
+[seVolume ad429 1.0 0.2]
+[wait fade]
+
+
+[pictureFrame]
+[wt 0.5]
+
+[se ad769]
+[seVolume ade24 1.0 0.4]
+[seVolume ad429 1.0 0.4]
+[bgm BGM_EVENT_72 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+[seStop ad769 0.5]
+[wt 0.5]
+
+？1：……！
+？2：（……事已……至此……）
+
+？！
+[seStop ade24 1.0]
+[seStop ad429 1.0]
+
+[charaTalk G]
+[charaFace G 26]
+[charaFadein G 0.1 1]
+＠阿尔托莉雅
+[line 6]，啊。
+[k]
+
+＠阿尔托莉雅
+啊，啊[line 6]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠女王军·骑士
+找到了，是妖精王！[r]抓住他，将他带去陛下面前！
+[k]
+
+＠女王军·骑士
+……唔？[r]旁边那个是『预言之子』吗？
+[k]
+
+＠女王军·骑士
+不，但是……在卡美洛见到时，[r]她应该还没有如此凶狠的魔力[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_72 1.0]
+[charaFadeout D 0.1]
+[wt 1.2]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk G]
+[charaFace G 33]
+[charaFadein G 0.1 1]
+＠阿尔托莉雅
+啊[messageShake 0.05 4 4 0.6]啊啊啊啊啊啊啊啊！[r]你们，你们[line 5]！
+[k]
+
+[messageOff]
+[se ad7]
+[charaMove G -80,0 0.3]
+[charaFadeout G 0.3]
+[se ad443]
+[wt 0.5]
+[seStop ad443 0.5]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠奥伯龙
+阿尔托莉雅……！？[r][line 3]对了，廷塔杰尔时的……！
+[k]
+
+＠奥伯龙
+[%1]、[r]快去追阿尔托莉雅！
+[k]
+
+＠奥伯龙
+现在的她已经迷失自我了！[r]一个不好就会死在这里！
+[k]
+
+？1：知道了，交给我吧！
+
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

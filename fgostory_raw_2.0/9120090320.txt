@@ -1,0 +1,453 @@
+
+
+＄91-20-09-03-2-0
+
+[soundStopAll]
+[flashin once 0.1 1 FFFF0010 FFFF0010]
+[bgm BGM_EVENT_7 0.1]
+[charaSet A 99502600 1 玛修]
+[charaSet B 2009102 1 俄里翁]
+[charaSet C 2009201 1 阿耳忒弥斯]
+[charaSet D 5004001 1 童谣]
+
+[scene 31000]
+[fadein black 2.0]
+[wait fade]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+
+＠俄里翁
+呼哈哈哈哈哈！
+[k]
+
+＠俄里翁
+虽然不知道该怎么逃，该逃去哪儿，[r]但不管怎么说，有种来到异世界的感觉！
+[k]
+
+[charaFace B 0]
+＠俄里翁
+该怎么办呢～，现在如果被找到就可怕了～。[r]还是在这里躲个两三天，等事态平息之后再……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠？？？
+哎呀，哎呀哎呀哎呀。[r]是客人呢，是客人呀，而且还是熊先生哦！
+[k]
+
+＠？？？
+喂喂，我说你。[r]难道你就是她等待的人？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠俄里翁
+虽然我不是很明白，但大概是！
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠？？？
+这样啊，那得赶快举办结婚仪式才行！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠俄里翁
+啊，搞错人了！[r]不对，搞错熊了！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠？？？
+结婚仪式，举国欢庆好好热闹一番！[r]公主殿下一定会高兴的！
+[k]
+
+＠？？？
+[#因为王子殿下回来了]！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaMove B 0 2.0]
+[charaShake B 0.1 0 10 2.0]
+
+＠俄里翁
+偷偷摸摸……
+[k]
+
+[wait charaMove B]
+[charaShakeStop B]
+[charaTalk off]
+[charaFadein D 0.1 1]
+[charaMoveReturn D 0 0.7]
+[wt 0.35]
+[charaMove B -150,0 0.35]
+[wait charaMove D]
+
+＠？？？
+不能逃跑啦！[se ad7]（拎起。）
+[k]
+
+[charaShake B 0.01 5 5 0]
+[charaFace B 2]
+＠俄里翁
+呀啊～！　放我下来，都说搞错熊了～！！
+[k]
+
+＠俄里翁
+在这种童话风十足的世界里扮演王子角色，[r]给人非常不祥的预感啊～！
+[k]
+
+[charaShakeStop B]
+[charaFace D 2]
+＠？？？
+真是的～，你也太任性了！
+[k]
+
+＠？？？
+这样不乖的王子殿下……[r]就该被变成■■■！
+[k]
+
+＠？？？
+在公主亲吻你之前，[r]这诅咒是不会被解除的！
+[k]
+
+[charaShake B 0.01 0 10 0.7]
+＠俄里翁
+……你说啥[line 5]！？
+[k]
+
+[messageOff]
+[se bac65]
+[effect bit_talk_magic]
+[wt 0.7]
+[bgmStop BGM_EVENT_7 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaTalk on]
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[wt 2.0]
+[fadein black 1.5]
+[wait fade]
+[se ad55]
+[wt 0.7]
+[seStop ad55 0.7]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 1]
+[bgm BGM_EVENT_2 0.1]
+
+＠阿耳忒弥斯
+就在这里！[r]我闻到了俄里翁的味道！
+[k]
+
+？1：累……累死我了。
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaEffect A bit_talk_10]
+[charaFadein A 0.1 1]
+
+＠玛修
+被拽着满世界到处跑呢。
+[k]
+
+＠玛修
+在那么短的时间内，[r]俄里翁先生究竟能逃到哪里去呢……
+[k]
+
+？2：那个……该不会是野兽体味吧……
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaEffect A bit_talk_10]
+[charaFadein A 0.1 1]
+
+
+＠玛修
+或许是因为被拖着满世界里到处跑吧，[r]我莫名觉得御主的吐槽也不够有力……
+[k]
+
+？！
+
+[charaPut A 0,-10000]
+[charaEffectStop A bit_talk_10]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+
+＠阿耳忒弥斯
+真是一座可爱的城市呢……
+[k]
+
+[charaFace C 1]
+＠阿耳忒弥斯
+唔～，金婚仪式结束以后，[r]我好想住在这种地方呢！
+[k]
+
+＠阿耳忒弥斯
+御主，好不容易拯救了世界，[r]干脆找一栋好住处吧！
+[k]
+
+＠阿耳忒弥斯
+可能的话，希望能住得近一些，[r]建立起良好的邻里关系就更好了！
+[k]
+
+[charaFace C 3]
+＠阿耳忒弥斯
+因为你想啊，孩子们的母亲间交往也是很重要的吧？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 3]
+[charaEffect A bit_talk_10]
+[charaFadein A 0.1 1]
+
+＠玛修
+孩子们的母亲间交往……
+[k]
+
+[charaPut A 0,-10000]
+[charaEffectStop A bit_talk_10]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿耳忒弥斯
+好了，接下来就只剩亲爱的了……
+[k]
+
+[charaFadeout C 0.1]
+[bgmStop BGM_EVENT_2 0.7]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠？？？
+哎呀哎呀，哎呀哎呀哎呀。[r]今天客人还真是络绎不绝呢！
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+[charaFace D 1]
+＠？？？
+好高兴，[r][#糖果之国:梦幻国度]欢迎所有大人和孩子哦！
+[k]
+
+＠？？？
+因为，只要将大人变成孩子就没有问题了嘛！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaEffect A bit_talk_10]
+[charaFadein A 0.1 1]
+
+
+＠玛修
+童谣小姐……！
+[k]
+
+[charaPut A 0,-10000]
+[charaEffectStop A bit_talk_10]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿耳忒弥斯
+哎呀哎呀，真是位可爱的小姐呀。[r]但很遗憾，我现在对亲爱的可是一心一意的！
+[k]
+
+＠阿耳忒弥斯
+你就好好保管这份奇妙的命运吧。
+[k]
+
+[charaFace C 1]
+＠阿耳忒弥斯
+话说，你有见过我家亲爱的吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠童谣
+亲爱的……？
+[k]
+
+
+？1：会说话的小熊玩偶。
+？！
+[charaFace D 2]
+＠童谣
+哎……不行啦！[r]那只熊王子殿下是公主殿下的！
+[k]
+
+[charaFadeout D 0.1]
+[bgmStop BGM_EVENT_7 0.7]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠阿耳忒弥斯
+……你刚才说什么？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠童谣
+所以我说，那位王子殿下[r]好不容易才回到了公主殿下的身边！
+[k]
+
+＠童谣
+我们正要举办一场盛大的结婚宴会啦！[r]横刀夺爱从童话的角度来说一点都不好！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠阿耳忒弥斯
+……哎。哼。哦～……
+[k]
+
+[charaFace C 1]
+＠阿耳忒弥斯
+话说御主，亲爱的好像在那个公主那里呢！
+[k]
+
+[se ad138]
+[charaPut B 0,-100]
+[charaEffect B bit_talk_gouka]
+＠阿耳忒弥斯
+真奇怪耶～。[r]现在明明不在这里，究竟上哪儿去了呢～。
+[k]
+
+[se ad14]
+[flashin once 1.0 20000 FF000030 FF000000]
+[shake 0.01 0 2 0]
+[charaFadeout C 0.1]
+[charaPut B 0,-10000]
+[wt 0.1]
+[bgm BGM_EVENT_3 0.1]
+[charaTalk A]
+[charaFace A 14]
+[charaEffect A bit_talk_10]
+[charaFadein A 0.1 1]
+
+＠玛修
+御……御主……大事不好！　这下要大事不好了！
+[k]
+
+＠玛修
+这很有可能导致糖果之国陷入一片火海巧克力和糖果[r]全部融化蛋糕被彻底煮熟的事态啊！
+[k]
+
+？1：快冷静下来～！
+？！
+
+[charaPut A 0,-10000]
+[charaEffectStop A bit_talk_10]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[charaPut B 0,-100]
+
+＠阿耳忒弥斯
+没关系，我很冷静。[r]但我不能原谅俄里翁。
+[k]
+
+[charaFace C 2]
+＠阿耳忒弥斯
+居然和公主殿下举办盛大的宴会什么的，[r]这根本不是什么花心，而是认真了吧！
+[k]
+
+＠阿耳忒弥斯
+明明是值得庆贺的金婚仪式……[r]居然不花心，而是认真了……俄里翁那个大笨蛋～！
+[k]
+
+[charaFadeout C 0.1]
+[charaPut B 0,-10000]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠童谣
+各位，快保护糖果之国！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 14]
+[charaEffect A bit_talk_10]
+[charaFadein A 0.1 1]
+
+＠玛修
+敌人……虽然不知道是不是敌人，[r]但总之御主，我们战斗吧！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[seStop ad14 0.5]
+[wait fade]
+[soundStopAll]
+[end]

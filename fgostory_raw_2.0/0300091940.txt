@@ -1,0 +1,991 @@
+
+＄03-00-09-19-4-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1049000 1 千子村正]
+[charaSet B 1098124500 1 达·芬奇]
+[charaSet C 5045001 1 阿尔托莉雅]
+[charaSet D 1098209610 1 奥伯龙]
+
+[se ade24]
+[seVolume ade24 0 0]
+[seVolume ade24 1.0 0.7]
+[scene 120601]
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.7]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth B 2]
+[charaFace A 7]
+[charaFadeinFSL A 0.1 0]
+[charaFace B 0]
+[charaFadeinFSR B 0.1 2]
+[wt 1.5]
+
+[seStop ade24 1.0]
+
+
+？1：只有你们两位？
+？2：阿尔托莉雅呢？
+
+？！
+
+[charaTalk on]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFace A 7]
+
+＠千子村正
+阿尔托莉雅直到刚才都还在。[r]后来说是要去吹吹晚风，就去营地外面了哦。
+[k]
+
+[charaFace B 12]
+
+＠达·芬奇
+虽说面对敌方阵地，现在单独行动未免有些轻率，[r]但现在的阿尔托莉雅就算遭到妖精骑士的袭击也不会有什么问题。
+[k]
+
+[charaFace B 14]
+
+＠达·芬奇
+不过，我倒是很好奇她为何要跑去外面呢。[r]是因为人数变多了，精神有些疲惫吗。
+[k]
+
+[charaFace A 0]
+
+＠千子村正
+……这个嘛，怎么说呢。[r]那家伙不太喜欢人多的环境嘛。
+[k]
+
+＠千子村正
+或者应该说，她不太擅长应付妖精啦。[r]虽说她也不太擅长应付人类就是了。
+[k]
+
+
+[input selectBranch]
+[seStop ade24 0.1]
+
+
+[charaSet A 1049000 1 千子村正]
+[charaSet B 1098124500 1 达·芬奇]
+[charaSet C 5045001 1 阿尔托莉雅]
+[charaSet D 1098209610 1 奥伯龙]
+
+
+[scene 120601]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth B 2]
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 14]
+[charaFadeinFSL A 0.1 0]
+[charaFadeinFSR B 0.1 2]
+
+[bgm BGM_EVENT_77 0.1]
+
+[messageOff]
+[maskin black 1.0]
+[wait mask]
+[label selectBranch]
+
+
+？1,1050,saveMaterial：是这样吗～？
+
+[flag SEL01 true]
+
+？2,2050,saveMaterial：……因为阿尔托莉雅能看清他人的谎言？
+
+[flag SEL01 false]
+
+？！
+
+[branch _sel01a SEL01]
+[branch _sel01b]
+
+[label _sel01a]
+
+[charaFace B 23]
+
+＠达·芬奇
+村正觉得她是这样的吗？[r]虽然她确实似乎不太擅长应付，
+[k]
+
+[charaFace B 26]
+
+＠达·芬奇
+但那只是比起自己更倾向尊重周围的意见啦。[r]远比傲慢自大好得多。
+[k]
+
+[charaFace B 15]
+
+＠达·芬奇
+我偷偷对你们说哦，现在的阿尔托莉雅[r]真的很不得了哦？　有异闻带之王级了吧？
+[k]
+
+＠达·芬奇
+万一她突然暴躁，变为属性·恶，[r]我们全部都会被打趴哦？
+[k]
+
+[charaFace B 16]
+
+＠达·芬奇
+要是发展到那种事态，我们会把村正献出去[r]当活祭而自己逃跑，到时就麻烦你啦！
+[k]
+
+[charaFace A 13]
+
+＠千子村正
+届时大家肯定一起去黄泉啦。[r]到了三途河[#老夫:我]也不会帮你们哦？
+[k]
+
+[branch _sel01c]
+
+[label _sel01b]
+
+[charaFace B 23]
+[bgmStop BGM_EVENT_77 1.0]
+
+＠达·芬奇
+[FFFFFF]？[-]　能看清他人的谎言？[r]阿尔托莉雅吗？
+[k]
+
+[bgm BGM_EVENT_70 0.1]
+[charaFace A 11]
+
+＠千子村正
+…………恐怕是所谓的妖精眼吧。
+[k]
+
+[charaFace A 0]
+
+＠千子村正
+“谎言原本对妖精是没有用的。[r][f small]  [f -]因为妖精能实际看见感情。”
+[k]
+
+＠千子村正
+缪瑞恩曾这样说过。[r]那家伙自己好像也留有些许[#妖精眼:力量]。
+[k]
+
+[charaFace B 32]
+
+＠达·芬奇
+等一下。[r]奥伯龙说，自从开始模仿人类社会之后，
+[k]
+
+＠达·芬奇
+不列颠的妖精便丧失了[r]妖精眼的神秘[line 3]
+[k]
+
+[charaFace B 22]
+
+＠达·芬奇
+对哦，阿尔托莉雅并不是不列颠的妖精！[r]她是来自阿瓦隆的妖精。所以[line 3]
+[k]
+
+[charaFace A 0]
+
+＠千子村正
+能看清谎言。能看清他人的真心。[r]不，或许能看见更为本质的东西。
+[k]
+
+[charaFace A 9]
+
+＠千子村正
+恶性、因果、宿业，由穷极一生执着于这类事物的[r][#村正:我]说这种或许有些奇怪……
+[k]
+
+＠千子村正
+如果有谁能看得见宿业，[r]那肯定是残酷，不，是悲惨的。
+[k]
+
+[charaFace A 15]
+
+＠千子村正
+虽说泛人类史中妖精消失的原因之一[r]是文明的发展……
+[k]
+
+＠千子村正
+但或许是因为他们再也无法忍受[r]看到所谓『人类的恶意』了吧。
+[k]
+
+[charaFace A 0]
+
+＠千子村正
+发明语言、开创学问、分享知识。[r]知识由特权阶级逐渐扩展至社会下层。
+[k]
+
+＠千子村正
+就这样，人类聪明了起来，[r]同时也产生了欺骗他人的话术……谎报，真心话与场面话。
+[k]
+
+＠千子村正
+妖精们却无法承受[#这些]。[r]所以他们选择不再与人类扯上关系。
+[k]
+
+[charaFace A 11]
+
+＠千子村正
+同时，在这异闻带中，妖精们也与[r]人类一样具备『真心话与场面话』。
+[k]
+
+＠千子村正
+被迫目睹谎言，[r]认为这很丑陋的只有两个。
+[k]
+
+＠千子村正
+唯有阿尔托莉雅与摩根，[r]才算[#泛人类史:我们]所说的『妖精』吧。
+[k]
+
+[charaFace B 14]
+
+＠达·芬奇
+…………这样啊。[r]能看穿谎言，与能看清谎言是两回事吧。
+[k]
+
+＠达·芬奇
+有时我们明知是谎言，也会甘心受骗。[r]为了“事情可以顺利发展下去”而睁只眼闭只眼。
+[k]
+
+＠达·芬奇
+但妖精眼的持有者却做不到。[r][#无法睁只眼闭只眼]，只能直面那些谎言与真心话。
+[k]
+
+？1：如果只与诚实的人来往……
+？2：如果禁止撒谎……
+
+？！
+
+[charaFace B 25]
+
+＠达·芬奇
+那样也无法解决问题哦。[r]无论多么正直的人，发言与思考也会产生差异。
+[k]
+
+＠达·芬奇
+为贬低对方的撒谎倒还好。[r]因为心知肚明，还有办法应对。
+[k]
+
+＠达·芬奇
+但对于看得见的人来说，[r]最难受的是『为对方着想而撒谎』的情况。
+[k]
+
+＠达·芬奇
+即便是基于善意的行为，那也是谎报。
+[k]
+
+＠达·芬奇
+如果妖精眼将『关心』、『体贴』[r]都看成浑浊之物的话……
+[k]
+
+＠达·芬奇
+那么对『乐园妖精』而言，[r]现在的不列颠就与人类社会没什么两样。
+[k]
+
+＠达·芬奇
+『乐园妖精』会想要拯救这样的不列颠吗……？
+[k]
+
+[charaFace A 16]
+
+＠千子村正
+当然想啦。[r]那小姑娘在这方面可是相当坚定的。
+[k]
+
+＠千子村正
+她至今都没逃跑便是最好的证据。[r]虽然不知道为何会如此顽固[line 3]
+[k]
+
+[charaFace A 19]
+
+＠千子村正
+她是一块直到最后都不会弯曲的钢铁！[r]归根结底，就是那种为自身信念而活的家伙啦！
+[k]
+
+[branch _sel01c]
+
+[label _sel01c]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[bgmStop BGM_EVENT_70 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_25 0.1]
+
+＠千子村正
+不过人生还真是捉摸不透呢。[r]不，应该是从者生吗？
+[k]
+
+[charaFace A 9]
+
+＠千子村正
+[#老夫:我]本打算一干完值回这条性命价钱的工作，[r]就立马回『异星之神』身边……
+[k]
+
+[charaFace A 11]
+
+＠千子村正
+结果没想到待了这么久。
+[k]
+
+＠千子村正
+事态在不知不觉间发展，[r]等发现时，居然还剩半天就要攻城了。
+[k]
+
+[charaFace A 1]
+
+＠千子村正
+而且还是与迦勒底的御主一起。[r]竟然还有这种缘分呢。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠达·芬奇
+听你这么一说，这状况确实很厉害呢。
+[k]
+
+＠达·芬奇
+虽然我都写进报告书里了，[r]但戈尔德鲁夫新所长应该还是会抱头苦恼吧。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.7]
+
+？1：要不干脆成为我们的同伴吧？
+
+？！
+
+[charaFace A 18]
+[wt 1.0]
+
+[charaFace A 19]
+
+＠千子村正
+嗯，这样倒也不赖！
+[k]
+
+？1：做得到吗！？
+
+？！
+
+[charaFace A 16]
+
+＠千子村正
+当然可以。『异星之神』只是召唤出从者，[r]并赋予他们使命而已。
+[k]
+
+＠千子村正
+“最强的存在看中了你们，没有背离的理由。[r][f small]  [f -]因此不会背叛”，类似这种感觉吧。
+[k]
+
+[charaFace A 15]
+
+＠千子村正
+那家伙不懂人类适不适合某件工作、对工作[r]好恶……这方面（？）的微妙之处啦。
+[k]
+
+＠千子村正
+只会根据得失损益来行事。[r]………不过现在也许不一样了吧。
+[k]
+
+[charaFace A 19]
+
+＠千子村正
+不过嘛，这份差事还是让给其他[#村正:我]好了。[r]也就是说咱们并没有这个缘分啦。
+[k]
+
+？1：真遗憾……
+
+？！
+
+[charaFace A 20]
+
+＠千子村正
+嗯，你也要铭记刚才的感觉哦。[r]既非谎言，亦非冲动，说得非常好。
+[k]
+
+＠千子村正
+阿尔托莉雅之所以能坚持旅行到现在，[r]也是多亏了你的这种性质吧。
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_EVENT_25 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaTalk depthOn]
+[charaFadeout A 0.1]
+[pictureFrame cut063_cinema]
+
+[scene 65501]
+[wt 1.5]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_92 0.1]
+
+[charaTalk C]
+[charaFace C 30]
+[charaFadein C 0.1 0,-50]
+
+＠阿尔托莉雅
+啊～～～，累死了…………
+[k]
+
+＠阿尔托莉雅
+诺克娜蕾居然要为每一名士兵写指令书。
+[k]
+
+＠阿尔托莉雅
+那种事应该交给部队长去办嘛。
+[k]
+
+＠阿尔托莉雅
+北方妖精想得都比较简单，[r]所以问题全集中到能够脑力劳动的那家伙身上了吧。
+[k]
+
+[charaFace C 6]
+
+＠阿尔托莉雅
+不过相对的，他们都很老实，色调统一。[r]充满了对诺克娜蕾的赤胆忠心。
+[k]
+
+＠阿尔托莉雅
+圆桌军的人们也振作起来了，[r]这样明天的战斗也能[line 2]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 0,-50]
+
+＠奥伯龙
+能顺利按照预言发展下去，[r]也能不付出任何牺牲地打倒摩根。
+[k]
+
+＠奥伯龙
+『巡礼之旅』非常顺利，[r]旅伴中也没出现掉队者。
+[k]
+
+＠奥伯龙
+而反叛军的整编也同样万无一失。[r]女王军那种另有隐瞒的存在一个都没有。
+[k]
+
+＠奥伯龙
+这样应该就能迎来可喜可贺的结局了。[r]是这样吧，阿尔托莉雅？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_92 1.0]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠阿尔托莉雅
+……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_MAP_75 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+
+＠奥伯龙
+……你很在意加雷斯的事吧。[r]预言中记载了她的结局。
+[k]
+
+＠奥伯龙
+“圆堡垒焚烧殆尽，水之钟显现于世。”
+[k]
+
+＠奥伯龙
+那不是你的错，她也没有掉队。[r]那只是注定的命运。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth D 2]
+
+[charaTalk C]
+[charaFace D 4]
+[charaFadeinFSL D 0.1 -256,-50]
+[charaFace C 4]
+[charaFadeinFSR C 0.1 256,-50]
+
+＠阿尔托莉雅
+………………你真的这么想吗？
+[k]
+
+[charaFace D 1]
+
+＠奥伯龙
+当然。[r]否则加雷斯会死不瞑目吧。
+[k]
+
+[charaFace C 25]
+
+＠阿尔托莉雅
+我指的不是加雷斯。[r]你刚才说，“不付出任何牺牲”。
+[k]
+
+＠阿尔托莉雅
+……[#反叛军:我们]的胜算很小。[r]圆桌军的大家，尤其是人类将会战死。
+[k]
+
+＠阿尔托莉雅
+你分明这样想，[r]却用“没有牺牲”让我放心下来。
+[k]
+
+[messageOff]
+
+[charaTalk D]
+[charaFace D 0]
+[wt 1.0]
+
+[charaFace C 25]
+
+＠阿尔托莉雅
+而且……还说什么“女王军那种”。
+[k]
+
+＠阿尔托莉雅
+奥伯龙，其实你很早就认识诺克娜蕾了吧。
+[k]
+
+＠阿尔托莉雅
+在谒见的归途，被诺克娜蕾捉住时，[r]你还假装是初次见面。
+[k]
+
+[charaFace D 3]
+
+＠奥伯龙
+唔，这个嘛，确实。
+[k]
+
+＠奥伯龙
+如果知道了我跟诺克娜蕾是朋友关系，[r]你就不会信任我了吧？
+[k]
+
+[charaFace C 27]
+
+＠阿尔托莉雅
+不只是如此哦。
+[k]
+
+＠阿尔托莉雅
+在诺里奇第一次见到玛修时。
+[k]
+
+[messageOff]
+[bgm BGM_MAP_75 1.0 0.4]
+[wipeout circleIn 1.0 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaSet C 5045000 1 阿尔托莉雅]
+[charaSet D 1098209600 1 奥伯龙]
+[effect bit_sepia01_depth_fs]
+[scene 119702]
+[wt 1.0]
+[wipein circleIn 1.0 1]
+[wait wipe]
+
+＠[%1]
+那是玛修啊[line 3]！
+[k]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,-50]
+
+＠奥伯龙
+你说什么！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 0,-50]
+
+＠阿尔托莉雅
+[line 6].
+[k]
+
+[messageOff]
+[wipeout circleIn 1.0 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaSet C 5045001 1 阿尔托莉雅]
+[charaSet D 1098209610 1 奥伯龙]
+[charaTalk C]
+[charaFace C 25]
+[charaFadein C 0.1 0,-50]
+[effectDestroy bit_sepia01_depth_fs]
+[scene 65501]
+[wt 1.0]
+[bgm BGM_MAP_75 1.0 1.0]
+[wipein circleIn 1.0 1]
+[wait wipe]
+
+＠阿尔托莉雅
+你认识玛修。[r]认识，却还假装第一次看到。
+[k]
+
+＠阿尔托莉雅
+你明知玛修就在谢菲尔德，[r]却没有说出来。
+[k]
+
+＠阿尔托莉雅
+一旦被[%1]知道了，[&他:她]便会赶往[r]谢菲尔德，为了防止这种事，你才瞒着[&他:她]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 0,-50]
+
+＠奥伯龙
+唔，这个嘛，确实。
+[k]
+
+＠奥伯龙
+我希望[%1]不是因迦勒底的使命，
+[k]
+
+＠奥伯龙
+而是基于自身的意志去协助『预言之子』。
+[k]
+
+[charaFace D 4]
+
+＠奥伯龙
+我承认自己并不诚实。
+[k]
+
+＠奥伯龙
+哪怕将玛修是强大妖精骑士的因素考虑进去，[r]一个人在北部还是很危险。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠阿尔托莉雅
+还有……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠奥伯龙
+还有？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_MAP_75 1.0 0.4]
+[wipeout circleIn 1.0 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaSet C 5045000 1 阿尔托莉雅]
+[charaSet D 1098209600 1 奥伯龙]
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 0,-50]
+[effect bit_sepia01_depth_fs]
+[scene 117500]
+[wt 1.0]
+[wipein circleIn 1.0 1]
+[wait wipe]
+
+＠奥伯龙
+正因有他们在，[r]我才会过度偏护不列颠。
+[k]
+
+＠奥伯龙
+因为没有价值所以什么都做不到？ 怎么可能。[r]只有弱小无力的存在给予我祝福。
+[k]
+
+[charaFace D 10]
+
+＠奥伯龙
+所以，受人之恩必当相报对吧☆[r]我之所以那么热衷于打倒摩根，也是基于这个原因。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 0,-50]
+[wt 1.0]
+
+[messageOff]
+[wipeout circleIn 1.0 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaSet C 5045001 1 阿尔托莉雅]
+[charaSet D 1098209610 1 奥伯龙]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+[effectDestroy bit_sepia01_depth_fs]
+[scene 65501]
+[wt 1.0]
+[bgm BGM_MAP_75 1.0 1.0]
+[wipein circleIn 1.0 1]
+[wait wipe]
+
+[wt 1.2]
+
+＠阿尔托莉雅
+……还有，与伍德沃斯军交战的那天早上，[r]你去了什么地方吧。
+[k]
+
+＠阿尔托莉雅
+当时，因为女王军的援军没来，[r]我们才能获胜……
+[k]
+
+[charaFace C 0]
+
+＠阿尔托莉雅
+那也是你干了[#什么]的结果。[r]你[line 3]
+[k]
+
+＠阿尔托莉雅
+你虽然正直又诚实，却对真相绝口不提。[r]重要的事从不对任何人说。
+[k]
+
+＠阿尔托莉雅
+那是为什么？[r]为什么要多次撒谎？
+[k]
+
+＠阿尔托莉雅
+难道说你其实[line 3][r]并不想打倒摩根？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠奥伯龙
+[line 6]。
+[k]
+
+[charaFace D 1]
+
+＠奥伯龙
+怎么会呢。在打倒摩根的问题上，[r]没有比我更尽心竭力的妖精了。
+[k]
+
+＠奥伯龙
+我会尽心全力打倒妖精国。[r]为此，我不惜撒谎。更何况[line 3]
+[k]
+
+[bgmStop BGM_MAP_75 1.0]
+[charaFace D 0]
+
+＠奥伯龙
+你其实也一样在撒谎吧，阿尔托莉雅。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 0,-50]
+[wt 1.6]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_95 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠奥伯龙
+我指的是你努力至今的理由，[r]拯救不列颠的动机。
+[k]
+
+＠奥伯龙
+不只是我，就连[%1]也[r]隐约觉察到了哦。
+[k]
+
+＠奥伯龙
+你没有一次是为了人类，[r]或是为了妖精这种理由而战。
+[k]
+
+＠奥伯龙
+你的真正目的在别处。[r]只是你绝口不提而已。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠阿尔托莉雅
+……你在，胡说八道些什么。
+[k]
+
+＠阿尔托莉雅
+我是被派遣来拯救不列颠的[r]『乐园妖精』[line 2]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+
+＠奥伯龙
+你的愧疚就在这里。[r]归根结底，“拯救”究竟指什么呢。
+[k]
+
+＠奥伯龙
+村正这样说过哦。
+[k]
+
+＠奥伯龙
+“所有妖精都在渴求宽恕。”[r]“无论是谁，都在寻求灭亡。”
+[k]
+
+＠奥伯龙
+他说无论身处哪座城市，无论什么样的妖精，[r]内心深处的愿望都是相同的。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 0,-50]
+
+＠阿尔托莉雅
+村正先生还说过这种事……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+
+＠奥伯龙
+虽然不像我们这样拥有妖精眼，[r]但他对心灵的痛楚肯定非常敏感吧。
+[k]
+
+[charaFace D 0]
+
+＠奥伯龙
+阿尔托莉雅，[r]你的迷惘正是源于此吧。
+[k]
+
+＠奥伯龙
+你不会说出决定性的事实。[r]因为就算说出来，也无济于事。
+[k]
+
+[charaFace D 1]
+
+＠奥伯龙
+我也一样哦。哪怕是不想做的事，[r]只要是打倒摩根所需的，我也只能去做。
+[k]
+
+＠奥伯龙
+现在先说到这里吧。[r]毕竟明天的战斗就是最后了。
+[k]
+
+＠奥伯龙
+坦白隐瞒之事、重要之事的时刻[r]肯定迟早会到来。
+[k]
+
+＠奥伯龙
+『巡礼之旅』不就是为此而存在的吗？
+[k]
+
+＠奥伯龙
+没事，说不定坦白之后，[r]大家反倒会付之一笑呢。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_95 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,47 @@
+＄01-00-03-08-1-1
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 21230 0]
+[charaSet A 8001001 1 玛修]
+[charaSet B 98003003 1 罗曼医生]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 4003001 1 德雷克]
+[charaSet E 98018100 1 海盗]
+[charaSet F 4008002 0 黑胡子]
+[charaSet G 4009101 1 玛莉]
+[charaSet H 4009201 1 安妮]
+[charaTalk G]
+[charaFace H 4]
+[charaFadein H 0 2]
+[charaFace G 4]
+[charaFadein G 0 0]
+[fadein black 1]
+[wait fade]
+＠玛莉
+……还是力不能及吗。[r]船长，抱歉，我们先走一步。
+[k]
+
+＠安妮
+船长。[r]可别因为我们的消失就自暴自弃哦。
+[k]
+
+[charaFace H 0]
+＠安妮
+……常胜不败是你的长处。要是你连这个优点都没了，[r]那我们可就真像是傻瓜了吧？
+[k]
+
+[messageOff]
+[charaSpecialEffect G flashErasure 0 1]
+[charaSpecialEffect H flashErasure 2 1]
+[wt 1]
+[se ba5]
+[wait charaSpecialEffect G]
+[wait charaSpecialEffect H]
+[wt 0.5]
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_2 0.4]
+[wait fade]
+[soundStopAll]
+[end]

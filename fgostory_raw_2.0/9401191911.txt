@@ -1,0 +1,186 @@
+
+＄94-01-19-19-1-1
+[soundStopAll]
+[charaSet A 23001000 1 BB]
+[charaSet B 7016001 1 玉藻猫]
+[charaSet C 2008001 1 崔斯坦]
+[charaSet D 1030000 1 铃鹿御前]
+[charaSet E 10001000 1 Passionlip]
+[charaSet F 2016002 1 卫宫·Alter]
+[charaSet G 98112500 1 特效用]
+
+[bgm BGM_EVENT_52 0.1]
+[scene 41330]
+[fadein black 1.5]
+[wait fade]
+[charaPut G 0,0]
+[charaEffect G bit_talk_06]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+＠BB
+打得漂亮！　居然已经变得那么强了，[r]身为后辈的我好高兴啊，前辈！
+[k]
+
+[charaFace A 5]
+＠BB
+不过由于不甘心，死不认输的台词我还是要说的！[r]别以为这样[line 2]，你们就算赢了[line 3]！
+[k]
+
+[bgmStop BGM_EVENT_52 0.7]
+[charaEffectStop G bit_talk_06]
+[messageOff]
+[charaSpecialEffect A flashErasure 0 1.7]
+[se ad52]
+[wait charaSpecialEffect A]
+[wt 1.0]
+
+？1：……咦？
+？2：……真的打倒了……？
+
+？！
+
+[se ade49]
+[messageOff]
+[scene 10000 0.4]
+[wait scene]
+[wt 0.7]
+＠玉藻猫
+黑暗！[r]哪怕用猫的夜视来看依然是黑暗！
+[k]
+
+＠崔斯坦
+……这……看来连声音都被屏蔽了……[r]能听到的只有我们的声音……
+[k]
+
+[se ad267]
+[wt 0.2]
+＠铃鹿御前
+烫，好烫！？[r]就算生火也完全看不到，这是怎么一回事！？
+[k]
+
+？1：各位，聚集起来！
+？2：各位，都在附近吗？
+
+？！
+
+＠？？？
+…………在那里啊。
+[k]
+
+[messageOff]
+[effect bit_shot_01]
+[se bac21]
+[wt 0.4]
+[effectDestroy bit_shot_01]
+[se ad170]
+[wt 0.4]
+
+＠？？？
+！
+[k]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.4 1]
+
+＠Passionlip
+我看破你的偷袭了！[r]给我出来，魔神柱！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[cameraMove 0.1 0,-80 1.2]
+[wait camera]
+
+[fadeout black 0.1]
+[wait fade]
+[scene 41200]
+[fadeMove black 0.4 0.8]
+[wait fade]
+[fadeMove black 0.2 1.0]
+[wait fade]
+[wt 0.3]
+[fadeMove black 0.4 0.6]
+[wait fade]
+[fadeMove black 0.2 1.0]
+[wait fade]
+[wt 0.2]
+[fadeMove black 0.4 0.4]
+[wait fade]
+[fadeMove black 0.2 1.0]
+[wait fade]
+[wt 0.7]
+
+[fadein black 2.0]
+[wait fade]
+[wt 0.5]
+[bgm BGM_EVENT_5 0.1]
+[cameraMove 1.0 100,40 1.4]
+[wait camera]
+[wt 1.0]
+[cameraMove 3.0 -100,40 1.4]
+[wait camera]
+[wt 1.0]
+[cameraHome 1.0]
+[wait camera]
+[wt 1.0]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 1]
+＠崔斯坦
+这是……排列在墙边的棺材？[r]里面……是年幼孩童的……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠玉藻猫
+[line 6]。
+[k]
+
+？1：……迦勒底的……管制室……？
+？2：居然有那么多……筐体……？
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠铃鹿御前
+[line 6]是这样。[r]SE.RA.PH的动力原来是这样啊。
+[k]
+
+＠铃鹿御前
+既然有128骑从者，[r]自然应该有128名御主。
+[k]
+
+＠铃鹿御前
+我并不认识我的御主。[r]不知道被谁召唤，也不知道御主现在如何。
+[k]
+
+[charaFace D 10]
+＠铃鹿御前
+答案就是这个吗！[r]如果你想辩解，就说来听听啊，Archer！
+[k]
+[charaFadeout D 0.1]
+[messageOff]
+[wt 0.4]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.7 1]
+＠卫宫·Alter
+………………
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

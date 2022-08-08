@@ -1,0 +1,416 @@
+
+
+＄02-00-02-12-1-0
+[soundStopAll]
+[charaSet A 4004001 1 阿斯托尔福]
+[charaSet B 1026001 1 迪昂]
+[charaSet C 98113900 1 弗格斯]
+[charaSet D 4025000 1 哥伦布]
+[charaSet E 5030001 1 山鲁佐德]
+[charaSet F 98114200 1 巨英雄]
+
+[cameraMove 0.1 0,20 1.2]
+[scene 42300]
+[wipeout openEye 0.1 1]
+[wait wipe]
+[fadein black 0.1]
+[wait fade]
+[wipein openEye 0.7 1]
+[wait wipe]
+[wipeout openEye 0.7 1]
+[wait wipe]
+[wt 0.4]
+[wipein openEye 0.7 1]
+[wait wipe]
+[wipeout openEye 0.7 1]
+[wait wipe]
+[wt 0.4]
+[wipein openEye 3.0 1]
+[wait wipe]
+[wt 1.0]
+
+？1：呜……
+？2：这里……是哪儿……？
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[bgm BGM_EVENT_2 0.1]
+＠阿斯托尔福
+啊，醒了，御主？[r]没事吧，有没有哪里痛？
+[k]
+
+？1：还行吧。
+
+？2：稍微有些头疼……
+
+[charaFace A 4]
+＠阿斯托尔福
+是缺氧的缘故吧。[r]这种时候该怎么做来着。
+[k]
+
+[charaFace A 1]
+＠阿斯托尔福
+痛痛全都不见啦……[charaMoveReturn A 10,0 0.4]（摸摸。）[r]是这样吗？[wait charaMove][charaMoveReturn A 10,0 0.4]
+[k]
+
+？！
+
+[charaFace A 1]
+＠阿斯托尔福
+啊，但是，万幸的是醒得还挺早呢！[r]这也是多亏了枕着我膝盖的力量吧！
+[k]
+
+？1：…………！
+？！
+
+[se ad7]
+[cameraHome 0.4]
+[charaFace A 3]
+＠阿斯托尔福
+啊，不用那么慌慌张张离开啦。[r]御主还真是容易害羞呢。
+[k]
+
+[charaFadeout A 0.1]
+[charaScale A 1.0]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠迪昂
+也有可能，是因为我的祈祷传达到了吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠弗格斯
+早上好。是我弗格斯。
+[k]
+
+＠弗格斯
+还好没什么大碍。[r]好了，今天也精神百倍地出发吧！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠迪昂
+等一下，弗格斯。[r][%1]可没你那么结实，也没那么冷静。
+[k]
+
+＠迪昂
+应该先让御主掌握当前的状况。[r]站得起来吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠哥伦布
+看来你没事呢。那很好。[r]你要是死了可就麻烦了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠山鲁佐德
+嗯……没死，是一件好事。[r]真的……
+[k]
+
+？1：好，先冷静下来吧。坐在这块岩石上……
+？！
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[se ad7]
+[cameraMove 0.4 0,20 1.0]
+[wt 0.5]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠阿斯托尔福
+…………
+[k]
+
+[bgmStop BGM_EVENT_2 1.5]
+？1：这里是哪儿？　那之后发生了什么？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[bgm BGM_EVENT_5 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 2]
+[charaFadein A 0.1 0]
+＠迪昂
+船被他们冲突的余波破坏了，大家都被甩进了河里。[r]当然，御主也是。
+[k]
+
+＠阿斯托尔福
+虽然我们立刻就将御主捞了起来……[r]但河流的情况有些奇怪。
+[k]
+
+＠阿斯托尔福
+我们好歹是从者，一般来说，[r]抱着御主上岸这种事应该很轻松才对。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠弗格斯
+但我们却被不由分说地冲到了下游[line 2][r]来到了这里，就是这么一回事。
+[k]
+
+＠弗格斯
+所以我们也不清楚这里究竟是哪里。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠山鲁佐德
+因为是顺着流而下，所以从地理来看，[r]应该位于东部地底湖中……我推测是这样。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠哥伦布
+哈，没想到居然会有这种地方。[r]湖中有城？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠迪昂
+好像有个半圆形的壁障维持着里面的空气。[r]应该是某种魔术原理在运作吧。
+[k]
+
+＠迪昂
+真是个不可思议的地方。[r]该怎么称呼呢。水中城？　湖底城？　还是说[line 2]
+[k]
+
+？1：还是[line 2]应该叫龙宫城吧。
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠阿斯托尔福
+那个我听说过。[r]是藤太在吃饭的时候说过吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 3]
+[charaFadein A 0.1 0]
+[charaFadein E 0.1 2]
+＠山鲁佐德
+是在名为日本的国度中，古代传说中……出现的故事吧。[r]这个我也知道。
+[k]
+
+[charaFace A 0]
+＠阿斯托尔福
+我记得藤太还说过他实际去过……[r]不过算了。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠阿斯托尔福
+那这里的名字就叫龙宫城好了。[r]话说……御主，你发现了吗？
+[k]
+
+＠阿斯托尔福
+刚才御主坐着的那块石头[line 2][r]看一下你屁股底下吧。
+[k]
+
+？1：屁股底下？
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.4]
+[wipeout rectangleStripUpToDown 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[cameraHome 0.1]
+[wt 0.4]
+[wipein rectangleStripDownToUp 0.4 1]
+[wait wipe]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 1.5]
+
+[bgm BGM_EVENT_3 0.1]
+？1：本以为是岩石，实际是长着张岩石般面容的人！
+？2：对不起对不起求你不要生气！
+？！
+
+[charaFadeout F 0.1]
+[bgmStop BGM_EVENT_3 0.4]
+[wt 0.4]
+[bgm BGM_EVENT_2 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠弗格斯
+不用担心，[%1]。[r]那个看来已经不会动了。
+[k]
+
+＠弗格斯
+由于此前一战的消耗，对方的Berserker……[r]是叫彭忒西勒亚吧。
+[k]
+
+＠弗格斯
+最终是她获得了胜利。
+[k]
+
+＠弗格斯
+然而我最后看到彭忒西勒亚的时候，她伤痕累累。[r]另一方面，这边确实还是毫发无伤的状态。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠迪昂
+奇妙的是他作为从者虽然尚未消灭，[r]但给人一种行动完全停止的感觉。
+[k]
+
+＠迪昂
+尽管不知道他是否有可能再次行动，[r]总之现在应该没有危险。
+[k]
+
+＠迪昂
+不过，以防万一，[r]还是可以选择砍下他的头颅[line 2]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0]
+[charaFadein B 0.1 2]
+＠弗格斯
+身为一名战士，我不能坐视这种行为。[r]就算是半吊子，也有自己的尊严。非常抱歉[line 2]
+[k]
+
+＠迪昂
+是心情的问题吧。我能理解。
+[k]
+
+＠迪昂
+综上所述，现在只能搁在那里不管，[r]当御主的椅子用。
+[k]
+
+？1：我再也不会坐上去了……
+？！
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[bgmStop BGM_EVENT_2 0.7]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠哥伦布
+然后吧。接下来该怎么办。
+[k]
+
+[bgm BGM_EVENT_1 0.1]
+＠哥伦布
+反抗军的人员……进一步减少了。[r]漂流到这里的人只有没几个。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠阿斯托尔福
+唔……我们一直在等待御主醒来，既然已经醒了，[r]现在应该去那座城里探险吧？
+[k]
+
+＠阿斯托尔福
+总之必须考虑如何逃脱这里才行，[r]说不定顺便还能找到一些宝物呢。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠哥伦布
+哈哈，宝物啊。听起来真不赖。[r]如果有能一发逆转当前状况的宝物就好了。
+[k]
+
+？1：其实可以拜托玛修她们帮忙寻找逃脱方法吧？
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠迪昂
+我忘记说了，我们和迦勒底的通讯暂时中断了。[r]所以现在没法依靠她们。
+[k]
+
+＠迪昂
+不知是因为我们身处水中，[r]还是存在其他原因……
+[k]
+
+＠迪昂
+总之，我也投去城里探险一票，御主。[r]一直呆在城的前庭聊天也没有意义。
+[k]
+
+？1：说得对。那么[line 2]
+？！
+
+[bgmStop BGM_EVENT_1 0.7]
+＠A：？？？
+[line 2][#没有这个必要]。
+[k]
+
+[bgm BGM_EVENT_5 0.1]
+[charaFace B 5]
+＠迪昂
+！[r]什么，你是……！？
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

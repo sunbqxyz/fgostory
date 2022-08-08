@@ -1,0 +1,248 @@
+
+＄94-05-34-21-5-0
+
+
+[soundStopAll]
+[charaSet A 3040001 1 Lambda]
+[charaSet B 1031001 1 弗兰]
+[charaSet C 25006001 1 梵高]
+[charaSet D 1098158310 1 尼莫]
+[charaSet E 25006000 1 ？？？]
+[charaSet V 98115000 1 通讯用]
+[charaPut V 1200,1200]
+[charaEffect V bit_talk_10_LowLevel]
+
+[scene 98900]
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+＠Lambda
+我还是第一次见识花之邪神的内侧。[r]琰女的幻象，品味不错嘛……！
+[k]
+
+[charaFace A 0]
+＠Lambda
+[%1]，[r]鹦鹉螺号舰桥的灵敏度还良好吗？
+[k]
+
+？1：看得一清二楚。
+？2：听得十分清楚。
+？！
+
+[charaFace A 2]
+＠Lambda
+非常好。弗兰，去吧！　记得保护好摄像头！[r]也要注意随时会更新的坐标哦！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠弗兰
+知道啦，妈妈。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠Lambda
+别这样叫我。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠弗兰
+要上啦～。我砍～～。
+[k]
+
+
+[messageOff]
+[se ad54]
+[charaMoveScale B 1.1 0.4]
+[charaMove B 0,10 0.4]
+[charaFadeout B 0.2]
+[wt 0.4]
+
+[se ad237]
+[effect bit_talk_v_slash01]
+[wt 0.1]
+[se ad85]
+[seVolume ad85 0 0.4]
+[seStop ad85 0.7]
+[wt 0.2]
+[seStop ad237 0.3]
+[wt 0.5]
+
+[bgm BGM_EVENT_80 0.7 0.2]
+[fadeout black 0.7]
+[wait fade]
+[wt 0.7]
+[bgm BGM_EVENT_80 0.7 1.0]
+[fadein black 0.7]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.4 1]
+＠弗兰
+是这边吧。嘿呀～。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+[se bac137]
+[effect bit_talk_h_slash01]
+[wt 0.1]
+[se bac263]
+[shake 0.03 3 3 0.4]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠弗兰
+噢[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+？1：找到了！
+？2：不过，这是……！
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.5]
+
+[scene 99200 1.5]
+[wt 2.5]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠梵高
+弗……弗兰……亲……？
+[k]
+
+＠梵高
+啊呜！？
+[k]
+
+
+＠？？？
+离开这里。你们的努力皆是徒劳。
+[k]
+
+＠？？？
+虽说宝具解放失败，但生长到这种地步的『我』[r]是不可能被普通手段祛除的。
+[k]
+
+＠？？？
+不必担心。倘若当前计划最终完成，[r]对你们领域的入侵将会延迟1000年。
+[k]
+
+＠？？？
+我保证届时将会让智慧生命完全无痛，[r]甚至可以伴随着快乐的共生形式执行。
+[k]
+
+？1：梵高被埋进墙里了……！？
+？2：是谁在借用她的声音说话！！
+？！
+
+[messageOff]
+
+[sceneSet F 99200 0]
+[sceneSet G 98900 0]
+[charaDepth F 1]
+[charaDepth G 2]
+[charaDepth V 3]
+[charaDepth D 3]
+[charaDepth B 3]
+
+
+[charaFadein F 0.7 -320,-200]
+[charaFadein G 0.7 512,-200]
+[wt 0.7]
+
+[charaPut V 280,0]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 270,0]
+＠尼莫
+不行，梵高和弗兰都不可以听信那家伙的说辞！
+[k]
+
+＠尼莫
+对方可是异界的神性！[r]只是在随便输出一些我们能够接受的话而已！
+[k]
+
+＠？？？
+那你就错了。其实对你们而言，[r]接受我将会是中善的结局。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 2]
+＠弗兰
+唔～。这可，不行～。
+[k]
+
+
+＠？？？
+为何。
+[k]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 2]
+＠弗兰
+因为梵高，看起来很痛苦。
+[k]
+
+[charaFace B 1]
+＠弗兰
+梵高！　同为拼凑品，我们要快乐地活着！
+[k]
+
+＠梵高
+……谢，谢，你……！
+[k]
+
+
+[bgm BGM_EVENT_24 0.1]
+
+＠？？？
+第一次交涉失败，很遗憾。[r]捕获、拷问，期待下一次交涉。
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

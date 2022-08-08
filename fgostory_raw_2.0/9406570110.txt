@@ -1,0 +1,690 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+＄94-06-57-01-1-0
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 28002000 1 ？？？]
+[charaSet B 4032000 1 ライネス]
+
+[charaSet C 7028000 1 バニヤン]
+[charaScale C 2.2]
+
+[imageSet D cut107_paper 1]
+[charaScale D 1.01]
+
+[imageSet E back10000 1]
+[charaScale E 1.05]
+
+[sceneSet F 74300 1]
+
+[charaSet G 98003000 1 Dr.ロマン]
+
+[sceneSet H 144200 1]
+[imageSet I cut106_trans 1 1]
+
+[sceneSet J 144400 1]
+[charaSet K 28002000 1 演出用ヘファイスティオン]
+[charaScale J 1.4]
+[charaScale K 1.4]
+
+[imageSet L cut327_sentakushi 1]
+
+[charaSet T 98115000 1 エフェクト用]
+
+[scene 10000]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+
+＠？？？
+[line 6]おい。
+[k]
+
+＠？？？
+[line 3]おい、起きろ、おまえ。
+[k]
+
+＠？？？
+ああくそ、起きないってなら仕方ない。
+[k]
+
+＠？？？
+こうか！
+[k]
+
+[messageOff]
+[effect bit_talk_13]
+[shake 0.05 2 3 1.0]
+[se bac148]
+[wt 1.0]
+
+[wipeout openEye 0.1 0.7]
+[wait wipe]
+
+[cameraHome 0.1]
+
+[scene 144400]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.5]
+
+[wipein openEye 0.5 0.7]
+[wait wipe]
+[wt 0.3]
+
+[wt 1.0]
+
+[charaTalk off]
+[bgm BGM_EVENT_101 0.1]
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth J 2]
+[charaDepth K 3]
+[charaFadein J 1.0 0,-200]
+[charaMove J -5,-200 1.5]
+[wt 0.5]
+[charaFadein K 1.0 1]
+[wt 3.0]
+[charaFadeout J 1.0]
+[charaFadeout K 1.0]
+[wt 1.5]
+[charaTalk depthOn]
+
+＠？？？
+やっと起きたか。
+[k]
+
+＠？？？
+呑気なヤツだな。[r]こんな状況でも、まるでお構いなしか。
+[k]
+
+？1：こんな状況？
+？！
+
+[charaFace A 6]
+
+＠？？？
+おいおい、気づいてないのか。
+[k]
+
+＠？？？
+この列車だよ。[r]私とおまえ以外、誰も乗ってないだろうが。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[cameraMove 1.0 50,0 1.1]
+[wt 1.5]
+[cameraMove 2.0 -50,0 1.1]
+[wt 2.5]
+[cameraMove 1.0 0,0 1.01]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠？？？
+行き先は不明。[#車内放送:ア ナ ウ ン ス]もなし。[r]そもそも走ってるのかどうかさえ分からん。
+[k]
+
+＠？？？
+さっきからあれこれやっていたが、[r]車両の扉も開かなくてな。
+[k]
+
+＠？？？
+で、私が立ち往生してる間、[r]おまえはぐうすか寝ていたわけだ。
+[k]
+
+[charaFace A 5]
+＠？？？
+胆力は大したものだがね。[r]いっそぶっ殺してやろうかと思ったぞ。
+[k]
+
+？1：………君は？
+？2：………師匠とは、違う？
+
+？！
+
+[charaFace A 6]
+＠？？？
+なんだ？　私が誰かに似てたのか？
+[k]
+
+？1：そんな夢を見たような……
+？2：この列車で寝ていたような……
+？！
+
+＠？？？
+夢？　夢ねえ。[r]それなら、私も専門家と言っていいが………
+[k]
+
+？1：夢の専門家？
+？！
+
+[charaFace A 1]
+＠？？？
+その通り。何しろ我が神は[#酩酊:めいてい]を重んずるからな。[r]夢と酒とは切り離せないだろう？
+[k]
+
+[messageOff]
+[wt 0.4]
+[charaFace A 0]
+[wt 1.0]
+[charaFace A 4]
+[wt 1.2]
+
+[charaFace A 7]
+＠？？？
+………ちょうどいい、か。[r]何かの手がかりになるかもしれん。
+[k]
+
+＠？？？
+そのまま座ってろ。[r]気が向いたから、夢占いをしてやろう。
+[k]
+
+[messageOff]
+[se ad7 0.7]
+[charaMoveScale A 1.1 0.3]
+[charaMove A 0,10 0.3]
+[wt 0.4]
+[se ade413 0.6]
+[cameraMove 0.4 0,20 1.01]
+[wt 0.2]
+[shake 0.03 3 3 0.4]
+[wt 1.4]
+
+？1：ちょっ、ちょっと待って……
+？2：夢占いって？
+
+？！
+
+[charaFace A 6]
+＠？？？
+感謝しろ。私の師なら、[r]国が傾くほどの代価をとるところだ。
+[k]
+
+[messageOff]
+[charaEffect A bit_talk_charge_ppl]
+[se ad39]
+[wt 1.0]
+
+[charaFace A 0]
+＠？？？
+おっと、動くなよ。
+[k]
+
+＠？？？
+魔術に齟齬が生じて、[r]死ぬまで夢から出られなくなっても知らんぞ。
+[k]
+
+[charaFace A 7]
+＠？？？
+それはそれで楽しいかもしれないがな………！
+[k]
+
+[messageOff]
+[se ad949]
+[charaEffectStop A bit_talk_charge_ppl]
+[fowardEffect bit_talk_easy_spell_r]
+[wt 1.5]
+[cueSe SE_21 21_ad1108]
+[wt 1.0]
+[wipeout magic 1.2 0.5]
+[seStop 21_ad1108 1.2]
+[bgmStop BGM_EVENT_101 1.2]
+[wait wipe]
+
+[charaTalk on]
+[charaFadeout A 0.1]
+
+
+[cameraMove 0.1 0,0 1.01]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 0,-50]
+[wt 0.7]
+
+[fadeout black 0.1]
+[wait fade]
+
+[wipein magic 0.1 0.5]
+[wait wipe]
+
+[pictureFrame cut063_cinema]
+[wipeFilter openEye 0.2 0.7]
+[cameraFilter gray]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_48 0.1 0.5]
+＠謎の少女
+やっと起きたか。我が弟子。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 11000]
+[charaScale F 1.08]
+[charaFadein F 0.1 0,-330]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 2.2]
+
+[charaFadeout F 1.0]
+[wt 1.4]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 0,-50]
+
+＠エルメロイⅡ世
+兄上……！[r][#ロード]・[#エルメロイⅡ世]……！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[scene 28304]
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 0,10]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+＠巨人
+パッチワーク・ロンドン！[r]パッチワーク・ロンドンだよ！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 73000]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaEffect T bit_talk_blight_02]
+[wt 1.5]
+[charaPut T 1200,1200]
+[charaEffectStop T bit_talk_blight_02]
+
+[charaFadeTime E 0.3 0.5]
+[wt 0.4]
+[charaFadein D 0.7 0,-230]
+[wt 2.5]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+
+[charaFadeTime I 0.1 0.5]
+[wipeOff]
+[scene 145000]
+[effect bit_sepia01_depth_fs]
+[wt 0.5]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 0,-50]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[wipeout noise 1.0 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[effectStop bit_sepia01_depth_fs]
+
+[scene 73000]
+[wt 0.5]
+
+[wipein noise 1.0 1.0]
+[wait wipe]
+
+[wt 0.5]
+[charaFadein L 0.1 0,-225]
+[wt 2.2]
+
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout L 0.1]
+[charaFadeout I 0.1]
+[wipeOff]
+[cameraFilter normal]
+[pictureFrame]
+
+[scene 144100]
+[charaScale H 1.1]
+[charaFadein H 0.1 -50,-250]
+[wt 0.7]
+
+[bgm BGM_MAP_48 1.0 1.0]
+
+[wipeout magic 0.1 0.5]
+[wait wipe]
+
+[fadein black 0.1]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.03]
+[wt 0.1]
+[wipein magic 0.8 0.5]
+[wait wipe]
+[wt 0.4]
+
+[se ad755]
+[wt 1.2]
+[charaMove H 50,-250 30.0]
+[wt 1.0]
+
+[charaScale K 1.25]
+[charaTalk K]
+[charaFace K 4]
+[charaFadeinFSL K 0.4 -350,0]
+[charaMoveFSL K -250,0 30.0]
+[wt 0.4]
+
+＠K：？？？
+列車の扉が開いた？[r]さっきまでビクともしなかったのに。
+[k]
+
+？1：今のイメージは……
+？！
+
+＠K：？？？
+人理継続保障機関フィニス・カルデア、か。[r]まさか、そんなものがあったとはな………。
+[k]
+
+＠K：？？？
+サーヴァントの召喚だけでも充分な奇跡なのに、[r]それで人理を修復しただと？
+[k]
+
+＠K：？？？
+夢を覗いたのでなければ、到底信じがたい話だぞ。
+[k]
+
+[messageOff]
+[cameraHome 1.0]
+[charaFadeout K 1.0]
+[charaFadeout H 1.0]
+[wt 1.2]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠？？？
+そしておまえの名前は[%1]、か。[r]ああ、よく分かった。
+[k]
+
+[charaFace A 7]
+＠？？？
+死ぬぞ、おまえ。
+[k]
+
+
+？1：[line 6]！
+？！
+
+[charaFace A 0]
+＠？？？
+今、夢を見ただろう。あれは実際は夢じゃない。[r]あっちが[#おまえの本体]だ。
+[k]
+
+？1：それって、どういう[line 3]
+？2：じゃあ、今の自分は[line 3]
+
+？！
+
+＠？？？
+どういう術式かはともかく、よくできてる。[r]おまえはさ、本体の[#記憶]だよ。
+[k]
+
+＠？？？
+さっきの紙片を見ただろう。[r]おまえの本体は、どうやら記憶を無くしている。
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_MAP_48 1.0 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 73000]
+[wipeFilter openEye 0.2 0.7]
+[cameraFilter gray]
+[pictureFrame cut063_cinema]
+
+[charaFadeTime E 0.3 0.5]
+[charaFadein D 0.7 0,-230]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 2.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+
+[scene 10000]
+[wipeOff]
+[cameraFilter normal]
+[pictureFrame]
+
+[scene 144100]
+[wt 1.5]
+
+[fadein black 1.0]
+[bgm BGM_MAP_48 1.0 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠？？？
+どういうわけか知らんが、[r]無くした記憶の一部が紙片になっていた。
+[k]
+
+＠？？？
+[#おまえも]、[#そういう記憶の一部だ]。
+[k]
+
+＠？？？
+人間ってのは、魂と精神と肉体でできてるんだがね。[r]これはひとつずつでも人格を持ちうるんだよ。
+[k]
+
+＠？？？
+おまえの場合は、精神のさらに一部だな。[r]記憶が人格を持ったパターンだ。
+[k]
+
+＠？？？
+今の服装や[#身体:うつわ]も、精神のイメージに沿って、[r]この場の魔力がそれっぽく構築しているだけだろう。
+[k]
+
+＠？？？
+だから。[r]じきに、おまえは消える。
+[k]
+
+？1：[line 6]！
+？！
+
+＠？？？
+当然だろう。魂と精神と肉体が揃って人間だ。[r]その一部のさらに一部が、単独でもつものか。
+[k]
+
+[charaFace A 4]
+＠？？？
+なのに、人格や仮初めの[#身体:うつわ]を持ったのは、[r]この特異点のせいか、それともこの列車と………
+[k]
+
+？1：列車？
+？2：何か知ってるの？
+？！
+
+[charaFace A 0]
+＠？？？
+………………。
+[k]
+
+[messageOff]
+[wt 1.2]
+
+[charaFace A 1]
+＠？？？
+私ははぐれサーヴァントでね。召喚されたはいいが、[r]理由も分からず、この列車に閉じ込められていた。
+[k]
+
+[charaFace A 0]
+＠？？？
+おまえ、生き残りたいか？
+[k]
+
+？1：それは、もちろん
+？2：生き残りたいに、決まってる
+？！
+
+[charaFace A 7]
+＠？？？
+ほう、意外と肝が据わっている。[r]自分がカケラだということにショックを受けないのか？
+[k]
+
+[charaFace A 0]
+＠？？？
+だったら本体に戻ることだ。[r]おまえが生き残るには他の方法などない。
+[k]
+
+[charaFace A 1]
+＠？？？
+どうも、この列車とおまえとは、何か関係があるようだ。[r]おまえが私を手伝うなら、私もおまえを助けてやろう。
+[k]
+
+？1：分かった
+？2：君の名前は？
+？！
+
+＠？？？
+なら、契約してやろう。[r]私の名は……そうだな……。
+[k]
+
+＠？？？
+フェイカーと、呼んでもらおうか。[r]今のクラスとは違うようだがな。
+[k]
+
+[messageOff]
+[masterBranch _Male _Female]
+
+[label _Male]
+
+[wt 0.4]
+[se bas16]
+[effect bit_talk_CommandMantra_01 0,64]
+[wt 3.0]
+[branch _branchEnd]
+
+[label _Female]
+
+[wt 0.4]
+[se bas16]
+[effect bit_talk_CommandMantra_02 0,64]
+[wt 3.0]
+[branch _branchEnd]
+
+[label _branchEnd]
+
+＠A：フェイカー
+よし、仮契約できたな。私も手伝いはしたが、[r]分身のおまえでもその程度はできるらしい。
+[k]
+
+[charaFace A 0]
+＠A：フェイカー
+さあ、行こうか。
+[k]
+
+？1：行こうって？
+？2：先の、車両に？
+？！
+
+＠A：フェイカー
+そうだとも。[r]私たちを閉じ込めた目的を問いたださんとならん。
+[k]
+
+＠A：フェイカー
+ああ、ついでに、[r]この列車について教えておいてやろう。
+[k]
+
+＠A：フェイカー
+ここは[#魔眼蒐集列車:レ ー ル ・ ツ ェ ッ ペ リ ン]。
+[k]
+
+＠A：フェイカー
+名前の通りに魔眼を集めて、[r]オークションを行うなんてふざけた列車だよ。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_MAP_48 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

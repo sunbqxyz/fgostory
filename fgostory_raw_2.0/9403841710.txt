@@ -1,0 +1,1187 @@
+
+
+
+
+＄94-03-84-17-1-0
+
+[soundStopAll]
+
+[charaSet A 1098173000 1 孩子]
+[charaSet B 1098118800 1 母亲]
+[charaSet C 1098131000 1 黑巨人]
+[charaSet D 1098170700 1 冲田Alter_脸剪影]
+[charaSet E 10007001 1 冲田Alter]
+[charaSet J 98115000 1 特效用]
+
+
+
+
+[scene 78700]
+
+[wipeFilter cinema 0.5 0]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.5]
+[se ad162]
+[seVolume ad162 0 0]
+[seVolume ad162 1.5 1.0]
+[wait fade]
+
+[wt 1.0]
+[seStop ad162 1.0]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 0,-50]
+
+＠孩子
+呜哇啊啊啊啊啊啊啊！　妈妈！[bgm BGM_EVENT_72 0.1]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-50]
+
+＠母亲
+神明、佛祖、阿弥陀佛……！[r]只请您……只恳请您救救我的儿子！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+[shake 0.02 4 4 0.5]
+
+＠黑巨人
+噢噢噢噢噢噢噢噢噢……！
+[k]
+
+[messageOff]
+
+[se ad85]
+[seStop ad85 0.3]
+[charaMoveScale C 1.1 0.2]
+[charaEffect J bit_talk_41]
+[wt 0.3]
+
+[fadeout black 0]
+[bgmStop BGM_EVENT_72 0.3]
+[wait fade]
+
+[charaPut J 1200,1200]
+[effectStop bit_talk_41]
+
+[charaFadeout C 0.1]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[se bac308]
+[effect bit_talk_v_slash01]
+[wt 1.0]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 78700]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+[fadein black 0.5]
+[wait fade]
+
+[se ba6]
+[charaSpecialEffect C enemyErasure]
+[wt 0.7]
+[wait charaSpecialEffect C]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-50]
+[se ad60]
+[seStop ad60 0.4]
+[wt 0.7]
+
+＠？？？
+[line 3]千钧一发。[bgm BGM_EVENT_63 0.1][r]好了，带着你妈妈赶快逃跑吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-50]
+
+＠孩子
+大……大姐姐……是谁啊？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut C 0,-50]
+[charaScale C 1.0]
+[charaTalk C]
+[charaFace C 0]
+[se ade189]
+[seVolume ade189 0 0.8]
+[charaSpecialEffect C appearance 1 1.7]
+[wait charaSpecialEffect C]
+[seStop ad14 0.5]
+[seStop ade189 0.5]
+[wt 1.0]
+
+[shake 0.02 4 4 0.5]
+
+＠黑巨人
+噢噢噢噢噢噢噢噢噢……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠？？？
+看来就算打倒它们，也会出现更多，[r]炼狱，要动一点真格了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠母亲
+难道您是阿弥陀佛的使者……！？
+[k]
+
+＠母亲
+啊，菩萨保佑，菩萨保佑……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠孩子
+谢谢你，帅气的姐姐！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠？？？
+好了，快逃吧，一定要好好爱护妈妈哦。[r]别忘了给妈妈捶捶肩膀哦。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠孩子
+嗯！　我会好好给妈妈捶肩膀的！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠母亲
+请……请您至少将您的大名告诉我们……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠？？？
+名字？　名字啊……让我想想。[r]我的名字……
+[k]
+
+[messageOff]
+
+[charaTalk off]
+
+[charaDepth D 2]
+[charaDepth E 1]
+
+[wt 0.8]
+
+[charaFace E 2]
+[charaFadein E 0.1 0,-50]
+[wt 0.1]
+
+[charaFadeout D 0.4]
+
+[wt 0.6]
+
+[charaTalk on]
+
+＠魔·冲田总司
+[line 3]是谜之魔小姐！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_63 1.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[scene 10000]
+[skip false]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[bgmStop BGM_EVENT_72 0.4]
+[bgmStop BGM_EVENT_63 0.4]
+[seStop ad162 0.4]
+[seStop ad85 0.4]
+[seStop ad14 0.4]
+[seStop ade189 0.4]
+[seStop ad60 0.4]
+
+[charaSet A 1098173000 1 孩子]
+[charaSet B 1098118800 1 母亲]
+[charaSet C 1098131000 1 黑巨人]
+[charaSet D 1098170700 1 冲田Alter_顔剪影]
+[charaSet E 10007001 1 冲田Alter]
+[charaSet J 98115000 1 特效用]
+
+[wt 0.4]
+[soundStopAll]
+[maskout black 1.0]
+[wait mask]
+[scene 10000]
+[wt 0.1]
+[maskin black 0.1]
+[wait mask]
+[label selectBranch]
+
+
+
+[revivalBranch lblNormal lblRevival]
+[label lblNormal]
+
+[fowardEffect bit_queststart80250]
+[wait fowardEffect]
+
+[branch lblConf]
+[label lblRevival]
+
+[fowardEffect bit_queststart80286]
+[wait fowardEffect]
+
+[label lblConf]
+
+
+[fadeout black 1.0]
+[wait fade]
+
+
+
+
+[charaSet A 1098172200 1 足轻_枪兵]
+[charaSet B 98111600 1 织田信胜]
+[charaSet D 7025000 1 土方岁三]
+[charaSet E 7026000 1 茶茶]
+[charaSet F 1027002 1 冲田总司]
+[charaSet G 6036002 1 李书文]
+[charaSet H 6033000 1 冈田以藏]
+[charaSet I 11007002 1 魔王信]
+[charaSet J 1098173420 1 鬼柴田]
+
+[wipeFilter cinema 0.5 0]
+
+[scene 79900]
+[wt 1.5]
+
+[skip true]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 0,-50]
+
+＠龙套足轻
+领地内到处都出现了那种黑巨人，[r]我们在拼命抵抗，但形势极为不利！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 0,-50]
+
+＠织田信胜
+这样下去果然不行吧！[r]无论打倒多少都会再次冒出来！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 0,-50]
+
+＠土方岁三
+不准说丧气话！[r]不过是群泥巴捏成的玩偶，岂能让它们如此猖狂！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-50]
+
+＠茶茶
+你表情好吓人，做事也太乱来了！[r]早知如此，还不如茶茶一个人守城不出呢！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 0,-50]
+
+＠冲田总司
+比起这个，我更担心御主！[r]得赶快去搭救御主才行！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+[shake 0.02 4 4 0.5]
+
+＠黑巨人
+噢噢噢噢噢噢噢噢噢噢噢……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 0,-50]
+
+＠土方岁三
+嘁！　居然已经到这里来了！[r]冲田！　我们俩一起上！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+[shake 0.02 4 4 0.5]
+
+＠黑巨人
+噢噢噢噢噢噢噢噢噢噢噢……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 0,-50]
+
+＠冲田总司
+土方先生！　这里也有！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut G 0,-50]
+[charaTalk G]
+[charaFace G 2]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect G appearance 1 0.25]
+[wt 0.4]
+
+＠李书文
+破！！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+[wt 0.5]
+
+[flashin once 0.1 0.1 FFFFFF66 FFFFFF00]
+[effect bit_talk_13]
+[charaShake C 0.05 3 3 0.5]
+[se bac10]
+[wt 1.0]
+
+＠黑巨人
+噢噢噢噢噢……！？
+[k]
+
+[messageOff]
+[se ba6]
+[charaSpecialEffect C enemyErasure]
+[wt 0.7]
+[wait charaSpecialEffect C]
+[charaFadeout C 0.1]
+[wt 0.8]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 0,-50]
+
+＠李书文
+让你们久等了，不过情况似乎不太妙。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 0,-50]
+
+＠冲田总司
+书文老师！　不，帮大忙了！[r]现在我们太缺人手了！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+[shake 0.02 4 4 0.5]
+
+＠黑巨人
+噢噢噢噢噢噢噢噢噢噢噢……！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 0,-50]
+[charaTalk H]
+[charaFace H 5]
+[se ad444]
+[se ad60]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect H appearance 1 0.25]
+[wt 0.3]
+[seStop ad60]
+[seStop ad444]
+[wt 0.1]
+
+＠冈田以藏
+你们这群家伙难道只会噢噢噢噢噢噢噢噢！地乱叫吗！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+[wt 0.5]
+
+[se bac7]
+[charaEffect C bit_talk_Slash_white_01]
+[charaEffect C bit_talk_14]
+[charaShake C 0.05 3 3 0.5]
+[wt 0.6]
+
+[se ba6]
+[charaSpecialEffect C enemyErasure]
+[wt 0.7]
+[wait charaSpecialEffect C]
+[charaFadeout C 0.1]
+[wt 0.8]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 0,-50]
+
+＠冈田以藏
+哇哈哈哈哈哈哈哈！[r]这里还有我天才剑士冈田以藏大人哦！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 0,-50]
+
+＠冲田总司
+啊，田冈也来了啊……
+[k]
+
+＠冲田总司
+嗯，总之你加油哦。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 0,-50]
+
+＠冈田以藏
+和对待老头的态度差距太大了吧！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 0,-50]
+
+＠土方岁三
+但如果按这个样子继续打持久战的话，[r]我们就无法去帮助他们了啊。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+[se ad60]
+[seVolume ad60 0 0.1]
+[seVolume ad60 1.0 1.0]
+[wt 1.0]
+
+[charaTalk I]
+[charaFace I 21]
+[charaFadein I 0.4 0,-50]
+[wt 0.4]
+[seStop ad60]
+
+＠魔王信
+不，辛苦你们坚持到现在，[bgm BGM_EVENT_67 0.1][r]应该有办法解决。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 0,-50]
+
+＠冲田总司
+信！[r]在这种忙碌的时候你上哪儿去了啦！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 21]
+[charaFadein I 0.1 0,-50]
+
+＠魔王信
+抱歉抱歉，我只是去把援军带来了……
+[k]
+
+[charaFace I 22]
+
+＠魔王信
+来，轮到你出场了！　权六！
+[k]
+
+[charaFace I 1]
+
+＠魔王信
+进攻柴田的面前没有道路！[r]进攻柴田的身后道路会被开辟！
+[k]
+
+＠魔王信
+正所谓织田家中鬼柴田！
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaSet A 1098171100 1 明智光秀]
+
+[se ad624]
+[shake 0.03 4 4 0.6]
+[wt 1.2]
+
+[shake 0.03 4 4 0.6]
+[wt 0.9]
+
+[shake 0.03 4 4 0.6]
+[charaEffect J bit_talk_charge_blu]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.4 0,-50]
+[wt 1.0]
+
+[seStop ad624 0.1]
+
+＠鬼柴田
+进攻！　进攻[line 8]！！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 0,-50]
+
+＠茶茶
+父……父亲大人！？　您不是消灭了吗！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠明智光秀
+没错，柴田阁下被你们讨伐，已经消灭了。
+[k]
+
+＠明智光秀
+但既然是从者，[r]当然也就能重新召唤吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 0,-50]
+
+＠土方岁三
+难道你重新召唤了他？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠明智光秀
+通常情况下是非常困难的。
+[k]
+
+＠明智光秀
+但其实我也具备Caster的职阶适性，[r]很擅长这种仪式。
+[k]
+
+＠明智光秀
+尽管有些勉强，[r]但为了重新召唤，我使用了我的外法。
+[k]
+
+[charaFace A 4]
+
+＠明智光秀
+更不用说这战斗对吾等织田家的人来说，[r]是一场特别的战斗。
+[k]
+
+＠明智光秀
+既然众多信长大人齐聚一堂，还召唤了魔王信长大人，[r]那但凡织田家之人，是不可能不回应的。
+[k]
+
+＠明智光秀
+呵呵……猴子那家伙这会儿一定在英灵之座后悔莫及吧！
+[k]
+
+[charaFace A 10]
+
+＠明智光秀
+呵[messageShake 0.05 4 4 0.4]哈哈哈哈哈！　那只秃鼠，活该！[r]这次可没有你出场的余地！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 0,-50]
+
+＠鬼柴田
+信长大人！　就交给我权六吧！
+[k]
+
+＠鬼柴田
+进攻[line 6]！！！
+[k]
+
+[messageOff]
+[wt 0.2]
+[se ad624]
+[shake 0.03 4 4 0.6]
+[wt 1.2]
+
+[charaFadeout J 0.1]
+[seStop ad624]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_charge_blu]
+
+[charaTalk I]
+[charaFace I 21]
+[charaFadein I 0.1 0,-50]
+
+＠魔王信长
+好，这样权六就会为我们开辟道路，[r]我们就趁着这个势头冲向[#摩玖主:MAX]的根据地吧！
+[k]
+
+＠魔王信长
+尽管由我说这话会有点奇怪，但我还是要说，
+[k]
+
+[charaFace I 1]
+
+＠魔王信长
+[line 3]『敌在本能寺！』
+[k]
+
+[messageOff]
+
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_67 1.5]
+[wait fade]
+
+[wipeOff]
+
+[charaFadeout I 0.1]
+
+[charaSet A 7035001 1 森长可]
+[charaSet B 1098173900 1 摩玖主大僧正]
+[charaSet C 1098171500 1 麦克斯韦]
+[charaSet D 1098171600 1 麦克斯韦_机械]
+[charaSet E 1098173500 1 摩玖主大本尊]
+[charaSet F 3038000 1 长尾景虎]
+[charaSet J 98115000 1 特效用]
+
+[charaDepth J 1]
+[charaScale J 2.0]
+
+[scene 79401]
+[wt 2.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.4 1]
+[wt 0.4]
+
+＠魔王信长
+[line 3]让你们久等了，各位。[bgm BGM_EVENT_4 0.1]
+[k]
+
+？1：信！
+
+？2：等你好久了！
+
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠森长可
+大殿下！　来得太慢了吧！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠摩玖主大僧正
+魔……魔王信长……！？　你应该已经死了，[r]这是怎么回事，Caster！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠麦克斯韦
+不，确实死了哦，但死的是安土的魔王信长。
+[k]
+
+[charaChange C 1098171520 1 normal 0.1]
+[wait charaChange C]
+
+＠麦克斯韦
+啊啊，这么说来，我还没为您介绍吧，[r]这位是越后的魔王信长小姐。
+[k]
+
+＠麦克斯韦
+哎呀，和安土的信长小姐真是一模一样呢。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_4 1.2]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠摩玖主大僧正
+你在说什么……你这家伙居然算计我！
+[k]
+
+＠摩玖主大僧正
+该死的！　事已至此，[r]我要将你们一并解决掉！
+[k]
+
+[messageOff]
+[se ad39]
+[charaEffect B bit_talk_20]
+[wt 2.3]
+
+[charaFace B 5]
+
+＠摩玖主大僧正
+来吧，用圣杯的力量复活吧！　[#摩玖主:MAX]大本尊啊！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaEffectDestroy B bit_talk_20]
+
+[shake 0.02 4 4 0]
+[se ad14]
+[wt 0.5]
+
+[se ade50]
+[se ad414]
+[fowardEffect bit_talk_blackfire_all]
+[fowardEffectStop bit_talk_blackfire_all]
+[wt 1.0]
+
+[fowardEffect bit_talk_06_b3]
+
+[se ade189]
+[seVolume ade189 0 0.8]
+[charaTalk E]
+[charaFace E 0]
+[charaSpecialEffect E appearance 1 1.7]
+[wait charaSpecialEffect E]
+
+[charaPut J 0,350]
+[charaEffect J bit_talk_blackhole_gate]
+
+[shakeStop]
+
+[seStop ade50 1.0]
+[seStop ad414 1.0]
+[seStop ad14 1.0]
+[seStop ade189 1.0]
+
+[fadeout white 0.5]
+[wait fade]
+[fowardEffectDestroy bit_talk_blackfire_all]
+[fadein white 0.5]
+[fowardEffectStop bit_talk_06_b3]
+[wait fade]
+
+[bgm BGM_EVENT_24 0.1]
+
+[wt 1.5]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 16]
+[charaFadein F 0.1 1]
+
+＠长尾景虎
+难道又要复原了吗……！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaPut J 0,350]
+[wt 0.1]
+[shake 0.02 4 4 0.5]
+
+＠摩玖主大本尊
+噢噢噢噢噢噢噢噢噢噢…………！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_blackhole_gate]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠魔王信长
+原来如此，这确实是能与神佛匹敌的怪物。[r]不，这样的存在应该被称之为神吧。
+[k]
+
+＠魔王信长
+然而众多的我之所以聚集于此，[r]或许就是为了讨伐这家伙吧。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠摩玖主大僧正
+众生之敌，魔王信长啊！[r]被我[#摩玖主:MAX]大本尊的力量毁灭吧！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_24 1.5]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+
+＠魔王信长
+众生之敌……？　你还挺明白的嘛。[r]没错，我就是神佛众生之敌，第六天魔王波旬，
+[k]
+
+[charaFace I 5]
+
+＠魔王信长
+……不，第六天已经不够格了，[r]是遍布三千世界的我所有的可能性……
+[k]
+
+[bgm BGM_BATTLE_108 0.1]
+[fowardEffect bit_talk_sparks]
+
+＠魔王信长
+齐聚于此变生而成的真正魔王，
+[k]
+
+[charaFace I 2]
+
+＠魔王信长
+[line 3]三千大千天魔王，织田信长！
+[k]
+
+[messageOff]
+
+[fowardEffect bit_talk_fire]
+[se bac302]
+[wt 1.5]
+[scene 79402 1.5]
+[wt 2.0]
+[fowardEffectStop bit_talk_fire]
+
+[charaFace I 1]
+
+＠魔王信长
+呼哈哈哈哈哈哈！　没想到我居然会亲自烧掉这本能寺！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠摩玖主大僧正
+不……不可能！？　所有信长的集合体！？[r]若非拥有无限的魔力，怎么可能实现这种……！
+[k]
+
+[charaFace B 3]
+
+＠摩玖主大僧正
+…………！[r]是你吗，Caster！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠D：麦克斯韦
+对，是我提供的魔力。[r]啊，请放心吧，这都是自掏腰包的部分。
+[k]
+
+？1：这是……Caster的宝具！？
+
+？2：Caster，流血了！
+
+？！
+
+＠D：麦克斯韦
+是的，多亏了景虎小姐，[r]有一部分力量回归我能控制的领域了。
+[k]
+
+＠D：麦克斯韦
+稍微有些破损，但不会影响运作。
+[k]
+
+[charaFace D 8]
+
+＠D：麦克斯韦
+而且我不能忍受那种不完全的炉心。
+[k]
+
+＠D：麦克斯韦
+我所追求的是真正的永动机，[r]是人类不断追寻的『无限心脏』。
+[k]
+
+[charaFace D 7]
+
+＠D：麦克斯韦
+综上所述，信长小姐，魔力方面暂时不必担心，[r]您大可以随心所欲地使用。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 1]
+
+＠魔王信长
+呼哈哈哈哈哈！　你还挺机灵的嘛，Caster。
+[k]
+
+[charaFace I 6]
+
+＠魔王信长
+来吧，居然胆敢在我面前自称神，[r]想必已经有这个觉悟了吧！　叫[#摩玖主:MAX]大本尊的家伙！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠摩玖主大僧正
+可……可恶！　可恶！　可恶啊！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠魔王信长
+我们上，[%1]！[r]通过这一战，毁灭一切！！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_108 0.4]
+[wait fade]
+
+[fowardEffectStop bit_talk_sparks]
+
+[soundStopAll]
+[end]
+

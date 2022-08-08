@@ -1,0 +1,473 @@
+
+＄03-00-09-18-3-0
+
+
+[enableFullScreen]
+[bgmStop BGM_MAP_73 0.3]
+[bgmStop BGM_MAP_74 0.3]
+[bgmStop BGM_MAP_75 0.3]
+[bgmStop BGM_MAP_79 0.3]
+
+[charaSet A 1098211010 1 加雷斯]
+[charaSet B 98084000 1 骑士]
+[charaSet C 98115000 1 特效用dummy]
+
+
+[sceneSet J 10000 1]
+[charaScale J 1.01]
+[sceneSet K 10000 1]
+[charaScale K 1.01]
+
+[charaSet S 98115000 1 士兵的声音]
+[charaSet T 98115000 1 骑士的声音]
+
+[sceneSet L 118501 1 1]
+[charaScale L 1.35]
+
+
+[overlayFadein J 0.1 -1100,0]
+[overlayFadein K 0.1 1100,0]
+
+
+[scene 10000]
+[cueSe SE_21 21_ad1114]
+[wt 0.1]
+
+[seVolume 21_ad1114 1.5 1.0]
+[fadein black 1.5]
+[wait fade]
+[wt 1.0]
+
+[seVolume 21_ad1114 2.0 0.3]
+[wt 0.5]
+
+＠士兵的声音
+全部杀光！[r]他们犯下了一直漠视那位尊贵大人温情的罪！
+[k]
+
+[messageOff]
+[wt 0.1]
+[se bac387]
+[wt 1.4]
+
+＠士兵的声音
+什么『人类与妖精的共存』啊！[r]无论去到哪里，都是群家畜本性的奴隶！
+[k]
+
+[messageOff]
+[wt 0.1]
+[se bac388]
+[wt 1.6]
+
+＠骑士的声音
+……看来大致都结束了。
+[k]
+
+＠骑士的声音
+伦蒂尼恩虽然连伍德沃斯都久攻不下，[r]但只要从内部着手，其实非常脆弱。
+[k]
+
+＠骑士的声音
+只要是[#人类]，就会轻易信任。[r]愚者正适合这种末路。
+[k]
+
+＠骑士的声音
+吊车尾根本不需要什么故乡。[r]全都烧光。
+[k]
+
+＠骑士的声音
+一旦失去了伦蒂尼恩，圆桌军就无处可归了，[r]『预言之子』的威信也将一落千丈。
+[k]
+
+＠骑士的声音
+司令室必须破坏到非常彻底。[r]让狂妄的珀西瓦尔接受教训。
+[k]
+
+[messageOff]
+[wipeout openEye 0.5 1.0]
+[wait wipe]
+
+[charaTalk depthOff]
+
+[charaDepth L 1]
+[charaDepth A 2]
+[charaDepth C 3]
+[charaDepth J 4]
+[charaDepth K 5]
+
+[charaMove J 0,-745 0.5]
+[charaMove K 0,745 0.5]
+
+[charaFadein L 0.1 0,-450]
+[wt 0.5]
+
+[charaPut C 1]
+[charaEffect C bit_talk_sparks_fs]
+
+[wipein openEye 2.0 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[se ad228]
+[seVolume ad228 0 0.4]
+[seStop ad228 2.0]
+[se ad892]
+[seVolume ad892 0 0.4]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.7 0,-50]
+[wt 1.0]
+
+＠加雷斯
+…………奇，怪。[r]我……为什么……
+[k]
+
+＠加雷斯
+右眼，好像，睁不开了……[r]好奇怪……奇，怪[line 3]
+[k]
+
+＠加雷斯
+城市，情况，如何[line 3]
+[k]
+
+[messageOff]
+[seStop 21_ad1114 2.0]
+[charaCrossFade A 1098211000 9 0.7]
+[wt 1.5]
+
+＠加雷斯
+[line 6].
+[k]
+
+[bgm BGM_EVENT_41 0.1]
+
+[charaFace A 6]
+＠加雷斯
+啊[line 3]啊，啊[line 3]
+[k]
+
+[charaFace A 7]
+＠加雷斯
+呜啊[line 3]啊啊[line 3]
+[k]
+
+＠加雷斯
+又是[line 3]又是，这种[line 3][r]究竟要，看多少次，看多少次才[line 3]
+[k]
+
+＠加雷斯
+咦，但是……我看过，很多次了吗？[r]这景象，我看过，很多次[line 3]啊。
+[k]
+
+[messageOff]
+[wt 1.2]
+
+[charaFace A 8]
+＠加雷斯
+……这样啊，原来是这样。[r]……我明白了。我[line 3]
+[k]
+
+＠加雷斯
+原来，是『镜之氏族』啊。
+[k]
+
+＠加雷斯
+是试图守护大家，免于毁灭的未来[line 3][r]却谁都没能拯救的，艾因塞尔[line 3]
+[k]
+
+＠加雷斯
+对不起……对不起啊，米拉……[r]你好不容易，成了我的替身……
+[k]
+
+＠加雷斯
+这次，我却依然[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠士兵的声音
+喂，应该还有其他小孩吧？[r]那些家伙在哪里？
+[k]
+
+＠士兵的声音
+快搜，一个都不能放过！[r]圆桌军很快就会返回，要赶在那之前找出来杀掉！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_41 2.0]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 0,-50]
+[wt 1.2]
+
+[charaFace A 15]
+＠加雷斯
+…………还没完。[r]还没有，结束。
+[k]
+
+[charaFace A 14]
+＠加雷斯
+我要上了……！[r]要保护塞姆和撒玛利亚……！
+[k]
+
+[messageOff]
+
+[cueSe SE_21 21_ad1114]
+[seVolume 21_ad1114 0 0]
+[seVolume 21_ad1114 1.0 0.5]
+
+[charaMove A -50,-50 0.6]
+[charaFadeout A 0.4]
+[se ade428]
+[wt 0.4]
+[seStop ade428 0.1]
+[wt 0.8]
+[se ade428]
+[wt 0.4]
+[seStop ade428 0.1]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout L 0.1]
+
+[scene 122400]
+[wt 1.5]
+
+[seStop 21_ad1114 4.0]
+[fadein black 3.0]
+[wait fade]
+
+[bgm BGM_EVENT_95 0.1]
+
+＠加雷斯
+……但是呢，米拉。我很，庆幸，[r]能够，转生成下代，哦。
+[k]
+
+＠加雷斯
+……在伦蒂尼恩度过的时光，堪称理想。[r]如梦似幻的，世界。
+[k]
+
+
+＠加雷斯
+所有人相互帮助、相互认可、相互谅解。
+[k]
+
+＠加雷斯
+既珍视自己，[r]也珍视身边的人们，就是这样一群人。
+[k]
+
+＠加雷斯
+……不过，[%1]却说，[r]这是理所当然的，
+[k]
+
+＠加雷斯
+所以我们的不列颠，[r]也会变成这样。
+[k]
+
+
+＠加雷斯
+……呵呵。那样的世界，真的会到来吗。[r]拥有那样未来的妖精，真的会出现吗。
+[k]
+
+＠加雷斯
+我很喜欢看着[%1]哦。[r]因为他们那边的世界，拥有，许多幸福[line 3]
+[k]
+
+＠加雷斯
+好像并不存在“无论怎么做都会在此结束”[r]这种残酷的未来景象呢。
+[k]
+
+
+＠加雷斯
+……好羡慕啊。[r]我们，就没有，这样的未来呢。
+[k]
+
+＠加雷斯
+我早就知道，自己该守护什么。[r]唯独清楚，应该引导『预言之子』。
+[k]
+
+＠加雷斯
+然而……我并不希望为此，[r]而失去除此以外的事物。
+[k]
+
+＠加雷斯
+不希望氏族的大家，全都死去。
+[k]
+
+＠加雷斯
+死脑筋的加雷斯，[r]死脑筋的艾因塞尔。
+[k]
+
+＠加雷斯
+分明看得到[#未来:命运]，[r]为什么就是无法接受未来呢。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_95 2.0]
+[wt 1.5]
+
+
+＠加雷斯
+……开玩笑啦。[r]其实这种事，根本没有什么，为什么吧？
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 1.0]
+[wait fade]
+
+[overlayFadein J 0.1 0,-1100]
+[overlayFadein K 0.1 0,1100]
+
+[scene 120702]
+
+[charaSet A 1098211010 1 加雷斯]
+
+[wt 1.0]
+[cueSe SE_21 21_ad1114]
+[seVolume ade24 0 0]
+[seVolume 21_ad1114 1.0 0.4]
+[fadein black 1.0]
+[wait fade]
+
+[se ade428]
+[wt 0.4]
+[seStop ade428 0.1]
+[wt 0.8]
+
+[se ade428]
+[wt 0.4]
+[seStop ade428 0.1]
+[wt 0.8]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.4 0,-10]
+[wt 0.4]
+
+＠加雷斯
+呼……呼……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠骑士
+司令室在上面。[r]油桶都设置好了吧？　要炸得彻底一些哦。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[seStop 21_ad1114 3.0]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-10]
+＠加雷斯
+到此为止了，女王军！[r]不许你们继续为非作歹！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠骑士
+[line 3]还有幸存者吗。[r]不过已经奄奄一息了，连当敌人的价值都没有……
+[k]
+
+＠骑士
+如果你独自逃跑，倒还比较讨人喜欢呢。[r]还有你这打扮，是在模仿骑士吗。
+[k]
+
+＠骑士
+真碍眼，死在这里吧。[r]区区珀西瓦尔的士兵，不准妄言骑士。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-10]
+[wt 0.7]
+[charaCrossFade A 1098211000 14 0.6]
+[wait charaCrossFade A]
+[wt 1.0]
+[charaShake A 0.1 1 1 0.6]
+[charaMove A 0,0 0.6]
+[se bac170]
+[seVolume bac170 0 0.4]
+[wt 1.1]
+
+[bgm BGM_MAP_74 0.1]
+
+[charaFace A 17]
+＠加雷斯
+少啰嗦……！[r]你们算哪门子的骑士……！
+[k]
+
+＠加雷斯
+我是加雷斯，圆桌军的骑士，加雷斯！
+[k]
+
+＠加雷斯
+既是努力的『预言之子』首席侍从，[r]亦是享誉盛名的珀西瓦尔的首席弟子！
+[k]
+
+
+
+
+[messageOff]
+[seStop ade24 0.4]
+[seStop ad429 0.4]
+[fadeout black 0.5]
+[wait fade]
+
+[input selectBranch]
+[seStop bac170 0.4]
+[seStop ade428 0.4]
+[seStop ad892 0.4]
+[seStop bac387 0.4]
+[seStop bac388 0.4]
+[seStop ade24 0.4]
+[seStop ad429 0.4]
+[cueSeStop 21_ad1114 0.4]
+
+[bgmStop BGM_EVENT_41 0.4]
+[bgmStop BGM_EVENT_95 0.4]
+
+[label selectBranch]
+
+[wt 0.5]
+
+[branchMaterial lblMaterial]
+
+[bgm BGM_MAP_74 0.1]
+
+[branch lblBranchMaterialEnd]
+
+[label lblMaterial]
+
+[bgmStop BGM_MAP_74 0.5]
+[wt 0.5]
+
+[label lblBranchMaterialEnd]
+
+[end]

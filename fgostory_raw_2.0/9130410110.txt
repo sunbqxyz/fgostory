@@ -1,0 +1,1712 @@
+
+
+
+＄91-30-41-01-1-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 3041001 1 凯妮斯]
+[charaSet B 1098123200 1 戈尔德鲁夫]
+[charaSet C 7016001 1 玉藻猫]
+[charaSet D 2001000 1 卫宫]
+[charaSet E 4011001 1 布狄卡]
+[imageSet F back10000 1]
+[charaScale F 1.01]
+
+[equipSet G 9807720 1 牛角面包]
+
+[charaSet H 98115000 1 特效用]
+
+[cameraMove 0.1 0,0 1.01]
+[scene 105900]
+
+
+[pictureFrame cut063_cinema]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[se ad511]
+[wt 2.0]
+[se ad882]
+[wt 0.5]
+[seStop ad882 0.5]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.4 0,-50]
+[wt 0.4]
+
+＠凯妮斯
+呼……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad511]
+[wt 2.0]
+
+
+[se ad882]
+[wt 0.5]
+[seStop ad882 0.5]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 21]
+[charaFadein A 0.1 0,-50]
+
+＠凯妮斯
+嘿，哈……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad882]
+[wt 0.5]
+[seStop ad882 0.5]
+[wt 1.0]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 0,-50]
+
+＠凯妮斯
+不行吗。
+[k]
+
+[charaFace A 16]
+
+＠凯妮斯
+唔～。
+[k]
+
+[charaFace A 5]
+
+＠凯妮斯
+啊～。
+[k]
+
+＠凯妮斯
+怎么回事？
+[k]
+
+[charaFace A 17]
+
+＠凯妮斯
+不过是……[r]把小麦稍微烤一下而已吧……
+[k]
+
+[branchNotHaveSvtEquip lblNotHave 9807720]
+
+
+＠凯妮斯
+上次不还做成了吗。
+[k]
+
+[branch lblConf_have]
+
+[label lblNotHave]
+
+[label lblConf_have]
+
+[charaFace A 5]
+
+＠凯妮斯
+啊？
+[k]
+
+＠凯妮斯
+怎么总是挡在我的面前啦……
+[k]
+
+＠凯妮斯
+可恶啊……
+[k]
+
+[messageOff]
+[se ad532]
+[charaFace A 11]
+[wt 0.5]
+[seStop ad532 0.5]
+[wt 1.0]
+[charaFace A 16]
+
+＠凯妮斯
+……[r]……
+[k]
+
+[charaFace A 15]
+
+＠凯妮斯
+可不准，
+[k]
+
+＠凯妮斯
+得意，
+[k]
+
+[charaFace A 2]
+
+＠凯妮斯
+忘形哦……[line 3]？
+[k]
+
+[messageOff]
+[charaPut H 0,-50]
+[se ad64]
+[charaEffect H bit_talk_kaineus]
+[wt 1.0]
+[shake 0.05 3 3 3.0]
+[wt 2.0]
+[wipeout rectangleStripRightToLeft 0.7 1]
+[bgmStop BGM_EVENT_48 1.0]
+[wait wipe]
+
+[cameraHome 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_kaineus]
+[charaFadeout A 0.1]
+[wt 1.5]
+
+
+
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.4 0,-50]
+
+[charaShake B 0.05 3 3 1.5]
+[wt 1.5]
+
+[bgm BGM_EVENT_7 0.1]
+＠戈尔德鲁夫
+哎哎……？
+[k]
+
+[messageOff]
+[charaMove B -60,-50 0.4]
+[wt 0.6]
+[charaMove B 60,-50 0.8]
+[wt 1.2]
+[charaMove B 0,-50 0.4]
+[wt 0.6]
+＠戈尔德鲁夫
+她，她到底在干什么啊？
+[k]
+
+＠戈尔德鲁夫
+为什么厨房里隐约透出[r]那里本不可能出现的魔力之光……
+[k]
+
+＠戈尔德鲁夫
+是我的错觉吗？
+[k]
+
+＠戈尔德鲁夫
+似乎还有几次轻微的爆炸声！
+[k]
+
+[charaFace B 14]
+
+＠戈尔德鲁夫
+话说，现在的时间！　都过午夜零点了！
+[k]
+
+＠戈尔德鲁夫
+这么深更半夜的，[r]为什么那家伙还在厨房啊！？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 0,-50]
+[wt 0.4]
+
+＠玉藻猫
+因为借给她啦～！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 0,-50]
+
+＠戈尔德鲁夫
+借！？[r]借给她了吗！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠玉藻猫
+既然希望踏上不需要帮手的孤身之旅，自是当然！[r]总不能让外人去妨碍汪。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 0,-50]
+
+＠戈尔德鲁夫
+Pardon？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 0,-50]
+
+＠卫宫
+她说想要借用厨房到早晨。
+[k]
+
+＠卫宫
+恰好明天的准备工作也结束了，[r]我们当然没有理由拒绝。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 0,-50]
+[wt 0.4]
+＠布狄卡
+她好像想做面包，[r]我也有问她要不要帮忙？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+[charaPut F 0,0]
+[charaFadeTime F 0.2 0.5]
+
+＠戈尔德鲁夫
+（唔。面包？）
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-50]
+＠布狄卡
+不过哦，僭主阁下她呀，[r]说不需要任何人的帮助。
+[k]
+
+＠布狄卡
+所以我们才会像这样在远处关注她。
+[k]
+
+[charaFace E 3]
+＠布狄卡
+虽然我们希望她尽可能别弄坏厨房的东西，[r]啊哈哈，但看这样子有点不好说呢～。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+
+＠玉藻猫
+Don't Worry汪！[r]不用担心！
+[k]
+
+[charaFace C 0]
+
+＠玉藻猫
+关键时候，小卫宫可以Trace on哦？[r]可是全覆盖哦？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠卫宫
+这个嘛……[r]一定范围内的确可以修补。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 0,-50]
+
+＠戈尔德鲁夫
+呃，也就是说？[r]那位神灵凯妮斯[line 3]
+[k]
+
+＠戈尔德鲁夫
+为了做面包，说要借用厨房。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+[wt 0.1]
+[charaMoveReturn C 0,-60 0.3]
+＠玉藻猫
+嗯！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 0,-50]
+
+＠戈尔德鲁夫
+想一个人做，所以让你们别管她。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-50]
+[wt 0.1]
+[charaMoveReturn E 0,-60 0.3]
+
+＠布狄卡
+对。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 0,-50]
+[se ade116]
+[wt 1.0]
+[charaFace B 17]
+＠戈尔德鲁夫
+[line 6]！
+[k]
+
+＠戈尔德鲁夫
+这……
+[k]
+
+＠戈尔德鲁夫
+这样啊。
+[k]
+
+[charaFace B 1]
+[charaFadeTime F 0.2 0.5]
+
+＠戈尔德鲁夫
+（这是……[r]　那个吗……！）
+[k]
+
+[charaFace B 11]
+
+＠戈尔德鲁夫
+（我明白了。[r]　我明白了，我明白了世界的一切！）
+[k]
+
+＠戈尔德鲁夫
+（不，不至于明白世界的一切，[r]　但个人的爽快程度就是这种级别的！）
+[k]
+
+[charaFace B 1]
+
+＠戈尔德鲁夫
+（我突然！[r]　理解了！）
+[k]
+
+＠戈尔德鲁夫
+（神灵凯妮斯……[line 3]）
+[k]
+
+[charaFace B 2]
+
+＠戈尔德鲁夫
+（[#是打算制作我的牛角面包吧]？）
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[se ad94]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.4 0,-50]
+[wt 0.5]
+
+＠凯妮斯
+[f large]不做啦～！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 0,-50]
+＠戈尔德鲁夫
+[f large]！？
+[k]
+
+[charaFace B 4]
+
+＠戈尔德鲁夫
+哎？
+[k]
+
+[charaFace B 12]
+
+＠戈尔德鲁夫
+咦……
+[k]
+
+[charaFace B 4]
+＠戈尔德鲁夫
+不做……了？[r]没想到竟然火速不做了吗，凯妮斯君？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 0,-50]
+
+＠凯妮斯
+啊？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 0,-50]
+[charaShake B 0.05 3 3 0.5]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠凯妮斯
+怎么，这不是戈尔德鲁夫新所长阁下嘛～。
+[k]
+
+[charaFace A 15]
+＠凯妮斯
+没错，不做了不做了。[r]这种东西打从一开始就做不出来啦～。
+[k]
+
+＠凯妮斯
+我竟然会鬼迷心窍。[r]正因为不是完全没有厨房的基础知识，
+[k]
+
+[charaFace A 8]
+
+＠凯妮斯
+才会下意识误会。
+[k]
+
+＠凯妮斯
+认为我[#似乎]能做到[line 3]
+[k]
+
+[charaFace A 4]
+
+＠凯妮斯
+……[r]……
+[k]
+
+[charaFace A 16]
+
+＠凯妮斯
+算了，不行就是不行。[r]真没办法。
+[k]
+
+[charaFace A 0]
+＠凯妮斯
+我还是灵体化先撤啦。[r]打扰啦，猫咪。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠玉藻猫
+已经够了吗汪？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠凯妮斯
+嗯。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠布狄卡
+需要我们帮忙吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 0,-50]
+
+＠凯妮斯
+不，不用了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠卫宫
+后续就由我们来收拾吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠凯妮斯
+噢，拜托啦。
+[k]
+
+[messageOff]
+[charaFace A 16]
+[wt 1.0]
+[charaFace A 0]
+
+＠凯妮斯
+[line 3]那我走了，回头见。
+[k]
+
+
+[messageOff]
+[se ad52]
+[charaSpecialEffect A erasure 1 1.2]
+[wt 1.5]
+
+[bgmStop BGM_EVENT_7 1.0]
+[wt 0.5]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 0,-50]
+
+＠戈尔德鲁夫
+[f large]还没完！
+[k]
+
+＠戈尔德鲁夫
+回来，神灵凯妮斯！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaPut A 0,-50]
+[charaFace A 17]
+[charaSpecialEffect A appearance 1 1.0]
+[se ad595]
+[wt 1.5]
+
+＠凯妮斯
+………………啊？
+[k]
+
+[charaFace A 21]
+＠凯妮斯
+你这家伙，刚才是不是对我直呼其名？[r]新所长阁下。
+[k]
+
+＠凯妮斯
+虽然我不知道你这是什么意思，[r]不，算了。管你什么意思。
+[k]
+
+[charaFace A 16]
+
+＠凯妮斯
+既然你小看我[line 3]
+[k]
+
+[bgm BGM_EVENT_80 0.1]
+[charaFace A 18]
+
+＠凯妮斯
+就杀了你。
+[k]
+
+[messageOff]
+[effect bit_talk_v_slash01]
+[se ad85]
+[charaMoveScale A 1.05 0.2]
+[charaMove A 0,-40 0.2]
+[wt 0.1]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[charaScale A 1.0]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth E 3]
+[charaDepth D 2]
+
+[charaTalk off]
+
+[charaFace B 9]
+[charaFadein B 0.1 0,-50]
+[wt 0.4]
+
+[charaFace D 5]
+[charaFadein D 0.1 -256,-50]
+[charaFace E 5]
+[charaFadein E 0.1 256,-50]
+[se ad7]
+[charaMove D -180,-50 0.1]
+[charaMove E 180,-50 0.1]
+[wt 0.1]
+[se ad32]
+[effect bit_talk_14]
+[wt 0.5]
+
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠凯妮斯
+哎！
+[k]
+
+＠凯妮斯
+要和我斗吗，卫宫！　布狄卡！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadeinFSL D 0.1 -256,-50]
+[charaFace E 5]
+[charaFadeinFSR E 0.1 256,-50]
+[se ad694]
+＠卫宫
+这个嘛。
+[k]
+
+＠布狄卡
+我们其实没这种打算哦！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 0,-50]
+
+＠凯妮斯
+哈哈！
+[k]
+
+[bgmStop BGM_EVENT_80 0.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 0,-50]
+
+＠戈尔德鲁夫
+[f large]哎[messageShake 0.05 3 3 0.4]哎，全都给我住手～！
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠戈尔德鲁夫
+只不过叫住你而已，那是什么态度！[r]我对称呼方式听上去没礼貌这点道歉！
+[k]
+
+＠戈尔德鲁夫
+但我只是在开头加了神灵两个字吧！[r]所以，希望您把这当做尊称！
+[k]
+
+[charaFace B 9]
+＠戈尔德鲁夫
+您意下如何！？
+[k]
+
+[charaPut F 1]
+[charaFadeTime F 0.2 0.5]
+＠戈尔德鲁夫
+（话说！[r]　就算心情不好，挑衅速度也太快了吧！）
+[k]
+
+＠戈尔德鲁夫
+（区区一个称呼就如此激怒，[r]　以前可从未遇到过，大概吧。嗯，大概是这样。）
+[k]
+
+[charaFace B 18]
+
+＠戈尔德鲁夫
+（真是的，到底有什么好烦躁的……）
+[k]
+
+[messageOff]
+[charaFace B 7]
+[wt 1.0]
+[charaFace B 10]
+
+＠戈尔德鲁夫
+（啊啊。）
+[k]
+
+＠戈尔德鲁夫
+（是因为无法顺利地烤出面包吗？）
+[k]
+
+[messageOff]
+[charaFace B 4]
+[wt 1.0]
+[charaFace B 7]
+
+＠戈尔德鲁夫
+（！）
+[k]
+
+＠戈尔德鲁夫
+（是……[r]　是这样啊，原来是这样啊……）
+[k]
+
+[charaFace B 8]
+
+＠戈尔德鲁夫
+（神灵凯妮斯，不，凯妮斯君！[r]　哎哎，内心就不加尊称了哦，凯妮斯！）
+[k]
+
+＠戈尔德鲁夫
+（你竟然如此，如此！）
+[k]
+
+[charaFace B 17]
+
+＠戈尔德鲁夫
+（无法忘记那天……！）
+[k]
+
+＠戈尔德鲁夫
+（品尝到的牛角面包吗！[r]　这样啊，这样啊，哈哈哈，原来如此！）
+[k]
+
+[branchNotHaveSvtEquip lblNotHave2 9807720]
+
+
+＠戈尔德鲁夫
+（情人节分明还做过一次嘛……[r]　这样啊，这样啊，还想再做一次吗！）
+[k]
+
+[branch lblConf_have2]
+
+[label lblNotHave2]
+
+[label lblConf_have2]
+
+[charaFace B 2]
+
+＠戈尔德鲁夫
+（哈哈哈，这家伙！）
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 0,-50]
+
+＠凯妮斯
+……
+[k]
+
+＠凯妮斯
+…………
+[k]
+
+[charaFace A 9]
+
+＠凯妮斯
+……………………尊称。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_7 0.7]
+[wipeout rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[pictureFrame]
+[wt 1.0]
+
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+？1：我全都听到了！
+？2：我觉得这个可以当做尊称！
+？！
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠凯妮斯
+噢，[%1]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+噢噢，这么说来！[r][%1]。
+[k]
+
+＠戈尔德鲁夫
+你在管制室里为了怎么编制一直烦恼到深夜，[r]我应该作为所长命令你该去睡了才对……
+[k]
+
+[charaFace B 4]
+
+＠戈尔德鲁夫
+……为什么还不回自己的房间？
+[k]
+
+？1：肚子有点饿了。
+？2：想来找点温温的饮品。
+
+？！
+
+＠戈尔德鲁夫
+啊，是这样……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 1.0]
+＠凯妮斯
+……真是的。
+[k]
+
+＠凯妮斯
+兴致都没了。[r]我就不杀那个戈夫了。
+[k]
+
+＠凯妮斯
+不好意思，不能陪你们玩啦，卫宫、布狄卡。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace D 0]
+[charaFace E 0]
+[charaFadeinFSL D 0.1 0]
+[charaFadeinFSR E 0.1 2]
+[wt 0.5]
+[charaMoveReturnFSL D -256,-5 0.4]
+[charaMoveReturnFSR E 256,-5 0.4]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠凯妮斯
+好了[line 3]
+[k]
+
+＠凯妮斯
+我可以承认那是尊称，然后呢？
+[k]
+
+[charaFace A 7]
+＠凯妮斯
+你叫住我的理由是什么？[r]戈尔德鲁夫。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+这……
+[k]
+
+＠戈尔德鲁夫
+该怎么说呢……
+[k]
+
+[charaFace B 12]
+
+＠戈尔德鲁夫
+……[r]……
+[k]
+
+＠戈尔德鲁夫
+也不是什么大不了的事，[r]要郑重说明的话，我反而有些难以启齿，
+[k]
+
+[charaFace B 6]
+
+＠戈尔德鲁夫
+但如果不说感觉就会被杀，所以我要说了哦！[r]我！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[charaFace B 18]
+[wt 1.0]
+[charaFace B 6]
+＠戈尔德鲁夫
+我来帮忙！[r]帮你，做面包！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+[wt 2.0]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+＠戈尔德鲁夫
+帮你，做面包！[r]我来帮忙！
+[k]
+
+？1：新所长……
+
+[charaFace B 6]
+
+＠戈尔德鲁夫
+……[r]……
+[k]
+
+？2：为什么要说两遍……？
+
+[charaFace B 18]
+
+＠戈尔德鲁夫
+我也……[r]不知道……！
+[k]
+
+？！
+
+[charaFace B 5]
+
+[bgm BGM_EVENT_63 0.1]
+＠戈尔德鲁夫
+哎哎，事已至此，总得拖个人下水。[r]你也来帮忙啦，[%1]！
+[k]
+
+？1：明白啦！
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠玉藻猫
+我去瞄了一眼厨房汪！[r]烤炉没有坏掉，还能做面包哦！
+[k]
+
+[charaFace C 1]
+＠玉藻猫
+加油吧，年轻人！[r]Don't sleep！　Don't stop！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+唔嗯！[wt 0.6][charaFace B 8][r]慢着，你刚才让我们别睡吧！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠凯妮斯
+哈哈哈哈哈那倒是不错！[r]如果有人敢中途睡着，就由我来砍掉脑袋吧！
+[k]
+
+[charaFace A 7]
+＠凯妮斯
+假如觉得这样也无妨，就来吧！[r]戈尔德鲁夫·穆吉克！　[%1]！
+[k]
+
+＠凯妮斯
+[line 3]来帮助我做面包吧！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_63 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+
+
+
+[fadein black 1.0]
+[wait fade]
+
+[se adm19]
+[effect bit_talk_valentine_brilliant_fs]
+[charaFadein G 0.4 0,-70]
+[wt 2.0]
+[seStop adm19 1.0]
+
+
+
+？1：完成啦！
+
+？！
+
+[effectStop bit_talk_valentine_brilliant_fs]
+
+[charaFadeout G 0.1]
+[wt 0.6]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+嗯，嗯！　这样就完成了！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth D 2]
+[charaDepth E 3]
+
+[se ad55]
+[seVolume ad55 0 0.3]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaFace C 1]
+[charaFadeinFSL C 0.4 -400,0]
+[charaMoveFSR C 400,0 1.2]
+
+＠卫宫
+唔，这是[line 3][wt 0.5][charaFadeout C 0.4][seStop ad55 0.4]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad55]
+[seVolume ad55 0 0.3]
+[charaTalk E]
+[charaFace C 1]
+[charaFadeinFSL C 0.4 400,0]
+[charaMoveFSR C -400,0 1.2]
+
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠布狄卡
+啊，烤得相当漂亮呢。[r]感觉不错！[charaFadeout C 0.4][seStop ad55 0.4]
+[k]
+
+[se ad55]
+[seVolume ad55 0 0.3]
+[charaFace C 1]
+[charaFadeinFSL C 0.4 -400,0]
+[charaMoveFSR C 400,0 1.2]
+＠布狄卡
+真不错，猫咪也心情愉快地到处乱跑！[wt 0.5][charaFadeout C 0.4][seStop ad55 0.4]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+虽然还没试吃……[r]嗯，我能看出来。我能看出来啊，各位。
+[k]
+
+[charaFace B 2]
+
+＠戈尔德鲁夫
+完美！　非常完美！[r]来吧，神灵凯妮斯，请现在务必试吃[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+[wt 1.2]
+[bgm BGM_EVENT_7 0.1]
+[charaFace A 13]
+＠凯妮斯
+[f large]怎么是牛角面包啦！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+[FFFFFF]？[-]
+[k]
+
+[charaFace B 0]
+
+＠戈尔德鲁夫
+是啊。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠凯妮斯
+这是毋庸置疑的……
+[k]
+
+[charaFace A 13]
+
+＠凯妮斯
+牛，牛角面包吧。
+[k]
+
+？1：是牛角面包啊。
+
+[charaFace A 8]
+
+＠凯妮斯
+嗯。
+[k]
+
+[charaFace A 9]
+
+＠凯妮斯
+确实，一看就知道了……哎……啊～。
+[k]
+
+＠凯妮斯
+原来如此，是这样啊。
+[k]
+
+？2：哎，难道说……弄错面包了……？
+
+[charaFace A 0]
+
+＠凯妮斯
+那当然是[line 3]
+[k]
+
+[charaFace A 9]
+
+＠凯妮斯
+哎，啊～。
+[k]
+
+[charaFace A 12]
+
+＠凯妮斯
+嗯嗯。[r]嗯嗯嗯，原来如此！
+[k]
+
+？！
+
+[charaFace A 1]
+
+＠凯妮斯
+哈哈哈。这么说来，我好像还没说吧！
+[k]
+
+＠凯妮斯
+[#不是牛角面包]！
+[k]
+
+[charaFace A 12]
+＠凯妮斯
+这未免太高级了……[r]或者说太软绵绵，或是太甜了……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+！？
+[k]
+
+[charaFace B 18]
+
+＠戈尔德鲁夫
+既高级又软绵绵还甜的有什么不好啦！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠凯妮斯
+别哭啦，别哭啦。[r]抱歉啦，大叔。不，不是这个意思。
+[k]
+
+＠凯妮斯
+应该说，太好吃了吧……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+还能这么挑刺吗！？
+[k]
+
+[messageOff]
+[charaShake B 0.05 3 3 0.5]
+[wt 1.0]
+
+[charaFace B 4]
+＠戈尔德鲁夫
+总，总之……[r]这样啊……
+[k]
+
+＠戈尔德鲁夫
+你想做的，并不是，牛角面包……
+[k]
+
+[charaFace B 18]
+
+＠戈尔德鲁夫
+啊，啊啊啊……[r]啊啊啊啊……怎么会这样……噢噢噢……
+[k]
+
+＠戈尔德鲁夫
+……[r]……
+[k]
+
+[charaFadeTime F 0.2 0.5]
+[charaFace B 13]
+
+＠戈尔德鲁夫
+（太[line 3]）
+[k]
+
+＠戈尔德鲁夫
+（太羞耻了～！）
+[k]
+
+＠戈尔德鲁夫
+（暴露了丢人的自信过剩～！）
+[k]
+
+＠戈尔德鲁夫
+（可悲的小丑……！）
+[k]
+
+[charaFace B 18]
+
+＠戈尔德鲁夫
+（不，坚持住，坚持住戈夫！[r]　和十二岁生日比起来，这种根本不算什么！）
+[k]
+
+＠戈尔德鲁夫
+（冷静、冷静、冷静。[r]　我是冷漠地制作面包的机器般存在……）
+[k]
+
+[messageOff]
+[charaFadeout F 0.2]
+[wt 1.0]
+
+[charaFace B 0]
+
+＠戈尔德鲁夫
+……………………我明白了。
+[k]
+
+[charaFace B 15]
+
+＠戈尔德鲁夫
+我居然会贸然断定。[r]那么，有必要从头开始搜集情报！
+[k]
+
+[charaFace B 16]
+＠戈尔德鲁夫
+神灵凯妮斯啊！[r]你想要的面包，是坚硬的面包，还是柔软的面包！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠凯妮斯
+唔？
+[k]
+
+[charaFace A 16]
+
+＠凯妮斯
+唔～……这个，嘛……[line 3]
+[k]
+
+＠凯妮斯
+[#是哪种呢]？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+……[r]……
+[k]
+
+[charaFadeTime F 0.2 0.5]
+[charaFace B 8]
+
+＠戈尔德鲁夫
+（这也太模棱两可了吧！）
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_7 1.0 0.4]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_7 1.0 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+呼，[charaMoveReturn B 0,-7 0.6][wt 0.6]哈。[charaMoveReturn B 0,-7 0.6][wt 0.6]
+[k]
+
+＠戈尔德鲁夫
+完全没有……[r]线索……
+[k]
+
+＠戈尔德鲁夫
+指标看来应该在神灵凯妮斯的心里……[r]也就是至少能说出感觉不是这个的程度……
+[k]
+
+＠戈尔德鲁夫
+简直就像要抓住云雾般虚无缥缈！
+[k]
+
+？1：但是，还是稍微前进了一步！
+
+[charaFace B 10]
+
+＠戈尔德鲁夫
+嗯。应该没错！
+[k]
+
+[charaFace B 16]
+
+＠戈尔德鲁夫
+至少我们已经前进到可以确定，[r]肯定不是什么精致面包这步了！
+[k]
+
+？2：那就让我们抓住云雾吧！
+
+[charaFace B 16]
+
+＠戈尔德鲁夫
+胜利！[r]掌握在我们的手中！
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠凯妮斯
+总之先烤烤看吧？[r]或许会碰巧烤出正确的答案～。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+唔～～～太随便了！
+[k]
+
+[charaFace B 10]
+＠戈尔德鲁夫
+但是，靠描述来搜集情报确实已经到了极限。[r]还是稍微动一下手吧。
+[k]
+
+[charaFace B 16]
+
+＠戈尔德鲁夫
+唔噢噢噢噢噢噢！[r]我们上，[%1]！
+[k]
+
+[messageOff]
+[fadeout white 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+[scene 10000]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 1.0]
+[bgm BGM_MAP_58 0.1]
+
+＠
+摸索着做面包[line 3]
+[k]
+
+＠
+我们想要做的，究竟是什么？
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+不知道。[r]什么都不知道。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+这，已经是一场战斗了。[r]是殊死搏斗。
+[k]
+
+＠
+日后，戈尔德鲁夫新所长将制作这个面包的苦难，[r]比喻成曾经在异闻带的决死之战。
+[k]
+
+＠
+也就是[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+『没有超级迦尔纳的与阿周那之战。』
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+或是，
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+『没有奎里努斯的与宙斯之战。』
+[k]
+
+＠
+诸如此类[line 3]
+[k]
+
+
+[messageOff]
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_58 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

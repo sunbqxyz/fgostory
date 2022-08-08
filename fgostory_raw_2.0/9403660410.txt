@@ -1,0 +1,623 @@
+
+
+
+＄94-03-66-04-1-0
+[soundStopAll]
+
+[charaSet A 4032000 1 莱妮丝]
+
+[charaSet B 1098166200 1 特里姆玛乌]
+[charaSet C 1098165400 1 带着面具的莎士比亚]
+[charaSet D 1098165300 1 M
+[charaSet E 6015001 1 暗杀者]
+[charaSet F 1002000 1 女王]
+[charaSet G 6015001 1 剪影用]
+[charaSet H 98015000 1 特效用]
+[charaSet I 98015000 1 特效用]
+
+[scene 73500]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_90 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+女王她们走了吗……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠特里姆玛乌
+『M』和莎士比亚被女王的士兵带走了。
+[k]
+
+？1：话说你有把握吗？
+？2：已经有线索了吗？
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+就算完全没有，[r]在当时那种情况下也得这么说。
+[k]
+
+[charaFace A 5]
+
+＠莱妮丝
+不过目前确实是没什么把握和线索。
+[k]
+
+＠莱妮丝
+总而言之，目前与这件事有关的有三个人。
+[k]
+
+＠莱妮丝
+那位女王大人。[charaFace F 0][charaPut F 260,0][charaFadeTime F 0.4 0.75]
+[k]
+
+[charaFadeout F 0.4]
+
+＠莱妮丝
+自称『M』的奇怪的五十大叔。[charaFace D 0][charaPut D -260,0][charaFadeTime D 0.4 0.75]
+[k]
+
+[charaFadeout D 0.4]
+
+＠莱妮丝
+还有莎士比亚。[charaFace C 0][charaPut C 260,0][charaFadeTime C 0.4 0.75]
+[k]
+
+[charaFadeout C 0.4]
+
+[charaFace A 0]
+
+＠莱妮丝
+但现在不是讨论这个问题的时候。[r]我们应该采取更单纯更有效的策略。
+[k]
+
+[bgmStop BGM_EVENT_90 0.5]
+
+[charaFace A 2]
+
+＠莱妮丝
+例如……那里！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ade285]
+[effect bit_talk_magicbullet]
+[wt 0.6]
+
+[se bac316]
+[flashin once 0.1 1.5 FFFFFFAA 00000000]
+[shake 0.05 3 2 1.0]
+[fowardEffect bit_talk_14]
+[wt 1.5]
+
+？1：诶？
+？2：钢琴的背后？
+
+？！
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+莫非是气息遮断的职阶技能？[r]看来是Assassin职阶的从者啊。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[charaFilter G silhouette 00000080]
+
+[charaTalk off]
+[charaDepth E 0]
+[charaDepth G 1]
+[charaFace G 0]
+
+[charaFadein G 0.7 1]
+[wt 1.5]
+
+[charaFace E 0]
+[charaFadein E 0 1]
+[wt 0.1]
+[charaFadeout G 0.7]
+[wt 0.8]
+
+[charaTalk on]
+
+＠暗杀者
+……你是怎么知道的？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠特里姆玛乌
+[#主人:Master]说四周的魔力有些奇怪，[r]于是便让我对各种要素再次进行了分析。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+没错。如果在女王面前把这件事公开的话，[r]事态可能会变得更加复杂，所以我一直没说。
+[k]
+
+＠莱妮丝
+不过你若是犯人的话，这个事件也未免太简单了吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠暗杀者
+事实并非如此，[r]但我并不想辩解。
+[k]
+
+[messageOff]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect E erasureReverse 1 0.3]
+[wt 0.4]
+[se ade187]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+站住！　可恶，从窗口逃走了！[r]快追，我的弟子！
+[k]
+
+？1：又是从窗口[line 2]！
+？！
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad59]
+[cameraMove 0.7 80,-60 1.2]
+[wt 0.3]
+
+[seStop ad59]
+
+[wt 0.4]
+
+[se ad7]
+[wipeout rectangleStripDownToUp 0.3 1.0]
+[wait wipe]
+
+[cameraHome 0.1]
+[wait camera]
+
+[charaDepth A 0]
+[charaDepth B 1]
+
+[scene 10000]
+[effect bit_talk_43h]
+[wt 0.1]
+
+[se ad75]
+[wt 1.5]
+
+[wipein rectangleStripUpToDown 0.3 1.0]
+[wait wipe]
+
+[wipeout rectangleStripDownToUp 0.3 1.0]
+[wait wipe]
+
+[effectStop bit_talk_43h]
+
+[charaSet C 6015001 1 卫宫演出用剪影]
+
+[charaSet D 6015001 1 卫宫演出用剪影]
+
+[scene 73200]
+[se ad77]
+[seStop ad77 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,15]
+
+[wipein rectangleStripUpToDown 0.3 1.0]
+[shake 0.05 0 3 0.9]
+
+[charaPut I 1]
+[charaEffect I bit_talk_impactlanding 0,-550]
+[cameraMove 0.3 0,0 1.0]
+[charaMove B 0,-20 0.3]
+[se ad222]
+[wait wipe]
+[wt 0.8]
+
+[charaFadeout B 0.1]
+[charaPut I 2000,2000]
+[wt 0.9]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.7]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect E erasureReverse 1 0.3]
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+可恶，太快了[line 2]！[r]特里姆玛乌，不要让他跑了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠特里姆玛乌
+明白。[r]战斗功能启动。
+[k]
+
+[messageOff]
+[se ad386]
+[fowardEffect bit_talk_attack_buf]
+
+[wt 2.0]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect B erasureReverse 1 0.3]
+[wt 0.7]
+
+[wipeout rectangleStripLeftToRight 0.3 1.0]
+[wait wipe]
+
+[wipein rectangleStripRightToLeft 0.3 1.0]
+[wait wipe]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 80,0]
+[charaMove E 1 0.2]
+[wt 0.4]
+[seStop ad671 0.5]
+
+＠暗杀者
+真是各方面都很优秀的使魔呢。[r]根本不像那些半吊子的礼装。既然如此[line 2]
+[k]
+
+[messageOff]
+
+[charaTalk depthOff]
+
+[charaDepth E 3]
+[charaDepth C 2]
+[charaDepth D 1]
+
+[charaPut C 50,0]
+[charaPut D -50,0]
+
+[se ad681]
+[wt 0.2]
+[charaPut H 1]
+[charaShake E 0.05 6 0 0.6]
+[charaFadeTime C 0.2 0.6]
+[wt 0.1]
+[charaFadeTime D 0.2 0.6]
+[wt 0.1]
+[charaFadeout C 0.2]
+[wt 0.1]
+[charaFadeout D 0.2]
+
+[se bac52]
+[effect bit_talk_Slash_white_01_L]
+[wt 0.1]
+[effect bit_talk_Slash_white_01]
+[wt 0.1]
+
+[charaMove E 0,15 0.1]
+[charaMoveScale E 1.1 0.1]
+[charaFadeout E 0.2]
+[wt 0.2]
+
+[charaScale E 1.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+速度竟然又变快了[line 2]！
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[fowardEffect bit_talk_kengekiall02]
+[se ad170]
+[wt 0.2]
+[se ad32]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.05 3 3 0.4]
+[wt 0.7]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 -80,0]
+[charaMove A -20,0 0.2]
+[charaShake A 0.05 2 1 0.5]
+[wt 0.2]
+[charaMove A 1 0.2]
+[wt 0.4]
+[seStop ad671 0.5]
+
+＠莱妮丝
+没想到他在几乎无法看清的高速战斗中，[r]竟然还能使用遮蔽气息与隐蔽魔术的组合技。
+[k]
+
+＠莱妮丝
+可恶，靠我和特里姆两个人才勉强抵挡住他。[r]连让你使用召唤魔术的机会都没有[line 2]！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se bac56]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠暗杀者
+就是现在。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠特里姆玛乌
+[#主人:Master]！
+[k]
+
+[messageOff]
+
+[charaTalk off]
+
+[se ad7]
+[charaMove B 50,0 0.3]
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wt 0.2]
+[se ad563]
+[wt 0.1]
+
+[charaFace B 4]
+[charaFadein B 0.1 -256,0]
+[charaMove B -150,0 0.2]
+
+[wt 0.2]
+
+[se ad618]
+[fowardEffect bit_talk_13 -200,0]
+[charaShake B 0.05 4 4 0.4]
+[wt 0.1]
+[fowardEffect bit_talk_14 -100,0]
+[wt 0.9]
+
+[se ad178]
+[charaSpecialEffect B erasure 1 0.7]
+[wt 1.4]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+喂喂，从者怎么还能用枪啊。[r]要是特里姆不在的话，我的[#灵核:心脏]就要被击中了。
+[k]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaFace A 0]
+
+＠莱妮丝
+……啊，没办法了。
+[k]
+
+＠莱妮丝
+这根本就是糟蹋魔力嘛。[r]司马懿大人对此也很厌恶，不到万不得已我实在不想这么做。
+[k]
+
+[messageOff]
+
+[bgm BGM_EVENT_63 0.1]
+
+[se ad39]
+[charaEffect A bit_talk_36]
+
+[wt 1.5]
+[charaFace A 8]
+
+＠莱妮丝
+浑沌凿七窍。英杰遭毒妇。无不落之日，亦无不沉之月。[r]敬请见证吾之策吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[se bac56]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠暗杀者
+[line 2]宝具！　休想！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut A 1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+『[#混元一阵:不语之阵]』[line 2]！
+[k]
+
+[messageOff]
+
+[se ad29]
+[flashin once 0.1 1.0 FFFFFFAF FFFFFF00]
+[charaEffectStop A bit_talk_36]
+[wt 1.2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad170]
+[charaEffect E bit_talk_14]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaShake E 0.05 2 1 0.3]
+[wt 0.8]
+
+＠暗杀者
+什么[line 2]？！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+我的宝具有些特殊。[r]因为它并不具有特定的形态。
+[k]
+
+[charaFace A 0]
+
+＠莱妮丝
+然而其中出现的虚幻的太阳与月亮，[r]却能击溃对手的优势、暴露对手的弱点。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad61]
+[charaEffect E bit_talk_restraint]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaShake E 0.05 2 1 0.3]
+[wt 0.8]
+[charaMove E 0,-10 0.2]
+[se ad54]
+
+＠暗杀者
+呃……身体………！
+[k]
+
+？1：对方的状态[line 2]！
+？2：动作突然变迟缓了[line 2]！
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+没错，就是这种效果。[r]用来对付依赖强力技能和宝具的从者，可是很有效的哦？
+[k]
+
+[charaFace A 2]
+
+＠莱妮丝
+听好了，我的弟子！[r]让这家伙把知道的都招出来！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_63 0.5]
+[wait fade]
+[soundStopAll]
+[end]

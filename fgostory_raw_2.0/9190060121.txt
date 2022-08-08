@@ -1,0 +1,1346 @@
+
+
+＄91-90-06-01-2-1
+
+[soundStopAll]
+
+[charaSet A 9006002 1 祖政]
+[charaSet B 98104300 1 怨灵]
+[charaSet C 98001000 1 玛修]
+[charaSet D 1098158200 1 希翁]
+[charaSet E 1098158210 1 希翁抬手]
+[charaSet F 1098124500 1 达·芬奇]
+[charaSet G 9005001 1 福尔摩斯]
+[charaSet H 1098196600 1 祖政(剪影)]
+[charaSet I 98002000 1 芙芙]
+
+[charaSet J 8001000 1 dummy特效1]
+[imageSet K back10001 1]
+
+[charaScale K 1.01]
+[charaFilter K silhouette FFFFFFFF]
+
+[charaDepth H 1]
+[charaDepth J 5]
+[charaDepth D 10]
+
+
+[scene 10000]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se bac124]
+[seVolume bac124 0 0.6]
+[effect bit_talk_kengekiall04]
+[wt 0.2]
+[se bac90]
+[seVolume bac90 0 0.6]
+[wt 0.3]
+[se bac89]
+[seVolume bac89 0 0.8]
+[se bac124]
+[seVolume bac124 0 0.8]
+[wt 0.4]
+
+[se bac124]
+[se bac395]
+[effect bit_talk_gram_slash_04]
+[wt 0.2]
+
+[effectDestroy bit_talk_kengekiall04]
+
+[fadeout white 0.2]
+[wait fade]
+
+[scene 66000]
+
+[charaTalk B]
+[charaFace B 0]
+[charaScale B 1.05]
+[charaFadein B 0.1 1]
+
+[fadein white 0.2]
+[wait fade]
+
+[effectDestroy bit_talk_gram_slash_04]
+
+[se bac417]
+[fowardEffect bit_bolg_03b 15,0]
+[wt 0.2]
+[charaPut J 0,0]
+[charaEffect J bit_talk_06b2]
+[charaMoveScale B 1.0 0.2]
+[charaShake B 0.04 4 3 0.8]
+[wt 0.6]
+
+[fowardEffectDestroy bit_bolg_03b]
+
+＠怨灵
+咕啊啊啊啊……[r]为何要妨碍朕？　为何要摘除朕？
+[k]
+
+＠怨灵
+本以为终于能在这次见到永远的秦……[r]找到太平统治的……征兆了……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 2000,2000]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠祖政
+对没能克服死亡这个宿命的朕来说，[r]这种忠告或许毫无意义。
+[k]
+
+＠祖政
+但不用愤慨，不用哀叹。
+[k]
+
+＠祖政
+就算你不像这样独自一人背负，[r]人理这种存在或许也[#意外有解决办法哦]？
+[k]
+
+[charaPut J 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠怨灵
+怎么可能……只有朕……
+[k]
+
+＠怨灵
+只有起点兼终点的唯一帝王……[r]才能承担世界的命运……
+[k]
+
+[messageOff]
+[se ad42]
+[charaSpecialEffect B enemyErasure 0,0 1.5]
+[wt 0.7]
+
+[wait charaSpecialEffect B]
+[bgmStop BGM_EVENT_80 1.2]
+[charaFadeout B 0.1]
+[wt 0.9]
+
+[charaEffectStop J bit_talk_06b2]
+[wt 0.6]
+
+[charaEffectDestroy J bit_talk_06b2]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.3 1]
+[wt 0.2]
+
+
+＠祖政
+啊～麻烦死了。[bgm BGM_EVENT_77 0.1][r]简直就像在面对黑历史小笔记的朗读大会。
+[k]
+
+[charaFace A 0]
+
+＠祖政
+好了，该做的都做完了。赶快回去吧。
+[k]
+
+＠祖政
+这种肮脏宫殿的空气朕一秒都不想忍受。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+
+＠希翁
+该做的都做完了……[r]是吗。您的意思是这就是全部了吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠祖政
+是啊？[r]还有什么其他值得期待的事吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+
+＠希翁
+……不。您非常合理地消除了特异点。[r]作为一名从者做得无可挑剔。
+[k]
+
+[charaFace D 12]
+
+＠希翁
+[%1]也辛苦了。[r]好了，返回吧。
+[k]
+
+[messageOff]
+[wt 0.2]
+[charaFadeout D 0.4]
+[wt 0.6]
+
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_77 1.2]
+[wait fade]
+
+[scene 10000]
+[wt 0.5]
+
+[fadein black 0.1]
+[wait fade]
+
+[effect bit_talk_07_02]
+[se ad12]
+[wt 4.0]
+
+[fadeout white 1.0]
+[wait fade]
+[wt 2.0]
+
+[scene 66400]
+
+[fadein white 1.2]
+[wait fade]
+[wt 0.5]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.3 1]
+[wt 0.2]
+
+[bgm BGM_EVENT_94 0.1]
+
+＠达·芬奇
+嗯嗯，这次也非常完美呢。干得漂亮！
+[k]
+
+[charaFace F 0]
+
+＠达·芬奇
+好了，先去冲个澡好好休息吧。[r]报告可以到时候再说。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠玛修
+哎？　和平时的手续不一样啊……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠达·芬奇
+因为我这儿也有些事。[r]还需要调整器材。
+[k]
+
+[charaFace F 9]
+
+＠达·芬奇
+啊，祖政稍微留一下。[r]有件事希望你能帮忙。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠祖政
+唔？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.4]
+
+？1：那我就不客气了。
+？2：先告辞了。
+？！
+
+[messageOff]
+[wt 0.6]
+[se ade74]
+[wipeout rightToLeft 1.6 1.0]
+[bgmStop BGM_EVENT_94 1.6]
+[wait wipe]
+
+[seStop ade74 0.2]
+
+[se ad8]
+[wt 1.1]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[wipein leftToRight 1.0 1.0]
+[wait wipe]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 66400]
+[wipeFilter cinema 0.5 0]
+[wt 0.1]
+
+[se ad8]
+[wt 1.0]
+
+[fadein black 1.6]
+[wait fade]
+[se ade74]
+[wt 1.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 40,-50]
+[charaMove G 0,-50 0.4]
+[wt 0.5]
+
+[seStop ade74 0.2]
+[wt 0.4]
+＠福尔摩斯
+好了，至此，事情的经过已经全部公开了。[r]接下来只剩解谜了。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠祖政
+哎哟，让[%1]OUT而侦探IN什么的，[r]这氛围不太妙呢。
+[k]
+
+[charaFace A 1]
+＠祖政
+啊，这么说来，朕和书文约好要一起喝茶呢。[r]哎呀，差点忘了。那就这样，朕先……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 0,-50]
+
+＠福尔摩斯
+不要再撒这种一目了然的谎了。[r]总之先留下来陪我们聊聊。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 24]
+[charaFadein F 0.1 0,-50]
+
+＠达·芬奇
+我们观测过大大小小各式各样的特异点。
+[k]
+
+＠达·芬奇
+加上从以前的我那里继承下来的数据，
+[k]
+
+＠达·芬奇
+样本已经多到足以让我们[r]根据倾向进行分类了。
+[k]
+
+[charaFace F 8]
+
+＠达·芬奇
+所以我可以断定。[r]这次的特异点并不是自然发生的。
+[k]
+
+＠达·芬奇
+符合外部干涉刻意造成的模式。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+＠祖政
+难道你们怀疑是朕干的？[wt 0.65][charaFace A 1][r]哎呀呀，你们也太高估朕了。
+[k]
+
+＠祖政
+作为从者在这里现界的样子确实是[r]实现了身为至高生命体的真人躯体的状态。
+[k]
+
+＠祖政
+但反过来说，这只是达到了个体的极致，毫无身外之物。[r]远远不及曾支配了地球全域的机械化圣躯的权能。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 0,-50]
+
+＠达·芬奇
+感谢你油嘴滑舌竭尽全力的长篇辩解。
+[k]
+
+[charaFace F 0]
+＠达·芬奇
+既然你现在作为从者存在，
+[k]
+
+＠达·芬奇
+[%1]就还可能用令咒控制住你。
+[k]
+
+[charaFace F 25]
+
+＠达·芬奇
+但如果你企图夺回更多力量……甚至达到你在异闻带[r]发挥的水准的话，问题就另当别论了。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠祖政
+这个嘛，朕就姑且当这份警戒是基于敬畏所致好了。
+[k]
+
+＠祖政
+难道你认为现在的朕有能力创造特异点吗？
+[k]
+
+＠祖政
+再说了，所谓的人为特异点究竟是什么？[r]存在这种可能性吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 0,-50]
+
+＠达·芬奇
+理论上可能。但前提是需要使用灵子转移，[r]或是与之相等同的手段。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠祖政
+你的意思是，有人在非法利用这里的设备？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 0,-50]
+＠希翁
+如果你想嘲讽警备水准太低的话，请恕我否定。
+[k]
+
+[charaFace D 5]
+
+＠希翁
+我好歹也是黑客，不会说有什么『天衣无缝的安保体制』[r]这种胡话，但如果仅限[#新:Novum]·迦勒底的话，
+[k]
+
+
+＠希翁
+我可以断定不可能做到[r]不留丝毫[#痕迹:履历]使用系统这种事。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠福尔摩斯
+倒不如说更需要探讨的，或许是[r]除我们以外的人是否存在灵子转移的可能性。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠祖政
+聊可能性的话，这问题就没完没了了吧。[r]这甚至可能是未来极为普遍的技术哦？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+＠福尔摩斯
+就算不依托这种极端推论，也可以先通过[r]有谁可能实现的这个思路推断嫌疑犯哦。
+[k]
+
+
+＠福尔摩斯
+获得阿尼姆斯菲亚理论[r]与作为软件的拉普拉斯。
+[k]
+
+＠福尔摩斯
+同时具备能与特里斯墨吉斯忒斯匹敌的演算手段……[r]只要能满足这些条件，基本就可以定罪了。
+[k]
+
+[messageOff]
+[fadeout black 1.6]
+[bgm BGM_EVENT_70 1.6 0.6]
+[wait fade]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaDepth K 1]
+[charaDepth H 5]
+[charaDepth G 3]
+[charaDepth D 10]
+[charaDepth E 10]
+
+[scene 65500]
+[wipeFilter cinema 0.5 0]
+[wt 0.1]
+
+[charaFadein K 0.1 0,-200]
+[charaFadeTime K 0.1 0.2]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.4]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.3 0,-50]
+[wt 0.2]
+＠达·芬奇
+这件事得要怪我太大意了，[bgm BGM_EVENT_70 1.2 1.0][r]在进入中国异闻带时，为了以防万一，
+[k]
+
+＠达·芬奇
+我将从南极迦勒底带出来的备份数据[r]全都存储在Shadow Border上了。
+[k]
+
+[charaFace F 17]
+＠达·芬奇
+当时压根没有想到整辆车[r]都被虏获并解析的可能性。
+[k]
+
+[messageOff]
+[charaFadeout F 0.8]
+[scene 66300 1.2]
+[wt 1.5]
+
+[charaTalk off]
+
+[charaFace G 0]
+[charaFace D 5]
+[charaFadein D 0.3 -300,-50]
+[charaFadein G 0.3 300,-50]
+[wt 0.6]
+[charaTalk on]
+[charaTalk D]
+
+＠希翁
+而你在当地的另一个形态，[r]就是支配统治地球全域的超级计算机。
+[k]
+
+[charaFace D 15]
+
+＠希翁
+我对没能亲眼拜见深感遗憾。[r]另外，对没机会了解[#之后发生的事]也很遗憾。
+[k]
+
+＠福尔摩斯
+没错。在我们离去后，[r]外部可观测到的中国异闻带迅速消灭。
+[k]
+
+[charaFace G 5]
+＠福尔摩斯
+但我们无法知晓内部的时间经过。[r]如果并非急剧崩溃。
+[k]
+
+＠福尔摩斯
+而是还留有能够完全解析从Shadow Border[r]得来数据的充足时间的话……
+[k]
+
+[messageOff]
+[charaFadeout D 0.3]
+[charaFadeout G 0.3]
+[wt 0.2]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[scene 66000 0.8]
+
+[charaFace H 0]
+[charaFadein H 0.7 200,-50]
+[wt 1.6]
+[charaPut J 200,0]
+
+[charaFace D 18]
+[charaFadein D 0.4 -100,-50]
+[wt 0.7]
+
+＠希翁
+而最不可动摇的证据，[r]就是在特异点失控的另一个祖政的发言。
+[k]
+
+＠希翁
+竟能一眼就看穿你是剪定事象的存在。[r]当时你是打算想办法糊弄过去的，
+[k]
+
+＠希翁
+但从理论上是不可能的。假如存在唯一的可能性……
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[scene 66400]
+
+[fadein black 1.6]
+[wait fade]
+[wt 0.4]
+
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.3 0,-50]
+[wt 0.2]
+＠福尔摩斯
+就是那个特异点的祖政已经与[r]作为剪定事象的你接触过的情况，对吧。
+[k]
+
+＠福尔摩斯
+不是身为迦勒底从者的祖政，
+[k]
+
+＠福尔摩斯
+而是身为异闻带之王的祖政，[r]才是配置了那个特异点的幕后黑手……
+[k]
+
+[charaFace G 7]
+
+＠福尔摩斯
+我没说错吧？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠祖政
+呵呵……但作为剪定事象确定破灭之后，[r]朕就算实现区区灵子转移又有什么用处？
+[k]
+
+[charaFace A 0]
+＠祖政
+灵子转移是无法篡改历史的。[r]最多只能创造出时空沉淀物的特异点吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 24]
+[charaFadein F 0.1 0,-50]
+
+＠达·芬奇
+是啊。[r]剪定事象的结局是无法改变的。
+[k]
+
+[charaFace F 25]
+＠达·芬奇
+但只要能回溯过去，无论是什么样的剪定事象，[r]过去都肯定存在顺着编撰事象前进的时期。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+＠福尔摩斯
+你执着于刚才那个咸阳特异点的理由就是答案。
+[k]
+
+＠福尔摩斯
+异闻带的祖政阶段性地设置了复数特异点，[r]你想测试一下其中的哪个会被迦勒底探测到吧？
+[k]
+
+[charaFace G 5]
+
+＠福尔摩斯
+确定这点，才是身为共犯的[r]『从者祖政』的任务……
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+[wt 0.9]
+[charaFaceFade A 1 0.4]
+[wt 0.6]
+
+
+＠祖政
+……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 24]
+[charaFadein F 0.1 0,-50]
+
+＠达·芬奇
+从异闻带那边进行设定，[r]如果存在泛人类史可以观测的特异点反应，
+[k]
+
+＠达·芬奇
+那就是共通的过去，是剪定与编撰的分歧点。
+[k]
+
+＠达·芬奇
+而设定在比那点更为过去的特异点，[r]可能成为干涉泛人类史的手段。
+[k]
+
+＠达·芬奇
+就像过去魔术王盖提亚设下的陷阱一样。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 0,-50]
+＠希翁
+我原本怀疑你会在刚才的灵子转移中动什么手脚，[r]才会提出要同行，但你丝毫没有类似的举动。
+[k]
+
+＠希翁
+也就是说，可以认为这并非你真正的目的。
+[k]
+
+[charaFace D 5]
+
+＠希翁
+你的目的是确认在设下的几个陷阱中……
+[k]
+
+＠希翁
+究竟发动哪个才能攻略这边的人理。
+[k]
+
+＠希翁
+甚至可以说你就是为此[r]才回应了迦勒底的英灵召唤吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠祖政
+啊啊，真是的。[r]所以说习惯争斗的人类真是一点都不可爱。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 0,-50]
+
+＠达·芬奇
+这话我实在不想当着[%1]的面说。
+[k]
+
+＠达·芬奇
+至少得由我们先确认你的真正意图才行。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+＠祖政
+你们啊。如果想要弹劾朕，
+[k]
+
+＠祖政
+当然必须让具有令咒的[%1]在场才行吧。
+[k]
+
+＠祖政
+与敏锐的推理比起来，你们的应对方法太天真了。[r]朕之所以不放心泛人类史的未来，就是因为这个哦。
+[k]
+
+[charaFace A 0]
+
+＠祖政
+不管怎么说，[r]你们都应该反复郑重警告[%1]。
+[k]
+
+＠祖政
+倘若这泛人类史人理是令人无法置之不理的丑恶之物，[r]朕就会再次振兴大秦。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 2.4]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 0,-50]
+
+＠达·芬奇
+那么……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠祖政
+哎呀，再等3秒再生气也不迟。[r]朕还没说自己会付诸实施呢。
+[k]
+
+＠祖政
+朕压根没打算妨碍[%1]。
+[k]
+
+[charaFace A 0]
+
+＠祖政
+朕是为了见证[&他:她]的奋斗才会移步泛人类史，[r]倘若[&他:她]深陷苦境，朕也愿意全力援助。
+[k]
+
+＠祖政
+因为禅让已经完成。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 0,-50]
+＠福尔摩斯
+……那你为何要做这种可疑的行为？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠祖政
+朕相信未来的希望应该由[bgm BGM_EVENT_95 0.1][r][%1]他们这些『人民』亲手去开辟。
+[k]
+
+[charaFace A 4]
+
+＠祖政
+但是，相信与信任不是一码事。[r]毕竟朕是为政者，不会下赌注。
+[k]
+
+[charaFace A 0]
+＠祖政
+面对人理漂白这种未曾有的危机，
+[k]
+
+＠祖政
+倘若身为民众兼人类的[%1]屈服了的话……
+[k]
+
+＠祖政
+届时朕将再次背负起人理。[r]『由高贵之人决定的人理』。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 32]
+[charaFadein F 0.1 0,-50]
+
+＠达·芬奇
+………………
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 0,-50]
+
+＠希翁
+[line 3]不。以失败为前提缔结契约。[r]称之为背叛也无可厚非吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+＠祖政
+有些英灵确实是秉着友谊与信条[r]侍奉[%1]的。[wt 0.7][charaFace A 0]但是。
+[k]
+
+＠祖政
+『善良的存在』无法拯救的世界[r]还不如毁灭为好[line 3]
+[k]
+
+＠祖政
+朕和会说这种话的疯子可不一样。
+[k]
+
+[charaFace A 5]
+＠祖政
+朕与[%1]的羁绊是义。[r]然而打倒『异星之神』乃是大义。
+[k]
+
+[charaFace A 0]
+＠祖政
+当必须将两者放到天秤上衡量的那刻到来时……朕会基于[r]裁定者的责任，毫不犹豫不犯任何错误地选择更重要的那边。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 0,-50]
+＠希翁
+……你依然坚持这是为了[r]抵抗人理漂白而采取的手段吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠祖政
+这是所谓的保险。
+[k]
+
+[charaFace A 5]
+
+＠祖政
+朕是统治人世的天子。[r]断不可允许非人的存在侵略地球。
+[k]
+
+[charaFace A 0]
+＠祖政
+当[%1]完美战胜『异星之神』的那天，
+[k]
+
+＠祖政
+朕会将自己的谨慎当做杞人忧天置之脑后。
+[k]
+
+＠祖政
+通过废弃所有特异点，来为『人民』的胜利庆祝。[r]朕本就已经做好了相关的准备。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+[wt 0.5]
+[charaMove D 0,-49 0.4]
+[wt 0.4]
+[charaMoveReturn D 0,-53 0.6]
+[wt 0.65]
+[charaMove D 0,-50 0.2]
+[wt 0.4]
+[charaFaceFade D 12 0.4]
+[wt 0.7]
+
+＠希翁
+真是的。
+[k]
+
+＠希翁
+就在刚才见识过野心过大以至于坠入妄执的[r]另一个祖政之后，这些话的确有些难以置信。
+[k]
+
+[charaFace D 14]
+
+＠希翁
+（不过那种也不能算是祖政陛下呢。）
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+＠祖政
+所以啊，朕已经再三重申了吧。[r]现在的朕是自那之后克服了死亡，存活了2200年的存在。
+[k]
+
+[charaFace A 0]
+
+＠祖政
+一旦改变视角，烦恼也会消失。[r]可不能小看登仙的境地哦。
+[k]
+
+＠祖政
+……而且，这保险是否真的精妙到足以让[r]当时的朕深思熟虑，至今朕仍怀有一丝不安。
+[k]
+
+[charaFace A 4]
+
+＠祖政
+首先灵子转移的构造实在是有些……[r]让人看不惯。其中隐约包含着可疑邪法的气息。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 23]
+[charaFadein F 0.1 0,-50]
+
+＠达·芬奇
+[FFFFFF]？　邪法是指哪方面？[-]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+＠祖政
+再说了，既然会被你们如此轻易看穿……[r]那其他[#隐匿者:Crypter]们没道理做不到相同的事。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠福尔摩斯
+我认为这种谨慎值得评价。[r]看来你并没有打算轻举妄动呢。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+＠祖政
+假如[%1]和你们能接受朕的方针，
+[k]
+
+＠祖政
+那一切就都能按万无一失的布阵安排了啊～。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 0,-50]
+
+＠达·芬奇
+啊哈哈。这是不可能的，放弃吧。
+[k]
+
+[charaFace F 0]
+
+＠达·芬奇
+无论理由为何，[r]我们都不会接受以牺牲为前提的作战。
+[k]
+
+＠达·芬奇
+至少在[#新:Novum]·迦勒底是这样。[r]若非如此，也就没有胜利的意义了。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠福尔摩斯
+[line 3]唔。[r]祖政陛下的想法中的确有一些可取之处……
+[k]
+
+＠福尔摩斯
+但目前最现实的问题，[r]是我们必须优先砍伐剩余的空想树才行。
+[k]
+
+[charaFace G 7]
+＠福尔摩斯
+只要『异星之神』这个侵略者还是我们共同的敌人，[r]同盟关系就应该能继续维持。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+＠达·芬奇
+嗯，看来至少可以确定[r]你对[%1]并未包藏祸心。
+[k]
+
+[charaFace F 5]
+＠达·芬奇
+但是祖政。千万不要忘记，[r]我们会像这样随时关注你的动向。
+[k]
+
+＠达·芬奇
+如果你胆敢做出让那孩子伤心的事，[r]届时我们可不会手下留情哦？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠祖政
+这是朕要说的话，英灵。[wt 0.6][charaFace A 2][r]那个人才是人世今后的可能性。
+[k]
+
+＠祖政
+无论付出什么样的牺牲，都要让[&他:她]获得胜利。[r]如果你们不想让朕再次奋起的话。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.8]
+[bgmStop BGM_EVENT_95 1.8]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[wipeOff]
+
+[scene 66800]
+[cameraMove 0.1 0,0 1.05]
+
+[wt 0.5]
+
+[fadein black 1.8]
+[wait fade]
+[wt 0.2]
+
+[bgm BGM_EVENT_77 0.1]
+[wt 0.4]
+
+
+
+[masterBranch _Male _Female]
+
+
+[label _Male]
+
+[cameraMove 0.1 0,0 1.02]
+[wt 0.4]
+[se adm62]
+[cameraMove 0.1 0,0 1.04]
+[shake 0.04 4 5 0.5]
+[wt 0.5]
+[cameraMove 0.1 0,0 1.02]
+[wt 0.3]
+
+[branch _branchEnd]
+
+
+[label _Female]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.4]
+[se adm63]
+[cameraMove 0.1 0,0 1.015]
+[shake 0.04 1 1 0.5]
+[wt 0.5]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.3]
+
+[branch _branchEnd]
+
+[label _branchEnd]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 0.15]
+
+＠芙芙
+芙？[charaMoveReturn I 0,10 0.2][wt 0.2]　芙呜！[charaMoveReturn I 0,15 0.2][wt 0.2]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠玛修
+没……没事吧，前辈？[wt 0.55][charaFace C 12][r]难道是感冒了？
+[k]
+
+
+？1：不，应该没事。
+？2：就是莫名感到背脊一阵发凉……
+？！
+
+[messageOff]
+[se ade74]
+[seVolume ade74 0 0.5]
+[charaMoveScale C 1.3 0.9]
+[charaMove C 0,50 0.9]
+[wt 1.2]
+[seStop ade74 0.2]
+
+[se ad183]
+[seVolume ad183 0 0.3]
+[charaFace C 8]
+[charaMove C 0,40 0.4]
+[wt 1.4]
+[charaMove C 0,50 0.4]
+[wt 0.4]
+
+[charaFace C 0]
+[charaMove C 0,0 0.6]
+[charaMoveScale C 1.0 0.6]
+[wt 0.6]
+
+＠玛修
+……嗯。看来没有发烧呢。[wt 0.65][charaFace C 13][r]或许是有人正在谈论前辈吧。
+[k]
+
+
+？1：但愿不是什么奇怪的话题……
+？2：唔……感觉双肩有些沉重呢……
+
+？！
+
+
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

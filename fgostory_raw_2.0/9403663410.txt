@@ -1,0 +1,452 @@
+
+
+
+
+＄94-03-66-34-1-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 8001002 1 玛修]
+[charaSet B 2020001 1 伊什塔尔]
+[charaSet C 98003000 1 Dr.罗曼]
+[charaSet D 4018001 1 魁札尔・科亚特尔]
+[charaSet E 3006001 1 弁庆]
+[charaSet F 5019001 1 埃尔梅罗Ⅱ世]
+[charaSet G 98107400 1 牛若丸]
+[charaSet H 6015001 1 凯利]
+
+
+
+[scene 20735]
+
+[se ad31]
+[wt 0.1]
+[seStop ad31]
+[wt 0.1]
+
+[se ad31]
+[wt 0.2]
+[seStop ad31]
+[wt 0.2]
+
+[se ad31]
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+
+[seStop ad31 1.5]
+[scene 20733 1.5]
+[wt 2.5]
+
+[bgm BGM_EVENT_24 0.1]
+[se ad2]
+[seVolume ad2 0.1 0.2]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠玛修
+成功了！　终于接触提亚马特神了！[r]进入可执行作战的区域了，御主！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠伊什塔尔
+咻，终于做到啦，[%1]！
+[k]
+
+＠伊什塔尔
+那个叫混沌啥的污染也不断在增强，[r]还好不用继续接近下去了！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.6]
+
+？1：这是在第七特异点……
+？2：追赶提亚马特的时候……
+
+？！
+
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 5]
+
+＠Dr.罗曼
+（与BeastⅡ保持充足距离的情况下，灵基污染依然那么严重……[r]　要是进入直接战斗的话……）
+[k]
+
+＠Dr.罗曼
+不，当然不会演变成那种最糟的情况！[r]魁札尔·科亚特尔，准备好了吗！？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[messageOff]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠魁札尔・科亚特尔
+嗯，包在我身上吧。随时都能开始哦。[r][%1]提供的魔力也十分充足。
+[k]
+
+＠魁札尔・科亚特尔
+事已至此[line 3]
+[k]
+
+？1：趴下，玛修！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[messageOff]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[charaMove A 0,-512 0.2]
+[charaFadeout A 0.2]
+[effect bit_talk_37]
+
+[se bac93]
+[effect bit_talk_03]
+[wt 2.5]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.7 1]
+[wt 1.0]
+
+
+＠弁庆
+真可惜。[r]本打算先从玛修大人开始收拾的。
+[k]
+
+？1：弁庆？！
+？2：这里应该是牛若丸啊……
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠埃尔梅罗Ⅱ世
+难道这次的记忆被篡改了吗……[r]不过这对你来说几乎……
+[k]
+
+[messageOff]
+[wipeout openEye 0.8 0.5]
+[bgm BGM_EVENT_24 0.5 0.5]
+[seVolume ad2 0.5 0.1]
+[wait wipe]
+
+[charaFadeout F 0.1]
+
+[scene 10000]
+
+[wt 0.1]
+
+[wipein openEye 0.1 0.5]
+[wait wipe]
+
+[wipeFilter openEye 0.2 0.7]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 20733]
+
+[effect bit_sepia01]
+
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 1.4]
+[charaMove A 0,-512 0.2]
+[charaFadeout A 0.2]
+[effect bit_talk_37]
+
+[se bac93]
+[effect bit_talk_03]
+[wt 2.5]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠牛若丸
+真可惜。本打算先从碍眼的护卫开始收拾。[r]我又太急功近利了吗。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 5]
+
+＠Dr.罗曼
+牛若丸……！　原来如此，在混沌之潮范围内的话，[r]根本无法拆分反应进行观测……！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠玛修
+牛若丸小姐……！　您又打算妨碍我们吗！？[r]你真的全身心都成为提亚马特神的仆从了吗……！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+我应该早就这么宣称过了吧？[r]母亲大人的支配真是舒服。可以完全不用思考。
+[k]
+
+＠牛若丸
+只需专注于报仇泄恨上。[r]只有杀死你们才是令我垂涎三尺的愉悦。
+[k]
+
+＠牛若丸
+残存于这片土地上的人类已经屈指可数了。[r]我也斩杀了不少。血肉的感触已经够多了。
+[k]
+
+[messageOff]
+
+[fadeout white 1.5]
+[wait fade]
+
+[charaFadeout G 0.1]
+[effectStop bit_sepia01]
+
+[scene 10000]
+[wt 0.1]
+[wipeOff]
+
+[fadein white 1.0]
+[bgm BGM_EVENT_24 1.0 1.0]
+[seVolume ad2 1.0 0.2]
+[wait fade]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[charaSet D 3006001 1 弁庆2]
+[charaSet G 3006001 1 弁庆3]
+[charaDepth D 1]
+[charaDepth G 2]
+
+[scene 20733]
+
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 2]
+
+[wt 1.5]
+
+[wipein openEye 1.0 0.5]
+[wait wipe]
+[wt 0.4]
+
+＠Dr.罗曼
+不行啊，[%1]！
+[k]
+
+＠Dr.罗曼
+虽然看起来还是武藏坊弁庆，[r]但其实内部已经完全被[#混沌之潮:Chaos Tide]蚕食殆尽了！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠玛修
+弁庆先生……！　难道你又想妨碍我们吗！？[r]难道你的身心已经完全从属与提亚马特神了吗……！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠弁庆
+贫僧应该已经说过了吧。[r]被母亲支配才是乐土。受菩萨引导方能安宁。
+[k]
+
+＠弁庆
+贫僧的遗憾也好，后悔也罢，都已经从我的身心中消失了。[r]之后便只需要将你们带走就行了。
+[k]
+
+＠弁庆
+请饶恕吧。请认命吧。[r]请溺亡在我们的泥淖中吧。
+[k]
+
+＠弁庆
+当然，贫僧亦会陪伴左右。[r]来吧，请成为我们的乐土的一部分吧。
+[k]
+
+？1：怎么会……
+？2：也就是说存在这种可能性？
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠凯利
+这种可能性肯定是存在的吧。[r]这位僧侣代替了某人做了牺牲。
+[k]
+
+
+＠凯利
+没有任何牺牲就解决的话，你的旅程也未免太不温不火了吧？[r]考虑到再现记录的合理性，这种情况自然是可能存在的。
+[k]
+
+[messageOff]
+[se bac56]
+[wt 0.6]
+[se ad563]
+[wt 0.2]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.3]
+
+[se ad618]
+[fowardEffect bit_talk_13]
+[charaFace E 5]
+[charaShake E 0.05 4 4 0.4]
+[wt 0.2]
+[se ad442]
+[wt 0.2]
+
+[charaMove E 0,-50 0.3]
+[se ad144]
+[seVolume ad144 0 0.5]
+[charaFadeout E 0.4]
+[wt 1.5]
+
+[charaTalk off]
+[charaFace D 5]
+[charaFace G 5]
+
+[charaFadein D 0.4 0]
+[se ad199]
+[wt 0.3]
+[seStop ad199]
+[se ad54]
+[se ad442]
+[wt 0.3]
+
+[charaFadein G 0.4 2]
+[se ad199]
+[wt 0.3]
+[seStop ad199]
+[se ad54]
+[se ad442]
+[wt 2.0]
+
+？1：增殖！
+？！
+
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠伊什塔尔
+……嗯嗯。虽然他好像是你的熟人，但这家伙已经没救了哦。[r]他的体内已经变得乱七八糟了。
+[k]
+
+
+＠伊什塔尔
+这是自我增殖后的个体融合。[r]他将几百个自己进行了融合，但现在眼看就要从内部开始破裂了。
+[k]
+
+＠伊什塔尔
+……如果是这样的话，[r]我真不敢想象会从中蹦出什么怪物来。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠弁庆
+这已然注定。将要从我身体内流出来的[r]是对所有无私之人的救济。是对完美佛法的确立。
+[k]
+
+[messageOff]
+[wt 0.5]
+[charaFace E 2]
+
+＠弁庆
+因此，让我毫不后悔、毫无遗憾地将各位带走吧。[r][line 2]『里·五百罗汉补陀落渡海』！[se ad39][charaEffect E bit_talk_36]
+[k]
+
+
+
+
+[messageOff]
+[wt 1.5]
+
+[fadeout black 0.5]
+[seStop ad2 0.4]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

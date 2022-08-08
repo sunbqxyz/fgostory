@@ -1,0 +1,104 @@
+
+
+＄02-00-02-08-3-1
+[soundStopAll]
+[charaSet A 99502600 1 玛修]
+[charaSet B 98114300 1 阿斯托尔福]
+[charaSet C 98114400 1 迪昂]
+[charaSet D 98002000 1 芙芙]
+[charaSet H 98002000 1 通讯用]
+
+[se ad55]
+[seVolume ad55 0 0.4]
+[shake 0.05 0 1 0]
+
+[bgm BGM_EVENT_3 0.1]
+[scene 43000]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠芙芙
+芙芙！
+[k]
+
+[charaFadeout D 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+我正在寻找新的藏身地点，[r]总之脚不要停，继续跑！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠阿斯托尔福
+虽说总算是打赢了。[r]但对方整体上都非常顽强啊……
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠迪昂
+通过战斗，我发现了一件事。
+[k]
+
+＠迪昂
+刚才聚集在我们周围的市民[line 2]臣民。[r]她们恐怕是[#和酷吏相同的存在]。
+[k]
+
+？1：什么意思？
+？！
+
+[charaFace C 0]
+＠迪昂
+莫名觉得她们给人的印象与氛围有这种感觉。
+[k]
+
+＠迪昂
+根据从那些被我们打倒的酷吏身上感受到的东西而言，[r]似乎与臣民在根本上是相同的。
+[k]
+
+＠迪昂
+或者说，只有武装上的差距[line 2]
+[k]
+
+＠迪昂
+从这些女人中被选拔出来的，担负起了酷吏的职责，[r]我觉得仅此而已。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠阿斯托尔福
+也就是说，敌方的战斗力不只是酷吏。[r]和伊苏一样，整座城市都是潜在的威胁吧。
+[k]
+
+[charaFace B 1]
+＠阿斯托尔福
+但不管怎么说，我们还有刚才从处刑台上救下来的这个人。[r]得先找个安全的地方休息一下才行！
+[k]
+
+
+[messageOff]
+[seStop ad55 1.5]
+[bgmStop BGM_EVENT_3 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

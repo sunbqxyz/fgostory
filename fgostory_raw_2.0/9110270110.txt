@@ -1,0 +1,2299 @@
+
+
+＄91-10-27-01-1-0
+
+[enableFullScreen]
+
+[bgmStop BGM_CHALDEA_1 0.3]
+[bgmStop BGM_CHALDEA_2 0.3]
+[wt 0.3]
+
+[charaSet A 1027300 1 沖田総司]
+[charaSet B 7025002 1 土方歳三]
+[charaSet C 1044002 1 斎藤一]
+
+[charaSet D 1098195100 1 山南敬助]
+[charaSet E 1098194700 1 芹沢鴨]
+
+[charaSet F 1098221000 0 1]
+[charaSet G 1098221000 0 1]
+[charaSet H 1098221100 0 1]
+[charaSet I 1098118800 1 女性]
+
+
+[imageSet J cut295_terop01 1]
+[charaSet K 98111500 1 エフェクト用1]
+
+
+
+[scene 102300]
+[fadein black 1.5]
+[wait fade]
+
+[se ad512]
+[seVolume ad512 0.0 0.0]
+[seVolume ad512 1.5 1.0]
+[wt 1.0]
+
+？1：…………？
+
+？！
+
+[se ad443]
+[wt 0.5]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 256,0]
+[wt 0.1]
+[charaMove F 1 0.8]
+[wt 1.0]
+[seStop ad443 0.1]
+
+[seStop ad512 1.0]
+
+
+
+＠F：男の子
+こっち、こっち！　ちゃんとついてこいよ！[bgm BGM_EVENT_7 0.1]
+[k]
+
+[messageOff]
+
+[se ad443]
+[wt 0.1]
+[charaMove F -256,0 0.8]
+[wt 0.5]
+[charaFadeout F 0.5]
+[seStop ad443 0.5]
+[wt 0.5]
+
+[se ad443]
+[wt 0.5]
+[charaTalk G]
+[charaFace G 0]
+[charaFadeinFSL G 0.4 256,0]
+[charaMove G 1 1.0]
+[wt 1.0]
+[seStop ad443 0.1]
+
+＠G：男の子
+こいつほんとのろまだよな。あははははははは！
+[k]
+
+[messageOff]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad27]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+[wt 0.4]
+[seStop ad27 0.1]
+
+＠沖田総司
+こらー！　何してるんですかー！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadeinFSL F 0.1 0]
+[charaFadeinFSR G 0.1 2]
+
+＠F：男の子
+うわー！　総司だー！　総司が来たぞー！
+[k]
+
+[clear]
+
+[charaTalk G]
+
+＠G：男の子
+逃げろ逃げろー！　あははははははは！
+[k]
+
+[messageOff]
+
+[charaTalk off]
+
+[se ad443]
+[charaMoveFSL F -768,0 0.7]
+[charaMoveFSL G 0 0.7]
+[wt 0.3]
+[charaFadeout F 0.3]
+[charaFadeout G 0.3]
+[wt 0.5]
+[seStop ad443 0.5]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠沖田総司
+ふっふっふ！[r]この沖田さんから逃げられると思ってるんですか？
+[k]
+
+＠沖田総司
+はっ！　一歩音越え！
+[k]
+
+[messageOff]
+
+[se ad73]
+[charaEffect A bit_talk_quickmove]
+[wt 0.3]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[charaDepth A 2]
+[charaDepth G 4]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_EVENT_7 0.5 0.5]
+[wait wipe]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_7 0.5 1.0]
+[wait wipe]
+
+[se ad527]
+[charaFace G 0]
+[charaFadein G 0.1 500,0]
+[wt 0.1]
+[seStop ad527 0.1]
+[charaMove G 200,0 0.5]
+[wt 0.5]
+
+[charaPut A 0,20]
+[charaFace A 0]
+[se ad73]
+[charaEffect A bit_talk_quickmove]
+[charaFadeTime A 0.2 1.0]
+[wt 0.1]
+[charaMove A 0,0 0.1]
+[wt 0.5]
+[charaMove G 300,0 0.8]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠男の子
+は、はえー！　総司すげー！　どうやってんだ？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠沖田総司
+ふふーん！　天然理心流の稽古を積めば、[r]みんなできるようになりますよ。
+[k]
+
+[charaTalk off]
+[charaDepth A 3]
+[charaDepth J 5]
+[se ade178]
+[charaFadein J 0.1 0,-100]
+[wt 2.0]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+
+＠沖田総司
+それはそれとして、いじめは良くありませんよ。
+[k]
+
+＠沖田総司
+沖田さんそういうの良くないと思います。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠男の子
+だってこいつ、[r]ちっとも泣かないし生意気なんだよ。
+[k]
+
+[messageOff]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+
+＠女の子
+最近遊びに来るようになったけど、[r]すっごくおとなしい子なのよね。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠沖田総司
+へぇ、新入りさんですか。
+[k]
+
+[charaFace A 0]
+
+＠沖田総司
+ですが、遊ぶときはみんな仲良く！[r]沖田さんとのお約束ですよ。
+[k]
+
+[charaFace A 10]
+
+＠沖田総司
+あなたもいいですね？
+[k]
+
+？1：…………
+
+？！
+
+[charaFace A 12]
+
+＠沖田総司
+おや、ホントに大人しい子なんですねぇ。
+[k]
+
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[se ad527]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 100,0]
+[wt 0.1]
+[charaMove D 1 0.5]
+[wt 0.5]
+[seStop ad527 0.1]
+
+＠山南敬助
+沖田君、またここにいたのかい。
+[k]
+
+＠山南敬助
+芹沢先生が呼んでいるよ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠沖田総司
+あ、山南さん。はい、すぐ行きますね。
+[k]
+
+[charaFace A 10]
+
+＠沖田総司
+それじゃあみんな。また後で遊びましょう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠男の子
+またなー、総司ー！
+[k]
+
+[messageOff]
+
+
+[fadeout black 1.0]
+[se ad527]
+[seStop ad527 1.2]
+[wait fade]
+
+[scene 40600]
+
+[charaFadeout F 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFace A 0]
+[charaFadeinFSL A 0.1 0]
+[charaFadeinFSR D 0.1 2]
+
+
+＠山南敬助
+近所の子供たちと随分仲良くなったんですね。
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+
+＠沖田総司
+こう見えて沖田さん、子供たちの人気者ですんで。
+[k]
+
+＠沖田総司
+それに鴨さんもたまに付き合ってくれるんですよ。
+[k]
+
+[charaFace A 12]
+
+＠沖田総司
+似顔絵を描いてあげたり、歌を歌ってあげたり、[r]沖田さんには負けますけど、人気者でして。
+[k]
+
+[charaTalk D]
+[charaFace D 6]
+
+＠山南敬助
+芹沢先生が？　人は見かけによらないとは[r]よくいったモノだね。
+[k]
+
+[charaTalk A]
+[charaFace A 13]
+
+＠沖田総司
+そうですか？
+[k]
+
+[charaFace A 0]
+
+＠沖田総司
+鴨さんは見たまんまの人だと思いますけど。
+[k]
+
+[charaTalk D]
+[charaFace D 6]
+
+＠山南敬助
+そ、そうかい？
+[k]
+
+[messageOff]
+
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_2 0.5 1.0]
+[se ad527]
+[seStop ad527 1.2]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 1.0]
+
+
+[scene 40500]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_2 1.0 1.0]
+[se ad877]
+[seVolume ad877 0.0 0.0]
+[seVolume ad877 1.0 1.0]
+[wait fade]
+
+[se ade89]
+[seVolume ade89 0.0 0.0]
+[seVolume ade89 1.0 1.0]
+[wt 1.0]
+[seStop ad877 3.0]
+[seStop ade89 1.0]
+
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠沖田総司
+へぇ……、これが私たちの旗ですか。
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.4 1]
+
+＠芹沢鴨
+どうかね、総司君。[r]なかなか気が利いているだろう？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠沖田総司
+鴨さん、こういうの好きですよねぇ。[r]羽織に続いて旗までとか。
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.4 1]
+
+＠斎藤一
+あれま、ホントに作っちまったんですか。[r]あの金、一応、借りた金でしょう？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠芹沢鴨
+なに、これからは我々が京の町を仕切るのだ。[r]商家からはいくらでも支援してもらえるさ。
+[k]
+
+[charaFace E 1]
+
+＠芹沢鴨
+我々は国を[#護:まも]る国士なのだからね。
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 1.0]
+[se ad452]
+[seVolume ad452 0.0 0.0]
+[seVolume ad452 1.0 3.0]
+[wt 1.5]
+
+[seStop ad452 0.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+
+＠土方歳三
+芹沢先生、近藤さんが話があるそうだ。[r]来てくれ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠芹沢鴨
+やれやれ、またか。
+[k]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠芹沢鴨
+私は商家との話し合いで忙しいんだよ、土方君。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠土方歳三
+その商家の件だ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠芹沢鴨
+ほう、何か問題でも？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠土方歳三
+言わなきゃわからねぇのか？[r]勝手な真似ばかりされても困るんだよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠芹沢鴨
+武州の田舎者がその勝手のおかげで[r]ここまで来られたのを忘れたのかね？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠土方歳三
+忘れてねえよ。根っこの部分だからな。[r]いいから黙ってついてこい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠山南敬助
+と、とにかく中で話すとしましょう。[r]沖田君と斎藤君は見廻りの時間じゃないかな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace C 0]
+[charaFace A 12]
+[charaFadeinFSL C 0.1 0]
+[charaFadeinFSR A 0.1 2]
+
+＠沖田総司
+はーい。じゃあ行ってきますか、斎藤さん。
+[k]
+
+[charaTalk C]
+[charaFace C 9]
+
+＠斎藤一
+へーい。
+[k]
+
+[messageOff]
+
+[se ad527]
+[charaMoveFSR A 512,0 1.5]
+[charaMoveFSR C 0,0 1.5]
+[wt 0.5]
+[charaFadeout A 0.5]
+[charaFadeout C 0.5]
+[wt 1.0]
+[seStop ad527 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠土方歳三
+…………。
+[k]
+
+[messageOff]
+
+
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_81 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[imageSet K cut296_text01 1]
+[imageSet L cut296_text02 1]
+[imageSet M cut296_text03 1]
+[imageSet N cut296_text04 1]
+
+[scene 10000]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[charaFadein K 1.0 0,-200]
+[wt 1.0]
+[charaFadein L 1.0 0,-200]
+
+[wait touch]
+
+[charaFadeout K 1.0]
+[charaFadeout L 1.0]
+[wt 2.0]
+
+[charaFadein M 1.0 0,-200]
+[wt 1.0]
+[charaFadein N 1.0 0,-200]
+[wt 2.0]
+
+
+
+
+[wait touch]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[scene 102300]
+
+[fadein black 1.5]
+[se ad512]
+[seVolume ad512 0.0 0.0]
+[seVolume ad512 1.5 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠沖田総司
+はーい！　みんな元気にしてましたか。
+[k]
+
+[seStop ad512 1.0]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaFace A 10]
+
+＠沖田総司
+今日はお菓子を貰ってきたんで[r]みんなで食べましょう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠男の子
+わーい！　お菓子お菓子！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠沖田総司
+はい、並んで並んで。山南さん、お願いしますね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠山南敬助
+たくさんあるから、みんな慌てないようにね。
+[k]
+
+[messageOff]
+
+[se ad512]
+[seVolume ad512 0.0 0.0]
+[seVolume ad512 0.4 1.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+
+[charaFace F 0]
+[charaFace G 0]
+[charaFace H 0]
+[charaFadeinFSL F 0.1 0]
+[charaFadein G 0.1 1]
+[charaFadeinFSR H 0.1 2]
+
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk G]
+
+＠G：男の子
+あれ？　今日は鴨いないの鴨？[seStop ad512 1.0]
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[seStop ad512 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠山南敬助
+……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠沖田総司
+あー、鴨さんはちょっと用事で[r]遠くに行っちゃいましてね。
+[k]
+
+[charaFace A 0]
+
+＠沖田総司
+でもほら、今日はサンナンさんが[r]来てくれてますから！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠女の子
+サンナン？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠沖田総司
+ええ、山南ですからサンナン、ね、山南さん。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠山南敬助
+あ……、ああ、そうだよ。私はサンナンさんだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein F 0.1 0]
+[charaFadein G 0.1 2]
+
+＠F：男の子
+サンナン！　サンナン！
+[k]
+
+[clear]
+
+[charaTalk G]
+[charaFace G 0]
+
+＠G：男の子
+総司！　鬼ごっこ、鬼ごっこ！
+[k]
+
+＠G：男の子
+総司が鬼だぞ、鬼ー！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠沖田総司
+ふっふっふ、性懲りもなくこの沖田さんに[r]鬼ごっこを挑むとは……、
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠女の子
+サンナンさん、逃げよう、逃げよう！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠山南敬助
+はは、引っ張らなくても大丈夫だよ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠沖田総司
+では行きますよ！　一歩音越え……！
+[k]
+
+[messageOff]
+
+[se ad73]
+[charaEffect A bit_talk_quickmove]
+[wt 0.3]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_EVENT_7 0.5 0.5]
+[wait wipe]
+
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_7 0.5 1.0]
+[wait wipe]
+
+[charaTalk A]
+[charaPut A 0,20]
+[charaFace A 0]
+[se ad73]
+[charaEffect A bit_talk_quickmove]
+[charaFadeTime A 0.2 1.0]
+[wt 0.1]
+[charaMove A 0,0 0.1]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠男の子
+み、見えねぇ！？
+[k]
+
+[messageOff]
+
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+[wt 1.0]
+
+[scene 40700]
+[fadein black 1.0]
+[se ad512 0.1]
+[seVolume ad512 0.0 0.0]
+[seVolume ad512 1.0 0.5]
+[wait fade]
+
+
+
+
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠山南敬助
+……ふぅ。
+[k]
+
+[charaFace D 0]
+
+＠山南敬助
+おや、君は一緒に遊ばないのかい？
+[k]
+
+？1：…………
+
+？！
+
+[charaFace D 1]
+
+＠山南敬助
+ははは、随分大人しいんだね、君は。
+[k]
+
+[charaFace D 0]
+
+＠山南敬助
+なら、私と一緒に少し休もうか。
+[k]
+
+＠山南敬助
+…………。
+[k]
+
+[messageOff]
+
+
+[fadeout black 1.5]
+[seStop ad512 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaFace D 3]
+
+＠山南敬助
+…………。
+[k]
+
+＠山南敬助
+実は昨夜、少しいろいろあってね。
+[k]
+
+＠山南敬助
+ああ、ちょっとした揉め事をおさめに、[r]私も沖田君も出かけていたんだ。
+[k]
+
+＠山南敬助
+…………。
+[k]
+
+[charaFace D 4]
+
+＠山南敬助
+それで……、いろいろあってね。
+[k]
+
+＠山南敬助
+今日は出かけるような気分じゃなかったんだよ。
+[k]
+
+＠山南敬助
+他の連中もそんな感じだったんだが、[r]沖田君だけはケロリとしていてね。
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_11 0.5 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[wipeFilter cinema 0.5 0]
+
+[scene 40400]
+
+[effect bit_sepia01_depth_fs]
+[wt 0.3]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_11 1.0 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠沖田総司
+子供と遊ぶんで一緒に行きましょう。
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_11 1.0 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[effectDestroy bit_sepia01_depth_fs]
+[wipeOff]
+
+[scene 40700]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_11 1.0 1.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠山南敬助
+…………。
+[k]
+
+＠山南敬助
+芹沢さん、彼女とは仲が良さそうだったのに。
+[k]
+
+＠山南敬助
+…………。
+[k]
+
+[charaFace D 0]
+
+＠山南敬助
+すまない……。
+[k]
+
+＠山南敬助
+…………。
+[k]
+
+[charaFace D 1]
+
+＠山南敬助
+なんで君にこんな話をしているんだろうね、私は。
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgmStop BGM_EVENT_11 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[scene 102300]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[se ad512 0.1]
+[seVolume ad512 0.0 0.0]
+[seVolume ad512 1.0 1.0]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠沖田総司
+サンナンさーん！　そんなところで何を[r]ぼんやりしてるんですか。
+[k]
+
+＠沖田総司
+こっちこっち！　次はサンナンさんが鬼ですよ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠男の子
+サンナーン！
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[seVolume ad512 1.0 0.5]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[scene 40700]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠山南敬助
+ああ、わかったよ。
+[k]
+
+[charaFace D 0]
+
+＠山南敬助
+じゃあね、君はゆっくりしていてくれ。
+[k]
+
+＠山南敬助
+[line 3]次は私の番らしい。
+[k]
+
+[messageOff]
+
+[se ad527]
+[charaMove D 0 1.0]
+[wt 0.3]
+
+[seStop ad527 0.5]
+[charaFadeout D 0.5]
+[wt 0.1]
+
+[fadeout black 1.5]
+[seStop ad512 1.5]
+[wait fade]
+
+[scene 10000]
+
+[fadein black 1.5]
+[wait fade]
+
+
+
+[imageSet K cut296_text05 1]
+[imageSet L cut296_text06 1]
+
+[charaFadein K 1.0 0,-200]
+[wt 1.0]
+[charaFadein L 1.0 0,-200]
+
+[wait touch]
+
+[charaFadeout K 1.0]
+[charaFadeout L 1.0]
+[wt 2.0]
+
+[charaFadein M 1.0 0,-200]
+[wt 1.0]
+[charaFadein N 1.0 0,-200]
+[wt 2.0]
+
+
+
+[wait touch]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[scene 102300]
+
+[fadein black 1.5]
+[se ad512]
+[seVolume ad512 0.0 0.0]
+[seVolume ad512 1.0 1.5]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠男の子
+あ、総司！　どこ行ってたんだよ。[r]最近、全然遊びに来ないで。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[seStop ad512 1.0]
+[bgm BGM_EVENT_25 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠沖田総司
+すみませんね、みんな。[r]沖田さん最近ちょーっと、忙しくって。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠男の子
+なんだよー、あ、サンナンは？　サンナン！
+[k]
+
+＠男の子
+お菓子くれよ、お菓子。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠沖田総司
+あー……、実はサンナンさんもお仕事で[r]少し遠くへ行ってしまって。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠男の子
+えー、そーなのかー。
+[k]
+
+＠男の子
+なんだ、つまんないの。
+[k]
+
+＠男の子
+まあいっか、遊ぼう総司！[r]鬼ごっこ、鬼ごっこ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠沖田総司
+そう来なくては。
+[k]
+
+＠沖田総司
+はたしてこの沖田さんから[r]逃げきれますかね？
+[k]
+
+＠沖田総司
+行きますよ！
+[k]
+
+[charaFace A 4]
+
+[bgmStop BGM_EVENT_25 0.1]
+
+＠沖田総司
+一歩音ご……ッ！？[wt 0.5][charaShake A 0.05 3 1 0.3]
+[k]
+
+[messageOff]
+
+
+＠沖田総司
+[charaShake A 0.05 7 7 0.3]
+ごほっ[wt 0.5][charaShake A 0.05 7 7 0.3]ごほっ！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠男の子
+だ、大丈夫か？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠沖田総司
+……す、すみません、ちょっと風邪気味で。
+[k]
+
+＠沖田総司
+今日はもう失礼しますね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠男の子
+えー……、まあいっか。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠沖田総司
+はい、また今度遊びましょう。
+[k]
+
+＠沖田総司
+それじゃあ、また。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠男の子
+うん、またなー！
+[k]
+
+[messageOff]
+
+[se ad443]
+[charaMove F 0 0.5]
+[wt 0.3]
+[charaFadeout F 0.5]
+[seStop ad443 0.5]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠沖田総司
+…………。
+[k]
+
+？1：…………
+
+？！
+
+[bgm BGM_EVENT_95 0.1]
+
+＠沖田総司
+おや、あなたはいつぞやの……。
+[k]
+
+＠沖田総司
+…………。
+[k]
+
+[charaFace A 0]
+
+＠沖田総司
+そうだ、あなたにお願いがあるんです。
+[k]
+
+＠沖田総司
+実は私、[r]もうここには来れそうもありません。
+[k]
+
+[charaFace A 4]
+
+＠沖田総司
+ですから代わりにあなたがあの子たちと[r]遊んであげてくれませんか。
+[k]
+
+＠沖田総司
+…………。
+[k]
+
+
+[charaFace A 10]
+
+＠沖田総司
+ええ、私の代わりに、ずっと遊んであげてください。
+[k]
+
+＠沖田総司
+…………。
+[k]
+
+[messageOff]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_95 2.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaSet A 1027000 1 沖田総司]
+[charaSet B 7025000 1 土方歳三]
+[charaSet C 1027002 1 沖田総司]
+[imageSet K cut296_text07 1]
+[imageSet L cut296_text08 1]
+[charaSet O 5009040 1 エフェクト用ダミー]
+[charaSet P 5009040 1 エフェクト用ダミー2]
+[charaSet Q 5009040 1 エフェクト用ダミー3]
+
+[scene 10000]
+
+[fadein black 2.0]
+[wait fade]
+
+
+[charaFadein K 1.0 0,-200]
+[wt 1.0]
+[charaFadein L 1.0 0,-200]
+
+[wait touch]
+
+[charaFadeout K 1.0]
+[charaFadeout L 1.0]
+[wt 2.0]
+
+
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaEffect O bit_talk_noise_gr]
+[charaPut O 2000,2000]
+[charaScale O 1.01]
+
+[charaPut P 2000,2000]
+[charaEffect P bit_talk_17_bl]
+
+[charaPut Q 2000,2000]
+[charaEffect Q bit_talk_17_bl]
+
+[charaDepth B 1]
+[charaDepth P 9]
+[charaDepth Q 9]
+
+
+[scene 40301]
+
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_92 0.1]
+
+＠沖田総司
+…………。
+[k]
+
+[messageOff]
+
+[se ade269]
+[wt 1.0]
+[seStop ade269 1.0]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.4 1]
+
+＠女性
+[line 3]おはようございます。
+[k]
+
+＠女性
+あら、今日は顔色がよろしいですね。
+[k]
+
+＠沖田総司
+はい、今朝は気分がよくて……。
+[k]
+
+＠沖田総司
+ところで新選ぐ……、今は[#甲陽鎮撫隊:こ う よ う ち ん ぶ た い]でしたっけ、[r]近藤さんや土方さんの様子を聞いていませんか？
+[k]
+
+＠女性
+いえ、特には聞いておりませんが……。
+[k]
+
+＠沖田総司
+そうですか……。
+[k]
+
+＠沖田総司
+…………。
+[k]
+
+＠女性
+さあ、お薬をどうぞ。
+[k]
+
+＠女性
+良順先生からもしっかり養生するようにと[r]言われていますでしょう。
+[k]
+
+＠沖田総司
+その薬苦いんですよね。[r]甘い薬とかないんですかね？
+[k]
+
+＠女性
+お薬は苦いものです。
+[k]
+
+＠女性
+さ、飲んだら横になって……。
+[k]
+
+[messageOff]
+
+[se ade385]
+[wt 2.0]
+
+＠女性
+それではまた来ますので、ゆっくり休んでくださいね。
+[k]
+
+＠沖田総司
+あはは、これ以上ないくらいゆっくりしてますよ。
+[k]
+
+＠沖田総司
+沖田さん人生の中でも一番ゆっくりしてますとも。
+[k]
+
+＠女性
+ええ、しっかり休んで身体を治せば、[r]近藤先生の下でまたお働きになれますからね。
+[k]
+
+＠沖田総司
+近藤さんの下で……、うん、そうですね。
+[k]
+
+＠女性
+ではまた来ますから。
+[k]
+
+＠女性
+くれぐれも無理はなさらないように。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_92 1.0]
+
+[charaMove I 2 1.0]
+[se ade295]
+[wt 0.5]
+[charaFadeout I 0.5]
+[wt 1.0]
+[seStop ade295 0.1]
+
+[se ade270]
+[wt 2.5]
+
+＠沖田総司
+…………。
+[k]
+
+＠沖田総司
+近藤さんの下で……、か。
+[k]
+
+＠沖田総司
+…………。
+[k]
+
+[messageOff]
+
+[se ade385]
+[wt 1.0]
+[seStop ade385 0.5]
+[wt 1.0]
+
+[se ade269]
+[wt 2.0]
+
+[seStop ade269 0.1]
+
+[fadeout black 1.5]
+[se ade146]
+[wait fade]
+
+[scene 40700]
+
+[fadein black 1.5]
+[wait fade]
+
+[seStop ade146 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠沖田総司
+ふぅ……、にしても、寝てろ寝てろって、[r]寝てるのも結構大変なんですけどね。
+[k]
+
+＠沖田総司
+それに調子のいいときに、[r]少しでも動けるようにしておかないと。
+[k]
+
+＠沖田総司
+いつまでたっても、みんなに追い付けませんからね。
+[k]
+
+[messageOff]
+
+[se adm37]
+[wt 1.0]
+
+[charaFace A 5]
+
+＠沖田総司
+たまには素振りくらいは……。
+[k]
+
+[messageOff]
+
+[se ad44]
+[seStop ad44 0.2]
+[se ad166]
+[seVolume ad166 0 0.2]
+[se ad209]
+[seVolume ad209 0 0.2]
+[seStop ad209 0.5]
+[wt 0.5]
+[seStop ad166 0.5]
+[wt 1.0]
+
+[charaFace A 4]
+
+＠沖田総司
+素振りの一つくらいは……。
+[k]
+
+[messageOff]
+
+[charaFace A 5]
+[wt 0.4]
+[charaMoveReturn A 0,-10 0.7]
+[wt 1.7]
+[se ad44]
+[seStop ad44 0.2]
+[se ad166]
+[seVolume ad166 0 0.2]
+[se ad209]
+[seVolume ad209 0 0.2]
+[seStop ad209 0.5]
+[wt 0.5]
+[seStop ad166 0.5]
+[wt 1.0]
+
+[charaFace A 4]
+[wt 1.5]
+
+＠沖田総司
+…………。
+[k]
+
+＠沖田総司
+……もう刀も満足に握れませんか、私は。
+[k]
+
+＠沖田総司
+…………。
+[k]
+
+[messageOff]
+
+[se ad494]
+[wt 1.5]
+
+[charaFace A 8]
+
+＠沖田総司
+…………？
+[k]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠沖田総司
+黒猫、ですか…………。
+[k]
+
+[charaFace A 0]
+
+＠沖田総司
+…………。
+[k]
+
+[se ad51]
+
+[charaFace A 9]
+
+＠沖田総司
+…………。
+[k]
+
+＠沖田総司
+……斬れます。
+[k]
+
+＠沖田総司
+私は、まだ……。
+[k]
+
+？1：…………
+
+？！
+
+
+[messageOff]
+[wt 2.0]
+
+[charaFace A 15]
+
+[se ad1034]
+[wt 1.0]
+
+＠沖田総司
+……なんてね。
+[k]
+
+[charaFace A 4]
+
+＠沖田総司
+…………。
+[k]
+
+[charaFace A 0]
+
+＠沖田総司
+黒猫さん、こっちで一緒に日向ぼっこでもしませんか？
+[k]
+
+＠沖田総司
+大丈夫、斬ったりなんかしませんよ。
+[k]
+
+[charaFace A 10]
+
+＠沖田総司
+今日は気分もいいし、日差しも暖かいですから。
+[k]
+
+？1：…………
+
+？！
+
+[messageOff]
+
+[se ad494]
+[wt 1.5]
+
+[charaFace A 13]
+
+＠沖田総司
+……ところであなた、どこかで見たような。
+[k]
+
+[charaFace A 8]
+
+＠沖田総司
+たしか[#壬生寺:み ぶ で ら]の境内で……。
+[k]
+
+[charaFace A 0]
+
+＠沖田総司
+って、そんなわけないですよね。
+[k]
+
+＠沖田総司
+京からこの江戸まで[r]どんだけ離れてるんだって話ですし。
+[k]
+
+＠沖田総司
+他人の空似、いや、猫似ですよ、猫似。
+[k]
+
+[charaFace A 10]
+
+＠沖田総司
+……ふふ。
+[k]
+
+[bgmStop BGM_EVENT_11 1.0]
+
+＠沖田総司
+…………。
+[k]
+
+[bgm BGM_EVENT_95 0.1]
+
+[charaFace A 0]
+
+＠沖田総司
+……本当に、こんなに穏やかなのはいつ以来でしょうか。
+[k]
+
+＠沖田総司
+本当に穏やかで……。
+[k]
+
+＠沖田総司
+……でもね、黒猫さん。
+[k]
+
+[charaFace A 4]
+
+＠沖田総司
+私は……[r]私は、みんなと共に戦いたかったのです。
+[k]
+
+＠沖田総司
+あの旗の下でみんなと。
+[k]
+
+＠沖田総司
+……どんなに先の無い戦いであっても、
+[k]
+
+＠沖田総司
+たとえその果てに、無意味な死が横たわろうと[r]私はそうありたかった。
+[k]
+
+＠沖田総司
+こんなふうに、のき先のあたたかな光に包まれ、[r]空を仰ぎたくなどなかった。
+[k]
+
+＠沖田総司
+ただ最後まで[line 2]
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_95 1.0]
+
+
+[se ad31]
+[charaPut O 0,3]
+[wt 0.5]
+
+[seStop ad31 0.1]
+
+[scene 107500]
+
+[charaPut O 2000,2000]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠C：沖田総司
+そんな……、じゃあ土方さんはずっと、[r]ずっと新選組として生き続けているつもりで……。
+[k]
+
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad31]
+[charaPut O 0,3]
+
+[wt 0.5]
+[seStop ad31 0.1]
+
+[scene 40700]
+
+[charaPut O 2000,2000]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠沖田総司
+…………？
+[k]
+
+＠沖田総司
+これは[line 3]
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+
+[se ad31]
+[charaPut O 0,3]
+[wt 0.5]
+[seStop ad31 0.1]
+
+[scene 107500]
+
+[charaPut O 2000,2000]
+[charaEffectStop O bit_talk_noise_gr]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠C：沖田総司
+そんなのおかしいですよ！
+[k]
+
+＠C：沖田総司
+だって、だって新選組はもう[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠土方歳三
+黙れ！　沖田ァッ！
+[k]
+
+＠土方歳三
+いいか、新選組は終わらねぇ……。
+[k]
+
+＠土方歳三
+近藤さん……、永倉……、斎藤……[r]どいつもこいつも最後には居なくなった。
+[k]
+
+[charaFace B 7]
+＠土方歳三
+……だが安心しろ。
+[k]
+
+＠土方歳三
+俺だ……、俺がいる限り新選組は終わらねぇ……
+[k]
+
+
+[charaFace B 6]
+＠土方歳三
+ここが……！
+[k]
+
+＠土方歳三
+俺が……！
+[k]
+
+＠土方歳三
+[f large][line 3]新選組だぁっ！！
+[k]
+
+
+[messageOff]
+
+[se ad267]
+[charaPut P 1]
+[charaPut Q 10,20]
+
+[charaChange B 9938980 1 fade 0.7]
+[wt 1.5]
+
+[wait charaCrossFade B]
+[charaEffectStop P bit_talk_17_bl]
+[charaEffectStop Q bit_talk_17_bl]
+[wt 2.3]
+[charaPut P 2000,2000]
+[charaPut Q 2000,2000]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠C：沖田総司
+そんな……、
+[k]
+
+＠C：沖田総司
+そんなのって……！
+[k]
+
+
+[bgmStop BGM_EVENT_3 1.0]
+
+？1：いや、ここが沖田さんの新選組だよ……！
+
+？！
+
+[charaFace C 3]
+
+＠C：沖田総司
+マスター！？[r]そ、それはどういう……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠土方歳三
+ほぉ……、言うじゃねぇか、新入り。
+[k]
+
+[charaFace B 4]
+
+＠土方歳三
+いや[%1]！
+[k]
+
+＠土方歳三
+この新選組副長『土方歳三』を前にして……！[r]そこが！　貴様の横が！　新選組だと！？
+[k]
+
+[bgm BGM_BATTLE_18 0.1]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：沖田総司
+マスター……！
+[k]
+
+＠C：沖田総司
+そうでした……、今の私はマスターの剣！
+[k]
+
+[charaFace C 2]
+
+＠C：沖田総司
+土方さん！
+[k]
+
+＠C：沖田総司
+[line 3]私は、私の『誠』はここにあります！
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠土方歳三
+なんだ沖田、てめぇ[#病:やまい]で抜けた割には[r]ほざくようになったじゃねぇか……。
+[k]
+
+＠土方歳三
+だが『誠』の一字を懸けるというなら容赦はしねえ。
+[k]
+
+＠土方歳三
+おまえの旗と俺の新選組、どちらが本当の新選組か[r][#決着:け　り]をつけてやる！
+[k]
+
+[charaFace B 2]
+
+＠土方歳三
+[line 3]いくぞ、
+[k]
+
+[charaFace B 1]
+
+＠土方歳三
+[f large]新選組、前進ッ！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[input selectBranch]
+
+[seStop ad443 0.4]
+[seStop ad512 0.4]
+[seStop ad27 0.4]
+[seStop ad443 0.4]
+[seStop ad73 0.4]
+[seStop ad527 0.4]
+[seStop ade178 0.4]
+[seStop ad877 0.4]
+[seStop ade89 0.4]
+[seStop ad452 0.4]
+[seStop ade269 0.4]
+[seStop ade385 0.4]
+[seStop ade295 0.4]
+[seStop ade270 0.4]
+[seStop ade146 0.4]
+[seStop adm37 0.4]
+[seStop ad44 0.4]
+[seStop ad166 0.4]
+[seStop ad209 0.4]
+[seStop ad494 0.4]
+[seStop ad51 0.4]
+[seStop ad1034 0.4]
+[seStop ad31 0.4]
+[seStop ad267 0.4]
+
+[bgmStop BGM_EVENT_7 0.4]
+[bgmStop BGM_EVENT_2 0.4]
+[bgmStop BGM_EVENT_81 0.4]
+[bgmStop BGM_EVENT_11 0.4]
+[bgmStop BGM_EVENT_25 0.4]
+[bgmStop BGM_EVENT_95 0.4]
+[bgmStop BGM_EVENT_92 0.4]
+[bgmStop BGM_EVENT_3 0.4]
+
+[charaEffectDestroy A bit_talk_quickmove]
+[effectDestroy bit_sepia01_depth_fs]
+[charaEffectDestroy K bit_talk_noise_gr]
+[charaEffectDestroy P bit_talk_17_bl]
+[charaEffectDestroy Q bit_talk_17_bl]
+
+[charaSet A 1027300 1 沖田総司]
+[charaSet B 7025002 1 土方歳三]
+[charaSet C 1044002 1 斎藤一]
+[charaSet D 1098195100 1 山南敬助]
+[charaSet E 1098194700 1 芹沢鴨]
+[charaSet F 1098221000 0 1]
+[charaSet G 1098221000 0 1]
+[charaSet H 1098221100 0 1]
+[charaSet I 1098118800 1 女性]
+[imageSet J cut295_terop01 1]
+[charaSet K 98111500 1 エフェクト用1]
+
+[charaSet A 1027000 1 沖田総司]
+[charaSet B 7025000 1 土方歳三]
+[charaSet C 1027002 1 沖田総司]
+[imageSet K cut296_text07 1]
+[imageSet L cut296_text08 1]
+[charaSet O 5009040 1 エフェクト用ダミー]
+[charaSet P 5009040 1 エフェクト用ダミー2]
+[charaSet Q 5009040 1 エフェクト用ダミー3]
+
+
+[label selectBranch]
+
+[wt 0.5]
+
+[branchMaterial lblMaterial]
+
+[bgm BGM_BATTLE_18 0.1]
+
+[branch lblBranchMaterialEnd]
+
+[label lblMaterial]
+
+[bgmStop BGM_BATTLE_18 0.5]
+[wt 0.5]
+
+[label lblBranchMaterialEnd]
+
+[end]
+
+

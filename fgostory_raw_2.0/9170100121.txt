@@ -1,0 +1,70 @@
+＄91-70-10-01-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 10800]
+[charaSet A 8001001 2 玛修]
+[charaSet B 98003000 2 Dr.罗曼]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 7010001 0 卡利古拉]
+[charaSet E 5009001 1 达·芬奇]
+[charaSet F 98016000 1 罗马士兵 or 联盟士兵]
+[charaTalk A]
+[charaFace D 0]
+[charaFadein D 0]
+[charaFace A 0]
+[charaFadein A 0]
+[fadein black 1]
+[wait fade]
+＠玛修
+呼……总算是击退敌人了。[r]城市的损失也控制在最小范围内。
+[k]
+
+[charaFace D 1]
+＠卡利古拉
+余……美丽的……侄女……所爱的……城市……[r]永远……称颂……其美丽吧……
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+不，那啥，该怎么说呢……[r]溺爱孩子的傻爸爸？不，因为是舅父，所以算傻舅父？
+[k]
+
+？1：你深爱着尼禄皇帝吧。
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 13]
+[charaFadein A 0.1 2]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+＠玛修
+虽然这种爱的表现方式有些奇怪，[r]但他一定非常爱护尼禄小姐吧。
+[k]
+
+？2：罗马是永恒的！！
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 12]
+[charaFadein A 0.1 2]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+＠玛修
+不，那个，前辈？没事吧？[r]难道在刚才的战斗中被打中了……
+[k]
+
+？！
+
+＠卡利古拉
+美丽……美丽……！[r]连月亮显得暗淡，我们罗马的荣耀，你是如此美丽……！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_2 0.4]
+[wait fade]
+[soundStopAll]
+[end]

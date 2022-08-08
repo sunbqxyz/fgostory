@@ -1,0 +1,202 @@
+
+
+
+＄03-00-06-03-1-0
+
+
+
+[soundStopAll]
+
+[sceneSet A 93400 1]
+[charaSet B 9005001 1 福尔摩斯]
+[charaSet C 8001410 1 武装玛修（无护目镜）]
+[charaSet D 1017001 1 武藏]
+[charaSet E 8001400 1 玛修]
+[charaSet S 5009000 1 特效用dummy1]
+[charaSet T 5009000 1 特效用dummy2]
+
+[charaScale A 1.01]
+
+[scene 91900]
+
+[charaFadein A 0 0,-200]
+
+
+[fadein black 1.5]
+[wait fade]
+
+
+[bgm BGM_EVENT_71 0.1]
+
+＠
+[f large]『发现入侵者。』
+[k]
+
+＠
+[f large]『开始排除。』
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.6 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[wipein rectangleStripUpToDown 0.6 1.0]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+[wt 0.1]
+
+＠福尔摩斯
+青铜巨人！[r]神话中被描述为怪物的存在，[wt 0.5][charaFace B 2]原来如此！
+[k]
+
+＠福尔摩斯
+是因为吸收了罗得岛的传承吗[line 3][r]青铜巨人原来是由神铸造的大怪物！
+[k]
+
+＠福尔摩斯
+它在星间都市山脉奥林波斯中[r]算是击退入侵者的自动防卫机构啊！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad674]
+[wt 0.25]
+[se ad674]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠C：玛修
+魔力测量！[r]测量数值，超越极限值！
+[k]
+
+＠C：玛修
+有神灵级的输出！[r]魔力性质……与巨人种的并不一样！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠武藏
+不愧是希腊，还有青铜巨人啊！[bgmStop BGM_EVENT_71 1.0][r]一股子刀枪不入的感觉[line 3]
+[k]
+
+[charaFace D 5]
+
+＠武藏
+不过它应该不会眼睁睁地放过我们吧！
+[k]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaFace D 2]
+
+＠武藏
+[%1]，[r]玛修！
+[k]
+
+＠武藏
+既然被发现了，那也没办法！[r]只好请这个看起来硬邦邦的家伙打道回府了！
+[k]
+
+？1：明白了！
+？2：玛修，准备战斗！
+
+？！
+
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth E 2]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[se ade57]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[charaTalk off]
+[charaFace E 7]
+[charaFadein E 0.4 1]
+[wt 0.5]
+[charaFadeout C 0]
+
+＠玛修
+[#灵基外骨骼:奥特瑙斯]输出提升！[r]战斗机能解放！
+[k]
+
+＠玛修
+调节机能没有问题！[r]灵基觉醒率，达到基准值！
+[k]
+
+[messageOff]
+[se ad668]
+[wt 0.1]
+[charaMove E 0,5 0.2]
+[charaMoveScale E 1.05 0.2]
+[wt 0.1]
+[seStop ad668 0.1]
+
+[charaFace E 2]
+
+＠玛修
+[line 3]玛修·基列莱特，开始战斗！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[wt 0.5]
+[charaMove D 0,-5 0.3]
+
+[cueSe Battle bac305]
+[wt 0.5]
+
+＠武藏
+辗转诸多世界、流落诸多异境以求武者修行！[r]斩杀妖魔鬼怪者不计其数，然此物尤为不同！
+[k]
+
+＠武藏
+首次与遥远希腊的青铜巨人展开殊死决斗！[r]就让我在此一试，看此物可否斩断！
+[k]
+
+[charaFace D 2]
+
+＠武藏
+新免武藏，来吧[line 3]决一胜负！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

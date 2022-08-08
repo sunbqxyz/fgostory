@@ -1,0 +1,313 @@
+
+
+
+＄94-05-79-04-2-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1034001 1 梅芙]
+[charaSet B 1098230000 1 X·Alter]
+[charaSet C 1098199300 1 玛修]
+[charaSet D 7016300 1 玉藻猫]
+[charaSet E 6028001 1 尼托克丽丝]
+[charaSet F 6009002 1 静谧哈桑]
+[charaSet G 98104300 1 夏日幽灵]
+[charaSet H 98108900 1 看热闹的游客A]
+[charaSet I 98109000 1 看热闹的游客B]
+[charaSet J 98114700 1 游客的孩子]
+
+[charaSet T 4031000 1 特效用]
+
+
+[scene 109602]
+
+[bgm BGM_EVENT_81 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠X·Alter
+梅芙小姐，她们魅惑的夏日状态非同小可。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠梅芙
+说得对。一旦掉以轻心可能就会被对方占据上风。[r]而且，她们还没有动真格……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠玉藻猫
+唔唔～，气氛创造者可不是开玩笑的。[r]我可不想变成夏日终结时的线香烟花。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠尼托克丽丝
+没错，结束吧。会结束。[r]一切都是瞬间之梦……[wt 0.9][bgmStop BGM_EVENT_81 1.0][charaFace E 6]唔唔！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 0,-50]
+[wt 0.4]
+
+＠夏日幽灵
+咻噢噢[line 3]…………[se ad21][r]咻噢噢[line 3]…………
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFace I 1]
+[charaFadeinFSR H 0.1 256,-50]
+[charaFadeinFSL I 0.1 -256,-50]
+＠看热闹的游客A
+呜[messageShake 0.05 4 3 0.6]哇啊啊[line 2]，是幽灵[line 3]！
+[k]
+
+＠看热闹的游客B
+梦逝少女的死亡气氛与AxXxS的能量冲突，[r]导致亡者都Wake Up Dead了[line 2]！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[pictureFrame]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠玉藻猫
+喵的出乎预料的日本之夏，幽灵之夏。
+[k]
+
+[charaFace D 5]
+＠玉藻猫
+……唔？　这的确是『夜晚找鬼怪试胆』。[r]看来咒术使不可随便乱说话呢。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 2]
+[charaFadein J 0.1 0,-50]
+[charaShake J 0.02 4 4 0.4]
+＠游客的孩子
+好可怕啊啊啊……！
+[k]
+
+[charaTalk depthOff]
+[charaDepth G 2]
+[charaDepth J 4]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.3 -400,-50]
+[charaMove G -350,-50 0.8]
+＠夏日幽灵
+噢噢噢噢[line 3]……[se ad21]
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[charaFadeout J 0.1]
+[pictureFrame]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠玉藻猫
+糟了！　孩子正遭到袭击dangerous[line 3]！！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠梅芙
+区区幽灵，怎能让它们得逞！
+[k]
+
+[messageOff]
+[se ad678]
+[seVolume ad678 0 0.6]
+[charaMove A -80,0 0.2]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[se adm14]
+[effect bit_talk_throwing]
+[wt 0.5]
+
+
+[se ad626]
+[se ad618]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+[effectDestroy bit_talk_throwing]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0 1]
+[charaShake G 0.03 4 4 0.6]
+[wt 0.3]
+
+[seStop ad626 0.2]
+[wt 0.6]
+
+＠夏日幽灵
+嗄啊啊啊！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠梅芙
+……哼。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 2]
+[charaFace A 0]
+[charaFadeinFSL J 0.1 0]
+[charaFadeinFSR A 0.1 2]
+＠游客的孩子
+谢……谢谢你，大姐姐……
+[k]
+
+[charaFace A 0]
+＠梅芙
+应该叫『美丽的女王陛下』吧。
+[k]
+
+[charaFace J 0]
+＠游客的孩子
+唔，嗯！　美丽的女王陛下！
+[k]
+
+[charaFace A 12]
+＠梅芙
+明白就好！
+[k]
+
+[charaFadeout J 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠玉藻猫
+……名不虚传，搭档。
+[k]
+
+？1：大家！　进入战斗态势！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠玛修
+立刻予以排除！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 5]
+[charaDepth E 4]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFace F 0]
+[charaFadeinFSR E 0.1 2]
+[charaFadeinFSL F 0.1 0]
+＠尼托克丽丝
+我们也会负起责任帮忙除灵。[r]哈桑，准备[#安魂曲:Requiem]！
+[k]
+
+＠静谧哈桑
+是……！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_3 2.0]
+[wait fade]
+[soundStopAll]
+[end]

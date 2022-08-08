@@ -1,0 +1,767 @@
+
+＄94-05-14-19-2-0
+
+[soundStopAll]
+
+[charaSet A 1098198900 1 卫宫]
+[charaSet B 1098199000 1 紫式部]
+[charaSet C 3044000 1 雏罂]
+[charaSet D 1098200800 1 巴御前]
+[charaSet E 1098198300 1 瞑生院Lily]
+[charaSet F 1033300 1 齐格鲁德]
+[charaSet G 7038000 1 布伦希尔德]
+[charaSet H 23004000 1 瞑生院祈荒]
+
+[charaSet T 5009040 1 特效用dummy]
+
+[scene 99902]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaPut T 1]
+[charaEffect T bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠卫宫
+这里是卫宫。
+[k]
+
+＠卫宫
+我们搜索了这边也存在的民居。[r]不过太令人震惊了。
+[k]
+
+？1：怎么了？
+？！
+
+[charaFace A 9]
+＠卫宫
+民居的构造分毫不差。
+[k]
+
+＠卫宫
+考虑到小屋的先例，[r]看来A和B被做得高度相似。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠紫式部
+难道说，这……
+[k]
+
+＠紫式部
+或许是在模仿古代中国哲学意义上的世界形象，[r]也就是太极图吧。
+[k]
+
+[charaFace B 4]
+＠紫式部
+阴极生阳，[r]阳极生阴。
+[k]
+
+＠紫式部
+通过让两边一致，[r]或许就能强化仪式的意义。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut T 1200,1200]
+[charaEffectStop T bit_talk_10_LowLevel]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠雏罂
+唔。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠巴御前
+好了，御主。[r]我们快要到这边的小屋了。
+[k]
+
+＠巴御前
+假如与瞑生院祈荒对峙，您打算怎么办？
+[k]
+
+？1：我打算先听听她的解释。
+？！
+
+[charaFace D 12]
+
+＠巴御前
+嗯。[r]然后再战斗吧！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth D 2]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFace D 12]
+[charaFadein C 0.1 2]
+[charaFadein D 0.1 0]
+＠雏罂
+……太热血了，[r]战士怎么都这样。
+[k]
+
+[charaFace D 0]
+
+＠巴御前
+重瞳阁下不也是个战士吗？
+[k]
+
+[charaFace C 2]
+
+＠雏罂
+那那那那位大人不要紧！[r]算是例外啦！
+[k]
+
+＠雏罂
+既有诗歌修养，计算速度又快，[r]在各方面都很有绅士风度！
+[k]
+
+＠雏罂
+哪怕经历了两千年，[r]这个世界依然留存着那位大人的诗！
+[k]
+
+[charaFace D 1]
+＠巴御前
+虞兮虞兮奈若何……是吧。
+[k]
+
+＠巴御前
+虞啊，汝今后该如何是好，[r]表达了迫切的担忧[line 3]
+[k]
+
+＠巴御前
+巴也知道这首诗。[r]是首非常优美的中国诗歌呢。
+[k]
+
+[charaFace C 1]
+
+＠雏罂
+对吧？
+[k]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+＠？？？
+[charaTalk E]
+哎呀。[r]但也可能，
+[k]
+
+＠？？？
+[charaTalk E]
+是表达『这个问题人物真的能正常生活吗？』
+[k]
+
+＠？？？
+[charaTalk E]
+这种不安情绪的诗歌吧？
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠雏罂
+[f large]什么人！！
+[k]
+
+＠雏罂
+[f large]另外你也太没礼貌了吧！！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[se ad60]
+[seVolume ad60 0 0.5]
+[seVolume ad60 0.9 1.0]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.4 1]
+[wt 0.4]
+[seStop ad60 0.2]
+[wt 0.4]
+＠瞑生院Lily
+这是我诚实的感想，[r]如果有惹您不高兴，那真是抱歉啦。
+[k]
+
+[charaFace E 8]
+
+＠瞑生院Lily
+“这里有没有苦于找不到黑幕的人呢？”[r]呵呵呵。一天不见，各位。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠齐格鲁德
+……！[r]瞑生院……Lily啊。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+＠瞑生院Lily
+因为[&大哥哥:大姐姐]想问我一些话。
+[k]
+
+＠瞑生院Lily
+所以我暂时恢复成这个模样了。
+[k]
+
+＠瞑生院Lily
+啊，我的记忆已经恢复了，[r]所以这方面还请放心。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+＠齐格鲁德
+……[r]……
+[k]
+
+[charaFace F 2]
+＠齐格鲁德
+原来如此！　竟然是同一个人啊！！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+＠瞑生院Lily
+那边那位，现在可不是惊讶的时候吧。
+[k]
+
+[charaFace E 1]
+＠瞑生院Lily
+比起这些[line 3][r]您想知道些什么？
+[k]
+
+
+
+？1：你知道玛修的去向吗？
+？！
+
+
+[charaFace E 10]
+＠瞑生院Lily
+噢噢。
+[k]
+
+＠瞑生院Lily
+您果然在为玛修小姐担心啊，[r]在所难免。
+[k]
+
+＠瞑生院Lily
+Lily此前一直努力地[r]明里暗里帮助玛修小姐。
+[k]
+
+[charaFace E 4]
+
+＠瞑生院Lily
+……但非常抱歉。[r]我变回『我』时的破绽被人钻空子了。
+[k]
+
+＠瞑生院Lily
+我可以确定她还在这个特异点，[r]也可以肯定她还活着。
+[k]
+
+[charaFace E 10]
+
+＠瞑生院Lily
+是不是很庆幸？[r]的确值得庆幸。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+＠巴御前
+（看来不是在撒谎呢……）
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 17]
+[charaFadein G 0.1 1]
+＠布伦希尔德
+（嗯。并没有在糊弄人，[r]　也没有掩盖真相蒙骗我们。）
+[k]
+
+＠布伦希尔德
+（瞑生院亲告诉了我们正确的事实。[r]　我有这种感觉。）
+[k]
+
+？1：那这究竟是出于什么目的……？
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠瞑生院Lily
+那个。[r]那个，呃……
+[k]
+
+[charaFace E 0]
+＠瞑生院Lily
+虽然不太容易解释。[r]……但『我』的基本行动理念，
+[k]
+
+＠瞑生院Lily
+应该是『让遇到困难的人获得解脱』吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠布伦希尔德
+我……我认为这动机非常了不起。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+＠瞑生院Lily
+嗯，谢谢您的夸奖。
+[k]
+
+＠瞑生院Lily
+……[r]……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠雏罂
+慢着。[r]我怎么觉得动机和行为对不上呢。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+＠瞑生院Lily
+唔，果然被发现了啊。[r]还是年长者有经验呢。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.1]
+[charaShake C 0.05 3 3 0.2]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠瞑生院Lily
+但是在我的心里，[r]动机和行为是完美一致的。
+[k]
+
+＠瞑生院Lily
+首先，通过展现“自己心目中美好世界”的幻象，[r]去除对方的痛苦。
+[k]
+
+[charaFace E 1]
+
+＠瞑生院Lily
+这做得没错？[r]然后，
+[k]
+
+＠瞑生院Lily
+对于“不可能存在这种随心所欲的美好人生。”[r]“现实更为残酷无情。”
+[k]
+
+＠瞑生院Lily
+此类悲观主义的人，就按照他们的愿望，[r]让他们看到“自己心目中丑恶的世界”。
+[k]
+
+＠瞑生院Lily
+无论是想看“团圆结局”的人，[r]还是想看“悲剧结局”的人，
+[k]
+
+＠瞑生院Lily
+我都一律平等地提供他们想看的幻象。
+[k]
+
+[charaFace E 8]
+
+＠瞑生院Lily
+大家都是共通的，[r]都因为[#人生无法如愿而感到困扰]。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠齐格鲁德
+……原来如此。虽说确实存在追求[r]高难度人生的人类。虽存在……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠巴御前
+再说了，[r]假如双方都是非现实的幻象，
+[k]
+
+＠巴御前
+那幻象消失后，肯定会出现[r]由于与现实的差距而感到痛苦的人吧？
+[k]
+
+[charaFace D 6]
+＠巴御前
+最喜欢的游戏出续作了！[r]太棒了！　是梦啊！
+[k]
+
+[charaFace D 11]
+＠巴御前
+破灭后的痛苦，[r]是一言难尽的！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠齐格鲁德
+正是。你的行为最终只会给[r]这两种[#人:类型]都带去痛苦吧？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠瞑生院Lily
+呵呵呵。
+[k]
+
+＠瞑生院Lily
+苦尽甘来。[r]甘尽苦来。
+[k]
+
+＠瞑生院Lily
+人生原本就是这般。[r]呵呵呵。苦乐皆同。
+[k]
+
+＠瞑生院Lily
+虽然我很喜欢看到大家解脱……
+[k]
+
+＠瞑生院Lily
+但我也不讨厌看到大家痛苦的样子哦？
+[k]
+
+？1：这个意思啊……
+？！
+
+[charaFace E 10]
+
+＠瞑生院Lily
+嗯。[r]那欢谈就到此结束吧。
+[k]
+
+＠瞑生院Lily
+为期数日的恐怖体验[r]令包括我在内的大家玩得很高兴。
+[k]
+
+[bgmStop BGM_EVENT_81 1.0]
+[charaFace E 1]
+
+＠瞑生院Lily
+而画上句号的今天，[r]就由涌现自深海的我[line 3]
+[k]
+
+
+[messageOff]
+[effect bit_talk_charge_ppl]
+[se ad632]
+[seVolume ad632 0 0.7]
+[wt 1.4]
+
+[flashin once 0.1 0.1 FF77FFFF FFFFFF00]
+[wt 0.2]
+[flashin once 0.1 0.1 FF77FFFF FFFFFF00]
+[wt 0.6]
+
+[se ad29]
+[fadeout FF77FF 1.0]
+[seStop ad632 1.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+[charaTalk H]
+[charaFace H 23]
+[charaFadein H 0.1 1]
+[effectDestroy bit_talk_charge_ppl]
+[wt 0.7]
+
+[fadein FF77FF 1.0]
+[wait fade]
+[wt 0.3]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠瞑生院祈荒
+瞑生院祈荒陪大家做对手吧。[r]请务必让我好好感受大家的苦乐哦？
+[k]
+
+？1：只能动手了吗……！
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠齐格鲁德
+唔。[r]全体人员，拿起武器！
+[k]
+
+＠齐格鲁德
+吾爱，并肩战斗吧！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠布伦希尔德
+嗯！　亲爱的！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 0.6 0.4]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+＠瞑生院祈荒
+……[r]……
+[k]
+
+＠瞑生院祈荒
+抱歉，是齐格鲁德大人？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 2]
+[charaDepth G 1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein F 0.1 2]
+[charaFadein G 0.1 0]
+＠齐格鲁德
+正是，在下名为齐格鲁德。
+[k]
+
+[charaFace F 1]
+
+＠齐格鲁德
+而这位是吾爱，[r]布伦希尔德。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+＠瞑生院祈荒
+我知道。
+[k]
+
+＠瞑生院祈荒
+但如果我记得没错的话，[r]齐格鲁德应该是神代的英雄[line 3]
+[k]
+
+[charaFace H 7]
+
+＠瞑生院祈荒
+……为何，会戴眼镜？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein F 0.1 2]
+[charaFadein G 0.1 0]
+＠齐格鲁德
+这是在下的睿智结晶。[r]吾爱也夸奖说这非常适合在下。
+[k]
+
+[charaFace F 1]
+
+＠齐格鲁德
+而吾爱布伦希尔德，[r]今年夏天也获得了结晶。
+[k]
+
+[charaFace F 7]
+＠齐格鲁德
+是在下与吾爱共同作业制作出来的[r]伪·睿智的结晶。
+[k]
+
+[charaFace G 15]
+
+＠布伦希尔德
+共同作业……！
+[k]
+
+[charaFace G 14]
+
+＠布伦希尔德
+这……这么说的话……[r]不，虽然实际上确实没错……
+[k]
+
+＠布伦希尔德
+真……真困扰…………
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+＠瞑生院祈荒
+……[r]……
+[k]
+
+[bgm BGM_EVENT_24 0.6 1.0]
+[charaFace H 7]
+
+＠瞑生院祈荒
+其实并没有什么特殊的原因，[r]但让我将你的眼镜变得模糊吧。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFace G 8]
+[charaFadein F 0.1 2]
+[charaFadein G 0.1 0]
+＠齐格鲁德
+[FFFFFF]？[-]
+[k]
+
+＠布伦希尔德
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+＠瞑生院祈荒
+无需多言。
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

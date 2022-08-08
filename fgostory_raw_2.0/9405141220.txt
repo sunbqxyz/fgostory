@@ -1,0 +1,505 @@
+
+
+
+＄94-05-14-12-2-0
+
+
+[soundStopAll]
+
+[charaSet A 8001600 1 玛修]
+[charaSet B 3044000 1 雏罂]
+[charaSet C 2042001 1 伊莉雅]
+[charaSet D 1098200900 1 紫式部]
+[charaSet E 1098200700 1 阿比盖尔]
+[charaSet F 98002000 1 芙芙]
+[charaSet G 1098198300 1 瞑生院Lily]
+[charaSet H 1033300 1 齐格鲁德]
+[charaSet I 7038000 1 布伦希尔德]
+[charaSet J 1098200800 1 巴御前]
+[charaSet K 1098183600 1 怪物1]
+[charaSet L 1098183600 1 怪物2]
+[charaSet M 1098183600 1 怪物3]
+[charaSet O 98115000 1 梦用特效]
+[imageSet P back10001 1]
+[imageSet R back10000 1]
+[charaScale R 1.01]
+
+
+[charaPut O 1200,1200]
+[charaEffect O bit_talk_yume01]
+
+[charaTalk depthOff]
+[charaDepth P 1]
+[charaDepth A 2]
+[charaDepth F 3]
+[charaDepth J 4]
+
+[charaDepth M 5]
+[charaDepth L 6]
+[charaDepth K 7]
+[charaDepth O 8]
+
+[scene 10000]
+
+[bgm BGM_EVENT_80 0.1]
+
+[effect bit_talk_41]
+
+[se ad769]
+[seVolume ad769 0 0]
+[seVolume ad769 1.0 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.5]
+
+？1：呼，呼……
+？！
+
+[effect bit_talk_blight_01]
+[effectStop bit_talk_41]
+[seStop ad769 0.5]
+
+[wt 3.0]
+
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+[effectDestroy bit_talk_blight_01]
+＠瞑生院Lily
+[&大哥哥:大姐姐]，那边有光！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠雏罂
+虽然不知道啥情况，但只能去那里了。[r]总比留在这里好。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+＠阿比盖尔
+呜[line 3]不行，不行啦。[r][#不能去那边]。
+[k]
+
+[charaFace E 24]
+＠阿比盖尔
+啊啊，不好，快回来！[r]快回来啦！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠伊莉雅
+那孩子停下了脚步！[r]就这样前进！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[effect bit_talk_blight_01]
+[fowardEffect bit_talk_41]
+
+[se ad769]
+[wt 0.5]
+[seStop ad769 1.5]
+[wt 0.5]
+
+
+[effect bit_talk_blight_02]
+[cameraMove 2.0 0,0 1.5]
+
+[wt 1.3]
+
+[se ad598]
+
+[fadeout white 1.5]
+[bgmStop BGM_EVENT_80 1.5]
+[wait fade]
+
+
+[wt 0.5]
+
+[cameraHome 0.1]
+[fowardEffectStop bit_talk_41]
+
+[scene 99902]
+
+
+[charaFadein P 0.1 0,-200]
+[charaFadeTime P 0 0.5]
+[effect bit_talk_celebro]
+[effect bit_talk_celebro_back]
+[fowardEffect bit_talk_celebro]
+[fowardEffect bit_talk_celebro_back]
+
+[wt 1.0]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.4]
+
+[wt 1.0]
+
+[charaPut O 1200,1200]
+[charaFadeout P 1.5]
+[effectStop bit_talk_celebro]
+[effectStop bit_talk_celebro_back]
+[fowardEffectStop bit_talk_celebro]
+[fowardEffectStop bit_talk_celebro_back]
+[wt 2.0]
+
+？1：这里是……？
+？！
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠雏罂
+不清楚。和我们所在的特异点有些相似，[r]但似乎并没有从梦中醒来。
+[k]
+
+[charaFace B 5]
+＠雏罂
+反正不是什么正常地方。[r]一定要小心。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠紫式部
+刚才的少女……[wt 0.3][charaFace D 4]好像被甩掉了呢。[r]呼。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ade255]
+[wt 0.9]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+[charaShake C 0.05 3 3 0.3]
+＠伊莉雅
+咿[messageShake 0.05 3 3 0.3]呀！　有东西！？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[se ad27]
+
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.4 1]
+[wt 1.0]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFace A 19]
+＠玛修
+我刚听到声音……前辈！[r]您原来在这里啊。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠伊莉雅
+啊，玛修小姐！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+＠玛修
+伊莉雅小姐！[r]嗯，很高兴看到您那么精神。
+[k]
+
+[messageOff]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 400,-100]
+[se adm21]
+[charaMove F 250,0 0.6]
+[wt 1.0]
+
+＠芙芙
+芙，芙！
+[k]
+
+[charaFace A 1]
+＠玛修
+芙芙！[r]我好想你啊……！
+[k]
+
+[messageOff]
+
+[charaTalk off]
+
+[se ad183]
+[charaMove A 25,0 0.3]
+[charaMove F 225,0 0.3]
+[wt 0.6]
+[charaMoveReturn A 25,10 0.4]
+[charaMoveReturn F 225,10 0.4]
+[wt 0.4]
+[charaMoveReturn A 25,10 0.4]
+[charaMoveReturn F 225,10 0.4]
+[wt 0.8]
+
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠齐格鲁德
+令人惊讶。没想到竟然在这里遇到了御主。
+[k]
+
+＠齐格鲁德
+在梦中见面固然很奇妙，[r]但在下很高兴您也平安无事。
+[k]
+
+[messageOff]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+？1：玛修你们也是睡着了才来到这里的？
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠玛修
+嗯。看来这里……虽说有些难以置信，[r]但好像是梦中世界。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：这里是……梦中吧？
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠布伦希尔德
+嗯。综合各种线索来考虑，[r]我觉得也只能这么解释了。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠紫式部
+虽然说不出哪里有问题，[r]但整体给人一种朦胧的感觉……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠雏罂
+你们也在被人追赶吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠玛修
+不，我们[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaTalk J]
+[charaFace J 12]
+[charaFadein J 0.1 1]
+＠巴御前
+……！
+[k]
+
+[charaFace J 2]
+＠巴御前
+敌人来袭！　各位，准备战斗！
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[se ade255]
+[wt 1.0]
+
+[se ad20]
+[charaTalk off]
+[charaFace K 0]
+[charaFadein K 0.4 370,0]
+
+[charaFace L 0]
+[charaFadein L 0.4 30,0]
+
+[charaFace M 0]
+[charaFadein M 0.4 -300,0]
+
+[wt 2.0]
+
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+＠伊莉雅
+这次出现了奇怪的东西！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠瞑生院Lily
+那……[r]好像是这个世界的生物吧。
+[k]
+
+[charaFace G 11]
+＠瞑生院Lily
+哇～，滴滴答答地流着口水。[r]是肚子饿了吗？
+[k]
+
+[charaFace G 4]
+＠瞑生院Lily
+但看上去并没有遇到什么困难，[r]Lily不会被引诱～。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠雏罂
+现在可不是冷静分析的时候。[r]我们被包围了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+＠齐格鲁德
+唔。虽说我方人数并不输给对方……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 17]
+[charaFadein I 0.1 1]
+＠布伦希尔德
+但假如这里是梦中，[r]那我们的身体未必能正常行动。
+[k]
+
+＠布伦希尔德
+不能掉以轻心……
+[k]
+
+？1：单点集中攻击，总之想办法突破包围网吧！
+？！
+
+[messageOff]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 12]
+[charaFadein J 0.1 1]
+
+[wt 0.5]
+
+[se ad658]
+[charaCrossFade J 1098198100 0 0.5]
+[wait charaCrossFade]
+[wt 0.5]
+[charaFace J 2]
+＠巴御前
+明白了！[r]是时候让你们见识一下VR新阴流的精髓了！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth C 2]
+[charaDepth R 1]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+[charaFadeTime R 0.1 0.6]
+＠伊莉雅
+（VR是什么啊……）
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+

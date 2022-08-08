@@ -1,0 +1,168 @@
+＄01-00-02-04-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 20700 0]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98003003 1 罗曼医生]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 1005001 1 尼禄]
+[charaSet E 98016000 1 罗马士兵]
+[charaSet F 98006300 1 来路不明人形]
+[communicationCharaLoop 98003003 0 5 0 5]
+[charaFace A 0]
+[charaFadein A 0 2]
+[fadein black 1]
+[wait fade]
+＠玛修
+[line 2]周围未发现敌影。
+[k]
+
+[communicationCharaFace 0]
+＠罗曼医生
+这次是真的安全了。[r]不过下山时要时刻警惕联军士兵的出现。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadein C 0.1 2]
+＠芙芙
+芙，芙呜！
+[k]
+
+[fadeout black 0.5]
+[messageOff]
+[wait fade]
+[charaFadeout C 0.1]
+[communicationCharaClear]
+[wait communicationChara]
+[wt 0.5]
+[scene 20300 0]
+[communicationCharaLoop 98003003 0 5 0 0]
+[charaFace A 0]
+[charaFadein A 0 2]
+[fadein black 0.5]
+[wait fade]
+＠玛修
+联合罗马帝国……[r]似乎是一支拥有从者的势力。
+[k]
+
+[charaFace A 7]
+＠玛修
+首脑到底是何方神圣？[r]雷夫・莱诺尔吗？　还是[line 2]
+[k]
+
+[communicationCharaFace 3]
+＠罗曼医生
+我这边还没掌握到任何情报，[r]不过既然有从者，恐怕是无法避免战斗的。
+[k]
+
+＠罗曼医生
+他们会光明正大地把从者派上战场。[r]这明显很异常。
+[k]
+
+[communicationCharaFace 5]
+＠罗曼医生
+如果没有你们，[r]皇帝陛下想必已经被害了。
+[k]
+
+＠罗曼医生
+请你们一定要加油。[r]我这边也会继续分析情报的。
+[k]
+
+？1：明白了。
+
+？2：医生你也要加油。
+
+？！
+
+[charaFadeout A 0.1]
+[charaFadein C 0.1 2]
+＠芙芙
+芙！
+[k]
+
+[fadeout black 0.5]
+[messageOff]
+[wait fade]
+[communicationCharaClear]
+[wait communicationChara]
+[charaFadeout C 0.1]
+[wt 0.5]
+[scene 20602 0]
+[charaTalk D]
+[charaFace A 0]
+[charaFadein A 0 2]
+[charaFace D 1]
+[charaFadein D 0 0]
+[fadein black 0.5]
+[wait fade]
+＠尼禄
+噢噢，都回来啦，[%1]。
+[k]
+
+[charaFace D 0]
+＠尼禄
+抱歉，虽然各位刚回来，[r]但余这会儿正打算远征高卢。
+[k]
+
+＠尼禄
+当然余若不亲自出马就没有意义了。[r]目的就是为了鼓舞苦战中的部下们，并助其一臂之力。
+[k]
+
+[charaFace D 1]
+＠尼禄
+希望[%1]和玛修能陪余一同前往。[r]如何，愿意一起来吧？
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0]
+[wt 0.5]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+……怎么办，前辈？
+[k]
+
+[se ad13]
+[wait se ad13]
+＠罗曼医生
+我已经从皇帝陛下口中获知详细战况了。[r]高卢应该是与联军交战的最前线之一。
+[k]
+
+＠罗曼医生
+拥有圣杯的敌将从者可能正在胡作非为，[r]而且说不定雷夫也在。
+[k]
+
+＠罗曼医生
+眼下最好和她一起行动。[r]虽说自然少不了危险相伴[line 2]
+[k]
+
+？1：那就没办法了。
+
+？2：上吧，也要注意保重自己。
+
+？！
+
+[charaFace A 13]
+＠玛修
+……是，前辈。[r]我也这样想。
+[k]
+
+[charaFadeout A 0.1]
+[charaFace D 2]
+[charaFadein D 0.1 0]
+[charaFadein E 0.1 2]
+＠尼禄
+那就这么决定了！[r]皇帝御驾亲征！　速做准备！
+[k]
+
+＠罗马士兵
+遵旨！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_2 0.4]
+[wait fade]
+[soundStopAll]
+[end]

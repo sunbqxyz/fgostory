@@ -1,0 +1,183 @@
+
+
+＄94-04-01-11-1-1
+
+[soundStopAll]
+
+[charaSet A 98100400 1 玛修]
+[charaSet B 1040000 1 葛饰北斋]
+[charaSet C 1008300 1 齐格飞]
+[charaSet D 4034001 1 优雅的海盗]
+[charaSet E 98018100 1 失心的客人]
+[charaSet F 99363000 1 理性的机器]
+[charaSet G 99363000 1 ？？？]
+[charaSet J 98115000 1 特效用]
+
+[scene 81500]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+
+[charaFace F 0]
+[charaFadein F 0.1 0]
+
+＠失心的客人
+可恶，这些家伙太强了！[r]既然如此，不惜自爆也要把硬币抢到手！
+[k]
+
+＠理性的机器
+还差一次。一次　之后　宇宙　将[line 3][bgmStop BGM_EVENT_80 1.0][r]将？　将？　危险，危险，巨大的物体出现在上空，
+[k]
+
+＠？？？
+嘎[messageShake 0.02 3 3 0.6]呜[line 5]！[r]要[line 2]吃掉[line 3]你们了哦[line 5]！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad241]
+[seVolume ad241 0 0.2]
+[se ad214]
+[seVolume ad214 0 0.5]
+[wt 1.5]
+
+[seStop ad214 1.0]
+[seStop ad241 1.0]
+[se ad211]
+[seVolume ad211 0 0]
+[seVolume ad211 1.4 0.5]
+[wt 0.4]
+
+[effect bit_talk_tidal_wave]
+[wt 1.0]
+
+[seStop ad211 0.1]
+[se ad226]
+[seVolume ad226 0 0.8]
+[se ad416]
+[seVolume ad416 0 0.8]
+
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 1.5]
+
+[se ad414]
+
+[seStop ad414 1.0]
+
+[se ad218]
+
+[wt 1.0]
+[seStop ad218 1.0]
+[wt 3.0]
+
+[se ade39]
+[wt 1.8]
+
+＠场内广播
+抱歉惊扰到各位了。[r]我们已将2名兴奋的客人安全保护起来了。
+[k]
+
+＠场内广播
+请各位继续享受优雅＆刺激的赌场，[r]水天宫。
+[k]
+
+[messageOff]
+[se ade40]
+[wt 2.2]
+
+
+[charaTalk depthOff]
+[charaDepth C 3]
+[charaDepth B 2]
+[charaDepth A 1]
+
+[charaFace C 2]
+[charaFadein C 0.1 -330,0]
+
+[charaFace B 20]
+[charaFadein B 0.1 30,0]
+
+[charaFace A 6]
+[charaFadein A 0.1 330,0]
+
+[wt 2.5]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_55 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠玛修
+是我太累看到幻觉了吗……[r]波浪那边好像有个巨大的人影……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠齐格飞
+……嗯。看来这里虽然没有警卫，[r]却有一位来路不明的守护神。
+[k]
+
+[charaFace C 0]
+
+＠齐格飞
+赌场里应该有很多像刚才那样的暴徒。[r]我们得多加小心。
+[k]
+
+＠齐格飞
+总之先和小太郎、尼禄会合吧。[r]毕竟这座赌场不大。应该很快就能找到他们了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠葛饰北斋
+好。那就分头行动吧。[r]中午再回到这里，可以吗？
+[k]
+
+？1：明白了。各位务必要加强自制力啊。
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠齐格飞
+那是当然。毕竟下午的舞台表演才是关键。[r]在那之前一定要保存实力。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_55 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

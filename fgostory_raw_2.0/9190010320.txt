@@ -1,0 +1,99 @@
+
+
+＄91-90-01-03-2-0
+
+
+[soundStopAll]
+
+[charaSet A 9001001 1 贞德]
+[charaSet B 5014001 1 梅菲斯托费勒斯]
+[charaSet C 5014001 1 梅菲斯托费勒斯（敌）]
+[charaSet D 98006200 1 杂兵烟状]
+[charaSet E 98025000 1 影从者(空手)]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 20500]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠贞德
+主会原谅所有不义，原谅所有灾厄。[r]然后将生命从墓穴中救出，慈悲、怜悯[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+[charaSpecialEffect D enemyErasure 1 1.5]
+[se ad42]
+[wait charaSpecialEffect D]
+[wt 1.0]
+
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠梅菲斯托费勒斯（敌）
+哎呀哎呀，了不起了不起！[r]看来区区亡灵已经不是你的对手了呢！
+[k]
+
+＠梅菲斯托费勒斯（敌）
+那么，这些如何呢？[r]各位匿名从者，Come on！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[se ad25]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 1.6]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠贞德
+影从者……！
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠梅菲斯托费勒斯
+没什么大不了的，只是些四处漂泊的彷徨之影。
+[k]
+
+[charaFace B 2]
+＠梅菲斯托费勒斯
+连自我意识都没有的存在，[r]是赢不了我们的！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

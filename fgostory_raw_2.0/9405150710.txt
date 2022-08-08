@@ -1,0 +1,579 @@
+
+＄94-05-15-07-1-0
+
+[soundStopAll]
+
+[charaSet A 5012001 1 尼托克丽丝]
+[charaSet B 3025000 1 清姬]
+[charaSet C 1031000 1 弗兰]
+[charaSet D 7034001 1 莎乐美]
+[charaSet E 3014001 1 宝藏院胤舜]
+[charaSet F 5035000 1 阿纳斯塔西娅]
+[charaSet G 7015000 1 埃里克]
+[charaSet I 7011000 1 大流士三世]
+
+[imageSet J cut049_frame01 1]
+[charaScale J 1.01]
+[charaSet K 98002000 1 dummy特效1]
+
+[imageSet O cut214_text01 1]
+[imageSet P cut215_text01 1]
+[imageSet Q cut216_text01 1]
+[imageSet R cut027_fks 1]
+
+
+[charaDepth E 1]
+[charaDepth F 1]
+[charaDepth G 1]
+[charaDepth B 1]
+[charaDepth C 1]
+[charaDepth D 1]
+[charaDepth I 4]
+[charaDepth K 6]
+[charaDepth J 7]
+[charaDepth A 10]
+
+
+
+[scene 21000]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠尼托克丽丝
+咦？[r]森林中突然出现的这帐篷是什么？
+[k]
+
+＠尼托克丽丝
+有招牌呢。让我看看……？
+[k]
+
+＠尼托克丽丝
+『纳凉·怪谈小屋[r]　任何人都可自由进入　免费入场』
+[k]
+
+[charaFace A 0]
+
+＠尼托克丽丝
+……这样啊。[r]唔，总之先进去看看吧。
+[k]
+
+[messageOff]
+[se ad748]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 10000]
+[pictureFrame]
+[wt 0.5]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠尼托克丽丝
+里面好暗啊……
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ade319]
+[wt 0.8]
+
+[wt 0.7]
+
+[charaFace A 0]
+＠尼托克丽丝
+哎哟，好像快开始了。[r]兴奋兴奋。
+[k]
+
+[messageOff]
+[fadeout white 1.5]
+[seStop ade319 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[charaFadein J 0.1 0,-200]
+
+[scene 79500]
+[wt 1.0]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_EVENT_66 0.1]
+
+＠女性的声音
+『无耳芳一』的故事……
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth O 9]
+
+[charaFace E 4]
+[charaFadein E 0.4 0,-50]
+[wt 0.4]
+
+＠女性的声音
+[charaFadein O 0.4 0,-200]
+在很久很久以前，[r]某座寺院里居住着一位名叫芳一的琵琶法师。
+[k]
+
+[charaFadeout O 0.4]
+＠女性的声音
+芳一的双眼虽然看不见，[r]却是弹唱平家物语的名手[line 3]
+[k]
+
+[messageOff]
+
+[charaTalk on]
+[charaScale A 0.6]
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.4 350,-240]
+[wt 0.4]
+
+＠尼托克丽丝
+嗯嗯……
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_66 1.0 0.4]
+[wait fade]
+
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[bgm BGM_EVENT_66 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+[wt 0.3]
+
+＠女性的声音
+……就这样，失去了双耳的他[r]被人们称作『无耳芳一』。完。
+[k]
+
+[messageOff]
+[wt 0.4]
+
+[charaEffect K bit_talk_curtain01]
+[wt 2.8]
+
+[fadeout white 1.5]
+[bgmStop BGM_EVENT_66 1.5]
+[wait fade]
+
+[charaPut K 1200,1200]
+[charaEffectStop K bit_talk_curtain01]
+[charaFadeout J 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein white 1.5]
+[wait fade]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠尼托克丽丝
+原来如此，这故事真有意思。[r]虽然不知道算不算纳凉体验。
+[k]
+
+[charaFace A 7]
+
+＠尼托克丽丝
+没想到对方居然只带回了耳朵……[r]但怪异总是这么不讲道理呢。
+[k]
+
+[charaFace A 9]
+
+＠尼托克丽丝
+死灵之类就是这样，[r]是身为领导者必须[#端正]的问题。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ade319]
+[wt 0.8]
+
+[wt 0.7]
+
+[charaFace A 4]
+＠尼托克丽丝
+……咦？
+[k]
+
+＠女性的声音
+[charaTalk K]
+接下来是这个故事[line 3]
+[k]
+
+[messageOff]
+[fadeout white 1.5]
+[seStop ade319 1.5]
+[wait fade]
+
+[charaFadein J 0.1 0,-200]
+[charaFadeout A 0.1]
+
+[scene 55300]
+[wt 1.0]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.3]
+
+
+[charaTalk off]
+[charaDepth P 9]
+[charaFace F 5]
+[charaFadein F 0.4 0,-50]
+[wt 0.4]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠女性的声音
+[charaFadein O 0.4 0,-200]
+关于可怕的『雪女』。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaFace G 1]
+[charaFace I 1]
+[charaFadein G 0.4 -200,-50]
+[charaFadein I 0.4 200,-50]
+[wt 0.4]
+
+＠女性的声音
+[charaFadein O 0.4 0,-200]
+在某个地方，有两个伐木匠，[r]年老的叫茂作，年轻的叫巳之吉。
+[k]
+
+[charaFadeout O 0.4]
+＠女性的声音
+某天，突然遭到暴风雪袭击的两人[r]在小屋躲避了一夜[line 3]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[wait fade]
+
+[charaFadeout G 0.1]
+[charaFadeout I 0.1]
+[wt 0.8]
+
+[wt 1.0]
+
+
+[scene 27300]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_66 0.1]
+
+[charaTalk on]
+＠女性的声音
+下一个是出自雨月物语的『蛇性之淫』的故事[line 3]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth Q 9]
+
+
+[charaFace B 1]
+[charaFadein B 0.4 0,-50]
+[wt 0.4]
+
+＠清姬
+[charaFadein P 0.4 0,-200]
+只要直接表演道成寺缘起的故事就行了吗？
+[k]
+
+[charaFace B 0]
+
+[charaFadeout P 0.4]
+＠清姬
+我的生前可不是什么恐怖故事，[r]而是悲恋谭。
+[k]
+
+[charaFace B 4]
+＠清姬
+绘卷很恐怖？[wt 0.5][charaFace B 1][r]不，那是纯爱。
+[k]
+
+
+[messageOff]
+[charaScale A 0.6]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.4 350,-240]
+[wt 0.4]
+
+[charaTalk on]
+＠尼托克丽丝
+…………？
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_66 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaPut K 1]
+[charaEffect K bit_talk_curtain03]
+[scene 10000]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+＠女性的声音
+再说一些西洋的故事吧。
+[k]
+
+＠女性的声音
+下一个是悲哀而可怕的怪物，[r]『弗兰肯斯坦』……
+[k]
+
+[messageOff]
+[charaEffectStop K bit_talk_curtain03]
+[wt 0.2]
+
+[se ade10]
+[seVolume ade10 0 0.6]
+[charaFadein R 0.7 0,-200]
+[wt 6.4]
+
+
+
+[scene 60100 1.5]
+[charaFadeout R 1.5]
+[wt 1.9]
+
+
+[charaTalk off]
+[charaFace C 0]
+[charaFadein C 0.4 0,-50]
+[wt 0.4]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠弗兰
+[charaFadein Q 0.4 0,-200]
+我～是～怪～物～哦～。[r]嘎噢～。
+[k]
+
+[messageOff]
+[charaFace A 3]
+[charaFadein A 0.4 350,-240]
+[charaFadeout Q 0.4]
+[wt 0.4]
+
+[charaTalk on]
+＠尼托克丽丝
+…………？？
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_3 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+
+[scene 20900]
+[charaPut K 1]
+[charaEffect K bit_talk_curtain03]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.3]
+
+＠女性的声音
+接着是砍下首级的可怕故事，[r]『莎乐美』[line 3]
+[k]
+
+[messageOff]
+[charaEffectStop K bit_talk_curtain03]
+[wt 2.4]
+
+
+[charaTalk off]
+
+[charaFace D 0]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠莎乐美
+[charaFadein Q 0.4 0,-200]
+约翰？[r]又能得到约翰的首级了吧，好高兴啊。
+[k]
+
+[messageOff]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.4 350,-240]
+[charaFadeout Q 0.4]
+
+[charaTalk on]
+＠尼托克丽丝
+…………！？
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_5 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[charaEffectDestroy K bit_talk_curtain01]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+＠女性的声音
+今晚到此结束……
+[k]
+
+[messageOff]
+[se ade319]
+[wt 1.5]
+[charaPut K 1]
+[charaEffect K bit_talk_curtain01]
+[wt 2.4]
+
+[fadeout black 1.5]
+[seStop ade319 1.5]
+[wait fade]
+
+[charaFadeout J 0.1]
+[charaEffectDestroy K bit_talk_curtain01]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_25 0.1]
+
+＠尼托克丽丝
+唔……虽然有不少疑问，[r]但总之故事还是非常有趣的！
+[k]
+
+[charaFace A 4]
+
+＠尼托克丽丝
+不过因为一直集中注意力，[r]身体都僵硬了呢。
+[k]
+
+＠尼托克丽丝
+肩膀和脖子好酸啊……
+[k]
+
+[bgmStop BGM_EVENT_25 1.0]
+
+＠女性的声音
+[charaTalk K]
+…[messageShake 0.04 3 3 0.3]…！　那可不行！
+[k]
+
+＠女性的声音
+[charaTalk K]
+运动不足、水分不足……血液循环不畅导致血栓……[r]静脉血栓栓塞症！　会……会死的！
+[k]
+
+[charaFace A 8]
+＠尼托克丽丝
+！？
+[k]
+
+＠女性的声音
+[charaTalk K]
+既然如此，[r]我们就变更一下谢幕演出的预定，
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠女性的声音
+[charaTalk K]
+准备观众参加型的歌舞剧风结局吧。
+[k]
+
+＠女性的声音
+[charaTalk K]
+请来一起唱歌跳舞，[r]活动一下身体。
+[k]
+
+＠女性的声音
+[charaTalk K]
+当然，我此前一直在叙述，[r]同样没有活动身体，
+[k]
+
+＠女性的声音
+[charaTalk K]
+所以请容我也加入……[r]因为我不想死！
+[k]
+
+
+[charaFace A 3]
+＠尼托克丽丝
+突……突然说观众也来参加我可不好办啊！？
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,462 @@
+
+＄94-06-57-09-3-0
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 7028000 1 バニヤン]
+[charaScale A 2.2]
+[charaSet B 5004002 1 ナーサリーライム]
+[charaSet C 6005001 1 ジャック]
+[charaSet D 7006001 1 坂田金時]
+[charaSet E 1098165400 1 シェイクスピア]
+[charaSet F 1002000 1 女王]
+[charaSet G 5011001 1 バベッジ]
+
+[sceneSet H 144700 1]
+
+[sceneSet I 144800 1]
+[sceneSet J 144400 1]
+
+[charaSet K 1098166310 1 車掌]
+[charaSet L 1098228000 1 支配人代理]
+[charaSet O 6015001 1 ケリィ]
+
+[imageSet M back10000 1]
+[imageSet N back10000 1]
+[charaScale M 1.01]
+[charaScale N 1.01]
+
+[scene 10000]
+
+[charaPut G 0,-3400]
+[charaScale G 0.01]
+[charaEffect G bit_talk_bubble_fs]
+
+[wt 1.5]
+
+[wt 1.0]
+
+＠
+人格が[#剥落:はくらく]していく。[bgm BGM_EVENT_103 0.1]
+[k]
+
+[messageOff]
+[wt 2.0]
+
+＠
+思い出は薄れていく。
+[k]
+
+[messageOff]
+[wt 2.0]
+
+＠
+自分が人間だったという過去が失われる。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+自分が生物だったという記録が[#喪:うしな]われる。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+ここは[#暖かい:さ　む　い]。[r]ここは[#暗い:あかるい]。
+[k]
+
+[messageOff]
+[wt 2.0]
+
+＠
+永遠と刹那が背中合わせに同居して、[r]きっと時間の流れだって停止している。
+[k]
+
+＠
+一秒なんて言葉はおかしいけれど。[r]ひとつ数えるたびに、何かが砕け散っていく。
+[k]
+
+[messageOff]
+[wt 2.0]
+
+＠
+[#■:じぶん]はすでに、この闇と同じだ。[r]自己と空間の区別はなく、時間と[#■:じぶん]の区別はない。
+[k]
+
+[messageOff]
+[se ade53]
+[seVolume ade53 0 0.1]
+[seVolume ade53 1.0 0.2]
+[fadein black 0.4]
+[wait fade]
+[seStop ade53 1.5]
+[wt 0.5]
+[fadeout black 1.0]
+[wt 1.5]
+[charaEffectDestroy G bit_talk_bubble_fs]
+
+＠
+それでも。
+[k]
+
+[messageOff]
+[charaPut G 0,-0]
+[charaScale G 1.0]
+[charaEffect G bit_talk_bubble_fs]
+[wt 2.0]
+
+＠
+それでも、[r]かつての言葉だけがとどまっている。
+[k]
+
+＠
+『[line 3]私は、必ず覚えている』
+[k]
+
+[messageOff]
+[fadein black 0.4]
+[se ade53]
+[seVolume ade53 0 0.1]
+[seVolume ade53 1.5 0.4]
+[wt 1.5]
+[seStop ade53 1.5]
+[fadeout black 1.0]
+[wt 1.0]
+[charaEffectDestroy G bit_talk_bubble_fs]
+[wt 0.5]
+
+[fadein black 0.1]
+[effect bit_talk_light_loop_gold]
+[wt 2.0]
+
+＠
+その言葉を抱きしめる。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+もう、どこで考えているかも分からないけれど、[r][#縁:よすが]として、歩いていく。
+[k]
+
+[messageOff]
+[wt 2.0]
+
+＠？？？
+こっちだ、バカ。
+[k]
+
+＠
+[line 3]ありえない声が、聞こえた気がした。
+[k]
+
+＠
+誰かの気配。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+五感なんてとっくに死んでるけれど、心が感じてる。
+[k]
+
+＠
+なくなったはずの足が、動き出す。
+[k]
+
+[messageOff]
+[wt 2.0]
+
+＠
+導いてくれる光に、目を細める。
+[k]
+
+[messageOff]
+[wt 0.5]
+[effectStop bit_talk_light_loop_gold]
+[scene 10001 2.5]
+[wt 2.0]
+
+＠
+いつか、この夢が。[r]そんなに悪くはなかったと、笑うために[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_103 2.5]
+[fadeout white 1.0]
+[wait fade]
+
+[charaScale G 1.0]
+[scene 10000]
+[wt 0.1]
+
+[fadein white 1.5]
+[wait fade]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 144300]
+[overlayFadein M 0.1 0,-745]
+[overlayFadein N 0.1 0,745]
+[wt 2.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 0,-50]
+
+＠車掌
+………敵性反応、すべて消滅しました。[r]ネガ・ロンゴミニアドの干渉範囲からも脱出完了。
+[k]
+
+＠車掌
+[%1]とフェイカーは………
+[k]
+
+[messageOff]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.4 0,-50]
+[wt 1.7]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 0,-50]
+
+＠車掌
+………そうですか。
+[k]
+
+＠車掌
+了解しました。[r]あなた様のご意志のままに。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout K 0.1]
+[charaFadein J 0.1 0,-200]
+[wt 2.0]
+[fadein black 1.5]
+[wait fade]
+
+[se ad67]
+＠アナウンス
+ただいまより、[#魔眼蒐集列車:レ ー ル ・ ツ ェ ッ ペ リ ン] は、[r]特異点パッチワーク・ロンドンを離れます。
+[k]
+
+＠アナウンス
+お客様は座席におかけください。
+[k]
+
+＠アナウンス
+繰り返します。ただいまより、[#魔眼蒐集列車:レ ー ル ・ ツ ェ ッ ペ リ ン] は[r]特異点パッチワーク・ロンドンを離れます。
+[k]
+
+＠アナウンス
+どうぞ、お客様は座席におかけください………
+[k]
+
+[messageOff]
+[wt 1.0]
+[se ad775 0.1]
+[charaMove J 0,-190 0.4]
+[wt 1.4]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout J 0.1]
+[scene 28304]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,60]
+[wt 2.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_45 0.1]
+
+＠バニヤン
+ねえ、見て！[r]汽車さんが空を飛んでる！
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[scene 77800]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠ナーサリー・ライム
+本当だわ………！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 0,-50]
+
+＠ジャック
+飛ぶんだ、汽車……！[r]え、それ、本当に汽車？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠坂田金時
+ゴールデンだな、ありゃあ。[r]………ああ、ずいぶん遠くに行くんだな。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_45 1.0 0.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[scene 73200]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_45 1.0 1.0]
+[wait fade]
+
+＠シェイクスピア
+戦いは終わった。音楽も絶えた。[r][#おまえの光は今何処にある:W h e r e   i s   t h y   l u s t r e   n o w ?]。
+[k]
+
+[charaFace E 1]
+
+＠シェイクスピア
+いいえ、今日ばかりはあの夜空に[#燦然:さんぜん]と。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_45 1.0 0.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[scene 73300]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 0,-50]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_45 1.0 1.0]
+[wait fade]
+
+＠女王
+ソラに昇る流星とは。[r]……フ。おとぎ話でもあるまいに。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_45 1.0 0.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[scene 74100]
+[charaTalk O]
+[charaFace O 0]
+[charaFadein O 0.1 0,-50]
+[charaEffect O bit_talk_06]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_45 1.0 1.0]
+[wait fade]
+
+
+＠ケリィ
+そうか。退去の寸前に、[r]僕の見る光景はこれか………
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+[charaPut O 1200,1200]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 0,-50]
+
+＠バベッジ
+ああ、ああ、なんということだ。[r]なんということだ。
+[k]
+
+＠バベッジ
+あれは[line 3]
+[k]
+
+[messageOff]
+[charaFadeout M 1.0]
+[charaFadeout N 1.0]
+[charaFadeout G 1.0]
+[cueSe SE_21 21_ade688]
+[seVolume 21_ade688 0 0]
+[seVolume 21_ade688 1.5 0.5]
+[scene 144800 1.5]
+[wt 3.2]
+
+＠バベッジ
+あれは、生前の私でさえ[r][#夢にも思わなかったような]列車ではないか……………………
+[k]
+
+[messageOff]
+[wt 1.2]
+[seStop 21_ade688 1.5]
+[charaScale H 1.5]
+[charaFadein H 1.5 -150,-240]
+[charaMove H 50,-340 6.0]
+[wt 3.0]
+[scene 144700]
+[wt 2.0]
+[charaFadeout H 1.5]
+[wt 4.5]
+[wait touch]
+[fadeout black 2.5]
+[bgmStop BGM_EVENT_45 2.5]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,140 @@
+
+＄94-00-95-02-1-1
+
+[charaSet A 1017001 1 武藏]
+[charaSet B 98075000 1 助六]
+[charaSet C 6008002 1 克娄巴特拉]
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[scene 28220]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.4 1]
+[wt 0.4]
+[effect bit_talk_Slash_red_01]
+[se bac136]
+[wt 0.2]
+[effect bit_talk_13]
+[charaShake C 0.05 4 0 0.7]
+＠克娄巴特拉
+呀啊啊啊啊[line 6]！
+[k]
+
+[effectStop bit_talk_Slash_red_01]
+[messageOff]
+
+[charaFadeout C 0.7]
+[wt 0.7]
+[se ad144]
+[wt 1.0]
+
+[effectStop bit_talk_13]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-20]
+
+[charaMove B 0,-10 0.1]
+[wait charaMove B]
+[charaMove B 0,-20 0.1]
+[wait charaMove B]
+[charaMove B 0,-10 0.1]
+[wait charaMove B]
+[charaMove B 0,-20 0.1]
+[wait charaMove B]
+＠助六
+漂亮，胜负已定！
+[k]
+
+？1：胜利者，新免武藏守～！
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠武藏
+啊。刚才的宣布胜利名字真带感。[r]谢谢你，[%1]！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.7 0,-128]
+[charaMove C 1 0.7]
+[charaShake C 0.05 4 0 1.0]
+[wt 0.7]
+＠克娄巴特拉
+呜……！[r]你们是何等不懂得商机的人！
+[k]
+
+＠克娄巴特拉
+这种时候明明应该夸奖妾身才对！[r]明明是获得名为美丽的红包的机会啊！
+[k]
+
+[charaFace C 5]
+＠克娄巴特拉
+但妾身决不会放弃！[r]梦中的训练之岛[line 3]
+[k]
+
+[charaEffect C bit_talk_06]
+＠克娄巴特拉
+为了恺撒大人，[r]妾身一定要完成克娄巴特拉修身岛才行啊[line 3]！
+[k]
+
+[messageOff]
+[charaSpecialEffect C flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect C]
+[charaEffectStop C bit_talk_06]
+[wt 0.7]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠武藏
+咦？　我好像没有砍那么重吧，[r]那女人消失了呢。
+[k]
+
+？1：她回迦勒底了啦。
+
+？！
+
+[charaFace A 1]
+＠武藏
+这样啊。既然不是性命攸关的问题就好。[r]那我们重整旗鼓继续前进吧。
+[k]
+
+＠武藏
+照这个情况来看，那个……是叫从者吗？[r]剩下的门应该也是他们守护着吧。
+[k]
+
+＠武藏
+如果能通过交涉解决问题，就好好谈，[r]如果只能靠刚才那种武力解决，也无妨！
+[k]
+
+＠武藏
+反正只要挥舞刀剑就能恢复记忆。[r]但凡是有交手价值的实力强劲的对手，无论是谁我都欢迎！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

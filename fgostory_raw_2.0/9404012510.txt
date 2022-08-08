@@ -1,0 +1,868 @@
+
+
+
+＄94-04-01-25-1-0
+
+[soundStopAll]
+
+
+
+[charaSet A 1040000 1 葛饰北斋]
+[charaSet B 7036001 1 宫本伊织]
+[charaSet C 1008300 1 齐格飞]
+[charaSet D 6019300 1 风魔小太郎]
+[charaSet E 98002000 1 芙芙]
+[charaSet F 98100400 1 玛修]
+[charaSet G 1098176810 1 刑部姬]
+[charaSet H 1098177300 1 卡米拉]
+[charaSet I 1098177400 1 Λ]
+[charaSet J 5009000 1 特效用]
+
+[scene 82100]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_62 0.1]
+
+＠葛饰北斋
+万事！　具备！
+[k]
+
+＠葛饰北斋
+不管怎么说，这是最后的七色决胜了！[r]『挑战书』有了，斗志有了，接下来只需在对决时呐喊[line 3]
+[k]
+
+[charaFace A 10]
+
+＠葛饰北斋
+不。在此之前。[r]先得与那三骑健壮的[#夏威夷杉]骑士对决。
+[k]
+
+
+＠葛饰北斋
+准备好了吗，御主？
+[k]
+
+？1：当然。
+？2：随时都可以。
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠宫本伊织
+好！[r]那就堂堂正正地从正面上吧！
+[k]
+
+[charaFace B 5]
+＠宫本伊织
+迦勒底的御主和玛修小姐，[r]以及齐聚一堂的拉斯维加斯泳装剑豪们！
+[k]
+
+＠宫本伊织
+大家都有觉悟了吗！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠齐格飞
+当然。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[fowardEffect bit_talk_quickmove]
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 0,-40]
+[se ad73]
+[charaMove D 0,0 0.1]
+[wt 0.4]
+
+＠D：风魔小太郎
+我会一直追随主公身侧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠芙芙
+芙芙，芙呜！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠玛修
+尽管我在这次战斗中帮不上忙……[r]但我会尽可能确认正确的状况并向各位汇报！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠刑部姬
+玛修亲真了不起！[r]既然坐上了一条船，那[#公主:我]也会全力支援！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠卡米拉
+说得太对了。我们是同一条船上的。[r]但千万小心，可别成了飞翔的荷兰人哦？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠Λ
+只要还没到表演时间，[r]我随时都可以。
+[k]
+
+？1：出发，前往卡美洛赌场！
+
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠葛饰北斋
+噢！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[se ad59]
+[cueSe Battle bac343]
+
+[charaFadeout A 0]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout rectangleStripLeftToRight 0.1 1.0]
+[wait wipe]
+
+[scene 82200]
+
+[cameraMove 0.1 0,0 1.01]
+
+[charaSet B 1098155200 1 高文]
+[charaSet D 1098155000 1 兰斯洛特]
+[charaSet E 1098155100 1 崔斯坦]
+[charaSet F 1098155200 1 高文_剪影]
+[charaSet G 1098155000 1 兰斯洛特_剪影]
+[charaSet H 1098155100 1 崔斯坦_剪影]
+[charaSet I 2023300 1 莫里亚蒂]
+[charaFilter F silhouette 00000080]
+[charaFilter G silhouette 00000080]
+[charaFilter H silhouette 00000080]
+
+
+[shake 0.05 4 4 0]
+
+[effect bit_talk_41]
+[wt 0.9]
+
+[wipein rectangleStripRightToLeft 0.3 1.0]
+[wait wipe]
+
+[wt 2.0]
+
+[effectStop bit_talk_41]
+[seStop ad59 0.3]
+[cueSeStop bac343 0.3]
+[se ad671]
+[shake 0.05 0 1 0.6]
+[cameraHome 0.1]
+
+[bgmStop BGM_EVENT_62 0.7]
+
+＠声音
+请止步！
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[charaTalk depthOff]
+[charaDepth F 3]
+[charaDepth B 6]
+
+[se ad95]
+[seVolume ad95 0 0.05]
+[seVolume ad95 1.8 1.0]
+[wt 2.0]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFadein F 0.7 1]
+[wt 0.7]
+[seStop ad95 0.1]
+[wt 0.7]
+
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.8]
+
+[bgm BGM_EVENT_90 0.1]
+
+＠高文
+请止步。[r]为何如此急匆匆的呢，各位客人。
+[k]
+
+＠高文
+难道是发生了什么紧急情况？[r]这条路的前面只有一位大人。
+[k]
+
+[charaFace B 5]
+
+＠高文
+非[#贵宾:VIP]的客人是无法觐见吾等之主，[r]也就是泳装狮子王陛下的……不。
+[k]
+
+＠高文
+你们是企图拿着那真伪难辨的『挑战书』，[r]讨伐泳装狮子王陛下吗？
+[k]
+
+[charaFadeout F 0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠葛饰北斋
+一目了然吧，蠢货！[r]我们的目的就是刚才你说的最后那件事！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠高文
+哦。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠葛饰北斋
+我是不世出的天才剑客画师兼未来的仙女，葛饰北斋。[r]不对，现在的我已经是天才剑豪画师了！
+[k]
+
+＠葛饰北斋
+就算你这夏威夷衫健壮骑士前来迎接，[r]也不是我的对手。
+[k]
+
+＠葛饰北斋
+我寻求的对手的只有一位！[r]就是那个统治绚烂豪华拉斯维加斯的泳装狮子王！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 1.2]
+
+[charaFace B 0]
+
+＠高文
+真嚣张啊。
+[k]
+
+＠高文
+正直是美德。[r]所以我不会责备你。
+[k]
+
+＠高文
+你的打扮与剑[line 3]一看就知道是真正的泳装剑豪。
+[k]
+
+＠高文
+一旦获得了泳装剑豪的灵基，[r]自然会想要站上顶点。
+[k]
+
+＠高文
+我认可你的『挑战书』是正当的。[r]真亏你能拿得到。
+[k]
+
+[charaFace B 5]
+
+＠高文
+不过……
+[k]
+
+[charaFace B 2]
+
+＠高文
+很遗憾，顶点永远只有一位！[r]那就是君临拉斯维加斯的光辉，吾等的泳装狮子王！
+[k]
+
+[messageOff]
+[wt 0.4]
+
+[charaTalk off]
+
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth G 2]
+[charaDepth E 4]
+[charaDepth D 5]
+
+[charaFace H 0]
+[charaFadein H 0.7 -320,0]
+[charaFace G 0]
+[charaFadein G 0.7 320,0]
+[wt 1.4]
+
+[charaFace E 0]
+[charaFadein E 1.0 -320,0]
+[charaFace D 0]
+[charaFadein D 1.0 320,0]
+[wt 1.5]
+
+[charaTalk on]
+
+＠兰斯洛特
+你在兴奋什么啊，高文卿。[r]这种理所应当的道理没必要高声叫喊吧。
+[k]
+
+[messageOff]
+[charaTalk E]
+[charaFace E 4]
+[wt 0.1]
+
+[se ad151]
+[wt 1.2]
+
+＠崔斯坦
+我好悲伤……
+[k]
+
+＠崔斯坦
+高文卿突然认真了起来，[r]我好悲伤……
+[k]
+
+[charaFace E 9]
+
+＠崔斯坦
+我还想再享受几天[r]身为纯粹夏威夷衫男人的生活呢……
+[k]
+
+＠崔斯坦
+难道这已经是个无法实现的梦想吗？[r]啊啊……
+[k]
+
+＠高文
+没错。[r]我们夏威夷衫三骑士的身体与性命全都献给了泳装狮子王！
+[k]
+
+[charaFace B 5]
+
+＠高文
+绝不允许除了玩扑克的贵宾之外的人进入此地。[r]所以[line 3]
+[k]
+
+＠高文
+你们是无论如何都无法继续前进了。[r]死心吧。
+[k]
+
+[charaFadeout H 0]
+[charaFadeout G 0]
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+
+＠葛饰北斋
+哪……哪怕你这么说，我也不会放弃！[r]毕竟是那个泳装狮子王大人叫我们来的啊！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠崔斯坦
+奇怪了，你们有[#预约:Appointment]吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠葛饰北斋
+什么！
+[k]
+
+[charaFace A 23]
+
+[bgmStop BGM_EVENT_90 1.0]
+
+＠葛饰北斋
+[#预约:Appointment]是什么东西，蠢货！
+[k]
+
+[charaFace A 2]
+
+＠葛饰北斋
+气死我了！[r]看来得使出杀手锏了，保镖先生！！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaSet A 5039000 1 斯卡哈·斯卡蒂]
+[charaSet F 6019300 1 风魔小太郎]
+[charaSet G 98100400 1 玛修]
+[charaSet H 1098177300 1 卡米拉]
+[wt 0.5]
+
+[se ad95]
+[seVolume ad95 0 0]
+[seVolume ad95 0.6 1.0]
+[wt 1.2]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.4 1]
+[wt 0.4]
+[seStop ad95]
+[wt 0.4]
+
+＠莫里亚蒂
+来了来了。[bgm BGM_EVENT_81 0.1]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠高文
+教授。
+[k]
+
+＠高文
+您难道忘了？　您在与陛下的扑克游戏中落败，[r]已经签约成为了我们赌场的专属酒保了。
+[k]
+
+[charaFace B 5]
+
+＠高文
+难道您打算背叛？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠莫里亚蒂
+哈哈哈，你应该记住。[r]骑士高文。
+[k]
+
+[charaFace I 6]
+
+＠莫里亚蒂
+但凡坏人，只要有理由，就会轻易背叛。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠高文
+！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠莫里亚蒂
+好啦！　以策略而言未免过于粗糙，但把阵型构筑起来！[r]我要见识一下与蜘蛛勾结的泳装剑豪会如何起舞、战斗！
+[k]
+
+[charaFace I 2]
+
+＠莫里亚蒂
+夏威夷衫三骑士！[r]你们确实很强，[#但决不会相互配合战斗]！
+[k]
+
+[charaFace I 1]
+
+＠莫里亚蒂
+这非常正常，[r]这是因为如果不孤身战斗就难以受女性欢迎[line 3]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠齐格飞
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 15]
+[charaFadein F 0.1 1]
+
+＠F：风魔小太郎
+啊，原来如此！[r]主公！
+[k]
+
+＠F：风魔小太郎
+他们不仅是圆桌骑士，[r]更是夏威夷衫骑士！
+[k]
+
+＠F：风魔小太郎
+他们的性质注定了他们[r]不得不表现出自己的夏威夷衫才是最优秀的！
+[k]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+？1：……是吗？
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠玛修
+我……我也不太明白……
+[k]
+
+？2：归根结底，夏威夷衫骑士究竟是什么？
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+
+＠玛修
+是……什么呢……？[r]尽管伊织小姐说就是穿着夏威夷衫的骑士……
+[k]
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠莫里亚蒂
+夏威夷衫骑士是泳装剑豪的亚种。[r]你们不知道吗？
+[k]
+
+[charaFace I 6]
+
+[bgm BGM_EVENT_63 0.1]
+
+＠莫里亚蒂
+总之，现在必须先打倒夏威夷衫三骑士！[r]让我们各个击破吧！
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[imageSet F cut118_card01 1]
+
+[charaFadeout I 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[wt 0.3]
+
+＠莫里亚蒂
+首先是崔斯坦骑士！[r]如果靠我们这里的人手对付他的话[line 3]
+[k]
+
+＠莫里亚蒂
+可怕而美丽的[#赫:红]之花，卡米拉夫人！[r]以及神代北欧，诸神新娘的斯卡哈·斯卡蒂！
+[k]
+
+[messageOff]
+[fadeout black 0.1]
+[wait fade]
+
+
+[charaFadeout E 0.1]
+[scene 10000]
+[wt 0.1]
+
+[se ade313]
+[seVolume ade313 0 0.6]
+[fadein black 0.1]
+[wait fade]
+
+[effect bit_talk_card_flies]
+[wt 0.9]
+
+[se ad410]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 0.1]
+[scene 82200]
+[charaFadein F 0 0,-200]
+[wt 1.4]
+
+[charaFadeout F 0.4]
+[wt 0.5]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+
+＠卡米拉
+叫我吗？
+[k]
+
+＠卡米拉
+……感觉偷起来很容易呢。[r]是否想偷的问题暂且不论。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace H 0]
+[charaFadein H 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+
+＠斯卡哈·斯卡蒂
+呵，终于轮到我出场了。期待已久。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠崔斯坦
+！！
+[k]
+
+[charaFace E 5]
+
+＠崔斯坦
+原……原来如此。看来你们已经仔细地……[r]调查过我的背景了……
+[k]
+
+[charaFace E 11]
+
+＠崔斯坦
+竟然同时投入两骑……[r]美艳秀丽属性的……多么狡猾的谋士！！
+[k]
+
+＠崔斯坦
+可怕的莫里亚蒂！[r]可怕的[%1]！
+[k]
+
+[charaFace E 2]
+
+＠崔斯坦
+我无法抵抗『符合某种法则的美女』！[r]为什么你们会知道啊[line 4]！
+[k]
+
+？1：这还用问为什么？
+？2：不，因为这是莫里亚蒂的计谋嘛。
+
+？！
+
+[charaFace E 0]
+
+＠崔斯坦
+原来如此，是莫里亚蒂的[#魔弹:Madam]……[r]果然如传说中一样百发百中。
+[k]
+
+＠崔斯坦
+但我的实力在圆桌中也是首屈一指的。[r]我瞄准的目标同样不会射偏。
+[k]
+
+[charaFace E 6]
+
+＠崔斯坦
+嗯。我反倒应该说。[r]谢谢！
+[k]
+
+[charaFace E 2]
+
+＠崔斯坦
+这二位都是我的绝世好球带！[r]我会竭尽全力奉陪！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠高文
+是吗。[r]那就交给你了，崔斯坦卿。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠兰斯洛特
+有卿在就不用担心……[wt 0.6][charaFace D 4][r]呜……好羡慕……[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠玛修
+……………………
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠兰斯洛特
+不，我什么都没说。[wt 0.6][charaFace D 2][r]现在是履行使命的时候了，骑士崔斯坦！　拼上性命！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠崔斯坦
+唔[messageShake 0.06 5 3 0.6]噢噢噢噢噢噢噢噢噢噢噢噢噢！！[r]我绝对！　不会输！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠玛修
+崔斯坦先生径直向我们冲过来了！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_63 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+

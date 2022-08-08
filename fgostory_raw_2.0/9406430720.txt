@@ -1,0 +1,329 @@
+
+
+＄94-06-43-07-2-0
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5050000 1 サンタマルタ]
+[charaSet C 2001002 1 エミヤ]
+[charaSet D 4011001 1 ブーディカ]
+[charaSet E 7016001 1 タマモキャット]
+[charaSet F 3047001 1 パーシヴァル]
+
+[charaSet I 11002300 1 巌窟王]
+
+[charaSet B 11002300 1 巌窟王_シルエット]
+[charaFilter B silhouette 00000080]
+
+[sceneSet H 142500 1]
+[charaScale H 1.3]
+
+[charaDepth B 7]
+[charaDepth I 5]
+
+[scene 142500]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+
+[bgm BGM_SERVANTFES 0.6]
+
+[charaFadein H 0.7 100,-280]
+[charaMove H -100,-280 4.5]
+[wt 3.0]
+[charaFadeout H 1.5]
+[wt 2.5]
+
+？1：あれ？
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+街中？
+[k]
+
+[charaFace A 4]
+
+＠サンタマルタ
+しかもこれって、当世の……[r]それに今までと違って寒くないというか……
+[k]
+
+[charaFace A 2]
+
+＠サンタマルタ
+あっついわ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：ここって……ルルハワ……？
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+[FFFFFF]？？[-]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+ルルハワ、だよねえ。[r]うわ陽射し強！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠タマモキャット
+あっつあつなのだな！[r]突然のホットリミットに体がサマータイムだワーーン！
+[k]
+
+[messageOff]
+[se ade235]
+[charaMove E 1400,0 0.5]
+[effect bit_talk_42_depth 0,0 H]
+[wt 0.3]
+[charaFadeout E 0.4]
+[wt 0.6]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 -600,0]
+[charaMove E 700,0 0.5]
+[wt 0.3]
+[charaFadeout E 0.4]
+[effectDestroy]
+[seStop ade235 0.2]
+[wt 0.7]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+キャット、どうどう！[r]どうどうどう！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ade235]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 -600,0]
+[charaMove E 700,0 0.5]
+[effect bit_talk_42_depth 0,0 H]
+[wt 0.3]
+[charaFadeout E 0.4]
+[wt 0.6]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 -600,0]
+[charaMove E 700,0 0.5]
+[wt 0.3]
+[charaFadeout E 0.4]
+[effectDestroy]
+[seStop ade235 0.2]
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+落ち着いてー！[r]タマモキャットー！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+
+＠エミヤ
+キャット君はしばらく使い物にならないか……
+[k]
+
+[charaFace C 0]
+
+＠エミヤ
+しかし何故ルルハワか、[r]と口にするのは流石に愚問だな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+確かに。記録は閲覧しているので予想は付く。[r]なるほど、[#活きのいい獲物]が多そうだ。
+[k]
+
+＠I：？？？
+その通り[line 3]
+[k]
+
+＠I：？？？
+惑わされるな。
+[k]
+
+＠I：？？？
+夏の日々の中にあった無数の刃！[r]引き裂くが如き敵意、害意を奥底より呼び起こせ。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.5]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[se ad452]
+[seStop ad452 0.6]
+[wt 1.4]
+
+＠I：？？？
+心せよ、[%1]。
+[k]
+
+
+＠I：？？？
+[#此処:ここ]はおまえの奥底ではないが、[r]人の支配地ではない。[#逞:たくま]しく羽ばたくモノどもの巣窟！
+[k]
+
+[messageOff]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[charaFadeout B 0.4]
+[wt 1.4]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaFace I 2]
+
+＠巌窟王
+一秒たりとも気を抜くな！[r]刹那のうち、首を持って行かれるぞ！
+[k]
+
+？1：巌窟王！
+？！
+
+？1：水着の霊衣……？
+
+[charaFace I 0]
+
+＠巌窟王
+深い意味はない。
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[branch select01_1]
+
+？2：あっそうか、ルルハワ仕様！？
+
+[charaFace I 6]
+
+＠巌窟王
+……クク。
+[k]
+
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+
+＠ブーディカ
+エドモンがナビ？　なのよね？[r]ってことは、ここのエリアのボスは[line 3]
+[k]
+
+？1：アヴェンジャーチキン……
+
+[charaFace D 4]
+
+＠ブーディカ
+怖いなー。
+[k]
+
+？2：恩讐の……ターキー……
+
+[charaFace D 4]
+
+＠ブーディカ
+そういうホラー小説ありそう……。
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[label select01_1]
+
+[bgmStop BGM_SERVANTFES 0.8]
+
+[se ade207]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+
+＠エミヤ
+来たぞ！[bgm BGM_BATTLE_89 0.1][r]魔力反応、前方……いや四方八方、囲まれている！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+なんと周到な！[r]マスター、これは過酷な戦いとみた！
+[k]
+
+＠パーシヴァル
+出し惜しみはしていられない！[r]騎士パーシヴァル、全力で行かせていただこう！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_89 0.5]
+[wait fade]
+[soundStopAll]
+[end]

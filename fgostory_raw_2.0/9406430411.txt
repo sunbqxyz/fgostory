@@ -1,0 +1,190 @@
+
+
+＄94-06-43-04-1-1
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5050000 1 サンタマルタ]
+[charaSet B 1098198000 1 スカサハ＝スカディ]
+[charaSet C 2001002 1 エミヤ]
+[charaSet D 4011001 1 ブーディカ]
+[charaSet E 7016001 1 タマモキャット]
+[charaSet F 3047001 1 パーシヴァル]
+[charaSet H 99502600 1 マシュ]
+
+[charaSet K 98115000 1 エフェクト用ダミー]
+[charaSet L 98115000 1 エフェクト用ダミー]
+
+[scene 140600]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠サンタマルタ
+……できあがり！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠タマモキャット
+そして戦闘終了なのだな（もぐもぐ）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+美味しいねえ（もぐもぐ）
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+[bgmStop BGM_EVENT_77 1.5]
+
+＠パーシヴァル
+（もぐもぐ）
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ade410]
+[distortionstart 0.0 0.5 0.5 0.0 0.0 100.0]
+[distortionstart 0.7 0.5 0.5 0.3 0.3 20.0]
+[wt 0.7]
+
+[distortionstop 1.5]
+
+[charaPut L 0,0]
+[charaEffect L bit_talk_warp]
+[se ad434]
+[seVolume ad434 0 0.5]
+[bgm BGM_EVENT_1 0.1]
+[wt 3.5]
+[seStop ad434 0.3]
+
+[charaPut L 2000,2000]
+
+[charaPut K 2000,2000]
+[charaEffect K bit_talk_10_LowLevel]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+
+＠エミヤ
+空間の[#歪:ゆが]みが見えるな。[r]前回と同じく、エリアが切り替わるのか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠スカサハ＝スカディ
+その通り。[r]ルーンの導きだ。
+[k]
+
+[charaPut K 2000,2000]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+導きって……[r]よくわかってない癖にそう言っちゃうんだ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠スカサハ＝スカディ
+よくわかっていないからこそ、[r]導きということにしておきたい気持ちがある……
+[k]
+
+
+＠スカサハ＝スカディ
+……すまぬ。
+[k]
+
+[charaPut K 2000,2000]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+[bgmStop BGM_EVENT_1 1.5]
+
+＠ブーディカ
+まあいいさね。[r]さあ、第二の食材エリアだ！
+[k]
+
+[bgm BGM_EVENT_62 0.1]
+
+？1：よし、行こう！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+ええ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠マシュ
+いってらっしゃい、先輩！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,272 @@
+
+
+＄94-04-19-03-3-0
+
+[soundStopAll]
+
+
+[charaSet A 98109000 1 太空莫西干A]
+[charaSet B 98109000 1 太空莫西干B]
+[charaSet C 2037000 1 简]
+[charaSet D 11009001 1 S伊什塔尔]
+[charaSet E 1098181500 1 莫西干王牌]
+[charaSet F 6018002 1 X]
+[charaSet J 5009000 1 特效用]
+
+[scene 83200]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0]
+[charaFace B 0]
+[charaFadein B 0.1 2]
+
+＠太空莫西干A
+不去想什么难懂的问题了欧拉！[r]我们以马赫级速度回来复仇啦，大姐们！
+[k]
+
+＠太空莫西干B
+大哥，是那家伙！[r]和上面发的通缉令上画的一模一样！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠简
+咦？　又回来了。[r]是不是～忘了什么东西？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 28]
+[charaFadein D 0.1 1]
+
+＠S伊什塔尔
+是来搭救同伴的吧。[r]这下省了我们去追捕的工夫了。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.3]
+
+[se ad524]
+[wt 1.8]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠莫西干王牌
+唔嘿嘿。你们且慢，大姐们。
+[k]
+
+＠莫西干王牌
+我可不是来搭救那些杂鱼的，[r]也不是来找你们复仇的。
+[k]
+
+＠莫西干王牌
+你们……把那边那个家伙交给我们吧？
+[k]
+
+？1：莫西干又在看着我了……
+？2：一副别把我和他们相提并论的感觉。
+
+？！
+
+[charaFace E 0]
+
+＠莫西干王牌
+如果你们愿意老老实实把那家伙交给我，[r]今天的事一笔勾销，我会彻底忘了今天的事。
+[k]
+
+＠莫西干王牌
+你们还可以顺便把我们这儿的杂鱼带回去换钱。[r]输给Assassin的Saber只会给Saber丢人。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠X
+唔。尽管我非常同意你的意见，[r]但被别人这么说，还是会非常恼火！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 28]
+[charaFadein D 0.1 1]
+
+＠S伊什塔尔
+我觉得你们倒是应该为自己着想，[r]现在就转身回老家比较好哦？
+[k]
+
+＠S伊什塔尔
+我是不会放过有人当着我的面实施绑架的。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠莫西干王牌
+真可怕～。超级可怕～。老子都要吓哭了～。[r]不过我们是实力至上主义者，还是会目中无人地绑走那家伙。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 29]
+[charaFadein D 0.1 1]
+
+＠S伊什塔尔
+哦，是吗。……唉。[r]这种廉价的暴力工作真讨厌。
+[k]
+
+[charaFace D 5]
+
+＠S伊什塔尔
+因为我非常火大，[r]所以完全无法手下留情！
+[k]
+
+＠S伊什塔尔
+简！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠简
+好～！
+[k]
+
+[messageOff]
+[wt 0.3]
+[se ad563]
+[effect bit_talk_shot_02]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[wt 0.1]
+[effectDestroy]
+
+[charaTalk depthOff]
+[charaDepth J 1]
+[charaDepth A 2]
+
+[charaFadeout C 0]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0 0]
+[charaFace B 0]
+[charaFadein B 0 2]
+
+[charaPut J -200,190]
+[charaBackEffect J bit_talk_13]
+[wt 0.1]
+[charaShake A 0.07 4 1 0.4]
+
+＠太空莫西干A
+咕哇[line 2]！？[r]为什么子弹会击中后脑勺[line 3]！？
+[k]
+
+[messageOff]
+[charaMove A -256,-25 0.4]
+[charaFadeout A 0.4]
+[wt 0.6]
+[se ad144]
+[wt 1.0]
+
+[charaFace B 1]
+
+＠太空莫西干B
+唔噢！？[r]那个Archer不妙，相当不妙！？
+[k]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0]
+
+＠莫西干王牌
+不要慌，你们这群混蛋，[r]那家伙是灾星简！
+[k]
+
+＠莫西干王牌
+你们听说过[#死亡手牌:Dead Man's Hand]的传说吧！？[r]子弹是无法躲避的，只能靠毅力坚持！
+[k]
+
+＠太空莫西干B
+噢，噢噢！？[r]死亡，也就是不妙的意思吧？
+[k]
+
+＠太空莫西干B
+不会吧，不妙，不妙的意思就是说非常不妙！[r]话说我还是第一次看到[#有真名:Named]的从者啊！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 29]
+[charaFadein D 0.1 1]
+
+＠S伊什塔尔
+这行星到底有多偏僻啊……[r]这也是因为Saber徽章流通的缘故吧……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠X
+也就是说善良的龙套从者[r]也会因为徽章的力量做坏事吧。
+[k]
+
+＠X
+看来可以毫不客气地打倒他们了！
+[k]
+
+[charaFace F 2]
+
+＠X
+能防止恶事于未然，纠正扭曲的心，[r]还能减少Saber的数量！
+[k]
+
+＠X
+面对如此有百利而无一害的战斗，[r]连多少还有些伤心的我也会全力战斗！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

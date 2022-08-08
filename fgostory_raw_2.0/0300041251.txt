@@ -1,0 +1,336 @@
+
+＄03-00-04-12-5-1
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 有风镜玛修]
+[charaSet B 1039001 1 拉克什米]
+[charaSet C 1019001 1 罗摩]
+[charaSet D 1098127610 1 佩佩隆奇诺]
+[charaSet E 1098176100 1 阿斯克勒庇俄斯]
+[charaSet F 23003001 1 伽内什]
+[charaSet G 98115300 1 福尔摩斯]
+[charaSet H 8001410 1 玛修]
+[charaSet I 98002000 1 芙芙]
+[charaSet J 98115000 1 特效用]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.5]
+
+[se ad171]
+[wt 0.1]
+[se ad170]
+[wt 0.3]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad686]
+[effect bit_talk_14]
+[wt 0.8]
+
+[wipeout rectangleStripRightToLeft 0.1 1.0]
+[wait wipe]
+
+[scene 75500]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.4 65,0]
+[charaMove E 1 0.4]
+
+[se ad671]
+[wipein rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+[wt 0.8]
+
+
+＠阿斯克勒庇俄斯
+可恶。医生就可以死在患者的暴力之下吗？[r]当然不可以。
+[k]
+
+[messageOff]
+[charaFace E 0]
+[se ad60]
+[charaMove E 0,-6 0.3]
+[wt 0.3]
+[seStop ad60 0.1]
+[wt 0.2]
+[se ad73]
+[charaMove E 0,15 0.3]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect E erasureReverse 1 0.3]
+[wt 1.4]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠A：玛修
+阿斯克勒庇俄斯撤退！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠福尔摩斯
+他才是我们最初的目标。[r]我不想放他逃跑。能追得上吗？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠伽内什
+未……未免也太强人所难啦[line 3]。[r]我已经累瘫了……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠罗摩
+阿周那造成的伤势还未痊愈。[r]这次只能当作两败俱伤了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠拉克什米
+哎呀呀……躲起来的镇民们一发现骚动结束，[r]就立刻跑出来了呢。
+[k]
+
+[charaFace B 0]
+
+＠拉克什米
+说明起来太麻烦了。要不我们先离开吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠佩佩隆奇诺
+同意。你们的壁之村……迪瓦尔？[r]就回那里再研究今后的方针吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠拉克什米
+……你看上去很高兴呢？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠佩佩隆奇诺
+哎呀是吗？　应该没有吧。
+[k]
+
+？1：感觉你有点怪怪的呢，妙涟寺。
+？2：你一定很兴奋吧，妙涟寺。
+？！
+
+[charaFace D 3]
+
+＠佩佩隆奇诺
+慢[messageShake 0.05 3 2 0.5]着，这[line 3]！
+[k]
+
+[charaFace D 4]
+
+＠佩佩隆奇诺
+……唉。我知道啦。既然你想知道这方面的事，[r]那我就告诉你好了，总之先离开这里吧。
+[k]
+
+＠佩佩隆奇诺
+我可不希望镇民们边喊着你们都对[r]神之使者做了些什么，边拿石头砸我们呢。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 2.0]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth A 2]
+[charaDepth H 1]
+
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+[wt 0.1]
+
+[se ade18]
+[seVolume ade18 0.0 0.5]
+
+[wt 0.5]
+[seStop ade18 0.8]
+[wt 1.5]
+
+[charaFace H 4]
+[charaFadein H 0.1 1]
+[wt 0.1]
+[charaFadeout A 0.4]
+[wt 0.2]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+
+[charaDepth A 0]
+[charaDepth H 0]
+
+[charaTalk on]
+
+＠玛修
+…………
+[k]
+
+？1：没事吧，玛修？
+？！
+
+[bgm BGM_EVENT_70 0.1]
+[charaFace H 3]
+
+＠玛修
+啊，嗯。我没事。
+[k]
+
+[charaFace H 4]
+
+＠玛修
+不，说实话，我也和大家一样，[r]受到了不少伤害。
+[k]
+
+＠玛修
+但除此之外……我稍微……思考了一下。
+[k]
+
+[charaFace H 12]
+
+＠玛修
+与那个阿周那初次正面交战，[r]令我重新认识到。他果真拥有压倒性的力量呢。
+[k]
+
+＠玛修
+而且……[r]并不是作为单一个体的力量。
+[k]
+
+＠玛修
+就像在与地面拼力气一样，[r]我深刻感受到彼此间『规模的差距』……
+[k]
+
+[charaFace H 7]
+
+＠玛修
+啊，不，请不要误会，御主！[r]我不是在示弱！
+[k]
+
+[charaFace H 0]
+
+＠玛修
+只是单纯的情报分析而已。那个阿周那，[r]无疑是这世界中拥有最强力量的神。
+[k]
+
+[charaFace H 8]
+
+＠玛修
+所以，我们该如何与他对抗才行呢。[r]我越是认真思考，就越觉得毫无头绪。
+[k]
+
+[charaFace H 7]
+
+＠玛修
+打倒[#神将:护世神]，削弱他的力量，[r]光凭这样，是否真的能……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠芙芙
+芙……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 1.0]
+[charaFadeout I 0.1]
+[wt 0.2]
+
+？1：只要大家一起思考，一定能想出好点子哦。
+？2：一定会有办法的。
+？！
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk H]
+[charaFace H 13]
+[charaFadein H 0.1 1]
+
+＠玛修
+说得……也是。我相信肯定会的。
+[k]
+
+＠玛修
+那么御主，我们出发吧。[r]先得让佩佩先生告诉我们他的名字才行呢，对吧。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠佩佩隆奇诺
+怎[messageShake 0.05 3 3 0.5]么连小玛修都这样！？
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[soundStopAll]
+[end]

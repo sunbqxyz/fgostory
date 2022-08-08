@@ -1,0 +1,238 @@
+
+＄94-04-65-02-2-0
+
+[soundStopAll]
+
+[charaSet A 5033001 1 喀耳刻]
+[charaSet B 2009102 1 俄里翁]
+
+[scene 30500]
+
+[wipeFilter cinema 0.5 0]
+[cameraFilter gray]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.4]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠
+[line 3]总而言之，还是逃跑了。
+[k]
+
+＠
+虽然我不清楚总而言之了什么。
+[k]
+
+＠
+但必须逃离这种窒息感，[r]已经无计可施了。
+[k]
+
+[messageOff]
+
+[cameraFilter normal]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 -50,-50]
+[charaMove A 0,-50 0.5]
+[se ad443]
+[seStop ad443 0.7]
+[wt 0.8]
+
+＠喀耳刻
+啊……啊，啊啊……[r]不祥的预感总是正确的……
+[k]
+
+[cameraFilter gray]
+
+＠
+……我曾想过，[r]或许他终有一天会到来。
+[k]
+
+
+＠
+因为他是英雄。[r]是英雄中的英雄。
+[k]
+
+＠
+被召唤是必然的，[r]只是时间的问题罢了。
+[k]
+
+[cameraFilter normal]
+
+
+＠喀耳刻
+本以为只要不见到他就没事了。
+[k]
+
+[cameraFilter gray]
+
+＠
+结果，偏偏。
+[k]
+
+＠
+非要在这座艾尤岛上，[r]发现被召唤的他才行。
+[k]
+
+＠
+而且再说了。
+[k]
+
+[cameraFilter normal]
+[charaFace A 2]
+
+＠喀耳刻
+话说为什么我要逃跑啦！？
+[k]
+
+[charaFace A 6]
+
+＠喀耳刻
+我又没犯什么错。
+[k]
+
+[charaFace A 5]
+
+＠喀耳刻
+更何况，现在的我[line 3][r]是[%1]的从者。
+[k]
+
+[charaFace A 4]
+
+＠喀耳刻
+……[r]……
+[k]
+
+＠喀耳刻
+……本以为自己早就整理好心情了……
+[k]
+
+[messageOff]
+[se ad526]
+[seStop ad526 1.1]
+[wt 1.0]
+
+[charaFace A 2]
+
+＠喀耳刻
+干嘛啦，烦死了！！
+[k]
+
+？1：喀耳刻！
+？！
+
+[messageOff]
+[fadeout black 0.3]
+[bgmStop BGM_EVENT_11 1.0]
+[se ad444 0.7]
+[seVolume ad444 0 0.3]
+[wait fade]
+
+[charaPut A 0,0]
+
+[wipeOff]
+[wt 0.5]
+
+[fadein black 0.3]
+[seVolume ad444 0.3 1.0]
+[wait fade]
+
+[seStop ad444 0.7]
+[wt 0.7]
+
+[charaFace A 6]
+
+＠喀耳刻
+咕哎，御主！！
+[k]
+
+[messageOff]
+[charaFace A 3]
+[bgm BGM_EVENT_7 0.1]
+
+[charaMoveReturn A -15,0 0.3]
+[wait charaMove A]
+[charaMoveReturn A 15,0 0.3]
+[wait charaMove A]
+[charaMoveReturn A -15,0 0.3]
+[wait charaMove A]
+[charaMoveReturn A 15,0 0.3]
+[wait charaMove A]
+[wt 0.5]
+
+＠喀耳刻
+[charaMoveReturn A 0,-10 0.5]
+（整理头发。）
+[k]
+
+[charaFace A 6]
+
+＠喀耳刻
+[charaMoveReturn A -5,0 0.5]
+（戳戳自己的面颊。）
+[k]
+
+[charaFace A 0]
+
+＠喀耳刻
+[charaMoveReturn A 0,-5 0.5]
+（用小镜子确认自己的面容。）
+[k]
+
+[charaFace A 5]
+
+＠喀耳刻
+[charaMoveReturn A 10,0 0.5]
+（先背过身，然后再面带微笑地转回来。）
+[k]
+
+[charaFace A 1]
+
+＠喀耳刻
+哎呀哎呀，什么事啊，[#爱猪:仔猪]！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+
+＠俄里翁
+别[messageShake 0.03 5 5 1.0]照什么镜子了啦，快给我战斗[line 3]！！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[bgmStop BGM_EVENT_7 1.5]
+
+＠喀耳刻
+干嘛啦，你难道不懂少女心吗，[r]理解一下啦，熊！！
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+
+
+？1：好啦，准备战斗[line 3]！
+？！
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

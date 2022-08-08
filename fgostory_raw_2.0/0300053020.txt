@@ -1,0 +1,339 @@
+
+＄03-00-05-30-2-0
+
+[soundStopAll]
+
+
+[charaSet A 1098124510 1 达·芬奇]
+[charaSet B 1098123200 1 戈尔德鲁夫]
+[charaSet C 8001400 1 玛修]
+[charaSet D 9005001 1 福尔摩斯]
+[charaSet E 1038000 1 伊阿宋]
+[charaSet F 1098123000 1 穆尼尔]
+[charaSet I 98115000 1 特效用dummy]
+[charaSet J 98115000 1 特效用dummy]
+
+
+[bgm BGM_EVENT_63 0.1]
+[wt 0.8]
+
+[scene 86500]
+
+[charaPut I 1200,1200]
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[effect bit_talk_41]
+
+[se ad729]
+[se ade329]
+
+[shake 0.05 3 3 2.5]
+[fadein black 0.7]
+[wait fade]
+
+[wt 1.5]
+
+[seVolume ad729 1.0 0.3]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[scene 51601]
+[effectDestroy bit_talk_41]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 26]
+[charaFadein A 0.1 1]
+
+＠[51ffff]达·芬奇[-]
+[51ffff]好，捕捉到波塞冬神核的反应了。[-][r][51ffff]就这样勇往直前，戈尔德鲁夫！[-]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+我知道！[r]……唔？　已经能看见了！
+[k]
+
+？1：那就是神核……！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 21]
+[charaFadein A 0.1 1]
+
+＠[51ffff]达·芬奇[-]
+[51ffff]……！[-][r][51ffff]打方向盘！[-]
+[k]
+
+[messageOff]
+[seStop ad729 1.0]
+[wipeout rectangleStripLeftToRight 0.3 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.3]
+[charaPut J 1200,1200]
+
+[scene 86500]
+
+[wipein rectangleStripRightToLeft 0.3 1.0]
+[wait wipe]
+
+[se ad679]
+[charaScale I 1.08]
+[wt 0.2]
+[charaRoll I 351]
+[charaPut I 110,0]
+[charaEffect I bit_talk_gram_slash_02]
+[wt 0.2]
+[se ad682]
+[wt 0.1]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 0.5]
+
+
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[scene 51601]
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_41]
+
+[wt 0.2]
+
+[se ade329]
+[se ad609]
+[shake 0.05 2 4 1.5]
+[wipein rectangleStripLeftToRight 0.3 1.0]
+[wait wipe]
+
+[wt 1.2]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+噗啊啊啊啊！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠福尔摩斯
+唔，果然有当内部遭入侵时的迎击系统啊。
+[k]
+
+＠福尔摩斯
+……不，更像是紧急赶工出来的，[r]瞄准也不精准。
+[k]
+
+＠福尔摩斯
+原来如此。这是被弗朗西斯·德雷克夺走神核后，[r]才慌忙采取的对策吗。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+虽说不精准，[r]但被这玩意打中绝对会完蛋啦！？
+[k]
+
+[charaFace B 5]
+
+＠戈尔德鲁夫
+哎哎，可恶……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠伊阿宋
+[%1]，[r]Shielder。
+[k]
+
+＠伊阿宋
+还愣着干嘛。[r]跑到神核那儿不就行了吗。
+[k]
+
+[charaFace E 9]
+
+＠伊阿宋
+而且看上去距离也不远。[r]赶紧去吧！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠玛修
+御主！
+[k]
+
+？1：好，出发吧！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠戈尔德鲁夫
+嗯，去吧！[r]等破坏神核后，我就去接你们上车！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠玛修
+是！[r]请各位在此稍候！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠穆尼尔
+外部环境，不存在有害物质。[r]空气循环没有问题。
+[k]
+
+＠穆尼尔
+[#大源:玛纳]……虽是神代级别，[r]但不会影响御主生存！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[se ad547]
+[se ad548]
+[seVolume ad548 0 0.4]
+[fadeout black 1.0]
+[wait fade]
+
+[se ade235]
+[se ad667]
+[seVolume ad667 0 0.5]
+
+[scene 86500]
+
+[wt 1.5]
+
+[seStop ade235 1.0]
+[seStop ad667 1.0]
+
+[fadein black 1.0]
+[wait wipe]
+
+？1：快跑！
+？！
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠玛修
+是！
+[k]
+
+＠玛修
+[#灵基外骨骼:奥特瑙斯]启动。[r]出击！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad794]
+
+＠[9bb9ff]广播语音[-]
+[9bb9ff]侦测到　非法入侵者[-][r][9bb9ff]侦测到　非法入侵者[-]
+[k]
+
+[seStop ad794 2.0]
+
+＠[9bb9ff]广播语音[-]
+[9bb9ff]迎击[-][r][9bb9ff]迎击[-]
+[k]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠玛修
+！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad679]
+[wt 0.2]
+[charaPut I 100,0]
+[charaEffect I bit_talk_gram_slash_02]
+[wt 0.2]
+[se ad682]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+[se ad170]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[effect bit_talk_14]
+[se ad686]
+[charaShake C 0.05 2 2 0.4]
+[wt 1.0]
+[charaFace C 2]
+
+＠玛修
+继续前进吧！[r]御主，拜托您了！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_63 0.5]
+[wait fade]
+[soundStopAll]
+[end]

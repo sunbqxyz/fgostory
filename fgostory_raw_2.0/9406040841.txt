@@ -1,0 +1,433 @@
+
+
+
+＄94-06-04-08-4-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001600 1 マシュ]
+[charaSet B 1098215400 1 ダ・ヴィンチ]
+[charaSet C 4029300 1 アキレウス]
+[charaSet D 4008300 1 黒髭]
+[charaSet E 1098220610 1 カーマ]
+[charaSet F 1098216800 1 沖田オルタ]
+[charaSet G 1098220400 1 清少納言]
+[charaSet H 5030001 1 シェヘラザード]
+
+[imageSet J back10000_fs 1]
+[charaScale J 1.5]
+
+[charaSet K 1098218800 1 エネミー１]
+[charaSet L 1098218800 1 エネミー２]
+[charaSet M 1098218800 1 エネミー３]
+
+[charaDepth J 1]
+[charaDepth B 2]
+
+[charaDepth L 3]
+[charaDepth K 4]
+
+[charaDepth C 5]
+[charaDepth D 6]
+
+[scene 131400]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaFace K 0]
+[charaFadein K 0.1 0]
+[charaFace L 0]
+[charaFadein L 0.1 2]
+[wt 0.5]
+
+[effect bit_talk_x_slash_gl_01 -200,0]
+[wt 0.1]
+[se bac209]
+[charaShake K 0.05 3 3 0.3]
+[wt 0.2]
+[effect bit_talk_x_slash_gl_02 200,0]
+[wt 0.1]
+[se bac210]
+[charaShake L 0.05 3 3 0.3]
+
+[wt 0.4]
+
+[se ad42]
+[charaSpecialEffect K enemyErasure 0,0 1.0]
+[wt 0.1]
+[charaSpecialEffect L enemyErasure 0,0 1.0]
+[wt 0.5]
+[charaMove K -256,-200 1.0]
+[charaMove L 256,-200 1.0]
+[wt 0.7]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+[wt 0.3]
+
+[se bac210]
+[se bac403]
+[se ad897]
+[effect bit_talk_attack_splash 50,0]
+[wt 0.1]
+[charaShake M 0.05 3 3 0.3]
+[wt 0.5]
+
+[se ad42]
+[charaSpecialEffect M enemyErasure 0,0 1.0]
+[wt 0.5]
+[charaMove M 0,-200 1.0]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠アキレウス
+全然強くはねえんだが、とにかく数が多いな……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠カーマ
+ああもう、うっざーい！[r]ほとんどダメージ受けないからいいようなものの！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 0,-200]
+[charaFadeTime J 0.2 0.5]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+（何かがおかしいな……）
+[k]
+
+＠ダ・ヴィンチ
+（この怪鳥たち、私たちを[r]　ただ攻撃しているだけではなさそう……？）
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_80 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout J 0.1]
+[charaFadeout B 0.1]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 -75,0]
+＠沖田オルタ
+ひとまず追い払えましたね。[r]いえ、まだ遠巻きにこちらを[#窺:うかが]っている感じですが。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+＠黒髭
+もうやだくろひー飽きたし疲れたーん。[r]お昼寝すりゅー。
+[k]
+
+[messageOff]
+
+[charaMove D 0,-50 0.3]
+[charaFadeout D 0.4]
+[wt 0.5]
+
+[se ad222]
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+＠清少納言
+うわ、くつろぎモードに入るの早すぎ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠黒髭
+大丈夫だっつーの。[r]なんか殺気プンプンって感じでもねーしな。
+[k]
+
+[charaFace D 12]
+＠黒髭
+余計に眠くなっちまうぜ……ぐう……。
+[k]
+
+[messageOff]
+
+[se ade4]
+[seVolume ade4 0 0]
+[seVolume ade4 0.5 1.0]
+[wt 0.5]
+
+[charaMove D 0,30 0.8]
+[wt 0.7]
+
+[charaFadeout D 0.4]
+[wt 0.5]
+
+[seStop ade4 0.3]
+[wt 0.5]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠清少納言
+く……くろひーが鳥達に咥えられて、[r]寝たまま持ち上げられているぞーッ！！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠アキレウス
+ある意味大物だよな。よっ、と！
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 0,-10]
+[wt 0.5]
+
+[se ad872]
+[fowardEffect bit_talk_ichimon01wh 0,120]
+[wt 0.5]
+
+
+[charaMove D 0,-40 0.3]
+[wt 0.2]
+
+[fowardEffectDestroy bit_talk_ichimon01wh]
+
+[se ad144]
+[charaFace D 7]
+＠黒髭
+あ[messageShake 0.05 3 3 0.4]いたあ！？　何だか幸せな浮遊感っていうか[r]昇天感を味わっていたというのに！
+[k]
+
+[charaFace D 11]
+＠黒髭
+きっともうすぐ美少女だらけの楽園に[r]辿り着けていたに違いない……惜しかった……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+！
+[k]
+
+[charaFace B 14]
+＠ダ・ヴィンチ
+今、何かのヒントが、[r]見えたような……。
+[k]
+
+？1：そう、何か、知ってる気がする
+？2：何かのお話で、こんな場面が……
+？！
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[charaPut H -50,0]
+[charaTalk H]
+[charaFace H 0]
+[charaFadeTime H 0.4 0.6]
+[charaMove H 150,0 2.0]
+[wt 0.8]
+
+[charaFadeout H 0.4]
+[wt 1.0]
+
+[bgm BGM_EVENT_62 0.1]
+
+？1：わかったー！　シンドバッド！
+？2：ロック鳥のお話だ！
+？！
+
+[charaTalk B]
+[charaFace B 24]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+そう、あの怪鳥たちは、[r]私たちを攻撃してる雰囲気じゃなかった。
+[k]
+
+[charaFace B 14]
+＠ダ・ヴィンチ
+動きを止めて、[r]どこかに連れて行こうとしてるみたいな……。
+[k]
+
+[charaFace B 25]
+＠ダ・ヴィンチ
+それって[line 3]
+[k]
+
+
+＠ダ・ヴィンチ
+[#この上のどこかにある]、[#巣じゃないかな]？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠アキレウス
+言われてみりゃあ、[r]あいつらはここより上から飛んできてるみたいだ。
+[k]
+
+＠アキレウス
+可能性はある……か。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠黒髭
+えー、ほんとぉ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠アキレウス
+試してみりゃいいだろ。[r]駄目でもダ・ヴィンチの安全装置がある。
+[k]
+
+
+＠アキレウス
+どこで放り出されたとしても、パラシュートがあるんなら[r]最悪でも[#麓:ふもと]まで戻るだけだろ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠黒髭
+今までの道のりをもう一回、[r]とかはさすがに拒否したいでござるがー！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠アキレウス
+おっと来た来た。[r]ほーれ、美味い餌だぞ。咥えてけ……。
+[k]
+
+[bgm BGM_EVENT_62 0.2 0.5]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ade4]
+[seVolume ade4 0 0]
+[seVolume ade4 0.5 1.0]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaFace C 6]
+[charaFadeinFSL C 0.1 -250,0]
+
+[charaFace D 0]
+[charaFadeinFSR D 0.1 250,0]
+[wt 1.5]
+
+[charaMoveFSR D 250,30 0.5]
+[charaMoveFSL C -250,30 0.5]
+[wt 0.3]
+
+[seStop ade4 1.5]
+[charaFadeout D 0.4]
+[charaFadeout C 0.4]
+[wt 1.2]
+
+[bgm BGM_EVENT_62 0.5 1.0]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠マシュ
+アキレウスさんと黒髭さん、[r]複数の怪鳥に運ばれていってしまいました……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+うん、やっぱり岩棚の上に巣があるみたい！[r]私たちも続こう！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

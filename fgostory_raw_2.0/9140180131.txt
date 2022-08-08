@@ -1,0 +1,611 @@
+
+
+
+＄91-40-18-01-3-1
+
+[soundStopAll]
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 4018000 1 魁札尔·科亚特尔]
+[charaSet C 1098119500 1 Masked Baritsu]
+[charaSet D 1098119510 1 逆巴流术dummy]
+[charaSet E 4018000 1 魁札尔·科亚特尔攻击用]
+[charaSet F 98115000 1 特效用]
+
+[scene 20300]
+[wipeFilter cinema 0.5 0]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-40]
+
+[fadein black 1.0]
+[wait fade]
+
+＠魁札尔·科亚特尔
+有破绽，巴流术君！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-40]
+
+＠Masked Baritsu
+哼……这很难说哦？[r]（以及为什么总是不用擂台名称呼我啊？）
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace B 2]
+[charaFadein C 0.1 -256,-40]
+[charaFadein B 0.1 256,-40]
+[wt 0.2]
+[charaMove B 100,-40 0.1]
+[wt 0.1]
+[charaMove B 256,-40 0.2]
+[charaMove C -256,-70 0.1]
+[se bac1]
+[wt 0.1]
+[charaMove C -256,-40 0.1]
+[wt 0.3]
+[charaMove C 100,-40 0.2]
+[wt 0.2]
+[charaMove B 100,-40 0.1]
+[charaMove C -80,-40 0.1]
+[se bac245]
+[charaDepth B 10]
+[charaFace B 5]
+[charaShake B 0.05 3 3 0.1]
+
+＠魁札尔·科亚特尔
+呜……
+[k]
+
+＠Masked Baritsu
+我已经绞住了你的手臂。投降吧。[r]恕我失礼，但你没有任何能获胜的资本。
+[k]
+
+[charaFace B 7]
+
+＠魁札尔·科亚特尔
+……你知道自由摔角为何会有[r]那么多华丽的招数吗？
+[k]
+
+＠Masked Baritsu
+这个嘛……我从没思考过。[r]总之，我觉得那些是徒有其表的没效率招数。
+[k]
+
+[charaFace B 5]
+
+＠魁札尔·科亚特尔
+No！　这都是为了感到高兴的观众，[r]以及相互信任的对战对手而存在的～！
+[k]
+
+＠魁札尔·科亚特尔
+如果真想追求战斗的效率，[r]你应该上战场才对～！
+[k]
+
+＠魁札尔·科亚特尔
+去那种没有声援，[r]没有灯光的寂寞战场！
+[k]
+
+＠Masked Baritsu
+声援？[r]这要素有那么重要吗？
+[k]
+
+[charaFace B 2]
+
+＠魁札尔·科亚特尔
+当然啦！[r]所以，御主[line3]请给我声援！
+[k]
+
+？1：[#上啊:Ole]！　角斗大师！
+
+？！
+
+[charaFace B 1]
+
+＠魁札尔·科亚特尔
+[#更多:Mucho]！　多亏了您，我如得百人助力～！[r][line 3]嘿！
+[k]
+
+[messageOff]
+[charaMoveReturn B 90,-40 0.2]
+[charaMoveReturn C -90,-40 0.2]
+[wt 0.1]
+[charaEffect B bit_talk_quickmove]
+[charaSpecialEffect B erasureReverse 1 0.3]
+
+[se ad73]
+[wt 1.0]
+
+＠Masked Baritsu
+（居然跳跃起来挣脱拘束……令人诧异的痛觉屏蔽。[r]　不，这就是所谓摔角的『忍耐』吗？）
+[k]
+
+[charaShake C 0.05 3 3 0.4]
+[charaMove C -80,-60 0.4]
+
+＠Masked Baritsu
+不，现在不是感慨的时候！[r]呜，平衡！　还有面具！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-40]
+
+＠魁札尔·科亚特尔
+太遗憾了，容易脱落的[#面具:Mascara]不值一提～！
+[k]
+
+＠魁札尔·科亚特尔
+身为一个摔角手，就该更注重自己的服饰！[r]我要上了哦～，[#龙卷式胁部固定:La Mistica][line 3]！
+[k]
+
+[messageOff]
+[effect bit_talk_41]
+[se ad73]
+[charaMoveScale B 1.2 0.2]
+[charaMove B 0,-32]
+[wt 0.2]
+[effectStop bit_talk_41]
+[charaFadeout B 0.1]
+[wt 0.3]
+[charaScale B 1.0]
+
+[charaFadein C 0.1 0,-40]
+[charaFadein B 0.1 256,-40]
+[charaMove B 150,-40 0.2]
+[wt 0.2]
+[se bac245]
+[wt 0.2]
+
+[se bac1]
+[charaEffect C bit_talk_quickmove]
+[charaSpecialEffect C erasureReverse 1 0.3]
+[charaEffect B bit_talk_quickmove]
+[charaSpecialEffect B erasureReverse 1 0.3]
+
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,30]
+
+[charaFace B 2]
+[charaFace E 2]
+
+[charaScale B 1.2]
+[charaFadein B 0.1 -1000,-40]
+[charaScale E 0.8]
+[charaFadein E 0.1 1000,-20]
+
+[charaShake D 0.05 5 0 0]
+[effect bit_talk_42]
+
+[charaDepth E 1]
+[charaDepth D 3]
+[charaDepth B 5]
+[se ad171]
+[charaMove B 800,-40 0.2]
+[wt 0.3]
+[charaPut B -1000,-40]
+[charaMove E -800,-20 0.2]
+[wt 0.3]
+[charaPut E 1000,-20]
+[se ad171]
+[charaMove B 800,-40 0.2]
+[wt 0.3]
+[charaDepth B 2]
+[charaPut B -1000,-40]
+[charaMove E -800,-20 0.2]
+[wt 0.3]
+[charaPut E 1000,-20]
+
+
+＠D：Masked Baritsu
+（这招数到底是什么……！？[r]　我到底被做了什么！？）
+[k]
+
+[messageOff]
+
+[charaDepth E 1]
+[charaDepth D 3]
+[charaDepth B 5]
+[se ad171]
+[charaMove B 800,-40 0.2]
+[wt 0.3]
+[charaPut B -1000,-40]
+[charaMove E -800,-20 0.2]
+[wt 0.3]
+[charaPut E 1000,-20]
+[se ad171]
+[charaMove B 800,-40 0.2]
+[wt 0.3]
+[charaDepth B 2]
+[charaPut B -1000,-40]
+[charaMove E -800,-20 0.2]
+[wt 0.3]
+[charaPut E 1000,-20]
+
+＠D：Masked Baritsu
+（旋转……我在旋转？　真的吗？[r]　但是，为什么要如此旋转？）
+[k]
+
+[messageOff]
+
+[charaDepth E 1]
+[charaDepth D 3]
+[charaDepth B 5]
+[se ad171]
+[charaMove B 800,-40 0.2]
+[wt 0.3]
+[charaPut B -1000,-40]
+[charaMove E -800,-40 0.2]
+[wt 0.3]
+[charaPut E 1000,-40]
+[se ad171]
+[charaMove B 800,-40 0.2]
+[wt 0.3]
+[charaDepth B 2]
+[charaPut B -1000,-40]
+[charaMove E -800,-20 0.2]
+[wt 0.3]
+[charaPut E 1000,-20]
+
+＠D：Masked Baritsu
+（只要转六圈，三个半规管就会被扰乱，也就难以防御了。[r]　然而为什么还在旋转……？）
+[k]
+
+[messageOff]
+
+[scene 39800 0.5]
+[effectStop bit_talk_42 0.5]
+[charaShakeStop D]
+[charaScale B 1.0]
+[wt 0.5]
+
+＠D：Masked Baritsu
+（这是……宇宙？　能看到宇宙……[r]　今早我还没吃药才对不对不是这个问题。）
+[k]
+
+＠D：Masked Baritsu
+（这是[line 3]不用研究也能明白！[r]　直说的话，就是我陷入了非常糟糕的状态！）
+[k]
+
+[charaMove B -300,-40 0.1]
+[wt 0.1]
+[charaMove B -200,-40 0.2]
+[wt 0.3]
+
+[charaMoveReturn D 0,40 0.2]
+
+＠D：Masked Baritsu
+咚咚。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+[wipeOff]
+[wait wipe]
+[bgmStop BGM_EVENT_24 0.4]
+[scene 20300 0.4]
+[wt 0.4]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+福尔摩斯先生拍击了！[r]魁札尔·科亚特尔，停止坠落！
+[k]
+
+[bgm BGM_EVENT_4 0.1]
+
+＠玛修
+魁札尔·科亚特尔小姐获得胜利！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.2]
+
+[charaFace B 0]
+[charaFadein B 0.1 0,50]
+[charaMove B 0,-20 0.1]
+[wait charaMove B]
+[se ad223]
+[seVolume ad223 0 0.5]
+[charaMove B 1 0.1]
+[wait charaMove B]
+
+＠魁札尔·科亚特尔
+哎哟哟。[r]那我就不用他的脑袋砸地面了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[se bac2]
+[charaFadein C 0.1 1]
+[charaMoveReturn C 0,-10 0.3]
+
+＠Masked Baritsu
+……呼。[r]总算是避免颈椎粉碎了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.1 2]
+[charaFadein C 0.1 0]
+
+＠魁札尔·科亚特尔
+嗯。[r]还好你及时拍击才赶上了哦？
+[k]
+
+＠魁札尔·科亚特尔
+还有，你应该感谢我招数的精度。[r]一般情况下，做到那个状态是停不下来的。
+[k]
+
+＠Masked Baritsu
+我想也是。我也很惊讶自己居然能获救。[r]比起使出招数的力量，我觉得你中止招数的力量更可怕。
+[k]
+
+＠魁札尔·科亚特尔
+那当然啦。我不是说过了嘛，[r]摔角手会边为对方的身体着想边使用招数。
+[k]
+
+＠魁札尔·科亚特尔
+是否能中止招数表现了最低程度的礼仪。[r]但是，你其实还能战斗吧？
+[k]
+
+＠Masked Baritsu
+当然，我觉得可以。[r]但身体却下意识投降了。
+[k]
+？1：这是什么意思？
+
+？！
+
+＠Masked Baritsu
+这是种不可思议的招数。[r]如此激烈，却同时令内心如此激动。
+[k]
+
+＠Masked Baritsu
+这太糟了……却又很有意思。[r]当我产生这个念头的瞬间，身体条件反射地开始了拍击。
+[k]
+
+＠Masked Baritsu
+我有自信不会屈服于充满恶意的招数，[r]但面对如此温柔的招数，我的防身术似乎无法做出反应。
+[k]
+
+[charaFace B 1]
+
+＠魁札尔·科亚特尔
+呵呵，你太夸奖了啦～。[r]我只是已经没有任何可以让你痛苦的余力了。
+[k]
+
+＠Masked Baritsu
+我要修正我刚才说这招数徒具其表的话。[r]就像东洋存在活杀剑这种东西一样。
+[k]
+
+＠Masked Baritsu
+打倒对方的同时，却又为对方留生路。[r]……本以为这个词非常矛盾，但原来如此。
+[k]
+
+＠Masked Baritsu
+所谓的强大，[r]似乎并不是只要打倒敌人就可以了。
+[k]
+
+＠魁札尔·科亚特尔
+嗯。你的招数也非常强哦，巴流术假面。[r]但感觉你的骨头很脆，记得好好摄取营养哦
+[k]
+
+＠Masked Baritsu
+我会将这话当成参考资料记住的。
+[k]
+
+＠Masked Baritsu
+……尽管这是我决不会使用的技术体系，[r]但我想向身为摔角大师的您表达敬意。
+[k]
+
+＠Masked Baritsu
+[#再见了:Adios]，Miss魁札尔·科亚特尔。[r]有机会的话希望能再见。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Masked Baritsu
+不过，为什么大家都会搞错我的擂台名呢？
+[k]
+
+[messageOff]
+[charaFadeout C 0.4]
+[wt 0.1]
+[bgmStop BGM_EVENT_4 1.0]
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_6 0.1]
+
+＠魁札尔·科亚特尔
+呼，到此结束了啊……
+[k]
+
+[messageOff]
+[se ad144]
+[charaMove B 0,-50 0.4]
+[charaFadeout B 0.4]
+[wt 1.0]
+
+
+？1：变得这么伤痕累累……
+
+？！
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠魁札尔·科亚特尔
+哎呀，您在为我担心吗？[r]没关系，我现在心情非常愉快。
+[k]
+
+＠魁札尔·科亚特尔
+令人痛快的疲劳感，[r]以及用身体沟通的满足感……
+[k]
+
+＠魁札尔·科亚特尔
+正因为知道了这种舒服的感觉，[r]我现在才能与您笑容以对。
+[k]
+
+[charaFace B 0]
+
+＠魁札尔·科亚特尔
+不是作为夺取生命的战斗之神。[r]而是作为期待明天的智慧与丰收女神。
+[k]
+
+？1：嗯，我知道。
+？2：我明白了。我们下次再办一次吧。
+
+
+？！
+[charaFace B 3]
+＠魁札尔·科亚特尔
+……呵呵。[r][#谢谢:Gracias]，御主。
+[k]
+
+＠魁札尔·科亚特尔
+唉～，我已经连站起来的力气都没有啦～。[r]御主，扶我一下～！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛修
+魁札尔·科亚特尔小姐感到满足了。[r]那前辈也能开始和平的午后训练[line 3]
+[k]
+
+[bgmStop BGM_EVENT_6 1.0]
+[charaScale B 1.2]
+
+[charaFace A 7]
+＠玛修
+啊！？　不好了，前辈，[r]魁札尔·科亚特尔小姐还……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 0.2]
+[se bac245]
+[shake 0.05 5 4 0.3]
+[wt 0.3]
+
+[bgm BGM_EVENT_7 0.1]
+
+？1：呜哇啊啊啊[line 2]！？
+？2：咕哇啊啊啊啊[line 2]！？
+
+？！
+
+＠魁札尔·科亚特尔
+好～，中招了～！[r]我还精神得很呢～！
+[k]
+
+＠魁札尔·科亚特尔
+另外[#关节技:Llave]可是很深奥的哦～。[r]好好享受这令人挣扎的缠技吧♡
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠玛修
+……早知如此，就该准备五轮胜负才对。[r]另外，现在我明白为什么需要锁链了……
+[k]
+
+＠玛修
+为了拴住魁札尔·科亚特尔小姐，[r]真的需要很多锁链啊……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠魁札尔·科亚特尔
+Yes～！[r]区区那点锁链完全不够啦～！
+[k]
+
+＠魁札尔·科亚特尔
+来吧，御主。拼命挣扎吧。[r][#更多:Mucho]，[#更多:Mucho]！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[soundStopAll]
+[end]

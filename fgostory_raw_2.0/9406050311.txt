@@ -1,0 +1,424 @@
+
+
+＄94-06-05-03-1-1
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098220400 1 清少納言]
+[charaSet B 4039300 1 マンドリカルド]
+[charaSet C 4029300 1 アキレウス]
+[charaSet D 4008300 1 黒髭]
+[charaSet E 98006000 1 怪しい連中]
+[charaSet F 98006000 1 怪しい連中２]
+[charaSet G 98006000 1 怪しい連中３]
+
+[charaDepth F 1]
+[charaDepth G 2]
+[charaDepth E 3]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 129600]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[charaFace F 0]
+[charaFadeinFSL F 0.1 -350,0]
+
+[charaFace G 0]
+[charaFadeinFSR G 0.1 350,0]
+
+
+[effect bit_talk_quick_slash_bl]
+[se bac210]
+[wt 0.1]
+[charaShake F 0.05 3 3 0.3]
+[se bac209]
+[wt 0.1]
+[charaShake E 0.05 3 3 0.3]
+[se bac211]
+[wt 0.1]
+[charaShake G 0.05 3 3 0.3]
+[wt 0.5]
+
+[se ad26]
+＠怪しい連中
+[image berserker_language_2]
+[k]
+
+[messageOff]
+
+[se ad42]
+[charaSpecialEffect F enemyErasure 0,0 1.0]
+[wt 0.1]
+[charaSpecialEffect E enemyErasure 0,0 1.0]
+[wt 0.1]
+[charaSpecialEffect G enemyErasure 0,0 1.0]
+[wt 0.5]
+[charaMove E 0,-200 1.0]
+[charaMoveFSL F -350,-200 1.0]
+[charaMoveFSR G 350,-200 1.0]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠アキレウス
+ハッ、遅え遅え遅え！
+[k]
+
+＠アキレウス
+さあて、次にぶっ飛ばされたいのはどいつだ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaFace F 0]
+[charaFadeinFSL F 0.1 -350,0]
+
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[charaFace G 0]
+[charaFadeinFSR G 0.1 350,0]
+＠怪しい連中
+……[r]……
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[se ad132]
+[charaMoveFSR G 450,0 0.3]
+[charaFadeout G 0.4]
+[wt 0.1]
+
+[se ad133]
+[charaMove E 100,0 0.3]
+[charaFadeout E 0.4]
+[wt 0.1]
+
+[charaMoveFSL F -250,0 0.3]
+[charaFadeout F 0.4]
+
+[wt 0.5]
+
+[seStop ad133 0.5]
+[seStop ad132 0.5]
+[wt 1.0]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠アキレウス
+お、逃げちまうのか。[r]しょうがねえ、さっさと追うぞ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠黒髭
+森の中に入っていきましたな。[r]これは、ちと厄介かもですぞ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠マンドリカルド
+視界の悪いとこに誘い込むのは定石っすからね。[r]仲間がいるようなら、なおさら。
+[k]
+
+[charaFace B 4]
+＠マンドリカルド
+というか、あー……
+[k]
+
+＠マンドリカルド
+あの、今の怪物……頭になにか、[r][#不自然な触角]が生えてなかったっすか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠清少納言
+リカっちも気付いたか！
+[k]
+
+[charaFace A 5]
+＠清少納言
+実は……地球の生き物じゃなかったりして。
+[k]
+
+[charaFace A 14]
+＠清少納言
+フッ……やつらは密かにこの星に潜り込み、[r]地球侵略を企む謎の宇宙人なのだよ……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠黒髭
+断じてノウ！
+[k]
+
+＠黒髭
+宇宙人は全身ぴっちりスーツの[r]耳長黒目亜人美少女であってほしい！
+[k]
+
+＠黒髭
+さもなくば戯画……ギガンティックな感じの[#化け物:クリーチャー]を相手に葉巻を[r][#銜:くわ]えた拙者が奮闘して助けられた女の子たちが俺様にオーイエーメ[r]ロンメロン夕張ファンタスティックな感じでも構いませんが！
+[k]
+
+＠黒髭
+それこそが人類が宇宙にかける夢！[r]男の燃えるレトロ・ロマン！
+[k]
+
+＠黒髭
+まさにＳＦファンの宿業というものでござる！[r]（※極めて個人差があります）
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠アキレウス（聞いてない）
+宇宙人ねぇ……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+＠清少納言（聞いてない）
+どうなんだね、リカっち君。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠マンドリカルド（聞いてたが困る）
+こっちに振らないでほしいっす。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+＠黒髭
+おお、なぜここにマスターがいないのだろう。[r]ツッコミ役が不在ではないか！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaTalk A]
+[charaFace A 19]
+[charaFadein A 0.1 1]
+＠清少納言
+あれ？[r]でも宇宙人……宇宙……
+[k]
+
+[messageOff]
+
+[wipeout circleIn 1.5 1.0]
+[se ade84]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 1.5]
+
+[effect bit_sepia01_depth_fs]
+
+[scene 83600]
+
+[wipein circleIn 1.5 1.0]
+[wait wipe]
+[wt 0.4]
+
+[bgm BGM_EVENT_1 0.1]
+
+＠スペースナゴン
+これから起こるであろう[#未曾有:み　ぞ　う]の危機から、[r]世界を守るのです……
+[k]
+
+＠スペースナゴン
+守るのです……のです……です……[r]スペースナゴンです……
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_1 1.0]
+
+[wipeout circleIn 1.0 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[scene 129600]
+[effectDestroy bit_sepia01_depth_fs]
+
+[wipein circleIn 1.0 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠清少納言
+……[r]……
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaFace A 10]
+＠清少納言
+…………あれ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠アキレウス
+どうした？[r]さっきのやつらに心当たりでもあんのか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠清少納言
+うーむ。[r]あるような、ないような……まあ、
+[k]
+
+[charaFace A 0]
+＠清少納言
+どのみち、放置してたらおっちゃん達も[r]安心して魚獲れないもんな。
+[k]
+
+＠清少納言
+気を取り直して行こうぜ……みんな！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠黒髭
+待って。どうしてなぎこが仕切ってるのかしら？[r]拙者が船長！　海では船長に従うでござる！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 2]
+
+[charaFace D 5]
+[charaFadein D 0.1 0]
+＠清少納言
+オラァ、クーデター！
+[k]
+
+[messageOff]
+
+[se ade183]
+[charaMoveReturn A 0,15 0.3]
+[charaMove D -350,0 0.3]
+[charaFadeout D 0.4]
+[charaFace D 7]
+＠黒髭
+グエー！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠マンドリカルド
+……止めておくべきっすかね？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠アキレウス
+うーん……。[wt 0.7][charaFace C 1][r]とりあえず放置でいいだろ！
+[k]
+
+＠黒髭
+よくないよ！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠清少納言
+よーし、話もまとまったところで、[r]気を取り直して行こう、ぜっ！
+[k]
+
+[charaFace A 8]
+＠清少納言
+ジャングル探検だ！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

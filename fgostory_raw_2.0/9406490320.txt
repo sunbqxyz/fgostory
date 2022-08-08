@@ -1,0 +1,523 @@
+
+
+
+＄94-06-49-03-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001400 1 マシュ]
+[charaSet B 1046001 1 伊吹童子]
+[charaScale B 1.3]
+
+[charaSet C 1046002 1 伊吹童子_第三]
+[charaSet D 4042000 1 ハベトロット]
+[charaSet E 1098214600 1 巨人種]
+[charaSet F 1098214600 1 巨人種1]
+[charaSet G 1098214600 1 巨人種2]
+
+[charaSet H 1046001 1 ダミー1]
+[charaFilter H silhouette EDEDED80]
+
+[charaSet I 1046002 1 ダミー2]
+[charaFilter I silhouette EDEDED80]
+
+[charaScale A 1.2]
+
+[scene 128700]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[effect bit_talk_aerial_wave]
+[se ade216]
+[se ad496]
+[seVolume ad496 0 0.6]
+[wt 1.4]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 0,38]
+
+[se ad170]
+[seVolume ad170 0 0.6]
+[se ad32]
+[effect bit_talk_14]
+
+[se ad671]
+[seStop ad671 0.6]
+[charaMoveScale A 1.0 0.2]
+[charaMove A 0,0 0.2]
+[wt 0.5]
+
+[charaFace A 2]
+＠マシュ
+伊吹童子さん！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 -30,15]
+＠伊吹童子
+まかせて！
+[k]
+
+[messageOff]
+[se bac30]
+[seStop bac30 0.5]
+
+[effect bit_talk_quickmove]
+[charaSpecialEffect B erasureReverse 1 0.2]
+[wt 0.5]
+
+[effect bit_talk_gram_slash_green_02]
+[wt 0.1]
+[cueSe Servants_102800 bac658]
+[wt 1.0]
+
+[se ad42]
+[bgmStop BGM_EVENT_80 1.5]
+[wt 0.5]
+[seStop ad42 1.5]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 -30,15]
+[wt 1.0]
+
+[se adm20]
+[fadeout white 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 1.0]
+[seStop adm20 1.0]
+[wt 0.5]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+＠伊吹童子
+……自己サイズ縮小、っと。[r]もう終わりよね？
+[k]
+
+
+？1：今のは……
+？2：ロシア異聞帯と、インド異聞帯の……
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.2]
+
+[charaCrossFade A 8001410 0 0.4]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[wait charaCrossFade A]
+[wt 0.2]
+
+＠マシュ
+はい。ヤガの皆さんに酷似した個体と、[bgm BGM_EVENT_70 0.1][r]インド異聞帯に発生していたカリ……でしたね？
+[k]
+
+[charaFace A 4]
+＠マシュ
+ですが、どちらもなんというか……[r]まるで生気が感じられませんでした。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠伊吹童子
+ええ。こっちを確実に狙ってきてはいたけど、[r]他には何も無かった。
+[k]
+
+＠伊吹童子
+怒りもない。怯えもない。[r]生きる為に襲う、という意志もない。
+[k]
+
+[charaFace B 12]
+＠伊吹童子
+なんだかヘンな感じ！
+[k]
+
+＠伊吹童子
+はっきり思い出せないあたしだけど、[r]こういう相手が[#おかしい]ってのは分かるわ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠マシュ
+……。[r]……。
+[k]
+
+＠マシュ
+先輩、もしかしたら[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[bgmStop BGM_EVENT_70 1.7]
+
+[se ade311]
+[seVolume ade311 0 0.1]
+[shake 0.03 1 1 0.5]
+[wt 1.2]
+
+[se ade311]
+[seVolume ade311 0 0.1]
+[shake 0.03 1 1 0.5]
+[wt 1.2]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[charaCrossFade A 8001400 7 0.4]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[wait charaCrossFade A]
+[wt 0.2]
+
+＠マシュ
+後続、敵性反応来ます！[bgm BGM_EVENT_24 0.1]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠伊吹童子
+さっきより震動が大きい……[r]大物みたい。二人とも、警戒して。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ade311]
+[seVolume ade311 0 0.3]
+[shake 0.03 2 2 0.5]
+[wt 1.0]
+
+[se ade311]
+[seVolume ade311 0 0.5]
+[shake 0.03 2 2 0.5]
+[wt 1.2]
+
+[charaTalk depthOff]
+[charaDepth F 5]
+[charaDepth G 6]
+[charaDepth E 7]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[se ade311]
+[shake 0.03 3 3 0.5]
+[wt 1.0]
+
+[charaFace F 0]
+[charaFadeinFSR F 0.4 350,0]
+[se ade311]
+[shake 0.03 3 3 0.5]
+[wt 1.0]
+
+[charaFace G 0]
+[charaFadeinFSL G 0.4 -350,0]
+[se ade311]
+[shake 0.03 3 3 0.5]
+[wt 1.2]
+
+[se ad625]
+[se ad422]
+[se ad426]
+[shake 0.03 3 3 1.5]
+
+[wt 1.5]
+
+[seStop ad426 0.5]
+[seStop ad625 0.5]
+[wt 0.5]
+
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+！
+[k]
+
+＠マシュ
+北欧異聞帯の巨人種……[r]それも、超一級の戦士職と断定します！
+[k]
+
+
+？1：[&ああ:うん]、将軍クラスだ……！
+？2：巨人における英霊、みたいな！？
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠伊吹童子
+[#上位の巨人種]！
+[k]
+
+[charaFace B 6]
+＠伊吹童子
+ちょっとだけ思い出したわ。[r]巨人種はただ一匹だけでも強力な存在なんだから、
+[k]
+
+＠伊吹童子
+特殊な個体っていうのはすっごく珍しいの！[r]なのに、目の前にいるってことは、
+[k]
+
+＠伊吹童子
+[#常軌を逸した存在]ってコト！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[se ad625]
+[se ad427]
+[shake 0.03 3 3 1.0]
+＠巨人種
+[image berserker_language_1][line 2]！！！
+[k]
+
+[seStop ad427 0.5]
+[seStop ad625 0.5]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠伊吹童子
+地を裂くが如き威嚇音！[r]いいわ、そう来なくちゃ！
+[k]
+
+[charaFace B 0]
+
+＠伊吹童子
+[#難攻不落:なんこうふらく]、動く城塞とみたわ！[r]お腹に力を入れときなさい、マスター、マシュ！
+[k]
+
+[charaFace B 11]
+＠伊吹童子
+この三巨将、強敵よ！
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth H 2]
+[charaDepth C 3]
+[charaDepth I 4]
+
+[charaTalk off]
+
+[se ad302]
+[effect bit_talk_charge_ppl]
+[wt 1.5]
+
+[seStop ad302 1.5]
+
+[se ad476]
+[charaFace H 0]
+[charaFadein H 0.7 1]
+[wt 0.3]
+
+[charaMove H -30,15 2.5]
+[charaMoveScale H 1.3 2.5]
+
+[charaMove B -30,15 2.5]
+[charaMoveScale B 1.3 2.5]
+[wt 0.3]
+[charaFadeout B 0.3]
+[wt 0.7]
+
+[fadeout white 1.0]
+[wait fade]
+
+[effectDestroy bit_talk_charge_ppl]
+[charaFadeout H 0.1]
+[wt 1.5]
+
+
+[charaMoveScale C 1.3 0.1]
+[charaMoveScale I 1.3 0.1]
+
+[seStop ad476 1.0]
+
+[charaFace I 0]
+[charaFadein I 0.7 -30,15]
+[charaFadeout H 0.7]
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[charaFace C 4]
+[charaFadein C 0.1 -30,15]
+
+[charaFadeout I 0.4]
+
+[wt 0.8]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[charaFace C 5]
+＠C：伊吹童子
+ならばあたしも応じましょう！[r]本気モード！
+[k]
+
+[charaFace C 6]
+＠C：伊吹童子
+全力でいくから魔力消費も激しいと思うけど、[r]やられちゃったらごめんなさい！
+[k]
+
+？1：そ、そうなんだ、了解！
+？2：（伊吹童子がそこまで言う相手[&か！:！]）
+
+？！
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se bac170]
+[wt 0.6]
+
+[charaPut D 0,0]
+[charaTalk D]
+[charaFace D 1]
+[se ad595]
+[charaSpecialEffect D appearance 1 1.0]
+[wait charaSpecialEffect D]
+[wt 0.5]
+＠ハベトロット
+オッケー、さっそくピンチだな！[r]ボクの出番ならそう言って！
+[k]
+
+[charaFace D 15]
+[charaShake D 0.05 3 3 0.5]
+＠ハベトロット
+って、でっかいなコイツら！？[r][%1]、よく怖くないな！？
+[k]
+
+？1：怖いけど、ガッツで！
+
+[charaFace D 8]
+＠ハベトロット
+そっか、やるじゃん！[r]じゃあボクもビビってられないんだわ！
+[k]
+
+？2：ハベトロット、出てこられるの！？
+
+[charaFace D 6]
+＠ハベトロット
+ちょっとだけならなんとかね～！[r]しんどいけど、仕事ってそういうもんだろ？
+[k]
+
+？！
+
+[charaFace D 5]
+
+＠ハベトロット
+んじゃあまあ、[r]手始めに一発、おっきいのを撃ち込むぜ～！
+[k]
+
+＠ハベトロット
+準備はいいかい、マシュ？[r]タイミングはキミに任せるよ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠マシュ
+はい、ブラックバレル、[#火力支援:ブ ラ ス タ ー]モードに[#調整:セット]！[r]指示をいただければ起動します、マスター！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 -30,15]
+＠C：伊吹童子
+助太刀に感謝！[r]じゃあ[line 3]いくわよ、知られざる三巨将！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+

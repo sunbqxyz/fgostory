@@ -1,0 +1,152 @@
+
+＄03-00-05-11-1-1
+
+[soundStopAll]
+
+[charaSet A 1038000 1 伊阿宋]
+[charaSet B 4039002 1 曼迪卡尔多]
+[charaSet C 98115300 1 福尔摩斯]
+[charaSet D 1098168210 1 巴沙洛缪]
+[charaSet E 8001410 1 玛修]
+[charaSet F 98006000 1 魔兽]
+
+[charaSet J 5009000 1 特效用dummy]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[se bac23]
+[fowardEffect bit_talk_Slash_white_01]
+[wt 0.3]
+
+[se bac14]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 0.1]
+
+[scene 84700]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0 1]
+[charaShake F 0.03 4 4 0.6]
+[wt 1.2]
+
+[charaMove F 0,-50 0.4]
+[charaFadeout F 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.2]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠伊阿宋
+呼，呼，呼……[r]啊啊，累死我了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠曼迪卡尔多
+看你这样子，[r]应该没有装那个纳米机器吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠伊阿宋
+我不太想和神明扯上什么关系。[r]……不过现在好像也容不得我这么说了。
+[k]
+
+[charaFace A 2]
+＠伊阿宋
+好了，走吧，你们这群废物！[r]跑起来！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠福尔摩斯
+这边已经大致掌握事态了。[r]抓紧时间。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠巴沙洛缪
+我的船也做好启航准备了。
+[k]
+
+＠巴沙洛缪
+还有，我已经找到『[#金鹿号:Golden Hind]』了。
+[k]
+
+＠巴沙洛缪
+就是离你们最近的那艘船。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠福尔摩斯
+坐标已发过去了。
+[k]
+
+＠福尔摩斯
+跟随导航，搭乘那艘船逃离岛屿，[r]这应该是最快的方法。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠玛修
+收到坐标了。[r]就快到了！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,149 @@
+＄91-40-03-01-3-1
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 20110]
+[charaSet A 8001001 2 玛修]
+[charaSet B 98003003 2 Dr.罗曼]
+[charaSet C 98002000 2 芙芙]
+[charaSet D 4003001 2 德雷克]
+[charaSet E 4008001 2 蒂奇]
+[charaFadein E 0.1 1]
+[charaFace E 4]
+[fadein black 1]
+[wait fade]
+＠蒂奇
+居然……又失败……[r]不过没办法，因为在下只是个亡灵……
+[k]
+
+[charaSpecialEffect E enemyErasure 0 1 2]
+[se ba6]
+[wait time 1]
+[wt 0.6]
+[charaFadein D 0.4 1]
+[charaFace D 4]
+＠德雷克
+这到底什么嘛……
+[k]
+
+[wt 0.4]
+[charaFace D 0]
+＠德雷克
+[line 3]好，刚才的全忘了。[r]那种笨蛋就该忘掉。
+[k]
+
+[charaFace D 1]
+＠德雷克
+重要的是财宝，财宝……[r]哎，这品质不错啊！
+[k]
+
+[se ad44]
+[wt 0.4]
+＠德雷克
+矿石、宝石、古董！[r]都是些容易卖钱不容易贬值的东西啊！
+[k]
+
+＠德雷克
+来，你们也都来瞧瞧啊，[%1]！[r]何不一起沉浸在这豪华感中呢！
+[k]
+
+？1：……那就恕我恭敬不如从命了……
+
+？2：……我……我要一个就够了啦。
+
+？！
+
+[charaFadeout D 0.1]
+[messageOff]
+[fadeout black 1]
+[wait fade]
+[wt 0.3]
+[scene 20110]
+[charaFadein D 0.1 1]
+[fadein black 1]
+[wait fade]
+＠德雷克
+好了，看中的东西都已经拿好了。[r]可以回去了吧。
+[k]
+
+[charaFadeout D 0.1]
+[charaTalk A]
+[charaFadein D 0.1 0]
+[charaFadein A 0.1 2]
+[charaFace A 6]
+＠玛修
+[line 2]？　船长，还有些古董没拿啊？
+[k]
+
+[charaFace D 1]
+[charaFace A 0]
+＠德雷克
+这样就好了，我们人数不多，[r]过于贪婪未免有些无趣。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[charaFadein D 0.1 1]
+[charaFace D 0]
+＠德雷克
+啊啊，不过我确实忘了一件事没做。[r]……………好，这样就行了。
+[k]
+
+＠Dr.罗曼
+在宝箱内刻了什么痕迹……？[r]德雷克船长，刚才那是什么？
+[k]
+
+[charaFadeout A 0.1]
+[charaTalk D]
+[charaFadein D 0.1 0]
+[charaFadein A 0.1 2]
+＠德雷克
+刻上的是黄金之鹿。[r]代表我先拿过了的标志。
+[k]
+
+＠德雷克
+在我后面发现这个痕迹的傻瓜们[r]肯定会不甘心地大叫“该死的，黄金鹿那家伙！”。
+[k]
+
+[charaFace D 1]
+＠德雷克
+这样一来，我的恶名就会越传越广。
+[k]
+
+[charaFace A 6]
+＠玛修
+鹿……黄金的……鹿……？
+[k]
+
+＠德雷克
+好了，走吧，[%1]。[r]快回大陆举行一场宴会吧！
+[k]
+
+[charaFadeout D 0.1]
+[communicationCharaLoop 98003003 0 5 0 4]
+＠Dr.罗曼
+唔，嗯，既然船长这么说，那一定没错。[r]好了，我们也走吧，[%1]。
+[k]
+
+[communicationCharaFace 0]
+[charaFace A 13]
+＠Dr.罗曼
+确实不该在这里久留。[r]不知道其他海盗何时会来。
+[k]
+
+[communicationCharaFace 1]
+＠Dr.罗曼
+这次何不慷慨大方一些，[r]将船长遗漏的东西让给他们吧。
+[k]
+
+[charaFace A 1]
+＠玛修
+嗯。赶快去酒吧[r]听德雷克船长的歌声吧。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_1 0.4]
+[wait fade]
+[soundStopAll]
+[end]

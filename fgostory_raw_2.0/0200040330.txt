@@ -1,0 +1,100 @@
+
+＄02-00-04-03-3-0
+[soundStopAll]
+
+[charaSet A 98001000 1 玛修]
+[charaSet B 1098121910 1 食尸鬼]
+[charaSet C 5033001 1 喀耳刻]
+[charaSet H 5009000 1 特效用dummy]
+
+[scene 49302]
+
+[charaDepth H 10]
+[charaPut H 1]
+[charaEffect H bit_talk_40]
+
+[fadein black 1.0]
+[wt 0.5]
+[bgm BGM_EVENT_3 0.1]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.4 1]
+
+＠玛修
+呼呼呼[line 3]
+[k]
+
+[charaFace A 15]
+
+＠玛修
+喀……喀耳刻小姐！[r]有一只向您那边去了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad42]
+[charaTalk B]
+[charaFace B 0]
+[charaFilter B silhouette 00000080]
+[charaFadein B 0.1 1]
+
+＠食尸鬼
+[line 6]！
+[k]
+
+[messageOff]
+[se bac27]
+[fowardEffect bit_talk_32]
+[charaShake B 0.05 3 3 0.3]
+[wt 1.0]
+
+[fowardEffectStop bit_talk_32]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠喀耳刻
+辛苦你拼命跑过来，玛修。[r]能麻烦你继续帮我当诱饵吗。
+[k]
+
+＠喀耳刻
+在这个视野开阔的地方，[r]就能够不把别人卷进来，尽情地施展魔术了。
+[k]
+
+＠喀耳刻
+一切准备就绪。[r]来吧，来追我啊，[#食尸鬼:Ghoul]们。
+[k]
+
+[charaFace C 1]
+
+＠喀耳刻
+尽情享受我引以为傲的飨宴吧。[r]呵呵。
+[k]
+
+[charaFace C 5]
+[se ad39]
+[charaBackEffect C bit_talk_36_back]
+＠喀耳刻
+由昏暗的水底摇曳着出现吧，[r]吾之妒心之兽……
+[k]
+
+[charaFace C 2]
+
+＠喀耳刻
+用汝那三重獠牙，[r]撕咬六极灾厄吧[line 3]！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

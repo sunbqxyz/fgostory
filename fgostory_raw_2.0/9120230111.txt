@@ -1,0 +1,122 @@
+
+＄91-20-23-01-1-1
+
+[soundStopAll]
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 98115300 1 福尔摩斯]
+[charaSet C 2023002 1 莫里亚蒂]
+[charaSet D 6005001 1 杰克]
+[charaSet E 1098124510 1 达·芬奇]
+
+[charaSet F 98115000 1 特效用]
+
+[charaPut F 1200,1200]
+[charaEffect F bit_talk_10_LowLevel]
+
+[scene 10900]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad22]
+[se ad31]
+[wt 1.5]
+[seStop ad31 1.0]
+[seStop ad22 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_77 0.1]
+[charaPut F 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+魔书，确认被消灭。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠福尔摩斯
+咦？[r]好像有一些杂音呢。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+是受到了……魔雾的影响吗？
+[k]
+
+[charaFace A 12]
+
+＠玛修
+虽说那个特异点本身已经消灭了，[r]但是好像产生了酷似那个的雾。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+
+＠达·芬奇
+是干扰吗……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠莫里亚蒂
+没事没事。[r]来吧，让我们嘿咻嘿咻地前进吧～！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠杰克
+没关系啦，[#妈妈:御主]。[r]毕竟雾是我们的『领域』嘛！
+[k]
+
+＠杰克
+嘿咻嘿咻地前进～！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠莫里亚蒂
+……不小心用了奇怪的单词，[r]结果被这孩子记住了呢……
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,355 @@
+
+
+
+＄03-00-07-09-3-1
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 7006300 1 坂田金时]
+[charaSet B 5017000 1 美狄亚·Lily]
+[charaSet C 1098201600 1 渡边纲]
+[charaSet D 6030000 1 段藏]
+[charaSet E 98074000 1 源赖光]
+[charaSet F 98006200 1 敌人]
+[charaSet G 98006200 1 敌人]
+[charaSet H 98006200 1 敌人]
+
+[scene 102002]
+
+[bgm BGM_MAP_64 0.1]
+[wt 0.4]
+
+[fadein black 0.7]
+[wait fade]
+
+
+[effect bit_talk_kengekiall03_fs]
+[se ad1032]
+[wt 0.3]
+[se ad687]
+[wt 0.1]
+[se ad1031]
+[wt 0.6]
+
+[charaTalk D]
+[charaFace D 5]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect D appearance 1 0.25]
+[wt 0.4]
+
+[messageOff]
+[se ad1021]
+[se ad270]
+[seVolume ad270 0 0.3]
+[se ad896]
+[seStop ad896 1.5]
+[wt 1.5]
+
+[charaFace D 2]
+
+＠段藏
+风魔·喷射弹！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.1]
+
+[effect bit_shot_01 -250,0]
+[fowardEffect bit_talk_impactlanding -250,0]
+[se ade337]
+[wt 0.5]
+[effect bit_shot_01 250,0]
+[fowardEffect bit_talk_impactlanding 250,0]
+[charaShake F 0.05 3 3 0.8]
+[wt 0.5]
+[effect bit_shot_01]
+[charaFadeout F 0.4]
+[wt 1.0]
+[effectDestroy bit_shot_01]
+[seStop ade337 0.5]
+[se ad609]
+[wt 1.0]
+
+
+[se ad768]
+[charaSpecialEffect F appearance 1 1.0]
+[wt 1.5]
+[seStop ad768 0.5]
+[se ad25]
+[wt 1.2]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠段藏
+……唔，确认敌对个体即时再生！
+[k]
+
+？1：与英灵剑豪一样……！
+？2：即时再生！
+
+？！
+
+[charaFace D 5]
+
+＠段藏
+正是。是通过将灵核保存在别处[r]得以实现的拟似不死！
+[k]
+
+＠段藏
+听闻在下总国的战斗中，是结合了那位武藏阁下的妙技[r]与村正阁下的名刀才好不容易伤到了灵核……！
+[k]
+
+[se ad51]
+＠段藏
+但晴明阁下交给我们的符咒只有八张！[r]该如何歼灭它们是好！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad987]
+[wt 1.5]
+
+[seStop ad987 0.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.7 1]
+[wt 1.0]
+
+＠渡边纲
+真碍事。
+[k]
+
+[messageOff]
+
+[se ad1004]
+[wt 0.3]
+[charaCrossFade C 1047001 5 0.4]
+[wait charaCrossFade C]
+[wt 1.5]
+
+[se bac307]
+[effect bit_talk_h_slash01_fs]
+[wt 0.2]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace F 0]
+[charaFadeinFSL F 0.1 0]
+
+[charaFace G 0]
+[charaFadeinFSR G 0.1 2]
+
+[se bac403]
+[effect bit_talk_14]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+
+[charaShake F 0.05 2 2 0.6]
+[charaShake G 0.05 2 2 0.6]
+
+[wt 0.4]
+
+[se ad26]
+[wt 0.4]
+
+[se ad42]
+[charaEffect F bit_talk_atomization]
+[charaEffect G bit_talk_atomization]
+[wt 0.4]
+[charaFadeout F 1.2]
+[charaFadeout G 1.2]
+[wt 3.0]
+
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠段藏
+！
+[k]
+
+＠段藏
+敌对反应，彻底消灭……！[r]这是……！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad997]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+[f large]喝呀！！
+[k]
+
+[messageOff]
+[se ad678]
+[charaMove A 0,15 0.2]
+[charaMoveScale A 1.1 0.2]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[wt 0.2]
+[charaFadeout A 0.2]
+[wt 0.2]
+
+[se ad85]
+[effect bit_talk_gold_slash_02]
+[blurOff motion 0.2]
+
+[charaScale A 1.0]
+
+[wt 0.4]
+
+[charaTalk F]
+[charaFadein F 0.1 1]
+
+[charaShake F 0.05 2 2 0.8]
+
+[se ad1056]
+[seVolume ad1056 0 0.6]
+[fowardEffect bit_talk_impactlanding]
+[shake 0.05 0 2 1.0]
+
+[wt 0.4]
+
+[se ad26]
+[wt 0.4]
+
+[se ad42]
+[charaEffect F bit_talk_atomization]
+[wt 0.4]
+[charaFadeout F 1.2]
+[wt 3.0]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠源赖光
+哼！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace F 0]
+[charaFadeinFSL F 0.1 0]
+
+[charaFace G 0]
+[charaFadeinFSR G 0.1 2]
+
+
+[effect bit_talk_quick_slash]
+
+[se bac210]
+[wt 0.1]
+[se bac209]
+[wt 0.1]
+[se bac211]
+
+[wt 1.1]
+
+[se bac403]
+[effect bit_talk_14]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+
+[charaShake F 0.05 2 2 0.6]
+[charaShake G 0.05 2 2 0.6]
+
+[wt 0.4]
+
+
+[se ad26]
+[wt 0.4]
+
+[se ad42]
+[charaEffect F bit_talk_atomization]
+[charaEffect G bit_talk_atomization]
+[wt 0.4]
+[charaFadeout F 1.2]
+[charaFadeout G 1.2]
+[wt 3.0]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠段藏
+……………………！
+[k]
+
+？1：这就是平安武者！
+？2：令我想起了鬼岛！
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠美狄亚·Lily
+再加上我赋予的攻击强化魔术。[r]配合各位的战斗性能，甚至能令拟似不死无效化！
+[k]
+
+[charaFace B 0]
+
+＠美狄亚·Lily
+……不，说不定就算没有我的魔术，[r]他们也肯定能做到！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad998]
+[wt 0.8]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠坂田金时
+把碍事的家伙全部揍飞。[r]硬闯过去！
+[k]
+
+＠坂田金时
+目标是正沿着大街北上的两骑八将神！[r]我们上，[%1]，不对，
+[k]
+
+＠坂田金时
+[line 3]老大！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_64 2.0]
+[wait fade]
+[soundStopAll]
+[end]

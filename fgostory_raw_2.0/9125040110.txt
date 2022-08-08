@@ -1,0 +1,623 @@
+
+＄91-25-04-01-1-0
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 25004000 1 琰女]
+[charaSet B 6027000 1 周照]
+[charaSet H 98115000 1 特效用]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 104200]
+[branch lblConf]
+[label lblNotClear]
+[scene 105500]
+[label lblConf]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk A]
+[charaFace A 25]
+[charaFadein A 0.4 1]
+[wt 0.4]
+[charaShake A 0.1 3 3 0]
+
+＠琰女
+…………啊……！！　阿哇……！！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaShakeStop A]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠周照
+·········喂，玉玉？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+[charaShake A 0.1 3 3 0]
+
+＠琰女
+不，不不，不～夜～奶奶奶，姐姐姐，大大大人……！[r]啊，啊啊，呀咿……！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaShakeStop A]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠周照
+玉玉……你！
+[k]
+
+＠周照
+你……[r]身为从者啊！
+[k]
+
+＠周照
+应该对御主啊！
+[k]
+
+[shake 0.05 4 4 0.5]
+
+＠周照
+[f large]不可饶恕！！
+[k]
+
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[effect bit_talk_throwing]
+[se ad85]
+[wt 0.6]
+
+[se ad102]
+[se bac104]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+[charaShake A 0.05 5 5 0.3]
+
+＠琰女
+[f large]咿咿！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠周照
+玉玉，你就不知道什么叫接受教训吗？
+[k]
+
+＠周照
+御主！？[r]你也给朕狠狠地～！　批评批评她！
+[k]
+
+[charaFace B 5]
+
+＠周照
+你对任何人都这样，[r]对这种马虎小丫头也是，太……太姑息了吧？
+[k]
+
+？1：我一点也不温柔，也没能做到啊。
+？2：虽然我想待人温柔啦……
+？！
+
+[charaFace B 4]
+
+＠周照
+……唔唔唔～。[r]一本正经地说这种话……太，太狡猾了啦？
+[k]
+
+＠周照
+你或许会觉得，这和其他从者们的失败一样，[r]不过是普通的恶作剧[line 3]
+[k]
+
+[bgmStop BGM_EVENT_5 1.5]
+
+[charaFace B 2]
+
+＠周照
+但这家伙的[#行径]可不是什么[r]能用可爱恶作剧来形容的吧！？
+[k]
+
+＠周照
+再说了，朕床底下！[bgm BGM_EVENT_7 0.1][r]那个超离谱的无底洞到底是什么？
+[k]
+
+＠周照
+朕还奇怪为什么每天晚上都莫名睡得不踏实！[r]结果你居然破坏了房间地板，并不停往下挖！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 22]
+[charaFadein A 0.1 1]
+
+＠琰女
+那那那，那是因为～～，我只是想在迦勒底～，[r]建造一座货真价实的[#温泉宫]……
+[k]
+
+[charaFace A 11]
+
+＠琰女
+根据我的风水鉴定，觉得不～夜～姐姐的房间才是[r]四神相应、藏风聚水的地方！　……于是，才有了这么一出。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠周照
+这[messageShake 0.05 4 4 0.2]种地方！　[wt 0.5][messageShake 0.05 4 4 0.2]怎么可能！　[wt 0.5][messageShake 0.05 4 4 0.2]涌出温泉来嘛！！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[effect bit_talk_throwing 0,0 H]
+[se ad85]
+[wt 0.6]
+
+[se ad102]
+[se bac104]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+[charaShake A 0.05 5 5 0.3]
+
+＠琰女
+咿！　锯子好可怕！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠周照
+这是惩罚用很轻的那种吧。[r]朕如果动了真格，你这会儿已经在惨叫了哦！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠琰女
+对·不·起　我有在反省……[r]下次我定会请一些正规发掘温泉的人啦。
+[k]
+
+[charaFace A 11]
+
+＠琰女
+比方说，空海大师[line 3]弘法大师！[r]一旦他们被召唤至此，我定会率先前去恳求……！
+[k]
+
+？1：也是因为我不禁开玩笑说，如果迦勒底有温泉就好了……
+？2：毕竟模拟装置的温泉没有实际效果嘛。
+？！
+
+[charaFace A 6]
+
+＠琰女
+对吧～？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠周照
+对吧～☆
+[k]
+
+[charaFace B 2]
+
+＠周照
+[line 3][messageShake 0.05 4 4 0.2]你个头！！　你这热气甜点！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.1 1]
+
+
+＠琰女
+热[messageShake 0.05 4 4 0.2]气甜点！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠周照
+还有那个，那件事也是吧！？
+[k]
+
+＠周照
+在食材订单上擅自加了3个『0』，[r]结果送来一集装箱荔枝的那件事到底是怎么回事！？
+[k]
+
+[charaFace B 4]
+
+＠周照
+那个可怜的食堂弓兵在门完全关不起来的[r]冷冻室前跪在地上彻底愣住了哦？
+[k]
+
+[charaFace B 2]
+
+＠周照
+什么超甜荔枝咖喱、炸荔枝汉堡、[r]荔枝的荔枝口味炒荔枝什么的朕可闻所未闻哦！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠琰女
+玉，玉玉觉得还算是一种新境界的好吃哦，[r][line 3]什么的。
+[k]
+
+？1：都是因为我说想吃荔枝吗……？
+？2：荔枝披萨倒是意外还行哦。汁水充足。
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠周照
+不是这个问题吧！？
+[k]
+
+[charaFace B 5]
+
+＠周照
+听好了……今天朕无论如何！
+[k]
+
+＠周照
+都要狠狠地惩戒你，直到你将侍奉御主[r]之人该有的礼仪刻入你灵基为止！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+
+＠琰女
+不要啊啊啊[line 6]！！[r]不要拷问！！　只知道拷问拷问拷问！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠周照
+哼呵呵……你就那么讨厌拷问吗……？
+[k]
+
+＠周照
+朕的宗旨就是信赏必罚。你分明只要不做坏事，[r]不做会令人怀疑的事，就不会有什么拷问了嘛。
+[k]
+
+[charaFace B 1]
+
+＠周照
+也该是时候打击一下你那种强词夺理了，[r]朕利用模拟装置技术事先做好了准备！
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.5 1.0]
+[bgm BGM_EVENT_7 0.5 0.5]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[scene 108100]
+[wt 0.5]
+
+[wipein rightToLeft 0.5 1.0]
+[bgm BGM_EVENT_7 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+[effect bit_talk_41_fs]
+[se ad139]
+[wt 1.5]
+[effectStop bit_talk_41_fs]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠周照
+取名为！　『不○○就不能离开的房间』！[r]如果不喜欢拷问，就用这个吧！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 21]
+[charaFadein A 0.1 1]
+
+＠琰女
+啊？　不○○就不能离开的房间！？[r]请问，难道，是有点色色的那种吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠周照
+蠢货！[r]你脑袋里塞满了荔枝吗？　这个啊[line 3]
+[k]
+
+＠周照
+是『在[#科举]中[#拿不到首席合格就不能离开]的房间』啦！[r]在全科目首席，连中三元合格之前绝对出不来哦！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 21]
+[charaFadein A 0.1 1]
+
+＠琰女
+『在[#科举]中[messageShake 0.05 4 4 0.2][#拿不到首席合格就不能离开]的房间』！？
+[k]
+
+[charaFace A 24]
+
+＠琰女
+不可能啦[line 6]！！[r]在那超难关考试问题中拿到首席？　等同于终生监禁吧！！
+[k]
+
+＠琰女
+至少，至少求个阿倍仲麻吕的支援！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠周照
+不要图省力依靠他人！　要挑战的是你！[r]身为皇帝的贵妃，怎能不展现相应的气概与才干呢？
+[k]
+
+＠周照
+别以为靠美色、可爱以及一点无聊的小聪明，[r]就能想办法蒙混过关哦！
+[k]
+
+[charaFace B 2]
+
+＠周照
+李隆基那家伙，竟然被迷得神魂颠倒……[r]对贵妃的教育一点都不到位！
+[k]
+
+[bgmStop BGM_EVENT_7 1.5]
+
+＠周照
+连一个这种小丫头都掌控不了，[r]国家会吱嘎倾倒也是理所当然的……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 22]
+[charaFadein A 0.1 1]
+
+＠琰女
+[line 3]！！
+[k]
+
+[messageOff]
+[charaDepth H 0]
+[charaDepth A 10]
+[charaPut H 0,0]
+[charaEffect H bit_talk_fire_blue]
+[se ad450]
+[seVolume ad450 0 0.1]
+[seVolume ad450 1.0 0.6]
+[wt 1.5]
+
+[fowardEffect bit_talk_charge_blu]
+[wt 0.2]
+
+[se ad29]
+[seStop ad450 1.6]
+[charaCrossFade A 25004001 4 0.6]
+[wait charaCrossFade A]
+
+[fowardEffectStop bit_talk_charge_blu]
+[wt 0.2]
+[charaEffectStop H bit_talk_fire_blue]
+[seStop ad29 1.0]
+[wt 1.2]
+
+＠琰女
+您，您怎么骂我都可以……[bgm BGM_EVENT_70 0.1][r]但是[line 3]
+[k]
+
+[charaFace A 13]
+
+＠琰女
+哪怕您是天子大人祖母的周照大人，[r]我也不能对您说天子大人的坏话充耳不闻。
+[k]
+
+[charaFace A 2]
+
+＠琰女
+不～夜～奶奶根本不了解皇帝的心情！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠周照
+朕也是皇帝哦！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠琰女
+不，不～夜～奶奶你[line 3]
+[k]
+
+[charaFace A 10]
+
+＠琰女
+还是在三千只猫泳池里溺水[r]毛茸茸地寿终正寝去吧！！
+[k]
+
+＠琰女
+哇～～！
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[se ad59]
+[seStop ad59 1.5]
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠周照
+你，你说什么！[r]好吓人……你这家伙，真亏你能想出这种点子呢！
+[k]
+
+[charaFace B 5]
+
+＠周照
+唔～～，真是的。
+[k]
+
+[bgmStop BGM_EVENT_70 1.5]
+
+＠周照
+就算逃离这狭窄的阵营也没有用处。[r]朕很快就会勾住你的尾鳍把你钓上来！
+[k]
+
+？1：很抱歉麻烦你说了那么多。
+？2：原本应该由我来说才对。
+？！
+
+＠周照
+………………
+[k]
+
+[bgm BGM_EVENT_2 0.1]
+[charaFace B 4]
+
+＠周照
+…………呼。结果成了这样呢～。[r]因为你啊～，是御主嘛～。
+[k]
+
+[charaFace B 0]
+
+＠周照
+而且朕压根不觉得自己说过头了。[r]朕的职责就是一有机会，就要展现自己的德望。
+[k]
+
+[charaFace B 4]
+
+＠周照
+不过，话虽如此……[r]也要考虑如何善后才行呢。
+[k]
+
+[charaFace B 3]
+
+＠周照
+为，为什么要微笑啦！[r]事到如今可别再对朕抱有奇怪的期待了哦？
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,514 @@
+
+
+＄94-99-99-08-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 11012000 1 蘭丸Ｘ]
+[charaSet B 1098222800 1 高杉晋作]
+[charaSet C 1098223000 1 出雲阿国]
+[charaSet D 1098222550 1 坂本龍馬]
+[charaSet E 98115000 1 エフェクト用]
+[charaSet F 1098222700 1 人斬り新兵衛]
+[charaSet G 1098222600 1 武市瑞山]
+
+[imageSet H cut305_ion 1]
+[imageSet I cut305_rmr 1]
+[imageSet J cut305_tsg 1]
+[imageSet K cut305_srl 1]
+
+[scene 138400]
+
+[cameraMove 0.1 0,0 1.01]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠坂本龍馬
+……なかなか手強いな。
+[k]
+
+[charaFace D 5]
+
+＠坂本龍馬
+蘭丸君、力が増しているようだが、[r]もしかしてこの首の影響かい？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+蘭丸の身体に流れるランマニウムが[r]怒っているのが分かるであります！
+[k]
+
+＠蘭丸Ｘ
+あれは、あの首だけは蘭丸が[r]取り戻さねばならないものだと！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad241]
+[shake 0.05 0 4 2.0]
+[wt 2.0]
+[seStop ad241 1.0]
+
+[charaTalk C]
+[charaFace C 22]
+[charaFadein C 0.1 1]
+
+＠出雲阿国
+むむむ、この振動は……！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠坂本龍馬
+どうやら時間切れか、ここは失礼するよ。[r]君達を始末できなかったのは予定外だが仕方ない。
+[k]
+
+[charaFace D 1]
+
+＠坂本龍馬
+大事な取引が控えていてね。
+[k]
+
+[messageOff]
+[se ad690]
+[seVolume ad690 0 0.6]
+[charaPut E 1]
+[charaEffect E bit_talk_black_aura]
+[wt 2.5]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+このオーラは……！[r]お竜様の力でありますか！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 23]
+[charaFadein C 0.1 1]
+
+＠出雲阿国
+い、いえ、これは……！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ade409]
+[se ade410]
+[charaPut E 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.5]
+[charaEffectStop E bit_talk_black_aura]
+[fadeout black 1.0]
+[wait fade]
+
+[charaPut E 2000,2000]
+[charaFadeout D 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+消えた！？[r]ですが、蘭丸の右目には感じるであります！
+[k]
+
+＠蘭丸Ｘ
+追うでありますよ、主様！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 0.7]
+[se ad770]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 138200]
+[wt 1.0]
+[pictureFrame cut063_cinema]
+
+[seStop ad770 0.7]
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[se ad241]
+[shake 0.05 0 4 2.0]
+[wt 2.0]
+[seStop ad241 1.0]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 0,-50]
+
+＠武市瑞山
+この振動は……？
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad799]
+[wt 1.2]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 0,-50]
+[wt 0.4]
+[seStop ad799]
+[bgm BGM_EVENT_90 0.1]
+
+＠高杉晋作
+やあ、久しぶりだね武市君。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 0,-50]
+
+＠武市瑞山
+高杉……[r]やはり貴様か。
+[k]
+
+＠武市瑞山
+どういう風の吹き回しだ、[r]これまで逃げ回っているだけだった貴様が
+[k]
+
+＠武市瑞山
+私の前に現れるとは。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 0,-50]
+
+＠高杉晋作
+逃げ回る？　いやあ、どちらかというと[r]時間稼ぎをしてたというか……。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad799]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+[seStop ad799]
+
+＠坂本龍馬
+武市さん、すまない。少しばかり予定が狂った。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠武市瑞山
+かまわん、それよりも高杉だ。[r]共に勤王の世を目指しながら、
+[k]
+
+＠武市瑞山
+私利私欲のために聖杯を独り占めした[r]この男に天誅を加えるときが来たのだ。
+[k]
+
+[charaFace G 5]
+＠武市瑞山
+……田中君！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 0,-50]
+
+＠人斬り新兵衛
+武市先生、お任せを……。
+[k]
+
+＠人斬り新兵衛
+さて高杉、今までの借りを返させてもらうぞ。
+[k]
+
+[messageOff]
+[se ad978]
+[charaFace F 2]
+[charaPut E 1]
+[charaEffect E bit_talk_kien01]
+[wt 1.0]
+
+＠人斬り新兵衛
+[f large]キェエアアアアアアアアッ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+[charaEffectStop E bit_talk_kien01]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 0,-50]
+
+＠高杉晋作
+ははは、相変わらずヤバい声。
+[k]
+
+[charaFace B 1]
+＠高杉晋作
+僕じゃあ全然勝てる気がしないが[r]そろそろ来る頃かな。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_90 1.0]
+[wipeout rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[pictureFrame]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+[se ad770]
+[seVolume ad770 0 0]
+[seVolume ad770 0.7 1.0]
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+[wt 0.5]
+[seStop ad770]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+逃がさないでありますよ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠出雲阿国
+これは、社長様もこちらにいらしてましたか！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠高杉晋作
+これで役者がそろったというとこだな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠武市瑞山
+何人集めようがまとめて始末するだけだ。
+[k]
+
+[charaFace G 5]
+＠武市瑞山
+……やれ！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad978]
+[charaPut E 1]
+[charaEffect E bit_talk_kien01]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+[wt 1.2]
+
+＠人斬り新兵衛
+チェストオオオオオオオッ！！！！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_24 1.0]
+[se ad678]
+[se ad85]
+[effect bit_talk_v_slash02]
+[charaMoveScale F 1.1 0.2]
+[charaMove F 0,14 0.2]
+[charaFadeout F 0.2]
+[blur motion 0.2 4 10 0.5 0.6 0.05 100]
+[wt 0.2]
+[charaFadeout F 0.1]
+[wt 0.1]
+[blurOff motion 0.1]
+[fadeout black 0.1]
+[wait fade]
+[charaPut E 1200,1200]
+[charaEffectStop E bit_talk_kien01]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[cueSe SE_21 21_ad1118]
+[effect bit_talk_blood_stay]
+[wt 2.5]
+[effectStop bit_talk_blood_stay]
+[wt 0.5]
+[charaScale F 1.0]
+
+[cueSe Servants_303400 bac778]
+[seVolume bac778 0 0.6]
+[charaFadein H 0.1 -162,-200]
+[wt 0.2]
+[cueSe Servants_303400 bac778]
+[seVolume bac778 0 0.6]
+[charaFadein I 0.1 160,-200]
+[wt 0.2]
+[cueSe Servants_303400 bac778]
+[seVolume bac778 0 0.6]
+[charaFadein J 0.1 -162,-200]
+[wt 0.2]
+[cueSe Servants_303400 bac778]
+[charaFadein K 0.1 160,-200]
+[wt 2.0]
+
+[charaSet G 1098222610 1 武市瑞山]
+
+[scene 138200 0.5]
+[charaFadeout H 0.5]
+[charaFadeout I 0.5]
+[charaFadeout J 0.5]
+[charaFadeout K 0.5]
+[wt 1.5]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.4 1]
+[se ad240]
+[charaShake G 0.05 1 1 0.6]
+[fowardEffect bit_talk_35]
+[wt 1.4]
+[bgm BGM_EVENT_122 0.1]
+
+＠武市瑞山
+……な、何をする、……田中君！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[fowardEffectDestroy bit_talk_35]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠人斬り新兵衛
+こ、これは……[r]わ、私は……、何を……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 23]
+[charaFadein C 0.1 1]
+
+＠出雲阿国
+あの人斬り……武市様を……斬った！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+＠人斬り新兵衛
+う……！？
+[k]
+
+[messageOff]
+[se ad690]
+[seVolume ad690 0 0.6]
+[charaPut F 1]
+[charaEffect F bit_talk_black_aura]
+[wt 1.0]
+
+＠人斬り新兵衛
+う[messageShake 0.05 4 3 0.8]おおおあおおああああああああああ！！？！？
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_122 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

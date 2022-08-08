@@ -1,0 +1,126 @@
+
+
+＄94-06-43-06-1-1
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5050000 1 サンタマルタ]
+[charaSet B 1098198000 1 スカサハ＝スカディ]
+[charaSet C 2001002 1 エミヤ]
+[charaSet D 4011001 1 ブーディカ]
+[charaSet E 7016001 1 タマモキャット]
+[charaSet F 3047001 1 パーシヴァル]
+[charaSet H 99502600 1 マシュ]
+[charaSet I 1098226100 1 源頼光]
+
+[charaSet L 98115000 1 エフェクト用ダミー]
+[charaSet N 98115000 1 エフェクト用ダミー]
+
+[charaPut N 2000,2000]
+[charaEffect N bit_talk_10_LowLevel]
+
+[scene 140600]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.4]
+
+[se ade410]
+[distortionstart 0.0 0.5 0.5 0.0 0.0 100.0]
+[distortionstart 0.7 0.5 0.5 0.3 0.3 20.0]
+[wt 0.7]
+
+[distortionstop 1.5]
+
+[charaPut L 0,0]
+[charaEffect L bit_talk_warp]
+[se ad434]
+[seVolume ad434 0 0.5]
+[wt 3.5]
+[seStop ad434 0.3]
+
+[charaPut L 2000,2000]
+[wt 0.1]
+
+[charaPut N 0,0]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+[bgm BGM_SENGOKU_1 0.1]
+
+＠スカサハ＝スカディ
+来たな、ルーンの導きだ。さあ[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠源頼光
+ああ、噂の。[r]では第四の食材エリアという訳ですね。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠スカサハ＝スカディ
+その、私のセリフを取らないで欲しいのだが……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+[wt 1.0]
+[charaFace I 2]
+
+
+＠源頼光
+皆様いってらっしゃいませ！[r]お気を付けて！
+[k]
+
+[charaPut N 2000,2000]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+いってきまーす！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut N 0,0]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠スカサハ＝スカディ
+ああっまた……[wt 0.7][charaFace B 2][r]う、うむ、気を付けるのだぞ！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_SENGOKU_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

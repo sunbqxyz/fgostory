@@ -1,0 +1,87 @@
+
+
+＄03-00-02-04-6-1
+
+
+[soundStopAll]
+
+
+[charaSet A 8001400 1 玛修]
+[charaSet B 98002000 1 芙芙]
+[charaSet H 98115000 1 特效用]
+
+[scene 61500]
+
+[bgm BGM_EVENT_80 0.1]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[cueSe Battle bac234]
+[shake 0.05 1 4 1.0]
+[effect bit_talk_impactlanding]
+[wt 3.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+第一波击退！[r]外骨骼，自动调节为连续战斗应对模式。开始排气！
+[k]
+
+[messageOff]
+[charaFace A 0]
+[se ade18]
+[wt 1.5]
+[charaFace A 7]
+
+＠玛修
+确认输出数值稳定，没有问题[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠芙芙
+芙芙芙！[r]嘎呜，嘎呜！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛修
+嗯，芙芙！[r]还能继续战斗，逃脱时所需体力与输出也有剩余！
+[k]
+
+[messageOff]
+[charaTalk B]
+[charaFace A 7]
+[cueSe Battle bac428]
+[shake 0.05 2 2 1.0]
+[wt 1.5]
+
+[charaFace A 2]
+
+＠玛修
+继续作战，御主！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,327 @@
+
+
+
+＄94-03-66-07-2-0
+
+[soundStopAll]
+
+[charaSet A 4032000 1 莱妮丝]
+[charaSet B 6039000 1 格蕾]
+[charaSet C 1098166200 1 特里姆玛乌]
+[charaSet D 1098165900 1 蒸汽亡灵]
+[charaSet E 98006200 1 特效用]
+[charaSet F 98006200 1 特效用2]
+
+[scene 73900]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade74]
+[seVolume ade74 0 0.1]
+[se ad60]
+[seVolume ad60 0 0.1]
+[seVolume ade74 1.0 1.0]
+[seVolume ade74 1.0 1.0]
+[wt 1.3]
+[seStop ade74 0.5]
+[seStop ad60 0.5]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+差不多已经在蒸汽城里逛了一圈了吧？[r]可是，连个类似的东西都……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠格蕾
+[%1][&先生:小姐]！　那面墙！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+[wt 0.8]
+
+[se ad39]
+[charaEffect E bit_talk_radiallight02]
+[wt 2.3]
+[seStop ad39]
+[wt 0.5]
+[charaEffectStop E bit_talk_radiallight02]
+
+[shake 0.05 3 3 2.2]
+[se ad14]
+[wt 2.0]
+[seStop ad14 0.5]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+墙壁打开了？[bgm BGM_EVENT_81 0.3]
+[k]
+
+＠莱妮丝
+看来是感应到了你回收的纸片，[r]从而自动打开了隐藏门呢。
+[k]
+
+[charaFace A 8]
+
+＠莱妮丝
+哎呀，究竟会出现怎样的牛鬼蛇神呢？[r]不管怎么样，先进去看看吧。
+[k]
+
+[messageOff]
+
+[se ade74]
+[se ad60]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[seStop ade74 1.0]
+[seStop ad60 1.0]
+
+[scene 73901]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+………地下原来是这样的啊。[bgm BGM_EVENT_70 0.1]
+[k]
+
+＠莱妮丝
+连着曲轴的大量齿轮，意义不明的计量仪器，装着手柄的金属管道。[r]简直太蒸汽朋克了。
+[k]
+
+＠莱妮丝
+甚至从哪儿窜出怪物来我都不会觉得奇怪，[r]不过现在有格蕾在这里，总能想办法对付的吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠格蕾
+我、我会努力的。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+啊，当然也得靠你啦。[r]我的弟子，说起来你算是从者的影子吧？
+[k]
+
+？1：我明白你的意思……
+？2：可是御主也是很重要的啊！
+
+？！
+
+[charaChange A 1098164900 0 nomal 0]
+[wait charaChange A]
+
+＠莱妮丝
+呵呵呵，你闹别扭的样子也很可爱呢。[r]我是故意捉弄你的啦。
+[k]
+
+[charaChange A 4032000 0 nomal 0]
+[wait charaChange A]
+
+＠莱妮丝
+就算是成为拟似从者或是别的什么，[r]我的这种本性似乎都是不会改变的。
+[k]
+
+？1：愉悦……
+？2：你以前就这样吗？
+
+？！
+
+[charaFace A 1]
+
+＠莱妮丝
+当然。这样也没什么不好的嘛。[r]多亏于此，时钟塔的权力斗争也没有那么痛苦了。
+[k]
+
+[charaFace A 0]
+
+＠莱妮丝
+啊。在地下穿行让我想起了自己在故乡、[r]在那不像样的魔窟中度过的日子。
+[k]
+
+＠莱妮丝
+要知道时钟塔的阴谋剧，可是每天没完没了的。[r]不懂些情趣根本坚持不下去啊。
+[k]
+
+？1：是魔术师的大本营吗？
+？2：魔术师都喜欢阴谋诡计吗？
+
+？！
+
+＠莱妮丝
+既然迦勒底是与天体科有关的组织，[r]想必也接受着来自时钟塔的某种干涉吧。
+[k]
+
+＠莱妮丝
+你太愚钝了，可能没有思考过这些事情，[r]但难道你没有和组织里的其他人谈论过这些吗？
+[k]
+
+？1：这么说起来的话……
+？2：修复人理之后谈了很多。
+
+？！
+
+[charaFace A 5]
+
+＠莱妮丝
+现实就是如此。假如魔术师想要探求根源的话，[r]不，干脆说魔术师正因为想要探求根源，所以才需要强大的权力。
+[k]
+
+
+＠莱妮丝
+实现我们的目的需要踏过千山万水。[r]因此金钱和权力是不可或缺的。
+[k]
+
+＠莱妮丝
+话虽如此，[r]单纯热衷于权力的魔术师在时钟塔中也有很多。
+[k]
+
+[messageOff]
+
+[charaFace A 4]
+
+[wt 1.0]
+
+[bgmStop BGM_EVENT_70 1.5]
+
+[charaFace A 0]
+
+＠莱妮丝
+……不愉快的话题到此为止。[r]特里姆玛乌，有什么发现吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageOff]
+[se ad130]
+[charaTalk C]
+[charaFace C 0]
+[charaSpecialEffect C appearance 1 0.4]
+[wt 0.7]
+
+＠特里姆玛乌
+在那里，[#主人:Master]。
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripLeftToRight 0.3 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[wipein rectangleStripRightToLeft 0.3 1.0]
+[wait wipe]
+
+[wt 0.5]
+[se ad42]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 1.0]
+[bgm BGM_EVENT_80 0.1]
+[wt 1.5]
+
+[wipeout rectangleStripRightToLeft 0.3 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.3]
+
+[wipein rectangleStripLeftToRight 0.3 1.0]
+[wait wipe]
+[wt 0.4]
+
+＠格蕾
+莱妮丝女士！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+这是什么啊……[r]难道是人造冤魂与气体的混合物吗？
+[k]
+
+＠莱妮丝
+格蕾，能行吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠格蕾
+没、没问题。[r]我一点都不害怕。
+[k]
+
+[charaFace B 9]
+
+＠亚德
+嘿嘿嘿嘿！[r]开心的吃饭时间到啦！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

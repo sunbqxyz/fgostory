@@ -1,0 +1,391 @@
+
+
+
+＄94-05-42-03-2-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+
+
+[charaSet B 3046001 1 弗栗多]
+[charaSet C 4006001 1 乔尔乔斯]
+[charaSet D 2015001 1 阿周那]
+[charaSet E 1048000 1 圣诞迦尔纳]
+[charaSet F 1033002 1 齐格鲁德]
+[charaSet G 99502600 1 玛修]
+[charaSet H 6029002 1 望月千代女]
+
+[charaSet S 5009040 1 特效用dummy]
+[charaSet T 5009040 1 特效用dummy]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[charaSet A 1098124510 1 达·芬奇]
+[branch lblConf]
+
+[label lblNotClear]
+[charaSet A 98111500 1 达·芬奇]
+[label lblConf]
+
+
+[charaPutFSR S 1200,2000]
+[charaEffect S bit_talk_10_LowLevel]
+
+
+[scene 27001]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadeTime H 0.4 0.6]
+[wt 0.8]
+
+＠望月千代女
+唔……说实话，在下不喜欢寒冷的地方。[r]会令人犯困。被炉被炉……
+[k]
+
+[messageOff]
+[se ad596]
+[wt 0.1]
+[charaSpecialEffect H erasure 0,0 1.5]
+[wait charaSpecialEffect H]
+[wt 0.9]
+
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut S 1]
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+＠玛修
+我觉得非常对不起她…………
+[k]
+
+？1：回去以后陪千代女好好玩吧……
+？！
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPutFSR S 1200,2000]
+
+[se ade410]
+[wt 0.2]
+[charaPut T 1]
+[charaEffect T bit_talk_20b]
+[wt 2.4]
+
+[charaPutFSR T 1200,2000]
+[charaEffectDestroy T bit_talk_20b]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠圣诞迦尔纳
+这就是核吧。我这就处理。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+
+[se ad80]
+[wt 0.3]
+[seStop ad80 0.2]
+[wt 0.6]
+
+[se ad149]
+[se ad216]
+[seVolume ad216 0 0]
+[se ad733]
+[seVolume ad733 0 0]
+[fadeout white 0.3]
+[seVolume ad216 0.3 1.0]
+[seVolume ad733 0.3 1.0]
+[wait fade]
+
+[seStop ad733 1.5]
+[wt 1.5]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.5]
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠达·芬奇
+好，辛苦啦！[r]核被破坏，闭塞特异点也被消除了。
+[k]
+
+[branch lblConf2]
+
+[label lblNotClear2]
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+＠达·芬奇
+好，辛苦啦！[r]核被破坏，闭塞特异点也被消除了。
+[k]
+
+[label lblConf2]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_77 1.0 0.1]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaPutFSR S 1200,2000]
+
+[scene 10000]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[criMovie talk_mov082]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 106200]
+[wt 2.0]
+
+[bgm BGM_EVENT_77 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠齐格鲁德
+任务完成。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠阿周那
+冰消雪融，景色似乎恢复成原本的样子了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠圣诞迦尔纳
+恢复原状了吗。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠阿周那
+我觉得应该不可能……[r]但你不会是因为这里不再有圣诞节的感觉，而心怀不满吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠圣诞迦尔纳
+不。
+[k]
+
+＠圣诞迦尔纳
+只是觉得长跑训练的负荷减弱了，[r]但就算没有冰雪，也能利用。
+[k]
+
+＠圣诞迦尔纳
+在河堤那里锻炼腰腿就很不错。[r]令人回想起德罗纳师父的地狱耐力跑。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠阿周那
+……不予置评。
+[k]
+
+？1：樱花果然很美呢。
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠齐格鲁德
+这么说来，[r]在御主的故乡好像有赏花的习俗吧。
+[k]
+
+[charaFace F 1]
+＠齐格鲁德
+有机会真想和布伦希尔德一起参加。[r]至于在下究竟更爱樱花还是她，当然不言自明啦。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠乔尔乔斯
+噢噢，这……[r]这景色……（蠢蠢欲动。）
+[k]
+
+？1：拍一张应该不要紧吧？
+？2：就当是消除特异点的纪念。
+？！
+
+[charaFace C 1]
+＠乔尔乔斯
+说得……也是。作为记录应该挺有用处。[r]那真的就拍一张……
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.4]
+
+[se ad41]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 1.0]
+
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠乔尔乔斯
+……嗯。拍了一张好景色。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+＠玛修
+很遗憾，弗栗多的反应消失了。[r]看来是离开这里了吧。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+
+[charaTalk A]
+[charaFace A 32]
+[charaFadein A 0.1 1]
+＠达·芬奇
+没办法。不过，只要重复这样的作战，[r]应该迟早能将她逼入绝境。
+[k]
+
+[charaFace A 0]
+＠达·芬奇
+总之，辛苦啦！[r]今天的任务到此结束。
+[k]
+
+＠达·芬奇
+大家先回来好好休息吧！
+[k]
+
+[branch lblConf3]
+
+[label lblNotClear3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+＠达·芬奇
+没办法。不过，只要重复这样的作战，[r]应该迟早能将她逼入绝境。
+[k]
+
+[charaFace A 1]
+＠达·芬奇
+总之，辛苦啦！[r]今天的任务到此结束。
+[k]
+
+＠达·芬奇
+大家先回来好好休息吧！
+[k]
+
+[label lblConf3]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaPutFSR S 1200,2000]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠弗栗多
+哎呀呀，这下有意思了。[r]竟然还有因陀罗的血亲。
+[k]
+
+＠弗栗多
+咿，嘻，嘻。看来，[r]乐趣会超出预期了吧……？
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

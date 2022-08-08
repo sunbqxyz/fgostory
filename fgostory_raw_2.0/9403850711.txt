@@ -1,0 +1,328 @@
+
+
+＄94-03-85-07-1-1
+
+[soundStopAll]
+
+[charaSet A 98001000 1 家老玛修]
+[charaSet B 7035001 1 森长可]
+[charaSet C 6002000 1 百地哈桑太夫]
+[charaSet D 1098118800 1 人质]
+[charaSet E 1098173100 1 像僧兵的男人]
+[charaSet H 98115000 1 特效用]
+
+[imageSet I back10001 1]
+[charaScale I 1.01]
+
+[charaDepth E 1]
+[charaDepth D 3]
+[charaDepth I 2]
+
+[scene 20110]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk depthOff]
+
+[charaFace E 2]
+[charaFace D 2]
+[charaFadein E 0.1 1]
+[wt 0.4]
+
+[charaMoveReturn E 10,0 0.3]
+[se ad7]
+[seVolume ad7 0 0.5]
+
+[charaFadein D 0.3 150,-30]
+[charaMove D 120,-30 0.3]
+[wt 0.1]
+
+[charaShake D 0.04 2 2 0.25]
+[wt 0.2]
+[se ad51]
+[seVolume ad51 0 0.6]
+[wt 0.8]
+
+[charaTalk E]
+
+
+＠像僧兵的男人
+呜！　如果你们继续动手，这些家伙可就没命了哦！
+[k]
+
+＠人质
+救……救救我们……
+[k]
+
+？1：战国is卑鄙……
+
+？2：这样可就无法动手了……
+
+？！
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠森长可
+啊啊？　人质？
+[k]
+
+[charaFace B 11]
+
+＠森长可
+笨蛋，关我屁事！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se bac5]
+[charaScale H 1.5]
+[charaPut H 1]
+[charaEffect H bit_talk_Slash_red_01_L]
+[wt 0.6]
+
+[se ad7]
+
+[charaTalk off]
+
+[charaFace E 3]
+[charaFace D 2]
+[charaFadein E 0.1 1]
+[charaFadein D 0.1 120,-30]
+[wt 0.3]
+[charaShake E 0.05 2 2 0.2]
+[charaShake D 0.05 2 2 0.2]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk E]
+
+＠像僧兵的男人
+什么！？　这家伙难道不珍惜人质的性命吗！？
+[k]
+
+[charaFace E 2]
+
+＠像僧兵的男人
+什么人啊！　哎哎，不管了，杀了人质！
+[k]
+
+[messageOff]
+[charaTalk D]
+[charaFace D 2]
+[bgm BGM_EVENT_3 0.1 0.5]
+[wt 0.7]
+
+[charaFace D 0]
+
+＠人质
+哼。森阁下的判断十分准确。[r]既然你们使用卑鄙的手段，那就不怪我们不讲道理了。
+[k]
+
+[messageOff]
+
+[se ade153]
+[seStop ad72 1.0]
+[fowardEffect bit_talk_40 0,-130]
+[wt 0.2]
+
+[charaFadein I 0.7 0,-200]
+[wt 0.5]
+
+[fadeout white 0.3]
+[wait fade]
+
+[charaTalk depthOn]
+
+[se ade310]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.4]
+
+[charaPut C 1]
+[charaTalk C]
+[charaFace C 0]
+
+[fadein white 0.3]
+[wait fade]
+
+[charaSpecialEffect C appearance 1 0.5]
+[wait charaSpecialEffect C]
+
+[charaFadeout I 1.0]
+[fowardEffectStop bit_talk_40]
+[wt 0.5]
+
+[bgm BGM_EVENT_3 0.5 1.0]
+[wt 1.0]
+
+[charaFace C 5]
+
+＠百地哈桑太夫
+而我的忍术是可以超越卑鄙无法的无影。[r]人质已经被我解放了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠像僧兵的男人
+怎……怎么会……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠家老玛修
+不愧是[#软糯Q弹:Mochimochi]哈桑阁下！[r]快抓住这群家伙！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠百地哈桑太夫
+软[messageShake 0.03 4 4 0.1]糯Q弹！？
+[k]
+
+[messageOff]
+[wt 0.3]
+
+[wipeout rollRight 1.0 0.5]
+[bgmStop BGM_EVENT_3 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[wt 1.0]
+
+[wipein rollLeft 1.0 0.5]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠森长可
+哇哈哈哈哈哈！　看来很顺利呢，主公！[r]忍者大叔也挺能干的嘛！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠百地哈桑太夫
+不不，这都是多亏了各位的演技。[r]刚才的愤怒真是太逼真了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠家老玛修
+您看怎么样，[#前辈:殿下]，要不要让[r]哈桑太夫阁下也加入我们迦勒底家呢？
+[k]
+
+？1：求之不得。
+
+？2：你意下如何呢？
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠百地哈桑太夫
+这也算是一种缘分。[r]请您尽情使用我的忍者之技吧。
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_2 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 82500]
+[wt 2.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_MEIJI 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠百地哈桑太夫
+我乃流落之忍，百地哈桑太夫。
+[k]
+
+＠百地哈桑太夫
+由于在担任头目方面有点经验，[r]因此目前负责统领忍者众。
+[k]
+
+
+[charaFace C 1]
+
+＠百地哈桑太夫
+她们好像……是叫迷你信忍军吧？[r]哈哈哈，确实很有锻炼的价值。
+[k]
+
+[messageOff]
+[charaFadeout C 0.4]
+[wt 0.7]
+
+百地哈桑太夫加入麾下。[r]（可作为助战NPC进行选择了。）
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_MEIJI 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

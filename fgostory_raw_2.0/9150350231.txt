@@ -1,0 +1,939 @@
+
+
+
+＄91-50-35-02-3-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 11005002 1 黑森]
+[charaSet B 5035000 1 阿纳斯塔西娅]
+[charaSet C 5035002 1 兽国的皇女]
+[charaSet D 1098124500 1 达·芬奇]
+[charaSet E 9005001 1 福尔摩斯]
+[charaSet F 1098123200 1 戈尔德鲁夫]
+[charaSet G 5001001 1 美狄亚]
+
+
+[imageSet O back10000 1 1]
+[charaScale O 1.32]
+
+[charaSet S 98115000 1 特效用]
+[charaSet T 98115000 1 特效用]
+
+[cameraMove 0 0,0 1.01]
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.3]
+
+[se ad85]
+[effect bit_talk_x_slash_bk_03 0,20 H]
+[wt 0.55]
+
+[cueSe Battle bac139]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+
+[scene 54102]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0 1]
+[charaShake C 0.04 4 4 0.5]
+[wt 0.8]
+
+[charaMove C 0,-50 0.4]
+[charaFadeout C 0.4]
+[wt 0.4]
+
+[se ad144]
+[wt 1.2]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠黑森
+『本应斩首解决掉了才对……！[r]　唔！』
+[k]
+
+[charaTalk off]
+[se ad334]
+＠罗伯
+[i berserker_language_3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[se ad890]
+[seVolume ad890 0 0]
+[wt 0.2]
+
+[charaTalk on]
+[charaDepth S 6]
+[charaDepth C 5]
+
+[charaPut S 1]
+[charaEffect S bit_talk_spell_r]
+[wt 0.3]
+[seVolume ad890 0.3 0.4]
+[wt 0.7]
+
+[se ad447]
+[charaPut C 0,0]
+[charaFace C 5]
+[charaSpecialEffect C appearance 0,0 1.0]
+[wt 0.4]
+[seStop ad890 1.2]
+[wt 1.6]
+
+＠兽国的皇女
+很遗憾，还没完。
+[k]
+
+？1：做到这个地步还不行吗……！？
+？！
+
+[charaPut S 2000,2500]
+[charaEffectStop S bit_talk_spell_r]
+
+＠兽国的皇女
+只要在梦之世界，[r]我就是不死的。
+[k]
+
+[charaFace C 2]
+＠兽国的皇女
+来，被冰块压扁吧。
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad900]
+[charaPut S 0,-50]
+[charaEffect S bit_talk_06b2]
+[charaPut T 0,-50]
+[charaEffect T bit_talk_charge_ppl]
+[wt 2.0]
+[seStop ad900 1.0]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+[charaEffectDestroy S bit_talk_06b2]
+[charaPut T 2000,2500]
+[charaEffectDestroy T bit_talk_charge_ppl]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠黑森
+『御主，退后！』
+[k]
+
+[messageOff]
+[charaPut S 1]
+[charaEffect S bit_talk_41_fs]
+[charaFace A 2]
+[se ad359]
+[shake 0.03 4 4 3.2]
+[wt 2.8]
+[charaEffectStop S bit_talk_41_fs]
+[wt 0.6]
+
+？1：……阿纳斯塔西娅。
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠兽国的皇女
+[FFFFFF]？[-]
+[k]
+
+＠兽国的皇女
+我[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 1.0]
+[charaFadeout C 0.1]
+[wt 0.8]
+
+[se ad78]
+[seVolume ad78 0 0.8]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 1.0]
+
+＠阿纳斯塔西娅
+……已经够了。[r]消失吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠黑森
+『来了第二个……！[r]　不，那个是正牌货吗？』
+[k]
+
+＠黑森
+『正牌货？　果然。』
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace B 0]
+[charaFadeinFSL C 0.1 0]
+[charaFadeinFSR B 0.1 2]
+＠兽国的皇女
+哎呀，真的可以吗，阿纳斯塔西娅。
+[k]
+
+＠兽国的皇女
+我是用来推卸罪孽用的无辜的怪物……
+[k]
+
+＠兽国的皇女
+如果没了我，[r]你的心或许就会被压垮哦？
+[k]
+
+
+＠阿纳斯塔西娅
+……即便如此，也无妨。[r]至少最后，我想好好说清楚。
+[k]
+
+
+＠兽国的皇女
+这样啊。[r]那么，最后再说一句。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaDepth S 6]
+[charaDepth C 5]
+
+[charaPut S 1]
+[charaEffect S bit_talk_06]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 1.8]
+
+[charaFace C 1]
+＠兽国的皇女
+我还是很讨厌你。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠阿纳斯塔西娅
+是吗。[r]我也无法原谅你，我们彼此彼此呢。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaPut S 1]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+[wt 1.2]
+
+
+[charaSpecialEffect C flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect C]
+[charaEffectStop S bit_talk_06]
+[wt 2.0]
+
+[charaPut S 2000,2500]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠黑森
+『御主……』
+[k]
+
+？1：让我们俩独处一会儿。
+？！
+
+＠黑森
+『……明白了。』
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaMove A 0,-10 0.3]
+[wt 0.45]
+
+[se ad678]
+[charaPut S 1]
+[charaEffect S bit_talk_quickmove]
+[charaMove A 0,45 0.4]
+[charaFadeout A 0.4]
+[wt 0.4]
+[charaPut S 2000,2500]
+[charaEffectStop S bit_talk_quickmove]
+[wt 1.3]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠阿纳斯塔西娅
+……[r]……
+[k]
+
+[bgm BGM_EVENT_95 0.1]
+
+＠阿纳斯塔西娅
+你为什么，要来这里？[r]我并没有向你求救。
+[k]
+
+？1：我不能丢下你不管。
+
+[charaFace B 4]
+＠阿纳斯塔西娅
+……是吗。[r]御主总是这样呢。
+[k]
+
+？2：因为我想救你。
+
+[charaFace B 4]
+＠阿纳斯塔西娅
+不要这样想。[r]我没有这个资格。
+[k]
+
+？！
+
+＠阿纳斯塔西娅
+[line 3]我没有被你关心的资格。
+[k]
+
+＠阿纳斯塔西娅
+[line 3]我无法向你报恩。[r][line 3]我没有资格触碰你。
+[k]
+
+[charaFace B 12]
+＠阿纳斯塔西娅
+因为我，对你来说……[r]不过是兽国的皇女罢了。
+[k]
+
+？1：[line 3]你错了。
+？！
+
+[charaFace B 2]
+＠阿纳斯塔西娅
+没[messageShake 0.04 3 2 0.4]有错！[r]没有错、没有错、才没有错！
+[k]
+
+＠阿纳斯塔西娅
+无论做什么，无论怎么做，[r]都无法弥补，无法偿还……！
+[k]
+
+＠阿纳斯塔西娅
+可是，你总是面带笑容！[r]接纳了我！
+[k]
+
+[charaFace B 4]
+＠阿纳斯塔西娅
+……就算内心深处再怎么害怕，再怎么憎恨，[r]也不表露出来……！
+[k]
+
+＠阿纳斯塔西娅
+因此感到安心的自己，[r]因此变得亲近你的自己，
+[k]
+
+[charaFace B 12]
+＠阿纳斯塔西娅
+令我由衷厌恶……！！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaMove B 0,-25 0.4]
+[wt 0.3]
+[se ad581]
+[seVolume ad581 0 0.5]
+[wt 1.4]
+
+
+[se ad580]
+[cameraMove 0.4 0,-18 1.08]
+[wt 0.4]
+[cameraMove 0.5 0,-25 1.15]
+[wt 0.5]
+[seStop ad580 0.2]
+[wt 0.4]
+
+[charaFace B 2]
+＠阿纳斯塔西娅
+不[messageShake 0.04 3 3 0.5]要萌生什么牵绊！[r]不要陪伴！　不要牵手！
+[k]
+
+[charaFace B 12]
+＠阿纳斯塔西娅
+已经……不能再继续了。[r]求求你……让我就这样死吧……！
+[k]
+
+[messageOff]
+[wt 1.2]
+
+[bgmStop BGM_EVENT_95 1.5]
+
+？1：[line 3]阿纳斯塔西娅。
+？！
+
+[cameraMove 0.4 0,-7 1.15]
+[wt 0.2]
+[se ad78]
+[wt 0.9]
+
+[cameraMove 0.6 0,-10 1.2]
+[wt 0.2]
+[se ad183]
+[wt 0.1]
+[charaShake B 0.01 1 1 0.5]
+[wt 0.4]
+[charaFace B 3]
+[wt 0.4]
+
+＠阿纳斯塔西娅
+啊[line 3]御主[line 3]？[r]求你了，离开我……
+[k]
+
+？1：我不会离开你。
+？2：我不会让你死。
+？！
+
+[messageOff]
+[charaFaceFade B 10 0.6]
+[wt 1.2]
+
+＠阿纳斯塔西娅
+啊啊……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_78 0.1]
+
+＠
+体内的细胞发出了喜悦的悲鸣。[r]被拥抱，快感剧烈地迸发。
+[k]
+
+＠
+抵抗，离远一些。[r]我没有这个资格。
+[k]
+
+＠
+分明，没有。
+[k]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 0,-20]
+＠阿纳斯塔西娅
+你应该……害怕我吧？
+[k]
+
+？1：我害怕，但是……
+？！
+
+＠阿纳斯塔西娅
+但是……？
+[k]
+
+？1：我不打算让你背负罪孽。
+？2：这么做，对那位皇女太失礼了。
+？！
+
+[charaFace B 10]
+＠阿纳斯塔西娅
+[line 3]！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠
+得到了，预料之外的回答。[r]以至于需要耗费一些时间，去理解含义。
+[k]
+
+[messageOff]
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 0,-20]
+[wt 0.5]
+
+？1：我绝对不会原谅那位皇女所做的事。
+？2：但那些行动是属于她的。
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠
+她无论如何，[r]都会为身为御主的青年行动。
+[k]
+
+＠
+为了他，成为兽国的皇女，[r]变得足以挺身保护他。
+[k]
+
+＠
+这究竟是由于恋，还是爱，[r]或是超越这些的、除此以外的某种因素。
+[k]
+
+＠
+这是我永远不会明白，[r]也无法理解的。
+[k]
+
+＠
+[line 3]即便如此。
+[k]
+
+＠
+她也相信着自己心中的信念，[r]战斗过了。
+[k]
+
+＠
+……不能擅自将这些，将这份罪孽、[r]这份情感强行夺走。
+[k]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-20]
+＠阿纳斯塔西娅
+……御主。[r]我恐怕会是个非常麻烦的人哦？
+[k]
+
+＠阿纳斯塔西娅
+迟疑、阴暗、自私、任性、[r]依存心极强。
+[k]
+
+＠阿纳斯塔西娅
+虽然想法被你的话说动摇了，[r]但这性格也不是一朝一夕就能改变的。
+[k]
+
+＠阿纳斯塔西娅
+今后，或许还会做出这种事来。[r]即便如此，你[line 3]
+[k]
+
+＠阿纳斯塔西娅
+还愿意保护我吗？
+[k]
+
+？1：只要在我力所能及的范围内。
+？2：我会全力以赴。
+？！
+
+[messageOff]
+[charaFaceFade B 6 0.6]
+[wt 1.4]
+
+＠阿纳斯塔西娅
+……好的，御主。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠
+啊啊[line 3]在高兴，[r]身体在喜悦，心情在兴奋。
+[k]
+
+＠
+或许这种罪恶感一辈子都无法拭去。[r]或许在离别之日到来前，都不可能忘记。
+[k]
+
+＠
+即便如此，[r]我还是想要相信[&他:她]。
+[k]
+
+＠
+[line 3]归根结底，都因为我是个胆小鬼。[r]如果不相信御主的话，就无法生存下去了。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[scene 10000]
+
+[cameraMove 0 0,0 1.0]
+[wt 1.0]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠兽国的皇女
+……是吗。
+[k]
+
+＠兽国的皇女
+我倒是完全不明白[&他:她]有什么好。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠阿纳斯塔西娅
+我想也是。
+[k]
+
+＠阿纳斯塔西娅
+因为比起你的御主，[r]我也更喜欢自己的御主。
+[k]
+
+＠阿纳斯塔西娅
+这就是所谓的彼此彼此吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠
+……最终，唯有人与人维系起来，[r]才会令人感受到魅力。
+[k]
+
+＠
+建立关系，耗费言语，[r]思想共鸣，或是抵触，彼此关心[line 3]
+[k]
+
+＠
+然后，就会孕育出恋或爱吧。
+[k]
+
+＠
+无论是陌生人，还是家人，[r]这点肯定都不会改变。
+[k]
+
+＠
+[line 3]反过来说，[r]没有建立关系的陌生人，有时候相当于敌人。
+[k]
+
+＠
+我爱我的家人，[r]家人们也爱我。
+[k]
+
+＠
+……但是，我们并不爱俄罗斯的土地，[r]土地也不爱我们。
+[k]
+
+＠
+我觉得，那与我无关。[r]所以，才会[#变成那样]。
+[k]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠兽国的皇女
+……永别了，[r]阿纳斯塔西娅·尼古拉耶芙娜·罗曼诺娃。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠阿纳斯塔西娅
+永别了。
+[k]
+
+[charaFace B 6]
+＠阿纳斯塔西娅
+永远都别再苏醒了。[r][line 3]阿纳斯塔西娅·尼古拉耶芙娜·罗曼诺娃。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+[wt 1.2]
+
+[se ad95]
+[seStop ad95 1.6]
+[charaMove C -80,0 0.8]
+[charaFadeout C 0.8]
+[wt 2.4]
+
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_78 1.5]
+[wait fade]
+
+
+[charaSet A 11005001 1 黑森·罗伯]
+
+[scene 104600]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+＠
+[line 3]然后，苏醒之后。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 1]
+[wt 0.8]
+
+＠阿纳斯塔西娅
+……大家，早上好……[r]然后，那个……对不起……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaDepth F 6]
+[charaDepth G 5]
+[charaDepth E 4]
+[charaDepth D 3]
+[charaDepth A 2]
+
+[charaScale F 0.9]
+[charaScale G 0.9]
+[charaScale E 0.9]
+[charaScale D 0.9]
+[charaScale A 0.9]
+
+
+[charaFace D 5]
+[charaFace E 5]
+[charaFace F 15]
+[charaFace G 5]
+[charaFace A 0]
+[charaFadein A 0.1 70,-24]
+[charaFadeinFSR D 0.1 220,-24]
+[charaFadeinFSL E 0.1 -450,-24]
+[charaFadeinFSL F 0.1 -250,-24]
+[charaFadeinFSR G 0.1 430,-24]
+[wt 1.2]
+
+
+＠
+等待着我的，是滔滔不绝的说教。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout A 0.1]
+
+[scene 109601]
+
+[se ad37]
+[seVolume ad37 0 0]
+[wt 1.0]
+
+
+[seVolume ad37 1.5 1.0]
+[fadein black 1.5]
+[wait fade]
+[wt 1.5]
+
+
+[bgm BGM_EVENT_2 0.1]
+[seStop ad37 1.0]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠阿纳斯塔西娅
+……综上所述，[r]我会暂时被软禁在模拟装置内。
+[k]
+
+＠阿纳斯塔西娅
+……不过，这也没办法。
+[k]
+
+？1：算啦算啦……
+？！
+
+[charaFace B 0]
+＠阿纳斯塔西娅
+话说回来。[r]……我刚想起来……
+[k]
+
+＠阿纳斯塔西娅
+……[r]……黑森先生好能说啊……
+[k]
+
+？1：那个的确吓了我一跳！
+？！
+
+＠阿纳斯塔西娅
+本人表示，那是因为在梦里，[r]自己平时应该是个沉默的人。
+[k]
+
+[charaFace B 4]
+＠阿纳斯塔西娅
+……是不是因为他没嘴巴，才说自己沉默啊……
+[k]
+
+？1：或许吧……
+？！
+
+[charaFace B 1]
+＠阿纳斯塔西娅
+呵呵。[r]……多么无聊的对话啊。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠
+[line 3]哪怕现在，只要闭起眼睛，[r]脑海内就会浮现出她犯下的罪。
+[k]
+
+＠
+难受痛苦，不能责怪任何人。[r]并非我的我的罪。
+[k]
+
+[bgmStop BGM_EVENT_2 1.5]
+＠
+……但是，我再也不会将这些，[r]当做自己的罪过背负下来了。
+[k]
+
+＠
+这是她的罪、她的责任，[r]她……为之献上了一切。
+[k]
+
+＠
+即便没有回报。[r]她依然认为值得为此付出自己的生命。
+[k]
+
+＠
+所以，我不会背负这份罪过。[r]不能背负这份罪过。
+[k]
+
+[bgm BGM_EVENT_107 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠阿纳斯塔西娅
+话说，御主。
+[k]
+
+＠阿纳斯塔西娅
+请留在我的身边。[r]请握住我的手，不要放开。
+[k]
+
+＠阿纳斯塔西娅
+虽然，我已经不想再失去重要的人了。[r]但同样，我也希望留在重要的人的身边。
+[k]
+
+？1：……我向你保证。
+？！
+
+[messageOff]
+[charaFace B 6]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠
+你仿佛有些害羞，[r]扭过头去挠了挠脸。
+[k]
+
+＠
+每当看到这个景象，[r]我都感到心痒难耐。
+[k]
+
+＠
+无论这份感情怎么样，是什么。[r]此时此刻，都值得仔细品味。
+[k]
+
+＠
+啊啊。[r]请原谅罪孽深重的我吧。
+[k]
+
+＠
+唯独与[&他:她]在一起的时间，[r]唯独这比任何财宝都贵重的存在……
+[k]
+
+＠
+决不能失去。
+[k]
+
+＠
+彷徨的灵魂漂流而至，[r]只因此处是其疯狂热爱的场所。
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_107 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

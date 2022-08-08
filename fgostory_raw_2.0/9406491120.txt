@@ -1,0 +1,591 @@
+
+
+
+＄94-06-49-11-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001400 1 マシュ]
+[charaSet B 1098214400 1 大型戦闘獣]
+[charaSet C 1098123300 1 コヤンスカヤ]
+[charaSet D 1098124510 1 ダ・ヴィンチ]
+[charaSet E 4043001 1 太公望]
+[charaSet F 1046001 1 伊吹童子]
+[charaSet G 1046002 1 伊吹童子_第三]
+[charaSet H 1046001 1 ダミー1]
+[charaFilter H silhouette EDEDED80]
+[charaSet I 1046002 1 ダミー2]
+[charaFilter I silhouette EDEDED80]
+[charaSet J 4042000 1 ハベトロット]
+[charaSet K 98115000 1 エフェクト用]
+[charaSet L 5009000 1 エフェクト用ダミー1]
+[charaSet M 5009000 1 エフェクト用ダミー2]
+
+[charaSet N 1098214400 1 大型戦闘獣2]
+[charaSet O 1098214400 1 大型戦闘獣3]
+[charaScale N 0.85]
+[charaScale O 0.85]
+
+[charaPut K 1200,1200]
+[charaEffect K bit_talk_10_LowLevel]
+
+
+[scene 128700]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_72 0.1]
+
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+
+＠コヤンスカヤ
+ふ[line 3]。
+[k]
+
+[charaFace C 9]
+
+＠コヤンスカヤ
+ふふ、ふふふふふ！[r]ああ可笑しい、REC班を連れてくるべきでした！
+[k]
+
+＠コヤンスカヤ
+たいそうな文言から何をするのかと思えば、[r]まさかの喜劇だなんて、中々のエンターテイナー！
+[k]
+
+[charaFaceFade C 29 0.2]
+
+＠コヤンスカヤ
+そこの方、変わっていると思いましたけれど、[r]宮廷道化師か何かの英霊です？
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_EVENT_72 0.5 0.5]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_72 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaDepth B 3]
+[charaDepth N 1]
+[charaDepth O 2]
+
+[shake 0.03 3 3 0.4]
+[cueSe SE_21 21_ade651]
+
+[charaTalk off]
+[charaFace N 0]
+[charaFadeinFSL N 0.4 -300,-80]
+[charaFace O 0]
+[charaFadeinFSR O 0.4 300,-80]
+[wt 1.0]
+
+[shake 0.03 3 3 0.4]
+
+
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.5]
+[seStop 21_ade651 0.5]
+[wt 0.5]
+
+[cueSe SE_21 21_ade652]
+[seVolume 21_ade652 0 1.2]
+[se bac312]
+[cueSe SE_21 21_ade566]
+[wt 1.2]
+[seStop 21_ade652 0.5]
+[seStop 21_ade566 0.5]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.4]
+
+[cueSe SE_21 21_ade660]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaDepth B 3]
+[charaDepth N 1]
+[charaDepth O 2]
+
+[charaFace N 0]
+[charaFadeinFSL N 0.1 -300,-80]
+[charaFace O 0]
+[charaFadeinFSR O 0.1 300,-80]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.3]
+
+[charaEffect B bit_talk_atomization]
+[charaEffect N bit_talk_atomization]
+[charaEffect O bit_talk_atomization]
+[wt 0.5]
+[cueSe Battle ba6]
+[charaFadeout B 1.0]
+[charaFadeout N 1.0]
+[charaFadeout O 1.0]
+[wt 3.0]
+[charaEffectDestroy B bit_talk_atomization]
+[charaEffectDestroy N bit_talk_atomization]
+[charaEffectDestroy O bit_talk_atomization]
+
+[se ad60]
+
+
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 28]
+[charaFadein C 0.4 1]
+[wt 0.4]
+[seStop ad60 0.2]
+
+＠コヤンスカヤ
+子供たちで押し潰す予定でしたが、[r]それでは芸がありません。
+[k]
+
+＠コヤンスカヤ
+一芸見せていただいたからには、[r]相応のお返しをしなくては、ね？
+[k]
+
+[messageOff]
+
+[charaFaceFade C 0 0.3]
+[wt 0.8]
+
+[bgmStop BGM_EVENT_72 1.5]
+
+＠コヤンスカヤ
+[#私:わたくし]も出し物をひとつ。[r]茶番にお付き合いしてあげましょう。
+[k]
+
+[messageOff]
+
+[se ade153]
+[se ade280]
+[se ad556]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth M 1]
+[charaDepth L 1]
+
+[charaDepth D 2]
+[charaDepth E 3]
+[charaDepth A 4]
+[charaDepth J 5]
+
+[charaDepth F 6]
+[charaDepth H 7]
+[charaDepth G 8]
+[charaDepth I 9]
+
+[scene 10000 1.2]
+[wt 0.4]
+[charaPut M 1]
+[charaEffect M bit_talk_beast_shadow]
+[wt 0.2]
+[charaFadeout C 0.7]
+[seVolume ad556 1.0 0.5]
+
+[wt 1.6]
+
+[seStop ade280 1.0]
+[bgm BGM_BATTLE_106 0.1]
+
+[wt 1.0]
+
+？1：この霧は！
+？2：（この悪寒、前の時と同じ……！）
+？！
+
+＠コヤンスカヤ
+ひとたびはアナタがたのお陰で導き出せたこの体、[r]使い古しではありますが、この場は充分。
+[k]
+
+＠コヤンスカヤ
+なにせ今回は名探偵の姿もなく、[r]アテナ神やアレス神の[#加護:クリロノミア]やらも見受けられない。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+
+[se ade106]
+[seVolume ad556 1.0 0.3]
+
+[se ad632]
+[effect bit_talk_lightning_01r]
+[wt 2.0]
+[seVolume ad632 1.0 0.5]
+
+[charaPut L 1]
+[charaEffect L bit_talk_beast_eye]
+[wt 1.5]
+[se ad911]
+[se ad971]
+[wt 1.5]
+
+＠マシュ
+魔力反応、急速に増大！[r]オリュンポスの時とそっくり同じに[line 3]
+[k]
+
+
+
+＠ダ・ヴィンチ
+空間侵食を確認！[r]本当の本当に、クラス・ビーストの顕現か！
+[k]
+
+
+＠コヤンスカヤ
+そちらの戦力は……
+[k]
+
+＠コヤンスカヤ
+ふふ、まずはひとり。どなたか知りませんが、[r]愉快な道化師がひとりいるのは分かりました。
+[k]
+
+＠コヤンスカヤ
+まともな戦力は、せいぜい[r]ドラゴンライダーと竜が一騎ずつ。
+[k]
+
+＠コヤンスカヤ
+竜は……[#厄介な剣]をお持ちのようですけど、[r]真価は発揮できていないご様子。
+[k]
+
+＠コヤンスカヤ
+あとは哀れな人間もどきの女の子に[line 3]
+[k]
+
+＠コヤンスカヤ
+ああ、そういえば。
+[k]
+
+＠コヤンスカヤ
+[#アナタ]。
+[k]
+
+＠コヤンスカヤ
+マスターさんがいましたねえ。[r]アナタ個人にはそう思い入れはありませんが[line 3]
+[k]
+
+＠コヤンスカヤ
+ブラックバレルは、とても[#悪:よ]い兵器です。
+[k]
+
+＠コヤンスカヤ
+ＮＦＦサービス代表としての[#私:わたくし]は、[r]アナタの活躍に賞賛を贈りますが……
+[k]
+
+＠コヤンスカヤ
+ビーストとしての[#私:わたくし]にとって、[r]この惑星で一番のゴミクズです。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ad14]
+[se ad241]
+[se ad619]
+[seStop ade106 2.0]
+[seStop ad632 2.0]
+[seStop ad556 2.0]
+
+[shake 0.02 3 3 0]
+[wt 2.4]
+
+[shakeStop]
+[charaEffectStop L bit_talk_beast_eye]
+[effectStop bit_talk_lightning_01r]
+
+[seStop ad14 1.0]
+[seStop ad241 1.0]
+[seStop ad619 1.0]
+[wt 2.5]
+
+
+[charaPut K 0,0]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+魔力上昇！[r]質量の増大、瞬時の大型化を確認！
+[k]
+
+＠ダ・ヴィンチ
+とんでもない霊基質量だ！[r]オリュンポスでは、こんなものと戦ったの……！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+＠太公望
+思想鍵紋、励起！
+[k]
+
+[messageOff]
+
+[charaEffect E bit_talk_sorcery_tik_01]
+[wt 0.1]
+[cueSe SE_21 21_ade669]
+
+[wt 3.0]
+
+[cueSe SE_21 21_ade661]
+
+＠太公望
+[line 3]我が諸手、雌雄の宝剣に相違なし！[r][line 3]地理天文を包含し、我が[#裡:うち]には[#八卦:はっけ]あり！
+[k]
+
+＠太公望
+[f large]『[#玉虚体現:ぎ ょ く き ょ た い げ ん]・[#封神執行:ほ う し ん し っ こ う]』！
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut E 2000,2000]
+[charaEffectStop E bit_talk_sorcery_tik_01]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFadeinFSR A 0.1 2]
+
+[charaFace F 0]
+[charaFadeinFSL F 0.1 0]
+[effect bit_talk_sorcery_tik_03]
+[wt 0.6]
+
+[fowardEffect bit_talk_noble_light_r]
+[wt 0.5]
+
+[se adm20]
+[fowardEffectStop bit_talk_noble_light_r]
+[wt 4.0]
+
+[charaTalk on]
+[charaFace A 6]
+＠マシュ
+これは……！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠太公望
+第二の対獣宝具、こちらは味方側に施すものです！[r]今度こそ効くといいなァ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠伊吹童子
+言の葉から自信が消えちゃってる！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+＠太公望
+そりゃさァ、ねえ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠伊吹童子
+しゃんとなさい！[r][line 3]折角だし本気モード、いくわよ！
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[se ad302]
+[fowardEffect bit_talk_charge_ppl]
+[wt 1.5]
+
+[seStop ad302 0.5]
+
+[se ad476]
+[charaFace H 0]
+[charaFadein H 0.7 1]
+[wt 0.3]
+
+[charaMove H -30,15 2.5]
+[charaMoveScale H 1.3 2.5]
+
+[charaMove F -30,15 2.5]
+[charaMoveScale F 1.3 2.5]
+[wt 0.3]
+[charaFadeout F 0.3]
+[wt 0.7]
+
+[fadeout white 1.0]
+[wait fade]
+
+[fowardEffectDestroy bit_talk_charge_ppl]
+[charaFadeout H 0.1]
+[wt 1.5]
+
+[charaMoveScale G 1.3 0.1]
+[charaMoveScale I 1.3 0.1]
+
+[seStop ad476 1.0]
+
+[charaFace I 0]
+[charaFadein I 0.7 -30,15]
+[charaFadeout H 0.7]
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[charaFace G 4]
+[charaFadein G 0.4 -30,15]
+[charaFadeout I 0.4]
+
+[wt 0.8]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[charaFace G 7]
+＠G：伊吹童子
+からの、ハベにゃんタイム！[r]お願い、マシュちゃん！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠マシュ
+はい……！[r]ハベトロットさん、お願いします！
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk J]
+[charaFace J 1]
+[se ad595]
+[charaSpecialEffect J appearance 1 1.0]
+[wait charaSpecialEffect J]
+[wt 0.5]
+＠ハベトロット
+オッケー、待ってたんだわ！
+[k]
+
+[charaFace J 16]
+＠ハベトロット
+アレがビースト？　うっわぁ、でっかいなぁ！[wt 1.0][charaFace J 5][r]でもお嫁さん力はゼロどころかマイナスだな！
+[k]
+
+＠ハベトロット
+おっかないけど負けないぜ！
+[k]
+
+[charaFace J 8]
+＠ハベトロット
+マシュと[%1]の絆の方が、[r]もっともっとでっかいからな！
+[k]
+
+[messageOff]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth M 5]
+[charaDepth L 5]
+
+[charaPut L 1]
+[charaEffect L bit_talk_beast_eye]
+[wt 1.5]
+[se ad911]
+[se ad971]
+[wt 1.5]
+
+
+＠ニキチッチ
+獣が来るぞ！　[line 3]心せよ、皆の者！
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[cueSe SE_21 21_ade666]
+[seVolume 21_ade666 0 0]
+[seVolume 21_ade666 0.5 1.0]
+[shake 0.02 3 3 2.5]
+[wt 2.5]
+
+
+
+
+[fadeout black 2.0]
+[bgmStop BGM_BATTLE_106 2.0]
+[seStop 21_ade666 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

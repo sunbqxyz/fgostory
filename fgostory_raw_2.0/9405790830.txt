@@ -1,0 +1,332 @@
+
+
+
+＄94-05-79-08-3-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5046001 1 克莱恩小姐]
+[charaSet B 7024000 1 X·Alter]
+[charaSet C 98001000 1 玛修]
+
+
+[charaSet T 4031000 1 特效用]
+
+
+[scene 112601]
+
+[se ad93]
+
+[fadein black 2.0]
+[wait fade]
+[se ad94]
+
+[wt 1.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠克莱恩小姐
+呼[messageShake 0.05 4 3 0.3]哈！　我被带回偶像的房间了。[r]这已经算恩义了！　必须报答才行……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠玛修
+但愿也能让克莱恩小姐回想起来……
+[k]
+
+？1：只能试试看了……！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠X·Alter
+是的，非做不可。[r]仔细听好，克莱恩小姐。
+[k]
+
+＠X·Alter
+接下来，御主会用令咒强化你的灵基，[r]尝试恢复你的记忆。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠克莱恩小姐
+我的……记忆？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠X·Alter
+和恢复硬盘上被删除数据的要领是一样的吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠玛修
+不要紧吧？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠X·Alter
+其实算是个赌注……
+[k]
+
+＠X·Alter
+在这次的特异点中，[r]克莱恩小姐应该是最了解情况的。
+[k]
+
+[charaFace B 0]
+
+＠X·Alter
+所以，最应该恢复记忆的，就是这个人了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠克莱恩小姐
+[FFFFFF]？　？　？[-][r]那个，我不是很明白你们的意思，究竟……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠X·Alter
+嘘～。[r]好了，克莱恩小姐，请全身放松。
+[k]
+
+[messageOff]
+[se ad775]
+[seVolume ad775 0 0.4]
+[charaMove B 0,15 0.4]
+[charaMoveScale B 1.1 0.4]
+[wt 1.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaScale B 1.0]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠克莱恩小姐
+哎呀哎呀哎呀！　偶像的尊容就在我的眼前！[r]我的心脏开始砰砰乱[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 3.0]
+[wt 0.1]
+
+[masterBranch _Male _Female]
+
+[label _Male]
+
+[charaEffect T bit_talk_CommandMantra_06 0,64]
+[charaEffectPause T bit_talk_CommandMantra_06 0,64]
+[wait charaEffectStart T]
+[charaEffectStart T]
+
+[branch _branchEnd]
+
+[label _Female]
+
+[charaEffect T bit_talk_CommandMantra_09 0,64]
+[charaEffectPause T bit_talk_CommandMantra_09 0,64]
+[wait charaEffectStart T]
+[charaEffectStart T]
+
+[branch _branchEnd]
+
+[label _branchEnd]
+
+[se bas16]
+[wait charaEffect T]
+[charaPut T 2000,2500]
+[charaEffectStop T]
+[wt 0.5]
+
+[charaFace A 5]
+[wt 1.0]
+
+＠克莱恩小姐
+………………
+[k]
+
+[se ad806]
+
+＠克莱恩小姐
+『警告。禁止对“终端体”的干涉。』
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠X·Alter
+咦。克莱恩小姐突然发出机器人的声音。[r]另外，“终端体”究竟是……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠玛修
+危险！
+[k]
+
+[messageOff]
+[se ad7]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[se ad598]
+[fowardEffect bit_talk_easy_spell_r]
+[wt 1.6]
+
+[fowardEffectDestroy bit_talk_easy_spell_r]
+[wt 0.1]
+
+[se ad85]
+[fowardEffect bit_talk_h_slash01_fs]
+[wt 0.4]
+
+[se ad32]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+[fowardEffectDestroy bit_talk_h_slash01_fs]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0 1]
+[charaShake B 0.03 3 3 0.5]
+[wt 1.2]
+
+[bgm BGM_EVENT_80 0.1]
+
+＠X·Alter
+魔力能量的闪电一闪。[r]千钧一发。玛修小姐，谢谢你。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠玛修
+这是自动反击的魔术……[wt 0.7][charaFace C 2][r]发生源……是克莱恩小姐的速写本！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad216]
+[blur motion 2.0 4 10 0.5 0.6 0.05 100]
+[fadeout white 0.4]
+[wait fade]
+
+[fadein white 0.4]
+[wait fade]
+
+[fadeout white 0.4]
+[wait fade]
+
+[fadein white 0.4]
+[wait fade]
+
+[blurOff motion 0.8]
+[wt 0.8]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠X·Alter
+速写本轻飘飘地浮在半空……[wt 0.8][charaFace B 2]哇[messageShake 0.04 3 2 0.3]哇！？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad85]
+[fowardEffect bit_talk_v_slash01]
+[wt 0.4]
+
+[se ad7]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[charaMove B 150,0 0.2]
+[wt 0.8]
+[fowardEffectDestroy bit_talk_v_slash01]
+
+＠X·Alter
+毫不留情地攻击我们呢。而且不知为何竟是速写本攻击我们。[r]总之，现在先应对这个威胁吧！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠玛修
+是。[r]小艾，拜托了！
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

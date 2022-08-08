@@ -1,0 +1,478 @@
+
+
+
+＄94-06-49-05-3-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001400 1 マシュ]
+[charaSet C 4043001 1 太公望]
+
+[charaSet B 1046002 1 伊吹童子]
+[charaSet D 1046001 1 伊吹童子_第二]
+[charaSet E 1046001 1 ダミー1]
+[charaFilter E silhouette EDEDED80]
+[charaSet F 1046002 1 ダミー2]
+[charaFilter F silhouette EDEDED80]
+[charaScale B 1.3]
+[charaScale F 1.3]
+[charaScale G 0.8]
+
+[charaSet G 98115000 1 エフェクト用]
+
+[charaSet H 1098213900 1 四不相]
+
+[sceneSet I 106800 1]
+[charaScale I 1.5]
+[charaSet L 4044001 1 演出用ニキチッチ]
+[charaScale L 1.15]
+
+[sceneSet J 106800 1]
+[charaScale J 1.5]
+
+[scene 106800]
+
+[bgm BGM_EVENT_24 0.1]
+
+
+[effect bit_talk_tornado_move01]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad1052]
+[wt 1.5]
+[seStop ad1052 1.0]
+
+[wt 1.5]
+
+＠ニキチッチ
+風の妖術か……！[r]太公望！
+[k]
+
+[messageOff]
+
+[effect bit_talk_tornado_move02]
+[se ad153]
+[seVolume ad153 0 0.1]
+[seVolume ad153 0.5 1.0]
+[wt 1.0]
+
+[se ad1052]
+[seVolume ad1052 0 0.1]
+[seVolume ad1052 1.0 1.0]
+[wt 4.5]
+[seStop ad1052 1.0]
+[seStop ad153 1.0]
+
+[wt 1.5]
+
+[cueSe SE_21 21_ade670]
+
+[wt 2.5]
+
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth C 2]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaFace H 0]
+[charaFadein H 0.1 -100,0]
+
+＠太公望
+飛行可能域を一時的に狭めました！[r]ここは、そうですね……
+[k]
+
+[charaFace C 2]
+＠太公望
+伊吹童子殿！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[se ad678]
+[wt 0.4]
+
+[se ade338]
+[seVolume ade338 0 0.4]
+[seVolume ade338 1.0 1.0]
+[wt 0.3]
+
+[charaEffect B bit_talk_43h_fs]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 -30,15]
+
+[charaMove B -30,25 0.3]
+[wt 0.2]
+
+＠伊吹童子
+[f large]まかせて！
+[k]
+
+[charaFace B 2]
+＠伊吹童子
+マシュ、足場お願い！[charaEffectStop B bit_talk_43h_fs]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut B 2000,2000]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+は、はい。[r]わたしの盾を踏みつけて構いません、どうぞ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 -30,15]
+＠伊吹童子
+ありがと！！
+[k]
+
+[charaFace B 12]
+
+
+＠伊吹童子
+それじゃあ行くわね！
+[k]
+
+＠伊吹童子
+[f large]『偽宝具・[#抜手八脈怒濤:ぬ　き　て　・　は　ち　み　ゃ　く　ど　と　う]』！
+[k]
+
+
+？1：初耳の宝具！？
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠マシュ
+偽宝具と仰っているので、[r]おそらく単なる突撃と思われます！
+[k]
+
+？1：とりあえずパスに魔力全開でいく！
+？2：伊吹童子、[&行け！:お願い！]
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 -30,15]
+[wt 0.2]
+
+[se bas10]
+[effect bit_talk_attack_buf]
+[wt 1.2]
+
+[charaPut G 0,0]
+[charaEffect G bit_talk_43h_fs]
+
+[charaFace B 11]
+[wt 0.2]
+
+[charaMove B -30,5 0.1]
+[wt 0.1]
+
+[se ad363]
+[se ad678]
+
+[charaMove B -30,60 0.2]
+[wt 0.1]
+
+[charaFadeout B 0.1]
+[charaPut G 2000,2000]
+[charaEffectStop G bit_talk_43h_fs]
+[wt 1.0]
+
+[se ade4]
+
+[charaDepth I 1]
+[charaDepth L 2]
+
+[charaTalk off]
+
+[charaFadein I 0.6 310,-320]
+[charaMove I 330,-320 1.2]
+[charaFace L 2]
+[charaFadein L 0.6 -50,0]
+[charaMove L -70,0 1.2]
+[wt 1.0]
+[seStop ade4 3.0]
+
+＠ニキチッチ
+空を駆ける地の竜だな！[r]ずるい。ずるいが、美しいぞ……！
+[k]
+
+＠ニキチッチ
+その覚悟！[r]その勇猛！
+[k]
+
+[bgmStop BGM_EVENT_24 1.0]
+
+
+＠ニキチッチ
+雌雄を決するに相応しい！[r][line 3]勝負ッ！
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ade670]
+[seVolume 21_ade670 0 0.7]
+
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout I 0.1]
+[charaFadeout L 0.1]
+
+[scene 10000]
+[wt 1.5]
+
+[fadein black 0.2]
+[wait fade]
+
+[se ad386]
+[effect bit_talk_h_slash01_fs 0,0 V]
+[effect bit_talk_h_slash01_fs 0,0 F]
+[wt 0.3]
+
+[fadeout white 0.3]
+[wait fade]
+[wt 1.6]
+[fadein white 0.3]
+[wait fade]
+
+[se ad240]
+[effect bit_talk_35]
+
+[wt 2.2]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 106800]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 1.0]
+
+[se ad496]
+[charaTalk on]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 -30,25]
+[charaMove B -30,15 0.3]
+[charaPut G 0,0]
+[charaEffect G bit_talk_43h_fs]
+[wt 0.3]
+[charaPut G 2000,2000]
+[charaEffectStop G bit_talk_43h_fs]
+
+＠伊吹童子
+………………ッ！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth I 3]
+[charaDepth L 4]
+[charaDepth J 1]
+[charaDepth B 2]
+
+[charaTalk off]
+
+[charaFadein I 0.6 310,-320]
+[charaMove I 330,-320 1.2]
+[charaFace L 0]
+[charaFadein L 0.6 -50,0]
+[charaMove L -70,0 1.2]
+[wt 1.0]
+
+＠ニキチッチ
+………………見事！
+[k]
+
+[messageOff]
+
+[cueSe SE_21 21_ade670]
+[seVolume 21_ade670 0 0.7]
+[wt 2.5]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFace L 22]
+
+＠ニキチッチ
+我が愛馬の翼、よくぞ穿った！　感服したぞ！
+[k]
+
+[messageOff]
+[charaFadein J 0.1 -310,-320]
+[charaFace B 9]
+[charaFadein B 0.1 -40,15]
+
+[se ade4]
+
+[wt 2.5]
+
+[seStop ade4 0.5]
+
+[charaFace L 0]
+
+＠ニキチッチ
+ほれ、滞空しているのがやっとだ。
+[k]
+
+＠ニキチッチ
+見事な連携、[r]見事な剣の冴えであった。
+[k]
+
+＠ニキチッチ
+太公望に翼を癒やさせるか、[r]いったん霊体化させて休ませてやらねば、
+[k]
+
+＠ニキチッチ
+空中戦は続けられん。
+[k]
+
+＠ニキチッチ
+オレはおまえたちの勝ちを認めよう、カルデア。[r]とりあえず……
+[k]
+
+[charaFace L 1]
+
+＠ニキチッチ
+まずは地上に戻るぞ！
+[k]
+
+[messageOff]
+[charaFadeout I 0.5]
+[charaFadeout L 0.5]
+
+[charaMove J -330,-320 1.2]
+[charaMove B -30,15 1.2]
+[wt 1.0]
+
+＠伊吹童子
+あ、賛成ー。
+[k]
+
+＠伊吹童子
+あたしの新技っていうか偽宝具、[r]ちょっとばかり疲れちゃうのよね、ええ……
+[k]
+
+？1：空中できりもみ八回転しながらの全力突撃！
+？2：相当無茶な突撃だったよあれは
+？！
+
+[messageOff]
+[charaTalk off]
+
+[charaDepth D 5]
+[charaDepth E 6]
+[charaDepth B 7]
+[charaDepth F 8]
+
+[se ad476]
+[charaFace F 0]
+[charaFadein F 0.7 -30,15]
+[wt 0.3]
+
+[charaMove F 0,0 2.5]
+[charaMoveScale F 1.0 2.5]
+[charaMove B 0,0 2.5]
+[charaMoveScale B 1.0 2.5]
+[charaFadeout B 0.3]
+[wt 0.3]
+[wt 0.7]
+
+[bgm BGM_EVENT_77 1.0 0.5]
+
+[fadeout white 1.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+[wt 1.0]
+
+[charaMoveScale D 1.0 0.1]
+[charaMoveScale E 1.0 0.1]
+
+[seStop ad476 1.0]
+
+[charaFace E 9]
+[charaFadein E 0.7 0,0]
+[charaFadeout E 0.7]
+
+[charaFace D 9]
+[charaFadein D 0.1 0,0]
+
+[bgm BGM_EVENT_77 1.0 1.0]
+[fadein white 1.0]
+[wait fade]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+＠D：伊吹童子
+……。[r]……。
+[k]
+
+[charaFace D 13]
+＠D：伊吹童子
+……全力モードはなんだか疲れるわぁ。はふ。
+[k]
+
+？1：ゆっくり降りて、ゆっくり深呼吸！
+
+[charaFace D 9]
+[charaMoveReturn D 0,10 1.0]
+＠D：伊吹童子
+すうー、はぁー。
+[k]
+
+？2：無茶しないでゆっくり降りていこう
+
+[charaFace D 9]
+＠D：伊吹童子
+……そうね。はあ。
+[k]
+
+？！
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

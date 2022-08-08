@@ -1,0 +1,720 @@
+
+＄94-04-91-07-2-1
+
+[soundStopAll]
+
+[charaSet A 1098194300 1 卑弥呼]
+[charaSet B 1098194500 1 无名之龟]
+[charaSet C 1027001 1 冲田总司]
+[charaSet D 1098174900 1 织田信长]
+
+[branchQuestNotClear lblNotClear 3000320]
+
+[branch lblConf]
+[label lblNotClear]
+[charaSet E 8001000 1 玛修]
+
+[branch lblNotClear_out]
+[label lblConf]
+[charaSet E 8001410 1 玛修]
+
+[label lblNotClear_out]
+
+[charaSet F 2041000 1 织田信胜]
+[charaSet G 1001000 1 特效用]
+[charaSet H 1001000 1 特效用]
+[charaSet I 1001000 1 特效用]
+
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_06_b3]
+[cameraMove 0.1 0,0 1.01]
+
+[scene 97000]
+
+[bgm BGM_EVENT_24 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_kengekiall02]
+[wt 0.2]
+[se ad470]
+[seStop ad470 0.7]
+[wt 0.2]
+[se ad170]
+[charaEffect G bit_talk_kengekiall02]
+[wt 0.2]
+[se ad170]
+[wt 0.2]
+[se ad170]
+[wt 0.2]
+[se ad170]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaPut I 0,0]
+
+[charaPut H 0,0]
+[charaEffect H bit_talk_x_slash02 0,0 F]
+[se bac139]
+[wt 0.2]
+[charaShake D 0.05 4 4 0.3]
+[wt 0.5]
+
+＠D：冒牌壹与
+呜……啊啊……！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 2.5]
+[fowardEffect bit_talk_atomization]
+[charaEffectStop I bit_talk_06_b3]
+[wt 0.5]
+[cueSe Battle ba6]
+
+[charaCrossFade D 11007000 4 2.0]
+[wait charaCrossFade D]
+[wt 1.5]
+
+[fowardEffectDestroy]
+
+
+＠织田信长
+呼……受不了，这也太惨了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠冲田总司
+信！　恢复清醒了吗！？
+[k]
+
+？1：太好了……！
+？2：不，情况有点……
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+
+＠织田信胜
+姐姐大人……！　太……太好了，您平安无事！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠织田信长
+退下，你这蠢货！　不要靠近我！
+[k]
+
+
+＠织田信长
+你也想被[#这玩意儿]咬死吗！
+[k]
+
+[charaPut H 0,0]
+
+[messageOff]
+[se ade409]
+[seStop ade409 1.3]
+[charaEffect H bit_talk_06_b3]
+[wt 2.0]
+
+[charaPut H 1200,1200]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠织田信胜
+哎……！？　姐姐大人……难道还没……！？
+[k]
+
+[charaPut H 0,0]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠织田信长
+呼，那边那位就是卑弥呼吧……[r]我从壹与那儿听说了。
+[k]
+
+[charaPut H 1200,1200]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+从壹与那儿！？　这是怎么回事？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 0,0]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+
+＠织田信长
+没什么，当我被这片土地召唤而来，[r]作为凭依之躯被这叫什么神之座的东西束缚时，
+[k]
+
+
+＠织田信长
+名为壹与，也就是残留在这座上的[r]所剩无几的女孩灵魂拜托我，
+[k]
+
+＠织田信长
+……希望我能在卑弥呼回来前尽量争取时间。
+[k]
+
+[charaPut H 1200,1200]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠玛修
+争取时间……？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 0,0]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠织田信长
+没错，再说竟然打算让我当凭依之躯，[r]这也太离谱了，恕我敬谢不敏。
+[k]
+
+
+＠织田信长
+只不过，那家伙是叫芹泽吧？　那家伙的力量……[r]恐怕是圣杯的力量……
+[k]
+
+＠织田信长
+在遭到那家伙无法反抗的束缚之前，[r]我在痛苦中下意识地膈应他们一下。
+[k]
+
+
+＠织田信长
+将同样被召唤的你们封进埴轮里，[r]将他的力量拆散分给你们，并把你们送去各地。
+[k]
+
+[charaPut H 1200,1200]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠冲田总司
+所以那个埴轮果然是信的……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 0,0]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠织田信长
+但是，这不过是在争取时间。
+[k]
+
+＠织田信长
+他们的目的已经快达成了。
+[k]
+
+[charaPut H 1200,1200]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠无名之龟
+……那究竟是什么？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 0,0]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠织田信长
+其实……呃，为什么乌龟会说话啊。
+[k]
+
+[charaFace D 0]
+
+
+＠织田信长
+好吧，算了，他们搜集了沉睡于[r]这片土地上的古兽和非归顺之人的怨念，
+[k]
+
+＠织田信长
+打算复活古老的诸神。
+[k]
+
+[charaPut H 1200,1200]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+古老的诸神……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 0,0]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+
+＠织田信长
+严格说其实算冒牌货啦，将他们的怨念[r]一并封入型内，企图破坏这个国家。
+[k]
+
+[messageOff]
+
+[shake 0.05 1 4 1.5]
+[se ad14]
+[seVolume ad14 0 0.6]
+[wt 1.5]
+
+[charaPut H 1200,1200]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠玛修
+这……这地震是……！？
+[k]
+
+[seStop ad14 1.0]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 0,0]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠织田信长
+开始了……非『国家创造』，而是『国家崩溃』。
+[k]
+
+[messageOff]
+[charaPut G 0,0]
+
+[charaEffect G bit_talk_06p]
+[wt 1.5]
+
+[charaFace D 1]
+
+＠织田信长
+好了，看来我只能到这里了，毕竟有些拼过头了。
+[k]
+
+＠织田信长
+不过，至少壹与拜托我争取的时间我已经做到了。
+[k]
+
+[charaFace D 6]
+
+＠织田信长
+接下来就交给你了，叫卑弥呼的……
+[k]
+
+[charaPut G 1200,1200]
+[charaPut H 1200,1200]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+就因为壹与的拜托，你竟然愿意做到这个地步……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+[charaPut G 0,0]
+[charaPut H 0,0]
+
+＠织田信长
+没什么，不用在意，有一半是我个人想膈应那家伙。
+[k]
+
+＠织田信长
+那群叫新选组还是什么的家伙[r]竟然让我当活祭，别开玩笑了。
+[k]
+
+[charaFace D 0]
+
+＠织田信长
+喂，冲田，他们好像是你同伴，你要好好善后哦。
+[k]
+
+[charaPut G 1200,1200]
+[charaPut H 1200,1200]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠冲田总司
+信……
+[k]
+
+[charaFace C 9]
+
+＠冲田总司
+我知道了……
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 1.0]
+
+？1：怎么会……
+？2：信……
+？！
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+[bgm BGM_EVENT_41 0.1]
+
+＠织田信胜
+怎……怎么会！？　骗人的吧？
+[k]
+
+
+＠织田信胜
+姐姐大人竟然会消灭！？
+[k]
+
+＠织田信胜
+这怎么可能啊！
+[k]
+
+[charaFace F 13]
+
+＠织田信胜
+姐姐大人是不可能丢下我自己消灭的！
+[k]
+
+＠织田信胜
+这绝对有问题！
+[k]
+
+[charaFace F 2]
+
+＠织田信胜
+喂，卑弥呼！　想想办法啊！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+
+＠卑弥呼
+信胜……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠织田信胜
+还有你！　你是姐姐大人的御主吧！[r]想办法解决啊！
+[k]
+
+[messageOff]
+
+[charaShake F 0.05 3 2 0.5]
+[se ade524]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[charaPut G 0,0]
+[charaPut H 0,0]
+
+
+＠织田信长
+还在犯傻吗！　你这笨蛋！
+[k]
+
+[charaFadeout D 0.1]
+[charaPut G 1200,1200]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠织田信胜
+哎……姐姐大人……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[charaPut G 0,0]
+[charaPut H 0,0]
+
+＠织田信长
+……你从以前起就这样，姐姐大人姐姐大人的[r]在我背后死缠烂打到甚至有些烦人……
+[k]
+
+＠织田信长
+事到如今我要向你说清楚。
+[k]
+
+[charaFace D 2]
+[bgmStop BGM_EVENT_41 1.5]
+
+
+＠织田信长
+[line 3]别再出现在我的面前了。
+[k]
+
+[charaFadeout D 0.1]
+[charaPut G 1200,1200]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠织田信胜
+……哎？　姐……姐姐大人……这……这是骗人吧……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[charaPut G 0,0]
+[charaPut H 0,0]
+
+[bgm BGM_EVENT_95 0.1]
+
+
+＠织田信长
+别让我再说一遍了！　现在不是犯傻的时候！
+[k]
+
+＠织田信长
+今后你将迎接的是没有织田信长之世！
+[k]
+
+
+＠织田信长
+你要靠自己的双腿前进，走自己开启的道路！
+[k]
+
+[charaFadeout D 0.1]
+[charaPut G 1200,1200]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠织田信胜
+…………这……这种事……
+[k]
+
+？1：信……
+？2：信胜……
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaPut G 0,0]
+[charaPut H 0,0]
+
+
+＠织田信长
+[%1]，[r]很抱歉麻烦你，但信胜就拜托了。
+[k]
+
+＠织田信长
+……就算是这种家伙，也毕竟是我弟弟。
+[k]
+
+[charaFadeout D 0.1]
+[charaPut G 1200,1200]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠织田信胜
+……怎么可以……请等一下！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaPut G 0,0]
+[charaPut H 0,0]
+
+＠织田信长
+……信胜。
+[k]
+
+[charaFadeout D 0.1]
+[charaPut G 1200,1200]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠织田信胜
+……姐……姐姐大人。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+[charaPut G 0,0]
+[charaPut H 0,0]
+
+＠织田信长
+[line 3]接下来就交给你了。
+[k]
+
+[messageOff]
+[se ad52]
+[charaSpecialEffect D flashErasure 1 1.2]
+[wait charaSpecialEffect D]
+[charaEffectStop H bit_talk_06_b3]
+[charaEffectStop G bit_talk_06p]
+[seStop ad52 0.2]
+[wt 2.0]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+
+＠织田信胜
+姐姐大人……
+[k]
+
+＠织田信胜
+姐姐大人…………！
+[k]
+
+[messageOff]
+[charaFaceFade F 12 1.0]
+[wt 1.5]
+
+＠织田信胜
+[line 3][messageShake 0.02 3 3 0.6]姐姐大人[line 9]！！！！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_95 2.0]
+[wait fade]
+[soundStopAll]
+[end]

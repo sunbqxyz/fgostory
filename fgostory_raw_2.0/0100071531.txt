@@ -1,0 +1,505 @@
+
+
+
+＄01-00-07-15-3-1
+[soundStopAll]
+[charaSet A 98106200 1 梅林]
+[charaSet B 8001002 1 玛修]
+[charaSet C 2020001 1 伊什塔尔]
+[charaSet D 98003000 1 Dr.罗曼]
+[charaSet E 3028001 1 豹人]
+[charaSet F 98107500 1 乌鲁克士兵]
+[charaSet G 98016000 1 乌鲁克士兵B]
+[charaSet H 4018001 1 魁札尔·科亚特尔]
+
+[bgm BGM_EVENT_24 0.1]
+[scene 32940]
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 2]
+
+＠Dr.罗曼
+确认敌方魔兽击破！[r]辛苦了！
+[k]
+
+＠Dr.罗曼
+周围已经没有反应了，[r]看来刚才那些是盘据在巴比伦的全部魔兽了！！
+[k]
+
+
+？1：难怪我觉得数量好多啊……
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠玛修
+对，战斗比预想的要辛苦。[r]前辈，身体还好吧？
+[k]
+
+＠玛修
+一直连续战斗，没能好好休息。[r]请务必注意魔力的枯竭问题。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？2：毕竟伊什塔尔在努力干活嘛。
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠伊什塔尔
+那当然啦。这么说来，这里是第一次见面的地方吧。[r]一定是因为这样，我才会那么有干劲吧。
+[k]
+
+[charaFace C 1]
+＠伊什塔尔
+当时我只觉得你是个[r]“这人怎么那么失礼，该怎么欺负这个人呢？”。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠梅林
+[%1]，不好意思打断你们的对话，[r]可以帮我联系罗曼医生吗？
+[k]
+
+＠梅林
+差不多已经过了一小时了。[r]北壁的状况如何？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 5]
+
+
+＠Dr.罗曼
+嗯，现在战斗正准备打响。
+[k]
+
+＠Dr.罗曼
+魔兽群的第一波穿过了尼普尔市，[r]五分钟后就会与北壁主军交战。
+[k]
+
+＠Dr.罗曼
+而在魔兽群最前方的是绿发少年[line 3][r]“提亚马特十一个孩子们”的指挥官，金固。
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+[communicationCharaClear]
+[wait communicationChara]
+[wt 1.0]
+
+[scene 34600]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad16]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠G：乌鲁克士兵
+要来了[line 5]！[r]第一阵，准备！　现在正是贯彻列奥尼达王教诲的时候！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠F：乌鲁克士兵
+听好了，每个人只能在前线战斗一小时！[r]我们个体的力量不如魔兽！
+[k]
+
+＠F：乌鲁克士兵
+体力用尽的人后退到第四阵，[r]进行休息并更换长枪！　调整呼吸等待下次出场！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠G：乌鲁克士兵
+[line 3]接触了！
+[k]
+
+＠G：乌鲁克士兵
+现在正是让王见识一下存活至今的战线潜力的时候了！[r]全员，冲啊～！
+[k]
+
+[messageOff]
+[seStop ad16 0.7]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+[scene 10000]
+[wipein leftToRight 0.1 1]
+[wait wipe]
+[se ad51]
+[wt 0.7]
+[se ad25]
+[wt 0.4]
+[se ad33]
+[effect bit_talk_kengekiall01]
+[wt 1.0]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 1.0]
+[wipeout rightToLeft 0.1 1]
+[wait wipe]
+[scene 34600]
+[charaSet G 98106000 1 金固]
+[wt 0.1]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+
+＠豹人
+动物大战开始了喵！[r]好嘞，我们也出战吧，库库尔！
+[k]
+
+＠豹人
+我一到这里，北方的各位就请我吃了美味的肉！[r]可不能对这些能干的武士们见死不救喵！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein E 0.1 0]
+[charaFadein H 0.1 2]
+
+＠魁札尔·科亚特尔
+我也有同感哦，豹子。虽然吵架双方应该都受到教训，[r]但那些魔兽们是被戈耳工改造过的。
+[k]
+
+＠魁札尔·科亚特尔
+为了获得战斗能力而付出的代价，是丧失了生殖机能了吧。[r]都是些在这场战斗结束后只能灭绝的悲哀的孩子。
+[k]
+
+＠魁札尔·科亚特尔
+虽然无法评论是善或是恶，[r]但比起“没有未来的存在”，我还是要选择“有未来的存在”。
+[k]
+
+[charaFace E 2]
+＠豹人
+好嘞，要上啦[line 3]！[r]让他们见识一下丛林野兽的力量吧[line 3]！
+[k]
+
+[charaFace H 2]
+＠魁札尔·科亚特尔
+！　豹子！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk off]
+[charaFadein E 0.1 1]
+[messageOff]
+[charaEffect E bit_talk_38]
+[se bac111]
+[wt 0.4]
+
+[charaEffectStop E bit_talk_38]
+[charaFadein H 0.1 2]
+[charaMove H 0,0 0.2]
+[wait charaMove H]
+[se ad102]
+[charaShake E 0.01 5 5 0.4]
+[charaMove E 0 0.4]
+[charaFadeout E 0.4]
+[wait charaMove E]
+[charaFadeout H 0.1]
+[se ad171]
+[charaEffect H bit_bolg_02y]
+[wt 0.4]
+[se ad32]
+[charaEffect H bit_talk_14]
+[shake 0.05 5 5 0.4]
+[wt 0.7]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠金固
+哎呀。我刚想说这里居然有从者，[r]这不是魁札尔·科亚特尔吗。
+[k]
+
+＠金固
+自母亲大人的王座以来，好久不见啦。[r]我可以认定『三女神同盟』已经瓦解了吗？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+
+＠魁札尔·科亚特尔
+对。我和埃列什基伽勒都打算从乌鲁克抽手不干了。[r]现在如你所见，都站在人类的一方。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠金固
+……是吗。真是遗憾。[r]你是个聪明的女神。
+[k]
+
+＠金固
+埃列什基伽勒姑且不论，[r]我以为至少你能够理解母亲的悲哀才对。
+[k]
+
+＠金固
+自己过去一手培养的[#文明:作物][r]被野蛮[#征服者:科尔特斯]付之一炬的女神。
+[k]
+
+＠金固
+说要逐一杀掉人类们的你，[r]令我深深地感到共鸣。
+[k]
+
+＠金固
+这个女神具备独自一人背负世界的气概，[r]是杀戮的化身。
+[k]
+
+＠金固
+当时的你上哪儿去了？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠魁札尔·科亚特尔
+啊啊[line 3]你说这张脸吗？[r]如你所见，哪儿都没去啊？
+[k]
+
+[messageOff]
+[se ad73]
+[charaMove H -50,0 0.1]
+[charaFadeout H 0.1]
+[wait charaMove H]
+[wt 0.1]
+[charaEffect G bit_talk_kengekiall01]
+[shake 0.05 3 3 0.2]
+[se bac142]
+[wt 0.3]
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+[shake 0.05 3 3 0.2]
+[se bac136]
+[wt 0.3]
+[shake 0.05 3 3 0.2]
+[se bac137]
+[wt 0.3]
+[se bac143]
+[charaFace G 6]
+[charaEffect G bit_talk_13]
+
+[charaShake G 0.01 2 2 0.7]
+
+＠金固
+呜……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠魁札尔·科亚特尔
+开玩笑～，我在骗你啦～！[r]这是我最后一次做这种颜艺啦～！
+[k]
+
+[charaFace H 7]
+＠魁札尔·科亚特尔
+觉悟吧，金固。[r]打倒你之后，就轮到戈耳工了哦。
+[k]
+
+＠魁札尔·科亚特尔
+照这样一路进军，[r]把冒名顶替成提亚马特神的她的心脏扯出来。
+[k]
+
+＠魁札尔·科亚特尔
+你就当这是我对她的感谢好啦。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠金固
+感谢……？[r]你对她有什么好感谢的？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+
+＠魁札尔·科亚特尔
+当然是因为迄今为止没与我厮杀。[r]以及让我遇到了美好的御主。
+[k]
+
+[charaFace H 1]
+＠魁札尔·科亚特尔
+对，只要是为了[#御主:那孩子]，[r]连女神的契约我也能无视！
+[k]
+
+＠魁札尔·科亚特尔
+戈耳工的首级[r]就由我魁札尔·科亚特尔拿下了！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠金固
+[line 3]想不到不只是蛮力，连脑袋里也都是肌肉呀。[r]我由衷对你感到失望，魁札尔·科亚特尔。
+[k]
+
+[charaFace G 8]
+＠金固
+在新的世界里，不需要脑子不好使的女神。[r]就让我把你连翼龙一起大卸八块吧……！
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+[charaSet F 3027000 1 安娜]
+[charaFadeout G 0.1]
+[scene 32940]
+[seStop ad16 1.0]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 5]
+
+＠Dr.罗曼
+现在魁札尔·科亚特尔正牵制着金固。[r]只要有她还在，金固就不会来这里！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠梅林
+很好，作战十分顺利。[r]魁札尔·科亚特尔那家伙，挺精通煽动技巧的嘛。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠安娜
+嗯，不愧是成人的女神。[r]会光明正大撒谎，挑起了金固的怒火。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠玛修
+[FFFFFF]？[-]　所谓的说谎是指哪一段啊？[r]前辈知道吗？
+[k]
+
+？1：美好的御主那一段？
+？2：最后一次做颜艺的那一段？
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠伊什塔尔
+是连女神的契约也能无视的那一段啦。[r]因为魁札尔·科亚特尔拥有比戈耳工还要上级的神性。
+[k]
+
+＠伊什塔尔
+假如她表示不惜自杀也要打倒戈耳工，[r]那金固也就不能无视了吧？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+
+＠玛修
+说……说得对。
+[k]
+
+＠玛修
+您这么说来，确实是这样呢……[r]就因为听起来很顺理成章，所以没能意识到……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠梅林
+不管怎么说，目前作战非常顺利，我们向杉木林进发吧！[r]从现在开始就不能休息了，要火速急进军哦，各位！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_24 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]
+

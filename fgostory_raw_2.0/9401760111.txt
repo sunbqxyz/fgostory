@@ -1,0 +1,624 @@
+
+
+＄94-01-76-01-1-1
+[soundStopAll]
+
+[charaSet A 98084000 1 万圣节骑士]
+[charaSet B 98084000 1 万圣节骑士]
+[charaSet C 98084000 1 万圣节骑士]
+[charaSet D 99502600 1 玛修]
+[charaSet E 6031001 1 刑部姬]
+[charaSet F 3005001 1 伊丽莎白]
+[charaSet G 6026001 1 新宿的Assassin]
+[charaSet H 5009000 1 特效用dummy]
+
+[scene 20503]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_3 0.1]
+[wait fade]
+
+[charaTalk off]
+[charaFadein B 0.1 0]
+[charaFadein A 0.1 1]
+[charaFadein C 0.1 2]
+[wt 0.2]
+
+＠万圣节骑士
+呜……撤退，快撤退～！
+[k]
+
+[messageOff]
+[se ad166]
+[charaMove B -300,0 0.4]
+[charaMove A -50,0 0.4]
+[charaMove C 200,0 0.4]
+[seStop ad166 1.7]
+[charaFadeout A 0.4]
+[charaFadeout B 0.4]
+[charaFadeout C 0.4]
+[wt 0.4]
+[bgmStop BGM_EVENT_3 0.7]
+[wt 2.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk on]
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+[wt 0.3]
+
+＠玛修
+确认敌对反应撤退并消失。[r]辛苦您了，御主。
+[k]
+
+[charaFace D 11]
+
+＠玛修
+[line 3]好了。[r]那你差不多该离御主远一点了吧。
+[k]
+
+[charaFace D 14]
+
+＠玛修
+要不干脆把你从御主身上剥下来如何！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk E]
+[charaFace E 1]
+[charaScale E 1.3]
+[charaFadein E 0.1 0,30]
+
+＠E：？？？
+哎，啊，咿呀！
+[k]
+
+[messageOff]
+[se ad7]
+[seVolume ad7 0 0.5]
+[charaFadeout E 0.2]
+[wt 0.2]
+[charaScale E 1.0]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.4 1]
+
+＠E：？？？
+啊哈哈，对不起。[r][#公主:我]只是有点害怕。
+[k]
+
+？1：没关系啦。
+？！
+
+[bgmStop BGM_EVENT_2 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_7 0.1]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠伊丽莎白
+[messageShake 0.01 5 5 1.0]
+[&小狗崽:小鹿崽][line 3]！[r]怎么办，怎么办，怎么办！
+[k]
+
+＠伊丽莎白
+恰赫季斯城又被夺走了！
+[k]
+
+？1：怎么又来了～！
+？！
+
+[charaFace F 2]
+
+＠伊丽莎白
+就是啊！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace F 2]
+[charaFadein F 0.1 0]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+
+＠E：？？？
+迦勒底的御主……嗯嗯。[r]相当不错，相当不错。
+[k]
+
+[charaFace F 0]
+＠伊丽莎白
+是吧？
+[k]
+
+＠伊丽莎白
+虽说还不及我理想中的御主就是了。
+[k]
+
+＠伊丽莎白
+我的理想可厉害了。[r]尽管我只是隐约有这种感觉。
+[k]
+
+＠E：？？？
+那算什么，非现实系？[r]你这种叫强人所难哦，伊丽伊丽？
+[k]
+
+[charaFace F 5]
+
+＠伊丽莎白
+当然是现实系啦！[r]是存在的啦！　肯定存在啦！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 0.7]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠新宿的Assassin
+然后呢，你是谁啊？
+[k]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠新宿的Assassin
+会被那些家伙追赶，[r]应该不是什么寻常的事吧。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠E：？？？
+……是遭到了这里新主人的追捕。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠玛修
+新……主人？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠新宿的Assassin
+完全摸不着头脑呢～
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠玛修
+说得对，首先那些骑士们侍奉的主人，[r]应该就是伊丽莎白小姐吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠伊丽莎白
+对，大家都被洗脑了！[r]嗡嗡嗡哔哔哔～的！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：？？？
+洗脑电波好可怕呢～。[r]不愧是机械。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠新宿的Assassin
+机械？[r]这么说来，刚才对方好像说了些什么吧。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠玛修
+对。说是机械装置女王[line 3][r]机械伊丽亲。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠伊丽莎白
+………………
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠E：？？？
+嗯，不管怎么说。[r]……你们先抬头看天空。
+[k]
+
+＠E：？？？
+那座充满了不祥氛围的混沌要塞。
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripDownToUp 0.4 1]
+[bgmStop BGM_EVENT_5 0.4]
+[wait wipe]
+[charaFadeout E 0.1]
+[verticalImageSet A cut045_bg 1]
+[charaScale A 1.01]
+[charaFadein A 0 0,260]
+[wt 0.4]
+[scene 48700]
+[wipein rectangleStripUpToDown 0.4 1]
+[wait wipe]
+
+[wt 0.7]
+[charaAttack A normal 0,-220 2.0]
+[wt 2.2]
+[se ad186]
+[wt 1.75]
+
+[wipeout rectangleStripUpToDown 0.4 1]
+[wait wipe]
+[charaSet A 98111500 1 达·芬奇]
+[charaSet B 98102900 1 芙芙]
+[charaSet G 5009000 1 特效用dummy2]
+[charaSet C 6026001 1 新宿的Assassin]
+[scene 20503]
+[wt 0.4]
+[wipein rectangleStripDownToUp 0.4 1]
+[wait wipe]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠玛修
+……[r]……
+[k]
+
+？1：我有点头晕。
+
+[charaFace D 14]
+
+＠玛修
+这，这，这[line 3]！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠芙芙
+芙。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠新宿的Assassin
+喂喂，不要紧吧，御主。[r]不对，那是啥玩意儿啊，看上去超级好玩呀！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？2：太扯了吧？　话说这是不是太扯了？
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+
+＠达·芬奇
+这还真是……[r]美妙的奇形怪状啊。
+[k]
+
+＠达·芬奇
+西洋／中东／东洋全部叠在一起。
+[k]
+
+＠达·芬奇
+有种在汉堡包上叠上巧克力圣代和刺身[r]并蘸着辣椒酱吃的感觉啊。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+？！
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠E：？？？
+那座日本的城，是[#公主:我]真正的居所。
+[k]
+
+＠E：？？？
+是已经被夺走了的……[#公主:我]的[#圣域]。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 0]
+[charaFace E 4]
+[charaFadein E 0.1 2]
+
+＠伊丽莎白
+嗯，我非常理解你的心情，小刑……[r]城被夺走的感觉一定很难受吧。
+[k]
+
+？1：你是[line 3]？
+？！
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 1.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：？？？
+对哦，还没自我介绍呢。
+[k]
+
+[bgm BGM_EVENT_1 0.1]
+
+＠E：？？？
+咳咳，咳咳。
+[k]
+
+[charaFace E 1]
+
+＠E：？？？
+吾之居所乃白鹭般天上之城。[r]乃中意[#任何:黄昏]时刻的蝙蝠化身。
+[k]
+
+＠E：？？？
+不知被何人称为白鹭城的八天堂，[r]真名为刑部姬。
+[k]
+
+＠E：？？？
+对，当然是从者。[r]职阶是 Assassin。
+[k]
+
+[charaFace E 9]
+
+＠E：？？？
+啊啊，迦勒底的御主亲！[r]请夺回[#公主:我]所爱的姬路城吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 0]
+[charaFace E 4]
+[charaFadein E 0.1 2]
+
+＠伊丽莎白
+我的恰赫季斯城也拜托你啦！
+[k]
+
+＠刑部姬
+还请你，还请您，[r]将那可怕的邪恶化身[line 3]。
+[k]
+
+[bgmStop BGM_EVENT_1 1.0]
+[charaTalk off]
+[charaDepth F 2]
+[charaDepth E 1]
+[charaFace F 2]
+[charaFace E 2]
+[charaMoveScale E 1.3 0.1]
+[charaMoveScale F 1.3 0.1]
+[charaMove F -196,-20 0.1]
+[charaMove E 196,-20 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_41]
+
+[se ad185]
+[wt 0.4]
+
+＠二人
+机械伊丽亲彻底打倒！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+[charaScale G 1.0]
+[charaScale F 1.0]
+[charaScale E 1.0]
+
+[charaPut H 1]
+[charaTalk on]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠玛修
+机械
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+
+＠达·芬奇
+伊丽
+[k]
+
+？1：亲？
+？！
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+
+[tapSkip test_skip]
+[label test_skip]
+
+[charaFadeout A 0.1]
+[charaPut H 1200,1200]
+[scene 10000]
+
+
+[wt 1.0]
+[fadein black 0.5]
+[wait fade]
+
+[branch _Movie]
+
+[label skip]
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[bgmStop BGM_EVENT_1 0.4]
+[bgmStop BGM_EVENT_2 0.4]
+[bgmStop BGM_EVENT_3 0.4]
+[bgmStop BGM_EVENT_5 0.4]
+[bgmStop BGM_EVENT_7 0.4]
+[seStop ad7 0.4]
+[seStop ad166 0.4]
+[scene 10000]
+[charaSet A 98111500 1 达·芬奇]
+[charaSet B 98102900 1 芙芙]
+[charaSet C 6026001 1 新宿的Assassin]
+[charaSet D 99502600 1 玛修]
+[charaSet E 6031001 1 刑部姬]
+[charaSet F 3005001 1 伊丽莎白]
+[charaSet G 5009000 1 特效用dummy2]
+[charaSet H 5009000 1 特效用dummy]
+[skip false]
+[fadein black 0.1]
+[wait fade]
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[branch _Movie]
+
+[label _Movie]
+
+[skip false]
+
+[effectPause bit_talk_mechaelisa_op_02]
+
+[effect bit_talk_mechaelisa_op_01]
+[wait effect bit_talk_mechaelisa_op_01]
+
+[wt 0.17]
+
+[bgm BGM_MAP_16 2.0]
+
+[effectStart bit_talk_mechaelisa_op_02]
+
+[wt 13.0]
+[bgmStop BGM_MAP_16 1.5]
+[wt 1.5]
+
+
+
+
+[fadeout black 1.0]
+[wait fade]
+[wt 0.4]
+[skip true]
+[soundStopAll]
+[end]

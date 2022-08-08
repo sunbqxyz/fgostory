@@ -1,0 +1,389 @@
+＄94-00-21-10-1-0
+
+[soundStopAll]
+[charaSet A 8001001 1 玛修]
+[charaSet B 98003000 1 Dr.罗曼]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 6023000 1 两仪式]
+[charaSet E 5014001 1 梅菲斯托]
+[charaSet F 7004001 1 弗兰]
+[charaSet G 7003000 1 吕布]
+[charaSet H 2011000 1 尼古拉·特斯拉]
+
+
+[fadeMove white 2.0 0.4]
+[scene 22130 2.0]
+[wt 2.0]
+
+[wt 0.7]
+
+
+？1：打扰了～……
+？2：早上好～……
+
+？！
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.4 1]
+＠玛修
+虽然事件已经解决了，[r]但是好像还有从者们被关在公寓里，
+[k]
+
+＠玛修
+于是我们继续搜查……[r]但是……
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+
+[messageOff]
+[charaFadeout A 0.1]
+
+[se ad61]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 1.0]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 1.0]
+[seStop ad61 3.0]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠弗兰
+唔唔唔唔…………唔唔唔唔唔！！[r]唔！！　唔，唔，唔[line 2]！！！
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠玛修
+好刺眼！　在刺眼的光中亢奋不止！
+[k]
+
+＠玛修
+虽然不知道发生了什么，[r]但请冷静下来，弗兰小姐！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠吕布
+[image berserker_language_1][line 2]！！！
+[k]
+
+[charaFadeout G 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠玛修
+哇，连吕将军也……！？
+[k]
+
+？1：医生，请翻译！
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+哎哎哎哎！？[r]有……有这种功能吗！？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+医生，我来试看看！
+[k]
+
+？2：玛修，请翻译！
+
+[charaFace A 7]
+＠玛修
+我……我会努力的！
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 0]
+[charaFace A 7]
+[charaFadein A 0.1 2]
+＠弗兰
+……唔唔……特……斯拉……[r]唔唔唔唔唔唔！！
+[k]
+
+[charaFace A 6]
+＠玛修
+哎，特斯拉先生？[r]最近来迦勒底的那位？
+[k]
+
+[charaFace F 2]
+＠弗兰
+唔唔！
+[k]
+
+[charaFace A 7]
+＠玛修
+呃……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.1]
+[wipeout rollFlashRight 0.5 1]
+[fadeMove white 0.4 0]
+[wait wipe]
+
+[wt 1.0]
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[scene 10310]
+
+[bgm BGM_EVENT_2 0.1]
+[wipein rollFlashRight 0.5 1]
+[wait wipe]
+
+[wt 0.4]
+
+[se ad61]
+[wt 2.0]
+[seStop ad61 2.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+＠弗兰
+唔唔……？[r]唔……？
+[k]
+
+＠弗兰
+……唔……
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.5 1]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[scene 10400]
+[se ad8]
+[wt 1.0]
+
+[wipein rightToLeft 0.5 1]
+[wait wipe]
+
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.4 1]
+＠尼古拉·特斯拉
+畅快。真是畅快啊。而且相当舒爽！[r]在闪耀的电气下阅读书本，这是何等耀眼啊！
+[k]
+
+＠尼古拉·特斯拉
+不得不说原本就在不断增长的知识，[r]这下更是[#直线提升:鳗鱼蹿升]了！！　就因为电气！
+[k]
+
+[charaFace H 4]
+＠尼古拉·特斯拉
+……什么，不能理解？　鳗鱼自然就是指那个了。[r]拥有发电器官的[#神之鱼:God fish]啊……不过算了。
+[k]
+
+[charaFace H 0]
+＠尼古拉·特斯拉
+好了，让我们进一步地提升亮度吧。[r]500W就已经有这个效果了。如果再加倍的话又会如何？
+[k]
+
+[charaFace H 2]
+＠尼古拉·特斯拉
+我的才智恐怕会经由光提升至神域，[r]想必那将是无法安于阅读伟业了！
+[k]
+
+[charaFace H 1]
+＠尼古拉·特斯拉
+哈哈哈哈哈哈哈！[r]那让我来看一下[line 3]
+[k]
+
+[charaFace H 2]
+＠尼古拉·特斯拉
+[f large][#人类神话:System]·[#雷电降临:Keraunos]！
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_lightning_02t]
+[se ad62]
+[wt 0.4]
+[fadeout white 0.4]
+[wait fade]
+[wt 1.0]
+[fowardEffectStop bit_talk_lightning_02t]
+[wait fowardEffect]
+[charaFadeout H 0.1]
+[scene 10000]
+[wt 1.0]
+[seStop ad62]
+[fadein white 0.1]
+[wait fade]
+
+＠尼古拉·特斯拉
+嗯？　停电？　这就麻烦了。[r]但这是多么天才啊……
+[k]
+
+＠尼古拉·特斯拉
+就算发生这样的事，我也从中吸取了教训！[r]总之[line 3]电气是非常重要的！
+[k]
+
+＠弗兰
+唔唔唔唔唔唔[line 6]！！？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.1]
+[wipeout rollFlashRight 0.5 1]
+[wait wipe]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 0]
+[charaFace A 7]
+[charaFadein A 0.1 2]
+[scene 22130]
+
+[bgm BGM_EVENT_3 0.1]
+[fadeMove white 0.5 0.7]
+[wipein rollFlashRight 0.5 1]
+[wait wipe]
+
+＠弗兰
+呐啊啊啊啊啊啊啊啊啊啊啊啊啊噢噢噢噢噢噢噢噢[r]噢噢噢噢噢噢！！！！！
+[k]
+
+＠玛修
+对于特斯拉先生的无端浪费电气感到愤慨……
+[k]
+
+＠玛修
+于是决定自己也要浪费电气。[r]原来如此……。
+[k]
+
+[charaFace F 5]
+＠弗兰
+唔唔[line 4]！！[r]唔唔！　唔唔啊唔！
+[k]
+
+？1：感情变得越来越看不见了呢。
+？2：好刺眼！？
+？！
+
+[charaFadeout F 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 0]
+＠吕布
+[image berserker_language_1][line 2]！
+[k]
+
+＠玛修
+呂布先生……[r]那个……
+[k]
+
+＠玛修
+『她很像自己的女儿，所以助她一臂之力』，[r]是这样啊。
+[k]
+
+[charaFace A 13]
+＠玛修
+啊，也就是说您并没有生气吧。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaSet G 7003002 1 吕布]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 0]
+＠吕布
+[image berserker_language_2][line 4]！！！！
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 2]
+＠玛修
+咿呀！？
+[k]
+
+[charaFace A 12]
+＠玛修
+『没有看到自己女儿哭泣却不生气的父母』！[r]对……对不起！
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠两仪式
+原来如此。“最近电闸频繁跳闸，[r]还请想想办法”，这投诉是指这个啊。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠玛修
+[FFFFFF]？　式小姐，您在看什么呢？[-][r]那是……笔记本？
+[k]
+
+[bgmStop BGM_EVENT_7 0.1]
+[charaFadeout A 0.1]
+
+[wt 0.1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠两仪式
+总之先解决这件事吧。[r]有话之后再说。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠弗兰
+唔唔唔唔唔唔啊啊啊啊啊[line 4]！！
+[k]
+
+
+[charaFadeout F 0.1]
+
+[messageOff]
+[fadeMove white 0.5 0]
+[scene 10000 0.5]
+[wt 0.4]
+[bgmStop BGM_EVENT_3 0.1]
+[fadeout black 0.1]
+[wt 0.1]
+[soundStopAll]
+[end]
+

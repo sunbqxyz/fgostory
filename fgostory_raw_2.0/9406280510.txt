@@ -1,0 +1,1085 @@
+
+
+＄94-06-28-05-1-0
+
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 2031001 1 ナポレオン]
+[charaSet B 1009001 1 モードレッド]
+[charaSet C 4046000 1 エリザベート]
+[charaSet D 2045000 1 ゼノビア]
+[charaSet E 25010002 1 ジャックドモレー]
+[sceneSet F 137100 1]
+[charaScale F 1.3]
+[sceneSet G 137100 1]
+[charaScale G 1.45]
+
+[imageSet H back10000 1 1]
+
+[charaScale H 1.1]
+[charaTalk depthOff]
+[charaDepth H 2]
+[charaDepth C 3]
+[charaDepth A 4]
+[charaDepth D 5]
+
+[imageSet Q back10000 1]
+[charaScale Q 1.01]
+[imageSet R back10000 1]
+[charaScale R 1.01]
+
+[charaSet S 98115000 1 エフェクト用]
+
+[scene 137100]
+
+[charaTalk off]
+
+[charaDepth F 4]
+[charaDepth G 5]
+
+[charaFadein F 0.7 100,-200]
+[charaMove F -100,-200 7.0]
+
+[bgm BGM_MAP_16 0.1]
+
+[fadein black 1.5]
+[wait fade]
+[wt 3.0]
+[charaFadein G 1.5 -200,-100]
+[charaMove G -200,-300 7.0]
+[wt 3.5]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaFadeout G 3.0]
+[wt 4.8]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠ナポレオン
+ふうむ。ここがチェイテシンデレラ城か？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠モードレッド
+とりあえず、[r]辿り着くことには辿り着いたが。
+[k]
+
+＠モードレッド
+やっぱり誰もいやしねえ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠エリザベート
+せっかくの～♪[r]シンデレラ城～なのに～ナイトの１人もナシ～♪
+[k]
+
+[charaFace C 13]
+＠エリザベート
+不用心にも～ほどがあるわ～♪
+[k]
+
+[charaFace C 0]
+＠エリザベート
+……守備が薄いのはいいけど、[r][#私:アタシ]を甘く見てるのは気に入らないわね。
+[k]
+
+[charaFace C 9]
+＠エリザベート
+やっぱり拷問ね～♪
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠ナポレオン
+はははは！[r]物騒なのは置いといて、行くか？
+[k]
+
+？1：行こう！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠ゼノビア
+そうだな。[r]とっとと元凶を倒して、特異点を修正しよう。
+[k]
+
+？2：もう１人のエリザベートを救出しないと
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠エリザベート
+そういえば～そうだったわ～♪
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+＠モードレッド
+サラッと忘れてんじゃねえよ！[r]ったく、城に入るぞ！
+[k]
+
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_MAP_16 1.0 0.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+
+[scene 134700]
+[wt 1.0]
+
+[se ade422]
+[seVolume ade422 0 0]
+[seVolume ade422 1.0 0.8]
+[wt 1.0]
+
+[fadein black 1.5]
+[bgm BGM_MAP_16 1.0 1.0]
+[wait fade]
+[seStop ade422 1.0]
+[wt 1.0]
+
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠エリザベート
+ここはまだチェイテ城ね～♪
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadeinFSL D 0.1 0]
+
+[charaFace C 14]
+[charaFadeinFSR C 0.1 2]
+
+＠ゼノビア
+おまえの故郷、という訳か。
+[k]
+
+[charaFace C 13]
+
+＠エリザベート
+死に場所でもあるわ～♪[wt 1.0][charaFaceFade C 17 0.2][r]……もとい、死に場所でもあるのだけど。
+[k]
+
+[charaFace D 6]
+
+＠ゼノビア
+[#籠城戦:ろうじょうせん]でも起きたか？
+[k]
+
+[charaFaceFade C 18 0.2]
+
+＠エリザベート
+あまりその話は[#私:アタシ]からしたくないわ～♪[r][&子イヌ:子ジカ]にでも聞いてちょうだい～♪
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_MAP_16 1.5 0.5]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ゼノビア
+[FFFFFF]？[-]
+[k]
+
+？1：ゼノビア、ちょっといい？
+？！
+
+[charaFace D 6]
+
+＠ゼノビア
+ああ。
+[k]
+
+[bgmStop BGM_MAP_16 1.5]
+？1：実はね[line 3]
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠ゼノビア
+……。[r]……そうか……。
+[k]
+
+＠ゼノビア
+このチェイテ城は彼女にとって、[r]監獄でもあったのか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadeinFSR B 0.1 2]
+
+[charaFace D 4]
+[charaFadeinFSL D 0.1 0]
+
+＠モードレッド
+ま、生前はどう考えても褒められた[r]生き様じゃねえけどな、あのドラバカ。
+[k]
+
+＠モードレッド
+やらかしたことが酷かった分、[r]辛い死に方だった。
+[k]
+
+＠モードレッド
+[#因果応報:いんがおうほう]ってヤツだ。
+[k]
+
+[charaFace D 0]
+
+＠ゼノビア
+話を聞く限りでは、そのようだな。
+[k]
+
+[charaFace D 4]
+
+＠ゼノビア
+だが……虜囚の身となり、幽閉され、[r]誰からも顧みられることがない。
+[k]
+
+＠ゼノビア
+悪行とは別に、[r]それには[#憐憫:れんびん]を抱いてしまう。
+[k]
+
+[charaFace B 4]
+
+＠モードレッド
+あー、そりゃ……アレか。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠ゼノビア
+言葉を濁さずとも良い。[r]そうだ。見ての通り、私も虜囚だった。
+[k]
+
+＠ゼノビア
+後世に伝わっているように命乞いをしたかどうかは、[r]正直に言って覚えていない。
+[k]
+
+＠ゼノビア
+捏造なのか本当に心が折れたのか。[r]大切なことだとは思うのだが。
+[k]
+
+[charaFace D 10]
+
+＠ゼノビア
+ただ私は私自身を信じている。[r]その証明のためにここにいる。
+[k]
+
+＠ゼノビア
+生前に近い時代のパルミラに召喚された以上、[r]きっと果たしてみせる。
+[k]
+
+＠ゼノビア
+……いずれにせよ、だ。
+[k]
+
+＠ゼノビア
+私にも、恥辱の過去があったことに違いはない。
+[k]
+
+＠ゼノビア
+[#彼女:エリザベート]は[line 3]
+[k]
+
+？1：エリちゃんは前向きだよ
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠モードレッド
+そうだな。[r]アイツ何なんだってくらい前向きだな。
+[k]
+
+[charaFace B 4]
+
+＠モードレッド
+後ろ向いたら死ぬんじゃねえのってくらい。[r]……いや本当に死にかねないな……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠ゼノビア
+良いことだ。
+[k]
+
+＠ゼノビア
+そんな最期であれば、[r]前向きではなくとも仕方なかろうに。
+[k]
+
+？1：エリザベート・バートリーは……
+？2：アイドルだからね
+？！
+
+[charaFace D 6]
+
+＠ゼノビア
+アイドル……か。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+＠モードレッド
+さっき聞いたが、[r]今はミュージカルに挑戦中だとさ。
+[k]
+
+？1：カルデアでもよくライブ[&やってる:やってるよ]
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠ゼノビア
+生前から唄っていたのか？
+[k]
+
+？1：英霊になってからのはず
+？！
+
+[charaFace D 0]
+
+＠ゼノビア
+……少し、話してみるか。
+[k]
+
+[messageOff]
+[se ade423]
+[charaFadeout D 0.7]
+[wt 1.0]
+[seStop ade423 1.0]
+
+＠ゼノビア
+エリザベート！
+[k]
+
+＠エリザベート
+な～に～か～し～ら～♪
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.8 1.0]
+[wait wipe]
+
+[charaTalk off]
+
+[charaFace C 0]
+[charaFadeinFSL C 0.1 0]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.8 1.0]
+[wait wipe]
+
+[charaFace D 0]
+[charaFadeinFSR D 0.1 380,0]
+[charaMoveFSR D 256,0 0.8]
+[wt 1.2]
+[charaFace D 6]
+[charaMoveReturnFSR D 256,-5 0.3]
+[wt 0.5]
+
+[charaFace C 14]
+[charaMoveReturnFSL C -256,5 0.2]
+[wt 0.3]
+[charaMoveReturnFSL C -256,5 0.2]
+[wt 0.7]
+
+[charaFace D 9]
+[charaMoveReturnFSR D 256,-5 0.3]
+[wt 1.0]
+
+
+？1：（仲良くなるといいな……）
+？！
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_11 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+
+
+[scene 137200]
+[wt 1.0]
+
+[se ad538]
+[wt 1.0]
+[fadein black 2.0]
+[wait fade]
+[wt 0.8]
+
+[bgm BGM_MAP_35 0.1]
+[charaTalk on]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.7 1]
+[wt 1.0]
+
+
+＠モレー
+……ほーう、来たねぇー？
+[k]
+
+[charaFace E 0]
+
+＠モレー
+森の７騎を揃えて来るかと思ったけれど、[r]追加戦力は結局２騎だけ、か。
+[k]
+
+[charaFaceFade E 22 0.2]
+
+＠モレー
+エリザベート・バートリー、[r]女王ゼノビア、カルデアのマスター。
+[k]
+
+＠モレー
+加えて……[r]叛逆の騎士モードレッド、皇帝ナポレオン。
+[k]
+
+＠モレー
+悪くはないラインナップだけど、[r]でも。残りの５騎を置いてきちゃうとか、
+[k]
+
+[charaFaceFade E 28 0.2]
+
+＠モレー
+もしかして舐めてるー？
+[k]
+
+＠モレー
+あたし、舐められてるー？
+[k]
+
+[messageOff]
+[charaFaceFade E 8 0.2]
+[wt 1.4]
+[charaFaceFade E 1 0.2]
+[wt 0.5]
+
+＠モレー
+ああ、そーゆー意味じゃなくてさ？[r]もーっと悪い意味でね。
+[k]
+
+＠モレー
+こっちの企みが、ほんの何手か先に[r]進んでるってだけだから。
+[k]
+
+＠モレー
+絶対に逃せないチャンス、大切な現界の機会だもの、[r]自分にやれることを最大限やるんだ。
+[k]
+
+[charaFace E 14]
+
+＠モレー
+舐めてかかってくれてもいいよ。[r]その隙を見逃さないからさ！　そーゆーこと。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[wt 1.0]
+
+
+
+
+＠エリザベート
+……何ですって？
+[k]
+
+[charaFace C 7]
+
+＠エリザベート
+聞いたわよ。
+[k]
+
+＠エリザベート
+コイツ、[#私:アタシ]のことバカにしたわよね。[r]お城を乗っ取ったあげく、その物言い！
+[k]
+
+
+[charaFace C 2]
+
+＠エリザベート
+許さないっていうか、[r]元々許すつもりなんかこれっぽちもないけど、
+[k]
+
+＠エリザベート
+大拷問！　大決定！
+[k]
+
+？1：エリちゃん！
+？！
+
+[charaFace C 7]
+
+＠エリザベート
+なによ。
+[k]
+
+？1：エリちゃん唄うの忘れてる！
+
+[charaFace C 2]
+
+＠エリザベート
+はっ！
+[k]
+
+[charaFaceFade C 13 0.2]
+
+＠エリザベート
+そうだったわ～♪[r]今回の[#私:アタシ]は～ミュージカルアイドル～♪
+[k]
+
+？2：もう１人のエリちゃんが人質のまま、だからね！
+
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+＠ゼノビア
+そうだな。[r]あまり挑発しては危険だ、エリザベート。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.1 1]
+＠エリザベート
+そ、それもそうだったわ～♪[r]気を付けなきゃ～♪
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+＠ゼノビア
+もう１人のエリザベートは……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[cameraMove 1.0 50,-15 1.15]
+[wt 2.5]
+
+[cameraHome 1.5]
+[wt 2.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ゼノビア
+奥の玉座でぐっすり眠っているようだな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+＠モレー
+ええ。ご心配なくー。
+[k]
+
+＠モレー
+暇だから～寝るわ～♪　とおっしゃったので[r]お望みどおりにさせているだけで。
+[k]
+
+＠モレー
+[#手枷足枷:てかせあしかせ]も無し、拷問も不要。[r]至極丁重に扱っております。
+[k]
+
+[charaFace E 1]
+
+＠モレー
+一応、お城のお姫様ですから。[r]こんなんでも。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠エリザベート
+こんなんでもとかアンタ～♪[r]とことん生意気な～スタイルでいく気ね～♪
+[k]
+
+[charaFace C 11]
+
+＠エリザベート
+ちょっとだけ方向性～♪[r][#私:アタシ]と被ってる気がして～腹立つわ～♪
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_MAP_35 2.0 0.7]
+
+[charaTalk E]
+[charaFace E 17]
+[charaFadein E 0.1 1]
+[wt 1.0]
+[charaFace E 11]
+
+＠モレー
+か……[r]かぶってますかー、あたし！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+＠ゼノビア
+さ、さあ……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+＠モレー
+アイドル路線とか目指してるわけじゃなし、[r]こちとらパリの中心で呪いを叫ぶほうだってのに……
+[k]
+
+＠モレー
+この人にかぶるとか言われると、[r]ど、動揺を抑えきれねー。
+[k]
+
+[charaFace E 2]
+
+＠モレー
+お、の、れ。[bgmStop BGM_MAP_35 2.0]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.2 1]
+[wt 1.5]
+[charaFadeout B 0.4]
+[wt 0.5]
+
+[overlayFadein Q 0.1 0,-800]
+[overlayFadein R 0.1 0,800]
+
+[charaMove Q 0,-745 0.5]
+[charaMove R 0,745 0.5]
+[wt 0.6]
+
+[charaTalk depthOff]
+[charaDepth B 6]
+[charaDepth A 4]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadeinFSR B 0.4 256,-50]
+
+[charaFace A 0]
+[charaFadeinFSL A 0.4 -256,-50]
+[wt 0.5]
+
+[bgm BGM_EVENT_90 0.1]
+
+＠モードレッド
+（なあ、ナポ公）
+[k]
+
+＠モードレッド
+（色々語っちゃいるがこいつ、[r]　一貫して根っこに余裕がありやがる）
+[k]
+
+＠モードレッド
+（何か裏ねえか？）
+[k]
+
+[charaFace A 8]
+
+＠ナポレオン
+（ありそうだ）
+[k]
+
+＠ナポレオン
+（城内に侵入されても、[r]　大して顔色を変えちゃいない）
+[k]
+
+＠ナポレオン
+（まず間違いなく仕掛けがある。[r]　でなけりゃ本物のバカだ）
+[k]
+
+[charaFace B 0]
+＠モードレッド
+（だろ）
+[k]
+
+[charaFace A 6]
+
+＠ナポレオン
+（ま、警戒はするさ。そっちも頼む）
+[k]
+
+[messageOff]
+[charaFadeout A 0.2]
+[charaFadeout B 0.2]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.2 0,-50]
+[charaFadeTime H 0.2 0.5]
+[wt 1.0]
+
+[charaFace A 8]
+
+＠ナポレオン
+（……しかし、ジャック・ド・モレーか）
+[k]
+
+＠ナポレオン
+（テンプル騎士団最後の総長。[r]　団の本拠地、パリのタンプル塔は血に濡れすぎた）
+[k]
+
+[charaFace A 10]
+
+＠ナポレオン
+（なんでまあオレがブッ壊した訳だが）
+[k]
+
+＠ナポレオン
+（そのへん謝る筋合いは[line 3]）
+[k]
+
+[charaFace A 0]
+
+＠ナポレオン
+（まあ、ないな！）
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout H 0.2]
+[wt 0.1]
+
+[charaMove Q 0,-800 0.6]
+[charaMove R 0,800 0.6]
+[wt 0.8]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠エリザベート
+小悪魔系とかべつに自称しないけど～♪[r]他の誰かが～やろうとしてるの～見てると～♪
+[k]
+
+[charaFace C 11]
+
+＠エリザベート
+イラッとするわ～♪[r]イラッとするの～♪
+[k]
+
+[charaFace C 2]
+
+＠エリザベート
+ってことでジャック・ド・モレー！[r]ついに追い詰めたわよ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+[wt 1.0]
+
+[charaFaceFade E 0 0.2]
+[wt 0.4]
+
+＠モレー
+ほんとにー？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠エリザベート
+（[messageShake 0.05 2 2 0.3]イラッ）
+[k]
+
+？1：あっ！
+？2：エリちゃん！？
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠ゼノビア
+ふむ。[r]本気で苛ついてないか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_90 1.5 0.8]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠エリザベート
+……。[r]……。
+[k]
+
+[charaFaceFade C 16 0.2]
+
+＠エリザベート
+……だ……
+[k]
+
+＠エリザベート
+……だいじょうぶよ～♪[r][#私:アタシ]はアイドル、ミュージカルアイドル～♪
+[k]
+
+[charaFace C 14]
+
+＠エリザベート
+どんな時だって、唄って踊って♪[r]楽しくいくのよ～♪
+[k]
+
+[bgmStop BGM_EVENT_90 2.0]
+
+＠エリザベート
+さあ、お城を乗っ取った悪い魔女～♪[r]もう１人の[#私:アタシ]を返してちょうだいな～♪
+[k]
+
+[charaFace C 9]
+
+[bgm BGM_BATTLE_46 0.1]
+
+＠エリザベート
+いやだと言うなら～♪[r][#私:アタシ]のナイトたちが～黙っておかないの～♪
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠モードレッド
+だとさ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠ナポレオン
+はっはっは。[r]ナイトとは、嬉しいことを言ってくれる。
+[k]
+
+[charaFace A 2]
+＠ナポレオン
+淑女の期待には無論応えよう！　[line 3]オーララ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+＠モレー
+ウーララ！[r]威勢がおよろしいことで、皇帝陛下！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ナポレオン
+面識はないがこちらこそだ総長殿！[r]生前から女性だったのか？
+[k]
+
+＠ナポレオン
+同じフランスの英霊同士、[r]語ることがないでもないが[line 3]
+[k]
+
+＠ナポレオン
+今は敵味方！[r]ここは突破させてもらう！
+[k]
+
+[charaFace A 2]
+＠ナポレオン
+[f large]いくぞ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad442]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ゼノビア
+我が国の平穏のため！[r]手加減はしない！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+＠モードレッド
+嫌な予感がするが……[wt 1.0][charaFace B 2]やるしかねえか！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 28]
+[charaFadein E 0.1 1]
+＠モレー
+ふっふふふ、母と仔と堕落の[#御名:みな]において！[r]いざ、お相手つかまつる！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_46 0.4]
+[wait fade]
+[soundStopAll]
+[end]

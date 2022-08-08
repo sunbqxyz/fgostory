@@ -1,0 +1,507 @@
+
+
+
+＄94-03-35-30-5-0
+
+[soundStopAll]
+
+[charaSet A 3033001 1 希露德]
+[charaSet B 3033001 1 希露德_剪影]
+[charaFilter B silhouette FFFFFFFF]
+
+[charaSet C 3033002 1 斯露德]
+[charaSet D 3033002 1 斯露德_剪影]
+[charaFilter D silhouette FFFFFFFF]
+
+[charaSet E 3033000 1 奥特琳德]
+[charaSet F 3033000 1 奥特琳德_剪影]
+[charaFilter F silhouette FFFFFFFF]
+
+[equipSet H 9806950 1 情人节礼装]
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66800]
+[branch lblConf]
+[label lblNotClear]
+[scene 10400]
+[label lblConf]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad8]
+[wt 1.5]
+
+[se ad95]
+[seVolume ad95 0 0.3]
+[wt 0.5]
+[seVolume ad95 1.5 0.5]
+[wt 2.0]
+[seStop ad95 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠斯露德
+[tVoice ValVoice_303300 0_V010]
+[line 3]御主。[wait tVoice]
+[k]
+
+＠斯露德
+[tVoice ValVoice_303300 0_V020]
+可以稍微占用一下您的时间吗？[wait tVoice]
+[k]
+
+＠斯露德
+[tVoice ValVoice_303300 0_V030]
+我明白今天是节日。[r]但我希望您能给我们几分钟时间。[wait tVoice]
+[k]
+
+＠斯露德
+[tVoice ValVoice_303300 0_V040]
+请您判断。[r]御主。[wait tVoice]
+[k]
+
+？1：嗯，行啊。
+
+[charaFace C 1]
+
+＠斯露德
+[tVoice ValVoice_303300 0_V050]
+十分感谢。[wait tVoice]
+[k]
+
+[charaFace C 0]
+
+？2：我允许……这样说就行了吧？
+
+＠斯露德
+[tVoice ValVoice_303300 0_V060]
+是。感谢您的确认。[wait tVoice]
+[k]
+
+？！
+
+＠斯露德
+[tVoice ValVoice_303300 0_V070]
+那么，请恕我失礼了。[wait tVoice]
+[k]
+
+[messageOff]
+[se bac24]
+[charaEffect C bit_talk_easy_spell_r]
+[wt 2.0]
+
+[wipeout openEye 0.5 0.7]
+[wait wipe]
+[wt 0.7]
+[wipein openEye 0.3 0.7]
+[wait wipe]
+[wt 0.1]
+[wipeout openEye 0.2 0.5]
+[wait wipe]
+[wt 0.5]
+[wipein openEye 0.5 0.7]
+[wait wipe]
+[wt 1.0]
+
+？1：咦，好困啊……
+？2：这是……
+
+？！
+
+＠斯露德
+[tVoice ValVoice_303300 0_V080]
+我刻下了睡眠的卢恩。效果非常轻微。[r]我们会在睡眠中进行数分钟的接触。[wait tVoice]
+[k]
+
+＠斯露德
+[tVoice ValVoice_303300 0_V090]
+晚安。[r]御主。[wait tVoice]
+[k]
+
+[messageOff]
+[wipeout openEye 1.0 0.7]
+[bgmStop BGM_EVENT_77 2.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[scene 10000]
+
+[wt 1.0]
+
+[wipein openEye 0.5 0.7]
+[wait wipe]
+[wt 1.0]
+
+[charaTalk off]
+
+[charaDepth F 2]
+[charaDepth E 1]
+
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 1.4]
+
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.1]
+[charaFadeout F 0.7]
+[wt 1.0]
+
+＠奥特琳德
+[tVoice ValVoice_303300 0_V100]
+…………御主。御主？[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaDepth B 2]
+[charaDepth A 1]
+
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 1.4]
+
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[charaFadeout B 0.7]
+[wt 1.0]
+
+＠希露德
+[tVoice ValVoice_303300 0_V110]
+啊，连上了。喂～，御主！[r]能看到吗？[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth D 2]
+[charaDepth C 1]
+
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 1.4]
+
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.1]
+[charaFadeout D 0.7]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk C]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠斯露德
+[tVoice ValVoice_303300 0_V120]
+……抱歉。[r]看您那么忙碌，所以才打算缩短时间。[wait tVoice]
+[k]
+
+＠斯露德
+[tVoice ValVoice_303300 0_V130]
+尽管现实中也可以将我们的灵基分割为三份，[r]但那样会给您和召唤系统带来负担。[wait tVoice]
+[k]
+
+＠斯露德
+[tVoice ValVoice_303300 0_V140]
+所以像这样。为求魔力消耗降到最低，[r]我们便通过精神与您接触[line 3][wait tVoice]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠希露德
+[tVoice ValVoice_303300 0_V150]
+不要说那些难懂的话啦。[r]时间也不多，先把东西送出去吧！[wait tVoice]
+[k]
+
+＠希露德
+[tVoice ValVoice_303300 0_V160]
+而且还想送布伦希尔德姐姐大人一份！[r]快点快点！[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠奥特琳德
+[tVoice ValVoice_303300 0_V170]
+那个，御主。[r]今天是……[wait tVoice]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠希露德
+[tVoice ValVoice_303300 0_V180]
+情人节。对吧？[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠奥特琳德
+[tVoice ValVoice_303300 0_V190]
+……没错。据说这是传达心意的节日。[wait tVoice]
+[k]
+
+
+＠奥特琳德
+[tVoice ValVoice_303300 0_V200]
+虽然不知道您是否具备勇士的灵魂，[r]但至少……[wait tVoice]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+
+＠斯露德
+[tVoice ValVoice_303300 0_V210]
+您是通过战斗开辟未来之人。[r]现在的我们，以侍奉您这样的人为荣。[wait tVoice]
+[k]
+
+＠斯露德
+[tVoice ValVoice_303300 0_V220]
+所以说，[r]这是我们送给您的[line 3][wait tVoice]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠希露德
+[tVoice ValVoice_303300 0_V230]
+礼物！[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠奥特琳德
+[tVoice ValVoice_303300 0_V240]
+是的。[r]只是微不足道的礼物，还请您收下。[wait tVoice]
+[k]
+
+[messageOff]
+
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se bas2]
+[charaFace H 0]
+[charaFadein H 0.5 0,-70]
+[wt 2.0]
+
+[charaFadeout H 0.4]
+[wt 0.5]
+
+？1：谢谢。
+
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+[wt 1.5]
+
+
+？2：这是以布伦希尔德为……？
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠奥特琳德
+[tVoice ValVoice_303300 0_V250]
+…………对。没错。[wait tVoice]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠斯露德
+[tVoice ValVoice_303300 0_V260]
+我们是女武神，[r]并不会像人类那样按好恶决定优先度。[wait tVoice]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠希露德
+[tVoice ValVoice_303300 0_V270]
+但非要说的话，非要说的话哦。[r]我们深爱着姐姐大人！[wait tVoice]
+[k]
+
+＠希露德
+[tVoice ValVoice_303300 0_V280]
+这是边想着姐姐大人边做出来的甜点！[r]特别也给您一份同样的哦。[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+？！
+
+＠奥特琳德
+[tVoice ValVoice_303300 0_V290]
+[line 3]就是这样。[r]相同的东西已经放在您房间内的桌上了。[wait tVoice]
+[k]
+
+
+＠奥特琳德
+[tVoice ValVoice_303300 0_V300]
+御主，感谢您拨冗前来。[wait tVoice]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠斯露德
+[tVoice ValVoice_303300 0_V310]
+那祝您能充实地度过今天这个节日。[wait tVoice]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠希露德
+[tVoice ValVoice_303300 0_V320]
+拜拜啦！[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout white 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 66800]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10400]
+[label lblConf2]
+
+[wt 0.1]
+
+[wipein openEye 2.0 1.0]
+[wait wipe]
+
+
+[wt 2.0]
+
+[se ad77]
+[wt 1.0]
+
+？1：（确认桌子上。）
+
+？！
+
+[se bas2]
+[charaFace H 0]
+[charaFadein H 0.5 0,-70]
+[wt 2.0]
+
+[charaFadeout H 0.4]
+[wt 0.5]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

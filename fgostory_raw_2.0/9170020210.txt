@@ -1,0 +1,130 @@
+＄91-70-02-02-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 10202]
+[charaSet A 8001000 2 玛修]
+[charaSet B 98003000 0 Dr.罗曼]
+[charaSet C 98002000 2 芙芙]
+[charaSet D 7002001 1 兰斯洛特]
+[charaSet E 98013000 1 杂兵]
+[charaSet F 98006000 1 兽人]
+[charaTalk A]
+[charaFace B 0]
+[charaFadein B 0]
+[charaFace A 6]
+[charaFadein A 0]
+[fadein black 1]
+[wait fade]
+＠玛修
+兰斯洛特先生的真面目……吗？
+[k]
+
+＠Dr.罗曼
+嗯，他总是带着那个看上去很闷热的头盔吧？[r]你难道不在意他的真面目吗？
+[k]
+
+？1：在意，当然在意。
+
+？2：是帅哥吗？
+
+？！
+
+[charaFadeout A 0.1]
+[charaFace C 0]
+[charaFadein C 0.1 2]
+＠芙芙
+芙呜？
+[k]
+
+[charaFace B 1]
+＠Dr.罗曼
+那还用问吗，一说骑士就能想到兰斯洛特！[r]他可是备受全世界女性欢迎的英灵啊。
+[k]
+
+[charaFadeout C 0.1]
+[charaFace A 4]
+[charaFadein A 0.1]
+＠玛修
+哈……[r]但是要如何才能脱下他的头盔呢？
+[k]
+
+[charaFace B 0]
+＠Dr.罗曼
+作战其１『战斗中，不小心手滑！！』[r]来，卯足了劲试试看吧！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[charaFadeout A 0.5]
+[charaFadeout B 0.5]
+[wt 0.5]
+[scene 20300]
+[communicationChara 98003003 1 5 0 0]
+[fadein black 0.5]
+[wait fade]
+＠Dr.罗曼
+那我这就启动训练用模拟战斗程序了。[r]准备好了吗？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace A 7]
+[charaFadein A 0.1 2]
+＠兰斯洛特
+…………
+[k]
+
+＠玛修
+（总觉得像是被骗了，但是……）[r]……明白了，医生，随时都可以。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 1]
+＠Dr.罗曼
+用的是训练用拟似从者体，[r]没有危险，放心吧。
+[k]
+
+[communicationCharaFace 0]
+＠Dr.罗曼
+（虽说我已经把能力设定成最高值了）
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 7]
+[charaFadein A 0.1 2]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+＠玛修
+那我上了，御主。
+[k]
+
+？1：好，加油，争取能看到！！
+
+？2：是不小心把他的头盔拉下来吗？
+
+？！
+
+[charaFace A 6]
+＠玛修
+前辈！！　嘘，嘘！！
+[k]
+
+[se ad1]
+[wait se ad1]
+[charaFace D 2]
+＠兰斯洛特
+[image berserker_language_2][line 2]！！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_2 0.4]
+[wait fade]
+[soundStopAll]
+[end]

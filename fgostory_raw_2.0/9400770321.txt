@@ -1,0 +1,178 @@
+
+＄94-00-77-03-1-1
+[soundStopAll]
+[charaSet A 8001001 1 玛修]
+[charaSet B 98003003 1 Dr.罗曼]
+[charaSet C 1010000 1 伊丽莎白]
+[charaSet D 2003001 1 罗宾汉]
+[charaSet E 5012001 1 尼托克丽丝]
+
+[bgm BGM_EVENT_2 0.1]
+[scene 20805]
+[wt 0.7]
+[fadein black 1.5]
+[wait fade]
+[charaTalk C]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein D 0.4 0]
+[charaFadein C 0.4 2]
+＠伊丽莎白
+这样就能[#招募:Scout]到[#斥候:Scout]了吧！[r]你会守约吧？
+[k]
+
+
+＠罗宾汉
+知道啦～。[r]然后呢，该怎么办？　现在就冲进去吗？
+[k]
+
+
+＠伊丽莎白
+不，我还想要一个人。
+[k]
+
+？1：四人组队才是基本嘛。
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+是……是这样吗？[r]我还以为六人组队才是基本……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠伊丽莎白
+不管怎么说，都得招揽到魔术师才行哦，[&小狗崽:小鹿崽]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？2：是魔术师！
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠伊丽莎白
+没错，[&小狗崽:小鹿崽]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠罗宾汉
+唉。招募魔术师啊……[r]算了，无所谓啦。
+[k]
+
+＠罗宾汉
+我心里也不是没有人选啦……[r]唉……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+有什么问题吗？
+[k]
+
+[charaFace A 4]
+＠玛修
+难道是精神崩溃，爱做沙盒模型，[r]直流与交流之争，或是召唤[#在天空飞行的圆盘:Flying Saucer]的问题……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠罗宾汉
+……虽然那些确实也挺成问题的。[r]因为很像啊。
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 1]
+
+＠Dr.罗曼
+很像？　像什么？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk D]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFadein C 0.1 2]
+＠罗宾汉
+（无言地指指）。
+[k]
+
+＠伊丽莎白
+像我？
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.7]
+[scene 20115]
+[bgm BGM_EVENT_5 0.3]
+[fadein black 1.0]
+[wait fade]
+[wt 0.4]
+
+[charaFilter E silhouette 00000080]
+[charaFadein E 0.4 1]
+
+＠？？？
+……啊！[charaShake E 0.05 5 5 0.7][r]我刚才突然有一种灾厄就要到来的预感……！
+[k]
+
+＠？？？
+不过临阵脱逃不是法老应有的觉悟。
+[k]
+
+＠？？？
+无论那是何等灾厄，[r]我都要认真迎击才行……！
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_5 1.4]
+[wait fade]
+[charaFadeout E 0.1]
+[soundStopAll]
+[end]
+

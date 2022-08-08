@@ -1,0 +1,229 @@
+
+＄03-00-09-15-6-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1049000 1 村正]
+[charaSet B 1098124500 1 达·芬奇]
+[charaSet C 5045001 1 阿尔托莉雅]
+[charaSet D 1098216200 1 哈贝特洛特]
+[charaSet E 1098209500 1 白狼]
+[charaSet F 5021000 1 贤者格里姆]
+
+[charaSet G 98006200 1 杂兵烟状]
+[charaSet H 98006200 1 杂兵烟状]
+
+[imageSet J back10000 1 1]
+[charaScale J 1.05]
+
+[imageSet K back10000 1 1]
+[charaFilter K silhouette 72777DFF]
+[charaScale K 1.01]
+
+[sceneSet L 129400 1]
+[charaScale L 1.4]
+
+
+[charaSet S 98115000 1 特效用]
+[charaSet T 98115000 1 特效用]
+
+[charaPut S 1]
+[charaEffect S bit_talk_fog_side]
+
+
+[scene 10001]
+
+[charaFadein K 0.1 0,-200]
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.3]
+
+[charaEffectStop S bit_talk_fog_side]
+[wt 0.1]
+
+[se ad951]
+[se ade283]
+[seVolume ade283 0 0.4]
+[wt 1.8]
+
+[fadeout white 0.8]
+[wait fade]
+
+[effect bit_talk_snow]
+[wt 2.0]
+
+[seStop ad951 3.0]
+[fadein white 3.0]
+[wait fade]
+[wt 1.0]
+
+[effectStop bit_talk_snow]
+[wt 0.5]
+
+[scene 120001 2.0]
+[charaFadeout K 2.0]
+[wt 2.5]
+
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠达·芬奇
+来到屋顶了……！[r]确实有撞钟堂！　而且[line 3]
+
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_142 1.5]
+
+[charaFadein L 1.5 0,-150]
+[charaMove L 0,-380 7.0]
+[wt 3.0]
+[scene 129400]
+[wt 2.0]
+[charaFadeout L 2.0]
+
+[wt 3.0]
+
+？1：玛修！
+？2：那是……被冰封印了……？
+
+？！
+
+[scene 120001 1.5]
+[wt 1.9]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠哈贝特洛特
+[line 6]。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠贤者格里姆
+嗯，从妖精历400年一直到今天。[r]这是2400年间一直在此的『棺柩』。
+[k]
+
+？1：2400年！？　究竟是为什么！？
+
+？！
+
+＠贤者格里姆
+这你就问小妹妹本人吧。[r]我也不知道相关的缘由。
+[k]
+
+＠贤者格里姆
+根据初代格里姆留下来的[#情报:笔记]，[r]只要御主一触碰，『棺柩』的魔术便会解开。
+[k]
+
+＠贤者格里姆
+从你抵达这里的那刻起，[r]便已成功与小妹妹会合了。
+[k]
+
+[bgmStop BGM_EVENT_142 1.0]
+
+＠贤者格里姆
+只不过[line 3]
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.6]
+
+[charaTalk off]
+[charaDepth S 4]
+[charaDepth T 5]
+[charaDepth G 6]
+[charaDepth H 7]
+
+[cueSe SE_21 21_ade582]
+[seVolume 21_ade582 0 0.5]
+[charaFadeinFSR G 1.0 2]
+[charaFadeinFSL H 1.0 0]
+[wt 1.0]
+
+[se ad951]
+[seVolume ad951 0 0]
+[seVolume ad951 1.0 1.0]
+[wt 1.6]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPutFSR S 2000,2500]
+[charaPutFSL T 2000,2500]
+[charaEffectStop S bit_talk_06b]
+[charaEffectStop T bit_talk_06b]
+
+[charaTalk on]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠贤者格里姆
+看来还有一道障碍呢。[r]不想办法解决它们，我们就靠近不了『棺柩』和钟。
+[k]
+
+＠贤者格里姆
+要动真格哦，阿尔托莉雅。[r]除了你，没有人能对付得了它们。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+＠阿尔托莉雅
+[line 6]。
+[k]
+
+[charaFace C 25]
+＠阿尔托莉雅
+……可以吗，哈贝特洛特。[r]它们在呼唤你的名字啊。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠哈贝特洛特
+只是你听错了而已。[r]干掉它们吧，阿尔托莉雅。
+[k]
+
+[seStop ad951 3.0]
+
+＠哈贝特洛特
+这里是奥克尼的圣域，[r]是内心温良的妖精们心爱的露台。
+[k]
+
+＠哈贝特洛特
+不该一直被亡灵盘踞。[r]事情早在很久很久以前，就结束了。
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

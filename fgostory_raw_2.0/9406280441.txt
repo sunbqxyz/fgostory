@@ -1,0 +1,678 @@
+
+＄94-06-28-04-4-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 4046000 1 エリザベート]
+[charaSet B 2045000 1 ゼノビア]
+[charaSet C 1009001 1 モードレッド]
+[imageSet D back10000 1 1]
+[charaSet E 2031001 1 ナポレオン]
+[charaSet F 3016001 1 ヘクトール]
+[charaSet G 1098224100 1 モレー]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[charaScale D 1.1]
+
+[charaTalk depthOff]
+[charaDepth D 2]
+[charaDepth A 3]
+[charaDepth F 4]
+[charaDepth B 5]
+[charaDepth E 6]
+[charaDepth C 7]
+
+[scene 136900]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_80 0.1]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+そして怪物は～真っ二つよ～[r]手足がなくなってバーラバラ～♪
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠モードレッド
+残念ながら死んでねえよ。[r]耐久の限界を超えてブッ倒れただけだ。
+[k]
+
+＠モードレッド
+瀕死の重傷ってヤツだが、[r]グレンデルなら問題ねえだろうさ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[bgmStop BGM_EVENT_80 1.5]
+
+＠グレンデル
+ぐえー。
+[k]
+
+[messageOff]
+[cueSe Battle bac234]
+[shake 0.05 1 4 1.0]
+[effect bit_talk_impactlanding]
+
+[wt 3.0]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+[charaShake F 0.05 2 2 0.6]
+[wt 1.0]
+[charaMove F 0,-10 0.2]
+[se ad54]
+[wt 0.8]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠ゼノビア
+勝負あり、だな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+[bgm BGM_EVENT_70 0.1]
+
+＠ヘクトール
+いやー、よくバッサリとやってくれた。[r]これでオジサンもおおっぴらに退職できるわ。
+[k]
+
+[charaFace F 0]
+
+＠ヘクトール
+グレンデルも殺さなかったのか。
+[k]
+
+＠ヘクトール
+まあ、どこかの不定形生物にグレンデルって[r][#忌名:いみな]を押しつけただけの代物だ。
+[k]
+
+＠ヘクトール
+放置しておいても問題はないぜ。[r]駆除してもいいけどな。
+[k]
+
+？1：[&放っておこうか:放っておくよ]
+？！
+
+[messageOff]
+[charaFace F 1]
+[wt 1.2]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 5]
+[charaFadeinFSR C 0.1 2]
+
+[charaFace B 10]
+[charaFadeinFSL B 0.1 0]
+[wt 1.5]
+
+[charaTalk on]
+
+＠モードレッド
+悪意がある以上、駆除しておいても[r]いいと思うが[line 3]
+[k]
+
+[charaFace C 9]
+
+＠モードレッド
+まあいい、[r]それはオレの役割じゃねえからな。
+[k]
+
+[charaFace C 5]
+
+＠モードレッド
+ゼノビアだっけか？[r]おまえはどうなんだ？
+[k]
+
+＠ゼノビア
+[%1]とは、
+[k]
+
+＠ゼノビア
+あくまでこの特異点解消までの[r]付き合いのつもりだが……。
+[k]
+
+[charaFace C 0]
+
+＠ゼノビア
+不必要な殺害を認めるのは、[r]女王としては愚行だと考える。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+本音はどうかしら～♪
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠ゼノビア
+いいんじゃないか？
+[k]
+
+＠ゼノビア
+あれがまた暴れ出したら、[r]ヘクトールが責任を持って抑える。
+[k]
+
+[charaFace B 9]
+
+＠ゼノビア
+そうだろう？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ヘクトール
+へいへい。
+[k]
+
+＠ヘクトール
+ヘンゼルお兄さんとして、[r]ちゃんと責任持ちますよっと。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠ゼノビア
+……さて、話が[#纏:まと]まったところで、[r]おまえに尋ねたいことがある。
+[k]
+
+＠ゼノビア
+ジャック・ド・モレーとこの特異点について、[r]何か知っていることはないか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+何もかも話してスッキリしましょう～♪[r]さもないとオアダイ～♪
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.5]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ヘクトール
+ああ、そうだな。[r]もう敗北したことだし、言っちまってもいいか。
+[k]
+
+[charaFace F 4]
+
+＠ヘクトール
+あとそこのシンデレラさんは[r]脅さなくてもいいから。
+[k]
+
+[charaFace F 0]
+
+＠ヘクトール
+……もう理解していると思うけどさ、[bgm BGM_EVENT_145 0.8 0.9][r]この特異点は童話の世界をモチーフにしてるんだよね。
+[k]
+
+？1：あー……やっぱり
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+やっぱり～そうなのね～♪
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠ゼノビア
+童話の世界、か……。[r]砂漠の時は[line 3]アリババと４０人の盗賊で。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠モードレッド
+この森は……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadeinFSR A 0.1 2]
+
+[charaFace C 4]
+[charaFadein C 0.1 0]
+
+＠エリザベート
+白雪姫よ～♪[r]７人のドワーフならぬ７人のイケメンね～。
+[k]
+
+[charaFace C 9]
+
+＠モードレッド
+イケメンねぇ。[r]……イケメンか、アイツら？
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠ナポレオン
+ハハハハハ、[r]オレはそう思っていたがな！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ヘクトール
+で、そこのお姫様。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadeinFSR A 0.1 2]
+
+[charaFace F 0]
+[charaFadein F 0.1 0]
+
+＠エリザベート
+[#私:アタシ]ね～♪
+[k]
+
+[charaFace F 4]
+[charaFadeTime D 0.2 0.5]
+
+＠ヘクトール
+（何で唄うの？）
+[k]
+
+[charaFadeout D 0.2]
+[wt 0.1]
+[charaFace F 0]
+
+＠ヘクトール
+……アンタはシンデレラであり、[r][#白雪姫]でもあり[#赤ずきん]でもある。
+[k]
+
+＠ヘクトール
+メルヘンにおける[#お姫様:プリンセス]、[r]それが本来のアンタの役割だ。
+[k]
+
+＠ヘクトール
+……いや赤ずきんはお姫様じゃないな。[r]まあ、ざっくりね。ざっくり。
+[k]
+
+＠ヘクトール
+何で分裂したかって？[r]そこまではオジサン知らない。
+[k]
+
+[charaFace A 16]
+
+＠エリザベート
+じゃあ～あの城で捕まっている[#私:アタシ]は～[r]囚われのお姫様なのね～♪
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ヘクトール
+足止めのために召喚されたオジサンが[r]知っているのはこの位さ。
+[k]
+
+？1：ありがとう、ヘクトール
+？！
+
+＠ヘクトール
+どういたしましてっと。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠モードレッド
+さて、と。それじゃあカルデアのマスター。
+[k]
+
+＠モードレッド
+森は切り開いたぜ。[r]さあ、どうする？
+[k]
+
+？1：よし、行こう！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠全員
+[f large]おーう！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_145 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[wt 1.0]
+
+[pictureFrame cut063_cinema]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+
+＠ヘクトール
+ふぁぁ……。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad969]
+[effect bit_talk_29_black]
+[se ad960]
+[fadeout white 1.0]
+[wait fade]
+
+[charaPut H 0,-50]
+
+[charaEffect H bit_talk_10_violet]
+[wt 0.8]
+[charaTalk G]
+[charaFace G 14]
+[charaFadein G 0.4 0,-50]
+
+[fadein white 3.0]
+[wait fade]
+
+[bgm BGM_EVENT_129 0.1]
+
+＠モレー
+はいヘンゼルくん、[r]メルシーメルシーありがとねー。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 2000,2000]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+
+＠ヘクトール
+……いきなりのご登場かよ。[r]しかし負けちまったが、いいのかい？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut H 0,-50]
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 0,-50]
+
+＠モレー
+いいのいいの！[r][#バッチリ仕事はこなしてくれたしね]。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 2000,2000]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 0,-50]
+
+＠ヘクトール
+へーえ。そいつは重畳。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut H 0,-50]
+[charaTalk G]
+[charaFace G 31]
+[charaFadein G 0.1 0,-50]
+
+＠モレー
+[#おっと:ウップス]。
+[k]
+
+[charaFace G 8]
+
+＠モレー
+まだマスター権はあたしに[r]残っていること、忘れないでねー？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 2000,2000]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 0,-50]
+
+＠ヘクトール
+へいへい。[r]ま、オジサンにできることは何もないけどね。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut H 0,-50]
+[charaTalk G]
+[charaFace G 14]
+[charaFadein G 0.1 0,-50]
+[wt 1.0]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaEffectStop H bit_talk_10_violet]
+[se ad1]
+[wt 1.0]
+
+
+[bgmStop BGM_EVENT_129 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[pictureFrame]
+
+[wt 1.0]
+
+[scene 134500]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_MAP_4 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠モードレッド
+さて、と。
+[k]
+
+＠モードレッド
+森を抜けて辿り着いた街には、[r]人っ子１人いやしねえ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+ハロウィンなのに～♪[r]トリック・オア・トリートもないなんて～♪
+[k]
+
+[charaFace A 9]
+
+＠エリザベート
+……ハロウィン舐めてるわね、[r]あのモレーって女。
+[k]
+
+[charaFace A 10]
+
+＠エリザベート
+[#血まみれ:ミートソース]な～♪[r]拷問をかけてあ～げ～る～♪
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠ナポレオン
+凄い歌だな！
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_4 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+[wt 1.0]
+
+[charaSet G 25010002 1 モレー]
+
+[pictureFrame cut063_cinema]
+
+[scene 137200]
+
+[fadein black 1.5]
+[wait fade]
+
+＠エリザベート
+スヤァ……。
+[k]
+
+[charaTalk G]
+[charaFace G 17]
+[charaFadein G 0.1 0,-50]
+
+[bgm BGM_MAP_10 0.1]
+
+＠モレー
+ふぅ、暴れ出したときは[r]どうなることかと……。
+[k]
+
+[charaFace G 12]
+
+＠モレー
+さーて……[#白馬の王子様]が、[r]早く彼女を助けに来てくれないと。
+[k]
+
+[charaFace G 11]
+
+＠モレー
+とっても困ったことになるかもよ？[r]あたしが。
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_10 1.5]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,265 @@
+
+
+
+＄03-00-06-18-3-1
+
+
+
+
+
+[soundStopAll]
+
+[charaSet A 1017002 1 武藏]
+[charaSet B 8001410 1 玛修]
+[charaSet C 1098191200 1 阿黛勒]
+[charaSet D 1098191300 1 马卡里俄斯]
+[charaSet E 9005001 1 福尔摩斯]
+[charaSet F 7010001 1 卡利古拉]
+[charaSet G 1098128200 1 凯妮斯]
+[charaSet H 8001400 1 玛修_有遮目镜]
+
+[charaSet S 5009000 1 特效用dummy]
+[charaSet T 5009000 1 特效用dummy]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 10000]
+
+[fadein black 0.3]
+[wait fade]
+
+[se bac308]
+[se bac307]
+[effect bit_talk_kengekiall02]
+[wt 0.2]
+[se bac308]
+[wt 0.8]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 91600]
+
+[se ad24]
+[fadein black 0.7]
+[wait fade]
+[wt 1.5]
+[se ad144]
+
+[wt 1.0]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[se bac305]
+[wt 1.8]
+[se bac306]
+[charaFace A 0]
+
+＠武藏
+……招待不周！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth H 2]
+
+[charaTalk off]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+[wt 0.5]
+[charaFace B 7]
+[charaFadein B 0 1]
+
+[se ade18]
+[seVolume ade18 0.0 0.5]
+[wt 0.5]
+[seStop ade18 0.8]
+[wt 1.5]
+
+[charaFadeout H 0.4]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[wt 1.2]
+
+[charaTalk on]
+
+＠玛修
+确认敌对个体全部消失！[r]到机神回廊最深处[line 3]
+[k]
+
+＠玛修
+大祭坛为止的路上没有敌影！
+[k]
+
+[charaFace B 4]
+
+＠玛修
+佩佩先生的身影……[r]已经消失不见了。
+[k]
+
+？1：我们一定会在其他地方重逢。毕竟佩佩先生乐于助人嘛。
+
+？！
+
+[charaFace B 13]
+
+＠玛修
+……是的。届时一定要为迄今为止的事向他道谢。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠卡利古拉
+启程吧。[r]双胞胎啊，准备启动大召唤器。
+[k]
+
+＠卡利古拉
+神妃欧罗巴的情况如何我们不得而知。[r]因此，会是与大神交战在先，
+[k]
+
+＠卡利古拉
+还是营救神妃在先……
+[k]
+
+＠卡利古拉
+事态会如何发展还无法确定！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth D 3]
+[charaDepth C 2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 -150,0]
+
+[charaFace C 0]
+[charaFadein C 0.1 150,0]
+
+＠马卡里俄斯
+我们知道。[r]对吧，姐姐。
+[k]
+
+[charaFace C 6]
+
+＠阿黛勒
+交给我吧。[r]我一定会成功启动埃忒耳。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠福尔摩斯
+走运的话，不，应该说不走运的话……？[r]无论如何，与大神宙斯的决战已迫在眉睫。
+[k]
+
+
+[messageOff]
+[charaFace E 8]
+[wt 1.2]
+[charaFace E 5]
+
+＠福尔摩斯
+做好思想准备了吗。[r]各位。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠凯妮斯
+还用得着你说吗！[r]第一个登上雷电混账祭坛的肯定是我啦！
+[k]
+
+？1：前往大祭坛！
+？2：冲出机神回廊！
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠玛修
+是，御主！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad429]
+[seVolume ad429 0 0.1]
+[seVolume ad429 0 0.4]
+[se ad632]
+[seVolume ad632 0 0.1]
+[seVolume ad632 1.0 0.3]
+[charaEffect G bit_talk_kaineus]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+＠凯妮斯
+[line 3]哈哈！　终于到弑杀大神的时间了！
+[k]
+
+[messageOff]
+[charaFaceFade G 6 0.3]
+[wt 1.2]
+
+
+
+
+
+[se ad442]
+[se ad881]
+[seVolume ad881 0 0.4]
+[wt 0.8]
+
+
+[charaFace G 19]
+
+＠凯妮斯
+该收尾了！[r]我可不管你是全能，还是万能！
+[k]
+
+＠凯妮斯
+宙斯！　我现在就过去！
+[k]
+
+
+[messageOff]
+[seStop ad429 2.0]
+[seStop ad632 2.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,1629 @@
+
+
+
+＄91-70-14-02-1-0
+
+[soundStopAll]
+[charaSet A 7014001 1 南丁格尔]
+[charaSet B 98001000 1 玛修]
+[charaSet C 11002002 1 岩窟王]
+[charaSet E 7022001 1 茨木童子]
+
+[charaSet G 7014001 1 剪影_南丁格尔]
+[charaFilter G silhouette 00000080]
+
+[charaSet D 5016001 1 特效用_茨木使用]
+[charaSet F 1001000 1 特效用_敌人使用]
+[charaSet H 98006200 1 敌人]
+
+[scene 20700]
+
+[cameraMove 0.1 0,0 1.01]
+[charaTalk off]
+
+[bgm BGM_EVENT_3 0.1]
+[fadein black 1.0]
+[wait fade]
+
+
+[se ad671]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[charaMove A 20,-5 0.1]
+[charaShake A 0.05 1 1 0.6]
+[wt 0.1]
+[charaMove A 40,-1 0.3]
+[wt 1.1]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad33]
+[effect bit_talk_kengekiall03]
+
+[wt 1.0]
+
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.03 3 3 0.4]
+[wt 0.5]
+
+
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[wt 0.1]
+
+[se ad7]
+[charaPut D 1]
+[charaMoveScale E 1.2 0.2]
+[charaMove E 0,10 0.2]
+[charaEffect D bit_talk_41]
+[charaFadeout E 0.2]
+[wt 0.2]
+[charaPut D 1200,1200]
+[charaEffectStop D bit_talk_41]
+[wt 0.2]
+
+[charaTalk depthOff]
+[charaDepth F 2]
+[charaDepth H 1]
+
+[charaPut F 1]
+[charaEffect F bit_talk_explosion]
+[wt 0.2]
+[shake 0.05 3 3 0.7]
+[seStop ad439]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[se ad63]
+[wt 3.0]
+[se ad42]
+[bgmStop BGM_EVENT_3 2.0]
+[charaSpecialEffect H enemyErasure 1 1.3]
+[wt 3.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 10000]
+[cameraMove 0.1 0,0 1.00]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_07_02]
+[se ad12]
+
+[charaSet D 5016001 1 杰罗尼莫]
+
+[scene 10000]
+[wt 6.5]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[fadeout black 0.1]
+[wait fade]
+
+[charaScale E 1.0]
+
+[scene 10200]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠玛修
+欢迎回来，前辈！
+[k]
+
+＠玛修
+其他人也是！[r]大家辛苦了！
+[k]
+
+[charaFace B 13]
+
+＠玛修
+根据观测，小型特异点正在顺利缩小。[r]这样一来就暂时可以放心了。
+[k]
+
+？1：事态没有扩大真是太好了。
+
+[charaFace B 1]
+
+＠玛修
+是啊。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[branch select01_end]
+
+？2：你也辛苦了！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+
+＠茨木童子
+呵，根本都用不着吾出手嘛！[r]哈哈哈！
+[k]
+
+＠茨木童子
+但是别忘了准备贡品哦？[r]该选什么贡品，吾想你们是明白的吧？
+[k]
+
+[charaFace E 1]
+
+＠茨木童子
+呵呵呵。绝对不可以抱着糊弄鬼的想法哦。[r]不然吾会趁机咬破你们的头颅，
+[k]
+
+[charaFace E 5]
+
+＠茨木童子
+并将你们的内脏扔得到处都是。[r]万万不要忘了这一点哦[line 3]
+[k]
+
+？！
+
+[branch select02]
+
+[label select02]
+
+？1：好的。
+
+？！
+
+[charaFace E 1]
+
+
+＠茨木童子
+哇哈哈，看来汝还是很懂分寸的嘛！[r]不错！
+[k]
+
+[messageOff]
+[charaFace E 4]
+[wt 1.0]
+[charaFace E 0]
+
+
+＠茨木童子
+……不过[#那个]的样子看起来有些奇怪啊。[r]你去想办法处理一下。
+[k]
+
+
+
+[messageOff]
+[se ade146]
+[seStop ade146 1.5]
+[charaMove E -100,0 0.8]
+[charaFadeout E 0.7]
+[wt 1.5]
+
+[label select01_end]
+
+？！
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠杰罗尼莫
+……御主。你注意到了吗？
+[k]
+
+＠杰罗尼莫
+刚才的战斗。虽然只是我的个人看法，[r]但她刚才好像确实只发挥了平时的一半实力。
+[k]
+
+？1：………你说她啊。
+
+？！
+
+
+＠杰罗尼莫
+没错，就是弗洛伦斯·南丁格尔。
+[k]
+
+＠杰罗尼莫
+可是她好像并没有受到什么异常状态，[r]我还是第一次看到她在战斗中如此没有干劲。
+[k]
+
+＠杰罗尼莫
+说不定她的灵基发生了某种异常。[r]必须处理一下这个问题吧。
+[k]
+
+＠杰罗尼莫
+以防万一，还是把这件事告诉达·芬奇比较好。
+[k]
+
+[messageOff]
+[se adm36]
+[seVolume adm36 0 0.2]
+[charaFadeout D 0.1]
+
+[bgmStop BGM_EVENT_2 1.2]
+[wt 0.3]
+[seVolume adm36 0.4 0.6]
+[wt 0.6]
+[seVolume adm36 0.4 1.0]
+[wt 0.8]
+[seStop adm36 0.1]
+
+[messageOff]
+[charaTalk off]
+
+[charaFace G 0]
+[charaFadein G 0.7 1]
+[wt 0.7]
+
+[charaTalk depthOff]
+[charaDepth G 2]
+[charaDepth A 1]
+
+
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[charaFadeout G 0.1]
+
+＠南丁格尔
+你们在说什么？
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[bgm BGM_EVENT_5 0.1]
+[charaTalk on]
+
+＠南丁格尔
+战斗？[r]我？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠杰罗尼莫
+……没错。[r]在敌人面前，你有两次一动不动。
+[k]
+
+
+＠杰罗尼莫
+要是放在平时这是根本不可能发生的吧。[r]你自己感觉到了吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠南丁格尔
+……[r]……
+[k]
+
+[messageOff]
+[charaFace A 6]
+[wt 1.0]
+[charaFace A 0]
+
+＠南丁格尔
+抱歉，我不明白你在说什么。[r]我是[#护士:Nurse]。不是士兵。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[wt 1.3]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+
+[bgmStop BGM_EVENT_5 0.7]
+[wt 1.0]
+[charaFace A 0]
+[bgm BGM_EVENT_11 0.1]
+
+＠南丁格尔
+当然，若是事态紧急那就另当别论了。
+[k]
+
+
+＠南丁格尔
+有时候也会出现救援物资在眼前[r]但身体却不动了的情况吧。
+[k]
+
+＠南丁格尔
+若是出现这种情况。[r]是啊。
+[k]
+
+
+＠南丁格尔
+我一定会亲手抹除所有障碍，[r]不择手段地前进吧。
+[k]
+
+＠南丁格尔
+即便开枪我也不会犹豫的。[r]嗯嗯，嗯嗯。
+[k]
+
+＠南丁格尔
+可是……
+[k]
+
+[messageOff]
+[charaFace A 4]
+[wt 1.0]
+[charaFace A 0]
+
+＠南丁格尔
+……那也就意味着我将亲手创造出新的伤者。[r]即便他们是敌人。
+[k]
+
+＠南丁格尔
+那并不是我的本愿。
+[k]
+
+＠南丁格尔
+听好了司令官。虽然我被称作小型军队，[r]但我绝不是军人。
+[k]
+
+
+＠南丁格尔
+我并不是想赢得战争。[r]我厌恶战争，我想要的不是战争胜利而是战争终结。
+[k]
+
+＠南丁格尔
+我啊……
+[k]
+
+[charaFace A 5]
+
+＠南丁格尔
+我想拯救生命。
+[k]
+
+[charaFace A 4]
+
+＠南丁格尔
+我想要的仅此而已。仅此而已。[r]其他我什么都不要。
+[k]
+
+？1：南丁格尔……
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.0]
+[charaFace A 7]
+[wt 1.0]
+
+[charaShake A 0.3 2 2 0.2]
+[charaFace A 2]
+[wt 0.2]
+
+＠南丁格尔
+……………………哈。
+[k]
+
+＠南丁格尔
+唔、唔。唔唔。我的记忆模糊了。[r]刚才我们不是在和魔偶战斗吗？
+[k]
+
+[charaFace A 4]
+
+＠南丁格尔
+这里是迦勒底？　对吧？[r]我在做什么啊……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠杰罗尼莫
+你说你自己不是士兵。[r]不，虽然这话没错……唔。
+[k]
+
+
+＠杰罗尼莫
+她的灵基好像真的发生了扭曲啊。[r]御主。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠南丁格尔
+原来如此。
+[k]
+
+＠南丁格尔
+我的状态好像是不太好呢。[r]我去休息一下。
+[k]
+
+[messageOff]
+[charaFace A 4]
+[bgmStop BGM_EVENT_70 1.3]
+[charaAttack A normal 25,1 0.5]
+[wt 0.5]
+[charaAttack A normal -25,3 0.8]
+[wt 0.8]
+
+？1：南丁格尔？
+
+？！
+
+[charaMove A 0,-50 0.4]
+[charaFadeout A 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠玛修
+南丁格尔小姐！？
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[charaSet H 98109900 1 西德尼·赫伯特]
+[charaFilter H silhouette 00000080]
+
+
+[scene 10901]
+
+[wt 1.5]
+
+[se adm35]
+[seVolume adm35 0 0.3]
+[wt 1.0]
+
+[fadein black 1.0]
+[seVolume adm35 1.0 1.0]
+[wait fade]
+
+[wt 2.0]
+[seVolume adm35 1.0 0.6]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.4]
+
+
+＠绅士
+[line 3]弗洛伦斯，你在听吗？
+[k]
+
+[seStop adm35 1.0]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠南丁格尔
+嗯。[r]我听得到。
+[k]
+
+＠南丁格尔
+是关于战场上医疗物资的事情吧。[r]西德尼，我需要你的帮助。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠西德尼·赫伯特
+嗯嗯，弗洛伦斯。弗洛伦斯啊！[r]完全弄错了啊！　你以为这里是哪里啊！
+[k]
+
+＠西德尼·赫伯特
+这里是伦敦！　是大英帝国的首都！[r]你已经不在那个战场上了。
+[k]
+
+
+＠西德尼·赫伯特
+到现在你的心还在那里。[r]你这身打扮是什么意思。你已经不属于陆军了。
+[k]
+
+＠西德尼·赫伯特
+而且为什么还穿着制式军服[line 3]
+[k]
+
+＠西德尼·赫伯特
+我不会追问你在那里发生了什么，[r]但这里是伦敦。弗洛伦斯。
+[k]
+
+＠西德尼·赫伯特
+你这种状态是不对的。[r]你明白了吗？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠南丁格尔
+……这身打扮。
+[k]
+
+[charaFace A 6]
+
+＠南丁格尔
+是啊，好像是挺奇怪的。[r]但是我是在战斗。和士兵们一样。
+[k]
+
+＠南丁格尔
+对于与世界上各种伤病持续斗争的我来说，[r]嗯嗯，像这样战斗的打扮才是合适的。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠西德尼·赫伯特
+持续斗争……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠南丁格尔
+是的。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠西德尼·赫伯特
+啊啊……
+[k]
+
+＠西德尼·赫伯特
+请别这么活着了，弗洛伦斯。[r]求你了。
+[k]
+
+＠西德尼·赫伯特
+你过去曾是克里米亚的天使，[r]但现在你已经没必要继续战斗了。
+[k]
+
+＠西德尼·赫伯特
+你应该重新寻找自己的人生目标。[r]你啊……这样下去，最后也没法结婚……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠南丁格尔
+西德尼？
+[k]
+
+[charaFace A 0]
+
+＠南丁格尔
+你说的话太奇怪了吧。[r]一个人本来就是没法结婚的啊。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠西德尼·赫伯特
+……你这么说可太伤我心了。
+[k]
+
+
+＠西德尼·赫伯特
+请你不要再这么漫不经心了啊。[r]我全都是为了你……
+[k]
+
+＠西德尼·赫伯特
+我帮你的这一切、这一切，[r]不只是出自善意啊。弗洛伦斯。
+[k]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+＠西德尼·赫伯特
+我从很久之前开始就……
+[k]
+
+＠西德尼·赫伯特
+喜欢[line 3]
+[k]
+
+[messageOff]
+
+[se adm35]
+[wt 2.0]
+
+[fadeout black 0.5]
+[seVolume adm35 0.5 0.3]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+[wipeFilter cinema 0.5 0]
+[cameraFilter gray]
+[wt 0.5]
+
+[seStop adm35 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_41 0.1]
+
+
+＠
+谎言。[r]这是谎言。
+[k]
+
+
+＠
+我的朋友西德尼·赫伯特已经娶妻了，[r]所以不会做出这种举动。根本不会。
+[k]
+
+＠
+不。在此之前。
+[k]
+
+＠
+要我接受一个人的告白什么的[line 3]
+[k]
+
+[messageOff]
+[se ade74]
+[seVolume ade74 0 0.3]
+[wt 0.5]
+
+[seVolume ade74 0.5 0.7]
+[wt 0.5]
+
+[seVolume ade74 1.0 1.0]
+[wt 1.0]
+[seStop ade74]
+
+＠声音
+原来如此啊。
+[k]
+
+
+＠声音
+平日里我就感觉到了你的状态有些异样，[r]如今终于开始自我欺骗了啊。
+[k]
+
+＠声音
+咳咳。[r]这可太有趣了。
+[k]
+
+＠声音
+[line 3]不过，我可不允许你失败和灭亡哦。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_41 1.0]
+[wait fade]
+
+[cameraFilter normal]
+[wipeOff]
+
+[scene 10420]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[se ad77]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠南丁格尔
+您的兴趣还真恶劣呢。
+[k]
+
+＠南丁格尔
+居然喜欢沉默地看着女性的睡颜。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠岩窟王
+[line 3]呵。
+[k]
+
+
+＠岩窟王
+多数情况下，从者是不会睡觉的。[r]也是不会做梦的。
+[k]
+
+＠岩窟王
+所以你的这种情况只能是灵基出现了异常。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFace A 5]
+[charaFadein A 0.1 2]
+
+＠南丁格尔
+……[r]……
+[k]
+
+
+＠岩窟王
+迦勒底的从者往往和御主关系紧密。[r]所以有时也会像这样出现串线的情况。
+[k]
+
+[charaFace A 6]
+
+＠南丁格尔
+这话轮不到你来说吧？
+[k]
+
+＠岩窟王
+以前也发生过类似的事情吧？
+[k]
+
+[charaFace A 0]
+
+＠南丁格尔
+那次不是我，[r]而是[%1]……
+[k]
+
+[messageOff]
+[charaFace A 4]
+[wt 1.0]
+[charaFace A 0]
+
+＠南丁格尔
+没错。发生过。
+[k]
+
+＠岩窟王
+很诚实嘛。
+[k]
+
+＠南丁格尔
+这是显而易见的。[r]否认也没有意义。
+[k]
+
+[charaFace A 6]
+
+＠南丁格尔
+…………我恐怕精神上受伤了。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_70 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+
+
+[charaSet D 5009001 1 达·芬奇]
+[charaSet E 11002002 1 剪影_岩窟王]
+[charaFilter E silhouette 00000080]
+[charaSet F 9005001 1 福尔摩斯]
+
+[scene 10200]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_1 0.1]
+
+＠福尔摩斯
+所谓英灵[line 3]
+[k]
+
+
+＠福尔摩斯
+本来就是由曾经身为人类的存在升华而成的。[r]这个时候应该还没有设定适合的职阶。
+[k]
+
+
+＠福尔摩斯
+职阶最早是从决战魔术・英灵召唤中衍生出来的概念。
+[k]
+
+＠福尔摩斯
+当然迦勒底式的召唤也是一样的，[r]英灵被分配到基本的七大职阶中。
+[k]
+
+＠福尔摩斯
+当然也有一些无法完全匹配。[r]此时EXTRA职阶可以解决其中大部分问题，
+[k]
+
+
+＠福尔摩斯
+但结果还是有一些英灵[r]被强行分配到了某个职阶。
+[k]
+
+＠福尔摩斯
+这样的话，[r]就有可能会发生[#扭曲]。
+[k]
+
+？1：………也就是说？
+？2：请再解释得通俗一些。
+
+？！
+
+[messageOff]
+[charaFace F 6]
+[wt 1.0]
+[charaFace F 0]
+[wt 0.8]
+
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+[wipeFilter cinema 0.5 0]
+[cameraFilter gray]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.5]
+
+＠福尔摩斯
+[line 3]Berserker，南丁格尔。
+[k]
+
+＠福尔摩斯
+很明显，她是“战斗者”，[r]更接近治病救人、医疗看护这样的概念。
+[k]
+
+＠福尔摩斯
+可是本来的她真的是这样吗？[r]她从一开始就有如此[#坚韧的]性格吗？
+[k]
+
+
+＠福尔摩斯
+还是说为了匹配Berserker职阶，才[#夸大:Caricature]了她激进的性格？
+[k]
+
+＠福尔摩斯
+如果是后者的话，没错。[r]只要她进行活动，就会对灵基和精神持续施加负担。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[cameraFilter normal]
+[wipeOff]
+
+[charaFadeout A 0.1]
+
+[charaTalk on]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+？1：……………
+？2：原来平时一直在强迫她啊。
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠玛修
+我、我想说！
+[k]
+
+[charaFace B 12]
+
+
+＠玛修
+我的话……[r]根本感觉不到会对自己的精神施加负担。
+[k]
+
+＠玛修
+所以，未必[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+
+＠福尔摩斯
+Lady。毕竟你是更特殊的例子，[r]亚从者啊。
+[k]
+
+＠福尔摩斯
+你作为反面例子恐怕有些不太合适。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[bgmStop BGM_EVENT_1 1.6]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+[wt 1.3]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_2 0.1]
+
+
+＠达·芬奇
+真是的，福尔摩斯。[r]你真爱使坏啊。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠福尔摩斯
+有吗？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠达·芬奇
+你的措辞真是过分。[r]本来可以召唤拥有意识的英灵就已经很出人意料了，
+[k]
+
+＠达·芬奇
+和Berserker维持契约尤其困难。[r]事到如今也没有办法了吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+＠岩窟王
+[line 3]没关系的。
+[k]
+
+[messageOff]
+[se ad343]
+[effect bit_talk_06_b3]
+[wt 1.0]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFadein E 0.7 0,-70]
+[charaMove E 0,0 0.7]
+[wt 1.2]
+
+[seStop ad343 1.0]
+
+[charaTalk depthOff]
+[charaDepth E 2]
+[charaDepth C 1]
+
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 1.0]
+
+[effectStop bit_talk_06_b3]
+[charaFadeout E 0.1]
+[wt 1.0]
+
+＠岩窟王
+[%1]，走吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+[bgmStop BGM_EVENT_2 0.5]
+
+＠玛修
+诶[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFace B 6]
+[charaFadein B 0.1 2]
+
+＠岩窟王
+肉体就拜托你了。[r]小姑娘。不，玛修・基列莱特。
+[k]
+
+[charaFace B 12]
+
+＠玛修
+诶，那个！　岩窟王先生……！？
+[k]
+
+[messageOff]
+[wipeout openEye 0.5 0.7]
+[wait wipe]
+[wt 0.7]
+[wipein openEye 0.3 0.7]
+[wait wipe]
+[wt 0.1]
+[wipeout openEye 0.2 0.5]
+[wait wipe]
+[wt 0.5]
+[wipein openEye 0.5 0.7]
+[wait wipe]
+[wt 1.0]
+
+[charaFace B 6]
+
+＠玛修
+啊……！　前辈！
+[k]
+
+[charaFace E 0]
+[charaFadein E 0.7 0]
+
+[messageOff]
+[wipeout openEye 1.5 0.7]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+
+
+[scene 10901]
+[wt 1.5]
+
+[se adm35]
+[seVolume adm35 0 0.3]
+[wt 1.0]
+
+[wipein openEye 0.5 0.7]
+[seVolume adm35 0.5 1.0]
+[wait wipe]
+
+[wt 2.0]
+
+[seStop adm35 2.4]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠西德尼·赫伯特
+啊，是你！　来得正好！[r][%1][&少爷:小姐]！
+[k]
+
+＠西德尼·赫伯特
+你也来替我说两句话吧。[r]她好像怎么都不听我的话，
+[k]
+
+＠西德尼·赫伯特
+你和她是一起共事的同事，[r]说不定弗洛伦斯会听你的。
+[k]
+
+＠西德尼·赫伯特
+去吧！　拜托你了！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠南丁格尔
+……[r]……
+[k]
+
+？1：慢、慢着！
+？2：这里是……
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[se ad343]
+[effect bit_talk_06_b3]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.7 0,-70]
+[charaMove E 0,0 0.7]
+[wt 1.2]
+
+[seStop ad343 1.0]
+
+[charaTalk depthOff]
+[charaDepth E 2]
+[charaDepth C 1]
+
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 1.0]
+
+[effectStop bit_talk_06_b3]
+[charaFadeout E 0.1]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk C]
+
+
+＠岩窟王
+本来这应该作为你的梦境出现的。[r]这里大概是她的心象吧。
+[k]
+
+？1：南丁格尔的[line 3]
+
+？！
+
+＠岩窟王
+没错。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠西德尼·赫伯特
+怎么突然发起呆来了？[r][%1][&少爷:小姐]？
+[k]
+
+＠西德尼·赫伯特
+拜托了啊。帮我去跟弗洛伦斯说说。[r]她应该在这里休个长假，重新回归生活。
+[k]
+
+＠西德尼·赫伯特
+好不容易从战场上回来了，[r]她却还要继续战斗。这样下去对身体不好啊。
+[k]
+
+？1：是、是啊。
+？2：你是哪位来着……
+
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠岩窟王
+他谁也不是。
+[k]
+
+[messageOff]
+[charaFace C 1]
+[wt 1.0]
+[charaFace C 0]
+
+＠岩窟王
+听好了，这个女人本来就是Berserker。[r]她是以封印了大部分理性的状态现界的。
+[k]
+
+＠岩窟王
+普通人是无法在内心持续保持强烈的战斗冲动的，[r]但Berserker。狂战士。他们不同。
+[k]
+
+[charaFace C 5]
+
+＠岩窟王
+那种战斗冲动会随着长期积累[line 3]
+[k]
+
+＠岩窟王
+在他们心底积蓄起来。[r]尤其是……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 0.3]
+[se ad77]
+[wt 0.5]
+[seStop ad77 0.5]
+[bgm BGM_EVENT_72 0.1]
+
+[charaFace C 2]
+
+＠岩窟王
+[#那些像保留了理性一般能正常说话的狂战士]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠南丁格尔
+……[r]……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+
+＠岩窟王
+那些东西正在扭曲、摩擦和变形。[r]偶尔更是会变成淤水翻涌上来。
+[k]
+
+
+＠岩窟王
+他们化作烧光万物的愤怒火焰，[r]化作由破坏与冲动构成的怪物[line 3]
+[k]
+
+＠岩窟王
+又或者，没错，以老友的姿态化作[#理性的具现]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠西德尼·赫伯特
+她该休息了。[r]不能再勉强她了。
+[k]
+
+＠西德尼·赫伯特
+你们难道还要继续给她添加负担吗？[r]这难道不是稍微想想就能想明白的问题吗，弗洛伦斯。
+[k]
+
+＠西德尼·赫伯特
+你也是这么认为的吧，[%1][&少爷:小姐]！？
+[k]
+
+？1：或许是这样吧。
+
+？！
+
+＠西德尼·赫伯特
+是吧。是吧！
+[k]
+
+＠西德尼·赫伯特
+那么，现在马上[line 3]
+[k]
+
+[bgmStop BGM_EVENT_72 1.0]
+
+？1：现在不是时候。
+？！
+
+＠西德尼·赫伯特
+什么……？
+[k]
+
+？1：我想和南丁格尔战斗到最后。
+？！
+
+＠西德尼·赫伯特
+什么……！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠南丁格尔
+……[r]……
+[k]
+
+[messageOff]
+[charaFaceFade A 8 1.0]
+[wt 2.0]
+[charaFace A 5]
+
+[bgm BGM_EVENT_63 0.1]
+
+
+＠南丁格尔
+……既然你这么说了，[%1]。
+[k]
+
+＠南丁格尔
+好吧。我同意你的请求。[r]我会继续上战场的。
+[k]
+
+＠南丁格尔
+为了拯救所有的生命。[r]我要继续去拯救别人，哪怕使用暴力也在所不惜。
+[k]
+
+[messageOff]
+
+[se ad39]
+[effect bit_talk_36_sl01]
+[wt 2.0]
+
+[effectStop bit_talk_36_sl01]
+
+[fadeout ffffcf 0.5]
+[wait fade]
+
+[charaChange A 7014002 0 fade 0.1]
+[seStop ad39 1.0]
+[wait charaChange A]
+[se ad29]
+[wt 0.5]
+
+[fadein ffffcf 0.5]
+[wait fade]
+
+[wt 2.0]
+
+＠南丁格尔
+真是的。[r]既然我还是我的话，司令官就还是司令官吧？
+[k]
+
+＠南丁格尔
+你那种想和我一起继续留在战场的思想，[r]绝对称不上健康吧。我总有一天要为你治疗。
+[k]
+
+？1：到那时就拜托你了。
+
+？！
+
+[messageOff]
+[charaFace A 1]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠岩窟王
+样子变了呢。[r]不错。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠南丁格尔
+是啊。[r]虽然解开头发不是我的本意，
+[k]
+
+＠南丁格尔
+但与现在的我也还算匹配吧。[r]与作为Berserker……作为狂战士的我。
+[k]
+
+[charaFace A 5]
+
+＠南丁格尔
+这才是我。
+[k]
+
+＠南丁格尔
+我是就算负伤也要拯救生命的、披头散发的狂女。[r]这才是我现在该有的样子吧。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_63 1.0]
+[charaFaceFade C 2 0.5]
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠南丁格尔
+那么司令官。御主。[r]我想请你陪我做一件事。
+[k]
+
+＠南丁格尔
+我想将我身体内一直叽叽喳喳的理性的碎片[line 3][r]化作老友样子的拟似免疫暂时切除。
+[k]
+
+？1：我陪你！
+？2：治疗开始！
+
+？！
+
+[charaFace A 5]
+
+＠南丁格尔
+是。那么[line 3]
+[k]
+
+[charaFace A 7]
+
+＠南丁格尔
+[f x-large]真正的治疗，开始！！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.5]
+[wait fade]
+[soundStopAll]
+[end]

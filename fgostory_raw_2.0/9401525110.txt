@@ -1,0 +1,294 @@
+
+＄94-01-52-51-1-0
+
+
+
+[soundStopAll]
+
+[bgm BGM_EVENT_65 0.1]
+
+
+
+[messageOff]
+[effectPause bit_talk_parasolwipe]
+[wait effectStart bit_talk_parasolwipe]
+
+
+[branch _PlayEffect_1st PM4 1]
+
+
+[label _PlayEffect_etc]
+
+[tapSkip _from_TapSkip_etc]
+
+[scene 10001]
+
+[fadein white 1.0]
+[wait fade]
+
+[effectPause bit_talk_goal1_4]
+[wait effectStart bit_talk_goal1_4]
+
+[effectStart bit_talk_parasolwipe]
+[wt 1.0]
+
+[effectStart bit_talk_goal1_4]
+[wait effect bit_talk_goal1_4]
+[label _from_TapSkip_etc]
+
+[effectDestroy bit_talk_goal1_4]
+[effectDestroy bit_talk_parasolwipe]
+[fadein black 0]
+[wait fade]
+
+[branch _PlayEffect_End]
+
+
+[label _PlayEffect_1st]
+
+[tapSkip _from_TapSkip_1st]
+
+[effectPause bit_talk_winner1_4]
+[wait effectStart bit_talk_winner1_4]
+
+[scene 10001]
+
+[fadein white 1.0]
+[wait fade]
+
+[effectStart bit_talk_winner1_4]
+
+[wt 4.9]
+
+[voice 402600_0_M800]
+
+[wt 1.0]
+[voice 402600_0_M801]
+
+[wt 5.0]
+
+[effectStart bit_talk_parasolwipe]
+[scene 10001]
+[wt 1.0]
+[scene 44300]
+[wait effect bit_talk_parasolwipe]
+
+[label _from_TapSkip_1st]
+
+[voiceStop]
+[scene 44300]
+[effectDestroy bit_talk_winner1_4]
+[effectDestroy bit_talk_parasolwipe]
+[fadein black 0]
+[wait fade]
+
+
+[label _PlayEffect_End]
+
+[bgmStop BGM_EVENT_65 0.3]
+[wt 0.4]
+
+[branch _PlayVoice_Start PM4 1]
+
+[branch _PlayVoice_End]
+
+
+
+
+[label _PlayVoice_Start]
+
+[charaSet A 2028001 1 海伦娜]
+[charaSet B 5025001 1 爱迪生]
+[charaSet C 2011001 1 尼古拉·特斯拉]
+
+[bgm BGM_EVENT_64 0.1]
+
+[flagRandom _PlayVoiceNo 1 3]
+
+
+[branch _PlayVoice_3rd _PlayVoiceNo 3]
+[branch _PlayVoice_2nd _PlayVoiceNo 2]
+[branch _PlayVoice_1st _PlayVoiceNo 1]
+
+
+[label _PlayVoice_1st]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.7]
+
+[charaMoveReturn A 0,16 0.2]
+＠海伦娜
+[tVoice ChrVoice_9010002 0_M670]
+第一名～！　成功了！[twt 1.5][charaFace A 0][wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFace C 0]
+[charaFadein B 0.1 2]
+[charaFadein C 0.1 0]
+
+＠爱迪生
+[tVoice ChrVoice_9010002 0_M671]
+唔嗯，照这个样子下去，看来能拿到优胜呢！[wait tVoice]
+[k]
+
+[charaFace C 1]
+＠尼古拉·特斯拉
+[tVoice ChrVoice_9010002 0_M672]
+我则认为我们已稳操胜券！　[wait tVoice]
+[k]
+
+[charaFace C 2]
+＠尼古拉·特斯拉
+[tVoice ChrVoice_9010002 0_M673]
+因为！　[wait tVoice]
+[k]
+[tVoice ChrVoice_9010002 0_M674]
+[charaFace C 5]
+身为神之雷霆在地面的显现[line 3][wait tVoice]
+[k]
+
+[charaFace B 5]
+＠爱迪生
+[tVoice ChrVoice_9010002 0_M675]
+你这家伙上前说话顶屁用啊你这紧身西装！[twt 3.6][charaFace B 2][charaShake B 0.05 7 0 0.7][wait tVoice]
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠海伦娜
+[tVoice ChrVoice_9010002 0_M676]
+好啦好啦！[wait tVoice]
+[k]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_2nd]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.7]
+
+[charaMoveReturn A 0,16 0.2]
+＠海伦娜
+[tVoice ChrVoice_9010002 0_M680]
+冲线！　轻松获胜了呢，[twt 2.0][charaFace A 0][wait tVoice]
+[k]
+[tVoice ChrVoice_9010002 0_M681]
+[charaFace A 1]
+或许多亏了御主为我们加油吧！[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace B 0]
+[charaFace C 1]
+[charaFadein B 0.1 2]
+[charaFadein C 0.1 0]
+
+＠尼古拉·特斯拉
+[tVoice ChrVoice_9010002 0_M682]
+这固然是原因之一。但也是因为我们的协助才能有这种成果！[twt 1.8][charaFace C 0][wait tVoice]
+[k]
+
+[charaFace B 1]
+＠爱迪生
+[tVoice ChrVoice_9010002 0_M683]
+唔嗯，说得一点也没错！[wait tVoice]
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠海伦娜
+[tVoice ChrVoice_9010002 0_M684]
+呵呵呵，我们配合真默契呢！[wait tVoice]
+[k]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_3rd]
+
+[charaTalk off]
+[charaFace B 2]
+[charaFace C 2]
+[charaFadein B 0.1 2]
+[charaFadein C 0.1 0]
+
+＠爱迪生＆尼古拉·特斯拉
+[tVoice ChrVoice_9010002 0_M690]
+冲[charaShake B 0.05 7 0 0.7][charaShake C 0.05 7 0 0.7]线[line 6]！！[wait tVoice]
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[charaFace A 2]
+[charaMoveReturn A 0,24 0.2]
+＠海伦娜
+[tVoice ChrVoice_9010002 0_M691]
+哇，吓了我一跳，[twt 2.3][charaFace A 0]你们俩感情真好，[wait tVoice]
+[k]
+[tVoice ChrVoice_9010002 0_M692]
+[charaFace A 1]
+呵呵[line 3]这很好哦！[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFace C 2]
+[charaFadein B 0.1 2]
+[charaFadein C 0.1 0]
+
+[charaFace B 3]
+＠爱迪生
+[tVoice ChrVoice_9010002 0_M693]
+不，刚才那只是巧合……[wait tVoice]
+[k]
+
+[charaFace C 4]
+＠尼古拉·特斯拉
+[tVoice ChrVoice_9010002 0_M694]
+别说了。这只能隐藏在我们的心中……[wait tVoice]
+[k]
+
+
+[label _PlayVoice_End]
+
+
+[messageOff]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_64 0.4]
+[wait fade]
+[soundStopAll]
+[end]

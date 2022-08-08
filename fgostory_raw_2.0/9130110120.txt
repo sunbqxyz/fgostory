@@ -1,0 +1,100 @@
+
+＄91-30-11-01-2-0
+
+[charaSet A 8001001 1 玛修]
+[charaSet B 98003000 1 Dr.罗曼]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 3011001 1 芬恩]
+[charaSet F 98006000 1 ？？？]
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[scene 20800]
+
+[charaTalk B]
+[communicationCharaLoop 98003003 1 0 0 2]
+
+[fadein black 1.0]
+[wait fade]
+
+＠Dr.罗曼
+确认第一阵击溃！[r]但下一波很快就要来了！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠玛修
+这种巨大的“手”并非第一次见到，但是[line 2][r]总有种奇怪的感觉啊，前辈！
+[k]
+
+？1：对方好像率领着兽人？
+？2：好像很针对芬恩？
+
+？！
+
+
+[charaFadeout A 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠芬恩
+啊啊，很久没有这种感觉了。[r]那还是率领骑士团的各位旅行的时候。
+[k]
+
+[charaFace D 0]
+＠芬恩
+我[line 2]
+[k]
+
+[charaFace D 5]
+＠芬恩
+我！[r]孤身作为一名战士，挺身面对邪恶！
+[k]
+
+[charaFace D 2]
+＠芬恩
+面对残杀无辜群众的存在！[r]没错，我！　认识[#你们]！
+[k]
+
+[charaFace D 5]
+＠芬恩
+[line 2]来吧！
+[k]
+
+
+[charaFadeout D 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+还……还有啊！？
+[k]
+
+
+[charaFadeout A 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠？？？
+Guuuu……！
+[k]
+
+[charaFadeout F 0.1]
+[communicationCharaLoop 98003003 1 0 0 2]
+＠Dr.罗曼
+来了，是第二阵！　不……是再生了！？[r]比刚才数量还要多！　小心！
+[k]
+
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

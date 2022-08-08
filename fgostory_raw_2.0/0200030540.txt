@@ -1,0 +1,392 @@
+
+＄02-00-03-05-4-0
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+
+[charaSet A 1017001 1 武藏]
+[charaSet B 1098117800 1 Archer Inferno]
+[charaSet C 98006200 1 烟状杂兵敌人]
+[charaSet D 98006200 1 烟状杂兵敌人]
+[charaSet E 98006200 1 烟状杂兵敌人]
+[charaSet F 98006200 1 烟状杂兵敌人]
+[charaSet H 5009000 1 特效用dummy]
+
+[scene 46701]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk off]
+[charaFace C 0]
+[charaFadein C 0.1 -384,0]
+[charaFace D 0]
+[charaFadein D 0.1 -180,20]
+[charaFace E 0]
+[charaFadein E 0.1 360,-10]
+[charaFace F 0]
+[charaFadein F 0.1 64,30]
+[wt 0.3]
+
+[se bac136]
+[charaPut H 360,0]
+[charaEffect H bit_talk_Slash_white_01]
+[wt 0.1]
+[charaShake E 0.05 5 5 0.7]
+[wt 0.1]
+[charaSpecialEffect E enemyErasure 1 0.40]
+[se bac136]
+[charaPut H -384,0]
+[charaEffect H bit_talk_Slash_white_01_L]
+[wt 0.1]
+[charaShake C 0.05 5 5 0.7]
+[wt 0.1]
+[charaSpecialEffect C enemyErasure 1 0.40]
+[se bac136]
+[charaPut H 0,-60]
+[charaEffect H bit_talk_ichimon01wh]
+[wt 0.1]
+[charaSpecialEffect D enemyErasure 1 0.40]
+[charaSpecialEffect F enemyErasure 1 0.40]
+[se ad42]
+
+[wt 1.2]
+
+[charaSet G 1098117800 1 Archer Inferno]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠武藏
+这样就搞定[line 3]
+[k]
+
+＠武藏
+[line 3]看来没那么简单呢。[r]直接现身如何？　彷徨于城下町的虫子们的头目，六只中的一只。
+[k]
+
+＠武藏
+虽然听说过从者有着独特的气息，[r]看来并非如此呢。
+[k]
+
+＠武藏
+跟之前毫无变化的邪魔外道的臭味。[r]但这次不是血，而是烧尽的渣滓味。
+[k]
+
+[charaFace A 5]
+
+＠武藏
+不管是哪个，[r]都不是该在光天化日之下散发的气味吧。
+[k]
+
+＠武藏
+若要弥漫气味的话，对。[r]至少应该散发出香气才行吧？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFilter B silhouette 00000080]
+[charaFadein B 1.0 1]
+[wt 1.4]
+
+[charaPut H 1200,1200]
+[charaScale H 1.5]
+[charaEffect H bit_talk_06b]
+
+＠Archer Inferno
+我……有你说的那么臭吗。
+[k]
+
+＠Archer Inferno
+新免武藏，真是个可笑的人啊。[r]居然忠告接下来要夺去自己性命的对手。
+[k]
+
+＠Archer Inferno
+但是，嗯。十分感谢。
+[k]
+
+＠Archer Inferno
+我今后会注意的。[r]当出现在他人面前时，我会记得焚香的。
+[k]
+
+[bgmStop BGM_EVENT_3 0.75]
+[wt 0.5]
+[messageOff]
+
+[charaTalk off]
+[charaDepth B 1]
+[charaDepth H 9]
+
+[charaPut H 0,300]
+[charaEffect H bit_talk_06b]
+[se bac165]
+[wt 1.2]
+[seStop bac165 0.5]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.1]
+[charaFadeout B 1.0]
+[wt 0.5]
+[charaSet H 5009000 1 特效用dummy]
+[charaEffectStop H bit_talk_06b]
+[wt 1.5]
+
+[bgm BGM_BATTLE_65 0.1]
+
+＠Archer Inferno
+[line 3]尤其，是在需要大量屠杀时。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠武藏
+哎，还真是位漂亮的人儿呢。真可惜。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠Archer Inferno
+[line 3]非常感谢。[r][line 3]吾之忌名，乃 Archer Inferno。
+[k]
+
+＠Archer Inferno
+上次承蒙您多多关照。上次之后您过得如何呢，还精神吗？[r]此次我的来访是为了歼灭汝等。
+[k]
+
+＠Archer Inferno
+祝两位心情愉快。[r]再见了。
+[k]
+
+？1：英灵剑豪！
+？2：你们的目的究竟是什么。
+
+？！
+
+[charaFace G 3]
+
+＠Archer Inferno
+嗯？　什么？
+[k]
+
+[charaFace G 2]
+
+＠Archer Inferno
+如果是我的话，对，我必须尽可能。[r]燃烧更多的存在。燃烧生命、燃烧人类、燃烧仇敌。
+[k]
+
+[charaFace G 0]
+
+＠Archer Inferno
+我要燃尽一切。嗯，也就是杀害吧？[r]杀害百姓、杀害日本、杀害德川治世的一切，
+[k]
+
+＠Archer Inferno
+我要燃烧燃烧燃尽一切。[r]虽说我不清楚其他几位是怎么想的……
+[k]
+
+[charaFace G 3]
+
+＠Archer Inferno
+……但我，只要燃烧。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠武藏
+燃烧[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠Archer Inferno
+是的。燃烧。
+[k]
+
+[charaFace G 3]
+
+＠Archer Inferno
+因为我恨啊。[r]憎恨、憎恨得难以自已。
+[k]
+
+＠Archer Inferno
+既然妖术师阁下说此世乃地狱。[r]那么……
+[k]
+
+[messageOff]
+[wt 0.7]
+[charaFace G 2]
+
+＠Archer Inferno
+那就这么办吧。由我自己化为薪柴。
+[k]
+
+[charaFace G 3]
+
+＠Archer Inferno
+你们在这世上有所爱之人吗？[r]有寄托心意之人，爱到难以自拔之人吗？
+[k]
+
+＠Archer Inferno
+孩子呢？　亲人呢？[r]无论如何总会有那么一两个吧？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠武藏
+这谁知道呢。[r]如果那一两个在这里，你打算怎么做？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+＠Archer Inferno
+啊啊[line 3]倘若如此[line 3]
+[k]
+
+[charaSet H 1098117800 1 Inferno表情变更用]
+[charaDepth G 1]
+[charaDepth H 9]
+
+[wt 0.1]
+[messageOff]
+[wt 1.0]
+[charaTalk off]
+[charaFace H 0]
+[charaFadein H 0.7 1]
+[wt 2.0]
+[charaFace G 0]
+[charaFadeout G 0.4]
+[wt 0.5]
+
+＠Archer Inferno
+嗯。烧掉。
+[k]
+
+＠Archer Inferno
+这非常美妙，非常棒吧。嗯，嗯！[r]就让我将他们都烧成焦炭般的黑块吧！
+[k]
+
+[charaFace G 1]
+
+＠Archer Inferno
+将愿望、感情、牵绊！[r]所有一切都用我的火焰燃烧殆尽吧！
+[k]
+
+[bgmStop BGM_BATTLE_65 0.7]
+[messageOff]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaSet H 5009000 1 特效用dummy]
+
+
+[se bac27]
+[charaPut H 0,-50]
+[charaEffect H bit_talk_29]
+[wt 1.5]
+
+[bgm BGM_EVENT_24 0.1]
+
+？1：火！
+？2：如果在这种地方放火！
+
+？！
+
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_29]
+[charaEffect H bit_talk_32]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠武藏
+对啊。虽说想向她问话，但看来束手无策呢，[r]现在只能照字面意思干掉她了！
+[k]
+
+
+[charaFace A 2]
+
+＠武藏
+既然已经完全不算是被火花擦到，而是火花直接袭来！[r]那唯有挥扫一空[line 3]全部扑灭[line 3]！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠Archer Inferno
+无所谓。尽管来试试能否扑灭吾之火焰吧。
+[k]
+
+[charaFace G 2]
+
+＠Archer Inferno
+只要此世仍为地狱，[r]只要仍想将此世化为地狱。
+[k]
+
+[charaFace G 1]
+
+＠Archer Inferno
+吾之火焰就绝不会熄灭！[r]Inferno 之火，乃是燃烧汝等的憎恶是也！
+[k]
+
+[messageOff]
+[charaFadeout G 0.2]
+[wt 0.2]
+
+[se ad392]
+[wt 0.4]
+[charaPut H 1]
+[fowardEffect bit_talk_29]
+[flashin loop 1 1 FF000080 EE000040]
+[wt 0.5]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

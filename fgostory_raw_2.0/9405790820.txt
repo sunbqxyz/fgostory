@@ -1,0 +1,232 @@
+
+
+
+＄94-05-79-08-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 5046001 1 克莱恩小姐]
+[charaSet B 3005001 1 伊丽莎白]
+[charaSet C 98001000 1 玛修]
+[charaSet D 7024000 1 X·Alter]
+
+[charaSet T 4031000 1 特效用]
+
+[scene 112400]
+
+[charaScale B 1.25]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠克莱恩小姐
+请问，可爱的人。[r]你愿不愿意试着当偶像呢？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,25]
+
+＠伊丽莎白
+[f x-large]愿意。[se ad186]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaScale B 1.0]
+[wt 0.2]
+
+？1：慢着！
+？2：伊丽亲[line 3]！？
+？！
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠伊丽莎白
+哎呀，这不是[&小狗崽:小鹿崽]嘛！[r]听我说！　我被这个人挖了哦！
+[k]
+
+＠伊丽莎白
+没错，这就是伊丽莎白[#传说:Legend]的开始。
+[k]
+
+＠伊丽莎白
+我会跳过两级直接冲上[r]超级明星的水平给你们看！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_94 1.0 0.5]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠玛修
+克莱恩小姐。[r]是我，玛修·基列莱特！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠X·Alter
+我是X·Alter。[r]克莱恩小姐，你[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_94 1.0 1.0]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠克莱恩小姐
+[f large]T[messageShake 0.05 4 3 0.5]rès bien！
+[k]
+
+＠克莱恩小姐
+你是叫X·Alter吧，[r]请务必成为偶像！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠伊丽莎白
+喂[messageShake 0.05 2 2 0.3]！？[r]是我啦！　是我要成为偶像吧！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 6]
+[charaDepth A 4]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFace B 5]
+[charaFadeinFSR A 0.1 2]
+[charaFadeinFSL B 0.1 0]
+＠克莱恩小姐
+当……当然没有忘记啦！[r]对了！　要不要组成偶像组合？
+[k]
+
+[bgmStop BGM_EVENT_94 3.0]
+
+＠伊丽莎白
+不行啦，我不接受！
+[k]
+
+[charaFace B 0]
+＠伊丽莎白
+偶像只要一个人就够了，[r]这是世界的常识。
+[k]
+
+[charaFace A 4]
+
+＠克莱恩小姐
+不，那个，这……
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠伊丽莎白
+不能承认……哪怕！　对象是你们！[r]我也决不允许有人妨碍我的偶像之路！
+[k]
+
+＠伊丽莎白
+综上所述[line 3]上了！
+[k]
+
+[messageOff]
+[se ad39]
+[fowardEffect bit_talk_36]
+[wt 2.4]
+
+[seStop ad39 0.4]
+[fowardEffectStop bit_talk_36]
+
+[charaFace B 2]
+＠伊丽莎白
+[f x-large]『[#鲜血魔女:Bathory Erzsebet]』！！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad805]
+[effect bit_talk_voice01]
+[wt 0.3]
+[fadeout white 0.7]
+[seStop ad805 1.0]
+[wait fade]
+
+[effectStop bit_talk_voice01]
+[shake 0.03 3 3 4.0]
+[se ad882]
+[se ad608]
+[se ad609]
+[wt 1.5]
+
+[fadein white 3.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠玛修
+前辈！[r]伊丽莎白小姐非常认真！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠X·Alter
+没办法了。既然对方也是偶像，[r]就用演唱会对决让她认识清楚。
+[k]
+
+？1：抱歉，伊丽亲！
+？！
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

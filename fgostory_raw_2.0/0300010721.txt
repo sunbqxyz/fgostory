@@ -1,0 +1,147 @@
+
+
+＄03-00-01-07-2-1
+[soundStopAll]
+
+[bgm BGM_EVENT_80 0.1]
+
+
+[charaSet A 5036001 1 阿维斯布隆]
+[charaSet B 1098126400 1 帕茨西]
+[charaSet C 1098128000 1 玛修]
+[charaSet D 98115300 1 福尔摩斯]
+[charaSet F 1098123210 1 戈尔德鲁夫]
+[charaSet G 1098124510 1 达·芬奇]
+[charaSet H 5009000 1 特效用dummy]
+
+[scene 54100]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[se ad586]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[seStop ad586 0.5]
+[wt 1.2]
+
+[bgmStop BGM_EVENT_80 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠阿维斯布隆
+被他们逃掉了啊。[r]似乎没必要追赶。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠帕茨西
+因为原本要袭击的就不是我们。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠玛修
+……是的。严格说来，[r]我认为逃跑这一描述是正确的。
+[k]
+
+＠玛修
+实际上，有好几个人是直接拔腿就跑了……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠阿维斯布隆
+尽管有很多地方值得探讨，[r]但当务之急是赶往村子吧？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠福尔摩斯
+……唔？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠阿维斯布隆
+怎么了，福尔摩斯。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠福尔摩斯
+登记雅嘎的生物反应花费了不少时间。[r]但刚才，终于成功将帕茨西登记为基础数据了。
+[k]
+
+＠福尔摩斯
+不过，现在也只能解析出[r]我们前往的地方究竟有几位雅嘎而已。
+[k]
+
+＠福尔摩斯
+总而言之，我们的目的地[r]还有数百名雅嘎。
+[k]
+
+＠福尔摩斯
+总不可能全都是盗贼。[r]也就是说还来得及。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠帕茨西
+好，快走，[%1]！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

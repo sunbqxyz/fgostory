@@ -1,0 +1,304 @@
+
+＄94-00-56-05-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 98101600 1 魔猪]
+[charaSet B 98100400 1 玛修]
+[charaSet C 98100800 1 野猪崽]
+[charaSet D 9004000 1 玛尔达]
+[charaSet E 5027000 1 玛丽]
+[charaSet F 6024000 1 斯卡哈]
+[charaSet G 98002000 1 芙芙]
+
+[effect bit_talk_gagemist_Purple]
+
+[scene 30500]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaEffect A bit_talk_13]
+[wt 0.1]
+[se bac11]
+[charaShake A 0.05 3 3 0.25]
+[wait se bac11]
+[wt 0.4]
+
+[se ad24]
+＠魔猪
+咕嘎啊……！
+[k]
+
+[bgmStop BGM_EVENT_3 0.7]
+[messageOff]
+[charaSpecialEffect A enemyErasure 1 1.7]
+[se ad42]
+[wait charaSpecialEffect A]
+[wt 1.0]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠玛修
+如果还有相同的野猪，[r]携带着会腐蚀这座岛土地的毒气的话……就麻烦了。
+[k]
+
+＠玛修
+或许迟早会需要相同的处置。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+＠野猪崽
+哔叽～……
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠玛尔达
+好啦好啦，总之先处理这片污秽的沼泽。[r]撒点圣水[line 3]
+[k]
+
+[bgmStop BGM_EVENT_5 0.4]
+[messageOff]
+[charaFadeout D 0.4]
+[se ad78]
+[wt 0.5]
+[se ad42]
+[seStop ad42 2.0]
+[wt 0.2]
+[effect bit_talk_06]
+[wt 1.0]
+[effectStop bit_talk_06]
+[wt 1.0]
+
+[bgm BGM_EVENT_5 0.1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠玛尔达
+哈！？　无法净化！？[r]感情你不打算听从老娘的祈祷吗！？
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk B]
+[charaFace D 5]
+[charaFadein D 0.1 0]
+[charaFace B 6]
+[charaFadein B 0.1 2]
+＠玛修
+…………
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠玛尔达
+……哎呀，不对，是我的祈祷还不足呢。
+[k]
+
+[charaFace D 4]
+＠玛尔达
+或许是因为，昨天我用海岸边岩石地当沙包，[r]锻炼得太激动了以至于过度殴打岩石地，
+[k]
+
+＠玛尔达
+令海岸线形状发生了些许改变的缘故吧……[r]请原谅我……
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk E]
+[charaFace D 4]
+[charaFadein D 0.1 0]
+[charaFace E 4]
+[charaFadein E 0.1 2]
+＠玛丽
+也就是说[line 3]无法将这片毒沼泽彻底净化吗？
+[k]
+
+＠玛尔达
+之前那个规模比较小，所以才能成功。[r]但这里的侵蚀太强了……无法消除。
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 2]
+＠玛修
+连玛尔达小姐都做不到的话……[r]其他方法或许也很难办到吧。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠斯卡哈
+唔……但是总比什么都不做要来得好吧。[r]来，帮个忙。
+[k]
+
+＠斯卡哈
+我正好带着梣树的种子。[r]付与其吸收土地中毒素并成长的性质。
+[k]
+
+[charaFadeout F 0.1]
+
+
+[charaTalk E]
+[charaFace C 0]
+[charaFadein C 0.1 -128,0]
+[charaFace E 1]
+[charaFadein E 0.1 128,0]
+＠玛丽
+这种种子能让地面恢复原状吗？[r]好棒啊！
+[k]
+
+[charaFace C 1]
+＠野猪崽
+哔叽！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠斯卡哈
+但无法做到立竿见影。[r]玛尔达也说过了，这毒非常浓。
+[k]
+
+＠斯卡哈
+而植物则是耗费漫长的时间坚强成长的存在。[r]如果过于仓促，只会导致其经受不住毒气的侵袭而枯萎。
+[k]
+
+[charaFace F 5]
+＠斯卡哈
+得慢慢地，慢慢地，经年累月[line 3][r]一滴一滴，慎重吸收毒素才行。
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk B]
+[charaFace F 5]
+[charaFadein F 0.1 0]
+[charaFace B 0]
+[charaFadein B 0.1 2]
+＠玛修
+经年累月……具体是多久呢？
+[k]
+
+[charaFace F 0]
+＠斯卡哈
+让我想想[line 3]大致千年左右吧？
+[k]
+
+？1：好长！
+？！
+
+[charaFace F 0]
+＠斯卡哈
+但只要这么做，[r]最后应该就能恢复成原来正常的土地。
+[k]
+
+[charaFace F 4]
+＠斯卡哈
+既然现在无法立即做到，[r]只能采用退而求其次的方法了。
+[k]
+
+[charaFace F 0]
+＠斯卡哈
+只要与玛尔达的圣水配合着种下种子，[r]这片毒沼泽至少不会继续扩展了。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠玛丽
+说得对。一定比什么都不做要来得好。[r]虽然到时候我们或许已经不在这里了。
+[k]
+
+＠玛丽
+但既然这座岛允许我们使用它的资源，[r]我们就该用未来报答这座岛……是这种感觉吧？
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk B]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+[charaFace B 13]
+[charaFadein B 0.1 2]
+＠玛修
+嗯。我也觉得这是非常美妙的展望。
+[k]
+
+[charaFace G 0]
+＠芙芙
+芙芙。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout B 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠玛尔达
+那我们开始动手吧。[r]值得纪念的第一次哦。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠斯卡哈
+嗯。[r]虽然基本能确定这里还有其他魔猪。
+[k]
+
+＠斯卡哈
+但幸运的是，梣的种子也还有不少。
+[k]
+
+＠斯卡哈
+只要找到这样的毒沼泽，[r]以及导致这种情况发生的魔猪，
+[k]
+
+＠斯卡哈
+今后应该也会需要做同样的事吧。[r]请不要放过任何一个哦，御主……
+[k]
+
+[wt 0.2]
+
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_5 1.4]
+[wait fade]
+[wt 0.4]
+[soundStopAll]
+[end]

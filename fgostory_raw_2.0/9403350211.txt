@@ -1,0 +1,227 @@
+
+＄94-03-35-02-1-1
+
+[soundStopAll]
+
+[charaSet A 2001000 1 卫宫]
+[charaSet B 5042000 1 紫式部]
+[charaSet C 99502600 1 玛修]
+[charaSet D 4011001 1 布狄卡]
+[charaSet E 7016001 1 玉藻猫]
+[charaSet F 98002000 1 芙芙]
+[charaSet I 5009000 1 特效用]
+[charaSet J 98115000 1 特效用]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+
+[bgm BGM_EVENT_3 0.1]
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66700]
+[branch lblConf]
+[label lblNotClear]
+[scene 60300]
+[label lblConf]
+
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+[se bac1]
+[charaFace A 2]
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,5 0.2]
+[charaFadeout A 0.2]
+[wt 0.35]
+
+[se bac136]
+[effect bit_talk_v_slash01 0,0 H]
+[wt 0.5]
+[se bac137]
+[fowardEffect bit_talk_h_slash01 0,0 H]
+[wt 0.8]
+
+[se ad22]
+[wt 2.0]
+
+[bgmStop BGM_EVENT_3 1.0]
+[se ad7]
+[charaMoveScale A 1.0 0.2]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.8]
+
+＠卫宫
+…………好。差不多就这样吧。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[se ad39]
+[charaPut I 1]
+[charaEffect I bit_talk_warp]
+[wt 3.5]
+[seStop ad39 0.4]
+
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠紫式部
+成功回收咒本！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[se adm20]
+[charaPut I 1]
+[charaEffectStop I bit_talk_warp]
+[fowardEffect bit_talk_22]
+[wt 1.5]
+[seStop adm20 1.0]
+[wt 2.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠玛修
+咒本回收完成！[r]但魔力量很微弱，所以这恐怕是……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠紫式部
+遗憾的是，这应该不是『最初的咒本』。[r]但无疑是被分到了魔力的一册。
+[k]
+
+＠紫式部
+容我再次表示。[r]……厨房的各位，给大家添麻烦了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFace E 0]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠布狄卡
+哈哈哈。这种程度根本连麻烦都算不上啦！[r]尽管我不是很明白，但不用在意不用在意啦。
+[k]
+
+[charaFace D 3]
+＠布狄卡
+[#那家伙]看到尼禄后的大闹，[r]萨列里的失控，魅影的不安定，
+[k]
+
+＠布狄卡
+无法沟通系的Berserker完全不听人说话，[r]对食堂来说这算家常便饭啦。
+[k]
+
+
+[charaTalk E]
+[charaFace E 0]
+＠玉藻猫
+唔。毕竟厨房乃失火之地，[r]这种程度根本不算麻烦。
+[k]
+
+[charaFace E 1]
+＠玉藻猫
+只能算小打小闹啦。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠卫宫
+就是这么回事。
+[k]
+
+＠卫宫
+看来你们还有急事，[r]那我就不占用你们的时间了[line 3]
+[k]
+
+[charaFace A 1]
+＠卫宫
+不过今后记得来这里悠闲地喝杯茶哦，紫式部。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+[charaFace B 1]
+＠紫式部
+好，非常感谢，各位。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠芙芙
+芙！
+[k]
+
+？1：那么，接下来去作家系从者的房间吧！！
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠玛修
+说得对！
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

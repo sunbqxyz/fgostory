@@ -1,0 +1,549 @@
+
+
+＄94-03-22-02-1-0
+[soundStopAll]
+
+
+[charaSet A 1098161000 1 麻雀]
+[charaSet B 98001000 1 玛修]
+[charaSet C 5003000 1 玉藻前]
+[charaSet D 2021000 1 巴御前]
+[charaSet E 7013001 1 清姫]
+[charaSet F 1098123200 1 戈尔德鲁夫]
+[charaSet G 1035001 1 迪尔姆德]
+[charaSet H 3011000 1 芬恩·麦克库尔]
+[charaSet J 5009000 1 特效用dummy]
+
+[scene 69901]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_66 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠麻雀
+这里就是『雀之间』啾。[r]请好好休息啾。
+[k]
+
+＠麻雀
+这里是[%1]大人和玛修大人的双人房啾。
+[k]
+
+[masterBranch lblBoy lblGirl]
+
+[label lblBoy]
+
+＠麻雀
+休息时门会锁得牢牢的，[r]所以请放心啾。
+[k]
+
+＠麻雀
+只有成为恩爱夫妻后才能睡同一床被褥。[r]这是红老板娘定下的规矩啾。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠玛修
+啊，好。[r]其实我们，嗯，说得没错啾。
+[k]
+
+
+[branch lblConf]
+
+[label lblGirl]
+
+＠麻雀
+左边的房间里有被褥，[r]要休息时可以拿来铺开啾。
+[k]
+
+＠麻雀
+畏寒的客人若需要汤婆子暖脚，[r]可以吩咐我们去拿啾。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+
+[label lblConf]
+
+？1：话说回来[line 3]
+
+？！
+
+[charaFace B 1]
+
+＠玛修
+嗯，好美的风景啊，前辈！[r]快看，从窗户能眺望整座山的全貌！
+[k]
+
+[se ad570]
+[seVolume ad570 0 0.4]
+[wt 0.7]
+[seStop ad570 0.1]
+[wt 0.5]
+
+＠玉藻前
+[charaTalk C]
+你们好～！　我是住在隔壁『翡翠之间』的，[r]过来向大家打个招呼♡
+[k]
+
+[charaFace B 13]
+
+＠玛修
+是玉藻小姐她们呢。[r]欢迎，请进！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[charaTalk depthOff]
+[charaDepth C 0]
+[charaDepth D 1]
+[charaDepth E 2]
+
+[charaTalk off]
+[charaFace C 0]
+[charaFadein C 0.4 0]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[charaFace D 0]
+[charaFadein D 0.4 2]
+[wt 2.0]
+
+[charaTalk on]
+[charaFace C 1]
+
+＠玉藻前
+好～，打扰了～！[r]哇哦。不愧是拐角房，景致果然不同呢！
+[k]
+
+[charaFace D 1]
+
+＠巴御前
+好像比我们的房间稍微大一点呢。
+[k]
+
+＠巴御前
+本以为红阎魔老师会讨厌人类，[r]实际上似乎并非如此吧？
+[k]
+
+[charaFace E 3]
+
+＠清姫
+……温泉旅馆……令人兴奋的食物……[r]没什么事需要做的观光胜地……
+[k]
+
+＠清姫
+不可能不发生些什么……[r]呵呵呵……多么美妙啊……
+[k]
+
+[charaFace C 0]
+
+＠玉藻前
+暂停一下，清姬。[r]这次还是认真点对待吧？
+[k]
+
+＠玉藻前
+毕竟这不只是我们，[r]也事关御主和玛修的贞操危机啊。
+[k]
+
+[se ad570]
+[wt 0.7]
+[seStop ad570 0.1]
+
+＠戈尔德鲁夫
+[charaTalk F]
+这里是『雀之间』吧？[r]是我，戈尔德鲁夫。我要进去了哦，各位。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[charaTalk depthOff]
+[charaDepth G 0]
+[charaDepth H 1]
+[charaDepth F 2]
+
+[charaTalk off]
+[charaFace H 0]
+[charaFadein H 0.4 -312,0]
+[charaFace F 1]
+[charaFadein F 0.4 1]
+[charaFace G 1]
+[charaFadein G 0.4 312,0]
+[wt 2.0]
+
+[charaTalk on]
+[charaFace F 1]
+
+＠戈尔德鲁夫
+哦哦。这个房间也别有情趣。[r]日本的旅馆有种温暖的感觉，真不错。
+[k]
+
+＠迪尔姆德
+太好了。大家都在这里。[r]果然来这里是正确的选择呢，吾主。
+[k]
+
+＠芬恩·麦克库尔
+是啊。我本来想去传说中的日本温泉……[r]但温泉似乎封锁起来了呢。
+[k]
+
+＠芬恩·麦克库尔
+于是我便重振精神过来参加作战会议了。[r]这座旅馆里似乎隐藏着不为人知的内幕。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠玛修
+大家也都看过自己的房间了吧。[r]呃，我记得带着……找到了！
+[k]
+
+[messageOff]
+[charaMove B -32,0 0.4]
+[wt 0.1]
+[charaFadeout B 0.2]
+[wt 0.5]
+
+[se ade3]
+[wt 1.0]
+[seStop ade3 0.4]
+[wt 1.2]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠玛修
+请享用，虽然只是粗茶。[r]我用房间里的茶具为大家泡了茶。
+[k]
+
+？1：谢谢。
+？2：除了茶之外居然还有包子……！
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠戈尔德鲁夫
+嗯，真是个懂事的亚从者。[r]真希望我的那些女仆也向你学学。
+[k]
+
+[bgmStop BGM_EVENT_66 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_70 0.1]
+
+[charaFace F 15]
+
+＠戈尔德鲁夫
+不对，现在可不是优哉游哉的时候！[r]大事不好了啊各位！
+[k]
+
+[charaFace F 9]
+
+＠戈尔德鲁夫
+怎么办！？　我们该怎么办才好啊！？
+[k]
+
+＠戈尔德鲁夫
+虽然我是个精明强干的司令官，但这里是异国他乡！[r]更何况我还是第一次感受来温泉旅馆之喜悦！
+[k]
+
+＠戈尔德鲁夫
+如何才能积攒“谢意”什么的，[r]我完全想不出来啊！
+[k]
+
+？1：玉藻，你知道吗？
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+？2：巴，你知道吗？
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠巴御前
+……我也完全不懂。[r]玉藻，你有什么主意吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠玉藻前
+是啊，在这方面我也是门外汉，[r]我对此也很没有自信……
+[k]
+
+[charaFace C 0]
+
+＠玉藻前
+但应该先按照红阎魔老师所说的，[r]从杂务做起吧。
+[k]
+
+＠玉藻前
+毕竟我们既不是旅馆的专家，[r]也不是专业的工匠。
+[k]
+
+＠玉藻前
+还是从我们曾经做过的，[r]有自信能做好的工作开始做起吧。
+[k]
+
+＠玉藻前
+随后自然就能了解这座旅馆的构造和内幕了。
+[k]
+
+＠玉藻前
+『我们能做什么』与『我们想做什么』，
+[k]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+＠玉藻前
+自然就会明白这些了吧。[r]综上所述，请穿上这件衣服吧，御主♡
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠玛修
+这是……魔术礼装？[r]但好像和平常的有些不同……啊！
+[k]
+
+[charaFace B 3]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠玛修
+前前……前辈，这是浴衣！[r]是我憧憬已久的温泉旅馆的制服！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠玉藻前
+没错。我想这肯定用得上，[r]就向红老师要来了阎魔亭的浴衣。
+[k]
+
+＠玉藻前
+尽管是赶制的，但也是包含了我的巫力、咒力、[r]以及爱情，重新修补过的独一无二的珍品哦♡
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠清姫
+啊，太狡猾了，玉藻！
+[k]
+
+＠清姫
+我也要！[r]我也要在其中加入我心意！
+[k]
+
+[charaFace E 1]
+
+＠清姫
+这件衣服就等同于我的鳞片了。只要穿上这件衣服，[r]我们就能一心同体了，御主♡
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠芬恩·麦克库尔
+哈哈哈，真可靠，有爱是件好事啊！[r]看来您正在被深爱着呢，御主。
+[k]
+
+[charaFace H 0]
+
+＠芬恩·麦克库尔
+那我也送上我的小礼物吧。[r]实际上，刚才我们在走廊里遇到了几只小麻雀。
+[k]
+
+＠芬恩·麦克库尔
+我询问他们『有没有工作可以做？』，[r]结果听说了颇有意思的情报。
+[k]
+
+＠芬恩·麦克库尔
+这座阎魔亭是由老板娘与九位麻雀伙计负责运营的。
+[k]
+
+＠芬恩·麦克库尔
+但由于最近魔猿猖獗，人手似乎有些不足。[r]具体来说，一共有3种工作。
+[k]
+
+＠芬恩·麦克库尔
+1『采集山珍、河味的工作。』
+[k]
+
+＠芬恩·麦克库尔
+2『修补旅馆、砍柴等获取木材资源的工作。』
+[k]
+
+＠芬恩·麦克库尔
+3『击退捣乱魔猿的工作。』
+[k]
+
+[charaFace H 1]
+
+＠芬恩·麦克库尔
+如何？[r]在这些中，第3种工作现在就可以开始吧？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠迪尔姆德
+这样比较好。[r]击退那些魔猿属于我等战士们的工作。
+[k]
+
+＠迪尔姆德
+这次的困境也是我等背德之举所造成的。[r]就算没有报酬，我也粉身碎骨在所不辞。
+[k]
+
+＠迪尔姆德
+没错[line 3]这才是真正的无穷试炼。[r]我开玩笑的。
+[k]
+
+[bgm BGM_EVENT_7 0.3 0.2]
+
+＠全体
+[charaTalk B]
+…………
+[k]
+
+[bgm BGM_EVENT_7 0.3 1.0]
+
+[charaFace G 3]
+
+＠迪尔姆德
+……真丢脸。我迪尔姆德的口舌[r]竟无法像巨大的愤怒般锋利……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠芬恩·麦克库尔
+说话之道就是我的专长了。[r]看来双剑的迪尔姆德有些得意忘形了。
+[k]
+
+[charaFace H 0]
+
+＠芬恩·麦克库尔
+但是这种气魄值得称赞。[r]击退魔猿可以在后面的树林里进行吧？
+[k]
+
+＠芬恩·麦克库尔
+御主，请尽情使唤迪尔姆德吧。
+[k]
+
+＠芬恩·麦克库尔
+当然也包括我。[r]毕竟供奉殿的骚乱我也有责任。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠戈尔德鲁夫
+…………
+[k]
+
+[charaFace F 1]
+
+＠戈尔德鲁夫
+好吧。野外的工作就交给你们了，[r][%1]。
+[k]
+
+＠戈尔德鲁夫
+我就负责在阎魔亭里转转并探查这里的内幕。[r]我也有些在意的事。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠玛修
+明白了。是分头行动吧？
+[k]
+
+＠玛修
+那赶紧换上阎魔亭的工作服出发吧，御主！
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

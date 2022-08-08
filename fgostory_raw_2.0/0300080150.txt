@@ -1,0 +1,571 @@
+
+
+
+
+＄03-00-08-01-5-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5045000 1 玛修]
+[charaSet B 2008002 1 崔斯特拉姆]
+[charaSet C 1098208900 1 ？？？]
+[charaSet D 1098210500 1 哈罗巴洛米亚]
+[charaSet E 1098210600 1 翁法姆]
+[charaSet F 1098210700 1 多加]
+[charaSet G 98006000 1 敌人]
+[charaSet H 98115000 1 特效用]
+
+
+[charaSet I 1098209200 1 牙之氏族A]
+[charaSet J 1098209200 1 牙之氏族B]
+
+[scene 117300]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠崔斯特拉姆
+早上好，[&拉山德:赫米娅]。[r]昨晚睡得可好……不对。
+[k]
+
+[charaFace B 4]
+
+＠崔斯特拉姆
+……实在是提不起精神呢……[r]有点像是无法发自内心地向您打招呼……
+[k]
+
+＠崔斯特拉姆
+[&拉山德……拉山德……:赫米娅……赫米娅……][r]果然是这名字念起来不太对劲吧……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 0.5]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad506]
+[se ade245]
+[seVolume ade245 0 0.3]
+[wt 1.0]
+
+＠广场传来的声音
+这里根本没收拾嘛！[r]这废物又偷懒了！
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[charaFace B 5]
+[charaFace A 5]
+[charaFadeinFSL B 0.1 0]
+[charaFadeinFSR A 0.1 2]
+[wt 1.0]
+[charaTalk on]
+
+＠玛修
+广场那边传来了怒吼声。[r]要去看一下情况吗，[&拉山德:赫米娅]？
+[k]
+
+？1：当然！
+？2：现在就去！
+
+？！
+
+[messageOff]
+[wipeout leftToRight 0.5 1]
+[cueSe SE_21 21_ade580]
+[wait wipe]
+[seStop 21_ade580 0.4]
+[wt 0.5]
+
+[se ad443]
+
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 5]
+[charaDepth I 3]
+[charaDepth J 2]
+[charaDepth C 1]
+
+[charaFace F 3]
+[charaFace C 4]
+[charaFadein F 0.1 300,-50]
+[charaFadein I 0.1 100,-50]
+[charaFadein C 0.1 -400,-50]
+
+[pictureFrame cut063_cinema]
+[wt 0.5]
+[seStop ad443 0.5]
+
+[wt 0.5]
+[scene 117201]
+
+[wipein rightToLeft 0.5 1]
+[wait wipe]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠多加
+怎么会这样，[r]这下今晚的宴会就搞不成了啊。
+[k]
+
+＠多加
+喂，你为啥什么都不干啊。[r]难道你讨厌[&拉山德:赫米娅]吗？
+[k]
+
+[charaFace C 4]
+
+＠？？？
+怎么会……[r]不是这样的……我只是……
+[k]
+
+＠？？？
+…………那个。[r]我忘记了自己该做什么……
+[k]
+
+＠？？？
+等回过神来，已经到早上了……[r]大家都在训斥我……
+[k]
+
+＠I：牙之氏族
+喂，多加。这家伙又那样了。[r]她已经不行了吧？
+[k]
+
+[charaFace F 4]
+
+＠多加
+……唉。[r]也罢，找她负责是我犯蠢了。
+[k]
+
+[charaFace F 3]
+
+＠多加
+你可以走了，赶紧消失吧。[r]看着就碍眼，你可别靠近村子啊。
+[k]
+
+[charaFace C 1]
+
+＠？？？
+啊[line 3]感谢您原谅我！[r]有事请再叫我！
+[k]
+
+[messageOff]
+[se ad173]
+[charaFadeout C 0.4]
+[charaMove C -400,-50 0.4]
+[wt 0.4]
+[seStop ad173 0.5]
+[wt 1.0]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_11 1.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[pictureFrame]
+[wt 1.0]
+[se ad443]
+[seVolume ad443 0 0]
+[seVolume ad443 1.5 0.7]
+[wt 0.5]
+
+[fadein black 2.0]
+[wt 1.0]
+[seStop ad443 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_139 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFace I 0]
+[charaFace J 0]
+[charaFadein F 0.1 -50,0]
+[charaFadein I 0.1 -250,0]
+[charaFadein J 0.1 300,0]
+
+＠多加
+噢，早，[&拉山德:赫米娅]！[r]昨天也过得很开心啊！
+[k]
+
+？1：……刚才的妖精少女是？
+？2：你只让那女孩一个人收拾善后吗？
+
+？！
+
+[charaFace F 0]
+
+＠多加
+嗯？　那女孩是指那家伙吗？
+[k]
+
+＠多加
+喂，那家伙叫什么名字来着？
+[k]
+
+＠I：牙之妖精A
+这我哪知道啊。[r]叫什么来着？　刚来的时候应该有说过吧？
+[k]
+
+[charaFace J 1]
+
+＠J：牙之妖精B
+记得是嚯什么还是呼什么的吧！[r]总之是个挺呆的名字就对了！
+[k]
+
+[charaFace F 4]
+
+＠多加
+啊～，有这么回事吗。[r]……那家伙最开始也有过名字的啊。
+[k]
+
+[charaFace F 0]
+
+＠多加
+不过，既然想不起自己名字的原因[r]与迷雾无关的话，那就没救啦。
+[k]
+
+＠多加
+[&拉山德:赫米娅]也不要跟那家伙牵扯过深哦？[r]小心感染『无名』之病哦？
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠崔斯特拉姆
+……无名……意思是她没有名字吗？[r]所以才会受到刚才那种待遇？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFace I 0]
+[charaFace J 0]
+[charaFadein F 0.1 -50,0]
+[charaFadein I 0.1 -250,0]
+[charaFadein J 0.1 300,0]
+
+
+＠多加
+[FFFFFF]？[-]　无名妖精毫无价值可言吧？[r]因为已经成了[#就算消失也无所谓]的存在了。
+[k]
+
+＠I：牙之妖精A
+就是嘛，连这座村庄里也没有他们的容身之处。[r]实际上，那家伙的房屋也在村外吧？
+[k]
+
+＠J：牙之妖精B
+是啊，我们哪有宽裕让她住进[#领域:地盘]啊。[r]话说真亏她那样的还能活下来呢。
+[k]
+
+＠J：牙之妖精B
+每天伤口一个劲地增加，但手脚都还在。[r]说不定以前其实是个上级妖精大人呢。
+[k]
+
+[charaFace J 1]
+
+＠J：牙之妖精B
+不过现在只余那副惨状啦！
+[k]
+
+＠J：牙之妖精B
+这意味着连森林的野兽们[r]都对无名的肉块不感兴趣啦！
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠玛修
+[line 6]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFace I 0]
+[charaFace J 1]
+[charaFadein F 0.1 -50,0]
+[charaFadein I 0.1 -250,0]
+[charaFadein J 0.1 300,0]
+
+＠多加
+废话到此为止。[r]我们还是赶紧出发吧，[&拉山德:赫米娅]！
+[k]
+
+[charaFace F 1]
+
+＠多加
+说好今天要踢一整天足球的吧？[r]运动场正在等着我们哦！
+[k]
+
+[messageOff]
+[se ad173]
+[se ad527]
+[charaTalk off]
+[charaFadeout I 0.4]
+[charaFadeout J 0.4]
+[charaFadeout F 0.4]
+[wt 1.0]
+[seStop ad527 0.5]
+[seStop ad173 0.5]
+[wt 1.0]
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠崔斯特拉姆
+……怎么办，[&拉山德:赫米娅]。[r]他们去运动场了……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+？1：玛修，你知道什么是无名的妖精吗？
+
+？！
+
+
+＠玛修
+名副其实，就是丧失了名字的妖精。
+[k]
+
+＠玛修
+我们是在『无名之森』丧失记忆的，[r]不过妖精也会因为自身原因丧失名字。
+[k]
+
+＠玛修
+妖精基本上不会衰老。[r]不像人类或动物那样存在寿命。
+[k]
+
+＠玛修
+然而，降生时心中怀着的目的[line 3][r]“能令自己沉醉的事物”……
+[k]
+
+＠玛修
+迷失了这个的妖精会丧失名字，[r]逐渐衰弱、逝去。
+[k]
+
+＠玛修
+……她也属于这一类。[r]虽说看样子，她已经丧失名字很久了。
+[k]
+
+？1：村子里真的没有她的家吗？
+
+？！
+
+＠玛修
+应该是真的吧。[r]丧失名字的妖精会遭到其他妖精厌恶。
+[k]
+
+＠玛修
+能允许她进村子里面，[r]这里的妖精们已经算很宽宏大量了。
+[k]
+
+[charaFace A 27]
+
+＠玛修
+……我知道你想说什么，[&拉山德:赫米娅]。[r]但是不可以。
+[k]
+
+＠玛修
+如果将她邀请到我们的帐篷，[r]村里的妖精们是不会坐视不管的。
+[k]
+
+＠玛修
+我们能做到的事，我想想[line 3]
+[k]
+
+[charaFace A 6]
+
+＠玛修
+只有去探望一下她的住处，[r]要是发现有什么危险，就尽力帮她驱除。
+[k]
+
+＠玛修
+虽然无法邀请她来安全的村庄内，[r]但可以让她的住处变成和村子差不多安全的地方。
+[k]
+
+＠玛修
+如果是这类提案，来多少我都乐意。
+[k]
+
+？1：不愧是玛修，真可靠！
+？2：嗯，这样不错，非常棒！
+
+？！
+
+[messageOff]
+[cameraMove 0.4 0,0 1.1]
+[wt 0.4]
+[se ad775]
+[seVolume ad775 0 0.5]
+[wt 0.5]
+[charaFace A 3]
+
+＠玛修
+[FFFFFF]？[-]　拉着我的手是什么意思。
+[k]
+
+＠玛修
+哦……表示信赖与感谢的握手吗……[r]我第一次听说这种习俗……
+[k]
+
+[charaFace A 1]
+
+＠玛修
+这习惯令人有些高兴呢！[r]也许我还挺喜欢这种习俗呢，[&拉山德:赫米娅]！
+[k]
+
+[messageOff]
+[wt 0.5]
+[bgmStop BGM_EVENT_139 0.7]
+[wipeout leftToRight 1.5 1]
+[wait wipe]
+
+[cameraHome 0.1]
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[scene 122500]
+
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+
+
+
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[wt 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[bgm BGM_EVENT_80 0.1]
+
+[se ad526]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[charaMoveScale G 1.1 0.4]
+[charaMove G 0,20 0.4]
+[wt 1.5]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠玛修
+！
+[k]
+
+？1：已经遭到森林野兽的袭击了……！
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.5]
+[se ad150]
+[wt 0.5]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.2]
+
+
+[se bac127]
+
+[charaShake G 0.05 3 3 0.5]
+[charaMoveScale G 1.0 0.3]
+[effect bit_talk_Slash_white_01]
+[wt 0.1]
+[se bac127]
+[effect bit_talk_Slash_white_01_L]
+[wt 0.1]
+[se bac128]
+[fowardEffect bit_talk_ichimon01wh]
+[wt 0.5]
+[charaFadeout G 0.1]
+[wt 0.1]
+[fowardEffectDestroy bit_talk_ichimon01wh]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠崔斯特拉姆
+将野兽逼离少女身边了。
+[k]
+
+＠崔斯特拉姆
+赌上我的妖弦，[r]决不会让野兽再靠近少女半步。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠玛修
+非常感谢，接下来交给我吧！[r]看招，不许对那孩子出手！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

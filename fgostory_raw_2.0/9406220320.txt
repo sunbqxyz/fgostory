@@ -1,0 +1,1054 @@
+
+
+＄94-06-22-03-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001001 1 マシュ]
+[charaSet B 98003003 1 Dr.ロマン]
+[charaSet C 1010001 1 エリザベート]
+[charaSet D 2008000 1 トリスタン]
+[charaSet E 1020001 1 ランスロット]
+[charaSet F 98002000 1 フォウ]
+[charaSet G 6008001 1 ？？？]
+[charaSet H 98084000 1 騎士]
+[charaSet I 7014001 1 看護師]
+[charaSet J 4019001 1 モンク]
+[charaSet K 6005001 1 しりあるきらー]
+[charaSet L 6012001 1 サンソン]
+[charaSet M 2003001 1 ロビンフッド]
+
+[charaSet N 6014001 1 マタ・ハリ]
+[charaSet O 98104900 1 エリザベート]
+
+[imageSet P cut298_map 1]
+[charaScale P 1.45]
+
+[charaSet T 98115000 1 エフェクト用ダミー]
+
+[charaPut T 2000,2500]
+[charaEffect T bit_talk_10]
+
+[pictureFrame cut297_frame16 forceFullScreenSize]
+
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 135300]
+[wt 0.7]
+
+[fadein black 1.5]
+[wait fade]
+
+[pictureFrame]
+[pictureFrameTop cut297_frame16 forceFullScreenSize]
+
+[charaTalk H]
+[charaFadein H 0.4 0,-50]
+＠女王騎士
+ふ、不覚……！！[r]撤退、撤退である！
+[k]
+
+[messageOff]
+[se ad166]
+[charaMove H 1024,-50 0.7]
+[wait charaMove H]
+[seStop ad166 1.0]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_3 1.0]
+[wt 0.7]
+[wt 0.3]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 0,-50]
+
+[bgm BGM_EVENT_2 0.1]
+＠マシュ
+どうにか撤退させましたが……。[r]皆、一方ならぬ技量の持ち主でした。
+[k]
+
+[charaFace A 7]
+＠マシュ
+彼らほどの騎士が心酔する女王……[r]一体何者なのでしょうか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-175]
+
+＠Dr.ロマン
+特異点修正のためにも、[r]会いに行かねばならないだろうね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 2000,2500]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+
+＠エリザベート
+さ、[&子イヌ:子ジカ]。[r]もちろん協力してくれるわね！
+[k]
+
+？1：[%1]たちが、なかまになった！
+？！
+
+[charaFace C 7]
+＠エリザベート
+……。[r]……よ、良かったぁ……。
+[k]
+
+[charaFace C 6]
+＠エリザベート
+ありがとう……[#私:アタシ]ってば、感激も感激よ。[r]今すぐ歌い踊りたいくらいに。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+
+＠マシュ
+それは結構ですさあ出発しましょう！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+
+＠エリザベート
+即答！？
+[k]
+
+[charaFace C 0]
+＠エリザベート
+……まあいいわ。[r]ともかく！
+[k]
+
+
+[charaFace C 5]
+＠エリザベート
+勇者エリザベートの伝説が、今ここから始まるのよ！[r]見てらっしゃい、あの魔女め！
+[k]
+
+[messageOff]
+[wipeout rollRight 0.7 1]
+[wait wipe]
+[bgmStop BGM_EVENT_2 0.3]
+
+[charaFadeout C 0.1]
+[wt 1.0]
+
+[scene 135800]
+[wipein rollLeft 0.7 1]
+[wait wipe]
+
+
+
+＠ナレーション
+ゆうしゃエリザベートのぼうけんが　[se ad139]はじまった！
+[k]
+
+
+[messageOff]
+[wipeout rollRight 0.7 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[wt 1.0]
+
+[bgm BGM_EVENT_7 0.3]
+[charaTalk A]
+[charaFace A 0]
+[charaFace C 0]
+[scene 135300]
+[wipein rollLeft 0.7 1]
+[wait wipe]
+[charaFadeinFSR A 0.1 256,-50]
+[charaFadeinFSL C 0.1 -256,-50]
+
+＠マシュ
+ところでどうして酒場であんな看板を……？
+[k]
+
+[charaFace C 1]
+＠エリザベート
+ああ、あれは[line 3]
+[k]
+
+＠エリザベート
+『それじゃあ仲間の希望はね、強くてキラキラしてて[r]　[#私:アタシ]を飾り立てて[#私:アタシ]を崇めてくれる人！
+[k]
+
+＠エリザベート
+　当方ボーカル希望。バンド経歴なし。[r]　ギター、ベース、ドラム、プロ級の者、募集』
+[k]
+
+[charaFace C 2]
+＠エリザベート
+……って言ったら、あの酒場の女が満面の笑顔で[r]これを渡してくれたの！　ひどくない！？
+[k]
+
+[charaFace A 4]
+＠マシュ
+[#自業自得:じ ご う じ と く]でしたか……。
+[k]
+
+[messageOff]
+
+[pictureFrameTop]
+[pictureFrame cut297_frame16 forceFullScreenSize]
+[wt 1.0]
+
+[cueSe Battle ba6]
+[cueSe Battle bac117]
+[cueSeVolume bac117 0 0.8]
+[wipeout guruguru 1.5 1.0]
+[bgmStop BGM_EVENT_7 1.5]
+[cueSeStop ba6 1.5]
+[cueSeStop bac117 1.2]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+
+
+[pictureFrame]
+
+
+[scene 114900]
+[wt 2.0]
+
+[wipein guruguru 1.5 1.0]
+[bgm BGM_MAP_4 0.1]
+[wait wipe]
+[wt 0.3]
+
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+＠マタ・ハリ
+大体こんな感じかしら。[r]酒場の外は伝聞だけどね。
+[k]
+
+？1：エリちゃん……
+？！
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠エリザベート（ブレイブ）
+違うから。[r]そのエリザは[#私:アタシ]であって[#私:アタシ]だから。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 4]
+[charaFadein M 0.1 1]
+＠ロビンフッド
+狂っているようで自己認識はハッキリしてんだな……[r]余計タチが悪いぜ……。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 1]
+[charaFadein N 0.1 1]
+＠マタ・ハリ
+あ、そうそう。
+[k]
+
+＠マタ・ハリ
+ブレイブエリザちゃんが[r]ぶら下げてた看板、必要かしら？
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠エリザベート（ブレイブ）
+要[messageShake 0.05 4 3 0.4]らないわよ！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+＠マタ・ハリ
+残念。
+[k]
+
+＠マタ・ハリ
+あれをつけてたブレイブエリザちゃん、[r]すっごく可愛かったのに。
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 6]
+[charaDepth O 5]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+[charaPut O -375,0]
+＠エリザベート（ブレイブ）
+……。[charaFadeTime O 0.7 0.6][r]……。
+[k]
+
+[charaFace C 3]
+＠エリザベート（ブレイブ）
+……。[wt 0.6][charaFace C 2][r]……[messageShake 0.04 3 2 0.2]い[wt 0.2]・[wt 0.2][messageShake 0.04 3 2 0.2]ら[wt 0.2]・[wt 0.2][messageShake 0.04 3 2 0.2]な[wt 0.2]・[wt 0.2][messageShake 0.04 3 2 0.2]い[wt 0.2]・[wt 0.2][messageShake 0.04 3 2 0.2]わ……！
+[k]
+
+？1：苦しそうだ……
+？！
+
+[charaFadeout C 0.1]
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk M]
+[charaFace M 1]
+[charaFadein M 0.1 1]
+＠ロビンフッド
+容姿や在り方を『愛らしい』と認められるのは、[r]エリザベートにとって特攻だからな……。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠エリザベート（ブレイブ）
+さあ、とっとと行くわよ。[r]行く先はチェイテピラミッド！
+[k]
+
+[charaFace C 7]
+＠エリザベート（ブレイブ）
+……なのだけど、ここから先が[r]ちょっとむつかしいのよね。
+[k]
+
+？1：むつかしい？
+？！
+
+[charaFace C 6]
+＠エリザベート（ブレイブ）
+口癖移っちゃったわ……。
+[k]
+
+[charaFace C 7]
+＠エリザベート（ブレイブ）
+それはともかく、[r]むつかしい理由はね。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_MAP_4 1.0 0.2]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 10000]
+
+[charaFadein P 0.1 -450,-435]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+
+[charaMove P 450,-435 2.1]
+[wt 0.1]
+[cueSe SE_21 21_ad1089]
+[wt 4.5]
+
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout P 0.1]
+
+[scene 114900]
+[bgm BGM_MAP_4 1.5 0.7]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠エリザベート（ブレイブ）
+ここを通り抜けないと、[r]城に辿り着けないからなの。
+[k]
+
+？1：頭おかしいのでは？
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk M]
+[charaFace M 4]
+[charaFadein M 0.1 1]
+＠ロビンフッド
+同感。王城までの道のりに溶岩地帯がある国とか、[r]そりゃ反乱も起きませんわ……
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+？2：……溶岩地帯とかあるの？
+
+
+＠エリザベート（ブレイブ）
+おかしいわよね。[r]どうして溶岩地帯とかあるのかしら。
+[k]
+
+＠エリザベート（ブレイブ）
+いくら特異点でも限度ない？
+[k]
+
+[charaFace C 0]
+
+？！
+
+＠エリザベート（ブレイブ）
+でも、ここで[#愚痴:ぐち]ってても[r]しょうがないわ。
+[k]
+
+[charaFace C 1]
+＠エリザベート（ブレイブ）
+さあ、行くわよ[&子イヌ:子ジカ]！[r]ついてきなさい、森の賢者も！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 4]
+[charaFadein M 0.1 1]
+＠ロビンフッド
+へいへい。[r]ったく、どうしてこうなったんだか……。
+[k]
+
+？1：どうしてこうなったの？
+？！
+
+[charaFace M 0]
+＠ロビンフッド
+まあ、語れば長いんだが……。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[cueSe Battle ba6]
+[cueSe Battle bac117]
+[cueSeVolume bac117 0 0.8]
+[wipeout guruguru 1.5 1.0]
+[bgmStop BGM_MAP_4 1.5]
+[cueSeStop ba6 1.5]
+[cueSeStop bac117 1.2]
+[wait wipe]
+
+[charaFadeout M 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[wipein guruguru 0.5 1.0]
+[wait wipe]
+
+[fadeout black 0.5]
+[wait fade]
+
+[pictureFrame cut297_frame16 forceFullScreenSize]
+
+
+[bgm BGM_EVENT_7 0.1]
+
+[scene 107802]
+[wt 0.7]
+
+[fadein black 1.5]
+[wait fade]
+
+[pictureFrame]
+[pictureFrameTop cut297_frame16 forceFullScreenSize]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace A 0]
+[charaFadeinFSL C 0.4 -256,-50]
+[charaFadeinFSR A 0.4 256,-50]
+
+＠エリザベート
+まずはね、まずはね。[r]仲間を集めるべきだと思うのよ！
+[k]
+
+＠マシュ
+わたしたちでは力不足でしょうか……？
+[k]
+
+[charaFace C 1]
+＠エリザベート
+いいえ、全然！[r]マシュも[&子イヌ:子ジカ]も頼りにしているわ！
+[k]
+
+[charaFace C 8]
+＠エリザベート
+でも、相手は名高い騎士たちよ。[r]三人じゃ、まだ足りないわ！
+[k]
+
+[charaFace C 0]
+＠エリザベート
+あと、ほら。[#私:アタシ]って勇者じゃない。[r]勇者にはバラエティ豊かなメンバーが付きものでしょ？
+[k]
+
+＠エリザベート
+[#私:アタシ]がアイドルだった時も、ドラムと太鼓、[r]それに木管といったメンバーが支えてくれたわ。
+[k]
+
+？1：打楽器多めですね
+
+[charaFace C 1]
+＠エリザベート
+ええ、原始のビートだもの！[r]とにかくドコドコ言うのよ、すごく！
+[k]
+
+？2：パーカッションが足りないな……
+
+[charaFace C 7]
+＠エリザベート
+そうなのよね……でももっと他に、[r]致命的に足りないものがある気がするわ……
+[k]
+
+？！
+
+[charaFace A 0]
+＠マシュ
+あの……他に欲しいクラスといえば、[r][#魔術師:キャスター]でしょうか？
+[k]
+
+[charaFace C 1]
+＠エリザベート
+うんうん！　それと[#僧侶:ビショップ]もいいわね。[r]癒やしの力で回復してくれる的な！
+[k]
+
+[charaFace A 12]
+＠マシュ
+回復ですか……。
+[k]
+
+[messageOff]
+[wipeout circleIn 0.7 1]
+[bgmStop BGM_EVENT_7 0.4]
+[wait wipe]
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[charaFilter I silhouette 00000080]
+[charaFilter J silhouette 00000080]
+[charaFilter K silhouette 00000080]
+[charaFilter L silhouette 00000080]
+
+[scene 135500]
+[wt 0.4]
+[wipein circleIn 0.7 1]
+[wait wipe]
+[bgm BGM_EVENT_4 0.1]
+
+[se ad89]
+[wt 1.0]
+
+[charaFadein I 0.4 0,-50]
+＠看護師
+[line 3]では、治療を始めます。
+[k]
+
+＠看護師
+あなたを生かすためです、[r]骨の一本や二本、腕の二本や三本は我慢してくださいね。
+[k]
+
+[charaEffect I bit_talk_41_fs]
+[cameraMove 0.4 10,-30 1.2]
+＠看護師
+では、行きますッ！
+[k]
+
+[wait camera]
+[messageOff]
+[wipeout circleIn 0.3 1]
+[wait wipe]
+
+[scene 107400]
+
+[charaEffectStop I bit_talk_41_fs]
+[charaFadeout I 0.1]
+[cameraHome 0.1]
+[wait camera]
+[wt 0.4]
+[wipein circleIn 0.3 1]
+[wait wipe]
+
+[charaFadein J 0.4 0,-50]
+
+＠モンク
+ん、回復？　まだ大丈夫よ、アドレナリンか[r]エンドルフィンで自己回復する筈だから！
+[k]
+
+＠モンク
+ほらほら泣かない泣かない。[r]しゃっきりなさい、英雄なんでしょ！
+[k]
+
+[cameraMove 0.4 10,-30 1.2]
+[wait camera]
+[messageOff]
+[shake 0.05 5 5 0.7]
+[se ad102]
+[wipeout circleIn 0.3 1]
+[wait wipe]
+
+[scene 135600]
+[charaFadeout J 0.1]
+[cameraHome 0.7]
+[wait camera]
+[wt 0.4]
+[wipein circleIn 0.3 1]
+[wait wipe]
+
+
+[charaFadein K 0.4 0,-50]
+
+＠しりあるきらー
+んー……よく分かんないから、かいたいするね？[r]がんばるよ！
+[k]
+
+[cameraMove 0.4 10,-50 1.2]
+[wait camera]
+
+
+[messageOff]
+[wt 0.4]
+[flashin once 1.0 1 FF0000FF FF0000FF]
+[bgmStop BGM_EVENT_4 0.5]
+[wt 0.7]
+[se ad161]
+[wt 0.3]
+[wipeout circleIn 0.7 1]
+[wait wipe]
+[flashout 0.5]
+[charaFadeout K 0.1]
+[cameraHome 0.7]
+[wait camera]
+[scene 107802]
+[wt 0.7]
+[wipein circleIn 0.7 1]
+[wait wipe]
+[bgm BGM_EVENT_2 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+
+＠エリザベート
+……回復は自力で何とかしましょうか！
+[k]
+
+？1：そうですね！
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠マシュ
+意外と人選が難しいですね。[r]他に回復できる人は……。
+[k]
+
+？2：他にいないかな？
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠マシュ
+はい、他ですと……。[r]サンソンさんでしょうか。
+[k]
+
+[messageOff]
+[wipeout circleIn 0.7 1]
+[bgmStop BGM_EVENT_2 0.7]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaFilter L silhouette 00000080]
+[scene 135500]
+[wt 0.7]
+[wipein circleIn 0.7 1]
+[wait wipe]
+[bgm BGM_EVENT_4 0.1]
+[charaFadein L 0.4 0,-50]
+
+＠サンソン
+はい、回復できましたよ。
+[k]
+
+＠サンソン
+人を処刑していた僕が、人を治療するとは……[r]ふふ、皮肉なものです……。
+[k]
+
+＠サンソン
+そう、僕には罪がある……。
+[k]
+
+＠サンソン
+ああ、マリー……マリー……僕はいつ、[r]自分を赦せるのだろうか……！
+[k]
+
+[messageOff]
+[wipeout circleIn 0.7 1]
+[wait wipe]
+[charaFadeout L 0.1]
+[charaFilter L silhouette 00000080]
+
+[scene 107802]
+[bgmStop BGM_EVENT_4 0.1]
+[wt 0.7]
+[wipein circleIn 0.7 1]
+[wait wipe]
+[bgm BGM_EVENT_2 0.1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 0,-50]
+
+＠マシュ
+……迂闊に回復できなくなるくらいに、[r]重いですね……。
+[k]
+
+？！
+
+[charaFace A 4]
+＠マシュ
+ダメです。[r]他は思いつきません。
+[k]
+
+[charaFace A 0]
+＠マシュ
+ひとまず、酒場に戻って募集してみますか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 0,-50]
+
+＠エリザベート
+あ、その、酒場はちょっと……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+
+＠マシュ
+そうですね……。[r]なら、ドクター。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-175]
+
+＠Dr.ロマン
+……ふわあ。
+[k]
+
+？1：おい
+？！
+
+[charaFace B 2]
+＠Dr.ロマン
+ひぃ、ドスの利いた声！
+[k]
+
+[charaFace B 4]
+＠Dr.ロマン
+いや、いつになくリラックスできたもので、[r]ついつい……。
+[k]
+
+[charaFace B 0]
+＠Dr.ロマン
+大丈夫、キミの存在は確認しているよ。[r]どうしたのかな？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 2000,2500]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠マシュ
+仲間になるサーヴァントを探したいので、[r]捜索範囲を可能な限り拡大してください。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-175]
+
+＠Dr.ロマン
+オーケー、了解。[r]……微弱だが、キミたちの近くに反応があるな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 2000,2500]
+[bgmStop BGM_EVENT_2 1.0]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+
+＠マシュ
+え！[r]近くにですか！？
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaFace A 2]
+＠マシュ
+マスター、警戒を！[r]待ち伏せの可能性があります！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠エリザベート
+え、なになに？[r]誰かいるの？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+[charaFace C 8]
+
+＠エリザベート
+ちょっと出てきなさいよー！
+[k]
+
+[bgm BGM_EVENT_3 1.0 0.2]
+[charaFadeout C 0.1]
+[messageOff]
+
+[cameraMove 2.0 -100,0 1.2]
+[wait camera]
+[bgmStop BGM_EVENT_3 2.0]
+[cameraMove 2.0 100,0 1.2]
+[wait camera]
+[cameraHome 1.2]
+[wait camera]
+
+[wt 0.5]
+[se ad117]
+[wt 2.0]
+
+
+＠マシュ
+……静かですね。[r]ドクター、本当に……？
+[k]
+
+＠Dr.ロマン
+本当だってば！[r]仕事してるちゃんとしてる！
+[k]
+
+＠Dr.ロマン
+それより、そこまで近くにいても[r]気付かないということは[line 3]。
+[k]
+
+＠マシュ
+アサシンでしょうか。
+[k]
+
+＠Dr.ロマン
+先ほどより動いてないから、[r]危害を加える気はなさそうだけどね。
+[k]
+
+
+[messageOff]
+[se ad27]
+[seVolume ad27 0.5 0.1]
+[wt 0.4]
+[se ad27]
+[wt 0.45]
+[se ad110]
+[wt 0.7]
+＠エリザベート
+[f large][messageShake 0.05 5 5 0.7]ふぎゃーーーー！？
+[k]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+マスター、今の悲鳴は……！
+[k]
+
+
+[messageOff]
+[wipeout rightToLeft 0.3 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaSet O 98105000 1 エリザベート]
+[charaTalk O]
+[charaFace O 2]
+[scene 107802]
+
+[wipein leftToRight 0.3 1]
+[wait wipe]
+[bgm BGM_EVENT_3 0.1]
+[charaFadein O 0.1 1]
+＠O：エリザベート
+誰よこんなところにトラップ仕掛けたの！[r]足、足が引っかかって身動きが……！
+[k]
+
+[se ad21]
+[charaShake O 0.05 1 1 0]
+[charaFace O 4]
+＠O：エリザベート
+やだ、変なの来た！[r]動けない、助けて[&子イヌ:子ジカ][line 3]！
+[k]
+
+
+[messageOff]
+[wipeout leftToRight 0.3 1]
+[wait wipe]
+[charaShakeStop O]
+[charaFadeout O 0.1]
+[charaTalk A]
+[charaFace A 12]
+[scene 107802]
+
+[wipein rightToLeft 0.3 1]
+[wait wipe]
+？1：助けに行こう！
+？！
+
+[charaFadein A 0.1 0,-50]
+＠マシュ
+はい！
+[k]
+
+[messageOff]
+[wipeout rightToLeft 0.3 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaTalk A]
+[charaFace O 4]
+[scene 107802]
+
+[wipein leftToRight 0.3 1]
+[wait wipe]
+[charaFadein O 0.1 1]
+[charaShake O 0.05 1 1 0]
+
+＠マシュ
+エリザベートさん！
+[k]
+
+＠O：エリザベート
+[&子イヌ:子ジカ]ーーー！！[r]足、足が引っかかって動けないの！
+[k]
+
+＠O：エリザベート
+だずげでえええええ！！
+[k]
+
+[charaFadeout O 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-50]
+
+＠マシュ
+大丈夫です、今助けます！[r]ともかくマスター、指示をお願いします！
+[k]
+
+[charaFadeout A 0.1]
+[charaTalk O]
+[charaFadein O 0.1 0,-50]
+
+
+＠O：エリザベート
+そーのーまーえーにーだーずーげーでー！！
+[k]
+
+？1：ごめん、後で！
+？！
+
+
+
+
+
+[messageOff]
+[pictureFrameTop]
+[pictureFrame cut297_frame16 forceFullScreenSize]
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[charaShakeStop O]
+[charaFadeout O 0.1]
+[soundStopAll]
+[end]

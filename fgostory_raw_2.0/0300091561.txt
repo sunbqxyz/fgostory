@@ -1,0 +1,140 @@
+
+＄03-00-09-15-6-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1049000 1 村正]
+[charaSet B 1098124500 1 达·芬奇]
+[charaSet C 5045001 1 阿尔托莉雅]
+[charaSet D 1098216200 1 哈贝特洛特]
+[charaSet E 1098209500 1 白狼]
+[charaSet F 5021000 1 贤者格里姆]
+
+[charaSet G 98006200 1 杂兵烟状]
+[charaSet H 98006200 1 杂兵烟状]
+
+[imageSet J back10000 1 1]
+[charaScale J 1.05]
+
+[charaSet K 1098217600 1 演出用白立绘]
+[charaScale K 1.35]
+
+[charaSet S 98115000 1 特效用]
+
+[sceneSet L 129400 1]
+[scene 120001]
+
+
+[charaTalk off]
+
+[charaFace G 0]
+[charaFace H 0]
+[charaFadeinFSR G 0.1 2]
+[charaFadeinFSL H 0.1 0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[se ad42]
+[charaEffect G bit_talk_atomization]
+[charaEffect H bit_talk_atomization]
+[wt 0.8]
+
+[charaFadeout G 1.0]
+[charaFadeout H 1.0]
+[wt 3.5]
+
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+[wt 1.4]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_142 0.1]
+
+？1：刚才那是……
+？2：我好像曾经……
+
+？！
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠贤者格里姆
+……干得漂亮，阿尔托莉雅。[r]这样一来，彼此都下定决心了吧。
+[k]
+
+＠贤者格里姆
+接下来只要敲响钟声，奥克尼的使命就结束了，[r]不过得先解决那个。
+[k]
+
+[charaFace F 0]
+＠贤者格里姆
+去触碰『棺柩』吧，[%1]。[r]这样小妹妹就能恢复原状了。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+[bgmStop BGM_EVENT_142 2.0]
+
+？1：（缓步靠近。）
+
+[messageOff]
+[charaTalk off]
+
+[se ad95]
+[wt 1.8]
+[overlayFadein L 1.5 0,-200]
+[wt 0.8]
+[seStop ad95 0.5]
+[wt 2.5]
+
+？2：（当即飞奔着靠近。）
+
+[messageOff]
+[charaTalk off]
+
+[se ad55]
+[seVolume ad55 0 0]
+[seVolume ad55 0.5 1.0]
+[wt 0.7]
+[overlayFadein L 1.5 0,-200]
+[wt 0.2]
+[seStop ad55 0.3]
+[wt 2.5]
+
+？！
+
+[criMovie talk_mov096 bgmPlay false]
+[wt 0.8]
+[charaFadeout L 1.0]
+[scene 10001]
+[wt 21.2]
+[overlayFadein K 1.0 1]
+
+
+
+
+
+
+
+
+
+[fadein white 2.0]
+[wait fade]
+
+[messageOff]
+[fadeout black 0.2]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

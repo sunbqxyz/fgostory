@@ -1,0 +1,1174 @@
+
+
+
+＄94-04-78-26-1-0
+
+[soundStopAll]
+
+
+
+[charaSet A 98001000 1 玛修]
+[charaSet C 3043000 1 绘里濑]
+[charaSet D 25005000 1 旅行者]
+[imageSet E cut171_token_201 1]
+[charaSet F 4017001 1 玛丽]
+[charaSet G 7037000 1 鬼女红叶]
+[imageSet H cut169_spaceprobe 1]
+[imageSet I cut139_Grail 1]
+[charaSet S 5009000 1 特效用dummy1]
+[charaSet T 5009000 1 特效用dummy2]
+
+
+[scene 96000]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.5]
+
+[scene 93200 1.2]
+[wt 2.7]
+
+[scene 96400 1.2]
+[wt 2.5]
+
+[bgm BGM_EVENT_1 0.1]
+
+
+＠玛修
+……游戏被分别放回各自的盒子里后，[r]星星也逐渐隐去了。
+[k]
+
+＠玛修
+各位从者也暂时变成了代币，[r]被一起收进了盒子里。
+[k]
+
+＠玛修
+[#游戏界:monde du jeu]的冒险就快到尾声了。[r]感觉有些冷清呢。
+[k]
+
+＠玛修
+……话说，前辈。有一件事让我有些担心。
+[k]
+
+[bgmStop BGM_EVENT_1 1.2]
+
+＠玛修
+我们究竟该怎么回去呢？
+[k]
+
+？1：呃……该怎么办呢……
+
+？！
+
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth S 2]
+[charaDepth T 3]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠玛修
+不……不要紧吧……？
+[k]
+
+＠玛修
+我们和达·芬奇亲的通信再次中断了…………[wt 0.5][charaFace A 6]咦？
+[k]
+
+
+[messageOff]
+
+[charaPut S 0]
+[charaEffect S bit_talk_token_float]
+[charaPut T 2]
+[charaEffect T bit_talk_token_float 0,0 H]
+[se adm19]
+[wt 3.0]
+[seStop adm19 0.5]
+
+[charaFace A 7]
+
+＠玛修
+这……是代币！[r]是爱迪生先生和卫宫先生的代币，前辈！
+[k]
+
+[charaFace A 0]
+
+＠玛修
+两位竟然落单并漂流到这种地方来了……
+[k]
+
+？1：真不容易啊。他们……暂且没事吧？
+？2：是因为担心我们才赶来这里的吗？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut S 1200,1200]
+[charaEffectDestroy S]
+[charaPut T 1200,1200]
+[charaEffectDestroy T]
+[charaTalk depthOn]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠玛丽
+等回迦勒底之后，要好好说给我听听哦。
+[k]
+
+[charaFace F 0]
+
+＠玛丽
+哎呀，但现在的问题是该怎么回去吧。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠绘里濑
+……没关系。[r]旅行者在这里。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth E 2]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 -100,0]
+[wt 0.2]
+
+[charaPut T 200,0]
+[charaEffect T bit_talk_token_float 0,0 H]
+[se adm19]
+[wt 3.0]
+
+[fadeout white 1.0]
+[wait fade]
+[seStop adm19 1.0]
+[charaEffectDestroy T]
+[charaFadein E 0.1 200,-200]
+[wt 0.5]
+[fadein white 1.0]
+[wait fade]
+
+＠旅行者
+呀，你也来了啊，童谣。[bgm BGM_EVENT_2 0.1]
+[k]
+
+[charaFace D 7]
+
+＠旅行者
+嗯，没错。[r]我一定会，护送你们。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛修
+原来如此……！[r]有旅行者先生送我们就可以放心了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠绘里濑
+………………
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠旅行者
+各位，可以出发了吗？　做好准备了吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+嗯！　爱迪生先生、卫宫先生、[r]童谣小姐的代币都收纳好了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠旅行者
+那就，出发了哦？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠玛丽
+大家以旅行者先生为中心手拉手吧。[r]红叶小姐？　借你的爪子一用。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠鬼女红叶
+咕噜呜！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth C 2]
+
+[charaTalk F]
+[charaFace C 4]
+[charaFadein C 0.1 0]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+
+＠玛丽
+[line 3]来，绘里濑小姐也把手给我。
+[k]
+
+[messageOff]
+[charaMove F 200,0 0.6]
+[wt 0.5]
+[se ad183]
+[seVolume ad183 0 0]
+[wt 0.1]
+[seVolume ad183 0.2 1.0]
+[wt 0.7]
+
+[charaFace C 13]
+
+＠绘里濑
+…………啊……
+[k]
+
+[charaFace F 4]
+
+＠玛丽
+还在困惑……还在发抖，[r]还非常不安吧，绘里濑小姐。
+[k]
+
+＠绘里濑
+玛丽王后……
+[k]
+
+＠玛丽
+毕竟是重生，会这样也在所难免。[r]今后你也会多次迷路。
+[k]
+
+[charaFace F 0]
+
+＠玛丽
+但是哦……
+[k]
+
+＠玛丽
+至少现在，在这次[#现界:生命]中，[r]与你缔结了羁绊的御主[line 3]
+[k]
+
+＠玛丽
+应该会让你获得问心无愧的[#职责:生存方式]。
+[k]
+
+[charaFace C 20]
+
+＠绘里濑
+羁绊……
+[k]
+
+[charaFace C 0]
+
+＠绘里濑
+……那个，呃……说实话……
+[k]
+
+＠绘里濑
+即便像这样实际遇见[%1]，[r]我依然不太理解……
+[k]
+
+[charaFace C 1]
+
+＠绘里濑
+但当我看到玛丽王后和玛修小姐的样子时，[r]我感到自己终于，总算是勉强接受了。
+[k]
+
+？1：这就够了。
+
+[charaFace C 14]
+
+＠绘里濑
+像……像这样老好人到没底线……[r]性格如此天真的话，你自己会……
+[k]
+
+[charaFace C 1]
+
+＠绘里濑
+嗯，没什么。忘了我说的话吧。
+[k]
+
+？2：这话还挺打击我的……
+
+[charaFace C 11]
+
+＠绘里濑
+啊……对……对不起。[r]我不是这个意思。
+[k]
+
+[charaFace C 18]
+
+＠绘里濑
+你想，刻板印象中的魔术师应该更为……[r]嗯，稍后我会认真道歉的。
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠鬼女红叶
+咕啊啊呜呜呜呜呜噜噜噜噜！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠绘里濑
+呃？　哎，红叶小姐？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth C 2]
+
+[charaTalk F]
+[charaFace C 12]
+[charaFadein C 0.1 0]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+
+＠玛丽
+很认真的样子呢。[r]她说了什么呢？
+[k]
+
+[charaFace C 0]
+
+＠绘里濑
+嗯……[r]她在为我的启程祝福。
+[k]
+
+[charaFace C 20]
+
+＠绘里濑
+……她说死亡有时也是新生的开始。[r]谢谢你，红叶小姐。
+[k]
+
+[charaFace C 0]
+
+＠绘里濑
+没错。[r]这的确是死亡与再生的必经仪式。
+[k]
+
+＠玛丽
+死亡是新生的开始。[r]这话对[#一骑:一位]从者来说非常有分量呢。
+[k]
+
+＠玛丽
+或许终有一天，你将见证世界的终结。[wt 0.6][charaFace F 1][r]不过，那之后应该会诞生出什么吧。
+[k]
+
+[charaFace C 12]
+
+＠绘里濑
+……世界的终结，与那之后？
+[k]
+
+？1：真希望能够看到。
+
+？！
+
+[bgmStop BGM_EVENT_2 2.0]
+
+[charaFace C 0]
+
+＠绘里濑
+……我以前和旅行者约好了。[r]要终结某个存在。
+[k]
+
+＠绘里濑
+这件事，也要重头开始了。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[bgm BGM_EVENT_78 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠旅行者
+……我没有忘记哦，绘里濑。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠绘里濑
+你可以忘记哦，旅行者。[r]负担还是轻一点比较好。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+前辈，星星的光越来越暗了……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.7]
+
+？1：出发吧，绘里濑。
+
+？2：回迦勒底。
+
+？！
+
+＠绘里濑
+说得对。[r]留在这里也无济于事。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[wt 0.5]
+
+[effect bit_talk_np_buf]
+[se ad476]
+[seVolume ad476 0 0.6]
+[se adm19]
+[seStop ad400 1.5]
+[charaPut S 0,0]
+[charaEffect S bit_talk_golden_aura]
+[wt 0.5]
+[charaMove D 0,10 0.8]
+[wt 1.8]
+[seStop ad476 1.0]
+[seStop adm19 1.0]
+[wt 0.5]
+
+＠旅行者
+好了，[#要飞啦:lift off]！
+[k]
+
+[messageOff]
+[wipeout upToDown 1.0 1.0]
+[wait wipe]
+[charaFadeout D 0.1]
+[charaEffectDestroy S]
+[scene 96500]
+[wt 0.5]
+[wipein downToUp 1.0 1.0]
+[wait wipe]
+[wt 0.4]
+
+＠旅行者
+前往，绘里濑选择的地方[line 3]
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout white 2.0]
+[bgmStop BGM_EVENT_78 2.5]
+[wait fade]
+
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+[scene 66700]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+[scene 60300]
+
+[label lblConf2]
+
+[wt 2.5]
+
+[fadein white 2.0]
+[wait fade]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠玛修
+……回来了！[bgm BGM_EVENT_2 0.1][r]令人怀念的迦勒底！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠绘里濑
+迦勒底[line 3]我选择的地方。[r]这里就是……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠旅行者
+…………喂（戳戳）。
+[k]
+
+？1：哎哟，对了，得把暂存在我这儿的东西还你。
+
+？2：来，收下吧，旅行者。
+
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.3]
+
+[charaFadein H 0.5 0,-200]
+[wt 2.0]
+
+
+＠旅行者
+不是这个……
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth I 2]
+[charaDepth S 3]
+
+[charaPut S 1]
+[charaEffect S bit_talk_radiallight02]
+[wt 0.3]
+
+[se ad852]
+[seVolume ad852 0 0.0]
+[seVolume ad852 2.0 1.0]
+[wt 1.7]
+
+
+[fadeout white 1.5]
+[bgm BGM_EVENT_2 1.5 0.5]
+[seStop ad852 1.5]
+[wait fade]
+
+[charaEffectDestroy S]
+[charaFadeout H 0]
+[charaFadein I 0 0,-200]
+[wt 0.5]
+
+[fadein white 1.5]
+[bgm BGM_EVENT_2 1.5 1.0]
+[wait fade]
+
+[charaTalk depthOn]
+[wt 1.0]
+
+
+＠玛修
+这是……！？[r]游戏的棋子变成了“圣杯”！
+[k]
+
+＠旅行者
+这是连接，我和，绘里濑的东西。[r][#游戏]结束了，所以变回了原来的样子。
+[k]
+
+＠旅行者
+由你，拿着吧。
+[k]
+
+？1：我？
+？2：这不是绘里濑的东西吗……？
+
+？！
+
+＠旅行者
+没事。[r]因为，绘里濑[line 3]
+[k]
+
+[messageOff]
+[charaFadeout I 0.4]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠绘里濑
+[line 3]难道说，我的愿望实现了？
+[k]
+
+[charaFace C 20]
+
+＠绘里濑
+从者……无比尊贵的存在……[r]我竟然也能忝居其中……
+[k]
+
+[charaFace C 4]
+
+＠绘里濑
+如果我内心深处描绘着这种不自量力的梦，[r]我应该会羞愧到无地自容吧……
+[k]
+
+[charaFace C 0]
+
+＠绘里濑
+所以我才会寻求[#试炼:游戏]，[r]现在我终于理解了。
+[k]
+
+＠绘里濑
+另一位玛丽王后以那种角色出现，[r]大概也是基于我的愿望吧。
+[k]
+
+＠绘里濑
+是最适合惩罚我的人……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth C 2]
+
+[charaTalk F]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+
+＠玛丽
+正因为如此，绘里濑小姐。[r]你才必须去面对与克服。
+[k]
+
+＠绘里濑
+是，王后。
+[k]
+
+[charaFace C 14]
+
+＠绘里濑
+倒不如说，呃，我太对不起您了，[r]不胜惶恐……
+[k]
+
+[charaFace F 1]
+
+＠玛丽
+不用，绘里濑小姐。你做到了。[r]我由衷祝福你。
+[k]
+
+[charaFace C 1]
+
+＠绘里濑
+王后……！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛修
+而且，您实现了愿望，[r]作为从者来到了我们这里！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠绘里濑
+……我不知道是不是真的可以。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[charaFadein I 0.4 0,-200]
+[wt 1.0]
+
+？1：收下这个吧。
+
+？！
+
+[charaFadeout I 0.4]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠绘里濑
+……嗯。呃，请多……指教。
+[k]
+
+[charaFace C 3]
+
+＠绘里濑
+因为[%1]，是我的御主啊。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠旅行者
+太好了。
+[k]
+
+＠旅行者
+你知道吗？　我呀，在寻找[#星星]。[r]为了绘里濑，寻找，最为美丽的那颗。
+[k]
+
+
+[charaFace D 7]
+
+＠旅行者
+你，真是太棒了。
+[k]
+
+
+？1：你也是。
+？2：太感谢了。
+？！
+
+[bgmStop BGM_EVENT_2 1.5]
+
+[charaFace D 1]
+
+＠旅行者
+我是不会忘记你的哦。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠绘里濑
+旅行者……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_45 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠旅行者
+我得走了。
+[k]
+
+＠旅行者
+这是一次，巨大的，巨大的，重力助推。[r]我又得，踏上旅途了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+旅行者先生……[r]谢谢您。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠绘里濑
+……呜……等等，旅行者。[r]在这里再留一会儿吧！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠旅行者
+不要紧。绘里濑，[r]这里有，你的新[#工作]。
+[k]
+
+＠旅行者
+我也有，我的工作。[r]好了，走吧，[#红叶]。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠鬼女红叶
+噜呜呜……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth C 2]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 0]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+
+＠绘里濑
+连红叶小姐也要走吗！？
+[k]
+
+＠旅行者
+嗯。我们一起走。[r]你应该知道吧。
+[k]
+
+[charaFace C 14]
+
+＠绘里濑
+……话虽如此……！
+[k]
+
+[charaFace C 13]
+
+＠绘里濑
+迦勒底是另一个世界。和我们生活的时代并不相同。[r]而且红叶小姐本来就是很久很久以前的人。
+[k]
+
+[charaFace C 4]
+
+＠绘里濑
+她和『秋叶原』没有关系。要回英灵之座了……[r]这我能够预想到……
+[k]
+
+＠绘里濑
+虽然能够……[wt 0.3][charaFace C 14]但是！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.5]
+[effect bit_talk_np_buf]
+[se ad476]
+[seVolume ad476 0 0.6]
+[se adm19]
+[seStop ad400 1.5]
+[charaPut S 0,0]
+[charaEffect S bit_talk_golden_aura]
+[wt 0.5]
+[charaMove D 0,10 0.8]
+[wt 1.8]
+[seStop ad476 1.0]
+[seStop adm19 1.0]
+[wt 0.5]
+
+[charaFace D 1]
+
+＠旅行者
+你已经，不会再哭了吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut S 2400,2400]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠绘里濑
+……谁哭了！　我怎么会哭嘛！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut S 0,0]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 0,10]
+
+＠旅行者
+太好了。
+[k]
+
+[messageOff]
+[charaFace D 0]
+[wt 0.6]
+[charaEffectStop S bit_talk_golden_aura]
+[wt 0.5]
+[charaMove D 0,50 1.0]
+[wt 0.8]
+[charaFadeout D 0.4]
+[wt 1.0]
+[charaBackEffectDestroy D]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠鬼女红叶
+啊噜呜呜呜呜呜呜呜呜呜呜……！
+[k]
+
+[messageOff]
+[effect bit_talk_np_buf]
+[se adm19]
+[charaMove G 0,50 1.0]
+[wt 0.8]
+[charaFadeout G 0.4]
+[seStop adm19 1.0]
+[wt 1.2]
+[effectDestroy bit_talk_np_buf]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠绘里濑
+……旅行者……红叶小姐。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_45 1.0 0.5]
+[wait fade]
+[charaFadeout C 0.1]
+[scene 28302]
+[wt 0.3]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[effect bit_talk_starshine_golden 250,100]
+[se adm19]
+[seStop adm19 1.0]
+[wt 2.0]
+
+＠绘里濑
+再见了，[#祝你们旅途顺利:Bon voyage]。[r]同时，我也要启程了。
+[k]
+
+＠绘里濑
+……但愿有一天，我们能再次相见。[r]或许……说不定[line 3]
+[k]
+
+
+[messageOff]
+[wt 0.7]
+
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout C 0.1]
+
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+[scene 66700]
+
+[branch lblConf3]
+[label lblNotClear3]
+
+[scene 60300]
+
+[label lblConf3]
+
+[wt 0.3]
+[fadein black 1.0]
+[bgm BGM_EVENT_45 1.0 1.0]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠玛丽
+[line 3]他们走了呢，可爱的孩子。可爱的人。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad518]
+[seVolume ad518 0 0.1]
+[seVolume ad518 2.0 0.3]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+咦……？　寂静的迦勒底突然喧闹起来了。
+[k]
+
+[charaFace A 1]
+
+＠玛修
+大家都从代币中解放出来了！
+[k]
+
+[messageOff]
+[seStop ad518 1.0]
+[charaFadeout A 0.1]
+[wt 1.2]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠绘里濑
+…………呃……[r]那么，我应该重新向大家打个招呼吧。
+[k]
+
+[messageOff]
+[wt 0.4]
+
+？1：请多关照。欢迎来到迦勒底。
+？！
+
+
+[wt 0.2]
+[charaFaceFade C 7 0.5]
+[wt 2.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_45 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+

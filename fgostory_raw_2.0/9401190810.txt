@@ -1,0 +1,379 @@
+
+＄94-01-19-08-1-0
+[soundStopAll]
+[charaSet A 10002000 1 Meltryllis]
+[charaSet B 1007000 1 高文]
+
+[bgm BGM_EVENT_55 0.1]
+[scene 41305]
+[fadein black 1.5]
+[wait fade]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.4 1]
+＠高文
+已经进到非常深的位置了呢。[r]前面好像不通往任何地方……
+[k]
+
+？1：Flank是什么意思？
+
+[charaFace B 1]
+＠高文
+这个问题我也能回答。[r]Flank就是指侧腹部。
+[k]
+
+＠高文
+牛的侧腹肉被称为Flank，[r]但排骨这个名字或许更容易明白。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？2：Separator是什么意思？
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠Meltryllis
+Separator是指不纯杂质分离装置。[r]在这里似乎也包括了脱盐处理处。
+[k]
+
+＠Meltryllis
+相当于人体的肝脏部分。[r]将囤积于体内的有害物质无毒化并排出体外。
+[k]
+
+＠Meltryllis
+塞拉菲克斯从海底抽出的资源中，[r]大多数都会经过这里进行包装。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_55 1.0]
+[se bas2]
+[effect bit_talk_20]
+[wt 2.0]
+[effectStop bit_talk_20]
+[wt 1.0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Meltryllis
+……虽然看起来什么都没有，[r]但好像还残留着人类的[#记录:记忆]。
+[k]
+
+＠Meltryllis
+要触碰看看吗？[r]或许会有什么线索吧？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[effect bit_talk_20]
+[cameraMove 0.7 0,30 1.2]
+[wait camera]
+[effectStop bit_talk_20]
+[effect bit_talk_34]
+[se ad39]
+[effectStop bit_talk_34]
+[scene 10001 1.0]
+[wait effect]
+[cameraHome 0.1]
+[wt 1.0]
+[wipeout noise 1.0 1]
+[wait wipe]
+[wt 1.0]
+[cameraFilter gray]
+[scene 10000]
+[wipein noise 1.0 1]
+[wait wipe]
+[bgm BGM_EVENT_54 0.1]
+[effect bit_talk_noise]
+＠男人
+当塞拉菲克斯变得奇怪时，[r]我不禁内心偷笑，暗暗庆幸这太好了。
+[k]
+
+＠男人
+我和普通的学者组不同。[r]是为了以防万一而准备的善后人。
+[k]
+
+＠男人
+抹杀碍事的人。抹杀泄露机密的人。
+[k]
+
+＠男人
+嗯，还要检查[r]外部搬入资材的健康状态。
+[k]
+
+＠男人
+虽然是份肮脏的工作，但那又如何。[r]我是个恶人。迄今为止我什么都做过。
+[k]
+
+＠男人
+不相信他人。只把他人当做凯子。[r]弱者是被支配，被剥削的存在。
+[k]
+
+＠男人
+若不这么做，像我这样的没有父母，没有学历，[r]甚至没有运气的小混混是根本活不下去的。
+[k]
+
+[messageOff]
+[wipeout noise 0.4 1]
+[wait wipe]
+[scene 41100]
+[wt 0.4]
+[wipein noise 0.4 1]
+[wait wipe]
+
+
+＠男人
+所以这次我也有活下去的自信。[r]没有统治者的集团很快就会失去团结。
+[k]
+
+＠男人
+首先会开始争吵，知识阶级会结成派系，[r]以获得权益为前提开始差别待遇。
+[k]
+
+＠男人
+等死个几个人之后，就轮到我出场了。[r]我不是什么站在顶点的人。
+[k]
+
+＠男人
+长得不怎么样，性格恶劣，又没有领袖魅力。[r]所以，我会追随拥有这一切的人。
+[k]
+
+＠男人
+不可思议的是，这类领袖[r]似乎总是缺少像我这样的人所拥有的特性。
+[k]
+
+＠男人
+充满想象力的暴力性。[r]无法感受对方痛苦的凶恶就是我的武器。
+[k]
+
+＠男人
+正如我的期待，贝克曼让幸存者集结起来。[r]创建了组织、制订了法律，并选中了我担任执行者。
+[k]
+
+[messageOff]
+[effectStop bit_talk_noise]
+[scene 10000 0.1]
+[wait scene]
+[cameraFilter normal]
+[se ad161]
+[effect bit_talk_35]
+[wt 2.4]
+[fadeout black 0.1]
+[wait fade]
+[cameraFilter gray]
+[scene 41100]
+[effect bit_talk_noise]
+[wt 0.1]
+[fadein black 1.0]
+[wait fade]
+
+＠男人
+太棒了。我期待的世界终于到来了。[r]我可以随心所欲地满足我的支配欲。
+[k]
+
+＠男人
+杀害善人。杀害看不惯的家伙。[r]无需什么特别的理由，但将自己盯上的家伙送去当怪物的美餐。
+[k]
+
+＠男人
+我是恶人。对世间不抱任何期待。[r]我清楚地知道，尊重我的只有我自己。
+[k]
+
+＠男人
+然而，为什么[line 3]
+[k]
+
+[messageOff]
+[wipeout noise 0.4 1]
+[wait wipe]
+[scene 41500]
+[wt 0.4]
+[wipein noise 0.4 1]
+[wait wipe]
+
+＠男人
+这样的我，为什么。[r]会沦落到这样的下场。
+[k]
+[messageOff]
+[wipeout noise 0.4 1]
+[wait wipe]
+[scene 41100]
+[wt 0.4]
+[wipein noise 0.4 1]
+[wait wipe]
+
+
+＠男人
+那是一段愉快的时光。[r]因为我知道除了支配以外，还有其他与他人打交道的方法。
+[k]
+
+＠男人
+我知道了什么叫爱。[r]我做梦都没有想到，像我这样的男人居然能得到爱。
+[k]
+
+＠男人
+这个世界还有救。[r]所以[line 3]
+[k]
+
+＠男人
+为了那家伙，我什么都愿意做。[r]与迄今为止那些小打小闹的犯罪不同。……这次真的，什么都愿意。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_54 0.4]
+[wipeout noise 0.4 1]
+[wait wipe]
+[scene 41200]
+[wt 0.4]
+[se ad31]
+[wipein noise 0.4 1]
+[wait wipe]
+＠男人
+什么都不可怕。哪怕与全美国为敌都不可怕。[r]我是无敌的。不，我只害怕一件事。
+[k]
+
+＠男人
+……害怕。害怕，害怕！　我现在，无比害怕。[r]比自己死去可怕几十倍。
+[k]
+
+＠男人
+害怕被那家伙轻视，害怕被那家伙厌恶，[r]害怕被那家伙抛弃。
+[k]
+
+＠男人
+害怕恢复成原来那个渺小、畜生不如的，[r]犹如过街老鼠的小混混。
+[k]
+
+＠男人
+我知道了什么是爱。[r]明白了什么是能改变世界的慈爱。
+[k]
+
+＠男人
+没错。[r]所以，为了避免失去这份爱[line 3]
+[k]
+
+＠男人
+那哪怕世界毁灭，我都不在乎。
+[k]
+
+[messageOff]
+[se ade41]
+[wt 1.0]
+[se ade42]
+[wt 1.5]
+[se ad1]
+[effect bit_talk_noise_gr]
+[se ad31]
+[messageOff]
+[wipeout noise 1.5 1]
+[wait wipe]
+[cameraFilter normal]
+[scene 41305]
+[effectStop bit_talk_noise_gr]
+[effectStop bit_talk_noise]
+[wt 1.0]
+[seStop ad31 1.5]
+[wipein noise 1.5 1]
+[wait wipe]
+[bgm BGM_EVENT_11 0.1]
+
+？1：…………刚才那是…………
+？2：……不是很明白……
+
+？！
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠高文
+……虽然我不知道[%1]看到了什么……
+[k]
+
+[charaFace B 4]
+＠高文
+但刚才那仿佛是求助的声音。[r]宛若在死亡深渊恳求神明原谅的受伤罪人。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Meltryllis
+这就是所谓的人类的感伤吗？[r]无论罪人怎么辩解，都改变不了是罪人的事实。
+[k]
+
+＠Meltryllis
+就算忏悔，犯下的罪也不会改变。[r]倘若真的能得到原谅，那也是在负面被修复之时。
+[k]
+
+＠Meltryllis
+但人类的负面是改不了的。[r]最多也就是用正面来补足，通过总体扯平来妥协罢了。
+[k]
+
+＠Meltryllis
+罪过是无法消除的。永远不能。[r]就算将一切都化为虚无，恶人依然是恶人。
+[k]
+
+[charaFace A 1]
+＠Meltryllis
+你也有印象吧，高文？
+[k]
+
+＠Meltryllis
+嘴上说要守护为善之人，[r]自己却不在对象范围之内[line 3]
+[k]
+
+＠Meltryllis
+虽然做着正义之举，但到临死之时，[r]你却依然被应负起责任的思想所禁锢。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠高文
+[line 3]话是这么说没错啦。[r]但真是令人惊讶。没想到居然会从你的口中听到这种话。
+[k]
+
+＠高文
+谢谢你，Lady。但不用为我挂心。[r]我自己其实已经很满足了。
+[k]
+
+＠高文
+因为所谓的人类，[r]最后还是会做他们想做的事。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠Meltryllis
+我……我又不是在为你挂心[line 3]
+[k]
+
+[charaFace A 6]
+＠Meltryllis
+不过算了。社会的规则与人情。[r]如果你觉得两者都维持耿直会比较轻松的话，随你的便。
+[k]
+
+＠Meltryllis
+这种逞强也算人类独有的特长了。[r][line 3]真是群无法如愿的生物呢。
+[k]
+[messageOff]
+[bgmStop BGM_EVENT_11 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

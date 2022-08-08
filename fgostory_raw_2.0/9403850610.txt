@@ -1,0 +1,277 @@
+
+
+＄94-03-85-06-1-0
+
+[soundStopAll]
+
+[charaSet A 98001000 1 家老玛修]
+[charaSet B 11007000 1 足轻信]
+[charaSet C 1098172100 1 龙套足轻]
+[charaSet D 7035001 1 森长可]
+[charaSet E 10008001 1 志度内]
+[charaSet F 7001001 1 赫拉克勒斯]
+[charaSet J 98115000 1 Shirou]
+
+
+[scene 79000]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_66 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠家老玛修
+[#前辈:殿下]，好像从虾夷来了个商人。
+[k]
+
+？1：虾夷是指北海道吗？
+
+？2：是来卖什么的啊？　大马哈鱼？
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠足轻信
+虾夷啊……那里对我们那个时代来说太遥远了，[r]我一点都不了解啊。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_66 1.5]
+
+[se ad55]
+[seVolume ad55 0 0.1]
+[seVolume ad55 0.5 1.0]
+[wt 1.0]
+[seStop ad55]
+
+[se ade34]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 -50,0]
+[charaMove C 1 0.5]
+[wt 0.5]
+
+＠龙套足轻
+不好了！[r]长可大人在城的桥上和虾夷商人争起来了！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠家老玛修
+哎哎！？　我是拜托森先生去迎接的才对啊！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠足轻信
+什么！？　这可不行！　先省略具体说明，[bgm BGM_EVENT_3 0.1][r]不知为何，桥和胜藏注定了会发生流血事件啊！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠家老玛修
+当真吗！？　这究竟是怎么一回事啊！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠足轻信
+不，那家伙以前曾有过只是被守桥的守卫[r]提醒了一下，就把守卫给斩杀了的比较硬派的轶事。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠家老玛修
+这不是什么硬派，而是冷酷无情！
+[k]
+
+＠家老玛修
+前辈，我很为商人担心！　我们快去看看吧！
+[k]
+
+[messageOff]
+
+[se ad59]
+
+[wipeout rightToLeft 0.5 0.5]
+[bgm BGM_EVENT_3 0.5 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+[seVolume ad59 0.5 0.5]
+
+[scene 52600]
+[wt 0.3]
+
+[wipein leftToRight 0.5 0.5]
+[bgm BGM_EVENT_3 0.5 1.0]
+[seVolume ad59 0.5 1.0]
+[wait wipe]
+
+[wt 0.5]
+[seStop ad59]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠家老玛修
+前辈！　就在那里！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠足轻信
+然后呢，那个虾夷的商人还活着吗？[r]应该死了吧？　我还挺想吃大马哈鱼呢……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+[effect bit_talk_kengekiall03]
+[wt 0.1]
+[se ad32]
+[wt 0.2]
+[se bac6]
+[wt 0.2]
+[se bac7]
+[wt 0.5]
+[flashin once 0.1 0.3 CC3300AF CC330000]
+[shake 0.02 3 3 0.5]
+[effect bit_talk_Slash_red_01]
+[se ad170]
+[wt 1.0]
+
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.4 -80,0]
+[charaShake D 0.05 2 1 0.6]
+[charaMove D -20,0 0.2]
+[wt 0.2]
+[charaMove D 1 0.2]
+[wt 0.2]
+[seStop ad671 0.5]
+
+＠森长可
+哇哈哈哈哈哈哈！[r]虾夷的武士也相当了得嘛！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠足轻信
+血流满面的居然是胜藏！？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 22]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠志度内
+真是的，我只是想过桥而已啊，[r]这家伙怎么回事，为什么突然攻击我啦？
+[k]
+
+＠志度内
+Shirou、Berserker，干掉他！
+[k]
+
+[cueSe Servants_1000800 bac838]
+
+＠Shirou
+嘎啊啊啊啊啊啊啊啊！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+[se ade263]
+
+＠赫拉克勒斯
+[image berserker_language_2][line 3]！！！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠家老玛修
+那是……志度内小姐！？[r]总……总之快阻止他们吧！　前辈！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[seStop ade263 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

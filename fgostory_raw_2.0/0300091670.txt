@@ -1,0 +1,208 @@
+
+＄03-00-09-16-7-0
+
+
+[bgmStop BGM_MAP_73 0.3]
+[bgmStop BGM_MAP_74 0.3]
+[bgmStop BGM_MAP_75 0.3]
+[bgmStop BGM_MAP_79 0.3]
+[wt 0.3]
+
+[enableFullScreen]
+
+[charaSet A 1049000 1 村正]
+[charaSet B 1098124500 1 达·芬奇]
+[charaSet C 1098210400 1 摩耳斯人]
+[charaSet D 1098231510 1 玛修]
+[charaSet E 5045001 1 阿尔托莉雅]
+[charaSet F 2043001 1 芭万·希]
+[charaSet G 2043001 1 芭万·希s]
+[charaFilter G silhouette 00000080]
+
+[imageSet H back10000 1]
+[charaScale H 1.05]
+
+[scene 117502]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[wt 0.7]
+[se ad1048]
+[seVolume ad1048 0 0.2]
+[wt 2.0]
+[seStop ad1048 1.0]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠玛修
+御主，快到这里来！[r]我们先远离马车吧！
+[k]
+
+[charaFace D 15]
+
+＠玛修
+那些敌对个体……恐怕……[r]是遭到摩耳斯诅咒侵蚀的，活生生的人类……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 3]
+[charaDepth H 1]
+
+[charaPut H 1]
+[charaFadeTime H 0.2 0.5]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠阿尔托莉雅
+（摩耳斯的诅咒将人类……？[r]　自然状况下绝不可能[line 3]）[wt 0.8][cueSe SE_21 21_ad1081]
+[k]
+
+[charaFadeout H 0.2]
+[charaFace E 2]
+[bgmStop BGM_EVENT_80 1.0]
+
+＠阿尔托莉雅
+危险！
+[k]
+
+[messageOff]
+[charaFadeout E 0.2]
+[charaMoveFSL E -64,0 0.2]
+[se ad73]
+[seVolume ad73 0 0.7]
+[seStop ad73 1.5]
+[wt 0.4]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadeinFSR E 0.2 16,0]
+[charaMove E 0,0 0.2]
+[wt 0.2]
+[se ad171]
+[effect bit_talk_blood_nail]
+[wt 0.1]
+[fowardEffect bit_talk_14]
+[se ad32]
+[charaShake E 0.04 3 3 0.4]
+[wt 0.3]
+[effectDestroy bit_talk_blood_nail]
+[wt 1.1]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk off]
+[charaDepth G 2]
+[charaDepth F 1]
+
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.1]
+[charaFace F 22]
+[charaFadein F 0 1]
+[wt 1.0]
+[charaFadeout G 0.4]
+[wt 1.4]
+
+[charaTalk on]
+[bgm BGM_BATTLE_167 0.1]
+
+＠芭万·希
+啊哈哈……厉害，真厉害～！[r]那家伙再次抵御了我的魔术……！
+[k]
+
+＠芭万·希
+告诉我嘛，你们是怎么做到的……？[r]你们为什么能看穿刚才那招？
+[k]
+
+＠芭万·希
+难得我将这群垃圾人类放了出来……[r]为什么只有你们逃进了安全范围呢……？
+[k]
+
+？1：妖精骑士崔斯坦……！
+
+[charaFace F 1]
+
+？2：芭万·希……！
+
+[charaFace F 14]
+
+＠芭万·希
+不准随便这么称呼……！[r]那不是我的错，那不是我的错……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠玛修
+您是[line 3]！[r]妖精骑士崔斯坦……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+？！
+
+
+＠芭万·希
+没错，没错！　我是母亲大人的女儿！[r]是妖精国内唯一继承了母亲大人魔术的妖精！
+[k]
+
+＠芭万·希
+所以[line 3]
+[k]
+
+[charaFace F 14]
+
+＠芭万·希
+你们这群臭小鬼就给我死在这里吧！[r]岂能让[#区区妖精:你们这些家伙]夺走我的容身之处！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[input selectBranch]
+[seStop ad32 0.4]
+[seStop ad73 0.4]
+[seStop ad171 0.4]
+[seStop ad1048 0.4]
+[cueSeStop 21_ad1081 0.4]
+
+[bgmStop BGM_EVENT_80 0.4]
+
+[label selectBranch]
+
+[wt 0.5]
+
+[branchMaterial lblMaterial]
+
+[bgm BGM_BATTLE_167 0.1]
+
+[branch lblBranchMaterialEnd]
+
+[label lblMaterial]
+
+[bgmStop BGM_BATTLE_167 0.5]
+[wt 0.5]
+
+[label lblBranchMaterialEnd]
+
+[end]

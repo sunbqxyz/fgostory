@@ -1,0 +1,1083 @@
+
+
+
+
+
+
+
+
+
+
+＄03-00-05-04-1-0
+
+[soundStopAll]
+
+
+[charaSet A 6012001 1 桑松]
+[charaSet B 1026001 1 迪昂]
+
+[charaSet C 1098181800 1 奥德修斯]
+[charaFilter C silhouette 00000080]
+
+[charaSet D 6038002 1 夏洛特·科黛]
+
+[charaSet E 1098182700 1 亚特兰蒂斯防卫兵]
+
+[charaSet F 1098181600 1 兜帽的人物]
+[charaSet G 1098128800 1 武藏]
+
+[charaSet H 98115000 1 特效用]
+[charaSet I 98115000 1 特效用]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 84701]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad170]
+[effect bit_talk_kengekiall03]
+[wt 0.2]
+[se ad170]
+[wt 0.3]
+[se ad32]
+[effectStop bit_talk_kengekiall03]
+[wt 0.8]
+
+[se bac210]
+[effect bit_talk_14]
+[wt 1.0]
+
+[se bac533]
+[effect bit_talk_blood_splash]
+[se ad863]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 1]
+[charaEffect A bit_talk_06]
+[wt 1.0]
+
+＠桑松
+[line 3]到此为止了吗……[r]抱歉，迪昂……！
+[k]
+
+[messageOff]
+
+
+[se ad52]
+[charaSpecialEffect A flashErasure 1 2.0]
+[wait charaSpecialEffect A]
+[charaEffectStop A bit_talk_06]
+[wait charaEffect A bit_talk_06]
+
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠迪昂
+桑松！[r]……呜！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[se ad170]
+[effect bit_talk_kengekiall01]
+[wt 0.2]
+[se ad170]
+[wt 0.2]
+[se ad170]
+[effectStop bit_talk_kengekiall01]
+[wt 0.8]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠迪昂
+啊啊啊啊啊啊！
+[k]
+
+[messageOff]
+[charaMoveScale B 1.1 0.2]
+[charaMove B 0,10 0.2]
+[wt 0.1]
+[se adm14]
+[effect bit_talk_v_slash01]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[se ad170]
+[charaPut H -200,50]
+[charaEffect H bit_talk_14]
+[wt 0.2]
+
+[se ad170]
+[charaPut H 200,-50]
+[charaEffect H bit_talk_14]
+
+[charaScale B 1.0]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠迪昂
+（一气呵成硬推过去，不考虑之后的事！[r]　现在只能这样……！）
+[k]
+
+[messageOff]
+[se adm14]
+[effect bit_talk_h_slash01]
+[wt 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad32]
+[effect bit_talk_13]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠迪昂
+（被弹开了！　好硬[line 3]）
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se bac51]
+[effect bit_talk_38l]
+[wt 1.0]
+[effectStop bit_talk_38l]
+[wt 0.2]
+
+[se bac145]
+[charaPut H -200,200]
+[charaEffect H bit_shot_01]
+[wt 0.1]
+
+
+[se bac145]
+[charaPut H 300,-300]
+[charaEffect H bit_shot_01]
+[wt 0.1]
+
+
+[se bac145]
+[charaPut H -250,-80]
+[charaEffect H bit_shot_01]
+[wt 0.1]
+
+
+[se bac145]
+[charaPut H 100,125]
+[charaEffect H bit_shot_01]
+[wt 0.2]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_shot_01]
+[wt 0.1]
+
+
+[charaScale B 1.1]
+[charaTalk B]
+[charaFace B 5]
+[se ad671]
+[charaFadein B 0.1 1]
+[charaMoveScale B 1.0 0.3]
+[wt 0.4]
+
+
+＠迪昂
+呜……！
+[k]
+
+＠迪昂
+（甚至……不是宝具吗……！）
+[k]
+
+[charaFace B 2]
+
+＠迪昂
+宝具[line 3]『[#百合花散剑之舞蹈:Fleur de Lys]』！！
+[k]
+
+[messageOff]
+[charaPut H 1]
+[se ad39]
+[charaEffect H bit_talk_36]
+[wt 1.5]
+[se ad834]
+[fadeout white 0.5]
+[wait fade]
+
+[charaEffectStop H bit_talk_36]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[fadein black 0.3]
+[wait fade]
+
+[se ad470]
+
+[effect bit_talk_Slash_white_01]
+[wt 0.3]
+[effect bit_talk_ichimon01wh]
+[wt 0.5]
+
+[charaPut H -300,0]
+[charaEffect H bit_talk_kengekiall02]
+[wt 0.1]
+[charaPut I 300,0]
+[charaEffect I bit_talk_kengekiall02]
+[wt 0.4]
+[fadeout white 0.5]
+[wait fade]
+[effect bit_talk_sand_dust_front 0,-50]
+[effect bit_talk_sand_dust_back 0,-50]
+
+[charaPut H 2000,2000]
+[charaPut I 2000,2000]
+
+[charaEffectStop H bit_talk_kengekiall02]
+[charaEffectStop I bit_talk_kengekiall02]
+[wt 1.0]
+[scene 84701]
+
+[fadein white 1.0]
+[se ad135]
+[seVolume ad135 0 0.0]
+[seVolume ad135 1.0 0.6]
+[wait fade]
+
+
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+
+[seStop ad135 2.5]
+[effectStop bit_talk_sand_dust_front]
+[effectStop bit_talk_sand_dust_back]
+[wt 2.5]
+
+＠C：？？？
+利用[#百合:Κρίνος]花进行迷惑与连续攻击啊。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠迪昂
+（毫发无损……！）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：？？？
+……犹如儿戏。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se bac150]
+[effect bit_talk_13]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠迪昂
+嘎，啊……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：？？？
+结束了，泛人类史。
+[k]
+
+＠C：？？？
+你们的[#巢穴]已经被一个不剩地摧毁了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠迪昂
+[line 3]呵。[r]根本没有结束。
+[k]
+
+＠迪昂
+[#在很久以前就开始了]，[r][#在遥远的过去已经结束]。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：？？？
+嗯，你是指那些家伙吗？[r]……他们会交给奥林波斯的Alterego处理。
+[k]
+
+＠C：？？？
+[#你以为他们只要到达就算结束了吗]？
+[k]
+
+＠C：？？？
+你们没有未来。[r]你们也没有通往将来的道路。
+[k]
+
+＠C：？？？
+顺者昌，逆者亡。[r]选择吧，泛人类史。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠迪昂
+……我拒绝！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：？？？
+这样啊。
+[k]
+
+＠C：？？？
+那就死吧。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[se ad818]
+[effect bit_talk_neck_blood]
+[bgmStop BGM_EVENT_80 1.0]
+[wt 2.4]
+[se ad775]
+
+[wt 1.8]
+[se ad144]
+[seVolume ad144 0 0.7]
+[fadeout black 0.1]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 1.4]
+
+[se ad52]
+[wt 2.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.5]
+
+[se ad166]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.5]
+[seStop ad166]
+
+＠亚特兰蒂斯防卫兵
+发现灵脉了。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_90 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：？？？
+这是最后的灵脉了。
+[k]
+
+＠C：？？？
+待召唤完从者，使灵脉失活后，[r]就彻底破坏。
+[k]
+
+＠C：？？？
+不能给对方留下任何获胜的机会。[r]那群家伙失败的原因，就是给我们留了时间。
+[k]
+
+＠C：？？？
+既然不存在触媒，召唤出来的[r]应该都是偶然被吸引至此的英灵吧……
+[k]
+
+＠C：？？？
+离远一点。[r]不能保证召唤出来的不是Berserker职阶。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠亚特兰蒂斯防卫兵
+遵命。
+[k]
+
+[messageOff]
+[se ad166]
+[charaMove E -50,0 0.4]
+[charaFadeout E 0.1]
+[wt 0.5]
+[seStop ad166 0.5]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 1.0]
+[se ad153]
+[seVolume ad153 0 0.2]
+[effect bit_talk_summon]
+
+＠C：？？？
+[line 3]以吾伟大主神之名宣告。[r]自抑止之轮而来吧，天秤的守护者。
+[k]
+
+[se ad632]
+[seStop ad632 5.0]
+
+＠C：？？？
+然后，将生命献给奥林波斯吧。[r]献给这片神之气息吹过的大地[line 3]！
+[k]
+
+
+[messageOff]
+[seStop ad632 1.0]
+[seStop ad153 1.0]
+
+[se ad574]
+[fadeout white 1.5]
+[wait fade]
+[effectStop bit_talk_summon]
+[wt 2.0]
+
+[charaFadeout C 0.1]
+
+
+[fadein white 2.0]
+[wait fade]
+
+[wt 1.0]
+
+＠D：？？？
+这里……是……？[r]咦？　我是……？
+[k]
+
+
+[clear]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：？？？
+……唔。
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.0]
+[bgm BGM_EVENT_90 1.0 0.5]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.01]
+[charaFadeout C 0.1]
+[wt 0.5]
+[pictureFrame cut063_cinema]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_90 1.0 1.0]
+[wait fade]
+
+
+
+＠D：？？？
+你是……我的……御主吗？
+[k]
+
+
+[clear]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠C：？？？
+没错。[r]你的身体，你的生命，你的实力，
+[k]
+
+＠C：？？？
+乃至于每一滴血液，[r]都要献给吾等奥林波斯。
+[k]
+
+＠C：？？？
+[line 3]为你的生命赋予意义。
+[k]
+
+[charaFadeout C 0.1]
+
+[clear]
+[wt 0.1]
+
+＠D：？？？
+请问……这……究竟是……？
+[k]
+
+[clear]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠C：？？？
+……如果无法理解，就立刻去死。[r]你的职责仅此而已。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠
+钢铁般的男人怀着烈焰般的意志，[r]说出这番话语。
+[k]
+
+＠D：？？？
+……[r]……
+[k]
+
+[messageOff]
+[cameraMove 0.5 0,8 1.01]
+[wt 0.5]
+[cameraMove 0.5 0,0 1.01]
+[wt 0.8]
+
+
+＠D：？？？
+[line 3]是。[r]我的生命属于身为御主的您。
+[k]
+
+＠
+从者屈膝下跪，俯首称臣。
+[k]
+
+＠
+而男人则不再关心从者。[r]只要不是敌人，就够了。
+[k]
+
+＠
+男人的思绪，已经转向了“敌人”。
+[k]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠C：？？？
+迦勒底。[r][line 3]破坏吾等世界的侵略者。
+[k]
+
+＠C：？？？
+……我会在这亚特兰蒂斯解决掉你们。[r]不会让你们侵略奥林波斯的大地。
+[k]
+
+＠C：？？？
+无人能够逃跑，无人能够生还。[r]迅速赶尽杀绝。
+[k]
+
+＠C：？？？
+准备战斗。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ade210]
+[wt 0.4]
+[seStop ade210]
+[wt 1.0]
+
+
+
+
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_90 1.0]
+[wait fade]
+
+[pictureFrame]
+[cameraHome 0.1]
+[scene 84900]
+[wt 3.0]
+
+[fadein black 1.0]
+[wait fade]
+
+＠
+[line 3]一男一女正眺望着在海面上疾驰的[#那个]。
+[k]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+[bgm BGM_EVENT_79 0.1]
+
+＠F：？？？
+[line 3]疯了吗？
+[k]
+
+＠F：？？？
+迦勒底的蠢货们。[r]竟敢凭那种程度的战力闯进这片海洋？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠武藏
+咦，真的吗！？　在哪在哪！？[r]啊，是那个吗！　有艘很帅气的船正在驶来！
+[k]
+
+[charaFace G 4]
+＠武藏
+啊～……但确实令人有些不放心呢。[r][#虽然是艘很棒的船]，[#但在这片海里太渺小了]。
+[k]
+
+[charaFace G 12]
+＠武藏
+老实说，现在还为时尚早。[r]胜负也许早在战斗前就已注定了呢。
+[k]
+
+＠武藏
+攻略了四个异闻带就得意忘形了……[r]但愿他们没有产生这种心境。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFace G 12]
+[charaFadein F 0.1 0]
+[charaFadein G 0.1 2]
+
+＠F：？？？
+真够尖刻的。[r]我还以为你会偏袒迦勒底的御主。
+[k]
+
+[charaFace G 1]
+
+＠武藏
+当然啦！[r]我可是超宠溺[%1]的！
+[k]
+
+[charaFace G 7]
+
+＠武藏
+所以我只是“有些”不放心而已。[r]这次的开端应该也会相当残酷吧！
+[k]
+
+＠F：？？？
+这种事情该笑吗？[r]我还是搞不懂你的想法。
+[k]
+
+＠F：？？？
+你是那种喜爱绝境的家伙吗？[r]比起剑士你更像是狂战士吧，真是的。
+[k]
+
+[charaFace G 1]
+
+＠武藏
+这时候当然该露出如花笑靥啊。[r]我对他们能来是真心感到高兴～。
+[k]
+
+＠武藏
+你呢？[r]迦勒底的到来出乎你的预料吗？
+[k]
+
+＠F：？？？
+…………[r]我其实想过这种可能性。
+[k]
+
+＠F：？？？
+简直糟透了。[r]这次总算能亲眼见证那些家伙失败了。
+[k]
+
+[charaFace G 9]
+
+＠武藏
+哎呀，听起来你很高兴呢。[r]可你的嘴角毫无笑意呢。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠F：？？？
+……哼。
+[k]
+
+＠F：？？？
+在俄罗斯的惨状是理所当然的。[r]毕竟那是最初的异闻带。
+[k]
+
+＠F：？？？
+在北欧的悲叹是情有可原的。[r]毕竟那是个过于温柔的世界的终结。
+[k]
+
+＠F：？？？
+在中国的骚动就视而不见吧。[r]毕竟那是长久以来未有庆典之世。
+[k]
+
+＠F：？？？
+在印度的自以为是可以让步。[r]毕竟那是极其单纯的善恶辩论。
+[k]
+
+＠F：？？？
+根据这些样本案例，[r]他们应该会这样想吧。
+[k]
+
+＠F：？？？
+“虽说大西洋异闻带也是个威胁，[r][f small]　[f -]但应该能有攻略、解决的手段”。
+[k]
+
+＠F：？？？
+然而并没有。[r]这里没有什么亟待解决的问题。
+[k]
+
+＠F：？？？
+这个异闻带已然完成，[r]并且正准备领先泛人类史走向下一个阶段。
+[k]
+
+＠F：？？？
+“前来攻略”的前提是个过失。[r]自以为了解异闻带的想法就是个错误。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+
+＠武藏
+也就是说？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠F：？？？
+他们并不具备“彻底粉碎这里”的方针策略。
+[k]
+
+＠F：？？？
+但愿他们能在全军覆没前改变这种想法。[r]或者[line 3]
+[k]
+
+＠F：？？？
+……也罢。[r]我只需要完成我的职责即可。
+[k]
+
+＠F：？？？
+你有何打算？[r]如果想登上那艘船的话，我送你过去吧。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFace F 0]
+[charaFadein G 0.1 2]
+[charaFadein F 0.1 0]
+
+＠武藏
+啊，这倒是不用。[r]因为我要先行一步前往根据地。
+[k]
+
+＠F：？？？
+………………
+[k]
+
+＠F：？？？
+……很难懂吗？　我刚才那番话的意思是，[r]再这样下去他们会全军覆没的。
+[k]
+
+＠武藏
+嗯，应该会这样吧。[r]但应该不至于全军覆没。
+[k]
+
+＠武藏
+就算经历惨痛的失败，丧失一切，[r]他们还是会留有能够卷土重来的性命。
+[k]
+
+＠武藏
+所以，我要去做我应该做的事。
+[k]
+
+＠武藏
+为了顺利将接力棒传到[r]不顾一切冲到终点的他们手中哦。
+[k]
+
+＠F：？？？
+……意思是，你对[#结局]有自己的看法吧。
+[k]
+
+＠F：？？？
+好吧。那就去奥林波斯吧。[r]那些家伙现在刚好能成为不错的诱饵。
+[k]
+
+[charaFace G 3]
+
+＠武藏
+对吧～？[r]毕竟神明们的视线紧紧盯着迦勒底呢～！
+[k]
+
+[charaFace G 0]
+
+＠武藏
+那么就这样，再会啦，迦勒底之人。[r]如果能在那边重逢的话，到时候[line 3]
+[k]
+
+＠F：？？？
+不会的。我与你缘尽于此。
+[k]
+
+＠F：？？？
+[#因为我的眼睛]，[r][#看不到将来的你了]。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+[wt 1.0]
+[charaFace G 11]
+[wt 0.6]
+[charaFace G 7]
+
+＠武藏
+嗯，那样倒也省事！[r]如果你见到大家，帮忙转告一声，『我先走一步啦』！
+[k]
+
+[messageOff]
+[effect bit_talk_17_bl_02]
+[wt 1.0]
+[se ad598]
+[charaSpecialEffect G wipeTime 1 1.0]
+[wt 0.5]
+[effectStop bit_talk_17_bl_02]
+[wt 2.0]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠F：？？？
+蠢货。谁会帮你转告啊。
+[k]
+
+＠F：？？？
+不过……竟然通过连续使用[#漂流:Drift]前往奥林波斯。[r]简直就像灵子转移啊。
+[k]
+
+＠F：？？？
+但迦勒底，[r]你们这样是行不通的。
+[k]
+
+＠F：？？？
+那里有堪称铜墙铁壁的奥林波斯舰队，[r]以及从感知范围外射来的流星之箭。
+[k]
+
+＠F：？？？
+就算能克服这些难关，[r]还有虚无的海神在等待着你们。
+[k]
+
+＠F：？？？
+……你明白吗，[r][%1]。
+[k]
+
+＠F：？？？
+在这里，你不会有学习异闻的从容。
+[k]
+
+＠F：？？？
+当你渴望知晓异闻带，知晓[#隐匿者:Crypter]时，[r]你的旅途也就迎来终点了。
+[k]
+
+＠F：？？？
+………………真是的。[r]实在是太无可救药了。
+[k]
+
+[messageOff]
+[se adm20]
+
+[charaEffect F bit_talk_17_bl]
+[charaFadeTime F 1.0 0.7]
+[wt 1.5]
+
+[se ad598]
+[charaEffectStop F bit_talk_17_bl]
+[charaFadeout F 1.5]
+[wt 3.5]
+
+＠
+疾驰的船名为鹦鹉螺号。
+[k]
+
+＠
+穿越四个[#异闻带:Lostbelt]，[r]与它们对峙，获得了胜利[line 3]
+[k]
+
+＠
+并朝着最强的第五个异闻带前进。
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_79 2.0]
+[wait fade]
+
+[scene 10000]
+[skip false]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+
+[soundStopAllFade 0.4]
+
+[charaSet A 6012001 1 桑松]
+[charaSet B 1026001 1 迪昂]
+[charaSet C 1098181800 1 奥德修斯]
+[charaFilter C silhouette 00000080]
+[charaSet D 6038002 1 夏洛特·科黛]
+[charaSet E 1098182700 1 亚特兰蒂斯防卫兵]
+[charaSet F 1098181600 1 兜帽的人物]
+[charaSet G 1098128800 1 武藏]
+[charaSet H 98115000 1 特效用]
+[charaSet I 98115000 1 特效用]
+
+[charaPut H 1200,1200]
+[charaPut I 1200,1200]
+
+[scene 10000]
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+
+[wt 1.0]
+
+[fowardEffect bit_chapterstart305]
+[wait fowardEffect]
+
+[fadeout black 1.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

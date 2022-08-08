@@ -1,0 +1,956 @@
+
+
+
+
+＄94-05-65-03-2-0
+
+
+[soundStopAll]
+
+[enableFullScreen]
+
+[charaSet A 6012000 1 桑松]
+[charaSet B 6011001 1 匕见]
+[charaSet C 25005001 1 旅行者]
+[charaSet D 1098207400 1 工作人员]
+[charaSet E 1098207500 1 警卫A]
+[charaSet F 1098207500 1 警卫B]
+[charaSet G 1098207300 1 馆长]
+
+[imageSet H back10000_fs 1]
+[charaScale H 1.5]
+
+[charaDepth H 1]
+[charaDepth B 2]
+[charaDepth E 3]
+[charaDepth F 4]
+
+[pictureFrame cut063_cinema]
+
+[scene 111200]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠桑松
+怎么了？
+[k]
+
+＠E：观光客
+啊啊，她突然……
+[k]
+
+[charaFace A 5]
+＠桑松
+稍等片刻。[r]……是中暑了呢。
+[k]
+
+＠E：观光客
+可天气没那么热啊？
+[k]
+
+[charaFace A 0]
+＠桑松
+应该是因为昨晚相当冷，[r]而今天又非常暖和。
+[k]
+
+＠桑松
+身体跟不上温度差的变化吧。
+[k]
+
+＠桑松
+万幸的是，症状似乎很轻，[r]拜托工作人员，去医务室休息一会儿吧。
+[k]
+
+＠E：观光客
+啊，嗯。[r]我知道了，非常感谢！
+[k]
+
+[charaFace A 1]
+＠桑松
+不客气。
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+＠工作人员
+那个……医务室现在有点忙。
+[k]
+
+＠工作人员
+只是中暑的话，[r]请在那边的长椅休息……
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadeinFSR A 0.1 256,-50]
+[charaFace D 4]
+[charaFadeinFSL D 0.1 -256,-50]
+＠桑松
+这样啊。[r]那就去叫救护车吧。
+[k]
+
+[charaFace D 3]
+＠工作人员
+哎！？
+[k]
+
+[charaFace A 5]
+＠桑松
+如果因为症状很轻就大意的话，[r]可是会出大事的。
+[k]
+
+＠桑松
+既然有可以治疗的场所，[r]就应该前往那里。
+[k]
+
+＠桑松
+否则的话，[r]问题会严重到追究馆长的责任了吧？
+[k]
+
+[charaFace D 4]
+＠工作人员
+……我明白了。[r]客人，请这边走。
+[k]
+
+[charaFace A 0]
+＠桑松
+我也一起去。
+[k]
+
+[charaFace D 3]
+＠工作人员
+不，这是不可以的[line 3]
+[k]
+
+[charaFace A 0]
+＠桑松
+那里有医生常驻吗？
+[k]
+
+[charaFace D 3]
+＠工作人员
+……这……这个嘛。[r]……因为……预算……
+[k]
+
+＠工作人员
+有负责护理的工作人员……[r]但缺少常驻的医生……
+[k]
+
+[charaFace A 0]
+＠桑松
+……无论什么时代，[r]医生不足都是个难以解决的问题呢。
+[k]
+
+＠桑松
+那么，干脆这么办吧。
+[k]
+
+＠桑松
+我会长期在这美术馆里逗留到闭馆。[r]上午欣赏艺术，下午去你们那边待机。
+[k]
+
+＠桑松
+当然，紧急时随时可以找我帮忙。
+[k]
+
+＠桑松
+虽说我不需要报酬……
+[k]
+
+＠桑松
+但如果各位提供抵得上门票钱的预算，[r]我会非常感激的。
+[k]
+
+[charaFace D 3]
+＠工作人员
+……这……
+[k]
+
+[charaFace A 5]
+＠桑松
+参观者那么多。[r]能多一个医生总是好事吧。
+[k]
+
+[charaFace D 4]
+＠工作人员
+我明白了。[r]那就麻烦您了。
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[scene 24000]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadeinFSL E 0.1 -256,-50]
+
+[charaPutFSL B -470,-50]
+[charaFace B 0]
+[charaFadeTime B 0.2 0.6]
+
+[charaFace F 0]
+[charaFadeinFSR F 0.1 256,-50]
+＠警卫A
+你听说过幽灵的传言吗？
+[k]
+
+＠警卫B
+幽灵？
+[k]
+
+＠警卫A
+圣杯展示室内时不时会传出声音，[r]你不知道这事吗？
+[k]
+
+＠警卫B
+那不是幽灵，[r]而是馆长雇佣的护卫吧？
+[k]
+
+＠警卫B
+虽说无论我们怎么巡逻，都见不到他们。
+[k]
+
+＠警卫A
+所以，他们就是幽灵啦。
+[k]
+
+＠警卫A
+24小时不停监视，[r]连厕所都不上，一直关那个房间里哦。
+[k]
+
+＠警卫B
+……毕竟这座美术馆里奇妙的事非常多。
+[k]
+
+＠警卫B
+通常不可能让人带着[r]这种重武装巡逻美术馆的……
+[k]
+
+＠警卫A
+那圣杯好像有点来历哦。[r]据说[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+＠馆长
+……我雇你们来就是为了[r]让你们在这里闲聊吗？
+[k]
+
+[charaFace G 5]
+＠馆长
+还是说，这里的警卫工作闲到[r]你们那么有空？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFadeinFSL E 0.1 -256,-50]
+[charaFace F 0]
+[charaFadeinFSR F 0.1 256,-50]
+＠警卫AB
+怎……怎么会呢！
+[k]
+
+[messageOff]
+
+[se ad59]
+[wt 0.1]
+[se ade427]
+
+[charaFadeout F 0.4]
+[charaFadeout E 0.4]
+[wt 0.5]
+[seStop ad59 0.5]
+[seStop ade427 0.5]
+[wt 0.5]
+
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 0,-50]
+＠馆长
+真是的。[r]一群吃白饭的。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+[charaFadeTime B 0.2 0.6]
+＠匕见
+……[r]……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 0,-50]
+＠馆长
+！
+[k]
+
+＠馆长
+……[r]……还在吗？
+[k]
+
+[charaFace G 0]
+＠馆长
+哼。
+[k]
+
+[messageOff]
+
+[se ad95]
+
+[charaFadeout G 0.4]
+[wt 1.0]
+[seStop ad95 1.0]
+[wt 1.0]
+
+[charaPut H 0,-200]
+[charaFadeTime H 0.2 0.6]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+＠匕见
+（并不是被……看穿了。[r]　也就是说，只是单纯的直觉吗……）
+[k]
+
+＠匕见
+（虽然我不觉得他是普通的美术馆馆长，[r]　但那也是个麻烦的问题。）
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_70 1.0]
+[wait fade]
+
+[charaFadeout H 0.1]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[pictureFrame]
+
+[scene 111200]
+
+[wt 1.5]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠旅行者
+这是……伊斯坎达尔的东西吧。[r]然后，这是斯巴达的遗物。
+[k]
+
+？1：每件都相当有迫力呢……
+
+？！
+
+[charaFace C 5]
+＠旅行者
+不过，这个阿喀琉斯的盾牌，是冒牌货呢。
+[k]
+
+＠旅行者
+另外另外[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠工作人员
+请……请等一下，小男孩。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠旅行者
+[FFFFFF]？[-]
+[k]
+
+＠旅行者
+是叫我吗？
+[k]
+
+？1：看来是呢。
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠工作人员
+您公然说这些会给我们添麻烦的。
+[k]
+
+＠工作人员
+阿喀琉斯的盾是考古学家发掘的，[r]鉴定师也认定这是真品[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠旅行者
+但是，和“诗”描写的不一样啊。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠工作人员
+……什么？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠旅行者
+或许是想依照『伊利亚特』里描写的，[r]重现那把盾的样子吧。但是……
+[k]
+
+[charaFace C 5]
+＠旅行者
+盾上绘制的两座城市，[r]应该是，“对比”的哦。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠工作人员
+Duibi……对比？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠旅行者
+一边是和平。[r]正在举行，婚礼和审判。
+[k]
+
+＠旅行者
+一边是战争。[r]令人产生血淋淋预感的，危险状态。
+[k]
+
+[charaFace C 5]
+＠旅行者
+但是，[#两边现在都是和平哦]。[r]然而，身为军人的阿瑞斯和雅典娜却都在场。
+[k]
+
+？1：啊……
+
+？！
+
+
+＠旅行者
+我猜铸造这面盾的人，[r]恐怕，是故意这么做的吧。
+[k]
+
+＠旅行者
+算是工匠的，一个小玩笑。[r]你看，仔细观察城市的周围[line 3]
+[k]
+
+？1：就……就说到这里吧！
+？2：我们先失陪了～！
+
+？！
+
+[messageOff]
+
+[se ad59]
+[cameraMove 0.3 0,0 1.1]
+[wt 0.5]
+[seStop ad59]
+
+[se ad77]
+[charaShake C 0.05 3 3 0.3]
+[charaFace C 9]
+＠旅行者
+唔唔。[r]……但是，做工非常好哦！
+[k]
+
+[messageOff]
+
+[se ade423]
+[wt 0.1]
+[se ad59]
+[charaFadeout C 0.4]
+[wt 1.0]
+
+[seStop ade423 0.5]
+[seStop ad59 0.5]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_77 0.5]
+[wait fade]
+
+[cameraHome 0.1]
+[wipeFilter cinema 0.5 0]
+
+[wt 1.0]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠工作人员
+城市的周围……啊，是真的。[r]用英语写着。
+[k]
+
+＠工作人员
+『[#LOVE:爱][#＆:与][#PEACE:和平]』…………
+[k]
+
+[charaFace D 3]
+＠工作人员
+……[r]……这该怎么办啊……
+[k]
+
+[messageOff]
+
+[fadeout black 1.5]
+[wait fade]
+
+[wipeOff]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[scene 111400]
+
+[wt 1.5]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠旅行者
+不该，那么说吗？
+[k]
+
+？1：倒也不是不该啦……
+
+[charaFace C 1]
+＠旅行者
+那就好。
+[k]
+
+？2：反正只是被警告了一下，没关系吧。
+
+[charaFace C 1]
+＠旅行者
+嗯。
+[k]
+
+＠旅行者
+我觉得，我们两个自由一些，[r]应该会恰到好处。
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠小摊店主
+哦，那边那位。[r]要不要给弟弟买个油炸甜甜圈呢？
+[k]
+
+？1：我买两个～！
+
+？！
+
+[messageOff]
+
+[wipeout rollRight 1.5 1.0]
+[bgm BGM_EVENT_2 1.5 0.5]
+
+[wait wipe]
+
+[wt 1.5]
+
+[wipein rollLeft 1.5 1.0]
+[bgm BGM_EVENT_2 1.5 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠旅行者
+我开动啦。
+[k]
+
+
+[charaFace C 7]
+＠旅行者
+呵呵，刚出锅的。[r]真好吃呢，[&哥哥:姐姐]。
+[k]
+
+[messageOff]
+[wt 0.1]
+[cameraMove 0.2 0,8 1.0]
+[wait camera]
+[cameraHome 0.3]
+[wait camera]
+[wt 0.7]
+
+[charaFace C 1]
+＠旅行者
+我们看上去，[r]像[&兄弟:姐弟]吗？
+[k]
+
+？1：肯定没问题啦。
+
+＠旅行者
+是吗。如果是真的，那就太好了。
+[k]
+
+？2：我很高兴能有这么个可爱的弟弟。
+
+[charaFace C 7]
+＠旅行者
+谢谢。[r]不用客气。
+[k]
+
+＠旅行者
+我也是，能有像御主这样的[r][&哥哥:姐姐]，happy。
+[k]
+
+[charaFace C 13]
+＠旅行者
+和某个人差太多了……
+[k]
+
+？！
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[charaFace C 0]
+＠旅行者
+话说回来，这个特异点，[r]究竟是哪个时代呢。
+[k]
+
+？1：我觉得应该是现代……
+？2：但具体并不明确呢。
+？！
+
+[bgm BGM_EVENT_11 0.1]
+
+＠旅行者
+这样啊。
+[k]
+
+[charaFace C 12]
+＠旅行者
+在这片天空，非常非常遥远的那边。
+[k]
+
+＠旅行者
+我是不是正在飞行呢。
+[k]
+
+＠旅行者
+如果是这样，那我，[r]究竟能不能发现『[#遥远的蓝色星球:Pale Blue Dot]』呢。
+[k]
+
+＠旅行者
+我不禁产生了这样的念头。
+[k]
+
+？1：旅行者一定能发现啦。
+？！
+
+[charaFace C 1]
+＠旅行者
+是吗。
+[k]
+
+＠旅行者
+这样，感觉真好。[r]该怎么形容呢，应该有个非常美妙的词汇。
+[k]
+
+＠旅行者
+非常美妙，听起来有些悲伤，[r]但十分贴切的词汇[line 3]
+[k]
+
+？1：…………是……浪漫吧。
+？！
+
+[charaFace C 7]
+＠旅行者
+没错没错。[r]浪漫。
+[k]
+
+[charaFace C 0]
+＠旅行者
+……御主您，
+[k]
+
+＠旅行者
+一听到浪漫这个词，就会非常高兴，[r]但又显得有些寂寞呢。
+[k]
+
+[bgmStop BGM_EVENT_11 0.5]
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.5]
+
+[se ad60]
+[wt 1.5]
+[seStop ad60 0.3]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠桑松
+哟，你们在这里啊。
+[k]
+
+[bgm BGM_EVENT_77 0.1]
+
+？1：桑松！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠旅行者
+Mr.桑松。[r]怎么了？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠桑松
+正打算休息一会儿。
+[k]
+
+[charaFace A 4]
+＠桑松
+由于人手不够，[r]工作相当忙碌。
+[k]
+
+？1：辛苦啦！
+？！
+
+＠桑松
+只不过，[r]时间过得倒是非常充实。
+[k]
+
+＠桑松
+虽说我有一定的现代医疗知识，[r]但我的[#医术:技能]多少有点犯规，害我一直胆战心惊的。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠旅行者
+因为你，没医生执照吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠桑松
+你这么说我还真不好办呢，哈哈哈。
+[k]
+
+[messageOff]
+
+[wt 0.8]
+
+[charaFace A 4]
+＠桑松
+不过……因为难以抢夺，才改为偷窃。[r]道理上虽然说得通。
+[k]
+
+＠桑松
+可从道德层面来说，[r]感觉就不太好了吧。
+[k]
+
+？1：桑松反对这么做吗？
+？！
+
+[charaFace A 0]
+＠桑松
+倒也不是。[r]我反而持赞成的观点。
+[k]
+
+＠桑松
+但怎么说呢，总有些介意……[r]不，不对。
+[k]
+
+＠桑松
+或许应该说，[r][#有些兴奋]。
+[k]
+
+＠桑松
+明知这样是不对的，[r]却没有阻止，也不打算阻止。
+[k]
+
+？1：是……不道德感吗？
+
+[charaFace A 1]
+＠桑松
+就是这个。
+[k]
+
+？2：是不是还有些期待？
+
+[charaFace A 1]
+＠桑松
+……说真心话，确实有些期待。
+[k]
+
+？！
+
+[charaFace A 0]
+＠桑松
+偷窃物品这种行为当然是犯罪，[r]是卑鄙的行径。
+[k]
+
+＠桑松
+但如果存在正当的偷窃理由，[r]且预先制定了致密的计划[line 3]
+[k]
+
+＠桑松
+或许就会无可奈何地令人产生快感吧。
+[k]
+
+＠桑松
+传说中的侠盗亚森·罗宾[r]总能令任何一个时代的人们兴奋。
+[k]
+
+[charaFace A 3]
+＠桑松
+……咳咳。
+[k]
+
+[charaFace A 1]
+＠桑松
+那休息时间到此结束。[r]我先失陪了。
+[k]
+
+[messageOff]
+
+[se ad60]
+[charaFadeout A 0.4]
+[wt 1.0]
+
+[seStop ad60 0.5]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠旅行者
+我可以认为，[r]今天一切顺利吗？
+[k]
+
+？1：总之我们也……
+？2：回旅馆去吧。
+？！
+
+[charaFace C 7]
+＠旅行者
+说得对。[r]回到软绵绵的床上！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[soundStopAll]
+[end]
+

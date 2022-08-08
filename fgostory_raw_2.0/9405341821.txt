@@ -1,0 +1,88 @@
+
+＄94-05-34-18-2-1
+
+[soundStopAll]
+[charaSet A 4037000 1 尼莫]
+[charaSet B 1098182000 1 尼莫护士]
+[charaSet C 25006001 1 梵高]
+[charaSet D 3029001 1 源赖光]
+
+[scene 98200]
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk C]
+[charaFace C 19]
+[charaFadein C 0.1 1]
+＠梵高
+……哎嘿嘿……好痛…………[r]我喜欢…………疼痛………………
+[k]
+
+[messageOff]
+[charaFadeout C 0.4]
+[wt 0.3]
+[se ad144]
+[wt 0.7]
+
+？1：船长，快叫护士！
+？2：堵住她的伤口。
+？！
+
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠源赖光
+医务室离这里挺近的……[r]我去带她过来吧，御主！
+[k]
+
+[messageOff]
+[se ad73]
+[charaEffect D bit_talk_quickmove]
+[charaSpecialEffect D erasure 1 0.2]
+[wt 0.7]
+
+[wt 0.7]
+[se ad59]
+[seVolume ad59 0 0]
+[seVolume ad59 1.4 1.0]
+[wt 1.0]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 1]
+[seStop ad59 0.4]
+＠尼莫护士
+我了解情况了，我会进行处置！
+[k]
+
+？1：尼莫负责死守这里。
+？2：我要前往舰桥！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠尼莫
+明白了，虽然作为船长有些丢人，[r]但这样安排才算适材适所吧……
+[k]
+
+[charaFace A 2]
+＠尼莫
+拜托你了，[%1]……！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_80 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

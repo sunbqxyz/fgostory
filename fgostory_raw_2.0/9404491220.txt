@@ -1,0 +1,432 @@
+
+
+＄94-04-49-12-2-0
+
+[soundStopAll]
+
+[skip false]
+
+[branchQuestNotClear lblNotClear1 3000320 4]
+[label lblClear1]
+[flag IsGirl true]
+[branch lblIsClearConf1]
+[label lblNotClear1]
+[flag IsGirl false]
+[label lblIsClearConf1]
+
+[skip true]
+
+[charaSet A 2035000 1 帕里斯]
+[charaSet B 3016000 1 赫克托耳]
+[charaSet C 5036001 1 阿维斯布隆]
+[charaSet D 7027300 1 Amazones CEO_普通]
+[charaSet E 1098119600 1 Amazones CEO_轱辘]
+[charaSet F 7027002 1 彭忒西勒亚]
+[charaSet H 99502600 1 玛修]
+[charaSet I 6008000 1 Cosmotic Beauty夫人]
+[charaSet J 5009000 1 特效用]
+
+[branch lblNotGirl1 IsGirl false]
+[label lblGirl1]
+[charaSet G 1098124510 1 达·芬奇]
+[branch lblIsGirlConf1]
+[label lblNotGirl1]
+[charaSet G 98111500 1 达·芬奇]
+[label lblIsGirlConf1]
+
+[scene 89703]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠帕里斯
+呼，呼……阿波罗大人……数量太多……[r]海洋占三阿波罗大人占七……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠赫克托耳
+这家伙在做噩梦吧……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠阿维斯布隆
+看来你们是被狠狠教训了一顿吧。[r]我可以坐这里吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠赫克托耳
+是你啊。[r]当然可以。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth B 2]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFace B 0]
+[charaFadein B 0.1 2]
+
+＠阿维斯布隆
+……好了。[r]来聊聊吧。
+[k]
+
+[charaFace B 1]
+
+＠赫克托耳
+啊，果然？
+[k]
+
+＠阿维斯布隆
+对我这样的人来说，知识才是最好的报酬。[r]你差不多该告诉我了吧。
+[k]
+
+＠阿维斯布隆
+你为什么，要[#让我去提案]？
+[k]
+
+[messageOff]
+[charaTalk B]
+[wt 1.0]
+[charaFace B 0]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠赫克托耳
+……因为，我欠彭忒西勒亚一个很大的人情。
+[k]
+
+[charaFace B 4]
+
+＠赫克托耳
+究竟是谁更为留名后世，[r]或是最终双方都输给那家伙死掉，
+[k]
+
+＠赫克托耳
+这些问题其实都无关紧要。
+[k]
+
+＠阿维斯布隆
+我[#那个]，能够作为你还她的人情吗？
+[k]
+
+[charaFace B 0]
+
+＠赫克托耳
+大概能吧。虽说不知道结果会如何。
+[k]
+
+＠赫克托耳
+那个或多或少都是她的一部分。[r]总不能抛开那个谈问题吧。
+[k]
+
+＠阿维斯布隆
+唔。
+[k]
+
+＠赫克托耳
+至于其他理由嘛，纯粹是[line 3]
+[k]
+
+[charaFace B 1]
+
+＠赫克托耳
+我或许本能地不想放过让那家伙遭罪的机会吧。
+[k]
+
+＠阿维斯布隆
+哦，这还真是。
+[k]
+
+＠赫克托耳
+因为如果不这么做，[r]总有一天我们或许会认真厮杀起来哦！
+[k]
+
+＠阿维斯布隆
+……战士的本性还真让人不好办呢。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_70 1.5]
+[wait fade]
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[charaTalk depthOn]
+[scene 90003]
+[charaTalk off]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[wt 1.0]
+[charaSet A 1098126200 1 搬运魔偶]
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+[bgm BGM_EVENT_3 0.1]
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.3]
+
+[charaFadeout D 0.1]
+[se ad73]
+
+[wt 0.3]
+
+[charaFace F 5]
+[charaFadein F 0.1 1]
+[wt 0.2]
+
+[wt 0.1]
+[charaFadeout F 0.1]
+[se ad73]
+[wt 0.2]
+
+[effect bit_talk_kengekiall02 0,0 F]
+[wt 0.2]
+[se ad32]
+[wt 0.2]
+[se ad32]
+[wt 0.2]
+[se ad32]
+[wt 0.05]
+[fowardEffect bit_talk_kengekiall02 0,0 V]
+[wt 0.1]
+[se ad32]
+[wt 0.2]
+[se ad32]
+[wt 0.2]
+[se ad32]
+[wt 0.4]
+
+[fowardEffectDestroy bit_talk_kengekiall02]
+[effectDestroy bit_talk_kengekiall02]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 5]
+[charaScale F 1.1]
+[charaFadein F 0 1]
+[se ad671]
+[seVolume ad671 0 0.6]
+[charaShake D 0.08 6 2 0.4]
+[charaMoveScale F 1.0 0.3]
+
+[wt 0.3]
+[seStop ad671 0.3]
+
+＠彭忒西勒亚
+呼，呼[line 3][wt 0.1][charaFace F 1]哈哈哈哈哈！[r]自己和自己战斗意外感觉不错！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+呼……呵呵呵！　意外是个令人兴奋的建议呢！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[branch lblNotGirl2 IsGirl false]
+[label lblGirl2]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+[branch lblIsGirlConf2]
+[label lblNotGirl2]
+[charaFace G 4]
+[charaFadein G 0.1 0,-90]
+[label lblIsGirlConf2]
+
+＠达·芬奇
+这两个人真像。不过这算废话吧。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠彭忒西勒亚
+不错，真不错。我们就该身处这种亢奋之中。[r]前所未有地兴奋[line 3]精神高度集中。
+[k]
+
+＠彭忒西勒亚
+无论是这肌肉、战斗直觉，还是五感。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+同感。五感也……五感……
+[k]
+
+[bgmStop BGM_EVENT_3 2.0]
+
+[charaFace D 14]
+
+＠D：Amazones CEO
+唔[line 3]这种，味道，是……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠彭忒西勒亚
+……？　…………！？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.4]
+
+
+[cameraMove 0.1 -35,20 1.2]
+[wt 0.2]
+[cameraMove 0.2 75,20 1.2]
+[wt 0.3]
+[cameraMove 0.3 -75,20 1.2]
+[wt 0.5]
+
+[fadeout black 0.3]
+[wait fade]
+[cameraHome 0.1]
+[wt 0.1]
+[fadein black 0.3]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaPut J 1]
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠玛修
+怎……怎么了？[r]两位突然开始环顾周围[line 3]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+＠Cosmotic Beauty夫人
+快看，有什么藏在那根柱子后面。[r]那是……？
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[charaFadeout I 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[bgmStop BGM_EVENT_5 1.2]
+
+[wt 1.0]
+
+？1：是搬运用的魔偶君。
+？2：我们没有拜托它做什么啊，为什么会在这里？
+？！
+
+[fadeout black 0.3]
+[wait fade]
+[charaFadeout A 0]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0 0]
+[charaFace D 5]
+[charaFadein D 0 2]
+[fadein black 0.3]
+[wait fade]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠彭忒西勒亚
+[f medium][messageShake 0.07 7 5 0.6]啊，啊啊，啊啊啊啊啊啊啊啊啊啊啊！[r]你这家伙，你这家伙，你这家伙[line 3]
+[k]
+
+[charaFace D 2]
+
+＠D：Amazones CEO
+闻到了，我闻到了。[r]正因精神高度集中！　才能分辨出来！
+[k]
+
+[charaTalk off]
+[charaEffect D bit_talk_charge_red]
+[charaEffect F bit_talk_charge_red]
+[se ad61]
+[se ad556]
+[seVolume ad556 0 0.6]
+
+[charaFace F 7]
+[charaFace D 7]
+
+＠彭忒西勒亚＆Amazones CEO
+[#你就在那里吧]！[r][line 3][#阿喀琉斯][line 4]！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[seStop ad61 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

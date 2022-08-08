@@ -1,0 +1,595 @@
+
+
+＄94-05-42-08-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1048000 1 圣诞迦尔纳]
+[charaSet B 99502600 1 玛修]
+[charaSet C 3046001 1 弗栗多]
+[charaSet D 1098124510 1 达·芬奇]
+[charaSet E 98111500 1 达·芬奇（术）_通讯]
+[charaSet F 4006001 1 乔尔乔斯]
+[charaSet G 5005001 1 安徒生]
+[charaSet H 5030001 1 山鲁佐德]
+[charaSet I 7033002 1 阿周那·Alter]
+[charaSet J 98115000 1 通讯用]
+
+[charaSet K 98115000 1 特效用]
+
+[imageSet L back10000_fs 1]
+[charaScale L 1.5]
+
+[charaSet M 98115000 1 特效用]
+[charaScale M 0.1]
+
+[charaDepth L 1]
+[charaDepth B 3]
+[charaDepth A 1]
+[charaDepth K 2]
+[charaDepth M 4]
+
+[scene 105201]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 -150,0]
+＠弗栗多
+唔……还没来吗。[r]无聊，好无聊啊～。
+[k]
+
+[messageOff]
+
+
+[se ad110]
+[charaMove C -75,0 0.45]
+[charaFadeout C 0.45]
+[wt 0.45]
+
+[charaFadein C 0.45 -75,0]
+[charaMove C 0,0 0.45]
+[wt 0.45]
+
+[se ad110]
+[charaMove C 75,0 0.45]
+[charaFadeout C 0.45]
+[wt 0.45]
+
+[charaFadein C 0.45 75,0]
+[charaMove C 150,0 0.45]
+[wt 0.8]
+
+
+[se ad110]
+[charaMove C 75,0 0.45]
+[charaFadeout C 0.45]
+[wt 0.45]
+
+[charaFadein C 0.45 75,0]
+[charaMove C 0,0 0.45]
+[wt 0.45]
+
+[se ad110]
+[charaMove C -75,0 0.45]
+[charaFadeout C 0.45]
+[wt 0.45]
+
+[charaFadein C 0.45 -75,0]
+[charaMove C -150,0 0.45]
+[wt 1.0]
+
+[charaFace C 4]
+＠弗栗多
+就不能快点来吗。[r]吾都等不及了。
+[k]
+
+[messageOff]
+
+[se ad110]
+[charaMove C -75,0 0.45]
+[charaFadeout C 0.45]
+[wt 0.45]
+
+[charaFadein C 0.45 -75,0]
+[charaMove C 0,0 0.45]
+[wt 0.45]
+
+[se ad110]
+[charaMove C 75,0 0.45]
+[charaFadeout C 0.45]
+[wt 1.2]
+
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠玛修
+那个……御主，那是……？
+[k]
+
+
+？1：发现在雪上打滚的邪龙。
+？2：像小孩子一样左右滚动……
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+[wt 0.1]
+
+[se ad478]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 0,-15]
+[charaMove C 0,0 0.3]
+[wt 0.4]
+
+＠弗栗多
+唔噢！[r]……来了啊。
+[k]
+
+＠弗栗多
+那……那是什么眼神。[r]没什么好奇怪的吧？
+[k]
+
+[charaFace C 1]
+＠弗栗多
+吾喜欢干净。这是用来代替沐浴的。[r]凉凉的很舒服哦？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaPut J 0,0]
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+＠达·芬奇
+总之，我们起码知道了她应该不是会冬眠的那类。
+[k]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-90]
+＠E：达·芬奇
+总之，我们起码知道了她应该不是会冬眠的那类。
+[k]
+
+[label lblConf1]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠弗栗多
+哎呀？　容貌相同且类似神的家伙在场……[r]但因陀罗之子却不在呢。
+[k]
+
+＠弗栗多
+吾可是因为他说的话才会等的。
+[k]
+
+＠弗栗多
+这么看来……你们也知道吾寻求的是什么吗？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+不。我们只是来战胜你的。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠弗栗多
+…………[wt 0.4][charaFace C 11][r]算了，也行。
+[k]
+
+
+[charaFace C 6]
+＠弗栗多
+既然敢这么说[line 3]应该是找到方法[r]可以战胜适应圣杯的吾了吧？
+[k]
+
+
+[messageOff]
+[charaTalk off]
+
+[se ade391]
+[effect bit_talk_charge_blu]
+[wt 2.4]
+
+[seStop ade391 0.5]
+[wt 0.4]
+[effectDestroy bit_talk_charge_blu]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk depthOff]
+
+[charaPut L 0,-200]
+[charaPut J 0,0]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[charaFadeTime L 0.1 0.6]
+＠玛修
+（好强大的魔力量！　很明显通常的战斗[r]　是无法突破那层防御的。但是[line 3]）
+[k]
+
+[charaFadeout L 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+我知道。[r]攻击对你无效的秘密……
+[k]
+
+＠圣诞迦尔纳
+是通过圣杯的魔力表面化了的[r][#你自身的传承防御]。
+[k]
+
+＠圣诞迦尔纳
+即便在不完全显现中不会被付与，[r]也可以通过圣杯进行活性化。
+[k]
+
+＠圣诞迦尔纳
+因为那是你原本就拥有的东西。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+
+[charaTalk D]
+[charaFace D 24]
+[charaFadein D 0.1 1]
+＠达·芬奇
+『不会在黑夜或白昼，不会被石头或木制的武器，[r]　不会被潮湿或干燥的东西杀害[line 3]』
+[k]
+
+＠达·芬奇
+传说中弗栗多与神明缔结了这种契约。[r]据说这也是被视为同一存在的恶魔那牟质故事的起源。
+[k]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0,-90]
+＠E：达·芬奇
+『不会在黑夜或白昼，不会被石头或木制的武器，[r]　不会被潮湿或干燥的东西杀害[line 3]』
+[k]
+
+＠E：达·芬奇
+传说中弗栗多与神明缔结了这种契约。[r]据说这也是被视为同一存在的恶魔那牟质故事的起源。
+[k]
+
+[label lblConf2]
+
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+我们的攻击之所以不奏效，[r]并非因为纯粹的防御力或魔力屏障。
+[k]
+
+＠圣诞迦尔纳
+而是因为神话中描写的这种性质。[r]既然如此，那就有办法了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠弗栗多
+咿，嘻，嘻。你们知道吾与神签订契约的事呀。[r]算了，这倒也无妨。
+[k]
+
+＠弗栗多
+但是……你该不会天真地认为[r]可以用拳头胜过吾吧？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠乔尔乔斯
+昨天，我的剑确实没起作用，相比起来，[r]他和贝奥武夫阁下的拳更有效果一些。
+[k]
+
+＠乔尔乔斯
+不是石制或木制等的武器，也不是潮湿或干燥的……[r]应该不在规则的界定范围之内才对。
+[k]
+
+＠乔尔乔斯
+但依然不奏效。[r]千万不能忘记这点。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+那么，就让条件更为一致吧。
+[k]
+
+＠圣诞迦尔纳
+与被那契约束缚的神明打倒你时的条件一致。
+[k]
+
+＠圣诞迦尔纳
+因陀罗挑选的，是现在这样的黄昏之刻。[r]既不是白昼，也不是黑夜的时间。
+[k]
+
+＠圣诞迦尔纳
+与此同时……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_63 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠安徒生
+…………啊！[r]『[#用不潮湿也不干燥的泡杀掉]』吗！
+[k]
+
+＠安徒生
+虽说我总觉得这故事的概要埋的伏笔不太充分，[r]但这种反常的跳跃有时也会产生效果啊！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠山鲁佐德
+直接与龙战斗未免太可怕了。[r]但这种程度的话……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠安徒生
+虽说做不到莎士比亚那种程度，[r]但只是让人披上的话，还是很简单的。因为不需要推敲嘛。
+[k]
+
+[se ad39]
+[effect bit_talk_charge_blu]
+＠安徒生
+[#附加效果:Enchant]！[r]拿去吧，这是悲剧尽头的泡沫！
+[k]
+
+[messageOff]
+
+[seStop ad39 0.6]
+[se ad300]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[effectDestroy bit_talk_charge_blu]
+[wt 0.9]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad474]
+[backEffect bit_talk_charge_ppl]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+＠山鲁佐德
+请容我开始诉说。[r]蛇女王亚穆莉卡这么说过。
+[k]
+
+＠山鲁佐德
+『如果要煮我，就将煮出的第一层泡沫放进瓶里。[r]　而你自己则喝下煮出的第二层泡沫[line 3]』
+[k]
+
+
+[messageOff]
+
+[seStop ad474 0.6]
+[se ad300]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[backEffectDestroy bit_talk_charge_ppl]
+[wt 0.9]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[se ad39]
+[seVolume ad39 0 0]
+[seVolume ad39 1.0 1.0]
+[effect bit_talk_release]
+[wt 0.8]
+[seStop ad39 1.0]
+[wt 0.6]
+
+
+[charaPut K 100,300]
+[charaEffect K bit_talk_22]
+
+[charaPut M 130,30]
+[charaEffect M bit_talk_17]
+
+[wt 0.1]
+
+[cueSe Battle ba2]
+[seVolume ba2 0 0.9]
+
+
+[wt 1.0]
+[wt 1.3]
+
+
+＠圣诞迦尔纳
+所以我们也会用泡沫打倒你。
+[k]
+
+[charaFace A 2]
+＠圣诞迦尔纳
+用既不是武器，也不是潮湿或干燥的东西，[r]打倒你！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut M 1200,2000]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠乔尔乔斯
+烦请给我的剑也施加一下。
+[k]
+
+＠乔尔乔斯
+虽然可能没有拳头那么大的效果……[r]但应该不会毫无意义！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠阿周那·Alter
+斩断邪恶的存在无关形状。[r]这也是肃清之刃[line 3]
+[k]
+
+[messageOff]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 1.2]
+
+[charaFace C 6]
+＠弗栗多
+咿[messageShake 0.02 3 3 0.5]，嘻，嘻！[r]甚好！　就该这样才对！
+[k]
+
+[charaFace C 7]
+＠弗栗多
+啊啊，这样的话，或许能实现。
+[k]
+
+＠弗栗多
+让吾见证汝等的苦闷、哭丧的表情、丢人的呜咽。[r]让吾见证汝等垂死挣扎的样子！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠玛修
+安徒生先生与山鲁佐德小姐[r]已经为前卫的各位付与了效果！
+[k]
+
+＠玛修
+能行，御主！
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+[wt 0.1]
+
+？1：战斗[line 3]开始！
+？2：让我们一起夺回礼物吧！
+？！
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_63 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+

@@ -1,0 +1,988 @@
+
+＄94-02-49-09-1-0
+
+
+
+[soundStopAll]
+
+
+[charaSet A 10007001 1 冲田Alter]
+[charaSet B 6033002 1 以藏]
+[charaSet C 98111600 1 织田信胜（信IN）]
+[charaSet D 1098133000 1 士官]
+[charaSet E 1098132000 1 英灵兵1]
+[charaSet F 1098132000 1 英灵兵2]
+[charaSet G 1098132000 1 英灵兵3]
+[charaSet H 98002000 1 特效用dummy]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 60000]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[se ad9]
+[wt 2.6]
+
+＠警报
+入侵警报，入侵警报。
+[k]
+
+＠警报
+敌方从者入侵，英灵兵展开，火速迎击。[r]敌方从者入侵，英灵兵展开，火速迎击。
+[k]
+
+[messageOff]
+[seStop ad9 0.4]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+
+[scene 60100]
+[wt 0.1]
+
+[wipein leftToRight 0.4 1]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠以藏
+太碍事了[line 4]！！！
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[fadeout black 0.2]
+[wait fade]
+[charaFadeout B 0.1]
+
+[charaFace E 0]
+[charaFadein E 0.1 -256,5]
+[charaFace F 0]
+[charaFadein F 0.1 256,5]
+[charaFace G 0]
+[charaFadein G 0.1 0,-5]
+[wt 0.1]
+[fadein black 0.2]
+[wait fade]
+[wt 0.1]
+
+[se bac14]
+[effect bit_bolg_02]
+
+[shake 0.04 4 4 0.7]
+[wt 0.6]
+[se ad42]
+[charaSpecialEffect E enemyErasure 1 1.0]
+[charaSpecialEffect F enemyErasure 1 1.0]
+[charaSpecialEffect G enemyErasure 1 1.0]
+
+[wt 1.5]
+
+
+[charaSet E 1098138000 1 龙马]
+[charaSet F 1098139000 1 阿龙小姐]
+
+[charaDepth E 9]
+[charaDepth F 1]
+[charaDepth H 10]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠士官
+枪对他们没有用！　将英灵兵调来！　用数量压制他们！
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+＠C：织田信胜（信IN）
+不不，敌人数量比预想的要多吧！？[r]这里是桶狭间吗！
+[k]
+
+＠C：织田信胜（信IN）
+而且，话说英灵兵到底是什么啊！？
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOff]
+[charaTalk E]
+[charaFace E 6]
+[charaFace F 0]
+[charaFadein E 0.1 1]
+[charaFadein F 0.1 1]
+＠龙马
+是用回收来的英灵灵基[r]制作出来的人工魔术士兵吧。
+[k]
+
+＠龙马
+和西洋的魔偶比较相似。
+[k]
+
+＠龙马
+虽说肯定是不如从者，[r]但用数量压制还是比较难对付的。
+[k]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+＠织田信胜（信IN）
+哎，如果能用我的身体，[r]明明就能将这些家伙一网打尽了！　明明可以！
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠冲田Alter
+……这样下去可无法前进啊。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠龙马
+没办法，这里就交给我们，[r]你们继续前行吧。
+[k]
+
+？1：坂本先生，但是……
+？2：但这样下去的话……
+
+？！
+
+[charaFace E 0]
+＠龙马
+没关系，我的伤已经恢复了，[r]还有阿龙小姐和以藏先生。
+[k]
+
+[charaFace E 7]
+＠龙马
+综上所述，以藏先生，[r]不好意思，能麻烦你奉陪吗？
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠以藏
+不要自说自话地决定啊！？
+[k]
+
+＠以藏
+我是来杀Caster的！[r]想留在这里的话，龙马你自己留下不就行了吗！
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠阿龙小姐
+以藏只能对付些杂兵，就算跟他们去也会被干掉。[r]还是老老实实地帮阿龙小姐打扫杂兵吧。
+[k]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠以藏
+你说什么？[r]要不我干脆把你这蛇女先杀了吧？
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠龙马
+啊哈哈哈……算了，拜托你啦，以藏先生。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠以藏
+……？
+[k]
+
+＠以藏
+龙马……你。
+[k]
+
+[charaFace B 2]
+＠以藏
+嘁，给我躲一边去，别来妨碍我哦！
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+＠织田信胜（信IN）
+我们走，[%1]！
+[k]
+
+＠织田信胜（信IN）
+Rider有那个不得了的宝具，[r]身为普通人类的你在场反而会令他难以动手！
+[k]
+
+？1：……我知道了！
+？2：……你们要小心啊！
+
+？！
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠冲田Alter
+对不起，Rider。[r]……这里就交给你了。
+[k]
+
+[messageOff]
+[se bac343]
+[seStop bac343 1.0]
+[charaFadeout A 0.4]
+[wt 1.4]
+
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠织田信胜（信IN）
+……抱歉了，Rider，让你抽了这个下下签。
+[k]
+
+[messageOff]
+[se bac343]
+[seStop bac343 1.0]
+[charaFadeout C 0.4]
+[wt 1.4]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFace F 0]
+[charaFadein E 0.1 1]
+[charaFadein F 0.1 1]
+＠龙马
+……看来早就被发现了啊。[r]不，[&他:她]应该也明白了吧。
+[k]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠以藏
+喂，阿龙……[r]你其实已经几乎动不了了吧？
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace E 7]
+[charaFace F 3]
+[charaFadein E 0.1 1]
+[charaFadein F 0.1 1]
+＠阿龙小姐
+怎么会这样，居然会被混蛋杂兵Assassin看出来，[r]这可是阿龙小姐一生的屈辱。
+[k]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFace F 4]
+＠龙马
+这也难怪，毕竟你一直在勉强自己嘛……[r]我差不多也该认命了吧。
+[k]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠以藏
+龙马！！[messageShake 0.03 4 4 0.8][r]你在说什么胡话呢！！
+[k]
+
+[messageShakeStop]
+
+＠以藏
+当时不惜撇下我们也要[r]离开土佐的你上哪儿去了！
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 10]
+[charaFace F 5]
+[charaFadein E 0.1 1]
+[charaFadein F 0.1 1]
+＠龙马
+……哎？
+[k]
+
+[charaFace E 7]
+[charaFace F 5]
+＠龙马
+哈哈……这下可难办了。
+[k]
+
+[charaTalk F]
+[charaFace F 6]
+＠阿龙小姐
+令人有些火大呢。
+[k]
+
+＠阿龙小姐
+算了，今天我就原谅你好了，[r]因为阿龙小姐的心胸是濑户内级的宽大嘛。
+[k]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠士官
+快去追先行一步的那群家伙！[r]这些家伙可以稍后再对……
+[k]
+
+[bgmStop BGM_EVENT_3 0.4]
+[messageOff]
+[effect bit_talk_Slash_white_01]
+[se bac95]
+[wt 0.2]
+[effect bit_talk_35]
+[charaShake D 0.03 3 3 0.4]
+[wt 1.5]
+
+＠士官
+呜……！？
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 0.1 1.0]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠以藏
+喂，不要无视我啊。[r]因为我会杀光所有无视我的家伙。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.2]
+
+[charaMove D 0,-50 0.5]
+[charaFadeout D 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠以藏
+噢噢噢噢噢噢噢噢噢噢噢噢！！！！
+[k]
+
+＠以藏
+[line 3]我是土佐的人斩以藏！[r]我会在此将你们全部杀光！
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace E 0]
+[charaFace F 4]
+[charaFadein E 0.1 1]
+[charaFadein F 0.1 1]
+＠阿龙小姐
+怎么，以藏还挺可靠的嘛。
+[k]
+
+[charaTalk E]
+＠龙马
+嗯，毕竟以藏先生啊……
+[k]
+
+[charaFace E 1]
+[charaFace F 6]
+＠龙马
+[line 3]是天才剑士嘛！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaSet B 1098142000 1 南光坊天海]
+[charaSet D 1098149000 1 织田信长_外套（剪影）]
+
+
+[scene 60200]
+[wt 1.0]
+
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_90 0.1 1]
+
+[se ad566]
+[wt 1.0]
+
+
+？1：这是……！
+？2：难道这就是圣杯？
+
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+＠南光坊天海
+唔？　你们是谁，[r]看来不是Rider呢……
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠冲田Alter
+你就是Caster吗。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠南光坊天海
+……奇怪了，三骑士被打倒，[r]Rider、Assassin应该已经奄奄一息了。
+[k]
+
+＠南光坊天海
+你这家伙究竟是何许人也……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠冲田Alter
+…………
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠南光坊天海
+算了，反正为时已晚。
+[k]
+
+＠南光坊天海
+好好看着吧，[r]这就是我耗费了漫长时光积攒起来的英灵之魂。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.7 1]
+[wt 2.0]
+
+[charaFadeout D 0.7]
+[wt 1.0]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠南光坊天海
+落入我手中的信长公的灵基，以及圣杯！
+[k]
+
+＠南光坊天海
+终于苏醒了……！[r]真正的第六天魔王·织田上总介信长公！
+[k]
+
+？1：这是怎么一回事？
+？2：杀害信长的不是你吗？
+
+？！
+
+[charaFace B 8]
+＠南光坊天海
+[line 3]当然，就是我。[r]那是没办法的啊。
+[k]
+
+＠南光坊天海
+都是因为那家伙的错，[r]信长公都变得不是信长公了……
+[k]
+
+？1：你在说什么……
+？2：……那家伙？
+
+？！
+
+[charaFace B 8]
+＠南光坊天海
+没错！　那个可恨的家伙！！
+[k]
+
+＠南光坊天海
+自从那家伙出现之后，[r]信长公就变得不是信长公了！
+[k]
+
+[charaFace B 7]
+＠南光坊天海
+信长公是我的光！　是我的救赎！[r]是我的一切啊！
+[k]
+
+＠南光坊天海
+我将一切都献给了信长公！[r]我的一切！
+[k]
+
+＠南光坊天海
+我甚至不惜将母亲献给公！[r]然而，为何公没有对我，而是对他露出了笑容呢！
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠冲田Alter
+…………
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠南光坊天海
+信长公明明是属于我一个人的……[r]只有我，只有我才是信长公的理解者！
+[k]
+
+＠南光坊天海
+信长公的理解者只能是我才行！
+[k]
+
+＠南光坊天海
+我不允许除我以外的人[r]能与公愉快地谈论天下！
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaSet B 1098142000 1 明智光秀]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠冲田Alter
+……这家伙。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠明智光秀
+[line 3]所以我杀了公。
+[k]
+
+？1：……怎么会这样。
+？2：……这家伙疯了。
+
+？！
+
+[charaFace B 1]
+＠明智光秀
+因为没办法啊，信长公。[r]这一切都是为了信长公！
+[k]
+
+＠明智光秀
+那种家伙是无法治理这日本的！
+[k]
+
+[charaFace B 7]
+＠明智光秀
+事实上，那家伙也确实失去了一切，[r]迎来了凄惨的结局吧！
+[k]
+
+＠明智光秀
+但是还请放心！[r]能治理日本的，除了信长公以外别无他人！
+[k]
+
+[charaFace B 3]
+＠明智光秀
+没错！　我的信长公！　只属于我的信长公！[r]来吧，圣杯啊！　众多英灵之魂啊！
+[k]
+
+＠明智光秀
+在此，诞下我的，只属于我的信长公吧[line 3]！
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_90 1.0]
+[seVolume ad566 1.0 0]
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+＠C：织田信长
+哈……无聊。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠明智光秀
+……啊？
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[bgm BGM_EVENT_1 0.1 1.0]
+[seVolume ad566 0.1 1]
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+＠C：织田信长
+我说你很无聊啦，金桔……
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠明智光秀
+你是谁……
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+＠C：织田信长
+不，计划本身倒是无妨，规模也挺大。[r]这种类型的格局其实我还挺喜欢的。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠明智光秀
+……你说什么……不，您是。
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+＠C：织田信长
+但是，为什么，要是[#我]啊？
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠明智光秀
+……难道……是信长公？
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠C：织田信长
+既然做到这个地步，你干嘛不自己上啦，自己上。[r]这就是你的短处啦。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠明智光秀
+……你……你这家伙究竟在说什么。
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠C：织田信长
+……我很清楚哦，金桔，[r]你很害怕吧？　害怕没有我的世间。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠明智光秀
+……什么？
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠C：织田信长
+尽管你杀了我，[r]但却感到了恐惧，害怕今后的世间。
+[k]
+
+＠C：织田信长
+[line 3]这就是你与那家伙的差距啊。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠明智光秀
+……你说……差距？
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠C：织田信长
+那家伙在我死后，看到的并不是没有我的世间，[r]而是自己存在的世间，由自己照耀的天下。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠明智光秀
+闭嘴……
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠C：织田信长
+你并没有输给他，
+[k]
+
+＠C：织田信长
+你只是害怕自己，输给了自己。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠明智光秀
+闭嘴……！
+[k]
+
+＠明智光秀
+你这家伙能理解信长公的什么！
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+＠C：织田信胜
+话说～，我能插一句嘴吗，姐姐大人？
+[k]
+
+[charaFace C 1]
+＠C：织田信胜
+说实话，在我面前说这种话真是令人恼火！
+[k]
+
+＠C：织田信胜
+虽然我不知道这家伙是谁，
+[k]
+
+[charaFace C 2]
+＠C：织田信胜
+但最理解姐姐大人的，[r]肯定是我吧！
+[k]
+
+？1：哎……
+？2：我就知道～。
+
+？！
+
+[charaFace C 13]
+＠C：织田信长
+不要打断我的话啦，你这笨蛋！
+[k]
+
+[charaFace C 14]
+＠C：织田信长
+总之我是不会让你使用我的身体的。[r]还给我，光秀。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_1 1.0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠明智光秀
+……够了，[r]我已经不在乎你究竟是谁了。
+[k]
+
+＠明智光秀
+……因为现在，我的信长公将在此诞生！
+[k]
+
+[bgm BGM_EVENT_24 0.1 1.0]
+＠明智光秀
+英灵兵！　把这群疯子处理掉！！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[se ad270]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+＠G：英灵兵
+………！
+[k]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠C：织田信长
+唔……看来不小心说得太多了。
+[k]
+
+＠C：织田信长
+原本我还想在一旁观望一会儿，[r]但金桔的说法实在令人火大，这也是无可奈何的嘛。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠冲田Alter
+……本该趁他说话的时候砍过去。[r]我觉得那个Saber会做这种事。
+[k]
+
+？1：还是先处理英灵兵吧！
+？2：啊～，或许是呢。
+
+？！
+
+[charaFace A 2]
+＠冲田Alter
+……总之上吧，御主！
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[seStop ad566 0.4]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

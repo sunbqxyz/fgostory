@@ -1,0 +1,140 @@
+
+
+
+＄01-00-07-04-2-1
+[soundStopAll]
+[charaSet A 8001002 1 玛修]
+[charaSet B 98024000 1 乌鲁克市民]
+[charaSet C 3027000 1 安娜]
+[charaSet D 98003000 1 Dr.罗曼]
+
+[bgm BGM_EVENT_39 0.1]
+[scene 20730]
+[fadein black 1.5]
+[wait fade]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+
+＠乌鲁克市民
+哎呀，真是帮大忙了！[r]那头害兽真让我吃了不少苦头！
+[k]
+
+＠乌鲁克市民
+你们其实只要在我剃毛的时候，帮忙守着就行了，[r]没想到居然帮我消灭了害兽……
+[k]
+
+＠乌鲁克市民
+不愧是王直属的精锐！　下次也要拜托你们了哦！[r]给，这个，三枚羊之银。
+[k]
+
+＠乌鲁克市民
+咦？　你问不需要你们帮忙剃毛吗？[r]这个嘛……因为情况稍有变化……
+[k]
+
+＠乌鲁克市民
+巫女所的巫女大人们表示，[r]她们不惜付钱也想要来剃毛，所以已经被预约走了。
+[k]
+
+＠乌鲁克市民
+没想到居然会有将剃毛当生意做的一天……[r]真是的，流行还真是恐怖的玩意儿呢……
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[wt 1.0]
+[bgmStop BGM_EVENT_39 1.5]
+[wait fade]
+[charaFadeout B 0.1]
+[wt 1.5]
+[scene 32900]
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFace C 4]
+[charaFadein A 0.4 2]
+[charaFadein C 0.4 0]
+
+＠玛修
+…………羊…………
+[k]
+
+＠安娜
+…………从眼前……经过……
+[k]
+
+？1：你们俩打起精神来……
+？2：真是个悲惨的事件……
+
+？！
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[se ad13]
+[charaTalk D]
+[communicationChara 98003003 1 5 0 4]
+[wt 0.3]
+
+＠Dr.罗曼
+问题以非常遗憾的形式结束了呀……[r]我也不知道该用什么话来安慰玛修和安娜……
+[k]
+
+[communicationCharaFace 3]
+＠Dr.罗曼
+这也是因为突然导入了货币制度，[r]使娱乐也变成可以“买到”的东西所引起的弊害吧。
+[k]
+
+[communicationCharaFace 4]
+＠Dr.罗曼
+虽然这样确实是都市经济活性化的有效手段，[r]但是不是早了500年……
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+
+＠玛修
+对……我记得用银当票据是在阿卡德时期开始兴起的，[r]苏美尔早期的王朝时代应该没有这种……
+[k]
+
+＠玛修
+这不是吉尔伽美什王的错，[r]但对乌鲁克市民来说未免太早了吧……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠安娜
+深有同感，玛修……[r]果然货币是坏文明……预约制度也不是好东西……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.0]
+[wipeout rollRight 1.5 0.5]
+[wait wipe]
+[charaFadeout C 0.1]
+[wt 0.7]
+[wipein rollLeft 1.5 0.5]
+[wait wipe]
+[wt 0.4]
+
+
+[scene 32901 1.0]
+[wt 2.0]
+[scene 32902 1.0]
+[wt 1.0]
+[se ad117]
+[wt 3.0]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

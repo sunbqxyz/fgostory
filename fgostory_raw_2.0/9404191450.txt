@@ -1,0 +1,167 @@
+
+
+＄94-04-19-14-5-0
+
+[soundStopAll]
+
+
+[charaSet A 6018002 1 X]
+[charaSet B 1033002 1 齐格鲁德]
+[charaSet J 5009000 1 特效用]
+
+[scene 82801]
+
+[shake 0.05 4 4 0]
+[effect bit_talk_41]
+[se ad59]
+
+[cameraMove 0.1 0,0 1.01]
+[wipeFilter cinema 0.5 0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[fadeout black 0.5]
+[wait fade]
+[cameraHome 0.1]
+[effectStop bit_talk_41]
+[shakeStop]
+[scene 49000]
+[wt 0.1]
+[seStop ad59 0.1]
+[se ade354]
+[seVolume ade354 0 0.6]
+[fadein black 0.6]
+[wait fade]
+
+[wt 0.2]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠X
+一路平安顺利抵达了！[r]这里就是中枢部吧。
+[k]
+
+＠X
+这是……从未见过的反应堆呢，[r]使用的无疑是[#龙之宝玉:Dragon Heart]。
+[k]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth J 2]
+
+[bgmStop BGM_EVENT_5 0.7]
+
+[charaPut J 0,-50]
+[charaEffect J bit_talk_radiallight01]
+[se ad606]
+
+＠X
+那我就快速解放真名然后解放圣剑[line 3]
+[k]
+
+[messageOff]
+[effect bit_talk_gram_slash_04]
+[se ad697]
+[seStop ad697 1.0]
+[seStop ad606 0.2]
+[wt 0.1]
+[charaFadeout A 0.1]
+[charaEffectDestroy J]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+[wt 0.1]
+
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[effect bit_talk_14 0,-50]
+[se ad32]
+[charaShake A 0.07 4 2 0.6]
+[wt 0.1]
+[se ad671]
+[seVolume ad671 0 0.3]
+[seStop ad671 1.0]
+[charaMove A 140,-50 0.3]
+[wt 0.3]
+[charaMove A 160,-50 0.4]
+[wt 0.7]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠齐格鲁德
+目的是破坏要塞吗。[bgm BGM_EVENT_3 0.1][r]但只要在下的眼睛还是黑[line 3]
+[k]
+
+＠齐格鲁德
+抱歉。[r]只要在下的眼睛还是蓝色的，你的目的就无法达成。
+[k]
+
+[charaFace B 5]
+
+＠齐格鲁德
+[line 3]在弹射器边战斗时，在下就感觉到了。[r]你果然是圣剑使啊。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+
+＠X
+而你则是魔剑使吧。[r]过去应该是个有名的Saber……
+[k]
+
+[charaFace A 2]
+
+＠X
+但与太空神阴流同流合污[r]可称不上是一流Saber的所作所为！
+[k]
+
+＠X
+再说了，[r]『银河阿斯卡隆运动』什么的！
+[k]
+
+＠X
+这种作弊技能，[r]就算其他龙属性允许，我也不能允许！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠齐格鲁德
+我对神秘稀薄龙种减少的宇宙没有留恋。
+[k]
+
+[charaFace B 5]
+
+＠齐格鲁德
+无法邂逅真正强敌，四处流浪的在下2000年间的焦躁，[r]您是否真的能理解呢。
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

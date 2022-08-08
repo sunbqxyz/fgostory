@@ -1,0 +1,1152 @@
+
+
+
+
+＄91-60-30-01-2-1
+
+[soundStopAll]
+
+
+[charaSet A 6030000 1 段藏]
+[charaSet B 6019001 1 风魔小太郎]
+[charaSet C 1098157800 1 Caster Limbo？]
+[charaSet D 1001000 1 特效用]
+[charaSet E 1001000 1 特效用2]
+
+[charaSet F 98006200 1 Limbo特效]
+
+[charaSet H 1098157800 1 剪影_Limbo]
+[charaFilter H silhouette 00000080]
+
+
+[scene 47300]
+
+[bgm BGM_EVENT_24 0.1]
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.1]
+
+[effect bit_talk_kengekiall02]
+[wt 0.1]
+[se ad33]
+[wt 1.0]
+[shake 0.03 3 3 0.4]
+[effect bit_talk_14]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.7]
+
+[flashin once 0.3 0.3 FFFFFFAF FFFFFF00]
+[se bac194]
+[wt 0.1]
+[shake 0.03 3 3 0.4]
+[wt 0.7]
+[flashin once 0.3 0.3 FFFFFFAF FFFFFF00]
+[se bac194]
+[wt 0.1]
+[shake 0.03 3 3 0.4]
+[wt 0.7]
+
+[shake 0.05 1 4 1.0]
+[se ad211]
+[effect bit_talk_impactlanding]
+[wt 3.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[se ad7]
+[charaMoveReturn A 0,5 0.2]
+[charaMoveScale A 0.95 0.2]
+[wt 0.7]
+
+[charaFace A 2]
+
+
+＠段藏
+机关忍法，风魔·喷进弹！[r]哪怕对手是妖魔之辈，也能撕得粉碎！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale A 1.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+
+＠风魔小太郎
+[line 3]Caster Limbo。[r]那可憎的你的残渣。消失吧！
+[k]
+
+[charaFace B 5]
+＠风魔小太郎
+无论多少次，[r]无论多少次。
+[k]
+
+[charaFace B 2]
+＠风魔小太郎
+我都会将你粉碎！
+[k]
+
+[messageOff]
+
+
+[flag MALE false]
+[flag FEMALE false]
+
+[selectionUse masterMale]
+？1：宝具解放！
+[flag MALE true]
+？！
+
+[selectionUse masterFemale]
+？1：宝具解放！
+[flag FEMALE true]
+？！
+
+[branch play01 MALE 1]
+[branch play02 FEMALE 1]
+
+[label play01]
+[charaEffect B bit_talk_CommandMantra_01 0,64]
+[wt 0.5]
+[se bas16]
+[wt 1.5]
+
+[branch play03]
+
+[label play02]
+[charaEffect B bit_talk_CommandMantra_02 0,64]
+[wt 0.5]
+[se bas16]
+[wt 1.5]
+
+[branch play03]
+
+[label play03]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 2]
+[charaFace B 5]
+[charaFadein B 0.1 0]
+＠段藏
+小太郎阁下！　我们一起！
+[k]
+
+[charaFace B 1]
+＠风魔小太郎
+好！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaEffect B bit_talk_36]
+[charaEffect A bit_talk_36]
+[se ad39]
+[wt 1.7]
+
+
+[cueSe NoblePhantasm_603000 NP_603000_2]
+
+[charaFace A 2]
+[charaFace B 2]
+
+
+＠风魔与机关
+[line 3]『Evil wind Death storm』！[r][line 3]『[#不灭的混沌旅团:Immortal Chaos Brigade]』！
+[k]
+
+[messageOff]
+[cueSeStop NoblePhantasm_603000 NP_603000_2 0.1]
+[fadeout white 1.0]
+[wait fade]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaEffectStop A bit_talk_36]
+[charaEffectStop B bit_talk_36]
+
+[wt 0.5]
+
+[fadein white 0.5]
+[wait fade]
+
+[charaPut D 1]
+[charaPut E 1]
+[charaEffect D bit_talk_tornado01]
+[se bac30]
+[wt 0.5]
+[charaEffect E bit_talk_32]
+[se ad439]
+[seVolume ad167 0 0.3]
+[wt 1.5]
+[charaEffectStop E bit_talk_32]
+[wt 0.1]
+
+[charaEffectStop D bit_talk_tornado01]
+
+[effect bit_talk_explosion_triple]
+[wt 0.2]
+[shake 0.05 3 3 0.7]
+[seStop ad439]
+[se ad63]
+[wt 2.5]
+
+[effectStop bit_talk_explosion_triple]
+
+[charaPut F 1200,1200]
+[charaEffect F bit_talk_shadow_aura01]
+
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[charaPut F 0,-180]
+
+[charaShake C 0.04 4 4 0.7]
+[wt 1.0]
+
+＠Caster Limbo？
+唔，呜[line 6]！
+[k]
+
+[charaFadeout C 0.1]
+[charaPut F 1200,1200]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠段藏
+…………然后此乃奥义，乃禁忌之技。
+[k]
+
+[messageOff]
+[charaEffect A bit_talk_36]
+[se ad39]
+[wt 1.5]
+
+[charaFace A 5]
+＠段藏
+非风魔之技。[r]非人类之技。
+[k]
+
+＠段藏
+由于乃恶鬼外道之技，因此遭封印的吾之禁忌招数，[r]宣誓决不能在外人面前使用的绝技。
+[k]
+
+
+＠段藏
+此乃吾之记录回路的内部，[r]犹如吾之梦，吾之幻。仅限一次的过错是也。
+[k]
+
+[charaPut D 1200,1200]
+
+[charaFace A 4]
+＠段藏
+御主，还请您原谅。
+[k]
+
+[messageOff]
+[charaEffectStop A bit_talk_36]
+[cameraMove 1.0 100,-65 1.4]
+[wt 1.5]
+
+＠玛修
+段藏小姐的手上……出现了夕颜之花……？
+[k]
+
+[charaFace A 5]
+＠段藏
+[line 6][#抱歉:Sorry]。
+[k]
+
+[messageOff]
+[charaScale D 0.7]
+[charaPut D -150,50]
+[charaEffect D bit_talk_12_platinum_L]
+[se bac95]
+[wt 1.0]
+
+[wipeout rectangleStripRightToLeft 0.2 1]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[cameraHome 0.1]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.1 1]
+[wait wipe]
+
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[charaPut F 0,-180]
+＠Caster Limbo？
+！！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 0.1]
+[charaEffectStop F bit_talk_shadow_aura01]
+
+[charaTalk off]
+
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[charaFadeout C 0.1]
+[wt 0.8]
+
+[charaFadeout H 0.1]
+
+[fowardEffect bit_talk_blood_splash]
+[se ad464]
+[wt 2.0]
+
+[se ad144]
+[wt 1.0]
+[seStop ad144]
+[seStop ad464]
+
+[charaTalk on]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠段藏
+只要斩断我手中握着的花，[r]敌人的首级就会被当即斩落。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠风魔小太郎
+…………干得太漂亮了，段藏阁下。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+
+＠段藏
+[line 3]『妖术斩法·夕颜』。
+[k]
+
+＠段藏
+由于是禁忌之技，还请忘记。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+
+[charaSet C 5009001 1 达·芬奇]
+[charaSet D 9005001 1 福尔摩斯]
+[charaSet E 98001000 1 玛修]
+
+[scene 10200]
+
+[wt 2.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠玛修
+[line 3]达·芬奇亲，Mr.福尔摩斯。[r]那边的战斗似乎结束了。
+[k]
+
+＠玛修
+前辈和大家都平安无事。[r]这样一来……
+[k]
+
+[messageOff]
+[charaFace E 6]
+[wt 1.0]
+
+[charaFace E 12]
+＠玛修
+……达·芬奇亲？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠达·芬奇
+啊啊，嗯。战斗结束了吧。[r]这里也观测到异常数据消灭了。总之可以放心了。
+[k]
+
+[charaFace C 4]
+＠达·芬奇
+这当然是件好事。[r]只不过，有点奇怪。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠玛修
+奇怪吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+
+＠达·芬奇
+是记录回路的破损。尽管只有一部分……[r]并非全部。但一部分领域确实……
+[k]
+
+＠达·芬奇
+被完美地修复了。[r]这究竟是怎么回事啊？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+[wt 1.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠福尔摩斯
+我们判定白日梦这种错误是由于[r]不明数据的Bug或是病毒导致的。
+[k]
+
+＠福尔摩斯
+当然，现在这种认识仍未改变。[r]但是[line 3]
+[k]
+
+[charaFace D 6]
+＠福尔摩斯
+倘若这异常数据的目的并不是破坏。[r]而是[#以修复为目的]的话，会怎么样？
+[k]
+
+[charaFace D 0]
+＠福尔摩斯
+尽管意图尚不明确。[r]嗯。远东有为敌人雪中送炭的说法吧。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace E 6]
+[charaFadein E 0.1 2]
+[charaFace C 2]
+[charaFadein C 0.1 0]
+[wt 1.0]
+
+[charaTalk on]
+[bgmStop BGM_EVENT_2 0.1]
+
+[charaFace C 5]
+＠达·芬奇
+………………话说福尔摩斯怎么又来了你怎么又来了。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠福尔摩斯
+不，我起初就不敢确定。[r]只是一种可能性而已。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠达·芬奇
+[messageShake 0.03 4 4 0.7]
+还不是一如既往的那种吗！[r]你这人真是的！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[fadeout white 1.0]
+[wait fade]
+
+[scene 10001]
+[wt 2.0]
+
+[wipeFilter cinema 0.5 0]
+
+[fadein white 1.0]
+[wait fade]
+
+
+＠
+[line 8][image berserker_language_5]阁下。
+[k]
+
+
+＠
+[image berserker_language_5]阁下。[r][image berserker_language_5]阁下。
+[k]
+
+[messageOff]
+[se ad31]
+[effect bit_talk_noise_gr]
+[wt 1.0]
+[seStop ad31 0.1]
+
+
+[se ad15]
+[wt 0.5]
+[se ad15]
+[wt 0.7]
+[effectStop bit_talk_noise_gr]
+[effect bit_talk_security]
+
+[bgm BGM_EVENT_6 0.1]
+
+
+＠
+连起来了。
+[k]
+
+＠
+某种东西，在我的身体里，构筑了起来。
+[k]
+
+＠
+啊啊，本应无法播放的东西能够播放了。[r]尽管只是我记录中的一部分……
+[k]
+
+＠
+被重新连接了起来。[r]被重新……搭建了起来。
+[k]
+
+
+＠
+这是往昔的记录。[r]是果心居士大人与初代风魔大人都消失后发生的事。
+[k]
+
+＠
+是作为忍者奔波于乱世各地之后的事。[r]尽管，乱世尚未结束……
+[k]
+
+
+＠
+却是自己寄身某处安顿下来之后的事。
+[k]
+
+＠
+啊啊，遥远。这是多么遥远的事啊。
+[k]
+
+＠
+距今遥远的过去。[r]一度失去的记录，在我的内心鲜明地播放了出来。
+[k]
+
+＠
+用人类的说法，没错……
+[k]
+
+＠
+…………是回忆。
+[k]
+
+[messageOff]
+[fadeout white 1.0]
+[bgmStop BGM_EVENT_6 1.0]
+[wait fade]
+
+[effectStop bit_talk_security]
+
+[scene 47000]
+[wt 1.0]
+
+[effect bit_sepia01]
+
+[charaSet A 6030002 1 段藏]
+[charaSet E 1001000 1 幼儿]
+
+[fadein white 1.0]
+[wait fade]
+
+[se ad443]
+[wt 1.0]
+[seStop ad443 0.1]
+
+[bgm BGM_EVENT_25 0.1]
+
+＠幼儿
+……哈，哈。呼。
+[k]
+
+＠幼儿
+我……我回来啦。
+[k]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠段藏
+辛苦了。[r]比规定的时间早了四分之一个时辰呢。
+[k]
+
+
+＠段藏
+今天的山，在相模的山中也是尤为险峻的。[r]能独自一人克服实属不易。
+[k]
+
+[charaFace A 1]
+＠段藏
+干得漂亮。[r][line 3]五代。
+[k]
+
+＠幼儿
+是。
+[k]
+
+＠幼儿
+啊，不。叫我五代是不是还太早了……
+[k]
+
+＠幼儿
+我的实力还没到那个程度。[r]现在依然是蒙您教诲之身呢。
+[k]
+
+＠幼儿
+当您将所有风魔之术传授给我，[r]我将这些全部收为己用时，才能自称五代。
+[k]
+
+＠幼儿
+所以，在那之前……
+[k]
+
+[charaFace A 0]
+＠段藏
+那就叫小太郎阁下好啦。
+[k]
+
+＠幼儿
+这[line 3]
+[k]
+
+[charaFace A 5]
+＠段藏
+不。您至少得承受这个名字才行。[r]因为您已经继承了名字。
+[k]
+
+[charaFace A 1]
+＠段藏
+挺起胸膛吧。[r]小太郎阁下。
+[k]
+
+＠段藏
+现阶段，嗯。我会如您所愿，[r]不称呼您为五代。
+[k]
+
+[charaFace A 0]
+＠段藏
+但是，您已经是风魔小太郎了。[r]不能一直使用乳名。
+[k]
+
+＠段藏
+过世的前代，[r]您的父亲一定也这么希望。
+[k]
+
+[messageOff]
+[charaFace A 1]
+[wt 1.0]
+
+[charaFace A 0]
+＠段藏
+好吗？
+[k]
+
+＠幼儿
+……好的。
+[k]
+
+
+＠段藏
+那我先去准备晚饭了。[r]今天不返回风魔之里，就在那边的山间小屋过夜。
+[k]
+
+＠幼儿
+哎，不用吃兵粮丸……
+[k]
+
+＠段藏
+毕竟您还在长身体嘛。[r]得多吃一点，好好成长才行。
+[k]
+
+
+＠幼儿
+嗯，好！
+[k]
+
+＠幼儿
+那我去抓鱼和野兽啦！
+[k]
+
+
+＠段藏
+不，不需要。我已经抓了几条鲑鱼。[r]把这些拿去围炉后面烤[line 3]
+[k]
+
+
+＠段藏
+还猎来了兔子，用来煮汤喝吧。[r]得好好补充营养才行。
+[k]
+
+
+＠幼儿
+鲑鱼和兔子我都很喜欢！[r]啊，呃。
+[k]
+
+＠段藏
+[FFFFFF]？[-]
+[k]
+
+＠幼儿
+母亲大人会帮我处理吗？[r]平时都是村里的人……
+[k]
+
+＠段藏
+嗯。
+[k]
+
+[charaFace A 3]
+
+
+＠段藏
+母亲……[line 3]
+[k]
+
+
+＠段藏
+既然被您称呼为母亲……
+[k]
+
+
+＠段藏
+我觉得至少得做一些有母亲样子的事才行。[r]是不是有些多管闲事了呢。
+[k]
+
+＠幼儿
+不，母亲大人。[r]才不会呢。
+[k]
+
+＠幼儿
+那个……
+[k]
+
+＠幼儿
+我很期待晚饭哦！
+[k]
+
+
+[messageOff]
+[charaTalk A]
+[charaFace A 1]
+[wt 1.0]
+
+[charaFace A 0]
+＠段藏
+那先回山间小屋吧。[r]呃……
+[k]
+
+＠段藏
+……[r]……
+[k]
+
+[charaFace A 4]
+＠段藏
+………………这种时候，母亲应该牵着孩子的手吗？
+[k]
+
+＠幼儿
+呃，那个……[r]大概……？
+[k]
+
+[charaFace A 1]
+＠段藏
+那把手给我。我们走吧[line 3]小太郎。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_25 1.0]
+[wait fade]
+
+[effectStop bit_sepia01]
+[charaFadeout A 0.1]
+
+
+[wt 2.0]
+
+[effect bit_talk_security]
+
+[scene 47900]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_41 0.1]
+
+＠声音
+咯咯咯[line 3]
+[k]
+
+＠声音
+咯咯，咯咯咯咯咯咯咯咯咯咯。呵呵呵呵呵呵呵。[r]啊啊，费了不少时间呢。
+[k]
+
+
+
+＠声音
+终于总算连上了呀。[r]尽管只有一件，但那就是你的至宝。
+[k]
+
+＠声音
+本应被设定为最为珍贵之物的[#记录:回忆]。
+[k]
+
+＠声音
+好好保管吧。[r]好好保管吧。
+[k]
+
+＠声音
+可不能将心爱的存在、温暖的存在全部忘记，[r]只留下冰冷钢铁般的内心哦。
+[k]
+
+＠声音
+这样是不行的。[r]不行的。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠段藏
+为什么……………？
+[k]
+
+＠段藏
+你，为什么……[r]要把这些……
+[k]
+
+＠段藏
+段藏的宝物给我……
+[k]
+
+＠段藏
+将绝对不想忘记，但却忘记了的……
+[k]
+
+＠段藏
+宝贵的回忆……还给我……？
+[k]
+
+
+＠声音
+嗯，嗯。[r]你已经彻底损坏了。
+[k]
+
+＠声音
+甚至回想不起过去珍贵的回忆。[r]甚至不知道自己究竟为何而存在。
+[k]
+
+＠声音
+这实在是，实在是……[r]实在是太那个了吧。
+[k]
+
+＠声音
+没错[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠声音
+[#这实在是太无聊了]。
+[k]
+
+＠声音
+嗯，嗯！　这岂不是太无聊了吗！[r]居然找不到损坏的位置，真是，太不好了！
+[k]
+
+＠声音
+所以说。[r]嗯。
+[k]
+
+＠声音
+就让你回忆起来。[r]像一个人类，想起无可替代的存在。
+[k]
+
+＠声音
+母子感情？　哪怕没有血缘关系？[r]唉，这样啊。真是太好了。嗯嗯太好了。
+[k]
+
+＠声音
+真是太好了呢。[r]木偶傀儡。
+[k]
+
+＠声音
+贫僧可是完全无法理解……
+[k]
+
+
+＠声音
+你就好好保管这份记忆吧。[r][line 3]总有一天，贫僧会来将这些尽数破坏。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠段藏
+破坏……
+[k]
+
+＠段藏
+破坏段藏？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_41 1.0]
+[wt 1.0]
+
+＠声音
+不。
+[k]
+
+
+＠声音
+破坏你在这世间最慈爱的对象。[r]破坏你最珍贵的至宝。
+[k]
+
+[bgm BGM_EVENT_72 0.1]
+
+
+＠声音
+将那外形与有生命之时相同的死者之影，[r]将身为从者的临时来客，
+[k]
+
+
+＠声音
+将你所爱的男人，[r]将你的爱之结晶，
+[k]
+
+
+＠声音
+[#当着你的面毁掉]。
+[k]
+
+＠声音
+所以说，嗯，嗯。[r]届时，务必[line 3]
+[k]
+
+＠声音
+[line 3]让贫僧看看你那滑稽至极的哭丧脸吧，美丽的木偶傀儡。
+[k]
+
+
+[messageOff]
+[fadeout white 1.5]
+
+[bgmStop BGM_EVENT_72 1.5]
+[wait fade]
+
+[effectStop bit_talk_security]
+[wipeOff]
+
+
+
+[charaSet A 6030000 1 段藏]
+[charaSet D 6030000 1 段藏_演出用]
+[charaSet E 98001000 1 玛修]
+
+[wt 1.0]
+
+[scene 10000]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 2.0]
+
+[effect bit_talk_07_02]
+[se ad12]
+[wt 6.5]
+
+
+[fadeout black 1.0]
+[wait fade]
+
+
+[scene 10200]
+
+[wt 2.0]
+
+[fadein black 2.0]
+[wait fade]
+[wt 0.8]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠玛修
+欢迎回来，前辈！[r]辛苦了。
+[k]
+
+？1：我回来了！
+
+＠玛修
+您没事就好。[r]段藏小姐刚才也重新启动了。
+[k]
+
+？2：段藏亲不要紧吧？
+
+＠玛修
+嗯。就在刚才，她重新启动了！
+[k]
+
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[scene 10310]
+
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠风魔小太郎
+……[r]……
+[k]
+
+[charaFace B 1]
+＠风魔小太郎
+我们回来了。母……[line 3]
+[k]
+
+[charaFace B 4]
+＠风魔小太郎
+不，段藏阁下。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad95]
+[seVolume ad95 0 0.3]
+[wt 0.5]
+[seVolume ad95 0.5 1.0]
+[wt 1.0]
+
+
+[charaTalk off]
+[charaFace A 4]
+[charaFadein A 0.7 1]
+
+
+[charaFace D 1]
+[charaFadein D 0.7 1]
+
+
+[seStop ad95 0.1]
+
+[wt 1.5]
+
+[charaFadeout A 0.7]
+
+[wt 0.7]
+[bgm BGM_EVENT_45 0.1]
+
+[wt 1.0]
+
+＠段藏
+[line 6]欢迎回来，[#小太郎]。
+[k]
+
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.5]
+[bgmStop BGM_EVENT_45 2.5]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

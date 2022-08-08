@@ -1,0 +1,61 @@
+＄94-00-18-82-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[charaSet A 2009201 1 阿耳忒弥斯]
+[charaSet B 2009102 1 俄里翁]
+
+[charaTalk off]
+[scene 20800]
+[fadein black 2]
+[wait fade]
+
+[charaFadein A 0.4 1]
+[charaFace A 0]
+＠阿耳忒弥斯
+啊，御主！　请等一下！[r]难得的机会，送你个巧克力吧！
+[k]
+
+[charaFace A 1]
+＠阿耳忒弥斯
+我现在正打算去把那个死皮赖脸地问女性从者要巧克力的俄里翁，[r]从物理上做成巧克力哦！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadein A 0.1 0]
+[charaFadein B 0.1 2]
+[charaFace B 0]
+
+＠俄里翁
+对不起对不起，[r]但你做的巧克力肯定很难吃吧……
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaFadein B 0.1 0,-20]
+
+[charaFace B 4]
+[charaSpecialEffect B wipe]
+[wt 0.4]
+[se ad46]
+＠俄里翁
+不行～～～～要变成巧克力啦～～～～～！！
+[k]
+
+[wait charaSpecialEffect B wipe]
+[charaFace A 1]
+[messageOff]
+[wt 0.4]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[wait effect bit_talk_valentinegift01]
+
+[messageOff]
+[fadeout white 1]
+[wait fade]
+[soundStopAll]
+[end]

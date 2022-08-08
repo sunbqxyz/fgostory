@@ -1,0 +1,1108 @@
+
+
+＄94-05-42-08-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 1048000 1 圣诞迦尔纳]
+[charaSet B 98001000 1 玛修]
+[charaSet C 1098204700 1 阿周那_通讯]
+[charaSet D 98115000 1 通讯用]
+[charaSet E 2015001 1 阿周那]
+[charaSet F 1098124500 1 达·芬奇]
+[charaSet G 5009001 1 达·芬奇（术）]
+[charaSet H 5005001 1 安徒生]
+[charaSet I 5030001 1 山鲁佐德]
+[charaSet J 4006001 1 乔尔乔斯]
+[charaSet K 7033002 1 阿周那·Alter]
+[charaSet L 5009040 1 特效用dummy]
+
+[imageSet M back10000_fs 1]
+[charaScale M 1.5]
+
+[charaPutFSR L 1500,2000]
+[charaEffect L bit_sepia01_depth]
+
+[charaPutFSR D 1200,2000]
+[charaEffect D bit_talk_10_LowLevel]
+
+[charaDepth M 3]
+[charaDepth A 4]
+
+[pictureFrame cut063_cinema]
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+
+[scene 105800]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[scene 106000]
+
+[label lblConf1]
+
+
+[fadein black 1.5]
+[wait fade]
+
+[se ade531]
+[wt 0.5]
+[seStop ade531 0.2]
+[wt 0.3]
+
+[se ade530]
+[wt 0.5]
+[seStop ade530 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠
+[line 3]必须让身体动起来。[r]更快，更锐利。
+[k]
+
+[se ade530]
+＠？？？
+咻……咻……[wt 0.5][seStop ade530 0.1]
+[k]
+
+[messageOff]
+[wt 0.2]
+
+[se ade531]
+[wt 0.5]
+[seStop ade531 0.2]
+[wt 0.3]
+
+＠
+让头脑一片空白。[r]一心让战士的肉体与自己同化。
+[k]
+
+＠
+就像过去，心无旁骛地[r]追求自身强大的那个时候。
+[k]
+
+＠
+但是，并非一切都和当时一样。[r]状况反而比当时更好。
+[k]
+
+＠
+这里没有对身份不同的嘲笑。[r]这里没有对立场差异的蔑视。
+[k]
+
+＠
+另一方面，奇妙的是，[r]感觉身体内有股未曾感受过的焦躁感。
+[k]
+
+＠
+因为战斗时期已经明确了吗？
+[k]
+
+＠
+圣诞老人这种战士的巅峰期十分短暂。[r]只要圣诞节一结束，就毫无意义了。
+[k]
+
+＠
+所以才要变得更强。[r]要尽快变得更加、更加强大才行[line 3]
+[k]
+
+[messageOff]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.4 0,-50]
+[wt 0.5]
+[charaMoveReturn A 8,-50 0.2]
+[se ade531]
+[wt 0.3]
+[charaMoveReturn A -8,-50 0.2]
+[seStop ade531 0.2]
+[wt 0.4]
+
+[se ade530]
+[charaMove A 5,-46 0.1]
+[charaMoveScale A 1.05 0.1]
+[wt 0.15]
+[charaMove A -10,-40 0.1]
+[charaMoveScale A 1.1 0.1]
+[wt 0.4]
+[seStop ade530 0.1]
+
+[wt 0.6]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠
+心中满是嘈杂声。无法保持平常心。
+[k]
+
+＠
+如果不能让身体动起来，[r]仿佛就有什么快要失控了。
+[k]
+
+＠
+我知道原因。[r]因为昨天[line 3]那个男人的话。
+[k]
+
+[messageOff]
+
+[se ad592]
+[fadeout white 0.6]
+[bgm BGM_EVENT_81 0.6 0.4]
+[wait fade]
+
+
+[charaPut L 1]
+
+[scene 106600]
+
+[wt 0.9]
+
+[fadein white 0.6]
+[wait fade]
+[wt 0.1]
+
+[charaPut D 0,0]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+＠C：阿周那
+哼……太不像样了，迦尔纳。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPutFSR D 1200,2000]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+＠圣诞迦尔纳
+……你说什么？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut D 0,0]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+＠C：阿周那
+看来，你似乎还不知道自己的攻击[r]为何无法对弗栗多奏效的原因吧。
+[k]
+
+＠C：阿周那
+握起拳头的你变得比平时更寻求成长了，[r]但其实，你丝毫没有改变。
+[k]
+
+＠C：阿周那
+所以你才无法触及她。[r]你无法成为真正圣诞老人的理由也在于此。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPutFSR D 1200,2000]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+＠圣诞迦尔纳
+你以为自己很了解圣诞老人？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut D 0,0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠C：阿周那
+至少，我知道。
+[k]
+
+＠C：阿周那
+认为施舍的英雄就可以成为圣诞老人，
+[k]
+
+＠C：阿周那
+认为无私无欲，只要被恳求，就实现对方愿望的男人[r]可以成为圣诞老人的想法[line 3]
+[k]
+
+
+＠C：阿周那
+不过是个幻想。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPutFSR D 1200,2000]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+＠圣诞迦尔纳
+！[messageShake 0.05 3 3 0.2]！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut D 0,0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠C：阿周那
+圣诞老人就在路途的尽头。[r]而现在的你是无法抵达那里的……
+[k]
+
+[messageOff]
+[wt 0.4]
+
+[se ad1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPutFSR D 1200,2000]
+[charaEffectStop D bit_talk_10_LowLevel]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+[wt 1.5]
+
+[fadeout white 0.6]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[charaPutFSR L 1500,2000]
+
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+[scene 105800]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+[scene 106000]
+
+[label lblConf2]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 0,-50]
+[wt 0.9]
+
+[bgm BGM_EVENT_81 0.6 1.0]
+[fadein white 0.6]
+[wait fade]
+[wt 0.2]
+
+[charaMoveReturn A 8,-50 0.2]
+
+[se ade531]
+[wt 0.3]
+[charaMoveReturn A -8,-50 0.2]
+[seStop ade531 0.2]
+[wt 0.4]
+
+[se ade530]
+＠圣诞迦尔纳
+咻……咻……！[wt 0.5][seStop ade530 0.2]
+[k]
+
+[messageOff]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_81 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[pictureFrame]
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+
+[scene 104200]
+
+
+[branch lblConf3]
+[label lblNotClear3]
+
+[scene 105500]
+
+[label lblConf3]
+
+
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+？1：好了……
+？！
+
+[se ade12]
+[wt 1.5]
+
+？1：迦尔纳，可以打扰一下吗？
+？！
+
+＠圣诞迦尔纳
+是御主啊。没关系。
+[k]
+
+
+[messageOff]
+[wt 0.1]
+
+[se ad8]
+[wipeout leftToRight 1.0 1.0]
+[wait wipe]
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+[scene 105800]
+
+[branch lblConf4]
+[label lblNotClear4]
+
+[scene 106000]
+
+[label lblConf4]
+
+[wt 0.8]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[se ade531]
+[seVolume ade531 0 0.6]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+我可以边训练边听。什么事？
+[k]
+
+？1：关于昨天阿周那说的话，
+？2：我看你似乎有点介意，所以来看看。
+？！
+
+[messageOff]
+[wt 0.1]
+
+[seStop ade531 0.1]
+[wt 0.6]
+
+＠圣诞迦尔纳
+……御主明白那家伙的话是什么意思吗？
+[k]
+
+[charaFace A 12]
+
+＠圣诞迦尔纳
+很遗憾……我不明白。
+[k]
+
+＠圣诞迦尔纳
+他一定在嘲笑我是个无能的圣诞老人吧。[r]但我觉得不只有这些[line 3]
+[k]
+
+？1：（与其说那是嘲笑，倒不如说……）
+？！
+
+[messageOff]
+
+[wipeout circleIn 1.0 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[pictureFrame cut063_cinema]
+
+[charaPut L 1]
+[wt 1.0]
+
+[wipein circleIn 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠阿周那
+我知道这种事原本不该拜托御主。
+[k]
+
+[charaFace E 4]
+＠阿周那
+但除了御主，我没有其他可以信任并值得托付的人了。
+[k]
+
+[branchQuestNotClear lblNotClear10 91201502]
+
+＠阿周那
+因为知道我……不怎么能表露在外部分的，[r]只有御主您了。
+[k]
+
+[branch lblConf10]
+
+[label lblNotClear10]
+[label lblConf10]
+
+[charaFace E 0]
+＠阿周那
+我对迦尔纳说的话，无疑都是真心的。
+[k]
+
+＠阿周那
+我觉得那家伙没资格当圣诞老人。[r]由衷觉得他很愚蠢。
+[k]
+
+[charaFace E 4]
+＠阿周那
+但当前的情况不能就此了之[line 3]
+[k]
+
+[charaFace E 0]
+＠阿周那
+所以我这个请求或许有些多管闲事……[r]但您能否代替我前去确认一下呢，御主。
+[k]
+
+＠阿周那
+如果他仍没能意识到的话，[r]我会负起责任打倒弗栗多。
+[k]
+
+＠阿周那
+赌上我身体里流淌的因陀罗之血……
+[k]
+
+
+[messageOff]
+[wipeout circleIn 1.0 1.0]
+[bgm BGM_EVENT_11 1.0 0.4]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[pictureFrame]
+[charaPutFSR L 1500,2000]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_11 1.0 1.0]
+[wipein circleIn 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+我之所以成不了真正的圣诞老人，[r]除了修行不够，还有其他原因……
+[k]
+
+＠圣诞迦尔纳
+他是这么说的，[r]但我无法理解。
+[k]
+
+＠圣诞迦尔纳
+他的意思是，[r]光凭施舍的英雄是无法成为圣诞老人的。
+[k]
+
+[charaFace A 8]
+＠圣诞迦尔纳
+我自以为是在模仿其他圣诞老人们。
+[k]
+
+＠圣诞迦尔纳
+圣诞老人就是分发礼物，[r]支配圣诞节的最强存在吧。
+[k]
+
+＠圣诞迦尔纳
+……御主，你和其他圣诞老人[r]相处的时间也很久。
+[k]
+
+＠圣诞迦尔纳
+如果你知道的话，请告诉我。[r]我和她们有什么不同？
+[k]
+
+＠圣诞迦尔纳
+这里或许藏着答案。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+？1：…………这个嘛，迦尔纳你…………
+？！
+
+[charaFace A 13]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_11 1.0]
+
+？1：在赠送礼物给大家这件事上过于拼命了。
+？2：自己反而……没有乐在其中吧？
+？！
+
+＠圣诞迦尔纳
+…[messageShake 0.05 2 2 0.4]………！
+[k]
+
+
+？1：以前的圣诞老人虽然都会有使命感，
+？2：但最后大家看上去都很快乐哦。
+？！
+
+[bgm BGM_EVENT_6 0.1]
+
+[charaFace A 8]
+＠圣诞迦尔纳
+……原来如此。[r]圣诞老人也是会快乐的啊。
+[k]
+
+＠圣诞迦尔纳
+给自己的回报。[r]给自己的[line 3]礼物啊。
+[k]
+
+＠圣诞迦尔纳
+无法赠送礼物给自己的男人，[r]是无法赠送礼物给全世界孩子们的。
+[k]
+
+＠圣诞迦尔纳
+这种男人竟敢自称圣诞老人，真令人笑痛肚子。[r]是这个意思吗，阿周那啊……
+[k]
+
+[charaFace A 12]
+＠圣诞迦尔纳
+但是，我不会通过圣诞老人的工作得到喜悦。
+[k]
+
+＠圣诞迦尔纳
+我拥有的，只有想要变强。[r]想要成为真正圣诞老人的想法。
+[k]
+
+？1：那也可以把这个作为礼物啊。
+？！
+
+[charaFace A 8]
+＠圣诞迦尔纳
+这是矛盾的。不完全的我的礼物袋中[r]并没有这些。所以无法将这个赠与自己。
+[k]
+
+？1：那就从其他人那里获得吧。
+？2：没有规矩规定圣诞老人不能收礼物啊。
+？！
+
+[charaFace A 13]
+＠圣诞迦尔纳
+！！
+[k]
+
+
+[charaFace A 11]
+＠圣诞迦尔纳
+……这样啊。
+[k]
+
+＠圣诞迦尔纳
+我，想要自身的成长[line 3][r]作为对我自身的[#施舍:礼物]。
+[k]
+
+＠圣诞迦尔纳
+而对自身的施舍，[r]也意味着允许他人的施舍。
+[k]
+
+＠圣诞迦尔纳
+我应该坦率地[line 3][r]向他人寻求自己袋中没有的东西吗。
+[k]
+
+？1：毕竟之前你未免过于严于律己了。
+？！
+
+[charaFace A 8]
+＠圣诞迦尔纳
+嗯。[r]因为我觉得圣诞老人就该孤身一人承担。
+[k]
+
+
+＠圣诞迦尔纳
+但是，我想要的却是成为『某个人』的强大。[r]在德罗纳师傅门下学习时也是如此。
+[k]
+
+＠圣诞迦尔纳
+马嘶、难敌、[r]坚战、怖军、阿周那……
+[k]
+
+＠圣诞迦尔纳
+虽然他们中有人成了与我水火不容的敌人。[r]但或许正因为他们的存在，我才会变强吧。
+[k]
+
+＠圣诞迦尔纳
+所以[line 3]如果现在的我也无法独自做到，[r]那就应该拜托他人吧。
+[k]
+
+＠圣诞迦尔纳
+拜托那些或许能令我变强的人。
+[k]
+
+？1：我觉得这样比较好。
+？2：我也一直在依靠大家。
+？！
+
+
+[messageOff]
+[charaFace A 9]
+[wt 1.2]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_6 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[branchQuestNotClear lblNotClear5 3000303]
+
+[scene 104100]
+
+[branch lblConf5]
+[label lblNotClear5]
+
+[scene 105700]
+
+[label lblConf5]
+
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+综上所述，我改变了自己的想法。
+[k]
+
+＠圣诞迦尔纳
+成为真正圣诞老人的目的并没有改变，[r]但只要是为了这目的所需的东西，我不会再客气了。
+[k]
+
+＠圣诞迦尔纳
+不仅会派送礼物，[r]也不否定他人的礼物。
+[k]
+
+＠圣诞迦尔纳
+这就是此时此刻的我。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear6 3000303]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠达·芬奇
+嗯嗯，我觉得这样非常好哦。[r]为此会需要到我们吧。
+[k]
+
+
+[branch lblConf6]
+[label lblNotClear6]
+
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 0,0]
+＠G：达·芬奇
+嗯嗯，我觉得这样非常好哦。[r]为此会需要到我们吧。
+[k]
+
+[label lblConf6]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠玛修
+我也有同感。[r]我会继续全力支援各位！
+[k]
+
+＠玛修
+那现阶段应该怎么做呢？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+需要做的还是战胜弗栗多。
+[k]
+
+＠圣诞迦尔纳
+我赢不了弗栗多。[r]请助我一臂之力。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear7 3000303]
+
+
+[charaTalk F]
+[charaFace F 26]
+[charaFadein F 0.1 1]
+＠达·芬奇
+当然了。[r]你对下个屠龙者帮手有什么需求吗？
+[k]
+
+＠达·芬奇
+我们已经做好了准备，你可以随时去找他们哦。[r]到现在为止还没出场的应该是齐格飞吧。还是说[line 3]
+[k]
+
+[branch lblConf7]
+[label lblNotClear7]
+
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 0,0]
+＠G：达·芬奇
+当然了。[r]你对下个屠龙者帮手有什么需求吗？
+[k]
+
+＠G：达·芬奇
+我们已经做好了准备，你可以随时去找他们哦。[r]到现在为止还没出场的应该是齐格飞吧。还是说[line 3]
+[k]
+
+[label lblConf7]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+不。我想起来了。[r]……阿周那应该也发现了吧。
+[k]
+
+＠圣诞迦尔纳
+正因为如此。为打倒吸收了圣杯力量的弗栗多，[r]我们也需要准备策略。
+[k]
+
+＠圣诞迦尔纳
+我要召集的人有[line 3]
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_82 1.0 0.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[bgm BGM_EVENT_82 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.4]
+＠安徒生
+作家只会写有龙登场的故事，[r]可不会一起去消灭龙哦。
+[k]
+
+＠安徒生
+作为纪实文学的取材倒并非不能考虑，[r]但遗憾的是，我是童话作家。
+[k]
+
+＠安徒生、
+只但愿饥饿的龙肚子里不会再混个作家进去哦？
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.4 1]
+[wt 0.4]
+＠山鲁佐德
+啊啊，龙，多么可怕……[r]应该会死吧……？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠玛修
+帮手就是……这两位吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+嗯。无可挑剔。[r]但是，也需要一些能直接参与战斗的人。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+＠乔尔乔斯
+那我希望能陪你们走到最后。
+[k]
+
+[charaFace J 1]
+＠乔尔乔斯
+作为负责这趟旅行带队之人，[r]必须认真见证旅途的终点才行。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+＠阿周那·Alter
+受他之托，[r]斩断邪恶的使命尚未完成。
+[k]
+
+＠阿周那·Alter
+挥舞肃清之剑乃是理所当然的……
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+
+[branchQuestNotClear lblNotClear8 3000303]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠达·芬奇
+目的地已经不是闭塞特异点了，
+[k]
+
+＠达·芬奇
+从者灵子转移的规则会恢复常态。
+[k]
+
+[charaFace F 24]
+＠达·芬奇
+也就是说啊，需要一如既往地[r]根据可分配资源量和相性选择队伍人选。
+[k]
+
+[charaFace F 0]
+＠达·芬奇
+虽然不是说人越多就越好……[r]但这个编制可以吗？
+[k]
+
+[branch lblConf8]
+[label lblNotClear8]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,0]
+＠G：达·芬奇
+目的地已经不是闭塞特异点了，
+[k]
+
+＠G：达·芬奇
+从者灵子转移的规则会恢复常态。
+[k]
+
+[charaFace G 5]
+＠G：达·芬奇
+也就是说啊，需要一如既往地[r]根据可分配资源量和相性选择队伍人选。
+[k]
+
+＠G：达·芬奇
+虽然不是说人越多就越好……[r]但这个编制可以吗？
+[k]
+
+
+[label lblConf8]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+没问题。
+[k]
+
+[charaPut M 0,-200]
+[charaFadeTime M 0.1 0.6]
+＠圣诞迦尔纳
+（阿周那……恐怕不会来吧。[r]　就算行动，他也会在见证我的战斗后再行动。）
+[k]
+
+[charaFace A 12]
+＠圣诞迦尔纳
+（但是……既然如此，为什么……）
+[k]
+
+[messageOff]
+[charaFadeout M 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+[wt 1.0]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+[charaFadeTime M 0.1 0.6]
+＠圣诞迦尔纳
+（让另一个阿周那与我们同行呢……？[r]　肯定不是为了帮助我。）
+[k]
+
+＠圣诞迦尔纳
+（应该有什么别的原因……）
+[k]
+
+[charaFadeout M 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠玛修
+那我们开始具体的作战会议吧。[r]迦尔纳先生，我有几个问题。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[charaMoveReturn A 0,-5 0.5]
+[wt 1.2]
+
+
+[bgm BGM_EVENT_82 1.0 0.4]
+[wipeout rollRight 1.0 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 1.5]
+
+[bgm BGM_EVENT_82 1.0 1.0]
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[branchQuestNotClear lblNotClear9 3000303]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠达·芬奇
+原来如此。[r]这种理论的作战的确有胜算。
+[k]
+
+[charaFace F 26]
+＠达·芬奇
+好，那就去试试看吧[line 3]
+[k]
+
+＠达·芬奇
+为了夺回大家的圣诞礼物。[r]前往邪龙弗栗多等待的喜马拉雅山脉！
+[k]
+
+[branch lblConf9]
+[label lblNotClear9]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,0]
+＠G：达·芬奇
+原来如此。[r]这种理论的作战的确有胜算。
+[k]
+
+[charaFace G 1]
+＠G：达·芬奇
+好，那就去试试看吧[line 3]
+[k]
+
+＠G：达·芬奇
+为了夺回大家的圣诞礼物。[r]前往邪龙弗栗多等待的喜马拉雅山脉！
+[k]
+
+[label lblConf9]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

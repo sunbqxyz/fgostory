@@ -1,0 +1,2088 @@
+
+
+
+
+＄94-04-01-05-2-1
+
+
+[soundStopAll]
+
+[charaSet A 2036001 1 刑部姬]
+[charaSet B 10005000 1 Ⅱ号机]
+[charaSet C 1098177700 1 齐格飞]
+[charaSet D 2028000 1 海伦娜]
+[charaSet E 1040000 1 葛饰北斋]
+[charaSet F 7036001 1 宫本伊织]
+[charaSet G 98100400 1 玛修]
+
+
+[imageSet H cut045_bg 1]
+[charaSet I 98115000 1 特效用]
+[charaSet J 98115000 1 特效用]
+
+[cameraMove 0 0,0 1.01]
+
+[charaDepth I 10]
+[charaDepth J 9]
+
+[branchQuestNotClear lblNotClear1 3000303]
+[flag IsClear true]
+[branch lblConf1]
+[label lblNotClear1]
+[flag IsClear false]
+[label lblConf1]
+
+
+
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 48700]
+
+[charaScale H 2.02]
+[charaFadein H 0.1 514,-257]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad33]
+[effect bit_talk_kengekiall02]
+[wt 0.8]
+[flashin once 0.1 0.1 FFFFFFCC FFFFFF80]
+[seStop ad33 0.1]
+[se ad671]
+[wt 0.1]
+
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0 0,20]
+[charaMove A 0,0 0.2]
+[charaMoveScale A 1.0 0.2]
+[charaShake A 0.02 3 3 0.6]
+[wt 0.4]
+[seStop ad671 0.6]
+[wt 0.8]
+
+＠刑部姬
+呜，还没结束……！[wt 0.6][charaFace A 2][r]机械伊丽亲！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠Ⅱ号机
+明白，准备起飞！
+[k]
+
+[messageOff]
+[se ade122]
+[charaMoveReturn B 0,-10 0.3]
+[wait charaMove]
+[charaMove B 0,40 0.5]
+[wait charaMove]
+[charaFadeout B 0.4]
+[wt 1.0]
+
+
+[charaPut I 1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠齐格飞
+不好，[r]刑部姬打算在飞行状态下进行攻击！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_10_LowLevel]
+[wt 0.1]
+
+[cueSe Battle bac452]
+[effect bit_shot_01]
+[shake 0.02 3 3 0.9]
+[wt 0.4]
+[fowardEffect bit_shot_01]
+[wt 0.4]
+[cueSeStop bac452 0]
+[wt 0.6]
+
+[effectDestroy bit_shot_01]
+[fowardEffectDestroy bit_shot_01]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠海伦娜
+呜……不行，[r]我的子弹打不到她们！
+[k]
+
+[charaFace D 2]
+＠海伦娜
+那只能用宝具的圆盘群轰炸了！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[se ade31]
+[flashin once 0.5 0.5 FFFFFF80 FFFFFF00]
+[wt 1.1]
+[flashin once 0.5 0.5 FFFFFF80 FFFFFF00]
+[wt 1.2]
+
+[backEffect bit_talk_goltail01]
+[wt 0.2]
+[shake 0.02 3 3 0]
+[se ade337]
+[seVolume ade337 0 0.4]
+[wt 0.7]
+
+[se ad609]
+[seVolume ad609 0 0.8]
+[fowardEffect bit_talk_explosion 450,80]
+[wt 0.6]
+[seStop ad609 0.8]
+[wt 0.1]
+
+[fowardEffectStop bit_talk_explosion]
+[se ad609]
+[seVolume ad609 0 0.8]
+[charaPut J -50,-30]
+[charaEffect J bit_talk_explosion]
+[wt 0.6]
+[seStop ad609 0.8]
+[wt 0.1]
+
+[se ad609]
+[seVolume ad609 0 0.8]
+[fowardEffect bit_talk_explosion -450,80]
+[wt 0.6]
+[seStop ad609 0.8]
+[shakeStop]
+[wt 0.4]
+[seStop ade337 0.8]
+[wt 0.8]
+
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[charaFadeout H 0.1]
+[charaEffectStop J bit_talk_explosion]
+[fowardEffectStop bit_talk_explosion]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+＠Ⅱ号机
+区区远距离操作的圆盘罢了，别小看我。[r]我轻轻松松就可以把它们击落。
+[k]
+
+
+＠海伦娜
+啊～，真是的！
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠刑部姬
+从空中很难瞄准呢……！[r]悬停，机械伊丽亲！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Ⅱ号机
+……滑翔，停止。开始悬停。[r]好吧。这个距离应该不会被击中。
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+
+[charaScale H 2.02]
+[charaFadein H 0.1 514,-257]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+＠葛饰北斋
+可恶。[r]难道要被小家子气的招数干掉了吗……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+＠玛修
+还有一个办法！[r]我们也派一个人飞向空中！
+[k]
+
+？1：飞向空中！？
+？！
+
+[charaFace G 2]
+＠玛修
+让海伦娜小姐做发射台，让伊织小姐做推进器，[r]让阿荣小姐飞上去！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+＠葛饰北斋
+哎[messageShake 0.02 3 3 0.4]哎哎！？[r]让……让我吗！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+＠宫本伊织
+没时间废话了。
+[k]
+
+[charaFace F 1]
+＠宫本伊织
+没事，放轻松放轻松！[r]只不过是飞到空中斩个铁块而已！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+＠葛饰北斋
+可……可是啊……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+＠宫本伊织
+你不是要成为日本第一剑豪吗？[r]那就得有无所畏惧说干就干的精神！
+[k]
+
+？1：真够斯巴达的……！
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+＠葛饰北斋
+……[r]……好……好吧！
+[k]
+
+＠葛饰北斋
+要是在这里退缩，[r]也就不配做江户子了！
+[k]
+
+[charaFace E 12]
+＠葛饰北斋
+我就做给你们看吧！
+[k]
+
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠玛修
+嗯，拜托了！
+[k]
+
+
+[messageOff]
+[charaTalk off]
+
+[charaDepth G 6]
+[charaDepth F 4]
+
+[charaFace F 0]
+[charaFadein F 0.4 2]
+[wt 1.2]
+
+[charaFace F 9]
+[wt 1.4]
+
+
+
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[bgmStop BGM_EVENT_80 0.5]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[charaFadeout H 0.1]
+
+[scene 28302]
+[wt 0.5]
+
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 0.5 0.4]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠刑部姬
+唔？[r]他们想干什么？
+[k]
+
+[charaFace A 6]
+＠刑部姬
+这样倒正好，[r]他们不到处乱跑了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Ⅱ号机
+慢着。[r]那个难道是[line 3]
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[seStop ad556 0.5]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[charaFadein H 0.1 514,-257]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+
+[bgm BGM_EVENT_63 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠玛修
+准备完成！
+[k]
+
+
+＠玛修
+接下来就拜托您了，海伦娜小姐！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠海伦娜
+明白明白，交给我吧！
+[k]
+
+[charaFace D 0]
+＠海伦娜
+虽然只是个小小的圆盘，[r]但作个发射台还是没有问题的！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+
+[charaTalk E]
+[charaFace E 18]
+[charaFadein E 0.1 1]
+＠葛饰北斋
+我……我明白了！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠宫本伊织
+那就变成小鸟吧，阿荣亲！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠海伦娜
+我也会全力为你掩护啦！
+[k]
+
+？1：加油！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+＠葛饰北斋
+唔……嗯！
+[k]
+
+＠葛饰北斋
+那就让御主看看我闪耀的飞行姿态吧！
+[k]
+
+[charaFace E 2]
+＠葛饰北斋
+我去了哦[line 6]！
+[k]
+
+[messageOff]
+[se ad55]
+[charaMove E -256,0 0.4]
+[charaFadeout E 0.4]
+[wt 0.2]
+[seStop ad55 0.6]
+
+[wipeout leftToRight 1.0 1.0]
+[wait wipe]
+
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 -125,0]
+[wt 0.5]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.1]
+
+＠海伦娜
+配合……[wt 0.6][charaFace D 2]哎！
+[k]
+
+[messageOff]
+[se ad55]
+[seVolume ad55 0 0]
+[seVolume ad55 0.4 1.0]
+[wt 0.2]
+
+[charaTalk off]
+[charaDepth D 4]
+[charaDepth E 6]
+
+[charaFace E 12]
+[charaFadein E 0.1 700,0]
+[charaMove E 150,0 0.8]
+
+[wt 0.7]
+
+[seStop ad55 0.1]
+[cueSe Battle bac54]
+
+[charaEffect I bit_talk_quickmove]
+[charaMoveReturn D -125,20 0.5]
+[wt 0.1]
+[charaMove E 130,90 0.6]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[charaFadeout H 0.1]
+[effectStop bit_talk_quickmove]
+[charaPut E 1]
+
+
+[charaPut J 1]
+[charaEffect J bit_talk_43h]
+[wt 1.0]
+
+[charaPut E 1]
+[charaShake E 0.02 3 3 0]
+
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 0.5 0.8]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+[wt 3.2]
+
+
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[seVolume ad556 0.5 0]
+[wait wipe]
+
+
+[charaShakeStop E]
+[charaFadeout E 0.1]
+[charaEffectStop J bit_talk_43h]
+
+[charaScale H 2.02]
+[charaFadein H 0.1 514,-257]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠玛修
+第一阶段成功！[r]接下来拜托您了哦，伊织小姐！
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+
+
+[scene 28302]
+
+
+
+
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[seVolume ad556 0.5 0.4]
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+＠刑部姬
+飞……飞起来了……！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Ⅱ号机
+不要紧。她根本到不了我们这里。[r]倒是这些圆盘比较烦人[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠刑部姬
+唔，慢着慢着。[r]他们好像又打算做什么！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Ⅱ号机
+[line 3]你说什么？
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[seVolume ad556 0.5 0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[scene 28302]
+
+
+[charaTalk E]
+[charaFace E 23]
+[charaFadein E 0.1 1]
+[wt 1.0]
+
+[seVolume ad556 0.5 0.4]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+
+＠葛饰北斋
+根本够不到……！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+[se ad7]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 0,-50]
+[charaMove F 0,0 0.4]
+[wt 0.8]
+＠宫本伊织
+那接下来该轮到我出场了！[r]踩在我的刀背上！
+[k]
+
+＠宫本伊织
+我会向上挥刀把你抛上去！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 20]
+[charaFace F 1]
+[charaFadein E 0.1 0]
+[charaFadein F 0.1 2]
+＠葛饰北斋
+刀难道不是武士之魂吗！？
+[k]
+
+
+[charaTalk F]
+[charaFace F 14]
+＠宫本伊织
+如果能向着太阳飞去，[r]哪怕是灵魂，武士也会踩踏而上！
+[k]
+
+[charaFace F 2]
+＠宫本伊织
+一、二[line 3]三！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+
+[se ad51]
+[wt 0.7]
+
+[se ad85]
+[wt 0.2]
+[charaPut J 10,50]
+[charaRoll J 344]
+[charaEffect J bit_talk_h_slash01]
+[effect bit_talk_arrow01br]
+[wt 0.1]
+
+[se ade334]
+[wt 1.6]
+
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[seVolume ad556 0.5 0]
+[wait wipe]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[seVolume ad556 0.5 0.4]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+
+＠刑部姬
+啊[messageShake 0.02 3 3 0.4]哇哇哇哇！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Ⅱ号机
+[#急速回旋:Barrel Roll]。[r]那只是单纯的跳跃。
+[k]
+
+＠Ⅱ号机
+我们只需要稍稍变换轨道，[r]就不会被她追上了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_63 0.6]
+[seVolume ad556 0.6 0]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠刑部姬
+啊[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_63 0.1]
+[seVolume ad556 0 0]
+[se ad231]
+[wt 1.4]
+
+
+[charaFace A 2]
+＠刑部姬
+不好，快离开！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Ⅱ号机
+哎？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠刑部姬
+[#御亲在瞄准]！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[charaShake B 0.02 3 3 0.4]
+[wt 1.4]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[charaScale H 2.02]
+[charaFadein H 0.1 514,-257]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+
+？1：以令咒命令[line 3]
+？2：[#追上那两个人]！
+？！
+
+[masterBranch _Male _Female]
+
+
+[label _Male]
+
+[charaRoll J 0]
+[charaPut J 1]
+[charaEffect J bit_talk_CommandMantra_01 0,64]
+[charaEffectPause J bit_talk_CommandMantra_01 0,64]
+[wait charaEffectStart J]
+[charaEffectStart J]
+
+[branch _branchEnd]
+
+[label _Female]
+
+[charaRoll J 0]
+[charaPut J 1]
+[charaEffect J bit_talk_CommandMantra_02 0,64]
+[charaEffectPause J bit_talk_CommandMantra_02 0,64]
+[wait charaEffectStart J]
+[charaEffectStart J]
+
+[label _branchEnd]
+
+[se bas16]
+[wait charaEffect J]
+[charaPut J 1200,1200]
+[charaEffectStop J]
+
+
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[charaPut I 1]
+[charaEffect I bit_talk_43h]
+[charaFadeout H 0.1]
+
+[charaTalk E]
+[charaFace E 28]
+[charaFadein E 0.1 1]
+[charaShake E 0.02 3 3 0]
+[wt 0.5]
+
+[seVolume ad556 0.5 0.4]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_82 0.1]
+
+＠葛饰北斋
+咿[messageShake 0.02 3 3 0.5]呀，咿呀啊啊啊啊！？[r]刚……刚才那是什么！？
+[k]
+
+＠葛饰北斋
+内心有些骚动……
+[k]
+
+[charaFace E 2]
+＠葛饰北斋
+不管了！[r]这样就能追上了！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[seVolume ad556 0.5 0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[charaShakeStop E]
+[charaEffectStop I bit_talk_43h]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+[seVolume ad556 0.5 0.4]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+＠Ⅱ号机
+……我先提前说声抱歉，[#刑部姬:小刑]。[r]没想到我居然会在空战中打输。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠刑部姬
+你说啥，机械伊丽亲！
+[k]
+
+＠刑部姬
+话说，如果机械伊丽亲被一刀砍中……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Ⅱ号机
+嗯嗯，当然。[r]你也会从空中掉下去。
+[k]
+
+＠Ⅱ号机
+自古以来，借助外力飞翔的人，[r]都注定会像伊卡洛斯般坠落吧？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠刑部姬
+我[messageShake 0.02 3 3 0.8][line 2]就[line 2]知[line 2]道[line 2][r]会[line 2]是[line 2]这[line 2]样[line 2]！
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[bgmStop BGM_EVENT_82 0.5]
+[seStop ad556 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[charaPut J 1]
+[charaEffect J bit_talk_41]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠葛饰北斋
+吃我这招[line 3]！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_41]
+[wt 0.3]
+
+[se bac139]
+[effect bit_talk_v_slash01]
+[wt 1.2]
+
+[se ad609]
+[shake 0.03 4 4 0.8]
+[wt 0.8]
+[seStop ad609 1.0]
+[wt 0.4]
+
+[se ad348]
+[wt 3.0]
+
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+
+[charaSet A 1098176810 1 刑部姬]
+[charaSet B 3025001 1 清姬]
+[charaSet D 1098155400 1 黑胡子]
+[charaSet C 1008300 1 齐格飞]
+
+[scene 81200]
+
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠刑部姬
+啊，我认输我认输！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.1 1]
+＠玛修
+嗯，是我们赢了。[r]刑部姬小姐。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠黑胡子
+没错。
+[k]
+
+[charaFace D 2]
+＠黑胡子
+无言以对，[r]输得心服口服。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠刑部姬
+好啦好啦，[r]我知道了啦～！
+[k]
+
+＠刑部姬
+[#公主:我]输[line 2]了[line 2]！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaDepth A 7]
+[charaDepth B 3]
+
+[charaTalk off]
+[charaFace B 1]
+[charaFadein B 0.4 -530,0]
+[wt 1.0]
+
+[charaFadeout B 0.4]
+[wt 0.4]
+
+[charaFadeout A 0.1]
+[wt 0.2]
+
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠齐格飞
+（刚才，好像有谁……？）
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠刑部姬
+哈……[r]唔唔，难得获得了那么强大的力量。
+[k]
+
+＠刑部姬
+简直有损泳装剑豪之名啊。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠宫本伊织
+你原本就不是什么当剑豪的料吧。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠刑部姬
+是啊……输了以后反倒如释重负。
+[k]
+
+[charaFace A 0]
+＠刑部姬
+尤其是北斋的……应该叫阿荣亲？[r]你的那一斩还真是了不得啊。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠葛饰北斋
+嘿嘿～。[r]毕竟我的目标是泳装剑豪的顶点嘛。
+[k]
+
+[charaFace E 7]
+＠葛饰北斋
+（总算说了一句有剑豪感的台词[line 3]）
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[charaTalk off]
+[charaDepth C 4]
+[charaDepth C 6]
+
+[charaFace C 0]
+[charaFace F 0]
+[charaFadein C 0.1 0]
+[charaFadein F 0.1 2]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 1.4]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠葛饰北斋
+（………………不。）
+[k]
+
+[charaFace E 8]
+＠葛饰北斋
+（我确实赢了。[r]  连御主也说我能成为日本第一剑士。）
+[k]
+
+＠葛饰北斋
+（那么……我也没必要刻意装模作样了。[r]　我只要做我自己就好了！）
+[k]
+
+[charaFace E 26]
+＠葛饰北斋
+呵呵……呵呵呵呵……[r]（总之，只要从容地露出笑容……）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠刑部姬
+（啊，我能清晰地感觉到……[r]  因过于在乎耍帅以至于身处黑历史期间的青涩感！）
+[k]
+
+[charaFace A 3]
+＠刑部姬
+（不，[#公主:我]什么都不会说，也不会发出警告。[r]　默默守护才是前辈应尽的礼节！）
+[k]
+
+
+
+[messageOff]
+
+[charaTalk off]
+[charaFace B 1]
+[charaFadein B 0.4 460,0]
+[wt 1.0]
+
+[charaFadeout B 0.4]
+[wt 0.4]
+
+[charaFadeout A 0.1]
+[wt 0.2]
+
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+＠葛饰北斋
+……唔？　唔唔？[r]刚才好像……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠刑部姬
+哈……既然我已经输了，[r]那么我作为泳装剑豪的职责也到此为止了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠齐格飞
+我还有一些问题想问。[r]其他的泳装剑豪都是谁？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[charaTalk off]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 0.3]
+
+[charaFace B 1]
+[charaFadein B 0.4 -390,0]
+[wt 1.0]
+
+[charaFadeout B 0.4]
+[wt 0.5]
+
+[charaTalk on]
+＠刑部姬
+知道也不能告诉你哦～。
+[k]
+
+？1：真干脆……
+
+[charaFace A 3]
+＠刑部姬
+毕竟……那位泳装王者超级恐怖……
+[k]
+
+？2：……刚才好像有……？
+
+[charaFace A 0]
+＠刑部姬
+怎么了，御亲？[r]怎么突然发呆了。
+[k]
+
+？！
+
+[charaFace A 0]
+＠刑部姬
+对了……
+[k]
+
+[messageOff]
+[charaFaceFade A 8 0.8]
+[wt 1.2]
+
+＠刑部姬
+如果御亲对我说『我想要你的全部』，[r]我也并非不能考虑考虑哦～？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+＠玛修
+唔。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+＠葛饰北斋
+啊？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠刑部姬
+玩笑，开玩笑啦。
+[k]
+
+＠刑部姬
+御亲是不会说这种肉麻的[line 3]
+[k]
+
+？1：我想要你的全部……
+？2：情报！
+？！
+
+[charaFace A 7]
+＠刑部姬
+！[messageShake 0.02 3 3 0.3]！
+[k]
+
+[charaFace A 3]
+＠刑部姬
+太……太狡猾了！[r]御亲太狡猾了！
+[k]
+
+＠刑部姬
+明明只想要情报！[r]却带着如此羞涩的表情说！
+[k]
+
+＠刑部姬
+唔唔唔唔唔……心动了……[r]我心动了……！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace B 1]
+[charaFadein B 0.4 320,0]
+[wt 1.0]
+
+[charaFadeout B 0.4]
+[wt 0.4]
+
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠黑胡子
+！[messageShake 0.02 3 3 0.3]！
+[k]
+
+＠黑胡子
+话……话说……小刑？[r]我们差不多该告辞……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠A：刑部姬（充耳不闻）
+……唉……[r]少女器官仿佛被狠狠击打了一下。
+[k]
+
+[charaFace A 0]
+＠刑部姬
+嗯，好吧。[r]我撤回刚才的话！
+[k]
+
+[charaFace A 1]
+＠刑部姬
+我刑部姬也会协助你们与泳装剑豪的对决！
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace B 1]
+[charaFadein B 0.4 -250,0]
+[wt 1.0]
+
+[charaFadeout B 0.4]
+[wt 0.4]
+
+[charaFadeout A 0.1]
+[wt 0.3]
+
+
+
+[charaFace G 6]
+[charaFace C 2]
+[charaFadein G 0.1 2]
+[charaFadein C 0.1 0]
+[wt 1.4]
+
+[charaFadeout G 0.1]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[charaFace F 2]
+[charaFace E 20]
+[charaFadein F 0.1 2]
+[charaFadein E 0.1 0]
+[wt 1.4]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+？1：公主[line 3]！　公主[line 3]！　背后[line 3]！
+
+[charaFace A 0]
+＠刑部姬
+其实[#公主:我]的灵基变成Archer职阶后，[r]多少有了一些攻击性。
+[k]
+
+＠刑部姬
+嗯？[r]背后怎么了？
+[k]
+
+？2：伏行！　正在伏行逼近[line 3]！
+
+[charaFace A 4]
+＠刑部姬
+伏行？[r]伏行的混沌？
+[k]
+
+[charaFace A 0]
+＠刑部姬
+真是的，这次又不是Foreigner问题啦，[r]御亲你真是的♪
+[k]
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_77 0.4]
+[charaTalk off]
+[charaTalk depthOff]
+[charaFace B 1]
+[charaFadein B 0.4 180,0]
+[wt 0.8]
+
+[charaTalk on]
+[charaFace A 9]
+＠刑部姬
+[f large]！[messageShake 0.02 3 3 0.4]？
+[k]
+
+
+[charaTalk B]
+[charaFace B 1]
+＠清姬
+♡
+[k]
+
+[bgm BGM_EVENT_27 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+＠刑部姬
+那……那个。[r]不是啦，小清姬，不是这样的。
+[k]
+
+＠刑部姬
+这……这是误会啦。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠黑胡子
+简直就像出轨被捉奸时的台词……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[charaFadein B 0.1 180,0]
+＠清姬
+呵呵。[r]不必担心。
+[k]
+
+[charaFace B 0]
+＠清姬
+不论是误会还是什么，[r]只要是谎言，我都可以看破。
+[k]
+
+
+[charaTalk A]
+[charaFace A 9]
+＠刑部姬
+是哦！！
+[k]
+
+
+[charaTalk B]
+＠清姬
+那么，我要问小刑一个问题。
+[k]
+
+[charaFace B 1]
+＠清姬
+你觉得我在生气吗？
+[k]
+
+
+[charaTalk A]
+＠刑部姬
+……[r]……
+[k]
+
+＠刑部姬
+……是……是的。[r]非常……
+[k]
+
+
+[charaTalk B]
+[charaFace B 0]
+＠清姬
+你觉得我在生气的情况下，[r]会对小刑做什么呢？
+[k]
+
+
+[charaTalk A]
+[charaFace A 7]
+＠刑部姬
+一边咯咯地笑，一边[#呼呼吹:Buster攻击]？
+[k]
+
+
+[charaTalk B]
+[charaFace B 1]
+＠清姬
+……呵呵，怎么可能嘛。
+[k]
+
+
+[charaTalk A]
+[charaFace A 3]
+＠刑部姬
+那……那是用火焰扇子抽我？
+[k]
+
+
+[charaTalk B]
+[charaFace B 0]
+＠清姬
+不不，我才不会做那种不讲道理的事呢。
+[k]
+
+[charaTalk A]
+[charaFace A 1]
+＠刑部姬
+那……那你会原谅我吗？
+[k]
+
+
+[charaTalk B]
+[charaFace B 1]
+＠清姬
+嗯，只不过[line 3]
+[k]
+
+[messageOff]
+[charaTalk G]
+
+[se ade333]
+[wt 2.2]
+
+
+[charaTalk A]
+[charaFace A 7]
+＠刑部姬
+这……这钟……难道说……！
+[k]
+
+
+[charaTalk B]
+[charaFace B 0]
+＠清姬
+没错，我要把小刑关到道成寺钟里，[r]让小刑专心赶稿♪
+[k]
+
+[charaFace B 1]
+＠清姬
+偷懒的话可是会被薙刀刺穿的哦，[r]所以千万要小心♡
+[k]
+
+
+[charaTalk A]
+[charaFace A 9]
+[charaShake A 0.02 3 3 0]
+＠刑部姬
+怎[messageShake 0.02 3 3 0.6]么能这样啦！
+[k]
+
+[messageOff]
+[wt 0.2]
+[bgmStop BGM_EVENT_27 0.8]
+[wipeout upToDown 0.8 0.5]
+[wt 0.5]
+[se ade332]
+[seVolume ade332 0 0.8]
+[wt 1.8]
+
+[fadeout black 0.1]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+[charaSet A 98002000 1 芙芙]
+[charaSet D 2028000 1 海伦娜]
+
+
+[scene 81200]
+[wt 1.0]
+
+[wipein upToDown 0.1 1.0]
+[wait wipe]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_109 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠清姬
+……唉。
+[k]
+
+[charaFace B 0]
+＠清姬
+谢谢您，御主。[r]这样一来我就能拿到原稿了。
+[k]
+
+？1：记得适可而止哦。
+
+[charaFace B 1]
+＠清姬
+呵呵，不用担心。[r]我有分寸啦。
+[k]
+
+[charaFace B 0]
+＠清姬
+正如刚才所说的，[r]小刑似乎很想助你们一臂之力。
+[k]
+
+＠清姬
+原稿的进度回归正轨后，[r]我就会放了她。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？2：刑部姬并没有恶意。
+
+[charaFace B 1]
+＠清姬
+呵呵，不用担心。
+[k]
+
+＠清姬
+我只是让她在道成寺钟里稍稍反省一下而已。
+[k]
+
+＠清姬
+只要在那里，应该也能好好赶稿了吧。[r]毕竟里面还配备了空调。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠玛修
+空调！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠齐格飞
+那还真是……舒服呢……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠葛饰北斋
+可原稿不是还一片空白吗？
+[k]
+
+＠葛饰北斋
+这种情况下是没法帮我们的吧……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠清姬
+不，没关系啦！[r]这次我已经把[#底稿]画好了！
+[k]
+
+[charaFace B 3]
+＠清姬
+呵呵……校园题材……呵呵呵呵呵……
+[k]
+
+＠清姬
+尽管小刑嘴上说不要不要，[r]但在经历了泳装剑豪战斗后，应该彻底死心了吧。
+[k]
+
+＠清姬
+与身着[&学生服:水手服]的御主展开[r]恋·爱·喜·剧……呵呵呵呵呵。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠芙芙
+芙服……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+＠玛修
+芙芙好像有话想说，[r]但这个问题暂时不论……
+[k]
+
+[charaFace G 1]
+＠玛修
+总之我们打败第二个泳装剑豪了！[r]辛苦了，御主！
+[k]
+
+？1：还有5次啊……
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠齐格飞
+俗话说，[r]千里之行始于足下。
+[k]
+
+[charaFace C 1]
+＠齐格飞
+俗话还说，[r]打败我始于后背。
+[k]
+
+？1：俗话里有这句吗！？
+？！
+
+[charaFace C 4]
+＠齐格飞
+……对不起。[r]我只是想开一个高智商的玩笑……
+[k]
+
+＠齐格飞
+请容我为我那无聊的玩笑表示抱歉……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠海伦娜
+呵呵，接下来就没我什么事了吧。[r]那我先告辞啦！
+[k]
+
+[charaFace D 0]
+＠海伦娜
+拉斯维加斯还有很多从者，[r]你们可以借助他们的力量来打败泳装剑豪。
+[k]
+
+？1：谢谢你，海伦娜！
+
+[messageOff]
+[charaFace D 1]
+[wt 1.2]
+
+
+？2：帮大忙了，奶奶！
+
+[charaFace D 3]
+＠海伦娜
+哎呀，哎呀，哎呀哎呀。呵呵。[r]真是好孩子！
+[k]
+
+＠海伦娜
+嗯嗯，无论何时无论何地，[r]都可以拜托奶奶哦！　那我先走啦！
+[k]
+
+？！
+
+[messageOff]
+[se ad60]
+[wt 0.1]
+[seStop ad60 1.2]
+[charaMove D -50,0 0.4]
+[charaFadeout D 0.4]
+[wt 1.4]
+
+[charaSet D 1098155400 1 黑胡子]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠葛饰北斋
+话说……[r]结果我们还是没得到刑部姬的情报吧？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠黑胡子
+嗯嗯，这个问题的话，[r]稍后在下会向小清姬阁下打听的。
+[k]
+
+[charaFace D 2]
+＠黑胡子
+同样也会转告给小太郎的，如何？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠齐格飞
+那真是帮大忙了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_109 1.0]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠黑胡子
+呼呼呼，另外在下还要履行约定，[r]代替小刑把这件事转告你们才行。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠齐格飞
+唔？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠黑胡子
+与其说[#刑部姬:小刑][r]是泳装剑豪中实力最弱的……倒不如说，
+[k]
+
+＠黑胡子
+她本人也抱着『我拿的是枪械而不是剑，[r]真的没有问题吗？』这样的疑问……
+[k]
+
+[charaFace D 8]
+＠黑胡子
+下一位泳装剑豪才是真正令人感到恐惧的存在！
+[k]
+
+[messageOff]
+[se ad627]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 0.2]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 1.8]
+
+[charaSet B 4028001 1 伊凡雷帝]
+
+？1：雷？
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_70 1.0]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[se ad642]
+[shake 0.02 3 3 0.5]
+[wt 1.0]
+[seStop ad642 0.8]
+[shake 0.02 3 3 0.5]
+[wt 0.5]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.8]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠伊凡雷帝
+是余。
+[k]
+
+＠伊凡雷帝
+这样就可以了吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠黑胡子
+谢啦。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠伊凡雷帝
+嗯。
+[k]
+
+[messageOff]
+[se ad642]
+[wt 0.1]
+[shake 0.02 3 3 0.5]
+[charaFadeout B 0.4]
+[wt 1.0]
+[shake 0.02 3 3 0.5]
+[seStop ad642 1.2]
+[wt 1.4]
+
+？1：竟然专程找那个人过来……
+？2：用来制造这种特效……
+？！
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠齐格飞
+不愧是海盗。[r]不知天高地厚……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠黑胡子
+在下只是半开玩笑地拜托了他，[r]既然他答应了，在下就情不自禁地……
+[k]
+
+[charaFace D 0]
+＠黑胡子
+总之，接下来也要加油哦！
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

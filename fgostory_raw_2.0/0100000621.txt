@@ -1,0 +1,121 @@
+＄01-00-00-06-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[scene 10700]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98003003 2 罗曼医生]
+[charaSet C 98002000 2 芙芙]
+[charaSet D 98004000 1 雷夫]
+[charaSet E 98005000 1 奥尔加玛丽]
+[charaSet F 6002001 0 从者]
+[charaSet G 3006001 2 从者]
+[charaSet H 5021001 1 魔术师]
+[charaShadow F true]
+[charaFace F 0]
+[charaFadein F 0]
+[charaShadow G true]
+[charaFace G 0]
+[charaFadein G 0]
+[fadein black 1]
+[wait fade]
+＠F：从者
+咕[line 3]可恶。圣杯　明明　就在眼前[line 3]
+[k]
+
+[messageOff]
+[charaSpecialEffect F darkEnemyErasure 0 3]
+[charaSpecialEffect G darkEnemyErasure 2 3]
+[wt 1]
+[se ba5]
+[wait charaSpecialEffect F]
+[wait charaSpecialEffect G]
+[bgmStop BGM_EVENT_3 0.4]
+[bgm BGM_EVENT_2 0.1]
+[wt 0.5]
+[charaFace A 7]
+[charaFadein A 0.1 2]
+[charaFace H 1]
+[charaFadein H 0.1 0]
+＠玛修
+那……那个……谢谢你，[r]在千钧一发之际救了我们……
+[k]
+
+＠魔术师
+嘿，辛苦了。[r]这点小事都称不上是借人情，别在意。
+[k]
+
+[charaFace H 0]
+＠魔术师
+比起这个，你还是关心下自己的身体吧。[r]暗匿者刚才一直瞄准你的屁股攻击吧？
+[k]
+
+[charaMoveReturn H 2 0]
+[charaShake A 0.05 2 0 0.5]
+[charaFace A 3]
+＠玛修
+呀……！
+[k]
+
+[charaFace H 1]
+＠魔术师
+哟，看上去弱不禁风的，没想到身材倒是不错啊！[r]赚到了赚到了。
+[k]
+
+[charaFace H 0]
+＠魔术师
+虽然不知道你是什么职阶，不过看你这么耐打，[r]应该是剑士？　不对，你也没带剑嘛。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout H 0.1]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠奥尔加玛丽
+……我说，[%1]。[r]你怎么看那家伙？
+[k]
+
+？1：无疑是个性骚扰大叔。
+
+？2：……是……友军吧……？
+
+？！
+
+[se ad13]
+[wait se ad13]
+[charaFadeout E 0]
+[charaTalk B]
+[charaFadein E 0.1 0]
+[communicationChara 98003003 2 5 0 0]
+＠罗曼医生
+总之先问问情况吧。[r]他看上去是个还正常的英灵。
+[k]
+
+[charaFadeout E 0]
+[charaFace H 0]
+[charaFadein H 0.1 0]
+＠魔术师
+哟，有个很好说话的家伙嘛。[r]你们这是怎么办到的？　是经由魔术的联络手段吗？
+[k]
+
+＠罗曼医生
+初次见面，魔术师的从者。[r]虽然不知您是哪位英灵，但我等依然心存敬畏。
+[k]
+
+＠魔术师
+啊啊，这种开场白就免了。我都听腻了。[r]有事就赶快说，软脚虾。你比较擅长干这个吧？
+[k]
+
+[communicationCharaFace 4]
+＠罗曼医生
+唔……是……是吗，那我就问了……软脚……[r]软脚虾什么的，又是初次见面就被这么说了……
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[communicationCharaClear]
+[wait communicationChara]
+[bgmStop BGM_EVENT_2 0.4]
+[wait fade]
+[soundStopAll]
+[end]

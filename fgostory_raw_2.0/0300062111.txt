@@ -1,0 +1,940 @@
+
+
+
+＄03-00-06-18-1-1
+
+[soundStopAll]
+
+
+[charaSet A 1098128200 1 凯妮斯]
+[charaSet B 1098182610 1 刻耳柏洛斯]
+[charaSet C 9005001 1 福尔摩斯]
+[charaSet D 1098118410 1 Limbo]
+[charaSet E 1017002 1 武藏]
+[charaSet F 1098164600 1 芦屋道满_上半身剪影]
+[charaSet G 8001410 1 玛修]
+[charaSet H 1098127610 1 佩佩隆奇诺]
+[charaSet I 7010001 1 卡利古拉]
+[charaSet J 8001400 1 武装玛修]
+
+[charaSet S 5009000 1 特效用dummy]
+[charaSet T 5009000 1 特效用dummy]
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 91600]
+
+[fadein black 0.7]
+[wait fade]
+
+[se ad85]
+[effect bit_talk_v_slash02]
+[wt 0.4]
+
+[se ad170]
+[se ad881]
+[flashin once 0.1 0.1 02010CFF 02010C80]
+[effect bit_talk_14]
+[wt 0.6]
+
+[se ad671]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 -120,0]
+[charaMove A -30,0 0.25]
+[wt 0.2]
+[charaMove A 0,0 0.4]
+[wt 0.8]
+[charaFace A 2]
+
+＠凯妮斯
+噢噢噢噢噢噢噢噢噢噢噢噢噢！
+[k]
+
+[messageOff]
+[se ad678]
+[seVolume ad678 0 0.4]
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,15 0.2]
+[charaFadeout A 0.2]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[wt 0.2]
+[blurOff motion 0.6]
+[wt 0.6]
+[charaScale A 1.0]
+
+[se ad715]
+[se ad897]
+[effect bit_bolg_01]
+[effect bit_bolg_02]
+[se bac403]
+[wt 0.6]
+[effectDestroy bit_bolg_01]
+[effectDestroy bit_bolg_02]
+
+[fowardEffect bit_talk_blood_splash 0,0 H]
+[se ad464]
+[shake 0.05 1 2 1.2]
+[wt 1.5]
+
+[se ad772]
+[shake 0.05 3 3 1.2]
+[wt 2.0]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠福尔摩斯
+收尾一击！[r]巴流术！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[cueSe Battle bac449]
+[wt 0.4]
+[cueSeStop bac449 0.4]
+[cueSe Battle bac450]
+[wt 0.4]
+[charaRoll S 205]
+[charaPut S 50,-550]
+[charaEffect S bit_talk_gram_slash_03]
+[wt 0.4]
+
+[cueSeStop bac450 0.4]
+[flashin once 0.1 0.1 9effffFA 9effff80]
+[wt 0.1]
+
+
+[seStop bac450 0.5]
+[wt 1.0]
+[se ad773]
+
+[cueSe Battle bac234]
+[effect bit_talk_impactlanding]
+[shake 0.05 0 2 2.0]
+[wt 2.6]
+
+[bgmStop BGM_EVENT_24 3.0]
+
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+＠Limbo
+哎呀？
+[k]
+
+＠Limbo
+哎呀，哎呀哎呀。哎呀哎呀哎呀哎呀哎呀哎呀。[r]贫僧可是听说……
+[k]
+
+＠Limbo
+这在亚特兰蒂斯时应该还挺有效[line 3]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[se bac306]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+[wt 0.8]
+[se ad73]
+
+[effect bit_talk_quickmove]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[fadeout black 0.2]
+[wait fade]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+
+[se ad678]
+[se bac308]
+[effect bit_talk_h_slash01 0,0 V]
+[effect bit_talk_h_slash01 0,0 F]
+
+[wt 1.6]
+
+[se ad464]
+[effect bit_talk_blood_splash 0,0 H]
+[wt 2.0]
+[se adm39]
+
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 91600]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.8]
+
+[fadein black 1.0]
+[wait fade]
+
+＠F：Limbo
+啊呀，哎哟[line 3]
+[k]
+
+
+[messageOff]
+[se ad596]
+[charaEffect F bit_talk_06b 0,-100]
+[wt 2.0]
+
+？1：干掉了……！？
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+
+[bgm BGM_EVENT_71 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠武藏
+……不。[r]手感不够明确。
+[k]
+
+＠武藏
+我确实斩断了生命，却未触及灵核。[r]很遗憾，这应该是替身之类的玩意儿吧。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth D 2]
+[charaDepth F 1]
+
+[charaPut D 1]
+[charaPut F 1]
+[charaFace F 0]
+[charaFace D 0]
+[charaFadein F 0.1 1]
+[wt 1.0]
+[charaEffectStop F bit_talk_06b]
+[se ad638]
+[charaSpecialEffect D appearance 6 1.5]
+[wt 1.8]
+[charaFadeout F 0.1]
+[wt 0.5]
+[charaFace D 4]
+[charaTalk on]
+[charaTalk depthOn]
+[charaEffectDestroy F]
+
+＠Limbo
+唔，唔唔[line 3]
+[k]
+
+[charaFace D 6]
+
+＠Limbo
+唔唔，唔唔唔唔唔唔唔唔遗憾悔憾！[r]看来区区式神终究敌不过你们呢！
+[k]
+
+[charaFace D 3]
+
+＠Limbo
+话虽如此，这次小丑把戏就玩到这里吧。[r]嗯嗯。没错。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+＠玛修
+……？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠Limbo
+没什么，虽说贫僧的本意是[r]趁机会难得能怎么捣乱就怎么捣乱[line 3]
+[k]
+
+[charaFace D 4]
+
+＠Limbo
+可与上一次的纯洁之王不同，[r]此处的异闻带之王真是小心谨慎难以取悦！
+[k]
+
+＠Limbo
+贫僧当然也做过多番尝试，[r]奈何那神格终究超出了贫僧力所能及的范围……
+[k]
+
+[charaFace D 0]
+
+＠Limbo
+…………究竟，你们又能如何呢？
+[k]
+
+[charaFace D 2]
+
+＠Limbo
+全能之神，大西洋异闻带之王！
+[k]
+
+＠Limbo
+面对那大雷霆，你们又能如何呢！[r]唔唔唔唔唔，尽情拼死挣扎吧！
+[k]
+
+＠Limbo
+贫僧会在一旁默默守望[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad442]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠凯妮斯
+都叫你少啰嗦了！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad171]
+
+[charaPut D 1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+
+[effect bit_talk_x_slash02]
+[wt 0.2]
+[se bac403]
+[se ad240]
+[fowardEffect bit_talk_35]
+[charaShake D 0.05 3 3 1.0]
+[charaFace D 5]
+[wt 0.8]
+
+＠Limbo
+噗哇。
+[k]
+
+＠Limbo
+……呜，哈，哈哈，哈哈哈哈哈哈哈哈……！[r]请便请便。这式神的肉体任你们宰割！
+[k]
+
+＠Limbo
+贫僧的生活续命之法乃无敌也！
+[k]
+
+[bgmStop BGM_EVENT_71 3.0]
+
+＠佩佩隆奇诺
+哎？[r]生活续命？
+[k]
+
+＠佩佩隆奇诺
+还挺能吹嘛，Limbo。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut D 1200,1200]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠玛修
+！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad311]
+[seVolume ad311 0 0.1]
+[seVolume ad311 1.5 1.0]
+[wt 2.5]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.4 1]
+[wt 0.4]
+[seStop ad311 0.1]
+
+＠佩佩隆奇诺
+无论杀多少次都会复活的不灭灵基[line 3]
+[k]
+
+＠佩佩隆奇诺
+你难道不觉得自己显摆那么多次，[r]别人自然也会想出手妨碍吗？
+[k]
+
+＠佩佩隆奇诺
+不过也是。你的术式层层隐蔽得很巧妙。[r]旁人是无法轻易看穿的，
+[k]
+
+＠佩佩隆奇诺
+但我有他人通。[r]能看得一清二楚哦。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠玛修
+佩佩先生！？
+[k]
+
+？1：佩佩！
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_BATTLE_105 0.1]
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+＠佩佩隆奇诺
+迦勒底的各位。[r]这个好机会就留给我了，请不要介意哦。
+[k]
+
+＠佩佩隆奇诺
+来吧，Alterego Limbo。[r]这是报答你在印度异闻带恣意妄为搞破坏的回礼……
+[k]
+
+[charaFace H 5]
+
+＠佩佩隆奇诺
+你就心怀感激地收下吧！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+[charaPut T 1]
+[se ad924]
+[seVolume ad924 0 0.7]
+[charaEffect D bit_talk_shugendo01]
+[wt 2.0]
+[seVolume ad924 1.0 0.3]
+[charaFaceFade D 11 0.4]
+[wt 0.8]
+
+＠Limbo
+什……么……！？[r]这是，阴阳的……不！　不！
+[k]
+
+＠Limbo
+[f large]是修验道吗！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut D 1200,1200]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠佩佩隆奇诺
+这是特意为你而编的独门术式哦。[r]他人通与漏尽通的组合技[line 3]
+[k]
+
+＠佩佩隆奇诺
+将自己复制到无数式神之上以求长生不死的[r]伪造生活续命，给我终结于此吧。
+[k]
+
+＠佩佩隆奇诺
+南无神变大菩萨·漏尽他人通！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+[se ad900]
+[se ad925]
+[charaEffect D bit_talk_shugendo02]
+[wt 2.5]
+[seVolume ad925 1.0 0.3]
+
+＠Limbo
+！？
+[k]
+
+＠佩佩隆奇诺
+……充分体会憎恶与悔恨的滋味，然后去死吧。
+[k]
+
+[messageOff]
+[charaTalk D]
+[se ad926]
+[charaEffect D bit_talk_shugendo03]
+
+[wt 2.0]
+[seStop ad926 2.0]
+
+＠Limbo
+这……！[r]这可……不成……！
+[k]
+
+＠Limbo
+啊啊，贫僧的术式、贫僧的奥义，生活续命之法被………[r]原来如此，被你定义为[#轮回转生的冒牌货]了吗！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut D 1200,1200]
+
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+＠佩佩隆奇诺
+哎呀答对啦。[r]漏尽通本应是终结自身轮回的存在，
+[k]
+
+＠佩佩隆奇诺
+但只有这次，我借助他人通将那个[#送给]你了。
+[k]
+
+[charaFace H 5]
+
+＠佩佩隆奇诺
+去死吧。[r]用式神当替身的伎俩到此为止。
+[k]
+
+＠佩佩隆奇诺
+等下次苏醒时，就是你真正的最后一条命了。[r]好好珍惜着使用吧。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgmStop BGM_BATTLE_105 3.0]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠Limbo
+[f large]可，恶，啊！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut D 1200,1200]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+＠佩佩隆奇诺
+再见啦。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[wt 1.5]
+
+[se ad927]
+[seStop ad924 1.5]
+[seStop ad925 1.5]
+[charaEffectStop D bit_talk_shugendo01]
+[charaEffectStop D bit_talk_shugendo02]
+[charaEffectStop D bit_talk_shugendo03]
+[charaEffectStop D bit_talk_06]
+[charaEffectStop D bit_talk_06b2]
+[charaEffectStop D bit_talk_06_b3]
+
+
+[messageOff]
+[wt 2.5]
+[se ad753]
+[charaEffect D bit_talk_shikigami_break02 0,1]
+[wt 0.2]
+[charaFadeout D 0.4]
+[wt 7.0]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+[wt 1.2]
+
+？1：……佩佩先生。
+
+[charaFace H 9]
+
+＠佩佩隆奇诺
+嗯。
+[k]
+
+？2：该向你道谢吗？
+
+[charaFace H 9]
+
+＠佩佩隆奇诺
+哎呀，不必道谢啦。
+[k]
+
+？！
+
+[bgm BGM_MAP_50 0.1]
+
+＠佩佩隆奇诺
+希望你们不要误会哦。[r]我只是做了自己该做的事而已。
+[k]
+
+＠佩佩隆奇诺
+你们也去做自己该做的事吧。[r]我不会横加阻拦的。
+[k]
+
+＠佩佩隆奇诺
+而且刚才那招耗尽了我的魔力。[r]接下来我就好整以暇地作壁上观吧。
+[k]
+
+[charaFace H 0]
+＠佩佩隆奇诺
+基尔什塔利亚与你们的战斗……[r]很遗憾，我不能替你们声援哦？
+[k]
+
+＠佩佩隆奇诺
+基尔什塔利亚曾这样说过。
+[k]
+
+＠佩佩隆奇诺
+“[%1]与我的战力差距并没有那么大。”
+[k]
+
+＠佩佩隆奇诺
+“他们迄今为止的旅途、迄今为止的战斗，[r][f small]  [f -]他们的全部成果都证明了这点。”
+[k]
+
+＠佩佩隆奇诺
+“[&他:她]，[r][f small]  [f -]有不依靠任何东西也能打倒我的力量。”
+[k]
+
+[charaFace H 9]
+
+＠佩佩隆奇诺
+虽然我完全不这样想哦。呵呵。
+[k]
+
+？1：[line 6]
+
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠玛修
+[line 3]请问，这……[r]是基尔什塔利亚先生对我们的[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+＠佩佩隆奇诺
+我到现在才终于发现。[r]你和基尔什塔利亚很像哦。
+[k]
+
+＠佩佩隆奇诺
+非常努力的部分，非常认真的部分，[r]理所当然地直面困难的部分。
+[k]
+
+[charaFace H 4]
+
+＠佩佩隆奇诺
+……还有，[r]肯定经历过多次离别的部分。
+[k]
+
+＠佩佩隆奇诺
+我和戴比特都无法打倒基尔什塔利亚这个人……
+[k]
+
+[charaFace H 7]
+
+＠佩佩隆奇诺
+但我觉得如果是你，不，[r]唯有你才可以打败他。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+＠凯妮斯
+………………
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+＠佩佩隆奇诺
+如何？　想不想在这里[r]报亚特兰蒂斯的一箭之仇？
+[k]
+
+？1：[line 3]嗯。
+？2：这次定会全力以赴。
+
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.1 1]
+＠玛修
+御主……
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 1.6]
+
+[bgmStop BGM_MAP_50 2.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠佩佩隆奇诺
+[#状态:决心]不错呢。[r]不遗余力、倾注全部的自己[line 3]
+[k]
+
+＠佩佩隆奇诺
+作为修复人理的唯一一名御主，[r]展现彼此的格局差异吧？
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[se ad564]
+[seVolume ad564 0 0.4]
+[wt 0.2]
+[shake 0.03 1 1 1.2]
+[wt 1.5]
+[seStop ad625 0.3]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+＠玛修
+！
+[k]
+
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaDepth J 2]
+
+[se ade57]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[charaTalk off]
+[charaFace J 7]
+[charaFadein J 0.4 1]
+[wt 0.8]
+[charaFadeout G 0]
+
+[charaFace J 2]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+＠J：玛修
+肉眼确认[line 3]前方出现多个敌对反应！[r]推测为幻兽型！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠佩佩隆奇诺
+哎呀真危险。这么说来，[r]现在确实不是闲聊的时候呢。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠卡利古拉
+……唯有弑兽。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠武藏
+看来接下来只能徒步前进了。[r]应该说，只能边战斗边前进了！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠凯妮斯
+嘿！　杂鱼无论来多少都是一样啦！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠福尔摩斯
+……我快要受不了这种体力劳动了，但没办法。[r]我来负责辅助吧。
+[k]
+
+[charaFace C 7]
+
+＠福尔摩斯
+还有斯堪的纳维亚·佩佩隆奇诺。[r]虽说只能算结果论，但还是要感谢你的帮忙。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+＠佩佩隆奇诺
+不必客气。[r]好了，你们快走吧。
+[k]
+
+＠佩佩隆奇诺
+基尔什塔利亚直到最后都没有寻求我的帮助。[r]这是因为他坚信自身的正义。
+[k]
+
+＠佩佩隆奇诺
+所以我也必须见证他所谓的正义。[r]在远处，不妨碍你们的情况下。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+
+＠武藏
+哇。难道你有天眼通？[r]拥有这么多神通力的御主也太罕见了吧！？
+[k]
+
+[messageOff]
+[se ad564]
+[seVolume ad564 0 0.8]
+[wt 0.2]
+[shake 0.03 3 3 1.2]
+[charaFace E 5]
+[wt 1.5]
+
+＠武藏
+哎哟。
+[k]
+
+？1：正面突破！
+？2：……不要回头，一路向前！
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 7]
+[charaFadein J 0.1 1]
+＠J：玛修
+[line 3]明白了。战斗开始！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_80 2.0]
+[wait fade]
+[soundStopAll]
+[end]

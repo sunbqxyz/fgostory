@@ -1,0 +1,500 @@
+
+＄94-06-05-04-3-0
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098216900 1 煉獄]
+[charaSet B 1098216800 1 沖田オルタ]
+[charaSet F 1098216700 1 卑弥呼]
+
+[charaSet R 98115000 1 エフェクト用ダミー]
+[charaSet C 98115000 1 エフェクト用ダミー]
+
+[sceneSet K 132100 1]
+[charaScale K 1.7]
+
+
+[charaDepth A 7]
+[charaDepth B 5]
+
+[scene 130900]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk depthOff]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠沖田オルタ
+遺跡という話でしたが、[r]どうやら中は洞窟になっているようですね。
+[k]
+
+[charaFace A 13]
+
+＠煉獄
+妙だな、この洞窟。主のマスターよ、[r]自然にできたものではなさそうだぞ。
+[k]
+
+
+＠煉獄
+まるで大きなドリルでくり抜いて[r]掘ったような作りだ。
+[k]
+
+[charaFace B 16]
+
+＠沖田オルタ
+煉獄が言うなら間違いありませんね。
+[k]
+
+＠沖田オルタ
+とにかく気を付けて進みましょう。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.0]
+[fowardEffect bit_talk_rubble]
+[se ad892]
+[wt 1.0]
+[fowardEffectStop bit_talk_rubble]
+[seStop ad892 0.5]
+[wt 1.0]
+
+？1：うわっ！？
+？2：危ない、オルタ！
+？！
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaFace B 2]
+
+＠沖田オルタ
+マスター！？
+[k]
+
+[charaFace A 2]
+
+＠煉獄
+てぇい！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[fowardEffect bit_talk_41_fs]
+[charaMoveScale A 1.2 0.2]
+[charaMove A 0,25 0.2]
+[se bac1]
+[wt 0.1]
+[fowardEffectDestroy]
+[charaFadeout A 0.2]
+[wt 0.2]
+
+[charaPut C 256,25]
+
+[effect bit_talk_14 -306,-50]
+[se bac149]
+[wt 0.2]
+[charaEffect C bit_talk_14]
+[se bac150]
+[wt 0.2]
+[fowardEffect bit_talk_14]
+[se bac151]
+[charaScale A 1.0]
+[wt 0.7]
+[se ad640]
+[seVolume ad640 0 0.4]
+[wt 1.0]
+[seStop ad640 2.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 176,0]
+[bgmStop BGM_EVENT_80 0.7]
+[wt 0.7]
+
+＠煉獄
+やれやれ、世話が焼ける。
+[k]
+
+[charaFace A 0]
+[bgm BGM_EVENT_77 0.1]
+
+＠煉獄
+主も、主のマスターも[r]妙に抜けてるところがあるからな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadeinFSR B 0.1 181,0]
+[charaFace A 0]
+[charaFadeinFSL A 0.1 -80,0]
+
+
+＠沖田オルタ
+む、ちょっと心外です。[r]マスターは私が護ってみせますよ！
+[k]
+
+[charaFace B 6]
+
+＠沖田オルタ
+でも、ありがとうございます煉獄。
+[k]
+
+[charaFace A 16]
+
+＠煉獄
+……いいからいくぞ。
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[charaMoveFSL A -130,0 0.3]
+[se ad60]
+[seStop ad60 1.5]
+[wt 1.3]
+
+[charaFadeout B 0.1]
+[wt 0.4]
+
+？1：急ぐと危ないよ
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 -75,0]
+
+＠沖田オルタ
+ふふ……、行きましょうマスター、[r]私も気を配りますので。
+[k]
+
+？2：どうしたんだろ？
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 -75,0]
+
+＠沖田オルタ
+……うーん、もしかしたら照れてたのかも。
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 176,0]
+
+＠煉獄
+早くついてこい！　こっちだ！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+
+[scene 107500]
+[wt 1.5]
+
+[fadein black 1.0]
+[se ad207]
+[seVolume ad207 0 0.3]
+[wait fade]
+
+[seVolume ad207 1.0 0.8]
+
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠沖田オルタ
+開けた場所に出ましたが、ここは……。
+[k]
+
+？1：大きな空洞だね
+
+？2：なんだろこの感じ……
+
+？！
+
+[charaFace A 13]
+
+
+＠煉獄
+いや、見ろ、洞窟を抜けてきたのに空が見える……。
+[k]
+
+＠煉獄
+なんだここは、まるで空間が[#歪:ゆが]んでいるような。
+[k]
+
+[messageOff]
+[seStop ad207 1.0]
+[charaFace A 10]
+[wt 1.0]
+[charaFace A 2]
+
+[bgm BGM_EVENT_49 0.1]
+
+＠煉獄
+……っ！？　いかん！
+[k]
+
+＠煉獄
+私としたことがこの反応は、そうだ、アレだ！[r]何故、ここまで気づかなかった！？
+[k]
+
+＠煉獄
+すぐここを離れるぞ主よ！
+[k]
+
+[messageOff]
+[shake 0.05 0 3 1.5]
+[se ad14]
+[wt 1.5]
+[seStop ad14 0.5]
+
+[charaFace B 2]
+
+＠沖田オルタ
+煉獄！　どういうことなんですか！？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut R 0,0]
+[charaEffect R bit_talk_10_LowLevel]
+[se ad13]
+[wt 0.2]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+
+＠スーパー卑弥呼
+あっ！　[&未来クン:未来チャン]！　ようやく見つけた！
+[k]
+
+＠スーパー卑弥呼
+大変なの、実はそこにあるのは……！
+[k]
+
+[messageOff]
+[charaPut R 2000,2000]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[shake 0.05 0 3 1.7]
+[se ad14]
+[bgmStop BGM_EVENT_49 1.0]
+[wt 1.0]
+
+[wipeout rectangleStripUpToDown 0.7 1]
+[seStop ad14 0.7]
+[wait wipe]
+
+[charaFadein K 0.1 50,-570]
+
+[scene 132100]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.7 1]
+[charaMove K 50,-470 5.0]
+[wait wipe]
+
+[wt 0.8]
+[bgm BGM_MAP_16 1.8]
+[wt 1.2]
+
+[charaFadeout K 1.0]
+[wt 0.5]
+[se ade457]
+[wt 2.2]
+
+
+
+？1：あ、あの時の巨大[#埴輪:はにわ]ノッブ！？
+
+[scene 107500 0.7]
+[wt 1.4]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠沖田オルタ
+あれはたしか……、お米の国で[r]時間いっぱい夢いっぱいの
+[k]
+
+[charaFace B 8]
+
+
+＠沖田オルタ
+限界ギリギリバトルを戦った可愛い[#埴輪:はにわ]……！
+[k]
+
+[charaFace A 10]
+
+＠煉獄
+可愛くはないだろ！　微妙に趣味おかしいんだよ、主！
+[k]
+
+？2：は？　意味が分からんのじゃが
+
+[scene 107500 0.7]
+[wt 1.4]
+
+[charaTalk A]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠煉獄
+しっかりしろ、主のマスター！[r]口調がおかしくなってるぞ。
+[k]
+
+＠煉獄
+だが、気持ち的には私も同じだ！
+[k]
+
+？！
+
+[charaFace B 2]
+
+＠沖田オルタ
+ですがどうしてここに！？
+[k]
+
+[charaFace B 11]
+
+＠沖田オルタ
+あの時確かに全部倒したはずでは？[r]すこし集落に乗り込まれた気もしますが。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut R 0,0]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+
+＠スーパー卑弥呼
+実はあの時、出現直後に何らかの理由で即時崩壊した[r]巨大[#埴輪:はにわ]がいたの！
+[k]
+
+[charaFace F 2]
+
+
+＠スーパー卑弥呼
+その名は『嵐の[#凶つ神:まがつかみ]』！　通称嵐ノブ！
+[k]
+
+？1：あー……、アレかぁ……
+？2：だって……たま……が……
+
+？！
+
+[charaFace F 5]
+
+
+＠スーパー卑弥呼
+あの時の[#凶つ神:まがつかみ]の残骸は全て浄化して[r]光に還したと思っていたのですが、
+[k]
+
+
+＠スーパー卑弥呼
+嵐の[#凶つ神:まがつかみ]だけ凄い山奥で崩壊したから[r]浄化し忘れちゃって……。
+[k]
+
+
+＠スーパー卑弥呼
+あの後、生き残りの[#埴輪:はにわ]たちが残骸を集めて[r]海を渡り、長い旅路の末にこの島にたどり着いて
+[k]
+
+＠スーパー卑弥呼
+復活の日を目指してコツコツ怨念を[r]集めていたみたいなの。
+[k]
+
+[bgmStop BGM_MAP_16 1.0]
+
+？1：執念がすっごいな……
+？！
+
+[charaPut R 2000,2000]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+
+＠沖田オルタ
+[bgm BGM_EVENT_24 0.1]
+ならばもう一度、討ち倒すのみです！[r]煉獄、行きますよ！
+[k]
+
+[charaFace A 12]
+
+＠煉獄
+わかった、だがこいつは……。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut R 0,0]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+
+＠スーパー卑弥呼
+気を付けてください！　嵐の[#凶つ神:まがつかみ]からは[r]途轍もなく長い年月の積み重ねを感じます。
+[k]
+
+
+＠スーパー卑弥呼
+もしかしたらあの時の[#凶つ神:まがつかみ]より[r]強力に成長しているかも！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.5]
+[wait fade]
+[soundStopAll]
+[end]

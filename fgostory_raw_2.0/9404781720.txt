@@ -1,0 +1,621 @@
+
+
+
+＄94-04-78-17-2-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 98001000 1 玛修]
+[charaSet B 25005000 1 旅行者]
+[charaSet C 3043000 1 绘里濑]
+[charaSet D 5025001 1 爱迪生]
+[charaSet E 2016000 1 卫宫·Alter]
+[charaSet F 1098192800 1 玛丽]
+[charaSet G 98006200 1 ？？？]
+[charaSet H 98006200 1 敌人1]
+[charaSet I 98006200 1 敌人2]
+[charaSet J 3006001 1 弁庆]
+[charaSet L 98115000 1 特效用]
+
+[scene 47001]
+
+[se adm13]
+[seVolume adm13 0 0]
+
+[fadein black 1.5]
+[seVolume adm13 1.5 0.2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠玛修
+……下电车的地方已经完全是山里了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠玛丽
+这地方好冷清啊。[r]不由地有种讨厌的气息……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[seStop adm13 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠卫宫·Alter
+十分准确。看，那边，还有这里[line 3]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.4]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaDepth G 3]
+[charaDepth H 2]
+[charaDepth I 1]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFace H 0]
+[charaFadein G 0.4 -300,0]
+[charaFadein H 0.4 260,0]
+[wt 2.0]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_5 0.7 0.5]
+[seStop adm13 0.7]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_5 0.7 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaFace G 0]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadein G 0.4 -350,0]
+[charaFadein H 0.4 0,0]
+[charaFadein I 0.4 350,0]
+[wt 2.0]
+
+＠？？？
+[image berserker_language_2]
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_5 0.7 0.5]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_5 0.7 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk on]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠卫宫·Alter
+亡灵们正不断涌现。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+前辈，我们被包围了！[r]请赶快下达指示[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠绘里濑
+他们什么都不会做。[r]虽说确实有些毛骨悚然。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+……绘里濑小姐。[r]您为什么会知道？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠绘里濑
+我当然知道。毕竟我是玩家。[r][%1]，和你一样。
+[k]
+
+[charaFace C 20]
+＠绘里濑
+被邀请到[#游戏界:monde du jeu]的人分两种。[r]被卷入[#异变:世界]的人，和并非被卷入的人。
+[k]
+
+[charaFace C 0]
+
+＠绘里濑
+你我都没有成为游戏的一部分。
+[k]
+
+＠绘里濑
+我们不像从者那样，[r]连意识都被彻底卷入其中。
+[k]
+
+＠绘里濑
+我们能维持自己的意志进行游戏。
+[k]
+
+？1：就是说我在这世界中[line 3]
+？2：也有什么需要完成的任务吗？
+
+？！
+
+[charaFace C 5]
+＠绘里濑
+没错。和其他人不同。[r]而契机……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠旅行者
+…………
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠绘里濑
+就是你吧。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_5 0.7 0.5]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFace H 0]
+[charaFadein G 0.1 -300,0]
+[charaFadein H 0.1 260,0]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_5 0.7 1.0]
+[wait wipe]
+[wt 1.0]
+
+[charaTalk on]
+
+
+＠绘里濑
+它们只是游戏[#氛围:flavor]的一部分。[r]无法凭借自己意志做任何事。
+[k]
+
+＠绘里濑
+就算活动起来，也只是作为规则的一部分。
+[k]
+
+＠卫宫·Alter
+这样的规则破坏掉也无妨吧？
+[k]
+
+＠绘里濑
+起初我就是为此而战斗的。
+[k]
+
+＠绘里濑
+为了破坏[#游戏界:这个世界]。[r]为了夺回重要的东西。
+[k]
+
+＠绘里濑
+其实我本想靠自己个人解决[line 3]
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_5 0.6 0.5]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_5 0.6 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk depthOff]
+[charaDepth B 4]
+[charaDepth C 5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+
+[charaFace B 0]
+[charaFadein B 0.1 2]
+＠绘里濑
+不过现在觉得和你们竞争也不是什么坏事。
+[k]
+
+？1：这次的游戏是什么？
+？2：胜利条件是什么？
+
+？！
+
+[charaFace C 13]
+＠绘里濑
+感觉……你从一开始就斗志满满呢。[r]你很享受吗？　胆子还真大呢。
+[k]
+
+[bgmStop BGM_EVENT_5 1.5]
+
+[charaFace C 0]
+＠绘里濑
+……设定的胜利条件应该是这样的。[r]看到了吗？　沿着山道向上的尽头[line 3]
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.7 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+
+[scene 95900]
+[cameraMove 0.1 0,0 1.3]
+[wt 1.0]
+
+[wipein rectangleStripUpToDown 0.7 1.0]
+[wait wipe]
+[wt 0.4]
+
+[bgm BGM_EVENT_62 0.1]
+
+[cameraMove 1.5 0,-85 1.3]
+[wt 2.5]
+
+
+＠绘里濑
+有一座神社。那里就是终点。
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.7 1.0]
+[bgm BGM_EVENT_62 0.6 0.5]
+[wait wipe]
+
+[cameraHome 0.1]
+[scene 47001]
+[wt 1.0]
+
+[wipein rectangleStripDownToUp 0.7 1.0]
+[bgm BGM_EVENT_62 0.6 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 2]
+
+[charaFace C 0]
+[charaFadein C 0.1 0]
+＠旅行者
+赛跑吗？
+[k]
+
+＠绘里濑
+……嗯。先到达终点的一方获胜。[r]简而言之[line 3]这是“双六”。
+[k]
+
+＠绘里濑
+使用骰子的“双六”游戏给人一种和风的感觉，[r]但其原型是来自埃及的世界上最古老的桌上游戏。
+[k]
+
+＠绘里濑
+游戏的主题，是古埃及人最关心的“死与再生”。
+[k]
+
+[charaFace C 5]
+＠绘里濑
+经由死后的世界到达全新的生之世界。[r][line 3]这才是双六本来的样子。
+[k]
+
+[charaFace C 0]
+＠绘里濑
+这是第5个游戏……[r]确实很适合作为最后的游戏。
+[k]
+
+＠绘里濑
+你能理解吗，旅行者。[r]你知道双六吗？
+[k]
+
+[charaFace B 7]
+＠旅行者
+就是，掷骰子吧？
+[k]
+
+[charaFace C 1]
+＠绘里濑
+要掷很多次哦。不过只要知道这点就够了。[r]要不要试试？
+[k]
+
+[charaFace B 1]
+＠旅行者
+我会。是这样吧？
+[k]
+
+？1：关系真好啊。
+？2：（绘里濑的表情温和了一些……）
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+[charaShake C 0.05 3 3 0.3]
+[wt 0.5]
+＠绘里濑
+好了，赶快！　集中到旅行者周围！
+[k]
+
+[bgmStop BGM_EVENT_62 1.5]
+
+[charaFace C 5]
+＠绘里濑
+旅行者现在是你的“棋子”！[r]来一决胜负吧！　[%1]！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[effect bit_talk_gamestart]
+[se ade444]
+[wt 4.1]
+
+[maskout white 0.2]
+[wait mask]
+
+[charaPut L 1200,1200]
+[charaEffect L bit_talk_41]
+[charaScale L 0.7]
+
+[pictureFrameTop cut170_gameframe_dark]
+[wt 0.1]
+
+[maskin white 1.0]
+[wait mask]
+[wt 0.4]
+
+[bgm BGM_EVENT_63 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[effect bit_talk_dice17]
+[voice 2500500_0_X010]
+[wt 6.0]
+[wait voice 2500500_0_X010]
+
+
+
+[se ad399]
+[charaPut L 0,-70]
+[cameraMove 0.2 0,0 1.5]
+[wipeout circleOut 0.4 1.0]
+[wait wipe]
+
+[cameraHome 0.1]
+[charaPut L 1200,1200]
+[charaEffectStop L bit_talk_41]
+[wt 1.0]
+
+[wipein circleIn 0.4 1.0]
+[seStop ad399 0.4]
+[wait wipe]
+
+[wt 0.4]
+
+？1：哇哇哇哇！？
+？2：瞬移了！？
+
+？！
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠玛修
+移动距离大约是700米！[r]已经看不见绘里濑小姐了！
+[k]
+
+
+？1：这真的是『双六』啊。
+？2：也就是说一格约等于100米？
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+＠旅行者
+真有趣呢。相当快呢。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠爱迪生
+有人没跟上吗？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+＠玛丽
+只有绘里濑小姐。其他人都到齐了。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠玛修
+也就是说绘里濑小姐[r]把双六的先手让给了我们吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_63 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+＠卫宫·Alter
+喂。[r]看来有人来迎接我们了。
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 2]
+[charaFadein J 0.4 0,-50]
+[wt 0.4]
+＠弁庆
+站[messageShake 0.05 3 3 0.3]住！[bgm BGM_EVENT_3 0.1][r]贫僧不会让你们通过这里！
+[k]
+
+＠弁庆
+如果非要过去，就来一决胜负！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠玛修
+弁庆先生……！？[r]您是这格的守卫吗……？
+[k]
+
+＠玛修
+说是决一胜负，[r]那如果输了的话，会有什么后果呢？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 0,-50]
+＠弁庆
+放心吧。贫僧不会取你们性命，[r]只是会让你们进退维谷。
+[k]
+
+？1：每个格子是这种情况吗？
+？2：我大致明白了。
+
+？！
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-50]
+＠旅行者
+不要妨碍我。[r]我，要动真格啦……！
+[k]
+
+[messageOff]
+[maskout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[soundStopAll]
+[end]
+
+
+
+

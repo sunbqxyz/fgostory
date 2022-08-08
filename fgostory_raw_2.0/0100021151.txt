@@ -1,0 +1,259 @@
+＄01-00-02-11-5-1
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 20700 0]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98003003 1 罗曼医生]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 1005001 1 尼禄]
+[charaSet E 98016000 1 罗马士兵]
+[charaSet F 7011001 1 大流士三世]
+[charaSet G 7003001 1 吕布]
+[charaSet H 6011001 1 荆轲]
+[charaFace A 0]
+[charaFadein A 0 1]
+[fadein black 1]
+[wait fade]
+＠玛修
+击败敌方从者。[r]御主，辛苦了。
+[k]
+
+[se ad13]
+[wait se ad13]
+[charaFadeout A 0.1]
+[communicationChara 98003003 1 5 0 1]
+＠罗曼医生
+你们已经完全习惯和从者的战斗了。[r]累积至今的经验似乎起了作用。二位，干得漂亮。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠玛修
+不，医生。[r]这都是得益于御主精准的指示。
+[k]
+
+[se ad55]
+[wt 0.9]
+[seStop ad55]
+[se bac2]
+[wait se bac2]
+[charaFadeout A 0]
+[charaTalk E]
+[charaFadein A 0.1 2]
+[charaFadein E 0.1 0]
+＠罗马士兵
+客将[%1]大人、玛修大人，在下有事禀告！[r]是皇帝陛下的传令！
+[k]
+
+＠罗马士兵
+后方遭遇敌方偷袭，[r]然后斯巴达克斯将军及吕布将军脱离战线！
+[k]
+
+[bgmStop BGM_EVENT_2 0.4]
+[bgm BGM_EVENT_3 0.1]
+[charaFace A 6]
+＠玛修
+！
+[k]
+
+＠罗曼医生
+糟了……！[r]敌方发动的是两面夹击啊！
+[k]
+
+[charaFace A 7]
+＠罗马士兵
+两名将军虽击溃了敌军，[r]但却因追赶残余势力脱离了部队！
+[k]
+
+＠罗马士兵
+同时，左右两翼也遭到其他部队的偷袭。[r]布狄卡将军被俘获，落入敌军手中了！
+[k]
+
+＠罗曼医生
+这……[r]呜呜，这下惨了啊……
+[k]
+
+[messageOff]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[wt 0.3]
+[charaFadeout A 0]
+[charaFadeout E 0]
+[scene 20700 0]
+[charaFace A 0]
+[charaFadein A 0.4 2]
+[charaFace D 4]
+[charaFadein D 0.4 0]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+＠尼禄
+……
+[k]
+
+＠尼禄
+…………
+[k]
+
+＠尼禄
+……………………
+[k]
+
+[charaFace A 12]
+＠玛修
+[line 2]尼禄小姐。
+[k]
+
+[charaFace D 3]
+＠尼禄
+嗯？　不，余应该只是在思考一些事。[r]而现在余正做出了决定。
+[k]
+
+[charaFace A 11]
+＠玛修
+（应该……？）
+[k]
+
+[charaFace D 0]
+＠尼禄
+刚才那场战役让我军陷入了劣势。[r]余已经接受了这个严酷的现实。
+[k]
+
+[charaFace D 4]
+＠尼禄
+能与敌将「皇帝」对抗的余的将军们中，[r]有两名脱离战线，一名落入敌方手中。
+[k]
+
+＠尼禄
+关于前者，这是无可奈何的。[r]不，是余指挥的失误。
+[k]
+
+[charaFace D 0]
+＠尼禄
+虽然可能会耗一些时间，[r]但余相信吕布与斯巴达克斯终会归来。
+[k]
+
+[charaFace D 2]
+＠尼禄
+因此，现在[line 2][r]要去救出布狄卡！
+[k]
+
+[charaFace D 0]
+＠尼禄
+所幸，荆轲已发现了敌方作为据点的堡垒。[r]让我们一气呵成攻陷敌军据点，救出布狄卡吧。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 3]
+＠罗曼医生
+唔……
+[k]
+
+[charaTalk A]
+[communicationCharaClear]
+[wait communicationChara]
+[communicationCharaLoop 98003003 0 5 0 3]
+[charaFace A 6]
+[charaFadein A 0.1 2]
+＠玛修
+医生，怎么了？
+[k]
+
+＠罗曼医生
+总觉得有些介怀。[r]抓走布狄卡的应该是从者。
+[k]
+
+[communicationCharaFace 5]
+＠罗曼医生
+一般人类是无法做到的。[r]可是，他们为何要固守据点呢？
+[k]
+
+＠罗曼医生
+这里距联军首都并不远。[r]那回到首都明显对他们更为有利。
+[k]
+
+[charaFace A 7]
+＠玛修
+你的意思是说，[r]敌人在引诱我们吗。
+[k]
+
+＠罗曼医生
+如果只是想消灭我方的军队，[r]用刚才那种方法应该更[#合适]才对。
+[k]
+
+＠罗曼医生
+我想，敌方应该也知道[r]我们这里至少有两名从者。
+[k]
+
+[communicationCharaFace 5]
+＠罗曼医生
+所以才用那种高明的策略[r]引走了吕布和斯巴达克斯。
+[k]
+
+[charaFace A 0]
+＠玛修
+……是。[r]应该是很清楚人类与从者间决定性差异的敌人。
+[k]
+
+＠罗曼医生
+好了，[%1]。[r]该做出决断了。
+[k]
+
+？1：去救布狄卡。
+
+[communicationCharaFace 0]
+＠罗曼医生
+嗯。我就知道你会这么说。[r]果不其然。
+[k]
+
+[communicationCharaFace 3]
+＠罗曼医生
+稍微有些天真。[r]这是战争。必须有战略层面的眼光啊。
+[k]
+
+？2：若有陷阱，就碾压过去。
+
+[charaFace A 12]
+＠玛修
+……前辈。[r]你的思考方式简直就像狂战士。
+[k]
+
+[charaFace A 7]
+＠玛修
+这次确实有很多狂战士现界，[r]但我觉得还是别受他们影响比较好。
+[k]
+
+？！
+
+[charaFace A 13]
+＠玛修
+不过……[r]我并不讨厌前辈的想法。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[wt 0.5]
+[charaTalk D]
+[charaFadein D 0.1 0]
+[charaFace D 1]
+＠尼禄
+终于理解余的想法了吗，[%1]。[r]那就一同出征吧。目标是敌军据点，一座堡垒！
+[k]
+
+[charaFace D 2]
+＠尼禄
+一气呵成攻陷目标！[r]形同余手足的士兵们啊，准备周全，随余出阵！
+[k]
+
+[se ad16]
+[wt 2]
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[bgmStop BGM_EVENT_3 0.4]
+[seStop ad16]
+[soundStopAll]
+[end]

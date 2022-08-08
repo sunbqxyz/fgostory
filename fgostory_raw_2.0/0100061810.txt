@@ -1,0 +1,64 @@
+＄01-00-06-18-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_1 0.1]
+[charaSet B 98003000 1 Dr.罗曼]
+[charaSet D 6002001 1 咒腕哈桑]
+[charaSet E 6009002 1 静谧哈桑]
+
+[scene 28700]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+＠静谧哈桑
+[line 3]啊。[r]能够看到了，[%1]大人。
+[k]
+
+＠静谧哈桑
+那边的寺庙就是亚兹拉尔庙。[r]但是……
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+＠咒腕哈桑
+唔。果然触怒了初代大人吗。[r]居然还准备了那种守门人……
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+
+[bgmStop BGM_EVENT_1 0.3]
+[wt 0.4]
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+检测到复数魔力反应，是死灵系！[r]而且其中还有一只大家伙！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠咒腕哈桑
+不打倒那个是无法进入庙宇的。[r]我们上，[%1]阁下！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

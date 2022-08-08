@@ -1,0 +1,452 @@
+＄94-00-23-01-1-0
+
+[soundStopAll]
+[charaSet A 8001001 1 玛修]
+[charaSet B 98003000 1 Dr.罗曼]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 4004001 1 阿斯托尔福]
+[charaSet E 9002001 1 天草四郎]
+[charaSet F 2018001 1 幼吉尔]
+[charaSet G 98006300 1 敌人]
+
+[scene 10000]
+[fadein black 0.5]
+[wait fade]
+
+[effect bit_talk_07]
+[se ad12]
+[wt 4]
+[fadeout white 1.0]
+[wait fade]
+[wt 2.0]
+
+[bgm BGM_EVENT_2 0.1]
+[scene 20300]
+[fadein white 2.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠玛修
+医生。这里就是那个正在逐渐形成特异点的坐标吗？
+[k]
+
+[charaFadeout A 0.1]
+
+[se ad13]
+[charaTalk B]
+[communicationChara 98003003 1 5 0 5]
+[wt 0.3]
+＠Dr.罗曼
+嗯，正如我的预料，[r]四处都能确认到敌对反应。
+[k]
+
+＠Dr.罗曼
+如果放任不管，[r]或许会让已被固定的七个时代的崩溃加速。
+[k]
+
+＠Dr.罗曼
+与之对抗的从者好像也被召唤出来了，[r]希望你们能与他们齐心协力修正时代。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠玛修
+明白了。[r]那御主，我们先去寻找从者吧。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[bgmStop BGM_EVENT_2 0.1]
+[wt 1.0]
+[charaFadeout A 0.1]
+[scene 20520]
+[bgm BGM_EVENT_5 0.1]
+[fadein black 1.0]
+[wait fade]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.4 1]
+＠玛修
+城市崩溃了呢。[r]一个人影都看不到……
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr.罗曼
+从者反应就在你们附近，[r]没看到吗？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠玛修
+从者……吗？[r]我确实也能感知到，但就是看不到身影[line 2]。
+[k]
+
+[charaFadeout A 0.1]
+
+[bgmStop BGM_EVENT_5 0.1]
+[charaFilter D silhouette 00000000]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[se ad7]
+[wait charaSpecialEffect D]
+[shake 0.05 0 5 0.4]
+＠？？？
+[f large]哇！！[f -]
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠玛修
+呀！？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠芙芙
+芙啊！？
+[k]
+
+[charaFadeout C 0.1]
+
+[charaFilter D normal 00000000]
+[bgm BGM_EVENT_2 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 1]
+＠？？？
+啊哈哈哈哈！[r]被吓到了吧？　被吓到了吧？
+[k]
+
+＠？？？
+哎呀～抱歉。[r]该怎么说呢，只是心血来潮！
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace D 1]
+[charaFadein D 0.1 0]
+[charaFace A 8]
+[charaFadein A 0.1 2]
+＠玛修
+居……居然突然从空中出现……[r]吓得我都发出了从者不该发出的声音。
+[k]
+
+[charaFace A 12]
+＠玛修
+呃……请问……您是从者吧？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠？？？
+正是！[r]我的名字是阿斯托尔福！
+[k]
+
+[charaFace D 1]
+＠阿斯托尔福
+查理曼十二勇士之一，[r]职阶是Rider！
+[k]
+
+[charaFace D 0]
+＠阿斯托尔福
+兴趣是散步、吃饭、马上竞赛、赌博、酒、[r]读书、说话、还有还有……
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace A 8]
+[charaFadein A 0.1 2]
+＠玛修
+已……已经够了。[r]我的名字是玛修·基列莱特。
+[k]
+
+[charaFace A 13]
+＠玛修
+这位是[%1]，[r]是我的御主。
+[k]
+
+[charaFace D 1]
+＠阿斯托尔福
+这可爱的女孩是从者……而你就是御主吗！[r]请多指教哟！
+[k]
+
+[charaFace D 4]
+＠阿斯托尔福
+咦？[r]我们在哪儿见过吗？
+[k]
+
+[charaFace D 0]
+＠阿斯托尔福
+唔………………我忘了，算了！[r]那你们为什么要来这里呢？
+[k]
+
+[charaFace A 0]
+＠玛修
+啊……嗯。我们是为了调查特异点[line 2]。
+[k]
+
+[charaFace D 4]
+＠阿斯托尔福
+特异点？[r]是这样啊，最近冒出这种东西来了吗？
+[k]
+
+＠阿斯托尔福
+但我完全没印象呢。
+[k]
+
+＠玛修
+是这样啊……[r]那您知道其他的从者吗？
+[k]
+
+[charaFace D 2]
+＠阿斯托尔福
+啊！
+[k]
+
+[charaFace A 6]
+＠玛修
+啊……是！？
+[k]
+
+[charaFace D 1]
+＠阿斯托尔福
+就是这个！　我向你们搭话的原因！[r]想起来了，想起来了！
+[k]
+
+[charaFace D 3]
+＠阿斯托尔福
+哎呀呀～我差点就忘了呢。[r]哎嘿嘿。
+[k]
+
+[charaFace A 8]
+＠玛修
+请不要忘掉啊……
+[k]
+
+[charaFace D 1]
+＠阿斯托尔福
+其实除我以外，还有两位从者哦，[r]而且其中一个是Ruler呢！
+[k]
+
+[charaFace A 6]
+＠玛修
+Ruler……是Ruler吗！？[r]像贞德小姐那样的！？
+[k]
+
+[charaFace D 1]
+＠阿斯托尔福
+对对，就像她啦！[r]然后另一个人是Archer哦。
+[k]
+
+[charaFace D 4]
+＠阿斯托尔福
+呃，我记得名字是……[r]吉拉……吉利……吉尔……
+[k]
+
+[charaFace A 0]
+＠玛修
+……是吉尔伽美什吗？
+[k]
+
+[charaFace D 1]
+＠阿斯托尔福
+对对，就是吉尔伽美什！
+[k]
+
+[charaFace A 7]
+＠玛修
+英雄王吉尔伽美什……[r]最古老的英雄，拥有取之不尽用之不竭的财宝。
+[k]
+
+＠玛修
+从他的宝物库外流的武器，[r]成了世界各地英雄们所拥有武器的原型……
+[k]
+
+＠玛修
+达·芬奇亲是这么说的。[r]尽管我没有亲眼见过……
+[k]
+
+[charaFace A 12]
+＠玛修
+啊，不。[r]总觉得好像见过他……又好像没见过……
+[k]
+
+？1：是在梦里见过吧。
+
+[charaFace A 13]
+＠玛修
+啊，梦里啊。[r]原来如此，您这么一说，确实有这种感觉。
+[k]
+
+？2：你见过他。
+
+[charaFace A 6]
+＠玛修
+是吗？[r]呃……圣诞老人？
+[k]
+
+[charaFace A 8]
+＠玛修
+您指的是什么呢？[r]对不起，我学习得还不够充分……
+[k]
+
+？！
+
+[charaFace D 0]
+＠阿斯托尔福
+哎呀，那孩子确实拥有配得上这名字的灵格呢。
+[k]
+
+[charaFace D 1]
+＠阿斯托尔福
+嗯嗯，那孩子将来会成为伟大的英雄！[r]虽说也会成为暴君！
+[k]
+
+[charaFace A 0]
+＠玛修
+于是那两位现在究竟身在何处呢？
+[k]
+
+[charaFace D 4]
+＠阿斯托尔福
+呃……这个嘛……[r]该怎么说呢……
+[k]
+
+＠阿斯托尔福
+那位Ruler和Arhcer哦，[r]在进行……哦。
+[k]
+
+[charaFace A 12]
+＠玛修
+在进行……什么？
+[k]
+
+[bgmStop BGM_EVENT_2 0.1]
+[charaFace D 5]
+＠阿斯托尔福
+圣杯战争。
+[k]
+
+[charaFace A 0]
+＠玛修
+啊……[r]圣杯……
+[k]
+
+[bgm BGM_EVENT_2 0.1]
+[charaFace A 14]
+＠玛修
+哎哎哎哎！？
+[k]
+
+[charaFace D 1]
+＠阿斯托尔福
+快，跟我来吧！[r]总之希望你们能阻止那两人！
+[k]
+
+＠阿斯托尔福
+快快，抓紧时间！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr.罗曼
+喂～抱歉打扰你们融洽的谈话，[r]但到战斗的时间了。
+[k]
+
+＠Dr.罗曼
+蛇女类的敌人正在向你们那里靠近。
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[wt 0.1]
+[bgmStop BGM_EVENT_2 0.1]
+
+[messageOff]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.2]
+[se ad21]
+[wt 0.2]
+[wt 1.2]
+[bgm BGM_EVENT_3 0.1]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+明白了。[r]敌人已进入目视范围，开始应对！
+[k]
+
+[charaFace A 14]
+＠玛修
+……话说，阿斯托尔福先生！？
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠阿斯托尔福
+哇哈哈哈哈！[r]是蛇耶，是蛇呢！
+[k]
+
+[charaFace D 0]
+＠阿斯托尔福
+好～嘞，开始捕猎吧！[r]今天就送三十头左右成佛……升天？
+[k]
+
+[charaFace D 1]
+＠阿斯托尔福
+总之送她们去黄泉！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[wt 0.4]
+[bgmStop BGM_EVENT_3 0.1]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,841 @@
+
+
+
+
+＄03-00-08-01-2-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001410 1 玛修]
+[charaSet B 4037000 1 尼莫]
+[charaSet C 2008002 1 崔斯坦]
+[charaSet D 1098124500 1 达·芬奇]
+[charaSet E 1098123200 1 戈尔德鲁夫]
+
+[charaSet H 98115000 1 特效用]
+
+[scene 86202]
+[cameraFilter gray]
+[pictureFrame cut063_cinema]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk E]
+[charaFace E 18]
+[charaFadein E 0.1 0,-50]
+
+＠戈尔德鲁夫
+呜，唔，唔唔唔唔……！[r]说得……确实有道理……！
+[k]
+
+＠戈尔德鲁夫
+唔，呜呜呜……真拿你没辙……[r]只好，允许，技术顾问同行了……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠尼莫
+……好吧。前往海岸的航程由我来护送。[r]这两位就拜托你了，达·芬奇。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_70 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 117100]
+[pictureFrame]
+[cameraFilter normal]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠达·芬奇
+于是乎，[r]我们终于登陆不列颠岛啦～～！
+[k]
+
+[charaFace D 35]
+
+＠达·芬奇
+好厉害，雾超浓～！[r]然而气温却很温暖～！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFace D 35]
+[charaFadeinFSL B 0.1 0]
+[charaFadeinFSR D 0.1 2]
+
+＠尼莫
+那边的，别闹腾。
+[k]
+
+＠尼莫
+此前都已经攻略过五个异闻带了。[r]区区奇妙的土地，现在也没什么好稀奇了吧。
+[k]
+
+[charaFace D 27]
+
+＠达·芬奇
+对我来说，这算是初次冒险，[r]当然会兴致昂扬啦。
+[k]
+
+[charaFace D 26]
+
+＠达·芬奇
+好啦，船长快回去，快回Storm Border吧。[r]你一直在硬撑吧？
+[k]
+
+＠达·芬奇
+接下来是我们当地调查队的工作。[r]在登场机会到来前，你就咬牙切齿地等着吧。
+[k]
+
+[charaFace B 4]
+
+＠尼莫
+真是的。[r]……看你这么有精神，我也用不着担心了吧。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠尼莫
+[%1]、玛修。[r]执行任务时，拜托你们顺便照顾一下达·芬奇啦。
+[k]
+
+[charaFace B 6]
+
+＠尼莫
+我们在管制室即将失去意识前，[r]还是隐约看到了不列颠岛的模样。
+[k]
+
+＠尼莫
+这片海岸以东都被雾笼罩着，[r]但只要沿着走下去，就有疑似城镇的地方。
+[k]
+
+＠尼莫
+距离大概是200公里左右。[r]只要没人妨碍，按你们的脚程，两三天就能到了。
+[k]
+
+＠尼莫
+暂且先朝那边前进吧。[r]……这片雾固然令人在意，但似乎无法绕开它。
+[k]
+
+？1：别担心，我们会谨慎的。
+？2：我们这一路上也不是混过来的。
+
+？！
+
+[charaFace B 1]
+
+＠尼莫
+说得也是。那就祝你们好运了，[r][%1]、玛修、达·芬奇。
+[k]
+
+＠尼莫
+我会满怀期待地等你们的好消息哦。
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[se ad122]
+[seVolume ad122 0 0.5]
+[se ad746]
+[cueSe SE_21 21_ad1063]
+[seVolume 21_ad1063 0 0.5]
+[wt 1.0]
+[seStop ad746 1.5]
+[seStop 21_ad1063 1.5]
+[wt 1.5]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+御主，装备已检点完毕。[r]野外生存套装、90天份的便携干粮，均准备妥善。
+[k]
+
+[messageOff]
+[se ad574]
+[seVolume ad574 0 0.3]
+[charaPut H 1]
+[effect bit_talk_simple_summon]
+[wt 2.5]
+[seStop ad574 0.5]
+[charaFadeout A 0.1]
+[charaEffectStop H bit_talk_simple_summon]
+[wt 0.5]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠达·芬奇
+嗯嗯，我只要有[#魔力:玛纳]就不会饿肚子，[r]所以食物只需准备两人份就行了。
+[k]
+
+＠达·芬奇
+咦？　话说芙芙呢？
+[k]
+
+＠达·芬奇
+既没有跟着玛修，也没有跟着[%1]呢。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠玛修
+这个……芙芙这次并没有搭乘Storm Border……
+[k]
+
+？1：它好像不声不响地躲起来了。
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 32]
+[charaFadein D 0.1 1]
+＠达·芬奇
+哎～，感觉心里有点寂寞呢。[r]人理修复之旅时，芙芙也有跟着吧？
+[k]
+
+＠达·芬奇
+我还想体验与成人版的我相同的经历呢。[r]难道芙芙讨厌不列颠吗？
+[k]
+
+[charaFace D 0]
+
+＠达·芬奇
+不过，这也没办法啦。[r]反正还会有和大家一同旅行的机会吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠玛修
+当然啦。[r]到时候要和福尔摩斯先生、戈尔德鲁夫新所长、
+[k]
+
+＠玛修
+希翁小姐、穆尼尔先生和芙芙，[r]大家一起去冒险！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+[wt 1.5]
+
+[charaFadeout D 0.1]
+[wt 1.0]
+
+？1：好嘞，该出发了！
+
+？！
+
+[bgm BGM_MAP_2 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠达·芬奇
+嗯，目标是往东200公里！[r]疑似城镇的地方！
+[k]
+
+＠达·芬奇
+路程虽然很遥远，但加油！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠崔斯坦
+嗯，确实应该加油。[r]毕竟我总感觉……前路漫漫啊。
+[k]
+
+[messageOff]
+[se ad151]
+[wt 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_MAP_2 1.0]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth D 2]
+
+[charaTalk off]
+[charaFace D 22]
+[charaFace A 2]
+[charaFadeinFSL D 0.1 -270,0]
+[charaFadeinFSR A 0.1 2]
+
+＠达·芬奇＆玛修
+[line 3]哎！？
+[k]
+
+？1：[line 6]什么？
+
+？！
+
+[bgm BGM_EVENT_7 0.1]
+[charaTalk on]
+[charaFace D 4]
+
+＠达·芬奇
+……难以置信……这是怎么回事……
+[k]
+
+＠达·芬奇
+如此珍贵的初次冒险，[r]竟然刚上路就看到了奇怪的幻觉……
+[k]
+
+[charaFace A 8]
+
+＠玛修
+……震惊。原来御主和达·芬奇亲都看得到啊……
+[k]
+
+＠玛修
+如果是我一个人产生了错觉，我还打算视而不见，[r]当做是极度紧张状态下幻视到的幻想英灵呢……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 1.0]
+
+？1：无论怎么保守地看，这都是崔斯坦吧……
+
+？！
+
+[charaFace C 3]
+
+＠崔斯坦
+…………这种身处[#敌营:Away]的氛围是怎么回事。[r]我好悲伤……
+[k]
+
+[charaFace C 4]
+
+＠崔斯坦
+这确实是一次毫无魄力可言，[r]犹如随风旋转的风信鸡一般，
+[k]
+
+＠崔斯坦
+极其自动而又随便的召唤……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+啊，对不起，我有事要报告！[r][#圆桌之盾:Round Shield]残留着召唤后的余热！
+[k]
+
+？1：（这么说来，刚才玛修身上确实发出了似曾相识的光……）
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 23]
+[charaFadein D 0.1 1]
+
+＠达·芬奇
+咦，真的吗？　真的不是幻觉？[r]啊[line 3]灵基真的实体化了！
+[k]
+
+＠达·芬奇
+是货真价实的崔斯坦卿！　可为什么！？[r]泛人类史的英灵应该会遭到拒绝才对啊！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠崔斯坦
+……唔。
+[k]
+
+＠崔斯坦
+看来各位并不是在指责我的不是，[r]只是对英灵召唤本身感到意外啊。
+[k]
+
+＠崔斯坦
+我也并非凭自身意志响应召唤的，[r]而是当回过神来时，就已经站在各位的面前了。
+[k]
+
+＠崔斯坦
+当然啦，作为人理方的英灵，[r]我很清楚你们迦勒底的事……
+[k]
+
+＠崔斯坦
+不过我同样摸不着头脑。[r]可否麻烦你们为我说明一下呢？
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+
+[wt 1.5]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+？1：[line 3]情况就是这样。
+？2：无法召唤英灵，但召唤出来了。OK？
+
+？！
+
+[bgm BGM_EVENT_77 0.1]
+[charaFace C 1]
+
+＠崔斯坦
+原来如此。这里就是异闻带……[r]不可能存在的[#可能性:if]的不列颠岛啊。
+[k]
+
+＠崔斯坦
+我也不清楚骑士崔斯坦为何会被[r]该异闻带判断为“可以存在”……
+[k]
+
+＠崔斯坦
+恐怕因为这里是康沃尔的海岸吧。
+[k]
+
+＠崔斯坦
+也就是所谓的与土地的因缘。
+[k]
+
+＠崔斯坦
+毕竟就算历史不一样，[r]岛屿本身……应该还是一样的。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠玛修
+啊[line 3]对哦。
+[k]
+
+＠玛修
+相传崔斯坦卿出生于[r]不列颠岛的西南方，康沃尔。
+[k]
+
+＠玛修
+所以才能够召唤……不对，难道是[r]土地本身……在请求救援吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠达·芬奇
+也有可能是在即将突破未知土地时，[r]感到不安的[%1]……
+[k]
+
+＠达·芬奇
+在无意识中祈愿了召唤吧。
+[k]
+
+＠达·芬奇
+无论如何，有崔斯坦卿在身边确实令人放心。[r]同时也为我们带来了希望！
+[k]
+
+＠达·芬奇
+哪怕这异闻带不存在『人类英雄』，[r]只要有缘分，依然能召唤泛人类史的英灵。
+[k]
+
+＠达·芬奇
+比方说奥克尼的高文卿，[r]甚至是卡美洛的亚瑟王本人！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠崔斯坦
+直接将亚瑟王……？[r]这……
+[k]
+
+[charaFace C 1]
+
+＠崔斯坦
+不，这是件可喜的事。[r]那位王的话，必定会助各位一臂之力吧。
+[k]
+
+＠崔斯坦
+当然，我也愿尽绵薄之力以助各位。[r]这就是圆桌骑士的义务。
+[k]
+
+＠崔斯坦
+御主[%1]。
+[k]
+
+＠崔斯坦
+虽说这次召唤是在彼此无意识情况下完成的，[r]但还请尽情使唤我的妖弦。
+[k]
+
+＠崔斯坦
+今后，且让悲叹的崔斯坦充当您的从者吧。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth D 2]
+
+[charaTalk off]
+[charaFace A 1]
+[charaFace D 10]
+[charaFadeinFSR A 0.1 2]
+[charaFadeinFSL D 0.1 -270,0]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠崔斯坦
+那就由我来带路吧。
+[k]
+
+＠崔斯坦
+既然是不列颠西南部，那尽管包在我身上。[r]我对这里还挺熟的。
+[k]
+
+＠崔斯坦
+这一带的话，我看看，[r]只需翻过几座山就到丘陵地带了。
+[k]
+
+＠崔斯坦
+走2小时左右就能到城镇了。[r]我们出发吧，御主。
+[k]
+
+？1：嗯，拜托你啦，崔斯坦！
+？2：崔斯坦卿真可靠！
+
+？！
+
+[messageOff]
+[charaFace C 6]
+[wt 1.0]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 2.0]
+
+
+
+
+[fadein black 1.0]
+[wait fade]
+
+＠
+[align center]－开始移动后　经过　1小时－[align]
+[k]
+
+[messageOff]
+[se ade429]
+[se ad173]
+[wt 2.0]
+[seStop ade429 1.0]
+[seStop ad173 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠崔斯坦
+…………
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 24]
+[charaFadein D 0.1 1]
+
+＠达·芬奇
+…………
+[k]
+
+？1：………………
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠玛修
+那个……崔斯坦卿。[r]尽管有些难以启齿……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+？1：话说，我们这是迷[line 3]
+
+？！
+
+[bgm BGM_EVENT_7 0.1]
+[charaFace C 2]
+＠崔斯坦
+[f large]没有迷路。
+[k]
+
+[charaFace C 8]
+
+＠崔斯坦
+对依靠眼睛辨别的各位来说……[r]也许确实会有这种感觉。
+[k]
+
+＠崔斯坦
+然而我们的的确确在前进。[r]已经走了4公里，前进了4公里。
+[k]
+
+＠崔斯坦
+所以眼下的问题只有[r]『无论怎么前进都走不出这片海岸』而已。
+[k]
+
+＠崔斯坦
+如果贝德维尔卿在场，
+[k]
+
+＠崔斯坦
+他应该会提出替代方案[line 2]
+[k]
+
+＠崔斯坦
+『请不必在意，崔斯坦。[r]　接下来由我带路，卿还是去睡吧。』
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠达·芬奇
+这就叫迷路啦！[r]还有贝德维尔那是对你无语了吧！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠崔斯坦
+……果然……是这样吗……[r]贝德维尔卿是对我无语了啊……
+[k]
+
+[se ad151]
+[charaFace C 4]
+＠崔斯坦
+我好悲伤……何不对我直说呢，[r]那样我还会为卿奏一首鼓舞的乐曲……
+[k]
+
+？1：（你要这么做，连贝蒂也会生气的）状况不容乐观呢。
+？2：不过确实很不对劲啊……
+
+？！
+
+[bgmStop BGM_EVENT_7 1.0]
+[charaFace C 2]
+
+＠崔斯坦
+……确实如此。[r]是这片雾气所害吗……
+[k]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠崔斯坦
+为了避免在同一个地方打转，[r]我在来路沿途挂上了妖弦……
+[k]
+
+＠崔斯坦
+可不知不觉间，弦却断了。[r]并不是被谁剪断的。
+[k]
+
+＠崔斯坦
+而是我亲手松开了妖弦。
+[k]
+
+＠崔斯坦
+简直就像……不小心忘掉了一分钟前的自己[r]打算做什么的『思考』一样[line 3]
+[k]
+
+＠崔斯坦
+[line 3]！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+[se ade153]
+[seVolume ade153 0 0.2]
+[effect bit_talk_white_fog01]
+[wt 2.0]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+……！[r]御主，前方出现高密度魔力反应！
+[k]
+
+＠玛修
+由于收不到潜航艇的解析，[r]因此不清楚详情，但这是[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[se ad85]
+[effect bit_talk_v_slash02]
+[wt 0.4]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[se ad32]
+[effect bit_talk_14]
+[charaShake A 0.05 3 3 0.2]
+＠玛修
+呜！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠达·芬奇
+遭到攻击了，[r][%1]，做好迎击准备！
+[k]
+
+＠达·芬奇
+这是在不列颠异闻带的首次战斗，[r]要小心应战！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

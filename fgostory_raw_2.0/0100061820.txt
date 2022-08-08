@@ -1,0 +1,73 @@
+＄01-00-06-18-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_1 0.1]
+[charaSet A 8001001 1 玛修]
+[charaSet B 98003000 1 Dr.罗曼]
+[charaSet C 98079000 1 ？？？]
+[charaSet E 6009002 1 静谧哈桑]
+
+[scene 29300]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+[charaBackEffect E bit_talk_11]
+＠？？？
+不问过程。只看结果。[r]开始死亡之舞吧，静谧之翁啊。
+[k]
+
+[bgmStop BGM_EVENT_1 0.3]
+[wt 0.4]
+[bgm BGM_EVENT_24 0.1]
+
+[charaFace E 5]
+＠？？？
+哪方首级会被晚钟选中[line 3][r]此乃尔等的选择。
+[k]
+
+[charaFadeout E 0.1]
+[charaBackEffectStop E bit_talk_11]
+
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+来了……！[r]静谧哈桑的灵基数值正在爆炸性增长……！
+[k]
+
+＠Dr.罗曼
+若还把她当成到以前的她，会被瞬间解决掉的！[r]大家全力应战！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠玛修
+但要打败静谧小姐这种事……！[r]前辈……！
+[k]
+
+？1：破罐子破摔，先硬着头皮上……！
+？2：一如既往，使出全力……！
+
+？！
+
+[charaFace A 7]
+[wt 1.0]
+[charaFace A 2]
+＠玛修
+[line 3]是！　玛修·基列莱特，[r]会作为前辈的从者全力应战……！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

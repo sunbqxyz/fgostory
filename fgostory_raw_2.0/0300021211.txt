@@ -1,0 +1,384 @@
+
+＄03-00-02-12-1-1
+
+[soundStopAll]
+
+
+[charaSet A 8001400 1 玛修]
+[charaSet B 8001410 1 玛修（无护目镜）]
+[charaSet C 98115000 1 特效用]
+[charaSet D 3012001 1 布伦希尔德]
+[charaSet E 98002000 1 芙芙]
+[charaSet F 1098153200 1 御使们]
+[charaSet H 2031001 1 拿破仑]
+
+[scene 60700]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaScale C 1.4]
+[charaEffect C bit_talk_rarrow01or 1 F]
+[charaPut C 1200,1200]
+[wt 0.6]
+[charaPut C -50,-100]
+[wt 0.3]
+[cueSe Battle bac423]
+
+[wt 0.7]
+
+[se bac325]
+[seVolume bac325 0 0.6]
+[fowardEffect bit_talk_explosion]
+[wt 1.5]
+
+
+[se ad10]
+[shake 0.05 0 2 1.0]
+[effect bit_talk_impactlanding]
+[wt 2.5]
+[charaScale C 1.0]
+
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+[cueSe Battle bac170]
+[wt 0.5]
+
+＠拿破仑
+巨人群出现空档！[r]从这里突破后继续移动！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠B：玛修
+[#灵基外骨骼:奥特瑙斯]追加装备[#欧雷尔斯雪板:Ollerus Board]重新启动。[r]请抓住我，御主！
+[k]
+
+
+[messageOff]
+
+[charaTalk off]
+
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+
+[charaFace A 2]
+[charaFadein A 0.4 1]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+＠玛修
+喷射模式由第二加速开始紧急加速。[r][#欧雷尔斯雪板:Ollerus Board]预备。3、2、1[line 3]
+[k]
+
+＠玛修
+[line 6]推进器重启！
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[cameraMove 2.5 0,0 1.3]
+[se ade122]
+[charaPut C 1]
+[charaEffect C bit_talk_41]
+[wt 1.5]
+
+[fadeout white 1.0]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.01]
+
+[wt 1.0]
+
+[se ade122]
+[wt 1.0]
+[se ad543]
+[seVolume ad543 0 0.2]
+
+＠拿破仑
+视野真差，太差了！[r]但是……
+[k]
+
+＠拿破仑
+要找的东西还是能找到的！　[&少年少女！:少女们！][r]前方有个装甲块[line 3]就是那个吧！
+[k]
+
+[messageOff]
+[shake 0.05 1 3 3.0]
+
+[fadein white 1.0]
+[seStop ad543 1.0]
+[wait fade]
+
+[se ad553]
+[wt 2.0]
+[seStop ad553 1.0]
+
+＠拿破仑
+哎，与其说是汽车，还不如说是辆气派的装甲车呢！
+[k]
+
+[se ad13]
+
+＠达·芬奇
+我目视到你们了！[r]速度太棒了！　但我们不能停车！
+[k]
+
+＠达·芬奇
+因为现在敌人正从上空追赶我们！[r]要是踩刹车，就会立马命丧于光枪之下！
+[k]
+
+＠布伦希尔德
+那我们就跳上车吧。
+[k]
+
+＠拿破仑
+这主意不错！
+[k]
+
+＠玛修
+哎[line 3]
+[k]
+
+＠拿破仑
+[&少年少女:小姐们]，不要动哦。我来抱你们！[r][line 3]嘿呀啊啊啊啊！
+[k]
+
+[messageOff]
+[cueSe Battle bac123]
+[se ad85]
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[bgmStop BGM_EVENT_80 1.0]
+[wait wipe]
+
+[scene 60601]
+
+[charaPut C 1200,1200]
+[charaEffectStop C bit_talk_41]
+[se ad75]
+[wt 1.0]
+[seStop ad75 0.5]
+
+[se ad223]
+[se ad222]
+[cueSe Battle bac123]
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[wt 0.4]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠拿破仑
+[line 3]抵达！
+[k]
+
+[messageOff]
+[charaFace H 0]
+[se ad555]
+[wt 2.0]
+[seVolume ad555 1.0 0.4]
+
+[charaFace H 2]
+
+＠拿破仑
+风压好强啊！[r]小心别摔下去了哦，[&少年少女:小姐们]！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+啊，好。御主，[r]请站在我身后。我帮您挡风！
+[k]
+
+＠玛修
+芙芙也是！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[seStop ad555 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠芙芙
+芙，芙[line 2]呜！！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+…………看到了。一目瞭然。[r]空中竟然有这么多量产型瓦尔基里的身影！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad51]
+[wt 0.8]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.4 1]
+
+＠布伦希尔德
+量产型……[bgm BGM_EVENT_70 0.1]
+[k]
+
+＠布伦希尔德
+我已经听各位说过了，[r]知道了这种东西的存在。
+[k]
+
+[charaFace D 8]
+
+＠布伦希尔德
+还以为自己已经理解了，[r]但亲眼目睹后内心还是会躁动不安啊。
+[k]
+
+＠布伦希尔德
+只重视作为自动机械的性质制造出形体，[r]却没有搭载灵魂的妹妹们。
+[k]
+
+[messageOff]
+[charaFace D 9]
+[wt 1.0]
+[charaFace D 4]
+
+＠布伦希尔德
+…………我很清楚。[r]她们只具备执行命令的机能。
+[k]
+
+＠布伦希尔德
+她们没有被勉强赋予了感情的[r][#女武神:我们]的那份不确定性。
+[k]
+
+＠布伦希尔德
+尽管是非常实用……[r]非常有效率的想法……
+[k]
+
+[messageOff]
+
+[charaMoveScale D 1.02 0.4]
+[se ad166]
+[wt 0.1]
+[seStop ad166 0.2]
+[wt 1.0]
+
+[charaFace D 8]
+
+＠布伦希尔德
+[line 6]但在我看来，只是群可悲的乌合之众。
+[k]
+
+[charaFace D 4]
+
+＠布伦希尔德
+听得见吗，姊妹们。[r]没有灵魂的可悲存在啊。
+[k]
+
+＠布伦希尔德
+吾之真名乃布伦希尔德。[r]是身为你们的原型的姊妹中的长姊。
+[k]
+
+＠布伦希尔德
+你们快撤退吧。[r]哪怕对出身不同的你们，我也……
+[k]
+
+＠布伦希尔德
+不想用这把枪刺向你们。[r]所以，快撤退吧。
+[k]
+
+[messageOff]
+
+[se ad677]
+[seVolume ad677 0 0.7]
+[wt 1.5]
+[seStop ad677 0.3]
+[wt 1.0]
+
+＠御使们
+……姐姐大人。
+[k]
+
+＠御使们
+姐姐大人，布伦希尔德姐姐大人。[r]姐姐大人，统率个体的上位种，真的，在北欧。
+[k]
+
+＠御使们
+无法理解，无法理解。[r]我们，只是，在执行对污秽金属块的破坏命令[line 3]
+[k]
+
+＠御使们
+无法理解，无法理解。[r]三位统率个体，要求对现状做出追加命令。
+[k]
+
+＠御使们
+姐姐大人，布伦希尔德姐姐大人她……[r]对我们发出了敌对宣言！
+[k]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+＠御使们
+怎么可能，难以置信[line 3][r]怎么可能，难以置信，难以置信，难以置信！
+[k]
+
+＠布伦希尔德
+这没什么难以置信的。[r]新的姊妹们。
+[k]
+
+＠布伦希尔德
+所以，撤退吧。[r]倘若你们表示无法做到的话……
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_80 0.1]
+
+[se ad51]
+[wt 0.5]
+[charaFace D 2]
+
+＠布伦希尔德
+[line 3]我！[r][line 3]就只能破坏你们了！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

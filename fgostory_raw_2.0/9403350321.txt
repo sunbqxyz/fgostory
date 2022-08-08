@@ -1,0 +1,268 @@
+
+＄94-03-35-03-2-1
+
+
+[soundStopAll]
+
+[charaSet A 4031000 1 丹驹]
+[charaSet B 1098160000 1 陈宫]
+[charaSet C 5042000 1 紫式部]
+[charaSet D 99502600 1 玛修]
+[charaSet E 5007001 1 莎士比亚]
+[charaSet F 1013001 1 恺撒]
+[charaSet G 5005001 1 安徒生]
+[sceneSet H 10000 1]
+[charaSet I 5009000 1 特效用]
+[charaSet J 98115000 1 特效用]
+
+[charaScale H 1.01]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_warp]
+
+[charaScale A 1.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 11010]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+
+[se ad171]
+[wt 0.2]
+[fowardEffect bit_talk_kengekiall02]
+[wt 0.2]
+[se ad32]
+[wt 0.3]
+[se ad170]
+[wt 0.2]
+[flashin once 0.1 0.3 FFFFFF80 FFFFFF00]
+[wt 0.4]
+
+[se bac18]
+[effect bit_talk_h_slash01 0,0 H]
+[wt 0.8]
+
+[se ad22]
+[wt 1.6]
+
+
+
+[se ad127]
+[charaMoveScale A 1.0 0.2]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[charaShake A 0.02 3 3 0.4]
+[seStop ad127 0.6]
+[wt 0.6]
+
+＠丹驹
+…………就是现在！　身穿黑衣的美丽人儿！
+[k]
+
+
+[se ade250]
+[bgm BGM_EVENT_3 0.4 0.5]
+[charaTalk H]
+[charaFadeTime H 0.1 0.4]
+＠J：解说
+丹驹马是听闻了字里行间的骚动才会折返此处的！[r]另外，作家英灵们已经累趴了！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.4 1.0]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠紫式部
+万分感谢！[r]声线凛然到完全不像一匹马的马先生！
+[k]
+
+[charaFace C 2]
+＠紫式部
+成功回收咒本！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 1.0]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[se adm20]
+[charaPut I 1]
+[charaEffectStop I bit_talk_warp]
+[fowardEffect bit_talk_22]
+[wt 1.5]
+[seStop adm20 1.0]
+[wt 2.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠玛修
+咒本回收完成！[wt 0.6][charaFace D 12][r]但是……这次获得的魔力量也很微弱。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠紫式部
+……嗯。
+[k]
+
+＠紫式部
+确实不是『最初的咒本』，[r]但拥有魔力的咒本是不该被放任不管的。
+[k]
+
+[charaFace C 1]
+＠紫式部
+还好成功回收了。[r]各位，非常感谢。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 2]
+[charaDepth B 4]
+[charaDepth F 6]
+[charaDepth E 8]
+
+[charaTalk off]
+[charaFace A 1]
+[charaFace B 1]
+[charaFadein A 0.1 2]
+[charaFadein B 0.1 0]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFace E 0]
+[charaFace F 0]
+[charaFadein E 0.1 0]
+[charaFadein F 0.1 2]
+[wt 1.2]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠安徒生
+唔。[r]从地下图书馆外借的书……
+[k]
+
+＠安徒生
+尽管已经不是原来的那本了，但『最初的咒本』[r]很有可能混在外借的书中。是这个意思吧？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠紫式部
+对。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠安徒生
+说起图书馆的书，没错，[r]那家伙应该借了很多才对。
+[k]
+
+？1：那家伙？
+？2：谁啊？
+
+？！
+
+＠安徒生
+就是那个啦，会画同人或是漫画的戴眼镜的那个。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠玛修
+啊，原来如此！　前辈！
+[k]
+
+？1：[line 3]是刑部姬吗！
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠安徒生
+去看看吧。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[wt 1.2]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠安徒生
+没什么，那家伙占领的房间就在[#书房:这里]附近。[r]我送你们一程。
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

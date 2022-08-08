@@ -1,0 +1,958 @@
+
+
+
+
+
+＄91-30-39-01-1-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 3039001 1 ガレス]
+[charaSet B 1020001 1 ランスロット（剣）]
+[charaSet C 6021001 1 酒呑童子]
+[charaSet D 3047001 1 パーシヴァル]
+[charaSet E 7002001 1 ランスロット（狂）]
+[charaSet F 7002001 1 ランスロット（狂）シルエット]
+[charaFilter F silhouette 00000080]
+
+[imageSet Z back10000 1]
+[charaScale Z 1.01]
+
+[charaDepth Z 1]
+
+[charaDepth E 2]
+[charaDepth C 2]
+[charaDepth D 3]
+[charaDepth A 4]
+[charaDepth F 4]
+
+
+[branchQuestClear lblClear1 3000303]
+[branch lblNotClear1]
+
+[label lblClear1]
+[scene 104200]
+[branch lblIsClearConf1]
+
+[label lblNotClear1]
+[scene 105500]
+
+[label lblIsClearConf1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[se adm36 0.4]
+[seVolume adm36 0.7 1.0]
+[wt 0.7]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 200,0]
+[charaMove B -200,0 2.2]
+[wt 1.0]
+[seStop adm36 0.5]
+
+[charaFadeout B 0.4]
+[wt 0.7]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[charaFace A 11]
+
+＠ガレス
+あ[line 3]
+[k]
+
+[charaFace A 17]
+
+＠ガレス
+ランスロット卿！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ランスロット
+[line 3]おお、ガレス。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ガレス
+はい！
+[k]
+
+[charaFace A 0]
+
+＠ガレス
+マスター、すみません。[r]ランスロット卿に少しご挨拶してきても……
+[k]
+
+？1：勿論いいよ
+
+[charaFace A 1]
+
+＠ガレス
+ありがとうございます！
+[k]
+
+？2：大丈夫、シミュレーターは逃げたりしないよ
+
+[charaFace A 1]
+
+＠ガレス
+すみません！[r]すぐに戻りますので！
+[k]
+
+？！
+
+
+[messageOff]
+[se ad166]
+[charaMove A -250,0 1.0]
+[wt 0.3]
+[charaFadeout A 0.5]
+[wt 0.5]
+[seStop ad166 1.0]
+[wt 1.0]
+
+
+[charaTalk off]
+[charaFace B 1]
+[charaFace A 0]
+[charaFadein B 0.1 -256,0]
+[charaFadein A 0.1 256,0]
+[wt 1.0]
+
+[charaMoveReturn B -256,-10 0.5]
+[wt 1.2]
+
+[charaFace A 1]
+[wt 0.7]
+
+？1：二人とも、仲がいいよね
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠酒呑童子
+はあ。せやねえ。
+[k]
+
+？2：ガウェインとはまた違う兄妹っぽさがあるね
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠酒呑童子
+ああ、あの太陽の。[r]言われてみれば笑う顔がなんやそっくりやわぁ。
+[k]
+
+[charaFace C 0]
+
+＠酒呑童子
+でも、なぁ[line 3]
+[k]
+
+＠酒呑童子
+ランスロットはんと[#あの子:ガ レ ス]、[r]兄と妹とはちゃうんやないの。
+[k]
+
+[charaFace C 10]
+
+＠酒呑童子
+マスターにはそないな風に見えるんやったら、[r]それはそれでええけど。
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠パーシヴァル
+ああ[line 3]
+[k]
+
+＠パーシヴァル
+ランスロット卿、ガレス。[r]かつての師とその弟子とも言える両名。
+[k]
+
+＠パーシヴァル
+仲睦まじい様子を、[r]再び目にできる日が来ようとは。
+[k]
+
+＠パーシヴァル
+カルデアに喚ばれて良かったと思うことは[r]幾つもあるが……
+[k]
+
+[charaFace D 7]
+
+＠パーシヴァル
+中でも[#燦然:さんぜん]と輝くモノこそ、[r]あの光景と言える。
+[k]
+
+[charaFace D 0]
+
+＠パーシヴァル
+本当に。心より、私はそう言えます。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠酒呑童子
+あらまあ、そないに？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠パーシヴァル
+ええ。レディ。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaFace B 1]
+[charaFace A 1]
+[charaFadein B 0.1 -256,0]
+[charaFadein A 0.1 256,0]
+[wt 0.5]
+
+[charaMoveReturn B -256,-10 0.7]
+[wt 1.5]
+
+[se adm36]
+[charaMove B -500,0 2.0]
+[wt 0.2]
+[charaFadeout B 0.5]
+[wt 0.5]
+[seStop adm36 1.0]
+[wt 1.0]
+
+
+[se ad166]
+[seVolume ad166 0 0]
+[seVolume ad166 0.5 1]
+
+[wipeout rightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[charaTalk on]
+
+[wipein leftToRight 0.5 1.0]
+[wait wipe]
+
+[seStop ad166 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ガレス
+お待たせしました！
+[k]
+
+[charaFace A 17]
+
+＠ガレス
+お待たせしてしまった分、[r]戦闘訓練では頑張りますね！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠パーシヴァル
+それは頼もしい。[r]乙女狼の奮闘に期待しよう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠酒呑童子
+小さい体してはるのに、[r]思うてたより何倍も力持ちやからねぇ、ガレスはん。
+[k]
+
+[charaFace C 1]
+
+＠酒呑童子
+円卓の騎士いうんは天然の[#化け物]揃いやけど、[r]可愛い顔してあんたはんも負けてへんわぁ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠ガレス
+えっ？[r]可愛い、ですか？
+[k]
+
+[charaFace A 1]
+
+＠ガレス
+えへへ……。[r]ありがとうございます。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+[charaFadeTime Z 0.2 0.6]
+
+＠酒呑童子
+（そこを抜き取るんやねえ？）
+[k]
+
+[messageOff]
+[charaFadeout Z 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+[charaFace A 11]
+
+＠ガレス
+ですが、その、[r]ガレスはそちら方面の鍛錬には疎く！
+[k]
+
+[charaFace A 10]
+
+＠ガレス
+酒呑童子殿のような艶っぽさとは、[r]本気で縁遠い身なのです。
+[k]
+
+[charaFace A 1]
+
+＠ガレス
+ですので[line 3]いつか、ご指南ください！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 9]
+[charaFace D 16]
+[charaFadeinFSL C 0.1 0]
+[charaFadeinFSR D 0.1 2]
+[wt 1.0]
+
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+
+＠酒呑童子
+あら、そ？
+[k]
+
+＠酒呑童子
+騎士に“女”は要らへんとか、[r]そういうアレを言うたりしぃひんの？
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ガレス
+う～～～～～ん。
+[k]
+
+[charaFace A 0]
+
+＠ガレス
+もしかしたら、[r]そう結論付けることもあるかもです。
+[k]
+
+[charaFace A 5]
+
+＠ガレス
+でも……[r]私は未熟のまま死んだ身なれば。
+[k]
+
+＠ガレス
+私はまだ、私の騎士道に[#確固たる解答]がありません。
+[k]
+
+[charaFace A 1]
+
+＠ガレス
+こうしてせっかく現界したからには、[r]この身に何ができるか少しは試してみようかな、と。
+[k]
+
+＠ガレス
+そんな風に思うのです。
+[k]
+
+[charaFace A 0]
+
+＠ガレス
+たとえば、そう……
+[k]
+
+[charaFace A 17]
+
+＠ガレス
+ブラダマンテ殿のように、美しさと強さを[r]共に備えた女騎士を目指すのも良いかもですし！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFace A 11]
+[wt 0.3]
+
+＠ガレス
+……あっ、勿論、[r]マスターのお許しさえいただければ！　です！
+[k]
+
+？1：いいよ、一緒に試していこう！
+
+[charaFace A 1]
+
+＠ガレス
+ありがとうございます！
+[k]
+
+？2：スカサハたちに頼んで着替えとかもアリかも？
+
+[charaFace A 14]
+
+＠ガレス
+霊基の変化ですか？[r]ふむふむ？
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠酒呑童子
+ふふふふふふふふふ。
+[k]
+
+[charaFace C 0]
+
+＠酒呑童子
+せやねえ、影法師かて[r]お天道様の位置とかで[#かたち]は変わるもんや。
+[k]
+
+＠酒呑童子
+楽しゅうやったらええやないの。[r]うち、応援したるわぁ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠パーシヴァル
+……。[r]（ぐっと来ている）
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠酒呑童子
+ちょっとパーシヴァルはん。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠パーシヴァル
+あ、ああ。[r]あまりにガレスが健気なものだから、つい。
+[k]
+
+[charaFace D 1]
+
+＠パーシヴァル
+不肖パーシヴァルも無論、力となろう！[r]何ならシミュレーターでの戦闘訓練の後すぐにでも！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ガレス
+ありがとうございます、パーシヴァル卿。
+[k]
+
+[charaFace A 11]
+
+＠ガレス
+でも気が早いですよ！[r]まずは、戦闘訓練を[line 3]
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+
+[cueSe SE_21 21_adm81]
+[seVolume 21_adm81 0 0.2]
+[wt 1.4]
+[seStop 21_adm81 0.1]
+[wt 0.2]
+
+[charaFace A 14]
+[charaShake A 0.03 4 1 0.5]
+[wt 0.3]
+
+＠ガレス
+！
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[wt 0.1]
+
+
+[cueSe SE_21 21_adm81]
+[seVolume 21_adm81 0 0.2]
+[seVolume 21_adm81 1.5 0.6]
+[wt 1.5]
+
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 -100,0]
+[charaMove F 0,0 1.0]
+
+[seStop 21_adm81 1.0]
+[wt 1.0]
+
+[charaTalk off]
+
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.1]
+[charaFadeout F 0.6]
+[wt 1.6]
+
+[charaTalk on]
+
+[charaTalk E]
+[charaFace E 0]
+
+＠ランスロット
+[image berserker_language_1]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+[charaShake A 0.03 4 1 0.7]
+[wt 0.5]
+
+＠ガレス
+[line 3]！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+[charaFadeTime Z 0.2 0.6]
+
+＠パーシヴァル
+（むっ）
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+[charaFadeTime Z 0.2 0.6]
+
+＠酒呑童子
+（あら、まぁ）
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout Z 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+？1：ガレス？
+？！
+
+[charaFace A 10]
+
+＠ガレス
+い、い、いえ……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ランスロット
+[image berserker_language_1]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠パーシヴァル
+ランスロット卿。[r]もしや、セイバー霊基の貴公をお探しか？
+[k]
+
+＠パーシヴァル
+先ほどまでここにいたのだが、[r]司令室の方へ去った。急げば追い付くだろう。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[charaMoveReturn E 0,-10 1.0]
+[wt 2.5]
+
+[cueSe SE_21 21_adm81]
+[seVolume 21_adm81 0.0 0.6]
+
+[charaMove E 200,0 1.5]
+[wt 1.0]
+
+[charaFadeout E 0.5]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_5 1.0]
+[seStop 21_adm81 1.0]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ガレス
+……。[r]……。
+[k]
+
+＠ガレス
+……………………。
+[k]
+
+？1：ガレス
+？！
+
+？1：戦闘訓練は後にして[line 3]
+？2：少し、話をしようか
+
+？！
+
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.5]
+
+
+
+[branchQuestClear lblClear2 3000303]
+[branch lblNotClear2]
+
+[label lblClear2]
+[scene 105800]
+[branch lblIsClearConf2]
+
+[label lblNotClear2]
+[scene 106000]
+
+[label lblIsClearConf2]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+
+[wt 1.5]
+
+＠ガレス
+……。[r]……。
+[k]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaFace A 11]
+
+＠ガレス
+ふ、普段は、あんな風にはならないんですよ？
+[k]
+
+[charaFace A 0]
+
+＠ガレス
+姿は違えど、どちらも同じランスロット卿です。[r]私の憧れた騎士にして師です。
+[k]
+
+[charaFace A 15]
+
+＠ガレス
+でも……
+[k]
+
+[charaFace A 10]
+
+＠ガレス
+狂戦士としてのランスロット様が[#纏:まと]う、[r]あの禍々しさ……
+[k]
+
+＠ガレス
+あの気配……
+[k]
+
+＠ガレス
+沈黙のままに敵対者を[#殺戮:さつりく]する、[r]死の騎士としての彼、そのものであるようで……
+[k]
+
+[charaFace A 4]
+
+＠ガレス
+……。[r]……。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+
+[charaFace A 19]
+
+＠ガレス
+……マスター。[r]ここに告白します。
+[k]
+
+[charaFace A 4]
+
+＠ガレス
+ガレスは、思わず[#すくんでしまう]のです。
+[k]
+
+
+＠ガレス
+恨みはありません。[r]怒りだって、この胸には抱いていない。
+[k]
+
+[charaFace A 10]
+
+＠ガレス
+それでも、何故だか……[r]まるで反射であるかのように……
+[k]
+
+＠ガレス
+あの日のあの瞬間の再現のように、[r]全身は[#強:こわ]ばって、立ちすくんでしまう[line 3]
+[k]
+
+＠ガレス
+………………。
+[k]
+
+[charaFace A 4]
+
+＠ガレス
+……ごめんなさい、マスター。
+[k]
+
+＠ガレス
+円卓第七席と勇ましく名乗っておきながら、[r]仲間の一人を前に……
+[k]
+
+
+＠ガレス
+こんな風になってしまう私の、[r]なんと、情けないことか。
+[k]
+
+＠ガレス
+どうか、どうかお許しを。
+[k]
+
+
+？1：情けないことはないよ
+？2：大丈夫
+
+？！
+
+？1：バーサーカーのランスロットのこと[line 3]
+
+[charaFace A 19]
+
+＠ガレス
+はい。
+[k]
+
+[messageOff]
+
+[wt 1.0]
+
+＠ガレス
+何とかしたい。[r]こんな風になるのはもう嫌です。
+[k]
+
+？2：嫌い、じゃないんだよね？
+
+[charaFace A 19]
+
+＠ガレス
+……違います。
+[k]
+
+＠ガレス
+どんな姿で、どんなことをなさっても、[r]私の大切なランスロット卿です。
+[k]
+
+＠ガレス
+だからこそ、[r]こんな風になるのはもう嫌です。
+[k]
+
+？！
+
+[charaFace A 0]
+
+＠ガレス
+たとえばそう、暗い廊下でばったり出逢った時も、[r]ちゃんと挨拶を交わせるくらい[line 3]
+[k]
+
+[bgmStop BGM_EVENT_11 1.0]
+
+[charaFace A 2]
+
+＠ガレス
+堂々たる私に！　私はなりたいのです！
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

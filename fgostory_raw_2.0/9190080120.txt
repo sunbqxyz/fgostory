@@ -1,0 +1,373 @@
+
+
+
+
+＄91-90-08-01-2-0
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 9008001 1 阿斯特赖亚]
+[charaSet B 1012001 1 贝德维尔]
+[charaSet C 9008001 1 特效用]
+
+[scene 10000]
+[effect bit_talk_suspicious]
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_48 0.1]
+[wt 0.4]
+
+＠
+有人说过。
+[k]
+
+＠
+你很蠢。难道你还没意识到吗？
+[k]
+
+＠
+这话不无道理。[r]当时的我确实很愚蠢。
+[k]
+
+＠
+听不进任何话，[r]过于顽固、一意孤行。
+[k]
+
+＠
+仿佛已经有了觉悟，[r]认为只有这样逞强才能保护自己。
+[k]
+
+＠
+啊啊，当时的自己………
+[k]
+
+[messageOff]
+[wt 2.0]
+
+＠
+………是如何回答的呢？
+[k]
+
+[messageOff]
+[wt 2.0]
+
+[bgmStop BGM_EVENT_48 1.5]
+[fadeout black 1.5]
+[wait fade]
+[effectDestroy bit_talk_suspicious]
+[scene 10001]
+[wt 2.5]
+
+[wipeout cutVer 0.1 1.0]
+[wait wipe]
+[fadein black 0.1]
+[wait fade]
+
+[se ad91]
+[seStop ad91 3.0]
+[wipein cutVer 1.5 1.0]
+[wait wipe]
+[wt 0.4]
+
+＠阿斯特赖亚
+穿过了那扇门………
+[k]
+
+[messageOff]
+[wt 0.4]
+[scene 108600 1.8]
+[wt 1.5]
+
+[se adm13]
+[seVolume adm13 0 0]
+[seVolume adm13 1.0 0.3]
+[wt 1.0]
+
+？1：夜空……
+？2：漫天的星星。
+？！
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaScale A 1.5]
+[charaPutFSL A -256,0]
+[charaFadeTime A 0.4 0.7]
+[wt 0.4]
+＠阿斯特赖亚
+好美啊。
+[k]
+
+[charaFace A 0]
+＠阿斯特赖亚
+据说神话里的我回到了那里。
+[k]
+
+＠阿斯特赖亚
+而现在的我，反而主要是起到后世[r][#正义女神:Lady Justice]的作用，不太记得那些事了。
+[k]
+
+＠阿斯特赖亚
+梦中竟然能看到这样的星空啊。
+[k]
+
+[messageOff]
+[seStop adm13 1.0]
+[wipeout rectangleStripUpToDown 0.7 1]
+[wait wipe]
+[charaScale A 1.0]
+[scene 107700]
+[charaFadeout A 0.1]
+[wt 0.7]
+[wipein rectangleStripDownToUp 0.7 1]
+[wait wipe]
+
+[wt 0.4]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠阿斯特赖亚
+路还在向前延伸。[r]大概是让我们朝这边走吧。
+[k]
+
+＠阿斯特赖亚
+嗯，我又闻到了罪恶的气味。[r]看来不管怎么说，我们毫无选择余地呢。
+[k]
+
+？1：走吧。
+？！
+
+[messageOff]
+[se ad60]
+[bgm BGM_EVENT_70 0.7 0.5]
+[wipeout rightToLeft 0.7 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.7]
+[bgm BGM_EVENT_70 0.7 1.0]
+[wipein leftToRight 0.7 1]
+[wait wipe]
+
+[seStop ad60 0.7]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠阿斯特赖亚
+这条路好长啊。[r]既然是梦，干嘛不能早点到达呢。
+[k]
+
+＠阿斯特赖亚
+话说，你不害怕吗？
+[k]
+
+？1：害怕什么？
+？！
+
+＠阿斯特赖亚
+就是刚才提到的事。[r]我之所以被召唤，说不定是为了裁决你。
+[k]
+
+＠阿斯特赖亚
+你难道不觉得自己有罪吗？
+[k]
+
+[messageOff]
+[se ad592]
+[seVolume ad592 0 0.7]
+[fadeout white 0.4]
+[wait fade]
+[charaFadeout A 0.1]
+[cameraFilter gray]
+[scene 56800]
+[wt 0.3]
+[fadein white 0.4]
+[wait fade]
+
+[wt 1.4]
+
+[messageOff]
+[fadeout white 0.4]
+[wait fade]
+[scene 107700]
+[cameraFilter normal]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 0.3]
+[fadein white 0.4]
+[wait fade]
+
+[charaFace A 4]
+＠阿斯特赖亚
+………说得对。[r]毁灭异闻带可以称作大罪了。
+[k]
+
+[charaFace A 0]
+＠阿斯特赖亚
+如果你愿意，就算在梦中，[r]我也可以给你合适的裁决。
+[k]
+
+＠阿斯特赖亚
+如何？[r]你不想接受裁决，获得解脱吗？
+[k]
+
+？1：虽然我有罪，
+？2：但我觉得自己不能就此屈服。
+
+？！
+
+＠阿斯特赖亚
+这只是在逞强吧？[r]难道不是为拖延裁决而找的借口吗？
+[k]
+
+？1：………………
+？2：或许……吧。
+
+？！
+
+[messageOff]
+[wt 0.4]
+[charaFace A 5]
+[wt 1.0]
+[charaFace A 0]
+
+＠阿斯特赖亚
+罪恶的气味越来越浓了。
+[k]
+
+＠阿斯特赖亚
+新的罪人就在附近。
+[k]
+
+[messageOff]
+[se ad60]
+[bgmStop BGM_EVENT_70 0.7]
+[wipeout rightToLeft 0.7 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.7]
+[wipein leftToRight 0.7 1]
+[wait wipe]
+
+[seStop ad60 0.7]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 1.0]
+
+？1：贝蒂………
+
+？！
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaFace B 4]
+＠贝德维尔
+御主………
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠阿斯特赖亚
+啊啊，我认识你。[r]你就是[#那个贝德维尔]吧。
+[k]
+
+＠阿斯特赖亚
+那个没有归还圣剑的圆桌骑士。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠贝德维尔
+嗯………没错。我没有归还圣剑。[r]亚瑟王因此发生了改变。
+[k]
+
+[charaFace B 6]
+＠贝德维尔
+如果我没犯罪的话，
+[k]
+
+＠贝德维尔
+她根本不用面对那样的结局。
+[k]
+
+？1：可是贝德维尔……
+？2：只是想拯救亚瑟王而已。
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠阿斯特赖亚
+说得对。迦勒底的记录我也阅览过了。[r]贝德维尔无疑是位清廉的骑士。
+[k]
+
+＠阿斯特赖亚
+但还是有罪的。
+[k]
+
+＠阿斯特赖亚
+即便那些行为是出于善良，[r]罪，就是罪。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠贝德维尔
+没错。罪就是罪，御主。[r]我还没有洗刷我的罪孽。
+[k]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaFace B 8]
+＠贝德维尔
+请裁决我吧。[#正义女神:Lady Justice]。[r]我今天一定就是为此才出现在这里的。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠阿斯特赖亚
+说得好！
+[k]
+
+[messageOff]
+[charaEffect C bit_talk_41_fs]
+[charaMoveScale A 1.2 0.4]
+[charaMove A 0,16 0.4]
+[charaFadeout A 0.4]
+[se bac2]
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

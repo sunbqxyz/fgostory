@@ -1,0 +1,611 @@
+
+＄94-06-57-05-1-0
+
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 28002000 1 フェイカー]
+[charaSet B 4032000 1 ライネス]
+
+[sceneSet C 74700 1]
+[charaScale C 1.5]
+
+[charaSet D 5009001 1 ダ・ヴィンチ]
+[charaFilter D silhouette 00000080]
+
+[charaSet E 5019001 1 エルメロイⅡ世]
+[charaSet F 5019001 1 エルメロイⅡ世_シルエット]
+[charaFilter F silhouette 00000080]
+
+[charaSet G 99502600 1 マシュ]
+
+[sceneSet H 51907 1]
+[charaScale H 1.01]
+
+[sceneSet I 144200 1]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 通信用ノイズ]
+[charaPut T 2000,2000]
+[charaEffect T bit_talk_10_LowLevel]
+
+[scene 10000]
+
+[pictureFrameTop cut063_cinema]
+[wipeFilter openEye 0.2 0.7]
+[cameraFilter gray]
+
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad31]
+[fowardEffect bit_talk_noise_gr]
+[wt 1.2]
+[fadeout white 0.2]
+[wait fade]
+[seStop ad31 0.4]
+[fowardEffectDestroy bit_talk_noise_gr]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-50]
+[scene 74000]
+[se ade524]
+[se ade274]
+[wt 1.0]
+[fadein white 0.4]
+[wait fade]
+
+[bgm BGM_MAP_48 0.1 0.5]
+
+
+＠ライネス
+この特異点においては、[r]記憶のエネルギー効率が、異常に高いのか！
+[k]
+
+[charaFace B 2]
+
+＠ライネス
+あ[messageShake 0.02 4 4 0.2]あくそ！　だったら兄上が襲われた理由なんて明白だ！[r]どうして、こんなことに気づかなかったんだ！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 10000]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+＠グレイ
+『[#最果てにて:ロ　　ン　　ゴ][line 3]』
+[k]
+
+＠グレイ
+『[line 3][#輝ける槍:ミ　ニ　ア　ド]』[line 2]！
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[charaPut S 0,-100]
+[charaEffect S bit_talk_rarrow01be]
+[wt 1.0]
+
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadein C 0.1 170,-450]
+[wt 1.5]
+
+[fadein white 1.5]
+[wait fade]
+
+[wt 2.2]
+
+[messageOff]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[scene 51501]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,-50]
+
+[charaDepth D 10]
+
+
+＠ダ・ヴィンチ
+[effectmessage bit_talk_rewind_text03 440,177 1.2 29]
+大丈夫、その必要はない！[r]このペースなら連中は追いつけない！
+[k]
+
+[effectmessageStop bit_talk_rewind_text03]
+[wt 0.7]
+[wt 2.3]
+[wt 0.5]
+
+
+＠ダ・ヴィンチ
+[effectmessage bit_talk_rewind_text04 440,177 1.4 33]
+あと一歩というところで私たちの勝ちさ！[r][#殿:しんがり]は私が務めよう、キミたちは[line 3]
+[k]
+
+[effectmessageStop bit_talk_rewind_text04]
+[wt 0.7]
+[wt 2.3]
+[wt 1.2]
+
+[messageOff]
+[fadeout black 0.1]
+[wait fade]
+
+[charaFadeout D 0.1]
+[scene 10000]
+[wt 0.4]
+
+[cameraFilter normal]
+[wt 0.1]
+
+[fadein black 0.3]
+[wait fade]
+
+[se bac142]
+[se ad240]
+[effect bit_talk_35]
+[wt 1.5]
+
+[fadeout black 0.3]
+[wait fade]
+
+[cameraFilter gray]
+[scene 51908]
+[cameraMove 0 0,0 2.0]
+[wt 0.3]
+
+[fadein black 0.3]
+[wait fade]
+[se ad231]
+[wt 1.5]
+
+[fadeout black 0.5]
+[wait fade]
+
+[cameraHome 0]
+[scene 51908]
+[wt 1.0]
+
+[fadein black 0.3]
+[wait fade]
+
+[se ad231]
+[wt 2.5]
+
+[scene 51909 1.5]
+[wt 2.5]
+
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[scene 10711]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.7 0,-50]
+[wt 1.0]
+
+[charaTalk off]
+
+[charaDepth F 2]
+[charaDepth E 1]
+
+[wt 0.5]
+
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+[wt 0.1]
+
+[charaFadeout F 0.7]
+
+[wt 3.0]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[charaTalk on]
+[charaPut T 0,-50]
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 0,-50]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+[charaFace G 4]
+[wt 1.0]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-50]
+
+＠エルメロイⅡ世
+もちろん、マシュのＭだよ。[r]君らが通信しているマシュは、偽物だ。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut T 0,-50]
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 0,-50]
+[wt 0.7]
+[charaFace G 15]
+[wt 0.8]
+
+[wt 0.8]
+[charaPut G 2000,2000]
+[charaPut T 2000,2000]
+[charaEffectStop T bit_talk_10]
+[wt 1.0]
+[charaFadeout G 0.1]
+
+[wt 1.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[wipeOff]
+[cameraFilter normal]
+[pictureFrameTop]
+
+
+[scene 144100]
+[wt 0.5]
+
+[bgm BGM_MAP_48 1.0 1.0]
+
+[wipeout magic 0.1 0.5]
+[wait wipe]
+
+[charaDepth I 1]
+[charaDepth A 2]
+
+[cameraMove 0.1 10,0 1.05]
+[charaScale I 1.1]
+[charaFadein I 0.1 -105,-240]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipein openEye 0.8 0.5]
+[blur lens 0.1 4 100]
+[wait wipe]
+[wt 0.4]
+
+[se ad755]
+[wt 0.2]
+[blurOff lens 0.8]
+[wt 1.2]
+
+？1：今のフィードバックは………！
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+紙片を回収せずとも、接触だけで[r]フィードバックが来たのか……[#だが]……
+[k]
+
+[charaFace A 5]
+＠フェイカー
+生きてたのか、あの[#君主:ロード]！
+[k]
+
+＠フェイカー
+相変わらずイカサマみたいな手ばかり使う……！[r]だから、あの手の陰気な顔は大嫌いなんだ！
+[k]
+
+＠フェイカー
+前のロンドンで、私が何度苦汁をなめさせられたか！
+[k]
+
+？1：マシュが……
+？！
+
+[messageOff]
+[charaFace A 4]
+[wt 1.2]
+
+[charaFace A 0]
+＠フェイカー
+ふん、あの娘がニセモノだったのも驚いたがね。[r]カルデアのデミ・サーヴァント、か。
+[k]
+
+[charaFace A 4]
+
+＠フェイカー
+騙されるのも裏切られるのも、[r]もうまっぴらだ。
+[k]
+
+[charaFace A 0]
+
+＠フェイカー
+しかし、なるほどな。[r]記憶の[#改竄:かいざん]か。
+[k]
+
+＠フェイカー
+私は一瞬覗いただけだが、消されかけた記憶は、[r]おまえにとって大事な相手だったようだ。
+[k]
+
+？1：………………
+？！
+
+[charaFace A 0]
+＠フェイカー
+万能の天才、レオナルド・ダ・ヴィンチか……。[r]だが、同じ記憶を持ったサーヴァントが現れたんだろ？
+[k]
+
+＠フェイカー
+だったら、[r]それでいいんじゃないか？
+[k]
+
+＠フェイカー
+記憶は同じだ。[r]彼女は死んでないってことにならないか？
+[k]
+
+？1：それは違う
+
+？！
+
+＠フェイカー
+どうしてだ？
+[k]
+
+？1：お別れだって言われた
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_MAP_48 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout I 0.1]
+[cameraHome 0.1]
+[scene 10000]
+[pictureFrame cut063_cinema]
+[cameraFilter gray]
+
+[charaFadein H 0.1 0,-240]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_103 0.1]
+
+＠ダ・ヴィンチ
+ああ、さらばさ[%1]！[r]無茶な注文だが、これからも日々精進するといい！
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_103 1.0 0.5]
+[wait fade]
+
+[charaFadeout H 0.1]
+[pictureFrame]
+[cameraFilter normal]
+
+[scene 144100]
+[cameraMove 0.1 10,0 1.05]
+[charaScale I 1.1]
+[charaFadein I 0.1 -105,-240]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_103 1.0 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+………ああ、そうだな。[r]おまえの記憶が伝わってくる。
+[k]
+
+＠フェイカー
+おまえたちが必要以上に悲しまないようにしつつ、[r]彼女はちゃんとお別れを済ませていた。
+[k]
+
+？2：ホームズが、ちゃんと教えてくれた
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_MAP_48 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout I 0.1]
+[cameraHome 0.1]
+
+[scene 51600]
+[pictureFrame cut063_cinema]
+[cameraFilter gray]
+
+[charaSet D 1098124500 1 ダ・ヴィンチ]
+[charaTalk D]
+[charaFace D 26]
+[charaFadein D 0.1 0,-50]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_103 0.1]
+
+
+＠S：ホームズ
+そうやって“今までのダ・ヴィンチ”と記憶が[r]連続しているように振る舞っているが、
+[k]
+
+＠S：ホームズ
+たったいま目覚めたばかりの、[r]低ランクサーヴァントだよ。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_103 1.0 0.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[pictureFrame]
+[cameraFilter normal]
+
+[scene 144100]
+[cameraMove 0.1 10,0 1.05]
+[charaScale I 1.1]
+[charaFadein I 0.1 -105,-240]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_103 1.0 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠フェイカー
+………ああ、そうだな。[r]おまえの記憶が伝わってくる。
+[k]
+
+＠フェイカー
+優しい探偵だな。[r]振る舞っている、か。
+[k]
+
+＠フェイカー
+悲しまれすぎたくはない彼女の努力を無駄にせず、[r]それでもちゃんと教えてくれていたんだな。
+[k]
+
+？！
+
+[charaFace A 0]
+＠フェイカー
+知識としての記憶と、[r]その記憶を自分のものと認識できるのは別のことだ。
+[k]
+
+＠フェイカー
+記録と記憶、と言ってもいいがね。
+[k]
+
+＠フェイカー
+わかるとも。私も影武者だからな。[r]誰かの記録をもとに、誰かの代わりをする役だ。
+[k]
+
+＠フェイカー
+私がいるから、王が死んでもいいとはならない。[r]逆はいいだろうと言ったら、王は怒ったが。
+[k]
+
+＠フェイカー
+魔術的に同じであっても、同じではない。[r]同じ記録を持っていても、同じではない。
+[k]
+
+＠フェイカー
+たとえば、同じ本を読んでいるからといって、[r]同じ人間であることにはならないように。
+[k]
+
+＠フェイカー
+だが………まだ、肝心なことが残っているぞ。
+[k]
+
+？1：肝心なこと？
+
+？！
+
+＠フェイカー
+今までの記憶の紙片が捏造だとしたら、[r]おそらく、おまえこそが[#本物の記憶]なんだ。
+[k]
+
+＠フェイカー
+だから、本体との[#経路:パ　ス]もつながっている。[r]影の召喚をすることもできるんだろう。
+[k]
+
+？1：………かも、しれない
+
+？！
+
+＠フェイカー
+だったら、おまえは早く本体に戻るべきだ。
+[k]
+
+＠フェイカー
+記憶は魂や肉体にも宿るものだから、[r]おまえが戻らずとも、本体は回復するだろう。
+[k]
+
+＠フェイカー
+だが、おまえも人格を持ってしまってるんだから、[r]早くしないと、結合は難しくなる。
+[k]
+
+[messageOff]
+[charaFace A 4]
+[bgmStop BGM_EVENT_103 2.0]
+[wt 2.0]
+
+[charaFace A 0]
+＠フェイカー
+………さて。[r]いずれにせよ、扉は開いたらしい。
+[k]
+
+＠フェイカー
+どうやら、こちらも大詰めのようだ。[r]もうすぐ先頭車両と見たぞ。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

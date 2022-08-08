@@ -1,0 +1,350 @@
+
+＄03-00-09-15-2-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1049000 1 千子村正]
+[charaSet B 1098124500 1 达·芬奇]
+[charaSet C 5045001 1 阿尔托莉雅]
+[charaSet D 1098216200 1 哈贝特洛特]
+[charaSet E 1098209500 1 白狼]
+[charaSet F 5021000 1 贤者格里姆]
+
+[imageSet J back10000 1 1]
+[charaScale J 1.05]
+[imageSet K back10000 1 1]
+[charaFilter K silhouette 1e90ff80]
+[charaScale K 1.05]
+
+[charaSet S 98115000 1 特效用]
+
+
+[scene 121500]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 1.0]
+
+[se ad133]
+[charaFadeout E 0.4]
+[wt 0.7]
+[seStop ad133 0.8]
+[wt 0.7]
+
+？1：白狼前进的方向……有篝火？
+
+？！
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 1]
+＠达·芬奇
+嗯，篝火前还有一头狼……[r]以及……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaDepth E 5]
+[charaDepth F 4]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠F：？？？
+哎哟，你回来了啊，弗莱基。[r]给，这是雾尼捕来的鱼，要吃吗？
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[se ad133]
+[wt 0.7]
+[seStop ad133 0.3]
+
+[charaFace E 0]
+[charaFadein E 0.4 250,-80]
+[wt 1.5]
+
+[se adm27]
+[seVolume adm27 0 0.3]
+[charaMoveReturn E 250,-90 0.4]
+[wt 1.0]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+＠千子村正
+那是从者哦，[r][%1]。
+[k]
+
+＠千子村正
+难道除了奥伯龙，[r]还有其他泛人类史方的从者吗？
+[k]
+
+？1：不，那身披长袍的身影是[line 3]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠F：？？？
+……唔？
+[k]
+
+[messageOff]
+[wt 0.2]
+
+[cueSe SE_21 21_ade580]
+[charaCrossFade F 5021001 4 0.6]
+[wait charaCrossFade F]
+[cueSeStop 21_ade580 0.2]
+[wt 0.8]
+
+[charaFace F 1]
+＠F：？？？
+哟，[%1]！[r]来得可真晚啊。我还以为你不来了呢！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+[wt 1.2]
+
+
+？1：是库·丘林！
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_92 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠千子村正
+库·丘林！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠F：？？？
+哎哟，抱歉，请别用那个名字叫我。[r]会导致我灵基的输出暴跌的。
+[k]
+
+[charaFace F 0]
+
+＠F：？？？
+在这里，我[#一直以来]都以格里姆之名行事的。[r]还请各位配合一下啦。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 32]
+[charaFadein B 0.1 1]
+＠达·芬奇
+格里姆……这么说来，[r]欧洲确实存在叫这个名字的古老妖精……
+[k]
+
+[charaTalk depthOff]
+[charaDepth B 5]
+[charaDepth J 1]
+
+[charaPut J 1]
+[charaFadeTime J 0.2 0.5]
+
+[charaFace B 14]
+
+＠达·芬奇
+（那不是北欧主神的别名吗？）
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout J 0.2]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠贤者格里姆
+怎么，你没提过我的事吗，哈贝特洛特。
+[k]
+
+＠贤者格里姆
+真薄情啊，[r]枉我在谢菲尔德出手相助。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+＠哈贝特洛特
+呜哇，当时手忙脚乱的压根没注意，[r]格里姆变成大叔了……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠贤者格里姆
+大[messageShake 0.05 2 2 0.4]什么叔，是大哥哥吧！
+[k]
+
+＠贤者格里姆
+我是不知道上个我长啥样，[r]但二代就是这样的！　真是对不住啦！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+＠哈贝特洛特
+不会吧……岁月的流逝也太残酷了吧……[r]如果梣看到了，大概会被吓到休克而死吧……
+[k]
+
+？1：库·丘林就是贤者格里姆？
+？2：请说明一下究竟是怎么回事！
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth K 2]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠贤者格里姆
+嗯，我会仔细说清楚的。[r]咱俩又不是什么陌生人。只不过[line 2]
+[k]
+
+[bgmStop BGM_EVENT_92 1.0]
+
+＠贤者格里姆
+要等我先确认一下那边的『预言之子』[r]是不是正牌货再说！
+[k]
+
+[messageOff]
+[charaPut K 1]
+[charaFadeTime K 0.1 0.4]
+[cueSe Servants_502100 m45007]
+[seVolume m45007 0 0.5]
+[wt 0.1]
+[charaFadeout K 0.2]
+[wt 0.2]
+
+[cueSe Servants_502100 m45010]
+[seVolume m45010 0 0.5]
+[wt 0.3]
+
+[cueSe Servants_502100 m45015]
+[seVolume m45015 0 0.8]
+[se ad963]
+[seVolume ad963 0 0.8]
+[seStop ad963 1.0]
+[se ad960]
+[se ad961]
+[fowardEffect bit_talk_fire_wall]
+
+[wt 0.5]
+[charaFadeout F 0.1]
+[wt 2.1]
+
+[seStop ad960 0.6]
+[seStop ad961 0.6]
+[wt 0.9]
+
+[fowardEffectDestroy bit_talk_fire_wall]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk depthOn]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠千子村正
+那混账，干劲十足啊！[r]可以应战吗，[%1]！？
+[k]
+
+？1：大，大概可以……？
+？2：这是惯例的试身手吧？
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠阿尔托莉雅
+明白了！　本以为是[%1]的熟人，[r]结果居然是个危险人物！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠千子村正
+嗯，不知为何，这张脸这声音让[#老夫:我]没来由地冒火！[r]给他来一记狠的尝尝吧！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

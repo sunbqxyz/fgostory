@@ -1,0 +1,416 @@
+
+
+
+
+
+＄91-90-08-01-4-1
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 9008001 1 阿斯特赖亚]
+[charaSet B 1098205300 1 神灵阿斯特赖亚]
+[charaSet C 11002002 1 岩窟王]
+[charaSet D 9008002 1 特效用]
+[charaSet E 9008002 1 特效用]
+[cameraMove 0 0,0 1.01]
+[wt 0.1]
+
+[scene 108500]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_24 0.1]
+
+[wt 0.4]
+[charaRoll D 0 0,280]
+[charaPutFSR D 200,-70]
+[charaEffect D bit_talk_arrow_back_y]
+[wt 0.2]
+[se bac150]
+[shake 0.03 3 3 0.7]
+[wt 0.2]
+[se bac149]
+[wt 0.4]
+[charaRoll E 140 0,280]
+[charaEffect E bit_bolg_01y 0,0 V]
+[wt 0.1]
+[se bac139]
+[wt 0.7]
+[charaEffectStop E bit_bolg_01y]
+
+[charaScale B 1.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,7]
+[se ad671]
+[charaShake B 0.04 3 3 0.4]
+[charaMoveScale B 1.0 0.4]
+[charaMove B 0,0 0.4]
+[wt 0.7]
+[bgmStop BGM_EVENT_24 1.5]
+
+＠神灵阿斯特赖亚
+怎么会……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠阿斯特赖亚
+本来我是无法与之对抗的，[r]但本体的我也没有完全现界。
+[k]
+
+＠阿斯特赖亚
+正因为无法完全现界，[r]才会介入[%1]的梦境。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale D 1.0]
+[charaRoll D 0 0,0]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[charaEffect D bit_talk_06]
+[wt 1.0]
+
+[bgm BGM_EVENT_6 0.1]
+
+＠神灵阿斯特赖亚
+……你难道打算帮助那个御主到最后？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut D 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠阿斯特赖亚
+这是你想做的事吧？
+[k]
+
+？1：哎？
+？2：是神灵阿斯特赖亚想做的事？
+？！
+
+[charaFace A 4]
+＠阿斯特赖亚
+毕竟我希望人类是有价值的。[r]直到最后都不想抛弃人类。
+[k]
+
+[charaFace A 0]
+＠阿斯特赖亚
+然而我还是在黑铁时代抛弃了他们。
+[k]
+
+＠阿斯特赖亚
+虽然这并非对社会犯下的罪，[r]却是一直刺痛着我本人的罪。
+[k]
+
+＠阿斯特赖亚
+所以，我需要被我自己裁决。
+[k]
+
+？1：为个人而存在的……裁决……
+？！
+
+[charaFace A 1]
+＠阿斯特赖亚
+真亏你还记得。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠神灵阿斯特赖亚
+……………………[r]既然如此，那这么办吧。
+[k]
+
+[messageOff]
+[se ad39]
+[charaEffect B bit_talk_36]
+[wt 1.0]
+
+＠神灵阿斯特赖亚
+我所召集的星之法庭。[r]我所举起的断罪之剑。
+[k]
+
+＠神灵阿斯特赖亚
+在此进行正义的裁决。[r]在此给予公平的赦免。
+[k]
+
+？1：这是……
+？2：阿斯特赖亚的第二宝具[line 2]！
+
+？！
+
+＠神灵阿斯特赖亚
+『[#将秩序归还于此:Jam redit et Virgo]』……！
+[k]
+
+[messageOff]
+
+[se ad952]
+[bgmStop BGM_EVENT_6 1.5]
+[fadeout white 1.0]
+[wait fade]
+[charaFadeout B 0.1]
+[charaEffectDestroy B bit_talk_36]
+[charaEffectDestroy D bit_talk_06]
+[scene 10000]
+[effect bit_talk_rainbow01_fs 0,0]
+[wt 0.4]
+[fadein white 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[fadeout black 1.0]
+[wait fade]
+[effectDestroy bit_talk_rainbow01_fs]
+[scene 108500]
+[shake 0.07 0 2 0.0]
+[wt 1.0]
+[se ad14]
+[seVolume ad14 0 0]
+[seVolume ad14 1.0 0.1]
+[fadein white 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠阿斯特赖亚
+梦，正在消失……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠神灵阿斯特赖亚
+我的第二宝具能将一切还原成应有的形态。[r]能令秩序回归，罪恶得以赦免。
+[k]
+
+＠神灵阿斯特赖亚
+啊啊，虽然我并不知道另一个我的罪孽[r]是否能得到宽恕，
+[k]
+
+＠神灵阿斯特赖亚
+即便如此，还是离开梦境吧。[r]我，以及那位御主……
+[k]
+
+[messageOff]
+[blur lens 2.2 4 1]
+[wt 0.7]
+[charaMoveScale B 0.9 1.5]
+[charaMove B 0,-22 1.5]
+[wt 1.5]
+
+？1：神灵阿斯特赖亚[line 2]！
+
+？！
+
+＠神灵阿斯特赖亚
+[%1]。
+[k]
+
+[charaFace B 1]
+＠神灵阿斯特赖亚
+希望你能和另一个我好好相处。
+[k]
+
+[messageOff]
+[se ad743]
+[seVolume ad743 0 0]
+[seVolume ad743 0.4 1.0]
+[seStop ad14 1.5]
+[fadeout white 1.5]
+[wt 0.2]
+[wait fade]
+[charaFadeout B 0.1]
+[shakeStop]
+[blurOff]
+[scene 105800]
+[wt 4.5]
+[fadein white 1.5]
+[wait fade]
+
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠阿斯特赖亚
+看来我们成功返回了。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_95 0.1]
+[charaMove A 5,0 0.4]
+[wt 0.4]
+[se ad77]
+[seVolume ad77 0 0.2]
+[charaMove A -5,0 0.8]
+[wt 0.8]
+[charaMove A 0,0 0.4]
+[wt 1.0]
+
+＠阿斯特赖亚
+御主……睡得好香啊。
+[k]
+
+[charaFace A 1]
+＠阿斯特赖亚
+辛苦了。[r]可能的话，希望这次能做个好梦。
+[k]
+
+[charaTalk C]
+＠C：？？？
+……真是无可救药。[r]没想到天秤女神阿斯特赖亚竟会说出如此戏言。
+[k]
+
+[charaFace A 0]
+＠阿斯特赖亚
+我应该向你道谢吧。[r]多亏了你的保护，御主才能平安无事。
+[k]
+
+＠阿斯特赖亚
+人在做梦时总是毫无防备的。
+[k]
+
+＠阿斯特赖亚
+如果遭到神灵那种巨大信息强行介入，[r]不知道人类的精神会变成什么样子。
+[k]
+
+＠阿斯特赖亚
+一旦走错一步，就会导致无法收拾，[r]御主就有可能再也醒不过来了。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.4 1]
+＠岩窟王
+契约如此。
+[k]
+
+＠岩窟王
+只要那家伙没有止步不前，[r]我就得作为黑炎的残渣停留于深处。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠阿斯特赖亚
+既然如此，来帮个忙吧。
+[k]
+
+[messageOff]
+[se ad606]
+[fowardEffect bit_talk_30_fs]
+[wt 1.5]
+
+[charaFace A 0]
+＠阿斯特赖亚
+关于刚才的梦。[r]我想尽可能将多余的信息废弃于虚数中。
+[k]
+
+＠阿斯特赖亚
+虽说忘记这段难得的旅程未免有些可惜。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠岩窟王
+没问题。[r]那些就由我带去吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠阿斯特赖亚
+谢谢。
+[k]
+
+[charaFace A 0]
+＠阿斯特赖亚
+不过，真是不可思议啊。
+[k]
+
+＠阿斯特赖亚
+没想到在成为拟似从者之后，[r]才完成了一个遗留的课题。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠岩窟王
+所谓的裁决，并不只是只针对罪恶的。[r]你应该比任何人都了解。
+[k]
+
+[messageOff]
+[charaFadeout C 1.0]
+[wt 1.7]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.7]
+
+[charaFace A 3]
+＠阿斯特赖亚
+………真头疼。
+[k]
+
+[charaFace A 1]
+＠阿斯特赖亚
+我从未想象到会有如此温柔的裁决。
+[k]
+
+[messageOff]
+[charaFadeout A 0.7]
+[wt 1.4]
+
+＠阿斯特赖亚
+谢谢你，[%1]。
+[k]
+
+[messageOff]
+[wt 1.2]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_95 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

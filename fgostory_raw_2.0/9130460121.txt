@@ -1,0 +1,470 @@
+
+＄91-30-46-01-2-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 3046001 1 ヴリトラ]
+[charaSet B 23003001 1 ガネーシャ]
+[charaSet C 3030000 1 パールヴァティー]
+
+[charaSet Y 98111500 1 エフェクト用1]
+
+[imageSet Z back10000 1]
+[charaScale Z 1.01]
+
+[charaDepth Z 1]
+
+[charaDepth A 3]
+[charaDepth B 3]
+[charaDepth C 3]
+
+[scene 105800]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠ガネーシャ
+う、うおおお！　電源ボタンを身体でガードしながら、[r]同時にミッション内のエネミーを殲滅！
+[k]
+
+＠ガネーシャ
+リアルもゲーム内もとてつもない高難易度っス！
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.2]
+
+？1：パールさん、ちょっと待ってあげてください
+？！
+
+[bgmStop BGM_EVENT_3 1.0]
+
+＠パールヴァティー
+あら。マスターが言うなら待ちましょう。[r]なんですか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaFadeTime Z 0.2 0.6]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ガネーシャ
+（このままではジリ貧……長く説明する暇もない……[r]　必要なのは、[#一目瞭然:いちもくりょうぜん]の、証拠！）
+[k]
+
+
+[messageOff]
+
+[charaPut Y 45,85]
+[charaEffect Y bit_talk_starshine]
+[se ade395]
+[wt 1.0]
+
+[charaFadeout Z 0.1]
+
+＠ガネーシャ
+そ、そこー！
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad28]
+[wt 1.0]
+
+[charaEffectStop Y]
+
+[se ade245]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaPut A 0,0]
+
+[charaSpecialEffect A wipeTimeRe 0,0 1.0]
+[wait charaSpecialEffect A]
+[wt 0.3]
+
+[charaFadein A 0,0 1]
+
+[charaFace A 12]
+
+＠ヴリトラ
+おお？　簡易的に作ったものとはいえ、[r]『わえの姿』を[#堰:せ]き止めておった領域を壊すとは……。
+[k]
+
+[charaFace A 1]
+
+＠ヴリトラ
+なるほど、貴様は障害を司る神でもあったな。[r]それならばわえの力にも干渉しやすいか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠パールヴァティー
+ヴリトラ！？　これはいったい……。
+[k]
+
+？1：実は……
+？2：多分……
+？！
+
+[messageOff]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ヴリトラ
+き、ひ、ひ。無論、貴様に[r]間接的なメッセージを伝えたのはわえの仕業よ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠パールヴァティー
+はぁ……よく考えれば、
+[k]
+
+＠パールヴァティー
+自主的にあんなやる気に溢れたメッセージを[r]送ってくるなんてガネーシャらしくありませんでした。
+[k]
+
+[charaFace C 4]
+
+＠パールヴァティー
+頭の奥底では違和感もあったのですが、
+[k]
+
+＠パールヴァティー
+子の成長を嬉しく思うあまり、[r]目を曇らせてしまっていたのですね……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ade480]
+[seVolume ade480 0.1 0.5]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ガネーシャ
+わかって、[wt 0.3]くれ、[wt 0.3]たんス、[wt 0.3]ね！？[wt 0.5][r]っ、[wt 0.1]ラスト、[wt 0.3]ずぁー！
+[k]
+
+[messageOff]
+
+[charaFace B 0]
+
+[seStop ade480 0.1]
+[wt 0.7]
+[bgm BGM_EVENT_7 0.1 0.0]
+[se ade445]
+[wt 2.5]
+
+＠ガネーシャ
+ふぃー、クリアできたっス……。[r]かつてない試練だった……。
+[k]
+
+[seStop ade445 2.0]
+
+[messageOff]
+
+[se ade52]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 1.0 1.0]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+[seStop ade52 0.1]
+
+＠ヴリトラ
+かつてない試練を乗り越える神の姿！[r]やはり愉快なものじゃのう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠ガネーシャ
+ボクは全然愉快じゃなかったっスよ！
+[k]
+
+[charaFace B 3]
+
+＠ガネーシャ
+いや、まあ……極限状態だったせいか、[r]普段とは全然違うルーチンのムーブしちゃって、
+[k]
+
+＠ガネーシャ
+それが奇跡的に上手く嵌まって史上最高の評価ポイント[r]叩き出してたりはするっスけど。
+[k]
+
+[charaFace B 6]
+
+＠ガネーシャ
+これが覚醒したってことなのか……！？[r]ボクにまだこんな力があったとは……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠パールヴァティー
+ゲームじゃなくて神としての力を[r]覚醒させてほしいものですけど。
+[k]
+
+＠パールヴァティー
+それはそれとして言いたいことがあります、[r]ガネーシャ、ヴリトラ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ガネーシャ
+ええと。[r]ひょっとして、お説教、的なもの……かな？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠パールヴァティー
+メッセージを抜きにしても、今日もまたあなたは[r]神としての責務を忘れてゲームに没頭しすぎです。
+[k]
+
+＠パールヴァティー
+そのあたり改めて話し合う必要がありますよね？
+[k]
+
+[charaFace C 5]
+
+＠パールヴァティー
+それから、もちろんヴリトラには[r]私に嘘のメッセージを送った件について。
+[k]
+
+＠パールヴァティー
+シンプルに、人であれ神であれ、[r]誰かを騙すのはよくないことです。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ヴリトラ
+インドラだって散々わえを[r]騙したりしたんじゃが……（ぶつぶつ）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ガネーシャ
+ちょっと今は疲れてるからー、また今度！[r]とかになったりは……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠パールヴァティー
+……そうですね、私も少し疲れました。[r]汗を掻いていますし。
+[k]
+
+[charaFace C 1]
+
+＠パールヴァティー
+そうだ、だったらお風呂に入りながら[r]お話をしましょう。
+[k]
+
+[charaPut Z 1]
+[charaFadeTime Z 0.1 0.6]
+
+＠パールヴァティー
+（あそこなら逃げられないでしょうしね）
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout Z 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠ヴリトラ
+えー。いやじゃー。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠ガネーシャ
+風呂……見張り……首がポーン……。[r]うっ頭が（物理的に）。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠パールヴァティー
+今回は見張りじゃなくて一緒に入るだけですよ！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ヴリトラ
+風呂はいいがどうせ泡まみれにする気じゃろ。[r][#人:蛇]の嫌がることをするのはよくないと思うぞ、うん。
+[k]
+
+[charaFace A 6]
+
+＠ヴリトラ
+というわけで逃げるぞ、マスターよ！
+[k]
+
+[messageOff]
+
+[se ade97]
+[wt 0.1]
+[charaMove A 0 0.3]
+[wt 0.1]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠パールヴァティー
+あっ、こらー！
+[k]
+
+？1：すみません、ご迷惑をおかけしました……！
+？2：こっちはこっちでちゃんと注意しておきます……！
+？！
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ヴリトラ
+わかったわかった、うるさいのう。[r]次は誰かを騙したりはせん。
+[k]
+
+[charaFace A 1]
+
+＠ヴリトラ
+ただ[line 3]少し演技をするだけじゃ。
+[k]
+
+[charaFace A 7]
+
+＠ヴリトラ
+さて、それではシミュレーター室とやらに[r]行くとしようかの……？
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[soundStopAll]
+[end]
+

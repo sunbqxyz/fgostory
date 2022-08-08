@@ -1,0 +1,197 @@
+
+＄03-00-04-14-5-1
+
+
+[soundStopAll]
+
+[charaSet A 1039001 1 拉克什米]
+[charaSet B 1098127610 1 佩佩隆奇诺]
+[charaSet C 1019001 1 罗摩]
+[charaSet D 2034000 1 退尔]
+[charaSet E 1098176200 1 马嘶]
+[charaSet J 98115000 1 特效用]
+
+[scene 75007]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.4 65,0]
+[charaMove D 15,0 0.2]
+[wt 0.2]
+[charaMove D 1 0.3]
+
+[se ad671]
+[wt 1.2]
+[se bac56]
+
+＠退尔
+呜[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠罗摩
+你没能射杀余之御主这个猎物。[r]而现在，却打算狙击你不应射杀的猎物。
+[k]
+
+[charaFace C 4]
+
+＠罗摩
+何其悲哀。[r]威廉·退尔已然不是被收归于座的[#英雄:Archer]了。
+[k]
+
+＠罗摩
+只是个被神的力量愚弄的……弩手罢了。
+[k]
+
+[charaFace C 2]
+
+＠罗摩
+倒下吧，威廉·退尔。[r]若非如此，你是无法得到救赎的……！
+[k]
+
+[messageOff]
+
+
+[charaFace C 2]
+[charaMoveScale C 1.1 0.2]
+[charaMove C 0,10 0.1]
+[effect bit_talk_v_slash01]
+[wt 0.1]
+[charaMove C 5,12 0.1]
+[se bac263]
+[wt 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[wt 0.2]
+[se bac403]
+[fowardEffect bit_talk_14]
+[flashin once 0.2 0.2 FFFFFF80 FFFFFF00]
+
+[charaScale C 1.0]
+
+[charaShake D 0.05 3 2 0.8]
+[se ad161]
+[fowardEffect bit_talk_35]
+[wt 0.4]
+
+＠退尔
+呜，噢噢……！
+[k]
+
+[messageOff]
+[charaMove D 0,-50 1.4]
+[wt 0.2]
+[charaFadeout D 0.3]
+[wt 0.2]
+[se ad144]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠佩佩隆奇诺
+（……[#只有]回忆，[r]　被神视为不完美的存在删除了[line 3]）
+[k]
+
+＠佩佩隆奇诺
+（果然不可理喻呢。假如我变成那样，[r]　就真的是坠入天狗道了啊。）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠拉克什米
+虽说胜负已决，但他仍未受致命伤！[r]给他最后一击！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad51]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠罗摩
+余当然知道！
+[k]
+
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 1.5]
+[se ad171]
+[charaEffect C bit_talk_Slash_white_01_L]
+[wt 0.4]
+
+[se ad618]
+[fowardEffect bit_talk_14]
+[wt 0.8]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠罗摩
+什么！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠？？？
+啊啊……该死。真是火大。
+[k]
+
+
+[messageOff]
+[wt 0.5]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.4 1]
+[wt 0.5]
+[bgm BGM_EVENT_24 0.1]
+
+＠马嘶
+上一份工作都还没处理完呢。[r]但既然看到了，我也不能视而不见。
+[k]
+
+[charaFace E 6]
+
+＠马嘶
+啊啊，我很愤怒。明明与野兽毫无关系，[r]却倒霉地待在这里的你们，令我很愤怒！
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_24 2.0]
+[wait fade]
+[soundStopAll]
+[end]

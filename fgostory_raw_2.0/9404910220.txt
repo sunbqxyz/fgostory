@@ -1,0 +1,571 @@
+
+＄94-04-91-02-2-0
+
+[soundStopAll]
+
+
+[charaSet A 9010000 1 卑弥呼]
+[charaSet B 1098194300 1 卑弥呼]
+[charaSet C 1098194500 1 无名之龟]
+[charaSet D 1098195600 1 村落里的人]
+[charaSet H 1098196400 1 披着羽织的男人]
+
+
+[branchQuestNotClear lblNotClear 3000320]
+
+[branch lblConf]
+[label lblNotClear]
+[charaSet E 8001000 1 玛修]
+
+[branch lblNotClear_out]
+[label lblConf]
+[charaSet E 8001410 1 玛修]
+
+[label lblNotClear_out]
+
+[charaSet F 2041000 1 织田信胜]
+
+[scene 97601]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠卑弥呼
+哎，未来亲是在那个叫迦勒底的地方奋斗啊。
+[k]
+
+＠卑弥呼
+是叫从者吗？
+[k]
+
+
+＠卑弥呼
+竟然能召唤过去的人战斗，[r]你的能力好厉害呀～。
+[k]
+
+[charaFace A 4]
+
+＠卑弥呼
+那也就是说，我也是从者吗？
+[k]
+
+＠卑弥呼
+弟弟怎么想？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠无名之龟
+虽然令人难以置信，但现在连我都变成了乌龟，[r]所以这种事估计是真的吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+的确，毕竟身为已故原女王的我都复活了，[r]所以多半就是这么回事吧。
+[k]
+
+？1：话说你们这是去哪儿？
+
+[charaFace A 0]
+
+
+＠卑弥呼
+啊，我忘记说了。我刚才听到了哦。
+[k]
+
+
+＠卑弥呼
+仿佛能从这个方向听到[r]未来亲寻找之人的声音。
+[k]
+
+
+？2：那黑色的雾气是……
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+
+＠无名之龟
+连我也从未见过那种东西。
+[k]
+
+＠无名之龟
+究竟是什么啊。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+？！
+
+＠卑弥呼
+反正只要我们去看看就会发现什么，[r]相信我，跟我来吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+
+＠无名之龟
+不不，虽然听上去显得过于凑巧，[r]但无奈的是姐姐大人的话大部分是真的。
+[k]
+
+
+＠无名之龟
+还请未来阁下相信她。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+大部分这评价也太失礼了吧。只要我出马，[r]无论什么问题都能全部解决啦！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠无名之龟
+好啦好啦，就当是这样好啦。
+[k]
+
+＠无名之龟
+只不过，根据我的记忆，[r]这附近应该有个村落，所以放心吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+噢！　话音刚落就看到了。
+[k]
+
+[charaFace A 1]
+
+＠卑弥呼
+肚子也饿了，我们先让他们帮忙[r]把刚才我在海边捡的蛤蜊煮一下吧！
+[k]
+
+[messageOff]
+[charaMoveReturn A 0,-5 0.5]
+[se ade158]
+[wt 0.6]
+
+
+＠卑弥呼
+快看，我捡了那么大个的哦。
+[k]
+
+＠卑弥呼
+我也会分给未来亲的！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.0]
+[charaTalk D]
+
+[se ad754]
+[seVolume ad754 0 0.5]
+[se ad16]
+[seVolume ad16 0 0.5]
+[wt 1.5]
+[seStop ad754 1.0]
+[seStop ad16 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_5 0.1]
+
+
+＠无名之龟
+……看来现在没时间悠闲煮蛤蜊了呢，姐姐大人。
+[k]
+
+？1：那是……在战斗吗？
+？2：快走吧！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+唔唔唔，这是争斗的预感……！
+[k]
+
+[charaTalk A]
+[charaCrossFade A 1098194300 5 0.1]
+[wait charaCrossFade A]
+
+
+＠卑弥呼
+而且那黑色的雾气……散发着浓重的不祥气息。
+[k]
+
+[charaTalk A]
+[charaCrossFade A 9010000 4 0.1]
+[wait charaCrossFade A]
+
+＠卑弥呼
+真是的，我还在的那段时间鲜有这种事发生，[r]邪马台国究竟是怎么了啦。
+[k]
+
+[charaTalk A]
+[charaCrossFade A 1098194300 5 0.1]
+[wait charaCrossFade A]
+
+＠卑弥呼
+总之只要我眼睛还没瞎，[r]就不会允许这个国家内发生纷争！
+[k]
+
+[charaFace A 2]
+
+＠卑弥呼
+卑弥呼，出击！
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+
+[pictureFrame cut063_cinema]
+
+[scene 96701]
+[wt 0.5]
+
+[wipein rightToLeft 1.0 1.0]
+[se ad59 1.0]
+[wait wipe]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.4 -150,-50]
+[charaMove D 0,-50 0.3]
+[wt 0.3]
+[seStop ad59]
+[wt 0.2]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠村落里的人
+咿[line 5]！　救……救命啊！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-50]
+
+
+＠玛修
+大家，到这边来！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 0,-50]
+
+＠织田信胜
+姐……姐姐大人也不在……该……该怎么办！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-50]
+
+
+＠玛修
+信胜先生，总之先引导村落里的人们去避难！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 0,-50]
+
+＠织田信胜
+我……我知道了！　可恶！　那些家伙……[r]如果姐姐大人在场，那种家伙根本狗屁不如！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-50]
+
+＠玛修
+信胜先生，赶快！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 0,-50]
+
+＠织田信胜
+好……好的！
+[k]
+
+[messageOff]
+[charaFadeout F 0.5]
+[charaMove F 100,-50 0.4]
+[se ad59]
+[seVolume ad59 0.4 0.6]
+[wt 1.0]
+
+[wipeout rectangleStripRightToLeft 0.3 1]
+[seVolume ad59 0.3 0.3]
+[wait wipe]
+
+[pictureFrame]
+[cameraMove 0.1 0,0 1.01]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+[charaScale F 1.1]
+
+[effect bit_talk_41]
+[wt 0.3]
+
+[wipein rectangleStripLeftToRight 0.2 1]
+[seVolume ad59 0.6 1.0]
+[wait wipe]
+
+
+[shake 0.02 2 2 0.4]
+[seStop ad59 0.3]
+[se bac8]
+
+[charaMoveScale F 1.0 0.2]
+[charaMove F 0,-7 0.2]
+[wt 0.4]
+
+[effectStop bit_talk_41]
+[effectDestroy]
+
+[charaFace F 2]
+
+＠织田信胜
+呜哇！？　别突然冒出来啦，笨蛋！
+[k]
+
+＠织田信胜
+……呃，你是！？
+[k]
+
+？1：玛修！
+？2：还有信胜！
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠玛修
+前……前辈！　太好了，终于找到您了！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+噢！　未来亲的熟人？　果然！
+[k]
+
+[charaFace A 6]
+
+＠卑弥呼
+我的占卜真是百发百中，不，是千发千中。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠玛修
+这……这位是从者吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+虽然我也不太清楚但多半是吧！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠织田信胜
+这家伙怎么回事……喂，先不论这种家伙，[r]姐姐大人没和你在一起吗？
+[k]
+
+[messageOff]
+[charaTalk A]
+
+[se ad162]
+[wt 1.5]
+[seStop ad162 1.0]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠村落里的人
+请……请帮帮我们。还……还有孩子没逃出来……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠玛修
+前辈，有事一会儿再说！　现在得先帮助他们才行！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠织田信胜
+对……对哦！　喂，姐姐大人的御主，[r]赶快干掉那些家伙！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.4]
+
+＠披着羽织的男人
+哈哈哈哈哈哈！　这样一来这村落就是我们的了！
+[k]
+
+？1：他们是……！？
+？2：那羽织……！
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠玛修
+嗯，敌人是……
+[k]
+
+[charaFace E 2]
+
+＠玛修
+[line 3]新选组！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

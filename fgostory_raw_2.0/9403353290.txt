@@ -1,0 +1,474 @@
+
+
+＄94-03-35-32-9-0
+
+
+
+[soundStopAll]
+[charaSet A 11006001 1 萨列里_演出用]
+[charaSet C 11006001 1 萨列里]
+[charaSet D 4017001 1 玛丽]
+[charaSet E 1026001 1 迪昂]
+
+[equipSet H 9806850 1 情人节礼装]
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66600]
+[branch lblConf]
+[label lblNotClear]
+[scene 10310]
+[label lblConf]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 1.4]
+
+
+？1：萨列里！
+？2：找到啦！
+
+？！
+
+
+[charaFace C 7]
+＠萨列里
+[tVoice ValVoice_1100600 0_V010]
+……御主。[wait tVoice]
+[k]
+
+
+[charaFace C 0]
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V020]
+你会向我搭话，原来如此。[r]一定是想借助我的力量吧。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace C 8]
+[bgmStop BGM_EVENT_77 1.0]
+[wt 1.0]
+[charaFace C 2]
+
+[se ad632]
+[charaEffect C bit_talk_lightning_01r]
+[wt 1.5]
+
+[se ad29]
+[charaChange C 11006000 0 fade 1.0]
+[wait charaChange C]
+[seStop ad632 1.5]
+[wt 1.5]
+
+[bgm BGM_EVENT_48 0.1]
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V030]
+[line 6]要杀什么？[wait tVoice]
+[k]
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V040]
+说吧。只要你说出口，我就会照办。[wait tVoice]
+[k]
+
+[charaFace C 1]
+
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V050]
+该前往什么地方。[r]还是说，要启动那个叫模拟装置的东西。[wait tVoice]
+[k]
+
+？1：不是啦。
+
+[charaFace C 0]
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V060]
+哦……？[wait tVoice]
+[k]
+
+？2：今天不是为了这些……
+
+[charaFace C 0]
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V070]
+这样啊。[wait tVoice]
+[k]
+
+？！
+
+[messageOff]
+[se ad596]
+[wt 0.5]
+[bgmStop BGM_EVENT_48 1.0]
+[charaEffectStop C bit_talk_lightning_01r]
+[wt 1.0]
+
+[charaPut A 1]
+[charaScale A 1.3]
+[se ad29]
+[charaEffect A bit_talk_31]
+[wt 0.7]
+
+[charaEffectStop A bit_talk_31]
+[charaChange C 11006001 0 fade 1.0]
+[wait charaChange C]
+[wt 2.0]
+[charaFace C 8]
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V080]
+……[r]……[wait tVoice]
+[k]
+
+[charaFace C 0]
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V090]
+……那么，说说你的来意吧。御主。[wait tVoice]
+[k]
+
+？1：那么，给！
+？2：情人节快乐！
+
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[charaFace C 13]
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V100]
+…………………………………………？[wait tVoice]
+[k]
+
+[bgm BGM_EVENT_11 0.1]
+[charaFace C 9]
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V110]
+御主？[wait tVoice]
+[k]
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V120]
+这是什么。[r]什么意思。[wait tVoice]
+[k]
+
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V130]
+[#巧克力:Cioccolata]？[wait tVoice]
+[k]
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V140]
+似乎多少算是个魔力源，[r]但为何要将这个给我。不明白。不明白。[wait tVoice]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.0]
+[charaFace C 8]
+[wt 1.0]
+[charaFace C 2]
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V150]
+…………你忘了吗？[wait tVoice]
+[k]
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V160]
+我是死，我是暗。我是为了杀戮而存在的。[wait tVoice]
+[k]
+
+[bgm BGM_EVENT_49 0.1]
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V170]
+我只为杀害一个人而[#存在:成形]，但是，[r]却作为替你杀敌的存在显现于此处。[wait tVoice]
+[k]
+
+[branchQuestNotClear lblNotClear2 3000125 4]
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V180]
+或许……[r]在异闻带现界的我并不一样吧……[wait tVoice]
+[k]
+
+[label lblNotClear2]
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V190]
+不要再异想天开了。[r]御主。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad632]
+[charaEffect C bit_talk_lightning_01r]
+[wt 1.5]
+
+[se ad29]
+[charaChange C 11006000 0 fade 1.0]
+[wait charaChange C]
+[charaEffectStop C bit_talk_lightning_01r]
+[seStop ad632 1.5]
+[wt 1.5]
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V200]
+我[line 3][wait tVoice]
+[k]
+
+[charaFace C 1]
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V210]
+我[line 3][wait tVoice]
+[k]
+
+[messageOff]
+[se ad632]
+[charaEffect C bit_talk_charge_red]
+[wt 1.5]
+
+[se ad574]
+[flashin once 0.2 0.2 80000090 80000090]
+[wt 0.3]
+
+[charaChange C 11006002 0 fade 1.0]
+[wait charaChange C]
+[seStop ad632]
+[charaEffectStop C bit_talk_charge_red]
+[wt 2.0]
+
+[charaFace C 1]
+＠萨列里
+[tVoice ValVoice_1100600 0_V220]
+我是死！　是杀害了神宠爱之人的存在！[r]我，我[#不得不以这种形式存在]！[wait tVoice]
+[k]
+
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V230]
+此身乃是恸哭！[r]此身在燎原的尽头，乃是丑陋人类之黑暗！[wait tVoice]
+[k]
+
+
+
+？1：萨列里[line 3]
+
+？！
+
+
+＠萨列里
+[f large][tVoice ValVoice_1100600 0_V240]是谁！[wait tVoice]
+[k]
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V250]
+噢[messageShake 0.01 5 5 1.0]噢，噢噢噢噢……！[r]噢噢噢噢噢噢噢噢噢噢噢噢……！！[wait tVoice]
+[k]
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V260]
+噢噢噢，我……！[wait tVoice]
+[k]
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V270]
+安东尼奥·萨列里是死！　如今仍是！　如今仍是！[r]即便是与其灵魂相似的模样，也不可能在地上复活！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace C 0]
+[wt 1.0]
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V280]
+[line 3]你可千万不能弄错了。御主。[wait tVoice]
+[k]
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V290]
+别将我当成人类来对待。[r]这不行。[wait tVoice]
+[k]
+
+[messageOff]
+[charaSpecialEffect C erasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect C]
+[bgmStop BGM_EVENT_49 1.5]
+[wt 1.5]
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V300]
+唯独这点……[wait tVoice]
+[k]
+
+＠萨列里
+[tVoice ValVoice_1100600 0_V310]
+是不行的……[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout C 0.1]
+
+
+[wt 2.0]
+
+
+
+[wipeFilter cinema 0.5 0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+＠
+在那之后不久[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+
+[bgm BGM_EVENT_94 0.1]
+[wt 1.0]
+
+[charaFace D 1]
+[wt 1.0]
+
+[cameraMove 0.5 0,45 1.0]
+[wt 1.0]
+[cameraHome 1.0]
+[wait camera]
+[wt 1.3]
+
+[charaMoveReturn D 10,-50 0.5]
+[wait charaMoveReturn D]
+[charaMoveReturn D -10,-50 0.5]
+[wait charaMoveReturn D]
+[wt 1.0]
+
+[charaFace D 4]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.4 0,-50]
+[wt 1.4]
+
+[charaFace E 2]
+[wt 1.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+[wt 1.1]
+
+[charaMoveReturn D 0,-60 0.3]
+[wt 0.5]
+
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFaceFade D 1 0.5]
+[wt 2.0]
+
+[bgmStop BGM_EVENT_94 1.0]
+[charaFadeout D 0.4]
+[wt 2.4]
+
+[bgm BGM_EVENT_29 0.1]
+
+
+＠
+玛丽亚应该送了你一件礼物吧。[r]是件模糊不清而充满谜团的礼物……
+[k]
+
+＠
+并不是在某个特定时期送的，[r]也没有明确的赠送人。
+[k]
+
+
+＠
+是说话有些吞吞吐吐，[r]唯有笑容无比灿烂的玛丽亚赠送的礼物。
+[k]
+
+
+＠
+不过，如果是你，一定能明白吧。
+[k]
+
+
+[messageOff]
+[se bas2]
+[charaFace H 0]
+[charaFadein H 0.5 0,-70]
+[wt 2.0]
+
+
+＠
+[line 3]犹如被燎原之火燃烧般漆黑的指挥棒。
+[k]
+
+
+＠
+这种东西不可能是玛丽亚赠送的。[r]我也不会赠送。换言之，就是这么一回事。
+[k]
+
+
+＠
+经过了一番周折，[r]总算送到你手上的那件东西[line 3]
+[k]
+
+＠
+是那家伙给你的礼物。
+[k]
+
+
+＠
+真是的。[r]或许有些无可奈何，但这未免太可疑了。
+[k]
+
+
+[messageOff]
+[wt 1.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_29 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

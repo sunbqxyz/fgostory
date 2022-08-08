@@ -1,0 +1,541 @@
+
+＄94-04-65-07-1-1
+
+[soundStopAll]
+
+[charaSet A 5033002 1 喀耳刻]
+[charaSet B 1098181810 1 奥德修斯]
+
+[charaSet D 1001000 1 特效用_1]
+[charaSet E 1001000 1 特效用_2]
+[charaSet F 1001000 1 特效用_3]
+
+[scene 21101]
+
+[bgm BGM_EVENT_24 0.1]
+
+
+[cameraMove 0.1 0,0 1.01]
+
+[fadein black 1.5]
+[wait fade]
+
+[effect bit_talk_shot_02]
+[se ad170]
+[wt 0.2]
+[charaEffect D bit_talk_14]
+[se ad170]
+[se ad170]
+[wt 0.3]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[se bac151]
+[wt 0.3]
+
+[charaScale A 1.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[se ad671]
+[seStop ad671 0.9]
+[charaMoveScale A 1.0 0.3]
+[wt 0.2]
+[charaFadeout A 0.3]
+[wt 0.7]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.1]
+[charaMoveScale B 1.2 0.2]
+[charaMove B 0,10 0.2]
+[se bac2]
+[effect bit_talk_41]
+[charaFadeout B 0.2]
+[wt 0.2]
+[effectStop bit_talk_41]
+[effectDestroy]
+[wt 0.1]
+
+[charaScale B 1.0]
+
+[masterBranch _Male _Female]
+
+[label _Male]
+
+[fowardEffect bit_talk_CommandMantra_01]
+[wt 0.5]
+[se bas16]
+[wt 1.3]
+[branch _branchEnd]
+
+[label _Female]
+
+[fowardEffect bit_talk_CommandMantra_02]
+[wt 0.5]
+[se bas16]
+[wt 1.3]
+[branch _branchEnd]
+
+[label _branchEnd]
+
+[effect bit_talk_14]
+[shake 0.02 5 5 0.4]
+[se ad471]
+[seStop ad471 1.0]
+[wt 0.4]
+
+[charaScale B 1.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[se ad671]
+[charaMoveScale B 1.0 0.3]
+
+[wt 1.0]
+[charaFace B 4]
+
+[bgmStop BGM_EVENT_24 2.0]
+
+＠奥德修斯
+……到此为止了吗。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[se ad37 0.3]
+
+＠喀耳刻
+御主！
+[k]
+
+？1：抱歉……
+？！
+
+[charaFace A 0]
+
+＠喀耳刻
+不，算了。[r]你是因为担心我才会来的吧。
+[k]
+
+[messageOff]
+[se ade153]
+[seVolume ade153 0 0.6]
+[charaFace A 0]
+[wt 1.0]
+
+[fadeout ed79fc 0.3]
+[se ad29]
+[wait fade]
+
+[cameraHome 0.1]
+
+[charaChange A 5033001 0 fade 0.1]
+[seStop ad39 1.0]
+[seStop ad153 0.6]
+[wait charaChange A]
+[wt 0.1]
+
+[fadein ed79fc 0.8]
+[seStop ade153 0.8]
+[seStop ad29 0.8]
+[wait fade]
+
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠奥德修斯
+这是身为御主理应做的事。[r]最重要的是……胜负并不是关键。
+[k]
+
+[charaFace B 1]
+
+＠奥德修斯
+对吧？
+[k]
+
+[seStop ad37 1.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_95 0.1]
+
+＠喀耳刻
+[line 3]嗯。
+[k]
+
+[charaFace A 4]
+
+＠喀耳刻
+如果一开始……不，是生前吧。[r]如果生前能这样就好了。
+[k]
+
+[charaFace A 5]
+
+＠喀耳刻
+如果能尽情殴打、辱骂、战斗，[r]反而能断得更为彻底。
+[k]
+
+＠喀耳刻
+正因为没这么做，[r]伤口才始终无法痊愈。
+[k]
+
+[charaFace A 0]
+
+＠喀耳刻
+[line 3]好。
+[k]
+
+＠喀耳刻
+所以，我会在你消失之前告白。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠奥德修斯
+……嗯。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠喀耳刻
+我啊，爱过你。
+[k]
+
+
+＠喀耳刻
+哪怕只是单相思，[r]我也爱过你！
+[k]
+
+[charaFace A 0]
+
+＠喀耳刻
+……但是，你并不爱我。[r]不是吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠奥德修斯
+……是的。
+[k]
+
+[charaFace B 0]
+
+
+＠奥德修斯
+我爱着珀涅罗珀。[r]即便成了从者，也依然未曾改变。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠喀耳刻
+能告诉我你爱她的理由吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠奥德修斯
+……理由……我也不知道。[r]不是因为美丽，不是因为温柔。
+[k]
+
+[charaFace B 0]
+
+＠奥德修斯
+只是，因为她就是她，[r]才会编织出这段爱。
+[k]
+
+[charaFace B 7]
+
+＠奥德修斯
+我无法解释清楚……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠喀耳刻
+不，谢谢。[r]我明白了。
+[k]
+
+＠喀耳刻
+你这样就可以了，这样就可以了啊。[r]奥德修斯。
+[k]
+
+[charaFace A 4]
+
+＠喀耳刻
+尽管让美狄亚产生了误会[line 3]
+[k]
+
+[charaFace A 0]
+
+
+＠喀耳刻
+但我其实对你早已没有了遗憾。[r]我还心怀遗憾的，只有与你的离别。
+[k]
+
+
+＠喀耳刻
+只是后悔最后的最后，[r]我们是以吵架的形式分别的。
+[k]
+
+＠喀耳刻
+所以[line 3]现在，我要告诉你。[r]虽然这句话说得实在太晚了。
+[k]
+
+[cameraFilter gray]
+[se ad37 0.5]
+[seVolume ad37 0 0.3]
+
+
+＠
+鲜红色的夕阳与海浪的声音。[r]我和他正面相对。
+[k]
+
+[messageOff]
+[seStop ad37 1.0]
+[bgmStop BGM_EVENT_95 1.0]
+[cameraFilter normal]
+[wt 0.1]
+[charaFaceFade A 1 0.7]
+[wt 1.2]
+[bgm BGM_EVENT_6 0.1]
+
+＠喀耳刻
+奥德修斯。[r]请一定要幸福。
+[k]
+
+＠喀耳刻
+我一直以来最大的愿望，[r]始终都是希望你能幸福。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠奥德修斯
+……[r]……
+[k]
+
+[charaFace B 1]
+
+
+＠奥德修斯
+啊啊，我也松了一口气。[r]因为现在的你，看上去十分幸福。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠喀耳刻
+嗯。
+[k]
+
+[charaFace A 1]
+
+
+＠喀耳刻
+我遇到了好御主，好伙伴。[r]其实我相当享受这第二人生哦？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠奥德修斯
+那太好了。
+[k]
+
+[messageOff]
+[charaEffect D bit_talk_06]
+[wt 1.0]
+[charaFace B 0]
+
+＠奥德修斯
+……唔。[r]看来时间差不多了。
+[k]
+
+[charaPut D 1200,1200]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠喀耳刻
+那就这样。[r]有缘在迦勒底再见吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut D 0,0]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠奥德修斯
+嗯。
+[k]
+
+[charaFace B 0]
+
+＠奥德修斯
+……呃，[%1]。
+[k]
+
+＠奥德修斯
+喀耳刻就拜托您了。[r]只要有你陪着，一定不要紧吧。
+[k]
+
+？1：嗯，我向你保证。
+？！
+
+[messageOff]
+[charaFaceFade B 1 1.3]
+[wt 0.7]
+
+[se ad52]
+[charaSpecialEffect B flashErasure 1 2.5]
+[wait charaSpecialEffect B]
+[charaEffectStop D bit_talk_06]
+[seStop ad52 0.2]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠喀耳刻
+走了啊……
+[k]
+
+？1：没事吧？
+
+＠喀耳刻
+嗯。[r]完全没有问题。
+[k]
+
+？2：我是不是碍到你们了？
+
+＠喀耳刻
+怎么会呢。[r]我倒是要感谢您才行，御主。
+[k]
+
+？！
+
+＠喀耳刻
+内心情绪的整理其实早就完成了。[r]只是，我一直不想承认而已。
+[k]
+
+＠喀耳刻
+但是，已经不要紧了。
+[k]
+
+[charaFace A 1]
+
+＠喀耳刻
+虽然我失恋了[line 3]但并没有气馁！[r]虽然有些难受，但这不算什么！
+[k]
+
+[charaFace A 0]
+
+＠喀耳刻
+话说，御主。
+[k]
+
+＠喀耳刻
+对你来说，我或许只是众多从者中的一个。
+[k]
+
+＠喀耳刻
+但我很庆幸我的御主是你。
+[k]
+
+＠喀耳刻
+……不过嘛，这件事暂且不提。[r]总之把你的后背借我用一下。
+[k]
+
+[charaFace A 3]
+
+＠喀耳刻
+我打算丢人地[#哭个鼻子]。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 84906 1.5]
+[shake 0.02 2 2 0.5]
+[se ad183]
+[wt 3.0]
+
+＠喀耳刻
+……真的非常感谢。[r]再见了，我的恋情。
+[k]
+
+＠
+[line 3]就这样，这小小的特异点，[r]伴随着我的遗憾，彻底消失无踪了。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_6 2.0]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,374 @@
+
+
+＄94-03-84-08-1-0
+
+[soundStopAll]
+
+[charaSet A 98001000 1 玛修]
+[charaSet B 3038000 1 长尾景虎]
+[charaSet C 7035001 1 森长可]
+[charaSet D 1098173410 1 柴田胜家]
+[charaSet E 1098172200 1 足轻_枪兵]
+[charaSet F 1098172100 1 足轻_弓兵]
+
+[scene 79000]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠家老玛修
+不好了，[#前辈:殿下]！　前方来报，[r]迦勒底家的领地遭到了不明人士的入侵！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠长尾景虎
+正好在这种兵力被分成了三路派出去的时候……[r]是想趁我方防御薄弱的时候攻打大本营吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠森长可
+只要全部杀光就没什么差别了吧！[r]主公，赶快去杀了对方吧！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠长尾景虎
+这个嘛，话是这么说没错啦……[r]话说玛修，敌军的规模有多少？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠家老玛修
+关……关于这件事。[r]根据报告，只有……一个人……
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_3 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 10000]
+[skip false]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[bgmStop BGM_EVENT_3 0.4]
+
+[charaSet A 98001000 1 玛修]
+[charaSet B 3038000 1 长尾景虎]
+[charaSet C 7035001 1 森长可]
+[charaSet D 1098173410 1 柴田胜家]
+[charaSet E 1098172200 1 足轻_枪兵]
+[charaSet F 1098172100 1 足轻_弓兵]
+
+[wt 0.4]
+[soundStopAll]
+[maskout black 1.0]
+[wait mask]
+[scene 10000]
+[wt 0.1]
+[maskin black 0.1]
+[wait mask]
+[label selectBranch]
+
+
+
+[revivalBranch lblNormal lblRevival]
+[label lblNormal]
+
+[fowardEffect bit_queststart80250]
+[wait fowardEffect]
+
+[branch lblConf]
+[label lblRevival]
+
+[fowardEffect bit_queststart80286]
+[wait fowardEffect]
+
+[label lblConf]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 79900]
+[wt 1.5]
+
+[skip true]
+
+[fadein black 1.0]
+[se ad16]
+[seVolume ad16 0 0.1]
+[seVolume ad16 1.0 1.0]
+[wait fade]
+
+[seVolume ad16 1.0 0.4]
+[wt 1.5]
+
+[se ad624]
+[shake 0.03 4 4 0.6]
+[wt 1.2]
+
+[shake 0.03 4 4 0.6]
+[wt 0.4]
+
+[seStop ad16 1.0]
+[wt 0.5]
+
+[shake 0.03 4 4 0.6]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 1.0]
+
+[seStop ad624 0.1]
+
+＠柴田胜家
+进攻……进攻……！[bgm BGM_EVENT_24 0.1]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[flashin once 0.2 0.1 FFFFFFAF FFFFFF00]
+[se bac21]
+[wt 0.2]
+[flashin once 0.2 0.1 FFFFFFAF FFFFFF00]
+[se bac21]
+[wt 0.25]
+[flashin once 0.2 0.1 FFFFFFAF FFFFFF00]
+[se bac21]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠E：迦勒底家足轻
+不……不行了！？　根本挡不住！？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[fowardEffect bit_shot_01 0,75]
+[se bac20]
+[wt 0.3]
+[se bac20]
+[wt 0.5]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠F：迦勒底家足轻
+铁炮和箭矢都没有用，这要怎么办啊！？[fowardEffectDestroy bit_shot_01]
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad7]
+[se ad60]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 50,0]
+[charaMove B 1 0.2]
+[wt 0.2]
+[seStop ad60]
+[wt 0.2]
+
+＠长尾景虎
+大家都退下，接下来由我们来接手！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠家老玛修
+各位足轻，请到这边来！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠迦勒底家足轻
+啊，好！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFace F 0]
+[charaFadein E 0.1 0]
+[charaFadein F 0.1 2]
+[wt 0.3]
+
+[se ad443]
+[seStop ad443 1.2]
+[se ad55]
+[seStop ad55 1.2]
+
+[charaMove E -206,0 0.5]
+[charaMove F 306,0 0.5]
+[charaFadeout E 0.4]
+[charaFadeout F 0.4]
+[wt 1.4]
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠长尾景虎
+那就是敌方将领啊……
+[k]
+
+＠长尾景虎
+咦？　这身铠甲的打扮，我似乎在哪儿……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠森长可
+唔？　那是……
+[k]
+
+？1：熟人吗？
+
+？2：真的只有一个人！？
+
+？！
+
+[charaFace C 9]
+
+＠森长可
+什么嘛，这不是柴田大叔嘛！
+[k]
+
+＠森长可
+哇哈哈哈哈！　我还以为你被殿下杀了呢，[r]原来在这种地方呀！　还精神吗！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠长尾景虎
+织田的柴田胜家……手取川一战后好久不见……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[se ad624]
+[shake 0.03 4 4 0.6]
+[wt 1.2]
+
+[shake 0.03 4 4 0.6]
+[wt 0.4]
+
+[seStop ad624 0.1]
+
+＠柴田胜家
+进攻……进攻……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠长尾景虎
+总之不能让他继续前进了。[r]在这里解决他！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠森长可
+可别怪我哦，柴田大叔！[r]那么，我要上了哦[line 7]！！！！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

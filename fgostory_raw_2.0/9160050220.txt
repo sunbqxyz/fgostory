@@ -1,0 +1,553 @@
+
+
+＄91-60-05-02-2-0
+
+[soundStopAll]
+
+
+
+[charaSet A 6005001 1 杰克]
+[charaSet B 9002001 1 天草四郎]
+[charaSet C 5004001 1 童谣（？）]
+[charaSet D 1098181200 1 伦敦女士]
+[charaSet E 98006200 1 敌人]
+
+[charaSet H 8001000 1 dummy特效1]
+[charaSet I 8001000 1 dummy特效2]
+[charaSet J 8001000 1 dummy特效3]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_11]
+
+[scene 10000]
+
+
+[charaScale H 0.1]
+[charaEffect H bit_talk_radiallight02 0,-1300]
+
+[fadein black 1.5]
+[wait fade]
+
+＠
+[line 3]哪怕向光伸出手也无法触及。[bgm BGM_EVENT_1 0.1][r][line 3]哪怕向暗伸出手也无法拥抱。
+[k]
+
+＠
+回首望去，徒留痛苦记忆。
+[k]
+
+＠
+痛苦，渴望被拯救，在一无所知的情况下，[r]死去死去不断死去。
+[k]
+
+＠
+犹如被碾碎般死去，[r]犹如被搅碎般消失。
+[k]
+
+＠
+是社会的牺牲者，也是社会的敌人。[r]这[line 3]
+[k]
+
+＠
+究竟该追究谁的罪责呢？
+[k]
+
+[messageOff]
+[fadeout white 1.2]
+[bgmStop BGM_EVENT_1 1.2]
+[wait fade]
+
+[charaPut H 1200,1200]
+[wt 0.1]
+
+[scene 77800]
+[wipeFilter cinema 0.5 0]
+[wt 1.0]
+
+[fadein white 1.2]
+[wait fade]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 0,-50]
+[wt 0.4]
+
+＠杰克
+咦？[r]这里是……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 0,-50]
+[wt 0.4]
+
+＠C：？？？
+这里是你们出生长大的土地。[r]不，应该说是没能抚养你们长大的土地吧！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠杰克
+哎？[r]咦？　童谣？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠童谣（？）
+不，我不是童谣。
+[k]
+
+＠童谣（？）
+我只是变成了你们不想遭到攻击的对象而已。
+[k]
+
+[charaFace C 1]
+
+＠童谣（？）
+这是报应。[r]是因果。[bgm BGM_EVENT_5 0.1]
+[k]
+
+＠童谣（？）
+你们必须向你们杀害的人们赎罪。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-50]
+
+＠杰克
+……呜！
+[k]
+
+[messageOff]
+[se bac6]
+
+[effect bit_talk_Slash_white_01 0,-50]
+[backEffect bit_talk_Slash_white_01 0,-50]
+[wt 0.2]
+[charaFace A 4]
+[charaShake A 0.04 3 3 0.6]
+[wt 1.2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠童谣（？）
+能逃避罪责？[r]能不受责罚？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+＠杰克
+……别说了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+
+＠童谣（？）
+不，不！[r]你们有[#被杀的义务]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+＠杰克
+别说了，别说了，别说了……！[r]不要再这么说了！
+[k]
+
+[messageOff]
+[se bac30]
+[effect bit_talk_tornado02 0,-50]
+[backEffect bit_talk_tornado02 0,-50]
+[wt 0.8]
+
+[se bac28]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.2]
+[charaShake A 0.03 2 2 0.4]
+[wt 0.8]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+
+＠童谣（？）
+来吧，你们不可能一直逃得掉！
+[k]
+
+[effectDestroy bit_talk_tornado02]
+[backEffectDestroy bit_talk_tornado02]
+
+＠童谣（？）
+你们正是诞生于这世间的极小地狱[line 3]
+[k]
+
+＠童谣（？）
+所以你们应该接受这一切，立刻消失！
+[k]
+
+
+[messageOff]
+[fadeout black 1.2]
+[bgm BGM_EVENT_5 1.2 0.2]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[scene 10902]
+[wipeOff]
+[wt 1.4]
+
+[fadein black 1.2]
+[bgm BGM_EVENT_5 1.2 1.0]
+[wait fade]
+[wt 0.4]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠天草四郎
+……好了，虽说有些唐突，但我想谈一些事。[r]不不，当然不是单纯的闲聊。
+[k]
+
+[charaFace B 4]
+
+＠天草四郎
+尽管我不清楚您是否知道[line 3]
+[k]
+
+＠天草四郎
+哪怕在为数众多的从者中，[r]开膛手杰克也有其特殊的要素。
+[k]
+
+＠天草四郎
+[#她属于恶灵那类]。[wt 0.4][charaFace B 0][r]不是在说坏话哦？
+[k]
+
+＠天草四郎
+是诞生于伦敦这一城市的货真价实的恶灵。
+[k]
+
+＠天草四郎
+而这恶灵则披着名为开膛手杰克的皮。[r]她就是这样的存在。
+[k]
+
+＠天草四郎
+……而据我所知，[r]这是只有她才具备的特性。
+[k]
+
+＠天草四郎
+据传言，当作为Berserker职阶现界时，[r]好像会召唤来[#不同的犯人]。
+[k]
+
+＠天草四郎
+会以孩童形态出现的，[r]恐怕只有我们认识的杰克吧。
+[k]
+
+？1：但她很聪明吧？
+
+[charaFace B 1]
+
+＠天草四郎
+嗯，她非常聪明。[r]甚至可以说思考速度很快。
+[k]
+
+[charaFace B 0]
+
+＠天草四郎
+但话说回来，[r]以孩童形态现界的从者大多都很聪明。
+[k]
+
+＠天草四郎
+顺便一提，[r]她的聪慧并非生前获得的。
+[k]
+
+＠天草四郎
+严格说来……唔，[r]更接近集合体的智慧。
+[k]
+
+＠天草四郎
+但不管怎么说，[r]她都是应该享受这份可爱的孩子[line 3]
+[k]
+
+？2：以恶灵而言，她还算是个好孩子吧。
+
+[charaFace B 1]
+
+＠天草四郎
+嗯，可以说是个非常好的孩子。
+[k]
+
+[charaFace B 0]
+
+＠天草四郎
+至于对敌人凶狠、残忍的问题，[r]对从者来说是理所应当的。
+[k]
+
+＠天草四郎
+想尽可能快乐生活的态度令人十分欣慰。
+[k]
+
+？！
+
+＠D：？？？
+[line 3]但那孩子是个杀人犯吧？
+[k]
+
+[charaFace B 5]
+
+＠天草四郎
+！
+[k]
+
+
+[messageOff]
+[se adm37]
+[bgm BGM_EVENT_5 0.6 0.6]
+[wt 0.3]
+
+[seStop adm37 0.4]
+[wt 0.6]
+
+[se bac23]
+[fowardEffect bit_talk_threethrows 0,-170]
+[wt 0.08]
+[se bac23]
+[wt 0.08]
+[se bac23]
+[wt 0.5]
+
+[charaPut J 0,0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad28]
+[fowardEffect bit_shot_01 0,0 H]
+[wt 0.08]
+[se ad28]
+[wt 0.08]
+[se ad28]
+[wt 0.2]
+[bgm BGM_EVENT_5 0.6 1.0]
+[wt 0.9]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠天草四郎
+御主，请往后退一些。
+[k]
+
+＠天草四郎
+请原谅我突然射出黑键。[r]请问您是哪位？
+[k]
+
+[messageOff]
+[charaPut I 0,0]
+[charaEffect I bit_talk_11]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[fowardEffectDestroy bit_shot_01]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠D：？？？
+我[line 3]我的话，嗯。[r]叫我[#伦敦女士]好了。
+[k]
+
+？1：伦敦女士……？
+
+＠伦敦女士
+名字无关紧要。
+[k]
+
+＠伦敦女士
+然后呢，你有直视现实的觉悟吗？
+[k]
+
+
+？2：伦敦女士。说她是杀人犯这点……
+
+＠伦敦女士
+对，这是不容置疑的事实。[r]但决不能避而不见。
+[k]
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠天草四郎
+……看来，您并不是敌人呢。[r]失礼了。
+[k]
+
+[charaFace B 0]
+
+＠天草四郎
+……唔。
+[k]
+
+＠天草四郎
+御主，这只是我的直觉，[r]我们暂时和她一起行动吧。
+[k]
+
+＠天草四郎
+她似乎也希望我们能这样。
+[k]
+
+？1：明白了。
+？！
+
+[charaPut I 0,0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠伦敦女士
+……非常感谢。[r]这下就好办了。
+[k]
+
+＠伦敦女士
+正如您所说的，[r]我想与两位一起行动。
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[scene 10902]
+[wipeOff]
+[wt 0.6]
+
+[fadein black 1.2]
+[wait fade]
+[wt 0.4]
+
+[charaPut I 0,0]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠伦敦女士
+问题不在于我究竟是什么，[r]究竟是什么样的存在。
+[k]
+
+＠伦敦女士
+我希望你们专心思考如何拯救那个孩子。[r]我猜多半会遭到妨碍。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.9 1.0]
+[bgmStop BGM_EVENT_5 0.9]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[wipein rectangleStripRightToLeft 0.9 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[seStop ad60 0.4]
+[wt 0.4]
+
+[se ad25]
+[wt 1.5]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠天草四郎
+刚说完就遭到妨碍了。
+[k]
+
+＠天草四郎
+那我们先速战速决打倒他们，[r]再仔细询问您的目的吧。
+[k]
+
+[charaFace B 2]
+
+＠天草四郎
+我们上，御主！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

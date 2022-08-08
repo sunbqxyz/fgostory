@@ -1,0 +1,297 @@
+
+＄94-06-22-01-1-0
+
+
+
+
+
+
+
+
+
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 98001000 1 マシュ]
+[charaSet C 98002000 1 フォウ]
+
+[charaSet F 5043002 1 アスクレピオス]
+
+[imageSet J back10000 1 1]
+[charaScale J 1.05]
+
+
+[charaSet T 98115000 1 エフェクト用ダミー]
+
+[charaPut T 2000,2500]
+[charaEffect T bit_talk_10]
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 105800]
+[branch lblConf]
+[label lblNotClear]
+[scene 106000]
+[label lblConf]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+＠アスクレピオス
+ふむ。[r]記憶障害だな。正しくは記憶喪失、だが。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+記憶喪失……！　過去の記憶が思い出せない、[r]思い出せてもファイリングできないという、あの……！
+[k]
+
+[charaFace A 12]
+＠マシュ
+……あの。[r]……本当に、記憶喪失なんですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠アスクレピオス
+極めて珍しい症例ではある。[r][#ハロウィンの出来事のみ綺麗さっぱり忘れるなど]。
+[k]
+
+＠アスクレピオス
+それ以外は完全に健康体だ。[r]そこは請け合おう。
+[k]
+
+[messageOff]
+[charaFace F 1]
+[wt 1.0]
+
+＠アスクレピオス
+……ふふ。ふふふふふふ！
+[k]
+
+[charaFace F 6]
+＠アスクレピオス
+なかなか愉快な症例じゃないか。[r]忘れずにレポートを書いておかねば。
+[k]
+
+？1：えーと……どうすればいいん[&だろう:でしょう]？
+？！
+
+[charaFace F 0]
+＠アスクレピオス
+伝統的な治療法として聞くのは、脳天に衝撃を与える、[r]というところだが推奨はできない。
+[k]
+
+＠アスクレピオス
+ただ単に負傷するだけだ。
+[k]
+
+[charaFace F 4]
+＠アスクレピオス
+……そうだな。
+[k]
+
+[charaFace F 0]
+＠アスクレピオス
+ハロウィンに詳しいサーヴァントに話を聞いてみる、[r]あたりが初回治療としては負担が軽いだろう。
+[k]
+
+＠アスクレピオス
+それはおまえたちだけでもできるな？
+[k]
+
+[charaFace F 6]
+＠アスクレピオス
+僕はその間に、もっと面白……[wt 0.8][charaFace F 3]おほん、[wt 0.6][charaFace F 0][r]効果的な治療法の可能性を探っておく。
+[k]
+
+＠アスクレピオス
+つまらない自己処置で勝手に治ればそれでよし、[wt 0.8][charaFace F 6][r]そうでなければ……クククク……。
+[k]
+
+[messageOff]
+[se ad95]
+[seStop ad95 1.0]
+[charaMove F 50,0 0.4]
+[charaFadeout F 0.4]
+[wt 1.4]
+
+[se ad8]
+[wt 2.5]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠マシュ
+良かった……[wt 0.5][charaFace A 0]いえ、良くはありませんが、[r]状況が分かったコトは良いことかと。
+[k]
+
+[charaFace A 1]
+＠マシュ
+診察、ありがとうございました。[r]アスクレピオスさん！
+[k]
+
+[charaFace A 0]
+＠マシュ
+あとは……[r]ハロウィンに詳しいサーヴァント、ですね……。
+[k]
+
+＠マシュ
+マスター、[#僭越:せんえつ]ですが、[r]わたしには心当たりがあります。
+[k]
+
+[charaFace A 13]
+＠マシュ
+ハロウィンは多くの怪異を呼びましたが、[r]素敵なイベントであった事は間違いありません。
+[k]
+
+[charaFace A 22]
+＠マシュ
+数々の冒険、数々の絶景……
+[k]
+
+[charaFace A 1]
+＠マシュ
+それらをマスターが思い出せるよう、[r]マシュ・キリエライト、最善を尽くします！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[se ad8]
+[wt 2.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+？1：……いま怪異って言わなかった？
+？！
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠フォウ
+フォウフォウ……。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+＠
+[line 3]終わりがあれば始まりがあり。[bgm BGM_EVENT_11 0.1][r]そしてまた始まることもある。
+[k]
+
+＠
+ブレインシェイク、ローリングマインド。[r]ともあれ楽しかった思い出には変わりが無い。
+[k]
+
+＠
+ならば、追想してもいいのではなかろうか。
+[k]
+
+＠
+あれは全くどうしようもなくヒドい争いで、[r]呆れ返るべき特異点であり、
+[k]
+
+＠
+そして思い出せば出すほど、[r]笑みがこぼれて仕方のない出来事だった、気がする。
+[k]
+
+＠
+……。[r]……いや多分そんな感じだったと思う。
+[k]
+
+＠
+あれもまた、一種の青春だったと。[r]そんな気がする。
+[k]
+
+＠
+とはいえ、もう随分と昔の話のようにも思えるし、[r]一度振り返ってみるのもいいだろう。
+[k]
+
+＠
+さあ、[#瞼:まぶた]を閉じて。[r]そして全てを思い出そう。
+[k]
+
+＠
+麗しきハロウィンを過ごす[#君:マスター]よ。[r]始まりは[line 3]何だったかな？
+[k]
+
+？1：チェイテ城……
+？！
+
+＠
+そう……チェイテ城で全てが始まった。[r]さあ、シミュレーションを開始しよう！
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_11 1.5]
+[wait fade]
+
+[wt 0.5]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[soundStopAllFade 0.4]
+[scene 10000]
+
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[charaFadeout C 0.1]
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+[skip false]
+
+
+[fadein black 0.8]
+[wait fade]
+
+[effect bit_queststart80340]
+[wt 10.0]
+
+[fadeout black 1.5]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

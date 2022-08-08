@@ -1,0 +1,373 @@
+＄91-20-20-02-3-1
+
+[soundStopAll]
+
+[charaSet A 8001002 1 玛修]
+[charaSet B 2020001 1 伊什塔尔]
+[charaSet C 2002001 1 吉尔伽美什]
+[charaSet D 3008001 1 恩奇都]
+[charaSet E 1001000 1 特效用]
+[charaSet F 1001000 1 特效用]
+
+[imageSet G cut030_ggr 1]
+[charaScale G 1.5]
+
+
+[scene 10000]
+
+[bgm BGM_EVENT_24 0.1]
+[charaPut F -256,126]
+
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_kengekiall01]
+[se ad32]
+[wt 0.5]
+[se ad32]
+[wt 0.1]
+[se ad32]
+[wt 0.6]
+
+[effect bit_talk_14]
+[se ad170]
+[wt 0.5]
+[charaEffect F bit_talk_14]
+[se ad170]
+[wt 0.8]
+
+[effect bit_talk_arrow01or]
+[se ade8]
+[wt 1.3]
+
+[fadeout white 0.3]
+[se ade7]
+[wait fade]
+
+[charaFadein G 0 0,-400]
+[wt 0.3]
+
+[fadein white 1.0]
+[seStop ade7 1.0]
+[effect bit_talk_explosion]
+[wait fade]
+
+[se ad63]
+[shake 0.05 3 3 0.7]
+[wt 0.7]
+
+[shake 0.05 0 3 1.5]
+[se ad109]
+[se ad203]
+[seVolume ad203 0 0.7]
+[wt 2.5]
+
+[wipeout rectangleStripUpToDown 0.3 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+
+[scene 20730]
+[wt 0.3]
+
+[wipein rectangleStripDownToUp 0.3 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[bgmStop BGM_EVENT_24 1.5]
+
+
+＠玛修
+古伽兰那MKⅢ停止活动！[r]战斗结束了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+
+＠吉尔伽美什
+哼。不如全盛期的天之公牛啊。[r]这种程度根本不需要本王出马。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠恩奇都
+角就由我们回收了。[r]可以吧？　伊什塔尔。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠伊什塔尔
+嗯……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+这样问题就都解决了吧。[r]话说，女神伊什塔尔。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaFace B 3]
+[charaFadein B 0.1 0]
+
+＠伊什塔尔
+……什么事，玛修？
+[k]
+
+
+＠玛修
+您说这次的事情是非公开的吧。
+[k]
+
+[charaFace B 15]
+
+＠伊什塔尔
+……嗯，没错啊？
+[k]
+
+[charaFace A 2]
+
+＠玛修
+为了成为今后的警醒，[r]我已经将事情完整记录下来了，请您知晓！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠伊什塔尔
+……………………哎嘿。
+[k]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+？1：“哎嘿”个头啊，女神大人。
+？2：你应该稍微反省一下了，女神大人。
+
+？！
+
+[charaFace B 11]
+
+＠伊什塔尔
+好……[charaMove B 0,-20 0.5]
+[k]
+
+[messageOff]
+[charaFace B 1]
+[charaMove B 0,0 0.2]
+[se bac1]
+[seStop bac1 0.3]
+[wt 0.3]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠伊什塔尔
+但[messageShake 0.03 5 5 0.8]是超级的我很厉害吧？[r]我觉得只要经过打磨，下次一定能行！
+[k]
+
+＠伊什塔尔
+或者说我的目的意识已经非常明确了……[r]搜集财宝固然不错，可没想到复仇也能令人热血沸腾！
+[k]
+
+
+[bgmStop BGM_EVENT_7 1.0]
+
+？1：瞬间振作起来了！？
+？2：完全没有反省！？
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_6 0.1]
+
+
+＠吉尔伽美什
+……真是的，这哪是什么丰收女神啊。[r]根本不是什么大地母神的系谱，搞不好比恶神性质更为恶劣。
+[k]
+
+
+＠吉尔伽美什
+喂，那边那个只是被牵连的杂种！[r]为了不让她做这种傻事，你一定要好好看着她！
+[k]
+
+
+？1：但这连陛下您都做不到吧？
+？2：但陛下您都放任不管了吧？
+
+？！
+
+＠吉尔伽美什
+蠢货。[r]并非做不到，而是没去做。
+[k]
+
+
+＠吉尔伽美什
+明知会炸的火中之栗根本无需去取，[r]只是不想扯上关系而已。
+[k]
+
+
+＠吉尔伽美什
+更何况，[#自然:神明]是有报复机能的。[r]在没有理由的前提下是无法打倒的。
+[k]
+
+
+＠吉尔伽美什
+再加上，冷静下来说，[r]她毕竟是货真价实的女神。
+[k]
+
+
+＠吉尔伽美什
+千万别忘记，她是个只要有这种想法，[r]随时都能毫不犹豫毁灭你们的存在。
+[k]
+
+[charaFace C 3]
+
+
+＠吉尔伽美什
+在此前提上，如果你们仍不知悔改地继续与她维持关系，[r]就必须做好将来还要面对个一两百次这次程度的骚动才行。
+[k]
+
+[charaFace C 0]
+
+＠吉尔伽美什
+本王的忠告就是这些。[r]好好记住。
+[k]
+
+？1：是！
+？2：是！
+
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[effect bit_talk_06]
+[wt 2.0]
+
+[charaFaceFade D 1 1.0]
+[charaFaceFade C 1 1.0]
+[wt 2.0]
+[se ad52]
+[charaSpecialEffect D flashErasure 1 1.7]
+[charaSpecialEffect C flashErasure 1 1.7]
+[wait charaSpecialEffect D]
+[wait charaSpecialEffect C]
+[effectStop bit_talk_06]
+[wt 1.0]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠玛修
+吉尔伽美什王、恩奇都先生都离开了。
+[k]
+
+＠玛修
+尽管两位非常严厉，[r]但这次都相当可靠呢。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+
+＠伊什塔尔
+哎，这个总结什么意思。[r]你们是站在我这边的吧！？
+[k]
+
+？1：…………………………，当然啦！
+？2：…………………………（翘起大拇指。）
+
+？！
+
+[charaFace B 1]
+
+
+＠伊什塔尔
+就是嘛！　尽管回答前有个漫长的停顿，[r]但可以视作由于疲劳导致的读取时间过长！
+[k]
+
+[charaFace B 11]
+
+＠伊什塔尔
+总之……虽说复仇失败了，[r]但得到了宝贵的经验，宝具也得到了磨练……
+[k]
+
+[charaFace B 13]
+
+
+＠伊什塔尔
+对你来说，算是不错的结果了吧？[r]因为可靠的女神变得更为可靠了。
+[k]
+
+[charaFace B 1]
+
+＠伊什塔尔
+今后我也会用宝具击溃那些碍事的家伙。
+[k]
+
+＠伊什塔尔
+放心吧，就当坐上了天舟，[r]今后也要答应我的请求哦，[%1]♡
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_6 2.0]
+[wait fade]
+[soundStopAll]
+[end]

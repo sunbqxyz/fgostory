@@ -1,0 +1,586 @@
+
+
+＄94-06-43-06-3-1
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 5050000 1 サンタマルタ]
+[charaSet C 2001002 1 エミヤ]
+[charaSet D 4011001 1 ブーディカ]
+[charaSet E 7016001 1 タマモキャット]
+[charaSet F 3047001 1 パーシヴァル]
+[charaSet G 1098224600 1 タラスク]
+[charaSet H 1098222100 1 ジャンヌ？]
+[charaSet I 1098222000 1 ジャンヌ・オルタ？]
+
+[charaSet J 5012001 1 ニトクリス]
+
+[scene 134700]
+
+[fadein black 0.5]
+[bgm BGM_EVENT_70 0.1]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+……ぜー、[charaMoveReturn D 0,-5 0.5][wt 0.4]はー。[charaMoveReturn D 0,-5 0.5]
+[k]
+
+
+＠ブーディカ
+ぜんぶ片付いた、わね……？[r]そうよね……ふう……。
+[k]
+
+[messageOff]
+[charaMove D 0,-10 0.3]
+[wt 0.2]
+[se ad54]
+[seVolume ad54 0 0.4]
+
+＠ブーディカ
+…………さすがに、疲れたわ。ぜはー。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+＠タマモキャット
+ｚｚｚ……。[r]（※疲れたのでもう寝ている）
+[k]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+[cueSe SE_21 21_ad1119]
+[cueSeStop 21_ad1119 0.5]
+[wt 1.0]
+
+＠パーシヴァル
+神獣との連戦は流石に骨が折れる。[r]いやしかし、よく耐えたものだねマスター。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+普段の鍛錬の成果だよ。[r]カルデアのマスターは隠れた努力家だからね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+やっつけた！[r]スフィンクスの群れをやっつけたのよね！
+[k]
+
+[charaFace A 4]
+
+＠サンタマルタ
+でも……
+[k]
+
+[messageOff]
+[charaMoveReturn A 10,0 0.6]
+[wt 0.7]
+[charaMoveReturn A -10,0 0.9]
+[wt 1.0]
+[charaMoveReturn A 0,0 0.5]
+[wt 0.6]
+
+＠サンタマルタ
+あの……[r]とってもとっても言い難いのだけど……
+[k]
+
+[messageOff]
+[charaMoveReturn A 10,0 0.6]
+[wt 0.7]
+[charaMoveReturn A -10,0 0.9]
+[wt 1.0]
+[charaMoveReturn A 0,0 0.5]
+[wt 0.6]
+[bgmStop BGM_EVENT_70 1.5]
+
+＠サンタマルタ
+みんな、そのぅ……[line 3]
+[k]
+
+？1：みんな雄じゃないこれ？
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth D 6]
+[charaDepth E 5]
+[charaDepth C 7]
+[charaDepth F 4]
+
+[charaTalk depthOff]
+
+[charaTalk off]
+[charaFace E 4]
+[charaFadeinFSL E 0.1 -436,0]
+[charaFace D 4]
+[charaFadeinFSL D 0.1 -106,0]
+[charaFace C 4]
+[charaFadeinFSR C 0.1 136,0]
+[charaFace F 7]
+[charaFadeinFSR F 0.1 356,0]
+[wt 0.1]
+[se ad119]
+[charaShake E 0.05 4 4 0.5]
+[charaShake D 0.05 4 4 0.5]
+[charaShake F 0.05 4 4 0.5]
+[wt 2.0]
+[seStop ad119 0.5]
+
+[charaTalk on]
+[charaTalk C]
+[bgm BGM_EVENT_7 0.1]
+
+＠エミヤ
+気付いてしまったか。[r]やれやれ。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[se ad119]
+[charaShake A 0.05 4 4 0.5]
+[wt 1.0]
+
+＠サンタマルタ
+や、やっぱり雄よね？[r]じゃあ、ミルクもらえないってこと……？
+[k]
+
+[seStop ad119 0.3]
+
+＠サンタマルタ
+そんなぁ……[bgmStop BGM_EVENT_7 1.5]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 7]
+[charaFadein J 0.1 1]
+
+＠ニトクリス
+……。[r]……。
+[k]
+
+
+[bgm BGM_EVENT_71 0.1]
+
+＠ニトクリス
+事情は詳しく聞きません。[r]戦った以上、もはや貴方たちは敵対者。
+[k]
+
+[charaFace J 9]
+
+＠ニトクリス
+ですのでこちらからはひとつだけ、尋ねます。
+[k]
+
+＠ニトクリス
+諦めますか？[r]諦めるのであれば、追撃はしません。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 9]
+[charaFadein J 0.1 1]
+
+＠ニトクリス
+こほん。[r]では改めて、いえ最後に尋ねます。
+[k]
+
+[bgmStop BGM_EVENT_71 1.0]
+
+＠ニトクリス
+[line 3][#諦めますか]？
+[k]
+
+[messageOff]
+[wt 0.3]
+
+？1：諦めない
+？！
+
+
+[bgm BGM_MAP_64 0.1]
+
+＠ニトクリス
+！！
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+？1：だよね、マルタさん！
+？！
+
+[charaFace A 1]
+
+＠サンタマルタ
+うん！
+[k]
+
+[messageOff]
+[charaFace A 6]
+[wt 1.0]
+[charaFace A 5]
+
+＠サンタマルタ
+うん[line 3]私、諦めない！[r]みんなに美味しいって言ってもらえるご馳走を作る！
+[k]
+
+
+＠サンタマルタ
+エミヤ、ブーディカ、タマモキャットさん！[r]サー・パーシヴァルに、マシュに、頼光さんに……
+[k]
+
+
+＠サンタマルタ
+ここで諦めたりしたら、[r]頑張ってもらってるみんなに顔向けできないわ。
+[k]
+
+[messageOff]
+[charaFace A 1]
+[wt 1.0]
+[charaFace A 0]
+
+＠サンタマルタ
+それにね。[r]かわいい私のマスターの手前、
+[k]
+
+[charaFace A 5]
+
+
+＠サンタマルタ
+[#お姉さん:サ 　ン 　タ]がくじけていられる訳ないもの！
+[k]
+
+？1：おおっとルビが
+？2：いま変なルビ入らなかった？
+
+？！
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.7 1]
+[bgm BGM_MAP_64 0.7 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 110100]
+[wt 0.7]
+
+[wipein rectangleStripDownToUp 0.7 1]
+[bgm BGM_MAP_64 0.7 1.0]
+[wait wipe]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.4]
+
+
+＠ジャンヌ？
+そう、その通り。[r]姉の力は無限大です。
+[k]
+
+
+＠ジャンヌ？
+マルタ様。[r]貴女にカルデア姉選手権の参加資格ありと認めます。
+[k]
+
+＠ジャンヌ？
+だから今は、[r]ひとりのサンタ姉としてがんばってくださいね。
+[k]
+
+＠ジャンヌ？
+私、応援していますので。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.4 1]
+[wt 0.4]
+
+
+＠ジャンヌ・オルタ？
+な[messageShake 0.03 5 5 0.5]んなのよ、なんでまた空にいるのよアンタ！[r]あと私もなんでいるの！？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠ジャンヌ？
+フフフ……さあ……？
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.7 1]
+[bgm BGM_MAP_64 0.7 0.5]
+[wait wipe]
+
+[charaFadeout H 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+[scene 134700]
+[wt 0.7]
+
+[wipein rectangleStripUpToDown 0.7 1]
+[wait wipe]
+[bgmStop BGM_MAP_64 2.0]
+
+[wt 0.4]
+
+＠サンタマルタ
+……なんだったのかしら今の。[r]でも、よくわからないけど力が湧いてきたわ！
+[k]
+
+[charaFace A 2]
+[bgm BGM_EVENT_63 0.1]
+
+＠サンタマルタ
+タラスク！　来て！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad239]
+[seVolume ad239 0 0.3]
+[seVolume ad239 1.0 1.0]
+[wt 1.3]
+
+[effect bit_talk_gale 100,0]
+[wt 0.5]
+[seStop ad239 0.1]
+
+[se ad671]
+[seStop ad671 1.0]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 50,0]
+[charaMove G 0,0 0.3]
+[wt 0.8]
+
+
+＠タラスク
+（アイヨー）
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 9]
+[charaFadein J 0.1 1]
+
+＠ニトクリス
+……。[r]……。
+[k]
+
+[charaFace J 8]
+
+＠ニトクリス
+……………………？
+[k]
+
+＠ニトクリス
+えっと私にもよく分かりませんが、[r]前にも増して気力全開になってしまいましたね？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+ええ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 9]
+[charaFadein J 0.1 1]
+
+＠ニトクリス
+そうですか。[r]では、仕方ありません。
+[k]
+
+＠ニトクリス
+追撃というか本気で処断いたしますので、[r]どうかお覚悟を。
+[k]
+
+[charaFace J 2]
+
+＠ニトクリス
+[line 3]来ませい！
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[shake 0.05 0 3 1.5]
+[se ad14]
+[wt 1.5]
+[seStop ad14 0.5]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+大型の高魔力反応！[r]新手か！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+人智を超えた荒ぶるものの気配だ。[r]或いは、先刻の群れ以上の存在かもしれない。
+[k]
+
+[charaFace F 5]
+
+
+＠パーシヴァル
+ならば、退けないな。[r]牙[#剥:む]く万象から人を護ってこその騎士！
+[k]
+
+[charaFace F 2]
+
+＠パーシヴァル
+[line 3]さあ。来い！
+[k]
+
+？1：みんな、迎撃準備！
+？2：踏ん張り所[&だ:だよ]！
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+オッケー！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[shake 0.05 0 3 1.5]
+[se ad14]
+[wt 1.5]
+[seStop ad14 0.5]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠タマモキャット
+上だワン！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+直上からの襲撃か！[r]伏せろ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se bac100]
+[wt 0.5]
+[se ad85]
+[se ade216]
+[seStop ade216 1.5]
+[effect bit_talk_square_slash_r]
+[wt 1.3]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_63 2.0]
+[wait fade]
+[soundStopAll]
+[end]

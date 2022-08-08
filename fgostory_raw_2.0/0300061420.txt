@@ -1,0 +1,588 @@
+
+
+
+＄03-00-06-13-2-0
+
+
+
+[soundStopAll]
+
+[sceneSet A 94000 1]
+[charaSet C 1098191200 1 阿黛勒]
+[charaSet D 1098191300 1 马卡里俄斯]
+[charaSet E 7010001 1 卡利古拉]
+[charaSet F 8001410 1 玛修]
+[charaSet G 9005001 1 福尔摩斯]
+[charaSet H 1017001 1 武藏]
+[charaSet I 8001400 1 武装玛修（有护目镜）]
+[sceneSet J 94100 1]
+[sceneSet K 94101 1]
+[charaSet S 5009000 1 特效用dummy1]
+[charaSet T 5009000 1 特效用dummy2]
+
+[charaScale A 1.01]
+[charaScale J 1.01]
+[charaScale K 1.01]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+
+[charaFadein A 0 0,-200]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad895]
+[wt 1.5]
+[seStop ad895 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_71 0.1]
+
+＠
+『人类啊，感激涕零吧。』
+[k]
+
+＠
+『人类啊，跪伏于地吧。』
+[k]
+
+＠
+『你们痛苦的叫喊皆会传入我耳中。』
+[k]
+
+＠
+『无需担心。』
+[k]
+
+＠
+『[#待明日]，[#这痛苦就会消散]。』
+[k]
+
+[messageOff]
+[se ad895]
+[wt 2.0]
+[seStop ad895 1.0]
+[wt 1.0]
+
+＠
+『直到我悉数杀尽迦勒底为止。』
+[k]
+
+＠
+『你们也继续自相残杀一会儿吧，市民啊。』
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_71 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[scene 92601]
+[wt 1.0]
+[skip false]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_62 0.1]
+
+
+＠福尔摩斯
+…………作战计划就是这样。
+[k]
+
+＠福尔摩斯
+[#不试试怎么知道结果呢]。[r]这就是我们现阶段的破神战术！
+[k]
+
+＠凯妮斯
+这算哪门子战术啊！[r]哈哈哈哈哈哈哈哈，走一步算一步吗！
+[k]
+
+＠福尔摩斯
+毕竟无法将敌方战力准确数据化。[r]那也只能边放胆尝试，边看准胜机了。
+[k]
+
+＠福尔摩斯
+但我们现在拥有多种对抗手段。[r]要凭靠这些手段，完成对机神阿佛洛狄忒的破神作战！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_62 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[scene 10000]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[criMovie talk_mov049 bgmPlay true]
+
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 92601]
+[wt 0.5]
+[skip true]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_24 0.1]
+
+
+＠阿黛勒
+她察觉到我们身在高空了！[r]灵子战攻击正向这边袭来！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[se ad903]
+[wt 1.0]
+
+＠阿黛勒
+！？
+[k]
+
+＠阿黛勒
+英灵卡利古拉，为何要打开座舱罩[line 3]！？
+[k]
+
+[messageOff]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.0 0.6]
+[wt 1.2]
+
+[se ad7]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.7 1]
+[wt 1.0]
+
+＠卡利古拉
+此乃余之舞台！[r]余怎可不挺身而出！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.3]
+
+[se ad903]
+[wt 1.5]
+
+＠马卡里俄斯
+座舱罩紧急关闭！
+[k]
+
+＠玛修
+卡利古拉皇帝屹立于座舱罩正上方！[r]而且……魔力正急遽提升……！
+[k]
+
+＠阿黛勒
+阿佛洛狄忒的灵子战攻击，到达！
+[k]
+
+[seStop ad556 2.0]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠卡利古拉
+噢噢噢！
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth E 1]
+
+[effect bit_talk_36]
+[se ad39]
+[wt 1.5]
+[seStop ad39 0.7]
+[effectStop bit_talk_36]
+[wt 0.6]
+
+[charaFace E 2]
+
+＠卡利古拉
+[f large][line 3]『[#吞噬吾心吧，月光:Flucticulus Diana]』！
+[k]
+
+[messageOff]
+[wt 0.3]
+
+[backEffect bit_talk_caligula_np]
+[se ad968]
+[se ad966]
+[wt 2.0]
+[seStop ad968 0.4]
+[se ad967]
+[wt 2.5]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+
+＠玛修
+这是……！[r]卡利古拉先生的宝具……！
+[k]
+
+
+
+＠福尔摩斯
+目前还可以中和精神污染！[r]恐怕敌人会再次提高输出！
+[k]
+
+＠福尔摩斯
+躲避攻击的同时急速下降，[r]我们要发动直接攻击！
+[k]
+
+＠福尔摩斯
+[line 3]马卡里俄斯！
+[k]
+
+
+
+＠马卡里俄斯
+抓紧了！[r]卡利古拉就抓紧座舱罩吧！
+[k]
+
+＠马卡里俄斯
+冲啊啊啊啊啊啊啊啊啊啊啊啊啊啊！
+[k]
+
+
+
+＠武藏
+来吧！
+[k]
+
+
+
+＠I：玛修
+我们上，御主！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[se ade8]
+[se ade123]
+[wait wipe]
+[charaFadeout I 0.1]
+[charaTalk depthOff]
+[charaDepth A 1]
+[overlayFadein A 0.1 0,-200]
+[wt 0.5]
+[skip false]
+[cameraMove 0 0,0 1.2]
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wt 0.7]
+[seStop ade123 0.5]
+[wait wipe]
+[wt 0.5]
+
+＠
+『看见了，看见了，渺小之辈！』
+[k]
+
+＠
+『竟敢僭越地使用羽翼，真是不知天高地厚！』
+[k]
+
+＠
+『你们要以渺小的身躯挑战神明吗！　人类！』
+[k]
+
+[messageOff]
+[criMovie talk_mov049 bgmPlay false]
+[wt 1.0]
+[charaFadeout A 1.5]
+
+
+[scene 10000]
+[wt 12.5]
+
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[cameraMove 0.1 0,0 1.01]
+[scene 92601]
+[wt 0.1]
+
+[skip true]
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠卡利古拉
+噢噢……！[r]噢噢噢噢噢噢噢噢噢噢噢噢噢……！！
+[k]
+
+[charaFace E 2]
+
+＠卡利古拉
+[f large]狄安[line 2]娜[line 4]！！
+[k]
+
+[messageOff]
+[wt 0.2]
+
+
+[backEffect bit_talk_caligula_np]
+[se ad968]
+[se ad966]
+[wt 2.0]
+
+[seStop ad968 0.4]
+[se ad967]
+[wt 2.5]
+
+＠卡利古拉
+噢噢，神啊！　美神维纳斯啊！[r]身为泛人类史太母西尔维亚祖先的美丽神明！
+[k]
+
+＠卡利古拉
+特洛伊王室的安喀塞斯王子，[r]你曾深爱的那个男人的儿子，即为埃涅阿斯！
+[k]
+
+＠卡利古拉
+而他，就是神祖母亲西尔维亚的祖先！[r]换言之……
+[k]
+
+＠卡利古拉
+[#正是你的爱孕育了罗马]！[r]活在异闻带中的你，是不可能知晓这一事实的！
+[k]
+
+＠卡利古拉
+然而余！　不会忘记！
+[k]
+
+＠卡利古拉
+哪怕你如今已是不怀着爱统治着爱的神明！[r]余，罗马，也不会忘记对你的爱！
+[k]
+
+[bgmStop BGM_EVENT_24 3.0]
+[skip false]
+
+＠卡利古拉
+同时[line 3]
+[k]
+
+＠卡利古拉
+余将凭人类的[#浪漫:罗马]，与异闻带的你诀别！[r]凝视吧！　这就是！　人类愿望的形态！
+[k]
+
+[charaFace E 2]
+
+＠卡利古拉
+[f large]来吧！　Rider！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.3]
+
+[se ad474]
+[charaPut S 1]
+[charaEffect S bit_talk_36]
+[wt 2.5]
+
+[fadeout white 1.0]
+[wait fade]
+[charaEffectDestroy S]
+[charaTalk depthOff]
+[charaDepth J 1]
+[charaDepth K 2]
+
+[scene 10000]
+[seStop ad474 0.2]
+[wt 0.5]
+[fadein white 0.7]
+[wait fade]
+[criMovie talk_mov050 bgmPlay false]
+
+[wt 15.0]
+[bgm BGM_EVENT_82 0.1]
+[wt 3.0]
+[overlayFadein J 2.0 0,-200]
+[wt 2.5]
+
+＠黄金大武者
+[f large]Goooooooolden！！！
+[k]
+
+＠黄金大武者
+[f large][line 3]来也！！
+[k]
+
+[skip true]
+
+＠
+『什……么……！？』
+[k]
+
+＠
+『你是……什么……！』
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+
+
+＠
+[line 3]星间都市山脉奥林波斯。[r][line 3]都市区域东部上空。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+＠
+大多数人，[r]仰望着天空。
+[k]
+
+＠
+遭受美神的灵子情报攻击，灵魂与精神几乎被[r]破坏殆尽的奥林波斯市民中，有约八成多的人，
+[k]
+
+＠
+仰望着天空。
+[k]
+
+＠
+看到了紧抓驰骋天际的异形的人形物体。[r]看到了紧抓嘲笑世人机神的钢铁铠甲。
+[k]
+
+＠
+奇妙的是[line 3]
+[k]
+
+
+
+
+
+＠
+那物体宛若数千年前否定宙斯的绝对支配，[r]期盼与人类共生的[#军神:阿瑞斯]的身姿。
+[k]
+
+＠
+[line 3]阻挡异形的巨大人形物体！
+[k]
+
+＠
+[line 3]拒绝支配的人类守护者！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+＠I：玛修
+前辈……巨大的人形构造体……！
+[k]
+
+＠I：玛修
+缠住了机神阿佛洛狄忒！
+[k]
+
+＠I：玛修
+这造型，令人联想起……[r]日本的平安时代……！
+[k]
+
+＠阿黛勒
+破神召唤阵，紧急试验成功启动！[r]英灵·坂田金时的宝具情报体虚拟展开！
+[k]
+
+＠马卡里俄斯
+成功了！
+[k]
+
+＠马卡里俄斯
+利用大召唤阵的虚拟召唤！
+[k]
+
+＠马卡里俄斯
+虽然不是破神作战的关键[line 3][r]但是！　这也是对抗机神的巨大力量！
+[k]
+
+[messageOff]
+[charaFadein K 0 0,-200]
+[se ad908]
+[wt 0.1]
+[charaFadeout J 0.4]
+[wt 1.0]
+
+＠黄金大武者
+我们在这奥林波斯！[r]赌上了自己的性命！
+[k]
+
+＠黄金大武者
+大召唤阵是用来召唤打倒宙斯的[#VIP:Grand Class]，[r]但在上一个阶段！　还有用来打头阵的宝具情报！
+[k]
+
+＠黄金大武者
+混入了[#我:坂田金时]灵核一部分的[#杀手锏]！[r]这就是！　平安最强，赖光四天王的Favorite[line 3]
+[k]
+
+＠黄金大武者
+曾讨伐北山莲台野大土蜘蛛的大金刚！[r]其名亦为黄金巨熊号！
+[k]
+
+[se ad938]
+[effect bit_talk_41]
+＠黄金巨熊号
+[f large]大宝具『[#摄津式大具足:Settsushiki Oogusoku]·[#熊野:Kumano]』！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_82 1.0]
+[effectDestroy bit_talk_41]
+[wt 1.5]
+
+[bgm BGM_EVENT_24 0.1]
+＠
+[f large]『小小机关竟敢放肆！』
+[k]
+
+＠黄金巨熊号
+[f large]机关方面彼此彼此吧，笨蛋！
+[k]
+
+＠黄金巨熊号
+迦勒底的老大！[r]还有一骑当千的英灵们！
+[k]
+
+＠黄金巨熊号
+来吧[line 3]让我们在此Full Power地上吧！
+[k]
+
+＠黄金巨熊号
+[f x-large]打倒！
+[k]
+
+＠黄金巨熊号
+[f x-large]神明！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

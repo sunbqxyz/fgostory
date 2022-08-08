@@ -1,0 +1,744 @@
+
+
+＄94-04-49-03-1-0
+
+[soundStopAll]
+
+[skip false]
+
+[branchQuestNotClear lblNotClear1 3000320 4]
+[label lblClear1]
+[flag IsGirl true]
+[branch lblIsClearConf1]
+[label lblNotClear1]
+[flag IsGirl false]
+[label lblIsClearConf1]
+
+[skip true]
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 6008000 1 Cosmotic Beauty夫人]
+[charaSet C 7027300 1 Amazones CEO_普通]
+[charaSet D 1098119600 1 Amazones CEO_轱辘]
+[charaSet E 98002000 1 芙芙]
+[charaSet G 5017001 1 Sweet Witch]
+[charaSet H 3016000 1 赫克托耳]
+[charaSet I 6031001 1 刑部姬]
+[charaSet J 5009000 1 特效用]
+
+[branch lblNotGirl1 IsGirl false]
+[label lblGirl1]
+[charaSet F 1098124510 1 达·芬奇]
+[branch lblIsGirlConf1]
+[label lblNotGirl1]
+[charaSet F 98111500 1 达·芬奇]
+[label lblIsGirlConf1]
+
+[scene 31500]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠玛修
+呃，现在说这些或许有些晚，[r]但Beauty夫人也要与御主以及CEO的配送组同行吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Cosmotic Beauty夫人
+既然要合作，那配送员的不足对妾身的公司来说，[r]也是攸关生死的问题。必须帮忙解决才行。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠C：Amazones CEO
+接下来我们可能会直面[r]仅凭我们的能力无法克服的困难。
+[k]
+
+＠C：Amazones CEO
+我觉得届时可能需要借助迦勒底，[r]以及夫人的埃及风的力量。
+[k]
+
+＠C：Amazones CEO
+不好意思，但拜托各位了。
+[k]
+
+[charaFace C 11]
+
+＠C：Amazones CEO
+话说，有一件事我很在意。[r]我想再问一句。为什么你会知道我们的情况？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠Cosmotic Beauty夫人
+多亏了我司优秀的情报网[line 3][r]这些刚才妾身已经提过了，再补充两句吧。
+[k]
+
+[charaFace B 0]
+
+＠Cosmotic Beauty夫人
+或许你们并不知道，不久之前，[r]有个传言瞬间传遍了整个业界。
+[k]
+
+＠Cosmotic Beauty夫人
+就是关于Amazones.com的现状。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠芙芙
+芙？
+[k]
+
+？1：是指员工都消失了吗？
+？2：是指只剩CEO一个人了吗？
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Cosmotic Beauty夫人
+嗯。而正是通过取证确认了真实性后，[r]妾身才会认定这是个机会，并开始了行动。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠C：Amazones CEO
+唔。这就奇怪了。
+[k]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaFace C 4]
+
+＠C：Amazones CEO
+员工的消失的确是个重大的问题，[r]但只要露出破绽就会被人生吞活剥乃是世界的常理。
+[k]
+
+[charaFace C 0]
+
+＠C：Amazones CEO
+我自然没有找任何人商量过。[r]也决不会去找最近传闻中的那什么银河警察。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玛修
+是与事件有关的人刻意将情报泄露出去……[r]是这样吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[branch lblNotGirl2 IsGirl false]
+[label lblGirl2]
+[charaFace F 25]
+[charaFadein F 0.1 1]
+[branch lblIsGirlConf2]
+[label lblNotGirl2]
+[charaFace F 0]
+[charaFadein F 0.1 0,-90]
+[label lblIsGirlConf2]
+
+＠达·芬奇
+这样认为会比较自然吧。[r]关键在于对方的目的。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth C 2]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：Amazones CEO
+或许是与Amazones.com有仇的人[r]……在故意煽风点火吧。
+[k]
+
+＠C：Amazones CEO
+急速成长的我司树敌众多。[r]还要包括潜在的敌人在内。
+[k]
+
+[charaFace B 3]
+[charaFadein B 0.1 480,0]
+[charaShake B 0.15 1 0 0]
+
+＠C：Amazones CEO
+有人会像夫人那样，觉得这是个机会，[r]企图致我于死地[line 3]
+[k]
+
+＠C：Amazones CEO
+也有人会制定策略，[r]打算侵占我们的公司。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaShakeStop B]
+
+＠C：Amazones CEO
+我们今后的配送任务中，[r]极有可能包括了这些人设下的陷阱。
+[k]
+
+[charaFace C 8]
+
+＠C：Amazones CEO
+一定要小心行事，[%1]！
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_70 1.2]
+[wait fade]
+[charaFadeout C 0.1]
+[charaTalk depthOn]
+
+
+[scene 31000]
+[wt 1.0]
+[fadein black 1.2]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠C：Amazones CEO
+好了，下一个配送地就在这附近。[r]客户名是『Sweet Witch』。
+[k]
+
+＠C：Amazones CEO
+应该是这里的某家店铺……
+[k]
+
+[charaTalk G]
+[se ad533]
+[seVolume ad533 0 0.5]
+[wt 1.0]
+
+[se ad59]
+[seVolume ad59 0 0.1]
+[seVolume ad59 0.5 1.0]
+[wt 1.0]
+[seStop ad59 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠G：？？？
+啊～，来了！　总算来了！[r]是Amazones.com吧！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace G 2]
+[charaFadein G 0.1 0]
+[charaFace C 11]
+[charaFadein C 0.1 2]
+
+＠C：Amazones CEO
+正是。您是Sweet Witch吧？[r]请在这里签字[line 3]
+[k]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[charaFace G 5]
+
+＠Sweet Witch
+签字？　你居然让我签字？[r]明明没有赶上，多么恬不知耻啊！
+[k]
+
+＠C：Amazones CEO
+没有赶上……是什么意思？
+[k]
+
+[bgm BGM_EVENT_72 0.1]
+
+[charaFace G 0]
+
+＠Sweet Witch
+就是字面意思啦。[r]我订购的是我们店里用来制作烤薄饼的材料。
+[k]
+
+[charaFace G 2]
+
+＠Sweet Witch
+然而配送居然延误，导致了我们无法供货！
+[k]
+
+＠Sweet Witch
+今天可是特殊的日子，[r]我明明千叮咛万嘱咐过了……！
+[k]
+
+[charaFace C 11]
+
+＠C：Amazones CEO
+实……实在是太抱歉了。[r]请稍等片刻。我现在就确认收货单……
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠Sweet Witch
+本店，『Lily亲[#极致:Psycho]乐园』[r]是面向本地客户的烤薄饼店。
+[k]
+
+＠Sweet Witch
+一直以来都勤勤恳恳踏踏实实地赢得大家的信任。
+[k]
+
+＠Sweet Witch
+努力得到了回报，我们接到了今天举办[r]『孤儿院孩子们庆生会』的任务……
+[k]
+
+[charaFace G 4]
+
+＠Sweet Witch
+那个猫耳小姐姐失望的表情……[r]让我无比愧疚，
+[k]
+
+＠Sweet Witch
+我唯有通过随机向半径十光年内某人[r]施加周一不吃我的烤薄饼就会变成猪的
+[k]
+
+＠Sweet Witch
+奇异而梦幻的诅咒才得以宣泄自己的烦恼……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠刑部姬
+这种行为通常被称为恐怖袭击吧？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠Sweet Witch
+这是爱的表现。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠刑部姬
+爱……爱……？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Cosmotic Beauty夫人
+这涉嫌违反银河防止不正当竞争法吧！[wt 0.7][charaEffect B bit_talk_starshine -45,155][se ade126][seVolume ade126 0 0.6]
+[k]
+
+
+[charaEffectDestroy B]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠Sweet Witch
+这不过是种小小的宣泄罢了！[r]总之，你们为什么不早点来啦！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_72 1.0]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠C：Amazones CEO
+……唔？[r]没有超过配送预定时间啊。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠Sweet Witch
+哎，这不可能……！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠C：Amazones CEO
+不，准确地说，[r]确实超过了下订单时的需求配送时间。
+[k]
+
+＠C：Amazones CEO
+虽说超过了，但我们已经向您发送了邮件，[r]而您这边也回复表示同意了才对。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠Sweet Witch
+不要随便找什么借口了，[r]我根本不记得自己做过这种事！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠C：Amazones CEO
+请容我确认一下。呃……
+[k]
+
+[charaFace C 11]
+
+＠C：Amazones CEO
+嗯，针对我方货物发送延迟的问题，[r]我们的确发送了道歉信与是否同意延迟的确认邮件。
+[k]
+
+＠C：Amazones CEO
+而您这边的回复是[r]『完全没有问题哟～，随时都可以啦！』这样。
+[k]
+
+[charaFace C 12]
+
+＠C：Amazones CEO
+也就是说，一切都在预定范围内，我们并没有延误！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠Sweet Witch
+我……我没有回复这种邮件！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠刑部姬
+唔……唔……
+[k]
+
+＠刑部姬
+这回复确实不像是Sweet Witch小姐会说的话呢……
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠D：Amazones CEO
+唔。[r]关于这次的问题，
+[k]
+
+＠D：Amazones CEO
+我只能说是我方的联络失误与不可抗力综合起来，[r]才会导致这种不幸的结果[line 3]
+[k]
+
+[bgm BGM_EVENT_27 0.1]
+
+[charaFace D 0]
+
+＠D：Amazones CEO
+对您这样有困难的客户，我推荐这种高级服务。
+[k]
+
+＠D：Amazones CEO
+只需订购这项服务，每月只需缴纳少量会员费，[r]就能得到令人瞠目的良好用户体验，
+[k]
+
+＠D：Amazones CEO
+附赠次日送达服务，[r]部分地区还能实现当日达[line 3]
+[k]
+
+？1：不愧是CEO，好顽强的商人精神。
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠芙芙
+芙……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠Sweet Witch
+我……我说不知道就是不知道！[r]不要再说这种莫名其妙的话了！
+[k]
+
+[charaFace G 5]
+
+＠Sweet Witch
+事已至此……！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ade120]
+[wt 1.5]
+[se ade121]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠C：Amazones CEO
+唔，迅速收货并签字。是我们最喜欢的顾客呢。
+[k]
+
+[charaFace C 12]
+
+＠C：Amazones CEO
+但您根本不需要这么慌张地开封确认，[r]我们的配送是不可能发生错[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_27 1.0]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠Sweet Witch
+把这个，这样，这样，再这样！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.5]
+
+[se ad39]
+[fadeout white 1.5]
+[wait fade]
+[fadein white 0.3]
+[seStop ad39 0.3]
+
+[se ade362]
+[fowardEffect bit_talk_magical_pon]
+[wt 0.5]
+[seStop ade362 0.3]
+
+[wt 0.5]
+
+[se ad14]
+[se ad241]
+[shake 0.02 3 3 2.2]
+[wt 2.2]
+[seVolume ad14 1.5 0.3]
+[seVolume ad241 1.5 0.3]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠玛修
+不好了，前辈！　突然出现威胁反应！
+[k]
+
+？1：突然闻到了很香的味道哦。
+？2：这是……烤、薄、饼……？　呜，我的头……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠C：Amazones CEO
+唔，这是……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠Sweet Witch
+是失去了机会的最热卖烤薄饼！
+[k]
+
+＠Sweet Witch
+只能让你们全部买下来了！[r]没关系，这个超级好吃！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Cosmotic Beauty夫人
+哎呀。本以为是来投诉的，[r]结果居然反过来向我们推销，好大的胆子啊。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠C：Amazones CEO
+只不过我也是身经百战的CEO。[r]强行推销这种反击斗法当然也会。
+[k]
+
+[charaFace C 9]
+
+＠C：Amazones CEO
+如果你不知道这句格言的话，就让我告诉你吧。
+[k]
+
+[charaFace C 2]
+
+＠C：Amazones CEO
+“当一个人想向CEO推销东西的时候，[r][f small]  [f -]这个人已经被CEO捏住了股价”！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[seStop ad14 0.4]
+[seStop ad241 0.4]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+

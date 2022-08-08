@@ -1,0 +1,187 @@
+
+
+
+＄91-11-03-01-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+[charaSet A 99502600 1 玛修]
+[charaSet B 5016001 1 杰罗尼莫]
+[charaSet C 11003001 1 贞德·Alter]
+[charaSet D 98006200 1 幽灵]
+[charaSet E 99502600 1 特效用]
+
+[scene 20502]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk A]
+[charaPut E 1]
+[charaEffect E bit_talk_10_LowLevel]
+[wt 0.1]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠玛修
+……库·丘林先生说得没错，[r]这里一个人也没有。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠杰罗尼莫
+不，有。[r]你们那里应该也能探测到反应。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaPut E 1]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠玛修
+……嗯，除御主以外没有其他生物。[r]存在于那里的“那些”，全都是灵体。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠贞德·Alter
+那当然了。这座城市是早已毁灭的城市。[r]哪怕世界被修复，哪怕居民返回……
+[k]
+
+＠贞德·Alter
+人理也只会与[#历史]配合。[r]浸透这段时间的憎恨与哀怨会残留下来。
+[k]
+
+＠贞德·Alter
+也就是说，憎恨与绝望是无法轻易消除的。[r]甚至可能因为某种契机表现出来。
+[k]
+
+[charaFace C 1]
+＠贞德·Alter
+所以，趁现在斩草除根。[r]这很合理吧？
+[k]
+
+[charaFace C 0]
+＠贞德·Alter
+……好。下一波敌人来了。[r]做好觉悟了吗？
+[k]
+
+？1：早就有觉悟了。
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠杰罗尼莫
+……御主，为以防万一提醒你一下。
+[k]
+
+＠杰罗尼莫
+她说的觉悟，[r]不是指攸关生死的战斗。
+[k]
+
+[charaFace B 5]
+＠杰罗尼莫
+而是在问你，是否能下狠心消灭那些[r]逐渐化为邪恶存在的[#无辜的灵]。
+[k]
+
+[charaFace B 2]
+
+？2：我觉得自己已经做好了。
+
+[charaFace C 1]
+＠贞德·Alter
+……哼，真的做好了吗。
+[k]
+
+＠贞德·Alter
+哪怕那些[r]全都是纯洁无瑕的灵魂？
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+？！
+
+＠杰罗尼莫
+总之又有敌人来了！[r]快准备起来！
+[k]
+
+[charaFadeout B 0.1]
+
+[bgmStop BGM_EVENT_5 0.7]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.7]
+＠幽灵
+好痛啊……好痛……[r]好热啊……好痛苦……
+[k]
+
+[charaFadeout D 0.2]
+[wt 0.2]
+
+[charaScale D 1.15]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 -256,40]
+＠幽灵
+救命……救命……[r]不要……不想死……
+[k]
+
+[charaFadeout D 0.2]
+[wt 0.2]
+
+[charaScale D 1.3]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 256,80]
+＠幽灵
+死……不死……死……死了……[r]杀了我……杀了你……
+[k]
+
+[charaFadeout D 0.2]
+[wt 0.2]
+
+[flashin once 0.1 0.1 FF0000AF FF000000]
+
+[charaScale D 1.5]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,120]
+[shake 0.03 5 5 0.7]
+[wt 0.7]
+[bgm BGM_EVENT_3 0.1]
+＠幽灵
+要[wt 0.15]把[wt 0.15]你[wt 0.15]们[wt 0.15][r]全[wt 0.15]部[wt 0.15]
+[k]
+
+＠幽灵
+杀[wt 0.15]光[wt 0.15]。
+[k]
+
+[messageOff]
+[se ad21]
+[seStop ad21 0.8]
+[wt 0.8]
+
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

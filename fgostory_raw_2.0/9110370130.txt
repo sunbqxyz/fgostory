@@ -1,0 +1,767 @@
+
+
+＄91-10-37-01-3-0
+
+
+
+[soundStopAll]
+
+[charaSet A 1037001 1 红阎魔]
+[charaSet B 98071000 1 茨木童子]
+[charaSet C 3011000 1 芬恩·麦克库尔]
+[charaSet D 2014000 1 背大米的人]
+[charaSet E 1098161300 1 麻雀]
+
+[charaSet F 98071000 1 茨木童子（剪影）]
+[charaFilter F silhouette 01060eFF]
+
+[charaSet G 98006100 1 特效dummy1]
+[charaSet H 98006100 1 特效dummy2]
+[charaSet J 98006100 1 特效dummy4]
+[charaSet K 98006100 1 特效dummy5]
+[charaSet L 98006100 1 特效dummy6]
+[charaSet M 98006100 1 特效dummy7]
+
+[charaRoll K 9]
+[charaScale K 1.2]
+[charaRoll L -6]
+[charaScale L 1.4]
+[charaScale M 1.0]
+
+
+[scene 27000]
+[effect bit_talk_gagemist]
+[cameraMove 0 0,0 1.02]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad24]
+[wt 1.8]
+[se ad716]
+[shake 0.04 3 2 1.0]
+[wt 1.8]
+
+[bgm BGM_EVENT_48 0.1]
+
+？1：难以置信……真的好强啊……
+？2：那个茨木童子居然将如此强敌……？
+
+？！
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠麻雀
+鬼和地狱十分契合啾。[r]这是近乎必胜的禁忌组合啾。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠背大米的人
+这就是所谓的如虎添翼吧。[r]茨木童子果然把从老板娘那里偷来的宝物[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠芬恩·麦克库尔
+嗯。从能够驱使如此强大的鬼怪来看，[r]可以肯定是使用了红老板娘的『阎魔帐』了吧。
+[k]
+
+＠芬恩·麦克库尔
+……我的预测太天真了。
+[k]
+
+＠芬恩·麦克库尔
+何止红阎魔阁下无法独自解决，[r]连我们都可能因为大意而败北。
+[k]
+
+[charaFace C 5]
+
+＠芬恩·麦克库尔
+抓紧时间吧。尽管说不定已经迟了[line 3][r]但我们必须确认老板娘的安危！
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_48 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[effectStop bit_talk_gagemist]
+[wt 0.1]
+
+[scene 10000]
+[wt 0.4]
+
+[bgm BGM_EVENT_24 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[se bac417]
+[effect bit_bolg_03 0,-50]
+[wt 0.5]
+
+[fadeout white 0.25]
+[wait fade]
+
+[effectDestroy bit_bolg_03]
+
+[scene 27600]
+[charaEffect J bit_talk_gagemist_Purple]
+
+[charaScale A 1.2]
+
+[fadein white 0.25]
+[wait fade]
+
+[se ad671]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+[charaShake A 0.04 4 4 0.5]
+[wt 0.1]
+
+[charaMoveScale A 1.0 0.4]
+[wt 1.0]
+
+[se bac1]
+[charaFace A 2]
+[charaFadeout A 0.4]
+[charaMove A 0,10 0.2]
+[charaMoveScale A 1.2 0.2]
+[charaEffect G bit_talk_41]
+[wt 0.6]
+
+[charaMoveScale A 1.0 0]
+[charaPut G 2000,2000]
+[charaEffectStop G bit_talk_41]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.2 1]
+[wt 0.4]
+
+[se ad82]
+[effect bit_talk_kengekiall02]
+[wt 0.3]
+[se ad602]
+[charaShake F 0.04 3 3 0.4]
+[wt 0.2]
+[se ad82]
+[flashin once 0.1 0.1 FFFFFFCC FFFFFF80]
+[charaShake F 0.04 3 3 0.4]
+[wt 1.1]
+
+[charaMove F 0,15 0.2]
+[wt 0.2]
+
+[se ad322]
+[charaMove F 0,0 0.1]
+[fowardEffect bit_talk_impactlanding]
+[shake 0.04 3 2 0.6]
+[wt 1.2]
+
+[se ad267]
+[fowardEffect bit_talk_29]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[charaFadeout F 0.4]
+[wt 0.4]
+
+[se ad439]
+[seVolume ad439 0 0.2]
+[charaEffect H bit_talk_gouka 0,-50]
+[wt 0.2]
+
+＠茨木童子
+呼哈哈哈！　这热量，这火焰！[r]这汹涌迸发的力量！
+[k]
+
+＠茨木童子
+虽然吾并不相信地狱的诸多传说，[r]但没想到竟然如此惊人！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[seStop ad439 0.3]
+[charaPut H 2000,2000]
+[charaEffectStop H bit_talk_gouka]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠红阎魔
+你究竟要糊涂到什么时候啾，茨木！[r]看来我只能将你的双臂砍下来啾！
+[k]
+
+
+＠红阎魔
+阎雀·升雏！　紧接着是降[#燕:风]！！[r]雀之一刺，大旋风[line 3]！
+[k]
+
+[messageOff]
+[charaMove A 0,-10 0.1]
+[wt 0.1]
+[se bac307]
+[charaEffect K bit_talk_gram_slash_02 50,0 V]
+[charaEffect A bit_talk_quickmove]
+[charaFadeout A 0.1]
+[wt 1.1]
+
+[se bac307]
+[charaFadein A 0.1 0,10]
+[charaEffect A bit_talk_quickmove]
+[charaEffect L bit_talk_gram_slash_02 90,0]
+[charaMove A 1 0.1]
+[wt 1.3]
+
+[se bac283]
+[seVolume bac283 0 0.7]
+[charaFace A 13]
+[fowardEffect bit_talk_sword_light]
+[wt 0.8]
+[charaFadeout A 0.5]
+[wt 0.1]
+[charaMoveScale A 0.9 0.4]
+[wt 0.6]
+[se bac7]
+[se bac138]
+[charaEffect M bit_talk_tornado01]
+[charaMoveScale M 1.2 0.4]
+[wt 0.2]
+[shake 0.04 3 3 0.8]
+[se bac7]
+[se bac138]
+[wt 0.1]
+[se bac7]
+[se bac138]
+[wt 0.2]
+[se bac7]
+[se bac138]
+[wt 0.2]
+[se bac138]
+[charaEffectStop M bit_talk_tornado01]
+[wt 0.3]
+[charaPut M 2000,2000]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 0.7]
+
+[charaMoveReturn B -20,20 0.3]
+[wt 0.15]
+[se bac389]
+[seVolume bac389 0 0.7]
+[fowardEffect bit_talk_throwing 0,0]
+[fowardEffect bit_talk_throwing 170,140]
+[fowardEffect bit_talk_throwing -190,-190]
+[wt 0.5]
+
+[fadeout black 0.2]
+[wait fade]
+
+[charaPut J 2000,2000]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[charaSet F 1035000 1 迪尔姆德]
+
+[charaDepth F 1]
+[charaDepth D 9]
+
+[fadein black 0.2]
+[wait fade]
+[wt 0.2]
+
+[se bac150]
+[effect bit_talk_14 -120,70]
+[wt 0.35]
+[se bac151]
+[effect bit_talk_14 70,-110]
+[wt 0.25]
+
+[fadeout white 0.2]
+[wait fade]
+
+[scene 27600]
+[charaPut J 0,0]
+
+[charaScale A 1.2]
+
+[fadein white 0.3]
+[wait fade]
+
+[se ad671]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+[charaShake A 0.04 4 4 0.5]
+[wt 0.1]
+
+[charaMoveScale A 1.0 0.4]
+[wt 1.2]
+
+[charaFace A 5]
+[charaMove A 0,-30 0.3]
+[charaShake A 0.04 3 0 0.3]
+[wt 0.2]
+
+[se ad54]
+[wt 0.8]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠茨木童子
+呼哈哈，吾早就看穿了！[charaMoveReturn B 0,20 0.2][wt 0.1][r]雀剑，被吾击败！[charaMoveReturn B 0,20 0.2][wt 0.2]
+[k]
+
+＠茨木童子
+对平时的吾来说，这斩击或许的确快到看不见，[r]但这次吾的身体下意识行动了！
+[k]
+
+[charaFace B 0]
+
+＠茨木童子
+[line 3]大概就是这种感觉吧。
+[k]
+
+[messageOff]
+[charaMoveReturn B -20,20 0.3]
+[wt 0.15]
+[se bac389]
+[seVolume bac389 0 0.5]
+[fowardEffect bit_talk_throwing 0,0]
+[fowardEffect bit_talk_throwing 170,140]
+[fowardEffect bit_talk_throwing -190,-190]
+[wt 0.3]
+
+[charaFace B 2]
+[charaMoveReturn B 20,20 0.3]
+[wt 0.15]
+[se bac389]
+[seVolume bac389 0 0.6]
+[fowardEffect bit_talk_throwing 0,0 H]
+[fowardEffect bit_talk_throwing -170,140 H]
+[fowardEffect bit_talk_throwing 190,-190 H]
+[wt 0.3]
+
+[charaMoveReturn B -20,20 0.3]
+[wt 0.15]
+[se bac389]
+[seVolume bac389 0 0.8]
+[fowardEffect bit_talk_throwing 0,0]
+[fowardEffect bit_talk_throwing 170,140]
+[fowardEffect bit_talk_throwing -190,-190]
+[wt 0.4]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 0,-30]
+[charaScale A 1.05]
+[wt 0.3]
+
+[se bac2]
+[charaMove A 1 0.3]
+[charaShake A 0.04 2 2 0.3]
+[wt 0.3]
+
+[se bac1]
+[charaFace A 2]
+[charaMove A 110,6 0.2]
+[charaMoveScale A 1.03 0.2]
+[wt 0.15]
+[charaMove A 250,0 0.2]
+
+[effect bit_talk_impactlanding -120,0]
+[se ad628]
+[wt 0.3]
+[seStop ad628 0.8]
+[wt 0.5]
+
+[se bac1]
+[charaMove A 0,6 0.15]
+[charaMoveScale A 1.02 0.15]
+[wt 0.1]
+[charaMove A -250,0 0.15]
+
+[effect bit_talk_impactlanding 300,0]
+[se ad628]
+[wt 0.3]
+[seStop ad628 0.8]
+[wt 0.5]
+
+[se bac1]
+[charaMove A -125,6 0.15]
+[charaMoveScale A 1.0 0.15]
+[wt 0.1]
+[charaMove A 80,0 0.15]
+
+[effect bit_talk_impactlanding -280,0]
+[se ad628]
+[wt 0.3]
+[seStop ad628 0.8]
+[wt 1.6]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[effectDestroy bit_talk_impactlanding]
+
+＠茨木童子
+停[messageShake 0.05 3 3 1.2]不下来，停不下来，吾停不下来了[line 2]！[r]唔唔唔什么玩意儿好可怕啊[line 3]！
+[k]
+
+[messageShakeStop]
+
+[charaFace B 3]
+
+＠茨木童子
+难道是因为吾滥用了阎魔帐！？[r]难道这就是所谓地狱的惩罚！？
+[k]
+
+＠茨木童子
+可是吾只是尝了一口，不，是三口，[r]不，是十口阎魔帐里的秘术啊～！
+[k]
+
+[messageOff]
+[charaMoveReturn B -20,20 0.3]
+[wt 0.15]
+[se bac389]
+[seVolume bac389 0 0.5]
+[fowardEffect bit_talk_throwing 0,0]
+[fowardEffect bit_talk_throwing 170,140]
+[fowardEffect bit_talk_throwing -190,-190]
+[wt 0.3]
+
+[charaFace B 5]
+[charaMoveReturn B 20,20 0.3]
+[wt 0.15]
+[se bac389]
+[seVolume bac389 0 0.6]
+[fowardEffect bit_talk_throwing 0,0 H]
+[fowardEffect bit_talk_throwing -170,140 H]
+[fowardEffect bit_talk_throwing 190,-190 H]
+[wt 0.3]
+
+[charaFace B 2]
+[charaMoveReturn B -20,20 0.3]
+[wt 0.15]
+[se bac389]
+[seVolume bac389 0 0.8]
+[fowardEffect bit_talk_throwing 0,0]
+[fowardEffect bit_talk_throwing 170,140]
+[fowardEffect bit_talk_throwing -190,-190]
+[wt 0.4]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 80,0]
+[wt 0.5]
+
+[se bac1]
+[charaMove A -110,6 0.2]
+[wt 0.15]
+[charaMove A -250,0 0.2]
+
+[effect bit_talk_impactlanding 120,0]
+[se ad628]
+[wt 0.3]
+[seStop ad628 0.8]
+[wt 0.5]
+
+[se bac1]
+[charaMove A 0,6 0.15]
+[wt 0.1]
+[charaMove A 250,0 0.15]
+
+[effect bit_talk_impactlanding -300,0]
+[se ad628]
+[wt 0.3]
+[seStop ad628 0.8]
+[wt 0.5]
+
+[se bac1]
+[charaMove A 125,6 0.15]
+[wt 0.1]
+[charaMove A 0,0 0.15]
+
+[effect bit_talk_impactlanding 320,0]
+[se ad628]
+[wt 0.3]
+[seStop ad628 0.8]
+[wt 1.6]
+[charaFace A 10]
+
+＠红阎魔
+……果然变成这样了啾。
+[k]
+
+[effectDestroy bit_talk_impactlanding]
+＠红阎魔
+这就是标准的自作自受啾。[r]像你这样居然能当鬼之头领啾。
+[k]
+
+[charaFace A 9]
+
+＠红阎魔
+茨木是那种啾。[r]有了部下才能发挥才华的鬼啾。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠茨木童子
+稍后[messageShake 0.04 3 2 1.1]再分析吾吧！[r]好痛，背上的肌肉抽筋了好痛！
+[k]
+
+[messageShakeStop]
+
+＠茨木童子
+吾想变成大鬼，[r]但并不想要地狱狱卒那样的满身肌肉啊！
+[k]
+
+[charaFace B 4]
+
+＠茨木童子
+红鬼！　吾已经反省了！[r]果然偷别人的东西是不对的！
+[k]
+
+[charaFace B 3]
+
+＠茨木童子
+所[messageShake 0.04 3 2 1.0]以救救我！　快救救我～！[r]阎魔帐还给你！　还给你啦～！
+[k]
+
+[messageShakeStop]
+[wt 0.2]
+
+？1：……好像发生了什么事……
+？2：……是我们熟悉的茨木童子……
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[charaShake A 0.04 3 4 0.3]
+[wt 0.3]
+＠红阎魔
+！　为什么御主会在这里啾！？[r]芬恩大人、迪尔姆德大人、还有……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 1.3]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠红阎魔
+呃。这位英灵是初次见面啾。[r]您是三河屋的大哥哥啾？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk D]
+[charaFace F 0]
+[charaFace D 3]
+[charaFadein F 0.1 0]
+[charaFadein D 0.1 2]
+
+＠背大米的人
+哈哈哈。嗯，就当是这样吧，请多指教。
+[k]
+
+＠迪尔姆德
+我们都是听闻老板娘遭遇危机才赶来之人。[r]请允许我们助您一臂之力。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠红阎魔
+五官！　这是你闯的祸，[r]我嘱咐过你们要对御主保密啾！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageShakeStop]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠麻雀
+我没有告诉御主啾。[r]可是芬恩麦自己推理出来了啾。
+[k]
+
+＠麻雀
+他是个如逆流而上鲑鱼般[r]华丽扑腾的文雅男子啾。
+[k]
+
+＠麻雀
+这位大人说不定是位[r]足以担任大型组织团长的优秀英灵啾。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠芬恩·麦克库尔
+哈哈哈。别这样啦，[r]居然将这种没什么大不了的事说得那么精彩。
+[k]
+
+＠芬恩·麦克库尔
+但我也是个明事理的男人。[r]这种传言还是积极传播得越广越好。
+[k]
+
+[charaFace C 0]
+＠芬恩·麦克库尔
+综上所述，认命吧，老板娘。[r]我已经看穿了八成的真相。
+[k]
+
+＠芬恩·麦克库尔
+我们和御主都不想就这样乖乖回去。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+？1：嗯。
+？2：情况就是这样。
+
+？！
+
+[charaFace A 1]
+＠红阎魔
+[line 3]原来如此。[r]既然是芬恩亲的主意，那就没办法了啾！
+[k]
+
+[charaFace A 5]
+
+＠红阎魔
+那我也要拜托各位了啾。[r]请帮忙讨伐茨木童子啾！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[charaMoveReturn B -20,20 0.3]
+[wt 0.15]
+[se bac389]
+[seVolume bac389 0 0.5]
+[fowardEffect bit_talk_throwing 0,0]
+[fowardEffect bit_talk_throwing 170,140]
+[fowardEffect bit_talk_throwing -190,-190]
+[wt 0.3]
+
+[charaMoveReturn B 20,20 0.3]
+[wt 0.15]
+[se bac389]
+[seVolume bac389 0 0.6]
+[fowardEffect bit_talk_throwing 0,0 H]
+[fowardEffect bit_talk_throwing -170,140 H]
+[fowardEffect bit_talk_throwing 190,-190 H]
+[wt 0.3]
+
+[charaMoveReturn B -20,20 0.3]
+[wt 0.15]
+[se bac389]
+[seVolume bac389 0 0.8]
+[fowardEffect bit_talk_throwing 0,0]
+[fowardEffect bit_talk_throwing 170,140]
+[fowardEffect bit_talk_throwing -190,-190]
+[wt 0.6]
+
+[charaFace B 5]
+
+＠茨木童子
+蠢[messageShake 0.04 3 3 1.1]货，不是讨伐，只是来阻止吾啦！[r]吾这次可不会再被砍掉什么东西了啦[line 2]！？
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.5]
+[wait fade]
+[soundStopAll]
+[end]

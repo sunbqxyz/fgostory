@@ -1,0 +1,755 @@
+
+＄94-03-66-13-3-0
+
+[soundStopAll]
+
+[charaSet A 1098165700 1 谟涅摩叙涅]
+[charaSet B 4032000 1 莱妮丝]
+[charaSet C 6039000 1 格蕾]
+
+[charaSet D 9008001 1 阿斯特赖亚]
+
+[charaSet E 1098123210 1 戈尔德鲁夫]
+[charaSet F 99502600 1 玛修]
+[charaSet G 1098124510 1 达·芬奇]
+[charaSet H 98115300 1 福尔摩斯]
+
+[charaSet I 98006200 1 特效用]
+
+[scene 10000]
+[charaEffect I bit_talk_lens_flare]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.5]
+[se ad216]
+[wt 1.5]
+
+[se ad641]
+[scene 10001 1.0]
+[wt 2.0]
+
+[fadeout white 0.1]
+[wait fade]
+
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_lens_flare]
+
+[scene 74201]
+[wt 0.1]
+
+[fadein white 1.0]
+[wait fade]
+
+[se ad207]
+[seVolume ad207 0 0.8]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠莱妮丝
+喂，格蕾！　我的弟子！　没事吧！[r]虽然我不清楚状况，但我们好像从那个空间中逃出来了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠谟涅摩叙涅
+…………
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠莱妮丝
+看来她并不打算放过我们呢。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠谟涅摩叙涅
+发生了好多意料之外的事情呢。[r]不过正因如此，最后必须得按照计划进行。
+[k]
+
+＠谟涅摩叙涅
+否则我连一个人都救不了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[seStop ad207 1.5]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+
+＠格蕾
+我是不会把[%1][&先生:小姐][r]和莱妮丝女士交给你的！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[messageOff]
+[wt 1.0]
+[effect bit_talk_40 0,-370]
+[se ad73]
+[se ad59]
+[fowardEffect bit_talk_quickmove 0,0 H]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.2 0,20]
+[charaMove D 0,0 0.3]
+[effectStop bit_talk_40]
+[wt 0.3]
+[seStop ad59]
+[wt 0.5]
+
+[charaFace D 5]
+
+＠阿斯特赖亚
+没错。[bgm BGM_EVENT_63 0.1][r]这真让我费了不少工夫呢。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠莱妮丝
+阿斯特赖亚！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠阿斯特赖亚
+好像是某人的宝具把外壳给破坏了。[r]嗯，没想到竟然露出这难看的样子。
+[k]
+
+[charaFace D 5]
+
+＠阿斯特赖亚
+不过这样的话裁决的场地也就调整完成了。[r]就在聚集着所有相关人员的、接近星星的此处。
+[k]
+
+[messageOff]
+[wt 0.5]
+[se ad474]
+[charaEffect D bit_talk_36_bl]
+
+[wt 1.0]
+[seStop ad474 1.5]
+[wt 1.5]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut D -1200,-1200]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠谟涅摩叙涅
+你要干什么！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠阿斯特赖亚
+当然是做我该做的事！
+[k]
+
+[messageOff]
+
+[se ad474]
+[wt 1.0]
+[charaEffectStop D bit_talk_36_bl]
+
+[effect bit_talk_blue_fire]
+[wt 1.5]
+
+[se ad300]
+[wt 0.1]
+[backEffect bit_talk_charge_blu]
+
+
+[charaChange D 9008002 0 fade 1.0]
+[wait charaChange D]
+
+[fowardEffect bit_talk_06_blue 0,-200]
+
+[effectStop bit_talk_blue_fire]
+[seStop ad632 1.5]
+[wt 2.5]
+
+＠阿斯特赖亚
+我所召集的星之法庭。[r]我所举起的断罪之剑。
+[k]
+
+＠阿斯特赖亚
+在此进行正义的裁决。[r]在此给予公平的赦免。
+[k]
+
+＠莱妮丝
+阿斯特赖亚的第二宝具……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[charaTalk on]
+[charaTalk D]
+[wt 0.7]
+[charaFace D 2]
+
+＠阿斯特赖亚
+『[#将秩序归还于此:Iam redit et Virgo]』[line 2]！
+[k]
+
+[messageOff]
+[se ad476]
+[wt 1.0]
+
+[fadeout white 1.5]
+[bgm BGM_EVENT_63 1.5 0.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[fowardEffectDestroy bit_talk_06_blue]
+[backEffectStop bit_talk_charge_blu]
+
+[charaSet I 98006200 1 通信用]
+
+[scene 10000]
+
+[seStop ad476 1.0]
+[se ad472]
+[seVolume ad472 0 0]
+[wt 1.5]
+
+[fadein white 1.0]
+[wait fade]
+
+[seVolume ad472 1.0 1.0]
+[wt 0.8]
+
+[effect bit_talk_radiallight01]
+[wt 2.0]
+[effectStop bit_talk_radiallight01]
+
+[fadeout white 1.5]
+[wait fade]
+
+[scene 74201]
+[wt 1.0]
+
+[fadein white 1.0]
+[seStop ad472 1.0]
+[bgm BGM_EVENT_63 1.0 1.0]
+[wait fade]
+
+
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠格蕾
+天空……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠莱妮丝
+被雾遮蔽的夜空显现了出来……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+[wt 0.4]
+
+[charaPut I 1]
+[se ad13]
+[charaEffect I bit_talk_10_LowLevel]
+[wt 0.2]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠玛修
+前辈！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠戈尔德鲁夫
+噢噢，终于连上了啊！[r]我都等瘦了！
+[k]
+
+？1：这次是真的玛修！？
+？2：而且还有戈尔德鲁夫新所长！
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+
+＠阿斯特赖亚
+我的第二宝具是让一切回归到该有的形态。[r]归还秩序，赦免罪恶。
+[k]
+
+[charaFace D 0]
+
+＠阿斯特赖亚
+就算在特异点被封闭的情况下也能奏效。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠玛修
+在前辈灵子转移之后，通信很快就中断了。[r]虽然有一瞬间可以通信，但是却看不到画面。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠莱妮丝
+啊，就是最早那个提到灵基肖像的通信吧。[r]原来只有那个才是本尊啊。
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠达·芬奇
+那当然是从新迦勒底发来的啦！[r]真是的，这次的调整可真费劲呢！
+[k]
+
+[charaFace G 0]
+
+＠达·芬奇
+此外在不久之前，我们已经监测到了那边的状况。
+[k]
+
+＠达·芬奇
+我们也从虚数潜航艇内[r]残留的数据中确定了你的存在，谟涅摩叙涅。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[bgmStop BGM_EVENT_63 1.0]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠谟涅摩叙涅
+…………你是………[#你]是………
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠达·芬奇
+你做出这样的行为的原因，[r]我多少也是知道一些的……怎么样？
+[k]
+
+[charaFace G 7]
+
+＠达·芬奇
+作为同样被莱昂纳多·达·芬奇所创造的产物，[r]要不要敞开胸襟说说心里话？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠谟涅摩叙涅
+我不要！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠达·芬奇
+你没在认真听吗？不过也怪不得你。[r]事到如今，应该怪我干预得太迟了。
+[k]
+
+[charaFace G 14]
+
+＠达·芬奇
+嗯。时间确实不够。[r]哪怕对于天才来说也是如此。
+[k]
+
+
+
+[charaFace G 0]
+
+＠达·芬奇
+[%1]，[r]把她交给你处理，可以吗？
+[k]
+
+？1：我正有此意。
+？2：最后一步也让我来做吧。
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠莱妮丝
+嗯，当然。我的弟子。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[bgm BGM_MAP_6 0.1]
+
+[charaFace B 0]
+
+
+＠莱妮丝
+话说，你还记得童话的拼缀吗？[r]有件事我那时没说。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[wipeFilter cinema 0.5 0]
+[cameraFilter gray]
+
+[imageSet E back10000 1]
+[imageSet F cut108_mask1 1]
+[charaScale E 1.01]
+
+[scene 73000]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+＠莱妮丝
+藏起来的理由之中，有一个常见的Whydunit。[r]那就是[#渴望被找到]。
+[k]
+
+[messageOff]
+[scene 73100 1.0]
+[charaFadeTime E 0.3 0.5]
+[wt 1.4]
+
+[charaFadein F 0.7 0,-200]
+[wt 1.5]
+
+＠莱妮丝
+戴面具的理由就更加单纯了。[r]那便是[#想和你对话]，[#但不想让你知道我的样子]。
+[k]
+
+[messageOff]
+[charaFadeout F 0.3]
+[wt 0.4]
+
+[charaFadeout E 1.0]
+[scene 73700 1.0]
+[wt 1.0]
+
+
+＠莱妮丝
+嗯嗯，关于蒸汽绚烂的拼缀，[r]蒸汽王已经一语道破了。
+[k]
+
+＠莱妮丝
+那个地方是一场梦。是一场直面矛盾则无法成立的梦。[r]是一场不曾忘却便无法存在的梦。
+[k]
+
+＠莱妮丝
+[#想一直忘记]这一愿望，[r]就是那个拼缀的Whydunit。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[wipeOff]
+[cameraFilter normal]
+
+[scene 74201]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠谟涅摩叙涅
+所以……你到底想说什么？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠莱妮丝
+没什么哦。[r]说实话，事到如今[#动机:Whydunit]已经不重要了。
+[k]
+
+＠莱妮丝
+但是，这个特异点以及在此发生的事件，[r]是不是受到了你的心理的影响呢？
+[k]
+
+＠莱妮丝
+那些我们所遇到的、与忘却相关的事件，[r]究竟是不是你渴望的呢？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠福尔摩斯
+唷。[r]简直比我更像一个侦探啊。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠格蕾
+难道你是夏洛克·福尔摩斯……？！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠莱妮丝
+不愧是迦勒底。竟然连侦探中的侦探都能召唤出来。[r]我却还在这里班门弄斧，真是羞耻呢。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠福尔摩斯
+不，你说的很有趣。埃尔梅罗Ⅱ世曾说过，[r]以神秘为突破口也不失为一种解决方法。
+[k]
+
+[charaFace H 1]
+
+＠福尔摩斯
+你完全可以为此而自豪。[r]既然已经解开谜题了，那么就只剩下和犯人的对峙了！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠莱妮丝
+你说得倒是轻松，但这正是我犯愁的地方啊。[r]我并不是侦探，而是魔术师啊。
+[k]
+
+[charaFace B 8]
+
+＠莱妮丝
+而且还是魔术师里性格乖僻的那一类。[r]到了要认真做事的时候，我还不得不让我那老实的弟子来帮忙。
+[k]
+
+？1：我当然没问题。
+？2：如果我够格的话。
+
+？！
+
+[charaSet I 1098166200 1 特里姆玛乌]
+
+[messageOff]
+[wt 0.5]
+[charaFaceFade B 1 0.5]
+[wt 1.0]
+
+＠莱妮丝
+……谢谢你。我的弟子。
+[k]
+
+[bgmStop BGM_MAP_6 1.5]
+
+[charaFace B 3]
+
+＠莱妮丝
+啊，讨厌，终于能好好地说出来了。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[charaShake A 0.05 3 3 0.7]
+[se ad149]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠特里姆玛乌
+确认到圣枪与谟涅摩叙涅的同调正在减弱。[bgm BGM_EVENT_24 0.1][r]可以认为是阿斯特赖亚的第二宝具所导致的。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠莱妮丝
+随着特异点的封锁松动，[r]伪·伦戈米尼亚德也无法保持强度了啊。
+[k]
+
+[charaFace B 2]
+
+＠莱妮丝
+来吧，我的弟子！　到了振作精神的时候了！[r]格蕾也准备好了吧！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠格蕾
+准备好了。请让我帮忙到最后一刻。[r]拼缀伦敦的最终战斗，开始！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.5]
+[wait fade]
+[soundStopAll]
+[end]

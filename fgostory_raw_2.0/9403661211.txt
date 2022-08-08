@@ -1,0 +1,289 @@
+
+
+
+
+＄94-03-66-12-1-1
+
+
+
+
+[soundStopAll]
+
+[charaSet A 4032000 1 莱妮丝]
+[charaSet B 9008001 1 阿斯特赖亚]
+[charaSet C 1098164800 1 格蕾]
+[charaSet D 9938400 1 魔神柱]
+
+[scene 36001]
+
+[charaDepth D 1]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[se ad246]
+[seVolume ad246 0 0.3]
+[se ad247]
+[seVolume ad247 0 0.3]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade285]
+[effect bit_talk_magicbullet 250,190]
+[wt 0.3]
+[se ade285]
+[effect bit_talk_magicbullet -200,-190]
+[wt 0.5]
+[se bac36]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[shake 0.05 3 3 1.0]
+[wt 0.2]
+[se bac36]
+[wt 0.5]
+
+[se bac71]
+[wt 1.0]
+[seVolume ad246 0.5 1.0]
+[seVolume ad247 0.5 1.0]
+[effect bit_talk_rarrow01br -200,50]
+[wt 1.7]
+[seStop ad246 0.5]
+[seStop ad247 0.5]
+
+[se ad226]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[charaEffect D bit_talk_impactlanding]
+[shake 0.05 3 3 1.0]
+[wt 2.3]
+[seStop ad226 0.7]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut D 1200,1200]
+[effectStop bit_talk_impactlanding]
+[wt 0.6]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿斯特赖亚
+打中了！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠魔神柱
+确认，末端单元已被消灭[line 3][r]与玉座的连接已被切断[line 3]
+[k]
+
+＠魔神柱
+驱逐[line 3][r]驱逐[line 3]从者[line 3]
+[k]
+
+[messageOff]
+
+[shake 0.05 7 7 0]
+[se ba6]
+[charaSpecialEffect D enemyErasure]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[wt 0.7]
+[flashOff]
+[wait charaSpecialEffect D]
+[charaFadeout D 0.1]
+[shakeStop]
+[wt 0.8]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠格蕾
+的确……周围的魔力迅速减弱了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+看来我的[#混元一阵:无语之阵]起作用了啊……
+[k]
+
+＠莱妮丝
+神殿正在消亡……
+[k]
+
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageOff]
+[se ad193]
+[distortionstart 0.0 0.5 0.5 0.0 0.0 100.0]
+[distortionstart 1.1 0.5 0.5 0.8 0.2 15.0]
+[wt 0.9]
+[distortionstart 1.3 0.5 0.5 0.8 0.4 15.0]
+
+[fadeout white 1.5]
+[wait fade]
+
+[charaSet C 6039000 1 格蕾]
+
+[scene 10000]
+
+[fadein white 1.0]
+[wait fade]
+
+[distortionstop 0.1]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 74403]
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_63 0.1]
+
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠亚德
+嘿嘿嘿嘿嘿！[r]回来啦！
+[k]
+
+[charaFace C 1]
+
+＠格蕾
+逃出时间神殿了！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+不愧是魔神柱啊，耗费了大量体力和时间才解决……[r]喂，没事吧，阿斯特赖亚。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 0.7]
+[charaFace B 1]
+[wt 0.5]
+
+＠阿斯特赖亚
+这种程度还不至于让我精疲力尽。[r]尽管敌人的实力确实出乎我意料，
+[k]
+
+[charaFace B 0]
+
+＠阿斯特赖亚
+可是好歹我也是一位女神啊。[r]可别小瞧我哦。
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+是嘛，原来如此。[r]你可真像那个我认识的露维娅。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿斯特赖亚
+这是理所应当的吧？[r]拟似从者肯定存在共鸣的部分。
+[k]
+
+
+＠阿斯特赖亚
+不管怎么说，这个小丫头是我选的。[r]我当然很有自信啦。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠格蕾
+是……的确。
+[k]
+
+[messageOff]
+[wt 0.7]
+[charaFace C 0]
+[wt 0.5]
+
+＠格蕾
+马上就到伪·伦戈米尼亚德了。[r]……地面上的诸位似乎也抵挡住了攻势呢。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠莱妮丝
+不愧是蒸汽王啊。[r]兄长好像也在利用他的小聪明牵制敌人。
+[k]
+
+
+[charaFace A 2]
+
+＠莱妮丝
+我们快走吧！
+[k]
+
+[messageOff]
+[se ad59]
+[charaFadeout A 0.7]
+[wt 0.5]
+
+[fadeout black 2.0]
+[seStop ad59 1.5]
+[bgmStop BGM_EVENT_63 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,639 @@
+
+
+＄03-00-07-10-3-0
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 7006300 1 坂田金时]
+[charaSet B 6030000 1 段藏]
+[charaSet D 1047001 1 渡边纲]
+[charaSet F 98074000 1 源赖光]
+[charaSet G 1098201900 1 岁杀神·俵藤太]
+[charaSet H 1098202100 1 豹尾神·铃鹿御前]
+[charaSet I 98115000 1 特效用]
+[charaSet J 98115000 1 特效用]
+
+[imageSet M back10000 1]
+[charaScale M 1.05]
+
+[cameraMove 0.1 0,0 1.01]
+
+[bgm BGM_EVENT_24 0.1]
+
+[wt 0.5]
+
+[scene 103200]
+
+
+[charaEffect J bit_talk_ereshki01]
+[se ad248]
+[seVolume ad248 0 0]
+[seVolume ad248 0.7 0.5]
+[fadein black 0.7]
+[wait fade]
+[seVolume ad248 1.5 0.1]
+[wt 1.5]
+
+
+[effect bit_talk_14]
+[se ad618]
+[wt 0.3]
+
+[se ad881]
+[effect bit_talk_14]
+[wt 0.8]
+
+[se ad609]
+[shake 0.05 3 2 5.0]
+[charaEffect I bit_talk_goltail01 0,0 H]
+[se ade393]
+[seVolume ade393 0 0.1]
+[seVolume ade393 1.0 0.6]
+[wt 1.0]
+[se ad891]
+[fadeout white 1.5]
+[wait fade]
+
+[seStop ad248 1.0]
+[charaEffectStop J bit_talk_ereshki01]
+[wt 0.8]
+
+[seStop ade393 2.0]
+[fadein white 2.0]
+[wait fade]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.4 -100,0]
+[charaMove A -30,0 0.1]
+[wt 0.1]
+[charaMove A 1 0.2]
+[wt 0.3]
+[charaFace A 2]
+
+＠坂田金时
+噢噢噢噢噢噢噢噢！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+[se ad39]
+[effect bit_talk_36]
+[wt 1.6]
+[effectStop bit_talk_36]
+
+＠岁杀神·俵藤太
+南无八幡大菩萨……！[r]若能如愿，但愿这支箭矢能够射中！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+[se ad39]
+[effect bit_talk_36]
+[wt 1.6]
+[effectStop bit_talk_36]
+＠豹尾神·铃鹿御前
+草子，阅读其文，[r]名闻天下大通连！
+[k]
+
+＠豹尾神·铃鹿御前
+若瓦屋顶八云立，雀刺杀戮群恶鬼，[r]文殊智剑大神通[line 3]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace G 2]
+[charaFadeinFSR G 0.1 280,0]
+
+[charaFace H 2]
+[charaFadeinFSL H 0.1 -280,0]
+
+＠岁杀神·俵藤太
+[line 3]『八幡祈愿·大妖……[line 3]
+[k]
+
+[charaFace H 5]
+
+＠豹尾神·铃鹿御前
+[line 3]『天鬼……[line 3]
+[k]
+
+
+[messageOff]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaFace D 2]
+[charaFadein D 0.1 0]
+
+[charaFace F 2]
+[charaFadein F 0.1 2]
+
+[wt 0.2]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_24 2.0]
+
+[se ad678]
+[se ade8]
+[charaMove D -256,15 0.2]
+[charaMove F 256,15 0.2]
+[charaMoveScale D 1.1 0.2]
+[charaMoveScale F 1.1 0.2]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[wt 0.2]
+[seStop ad166 0.2]
+
+[fadeout white 0.3]
+[wait fade]
+
+[blurOff motion 0.1]
+[scene 10001]
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaScale D 1.0]
+[charaScale F 1.0]
+
+[wt 0.1]
+[fadein white 0.1]
+[wait fade]
+
+＠岁杀神·俵藤太
+『[#八幡祈愿·大妖射贯:南无八幡大菩萨·请赐予此箭矢加持]』！
+[k]
+
+＠豹尾神·铃鹿御前
+『[#天鬼雨:Tenkiame]』！
+[k]
+
+
+[messageOff]
+[wt 0.5]
+
+[se ad715]
+[effect bit_talk_h_slash02_fs 0,0 V]
+[se bac308]
+[effect bit_talk_h_slash02_fs 0,0 F]
+
+[wt 3.0]
+
+
+
+[se ad863]
+
+[effect bit_talk_blood_splash_fs]
+[effect bit_talk_blood_splash_fs 0,0 H]
+[wt 2.5]
+
+[fadeout white 0.1]
+[wait fade]
+[charaSet G 1098202000 1 岁杀神·俵藤太]
+[charaSet H 1098202200 1 豹尾神·铃鹿御前]
+[scene 103200]
+
+[fadein white 2.0]
+[wait fade]
+
+[se ad240]
+[wt 0.7]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.7 1]
+[charaShake H 0.05 2 2 0.5]
+[wt 1.8]
+
+[charaFace H 2]
+[charaMove H 0,-15 0.4]
+[wt 0.3]
+[se ad984]
+[wt 1.2]
+
+＠豹尾神·铃鹿御前
+…………竟会如此。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.4 1]
+[wt 1.5]
+
+[charaMove G 0,-15 0.4]
+[wt 0.3]
+[se ad984]
+[wt 1.2]
+
+＠岁杀神·俵藤太
+………………竟然。
+[k]
+
+＠岁杀神·俵藤太
+看准宝具真名解放的那一刹那……[line 3]
+[k]
+
+＠岁杀神·俵藤太
+原来如此……[r]正因吾等化作了英灵……
+[k]
+
+＠岁杀神·俵藤太
+才会败给当代的武者吗……！
+[k]
+
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠渡边纲
+正是。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠源赖光
+我等武人的[#剑招并无起手式]。
+[k]
+
+＠源赖光
+这是在堂堂正正的对决中才能拥有的唯一胜算。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.8]
+[charaFace B 2]
+
+＠段藏
+原来是这样！[r]宝具的……
+[k]
+
+？1：真名解放……！
+？2：看准了……那一瞬的破绽……！？
+
+？！
+
+[charaFace B 5]
+
+＠段藏
+嗯，应该是这样！
+[k]
+
+＠段藏
+他们理解了英灵藉真名这种[#话语:关键词]发动宝具的[r]固有特性，并看准这机会斩杀[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad997]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+……[r]……
+[k]
+
+＠坂田金时
+……我终究用不了这种招数啊。
+[k]
+
+＠坂田金时
+赖光老大、大哥，[r]你们果然很厉害啊。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠渡边纲
+刹那，一瞬间……
+[k]
+
+＠渡边纲
+我们的胜算短如星辰明灭的时间差。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠源赖光
+你们若非英灵……[r]若非过去你们的影子，
+[k]
+
+＠源赖光
+连这[#些微的破绽]都不存在的话，[r]我们注定会战败身亡。
+[k]
+
+＠源赖光
+也就是说[line 3]
+[k]
+
+[messageOff]
+[charaMove F 0,-6 0.8]
+[wt 1.0]
+[charaMove F 0,0 0.4]
+[wt 0.8]
+
+＠源赖光
+一度向我们展现了自身招数极限的两位高贵的心灵，[r]才是我们此番胜利的关键。
+[k]
+
+[bgmStop BGM_EVENT_70 2.0]
+
+＠源赖光
+因此，请容我这样说。
+[k]
+
+[charaFace F 0]
+
+＠源赖光
+非常感谢，[r]两位伟大而骄傲的前辈。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠坂田金时
+……………………
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+[charaEffect J bit_talk_06 0,-100]
+[wt 0.8]
+
+[charaFace G 2]
+
+＠岁杀神·俵藤太
+不。[r]漂亮，干得漂亮！
+[k]
+
+[bgm BGM_EVENT_95 0.1]
+
+＠岁杀神·俵藤太
+这么说来，确实如此！[r]若是过去的在下，肯定二话不说就挽弓射箭！
+[k]
+
+[charaFace G 0]
+＠岁杀神·俵藤太
+尤其高手对决时，[r]没错，只需心中留有对八幡菩萨的祈愿即可。
+[k]
+
+＠岁杀神·俵藤太
+然而英灵之身却做不到。
+[k]
+
+＠岁杀神·俵藤太
+准确地说，其实是英灵之骸啦……
+[k]
+
+[charaFace G 2]
+
+＠岁杀神·俵藤太
+总算认识到现在的我果然不是我啊。[r]真是的！
+[k]
+
+＠岁杀神·俵藤太
+若能奢望……[r]真希望能在相同条件下交锋！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 2500,2500]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠源赖光
+恕我拒绝。[r]这样我们就毫无胜算了。
+[k]
+
+[charaFace F 0]
+
+＠源赖光
+不过嘛，嗯。
+[k]
+
+＠源赖光
+当我们卸下身上所有的重担后，定有机会。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+[wt 1.0]
+
+
+＠岁杀神·俵藤太
+再会了，源氏武者及其一族！[r]他日有缘再会时，来喝上一杯美酒[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 2500,2500]
+
+[charaPut I 1]
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+[charaEffect I bit_talk_06 0,-100]
+
+＠豹尾神·铃鹿御前
+啊啊，慢着慢着。
+[k]
+
+＠豹尾神·铃鹿御前
+这些话应该由第四天魔王的女儿来说啦。[r]啊～……
+[k]
+
+
+[messageOff]
+[charaFace H 3]
+[wt 1.4]
+[charaFace H 5]
+
+＠豹尾神·铃鹿御前
+…………嗯。[r]让我们有朝一日在别处再会吧。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaPut J 2]
+[charaFace G 2]
+[charaFadeinFSR G 0.1 280,0]
+
+[charaPut I 0]
+[charaFace H 5]
+[charaFadeinFSL H 0.1 -280,0]
+[wt 1.4]
+
+？1：（用力点头。）
+
+？！
+
+[cameraMove 0.4 0,5 1.01]
+[wt 0.6]
+[cameraMove 0.4 0,0 1.01]
+[wt 1.0]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 2500,2500]
+[charaPut I 2500,2500]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠段藏
+御主，用符咒吧。
+[k]
+
+？1：（扔出两张晴明的符咒！）
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_95 2.0]
+
+[charaPut J 1]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+
+[se ad1054]
+[effect bit_talk_pentagram_06]
+[wt 3.9]
+[charaFaceFade G 2 0.3]
+[wt 1.0]
+[se ad598]
+[charaSpecialEffect G wipeTime 0 1.5 0 0.2]
+[wt 2.0]
+[seStop ad598 0.3]
+
+
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+
+[se ad1054]
+[effect bit_talk_pentagram_06]
+[wt 3.9]
+[charaFaceFade H 5 0.3]
+[wt 1.0]
+[se ad598]
+[charaSpecialEffect H wipeTime 0 1.5 0 0.2]
+[wt 2.0]
+[seStop ad598 0.3]
+[charaEffectStop J bit_talk_06]
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠段藏
+……确认对象完全沉默。
+[k]
+
+＠段藏
+进一步确认晴明阁下授予的符咒同时发动，[r]已封印了两骑八将神的灵核。
+[k]
+
+＠段藏
+就此[line 3]
+[k]
+
+[messageOff]
+[charaFace B 4]
+[wt 1.2]
+[charaFace B 1]
+
+＠段藏
+成功击败两骑八将神了！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

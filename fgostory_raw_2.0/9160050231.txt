@@ -1,0 +1,559 @@
+
+
+＄91-60-05-02-3-1
+
+[soundStopAll]
+
+
+[charaSet A 6005001 1 杰克]
+[charaSet B 9002001 1 天草四郎]
+[charaSet C 5004001 1 童谣（？）]
+[charaSet D 1098181200 1 伦敦女士]
+[charaSet E 98104300 1 巨大鬼魂]
+
+[charaSet J 8001000 1 dummy特效1]
+
+
+[scene 10902]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.4]
+
+[se bac6]
+[fowardEffect bit_talk_ichimon01re 0,-40]
+[charaShake E 0.03 2 3 0.6]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_3 1.3]
+[wt 0.6]
+
+[se ad42]
+[fadeout white 0.9]
+[wait fade]
+
+[fowardEffectDestroy bit_talk_ichimon01re]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[fadein white 0.9]
+[wait fade]
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.6 1]
+[wt 1.0]
+
+＠童谣（？）
+……啊～，真遗憾。
+[k]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠童谣（？）
+如果能加入你们这些[#加害者:概念]，[r]社会一定就会完美了。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠天草四郎
+原来如此，真罕见。
+[k]
+
+＠天草四郎
+模拟装置中的垃圾数据居然有了自我意识，[r]甚至还想建立社会。
+[k]
+
+＠天草四郎
+难道是在忠实重现伦敦这一风景的同时，[r]模仿了某种奇怪的术式吗？
+[k]
+
+＠天草四郎
+这里是最接近时钟塔的场所，即便模仿个风景[r]就引发了什么奇妙的情况，也没什么好奇怪的。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠童谣（？）
+建议下次重现时能更为慎重一些。
+[k]
+
+[charaFace C 0]
+
+＠童谣（？）
+那再见啦。[r]……直到最后，仍然是受害者的某人。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠杰克
+再见～。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠童谣（？）
+……真是的，顿时让人失去了干劲。
+[k]
+
+[messageOff]
+[se ad42]
+[charaSpecialEffect C enemyErasure 0,0 1.5]
+[wt 0.7]
+
+[wait charaSpecialEffect C]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 0.9]
+[wt 1.2]
+
+[charaPut J 0,0]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaEffect J bit_talk_11]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠伦敦女士
+呼，这下总算能放心了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠杰克
+你是[line 3][bgm BGM_EVENT_6 0.1]
+[k]
+
+[charaPut J 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠伦敦女士
+我谁都不是哦，杰克。[r]一定要说的话，算是伦敦的良心吧。
+[k]
+
+＠伦敦女士
+无论人类的社会机构有多么恶俗，[r]品性有多么恶劣、下流。
+[k]
+
+＠伦敦女士
+每个人都还留有一份良心。
+[k]
+
+＠伦敦女士
+假如[#她:童谣]要建立社会结构的话，[r]这也是理应产生的概念。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠天草四郎
+不过还有几个谜没解开。
+[k]
+
+[charaFace B 1]
+
+＠天草四郎
+为什么是女性。[r]为什么要采用这个人格。
+[k]
+
+[charaPut J 0,0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠伦敦女士
+这是[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠杰克
+因为虽说你不是[#妈妈:御主]，[wt 0.5][charaFace A 3][r]却是妈妈？
+[k]
+
+[charaPut J 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠伦敦女士
+……嗯，说得对。[r]我喜欢这个解释。
+[k]
+
+＠伦敦女士
+我是你们梦中的某个人。
+[k]
+
+＠伦敦女士
+是会无条件包容你们的一切，[r]毫不犹豫帮助你们的某个人。
+[k]
+
+＠伦敦女士
+或许会是在某次圣杯战争中，[r]成为你们御主的某个人。
+[k]
+
+＠伦敦女士
+这解释不错。[r]是无比美丽的[line 3][#“梦”:梦幻曲]。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠杰克
+唔……
+[k]
+
+[charaPut J 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠伦敦女士
+好了，回去吧。[r]该从模拟中醒来了。
+[k]
+
+＠伦敦女士
+杰克已经不要紧了吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠杰克
+……嗯。[r]应该能行。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.4]
+
+[se ad15]
+[wt 0.4]
+
+＠天草四郎
+咦，通讯看来也恢复了。[r]那我们从模拟装置返回吧。
+[k]
+
+[charaFace B 1]
+
+＠天草四郎
+要和你告别了，伦敦女士。
+[k]
+
+[messageOff]
+[charaPut J 0,0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.4]
+
+？1：再见……！
+
+＠伦敦女士
+嗯，再见了，各位。
+[k]
+
+？2：感谢您的指引。
+
+＠伦敦女士
+不，该道谢的应该是我。
+[k]
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠杰克
+……[r]……
+[k]
+
+[charaPut J 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠伦敦女士
+哎呀，怎么了，杰克？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠杰克
+那个。[r]那个，那个，那个……嗯[line 3]
+[k]
+
+[charaFace A 3]
+
+＠杰克
+我们很高兴……[r]能见到你……
+[k]
+
+＠杰克
+[#尽管或许还未见面]，[r][#尽管或许已经见过了]。
+[k]
+
+＠杰克
+但能见到你，我们……[wt 0.6][charaFace A 1][r]不。算了不说了。
+[k]
+
+＠杰克
+我们，[r]会试着……继续努力。
+[k]
+
+＠杰克
+再见了，陌生人。
+[k]
+
+[charaPut J 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠伦敦女士
+再见了，开膛手杰克。[r]希望你们能一直幸福到最后。
+[k]
+
+[messageOff]
+[wt 0.4]
+
+[se adm20]
+[fadeout white 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.8]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_6 1.5]
+[wait fade]
+
+[scene 10400]
+[wt 1.4]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠杰克
+[#妈妈:御主]，[bgm BGM_EVENT_2 0.1]今天对不起啦。
+[k]
+
+？1：不要紧了吗？
+？！
+
+[charaFace A 0]
+
+＠杰克
+不知道呢。
+[k]
+
+＠杰克
+我们并不了解什么人理，[r]也没理由为人理努力。
+[k]
+
+＠杰克
+或许人理灭亡了会更好。
+[k]
+
+[charaFace A 1]
+
+＠杰克
+但是呀。[r]现在我们很快乐、很高兴、很幸福。
+[k]
+
+[charaFace A 0]
+
+＠杰克
+而且[line 3][r]如果那个陌生人也在这个世界上的话。
+[k]
+
+＠杰克
+……不，就算已经不在了。[r]只要其痕迹还在星辰上的某处。
+[k]
+
+＠杰克
+我们就必须努力才行。
+[k]
+
+？1：谢谢。
+
+[charaFace A 1]
+＠杰克
+嗯。[r][#妈妈:御主]，今后也请多关照啦！
+[k]
+
+？2：我们要一起加油哦。
+
+[charaFace A 1]
+
+＠杰克
+嗯……嗯，嗯，嗯！[r]会加油，我们会努力加油！
+[k]
+
+＠杰克
+所以……和我们一起做梦吧。[r][#妈妈:御主]！
+[k]
+
+？！
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_2 1.2]
+[wait fade]
+
+[scene 10000]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[fadein black 1.2]
+[wait fade]
+
+[bgm BGM_EVENT_45 0.1]
+
+＠
+[line 3]杀人是罪，是错。
+[k]
+
+＠
+从这个角度来说，[r]她已经……也一直是加害者。
+[k]
+
+＠
+但是，也可以这么想。
+[k]
+
+＠
+他们这些牺牲者，唯有通过沦落成[r]开膛手杰克这一个体，才能够[line 3]
+[k]
+
+＠
+获得做梦的权利。
+[k]
+
+＠
+浅眠中的她与[&少年:少女]的身旁，[r]正播放着安详的音乐。
+[k]
+
+＠
+是描写孩子做梦的[line 3]曲子。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_45 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

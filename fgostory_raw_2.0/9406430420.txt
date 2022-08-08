@@ -1,0 +1,603 @@
+
+
+＄94-06-43-04-2-0
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5050000 1 サンタマルタ]
+[charaSet B 1098198000 1 スカサハ＝スカディ]
+[charaSet C 2001002 1 エミヤ]
+[charaSet D 4011001 1 ブーディカ]
+[charaSet E 7016001 1 タマモキャット]
+[charaSet F 3047001 1 パーシヴァル]
+
+[charaSet J 6041000 1 鬼一法眼]
+[charaSet K 3036001 1 ブラダマンテ]
+[charaSet L 98006200 1 エネミー]
+[charaSet N 98006200 1 エネミー]
+[charaSet O 98006200 1 エネミー]
+
+[charaSet P 98006200 1 エネミー_シルエット]
+[charaSet Q 98006200 1 エネミー_シルエット]
+[charaSet R 98006200 1 エネミー_シルエット]
+[charaFilter P silhouette 00000080]
+[charaFilter Q silhouette 00000080]
+[charaFilter R silhouette 00000080]
+
+[charaSet M 98115000 1 エフェクト用ダミー]
+
+[sceneSet H 141100 1]
+[charaScale H 1.3]
+
+[charaDepth P 6]
+[charaDepth Q 7]
+[charaDepth R 5]
+[charaDepth L 3]
+[charaDepth N 4]
+[charaDepth O 2]
+
+[scene 141100]
+
+[effect bit_talk_snowstorm_01]
+
+[wt 0.5]
+[se ad544 1.0]
+[seVolume ad544 0 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[seVolume ad544 1.0 0.6]
+[wait fade]
+
+[seVolume ad544 0.5 1.0]
+[wt 2.0]
+[seStop ad544 3.5]
+
+
+[charaFadein H 0.7 100,-200]
+[charaMove H -100,-200 4.5]
+[bgm BGM_MAP_6 0.1]
+[wt 3.0]
+[effectStop bit_talk_snowstorm_01]
+[charaFadeout H 1.5]
+[wt 2.5]
+
+？1：また寒そうな土地に来たね……？
+？！
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+地下倉庫の一部が変質してるなら、[r]見た目がどうあれ基本は寒いんじゃない？
+[k]
+
+＠ブーディカ
+地下倉庫、基本的に冷蔵庫みたいなものな上に、[r]今はルーンのせいかすっごく寒いし。
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_6 0.8]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ade235]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 -600,0]
+[charaMove E 700,0 0.5]
+[effect bit_talk_42_depth 0,0 H]
+[wt 0.2]
+[charaFadeout E 0.4]
+[wt 0.6]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 -600,0]
+[charaMove E 700,0 0.5]
+[wt 0.2]
+[charaFadeout E 0.4]
+[effectDestroy]
+[seStop ade235 0.2]
+[wt 0.7]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠ブーディカ
+キャット！？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[effect bit_talk_42_depth 0,0 H]
+[se ade235]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 -1200,0]
+[charaMove E 0,0 0.5]
+[wt 0.5]
+[seStop ade235 0.1]
+[effectDestroy]
+
+＠タマモキャット
+サムゥーーイ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+
+＠サンタマルタ
+すごい勢いで走ってる！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+
+＠ブーディカ
+まーた走り回りたくなったのね……[r]キャット。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.5 0.5]
+
+＠？？？
+かんら、から、から！[r]元気がよくて結構、冬はそうやって楽しまねばな！
+[k]
+
+？1：この独特の笑い声！
+
+
+＠？？？
+そう、僕だ！
+[k]
+
+[messageOff]
+
+
+？2：鬼一師匠！
+
+
+
+[bgmStop BGM_EVENT_7 1.0]
+＠？？？
+正解だぞ！[r]流石はいずれ養子か嫁になる[&男:女]だ。
+[k]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠サンタマルタ
+[&はい？:お嫁さん？]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[bgmStop BGM_EVENT_7 1.0]
+[se ade235]
+[seVolume ade235 0 0.3]
+[wt 1.0]
+[seStop ade235 0.3]
+[se ad7]
+[seVolume ad7 0 0.6]
+[wt 0.5]
+
+[cueSe SE_21 21_ade674]
+[seVolume 21_ade674 0 0.3]
+[seVolume 21_ade674 0.7 0.6]
+[wt 2.0]
+[seVolume 21_ade674 0.4 1.0]
+
+[charaTalk depthOff]
+[charaDepth E 6]
+[charaDepth J 7]
+[charaDepth K 5]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.4 1]
+[charaFace E 6]
+[charaFadein E 0.4 206,-150]
+[cueSeStop 21_ade674 0.4]
+[wt 0.4]
+[bgm BGM_SENGOKU_1 0.1]
+
+＠鬼一法眼
+よーし、よしよし。[r]あんまりはしゃぎ過ぎると転んで怪我をするぞ。
+[k]
+
+＠タマモキャット
+ゴロゴロゴロゴロ……。
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk K]
+[charaFace K 1]
+[charaFadein K 0.4 1]
+[wt 0.4]
+
+
+＠ブラダマンテ
+ナイスキャッチです、鬼一法眼様。[r]そしてようこそいらっしゃいました、皆さん！
+[k]
+
+＠ブラダマンテ
+お野菜エリアのナビ担当を務めます、[r]ブラダマンテです。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 14]
+[charaFadein J 0.1 1]
+
+
+＠鬼一法眼
+僕もだぞ。[r]ダブル担当という訳だ。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+お二人でナビ担当を引き受けたと見える。[r]しかし、珍しい組み合わせだ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadeinFSL J 0.1 0]
+[charaFace K 0]
+[charaFadeinFSR K 0.1 2]
+
+＠鬼一法眼
+なに、そう珍しくもないさ。
+[k]
+
+＠鬼一法眼
+このブラダマンテという女武者、[r]槍使いだろう？
+[k]
+
+[charaFace J 15]
+
+＠鬼一法眼
+槍術ならばこの鬼一に心得があるからな、[r]シミュレーターで何度か指南などをな。
+[k]
+
+[charaFace K 1]
+
+
+＠ブラダマンテ
+見事な槍[#捌:さば]き、感服です！
+[k]
+
+＠ブラダマンテ
+先ほどもご指導いただいていたのです。[r]たっぷり半日はシミュレーターを稼働して……
+[k]
+
+[charaFace J 0]
+
+＠鬼一法眼
+こんなところかと終えたところで、[r]北欧の女王に声を掛けられたという訳だ。
+[k]
+
+＠鬼一法眼
+しかしまさか野菜とはなぁ。[r]いや、僕も天狗の端くれ、山菜とか好きだけども。
+[k]
+
+＠ブラダマンテ
+あ、私は好きですよお野菜！
+[k]
+
+[charaFace J 24]
+
+＠鬼一法眼
+お、おう。
+[k]
+
+[charaFace K 1]
+
+＠ブラダマンテ
+私、好き嫌いとかないので！[r]ともかく野菜は量です！
+[k]
+
+＠ブラダマンテ
+サラダにせよ火を通すにせよ、[r]ともかく種類と量が要る。それが野菜ってモノです。
+[k]
+
+
+＠ブラダマンテ
+目立った主菜はそりゃ大抵、お肉やお魚ですよね。[r]主食は麦や米のような穀類や、お芋の類と来ます。
+[k]
+
+＠ブラダマンテ
+副菜になりがちなお野菜ですが、[r]元気に生きるために必要な栄養はいっぱいです！
+[k]
+
+[charaFace K 2]
+
+＠ブラダマンテ
+なので、その[line 3]ともかく種類と量です！
+[k]
+
+＠ブラダマンテ
+火を通したら縮みますしね！
+[k]
+
+[bgmStop BGM_SENGOKU_1 0.7]
+[messageOff]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[fowardEffect bit_talk_41_fs]
+[se ade211]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[charaMoveScale F 1.1 0.3]
+[wt 0.4]
+
+＠パーシヴァル
+ブラダマンテ殿！
+[k]
+
+[fowardEffectDestroy]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaScale F 1.0]
+
+[charaTalk K]
+[charaFace K 2]
+[charaFadein K 0.1 1]
+
+
+＠ブラダマンテ
+はい！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+[bgm BGM_EVENT_94 0.1]
+
+＠パーシヴァル
+素晴らしいその通りまさにその通り！[r]そう、食事は量！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 1]
+[charaFadein K 0.1 1]
+
+＠ブラダマンテ
+はい！
+[k]
+
+[messageOff]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaDepth K 5]
+[charaDepth F 4]
+
+[charaTalk off]
+[charaFace F 7]
+[charaFadeinFSL F 0.1 -186,0]
+[charaMoveFSL F -136,0 0.3]
+
+[charaFace K 1]
+[charaFadeinFSR K 0.1 186,0]
+[charaMoveFSR K 136,0 0.3]
+[wt 0.3]
+
+＠二人
+（熱く固い握手）[cueSe SE_21 21_ad1070][charaMoveReturnFSL F -136,-10 0.3][charaMoveReturnFSR K 136,-10 0.3]
+[k]
+
+[charaTalk on]
+
+＠A：その他の一同
+（うんうんと頷いている）
+[k]
+
+[charaFadeout K 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠タマモキャット
+パーシヴァルもともかく量を盛る男。[r]特に根菜を、特に芋を盛りまくる男。
+[k]
+
+
+＠タマモキャット
+ブラダマンテの熱弁に対しては[r]特にワカリミンＧが深い、という感じなのだな。
+[k]
+
+？1：新しい栄養ドリンク？
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+よくわかる、と言っているな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？2：よくわかるぞ、っていう意味かな
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+多分そーかな？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk J]
+[charaFace J 18]
+[charaFadein J 0.1 1]
+
+[bgmStop BGM_EVENT_94 2.0]
+
+＠鬼一法眼
+わかったわかった。[r]おまえたちの野菜に対する熱意、しかと受け止めた。
+[k]
+
+[charaFace J 9]
+
+＠鬼一法眼
+よし、それでは野菜の収穫といこう！
+[k]
+
+＠鬼一法眼
+（鋭い口笛）[se ad88]
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[seStop ad88 0.3]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaFace P 0]
+[charaFadein P 0.4 1]
+[charaFace Q 0]
+[charaFadeinFSR Q 0.4 306,0]
+[charaFace R 0]
+[charaFadeinFSL R 0.4 -306,0]
+[wt 0.4]
+
+[se ade215]
+[wt 1.0]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+[charaFace N 0]
+[charaFadeinFSR N 0.1 306,0]
+[charaFace O 0]
+[charaFadeinFSL O 0.1 -306,0]
+
+[charaFadeout P 0.4]
+[charaFadeout Q 0.4]
+[charaFadeout R 0.4]
+[wt 1.4]
+[seStop ade215 0.3]
+[charaFadeout L 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠サンタマルタ
+わっ。何かいるわ！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+
+＠鬼一法眼
+ははは。こうするとな、[r]血気盛んな食材エネミーが寄って来るんだ。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+おお。それは手っ取り早い！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 2]
+[charaFadein K 0.1 1]
+
+＠ブラダマンテ
+来ます！[r]皆さん、戦闘準備を！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

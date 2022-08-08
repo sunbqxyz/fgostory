@@ -1,0 +1,543 @@
+
+＄03-00-10-07-5-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098123000 1 ムニエル]
+[charaSet B 1098231510 1 マシュ]
+
+[charaSet C 1007002 1 太陽の騎士]
+[charaSet D 1007002 1 太陽の騎士（シルエット）]
+[charaFilter D silhouette FFFFFF80]
+[charaSet E 1020002 1 湖の騎士]
+[charaSet F 1020002 1 湖の騎士（シルエット）]
+[charaFilter F silhouette FFFFFF80]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 51608]
+
+[bgm BGM_EVENT_24 0.1]
+[wt 0.5]
+
+[se ad231]
+[shake 0.02 3 4 0.8]
+[fadein black 1.2]
+[wait fade]
+
+[se ad240]
+[effect bit_talk_35]
+[shake 0.02 3 4 0.6]
+[wt 1.0]
+
+[wt 0.1]
+[blur lens 5.0 1 2]
+[wt 1.8]
+
+[cameraMove 0.3 0,30 1.01]
+[wt 0.1]
+[se ad775]
+[shake 0.01 1 3 0.3]
+[wt 1.0]
+
+[effectDestroy bit_talk_35_fs]
+
+？1：っ……！
+
+？！
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠ムニエル
+[%1]、しっかりしろ！[r]言わんこっちゃない、無理するから！
+[k]
+
+＠ムニエル
+こっちもモニターしてたが、ありゃダメだ！[r]戦力だけじゃない、魔力食いが魔術師殺しすぎる！
+[k]
+
+＠ムニエル
+マシュだけじゃ勝機はない、撤退するぞ！[r]至急、マシュに連絡を[line 3]
+[k]
+
+[bgm BGM_EVENT_24 2.0 0.5]
+
+[charaFace A 3]
+＠ムニエル
+[line 3]ありゃなんだ？[r]マシュの盾が光ってないか……？
+[k]
+
+＠ムニエル
+ん？　新しい霊基の反応がある？
+[k]
+
+＠ムニエル
+画面に霊基情報だすぞ、[%1]。[r]見覚えあるか？
+[k]
+
+？1：これは……
+？2：間違いない……！
+
+？！
+
+[messageOff]
+[wt 0.1]
+
+[cueSe SE_21 21_ad1104]
+[wt 0.8]
+[se ad775]
+[seVolume ad775 0 0.4]
+[wt 0.1]
+[blurOff lens 0.7]
+[shake 0.02 1 1 0]
+[cameraMove 0.7 0,0 1.01]
+[wt 0.7]
+[shakeStop]
+[wt 0.5]
+
+[charaFace A 0]
+＠ムニエル
+なに急に立ち上がって[line 3][wt 0.5][charaFace A 8][r]って、活性アンプルバカ打ちしたな！？
+[k]
+
+＠ムニエル
+まだやる気か！？[r]２騎が限界だって言われただろー！？
+[k]
+
+？1：うん、だって[line 3]
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.6]
+
+
+？1：あれは、マシュの戦いだから！
+
+？！
+
+[messageOff]
+[wt 0.1]
+
+[se ad39]
+[effect bit_talk_summon_fs]
+[wt 3.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[effectDestroy bit_talk_summon_fs]
+
+[scene 124800]
+
+[wt 1.5]
+
+[se ade215]
+[se ad526]
+
+[cueSe SE_21 21_ad1114]
+[seVolume 21_ad1114 0 0]
+[seVolume 21_ad1114 1.0 0.5]
+[se ad632]
+[seVolume ad632 0 0]
+[seVolume ad632 1.0 0.4]
+[se ad57]
+
+[fadein black 1.5]
+[wait fade]
+[wt 1.0]
+[seStop ad57 1.0]
+
+[se ad564]
+[se ad423]
+[se ad425]
+[shake 0.05 3 3 2.5]
+[wt 3.8]
+[seStop ad632 3.0]
+[seStop 21_ad1114 3.0]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[scene 119801]
+[wt 0.6]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 36]
+[charaFadein B 0.1 0,-15]
+＠マシュ
+……街を焼く炎……[r]妖精を燃やし、その黒煙と雷を食らう魔犬……
+[k]
+
+＠マシュ
+……あなたはもう、[r]完全に、別の生き物なのですね……
+[k]
+
+＠マシュ
+この街がノリッジである事も、[r]ご自分の名前も、その目には映っていない……
+[k]
+
+＠マシュ
+……わたしでは倒しようのない相手。[r]並の英霊では餌食になるだけでしょう……。
+[k]
+
+[bgmStop BGM_EVENT_24 3.0]
+
+[cueSe SE_21 21_ad1108]
+[seVolume 21_ad1108 0 0.4]
+[se ad952]
+[seVolume ad952 0 0.4]
+[charaPut S 0,-15]
+[charaEffect S bit_talk_shield_light02 15,-15]
+
+[charaFace B 7]
+＠マシュ
+……それでも！[r]この街で、あなたに負ける事はできないのです！
+[k]
+
+＠マシュ
+あなたを誇りに思った方がいました！[r]この街に帰りたいと願った方たちがいました！
+[k]
+
+＠マシュ
+あなたを[line 3]いえ、あなたが憧れた、[r]正義の騎士の盾は、ここにあります！
+[k]
+
+＠マシュ
+ロブ、ワグ、ウィンキー……
+[k]
+
+＠マシュ
+彼らが信じてくれたのは、こんなところで[r][#挫:くじ]けるわたしでは、断じて……！
+[k]
+
+[charaFace B 35]
+＠マシュ
+わたしはシェフィールドの騎士、[r]マシュ・キリエライト！
+[k]
+
+[messageOff]
+
+[charaMove B 0,0 0.6]
+[charaMove S 0,0 0.6]
+[wt 0.1]
+[se ad984]
+[wt 0.3]
+[wt 0.8]
+[se bac170]
+
+＠マシュ
+『厄災』を打ち[#祓:はら]い！[r]ブリテンを救う、円卓のひとりです！
+[k]
+
+[messageOff]
+[se ad928]
+[seVolume ad928 0 0.4]
+[se ad948]
+[seVolume ad948 0 0.2]
+[se ad852]
+[seVolume ad852 0 0.4]
+[charaPut T 1]
+[charaEffect T bit_talk_shield_light 15,-15]
+[wt 2.2]
+
+[seStop 21_ad1108 1.0]
+
+[se ad835]
+[se ad574]
+[fadeout white 0.5]
+[cueSeStop 21_ad1114 1.5]
+[seStop ad928 1.5]
+[seStop ad948 1.5]
+[seStop ad852 1.5]
+
+[seStop ad835 1.5]
+[seStop ad952 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaPut T 2000,2500]
+[charaEffectStop T bit_talk_shield_light]
+[charaPut S 2000,2500]
+[charaEffectStop S bit_talk_shield_light02]
+
+[charaTalk off]
+[charaDepth D 5]
+[charaDepth F 5]
+[charaDepth C 6]
+[charaDepth E 6]
+
+[charaPut D 1]
+[charaFace D 0]
+[charaFadeTime D 0.2 0.97]
+
+[se ad632]
+[seVolume ad632 0 0]
+[seVolume ad632 3.0 0.2]
+[wt 3.5]
+
+[seStop ad632 3.0]
+[fadein white 2.0]
+[wait fade]
+
+[charaFace C 0]
+[charaFadein C 1.0 1]
+[wt 0.3]
+[cueSe SE_21 21_ad1119]
+[seVolume 21_ad1119 0 0.8]
+[wt 0.3]
+[cueSeStop 21_ad1119 0.2]
+[wt 0.4]
+[charaFadeout D 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_125 0.1]
+
+[charaTalk on]
+＠太陽の騎士
+よい口上です。[r]敵への怒りではなく、自らを鼓舞する叫び。
+[k]
+
+＠太陽の騎士
+その声を聞いた以上、[r]控えている訳にはいきません。
+[k]
+
+＠太陽の騎士
+とつぜんの先輩風など[#煩:わずら]わしいでしょうが、[r]どうかご容赦を。
+[k]
+
+＠太陽の騎士
+戦場を共にする事をお許しいただけますか、[r]デイム・マシュ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+[line 6]。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad835]
+[se ad574]
+[fadeout white 0.5]
+[wait fade]
+[seStop ad835 1.5]
+
+[charaTalk off]
+
+[charaPut F 1]
+[charaFace F 0]
+[charaFadeTime F 0.1 0.97]
+
+[se ad632]
+[seVolume ad632 0 0]
+[seVolume ad632 3.0 0.2]
+[wt 1.0]
+
+[seStop ad632 3.0]
+[fadein white 2.0]
+[wait fade]
+[wt 0.5]
+
+[charaFace E 0]
+[charaFadein E 0.6 1]
+[se ad921]
+[seVolume ad921 0 0.7]
+[wt 0.6]
+[charaFadeout F 1.0]
+[wt 1.0]
+[charaFace E 1]
+
+[charaTalk on]
+＠湖の騎士
+まさか、卿に先を越されるとはな。[r]美しいご婦人を守るのは私の役目だと思ったが。
+[k]
+
+＠湖の騎士
+[line 3]だが、それもこちらの早合点だった。[r]彼女にエスコートの必要はない。
+[k]
+
+＠湖の騎士
+その闘志、その勇気、まさに春雷の如し。[r]我らの中でも及ぶ者が何人いるか。
+[k]
+
+＠湖の騎士
+共に戦う名誉を独り占めにはさせんよ、[r]サー・ガウェイン。
+[k]
+
+＠湖の騎士
+たとえ、親馬鹿だと言われてもね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 21]
+[charaFadein B 0.1 1]
+＠マシュ
+じ、授業参観気分ですね、お父さん！
+[k]
+
+[charaFace B 14]
+＠マシュ
+い、いえ、そうではなく、これは一体[line 3][r]どうして、お二人がこの場に！？
+[k]
+
+＠マシュ
+このブリテンでは[r]汎人類史の英霊は召喚されないと……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 6]
+[charaDepth E 4]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace E 0]
+[charaFadeinFSL C 0.1 0]
+[charaFadeinFSR E 0.1 2]
+＠太陽の騎士
+そのようですね。[r]ですが私たちだけは別のようです。
+[k]
+
+＠太陽の騎士
+この國には我々の名を受けた者がいたのでしょう。
+[k]
+
+＠太陽の騎士
+好き放題使っていたのなら、[r]こちらも多少の席は用意していただかないと。
+[k]
+
+＠太陽の騎士
+まあ、存在のトレード、という事で。
+[k]
+
+＠湖の騎士
+うむ。どこの誰が我が名を継いでいたかは、[r]知る由もない事だが[line 3]
+[k]
+
+＠湖の騎士
+その蛮勇、いや活躍に感謝しよう。[r]おかげで最大の見せ場に立ち会えた。
+[k]
+
+＠湖の騎士
+この霊基、数分と持つものではないが、それで充分。[r]左足は任せるぞ、ガウェイン。
+[k]
+
+＠湖の騎士
+相手はキャスパリーグの如き魔犬だ。[r]いがみあっている場合ではないからね。
+[k]
+
+[charaFace C 5]
+＠太陽の騎士
+そちらこそ。デイム・マシュの前だからと[r]軽率に戦わないように。
+[k]
+
+＠太陽の騎士
+[#円卓の騎士が三名][#揃:そろ]っているのです。[r]敗北は許されない。
+[k]
+
+[charaFace C 2]
+＠太陽の騎士
+行くぞ、円卓の[#同胞:と　も]よ！[r]盾の騎士の道を、我々の手で切り開く！
+[k]
+
+[charaFace E 2]
+＠湖の騎士
+おう！　ランスロット、参る！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+[wt 1.2]
+
+[charaFace B 7]
+[wt 1.0]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[scene 124800]
+[wt 0.6]
+
+[se ade215]
+[se ad526]
+
+[cueSe SE_21 21_ad1114]
+[seVolume 21_ad1114 0 0]
+[seVolume 21_ad1114 1.0 1.0]
+[se ad632]
+[seVolume ad632 0 0]
+[seVolume ad632 1.0 0.4]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠マシュ
+お二人とも、ありがとうございます！
+[k]
+
+＠マシュ
+どうか、わたしに彼女を倒す力を……[r]いえ、救う機会を、お与えください！
+[k]
+
+[seStop ad632 3.0]
+[seStop 21_ad1114 3.0]
+
+＠マシュ
+彼女の名はバーゲスト、[r]このブリテンを護り続けた忠節の騎士。
+[k]
+
+＠マシュ
+強き者として責務を果たし、[r]弱き者が生きていけるよう願った者。
+[k]
+
+＠マシュ
+黒き厄災。[r]妖精を食らう獣の[#頭:かしら]よ。
+[k]
+
+＠マシュ
+円卓に名を連ねた者として[line 3][r]ここで、その行進を食い止めます！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_125 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,1061 @@
+
+＄94-03-46-02-2-0
+
+[soundStopAll]
+
+[charaSet A 1098163000 1 莫里亚蒂]
+[charaSet B 8001001 1 玛修]
+
+[charaSet D 5038000 1 齐格]
+[charaSet E 4015001 1 亚历山大]
+[charaSet F 1036001 1 兰陵王]
+[charaSet G 7007001 1 弗拉德三世]
+[charaSet H 1035001 1 迪尔姆德]
+[charaSet I 6026001 1 燕青]
+[charaSet J 6033000 1 以藏]
+
+[scene 70900]
+
+[wipeout openEye 0.1 1.5]
+[wait wipe]
+
+[fadein black 1.5]
+[wait fade]
+
+[wipein openEye 2.0 1.5]
+[wait wipe]
+
+[wt 1.0]
+
+[bgm BGM_TEITO 0.1]
+
+？1：早上好～。
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠莫里亚蒂
+早上好，御主。
+[k]
+
+[charaFace A 1]
+＠莫里亚蒂
+呵呵，等你御主工作引退之后，[r]有没有兴趣经营酒吧或者咖啡馆呢？
+[k]
+
+＠莫里亚蒂
+如果能和玛修·基列莱特小姐一起的话，[r]一定会非常愉快吧！
+[k]
+
+
+？1：和玛修一起经营酒吧……
+
+[branch select01_1]
+
+？2：和玛修一起经营咖啡馆……
+
+[branch select01_2]
+
+？！
+
+[label select01_1]
+
+[messageOff]
+[wipeout circleIn 1.5 1]
+[bgmStop BGM_TEITO 1.5]
+[se ade84]
+[wait wipe]
+
+[effect bit_talk_valentine_brilliant]
+
+[charaFadeout A 0.1]
+[seStop ade84 2.0]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 1.5]
+
+
+[wipein circleIn 1.0 1]
+[wait wipe]
+
+
+[bgm BGM_EVENT_7 0.1]
+
+＠玛修
+欢迎光临，这位客人。[r]我是调酒师玛修·基列莱特。
+[k]
+
+＠玛修
+因为是调酒师，[r]所以换了一身比较帅气的战斗搭配！
+[k]
+
+＠玛修
+尽管我不能喝酒，[r]但我会努力摇晃调酒器的、！
+[k]
+
+[charaFace B 2]
+[se ade252]
+
+＠玛修
+嘿[charaMoveReturn B -10,0 0.5]，呀[wt 0.5]，喝[charaMoveReturn B -10,0 0.5][seStop ade252 0.5]。
+[k]
+
+？1：嗯，真可爱！
+？！
+
+[branch select01_end]
+
+
+[label select01_2]
+
+[messageOff]
+[wipeout circleIn 1.5 1]
+[bgmStop BGM_TEITO 1.5]
+[se ade84]
+[wait wipe]
+
+[effect bit_talk_valentine_brilliant]
+
+[charaFadeout A 0.1]
+[seStop ade84 2.0]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 1.5]
+
+[scene 64100]
+
+[charaChange B 98001000 1 normal 0.1]
+
+[wipein circleIn 1.0 1]
+[wait wipe]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠玛修
+欢迎来到迦勒底咖啡馆！
+[k]
+
+＠玛修
+我是服务员玛修·基列莱特。[r]请慢坐！
+[k]
+
+[charaFace B 6]
+
+＠玛修
+啊，不好。[r]差点忘记了。
+[k]
+
+[charaFace B 3]
+
+＠玛修
+欢迎回来，前辈……♡
+[k]
+
+？1：绝赞……
+？2：不，不对，玛修是不会说这种话的。
+？！
+
+[label select01_end]
+？！
+
+[messageOff]
+[wipeout circleIn 1.0 1]
+[se ade84]
+[bgmStop BGM_EVENT_7 1.0]
+[wait wipe]
+
+[seStop ade84 1.5]
+
+[charaFadeout B 0.1]
+[effectStop bit_talk_valentine_brilliant]
+
+[scene 70900]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wipein circleIn 1.0 1]
+[wait wipe]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠莫里亚蒂
+……好了，妄想先到此为止。[r]看来魔术师们抵达了。
+[k]
+
+[charaFace A 1]
+
+＠莫里亚蒂
+三个人居然都一大清早赶来。[r]一定是等不及了吧！
+[k]
+
+？1：和玛修一起……
+？！
+
+[charaFace A 2]
+
+＠莫里亚蒂
+话说你还没清醒吗！[r]醒醒～！　快醒醒啦～～～！
+[k]
+
+[messageOff]
+
+[wt 0.5]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[cameraHome 0.1]
+[charaScale A 1.0]
+[charaFadeout A 0.1]
+
+
+[scene 71000]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+＠齐格
+欢迎各位光临我的宅邸。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_48 0.1]
+
+＠亚历山大
+嗯，选址不错。[r]干脆把这栋宅邸一并接收了吧。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠兰陵王
+……你在战斗前还有闲情逸致思考这种多余的问题啊。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠弗拉德三世
+大可随意思考。
+[k]
+
+[charaFace G 5]
+＠弗拉德三世
+反正这不过是妄想罢了。[r]还剩数日，汝等就好好爱护自己的掌上明珠吧。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[imageSet E cut100_aks 1]
+[imageSet F cut100_rro 1]
+[imageSet G cut100_vrd 1]
+
+[charaFadein E 0.4 0,-200]
+[charaFadein F 0.4 0,-200]
+[charaFadein G 0.4 0,-200]
+
+[wt 2.5]
+
+[charaFadeout E 0.4]
+[charaFadeout F 0.4]
+[charaFadeout G 0.4]
+[wt 0.5]
+
+[charaSet E 4015001 1 亚历山大]
+[charaSet F 1036001 1 兰陵王]
+[charaSet G 7007001 1 弗拉德三世]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠莫里亚蒂
+……唔。
+[k]
+
+＠莫里亚蒂
+说到魔术师，[r]我还以为会是Caster们作为代理登场呢……
+[k]
+
+[charaFace A 0]
+
+＠莫里亚蒂
+看来，这三位都是战意十足的魔术师呢。
+[k]
+
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_48 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+
+[imageSet B cut099_close 2]
+[imageSet C cut099_open 2]
+
+[se ad4]
+[seVolume ad4 0 0.3]
+
+[scene 70800]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+[seStop ad4 1.0]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+
+＠齐格
+请容我郑重迎接各位。[r]由衷欢迎各位光临我的宅邸。
+[k]
+
+[charaFace D 4]
+
+＠齐格
+……话虽这么说，[r]其实也没必要解除各位的戒心。
+[k]
+
+[charaFace D 6]
+
+＠齐格
+各位的目的是我所有的物品。[r]这我非常清楚。
+[k]
+
+＠齐格
+通过多个情报来源，[r]各位应该已经了解了这件东西九成是真品。
+[k]
+
+[charaFace D 0]
+
+＠齐格
+所以[line 3]你们应该想先得到确证吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠亚历山大
+嗯，确实。
+[k]
+
+[charaFace E 0]
+
+＠亚历山大
+如果事到如今才发现是赝品的话，[r]连我也没空摆出从容的表情了哦。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠兰陵王
+嗯，我对出言催促表示非常抱歉，[r]但希望您能让我们看看实物。
+[k]
+
+＠兰陵王
+当然，我们是不会直接就地厮杀的。
+[k]
+
+＠兰陵王
+弗拉德公也没意见吧？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠弗拉德三世
+当然。
+[k]
+
+＠弗拉德三世
+作为正统的魔术师，直接在此开战[r]乃是愚蠢之举，也是践踏尊严的野兽行径。
+[k]
+
+＠弗拉德三世
+只要持有者的这个男人对我们不失礼数，[r]余也不会做出打乱调音的行为。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠齐格
+谢谢。[r]那请各位先来看看。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.4]
+
+[charaFadein B 0.2 0,-200]
+[wt 0.1]
+[se ade253]
+[seVolume ade253 0 0.4]
+[wt 1.5]
+
+＠齐格
+这就是我们一族代代相传的，[r]圣遗物[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 0.5]
+[wt 0.5]
+[se ade254]
+[charaFadeout B 0.4]
+[charaFadein C 0.5 0,-200]
+[wt 0.2]
+[seStop ade254 0.5]
+[wt 2.3]
+
+＠齐格
+[#粘在屠龙英雄背后的菩提树叶]。
+[k]
+
+[messageOff]
+[se ad3]
+[seVolume ad3 0 0.4]
+[seVolume ad3 1.0 1.0]
+[wt 1.0]
+[seStop ad3 1.0]
+[charaFadeout C 0.4]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠亚历山大
+……！
+[k]
+
+[bgm BGM_EVENT_1 0.1]
+[charaFace E 2]
+
+＠亚历山大
+这……这是真货！[r]毋庸置疑的真货！
+[k]
+
+＠亚历山大
+尽管我身为魔术师的资历尚浅，[r]但我还没有生疏到会看错！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠兰陵王
+嗯，这威严的模样，[r]只需看一眼就能明白……！
+[k]
+
+＠兰陵王
+只要有了这个，[r]一定就能获得亚种圣杯战争的胜利！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠弗拉德三世
+[line 3]原来如此。
+[k]
+
+＠弗拉德三世
+用来召唤强大从者们的触媒……圣遗物。
+[k]
+
+＠弗拉德三世
+用来召唤英雄王的[#那块]蛇皮，[r]用来召唤征服王的[#那个]绳结。
+[k]
+
+＠弗拉德三世
+余还以为这些几乎全都落入协会手中了，[r]或许这会是残存世间的最后一件吧。
+[k]
+
+＠弗拉德三世
+确实是配得上作为余参加圣杯战争所需的贵重圣遗物……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠齐格
+……我很高兴看到各位似乎都明白这是真品了。
+[k]
+
+[charaFace D 6]
+
+＠齐格
+聚集于此的各位魔术师[r]都必须支付一定的代价[line 3]
+[k]
+
+[charaFace D 0]
+
+＠齐格
+但我觉得这东西有这样的价值。
+[k]
+
+＠齐格
+不用我多说，这件圣遗物，[r]将会成为召唤那位大英雄齐格飞的强大触媒。
+[k]
+
+＠齐格
+而且不会召唤出除他以外的其他存在。
+[k]
+
+＠齐格
+与此同时，这件物品也不可能被分割。[r]一旦遭到破坏，其作为触媒的效果就会大幅下降。
+[k]
+
+＠齐格
+换言之，能得到这件圣遗物的，[r]只有一个人。
+[k]
+
+＠齐格
+但是，该过程中若出现流血事件可不好。[r]我也不希望发生这种事。
+[k]
+
+[charaFace D 6]
+
+＠齐格
+所以才会举行拍卖会。
+[k]
+
+[bgmStop BGM_EVENT_1 2.0]
+
+＠齐格
+我相信你们能支付与这件圣遗物相称的金额。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace E 0]
+[charaFadein E 0.1 0,0]
+[charaFace G 0]
+[charaFadein G 0.1 326,0]
+[charaFace F 0]
+[charaFadein F 0.1 -326,0]
+
+＠魔术师们
+……[r]……
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_5 0.1]
+＠莫里亚蒂
+（真不错。明白了吗，御主？）
+[k]
+
+[charaFace A 1]
+
+＠莫里亚蒂
+（他们都在思考如何抢先一步。[r]　也做好了流血的准备。）
+[k]
+
+[charaFace A 0]
+
+＠莫里亚蒂
+（连拍卖会是否能正常举办还是个问题。）
+[k]
+
+？1：（这不是很危险吗？）
+
+＠莫里亚蒂
+（当然危险啦。）
+[k]
+
+[charaFace A 3]
+
+＠莫里亚蒂
+（好了……我们……[r]　该怎么行动呢……）
+[k]
+
+？2：（我们该怎么办？）
+
+[charaFace A 1]
+
+＠莫里亚蒂
+（该怎么办呢……）
+[k]
+
+[charaFace A 0]
+
+＠莫里亚蒂
+（无论是对魔术师们，[r]　还是对他们背后组织的人……）
+[k]
+
+＠莫里亚蒂
+（这都是决不能放过的圣遗物。）
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠亚历山大
+……[r]……只有一个人吗。
+[k]
+
+＠亚历山大
+尽管我希望能用和平的方法来解决。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠兰陵王
+没错。[r]但事不如人愿。
+[k]
+
+[charaFace F 5]
+
+＠兰陵王
+我说得没错吧？[r]弗拉德公。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[bgmStop BGM_EVENT_5 0.7]
+
+＠弗拉德三世
+以藏。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaDepth J 10]
+[charaTalk J]
+[charaFace J 9]
+[charaFace G 0]
+[charaFadein J 0.1 2]
+[charaFadein G 0.1 0]
+
+
+＠以藏
+啊，干嘛。
+[k]
+
+[charaFace G 1]
+
+[bgm BGM_EVENT_49 0.1]
+
+＠弗拉德三世
+[#把你的全部财产交给余]。[r]那东西值这个价。
+[k]
+
+[charaFace J 11]
+
+＠以藏
+别……别胡言乱语了！[r]全部财产！？
+[k]
+
+＠以藏
+就为了这么一片叶子！？
+[k]
+
+[charaFace G 5]
+
+＠弗拉德三世
+闭嘴。
+[k]
+
+＠弗拉德三世
+表面的权力可以让给你们。[r]但是[line 3]
+[k]
+
+＠弗拉德三世
+如果放过了这件圣遗物，[r]你就必须用一辈子来补偿余。
+[k]
+
+[charaFace J 10]
+
+＠以藏
+呜，咕……！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[charaFadeout J 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+＠亚历山大
+……唔。
+[k]
+
+[charaFace E 1]
+
+＠亚历山大
+（看来，我似乎也有机会呢。）
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+＠兰陵王
+（剩下的就是资金问题了……）
+[k]
+
+[charaFace F 0]
+
+＠兰陵王
+（反正不过是偏远都市的帮派组织。[r]　不把他们彻底榨干是解决不了问题的。）
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+
+＠弗拉德三世
+（……原本，这并不是吾等能够奢望的触媒。[r]　若非[#典位:Pride]以上，根本可望而不可求。）
+[k]
+
+[charaFace G 0]
+
+＠弗拉德三世
+（但是，这里只有与协会关系薄弱的两位魔术师。[r]　应该能有办法……）
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠齐格
+拍卖会将在明天举行。
+[k]
+
+＠齐格
+参加者是亚历山大、兰陵王、[r]以及弗拉德三世。
+[k]
+
+[charaFace D 5]
+
+＠齐格
+除他们以外，不允许其他人参战。
+[k]
+
+＠齐格
+就算有魔术师听说了这件事，[r]打算报出比这三位更高的价格[line 3]
+[k]
+
+＠齐格
+我们也想讲仁义。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠弗拉德三世
+（太完美了！）
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠齐格
+那今天请各位好好休息吧。
+[k]
+
+[charaFace D 0]
+
+＠齐格
+当然，各位也可以自由地尽力筹措资金。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_49 1.1]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace E 0]
+[charaFadein E 0.1 0,0]
+[charaFace G 0]
+[charaFadein G 0.1 356,0]
+[charaFace F 0]
+[charaFadein F 0.1 -326,0]
+[wt 1.5]
+
+
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 0.5]
+
+[charaDepth H 10]
+[charaDepth I 7]
+[charaDepth J 3]
+[charaFace H 0]
+[charaFadein H 0.1 0,0]
+[charaFace J 9]
+[charaFadein J 0.1 330,0]
+[charaFace I 0]
+[charaFadein I 0.1 -330,0]
+[wt 1.5]
+
+
+[charaFadeout H 0.1]
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[wt 0.5]
+
+[se ade74]
+[se ad311]
+[se ad184]
+[wt 1.0]
+[seStop ade74 1.0]
+[seStop ad311 1.0]
+[seStop ad184 1.0]
+[wt 1.0]
+
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠齐格
+……呼。
+[k]
+
+[charaFace D 6]
+＠齐格
+Mr.莫里亚蒂，[r]还有你是叫[%1]吧。
+[k]
+
+＠齐格
+明天才是关键。[r]拜托你们了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠莫里亚蒂
+明白了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠齐格
+嗯。[r]那一会儿再见。
+[k]
+
+[messageOff]
+[wt 0.3]
+[se ade74]
+
+[charaMove D -40,0 0.5]
+[charaFadeout D 0.4]
+[wt 0.5]
+[seStop ade74 1.0]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠莫里亚蒂
+好了……尽管发生了很多事，[r]但先得解决眼前的工作才行。
+[k]
+
+？1：是击退双足飞龙吧。
+
+[messageOff]
+[charaTalk J]
+[bgmStop BGM_EVENT_2 0.5]
+[se ad19]
+[seVolume ad19 0 0.5]
+[wt 2.0]
+
+[bgm BGM_EVENT_3 0.1]
+[charaFace A 6]
+
+＠莫里亚蒂
+答对了！
+[k]
+
+？2：是击退科摩多巨蜥吧。
+
+[messageOff]
+[charaTalk J]
+[bgmStop BGM_EVENT_2 0.5]
+[se ad19]
+[seVolume ad19 0 0.5]
+[wt 2.0]
+
+[bgm BGM_EVENT_3 0.1]
+[charaFace A 2]
+
+＠莫里亚蒂
+只能说是击退双足飞龙啦！
+[k]
+
+？！
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.5]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

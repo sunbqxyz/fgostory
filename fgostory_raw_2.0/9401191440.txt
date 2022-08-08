@@ -1,0 +1,104 @@
+
+
+＄94-01-19-14-4-0
+[soundStopAll]
+[charaSet A 7016000 1 玉藻猫]
+[charaSet B 1007000 1 高文]
+[charaSet C 10002000 1 Meltryllis]
+[charaSet D 98113300 1 魔神黑触手]
+
+
+[bgm BGM_EVENT_55 0.1]
+[scene 41000]
+[fadein black 1.5]
+[wait fade]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+＠玉藻猫
+那就由猫来背Lip，一口气前往教会吧。[r]回头见，主人！
+[k]
+
+[messageOff]
+[se ad60]
+[charaFadeout A 0.4]
+[wt 0.4]
+[seStop ad60 1.0]
+[wt 1.0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠高文
+虽然战斗力有所减少，但这样也就能放心了。[r]罗宾汉却不知不觉消失了……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠Meltryllis
+嗯。趁[%1]被Lip吸引注意力的时候，[r]他一声不吭机灵地脚底抹油了。
+[k]
+
+＠Meltryllis
+不过从经验值来说，他也不是什么大猎物，[r]这次就放他一马好了。
+[k]
+
+[charaFace C 0]
+＠Meltryllis
+比起那些，现在先回归正题吧。[r]我们应该优先前往中央管制室。
+[k]
+
+＠Meltryllis
+根据玛布尔的说法，[r]应该还有1、2个存活的工作人员才对。
+[k]
+
+＠Meltryllis
+虽说BB应该不会再妨碍我们了，[r]但还是提高警惕前进吧。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_55 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout C 0.1]
+[wt 0.1]
+[scene 41100]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.4 1]
+＠高文
+[line 3]不可能。
+[k]
+
+？1：[line 6]（傻眼了。）
+？2：[line 6]（哑口无言。）
+
+？！
+
+[charaFace B 2]
+＠高文
+[line 3]这不可能。[r]为什么在这里能看到那个。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+[charaTalk off]
+[charaFadein D 0.4 1]
+[wt 0.7]
+[bgm BGM_EVENT_24 0.1]
+＠高文
+[line 3]魔神柱！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,111 @@
+
+
+
+＄91-70-14-02-1-1
+
+[soundStopAll]
+[charaSet A 7014001 1 南丁格尔]
+
+
+[scene 10400]
+
+[wipeout openEye 0.1 0.7]
+[wait wipe]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipein openEye 1.0 0.7]
+[wait wipe]
+
+[wt 0.5]
+
+[se ad77]
+[wt 2.0]
+
+[se ad8]
+
+[se adm36]
+[seVolume adm36 0 0.2]
+[wt 1.0]
+[seVolume adm36 0.5 0.6]
+[wt 1.5]
+[seVolume adm36 0.4 1.0]
+[wt 1.0]
+[seStop adm36 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠南丁格尔
+早上好。[r]……今天早上几乎也是按时起床了呢。
+[k]
+
+＠南丁格尔
+距离上一次检查已经过了一周了，[r]所以需要进行早上的诊查。请到医务室来。
+[k]
+
+＠南丁格尔
+玛修·基列莱特已经在医务室中等着了。[r]所以请你也快点来。
+[k]
+
+＠南丁格尔
+就是这样。
+[k]
+
+[messageOff]
+[se adm36]
+[seStop adm36 2.5]
+[charaMove A -50,0 0.5]
+[charaFadeout A 0.4]
+[wt 1.5]
+
+？1：南丁格尔！
+？！
+
+[seStop adm36]
+
+[bgmStop BGM_EVENT_2 0.8]
+[se adm36]
+[seStop adm36 0.8]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.8]
+
+＠南丁格尔
+在。
+[k]
+
+？1：……早、早上好。
+
+？！
+
+[messageOff]
+[bgm BGM_EVENT_6 0.1]
+[charaFaceFade A 8 1.0]
+[wt 2.0]
+[charaFace A 0]
+
+＠南丁格尔
+早上好。
+[k]
+
+[charaFace A 1]
+
+
+＠南丁格尔
+[line 3]重新来一次。[r]今后也请多多关照。御主。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_6 2.0]
+[wait fade]
+[soundStopAll]
+[end]

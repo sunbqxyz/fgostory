@@ -1,0 +1,514 @@
+
+＄94-05-34-13-1-0
+
+
+[soundStopAll]
+[charaSet A 8001600 1 玛修]
+[charaSet B 4037000 1 尼莫]
+[charaSet C 25004001 1 琰女]
+[charaSet D 7004001 1 弗兰]
+[charaSet E 1098182100 1 尼莫教授]
+[charaSet F 5039000 1 斯卡哈·斯卡蒂]
+[charaSet G 25006000 1 梵高]
+[charaSet H 1098176810 1 刑部姬]
+
+[scene 99002]
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠玛修
+终于攒够召唤所需的资源了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠尼莫
+我们需要的从者是……
+[k]
+
+？1：挥舞巨大近身宝具的……
+？2：超攻击型从者！
+？！
+
+[charaFace B 4]
+＠尼莫
+……应该会是……Berserker吧……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+＠C：琰女A
+船长很反感Berserker吗？[r]我觉得挺可爱的呀？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠尼莫
+会吗……他们基本上都难以沟通、一身蛮力，[r]一般提到Berserker肯定会有所防范吧。
+[k]
+
+？1：无论来的是谁肯定都没问题。
+？2：不用担心，动手吧。
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_82 1.0]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+[se ad153]
+[seVolume ad153 0 0]
+[seVolume ad153 0.7 0.2]
+[effect bit_talk_summon]
+[wt 1.0]
+[se ad632]
+[seStop ad632 5.0]
+[wt 1.0]
+
+[seStop ad632 1.0]
+[seStop ad153 1.0]
+[se ad574]
+[fadeMove white 1.0 0.6]
+[wt 2.0]
+
+[se su3]
+[fadeMove white 1.0 0.0]
+[effectStop bit_talk_summon]
+[wt 1.0]
+
+[wt 4.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 1.0]
+＠弗兰
+唔～……唔，唔～……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠尼莫
+太好啦！　是狂化阶级比较低的！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠尼莫教授
+唔～，原来如此，是钝器啊……[r]要用来破坏装甲，或许得经过一番改造……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠弗兰
+唔～……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace D 0]
+[charaFace A 0]
+[charaFadein D 0.1 0]
+[charaFadein A 0.1 2]
+＠玛修
+弗兰小姐，其实发生了如此如此这般这般的事……
+[k]
+
+＠弗兰
+唔～…………啊～…………
+[k]
+
+＠弗兰
+要…………变热…………？
+[k]
+
+[charaFace A 18]
+＠玛修
+啊！　对了，弗兰小姐也是最优解呢！[r]斯卡哈·斯卡蒂小姐，您在吗！？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad8]
+[wt 0.7]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 1]
+＠斯卡哈·斯卡蒂
+当然在。来，弗兰肯斯坦啊，[r]穿上这件泳装燥热起来吧！
+[k]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.4]
+
+
+[masterBranch _Male _Female]
+
+[label _Male]
+[se bas16]
+[effect bit_talk_CommandMantra_05 0,64]
+[wt 1.0]
+[branch _branchEnd]
+
+[label _Female]
+[se bas16]
+[effect bit_talk_CommandMantra_08 0,64]
+[wt 1.0]
+[branch _branchEnd]
+
+[label _branchEnd]
+[fadeout white 0.4]
+[wait fade]
+[effectDestroy bit_talk_CommandMantra_05]
+[effectDestroy bit_talk_CommandMantra_08]
+[charaFadeout D 0.1]
+[charaSet D 1031001 1 弗兰]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[fadein white 0.4]
+[wait fade]
+
+
+[bgm BGM_EVENT_62 0.1]
+
+＠弗兰
+唔～，虽然不热，但我会炒热气氛。
+[k]
+
+[charaFace D 5]
+＠弗兰
+[#少女之贞节:Bridal Blade]～。[r]用这个，鲸鱼鱼，烤串串。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠尼莫教授
+这……这就是超大型斩击兵器……！？[r]很适合用来贯穿装甲对内部造成打击～！
+[k]
+
+[charaFace E 0]
+＠尼莫教授
+可是无论怎样想，[r]这都不是携带型兵器的正常运用理念吧？
+[k]
+
+[charaFace E 1]
+＠尼莫教授
+呵呵，呵呵呵……明显是个身为天才[r]却很蠢的科学家……下次请为我介绍～……
+[k]
+
+？1：那应该是人类最强的头脑。
+？2：（起码我知道决不能让你们俩见面。）
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_62 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠弗兰
+唔～，唔？　都是些不认识的人。
+[k]
+
+＠弗兰
+你，是谁？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+
+[charaTalk C]
+[charaFace C 21]
+[charaFace D 0]
+[charaFadein C 0.4 0]
+[charaFadein D 0.1 2]
+＠C：琰女B
+你好！　我是琰女！[r]你也可以叫我玉玉……
+[k]
+
+＠C：琰女B
+啊，弗兰小姐挺直背脊的话，[r]个子还挺高的呢……
+[k]
+
+[charaFace D 8]
+＠弗兰
+啊～。小旗袍，好娇小。真可爱。请多指教。
+[k]
+
+[charaFace C 6]
+＠C：琰女B
+唔哇，倒是弗兰小姐怎么会如此可爱……！[r]请多指教啦！
+[k]
+
+[charaFace D 0]
+＠弗兰
+唔～。那么，这位是？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.4 0]
+＠梵高
+唔呵呵……梵高，就是梵高……
+[k]
+
+＠弗兰
+梵高。
+[k]
+
+＠弗兰
+唔～？
+[k]
+
+[charaFace G 7]
+＠梵高
+唔呵呵……唔呵呵……
+[k]
+
+[bgmStop BGM_EVENT_77 0.7]
+
+[charaFace D 6]
+＠弗兰
+梵高高。
+[k]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaFace G 9]
+＠梵高
+噗呵呵……好笑话……
+[k]
+
+[charaFace D 8]
+＠弗兰
+感觉，合得来！　[#你也是怪物]？
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠尼莫
+！
+[k]
+
+？1：机会难得！
+？2：你们要好好相处哦！？
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace G 9]
+[charaFace D 0]
+[charaFadein G 0.1 0]
+[charaFadein D 0.1 2]
+＠弗兰
+要不要一起躺下放松～？
+[k]
+
+[charaFace G 7]
+＠梵高
+那你愿意当梵高的模特吗……？[r]哎嘿嘿，感觉可以画出一幅像向日葵那样的好画……
+[k]
+
+＠弗兰
+好哦～。走吧～。
+[k]
+
+[messageOff]
+[charaFadeout G 0.4]
+[charaFadeout D 0.4]
+[wt 0.4]
+[se ad8]
+[wt 1.5]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠H：刑部姬B
+……那个～，难不成梵高老师的真实身份[r]存在某种嫌疑……？[bgmStop BGM_EVENT_94 0.4]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFace H 0]
+[charaFadein C 0.1 0]
+[charaFadein H 0.1 2]
+＠C：琰女B
+来，小刑小姐！[r]要懂得察言观色，一起去食堂吧，小刑小姐！
+[k]
+
+＠C：琰女B
+听说斯卡蒂老师重现了荔枝味的GARIGARI冰棒呢！[r]向着食堂GO～GO～！
+[k]
+
+[charaFace H 9]
+＠H：刑部姬B
+呀[#公主:我]说错话了啊啊啊！　御亲不要抛弃[#公主:我]啊！[charaShake H 0.04 3 3 0.7]
+[k]
+
+[messageOff]
+[charaFadeout C 0.4]
+[charaFadeout H 0.4]
+[wt 0.4]
+[se ad8]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠C：琰女A
+……小刑小姐，Don't mind。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠H：刑部姬A
+在近距离听到自己的分身说错话然后辩解，[r]世上可曾有如此酷刑……？
+[k]
+
+[charaFace H 5]
+＠H：刑部姬A
+哎哎，虽然不是为了挽回名誉，不过[#公主:我]有事报告！[r]雷达上出现敌影！　看来又是那种中型敌人哦！[bgm BGM_EVENT_80 0.1]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 22]
+[charaFadein C 0.1 1]
+＠C：琰女A
+哎哟，光顾说话了！　方位是2-1-3！[r]探测声也光明正大地来了哦！
+[k]
+
+？1：咦？　难道说……
+？2：这就已经轮到弗兰出场了？
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[se adm48]
+[seVolume adm48 0 0.1]
+[seVolume adm48 1.0 1.0]
+[wt 0.3]
+
+[se ad8]
+[wt 0.7]
+[seStop adm48 1.0]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.4 1]
+＠梵高
+呼、呼，将弗兰亲带过来了……！
+[k]
+
+＠梵高
+她躺下后瞬间不动如山，[r]只好将她放在平板车上……梵高灵机……或者说梵高机动……
+[k]
+
+＠弗兰
+好懒，好烦。冷气麻烦调到『强』。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠玛修
+诞……诞生了一对有趣的组合！[r]不过现在还是请您助我们一臂之力吧……！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

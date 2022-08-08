@@ -1,0 +1,1645 @@
+
+＄91-10-33-01-1-0
+
+[soundStopAll]
+
+[charaSet A 1033002 1 齐格鲁德]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 4019001 1 玛尔达]
+[charaSet E 5038000 1 齐格]
+[charaSet F 4012000 1 奥斯曼狄斯]
+[charaSet G 2031001 1 拿破仑]
+[charaSet H 4003001 1 德雷克]
+[charaSet I 7001001 1 赫拉克勒斯]
+[charaSet J 98013300 1 龙]
+
+[charaSet K 8001000 1 dummy特效1]
+[charaSet L 8001000 1 dummy特效2]
+[charaSet M 8001000 1 dummy特效3]
+
+[charaPut K 0,-350]
+[charaMoveScale K 0.1 0.1]
+
+[charaSet N 1033002 1 齐格鲁德（剪影_黑）]
+[charaFilter N silhouette 01060eFF]
+
+[branchQuestNotClear lblNotClear 3000303]
+[flag IsClear true]
+[branch lblConf]
+[label lblNotClear]
+[flag IsClear false]
+[label lblConf]
+
+
+[branch lblNotClear1 IsClear false]
+
+[charaSet B 8001410 1 玛修]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[charaSet B 8001000 1 玛修]
+
+[label lblConf1]
+
+
+[scene 10000]
+
+[charaDepth B 1]
+[charaDepth E 5]
+[charaDepth D 9]
+
+[se ad450]
+[seVolume ad450 0 0.2]
+[effect bit_talk_fire_blue]
+[backEffect bit_talk_fire_blue]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.4]
+
+[se bac302]
+[charaEffect K bit_talk_blue_fire]
+[wt 1.2]
+[seStop bac302 1.4]
+[seStop ad450 1.4]
+[wt 2.2]
+[effectStop bit_talk_fire_blue]
+[backEffectStop bit_talk_fire_blue]
+[wt 0.9]
+
+＠
+[line 3]燃烧，燃烧，在燃烧。[bgm BGM_EVENT_79 0.1 0.6]
+[k]
+
+＠
+这是灼烧身体、灼烧内心、[r]灼烧热情，让幸福升华的存在。
+[k]
+
+＠
+啊啊，我的火，我的焰，[r]仍未见衰弱。
+[k]
+
+＠
+拒绝冻结，融化冰雪……
+[k]
+
+＠
+这内侧的力量，[r]仍然那么猛烈。
+[k]
+
+＠
+现在，仍然。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_79 2.8]
+[wt 1.0]
+
+[fadeout black 1.8]
+[wait fade]
+
+[charaPut K 20000,2000]
+[charaEffectStop K bit_talk_blue_fire]
+[wt 0.1]
+
+[scene 20802]
+[cameraMove 0 0,0 1.02]
+[wt 0.8]
+
+[se ade294]
+[seVolume ade294 0 0.4]
+[se ad450]
+[seVolume ad450 0 0.5]
+
+[fadein black 1.8]
+[wait fade]
+[wt 0.2]
+
+[bgm BGM_EVENT_2 0.1]
+[wt 0.6]
+
+[seStop ade294 0.9]
+[seStop ad450 1.8]
+[wt 1.2]
+
+？1：齐格鲁德，炖菜做好了哦。
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠齐格鲁德
+感激不尽。
+[k]
+
+[charaFace A 10]
+＠齐格鲁德
+虽说从者不需要进食，[r]但如果食物充裕的话，在下愿意相伴。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠玛修
+没关系。还有很多。[r]多到光凭我们几个根本吃不完。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠芙芙
+芙芙。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠玛尔达
+对不起。每当我负责做菜的时候，[r]不知为何常常会做成大家庭用的……
+[k]
+
+＠玛尔达
+虽说这或许很适合多人野营，[r]但这种时候该说草率呢，还是粗糙呢。
+[k]
+
+？1：但很好吃啊。
+
+[charaFace D 1]
+
+＠玛尔达
+哎呀。谢谢你，御主。[r]这对做饭的人来说真是种激励。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？2：豪爽！
+
+[charaFace D 1]
+
+＠玛尔达
+我就当是在夸奖我好了。[wt 0.9][charaFace D 4][r]……没错吧？
+[k]
+
+[messageOff]
+[cameraMove 0.2 0,5 1.02]
+[wt 0.2]
+[cameraMove 0.25 0,0 1.02]
+[wt 0.9]
+
+[charaFace D 1]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+……嗯，有种非常温暖的感觉。[r]这或许就是家的味道吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠玛尔达
+怎么说呢。我在为家人烹饪的时候，[r]大多都是这种东西。
+[k]
+
+＠玛尔达
+要说是家的味道……对。
+[k]
+
+[charaFace D 1]
+
+＠玛尔达
+热腾腾、营养，以及放松的氛围。[r]我觉得有这些就够了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+原来如此原来如此。
+[k]
+
+[charaFace A 0]
+
+＠齐格鲁德
+由于在下是古老的英雄，[r]所以常常会忘却家的味道。
+[k]
+
+？1：是吗？
+？！
+
+＠齐格鲁德
+嗯。
+[k]
+
+[charaFace A 1]
+
+＠齐格鲁德
+在下……咀嚼……[charaMoveReturn A 0,-3 0.4][wt 0.4][charaMoveReturn A 0,-3 0.3][wt 0.6]是被母亲抚养长大的……[charaMoveReturn A 0,-3 0.4][wt 0.4][charaMoveReturn A 0,-3 0.3][wt 0.6][r]咀嚼咀嚼……[charaMoveReturn A 0,-3 0.4][wt 0.4][charaMoveReturn A 0,-3 0.3][wt 0.3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠玛尔达
+喂喂，别边吃边说话。[r]你是大英雄吧？　太没规矩了！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.3]
+[charaMoveReturn A 0,-3 0.4]
+[wt 0.4]
+[charaMoveReturn A 0,-3 0.3]
+[wt 0.6]
+[charaFace A 10]
+
+＠齐格鲁德
+……失礼了。[wt 0.5][r]咀嚼咀嚼……[charaMoveReturn A 0,-3 0.4][wt 0.4][charaMoveReturn A 0,-3 0.3][wt 0.6][charaMoveReturn A 0,-6 0.6][se ad217][seVolume ad217 0 0.2][wt 0.5][seStop ad217][wt 0.2]
+[k]
+
+？1：（吃起来细嚼慢咽的……）
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠玛尔达
+……不过一言不发地吃东西也有点奇怪。[r]只要别边嚼边说，还是应该聊聊天吧。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+说得也是。
+[k]
+
+
+[messageOff]
+[wt 0.4]
+[se ad217]
+[seVolume ad217 0 0.2]
+[charaMoveReturn A 0,-6 0.6]
+[wt 0.5]
+[seStop ad217]
+[wt 0.4]
+
+＠齐格鲁德
+……在下的父亲是战士齐格蒙德，[r]然而据说他于在下还是孩子的时候就战死了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[bgmStop BGM_EVENT_2 1.4]
+
+＠玛尔达
+……[r]……
+[k]
+
+[charaFace D 4]
+＠玛尔达
+这……节哀顺变。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.2 1]
+[wt 1.4]
+[se ade126]
+[charaFace A 7]
+[wt 0.7]
+
+＠齐格鲁德
+战士的战死。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaShake C 0.04 6 1 0.3]
+
+＠芙芙
+芙！？[bgm BGM_EVENT_7 0.1]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠玛尔达
+喂[messageShake 0.04 4 4 0.3]你！？
+[k]
+
+[messageShakeStop]
+
+＠玛尔达
+你在说什么呢！？[r]害我瞬间思考了一会儿！
+[k]
+
+[charaFace D 3]
+
+＠玛尔达
+……哎啊啊！[r]刚才不算，刚才不算！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+失礼了。[r]在下有想到什么就脱口而出的[#性质:习惯]。
+[k]
+
+＠齐格鲁德
+以至于连吾爱都建议过在下，[r]说『还是不要说太多笑话为好』。
+[k]
+
+[bgmStop BGM_EVENT_7 3.0]
+
+[charaFace A 0]
+
+＠齐格鲁德
+不管怎么说，父亲死后，母亲再婚……[r]在下被交给某个铁匠抚养。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠玛修
+这[line 3]
+[k]
+
+？1：难道是雷金？
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+嗯，既然您知道在下的传说，[bgm BGM_EVENT_11 0.1 0.8][r]那就好办了。
+[k]
+
+＠齐格鲁德
+没错，就是那位雷金。
+[k]
+
+？2：是个什么样的人？
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+是个名叫雷金的男人。[bgm BGM_EVENT_11 0.1 0.8][r]他作为养父负责抚养在下。
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.6]
+[charaFace B 12]
+
+＠玛修
+他很……严厉吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+当然。
+[k]
+
+＠齐格鲁德
+雷金必须将在下培养成一名英雄。
+[k]
+
+＠齐格鲁德
+因此自幼起，[r]在下就被当做未来的英雄培养。
+[k]
+
+[messageOff]
+[fadeout black 1.8]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 20160902]
+[cameraMove 0.1 180,50 1.55]
+[cameraFilter gray]
+[wt 0.2]
+
+[fadein black 1.8]
+[wait fade]
+[wt 0.4]
+
+＠
+剑之术理、枪之运用、[r]弓之技术、斧之道理。
+[k]
+
+＠
+在下被传授了各种武器的各种战法，[r]在下自己也贪婪地汲取着知识。
+[k]
+
+[messageOff]
+[fadeout black 1.8]
+[wait fade]
+
+[scene 60701]
+[cameraHome 0.1]
+[wt 0.1]
+
+[fadein black 1.8]
+[wait fade]
+[wt 0.4]
+
+＠
+与之相应，也必须锻炼肉体才行。
+[k]
+
+＠
+从早到晚不停奔跑，[r]悄无声息地在草原上驰骋。
+[k]
+
+＠
+学会野兽的狩猎方法。[r]学会打倒人的方法。
+[k]
+
+＠
+获得打倒战士、勇者、英雄的技能。[r]甚至还有应对魔性之敌的战斗方法。
+[k]
+
+＠
+[line 3]生来就在锻炼。[r][line 3]我接受了成为英雄的宿命。
+[k]
+
+＠
+不痛苦。[r]虽然不痛苦。
+[k]
+
+[messageOff]
+[fadeout black 1.6]
+[wait fade]
+
+[scene 20802]
+[cameraFilter normal]
+
+[fadein black 1.6]
+[wait fade]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+……不，仔细想来那还是很痛苦的。
+[k]
+
+[charaFadeout A 0.1]
+
+＠
+[charaTalk B]
+[line 3]我不知不觉地脱口而出。
+[k]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠玛尔达
+这样啊，是呢。[r]这……确实很痛苦。
+[k]
+
+[charaFace D 0]
+
+＠玛尔达
+但我很惊讶。我还以为[r]齐格鲁德是会忍受的类型呢。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+唔。
+[k]
+
+[charaFace A 10]
+
+＠齐格鲁德
+既然这里没有在下可以倾吐爱意的存在，[r]只有名副其实可以托付生命的战友们。
+[k]
+
+＠齐格鲁德
+……那在下觉得自己还是可以说一些丧气话的。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 1.2]
+
+[charaTalk B]
+[charaFace D 0]
+[charaFace B 6]
+[charaFadein D 0.1 0]
+[charaFadein B 0.1 2]
+
+＠玛修
+[line 3]
+[k]
+
+＠玛尔达
+……[r]……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[wt 0.6]
+
+＠玛尔达
+咳咳！[charaMoveReturn D 0,-5 0.4][wt 0.65][charaFace D 3][r]……继续吃饭吧。
+[k]
+
+？1：玛尔达小姐害羞了……！
+？！
+
+[charaFace D 2]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠玛尔达
+喂，说你呢，认真吃饭！[wt 0.6][charaFace D 1][r]……不过嘛。
+[k]
+
+＠玛尔达
+被时代与国家都不同的人这么信任，[r]当然会感到不好意思啦。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+哈哈哈，是在下失礼了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠玛尔达
+你痛苦的日子……[r]我是无法想象的。
+[k]
+
+[charaFace D 1]
+
+＠玛尔达
+但不管怎么说，我会祈祷。
+[k]
+
+＠玛尔达
+为了向不屈服于那些痛苦的日子，[r]成为英雄的那份信念表示敬意。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+确实如玛尔达阁下所说的。
+[k]
+
+＠齐格鲁德
+那段日子确实很辛苦、沉重。
+[k]
+
+[charaFace A 10]
+
+＠齐格鲁德
+但倘若那些都是为了在下今天能在这里。[r]那在下愿意笑着回首往事。
+[k]
+
+[charaFace A 0]
+＠齐格鲁德
+只不过，如果能再见到雷金，[r]我肯定还会打倒他吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠芙芙
+芙芙……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+唔。
+[k]
+
+＠齐格鲁德
+反正都记载于传说中了，在下就坦白了吧，[r]雷金欺骗了在下。
+[k]
+
+＠齐格鲁德
+在打倒邪龙之后，[r]他谋划夺去遗留的财宝。
+[k]
+
+＠齐格鲁德
+为此，他甚至打算排除[r]成为他障碍的我……在下。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠玛修
+这……太可怕了吧。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠齐格鲁德
+嗯。[r]但如各位所见，在下成功反杀了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠玛尔达
+唔，嗯。[r]你居然会以此为傲呢。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+那当然。
+[k]
+
+＠齐格鲁德
+在下从不觉得自己是正义使者。[r]但是[line 3]
+[k]
+
+＠齐格鲁德
+再怎么说，抚养人、怂恿人，[r]却为了财宝偷袭的行为必是邪恶吧。
+[k]
+
+＠齐格鲁德
+而对此的反杀，[r]通常会被列入正义的范畴吧。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFace B 12]
+[charaFadein D 0.1 0]
+[charaFadein B 0.1 2]
+
+＠玛尔达
+这个嘛，也是。[r]欺骗背叛的动机是财富欲嘛。
+[k]
+
+＠玛修
+……齐格鲁德先生……[r]还恨雷金先生吗？
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+……[r]……
+[k]
+
+＠齐格鲁德
+不，被你这么一问，在下扪心自问，[r]其实并没有什么恨意。
+[k]
+
+[charaFadeout A 0.1]
+
+＠
+[charaTalk B]
+[line 3]确实没有恨意。[r]却很悲伤。
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+他将在下培养成英雄，对在下有恩。
+[k]
+
+＠齐格鲁德
+更重要的是，为了邂逅吾爱，[r]在下必须走那条道路才行。
+[k]
+
+[charaFace A 10]
+
+＠齐格鲁德
+正所谓幸运与不幸仅一线之差。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠玛尔达
+这种难道不算乐天派吗？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+[charaShake A 0.04 2 3 0.4]
+
+＠齐格鲁德
+……[r]……[wt 0.6]是这样吗……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠玛尔达
+至于为这句话受打击吗！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠齐格鲁德
+在下性格比较一板一眼，[r]所以从未被人评价为乐天派过。
+[k]
+
+＠齐格鲁德
+在下还从未意识到，[wt 0.5][charaFace A 1][r]原来如此……在下是乐天派啊……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠玛尔达
+能在死后理解自己[r]也算是成为从者的好处了吧。
+[k]
+
+[charaFace D 1]
+＠玛尔达
+今后也应该乐天地继续钻研。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+唔。
+[k]
+
+＠齐格鲁德
+在下觉得，[r]玛尔达阁下似乎也是个乐天派。
+[k]
+
+＠齐格鲁德
+您具备钢铁般的内心，与包容这些的慈爱，[r]会为人们带去希望。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠玛尔达
+唔。[wt 0.3][charaFace D 1][r]……说得对，我恐怕也是个乐天派。
+[k]
+
+＠玛尔达
+但是，我觉得这比表面上为世间忧心，[r]实际却不付出行动要好得多。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+若不这样可当不了什么圣女。[r]在下敬佩不已。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[charaShake D 0.04 2 2 0.3]
+[wt 0.9]
+[charaFace D 3]
+
+＠玛尔达
+被你这么夸奖，[r]我怪不好意思的……
+[k]
+
+[messageOff]
+[wt 0.6]
+[wipeout rollRight 1.6 1.0]
+[bgm BGM_EVENT_2 1.6 0.5]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[wipein rollLeft 1.6 1.0]
+[wait wipe]
+[wt 0.4]
+
+
+[se ad492]
+[wt 1.1]
+[seStop ad492 0.2]
+[wt 0.2]
+[se adm40]
+
+[bgm BGM_EVENT_2 1.0 1.0]
+[wt 0.4]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[wt 0.2]
+
+＠玛尔达
+我吃饱了。
+[k]
+
+[charaFace D 0]
+＠玛尔达
+话说回来。[r]这个特异点真的有邪龙吗？
+[k]
+
+＠玛尔达
+齐格，怎么样？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.6 1]
+[wt 1.0]
+
+＠齐格
+确实有同种……不，[r]我或许不能被称作它们的同种。
+[k]
+
+＠齐格
+但确实能感受到那类气息。[wt 0.6][charaFace E 1][r]另外，这事暂且不提，炖菜真好吃。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠玛尔达
+嗯，因为我帮你调了比较重的口味。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠齐格
+谢谢。
+[k]
+
+＠齐格
+我的味觉比常人迟钝，[r]所以如果没有这种程度的重口味，我根本尝不出味道来。
+[k]
+
+＠齐格
+……嗯。[r]真好吃。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠玛尔达
+太好了太好了。
+[k]
+
+[charaFace D 2]
+
+＠玛尔达
+好了，吃完这个就再探索一遍吧。[r]这次一定要狠狠抽一顿邪龙。
+[k]
+
+[charaFace D 5]
+
+＠玛尔达
+……不对，是降服邪龙……[r]用慈悲与祈祷，从正面堂堂正正地……
+[k]
+
+？1：我定会追随您，铁拳大姐头！
+
+[charaFace D 2]
+
+＠玛尔达
+我[messageShake 0.04 3 3 0.9]是专注回复的Rider啦！[r]是Rider！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[messageShakeStop]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠齐格
+（是不喜欢大姐这个称呼吗……？）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+？2：真可靠。
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+嗯。
+[k]
+
+＠齐格鲁德
+有在下和玛尔达阁下两位屠龙者，[r]即便是邪龙，也不算什么强敌。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠玛修
+那我们出发吧。
+[k]
+
+？1：（我还想来一碗……）
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠玛尔达
+一会儿再说吧，御主。[r]等回去以后，我给你做一份新的。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+届时也请务必叫上在下。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠玛尔达
+那当然啦。毕竟我肯定会做很多。[r]做多人料理的话，我是不会输给猫咪的。
+[k]
+
+[messageOff]
+[wt 0.8]
+[fadeout black 1.8]
+[bgmStop BGM_EVENT_2 1.8]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？2：好，走吧！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠齐格
+嗯。
+[k]
+
+＠齐格
+我自认对齐格飞的战斗方式[r]有一定程度的了解……
+[k]
+
+[charaFace E 1]
+
+＠齐格
+但这还是我第一次与齐格鲁德并肩战斗。[r]我很期待。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+嗯，回应少年的期待乃是英雄的职责。
+[k]
+
+[charaFace A 10]
+
+＠齐格鲁德
+在下会努力让你见识优秀的一面。
+[k]
+
+[messageOff]
+[wt 0.8]
+[fadeout black 1.8]
+[bgmStop BGM_EVENT_2 1.8]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[scene 10000]
+[pictureFrame cut063_cinema]
+[wt 0.8]
+
+[fadein black 1.8]
+[wait fade]
+
+＠
+[line 3]不会笑不能笑也没有笑的必要。[bgm BGM_EVENT_1 0.1 0.6]
+[k]
+
+＠
+[line 3]不会生气不能生气也没有生气的必要。
+[k]
+
+＠
+[line 3]不会悲伤不能悲伤也没有悲伤的必要。
+[k]
+
+＠
+[line 3]没什么幸福。[r]也不怎么渴望幸福。
+[k]
+
+＠
+这样就够了，抚养自己的铁匠这么说。
+[k]
+
+＠
+你是兵器，是刀刃，[r]是守护弱者的护卫。
+[k]
+
+＠
+英雄不能渴望成为拥有人格的人类。[r]这迟早会引发悲剧。
+[k]
+
+＠
+……明明是欺瞒的话语，[r]但言辞中却包含着一丝真实。
+[k]
+
+＠
+倘若有一百万人类，[r]其中就会有一万个优秀的人吧。
+[k]
+
+＠
+若要在这优秀的一万人中，[r]进一步选出一百人的话。
+[k]
+
+＠
+就会是心技体全面优秀，没有任何缺点的[line 3][r]一百个万能的存在。
+[k]
+
+＠
+而在这一百人中，[r]只有一个[#这样的存在]。
+[k]
+
+
+
+
+
+
+[messageOff]
+[scene 28802 1.2]
+[charaFace F 2]
+[charaFadein F 0.8 0,-50]
+[wt 1.2]
+
+＠
+继承神血的伟大之人，[wt 1.2][charaFadeout F 0.6][scene 20404 1.2][charaFace G 1][charaFadein G 0.8 240,-50][wt 1.2]身为奇迹具现化之人，[wt 1.2][charaFadeout G 0.6][scene 21300 1.2][charaFace H 2][charaFadein H 0.8 -180,-50][wt 1.2][r]拥有钢铁般精神之人，[wt 1.2][charaFadeout H 0.6][scene 28420 1.2][charaFace I 2][charaFadein I 0.8 220,-50][wt 1.2]具备非人类力量之人。[wt 1.2][charaFadeout I 0.9][scene 10000 1.2][wt 1.2]
+[k]
+
+
+＠
+被称为英雄之人。
+[k]
+
+＠
+历史的推进创造了[#他:她]们，[r]人们的激情养育了[#她:他]们。
+[k]
+
+＠
+我，本人，在下，[r]也是其中的一员吧。
+[k]
+
+＠
+对现界、挥剑不报任何疑问。[r]只要这力量能帮到世界。
+[k]
+
+[bgmStop BGM_EVENT_1 2.4]
+
+＠
+啊啊，但是。[r]有种难以形容、舒心、焦虑的感觉。
+[k]
+
+＠
+轻飘飘的，像是在做梦。[r]简直就像[line 3]
+[k]
+
+＠玛尔达
+[f large]齐[messageShake 0.04 3 3 0.5]格鲁德！
+[k]
+
+[messageOff]
+[wipeout openEye 0.6 1.0]
+[wait wipe]
+
+[charaTalk off]
+
+[scene 20805]
+[pictureFrame]
+[blur lens 0.1 4 50]
+[cameraMove 0.1 0,0 1.05]
+
+[charaPut L 2000,2000]
+[charaPut M 2000,2000]
+[charaEffect L bit_talk_43h]
+[charaEffect M bit_talk_41]
+
+[charaDepth A 1]
+[charaDepth N 9]
+
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[wt 0.1]
+
+[wipein openEye 0.6 1.0]
+[wait wipe]
+[blurOff lens 1.0]
+[wt 1.0]
+
+＠齐格鲁德
+……！[bgm BGM_EVENT_80 0.1]
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaFace A 9]
+[charaFadein A 0.1 1]
+[wt 0.2]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+[charaFadeTime N 0.4 0.3]
+[wt 0.4]
+
+[se ade216]
+[charaPut L 0,0]
+[wt 0.6]
+[seStop ade216 0.4]
+[charaEffectStop L bit_talk_43h]
+[wt 0.3]
+[charaPut L 2000,2000]
+
+[se ad73]
+[charaFace A 5]
+[charaMove N 0,-8 0.15]
+[charaMove A 0,-8 0.15]
+[charaMoveScale K 0.96 0.15]
+[charaMoveScale A 0.96 0.15]
+[wt 0.1]
+[charaFadeout A 0.2]
+[charaFadeout N 0.2]
+[wt 0.2]
+
+[charaMoveScale A 1.4 0.1]
+
+[effect bit_talk_impactlanding 0,0]
+[shake 0.04 4 2 1.4]
+[se bac433]
+[wt 0.3]
+[seStop bac433 0.8]
+[wt 1.2]
+
+[se ad671]
+[charaFace A 5]
+[charaFadein A 0.4 0,60]
+[charaMove A 1 0.4]
+[charaShake A 0.04 4 4 0.5]
+[wt 0.1]
+
+[charaMoveScale A 1.0 0.4]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[effectDestroy bit_talk_impactlanding]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠玛尔达
+怎么了，像你这样的战士居然会走神！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠齐格
+是因为食物过于美味，[r]吃得太饱所以……困了？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+不，抱歉。[r]我在思考一些问题。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠玛尔达
+……什么嘛，太好了。[r]我还以为你遭到精神攻击了呢。
+[k]
+
+[charaFace D 5]
+
+＠玛尔达
+但是，面对这种对手居然还有闲情思考问题，[r]我也只能说佩服了。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[wt 0.6]
+[se ad17]
+[charaPut M 0,0]
+[shake 0.04 3 3 1.4]
+[wt 2.0]
+[charaPut M 2000,2000]
+[charaEffectStop M bit_talk_41]
+[wt 0.1]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+抱歉。
+[k]
+
+＠齐格鲁德
+……接下来在下会弥补这份不安与不满。
+[k]
+
+[input selectBranch]
+
+
+[charaSet A 1033002 1 齐格鲁德]
+
+
+[charaSet C 98002000 1 芙芙]
+[charaSet D 4019001 1 玛尔达]
+[charaSet E 5038000 1 齐格]
+[charaSet F 4012001 1 奥斯曼狄斯]
+[charaSet G 2031001 1 拿破仑]
+[charaSet H 4003001 1 德雷克]
+[charaSet I 7001001 1 赫拉克勒斯]
+[charaSet J 98013300 1 龙]
+
+[scene 20805]
+[cameraMove 0.1 0,0 1.05]
+[cameraFilter normal]
+[pictureFrame]
+[wt 0.2]
+
+[seStop ad450 0.4]
+[seStop ade294 0.4]
+[seStop ad450 0.4]
+[seStop ad217 0.4]
+[seStop ade126 0.4]
+[seStop ad492 0.4]
+[seStop adm40 0.4]
+[seStop ade216 0.4]
+[seStop ad73 0.4]
+[seStop ad671 0.4]
+[seStop ad17 0.4]
+[wt 0.4]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[maskin black 1.0]
+[wait mask]
+[label selectBranch]
+
+＠齐格鲁德
+御主，请指示！
+[k]
+
+
+？1：齐格鲁德负责攻击中心。
+
+＠齐格鲁德
+明白了。
+[k]
+
+＠齐格鲁德
+将魔力送到在下这里来，[wt 0.65][charaFace A 5][r]那么[line 3]上！
+[k]
+
+
+
+？2：玛尔达小姐和齐格负责支援。
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace E 5]
+[charaFace D 2]
+[charaFadein E 0.1 0]
+[charaFadein D 0.1 2]
+
+＠玛尔达
+交给我吧。[r]无论什么伤，我都会立刻回复。
+[k]
+
+[charaFace E 2]
+
+＠齐格
+我也会展开宝具进行支援。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠齐格鲁德
+那在下负责突击。[r]好，上吧！
+[k]
+
+？！
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,337 @@
+
+
+
+＄03-00-06-05-1-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 5025001 1 爱迪生]
+[charaSet B 99363000 1 机械化步兵]
+[charaSet C 99363000 1 机械化步兵]
+[charaSet D 99363000 1 机械化步兵]
+[charaSet E 99363000 1 机械化步兵]
+[charaSet F 99363000 1 机械化步兵]
+[charaSet G 1098192300 1 海伦娜]
+[charaSet H 2011001 1 尼古拉·特斯拉]
+
+
+[charaSet S 5009000 1 特效用dummy]
+[charaSet T 5009000 1 特效用dummy]
+
+[wipeFilter cinema 0.5 0]
+
+[cameraMove 0 0,0 1.01]
+
+
+[scene 91802]
+
+[cameraFilter gray]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+[se ad894]
+[seVolume ad894 0 0.7]
+[se ad904]
+[seVolume ad904 0 0.7]
+[wt 3.0]
+
+[se ad782]
+[wt 1.0]
+[se ad828]
+
+[se ad238]
+[se ad241]
+[se ad242]
+[shake 0.03 4 4 2.0]
+[effect bit_talk_goltail01 0,0 H]
+[wt 0.4]
+[se ad608]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 2.0]
+
+[effectStop bit_talk_goltail01]
+[seStop ad238 0.4]
+[seStop ad241 0.4]
+[seStop ad242 0.4]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+
+[bgm BGM_EVENT_72 0.1]
+
+＠爱迪生
+摩天大楼崩塌了……！
+[k]
+
+＠爱迪生
+这就是奥林波斯诸神吗！[r]我的防卫系统终究抵挡不住！
+[k]
+
+＠爱迪生
+从第一到第三，乃至最终防卫线都要被突破了！[r]噢噢噢噢噢噢噢噢噢噢噢噢！
+[k]
+
+[charaFace A 2]
+＠爱迪生
+集结吧，我的量产型无人机械步兵！[r]唯有最终防卫线无论如何……无论如何都要守住！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[pictureFrame cut063_cinema]
+
+[charaTalk off]
+[charaDepth B 3]
+[charaDepth C 4]
+[charaDepth D 5]
+[charaDepth E 6]
+[charaDepth F 7]
+
+[se ad67]
+[charaFace B 0]
+[charaFace C 0]
+[charaFace D 0]
+[charaFace E 0]
+[charaFace F 0]
+[charaFadein B 0.4 -400,-40]
+[charaFadein C 0.4 400,-40]
+[charaFadein D 0.4 -200,-50]
+[charaFadein E 0.4 200,-50]
+[charaFadein F 0.4 0,-60]
+[wt 2.5]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[wipeOff]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-50]
+＠爱迪生
+呐喊吧！[r]就算吾等消失于此，自由之旗也永垂不朽！
+[k]
+
+＠爱迪生
+[line 3]之后就拜托你们了，[&少年少女:少女们]！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.8]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+＠海伦娜
+召唤阵已经完成到第二了。[r]明明就只差一点了……
+[k]
+
+＠海伦娜
+怎么会这样，时间严重不够！
+[k]
+
+＠海伦娜
+只要再多几分钟……第三、第四……[r]应该也可以……完成了……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 0,-50]
+
+＠尼古拉·特斯拉
+抱歉，Lady。[r]本来至少也应该让你一个人逃脱。
+[k]
+
+＠尼古拉·特斯拉
+爱迪生他们已经奋力战斗了。[r]不愧是拥有在所谓特异点战斗记录的存在。
+[k]
+
+＠尼古拉·特斯拉
+但是，啊啊。输了。[r]是我们彻底输了。
+[k]
+
+＠尼古拉·特斯拉
+想必神之一击，会在我们触碰到之前[line 3][r]将这片都市区域破坏殆尽吧。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+＠海伦娜
+……是我们的步伐迈得太大了吗。[r]还是说这场战斗从一开始就毫无胜算呢？
+[k]
+
+＠海伦娜
+啊啊，不甘心。超不甘心！
+[k]
+
+＠海伦娜
+奥林波斯的机械诸神。[r]还以为，围绕伟大灵魂的讨论也能……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+＠尼古拉·特斯拉
+是啊。[r]但他们是[#泛人类史:我们]的敌人。
+[k]
+
+＠尼古拉·特斯拉
+另外，美丽聪明的海伦娜。[r]他们也许确实是横渡星海的舰船……
+[k]
+
+＠尼古拉·特斯拉
+…………但绝不是你曾见过的星之璀璨。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 0,-50]
+[wt 1.0]
+
+[charaFace G 0]
+＠海伦娜
+谢谢你。[r]你真温柔呢，Mr.特斯拉。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 0,-50]
+＠尼古拉·特斯拉
+这是事实哦，Lady。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.2]
+
+
+[se ad913]
+[se ade345]
+[seVolume ade345 0 0.6]
+[shake 0.02 3 3 1.2]
+[wt 1.8]
+
+[se ad913]
+[se ade345]
+[shake 0.03 4 5 1.2]
+[wt 2.0]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 0,-50]
+＠尼古拉·特斯拉
+神啊！
+[k]
+
+＠尼古拉·特斯拉
+已消逝于泛人类史历史彼方的诸神啊！[r]这世界早已不再是你们的所有物！
+[k]
+
+＠尼古拉·特斯拉
+给我记住，你们的所作所为并非庇护！[r]只不过是支配的摇篮罢了！
+[k]
+
+[charaFace H 2]
+＠尼古拉·特斯拉
+人类！　并不是你们的玩具[line 3]
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.2]
+
+
+[se ad894]
+[seVolume ad894 0 0.7]
+[se ad904]
+[seVolume ad904 0 0.7]
+[se ad899]
+[wt 2.0]
+[seStop ad899 1.0]
+[wt 2.5]
+
+[se ad635]
+[wt 1.0]
+
+[se ad782]
+[wt 1.0]
+[se ad828]
+
+[se ad238]
+[se ad241]
+[se ad242]
+[shake 0.03 4 4 2.0]
+[effect bit_talk_goltail01 0,0 H]
+[wt 0.4]
+[se ad608]
+[wt 1.8]
+
+[se ad728]
+[fadeout white 0.2]
+[wait fade]
+
+[fadein white 0.2]
+[wait fade]
+[wt 0.3]
+
+[se ad728]
+[fadeout white 1.0]
+[bgmStop BGM_EVENT_72 1.0]
+[seStop ad238 1.5]
+[seStop ad241 1.5]
+[seStop ad242 1.5]
+[wait fade]
+
+[effectStop bit_talk_goltail01]
+[wt 1.5]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein white 1.5]
+[wait fade]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

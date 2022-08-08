@@ -1,0 +1,779 @@
+
+
+＄94-04-49-09-2-0
+
+[soundStopAll]
+
+[skip false]
+
+[branchQuestNotClear lblNotClear1 3000320 4]
+[label lblClear1]
+[flag IsGirl true]
+[branch lblIsClearConf1]
+[label lblNotClear1]
+[flag IsGirl false]
+[label lblIsClearConf1]
+
+[skip true]
+
+[charaSet A 7027300 1 Amazones CEO_普通]
+[charaSet B 1098119600 1 Amazones CEO_轱辘]
+[charaSet C 99502600 1 玛修]
+[charaSet E 4023000 1 坂田金时]
+[charaSet F 5011001 1 巴贝奇]
+[charaSet G 4036000 1 卡米拉]
+[charaSet H 4027001 1 阿尔托莉雅·Alter]
+[charaSet I 5025001 1 爱迪生]
+[charaSet J 5009000 1 特效用]
+
+[branch lblNotGirl1 IsGirl false]
+[label lblGirl1]
+[charaSet D 1098124510 1 达·芬奇]
+[branch lblIsGirlConf1]
+[label lblNotGirl1]
+[charaSet D 98111500 1 达·芬奇]
+[label lblIsGirlConf1]
+
+[scene 90000]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+Amazones.com，[r]是决不会屈服于怪物投诉者的！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠玛修
+等待我们的居然是意外单纯的威胁呢……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgm BGM_EVENT_90 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠B：Amazones CEO
+单纯。就是这个。[r]的确意外，但应该还没有脱离主流。
+[k]
+
+＠B：Amazones CEO
+通过纵观整座塔，或是整体事件，[r]我感受到的……
+[k]
+
+＠B：Amazones CEO
+就是这种单纯，或者说是一种蛮横……[r]总之诸如此类。
+[k]
+
+＠B：Amazones CEO
+这或许能成为找到黑幕真面目的线索。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[branch lblNotGirl2 IsGirl false]
+[label lblGirl2]
+[charaFace D 24]
+[charaFadein D 0.1 1]
+[branch lblIsGirlConf2]
+[label lblNotGirl2]
+[charaFace D 0]
+[charaFadein D 0.1 0,-90]
+[label lblIsGirlConf2]
+
+＠达·芬奇
+确实，并非不能理解。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：Amazones CEO
+但我们现在能做的，[r]只有正面克服所有困难。
+[k]
+
+[charaFace A 12]
+
+＠A：Amazones CEO
+单纯就用单纯对抗，蛮横就用蛮横对抗。[r]实不相瞒，这是我擅长的方法！
+[k]
+
+？1：我觉得你压根没在隐瞒。
+？2：让我们继续努力吧！
+？！
+
+[messageOff]
+[charaFace A 1]
+[wt 1.2]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_90 2.0]
+[wait fade]
+[charaFadeout A 0.1]
+[scene 90100]
+[wt 1.5]
+[charaSet A 10005000 1 Ⅱ号机]
+[charaSet B 10004000 1 机械伊丽亲]
+[charaSet C 2011001 1 尼古拉·特斯拉]
+[fadein black 2.0]
+[wait fade]
+
+[wt 1.2]
+
+＠
+[align center]～　与此同时　～[align]
+[k]
+
+[messageOff]
+[scene 44501 1.4]
+[wt 3.0]
+
+[se ad121]
+[wt 1.6]
+[seStop ad121 0.1]
+[se ad127]
+[seVolume ad127 0 0.8]
+[wt 0.5]
+[seStop ad127 0.3]
+
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.4 1]
+[wt 0.5]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠坂田金时
+噢！　麻烦用高级汽油把魔力加满！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.5]
+
+＠巴贝奇
+明白了。但目前这机械系维护区域[r]门庭若市拥挤不堪。还请稍等片刻。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.5]
+
+＠卡米拉
+……此处饥渴云集 heavenly zone……[r]……延续直至明日 essential time……
+[k]
+
+[charaFace G 1]
+
+＠卡米拉
+抱歉了，小家伙。[r]我的车子也在等待调整。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace G 1]
+[charaFadein G 0.1 0]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+
+＠坂田金时
+哦，这样啊。[r]完全没有问题，我并不打算催促。
+[k]
+
+[charaFace E 1]
+
+＠坂田金时
+只不过……越看越觉得你的车子也相当Golden呢喂！
+[k]
+
+[charaFace G 0]
+
+＠卡米拉
+[FFFFFF]？[-]　这应该算血腥红或红酒红吧。
+[k]
+
+[charaFace E 0]
+
+＠坂田金时
+噢，假如颜色也是Golden的话，就更Golden了！[r]我很憧憬这种敞篷跑车……
+[k]
+
+＠坂田金时
+呜地一下从车库里冲出来的感觉超棒！[r]简直就像能变形合体一样，so cool的吧！？
+[k]
+
+[charaFace G 1]
+
+＠卡米拉
+呵呵呵。小家伙你的机车也很棒哦？
+[k]
+
+＠卡米拉
+好女人与连体皮衣和机车才是最好的搭配。[r]有机会的话，我或许也可以尝试一下机车风格。
+[k]
+
+[charaFace G 4]
+
+＠卡米拉
+得好好练习脱下安全头盔发丝飘洒而出的美丽动作才行。[r]那是怪盗的必备技术……
+[k]
+
+[charaFace E 1]
+
+＠坂田金时
+噢，Red Golden Bike吗？[r]真不错，我们可以一起骑摩托旅行了哦。
+[k]
+
+[charaFace E 7]
+
+＠坂田金时
+但届时可不要偷窃哦。
+[k]
+
+＠坂田金时
+假如身为鬼，再加上偷盗的话，会很像她们……[r]基于我的立场，不得不出手阻止这种。
+[k]
+
+[charaFace G 1]
+
+＠卡米拉
+嗯，我知道。我会老实一点。
+[k]
+
+＠卡米拉
+（至少表面上会……这也是一种怪盗行为……）
+[k]
+
+[charaFace E 0]
+
+＠坂田金时
+话说，这里真的好热闹啊。[r]机械系的人出人意料地多呢。
+[k]
+
+[charaFace G 0]
+
+＠卡米拉
+是啊。或许和整备人员的缺乏也有关系吧。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.4 1]
+[wt 0.5]
+
+＠阿尔托莉雅·Alter
+快点，快点。给我抓紧时间。[r]否则我会将子弹作为维护的谢礼打进你的脑袋。
+[k]
+
+[charaFace H 0]
+
+＠阿尔托莉雅·Alter
+久违能以这种速度侍奉，令人心情舒畅。[r][#塞克安斯:Sequence]的扳机也变轻了。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.4 1]
+[wt 0.5]
+
+＠爱迪生
+哎哎，我连经营直流嵌入式系统的空都没有了！[r][line 3]好，搞定！
+[k]
+
+[charaFace I 4]
+
+＠爱迪生
+我擅长的是量产，[r]可不是单品维护啊！
+[k]
+
+[charaFace I 1]
+
+＠爱迪生
+但一事归一事，工作就得完美完成，[r]这才是真正的发明家。
+[k]
+
+＠爱迪生
+你完全可以尽情地赞美我哦？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0]
+[charaFace I 0]
+[charaFadein I 0.1 2]
+
+＠阿尔托莉雅·Alter
+辛苦了。[r]好，我这就开始下一份[#任务:配送]。
+[k]
+
+[charaFace H 1]
+
+＠阿尔托莉雅·Alter
+等着我，尚未谋面的主人，我这完美的服务[r]一定会让您哭笑不得。享受吧。
+[k]
+
+[messageOff]
+[charaFace H 0]
+[wt 0.7]
+[se ade86]
+[seVolume ade86 0 0.9]
+[seStop ade86 1.0]
+[charaMove H -1000,0 0.3]
+[wt 1.7]
+
+[charaTalk off]
+[charaFace I 4]
+[wt 2.0]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠坂田金时
+那辆机车也不错！　黑色的机身，加上就像搭载了[r]氮气加速系统的加速，真是太Golden了！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+[charaFadeout E 0.1]
+[wt 0.5]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.5]
+
+[bgm BGM_EVENT_48 0.1]
+
+＠Ⅱ号机
+快点。我必须立刻离开这犹如残渣[r]而海市蜃楼的冒牌恰赫季斯才行。
+[k]
+
+＠Ⅱ号机
+这种时候，倘若我不好好表现还有谁能表现。来吧，快点。[r]守护神传～完全版～的重启预定在120秒后。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.5]
+
+＠机械伊丽亲
+冒牌货和冒牌货就该在一起，[r]虽说不知我俩为什么会同时存在。
+[k]
+
+[charaFace B 9]
+
+＠机械伊丽亲
+但不管怎么说，失去了全部员工等同于失去了所有领民。[r]这种愤怒我十分理解。
+[k]
+
+[charaFace B 6]
+
+＠机械伊丽亲
+正因为如此，我才不吝于出手帮助Amazones CEO。[r]而现在需要的是迅速重启。
+[k]
+
+＠机械伊丽亲
+快点。快点快点快点。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 1]
+[wt 0.5]
+
+＠尼古拉·特斯拉
+唔唔，我都没空策划追加交流配件了！[r]好，完成了！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFadein A 0.1 -384,0]
+[charaFace B 0]
+[charaFadein B 0.1 384,0]
+
+＠机械伊丽亲＆Ⅱ号机
+[line 3]辛苦了。立刻出发。[r]起飞。
+[k]
+
+[messageOff]
+[wt 0.7]
+[se ad270]
+[charaShake A 0.02 2 2 1.0]
+[charaShake B 0.02 2 2 1.0]
+[cueSe Servants_1000400 bac539]
+[charaPut J 0,-200]
+[charaEffect J bit_talk_40]
+[wt 0.4]
+[charaMove A -400,100 1.5]
+[charaMove B 400,100 1.5]
+[charaMove J 0,-100 1.5]
+[wt 0.2]
+[cueSeStop bac539 0.4]
+[wt 0.5]
+
+[wipeout rectangleStripUpToDown 0.3 1.0]
+[wt 0.1]
+[se ade90]
+[wait wipe]
+[charaEffectDestroy J]
+[charaFadeout A 0]
+[charaFadeout B 0]
+[scene 10000]
+[wipein rectangleStripDownToUp 0.1 1.0]
+[wait wipe]
+[fadeout black 0.1]
+[wait fade]
+[scene 44501]
+[charaTalk on]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+[wt 1.0]
+[seStop ade90 0.5]
+[wt 1.0]
+[imageSet A cut148_callout01 1]
+[imageSet B cut148_callout02 1]
+[imageSet D cut148_callout03 1]
+[imageSet H cut148_callout04 1]
+[charaScale A 1.01]
+[charaScale B 1.01]
+[charaScale D 1.01]
+[charaScale H 1.01]
+[fadein black 1.0]
+[bgmStop BGM_EVENT_48 1.0]
+[wait fade]
+
+＠卡米拉
+这么说来，还有身体是机械系的呢。
+[k]
+
+[charaFace E 3]
+
+＠坂田金时
+段藏和哪吒她们肯定也来了，必然会忙碌啦。[r]她们都是些Golden勤奋的人哦。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠巴贝奇
+噗咻……让各位久等了。[r]终于轮到汝等了。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠爱迪生
+下一个是跑车，以及机车的维护啊。[r]明白了。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠尼古拉·特斯拉
+唔，比起火箭拳和裙导弹，[r]果然还是这种做起来更顺手。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠巴贝奇
+的确。……为了对于让各位久等表示歉意，我有个提案。[r]现在我们正好有时间和人力。
+[k]
+
+＠巴贝奇
+趁此机会，除了维护，[r]要不要将机体的改良也交给我们来处理呢？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk I]
+[charaFace I 3]
+[charaFadein I 0.1 1]
+
+＠爱迪生
+这真是个好主意。[r]我渴望发明的手也开始痒了。
+[k]
+
+＠爱迪生
+只要追加强力的直流推进单元，就能以往常的[r]两倍效率进行配送任务，你们看怎么样？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠尼古拉·特斯拉
+哈哈哈。不仅能输出三倍功率，而且安全安心的[r]交流增幅器更好吧？　天经地义。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠卡米拉
+……就算你们突然这么提案。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠坂田金时
+虽说如果能令我的爱车熊号的速度更快，[r]更酷更Golden的话，
+[k]
+
+＠坂田金时
+无论是蒸汽式还是电动式我都不在意……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠巴贝奇
+无需感到不安。[r]我们在以前比赛时也有过实绩。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠爱迪生
+说得没错！　我们机体的行驶能力、设计性均得到了[r]很高的评价，也获得了证明～！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠尼古拉·特斯拉
+呵呵……创造力都囤积起来了。[r]我有种预感，现在或许能创造出与那台机体匹敌的杰作……！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaDepth E 2]
+[charaDepth A 3]
+[charaDepth B 4]
+[charaDepth D 5]
+[charaDepth H 6]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+[charaFace E 7]
+[charaFadein E 0.1 2]
+
+[wt 0.3]
+
+[se ade84]
+[seVolume ade84 0 0.0]
+[wt 0.4]
+[seVolume ade84 0.3 1.0]
+[charaFadein A 0.4 0,-200]
+[wt 0.4]
+[charaFadein B 0.4 0,-200]
+[wt 0.5]
+[fadeout black 0.4]
+[wait fade]
+[charaFadeout G 0]
+[charaFadeout E 0]
+[scene 10000]
+[charaFadein D 0 0,-200]
+[wt 0.1]
+[fadein black 0.4]
+[wait fade]
+[seStop ade84 1.1]
+[wt 0.1]
+[charaFadein H 0.4 0,-200]
+[wt 0.5]
+
+[wt 3.0]
+
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout H 0.1]
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaTalk depthOn]
+[scene 44501]
+[charaTalk on]
+[charaTalk E]
+[charaFace G 3]
+[charaFadein G 0.1 0]
+[charaFace E 3]
+[charaFadein E 0.1 2]
+[wt 0.3]
+[fadein black 0.7]
+[wait fade]
+
+＠坂田金时
+啊……不好意思。[r]可能现在的我对那个来说还不够格……
+[k]
+
+＠卡米拉
+恕我敬谢不敏。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_27 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth I 2]
+[charaDepth C 3]
+
+[charaTalk off]
+[charaFace F 2]
+[charaFadein F 0.1 -384,0]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[charaFace I 2]
+[charaFadein I 0.1 384,0]
+
+＠三人
+[f large][messageShake 0.07 7 5 0.3]为什么！？
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_27 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

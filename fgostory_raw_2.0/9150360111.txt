@@ -1,0 +1,143 @@
+
+＄91-50-36-01-1-1
+
+[soundStopAll]
+
+[charaSet A 5036001 1 阿维斯布隆]
+[charaSet B 4040002 1 欧罗巴]
+
+
+[scene 20300]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠欧罗巴
+咦，这就结束啦？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠阿维斯布隆
+唔。
+[k]
+
+＠阿维斯布隆
+凭宝具青铜巨人形成铜墙铁壁的防守，[r]有很多值得学习的地方啊……
+[k]
+
+＠阿维斯布隆
+既然我的宝具基本上是全裸的，[r]但通过皮肤硬化可以造成类似的现象吗……？
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth B 2]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[wt 0.5]
+
+[se ade385]
+[wt 0.3]
+
+[charaMoveReturn A 256,-10 1]
+[wt 0.3]
+
+＠欧罗巴
+给你糖。
+[k]
+
+[charaFace A 0]
+
+＠阿维斯布隆
+哎。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaFadein B 0.1 1]
+[wt 0.1]
+
+[messageOff]
+
+[charaTalk B]
+
+[charaMoveScale B 1.2 1.0]
+[charaMove B 0,10 0.4]
+[wt 0.5]
+
+＠欧罗巴
+御主也吃糖吧。
+[k]
+
+？1：啊呜啊呜。
+
+？！
+
+[messageOff]
+
+[charaMoveScale B 1.0 1.0]
+[charaMove B 1 1.0]
+[wt 1.0]
+
+＠欧罗巴
+那我先告辞了。[r]从这魁梧人偶上下来吧。
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.7]
+[se ad60]
+[wt 0.5]
+
+[seStop ad60 3.5]
+[wt 0.5]
+
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠阿维斯布隆
+……[r]……
+[k]
+
+＠阿维斯布隆
+这是魔偶，不是人偶……
+[k]
+
+？1：反正看上去全都是游戏里出来的……
+
+？！
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

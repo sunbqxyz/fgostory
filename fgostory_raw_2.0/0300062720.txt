@@ -1,0 +1,538 @@
+
+
+
+＄03-00-06-24-2-0
+
+
+
+[soundStopAll]
+
+[charaSet A 1098181900 1 尼莫·水兵]
+[charaSet B 1098158300 1 尼莫]
+[charaSet C 1098123000 1 穆尼尔]
+[charaSet D 1098123200 1 戈尔德鲁夫]
+[charaSet E 1098182100 1 尼莫·教授]
+[charaSet F 8001410 1 玛修]
+[charaSet G 9005001 1 福尔摩斯]
+[charaSet H 3041002 1 凯妮斯]
+
+[charaSet R 1098121600 1 屏障特效用dummy]
+[charaSet S 1098121600 1 特效用dummy]
+[charaSet T 1098121600 1 特效用dummy]
+[charaSet U 1098121600 1 特效用dummy]
+
+[scene 86200]
+
+[charaPut R 2000,2000]
+[charaEffect R bit_talk_barrier_erp_01]
+[charaPut U 1200,1200]
+[charaEffect U bit_talk_10]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+[se ad15]
+[wt 0.5]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠尼莫·水兵
+大家的灵基反应都确认到啦～！[r]像是轻飘飘地浮在空中，但我会将他们引导到甲板的～！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠尼莫
+穆尼尔，让潜航艇进入推进器模式。
+[k]
+
+＠尼莫
+在[%1]他们进入舰内之前，[r]本舰要维持空中漂浮状态。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠穆尼尔
+明白了，包在我身上！[r]呃，推进器的控制是……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠戈尔德鲁夫
+唔唔，都让他们在祭坛待命了，[r]竟然特意冒着危险使用漂浮魔术……！
+[k]
+
+＠戈尔德鲁夫
+也罢，打开甲板的舱门！
+[k]
+
+＠戈尔德鲁夫
+等回收完现场调查队之后，[r]火速逃离这片可怕的空域！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_82 1.0]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠尼莫·教授
+不好意思～。[r]在此之前我这有紧急报告～。
+[k]
+
+＠尼莫·教授
+有个强大的灵基反应正从多多那离宫方向接近，[r]距离接触本舰还剩10、9、8……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠戈尔德鲁夫
+危险还没结束吗！？[r]究竟又要发生什么了！？
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[se ad556]
+[seVolume ad556 0 0]
+[wt 0.1]
+
+[charaSet D 1098123210 1 戈尔德鲁夫]
+
+[seVolume ad556 2.0 0.8]
+
+[charaPut S 1]
+[charaEffect S bit_talk_barrier_erp]
+
+[scene 93100]
+
+[charaPut R 1]
+[wt 2.0]
+
+[seStop ad556 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk off]
+
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein F 0.4 256,20]
+[charaFadein G 0.4 -256,20]
+[charaMove F 256,6 0.3]
+[charaMove G -256,6 0.3]
+[se ad223]
+[se ad666]
+[wt 0.3]
+[seStop ad666 0.1]
+[charaMove F 256,0 0.1]
+[charaMove G -256,0 0.1]
+[wt 0.8]
+[charaEffectStop R bit_talk_barrier_erp_01]
+[wt 0.2]
+[se ad934]
+[wt 1.8]
+
+
+？1：……总算是回来了。
+
+？！
+
+[charaTalk on]
+[charaFace F 4]
+
+＠玛修
+是的。欧罗巴小姐的防御结界[r]至此就消失不见了……
+[k]
+
+[charaFace G 4]
+
+＠福尔摩斯
+嗯。不愧是神妃欧罗巴，真是完美的术式。
+[k]
+
+＠福尔摩斯
+若不是她细腻的魔术，[r]我们这趟空中之旅应该不可能那么安全吧。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaPut T 1]
+[charaEffect T bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠戈尔德鲁夫
+还傻站着干嘛！[r]快跑去舱门那边！
+[k]
+
+＠戈尔德鲁夫
+有身份不明的灵基反应正在接近你们那边！[r]还剩3、2、1[wt 1.0][se ade8][charaFace D 9][line 3]唔噢噢噢！？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+
+[messageOff]
+[se ad709]
+[se ade388]
+[se bac416]
+[effect bit_talk_v_slash01]
+[se ad876]
+[effect bit_talk_impactlanding]
+[shake 0.05 0 2 2.0]
+[se ad776]
+[seVolume ad776 0 0.3]
+[seStop ad776 3.0]
+[wt 3.5]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.7 1]
+[wt 1.2]
+[charaFaceFade H 1 0.2]
+[wt 0.2]
+[bgm BGM_EVENT_71 0.1]
+
+＠凯妮斯
+哟。你们果然还活着啊。[r]很好，不然可就无聊死了。
+[k]
+
+＠凯妮斯
+苟且偷生是你们的长处吧？[r]我满心期待地飞过来果然没错。
+[k]
+
+＠凯妮斯
+双胞胎和欧罗巴他们[line 3]
+[k]
+
+[charaFace H 6]
+
+＠凯妮斯
+哦，翘辫子了啊。[r]也是。他们没理由得救。
+[k]
+
+＠凯妮斯
+真不错，肆意大闹了一通之后[r]只有你们溜之大吉。屁股擦得很干净嘛。
+[k]
+
+＠凯妮斯
+但是[line 3]
+[k]
+
+[charaFace H 1]
+
+＠凯妮斯
+只有你们毫发无伤地回去的话，[r]未免太自私了一点。
+[k]
+
+＠凯妮斯
+对吧，迦勒底？
+[k]
+
+？1：……凯妮斯。
+
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠玛修
+[line 6]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_71 0.1]
+
+[charaPut T 1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠戈尔德鲁夫
+凯妮斯？　是神灵凯妮斯吗！？[r]这样啊，那家伙也活下来了！
+[k]
+
+＠戈尔德鲁夫
+真是值得庆贺，一起来庆祝胜利吧！[wt 1.0][charaFace D 7][r]……唔？　不过那真的是凯妮斯吗？
+[k]
+
+＠戈尔德鲁夫
+灵基模式与以往并不一致。[r]不像此前只是『混着神性』[#程度:等级]，
+[k]
+
+＠戈尔德鲁夫
+而是灵基本身就蕴藏着神气！[r]这简直就像是真正的神灵？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠福尔摩斯
+……没错，Mr.戈尔德鲁夫。[r]虽然不知道是什么构造……
+[k]
+
+＠福尔摩斯
+但现在我们眼前的凯妮斯无疑是神明之一。[r]就算形容为海神的代行者也一点都不为过。
+[k]
+
+＠福尔摩斯
+……暂时先别打开舱门。[r]因为接下来要进入战斗了。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠戈尔德鲁夫
+哈！？　为什么啊，战斗不是已经[line 3]
+[k]
+
+
+[messageOff]
+[se bac474]
+[seVolume bac474 0 0.6]
+[fowardEffect bit_talk_lightning_04r]
+[se ad65]
+[charaPut U 1]
+[charaFadeout D 0.4]
+[se ad539]
+[wt 0.5]
+[charaPut T 1200,1200]
+[charaEffectStop T bit_talk_10_LowLevel]
+[charaEffectStop U bit_talk_10]
+[wt 0.6]
+[charaPut U 1200,1200]
+[wt 0.6]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠凯妮斯
+吵死了。把小胡子的通讯切断啦。[r]不过，倒是要夸奖一下你优秀的洞察力。
+[k]
+
+＠凯妮斯
+接下来我们要开始厮杀了。[r]局外人的声音只会碍事。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+[wt 1.2]
+[charaFace F 7]
+
+[bgmStop BGM_EVENT_71 3.0]
+
+＠玛修
+神灵凯妮斯。[r]我们之间已经没有战斗的理由了。
+[k]
+
+＠玛修
+您失去了御主，[r]也没有理由继续守护这[#异闻带:Lostbelt]了。
+[k]
+
+＠玛修
+在这种前提下，您还是要选择战斗吗。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+
+＠凯妮斯
+…………她这么说。
+[k]
+
+＠凯妮斯
+你的从者是这么说的哦，[r][%1]。
+[k]
+
+＠凯妮斯
+你也有什么话想说吗？
+[k]
+
+？1：……什么都没有。但是[line 3]
+
+？！
+
+？1：……你是打算战斗吧？
+
+？！
+
+[messageOff]
+[charaFace H 6]
+[wt 1.5]
+[charaFace H 1]
+
+[bgm BGM_BATTLE_116 0.1]
+
+＠凯妮斯
+没错。[r]事情总该有个了断。
+[k]
+
+＠凯妮斯
+你们打败了奥林波斯。[r]算是大人物。配得上当我的对手。
+[k]
+
+＠凯妮斯
+我好歹也是希腊的英灵嘛。[r]你想。报仇雪恨这种事还是要做的吧？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠福尔摩斯
+真是的。憎恨奥林波斯的你吗？[r]真是毫无说服力的话[line 3]
+[k]
+
+[charaFace G 5]
+
+＠福尔摩斯
+但我能看出来，你的斗志、气魄以及精神，[r]已经统合到前所未有的高度了。
+[k]
+
+＠福尔摩斯
+神话的世界……生前未曾抵达的终点。[r]看来你已得出作为一名英灵的答案了，凯妮斯。
+[k]
+
+＠福尔摩斯
+既然如此，我们也唯有作出回应。[r]哪怕这是一场毫无必要的战斗。
+[k]
+
+＠福尔摩斯
+没问题吧，[%1]？[r]虽说你的魔力早就到极限了。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+[wt 1.0]
+
+？1：……当然。
+？2：上吧，凯妮斯……！
+
+？！
+
+
+[charaFace H 4]
+
+＠凯妮斯
+[line 6]
+[k]
+
+[charaFace H 1]
+
+＠凯妮斯
+[line 3]哈。[r]垃圾杂鱼御主居然像模像样地瞪着我！
+[k]
+
+＠凯妮斯
+好啊，那我就毫不客气地[r]将你和你的从者刺穿在一起吧！
+[k]
+
+[messageOff]
+[se ad556]
+[seVolume ad556 0 0.3]
+[se ad632]
+[seVolume ad632 0 0.3]
+[charaFace H 21]
+[charaEffect H bit_talk_kaineus]
+[charaEffect H bit_talk_lightning_01r]
+[wt 1.0]
+
+＠凯妮斯
+最后好好记住我的名字。
+[k]
+
+＠凯妮斯
+让玷污我的波塞冬赎罪，[r]因其补偿而攀升神之座[line 3]
+[k]
+
+＠凯妮斯
+热衷杀戮与暴虐、愤怒与傲慢的愚蠢王者。[r]然而[line 3]
+[k]
+
+＠凯妮斯
+唯独此刻，[r]我将一切都献给与吾主间的契约！
+[k]
+
+[charaFace H 2]
+
+＠凯妮斯
+吾名凯妮斯，神灵凯妮斯！
+[k]
+
+＠凯妮斯
+乃是基尔什塔利亚·沃戴姆唯一一骑，[r]值得信赖的从者！
+[k]
+
+
+[messageOff]
+[seStop ad556 0.5]
+[seStop ad632 0.5]
+
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_116 0.4]
+[wait fade]
+[soundStopAll]
+[end]

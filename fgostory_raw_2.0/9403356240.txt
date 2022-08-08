@@ -1,0 +1,430 @@
+＄94-03-35-62-4-0
+[enableFullScreen]
+
+[soundStopAll]
+
+
+[charaSet A 3046001 1 弗栗多]
+[charaSet B 1001000 1 特效用]
+[equipSet C 9807930 1 情人节礼装]
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+[scene 105800]
+
+[branch lblConf1]
+[label lblNotClear1]
+[scene 106000]
+
+[label lblConf1]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V010]
+噢噢，御主。你在这里啊。[wait tVoice]
+[k]
+
+？1：有什么事吗？
+？！
+
+[charaFace A 6]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V020]
+唔，差不多吧。[r]有个东西想让你吃。[wait tVoice]
+[k]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V030]
+给，就是这个。[r]今天是名叫情人节的日子吧？[wait tVoice]
+[k]
+
+[charaFace A 7]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V040]
+不用客气，一口吞吧，一口吞。[wait tVoice]
+[k]
+
+？1：（这还谈什么客气啊。）
+？2：（本来就只有一小片吧……）
+？！
+
+[charaFace A 5]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V050]
+唔，你那是什么眼神。[wait tVoice]
+[k]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V060]
+该不会认为是吾偷吃了吧。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V070]
+不是啦，这是有原因的[line 3][r]不，算了，无所谓了。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V080]
+总之不用介意，吃吧。快点快点。[wait tVoice]
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.2]
+
+？1：那么，我就开动了。
+？！
+
+[se ad182]
+[wt 1.0]
+
+[charaPut B 0,0]
+[charaEffect B bit_talk_radiallight02]
+[se adm20]
+[wt 3.0]
+
+[fadeout white 1.0]
+[wait fade]
+
+[charaPut B 0,0]
+[charaEffectStop B bit_talk_radiallight02]
+[wt 1.2]
+
+[fadein white 0.4]
+[wait fade]
+
+？1：…………！！！？？？
+？2：（嘴里充斥着令人难以置信的美味。）
+？！
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V090]
+咿，嘻，嘻。怎么了？[r]是不是还想多吃一点呢[wait tVoice]？
+[k]
+
+？1：太好吃了！　我还想吃～！
+？2：如果还有的话，我想要！
+？！
+
+[charaFace A 6]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V100]
+嗯嗯，很诚实。这样才对。[wait tVoice]
+[k]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V110]
+所以，这就是吾给你的情人节巧克力。[r]收下这个吧。[wait tVoice]
+[k]
+
+[messageOff]
+
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[charaFace C 0]
+[charaFadein C 0.5 0,-70]
+[wt 2.0]
+[charaFadeout C 0.4]
+
+[wt 0.5]
+
+？1：…………？
+？！
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V120]
+简单易懂地说，[r]刚才让你吃下的只是试吃的那份。[wait tVoice]
+[k]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V130]
+这盒子里装着和刚才一样的东西[line 3]不，[r]装着大量比刚才那份做得更好的巧克力。[wait tVoice]
+[k]
+
+？1：谢谢！　但是……
+？2：这盒子完全打不开啊。
+？！
+
+[charaFace A 15]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V140]
+嗯嗯，对吧。[wait tVoice]
+[k]
+
+[charaFace A 6]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V150]
+你知道吗？　据说人世间[r]有一种叫机关盒的东西。[wait tVoice]
+[k]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V160]
+推、拉、移……是如果不按固定步骤[r]就绝对无法打开的机关盒。[wait tVoice]
+[k]
+
+？1：难道说，这也是……？
+？！
+
+[charaFace A 13]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V170]
+嗯，没错。是吾制作的。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V180]
+啊，盒子本身的材质当然用了吾的力量。[wait tVoice]
+[k]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V190]
+吾可以断言，无论用物理性还是魔术性，[wait tVoice]
+[k]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V200]
+总之外部力量是无法通过[r]强行破坏来打开这个盒子的。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V210]
+话虽如此，吾同样可以保证只要[r]找到正确的步骤，就一定能打开。[wait tVoice]
+[k]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V220]
+我把盒子设定成[line 3]你需要[r]绞尽脑汁，不停思考，集中全部精力，[wait tVoice]
+[k]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V230]
+用尽所有手段，[r]然后才……有可能打开的难度。[wait tVoice]
+[k]
+
+？1：为什么要搞得那么麻烦……
+？！
+
+[charaFace A 4]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V240]
+你竟然问为什么？[wait tVoice]
+[k]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V250]
+吾还以为你能明白呢，[r]是吾看走眼了吗。[wait tVoice]
+[k]
+
+
+[charaFace A 9]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V260]
+吾先给你品尝了极致美味的巧克力。[wait tVoice]
+[k]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V270]
+只有一点点，分量完全不够，[r]必然会令人想吃更多。[wait tVoice]
+[k]
+
+[charaFace A 7]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V280]
+因为如果很快忘掉，或是觉得无所谓，[r]并轻易放弃可就不好了。[wait tVoice]
+[k]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V290]
+然后，一旦告诉你那东西就在盒子里，[r]你就会无论如何都想打开。[wait tVoice]
+[k]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V300]
+为了极致的美味，[r]你应该会想[line 3]克服这种苦难才对。[wait tVoice]
+[k]
+
+[messageOff]
+
+[wt 0.7]
+
+[charaFace A 10]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V310]
+吾呀，只不过，[r]想看到你这样垂死挣扎的样子哦？[wait tVoice]
+[k]
+
+？1：恶……恶魔！
+？！
+
+[charaFace A 13]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V320]
+没错，说得对。[r]你这不是知道嘛，吾就是这样的存在。[wait tVoice]
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[cueSe SE_21 21_ade554]
+[wt 5.0]
+
+？1：（虽然完全不知道打开的顺序，）
+？！
+
+[se ad441]
+[wt 2.0]
+
+？1：（但舌头上还残留着刚才巧克力的味道，）
+？2：（无论如何都无法放弃……！）
+？！
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V330]
+噢噢，非常好，真令人心痒难耐。[r]虽然吾不会给你提示，但会为你加油哦。[wait tVoice]
+[k]
+
+[charaFace A 8]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V340]
+呃…………[charaMove A -12,0 0.5][wt 0.5][charaMove A 12,0 1.0][wt 1.0][wait charaMoveReturn][charaMove A 0,0 0.5][wt 0.7]就选这里吧。[wait tVoice]
+[k]
+
+
+[messageOff]
+
+[charaFace A 13]
+[wt 0.1]
+
+[charaMove A 0,-15 1.0]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+[wt 1.0]
+
+[cueSe SE_21 21_ade553]
+[wt 1.0]
+
+？1：请问，为什么要坐在床上……？
+？！
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V350]
+唔？　吾是为看到你垂死挣扎的样子[r]才会准备这个盒子的哦。[wait tVoice]
+[k]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V360]
+怎么能不在头等席上观赏呢。[r]光知道结果也太无聊了吧。[wait tVoice]
+[k]
+
+[charaFace A 6]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V370]
+综上所述，吾会暂时将这里作为自己的巢穴。[r]一直欣赏到盒子被打开为止。[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V380]
+喂，手停下了哦。[r]不用在意吾的存在啦。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V390]
+吾乃是永恒不灭之魔，[r]是不被时间的流逝所束缚的邪龙。[wait tVoice]
+[k]
+
+[charaFace A 10]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V400]
+无论是几分钟还是几小时，吾都会奉陪。[r]来啊，加油，加油……[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V410]
+啊啊，如果你打算放弃，就直说吧。[wait tVoice]
+[k]
+
+[charaFace A 13]
+
+＠弗栗多
+[tVoice ValVoice_304600 0_V420]
+吾还会再给你吃一点点……指甲盖大小的量，[r]用来补充你的[#干劲:巧克力欲]哦！[wait tVoice]
+[k]
+
+？1：你果然是个恶魔[line 3]！
+？！
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

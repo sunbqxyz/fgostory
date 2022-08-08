@@ -1,0 +1,104 @@
+＄91-20-11-01-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 10902]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98003000 2 Dr.罗曼]
+[charaSet C 2011001 1 尼古拉·特斯拉]
+[charaSet D 98002000 1 芙芙]
+[charaSet E 98006100 1 人工生命体]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0 1]
+[fadein black 1]
+[wait fade]
+＠玛修
+魔……魔力反应……[r]完全……消灭了……
+[k]
+
+[charaFadeout A 0.1]
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 4]
+＠Dr.罗曼
+打倒了吧。嗯。[r]哎呀，人类或者说是英灵，只要想做还是能做到的嘛。
+[k]
+
+＠Dr.罗曼
+虽说仅靠我这里的观测记录不能准确把握，[r]但如果是真正的恶魔……
+[k]
+
+[communicationCharaFace 5]
+＠Dr.罗曼
+……不，嗯。还是算了！[r]不谈这个话题了！
+[k]
+
+[communicationCharaFace 0]
+＠Dr.罗曼
+总……总而言之！　虽说就算放着不管，[r]时代的修正也有可能先行结束，不会出什么问题。
+[k]
+
+＠Dr.罗曼
+但总之排除了一个危险的可能性。[r]还是由衷为之高兴吧！
+[k]
+
+？1：嗯，太好了。
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠玛修
+嗯。说得对，前辈。
+[k]
+
+[charaFadeout A 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+？2：雷电真厉害啊。
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠尼古拉·特斯拉
+哈哈哈。[r]毕竟是开拓时代的人类神话之源。当然厉害了。
+[k]
+
+[charaFace C 0]
+？！
+
+＠尼古拉·特斯拉
+好啦。[r]散步就到此为止吧。
+[k]
+
+＠尼古拉·特斯拉
+接下来，让我想想[line 2][r]需要基于灵子转移的[#实地调查:Field work]啊。
+[k]
+
+[charaFadeout C 0.1]
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+哎，还要继续吗！？[r]恶……恶魔之类的我已经受够了啦！！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠芙芙
+芙芙，芙呜！
+[k]
+
+[charaFadeout D 0.5]
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_2 0.4]
+[wait fade]
+[soundStopAll]
+[end]

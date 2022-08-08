@@ -1,0 +1,1416 @@
+＄91-20-35-01-1-0
+[enableFullScreen]
+
+[soundStopAll]
+
+
+
+[charaSet A 1098182800 1 帕里斯]
+[charaSet B 4029001 1 阿喀琉斯]
+[charaSet C 1019001 1 罗摩]
+[charaSet D 7008001 1 贝奥武夫]
+[charaSet E 2034000 1 威廉·退尔]
+[charaSet F 3010001 1 罗穆路斯]
+[charaSet G 3030000 1 帕尔瓦蒂]
+[charaSet H 2033000 1 马嘶]
+[charaSet I 1098182900 1 阿波罗]
+[imageSet J back10000 1]
+[charaScale J 1.05]
+
+[scene 106800]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1]
+
+[wt 0.4]
+
+＠
+有[#自卑感:complex]是什么感觉？
+[k]
+
+＠
+会不会觉得无法战胜亲近之人，[r]会不会面对敌人时想要逃跑？
+[k]
+
+＠
+在我身上，[r]这类感觉堆积如山。
+[k]
+
+＠
+无论我如何努力，[r]无论我如何拼命跳跃。
+[k]
+
+＠
+那终究是我无法触碰到的怪物领域。
+[k]
+
+＠
+就像所有人都把我抛下，[r]快步离开一般。
+[k]
+
+＠
+啊啊[line 3]做一位英雄，[r]实在是太难太难了。
+[k]
+
+＠
+特洛伊战争如此。[r]我的人生也是如此。
+[k]
+
+＠
+英雄，究竟是什么呢？
+[k]
+
+[messageOff]
+
+[wt 0.5]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_11 1.5]
+[wait fade]
+
+[wt 1.0]
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+[scene 66800]
+
+[branch lblConf1]
+[label lblNotClear1]
+[scene 10400]
+
+[label lblConf1]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaDepth A 10]
+[charaTalk A]
+[charaFace I 0]
+[charaFace A 4]
+[charaFadein A 0.4 0,0]
+[charaFadein I 0.4 0,0]
+[wt 0.4]
+
+＠帕里斯
+唉……
+[k]
+
+＠阿波罗
+[line 3]就是这样。[r]最近忧郁的帕里斯亲也很可爱呢。
+[k]
+
+？1：出现了，太阳恶魔……！
+
+＠阿波罗
+真没礼貌。[r]我可是神明大人。
+[k]
+
+？2：他无论做什么都可爱吧……
+
+＠阿波罗
+无论做什么都可爱。无论何时都可爱。无论何地都可爱。
+[k]
+
+＠阿波罗
+这就是帕里斯亲的魅力，[r]你觉得如何？
+[k]
+
+？！
+
+[charaFace A 2]
+
+＠帕里斯
+真是的，阿波罗大人太烦人了～。[r]（嘿地一下扔了出去。）
+[k]
+
+[messageOff]
+
+[charaMoveReturn A 0,5 0.4]
+[wt 0.2]
+[charaMove I 800,0 0.4]
+[se ad348]
+[wt 0.5]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+＠阿波罗
+哎～呀～。
+[k]
+
+[messageOff]
+
+[wt 0.3]
+[se adm77]
+[wt 0.8]
+
+[charaFace A 0]
+
+＠帕里斯
+……总而言之。
+[k]
+
+＠帕里斯
+迦勒底里不是有很多出色的英雄嘛。
+[k]
+
+[charaFace A 5]
+＠帕里斯
+我没自信了！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-230]
+
+＠阿波罗
+昂首挺胸发表消极宣言。[r]这样的你也很可爱。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠帕里斯
+但是，我觉得一直这样下去多半是不行的。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-230]
+
+＠阿波罗
+嗯嗯，[r]废柴的帕里斯亲也很可爱。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠帕里斯
+呜呜，说话被打断了……
+[k]
+
+？1：阿波罗大人稍微安静点哦～。
+？！
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-230]
+
+[cameraMove 1.5 10,-30 1.2]
+[wait camera]
+
+[se ad421]
+[charaShake I 0.05 2 2 0.6]
+[wt 0.6]
+
+[charaFadeout I 0.7]
+[wt 0.5]
+
+＠阿波罗
+啊唔啊唔。[r]这样很难受的。
+[k]
+
+[messageOff]
+
+[cameraHome 0]
+[wait camera]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠帕里斯
+谢谢你，御主！
+[k]
+
+＠帕里斯
+可我该怎么办呢……[r]完全没有头绪呢。
+[k]
+
+[charaFace A 2]
+
+＠帕里斯
+所以我想先问一下可靠御主的意见！
+[k]
+
+？1：嗯，这样啊……
+？！
+
+[charaFace A 1]
+
+＠帕里斯
+期待期待。
+[k]
+
+？1：不如……先去问问别人？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-230]
+
+＠阿波罗
+问其他英雄吗……[r]是个好主意呢。
+[k]
+
+＠阿波罗
+只要时代与国家不同，[r]英雄面对的价值观也会有所变化。
+[k]
+
+＠阿波罗
+帕里斯亲或许能从他们那里发现些什么。
+[k]
+
+＠阿波罗
+也或许不能。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠帕里斯
+你倒是说些肯定的话，[r]给我加加油啊～！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-230]
+
+＠阿波罗
+好乖好乖，那我们出发吧。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠帕里斯
+至于御主……
+[k]
+
+？1：我当然愿意奉陪！
+？！
+
+[charaFace A 1]
+
+＠帕里斯
+太好了！[r]谢谢！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+[scene 104200]
+
+[branch lblConf2]
+[label lblNotClear2]
+[scene 105500]
+
+[label lblConf2]
+
+[charaFadeout A 0.1]
+[charaFadeout I 0.1]
+[wt 1.0]
+
+[charaTalk depthOn]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaDepth A 10]
+[charaTalk I]
+[charaFace I 0]
+[charaFace A 0]
+[charaFadein A 0.1 0,0]
+[charaFadein I 0.1 0,0]
+[wt 0.4]
+
+＠阿波罗
+好了，那我们就随便走走吧，[r]碰到谁就问谁[line 3]
+[k]
+
+[messageOff]
+
+[charaFadeout I 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+
+＠阿喀琉斯
+噢，是御主和帕里斯啊。怎么了？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOff]
+[charaDepth I 1]
+[charaDepth B 2]
+[charaDepth A 3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace I 0]
+[charaFadeinFSR A 0.1 256,0]
+[charaFadeinFSR I 0.1 256,0]
+[charaFace B 0]
+[charaFadeinFSL B 0.1 -256,0]
+
+＠帕里斯
+……[r]……
+[k]
+
+[charaFace A 5]
+
+＠帕里斯
+换人。[r]换替补上场。
+[k]
+
+[charaFace B 2]
+＠阿喀琉斯
+[messageShake 0.05 5 5 0.5]
+突然说什么啊！？
+[k]
+
+＠帕里斯
+哼。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout I 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠阿喀琉斯
+好吧好吧。[r]那我这只碍事虫的就先撤啦。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth I 1]
+[charaDepth B 2]
+[charaDepth A 3]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadeinFSR A 0.1 256,0]
+[charaFadeinFSR I 0.1 256,0]
+[charaFace B 0]
+[charaFadeinFSL B 0.1 -256,0]
+
+＠阿波罗
+阿喀琉斯。
+[k]
+
+＠阿喀琉斯
+噢。
+[k]
+
+＠阿波罗
+虫子也是不可取代的生命。[r]不能和虫子比价值哦。
+[k]
+
+＠阿喀琉斯
+呃，哦。
+[k]
+
+＠阿波罗
+再说了，虫子的价值肯定比你高啊。
+[k]
+
+[charaFace B 5]
+
+＠阿喀琉斯
+很好，杀！
+[k]
+
+？1：冷静点～！
+？！
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+[scene 104200]
+
+[branch lblConf3]
+[label lblNotClear3]
+[scene 105500]
+
+[label lblConf3]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaFadeout I 0.1]
+[wt 1.0]
+
+[charaTalk depthOn]
+
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk depthOff]
+
+[charaDepth A 10]
+[charaTalk A]
+[charaFace A 0]
+[charaFace I 0]
+[charaFadein A 0.1 0,0]
+[charaFadein I 0.1 0,0]
+
+＠帕里斯
+那让我们继续努力吧～！
+[k]
+
+＠阿波罗
+噢～！
+[k]
+
+？1：真的不要紧吗……
+？！
+
+[messageOff]
+
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_2 1.0 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaFadeout I 0.1]
+
+[wt 0.5]
+[se ad8]
+[wt 0.5]
+
+[charaTalk off]
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+[scene 105900]
+
+[branch lblConf4]
+[label lblNotClear4]
+[scene 105600]
+
+[label lblConf4]
+
+[fadein black 1.0]
+[wipein rightToLeft 1.0 1.5]
+[bgm BGM_EVENT_2 1.0 1.0]
+[wait wipe]
+
+[se ad518 0.3]
+
+[charaDepth E 1]
+[charaDepth F 2]
+[charaDepth H 3]
+[charaDepth G 4]
+[charaDepth A 5]
+
+[charaFace F 0]
+[charaFadeinFSR F 0.4 2]
+[charaFace E 0]
+[charaFadeinFSL E 0.4 0]
+
+[wt 1.8]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaFace G 0]
+[charaFadeinFSR G 0.4 2]
+[charaFace H 0]
+[charaFadeinFSL H 0.4 0]
+
+[wt 1.8]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+
+[charaTalk on]
+
+[seStop ad518 3.5]
+[wt 0.5]
+
+[charaDepth A 10]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,0]
+[charaFadein I 0.1 0,0]
+
+＠帕里斯
+嗯嗯，这里有很多呢～。[r]虽然像神明的人也很多。
+[k]
+
+＠阿波罗
+首先排除希腊的家伙吧。
+[k]
+
+＠帕里斯
+然后最好是好说话的！
+[k]
+
+？1：这样的话[line 3]
+？！
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 1.0 1.0]
+[bgm BGM_EVENT_2 1.0 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaFadeout I 0.1]
+[wt 1.0]
+
+[charaTalk off]
+
+[charaTalk depthOn]
+
+[wipein rectangleStripLeftToRight 1.0 1.0]
+[bgm BGM_EVENT_2 1.0 1.0]
+[wait wipe]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth C 2]
+
+[charaFace C 0]
+[charaFadeinFSR C 0.4 2]
+[charaFace D 0]
+[charaFadeinFSL D 0.4 0]
+[wt 1.0]
+
+？1：先问问这两个人吧……
+？！
+
+[charaTalk on]
+
+＠贝奥武夫
+啊？[r]怎么了，御主。
+[k]
+
+＠罗摩
+刚吃完饭时间刚好，[r]请问有什么事吗？
+[k]
+
+[charaFace C 1]
+
+＠罗摩
+啊啊，模拟训练的话，[r]我可以立刻[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaDepth A 10]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,0]
+[charaFadein I 0.1 0,0]
+
+＠帕里斯
+初……初次见面，各位！[r]我，不对，在下的名字是帕里斯！
+[k]
+
+？1：实际上……
+？！
+
+[charaFadeout A 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth C 2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadeinFSL D 0.1 0]
+[charaFace C 0]
+[charaFadeinFSR C 0.1 2]
+
+＠贝奥武夫
+……原来如此。
+[k]
+
+＠贝奥武夫
+我就算了，[r]罗摩是个非常好的选择。
+[k]
+
+[charaFace C 1]
+
+＠罗摩
+哈哈哈，您说什么呢，贝奥武夫大人。
+[k]
+
+＠罗摩
+比起只有年轻这个长处的余来说，[r]您更能畅谈何谓英雄气概吧。
+[k]
+
+＠贝奥武夫
+话不是这么说的。
+[k]
+
+＠贝奥武夫
+毕竟Berserker的思考都比较武断。
+[k]
+
+＠贝奥武夫
+……但是，不管怎么而说，[r]我可以谈一下所谓的英雄气概。
+[k]
+
+[charaFace C 0]
+
+＠罗摩
+嗯。
+[k]
+
+＠罗摩
+但这并不适合在食堂里谈。[r]还是去战斗模拟装置吧。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaDepth A 10]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,0]
+[charaFadein I 0.1 0,0]
+
+＠帕里斯
+啊，好的～！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_2 1.0 0.5]
+
+[wait fade]
+
+[scene 107600]
+[charaFadeout A 0.1]
+[charaFadeout I 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 1.0 1.0]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth C 2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadeinFSL D 0.1 0]
+[charaFace C 0]
+[charaFadeinFSR C 0.1 2]
+
+＠贝奥武夫
+于是我们来到了这个宽阔的地方[line 3]
+[k]
+
+＠罗摩
+那先从外表年轻的余开始说起吧？
+[k]
+
+＠贝奥武夫
+好，拜托了。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠罗摩
+好了，帕里斯。[r]余先整理一下你的烦恼。
+[k]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠罗摩
+在迦勒底，[r]著名英雄的数量多如繁星。
+[k]
+
+＠罗摩
+和自己的功绩相比，[r]难免会觉得自己不如他们。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth A 2]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace I 0]
+[charaFadeinFSR A 0.1 256,0]
+[charaFadeinFSR I 0.1 256,0]
+[charaFace C 0]
+[charaFadeinFSL C 0.1 -256,0]
+
+＠帕里斯
+嗯，对。就是这样。
+[k]
+
+＠帕里斯
+因为我不仅成为了战争的契机，[r]还搞砸过很多事！
+[k]
+
+＠罗摩
+不仅功绩不如人，[r]实力也不如人。
+[k]
+
+＠罗摩
+既然如此，[r]那自己为何才会在这里呢。
+[k]
+
+＠罗摩
+随便换个人都没问题吧。[r]你是这么想的吗？
+[k]
+
+[charaFace A 0]
+
+＠帕里斯
+是的，差不多……
+[k]
+
+＠帕里斯
+因为事实就是如此吧？
+[k]
+
+＠帕里斯
+有人比我更会射箭，[r]有人比我更加聪明。
+[k]
+
+＠罗摩
+是呢。
+[k]
+
+＠罗摩
+[line 3]虽然这么说很残酷，[r]不过你说得没错。
+[k]
+
+[charaFace A 4]
+
+＠帕里斯
+呜呜。
+[k]
+
+＠罗摩
+这就是事实。如果你是个孩子，[r]余或许会说无关紧要的话来敷衍。
+[k]
+
+[charaFace C 0]
+
+＠罗摩
+可你是英雄帕里斯。[r]我们应该毫无忌惮地陈述事实。
+[k]
+
+＠罗摩
+[line 3]其实归根结底，[r]我们的替代者也要多少有多少。
+[k]
+
+[charaFace A 5]
+＠帕里斯
+哇，哇哇哇。[r]是真的吗？
+[k]
+
+[charaFace C 0]
+
+＠罗摩
+没错。
+[k]
+
+＠罗摩
+在拯救人理的大义旗帜下，[r]我们齐聚一堂。
+[k]
+
+＠罗摩
+每个人都想拯救人理，[r]每个人都想完成被赋予的职责。
+[k]
+
+[charaFace C 4]
+
+＠罗摩
+但是[#资源:resource]是有限的，[r]御主的职责也是有极限的。
+[k]
+
+＠罗摩
+因此[line 3]需要有替代者。[r]不，是必须有替代者。
+[k]
+
+[charaFace C 0]
+
+＠罗摩
+余一旦倒下，下一个英雄就会出现，[r]成为余的替代者。
+[k]
+
+＠罗摩
+……一旦其他人倒下，[r]余也必须成为那个人的替代者。
+[k]
+
+＠罗摩
+我们不是马拉松选手，[r]而是为了让人类史能接力下去的跑者。
+[k]
+
+＠罗摩
+为了将接力棒，[r]交给最后一棒的御主[line 3]
+[k]
+
+＠罗摩
+我们必须为这种消耗做好思想准备。
+[k]
+
+[charaFace C 1]
+
+＠罗摩
+至少余会欣然接受。
+[k]
+
+＠罗摩
+就算没有出场机会，[r]那也没关系。
+[k]
+
+[charaFace A 0]
+
+＠帕里斯
+……原来……如此……！
+[k]
+
+＠帕里斯
+原来如此，原来如此，原来如此！[r]我完全明白了，嗯！
+[k]
+
+＠罗摩
+好啦好啦，冷静点，帕里斯。
+[k]
+
+＠罗摩
+刚才只不过是余的想法。[r]连余都觉得这说法太居高临下了。
+[k]
+
+＠罗摩
+那贝奥武夫。[r]交给汝吧。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout I 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠贝奥武夫
+好嘞。
+[k]
+
+＠贝奥武夫
+……唔，是啊。[r]虽然都是些没什么实质的老生常谈[line 3]
+[k]
+
+＠贝奥武夫
+不过你想，不是常有人这么说吗？[r]“拥有力量的人，就该背负起与力量相应的责任”。
+[k]
+
+[charaFace D 0]
+
+＠贝奥武夫
+然后，[r]也有人反对这种观点。
+[k]
+
+＠贝奥武夫
+这些人认为『这些能力是我获得的！[r]　只有我能随意使用！』
+[k]
+
+＠贝奥武夫
+帕里斯，你怎么想？[r]你认同哪种观点？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth A 2]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFace I 0]
+[charaFadeinFSR A 0.1 256,0]
+[charaFadeinFSR I 0.1 256,0]
+[charaFace D 0]
+[charaFadeinFSL D 0.1 -256,0]
+
+＠帕里斯
+呃，那个……[r]唔……
+[k]
+
+＠帕里斯
+我觉得断言可以随意使用！[r]……稍微有些不太好吧。
+[k]
+
+＠帕里斯
+如果不承担起责任，总是不好。
+[k]
+
+＠贝奥武夫
+哪怕没有任何回报？
+[k]
+
+[charaFace A 0]
+
+＠帕里斯
+哎？
+[k]
+
+[charaFace D 1]
+
+＠贝奥武夫
+被称为英雄的人[r]或多或少都会为了某件事而赌命。
+[k]
+
+＠贝奥武夫
+无论是屠龙的冒险、寻宝的探险、[r]欺骗人的谋略，还是保卫和平的战争。
+[k]
+
+＠贝奥武夫
+破坏和平的侵略战争[line 3]或许也算吧。
+[k]
+
+＠贝奥武夫
+在这些事中，无论善恶，[r]都能得到足以让自己献出生命的回报。
+[k]
+
+＠贝奥武夫
+但是，[r]有时甚至连回报都没有。
+[k]
+
+[charaFace D 4]
+
+＠贝奥武夫
+不是很常见吗？
+[k]
+
+＠贝奥武夫
+作为英雄衣锦还乡，[r]却遭朋友背叛被杀害的人。
+[k]
+
+＠贝奥武夫
+明明是为弱者而战，[r]最后却战败而亡的男人。
+[k]
+
+＠贝奥武夫
+英雄不一定是胜利者，[r]有力量的人就算承担责任，也未必能得到回报。
+[k]
+
+＠贝奥武夫
+[line 3]既然如此，[r]你不觉得强制他们会很不识趣吗？
+[k]
+
+[charaFace A 4]
+
+＠帕里斯
+这[line 3][r]……呃，这个嘛。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout I 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_11 1.0 0.5]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,0]
+[charaFadeTime J 0.2 0.6]
+
+＠
+话语在脑海里不停打转。
+[k]
+
+＠
+怎么办，究竟是怎么回事。[r]什么才是正确的。
+[k]
+
+＠
+英雄的话[line 3][r]赫克托耳哥哥的话。
+[k]
+
+＠
+应该能轻而易举地回答这个问题吧。
+[k]
+
+＠
+那家伙……那位英雄的话，[r]应该也能回答吧。
+[k]
+
+＠
+其他英雄肯定也会遵循自身的意志[r]给出正确的答案。
+[k]
+
+＠
+……可我不明白。
+[k]
+
+＠
+因为有能力所以才需要担负责任。[r]就算有能力，也无法得到任何回报。
+[k]
+
+＠
+究竟哪种回答[line 3]才是正确的呢？
+[k]
+
+[charaFadeout J 0.2]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_11 1.0 1.0]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth A 2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadeinFSL D 0.1 -256,0]
+[charaFace A 4]
+[charaFace I 0]
+[charaFadeinFSR A 0.1 256,0]
+[charaFadeinFSR I 0.1 256,0]
+
+＠贝奥武夫
+……嗯，时间到了。
+[k]
+
+[charaFace A 2]
+
+＠帕里斯
+哎！？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠贝奥武夫
+没办法，罗摩。[r]来帮个忙。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth C 2]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadeinFSR C 0.1 2]
+[charaFace D 0]
+[charaFadeinFSL D 0.1 0]
+
+＠罗摩
+唔。[r]是要进行斯巴达……列奥尼达教育吗？
+[k]
+
+＠贝奥武夫
+这个嘛。
+[k]
+
+＠贝奥武夫
+如果把脑子放空活动身体就能有所收获的话，[r]那就算英雄是傻瓜也无妨吧。
+[k]
+
+＠贝奥武夫
+毕竟这个问题已经快让帕里斯死机了。
+[k]
+
+[charaFace D 1]
+＠贝奥武夫
+稍微转换一下心情吧。
+[k]
+
+＠罗摩
+没办法……
+[k]
+
+＠罗摩
+那帕里斯。[r]和御主组队吧。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 1.2]
+
+[charaTalk depthOn]
+
+[charaDepth A 10]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,0]
+[charaFadein I 0.1 0,0]
+
+＠帕里斯
+……[r]……
+[k]
+
+[charaFace A 2]
+
+＠帕里斯
+哎！？[r]啊，在！　是在叫我吗！？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth C 2]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadeinFSR C 0.1 2]
+[charaFace D 0]
+[charaFadeinFSL D 0.1 0]
+
+＠罗摩
+嗯。[r]余和贝奥武夫会与你战斗。
+[k]
+
+＠罗摩
+没事，只是一场训练。[r]只要运动一下，说不定就能发现什么了。
+[k]
+
+＠罗摩
+……虽然也有可能什么都发现不了。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaDepth A 10]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,0]
+[charaFadein I 0.1 0,0]
+
+＠帕里斯
+明……明白了！[r]我想挑战一下！
+[k]
+
+＠帕里斯
+御主，拜托您了！
+[k]
+
+？1：知道了，开始吧！
+
+＠帕里斯
+是！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth C 2]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadeinFSR C 0.1 2]
+[charaFace D 1]
+[charaFadeinFSL D 0.1 0]
+
+＠罗摩
+呵呵。[r]就算是训练，也是英雄间的冲突。
+[k]
+
+＠罗摩
+余可不会手下留情哦！
+[k]
+
+＠贝奥武夫
+当然，我也没打算手下留情。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？2：是强敌，振作一点哦！
+[charaFadeout A 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠贝奥武夫
+噢，竟然夸我是强敌，真高兴。[r]那我就全力以赴尽情殴打啦！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFace I 0]
+[charaFadein A 0.1 0,0]
+[charaFadein I 0.1 0,0]
+
+＠帕里斯
+能……能手下留情一点吗……
+[k]
+
+＠阿波罗
+就是就是。
+[k]
+
+＠阿波罗
+御主姑且不论，[r]应该对我们手下留情啦。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,0]
+
+＠贝奥武夫
+……应该夸奖说，不愧是希腊的太阳神吗，[r]这随性的态度……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠罗摩
+姑且来定一下胜负的规则吧。[r]只要被打倒一次，我们就认输。
+[k]
+
+＠罗摩
+当然，不允许杀人。
+[k]
+
+[charaFace C 2]
+
+＠罗摩
+[line 3]好，那就开始吧！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

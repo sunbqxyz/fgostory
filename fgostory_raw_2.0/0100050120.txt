@@ -1,0 +1,70 @@
+
+＄01-00-05-01-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[charaSet A 8001001 1 玛修]
+[charaSet B 98022000 1 士兵]
+[charaSet C 99360000 1 凯尔特战士]
+
+[scene 20720]
+[fadein black 2]
+[wait fade]
+
+[charaTalk B]
+[charaFadein B 0.1 1]
+＠士兵
+怎……怎么可能！？[r]竟然破坏了阁下送来的强化外骨骼Hard Work Mk-2！？
+[k]
+
+＠士兵
+而且还是那么娇小的少女！？[r]难道说[line 3]这就是报告中提到的从者类型吗！
+[k]
+
+＠士兵
+不行，前线往后～撤～！[r]在援军赶来之前后撤！抓紧时间！
+[k]
+
+[charaFadeout B 0.1]
+
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠玛修
+呼，呼……我们成功了，御主。
+[k]
+
+[charaFace A 12]
+＠玛修
+虽然还搞不清事情的来龙去脉，[r]不过那方总算是撤退了[line 3]
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFadein C 0.1 1]
+[se ad25]
+[seStop ad25 1.5]
+＠？？？
+[line 6]！
+[k]
+
+[charaFadeout C 0.1]
+
+[wt 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+小心！　接下来是另一边的军队！[r]总之要撑住啊，[%1]！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[communicationCharaClear]
+[wait communicationChara]
+[soundStopAll]
+[end]

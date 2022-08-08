@@ -1,0 +1,978 @@
+
+
+＄03-00-04-13-4-0
+
+
+[soundStopAll]
+
+[charaSet A 1039001 1 拉克什米]
+[charaSet B 1098167600 1 迦利]
+[charaSet C 1098166700 1 爱夏]
+[charaSet D 1098166900 1 阿贾伊]
+[charaSet E 1098167400 1 反抗军男性]
+[charaSet F 1098167500 1 反抗军女性]
+[charaSet G 1098167500 1 反抗军女性]
+[charaSet H 1098167100 1 男性1]
+[charaSet I 1098167110 1 男性2]
+[charaSet J 98115000 1 特效用]
+
+[scene 75004]
+
+[bgm BGM_EVENT_80 0.1]
+
+[cameraMove 0.1 0,0 1.01]
+
+[wt 0.2]
+
+[se ad16]
+[seVolume ad16 0 0.1]
+
+[fadein black 1.0]
+[seVolume ad16 1.0 0.4]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.3]
+
+[se ad85]
+[charaMoveScale B 1.1 0.2]
+[charaMove B 0,16 0.2]
+[charaFadeout B 0.2]
+[wt 0.2]
+
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[wt 0.1]
+[effect bit_talk_claw_red]
+[wt 0.3]
+
+[charaMoveScale B 1.0 0.1]
+
+[fowardEffect bit_talk_14]
+[se ad467]
+[charaShake F 0.05 3 2 1.0]
+[charaMove F 0,-10 0.3]
+[wt 0.2]
+[se ad54]
+[wt 0.3]
+
+＠F：女性
+啊啊……！
+[k]
+
+＠F：女性
+呜，果然还是不行吗？[r]人类的力量在迦利面前……！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[effect bit_talk_h_slash01]
+[wt 0.2]
+[se bac263]
+[wt 0.1]
+[se ad26]
+[charaShake B 0.05 3 2 0.8]
+[wt 1.0]
+[charaMove B 0,-10 0.5]
+[se ad716]
+[charaFadeout B 0.4]
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠拉克什米
+别放弃。众志成城，这就是人类的强大之处！[r]道路由我来开辟，大家跟我上！
+[k]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace F 1]
+[charaFadein F 0.1 0]
+
+[charaFace G 1]
+[charaFadein G 0.1 2]
+
+＠女性
+啊，是！
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_80 1.0 0.5]
+[seStop ad16 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+[pictureFrame cut063_cinema]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaTalk on]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 -256,-50]
+
+[charaFace I 2]
+[charaFadein I 0.1 256,-50]
+
+＠I：男性A
+喂，喂……那些家伙真的在战斗啊。
+[k]
+
+＠I：男性B
+是啊。那些奇装异服的家伙姑且不论，[r]他们和我们一样是人类吧？　为什么要那样做……
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+
+＠阿贾伊
+…………
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠爱夏
+[&大哥哥:大姐姐]们……
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth J 2]
+[charaDepth B 1]
+
+[shake 0.05 0 2 2.0]
+[se ad628]
+[seVolume ad628 0 0.4]
+[shake 0.03 5 5 0.6]
+[charaPut J 0,-50]
+[charaRoll J 270]
+[charaEffect J bit_talk_impactlanding]
+[wt 0.6]
+[charaTalk B]
+[charaFadein B 0.7 -100,-50]
+[charaMove B 0,-50 0.5]
+[wt 1.0]
+[seStop ad628 2.0]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 0,-50]
+
+＠男性
+墙……墙壁被破坏了！　是迦利！[r]神啊！　请救救我们吧，神明大人！
+[k]
+
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaTalk depthOff]
+[charaDepth C 2]
+[charaDepth B 1]
+
+[charaFace C 4]
+[charaFadein C 0.1 256,-50]
+
+[charaFace B 0]
+[charaFadein B 0.4 -306,-50]
+[charaMove B -256,-50 0.4]
+[se ad727]
+
+[wt 0.8]
+
+[charaTalk on]
+[charaTalk C]
+
+＠爱夏
+啊，啊啊，啊……[bgmStop BGM_EVENT_80 1.5]
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 1.0]
+[se ad171]
+
+[fadeout black 0.3]
+[charaMove B -100,-50 0.3]
+[wait fade]
+
+[scene 10000]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[effect bit_talk_v_slash01]
+[wt 0.4]
+[se bac403]
+[wt 0.5]
+[effect bit_talk_35]
+[wt 2.0]
+
+[fadeout black 0.1]
+[wait fade]
+
+[charaFace B 0]
+[charaFadein B 0.1 -126,-50]
+[wt 0.1]
+[charaShake B 0.05 4 2 1.8]
+
+[charaFace C 4]
+[charaFadein C 0.1 256,-50]
+
+[scene 75004]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+[charaFace D 5]
+[charaFadein D 0.4 -236,-50]
+[wt 0.2]
+
+[charaFadeout B 0.7]
+[wt 0.2]
+[charaMove B -126,-80 0.3]
+
+[wt 0.3]
+[se ad716]
+[wt 0.6]
+
+[charaTalk on]
+[charaTalk D]
+
+＠阿贾伊
+该死。不小心出手了。
+[k]
+
+[bgm BGM_EVENT_82 0.1]
+
+＠阿贾伊
+都是那些家伙的错。因为那些家伙在我们眼前[r]展示了[#我们也可以这样做]……身体，就下意识……
+[k]
+
+[charaFace D 2]
+
+＠阿贾伊
+……既然已经动了手，那就没办法了。[r]过来，爱夏！
+[k]
+
+[charaFace C 2]
+
+＠爱夏
+爸……爸……？
+[k]
+
+[charaFace D 5]
+
+＠阿贾伊
+墙壁被破坏了。祈祷不起效。[r]所以[line 3]能依靠的只有这把斧子。
+[k]
+
+[charaFace D 0]
+
+＠阿贾伊
+我们离开这里，爱夏。[r]留在这里还不如跟着那群[#呆瓜:猫头鹰]。
+[k]
+
+[charaFace C 5]
+
+＠爱夏
+[line 3]唔，嗯！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 256,-50]
+
+[charaFace I 2]
+[charaFadein I 0.1 -256,-50]
+
+＠I：男性A
+喂，喂，你们两个！
+[k]
+
+＠I：男性B
+……我……我也要一起走，等等我！[r]谁愿意乖乖地被吃掉啊！
+[k]
+
+＠I：男性A
+哈！？　……喂，走，我也走，等等我！
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+[pictureFrame]
+[wt 0.1]
+
+[charaSet B 1019001 1 罗摩]
+[charaSet G 98115300 1 福尔摩斯]
+[charaSet I 8001410 1 玛修]
+
+[charaEffectStop J bit_talk_impactlanding]
+[charaRoll J 0]
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[se ad16]
+[seVolume ad16 0 0.1]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[seVolume ad16 1.0 0.4]
+[wait wipe]
+
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 1]
+
+＠玛修
+御主！　等回过神来时……[r]加入战斗的村民越来越多了！
+[k]
+
+＠玛修
+不是为了躲避迦利，[r]而是为了救助被迦利袭击的人[line 3]！
+[k]
+
+？1：虽说确实帮了大忙[line 3]
+？2：………………
+？！
+
+[messageOff]
+[seVolume ad16 1.0 0.7]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+
+[charaFace H 0]
+[charaFadein H 0.1 0]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[charaFace E 0]
+[charaFadein E 0.1 2]
+
+[wt 1.2]
+
+[charaFadeout H 0.1]
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaFace D 5]
+[charaFadein D 0.1 0]
+
+[charaFace C 5]
+[charaFadein C 0.1 2]
+
+[wt 1.2]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[seStop ad16 1.0]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠拉克什米
+呵呵。果然[line 3]最能鼓舞民众的，[r]就是同为民众的身姿。
+[k]
+
+＠拉克什米
+一位王后能做到的事其实很有限。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠罗摩
+余记得之前还有谁说过，[r]领头者的光辉也是很重要的。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠玛修
+…………
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠拉克什米
+……？　其实，我一直很在意。[r]你们有时会露出这种表情呢。
+[k]
+
+＠拉克什米
+自从决定要扩大抵抗运动以来，你们就这样了。[r]如果你们觉得让民众参与战斗会有什么问题，还请告诉我。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_82 1.5]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠福尔摩斯
+对哦。切除[#异闻带:Lostbelt]空想树之后会发生的事，[r]我们还没有详细告诉你呢。
+[k]
+
+＠福尔摩斯
+……要不要说出来就由你们决定吧。
+[k]
+
+？1：……当然要说，但是……
+？2：现在可没有这个空……！
+？！
+
+[charaSet C 1098123210 1 戈尔德鲁夫]
+[charaSet D 23003001 1 伽内什]
+[charaSet E 1098167600 1 迦利]
+[charaSet F 98002000 1 芙芙]
+[charaSet H 1098167600 1 迦利]
+[charaSet I 8001410 1 玛修]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠戈尔德鲁夫
+……哼。说得没错。[r]身为司令官的我当然也不打算隐瞒。
+[k]
+
+[charaFace C 12]
+
+＠戈尔德鲁夫
+但现在不该讲这件事。[r]这可不是……能边战斗边抽空讲的。
+[k]
+
+[charaFace C 4]
+
+＠戈尔德鲁夫
+所以说……总之要先渡过眼前的难关。[r]一切都留待之后再说。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠罗摩
+这方面的事余也没有听你们具体提起过。[r]看来背后藏着不小的隐情啊。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠伽内什
+………………
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠拉克什米
+……？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+
+[charaFace H 0]
+[charaFadein H 0.4 0]
+
+[charaFace E 0]
+[charaFadein E 0.4 2]
+
+[wt 0.5]
+
+[se ad727]
+[wt 1.5]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaFadeout H 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaMoveReturn F 0,30 0.5]
+
+＠芙芙
+芙！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠玛修
+拉克什米小姐！[r]我保证稍后一定会向您说明。
+[k]
+
+＠玛修
+但迦利的数量又增加了。[r]现在必须全力应付才[line 3]
+[k]
+
+[charaFace I 15]
+
+＠玛修
+呜！？
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+
+[se ade8]
+[seVolume ade8 0 0.6]
+[effect bit_talk_rarrow01or]
+[wt 1.0]
+
+[charaFace H 0]
+[charaFadein H 0.1 0]
+
+[charaFace E 0]
+[charaFadein E 0.1 2]
+
+[wt 0.1]
+
+[se bac59]
+[effect bit_talk_14]
+
+[wt 0.5]
+[charaShake H 0.05 3 2 0.5]
+[charaShake E 0.05 3 2 0.5]
+[wt 0.3]
+
+[charaMove H -256,-15 0.3]
+[charaFadeout H 0.4]
+[wt 0.1]
+[charaMove E 256,-15 0.3]
+[charaFadeout E 0.4]
+
+[wt 0.2]
+[se ad716]
+[wt 0.1]
+[se ad716]
+[wt 1.0]
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠罗摩
+箭矢将迦利轰散了！　是从哪里射来的……！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠伽内什
+不会吧。像是[#从城镇外射来的]啊！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_80 1.0 0.5]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[pictureFrame cut063_cinema]
+[wt 0.6]
+
+[charaSet F 2034000 1 退尔]
+
+[scene 74901]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 0,-50]
+[wt 0.5]
+
+＠退尔
+嘿嘿。身为神之仆从，也是要做好工作，[r]维持裁决的公平性才行呢。
+[k]
+
+＠退尔
+觉得对于圣兽来说数量太多的话，也需要间一下苗。[r]虽然麻烦得要命，但毕竟是在契约范围内。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[pictureFrame]
+
+[scene 75004]
+
+[charaSet D 1098124510 1 达·芬奇]
+[charaSet E 1098127610 1 佩佩隆奇诺]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_80 1.0 1.0]
+[wait wipe]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 21]
+[charaFadein D 0.1 1]
+＠达·芬奇
+糟了。原本计划在解决阿斯克勒庇俄斯之后，[r]再从容和他对峙的，没想到对方自己找上门来了……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠玛修
+推测是Archer……威廉·退尔的狙击！[r]御主，请多加小心！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠戈尔德鲁夫
+什么[line 3]！？　竟然隔着如此的超远距离！？[r]这射程就算是狙击步枪也很难做到吧！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠福尔摩斯
+那是从者，而且还是Archer的狙击。[r]还是看做用魔力编成的为好。
+[k]
+
+＠福尔摩斯
+出于安全着想，就算看起来只是把普通的弩箭，[r]也不要以为它的威胁度会低于狙击枪。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠罗摩
+可这距离未免也太离谱了吧。[r]竟然连余的眼睛也没法清晰捕捉到！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠佩佩隆奇诺
+是啊，哪怕对一流Archer来说，这也有点异常了。[r]难道是由于他被赋予的神性力量吗……？
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[pictureFrame cut063_cinema]
+[scene 74901]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 0,-50]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+
+[se bac56]
+[wt 1.2]
+[se bac332]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[pictureFrame]
+[scene 75004]
+
+[charaSet A 1098167700 1 圣兽]
+[charaSet C 1098167100 1 男性]
+[charaSet D 1098167200 1 女性]
+[charaSet E 1098166700 1 爱夏]
+[charaSet F 1098166900 1 阿贾伊]
+
+[charaTalk off]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[se ade8]
+[seVolume ade8 0 0.6]
+[effect bit_talk_rarrow01or]
+[wt 1.0]
+
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[wt 0.1]
+
+[se bac59]
+[effect bit_talk_14]
+
+[wt 0.4]
+[charaShake H 0.05 3 2 0.8]
+[wt 0.5]
+
+[charaMove H 0,-15 0.3]
+[charaFadeout H 0.4]
+[wt 0.3]
+
+[se ad716]
+[wt 1.8]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.2]
+[shake 0.05 4 3 1.0]
+[se ade246]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0]
+
+[charaFace D 1]
+[charaFadein D 0.1 2]
+
+＠男性
+是神之使者和圣兽大人！　祈祷果然传达到了！
+[k]
+
+＠女性
+得救了，我们得救了啊！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠阿贾伊
+一群[#呆瓜:猫头鹰]……我就知道你们没明白。
+[k]
+
+＠阿贾伊
+就算那些箭矢射偏了，击中了我们，[r]神也不会为我们做什么。
+[k]
+
+＠阿贾伊
+……快退后，爱夏。[r]不要站到我前面来。绝对不行。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠爱夏
+唔，嗯。[r]……谢谢你，爸爸。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+
+[charaTalk off]
+
+[charaFace H 0]
+[charaFadein H 0.4 0]
+
+[charaFace A 0]
+[charaFadein A 0.4 2]
+
+[wt 0.5]
+[shake 0.05 4 3 1.0]
+[se ade246]
+[se ad727]
+[wt 1.0]
+[seStop ade246 0.3]
+[seStop ad727 0.3]
+
+[charaFadeout H 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 1]
+
+＠玛修
+看来要发展成混战了……！　尽管目前箭矢都在射杀迦利，[r]但不知何时就会朝我们飞来。
+[k]
+
+＠玛修
+我会将重点放在御主的[#护卫:防御]上。[r]请您千万不要从盾牌背后探出身来哦，御主！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

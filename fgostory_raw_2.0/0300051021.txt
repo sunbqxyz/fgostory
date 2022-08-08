@@ -1,0 +1,392 @@
+
+＄03-00-05-10-2-1
+
+
+[soundStopAll]
+
+[charaSet A 1098182700 1 亚特兰蒂斯防卫兵]
+[charaSet B 1098182700 1 亚特兰蒂斯防卫兵]
+[charaSet C 4039002 1 曼迪卡尔多]
+[charaSet D 6038002 1 夏洛特·科黛]
+[charaSet E 8001410 1 玛修]
+[charaSet F 1098158300 1 尼莫]
+
+[charaSet J 5009000 1 特效用dummy]
+
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[se bac6]
+[charaRoll J 90]
+[charaPut J -125,-175]
+[charaEffect J bit_talk_Slash_white_01_L]
+[wt 0.6]
+
+[se ad171]
+[fowardEffect bit_talk_ichimon01wh]
+[wt 0.4]
+
+[cueSe Battle bac151]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF50]
+[wt 0.1]
+
+[scene 85400]
+
+[charaFace A 0]
+[charaFace B 0]
+[charaFadein A 0 2]
+[charaFadein B 0 0]
+[charaShake A 0.03 4 4 0.8]
+[charaShake B 0.03 4 4 0.8]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[wt 1.2]
+
+
+[charaMove A 256,-50 0.4]
+[charaFadeout A 0.4]
+[wt 0.2]
+[charaMove B -256,-50 0.4]
+[charaFadeout B 0.4]
+[wt 0.2]
+[se ad144]
+[wt 0.2]
+[se ad144]
+[wt 1.4]
+
+
+[bgm BGM_EVENT_77 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠曼迪卡尔多
+接着破坏武器……绑起来……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠夏洛特·科黛
+结束了，[%1][&先生:小姐]！
+[k]
+
+？1：辛苦了！
+
+[charaFace D 0]
+＠夏洛特·科黛
+没事没事。[r]这都是为了[%1][&先生:小姐]！
+[k]
+
+？2：没受伤吧？
+
+[charaFace D 0]
+＠夏洛特·科黛
+啊，受了一点伤。[r]但这点小伤不要紧[line 3]
+[k]
+
+[messageOff]
+[wt 0.1]
+[se bas3]
+[fowardEffect bit_talk_cure]
+[wt 2.0]
+
+[charaFace D 10]
+＠夏洛特·科黛
+啊……
+[k]
+
+[charaFace D 4]
+＠夏洛特·科黛
+那个……不好意思。[r]谢谢你帮我疗伤。
+[k]
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+＠玛修
+咳咳，咳咳。
+[k]
+
+[charaFace E 14]
+＠玛修
+我们进入神殿吧！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠曼迪卡尔多
+……[r]……
+[k]
+
+＠曼迪卡尔多
+（曼迪卡尔多领悟到，[r]　这种时候置身事外才是明智之举。）
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠尼莫
+怎么像鮟鱇鱼一样发呆？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠曼迪卡尔多
+……没……没什么啦。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠尼莫
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠曼迪卡尔多
+（这个人？　不对，这个英灵[r]　不食人间烟火到有点恐怖啊……）
+[k]
+
+＠曼迪卡尔多
+（在我老家是挺罕见的类型……[r]　难以沟通啊……）
+[k]
+
+[charaFace C 2]
+＠曼迪卡尔多
+（不，其实这世界上根本没有[r]　我容易沟通的对象吧！）
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[scene 85500]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_79 0.1]
+
+[wt 0.5]
+
+？1：果然是一样的吧？
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠曼迪卡尔多
+没错。[r]应该能通过相同操作释放出纳米机器。
+[k]
+
+
+？2：怎么看都很科幻……
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠玛修
+说得对。
+[k]
+
+＠玛修
+迄今为止的[#异闻带:Lostbelt][r]都是文明层面停滞的地方……
+[k]
+
+＠玛修
+不，秦的文明程度某种意义上超越了现代。
+[k]
+
+＠玛修
+但我没想到竟会有如此尖端的技术。
+[k]
+
+＠玛修
+无论是那些衣服，还是居民们的力量……
+[k]
+
+[charaFace E 12]
+＠玛修
+……[r]……不，没什么。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+？！
+
+＠曼迪卡尔多
+我开始了哦。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+＠广播语音
+奥林波斯人　血统确认[se ad793][r]血统数值　ERROR
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+＠广播语音
+开始释放　忒俄斯·克利洛诺弥亚
+[k]
+
+
+[messageOff]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+
+[effect bit_talk_legado_d]
+[se ad821]
+[bgm BGM_EVENT_79 0.6 0.4]
+
+[wt 5.5]
+
+
+[bgm BGM_EVENT_79 0.6 1.0]
+
+[charaFace F 0]
+
+＠尼莫
+……[r]……呼。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠玛修
+感觉如何？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠尼莫
+……嗯。[r]几乎，相当接近完美了。
+[k]
+
+[charaFace F 1]
+＠尼莫
+……但到了这种地步，反而想追求更多。
+[k]
+
+＠尼莫
+与希翁一起建造的鹦鹉螺号终究是替代品。
+[k]
+
+＠尼莫
+那是为了征服这片神代海洋，[r]不得不依靠我的鹦鹉螺号的临时舰艇。
+[k]
+
+＠尼莫
+希翁的要求其实比这更高。[r]但彷徨海没有足以实现的资源……
+[k]
+
+＠尼莫
+如果能够用这种纳米机器强化我的灵基，[r]并与潜航艇共享的话，
+[k]
+
+[charaFace F 7]
+＠尼莫
+说不定就能期待新的鹦鹉螺号[line 3]新的Shadow Border了。
+[k]
+
+＠尼莫
+[%1]。[r]请你将我带往那个领域吧。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠玛修
+我们还答应了德雷克小姐。[r]要多拿一骑的量吧。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠曼迪卡尔多
+知道啦。那接下来就试试她给我们的代码……
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_79 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

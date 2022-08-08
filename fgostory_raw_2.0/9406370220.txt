@@ -1,0 +1,746 @@
+
+
+＄94-06-37-02-2-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 11012000 1 蘭丸Ｘ]
+[charaSet B 1098222550 1 坂本龍馬（ランサー）]
+[charaSet C 1098138000 1 坂本龍馬]
+[charaSet D 7026000 1 茶々]
+[charaSet E 1098170900 1 森長可]
+[charaSet F 1098139000 1 お竜さん]
+
+[charaSet G 7026000 1 茶々シルエット]
+[charaFilter G silhouette 00000080]
+
+[charaSet H 98115000 1 エフェクト用]
+[charaSet I 98115000 1 エフェクト用]
+[charaSet J 98115000 1 エフェクト用]
+
+[charaScale I 2.0]
+[charaScale J 2.0]
+
+[charaPut J 3000,3000]
+[charaEffect J bit_talk_blackfire_all]
+
+[scene 138800]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠B：坂本龍馬
+これは参ったな、サーヴァントの処理だけかと思ったら[r]こんなイレギュラーが紛れ込んでるなんて。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 21]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+この程度の[#不逞:ふてい]の者ども、蘭丸の敵ではありません！
+[k]
+
+＠蘭丸Ｘ
+主様、どうかご安心を！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠B：坂本龍馬
+サーヴァントと契約した魔術師か、[r]たしかに旗色が少し悪そうだ。
+[k]
+
+＠B：坂本龍馬
+一旦、退くとしよう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+そう簡単に逃がすと思うでありますか。
+[k]
+
+＠蘭丸Ｘ
+退き佐久間星人ならともかく、この蘭丸Ｘの目が[r]光っているうちはそうはいかないでありますよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠B：坂本龍馬
+うん、参ったなこれは……、ん？
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_81 0.4 0.4]
+[wipeout rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 0.4]
+
+[wipein rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+
+[charaTalk depthOff]
+[charaDepth D 2]
+[charaDepth E 1]
+[charaDepth G 3]
+[charaDepth J 7]
+[charaDepth I 8]
+[charaDepth H 9]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFace E 4]
+[charaFadeinFSR E 0.4 2]
+[charaFadeinFSL D 0.4 0]
+[wt 0.4]
+
+＠茶々
+マスターたちどこに行ったのかしら。
+[k]
+
+＠森長可
+はぐれちまったみてぇだな。[r]まあ、適当に探してりゃ見つかんだろ。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 0.3]
+
+[bgm BGM_EVENT_81 0.4 1.0]
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+＠B：坂本龍馬
+ちょうどいい、君達、ちょっと失礼。
+[k]
+
+[messageOff]
+
+[charaPut H 1]
+[charaEffect H bit_talk_suspicious]
+[se ad489]
+[se ad950]
+[seVolume ad950 0 0.4]
+[se ade280]
+[seVolume ade280 0 0.3]
+[wt 0.6]
+[se ad632]
+[seVolume ad632 0 0.1]
+[wt 0.9]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[se ad969]
+[se ad960]
+[se ade409]
+[seVolume ade409 0 0.5]
+
+[charaTalk off]
+[charaFace D 3]
+[charaFace E 5]
+[charaFadeinFSR E 0.1 2]
+[charaFadeinFSL D 0.1 0]
+
+[charaPut I 1]
+[charaEffect I bit_talk_blackfire_all]
+[wt 1.2]
+
+[charaFace D 2]
+[charaFace E 2]
+[wt 0.3]
+
+＠茶々
+うわっ！？　なにこの黒いの！
+[k]
+
+＠森長可
+急になんだこりゃ！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaPut H 3000,3000]
+[charaPut I 3000,3000]
+[wt 0.4]
+
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[charaTalk on]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠B：坂本龍馬
+ん？　変だな、男の方には効かない……？
+[k]
+
+[charaFace B 0]
+
+＠B：坂本龍馬
+まあいい。時間稼ぎなら、一騎でも充分だろう。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[charaPut H 1]
+[charaPut J 1]
+
+[charaTalk off]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+[wt 0.7]
+
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+[wt 1.0]
+[charaEffectStop H bit_talk_suspicious]
+[charaEffectStop I bit_talk_blackfire_all]
+[charaEffectStop J bit_talk_blackfire_all]
+[seStop ade280 2.0]
+[seStop ad632 2.0]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+
+[wt 3.0]
+
+[se ad984]
+[charaFadeout G 0.5]
+[wt 0.6]
+
+[charaPut H 1200,1200]
+[charaPut I 1200,1200]
+[charaPut J 1200,1200]
+[charaEffectDestroy bit_talk_suspicious]
+[charaEffectDestroy bit_talk_blackfire_all]
+＠茶々
+許さない……！　[#関八州:かんはっしゅう]、徳川の地！
+[k]
+
+[charaFace D 10]
+[bgm BGM_EVENT_24 0.1]
+
+＠茶々
+何もかも許さない……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+この者は！？
+[k]
+
+？1：どうしたの！？
+
+？2：様子がアヴェンジャー！？
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：坂本龍馬
+じゃあ、後は任せたよ。[r]できれば始末してくれると助かるかな。
+[k]
+
+
+[messageOff]
+
+[se ad73]
+[charaEffect B bit_talk_quickmove]
+[charaSpecialEffect B erasureReverse 1 0.2]
+[charaMove B 0,6 0.4]
+[wt 1.2]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠茶々
+……許さない、許さない！
+[k]
+
+[charaFaceFade D 10 0.2]
+
+＠茶々
+何もかも燃えてしまえ！　[#拾:ひろい]を、[#拾:ひろい]を返せ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠森長可
+ん？　おい、どうした茶々様？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠茶々
+下がれ、下郎！
+[k]
+
+[messageOff]
+[se ad960]
+[effect bit_talk_flame_slash_01 0,0 F]
+[wt 0.2]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaScale I 3.0]
+[charaScale J 3.0]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+[wt 0.2]
+
+[cueSe Servants_502100 m45015]
+[charaPut I 1]
+[charaEffect I bit_talk_29]
+[effect bit_talk_29]
+[wt 0.2]
+[charaFace E 10]
+
+[shake 0.05 2 2 0.6]
+[wt 0.2]
+[seStop m45015 1.5]
+
+＠森長可
+うごぁ！？
+[k]
+
+＠森長可
+……茶々様よお、急にどうした？
+[k]
+
+＠森長可
+いくら殿下の女でもやっていい事と[r]悪い事があんだろ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+あいつの仲間でありますか！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠森長可
+おう、殿様じゃねぇか、やっと見つけたぜ！
+[k]
+
+＠森長可
+何だか知らねぇが、[r]急に茶々様がおかしくなっちまったぜ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠茶々
+許さない……！　許さない……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠森長可
+どういうわけか知らねぇが、[r]殿様と事を構えるってんならしゃあねぇ。
+[k]
+
+[charaCrossFade E 1098171200 1 0.2]
+
+＠森長可
+茶々様ぶっ殺すのは気が進まねぇが、[r]こりゃ仕方ねぇだろ、殿様。
+[k]
+
+？1：ダメです、助けてください
+
+？2：なんとかならない？
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+むむ、主様、それはなかなか難しい[r]お指図でありますね。
+[k]
+
+＠蘭丸Ｘ
+様子は確かにおかしいようですが、
+[k]
+
+＠蘭丸Ｘ
+蘭丸の見立てによると見た目によらず[r]内に秘めた力……、
+[k]
+
+[charaFace A 2]
+
+＠蘭丸Ｘ
+いえ、怨念のごとき炎は並みではないでありますよ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaSet E 1098170900 1 森長可]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠茶々
+全て、全て炎と共に朽ち果てるがいい！
+[k]
+
+[messageOff]
+
+[se ad960]
+[effect bit_talk_flame_slash_01 0,0 F]
+[wt 0.2]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+
+[charaTalk off]
+
+[charaFace A 5]
+[charaFadein A 0.1 -280,0]
+
+[charaFace E 10]
+[charaFadein E 0.1 280,0]
+[wt 0.2]
+
+[cueSe Servants_502100 m45015]
+[se ad882]
+[charaPut I 1]
+[charaEffect I bit_talk_29]
+[effect bit_talk_29]
+[wt 0.1]
+
+[charaMove A -600,0 0.4]
+[charaMove E 600,0 0.4]
+[shake 0.05 3 3 1.2]
+[charaFadeout A 0.2]
+[charaFadeout E 0.2]
+[seStop m45015 2.5]
+
+＠蘭丸Ｘ
+あうっ！？
+[k]
+
+＠森長可
+うおおおっ！？
+[k]
+
+
+[messageOff]
+
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+[wt 0.6]
+[se ad984]
+[charaMoveScale D 1.1 0.3]
+[charaMove D 0,14 0.3]
+
+
+＠茶々
+おまえは……、おまえは何故生きている！[r][#拾:ひろい]は死んだのに、何故おまえは！
+[k]
+
+[messageOff]
+[cueSe Servants_703100 bac771]
+[wt 0.8]
+[se bac265]
+[effect bit_talk_flame_slash_01 0,0 F]
+[wt 0.2]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[wt 0.3]
+
+[charaScale D 1.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+主様！？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad678]
+[wt 0.6]
+
+
+[charaScale F 1.2]
+
+[bgmStop BGM_EVENT_24 1.0]
+[se ad882]
+[charaPut I 1]
+[charaEffect I bit_talk_29]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.2 -200,0]
+[charaMove F 0,0 0.2]
+[wt 0.2]
+[cueSe Servants_503600 bac677]
+[se ad635]
+[se bac268]
+[seVolume bac268 0 0.3]
+[charaShake F 0.05 3 3 0.3]
+[effect bit_talk_14]
+[wt 1.0]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaScale F 1.0]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠茶々
+あうっ！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_BATTLE_116 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠お竜さん
+待たせたな人間。
+[k]
+
+[charaFace F 5]
+
+＠お竜さん
+って、前もこんなことあったか？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+
+＠坂本龍馬
+よかった、ようやく見つけたよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+さっきの奴でありますか！
+[k]
+
+[charaFace A 2]
+
+＠蘭丸Ｘ
+のこのこ戻って来ても、[r]主様はやらせないでありますよ！
+[k]
+
+？1：この人たちは大丈夫！
+
+？2：坂本さんにお竜さん！
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 2]
+[charaDepth F 1]
+
+[charaTalk off]
+[se ad984]
+[seVolume ad984 0 0.5]
+[charaFace C 0]
+[charaFace F 5]
+[charaFadein C 0.4 20,0]
+[charaMove C 0,0 0.4]
+[charaFadein F 0.4 -20,0]
+[charaMove F 0,0 0.4]
+[wt 0.6]
+[charaTalk on]
+
+＠坂本龍馬
+うん、とにかく彼女を何とかしよう。[r]どうやら何らかの魔術で操られているようだ。
+[k]
+
+＠坂本龍馬
+お竜さん、何とかなるかな？
+[k]
+
+＠お竜さん
+どうやらよくない気でおかしくなってるな、[r]これは少し殴るくらいじゃ駄目そうだぞ。
+[k]
+
+[charaFace C 5]
+
+＠坂本龍馬
+少なくとも、動けないくらいにはなって[r]もらう必要がありそうだね。
+[k]
+
+[charaFace C 0]
+
+＠坂本龍馬
+そこの君、彼女を助けるためにも[r]協力してもらえるかな？
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+なんかうさん臭いでありますし、[r]さっきの奴とどこが違うのかわかりませんが、
+[k]
+
+[charaFace A 5]
+
+＠蘭丸Ｘ
+主様が仰るなら蘭丸も信じるまでであります！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFace F 1]
+[charaFadein C 0.1 1]
+[charaFadein F 0.1 1]
+
+＠坂本龍馬
+よし、それじゃあ行くよ、お竜さん！
+[k]
+
+＠お竜さん
+ああ、任せとけ！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_116 0.4]
+[wait fade]
+[soundStopAll]
+[end]

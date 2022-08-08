@@ -1,0 +1,257 @@
+
+
+
+＄94-05-42-07-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1048000 1 圣诞迦尔纳]
+[charaSet B 99502600 1 玛修]
+[charaSet C 7008001 1 贝奥武夫]
+[charaSet D 4006001 1 乔尔乔斯]
+[charaSet E 7033002 1 阿周那·Alter]
+[charaSet F 7013001 1 清姬]
+[charaSet G 3046001 1 弗栗多]
+[charaSet H 98115000 1 通讯用]
+[charaSet I 98115000 1 特效用]
+
+[imageSet J back10000 1 1]
+[charaScale J 1.01]
+[sceneSet K 106600 1 1]
+[charaScale K 1.0]
+
+[charaPutFSR H 1200,2000]
+[charaEffect H bit_talk_10_LowLevel]
+
+[charaDepth D 1]
+[charaDepth E 2]
+
+[scene 31901]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaPut F 0,0]
+[charaTalk F]
+[charaFace F 4]
+[charaFadeTime F 0.4 0.6]
+[wt 0.8]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠清姬
+啊。我突然发现了。[r]这个我其实并不是我……
+[k]
+
+＠清姬
+也就是说预计出轨的对象是真正的我吧？
+[k]
+
+[charaFace F 11]
+＠清姬
+那就行了……但出于少女心，[r]即便对象是自己还是想要独占啊！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.0]
+
+[se ad596]
+[wt 0.1]
+[charaSpecialEffect F erasure 0,0 1.5]
+[wait charaSpecialEffect F]
+[wt 1.1]
+
+[se ade410]
+[wt 0.2]
+[charaPut I 1]
+[charaEffect I bit_talk_20b]
+[wt 2.2]
+
+[se ad80]
+[wt 0.3]
+[seStop ad80 0.2]
+[wt 0.6]
+
+
+
+[se ad149]
+[se ad216]
+[seVolume ad216 0 0]
+[se ad733]
+[seVolume ad733 0 0]
+[fadeout white 0.3]
+[seVolume ad216 0.3 1.0]
+[seVolume ad733 0.3 1.0]
+[wait fade]
+
+[seStop ad733 1.5]
+
+[charaPutFSR I 1200,2000]
+[charaEffectDestroy I bit_talk_20b]
+
+[scene 10000]
+[wt 2.5]
+
+
+
+
+
+[criMovie talk_mov086 bgmPlay false]
+[wt 0.5]
+
+[fadein white 1.5]
+[wait fade]
+
+[wt 31.0]
+
+
+[charaTalk depthOff]
+[charaDepth J 4]
+[charaDepth K 5]
+
+[overlayFadein J 1.0 0,-200]
+[wt 1.0]
+
+
+[scene 106600]
+[wt 3.0]
+
+[overlayFadein K 1.0 0,-200]
+[wt 1.0]
+[charaFadeout J 1.0]
+[wt 1.0]
+
+
+？1：好……！
+？！
+[charaFadeout K 0.3]
+[wt 0.3]
+[charaTalk depthOn]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠弗栗多
+克服最后的障碍了吗。真不错。
+[k]
+
+＠弗栗多
+那么，吾战斗起来就没有后顾之忧了。[r]吾可以承认汝等是有这般价值之人。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠贝奥武夫
+哎，那还真是多谢了……！
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth D 4]
+[charaDepth E 6]
+
+[charaFace D 0]
+[charaFadeinFSR D 0.1 2]
+
+[charaFace E 0]
+[charaFadeinFSL E 0.1 0]
+
+[wt 1.2]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠圣诞迦尔纳
+不用再说什么了。
+[k]
+
+＠圣诞迦尔纳
+你休想逃跑。[r]我要打倒你，成为真正的圣诞老人。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+＠弗栗多
+噢噢，表情不错嘛。
+[k]
+
+＠弗栗多
+[line 3]话说在前头。
+[k]
+
+[charaFace G 6]
+＠弗栗多
+汝等可以惨叫，可以哭泣，[r]无论露出多么凄惨的样子都无妨。
+[k]
+
+＠弗栗多
+吾都不介意。倒不如说这些将是最好的调料。[r]令吾之尾梢都蠢蠢欲动了。
+[k]
+
+[bgmStop BGM_EVENT_62 1.0]
+
+[charaFace G 7]
+＠弗栗多
+但是……万不可中途放弃哦。[r]因为那样未免太无聊了吧？
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[charaTalk off]
+[se ade391]
+
+[effect bit_talk_charge_blu]
+[wt 2.0]
+
+[seStop ade391 0.5]
+[wt 0.5]
+
+[effectDestroy bit_talk_charge_blu]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaPut H 1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠玛修
+弗栗多的魔力模式发生变化……进入战斗态势！[r]御主，千万小心！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+

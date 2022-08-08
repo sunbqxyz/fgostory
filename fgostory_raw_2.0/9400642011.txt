@@ -1,0 +1,191 @@
+＄94-00-64-20-1-1
+
+
+[soundStopAll]
+[bgm BGM_EVENT_32 0.1]
+[charaSet A 8001000 1 玛修]
+[charaSet B 98102500 1 伊莉雅]
+[charaSet D 5023000 1 海伦娜]
+[charaSet E 98103600 1 红宝石]
+
+[scene 31300]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+[fadein black 2.0]
+[wait fade]
+
+＠海伦娜
+……………………（气呼呼）。
+[k]
+
+
+[charaFadeout D 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFace E 0]
+[charaFadein B 0.1 2]
+[charaFadein E 0.1 0]
+
+＠伊莉雅
+海伦娜小姐真是的，[r]彻底开始闹别扭了……
+[k]
+
+[charaShake E 0.07 0 8 1.0]
+＠红宝石
+直到刚才还那么酷的氛围全都功亏一篑了呢～？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠玛修
+伊莉雅小姐的做法虽然有些粗暴……[r]但我觉得她的心情应该能传达给对方。
+[k]
+
+[charaFace A 12]
+＠玛修
+但是，该怎么办呢。
+[k]
+
+[charaFace A 8]
+＠玛修
+如果听从建议，收下宝石，令海伦娜小姐[r]陷入危机中，伊莉雅小姐是肯定不会同意的。
+[k]
+
+[charaFace A 4]
+＠玛修
+我对此也有些抗拒。[r]……[charaFace A 6]御主，您好像有什么话想说吧。
+[k]
+
+
+？1：我有个建议，海伦娜和我们一起走不就好了嘛。
+？！
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠伊莉雅
+就是这个！　就这么办吧！　这样比较好！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠海伦娜
+[line 3]哈？
+[k]
+
+？1：跟我们一起来。
+
+[charaFace D 4]
+＠海伦娜
+……我……我知道了啦！[r]毕竟是我先对你们动武的。
+[k]
+
+[charaFace D 5]
+＠海伦娜
+那我乖乖服从你就行了吧！　哎！
+[k]
+
+
+？2：我以令咒的力量命令魔法少女海伦娜。帮助伊莉雅。
+
+[charaFace D 5]
+＠海伦娜
+怎么突然一副自以为是的样子……[charaFace D 4]啊啊，知道啦知道啦！
+[k]
+
+＠海伦娜
+毕竟先动武的是我。既然如此，只能服从了吧？[r]再说了，这和令咒完全没关系吧……
+[k]
+
+？！
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠玛修
+那你愿意和我们同行了吧？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+
+[charaDepth D 3]
+[charaDepth B 0]
+
+[charaTalk depthOff]
+
+[charaTalk off]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+[charaFace B 1]
+[charaFadein B 0.1 -900,0]
+
+[charaMove B -100,0 0.5]
+[wait charaMove]
+[se ad111]
+[charaShake D 0.05 3 3 0.5]
+[wt 0.5]
+
+[charaTalk on]
+
+＠伊莉雅
+……太好了，海伦娜小姐！
+[k]
+
+[charaFace D 2]
+[charaShake D 0.05 3 3 0.5]
+＠海伦娜
+喂，别抱着我啊！　松手啦！
+[k]
+
+[charaTalk off]
+
+[charaFace B 0]
+[charaMove B 2 0.5]
+[charaMove D 0 0.5]
+[wait charaMove]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+[charaFace D 5]
+＠海伦娜
+我只是去见证不成熟魔法少女的悲惨结局。[r]仅此而已哦？
+[k]
+
+＠海伦娜
+[line 3]明白了吗？
+[k]
+
+
+＠伊莉雅
+嗯。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_32 2.0]
+[wait fade]
+[soundStopAll]
+[end]

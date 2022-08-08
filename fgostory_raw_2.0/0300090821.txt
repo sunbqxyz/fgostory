@@ -1,0 +1,400 @@
+
+＄03-00-09-08-2-1
+
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 1049000 1 千子村正]
+[charaSet B 1098216200 1 哈贝特洛特]
+[charaSet C 98016000 1 圆桌军士兵]
+[charaSet D 98016000 1 圆桌军士兵]
+[charaSet E 1098209700 1 女王军·骑士]
+[charaSet F 1098211900 1 伦蒂尼恩的少年]
+[charaSet G 3039001 1 加雷斯]
+[charaSet H 1098209200 1 伍德沃斯军·士兵]
+[charaSet I 1098209200 1 伍德沃斯军·士兵]
+
+[imageSet J back10000 1 1]
+[charaScale J 1.05]
+
+[charaSet S 98115000 1 特效用]
+[charaSet T 98115000 1 特效用]
+
+
+
+[scene 120901]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠千子村正
+这兵器完全跑错片场了吧，难道又是那个吗，[r]又是高扬斯卡娅暗中倒卖的玩意儿吗！？
+[k]
+
+＠千子村正
+那只狐狸精真是半点好事都不干！[r]不管是谁都能做生意！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠哈贝特洛特
+没时间发牢骚啦，村正，[r]对面又有三台杀过来了！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠千子村正
+该死，没完没了，这边人数太少了！[r]这样下去东门会失守的！
+[k]
+
+＠千子村正
+而且已经有好几个『牙之氏族』[r]越过城门跳进城内了！
+[k]
+
+？1：……！
+
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_80 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 120702]
+
+[pictureFrame cut063_cinema]
+[wt 1.5]
+
+[cueSe SE_21 21_ad1114]
+[seVolume 21_ad1114 0 0.0]
+[seVolume 21_ad1114 1.0 0.4]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_EVENT_126 0.1]
+
+[charaTalk off]
+[charaFace C 5]
+[charaFace D 5]
+[charaFadeinFSR C 0.1 256,-50]
+[charaFadeinFSL D 0.1 -256,-50]
+[wt 0.4]
+
+[cueSe Servants_102800 bac658]
+[charaPutFSR S 256,-50]
+[charaEffect S bit_talk_x_slash01]
+[wt 0.1]
+[charaShake C 0.03 4 4 0.6]
+[wt 0.2]
+
+[cueSe Servants_102800 bac657]
+[charaPutFSL T -256,-50]
+[charaEffect T bit_talk_x_slash02]
+[wt 0.1]
+[charaShake D 0.03 4 4 0.6]
+[wt 0.4]
+
+[charaMoveFSR C 256,-100 0.4]
+[charaFadeout C 0.4]
+[wt 0.3]
+[se ad144]
+
+[charaMoveFSL D -256,-100 0.4]
+[charaFadeout D 0.4]
+[wt 0.3]
+[se ad144]
+[wt 1.3]
+
+[charaPut S 2000,2500]
+[charaPut T 2000,2500]
+
+[seStop 21_ad1114 2.0]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+＠女王军·骑士
+不堪一击，不堪一击。[r]抛去摩耳斯毒的武器，区区人类也就这点程度罢了。
+[k]
+
+＠女王军·骑士
+工兵，快找出消除城墙魔力障壁的方法！[r]应该能找到控制盘才对！
+[k]
+
+＠女王军·骑士
+将碍事的人类大卸八块！[r]反正都是一堆过期货，没必要留活口！
+[k]
+
+＠女王军·骑士
+唔？　……噢，来得正好。[r]看来正好有个口风不太紧的人类。
+[k]
+
+＠女王军·骑士
+喂，小孩。司令部在哪里？[r]知道就快说，我还能给你个痛快。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 5]
+[charaDepth J 1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 0,-50]
+＠伦蒂尼恩的少年
+啊……啊，啊…………！[r]啊，呜呜，呜呜呜呜……！
+[k]
+
+[charaPut J 0,-50]
+[charaFadeTime J 0.2 0.5]
+
+＠伦蒂尼恩的少年
+（咿，过来了……！　怎么办，[r]　要来了，要来了，要过来了……！）
+[k]
+
+＠伦蒂尼恩的少年
+（可可，可是，可是得赶走他……！[r]　我的身后就是奶奶和尤里他们……！）
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+＠女王军·骑士
+……颤抖得都说不出话了啊。[r]算了，浪费时间。
+[k]
+
+＠女王军·骑士
+多半是被牧场废弃的劣质品吧。[r]真亏你能苟活到现在。
+[k]
+
+＠女王军·骑士
+像老鼠般东逃西窜，最后流落到这[#贫民窟:伦蒂尼恩]吗。[r]不爽，死到临头还要给我们添麻烦。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[bgmStop BGM_EVENT_126 2.0]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 0,-50]
+[wt 0.3]
+
+[cueSe SE_21 21_ad1119]
+[cameraMove 0.8 0,0 1.06]
+[wt 0.4]
+[seStop 21_ad1119 0.4]
+[wt 0.8]
+
+＠伦蒂尼恩的少年
+[line 3]啊。
+[k]
+
+[messageOff]
+[wt 0.2]
+
+[se ad171]
+[effect bit_talk_v_slash01 0,0 H]
+[wt 0.2]
+
+[fadeout black 0.2]
+[wait fade]
+
+[charaFadeout F 0.1]
+[effectDestroy bit_talk_v_slash01]
+[cameraHome 0.1]
+[scene 10000]
+
+[wt 0.1]
+
+[fowardEffect bit_talk_35]
+
+[fadein black 0.1]
+[wait fade]
+
+[wt 1.3]
+
+[se ad618]
+[se ad809]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.1]
+[scene 120702]
+[fowardEffectDestroy bit_talk_35]
+
+[se bac151]
+[se bac150]
+[shake 0.05 2 2 0.8]
+[wt 0.8]
+[se ad608]
+[seVolume ad608 0 0.5]
+[wt 1.0]
+
+[se ad671]
+[seStop ad671 0.6]
+[charaScale G 1.1]
+[charaTalk G]
+[charaFace G 19]
+[charaFadein G 0 0,-40]
+[charaShake G 0.02 3 3 0.6]
+[charaMoveScale G 1.0 0.4]
+[charaMove G 0,-50 0.4]
+[wt 1.4]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaFace G 2]
+＠加雷斯
+给我飞到外面去吧，败类！[r]掉进大洞穴，一辈子都别出来了，笨蛋！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 0,-50]
+＠伦蒂尼恩的少年
+加，加雷斯大姐姐！[r]好[line 4]厉害，帅呆了[line 3]！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFace F 2]
+[charaFadeinFSR G 0.1 256,-50]
+[charaFadeinFSL F 0.1 -256,-50]
+＠加雷斯
+是，是吗？[r]大家给我的铠甲和盾牌还适合吗！？
+[k]
+
+[charaTalk F]
+[charaFace F 1]
+＠伦蒂尼恩的少年
+非常适合，无可挑剔！[r]不过就算没穿铠甲，大姐姐也照样帅气！
+[k]
+
+＠伦蒂尼恩的少年
+居然能揍飞女王的骑士，[r]加雷斯大姐姐真的好厉害呀！
+[k]
+
+[messageOff]
+
+[charaTalk G]
+[charaFace G 14]
+[wt 1.0]
+
+[charaFace G 18]
+＠加雷斯
+对吧？　闯进来的士兵由我来干掉，[r]大家继续往里面逃吧！
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 0,-50]
+＠伦蒂尼恩的少年
+嗯！　拜托你啦，骑士大人！[r]谢谢你认真地为我动怒、出手相救！
+[k]
+
+[messageOff]
+[se ad443]
+[seStop ad443 0.8]
+[charaFadeout F 0.4]
+[wt 1.4]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 0,-50]
+[wt 1.0]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[se ad769]
+[wt 0.4]
+
+[charaTalk off]
+
+[charaDepth H 5]
+[charaDepth I 4]
+
+[charaFace H 2]
+[charaFace I 2]
+[charaFadeinFSR H 0.4 256,-50]
+[charaFadeinFSL I 0.4 -256,-50]
+[wt 0.4]
+
+[seStop ad769 0.4]
+[wt 1.4]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 16]
+[charaFadein G 0.1 0,-50]
+＠加雷斯
+……也是呢。[r]毕竟是战争，唯有相互厮杀。
+[k]
+
+[charaFace G 2]
+＠加雷斯
+但交战双方应该同为士兵！[r]不准对手无寸铁的孩子出手！
+[k]
+
+[charaFace G 20]
+＠加雷斯
+既然不列颠没有理想的骑士，[r]就由我来当吧！
+[k]
+
+＠加雷斯
+放马过来，你们这群卑鄙小人！[r]我一定会守护好伦蒂尼恩的全体居民！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,176 @@
+
+
+＄94-06-37-05-2-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 11012000 1 蘭丸Ｘ]
+[charaSet B 7026000 1 茶々]
+[charaSet C 1098170900 1 森長可]
+
+[charaSet D 1098223900 1 キンノーッブ1]
+[charaSet E 1098223900 1 キンノーッブ2]
+[charaSet F 1098223900 1 キンノーッブ3]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth E 2]
+[charaDepth D 3]
+
+[scene 137601]
+
+[bgm BGM_EVENT_49 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk off]
+
+[se ade210]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠キンノブ
+キンノー、[wt 0.6][charaFadeinFSR E 0.2 300,-15][charaMoveFSR E 300,0 0.2]キンノー[wt 0.6][seStop ade210 0.5][charaFadeinFSL F 0.2 -300,-15][charaMoveFSL F -300,0 0.2]、キンノーッブ！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠森長可
+おい、このあたり、[r]勤王志士が多いってレベルじゃねぇぞ！
+[k]
+
+[charaFace C 9]
+＠森長可
+次から次へと湧いてきやがるじゃねーか！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠茶々
+勤王志士っていうか伯母上のちびノブだけど、[r]とにかく数が多すぎるかも！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+ですが主様、敵が多いというコトはすなわち[r]敵の要所とみることもできるであります！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠森長可
+そういう事ならこいつらが多い方に突っ込めば[r]いいってことだな！
+[k]
+
+[charaFace C 11]
+＠森長可
+よっしゃあ！　今日はハイスコア狙いで[r]限界までぶち殺すとするぜ！
+[k]
+
+＠森長可
+行くぞ、成利！　後れを取るんじゃねぇぞ！
+[k]
+
+[messageOff]
+[se ad678]
+[charaEffect C bit_talk_quickmove]
+[charaSpecialEffect C erasureReverse 1 0.2]
+[charaMove C 0,6 0.4]
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠蘭丸Ｘ
+こっちのセリフでありますよ！
+[k]
+
+＠蘭丸Ｘ
+みんな[#纏:まと]めて刀の錆にしてやるでありまーす！
+[k]
+
+[messageOff]
+[se ad73]
+[charaEffect A bit_talk_quickmove]
+[charaSpecialEffect A erasureReverse 1 0.2]
+[charaMove A 0,6 0.4]
+[wt 0.5]
+
+
+[effect bit_talk_kengekiall02_fs]
+[cueSe Servants_102800 bac657]
+[wt 0.2]
+[se bac6]
+[wt 0.2]
+[cueSe Servants_102800 bac658]
+[shake 0.05 2 2 0.4]
+[wt 0.8]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠茶々
+安心と信頼の森家クオリティだし！
+[k]
+
+[charaFace B 0]
+＠茶々
+マスター、さっさと追わないと２７くらい[r]首挙げちゃうかもしれないし！
+[k]
+
+？1：追いかけよう！
+
+[charaFace B 3]
+＠茶々
+手間のかかる子はこれだから困るかも！[r]さあ、急いで追いかけるし！
+[k]
+
+？2：それはそれでいいのでは？
+
+[charaFace B 11]
+＠茶々
+ん？　言われてみればそうかも。
+[k]
+
+[charaFace B 0]
+＠茶々
+それじゃあ、茶々とゆっくり行くとするし。[r]おやつの維新まんじゅう食べる？
+[k]
+
+？！
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_49 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

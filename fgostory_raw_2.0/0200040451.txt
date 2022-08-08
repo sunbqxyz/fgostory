@@ -1,0 +1,650 @@
+
+
+
+＄02-00-04-04-5-1
+[soundStopAll]
+
+[charaSet A 25001000 1 阿比盖尔]
+[charaSet B 3031001 1 哪吒]
+[charaSet C 98006300 1 来路不明人形1]
+[charaSet D 98006300 1 来路不明人形2]
+[charaSet E 98006300 1 来路不明人形3]
+[charaSet F 1098121200 1 警官A]
+[charaSet G 1098121200 1 警官B]
+[charaSet H 5009000 1 特效用dummy]
+
+[scene 49803]
+
+[fadein black 1.5]
+[wt 0.5]
+[seLoop ad11]
+[seVolume ad11 0 0.1]
+[seVolume ad11 1.0 0.4]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFilter A silhouette 00000080]
+[charaFadein A 0.4 1]
+[wt 0.2]
+
+＠阿比盖尔
+………………
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[seStop ad11 0.3]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 1]
+[se ad132]
+[wt 0.1]
+[seStop ad132 0.1]
+
+＠哪吒
+[line 3]阿比盖尔！
+[k]
+
+[charaFace B 0]
+
+＠哪吒
+确认是否安全！……确认？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFilter A normal 00000080]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_71 0.1]
+
+＠阿比盖尔
+……拉维尼娅？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠哪吒
+是我啊　我是哪吒！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠阿比盖尔
+[line 3]哪吒。
+[k]
+
+＠阿比盖尔
+我的家，[r]烧起来了。
+[k]
+
+＠阿比盖尔
+话说，哪吒。[r]我找不到拉维尼娅。
+[k]
+
+＠阿比盖尔
+不过，只要有这么大的[#篝火]，[r]是不是，就能找到她了呢？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠哪吒
+……阿　阿比？[r]离火焰太近　危险。
+[k]
+
+＠哪吒
+唔唔……无法　灭这火[r]暂时　避难！
+[k]
+
+[charaFace B 0]
+
+＠哪吒
+[%1]，在等你。[r]阿比？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠阿比盖尔
+啊啊　不过这样一来……[r]就能去任何地方了吧？
+[k]
+
+＠阿比盖尔
+喂，你说是吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠哪吒
+阿比………这[r]并非　所谓的自由[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_71 0.4]
+
+[charaTalk off]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[se ad25]
+[charaFace D 0]
+[charaFadein D 0.4 -350,0]
+[charaMove D -320,0 0.5]
+[charaFace E 0]
+[charaFadein E 0.4 350,0]
+[charaMove E 320,0 0.5]
+[wt 1.5]
+[seStop ad25 0.4]
+[wt 0.3]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠哪吒
+又来了吗　魑魅魍魉！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.6 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[wt 0.3]
+[scene 50402]
+
+[charaSet A 6012001 1 桑松]
+[charaSet B 1098121100 1 法官]
+[charaSet E 1098120500 1 霍普金斯]
+
+[wipein rectangleStripRightToLeft 0.6 1]
+[wt 0.4]
+[wait wipe]
+
+[se bac341]
+[seVolume bac341 0 0.6]
+[wt 0.5]
+[se bac341]
+[seVolume bac341 0 0.6]
+[wt 0.2]
+[se bac341]
+[seVolume bac341 0 0.6]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0]
+[charaFace G 0]
+[charaFadein G 0.1 2]
+
+＠F：警官
+来福枪不管用！[r]子弹已经用光了！
+[k]
+
+＠G：警官
+斧头！　用斧头砍下他们的手脚！[r]保护好阁下！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[se ad25]
+[charaFace C 0]
+[charaFadein C 0.4 -300,0]
+[charaMove C 0 0.5]
+[charaFace D 0]
+[charaFadein D 0.4 300,0]
+[charaMove D 2 0.5]
+[wt 1.5]
+[seStop ad25 0.4]
+
+[charaPut H 1]
+[charaScale H 1.5]
+[se bac136]
+[charaPut H -256,-30]
+[charaEffect H bit_talk_Slash_white_01]
+
+[wt 0.1]
+[charaShake C 0.05 5 5 0.7]
+[wt 0.5]
+[se ad26]
+[charaSpecialEffect C enemyErasure 1 0.70]
+[wait charaSpecialEffect C]
+
+[wt 0.5]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[charaScale H 1.0]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠桑松
+我对自己的剑术颇有自信！[r]请交给我吧！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠法官
+倒是你才应该滚……滚开！[r]我才……才不会借助流民的力量！
+[k]
+
+＠法官
+塞勒姆是我们的土地！[r]是我们劈开森林的黑暗开拓出来的大地！
+[k]
+
+＠法官
+无论面对原住民还是恶魔！[r]我们都会用自己的力量来保护这里！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠桑松
+…………！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠霍普金斯
+喂。你们在干什么？[r]别碰尸体！
+[k]
+
+＠霍普金斯
+霍桑法官！　快逮捕那群家伙！
+[k]
+
+＠霍普金斯
+是戏剧剧团！[r]他们沦为草寇了！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠法官
+就……就算是您的命令，[r]我们也应付不过来了！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[charaSet B 2003001 1 罗宾汉]
+[charaSet C 6014001 1 玛塔·哈丽]
+[charaSet D 5033001 1 喀耳刻]
+
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[wt 0.5]
+
+？1：桑松！
+？2：暂时撤退！
+？！
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠桑松
+……呜……！
+[k]
+
+[se ad7]
+[seVolume ad7 0 0.7]
+[seStop ad7 0.4]
+[charaFace A 4]
+
+＠桑松
+御主！　请原谅我！
+[k]
+
+[charaFace A 2]
+
+＠桑松
+我要留在这里！[r]我必须保护他们[line 3]保护这群人！
+[k]
+
+？1：哎？
+？2：喂，你是认真的吗！？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠罗宾汉
+那家伙是傻子吗！[r]不，是内心沉重到媲美傻瓜的大傻瓜吧！
+[k]
+
+[charaFace B 2]
+
+＠罗宾汉
+但是，现在快点舍弃你那些信条，[r]过来帮忙扛走玛塔·哈丽啦！
+[k]
+
+＠罗宾汉
+尸体真是太他妈重了啊！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠喀耳刻
+说是撤退，但究竟要撤去哪里啊，[r][%1]？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠F：警官
+你们这些家伙！　别偷走死刑犯！[r]罪人是不允许被埋葬在墓地的！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠罗宾汉
+就算你对我这么说……[charaFace B 0][r]……噢……？
+[k]
+
+[charaFace B 2]
+
+＠罗宾汉
+噢噢？　玛塔·哈丽小姐……？[r]刚才是不是动了一下……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFilter C silhouette 00000080]
+[charaFadein C 0.1 1]
+
+[charaShake C 0.07 3 1 0.3]
+
+＠C：玛塔·哈丽？
+……呜……
+[k]
+
+[charaShake C 0.07 5 2 0.4]
+
+＠C：玛塔·哈丽？
+唔唔……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaFilter C normal 00000080]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0]
+[charaFace G 0]
+[charaFadein G 0.1 2]
+
+＠F：警官
+咿，咿……死而复生……
+[k]
+
+＠G：警官
+喂，蠢货，赶紧扔掉那个女人！[r]那家伙也变成怪物了！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.7]
+
+？1：就这样继续逃跑，罗宾！
+？2：带着玛塔·哈丽一起！
+？！
+
+[charaFace B 2]
+
+＠罗宾汉
+喂喂喂饶了我吧！
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.6 1]
+[bgmStop BGM_EVENT_3 0.6]
+[wait wipe]
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[charaSet B 98006300 1 来路不明人形1]
+[charaSet C 1098120810 1 皮克曼夫人]
+[charaSet H 5009000 1 特效用dummy]
+
+[wipein rightToLeft 0.6 1]
+[wait wipe]
+
+[bgm BGM_EVENT_3 0.1]
+
+[se ad25]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+
+[wt 1.5]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[bgmStop BGM_EVENT_3 0.7]
+
+＠桑松
+……呜！　您是……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_71 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.2]
+
+＠皮克曼夫人
+……啊啊……
+[k]
+
+＠皮克曼夫人
+好痛……脖子……好难受……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠霍普金斯
+…………
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠桑松
+阁下，快退后！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠皮克曼夫人
+啊啊啊……
+[k]
+
+＠皮克曼夫人
+不是……魔女……[r]为什么……
+[k]
+
+[charaShake C 0.2 3 3 0]
+
+＠皮克曼夫人
+我的……女儿……[r]一起……啊啊……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaShakeStop C]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠桑松
+……咕呜……
+[k]
+
+[charaFace A 4]
+
+＠桑松
+愿您……能去往神的座前……[charaFace A 2][r]啊啊……啊啊啊啊！！
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_71 1.5]
+[se bac136]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[effect bit_talk_h_slash01]
+[wt 0.4]
+[seStop ad32 0.5]
+[wt 0.5]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaShake C 0.05 5 5 0.7]
+[wt 0.5]
+
+[se ad42]
+[charaEffect C bit_talk_atomization]
+[wt 0.5]
+[seStop ad42 1.5]
+[charaFadeout C 1.5]
+
+[wt 2.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠霍普金斯
+………………
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,781 @@
+
+＄91-60-37-02-3-1
+
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 1098225600 1 カーマ]
+[charaSet B 4042000 1 ハベトロット]
+[charaSet C 1050000 1 バーゲスト]
+[charaSet D 3030000 1 パールヴァティー]
+[charaSet E 2040000 1 清少納言]
+[charaSet F 25002000 1 葛飾北斎]
+[charaSet G 1098224700 1 カーマ_男第一]
+[charaSet H 1098224710 1 カーマ_男第二]
+[charaSet I 1098224720 1 カーマ_男第三]
+[charaSet J 6037000 1 エフェクト]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_restraint]
+
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 1]
+[branch INPUT_SELECT_BRANCH_3 INPUT_SELECT_BRANCH 2]
+
+
+[label INPUT_SELECT_BRANCH_1]
+
+[scene 115700]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠G：カーマ
+ちぇー。
+[k]
+
+＠G：カーマ
+ま、自分が言うならしょーがないか。[r]起きればいいんでしょ、起きれば。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 2.0]
+[charaSpecialEffect G wipeTime 1 2.0]
+[se ad52]
+[wait charaSpecialEffect G]
+[charaPut J 1200,1200]
+[wt 1.5]
+
+[branch INPUT_SELECT_BRANCH_4]
+
+[label INPUT_SELECT_BRANCH_2]
+
+[scene 63100]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaPut J 1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠H：カーマ
+ふん。
+[k]
+
+＠H：カーマ
+まあ、潮時ってコトか。[r]自分が言うなら仕方ないもんな。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 2.0]
+[charaSpecialEffect H wipeTime 1 2.0]
+[se ad52]
+[wait charaSpecialEffect H]
+[charaPut J 1200,1200]
+[wt 1.5]
+
+[branch INPUT_SELECT_BRANCH_4]
+
+[label INPUT_SELECT_BRANCH_3]
+
+[scene 70900]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaPut J 1]
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+＠I：カーマ
+ちっ。
+[k]
+
+＠I：カーマ
+我ながら驚きだ。良心が残る程度には、[r]外にも価値を見出していたということか……。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 2.0]
+[charaSpecialEffect I wipeTime 1 2.0]
+[se ad52]
+[wait charaSpecialEffect I]
+[charaPut J 1200,1200]
+[wt 1.5]
+
+[branch INPUT_SELECT_BRANCH_4]
+
+
+[label INPUT_SELECT_BRANCH_4]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,0]
+[wt 0.4]
+[se ad39]
+[fowardEffect bit_talk_36_sl01 0,50]
+[wt 1.0]
+[fadeout white 1.0]
+[wait fade]
+[charaEffectDestroy J bit_talk_restraint]
+[fowardEffectDestroy bit_talk_36_sl01]
+[charaSet A 6037000 1 カーマ]
+[wt 0.7]
+[fadein white 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠カーマ
+……ふぅ。[bgm BGM_EVENT_77 0.1]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠ハベトロット
+おっきくなっちゃった！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠カーマ
+小さい通常サイズみたいなものなんですけど……[r]まあどうでもいいです。
+[k]
+
+＠カーマ
+情報量が増したからだと思ってください。
+[k]
+
+[charaFace A 13]
+＠カーマ
+というわけで、鍵のパラメータは[r]無事に取り込めました。解錠完了です。
+[k]
+
+＠カーマ
+帰り道を開きますから少し待ってくださいね。
+[k]
+
+？1：手伝ってくれてありがとうね
+？！
+
+[charaFace A 8]
+＠カーマ
+べ、別にお礼を言われるようなコトじゃ……。
+[k]
+
+＠カーマ
+そもそも私のボイコットが[r]長くなりすぎたのが原因ですし。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ハベトロット
+そーだ、落ち着いたら聞こうと思ってたんだ。[r]そもそも、なんでこんなコトになったのさ？
+[k]
+
+[charaFace B 2]
+＠ハベトロット
+正直、愛の神が仕事をボイコットとか、[r]ハベにゃん的にショックなんだわ！
+[k]
+
+＠ハベトロット
+愛は最強のパラメータだろー！？[r]このさい、結婚は関係なくさー！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+＠カーマ
+ずいぶんストレートにきますね、[r]このちっこいの……。
+[k]
+
+[charaFace A 12]
+＠カーマ
+絶妙に当事者じゃない妖精を送り込んでこられたら[r]強くも当たれないですし。
+[k]
+
+＠カーマ
+ふん、さすがパールヴァティーですね。[r]善意に溢れすぎた性格の悪さ、ムカつくー。
+[k]
+
+[charaFace A 4]
+＠カーマ
+……はあ。
+[k]
+
+[charaFace A 0]
+＠カーマ
+貴女に言っても仕方ないんですけどね、妖精さん。[r]帰り道が開くまでの暇潰しに教えてあげましょう。
+[k]
+
+[charaFace A 5]
+＠カーマ
+愛は、愛です。くだらなくも絶対的な力。[r]面白くも退屈な力。
+[k]
+
+＠カーマ
+そしてそれは強大であるが故に、[r]周囲の様々なものを自然と巻き取るのです。
+[k]
+
+＠カーマ
+堕落や、欲や、死や、不幸や、絶望……[r]良いものも悪いものも、色々とね。
+[k]
+
+[charaFace A 10]
+＠カーマ
+それらを手にして動かし続けろ、考え続けろというのは[r][line 3]疲れるんですよ、本当に。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ハベトロット
+愛がイヤになったんじゃないんだな。
+[k]
+
+[charaFace B 7]
+＠ハベトロット
+ま、疲れたら休むのは当たり前だよな！
+[k]
+
+[charaFace B 1]
+＠ハベトロット
+そこは全然、いいと思うぜ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠カーマ
+…………は？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ハベトロット
+でも、ちょっとくらい休むのはいいけど[r]止めちゃうのはよくないんじゃない？
+[k]
+
+＠ハベトロット
+ずっと考え続ける、っていうのは、うん、[r]しんどいコトだって分かるけど……
+[k]
+
+[charaFace B 6]
+＠ハベトロット
+少なくとも[#カルデア:こ　　　こ]にいるヤツらは、[r]愛が関係することで八つ当たりしたり、
+[k]
+
+＠ハベトロット
+愛を取り巻く不幸や何かを恨んだりは[r]しないんじゃない？
+[k]
+
+[charaFace B 9]
+＠ハベトロット
+まーちょっとはするかもしんないけど、[r]理不尽な逆恨み？
+[k]
+
+＠ハベトロット
+とかソレ系のはなさそうっていうか……
+[k]
+
+[charaFace B 7]
+＠ハベトロット
+なんていうか、[r]『覚悟』があるヤツらばかりだと思うんだわ。
+[k]
+
+＠ハベトロット
+来たばかりのボクがわかるんだから、[r]キミにもそれくらいわかってるんだろ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠カーマ
+…………。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ハベトロット
+だからさ、疲れて休むのはいいにしても。
+[k]
+
+[charaFace B 1]
+＠ハベトロット
+ずっと眠り姫気取ってたら、[r]愛の面白い部分だって見逃しちゃうぜ？
+[k]
+
+＠ハベトロット
+さっき自分で愛は面白いって言ってたんだし。[r]勿体ないだろー？
+[k]
+
+[charaFace B 10]
+＠ハベトロット
+あ、もちろん、マスター周りのソレもね？[r]ボクもそこは注意して見てるんだ。（ひそひそ）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠カーマ
+……はあ。ホント、[r]妖精さんは気楽なんですから……。
+[k]
+
+＠カーマ
+わかりきってますよ、そんなことは。[r]だから、なんだかんだでここにいるんですし。（小声）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠ハベトロット
+んー？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠カーマ
+なんでもないです。[r]ああほら、そろそろ道が開きそうですよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠ハベトロット
+おっと、それじゃそろそろ糸巻きを始めないと。[r]帰りはこれを手繰れば間違いなしだ！
+[k]
+
+＠ハベトロット
+[line 3]そうそう、成就しそうな愛があったら[r]いち早く教えてくれよな。
+[k]
+
+＠ハベトロット
+ミス・クレーンと一緒に花嫁衣装に取りかかるから！[r]あの鶴の姉ちゃん、めっちゃセンスあるんだわ！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout B 0.1]
+[scene 10000]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+＠バーゲスト
+……少し、いいだろうか。[bgm BGM_EVENT_11 0.1]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠カーマ
+ふーん、こんな帰り道にこそこそと。[r]他人に聞かれたくない話ですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠バーゲスト
+べ、別にそういうわけではないが。[r]単に、その……暇潰しがてら、だ。
+[k]
+
+[charaFace C 0]
+＠バーゲスト
+愛の神という存在に聞いてみたいことがあった。
+[k]
+
+＠バーゲスト
+私は、一つの愛しか知らない。
+[k]
+
+[charaFace C 8]
+＠バーゲスト
+それは[line 3]おぞましく、逆らいようのない、
+[k]
+
+＠バーゲスト
+しかしどうしようもなく苛烈な熱情と衝動をもって[r]私を焼く愛の形だ。
+[k]
+
+[charaFace C 4]
+＠バーゲスト
+これは、おまえたちの目から見て、どうなのだろう。
+[k]
+
+＠バーゲスト
+このおぞましさは妖精であるから[r]仕方のないことなのかもしれない。
+[k]
+
+[charaFace C 8]
+＠バーゲスト
+だが[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+＠カーマ
+妖精だから、なんてコトはありませんよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠バーゲスト
+なに？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠カーマ
+妖精だから、ではありません。[r]人にだってそういうカタチの愛はあります。
+[k]
+
+＠カーマ
+ですから、断言しましょう。[r][#それも]、[#愛です]。[#間違いなく]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠バーゲスト
+[line 3]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+＠カーマ
+だから私はそれについて何とも思いません。[r]良いとも悪いとも言いません。
+[k]
+
+[charaFace A 1]
+＠カーマ
+ただ[line 3]在るなあ、と。[r]笑むだけですよ。怠惰な愛の女神として、ね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠バーゲスト
+…………そうか。
+[k]
+
+[messageOff]
+[wt 0.7]
+[charaFace C 11]
+[wt 1.2]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout C 0.1]
+[scene 105800]
+[wt 1.5]
+[fadein black 1.5]
+[wait fade]
+
+[se ad77]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.4 1]
+＠カーマ
+ふわぁ……。[bgm BGM_EVENT_2 0.1][r][line 3]おはようございます。
+[k]
+
+？1：おはよう！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠パールヴァティー
+まったくもう、皆さんに迷惑をかけて……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠カーマ
+何ですか私は単に寝てただけですけど？[r]そろそろ起きようと思ってたとこだったんですけど！？
+[k]
+
+[charaFace A 2]
+＠カーマ
+あー起きようと思ってたのにパールヴァティーが[r]無理矢理起こしたせいで逆にやる気が削がれましたー！
+[k]
+
+？1：勉強しない子供みたいなことを……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠パールヴァティー
+はいはい。
+[k]
+
+[charaFace D 0]
+＠パールヴァティー
+ともあれ、起きる気になってくれたようで何よりです。
+[k]
+
+[charaFace D 1]
+＠パールヴァティー
+それでは、私はこれで。[r]お二人もありがとうございました！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace B 1]
+[charaFadeinFSL B 0.1 0]
+[charaFace C 1]
+[charaFadeinFSR C 0.1 2]
+[wt 1.5]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+＠清少納言
+なーに、いいってことさー！[r]何もしてないけど！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠葛飾北斎
+マァ、しようとしてたのは今からだったしナ？
+[k]
+
+[charaFace F 15]
+＠葛飾北斎
+……顔料に[#拘:こだわ]る前に[r]さっさと作業始めりゃよかったか。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠カーマ
+ちょ、なに人の横で絵の具広げて準備してるんですか。[r]危ないですねえ、ホラ解散解散！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠清少納言
+うーい。[r]あ、でも最後にちょっと……
+[k]
+
+[charaFace E 4]
+＠清少納言
+親しき仲にもウザしあり。[r]遊びに誘いすぎて迷惑だったならゴメンよー。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+＠カーマ
+別に今回のは貴女たちのせいじゃないです。[r]たまにウザいのは確かですけど。
+[k]
+
+[charaFace A 1]
+＠カーマ
+というか、謝るくらいなら高級菓子折りでも[r]持ってきてくれません？
+[k]
+
+＠カーマ
+それくらいの誠意は見せてくれてもいいでしょう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 17]
+[charaFadein E 0.1 1]
+＠清少納言
+なはは、甘いものパーティーなら[r]いつでもＯＫってことだな？
+[k]
+
+＠清少納言
+わかった、[r]今度はワイロ持って遊びにくっかんねー！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 2.0]
+[fadeout black 2.0]
+[wait fade]
+[charaFadeout E 0.1]
+[pictureFrame cut063_cinema]
+[wt 1.0]
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_1 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 0,-50]
+＠カーマ
+やれやれ。強引な休暇要請でしたが、[r]それなりに休めたのは事実です。
+[k]
+
+＠カーマ
+自己分析すると、受け身になってばかりいたから[r]余計に調子が崩れたんでしょう。
+[k]
+
+[charaFace A 1]
+＠カーマ
+となると……少しは攻めに戻ったほうが[r]いいのかもしれませんねえ？
+[k]
+
+＠カーマ
+ホラ、健康には適度な運動が大事だと言いますし。
+[k]
+
+[charaFace A 7]
+＠カーマ
+悪い愛の神として、すこーしばかり、[r]リハビリ的にお仕事を再開させてみましょうか。
+[k]
+
+[charaFace A 15]
+＠カーマ
+でも覚悟してくださいね、カルデアの皆さん。
+[k]
+
+＠カーマ
+私に愛の相談事なんかしても[r]幸せになれるとは限りません。
+[k]
+
+＠カーマ
+幸せになれるとは限らないのも、また、愛なのです。
+[k]
+
+[charaFace A 10]
+＠カーマ
+だから[line 3][wt 1.0][charaFace A 7][r]ご利用は計画的に、です♡
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,557 @@
+＄01-00-08-21-1-0
+
+
+[charaSet A 5009003 1 达·芬奇]
+[charaSet B 9001001 1 贞德]
+[charaSet C 2002001 1 吉尔伽美什]
+[charaSet D 98002000 1 芙芙]
+[charaSet E 5009000 1 通讯杂音]
+[charaSet F 99355200 1 盖提亚]
+[charaSet G 5009000 1 通讯杂音]
+[charaSet H 9001001 1 贞德2]
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[scene 36208]
+
+
+[seLoop ad14]
+[seVolume ad14 0 0.5]
+
+
+
+[shake 0.05 1 1 0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut E 1]
+[charaEffect E bit_talk_10]
+[wt 0.1]
+[se ad13]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0 0,-90]
+[wt 0.3]
+＠达·芬奇
+好，通讯连上了！[r]没事吧，[%1]！
+[k]
+
+[charaFace A 1]
+＠达·芬奇
+就在刚才，我们确认了玉座的崩溃！[r]还有魔术王……不，是盖提亚的消灭！
+[k]
+
+[charaFace A 6]
+＠达·芬奇
+但现在没空沉浸于胜利的喜悦中了。[r]原因之一是神殿正在崩塌，另外光带的状态也很不稳定。
+[k]
+
+＠达·芬奇
+应该是由于盖提亚的停止，[r]导致约束魔力的力量消失了吧。
+[k]
+
+[charaFace A 0]
+＠达·芬奇
+再这样下去将无法维持圆环状态，[r]而是恢复原来的状态[line 3]
+[k]
+
+[charaFace A 2]
+＠达·芬奇
+扩散成充斥于大气中的玛那。[r]一旦到这个地步，那个领域就会消失得无影无踪。
+[k]
+
+＠达·芬奇
+就像是超新星爆炸！[r]你们一定要赶在那之前返回迦勒底！
+[k]
+
+[charaFace A 0]
+＠达·芬奇
+迦勒底当然还没事。[r]因为我想办法搞定了。
+[k]
+
+＠达·芬奇
+只要能从玉座的断层空间回到圣门，[r]就能立刻让你们灵子转移回来。
+[k]
+
+＠达·芬奇
+可一旦脚下崩塌，你们就到不了圣门了。[r]究竟是光带先扩散，还是神殿先崩塌[line 3]
+[k]
+
+[charaFace A 4]
+＠达·芬奇
+总之要抓紧时间回来。[r]繁琐的问题以后再说。
+[k]
+
+[charaFadeout A 0.1]
+[charaPut E 1200,1200]
+[charaEffectStop E bit_talk_10]
+
+[messageOff]
+
+[se ad228]
+[wt 0.3]
+[seStop ad228 1.0]
+
+
+
+
+
+
+
+
+[shake 0.05 3 3 0]
+[seLoop ad14]
+
+？1：………………
+
+？！
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠芙芙
+芙，芙呜！
+[k]
+
+？1：……说得对。得赶快逃出去才行……！
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[bgmStop BGM_EVENT_3 2.0]
+[seStop ad14 2.0]
+
+[messageOff]
+[se ad59]
+[fadeout white 2.0]
+[wait fade]
+[shakeStop]
+[seStop ad59 0.4]
+[wt 1.0]
+
+[shakeStop]
+
+[bgm BGM_EVENT_42 0.3]
+
+[scene 36301]
+
+
+[fadein white 2.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.7 1]
+＠贞德
+神殿在崩溃……[r]成功了啊，[%1]。
+[k]
+
+[charaFace B 1]
+＠贞德
+各位，辛苦了。
+[k]
+
+[charaFace B 0]
+＠贞德
+多亏了各位，我们才得以压制魔神柱，[r]才能将[%1]送去玉座[line 3]
+[k]
+
+[charaFadeout B 0.4]
+[wt 0.3]
+[messageOff]
+
+
+[wt 2.0]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 1]
+[wt 1.0]
+
+[charaFace B 0]
+
+＠贞德
+……大家，都消失了[line 2]
+[k]
+
+＠贞德
+[line 3]谢谢。[r]每时每刻都没有松懈，一直战斗到精疲力竭的最后一刻。
+[k]
+
+[charaFace B 0]
+＠贞德
+虽然已经听不到这些话了，但我还是要为这协助献上最诚挚的感谢。[r]能活到现在的我们也会很快返回伟大之座。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠吉尔伽美什
+那当然。[r]单独显现之类的乃是Beast独有的特性。
+[k]
+
+＠吉尔伽美什
+普通的英灵只要一在这个宙域出现，[r]就会当即开始崩溃。
+[k]
+
+＠吉尔伽美什
+英灵们一边抵抗着这种力量，一边持续遏制魔神柱们。
+[k]
+
+[charaFace C 1]
+＠吉尔伽美什
+虽然只是些平凡的英灵们，[r]但唯独这次战斗不得不给予评价啊。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠贞德
+您也开始退去了啊，英雄王。[r]不打算见证整件事的结局吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaEffect C bit_talk_06]
+＠吉尔伽美什
+不打算。从此时此刻起，都是些只有当事者才能知道的结局。[r]没有本王或是你可以介入的余地。
+[k]
+
+＠吉尔伽美什
+盖提亚。不识爱的兽。[r]只知道吞噬悲叹，想达到无的人类恶。
+[k]
+
+＠吉尔伽美什
+……真是讽刺啊。[r]所谓的人类恶，就是人类爱本身。
+[k]
+
+＠吉尔伽美什
+想要毁灭人类，也不是基于对人类的恶意。[r]因为恶意只是一过性的，越使用就越稀薄。
+[k]
+
+＠吉尔伽美什
+因此[line 3]真正威胁人类的，[r]正是想要守护人理的那个愿望。
+[k]
+
+＠吉尔伽美什
+想要获得更为美好未来的精神，对当前的安宁露出了獠牙。
+[k]
+
+[charaFace C 1]
+＠吉尔伽美什
+哼。[r]从这个角度来说，那头兽也算是脱离了这种循环。
+[k]
+
+[charaFace C 0]
+＠吉尔伽美什
+说实话，本王根本不管Beast的什么隐情。[r]毕竟不是什么冠位。
+[k]
+
+＠吉尔伽美什
+但他们会连锁显现。
+[k]
+
+＠吉尔伽美什
+人类恶显现的世界，[r]会朝着“终局之恶”迎来更进一步的灾厄。
+[k]
+
+＠吉尔伽美什
+一旦Ⅰ显现，[r]终局的Ⅶ一定也已经出现在世界的某个角落了吧。
+[k]
+
+＠吉尔伽美什
+那是怎样的灾害之兽，[r]该如何应对，这些都是身为当事人的他们的工作。
+[k]
+
+[charaFace C 1]
+＠吉尔伽美什
+本王根本不在乎事态会如何发展。[r]你们就好好用心地助他们一臂之力吧。
+[k]
+
+
+＠吉尔伽美什
+赶快吧。还是说，你打算留在这里，[r]为那位伟大的[#所罗门王:大蠢货]陪葬？
+[k]
+
+[messageOff]
+
+[charaSpecialEffect C flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect C]
+[charaEffectStop C bit_talk_06]
+[charaFadeout C 0.1]
+
+
+[wt 0.3]
+
+[charaPut C 1200,1200]
+
+[wt 0.8]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠贞德
+[line 3]说得对。[r]我们能做的只有助他们一臂之力而已。
+[k]
+
+＠贞德
+战斗结束，并开始另一场战斗，[r]任何时代的人类都是这样的。
+[k]
+
+[charaEffect B bit_talk_06]
+＠贞德
+干得漂亮，[%1]。[r]聚集在这片宙域的英灵们全都是得益于你们的努力。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaSpecialEffect B flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect B]
+[charaEffectStop B bit_talk_06]
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[messageOff]
+[bgmStop BGM_EVENT_42 2.0]
+[fadeout white 2.0]
+[wait fade]
+
+[wt 1.0]
+
+
+[scene 36101]
+
+
+
+[seLoop ad14]
+[shake 0.05 1 1 0]
+[seVolume ad14 0 0.5]
+
+[bgm BGM_EVENT_3 1.0]
+[fadein white 1.0]
+[wait fade]
+
+[charaPut E 1]
+[charaEffect E bit_talk_10]
+[wt 0.1]
+[se ad13]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 0,-90]
+[wt 0.3]
+＠达·芬奇
+神殿的崩溃比光带的扩散还要快啊……！[r]还差一点，快跑，快跑！
+[k]
+
+＠达·芬奇
+这片区域的地基正在崩塌！[r]不知何时就会消失不见！
+[k]
+
+＠达·芬奇
+灵子转移点就在前方五百米的位置！[r]快点[line 3]
+[k]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+
+？1：[line 6]
+
+？！
+
+[charaFace A 6]
+＠达·芬奇
+！？　这是什么反应……！？[r]突然显现，不，是等在那里的是……！？
+[k]
+
+＠达·芬奇
+小心，[%1]！[r]现在你眼前的灵基是[line 3]
+[k]
+[bgmStop BGM_EVENT_3 1.5]
+
+？1：…………我明白。
+？2：…………不可能那么容易放跑我吧。
+
+？！
+
+[messageOff]
+
+[se ad31]
+[charaFadeout A 0.1]
+[wt 1.0]
+[seStop ad31 0.3]
+[charaPut E 1200,1200]
+[charaPut G 1200,1200]
+[charaEffectStop E bit_talk_10]
+[charaEffectStop G bit_talk_10_LowLevel]
+
+
+[wt 0.6]
+
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.7 1]
+[wt 0.7]
+
+＠盖提亚
+[line 6]说得没错。[r]终于和你拥有共通的见解了呢，[%1]。
+[k]
+
+＠盖提亚
+我不会让你活着回去。[r]你就在这里和我一起消失吧。
+[k]
+
+[messageOff]
+
+[seStop ad14 3.0]
+[fadeout black 3.0]
+[wait fade]
+
+
+[charaFadeout F 0.1]
+[wt 3.0]
+
+
+[fadein black 1.3]
+[wait fade]
+[seLoop ad14]
+[shake 0.05 1 1 0]
+[seVolume ad14 0 0.5]
+[scene 36101]
+
+
+
+[wt 1.2]
+
+[bgm BGM_EVENT_1 4.0]
+[seVolume ad14 0 0.5]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.7 1]
+＠盖提亚
+[line 3]我的梦想破灭了。
+[k]
+
+＠盖提亚
+[line 3]身处这座神殿，耗费的庞大时间全都失去了意义。
+[k]
+
+＠盖提亚
+[line 3]对。[r]　　　我，输了。
+[k]
+
+＠盖提亚
+光带消失。人理烧却变得无效。[r]当所罗门王消灭的那刻起，我的伟业也瞬间消失了。
+[k]
+
+＠盖提亚
+现在的我，也已经不是什么七十二柱魔神了。[r]而是其残渣，就像是最后残存的“结果”。
+[k]
+
+＠盖提亚
+无论我在这里做什么，都无法改变败北的命运。[r]就算杀了你，结局也不会改变。
+[k]
+
+＠盖提亚
+……这是毫无意义的战斗。[r]若是以前的我，是绝不可能做出这种选择的。
+[k]
+
+＠盖提亚
+但是[line 3]
+[k]
+
+[bgmStop BGM_EVENT_1 1.0]
+[wt 1.0]
+
+？1：……你有战斗的理由，对吧？
+？2：……如果我是你，我也会做相同的事哦。
+
+？！
+
+[bgm BGM_BATTLE_4 3.0]
+
+＠盖提亚
+[line 3]没错。[r]我也是有志气的。不，是有了志气。
+[k]
+
+＠盖提亚
+我现在，理解了你们人类的精神性。[r]在获得了有限生命的现在，终于理解了。
+[k]
+
+＠盖提亚
+……漫长。真是漫长的旅途。[r]毕竟这3000年间，我一直在这里闭门不出啊。
+[k]
+
+＠盖提亚
+我会为了自己无法让步的存在阻止你。[r]你则为了自己能够生还，需要尽快阻止我。
+[k]
+
+＠盖提亚
+[line 3]该用语言表达的敬意就这些。
+[k]
+
+＠盖提亚
+好了，让我们开始这次探索的终结吧。
+[k]
+
+＠盖提亚
+为人理烧却展开的冠位指定。[r]七个特异点，跨越了七个世界的御主啊。
+[k]
+
+＠盖提亚
+我的名字是盖提亚。[r]用人理毁灭人理，向着更前方前进的存在。
+[k]
+
+＠盖提亚
+向着一个人都没有的极点。[r]……向着谁都不想要的虚空之[#希望:星]不断前进的存在。
+[k]
+
+＠盖提亚
+现在，我诞生了，现在，我毁灭了。
+[k]
+
+＠盖提亚
+就算没有任何成果，没有任何报酬。[r]我也要拼尽我的[#全力:生命]，将你毁灭。
+[k]
+
+＠盖提亚
+[line 3]我的仇敌。我的憎恨。我的命运啊。
+[k]
+
+＠盖提亚
+希望你能见证。[r]这短暂的时间，是赐予我的故事。
+[k]
+
+＠盖提亚
+如此短暂，却又如此令人心爱的时间，[r]才是被赐予了这自称盖提亚的存在的，真正的人生。
+[k]
+
+
+[messageOff]
+[seStop ad14 2.5]
+[fadeout black 2.5]
+[bgmStop BGM_BATTLE_4 2.5]
+[wait fade]
+[shakeStop]
+[soundStopAll]
+[end]

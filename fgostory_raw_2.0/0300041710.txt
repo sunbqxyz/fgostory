@@ -1,0 +1,341 @@
+
+
+＄03-00-04-17-1-0
+
+
+[soundStopAll]
+[skip false]
+
+[charaSet A 23003001 1 伽内什]
+[charaSet B 1098123340 1 高扬斯卡娅]
+[charaSet C 1098176200 1 马嘶]
+[charaSet D 1098127610 1 佩佩隆奇诺]
+[charaSet E 1019001 1 罗摩]
+[charaSet F 1039001 1 拉克什米]
+[charaSet G 1098124510 1 达·芬奇]
+[charaSet J 98115000 1 特效用]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[maskin black 1]
+[wait mask]
+
+[se ad762]
+[seVolume ad762 0 0.6]
+[effect bit_talk_yuga_clock_13]
+[wt 2.3]
+[se ad757]
+[wt 13.0]
+
+[fadeout black 1.0]
+[seStop ad762 1.0]
+[seStop ad757 1.0]
+[wait fade]
+
+[effectStop bit_talk_yuga_clock_13]
+[effectDestroy bit_talk_yuga_clock_13]
+
+[wt 0.5]
+[skip true]
+
+[scene 27710]
+
+[se ad667]
+[wt 0.1]
+[se ad443]
+[wt 0.1]
+[se ad444]
+[wt 0.1]
+[se ad133]
+
+[fadein black 1.5]
+[wait fade]
+[seStop ad667 0.5]
+[seStop ad443 0.5]
+[seStop ad444 0.5]
+[seStop ad133 0.5]
+[wt 1.0]
+
+？1：……找到了！
+？！
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠马嘶
+[line 3]这是我的台词。
+[k]
+
+[charaFace C 1]
+
+＠马嘶
+但你们是怎么了？　干出这么奇怪的事情来！
+[k]
+
+＠马嘶
+高兴得叫人火大。[r]没想到逃跑的猎物还会自己跑回来！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠高扬斯卡娅
+感谢你一如我们预期的反应。
+[k]
+
+＠高扬斯卡娅
+你明明已经注意到迦勒底在接近了吧，[r]却不能无视我的气息，所以乖乖等着我们……
+[k]
+
+[charaFace B 28]
+
+＠高扬斯卡娅
+还好你的精神构造那么单纯。[r]来吧，让我们来场复仇战吧。
+[k]
+
+＠高扬斯卡娅
+只不过你这次的对手不是我，而是他们。[r]这几位可是很难对付的哦。
+[k]
+
+＠高扬斯卡娅
+因为他们拥有[#每次战斗都会比上一次更强][r]这种令人烦躁的特性哦。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠马嘶
+哈……你这女人还是老样子，[r]让人分不清是敌是友啊。不过从一开始就是这样。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 1.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠罗摩
+马嘶啊。余姑且问你一句。[r]你不打算先将事情全盘托出吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠马嘶
+啊啊？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠罗摩
+余是宽宏大量的王、懂人心的王。[r]因此保证不会讥笑和蔑视你。如何？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[wt 1.2]
+[charaMove C 0,-5 0.2]
+[charaFace C 2]
+[flashin once 0.1 0.6 FFFFFFAF FFFFFF00]
+[se ad322]
+[seVolume ad322 0 0.8]
+[shake 0.05 0 3 0.6]
+
+＠马嘶
+[line 3]令人火大，啊啊，令人火大！[bgm BGM_EVENT_24 0.1][r]虽然我听不懂你在胡扯些什么[line 4]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠佩佩隆奇诺
+慢着慢着，你不是说你会想办法解决的吗，罗摩亲！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠罗摩
+余是有这个打算，[r]但这个问题似乎没有单纯到光靠话语就能解决。
+[k]
+
+＠罗摩
+看来只能先限制住他的行动，让他冷静下来了。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠伽内什
+到头来不还是要战斗嘛～！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠拉克什米
+我会帮忙。[r]但是，我之前所说的事依旧没变[line 3]
+[k]
+
+＠拉克什米
+不要过于指望我。[r]我的厄运不知何时就会引起致命的失败。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 24]
+[charaFadein G 0.1 1]
+
+＠达·芬奇
+可是，你能在一定程度上控制住吧？[r]比如你让退尔的箭矢[#一直很不幸地射中自己]。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠拉克什米
+……只能在一定程度上做到。[r]但还是存在无法控制的不可避免的范畴。
+[k]
+
+[charaFace F 4]
+
+＠拉克什米
+（而且……恐怕是当时的反作用吧[line 3]）
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠佩佩隆奇诺
+马嘶。我说你啊……[r]果然是一个笨拙的孩子呢。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠马嘶
+呵。那你就是穿上衣服行走的变通吗，[r]前御主！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠佩佩隆奇诺
+我当然很变通哦？　毕竟我的想法很简单。[r]规则也很单纯，只是为了活下去而已。
+[k]
+
+[charaFace D 1]
+
+＠佩佩隆奇诺
+不过，活在世上想做些什么又要另当别论了。[r]人类总是会苦苦烦恼这些事，很辛苦吧？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠马嘶
+能笑着说这些话就代表了变通吧。[r]哼，这样比较下来，也许我确实很笨拙吧。
+[k]
+
+＠马嘶
+我很愤怒。我只会愤怒。[r]所以，我的人生中理所当然地只有愤怒。
+[k]
+
+＠马嘶
+[#活在世上就会产生愤怒]，[#又为了愤怒而活在世上]。[r]没错，我很清楚这都是毫无意义的。但是啊[line 3]
+[k]
+
+[charaFace C 2]
+
+＠马嘶
+同样地，我也很清楚。[r]当愤怒消失之时，我就不再是我自己了！
+[k]
+
+＠马嘶
+所以我只能不断地燃烧我的[#愤怒:生命]！[r]只要我[line 3]仍存于此！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.5]
+[wait fade]
+[soundStopAll]
+[end]

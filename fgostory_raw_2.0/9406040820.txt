@@ -1,0 +1,921 @@
+
+
+
+＄94-06-04-08-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001600 1 マシュ]
+[charaSet B 1098215400 1 ダ・ヴィンチ]
+[charaSet C 4029300 1 アキレウス]
+[charaSet D 4008300 1 黒髭]
+[charaSet E 4039300 1 マンドリカルド]
+[charaSet F 1098216800 1 沖田オルタ]
+[charaSet G 1098220500 1 カイニス]
+[charaSet H 1098220610 1 カーマ]
+[charaSet I 1098220400 1 清少納言]
+
+[imageSet J back10000_fs 1]
+[charaScale J 1.5]
+
+[charaDepth J 1]
+[charaDepth E 2]
+
+[charaDepth C 3]
+[charaDepth D 4]
+
+[charaDepth F 6]
+[charaDepth G 5]
+
+[scene 130600]
+
+[se ad2]
+[seVolume ad2 0 0]
+[seVolume ad2 0.7 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[seStop ad2 1.5]
+
+[se ad892]
+
+[wt 1.5]
+
+[seStop ad892 0.7]
+[wt 0.1]
+
+[cueSe SE_21 21_ade613]
+[se ad82]
+[seVolume ad82 0 0]
+[seVolume ad82 0 0.7]
+[wt 0.4]
+
+
+？1：よい、しょっと……
+？！
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠マシュ
+マスター、調子はいかがですか？
+[k]
+
+？1：問題なし！
+？2：ピッケルの扱いにも慣れてきたよ
+？！
+
+[charaFace A 1]
+＠マシュ
+了解です。[r]何かありましたらすぐにお知らせくださいね。
+[k]
+
+＠マシュ
+とりあえずあそこの少し大きな岩棚が次の目標です。[r]着いたら少し休憩しましょう。
+[k]
+
+？1：ＯＫ！
+？！
+
+[messageOff]
+[bgm BGM_EVENT_62 0.5 0.5]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_62 0.5 1.0]
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-20]
+[se ad977]
+[wt 0.7]
+[charaMove C 0,0 0.3]
+＠アキレウス
+よっ、と。こりゃ結構面白えモンだな。[r]鍛錬にもなるしよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠黒髭
+やっぱ拙者は海のほうがいいわ……[r]なんで陸って手足を動かさないと前に進めないの？
+[k]
+
+[messageOff]
+
+[bgm BGM_EVENT_62 0.5 0.5]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_62 0.5 1.0]
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.4]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠マンドリカルド
+もしアンタが足を踏み外しても、[r]俺は[#全身全霊:ぜんしんぜんれい]で踏ん張ってみせるっす。
+[k]
+
+＠マンドリカルド
+それが二人一組のバディの在り方。
+[k]
+
+[charaFace E 2]
+＠マンドリカルド
+俺は、俺をぼっちの一人組にしないでくれた相方を、[r]けっして見捨てたりはしねーっす……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+何だか妙に熱いね！[r]うんうん、頼りにしてるよ。
+[k]
+
+[charaFace B 0]
+＠ダ・ヴィンチ
+ちなみに、もしキミが足を踏み外しても、[r]私のメカアームが大活躍！
+[k]
+
+＠ダ・ヴィンチ
+アームが体重差を補填して踏ん張るから、[r]安心してね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠マンドリカルド
+あざっす！
+[k]
+
+[messageOff]
+
+[bgm BGM_EVENT_62 0.5 0.5]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_62 0.5 1.0]
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 -75,-20]
+＠沖田オルタ
+よっ、[wt 0.2][se ad73][charaMove F -175,0 0.2]ほっ、[wt 0.2][se ad73][charaMove F -75,20 0.2]はっ！[r]どんどん行きましょう、どんどん！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 1]
+＠カイニス
+おい、ペース落とせ。[r]ンなんじゃ最後まで保たねえ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 -75,0]
+＠沖田オルタ
+大丈夫ですよ！[r]私は元気が有り余っています！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 18]
+[charaFadein G 0.1 1]
+＠カイニス
+ったく。強制執行。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk G]
+[charaFace G 18]
+[charaFadeinFSL G 0.1 0]
+
+[charaFace F 0]
+[charaFadeinFSR F 0.1 181,0]
+[wt 0.5]
+
+[charaMoveReturnFSL G -276,0 0.2]
+[se ad532]
+[charaShake F 0.05 2 2 0.3]
+[charaFace F 2]
+
+＠沖田オルタ
+ぐえっ。ロープがピーン！
+[k]
+
+[charaFace G 0]
+＠カイニス
+オレたちはこの裂け目で小休止だ。[r]いいな。
+[k]
+
+[charaFace F 11]
+＠沖田オルタ
+えー、でも……。
+[k]
+
+[charaFace G 8]
+＠カイニス
+い・[wt 0.2]い・[wt 0.2]な？
+[k]
+
+[charaFace F 4]
+＠沖田オルタ
+……はぁい……。
+[k]
+
+[messageOff]
+
+[bgm BGM_EVENT_62 1.0 0.5]
+
+[wipeout rollRight 1.0 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_62 1.0 1.0]
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.4]
+
+？1：（ふう、ふう……休みながら登ってるけど）
+？2：（さすがに少し疲れてきた……かな）
+？！
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠マシュ
+マスター、けっして無理はなさらずに！
+[k]
+
+＠マシュ
+いざというときにはわたしに体重を預けて[r]休憩してください！
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad2]
+[seVolume ad2 0 0]
+[seVolume ad2 0.7 1.0]
+
+[wt 1.5]
+
+[seStop ad2 1.0]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_62 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠アキレウス
+さすがにこんだけ登ると風も強くなってきたな。[r]これ以上しんどくならなきゃいいが……ん？
+[k]
+
+[messageOff]
+
+[se ad892]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaFace C 2]
+＠アキレウス
+まずいぞ、落石だ！[r]みんな、できるだけ壁に身を寄せろ！
+[k]
+
+[messageOff]
+
+[bgm BGM_EVENT_3 0.5 0.5]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_3 0.5 1.0]
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadeinFSL E 0.1 0]
+
+[charaFace B 5]
+[charaFadeinFSR B 0.1 2]
+
+＠マンドリカルド
+くっ……！
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_3 0.5 0.5]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_3 0.5 1.0]
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.4]
+
+[se ade478]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠マシュ
+マスター、わたしの下から動かないでください！
+[k]
+
+[messageOff]
+[seStop ade478]
+
+[se ad1014]
+[se ad170]
+[effect bit_talk_14]
+[charaShake A 0.05 2 2 0.5]
+[wt 1.0]
+
+
+[bgm BGM_EVENT_3 0.5 0.5]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_3 0.5 1.0]
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 -75,0]
+＠沖田オルタ
+フッ……
+[k]
+
+＠沖田オルタ
+落石ごときで私の歩みを止められません、[r]何故なら私の剣閃は如何なるモノをも……！
+[k]
+
+[messageOff]
+[charaMoveReturn F -65,0 0.2]
+
+[effect bit_talk_kengekiall02_fs]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[se ad1053]
+
+[wt 1.0]
+
+[effectDestroy bit_talk_kengekiall02_fs]
+[se ad1057]
+[wt 0.4]
+
+
+[charaMove F -65,-50 0.3]
+[charaFadeout F 0.4]
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠カイニス
+バカ！　[#両手で]剣握ってんじゃねえ！
+[k]
+
+[messageOff]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 -75,50]
+[charaMove F -75,0 0.1]
+[se ade533]
+＠沖田オルタ
+ぐえっ。[charaShake F 0.05 2 2 0.2][r]（ロープがピーン）
+[k]
+
+[messageOff]
+
+[bgm BGM_EVENT_3 0.5 0.5]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_3 0.5 1.0]
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[se ad892]
+[charaShake D 0.05 2 2 0.2]
+＠黒髭
+いてっ、[wt 0.3][charaShake D 0.05 2 2 0.3][seStop ad892 1.5]いててっ。
+[k]
+
+
+
+＠黒髭
+おのれ、どうせぶつけられるなら可愛い子に[r]マシュマロとかぶつけられたい！
+[k]
+
+[se ade478]
+[charaFace D 7]
+＠黒髭
+って、すんごいでっかいのが来た！[r]グエー！
+[k]
+
+[messageOff]
+
+[seStop ade478]
+[bgmStop BGM_EVENT_3]
+
+[se ad678]
+[fowardEffect bit_talk_13]
+[wt 0.2]
+
+[cameraFilter gray]
+[charaShake D 0.05 2 2 0.2]
+[wt 0.2]
+[charaMove D 0,-200 15.0]
+＠黒髭
+（あ、終わった。拙者、終わった）
+[k]
+
+[charaFace D 11]
+＠黒髭
+（くそう、まだ夢の美少女ハーレム計画は[r]　候補者選定の段階だっていうのによう！）
+[k]
+
+＠黒髭
+（この世にはあまりにも……可愛い子が多すぎたっ……）
+[k]
+
+[messageOff]
+
+[charaDepth C 3]
+[charaDepth D 4]
+
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[cameraFilter normal]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 -100,0]
+＠アキレウス
+オラァ！
+[k]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[messageOff]
+[charaMoveReturn C -100,10 0.2]
+[se ad85]
+
+[charaFace D 6]
+[charaFadein D 0.4 100,-100]
+[charaMove D 100,0 0.3]
+[wt 0.3]
+
+[se ad77]
+[wt 1.0]
+
+[cueSe SE_21 21_ade588]
+[backEffect bit_talk_yume01]
+
+[effect bit_talk_valentine_brilliant_fs]
+
+
+[charaTalk on]
+[charaFace C 1]
+＠アキレウス
+ったく。世話焼かせんじゃねえよ。[r][line 3]ま、なんとかなってよかったぜ。
+[k]
+
+[charaFace D 10]
+＠黒髭
+何、このたくましいウデ。[r]（トゥンク……）
+[k]
+
+＠黒髭
+やだ……ときめき回路、回っちゃう……。
+[k]
+
+[messageOff]
+[seStop 21_ade588 0.5]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[effectDestroy bit_talk_valentine_brilliant_fs]
+[backEffectDestroy bit_talk_yume01]
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.4]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk H]
+[charaFace H 15]
+[charaFadein H 0.1 1]
+＠カーマ
+えーい、マスターさんとバディだったら[r]この状況も合法的なくっつきチャンスだったのに。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 12]
+[charaFadein I 0.1 1]
+[charaShake I 0.05 3 3 0.3]
+＠清少納言
+ぬ、ぬわーーーっ！？
+[k]
+
+[messageOff]
+
+[se ad75]
+[charaMove I 0,-100 0.3]
+[charaFadeout I 0.4]
+[wt 0.5]
+
+[seStop ad75 1.0]
+[wt 1.0]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+＠カーマ
+ちょっと！？
+[k]
+
+[messageOff]
+
+[se ad532]
+[charaFace H 14]
+[charaShake H 0.05 2 2 0.5]
+[wt 0.5]
+＠カーマ
+ぐぎぎ。[r]意外と、重い、ですね、貴女……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 1]
+＠清少納言
+へへ……ロープが無ければ今頃、[r]谷底へ真っ逆さまだったな、けど……。
+[k]
+
+[charaFace I 13]
+＠清少納言
+あたしちゃんは、ここまでみたいだ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 20]
+[charaFadein H 0.1 1]
+＠カーマ
+は？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_62 1.0]
+
+[charaTalk I]
+[charaFace I 10]
+[charaFadein I 0.1 1]
+＠清少納言
+今の打ち所が悪かったみたいでさ。[r]もう、指一本動かせそうにないぜ……。
+[k]
+
+＠清少納言
+でも、二人とも死ぬ必要はないだろ。[r]だから[line 3]
+[k]
+
+[charaFace I 2]
+＠清少納言
+ロープを切るんだ、カマちょ！！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadeinFSL H 0.1 0]
+
+[charaFace I 2]
+[charaFadeinFSR I 0.1 2]
+[wt 1.0]
+
+[charaFace I 0]
+＠清少納言
+……みたいな映画を前に見たんだけどさ。[r]カマちょだったらこういう時、
+[k]
+
+[cueSe SE_21 21_ade608]
+＠
+[charaTalk A]
+（ぶつっ）
+[k]
+
+[charaFace H 20]
+＠カーマ
+えっ？
+[k]
+
+[charaFace I 12]
+＠清少納言
+えっ？
+[k]
+
+[messageOff]
+
+[se ad75]
+[charaFace I 11]
+[charaMoveFSR I 256,-100 0.3]
+[charaFadeout I 0.4]
+
+[wt 1.0]
+
+[seStop ad75 1.0]
+[wt 0.5]
+
+[charaTalk H]
+
+[charaFace H 19]
+[wt 0.8]
+
+[charaFace H 13]
+[wt 1.2]
+
+
+[charaFaceFade H 4 0.3]
+＠カーマ
+アディオス、おばかさん。[r]私は貴女のぶんまで先に進んでみせますからね……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_27 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+ノータイムで切ったね？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 21]
+[charaFadein H 0.1 1]
+＠カーマ
+だっ、だって、それは！
+[k]
+
+＠カーマ
+あんな状況下であんな紛らわしいこと言う[r]おばかさんのほうが悪いでしょう！？
+[k]
+
+[charaFace H 9]
+＠カーマ
+誰だって本気だと思いますよ！　ていうか重かったし[r]そもそも粘る理由が何一つなかったというか！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[charaPut J 0,-200]
+[charaFadeTime J 0.2 0.5]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠マンドリカルド
+（可哀想なような……[#自業自得:じごうじとく]のような……）
+[k]
+
+[charaFadeout J 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+ま、まあ……。[r]うん……。
+[k]
+
+[charaFace B 5]
+＠ダ・ヴィンチ
+安全装置があるから、[r]最悪の事態にはならないはず！
+[k]
+
+[bgmStop BGM_EVENT_27 1.0]
+
+[charaFace B 6]
+[charaShake B 0.05 2 2 0.3]
+＠ダ・ヴィンチ
+って……[r]うわっと！？
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad673]
+
+[charaTalk I]
+[charaFace I 8]
+[charaFadein I 0.4 0,-50]
+[charaMove I 0,0 0.3]
+＠清少納言
+いやー、死ぬかと思った！
+[k]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠清少納言
+人間やれば出来るもんだな！[r]ボードで壁面昇ってこれたわ！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 16]
+[charaFadeinFSL H 0.1 0]
+
+[charaFace I 8]
+[charaFadeinFSR I 0.1 2]
+＠カーマ
+貴女ねぇ……。[r]わかりにくい冗談は止めてくださいよ、本当に。
+[k]
+
+[charaFace I 10]
+＠清少納言
+マジすんませんした！！
+[k]
+
+[charaFace H 16]
+＠カーマ
+反省しているようなら、まぁ……。[r]寛大な心で許してあげなくもないですが。
+[k]
+
+＠カーマ
+ほら、ロープも結びたかったら、[r]勝手に結び直しておいてください。
+[k]
+
+＠カーマ
+私は別に、どっちでもいいんですけど。
+[k]
+
+[charaFace I 20]
+＠清少納言
+フフ……そうだな。[r]何度ほどけようと、また結べばいい。
+[k]
+
+＠清少納言
+このロープも、そしてウチらの絆も……な。
+[k]
+
+[charaFace H 17]
+＠カーマ
+切ってもいいんですよ。[r]今すぐに。
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 -75,0]
+＠沖田オルタ
+言葉の上ではとやかく言いながらも、[r]二人は仲良しに見えます。ふしぎみ。
+[k]
+
+[charaFace F 4]
+＠沖田オルタ
+私たちも……[r]あんな風に見えていたでしょうか。
+[k]
+
+＠沖田オルタ
+煉獄……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠カイニス
+……ったく。
+[k]
+
+[charaFace G 8]
+＠カイニス
+落石が収まったなら進むぞ！[r]このクソ崖ももうすぐ終わりだ、気合い入れろ！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

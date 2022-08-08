@@ -1,0 +1,2045 @@
+
+
+
+＄94-06-49-06-2-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001410 1 マシュ]
+[charaSet B 1046001 1 伊吹童子]
+[charaSet C 4043001 1 太公望]
+[charaSet D 1098124510 1 ダ・ヴィンチ]
+[charaSet E 1098123210 1 ゴルドルフ]
+[charaSet F 4044001 1 ニキチッチ]
+[charaSet G 98002000 1 フォウ]
+[charaSet H 1098214000 1 四不相]
+[charaSet I 1098123010 1 ムニエル]
+[charaSet J 1098213800 1 飛竜]
+[charaSet K 98115000 1 エフェクト用]
+[imageSet L back10000 1 1]
+[charaScale L 1.1]
+
+[sceneSet M 128800 1]
+[sceneSet N 128800 1]
+[charaScale M 1.5]
+[charaScale N 1.5]
+
+[charaSet T 98115000 1 エフェクト用]
+
+[charaSet O 4031000 1 赤兎馬]
+
+[charaDepth E 1]
+
+[charaDepth M 5]
+[charaDepth N 6]
+
+
+[scene 128800]
+
+[charaFadein M 0.1 200,-350]
+[charaMove M 100,-350 30.0]
+
+[se ad986]
+[seVolume ad986 0 0]
+[seVolume ad986 1.0 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 2.5]
+
+[charaFadein N 1.0 -100,-150]
+[charaMove N -100,-250 15.0]
+
+[wt 3.5]
+
+[charaFadeout M 1.0]
+[charaFadeout N 1.0]
+[seStop ad986 1.0]
+[wt 1.3]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠太公望
+ん[line 3]。
+[k]
+
+＠太公望
+そうですね、[r]このあたりでいいでしょう。
+[k]
+
+[charaFace C 0]
+
+＠太公望
+異聞眷属の行動パターンは２種あります。
+[k]
+
+＠太公望
+集積地で待機しているか、[r]または、哨戒ルートを定期的に移動しているか。
+[k]
+
+
+＠太公望
+ここは集積地から遠く、[r]哨戒ルートからも外れている。
+[k]
+
+＠太公望
+比較的安全です。
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠フォウ
+フォウ、フォウ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠マシュ
+フォウさん、あまり[#川縁:かわべり]に近づいては……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[se adm21]
+[charaMoveReturn G 0,15 0.4]
+＠フォウ
+サカナフォウ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+わ。
+[k]
+
+＠マシュ
+すごい、多くの魚がいますね[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠ニキチッチ
+ん。うまいぞ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+は、はい。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+＠ニキチッチ
+食べるか？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠伊吹童子
+わ、いいの？　綺麗な女の子にそう言われると、[r]ご相伴に[#与:あずか]りたくなるわぁ！
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad13]
+[charaPut K 0,0]
+[charaEffect K bit_talk_10_LowLevel]
+[wt 0.2]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.2 1]
+[wt 0.4]
+
+＠ゴルドルフ
+竜種というのは……[r]魚を食べるんだったか、レモン君。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 3]
+[charaFadein I 0.1 1]
+＠ムニエル
+料理のムニエル想像しただろ……[wt 0.7][charaFace I 2][r]いや神性まじりの東洋の竜種の食性なんか分かるか！
+[k]
+
+[charaFace I 5]
+＠ムニエル
+だいたい肉食なんじゃないか？[r]あと、酒が好きなんだっけか？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠太公望
+魚を釣るなら手伝いましょうか？[r]僕、得意なんで。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠マシュ
+！！
+[k]
+
+＠マシュ
+太公望さんといえば釣り、ですね！
+[k]
+
+＠マシュ
+太公望。その名が釣り人を指す言葉とされる程に、[r]釣り好きとして知られて……
+[k]
+
+？1：流石は太公望だ
+？2：そうなんだ
+？！
+
+
+＠マシュ
+はい！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠太公望
+もっとも、今回は狐狩り[line 3]獣狩りが役目です。[r]人理に[#仇:あだ]なす獣を狩らなくてはいけない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+[charaTalk D]
+[charaFace D 24]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+ふむふむ。[r]……珍しい事例だね。
+[k]
+
+[charaFace D 25]
+＠ダ・ヴィンチ
+はぐれサーヴァントとして現界しているけれど、[r]明確に、人理からの指令を自覚している。
+[k]
+
+＠ダ・ヴィンチ
+土地そのもの、ではなく、[r]世界そのものに喚び出された英霊……かな？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠太公望
+[line 3]。[r]はい、そんなところです。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠マシュ
+では、太公望さんはもしかして、[r]抑止力の……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠太公望
+ああ、いやいや！[r]そこまで明確なものじゃありませんとも。
+[k]
+
+[charaFace C 4]
+＠太公望
+まあ[line 3]
+[k]
+
+[charaFace C 0]
+
+＠太公望
+謙遜するところじゃないかもですね。[r]よし言ってしまおう！
+[k]
+
+＠太公望
+本来の僕はですね？[r]なんとですね？
+[k]
+
+[bgmStop BGM_EVENT_2 2.0]
+[charaFace C 1]
+＠太公望
+グランドキャスターの霊基での現界でも、[r]おかしくないんですよォ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+え。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+えっ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 8]
+[charaFadein I 0.1 1]
+＠ムニエル
+マジか。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠伊吹童子
+なになに？[r]もう釣れたぁ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 27]
+[charaFadein F 0.1 1]
+＠ニキチッチ
+いやまだだ。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_50 0.1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+[wt 1.0]
+
+
+？1：…………グランドキャスター？
+？！
+
+＠太公望
+はい。
+[k]
+
+[charaFace C 4]
+＠太公望
+グランドキャスター。[r]グランドライダーってことも有り得るのかなァ。
+[k]
+
+[charaFace C 1]
+＠太公望
+ともかく、冠位でも本来おかしくない存在です。[r]それが何故だかフツーにライダー霊基。
+[k]
+
+[charaFace C 4]
+＠太公望
+しかも、方術の常時行使でルールをねじ曲げて、[r]ギリギリ退去を逃れている状態ですから……
+[k]
+
+＠太公望
+かなり力を削がれています。[r]いや、面目ない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+
+[charaTalk D]
+[charaFace D 22]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+本気の本気で獣狩り……[r]ビースト退治のプロなんだね。
+[k]
+
+[charaFace D 12]
+
+＠ダ・ヴィンチ
+今は、残念ながら通常霊基での現界。[wt 0.7][charaFace D 26][r]それでも、心強いことには変わりがない。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠フォウ
+フォウ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠太公望
+霊基の在り方はどうあれ、[r]人理が僕に望んでいることはひとつでしょう。
+[k]
+
+[charaFace C 1]
+＠太公望
+あちこちで好き放題やっているビーストⅣ候補を、[r]えいやっ、と仕留めきるのが今回の仕事。
+[k]
+
+[charaFace C 4]
+＠太公望
+いや、困ったものですよ。
+[k]
+
+＠太公望
+人理といい元始天尊様といい、[r]人使いが荒いったらもう！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaPut K 0,0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+……。[r]……。
+[k]
+
+
+[charaFace E 7]
+＠ゴルドルフ
+……お、おお。[#崑崙山:こんろんざん]ジョークか？
+[k]
+
+[charaFace E 4]
+
+＠ゴルドルフ
+いきなり神話体系の最高存在を引き合いに出されると、[r]どんな顔をすればいいか迷うものだな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk I]
+[charaFace I 3]
+[charaFadein I 0.1 1]
+＠ムニエル
+そうそう笑えないからな……
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠太公望
+と。大きく出たところで言いますが！
+[k]
+
+[charaFace C 4]
+＠太公望
+とはいえ僕はかなりの魔力を減じている身。[r]カルデアの皆さんには、手を貸していただきたい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠マシュ
+それはなんというか、[r]こちらこそ、です！
+[k]
+
+？1：一緒に戦おう、太公望。ニキチッチさん
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠太公望
+ええ、よろしくお願いします。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 21]
+[charaFadein F 0.1 1]
+＠ニキチッチ
+うむ！[r]そろそろ釣れるぞ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 2]
+[charaDepth H 3]
+[charaDepth G 4]
+
+[charaTalk off]
+
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[charaFace H 0]
+[charaFadeinFSL H 0.1 -350,0]
+[charaFace G 0]
+[charaFadeinFSR G 0.1 350,0]
+＠アニマルたち
+（そわそわ）[charaMoveReturn B 0,10 0.2][wt 0.1][charaMoveReturnFSL H -350,10 0.2][wt 0.1][charaMoveReturnFSR G 350,10 0.2]
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠太公望
+釣りはニキチッチに任せるとして[line 3][r]ここは、お待ちかねの情報共有といきましょうか。
+[k]
+
+[messageOff]
+
+[charaFace C 1]
+
+[wt 1.0]
+
+[bgmStop BGM_EVENT_50 1.0]
+
+[wipeout rollRight 1.0 1]
+[wait wipe]
+
+[charaFace C 4]
+
+[wt 1.5]
+[wipein rollLeft 1.0 1]
+[wait wipe]
+[wt 0.3]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠太公望
+ふむふむ。[r]ロシア異聞帯でヤガ……あの獣人たちですね。
+[k]
+
+[charaFace C 0]
+＠太公望
+北欧異聞帯では巨人種を回収。[r]中国異聞帯では何を回収したんでしょうね？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠マシュ
+不明です。[r]まだ、わたしたちも遭遇していません。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠太公望
+んー。
+[k]
+
+[charaFace C 0]
+＠太公望
+もしかして、なんですが……[r]虎の頭が付いた戦車って中国異聞帯にいました？
+[k]
+
+[messageOff]
+
+[bgm BGM_EVENT_81 0.4 0.5]
+[se ad592]
+[seVolume ad592 0 0.5]
+[fadeout white 0.4]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 0.6]
+
+[effect bit_sepia01_depth_fs]
+
+[scene 68300]
+
+[fadein white 0.4]
+[wait fade]
+
+[wt 2.0]
+
+[fadeout white 0.5]
+[wait fade]
+
+[effectDestroy bit_sepia01_depth_fs]
+
+[scene 128800]
+
+[wt 0.6]
+
+[bgm BGM_EVENT_81 0.4 1.0]
+[fadein white 0.4]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠マシュ
+い、いました……。
+[k]
+
+？1：いたね……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠太公望
+そうかー。[r]いたかー。
+[k]
+
+＠太公望
+やっぱり、中国異聞帯の眷属だったか……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠マシュ
+あ、あの！[r]確かにいましたが、あれは機械かと……。
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[wt 1.0]
+
+[charaFace C 5]
+
+＠太公望
+いえ、生物ですよ。[r]少なくともこの領域で僕たちが見かけたあれは、
+[k]
+
+＠太公望
+虎の部分が生体です。[r]鳴きますし。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+！
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1]
+[bgm BGM_EVENT_81 1.0 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[wipein rollLeft 1.0 1]
+[bgm BGM_EVENT_81 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+
+[charaPut K 0,0]
+[charaTalk D]
+[charaFace D 24]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+つまり……
+[k]
+
+[charaFace D 25]
+＠ダ・ヴィンチ
+この領域におけるコヤンスカヤの戦力は、[r]基本的に、異聞帯で獲得したものたちなんだね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠太公望
+基本的には、そうです。
+[k]
+
+＠太公望
+６種の異聞眷属は、ある程度の範囲ごとに、[r]少数が哨戒ルートを巡って活動していますが……
+[k]
+
+＠太公望
+超抜個体である異聞兵器は拠点防衛、[r]および異常事態時の戦力派遣のために存在します。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+
+[charaTalk D]
+[charaFace D 25]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+さっきの、イヴァン雷帝の再現体だね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠太公望
+はい。[r]眷属と兵器は、実に効果的に配置されています。
+[k]
+
+＠太公望
+霊脈を完全に掌握されているので、[r]眷属を叩いても、一定サイクルで眷属はまた湧きます。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+
+[charaTalk D]
+[charaFace D 24]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+眷属たちは無尽蔵……[r]それを相手にキミたちだけで戦っていたのか。
+[k]
+
+＠ダ・ヴィンチ
+敵地の真ん中で、つねに敵に[r]囲まれているようなものなのに。
+[k]
+
+
+？1：よく生きてたね……
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠太公望
+逃げ足の速さのおかげ、ですね！
+[k]
+
+？2：それは軽く死ねてしまうね……
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠太公望
+逃げ足には自信があるので。[r]ええ。
+[k]
+
+？！
+
+[messageOff]
+
+[charaFace C 1]
+[wt 1.2]
+
+[charaFace C 5]
+＠太公望
+とはいえ徹底的に叩けばしばらくは大丈夫。[r]叩く意味がない、と嘆く程のものではありません。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+……でも、霊脈を掌握されてるのか。[r]それじゃ召喚サークルの設置は難しいな……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠太公望
+残念ながら。
+[k]
+
+[charaFace C 5]
+
+＠太公望
+それはそうと、眷属と兵器は[r][#領域支配者:コ  ヤ  ン  ス  カ  ヤ]と情報的な接続をしていません。
+[k]
+
+＠太公望
+魔力の繋がり的にも切れている。[r]彼らは、すべてが完全独立の状態です。
+[k]
+
+＠太公望
+よほど[#領域支配者:コ  ヤ  ン  ス  カ  ヤ]の近く……
+[k]
+
+＠太公望
+つまり、領域中央部の“城”付近でなければ、[r]まず気付かれることはないでしょう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+“城”か[line 3]
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripLeftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[charaPut K 1200,1200]
+
+[wt 1.0]
+
+[wipein rectangleStripRightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaScale T 2.0]
+[charaPut T 0,0]
+[charaEffect T bit_talk_water_splash]
+
+[se ad416]
+[seStop ad416 1.1]
+[charaTalk F]
+[charaFace F 26]
+[charaFadein F 0.4 0,-20]
+[charaMove F 0,0 0.4]
+
+[wt 1.2]
+
+[charaFace F 14]
+＠ニキチッチ
+魚、釣ってきたぞ！[bgm BGM_EVENT_94 0.1]
+[k]
+
+？1：まさかのストロングスタイル
+？2：それは釣るではなく掴み取るですね！
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠マシュ
+全身びしょ濡れです！[r]だ、大丈夫ですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ニキチッチ
+問題ないぞ。
+[k]
+
+[charaFace F 16]
+[charaShake F 0.05 4 0 0.8]
+[backEffect bit_talk_valentine_brilliant_fs]
+＠ニキチッチ
+ぶぶぶぶぶぶぶぶぶ。[r]（飛び散る水滴）
+[k]
+
+[backEffectStop bit_talk_valentine_brilliant_fs]
+
+[charaFace F 1]
+＠ニキチッチ
+こうすれば乾く。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠伊吹童子
+あははははは。[r]……って、あたしがびしょ濡れだわ。あはは！
+[k]
+
+[charaFace B 7]
+＠伊吹童子
+やっぱりその耳からして、[r]ニキチは何かの動物の化身なのかしら？
+[k]
+
+＠伊吹童子
+ぶぶぶぶぶ、も上手だし？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 5]
+[charaDepth L 1]
+
+[charaPut K 0,0]
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+[charaPut L 0,-200]
+[charaFadeTime L 0.2 0.5]
+
+＠ゴルドルフ
+（おお。そこに切り込むか、神霊・伊吹童子！）
+[k]
+
+[charaFadeout L 0.2]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk depthOn]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ニキチッチ
+ほう、オレの耳が気になるか？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠マシュ
+ニキチッチさんは、その……[r]獣人なのですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 26]
+[charaFadein F 0.1 1]
+＠ニキチッチ
+いや違う。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 5]
+[charaDepth L 1]
+
+[charaPut K 0,0]
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+[charaPut L 0,-200]
+[charaFadeTime L 0.2 0.5]
+
+＠ゴルドルフ
+（違うの？）
+[k]
+
+[charaFadeout L 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk depthOn]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠ニキチッチ
+違うが、我が妻は美しくも[#逞:たくま]しき女巨人の英雄であり、[r]人よりも獣に近い存在ではあった。
+[k]
+
+？1：じゃあその獣耳は、奥さんの……？
+？2：奥さんの特徴を霊基が再現してるのかな
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠伊吹童子
+へえ、素敵。[r][#つがい]の愛を[#加護:かたち]として得る英霊なのかしら。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 2]
+[charaDepth F 1]
+
+[charaPutFSR K 2]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadeinFSR E 0.1 2]
+
+[charaFace F 0]
+[charaFadeinFSL F 0.1 0]
+
+＠ゴルドルフ
+そうか！[r]では、女の姿なのもそのためか！
+[k]
+
+[charaFace F 11]
+＠ニキチッチ
+違う。
+[k]
+
+[charaFace E 4]
+＠ゴルドルフ
+違うのか……
+[k]
+
+[charaFace F 26]
+
+＠ニキチッチ
+違わないかもしれない。
+[k]
+
+[charaFace E 1]
+＠ゴルドルフ
+お、おお？[r]では耳も姿も、妻の加護による[line 3]
+[k]
+
+[charaFace F 24]
+＠ニキチッチ
+ん～～～～。
+[k]
+
+[charaFace E 9]
+＠ゴルドルフ
+……どっちなの？
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_94 1.0]
+[wait fade]
+
+[charaTalk depthOn]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaPut K 1200,1200]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠太公望
+さて。僕にはひとつの仮説があります。
+[k]
+
+＠太公望
+一体どういう理屈を用いて、[r]この領域は人理の英霊を弾いているのか[line 3]？
+[k]
+
+＠太公望
+……。[r]……。
+[k]
+
+[charaFace C 4]
+
+＠太公望
+……ここで語るのは簡単なのですが、[r]少しだけ待って欲しい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+[charaTalk D]
+[charaFace D 24]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+ふむ。その心は？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠太公望
+前提とする知識を幾つか[#カルデア:そ　　ち　　ら]にも[r]インストールしておく必要があります。
+[k]
+
+＠太公望
+そのためにはこの領域を知る必要がある。[r]具体的には、二箇所ほど巡りたい場所があります。
+[k]
+
+＠太公望
+言葉より、見る方が手っ取り早い。
+[k]
+
+＠太公望
+何よりも[line 3]
+[k]
+
+＠太公望
+そう、理解度が遙かに変わるはずです。[r][#領域支配者:コ  ヤ  ン  ス  カ  ヤ]について。
+[k]
+
+[messageOff]
+[charaFace C 1]
+[wt 1.2]
+
+[charaFace C 5]
+
+＠太公望
+ニキチッチや伊吹童子殿のような方々が、[r]なぜ強制退去しないのかも、同時に分かるはずです。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+……もったいぶるねぇ、英霊・太公望。[r]いや、冠位候補の太公望殿？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠太公望
+プレゼンは効果的にするべきでしょう？[r]僕、元々そういうのこだわる[#性質:たち]なんですよ。
+[k]
+
+[charaFace C 0]
+＠太公望
+それにまあ、本当に、[r][#言葉だけでは済まない]ものも世にはある。
+[k]
+
+＠太公望
+この領域について、僕はそう受け止めた。[r]あなたたちがどう感じるかは……
+[k]
+
+＠太公望
+保証はできませんがね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+
+[charaTalk D]
+[charaFace D 24]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+なるほど。
+[k]
+
+[charaFace D 25]
+
+＠ダ・ヴィンチ
+彼の言葉、どう考える？[r][%1][&君:ちゃん]、マシュ。
+[k]
+
+？1：見せたいものがあるなら、見ます
+？2：百聞は一見にしかず、でしょ？
+
+？！
+
+[messageOff]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.2]
+[charaMoveReturn A 0,-5 0.4]
+[wt 1.2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.2]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ニキチッチ
+ん。移動するか？
+[k]
+
+[charaFace F 27]
+
+＠ニキチッチ
+いいぞ。[bgm BGM_EVENT_146 0.1][r]だが、魚を喰ってからだ。
+[k]
+
+＠ニキチッチ
+焼こう。
+[k]
+
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠太公望
+ん～～～～～～～～～。
+[k]
+
+＠太公望
+ごめんニキチッチ、[r]煙を立てるのは良くないかなぁ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+＠ニキチッチ
+では術を使え、おまえが。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠太公望
+はー。そう来る！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠ニキチッチ
+おまえの仙術だか道術だかの術に、[r]焼き魚の術があっただろう。
+[k]
+
+[charaFace F 13]
+
+＠ニキチッチ
+調味も完璧という優れもの！[r]こちらの希望に応じて、[#胡椒:こしょう]多め、塩多め、等々、
+[k]
+
+[charaFace F 14]
+＠ニキチッチ
+細かな調整も利くアレだ！　やれ！[r]もうぜんぶ串に刺しておいた！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠太公望
+はいはい……
+[k]
+
+[messageOff]
+
+[fowardEffect bit_talk_sorcery_tik_03]
+[wt 0.1]
+[cueSe SE_21 21_ade669]
+[wt 3.4]
+
+[cueSe SE_21 21_ade661]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[wt 0.5]
+
+[cueSe SE_21 21_ade597]
+
+[wt 2.0]
+[seStop 21_ade597 1.0]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠伊吹童子
+わ、いい香り！[r]あっという間にお魚が焼き上がってく！
+[k]
+
+？1：なんて便利[&なんだ:なの]……
+？2：これが仙術
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠太公望
+いやただの僕のオリジナルですけどね？
+[k]
+
+＠太公望
+釣りは割と好きなんで、[r]釣った端から食べる術があったら便利だなあって。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠マシュ
+流石は太公望さん、[r]釣り人の代名詞とも言うべき存在[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+＠太公望
+え、そう？
+[k]
+
+＠太公望
+いやー、なんか照れるなァ。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[cueSe SE_21 21_ade597]
+[bgmStop BGM_EVENT_146 2.0]
+[wt 1.7]
+[seStop 21_ade597 1.0]
+[wt 1.5]
+
+[bgm BGM_MAP_13 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ニキチッチ
+もう焼き上がるな。[r]では各自、魚を食べてから行こう！
+[k]
+
+[charaFace F 11]
+＠ニキチッチ
+腹減りでろくな戦はできん。[r]それに、見ればどいつもこいつも雛のように若い。
+[k]
+
+[charaFace F 14]
+＠ニキチッチ
+ならば喰え！　まずは喰え！
+[k]
+
+[charaFace F 2]
+＠ニキチッチ
+連戦の消耗は喰って補え！[r]そしてまた、勇士は戦いへと赴くのだ！
+[k]
+
+？1：は、はい！
+？2：いただきます！
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+……我々も食事にするか！[r]そうだな、魚……ムニエルもいいか……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+＠ムニエル
+呼びました？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+モーニングコール君なぞ呼んでおらん！[wt 0.5][charaFace E 11][r]んん、何にしようか……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[charaMoveReturn G 0,-5 0.3]
+＠フォウ
+フォフッ、フォフッ（もぐもぐ）[wt 0.2][charaMoveReturn G 0,-5 0.3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[charaMoveReturn A 0,-5 0.3]
+＠マシュ
+（もぐもぐ）[wt 0.2][charaMoveReturn A 0,-5 0.3]
+[k]
+
+[charaFace A 1]
+＠マシュ
+わっ、美味しいですね……
+[k]
+
+＠マシュ
+身には心地よい歯応えがあって、[r]鼻に抜ける香りもいい……[line 3]
+[k]
+
+＠マシュ
+淡水魚に特有の爽やかな味わい、です！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+[charaMoveReturn B 0,-5 0.3]
+＠伊吹童子
+（もぐもぐ）[wt 0.2][charaMoveReturn B 0,-5 0.3]
+[k]
+
+[charaFace B 1]
+＠伊吹童子
+やだ美味しいー。ほっぺたが落ちちゃう！[r]あはは、じゃもう一匹！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[charaMoveReturn H 0,-5 0.3]
+＠四不相
+モ。モモ。（もぐもぐ）[wt 0.2][charaMoveReturn H 0,-5 0.3]
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 8]
+[charaFadein J 0.4 1]
+[wt 0.4]
+[charaMoveReturn J 0,-5 0.3]
+[wt 0.3]
+＠飛竜
+（もぐもぐ）[charaMoveReturn J 0,-5 0.3]
+[k]
+
+[charaFace J 0]
+
+[bgmStop BGM_MAP_13 0.5]
+＠飛竜
+……へエー、竜って魚食うんだなァ？
+[k]
+
+[messageOff]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+[wt 1.2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+[wt 1.2]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+[wt 1.2]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[wt 1.4]
+
+？1：喋っ……[line 3]！？
+？！
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠フォウ
+[f large]シャベッフォウ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+フォウさん！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ニキチッチ
+改めて紹介しよう、我が愛馬だ。[r]見ての通り、邪竜の呪いですっかり飛竜の姿だが、
+[k]
+
+＠ニキチッチ
+本来は馬だ。[r]よろしくしてやってくれ、竜。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠伊吹童子
+へー、そうなんだ？
+[k]
+
+＠伊吹童子
+あたし、伊吹童子。[r]自分のことはまだぼんやりだけど……
+[k]
+
+[charaFace B 1]
+
+＠伊吹童子
+以後よろしく。愛馬くん。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 7]
+[charaFadein J 0.1 1]
+[charaPut L 0,-200]
+[charaFadeTime L 0.2 0.5]
+＠飛竜
+（ドキッ）
+[k]
+
+[charaFadeout L 0.2]
+
+[charaFace J 6]
+＠飛竜
+なんだこの竜、超美人じゃんかよ……[r]まあ、よろしくなイブキちゃん。
+[k]
+
+？1：普通に喋ってる
+？2：たまにいるよね喋る馬、わかる
+
+？！
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+は、はい。[r]こうも流暢に喋るお馬さん（？）は珍しいです。
+[k]
+
+[charaFace A 1]
+
+[charaDepth O 1]
+[charaDepth A 2]
+
+＠マシュ
+でも、カルデアにもおひとり、[wt 0.3][charaFace O 1][charaPut O 300,0][charaFadeTime O 0.4 0.7][r]とても丁寧な口調の方がいらっしゃるんですよ。
+[k]
+
+[charaFadeout O 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ニキチッチ
+そうか。丁寧なのはいいことだ。[r]あ。そうだ、[&マシュ。:マシュ。[%1]。]
+[k]
+
+[charaFace F 19]
+＠ニキチッチ
+我が愛馬はなんというかいやらしい馬なので、[r]気を付けなさいね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+はい……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 19]
+[charaFadein F 0.1 1]
+＠ニキチッチ
+女好きなんだ。[r]お尻とか鼻先で触られたら、これな。
+[k]
+
+[charaFace F 11]
+＠ニキチッチ
+（拳を握って振り下ろす仕草）[se ad171][seStop ad171 0.4][charaMoveReturn F 0,-10 0.2]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠フォウ
+フォ……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠伊吹童子
+あー、たまにいるわよね、そういう動物。[r]妙に人の女、しかも若い女の子にばかり懐く雄！
+[k]
+
+[charaFace B 8]
+＠伊吹童子
+って、そーいう記憶はあるのよねー。[r]へんなの。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠マシュ
+き、気を付けます。[r]はい。
+[k]
+
+？1：（飛竜へ警戒の視線）
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 15]
+[charaFadein J 0.1 1]
+＠飛竜
+なんだ……気を付けちゃうのかよ……
+[k]
+
+[charaFace J 9]
+＠飛竜
+ちぇっ。ちぇっ。[r]せっかく美人とお近づきになれたのにこれだよ。
+[k]
+
+[charaFace J 6]
+
+＠飛竜
+まーいいけどよォ！[r]どうせ最後は俺の上に[#跨:また]がるんだしよォ～！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 20]
+[charaFadein F 0.1 1]
+＠ニキチッチ
+ほらな、ほらいやらしい。[r]ただの騎乗のことをいやらしい風に言った。
+[k]
+
+[charaFace F 2]
+＠ニキチッチ
+おまえあとでこれだぞ。[wt 0.5][se ad171][seStop ad171 0.4][charaMoveReturn F 0,-10 0.2][r]（拳を握って振り下ろす仕草）
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 17]
+[charaFadein J 0.1 1]
+＠飛竜
+ヒ、ヒュ～♪　ご褒美～♪
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠ニキチッチ
+強がりを言うな莫迦馬！[r]メシ抜き！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 15]
+[charaFadein J 0.1 1]
+[charaShake J 0.05 4 4 0.5]
+＠飛竜
+そ、そんなァ！[r]それだけは勘弁してくださいよ旦那ァ～！！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠フォウ
+ヨワフォウ……
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+
+[wt 1.5]
+
+[charaPut K 0,0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+……。[r]……。
+[k]
+
+＠ゴルドルフ
+カモミール君、カモミール君。[r]ちょっといいかね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 3]
+[charaFadein I 0.1 1]
+＠ムニエル
+オーブンから目離さないでくださいよもう。[r]なんです？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+私の気のせいなのか？[r]いや、気のせいではないと思うんだが……
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[se adm21]
+[charaMoveReturn G 0,15 0.5]
+[wt 1.4]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[charaShake H 0.03 3 3 1.5]
+[wt 1.4]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 1.4]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 8]
+[charaFadein J 0.1 1]
+[wt 1.4]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+…………だいぶブレーメンじゃない、今回？
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

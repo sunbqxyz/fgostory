@@ -1,0 +1,88 @@
+
+＄94-00-23-03-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+[charaSet A 8001001 1 玛修]
+[charaSet B 98003000 1 Dr.罗曼]
+[charaSet C 98002000 1 芙芙]
+[charaSet D 4004001 1 阿斯托尔福]
+[charaSet E 9002001 1 天草四郎]
+[charaSet F 2018001 1 幼吉尔]
+
+[scene 20210]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠天草四郎
+这样一来，[r]包括影从者在内的敌人就全部清理干净了[line 2]。
+[k]
+
+[charaFace E 4]
+＠天草四郎
+问题在于如何破坏这圣杯。[r]吉尔，你有什么道具吗？
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0]
+[charaFace E 4]
+[charaFadein E 0.1 2]
+＠幼吉尔
+唔……若是这种程度的东西，[r]只要随便从宝物库里拿一件出来就能处理了吧。
+[k]
+
+[charaFace F 5]
+＠幼吉尔
+[line 2]问题是这拟似圣杯似乎正要产下什么东西。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+啊……什么？[r]产下……吗？
+[k]
+
+[charaFadeout A 0.1]
+
+[bgmStop BGM_EVENT_5 0.1]
+[wt 0.2]
+[bgm BGM_EVENT_3 0.1]
+
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.罗曼
+哇，哇，哇……庞大的魔力正从圣杯中溢出来！[r]有什么要出现了！
+[k]
+
+＠Dr.罗曼
+哎？问我什么是指什么吗？
+[k]
+
+[communicationCharaFace 4]
+＠Dr.罗曼
+我觉得应该不是魔神柱……[r]但大概是与之类似的某种存在吧……？
+[k]
+
+[communicationCharaFace 2]
+＠Dr.罗曼
+……这可出大事了！！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wt 0.4]
+[bgmStop BGM_EVENT_3 0.1]
+[wait fade]
+[communicationCharaClear]
+[wait communicationChara]
+[soundStopAll]
+[end]

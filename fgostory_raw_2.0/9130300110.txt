@@ -1,0 +1,732 @@
+
+＄91-30-30-01-1-0
+
+
+[soundStopAll]
+
+[charaSet A 3030000 1 帕尔瓦蒂]
+[charaSet B 3029001 1 源赖光]
+[charaSet D 1001000 1 特效用]
+
+[imageSet H back10000 1]
+
+[charaScale H 1.02]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[branch lblConf]
+[label lblNotClear]
+[scene 10310]
+
+[branch lblNotClear_out]
+[label lblConf]
+[scene 66600]
+
+[label lblNotClear_out]
+
+[se ade74 1.5]
+[seVolume ade74 0 0.3]
+[wt 0.5]
+
+[fadein black 1.0]
+[seVolume ade74 1.0 0.6]
+[wait fade]
+
+[seVolume ade74 1.0 1.0]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[seStop ade74 0.4]
+[bgm BGM_EVENT_25 0.1]
+
+＠帕尔瓦蒂
+啊，您好，[%1]。[r]在散步吗？
+[k]
+
+？1：您好！
+？2：是的！
+？！
+
+[charaFace A 6]
+
+＠帕尔瓦蒂
+呵呵。[r]谢谢您精力充沛的回应。
+[k]
+
+[charaFace A 0]
+
+＠帕尔瓦蒂
+我正好也在散步……[r]如果不给您添麻烦的话，能和您一起走吗？
+[k]
+
+？1：求之不得。
+？2：当然没问题啦。
+？！
+
+[messageOff]
+
+[charaFace A 1]
+[wt 1.0]
+
+[wipeout leftToRight 0.7 1]
+[bgmStop BGM_EVENT_25 0.7]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[se ade74 0.5]
+[seVolume ade74 0 0.5]
+[se adm36 0.5]
+[seVolume adm36 0 0.5]
+
+[wt 0.5]
+
+[wipein rightToLeft 0.7 1]
+[seVolume ade74 0.7 1.0]
+[seVolume adm36 0.7 1.0]
+[wait wipe]
+
+[wt 1.0]
+[seStop ade74 1.0]
+[seStop adm36 1.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+
+？1：近况如何？
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+＠帕尔瓦蒂
+嗯……[r]现在有种刚完成了一件重要工作的感觉。
+[k]
+
+＠帕尔瓦蒂
+只要是不需要我出动的时候，[r]我通常都会悠闲地消磨时光。
+[k]
+
+＠帕尔瓦蒂
+和布狄卡小姐她们一起做做料理，[r]向弗拉德先生学习学习裁缝。
+[k]
+
+[charaFace A 3]
+
+
+＠帕尔瓦蒂
+啊，但……当然，也会练习枪术，[r]这点您还请放心！
+[k]
+
+
+＠帕尔瓦蒂
+您随时都可以依靠我！[r]我会作为女神努力的！
+[k]
+
+[charaFace A 10]
+
+＠帕尔瓦蒂
+如果您认为我是闲到发慌[r]只知道享受迦勒底生活的懒惰从者……
+[k]
+
+
+＠帕尔瓦蒂
+我觉得这和作为女神凭依之躯的[r][#少女:我]也有一点点关系……！
+[k]
+
+？1：我觉得您非常可靠。
+？2：今后也要请您多多关照。
+？！
+
+[charaFace A 0]
+
+＠帕尔瓦蒂
+是……是这样啊，哎嘿嘿。[r]那就好。
+[k]
+
+[messageOff]
+[charaFadeTime H 0.3 0.4]
+[wt 0.4]
+
+[charaFace A 4]
+
+＠帕尔瓦蒂
+（不过……我其实也很清楚。[r]　现在的我，多少有些懈怠。）
+[k]
+
+＠帕尔瓦蒂
+（这就是所谓的职业过劳吗？）
+[k]
+
+[charaFace A 9]
+
+＠帕尔瓦蒂
+（……得想办法改变现状才行……）
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.7 1]
+[bgmStop BGM_EVENT_2 0.7]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaFadeout H 0.1]
+
+[se ade74 0.5]
+[seVolume ade74 0 0.5]
+[se adm36 0.5]
+[seVolume adm36 0 0.5]
+
+[wt 0.5]
+[seVolume ade74 0.7 1.0]
+[seVolume adm36 0.7 1.0]
+
+[wipein rightToLeft 0.7 1]
+[seStop ade74 0.7]
+[seStop adm36 0.7]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+＠帕尔瓦蒂
+[line 3]咦？　那是？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 1]
+[wt 0.8]
+
+[charaMoveReturn B -30,0 0.5]
+[wait charaMove B]
+[charaMoveReturn B 30,0 0.5]
+[wait charaMove B]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠源赖光
+哎呀，[r]该怎么办，该怎么办……
+[k]
+
+[charaFace B 5]
+
+＠源赖光
+[line 3]不，没错。[r]现在还是应该这样！
+[k]
+[messageOff]
+[se ad8]
+[wt 1.0]
+
+
+[se ad7]
+[seVolume ad7 0 0.6]
+[charaMove B -50,0 0.3]
+[charaFadeout B 0.4]
+[wt 1.0]
+
+[se ad8]
+[wt 1.0]
+
+[charaChange B 7023002 5 fade 0.4]
+[se ad166]
+[seVolume ad166 0 0.6]
+[seStop ad166 0.6]
+[charaPut B -50,0]
+[charaMove B 0,0 0.3]
+[wt 1.0]
+
+[charaMoveReturn B -30,0 0.5]
+[se ad166]
+[seVolume ad166 0 0.5]
+[seStop ad166 1.0]
+[wait charaMove B]
+[charaMoveReturn B 30,0 0.5]
+[wait charaMove B]
+
+[charaFace B 4]
+
+＠源赖光
+不，但是……那也是重要的任务。[r]一定要分出哪边是个人私事的话……
+[k]
+
+＠源赖光
+唔唔唔……果然……？
+[k]
+
+[messageOff]
+[se ad8]
+[wt 0.5]
+
+[se ad166]
+[seVolume ad166 0 0.6]
+[seStop ad166 0.6]
+[charaMove B -50,0 0.3]
+[charaFadeout B 0.6]
+[wt 1.0]
+
+[charaChange B 3029002 6 fade 0.4]
+[se ad7]
+[seVolume ad7 0 0.6]
+[charaPut B -50,0]
+[charaMove B 0,0 0.3]
+[wt 1.0]
+
+＠源赖光
+………………
+[k]
+
+[charaFace B 4]
+
+＠源赖光
+[charaMoveReturn B 0,10 0.3]
+啊？[r]不好，着急到忘记穿衣服了！
+[k]
+
+？1：请问……
+？2：你在干什么呀？
+？！
+
+[charaFace B 0]
+
+
+＠源赖光
+哎呀，这不是御主吗？[r]还有天竺的女神大人。
+[k]
+
+[charaFace B 4]
+
+＠源赖光
+难不成两位从刚才起就……？[r]十分抱歉，让你们见笑了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+＠帕尔瓦蒂
+不会不会。重要的是发生了什么？[r]您看上去慌慌张张的。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[wt 0.1]
+
+＠源赖光
+说得……对。该说慌慌张张还是什么呢。[r]这全都是我的无德所致。
+[k]
+
+＠源赖光
+我明知道身为武士，[r]应该果断做出选择[line 3]
+[k]
+
+＠源赖光
+而我现在仍在瞻前顾后。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+＠帕尔瓦蒂
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.1]
+
+＠源赖光
+那个……原本我，[r]今天预计要久违地到处巡回检查风纪。
+[k]
+
+＠源赖光
+由于最近过于忙碌，这工作暂时搁置了一阵，[r]但搁置也有限度。
+[k]
+
+
+＠源赖光
+毕竟风纪一旦松懈，[r]就会越来越毫无底线。
+[k]
+
+＠源赖光
+该收紧的时候就要收紧。
+[k]
+
+＠源赖光
+再加上最近多了不少新从者。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+＠帕尔瓦蒂
+原来如此，这份用心非常好。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.1]
+
+＠源赖光
+但是[line 3]在这个当口却传来了一个消息。
+[k]
+
+[charaFace B 2]
+
+＠源赖光
+没想到，那只长角的虫子居然追着[r]优哉游哉四处游玩的金时去了！
+[k]
+
+[charaFace B 5]
+
+＠源赖光
+如果发生了什么问题可就为时已晚了。[r]既然被我知道了，就决不能放任不管。
+[k]
+
+＠源赖光
+哪怕会被别人评价为过度保护，[r]保护孩子免受邪恶之手侵袭也是母亲应尽的职责！
+[k]
+
+？1：（尽管这是极为常见的情况……）
+？2：（但我能理解赖光的心情。）
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+
+
+[charaTalk A]
+[charaFace B 4]
+[charaFadein B 0.1 0]
+[charaFace A 4]
+[charaFadein A 0.1 2]
+[wt 0.1]
+
+＠帕尔瓦蒂
+所以说，您现在正在烦恼究竟该选择做什么吧？
+[k]
+
+＠源赖光
+让您见笑了，您说得对……
+[k]
+
+[charaFace A 1]
+
+＠帕尔瓦蒂
+[line 6]
+[k]
+
+[charaFace A 0]
+
+＠帕尔瓦蒂
+如果您不介意的话，[r]风纪的巡回就由我代为完成吧？
+[k]
+
+[charaFace B 2]
+
+＠源赖光
+！
+[k]
+
+[charaFace B 0]
+
+
+＠源赖光
+如……如果能这样……我当然求之不得……[r]但怎么能让天竺女神乌摩妃大人做这种事呢……
+[k]
+
+＠源赖光
+真的可以吗？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+＠帕尔瓦蒂
+嗯，当然了。而且我现在正闲着散步呢，[r]您完全不必介意。
+[k]
+
+＠帕尔瓦蒂
+如果只需稍微改变一下散步路径，[r]检查大家的生活态度，就能帮上忙的话，
+[k]
+
+[charaFace A 6]
+
+＠帕尔瓦蒂
+这简直是小菜一碟啦！
+[k]
+
+[messageOff]
+[charaPut D 0,150]
+[charaEffect D bit_talk_radiallight02]
+[se adm20]
+[charaFace A 1]
+[wt 3.0]
+
+[charaPut D 1200,1200]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaEffectStop D bit_talk_radiallight02]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.1]
+
+＠源赖光
+哎呀……这是何等的……！　不愧是女神大人，[r]仿佛身后散发出圣光……！
+[k]
+
+＠源赖光
+那我就恭敬不如从命了。[r]该怎么向您道谢才好呢……
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+＠帕尔瓦蒂
+啊啊，请不要这样低头道谢。[r]真的只是散步时顺便而已。
+[k]
+
+[charaFace A 0]
+
+＠帕尔瓦蒂
+比起这个，您不是还在赶时间吗？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.1]
+
+＠源赖光
+说得对哦！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.0]
+
+[se ad8]
+[wt 0.5]
+[charaMove B -50,0 0.3]
+[charaFadeout B 0.4]
+[wt 1.0]
+
+[se ad77]
+[seVolume ad77 0 1.0]
+[wt 1.0]
+
+[charaSet B 7023002 1 源赖光]
+
+[se ad8]
+[wt 0.5]
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 -50,0]
+[charaMove B 0,0 0.3]
+[wt 0.6]
+
+[charaFace B 2]
+[bgm BGM_EVENT_67 0.1]
+
+
+＠源赖光
+承蒙乌摩妃大人深情厚谊，[r]我源赖光再也不会犹豫了！
+[k]
+
+＠源赖光
+我会将企图靠近金时的害虫一个不剩全部消灭干净！
+[k]
+
+？1：麻烦手下留点情……
+？2：不要太过火了哦……
+？！
+
+[charaFace B 0]
+
+＠源赖光
+我明白，御主。[r]因为万一遭到自己孩子的讨厌，可是非常悲哀的事。
+[k]
+
+
+＠源赖光
+所以我会极为自然地，[r]带着必然性地前去讨伐。
+[k]
+
+[charaFace B 2]
+
+＠源赖光
+具体来说，就像边叫着，金时，你忘记带便当了啦！[r]边自然跟在他后面冲进学校的感觉！
+[k]
+
+＠源赖光
+这样一来，就算母亲唐突出现，[r]也不会有任何不自然之处了吧！
+[k]
+
+[charaFace B 0]
+
+＠源赖光
+啊啊，对了对了，我差点忘了。
+[k]
+
+＠源赖光
+这是今天必须确认生活态度和风纪的人物名单。
+[k]
+
+[charaFace B 3]
+
+
+＠源赖光
+尽管我非常不愿意将这些推给乌摩妃大人去做……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+＠帕尔瓦蒂
+不用啦不用啦。我是心甘情愿这么做的！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.1]
+
+
+＠源赖光
+[line 3]这份恩情，今后必将回报。[wt 0.8][charaFace B 2][r]那恕我先失陪了！
+[k]
+
+[messageOff]
+[charaMove B -50,0 0.3]
+
+[se ad166]
+[seVolume ad166 0 0.7]
+[seStop ad166 1.5]
+[charaFadeout B 0.4]
+[bgmStop BGM_EVENT_67 0.7]
+[wt 2.0]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠帕尔瓦蒂
+呵呵，赖光小姐还是如此精力充沛有情有义呢。
+[k]
+
+＠帕尔瓦蒂
+只是旁观都能带给我精神。
+[k]
+
+[charaFace A 0]
+
+＠帕尔瓦蒂
+那我先确认一下拿到的人物名单……[r]嗯嗯……
+[k]
+
+[charaFace A 7]
+
+＠帕尔瓦蒂
+哎呀。这名单上似乎都是些适合我来处理的对手呢……？
+[k]
+
+？1：我也很闲，我和你一起去吧。
+？！
+
+[charaFace A 1]
+
+＠帕尔瓦蒂
+非常感谢。[r]有御主陪伴，犹如千军万马。
+[k]
+
+[charaFace A 0]
+
+＠帕尔瓦蒂
+那我们努力完成临时风纪委员的工作吧！
+[k]
+
+[charaFace A 2]
+
+＠帕尔瓦蒂
+尽管人们觉得我是个只有温柔善良这个优点的女神，[r]但我生起气来也是雷厉风行的！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[soundStopAll]
+[end]

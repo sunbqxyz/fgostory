@@ -1,0 +1,197 @@
+
+
+＄94-06-43-05-1-1
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5050000 1 サンタマルタ]
+[charaSet B 1098198000 1 スカサハ＝スカディ]
+[charaSet C 2001002 1 エミヤ]
+[charaSet D 4011001 1 ブーディカ]
+[charaSet E 7016001 1 タマモキャット]
+[charaSet F 3047001 1 パーシヴァル]
+[charaSet H 99502600 1 マシュ]
+
+[charaSet K 98115000 1 エフェクト用ダミー]
+[charaSet L 98115000 1 エフェクト用ダミー]
+
+[scene 140600]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[se ad171]
+[effect bit_talk_v_slash01]
+[wt 0.7]
+
+[se ad685]
+[wt 0.2]
+[shake 0.05 5 4 0.3]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+＠タマモキャット
+ナイスかち割り！[r]デリシャスなのだな！（しゃくしゃくもぐもぐ）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+む？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ブーディカ
+ま、まさか。
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠ブーディカ
+ここでエネミー倒しても氷食材落ちないの、[r]キャットが全部食べちゃってるからだったり？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠タマモキャット
+（しゃくしゃくもぐもぐ）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠エミヤ
+……可能性は否定できないが、[r]氷は目下必要ない。放っておくとしよう。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 0.5]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ade410]
+[distortionstart 0.0 0.5 0.5 0.0 0.0 100.0]
+[distortionstart 0.7 0.5 0.5 0.3 0.3 20.0]
+[wt 0.7]
+
+[distortionstop 1.5]
+
+[charaPut L 0,0]
+[charaEffect L bit_talk_warp]
+[se ad434]
+[seVolume ad434 0 0.5]
+[wt 3.5]
+[seStop ad434 0.3]
+
+[charaPut L 2000,2000]
+[wt 0.2]
+
+[se ad13]
+[charaPut K 0,0]
+[charaEffect K bit_talk_10_LowLevel]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+[bgm BGM_SENGOKU_1 0.1]
+
+＠スカサハ＝スカディ
+来たな、ルーンの導き。
+[k]
+
+[charaFace B 0]
+
+＠スカサハ＝スカディ
+その先にあるのは第三の食材エリアだ。[r]チーズの保管庫として設定されたエリアではあるが、
+[k]
+
+＠スカサハ＝スカディ
+よい卵があるはずだ。[r]まさに、これぞ卵というべきモノが待つだろう。
+[k]
+
+＠スカサハ＝スカディ
+気を付けて進めよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠マシュ
+先輩、皆さん、どうかお気を付けて。
+[k]
+
+[charaFace H 12]
+
+＠マシュ
+エネミー出現の原因についてはまだ不明です。[r]幾つか検証を進めてはいますが……
+[k]
+
+？1：とりあえず食材をゲットしてくるよ
+
+[charaFace H 1]
+
+＠マシュ
+はい。行ってらっしゃい、先輩！
+[k]
+
+？2：マシュ、あまり根を詰めないようにね
+
+[messageOff]
+[charaFace H 6]
+[wt 1.0]
+[charaFace H 1]
+
+＠マシュ
+……ありがとうございます。
+[k]
+
+[charaFace H 7]
+
+＠マシュ
+それでは改めて、お気を付けて！[r]先輩！
+[k]
+
+？！
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_SENGOKU_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

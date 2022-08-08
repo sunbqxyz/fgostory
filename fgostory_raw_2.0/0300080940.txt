@@ -1,0 +1,321 @@
+
+＄03-00-08-09-4-0
+
+
+
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098231510 1 玛修]
+[charaSet B 1098216200 1 哈贝特洛特]
+[charaSet C 1098231100 1 妖精骑士兰斯洛特]
+[charaSet D 1098209200 1 谢菲尔德的妖精]
+[charaSet E 1098209200 1 谢菲尔德的妖精]
+[charaSet F 1098209200 1 谢菲尔德的妖精]
+[charaFilter E silhouette 00000080]
+[charaFilter F silhouette 00000080]
+
+[charaSet H 98115000 1 特效用]
+
+[charaPut H 2000,2000]
+[charaEffect H bit_talk_shield_light 15,-15]
+
+
+[scene 119503]
+
+[se ad578]
+[fadein black 1.5]
+[wait fade]
+[wt 0.8]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠谢菲尔德的妖精
+门打开了[line 3]！[r]『预言之子』帮我们开门了[line 3]！
+[k]
+
+＠谢菲尔德的妖精
+外面不见女王的军队！[r]快、快！　现在还能逃得掉！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad726]
+[seVolume ad726 0 0.1]
+[seVolume ad726 0.5 1.0]
+[wt 2.0]
+[seStop ad726 1.0]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠哈贝特洛特
+好，这样就大功告成了！[r]咱们也快逃吧，玛修！
+[k]
+
+[charaFace B 5]
+
+＠哈贝特洛特
+这座城市就交给博格特吧。
+[k]
+
+＠哈贝特洛特
+虽然很粗鲁，但他仍是个优秀的骑士。[r]既然策划了谋反，想必也做好了败北的觉悟。
+[k]
+
+＠哈贝特洛特
+你没必要一同背负责任。[r]接下来，是只属于他的最后之战。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_82 1.5]
+
+[charaPut H 1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠玛修
+…………[wt 1.0][charaFace A 7][r]哈贝特洛特小姐！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 2000,2000]
+
+[se ad695]
+[seVolume ad695 0 0.3]
+[cueSe SE_21 21_ade546]
+[se ade8]
+[seVolume ade8 0 0.3]
+[wt 1.5]
+
+[effect bit_talk_mgn_light]
+[se ad696]
+[seVolume ad696 0 0.6]
+[se ade393]
+[seVolume ade393 0 0.3]
+[wt 0.3]
+[se ad914]
+[shake 0.05 3 3 3.0]
+[wt 1.5]
+[seStop ade393 3.0]
+[wt 2.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.6 1]
+[wt 0.8]
+
+
+＠？？？
+……不许逃亡。
+[k]
+
+＠？？？
+……束手就擒，或就地死去。[r]……你们的面前，唯此二道。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠谢菲尔德的妖精
+兰，兰[line 3]
+[k]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠谢菲尔德的妖精
+兰斯洛特！[r]是妖精骑士兰斯洛特……！
+[k]
+
+＠谢菲尔德的妖精
+咿，咿咿……！[r]要被杀了，要被杀了！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad162]
+[seVolume ad162 0 0]
+[seVolume ad162 1.0 1.0]
+[wt 1.5]
+[seStop ad162 2.0]
+
+[se ade321]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.6]
+
+[se ad678]
+[charaMove C 0,25 0.2]
+[charaMoveScale C 1.1 0.2]
+[charaFadeout C 0.2]
+[blur motion 0.2 4 10 0.5 0.6 0.05 100]
+[wt 0.2]
+[charaScale C 1.0]
+[blurOff motion 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.2]
+
+[se ad171]
+[cueSe Battle bac263]
+[effect bit_talk_gram_slash_04_fs]
+[se bac136]
+[wt 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace E 0]
+[charaFadeinFSL E 0.1 0]
+[charaFace F 0]
+[charaFadeinFSR F 0.1 2]
+[wt 0.1]
+
+[se ad171]
+[cueSe Battle bac263]
+[effect bit_talk_gram_slash_03_fs]
+[se bac137]
+[se bac136]
+[wt 0.2]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 1.0]
+
+[se ad464]
+[effect bit_talk_blood_splash]
+[se ad161]
+[wt 0.4]
+[effect bit_talk_35]
+[cueSe SE_21 21_ad1101]
+[wt 2.5]
+
+[charaScale C 1.0]
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠哈贝特洛特
+那[line 3]那是什么。[r]妖精……？　妖精骑士？　那就是吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠妖精骑士兰斯洛特
+……确认『预言之子』。[r]……没办法，虽非本意，但还是抓捕吧。
+[k]
+
+[messageOff]
+[charaMoveScale C 1.05 0.2]
+[charaMove C 0,10 0.2]
+[se ad60]
+[seStop ad60 0.4]
+[wt 0.6]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaScale C 1.0]
+
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.2]
+
+[charaMove H 0,-10 0.2]
+[charaMove A 0,-10 0.2]
+[se ad51]
+[se bac324]
+[wt 1.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 2000,2000]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠妖精骑士兰斯洛特
+……不过，[r]你刚才说什么？
+[k]
+
+＠妖精骑士兰斯洛特
+什么加拉哈德……[r]就算信口开河，也得知道天高地厚吧。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠哈贝特洛特
+要来了，那家伙不好对付，[r]一出手就动用全力，玛修！
+[k]
+
+＠哈贝特洛特
+不过确实，你为什么要自称加拉哈德呢！？
+[k]
+
+＠哈贝特洛特
+那是谁啦，[r]是咱也不知道的情夫吗，你这家伙[line 2]！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠玛修
+不，不是，我也不知道，[r]只是顺势脱口而出了……！
+[k]
+
+[charaFace A 2]
+
+＠玛修
+总之先应战吧！[r]大家，快想办法逃跑……！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+

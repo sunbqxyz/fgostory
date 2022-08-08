@@ -1,0 +1,167 @@
+
+
+＄03-00-08-04-6-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5045000 1 阿尔托莉雅]
+[charaSet B 2008002 1 崔斯坦]
+[charaSet D 1098124500 1 达·芬奇]
+[charaSet E 1098209700 1 身着甲胄的妖精]
+
+[charaSet H 98115000 1 特效用]
+
+[charaSet L 98006200 1 ？？？]
+[charaSet M 98006200 1 敌人2]
+[charaSet N 98006200 1 敌人3]
+
+[scene 118500]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk off]
+[se ad138]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+[wt 0.8]
+
+[se ad138]
+[charaFace M 0]
+[charaFadeinFSL M 0.4 0]
+[wt 0.2]
+[se ad138]
+[charaFace N 0]
+[charaFadeinFSR N 0.4 2]
+[wt 1.0]
+
+
+
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+＠达·芬奇
+不管打倒多少都没完没了！[r]附近应该有作为使魔本体的妖精才对！
+[k]
+
+＠达·芬奇
+[%1]，能帮忙找一下吗！？[r]这边光是拦住使魔就已经竭尽全力了！
+[k]
+
+？1：[line 3]交给我吧[line 3]！
+？2：（冷静，仔细观察……！）
+
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[cameraMove 1.0 50,0 1.2]
+[wt 1.5]
+[cameraMove 1.5 -50,0 1.2]
+[wt 2.0]
+[cameraMove 0.5 -120,40 1.3]
+[wt 0.8]
+
+
+？1：找到了！　那座建筑物背后有什么！
+
+？！
+
+[cameraHome 0.5]
+[wt 0.5]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠崔斯坦
+……确实唯独那边没有声音呢。[r]看来是躲在背阴处了[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad151]
+[wt 1.0]
+[se bac127]
+[effect bit_talk_Slash_white_01_L 300,0]
+[wt 0.2]
+[se bac127]
+[effect bit_talk_Slash_white_01 310,0]
+[wt 0.2]
+[se bac128]
+[effect bit_talk_ichimon01wh 300,0]
+[wt 0.5]
+[effectDestroy bit_talk_ichimon01wh]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠崔斯坦
+在吾之幻奏面前，任何遮蔽物都无以为盾……[r]我将对方的躯体切成四份了，不知情况如何？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠身着甲胄的妖精
+可，恶[line 3]你们这些家伙是什么人。[r]刚才那奇妙的招数……既不属于人类，也不属于妖精。
+[k]
+
+＠身着甲胄的妖精
+而且也非摩耳斯，或者圆桌军……[r]难道是『预言之子』？
+[k]
+
+＠身着甲胄的妖精
+哈，哈哈哈哈！[r]那可太好啦，看来我也时来运转了啊！
+[k]
+
+＠身着甲胄的妖精
+吾名为格兰特，骑士格兰特！[r]『预言之子』的魔术根本不及陛下分毫！
+[k]
+
+＠E：骑士格兰特
+别以为摩根陛下所赐的这身甲胄[r]被砍那么一两刀就会坏掉哦……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 26]
+[charaFadein A 0.1 1]
+
+＠阿尔托莉雅
+……！[r]那身甲胄里是什么，并非普通的妖精……！？
+[k]
+
+＠阿尔托莉雅
+大家要小心！[r]那家伙多半就是传闻中的妖精骑士……！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

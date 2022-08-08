@@ -1,0 +1,592 @@
+
+
+
+＄94-05-15-10-2-1
+
+[soundStopAll]
+
+[charaSet A 5041002 1 美游]
+[charaSet C 6027000 1 周照]
+[charaSet D 3027001 1 美杜莎]
+[charaSet E 2028000 1 海伦娜]
+[charaSet F 3028001 1 最可怕的存在]
+[charaSet G 7016001 1 玉藻猫]
+
+[charaSet H 98002000 1 dummy特效1]
+[charaSet I 98002000 1 dummy特效1]
+[charaSet J 98002000 1 dummy特效1]
+
+[cameraMove 0.1 0,0 1.01]
+
+[charaDepth D 9]
+[charaDepth C 9]
+[charaDepth E 5]
+[charaDepth G 1]
+[charaDepth A 1]
+
+[scene 23000]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.3]
+
+[se ad73]
+[effect bit_talk_quickmove]
+[wt 0.1]
+
+[charaFace F 2]
+[charaFadein F 0.1 0,-10]
+[charaMove F 1 0.2]
+[wt 0.4]
+
+＠最可怕的存在
+呼哈哈哈！[r]谁是迷你剧情里被干掉的角色欧啦！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠美游
+呜，看上去很离谱但意外强大啊……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠海伦娜
+……事已至此只能用隐藏必杀技了。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠美杜莎
+是什么？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠海伦娜
+让伟大灵魂背包里射出的光线交错。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠周照
+慢着，你刚才说的注意事项里明确说[r]这种方法『非常危险所以不能做』吧？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠海伦娜
+嗯。但现在顾不上那么多了。[r]现在只能用这种方法了。
+[k]
+
+＠海伦娜
+怎么办，女帝陛下。你愿意相信我吗？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠周照
+呵。朕识人的眼光果然没错。[r]你的眼神没有在撒谎。
+[k]
+
+[charaFace C 2]
+
+＠周照
+[line 3]同意！　出发吧[#鬼魂讨伐队:Gui Hun Busters]，[r]从世间消灭那个恶灵吧！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠美游
+虽说恶灵压根不存在，但考虑到为御主和[r]伊莉雅铲除障碍，我没有拒绝的理由。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠美杜莎
+我也没有意见。[r]这种东西不该长期存在于现实中。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠最可怕的存在
+快住手！　虽说这个形象是临时的，[r]但自己的存在遭到全盘否定也太令人悲哀了！
+[k]
+
+[messageOff]
+[se ad65]
+[charaPut H 1]
+[charaEffect H bit_talk_beam_shot01]
+[wt 0.2]
+[charaFace F 2]
+[charaShake F 0.04 4 1 1.2]
+[wt 0.3]
+
+[seStop ad65 0.5]
+[wt 0.1]
+
+[se ad65]
+[charaFace F 6]
+[charaPut I 1]
+[charaEffect I bit_talk_beam_shot02]
+[wt 0.2]
+[charaShake F 0.04 4 1 0.6]
+[wt 0.3]
+[charaPut H 2000,2000]
+[charaEffectStop H bit_talk_beam_shot01]
+
+[seStop ad65 0.5]
+
+＠最可怕的存在
+[f large]呜哇！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut I 2000,2000]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠周照
+搞定！[wt 0.4][charaFace C 0]　好，情况怎么样？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠海伦娜
+嗯，发生了过载和过干涉……[r]这事态连伟大灵魂也会吓一跳呢。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠美游
+非常抱歉，但我们还没有理解那个概念。[r]希望你能用更简单的方式来解释。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠海伦娜
+啊，说得对。[r]那简单说[line 3]
+[k]
+
+
+[charaFace E 1]
+＠海伦娜
+会大爆炸。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠美杜莎
+…………
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠美游
+…………
+[k]
+
+
+＠蓝宝石
+…………
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠周照
+快……[wt 0.3][messageShake 0.04 3 3 0.4]快离开这里！
+[k]
+
+[messageOff]
+[se ad443]
+[charaFadeout C 0.4]
+[wt 0.4]
+[seStop ad443 0.8]
+[wt 0.2]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_3 1.0 0.4]
+[wait fade]
+
+[pictureFrame cut063_cinema]
+
+[charaPut H 1]
+[charaPut I 1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 0,-80]
+[charaShake F 0.04 4 1 0]
+[wt 1.0]
+
+[se ad65]
+[fadein black 1.0]
+[wt 0.6]
+[seStop ad62 0.5]
+[wt 0.1]
+[se ad65]
+[wt 0.6]
+[wait fade]
+
+
+[charaFace F 2]
+[seStop ad62 0.5]
+＠最可怕的存在
+不要掉以轻心，那啥啥[#讨伐队:Busters]啊。[r]哪怕你们打倒了我，第二、第三个我也一定会……
+[k]
+
+[charaFace F 4]
+
+＠最可怕的存在
+没有？　哦，这样啊。
+[k]
+
+[charaFace F 2]
+
+＠最可怕的存在
+但是嘛，猫科是不灭的！
+[k]
+
+[messageOff]
+[se ad65]
+[charaEffectStop I bit_talk_beam_shot02]
+[wt 0.6]
+[seStop ad65 0.5]
+[wt 0.2]
+
+
+[charaTalk off]
+[charaDepth H 5]
+[charaDepth I 6]
+[charaDepth J 7]
+[charaDepth F 4]
+
+[shake 0.04 3 3 0]
+[charaPut H 326,-50]
+[charaEffect H bit_talk_explosion]
+[se ad609]
+[seVolume ad609 0 0.3]
+[wt 0.6]
+
+[charaFace F 2]
+[charaShake F 0.04 3 4 0]
+
+[charaPut I -296,0]
+[charaEffect I bit_talk_explosion -296,0]
+[se ad609]
+[seVolume ad609 0 0.3]
+[wt 0.7]
+
+[charaPut J 26,-50]
+[charaEffect J bit_talk_explosion 26,-50]
+[se ad609]
+[seVolume ad609 0 0.3]
+[wt 0.3]
+
+[shakeStop]
+[wt 0.4]
+
+[fadeout white 1.5]
+[bgmStop BGM_EVENT_3 1.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaPut H 1200,1200]
+[charaPut I 1200,1200]
+[charaPut J 1200,1200]
+
+[pictureFrame]
+[scene 10000]
+[wt 2.0]
+
+[fadein white 1.5]
+[wait fade]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 99500]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠海伦娜
+唔……威力倒是够了，[bgm BGM_EVENT_77 0.1][r]但稳定性还是比较难掌控呢。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠美游
+我觉得问题不在这里。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠美杜莎
+还是称手的武器最好。[r]虽然并不是说喜欢这把镰刀……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠周照
+既然会爆炸干嘛不早说啦。[r]所有人都差点被活埋了吧。
+[k]
+
+[charaFace C 0]
+
+
+＠周照
+不过嘛，灵与猫都处理干净了，心情愉快！[r]这样一来，这个特异点总算恢复和平[line 3]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.4 0,0]
+[wt 0.4]
+
+＠玉藻猫
+猫怎么了汪？
+[k]
+
+[charaFace G 6]
+
+＠玉藻猫
+哦，怎么都那么灰头土脸的，[r]看来你们在庭院里玩得很疯吧。
+[k]
+
+[charaFace G 0]
+
+＠玉藻猫
+就用这猫咪特制的蛋包饭[r]来温暖你们的五脏六腑。
+[k]
+
+[charaFace G 1]
+
+＠玉藻猫
+好好去洗手，[r]然后前往名为饭桌的战场吧！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[charaShake C 0.02 3 3 0.5]
+＠周照
+噢……噢噢噢……！
+[k]
+
+
+＠周照
+怎么……又来了。[r]居住在这特异点中的恶。原来如此。
+[k]
+
+[charaFace C 2]
+
+＠周照
+哎哎，既然如此！
+[k]
+
+＠周照
+朕是不会放弃的，[r]直到朕的臣民能够健康生活的那一天！
+[k]
+
+＠周照
+接下来是[#妖猫讨伐队:Yao Mao Busters]，集结！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaFace E 0]
+[charaFace A 0]
+[charaFace D 0]
+[charaFadein E 0.1 -330,0]
+[charaFadein A 0.1 80,0]
+[charaFadein D 0.1 360,0]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 3]
+
+＠美杜莎
+肚子的确饿了呢。
+[k]
+
+＠海伦娜
+说得对。魔力补给很重要。
+[k]
+
+＠美游
+灵的问题姑且不论，[r]我并不觉得猫是多大的威胁。
+[k]
+
+[charaFace A 6]
+
+＠美游
+而且伊莉雅应该很喜欢。
+[k]
+
+[messageOff]
+[charaTalk C]
+
+[se ad173]
+[charaFadeout E 0.4]
+[charaFadeout A 0.4]
+[charaFadeout D 0.4]
+[wt 0.4]
+[seStop ad173 0.8]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠周照
+啊，喂，你们，打算去哪儿？[r]在洗手之前先解决这家伙吧！
+[k]
+
+＠周照
+喂[messageShake 0.04 3 3 0.5]～，慢着！[r]这是女帝的命令啊……！
+[k]
+
+[messageOff]
+[se ad132]
+[charaFadeout C 0.4]
+[wt 0.4]
+[seStop ad132 0.8]
+[wt 1.2]
+
+[wt 1.0]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

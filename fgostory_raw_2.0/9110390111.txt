@@ -1,0 +1,295 @@
+
+
+＄91-10-39-01-1-1
+
+[soundStopAll]
+
+[charaSet A 1039000 1 拉克什米]
+[charaSet B 1098182100 1 尼莫教授]
+[charaSet C 5004001 1 童谣]
+[charaSet D 7028000 1 班扬]
+[charaSet E 5002001 1 吉尔]
+
+[charaSet H 98006100 1 dummy特效1]
+[charaSet I 98006100 1 dummy特效2]
+[charaSet J 98006100 1 dummy特效3]
+
+[charaMoveScale I 0.05 0.1]
+[charaMoveScale J 0.05 0.1]
+
+
+[scene 20300]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.2 1]
+[wt 0.1]
+
+＠拉克什米
+啊……我知道了。[r]刚才那个表示胜利的V字手势的意义……是这样！
+[k]
+
+[messageOff]
+＠拉克什米
+嘿！（戳眼。）[se bac1][charaFace A 2][charaFadeout A 0.3][charaMove A 0,50 0.2][charaMoveScale A 1.2 0.2][charaEffect H bit_talk_41][wt 0.2][charaPut H 2000,2000][wt 0.2]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaMoveScale A 1.0 0]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+[wt 0.4]
+
+[charaDepth I 10]
+[charaDepth J 10]
+
+[se bac13]
+[seVolume bac13 0 0.8]
+[charaFace E 2]
+[charaEffect I bit_talk_13 520,-1400]
+[charaEffect J bit_talk_13 -520,-1400]
+[wt 0.1]
+[charaShake E 0.04 4 3 0.6]
+[wt 0.8]
+＠吉尔
+呜！？[r]这正是对我的眼球进行劝诫的贞德之戳眼！
+[k]
+
+[charaFace E 3]
+＠吉尔
+不会错，您就是正牌的，[r]时隔好久再次降临的新贞德！
+[k]
+
+[messageOff]
+[charaFadeout E 0.4]
+[charaMove E 0,-50 0.4]
+[bgmStop BGM_EVENT_80 1.6]
+[wt 0.4]
+
+[se ad144]
+[wt 1.4]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 1]
+[wt 0.6]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠拉克什米
+真是的……
+[k]
+
+[messageOff]
+[charaMoveReturn A 0,-5 0.6]
+[wt 0.9]
+[charaFace A 0]
+[wt 0.5]
+[se ad452]
+[charaFadeout A 0.4]
+[charaMove A -40,0 0.4]
+[wt 0.8]
+
+[wipeout rectangleStripRightToLeft 0.9 1.0]
+[seStop ad452 0.9]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.9 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠尼莫教授
+哦哦。[r]我逐渐开始看出来了～。
+[k]
+
+＠尼莫教授
+机会难得，为了印证这个推断，[r]我们去接触一下她注视的孩子们吧。
+[k]
+
+＠尼莫教授
+贞德氏似乎已经走了，[r]但我觉得孩子们才是关键，所以没有问题。
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.1 1.0]
+[se ad452]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein C 0.1 0]
+[charaFadein D 0.1 2]
+
+[wipein rightToLeft 1.1 1.0]
+[wait wipe]
+
+[seStop ad452 0.2]
+[wt 0.4]
+
+？1：你们好～。
+？！
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 1]
+
+＠童谣
+啊，是御主和戴眼镜的尼莫！[r]有什么事吗？
+[k]
+
+[charaFace D 1]
+＠班扬
+我们正在制作花冠！[r]要一起做吗？
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠尼莫教授
+这是个有趣的尝试，[r]但下次有机会再说吧。
+[k]
+
+[charaFace B 0]
+
+＠尼莫教授
+今天我有个问题要问你们。
+[k]
+
+＠尼莫教授
+你们几个……[r]和拉克什米·芭伊女士玩过吗？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein C 0.1 0]
+[charaFadein D 0.1 2]
+
+＠童谣
+是印度大姐姐吧？[wt 0.6][charaFace C 4]　唔……
+[k]
+
+[charaFace D 4]
+
+＠班扬
+好像没有一起玩过吧。
+[k]
+
+[charaFace C 0]
+
+＠童谣
+她总是板着一张脸，[r]总感觉很难开口向她搭话[line 3]
+[k]
+
+＠童谣
+不，即便如此，[r]我们也好几次开口邀请她一起玩或是参加茶会哦。
+[k]
+
+＠童谣
+因为她有好几次都在我们的附近。
+[k]
+
+[charaFace C 4]
+
+＠童谣
+但是，她总是说自己在忙，或是有事要办，[r]每次都拒绝了我们。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠尼莫教授
+唔……
+[k]
+
+[charaFace B 1]
+
+＠尼莫教授
+原来如此，非常感谢。[r]想知道的情报大致都知道了。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFace D 1]
+[charaFadein C 0.1 0]
+[charaFadein D 0.1 2]
+
+＠童谣
+这样啊。我很高兴能帮上你的忙。
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[fadein black 1.2]
+[wait fade]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.3 1]
+[wt 0.2]
+＠尼莫教授
+好了，御主，[r]我们去追她吧。
+[k]
+
+＠尼莫教授
+有了那么多情报，[r]她应该也无法继续装糊涂了。
+[k]
+
+[charaFace B 6]
+
+＠尼莫教授
+我会先把船长叫来换个班。[r]毕竟这种时候给对方施压是非常重要的……
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

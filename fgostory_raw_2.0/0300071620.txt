@@ -1,0 +1,2182 @@
+
+
+
+＄03-00-07-16-2-0
+
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 6030000 1 段藏]
+[charaSet B 7006300 1 坂田金时]
+[charaSet C 1098202400 1 藤原香子]
+[charaSet D 1098176400 1 源赖光]
+[charaSet E 1098202510 1 芦屋道满]
+[charaSet F 5004001 1 童谣]
+[charaSet G 99502600 1 玛修]
+[charaSet H 6019001 1 风魔小太郎]
+[charaSet I 98115300 1 福尔摩斯]
+[charaSet J 1098124500 1 达·芬奇]
+[charaSet K 98002000 1 芙芙]
+
+[charaSet L 98115000 1 特效用]
+[charaPut L 1200,1200]
+[charaEffect L bit_talk_10_LowLevel]
+
+[charaSet N 98115000 1 特效用]
+[charaScale N 1.1]
+
+[masterBranch _Male _Female]
+
+[label _Male]
+
+[charaSet M 1098128700 1 主人公_男]
+
+
+[branch _branchEnd]
+
+[label _Female]
+
+[charaSet M 1098128710 1 主人公_女]
+
+[label _branchEnd]
+
+[scene 101900]
+
+[fadein black 1.0]
+[se ad663 1.0]
+[wait fade]
+[wt 1.0]
+[seStop ad663 2.0]
+[wt 2.0]
+[scene 102600 1.0]
+[wt 2.5]
+
+[bgm BGM_EVENT_66 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠坂田金时
+综上所述！
+[k]
+
+＠坂田金时
+这次真是承蒙您的关照了。[r]赖光小姐交给我的绸缎米袋珍品和杂七杂八的，
+[k]
+
+[charaFace B 1]
+
+＠坂田金时
+都转交给您的家仆了。[r]聊表谢意，还望香子小姐笑纳！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠藤原香子
+不，您不用这样特地[line 3]
+[k]
+
+[charaFace C 1]
+
+＠藤原香子
+不过非常感谢。[r]能得到大米还是很高兴的，这是我的真心话，
+[k]
+
+＠藤原香子
+那我就却之不恭啦。[r]还请您替我向赖光大人致意。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠坂田金时
+噢！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠藤原香子
+另外，还请各位好生歇息。[r]想必各位也很疲惫了[line 3]
+[k]
+
+[charaFace C 0]
+
+＠藤原香子
+最重要的是，[r]我曾听巴贝奇大人说过。
+[k]
+
+＠藤原香子
+说自异境异界造访之人终将离开京城。[r][%1]大人。
+[k]
+
+[charaFace C 4]
+
+＠藤原香子
+您也将踏上旅途吧。
+[k]
+
+？1：咦？
+
+？！
+
+[messageOff]
+[wt 0.5]
+
+？1：我有对香子小姐提过……
+？2：我不是这个时代的人吗？
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠段藏
+没……没有。根据我的记录，[r]我们从未向香子阁下说过这个情报！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠藤原香子
+哎嘿。对不起。
+[k]
+
+＠藤原香子
+虽说事到如今才说这个未免有些奇怪……[r]但其实，
+[k]
+
+＠藤原香子
+我在第一天晚上就偷听了各位的谈话！[r]然后将一切都转告巴贝奇大人了。
+[k]
+
+[messageOff]
+[fadeout white 1.0]
+[bgm BGM_EVENT_66 1.0 0.4]
+[wait fade]
+
+[charaPut N 0,15]
+[charaEffect N bit_sepia01]
+
+[charaFadeout C 0.1]
+[wt 1.0]
+[charaDepth C 10]
+[scene 102501]
+
+[fadein white 1.0]
+[wait fade]
+
+[charaFace C 0]
+[charaFadeinFSR C 0.2 500,0]
+[charaMoveFSR C 450,0 0.4]
+[wt 1.5]
+
+[charaPut L -200,0]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 -200,0]
+[wt 1.0]
+[charaFace I 6]
+
+[wt 0.5]
+[charaFace I 5]
+[wt 1.0]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut L 1200,1200]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 -200,0]
+[wt 1.5]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 -200,0]
+[wt 1.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut L -200,0]
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 -200,0]
+[wt 0.6]
+[charaMoveReturn G -200,-5 0.4]
+[wt 1.0]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut L 1200,1200]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 -200,0]
+[wt 1.5]
+
+
+
+[fadeout white 1.0]
+[wait fade]
+
+[charaPut N 2000,2000]
+[charaEffectStop N bit_sepia01]
+
+[scene 102600]
+[charaFadeout C 0.1]
+[charaFadeout M 0.1]
+[wt 1.0]
+
+[fadein white 1.0]
+[bgm BGM_EVENT_66 1.0 1.0]
+[wait fade]
+
+？1：完全没发现！
+？2：香子小姐真像个间谍……！
+
+？！
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠坂田金时
+这倒真是吓我一跳！[r]也就是说一个不好……
+[k]
+
+＠坂田金时
+你与巴贝奇有那方面想法的话，[r]我们就会在熟睡时遭偷袭全都完蛋！
+[k]
+
+[charaFace B 0]
+
+＠坂田金时
+但你们却没那么做。
+[k]
+
+[charaFace B 6]
+
+＠坂田金时
+虽说你本就对天览圣杯战争不大积极，[r]但还是令人折服！
+[k]
+
+[charaFace B 1]
+
+＠坂田金时
+香子小姐，你的确是个出色的[#天览武者:御主]啊！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠段藏
+是的。段藏也没感知到气息！[r]难道是某种与阴阳道之术有关的隐形……？
+[k]
+
+[charaFace A 1]
+
+＠段藏
+真厉害啊，香子阁下。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[wt 1.0]
+
+＠藤原香子
+呵呵呵。
+[k]
+
+＠藤原香子
+能获得各位这般称赞，[r]巴贝奇大人应该也会非常高兴吧。
+[k]
+
+[charaFace C 0]
+
+＠藤原香子
+那就这样吧。[r]我得继续执笔写作才行，恕我先失陪了。
+[k]
+
+＠藤原香子
+房间已空出来供各位使用，[r]各位还请随意[line 3]
+[k]
+
+[messageOff]
+[se ad999]
+[bgmStop BGM_EVENT_66 1.5]
+[charaMove C -50,0 0.4]
+[charaFadeout C 0.4]
+[wt 1.0]
+[seStop ad999 1.0]
+[wt 2.0]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠坂田金时
+哎呀呀。[r]真是捏了把冷汗。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠段藏
+正可谓人不可貌相。[r]段藏在此发誓今后必要小心注意。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠坂田金时
+我也是。[r]哎呀呀，真没想到……
+[k]
+
+[charaFace B 4]
+
+＠坂田金时
+……[r]……
+[k]
+
+[charaFace B 0]
+
+＠坂田金时
+话说回来，[r]我还是想问一句。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠段藏
+金时阁下？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[wt 1.0]
+[charaFace B 5]
+
+＠坂田金时
+天览圣杯战争中，我的[#术者:Caster]究竟是谁啊！
+[k]
+
+[charaFace B 4]
+＠坂田金时
+虽说事到如今也没有什么天览或愿望了，[r]但我总是憋得慌！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠段藏
+这[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠坂田金时
+所以我一直在思考。[r]其实在将亚种空想树一刀两断的过程中，
+[k]
+
+[charaFace B 11]
+＠坂田金时
+我脑海中的某个角落还在想，
+[k]
+
+[charaFace B 6]
+＠坂田金时
+话说我的[#术者:Caster]究竟是谁？[r]如果当时能向混账Limbo打听清楚就好了。
+[k]
+
+[charaFace B 4]
+
+＠坂田金时
+毕竟连那位晴明阁下也含糊其辞。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠段藏
+确实。[r]正如金时阁下所言，这依然是个谜。
+[k]
+
+＠段藏
+虽然前不久安倍晴明阁下[r]提起了第七骑Caster真面目的事……
+[k]
+
+[messageOff]
+[fadeout white 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[charaPut N 0,15]
+[charaEffect N bit_sepia01]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+[scene 102700]
+
+[fadein white 1.0]
+[wait fade]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[bgm BGM_EVENT_70 0.1]
+
+＠[93CA76]空中的文字[-]
+[93CA76]啊，对了。还是由我来告诉你们吧。[-][r][93CA76]毕竟那个大笨蛋什么都没说就烟消云散了。[-]
+[k]
+
+＠[93CA76]空中的文字[-]
+[93CA76]天览圣杯战争，[-][r][93CA76]最后也是第七位[#术者:Caster]的人物[line 3][-]
+[k]
+
+＠[93CA76]空中的文字[-]
+[93CA76]就是Alterego Limbo本人。[-]
+[k]
+
+＠[93CA76]空中的文字[-]
+[93CA76]什么，你说他不是Caster？[-][r][93CA76]所谓的额外职阶就是这么回事吧。[-]
+[k]
+
+＠[93CA76]空中的文字[-]
+[93CA76]顺带一提，御主则是……[-]
+[k]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠坂田金时
+……[r]……
+[k]
+
+＠坂田金时
+嗯。[r]我明白。
+[k]
+
+[charaFace B 9]
+
+＠坂田金时
+…………就是我吧。
+[k]
+
+[charaFace B 7]
+
+＠坂田金时
+这玩笑真恶劣。[r]和我搭档的[#术者:Caster]竟然是那家伙啊。
+[k]
+
+[charaFace B 4]
+
+＠坂田金时
+总觉得怪恶心的。
+[k]
+
+[bgmStop BGM_EVENT_70 0.6]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠[93CA76]空中的文字[-]
+[93CA76]不对。[-]
+[k]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠坂田金时
+哎？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠[93CA76]空中的文字[-]
+[93CA76]Alterego Limbo的御主不是别人，[-][r][93CA76]而是活在这时代的人类·芦屋道满。[-]
+[k]
+
+＠[93CA76]空中的文字[-]
+[93CA76]所以与金时你毫无关系。[-]
+[k]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+＠坂田金时
+哈？
+[k]
+
+＠坂田金时
+喂喂晴明老爷，[r]这实在……是个令人难以置信的玩笑啊！
+[k]
+
+[charaFace B 4]
+
+＠坂田金时
+毕竟，照你这么说，[r]不就代表了和我搭档的[#术者:Caster]……
+[k]
+
+[charaFace B 5]
+
+＠坂田金时
+…………并没有被召唤出来吗。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠[93CA76]空中的文字[-]
+[93CA76]这个嘛。[-]
+[k]
+
+＠[93CA76]空中的文字[-]
+[93CA76]金时手上浮现出令咒是毋庸置疑的事实。[-][r][93CA76]所以金时被选作天览圣杯战争的参加者也是事实。[-]
+[k]
+
+＠[93CA76]空中的文字[-]
+[93CA76]金时是第八位御主。[-]
+[k]
+
+＠[93CA76]空中的文字[-]
+[93CA76]不知是Limbo为更好享受圣杯战争[-][r][93CA76]而做出的设计……[-]
+[k]
+
+＠[93CA76]空中的文字[-]
+[93CA76]或是恰恰相反，这是为对抗Limbo的阴谋而产生的[line 3][-]
+[k]
+
+＠[93CA76]空中的文字[-]
+[93CA76][#近乎奇迹]呢。[-]
+[k]
+
+＠[93CA76]空中的文字[-]
+[93CA76]我个人比较推荐后者的解释，[-][r][93CA76]不知各位有何看法。[-]
+[k]
+
+[messageOff]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+＠坂田金时
+……[r]……
+[k]
+
+[charaFace B 7]
+＠坂田金时
+……好像懂了，又好像没懂……
+[k]
+
+[charaFace B 0]
+＠坂田金时
+不过嘛，总比对我说[r]Limbo是我搭档要好上好几倍啦。
+[k]
+
+[charaFace B 7]
+
+＠坂田金时
+晴明老爷也是老糊涂啦，[r]既然要解释，就说得明确点啦，真是的！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠源赖光
+哎呀金时，你对晴明大人太失礼了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠坂田金时
+知道啦～。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠童谣
+呵呵。撇着头闹别扭，真像个小孩子！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+
+
+
+
+
+
+＠坂田金时
+因……因为你看啊！[r]我左手都浮现出证明的纹样了吧！？
+[k]
+
+[charaFace B 2]
+
+＠坂田金时
+那当然该有对应的[#术者:Caster]被召唤出来吧！
+[k]
+
+＠坂田金时
+我在意得要命！[r]我才不管是Limbo干的好事还是奇迹！
+[k]
+
+＠坂田金时
+我的搭档究竟上哪儿去了啦！
+[k]
+
+？1：好啦好啦。
+
+[charaFace B 8]
+
+＠坂田金时
+咕唔唔唔唔唔！
+[k]
+
+？2：反正天览圣杯战争结束了。
+
+[charaFace B 7]
+
+＠坂田金时
+话是这样说没错啦！
+[k]
+
+？！
+
+[messageOff]
+[fadeout white 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[charaPut N 2000,2000]
+[charaEffectStop N bit_sepia01]
+
+[wt 1.0]
+[charaFace B 6]
+
+[scene 102600]
+
+[fadein white 1.0]
+
+[wait fade]
+
+
+
+＠坂田金时
+虽然晴明老爷含糊其辞，[r]不过我自个儿也思考过了。
+[k]
+
+[messageOff]
+[charaFace B 7]
+[wt 1.0]
+[charaFace B 0]
+[bgm BGM_EVENT_78 0.1]
+
+＠坂田金时
+你就是我的[#术者:Caster]……[r]对吧？
+[k]
+
+＠坂田金时
+应该不存在其他可能性了。[r]自异境异界而来，与我一同战斗的术者。
+[k]
+
+＠坂田金时
+不是别人，就是你啊。[r]至于段藏小姐，是所谓的Assassin吧？
+[k]
+
+[charaFace B 1]
+
+＠坂田金时
+所以就是你啦，[%1]。
+[k]
+
+
+
+
+＠坂田金时
+你就是我的老大，是从者。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠段藏
+很遗憾，金时阁下，[r]御主是如假包换的人类……
+[k]
+
+＠段藏
+我认为御主是不可能[r]作为从者被召唤出来的。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠坂田金时
+唔。
+[k]
+
+[charaFace B 11]
+
+＠坂田金时
+是这样吗？
+[k]
+
+[messageOff]
+[charaFace B 4]
+[wt 1.0]
+
+[charaFace B 0]
+
+＠坂田金时
+好，我明白了。[r]不过即便是这样也没关系啦！
+[k]
+
+[charaFace B 6]
+
+＠坂田金时
+我与[%1]……
+[k]
+
+＠坂田金时
+说不定并非[#天览武者:御主]与从者。[r]即便如此！
+[k]
+
+[charaFace B 0]
+
+＠坂田金时
+咱们依然是对相当Golden的搭档！[r]唯独这点绝对没错！
+[k]
+
+＠坂田金时
+嗯，我觉得这样就行了！　就这么定了！
+[k]
+
+[messageOff]
+[charaFace B 6]
+[wt 1.0]
+[charaFace B 0]
+＠坂田金时
+[line 6]怎么样，老大。
+[k]
+
+
+
+？1：（看着金时的眼睛。）
+
+？！
+
+[messageOff]
+[wt 0.2]
+
+？1：（点头。）
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_78 1.5]
+[charaFace B 1]
+[wt 2.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad13]
+[wt 1.0]
+[bgm BGM_EVENT_77 0.1]
+[charaPut L 1]
+＠[51d4ff]达·芬奇[-]
+[51d4ff]啊，连上了！[-]
+[k]
+
+＠[51d4ff]达·芬奇[-]
+[51d4ff]虽说影像情报无法接通……[-][r][51d4ff]但声音能传过去。这里是迦勒底，听得到吗？[-]
+[k]
+
+？1：达·芬奇亲！
+？2：能听到，没问题。
+
+？！
+
+[charaPut L 1200,1200]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠段藏
+向[#新:Novum]·迦勒底管制室报告！[r]御主平安无事，然后[line 3]
+[k]
+
+＠段藏
+已成功砍伐出现在朱雀门的亚种空想树，[r]而黑幕Alterego Limbo，则成功击破！
+[k]
+
+[charaFace A 1]
+
+＠段藏
+作为特异点发生源的圣杯也已回收完毕。[r]任务完成！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut L 1]
+＠[51d4ff]达·芬奇[-]
+[51d4ff]管制室这边能掌握你们那边的状况哦。[-][r][51d4ff]任务完成，辛苦了！[-]
+[k]
+
+＠[51d4ff]达·芬奇[-]
+[51d4ff]如果能想办法处理一下平安京全境的结界，[-][r][51d4ff]通讯的连接状况应该能更为顺畅，[-]
+[k]
+
+＠[51d4ff]达·芬奇[-]
+[51d4ff]不过结界多半是守护都城的关键，[-][r][51d4ff]因此不能这么做吧。[-]
+[k]
+
+＠[51d4ff]达·芬奇[-]
+[51d4ff]所以趁现在通讯还连得上，[-][r][51d4ff]执行紧急返回处理。没问题吧！[-]
+[k]
+
+[charaPut L 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠段藏
+这[line 3]
+[k]
+
+？1：明白了。
+？2：麻烦执行返回处理吧，达·芬奇亲。
+
+？！
+
+[bgmStop BGM_EVENT_77 2.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠坂田金时
+……返回就意味着。
+[k]
+
+＠坂田金时
+你们要走了吗？
+[k]
+
+＠坂田金时
+是那个吧？　只要回到你的时代，[r]世界就会是一片纯白吧？
+[k]
+
+＠坂田金时
+我还没带你们去集市逛呢，[r]而且今晚本打算举办一场盛大的宴会，
+[k]
+
+[charaFace B 7]
+
+＠坂田金时
+我们安排了各种计划呀……
+[k]
+
+
+＠坂田金时
+这样啊。要走了啊。
+[k]
+
+？1：感谢你的鼎力相助。
+
+[charaFace B 0]
+
+＠坂田金时
+这话应该由我来说哦，老大！
+[k]
+
+＠坂田金时
+正因为有你们在，我们才能获胜。[r]光靠我一个人的话，连纲哥都赢不了！
+[k]
+
+＠坂田金时
+所以让我说吧！　老大
+[k]
+
+[messageOff]
+
+[charaFace B 6]
+[wt 1.0]
+[bgm BGM_EVENT_110 0.1]
+[charaFace B 1]
+
+＠坂田金时
+[line 3]感谢你的鼎力相助！
+[k]
+
+？2：让我们有缘在别处重逢吧。
+
+[charaFace B 4]
+
+＠坂田金时
+……这可不好说吧。
+[k]
+
+＠坂田金时
+我肯定成不了足以被称作英雄或英杰的大人物。[r]而且我也没打算成为那种人。
+[k]
+
+[charaFace B 0]
+[bgm BGM_EVENT_110 0.1]
+
+＠坂田金时
+顶多只是心怀[#众生:大家]，[r]咬紧牙关坚持到底而已！
+[k]
+
+＠坂田金时
+我只会贯彻这种事而已。[r]不过，也是，如果顺着这条道路前进……
+[k]
+
+[charaFace B 6]
+
+＠坂田金时
+[#将会变成那种存在]的话，[r]到时候，嗯，没错。
+[k]
+
+[charaFace B 1]
+
+＠坂田金时
+[line 3]让我们有缘在别处重逢吧。老大！
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[se ad15]
+[wt 0.4]
+[se ad15]
+[wt 0.6]
+＠段藏
+坐标情报，修正误差。[r]与[#新:Novum]·迦勒底管制室的调整完毕。
+[k]
+
+＠段藏
+御主，[r]时间到了。
+[k]
+
+[messageOff]
+[charaFace A 4]
+[wt 1.0]
+
+＠段藏
+还有金时阁下，其实……[r]时间不足以向您说明详细的构造， 
+[k]
+
+＠段藏
+但我们像这样子相逢、并肩战斗，[r]在平安京成就某事的这一连串记忆[line 3]
+[k]
+
+＠段藏
+[#活在泛人类史的金时阁下你们诸位都不会记得]。[r]这就是灵子转移的常情。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+[wt 0.9]
+
+？1：…………
+？2：抱歉，金时。
+
+？！
+
+[charaFace B 4]
+
+＠坂田金时
+这还真是[line 3]
+[k]
+
+[charaFace B 0]
+
+＠坂田金时
+不，没事，我不会责备啦！[r]看你这表情就懂啦，这是莫可奈何的事吧。
+[k]
+
+＠坂田金时
+所以不必放在心上。无论如何，我们都一同[r]守护了京城，不，是守护了日本、大陆，乃至现世！
+[k]
+
+[charaFace B 1]
+
+＠坂田金时
+这已经相当Golden了。[r]光凭这点，就非常足够啦。
+[k]
+
+？1：Golden[line 3]
+
+？！
+
+[messageOff]
+[wt 0.5]
+？1：就连这句话，也不会留存于金时的记忆中。
+？！
+
+[wt 0.2]
+
+？1：抱歉。
+
+？！
+
+[charaFace B 0]
+
+＠坂田金时
+那又如何。
+[k]
+
+＠坂田金时
+抬起头来，别露出这种阴沉的表情啦。
+[k]
+
+[charaFace B 6]
+
+＠坂田金时
+我说啊，老大！[r]离别之际不是也该Golden地上路吗！
+[k]
+
+＠坂田金时
+我很中意这个发音。[r]日后再次听到时，肯定会再次喜欢上它。
+[k]
+
+[charaFace B 4]
+＠坂田金时
+不过说得也是。[r]既然无论如何都会忘掉所有一切[line 3]
+[k]
+
+[charaFace B 0]
+
+＠坂田金时
+至少现在，[#由你帮我记住吧]！
+[k]
+
+？1：……我知道了！
+
+[charaFace B 1]
+
+＠坂田金时
+拜托啦！
+[k]
+
+？2：……Golden！
+
+[charaFace B 1]
+
+＠坂田金时
+没错！
+[k]
+
+？！
+
+[charaFace B 4]
+
+＠坂田金时
+……回去之后你们还会继续战斗吧？[r]这点你不说我也明白。
+[k]
+
+[charaFace B 0]
+
+＠坂田金时
+我不会让你们努力。[r]因为我已亲眼目睹了你们的努力。
+[k]
+
+＠坂田金时
+所以说[line 3]
+[k]
+
+[messageOff]
+[charaFace B 6]
+[wt 1.0]
+[charaFace B 0]
+＠坂田金时
+你就去守护你的世界吧！[r]我则会为我的[#世界:大家]！
+[k]
+
+[charaFace B 1]
+
+＠坂田金时
+而战斗！
+[k]
+
+[messageOff]
+[wt 2.0]
+[fadeout black 3.0]
+[bgmStop BGM_EVENT_110 3.0]
+[wait fade]
+
+[scene 10000]
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_07_02_fs]
+[se ad12]
+[wt 4.0]
+[fadeout white 1.0]
+[wait fade]
+
+[pictureFrame cut063_cinema]
+[wt 2.0]
+
+[scene 101900]
+
+[fadein white 2.0]
+[wait fade]
+
+[wt 1.5]
+＠
+与此同时[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgm BGM_EVENT_95 0.1]
+＠
+有个人影自岚山上俯瞰平安京。
+[k]
+
+＠
+面对恢复了往昔繁华的都城，[r]想到此处差点失去了一切，
+[k]
+
+＠
+回想起自己行径的愚蠢与可怕，[r]以及罪孽之深重，男人浑身颤抖，潸然泪下。
+[k]
+
+[messageOff]
+[wt 1.0]
+＠
+男人的名字是芦屋道满。
+[k]
+
+＠
+并非Alterego Limbo的法师阴阳师。
+[k]
+
+＠
+当名为地狱界曼荼罗的亚种空想树被一刀两断，[r]此人从消逝于光芒，粉碎四散的Limbo灵基灵核中，
+[k]
+
+＠
+奇迹般的得以生还。
+[k]
+
+＠
+当回过神来时，[r]他已站在此处，蓦然落泪。
+[k]
+
+[messageOff]
+[wt 1.0]
+＠
+擦拭了一下眼角，[r]道满有气无力地呢喃[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠芦屋道满
+……贫僧。
+[k]
+
+＠芦屋道满
+贫僧十分害怕。[r]明明已获得了解放，却仍能感受到诅咒。
+[k]
+
+＠芦屋道满
+终有一日，我将会沦落成那样的恶鬼吗？
+[k]
+
+＠芦屋道满
+竟然只能从众生的苦痛中觅得无上的喜悦……
+[k]
+
+＠芦屋道满
+竟然会抵达邪魔外道之究极吗。[r]既然如此，既然如此。
+[k]
+
+
+＠芦屋道满
+我根本不需要什么明日的将来。
+[k]
+
+＠芦屋道满
+我就该在此时此刻，斩断自己的罪孽[line 3]
+[k]
+
+[messageOff]
+[se ad527]
+[seVolume ad527 0 0.2]
+[wt 0.2]
+[seStop ad527 0.1]
+[wt 0.4]
+
+[se ad527]
+[seVolume ad527 0 0.5]
+[wt 0.2]
+[seStop ad527 0.1]
+[wt 0.4]
+
+[se ad527]
+[seVolume ad527 0 0.8]
+[wt 0.2]
+[seStop ad527 0.1]
+[wt 0.6]
+
+＠A：声音
+要自尽吗。[r]凭一度修得道人奥义之身的你，是做不到的。
+[k]
+
+＠A：声音
+停止这种毫无意义的行为吧。[r]芦屋道满。
+[k]
+
+[messageOff]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.4 0,-50]
+[wt 0.4]
+
+＠芦屋道满
+！
+[k]
+
+＠芦屋道满
+晴明阁下……[r]没想到您已经返回京城了。
+[k]
+
+＠芦屋道满
+还是说隐去行踪一事本就是谎言。[r]打从一开始您就预料到了整件事吗？
+[k]
+[messageOff]
+
+[charaFaceFade E 11 0.3]
+[wt 1.0]
+
+[charaFaceFade E 6 0.3]
+
+＠芦屋道满
+既然如此，既然如此，[r]您为何不阻止贫僧这次犯下的一切过错呢……
+[k]
+
+＠A：安倍晴明
+哪有什么为什么。
+[k]
+
+＠A：安倍晴明
+就连安倍晴明也未曾料想到那位芦屋道满[r]竟会输给区区[#自身影子的碎片]啊。你这笨蛋。
+[k]
+
+＠A：安倍晴明
+如果要进一步说明的话，
+[k]
+
+＠A：安倍晴明
+恐怕过度执着于个人就是你的缺点啊，道满。
+[k]
+
+[messageOff]
+[charaTalk E]
+[charaFaceFade E 5 0.3]
+[wt 1.0]
+
+＠芦屋道满
+晴明阁下[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 3.0]
+[bgmStop BGM_EVENT_95 3.0]
+[wait fade]
+
+[scene 10000]
+[charaFadeout E 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_EVENT_11 0.1]
+＠
+[line 6]泛人类史传说有云。
+[k]
+
+[messageOff]
+[wt 1.0]
+＠
+某年某月……
+[k]
+
+＠
+进入京都的大江鬼众不再满足于[r]掠夺财物、掳走妇孺[line 3]
+[k]
+
+＠
+还开始袭击、杀害、吞食人类。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+＠
+鬼活性化了。
+[k]
+
+＠
+据说大江山的鬼宫殿还挖了个[r]用来丢弃无数妇孺尸骨的大洞。
+[k]
+[messageOff]
+[wt 1.0]
+＠
+感到担忧的安倍晴明向天皇奏请『征讨大江之鬼』。[r]源氏的栋梁·源赖光被选作征讨大将。
+[k]
+
+＠
+最终导致那个大江山讨鬼传说的[r]平安武者与鬼的最终大决战便于此拉开了帷幕。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+在山中蒙获八幡、熊野、住吉三神[r]所赐加护的赖光四天王攻上大江山，
+[k]
+
+＠
+酒吞童子、茨木童子、[r]金熊童子、熊童子、虎熊童子、星熊童子，
+[k]
+
+＠
+相传所有强大的鬼皆遭到讨伐……[r]酒吞童子如露珠般殒命于源赖光的太刀之下。
+[k]
+
+[messageOff]
+[wt 1.0]
+＠
+于鬼以有毒之酒[line 3]
+[k]
+
+＠
+凝集了三神加护的神便鬼毒酒。[r]受伪装成山伏的赖光他们用此酒相款待的酒吞童子，
+[k]
+
+＠
+因毒酒的威力导致力量衰退，[r]她的狂暴虽然让赖光他们吃尽了苦头，
+[k]
+
+＠
+但最后还是被砍下了脑袋。
+[k]
+
+＠
+通晓所有酒精的酒吞童子为何会饮下毒酒呢？
+[k]
+
+＠
+是因为有三神的加护而不得不喝吗？[r]还是说……
+[k]
+
+＠
+她是故意一饮而尽的呢。
+[k]
+
+＠
+没有人知道真相。
+[k]
+
+[messageOff]
+[wt 1.0]
+＠
+然后，[r]根据不为众人所知的异说所述……[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+＠
+大江的鬼众活性化不久以后，[r]源赖光便化作了变本加厉的冷血杀戮装置。
+[k]
+
+＠
+不知是因为义愤于鬼众的外道行径，[r]还是因为得知了视若己出的金时[line 3]
+[k]
+
+＠
+在年幼时就遇见过酒吞童子，[r]自此便将所有鬼都称作“虫子”。
+[k]
+
+[messageOff]
+[wt 1.0]
+＠
+该异说中同样记述了这件事。
+[k]
+
+＠
+在征讨大江山的最后关头，[r]以大具足打倒化身巨如高山之大怪异的酒吞，
+[k]
+
+＠
+并砍下恢复原样，陷入浅眠的酒吞脑袋的人，[r]并非源赖光，
+[k]
+
+＠
+而是主马佑坂田金时[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+＠
+更提到讨伐茨木的……
+[k]
+
+＠
+……乃是内舍人渡边纲……
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+…………不知因何缘由，唯有茨木保住了一命。
+[k]
+
+＠
+罗城门遗迹、[r]一条归桥。
+[k]
+
+＠
+相传茨木曾两度袭击渡边纲[line 3]
+[k]
+
+＠
+据说其中一次手臂被砍下，[r]却还是夺了回来，并消失无踪了。
+[k]
+
+
+[messageOff]
+[wt 2.0]
+[fadeout black 1.0]
+[wait fade]
+
+[pictureFrame]
+[scene 101901]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+＠
+然后，相传一段时间后。
+[k]
+
+[messageOff]
+[wt 1.0]
+＠
+那位法师阴阳师道满法师，也就是芦屋道满，[r]与死后化作怨灵、恶灵左府的藤原显光联手，
+[k]
+
+＠
+妄图行使用来颠覆日本的大咒术，[r]却被安倍晴明阻止……
+[k]
+
+＠
+最终以逆贼的身份被逐出京城。
+[k]
+
+＠
+也有说法称道满法师屡次与安倍晴明较量法术，[r]却屡战屡败，最后身受诅咒反噬而亡。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+如是种种，皆非应在此处讲述的故事。
+[k]
+
+[messageOff]
+[wt 1.0]
+＠
+这是在宏大泛人类史中[r]微不足道的刹那一幕[line 3]
+[k]
+[messageOff]
+[wt 1.0]
+
+[fadeout black 3.0]
+[bgmStop BGM_EVENT_11 3.0]
+[wait fade]
+
+[scene 10000]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[messageOff]
+[effect bit_talk_07_02_fs]
+[se ad12]
+[wt 4.0]
+[fadeout white 1.0]
+[wait fade]
+[wt 2.0]
+
+[scene 104100]
+
+
+[charaSet I 9005001 1 福尔摩斯]
+[charaSet G 98001000 1 玛修]
+
+[fadein white 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠玛修
+前辈！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠风魔小太郎
+主公！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠玛修
+欢迎回来！
+[k]
+
+＠玛修
+真是辛苦您了[wt 1.0][charaFace G 12][r]……不好意思，麻烦您先保持不动。
+[k]
+
+[messageOff]
+[se ade357]
+[wt 0.8]
+[seStop ade357]
+[charaFace G 0]
+＠玛修
+简易医学检查完毕。[r]生命体征等没有问题。
+[k]
+
+[charaFace G 13]
+
+＠玛修
+太好了……
+[k]
+
+？1：我回来了，玛修。
+
+[charaFace G 1]
+
+＠玛修
+嗯。再来一遍，欢迎回来，前辈。
+[k]
+
+？2：我没什么不舒服，放心吧。
+
+[charaFace G 3]
+
+＠玛修
+嗯，好的。
+[k]
+
+[charaFace G 7]
+
+＠玛修
+但毕竟不能排除有什么情况，[r]刚才那个是简易医学检查。
+[k]
+
+
+？！
+
+[charaFace G 0]
+
+＠玛修
+只是暂时性检查，[r]稍后必须让尼莫护士诊断一下。
+[k]
+
+＠玛修
+诊室已经帮您空出来了，[r]还请立刻过去。
+[k]
+
+[charaFace G 12]
+
+＠玛修
+另外……[r]那个……
+[k]
+
+[messageOff]
+[charaFace G 8]
+[wt 1.0]
+[charaFace G 12]
+
+＠玛修
+这次没能帮上前辈的忙，[r]实在是非常抱歉……
+[k]
+
+＠玛修
+我竟然会灵子转移失败[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠风魔小太郎
+不，玛修阁下。[r]该道歉的人是我。
+[k]
+
+＠风魔小太郎
+本该由我全力应对灵子转移妨碍的可能性才对。
+[k]
+
+＠风魔小太郎
+这可是与Limbo结下匪浅因缘的[r]这个灵基大显身手的机会……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠段藏
+两位不必在意。[r]你们看。
+[k]
+
+[charaFace A 1]
+
+＠段藏
+正如两位所见，御主身体健康、平安无事！[r]不仅如此……
+[k]
+
+＠段藏
+切除空想树、回收特异点的圣杯，[r]一次作战便成功完成了全部任务。
+[k]
+
+[charaFace A 4]
+
+＠段藏
+该责怪的应该是Limbo。[r]不过两位的遗憾我能感同身受。
+[k]
+
+[charaFace A 2]
+
+＠段藏
+……请务必在今后的作战中弥补这份遗憾！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace G 6]
+[charaFace H 2]
+[charaFadeinFSR G 0.1 2]
+[charaFadeinFSL H 0.1 0]
+[wt 1.5]
+[charaTalk on]
+[charaFace G 1]
+＠玛修
+是！
+[k]
+
+[charaFace H 1]
+
+＠风魔小太郎
+明白了！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 1.0]
+[se ad95]
+[seVolume ad95 0 0.4]
+[wt 1.0]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.4 1]
+[wt 0.4]
+[seStop ad95]
+
+＠达·芬奇
+哟，两位，欢迎回来。[r]看来简易医学检查已经结束了吧？
+[k]
+
+[charaFace J 1]
+
+＠达·芬奇
+先说一句辛苦了！[r]还要恭喜你们作战成功，以及表示感谢。
+[k]
+
+[charaFace J 25]
+
+＠达·芬奇
+特异点已经开始修复了，[r]亚种空想树的痕迹也确认完全消失。
+[k]
+
+＠达·芬奇
+虽说泛人类史依旧处于白纸状态，[r]但至少阻止了新[#异闻带:Lostbelt]的产生，
+[k]
+
+[charaFace J 24]
+
+＠达·芬奇
+也成功预防了夺回人理之后，[r]泛人类史却以平安时代为基点遭到破坏的事态。
+[k]
+
+[charaFace J 10]
+
+＠达·芬奇
+任务成果可谓是一百分满分。
+[k]
+
+？1：谢谢你，达·芬奇亲。
+
+[charaFace J 11]
+
+＠达·芬奇
+有平时的两倍那么了不起，[r]我来摸摸你的头吧。
+[k]
+
+＠达·芬奇
+了不起！
+[k]
+
+？2：任务完成了吧。
+
+[messageOff]
+
+[charaFace J 11]
+[wt 1.5]
+
+？！
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 1]
+
+＠福尔摩斯
+而且还击败了Alterego Limbo，[r]着实可喜可贺。
+[k]
+
+[charaFace I 0]
+
+＠福尔摩斯
+虽说他看起来并非在[r]统一的意志下行动，可即便如此，
+[k]
+
+＠福尔摩斯
+Limbo终归是『异星之神』手下三骑Alterego之一。
+[k]
+
+[charaFace I 8]
+
+＠福尔摩斯
+就算不多，也算是削减了对方的战力吧。[r]戈尔德鲁夫新所长也非常高兴哦。
+[k]
+
+[charaFace I 0]
+＠福尔摩斯
+虽然他嘴上说由于通讯中断状态持续了很久，[r]所以灵子转移返回后最多在两小时以内……
+[k]
+
+＠福尔摩斯
+就该递交报告书。[wt 1.0][charaFace I 7][r]但身体却很诚实地正在替你们准备饭菜呢。
+[k]
+
+？1：稍后我就去向他打个招呼。
+
+＠福尔摩斯
+稍后去就行了。[r]你应该先休息。
+[k]
+
+？2：等他看完报告书之后又该火冒三丈了吧……
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠段藏
+请不必担心。[r]Limbo所说的『异星之神』的秘密云云，
+[k]
+
+＠段藏
+没有任何意义。[r]那不过是Limbo的谎言罢了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠福尔摩斯
+既然是Alterego Limbo所说的话，[r]可信度确实不高[line 3]
+[k]
+
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 17]
+[charaFadein J 0.1 1]
+
+＠达·芬奇
+好啦好啦到此为止，先去做医学检查！[r]然后休养身体。明白了吗。
+[k]
+
+[charaFace J 0]
+
+＠达·芬奇
+玛修，可以麻烦你帮忙送[%1]过去吗？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠玛修
+啊，好。当然可以！
+[k]
+
+[messageOff]
+[se ad95]
+[wt 0.2]
+[se ade74]
+[wipeout leftToRight 1.0 1]
+[bgm BGM_EVENT_77 1.0 0.5]
+[wait wipe]
+
+[charaSet B 7006001 1 坂田金时]
+[charaFadeout G 0.1]
+[scene 104200]
+[wt 1.0]
+
+[seStop ad95 0.5]
+[seStop ade74 0.5]
+[bgm BGM_EVENT_77 1.0 1.0]
+[wipein rightToLeft 1.0 1]
+[wait wipe]
+
+[cueSe Battle bac469]
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.4 0,-100]
+[charaMove K 0,0 0.4]
+[wt 0.4]
+
+＠芙芙
+芙，芙呜！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 14]
+[charaFadein G 0.1 1]
+
+＠玛修
+啊，芙芙。[r]不可以哦，前辈很累了[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+＠芙芙
+芙？
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠玛修
+是的，不可以哦。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+＠坂田金时
+哎哟。[r]那看来我不能聊很久吧。
+[k]
+
+[messageOff]
+[se ad95]
+[wt 2.0]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+[seStop ad95]
+
+＠坂田金时
+哟，老大！
+[k]
+
+＠坂田金时
+先让我问你一句吧。[r]那边的我们怎么样？
+[k]
+
+？1：那当然是……
+
+？！
+
+[messageOff]
+[wt 0.5]
+
+？1：非常地！　Golden哦！
+
+？！
+
+[messageOff]
+[charaFace B 1]
+[wt 1.5]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+[wt 1.0]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se adm21]
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+[charaMoveReturn K 0,40 0.4]
+
+＠芙芙
+Fo[line 3]lden！
+[k]
+
+
+
+
+
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 3.0]
+[bgmStop BGM_EVENT_77 3.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

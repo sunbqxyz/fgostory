@@ -1,0 +1,422 @@
+
+＄03-00-10-07-2-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098231510 1 マシュ]
+[charaSet B 1098158310 1 ネモ]
+[charaSet C 1098182210 1 ネモ・エンジン]
+[charaSet D 1098215110 1 パーシヴァル]
+[charaSet E 3048001 1 妖精騎士ランスロット]
+[charaSet F 1098124510 1 通信用]
+
+[charaSet G 1098215110 1 シルエットランスロット]
+[charaFilter G silhouette FFFFFF80]
+
+[imageSet S back10000 1]
+[charaScale S 1.01]
+[imageSet T back10000 1]
+[charaScale T 1.01]
+
+
+[charaPut F 1200,1200]
+[charaEffect F bit_talk_10_LowLevel]
+
+[scene 122600]
+
+[cueSe SE_21 21_ad1097]
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.8]
+
+[se ad671]
+[seVolume ad671 0 0.5]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.2 -150,0]
+[charaMove A -50,0 0.3]
+[wt 0.3]
+[charaMove A 0,0 0.3]
+[wt 0.6]
+[charaFace A 2]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠マシュ
+敵竜型生物、甲板から離脱します！[r]倒しきれていません……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ネモ
+ダメだ、逃がしてはいけない……！[r]ここで離脱されたら二度目はないんだ！
+[k]
+
+＠ネモ
+なんとしてもトドメを刺さないと……！[r]エンジン、速度をあげて！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ネモ・エンジン
+そりゃいいがボーダーが持たねーぞ！[r]さっきの右舷の露出箇所からねじれていくかんな！
+[k]
+
+＠ネモ・エンジン
+[#艦:ふね]の[#竜骨:せぼね]まで曲がったらもうアウトだぞ、[r]キャプテン野郎！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ネモ
+くそ、なんてこった！[r]離される[line 3]こんな、僕がふがいないばかりに……！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.6 1]
+[wait wipe]
+[wt 0.4]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+
+[charaTalk depthOff]
+[charaDepth F 8]
+[charaDepth S 7]
+[charaDepth T 6]
+[charaDepth G 5]
+[charaDepth D 4]
+
+[charaFadein S 0.1 0,725]
+[charaFadein T 0.1 0,-725]
+
+
+[wt 0.4]
+[wipein rectangleStripLeftToRight 0.6 1]
+[wait wipe]
+
+[bgmStop BGM_EVENT_24 2.0]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.4 0,30]
+
+[wt 2.4]
+
+？1：[line 3]いや
+？2：……決着は、つくよ
+
+？！
+
+[wt 0.4]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[pictureFrame]
+
+[charaFadeout S 0.1]
+[charaFadeout T 0.1]
+
+[cameraMove 0.1 0,0 1.0]
+[wt 0.4]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[charaPut F 1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ネモ
+[FFFFFF]？[-]　でも、もう手段が、
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+[charaFace A 7]
+
+＠マシュ
+[line 3]いえ。ご心配なくキャプテン。[r]どうか速度はそのままで。
+[k]
+
+＠マシュ
+彼女はここで倒されます。だって艦首には、[r]ブリテン最強の騎士がいらっしゃるのですから。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[charaFadeout A 0.1]
+[scene 128407]
+[wt 0.4]
+[se ad951]
+[seVolume ad951 0 0]
+[seVolume ad951 1.0 0.5]
+[cueSe SE_21 21_ad1097]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[seStop ad951 0.6]
+[fadeout black 2.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 0,30]
+
+[charaFadein S 0.1 0,725]
+[charaFadein T 0.1 0,-725]
+
+[scene 122600]
+[wt 0.4]
+
+[fadein black 2.0]
+[wait fade]
+[wt 0.4]
+
+[bgm BGM_EVENT_91 0.1]
+
+＠パーシヴァル
+……モルガン陛下さえ倒されれば、[r]貴女は自由になる。
+[k]
+
+＠パーシヴァル
+妖精騎士である事が、[r]貴女を縛り付けている。
+[k]
+
+＠パーシヴァル
+僕はそう思い込んだ。[r]そんな理由で、円卓軍を組織した。
+[k]
+
+＠パーシヴァル
+そうだ。僕は、
+[k]
+
+[messageOff]
+[se ad592]
+[seVolume ad592 0 0.5]
+[bgm BGM_EVENT_91 1.0 0.5]
+[fadeout white 1.0]
+[wait fade]
+
+
+[charaFadeout D 0.1]
+[effect bit_sepia01_depth_fs]
+
+[scene 117400]
+[wt 0.7]
+[fadein white 1.5]
+[wait fade]
+＠妖精騎士ランスロット
+泣きながら剣を振るヤツがあるか。[r]ほら、少し休んでパーシヴァル。
+[k]
+
+＠妖精騎士ランスロット
+きみは立派にやっている。[r]何もしない妖精たちなんかより、ずっと優秀だ。
+[k]
+
+＠妖精騎士ランスロット
+私も鼻が高い。[r]さすが、選抜で最後まで残った子ども[line 3]
+[k]
+
+＠妖精騎士ランスロット
+うそ、余計に泣くの！？[r]あ……そうか、今のは、よくなかった……
+[k]
+
+＠妖精騎士ランスロット
+……無神経な姉で、ごめんね。[r]私もヒトの感情は難しくて……
+[k]
+
+＠妖精騎士ランスロット
+そうだよね。[r]ひとりだけ選ばれたんだもの。
+[k]
+
+＠妖精騎士ランスロット
+あんなに仲が良かったんだもの。[r]辛くても、強くなるしかないんだよね。
+[k]
+
+＠妖精騎士ランスロット
+うん。[r]なら、私にも教えられる事がある。
+[k]
+
+＠妖精騎士ランスロット
+仲間たちに負い目があって、[r]いつまでも自分が好きになれなくても、大丈夫。
+[k]
+
+＠妖精騎士ランスロット
+いつか自分より大切なものがきっと出来る。[r]だって私がそうだったから！
+[k]
+
+＠妖精騎士ランスロット
+忘れないで、パーシヴァル。
+[k]
+
+＠妖精騎士ランスロット
+このブリテンがどんなに酷い世界でも。[r]愛するものが一つでもできたのなら、それが[line 3]
+[k]
+
+[messageOff]
+[fadeout white 2.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[effectDestroy bit_sepia01_depth_fs]
+
+[scene 122600]
+
+[charaFadein S 0.1 0,725]
+[charaFadein T 0.1 0,-725]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 0,30]
+[wt 0.7]
+
+[fadein white 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_91 1.0 1.0]
+
+＠パーシヴァル
+……ああ。
+[k]
+
+＠パーシヴァル
+そのために、多くの者を偽った。[r]その罰をここで受けよう。
+[k]
+
+[charaFaceFade D 14 0.2]
+
+＠パーシヴァル
+[line 3]聖槍、[#開廷:かいてい]。
+[k]
+
+＠パーシヴァル
+選定の槍よ。[r]どうか、我が行いに、正しき裁きを。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_91 1.0]
+[wait fade]
+[pictureFrame]
+[cameraMove 0.1 0,0 1.0]
+
+[charaFadeout D 0.1]
+[charaFadeout S 0.1]
+[charaFadeout T 0.1]
+
+[scene 10000]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+
+[criMovie talk_mov105 bgmPlay true]
+[wt 0.5]
+
+[fadeout black 1.0]
+[wait fade]
+[pictureFrame]
+[bgm BGM_EVENT_95 0.1]
+[scene 122600]
+[wt 1.0]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk off]
+
+[charaFace D 11]
+[charaFadein D 0.1 1]
+[wt 1.0]
+[se ad753]
+[charaPut G 1]
+[charaFadeTime G 1.0 0.4]
+[wt 1.5]
+[charaEffect G bit_talk_atomization_gra02]
+[charaFadeout G 1.5]
+[charaFadeout D 1.5]
+[wt 5.0]
+[scene 128401 1.5]
+[wt 2.0]
+
+
+＠
+選定の槍が、竜骸の心臓を刺し貫く。
+[k]
+
+＠
+竜骸は力を失い落下していく。[r]騎士の体は経年劣化に耐えきれず砕け散っていく。
+[k]
+
+＠
+その最期が、落ち行く竜の視界に映る。
+[k]
+
+
+＠竜骸
+[line 3]a[line 3][r][line 3]aa、a[line 3]ァ[line 3]
+[k]
+
+＠竜骸
+[line 3]パーシヴァル[line 3][r][line 3]パーシヴァル[line 3]
+[k]
+
+＠竜骸
+[line 3]パーシ[line 3]ヴァル[line 3]
+[k]
+
+＠竜骸
+[line 3]わた、しの[line 3]
+[k]
+
+＠竜骸
+[line 3]おと、うと[line 3]
+[k]
+
+[messageOff]
+[scene 128401 1.5]
+[wt 2.5]
+
+＠
+空洞の[#心臓:む　ね]に走る痛み。[r]炎に没していく風切り音は、涙の音のようだった。
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_EVENT_95 2.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

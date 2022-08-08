@@ -1,0 +1,241 @@
+
+＄01-00-05-01-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+
+[charaSet A 8001001 1 玛修]
+[charaSet B 98022000 1 士兵]
+[charaSet C 99363000 1 机械化步兵]
+[charaSet D 99360000 1 凯尔特战士]
+
+[scene 20803]
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFadein A 0.1 1]
+[charaFace A 13]
+＠玛修
+……呼。[r]灵子转移顺利完成了，前辈。
+[k]
+
+[charaFace A 7]
+＠玛修
+这里是1783年的美利坚[line 3][r]的某处森林。
+[k]
+
+＠玛修
+……准确地说，[r]美利坚合众国还未诞生。
+[k]
+
+＠玛修
+通过于这一年结束的与英国之间的独立战争，[r]美利坚才成立了国家。
+[k]
+
+＠玛修
+之后，为手握世界霸权，[r]不断合理突进的怪物般的国家。
+[k]
+
+＠玛修
+且不论其功过，这毫无疑问是一个[r]在世界历史上不可或缺的国家。
+[k]
+
+？1：敌人是英国吗？
+？2：敌人会是谁呢？
+
+？！
+
+[charaFace A 0]
+＠玛修
+如果美国输掉与英国之间的战争，[r]美国就无法建国[line 2]。
+[k]
+
+＠玛修
+……确实存在这种可能性。[r]只不过，区区独立战争的胜负并不足以影响历史的进程。
+[k]
+
+＠玛修
+既然美利坚有独立的意志，[r]那无论推迟了三十年还是五十年，
+[k]
+
+＠玛修
+美利坚合众国都必定会成立。
+[k]
+
+[charaFace A 12]
+＠玛修
+所以我认为，敌人应该不只是英国才对……
+[k]
+
+[bgmStop BGM_EVENT_2 0.1]
+[charaFadeout A 0.1]
+
+[se ad13]
+[communicationChara 98003003 1 5 0 2]
+[wt 0.3]
+[bgm BGM_EVENT_3 0.1]
+＠Dr.罗曼
+不好意思，你们刚到就发生了紧急事件！[r]在前方的荒野中发生了大规模战斗！
+[k]
+
+
+
+＠Dr.罗曼
+详情情况尚不清楚，但请抓紧时间！[r]那可不是普通的战斗！？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠玛修
+明白了。[r]御主，我们走吧！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaFadeout A 0.1]
+[scene 20720]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+这是……！
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.3 1]
+[wait wipe]
+[wt 0.5]
+[charaFadeout A 0.1]
+[wipein rightToLeft 0.3 1]
+[wait wipe]
+
+[se ad16]
+[wt 1.0]
+[seStop ad16 2.5]
+
+[se bac7]
+[wait se bac7]
+[se ad96]
+[wait se ad96]
+
+[charaTalk B]
+[charaFadein B 0.1 1]
+＠士兵
+不要害怕，光荣的机械化兵团的精锐们！[r]无论如何都要死守住这个阵地！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFadein C 0.1 1]
+＠机械化步兵
+[#是，长官:Yes,domination order]！[r]已做好战斗至弹尽粮绝的觉悟！
+[k]
+
+[se ad96]
+[wait se ad96]
+
+[messageOff]
+[wipeout rightToLeft 0.3 1]
+[wait wipe]
+[wt 0.5]
+[charaFadeout C 0.1]
+[wipein leftToRight 0.3 1]
+[wait wipe]
+
+[charaTalk A]
+[charaFadein A 0.1 1]
+[charaFace A 6]
+＠玛修
+那……那是……巴贝奇先生！？[r]前辈，是巴贝奇先生啊！
+[k]
+
+？1：冷静一点玛修，那不是。
+？2：冷静一点玛修。没什么大不了的。
+
+？！
+
+
+[messageOff]
+[wipeout rightToLeft 0.3 1]
+[wait wipe]
+[wt 0.5]
+[charaFadeout A 0.1]
+[wipein leftToRight 0.3 1]
+[wait wipe]
+
+[charaTalk D]
+[se ad25]
+
+[charaFadein D 0.1 1]
+[wt 0.2]
+＠？？？
+[line 6]！
+[k]
+
+[wt 0.7]
+[messageOff]
+[wipeout leftToRight 0.3 1]
+[wait wipe]
+[wt 0.5]
+[charaFadeout D 0.1]
+[wipein rightToLeft 0.3 1]
+[wait wipe]
+
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠玛修
+！？　另外一边……是古典派的战士！
+[k]
+
+[charaFadeout A 0.1]
+
+[wt 0.4]
+
+[charaTalk C]
+[charaFadein C 0.4 1]
+＠机械化士兵
+[line 3][#噢，糟糕:Oh,terrible]。发现敌军增援。[r]准备进行剿灭，先从威吓射击开始！
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠玛修
+！？　枪口朝向这边了[line 3]前辈！
+[k]
+
+？1：先应战再说……！
+
+？！
+
+[charaFace A 2]
+＠玛修
+明白了，御主！[r]北美大陆的第一场战斗[line 3]开始！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

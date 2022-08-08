@@ -1,0 +1,304 @@
+
+＄94-05-53-07-3-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 99502600 1 玛修]
+[charaSet B 6041000 1 鬼一法眼]
+
+[charaSet D 1098206200 1 弁庆]
+[charaSet F 98104010 1 库·丘林·Alter]
+[charaSet G 1098206100 1 牛若丸]
+
+[charaSet H 5019002 1 埃尔梅罗Ⅱ世]
+[charaSet I 1098164800 1 格蕾]
+[charaSet L 4015001 1 伊斯坎达尔]
+[charaSet M 4002001 1 亚历山大]
+
+[charaDepth L 5]
+[charaDepth M 4]
+
+[imageSet N back10000 1]
+[charaScale N 1.01]
+
+[charaSet R 98115000 1 特效用dummy]
+
+[charaEffect R bit_talk_10_LowLevel]
+[charaPut R 1200,1200]
+
+[scene 109600]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk off]
+
+[charaFace L 0]
+[charaFace M 0]
+[charaFadeinFSL M 0.1 0]
+[charaFadeinFSR L 0.1 2]
+[wt 0.5]
+
+[cueSe SE_21 21_ade540]
+[charaEffect L bit_talk_gavel_smoke]
+[charaEffect M bit_talk_gavel_smoke]
+[wt 0.2]
+
+[charaDepth L 4]
+[charaDepth M 5]
+
+[charaCrossFade L 4002001 0 0.1]
+[charaChange M 4015001 0 normal 0.1]
+[wait charaCrossFade L]
+[wait charaChange M]
+[wt 0.8]
+
+[charaTalk on]
+
+[charaTalk M]
+[charaFace M 4]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠亚历山大
+……嗯，输掉了呢。
+[k]
+
+
+＠亚历山大
+有种突然穿戴不上的感觉。[r]我本人追不上身体所具备的力量。
+[k]
+
+[charaFace M 0]
+
+＠亚历山大
+你感觉如何？
+[k]
+
+[charaFace L 0]
+
+＠伊斯坎达尔
+余吗？
+[k]
+
+＠伊斯坎达尔
+毕竟这都是余经历过的路。[r]会有些怀念，但没有什么大不了的。
+[k]
+
+[charaFace L 1]
+
+＠伊斯坎达尔
+比起这个，反倒是你的不安定[r]让余看得心惊肉跳。哈哈哈哈哈！
+[k]
+
+[charaFace M 0]
+
+＠亚历山大
+真不甘心。[r]但是，能够接受吧。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.8]
+[charaTalk off]
+[wt 1.0]
+
+[charaFadeout M 0.4]
+[charaFadeout L 0.4]
+[wt 0.4]
+
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_62 0.1]
+
+＠弁庆
+好了，只剩最后三骑了吧！[r]走吧！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠库·丘林·Alter
+女人吗。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut R 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠玛修
+志度内小姐外形的爱丽小姐，[r]火之爱丽小姐的伊莉雅小姐，
+[k]
+
+＠玛修
+以及普通爱丽小姐外形的[r]志度内小姐这三骑吧。
+[k]
+
+[charaPut R 1200,1200]
+[charaFadeout A 0.1]
+[charaFadeout R 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+太复杂了吧！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+[bgmStop BGM_EVENT_62 1.5]
+
+＠牛若丸
+很简单哦，师傅！[r]没什么，只要砍下首级，大家就都是尸体！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠鬼一法眼
+你·这·个·人·啊～～～！[r]长着这个样子不要谈什么首级！
+[k]
+
+[charaFace B 5]
+
+＠鬼一法眼
+怎么说呢，落差感的威力莫名巨大！
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaDepth N 2]
+[charaDepth D 4]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+[charaMoveReturn D 0,-20 0.3]
+[wait charaMove D]
+[charaMoveReturn D 0,-20 0.3]
+[wait charaMove D]
+
+[charaFadeTime N 0.1 0.6]
+
+＠弁庆
+（贫僧懂。贫僧懂你啊，鬼一阁下！）
+[k]
+
+[messageOff]
+
+[fadeout black 0.7]
+[bgmStop BGM_EVENT_7 0.7]
+[wait fade]
+
+[charaFadeout N 0.1]
+[charaFadeout D 0.1]
+[wt 1.0]
+
+[wipeout leftToRight 0.7 0.1]
+[se ad133]
+[wait wipe]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipein rightToLeft 0.7 1.0]
+[wait wipe]
+
+[wt 0.4]
+[seStop ad133 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠埃尔梅罗Ⅱ世
+噢噢，来了啊，御主一行人。[r]得救了。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+
+＠格蕾
+师傅！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠埃尔梅罗Ⅱ世
+不愧是爱因兹贝伦的最高杰作与其系谱。[r]即便借用孔明的力量，凭在下一个也无法对抗。
+[k]
+
+＠埃尔梅罗Ⅱ世
+助我一臂之力，御主。
+[k]
+
+？1：我会努力的，埃尔梅罗先生！
+
+[charaFace H 2]
+
+＠埃尔梅罗Ⅱ世
+拜托了！
+[k]
+
+？2：临时埃尔梅罗教室！
+
+[charaFace H 2]
+
+＠埃尔梅罗Ⅱ世
+不要让我想象！[r]就算是临时的，这成员的浓度也太高了！
+[k]
+
+？！
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+
